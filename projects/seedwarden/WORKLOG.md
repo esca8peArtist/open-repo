@@ -60,6 +60,38 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Agent Session — Phase 2 Supply Chain Risk & Contingency Planning (Exploration Queue Item) — 2026-05-18
+
+**Task**: PROJECTS.md line 1042 exploration queue item — Phase 2 Supply Chain Risk & Contingency Planning.
+
+**Files updated**: `projects/seedwarden/phase-2-supply-chain-contingencies.md` (Version 2.1)
+
+**Changes in this session**:
+- Updated Section 1 header and detection triggers for Mountain Rose Herbs to reflect current
+  order deadline (May 15) and arrival window (May 17–21 per 2–3 day USPS Priority lead time)
+- Updated Section 1.2 header for Strictly Medicinal (expected arrival May 24–30, 8–12 day
+  lead) and Prairie Moon Nursery (expected arrival May 24–27, 7–14 day lead)
+- Updated detection trigger dates for both live plant vendors to May 21 (from May 17/18)
+- Added Primary supplier summary block to document header with all three vendors and arrival windows
+- Added explicit Track B Phase 2 scope line (foraged + medicinal plant guides, 22-day window)
+- Adjusted risk matrix probability estimates to reflect expected-window arrivals vs. early-window best-case
+- Updated May 18 and May 19 checklist entries to reflect current supplier timeline reality
+- Updated footer to Version 2.1 with web-verified lead time sources
+
+**Web verification** (May 2026):
+- Mountain Rose Herbs: 2–10 day domestic transit confirmed current; standard processing 1 business day
+- Prairie Moon Nursery: potted plants ship late April through late May; 3-packs dispatch by order date when well-rooted
+- Strictly Medicinal Seeds: live plant shipping window March 15 – July 25; no current delays identified
+
+**Existing file context**: `phase-2-supply-chain-contingencies.md` (6,930+ words, 6 sections) and
+`PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md` (6,132 words, 7 sections) both preexisted from earlier
+May 18 sessions. This session updated the primary deliverable file to correct arrival window
+timelines and add Track B scope framing. No new sections required — existing coverage is complete
+for all 5 deliverable areas (backup suppliers, MVL scenarios, location contingencies, compression
+matrix, risk scoring matrix, decision checklist).
+
+---
+
 ## Agent Session — May 30 Final Launch Readiness Checklist — 2026-05-18
 
 **Task**: Session 1202, Item 60. Create `MAY_30_FINAL_LAUNCH_READINESS_CHECKLIST.md` — comprehensive

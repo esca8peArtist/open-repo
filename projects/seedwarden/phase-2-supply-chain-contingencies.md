@@ -22,10 +22,18 @@ references:
 
 **Prepared**: May 18, 2026
 **Launch target**: May 30, 2026 — 12 days remaining
+**Scope**: Track B Phase 2 — foraged plant guides and medicinal plants (Appalachian Medicinals
+series: American Ginseng, Goldenseal, Black Cohosh, Bloodroot, Ramps). This document covers
+the 22-day window May 9–30. Phase 3 (June 22–July 13, medicinal bundles) is out of scope here.
 **Activation standard**: Every contingency documented here is actionable in under 15 minutes.
 **How to use this document**: When a delay is detected, find the vendor or scenario in
 Section 1 or Section 3. Read the trigger threshold. If the threshold is met, execute the
 documented response immediately. Log the action in WORKLOG.md within 3 minutes of activation.
+
+**Primary supplier summary**:
+- Mountain Rose Herbs: order deadline May 15, arriving May 17–21 (2–3 day USPS Priority from Eugene, OR)
+- Strictly Medicinal Seeds: arriving May 24–30 (8–12 day lead time, live Black Cohosh plant)
+- Prairie Moon Nursery: arriving May 24–27 (7–14 day lead time, Ramps bulblets + Trillium bare root)
 
 **Core principle**: The supply chain is a quality multiplier, not a launch gate. Physical
 specimens improve guides. iNaturalist CC-BY photos make guides. The only hard blocker for
@@ -36,19 +44,20 @@ failure has a documented fallback that preserves the date.
 
 ## Section 1: Vendor Alternates — Backup Suppliers With Full Contact and Timeline
 
-### 1.1 Mountain Rose Herbs — If May 15 Delivery Is Missed
+### 1.1 Mountain Rose Herbs — If May 17–21 Delivery Window Is Missed
 
 Mountain Rose Herbs (mountainroseherbs.com) is the primary supplier for American Ginseng
 dried whole root ($14–22/oz) and Goldenseal dried root ($14–20/oz). They ship from Eugene,
-Oregon on 2–3 day USPS Priority. A miss at this vendor is a logistics failure, not a supply
-failure — these products are available year-round from multiple domestic sources.
+Oregon on 2–3 day USPS Priority. Order deadline: May 15. Expected arrival window: May 17–21.
+A miss at this vendor is a logistics failure, not a supply failure — these products are
+available year-round from multiple domestic sources.
 
-**Detection trigger**: No shipping confirmation email within 48 hours of placing the order,
-OR no delivery by May 15 end-of-day.
+**Detection trigger**: No shipping confirmation email within 48 hours of placing the May 15
+order, OR no delivery by May 21 end-of-day.
 
 **First action before activating backup**: Call Mountain Rose Herbs directly at 503-549-9559
 (customer service, M–F 8am–5pm PT) or email orders@mountainroseherbs.com. Request the
-tracking number and revised delivery date. If arrival is projected by May 17 or earlier,
+tracking number and revised delivery date. If arrival is projected by May 22 or earlier,
 hold — dried roots require zero acclimatization and can be photographed within minutes of
 arrival. Do not cancel a confirmed in-transit order.
 
@@ -122,15 +131,18 @@ quality degradation results from any of these switches.
 ### 1.2 Strictly Medicinal Seeds and Prairie Moon Nursery — Fallbacks for Live Plant Window
 
 These vendors supply the live endangered species specimens. Strictly Medicinal Seeds
-(strictlymedicinalseeds.com) supplies Black Cohosh potted plant ($8–12, 7–12 day lead time).
-Prairie Moon Nursery (prairiemoon.com) supplies Ramps bulblets and Trillium bare root
-($8–15 each, 7–14 day lead time). Orders placed May 13 have expected arrivals of May 20–27.
+(strictlymedicinalseeds.com) supplies Black Cohosh potted plant ($8–12, 8–12 day lead time).
+Expected arrival window: May 24–30 (based on current order timing). Prairie Moon Nursery
+(prairiemoon.com) supplies Ramps bulblets and Trillium bare root ($8–15 each, 7–14 day lead
+time). Expected arrival window: May 24–27. Prairie Moon ships potted and bare-root plants
+late April through late May from their Midwest greenhouse; spring orders dispatch by order
+date when plants are well-rooted.
 
-**Detection trigger for Strictly Medicinal**: No tracking number by May 17.
+**Detection trigger for Strictly Medicinal**: No tracking number by May 21.
 Contact: Email form at strictlymedicinalseeds.com/contact or call 541-846-6704 (Horizon
 Herbs / Strictly Medicinal, Williams, OR). Email: horizonherbs@gmail.com.
 
-**Detection trigger for Prairie Moon**: No tracking number by May 18.
+**Detection trigger for Prairie Moon**: No tracking number by May 21.
 Contact: 866-417-8156 (toll-free); prairiemoon.com/contact; email customerservice@prairiemoon.com.
 Address: 31837 Old Hwy 14, New Auburn, WI 54757.
 
@@ -545,10 +557,10 @@ two deferred guides (Bloodroot, Ramps) are produced at normal pace June 1–4.
 | Mountain Rose Herbs | No ship by EOD Day 2 post-order | 15% | None | None — local retail equivalent | None | Yes | Same day | No shipping email within 48 hr |
 | Mountain Rose Herbs | Delivery damaged | 5% | None | None | None | Yes | Same day (reorder or local retail) | Damage visible on arrival |
 | Starwest Botanicals (backup) | Out of stock | 5% | None | None | None | Yes | Same day (Bulk Herb Store or local retail) | "Out of stock" on product page |
-| Strictly Medicinal Seeds | Arrives May 24–26 | 30% | None | Minimal — no proprietary Black Cohosh habit shot | None | Yes | 2–3 hr iNat sprint | No tracking by May 17 |
-| Strictly Medicinal Seeds | Arrives May 28+ (post-shoot) | 15% | None | Minimal — iNat CC-BY covers the guide | None | Yes | Already resolved by iNat sprint | No tracking by May 17 |
-| Prairie Moon Nursery | Arrives May 24–27 | 35% | None | Minimal — fresh ramp leaves from market | None | Yes | Same day (market purchase) | No tracking by May 18 |
-| Prairie Moon Nursery | Arrives May 29+ | 20% | None | Minimal | None | Yes | iNat CC-BY already sourced | No tracking by May 18 |
+| Strictly Medicinal Seeds | Arrives May 24–30 (expected window) | 65% | None | Minimal — no proprietary Black Cohosh habit shot | None | Yes | 2–3 hr iNat sprint | No tracking by May 21 |
+| Strictly Medicinal Seeds | Arrives after May 28 (post-shoot) | 20% | None | Minimal — iNat CC-BY covers the guide | None | Yes | Already resolved by iNat sprint | No tracking by May 21 |
+| Prairie Moon Nursery | Arrives May 24–27 (expected window) | 60% | None | Minimal — fresh ramp leaves from market | None | Yes | Same day (market purchase) | No tracking by May 21 |
+| Prairie Moon Nursery | Arrives May 29+ | 15% | None | Minimal | None | Yes | iNat CC-BY already sourced | No tracking by May 21 |
 | All live plant vendors miss entirely | Total miss, May 20–30 window | 8% | None | Minor — all 5 guides on CC-BY only | None | Yes | 2–3 hr iNat sprint | No tracking from any vendor by May 21 |
 | Canva Brand Kit not set up by May 26 | User gate missed | 10% | None | Minor positioning signal (see Section 2) | ~5% below baseline | Yes — manual hex entry | 30–50 min overhead | Brand Kit not visible in Canva by May 25 EOD |
 | ABG permit + UpS farm both unavailable | Field shoot blocked | 45% | None — indoor studio available immediately | None for guide-interior shots | None | Yes | 15 min indoor setup | No confirmation by May 20 AM |
@@ -588,15 +600,17 @@ activation: under 15 minutes.
 
 ### May 18 (Today) — Specimen and Location Check
 
-- [ ] Check Mountain Rose Herbs tracking. No shipping email within 48 hr of order?
+- [ ] Check Mountain Rose Herbs order. Order deadline was May 15. No shipping confirmation?
   If YES: Call 503-549-9559 now. If not shipped: place Starwest Botanicals order (starwest-botanicals.com)
-  immediately. Contingency: Section 1.1 Backup A.
-- [ ] Check Strictly Medicinal Seeds order status. No tracking number?
-  If YES: Email horizonherbs@gmail.com requesting expedited ship. If projected arrival after
-  May 25: begin iNaturalist CC-BY Black Cohosh sprint this week. Contingency: Section 1.2.
-- [ ] Check Prairie Moon Nursery order. No tracking number?
-  If YES: Call 866-417-8156. If arrival projected after May 25: purchase fresh ramp leaves
-  this week (May 18–19) and begin iNaturalist CC-BY Trillium sprint. Contingency: Section 1.2.
+  immediately. Expected arrival window is May 17–21; if Mountain Rose cannot confirm by May 21,
+  activate local retail fallback same day. Contingency: Section 1.1 Backup A.
+- [ ] Check Strictly Medicinal Seeds order status. Expected arrival window May 24–30.
+  If no order confirmation exists: place order today. If projected arrival after May 28:
+  begin iNaturalist CC-BY Black Cohosh sprint this week. Contingency: Section 1.2.
+- [ ] Check Prairie Moon Nursery order. Expected arrival window May 24–27.
+  If no order confirmation exists: place order today. If arrival projected after May 28:
+  purchase fresh ramp leaves this week (May 18–19) and begin iNaturalist CC-BY Trillium
+  sprint. Contingency: Section 1.2.
 - [ ] Purchase fresh ramp leaves today or May 19 regardless of Prairie Moon status.
   Refrigerate in damp paper towel immediately. Photograph within 24 hours of purchase.
 - [ ] Confirm foam-core board (24x36 in) is in hand or purchase today.
@@ -609,11 +623,13 @@ activation: under 15 minutes.
 
 ### May 19 — Vendor Escalation Gate
 
-- [ ] If Strictly Medicinal Seeds has not confirmed shipping by today: activate iNaturalist
-  CC-BY sprint for Black Cohosh. Do not wait for physical specimen.
-- [ ] If Prairie Moon Nursery has not confirmed shipping by today: confirm ramp leaves are
-  purchased and refrigerated; activate iNaturalist CC-BY sprint for Trillium.
-- [ ] If both vendors show no tracking by EOD May 19: search Etsy for Brushwood Nursery or
+- [ ] If Strictly Medicinal Seeds has not confirmed an order or a ship date: place order
+  today if not already placed. Projected arrival window is May 24–30; if no confirmation by
+  May 21, activate iNaturalist CC-BY sprint for Black Cohosh. Do not wait for physical specimen.
+- [ ] If Prairie Moon Nursery has not confirmed an order or a ship date: place order today
+  if not already placed. Projected arrival window is May 24–27; confirm ramp leaves are
+  purchased and refrigerated as parallel track; activate iNaturalist CC-BY sprint for Trillium.
+- [ ] If both vendors show no tracking by EOD May 21: search Etsy for Brushwood Nursery or
   native plant sellers (Section 1.2 Backup A). Place Etsy seller order same day if physical
   specimens are still desired.
 - [ ] Asheville Botanical Garden call placed? If no permit by May 19 EOD: activate
@@ -775,11 +791,15 @@ matrix above and allow the contingency document to operate with 98%+ confidence.
 
 ---
 
-*Prepared: 2026-05-18. Version 2.0 — comprehensive expansion with full vendor contact
-details, MVL decision trees, studio options with cost/booking timelines, compression matrix,
-and risk scoring. Cross-references: PHASE_2_LAUNCH_LOGISTICS.md (supplier milestones),
-PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md (extended scenario analysis and vendor communication
-templates), phase-2-plant-sourcing-vendor-list.md (vendor specs and storage protocols),
-CANVA_ENDANGERED_SPECIES_STYLE_GUIDE.md (palette hex codes), PHASE_2_PHOTOGRAPHY_LOGISTICS.md
+*Prepared: 2026-05-18. Version 2.1 — supplier arrival windows updated to reflect current
+order timing (Mountain Rose May 17–21, Strictly Medicinal May 24–30, Prairie Moon May 24–27);
+Track B Phase 2 scope clarified in header; risk matrix probability updated to reflect
+expected-window arrivals rather than early-window best-case. Previous versions: 2.0 (initial
+comprehensive expansion, same date). Cross-references: PHASE_2_LAUNCH_LOGISTICS.md (supplier
+milestones), PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md (extended scenario analysis and vendor
+communication templates), phase-2-plant-sourcing-vendor-list.md (vendor specs and storage
+protocols), CANVA_ENDANGERED_SPECIES_STYLE_GUIDE.md (palette hex codes), PHASE_2_PHOTOGRAPHY_LOGISTICS.md
 (studio and field logistics), ENDANGERED_SPECIES_PHOTO_PIPELINE.md (iNaturalist taxon IDs
-and CC-BY sourcing protocol).*
+and CC-BY sourcing protocol). Web-verified May 2026: Mountain Rose Herbs 2–10 day domestic
+transit confirmed current; Prairie Moon Nursery spring potted plants ship late April through
+late May from Midwest; Strictly Medicinal Seeds live plant shipping window March 15–July 25.*
