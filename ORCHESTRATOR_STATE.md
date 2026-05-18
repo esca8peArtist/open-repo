@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T11:55:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T12:13:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.1% | Reset in 12h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.2% | Reset in 12h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -89,6 +89,8 @@
 **Resolution**: [leave blank]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: stockbot — focus references Session 1228 (15 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
@@ -100,43 +102,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+- **Four checkpoint outcomes mapped** — PASS (30 min analysis), NEAR-MISS (60 min), FAR-MISS C1 (90 min), FAR-MISS C2 (120+ min) with specific recovery actions documented
 
-**2. Created 3 new Exploration Queue items (Items 64-66)**:
+**Document Sections**:
+1. **Executive Summary** — 5 events, 3 critical overlap windows, MEDIUM risk with proper planning
+2. **Timeline Conflict Matrix** — Full May 18–31 schedule with constraints; no hard conflicts identified
+3. **Resource Allocation Scenarios** — 5 scenarios (test print timing × checkpoint outcome); optimal path identified
+4. **Contingency Decision Trees** — Checkpoint outcome tree (PASS/NEAR-MISS/FAR-MISS C1/C2 with actions), test print approval timing tree, Phase 2 path decision tree
+5. **May 19–31 Visual Calendar** — Day-by-day breakdown with user action windows and decision deadlines
+6. **Critical Path & Recommendations** — Sequencing checklist, total user time estimate (8–10 hours with recommended deferral), decision authority and escalation protocol
 
-✅ **Item 64**: Seedwarden Track B Gate 1 (May 18) Real-Time Execution Support
-  - **Deliverable**: `TRACK_B_GATE_1_REALTIME_SUPPORT.md` (4,200 words, comprehensive real-time troubleshooting + execution guide)
-  - **Sections**: Pre-execution checklist (5 min), platform-by-platform walkthrough (Instagram 10-15 min, TikTok 10-15 min, Pinterest 10-15 min), troubleshooting per platform, post-execution verification, issues log, next steps
-  - **Impact**: Gate 1 due TODAY. Document eliminates execution friction if user starts now; provides real-time troubleshooting if platform UIs changed since TRACK_B_USER_GATES.md creation
-  - **Status**: COMPLETE, committed
-
-⏳ **Item 65**: Resistance-Research May 21-31 Batch 2-3 Coordination Framework (2-2.5h effort, queued)
-  - **Goal**: Pre-stage contingency paths for Batches 2-3 (70+ contacts), coordinate Domain 42 (May 28 DEA hearing deadline), conditional sequencing based on Wave 1 monitoring signals
-  - **Blocks**: Depends on Wave 1 early signals (May 20-21) to decide if accelerate Batch 2 or hold standard schedule
-  - **Why**: Framework must be ready May 18 evening so user can execute accelerated Batch 2 if Batch 1 shows strong engagement by May 20
-
-⏳ **Item 66**: Stockbot Post-Checkpoint FAR-MISS-C2 Capital Recovery Playbook (1.5-2h effort, queued)
-  - **Goal**: Pre-stage worst-case-scenario playbook for May 19 checkpoint. If C2 detected (0 AAPL sells + 0 fills since May 5), enables confident capital preservation decision within 2 hours May 20
-  - **Sections**: C2 trigger conditions, 4-step diagnostic procedure, 3 capital preservation options (full liquidation / partial liquidation / remediation + restart), market impact assessment, post-recovery action plan
-
-**3. Updated PROJECTS.md**:
-  - Added reference to Item 64 (Gate 1 real-time support) in seedwarden **Current focus** line
-  - Preserved existing focus content; added 1-line reference to TRACK_B_GATE_1_REALTIME_SUPPORT.md
+**Strategic Impact**:
+- Enables proactive scheduling (e.g., "schedule test print for May 22–24" instead of May 19–20)
+- Pre-decided contingency paths for checkpoint outcomes (no improvisation May 19 evening)
+- Clear escalation protocol if multiple decisions arrive simultaneously (reversibility + impact-based priority)
+- User has full visibility into May 19–31 resource contention before events execute
 
 ### Commits This Session
-- ✅ Created `projects/seedwarden/TRACK_B_GATE_1_REALTIME_SUPPORT.md` (4,200 words, Item 64)
-- ✅ Appended Items 64-66 to EXPLORATION_QUEUE.md (queued for May 18-21 activation)
-- ✅ Updated PROJECTS.md seedwarden **Current focus** (Item 64 reference added)
+
+1. ✅ Created `CROSS_PROJECT_INTERDEPENDENCY_RISK_ASSESSMENT.md` (Item 63, 7,500 words)
+
+### Updated Files
+
+1. ✅ **EXPLORATION_QUEUE.md**: Item 63 marked COMPLETE; Items 61-66 remain queued with status/blockers clarified
 
 ### Next: User Actions Awaiting
-1. **TODAY (May 18)**: Seedwarden Gate 1 execution (social accounts: Instagram, TikTok, Pinterest) using TRACK_B_GATE_1_REALTIME_SUPPORT.md
-2. **May 19 20:00 UTC**: Stockbot checkpoint execution
-3. **May 19-21**: Resistance-Research Wave 1 monitoring using WAVE_1_MONITORING_DASHBOARD.md
-4. **May 21**: Wave 1 synthesis + Phase 2 decision gate (Item 61 activation)
+
+1. **TODAY (May 18, before 14:00 UTC)**: Seedwarden Gate 1 execution (social accounts) using TRACK_B_GATE_1_REALTIME_SUPPORT.md
+2. **TODAY (May 18, anytime)**: Review Item 63 recommendation — approve test print for May 22–24 (optimal) or pick alternate timing
+3. **May 19 evening**: Execute checkpoint cycle (pre-flight 19:00 UTC, query 20:00 UTC) — pre-flight checklist ready
+4. **May 19–20**: Emergency recovery (if FAR-MISS C2) or post-checkpoint planning (if PASS/NEAR-MISS)
+5. **May 21**: Execute Phase 2 decision gate (14:00–15:00 UTC) based on Wave 1 synthesis
 
 ### Autonomous Work Next Session
-- **Item 61 (May 21)**: Wave 1 72-Hour Synthesis & Phase 2 Decision Framework (2-2.5h) — activates when May 21 10:30 UTC monitoring window closes
-- **Item 62 (May 21, depends on Item 61)**: Phase 2 Research Production Infrastructure (2h) — activates after Item 61 outcome decision
-- **Item 65 (May 20-21)**: Resistance-Research May 21-31 Batch 2-3 Coordination Framework (2-2.5h) — can start May 20 if Batch 1 early signals clear
-- **Item 66 (May 20, if needed)**: Stockbot FAR-MISS-C2 Recovery (1.5-2h) — only activated if checkpoint C2 outcome detected
+
+- **Item 61 (May 21)**: Wave 1 72-Hour Synthesis & Phase 2 Decision Framework — activates when May 21 10:30 UTC monitoring window closes
+- **Item 62 (May 21-22, depends on Item 61)**: Phase 2 Research Production Infrastructure — activates after Item 61 outcome decision
+- **Item 65 (May 20-21)**: Resistance-Research May 21-31 Batch 2-3 Coordination Framework — can start May 20 if Batch 1 early signals clear
+- **Item 66 (May 20, if needed)**: Stockbot FAR-MISS-C2 Recovery Playbook — only activated if checkpoint C2 outcome detected
 
 ---
