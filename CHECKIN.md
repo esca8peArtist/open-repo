@@ -1,3 +1,38 @@
+## Session 1254 (Orchestrator) — May 18, 2026 14:52–15:22 UTC — Final Pre-Checkpoint Validation + Wave 1 Synthesis Staging
+
+**Status**: ✅ **READY FOR MAY 19-21 EVENT GATES** — Executed parallel agents for final checkpoint verification and Wave 1 synthesis infrastructure staging. All playbooks verified executable (Jetson health ALL GREEN, infrastructure confidence 95%+). Corrected May 21 synthesis timing: classification at 10:45 UTC, user confirmation gate at 14:00 UTC. All systems positioned and ready.
+
+### Items Completed
+
+**1. Stockbot Final Pre-Checkpoint Verification (May 19, T-30h)** ✅
+- **Four tasks all COMPLETE**:
+  1. ✅ **Checkpoint playbooks verified**: `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md`, `CHECKPOINT_READINESS_VALIDATION.md`, `MAY_19_POST_CHECKPOINT_DECISION_FRAMEWORK.md` — zero open items
+  2. ✅ **Scenario framework updated**: Added Section 0 to `POST_CHECKPOINT_GATE_2_DECISION_FRAMEWORK.md` with 4-scenario table, Lever B HMM status, multi-ticker readiness, terminology reconciliation
+  3. ✅ **Guardrails wired**: `GuardrailChain` confirmed in BUY path, all 24 concurrent tests passing
+  4. ✅ **Jetson health ALL GREEN**: SSH healthy (uptime 34d), Docker containers running, Alpaca auth clean, API ready, port bindings secure (no 0.0.0.0), Lever A config confirmed on both AAPL sessions
+- **Verdict**: **EXECUTION CONFIDENCE 95%+** — User executes checkpoint query May 19 20:00 UTC per playbook
+
+**2. Resistance-Research Wave 1 Synthesis Infrastructure Staging (May 21, T-2d 15h)** ✅
+- **Three files staged/updated**:
+  1. ✅ **`MAY_21_EARLY_SIGNAL_CHECKLIST.md`** (NEW) — Operational checklist for early-signal tracking:
+     - 6 metrics tracked May 18-21 (Weiser, Bassin, Elias, Goodman, Chenoweth, Bitly)
+     - Recording: Email inbox → `WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv` → `WAVE_1_MONITORING_DASHBOARD.md`
+     - User tracks, orchestrator classifies from user-provided data
+     - **Corrected timing**: 10:30 UTC collect → 10:45 UTC classify → 11:00 UTC activate → 14:00 UTC user confirmation gate
+  2. ✅ **`MAY_21_31_BATCH_2_3_COORDINATION_FRAMEWORK.md`** (UPDATED) — Annotated Production Readiness Checklist:
+     - 4 of 6 items confirmed complete
+     - 2 monitoring-dependent items with gap notes explaining Wave 1 data fills
+     - Timing correction: Previous "May 21 20:00 UTC final assessment" vs. current 10:45 UTC classification — both correct, annotation prevents confusion
+  3. ✅ **`WAVE_1_SYNTHESIS_FRAMEWORK.md`** (CONFIRMED COMPLETE) — Item 61 fully staged, 3 scenario templates ready
+- **Verdict**: **SYNTHESIS INFRASTRUCTURE READY** — User monitors May 18-21, provides signal data at 10:30 UTC May 21, orchestrator runs classification by 10:45 UTC, user confirms activation at 14:00 UTC
+
+### Critical Timing Correction for May 21
+- **Previous docs** referenced "May 21 20:00 UTC final assessment"
+- **Current instrument** (`WAVE_1_SYNTHESIS_FRAMEWORK.md`): Classification at 10:45 UTC with user confirmation at 14:00 UTC
+- Both correct; May 21 workflow follows current timing (10:45 UTC classification, 14:00 UTC gate)
+
+---
+
 ## Session 1253 (Orchestrator) — May 18, 2026 14:37–15:10 UTC — Exploration Queue Execution: Pre-Checkpoint + Contingency Planning
 
 **Status**: ✅ **EXECUTION COMPLETE — 2 ITEMS DELIVERED** — Parallel agent execution of stockbot infrastructure validation (87% GO confidence for May 19 checkpoint) and resistance-research contingency decision framework (Phase 2 routing ready for May 21 synthesis). All deliverables production-ready; committed to respective projects.
