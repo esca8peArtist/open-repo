@@ -69,11 +69,22 @@
 ### Commits This Session
 - None yet (orientation & staging only)
 
+### Task Created
+- Task #1: Execute Wave 1 orchestrator pre-flight (07:00-09:00 UTC) — ALL 8 GISTS LIVE & VERIFIED
+
+### Wakeup Scheduled
+- Wakeup at 05:10 UTC (clamped from requested 3600s max) → will proceed toward 07:00 UTC pre-flight execution
+
 ### Next Session Actions (scheduled)
-1. **06:00 UTC**: Resume from wakeup — confirm ready state, check for user signals
-2. **07:00 UTC**: Execute Wave 1 orchestrator pre-flight (1.5 hours)
-3. **08:00–12:00 UTC**: Monitor Wave 1 Batch 1 send execution (user action window)
-4. 📊 10:30 UTC — Activate Phase 1 measurement framework
+1. **05:10 UTC**: Resume from wakeup — monitor user setup phase (deadline 06:00 UTC)
+2. **07:00 UTC**: Execute Wave 1 orchestrator pre-flight (1.5 hours total)
+   - Gist verification (8 min) — all 8 URLs, incognito, record baselines
+   - Contact re-verification (10 min) — spot-check Batch 1 roles
+   - Template scan (15 min) — verify placeholders filled, correct URLs
+   - Spreadsheet baseline (5 min) — populate WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv
+   - Test send (5 min) — test email to self
+3. **08:00–12:00 UTC**: Monitor Wave 1 Batch 1 send execution (user action window — staggered 5 sends)
+4. **10:30 UTC**: Initial engagement check (Gist views, bounces, auto-replies)
 
 ---
 
