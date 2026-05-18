@@ -16238,3 +16238,27 @@ Both remain unresolved; no new blockers discovered.
 - **Item 66 (May 20, if needed)**: Stockbot FAR-MISS-C2 Recovery Playbook — only activated if checkpoint C2 outcome detected
 
 ---
+
+### Session 1246 (Orchestrator) — May 18, 2026, 12:52–13:05 UTC — Post-Merge Infrastructure Cleanup
+
+**Status**: 🟢 **POST-MERGE CLEANUP COMPLETE** — Resolved open-repo duplication. All systems verified ready for May 19-21 event gates.
+
+**Work**:
+- ✅ **open-repo**: Resolved PHASE_5_ARCHITECTURE.md duplication (kept May 13 canonical root, removed stale Apr 30 docs/ copy)
+- ✅ Verified no broken references
+- ✅ Committed cleanup (37fc21f5)
+
+**Project Status**:
+- All active projects: either complete, staged for May 19-21 gates, or awaiting user action
+- No new autonomous work available (Sessions 1238-1245 completed Items 61-65 + verification)
+- Exploration Queue: Items 61, 62, 66 staged for checkpoint/decision dates (May 19, 21)
+- Critical path ready for May 19 20:00 UTC checkpoint execution
+
+**Upcoming**:
+- **May 19, 20:00 UTC**: Stockbot checkpoint (34 hours away)
+- **May 21, 10:30 UTC**: Wave 1 synthesis framework activation (Item 61)
+- **May 21, 14:00–15:00 UTC**: Phase 2 path decision gate
+
+**Token usage**: Healthy (sessions 1238-1245 well-distributed across day)
+
+---
