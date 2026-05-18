@@ -2,6 +2,24 @@
 
 ---
 
+## May 18, 2026 — Phase 2 Domain Prioritization Matrix (Wave 1 Launch Day Update)
+
+**Status**: COMPLETE
+**File**: `projects/resistance-research/phase-2-prioritization-matrix.md` (~1,550 words)
+
+**Scope**: Built Phase 2 prioritization matrix for Domains 56, 57, 58, 59. Supersedes PHASE_2_DOMAIN_PRIORITIZATION_MATRIX.md (May 15) with Wave 1 launch-day updates. Evaluated each domain on Urgency, Impact, Feasibility, and Synergy. Produced scored comparison matrix and decision-ready recommended sequence.
+
+**Key findings**:
+- **Domain 58 (Tribal Sovereignty)**: Rank 1 — only domain with a SCOTUS deadline inside 6 weeks (Trump v. Barbara, late June/early July); existing 5,200-word draft cuts production to 25–35 hours; begin May 20
+- **Domain 56 (Civil Service Politicization)**: Rank 2 — already complete; distribute immediately as Wave 1 companion; Partnership for Public Service briefing window opens May 19 (tomorrow)
+- **Domain 57 (Multilateral Withdrawal)**: Rank 3 — Hungary withdrawal effective June 3, Germany troop withdrawal executed, Italy/Spain threatened; produce June 10–August 10 for UNGA 81 window
+- **Domain 59 (Economic Precarity)**: Rank 4 — OBBBA now enacted (July 4 confirmed); produce July 15–August 31 for September pre-midterm window
+- **Key update**: OBBBA legislative arc confirmed in domain-updates-may17-18.md (House 215-214 May 22, Senate 51-50 July 1, enacted July 4) — removes the May 15 "wait for Senate disposition" uncertainty from Domain 59 timing
+
+**Source files read**: PHASE_2_DOMAIN_57_RESEARCH_OUTLINE.md, PHASE_2_DOMAIN_59_RESEARCH_OUTLINE.md, DOMAIN_58_TRIBAL_SOVEREIGNTY_OUTLINE.md, domain-56-civil-service-politicization-governance.md, domain-updates-may17-18.md, PROJECTS.md (Domains 56, 58 entries)
+
+---
+
 ## May 18, 2026 — Phase 3 Institutional Playbooks: AG Coalition and Civil Service Unions
 
 **Status**: COMPLETE
