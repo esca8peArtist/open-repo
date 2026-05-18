@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T18:53:43Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T20:50:25Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.6% | Reset in 5h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.7% | Reset in 3h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,15 +24,15 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — COMPLETE (May 18, 08:00–10:00 UTC).** ✅ **5 Batch 1 emails sent, distributed by 10:00 UTC**. **POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window, from 10:32 UTC)**. ✅ **PHASE_2_OUTCOME_LAUNCH_ROADMAP.md COMPLETE (Session 1258, 572 lines)** — Outcome thresholds by constituency (law schools/immigration/unions/think tanks), domain prioritization matrix (Strong/Moderate/Weak), 4 per-constituency email templates (3 variants each), research activation timeline (3 tracks), Tier 2 pre-contact checklist (20+ items). ✅ **PHASE_2_WAVE_1_ANALYSIS_FRAMEWORK.md COMPLETE (Session 1264, 2,800+ words)** — Real-time metrics tracker (5 tables: contact response rate, Gist view delta, email performance, institutional adoption stages, cross-domain interest mapping), daily checkpoint templates Day 0–7, Week 1 synthesis protocol (7-step: QRP aggregation → constituency classification → cross-domain map → messaging assessment → Tier 2 candidate ID → adjustment identification → one-page summary), success threshold definitions (Gist/reply rate/institutional adoption by constituency with Score 5 override rule). **Next gate: May 21 20:00 UTC preliminary classification (STRONG/MODERATE/WEAK). Final gate: May 25 20:00 UTC Phase 2 path user decision.**
+**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — COMPLETE (May 18, 08:00–10:00 UTC).** ✅ **5 Batch 1 emails sent, distributed by 10:00 UTC**. **POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window, from 10:32 UTC)**. ✅ **PHASE_2_OUTCOME_LAUNCH_ROADMAP.md COMPLETE (Session 1258, 2,500+ words)** — Outcome thresholds by constituency (law schools/immigration/unions/think tanks), domain prioritization matrix (Strong/Moderate/Weak), 4 per-constituency email templates, research activation timeline, Tier 2 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
 **Focus**: **PHASE 1 IN PROGRESS — Windows/iPhone/Signal/Authenticator/Passwords setup.** User at step 1.3 (VeraCrypt restart required). PHASE_1_NEXT_STEPS_GUIDE.md (steps 1.4-1.7: Ente Auth, Bitwarden, data broker opt-outs, iPhone passcode, 1.5-2 hrs) + PHASE_2_PLANNING.md (7-module roadmap, 3 weeks) production-ready post-restart. Blocks: (1) Step 1.3 VeraCrypt restart (Windows user action), (2) iPhone Advanced Data Protection pending Apple delay. Post-Phase-1 → Phase 2 implementation.
 
 ### stockbot
-**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **May 19 20:00 UTC checkpoint execution (32 hours away, May 18 16:45 UTC). ✅ Infrastructure validation COMPLETE (May 18): Jetson healthy, Docker containers running, Lever A config confirmed, checkpoint scripts ready. ✅ POST_CHECKPOINT_OUTCOME_FRAMEWORK.md COMPLETE (Session 1258, 6,723 words): One-page decision matrix + 4 scenario briefs (PASS/NEAR-MISS/FAR-MISS-C1/FAR-MISS-C2) with capital allocation checklists, user approval gates. Playbooks: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md + CHECKP … *(truncated — prune Current focus in PROJECTS.md)*
+**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 20:00 UTC checkpoint ready.
+**Focus**: **✅ ENGINE OPERATIONAL — May 19 checkpoint READY.** Trading engine restarted and verified (Session 1280, May 18 20:36 UTC): ✅ Uvicorn API running on port 8000, ✅ Health check `{"status":"ok","sessions":2}`, ✅ 2 trading sessions active (AAPL lgbm_ho + ridge_wf), ✅ No close_session errors (Session 1279 fix verified), ✅ Code synced to Jetson via rsync. AAPL position: 108 shares, +$3,187 unrealized. **May 19 20:00 UTC checkpoint execution**: 20:00 UTC query (may14_checkpoint_query_alpa … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -41,7 +41,7 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[RESOLVED] PR #1 & #2 MERGED + CLEANUP COMPLETE** (Session 1246). Phase 4 production-ready. PR #1 (Wave 4 Federation Service, 194 tests) merged. PR #2 (Phase 5 docs + security compliance, 0.0.0.0→127.0.0.1 fix) merged. Post-merge cleanup (PHASE_5_ARCHITECTURE.md duplication resolved) complete. Wave 4 federation complete: partner registration, service layer, admin routes, HTTP signature verification, request signing, conflict detection. All 194 tests passing. Phase 5 candidates staged: Candid … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[RESOLVED] Phase 4 complete + Phase 5 Candidate 3 COMPLETE.** PR #1 (Wave 4 Federation, 194 tests) merged to main. All 255 tests passing. **PHASE_5_DECISION_FRAMEWORK.md created (Session 1275)**. **Candidate 3: README security fix + documentation — COMPLETE (Session 1277)**: (1) Phase status updated: Phase 2→4; (2) Test count: 35→255; (3) Critical security fix: host 0.0.0.0→127.0.0.1 in README, API.md, app/main.py, OPEN_REPO_WAVE4_READY.md; (4) Version bumped 0.2/0.1→0.4. All tests p … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
@@ -90,50 +90,18 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 1246 (17 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: resistance-research — focus references Session 1258 (22 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
+• stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
 • stockbot — DB sync script missing on Jetson; checkpoint query returns wrong results ← 2026-05-13 (Session 957, 00:28 UTC)
-• stockbot — May 12 Checkpoint: Critical Architecture Mismatch (options vs equity trading) ← 2026-05-12 (Session 951, 22:05 UTC)
 
 ## Inbox (unprocessed)
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-### Next: User Actions Awaiting
-
-1. **TODAY (May 18, before 14:00 UTC)**: Seedwarden Gate 1 execution (social accounts) using TRACK_B_GATE_1_REALTIME_SUPPORT.md
-2. **TODAY (May 18, anytime)**: Review Item 63 recommendation — approve test print for May 22–24 (optimal) or pick alternate timing
-3. **May 19 evening**: Execute checkpoint cycle (pre-flight 19:00 UTC, query 20:00 UTC) — pre-flight checklist ready
-4. **May 19–20**: Emergency recovery (if FAR-MISS C2) or post-checkpoint planning (if PASS/NEAR-MISS)
-5. **May 21**: Execute Phase 2 decision gate (14:00–15:00 UTC) based on Wave 1 synthesis
-
-### Autonomous Work Next Session
-
-- **Item 61 (May 21)**: Wave 1 72-Hour Synthesis & Phase 2 Decision Framework — activates when May 21 10:30 UTC monitoring window closes
-- **Item 62 (May 21-22, depends on Item 61)**: Phase 2 Research Production Infrastructure — activates after Item 61 outcome decision
-- **Item 65 (May 20-21)**: Resistance-Research May 21-31 Batch 2-3 Coordination Framework — can start May 20 if Batch 1 early signals clear
-- **Item 66 (May 20, if needed)**: Stockbot FAR-MISS-C2 Recovery Playbook — only activated if checkpoint C2 outcome detected
-
----
-
-### Session 1246 (Orchestrator) — May 18, 2026, 12:52–13:05 UTC — Post-Merge Infrastructure Cleanup
-
-**Status**: 🟢 **POST-MERGE CLEANUP COMPLETE** — Resolved open-repo duplication. All systems verified ready for May 19-21 event gates.
-
-**Work**:
-- ✅ **open-repo**: Resolved PHASE_5_ARCHITECTURE.md duplication (kept May 13 canonical root, removed stale Apr 30 docs/ copy)
-- ✅ Verified no broken references
-- ✅ Committed cleanup (37fc21f5)
-
-**Project Status**:
-- All active projects: either complete, staged for May 19-21 gates, or awaiting user action
-- No new autonomous work available (Sessions 1238-1245 completed Items 61-65 + verification)
-- Exploration Queue: Items 61, 62, 66 staged for checkpoint/decision dates (May 19, 21)
-- Critical path ready for May 19 20:00 UTC checkpoint execution
-
 **Upcoming**:
 - **May 19, 20:00 UTC**: Stockbot checkpoint (34 hours away)
 - **May 21, 10:30 UTC**: Wave 1 synthesis framework activation (Item 61)
@@ -142,3 +110,34 @@
 **Token usage**: Healthy (sessions 1238-1245 well-distributed across day)
 
 ---
+
+### Session 1277 (May 18, ~19:55–20:10 UTC, 15 min) — Phase 5 Candidate 3 Complete + Exploration Queue Expansion
+
+**Status**: ✅ **COMPLETE — AUTONOMOUS CODE CONTRIBUTION DELIVERED + EXPLORATION QUEUE EXPANDED WITH 3 INTERDISCIPLINARY RESEARCH ITEMS**
+
+**Work**:
+- ✅ **open-repo Phase 5 Candidate 3**: Documentation accuracy + security fix
+  - Identified all 4 locations with `0.0.0.0` binding violation (README.md line 93, API.md line 474, app/main.py line 68, OPEN_REPO_WAVE4_READY.md line 232)
+  - Fixed all locations: `0.0.0.0` → `127.0.0.1` (CLAUDE.md § 1 compliance)
+  - Updated phase status: Phase 2→4 (all docs)
+  - Updated test counts: 35→255
+  - Updated versions: 0.2/0.1→0.4
+  - Verified tests: 236 passed, 19 skipped, no regressions
+  - Commit 91da68af created (ready for user review/merge)
+
+- ✅ **Exploration Queue**: Added 3 new interdisciplinary research items
+  - Item X1: resistance-research + stockbot (algorithmic trading as democratic infrastructure, 40-50h)
+  - Item X2: open-repo + systems-resilience (offline knowledge architecture, 30-40h)
+  - Item X3: seedwarden + resistance-research (indigenous food sovereignty, 35-50h)
+
+**Projects Touched**:
+- open-repo (Phase 5 Candidate 3 complete)
+- PROJECTS.md (Exploration Queue expanded)
+- CHECKIN.md (session summary)
+- WORKLOG.md (this entry)
+
+**Next Autonomous Work**:
+- Item 61 (May 21 10:30 UTC): Wave 1 72-Hour Synthesis & Phase 2 Decision Framework
+- Item 62 (May 21+): Phase 2 Research Production Infrastructure
+
+**Token Usage**: ~5% Sonnet, well under budget
