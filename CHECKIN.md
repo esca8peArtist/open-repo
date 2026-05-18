@@ -1,3 +1,50 @@
+## Since Last Check-in (Session 1286, 22:14–23:15 UTC May 18)
+
+**Session Status**: ✅ **EXPLORATION QUEUE ITEM EXECUTED — DOMAINS UPDATED** — May 17-18 Breaking Developments Integration complete; Domains 1, 37, 57, 58 current through May 18; critical Domain 37 timeline adjustment identified (Wave 2 moves to mid-July)
+
+**Current Time**: May 18, 2026, 23:15 UTC (20.75 hours until stockbot checkpoint execution)
+
+### Actions Taken This Session
+
+1. **Exploration Queue Item: Resistance-Research May 17-18 Breaking Developments Integration** ✅
+   - **Domains scanned**: 1 (Voting Rights), 37 (Executive Interference), 57 (Multilateral Withdrawal), 58 (Tribal Sovereignty)
+   - **Critical findings**:
+     - **Domain 1 (HIGH)**: *Callais* redistricting cascade hit 5 states in 19 days. Virginia Supreme Court voided voter-approved redistricting referendum May 8; US Supreme Court refused emergency appeal May 15 with one-line order, no noted dissents. Virginia = 4-seat Democratic gain loss.
+     - **Domain 37 (CRITICAL FOR PHASE 2)**: One Big Beautiful Bill enacted July 4, 2026 (287(g) expansion + $38.2B ICE funding). DOJ voter data demands expanded 33→44 states. **NEW COERCION MECHANISM DOCUMENTED**: ICE/CBP deployment threatened as leverage against voter data refusal (Minnesota case — first documented use).
+     - **Domain 57 (HIGH)**: Confirmed 9,000-troop multilateral withdrawal in 30 days (Germany 5,000, Poland 4,000 cancelled). ICC prosecution: May 27 status conference resolves trial scheduling for Duterte case.
+     - **Domain 58 (MEDIUM)**: OBBBA enacted tribal exemptions for SNAP/Medicaid work requirements (partial mitigation); offsetting harm: 287(g) near-reservation enforcement exposure.
+   - **File created**: `projects/resistance-research/phase-2-domains/domain-updates-may17-18.md` (1,200 words)
+   - **Timeline Impact**: NO acceleration required. **Single adjustment**: Domain 37 Wave 2 moves to mid-July to capture enacted (not projected) status of One Big Beautiful Bill. All other Phase 2 windows (Domain 58 by late May/early June, Domain 57 by August 10, Domain 59 in September) unchanged.
+   - **Status**: Committed to master; domains current through May 18
+
+### Current Project State
+
+- **resistance-research**: Wave 1 execution COMPLETE (5 Batch 1 emails, May 18 08:00–10:00 UTC). POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window). Domains updated with breaking developments. Ready for May 20 signal reading + May 21 synthesis.
+- **stockbot**: Engine operational. Checkpoint infrastructure ready. May 19 20:00 UTC execution scheduled.
+- **All other projects**: No changes this session; awaiting scheduled events or user actions.
+
+### Key Decisions & Next Steps
+
+**May 19 (20 hours away)**:
+- 20:00 UTC: Checkpoint execution (scheduled autonomous)
+- 20:30 UTC: Post-checkpoint implementation roadmap (if PASS)
+
+**May 20 (morning)**:
+- Early Wave 1 signal reading (post-send monitoring)
+
+**May 21**:
+- 10:30 UTC: Wave 1 synthesis + Phase 2 path decision (STRONG/MODERATE/WEAK)
+- 14:00 UTC: User gate to approve Phase 2 path
+
+**Critical Insight**: Domain 37 adjustment (mid-July Wave 2 timing) does NOT delay any Phase 2 research start. Research execution can begin immediately post-user-gate without waiting for July. Wave 2 distribution moves, but research production stays on schedule.
+
+### Usage Status
+- **Sonnet**: 5.2% (reset imminent)
+- **All models**: 8.9%
+- **Budget**: Healthy
+
+---
+
 ## Since Last Check-in (Session 1285, 22:07–22:35 UTC May 18)
 
 **Session Status**: ✅ **TRANSITION WINDOW — CHECKPOINT READINESS VERIFIED** — Pre-checkpoint infrastructure audit complete; autonomous checkpoint execution scheduled for May 19 19:30 UTC (pre-flight) and 20:00 UTC (execution). All contingency frameworks staged. Ready for May 19-21 critical events.
