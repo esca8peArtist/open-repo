@@ -1,53 +1,71 @@
-## Since Last Check-in (Session 1277, ~20:00 UTC May 18)
+## Since Last Check-in (Session 1278, 21:15 UTC May 18)
 
-**Session Status**: ✅ **PHASE 5 CANDIDATE 3 COMPLETE + EXPLORATION QUEUE EXPANDED**
+**Session Status**: 🔴 **CRITICAL BLOCKER — Stockbot engine not running; May 19 checkpoint threatened (23h remaining)**
 
-**Current Time**: May 18, 2026, ~20:00 UTC (26 hours until stockbot checkpoint)
+**Current Time**: May 18, 2026, 21:15 UTC
 
-### Work Completed
+### ⚠️ URGENT: Stockbot Pre-Checkpoint Audit Results
 
-**open-repo Phase 5 Candidate 3 — Documentation Accuracy & Security Fix** ✅
-1. **README.md updated**:
-   - Phase status: "Phase 2" → "Phase 4 (Federation)"
-   - Test count: "35 passing tests" → "255 passing tests"
-   - Host binding: `0.0.0.0` → `127.0.0.1` (critical security fix)
-   - Version: 0.2.0 → 0.4.0
+**Engine Status: DOWN**
+- Trading engine stopped at 16:44 UTC (4.5 hours ago)
+- HTTP API not responding (connection refused on all ports)
+- No trading sessions active
 
-2. **API.md updated**:
-   - Version: 0.1.0 → 0.4.0
-   - Phase status: "Phase 1 (CRUD only)" → "Phase 4 (CRUD + Search + Endorsements + Federation)"
-   - Host binding: `0.0.0.0` → `127.0.0.1` (second location)
-   - Response schema examples updated to reflect Phase 4 state
+**Critical Code Bug Identified**
+- `PnLCalculator.close_session` AttributeError fires on EVERY session shutdown
+- Prevents clean P&L state persistence
+- Must be fixed before engine restart
 
-3. **app/main.py (code-level fix)**:
-   - Binding changed: `host="0.0.0.0"` → `host="127.0.0.1"` (eliminates CLAUDE.md § 1 violation)
+**Architecture Discrepancy**
+- Only AAPL lgbm_ho session configured (expected: lgbm_ho + ridge_wf)
+- Unclear if ridge_wf was removed intentionally or misconfiguration
 
-4. **OPEN_REPO_WAVE4_READY.md updated**:
-   - Host binding: `0.0.0.0` → `127.0.0.1` (third location)
+**What's Working ✅**
+- Checkpoint query script exists (`may14_checkpoint_query_alpaca.py`) and Alpaca credentials verified
+- AAPL position: 108 shares, +$3,187 unrealized P&L
+- Account equity: $115,131 (healthy)
 
-5. **Verification**:
-   - All tests pass: 236 passed, 19 skipped (no regressions)
-   - Commit 91da68af created and ready for user review/merge
-   - Candidate 3 is production-ready, independent of Candidates 1 & 2
+**User Action Required (IMMEDIATE)**
+1. **Restart trading engine before May 19 13:30 ET** (20-hour window) — May 19 13:30 ET market open is 20 hours away; engine must be running for checkpoint at 20:00 UTC
+2. **Fix PnLCalculator.close_session bug** in `src/trading/trading_session.py` before restart
+3. **Clarify ridge_wf requirement**: Should AAPL ridge_wf session be configured in active-sessions.json?
 
-**Exploration Queue Expansion** ✅
-Added 3 new interdisciplinary research items:
-1. **resistance-research + stockbot**: Algorithmic Trading as Democratic Infrastructure (40-50h, bridges Domains 59/34/51 with stockbot's civic mission)
-2. **open-repo + systems-resilience**: Offline Knowledge Architecture for System Failure Scenarios (30-40h, informs Phase 5 direction + Phase 3 knowledge design)
-3. **seedwarden + resistance-research**: Indigenous Food Sovereignty as Democratic Infrastructure (35-50h, bridges Domains 58/31/39 with Phase 2-4 expansion)
+**See**: BLOCKED.md "stockbot — Engine not running; May 19 checkpoint at risk"
 
-### Projects Status (May 18 ~20:05 UTC)
+---
 
-- ✅ **open-repo**: Phase 5 Candidate 3 COMPLETE; Candidates 1 & 2 awaiting user decision
-- ✅ **stockbot**: May 19 20:00 UTC checkpoint (26h away), infrastructure validated
-- ✅ **resistance-research**: Wave 1 complete (5 emails sent), post-Wave-1 monitoring active (May 18-21, 72h window)
-- ✅ **All other projects**: Unchanged — awaiting user actions or event gates
+### Prior Session (1277) Work — Still Valid ✅
+
+**open-repo Phase 5 Candidate 3** — Documentation Accuracy & Security Fix (COMPLETE)
+- All 4 locations of `0.0.0.0` binding → `127.0.0.1` (CLAUDE.md § 1 compliance)
+- Test count: 35 → 255; Phase status updated; versions bumped
+- Commit 91da68af ready for user review/merge
+
+**Exploration Queue Expanded** — 3 new interdisciplinary research items added
+
+### Projects Status (May 18 21:15 UTC)
+
+- 🔴 **stockbot**: **HOLD** — Engine down; May 19 checkpoint at risk (see urgent section above)
+- ✅ **resistance-research**: Wave 1 complete (5 emails sent), post-Wave-1 monitoring active (May 18-21, 72h)
+- ✅ **open-repo**: Phase 5 Candidate 3 complete
+- ⏳ **All others**: Unchanged — awaiting user actions or external gates
+
+### Needs Your Input
+
+**Stockbot (IMMEDIATE — within 2 hours)**:
+1. Can you restart the trading engine on the Jetson/local machine? `cd projects/stockbot && uv run python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+2. Do you know what caused the engine to stop at 16:44? (Any system events, crashes, or intentional shutdowns?)
+3. Should AAPL ridge_wf session be configured, or is lgbm_ho-only correct?
+4. Can you verify the fix for `PnLCalculator.close_session` AttributeError in trading_session.py?
+
+**Resistance-Research (May 21 decision gate)**:
+- No immediate action needed; monitoring window is proceeding normally (too early for signal data)
+- May 21 10:30 UTC: Item 61 synthesis framework will run classification based on email signals collected May 18-21
+- May 21 14:00 UTC: User gate to approve Phase 2 research path activation (STRONG/MODERATE/WEAK path choice)
 
 ### Autonomous Work Available Now
 
-**NONE** — all critical-path work is:
-1. Awaiting May 19 20:00 UTC stockbot checkpoint
-2. Awaiting May 20-21 resistance-research early signal monitoring
+**BLOCKED** on stockbot engine restart. Resistance-research monitoring continues passively through May 21 10:30 UTC.
 3. Awaiting user decisions (open-repo Phase 5, etc.)
 
 This session's Candidate 3 work was autonomous code contribution (user can review/merge independently).
