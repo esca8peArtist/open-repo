@@ -31,6 +31,18 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap
+**Date blocked**: 2026-05-18
+**Context**: Session 1205 audit discovered `guardrails.py` module exists with proper `GuardrailChain` and `PositionSizeLimiter` classes, but is NEVER imported or called in any active trading code (trading_session.py, live_engine.py, or any other execution path). Result: AAPL position grew to 28.9% of account equity (vs stated 5% limit) due to idempotency bug allowing 3× order submission. Guardrails would have caught this but were not enforced.
+**Root cause**: (1) Primary — idempotency guard race condition: three BUY orders submitted for AAPL within 2 minutes (April 29); each cycle didn't see previous fills yet, so all three passed guard. (2) Secondary — per-cycle 5% cap was also violated: each $9,643 order = 8.8% of equity individually, exceeding session_cap = min(0.05 * equity, buying_power). Either equity calculation was stale or buying_power exceeded cap.
+**What I need**: (1) Wire `GuardrailChain` into `trading_session.py` BUY submission path (around line 1950, BEFORE `_reserve_cash()` call). (2) Use aggregated account-level positions from Alpaca API (not just session's local position_manager). (3) Configure `PositionSizeLimiter` at `max_position_pct=0.05` (matching stated 5%, not 15% default). (4) Add unit tests for concurrent order guardrails and idempotency. (5) Test that idempotency guard correctly deduplicates concurrent submit attempts.
+**May 19 checkpoint impact**: NOT A BLOCKER — checkpoint measures signal execution, not guardrails enforcement. Checkpoint can proceed.
+**Deployment impact**: BLOCKER for new session deployments (AMZN/JPM post-checkpoint) — cannot scale up until guardrails are wired and tested.
+**Verify with**: `grep -n "from.*guardrails import\|GuardrailChain(" projects/stockbot/src/trading_session.py projects/stockbot/src/live_engine.py` — should return non-zero results. Also: `uv run pytest projects/stockbot/tests/test_guardrails_concurrent.py -v` should pass with 10+ concurrent order tests.
+**Resolution**: [leave blank]
+
+---
+
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.

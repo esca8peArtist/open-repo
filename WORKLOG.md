@@ -1,5 +1,74 @@
 # Work Log
 
+## Orchestrator Session 1205 — May 18, 2026 02:20–03:00 UTC — Wave 1 Readiness Audit + Stockbot Guardrails Investigation
+
+**Status**: ⚠️ **WAVE 1 READY TO EXECUTE (user action required) + STOCKBOT GUARDRAILS WIRING BLOCKER IDENTIFIED**
+
+### Session Overview
+
+**Duration**: 40 minutes (parallel agent execution: resistance-research Wave 1 audit + stockbot guardrails investigation)
+**Type**: Pre-execution audits
+**Result**: Wave 1 confirmed production-ready (user just needs 6 Day-0 setup items in next 3.5 hours); Critical guardrails wiring gap identified for post-checkpoint fix
+
+### Work Completed
+
+**✅ RESISTANCE-RESEARCH: Wave 1 Readiness Audit Complete**
+- **Gist verification**: All 8 Gists live (HTTP 200 verified)
+  - Main proposal, executive summary, Domain 37 standalone, litigation tracker, first amendment tracker, environmental rollbacks, police consent decrees, Domain 42
+- **Execution checklist**: 7-block structure all present and production-ready
+  - Blocks 1-7 documented with exact instructions and dependencies
+- **Email/contact infrastructure**: 4 contact lists verified, sample contacts confirmed valid (Ryan Goodman, Wendy Weiser, Erica Chenoweth, Ian Bassin, Marc Elias)
+- **Day-0 checklist status**: Complete with user-action items listed
+- **User action required BEFORE 06:00 UTC** (next 3.5 hours):
+  1. Record Gist view count baselines (10 min) — must be logged in as esca8peArtist
+  2. Create Google Sheets tracking workbook (15 min)
+  3. Set 9 calendar/phone reminders (2 min)
+  4. Create 5 Google Alerts (10 min)
+  5. Send test email from sending account and confirm delivery (5 min)
+  6. Confirm Elias draft Callais language (2 min)
+  7. Fill `{{YOUR_NAME}}` and `{{YOUR_CONTACT_INFO}}` in Batch 1 drafts (5 min)
+  - **Total time**: ~50 minutes
+- **DECISION: PROCEED** — Infrastructure fully built. User completes 50-min setup, then execute Batch 1 sends 08:00–10:00 UTC per WAVE_1_EXECUTION_CHECKLIST.md
+
+**❌ STOCKBOT: Critical Guardrails Wiring Gap Identified**
+- **Finding**: `guardrails.py` EXISTS but is NOT WIRED INTO TRADING PATH
+  - `GuardrailChain` never imported/instantiated in trading_session.py, live_engine.py, or anywhere in execution path
+  - `PositionSizeLimiter` default max is 15%, not 5%
+  - Result: AAPL oversized position (28.9% of equity vs 5% limit) not caught by guardrails
+- **Root cause analysis**:
+  - **Primary (Idempotency bug)**: Three BUY orders submitted for AAPL within 2 minutes on April 29 (36 shares @ $267.86 × 3 = 108 shares total)
+    - Each cycle didn't see the position yet (fills pending), so three cycles each passed the idempotency guard
+    - Result: 3x the intended position (each order was 8.8% of equity individually, exceeding the 5% per-cycle cap)
+  - **Secondary (per-cycle cap violated)**: Each $9,643 order exceeded the calculated `session_cap` = `min(0.05 * equity, buying_power)` = ~$5,458
+    - Either equity calculation was stale (used initial value instead of current), or buying_power exceeded cap
+    - Requires further investigation of equity value at execution time
+- **Current position**:
+  - 108 shares @ entry cost $28,931
+  - Current market value $31,823 @ $294.66/share
+  - Unrealized gain: +$924 (only ~$2,893 of current position growth)
+  - Primary cause: 3x over-sized entries, not unrealized gain growth
+- **Checkpoint impact**: NOT A BLOCKER
+  - May 19 checkpoint measures signal execution, not guardrails enforcement
+  - Can proceed with checkpoint as planned
+- **Deployment blocker**: YES — for new session deployments (AMZN, JPM post-checkpoint)
+  - Cannot scale up until guardrails are wired and tested
+- **Fix required**:
+  - Wire `GuardrailChain` into trading_session.py BUY submission path (line ~1950, before `_reserve_cash()`)
+  - Use aggregated account-level positions from Alpaca (not just session's local position manager)
+  - Configure `PositionSizeLimiter` at `max_position_pct=0.05` (matching 5% stated limit, not 15% default)
+  - Add unit tests for guardrails enforcement with concurrent orders
+  - Test idempotency guard with concurrent submits (current race condition must be fixed)
+
+**Checkpoint Status**: ✅ PROCEED (readiness frameworks from Session 1202 still valid, guardrails wiring doesn't block checkpoint execution)
+
+### State Updates Needed
+
+1. Update PROJECTS.md resistance-research focus: Document Wave 1 user-action items and execution timeline
+2. Add BLOCKED.md entry: Stockbot guardrails wiring (post-checkpoint, before new deployments)
+3. Update CHECKIN.md with both findings
+
+---
+
 ## Orchestrator Session 1202 — May 18, 2026 04:14–05:30 UTC — Exploration Queue Items 56, 57, 60: Checkpoint + Launch Readiness Prep
 
 **Status**: ✅ **ITEMS 56, 57, 60 COMPLETE — CHECKPOINT & LAUNCH READINESS VALIDATED**
