@@ -1,16 +1,26 @@
-## Since Last Check-in (Session 1259)
+## History
 
-**Current Time**: May 18, 2026, 17:53 UTC
-**Session Status**: ✅ **STATE VERIFICATION COMPLETE — ALL SYSTEMS READY FOR EVENT GATES**
-**Session Work**: Orientation + comprehensive state verification (no autonomous work available, all systems staged)
+### Session 1259 (May 18, 17:53 UTC)
+- **Status**: State verification complete, all systems ready for event gates
+- **Work**: Orientation + comprehensive verification
+- **Outcome**: Confirmed all projects staged for May 19-21 gates; no autonomous work available that day
+
+---
+
+## Since Last Check-in (Session 1260)
+
+**Current Time**: May 18, 2026, 19:30+ UTC
+**Session Status**: ✅ **EXPLORATION QUEUE ITEMS 61 & 65 PRE-STAGED — READY FOR MAY 21-31 OPERATIONS**
+**Session Work**: Spawned 2 parallel resistance-research agents; both items committed.
 
 ### Situation Summary
-All pre-event preparation **complete and verified**. Exploration Queue items completed (Sessions 1256–1258). All projects are either:
-- Awaiting external events (May 19 checkpoint, May 21 synthesis, May 30 launch)
-- Blocked on user actions (social accounts, test print, VeraCrypt restart)
-- Complete and published (off-grid-living, career-training, open-repo Phase 4-5)
+**Exploration Queue execution completed.** With all major projects blocked on user actions (checkpoint May 19, syntheses May 21), autonomous work shifted to **pre-staging research frameworks** that will execute May 21-31. 
 
-**No autonomous work available today.** Next autonomous work activates May 19 20:00 UTC post-checkpoint or May 21 10:30 UTC Wave 1 synthesis.
+**Items Completed**:
+- ✅ **Item 61**: Wave 1 72-Hour Monitoring Synthesis & Phase 2 Launch Decision Framework (9,142 words, all classification logic + contingency scenarios pre-staged)
+- ✅ **Item 65**: May 21-31 Batch 2-3 Advanced Coordination Framework (production-ready contact sequencing, Domain 42 May 28 deadline integration, go/no-go gate logic)
+
+Both frameworks committed to master. All May 21-31 operations infrastructure now in place — user won't need to improvise contingency paths during high-pressure decision windows.
 
 ### Projects Status (Verified May 18, 17:44 UTC)
 1. **stockbot** (Priority 1): May 19 20:00 UTC checkpoint ready ✅
@@ -63,11 +73,12 @@ All pre-event preparation **complete and verified**. Exploration Queue items com
 - **June 1**: User Phase 5 path decision (systems-resilience)
 
 ### Needs Your Input
-1. **Today (May 18)**: Ready to execute Seedwarden Gate 1 (social account creation)? Support guide in `projects/seedwarden/TRACK_B_GATE_1_REALTIME_SUPPORT.md`.
+1. **Today (May 18)**: Ready to execute Seedwarden Gate 1 (social account creation)? Support guide in `projects/seedwarden/TRACK_B_GATE_1_REALTIME_SUPPORT.md`. (Gate 1 window was TODAY before 14:00 UTC — if not yet started, coordinate with Gate 2 timing.)
 2. **May 18-19**: Approve mfg-farm test print timing? (Optimal window: May 22–24 per Item 63 analysis)
-3. **May 19 20:00 UTC**: Standby for checkpoint execution — playbook at `projects/stockbot/MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md`
-4. **May 21 10:30 UTC**: Provide Wave 1 signal data (constituency response counts, Domain 37 engagement) — orchestrator will classify and recommend Phase 2 path
-5. **May 21 14:00 UTC**: Confirm Phase 2 path decision (STRONG/MODERATE/WEAK outcome scenario)
+3. **May 19 19:00 UTC**: Pre-flight checklist (5 min) — playbook at `projects/stockbot/MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md`
+4. **May 19 20:00 UTC**: Execute checkpoint query — outcome framework ready at `projects/stockbot/POST_CHECKPOINT_OUTCOME_FRAMEWORK.md`
+5. **May 21 10:30 UTC**: Provide Wave 1 signal data (reply counts, opens, integration signals) — orchestrator will use `WAVE_1_SYNTHESIS_FRAMEWORK.md` to classify and recommend Phase 2 path
+6. **May 21 14:00 UTC**: Confirm Phase 2 path decision (will be: STRONG → June 1 launch, MODERATE → June 15 start, WEAK → election focus)
 
 ### Token Usage
 - **Sonnet 5.5%** (3.6M / 65M) — ample budget through May 31
@@ -75,9 +86,10 @@ All pre-event preparation **complete and verified**. Exploration Queue items com
 
 ### Next Autonomous Work
 - **May 19 20:30 UTC** (post-checkpoint): Execute Item 66 (FAR-MISS-C2 recovery playbook) IF checkpoint outcome is FAR-MISS-C2 (contingency only)
-- **May 20 morning**: Analyze Wave 1 early signals, activate STRONG/MODERATE/WEAK path via PHASE_2_OUTCOME_LAUNCH_ROADMAP.md
-- **May 21 10:30 UTC**: Item 61 (Wave 1 synthesis) — classify signals, recommend Phase 2 path to user
-- **May 21 14:00 UTC**: Phase 2 research activation (per outcome decision)
+- **May 20 morning** (IF Batch 1 shows >50% opens by 10:00 UTC): Activate Batch 2 acceleration via `MAY_21_31_BATCH_2_3_COORDINATION_FRAMEWORK.md` + read Wave 1 early signals (replies, integration interest)
+- **May 21 10:30 UTC** (Wave 1 monitoring window closes): Execute Item 61 — classify Wave 1 signals using `WAVE_1_SYNTHESIS_FRAMEWORK.md`, generate STRONG/MODERATE/WEAK classification + Phase 2 path recommendation
+- **May 21 14:00–15:00 UTC**: User confirms Phase 2 decision; orchestrator activates corresponding research path (Domains 56-59 production if STRONG/MODERATE, or Domain 37 election focus if WEAK)
+- **May 20-31**: Batch 2-3 distribution ongoing per `MAY_21_31_BATCH_2_3_COORDINATION_FRAMEWORK.md` (contingency-responsive, depends on May 21 classification)
 - **May 30+**: Item 62 (Phase 2 production infrastructure) — if Phase 2 path confirmed
 
 ---
