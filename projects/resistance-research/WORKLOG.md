@@ -2,6 +2,43 @@
 
 ---
 
+## May 18, 2026 — Exploration Queue Items 1 and 2 (Agent Extension Pass, 07:23 UTC)
+
+**Status**: COMPLETE
+
+### Item 1: May 17-18 Breaking Developments Integration
+
+**File updated**: `projects/resistance-research/domain-updates-may17-18.md`
+
+**Supplemental section added** at bottom of existing file (which already had 5 prior scan passes today). New section documents:
+
+1. **Domain 1 — Virginia SCOTUS rejection (May 15)**: US Supreme Court rejected Virginia Democrats' emergency appeal. Virginia's voter-approved redistricting referendum (4-seat Democratic gain) remains voided by state Supreme Court. This is the 5th redistricting cascade mechanism in the Callais wave — the prior scans covered TN, LA, AL, SC; Virginia is a judicial nullification of a voter initiative.
+
+2. **Domain 57 — Hungary ICC reversal pledged (Peter Magyar April 12 election victory)**: Existing document records Hungary withdrawal as "executed." Correct characterization as of May 18: "withdrawal executed, reversal pledged by incoming elected government." Strengthens the reform pathway argument. Flagged as July revision pass item (not urgent for Wave 1).
+
+3. **Domain 58 — Maine Wabanaki legislative narrowing (2026 session)**: Proposed tribal sovereignty restoration legislation was significantly narrowed. Enacted version covers only narrow tax advantages — not the land acquisition, environmental regulation, and civil jurisdiction restoration originally proposed. Not previously documented in Domain 58; recommended as addition to state-level section at next revision.
+
+**Wave 1 verdict confirmed**: All four domains production-ready as of agent extension pass.
+
+**Sources consulted**: [NPR — Virginia redistricting, May 15](https://www.npr.org/2026/05/15/nx-s1-5823911/supreme-court-virginia-redistricting); [NBC News — Virginia Supreme Court blocks map](https://www.nbcnews.com/politics/2026-election/virginia-supreme-court-blocks-democratic-drawn-congressional-map-voter-rcna342687); [MECEP — 2026 Session Recap](https://www.mecep.org/blog/2026-session-recap-immigration-and-tribal-sovereignty/)
+
+---
+
+### Item 2: Phase 2 Outcome-Based Launch Roadmap
+
+**File updated**: `projects/resistance-research/phase-2-outcome-launch-roadmap.md`
+
+**Template E (Faith Organizations) added** to the existing 5,800-word document (which had Templates A-D complete from a prior session today). Template E covers:
+- Domain 59 (Economic Precarity) with covenant/time-poverty framing for faith constituencies
+- Domain 58 (Tribal Sovereignty) with treaty-as-covenant framing and Nixon 1970 Special Message reference
+- Domain 44 (Reproductive Freedom) noted as conditional — only for faith organizations with demonstrated reproductive justice focus
+- Three outcome variants (Strong/Moderate/Weak) for the lead paragraph
+- Target contacts: NETWORK Lobby, Interfaith Worker Justice, NCC, Catholic Charities USA, T'ruah, PICO, Auburn Seminary, ELCA Advocacy
+
+**Note on document status**: The existing `phase-2-outcome-launch-roadmap.md` was already comprehensive (Sections 1-7, four templates, complete policy window table, resource allocation matrix) from a prior agent session. This session verified completeness against the Item 2 task specification and added the missing Template E. The document now covers all five constituencies specified in the task brief.
+
+---
+
 ## May 18, 2026 — Domain 56 Wave 1 Distribution Infrastructure (Session: post-prioritization)
 
 **Status**: COMPLETE

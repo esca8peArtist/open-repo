@@ -637,4 +637,70 @@ Which Phase 1 playbooks and Phase 2 threat briefings go to each constituency?
 
 ---
 
-*Prepared: May 18, 2026 (before Wave 1 closes, 06:00–10:00 UTC). Policy windows verified against CBPP, Georgetown CCF, EU AI Act official text, UN General Assembly calendar, US election calendar, and OBBBA text (P.L. 119-21, enacted July 4, 2025). Sources: PHASE_2_LAUNCH_ROADMAP_POST_WAVE1.md (May 17); PHASE_2_DOMAIN_57_RESEARCH_OUTLINE.md (May 15); PHASE_2_DOMAIN_59_RESEARCH_OUTLINE.md (May 15); PHASE_2_DOMAIN_39_RESEARCH_OUTLINE.md (May 17); POST_WAVE_1_SYNTHESIS_AND_TIER2_TRANSITION.md (May 17); WAVE_1_MONITORING_DASHBOARD.md (May 17); BATCH_1_CONTACT_VERIFICATION.md (April 28, updated May 14). Word count: ~5,800 words.*
+---
+
+### Template E: Faith Organizations (Economic Justice + Tribal Sovereignty)
+
+**Target contacts**: NETWORK Lobby for Catholic Social Justice, Interfaith Worker Justice, National Council of Churches (NCC), Catholic Charities USA, T'ruah: The Rabbinic Call for Human Rights, PICO National Network (faith-based community organizing), Auburn Seminary, United Church of Christ Justice and Witness Ministries, Islamic Relief USA, Evangelical Lutheran Church in America (ELCA) Advocacy.
+
+**Domain hooks**:
+- Primary: Domain 59 (Economic Precarity as Civic Exclusion — the moral argument: economic exclusion from democratic participation is a justice issue, not only a policy problem; specific framing for faith-based members who understand covenant obligations)
+- Primary: Domain 58 (Tribal Sovereignty as Democratic Infrastructure — treaty obligations as covenant language; the termination era repudiation by President Nixon; the moral obligation of the trust relationship)
+- Bridge: Domain 44 (Reproductive Freedom and Democratic Participation — faith organizations with maternal justice and reproductive health work; not all faith contacts will engage this domain, but those doing maternal mortality and economic justice work are directly relevant)
+
+**Strategic note**: Faith organizations span a wide theological and political range. Do not send Template E to organizations whose leadership has publicly opposed reproductive rights or immigration advocacy. For those contacts, use only Domains 58 and 59 (tribal sovereignty and economic precarity), which have broad cross-partisan resonance. Domain 44 is appropriate only for faith organizations with a demonstrated reproductive justice or reproductive health policy focus.
+
+---
+
+**Subject line options**:
+- Tribal sovereignty: "Tribal sovereignty as covenant obligation: research on 574 democratic nations whose treaties the federal government is breaking"
+- Economic justice: "A democratic design argument for economic justice: research on time poverty and civic exclusion"
+- Combined: "Two research documents on democratic exclusion: economic precarity and tribal sovereignty — for your social justice work"
+
+---
+
+**STRONG lead paragraph**:
+
+Initial distribution has produced strong engagement from legal practitioners and policy organizations — [specific signal]. I'm reaching out to faith organizations now because the democratic design argument at the core of this research connects directly to the moral and theological frameworks your community uses, and the constituencies you reach — low-income workers, immigrant families, indigenous communities — are exactly the constituencies whose democratic participation the research documents is being structurally suppressed. I'd welcome your reaction on whether the framing is useful for your member education and advocacy work.
+
+**MODERATE lead paragraph**:
+
+Initial distribution has produced engagement from policy and legal organizations. I'm in Tier 2 outreach to faith communities specifically because two of the domains — economic precarity as civic exclusion and tribal sovereignty as democratic infrastructure — connect the democratic design argument to justice frameworks your community engages with directly: the time poverty analysis (people too economically pressed to participate in democracy) and the covenant/treaty argument (the federal government is breaking obligations it entered into with sovereign peoples).
+
+**WEAK lead paragraph**:
+
+I'm distributing democratic reform research to faith communities because the framework includes two documents that connect economic and indigenous justice advocacy directly to the democratic participation crisis — and because faith organizations reach constituencies (low-income workers, immigrant families, tribal community members) whose democratic participation is being suppressed in specific, quantifiable, and remediable ways. The research is available as a free resource with no institutional strings.
+
+---
+
+**Body (all outcome variants)**:
+
+On economic precarity: the research documents a 42-percentage-point income-based voter turnout gap in the 2024 presidential election — the highest in modern US history. Forty-two percent of Americans earning under $50,000 did not vote, compared to 16% of those earning over $100,000. The research argues this gap is not explained by disengagement or apathy. It is explained by the material structure of time poverty: the systematic depletion of the discretionary hours required for civic participation.
+
+The mechanism is calculable and concrete: a full-time worker with children works 50+ hours across paid employment and commute, spends 15-20 hours on childcare and household management per week, and is left with fewer than 17-27 hours of discretionary time weekly — heavily fragmented and cognitively depleted. Democratic participation requires a minimum of 4-6 consolidated hours per month for basic organizational engagement. For the multi-job worker managing medical debt, unstable housing, and childcare logistics, those hours do not exist. The federal minimum wage at $7.25/hour — unchanged for 17 consecutive years — is the structural baseline.
+
+For faith communities, this analysis provides the empirical foundation for an argument your tradition already makes morally: economic exclusion from democratic life is not a consequence of personal failure but a consequence of unjust structures. The OBBBA's five simultaneous benefit cuts (Medicaid, SNAP, housing assistance, childcare subsidies, student loan changes) compound this exclusion multiplicatively for 80 million Americans. The research makes this compounding argument quantitatively rather than rhetorically.
+
+On tribal sovereignty: the 574 federally recognized tribal nations are sovereign governments — democracies — whose authority derives from 370 ratified treaties that are the supreme law of the land under Article VI. The core exchange documented in treaty after treaty was land for governmental services: tribes ceded territories; the United States committed to protect remaining territory, provide educational and health services, support tribal governance, and recognize tribes' right to self-governance.
+
+That is a covenant. And the 2025-2026 federal defunding campaign — through DOGE-directed Bureau of Indian Affairs and Indian Health Service cuts — is breaking it. The BIA has lost 13% of its workforce since January 2025. The IHS has lost 1,000+ employees and 12 facilities. The FY2026 IHS budget was enacted at $8.05 billion against a documented need of $63 billion. This is not a budget adjustment. It is the dismantling of governmental capacity in 574 functioning democracies through administrative action, without the congressional authorization that even the discredited termination era required.
+
+President Nixon repudiated the termination era in his 1970 Special Message to Congress on Indian Affairs: "The special relationship between Indians and the Federal government is the result of solemn obligations which have been entered into by the United States Government." The current administration is, without that repudiation's procedural form, accomplishing what termination did structurally — and doing so in the name of efficiency.
+
+For faith communities that engage covenant language: this is the research that makes the democratic design argument for why treaty obligations are not merely historical artifacts but operative governing commitments.
+
+Full research:
+- Economic precarity: [DOMAIN_59_GIST_URL]
+- Tribal sovereignty: [DOMAIN_58_GIST_URL]
+
+Please feel free to share these documents with your policy staff, advocacy networks, or member congregations. Both are available under a CC 4.0 license with no attribution requirement. If you find them useful for your member education or legislative advocacy work, I can also send related domains on healthcare access, reproductive freedom, and housing as democratic infrastructure.
+
+[YOUR NAME] | [YOUR CONTACT INFO]
+
+---
+
+*Template E added: May 18, 2026 (agent extension pass — completing the five-template set per Item 2 task specification). Templates A-D produced in prior session. Faith constituency represents approximately 200,000+ congregations with direct access to the constituencies whose democratic participation the research documents as structurally suppressed.*
+
+---
+
+*Prepared: May 18, 2026 (before Wave 1 closes, 06:00–10:00 UTC). Policy windows verified against CBPP, Georgetown CCF, EU AI Act official text, UN General Assembly calendar, US election calendar, and OBBBA text (P.L. 119-21, enacted July 4, 2025). Sources: PHASE_2_LAUNCH_ROADMAP_POST_WAVE1.md (May 17); PHASE_2_DOMAIN_57_RESEARCH_OUTLINE.md (May 15); PHASE_2_DOMAIN_59_RESEARCH_OUTLINE.md (May 15); PHASE_2_DOMAIN_39_RESEARCH_OUTLINE.md (May 17); POST_WAVE_1_SYNTHESIS_AND_TIER2_TRANSITION.md (May 17); WAVE_1_MONITORING_DASHBOARD.md (May 17); BATCH_1_CONTACT_VERIFICATION.md (April 28, updated May 14). Template E added May 18. Total word count: ~7,200 words.*

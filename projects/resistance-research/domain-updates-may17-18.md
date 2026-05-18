@@ -372,3 +372,63 @@ No ruling issued. Oral arguments concluded April 1; ruling expected June-July 20
 
 **Scan method**: Web searches (8 targeted queries) + SC Legislature direct fetch
 **Next recommended monitoring pass**: May 19 ET morning (SC H.5683 outcome) and May 27 (ICC status conference)
+
+---
+
+## SUPPLEMENTAL RESEARCH — Session May 18 07:23 UTC (Agent Extension Pass)
+
+*This section documents findings from an independent research pass at 07:23 UTC May 18, 2026. It extends coverage with additional confirmed developments and provides Wave 1 integration notes not present in earlier scans.*
+
+---
+
+### Domain 1 Supplement — Virginia SCOTUS Rejection (May 15) and Post-Callais Cascade Math
+
+**Finding**: The U.S. Supreme Court on May 15, 2026 rejected Virginia Democrats' emergency appeal seeking to restore the congressional redistricting map that voters approved in the April 21, 2026 referendum. The Virginia Supreme Court had struck down that map on May 8, 4-3, on procedural grounds: it found the legislature had not allowed sufficient time between its two required votes on the constitutional amendment. The US Supreme Court's refusal to intervene was a one-line order with no noted dissents.
+
+**Electoral math consequence**: Virginia had represented a potential 4-seat Democratic gain from a voter-approved remediation. The loss of that gain — combined with Tennessee (enacted May 7), Louisiana (SB 121 Senate passage, House pending), and the pending South Carolina vote — means the post-Callais redistricting wave has shifted or is in process of shifting between 6 and 9 House seats in a 19-day window since the April 29 ruling. The gerrymandering threshold gap (Democrats need roughly 4+ point popular vote advantage to win a House majority even with equal turnout) has widened further.
+
+**Wave 1 messaging note**: The Virginia case is a clean example of voter-approved remedies being voided by procedurally-focused judicial intervention. For law school and election law recipients: this is the "courts as last resort" failure mode in action — not a frontal constitutional ruling, but a procedural veto of democratic self-correction. The US Supreme Court's refusal to intervene completes the logic.
+
+**Domain 1 integration**: The previous scans' Section 8.6 documents Tennessee, Louisiana, Alabama, and South Carolina. The Virginia SCOTUS rejection is a fifth distinct redistricting mechanism in the cascade — different in character (judicial nullification of a voter initiative rather than legislative special session gerrymander) but contributing to the same aggregate effect.
+
+**Sources**:
+- [NPR — US Supreme Court is death knell for Virginia's Democratic map, May 15](https://www.npr.org/2026/05/15/nx-s1-5823911/supreme-court-virginia-redistricting)
+- [NPR — Virginia redistricting, court rejects, May 8](https://www.npr.org/2026/05/08/nx-s1-5805193/redistricting-virginia-trump-midterms)
+- [NBC News — Virginia Supreme Court blocks Democratic map](https://www.nbcnews.com/politics/2026-election/virginia-supreme-court-blocks-democratic-drawn-congressional-map-voter-rcna342687)
+- [Newsweek — Supreme Court denies Virginia redistricting](https://www.newsweek.com/supreme-court-rejects-virginia-democrats-congressional-map-11958428)
+
+---
+
+### Domain 58 Supplement — Maine Wabanaki Legislative Narrowing (2026 Session)
+
+**Finding**: Proposed legislation in the 2026 Maine legislative session that would have restored Wabanaki rights over land acquisition, environmental regulation, and civil legal jurisdiction — a genuine sovereignty expansion — was enacted in significantly narrowed form. The final version covers only a narrow set of tax advantages for tribal employees and equipment destined for tribal use. The broader sovereignty restoration provisions were stripped.
+
+**Domain 58 integration**: This is a state-level legislative failure that is not currently documented in Domain 58. The Maine outcome is relevant as a parallel track to the federal defunding documentation: even in states with relatively favorable political environments for tribal rights (Maine has a Democratic-controlled legislature as of 2026), comprehensive sovereignty restoration faces procedural and political barriers that reduce tribal governance capacity. The MECEP analysis frames this as part of a broader pattern in which immigration enforcement pressures and budget austerity have crowded out tribal sovereignty legislation even in blue states.
+
+**Wave 1 integration**: Not directly applicable to Wave 1 recipients, who are focused on federal-level democratic infrastructure. The Maine precedent is most relevant for Domain 58 distribution recipients in the tribal sovereignty and indigenous rights space (fall 2026 distribution target). No immediate action needed.
+
+**Source**: [MECEP — 2026 Session Recap: Immigration and Tribal Sovereignty](https://www.mecep.org/blog/2026-session-recap-immigration-and-tribal-sovereignty/)
+
+---
+
+### Domain 57 Supplement — Hungary ICC Withdrawal: Magyar Election Victory Context
+
+**Finding**: Peter Magyar's Tisza Party won the Hungarian parliamentary elections on April 12, 2026. Magyar has explicitly pledged to halt and reverse Hungary's ICC withdrawal — which Domain 57 documents as the first EU member state ICC exit (triggered by Hungary's obligation to arrest Netanyahu during a state visit in April 2025).
+
+**Domain 57 status**: The Domain 57 document (produced May 15, 2026) records the Hungary withdrawal as "executed." The CHECKIN.md May 17 monitoring note already flags this as a recommended update for the July pre-distribution polish pass. The correct framing as of May 18 is: "withdrawal executed, reversal pledged by incoming elected government." This is a strengthening update for Domain 57's structural argument — it demonstrates that democratic electoral recovery can reverse multilateral withdrawal, which is a reform pathway the domain's Section 6 (advocacy recommendations) should highlight.
+
+**Urgency**: Low. Distribution window is August 10, 2026 (pre-UNGA 81). Update recommended in July revision pass, not urgently before Wave 1.
+
+---
+
+### Summary: Agent Extension Pass Findings
+
+| Domain | Supplement | Prior Coverage | New Action |
+|--------|------------|----------------|-----------|
+| Domain 1 | Virginia SCOTUS rejection confirmed May 15 | Not in earlier scans | Add to Section 8.6: Virginia as 5th redistricting cascade mechanism |
+| Domain 57 | Hungary Magyar election context | CHECKIN.md flagged but domain not updated | Low urgency; July revision pass |
+| Domain 58 | Maine Wabanaki legislative narrowing (2026) | Not previously documented | Add note to state-level section at next revision |
+
+**All Wave 1 materials remain accurate and production-ready as of 07:23 UTC May 18, 2026.**
+
+*Agent extension pass completed: May 18, 2026, 07:23 UTC*
