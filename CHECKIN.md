@@ -1,3 +1,53 @@
+## Session 1216 (Orchestrator) — May 18, 2026 05:23–?? UTC — [IN PROGRESS] Wave 1 Orchestrator Pre-Flight + Phase 2 Prioritization
+
+**Status**: 🟡 **WAVE 1 EXECUTION READY** — Pre-flight verification running early; Gist + contact checks complete; Phase 2 prioritization matrix committed
+
+**Session 1216 Work Completed (05:23–05:30 UTC)**:
+1. ✅ **Wave 1 Early Pre-Flight Verification (05:23–05:29 UTC)**:
+   - ✅ Gist pre-flight: All 5+ critical Gists verified HTTP 200 (main proposal, executive summary, Domain 37, litigation tracker, Domain 42)
+   - ✅ Contact re-verification: All 5 Batch 1 contacts verified active (Goodman, Weiser, Chenoweth, Bassin, Elias) — no role changes in past 3 days
+   - ✅ CronCreate scheduled: Jobs f59adf90 and 7b2c6f4c (0 7 18 5 *) for 07:00 UTC formal pre-flight execution
+   - Remaining tasks: template scan, spreadsheet baseline, test send (user actions — require email account access or GitHub API auth)
+
+2. ✅ **Phase 2 Prioritization Research (Parallel Agent)** — COMPLETE:
+   - ✅ Spawned resistance-research agent (05:25 UTC) to build Phase 2 Domain Prioritization Matrix
+   - ✅ Deliverable: `phase-2-prioritization-matrix.md` (1,500 words, 4×4 evaluation grid with urgency/impact/feasibility/synergy scoring)
+   - ✅ **Recommended sequence** (USER ACTION DECISION):
+     1. **Rank 1 — Domain 58** (Tribal Sovereignty): SCOTUS deadline late June/early July. Urgency 10/10. Begin May 20.
+     2. **Rank 2 — Domain 56** (Civil Service, 6,800 words): ⭐ **Zero production hours. Distribute immediately as Wave 1 companion.** Partnership for Public Service briefing May 19 — highest synergy-per-hour.
+     3. **Rank 3 — Domain 57** (Multilateral Withdrawal): August 10 UNGA deadline. Hungary ICC exit June 3. Begin June 10.
+     4. **Rank 4 — Domain 59** (Economic Precarity): OBBBA enacted July 4. Broadest constituency. September deadline. Begin July 15.
+   - ✅ Committed: `0634ea8f` (phase-2-prioritization-matrix.md to master)
+   - **Strategic insight**: Domain 56 as Wave 1 Wave 1 companion immediately extends engagement window + highest ROI
+
+**Critical Timeline** (unchanged):
+- **06:00 UTC (31 min)**: User setup deadline — 6 actions (Gist baseline, Sheets, Calendar, Alerts, test email, Callais confirmation)
+- **07:00 UTC (91 min)**: Orchestrator pre-flight (CronCreate auto-triggered) — Gist verification, contact re-check, template scan, spreadsheet baseline
+- **08:00–12:00 UTC**: Wave 1 Batch 1 send window (user-executed: 5 emails, staggered 15-30 min)
+- **20:00 UTC**: Day 1 Wave 1 closing summary (engagement signals, Gist view deltas)
+
+**May 19 Checkpoint** (39 hours away):
+- **19:00–19:55 UTC**: Jetson pre-flight verification — SSH, Docker, Lever A config (expected PASS)
+- **20:00 UTC**: Checkpoint analysis query — PASS / STILL_MISS_B2 / FAR_MISS outcome determination
+
+**Project Status**:
+- **resistance-research**: ✅ Wave 1 user setup (06:00 UTC), orchestrator pre-flight (07:00 UTC), Batch 1 sends (08:00–12:00 UTC). ✅ Phase 2 prioritization matrix committed (user can decide sequence immediately post-Wave-1)
+- **stockbot**: ✅ May 19 checkpoint infrastructure 100% ready (verified Session 1215)
+- **seedwarden**: Track B Gate 1 assets ready (user action: social account creation due today)
+- **All others**: Awaiting user decisions or external gates
+
+**Files Modified This Session**:
+- WORKLOG.md (pre-flight verification + Phase 2 agent work)
+- phase-2-prioritization-matrix.md (new, committed 0634ea8f)
+- CHECKIN.md (this entry)
+
+**Commits**:
+- b1bbb132: Session 1216 — Wave 1 early pre-flight verification
+- 0634ea8f: Phase 2 prioritization matrix (agent work)
+- 80f20194: Session 1216 — Phase 2 prioritization + worklog update
+
+---
+
 ## Session 1215 (Orchestrator) — May 18, 2026 05:14–05:25 UTC — [COMPLETE] Infrastructure Verification
 
 **Status**: ✅ **ALL SYSTEMS READY FOR WAVE 1 EXECUTION** | **Stockbot checkpoint 100% ready** | **Wave 1 orchestrator pre-flight 07:00 UTC (CronCreate scheduled)**
