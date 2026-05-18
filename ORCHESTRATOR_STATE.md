@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T14:08:08Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T14:22:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.3% | Reset in 10h | check: claude.ai → Settings → Usage & billing
@@ -40,8 +40,8 @@
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
-**Status**: Active — Phase 4 COMPLETE, **PR #1 open, awaiting review/merge** (Session 486: 2026-04-26)
-**Focus**: **PR #1 & #2 MERGE-READY** (both reviewed, no blockers)
+**Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
+**Focus**: **[RESOLVED] PR #1 & #2 MERGED + CLEANUP COMPLETE** (Session 1246). Phase 4 production-ready. PR #1 (Wave 4 Federation Service, 194 tests) merged. PR #2 (Phase 5 docs + security compliance, 0.0.0.0→127.0.0.1 fix) merged. Post-merge cleanup (PHASE_5_ARCHITECTURE.md duplication resolved) complete. Wave 4 federation complete: partner registration, service layer, admin routes, HTTP signature verification, request signing, conflict detection. All 194 tests passing. Phase 5 candidates staged: Candid … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
