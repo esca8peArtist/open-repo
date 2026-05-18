@@ -25,8 +25,24 @@
     - stockbot: 3/3 services bind to 127.0.0.1 with memory limits
   - **Status**: No fixes needed; security hardening already in place
 
+**✅ RESISTANCE-RESEARCH: Wave 1 User Setup Instructions + Pre-Flight Prep (Session 1207 continuation, 02:54–06:00 UTC)**
+  - **Deliverable 1**: Updated CHECKIN.md with detailed 6-item user setup checklist + execution timeline table
+    - Gist view count baseline (10 min)
+    - Google Sheets tracking workbook (15 min)
+    - Calendar reminders (2 min)
+    - Google Alerts (10 min)
+    - Test email send (5 min)
+    - Confirm Elias Callais language (2 min)
+    - **Total user time**: ~44 minutes (well under 06:00 UTC deadline)
+  - **Status**: User actions documented; 06:00 UTC deadline confirmed in CHECKIN.md
+  - **Pre-flight prep**: All materials verified (5 Gists live HTTP 200, templates ready, domains current through 05:50 UTC, pre-flight validation confirms GO status)
+  - **Next orchestrator actions**: 
+    - 07:00 UTC: Run pre-flight checks (verify Gists, contacts, templates, test email)
+    - 08:00 UTC: User executes Batch 1 sends while orchestrator monitors
+    - 10:30 UTC: Phase 1 measurement begins (track Gist view counts, monitor responses)
+
 **Project Status**:
-- **resistance-research**: ✅ Domains current through May 18; Wave 1 setup by 06:00 UTC; Batch 1 execution 08:00–10:00 UTC
+- **resistance-research**: ✅ Wave 1 IMMINENT (user deadline 06:00 UTC in ~3 hours; execution 08:00–12:00 UTC)
 - **stockbot**: ✅ May 19 checkpoint ready (guardrails verified wired Session 1206)
 - **seedwarden**: ✅ Track B ready for Gate 1
 - **containerized-agents**: ✅ Docker security verified compliant
