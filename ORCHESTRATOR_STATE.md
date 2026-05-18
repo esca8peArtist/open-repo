@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T15:34:49Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T18:00:26Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.4% | Reset in 8h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.5% | Reset in 6h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — COMPLETE (May 18, 08:00–10:00 UTC).** ✅ **5 Batch 1 emails sent, distributed by 10:00 UTC**. **POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window, from 10:32 UTC)**. **Item 65 COORDINATION FRAMEWORK COMPLETE** — `MAY_21_31_BATCH_2_3_COORDINATION_FRAMEWORK.md` staged for May 20 activation. May 20 morning: read Wave 1 early signals, activate STRONG/MODERATE/WEAK path. Batch 2-3 contact sequencing (80 total), Domain 42 DEA hearing coordination (May 28 d … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — COMPLETE (May 18, 08:00–10:00 UTC).** ✅ **5 Batch 1 emails sent, distributed by 10:00 UTC**. **POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window, from 10:32 UTC)**. ✅ **PHASE_2_OUTCOME_LAUNCH_ROADMAP.md COMPLETE (Session 1258, 2,500+ words)** — Outcome thresholds by constituency (law schools/immigration/unions/think tanks), domain prioritization matrix (Strong/Moderate/Weak), 4 per-constituency email templates, research activation timeline, Tier 2 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **May 19 20:00 UTC checkpoint execution (31 hours away, May 18 13:02 UTC). ✅ Infrastructure validation COMPLETE (May 18): Jetson healthy, Docker containers running, Lever A config confirmed, checkpoint scripts ready. Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md + CHECKPOINT_READINESS_VALIDATION.md + POST_CHECKPOINT_GATE_2_DECISION_FRAMEWORK.md (execution 19:00–19:30 UTC pre-flight, 20:00 UTC checkpoint query, 20:15 UTC outcome classification). User action: Execute checkpoint query at 20 … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **May 19 20:00 UTC checkpoint execution (32 hours away, May 18 16:45 UTC). ✅ Infrastructure validation COMPLETE (May 18): Jetson healthy, Docker containers running, Lever A config confirmed, checkpoint scripts ready. ✅ POST_CHECKPOINT_OUTCOME_FRAMEWORK.md COMPLETE (Session 1258, 6,723 words): One-page decision matrix + 4 scenario briefs (PASS/NEAR-MISS/FAR-MISS-C1/FAR-MISS-C2) with capital allocation checklists, user approval gates. Playbooks: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md + CHECKP … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
