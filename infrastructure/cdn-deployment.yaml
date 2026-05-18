@@ -1,0 +1,482 @@
+# =============================================================================
+# CDN Deployment Configuration — Phase 5 Offline Export Distribution
+# =============================================================================
+# This file is a configuration template and documentation reference for
+# deploying ZIM file distribution infrastructure. It is NOT an executable
+# infrastructure-as-code file — it is the human-readable specification that
+# guides the actual configuration of Cloudflare R2 (primary) and Backblaze
+# B2 (alternative/scale option).
+#
+# Apply these settings via:
+#   - Cloudflare Dashboard → R2 → Bucket Settings
+#   - Cloudflare Workers (for redirect logic and CORS)
+#   - Terraform cloudflare provider (if IaC is desired later)
+#
+# References:
+#   - phase-5-export-strategy.md (storage policy, URL patterns)
+#   - phase-5-kiwix-integration-guide.md (CDN cost analysis)
+#   - phase-5-offline-export-architecture.md section 3 (CDN infrastructure)
+# =============================================================================
+
+# =============================================================================
+# SECTION 1: Cloudflare R2 — Primary Storage (Recommended for Phase 5 MVP)
+# =============================================================================
+
+cloudflare_r2:
+
+  # Bucket configuration
+  bucket:
+    name: "open-repo-zim-exports"
+    # R2 is globally distributed; no region selection needed.
+    # R2 automatically serves from the nearest Cloudflare PoP.
+    location_hint: "WEUR"  # Hint only; does not constrain distribution.
+    # Note: R2 is the primary store. Cloudflare's edge network provides CDN
+    # delivery automatically — no separate CDN configuration required.
+
+  # Public access configuration
+  public_access:
+    # Enable public bucket access for ZIM file distribution.
+    # R2 public URLs format: https://{bucket}.{account_id}.r2.cloudflarestorage.com/{key}
+    # Or: custom domain https://exports.{node-domain}/zim/{filename}
+    enabled: true
+    # Bind a custom domain for clean public URLs:
+    custom_domain: "exports.{NODE_DOMAIN}"  # e.g., exports.open-repo.example.org
+    # The custom domain must be in Cloudflare DNS (not just CNAME-pointed externally).
+
+  # Object organization
+  object_layout:
+    # ZIM files: immutable, named by version
+    # Key pattern: zim/{name}_{period}.zim
+    # Examples:
+    #   zim/open-repo_en_nopic_2026-04.zim
+    #   zim/open-repo_en_agriculture_2026-04.zim
+    zim_prefix: "zim/"
+
+    # Checksum sidecar files (plain text SHA-256 hex string)
+    # Key pattern: zim/{name}_{period}.zim.sha256
+    # One sidecar per ZIM file, uploaded simultaneously with the ZIM.
+    checksum_prefix: "zim/"  # Same prefix; different extension (.zim.sha256)
+
+    # OPDS catalog XML (regenerated after each export)
+    # Key pattern: opds/root.xml, opds/entries.xml
+    opds_prefix: "opds/"
+
+    # Illustrations / icons (stable, not versioned)
+    # Key pattern: assets/open-repo-icon-48x48.png
+    assets_prefix: "assets/"
+
+  # Cache control headers per object type
+  cache_headers:
+    # ZIM files are immutable once published. Cache forever.
+    # The versioned URL (open-repo_en_nopic_2026-04.zim) never changes content.
+    zim_files:
+      "Cache-Control": "public, max-age=2592000, immutable"
+      # max-age = 30 days (2592000 seconds). "immutable" tells browsers not
+      # to revalidate even if the user explicitly refreshes.
+
+    # Checksum sidecars: immutable (same lifecycle as ZIM files)
+    checksum_files:
+      "Cache-Control": "public, max-age=2592000, immutable"
+
+    # OPDS catalog: changes after each export, cache for 1 hour
+    opds_catalog:
+      "Cache-Control": "public, max-age=3600, must-revalidate"
+      # 1-hour cache aligns with the weekly export schedule.
+      # Users get a fresh catalog within 1 hour of a new export being published.
+
+    # Assets (icons): long cache, these rarely change
+    assets:
+      "Cache-Control": "public, max-age=86400"
+
+  # Content-Type headers per extension
+  content_types:
+    ".zim": "application/x-zim"
+    ".sha256": "text/plain; charset=utf-8"
+    ".xml": "application/atom+xml; charset=utf-8"
+    ".png": "image/png"
+
+  # CORS configuration
+  # ZIM files should be accessible from any origin for OPDS clients
+  # and direct browser download links.
+  cors_rules:
+    - allowed_origins:
+        - "*"  # Public ZIM distribution — all origins allowed
+      allowed_methods:
+        - "GET"
+        - "HEAD"
+      allowed_headers:
+        - "Content-Type"
+        - "Range"               # Required for resumable downloads
+        - "If-Range"            # Required for conditional range requests
+        - "Accept-Ranges"
+      expose_headers:
+        - "Content-Length"
+        - "Content-Range"       # Required for resumable downloads (206 Partial Content)
+        - "ETag"
+        - "Last-Modified"
+        - "Accept-Ranges"
+      max_age_seconds: 3600
+
+    # CORS for OPDS catalog endpoint (accessed by Kiwix app)
+    - allowed_origins:
+        - "*"
+      allowed_methods:
+        - "GET"
+      allowed_headers:
+        - "Accept"
+      max_age_seconds: 3600
+
+  # Lifecycle rules (object retention management)
+  lifecycle_rules:
+    # Rule 1: Delete objects older than 180 days with "superseded" prefix tag
+    # ZIM files that have been superseded and are outside the retention window
+    # are tagged by the export pipeline before deletion. This rule provides a
+    # safety net for objects the pipeline failed to delete.
+    - id: "delete-superseded-zim-files"
+      filter:
+        prefix: "zim/"
+        tags:
+          - key: "status"
+            value: "superseded"
+      expiration:
+        days: 180
+      status: "Enabled"
+
+    # Rule 2: Never delete reference exports (tagged "archive")
+    # Reference exports are permanently retained. This rule is a no-op placeholder
+    # to document that "archive"-tagged objects are excluded from all deletion rules.
+    - id: "retain-reference-exports"
+      filter:
+        prefix: "zim/"
+        tags:
+          - key: "status"
+            value: "archive"
+      expiration: null  # No expiration
+      status: "Enabled"
+
+  # Access policies
+  access_policies:
+    # Read access: public (no authentication required for download)
+    read:
+      effect: "Allow"
+      principal: "*"
+      actions:
+        - "s3:GetObject"
+        - "s3:HeadObject"
+      resource: "arn:aws:s3:::open-repo-zim-exports/zim/*"
+
+    # Write access: restricted to open-repo export service
+    # The export service uses an API token with write permissions.
+    # API tokens are stored in environment variables, not in this file.
+    write:
+      effect: "Allow"
+      principal: "{EXPORT_SERVICE_R2_TOKEN_ID}"  # Replace with actual token ID
+      actions:
+        - "s3:PutObject"
+        - "s3:DeleteObject"
+        - "s3:ListBucket"
+      resource:
+        - "arn:aws:s3:::open-repo-zim-exports"
+        - "arn:aws:s3:::open-repo-zim-exports/*"
+
+  # Cost monitoring
+  cost_monitoring:
+    # R2 pricing: $0.015/GB/month storage, $0 egress, $4.50/M Class A ops, $0.36/M Class B
+    # Phase 5 MVP estimated cost: <$1/month
+    alert_thresholds:
+      storage_gb: 500              # Alert if storage exceeds 500 GB (unexpected growth)
+      monthly_cost_usd: 10         # Alert if monthly cost exceeds $10
+      class_a_operations: 1000000  # Alert if Class A operations exceed 1M/month
+    # Configure alerts via Cloudflare Account > Notifications > R2 Alerts
+
+  # URL patterns
+  url_patterns:
+    # Permanent "latest" URL (302 redirect, changes on each export)
+    # Implemented by a Cloudflare Worker (see workers section below)
+    latest: "https://exports.{NODE_DOMAIN}/zim/{name}_latest.zim"
+    # Example: https://exports.open-repo.example.org/zim/open-repo_en_nopic_latest.zim
+
+    # Versioned stable URL (permanent, CDN-cached)
+    versioned: "https://exports.{NODE_DOMAIN}/zim/{name}_{period}.zim"
+    # Example: https://exports.open-repo.example.org/zim/open-repo_en_nopic_2026-04.zim
+
+    # Checksum sidecar
+    checksum: "https://exports.{NODE_DOMAIN}/zim/{name}_{period}.zim.sha256"
+
+# =============================================================================
+# SECTION 2: Cloudflare Worker — Latest Redirect Logic
+# =============================================================================
+
+cloudflare_worker:
+  # A lightweight Cloudflare Worker handles the "_latest.zim" redirect.
+  # The Worker reads the current export metadata from the R2 opds/catalog.json
+  # file (updated by the export pipeline after each run) and redirects to the
+  # versioned URL.
+  name: "open-repo-zim-redirector"
+  route: "exports.{NODE_DOMAIN}/zim/*_latest.zim"
+
+  # Worker script (inline for documentation; deploy via wrangler)
+  script: |
+    // Cloudflare Worker: redirect *_latest.zim to current versioned URL
+    // Deploy with: wrangler publish
+    export default {
+      async fetch(request, env) {
+        const url = new URL(request.url);
+        const path = url.pathname;  // e.g., /zim/open-repo_en_nopic_latest.zim
+
+        // Extract name from path: remove /zim/ prefix and _latest.zim suffix
+        const match = path.match(/\/zim\/(.+)_latest\.zim$/);
+        if (!match) {
+          return new Response("Not found", { status: 404 });
+        }
+        const name = match[1];  // e.g., "open-repo_en_nopic"
+
+        // Read catalog metadata from R2 (updated by export pipeline)
+        const catalogKey = "opds/catalog.json";
+        const catalogObj = await env.ZIM_BUCKET.get(catalogKey);
+        if (!catalogObj) {
+          return new Response("Export catalog not found", { status: 503 });
+        }
+
+        const catalog = await catalogObj.json();
+        const entry = catalog.exports.find(e => e.name === name && e.is_current);
+        if (!entry) {
+          return new Response(`No current export found for name: ${name}`, { status: 404 });
+        }
+
+        // Redirect to versioned URL (302 = temporary, allows future URL changes)
+        const versionedUrl =
+          `https://${url.hostname}/zim/${entry.name}_${entry.period}.zim`;
+        return Response.redirect(versionedUrl, 302);
+      }
+    };
+
+  # Environment bindings for the Worker
+  bindings:
+    - type: "r2_bucket"
+      name: "ZIM_BUCKET"
+      bucket_name: "open-repo-zim-exports"
+
+# =============================================================================
+# SECTION 3: Backblaze B2 — Alternative for Scale
+# =============================================================================
+# Use B2 + Cloudflare CDN when total ZIM storage exceeds 50 GB.
+# B2 storage ($0.006/GB) is 2.5x cheaper than R2 ($0.015/GB) at large scale.
+# B2 → Cloudflare egress is free via the Bandwidth Alliance.
+# Cloudflare acts as CDN fronting B2; no R2 needed.
+
+backblaze_b2:
+  # Enable this configuration when migrating from R2 at scale.
+  # Currently: not active (use cloudflare_r2 above).
+  enabled: false
+
+  bucket:
+    name: "open-repo-zim-exports"
+    type: "Public"  # Public bucket for free CDN delivery via Bandwidth Alliance
+    region: "us-west-004"  # Or "eu-central-003" for EU-primary deployments
+
+  # Cloudflare CDN configuration (fronting B2)
+  # Add a CNAME record in Cloudflare DNS:
+  #   exports.{NODE_DOMAIN} CNAME {B2_BUCKET_NAME}.s3.{B2_REGION}.backblazeb2.com
+  # With Cloudflare proxying enabled (orange cloud), traffic routes through
+  # Cloudflare edge → B2, with egress from B2 to Cloudflare being free.
+  cloudflare_cdn:
+    proxy_enabled: true
+    # Cloudflare Page Rules for cache configuration:
+    # URL: exports.{NODE_DOMAIN}/zim/*.zim
+    # Setting: Cache Level = Cache Everything, Edge Cache TTL = 30 days
+    cache_rules:
+      - match: "*.zim"
+        cache_everything: true
+        edge_cache_ttl_seconds: 2592000  # 30 days
+
+  # B2 bucket CORS rules (same as R2 above)
+  cors_rules:
+    - allowed_origins: ["*"]
+      allowed_methods: ["GET", "HEAD"]
+      allowed_headers: ["Content-Type", "Range", "If-Range", "Accept-Ranges"]
+      expose_headers: ["Content-Length", "Content-Range", "ETag", "Accept-Ranges"]
+      max_age_seconds: 3600
+
+  # B2 Lifecycle rules
+  lifecycle_rules:
+    - file_name_prefix: "zim/"
+      days_until_hidden: 180      # Hide files 180 days after upload date
+      days_until_deleted: 365     # Delete hidden files after 1 year
+
+  # B2 access
+  access:
+    key_name: "open-repo-export-service"
+    # Key capabilities required:
+    capabilities:
+      - "listBuckets"
+      - "listFiles"
+      - "readFiles"
+      - "writeFiles"
+      - "deleteFiles"
+    key_prefix: "zim/"  # Restrict key to zim/ prefix only (principle of least privilege)
+
+  # Cost estimate at scale
+  cost_at_scale:
+    # Scenario: 100 GB total ZIM storage, 10 TB/month download
+    storage_monthly_usd: 0.60       # 100 GB * $0.006/GB
+    egress_cloudflare_monthly_usd: 0.00  # Free via Bandwidth Alliance
+    # Total: $0.60/month at 100 GB + 10 TB/month download
+    # Vs R2 at same scale: $1.50/month storage + $0 egress = $1.50/month
+    # Savings at 100 GB: $0.90/month. Migration warranted at >200 GB.
+
+# =============================================================================
+# SECTION 4: AWS S3 — NOT RECOMMENDED
+# =============================================================================
+# Documented here for completeness and to prevent accidental S3 adoption.
+
+aws_s3:
+  enabled: false
+  reason_not_used: >
+    AWS S3 egress pricing ($0.09/GB after 100 GB/month free) makes it
+    unsuitable for public large-file distribution. A 2 GB ZIM file downloaded
+    10,000 times = 20 TB egress = $1,800/month. This is not acceptable for a
+    community open-source project with no budget guarantee.
+
+    Use Cloudflare R2 (zero egress) or Backblaze B2 + Cloudflare CDN instead.
+
+# =============================================================================
+# SECTION 5: Public URL Mapping Summary
+# =============================================================================
+
+url_mapping:
+  # This section documents all public-facing URLs for the ZIM distribution system.
+  # All URLs are HTTPS. All CDN delivery is handled by Cloudflare (R2 or B2+CF).
+
+  base_domain: "exports.{NODE_DOMAIN}"  # e.g., exports.open-repo.example.org
+
+  endpoints:
+    # 1. Latest ZIM (redirect, updated after each export)
+    latest_full_nopic:
+      url: "https://exports.{NODE_DOMAIN}/zim/open-repo_en_nopic_latest.zim"
+      behavior: "302 redirect to current versioned URL"
+      suitable_for: "Documentation, bookmarks, user-facing download button"
+
+    # 2. Versioned ZIM (permanent, cache-forever)
+    versioned_full_nopic_example:
+      url: "https://exports.{NODE_DOMAIN}/zim/open-repo_en_nopic_2026-04.zim"
+      behavior: "Direct download, Cache-Control: immutable"
+      suitable_for: "Torrent web seeds, mirror links, academic citation"
+
+    # 3. Domain-specific export
+    versioned_agriculture:
+      url: "https://exports.{NODE_DOMAIN}/zim/open-repo_en_agriculture_2026-04.zim"
+      behavior: "Direct download, Cache-Control: immutable"
+
+    # 4. Checksum sidecar
+    checksum_example:
+      url: "https://exports.{NODE_DOMAIN}/zim/open-repo_en_nopic_2026-04.zim.sha256"
+      behavior: "Plain text SHA-256 hex string"
+      suitable_for: "Download integrity verification"
+
+    # 5. OPDS catalog root
+    opds_root:
+      url: "https://{NODE_DOMAIN}/opds/v2/root.xml"
+      behavior: "OPDS navigation feed, Cache-Control: 1 hour"
+      suitable_for: "Kiwix in-app library browser, OPDS catalog submission"
+
+    # 6. OPDS acquisition feed
+    opds_entries:
+      url: "https://{NODE_DOMAIN}/opds/v2/entries"
+      behavior: "OPDS acquisition feed with all ZIM entries"
+
+# =============================================================================
+# SECTION 6: Backup and Cross-Region Replication
+# =============================================================================
+
+backup:
+  strategy: "2-copy with metadata git backup"
+
+  copies:
+    # Primary: R2 production bucket (always on)
+    primary:
+      provider: "Cloudflare R2"
+      bucket: "open-repo-zim-exports"
+      status: "active"
+
+    # Secondary: GitHub Releases (for exports < 2 GB)
+    # Automatically created by the export pipeline as release assets.
+    # Provides a separate distribution path if R2 is unavailable.
+    secondary:
+      provider: "GitHub Releases"
+      repository: "{GITHUB_REPO}"
+      max_file_size_gb: 2
+      # Uploads ZIM files as release assets on each export run.
+      # Release tag format: zim-{name}-{period}
+      # Example: zim-open-repo_en_nopic-2026-04
+      status: "conditional (active when file_size < 2 GB)"
+
+    # Tertiary: Internet Archive (for Reference Exports only)
+    # Free permanent storage for open-source content.
+    # Upload via Internet Archive S3-compatible API after Reference Export creation.
+    tertiary:
+      provider: "Internet Archive"
+      collection: "open-repo-offline-exports"
+      identifier_pattern: "open-repo-{name}-{period}"
+      scope: "Reference Exports only"
+      status: "manual (triggered by node operator)"
+
+  # Metadata backup: database export table as JSON
+  # Committed to git repository weekly, independent of binary file backup.
+  metadata_backup:
+    format: "JSON"
+    destination: "infrastructure/exports-metadata/"
+    frequency: "weekly"
+    content: "zim_exports table rows (no binary content)"
+    commit_message_pattern: "chore(exports): weekly metadata backup {date}"
+
+# =============================================================================
+# SECTION 7: Environment Variables Required by Export Service
+# =============================================================================
+# These variables must be set in the deployment environment.
+# Never commit actual values to git.
+
+required_env_vars:
+  # Cloudflare R2 credentials
+  R2_ACCOUNT_ID:
+    description: "Cloudflare account ID (visible in R2 dashboard)"
+    example: "abc1234567890abcdef1234567890ab"
+
+  R2_ACCESS_KEY_ID:
+    description: "R2 API token access key ID"
+    source: "Cloudflare Dashboard → R2 → Manage R2 API tokens"
+
+  R2_SECRET_ACCESS_KEY:
+    description: "R2 API token secret"
+    source: "Cloudflare Dashboard → R2 → Manage R2 API tokens"
+
+  R2_BUCKET_NAME:
+    description: "R2 bucket name"
+    default: "open-repo-zim-exports"
+
+  R2_PUBLIC_BASE_URL:
+    description: "Public base URL for ZIM file downloads"
+    example: "https://exports.open-repo.example.org"
+
+  # Node identity
+  NODE_DOMAIN:
+    description: "The open-repo node's domain"
+    example: "open-repo.example.org"
+
+  NODE_UUID:
+    description: "Stable UUID for this node (used in OPDS catalog)"
+    generation: "python3 -c 'import uuid; print(uuid.uuid4())'"
+    note: "Generate once and store permanently. Changing this breaks OPDS catalog."
+
+  # Optional: Backblaze B2 (if migrating from R2 at scale)
+  B2_APPLICATION_KEY_ID:
+    description: "Backblaze B2 application key ID"
+    required: false
+
+  B2_APPLICATION_KEY:
+    description: "Backblaze B2 application key"
+    required: false
+
+  B2_BUCKET_NAME:
+    description: "Backblaze B2 bucket name"
+    required: false
