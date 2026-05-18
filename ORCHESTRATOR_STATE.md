@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T18:28:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T18:53:43Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.5% | Reset in 6h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.6% | Reset in 5h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — COMPLETE (May 18, 08:00–10:00 UTC).** ✅ **5 Batch 1 emails sent, distributed by 10:00 UTC**. **POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window, from 10:32 UTC)**. ✅ **PHASE_2_OUTCOME_LAUNCH_ROADMAP.md COMPLETE (Session 1258, 2,500+ words)** — Outcome thresholds by constituency (law schools/immigration/unions/think tanks), domain prioritization matrix (Strong/Moderate/Weak), 4 per-constituency email templates, research activation timeline, Tier 2 … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — COMPLETE (May 18, 08:00–10:00 UTC).** ✅ **5 Batch 1 emails sent, distributed by 10:00 UTC**. **POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window, from 10:32 UTC)**. ✅ **PHASE_2_OUTCOME_LAUNCH_ROADMAP.md COMPLETE (Session 1258, 572 lines)** — Outcome thresholds by constituency (law schools/immigration/unions/think tanks), domain prioritization matrix (Strong/Moderate/Weak), 4 per-constituency email templates (3 variants each), research activation timeline (3 tracks), Tier 2 pre-contact checklist (20+ items). ✅ **PHASE_2_WAVE_1_ANALYSIS_FRAMEWORK.md COMPLETE (Session 1264, 2,800+ words)** — Real-time metrics tracker (5 tables: contact response rate, Gist view delta, email performance, institutional adoption stages, cross-domain interest mapping), daily checkpoint templates Day 0–7, Week 1 synthesis protocol (7-step: QRP aggregation → constituency classification → cross-domain map → messaging assessment → Tier 2 candidate ID → adjustment identification → one-page summary), success threshold definitions (Gist/reply rate/institutional adoption by constituency with Score 5 override rule). **Next gate: May 21 20:00 UTC preliminary classification (STRONG/MODERATE/WEAK). Final gate: May 25 20:00 UTC Phase 2 path user decision.**
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -89,6 +89,8 @@
 **Resolution**: [leave blank]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: open-repo — focus references Session 1246 (17 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
@@ -113,7 +115,7 @@
 - **Item 61 (May 21)**: Wave 1 72-Hour Synthesis & Phase 2 Decision Framework — activates when May 21 10:30 UTC monitoring window closes
 - **Item 62 (May 21-22, depends on Item 61)**: Phase 2 Research Production Infrastructure — activates after Item 61 outcome decision
 - **Item 65 (May 20-21)**: Resistance-Research May 21-31 Batch 2-3 Coordination Framework — can start May 20 if Batch 1 early signals clear
-- **Item 66 (COMPLETE)**: Stockbot FAR-MISS-C2 Recovery Playbook — pre-staged proactively; `FAR_MISS_C2_CAPITAL_RECOVERY_PLAYBOOK.md` production-ready (956 lines, 10 sections, 3 capital options, 4-step diagnosis, decision deadline 10:00 UTC May 20)
+- **Item 66 (May 20, if needed)**: Stockbot FAR-MISS-C2 Recovery Playbook — only activated if checkpoint C2 outcome detected
 
 ---
 
