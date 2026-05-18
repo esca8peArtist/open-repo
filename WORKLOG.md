@@ -1,5 +1,45 @@
 # Work Log
 
+## Session 1275 (Orchestrator) — May 18, 2026, 19:45–20:25 UTC — Phase 5 Decision Framework for open-repo
+
+**Status**: ✅ **PHASE 5 DECISION FRAMEWORK COMPLETE — READY FOR USER DIRECTION SELECTION**
+
+**Work Completed**:
+
+1. **Comprehensive Phase 5 Analysis**
+   - ✅ Created `PHASE_5_DECISION_FRAMEWORK.md` (362 lines, 5.1 KB)
+   - ✅ Deep-dive analysis of three candidates:
+     - Candidate 1: ZimWriter libzim integration (4–6h, core feature)
+     - Candidate 2: OPDS feedgen migration (3–4h, polish/discoverability)
+     - Candidate 3: README security fix + documentation (2–3h, foundation)
+   - ✅ Four implementation paths with timelines and risk profiles:
+     - Path A: All three in sequence 3→1→2 (2 weeks, 9–13h, recommended)
+     - Path B: ZimWriter only (1 week, 4–6h)
+     - Path C: README + ZimWriter (1.5 weeks, 6–9h, smart default)
+     - Path D: README only (1 day, 2–3h, conservative)
+   - ✅ Risk assessment per candidate (MINIMAL for 3, LOW for 1, MEDIUM for 2)
+   - ✅ Community/user value comparison matrix
+   - ✅ Dependency analysis and decision points
+
+2. **PROJECTS.md Update**
+   - ✅ Updated open-repo Current focus to note framework complete
+   - ✅ Preserved [RESOLVED] marker per protocol
+
+3. **Commits**
+   - ✅ e63489f7: feat(open-repo): Phase 5 decision framework
+   - ✅ 9e4b5dde: chore(projects): Update open-repo focus
+
+**Key Finding**: Phase 5 has clear decision points and low-risk paths to implementation. All three candidates are independent enough that sequencing decisions matter more than technical risk. Path C (README + ZimWriter) provides fastest path to user value (offline export) while clearing community barriers.
+
+**Next Steps**: 
+- User selects Path A/B/C/D from PHASE_5_DECISION_FRAMEWORK.md
+- Orchestrator creates execution checklists for selected path
+- May 19 checkpoint execution (24h away) independent of this work
+
+**Work Blocked Until**: User makes Phase 5 path decision
+
+---
+
 ## Session 1265 (Orchestrator) — May 18, 2026, 19:26–20:15 UTC — Item 40 Verification + Exploration Queue Update
 
 **Status**: ✅ **EXPLORATION QUEUE ITEM 40 VERIFIED COMPLETE — SEEDWARDEN PHASE 3 HERBALIST NETWORK READY**
