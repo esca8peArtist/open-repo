@@ -1,3 +1,65 @@
+## Since Last Check-in (Session 1285, 21:58 UTC May 18)
+
+**Session Status**: ✅ **TRANSITION WINDOW — PRE-CHECKPOINT MONITORING** — All projects assessed; active blocks remain (user action required). Scheduled autonomous checkpoint execution for May 19 20:00 UTC. Ready for May 19-21 critical events.
+
+**Current Time**: May 18, 2026, 21:58 UTC (22 hours until stockbot checkpoint)
+
+### Orientation & Assessment
+
+**Active Projects Status**:
+- **stockbot**: Engine OPERATIONAL ✅, May 19 20:00 UTC checkpoint infrastructure READY ✅. No blocking issues. Scheduled autonomous checkpoint query execution.
+- **resistance-research**: Wave 1 sent May 18 08:00-10:00 UTC ✅. 72-hour monitoring window active (May 18-21). Next action: May 20 morning early signal read.
+- **cybersecurity-hardening**: Phase 1 walkthrough in progress. BLOCKED on user VeraCrypt restart (Windows user action). Cannot proceed autonomously.
+- **mfg-farm**: Ready to prototype. BLOCKED on test print execution (user action — test-print-results/ directory still empty). Cannot proceed autonomously.
+- **seedwarden**: Track B May 30 launch target. Gate 1 (create accounts) is TODAY/user action — awaiting user to start. Real-time support (`TRACK_B_GATE_1_REALTIME_SUPPORT.md`) ready if user initiates.
+- **open-repo**: Phase 4 complete ✅, PR #1 & #2 merged ✅. No current work.
+
+**Active Blocks Summary**:
+- **Verified**: mfg-farm test print block still active (results directory does not exist)
+- **Verified**: cybersecurity-hardening VeraCrypt restart block still active (manual user action required)
+- Total: 2 active blocks, both awaiting user action
+
+**Exploration Queue Status**:
+- Session 1284 completed Items 63, 65, 66 (cross-project assessment, Batch 2-3 coordination, capital recovery playbook)
+- Current queue: Many completed items marked ✅; active items staged for post-May-19/May-21 triggers
+- No critical gaps identified
+
+### Actions Taken This Session
+
+1. **Checkpoint Execution Scheduled**: Autonomously scheduled May 19 20:00 UTC checkpoint query
+   - Command: `cd projects/stockbot && uv run python scripts/may14_checkpoint_query_alpaca.py`
+   - Result will be logged to `checkpoint_may19_result.txt`
+   - Cron: One-shot execution at May 19 20:00 UTC
+
+2. **Pre-Checkpoint Assessment Complete**: 
+   - Infrastructure validated ✅ (per Session 1284)
+   - Decision frameworks prepared ✅ (outcome playbooks documented)
+   - No additional pre-work required
+
+### Key Decisions & Next Steps
+
+**May 19 (Tomorrow)**:
+- 20:00 UTC: Checkpoint execution (SCHEDULED AUTONOMOUS)
+- 20:15 UTC: Outcome classification (PASS/NEAR-MISS/FAR-MISS)
+- 20:30 UTC: Decision gate ready if user needs to approve capital allocation for Gate 2
+
+**May 20 (Morning)**:
+- Early signal monitoring for Wave 1 responses (Gist views, email opens, institutional adoption)
+- Automatic monitoring window (72h post-send)
+
+**May 21**:
+- 10:30 UTC: Wave 1 synthesis & phase 2 path decision (STRONG/MODERATE/WEAK activation)
+- 14:00 UTC: User gate to approve Phase 2 path
+
+**Critical Path**: May 21 Phase 2 path decision is the highest-stakes item (affects June 1-Aug 15 research timeline). All contingency paths pre-staged.
+
+### Usage Status
+- **Sonnet**: 5.2% (3.33M tokens) — Reset in ~2 hours
+- **All models**: 8.8%
+- Budget: Healthy
+
+---
+
 ## Since Last Check-in (Session 1284, 21:44–22:51 UTC May 18)
 
 **Session Status**: ✅ **EXPLORATION QUEUE ITEMS 63, 65, 66 COMPLETE** — All critical-path coordination frameworks ready for May 19-31 events; checkpoint verified PASS (95%+ confidence)
