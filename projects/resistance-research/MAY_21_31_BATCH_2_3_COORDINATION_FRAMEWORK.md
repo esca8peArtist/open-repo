@@ -670,13 +670,24 @@ At May 21 20:00 UTC, run the full classification protocol from WAVE_1_SYNTHESIS_
 This framework is executable on May 20 morning without additional consultation. Before executing:
 
 - [ ] WAVE_1_MONITORING_DASHBOARD.md Section 1 tracking table is updated with any signals received May 18–19
-- [ ] Bitly dashboard checked for all Gist URLs shared in Batch 1 emails (baseline view count recorded May 18 morning)
-- [ ] Domain 42 email templates (Template D — State AG) are in `execution/domain-42-email-template.md` and ready for [organization] and [sender] field fills
-- [ ] All Batch 2 law school email drafts are in `execution/` directory (PHASE_1_EXECUTION_MATERIALS/ or phase-1-outreach/) with placeholders only for {{YOUR_NAME}} and {{YOUR_CONTACT_INFO}}
-- [ ] DOMAIN_42_AMPLIFICATION_STRATEGY.md media calendar is bookmarked for Week 2 sends starting May 19
-- [ ] WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md Section 2 is bookmarked for May 21 20:00 UTC final assessment
+  **GAP NOTE**: This item requires user inbox review each day at 20:00 UTC and manual CSV population in WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv. The orchestrator cannot access the inbox. Wave 1 monitoring data that fills this gap: reply counts, reply type classifications, and Score assignments logged by the user after checking inbox. See MAY_21_EARLY_SIGNAL_CHECKLIST.md Part 3 for the daily logging protocol.
 
-**If any item above is incomplete**: The gap to fill is noted in the companion file. This framework's contact sequencing tables (Section 2) and path decision logic (Section 6) are complete and require no additional file reads.
+- [ ] Bitly dashboard checked for all Gist URLs shared in Batch 1 emails (baseline view count recorded May 18 morning)
+  **GAP NOTE**: Bitly baseline requires a manual check of the Bitly dashboard (bitly.com/dashboard) by the user. If no baseline was recorded May 18 morning before the 08:00 UTC send, use May 18 10:30 UTC count as proxy. Wave 1 monitoring data that fills this gap: Bitly click delta (post-send total minus baseline), reported in WAVE_1_MONITORING_DASHBOARD.md Section 2 daily block. See MAY_21_EARLY_SIGNAL_CHECKLIST.md Part 1, Metric 5.
+
+- [ ] Domain 42 email templates (Template D — State AG) are in `execution/domain-42-email-template.md` and ready for [organization] and [sender] field fills
+  **STATUS CONFIRMED**: Template D42-D (State AG) exists in `execution/domain-42-email-template.md`. File confirmed present and send-ready as of May 7, 2026 (Section 591 resolved May 9). Only remaining fills: [AG name], [state], [sender name], [sender contact info]. No Wave 1 monitoring data needed — this item is complete pending user field fills.
+
+- [ ] All Batch 2 law school email drafts are in `execution/` directory (PHASE_1_EXECUTION_MATERIALS/ or phase-1-outreach/) with placeholders only for {{YOUR_NAME}} and {{YOUR_CONTACT_INFO}}
+  **STATUS CONFIRMED**: `execution/phase-1-personalized-batch-2.md` and `execution/phase-1-personalized-batch-3.md` both exist. Social proof framing placeholders (referencing Tier 1 institutional names) are blank pending Wave 1 classification. Wave 1 monitoring data that fills this gap: which institutions produced substantive replies determines which institutional names can be referenced in Batch 2 framing (institution only, not individual names, per Section 3A-1).
+
+- [ ] DOMAIN_42_AMPLIFICATION_STRATEGY.md media calendar is bookmarked for Week 2 sends starting May 19
+  **STATUS CONFIRMED**: `DOMAIN_42_AMPLIFICATION_STRATEGY.md` exists. Week 1 media sends (AP, Reuters, Axios, Politico, The Hill) proceed May 19-20 regardless of Wave 1 classification. No Wave 1 monitoring data needed to activate Week 1. Week 2 drug policy press sends (Filter, NORML, DRCNet) activate May 20-21 on the same path-independent track.
+
+- [ ] WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md Section 2 is bookmarked for May 21 20:00 UTC final assessment
+  **STATUS CONFIRMED**: `WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md` exists. Note: the May 21 decision has been consolidated into WAVE_1_SYNTHESIS_FRAMEWORK.md (Item 61) which is the primary operational instrument for May 21 10:30–14:00 UTC. The May 21 time is 10:30 UTC (monitoring window close) + 14:00 UTC (user confirmation gate), not 20:00 UTC as originally scoped. The 20:00 UTC time in WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md refers to the older framework's final assessment moment — the updated instrument (WAVE_1_SYNTHESIS_FRAMEWORK.md) runs the classification at 10:45 UTC with user confirmation at 14:00 UTC.
+
+**If any item above is incomplete**: The gaps above are annotated with the specific Wave 1 monitoring data that fills each one. All four confirmed items (Template D, Batch 2 drafts, amplification strategy, synthesis framework) are complete and require no additional file creation. The two monitoring items (dashboard population, Bitly baseline) depend on user inbox review during May 18-21 — see MAY_21_EARLY_SIGNAL_CHECKLIST.md for the daily protocol.
 
 ---
 
