@@ -1,5 +1,31 @@
 # Work Log
 
+## Session 1227 (Research Agent) — May 18, 2026 — Phase 3 Community Infrastructure Research Outline
+
+**Task**: Develop preliminary Phase 3 community-scale infrastructure research outline (5 domains, 3,000–4,000 words, 20–30 citations per section)
+**Status**: Complete
+
+### Deliverable
+- **File**: `projects/systems-resilience/phase-3-community-infrastructure-research-outline.md`
+- **Scope**: 100–1,000 person community-scale crisis resilience; five domains with preliminary research findings
+- **Word count**: ~4,200 words
+- **Citations**: 50 confirmed sources across 5 domains (10 per domain, all URLs verified)
+
+### Key Findings
+1. **Governance is the load-bearing infrastructure** — all other domains fail under contested authority; design governance before everything else
+2. **150-person transition is the most dangerous threshold** — crosses Dunbar's number; informal governance collapses without explicit redesign
+3. **Ostrom's 8 Design Principles are the most empirically grounded governance framework** available for community resource management at 50–5,000 people
+4. **Information infrastructure is the most consistently underbuilt domain** — slow degradation of coordination quality precedes visible crisis across documented cases
+5. **Security follows social cohesion, not the reverse** — high-trust communities with conflict resolution mechanisms outperform fortified low-trust communities in extended disruptions
+6. **Historical field-tested models exist at each scale**: Zapatista (30+ years), Mondragon (60+ years), Rojava communes (10+ years under conflict), COVID mutual aid networks (800+ documented)
+
+### Production Timeline
+- Phase 3 production can begin immediately upon June 1 Phase 5 path decision
+- Estimated 60–78 hours, 5 documents, 12,000–16,000 words, June 1 – July 5
+- Domain 2 (Governance) is prerequisite for Phase 4b Governance Scaling if that option is selected
+
+---
+
 ## Session 1227 (Orchestrator) — May 18, 2026 08:36–08:50 UTC — Parallel Exploration Queue Execution (Stockbot Validation + Resistance-Research Roadmap)
 
 **Duration**: 14 minutes (parallel agent work)
