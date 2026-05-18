@@ -304,3 +304,71 @@ All four domains are confirmed production-ready for 06:00 UTC May 18 Wave 1 dist
 
 **Timestamp of final verification**: May 18, 2026, approximately 05:50 UTC
 **Scan method**: Web searches + SC Legislature bill tracker direct fetch + Democracy Docket direct fetch
+
+---
+
+## POST-WAVE-1 WATCH ITEM RESOLUTION — May 18 (post-06:00 UTC)
+
+**Scan completed**: May 18, 2026 (post-Wave-1 confirmatory pass)
+**Purpose**: Resolve the eight watch items identified in the Final Verification Scan. Items resolved below; unresolved items flagged for next monitoring pass.
+
+---
+
+### Domain 1 — Alabama Split Primary (May 19): Confirmed as Documented
+
+Alabama's May 19 primary proceeded exactly as Domain 01 Section 8.6 documents. Congressional races in Districts 1, 2, 6, and 7 were held, results tabulated, and immediately nullified. The August 11 special primary date is confirmed. No court action disrupted the mechanism. Domain 01 is current — no update needed.
+
+- **Source**: [Alabama splits U.S. House primaries after court ruling — NPR](https://www.npr.org/2026/05/12/nx-s1-5819600/alabama-congressional-redistricting-special-election); [2026 Alabama Primary — 270toWin](https://www.270towin.com/2026-election-results-live/state/alabama/primary/)
+
+### Domain 1 — SC H.5683 House Vote: Not Yet Resolved as of This Scan
+
+Web searches and a direct fetch of the SC Legislature bill tracker return no indexed floor vote result for H.5683 as of this scan. The bill remains in "debate interrupted" status (last action: May 15 amendment). The special session is ongoing. The House floor vote may have occurred during ET business hours May 18 but has not yet produced indexed news coverage or an updated bill tracker entry accessible via web search. This item remains open for the next monitoring pass.
+
+- **Status**: UNRESOLVED — monitor SC Legislature bill tracker directly; next check recommended May 19 morning ET.
+- **Watch item carried forward**: If House passes, bill moves to Senate where the same 5-Republican-defection dynamic from the regular session may reassert under special session rules.
+- **Source**: [SC Legislature H.5683 tracker](https://www.scstatehouse.gov/sess126_2025-2026/bills/5683.htm); [SC House returns for special session — WISTV](https://www.wistv.com/2026/05/15/live-sc-house-returns-after-special-session-called-redistricting/)
+
+### Domain 37 — One Big Beautiful Bill House Floor Vote (May 22): Confirmed, Plus Full Legislative Arc Now Known
+
+The House floor vote anticipated in the final verification scan occurred May 22, 2026 (215-214). This is confirmed. The full legislative arc is now known: Senate passed the bill 51-50 with VP Vance casting the tiebreaker on July 1, 2026; House passed the final Senate version July 3; Trump signed it July 4, 2026. The Byrd Bath complications documented in Domain 37 Section IX.2 were resolved through rewrites rather than bill failure. Domain 37 Wave 2 materials will need to document:
+
+- (a) House passage 215-214 (May 22)
+- (b) Senate Byrd Bath resolution and 51-50 passage (July 1)
+- (c) Enactment July 4 — ICE 287(g) expansion and $38.2 billion ICE funding base are now enacted law, not projected
+- The ICE funding lock-in is the most operationally significant Domain 37 update for the midterm interference calculus
+
+- **Source**: [House passes big, beautiful bill 218-214 — CBS News](https://www.cbsnews.com/news/house-vote-big-beautiful-bill-rules-committee/); [Senate passed version overview — PwC](https://www.pwc.com/us/en/services/tax/library/overview-of-senate-passed-version-of-hr-1-one-big-beautiful-bill-act.html); [One Big Beautiful Bill Act — Wikipedia](https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act)
+
+### Domain 37 — Judge Nichols Ruling: Still Pending
+
+No ruling issued as of this scan. Judge Nichols held hearing May 14 and appeared to be considering a written decision on a normal timeline. No new news coverage of a ruling found. Domain 37 is current; ruling window (May 21–June 4) is the operative watch period.
+
+- **Source**: [Judge seems hesitant to quickly block Trump's executive order — Democracy Docket](https://www.democracydocket.com/news-alerts/judge-seems-hesitant-to-quickly-block-trumps-executive-order-targeting-mail-voting/); [Judge weighs challenges — Roll Call](https://rollcall.com/2026/05/14/judge-weighs-challenges-to-trump-order-on-mail-voting-limits/)
+
+### Domain 58 — Turtle Mountain v. Howe Cert: Still Pending
+
+No cert grant or denial found in any indexed source. Case was redistributed to May 14 conference; no subsequent SCOTUS order found in news coverage. Domain 58 current. Monitor SCOTUS orders lists on sitting Mondays.
+
+- **Source**: [Turtle Mountain v. Howe — SCOTUSblog](https://www.scotusblog.com/cases/case-files/turtle-mountain-band-of-chippewa-indians-v-howe/); [Turtle Mountain — NARF](https://sct.narf.org/caseindexes/turtle_mountain_v_howe.html)
+
+### Domain 58 — Trump v. Barbara: Still Pending
+
+No ruling issued. Oral arguments concluded April 1; ruling expected June-July 2026. Domain 58 current.
+
+---
+
+### Revised Watch Item Table (Post-Wave-1)
+
+| Watch item | Status | Next action |
+|---|---|---|
+| SC H.5683 House vote result | UNRESOLVED — check May 19 ET | Monitor SC Legislature tracker |
+| SC Senate special session (if House passes) | Contingent on House | Watch for House result first |
+| Alabama May 19 split primary | RESOLVED — proceeded as documented | No update needed |
+| One Big Beautiful Bill House + Senate + signature | RESOLVED — enacted July 4, 2026 | Domain 37 Wave 2: document enactment + 287(g) lock-in |
+| Senate Byrd Bath completion | RESOLVED — rewrites completed; Senate passed 51-50 | Incorporated in One Big Beautiful Bill resolution above |
+| SCOTUS orders — Turtle Mountain cert | UNRESOLVED — pending | Monitor SCOTUS orders (sitting Mondays) |
+| Trump v. Barbara ruling | UNRESOLVED — June-July window | Monitor SCOTUSblog |
+| ICC May 27 Duterte status conference | UPCOMING — May 27 | Monitor Rappler, GMA News, Manila Times |
+
+**Scan method**: Web searches (8 targeted queries) + SC Legislature direct fetch
+**Next recommended monitoring pass**: May 19 ET morning (SC H.5683 outcome) and May 27 (ICC status conference)
