@@ -1,3 +1,47 @@
+## Session 1206 (Orchestrator) — May 18, 2026 02:45–05:30 UTC — Guardrails Wiring Implementation + Concurrent Order Deduplication Testing
+
+**Status**: ✅ **GUARDRAILS BLOCK RESOLVED — Deployment Unblocked for Post-Checkpoint Scaling**
+
+### Since Last Check-in (Session 1205)
+
+**Autonomous Work Completed**:
+
+**✅ STOCKBOT: Guardrails.py Wiring Complete + 24-Test Suite Passing**
+  - **Commitment**: Session 1205 identified guardrails as BLOCKER for deployment scaling post-checkpoint. Session 1206 implemented full fix.
+  - **Implementation** (commit 460e757):
+    1. Added `from src.guardrails import GuardrailChain, OrderContext` to imports
+    2. Initialized `GuardrailChain` in `TradingSession.__init__()` with `max_position_pct=0.05` (5% cap)
+    3. Created `_build_order_context()` helper method to aggregate account state from Alpaca API (equity, cash, open positions)
+    4. Inserted `guardrails.validate()` call in BUY path BEFORE `_reserve_cash()` (~line 2053 after edits)
+    5. Orders failing guardrails are logged as "buy_rejected" and skipped
+  - **Test Suite** (new file: `tests/test_guardrails_concurrent.py`):
+    - 24 comprehensive tests across 5 test classes
+    - ✅ TestPositionSizeLimiter5Percent (6 tests): Position-size limiting with 5% cap
+    - ✅ TestConcurrentOrderDeduplication (2 tests): Idempotency race condition prevention
+    - ✅ TestGuardrailChainIntegration (4 tests): Full chain validation
+    - ✅ TestConcurrentPositionsCap (4 tests): Concurrent position limit enforcement
+    - ✅ TestConcurrentStress (8 tests): Parametrized + stress scenarios
+    - **All 24 tests PASSING** in 0.47 seconds
+  - **Verification** (from BLOCKED.md specifications):
+    - ✅ `grep -n "GuardrailChain" src/trading/trading_session.py` returns 2 results (import + init)
+    - ✅ `uv run pytest tests/test_guardrails_concurrent.py -v` passes 24/24 tests
+  - **Documentation**: Updated BLOCKED.md (moved to Resolved Archive) and PROJECTS.md ("Blocked on" updated)
+  - **Impact**: Deployment scaling for AMZN/JPM now unblocked. May 19 checkpoint NOT affected (measures signal execution, not guardrails).
+
+**Project Status** (all on-track):
+- **stockbot**: ✅ Guardrails verified + tested. Ready for May 19 checkpoint (guardrails NOT blocking checkpoint).
+- **resistance-research**: Awaiting user Wave 1 setup (due 06:00 UTC; current time ~05:30 UTC — only ~30 min remaining)
+- **seedwarden**: Track B ready for Gate 1 (user action: create accounts)
+
+**Commits**:
+1. 460e757 — feat(guardrails): Wire position-sizing enforcement into BUY path (stockbot submodule)
+2. 66b906f4 — chore(orchestrator): session 1206 — Guardrails block resolved (master, BLOCKED.md + PROJECTS.md)
+
+**Assessment**:
+Guardrails block RESOLVED in Session 1206. Implementation wired into BUY path, tested with 24 comprehensive tests, all passing. Deployment unblocked for post-checkpoint scaling. Checkpoint execution (May 19 20:00 UTC) NOT affected by this change (checkpoint measures signal execution, not guardrail enforcement). Focus now shifts to: (1) resistance-research Wave 1 user setup (~30 min remaining before 06:00 UTC deadline), (2) seedwarden Gate 1 activation, (3) May 19 checkpoint execution.
+
+---
+
 ## Session 1205 (Orchestrator) — May 18, 2026 02:20–03:00 UTC — Wave 1 Readiness Audit + Stockbot Guardrails Investigation
 
 **Status**: ⚠️ **Wave 1 User-Action Items Due in 3.5 Hours (by 06:00 UTC) + Stockbot Guardrails Wiring Blocker Found (Post-Checkpoint Fix)**
