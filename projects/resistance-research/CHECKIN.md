@@ -1,6 +1,38 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 17, 2026 (Session 1112 — Domain G scoping complete)*
+*Updated: May 18, 2026 — Domain 56 Wave 1 distribution infrastructure staged*
+
+---
+
+## DOMAIN 56 WAVE 1 DISTRIBUTION — ONE ACTION REQUIRED (May 18, 2026)
+
+**Status**: ALL INFRASTRUCTURE COMPLETE. One action remaining: create the GitHub Gist (10 minutes).
+
+**Why now**: Partnership for Public Service briefing window opens May 19 (tomorrow). This is the primary Tier 1 distribution hook. Tier 1 emails go out today/tomorrow once Gist URL is in hand.
+
+**Domain 56 is production-ready**: 6,800 words, 47 citations, all 10 sections complete. Zero additional research or writing required. Created May 15, 2026.
+
+**The one action**:
+1. Open `execution/domain-56-gist-creation-steps.md`
+2. Go to https://gist.github.com/new (log in as esca8peArtist)
+3. Filename: `domain-56-civil-service-politicization-nonpartisan-governance-2026.md`
+4. Paste Zone A header + Zone B context block + document body + Zone D footer (all text provided in the guide)
+5. Create public gist — copy the URL
+6. Fill `[DOMAIN_56_GIST_URL]` in `execution/domain-56-email-template.md` and `execution/domain-56-social-media.md` (find-and-replace; ~16 instances)
+7. Add URL to `DISTRIBUTION_GIST_URLS.md`
+
+**Then send Tier 1 emails** (5 contacts, May 18-19):
+- Partnership for Public Service — media@ourpublicservice.org — Template 1
+- Government Accountability Project — info@whistleblower.org — Template 4
+- AFGE — info@afge.org — Template 2
+- Protect Democracy — contact form — Template 4
+- NTEU — nteu@nteu.org — Template 2
+
+**Total user time**: approximately 60-90 minutes (Gist creation + 5 emails)
+
+**Staging document**: `execution/domain-56-wave-1-readiness.md` — complete distribution timeline, template fill checklist, monitoring plan
+
+---
 
 ---
 
