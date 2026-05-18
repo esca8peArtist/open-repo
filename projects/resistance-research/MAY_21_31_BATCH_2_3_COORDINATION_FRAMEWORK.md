@@ -691,4 +691,358 @@ This framework is executable on May 20 morning without additional consultation. 
 
 ---
 
-*Prepared: May 18, 2026. Sources: WAVE_1_MONITORING_DASHBOARD.md (May 17); WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md (May 18); DOMAIN_42_MAY_28_EXECUTION_PREP.md (May 13); DOMAIN_42_AMPLIFICATION_STRATEGY.md (May 12); DISTRIBUTION_OUTREACH_CONTACTS.md (April 27); PHASE_1_POST_WAVE1_CONTINGENCY.md (May 17); POST_WAVE_1_SYNTHESIS_AND_TIER2_TRANSITION.md (May 17); [Federal Register DEA-1362](https://www.federalregister.gov/documents/2026/04/28/2026-08177/schedules-of-controlled-substances-rescheduling-of-marijuana) (confirmed May 18).*
+## SECTION 7: Tier 2 Secondary Contact Follow-Up Protocol (May 23–25)
+
+### 7.1 Who This Section Applies To
+
+The Tier 2 follow-up protocol activates May 23–25 for organizations that have integrated Phase 1 content in any form — not just the Batch 1 contacts, but any organization from Batch 2 or Domain 42 Wave 1–2 that produces a high-value engagement signal (Score 4–5) before May 23. These are organizations that have already demonstrated substantive interest; the follow-up converts that interest into a specific commitment.
+
+**Integration signal definition** (Score 4–5 from WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv):
+- Score 5: Cited the research in a filing, brief, publication, or internal document
+- Score 4: Asked how to operationalize, mentioned a colleague, or forwarded internally
+- Any Domain 42 organization that replies confirming they are drafting a DEA participation notice
+
+**Target window**: May 23 (two business days after the May 21 Batch 2 send) through May 25 (the Domain 42 AG outer limit). This window is tight by design — organizations are already engaged, and the May 28 DEA deadline creates a natural urgency anchor for all three follow-up asks.
+
+### 7.2 Three-Ask Follow-Up Strategy
+
+Each follow-up to a Tier 2 integration-signal organization focuses on one of three escalating asks. Choose based on the organization's capacity, role, and the type of signal they gave.
+
+**Rule**: One ask per organization, per follow-up. Do not compound asks. If an organization is relevant for both testimony and co-sign, lead with testimony — it creates the stronger record.
+
+### 7.3 Template A — Implementation Ask
+
+**Use when**: The organization has the research but has not committed to using it. The question is whether they will incorporate it into ongoing advocacy, litigation, or communications.
+
+**Target organizations** (from Batch 2 and Domain 42 Wave 1–2 who show Score 3–4 signals):
+- Brennan Center (Waldman, Crayton) — if they asked substantive questions but have not mentioned use
+- States United Democracy Center (Lydgate) — if they engaged but have not mentioned implementation
+- Common Cause (Solomón) — if they replied without specifying use
+- ACLU Voting Rights Project — if the Domain 42 outreach produced a general engagement reply without a specific filing commitment
+- Any Batch 2 think tank that replied with interest but no stated implementation plan
+
+**Subject line**: `Following up — implementing [Domain X] analysis in your work`
+
+**Template body**:
+
+> Thank you for your reply to my [date] email. I wanted to follow up with one specific question: do you see an opportunity to incorporate the [Domain X] analysis into [specific work product — a brief you are preparing / your organization's public communications / an upcoming report]?
+>
+> The section most directly relevant to [organization's current focus] is [Section reference — e.g., "Section 4.2 on the SAVE Act false positive data" / "the NVRA-Medicaid enrollment nexus in Section 3.1"]. I can send a targeted excerpt with source citations formatted for direct integration if that would be useful.
+>
+> The reason I'm following up now is the May 28 DEA hearing deadline — if any of your organization's current advocacy work touches drug policy or felony disenfranchisement, the Domain 42 section may be directly deployable before that date.
+>
+> No action required if this timing does not work. I'll follow up on [date + 3 weeks] on the broader framework when the hearing pressure has passed.
+>
+> [Your name] | [Contact information]
+
+**Personalization notes**:
+- Replace [Domain X] with the specific domain most relevant to the contact's reply
+- Replace [specific work product] with something concrete you know they are working on (from their reply, their organization's website, or recent publications)
+- The DEA hearing hook is optional — omit if the organization's work is unrelated to drug policy
+- The "no action required" line is important — it reduces friction and increases the rate of eventual response
+
+### 7.4 Template B — Testimony Ask
+
+**Use when**: The organization's work directly overlaps with the DEA hearing topics (drug policy, felony disenfranchisement, regulatory capture, federalism conflicts with state cannabis laws). The ask is whether they will file a participation notice or testimony before May 28.
+
+**Target organizations** (highest priority for testimony ask):
+- Drug Policy Alliance (press@drugpolicy.org) — Wave 1 already sent; follow up May 21–22 if no participation notice confirmed
+- NORML (norml@norml.org) — Wave 1 sent; follow up on participation notice status
+- The Sentencing Project (staff@sentencingproject.org) — Wave 1 sent; they cite their own research in Domain 42, most natural testimony filer
+- LEAP (info@leap.cc) — Wave 1 sent; law enforcement angle is unique and high-credibility for DEA
+- State AGs who replied to Domain 42 outreach — AG amicus brief or formal participation notice carries higher institutional weight than advocacy organization testimony
+- ACLU Criminal Law Reform — if they replied, follow up on whether they intend to file
+- Prison Policy Initiative (info@prisonpolicy.org) — if they engaged, they have directly relevant disenfranchisement data
+
+**Subject line**: `DEA hearing May 28 — will [organization] file a participation notice?`
+
+**Template body**:
+
+> Following up on the Domain 42 research I shared on [date]. The DEA-1362 participation notice deadline is May 28 — that's [X] days away.
+>
+> I wanted to ask directly: is [organization] planning to file a participation notice for the June 29 hearing?
+>
+> If yes: I have a pre-drafted participation notice template that can be adapted to [organization]'s letterhead in approximately 30 minutes. The template covers [the democratic exclusion argument / the felony disenfranchisement feedback loop / the SAFER Banking federalism conflict — choose the most relevant] with specific citations to your organization's existing published work. I can send it immediately.
+>
+> If you are on the fence because of staff bandwidth: the participation notice itself is a 200–400 word letter stating intent to participate and a brief summary of testimony focus. You do not need to have written testimony prepared by May 28 — only the notice of intent. The research does most of the drafting work.
+>
+> If your organization is not planning to file: I completely understand. Would it be possible to amplify another organization's filing through your newsletter or social media? I can provide a social media post template that takes five minutes.
+>
+> [Your name] | [Contact information]
+
+**Personalization notes**:
+- Fill [X] days with the accurate countdown (as of May 23 = 5 days; May 24 = 4 days; May 25 = 3 days)
+- Adjust the three "if yes / if on the fence / if not planning" structure based on what you know about the organization's likely capacity — lead with the option most likely to apply
+- For state AG offices: replace "participation notice" with "formal comment or amicus brief filing" and omit the social media offer — AGs do not do social posts on pending agency proceedings
+
+### 7.5 Template C — Co-Sign Ask
+
+**Use when**: The organization has engaged substantively and has the institutional stature to co-sign a joint communication — an open letter, a joint op-ed, a coalition statement, or a shared public comment to the DEA. This is the highest-ask variant and should only go to organizations that have shown Score 4–5 engagement.
+
+**Target organizations** (co-sign ask only goes to organizations with demonstrated engagement):
+- Any Batch 1 organization that produced a Score 4–5 reply (by definition, these are the highest-trust relationships at this point)
+- Brennan Center (if engaged) — co-sign a coalition letter to DEA or a joint op-ed on democratic exclusion and drug policy
+- NAACP LDF (if engaged by May 23) — joint statement on the disenfranchisement-drug policy nexus
+- Multiple state AGs who have replied — joint state AG letter to DEA carries maximum institutional weight; one state AG co-signing creates pressure on others to join
+- States United Democracy Center — if engaged, co-sign a public statement on federalism and state cannabis regulatory authority
+- Drug Policy Alliance + The Sentencing Project (if both engaged) — joint op-ed from the two leading organizations would be placed in national press
+
+**Subject line**: `Coalition opportunity — [organization] + [your organization/project] joint statement on DEA-1362`
+
+**Template body**:
+
+> I'm reaching out because of the strong engagement you've shown with the research I shared — specifically [reference the specific signal: "your question about the SAFER Banking federal-state conflict" / "your note that this aligns with your current report on felony disenfranchisement"].
+>
+> I want to propose something more direct: would [organization] be willing to co-sign a brief joint statement that we publish publicly before the May 28 DEA hearing deadline?
+>
+> Here is what I have in mind: a 300–500 word statement making three points:
+> 1. The DEA rescheduling decision has democratic participation implications that extend beyond drug policy — specifically, felony disenfranchisement affects 4+ million Americans, disproportionately in the states where cannabis reform has the most democratic support.
+> 2. The regulatory process for DEA-1362 has excluded civil rights and voting rights organizations in ways that parallel previous democratic exclusion from drug policy design.
+> 3. The organizations signing this statement urge the DEA to extend the participation period and convene a specific round of testimony from voting rights, civil rights, and democratic accountability experts before the June 29 hearing.
+>
+> I can draft the full statement text and circulate it for review within 24 hours. Your organization's signature would mean: one staff member reviews the draft, approves, and sends a confirmation email. Estimated time investment: 30 minutes.
+>
+> If this is too much for your current bandwidth, I understand completely — the testimony ask (Template B) requires significantly less and has the same May 28 deadline. I can downshift to that if preferred.
+>
+> [Your name] | [Contact information]
+
+**Personalization notes**:
+- The three-point framing is a starting point — adjust based on the co-signing organization's stated priorities. If the AG's office is more focused on federalism, lead with the SAFER Banking conflict rather than the disenfranchisement argument.
+- The "estimated time investment: 30 minutes" framing is important — it addresses the most common objection (staff bandwidth) before it is raised.
+- If two organizations have both engaged, propose a joint co-sign between them — this is more powerful than asking each separately and creates social proof for the ask.
+
+### 7.6 Tier 2 Follow-Up Target Database
+
+**Organizations to follow up with by path and priority**:
+
+| # | Organization | Contact | Follow-Up Type | Send Date | Trigger Condition |
+|---|-------------|---------|---------------|-----------|------------------|
+| T2-1 | Drug Policy Alliance | press@drugpolicy.org | Template B (Testimony) | May 21 if no reply to Wave 1; May 23 if acknowledgment only | Wave 1 sent May 18; no reply by May 21 = follow-up window |
+| T2-2 | NORML | norml@norml.org | Template B (Testimony) | May 21 if no reply; May 23 if acknowledgment | Same condition |
+| T2-3 | The Sentencing Project | staff@sentencingproject.org | Template B (Testimony) | May 21 if no reply; May 23 if acknowledgment | Same condition; highest natural alignment |
+| T2-4 | LEAP | info@leap.cc | Template B (Testimony) | May 21 if no reply; May 23 if acknowledgment | Same condition |
+| T2-5 | ACLU Criminal Law Reform | nationaloffice@aclu.org | Template B (Testimony) | May 22–23 | Domain 42 Wave 1 sent; follow up after 4-day window |
+| T2-6 | Prison Policy Initiative | info@prisonpolicy.org | Template B (Testimony) | May 22 | First outreach is via Domain 42 send; this is primary, not follow-up |
+| T2-7 | Brennan Center (Waldman/Crayton) | Via Brennan Center contact | Template A (Implementation) | May 23 | Batch 2 sent May 21; follow up if Score 3 reply or higher received |
+| T2-8 | States United Democracy Center (Lydgate) | Via statesunited.org | Template A or C | May 23 | Depends on engagement signal from Batch 2 send |
+| T2-9 | NAACP LDF (Nelson) | naacpldf.org/contact | Template C (Co-sign) | May 23 | Only if Score 4–5 received after Batch 2 send; do not cold-pitch co-sign |
+| T2-10 | Multiple state AGs (first 3 to reply) | Per Section 2.2 allocation | Template B or C | May 23–24 | Any AG reply to Domain 42 outreach triggers co-sign opportunity |
+| T2-11 | Common Cause (Solomón) | Via commoncause.org | Template A (Implementation) | May 24 | Batch 2 sent May 21; follow up if any reply |
+| T2-12 | Any Batch 1 contact with Score 4–5 | Per original Batch 1 addresses | Template C (Co-sign) | May 23 | Score 4–5 from Wave 1 monitoring = co-sign opportunity |
+
+**Follow-up send discipline**: One follow-up per organization per thread. If Template B produces no reply by May 26, do not send a second follow-up before May 28. The deadline itself will either move them or it will not.
+
+---
+
+## SECTION 8: Contingency Escalation Paths
+
+### 8.1 Overview of Escalation Thresholds
+
+The three contingency branches below activate based on quantitative trigger thresholds, not subjective concern. Each branch has: a specific trigger definition, an immediate action sequence, an implementation timeline, and the contact lists and templates required to execute.
+
+**When to check**: Run the escalation check at the same time as the May 21 classification (10:30 UTC) and again at the May 25 secondary gate.
+
+| Contingency Branch | Trigger | Section |
+|-------------------|---------|---------|
+| Low reply rate | <30% substantive reply rate by May 21 10:30 UTC | 8.2 |
+| Bounce spike | >10% hard bounce rate in Batch 2 sends | 8.3 |
+| Negative sentiment detected | Any reply contains hostile or explicitly negative framing of the research | 8.4 |
+
+### 8.2 Branch 1 — Low Reply Rate (<30%)
+
+**Trigger definition**: Fewer than 30% of the adjusted contact count (Batch 1 minus bounces and OOOs) produce substantive replies (Score 3+) by the May 21 10:30 UTC gate. At the 5-contact Batch 1 scale, this means zero substantive replies with a full contact denominator, OR one substantive reply if two contacts were OOO or bounced (lowering the adjusted count to 3, requiring 1 of 3 to reach 33%).
+
+Confirm the trigger by running the delivery diagnosis in Section 3C-1 before proceeding. A low reply rate caused by delivery failure is not a content failure — fix delivery first.
+
+**Immediate action (within 2 hours of trigger confirmation)**:
+
+1. Submit to SSRN — parallel discovery pathway that operates independently of direct outreach.
+
+**SSRN Submission Template**:
+
+```
+TITLE: Democratic Accountability and Drug Policy Reform: The DEA Rescheduling Decision as a Test Case for Participatory Governance
+
+ABSTRACT:
+This paper examines the Drug Enforcement Administration's rescheduling proceeding (Docket No. DEA-1362) through the lens of democratic participation and institutional accountability. Drawing on a 35-domain empirical framework for democratic diagnosis, we analyze how the DEA hearing process replicates structural exclusion patterns documented in federal agency rulemaking generally: exclusion of civil rights and voting rights stakeholders from a proceeding with direct implications for felony disenfranchisement affecting over 4 million Americans; a federal-state conflict between DEA scheduling authority and voter-approved state cannabis frameworks in 24 states; and regulatory capture dynamics in the selection of authorized participants for the June 29 hearing.
+
+We document three democratic accountability failures in the current proceeding and propose three structural interventions: mandatory NVRA-equivalent stakeholder inclusion requirements for DEA scheduling decisions; a judicial review pathway for democratic-exclusion claims in agency proceedings; and a congressional reporting requirement connecting DEA scheduling decisions to their documented civil rights impacts.
+
+KEYWORDS: DEA rescheduling, democratic participation, felony disenfranchisement, regulatory capture, participatory governance, marijuana policy
+
+SUGGESTED CLASSIFICATION: Public Law, Administrative Law, Democratic Theory
+
+AUTHOR AFFILIATION: Independent researcher — [your name and affiliation if any]
+NOTE: This paper draws on a larger democratic accountability research framework available at [Gist URL]. The DEA hearing deadline is May 28, 2026.
+```
+
+**SSRN Submission Steps**:
+1. Create an SSRN account at ssrn.com if not already registered
+2. Use the title and abstract above, adjusting for accuracy to the actual research
+3. Upload the Domain 42 document (or a subset) as the paper PDF
+4. Set classification to Public Law + Administrative Law
+5. Publication date: set to today's date to ensure immediate indexing
+6. Timeline: SSRN indexes within 24–48 hours; Google Scholar picks up within 48–72 hours of SSRN indexing; by May 25 the paper is discoverable via searches for "DEA rescheduling democratic accountability"
+
+2. Academic coalition outreach (parallel to SSRN submission):
+
+**Academic Coalition Contact List** (15 contacts — bypass the main Batch 2 academic law school sequence and go directly to these domain-specific researchers):
+
+| # | Contact | Institution | Email | Domain | Why prioritize under low-reply contingency |
+|---|---------|-------------|-------|--------|--------------------------------------------|
+| AC-1 | Douglas Husak | Rutgers (philosophy of drug law) | Via Rutgers Philosophy | Domain 42 foundational argument | Established voice in drug law and democratic theory; SSRN presence |
+| AC-2 | Erik Luna | George Mason Law | eluna@gmu.edu | Criminal law reform, regulatory design | Criminal law and admin overlap; more operationally focused than pure theorists |
+| AC-3 | Alex Kreit | Thomas Jefferson Law | Via TJSL | Drug law reform specifically | Author of casebook on controlled substances law; most directly relevant academic |
+| AC-4 | Mark Kleiman (estate / colleagues) | NYU Marron Institute | Via Marron Institute | Drug policy empirics | Kleiman network at NYU Marron still publishes on drug policy reform |
+| AC-5 | Jonathan Caulkins | Carnegie Mellon (drug policy research) | Via CMU Heinz | Quantitative drug policy | Most quantitative voice; useful for SSRN citation chain |
+| AC-6 | Keith Humphreys | Stanford (addiction policy) | humphreys@stanford.edu | Clinical and policy | Stanford Medicine / Stanford Law overlap audience |
+| AC-7 | Morgan Fox | National Organization for Marijuana Policy | Via NORML-adjacent contact | Advocacy-academic bridge | Policy practitioner with academic framing capacity |
+| AC-8 | Ohio State DEPC team | Moritz College of Law | depc@moritz.osu.edu | Drug enforcement and policy specifically | The closest academic center to the DEA procedural question |
+| AC-9 | Mason Marks | FSU Law (already in Domain 42 pipeline) | mason.marks@fsu.edu | Administrative capture specifically | Already targeted — if not yet reached, this is the top-priority academic under contingency |
+| AC-10 | Rachel Barkow | NYU Law (criminal law, admin law) | rbarkow@law.nyu.edu | Regulatory capture in criminal law | Published directly on prosecutorial capture; admin/criminal law overlap is exact fit |
+
+**Academic coalition pitch (for direct email, separate from SSRN submission)**:
+
+> I am reaching out about the SSRN paper I published [date] on democratic accountability and the DEA-1362 rescheduling proceeding (link: [SSRN URL]). Given your published work on [specific relevant topic], I wanted to ask whether you would consider citing or engaging with this analysis before the May 28 DEA participation notice deadline.
+>
+> The paper argues [one-sentence core argument relevant to their work]. The most direct application to your scholarship is [specific connection].
+>
+> If you have any reaction — including a critique — I would welcome it. Even a note saying you are aware of the analysis and find it directionally correct would be useful for the record.
+>
+> [Your name] | [SSRN URL]
+
+**Implementation timeline for Branch 1**:
+
+| Day | Action |
+|-----|--------|
+| Day 0 (trigger confirmed) | SSRN submission (2 hours) |
+| Day 0 + 24h | SSRN indexed; Google Scholar crawl begins |
+| Day 1 | Academic coalition outreach (10 emails, 90 minutes) |
+| Day 2 | Domain 42 AG outreach proceeds on independent track per Section 4 |
+| Day 3 | Check SSRN abstract page for view count (first signal of discovery) |
+| Day 3 | Proceed with Batch 3 labor and civil rights contacts (these have fastest response cycles and do not require academic validation) |
+| Day 4 | Google Scholar indexes; paper discoverable via "DEA rescheduling" search |
+| May 28 | Deadline — whether or not SSRN produces replies, the paper is on record |
+
+### 8.3 Branch 2 — Bounce Spike (>10% hard bounce rate in Batch 2)
+
+**Trigger definition**: More than 2 hard bounces out of the first 20 Batch 2 sends. At 10%, this signals a systemic contact list quality problem (not individual stale addresses). The contact list source is DISTRIBUTION_OUTREACH_CONTACTS.md, last verified April 27 — that's approximately 3.5 weeks old at the May 20 send date. Academic email addresses turn over at approximately 5–8% annually; at the department-level institutional addresses this is lower.
+
+**Immediate action**:
+1. Pause all remaining Batch 2 sends
+2. Run a spot-check on the remaining contacts before resuming
+
+**Filtered High-Confidence Contact List** (top 10 contacts from Batch 1 + Batch 2 where addresses are highest-confidence — use this subset if bounce spike is confirmed):
+
+| # | Contact | Organization | Email | Confidence Basis |
+|---|---------|-------------|-------|-----------------|
+| HC-1 | Ryan Goodman | Just Security | ryan@justsecurity.org | Confirmed May 14; independent non-institutional address |
+| HC-2 | Wendy Weiser | Brennan Center | wweiser@brennancenter.org | Confirmed May 14; organizational address unlikely to churn |
+| HC-3 | Erica Chenoweth | Harvard Kennedy School | erica_chenoweth@hks.harvard.edu | Confirmed May 14; long-tenure faculty |
+| HC-4 | Ian Bassin | Protect Democracy | ian@protectdemocracy.org | Confirmed May 14; founder — address will not change |
+| HC-5 | Marc Elias | Democracy Docket | melias@elias.law | Confirmed May 14; personal law practice domain |
+| HC-6 | Richard Hasen | UCLA Law | rhasen@law.ucla.edu | High-tenure faculty; long publishing record at UCLA; lowest churn risk of Batch 2 law school contacts |
+| HC-7 | Michael Waldman | Brennan Center | Via Brennan Center media/contact form | President of organization — not individually addressable but organizational routing is stable |
+| HC-8 | Virginia Kase Solomón | Common Cause | Via commoncause.org/contact | CEO-level contact; organizational routing most stable for CEO |
+| HC-9 | Joanna Lydgate | States United Democracy Center | Via statesunited.org | President; small organization with stable contact structure |
+| HC-10 | Janai Nelson | NAACP LDF | Via naacpldf.org/contact | President and Director-Counsel; institutional routing most stable |
+
+**Backup routing for institutional contacts**: If individual emails bounce, use the organizational contact form or general media address. For law school faculty: try the law school faculty directory directly and look for an updated .edu address.
+
+**Timeline after bounce-spike trigger**:
+- Hour 0–1: Pause sends; run spot-check on next 10 contacts
+- Hour 1–3: Update stale addresses from institutional websites
+- Hour 3+: Resume sends with verified addresses only; log each correction in a Batch 2 contact correction log
+
+**Extended timeline impact**: A bounce-spike pause of 4–8 hours typically costs 1 send day. The Domain 42 AG schedule is unaffected (most AGs use stable governmental addresses). Resume Batch 2 sends the morning after the pause.
+
+### 8.4 Branch 3 — Negative Sentiment Detected
+
+**Trigger definition**: Any reply to Batch 1 or Batch 2 that contains explicitly hostile, dismissive, or professionally damaging language toward the research — including: explicit public disagreement expressed to the sender, a reply indicating the contact is sharing the communication negatively with colleagues, or a request to be removed from further contact that includes a critique of the research framing.
+
+**What is NOT a trigger**: A substantive critique (e.g., "I think Domain 3 overstates the evidence for X" or "Your methodology for the 3.5% threshold application needs citation") is a positive signal, not negative sentiment. Methodological pushback = Score 3, not a contingency trigger. The trigger is adversarial framing, not critical engagement.
+
+**Immediate actions**:
+
+1. Pause Batch 3 sends (do not pause Domain 42 AG sends — those are on a different track with different materials)
+2. Log the specific reply verbatim in CHECKIN.md under "Needs Your Input — Negative Signal" immediately
+3. Send a damage-control response to the specific contact within 4 hours using Template D1 below
+
+**Template D1 — Damage Control (Response to Hostile Contact)**:
+
+> Thank you for your reply. I want to respond directly to [specific concern raised].
+>
+> [If the concern is about methodology]: You are raising a legitimate methodological question that I should address more precisely. The claim that [X] is based on [specific source + link]. If you see a gap in that evidence chain, I would genuinely welcome the correction — improving the analysis is exactly the goal.
+>
+> [If the concern is about framing or politics]: I understand how [specific framing element] could read as [their concern]. The intent was [original intent] — I can revise the relevant section to address this. I would not want the framing to get in the way of the substance.
+>
+> [If the concern is about being contacted]: I will not reach out to you further. I apologize if the outreach was unwelcome. I am removing your address from my distribution list now.
+>
+> [Your name]
+
+**Template D2 — Proactive Stakeholder Communication (if negative reply has been shared)**:
+
+If you have evidence that a hostile reply has been shared with colleagues (e.g., the hostile contact CC'd others, or you receive a follow-up from a different contact referencing the negative response), send this to the colleagues who were CC'd:
+
+> I am following up on a message that [contact name] may have shared with you. I want to address the concern directly: [one-sentence response to the core objection].
+>
+> The research is available at [Gist URL] for your own review. I welcome any feedback and will not reach out further unless you respond.
+>
+> [Your name]
+
+**Stakeholder contact list for damage-control communication** (organizations most likely to hear about a negative response before you can address it):
+
+| # | Organization | Why Prioritized | Contact |
+|---|-------------|----------------|---------|
+| SC-1 | Brennan Center | Any negative signal from law or policy sector will likely reach them | wweiser@brennancenter.org or Via Brennan Center contact |
+| SC-2 | Protect Democracy | Bassin's network; if any Batch 1 contact shares a negative response, Bassin may hear | ian@protectdemocracy.org |
+| SC-3 | Just Security | Goodman is a networked editor; a negative response from a shared contact would travel through his editorial network | ryan@justsecurity.org |
+| SC-4 | Democracy Docket | Elias's network is large; any negative response in the voting rights community may reach him quickly | melias@elias.law |
+| SC-5 | Academic contacts whose institutions overlap with the hostile contact | E.g., if the hostile contact is at Harvard Law, proactively brief the Harvard Law contacts who have already replied positively | Per Batch 2 allocation contact table |
+
+**Implementation timeline for Branch 3**:
+
+| Time | Action |
+|------|--------|
+| Hour 0 | Receive hostile reply; log verbatim in CHECKIN.md immediately |
+| Hour 0–1 | Pause Batch 3 sends; do NOT pause Domain 42 AG sends |
+| Hour 1–4 | Draft and send Template D1 response to hostile contact |
+| Hour 4 | Assess whether negative signal has traveled (check for follow-up messages from other contacts referencing the hostile reply) |
+| Hour 4–8 | If signal has traveled: send Template D2 proactively to SC-1 through SC-4 as appropriate |
+| Day 2 | Resume Batch 3 if no further negative signals and the hostile contact's concerns have been addressed |
+| Day 3+ | Resume normal cadence; note the objection raised and consider whether a messaging adjustment is warranted for remaining sends |
+
+**What not to do**: Do not delete or ignore the hostile reply. Do not send additional messages to the hostile contact after Template D1. Do not announce the negative signal to other contacts unless they ask directly. The purpose of damage control is to prevent the signal from spreading, not to amplify it.
+
+---
+
+## May 21–31 Calendar — All Events
+
+| Date | Primary Action | Domain 42 Action | Deadline / Gate |
+|------|---------------|-----------------|-----------------|
+| May 20 | STRONG: 5 Batch 2 sends / MODERATE: Prepare only | Tier 1 AGs (Mayes, Bonta, Weiser/CO) | May 20 provisional classification |
+| May 21 | Batch 2 standard send (all paths) | Tier 1 + 2 AGs; media Week 1 pitches (AP, Reuters, Axios) | 10:30 UTC monitoring window close; 14:00 UTC user confirmation |
+| May 22 | Batch 3 civil rights Wave 1 (STRONG) | Tier 2 AGs; drug policy press (Filter, NORML, DRCNet) | — |
+| May 23 | Batch 3 labor Wave 1 (STRONG) | Tier 2 AGs (MODERATE); civil rights press (Appeal, Marshall Project) | Tier 2 follow-ups open (Section 7) |
+| May 24 | Batch 3 civil rights Wave 2; think tanks | Tier 3 AGs | — |
+| May 25 | — | OUTER LIMIT — all AG contacts must have materials; WaPo, Mother Jones pitch | May 25 = last AG send day |
+| May 26 | Think tanks (D'Amico, Tucker, Balkin) | Reminder follow-ups only; no new AG outreach | — |
+| May 27 | Labor completion (NEA, AFT, Teamsters, USW); faith coalitions | Voting rights journalists | — |
+| May 28 | Cross-aisle think tanks (Continetti, Levin) — STRONG only | HARD DEADLINE — monitor nprm@dea.gov filings | Domain 42 filing deadline (nprm@dea.gov) |
+| May 29–31 | Phase 2 research planning; law school window still open (Goodman, Chenoweth through Day 10) | Post-hearing coordination (June 29 hearing prep) | — |
+
+**May 28 Post-Hearing Success Metrics**:
+
+The May 28 deadline produces measurable outcomes within 48–72 hours via the Federal Register docket. Success metrics to check on May 29–30:
+
+| Metric | How to Check | Success Threshold | Notes |
+|--------|-------------|-------------------|-------|
+| Participation notices filed by organizations we contacted | Federal Register docket for DEA-1362 at federalregister.gov | ≥1 organization we contacted files a participation notice | Any filing = pipeline success |
+| Media coverage citing democratic accountability angle | Google News search: "DEA marijuana democratic" / "DEA rescheduling disenfranchisement" | Any article citing the framework angle | Even a sentence in a larger story = narrative success |
+| Direct replies confirming hearing participation | Email inbox | Any reply from any organization saying they filed or are monitoring the hearing | Each one = implementation signal for Phase 2 scoring |
+| State AG formal comment or brief | State AG press releases; federalregister.gov docket | ≥1 AG office filed or announced intent to file | Highest-value outcome |
+| SSRN views (if Branch 1 contingency was activated) | ssrn.com abstract page | >25 views within 72 hours of publication = discoverability confirmed | SSRN view baseline for comparison |
+
+---
+
+*Prepared: May 18, 2026. Updated: May 18, 2026 (Sections 7–8 and calendar added). Sources: WAVE_1_MONITORING_DASHBOARD.md (May 17); WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md (May 18); DOMAIN_42_MAY_28_EXECUTION_PREP.md (May 13); DOMAIN_42_AMPLIFICATION_STRATEGY.md (May 12); DISTRIBUTION_OUTREACH_CONTACTS.md (April 27); PHASE_1_POST_WAVE1_CONTINGENCY.md (May 17); POST_WAVE_1_SYNTHESIS_AND_TIER2_TRANSITION.md (May 17); [Federal Register DEA-1362](https://www.federalregister.gov/documents/2026/04/28/2026-08177/schedules-of-controlled-substances-rescheduling-of-marijuana) (confirmed May 18).*
