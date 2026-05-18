@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T18:00:26Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T18:28:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.5% | Reset in 6h | check: claude.ai → Settings → Usage & billing
@@ -113,7 +113,7 @@
 - **Item 61 (May 21)**: Wave 1 72-Hour Synthesis & Phase 2 Decision Framework — activates when May 21 10:30 UTC monitoring window closes
 - **Item 62 (May 21-22, depends on Item 61)**: Phase 2 Research Production Infrastructure — activates after Item 61 outcome decision
 - **Item 65 (May 20-21)**: Resistance-Research May 21-31 Batch 2-3 Coordination Framework — can start May 20 if Batch 1 early signals clear
-- **Item 66 (May 20, if needed)**: Stockbot FAR-MISS-C2 Recovery Playbook — only activated if checkpoint C2 outcome detected
+- **Item 66 (COMPLETE)**: Stockbot FAR-MISS-C2 Recovery Playbook — pre-staged proactively; `FAR_MISS_C2_CAPITAL_RECOVERY_PLAYBOOK.md` production-ready (956 lines, 10 sections, 3 capital options, 4-step diagnosis, decision deadline 10:00 UTC May 20)
 
 ---
 
