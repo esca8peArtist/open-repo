@@ -2,6 +2,28 @@
 
 ---
 
+## May 18, 2026 — Phase 3 Strategic Roadmap
+
+**Status**: COMPLETE
+
+### Deliverable: `projects/resistance-research/phase-3-strategic-roadmap.md`
+
+Phase 3 long-term strategic roadmap (~3,800 words) covering the post-Phase-2 horizon through December 2030. Six sections produced:
+
+1. **Domain inventory** — five Phase 2 legacy obligations (Domains G, 37a, 31x, plus existing 57/59 production); five new Phase 3 primary research domains (H: Constitutional Architecture, I: International Standards, J: Cryptographic Democracy, K: Judicial Reform, L: Movement Infrastructure Survey); three tracker gap categories (regulatory monitoring, prosecutorial weaponization standalone, international precedent monitor, SCOTUS term monitoring)
+
+2. **Institutional adoption measurement framework** — three-stage measurement (Stage 1: baseline Jan–Jun 2027; Stage 2: integration signals Jul 2027–Jun 2028; Stage 3: outcome tracking Jul 2028+); five-level adoption taxonomy (0: received through 4: generative); feedback-integration protocol with production integrity constraint (revision trigger = same critique from 3+ Level 3 orgs; revisions documented as versioned, not silent replacements)
+
+3. **Tier 3+ distribution strategy** — five new channels: state-level democracy reform networks (State Voices Network + SiX = ~200 organizations in 50 states), faith coalitions (NCC state affiliates + UUA + NETWORK), worker cooperatives (USFWC + DAWI + NCEO), mutual aid networks (via secondary distribution through Mutual Aid Hub + Big Door Brigade), local bar associations (ABA Center for Pro Bono + 10-state target list). Outreach sequencing: bridge-contact model for all channels; leverage-first logic replaces chronological send order
+
+4. **Phase 3 timeline** — Formal launch January 2027; four quarters through December 2028 (Foundation, Expansion, Maturation, Consolidation); three Phase 3 infrastructure items running parallel with Phase 2 (Obsidian Publish soft launch June 2026, tracker automation Wave 1 July–September 2026, prosecutorial weaponization standalone tracker July 2026); resource estimate: 86–117 hours / 18–21 sessions over 24 months
+
+5. **5-year vision** — Three functions by December 2030: comprehensive diagnostic evidence base, distributed organizational infrastructure (500+ orgs, Level 3+ adoption in 50+), movement coordination infrastructure. Four integration points: Freedom House/V-Dem country reporting cycle, Senate/House oversight staff quarterly brief, law school constitutional democracy clinics, post-2028 electoral transition planning. Success threshold: organic unprompted use exceeds direct-outreach-driven use (60%+ organic = infrastructure status)
+
+6. **Decision gates** — Phase 2 exit (December 2026): seven exit criteria including public commons site live, tracker automation operational, all Batch contacts classified; Phase 3 mid-cycle (June 2028): 30+ Level 2+ orgs, 10+ Level 3+, 200+ active contacts; Phase 3 close (December 2028): five domains complete, 500+ network, 20+ Level 3+; 5-year vision (December 2030): organic use 60%+
+
+---
+
 ## May 18, 2026 — Session 1154: Phase 2 Domain Updates (Domains 1, 37, 57, 58)
 
 **Status**: COMPLETE
