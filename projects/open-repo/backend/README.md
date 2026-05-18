@@ -1,8 +1,8 @@
 # Open-Repo MVP Backend
 
-**Status**: Phase 2 Complete - FastAPI + PostgreSQL + Meilisearch + Endorsements
+**Status**: Phase 4 Complete - FastAPI + PostgreSQL + Meilisearch + Endorsements + Federation
 
-**Version**: 0.2.0
+**Version**: 0.4.0
 
 A minimal FastAPI backend for the Open-Repo federated knowledge network. Phase 1 implements CRUD endpoints for content items with JSON-LD validation against the schema defined in `../mvp-protocol-design.md`.
 
@@ -37,7 +37,7 @@ A minimal FastAPI backend for the Open-Repo federated knowledge network. Phase 1
 - JSON column for full JSON-LD content
 
 ### Tests
-- **35 passing tests** covering:
+- **255 passing tests** covering:
   - Required field validation (title, type, domain, license)
   - Type validation (procedure, recipe, schematic, plan, service-listing)
   - Multilingual content support
@@ -90,9 +90,9 @@ export DATABASE_URL="postgresql+asyncpg://postgres:postgres@localhost:5432/open_
 
 ```bash
 # Start the server with auto-reload
-uv run uvicorn app.main:create_app --reload --host 0.0.0.0 --port 8000
+uv run uvicorn app.main:create_app --reload --host 127.0.0.1 --port 8000
 
-# Server will be available at http://localhost:8000
+# Server will be available at http://127.0.0.1:8000
 # Interactive API docs at http://localhost:8000/docs
 # ReDoc at http://localhost:8000/redoc
 ```

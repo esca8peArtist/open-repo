@@ -1,20 +1,26 @@
 # Open-Repo MVP Backend API Documentation
 
-**Version**: 0.1.0  
-**Base URL**: `http://localhost:8000` (development)  
-**Status**: MVP Phase 1 (CRUD + validation only)
+**Version**: 0.4.0  
+**Base URL**: `http://127.0.0.1:8000` (development)  
+**Status**: Phase 4 Complete (CRUD + Search + Endorsements + Federation)
 
 ---
 
 ## Overview
 
-The Open-Repo Backend is a FastAPI + PostgreSQL application that implements CRUD endpoints for managing OpenRepoItem content in JSON-LD format. Phase 1 focuses on core CRUD functionality and validation against the JSON-LD schema defined in `mvp-protocol-design.md`.
+The Open-Repo Backend is a FastAPI + PostgreSQL application that implements CRUD endpoints for managing OpenRepoItem content in JSON-LD format. Phase 4 includes core CRUD functionality, full-text search, endorsement systems, and federation support via ActivityPub.
 
-**Out of scope for Phase 1**:
-- Full-text search (Meilisearch - Phase 2)
-- Endorsements (Phase 2)
-- Federation/ActivityPub (Phase 3+)
-- Contributions/review workflow (Phase 3+)
+**Implemented**:
+- Core CRUD operations
+- Full-text search (Meilisearch)
+- Endorsement system
+- Federation/ActivityPub with conflict resolution
+- Trust scoring and peer validation
+
+**Out of scope for Phase 5**:
+- Offline export (Kiwix ZIM archives)
+- OPDS catalog discovery
+- Contributions/review workflow
 
 ---
 
@@ -30,8 +36,9 @@ Health check endpoint. Returns API and database status.
 ```json
 {
   "status": "healthy",
-  "version": "0.1.0",
-  "database": "healthy"
+  "version": "0.4.0",
+  "database": "healthy",
+  "federation": "ready"
 }
 ```
 
@@ -49,9 +56,10 @@ Root endpoint returning API metadata.
 ```json
 {
   "name": "Open-Repo API",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "docs": "/docs",
-  "health": "/health"
+  "health": "/health",
+  "federation": "/fed"
 }
 ```
 
@@ -463,7 +471,7 @@ asyncio.run(init_db())
 
 ```bash
 # Development server with auto-reload
-uv run uvicorn app.main:create_app --reload --host 0.0.0.0 --port 8000
+uv run uvicorn app.main:create_app --reload --host 127.0.0.1 --port 8000
 
 # Or directly
 cd backend

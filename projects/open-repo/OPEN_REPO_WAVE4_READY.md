@@ -229,7 +229,7 @@ export NODE_IDENTITY_URL="https://yournode.example.com"  # Set to your node URL
 
 ```bash
 # Restart FastAPI application
-uvicorn app.main:create_app --reload --host 0.0.0.0 --port 8000
+uvicorn app.main:create_app --reload --host 127.0.0.1 --port 8000
 ```
 
 ### 4. Federation Bootstrap (Manual)
