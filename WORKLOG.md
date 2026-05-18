@@ -26,21 +26,30 @@ Session 1217 (05:43-05:52 UTC) determined: **no autonomous work available before
 - **10:00–14:00 UTC** — Initial monitoring period; spawning parallel agents for independent work (stockbot validation, seedwarden contingency planning)
 - **20:00 UTC** — Day 1 closing (Gist view deltas, engagement assessment, Phase 2 recommendations)
 
-### Autonomous Work Available (Post-10:00 UTC)
+### Parallel Agents Spawned (06:13 UTC) — Exploration Queue Execution
 
-Exploration Queue has 3 immediately-executable items awaiting this window:
+✅ **Agent 1 — Stockbot Jetson Validation** (ID: a02b0e9d3a5de0b1d):
+- Task: Pre-Checkpoint Jetson Infrastructure Validation (Item 1040)
+- Scope: Load testing, memory profiling, latency benchmarks, database performance, dependency verification, disk I/O health, Docker status
+- ETA: 08:00-09:00 UTC completion
+- Output: `JETSON_PRE_CHECKPOINT_VALIDATION_REPORT.md` (1,500-2,000 words) + commit to `projects/stockbot/`
 
-1. **stockbot: Pre-Checkpoint Jetson Infrastructure Validation** (est. 2-3 hrs) — May 19 checkpoint in 38h; infrastructure health check, load profiling, latency benchmarks, GPU/CPU validation. **No blockers; ready to execute 10:00 UTC → 13:00 UTC.** Output: validation report + optimization recommendations.
+✅ **Agent 2 — Seedwarden Supply Chain Planning** (ID: affe5f77d936d30dc):
+- Task: Phase 2 Supply Chain Risk & Contingency Planning (Item 1054)
+- Scope: Backup supplier research, minimum viable launch, location contingencies, critical-path options, risk scoring matrix
+- ETA: 08:00-09:00 UTC completion
+- Output: `PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md` (2,000-2,500 words) + commit to `projects/seedwarden/execution/`
 
-2. **seedwarden: Phase 2 Supply Chain Risk & Contingency Planning** (est. 2-3 hrs) — Develop contingency plans for May 30 launch (supplier delays, location issues, timing slips). **Ready to execute 10:00 UTC → 13:00 UTC in parallel.** Output: `phase-2-supply-chain-contingencies.md` with vendor alternates, timeline recovery options, risk matrix.
+Both agents run in parallel, independent of Wave 1 execution. Orchestrator will integrate findings after 10:00 UTC closure of Wave 1 execution window.
 
-3. **systems-resilience: Phase 3 Community Infrastructure Research** (est. 4-5 hrs) — Phase 2 household documents complete; research Phase 3 community-scale governance/infrastructure. **Staged for Phase 2 completion trigger (all household docs done).** **Can execute 10:00 UTC+ if needed; estimated 4-5 hours.**
+### Timeline (Revised)
 
-**Strategy**: Once Wave 1 execution window closes (10:00 UTC) and initial response signals are visible, spawn **2 parallel agents**:
-- Agent 1: Stockbot Jetson validation (subagent_type=stockbot) → complete 10:00-13:00 UTC
-- Agent 2: Seedwarden contingency planning (subagent_type=seedwarden) → complete 10:00-13:00 UTC
-
-While agents execute, orchestrator monitors Wave 1 response signals (bounces, engagement, Gist view deltas, time-to-first-response patterns).
+- **06:13 UTC** — Parallel agents spawned (stockbot + seedwarden)
+- **07:00 UTC** — CronCreate pre-flight auto-fires (Gist verification, contact check, template scan)
+- **08:00–10:00 UTC** — Wave 1 Batch 1 sends (user-executed) + parallel agents completing work
+- **10:00 UTC** — Wave 1 window closes; assess early engagement signals + integrate agent findings
+- **10:00–14:00 UTC** — Initial Wave 1 monitoring + agent result integration
+- **14:00+ UTC** — Worklog updates, checkpoint integration, next-step planning
 
 ---
 
