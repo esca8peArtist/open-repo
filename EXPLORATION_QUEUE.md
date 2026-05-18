@@ -1150,3 +1150,60 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 **Why now**: May 30 launch is 13 days away; final checklist should be ready May 17-18 so that May 24-29 Track B execution can be monitored against launch requirements (e.g., "Canva Brand Kit ready May 25" feeds into "Social media templates finalized May 27" feeds into "Social media post scheduled May 28-29")
 **Blocker**: None (audit framework, independent of Track B execution)
 **Next Step**: Orchestrator produces final launch checklist May 17-18 → user executes Track B gates May 17-28 with awareness of May 30 requirements → user does final readiness audit May 28-29 using checklist → May 30 launch ready
+
+---
+
+### ⏳ Item 61: Resistance-Research Wave 1 72-Hour Monitoring Synthesis & Phase 2 Launch Decision Framework
+**Status**: QUEUED (Session 1237, May 18 2026, 10:42 UTC)
+**Impact**: CRITICAL — Wave 1 72h monitoring window closes May 21 (~10:30 UTC). By May 25 checkpoint, Phase 2 launch path must be decided (STRONG/MODERATE/WEAK outcome classification). Pre-staging the synthesis framework now enables instantaneous May 21 aggregation + May 25 decision gate.
+**Context**: Wave 1 execution complete (5 Batch 1 emails sent May 18 08:00-10:00 UTC). Monitoring infrastructure exists (WAVE_1_MONITORING_DASHBOARD.md, WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv, WAVE_1_DAILY_MONITORING_TEMPLATE.md). But does user have a clear synthesis protocol? What metrics constitute STRONG vs MODERATE vs WEAK? What's the Phase 2 decision tree if outcome is STRONG?
+**Goal**: Pre-stage comprehensive monitoring synthesis framework:
+1. **Signal aggregation protocol** (May 21 20:00 UTC): Which signals to count? (reply rate, reply quality score, Gist view progression, social media mentions, integration signals). How to weight each signal (e.g., 1 integration signal = 5 quality replies = 20 opens)?
+2. **STRONG/MODERATE/WEAK classification logic**: STRONG = ≥60% institutional reply rate + ≥3 integration signals by May 21. MODERATE = 30-59% reply rate + 1-2 integration signals. WEAK = <30% reply or 0 integration signals.
+3. **Phase 2 pathway per outcome**: STRONG → launch Phase 2 research immediately (June 1 start date maintained); MODERATE → contingency resourcing (slower 12-week timeline, Domains 57-59); WEAK → strategic pivot to election protection (Domain 37 focus, hold other Phase 2 research).
+4. **Batch 2-3 timing adjustments**: STRONG → accelerate Batch 2 to May 20, add Batch 3 May 22-23. MODERATE → standard Batch 2 May 21, Batch 3 June 1. WEAK → extend Batch 2-3 to June 1+ with revised messaging.
+5. **May 25 decision gate checklist**: Gist view progression analyzed? All bounce rates confirmed? Secondary contact follow-ups initiated for non-respondents? Tier 2 pipeline (integration signal organizations) identified for direct outreach?
+**Feasibility**: HIGH — frameworks exist, mostly integration + synthesis work
+**Effort estimate**: 2–2.5 hours
+**Deliverable**: `projects/resistance-research/WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md` (signal aggregation protocol with weighting, STRONG/MODERATE/WEAK classification logic with numerical thresholds, Phase 2 pathway decision tree per outcome, Batch 2-3 conditional sequencing, May 25 decision gate checklist with go/no-go criteria)
+**Why now**: Wave 1 monitoring runs 72 hours (May 18 10:30 - May 21 10:30 UTC). Final synthesis must be ready before May 21 closing so that user can execute decision gate May 21 evening → Phase 2 roadmap finalized May 22 → implementation begins May 24 or June 1 depending on outcome.
+**Blocker**: None (synthesis framework, independent of Wave 1 signals)
+**Next Step**: Orchestrator produces synthesis framework May 18 afternoon → user monitors May 18-21 using WAVE_1_DAILY_MONITORING_TEMPLATE.md → orchestrator aggregates signals May 21 20:00 UTC → user executes decision gate May 21 evening using synthesis framework → Phase 2 pathway determined May 22
+
+---
+
+### ⏳ Item 62: Resistance-Research Phase 2 Research Production Infrastructure (Domains 56-59) Pre-Staging
+**Status**: QUEUED (Session 1237, May 18 2026, 10:42 UTC)
+**Impact**: HIGH — Phase 2 production timeline (June 1-August 15) requires pre-staged research infrastructure. If Wave 1 outcome is STRONG or MODERATE, research production begins immediately. Pre-staging now eliminates June 1 friction.
+**Context**: Phase 2 includes 4 domains: Domain 56 (Civil Service Politicization, COMPLETE), Domain 57 (Multilateral Withdrawal, production-ready outline), Domain 58 (Tribal Sovereignty, COMPLETE), Domain 59 (Economic Precarity, outline ready). Domains 56+58 are complete; Domains 57+59 need research production infrastructure.
+**Goal**: Create domain-specific research production templates:
+1. **Domain 57 production scaffold** (Multilateral Withdrawal, 6,000-7,000 words, 40-50 sources): Section outlines, key research areas (NATO withdrawal fiscal implications, Taiwan strategic ambiguity monetization, Cuba-Venezuela law enforcement pivot), expert contact groups (Brookings international security, Cato foreign policy, CSIS), source hunting checklist (Congressional Research Service reports, State Dept briefings, academic foreign policy journals), expected completion timeline (7-10 days), quality checkpoints
+2. **Domain 59 production scaffold** (Economic Precarity, 6,000-7,000 words, 40-50 sources): Section outlines (household debt, rent instability, wage stagnation + democratic participation), expert contacts (Demos, Economic Policy Institute, Opportunity Institute), source checklist (Urban Institute housing research, BLS wage data, PNAS precarity-turnout studies), completion timeline (8-10 days), quality checkpoints
+3. **Research workflow standardization**: Reusable template for all Phase 2 research (source tracking sheet, citation format, expert interview protocol if needed, bias checking, 3-reader review process)
+4. **Cross-domain bridge documentation**: How do Domains 57+59 connect to existing Domains 1-40? Which existing domains should be updated to incorporate Phase 2 findings?
+5. **Phase 2 production calendar**: Week-by-week timeline (June 1-15: Domains 56-57, June 16-30: Domain 59, July 1-15: Domain 60/contingency), milestone checkpoints, peer review pairings (which existing domain researchers review new work)
+**Feasibility**: HIGH — frameworks exist, mostly customization + templating
+**Effort estimate**: 2 hours
+**Deliverable**: `projects/resistance-research/PHASE_2_PRODUCTION_INFRASTRUCTURE.md` (Domain 57+59 production scaffolds with section outlines, expert contact groups, source hunting checklists, research workflow templates, cross-domain bridge documentation, Phase 2 production calendar with milestones and peer review pairings)
+**Why now**: If Wave 1 outcome is STRONG/MODERATE, user makes Phase 2 path decision May 21-22. Phase 2 research begins June 1. Infrastructure must be ready by May 25 so that orchestrator can brief user on June 1 readiness during May 25-28 period.
+**Blocker**: Depends on Wave 1 outcome decision (Item 61); if WEAK outcome, Phase 2 timeline shifts and infrastructure timing changes
+**Next Step**: Orchestrator completes Item 61 synthesis framework → user makes May 21 Phase 2 path decision → if STRONG/MODERATE, orchestrator immediately produces Item 62 infrastructure (May 22) → user reviews May 23 morning (30 min) → June 1 research production ready with zero friction
+
+---
+
+### ⏳ Item 63: Cross-Project Interdependency Risk Assessment (May 19–31 Coordination)
+**Status**: QUEUED (Session 1237, May 18 2026, 10:42 UTC)
+**Impact**: MEDIUM-HIGH — Five major events converge May 18–31: Wave 1 distribution (May 18, COMPLETE), stockbot checkpoint (May 19), Wave 1 monitoring (May 18-21), Seedwarden Track B gates (May 15-28), mfg-farm test print (user action pending). Potential coordination failures: (1) test print approval triggers Etsy launch during Wave 1 monitoring → split attention; (2) checkpoint FAR-MISS outcome triggers emergency stockbot work during Phase 2 decision gate; (3) Seedwarden Gate 2 (May 19-24) requires user time during checkpoint execution. Pre-identifying these risks now enables proactive mitigation.
+**Context**: Projects have independent timelines but share single user decision-maker and limited autonomous capacity. Overlapping windows create decision conflicts and resource contention.
+**Goal**: Map interdependencies and pre-stage contingency plans:
+1. **Timeline conflict audit**: Identify all hard constraints (checkpoint May 19 20:00 UTC, Seedwarden gates May 15-28, Wave 1 monitoring May 18-21, test print TBD). Which conflict? (e.g., checkpoint execution = 2 hours, Seedwarden Gate 2 = 25 min, both May 19; sequential window = 2.5 hours OK, parallel = impossible).
+2. **Resource allocation scenarios**: If test print approved May 19-20, does 3-hour Etsy launch day (May 20) interfere with post-checkpoint planning (May 20 afternoon)? What's the optimal sequencing (checkpoint 20:00 UTC May 19 → post-checkpoint planning May 20 06:00-12:00 UTC → Etsy launch May 20 14:00-17:00 UTC)?
+3. **Contingency decision trees**: (a) If checkpoint FAR-MISS C2 (worst case), what's emergency stockbot work scope May 20-21? Does it conflict with Phase 2 decision gate (May 21-22)? (b) If test print delayed to May 25+, does Etsy launch shift? How does this affect Seedwarden May 30 launch timing?
+4. **Communication protocol**: Which decisions must be made together (Wave 1 outcome + Phase 2 path), which can be made sequentially (test print → Etsy launch → Phase 2 research)?
+5. **Contingency contact escalation**: If two major events require user decision simultaneously, who gets priority (chronological order, business impact, reversibility)?
+**Feasibility**: HIGH — mostly analysis + scenario mapping
+**Effort estimate**: 1.5–2 hours
+**Deliverable**: `projects/CROSS_PROJECT_INTERDEPENDENCY_RISK_ASSESSMENT.md` (timeline conflict matrix with hard constraints, resource allocation scenarios with optimal sequencing, contingency decision trees for FAR-MISS/test-print-delay/dual-decision-gate scenarios, communication protocol for decision sequencing, escalation contact sheet with priorities)
+**Why now**: May 19-31 is peak contention period. User should have coordination playbook now so that simultaneous events don't cascade into unplanned delays or split decisions. Framework enables proactive scheduling (e.g., schedule test print for June 2 instead of May 20 if checkpoint outcome likely FAR-MISS).
+**Blocker**: None (risk analysis work, independent of all projects)
+**Next Step**: Orchestrator produces risk assessment May 18 afternoon → user reviews May 19 morning (20 min) → uses framework to schedule May 19-31 decisions with full visibility into dependencies → executes events in coordinated sequence with contingency triggers pre-decided
