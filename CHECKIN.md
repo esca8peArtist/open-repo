@@ -1,3 +1,33 @@
+## Session 1255 (Orchestrator) — May 18, 2026 15:05–15:25 UTC — Orientation Complete, Idle-But-Ready
+
+**Status**: ✅ **ALL SYSTEMS IDLE, READY FOR MAY 19-21 GATES** — Comprehensive orientation confirms Sessions 1254 work validated. No autonomous work available. All 10 projects assessed: 2 user actions blocking (cybersecurity-hardening, mfg-farm), 1 user decision blocking (seedwarden Gate 1 TODAY), 1 awaiting scheduled checkpoint (stockbot May 19 20:00 UTC), 1 autonomously monitoring (resistance-research May 18-21), 4 awaiting user direction or complete. Exploration Queue items 61-66 date-gated (May 20-21).
+
+### User Actions Needed (Priority Order)
+
+1. **TODAY (May 18, before 14:00 UTC)**: Execute Seedwarden Gate 1 (create social accounts)
+   - Guide: `projects/seedwarden/TRACK_B_GATE_1_REALTIME_SUPPORT.md` — comprehensive walkthrough
+
+2. **May 19, 19:00 UTC (1 hour pre-checkpoint)**: Pre-flight checkpoint checklist (5 min)
+   - Guide: `projects/stockbot/MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md` (Section 2, Pre-flight: 5 specific validation steps)
+
+3. **May 19, 20:00 UTC (checkpoint execution)**: Execute checkpoint query
+   - Guide: `projects/stockbot/MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md` (Section 3, Execute: run checkpoint_query command, note outcome)
+
+4. **May 20-21**: Monitor Wave 1 responses (passive, no action)
+   - Guide: `projects/resistance-research/MAY_21_EARLY_SIGNAL_CHECKLIST.md`
+
+5. **May 21, 10:30 UTC**: Provide Wave 1 signal data to orchestrator
+   - Guide: `projects/resistance-research/WAVE_1_SYNTHESIS_FRAMEWORK.md` (Section 1, collect metrics and provide to orchestrator)
+
+### Next Autonomous Work Scheduled
+
+- **May 21, 10:30 UTC** (Item 61): Wave 1 72-Hour Synthesis & Phase 2 Decision Framework activation
+- **May 21-22, 10:30 UTC+** (Item 62, conditional): Phase 2 Research Production Infrastructure
+- **May 20-21** (Item 65, conditional): Resistance-Research May 21-31 Batch 2-3 Coordination Framework
+- **May 20** (Item 66, conditional): Stockbot FAR-MISS-C2 Recovery Playbook
+
+---
+
 ## Session 1254 (Orchestrator) — May 18, 2026 14:52–15:22 UTC — Final Pre-Checkpoint Validation + Wave 1 Synthesis Staging
 
 **Status**: ✅ **READY FOR MAY 19-21 EVENT GATES** — Executed parallel agents for final checkpoint verification and Wave 1 synthesis infrastructure staging. All playbooks verified executable (Jetson health ALL GREEN, infrastructure confidence 95%+). Corrected May 21 synthesis timing: classification at 10:45 UTC, user confirmation gate at 14:00 UTC. All systems positioned and ready.
