@@ -428,9 +428,77 @@ with CC-BY photos should not wait for the proprietary specimen photos to reach b
 
 ---
 
-## Section 4: Risk Scoring Matrix
+## Section 4: Critical-Path Compression Matrix
 
-### 4.1 Supplier × Impact Table
+### 4.1 Guide-Level Compression Analysis
+
+The 22-day production window (May 9–30) allocated 15 days for procurement and photography and 5 days (May 26–30) for Canva guide production. Under compression, some guides can complete in 10 days end-to-end and others cannot. The matrix below scores each guide on its photo sourcing independence, Canva production hours, and minimum viable start date.
+
+| Guide | Canva Hours (standard) | Canva Hours (compressed) | Photo Sourcing Independence | Earliest Start (photos confirmed) | Compressible to 10 days? | Fast-Track or Full-Timeline |
+|-------|----------------------|------------------------|----------------------------|----------------------------------|--------------------------|----------------------------|
+| American Ginseng | 5–6 hrs | 4–5 hrs | High — Mountain Rose Herbs dried root + iNaturalist | May 16 (root arrives May 15) | Yes | Fast-track |
+| Goldenseal | 3–4 hrs | 2.5–3 hrs | High — Mountain Rose Herbs dried root + iNaturalist | May 16 (root arrives May 15) | Yes | Fast-track |
+| Black Cohosh | 3–4 hrs | 2.5–3 hrs | Very high — iNaturalist CC-BY only; no physical prop required | Any day (photos available now) | Yes | Fast-track |
+| Bloodroot | 2–3 hrs | 2–2.5 hrs | Medium — rhizome 30-min oxidation window requires scheduling | May 21 (if local sourced) | Partial — Canva fast; rhizome timing constrained | Full-timeline preferred |
+| Ramps | 2–3 hrs | 2–2.5 hrs | Medium — fresh leaves must be purchased within 48 hrs of shoot | May 19 (farmers market leaves) | Partial — fast Canva; leaf timing constrains sequence | Full-timeline preferred |
+| Wild Bergamot (bonus) | 2–3 hrs | 1.5–2 hrs | Medium — live plant must acclimatize 48 hrs after arrival | May 21 (if ordered May 17–18) | No — post-core guide; June 6 soft-launch | Full-timeline |
+
+**Time savings in compressed mode (Ginseng + Goldenseal + Black Cohosh as a 3-guide fast-track)**:
+
+- Standard 3-guide production: 11–14 hours over 3 days (May 26–28)
+- Compressed 3-guide production: 9–11.5 hours achievable in 2 intensive days (May 26–27)
+- Time saved: 2–4.5 hours
+- Buffer created: May 28 morning free for QA, Etsy listing cleanup, or Bloodroot start
+
+**What compression requires**:
+1. Canva Brand Kit fully set up before Day 1 (no time spent on hex entry during production)
+2. All photos confirmed and filed to `assets/endangered-species-photos/` before each guide's Canva session
+3. Ginseng master template completed before starting Goldenseal — no parallel production; each guide depends on the prior template
+4. No new photo research during Canva sessions — research and sourcing must be complete before each session starts
+
+---
+
+### 4.2 Template Reuse vs. Custom-Per-Guide Design Trade-off
+
+**Template reuse path (recommended)**:
+- Day 1 investment (Ginseng master): 5–6 hours to build typography, layout grid, color palette, section headers, conservation badge, attribution footer, and cover
+- Each subsequent guide: duplicate Canva file, replace text and photos, adjust species-specific callout boxes. No design decisions required; execution only.
+- Per-guide time using template: 2.5–4 hours
+- Total 5-guide time with template reuse: 15–20 hours
+
+**Custom-per-guide design path (not recommended)**:
+- Each guide requires new layout decisions, custom color adjustments, unique section arrangement
+- Per-guide time: 6–9 hours (requires design thinking, not just execution)
+- Total 5-guide time custom: 30–45 hours
+- Not feasible in a 4-day Canva window
+
+**Decision rule**: Use template reuse exclusively. The Ginseng master template investment on Day 1 is the only design work in the entire guide series. All four subsequent guides are execution tasks, not design tasks. This distinction is what makes the 5-day timeline achievable.
+
+---
+
+### 4.3 Vendor Research Update (May 18, 2026)
+
+Current shipping data confirmed from vendor research today:
+
+| Vendor | Product Category | Processing Time | Shipping Window | Cutoff for Same-Day | Notes |
+|--------|----------------|----------------|----------------|--------------------|----|
+| Mountain Rose Herbs | Dried roots (ginseng, goldenseal) | 1–2 business days | 2–10 days USPS (2–4 days Priority to East Coast) | Not publicly stated; order by noon recommended | Priority shipping available at checkout; East Coast delivery 2–4 days via Priority |
+| Starwest Botanicals | Dried roots, bulk herbs | Same-day if ordered before 11am PT | 1–3 business days (under 25 units) | 11am PT | Direct backup to Mountain Rose Herbs; Sacramento, CA warehouse |
+| Strictly Medicinal Seeds | Live plants, seeds | 2–3 business days processing | Ships March 15 – July 25 (currently active) | Not stated | Plant season active through July 25; Black Cohosh plants in stock |
+| Prairie Moon Nursery | Bare root plants, potted plants | Varies by weather + stock | Bare roots: April through late May; Potted: April through June | N/A — weather-dependent | CRITICAL: bare root shipping ends late May. May 18 orders are at the trailing edge of the window. Confirm stock by phone (866-417-8156) before ordering |
+| Local retail (Whole Foods, herb shops) | Dried roots | Same day | Same day | N/A | Goldenseal, ginseng commonly stocked |
+| Amazon Prime (Frontier Co-op, Starwest) | Dried roots | Same day | 1–2 days | Order before noon for next-day | 15–30% cost premium over direct; acceptable for emergency |
+| Etsy native plant sellers | Live plants | Seller-dependent (2–5 days after order) | Varies by seller | N/A | Message seller before ordering to confirm availability and ship timeline |
+
+**Prairie Moon timing alert**: Their bare root shipping window runs "April through late May." A May 18 order places the Ramps bulblets at the very end of their spring shipping window. If Prairie Moon has not already shipped the order, call today (866-417-8156) to confirm whether they can still fulfill. If they cannot, activate the fresh-leaves-from-farmers-market path immediately — this is the preferred prop anyway and requires no mail-order.
+
+**Starwest Botanicals as Mountain Rose Herbs backup**: Orders placed before 11am PT (2pm ET) ship same day for under-25-unit orders. This makes Starwest the fastest-available dried root backup if Mountain Rose Herbs has a processing delay. Ginseng and goldenseal dried roots are both in-scope for Starwest's standard catalog.
+
+---
+
+## Section 5: Risk Scoring Matrix
+
+### 5.1 Supplier × Impact Table
 
 | Supplier | Delay Type | Launch Impact | Recoverable? | Activation Trigger |
 |----------|-----------|---------------|--------------|-------------------|
@@ -443,7 +511,7 @@ with CC-BY photos should not wait for the proprietary specimen photos to reach b
 | Location access (ABG or farm) denied | Permit and referral both fail | No habitat context field shots | Yes — iNaturalist CC-BY covers this entirely | No confirmation by May 18 |
 | Lifestyle photo shoot missed entirely | No shoot before May 28 | No proprietary listing enhancement photos | Yes — existing mockups fill gap | No shoot completed by May 23 |
 
-### 4.2 Severity Assessment: Which Delays Kill May 30 vs. Which Are Recoverable
+### 5.2 Severity Assessment: Which Delays Kill May 30 vs. Which Are Recoverable
 
 **Delays that do NOT kill May 30 launch**:
 
@@ -483,9 +551,9 @@ Do not wait until May 29 to decide. Early activation gives 12 days for a high-qu
 
 ---
 
-## Section 5: Activation Checklist
+## Section 6: Activation Checklist
 
-### 5.1 Under-15-Minute Decision Protocol
+### 6.1 Under-15-Minute Decision Protocol
 
 When a supply chain event is detected, run through this checklist in sequence. Target: decision
 confirmed and contingency activated within 15 minutes of detection.
@@ -516,7 +584,7 @@ Entry format:
 
 ---
 
-### 5.2 Vendor Communication Templates
+### 6.2 Vendor Communication Templates
 
 **If shipping is overdue (no tracking confirmation within 48 hours of order)**:
 
@@ -566,7 +634,7 @@ Entry format:
 
 ---
 
-### 5.3 Re-baseline Timeline (May 30 → June X with Decision Rationale)
+### 6.3 Re-baseline Timeline (May 30 → June X with Decision Rationale)
 
 When a scenario requires a re-baseline, document the decision here:
 
@@ -580,7 +648,7 @@ When a scenario requires a re-baseline, document the decision here:
 
 ---
 
-## Section 6: Phase 2 Measurement Gates
+## Section 7: Phase 2 Measurement Gates
 
 ### Gate 1 — May 25: All Suppliers Confirmed or Contingencies Activated?
 
@@ -683,7 +751,7 @@ from `PHASE_2_GO_NO_GO_DASHBOARD.md` Contingency Tree B (15-minute setup).
 
 ---
 
-## Section 7: Summary Reference
+## Section 8: Summary Reference
 
 **Highest-probability risks**: Strictly Medicinal / Prairie Moon delivery in the May 20–27
 window (8–14 day lead times from a mid-May order); lifestyle photo shoot slippage from the
