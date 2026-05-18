@@ -1,3 +1,65 @@
+## Since Last Check-in (Session 1263, 19:00–19:35 UTC)
+
+**Session Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE — ALL PRE-CHECKPOINT & POST-WAVE-1 FRAMEWORKS READY**
+
+**Current Time**: May 18, 2026, 19:00–19:35 UTC
+
+### Work Completed (May 18 19:00–19:35 UTC)
+
+**Exploration Queue Execution** (3 items, 4 commits):
+
+1. **stockbot: Pre-Checkpoint Jetson Infrastructure Validation** ✅
+   - Verified infrastructure (commit 9c2df52) — GO verdict with 87% confidence
+   - Hardware healthy, no thermal/memory/latency risks
+   - Two minor issues (MSFT options ghost position, LightGBM feature mismatch) — neither blocking checkpoint
+   - Ready for May 19 20:00 UTC execution
+
+2. **resistance-research: Phase 2 Wave 1 Post-Execution Analysis & Learning Framework** ✅
+   - Created `PHASE_2_WAVE_1_ANALYSIS_FRAMEWORK.md` (2,800+ words)
+   - Real-time metrics templates + daily/weekly checkpoints + success thresholds
+   - Triggered by Wave 1 completion (May 18 10:00 UTC)
+   - Next gate: May 21 10:30 UTC synthesis
+
+3. **stockbot: Post-Checkpoint Outcome Decision Framework** ✅
+   - Created `post-checkpoint-outcome-framework.md` (5,584 words)
+   - Four scenario briefs (PASS / NEAR-MISS / FAR-MISS-C1 / FAR-MISS-C2)
+   - Decision matrix + execution checklists + capital allocation tables
+   - Ready for May 19 20:00 UTC checkpoint outcome routing
+   - Commit: 76c95ec
+
+**All pre-checkpoint and post-Wave-1 frameworks now production-ready.**
+
+### Projects Status (May 18 19:35 UTC)
+
+1. **stockbot** (Priority 1): ✅ ALL PRE-CHECKPOINT WORK COMPLETE
+   - Jetson infrastructure: PASS (87% confidence)
+   - Outcome decision framework: READY
+   - Checkpoint in 24.5 hours (May 19 20:00 UTC)
+   
+2. **resistance-research** (Priority 2): ✅ WAVE 1 COMPLETE, PHASE 2 FRAMEWORKS READY
+   - Wave 1 execution: COMPLETE (5 Batch 1 emails by 10:00 UTC)
+   - Post-Wave-1 analysis framework: READY
+   - Phase 2 outcome roadmap: READY
+   - Next: Wave 1 synthesis May 21 10:30 UTC, phase decision May 21 14:00 UTC
+
+3. **All other projects**: Complete, paused, or awaiting user action / event gates
+
+### Event Timeline (Next 72 Hours)
+
+- **May 19 19:00 UTC**: Pre-flight checkpoint checklist (5 min)
+- **May 19 20:00 UTC**: Checkpoint execution → outcome framework routes to decision path
+- **May 21 10:30 UTC**: Wave 1 synthesis + path-strength classification
+- **May 21 14:00 UTC**: User phase 2 path decision (A / A+37 / B)
+
+### Needs Your Input
+
+1. **May 19 19:00 UTC (1 hour before checkpoint)**: Pre-flight 5-min checklist ready — `projects/stockbot/MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md`
+2. **May 19 20:00 UTC**: Execute checkpoint query — routing logic ready in `post-checkpoint-outcome-framework.md`
+3. **May 21 10:30 UTC**: Provide Wave 1 signal data (or wait for orchestrator synthesis at 10:30 UTC if auto-tracked)
+4. **May 21 14:00 UTC**: Select Phase 2 path (A / A+37 / B) based on Wave 1 outcome
+
+---
+
 ## History
 
 ### Session 1263 (May 18, 18:47–18:52 UTC)
