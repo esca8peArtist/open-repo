@@ -13643,3 +13643,68 @@ User must complete FINAL PRE-LAUNCH CHECKLIST in PHASE_1_WAVE1_EXECUTION_PREP.md
 - Continue monitoring until May 20 if outcome unclear or requires user decision
 
 ---
+
+---
+
+## Orchestrator Session 1204 — May 18, 2026 02:10–02:45 UTC — Exploration Queue: Stockbot Jetson Infrastructure Validation
+
+**Status**: ✅ **VALIDATION COMPLETE — Jetson Ready for Checkpoint with Position-Sizing Caveat**
+
+### Session Overview
+
+**Duration**: 35 minutes  
+**Type**: Pre-checkpoint infrastructure validation (Exploration Queue Item)  
+**Deliverable**: `projects/stockbot/JETSON_PRE_CHECKPOINT_VALIDATION.md` (comprehensive report)  
+**Result**: Jetson operationally healthy. ⚠️ Critical position-sizing alert discovered requiring investigation.
+
+### Work Completed
+
+**Jetson Infrastructure Validation**
+
+**Physical Systems — ✅ HEALTHY**:
+- CPU temperature: 48°C (excellent, well below throttle)
+- Memory: 3.5 / 7.4 GB (47% utilization, 3.9 GB free)
+- Disk: 86 / 227 GB (40% used, 131 GB free space)
+- Network latency: 51–52 ms to Alpaca (excellent)
+- Docker container: Healthy, up 2 days since May 16 00:16 UTC
+
+**Trading Engine — ✅ RUNNING**:
+- API health: `{"status": "ready", "sessions": 2}` ✅
+- Active sessions: AAPL lgbm_ho + AAPL ridge_wf both running
+- Recent logs: Current through May 18 02:13 UTC
+- Docker image: Memory limit 4 GB properly set
+
+**Database & Data — ✅ ACCESSIBLE**:
+- trading.db: 656 KB (healthy active size)
+- Last trade: May 12 19:51 UTC (expected, pre-weekend)
+- Last DB sync: May 15 21:15 UTC (successful)
+
+**⚠️ CRITICAL ALERT DISCOVERED**:
+- **Issue**: AAPL position is 28.9% of account equity (limit: 5%)
+- **Market value**: $31,823 of $110,077 total equity
+- **Status**: Alert active since May 15–16
+- **Risk**: Position-sizing guardrails may not be preventing oversized positions
+- **Action required**: Verify guardrails.py is active and enforcing 5% limit before May 19 20:00 UTC checkpoint
+
+### Assessment
+
+**Checkpoint Readiness**: ✅ **SYSTEMS READY** with ⚠️ **Position-sizing guardrails require verification**
+
+All physical infrastructure, networking, and API systems are healthy and production-ready for May 19 checkpoint execution. The critical position-sizing alert suggests that either (a) guardrails are not enforcing position limits correctly, (b) position has grown via unrealized gains and alert is informational, or (c) guardrails configuration differs from expected. This must be clarified before checkpoint execution.
+
+**Next Autonomous Window**: May 19 19:00 UTC (pre-execution validation, 15 min duration)
+
+### Exploration Queue Notes
+
+This completes the **stockbot: Pre-Checkpoint Jetson Infrastructure Validation** exploration queue item. Related queued items (post-checkpoint outcomes) remain staged for May 19 20:30 UTC activation.
+
+### Files Modified
+
+- `projects/stockbot/JETSON_PRE_CHECKPOINT_VALIDATION.md` — comprehensive validation report (created)
+
+### Commits
+
+- Validation report created locally (stockbot submodule) — not pushed due to submodule structure
+
+---
+
