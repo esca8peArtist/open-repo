@@ -1,8 +1,80 @@
-## Session 1219 (Orchestrator) — May 18, 2026 06:20–ongoing UTC — Wave 1 Preflight Complete + Ready for Batch 1 Sends
+---
 
-**Status**: 🟢 **WAVE 1 PREFLIGHT GO FOR SEND** — Early orchestrator preflight execution complete (06:20-06:35 UTC). All 5 Gists live (HTTP 200 verified), all 5 Batch 1 contacts active (verified May 15-17), email templates production-ready. Ready for user setup actions 07:00-08:00 UTC, Batch 1 sends 08:00-10:00 UTC.
+## Needs Your Input (May 18, 06:29 UTC)
 
-**Session 1219 Work (06:20–06:35 UTC)**:
+### URGENT — Wave 1 User Setup Actions (DEADLINE PASSED: 06:00 UTC)
+**Time window: 07:00–08:00 UTC (31 min remaining)**
+
+1. **Gist Baseline View Counts Recording** — Visit each Gist URL and record current view count:
+   - Main Proposal Gist: [URL] → Current views: ______
+   - Domain 37 Gist: [URL] → Current views: ______
+   - Domain 42 Gist: [URL] → Current views: ______
+   - Litigation Tracker Gist: [URL] → Current views: ______
+   - Contacts Batch 1 Gist: [URL] → Current views: ______
+   - (Record in a text file or WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv)
+
+2. **Google Sheets Tracking Setup** — Create a new Google Sheet (or use existing tracking sheet) with columns: Contact Name | Email | Send Time | Open Time | First Click | Gist View Time | Follow-up Action | Notes. Baseline for 5 Batch 1 contacts prepared.
+
+3. **Calendar Reminders** — Set calendar alerts for:
+   - 08:00 UTC: First email send (Weiser)
+   - 08:30 UTC: Second email (Elias)
+   - 09:00 UTC: Third email (Goodman)
+   - 09:30 UTC: Fourth email (Chenoweth)
+   - 10:00 UTC: Fifth email (Bassin)
+   - 10:30 UTC: Begin engagement monitoring window (Gist view deltas, email opens)
+   - 20:00 UTC: Day 1 Wave 1 closing (compile metrics, update WAVE_1_MONITORING_DASHBOARD.md)
+
+4. **Google Alerts Configuration** — Create Google Alerts for key terms (e.g., "civil service reform", "Department of Justice", "democratic governance", "voting rights") to monitor media coverage during Wave 1. Optional but recommended.
+
+5. **Test Email Send** — Send yourself a test message using the Wave 1 Batch 1 email template to verify:
+   - Email delivers (no bounces)
+   - Gist links are clickable and live
+   - Formatting renders correctly in your email client
+
+6. **Language Confirmation** — Verify Callais language preference (if applicable for Phase 2 distribution)
+
+---
+
+### Domain 56 (Civil Service) Wave 1 Companion Distribution — READY FOR ACTIVATION
+**Estimated effort: 25 min (Gist creation 10 min + template URL fill-in 10 min + send 5 min)**
+
+**Current status**: All distribution infrastructure created and staged in `projects/resistance-research/execution/`:
+- `domain-56-gist-creation-steps.md` — Step-by-step Gist creation guide
+- `domain-56-email-template.md` — 4 templates ready (replace [DOMAIN_56_GIST_URL] with actual URL)
+- `domain-56-contact-list.md` — 11 contacts prioritized across 3 tiers
+- `domain-56-social-media.md` — 5 social media post angles
+
+**Recommended timing**: Create Gist immediately after Wave 1 core domain Gist creation. Distribute to Tier 1 (5 contacts) before May 20 to maximize Partnership for Public Service briefing hook (May 19 deadline).
+
+**Next action**: 
+1. Create GitHub Gist with domain-56-civil-service-politicization-governance.md content (follow steps in domain-56-gist-creation-steps.md)
+2. Copy Gist URL and replace `[DOMAIN_56_GIST_URL]` placeholder in all email templates and social posts (find-and-replace, ~16 instances)
+3. Send Tier 1 emails to 5 contacts (May 18-19) — can be batched with Wave 1 Batch 1 sends or staggered after
+
+---
+
+## Session 1219 (Orchestrator) — May 18, 2026 06:20–06:35+ UTC — Wave 1 Preflight Complete + Domain 56 Staging + Pre-flight Job Scheduled
+
+**Status**: 🟢 **WAVE 1 PREFLIGHT GO FOR SEND + DOMAIN 56 WAVE 1 COMPANION STAGED** — Early orchestrator preflight execution complete (06:20-06:35 UTC). All 5 core Gists live (HTTP 200 verified), all 5 Batch 1 contacts active (verified May 15-17), email templates production-ready. Domain 56 (Civil Service) distribution infrastructure fully staged (5 distribution files, ready for Gist creation + URL fill-in). CronCreate pre-flight job scheduled for 06:57 UTC (Wave 1 validation before 08:00 send window). Ready for user setup actions 07:00-08:00 UTC, Batch 1 sends 08:00-10:00 UTC.
+
+**Session 1219 Work (06:20–06:29+ UTC)**:
+
+**Continuation 06:29 UTC — Domain 56 Distribution Staging Complete**:
+1. ✅ **Domain 56 (Civil Service Politicization) Wave 1 Companion Distribution — FULLY STAGED**
+   - Verified domain-56-civil-service-politicization-governance.md is production-ready (6,800 words, 47 citations)
+   - Created 5 distribution infrastructure files (agent: resistance-research):
+     - `domain-56-gist-creation-steps.md` — Gist setup procedure (10 min)
+     - `domain-56-email-template.md` — 4 category-specific templates for: civil service reform orgs, federal unions, HR experts, federal watchdogs
+     - `domain-56-contact-list.md` — 11 contacts across 3 tiers (May 18-19, May 20-24, May 25-31)
+     - `domain-56-social-media.md` — 5 post angles with tweet + long-form versions
+     - `domain-56-wave-1-readiness.md` — staging checklist with Gist URL placeholder, fill-in guide, timeline table
+   - All files committed to master
+2. ✅ **CronCreate Job Scheduled** (Job ID: 50ed3428):
+   - Fire time: 06:57 UTC (28 min from now, 3 min before 07:00 pre-flight window)
+   - Task: Wave 1 pre-flight validation (Gist HTTP 200 verification, email template scan, spreadsheet setup check)
+   - Outcome: Log results; if issues found, flag in CHECKIN.md immediately
+
+**Original Session 1219 Work (06:20–06:35 UTC)**:
 1. ✅ **Phase 1 Gist Accessibility Verification**: All 5 Gists live (HTTP 200)
    - Main proposal: ✅ 200
    - Executive summary: ✅ 200
