@@ -1,55 +1,75 @@
-## Since Last Check-in (Session 1289, 23:04–ongoing UTC May 18)
+## Since Last Check-in (Session 1290, 23:14–ongoing UTC May 18)
 
-**Session Status**: ✅ **CHECKPOINT READINESS VALIDATION COMPLETE** — Two parallel subagents executed final pre-event validation: (1) Stockbot May 19 20:00 UTC checkpoint infrastructure confirmed operational (thermal status green, engine healthy, auth valid, no blockers); (2) Resistance-research post-Wave-1 monitoring infrastructure verified (all files present, baseline documented, synthesis framework ready). Both projects positioned for critical events May 19-21.
+**Session Status**: ✅ **PRE-CHECKPOINT INFRASTRUCTURE COMPLETE + URGENT DOMAIN 42 FLAG** — Two parallel subagents executed final pre-event validation: (1) **Stockbot** May 19 20:00 UTC checkpoint infrastructure READY (thermal monitoring script created, Discord notifications wired, execution runbook complete, Gate 2 roadmap staged); (2) **Resistance-research** post-Wave-1 monitoring infrastructure verified and enhanced (synthesis checklist + phase-2-path-activation summary created, May 28 DEA deadline flagged as URGENT). Projects positioned for critical events May 19-21, but **ACTION REQUIRED TODAY**: Verify Domain 42 Category A emails (7 organizations) sent or schedule compressed May 21 execution.
 
 **Current Time**: May 18, 2026, 23:15 UTC (20 hours 45 minutes until stockbot checkpoint execution)
 
 ### Actions Taken This Session
 
-1. **Stockbot May 19 20:00 UTC Checkpoint Readiness Validation** ✅
-   - Two-agent parallel execution: pre-flight checklist
-   - **Thermal status**: Idle 48-49°C, well below 87.8°C risk threshold. Checkpoint query (<60s, CPU-light) poses negligible risk.
-   - **Engine status**: 2 sessions running, API responding, Alpaca auth valid
-   - **Execution plan**: Ready for 20:00 UTC May 19 autonomous execution
-   - **Risk mitigation**: All identified flags (session ID mismatch, curl routing timeout, vcgencmd unavailability) are non-blocking. Post-checkpoint mitigation plan prepared.
-   - **Checkpoint command**: `cd /home/awank/dev/SuperClaude_Framework && uv run python projects/stockbot/scripts/may19_checkpoint_analysis.py`
+1. **Stockbot May 19 20:00 UTC Checkpoint Infrastructure COMPLETE** ✅
+   - **Thermal monitoring wrapper created**: `run_checkpoint_with_thermal_monitor.sh` — SSH to Jetson, block at 85°C, abort at 87°C, log to `logs/thermal_checkpoint_may19.log`
+   - **Discord notifications wired**: `send_checkpoint_notification()` in `src/notifications/discord.py` — color-coded embed (green/orange/red by scenario), fires after classification. 20/20 tests passing.
+   - **Consolidated execution runbook created**: `MAY_19_CHECKPOINT_RUNBOOK.md` — P1–P5 pre-flight checks, execution command, scenario decision routing, WORKLOG templates for all 3 outcomes (PASS/STILL_MISS_B2/FAR_MISS)
+   - **Gate 2 post-checkpoint roadmap created**: Timeline from May 19–June 15 for PASS path (AAPL capital recycling, AMZN/JPM training and deployment, covered-call OOS backtest, live trading gates)
+   - **Status**: May 19 20:00 UTC checkpoint execution ready. All 104 checkpoint tests passing.
+   - **Checkpoint command**: `cd /home/awank/dev/SuperClaude_Framework && bash projects/stockbot/scripts/run_checkpoint_with_thermal_monitor.sh`
 
-2. **Resistance-Research Post-Wave-1 Monitoring Status Checkpoint** ✅
-   - **Infrastructure verified**: All three monitoring files present and correctly formatted
-   - **Batch 1 contact status**: 5 contacts showing silence as expected. No bounces (positive). Elias 48h window opens May 20 08:00 UTC (case-specific reply classification trigger).
-   - **May 21 synthesis framework**: Fully pre-built, ready for 19:00 UTC execution with <45 min runtime
-   - **Medium-priority action**: Check Gist view counts at May 19 ~14:00 UTC (incognito) — only delivery confirmation proxy without email replies
-   - **Status**: All systems green for May 21 synthesis execution
+2. **Resistance-Research Post-Wave-1 Monitoring Infrastructure Enhanced** ✅
+   - **Wave-1 signal log verified**: Baseline captured at May 18 22:53 UTC (0 responses, expected). May 19, 20, 21 sections pre-built. Daily snapshots structure ready for May 19–20 updates.
+   - **Synthesis framework scaffold verified**: All 5 parts complete and executable. May 21 19:00–20:00 UTC execution window clear. <45 min runtime.
+   - **NEW: May 21 synthesis execution checklist created**: Step-by-step action sequence for synthesis execution (signal classification → path decision → post-user-gate actions)
+   - **NEW: Phase 2 path activation summary created**: One-page lookup (STRONG/MODERATE/WEAK branches) with immediate actions, domain sequences, timeline for each path
+   - **NEW: May 28 DEA deadline tracking created**: Critical path for Domain 42 organizations to file participation notice before May 28 deadline
+   - **Status**: All systems green for May 21 19:00 UTC synthesis execution
 
-3. **May 17-18 Breaking Developments Integration** (from Session 1288)
-   - **Critical finding**: Domain 37 adjustment only — Wave 2 timing moves to mid-July to capture enacted status of One Big Beautiful Bill
-   - **Impact**: No Phase 2 research acceleration required; all other Phase 2 timelines unchanged
-   - **Status**: Committed to master; domains current through May 18
+3. **⚠️ URGENT: Domain 42 DEA Hearing Flag** — **ACTION REQUIRED TODAY**
+   - **Finding**: As of May 13, Domain 42 Category A organizations (DPA, MPP, NORML, LEAP, ACLU, Sentencing Project, SSDP — 7 organizations) had blank send dates. If NOT already sent, this is CRITICAL.
+   - **Timeline pressure**: May 28 DEA hearing deadline is 9 days away. Organizations need minimum 7 days to draft and file participation notice. **Last viable send day: May 21.**
+   - **What to do TODAY**:
+     1. Check if Domain 42 Category A emails were sent May 8–10 (per original plan) or if they remain unsent
+     2. If sent: All 7 organizations are on track (7+ days to deadline)
+     3. If NOT sent: Flag this for May 21 compressed execution (requires user approval + 2–3 hours to execute all three Category A/B/C wave sequences)
+   - **Contact confirmation**: 5 additional domain-expert contacts identified (Beletsky, Werb, Reddy, Caplan, DPA escalation). Category A researcher template emails ready.
+   - **Relevant files**: `phase-2-domain-42-comment-submission-outreach.md` (outreach plan), `DOMAIN_42_OUTREACH_URGENCY_STRATEGY.md` (tactical guide)
 
 ### Current Project State
 
-- **resistance-research**: Wave 1 execution COMPLETE (5 Batch 1 emails, May 18 08:00–10:00 UTC). POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window). Domains updated with breaking developments. Ready for May 20 signal reading + May 21 synthesis.
-- **stockbot**: Engine operational. Checkpoint infrastructure ready. May 19 20:00 UTC execution scheduled.
+- **stockbot**: Engine operational (2 sessions, AAPL 108 shares, +$3,187 unrealized). May 19 20:00 UTC checkpoint execution infrastructure READY (thermal monitor, Discord notifications, runbook, Gate 2 roadmap all complete).
+- **resistance-research**: Wave 1 execution COMPLETE (5 Batch 1 emails, May 18 08:00–10:00 UTC). POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window, baseline 0 responses at May 18 22:53 UTC — expected). Monitoring infrastructure verified. May 21 synthesis infrastructure enhanced and ready.
+- **resistance-research Domain 42**: ⚠️ **URGENT** — May 28 DEA deadline flagged. Status TBD: Verify Category A send status TODAY. If unsent, requires May 21 compressed execution.
+- **cybersecurity-hardening**: Phase 1 walkthrough paused at step 1.3 (VeraCrypt restart required). Awaiting user action.
+- **mfg-farm**: Ready to prototype. Test print awaiting user execution. All pre-print + post-print deliverables complete.
+- **seedwarden**: Track B May 30 launch. Gate 1 (account creation) user action required TODAY (infrastructure 100% ready, real-time support available).
 - **All other projects**: No changes this session; awaiting scheduled events or user actions.
+
+### Needs Your Input
+
+**🔴 URGENT TODAY (May 19): Domain 42 DEA Deadline Status**
+- **Question**: Were Domain 42 Category A emails sent on May 8–10, 2026 (as per original plan)? Or do they remain unsent?
+- **Why it matters**: May 28 DEA hearing deadline is 9 days away. Organizations need minimum 7 days to draft and file participation notice. If unsent, compressed May 21 execution is still viable but requires your approval.
+- **If already sent**: No action needed — organizations are on track.
+- **If NOT sent**: Approve compressed May 21 execution (May 21: all Category A/B/C waves = 2–3 hours effort) and we'll execute immediately.
 
 ### Key Decisions & Next Steps
 
 **May 19 (20 hours away)**:
-- ~14:00 UTC: **MANUAL ACTION**: Check Gist view counts incognito (resistance-research only delivery confirmation proxy)
-- 20:00 UTC: **AUTONOMOUS**: Stockbot checkpoint execution — `uv run python projects/stockbot/scripts/may19_checkpoint_analysis.py`
-- 20:15 UTC: **AUTONOMOUS**: Outcome classification (PASS/NEAR-MISS/FAR-MISS)
-- 20:30 UTC: **USER ACTION IF NEEDED**: Review post-checkpoint implementation roadmap (only if PASS outcome)
+- ~14:00 UTC: **MANUAL ACTION**: Check Gist view counts incognito (Wave 1 delivery confirmation proxy)
+- **BEFORE 20:00 UTC**: Answer urgent Domain 42 status question above
+- 20:00 UTC: **AUTONOMOUS**: Stockbot checkpoint execution with thermal monitor — `bash projects/stockbot/scripts/run_checkpoint_with_thermal_monitor.sh`
+- 20:15 UTC: **AUTONOMOUS**: Outcome classification (PASS/STILL_MISS_B2/FAR_MISS) + Discord notification
+- 20:30 UTC: **USER ACTION IF NEEDED**: Review Gate 2 post-checkpoint roadmap (if PASS outcome)
 
 **May 20 (morning)**:
-- Automatic monitoring continues — no specific action required unless responses arrive
+- Automatic Wave 1 monitoring continues — no specific action required unless early signals arrive (Elias 48h window threshold)
 
 **May 21**:
+- 14:00 UTC **BEFORE synthesis**: User gate to approve Phase 2 path (you decide STRONG/MODERATE/WEAK based on Wave 1 signals; orchestrator executes)
 - 19:00–20:00 UTC: **AUTONOMOUS**: Execute synthesis framework (signal classification + Phase 2 path decision)
   - Framework ready with 4 execution branches (STRONG/MODERATE/WEAK/TOO_EARLY)
-  - Execution time: ~30–45 minutes
-- 14:00 UTC **BEFORE synthesis**: User gate to pre-approve Phase 2 path activation (user decides STRONG/MODERATE/WEAK, orchestrator executes)
+  - Execution time: ~30–45 minutes, includes post-synthesis CHECKIN.md update
+- **Post-synthesis**: Phase 2 path activation (Domain sequences depend on path classification)
 
-**Critical Insight**: Domain 37 adjustment (mid-July Wave 2 timing) does NOT delay Phase 2 research start. Research production can begin immediately post-user-gate without waiting for July. Only Wave 2 distribution timing moves.
+**Critical Insight**: Domain 37 adjustment (mid-July Wave 2 timing) does NOT delay Phase 2 research start. Research production can begin immediately post-user-gate (May 21) without waiting for July. Only Wave 2 distribution timing moves.
 
 ### Usage Status
 - **Sonnet**: 5.2% (reset imminent)
