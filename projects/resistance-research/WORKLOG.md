@@ -2,6 +2,34 @@
 
 ---
 
+## May 18, 2026 — Wave 1 Execution Window Research Pass (~09:00 UTC)
+
+**Status**: COMPLETE
+
+### Item: May 17-18 Breaking Developments — Wave 1 Execution Window Extension
+
+**File updated**: `projects/resistance-research/domain-updates-may17-18.md` (appended section "WAVE 1 EXECUTION WINDOW PASS")
+
+**New findings documented**:
+
+1. **Domain 57 (HIGH priority)**: Pentagon cancelled 4,000-troop Poland rotation (May 14) — third concrete European force reduction not yet in Domain 57 Section 2.4. Combined with Germany 5,000-troop withdrawal = approximately 9,000 personnel diverted/withdrawn in a 30-day window. Strengthens "systematic withdrawal" thesis.
+
+2. **Domain 57**: ICC prosecution filed "among court's fastest" characterization in May 18 Manila Times coverage of pre-status-conference submissions. Reinforces institutional resilience narrative for Section 5.5.
+
+3. **Domain 37/1**: DOJ voter data demand scope confirmed at 39+ states demanded / 30+ states sued (up from 33+ baseline in existing documents). Five district court dismissals confirmed (CA, OR, MI, MA, RI).
+
+4. **Domain 37**: Senator Warner demand letter specifics — Michigan and Georgia officials confirmed disruption on the record; U.S. Cyber Command/NSA testimony cited (foreign adversaries expected to target 2026 midterms).
+
+5. **Domain 1 (clarification)**: Mississippi May 20 redistricting session confirmed cancelled May 13 — potential confusion risk from Democracy Docket tracker reference. No congressional redistricting session is occurring.
+
+6. **Domain 58**: Turtle Mountain v. Howe stay confirmed in effect, no cert action; Trump v. Barbara no ruling; SCOTUS May 15 orders contained no wave-relevant decisions.
+
+7. **SC H.5683**: Floor vote still unresolved as of ~09:00 UTC. Carry forward to May 19 check.
+
+**Sources consulted**: CNN, NATO News Pravda, Manila Times (May 18), Nextgov/FCW, Defense One, DOJ press release, UW Law Tracker, Government Executive, Mississippi Today, SCOTUSblog direct fetch
+
+---
+
 ## May 18, 2026 — Exploration Queue Items 1 and 2 (Agent Extension Pass, 07:23 UTC)
 
 **Status**: COMPLETE
