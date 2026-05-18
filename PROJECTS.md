@@ -441,7 +441,7 @@
 - Key Finding: META_LGB_v1 (regime_only) achieves +41.96% return with Sharpe 1.84, Alpha +38.28%
 - Deployment Ready: Three-model portfolio (META + MSFT + SPY) projects +27.78% return, 1.53 Sharpe, -10.17% MaxDD
 
-**Blocked on**: None — Gate 1 checkpoint infrastructure ready. Awaiting checkpoint execution at 20:00 UTC today (May 15).
+**Blocked on**: None. ✅ **Guardrails wired & tested** (Session 1206): GuardrailChain integrated into trading_session.py BUY path with 5% position cap enforcement + concurrent order deduplication. 24-test suite all passing. Deployment unblocked for post-checkpoint AMZN/JPM scaling.
 
 **Session 829 (2026-05-06) — MAY 12 OUTCOME ROADMAP COMPLETE (Exploration Queue)**:
 - **Deliverable**: `MAY_12_OUTCOME_ROADMAP.md` created — single actionable reference for May 13 morning

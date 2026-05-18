@@ -31,16 +31,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap
-**Date blocked**: 2026-05-18
-**Context**: Session 1205 audit discovered `guardrails.py` module exists with proper `GuardrailChain` and `PositionSizeLimiter` classes, but is NEVER imported or called in any active trading code (trading_session.py, live_engine.py, or any other execution path). Result: AAPL position grew to 28.9% of account equity (vs stated 5% limit) due to idempotency bug allowing 3× order submission. Guardrails would have caught this but were not enforced.
-**Root cause**: (1) Primary — idempotency guard race condition: three BUY orders submitted for AAPL within 2 minutes (April 29); each cycle didn't see previous fills yet, so all three passed guard. (2) Secondary — per-cycle 5% cap was also violated: each $9,643 order = 8.8% of equity individually, exceeding session_cap = min(0.05 * equity, buying_power). Either equity calculation was stale or buying_power exceeded cap.
-**What I need**: (1) Wire `GuardrailChain` into `trading_session.py` BUY submission path (around line 1950, BEFORE `_reserve_cash()` call). (2) Use aggregated account-level positions from Alpaca API (not just session's local position_manager). (3) Configure `PositionSizeLimiter` at `max_position_pct=0.05` (matching stated 5%, not 15% default). (4) Add unit tests for concurrent order guardrails and idempotency. (5) Test that idempotency guard correctly deduplicates concurrent submit attempts.
-**May 19 checkpoint impact**: NOT A BLOCKER — checkpoint measures signal execution, not guardrails enforcement. Checkpoint can proceed.
-**Deployment impact**: BLOCKER for new session deployments (AMZN/JPM post-checkpoint) — cannot scale up until guardrails are wired and tested.
-**Verify with**: `grep -n "from.*guardrails import\|GuardrailChain(" projects/stockbot/src/trading_session.py projects/stockbot/src/live_engine.py` — should return non-zero results. Also: `uv run pytest projects/stockbot/tests/test_guardrails_concurrent.py -v` should pass with 10+ concurrent order tests.
-**Resolution**: [leave blank]
-
 ---
 
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
@@ -70,6 +60,24 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap
+**Date blocked**: 2026-05-18
+**Date resolved**: 2026-05-18 (Session 1206)
+**Context**: Session 1205 audit discovered `guardrails.py` module exists with proper `GuardrailChain` and `PositionSizeLimiter` classes, but is NEVER imported or called in any active trading code. Result: AAPL position grew to 28.9% of account equity (vs stated 5% limit) due to idempotency race condition (3 concurrent BUY orders all submitted before fills visible).
+
+**Solution Implemented** (Session 1206):
+1. **Import & Initialization**: Added `from src.guardrails import GuardrailChain, OrderContext` to trading_session.py imports. Initialized GuardrailChain in TradingSession.__init__ with max_position_pct=0.05 (5% cap).
+2. **Context Builder**: Created `_build_order_context()` helper method that fetches current account state (equity, cash, positions from Alpaca API) and constructs OrderContext for validation.
+3. **BUY Path Integration**: Inserted guardrails.validate() call BEFORE _reserve_cash() in _process_ticker() (critical ordering). Orders that fail guardrails are logged and skipped with "buy_rejected" status.
+4. **Test Suite**: Created test_guardrails_concurrent.py with 24 comprehensive tests covering: position-size limiting (5% cap), concurrent order deduplication, idempotency guards, instrument bans, cash-only constraints, concurrent position caps. All tests passing.
+5. **Verification**: `grep -n "GuardrailChain" src/trading/trading_session.py` confirms import and initialization present. `uv run pytest tests/test_guardrails_concurrent.py -v` passes all 24 tests.
+
+**Commit**: 460e757 (feat(guardrails): Wire position-sizing enforcement into BUY path)
+
+**Status**: RESOLVED — Guardrails now enforced for all BUY orders. May 19 checkpoint NOT affected. Deployment impact: New session scaling (AMZN/JPM post-checkpoint) is now unblocked.
+
+---
 
 ### stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required)
 **Date blocked**: 2026-05-13
