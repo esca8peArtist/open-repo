@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T12:52:30Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T13:20:11Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.2% | Reset in 11h | check: claude.ai → Settings → Usage & billing
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **May 19 20:00 UTC checkpoint execution — 35 hours away (from 09:17 UTC May 18). ✅ Infrastructure pre-checkpoint audit COMPLETE (100% confidence, Session 1228 verification): Jetson SSH accessible, Docker containers healthy (stockbot 2 days, stockbot-web 8 days), Lever A config `/opt/stockbot/config/active-sessions-2session.json` confirmed present, checkpoint script `may19_checkpoint_analysis.py` confirmed present. ✅ Jetson production readiness validated (Session 1227, 08:37-08:41 UTC): CPU … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **May 19 20:00 UTC checkpoint execution (31 hours away, May 18 13:02 UTC). ✅ Infrastructure validation COMPLETE (May 18): Jetson healthy, Docker containers running, Lever A config confirmed, checkpoint scripts ready. Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md + CHECKPOINT_READINESS_VALIDATION.md + POST_CHECKPOINT_GATE_2_DECISION_FRAMEWORK.md (execution 19:00–19:30 UTC pre-flight, 20:00 UTC checkpoint query, 20:15 UTC outcome classification). User action: Execute checkpoint query at 20 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -89,8 +89,6 @@
 **Resolution**: [leave blank]
 ---
 
-## State Drift Warnings
-⚠️ STALE FOCUS: stockbot — focus references Session 1228 (17 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
@@ -102,30 +100,6 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- **Four checkpoint outcomes mapped** — PASS (30 min analysis), NEAR-MISS (60 min), FAR-MISS C1 (90 min), FAR-MISS C2 (120+ min) with specific recovery actions documented
-
-**Document Sections**:
-1. **Executive Summary** — 5 events, 3 critical overlap windows, MEDIUM risk with proper planning
-2. **Timeline Conflict Matrix** — Full May 18–31 schedule with constraints; no hard conflicts identified
-3. **Resource Allocation Scenarios** — 5 scenarios (test print timing × checkpoint outcome); optimal path identified
-4. **Contingency Decision Trees** — Checkpoint outcome tree (PASS/NEAR-MISS/FAR-MISS C1/C2 with actions), test print approval timing tree, Phase 2 path decision tree
-5. **May 19–31 Visual Calendar** — Day-by-day breakdown with user action windows and decision deadlines
-6. **Critical Path & Recommendations** — Sequencing checklist, total user time estimate (8–10 hours with recommended deferral), decision authority and escalation protocol
-
-**Strategic Impact**:
-- Enables proactive scheduling (e.g., "schedule test print for May 22–24" instead of May 19–20)
-- Pre-decided contingency paths for checkpoint outcomes (no improvisation May 19 evening)
-- Clear escalation protocol if multiple decisions arrive simultaneously (reversibility + impact-based priority)
-- User has full visibility into May 19–31 resource contention before events execute
-
-### Commits This Session
-
-1. ✅ Created `CROSS_PROJECT_INTERDEPENDENCY_RISK_ASSESSMENT.md` (Item 63, 7,500 words)
-
-### Updated Files
-
-1. ✅ **EXPLORATION_QUEUE.md**: Item 63 marked COMPLETE; Items 61-66 remain queued with status/blockers clarified
-
 ### Next: User Actions Awaiting
 
 1. **TODAY (May 18, before 14:00 UTC)**: Seedwarden Gate 1 execution (social accounts) using TRACK_B_GATE_1_REALTIME_SUPPORT.md
@@ -140,5 +114,29 @@
 - **Item 62 (May 21-22, depends on Item 61)**: Phase 2 Research Production Infrastructure — activates after Item 61 outcome decision
 - **Item 65 (May 20-21)**: Resistance-Research May 21-31 Batch 2-3 Coordination Framework — can start May 20 if Batch 1 early signals clear
 - **Item 66 (May 20, if needed)**: Stockbot FAR-MISS-C2 Recovery Playbook — only activated if checkpoint C2 outcome detected
+
+---
+
+### Session 1246 (Orchestrator) — May 18, 2026, 12:52–13:05 UTC — Post-Merge Infrastructure Cleanup
+
+**Status**: 🟢 **POST-MERGE CLEANUP COMPLETE** — Resolved open-repo duplication. All systems verified ready for May 19-21 event gates.
+
+**Work**:
+- ✅ **open-repo**: Resolved PHASE_5_ARCHITECTURE.md duplication (kept May 13 canonical root, removed stale Apr 30 docs/ copy)
+- ✅ Verified no broken references
+- ✅ Committed cleanup (37fc21f5)
+
+**Project Status**:
+- All active projects: either complete, staged for May 19-21 gates, or awaiting user action
+- No new autonomous work available (Sessions 1238-1245 completed Items 61-65 + verification)
+- Exploration Queue: Items 61, 62, 66 staged for checkpoint/decision dates (May 19, 21)
+- Critical path ready for May 19 20:00 UTC checkpoint execution
+
+**Upcoming**:
+- **May 19, 20:00 UTC**: Stockbot checkpoint (34 hours away)
+- **May 21, 10:30 UTC**: Wave 1 synthesis framework activation (Item 61)
+- **May 21, 14:00–15:00 UTC**: Phase 2 path decision gate
+
+**Token usage**: Healthy (sessions 1238-1245 well-distributed across day)
 
 ---
