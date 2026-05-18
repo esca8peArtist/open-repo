@@ -4,6 +4,87 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Agent Session — Item 40: Phase 3 Herbalist Expert Network Pre-Staging — 2026-05-18
+
+**Task**: Create Item 40 deliverable — `PHASE_3_HERBALIST_NETWORK_PRESTAGING.md` — full pre-staging
+package for Phase 3 medicinal herb expert network. Phase 3 research kickoff June 1, 2026.
+
+**File**: `projects/seedwarden/PHASE_3_HERBALIST_NETWORK_PRESTAGING.md`
+- Status: production-ready (prepared May 14, verified complete May 18)
+- Length: 772 lines, approximately 5,400 words
+
+**Content verified against Item 40 specification**:
+
+Section 1 — Herbalist Contact List (25 contacts)
+- 1.1 Academic herbalists/ethnobotanists: 7 contacts (Christopher Hobbs/UMass, Cassandra Quave/Emory,
+  Shannon Bell/Virginia Tech, Marsha Quinlan/WSU, Jenn Dazey/Bastyr, Notre Dame of Maryland MS program,
+  UMass MPP outreach faculty)
+- 1.2 Clinical herbalist associations (AHG and equivalent): 7 contacts (Tieraona Low Dog MD,
+  David Winston RH, 7Song/NESBM, AHG directory RHs for Women's Health/Sleep/Digestive, Susan Leopold/UpS)
+- 1.3 Permaculture/homesteading cultivation specialists: 5 contacts (Richo Cech/Strictly Medicinal,
+  Jeff and Melanie Carpenter/Zack Woods, UpS growers network for adaptogens, Anne Stobart,
+  Herb Pharm/goldenseal growers)
+- 1.4 Additional specialty coverage: 6 contacts (Rosemary Gladstar, Restorative Medicine faculty,
+  TCM/Ayurveda practitioner via NAMA, ND via AANP, pharmacognosist via UM Pharmacy, Steven Foster)
+- Contact summary table by therapeutic domain (Women's Health / Respiratory / Immunity / Sleep /
+  Digestive / First-Aid / Adaptogens / Cultivation / At-Risk)
+- Each entry includes: name, affiliation, contact path, specialty domains, vetting notes
+- All contacts have institutional affiliations, publication history, or formal credentials (MD, ND,
+  PhD, RH-AHG); no MLM or supplement-sales contacts included
+
+Section 2 — Interview Question Framework (5 templates, 5-7 questions each)
+- Template A: Contraindication and Safety Review (6 questions + wrap-up)
+- Template B: Efficacy Evidence Standards (6 questions + wrap-up)
+- Template C: Cultivation Technique Validation (6 questions + wrap-up)
+- Template D: Traditional Use Documentation and Cultural Sensitivity (5 questions + wrap-up)
+- Template E: General Expert Review all-purpose 30-minute (6 questions + wrap-up)
+- Each template includes: pre-call materials to send, opening script, core questions, wrap-up
+
+Section 3 — Evidence-Gathering Procedures
+- 3.1 Contraindication databases: 6-tier priority stack (NatMed Pro, MSK Integrative, Medscape,
+  PubMed, Stockley's, PHYDGI); 15-minute per-species workflow
+- 3.2 Efficacy tiers: Gold (RCT), Silver (observational), Bronze (traditional use); language
+  templates and example species for each tier; 1-5 confidence scoring rubric with populated
+  example rows (Elderberry, Valerian, Black Cohosh)
+- 3.3 Toxicity data sources: 6 sources (NPDS, NCCIH, ABC HerbalGram, EMA Herbal Monographs,
+  Botanical Safety Handbook, UpS At-Risk List)
+- 3.4 Herbalist vetting checklist: 4-step protocol (credential verification, publication
+  cross-check, network reference, fit assessment); Pass/Conditional/Hold outcomes
+
+Section 4 — Research Timeline Alignment
+- 4.1 Week-by-week schedule June 1-July 31 (8 weeks): pre-launch prep May 14-31, then weeks
+  1-8 with named species per week (5/week target), outreach cadence per week, interview
+  scheduling milestones
+- 4.2 Interview cadence summary: target contacts and templates by 2-week wave; 2-3 calls/week
+  at 30 min each; 60-90 min/week SME time commitment
+
+Section 5 — Quality Gates
+- 5.1 Vetting checklist quick reference: 5 check categories, pass criteria, red flags
+- 5.2 Evidence confidence scoring template: master table format; populated example rows;
+  publication readiness gate (6 criteria, all must pass)
+- 5.3 Monthly review gates: June 15 (2-week assessment) and July 15 (6-week close-out)
+  with specific numeric thresholds and escalation triggers
+- 5.4 Per-species publication gate: copy-paste self-check with 16 checkboxes across Evidence,
+  Safety, Expert Review, and Cultivation categories; approved/not-approved decision logic
+
+Section 6 — Initial Contact Email Templates (bonus, not in original spec)
+- June 1 outreach template with fill-in personalization fields
+- 7-day follow-up template
+
+**Use protocol for user on May 31**:
+1. Run Section 3.4 vetting checklist against all 25 contacts (est. 10 min each = ~4 hours)
+2. Select top 10 priority contacts for Wave 1 (Women's Health, Respiratory, Immunity)
+3. Customize Section 6 outreach template for each of the 10 (insert species + expertise)
+4. June 1: send outreach emails; begin species database for Section 3.2 evidence scoring
+5. June 8: follow up with non-respondents; send Wave 2 outreach to contacts 11-16
+
+**Cross-references**:
+- phase-3-medicinal-herbs-timeline.md — research window execution (June 22-July 13)
+- PHASE_3_PRODUCTION_TIMELINE.md — 26-week production roadmap
+- phase-3-medicinal-herbs-strategic-plan.md — therapeutic bundle scope
+
+---
+
 ## Agent Session — Gate 2 Canva Pro Decision Framework — 2026-05-18
 
 **Task**: Research and build Gate 2 decision framework for Canva Pro, ready for May 19 user decision.
