@@ -2,6 +2,25 @@
 
 ---
 
+## May 18, 2026 — Phase 3 Institutional Playbooks: AG Coalition and Civil Service Unions
+
+**Status**: COMPLETE
+**Files**:
+- `projects/resistance-research/phase-3-ag-playbook.md` (~1,900 words)
+- `projects/resistance-research/phase-3-civil-service-unions-playbook.md` (~1,900 words)
+
+**Scope**: Phase 3 Candidate 2 — expanded the `phase-3-institutional-playbooks-outline.md` (Session 580, 7,000 words) into two full production-ready playbooks for distribution to constituency leads.
+
+**Key findings per playbook**:
+
+**AG Coalition playbook**: Five domains covered — Domain 1 (SAVE Act/election interference pre-litigation), Domain 6 (post-*Slaughter* pre-staging with 3 standing memo templates), Domain 23 (*Learning Resources* IEEPA model + active Section 122 challenge), Domain 29 (SPLC amicus track + state civil rights parallel), Domain 34 (DOGE impoundment cooperative-program APA challenges). Two fully documented case studies (*Learning Resources* architecture, *Maryland v. Noem* DOGE data access). 3-conflict mitigation matrix (universal injunctions, trade policy, competitive-state electoral pressure). Year 1-3 sequencing to interstate compact architecture.
+
+**Civil Service Unions playbook**: Five domains covered — Domain 2 (Schedule Policy/Career Second Amended Complaint, Saving the Civil Service Act, MSPB Reconstruction Act), Domain 6 (NLRB quorum loss + Independence Act), Domain 17 (PRO Act, sectoral bargaining pilots), Domain 26 (IG Defense + whistleblower protection), Domain 34 (DOGE impoundment RIF rights litigation). Three case studies (AFGE inauguration-night filing, Second Amended Complaint architecture, AFL-CIO PAWA bipartisan floor vote). 3-conflict mitigation matrix (trade policy cross-union tension, NLRB vs. MSPB priority tension, competitive civil servant exposure). Resource estimate: $500,000-$750,000 incremental annual cost.
+
+**Domain sources**: `domain-01-voting-rights-elections.md`, `domain-06-judicial-independence.md`, `domain-23-trade-policy-tariff-unilateralism.md`, `domain-26-government-accountability.md`, `domain-29-prosecutorial-weaponization.md`, `domain-34-congressional-power-of-the-purse.md`, `domain-56-civil-service-politicization-governance.md`, plus `crisis-response-ag-coalition.md`, `playbook-ags.md`, `playbook-civil-service.md` (Session 996 extended versions).
+
+---
+
 ## May 17, 2026 22:00 UTC — Breaking Developments Scan (Wave 1 Pre-Execution Currency Check)
 
 **Status**: COMPLETE
