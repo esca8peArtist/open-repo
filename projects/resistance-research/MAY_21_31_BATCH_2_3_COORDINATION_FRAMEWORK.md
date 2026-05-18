@@ -1045,4 +1045,413 @@ The May 28 deadline produces measurable outcomes within 48–72 hours via the Fe
 
 ---
 
-*Prepared: May 18, 2026. Updated: May 18, 2026 (Sections 7–8 and calendar added). Sources: WAVE_1_MONITORING_DASHBOARD.md (May 17); WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md (May 18); DOMAIN_42_MAY_28_EXECUTION_PREP.md (May 13); DOMAIN_42_AMPLIFICATION_STRATEGY.md (May 12); DISTRIBUTION_OUTREACH_CONTACTS.md (April 27); PHASE_1_POST_WAVE1_CONTINGENCY.md (May 17); POST_WAVE_1_SYNTHESIS_AND_TIER2_TRANSITION.md (May 17); [Federal Register DEA-1362](https://www.federalregister.gov/documents/2026/04/28/2026-08177/schedules-of-controlled-substances-rescheduling-of-marijuana) (confirmed May 18).*
+## SECTION 9: Batch 3 Go/No-Go Gate (May 24, 18:00 UTC)
+
+### 9.1 What the Gate Is
+
+Batch 3 does not activate automatically after Batch 2 sends complete. It activates only if the aggregate Batch 1 + Batch 2 engagement signal by May 24 18:00 UTC meets or exceeds the threshold defined below. This gate prevents sending 20–35 contacts a framework that has not yet demonstrated enough traction to warrant broad-field distribution. Labor unions, civil rights organizations, and state networks are the audience that most benefits from social proof — sending them before that proof exists risks burning the highest-operational-value contacts before the research is credible enough to prompt action.
+
+**May 24 18:00 UTC is a hard gate, not a soft preference.** Batch 3 sends that would otherwise start May 24 hold until the gate is evaluated.
+
+### 9.2 Go/No-Go Threshold
+
+**Batch 3 activates (GO) if all three conditions are met by May 24 18:00 UTC**:
+
+| Condition | Threshold | How to Check |
+|-----------|-----------|--------------|
+| Aggregate reply rate (Batch 1 + Batch 2 combined) | >40% of adjusted contact count (contacts minus bounces and OOOs) | Count all substantive replies (Score 3+) from both batches; divide by adjusted denominator; if ≥40%, condition met |
+| At least one integration signal (Score 4 or 5) | Any single Score 4 or 5 from any contact in Batch 1 or Batch 2 | One implementation ask, referral to a named colleague, or any confirmed integration action = condition met |
+| Domain 42 state AG outreach confirmed sent | All Tier 1 + Tier 2 AGs received materials by May 22–23 per Section 4 schedule | Check BATCH_1_CONTACT_LOG.md or equivalent Batch 2 log for AG send confirmations |
+
+**If all three conditions are met**: GO — activate Batch 3 per the STRONG or MODERATE path schedule below.
+
+**If any condition is not met**: NO-GO — Batch 3 enters conditional hold (see Section 9.4).
+
+### 9.3 Batch 3 Path Logic Under GO
+
+Batch 3 activation path depends on the overall outcome classification confirmed at the May 21 gate, as follows:
+
+**If Batch 1-2 outcome is STRONG (aggregate >60% reply rate, or any Score 5)**:
+Batch 3 becomes opportunistic — the sequencing priority shifts from sector-coverage to integration-signal organizations. Contacts that replied with Score 4–5 from Batch 2 become the Batch 3 lead audience, regardless of their original allocation date. Send order:
+1. Score 5 contacts and their immediate organizational networks (named colleagues, referred contacts)
+2. Score 4 contacts who asked for implementation resources — follow up with the specific resource they requested
+3. Standard Batch 3 contact list (labor, civil rights, state networks) — use STRONG messaging variant
+
+**If Batch 1-2 outcome is MODERATE (25–40% aggregate reply rate, at least one Score 3)**:
+Batch 3 proceeds on standard schedule — sector-coverage logic, MODERATE messaging. Sequence:
+1. Labor (CWA, SEIU, AFL-CIO, AFSCME) — most operationally oriented sector, fastest response cycle
+2. Civil rights (NAACP LDF, Lawyers' Committee, ACLU Voting Rights, M4BL, Mijente) — Domain 42 deadline creates urgency hook for civil rights contacts
+3. State networks — AGs already reached under Domain 42; academic contacts in later wave
+
+**If aggregate reply rate is 30–40% but no Score 4–5 signal**:
+Partial GO — activate Batch 3 labor only (fastest response cycle, least dependent on academic credibility). Hold civil rights and state networks pending a May 27 reassessment. If labor Wave 1 (May 24–25) produces at least one Score 3+ by May 27, release civil rights and state network sends.
+
+### 9.4 NO-GO Protocols (Batch 3 in Conditional Hold)
+
+**If GO threshold is not met by May 24 18:00 UTC**, the following holds apply:
+
+**NO-GO Scenario A — Low aggregate reply rate (<40%), no Score 4–5, Domain 42 AG sends complete**:
+This is the signal that the core framework messaging requires revision before the broad-field distribution audience. Action:
+1. Revise Batch 3 messaging immediately — pivot from "institutional credibility" angles to "strategic election protection" angles. The WEAK-path messaging variant in PHASE_2_OUTCOME_LAUNCH_ROADMAP.md Section 3 provides the revised lead paragraphs.
+2. The revised Batch 3 launch date moves to May 27–28, using the election protection framing. This gives 2 days of revised message preparation.
+3. Send ONLY to labor and civil rights contacts in the May 27–28 window — the most operationally oriented sectors are least dependent on academic credibility framing and most responsive to direct election protection utility.
+4. State networks (AG contacts beyond Domain 42 outreach) hold until June 1.
+
+**NO-GO Scenario B — Domain 42 AG sends not completed by May 22–23**:
+This is an operational failure in the Domain 42 track. Action:
+1. Emergency AG send: all remaining AG contacts receive Domain 42 materials May 24 regardless of the Batch 3 gate status — Domain 42 deadline does not flex.
+2. Batch 3 go/no-go gate shifts to May 25 18:00 UTC with the same threshold logic applied at that date.
+3. If the AG sends are the only condition not met, treat the gate as GO-pending and do not hold back Batch 3 labor sends while AG sends are being completed.
+
+**NO-GO Scenario C — Security concern escalation**:
+If 2 or more contacts report security concerns about the research (e.g., stating that the outreach may expose them to institutional risk, or requesting that their name not be associated with the framework), do not activate Batch 3 autonomously. Flag in CHECKIN.md under "Needs Your Input — Security Concern Escalation" immediately. Batch 3 holds pending user review of what the security concern signals about the broader outreach risk.
+
+### 9.5 May 24 Go/No-Go Checklist (Execute at 18:00 UTC)
+
+```
+MAY 24 18:00 UTC — BATCH 3 GO/NO-GO ASSESSMENT
+
+1. REPLY COUNT (5 min):
+   □ Batch 1 replies received (Score 3+): ___
+   □ Batch 2 replies received (Score 3+): ___
+   □ Total Batch 1+2 contacts sent (minus bounces/OOOs): ___
+   □ Aggregate reply rate: ___% (≥40% = threshold met)
+   □ Any Score 4 or 5 signals from either batch: Y / N
+
+2. DOMAIN 42 STATUS (2 min):
+   □ Tier 1 AGs sent (Mayes, Bonta, Weiser/CO, Nessel, Brown): Y / N
+   □ Tier 2 AGs sent (Raoul, Kaul, Ford, Rosenblum): Y / N
+   □ All confirmable sends logged in contact tracking: Y / N
+
+3. SECURITY CONCERNS (1 min):
+   □ Any replies flagging security concern or requesting removal with institutional risk language: Y / N
+   □ If Y and count ≥2: HOLD — flag in CHECKIN.md immediately
+
+4. CLASSIFICATION (1 min):
+   □ All three GO conditions met: YES → GO
+   □ Any condition not met: NO-GO → identify scenario (A, B, or C above)
+   □ Partial GO (30–40% rate, no Score 4+): LABOR-ONLY GO
+
+5. IMMEDIATE ACTION (5 min):
+   □ GO: Pull Batch 3 contact list for tomorrow's sends; select messaging variant (STRONG or MODERATE)
+   □ NO-GO Scenario A: Pull WEAK messaging variant from PHASE_2_OUTCOME_LAUNCH_ROADMAP.md Section 3; begin revision
+   □ NO-GO Scenario B: Emergency AG sends immediately (tonight)
+   □ NO-GO Scenario C: CHECKIN.md flag only; no sends until user confirms
+   □ LABOR-ONLY GO: Pull labor contacts from Section 2.2 (contacts 46–57); hold civil rights and state networks
+```
+
+### 9.6 Batch 3 WEAK-Path Messaging Pivot
+
+If Batch 3 activates under a NO-GO Scenario A (revised to May 27–28 with election protection framing), the subject line and lead paragraph pivot is:
+
+**Original institutional credibility framing** (used under STRONG/MODERATE):
+- Subject: "Democratic reform research — [specific domain] application for [org name]"
+- Lead: References prior engagement from policy organizations as social proof
+
+**Revised election protection framing** (used under WEAK):
+- Subject: "Election protection analysis — [specific domain] application for [org name]"
+- Lead: Opens with the specific electoral mechanism the contact's work addresses, no social proof reference
+- Example lead (labor): "The 2026–2028 OBBBA implementation window overlaps exactly with the midterm election cycle. Domain 59 documents how five simultaneous benefit program cuts suppress voter registration and participation for 80 million Americans — a structural suppression argument that union legislative teams can use in floor testimony before November 3."
+- Example lead (civil rights): "Felony disenfranchisement affects 4 million Americans, 70% of them Black or Latino. Domain 42 and Domain 22 document the policy feedback loop that connects criminal enforcement to voting rights exclusion. The DEA hearing deadline is May 28 — this is the active policy window."
+
+The election protection framing is not weaker than the institutional credibility framing — it targets a different audience motivation (operational urgency vs. scholarly credibility). For labor and civil rights contacts, the operational urgency framing typically outperforms the credibility framing regardless of Wave 1 outcome. The institutional credibility variant is primarily valuable for think tanks and academic audiences.
+
+---
+
+## SECTION 10: Operations Calendar — Day-by-Day Load + Ambassador Assignment
+
+### 10.1 Daily Send Volume Allocation (May 20–31)
+
+This table provides the maximum recommended sends per day, grouped by sender role. If the user is distributing the send load with one or more co-senders (ambassadors, colleagues, co-authors), the assignment column specifies who handles each contact group.
+
+**Role definitions**:
+- **Primary Sender (P)**: The research author — handles all Batch 1 contacts, all Domain 42 state AG sends, all Score 4–5 follow-ups. Personalization depth: maximum.
+- **Ambassador A (AA)**: A trusted colleague who can send framework materials on behalf of the project. Handles Batch 2 Priority Group 3 (think tanks) and Batch 3 labor contacts after briefing. Personalization depth: sector-level (institution name + domain hook filled, no personal relationship references).
+- **Ambassador B (AB)**: A second trusted colleague with civil rights or advocacy connections. Handles Batch 3 civil rights and state network contacts. Personalization depth: sector-level.
+
+**If operating solo (no ambassadors)**: The daily target is 8–12 sends maximum to maintain quality. The calendar below reflects this ceiling. Do not exceed 15 sends in a single day — personalization quality degrades above that threshold.
+
+| Date | Total Sends | Primary Sender | Ambassador A | Ambassador B | Domain 42 Action | Decision Gate |
+|------|-------------|---------------|-------------|-------------|-----------------|---------------|
+| May 20 | 3–8 | 3–5 (STRONG: Priority Group 1 law schools + AGs; MODERATE: AGs only) | — | — | 3 AG sends (Tier 1) | Provisional classification (Section 6.1) |
+| May 21 | 15–22 | 10–15 (law schools, policy schools, think tank Tier A) | 3–5 (think tank Tier B if AA available) | 3 (civil rights Wave 1 if AB available) | 3–5 AG sends (Tier 2) | 10:30 UTC window close; 14:00 UTC user gate |
+| May 22 | 8–12 | 5–8 (civil rights Wave 1 if solo; Domain 42 follow-ups) | 3–4 (labor Wave 1 if AA available) | 3 (civil rights Wave 2 if AB available) | 2 AG sends (Tier 2); drug policy press (Filter, NORML, DRCNet) | — |
+| May 23 | 8–12 | 5–7 (labor Wave 1 if solo; Tier 2 follow-ups per Section 7) | 3–5 (additional civil rights if AA) | 3 (labor Wave 2 if AB) | 2 AG sends (Tier 3); civil rights press (Appeal, Marshall Project) | — |
+| May 24 | 10–14 | 6–8 (civil rights Wave 2; think tank Week 2) | 3–4 (labor Wave 2 if AA) | 3 (state networks if AB) | 3 AG sends (Tier 3); May 24 = outer limit for AG sends under MODERATE | May 24 18:00 UTC Batch 3 go/no-go gate (Section 9) |
+| May 25 | 5–8 | 4–6 (WaPo, Mother Jones pitch; Tier 2 follow-ups per Section 7) | 2–3 (faith coalitions if AA) | — | OUTER LIMIT — final AG sends today | May 25 Domain 42 follow-up assessment (Section 10.3) |
+| May 26 | 5–8 | 4–6 (think tanks D'Amico, Tucker, Balkin; SSRN check if contingency active) | 2 (faith coalitions completion if AA) | — | Reminder-only to AGs who have not confirmed; voting rights journalists | — |
+| May 27 | 8–12 | 5–7 (labor completion: NEA, AFT, Teamsters, USW, JwJ; faith coalitions) | 3–4 (state networks Week 2 if AA) | — | Voting rights journalists; no new AG outreach | — |
+| May 28 | 4–6 | 2–4 (cross-aisle think tanks: Continetti, Levin — STRONG only) | 2 (any remaining contacts if AA) | — | HARD DEADLINE 23:59 UTC — monitor nprm@dea.gov filings | Domain 42 filing deadline |
+| May 29–30 | 4–6 | 3–5 (Phase 2 planning; law school window still open through Day 10) | — | — | Post-deadline impact assessment (Section 10.4) | — |
+| May 31 | 2–4 | 2–4 (final close-out per Section 11) | — | — | Final docket check; May 31 close-out | May 31 close-out checklist (Section 11) |
+
+**Total sends across May 20–31 (STRONG path)**: 70–90 contacts  
+**Total sends across May 20–31 (MODERATE path)**: 55–70 contacts  
+**Total sends across May 20–31 (WEAK path)**: 30–50 contacts (compressed to confirmed high-value contacts only)
+
+### 10.2 Ambassador Briefing Protocol
+
+If Ambassador A or B is involved, brief them before their first send day using the following protocol. Do not have ambassadors send without this briefing.
+
+**Minimum briefing package (deliver before first ambassador send day)**:
+1. The proposal Gist URL — they need to have read at least the executive summary and the two domains most relevant to their contact sector
+2. The relevant Section 3 path messaging template (STRONG, MODERATE, or WEAK) for their contact group
+3. The contact list for their allocation — names, organizations, email addresses, domain hooks
+4. One instruction: "Fill [YOUR_NAME] with your own name; fill [organization name] with the recipient's name; send from your own email account; BCC me on all sends so I can track responses." Do not have ambassadors use your email account — responses should route to you.
+5. Response routing: "If you get a reply, forward it to me immediately. Do not respond to replies yourself unless the reply is a bounce notification or an OOO."
+
+**Ambassador accountability**: After each send day, ambassadors confirm: number of emails sent, any bounces received, any immediate replies. Log confirmations in the contact status tracking table (Section 10.5).
+
+### 10.3 May 25 Domain 42 Follow-Up Assessment Checkpoint
+
+On May 25, before the day's sends begin, run the following 15-minute assessment of Domain 42 amplification status. This is a mandatory checkpoint — the 3-day buffer before the May 28 deadline depends on knowing by May 25 what the AG network has and has not received.
+
+```
+MAY 25 DOMAIN 42 FOLLOW-UP ASSESSMENT
+
+1. AG RECEIPT CONFIRMATION (5 min):
+   □ Tier 1 AGs (Mayes, Bonta, Weiser/CO, Nessel, Brown) — confirmed sent: Y / N for each
+   □ Tier 2 AGs (Raoul, Kaul, Ford, Rosenblum) — confirmed sent: Y / N for each
+   □ Any AG replies received (any score): Y / N — count: ___
+   □ Any AG confirmed filing intent: Y / N — which AGs: ___
+
+2. DRUG POLICY ORGANIZATION STATUS (3 min):
+   □ DPA (press@drugpolicy.org) — confirmed receipt: Y / N; participation notice confirmed: Y / N
+   □ NORML — confirmed receipt: Y / N; participation notice confirmed: Y / N
+   □ ACLU Criminal Law Reform — confirmed receipt: Y / N; participation notice confirmed: Y / N
+   □ The Sentencing Project — confirmed receipt: Y / N; participation notice confirmed: Y / N
+   □ LEAP — confirmed receipt: Y / N; participation notice confirmed: Y / N
+
+3. MEDIA PICKUP STATUS (2 min):
+   □ Any policy press coverage (AP, Reuters, Axios, Politico, Hill): Y / N
+   □ Any drug policy press coverage (Filter, NORML News, DRCNet): Y / N
+   □ Any civil rights press interest (Appeal, Marshall Project): Y / N
+
+4. TALKING POINTS DELIVERY STATUS (3 min):
+   □ All Tier 1 + Tier 2 AGs have received Domain 42 Section 4 (federal-state conflict talking points): Y / N
+   □ All civil rights contacts have received Domain 42 Section 3 (disenfranchisement talking points): Y / N
+   □ All academic contacts (Mason Marks, Ohio State DEPC) have received Domain 42 Section 2 (regulatory capture talking points): Y / N
+   □ Filing procedure reminder sent to all contacts who have not confirmed intent: Y / N
+
+5. ACTION (2 min):
+   □ Any organization that has NOT confirmed receipt: send one follow-up today (May 25) per Template B (Section 7.4)
+   □ Any organization with confirmed intent to file: send pre-drafted participation notice template immediately
+   □ If zero AG replies by May 25: activate fallback (Section 9, below — congressional/DOJ contacts)
+   □ If zero media pickup by May 25: activate emergency Gist publication (Section 5.2)
+```
+
+**Domain 42 fallback if State AG engagement is low by May 25**:
+
+If fewer than 3 of the 11 state AG offices have replied substantively by May 25, the AG-route amplification is likely insufficient to generate formal filings by May 28. Activate the congressional/DOJ fallback:
+
+| Fallback Contact | Organization | Contact | Ask | Send Date |
+|-----------------|-------------|---------|-----|-----------|
+| Senate Judiciary Committee staff | Staff director for drug policy subcommittee | Via committee official contact form | Share Domain 42 analysis + request committee attention to DEA-1362 democratic accountability gaps | May 25–26 |
+| House Judiciary Committee staff | Ranking member's staff (for minority perspective) | Via committee contact | Same ask — bipartisan frame available via SAFER Banking legislative history | May 25–26 |
+| DOJ Civil Rights Division | Civil Rights Division public inquiry | civilrights.fax@usdoj.gov (or current public contact) | Note: this contact path has highest institutional risk — only use if the Domain 42 disenfranchisement argument is fully documented and sourced | May 26 only |
+| NAAG (National Association of AGs) | NAAG policy staff | Via naag.org contact | Share Domain 42 federal-state conflict analysis; NAAG can distribute to all member AGs — single send reaches all 52 AG offices | May 25 — highest-leverage single send under fallback scenario |
+
+### 10.4 Post-May-28 Impact Assessment (May 29–30)
+
+Within 48–72 hours of the May 28 deadline, the following assessment confirms what the Domain 42 campaign produced before transitioning to Phase 2 planning.
+
+**Domain 42 impact check (May 29–30, 20 minutes)**:
+
+| Metric | Check Method | Success Threshold | What Failure Means |
+|--------|-------------|------------------|--------------------|
+| Docket participants from our contact list | Federal Register DEA-1362 docket page — check "participants" list | ≥1 named organization we contacted | Zero = no confirmed amplification; not necessarily a failure (organizations may have filed without attribution) |
+| Media mentions | Google News: "DEA rescheduling democratic" / "DEA-1362 disenfranchisement" | Any article = success; 2+ articles = strong | Zero = media pitch did not convert; note for Phase 2 media strategy adjustment |
+| AG formal comment | State AG press releases; Federal Register docket | Any state AG formal comment or amicus filing | Zero = AG network did not reach filing threshold; note for Phase 2 strategy |
+| Inbound requests for June 29 hearing support | Email inbox | Any organization asking for help preparing June 29 testimony | Even one = testimony pipeline active — follow up immediately |
+| Phase 2 integration signals from Domain 42 contacts | Any email scoring Score 4–5 from a Domain 42 contact | One Score 4–5 = Domain 42 integration signal | Zero = Domain 42 did not generate Phase 2 relationship entry points |
+
+**Impact assessment action based on results**:
+
+If high-impact result (≥3 filings + media pickup + any AG comment): Flag in CHECKIN.md "Domain 42 high-impact outcome — June 29 hearing testimony coordination may be warranted." Offer to draft June 29 hearing testimony support materials in next session.
+
+If moderate-impact result (1–2 filings, no AG, media uncertain): Note in WORKLOG.md. No immediate action required — Domain 42 wave is complete. Monitor Federal Register for June 29 hearing participant list.
+
+If low-impact result (zero confirmed filings): Conduct diagnostic: was it delivery, capacity, or content? Flag for Phase 2 lesson extraction — the civil rights and drug policy contacts in this wave become high-priority recontact targets when Phase 2 research on Domain 41–43 produces new materials.
+
+### 10.5 Contact Status Tracking Table
+
+This table is the master deduplication and status record for all Batch 2–3 sends. Populate as sends are executed. Check this table before each send day to prevent duplicate outreach.
+
+**Instructions**: Update Status after each send. Mark "DUPL CHECK" as confirmed before each send to prevent cross-batch duplicates. Use scoring from WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv.
+
+| # | Contact | Organization | Batch | Send Date | Sender | Status | Score (0–5) | Follow-Up? | Notes |
+|---|---------|-------------|-------|-----------|--------|--------|-------------|-----------|-------|
+| B2-1 | Nicholas Stephanopoulos | Harvard Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-2 | Nikolas Bowie | Harvard Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-3 | Ruth Greenwood | Harvard Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-4 | Olatunde Johnson | Columbia Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-5 | Gillian Metzger | Columbia Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-6 | Kenji Yoshino | NYU Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-7 | Pamela Karlan | Stanford Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-8 | Erwin Chemerinsky | UC Berkeley Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-9 | William Baude | U Chicago Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-10 | Richard Hasen | UCLA Law | Batch 2 | — | P | Pending | — | — | DUPL CHECK: not in Batch 1 |
+| B2-11 | Theda Skocpol | Harvard KSG | Batch 2 | — | P | Pending | — | — | — |
+| B2-12 | Archon Fung | Harvard KSG | Batch 2 | — | P | Pending | — | — | — |
+| B2-13 | Jacob Hacker | Yale | Batch 2 | — | P | Pending | — | — | — |
+| B2-14 | Suzanne Mettler | Cornell | Batch 2 | — | P | Pending | — | — | — |
+| B2-15 | Barry Rabe | U Michigan | Batch 2 | — | AA | Pending | — | — | Ambassador A handles if available |
+| B2-16 | Molly Reynolds | Brookings | Batch 2 | — | AA | Pending | — | — | — |
+| B2-17 | Shahrzad Shams | Roosevelt | Batch 2 | — | AA | Pending | — | — | — |
+| B2-18 | Patrick Oakford | Roosevelt | Batch 2 | — | AA | Pending | — | — | — |
+| B2-19 | Celine McNicholas | EPI | Batch 2 | — | AA | Pending | — | — | — |
+| B2-20 | Michael Waldman | Brennan Center | Batch 2 | — | P | Pending | — | — | Weiser (Batch 1) already sent to Brennan — verify no organizational overlap |
+| B2-21 | Kareem Crayton | Brennan Center | Batch 2 | — | P | Pending | — | — | Same org as Weiser — flag for Brennan Center duplicate awareness |
+| B2-22 | Joanna Lydgate | States United | Batch 2 | — | P | Pending | — | — | — |
+| B2-23 | Virginia Kase Solomón | Common Cause | Batch 2 | — | P | Pending | — | — | — |
+| B2-24 | Justin Florence | Protect Democracy | Batch 2 | — | P | Pending | — | — | Bassin (Batch 1) already sent to Protect Democracy — note organizational overlap; Florence is different program |
+| B2-25 | Todd Tucker | Roosevelt | Batch 2 | — | AA | Pending | — | — | — |
+| B2-26 | Samara Angel | Brookings | Batch 2 | — | AA | Pending | — | — | STRONG only |
+| B2-27 | Matthew Continetti | AEI | Batch 2 | — | AA | Pending | — | — | STRONG only; cross-aisle — use rule of law framing |
+| B2-28 | Yuval Levin | AEI | Batch 2 | — | AA | Pending | — | — | STRONG only; same cross-aisle framing |
+| B2-29 | A.J. D'Amico | Knight Foundation | Batch 2 | — | AA | Pending | — | — | — |
+| B2-30 | Jack Balkin | Yale Law | Batch 2 | — | AA | Pending | — | — | Pitch litigation tracker specifically |
+| B2-31 | AP Policy desk | Media | Batch 2 | — | P | Pending | — | — | D42 media — path-independent |
+| B2-32 | Reuters Political | Media | Batch 2 | — | P | Pending | — | — | D42 media |
+| B2-33 | Axios Pro Rata | Media | Batch 2 | — | P | Pending | — | — | D42 media |
+| B2-34 | Politico Influence | Media | Batch 2 | — | P | Pending | — | — | D42 media |
+| B2-35 | The Hill | Media | Batch 2 | — | P | Pending | — | — | D42 media |
+| B2-36 | Filter Magazine | Media | Batch 2 | — | P | Pending | — | — | D42 drug policy press |
+| B2-37 | NORML News | Media | Batch 2 | — | P | Pending | — | — | D42 — already in D42 Wave 1; this is media pitch, not research send |
+| B2-38 | DRCNet | Media | Batch 2 | — | P | Pending | — | — | D42 drug policy press |
+| B2-39 | The Appeal | Media | Batch 2 | — | P | Pending | — | — | Civil rights press — STRONG/MODERATE only |
+| B2-40 | The Marshall Project | Media | Batch 2 | — | P | Pending | — | — | Civil rights press — STRONG/MODERATE only |
+| B2-41 | WaPo Politics | Media | Batch 2 | — | P | Pending | — | — | National press — STRONG only |
+| B2-42 | Mother Jones | Media | Batch 2 | — | P | Pending | — | — | Investigative — STRONG/MODERATE |
+| B2-43 | LEAP newsletter | Media | Batch 2 | — | P | Pending | — | — | D42 track — already in D42 Wave 1 |
+| B2-44 | Marc Daalder (Substack) | Newsletter | Batch 2 | — | AA | Pending | — | — | STRONG only |
+| B2-45 | Voting rights journalists | Major outlets | Batch 2 | — | P | Pending | — | — | Via Democracy Docket media list |
+| AG-1 | Kris Mayes | AZ AG | D42-AG | — | P | Pending | — | — | D42 path-independent; Tier 1 |
+| AG-2 | Rob Bonta | CA AG | D42-AG | — | P | Pending | — | — | D42 Tier 1 |
+| AG-3 | Phil Weiser | CO AG | D42-AG | — | P | Pending | — | — | D42 Tier 1 |
+| AG-4 | Dana Nessel | MI AG | D42-AG | — | P | Pending | — | — | D42 Tier 1 |
+| AG-5 | Nick Brown | WA AG | D42-AG | — | P | Pending | — | — | D42 Tier 1 |
+| AG-6 | Kwame Raoul | IL AG | D42-AG | — | P | Pending | — | — | D42 Tier 2 |
+| AG-7 | Josh Kaul | WI AG | D42-AG | — | P | Pending | — | — | D42 Tier 2 |
+| AG-8 | Aaron Ford | NV AG | D42-AG | — | P | Pending | — | — | D42 Tier 2 |
+| AG-9 | Ellen Rosenblum | OR AG | D42-AG | — | P | Pending | — | — | D42 Tier 2 |
+| AG-10 | Letitia James | NY AG | D42-AG | — | P | Pending | — | — | D42 Tier 3 |
+| AG-11 | Brian Schwalb | DC AG | D42-AG | — | P | Pending | — | — | D42 Tier 3 |
+| B3-46 | Claude Cummings Jr. | CWA | Batch 3 | — | AA | Pending | — | — | DUPL CHECK: not in Batch 1 or 2 |
+| B3-47 | April Verrett / SEIU Policy | SEIU | Batch 3 | — | AA | Pending | — | — | — |
+| B3-48 | AFL-CIO Policy Office | AFL-CIO | Batch 3 | — | AA | Pending | — | — | — |
+| B3-49 | AFSCME Policy | AFSCME | Batch 3 | — | AA | Pending | — | — | — |
+| B3-50 | UAW Communications | UAW | Batch 3 | — | AA | Pending | — | — | — |
+| B3-51 | NEA Policy | NEA | Batch 3 | — | AA | Pending | — | — | — |
+| B3-52 | AFT Policy | AFT | Batch 3 | — | AA | Pending | — | — | — |
+| B3-53 | Teamsters Policy | IBT | Batch 3 | — | AA | Pending | — | — | STRONG/MODERATE only |
+| B3-54 | USW Policy | USW | Batch 3 | — | AA | Pending | — | — | STRONG/MODERATE only |
+| B3-55 | Jobs With Justice | JwJ | Batch 3 | — | AA | Pending | — | — | — |
+| B3-56 | USFWC | US Fed Worker Coops | Batch 3 | — | AA | Pending | — | — | STRONG/MODERATE only |
+| B3-57 | Liz Shuler (direct) | AFL-CIO | Batch 3 | — | P | Pending | — | — | STRONG only; leadership-level |
+| B3-58 | Janai Nelson | NAACP LDF | Batch 3 | — | AB | Pending | — | — | DUPL CHECK: not in Batch 1 or 2 |
+| B3-59 | Damon Hewitt | Lawyers' Committee | Batch 3 | — | AB | Pending | — | — | — |
+| B3-60 | Voting Rights Project | Lawyers' Committee | Batch 3 | — | AB | Pending | — | — | Different contact than Hewitt — same org, verify no overlap |
+| B3-61 | ACLU Voting Rights Project | ACLU National | Batch 3 | — | AB | Pending | — | — | DUPL CHECK: ACLU Criminal Law Reform already in D42 track; verify this is different contact |
+| B3-62 | Derrick Johnson | NAACP National | Batch 3 | — | AB | Pending | — | — | Different org from NAACP LDF — verify contact distinctions |
+| B3-63 | UnidosUS Policy | UnidosUS | Batch 3 | — | AB | Pending | — | — | — |
+| B3-64 | Mijente Policy | Mijente | Batch 3 | — | AB | Pending | — | — | — |
+| B3-65 | Color of Change | Color of Change | Batch 3 | — | AB | Pending | — | — | — |
+| B3-66 | M4BL Policy Team | Movement for Black Lives | Batch 3 | — | AB | Pending | — | — | — |
+| B3-67 | AAJC Policy | Asian Americans Advancing Justice | Batch 3 | — | AB | Pending | — | — | — |
+| B3-68 | ACLU Criminal Law Reform | ACLU National | Batch 3 | — | P | Pending | — | — | Already in D42 Wave 1 — STRONG follow-up only; mark as D42 track not fresh Batch 3 |
+| B3-69 | The Sentencing Project | Sentencing Project | Batch 3 | — | P | Pending | — | — | Already in D42 Wave 1 — follow-up framing per Section 7.4 |
+
+**Duplicate prevention rules**:
+1. Before sending any contact in Batch 2 or Batch 3, verify their organization does not already appear in the Status column as "Sent" in a prior batch.
+2. If an organization has two contacts (e.g., Brennan Center — Weiser in Batch 1, Waldman and Crayton in Batch 2), send both Batch 2 contacts but note the organizational overlap in the Notes column. Never send more than 2 contacts at the same organization within the same 7-day window.
+3. If a contact appears in both the D42 AG track and the main Batch 2–3 contact list, they receive D42 materials first (because of the May 28 deadline); the main framework email sends no earlier than 48 hours after the D42 AG send — not the same day.
+4. Any contact who has requested removal (unsubscribe, explicit opt-out) is marked "REMOVE" in the Status column and never receives another email. This list is cumulative — check it before every new send batch.
+
+**Status codes**:
+- Pending — not yet sent
+- Sent MM/DD — sent on date
+- Bounced — hard bounce received; re-verify address
+- OOO [return date] — out of office; reschedule
+- Score 1–5 [date] — reply received; score assigned
+- REMOVE — do not contact again
+- HOLD — on conditional hold per go/no-go gate
+
+---
+
+## SECTION 11: Final Close-Out Checks (May 31)
+
+### 11.1 What May 31 Closes
+
+May 31 is the formal close-out of the Batch 2–3 distribution campaign. It is not the end of Phase 2 — Tier 2 research contacts (Weeks 5–12 per PHASE_2_OUTCOME_LAUNCH_ROADMAP.md) activate June 7 or later. May 31 closes:
+- All Batch 2 standard sends
+- All Batch 3 civil rights, labor, and state network sends
+- Domain 42 DEA hearing coordination (participation notice deadline was May 28; June 29 hearing preparation is a separate track)
+- All Tier 2 follow-ups per Section 7 (Templates A, B, C)
+- The May 20–28 Domain 42 amplification calendar
+
+### 11.2 May 31 Close-Out Checklist
+
+```
+MAY 31 CLOSE-OUT — 30-MINUTE REVIEW
+
+CONTACT STATUS AUDIT:
+□ Review Section 10.5 tracking table — every contact has a status (Sent, Bounced, OOO, Score, REMOVE, HOLD)
+□ Any contacts remaining as "Pending" on May 31: make a go/no-go call on each
+  - If still within timing window and path permits: send today or mark HOLD for Tier 2 reactivation
+  - If no longer in window: mark HOLD with note "June Tier 2 reactivation — [Tier 2 domain hook]"
+□ Any contacts who replied Score 3–5 but have not received a follow-up: send follow-up today or flag for Tier 2
+
+DOMAIN 42 CLOSE-OUT:
+□ Federal Register DEA-1362 docket page — check participant list for named organizations
+□ Google News search: "DEA rescheduling 2026" — check for any coverage citing the democratic accountability angle
+□ Log Domain 42 impact results in WORKLOG.md under "Domain 42 DEA Campaign — May 31 Close-Out"
+□ If any AG office confirmed intent to testify at June 29 hearing: flag in CHECKIN.md "June 29 Hearing Testimony Support — Needs Your Input"
+
+BATCH 3 COMPLETION AUDIT:
+□ Labor contacts (B3-46 through B3-57): all sent? If not — were they withheld per go/no-go gate? Log reason.
+□ Civil rights contacts (B3-58 through B3-69): all sent? Same audit.
+□ Faith coalitions (Poor People's Campaign, Faith in Action, Faith in Public Life): sent? If not, add to June Tier 2 queue.
+
+PHASE 2 HANDOFF:
+□ Aggregate engagement data for May 18–31 is entered in WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv (or equivalent Batch 2–3 tracker)
+□ Any Score 4–5 contacts from May 18–31 are listed in CHECKIN.md as Phase 2 priority recontact targets
+□ Classification for June research activation is confirmed: STRONG / MODERATE / WEAK (use PHASE_2_OUTCOME_LAUNCH_ROADMAP.md Section 4 timeline table for the corresponding research activation schedule)
+□ Flag for next session: "May 31 close-out complete — ready for Phase 2 research activation per [STRONG/MODERATE/WEAK] timeline"
+```
+
+### 11.3 June Handoff Contacts (Batch 2–3 Contacts Held for June Tier 2)
+
+If any contacts were held (not sent by May 31) due to timing, go/no-go gate logic, or path constraints, they transfer to the June Tier 2 contact list. The June Tier 2 activation date depends on the overall outcome classification per PHASE_2_OUTCOME_LAUNCH_ROADMAP.md Section 5.1:
+
+| Outcome | June Tier 2 Activation | First Send Date |
+|---------|----------------------|----------------|
+| STRONG | Days 20–28 from send (June 7–15) | No later than June 15 |
+| MODERATE | Days 27–35 from send (June 14–22) | No later than June 22 |
+| WEAK | Week 6+ (June 22+), only after D39 signal | No earlier than June 22 |
+
+**Contacts most likely to hold to June Tier 2** (based on allocation constraints in Section 2):
+- Continetti and Levin (AEI, cross-aisle) — STRONG path only; if outcome is MODERATE or WEAK, these hold to June
+- Samara Angel (Brookings) — STRONG path only
+- Marc Daalder (Substack) — STRONG path only
+- Faith coalitions (if not reached by May 31) — activate June 1 under any outcome
+- Any AG contacts who were in Tier 3–4 and did not receive materials before May 25 outer limit — activate for June 29 hearing support track (separate purpose from the participation notice; these contacts receive testimony support materials, not participation notice templates)
+
+### 11.4 Item 61 Integration Reference
+
+This framework references the Wave 1 outcome classification that Item 61 (WAVE_1_SYNTHESIS_FRAMEWORK.md) produces at the May 21 14:00 UTC decision gate. The classification from Item 61 — STRONG, MODERATE, or WEAK — is the direct input to:
+- Section 3A / 3B / 3C path selection in this document
+- Section 9.3 Batch 3 GO path logic
+- Section 10.1 daily send volumes (path-specific)
+- PHASE_2_OUTCOME_LAUNCH_ROADMAP.md Section 4 research activation timeline
+
+If Item 61 produces a SPLIT OUTCOME (strong in one constituency, weak in others), do not apply a single-path classification to this framework. Instead, apply the STRONG domain sequence for domains serving the performing constituency and the MODERATE sequence for all others per PHASE_2_OUTCOME_LAUNCH_ROADMAP.md Section 6.3.
+
+**Item 61 output that directly modifies this framework**:
+- Any Score 5 (integration signal) overrides all path logic — activate STRONG path immediately regardless of aggregate reply rate
+- If Item 61 confirms WEAK at 14:00 UTC May 21 and the delivery diagnosis finds no technical failure: activate Section 3C A/B test variants immediately (do not wait for the May 24 gate)
+- If Item 61 produces MODERATE with one Score 4 signal from a specific constituency: the Batch 3 go/no-go gate in Section 9 treats that Score 4 as the integration signal condition met — one less threshold to clear on May 24
+
+---
+
+*Prepared: May 18, 2026. Sections 9–11 added May 18, 2026 (Item 65 — Batch 2–3 Coordination Framework Pre-staging). Sources: WAVE_1_MONITORING_DASHBOARD.md (May 17); WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md (May 18); WAVE_1_SYNTHESIS_FRAMEWORK.md (Item 61, May 18); PHASE_2_OUTCOME_LAUNCH_ROADMAP.md (Item 1183, May 18); DOMAIN_42_MAY_28_EXECUTION_PREP.md (May 13); DOMAIN_42_AMPLIFICATION_STRATEGY.md (May 12); DISTRIBUTION_OUTREACH_CONTACTS.md (April 27); PHASE_1_POST_WAVE1_CONTINGENCY.md (May 17); POST_WAVE_1_SYNTHESIS_AND_TIER2_TRANSITION.md (May 17); [Federal Register DEA-1362](https://www.federalregister.gov/documents/2026/04/28/2026-08177/schedules-of-controlled-substances-rescheduling-of-marijuana) (confirmed May 18).*
