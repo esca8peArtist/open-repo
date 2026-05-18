@@ -22,13 +22,24 @@
    - ✅ Marc Elias (Democracy Docket / Elias Law) — confirmed active on institutional page
    - **Result**: All 5 Batch 1 contacts verified active (no role changes in past 3 days)
 
-**3. Next Steps (07:00–09:00 UTC Orchestrator Pre-Flight)**:
+**3. Phase 2 Prioritization Research** ✅ — PARALLEL AGENT WORK:
+   - ✅ Spawned resistance-research agent (05:25 UTC) to build Phase 2 Domain Prioritization Matrix
+   - ✅ Agent completed: phase-2-prioritization-matrix.md (1,500 words) with 4×4 evaluation grid
+   - ✅ Prioritization results:
+     - **Rank 1 — Domain 58** (Tribal Sovereignty): SCOTUS Trump v. Barbara deadline (late June/early July). Urgency 10/10. Begin May 20.
+     - **Rank 2 — Domain 56** (Civil Service): Already complete (6,800 words). Zero hours. **Distribute immediately as Wave 1 companion** (Partnership for Public Service briefing May 19)
+     - **Rank 3 — Domain 57** (Multilateral Withdrawal): August 10 UNGA deadline. Hungary ICC exit June 3 (+16 days). Begin June 10.
+     - **Rank 4 — Domain 59** (Economic Precarity): OBBBA enacted (House May 22, Senate July 1, enacted July 4). Broadest constituency. September deadline. Begin July 15.
+   - ✅ Committed: `0634ea8f` (phase-2-prioritization-matrix.md)
+   - **Strategic insight**: Domain 56 distribution today as Phase 1 Wave 1 companion yields highest synergy-per-hour and extends early-adopter engagement window (Partnership briefing May 19).
+
+**4. Next Steps (07:00–09:00 UTC Orchestrator Pre-Flight)**:
    - [ ] Template final scan (user action — requires email account access)
    - [ ] Spreadsheet baseline population (partial — Gist view counts require GitHub API auth)
    - [ ] Test send (user action — requires email account)
    - Scheduled via CronCreate: Job f59adf90 and 7b2c6f4c (0 7 18 5 *)
 
-**4. Wave 1 Timeline**:
+**5. Wave 1 Timeline**:
    - **06:00 UTC** (37 min): User setup deadline (baseline Gist views, Google Sheets setup, calendar reminders, Google Alerts, test email, Callais confirmation)
    - **07:00–09:00 UTC**: Orchestrator pre-flight verification
    - **08:00–10:00 UTC**: User executes Batch 1 sends (5 emails, staggered 15-30 min)
