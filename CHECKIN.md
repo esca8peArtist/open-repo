@@ -1,3 +1,52 @@
+## Since Last Check-in (Session 1275, 19:45–20:25 UTC)
+
+**Session Status**: ✅ **PHASE 5 DECISION FRAMEWORK COMPLETE — OPEN-REPO DIRECTION READY FOR USER SELECTION**
+
+**Current Time**: May 18, 2026, 19:45–20:25 UTC (24 hours until stockbot checkpoint)
+
+### Work Completed
+
+**open-repo Phase 5 Analysis** (1 comprehensive deliverable):
+1. **PHASE_5_DECISION_FRAMEWORK.md created** ✅
+   - Comprehensive analysis of three Phase 5 candidates (ZimWriter, OPDS, README)
+   - Four implementation paths with timelines (sequential, aggressive, conservative, conservative)
+   - Risk/effort assessment per candidate (MINIMAL for README, LOW for ZimWriter, MEDIUM for OPDS)
+   - Dependency mapping and decision criteria
+   - Community/user value comparison matrix
+   - All content self-contained; user can decide direction from document alone
+
+### Projects Status (May 18 20:25 UTC)
+
+**open-repo**: Phase 5 direction decision framework complete, awaiting user input on preferred path  
+**All other projects**: Unchanged from Session 1267 status
+- ✅ **stockbot**: May 19 20:00 UTC checkpoint (23.5h away), infrastructure validated
+- ✅ **resistance-research**: Wave 1 complete (5 emails sent), post-Wave-1 monitoring active May 18-21
+- ✅ **seedwarden**: Track B gates staged, Gate 1 deadline TODAY before 14:00 UTC (already passed)
+- All others: Blocked on user actions or awaiting event gates
+
+### Autonomous Work Available Now
+
+**NONE** — all critical-path projects are waiting for:
+1. May 19 20:00 UTC stockbot checkpoint
+2. May 20-21 resistance-research monitoring signals
+3. User decisions on multiple projects (open-repo Phase 5, seedwarden Gate 1, etc.)
+
+The Phase 5 framework work was exploratory/decision-support, not critical-path execution.
+
+### Needs Your Input
+
+1. **May 18 (URGENT — deadline passed)**: Seedwarden Gate 1 social account creation (intended before 14:00 UTC)
+2. **May 19 20:00 UTC**: Execute stockbot checkpoint query (execute command provided in POST_CHECKPOINT_OUTCOME_FRAMEWORK.md)
+3. **Anytime this week**: open-repo Phase 5 path decision (A / B / C / D from PHASE_5_DECISION_FRAMEWORK.md)
+4. **May 21 10:30 UTC**: Wave 1 signal classification + Phase 2 path decision
+5. **May 21 14:00 UTC**: User confirmation gate for Phase 2 direction
+
+### Token Usage
+
+- **Sonnet**: 5.2% (3,330,606 tokens) | **All-models**: 8.6% | Reset in 4 hours
+
+---
+
 ## Since Last Check-in (Session 1267, 19:36–19:45 UTC)
 
 **Session Status**: ✅ **ORIENTATION + STATE VERIFICATION — ALL SYSTEMS READY FOR MAY 19-21 EVENT GATES**
