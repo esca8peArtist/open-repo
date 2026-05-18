@@ -2,6 +2,16 @@
 
 ---
 
+## May 18, 2026 — Item 61: Wave 1 Synthesis Framework (WAVE_1_SYNTHESIS_FRAMEWORK.md)
+
+**Status**: COMPLETE
+
+### Item 61: May 21 Decision Instrument
+
+`WAVE_1_SYNTHESIS_FRAMEWORK.md` — Production-ready standalone decision guide for May 21 10:30–14:00 UTC. Covers: (1) 6-metric collection protocol, (2) Quick Reference decision tree (1-page), (3) STRONG/MODERATE/WEAK classification decision table with 9 priority rows and STRONG override rule, (4) Three activation paths (4A STRONG: launch Batch 2 today, social proof framing; 4B MODERATE: Batch 2 on schedule May 21-22, policy urgency framing; 4C WEAK: hold + post-mortem), (5) Phase 2 research schedules for all 3 paths, (6) Domain 42 DEA hearing coordination (path-independent, May 28 deadline), (7) May 21 decision checklist (10:30/10:45/11:00/14:00 UTC sequence), (8) May 25 secondary gate instructions. ~3,200 words. Synthesizes and operationalizes data from WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md, MAY_21_31_BATCH_2_3_COORDINATION_FRAMEWORK.md, DOMAIN_42_AMPLIFICATION_STRATEGY.md, PHASE_1_MEASUREMENT_SYSTEM_STAGING.md, WAVE_1_CONTINGENCY_DECISION_TREE.md, BATCH_1_CONTACT_LOG.md.
+
+---
+
 ## May 18, 2026 — Post-Wave-1 Analysis Framework (~10:00 UTC)
 
 **Status**: COMPLETE

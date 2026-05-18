@@ -4,6 +4,22 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Agent Session — Gate 2 Canva Pro Decision Framework — 2026-05-18
+
+**Task**: Research and build Gate 2 decision framework for Canva Pro, ready for May 19 user decision.
+
+**File created**: `projects/seedwarden/GATE_2_CANVA_DECISION_FRAMEWORK.md`
+
+**Key findings**:
+- Canva Pro: $15/month or $120/year ($10/month effective). 30-day free trial available (credit card required, no charge if cancelled before day 30).
+- Free tier critical limit: 1 Brand Kit with 3 colors maximum. Seedwarden Brand Kit requires 10 colors. This is the decisive constraint — free tier is insufficient for the full Brand Kit spec without manual hex entry workaround.
+- PDF Print at 300 DPI is available on the free tier (no upgrade needed for export quality).
+- Decision recommendation: Start 30-day trial May 19. Make pay/cancel decision May 24 after zone card production sprint is complete. All production finishes before any charge occurs.
+- Alternatives evaluated: Figma (wrong use case, steeper learning curve), Affinity Designer (now free post-Canva/Serif acquisition, but desktop app with high learning curve), Procreate (not applicable for document layout), HTML/CSS (not recommended).
+- Financial justification: At Month 2 conservative revenue ($270–540/month), $15/month is 2.8–5.6% of gross. The 2-sale test: 2 Zone Calendar individual sales ($14 gross) cover the subscription.
+
+---
+
 ## Agent Session — Phase 2 Supply Chain Contingency Planning (Comprehensive) — 2026-05-18
 
 **Task**: Track B Phase 2 — comprehensive supply chain contingency document for May 30 launch.
