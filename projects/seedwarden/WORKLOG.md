@@ -4,6 +4,46 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Agent Session — Phase 2 Supply Chain Contingency Planning (Comprehensive) — 2026-05-18
+
+**Task**: Track B Phase 2 — comprehensive supply chain contingency document for May 30 launch.
+
+**File updated**: `projects/seedwarden/phase-2-supply-chain-contingencies.md` (Version 2.0)
+- Word count: approximately 3,800 words across 6 sections
+- Section 1: Vendor alternates — full contact info, pricing, lead times, activation triggers
+  for Mountain Rose Herbs, Starwest Botanicals, Bulk Herb Store, local retail, Amazon Prime;
+  Strictly Medicinal, Prairie Moon, Brushwood Nursery, Etsy sellers, NC Native Plant Society;
+  iNaturalist CC-BY sprint protocol with per-species taxon IDs; Phase 2 medicinal herb reference sources
+- Section 2: Minimum viable launch decision trees — Canva palette delay (3-path MVL tree),
+  photo shoot delay (mockup fallback + compressed 1-day shoot), guide production delays
+  (MVL threshold table: 5 guides → 3 guides → 2 guides → June 10 by start date)
+- Section 3: Location contingencies — 4 options with cost, booking timeline, capability
+  assessment: Option 1 home indoor studio ($0–20, 15 min setup), Option 2 Asheville
+  Botanical Garden ($25–150, short-notice call on May 17–18), Option 3 United Plant Savers
+  private forest farm ($0 + honorarium, 10-day lead), Option 4 Peerspace/Giggster rental
+  studio ($50–150/half-day, 24–48 hr booking)
+- Section 4: Critical-path compression matrix — guide type × compression strategy × quality
+  impact; 2-day emergency compression plan (3-guide May 30 from May 28 start); parallelization
+  ceiling (2 guides/day max without quality loss)
+- Section 5: Risk scoring matrix — 12-row supplier × impact × probability table; 3 severity
+  tiers (Tier 1 zero launch impact, Tier 2 partial, Tier 3 full)
+- Section 6: Decision checklist — 9 date-specific gate checks (May 18–May 30) with under-15-
+  minute activation steps; May 29 5-check Go/No-Go gate; confidence assessment and user-input
+  gaps identified
+- Confidence: 90%+ on all fallbacks; 4 user-input gaps identified (order status, permit
+  status, Brand Kit status, shoot status)
+
+**Sources consulted**:
+- PHASE_2_LAUNCH_LOGISTICS.md — all vendor contacts, milestones, lead times, budget
+- phase-2-plant-sourcing-vendor-list.md — vendor specs, storage protocols
+- PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md — extended scenario analysis and communication templates
+- phase-2-location-scout-report.md — permit details, location logistics
+- CANVA_ENDANGERED_SPECIES_STYLE_GUIDE.md — palette hex codes
+- LIFESTYLE_PHOTOGRAPHY_STRATEGY.md — stock photo fallback options
+- Existing contingency-paths.md and june-6-contingency-path.md — scenario recovery sequences
+
+---
+
 ## Agent Session — May 30 Final Launch Readiness Checklist — 2026-05-18
 
 **Task**: Session 1202, Item 60. Create `MAY_30_FINAL_LAUNCH_READINESS_CHECKLIST.md` — comprehensive
