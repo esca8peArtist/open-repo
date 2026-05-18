@@ -1,383 +1,573 @@
 ---
-title: "Cross-Project Interdependency Risk Assessment — May 19–31, 2026"
+title: "Cross-Project Interdependency Risk Assessment"
+subtitle: "May 19–31, 2026: Timeline Conflict Audit, Resource Scenarios, and Decision Protocols"
 created: 2026-05-18
-status: production-ready
-scope: "Five converging project events across three high-priority projects. Maps conflicts, sequences, contingency trees, and decision priority for single-user execution May 19–31."
-projects: [stockbot, resistance-research, seedwarden, cybersecurity-hardening, mfg-farm]
-audience: "User (thorn) — scheduling reference for May 19–31 window"
-word_count: ~3200
+status: PRODUCTION-READY — Use this document as the May 19-31 coordination playbook
+audience: thorn (user) — refer to this document during checkpoint and decision gates for real-time conflict resolution
+authority: Item 63, Exploration Queue — Cross-Project Interdependency Risk Assessment
 ---
 
 # Cross-Project Interdependency Risk Assessment
-## May 19–31, 2026 Coordination Window
+## May 19–31, 2026: Timeline Conflicts, Resource Allocation, and Contingency Protocols
 
-**Purpose**: Five major project events converge in 13 days. This document maps every conflict, provides sequencing guidance for three scenarios, and gives you contingency trees so that any single surprise event does not cascade into a project pile-up.
+**Purpose**: Comprehensive coordination playbook for the May 19-31 period when five major events converge on a single decision-maker (you). Use this document to (1) identify real timing conflicts, (2) understand resource allocation trade-offs, (3) follow decision trees when conflicts arise, and (4) execute escalation protocols if simultaneous user attention is required.
 
-**How to use this document**: Read Section 1 first. If you are in a time crunch, jump directly to the scenario that matches your current situation (Section 2), then go to the relevant contingency tree (Section 3) if an outcome deviates from expectations. Section 4 gives the decision sequencing rules. Section 5 is the priority matrix when two decisions arrive at the same time.
-
-**Confidence**: High. All timings sourced from live project state: ORCHESTRATOR_STATE.md (May 18 10:52 UTC), PROJECTS.md, TRACK_B_GATE_COMPLETION_VERIFICATION.md (seedwarden, May 15), and may19_checkpoint_analysis.py (stockbot, May 17).
+**Why it matters**: May 19-31 is peak contention across six active projects (stockbot, resistance-research, seedwarden, mfg-farm, cybersecurity-hardening, systems-resilience). The five critical events below create overlapping decision windows that can cascade into rushed decisions or missed deadlines if not pre-planned.
 
 ---
 
-## Section 1: Timeline Conflict Matrix
+## SECTION 1: Timeline Conflict Audit (Hard Constraints Matrix)
 
-**Events in scope**:
+### 1.1 May 19–31 Critical Events (Master List)
 
-| ID | Event | Project | Window | Duration | Owner |
-|----|-------|---------|--------|----------|-------|
-| E1 | May 19 checkpoint execution | stockbot | May 19 20:00–21:30 UTC | 1.5 hr | User + script |
-| E2 | Post-checkpoint decision logging + Gate 2 option selection | stockbot | May 20 06:00–18:00 UTC | ~3 hr scattered | User |
-| E3 | Wave 1 72h monitoring close + early Phase 2 signal read | resistance-research | May 21 10:32 UTC (72h after send) | Passive; decision gate if STRONG | Orchestrator |
-| E4 | Phase 2 path decision gate | resistance-research | May 21–22 (early read); formal: May 25–28 | 30–60 min user decision | User |
-| E5 | Seedwarden Gate 2: Canva Brand Kit setup | seedwarden | May 19–24 (deadline May 24) | ~25 min user | User |
-| E6 | Seedwarden Gate 3: Kit email account setup | seedwarden | May 26–28 (deadline May 28) | ~20 min user | User |
-| E7 | mfg-farm test print execution + evaluation | mfg-farm | TBD; user action any time May 19–27 | 3–4 hr (print + evaluation) | User |
-| E8 | Etsy launch window (if test print approved) | mfg-farm | Within 5 days of print approval; 3–4 hr | 3–4 hr | User |
-| E9 | Cybersecurity: VeraCrypt restart + Phase 1 resumption | cybersecurity | Async — user Windows restart whenever convenient | 5 min restart + 2 hr Phase 1 walkthrough | User |
+| Date | Time (UTC) | Project | Event | Type | Duration | Decision Required? | Owner |
+|------|-----------|---------|-------|------|----------|-------------------|-------|
+| **May 19** | 19:00–19:55 | stockbot | Checkpoint pre-flight verification | Hard | 55 min | No | Orchestrator |
+| **May 19** | 20:00–20:15 | stockbot | **CHECKPOINT EXECUTION: Query + Outcome Classification** | Hard | 15 min | YES (classify scenario) | User |
+| May 19–24 | ongoing | seedwarden | Gate 2 (Canva Pro decision + Brand Kit setup) | Hard | ~25 min total decision | YES (approve $15/mo spend) | User |
+| May 20 | 06:00–07:00 | stockbot | Post-checkpoint diagnostics (if needed) | Conditional | 60 min | Conditional | Orchestrator |
+| **May 20** | 09:00–10:00 | resistance-research | Wave 1 early signal assessment | Hard | 60 min | YES (provisional classification) | User |
+| May 20 | 10:00–10:30 | resistance-research | Wave 1 signal aggregation (synthesis framework activation) | Soft | 30 min | No | Orchestrator |
+| **May 20** | TBD | mfg-farm | **Test print approval deadline (if approved for immediate print)** | Conditional | 180 min (3 hours) | YES (if test print approved) | User |
+| May 21 | 10:30–12:00 | resistance-research | Wave 1 72-hour synthesis completion (Item 61) | Hard | 90 min | No | Orchestrator |
+| **May 21** | 14:00–15:00 | resistance-research | **PHASE 2 PATH DECISION GATE** (Wave 1 outcome → Path A/B/C) | Hard | 60 min | YES (choose path) | User |
+| May 22–23 | ongoing | seedwarden | Zone card production (Canva, 4–6 hours) | Hard | 4–6 hours | No (user-driven if gates complete) | User |
+| May 24 | end-of-day | seedwarden | Zone cards → Google Drive hosting (30 min) | Hard | 30 min | No | User |
+| May 27–28 | TBD | seedwarden | Gate 3 (Kit email automation, 7.5–10.5 hours distributed) | Hard | 7.5–10.5 hrs | YES (approve Kit $33/mo spend) | User |
+| **May 29** | full day | seedwarden | Go/No-Go audit + 5-question gate check (2–3 hours) | Hard | 2–3 hours | YES (approve launch) | User |
+| **May 30** | 10:00–10:30 | seedwarden | **SEEDWARDEN PHASE 2 LAUNCH** | Hard | 30 min | YES (publish trigger) | User |
+| May 28 (end-of-window) | ongoing | resistance-research | Domain 42 congressional submission deadline (hard cutoff, 10 days from May 18) | Hard | — | Implicit (materials prepared) | — |
 
----
-
-### Conflict Pair Analysis
-
-**Legend**: HC = Hard Conflict (cannot run in parallel, same active-focus window); SEQ = Sequential window available (events are on different days or have a natural gap); NC = No Conflict (async, different days, or passive).
-
-| Pair | Conflict Type | Analysis |
-|------|--------------|---------|
-| E1 + E2 (checkpoint + post-checkpoint) | SEQ | E1 ends 21:30 UTC May 19. E2 starts May 20 morning. Natural 8.5-hour gap. No forced overnight work. |
-| E1 + E5 (checkpoint + Canva Gate 2) | NC | Gate 2 window is May 19–24. Canva work is async and can happen any time May 20–23. Do not schedule Canva work on May 19 evening. Reserve that window for checkpoint only. |
-| E1 + E7 (checkpoint + test print start) | HC — if test print launches same evening | If user starts a 3D print job at 19:00 UTC May 19 (before checkpoint), the print runs in background during checkpoint (acceptable). If user expects to supervise the print actively during 20:00–21:30 UTC, that is a hard conflict with checkpoint attention. Recommendation: start print no later than 18:00 UTC so it runs unattended during checkpoint, OR defer print to May 20. |
-| E2 + E8 (post-checkpoint + Etsy launch) | HC — May 20 only | If test print is approved May 19 and Etsy launch is attempted May 20, both E2 and E8 fall on May 20. Combined demand: ~6–7 hours on a single day. This is the primary compression risk. See Scenario C and Contingency Tree 2 for resolution. |
-| E3 + E4 (Wave 1 close + Phase 2 decision) | SEQ | E3 closes at 10:32 UTC May 21. E4 early-read decision can happen same afternoon. These are complementary, not conflicting — E3 produces the data E4 needs. |
-| E4 + E5 (Phase 2 decision + Canva Gate 2) | NC | Phase 2 decision (May 21–22) and Canva Gate 2 (May 19–24 window) overlap in calendar days but require different cognitive modes (strategic decision vs. UI task). If user is making the Phase 2 decision May 21–22, defer Canva work to May 22–23 to avoid decision fatigue on the same day. |
-| E4 + E6 (Phase 2 decision + Kit Gate 3) | NC | 6-day gap minimum. Phase 2 decision by May 22 (early) or May 25–28 (formal). Gate 3 starts May 26. No parallelism required. |
-| E5 + E6 (Canva Gate 2 + Kit Gate 3) | SEQ | Gate 2 must complete before Gate 3 begins (Kit landing page requires Canva-designed assets). Verified per TRACK_B_GATE_COMPLETION_VERIFICATION.md dependency matrix. This is planned sequencing, not a conflict. |
-| E7 + E8 (test print + Etsy launch) | SEQ | E8 starts within 5 days of E7 pass. If E7 executes May 19–20, E8 window opens May 20–25. If E7 executes May 25–26, E8 window opens May 26–31. No parallelism required — they are sequential by design. |
-| E8 + E3/E4 (Etsy launch + Phase 2 decision) | NC — unless test print approved May 19–20 | If Etsy launch falls May 20–21 and Phase 2 decision falls May 21–22, user faces two context switches in 48 hours. These are independent projects with no data dependency. Can be sequenced: Etsy launch May 20 → Phase 2 decision May 22. |
-| E9 + any (VeraCrypt + all others) | NC | VeraCrypt restart is a 5-minute action on a Windows machine. It does not conflict with any other event. Phase 1 walkthrough (steps 1.4–1.7, ~2 hrs) can happen any day May 19–31 with no dependency on other projects. Lowest-priority scheduling item in this window. |
+**Legend**: Hard = immovable deadline; Conditional = only if earlier decision goes certain direction; Soft = flexible, can slide; TBD = exact time depends on user choice
 
 ---
 
-### Critical Zone Summary
+### 1.2 Day-by-Day Visual Timeline (May 19–31)
 
-Three calendar zones carry the highest conflict risk:
+```
+MAY 2026 CRITICAL EVENTS
+═════════════════════════════════════════════════════════════════════════════════════════
 
-**Zone 1: May 19 (checkpoint day)**
-Events present: E1 (mandatory 20:00 UTC), E5 (first day of Gate 2 window), E7 (optional test print start).
-Rule: Reserve 19:00–22:00 UTC for E1 only. Do not start new tasks after 18:00 UTC.
+DAY  DATE  TIME (UTC)  EVENT                                    CONFLICT?    OWNER        DURATION
+──────────────────────────────────────────────────────────────────────────────────────────
 
-**Zone 2: May 20 (post-checkpoint + potential Etsy)**
-Events present: E2 (post-checkpoint logging, ~3 hrs), E8 (if test print approved May 19, Etsy launch window opens).
-Rule: If Etsy launch is needed May 20, sequence it before E2 afternoon work. See Scenario B for exact times.
+SUN  May 19  19:00  Stockbot pre-flight                          □ CLEAR     Orchestrator  55 min
+        20:00  ★ CHECKPOINT EXECUTION (outcome classification)   ★ KEY       User          15 min
 
-**Zone 3: May 21–22 (Wave 1 close + Phase 2 decision)**
-Events present: E3 (72h monitoring close 10:32 UTC May 21), E4 (Phase 2 early-read decision), E5 (Gate 2 still open).
-Rule: May 21 morning is for reading Wave 1 signals. Phase 2 decision by May 22 if signals are clear. Defer Canva (Gate 2) to May 22–23 to avoid cognitive overload May 21.
+MON  May 20  06:00  Stockbot post-checkpoint (if FAR-MISS)      □ IF FARX    Orchestrator  60 min
+        09:00  ★ WAVE 1 EARLY SIGNAL READ (provisional class)   ★ KEY       User          60 min
+        10:00  Wave 1 aggregation → activate Batch 2 path        □ CLEAR     Orchestrator  30 min
+        TBD    ⚠ TEST PRINT APPROVAL WINDOW (if approved)        ⚠ BLOCKS    User          TBD
 
----
+TUE  May 21  10:30  Wave 1 72-hour synthesis (Item 61)           □ CLEAR     Orchestrator  90 min
+        14:00  ★ PHASE 2 PATH DECISION GATE (choose A/B/C)       ★ KEY       User          60 min
 
-## Section 2: Resource Allocation Scenarios
+WED-THU  May 22–23  Zone card production (Canva, 4–6 hrs)        □ CLEAR     User          4–6 hrs
 
-### Scenario A: Ideal — Test Print Approved May 25+
+FRI  May 24  10:00  Gate 2 deadline (Canva Brand Kit, by EOD)    ★ HARD      User          25 min
+        EOD    Zone cards → Google Drive hosting                  □ CLEAR     User          30 min
 
-**Conditions**: User defers test print execution until May 25 or later. No mfg-farm activity in the May 19–24 window.
+SAT  May 25  —      Post-Gate 2 holding pattern                  □ CLEAR     —             —
 
-**Why this is ideal**: Removes the compression risk from Zone 2 entirely. Stockbot checkpoint May 19, post-checkpoint planning May 20, Phase 2 decision May 21–22, and Seedwarden Gate 2 May 20–24 all proceed without mfg-farm interference. Etsy launch window opens May 26–31 — after all resistance-research and stockbot decisions are resolved.
+SUN  May 26  —      Post-Gate 2 holding pattern                  □ CLEAR     —             —
 
-**Optimal sequencing**:
+MON  May 27–28       ⚠ Gate 3 (Kit automation, 7.5–10.5 hrs)      ⚠ BLOCKS    User          7.5–10 hrs
+                     (Must be split across May 24–28)
 
-| Day | Primary Focus | Est. User Hours | Notes |
-|-----|--------------|-----------------|-------|
-| May 19 | Stockbot checkpoint (E1) | 1.5 hr (20:00–21:30 UTC) | Reserve evening; all other tasks done by 18:00 UTC |
-| May 20 | Post-checkpoint logging (E2) + Canva Gate 2 start (E5) | 3 + 1 = 4 hr | E2 in morning; Canva afternoon or evening |
-| May 21 | Wave 1 close (E3) + Phase 2 early read (E4) | 1 hr | Passive monitoring to ~noon; decision call afternoon |
-| May 22 | Canva Gate 2 completion (E5) | 1 hr | If not finished May 20; no other competing tasks |
-| May 23–24 | Gate 2 verification (E5) | 0.5 hr | Check Canva brand kit exports per checklist |
-| May 25 | Test print execution (E7) | 3–4 hr (print + evaluation) | Completely clear of all other active gates |
-| May 25–28 | Formal Phase 2 adoption assessment (E4) | 30–60 min | Orchestrator synthesizes; user reviews and decides |
-| May 26–28 | Kit Gate 3 setup (E6) | ~20 min | After Gate 2 verified complete |
-| May 26–31 | Etsy launch (E8) | 3–4 hr | After print approval; no competing gates |
-| May 29 | Seedwarden go/no-go decision (20:00 UTC) | 30 min | All gates verified per checklist |
-| May 30 | Seedwarden launch (09:00 UTC) | 30 min | |
-| Anytime | VeraCrypt restart + Phase 1 resumption (E9) | 5 min + 2 hr | No dependency on any other event |
+TUE  May 29  full    ★ GO/NO-GO LAUNCH AUDIT (2–3 hours)         ★ KEY       User          2–3 hrs
 
-**Risk**: Near-zero. Only failure mode is if test print produces a design defect that requires redesign — but that is an mfg-farm-internal issue and does not affect any other project timeline.
+WED  May 30  10:00   ★★★ SEEDWARDEN PHASE 2 LAUNCH ★★★           ★★ LAUNCH   User          30 min
 
-**Total peak-day user hours**: 4 hours (May 20). All other days under 2 hours.
+THU–WED    May 28 (EOW) Domain 42 congressional deadline           ◆ EXTERNAL  —             —
+(May 18–May 28)       (10 days from Item 63 creation)
+```
 
 ---
 
-### Scenario B: Realistic — Test Print Approved May 19–20
+### 1.3 True Conflicts vs. Sequential Windows
 
-**Conditions**: User executes test print during the day on May 19 (print starts ~14:00–16:00 UTC, completes overnight), evaluates and approves May 20 morning, and wants Etsy launch May 20.
+**TRUE CONFLICTS** (simultaneous, impossible to do both):
+- **NONE** in the May 19-31 period. All hard constraints are sequential with buffers.
 
-**Key constraint**: Stockbot checkpoint is May 19 20:00–21:30 UTC. Test print can run in background during checkpoint if started by 18:00 UTC. Print evaluation happens May 20 morning before post-checkpoint work.
+**SEQUENTIAL WINDOWS WITH TIGHT SCHEDULING** (back-to-back, acceptable with discipline):
+- **May 19 20:00–20:15 (checkpoint) + May 20 09:00–10:00 (Wave 1 read)**: 12 hours between events. Buffer is healthy.
+- **May 20 09:00 (Wave 1 read) + May 21 14:00 (Phase 2 decision)**: 29 hours for synthesis and analysis. Standard.
+- **May 24 EOD (Gate 2 deadline) + May 27 start (Gate 3 begins)**: 3-day gap. Acceptable.
+- **May 29 full day (launch audit) + May 30 10:00 (launch)**: 12-hour gap. Tight but standard pre-launch.
 
-**Optimal sequencing**:
-
-| Time | Action | Notes |
-|------|--------|-------|
-| May 19 12:00–16:00 UTC | Start test print (3–4 hr print job) | Print runs unattended |
-| May 19 16:00–19:30 UTC | Free window (print running) | Do Canva Gate 2 work during this window (~1 hr) |
-| May 19 19:30–20:00 UTC | Pre-checkpoint prep | Review checkpoint script, confirm Jetson SSH accessible |
-| May 19 20:00–21:30 UTC | Checkpoint execution (E1) | Print still running in background — acceptable |
-| May 19 21:30–23:00 UTC | Print monitoring / wind down | Check print progress; no new decisions needed |
-| May 20 06:00–08:00 UTC | Evaluate test print (E7) | Pass/fail decision on snap-arm clearance |
-| May 20 08:00–11:00 UTC | If approved: Etsy launch (E8) | 3-hour window; compressed but doable per checklist |
-| May 20 11:00–14:00 UTC | Buffer / break | Do not start post-checkpoint work until afternoon |
-| May 20 14:00–17:00 UTC | Post-checkpoint logging + Gate 2 option selection (E2) | 3 hr scattered; no conflict with completed Etsy work |
-| May 21 | Wave 1 close (E3) + Phase 2 early read (E4) | 1 hr as in Scenario A |
-| May 22–24 | Canva Gate 2 completion (E5) | Resume from where left off on May 19 |
-
-**Risk**: Moderate. The May 20 morning window (Etsy launch 08:00–11:00 UTC) is compressed. The Etsy launch checklist is 648 lines with sequential steps — if any step hits a platform issue (Etsy listing approval delay, photo upload error), it bleeds into the post-checkpoint afternoon window. Mitigation: do not start Etsy listing upload until print evaluation is definitively PASS (not conditional). If evaluation takes until 09:00 UTC, compress Etsy launch to 09:00–12:00 UTC and push post-checkpoint work to 13:00–16:00 UTC.
-
-**Total peak-day user hours (May 20)**: 6–7 hours. Feasible but represents the limit of sustainable single-day load.
+**CONDITIONAL WINDOWS** (only appear if user chooses certain paths):
+- **Test print approval May 19-20 + Etsy launch May 20 (3 hours)**: Creates resource contention if user has limited May 20 afternoon capacity.
+- **Checkpoint FAR-MISS-C2 (May 19 20:00) + Phase 2 decision (May 21 14:00)**: May 20 becomes emergency stockbot diagnostics day, shortening Wave 1 signal read time.
 
 ---
 
-### Scenario C: Compression — Test Print Approved May 20 + Phase 2 Decision May 21 + Gate 2 Active
+## SECTION 2: Resource Allocation Scenarios
 
-**Conditions**: Test print is not evaluated until May 20 afternoon (print ran overnight May 19, evaluation delayed by checkpoint fatigue). Etsy launch now competes with post-checkpoint work May 20, and Phase 2 decision falls May 21. Gate 2 (Canva, due May 24) still pending.
+Three realistic scenarios emerge from the key decision points. Each includes a detailed schedule, conflict assessment, and resource implications.
 
-**This is the highest-risk scenario.** Three project contexts switch within 48 hours.
+### Scenario A: Positive Path (Test Print Approved, Checkpoint PASS/NEAR-MISS)
 
-**Recommended resolution — strict sequential sequencing**:
+**Trigger**: User approves test print for May 20-21 AND checkpoint returns PASS or NEAR-MISS outcome
 
-| Step | Time | Action | Why this order |
-|------|------|--------|----------------|
-| 1 | May 19 20:00–21:30 UTC | Checkpoint execution (E1) | Non-negotiable; has fixed UTC time |
-| 2 | May 20 06:00–09:00 UTC | Test print evaluation (E7) | Do this first; binary pass/fail; <30 min |
-| 3 | May 20 09:00–12:00 UTC | Etsy launch (E8), IF print passed | Accomplish while energy is high; independent of stockbot |
-| 4 | May 20 13:00–16:00 UTC | Post-checkpoint logging (E2) | Stockbot Gate 2 option selection; ~3 hrs |
-| 5 | May 21–22 | Phase 2 decision (E4) | After Wave 1 closes 10:32 UTC May 21; decision by May 22 |
-| 6 | May 22–24 | Gate 2 Canva (E5) | Lowest urgency of remaining items; still within deadline |
+**Schedule**:
 
-**What not to attempt**: Do not interleave Etsy launch steps with post-checkpoint logging on May 20. These require different cognitive modes (creative listing vs. data analysis). Completing each task before starting the next is faster than context-switching.
+| When | Duration | Task | Conflict? |
+|------|----------|------|-----------|
+| May 19, 19:00–19:55 UTC | 55 min | Stockbot pre-flight | None |
+| May 19, 20:00–20:15 UTC | 15 min | ★ Checkpoint execution + outcome classification | None |
+| May 20, 06:00–07:00 UTC | 60 min | Stockbot post-checkpoint review (light touch, not diagnostics) | None |
+| May 20, 08:00–09:00 UTC | 60 min | Test print monitoring + early setup | Clear before next event |
+| **May 20, 09:00–10:00 UTC** | **60 min** | ★ Wave 1 early signal assessment (user reads inbox + dashboards) | **SEQUENTIAL** |
+| May 20, 10:00–12:00 UTC | 120 min | Test print execution (user + fabricator coordination, if remote) | Parallel possible |
+| May 20, 14:00–17:00 UTC | 180 min | Etsy launch prep + listing staging (if test print approved) | Can overlap with Wave 1 monitoring |
+| May 21, 10:30–12:00 UTC | 90 min | Wave 1 72-hour synthesis + analysis (orchestrator) | Passive user role |
+| **May 21, 14:00–15:00 UTC** | **60 min** | ★ Phase 2 path decision gate (user chooses A/B/C based on Wave 1 outcome) | None |
+| May 21, 15:00+ | — | Post-decision: Etsy final checks + Batch 2 acceleration (if Wave 1 STRONG) | None |
 
-**If May 20 runs long (Etsy issues bleed past 12:00 UTC)**: Push post-checkpoint logging to May 21 morning (before Wave 1 close). The Gate 2 option selection for stockbot is documentation, not real-time execution — a one-day slip has no downstream consequence.
+**Resource Tally**:
+- User attention required: ~4.5 hours (checkpoint 15 min + Wave 1 read 60 min + Phase 2 decision 60 min + Etsy/test print coordination 180 min distributed)
+- Decision load: 3 major decisions (checkpoint classification, Wave 1 signal read, Phase 2 path choice)
+- Parallel work possible: Wave 1 monitoring can continue during May 20 Etsy prep (low cognitive load)
 
-**If Phase 2 decision is WEAK**: See Contingency Tree 3. This actually frees up user time by reducing the urgency of Phase 2 preparation work.
+**Feasibility**: ✅ **FEASIBLE** — Tight schedule but no true conflicts. Test print and Wave 1 work can interleave because they operate on different decision cycles.
 
----
-
-## Section 3: Contingency Decision Trees
-
-### Tree 1: FAR-MISS C2 Checkpoint Outcome (Worst Case)
-
-**Trigger**: Checkpoint script exits code 2 (May 19 21:30 UTC). AAPL model has generated 0 sells since Lever A deployment on May 16. Infrastructure failure or signal generation failure confirmed.
-
-**Immediate consequence**: Orchestrator initiates emergency stockbot diagnosis protocol. Estimated user-facing work: 4–6 hours over May 20–21 (log review, config investigation, option assessment).
-
-**Downstream question 1: Does this delay the Phase 2 decision (E4)?**
-No. Phase 2 decision is based on Wave 1 engagement data (email opens, Gist clicks, replies) — not stockbot state. These are entirely independent. Phase 2 can proceed on its normal timeline (May 21–22 early read, May 25–28 formal assessment) regardless of stockbot condition.
-
-**Downstream question 2: Does FAR-MISS affect user attention for other projects?**
-Yes. If user is troubleshooting stockbot May 20–21, cognitive bandwidth is split. Recommendation:
-- Defer test print evaluation to May 21 (if print ran overnight May 19, the parts can sit until May 21 without issue)
-- Defer Etsy launch (E8) to May 22–25 (no data loss; Etsy platform is open all week)
-- Proceed with Gate 2 Canva work May 22–24 as planned (it is UI work, not decision-making, and provides mental context-switching relief from stockbot diagnosis)
-- Do NOT defer Phase 2 decision — it is independent and should proceed on schedule
-
-**Sequencing under FAR-MISS**:
-
-| Day | Focus | Notes |
-|-----|-------|-------|
-| May 19 21:30 UTC | Confirm FAR-MISS outcome | Log result; do not attempt diagnosis tonight |
-| May 20 | Emergency stockbot diagnosis (4–6 hrs) | Priority 1; defer all non-critical items |
-| May 21 morning | Complete diagnosis + Wave 1 close (E3) | These can run in parallel (monitoring is passive) |
-| May 21 afternoon | Phase 2 early-read decision (E4) | Independent of stockbot |
-| May 22–24 | Gate 2 Canva (E5) | Proceed on schedule |
-| May 22–25 | Test print + Etsy launch (E7, E8) | Deferred from May 20; no deadline pressure |
+**Key Risk**: If test print fails OR requires redesign, May 20 becomes firefighting instead of Etsy launch. See Contingency 2 below.
 
 ---
 
-### Tree 2: Test Print Approved May 19–20 AND Checkpoint FAR-MISS
+### Scenario B: Checkpoint FAR-MISS + Test Print Approved (Emergency Stockbot Focus)
 
-**Trigger**: Both the worst-case stockbot outcome AND early mfg-farm approval land on the same 24-hour window.
+**Trigger**: User approves test print AND checkpoint returns FAR-MISS-C2 outcome (Lever A failed, threshold tuning required)
 
-**This is the dual-pressure scenario.** User has: (a) a failed stockbot requiring urgent diagnosis, (b) an approved test print requiring an Etsy launch that has time value (launching sooner captures more of a weekly Etsy traffic cycle).
+**Schedule**:
 
-**Decision rule**: Stockbot diagnosis takes priority over Etsy launch. The Etsy launch window is flexible (May 20–27); stockbot diagnostic work is time-sensitive because the next checkpoint is not scheduled until after diagnosis is complete — delay compounds.
+| When | Duration | Task | Conflict? |
+|------|----------|------|-----------|
+| May 19, 19:00–19:55 UTC | 55 min | Stockbot pre-flight | None |
+| May 19, 20:00–20:15 UTC | 15 min | ★ Checkpoint execution + outcome classification (FAR-MISS detected) | None |
+| **May 20, 06:00–08:00 UTC** | **120 min** | ⚠️ EMERGENCY: Stockbot diagnostics (root cause analysis + Lever B exploration) | **BLOCKS Wave 1 morning** |
+| May 20, 08:00–09:00 UTC | 60 min | Stockbot diagnostics continued OR decision point reached | Overlaps Wave 1 read window |
+| **May 20, 09:00–10:00 UTC** | **60 min** | ★ Wave 1 early signal read (ABBREVIATED — 30 min if stockbot decision needed) | **COMPRESSED** |
+| May 20, 10:00–12:00 UTC | 120 min | **OPTION 1A**: Etsy launch prep (defer stockbot follow-up to May 21) **OR OPTION 1B**: Stockbot Lever B testing (defer test print to June 1-2) | **CHOOSE ONE** |
+| May 21, 06:00–08:00 UTC | 120 min | Stockbot Lever B results analysis + decision (if Option 1B chosen) | Morning hours only |
+| **May 21, 14:00–15:00 UTC** | **60 min** | ★ Phase 2 path decision gate (Wave 1 outcome) **+ POSSIBLE DUAL DECISION** (if Lever B not resolved) | **DECISION LOAD DOUBLED** |
+| May 21, 15:00–17:00 UTC | 120 min | Post-decision: Etsy launch (if Option 1A) OR Stockbot Lever C planning (if Option 1B) | Depends on May 21 decision |
 
-**Recommended sequencing**:
+**Option 1A Resource Tally** (Prioritize Etsy):
+- User attention required: ~4.5 hours (same as Scenario A, but more compressed)
+- Decision load: 3 major decisions + 1 emergency choice (FAR-MISS path: defer stockbot OR defer test print)
+- Stockbot risk: FAR-MISS not resolved until May 21 afternoon, when Phase 2 decision is also due
+- **Result**: May 21 has dual decision-making load (Lever B outcome + Phase 2 path) — HIGH STRESS
 
-| Time | Action | Rationale |
-|------|--------|-----------|
-| May 19 20:00–21:30 UTC | Checkpoint execution | Fixed time |
-| May 19 21:30–22:00 UTC | Confirm FAR-MISS; do not begin diagnosis | Rest; diagnosis at 09:00 UTC tomorrow |
-| May 20 06:00–08:00 UTC | Evaluate test print (E7) | Binary, fast (<30 min) — do this first to clear the decision |
-| May 20 08:00–09:00 UTC | If print approved: stage Etsy listing (do not publish yet) | Draft listing, upload photos — but do not click Publish |
-| May 20 09:00–15:00 UTC | Stockbot FAR-MISS diagnosis (6 hrs) | Priority; full focus |
-| May 20 15:00–18:00 UTC | Post-checkpoint logging (E2) | ~3 hrs; can overlap with diagnosis wrap-up |
-| May 21 | Publish Etsy listing (E8) | 1-day slip from ideal; no material impact on listing performance |
+**Option 1B Resource Tally** (Prioritize Stockbot):
+- User attention required: ~5.5 hours (checkpoint + stockbot diagnostics + Wave 1 read compressed + Phase 2 decision)
+- Decision load: 3 major decisions + 1 emergency choice (FAR-MISS mitigation resolved by May 20 afternoon)
+- Test print risk: Deferred to June 1-2, delays Etsy launch by 11-12 days
+- Etsy risk: 10-day delay reduces May momentum and competitive window
+- **Result**: May 21 has lighter decision load (Lever B already resolved) — LOWER STRESS but operational delay
 
-**Why stage but not publish Etsy on May 20 morning**: Staging the listing (photos, title, description, pricing) takes ~1.5 hours and can happen while stockbot is still pending. Publishing takes ~15 minutes and should wait until diagnosis is resolved — if stockbot requires a config change that demands user restart or monitoring, having an active Etsy launch competing for attention is a risk.
+**Feasibility**: ⚠️ **FEASIBLE BUT RISKY** — FAR-MISS contingency creates Option 1A/1B fork. One decision (stockbot vs. Etsy priority) must be made by May 20 morning or May 21 decision load becomes unsustainable.
 
----
-
-### Tree 3: Wave 1 WEAK Outcome + Gate 2 (Canva) Both Active May 21–24
-
-**Trigger**: Wave 1 72h engagement scoring is WEAK (<30% reply rate, low Gist views) at close on May 21. Per the monitoring framework, WEAK outcome means: hold distribution, revise messaging before Batch 2, Phase 2 timeline shifts to August.
-
-**Question 1: Does WEAK outcome cancel Phase 2 research June 1 launch?**
-Yes, for the aggressive timeline. If WEAK, Phase 2 production (Domains 56–59 research execution, Items 61–62 in Exploration Queue) shifts from June 1 to an August window pending amplification strategy revision. This is documented in the Wave 1 monitoring framework.
-
-**Question 2: Does WEAK outcome free up user time?**
-Yes. Materially. A WEAK outcome means the Phase 2 preparation work that was planned for May 25–June 1 (briefing orchestrator, selecting research path, staging distribution infrastructure) no longer has an urgent deadline. This frees approximately 4–6 hours of user decision-making time that would have been spent on Phase 2 path selection.
-
-**Consequence for Gate 2 (Canva)**: The freed time can be used to complete Canva Brand Kit work (E5) more thoroughly — including zone card template creation that would otherwise be a CONDITIONAL on launch day. If WEAK outcome is confirmed May 21, redirect the ~2 hours saved from resistance-research decision-making to completing Gate 2 fully by May 23 instead of May 24.
-
-**Recommended action under WEAK**:
-
-| Date | Action |
-|------|--------|
-| May 21 afternoon | Confirm WEAK outcome with orchestrator; note August revised timeline |
-| May 21–23 | Redirect saved time to Gate 2 Canva completion |
-| May 22–24 | Gate 2 verification per TRACK_B_GATE_COMPLETION_VERIFICATION.md |
-| May 25–28 | Formal adoption assessment (still runs on schedule — even WEAK outcomes get a 14-day adoption window per framework) |
-| August | Phase 2 research re-evaluation once amplification strategy is revised |
+**Recommendation**: If checkpoint FAR-MISS detected, choose Option 1B (resolve stockbot first) UNLESS Wave 1 signals are exceptionally strong (would justify keeping Etsy window open). See Contingency Decision Tree below.
 
 ---
 
-### Tree 4: Dual Decision Gate — Phase 2 Formal Assessment (May 25–28) AND Gate 3 Kit Setup (May 26–28)
+### Scenario C: Test Print Delayed to May 25+ (Clean Scheduling)
 
-**Trigger**: Phase 2 formal adoption assessment window (May 25–28) overlaps with Seedwarden Gate 3 execution window (May 26–28). Both require user attention.
+**Trigger**: User defers test print approval past May 24 (Seedwarden gates take priority)
 
-**Question: Do these conflict?**
-No forced parallelism. They are compatible because:
-- Phase 2 formal assessment is primarily orchestrator-generated synthesis (reading a 1–2 page summary); user decision time is 30–60 minutes total
-- Gate 3 (Kit account + landing page + email sequence + 3-test protocol) is ~20 minutes of UI work + 35 minutes of verification testing
+**Schedule**:
 
-Total combined demand May 26–28: approximately 2 hours across 3 days. This is within normal daily load.
+| When | Duration | Task | Conflict? |
+|------|----------|------|-----------|
+| May 19, 19:00–19:55 UTC | 55 min | Stockbot pre-flight | None |
+| May 19, 20:00–20:15 UTC | 15 min | ★ Checkpoint execution + outcome classification | None |
+| May 20, 06:00–07:00 UTC | 60 min | Stockbot post-checkpoint (light touch) | None |
+| **May 20, 09:00–10:00 UTC** | **60 min** | ★ Wave 1 early signal assessment | None |
+| May 20, 10:00–12:00 UTC | 120 min | Post-Wave-1 analysis + early Batch 2 prep | None |
+| May 21, 10:30–12:00 UTC | 90 min | Wave 1 synthesis | None |
+| **May 21, 14:00–15:00 UTC** | **60 min** | ★ Phase 2 path decision gate | None |
+| May 22–24, TBD | TBD | Seedwarden Gate 2 (Canva Brand Kit, 25 min) + Zone card production (4–6 hrs) | None (standard) |
+| May 24, EOD | 30 min | Zone cards → Google Drive | None |
+| May 27–28, TBD | 7.5–10 hrs | Seedwarden Gate 3 (Kit automation) | None (scheduled) |
+| May 29, full day | 2–3 hrs | Launch go/no-go audit | None |
+| **May 30, 10:00–10:30 UTC** | **30 min** | ★ Seedwarden launch | None |
+| June 1–2, TBD | 180 min | Test print execution (now with full post-Seedwarden bandwidth) | None |
+| June 3–5 | TBD | Etsy launch (1 week after Seedwarden launch) | None (clear window) |
 
-**Recommended daily distribution**:
+**Resource Tally**:
+- User attention required: ~4 hours (checkpoint + Wave 1 read + Phase 2 decision, with Seedwarden gates running on separate schedule)
+- Decision load: 3 major decisions (checkpoint, Wave 1, Phase 2) + 4 Seedwarden gates (May 20, 24, 27–28, 29)
+- Parallel capacity: HIGH — Seedwarden and stockbot/resistance-research operate independently
+- Test print timing: Deferred, but executes in a clear window (June 1-2)
 
-| Date | Action | Duration |
-|------|--------|---------|
-| May 25 | Read Phase 2 adoption assessment (orchestrator-prepared) | 20–30 min |
-| May 26 | Gate 3 Kit account creation + email sequence draft | 1 hr |
-| May 27 | Make Phase 2 path decision (STRONG / MODERATE / WEAK confirmed) | 30 min |
-| May 27–28 | Gate 3 landing page + 3-test protocol | 35 min |
-| May 28 | Gate 3 finalization; update social bios with Kit URL | 15 min |
-| May 29 | Seedwarden go/no-go decision (20:00 UTC) | 30 min |
+**Feasibility**: ✅ **MOST FEASIBLE** — No resource contention. Each project runs on its own schedule with healthy buffers.
 
-These are sequential with no dependency between them. The only failure mode is if Gate 3 test protocol reveals a Kit email delivery issue on May 28 that requires Kit support response (48-hour propagation time for SPF/DKIM). If this occurs, initiate Kit support ticket May 28 immediately — it will resolve before May 30 launch regardless of Phase 2 decision timing.
-
----
-
-## Section 4: Communication Protocol
-
-The following rules govern decision sequencing across all five projects for May 19–31.
-
-**Rule 1: Checkpoint outcome (May 19 20:00 UTC) is the highest-priority decision input.**
-All downstream stockbot decisions (Gate 2 option selection, resource allocation, next checkpoint scheduling) depend on the May 19 outcome. Do not make stockbot configuration changes between May 16 and May 19 — the checkpoint script reads the live config. Post-checkpoint, the outcome classification (PASS / STILL_MISS_B2 / FAR_MISS) determines whether May 20 is normal or emergency mode.
-
-**Rule 2: Phase 2 path decision (formal May 25–28, early May 21–22 if STRONG) must be final before June 1 research production starts.**
-The Exploration Queue Items 61–62 are staged for activation on May 21 (Wave 1 synthesis) and May 25+ (Phase 2 production scaffolding). These cannot begin until the STRONG/MODERATE/WEAK classification is confirmed. User's role: review the orchestrator-prepared synthesis document and select the path. This is a 30–60 minute decision, not an extended analysis session.
-
-**Rule 3: Test print approval (E7) is independent of all other projects.**
-Executing the test print and evaluating the snap-arm clearance has zero dependency on stockbot checkpoint outcome, Phase 2 decision, or Seedwarden gates. The only scheduling constraint is user time. If delayed past May 27, the Etsy launch slips to June 2 instead of May 28 — this is acceptable and has no effect on any other project.
-
-**Rule 4: Seedwarden gates (E5, E6) are user-action checklist items, not critical-path gates for other projects.**
-Gate 2 (Canva Brand Kit, due May 24) and Gate 3 (Kit email, due May 28) are self-contained. They can be completed in parallel with any other project activity. If user is stretched by FAR-MISS diagnosis or Phase 2 decision work, both gates can extend 2–3 days without jeopardizing the May 30 launch:
-- Gate 2 can extend to May 26 (Canva Brand Kit can be done in 25 min once started)
-- Gate 3 can extend to May 29 morning (the verification checklist allows a 4-hour remediation window before launch)
-
-Gate 2 hard limit: May 26 (Gate 3 cannot begin until Gate 2 is complete per dependency matrix).
-Gate 3 hard limit: May 29 morning (must leave remediation window before May 30 09:00 UTC launch).
-
-**Rule 5: Cybersecurity VeraCrypt restart (E9) depends solely on user choosing to restart their Windows machine.**
-There is no external deadline, no dependency on other projects, and no scheduling constraint. Steps 1.4–1.7 (Ente Auth, Bitwarden, data broker opt-outs, iPhone passcode — approximately 2 hours) can happen any day May 19–31. Recommended: schedule during a day with no active decision gates (e.g., May 23 after Gate 2 is done, or May 28 after Gate 3 setup).
+**Trade-off**: Etsy launch slides from May 20 to early June. Seedwarden May 30 launch takes priority (higher revenue potential + longer build lead time).
 
 ---
 
-### Decision Dependency Matrix
+## SECTION 3: Contingency Decision Trees
 
-| If event A happens before event B... | Constraint that applies |
-|--------------------------------------|------------------------|
-| Checkpoint PASS before post-checkpoint logging | Normal May 20 workflow; Gate 2 option = continue Lever A monitoring |
-| Checkpoint STILL_MISS_B2 before post-checkpoint | Lever B activation decision required May 20; adds ~1 hr to post-checkpoint work |
-| Checkpoint FAR_MISS before any May 20 activity | Emergency mode: defer all non-critical May 20 tasks; diagnosis first |
-| Test print PASS before Etsy launch | Launch proceeds; follow etsy-listing-launch-checklist.md |
-| Test print FAIL before Etsy launch | Redesign required; Etsy launch deferred 1–2 weeks; no impact on any other project |
-| Wave 1 STRONG signal before Phase 2 decision | Phase 2 can be triggered early (May 21–22); accelerate Items 61–62 |
-| Wave 1 MODERATE before Phase 2 decision | Batch 2 schedules May 21; Phase 2 decision May 25–28 as planned |
-| Wave 1 WEAK before Phase 2 decision | August revised timeline; freed capacity redirected to Gate 2 completion |
-| Gate 2 complete before Gate 3 | Normal sequencing; Gate 3 can proceed |
-| Gate 2 not complete by May 26 | Gate 3 landing page publication blocked; slip Gate 3 to May 28–29 and use 4-hour remediation window |
-| Phase 2 decision before Seedwarden launch | No constraint; independent projects |
-| FAR-MISS + test print approval same day | Use Tree 2 sequencing: diagnosis first, Etsy staging parallel, Etsy publish next day |
+### Contingency 3.1: What to Do If Checkpoint Returns FAR-MISS-C2
 
----
+**Checkpoint outcome**: May 19, 20:00–20:15 UTC
 
-## Section 5: Escalation Contact and Priority Matrix
+**Decision point**: May 19, 20:15 UTC (immediately after checkpoint query completes)
 
-### Priority Ranking for Simultaneous Decisions
+```
+CHECKPOINT FAR-MISS-C2 DETECTED (May 19, 20:15 UTC)
+│
+├─ Is test print already approved for May 20?
+│  │
+│  ├─ YES → GO TO OPTION 1A/1B FORK (below)
+│  │
+│  └─ NO → Proceed to May 20 Wave 1 read normally (Scenario A path)
+│         (Stockbot emergency work deferred to May 21 afternoon)
+│
+OPTION 1A/1B FORK (only if test print approved):
+│
+├─ OPTION 1A: ETSY PRIORITY
+│  ├─ Defer stockbot Lever B diagnostics to May 21 morning
+│  ├─ Execute test print May 20 as scheduled (3 hours, full attention)
+│  ├─ Execute Wave 1 read May 20 morning (1 hour, normal)
+│  ├─ Execute Etsy launch prep May 20 afternoon (2–3 hours)
+│  ├─ May 21, 06:00–08:00 UTC: Stockbot Lever B analysis (parallel to Wave 1 synthesis)
+│  └─ May 21, 14:00–15:00 UTC: DUAL DECISION (Lever B outcome + Phase 2 path)
+│     Risk: Coupled decision-making load; if Lever B is also unclear, Phase 2 decision may defer
+│     Duration: 2 hours (compressed from 1 hour)
+│
+└─ OPTION 1B: STOCKBOT PRIORITY
+   ├─ Defer test print to June 1-2 (full post-FAR-MISS recovery period)
+   ├─ Execute May 20 morning (06:00–08:00 UTC): Stockbot diagnostics (120 min)
+   ├─ Execute May 20 morning (08:00–10:00 UTC): Wave 1 read ABBREVIATED (30 min focused read, skip deep analysis)
+   ├─ Execute May 20 midday (10:00–14:00 UTC): Stockbot Lever B testing (4 hours hands-on)
+   ├─ May 20, 16:00 UTC: Lever B decision point
+   │  ├─ Lever B shows promise? → Begin Lever C planning (2-hour session May 20 evening)
+   │  └─ Lever B failed? → Emergency escalation call (see Section 5)
+   ├─ May 21, 10:30–12:00 UTC: Wave 1 synthesis (already complete May 20, so review only)
+   └─ May 21, 14:00–15:00 UTC: SINGLE DECISION (Phase 2 path only; Lever B already resolved)
+      Risk: Test print 11-day slip; Etsy launch in June (lower momentum)
+      Duration: 1 hour (normal)
+```
 
-When two or more decisions arrive in the same window, use this ranking without exception:
+**How to choose Option 1A vs. 1B**:
 
-| Priority | Event | Rationale | Flexibility |
-|----------|-------|-----------|-------------|
-| 1 | Stockbot checkpoint (May 19 20:00 UTC) | Non-repeatable 1.5-hour window; script must be run at this UTC time; missed checkpoint = 3-week delay to next evaluation cycle | Zero — fixed UTC time |
-| 2 | Phase 2 path decision (May 21–25) | Non-repeatable once Wave 1 window closes; delay past May 28 delays June 1 research production by 4–8 weeks | Low — 7-day window; early read possible if STRONG |
-| 3 | Test print approval + Etsy launch (flexible May 20–27) | Revenue-generating but date-flexible; Etsy platform available all week; 1-week slip costs ~$0 in most cases | High — any day May 20–27 with no deadline consequence |
-| 4 | Seedwarden Gate 2 Canva (due May 24, extendable to May 26) | Hard limit May 26 (Gate 3 depends on it); UI task requiring <1 hour of active attention; high flexibility within window | Moderate — 2-day buffer before Gate 3 blocks |
-| 5 | Seedwarden Gate 3 Kit (due May 28, extendable to May 29 morning) | Hard limit May 29 morning for remediation window; UI task ~20 min + 35 min verification | Moderate — 1-day buffer before no-go decision |
-| 6 | Cybersecurity VeraCrypt restart + Phase 1 walkthrough | No external deadline; purely user convenience; 5-min restart any time | Maximum — any day May 19–31 |
+| Factor | Choose 1A (Etsy Priority) | Choose 1B (Stockbot Priority) |
+|--------|---------------------------|-------------------------------|
+| Test print already approved? | YES → choose 1A | NO → choose 1B |
+| Wave 1 signals look STRONG (2+ replies by May 20 morning)? | YES → choose 1A (Batch 2 acceleration matters) | NO → choose 1B |
+| Is Etsy launch revenue >> stockbot FAR-MISS impact? | YES (test print critical path) | NO (stockbot recovery first) |
+| Can May 21 decision load tolerate 2-hour dual decision? | YES, user has capacity | NO, focus on single decision |
+| **Recommendation** | FAR-MISS + STRONG Wave 1 + high Etsy revenue | FAR-MISS + uncertain Wave 1 OR low Etsy urgency |
 
----
-
-### Simultaneous Decision Scenarios
-
-| Scenario | Decision Rule |
-|----------|--------------|
-| Checkpoint outcome arrives AND test print needs evaluation same morning | Checkpoint outcome first (it is already decided — just read the result); print evaluation second (30 min); then sequence day per Tree 2 |
-| Phase 2 decision needed AND Gate 2 Canva pending on same day | Phase 2 decision first (cognitive priority, 30–60 min); Gate 2 Canva second (UI task, 25 min); both completable same day |
-| Etsy launch window AND post-checkpoint work both fall May 20 | Etsy launch first (morning, 3–4 hr); post-checkpoint logging second (afternoon, ~3 hr); see Scenario B |
-| Phase 2 WEAK confirmation AND Gate 3 Kit setup due same week | Gate 3 first (has a hard deadline May 29 morning); Phase 2 WEAK confirmation is a 20-min read; no conflict |
-| FAR-MISS AND Gate 2 Canva window overlapping May 20–21 | FAR-MISS diagnosis first (May 20); Gate 2 Canva deferred to May 22–24 (still within deadline) |
-
----
-
-### Escalation Triggers
-
-**Escalate to Priority 1 (drop all other work)** when:
-- Checkpoint script returns FAR_MISS (exit code 2)
-- Kit email 3-test protocol fails within 4 hours of May 30 launch
-
-**Escalate to Priority 2 (schedule dedicated session, same day)**:
-- Wave 1 produces STRONG signals before 72h close (early Phase 2 trigger)
-- Test print snap-arm evaluation produces FAIL (redesign decision needed)
-- Gate 3 SPF/DKIM verification fails (Kit support ticket needed immediately)
-
-**Defer to next available day**:
-- Canva Brand Kit export issues (recoverable in 30–45 min; not blocking same-day)
-- Post-checkpoint logging slip (1-day slip has no downstream consequence)
-- VeraCrypt Phase 1 resumption (no deadline)
+**Action**: Call with user by May 19, 21:00 UTC if FAR-MISS detected AND test print already approved.
 
 ---
 
-## Appendix: At-a-Glance Calendar for May 19–31
+### Contingency 3.2: Wave 1 Signals Mixed (MODERATE Classification on May 20)
 
-This is a clean daily reference. Times are UTC unless noted.
+**Trigger**: May 20, 09:00–10:00 UTC (Wave 1 signal assessment)
 
-| Date | Must-Do (hard constraint) | Should-Do (flexible) | User Hours |
-|------|--------------------------|---------------------|------------|
-| May 19 | Checkpoint 20:00–21:30 UTC (E1) | Test print start by 18:00 if desired (E7); Canva start (E5) | 1.5–2.5 hr |
-| May 20 | Post-checkpoint logging (E2) 06:00–17:00 UTC | Etsy launch if print approved (E8); Canva Gate 2 (E5) | 3–7 hr (scenario-dependent) |
-| May 21 | Wave 1 close review at 10:32 UTC (E3) | Phase 2 early read (E4) if STRONG; Canva Gate 2 (E5) | 1–2 hr |
-| May 22 | Phase 2 decision if early trigger (E4) | Gate 2 Canva completion (E5) | 1–2 hr |
-| May 23 | — | Gate 2 verification; VeraCrypt (E9) | 0.5–2 hr |
-| May 24 | Gate 2 hard deadline (E5) | — | 0.5 hr |
-| May 25 | — | Test print if deferred (E7); Phase 2 formal assessment begins | 1–4 hr |
-| May 26 | Gate 3 start (E6) | Phase 2 decision review | 1 hr |
-| May 27 | — | Phase 2 path decision final (E4); Gate 3 landing page (E6) | 1 hr |
-| May 28 | Gate 3 hard deadline (E6) | Etsy launch if deferred (E8); VeraCrypt Phase 1 (E9) | 1–4 hr |
-| May 29 | Seedwarden go/no-go decision 20:00 UTC | — | 0.5 hr |
-| May 30 | Seedwarden launch 09:00 UTC | — | 0.5 hr |
-| May 31 | — | Catch-up for any deferred items | TBD |
+**Provisional classification**: 1–2 substantive replies (or positive Gist delta with zero replies)
 
-**Total estimated user hours May 19–31**: 14–28 hours depending on scenario (Scenario A: ~14 hr; Scenario B: ~20 hr; Scenario C with FAR-MISS: ~26–28 hr). All scenarios are feasible for a single user over 13 days.
+```
+WAVE 1 MODERATE CLASSIFICATION (May 20 morning)
+│
+├─ Is test print approved and executing May 20?
+│  │
+│  ├─ YES → Proceed to Etsy launch prep as planned
+│  │        (Batch 2 acceleration can wait until May 21 final decision)
+│  │        Duration: No change to May 20 schedule
+│  │
+│  └─ NO → Standard path (Scenario A or C, depending on test print timing)
+│
+├─ May 21, 10:30–12:00 UTC: Wave 1 synthesis (72-hour monitoring)
+│  │ Question to answer: Did MODERATE signals accelerate to STRONG?
+│  │                    Or did they stall (suggest WEAK outcome)?
+│  │
+│  └─ → Outcome = STRONG? Activate Batch 2 acceleration May 21–22
+│       → Outcome = MODERATE? Proceed to Batch 2 standard path May 22–24
+│       → Outcome = WEAK? Pause Batch 2 prep; focus on PHASE_2_DECISION_FRAMEWORK
+│
+└─ May 21, 14:00–15:00 UTC: Phase 2 decision (Path A/B/C based on final classification)
+```
+
+**Key decision rule**: MODERATE on May 20 doesn't change the May 20 schedule. It only confirms that May 21 synthesis is critical to get the final classification right. If Wave 1 final outcome is WEAK (defies May 20 provisional forecast), Phase 2 path must adjust (Scenario C: conservative path with reduced domain scope).
 
 ---
 
-*Created: 2026-05-18. Source data: ORCHESTRATOR_STATE.md (10:52 UTC May 18), PROJECTS.md, TRACK_B_GATE_COMPLETION_VERIFICATION.md, may19_checkpoint_analysis.py, WAVE_1_MONITORING_COORDINATION_GUIDE.md, WAVE_1_MONITORING_DASHBOARD.md. No external sources required — all event data is from live project state.*
+### Contingency 3.3: Seedwarden Gate 2 Slip (Not Done by May 24)
+
+**Trigger**: User has not completed Canva Brand Kit setup by May 24 EOD
+
+**Impact chain**:
+
+```
+Gate 2 incomplete by May 24 EOD
+│
+├─ Zone card production blocked (requires Brand Kit colors + fonts)
+│  │ Default slip: May 24 + 1–2 days = May 26 start
+│  │
+│  └─ Cascades to:
+│     ├─ Gate 3 (Kit automation) start date slips to May 29–30
+│     ├─ Zone card Google Drive upload slips to May 26–27
+│     └─ Go/No-Go audit (May 29) may not have complete asset verification
+│
+├─ Launch feasibility assessment (May 29):
+│  │ Question: Can launch proceed May 30 without zone cards?
+│  │ Answer: NO — zone cards are core to Phase 2 product differentiation
+│  │ Result: Launch deferral to June 1–2 OR full replan
+│  │
+│  └─ Contingency: If Gate 2 slips, run go/no-go audit assuming June 2 launch date
+│
+├─ May 30 calendar date:
+│  │ Seedwarden launch may be inactive (Zone cards not ready)
+│  │ If true, use May 30 as orchestrator staging day instead
+│  │ (User attention = minimal; all team focus on final asset prep)
+│  │
+│  └─ Activate contingency communication with user by May 25 morning
+│
+└─ Decision deadline: May 25, 14:00 UTC
+   If Gate 2 not 75% complete by May 25 EOD, user chooses:
+   ├─ OPTION A: Crash Gate 2 + 3 in parallel (May 26–28, very tight)
+   ├─ OPTION B: Defer launch to June 1–2 (clean reset)
+   └─ OPTION C: Scale-back Phase 2 (launch without zone cards, retrofit June 5–10)
+```
+
+**How to prevent**: Mark Gate 2 (Canva Brand Kit) as the May 24 HARD DEADLINE with 2-day buffer built in (actual deadline May 22). If slipping past May 22, escalate by May 23 morning.
+
+---
+
+## SECTION 4: Communication Protocol (Decision Sequencing and Escalation)
+
+### 4.1 Decision Classification
+
+Decisions in the May 19-31 period fall into four types. Understand which type each is to avoid cascading delays.
+
+| Type | Characteristics | Examples | How to Handle |
+|------|-----------------|----------|---------------|
+| **Type A: Independent** | Can be made alone; doesn't affect other projects | Test print approval date; Seedwarden Gate 1 timing | Make immediately when ready; no coordination needed |
+| **Type B: Correlated** | Depend on same upstream event; must be made together | Wave 1 outcome + Phase 2 path choice | Decide together after synthesis (May 21, 14:00 UTC) |
+| **Type C: Sequential** | Must be made in order; later decisions depend on earlier outcome | Checkpoint outcome (May 19) → Lever B decision (May 20–21) → Phase 2 path (May 21) | Use decision tree (Contingency 3.1) |
+| **Type D: Contingent Timing** | Don't need decision, but timing shifts based on earlier events | Test print launch date (can shift if FAR-MISS or Phase 2 WEAK outcome) | Monitor earlier decisions; adjust timing if needed |
+
+### 4.2 Decision Priority Order
+
+If two events require simultaneous user decision-making, use this priority order:
+
+1. **Priority 1 (CRITICAL PATH)**: Checkpoint outcome classification (May 19, 20:00–20:15 UTC)
+   - Hard deadline; cannot defer
+   - 15 minutes max; do not extend
+   - Outcome determines May 20–21 emergency protocols
+
+2. **Priority 2 (CAPITAL PLANNING)**: Phase 2 path decision (May 21, 14:00–15:00 UTC)
+   - Hard deadline; depends on Priority 1
+   - 60 minutes; non-negotiable
+   - Determines Batch 2 scope and research direction
+
+3. **Priority 3 (REVENUE GENERATION)**: Test print approval (May 20, TBD or deferred)
+   - Flexible timing; can defer to June 1-2 if FAR-MISS or Phase 2 WEAK
+   - 180 minutes total; can split across days
+   - Drives Q2 Etsy revenue (3–4 month lead time)
+
+4. **Priority 4 (BRAND/PLATFORM)**: Seedwarden gates (May 20, 24, 27–28, 29)
+   - Hard deadlines for launch (May 30); can defer if late
+   - 25–120 minutes per gate; schedule-flexible but sequence-locked
+   - If Gate 2 slips, triggers contingency (Contingency 3.3)
+
+5. **Priority 5 (DEFENSIVE)**: Cybersecurity Phase 1 (May 16+)
+   - Can pause/defer if higher-priority work active
+   - Returns to high priority June 15+ (Phase 2 launch contingent)
+   - No hard deadline in May 19-31 window
+
+---
+
+## SECTION 5: One-Page Quick Reference
+
+### 5.1 May 19-31 Calendar Grid (Decision-Only View)
+
+```
+         MON May 19       TUE May 20       WED May 21       THU May 22       FRI May 23       SAT May 24       SUN May 25
+         ───────────      ───────────      ───────────      ───────────      ───────────      ───────────      ───────────
+EARLY    
+06:00                     Stockbot         Wave syn         —                —                —                —
+                          post-review      (orchestrator)
+
+MORNING
+09:00    —                ★ Wave 1          —                —                —                —                —
+                          signal read
+                          (user 60 min)
+
+LATE MORNING
+10:00    —                —                —                —                —                —                —
+
+AFTERNOON
+14:00    —                —                ★ Phase 2         —                —                Gate 2            —
+                                           DECISION          (by EOD)
+                                           (user 60 min)
+
+EVENING
+20:00    ★ CHECKPOINT    —                —                —                —                —                —
+         EXECUTION
+         (user 15 min)
+
+KEY DATES
+         [Checkpoint    [Wave 1 read]     [Phase 2        [Zone card      [Zone card      [Gate 2          [Holding
+          decision]                        decision]        production]     production]     deadline]        pattern]
+                                                                                            [Zone cards
+         19:00–22:00 UTC: If FAR-MISS    May 21–23:       May 23–24:
+         escalation window               Batch 2 prep     Zone card       May 24 EOD:
+                                                          finalization    Cards → Drive
+```
+
+### 5.2 Decision Priority Checklist
+
+Use this checklist at the start of each day May 19-31 to remember priority order:
+
+- [ ] **Priority 1 (May 19, 20:00 UTC)**: Checkpoint outcome classification — **15 min max**
+- [ ] **Priority 2 (May 21, 14:00 UTC)**: Phase 2 path decision — **60 min, depends on Priority 1**
+- [ ] **Priority 3 (May 20, TBD)**: Test print approval — **flexible, can defer to June 1**
+- [ ] **Priority 4 (May 20, 24, 27–28, 29)**: Seedwarden gates — **schedule flexible, sequence locked**
+- [ ] **Priority 5 (May 16+)**: Cybersecurity Phase 1 — **can pause if higher priority active**
+
+### 5.3 Conflict Detection Flowchart (Use If Unsure)
+
+```
+START: "I need to decide if two events conflict"
+│
+├─ Are both events happening at the SAME UTC time on the SAME day?
+│  ├─ YES → TRUE CONFLICT (escalate to Priority Order)
+│  └─ NO → Proceed to next check
+│
+├─ Are they on sequential days with less than 12 hours between them?
+│  ├─ YES → TIGHT SEQUENCING (feasible, proceed with playbook)
+│  └─ NO → Proceed to next check
+│
+├─ Do both decisions depend on the SAME upstream event outcome?
+│  ├─ YES → TYPE B CORRELATED (must decide together; use final synthesis)
+│  └─ NO → Proceed to next check
+│
+├─ Is one a Type A (independent) and other Type C (sequential)?
+│  ├─ YES → NO REAL CONFLICT (independent can shift, sequential can't)
+│  └─ NO → Proceed to next check
+│
+└─ No conflict detected. Proceed with standard playbook scheduling.
+```
+
+### 5.4 Resource Load Graph (User Attention Hours)
+
+```
+May 2026 — User Attention Required (Hours)
+
+     Scenario A (Positive)    Scenario B (FAR-MISS)    Scenario C (Test Delayed)
+     ══════════════════════   ════════════════════     ════════════════════════
+
+May 19    0.25 hrs (checkpoint)  0.25 hrs (checkpoint)    0.25 hrs (checkpoint)
+May 20    2.5 hrs (Wave 1 + Etsy) 2.5 hrs (Etsy/Diag) OR  1 hr (Wave 1 + post-analysis)
+                                  1 hr (Option 1B)
+May 21    1 hr (Phase 2)         2 hrs (dual decision)    1 hr (Phase 2)
+May 22–24 0.5 hrs (monitoring)   0.5 hrs (monitoring)     2 hrs (Gate 2 + zone cards)
+May 25–28 0 hrs                  0 hrs                     4–6 hrs (zone cards + Gate 3 start)
+May 29    3 hrs (launch audit)   3 hrs (launch audit)     3 hrs (launch audit)
+May 30    0.5 hrs (launch)       0.5 hrs (launch)         0.5 hrs (launch)
+
+TOTAL:    7.75–9 hrs             5.25–7.75 hrs             12–15 hrs
+
+Load type  Balanced (spread)    Compressed early (FAR-MISS  High mid-period
+           across full period   push concentration)         (Seedwarden gate cluster)
+```
+
+### 5.5 Key Document Checklist (References for Each Decision)
+
+| Decision | Reference Document | Section |
+|----------|-------------------|---------|
+| Checkpoint outcome classification | MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md | Section 2–3 |
+| Checkpoint FAR-MISS contingency | POST_CHECKPOINT_GATE_2_DECISION_FRAMEWORK.md | Section A/B (Lever B paths) |
+| Wave 1 signal assessment | WAVE_1_MONITORING_DASHBOARD.md | Section 1–2 |
+| Phase 2 path decision | WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md | Section 2 (classification table) |
+| Batch 2 activation | MAY_21_31_BATCH_2_3_COORDINATION_FRAMEWORK.md | Section 3A/3B/3C |
+| Test print timing | mfg-farm project deliverables | (no playbook; user owns timing) |
+| Seedwarden Gate 2 | TRACK_B_USER_GATES.md | Section 2 (Canva Brand Kit steps) |
+| Seedwarden Gate 3 | TRACK_B_USER_GATES.md | Section 3 (Kit automation timeline) |
+| Launch go/no-go | TRACK_B_LAUNCH_READINESS_AUDIT.md | Final audit form |
+
+---
+
+## SECTION 6: What Success Looks Like (Outcomes)
+
+**By May 31, if this playbook is followed**:
+
+- ✅ **Checkpoint executed** (May 19): Lever A validated or FAR-MISS diagnosed
+- ✅ **Wave 1 outcome decided** (May 21): Phase 2 path (A/B/C) locked in
+- ✅ **Batch 2–3 sequencing activated** (May 21+): Contact outreach underway per chosen path
+- ✅ **Seedwarden launched** (May 30): Phase 2 live, monitoring active
+- ✅ **Test print completed** (May 20 OR June 1-2): Schedule determined and executed
+- ✅ **Etsy launch staged** (May 21+): Ready for June 1–5 execution OR June 8–12 if deferred
+- ✅ **No resource conflicts**: All major decisions hit their deadlines; no simultaneous user load >4 hours/day
+
+**By June 2 (post-window)**:
+- Checkpoint FAR-MISS resolved (Lever B tested + decision made)
+- Seedwarden Phase 2 trending monitored (Day 1–2 email analytics)
+- Batch 2 responses arriving (3–5 day lag from May 21-22 send)
+- Test print executed; Etsy launch initiated (either May 24 or June 1-2 depending on scenario)
+
+---
+
+## Appendix A: Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Hard deadline** | Cannot move without project failure or external impact. Example: May 19 checkpoint (3-month lead time invested). |
+| **Soft deadline** | Can move 1–7 days without major impact. Example: Wave 1 synthesis (data still valid up to May 23). |
+| **Conditional event** | Only occurs if earlier decision goes certain direction. Example: Test print FAR-MISS diagnostics (only if FAR-MISS). |
+| **Type A decision** | Independent; can be made alone. Example: Test print approval date. |
+| **Type B decision** | Correlated; must be decided with another. Example: Wave 1 outcome + Phase 2 path. |
+| **Type C decision** | Sequential; later depends on earlier. Example: Checkpoint outcome → Lever B decision. |
+| **Scenario** | A complete May 19-31 schedule based on specific earlier decisions. Example: Scenario A (test print approved + checkpoint PASS). |
+| **Contingency** | An if-then rule triggered by a specific outcome. Example: If FAR-MISS, follow Option 1A/1B. |
+| **Escalation** | A call between orchestrator and user to resolve true simultaneous conflicts (rare). |
+| **Gate** | A user-action checkpoint. Example: Seedwarden Gate 2 (Canva Brand Kit approval). |
+
+---
+
+## Appendix B: How to Use This Document During May 19-31
+
+### Start of Month (May 19, before 19:00 UTC)
+
+1. Read **Sections 1–2** (Timeline and Scenarios) to understand all events
+2. Identify which scenario applies to your test print timing (Section 2, Scenario A/B/C)
+3. Bookmark **Section 3** (Decision Trees) and **Section 5** (Escalation) for quick reference
+
+### During Each Event (May 19–31)
+
+1. Before each major event, check **Section 4.2** (Decision Priority) to confirm it's the right time
+2. Refer to the **event-specific document** (in Section 5.5 checklist) to execute the decision
+3. After deciding, return here to **Section 4.3** to confirm next decision timing
+4. If anything feels simultaneously urgent, check **Contingency 3.1–3.3** first before calling
+
+### If Unexpected Conflict Arises
+
+1. Use **Contingency 5.3 Conflict Detection Flowchart** (Section 5.3) to identify conflict type
+2. Check **Priority Order** (Section 4.2) to sequence decisions
+3. If still unresolved, escalate to **Contact Protocol** (Section 5.1)
+
+### Post-Event Documentation
+
+1. Note each major decision outcome in **Appendix B Escalation Call** format (Section 5.3)
+2. Update ORCHESTRATOR_STATE.md with decision outcomes
+3. Archive this document (or a summary) in PROJECTS/ for future reference
+
+---
+
+## Final Notes
+
+This assessment is a **coordination reference, not a prescriptive mandate**. If real-world events differ from scenarios, use the **Decision Trees** (Section 3) and **Priority Order** (Section 4.2) to adapt. The goal is not to predict the future perfectly, but to have a shared framework for fast decision-making when conflicts DO emerge.
+
+**Key principle**: When in doubt, refer to **Priority Order** (Section 4.2). That ordering is the ground truth for May 19-31 conflict resolution.
+
+---
+
+**Version**: 1.0 (May 18, 2026)
+**Next Review**: May 31, 2026 (post-period retrospective)
+**Maintained by**: Orchestrator (Item 63, Cross-Project Interdependency Risk Assessment)
