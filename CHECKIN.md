@@ -1,3 +1,36 @@
+## Session 1207 (Orchestrator) — May 18, 2026 ~02:42–06:00 UTC
+
+**Status**: ✅ **EXPLORATION QUEUE ITEMS COMPLETE — WAVE 1 DOMAINS CURRENT, DOCKER SECURITY VERIFIED**
+
+### Since Last Check-in (Session 1206)
+
+**What was accomplished**:
+- ✅ resistance-research: May 17-18 breaking developments scanned and integrated (domains current through May 18 05:50 UTC)
+- ✅ containerized-agents: Docker security verification complete (both docker-compose.yml files already compliant with CLAUDE.md)
+- All exploration queue items executed; both confirmed production-ready
+
+**What's in progress**:
+- Wave 1 user setup window: 06:00 UTC deadline (in ~3.5 hours from state generation at 02:42 UTC May 18)
+- Batch 1 execution window: 08:00–10:00 UTC May 18
+- Checkpoint execution: 20:00 UTC May 19
+
+**Items needing user input**:
+- **BY 06:00 UTC** (~3.5 hours): Complete 6 Wave 1 setup actions (~50 min total)
+  1. Gist view count baseline (10 min, logged in as esca8peArtist)
+  2. Google Sheets tracking workbook (15 min)
+  3. Calendar reminders × 9 (2 min)
+  4. Google Alerts × 5 (10 min)
+  5. Test email send & confirm delivery (5 min)
+  6. Confirm Elias Callais draft language (2 min)
+
+**Suggested priorities for next session**:
+1. Complete Wave 1 user setup by 06:00 UTC
+2. Execute Batch 1 sends 08:00–10:00 UTC
+3. Monitor seedwarden Gate 1 (TODAY May 18, create accounts)
+4. Pre-checkpoint validation 19:00 UTC May 19
+
+---
+
 ## Session 1206 (Orchestrator) — May 18, 2026 02:45–05:30 UTC — Guardrails Wiring Implementation + Concurrent Order Deduplication Testing
 
 **Status**: ✅ **GUARDRAILS BLOCK RESOLVED — Deployment Unblocked for Post-Checkpoint Scaling**
