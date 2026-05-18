@@ -45,13 +45,15 @@ Copy the blank row template for each new contact sent. Update status as signals 
 
 ### Batch 1 — Pre-Populated Rows (May 18)
 
+*Monitoring pass: May 18, 2026, ~09:09 UTC — agent read. All 5 emails reported sent by user with staggered dispatch beginning 08:00 UTC. No replies received within the first hours of the distribution window. This is within expected norms for all five constituencies. No anomalies detected.*
+
 | Date Sent | Contact Name | Org / Sector | Contact Method | Status | Reply Type | Score (0–5) | Tier 2? | Notes |
 |-----------|-------------|-------------|---------------|--------|-----------|-------------|---------|-------|
-| 2026-05-18 | Ryan Goodman | Just Security / NYU Law — Law School | Email B1 — Domain 28/29 | Sent/Pending | — | 0 | No | |
-| 2026-05-18 | Wendy Weiser | Brennan Center — Policy Org | Email B1 — Domain 1/37 | Sent/Pending | — | 0 | No | |
-| 2026-05-18 | Erica Chenoweth | Harvard Kennedy School — Law School | Email B1 — methodology | Sent/Pending | — | 0 | No | |
-| 2026-05-18 | Ian Bassin | Protect Democracy — Policy Org | Email B1 — implementation | Sent/Pending | — | 0 | No | |
-| 2026-05-18 | Marc Elias | Democracy Docket / Elias Law — Immigration Legal | Email B1 — litigation | Sent/Pending | — | 0 | No | |
+| 2026-05-18 | Ryan Goodman | Just Security / NYU Law — Law School | Email B1 — Domain 28/29 | Sent/Pending | — | 0 | No | Law school cycle 5–10 days; no reply expected today |
+| 2026-05-18 | Wendy Weiser | Brennan Center — Policy Org | Email B1 — Domain 1/37 | Sent/Pending | — | 0 | No | Policy org cycle 2–5 days; watch by May 20–21 |
+| 2026-05-18 | Erica Chenoweth | Harvard Kennedy School — Law School | Email B1 — methodology | Sent/Pending | — | 0 | No | Law school cycle 5–10 days; no reply expected today |
+| 2026-05-18 | Ian Bassin | Protect Democracy — Policy Org | Email B1 — implementation | Sent/Pending | — | 0 | No | Policy org cycle 2–5 days; watch by May 20–21 |
+| 2026-05-18 | Marc Elias | Democracy Docket / Elias Law — Immigration Legal | Email B1 — litigation | Sent/Pending | — | 0 | No | Fastest potential cycle (48h); Callais framing has topical urgency |
 
 ---
 
@@ -75,6 +77,49 @@ When a reply arrives, classify it in the Reply Type column using these categorie
 ## SECTION 2: Real-Time Status Summary
 
 Update this block at 20:00 UTC each day. Paste into DISTRIBUTION_EXECUTION_LOG.md as the daily entry.
+
+---
+
+### Agent Monitoring Pass — May 18, 2026, ~09:09 UTC
+
+```
+WAVE 1 STATUS — 2026-05-18 09:09 UTC (Agent pass — within distribution window)
+
+SENDS
+  Sent today:                   5 (Batch 1 — all 5 contacts dispatched)
+  Cumulative sent:              5 / 45 total Tier 1 target
+  Batch 1 (credibility anchors): 5 / 5 COMPLETE
+
+DELIVERY
+  Bounced:                      [not yet determinable — check inbox]
+  Bounce rate:                  [check inbox — any bounce notifications?]
+  Delivered confirmed:          [not yet — monitor for bounces through 10:00 UTC]
+
+ENGAGEMENT SIGNALS
+  Opened (24h window):          [too early — check Bitly dashboard]
+  Gist clicked (48h window):    [too early — check Bitly dashboard]
+  Replied (any):                0 (within expected range — sends dispatched today)
+  Replied substantive (score 3+): 0
+  Early Tier 2 candidates:      0
+
+RATE SUMMARY
+  Open rate estimate:           PENDING (Bitly data needed)
+  Click rate estimate:          PENDING (Bitly data needed)
+  Reply rate:                   0% (too early — policy org SLA is 2–5 days)
+
+CONTINGENCY STATUS
+  48h gate (reply rate ≥8%?):   ON TRACK — insufficient data to assess; no anomalies
+  Action if triggered:          See PHASE_1_CONTINGENCY_STRATEGY.md Trigger 1
+
+PHASE 2 FRAMEWORK STATUS
+  PHASE_2_OUTCOME_FRAMEWORK.md: CREATED (May 18, 09:09 UTC) — decision logic ready
+  Default classification:       MODERATE (locked until Checkpoint 2 or 3 data)
+  Next classification point:    18:00 UTC May 18 (Checkpoint 2)
+```
+
+---
+
+### Update block for 20:00 UTC May 18 — [fill tonight]
 
 ```
 WAVE 1 STATUS — [DATE] 20:00 UTC
