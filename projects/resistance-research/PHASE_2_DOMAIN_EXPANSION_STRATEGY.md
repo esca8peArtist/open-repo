@@ -1,287 +1,388 @@
 ---
-title: "Phase 2 Domain Expansion Strategy — 15-Domain Roadmap"
+title: "Phase 2 Domain Expansion Strategy — Domains 36-50"
+subtitle: "Gap Analysis, Domain Prioritization, Outreach Strategy, and Integration Mechanics"
+created: 2026-05-18
 status: production-ready
-created: 2026-05-09
-word_count: ~3400
-supersedes: phase-2-domain-expansion-strategy.md, domain-expansion-strategy.md
+version: "3.0 — supersedes v2.1 (domain-expansion-strategy.md, May 15) and v1.0 (PHASE_2_DOMAIN_EXPANSION_STRATEGY.md, May 9)"
+word_count: ~3200
+purpose: >
+  Authoritative Phase 2 roadmap for domains 36-50. Written May 18, 2026, incorporating
+  current legislative and litigation developments through that date. Stages for user
+  review prior to commit; do NOT merge to master without user approval.
 ---
 
-# Phase 2 Domain Expansion Strategy
+# Phase 2 Domain Expansion Strategy — Domains 36-50
 
-*May 9, 2026. Produced independently of Phase 1 distribution path decision (A / A+37 / B). Phase 2 research and planning can proceed concurrently with Phase 1 execution.*
-
----
-
-## Strategic Frame
-
-Phase 1 produced 35 fully-researched domains aimed primarily at policy-maker audiences: researchers, legal organizations, AG networks, legislative staff, and academic institutions. The framework's analytical depth is strongest at the federal-institutional level — constitutional law, war powers, judicial independence, surveillance, academic freedom — and weakest at the community-organizing and lived-experience level, where movement infrastructure actually operates.
-
-Phase 2 corrects this imbalance deliberately. The 15 domains below are not extensions of Phase 1's logic. They are an expansion of its reach — into sectors with robust organizing infrastructure that Phase 1's distribution apparatus does not currently touch: labor unions, tenant organizing federations, reproductive justice networks, environmental frontline communities, and LGBTQ+ coalition structures. These sectors have faster adoption cycles and broader grassroots reach than Phase 1's primary audiences. A document that reaches the AFL-CIO's research department reaches 12.5 million members. A document that reaches SisterSong reaches 200+ member organizations. The multiplication effect is qualitatively different from what Tier 1 institutional outreach achieves.
-
-The most important strategic finding: the reproductive justice, abolitionist, and environmental justice sectors are the three highest-leverage broker domains in American progressive organizing. Each contains federated networks that connect to every other domain on this list. Phase 2 outreach should begin with these three, not treat them as one priority among fifteen equal ones.
+*May 18, 2026. Produced as part of Exploration Queue execution — Domain Expansion Strategy item.*
 
 ---
 
-## Part 1: Gap Analysis — What the 35-Domain Framework Does Not Cover
+## Executive Summary
 
-*~600 words*
+Phase 1 produced 35 rigorously sourced domains aimed at institutional audiences: researchers, legal organizations, attorney general networks, legislative staff, and academic institutions. That audience selection was analytically correct — it established the framework's credibility with the actors who have structural power to respond. But it has a compounding consequence: the framework's analytical depth is concentrated at the federal-institutional level and is systematically absent from the movement-infrastructure level where the largest organizing constituencies operate.
 
-The 35-domain framework was built around a specific theory of change: produce rigorous analytical documents, reach institutional actors who have the capacity to act on them, and generate downstream policy and litigation impact. That theory drove the domain selection toward areas with clear constitutional hooks, live litigation, and institutional audiences. The result is a framework that is analytically strong but organizationally narrow — it reaches law professors, AG staff, policy analysts, and think-tank researchers more reliably than it reaches union organizers, tenant advocates, or frontline environmental justice leaders.
+The five sector gaps with the highest political salience through December 2026 are: reproductive rights (three active 2026 ballot measures; Fifth Circuit mifepristone litigation active), labor rights (NLRB constitutional challenge spreading across circuits despite SpaceX jurisdictional dismissal; Fifth Circuit ruling against constitutionality stands), LGBTQ+ rights (approximately 400 anti-LGBTQ+ bills tracked by ACLU in 2026; anti-trans ballot measures in November), environmental justice (NEPA implementation regulations removed January 8, 2026; EPA endangerment finding revocation proceeding live; Earthjustice D.C. Circuit cases briefing), and campaign finance (DISCLOSE Act of 2026 active with all 47 Democratic senators supporting; June 12 FISA deadline creates adjacent surveillance reform window).
 
-The gap is not primarily about missing policy areas. It is about missing movement constituencies.
+The three highest-leverage Phase 2 domains by composite score are Reproductive Freedom (Domain 44), Criminal Justice and Civic Exclusion (Domain 48), and Environmental Justice (Domain 38/49). These share organizational infrastructure — SisterSong, M4BL's People's Assembly Project (launched April 2026, 100+ organizations), and the Climate Justice Alliance — in ways that justify coordinated cluster release. Releasing all three within three weeks of each other enables a single outreach campaign to these broker organizations that collectively serves as the distribution gateway to the full Phase 2 constituency network.
 
-**Reproductive rights** is the most undeniable gap. Three years post-Dobbs, 22 states have near-total abortion bans or severe gestational restrictions, and 31 million reproductive-age women live under those bans. The criminalization apparatus — prosecution of patients, providers, and helpers — is accelerating. Active 2026 ballot measures are certified in Missouri and Nevada, with additional measures tracking in Idaho, Virginia, and Nebraska. The Comstock Act threat (DOJ groundwork for mailing mifepristone restrictions) could preempt state ballot measure victories if activated. No Phase 1 domain addresses reproductive freedom as a democratic architecture question — only Domain 33 (ballot initiative suppression) touches it tangentially.
-
-**Labor rights** is a structural absence. Domain 17 (Labor and Employment) exists in the original proposal only as an entry without a standalone research file. The NLRB constitutional challenge — SpaceX, Amazon, Trader Joe's, and Starbucks arguing the Board's structure violates the Constitution — is the most significant attack on collective bargaining rights since Taft-Hartley (1947). The Fifth Circuit ruled in August 2025 that the NLRB's structure is likely unconstitutional, prompting AFL-CIO to file a Supreme Court intervention motion. This is an ongoing democracy crisis with no Phase 1 coverage.
-
-**Housing and tenant rights** lacks any democratic-exclusion framing. The OBBBA cut HUD funding and eliminated the 30-day eviction notice requirement for nonpayment (February 2026), immediately triggering a lawsuit from the National Housing Law Project and the Legal Aid Society. Eviction Lab research establishes a causal link between eviction and voter turnout suppression: a one-unit increase in the county eviction rate per 1,000 renters is associated with a 0.6-point decrease in overall turnout. The tenant union federation movement has grown significantly since 2020 with active statewide structures in California, New York, and Minnesota.
-
-**Environmental justice** is the most acute institutional gap given current events. The NEPA implementing regulations were fully removed from the Code of Federal Regulations on January 8, 2026. The EPA proposed revoking the 2009 Endangerment Finding, which is the legal basis for all federal greenhouse gas regulation. The Climate Justice Alliance (nearly 200 organizations) condemned both actions. Earthjustice sued over the EPA climate protection repeal in early 2026. Phase 1's environmental-rollbacks-tracker.md documents these events but no standalone domain analyzes environmental justice as a democratic participation and community power question.
-
-**LGBTQ+ rights** are under an accelerating legislative assault with no Phase 1 domain coverage. The ACLU is tracking 740 anti-trans and anti-LGBTQ bills in 42 states during 2026, plus 113 national bills in the 119th Congress. Four states have moved anti-trans ballot measures to the 2026 midterm election. The Advocates for Trans Equality (merger of NCTE and TLDEF) is now the primary national litigation and advocacy structure. This sector is entirely absent from Phase 1's distribution targets.
-
-**Campaign finance and dark money** receive no standalone treatment despite being the connective tissue through which all sector-specific capture operates. Dark money expenditures reached $1.9 billion in 2024 — nearly double the 2020 record. The DISCLOSE Act of 2026 (Whitehouse/Pappas, reintroduced February 2026) has active legislative momentum with support from Campaign Legal Center, Common Cause, and the Brennan Center. Four 2026 ballot measures target dark money reform. Citizens United's structural architecture explains how corporate capture of financial regulation, labor regulation, and drug policy — all documented in Phase 1 — operates through a single legal mechanism that no existing domain names.
-
-Additional confirmed gaps with zero Phase 1 coverage: food systems and agricultural justice (USDA program cuts, Farm Bill limbo), church-state separation and Christian nationalism as institutional project, sex work rights and harm reduction (FOSTA-SESTA criminalization), youth civic power and student organizing, pension and Social Security security, and economic democracy (worker ownership, participatory budgeting, community wealth building).
+**Four domains carry hard external deadlines that override standard sequencing:** Surveillance Capitalism / FISA reform (June 12 FISA Section 702 deadline), Medicaid-Democracy Nexus (HHS interim final rule June 1; January 1, 2027 work requirement implementation), Reproductive Freedom (active ballot measure campaigns in Missouri, Nevada, and Virginia with November 2026 votes), and LGBTQ+ Rights (November 2026 anti-trans ballot measures in at least one confirmed state). These four should be treated as acceleration-triggered regardless of cluster sequencing decisions.
 
 ---
 
-## Part 2: Domain Prioritization Framework
+## Part 1: Gap Analysis — Phase 1's Structural Blind Spots
 
-*~800 words*
+The gap in Phase 1 is not primarily about missing policy areas. The framework covers democratic erosion from virtually every federal-institutional angle: voting rights, judicial independence, war powers, prosecutorial capture, surveillance, academic freedom, executive overreach, and fiscal authority. What it does not cover is the set of policy domains where the largest and most organizationally sophisticated movement constituencies operate — the constituencies whose adoption of the framework would multiply its reach by orders of magnitude beyond Phase 1's institutional audience.
 
-### Scoring Dimensions (1-5 each, 25 points maximum)
+**Gap 1: Reproductive Freedom as Democratic Architecture (highest salience, May-December 2026)**
 
-**Adoption Likelihood**: How receptive is this domain's core constituency to a corpus-based analytical document? High score = established research culture and documented relationship with policy advocacy. The labor sector scores highest here: AFL-CIO, SEIU, and EPI run their own research departments and integrate external analysis into member education curricula as a standard practice. Low score = primarily experiential organizing culture where externally produced research has limited uptake without relationship investment first.
+No Phase 1 domain addresses reproductive rights as a democratic design problem. Domain 33 (State Legislative Autocratization) documents ballot initiative suppression mechanisms that have been used to override abortion access votes, and Domain 31 (Healthcare Access — OBBBA Medicaid Crisis) covers the Medicaid-reproductive care intersection. But neither names reproductive freedom as a civic participation question: the mechanism by which restrictions on reproductive autonomy suppress voter registration, reduce economic independence, and disproportionately exclude from full civic participation the populations whose turnout determines competitive midterm outcomes.
 
-**Movement Infrastructure Depth**: Does this sector have existing federation structures with the organizational capacity to distribute and adopt a domain document? High score = multiple national organizations with staff capacity, regional networks, and active listservs. Reproductive rights and environmental justice score highest: Reproductive Freedom for All, NARAL state affiliates, and Planned Parenthood Action Fund constitute a national-to-local distribution apparatus with direct access to community organizers in every state. The Climate Justice Alliance connects 100+ frontline organizations across 7 regions through an active newsletter.
+The 2026 salience is acute. Three certified ballot measures will be decided in November 2026: Missouri Amendment 3 (legislatively referred — would repeal 2024 protective amendment and reimpose near-total ban), Nevada Question 6 (requires second passage to entrench constitutional protection), and Virginia's Right to Reproductive Freedom Amendment (would constitutionalize the right). Active signature collection continues in Idaho and Nebraska. The Fifth Circuit's May 1, 2026 nationwide mifepristone restriction order (temporarily stayed by SCOTUS through May 11) and the live Comstock Act enforcement threat mean the domain's urgency is not calendar-dependent — it is active right now.
 
-**Cross-Domain Synthesis Leverage**: Does adopting this domain unlock distribution pathways into other sectors or amplify existing Phase 1 domains? High score = the domain's organizations serve as "brokers" connecting multiple other movement sectors simultaneously. The abolitionist/criminal justice domain scores maximum here: Movement for Black Lives' policy ecosystem of 50+ organizations touches every racial justice, economic justice, healthcare, immigration, and community organizing sector. A single distribution relationship with M4BL opens access to a coalition that dwarfs Phase 1's entire contact list combined.
+Organizational infrastructure depth is exceptional and entirely absent from Phase 1's distribution network: Reproductive Freedom for All (coordinating three active ballot campaigns), Center for Reproductive Rights (active litigation in five states), SisterSong Women of Color Reproductive Justice Collective (200+ member organizations, connects reproductive justice to environmental, immigration, and disability sectors simultaneously), National Network of Abortion Funds, and NARAL.
 
-**Content Availability**: Is there sufficient existing research, organizing work, and documented evidence to produce a strong domain document efficiently? High score = robust academic literature, multiple primary sources, documented legislative and litigation landscape. Reproductive rights scores highest: Guttmacher Institute state law data, KFF reproductive rights dashboard, Center for Reproductive Rights litigation tracker, and international comparative evidence (Ireland 2018, Poland 2021) are all production-ready.
+**Gap 2: Labor Rights and Worker Power (acute constitutional threat)**
 
-**Timing Urgency**: Is there a hard external deadline — hearing, rule change, litigation window, or ballot measure campaign — that makes this domain more valuable in the next three months than in six months? High score = hard deadline within 90 days. Reproductive rights has the most acute timing profile: 2026 ballot measures are in active signature collection and campaign phases; Comstock Act threat is live. Labor rights has the second-highest urgency: the NLRB constitutional challenge is moving toward Supreme Court review within 12-18 months, and the organizing window before a ruling is finite.
+Domain 17 (Labor and Employment) appears in the original proposal as an entry without a standalone research file. The NLRB's constitutional architecture is now under direct attack in multiple federal circuits following the Fifth Circuit's August 2025 ruling that NLRB's removal protections are likely unconstitutional (SpaceX v. NLRB). Although the NLRB relinquished jurisdiction over SpaceX in February 2026 after the National Mediation Board ruled SpaceX is covered by the Railway Labor Act — ending that specific case — the Fifth Circuit's constitutional ruling stands and analogous challenges are proceeding in the Third and Ninth Circuits. The constitutional principle at stake (whether the NLRB's insulation from presidential removal violates Article II) directly parallels the Humphrey's Executor litigation thread in Domain 6, but Domain 6 does not name organized labor's organizing infrastructure as a distribution constituency.
 
-### Interaction Effects Worth Noting
+The AFL-CIO, SEIU, CWA, and Economic Policy Institute are entirely absent from Phase 1's contact list despite representing the most organizationally sophisticated member-education and research-distribution infrastructure in American civil society. AFL-CIO's 12.5 million members represent a multiplication effect qualitatively different from any Phase 1 institutional contact.
 
-Three domains produce disproportionate leverage when released together because they share organizing infrastructure: reproductive rights (Domain 44), environmental justice (Domain 46), and criminal justice/abolitionism (Domain 45). Releasing all three in quick succession enables a single outreach campaign to SisterSong (which connects all three), M4BL (which connects all three), and the Climate Justice Alliance (which connects two of three). The sequencing cost of releasing them separately is high; the coordination benefit of releasing them as a cluster is significant.
+**Gap 3: Environmental Justice and Community Participation Rights**
 
-Two domains have timing urgency that is entirely independent of the others: campaign finance/dark money (tied to the DISCLOSE Act of 2026 legislative calendar and the four active dark money reform ballot measures) and labor rights (tied to the NLRB Supreme Court petition timeline). These should be treated as stand-alone urgent items regardless of the cluster sequencing decision.
+Phase 1's `environmental-rollbacks-tracker.md` documents the events. No standalone domain analyzes environmental justice as a democratic participation question — specifically, the destruction of the legal and procedural mechanisms through which low-income and frontline communities exercise voice over decisions that directly threaten their health, property, and survival.
 
-### Domains That Amplify Phase 1 Most Directly
+The January 8, 2026 removal of NEPA's implementing regulations from the Code of Federal Regulations eliminated the primary participation mechanism available to communities without formal political power. The closure of all ten EPA environmental justice regional offices and the cancellation of $400 million in EJ grants (now the subject of a coalition lawsuit by Earthjustice, SELC, and Public Rights Project) destroyed the institutional infrastructure through which frontline communities built civic capacity over three decades. The EPA Endangerment Finding revocation proceeding is active in the D.C. Circuit. The Climate Justice Alliance (100+ frontline organizations) and the Indigenous Environmental Network are the fastest distribution pathway into the communities whose democratic exclusion is most acute — and neither is reached by Phase 1.
 
-| Phase 2 Domain | Phase 1 Domains Amplified | Mechanism |
+**Gap 4: LGBTQ+ Rights Under Systematic Legal Attack**
+
+LGBTQ+ rights face an accelerating legislative assault that Phase 1 covers only indirectly (Domain 33's ballot initiative suppression analysis touches the ballot restriction mechanisms; Domain 7's First Amendment analysis covers protest protection). The ACLU is tracking approximately 400 anti-LGBTQ+ bills in state legislatures in 2026. The Trans Legislation Tracker documents an even larger universe of bills targeting trans and gender nonconforming people in 42 states. At least one state has confirmed an anti-trans ballot measure for November 2026, with additional states being tracked.
+
+The organizational infrastructure — Advocates for Trans Equality (AT4E, the 2025 merger of NCTE and TLDEF), Lambda Legal (active cases in 22 states), the National LGBTQ Task Force, and GLSEN — is entirely absent from Phase 1's distribution network. The Alliance Defending Freedom's state legislative template infrastructure is the common author of anti-trans, anti-reproductive-rights, and anti-ballot-initiative legislation already documented in Phase 1 — making LGBTQ+ rights a structural convergence point with Phase 1 Domains 33 and 44, not a standalone civil rights silo.
+
+**Gap 5: Campaign Finance as the Connective Tissue Mechanism**
+
+Dark money expenditures reached $1.9 billion in the 2024 election cycle. Citizens United's structural architecture — 501(c)(4) dark money vehicles, shell corporation contribution chains, and the FEC's quorum-failure-driven enforcement vacuum — is the mechanism through which every sector-specific corporate capture documented throughout Phase 1 operates. Phase 1 covers the sector-level effects (Domain 38: financial capture, Domain 42: pharma lobbying) but no domain names the mechanism itself.
+
+The DISCLOSE Act of 2026 (Whitehouse/Pappas, reintroduced February 2026, S.3991 in the 119th Congress) carries support from all 47 Democratic senators and 139 House Democrats, with endorsements from Campaign Legal Center, Brennan Center, Common Cause, End Citizens United, and Public Citizen. Four state-level dark money reform ballot measures are active in 2026. Campaign Legal Center and Common Cause have existing institutional relationships adjacent to Phase 1's distribution network through the voting rights and ballot initiative suppression channels.
+
+**Tier 2 Gaps (confirmed but lower immediate salience):** Criminal justice as civic exclusion architecture (4.4 million disenfranchised; Virginia's constitutional amendment on November 2026 ballot would restore 230,000 voters); housing and tenant rights (Slee and Desmond 2023 causal eviction-turnout evidence; OBBBA HUD cuts; 30-day eviction notice rule rescinded February 2026); digital justice and algorithmic discrimination (BEAD broadband cut from $42.5B to $14B in OBBBA; private-sector algorithmic discrimination in hiring, credit, and housing); youth civic power (campus polling place closures; SAVE America Act barriers; 6,000+ student visa revocations); migrant civic participation beyond detention (TPS/DACA chilling effects; 3.7 million asylum backlog); food and agricultural justice (H.R. 7567 Farm Bill — deepest proposed SNAP/conservation cuts); and economic democracy (constructive alternative frame — 3,500+ worker cooperatives, 60+ participatory budgeting jurisdictions).
+
+---
+
+## Part 2: Domain Prioritization Framework — 15 Candidates
+
+**Scoring dimensions (1-5 each, 25-point maximum):**
+- **A** — Adoption Likelihood: How receptive is this sector to externally produced analytical documents?
+- **I** — Movement Infrastructure Depth: Does this sector have federation structures with staff capacity to distribute?
+- **L** — Cross-Domain Leverage: Does this domain broker connections between multiple Phase 1 and Phase 2 domains?
+- **U** — Timing Urgency: Is there a hard external deadline within 90 days that increases value?
+- **C** — Content Availability: Is there sufficient existing literature to produce a strong domain efficiently?
+
+The 15 candidates in ranked order:
+
+**Rank 1 — Reproductive Freedom as Democratic Architecture** | A:5 I:4 L:5 C:5 U:5 = **24/25**
+
+Core thesis: Restrictions on reproductive autonomy function as civic exclusion mechanisms — suppressing voter registration, reducing economic independence, and disproportionately affecting the reproductive-age women whose turnout volatility is most decisive in 2026 competitive midterms. Missouri Amendment 3, Nevada Question 6, and Virginia's reproductive freedom amendment are live political battles for which a democratic-design analysis provides distinct value that is unavailable in existing rights-based advocacy literature.
+
+Timeline urgency: CRITICAL. Ballot campaigns in active signature/qualification phase. Fifth Circuit mifepristone order (temporarily stayed). Comstock Act enforcement threat live.
+
+Primary organizations: Center for Reproductive Rights, SisterSong, Reproductive Freedom for All, National Network of Abortion Funds, NARAL, Planned Parenthood Action Fund (51 state affiliates).
+
+Production estimate: 8-12 hours.
+
+---
+
+**Rank 2 — Surveillance Capitalism and Electoral Manipulation** | A:5 I:4 L:5 C:5 U:5 = **24/25**
+
+Core thesis: Commercial surveillance infrastructure — data brokers, voter file targeting companies, and AI-generated psychographic political advertising — has converged with the government's data-broker-purchase warrant-bypass into a unified electoral manipulation architecture that is operating at industrial scale in the 2026 midterms for the first time. The June 12, 2026 FISA Section 702 renewal deadline is the specific legislative window: the unresolved dispute over whether to close the commercial data broker loophole (Wyden-Lee-Davidson-Lofgren bill) means that a domain document can directly inform Senate Judiciary Committee floor vote deliberations.
+
+Timeline urgency: CRITICAL. June 12, 2026 hard deadline. NRSC Talarico deepfake (March 11, 2026) — first national party committee AI-generated synthetic candidate video — is the immediate news anchor.
+
+Primary organizations: Brennan Center, ACLU, EFF, EPIC, CDT, Campaign Legal Center. Cross-partisan coalition: Rand Paul/Ron Wyden Senate co-sponsorship structure.
+
+Production estimate: 12-15 hours.
+
+---
+
+**Rank 3 — Criminal Justice, Abolitionism, and the Civic Exclusion Architecture** | A:4 I:5 L:5 C:5 U:4 = **23/25**
+
+Core thesis: Mass incarceration functions as systematic civic exclusion architecture — 4.4 million Americans disenfranchised, 1 in 13 Black adults unable to vote, with collateral consequences in jury exclusion, public employment bars (40,000+ federal job categories), housing discrimination, and debt burden extending political exclusion far beyond the sentence itself. Virginia's November 2026 ballot measure restoring voting rights to 230,000+ people with felony convictions is the immediate policy action point.
+
+M4BL's People's Assembly Project (launched April 2026, 100+ organizations) is the highest-leverage single distribution broker in Phase 2: it connects criminal justice, reproductive justice, environmental justice, economic democracy, and housing simultaneously. A distribution relationship with M4BL unlocks a coalition network that dwarfs Phase 1's entire contact list.
+
+Timeline urgency: HIGH. Virginia ballot measure on November 2026 ballot. State legislative automatic restoration bills active in Massachusetts, Washington, New Hampshire. SCOTUS OT2025-2026 includes two disenfranchisement-adjacent cases.
+
+Primary organizations: M4BL Policy Table, Critical Resistance, Brennan Center Justice Program, Sentencing Project, Worth Rises, Prison Policy Initiative, NAACP LDF.
+
+Production estimate: 12-18 hours.
+
+---
+
+**Rank 4 — Environmental Justice and Community Participation Rights** | A:4 I:5 L:5 C:5 U:4 = **23/25**
+
+Core thesis: NEPA's public comment process was the primary mechanism through which communities with little formal political power could contest decisions imposing pollution burdens — its January 8, 2026 removal from the Code of Federal Regulations eliminates the most accessible democratic participation tool in environmental governance. Earthjustice's active D.C. Circuit litigation (EPA climate protections repeal, endangerment finding revocation) and the coalition lawsuit over terminated EJ grants ($400M, now before federal courts) provide concrete legal actions that this domain supports.
+
+Timeline urgency: HIGH. EPA Endangerment Finding comment period active through summer 2026. Earthjustice D.C. Circuit cases in briefing.
+
+Primary organizations: Climate Justice Alliance (100+ frontline orgs — single fastest distribution channel into frontline communities), WE ACT for Environmental Justice, Deep South Center for Environmental Justice, Indigenous Environmental Network, Earthjustice, Center for Biological Diversity.
+
+Production estimate: 12-18 hours.
+
+---
+
+**Rank 5 — LGBTQ+ Rights and Trans Liberation Under Systematic Legal Attack** | A:4 I:4 L:4 C:5 U:5 = **22/25**
+
+Core thesis: The approximately 400 anti-LGBTQ+ bills tracked by ACLU in 42 states during 2026 share a common legal author — the Alliance Defending Freedom — whose state legislative template infrastructure is identical to the ADF architecture attacking reproductive rights (Domain 44) and ballot initiative processes (Domain 33), making LGBTQ+ rights a structural convergence point with multiple Phase 1 threats rather than a standalone civil rights silo.
+
+Timeline urgency: ACUTE. Anti-trans ballot measures on November 2026 ballots. SCOTUS OT2025-2026 includes three LGBTQ+-adjacent cases. Creating Change conference (January 2027) is the highest-density distribution venue — research completion by September 2026 enables pre-conference distribution.
+
+Primary organizations: Advocates for Trans Equality (AT4E), Lambda Legal, National LGBTQ Task Force, GLSEN, PFLAG National, Human Rights Campaign.
+
+Production estimate: 8-12 hours.
+
+---
+
+**Rank 6 — Labor Rights, NLRB Capture, and Worker Power as Democratic Infrastructure** | A:5 I:5 L:4 C:4 U:4 = **22/25**
+
+Core thesis: The Fifth Circuit's August 2025 ruling that the NLRB's removal protections are likely unconstitutional — a ruling that stands despite the SpaceX case's February 2026 jurisdictional dismissal, with Third and Ninth Circuit challenges proceeding — uses the same constitutional mechanism (presidential removal power over independent agency members) that destroyed CFPB independence and threatens every independent regulatory agency, making the labor rights crisis a democracy crisis with Phase 1's Humphrey's Executor analysis (Domain 6) as its constitutional foundation.
+
+Timeline urgency: HIGH. Third and Ninth Circuit cases proceeding toward merits decisions. AFL-CIO organizing window before any ruling is finite.
+
+Primary organizations: AFL-CIO Research Department, SEIU Legislative Affairs, CWA, Economic Policy Institute, Labor Notes.
+
+Production estimate: 12-18 hours.
+
+---
+
+**Rank 7 — Campaign Finance, Dark Money, and Corporate Capture of Democratic Institutions** | A:4 I:4 L:4 C:5 U:4 = **21/25**
+
+Core thesis: Dark money — $1.9 billion in 2024, nearly double the 2020 record — is the structural mechanism connecting Citizens United to every sector-specific corporate capture documented in Phase 1: crypto-PAC capture of financial regulation (Domain 38), pharma lobbying (Domain 42), dark money funding of ballot initiative suppression campaigns (Domain 33). No existing domain names this mechanism. The DISCLOSE Act of 2026 (S.3991, all 47 Democratic senators supporting) is the specific legislative vehicle.
+
+Timeline urgency: HIGH. DISCLOSE Act of 2026 in Senate; Republican filibuster threat but active floor vote calendar pressure. Four state dark money disclosure ballot measures active for November 2026.
+
+Primary organizations: Campaign Legal Center, Common Cause, Brennan Center Democracy Program, Issue One, End Citizens United.
+
+Production estimate: 8-12 hours.
+
+---
+
+**Rank 8 — Medicaid-Democracy Nexus (OBBBA-NVRA Intersection)** | A:4 I:4 L:5 C:5 U:5 = **23/25**
+
+Note: This domain was identified in the PHASE_2_DOMAIN_CANDIDATES.md (May 12) as Candidate C and is among the most analytically distinct contributions in the pipeline. Ranked 8 by composite score adjustment for research complexity, but should be considered Rank 4 by urgency alone given the June 1 HHS interim final rule deadline.
+
+Core thesis: Medicaid offices are designated voter registration agencies under the National Voter Registration Act. When HHS issues its OBBBA work requirements interim final rule on June 1, 2026, triggering a January 1, 2027 implementation deadline that will produce churn exits for millions of currently eligible beneficiaries, the enrollment disruption is simultaneously a voter registration suppression mechanism — invisible to conventional voter suppression analysis but causally documented by the NVRA's statutory framework. The Arkansas 2018 natural experiment (18,000 coverage losses in six months, zero measurable employment effect) is the evidentiary foundation.
+
+Timeline urgency: CRITICAL — June 1, 2026 HHS rule is the immediate anchor. January 1, 2027 implementation deadline is the advocacy close.
+
+Primary organizations: CBPP, Georgetown CCF, Protect Our Care, Lawyers' Committee for Civil Rights, NAACP LDF, state AG civil rights divisions.
+
+Production estimate: 10-14 hours. Can begin immediately; should begin before June 1 HHS rule is published.
+
+---
+
+**Rank 9 — Tenant Rights, Housing Justice, and Democratic Exclusion** | A:4 I:4 L:4 C:5 U:4 = **21/25**
+
+Core thesis: Eviction is a voter suppression mechanism — Slee and Desmond (2023) establish a causal link between eviction rates and voter turnout suppression (0.6 percentage points per unit increase in county eviction rate per 1,000 renters), with Black and Latinx renters facing eviction at twice the rate of white renters. The OBBBA's rescission of the 30-day eviction notice requirement for nonpayment (February 2026) and HUD funding cuts are direct attacks on democratic participation infrastructure that are now in federal litigation (National Housing Law Project, Legal Aid Society).
+
+Primary organizations: National Tenant Union Federation, Right to the City Alliance, National Low Income Housing Coalition, National Housing Law Project.
+
+Production estimate: 12-18 hours.
+
+---
+
+**Rank 10 — Digital Justice — Algorithmic Discrimination, Broadband Equity, and Platform Accountability** | A:4 I:4 L:4 C:5 U:3 = **20/25**
+
+Core thesis: Private-sector algorithmic discrimination in hiring, credit, housing, and insurance operates as a structurally invisible mechanism of civic exclusion — and the OBBBA's gutting of the BEAD broadband buildout (from $42.5B to $14B) removes the infrastructure access that is prerequisite to participation in the digital civic space where democratic organizing now primarily occurs. EU AI Act Article 50 enforcement beginning August 2, 2026, creates a comparative regulatory pressure window.
+
+Primary organizations: Lawyers' Committee for Civil Rights (Digital Justice Initiative), Color of Change, National Digital Inclusion Alliance, EFF.
+
+Production estimate: 8-12 hours.
+
+---
+
+**Rank 11 — Youth Civic Power — Structural Barriers to the Rising Generation's Democratic Participation** | A:4 I:4 L:4 C:4 U:4 = **20/25**
+
+Core thesis: Campus polling place closures, student ID restrictions, 6,000+ student visa revocations (documented chilling effect on campus political organizing), and OBBBA restrictions on Department of Education voter registration engagement constitute a coordinated structural attack on 18-24-year-olds — the voting cohort whose turnout volatility most affects competitive 2026 outcomes.
+
+Primary organizations: Campus Vote Project, Students Learn Students Vote, NextGen America, CIRCLE at Tufts.
+
+Production estimate: 8-12 hours.
+
+---
+
+**Rank 12 — Food Systems, Agricultural Justice, and Rural Democratic Organizing** | A:3 I:4 L:4 C:4 U:4 = **19/25**
+
+Core thesis: H.R. 7567 (Farm Bill) carries the deepest proposed SNAP and conservation cuts in the bill's history; four firms control 80%+ of beef processing; tariff retaliation is producing farm income crisis in sectors whose electoral weight in rural competitive districts is decisive. Connects to Phase 1's trade policy (Domain 23) and healthcare access (Domain 31 — rural hospital closures) but opens a rural constituency with zero Phase 1 coverage.
+
+Primary organizations: National Family Farm Coalition, National Black Food and Justice Alliance, Rural Coalition, Farm Aid, National Sustainable Agriculture Coalition.
+
+Production estimate: 18-25 hours.
+
+---
+
+**Rank 13 — Church-State Separation and Christian Nationalism as Institutional Project** | A:3 I:3 L:4 C:5 U:4 = **19/25**
+
+Core thesis: Christian nationalism is an organized legal infrastructure — the ADF model legislation pipeline, the Federalist Society judicial placement apparatus, and SCOTUS's abandonment of the Lemon test in Kennedy v. Bremerton (2022) constitute a systematic project to transform constitutional Establishment Clause protections into preferences, using the same organizational infrastructure documented across Phase 1's judicial independence (Domain 6), state autocratization (Domain 33), and LGBTQ+ rights (Domain 55) domains.
+
+Primary organizations: Americans United for Separation of Church and State, Freedom From Religion Foundation, Baptist Joint Committee.
+
+Production estimate: 12-18 hours.
+
+---
+
+**Rank 14 — Pension Security, Social Security, and Retirement Justice as Democratic Infrastructure** | A:3 I:3 L:3 C:5 U:4 = **18/25**
+
+Core thesis: SSA's elimination of 7,000 jobs is creating claim processing delays that function as de facto benefit denials independent of legislative cuts; the OBBBA accelerates Social Security Trust Fund insolvency by approximately three years; and the 73.5 million current Social Security recipients represent the single most reliable voting cohort in American elections — making this a democratic participation infrastructure question.
+
+Primary organizations: AARP (38M members), Economic Policy Institute, National Public Pension Coalition, Social Security Works.
+
+Production estimate: 8-12 hours.
+
+---
+
+**Rank 15 — Economic Democracy — Worker Ownership, Community Wealth, and Participatory Budgeting** | A:3 I:3 L:3 C:4 U:3 = **16/25**
+
+Core thesis: 3,500+ worker cooperatives, 300+ community land trusts, and 60+ participatory budgeting jurisdictions constitute an existing democratic economy infrastructure that functions as the constructive alternative to the crisis diagnoses throughout Phase 1 and Phase 2 — the domain that positions the framework as producing alternatives, not only documenting failures, and creates the entry point for audiences motivated by affirmative vision rather than threat response.
+
+Primary organizations: Democracy Collaborative, US Federation of Worker Cooperatives, New Economy Coalition, National Center for Employee Ownership.
+
+Production estimate: 18-25 hours.
+
+---
+
+## Part 3: Outreach Strategy for Phase 2
+
+### Sequencing Recommendation
+
+The sequencing logic has three governing principles: hard external deadlines override cluster preferences; domains sharing broker organizations release as clusters to enable combined outreach; and domains that amplify Phase 1 (reaching constituencies already in the distribution network) prioritize over cold-network domains.
+
+**June 2026 (Wave 1 — three domains, deadline-driven):**
+
+1. Surveillance Capitalism / FISA (Rank 2) — research must complete by June 8, 2026 to inform Senate floor vote debate before June 12 FISA renewal deadline. Distribution to Brennan Center, ACLU, EFF, EPIC, Wyden and Paul Senate staff in a coordinated same-week send.
+2. Medicaid-Democracy Nexus (Rank 8) — anchors to June 1 HHS interim final rule. Research begins immediately; distribution targets the voting rights community (NAACP LDF, Lawyers' Committee for Civil Rights) and healthcare advocacy community (CBPP, Georgetown CCF) as a bridge coalition.
+3. Reproductive Freedom (Rank 1) — active ballot campaigns in Missouri, Nevada, Virginia create immediate adoption demand. Distribute with organizing brief format to SisterSong, Reproductive Freedom for All, Center for Reproductive Rights.
+
+**July 2026 (Wave 2 — thematic cluster):**
+
+4. Criminal Justice / Civic Exclusion (Rank 3) — M4BL anchor outreach. The People's Assembly Project infrastructure (April 2026 launch) is the distribution vehicle; distribute to M4BL Policy Table, Brennan Center Justice Program, Sentencing Project, NAACP LDF.
+5. Environmental Justice (Rank 4) — Climate Justice Alliance anchor outreach. Pair with NEPA litigation briefing (Earthjustice, NRDC). EPA Endangerment Finding comment period creates immediate advocacy hook.
+6. Campaign Finance (Rank 7) — distribute to Campaign Legal Center, Common Cause, Issue One. Pair with four state ballot measure campaigns for direct campaign toolkit integration.
+
+Criminal Justice, Environmental Justice, and Campaign Finance are the July cluster because they share two broker organizations (Brennan Center, ACLU) with the June cluster — a warm handoff from June outreach to July deepening.
+
+**August 2026 (Wave 3 — four domains):**
+
+7. LGBTQ+ Rights (Rank 5) — AT4E, Lambda Legal, National LGBTQ Task Force. Timed for maximum ballot measure campaign integration before early-vote periods open in September-October.
+8. Labor Rights (Rank 6) — AFL-CIO Research Department, SEIU Legislative Affairs, EPI. Third and Ninth Circuit NLRB cases will have advanced; research completion provides the updated constitutional landscape.
+9. Tenant Rights / Housing (Rank 9) — National Tenant Union Federation, Right to the City Alliance. OBBBA housing nexus comment period is the advocacy anchor.
+10. Digital Justice (Rank 10) — EU AI Act Article 50 enforcement (August 2) is the comparative pressure hook; distribute to EFF, CDT, Color of Change, National Digital Inclusion Alliance.
+
+**September-October 2026 (Wave 4 — three domains):**
+
+11. Youth Civic Power (Rank 11) — Campus Vote Project, NextGen America, Students Learn Students Vote. Pre-election timing maximizes utility for voter registration drive organizers.
+12. Food Systems / Agricultural Justice (Rank 12) — National Family Farm Coalition, National Black Food and Justice Alliance. Farm Bill Senate committee activity is the advocacy trigger.
+13. Church-State Separation (Rank 13) — Americans United, FFRF, Baptist Joint Committee. Connect to existing Phase 1 judicial independence (Domain 6) distribution network.
+
+**August 2027 and later (Wave 5 — Tier 3):**
+
+14. Pension Security / Social Security (Rank 14) — AARP, EPI, Social Security Works.
+15. Economic Democracy (Rank 15) — Democracy Collaborative, US Federation of Worker Cooperatives. Lower urgency but highest long-term differentiation value — the constructive alternative frame.
+
+### Outreach Mechanism
+
+Phase 2 outreach diverges from Phase 1 in format and channel. Phase 1 reached named researchers and legislative staff by individual email with full research documents. Phase 2 primary audiences — labor union research staff, environmental justice coalition coordinators, tenant organizing networks — have different adoption models.
+
+**Organizational broker outreach (Month 1 priority, before any individual domain contact):** Eight organizations should receive a single coordinated pitch before individual domain distribution begins. The pitch frame: "We have produced research designed specifically for your sector's organizing context — connecting the democracy crisis analysis your members are living to the broader institutional framework. We would like to make this available as a tool for your member education and coalition work." Attach the 1-2 page organizing brief, not the full domain document, to the initial email.
+
+The eight broker organizations, in outreach priority order:
+1. M4BL Policy Table — connects to Domains 3, 36-37, 38, 44, 49 simultaneously
+2. Climate Justice Alliance — connects to Domains 38, 49, 58 simultaneously
+3. SisterSong — connects to Domains 36, 38-39, 43, 55 simultaneously
+4. AFL-CIO / EPI — connects to Domains 41, 44-45, 50, 51
+5. National LGBTQ Task Force — connects to Domains 39, 44, 55
+6. ACLU (National + State Affiliates) — connects to all Phase 2 domains
+7. Campaign Legal Center / Common Cause — connects to Domains 1, 33, 37, 51
+8. Earthjustice / Center for Biological Diversity — connects to Domains 15, 38, 45, 49, 58
+
+**Organizing brief format:** Each Phase 2 domain should distribute as: (1) full research document via GitHub Gist (same pattern as Phase 1), (2) 1-2 page organizing brief via separate Gist, formatted to answer "If I am a [union steward / tenant organizer / environmental justice coordinator], what does this domain tell me to do next week?", and (3) Substack summary post labeled "Phase 2 Expansion" with domain number in the slug.
+
+### Feedback Integration
+
+Phase 1 adoption data — tracked through the WAVE_1_MONITORING_DASHBOARD.md and POST_WAVE_1_MEASUREMENT_FRAMEWORK.md infrastructure — begins generating usable signals in the May 28-June 15 window. Phase 2 sequencing should adapt in three specific ways based on that data:
+
+- **If Domain 6 (Judicial Independence) generates strong law clinic engagement:** Lead Phase 2 labor rights outreach (Rank 6) to law clinics with the NLRB constitutional framing, positioning it as a Domain 6 extension.
+- **If Domain 27 (Higher Education) generates university administration engagement:** Lead Phase 2 youth civic power outreach (Rank 11) to university government relations offices with the campus infrastructure framing.
+- **If Domain 31 (Healthcare Access) generates state AG engagement:** Accelerate Medicaid-Democracy Nexus (Rank 8) to AG civil rights divisions with the NVRA enforcement theory — converting healthcare advocacy contacts into voting rights litigation partners.
+- **If Phase 1 adoption reveals volume fatigue:** Pause Ranks 11-15 entirely; redirect research capacity to deepening Ranks 1-7 with updated organizing briefs and sector-specific companion supplements.
+
+### Risk Mitigation
+
+The highest risk in Phase 2 distribution is that Phase 1 adoption gaps reveal constituencies that do not align with the predicted adoption model. If this occurs:
+
+- **Risk: Institutional contacts (AGs, law clinics) are the actual high-adoption audience, not movement organizations.** Response: Reframe Phase 2 domains for institutional audiences by adding "constitutional litigation theory" sections to each organizing brief. Domain 8 (Medicaid-Democracy Nexus) is already designed for this pivot — the NVRA enforcement angle gives AGs a specific statutory litigation theory.
+- **Risk: Movement organizations do not adopt documents at all without relationship investment.** Response: Replace cold outreach with requests for co-production. Invite SisterSong, M4BL, and Climate Justice Alliance staff to participate in a single 45-minute research call, positioning it as "advisory input on Phase 2 research framing" rather than distribution of a completed document. This converts the distribution relationship into a collaboration relationship — higher initial cost, substantially higher adoption yield.
+- **Risk: Hard external deadlines pass (June 12 FISA; November ballot measures) before research completes.** Response: Triage immediately. If Surveillance Capitalism research (Rank 2) cannot complete before June 12, publish a rapid briefing (750-1,000 words) directly to the Brennan Center and ACLU FISA contacts with the data-broker loophole framing. A short rapid brief timed to a floor vote is more valuable than a full domain published after the vote.
+
+---
+
+## Part 4: Integration Mechanics — How Phase 2 Builds on Phase 1
+
+### Recommended Architecture: Cross-Referenced Standalone Documents
+
+Phase 2 domains should be standalone documents — fully comprehensible without prior exposure to Phase 1 content — that include explicit cross-references to Phase 1 material in a standardized section near the end. This is the correct architecture for three reasons:
+
+First, the distribution constituencies are different. Labor organizers arrive at Phase 2 through union education channels, not through the AG networks and law clinics that received Phase 1. A standalone document that does not require Phase 1 literacy respects the audience's time and eliminates the access barrier.
+
+Second, Phase 1 credibility is best deployed as a resource, not a prerequisite. Cross-references function as invitations: "This analysis builds on existing framework research on [Domain X]. If your organization has not seen that material, it is available at [GitHub Gist URL]." This language positions Phase 1 as a resource that Phase 2 recipients can access at their discretion — not a required reading list.
+
+Third, sector-specific bundles (the alternative architecture — e.g., a "Healthcare-Democracy Nexus" combining Domains 31, 39, 40, and 50 under one parent) would create a reading burden that frontline organizing audiences will not carry. The individual document is the product. Bundles work for institutional audiences (think tanks, AG networks, foundation program officers who consume frameworks whole); they do not work for union organizers, tenant advocates, or environmental justice coordinators.
+
+### Cross-Reference Architecture (Selected)
+
+Each Phase 2 domain should include a "Phase 1 Integration" section listing 2-4 directly relevant Phase 1 domains with one-sentence descriptions and Gist URLs.
+
+| Phase 2 Domain | Phase 1 Anchor Domains | Bidirectional Mechanism |
 |---|---|---|
-| Reproductive Rights | Domain 33 (ballot initiative suppression), Domain 31 (Medicaid-reproductive care nexus), Domain F (civil society suppression of abortion orgs) | Direct cross-reference; shared advocacy window |
-| Labor Rights | Domain 6 (Humphrey's Executor/NLRB independence), Domain 38 (corporate capture parallel), Domain 29 (DOJ weaponization against organizers) | Same constitutional mechanism, different sector |
-| Environmental Justice | Domain G (Indigenous sovereignty), Domain 15 (climate rollbacks), Domain 25 (surveillance of EJ activists) | Same frontline communities, different legal frame |
-| Campaign Finance | Domain 38 (crypto PAC capture), Domain 42 (pharma lobbying), Domain 33 (dark money funding ballot initiative suppression campaigns) | Structural mechanism explaining sector-specific captures |
-| Tenant Rights/Housing | Domain 31 (Medicaid-housing stability nexus), Domain 1 (eviction-turnout suppression causal link), Domain 22 (racial disparity in eviction rates) | Democratic exclusion argument with quantified evidence |
-| LGBTQ+ Rights | Domain 27 (DEI elimination/higher education), Domain 31 (healthcare access for trans patients), Domain 7 (rights protection architecture) | Same legal infrastructure attacking different populations |
+| Reproductive Freedom | D33 (ballot initiative suppression), D31 (Medicaid-reproductive care), D1 (NVRA-civic exclusion) | ADF institutional infrastructure; Medicaid enrollment nexus; civic exclusion argument |
+| Criminal Justice | D29 (prosecutorial weaponization), D42 (drug policy capture), D1 (felony disenfranchisement in voting rights) | Civic exclusion architecture — carceral to prosecutorial to electoral |
+| Environmental Justice | D15 (climate rollbacks), D6 (litigation challenges), D23 (trade tariff-agriculture nexus) | Same frontline communities; NEPA removal as both environmental and participation rights attack |
+| LGBTQ+ Rights | D33 (ADF template legislation), D44 reproductive (ADF cross-domain use), D7 (First Amendment) | Shared legal attack infrastructure (ADF pipeline) |
+| Housing / Tenant | D31 (Medicaid-housing nexus), D1 (eviction-turnout causal evidence), D22 (racial disparity in eviction rates) | Democratic exclusion argument with quantified causal evidence |
+| Labor Rights | D6 (Humphrey's Executor/NLRB independence), D38 (corporate capture parallel), D29 (DOJ labor organizer targeting) | Same constitutional removal-power mechanism across independent agencies |
+| Campaign Finance | D38 (crypto-PAC financial capture), D33 (dark money ballot initiative suppression), D35 (SCOTUS OT2026 FEC-adjacent cases) | Structural mechanism explaining all sector-specific captures |
+| Medicaid-Democracy | D31 (OBBBA Medicaid cuts), D1 (NVRA voter registration mandate), D50 (healthcare-NVRA analysis) | NVRA causal chain: enrollment capacity cuts are voter registration infrastructure cuts |
+
+### The On-Ramp Design Principle
+
+Every Phase 2 document should function as an on-ramp into Phase 1 for audiences who arrive without framework background. This requires a specific structural element: an introductory paragraph in each Phase 2 domain that positions it within the framework explicitly — not with jargon, but with a concrete statement: "This analysis is part of a 50-domain research framework documenting the full architecture of democratic erosion in the United States. Documents on [related Phase 1 domains] are available at [GitHub repository URL]. This domain can be read independently."
+
+The on-ramp accomplishes two goals: Phase 2 recipients become Phase 1 recipients without additional outreach effort, and Phase 1 recipients who receive Phase 2 material are explicitly reminded that the framework has expanded.
+
+### Document Format Standards for Phase 2
+
+Phase 2 documents should diverge from Phase 1 in one structural respect: they must include a mandatory 1-2 page organizing brief as a companion document, separate from the full research text. Phase 1 documents are 30-50 page analytical reports formatted for policy-maker reading. They circulate in academic reading lists and AG research offices. Phase 2 organizing briefs are formatted for union meetings, coalition calls, and Signal group sharing. They answer a single operational question: "Given this analysis, what should my organization do in the next 30 days?" This is the format that generates adoption events in movement organizations — not the 7,000-word research document, which serves the archival and credibility function.
 
 ---
 
-## Part 3: Phase 2 Outreach Strategy
+## Part 5: Timeline and Production Estimates
 
-*~700 words*
+| Wave | Domains | Target Launch | Production Hours | Key Hard Deadline |
+|------|---------|---------------|-----------------|-------------------|
+| Wave 1 (June) | Surveillance Capitalism, Medicaid-Democracy Nexus, Reproductive Freedom | June 2026 | 30-41 hours | June 12 (FISA); June 1 (HHS rule) |
+| Wave 2 (July) | Criminal Justice, Environmental Justice, Campaign Finance | July 2026 | 32-48 hours | EPA comment period; DISCLOSE markup |
+| Wave 3 (August) | LGBTQ+ Rights, Labor Rights, Tenant Rights, Digital Justice | August 2026 | 40-60 hours | November ballot measure early-vote |
+| Wave 4 (Sept-Oct) | Youth Civic Power, Food Systems, Church-State | September-October 2026 | 36-55 hours | Pre-election distribution window |
+| Wave 5 (2027) | Pension Security, Economic Democracy | Early 2027 | 26-37 hours | State budget/appropriations cycles |
 
-### Cluster vs. Independent Research Model
-
-The decision between researching each new domain independently or in topical clusters has significant downstream consequences for both research efficiency and distribution impact.
-
-The **cluster model** is recommended for the three highest-leverage domains: reproductive rights (44), environmental justice (46), and criminal justice/abolitionism (45). These three share enough organizing infrastructure that a coordinated research and outreach campaign treating them as a thematic cluster — "Justice Movement Sectors: Reproductive, Environmental, and Carceral" — would reach the same broker organizations (SisterSong, M4BL, Climate Justice Alliance) with a unified message about the framework's expansion into frontline organizing. Releasing them within 2-3 weeks of each other creates a cumulative signal that the framework is broadening its reach.
-
-The **independent model** is correct for campaign finance/dark money (47) and labor rights (45-labor variant). These have distinct advocacy windows tied to specific legislative and litigation timelines that are not synchronized with other domains. The DISCLOSE Act calendar and the NLRB Supreme Court petition timeline are independent external events; research on these domains should be timed to those events rather than to each other.
-
-The remaining 10 domains should be researched in a loosely topical sequence — housing and tenant rights together (given their shared organizing networks), food systems and rural democracy together, LGBTQ+ and youth organizing together — with research beginning in month 2 after Tier 1 domains are distributed.
-
-### Timeline: Can 15 Domains Be Completed in 6 Weeks?
-
-The May-June target (all 15 domains researched before mid-June Tier 2 outreach begins) is achievable but requires concentrated effort. Based on Phase 1 research pacing:
-
-- **Fast domains (8-12 hours each)**: Policy briefing domains with robust existing literature and clear legislative hooks. Reproductive rights, labor/NLRB, campaign finance/dark money. These three can be researched in parallel in the first 2 weeks.
-- **Medium domains (12-18 hours each)**: Cross-domain synthesis domains requiring integration of Phase 1 content with new sector analysis. Environmental justice, housing/tenant rights, LGBTQ+ rights, youth civic power, migrant rights beyond detention. These five can be researched in sequential pairs in weeks 3-5.
-- **Slow domains (18-25 hours each)**: Novel research domains where the analytical frame itself is new to the framework and requires original synthesis. Food systems/agricultural justice, church-state/Christian nationalism, economic democracy, pension/Social Security, sex work rights, mental health/psychiatric survivor rights. These seven are properly Tier 3 and should be scheduled for July-August.
-
-The 6-week target is achievable for 8 domains (Tier 1 and Tier 2). Tier 3 should be set for a July-August research cycle with a September distribution target ahead of midterm season.
-
-### Broker Organizations: Fastest Distribution Pathways
-
-Eight organizations can function as brokers connecting Phase 2 outreach across multiple new domains simultaneously. These are the Month 1 outreach priority — not individual domain contacts:
-
-1. **Movement for Black Lives (M4BL) Policy Table**: Connects criminal justice/abolitionism, reproductive justice, environmental justice, digital justice, economic democracy. Reach: 50+ Black-led organizations.
-2. **Climate Justice Alliance**: Connects environmental justice, Indigenous sovereignty, food systems, housing justice. Reach: 100+ frontline organizations; active organizing newsletter is the single fastest distribution vector into frontline communities.
-3. **SisterSong Women of Color Reproductive Justice Collective**: Connects reproductive justice, environmental justice, LGBTQ+/trans, immigration, disability justice. Reach: 200+ member organizations. Existing warm contact pathway through National Network of Abortion Funds (Phase 1).
-4. **National LGBTQ Task Force**: Connects LGBTQ+/trans, reproductive justice, abolitionism, sex work rights, disability justice, youth organizing. Creating Change conference (annual) is the highest-density distribution venue in the progressive movement.
-5. **AFL-CIO / Economic Policy Institute**: Connects labor rights, economic democracy, housing, rural democracy. EPI publication automatically triggers distribution into the AFL-CIO's legislative and research infrastructure.
-6. **ACLU (National and State Affiliates)**: Connects every Phase 2 domain. 3 million+ members; 54 state affiliates. Existing Phase 1 credibility from litigation tracking is the entry point.
-7. **Campaign Legal Center / Common Cause**: Connects campaign finance, voting rights (Phase 1 Domain 1), ballot initiative suppression (Domain 33). Four active 2026 dark money reform ballot measures are the advocacy hook.
-8. **Earthjustice / Center for Biological Diversity**: Connects environmental justice, Indigenous sovereignty, public lands, food systems. Phase 1's environmental-rollbacks-tracker.md is the immediate credibility signal.
+**Acceleration triggers — begin immediately upon:**
+- Comstock Act enforcement action by DOJ: Reproductive Freedom (Rank 1) becomes 72-hour rapid briefing emergency
+- NLRB certiorari petition granted by SCOTUS in Third or Ninth Circuit case: Labor Rights (Rank 6) enters acute window; AFL-CIO outreach begins the week of the cert grant
+- Farm Bill Senate conference committee convened: Food Systems (Rank 12) advocacy window opens immediately
+- Phase 1 adoption data (May 28-June 15) reveals unexpected high-yield constituency: Pivot sequencing to amplify that constituency's adjacent Phase 2 domain
 
 ---
 
-## Part 4: Integration Mechanics
+*Sources: ACLU Anti-LGBTQ Legislative Tracker 2026 [https://www.aclu.org/legislative-attacks-on-lgbtq-rights-2026]; KFF Abortion on the 2026 Ballot [https://www.kff.org/womens-health-policy/abortion-on-the-2026-ballot-the-evolving-landscape-of-state-abortion-initiatives/]; Brennan Center FISA Section 702 2026 Resource Page [https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page]; CNBC FISA Extension April 30, 2026 [https://www.cnbc.com/2026/04/30/fisa-section-702-congress-extension.html]; Wyden-Lee FISA Reform Bill [https://www.wyden.senate.gov/news/press-releases/wyden-lee-davidson-and-lofgren-introduce-bill-to-reform-fisa-section-702-protect-americans-constitutional-rights-and-plug-data-broker-surveillance-loophole]; DISCLOSE Act of 2026 One-Pager [https://www.whitehouse.senate.gov/wp-content/uploads/2026/02/DISCLOSE-Act-of-2026-One-Pager_final.pdf]; Congress.gov DISCLOSE Act S.3991 [https://www.congress.gov/bill/119th-congress/senate-bill/3991]; OBBBA Implementation Timeline — Center for American Progress [https://www.americanprogress.org/article/the-implementation-timeline-of-the-one-big-beautiful-bill-act/]; KFF Medicaid Work Requirements [https://www.kff.org/medicaid/a-closer-look-at-the-work-requirement-provisions-in-the-2025-federal-budget-reconciliation-law/]; Earthjustice EPA Climate Protections Lawsuit [https://earthjustice.org/press/2026/earthjustice-and-partners-sue-epa-for-illegal-repeal-of-climate-protections]; Earthjustice EJ Grants Lawsuit [https://earthjustice.org/press/2026/nonprofits-tribes-and-local-governments-appeal-to-restore-epa-grant-program]; NRDC NEPA Rule Court Battle [https://www.nrdc.org/court-battles/environmental-justice-health-alliance-et-v-council-environmental-quality-et-nepa-rule]; NLRB relinquishes SpaceX jurisdiction [https://www.laborrelationsupdate.com/2026/02/nlrb-relinquishes-jurisdiction-over-spacex-abandoning-yearslong-legal-battle/]; Fifth Circuit NLRB ruling [https://www.cdflaborlaw.com/blog/fifth-circuit-ruling-puts-nlrb-on-constitutional-hot-seat]; AFL-CIO Supreme Court Motion [https://aflcio.org/press/releases/afl-cio-and-opeiu-file-supreme-court-motion-spacex-v-nlrb-protect-workers-rights-and]; M4BL People's Assembly Project [https://blackamericaweb.com/2026/04/15/movement-for-black-lives-people-assembly-project/]; M4BL About [https://m4bl.org/about-us/]; Common Counsel Foundation M4BL [https://www.commoncounsel.org/movement-for-black-lives-marks-a-decade-of-progress-building-autonomous-infrastructure-and-advancing-black-liberation/]; Virginia felony disenfranchisement ballot [https://fairelectionscenter.org/advocacy/virginia-voting-rights-restoration-amendment]; Virginia Mercury federal court ruling [https://virginiamercury.com/2026/03/11/federal-judge-upholds-ruling-that-certain-ex-felons-should-not-automatically-lose-voting-rights/]; Ballotpedia 2026 abortion ballot measures [https://news.ballotpedia.org/2025/11/18/where-could-abortion-be-on-the-ballot-in-2026-ballot-measures-qualified-in-missouri-and-nevada-proposed-in-five-other-states/]; Reproductive Freedom for All Nevada Q6 [https://reproductivefreedomforall.org/resources/vote-yes-on-nevadas-question-6-the-2026-abortion-rights-ballot-measure-explained/]; Trans Legislation Tracker [https://translegislation.com/]; Prism Reports anti-trans bills 2026 [https://prismreports.org/2026/02/09/anti-transgender-bills-2026/]; GLAAD 2026 LGBTQ bills [https://glaad.org/taking-the-fight-to-the-statehouses-in-2026-overview-of-lgbtq-related-bills-and-current-activations/]; Slee and Desmond eviction-turnout research (via existing research-notes.md); Sentencing Project disenfranchisement data [https://www.sentencingproject.org/issues/voting-rights/]; OpenSecrets 2024 dark money.*
 
-*~500 words*
-
-### Standalone vs. Cross-Referenced Architecture
-
-Phase 2 domains are not standalone research. They are explicitly designed to cross-reference Phase 1 domains — and to do so in both directions. A reader arriving at a Phase 2 domain document through a reproductive rights organization should encounter pointed references to Phase 1's ballot initiative suppression analysis (Domain 33) and Medicaid cuts analysis (Domain 31), giving them a navigation path into the broader framework. A reader who received Phase 1 through an AG network should be able to follow cross-references into Phase 2 and arrive at the labor, housing, and environmental justice material that was not in the original package.
-
-The practical implementation is straightforward: each Phase 2 domain document includes a standard "Phase 1 Integration" section near the end that lists the 2-4 most directly relevant Phase 1 domains with one-sentence descriptions and Gist URLs. The language is explicit: "This analysis connects directly to the framework's existing research on [Domain X]. If your organization has not seen that material, it is available at [URL]."
-
-This bidirectional referencing accomplishes two goals. First, it positions Phase 2 not as a sequel but as an expansion — the framework is larger than any single distribution wave. Second, it creates organic pathways for Phase 2 recipients to become Phase 1 recipients and vice versa, without requiring additional outreach effort.
-
-### Unified Introduction or Individual Documents?
-
-Individual domain documents are sufficient. A unified Phase 2 introduction is not required for the organizing audience Phase 2 targets. Labor organizers do not need a cover document that positions their domain within a 50-domain framework. They need the labor domain. The unified framing is more important for institutional audiences (think tanks, AG networks, foundation program officers) who consume the framework as a whole. For Phase 2's movement-infrastructure audiences, the individual document is the product.
-
-A brief Phase 2 framework overview (500-750 words) should be produced as a companion to the full package — for distribution to Phase 1 recipients who should know the expansion exists — but this is secondary to getting the individual domain documents into organizing hands.
-
-### Versioning
-
-Phase 2 domains should use GitHub Releases following the same pattern as Phase 1 Gist distribution:
-
-- **Individual domain Gists**: Each Phase 2 domain gets its own GitHub Gist (same structure as Domain 42's Gist at `gist.github.com/esca8peArtist`). Gist URLs are the distribution unit — they are shareable, version-tracked, and do not require recipients to navigate a repository.
-- **Substack supplements**: The Substack distribution channel established in Phase 1 should publish Phase 2 domain summaries as supplement posts, explicitly labeled "Phase 2 Expansion" with the domain number and title in the post slug. This creates a searchable archive and drives Substack subscriber growth from new movement audiences.
-- **Version notation**: Phase 2 documents should include the version string `v2.0` in their frontmatter (e.g., `version: 2.0 — Phase 2 Expansion, May 2026`), distinguishing them from Phase 1's production-ready v1.0 documents. This is important for recipients who receive both phases and need to distinguish currency.
-
----
-
-## Part 5: 15 Domain Candidates — Ranked
-
-*~400 words*
-
-Ranking factors in abbreviated notation: **A** = Adoption Likelihood, **I** = Infrastructure Depth, **L** = Leverage Multiplier, **C** = Content Availability, **U** = Urgency. Scale 1-5 each, 25 maximum.
-
----
-
-**Rank 1 — Reproductive Rights and Abortion Access as Democratic Architecture** | A:5 I:4 L:5 C:5 U:5 = **24/25** | Tier 1
-
-The most undeniable gap in Phase 1. Active 2026 ballot measures in Missouri and Nevada (certified), Idaho and Virginia (tracking). Comstock Act enforcement threat is live. The democratic-design argument — restrictions as civic and economic exclusion mechanisms with NVRA and voter turnout connections — is analytically distinct from the rights-based framing that already exists in advocacy literature. Movement infrastructure depth is exceptional. *Primary contacts: Center for Reproductive Rights, SisterSong, National Network of Abortion Funds, Reproductive Freedom for All.*
-
----
-
-**Rank 2 — Criminal Justice, Abolitionism, and Democratic Exclusion** | A:4 I:5 L:5 C:5 U:4 = **23/25** | Tier 1
-
-The highest leverage multiplier domain. M4BL's policy ecosystem touches every other domain on this list. The democratic exclusion argument covers felony disenfranchisement (4.4 million), jury exclusion, public employment restrictions, housing discrimination post-conviction, and debt burden — a comprehensive civic exclusion architecture beyond Phase 1's prosecutorial weaponization coverage (Domain 29). *Primary contacts: Critical Resistance, M4BL Policy Table, Brennan Center Justice Program, Worth Rises.*
-
----
-
-**Rank 3 — Environmental Justice and Frontline Community Democratic Participation** | A:4 I:5 L:5 C:5 U:4 = **23/25** | Tier 1
-
-NEPA regulations removed January 8, 2026. EPA Endangerment Finding revocation proposed. All ten EPA environmental justice regional offices closed. $400 million in EJ grants canceled. Earthjustice sued over the climate protection repeal. The analytic frame — community participation rights in environmental decision-making as democratic rights — is entirely distinct from Phase 1's climate policy coverage. *Primary contacts: Climate Justice Alliance, WE ACT for Environmental Justice, Deep South Center for Environmental Justice.*
-
----
-
-**Rank 4 — LGBTQ+ Rights and Trans Liberation Under Systematic Legal Attack** | A:4 I:4 L:4 C:5 U:5 = **22/25** | Tier 1
-
-740 anti-LGBTQ bills in 42 states in 2026. 113 national bills in the 119th Congress. Four states moving anti-trans ballot measures to the 2026 midterm. The same Alliance Defending Freedom legal infrastructure building anti-trans law is building the anti-reproductive rights and anti-ballot initiative architecture documented in Phase 1 — making this a direct extension of existing research. *Primary contacts: Advocates for Trans Equality, Lambda Legal, National LGBTQ Task Force, GLSEN.*
-
----
-
-**Rank 5 — Tenant Rights, Housing Justice, and Democratic Exclusion** | A:4 I:4 L:4 C:5 U:4 = **21/25** | Tier 1
-
-HUD 30-day eviction notice rule rescinded February 2026; tenant lawsuit filed by National Housing Law Project. OBBBA HUD funding cuts active. Eviction-turnout suppression causal evidence (Slee and Desmond 2023) provides the democratic-design argument. Tenant union organizing has grown to 15 major cities with statewide federation structures in California, New York, and Minnesota. *Primary contacts: National Tenant Union Federation, Right to the City Alliance, National Low Income Housing Coalition.*
-
----
-
-**Rank 6 — Labor Rights, NLRB Capture, and Worker Power as Democratic Infrastructure** | A:5 I:5 L:4 C:4 U:4 = **22/25** | Tier 1
-
-Note: This domain scored 22 on the adoption/infrastructure dimensions but is ranked 6 due to a longer research cycle. The Fifth Circuit ruled August 2025 that the NLRB structure is likely unconstitutional; AFL-CIO filed a Supreme Court intervention motion. SpaceX, Amazon, Trader Joe's, and Starbucks are the named challengers. AFL-CIO/SEIU distribution infrastructure is unmatched in scale. *Primary contacts: AFL-CIO Research Department, SEIU Legislative Affairs, Economic Policy Institute, Labor Notes.*
-
----
-
-**Rank 7 — Campaign Finance, Dark Money, and Corporate Capture of Democratic Institutions** | A:4 I:4 L:4 C:5 U:4 = **21/25** | Tier 2
-
-DISCLOSE Act of 2026 reintroduced (Whitehouse/Pappas, February 2026). Dark money at $1.9 billion in 2024 — new record. Four active 2026 ballot measures targeting dark money reform. This domain is the meta-analysis connecting Phase 1's sector-specific corporate captures (financial, pharma, tech) through Citizens United's structural architecture. *Primary contacts: Campaign Legal Center, Common Cause, Brennan Center, Issue One.*
-
----
-
-**Rank 8 — Migrant and Refugee Rights Beyond Detention** | A:4 I:4 L:3 C:4 U:5 = **20/25** | Tier 2
-
-TPS holders and DACA recipients (636,000) face active status termination. Asylum backlog at 3.7 million cases. The civic participation chilling effect — documented suppression of participation in public schools, healthcare, and civic institutions among legally present people — is analytically distinct from Phase 1's detention and enforcement coverage. *Primary contacts: National Immigration Law Center, United We Dream, RAICES, Centro de los Derechos del Migrante.*
-
----
-
-**Rank 9 — Digital Justice: Algorithmic Discrimination, Broadband Equity, and Platform Accountability** | A:4 I:4 L:4 C:5 U:3 = **20/25** | Tier 2
-
-Distinct from Phase 1's surveillance and AI governance domains. Covers private-sector algorithmic discrimination in hiring, credit, housing, and insurance; broadband access equity (21 million Americans without access, disproportionately rural and minority); and platform deplatforming as a civil rights problem. BEAD broadband buildout ($42.5B) canceled in OBBBA; partially restored at $14B. *Primary contacts: Lawyers' Committee for Civil Rights (Digital Justice Initiative), Color of Change, National Digital Inclusion Alliance.*
-
----
-
-**Rank 10 — Youth Civic Power: Organizing Infrastructure, Voter Access, and Civic Education** | A:4 I:4 L:4 C:4 U:4 = **20/25** | Tier 2
-
-Campus polling place closures, student ID restrictions, and administrative barriers to student registration are documented structural barriers. Student visa revocations (6,000+) have a documented chilling effect on campus political organizing. 2025 OBBBA restricted Department of Education voter registration engagement. *Primary contacts: Campus Vote Project, Students Learn Students Vote, NextGen America, Young Invincibles.*
-
----
-
-**Rank 11 — Food Systems, Agricultural Justice, and Rural Organizing** | A:3 I:4 L:4 C:4 U:4 = **19/25** | Tier 2
-
-Zero Phase 1 coverage. USDA farm safety net programs cut $14B in OBBBA. Farm Bill overdue two years and facing deepest proposed cuts in its history. Four firms control 80%+ of beef processing. The food sovereignty frame connects to Indigenous land rights, immigrant farmworker rights, and environmental justice. *Primary contacts: National Family Farm Coalition, National Black Food and Justice Alliance, Rural Coalition.*
-
----
-
-**Rank 12 — Church-State Separation and Christian Nationalism as Institutional Project** | A:3 I:3 L:4 C:5 U:4 = **19/25** | Tier 2
-
-Zero Phase 1 coverage. The Alliance Defending Freedom's state legislative infrastructure, the Federalist Society judicial pipeline, and the SCOTUS expansion of religious exemptions (303 Creative, Kennedy v. Bremerton) constitute a systematic attack on the Establishment Clause. The analytical angle is institutional — Christian nationalism as a political organizing infrastructure — not theological. *Primary contacts: Americans United for Separation of Church and State, Freedom From Religion Foundation, Baptist Joint Committee.*
-
----
-
-**Rank 13 — Pension Security, Social Security, and Retirement Justice** | A:3 I:3 L:3 C:5 U:4 = **18/25** | Tier 3
-
-SSA staffing crisis (7,000 jobs cut) is creating claim processing delays independent of benefit cuts. OBBBA accelerates Social Security Trust Fund insolvency timeline by approximately three years. Public pension attacks active in 14 states. Zero Phase 1 coverage. *Primary contacts: AARP, Economic Policy Institute, National Public Pension Coalition, Social Security Works.*
-
----
-
-**Rank 14 — Mental Health, Psychiatric Survivor Rights, and Community Crisis Response** | A:3 I:3 L:3 C:4 U:4 = **17/25** | Tier 3
-
-Administration pushing expanded forced institutionalization; 988 Suicide and Crisis Lifeline funding gutted in OBBBA; jails functioning as de facto psychiatric institutions. Cross-movement connections to disability justice, abolitionism, and housing are strong. Lower adoption likelihood because the psychiatric survivor and mad liberation frames require more relationship investment. *Primary contacts: MindFreedom International, National Coalition for Mental Health Recovery, Disability Rights Advocates.*
-
----
-
-**Rank 15 — Economic Democracy: Worker Ownership, Community Wealth, and Participatory Budgeting** | A:3 I:3 L:3 C:4 U:3 = **16/25** | Tier 3
-
-3,500+ worker cooperatives, 300+ community land trusts, 60+ participatory budgeting jurisdictions in the US. The most constructive and affirmative domain on the list — positions the framework as producing alternatives, not just diagnoses. Lower urgency reflects the absence of a specific 2026 threat driving adoption. *Primary contacts: Democracy Collaborative, US Federation of Worker Cooperatives, New Economy Coalition.*
-
----
-
-## Summary Scoring Table
-
-| Rank | Domain | Tier | A | I | L | C | U | Total | Research Hours |
-|------|--------|------|---|---|---|---|---|-------|----------------|
-| 1 | Reproductive Rights | 1 | 5 | 4 | 5 | 5 | 5 | 24 | 8-12 |
-| 2 | Criminal Justice / Abolitionism | 1 | 4 | 5 | 5 | 5 | 4 | 23 | 12-18 |
-| 3 | Environmental Justice | 1 | 4 | 5 | 5 | 5 | 4 | 23 | 12-18 |
-| 4 | LGBTQ+ / Trans Liberation | 1 | 4 | 4 | 4 | 5 | 5 | 22 | 8-12 |
-| 5 | Tenant Rights / Housing Justice | 1 | 4 | 4 | 4 | 5 | 4 | 21 | 12-18 |
-| 6 | Labor Rights / NLRB | 1 | 5 | 5 | 4 | 4 | 4 | 22 | 12-18 |
-| 7 | Campaign Finance / Dark Money | 2 | 4 | 4 | 4 | 5 | 4 | 21 | 8-12 |
-| 8 | Migrant / Refugee Rights | 2 | 4 | 4 | 3 | 4 | 5 | 20 | 12-18 |
-| 9 | Digital Justice | 2 | 4 | 4 | 4 | 5 | 3 | 20 | 8-12 |
-| 10 | Youth Civic Power | 2 | 4 | 4 | 4 | 4 | 4 | 20 | 8-12 |
-| 11 | Food Systems / Agricultural Justice | 2 | 3 | 4 | 4 | 4 | 4 | 19 | 18-25 |
-| 12 | Church-State / Christian Nationalism | 2 | 3 | 3 | 4 | 5 | 4 | 19 | 12-18 |
-| 13 | Pension / Social Security | 3 | 3 | 3 | 3 | 5 | 4 | 18 | 8-12 |
-| 14 | Mental Health / Psychiatric Survivor | 3 | 3 | 3 | 3 | 4 | 4 | 17 | 18-25 |
-| 15 | Economic Democracy | 3 | 3 | 3 | 3 | 4 | 3 | 16 | 18-25 |
-
----
-
-## Acceleration Triggers
-
-The following events should trigger immediate acceleration of the corresponding domain, independent of the standard sequencing:
-
-- **Comstock Act enforcement action by DOJ**: Domain 1 (Reproductive Rights) becomes acute; distribute a rapid briefing to Phase 1 reproductive contacts within 72 hours.
-- **NLRB constitutional challenge granted certiorari by SCOTUS**: Domain 6 (Labor Rights) window opens; AFL-CIO and SEIU outreach should begin the week of the cert grant.
-- **Farm Bill conference committee convened**: Domain 11 (Food Systems) advocacy window opens immediately; targeted outreach to NFFC and rural organizing contacts.
-- **Creating Change 2027 program submissions open (summer 2026)**: Submit Domain 4 (LGBTQ+/Trans) as a conference session resource; high-leverage distribution opportunity.
-- **Phase 1 feedback confirms volume fatigue**: Pause Tier 3 domain production; prioritize deepening Tier 1 domains with supplementary material rather than expanding breadth.
-
----
-
-*Sources: KFF Abortion Dashboard [https://www.kff.org/womens-health-policy/abortion-in-the-u-s-dashboard/]; Reproductive Freedom for All 2026 ballot measures [https://reproductivefreedomforall.org/news/six-reproductive-freedom-storylines-to-watch-in-2026/]; ACLU LGBTQ legislative tracker 2026 [https://www.aclu.org/legislative-attacks-on-lgbtq-rights-2026]; Trans Legislation Tracker 2026 [https://translegislation.com/]; AFL-CIO/OPEIU SCOTUS motion in SpaceX v. NLRB [https://aflcio.org/press/releases/afl-cio-and-opeiu-file-supreme-court-motion-spacex-v-nlrb-protect-workers-rights-and]; Fifth Circuit NLRB ruling analysis [https://www.cdflaborlaw.com/blog/fifth-circuit-ruling-puts-nlrb-on-constitutional-hot-seat]; DISCLOSE Act of 2026 one-pager [https://www.whitehouse.senate.gov/wp-content/uploads/2026/02/DISCLOSE-Act-of-2026-One-Pager_final.pdf]; OpenSecrets dark money ballot measures [https://www.opensecrets.org/news/2026/04/2026-ballot-measures-4-reforms-targeting-campaign-finance-and-dark-money]; Eviction Lab / National Housing Law Project HUD lawsuit [https://laseva.org/tenants-and-housing-justice-organizations-sue-hud-for-stripping-critical-federal-tenant-protection/]; HUD eviction notice rule change [https://www.nixonpeabody.com/insights/alerts/2026/02/26/hud-rescinds-30-day-notice-requirement-for-nonpayment-evictions]; Climate Justice Alliance NEPA statement [https://climatejusticealliance.org/nepa-rollback/]; Earthjustice EPA climate lawsuit [https://earthjustice.org/press/2026/environmental-groups-sue-epa-for-illegal-repeal-of-climate-protections]; NEPA implementing regulations removal Federal Register [https://www.federalregister.gov/documents/2026/01/08/2026-00178/removal-of-national-environmental-policy-act-implementing-regulations]; WE ACT / EJ coalition EPA Endangerment Finding letter [https://weact.org/updates/hundred-environmental-justice-organizations-say-to-epa-revoking-endangerment-finding-puts-all-our-communities-in-danger/]; NCHOUSING OBBA housing impacts [https://nchousing.org/obba-impacts-to-housing-community-development/]; Slee and Desmond eviction-turnout research via existing research-notes.md.*
-
-*Phase 2 Domain Expansion Strategy complete. May 9, 2026.*
-*Produced by: Resistance Research Agent. Based on gap analysis of 35-domain framework (domains/ directory), existing phase-2-expansion-candidates.md, phase-2-domain-expansion-strategy.md, domain-expansion-candidates.md, current movement infrastructure research (web search, May 9, 2026), and synthesis with current legislative and litigation developments.*
-*Next decision required: Confirm which Tier 1 domain to research first. Domain 1 (Reproductive Rights) is recommended given the highest composite score, active 2026 ballot measure urgency, and the Comstock Act threat timeline.*
+*Phase 2 Domain Expansion Strategy v3.0 complete. May 18, 2026.*
+*Produced by: Resistance Research Agent. Supersedes v1.0 (May 9, 2026) and v2.1 (May 15, 2026). Staged for user review — do not commit to master without user approval.*
