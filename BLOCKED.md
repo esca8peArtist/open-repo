@@ -59,6 +59,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — Engine not running; May 19 checkpoint at risk (23 hours remaining)
+**Date blocked**: 2026-05-18 21:05 UTC
+**Context**: May 19 20:00 UTC checkpoint scheduled. Pre-checkpoint audit (Session 1278) reveals trading engine is NOT running — last log entry 16:44 UTC (4.5 hours ago). No processes listening on trading ports. HTTP API returns "Connection refused." This is a hard blocker: May 19 13:30 ET market open (17:30 UTC) is 20 hours away; engine must be running by then. Checkpoint query script exists and works; Alpaca credentials verified; AAPL position open and profitable (+$3,187). Critical bugs identified that must be fixed on restart: (1) PnLCalculator.close_session AttributeError fires on every session shutdown (affects P&L state persistence), (2) No AAPL ridge_wf production session configured in active-sessions.json (architecture mismatch — unclear if this is expected or misconfiguration).
+**What I need**: (1) Restart the trading engine before May 19 13:30 ET market open (critical; ~20 hours remaining). (2) Fix PnLCalculator.close_session bug in trading_session.py before restart. (3) Clarify: Should there be two AAPL sessions (lgbm_ho + ridge_wf)? Currently only lgbm_ho is configured. (4) Verify engine can run for >24h without crashing before the May 19 20:00 UTC checkpoint.
+**Verify with**: `docker ps --filter "name=stockbot" | grep -c "Up"` — should return ≥1 (engine running); `curl -s http://127.0.0.1:8000/health | jq .status` — should return 200; tail trading log and check for "Market closed — skipping cycle" messages (confirms market-aware sleep working)
+**Resolution**: [leave blank]
+
+---
+
 ## Resolved Archive
 
 ### stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap
