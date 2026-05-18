@@ -17622,3 +17622,46 @@ Both remain unresolved; no new blockers discovered.
 **Token Usage**: ~91K Sonnet (parallel agent execution)
 
 **Commit**: bc0efd8a (chore(orchestrator): Session 1281 — Pre-checkpoint infrastructure validation + Phase 2 Wave 2 framework complete)
+
+---
+
+## Session 1291 (2026-05-19 00:41–ongoing UTC)
+
+**Session Goal**: Execute May 19 checkpoint and Wave 1 monitoring; determine next autonomy steps for stockbot and resistance-research
+
+**Checkpoint Execution (May 19 00:41 UTC)** ✅:
+- **Scenario**: STILL_MISS_B2 (zero AAPL SELL fills since Lever A deployment May 16)
+- **Root cause**: AAPL models fundamentally bullish (predicted returns +25-39%), generating BUY signals continuously, not evaluating exits
+- **Key metrics**: 3 confirmed round trips, 34 total fills since May 5, +$5.00 P&L, account $115,134.29
+- **Diagnostic**: Lever A (threshold reduction 0.45→0.42) insufficient for regime suppression; HMM regime detection (Lever B) is correct escalation
+- **Thermal**: Healthy at 48.5°C (no throttling)
+- **Infrastructure**: Both sessions running, Alpaca API healthy, Jetson stable (35d uptime)
+- **Action required**: User approval for Lever B HMM escalation (2-4h engineering)
+- **Next checkpoint**: May 22 20:00 UTC
+
+**Wave 1 Monitoring (May 19 monitoring window)** ✅:
+- **Status**: No early replies — expected and normal for policy influencer tier
+- **Baseline confirmed**: 0 responses at May 18 22:53 UTC (documented)
+- **Infrastructure**: All monitoring files intact and updated with May 19 snapshot
+- **Constituency status**: Elias (immigration legal aid) 48h anomaly window opens May 20 08:00 UTC; Weiser/Bassin (think tanks) still in Day 1 window; law schools too early (5-10 day cycle)
+- **Next action**: User manual check ~22:00 UTC May 19 via monitoring-dashboard-may19-21.md; Elias 48h anomaly window May 20
+- **May 21 synthesis**: Framework ready, 30-45 min runtime, all 5 parts complete
+
+**Projects Touched**:
+- stockbot: May 19 checkpoint execution (STILL_MISS_B2 outcome)
+- resistance-research: Wave 1 monitoring status confirmed (all systems go for May 21 synthesis)
+
+**Key Findings**:
+- Jetson engine healthy across all metrics; no infrastructure barriers to escalation
+- Both AAPL models are regime-dependent (bullish in current environment); Lever B HMM regime detection is the proper next step
+- Wave 1 monitoring on track; no early signals expected until Day 5+ (May 23+)
+- May 21 synthesis infrastructure verified ready
+
+**Next Autonomous Work**:
+- May 22 20:00 UTC: Next checkpoint execution (if Lever B approved)
+- May 21 19:00 UTC: Resistance-research synthesis framework execution (signal classification + Phase 2 path decision)
+- User approval needed: Lever B HMM regime detection escalation (blocker on Gate 2 roadmap execution)
+
+**Token Usage**: ~120K Sonnet (checkpoint execution + Wave 1 monitoring via parallel agents)
+
+**Commit**: [pending — awaiting CHECKIN.md update before committing orchestration files]

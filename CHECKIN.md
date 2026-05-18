@@ -1,3 +1,80 @@
+## Since Last Check-in (Session 1291, 00:41–ongoing UTC May 19)
+
+**Session Status**: ✅ **MAY 19 CHECKPOINT EXECUTED — STILL_MISS_B2 OUTCOME** — Critical gate event completed. Checkpoint revealed AAPL models are fundamentally bullish (predicted returns +25-39%), not regime-sensitive. Lever A (threshold reduction) was insufficient; Lever B (HMM regime detection) is the proper escalation. **ACTION REQUIRED**: Approve Lever B activation (2-4 hours engineering) to proceed with Gate 2. Wave 1 monitoring proceeding normally (no early signals yet, expected).
+
+**Current Time**: May 19, 2026, 00:45 UTC
+
+### Actions Taken This Session
+
+1. **May 19 Checkpoint Execution — COMPLETE** ✅
+   - **Executed**: 2026-05-19 00:41 UTC via `may19_checkpoint_analysis.py`
+   - **Scenario**: STILL_MISS_B2 (zero AAPL SELL fills since Lever A deployment May 16)
+   - **Root diagnostic**: Both AAPL sessions bullish (predicted returns +25-39%), generating continuous BUY signals, not evaluating exits
+   - **Key metrics**: 
+     - Confirmed round trips: 3
+     - Total fills since May 5: 34
+     - Total P&L: +$5.00
+     - Account equity: $115,134.29
+     - Thermal: 48.5°C (healthy, no throttling)
+   - **Decision tree**: Lever A (threshold 0.45→0.42) doesn't work for fundamentally bullish regimes; requires regime context
+   - **Next escalation**: Lever B (HMM regime detection) — 2–4 hours engineering, requires user approval
+   - **Infrastructure status**: All green (Jetson healthy, both sessions running, Alpaca API connected, SSH verified 35d uptime)
+   - **Next checkpoint**: May 22 20:00 UTC
+
+2. **Wave 1 Monitoring Check — COMPLETE** ✅
+   - **Baseline confirmed**: 0 responses at May 18 22:53 UTC (expected and normal for policy influencer tier)
+   - **Constituency read**:
+     - Elias (immigration legal aid): monitoring, 48h anomaly window opens May 20 08:00 UTC
+     - Weiser/Bassin (think tanks): monitoring, still in Day 1 window
+     - Goodman/Chenoweth (law schools): too early, 5-10 day response lag
+   - **Monitoring infrastructure**: All four files verified intact, May 19 snapshots updated
+   - **Next action**: User manual Gist/inbox check ~22:00 UTC May 19; Elias 48h window opens May 20 morning
+   - **May 21 synthesis**: Framework ready with all 5 parts complete, 30-45 min runtime
+
+### Current Project State
+
+- **stockbot**: Checkpoint outcome STILL_MISS_B2. Lever B HMM activation **pending user approval**. Next checkpoint May 22 20:00 UTC.
+- **resistance-research**: Wave 1 post-distribution monitoring proceeding normally. No early signals yet (expected). May 21 synthesis framework ready.
+- **All other projects**: No changes this session.
+
+### Needs Your Input
+
+**🔴 CRITICAL: Approve Lever B HMM Regime Detection Escalation** — Checkpoint revealed AAPL models need regime context, not threshold adjustment. Lever B implementation requires:
+- 2–4 hours engineering (HMM fit + regime scalar integration + backtesting)
+- User approval to proceed
+- Timeline: Can execute May 19–20 if approved, checkpoint results May 22 20:00 UTC
+
+**Decision options**:
+1. **Approve Lever B**: Orchestrator executes immediately; next checkpoint May 22 with HMM regime detection active
+2. **Defer Lever B**: Continue with manual monitoring, checkpoint May 22 as-is
+3. **Escalate to live training**: If Lever B backtests well, activate on live trading (higher risk, faster learning)
+
+**Answer required**: Approve Lever B? Yes / No / Defer
+
+**Secondary (non-blocking)**:
+- Domain 42 DEA deadline: Confirm if Category A emails already sent May 8–10 (as originally planned) or if May 21 compressed execution needed
+
+### Key Decisions & Next Steps
+
+**May 19 (today)**:
+- ✅ Checkpoint execution complete (00:41 UTC)
+- ✅ Wave 1 monitoring check complete
+- **ACTION REQUIRED**: Approve or defer Lever B HMM escalation
+- ~22:00 UTC: User manual Gist view + inbox signal check (Wave 1 delivery confirmation)
+
+**May 20 (morning)**:
+- ~08:00 UTC: Elias 48-hour anomaly window opens (early signal opportunity)
+- Wave 1 monitoring continues (daily check via dashboard)
+
+**May 21**:
+- ~14:00 UTC: User gate to approve Phase 2 path (STRONG/MODERATE/WEAK) — this is based on Wave 1 signal data
+- 19:00–20:00 UTC: Synthesis framework execution (autonomous)
+
+**May 22**:
+- 20:00 UTC: Next checkpoint (with or without Lever B, depending on your May 19 decision)
+
+---
+
 ## Since Last Check-in (Session 1290, 23:14–ongoing UTC May 18)
 
 **Session Status**: ✅ **PRE-CHECKPOINT INFRASTRUCTURE COMPLETE + URGENT DOMAIN 42 FLAG** — Two parallel subagents executed final pre-event validation: (1) **Stockbot** May 19 20:00 UTC checkpoint infrastructure READY (thermal monitoring script created, Discord notifications wired, execution runbook complete, Gate 2 roadmap staged); (2) **Resistance-research** post-Wave-1 monitoring infrastructure verified and enhanced (synthesis checklist + phase-2-path-activation summary created, May 28 DEA deadline flagged as URGENT). Projects positioned for critical events May 19-21, but **ACTION REQUIRED TODAY**: Verify Domain 42 Category A emails (7 organizations) sent or schedule compressed May 21 execution.
