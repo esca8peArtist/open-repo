@@ -37,17 +37,32 @@ Per orchestration protocol: "If all projects are blocked on named external depen
 - **Recommended action**: Graceful idle + prepare for post-Wave-1 monitoring (10:00 UTC)
 - **Health checks not warranted** — checkpoint is 35+ hours away (not within 2-hour window requiring verification)
 
-### Next Actions (Passive Monitoring)
+#### 5. Exploration Queue Verification ✅
+Scanned EXPLORATION_QUEUE.md for active items requiring orchestrator work:
+- **Item 60** (Seedwarden May 30 Launch Checklist): ✅ **COMPLETE** — `MAY_30_FINAL_LAUNCH_READINESS_CHECKLIST.md` exists (280 lines, production-ready, awaiting user execution May 28-29)
+- **Item 59** (Stockbot Gate 2 Decision Framework): ✅ **COMPLETE** — `POST_CHECKPOINT_GATE_2_DECISION_FRAMEWORK.md` exists (comprehensive decision trees for all 5 options, PASS/NEAR-MISS/FAR-MISS paths)
+- **Item 58** (Post-Wave-1 Amplification Coordination): ⏳ **QUEUED** — `POST_WAVE_1_AMPLIFICATION_COORDINATION.md` does not exist yet — orchestrator work required post-Wave-1 completion
 
-**10:00 UTC (26 minutes from orientation)**: 
-- Wave 1 completes → Execute WAVE_1_COMPLETION_CHECKLIST.md
-- Capture H+0 baseline response signals
-- Activate Day 0-7 monitoring per WAVE_1_DAILY_MONITORING_TEMPLATE.md
+### Next Actions
+
+**10:00 UTC (Wave 1 completion)**: 
+- Wave 1 ends → Begin monitoring Wave 1 completion signals
+- Activate WAVE_1_COMPLETION_CHECKLIST.md
+- Capture H+0 baseline metrics (Gist views, bounces, OOO replies)
+
+**10:30 UTC** (post-Wave-1 contingency window):
+- **[PRIORITY] Item 58 Work Begins**: Create POST_WAVE_1_AMPLIFICATION_COORDINATION.md (2–2.5 hrs)
+  - Decision framework for Batch 2-3 timing based on Batch 1 reply surge
+  - Media outreach sequencing (policy reporters → mainstream → trade press)
+  - Domain 42 amplification coordination (May 21-31, T-7d to May 28 DEA hearing)
+  - Batch 3 timing decision matrix (if Batch 1-2 strong uptake, trigger May 30-31; otherwise defer June 3-5)
+  - Contingency escalation triggers (saturation, negative sentiment)
 
 **May 19 19:00 UTC** (T-1h before checkpoint):
 - Final Jetson pre-checkpoint health verify (if time available)
+- User reviews POST_CHECKPOINT_GATE_2_DECISION_FRAMEWORK.md (already staged from prior session)
 
-**No immediate work needed** — all frameworks staged, no autonomous projects available for work.
+**Autonomous work available**: Yes — Item 58 is actionable and high-impact for resistance-research Phase 1 success
 
 ---
 

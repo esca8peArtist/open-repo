@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T08:30:03Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T09:31:15Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 7.7% | Reset in 16h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 7.8% | Reset in 14h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — IN PROGRESS (08:00–10:00 UTC, May 18).** ✅ **Infrastructure VERIFIED LIVE** (Session 1220). **Domains current through Wave 1** — Breaking developments scan complete (May 17-18); all 4 domains (37, 1, 57, 58) production-ready with 3 supplemental findings integrated (Domain 57: Pentagon Poland deployment cancellation, ICC Duterte trial acceleration; Domain 37: DOJ voter data demands 39+ states, CISA disruption confirmed). Post-Wave-1 (May 18 10:00+): Pha … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — IN PROGRESS (08:00–10:00 UTC, May 18).** ✅ **Infrastructure VERIFIED LIVE** (Session 1220). **Domains current through Wave 1** — Breaking developments scan complete (May 17-18); all 4 domains (37, 1, 57, 58) production-ready with 3 supplemental findings integrated (Domain 57: Pentagon Poland deployment cancellation, ICC Duterte trial acceleration; Domain 37: DOJ voter data demands 39+ states, CISA disruption confirmed). **Post-Wave-1 Analysis Framework … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,11 +32,11 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **May 19 20:00 UTC checkpoint execution — 39 hours to go. Infrastructure pre-checkpoint audit COMPLETE (100% confidence, upgraded Session 1215): Jetson SSH accessible, Docker containers healthy (stockbot 2 days, stockbot-web 8 days), Lever A config `/opt/stockbot/config/active-sessions-2session.json` confirmed present, checkpoint script `may19_checkpoint_analysis.py` confirmed present. Readiness validation COMPLETE (Item 56): Decision path clarity audit, scenario quick-references, and pre-exec … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **May 19 20:00 UTC checkpoint execution — 35 hours away (from 09:17 UTC May 18). ✅ Infrastructure pre-checkpoint audit COMPLETE (100% confidence, Session 1228 verification): Jetson SSH accessible, Docker containers healthy (stockbot 2 days, stockbot-web 8 days), Lever A config `/opt/stockbot/config/active-sessions-2session.json` confirmed present, checkpoint script `may19_checkpoint_analysis.py` confirmed present. ✅ Jetson production readiness validated (Session 1227, 08:37-08:41 UTC): CPU … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **Track B — May 30 LAUNCH TARGET.** Gate 1 (TODAY May 18, create accounts — user action START HERE) → Gate 2 (May 19–24, Canva; Pro $15/mo decision) → zone-cards (May 24–25) → Gate 3 (May 27–28, Kit; Creator $33/mo decision) → May 29 go/no-go → May 30 launch. Execution docs in `projects/seedwarden/execution/` with numbered steps (6–8 hrs total user time). **Supply chain contingencies READY** (May 18, Session 1224): vendor alternates mapped (True Leaf Market same-day backup, … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Track B — May 30 LAUNCH TARGET.** Gate 1 (TODAY May 18, create accounts — user action START HERE) → Gate 2 (May 19–24, Canva; Pro $15/mo decision) → zone-cards (May 24–25) → Gate 3 (May 27–28, Kit; Creator $33/mo decision) → May 29 go/no-go → May 30 launch. Execution docs in `projects/seedwarden/execution/` with numbered steps (6–8 hrs total user time). **Supply chain contingencies UPGRADED** (May 18, Session 1227): `phase-2-supply-chain-contingencies.md` (3,800 words, 6  … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -45,7 +45,7 @@
 
 ### systems-resilience
 **Status**: Active — **Phase 1 INDIVIDUAL-SCALE COMPLETE + PHASE 2 HOUSEHOLD-SCALE INITIATED** (6 individual domains + household coordination overview). Individual-scale COMPLETE: 01-water.md, 02-food.md, 03-shelter.md, 04-energy.md, 05-healthcare.md, 06-agriculture.md + extreme-weather.md, calendar.md (10.3K words, 33 citations). Household-scale LAUNCHED: 01-household-coordination-overview.md (7,449 words, 38 citations).
-**Focus**: **Phase 4b options COMPLETE** (phase-4b-options-comparison.md: 3 paths with timeline/capital/risk — Agricultural Intensification 15-22 hrs, Knowledge Preservation 13-19 hrs, Governance Scaling 12-17 hrs). **DECISION GATE: June 1** — user chooses Phase 5 path. **NEXT**: User decision by June 1; June execution if selected. Single or dual option (Ag+Governance) achievable by Aug 15 if started June 1.
+**Focus**: **Phase 4b options COMPLETE + PHASE 3 COMMUNITY-SCALE RESEARCH OUTLINE STAGED** (May 18, Session 1227). Phase 4b: phase-4b-options-comparison.md (3 paths: Agricultural Intensification 15-22 hrs, Knowledge Preservation 13-19 hrs, Governance Scaling 12-17 hrs). **PHASE 3 PRELIMINARY RESEARCH COMPLETE**: `phase-3-community-infrastructure-research-outline.md` (4,200 words, 5 domains, 50+ sources). Key findings: governance is load-bearing (design first), 150-person Dunbar threshold is most dangerous  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
