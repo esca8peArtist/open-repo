@@ -2,6 +2,30 @@
 
 ---
 
+## May 18, 2026 — Session 1154: Phase 2 Domain Updates (Domains 1, 37, 57, 58)
+
+**Status**: COMPLETE
+
+### Deliverable: `projects/resistance-research/phase-2-domains/domain-updates-may17-18.md`
+
+Phase 2 integration synthesis of all May 17-18 developments across Domains 1, 37, 57, and 58. Consolidates findings from nine prior scan passes (through ~09:00 UTC May 18) plus a fresh Session 1154 search pass. ~1,100 words of actionable content per the 500-1000 word specification.
+
+**Key findings per domain**:
+
+1. **Domain 1 (HIGH)**: Virginia SCOTUS refusal (May 15) confirmed as the 5th *Callais* redistricting cascade mechanism — not yet in Section 8.6. SC H.5683 House floor vote still unresolved as of close of May 18; next gate. FISA June 12 deadline newly confirmed.
+
+2. **Domain 37 (CRITICAL)**: One Big Beautiful Bill enacted July 4, 2026 — 287(g) expansion and $38.2B ICE funding base are now enacted law. Domain 37 Wave 2 must reframe from projected to enacted; Wave 2 distribution target shifts to mid-July. DOJ voter data demand scope updated to 44 states. Minnesota ICE-leverage mechanism (immigration enforcement threatened to coerce voter data) newly documented.
+
+3. **Domain 57 (HIGH)**: Poland 4,000-troop rotation cancelled May 14 confirmed as third concrete European force reduction (~9,000 total with Germany). Italy/Spain troop reduction threats confirmed as stated policy direction. ICC November 30 trial proposed; "among court's fastest" characterization from prosecution. May 27 status conference next gate.
+
+4. **Domain 58 (MEDIUM)**: No new SCOTUS cert actions; *Turtle Mountain* and *Trump v. Barbara* both pending. OBBBA tribal SNAP/Medicaid exemptions secured (partial mitigation documented); 287(g) near-reservation enforcement is now enacted law. Maine Wabanaki legislative narrowing documented as new state-level section note.
+
+**Phase 2 timeline impact**: No timeline acceleration required. Domain 37 Wave 2 should not distribute before mid-July to document enacted (not projected) ICE expansion. All other Phase 2 windows unchanged.
+
+**Unresolved watch items**: SC H.5683 House vote (May 19 ET); Turtle Mountain cert (any Monday SCOTUS orders); Trump v. Barbara ruling (June-July window); ICC May 27 status conference; Judge Nichols ruling (May 21-June 4).
+
+---
+
 ## May 18, 2026 — Phase 2 Wave 2 Preparation + Phase 1 Contingency Integration
 
 **Status**: COMPLETE
