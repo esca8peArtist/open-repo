@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T00:19:40Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T02:01:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 6.9% | Reset in 24h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 7.1% | Reset in 22h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -32,11 +32,11 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **May 19 20:00 UTC checkpoint execution — 48 hours to go. Infrastructure pre-checkpoint audit COMPLETE (Item 35): Jetson 2-session AAPL lgbm_ho + ridge_wf healthy, 131 GB disk free, zero critical logs, thermal headroom 37°C, network latency 47ms, confidence 95%. Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md (pre-flight 19:30 UTC → checkpoint query 20:00 UTC → decision tree for PASS/NEAR-MISS/FAR-MISS-C1/FAR-MISS-C2 scenarios). User action: execute playbook at 20:00 UTC May 19. Post-ch … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **May 19 20:00 UTC checkpoint execution — 43 hours to go. Infrastructure pre-checkpoint audit COMPLETE (95% confidence): Jetson 2-session AAPL lgbm_ho + ridge_wf healthy, 131 GB disk free, zero critical logs, network 47ms latency. Readiness validation COMPLETE (Item 56): Decision path clarity audit, scenario quick-references, and pre-execution checklist finalized. Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md + CHECKPOINT_READINESS_VALIDATION.md (pre-flight 19:00–19:30 UTC → checkpoint … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[AUTONOMOUS PREP COMPLETE — SESSION 1153]** Track B execution guides READY for May 17-18 Gate 1 activation (5 execution guides + master timeline complete). **Critical path**: Gate 1 (May 17–18, create accounts — user action START HERE) → Gate 2 (May 24, Canva 30 min) → zone-cards (May 24–25, 4–6 hrs) → Gate 3 (May 27–28, Kit 2.5–3 hrs) → May 29 go/no-go → **May 30 launch target**. All execution docs in `projects/seedwarden/execution/` with numbered steps + copy-paste re … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[AUTONOMOUS PREP COMPLETE — SESSION 1153 + ITEMS 57, 60]** Track B execution guides READY for May 17-18 Gate 1 activation (readiness audit complete, Session 1202). **Critical path**: Gate 1 (TODAY May 18, create accounts — user action START HERE) → Gate 2 (May 19–24, Canva; critical decision: Pro $15/month for 10 colors vs free tier workaround) → zone-cards (May 24–25, 4–6 hrs) → Gate 3 (May 27–28, Kit; critical decision: Creator $33/month for email sequences vs free email) � … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -89,7 +89,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 1162 (34 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 1162 (40 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
