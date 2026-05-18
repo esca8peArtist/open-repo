@@ -1207,3 +1207,72 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 **Why now**: May 19-31 is peak contention period. User should have coordination playbook now so that simultaneous events don't cascade into unplanned delays or split decisions. Framework enables proactive scheduling (e.g., schedule test print for June 2 instead of May 20 if checkpoint outcome likely FAR-MISS).
 **Blocker**: None (risk analysis work, independent of all projects)
 **Next Step**: Orchestrator produces risk assessment May 18 afternoon → user reviews May 19 morning (20 min) → uses framework to schedule May 19-31 decisions with full visibility into dependencies → executes events in coordinated sequence with contingency triggers pre-decided
+
+---
+
+## New Items (Session 1239 — 2026-05-18, Backfill exploration queue for May 18-19)
+
+### ⏳ Item 64: Seedwarden Track B Gate 1 (May 18) Real-Time Execution Support
+**Status**: QUEUED (Session 1239, May 18 2026, 11:20 UTC)
+**Impact**: CRITICAL — Gate 1 due TODAY (May 18); real-time troubleshooting support enables error-free execution
+**Context**: TRACK_B_USER_GATES.md documents Gate 1 (social media setup: Instagram, TikTok, Pinterest). But what if Instagram API changes between doc creation and May 18 execution? What if TikTok email verification fails? Real-time support prevents execution delays.
+**Goal**: Create comprehensive real-time troubleshooting + progress tracking guide:
+1. **Pre-execution verification checklist** (5 min): Logo file ready, email consistent, usernames planned
+2. **Platform-by-platform execution guide** (30-45 min total): Instagram (10-15 min), TikTok (10-15 min), Pinterest (10-15 min) with specific steps, common failure modes, recovery procedures
+3. **Troubleshooting flowchart per platform**: "Email already in use" → use `you+instagram@gmail.com`. "Username taken" → use backup `seedwarden_farm`. "Logo upload fails" → PNG vs JPG, file size limits
+4. **Post-execution verification checklist** (5 min): Can you log back into each account? Does logo appear as profile picture? Is bio correct?
+5. **Issues log template**: If stuck, document issue with timestamp + error message for orchestrator troubleshooting next session
+6. **What's next**: Credentials saved, Gate 1 marked complete in verification checklist, INBOX.md notification for orchestrator
+**Feasibility**: HIGH — support documentation work, no dependencies
+**Effort estimate**: 45 minutes to 1 hour
+**Deliverable**: `projects/seedwarden/TRACK_B_GATE_1_REALTIME_SUPPORT.md` (pre-execution checklist, platform-by-platform execution guides with troubleshooting, post-execution verification, issues log, next steps)
+**Why now**: Gate 1 due TODAY May 18. If user executes now, real-time support eliminates friction. If user waits until evening, pre-built document eliminates discovery time.
+**Blocker**: None (support documentation)
+**Next Step**: User executes Gate 1 May 18 using TRACK_B_GATE_1_REALTIME_SUPPORT.md; if stuck, logs issue in Issues Log section
+
+---
+
+### ⏳ Item 65: Resistance-Research May 21-31 Batch 2-3 Advanced Coordination Framework
+**Status**: QUEUED (Session 1239, May 18 2026, 11:25 UTC)
+**Impact**: HIGH — Batches 2-3 (70+ contacts) span May 21-31; Domain 42 deadline May 28 (DEA hearing public comment); coordination framework pre-stages contingency paths for low engagement, Domain 42 amplification sequencing, Batch 3 conditional activation (only if Batch 1-2 strong signals)
+**Context**: Wave 1 Batch 1 (5 contacts) sent May 18. Monitoring May 18-21 will show early engagement signals (open rates, reply velocity, integration signals). Batches 2-3 timing depends on STRONG/MODERATE/WEAK outcome. Domain 42 (May 28 deadline) needs amplification coordination with Batch 2-3 sends. Framework must be ready by May 21 so user doesn't delay Batch 2 while improvising coordination.
+**Goal**: Create detailed May 21-31 operations coordination guide:
+1. **Batch 2 conditional sequencing** (May 20-21): If Batch 1 shows >50% open rate by May 20 10:00 UTC, accelerate Batch 2 to May 20 (same day). Otherwise, schedule Batch 2 May 21 standard. Framework provides both branches with contact lists + templates.
+2. **Batch 3 conditional activation** (May 22-23 or deferred): If Batch 1-2 combined shows >60% institutional reply rate, activate Batch 3 May 22-23. If 30-59%, defer to June 1. If <30%, rewrite messaging and extend to June 1+.
+3. **Domain 42 amplification coordination** (May 21-28): Time amplification surge (journalists, policy coalitions, event briefings) to Batch 2 momentum (don't compete for attention). Schedule media outreach May 20-22 (before Batch 2 sends), then policy outreach May 25-26 (between Batches 2-3), then final pre-hearing surge May 26-28.
+4. **Tier 2 secondary contact follow-up protocol** (May 23-25): Organizations that integrate Phase 1 into their work (high-value Tier 2 signals) get follow-up personalized outreach May 23-25, asking for specific implementation commitments or co-signed testimony for DEA hearing.
+5. **Contingency escalation paths** (if Batch 1-2 underperform): (a) Low reply (<30%) → shift to SSRN preprint submission (48-72h Scholar indexing) + academic coalition briefings; (b) Bounces spike → revert to subset of highest-confidence contacts, extend timeline; (c) Negative sentiment detected → pause Batch 3, initiate damage-control messaging to stakeholders.
+**Feasibility**: HIGH — frameworks exist, mostly integration + contingency mapping
+**Effort estimate**: 2–2.5 hours
+**Deliverable**: `projects/resistance-research/MAY_21_31_BATCH_2_3_COORDINATION_FRAMEWORK.md` (Batch 2 conditional sequencing with two execution paths, Batch 3 conditional activation decision tree, Domain 42 amplification calendar coordinated with batch timing, Tier 2 secondary contact protocol, contingency escalation procedures with trigger thresholds)
+**Why now**: Wave 1 monitoring May 18-21 will generate signals by May 19-20 that inform Batch 2 timing. Framework must be ready May 18 evening so user can execute immediate Batch 2 sends if Batch 1 shows strong engagement (don't wait for May 21 synthesis if signals are clear by May 20).
+**Blocker**: None (planning work)
+**Next Step**: Orchestrator produces framework May 18-19 → user monitors Batch 1 May 18-21 → if early strong signals by May 20, executes accelerated Batch 2 using framework → May 21 synthesis confirms timing + proceeds with Batch 3 conditional activation per framework
+
+---
+
+### ⏳ Item 66: Stockbot Post-Checkpoint Worst-Case-Scenario (FAR-MISS-C2) Capital Recovery Playbook
+**Status**: QUEUED (Session 1239, May 18 2026, 11:30 UTC)
+**Impact**: CRITICAL — May 19 20:00 UTC checkpoint has 4 possible outcomes. POST_CHECKPOINT_24_HOUR_PLAN.md covers all 4. But FAR-MISS-C2 (worst case: 0 AAPL sells + 0 confirmed round-trips) requires immediate capital preservation decisions. Playbook pre-stages decision logic so that May 20 morning doesn't require improvisation.
+**Context**: Checkpoint outcomes: PASS (both AAPL sells executed → proceed to Gate 2), NEAR-MISS (1 of 2 sells executed → watch may 20-21), FAR-MISS-C1 (0 sells but 19 fills from May 5 → timing miss, not execution miss), FAR-MISS-C2 (0 sells AND 0 fills from May 5 → complete failure, diagnostic required). Outcomes C1-C2 require different recovery paths. If C2, what's the immediate response: liquidate all positions? Stop trading? Diagnose and restart?
+**Goal**: Create C2-specific 24-hour capital recovery playbook:
+1. **C2 trigger conditions** (if checkpoint query returns): 0 aapl_model_sells + 0 confirmed_round_trips + <5 total fills since May 5 = C2 confirmed
+2. **Diagnosis procedure** (1-2 hours): 4-step diagnostic sequence (Jetson connectivity check, Alpaca API auth status, database sync verification, VIX regime analysis). Each step determines recovery path: if connectivity OK but auth failed → credential reset; if auth OK but DB out of sync → manual sync + restart; if VIX <30 and no other failures detected → could be legitimate sideways regime, restart with regime scalar dampening
+3. **Capital preservation options** (pick one within 2 hours):
+   - Option A: Full liquidation (sell all 52-ticker positions at market, lock in current P&L, restart fresh Gate 2)
+   - Option B: Partial liquidation (keep AAPL + top 5 performers, liquidate rest, restart as 6-session portfolio)
+   - Option C: Remediation + restart (fix diagnosed root cause, restart with same config after 2-hour verification cycle)
+4. **Market impact assessment**: Liquidating 26 shares × 52 tickers across Alpaca account → what's the estimated slippage? Is market impact >5%? (Likely no for Alpaca's execution quality, but quantify)
+5. **Post-recovery action plan** (24-48 hours): If liquidated (Option A), prepare Gate 2 readiness audit. If remediation (Option C), run checkpoint query again after fix to verify success before resuming.
+**Feasibility**: HIGH — diagnostic procedures documented, mostly decision-tree + template work
+**Effort estimate**: 1.5–2 hours
+**Deliverable**: `projects/stockbot/FAR_MISS_C2_CAPITAL_RECOVERY_PLAYBOOK.md` (C2 trigger definitions, 4-step diagnostic procedure with decision branches, 3 capital preservation options with tradeoff analysis, market impact estimation template, post-recovery action plan per option, decision tree: which option to choose based on root cause)
+**Why now**: Checkpoint May 19. C2 probability is low (engine healthy, all systems verified), but if it happens, May 20 morning should not require improvisation. Playbook enables confident decision-making within 2 hours of C2 detection.
+**Blocker**: None (worst-case planning)
+**Next Step**: Checkpoint May 19 20:00 UTC → if outcome is not C2, playbook dormant (post-PASS/NEAR-MISS/C1 plans apply instead). If C2 detected, user runs playbook immediately May 20 06:00 UTC → diagnostic complete by 08:00 UTC → capital preservation decision made by 10:00 UTC
+
+---
+
+**Total queue status**: Items 1–66 now staged. Items 61-62 activate May 21 (Wave 1 synthesis). Items 64-66 immediately actionable for May 18-19 events.
+
+---
