@@ -432,3 +432,133 @@ No ruling issued. Oral arguments concluded April 1; ruling expected June-July 20
 **All Wave 1 materials remain accurate and production-ready as of 07:23 UTC May 18, 2026.**
 
 *Agent extension pass completed: May 18, 2026, 07:23 UTC*
+
+---
+
+## WAVE 1 EXECUTION WINDOW PASS — May 18 (08:00–10:00 UTC)
+
+**Scan completed**: May 18, 2026 (approximately 09:00 UTC)
+**Scan window**: Developments emerging after 07:23 UTC agent extension pass through Wave 1 execution window
+**Method**: Targeted web searches and direct fetches across all four domains; SC Legislature tracker checked; SCOTUSblog homepage fetched directly; Democracy Docket live tracker consulted
+
+---
+
+### Domain 1 — Wave 1 Window Findings
+
+**SC H.5683 — Floor vote still not recorded as of scan**
+
+SC Legislature bill tracker and web searches find no indexed House floor vote result. Bill status remains "Debate interrupted" (May 15). No news coverage of a vote outcome. The wave-ready framing ("SC House vote expected May 18 ET business hours") has not yet resolved. The vote will occur during ET business hours today — after Wave 1 materials have already distributed. The outcome is the next gate; no update to distributed materials is needed or possible.
+
+- **Confidence**: HIGH — absence of any indexed result after comprehensive search.
+- **Status**: UNRESOLVED — carry forward to next monitoring pass (check May 19 ET morning).
+
+**Mississippi special session — confirmed cancelled (May 13)**
+
+A Democracy Docket tracker summary referenced a Mississippi redistricting session "scheduled for May 20." This is a confusion risk. The actual development: Governor Tate Reeves cancelled the special redistricting session on May 13 after the 5th Circuit vacated the judicial redistricting order that had prompted it. The session that existed was limited to judicial district lines, not congressional redistricting. Mississippi will not be conducting a congressional redistricting session imminently; Reeves said he expects redistricting to happen before the 2027 statewide cycle. This is not a new development (May 13) but is flagged because the tracker reference may circulate.
+
+- **Confidence**: HIGH — Mississippi Today, Mississippi Free Press, Daily Caller, USSA News all confirm cancellation on May 13.
+- **Integration note**: No Domain 1 document change needed; Mississippi was not previously documented as an active redistricting state. The cancellation is protective information.
+- **Source**: [Gov. Reeves calls off Mississippi's special session — Mississippi Today](https://mississippitoday.org/2026/05/13/judicial-redistricting-mississippi-session/); [Mississippi Gov. Cancels Special Session — Daily Caller](https://dailycaller.com/2026/05/13/mississippi-gov-cancels-special-session-redistricting/)
+
+**DOJ voter data demands — confirmed expanded scope (39+ states demanded, 30+ sued)**
+
+The existing Domain 37 documents "33+ states" receiving DOJ voter file demands. Current confirmed scope: DOJ has demanded voter registration data from at least 39 states; has filed lawsuits against approximately 30 states plus DC; 12 states have voluntarily complied; five federal district courts have dismissed DOJ suits on the merits (California, Oregon, Michigan, Massachusetts, Rhode Island cases — Arizona may also be dismissed). This represents a material expansion from the 33+ baseline.
+
+- **Confidence**: HIGH — DOJ press release, Campaign Legal Center tracker, UW Law tracker, Brennan Center tracker all confirm.
+- **Integration note**: Domain 37 Section II.A should update the demand count to 39+ states demanded / 30+ states sued. The five dismissals (CA, OR, MI, MA, RI) are already documented in the domain's litigation posture section; the Arizona dismissal may require a new note.
+- **Source**: [DOJ sues six additional states for failure to provide voter registration rolls — DOJ press release](https://www.justice.gov/opa/pr/justice-department-sues-six-additional-states-failure-provide-voter-registration-rolls); [UW Law Tracker — DOJ lawsuits](https://statedemocracy.law.wisc.edu/our-work/tracker-doj-lawsuits-seeking-states-sensitive-voter-data); [ACLU — voting rights groups sue DOJ to block national voter database](https://www.aclu.org/press-releases/voting-rights-groups-sue-doj-over-national-voter-database)
+
+**CISA election security — Senator Warner demand letter confirmed with new state-level specifics**
+
+Senator Mark Warner pressed DHS in a formal letter in May 2026 citing: (1) CISA has cut more than a third of its workforce since February; (2) it has halted most programs working on elections, including red teams, incident response units, and regional election security advisors; (3) states are no longer receiving cybersecurity training or intelligence sharing. Crucially, officials in Michigan and Georgia confirmed the disruption on the record to Nextgov/FCW in late April. Warner also cited U.S. Cyber Command and NSA testimony that foreign adversaries are expected to target the 2026 midterms.
+
+The existing Domain 37 documents the 130 adviser removals and the FY2027 budget zeroing out the election security program. The Warner letter with Michigan/Georgia official confirmation and the Cyber Command/NSA foreign threat testimony are new specificity for the domain's advocacy section.
+
+- **Confidence**: HIGH — Nextgov/FCW, Defense One, Route Fifty all confirm identical substance.
+- **Integration note**: Domain 37 Section III (CISA degradation mechanism) should note the Warner letter and Michigan/Georgia official confirmation as post-May distribution corroboration. Highest-leverage for congressional recipients in the Wave 1 outreach list.
+- **Source**: [Senator warns CISA election security pullback could leave midterms vulnerable — Nextgov/FCW](https://www.nextgov.com/cybersecurity/2026/05/senator-warns-cisa-election-security-pullback-could-leave-midterms-vulnerable/413378/); [CISA's sharp reductions in election-security assistance — Defense One](https://www.defenseone.com/threats/2026/05/cisa-election-security-vulnerable/413410/)
+
+---
+
+### Domain 37 — Wave 1 Window Findings
+
+**Judge Nichols — still no ruling; agencies delaying implementation**
+
+No ruling has issued since the May 14 hearing. Government Executive reporting (mid-May 2026) confirmed that federal agencies are delaying action on the mail voting executive order specifically because of the pending litigation — agencies are waiting to see how Judge Nichols rules before implementing. This is actually a mildly favorable indicator (executive agencies themselves are treating the court challenge as a real constraint), though not a formal injunction.
+
+- **Confidence**: HIGH.
+- **Integration note**: Domain 37 Section IX.5 can note that agency implementation delay is confirmed; the ruling is the operative gate.
+- **Source**: [Agencies delay action on Trump mail voting order amid legal fight — Government Executive](https://www.govexec.com/management/2026/05/agencies-delay-action-trump-mail-voting-order-amid-legal-fight-over-authority/413329/)
+
+**Reconciliation 2.0 / One Big Beautiful Bill — Senate committee markups confirmed for May 19 week**
+
+Senate Judiciary and Homeland Security committee markups are confirmed to proceed the week of May 19. No new developments during this scan beyond confirming the timeline. The existing document's framing ("House on track via 17-16 Budget Committee vote May 18; Senate timeline at risk due to Byrd Rule violations in HSGAC title") remains accurate and current as of Wave 1 distribution.
+
+- **Confidence**: HIGH.
+- **Integration note**: No change needed. Post-Wave-1, Domain 37 will need to document Senate committee markup outcomes and revised floor vote timeline.
+
+---
+
+### Domain 57 — Wave 1 Window Findings
+
+**Pentagon cancelled 4,000-troop Poland rotation (May 14) — third concrete European force reduction**
+
+The Pentagon cancelled movement of approximately 4,000 soldiers from the 1st Cavalry Division already in final preparation stages for a nine-month Poland rotation. This was reported May 14, 2026 by CNN and NATO News Pravda. The existing document covers: (1) Germany 5,000-troop withdrawal; (2) Italy/Spain threats ("a lot further"). The Poland cancellation is a third distinct concrete force reduction — not a public threat but an operational decision — that Domain 57 Section 2.4 does not yet document.
+
+- **Confidence**: HIGH — CNN and NATO News Pravda confirmed.
+- **Integration note**: Domain 57 Section 2.4 should add Poland cancellation alongside Germany withdrawal. Together, these represent approximately 9,000 US military personnel either withdrawn or diverted from European commitment in a 30-day window. This is the most material new finding for Domain 57 in this execution pass.
+- **Source**: [Pentagon abruptly canceled deployment of 4,000 US troops to Europe — NATO News Pravda](https://nato.news-pravda.com/nato/2026/05/14/103286.html); [Trump is cutting the numbers of US troops in Europe — CNN](https://www.cnn.com/2026/05/14/politics/us-military-troop-numbers-europe-trump)
+
+**ICC Duterte — ICC prosecution "among court's fastest" framing (May 18 Manila Times)**
+
+Two Manila Times articles published May 18, 2026 (the day of this scan, directly within the Wave 1 execution window): (1) ICC prosecutors formally proposed November 30, 2026 as trial start date in pre-status-conference submissions; (2) ICC prosecution told the court the Duterte case "could be among the court's fastest" to reach trial given the quantity and quality of evidence already in hand. The existing document documents the November trial proposal and the May 27 status conference. The "fastest case" prosecutorial characterization is new and reinforces Domain 57's institutional resilience narrative.
+
+- **Confidence**: HIGH — Manila Times direct reporting from May 18, 2026.
+- **Integration note**: Domain 57 Section 5.5 (institutional resilience) should add the prosecution's "among court's fastest" characterization. The May 27 status conference remains the operative gate.
+- **Source**: [ICC prosecutors want November start for Duterte trial — Manila Times, May 18, 2026](https://www.manilatimes.net/2026/05/18/news/national/icc-prosecutors-want-november-start-for-duterte-trial/2345745); [ICC prosecution says Duterte trial could be among court's fastest — Manila Times, May 18, 2026](https://www.manilatimes.net/2026/05/18/news/icc-prosecution-says-duterte-trial-could-be-among-courts-fastest/2345810)
+
+---
+
+### Domain 58 — Wave 1 Window Findings
+
+**Turtle Mountain v. Howe — stay in effect, cert pending, no new action**
+
+SCOTUSblog direct fetch confirms: the July 24, 2025 stay of the Eighth Circuit mandate remains in effect pending certiorari disposition. Three justices (Thomas, Alito, Gorsuch) would have denied the stay application. No cert grant or denial has issued. The case is in a holding pattern. Domain 58 is current.
+
+- **Confidence**: HIGH — SCOTUSblog direct fetch.
+- **Source**: [Turtle Mountain Band of Chippewa Indians v. Howe — SCOTUSblog](https://www.scotusblog.com/cases/case-files/turtle-mountain-band-of-chippewa-indians-v-howe/)
+
+**Trump v. Barbara — no ruling**
+
+No ruling issued. SCOTUS May 15 orders list (confirmed via SCOTUSblog homepage direct fetch) did not include this case. Next orders list: May 19 (Monday). Ruling window remains June-July 2026. Domain 58 is current.
+
+- **Confidence**: HIGH.
+
+**SCOTUS May 15 orders — no wave-relevant cert actions**
+
+SCOTUSblog homepage confirms May 15, 2026 orders included: denial of Virginia's redistricting emergency appeal (already documented in prior scans); abortion pill mail access; freight broker negligent hiring; arbitration confirmations. No tribal sovereignty cert grants or denials; no voting rights cert actions beyond what is already in the domain documents.
+
+- **Confidence**: HIGH — SCOTUSblog direct fetch.
+
+---
+
+### Final Integration Summary — Wave 1 Execution Window Pass
+
+| Domain | New Finding | Priority | Action |
+|--------|-------------|----------|--------|
+| **Domain 1** | SC H.5683 floor vote still unresolved; Mississippi special session confirmed cancelled (May 13); DOJ demand scope confirmed at 39+ states / 30+ sued | MEDIUM | Carry SC vote forward; no document change needed for Mississippi; update Domain 37 II.A demand count |
+| **Domain 37** | CISA Warner letter with Michigan/Georgia official confirmation and Cyber Command/NSA foreign threat testimony; agency implementation delay confirmed; Senate markup week of May 19 confirmed | MEDIUM | Domain 37 Section III CISA note for Wave 2; Section IX.5 agency delay note |
+| **Domain 57** | Pentagon cancelled 4,000-troop Poland rotation (May 14) — third concrete European force reduction not yet documented; ICC prosecution "among court's fastest" framing (May 18) | HIGH (Poland); LOW (ICC framing) | Domain 57 Section 2.4: add Poland cancellation alongside Germany withdrawal (~9,000 total personnel); Section 5.5: add prosecution framing |
+| **Domain 58** | Turtle Mountain stay confirmed, cert pending, no new action; Trump v. Barbara still pending; SCOTUS May 15 orders contained no wave-relevant decisions | NONE | No update needed |
+
+**Wave 1 distribution verdict**: All four domains confirmed production-ready through Wave 1 execution window. No breaking development in the 07:23-09:00 UTC window contradicts or supersedes distributed materials. The Pentagon Poland cancellation is the highest-priority new finding for ongoing research — it is a third concrete operational force reduction in Domain 57 that strengthens the "systematic withdrawal" thesis and is not yet in the domain file.
+
+**Next monitoring gates**:
+- SC H.5683 House floor vote outcome — check May 19 ET morning
+- SCOTUS May 19 orders list — check Monday for any Turtle Mountain cert action
+- ICC May 27 status conference outcome
+- Senate committee markups (Judiciary, HSGAC) week of May 19 — Byrd Bath resolution timeline
+- Judge Nichols ruling — May 21-June 4 window
+
+**Timestamp of last development checked**: May 18, 2026, approximately 09:00 UTC
+**Scan method**: Web searches (12 targeted queries) + SC Legislature bill tracker direct fetch + SCOTUSblog homepage direct fetch + Democracy Docket live tracker fetch
