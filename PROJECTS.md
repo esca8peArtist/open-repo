@@ -797,25 +797,13 @@
 ### open-repo
 **Goal**: An open-source library for all things under the sun — a distributed, free, one-stop shop to find and share information that benefits all of humanity. Link to Wikipedia for general information, schematics, building plans, 3D models, recipes/instructions, services to share, and more. The core principle: no single person or organization controls any of it. Everything is distributed and open source. This is about leveling the playing field — giving all people the best chance to not only survive but thrive.
 **Priority**: Medium
-**Status**: Active — Phase 4 COMPLETE, **PR #1 open, awaiting review/merge** (Session 486: 2026-04-26)
+**Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
 **Visibility**: Public — GitHub repo: `esca8peArtist/open-repo`. Use remote `open-repo` for all pushes. Use `git subtree push --prefix=projects/open-repo open-repo <branch>` — never push to `origin`.
 **Working dir**: `projects/open-repo/`
-**Current focus**: **PR #1 & #2 MERGE-READY** (both reviewed, no blockers)
-- **PR #1** (2026-04-26): "feat: Wave 4 Phase 2 — Federation Service Infrastructure" — 194 tests passing, strong code quality. Recommendation: merge.
-- **PR #2** (2026-05-15): "Phase 5 docs + security fix" — Documentation clean, security fix verified (0.0.0.0 → 127.0.0.1), Phase 5 stubs well-documented. Recommendation: merge after PR #1.
-- **Post-merge cleanup**: Resolve `PHASE_5_ARCHITECTURE.md` duplication (root vs. docs/)
-- **PR #2** Title: "docs: Update README + API.md for Phase 4; fix 0.0.0.0 binding in quickstart" (https://github.com/esca8peArtist/open-repo/pull/2)
-- 194/198 tests passing (4 skipped), 0 failures
-- Wave 4 federation complete: partner registration, service layer, admin routes, HTTP signature verification, request signing, conflict detection
-- **Phase 5 Candidate 3 COMPLETE** (2026-05-15 01:35 UTC): `feature/open-repo-phase5-docs-security` — README + API.md updates + security compliance
-  - ✅ Fixed 0.0.0.0 binding security issue → 127.0.0.1 (CLAUDE.md compliance)
-  - ✅ Updated Phase status (2→4) and test count (35→194)
-  - ✅ Updated project structure diagram + Next Phases
-  - ✅ Pushed to open-repo remote via `git subtree push`
-  - ✅ PR #2 created — awaiting review/merge
+**Current focus**: **[RESOLVED] PR #1 & #2 MERGED + CLEANUP COMPLETE** (Session 1246). Phase 4 production-ready. PR #1 (Wave 4 Federation Service, 194 tests) merged. PR #2 (Phase 5 docs + security compliance, 0.0.0.0→127.0.0.1 fix) merged. Post-merge cleanup (PHASE_5_ARCHITECTURE.md duplication resolved) complete. Wave 4 federation complete: partner registration, service layer, admin routes, HTTP signature verification, request signing, conflict detection. All 194 tests passing. Phase 5 candidates staged: Candidate 1 (ZimWriter libzim activation), Candidate 2 (OPDS feedgen migration). No autonomous work available — awaiting user decision on Phase 5 direction.
 **Blocked on**: —
-**Next phase candidates**: After Candidate 3 PR merges: Candidate 1 (ZimWriter libzim activation), Candidate 2 (OPDS feedgen migration)
-**Notes**: All pushes to GitHub use `git subtree push --prefix=projects/open-repo open-repo <branch>` or `git subtree split` to keep the public repo clean. Never use `git push origin`. PR merge is awaiting maintainer review; no further blocking issues.
+**Next phase candidates**: Phase 5 direction decision required — Candidate 1 (ZimWriter libzim activation, offline export), Candidate 2 (OPDS feedgen migration), Candidate 3 (Platform accessibility audit).
+**Notes**: All pushes to GitHub use `git subtree push --prefix=projects/open-repo open-repo <branch>` or `git subtree split` to keep the public repo clean. Phase 4 complete and stable. Ready for user direction on Phase 5 focus.
 
 ---
 
