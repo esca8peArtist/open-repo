@@ -2,6 +2,26 @@
 
 ---
 
+## May 18, 2026 — Phase 2 Wave 2 Preparation + Phase 1 Contingency Integration
+
+**Status**: COMPLETE
+
+### Five deliverables written to `projects/resistance-research/phase-2-preparation/`
+
+1. `phase-2-wave-2-research-activation-timeline.md` (~2,400 words) — Per-outcome research sequencing (STRONG/MODERATE/WEAK) with week-by-week execution calendars, total hours per scenario (STRONG ~178h, MODERATE ~168h, WEAK ~154h), critical path analysis (D59 Section 5 outline gate; D57 pre-production before research), May 21 classification decision table with exact data collection protocol, and 8 absolute cross-scenario rules.
+
+2. `phase-2-tier-2-organizational-expansion.md` (~3,200 words) — 91 Tier 2 contacts across 5 sectors: labor unions (21 contacts including AFL-CIO, SEIU, CWA, UAW, UFCW, UFW, NDWA), immigration legal aid (20 contacts including RAICES, NILC, CLINIC, NARF, ACLU IRP, 5 law school immigration clinics), civil rights (17 contacts including NAACP, NAACP LDF, SPLC, Leadership Conference, MALDEF, AAJC, EFF, Color of Change), academic (18 contacts including Ash Center, Hasen/UCLA, Yale ISP, Berman/Ohio State as warm follow-up), and faith coalitions (15 contacts — new sector not previously documented, including NCC, USCCB, Sojourners, Bread for the World, RAC). Per-organization domain hook specified. Customization matrix and three-wave batch structure included.
+
+3. `phase-2-media-strategy.md` (~2,200 words) — 22 national journalists, 8 policy analysts/syndication outlets, 17 podcast targets, 12 publication outlets (59 total). Per-journalist domain pitch specified. Counterargument preparation for three pushback scenarios (methodological challenge, political framing challenge, scope challenge). Media sequencing rules (no media before Tier 2 first wave; Score 5 signal coordination protocol).
+
+4. `phase-1-to-phase-2-bridge-contingency.md` (~2,800 words) — Six specific mixed-signal scenarios worked through at individual contact level (Elias STRONG/others silent; Weiser+Bassin STRONG/others silent; Goodman STRONG/Elias Expected; Chenoweth STRONG/all others Expected; universal Score 1; 2/5 contacts STRONG with sub-cases). May 21 decision tree (branching on Score 5 → Elias → 2+ Score 3 → 1 Score 3 → universal Score 1 → zero + delivery). Messaging adaptation table: Phase 1 signal → accurate Tier 2 language → what not to say. Five-constituency priority ranking for Phase 1→Phase 2 momentum. Six domain prioritization rules under mixed signals.
+
+5. `phase-2-domain-42-comment-submission-outreach.md` (~2,100 words) — Template accuracy verification checklist (5 contacts to spot-check; DEA-1362 docket confirmation). Current distribution status assessment with compressed May 21–28 execution timeline if sub-batches are unsent. Five additional domain-expert contacts identified: Leo Beletsky (Northeastern Law / Health in Justice), Dan Werb (UCSD / International Centre for Science in Drug Policy), DPA co-brief escalation, Vikrant Reddy (bipartisan/Niskanen), Robyn Caplan (Data & Society / algorithmic enforcement). Three new email templates: admin law faculty variant, public health researcher variant, bipartisan policy researcher variant.
+
+**Critical flag**: Domain 42 DEA sub-batch status must be confirmed as first task of May 21 session — 7 days remain before May 28 deadline.
+
+---
+
 ## May 18, 2026 — Wave 1 Early-Signal Monitoring + Item 61 Synthesis Prep
 
 **Status**: COMPLETE
