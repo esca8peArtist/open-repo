@@ -52,6 +52,22 @@ Collect all signals from WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv rows 2-6 and B
 | 7 | Hard bounce | Permanent delivery failure | Delivery failure — remove from active count; re-verify address immediately; do not count as non-response |
 | 8 | Silence (Score 0) | No reply, no bounce, no OOO | Within sector norms for law school contacts through Day 10; within sector norms for policy orgs through Day 5; not a negative signal at 72h |
 
+### 1.2a Signal Equivalence Chain
+
+For rapid classification, convert all signals to a common unit (Quality Reply Points). The full chain from least to most valuable:
+
+```
+20 Gist views above baseline  = 1 Quality Reply Point (proxy signal)
+1 acknowledgment-only reply   = 0 Quality Reply Points (confirmed delivery only)
+1 substantive reply (Score 3) = 1 Quality Reply Point
+1 quality reply (Score 4)     = 2 Quality Reply Points (implementation/referral)
+1 integration signal (Score 5)= STRONG OVERRIDE (equivalent to all other signals combined)
+```
+
+Stated differently: **1 integration signal (Score 5) outweighs any number of quality replies; 1 implementation/referral (Score 4) equals 2 substantive replies (Score 3); 20 Gist view deltas equal 1 substantive reply (capped at 1 point total from Gist).**
+
+This chain is why a single Score 5 signal from Marc Elias or Wendy Weiser terminates the classification process immediately. One confirmed adoption signal changes the strategic situation faster than aggregate reply rate metrics.
+
 ### 1.3 Signal Aggregation Table (populate at May 21 20:00 UTC)
 
 Complete every row before running Section 2 classification.
@@ -152,7 +168,63 @@ The May 25 final classification gate incorporates law school data through Day 7.
 | Integration signals (Score 4-5) | >= 1 required | 0 allowed | 0 (by definition) |
 | Average engagement score (all contacts, 0-5) | >= 2.0 | 1.0-1.9 | < 1.0 |
 
-### 2.6 Worked Example
+### 2.6 Decision Tree — Visual Branch Map
+
+Use this diagram on May 21 evening before running the full decision table. It routes you to the right section in under 60 seconds.
+
+```
+START: Collect signals from inbox + Bitly dashboard
+          |
+          v
+   Any Score 5 signal received?
+   (contact cited research in filing/brief/testimony, OR offered formal collaboration)
+          |
+    YES --+-- NO
+     |         |
+     v         v
+  STRONG    Any hard bounces from 2+ high-weight contacts?
+ (Section    (Goodman, Weiser, Bassin, Elias)
+   3A)              |
+              YES --+-- NO
+               |         |
+               v         v
+            PAUSE     Count contacts with Score 3+ replies
+           (fix         (substantive question, critique,
+          delivery)      implementation ask, referral)
+                              |
+           3 or more ---------+--------- 2 with >= 1 Score 4
+               |                                |
+               v                                v
+            STRONG                           STRONG
+           (Section 3A)                     (Section 3A)
+                                |
+                         1 reply (any Score 3+)
+                                |
+                                v
+                            MODERATE
+                           (Section 3B)
+                                |
+                  0 replies --- check Gist delta
+                                |
+                  Gist delta > 10 --- MODERATE (borderline)
+                                |     (Section 3B, note "borderline")
+                  Gist delta <= 5
+                                |
+                  Run delivery check (Section 2 delivery test)
+                                |
+                  Delivery confirmed --- WEAK
+                                         (Section 3C)
+                  Delivery failed ------- PAUSE
+                                          (fix sender reputation)
+```
+
+**Branch summary**:
+- STRONG: Score 5 override OR 3+ substantive replies OR 2 replies with at least 1 Score 4 → Section 3A
+- MODERATE: 1-2 substantive replies (no Score 4-5) OR borderline Gist-only signal → Section 3B
+- WEAK: Zero substantive replies, delivery confirmed working → Section 3C
+- PAUSE: 2+ hard bounces from key contacts, OR delivery test fails → fix before classifying
+
+### 2.7 Worked Example
 
 **Scenario**: At May 21 20:00 UTC, you have the following data:
 - Wendy Weiser: replied Day 3, substantive methodological question about Domain 37 SAVE Act data sourcing. Score 3. Quality Reply Points: 1.
