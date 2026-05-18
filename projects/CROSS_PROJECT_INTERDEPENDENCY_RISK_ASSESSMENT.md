@@ -2,6 +2,8 @@
 title: "Cross-Project Interdependency Risk Assessment"
 subtitle: "May 19–31, 2026: Timeline Conflict Audit, Resource Scenarios, and Decision Protocols"
 created: 2026-05-18
+updated: 2026-05-19
+version: 1.1
 status: PRODUCTION-READY — Use this document as the May 19-31 coordination playbook
 audience: thorn (user) — refer to this document during checkpoint and decision gates for real-time conflict resolution
 authority: Item 63, Exploration Queue — Cross-Project Interdependency Risk Assessment
@@ -11,6 +13,14 @@ authority: Item 63, Exploration Queue — Cross-Project Interdependency Risk Ass
 ## May 19–31, 2026: Timeline Conflicts, Resource Allocation, and Contingency Protocols
 
 **Purpose**: Comprehensive coordination playbook for the May 19-31 period when five major events converge on a single decision-maker (you). Use this document to (1) identify real timing conflicts, (2) understand resource allocation trade-offs, (3) follow decision trees when conflicts arise, and (4) execute escalation protocols if simultaneous user attention is required.
+
+---
+
+> **Version 1.1 Amendment — May 19, 2026 (Session 1284)**
+>
+> **Material update**: The pre-checkpoint query (`may14_checkpoint_query_alpaca.py`) was executed May 18 at 21:34 UTC and returned a **confirmed PASS** result — 3 round trips (threshold: >=3), +$5.00 net P&L, $115K equity, Pattern Day Trader status active. Confidence of May 19 official checkpoint PASS is now **95%+**. This substantially changes the risk profile for Scenario B (FAR-MISS-C2). The conditional Option 1A/1B fork in Contingency 3.1 remains valid but should be treated as low-probability planning. Sections 2 and 3 are annotated below with updated probability weights.
+
+---
 
 **Why it matters**: May 19-31 is peak contention across six active projects (stockbot, resistance-research, seedwarden, mfg-farm, cybersecurity-hardening, systems-resilience). The five critical events below create overlapping decision windows that can cascade into rushed decisions or missed deadlines if not pre-planned.
 
@@ -106,6 +116,7 @@ THU–WED    May 28 (EOW) Domain 42 congressional deadline           ◆ EXTERNA
 Three realistic scenarios emerge from the key decision points. Each includes a detailed schedule, conflict assessment, and resource implications.
 
 ### Scenario A: Positive Path (Test Print Approved, Checkpoint PASS/NEAR-MISS)
+> **v1.1 Probability Weight**: **PRIMARY SCENARIO — 60–70% probability.** Pre-checkpoint query returned PASS May 18. Scenario B probability reduced to 5–10%.
 
 **Trigger**: User approves test print for May 20-21 AND checkpoint returns PASS or NEAR-MISS outcome
 
@@ -136,6 +147,7 @@ Three realistic scenarios emerge from the key decision points. Each includes a d
 ---
 
 ### Scenario B: Checkpoint FAR-MISS + Test Print Approved (Emergency Stockbot Focus)
+> **v1.1 Probability Weight**: **LOW-PROBABILITY CONTINGENCY — 5–10%.** Pre-check PASS result on May 18 makes this scenario unlikely. Plan remains valid; treat as fire-drill rather than expected path.
 
 **Trigger**: User approves test print AND checkpoint returns FAR-MISS-C2 outcome (Lever A failed, threshold tuning required)
 
@@ -173,6 +185,7 @@ Three realistic scenarios emerge from the key decision points. Each includes a d
 ---
 
 ### Scenario C: Test Print Delayed to May 25+ (Clean Scheduling)
+> **v1.1 Probability Weight**: **VIABLE ALTERNATIVE — 25–35% probability.** Depends entirely on user test print timing decision, which remains open. No change from v1.0.
 
 **Trigger**: User defers test print approval past May 24 (Seedwarden gates take priority)
 
@@ -209,7 +222,38 @@ Three realistic scenarios emerge from the key decision points. Each includes a d
 
 ## SECTION 3: Contingency Decision Trees
 
+### Contingency 3.0: Checkpoint PASSES — Normal Execution Protocol (Most Likely Path)
+> **v1.1 addition**: This contingency was not in v1.0 because it was treated as assumed. Given 95%+ confidence, it should be the primary reference.
+
+**Trigger**: May 19, 20:00–20:15 UTC — checkpoint returns PASS or NEAR-MISS (3+ round trips confirmed)
+
+**Decision point**: May 19, 20:30 UTC (capital allocation for Gate 2)
+
+```
+CHECKPOINT PASS DETECTED (May 19, 20:15 UTC)
+│
+├─ Classify outcome:
+│  ├─ PASS (3+ round trips, P&L > $0): Proceed to Gate 2 capital allocation
+│  └─ NEAR-MISS (2 round trips, P&L neutral): Treat as PASS-CONDITIONAL; same path
+│
+├─ 20:30 UTC: Capital allocation decision (Gate 2)
+│  ├─ Review POST_CHECKPOINT_GATE_2_DECISION_FRAMEWORK.md
+│  ├─ Decision: Scale up capital (allocate to Gate 2) or hold at current 2-session config
+│  └─ If holding: No action needed; sessions continue running
+│
+├─ 21:00 UTC: Document outcome in WORKLOG.md (15 minutes)
+│
+└─ NEXT: May 20 returns to STANDARD SCHEDULE
+   (no stockbot emergency work; full attention available for Wave 1 read 09:00 UTC)
+```
+
+**What this means for May 20-21 schedule**: If PASS confirmed May 19, May 20-21 follows Scenario A or C exactly as written. No resource contention from stockbot side.
+
+---
+
 ### Contingency 3.1: What to Do If Checkpoint Returns FAR-MISS-C2
+
+> **v1.1 Probability**: 5–10% (pre-check PASS on May 18 reduces this substantially)
 
 **Checkpoint outcome**: May 19, 20:00–20:15 UTC
 
@@ -339,6 +383,44 @@ Gate 2 incomplete by May 24 EOD
 
 ---
 
+### Contingency 3.4: Positive Congestion — STRONG Wave 1 Signals Arrive Same Day as Test Print (May 20)
+
+> **v1.1 addition**: This contingency covers the upside pressure case that v1.0 did not address explicitly. With checkpoint PASS now at 95%, May 20 is likely to be a high-engagement day, and the test print decision may land simultaneously with early Wave 1 reply surge.
+
+**Trigger**: May 20, 09:00 UTC — Wave 1 signals are STRONG (>60% click rate, 2+ substantive replies) AND test print is approved for same-day execution
+
+**Why this is a congestion problem**: Both situations want user attention but neither is an emergency. The risk is context-switching cost — not a decision conflict but a cognitive load problem.
+
+```
+POSITIVE CONGESTION DETECTED (May 20, 09:00 UTC)
+│
+├─ Classification: Is this TYPE B (correlated) or just parallel demand?
+│  │ Answer: PARALLEL — Wave 1 and test print do not depend on each other
+│  │ Resolution: Time-box each task; don't let one expand into the other
+│
+├─ Recommended sequencing (May 20):
+│  ├─ 09:00–10:00 UTC: Wave 1 signal read (60 min, do not extend — data is sufficient)
+│  │   → Output: Provisional STRONG/MODERATE/WEAK classification (1 decision)
+│  ├─ 10:00–10:30 UTC: Brief break; record provisional classification in notes
+│  ├─ 10:30–13:30 UTC: Test print execution (3 hours, uninterrupted)
+│  │   → Output: Pass/fail evaluation (1 decision)
+│  └─ 14:00–15:00 UTC: Etsy launch prep (if test print passes); or log failure + defer
+│
+├─ May 20 total user hours: 4–4.5 hours (sustainable)
+│
+├─ Risk: If Wave 1 STRONG triggers Batch 2 acceleration, does that create a May 20 orchestrator
+│  task that competes with your test print attention?
+│  Answer: NO — Batch 2 acceleration is orchestrator-executed (autonomous), not user-driven
+│  The orchestrator stages Batch 2 outreach; you review + approve on May 21 at the decision gate
+│
+└─ Decision rule: If both tasks are ready May 20, do Wave 1 read FIRST, then test print.
+   Never reverse the order (Wave 1 data has a 24-hour freshness window; test print is time-flexible).
+```
+
+**Key boundary**: STRONG Wave 1 does NOT change the May 21 14:00 Phase 2 decision gate. That gate exists regardless. What STRONG Wave 1 does is increase confidence at the gate, not accelerate the gate itself.
+
+---
+
 ## SECTION 4: Communication Protocol (Decision Sequencing and Escalation)
 
 ### 4.1 Decision Classification
@@ -360,6 +442,7 @@ If two events require simultaneous user decision-making, use this priority order
    - Hard deadline; cannot defer
    - 15 minutes max; do not extend
    - Outcome determines May 20–21 emergency protocols
+   - **v1.1 note**: Pre-check returned PASS May 18 (95%+ confidence). Priority 1 is almost certainly a formality — execute it anyway, it is the official gate. Real decision weight has shifted to Priority 2.
 
 2. **Priority 2 (CAPITAL PLANNING)**: Phase 2 path decision (May 21, 14:00–15:00 UTC)
    - Hard deadline; depends on Priority 1
@@ -568,6 +651,15 @@ This assessment is a **coordination reference, not a prescriptive mandate**. If 
 
 ---
 
-**Version**: 1.0 (May 18, 2026)
+**Version**: 1.1 (May 19, 2026)
+**Previous version**: 1.0 (May 18, 2026) — baseline document
+**Changes in v1.1**:
+- Added Version 1.1 Amendment block (pre-checkpoint PASS confirmation, probability re-weighting)
+- Added probability weights to all three Scenarios (A: 60–70%, B: 5–10%, C: 25–35%)
+- Added Contingency 3.0 (Checkpoint PASS normal execution protocol — primary path)
+- Added Contingency 3.4 (Positive congestion — simultaneous STRONG Wave 1 + test print approval)
+- Updated Decision Priority Order note: Priority 1 is near-certain PASS; decision weight on Priority 2
+- Source: CHECKIN.md Session 1283 + WORKLOG.md pre-checkpoint query results (May 18 21:34 UTC)
+
 **Next Review**: May 31, 2026 (post-period retrospective)
 **Maintained by**: Orchestrator (Item 63, Cross-Project Interdependency Risk Assessment)
