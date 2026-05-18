@@ -1,4 +1,47 @@
-## Since Last Check-in (Session 1263, 19:00–19:35 UTC)
+## Since Last Check-in (Session 1264, 19:19–19:50 UTC)
+
+**Session Status**: ✅ **ORCHESTRATION CLEANUP — OPEN-REPO FOCUS PRUNED + STATE READY FOR MAY 19-21 EVENT GATES**
+
+**Current Time**: May 18, 2026, 19:19–19:50 UTC
+
+### Work Completed
+
+**Documentation Maintenance** (1 task):
+1. **open-repo Focus Line Pruned** ✅
+   - Updated PROJECTS.md (line 803) — removed truncated Session 1246 reference (17 sessions stale)
+   - New focus: "**[RESOLVED] Phase 4 PR merge complete + post-merge cleanup finished.** PR #1 & #2 merged. Phase 5 candidates staged, decision awaiting user."
+   - Status: Clean, current, no autonomous work available
+
+**All orchestration files updated and ready to commit.**
+
+### Projects Status (Verified May 18 19:50 UTC)
+
+Same as Session 1263 — all frameworks pre-checkpoint, no new work:
+- ✅ **stockbot**: May 19 20:00 UTC checkpoint ready (infrastructure validated, outcome framework ready)
+- ✅ **resistance-research**: Wave 1 complete, Phase 2 frameworks ready (synthesis May 21 10:30 UTC)
+- ✅ **All other projects**: Complete, paused, or user-action-dependent
+
+### Event Timeline (No Changes)
+
+- **May 19 20:00 UTC**: Checkpoint execution (user)
+- **May 21 10:30 UTC**: Wave 1 synthesis (orchestrator)
+- **May 21 14:00 UTC**: Phase 2 path decision (user)
+
+### Needs Your Input (No Changes)
+
+1. **May 18**: Seedwarden Gate 1 execution? (Deadline was before 14:00 UTC — past, but still executable)
+2. **May 19 19:00 UTC**: Pre-flight 5-min checklist
+3. **May 19 20:00 UTC**: Execute checkpoint query
+4. **May 21 10:30 UTC**: Wave 1 signal data
+5. **May 21 14:00 UTC**: Phase 2 path selection
+
+### Token Usage
+
+- **Sonnet 5.2%** (3,330,606 tokens) | All-models 8.6%
+
+---
+
+## Session 1263 (Orchestrator) — May 18, 2026, 19:00–19:35 UTC — Post-Wave-1 Framework Delivery
 
 **Session Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE — ALL PRE-CHECKPOINT & POST-WAVE-1 FRAMEWORKS READY**
 
