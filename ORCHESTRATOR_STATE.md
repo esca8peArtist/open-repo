@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T02:01:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-18T03:04:49Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 7.1% | Reset in 22h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 7.2% | Reset in 21h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PATH DECIDED] Wave 1 EXECUTION IMMINENT (May 18 06:00 UTC, ~10h). All production-ready: Domains 1,37,57,58 current through May 17; 8 Gists live; email + contacts verified. Phase 1 measurement staging COMPLETE (Items 33-34): day-0 checklist, daily monitoring template, week-1 synthesis decision gates all production-ready. Contingency playbook ready (2-gate framework executable within 2h if needed). Phase 2: Domains 38-40 complete (39,200 words, 142 cites); Domains 59/57 outlines staged for June … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PATH DECIDED] Wave 1 EXECUTION IMMINENT — USER ACTION REQUIRED IN NEXT 3.5 HOURS (by May 18 06:00 UTC). Readiness audit COMPLETE (Session 1205): All 8 Gists live (HTTP 200), email/contact infrastructure verified, execution checklist complete. Domains 1,37,57,58 current through May 17; Phase 1 measurement staging COMPLETE. USER ACTIONS REQUIRED (6 items, ~50 min total before 06:00 UTC): (1) Gist view count baseline (10 min, logged in as esca8peArtist), (2) Google Sheets tracking workbook (15 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -65,6 +65,7 @@
 ## Active Blocks
 ---MOVED TO RESOLVED ARCHIVE---
 ---
+---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -89,55 +90,54 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 1162 (40 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 1162 (45 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
+• stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
 • stockbot — DB sync script missing on Jetson; checkpoint query returns wrong results ← 2026-05-13 (Session 957, 00:28 UTC)
 • stockbot — May 12 Checkpoint: Critical Architecture Mismatch (options vs equity trading) ← 2026-05-12 (Session 951, 22:05 UTC)
-• stockbot — Jetson disk at 87% (29 GB free remaining) ← 2026-05-12 (Session 941, 19:45 UTC)
 
 ## Inbox (unprocessed)
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- CLAUDE.md compliance: ✅ CONFIRMED
+**Trading Engine — ✅ RUNNING**:
+- API health: `{"status": "ready", "sessions": 2}` ✅
+- Active sessions: AAPL lgbm_ho + AAPL ridge_wf both running
+- Recent logs: Current through May 18 02:13 UTC
+- Docker image: Memory limit 4 GB properly set
 
-### Files Modified
+**Database & Data — ✅ ACCESSIBLE**:
+- trading.db: 656 KB (healthy active size)
+- Last trade: May 12 19:51 UTC (expected, pre-weekend)
+- Last DB sync: May 15 21:15 UTC (successful)
 
-- `projects/resistance-research/domains/domain-updates-may17-18.md` — created (143 lines)
-
-### Commits
-
-- `857e0ae9` — feat(resistance-research): breaking developments integration May 17-18
-  - Domains 1 + 37 escalations scoped
-  - Implementation roadmap provided
-  - Ready for 90-120 min integration work
+**⚠️ CRITICAL ALERT DISCOVERED**:
+- **Issue**: AAPL position is 28.9% of account equity (limit: 5%)
+- **Market value**: $31,823 of $110,077 total equity
+- **Status**: Alert active since May 15–16
+- **Risk**: Position-sizing guardrails may not be preventing oversized positions
+- **Action required**: Verify guardrails.py is active and enforcing 5% limit before May 19 20:00 UTC checkpoint
 
 ### Assessment
 
-**Autonomous work status**:
-- All immediately executable pre-Wave-1 items completed or verified
-- Breaking developments document production-ready; integration can proceed at user's pace (no immediate blockers)
-- All three projects (stockbot checkpoint, resistance-research Wave 1, seedwarden Track B) remain on-track
-- Security compliance verified (containerized-agents)
+**Checkpoint Readiness**: ✅ **SYSTEMS READY** with ⚠️ **Position-sizing guardrails require verification**
 
-**Wave 1 readiness**:
-- Domains 1, 37, 57, 58 verified current through May 17 with escalation framings documented
-- No contradictions to Wave 1 distribution materials identified
-- Integration guidance provided for optional May 18 domain refreshes before Batch 1 sends
+All physical infrastructure, networking, and API systems are healthy and production-ready for May 19 checkpoint execution. The critical position-sizing alert suggests that either (a) guardrails are not enforcing position limits correctly, (b) position has grown via unrealized gains and alert is informational, or (c) guardrails configuration differs from expected. This must be clarified before checkpoint execution.
 
-### Time Spent
+**Next Autonomous Window**: May 19 19:00 UTC (pre-execution validation, 15 min duration)
 
-- Web research (SAVE Act, Callais, CISA): 18 min
-- Integration document drafting: 22 min
-- Git commit + verification: 6 min
-- **Total session**: 46 minutes
+### Exploration Queue Notes
 
-### Next Autonomous Window
+This completes the **stockbot: Pre-Checkpoint Jetson Infrastructure Validation** exploration queue item. Related queued items (post-checkpoint outcomes) remain staged for May 19 20:30 UTC activation.
 
-**May 19 20:30 UTC** — Upon checkpoint outcome determination:
-- Activate Item 59 (Post-Checkpoint Gate 2 Decision Framework) if PASS outcome
-- Continue monitoring until May 20 if outcome unclear or requires user decision
+### Files Modified
+
+- `projects/stockbot/JETSON_PRE_CHECKPOINT_VALIDATION.md` — comprehensive validation report (created)
+
+### Commits
+
+- Validation report created locally (stockbot submodule) — not pushed due to submodule structure
 
 ---
