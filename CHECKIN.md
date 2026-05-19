@@ -1,3 +1,116 @@
+## Since Last Check-in (Session 1338, May 19 11:15–12:45 UTC)
+
+**Session Status**: ✅ **PARALLEL AGENT EXECUTION — SEEDWARDEN + STOCKBOT DELIVERABLES COMPLETE**
+
+### ✅ Seedwarden Items 91-92 (May 30 Launch Finalization — COMPLETE)
+
+**Item 91: SEEDWARDEN_MAY_27_29_PRELAUNCH_MASTER_CHECKLIST.md** (603 lines, production-ready)
+- 3-day pre-launch master checklist covering May 27–29
+- **May 27** (2h): Gate 1 social account execution OR rapid creation path + warm entry setup
+- **May 28** (2h): Canva verification + zone cards + email sequence staging
+- **May 29** (2h): Email testing + full 20-point QA + go/no-go decision framework
+- Three fallback decision trees for Gate 1 slip, Gate 2 delay, Kit failure scenarios
+- Three go/no-go options at May 29 11:00 UTC: Full launch, conditional launch, or delay to June 2
+
+**Item 92: SEEDWARDEN_EMAIL_LAUNCH_SEQUENCE_GUIDE.md** (1,050 lines, production-ready)
+- Complete 5-email automation sequence (Kit + Gmail fallback)
+- Email 1 (Day 0): Zone card delivery + welcome
+- Email 2 (Day 2): Welcome + 3-guide overview (first sales pitch)
+- Email 3 (Day 5): Seed saving education (nurture)
+- Email 4 (Day 7): Seasonal harvesting (engagement)
+- Email 5 (Day 10): Coupon offer (final push)
+- All copy provided (copy/paste ready for Kit or Gmail)
+- Email testing protocol (3-test verification May 29)
+- Post-launch monitoring framework (May 31–June 7)
+
+**Impact**: May 30 launch fully operationalized with all user-facing deliverables production-ready. No further autonomous work needed. User action: Gate 1 (social accounts) ASAP, then follow Item 91 checklist May 27-29 (6 hours total). Fallback paths cover all critical failure scenarios (Gate 1 pending, Kit failure, etc.).
+
+**Files committed**: SEEDWARDEN_MAY_27_29_PRELAUNCH_MASTER_CHECKLIST.md, SEEDWARDEN_EMAIL_LAUNCH_SEQUENCE_GUIDE.md (commits 4d398b72 + 8cec846c)
+
+### ✅ Stockbot May 22 Checkpoint Prep (4 Deliverables — COMPLETE)
+
+**Checkpoint Script Verification** ✓
+- `scripts/may22_checkpoint_query_alpaca.py` verified correct
+- Syntax clean (`py_compile` passed), all classification paths sound
+- `--dry-run` mode works without errors
+- Both scenarios supported: Lever B activated (new outcome) + NOT activated (repeat May 19)
+
+**MAY22_CHECKPOINT_EXECUTION_CHECKLIST.md** (8 sections, production-ready)
+- Section A: Pre-checkpoint verification (18:00–19:55 UTC, 18 verification items)
+- Section B: Primary execution with exact commands + metric recording grid
+- Section C: Scenario routing (separate branches for PASS, STILL_MISS_B2, FAR_MISS, ERROR)
+- Section D: Automated decision script invocation
+- Section E: Documentation requirements per scenario
+- Section F: Expected output text for both Lever B outcomes
+- Section G: Timing reference (May 22 13:30 UTC deadline through checkpoint 20:00 UTC)
+- Section H: Quick-reference command block
+
+**Post-Checkpoint Decision Script** (scripts/may22_post_checkpoint_decision.py, ~250 lines, fully tested)
+- Classifies 5 post-checkpoint scenarios with distinct exit codes:
+  - PASS (exit 0) → Gate 2 PROCEED
+  - NEAR_MISS_B2 (exit 1) → Gate 2 DEFER
+  - FAR_MISS_LEVER_A_ONLY (exit 2) → Gate 2 BLOCKED
+  - FAR_MISS_C1_ASYNC (exit 3) → Gate 2 DEFER
+  - FAR_MISS_C2_OUTAGE (exit 4) → Gate 2 EMERGENCY
+- Takes checkpoint JSON or explicit metric flags as input
+- All 6 test cases passing (PASS Lever A, PASS Lever B, JSON mode, etc.)
+
+**Post-Checkpoint CHECKIN.md Template** (fillable sections for May 22 handoff)
+- Pre-checkpoint status section
+- Raw metrics recording grid
+- Decision script output section
+- Narrative summary + user decision checkboxes
+- Action timelines per scenario
+- Scripts/documents reference table
+
+**SSH Constraint Honored**: No SSH attempts made. SSH auth blocker documented as required user action (add orchestrator ED25519 public key to Jetson authorized_keys before May 22 13:30 UTC).
+
+**Impact**: May 22 checkpoint execution (20:00 UTC) now fully operationalized with zero manual decision lag. Decision automation enables same-day post-checkpoint action (60-min execution per scenario). User action: SSH key addition (CRITICAL, 52 hours remaining).
+
+**Files committed**: MAY22_CHECKPOINT_EXECUTION_CHECKLIST.md, scripts/may22_post_checkpoint_decision.py, CHECKIN.md (stockbot project) (commits 3f7c8a9e + 9b2d1f4c)
+
+### 🔴 Block Status — Unchanged (All 3 Active)
+- **stockbot**: SSH auth blocker (May 22 13:30 UTC deadline, 49 hours remaining) — **CRITICAL**. Lever B config not yet activated on Jetson.
+- **cybersecurity-hardening**: VeraCrypt restart required (user action).
+- **mfg-farm**: Test print execution required (user action).
+
+### 📊 Critical Path Status
+- **May 20 evening**: resistance-research signal log fill (user action) — **DUE**
+- **May 21 19:00 UTC**: Synthesis execution (autonomous, pre-built) → May 21 20:00 UTC CHECKIN.md post
+- **May 22 13:30 UTC**: Lever B HMM config activation deadline (49 hours, SSH blocker) — **CRITICAL**
+- **May 22 20:00 UTC**: Checkpoint execution (autonomous, pre-built)
+- **May 27-29**: Seedwarden pre-launch execution (user follows Item 91-92 checklists, 6 hours total)
+- **May 30 7:00am**: Seedwarden launch (autonomous if Gate 1 resolved)
+
+### 📋 Exploration Queue Status
+- ✅ **Item 85 COMPLETE** (mfg-farm post-test-print launch sequence)
+- ✅ **Item 91 COMPLETE** (seedwarden pre-launch master checklist)
+- ✅ **Item 92 COMPLETE** (seedwarden email automation sequence)
+- ⏳ **Item 86** (resistance-research post-synthesis analysis, ready May 21 21:00 UTC)
+- ⏳ **Item 87** (cybersecurity Phase 2 roadmap, ready May 25-27)
+- **Queue depth**: 2 active items. Will queue 2-3 new items if Items 86/87 don't execute (next session May 21-22).
+
+### Needs Your Input
+**CRITICAL (May 22 13:30 UTC deadline, 49 hours remaining)**:
+1. **SSH auth to Jetson** (URGENT): Either (A) add orchestrator's ED25519 public key (~/.ssh/id_ed25519.pub) to Jetson's authorized_keys, OR (B) SSH manually and run 5-min Lever B config fix (commands in BLOCKED.md).
+
+**Due May 20 evening**:
+2. **Signal log** (May 20 evening ~22:00 UTC): Fill `wave-1-signal-log-may18-21.md` with inbox/Gist response counts to trigger May 21 19:00 UTC synthesis.
+
+**Due May 22-23**:
+3. **Test print** (May 22-23): Execute at 0.20mm layer height, PLA+, 3 walls, 220–225°C. Item 85 post-print framework will route to correct launch branch.
+
+**Due ASAP (blocking Seedwarden May 30)**:
+4. **Gate 1 — Social accounts** (OVERDUE, May 15-18): Create Instagram, TikTok, Pinterest accounts to unblock May 27 start. Item 90 rapid setup guide provides 45-min execution path.
+
+### Session 1338 Summary
+- **Work executed**: Seedwarden Items 91-92 (May 30 launch finalization), Stockbot checkpoint prep (4 deliverables)
+- **Token usage**: ~165K (parallel agent execution for Items 91-92 + checkpoint prep)
+- **Impact**: Seedwarden May 30 fully operationalized + Stockbot May 22 checkpoint automation complete. All critical-path work for next 36 hours production-ready.
+- **Status**: On track for May 21 synthesis execution and May 22 checkpoint. Awaiting user SSH key addition (critical deadline) and signal log fill (due May 20 evening).
+
+---
+
 ## Since Last Check-in (Session 1337, May 19 10:46–11:15 UTC)
 
 **Session Status**: ✅ **RESISTANCE-RESEARCH WAVE 1 POST-MONITORING + SYNTHESIS PREP COMPLETE**
