@@ -35,10 +35,16 @@
 - **resistance-research**: Breaking developments scan COMPLETE — **CRITICAL**: Domain 58 needs emergency rewrite before May 21 synthesis (GVR in *Turtle Mountain v. Howe* May 18 invalidates cert/deny framing)
 - **mfg-farm**: Etsy SEO analysis COMPLETE — launch-day checklist provided, ready post-test-print
 
-**Immediate needs**:
-1. User: Fill Wave 1 signal log today evening (15-30 min)
-2. Domain 58 emergency rewrite before May 21 19:00 UTC (2-3 hrs, CRITICAL for synthesis accuracy)
-3. Lever B HMM config activation by May 22 13:30 UTC (SSH issue or manual execution needed)
+**Results**:
+- ✅ Domain 58 emergency rewrite COMPLETE (proactively executed, committed bc771fee)
+  - Section 6.1 rewritten: GVR is worse than cert denial, not a win
+  - Jackson dissent analysis: *Callais* doesn't address private right of action
+  - Status: "Uncertain — hostile court environment; lower-court reconsideration unpredictable"
+  - Synthesis team briefing provided (DOMAIN_58_EMERGENCY_UPDATE_NOTES.md)
+
+**Immediate user actions remaining**:
+1. **TODAY (May 19 evening)**: Fill Wave 1 signal log (15-30 min) — unblocks May 21 synthesis
+2. **By May 22 13:30 UTC**: Activate Lever B HMM config (5 min SSH task or manual execution)
 
 ---
 
