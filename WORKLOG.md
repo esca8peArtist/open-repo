@@ -50,6 +50,72 @@
 
 ---
 
+## Session 1292 (Orchestrator: Parallel Readiness Assessment) — May 19, 2026, 01:30–02:15 UTC — Parallel validation: seedwarden Track B, resistance-research May 21 synthesis, stockbot May 22 checkpoint
+
+**Status**: ✅ **COMPLETE** — Three parallel subagents executed comprehensive readiness assessment and code completion. All three projects advanced toward scheduled milestones. Critical user decisions identified for immediate action.
+
+**Work Completed**:
+
+### 1. **seedwarden Track B Readiness Assessment + Code Delivery** ✅
+- **Gate 1 Status (TODAY May 19)**: OVERDUE (was due May 18, Day 0). User confirmation required: are Instagram, TikTok, Pinterest accounts live? If not, create today.
+- **Gate 2 Status (May 19–24)**: NOT STARTED. Decision due TODAY: Canva Pro trial ($15/mo, 30-day free) or free tier (manual hex workaround)? Recommend: trial. Setup: 20–30 min once decided.
+- **Zone-cards (May 24–25)**: Content fully staged and copy-paste ready in CANVA_ZONE_CARD_BATCH_WORKFLOW.md. Production: 7.5–9 hours once Gate 2 Canva Brand Kit is complete.
+- **Gate 3 (May 27–28)**: NOT STARTED. All 5 email templates pre-built. Kit account must be created May 27 (not 28) for DNS propagation. Full prebuild brief created: GATE_3_KIT_PREBUILD_BRIEF.md (removes all decision-making from Kit session).
+- **May 29 Go/No-Go**: Framework file created: MAY_29_GO_NO_GO_DECISION_TEMPLATE.md (executable decision form with 3-block time structure + GREEN/YELLOW/RED gate check).
+- **Status**: TRACK B on track for May 30 launch if Gate 2 decision made today and zone cards produced May 24–25.
+- **Files created** (committed):
+  - `projects/seedwarden/MAY_29_GO_NO_GO_DECISION_TEMPLATE.md` — 60-line decision form
+  - `projects/seedwarden/GATE_3_KIT_PREBUILD_BRIEF.md` — 35-line pre-fill guide (all field values pre-loaded)
+
+### 2. **Resistance-Research May 21 Synthesis Readiness Assessment** ✅
+- **Verdict**: GO — Confidence 8/10 for 30–45 min execution without errors
+- **Component Status**: All 5 framework parts verified complete:
+  1. Signal classification logic (STRONG/MODERATE/WEAK/TOO_EARLY criteria) — deterministic, no judgment calls
+  2. Phase 2 path branching — all 4 branches fully specified with triggering conditions + domain sequences + user gate language
+  3. Wave 1 response tracking — 3-layer architecture (dashboard, signal log, scoring calculator) all operational
+  4. Output format — CHECKIN.md post template pre-built and copy-paste ready
+  5. Timeline — 30-minute execution confirmed achievable per `may21-synthesis-execution-checklist.md`
+- **Domain Currency**: All 4 domains (1, 37, 56, 58) verified current as of May 18 with no contradictions
+- **Confirmed Gap**: Gist view baseline not yet captured (5-min user action before May 21). If not filled, synthesis defaults to conservative classification (doesn't inflate toward STRONG).
+- **Urgent Flag**: Domain 42 DEA Category A batch send dates blank; May 21 is last viable send day (deadline May 28). Not blocking synthesis but operationally critical.
+- **Status**: Ready for May 21 19:00 UTC execution. Two points of improvement: (1) user fills Gist delta before May 21 → confidence 9/10, (2) May 20 signal log checked → full granularity
+- **Authoritative execution document**: `post-wave-1-monitoring/may21-synthesis-execution-checklist.md` (30-step checklist, use this not the skeleton)
+
+### 3. **Stockbot May 22 Checkpoint Readiness Assessment + Lever B Implementation** ✅
+- **Checkpoint Script**: NEW: `scripts/may22_checkpoint_query_alpaca.py` (created, verified, executable)
+- **Trading Session Health**: Both AAPL sessions running. Metrics:
+  - Account equity: $115,135.37
+  - Buying power: $423,549.28
+  - Total fills since May 5: 34
+  - AAPL sells since Lever A: 0 (STILL_MISS_B2 unchanged)
+  - Confirmed round trips: 3
+  - P&L: +$5.00
+- **Lever B HMM Regime Masking**: ✅ COMPLETE (27/27 tests passing)
+  - File: `src/ml/hmm_signal_masker.py` (full implementation, 200 lines)
+  - Mechanism: Post-processes stacker output with regime context (bull/bear/sideways)
+  - Bear regime: suppresses BUY, reduces SELL threshold to 60%
+  - Sideways: reduces SELL threshold to 80%
+  - Bull: full pass-through
+  - 60-bar warm-up guard (signals unchanged until HMM calibrated)
+  - Integration step (wiring into TradingSession config) requires user approval; not yet started
+- **Risk Assessment**:
+  - HIGH: STILL_MISS_B2 likely repeats on May 22 (models fundamentally bullish, trajectory unchanged)
+  - MEDIUM: Lever B HMM needs ~60 bars warm-up; only 3 trading days until May 22 = masking won't activate in time
+  - **Implication**: Even if Lever B approved and deployed today, effectiveness assessment should target May 26 checkpoint (after ~5 trading days warm-up); May 22 is still likely MISS classification
+- **Status**: GREEN for execution. Code ready. Infrastructure ready. Lever B approved → deploy immediately; Lever B not approved → standard May 22 checkpoint execution as-is (expect STILL_MISS_B2).
+- **Next Checkpoint Escalation Point**: May 26 (after Lever B warm-up window) or May 22 if additional intelligence available
+
+**Project Status Updates**:
+- **seedwarden**: Critical user decision needed TODAY (Gate 2: Canva Pro trial decision)
+- **resistance-research**: Green for May 21 execution; Gist check + Doman 42 DEA send urgent
+- **stockbot**: Lever B implementation complete; awaiting approval. May 22 checkpoint ready regardless.
+
+**Token Usage**: ~310K total (parallel agents: seedwarden ~120K, resistance-research ~83K, stockbot ~106K)
+
+**Commit**: [pending — orchestration files to be updated before final commit]
+
+---
+
 ## Session 1288 (Orchestrator: Post-Wave-1 Monitoring Infrastructure) — May 18, 2026, 22:53–ongoing UTC — Early Signal Capture & May 21 Synthesis Staging
 
 **Status**: ✅ **COMPLETE** — Post-Wave-1 monitoring infrastructure ready; baseline: zero responses at May 18 22:53 UTC (expected); May 21 synthesis framework staged and executable.
