@@ -2098,3 +2098,58 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 
 **Next Queue Status**: Exploration window opens May 23 post-checkpoint. Items 76–78 will be active/pending based on May 21-22 outcomes. No further items needed until post-May-22.
 
+
+---
+
+## Active Items (Session 1369, May 19, 23:50 UTC) — Generated Post-Session
+
+### Item 94: Resistance-Research Wave 2 Distribution Pre-Staging (Post-Synthesis)
+**Status**: NOT STARTED — Ready for May 22-25 execution (depends on May 21 synthesis outcome)
+**Priority**: HIGH — May 21 synthesis outcome determines Phase 2 path; Wave 2 distribution prep can begin May 22 regardless of outcome
+**Impact**: HIGH — Post-synthesis launch speed depends on having Wave 2 templates ready
+**Goal**: Pre-stage Wave 2 distribution infrastructure covering: (1) Wave 2 contact list refinement (100+ Tier 2 contacts per May 21 synthesis outcome), (2) Email template variants (3-4 per domain), (3) Distribution calendar May 25-June 30, (4) Institutional outreach playbook (universities, policy orgs, law schools), (5) Social media distribution (Twitter, Reddit, Substack threads)
+**Scope**:
+1. **Contact list**: Extend Batch 1 (25 seed contacts) to Batch 2 (100+ institutional contacts). Score by receptivity (universities > think tanks > media > labor). Segment by domain (Domains 56, 58 to election-focused orgs; Domains 39, 40 to healthcare/disability/tech coalitions; Domains 37-38 to civil liberties + election protection).
+2. **Email templates** (4 variants): Academic outreach, policy org outreach, law school outreach, media/journalist outreach. Each 250-350 words with domain-specific asks.
+3. **Distribution calendar**: Batch 2 launch June 1-7, staggered per organizational capacity (academic June 1-3, policy June 3-5, media June 5-7). Domain 39 prioritized (June 1 HHS deadline window). Domain 56/58 coordinated with legislative calendar.
+4. **Institutional outreach**: 50+ law schools (each with their civil procedure / election law / constitutional law faculty); 30+ think tanks (policy, governance, democracy-focused). Hand-crafted contact list with prior relationship notes.
+5. **Social media**: Twitter thread templates (Domains 38-40 per synthesis outcome), Reddit /r/law / /r/civics posts, Substack cross-posting strategy.
+**Deliverable**: `projects/resistance-research/WAVE_2_DISTRIBUTION_STAGING.md` (3,000+ words, Batch 2 contact list with 100+ contacts, 4 email templates, distribution calendar, institutional outreach playbook)
+**Why now**: May 21 synthesis outcome is known. May 22-25 is the gap between synthesis and Phase 2 research launch. Having Wave 2 ready means June 1-7 can execute distribution while Domain 56/58 research executes simultaneously. Removes distribution friction post-synthesis.
+**Success criteria**: By May 25, Batch 2 contact list verified current, email templates tested, distribution calendar calibrated to organizational capacity, ready for June 1 launch
+**Next step**: Execute May 22-25; deliver before May 26 so June 1 launch has all materials staged
+
+---
+
+### Item 95: Seedwarden Phase 3 Scope Contingency Execution Plans (May 25-30)
+**Status**: NOT STARTED — Ready for May 25-30 execution (depends on user Phase 3 scope decision May 25-30)
+**Priority**: MEDIUM — Phase 3 decision gate is May 25-30; execution begins June 1. Contingency planning prevents decision delays.
+**Impact**: MEDIUM — Each Phase 3 option (A: Medicinal herbs, B: Seed preservation, C: Regional sourcing) has different execution timeline and resource needs. Having detailed plans ready means May 30 decision → June 1 execution without planning delays.
+**Goal**: Pre-stage detailed execution plans for all 3 Phase 3 options, covering: (1) Option A (Medicinal Herbs) — growing guide + harvesting protocol + drying/storage (2,000 words, 22-day critical path), (2) Option B (Seed Preservation) — seed collecting + storage protocols + viability testing (1,800 words, 30-day critical path), (3) Option C (Regional Sourcing) — supplier identification + relationship building + terms negotiation (1,600 words, 40-day critical path)
+**Scope**:
+1. **Option A** (Medicinal Herbs, 22-day timeline): Growing varieties (elderberry, echinacea, St. John's Wort, feverfew), harvesting windows, drying protocols (hanging vs. dehydrator), storage containers, yield projections
+2. **Option B** (Seed Preservation, 30-day timeline): Collecting partners (farmer networks, seed savers), collection protocol (timing, handling, cleaning), viability testing (germination tests, storage conditions), packaging for long-term storage
+3. **Option C** (Regional Sourcing, 40-day timeline): Identify 10-15 Midwest seed suppliers (organic focus, heirloom emphasis), relationship-building outreach, wholesale terms negotiation, logistics coordination, payment terms
+**Deliverable**: `projects/seedwarden/PHASE_3_SCOPE_EXECUTION_PLANS.md` (5,000+ words, 3 detailed option scenarios with day-by-day timelines, resource lists, supplier contacts, contingency paths)
+**Why now**: May 30 Phase 3 scope decision is the final gate before June 1 launch. Having detailed execution plans ready means May 30 user decision immediately triggers June 1 execution without needing to plan. Each option has distinct resource needs and timeline; detailed plans remove execution friction.
+**Success criteria**: By May 30 morning, 3 execution plans complete with timeline, resource list, supplier contacts (Option C) or partner contacts (Option B) verified current
+**Next step**: Execute May 25-30; deliver before May 30 evening so user decision → June 1 execution is mechanical
+
+---
+
+### Item 96: Stockbot Post-Checkpoint Decision Execution Playbook (May 22-25)
+**Status**: NOT STARTED — Ready for May 22-25 execution (depends on May 22 20:00 UTC checkpoint outcome)
+**Priority**: HIGH — May 22 checkpoint is gate for Gate 2 planning and Lever B evaluation. Outcome determines May 23-30 work scope.
+**Impact**: HIGH — Checkpoint outcome (PASS/STILL_MISS_B2/FAR_MISS_C1/FAR_MISS_C2) triggers different technical paths (Lever B works/fails, multi-ticker ready/blocked, options trading decision). Decision playbook removes deliberation delays May 22-25.
+**Goal**: Pre-stage comprehensive post-checkpoint execution playbook covering: (1) Four outcome-specific decision paths (PASS → Lever B production readiness; STILL_MISS → Lever B refinement; FAR_MISS → architecture re-evaluation), (2) Lever B metrics evaluation (trades, fills, Sharpe improvement), (3) Multi-ticker expansion readiness check (capital allocation, position sizing verified), (4) Options Gap 4 status assessment (naked-call prevention: implemented or deferred?), (5) Jetson hardware readiness (thermal, disk, memory for June 1 Gate 2 sprint)
+**Scope**:
+1. **Lever B metrics framework** (1 hour): What defines "Lever B successful"? Metrics: trade count per session, fill rate, round-trip quality (entry-exit accuracy), Sharpe improvement vs. Lever A, max drawdown reduction. Thresholds per outcome path.
+2. **Multi-ticker expansion gate** (1 hour): AMZN/JPM position-sizing verified? Capital allocation framework tested? Risk aggregation model current? Go/no-go decision for May 25 AMZN/JPM scaling.
+3. **Options readiness assessment** (1 hour): Gap 4 (naked-call prevention guardrail) status? If not implemented, what's timeline vs. Gate 2? Recommend: defer options to Gate 2.2 or implement Gap 4 May 23-25?
+4. **Hardware upgrade roadmap** (30 min): Jetson thermal at 81-87°C idle. Extended compute blocked until cooling. Can cooling be installed May 24-25? Impact on June 1 Gate 2 trading volume?
+5. **Decision execution paths** (1.5 hrs): If PASS: what's Gate 2 plan (multi-ticker → options → ensemble)? If STILL_MISS: Lever B refinement timeline (which parameters to adjust?)? If FAR_MISS: architecture re-evaluation (is h=10 right timeframe? Should we pivot to h=5 or h=20 variants)?
+**Deliverable**: `projects/stockbot/POST_CHECKPOINT_EXECUTION_PLAYBOOK.md` (3,500+ words, 4 outcome-specific decision trees, metric evaluation framework, execution timeline per outcome, risk assessment)
+**Why now**: May 22 checkpoint executes at 20:00 UTC. Outcome arrives May 22 evening. May 23-25 timeline is tight for decision-making + execution. Having playbook ready means May 22 evening outcome → May 23 morning immediate execution without deliberation.
+**Success criteria**: By May 22 morning, playbook complete with 4 decision trees, metric thresholds, execution timelines per outcome. By May 22 evening outcome, user can reference playbook and execute May 23-25 actions mechanically.
+**Next step**: Execute May 19-22; deliver before May 22 13:00 UTC (before checkpoint execution at 20:00 UTC)
+
