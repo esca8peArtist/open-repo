@@ -1,5 +1,60 @@
 # Work Log
 
+## Session 1316 (Orchestrator: Jetson Infrastructure Validation & Critical Configuration Gap Identified) — May 19 2026, 05:03–05:35 UTC
+
+**Session Status**: 🔴 **CRITICAL BLOCKER IDENTIFIED — LEVER B CONFIG NOT ACTIVATED; May 22 CHECKPOINT AT RISK**
+
+**Session Goal**: Execute Exploration Queue item "stockbot: Pre-Checkpoint Jetson Infrastructure Validation" (2-3 hours); validate Jetson readiness for May 22 checkpoint
+
+**Work Completed**:
+
+### ✅ Pre-Checkpoint Infrastructure Validation (Exploration Queue Execution)
+- **Scope**: Comprehensive Jetson infrastructure validation before critical May 22 checkpoint
+- **Agent spawned**: stockbot subagent (Session 1316 ada09062853aedd6f)
+- **Validation results** (ALL PASS except critical config gap):
+  - ✅ **CPU/GPU**: 91%+ idle, 47-48°C thermal, zero throttling risk
+  - ✅ **Memory**: 872-880 MiB used (21.5% of 4GB), 2.5GB available, zero leak detected
+  - ✅ **Database**: All 5 queries <7ms (vs 100ms threshold), WAL healthy
+  - ✅ **Disk**: 131GB free (40%), 9.2% inodes, I/O wait 0.002%
+  - ✅ **Dependencies**: All 11 Python packages verified clean (alpaca-py 0.43.4, pandas 2.3.3, etc.)
+  - ✅ **Network**: Alpaca ICMP 59ms, 0% packet loss
+  - ✅ **Uptime**: 35 days 7 hours, RestartCount=0 since Lever B restart 04:21 UTC
+
+### 🔴 CRITICAL BLOCKER DISCOVERED: Lever B HMM Configuration Not Activated
+- **Issue**: Lever B HMM regime masking code deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`, 415 lines, syntax OK), but `/opt/stockbot/config/active-sessions-2session.json` lacks `hmm_regime_masking: true` in strategy_params
+- **Impact**: May 22 checkpoint will measure Lever A behavior (same configuration that already failed May 19 with STILL_MISS_B2)
+- **Severity**: CRITICAL — entire Lever B testing objective defeated without config activation
+- **Fix**: Edit JSON config + `docker restart stockbot` on Jetson (5-minute fix)
+- **Deadline**: BEFORE May 22 13:30 UTC market open (~56 hours from now)
+- **Status**: Documented in BLOCKED.md with verification command for auto-resolution check
+
+### ✅ Non-Blocking Issue — WebSocket Connection Limit
+- **Issue**: 14,437 log entries in 24h "connection limit exceeded" errors
+- **Root cause**: Orphaned WebSocket connections from 04:21 UTC restart; Alpaca free-tier connection limit
+- **Status**: Will auto-resolve at May 19 13:30 UTC market open (Alpaca expires orphans)
+- **Sessions**: Falling back to REST API; `{"status":"ok","sessions":2}` confirmed operational
+- **Action**: Monitor only, no intervention needed
+
+### ✅ Deliverables & Documentation
+- **Report created**: `projects/stockbot/jetson-pre-checkpoint-validation-report.md` (1,500+ words, production-ready, committed to master)
+- **Report contents**: Baseline metrics, load-test results, risk assessment, 3-5 optimization recommendations
+- **Confidence rating**: 82% (infrastructure as-is), rises to ~91% after Lever B config fix applied
+- **Next checkpoint protocol**: T-60/T-30/T+0 documented for May 22 execution
+
+### 🔴 Critical Follow-Up Actions Required
+1. **Lever B config activation** (BLOCKING): SSH to Jetson, edit `/opt/stockbot/config/active-sessions-2session.json`, add `"hmm_regime_masking": true` to both session strategy_params, restart Docker
+2. **Deadline**: May 22 before 13:30 UTC market open
+3. **Verify**: `grep hmm_regime_masking /opt/stockbot/config/active-sessions-2session.json` shows `true` for both sessions + `curl http://localhost:8000/api/health` returns healthy
+
+### 📋 Files Updated
+- **PROJECTS.md**: Updated stockbot focus line to document Lever B config gap and critical deadline
+- **BLOCKED.md**: Added new critical block entry with exact fix commands and verification procedure
+- **WORKLOG.md**: This entry
+
+**Status**: Exploration Queue item complete (Pre-Checkpoint Validation DONE). Infrastructure healthy, but critical Lever B configuration gap identified and documented. User action required before May 22 checkpoint execution.
+
+---
+
 ## Session 1311 (Orchestrator: Orientation & Exploration Queue Audit) — May 19 2026, 04:52–05:35 UTC
 
 **Session Status**: ✅ **ORIENTATION COMPLETE — ALL EXECUTABLE EXPLORATION ITEMS VERIFIED COMPLETE; TIMED EVENTS CONFIRMED READY FOR MAY 21-22**

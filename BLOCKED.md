@@ -59,6 +59,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — Lever B HMM configuration not activated (critical pre-checkpoint fix)
+**Date blocked**: 2026-05-19 05:10 UTC (Session 1316)
+**Context**: Pre-checkpoint infrastructure validation (Session 1316) discovered that Lever B HMM regime masking code was deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`), but the config file `/opt/stockbot/config/active-sessions-2session.json` does NOT have `hmm_regime_masking: true` in strategy_params. Result: May 22 checkpoint will execute with Lever A configuration (same as May 19 that already failed with STILL_MISS_B2 outcome), defeating the purpose of Lever B testing. Fix is simple but CRITICAL: activate config + restart Docker before May 22 13:30 UTC market open (~56 hours from now).
+**What I need**: SSH to Jetson and: (1) Edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true` to strategy_params for both AAPL sessions. (2) Run `docker restart stockbot` on Jetson. (3) Verify restart completes and `/api/health` responds with `{"status":"ok","sessions":2}`. See `projects/stockbot/jetson-pre-checkpoint-validation-report.md` for exact fix commands.
+**Verify with**: `ssh -i /home/awank/.ssh/jetson_key ubuntu@100.120.18.84 'curl http://localhost:8000/api/health'` — should return `{"status":"ok","sessions":2}` AND `grep hmm_regime_masking /opt/stockbot/config/active-sessions-2session.json` should show `"hmm_regime_masking": true` for both sessions
+**Resolution**: [leave blank]
+
+---
+
 ## Resolved Archive
 
 ### stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining)
