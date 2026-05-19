@@ -107,6 +107,59 @@
 - **May 19 20:00 UTC** (8.75h): Stockbot checkpoint execution. Playbook pre-built. Decision automation ready.
 - **May 20 evening** (37h): User fills resistance-research signal log (~30 min work required)
 - **May 21 19:00 UTC** (50h): Resistance-research synthesis execution. Framework deterministic, pre-built. Autonomous execution.
+
+---
+
+## Session 1339 — Item 86 (May 19, 2026, 11:45–12:15 UTC)
+
+**Agent**: resistance-research subagent
+
+**Deliverable**: `projects/resistance-research/POST_SYNTHESIS_ANALYSIS_FRAMEWORK.md` (~4,200 words)
+
+**What it covers**:
+- **Section 1 — Synthesis Outcome Classification (4 types)**:
+  - **STRONG**: Substantive engagement from practitioner (STRONG triggers = accelerate D57/D59, user confirmation gate May 25)
+  - **MODERATE**: Score 3+ signal without STRONG threshold. Sequencing: D57 primary (June 10 launch), D59 secondary (July 1). Path-independent D56, D58 proceed.
+  - **WEAK**: Zero signals + confirmed delivery. Triggers remediation before Phase 2. D39 June 1 becomes primary (fastest turn, hardest deadline). D38, D40 follow. D57/D59 deferred to August.
+  - **TOO_EARLY**: Structurally expected silence (law school 5-10 day cycles). No diagnosis until May 25 gate. Path-independent D56 May 28 proceeds.
+- **Section 2 — Phase 2 Priority Sequencing**: Decision tree mapping outcome → domain execution order. D56 May 28 (path-independent), D39 June 1 (path-independent), D57 June 10/15 (outcome-dependent), D59 June 15/July 1 (outcome-dependent). July finish windows specified per outcome. Q3 distribution timing per each domain's advocacy window (UNGA, election, EU AI Act, tribal).
+- **Section 3 — Distribution & Movement Leverage**: How synthesis outcome shapes Phase 1 Batch 2/3 activation. STRONG = broad activation with social proof. MODERATE = targeted by constituency. WEAK = hold Batch 2 until D39 creates signal. Triggers that activate high-priority response (Score 4+ signals, direct asks, Gist spikes, referrals). Movement leverage per outcome-specific contact: litigation orgs if STRONG-Elias, policy shops if STRONG-Weiser, DEA track path-independent.
+- **Section 4 — Success Metrics (5 total)**: Response rate target (≥40% = STRONG), Gist delta (>10 = MODERATE proxy), Score 4+ count, law school response rate (May 28 gate upgrade trigger), hard bounce = 0. 30-day monitoring plan (May 21-25 synthesis window, May 26-31 Batch 2, June 1-15 D39 distribution monitoring, June 16-21 DEA post-deadline check). Dashboard: manual daily check, WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv.
+- **Section 5 — Risk Mitigation**: 4 known unknowns (signal log not pre-filled, Gist view count unavailable, reply during synthesis window, Score 5 override unsigned). 4 fallback protocols (ambiguous Score, forwarded replies, synthesis framework conflicts, email bounces). Signal log validation checks (5 contacts counted, QRP consistency, Gist delta is net not cumulative, delivery issues logged).
+
+**Key decisions surfaced**:
+- May 25 gate is HARD STOP for STRONG path — no D57/D59 pre-production without explicit user confirmation
+- May 28 law school extension is meaningful — Day 10 response window separates expected silence from true non-engagement
+- Delivery self-test REQUIRED for WEAK classification — if spam-folding, fix sender reputation before revising content
+- MODERATE Gist-delta-driven (internal sharing, zero replies) is different outcome than MODERATE reply-driven (Score 3+ reply)
+- Domain 42 DEA track May 28 deadline is path-independent — executes regardless of synthesis outcome
+
+**Why this matters**: May 21 synthesis produces one classification. This framework removes all post-synthesis ambiguity on "what Phase 2 domain launches first, when, and to which audience." Four pre-built paths cover all outcomes. Success metrics are quantitative, not subjective. Monitoring is structured (daily May 21-25, then weekly May 26-June 21). User can read framework + make May 22–25 decisions in <30 minutes.
+
+**Files committed**: `projects/resistance-research/POST_SYNTHESIS_ANALYSIS_FRAMEWORK.md`
+
+---
+
+## Session 1339 — Item 87 (May 19, 2026, 11:45–12:15 UTC)
+
+**Agent**: general-research subagent
+
+**Deliverable**: `projects/cybersecurity-hardening/PHASE_2_DETAILED_IMPLEMENTATION_ROADMAP.md` (~5,200 words)
+
+**What it covers**:
+- **Section 1 — Module-by-Module Execution Plan**: All 7 modules with specific deliverables, prerequisites, timelines (Week-level), effort estimates (hours), and success criteria. Modules 1–2 (threat model + advanced protection) are immediate. Modules 3–7 (playbook deployment, Tier 2/3, threat maintenance, format diversification) gate on Phase 1 adoption data.
+- **Section 2 — Scenario Playbook Deployment Detail**: Each of the 6 completed playbooks (immigration, activist, financial, whistleblower, journalist, DV) with threat model summary, specific Phase 2 techniques, deliverable format, audience requirements, delivery timeline, and validation procedure. DV playbook flagged as requiring NNEDV Safety Net review before any distribution (non-negotiable constraint).
+- **Section 3 — Tier 2/3 Audience Expansion**: Tier 2 pilot cohort named (FPF, EFF, Access Now, GAP, STOP — 5 organizations). Quantitative pilot success metrics (3 of 5 must respond, 1 must provide technical feedback). Tier 3 per-sector customization framing (Georgetown CPT → American Dragnet companion, ACLU SPT → litigation support, AFL-CIO → AI Principles for Workers bridge, UFW/NDWA → direct member protection). Spanish translation roadmap (Part 0 first, bilingual Tier 1 staff partner preferred over contractor). Video primer production approach (FPF/IRE as preferred production partners, scripts as Phase 2 deliverable, production deferred).
+- **Section 4 — Quarterly Review Gates**: Four gates (July 26, September 30, December 31, May 31) with specific quantitative decision criteria. Gate 1: publish threat model update if Tier 1 ≥10% response rate. Gate 2: launch Tier 3 if 25+ Tier 2 orgs contacted + institutional validation. Gate 3: policy brief citation as medium-term success metric; evaluate stewardship transfer if <60 orgs reached. Gate 4: full annual review with 80%+ threat model accuracy threshold.
+- **Section 5 — Threat Model Maintenance**: 5 Phase 2 sentinel vectors defined (Mobile Fortify, Flock Safety, Palantir AIP, Cellebrite Physical Analyzer, Section 702 legislative). Trigger-to-update mapping table per sentinel. Update timeline by trigger category (48 hours, 1 week, 2 weeks).
+- **Section 6 — Phase 1 Integration**: Phase 1 feedback types that directly trigger Phase 2 actions. Beta-tester identification protocol (Score 3+ contacts eligible Week 8, Score 4–5 eligible Week 6). Three specific Phase 1 contacts to approach as Phase 2 beta-testers by Week 10.
+- **Section 7 — Resource Analysis**: Total orchestrator hours revised upward to 164–210 hours (100–150 hour estimate in original scope undercounted ongoing maintenance and format work). Budget estimate: under $500 required costs, $0–8,000 contingent (video production). Two binding external dependencies: NNEDV Safety Net review (DV playbook), nonprofit tax attorney review (financial playbook).
+
+**Key decisions surfaced**:
+- DV playbook has a non-negotiable gate: NNEDV Safety Net Project practitioner review of escalation-risk language. No distribution without this.
+- Financial resistance playbook requires nonprofit tax attorney review before formal Tier 2/3 distribution (can circulate informally via Gist while waiting).
+- Journalist and whistleblower playbooks are pilot-eligible immediately (before Week 7 gate) — these two are the earliest deployment-ready playbooks.
+- Spanish translation should use a bilingual Tier 1 partner, not a professional contractor — cost is $0 and quality is better for the target audience's spoken Spanish register.
 - **May 22 13:30 UTC** (50h): Lever B HMM config activation deadline. SSH blocker active (user action required).
 - **May 22 20:00 UTC** (57h): Stockbot May 22 checkpoint execution. Playbook pre-built.
 - **May 27-29**: Seedwarden pre-launch execution. User follows Item 91-92 checklists (6 hours total).
