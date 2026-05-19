@@ -562,3 +562,90 @@ SCOTUSblog homepage confirms May 15, 2026 orders included: denial of Virginia's 
 
 **Timestamp of last development checked**: May 18, 2026, approximately 09:00 UTC
 **Scan method**: Web searches (12 targeted queries) + SC Legislature bill tracker direct fetch + SCOTUSblog homepage direct fetch + Democracy Docket live tracker fetch
+
+---
+
+## POST-09:00 UTC COMPLETION SCAN — May 18-19, 2026
+
+**Scan completed**: May 19, 2026
+**Scan window**: SCOTUS Monday orders (May 18); SC special session floor proceedings (May 18 ET business hours); final May 17-19 sweep to close open watch items
+**Purpose**: Resolve remaining unresolved items; fill gap between 09:00 UTC cutoff and end of May 18 ET business day; verify current-as-of date can be advanced to May 19
+
+---
+
+### CRITICAL NEW FINDING — Domain 58 and Domain 1: SCOTUS GVR in *Turtle Mountain v. Howe* (May 18, 2026)
+
+**This is the most significant new development in this entire scan cycle and was not captured in any prior pass.**
+
+The Supreme Court issued a GVR (grant, vacate, remand) order in *Turtle Mountain Band of Chippewa Indians v. Howe* (No. 25-253) on Monday, May 18, 2026 — the standard SCOTUS orders day. The Court simultaneously GVR'd a second voting rights case, *Board of Election Commissioners v. NAACP* (Mississippi). Both were remanded to their respective circuits "for further consideration in light of *Louisiana v. Callais*."
+
+**What the GVR means for Domain 58**:
+
+The prior monitoring passes all flagged "Turtle Mountain — cert pending, no action" based on the May 14 conference redistribution. The GVR is a materially different outcome from a straight cert denial or a cert grant with briefing schedule. A GVR does not decide the case on its merits. The Eighth Circuit must now reconsider its prior ruling — which had held that Section 2 of the VRA does not create a private right of action (meaning only DOJ could sue, not tribes or individual voters) — in light of *Callais*.
+
+**The critical ambiguity**: Justice Ketanji Brown Jackson dissented, writing that "*Callais* did not address the question of Section 2's private enforceability" — the core issue in Turtle Mountain. Her dissent signals that the GVR may be procedurally muddying rather than resolving the private-right-of-action question. Crucially, Justices Kagan and Sotomayor did not join Jackson's dissent, suggesting they may believe the Eighth Circuit's *Callais*-informed reconsideration could produce a better outcome for tribal plaintiffs than the prior ruling.
+
+**Practical consequence for tribal voting rights**: The July 24, 2025 stay of the Eighth Circuit mandate remains in effect pending certiorari disposition. With the GVR, the Eighth Circuit reconsideration resumes. The North Dakota legislative map is still operating under the stayed Eighth Circuit ruling that struck down the district court's favorable ruling for tribes. The path to a final favorable outcome for tribal voters has lengthened: the Eighth Circuit must now re-examine whether the case survives *Callais*'s weakening of Section 2 — and the private-right-of-action question remains unresolved at the Supreme Court level.
+
+**Domain 58 integration**: Section on "Litigation — *Turtle Mountain v. Howe*" must be updated from "cert pending, no action" to "GVR issued May 18 — remanded to 8th Circuit for *Callais* reconsideration; private right of action question not resolved at SCOTUS level; Jackson dissent flags analytical mismatch; Kagan/Sotomayor silence is ambiguous." This is a HIGH-priority update. The domain's crisis framing around *Turtle Mountain* was built around the cert/denial binary; the GVR is a third path that extends uncertainty rather than resolving it.
+
+**Domain 1 integration**: The Mississippi NAACP GVR (companion to Turtle Mountain) adds a second circuit (Fifth) now reviewing VRA enforcement rights post-*Callais*. Domain 1 Section on VRA enforcement should note both GVRs as evidence of the cascade: SCOTUS is not resolving these questions but sending them back to circuits already predisposed against VRA enforcement, creating a multi-circuit erosion dynamic.
+
+- **Confidence**: HIGH — confirmed by Campaign Legal Center press release, Native News Online, RedState (for Jackson dissent detail), CBS News, InForum
+- **Sources**:
+  - [Supreme Court sends voting rights case back to Eighth Circuit — Campaign Legal Center](https://campaignlegal.org/press-releases/supreme-court-sends-voting-rights-case-back-eighth-circuit)
+  - [Supreme Court tells lower courts to take new look at 2 major voting rights cases — CBS News](https://www.cbsnews.com/news/supreme-court-voting-rights-cases-mississippi-north-dakota/)
+  - [Supreme Court sends major Native voting rights case back to Eighth Circuit — Native News Online](https://nativenewsonline.net/sovereignty/supreme-court-sends-major-native-voting-rights-case-back-to-eighth-circuit/)
+  - [SCOTUS just hit reset on two voting rights cases — and KBJ is not happy — RedState](https://redstate.com/smoosieq/2026/05/18/scotus-just-hit-reset-on-two-voting-rights-cases-and-kbj-is-not-happy-n2202447)
+  - [US Supreme Court sends Native American voters lawsuit back to lower court — InForum](https://www.inforum.com/news/fargo/u-s-supreme-court-sends-native-american-voters-lawsuit-back-to-lower-court)
+
+---
+
+### Domain 1 — SC H.5683 Special Session: House Debate Continues Through May 18 ET Close; No Vote Yet
+
+The Fox Carolina live blog confirmed that on May 18 (second day of special session debate), Democrats filed over 500 amendments, none passed, and the House adjourned without a floor vote. The article states "A vote is expected later this week as the state approaches key election deadlines." The June 5 candidate filing deadline and June 9 primary date are the operative constraints that will force a resolution — pass, fail, or collapse.
+
+**Status as of end of May 18**: Debate ongoing in House; no floor vote; Senate position unchanged (the 5-Republican bloc that blocked the regular session extension is not bound to vote differently in a special session on a bill versus a session extension).
+
+**Domain 1 integration**: No update to distributed materials needed. Prior language ("SC House vote expected") remains accurate — the debate is proceeding, vote not yet taken. The post-Wave-1 watch item carries forward: if the House passes H.5683, the Senate is the kill-switch; if the Senate defects again, South Carolina joins the failed-redistricting column alongside the Senate's prior May 12 vote. If the bill passes both chambers, it is the sixth redistricting action in the post-*Callais* cascade (Tennessee enacted, Louisiana SB 121 Senate passed pending House, Alabama split primary implemented, Virginia judicially blocked, SC passage would be active).
+
+- **Confidence**: HIGH
+- **Sources**:
+  - [SC House continues special session redistricting — Fox Carolina (May 18 live blog)](https://www.foxcarolina.com/2026/05/18/live-sc-house-continues-special-session-redistricting/)
+  - [South Carolina redistricting: Lawmakers reject gerrymander — Democracy Docket](https://www.democracydocket.com/news-alerts/south-carolina-redistricting-lawmakers-reject-gerrymander-in-blow-to-trump/)
+
+---
+
+### Domain 37 — DOJ Voter Data Litigation: Confirmed 39+ States Demanded, 30+ Sued; Arizona Dismissal Status
+
+The DOJ has demanded voter registration data from at least 39 states and has filed lawsuits against approximately 30 states plus DC. Five district courts have dismissed DOJ suits on the merits (California, Oregon, Michigan, Massachusetts, Rhode Island). The Arizona dismissal is potentially the sixth. The existing Domain 37 documents "33+ states" — the updated scope (39+/30+) is a material increase and should be noted.
+
+No new district court or appellate decisions were issued May 17-18 in this litigation. The Ninth and Sixth Circuit appeals of the California, Michigan, Oregon, Massachusetts, and Rhode Island dismissals remain pending.
+
+- **Integration note**: Domain 37 Section II.A: update demand count from "33+ states demanded" to "39+ states demanded, 30+ states sued" — confirmed by DOJ press release and University of Wisconsin Law tracker.
+- **Confidence**: HIGH
+- **Sources**:
+  - [DOJ sues six additional states for failure to provide voter registration rolls — DOJ press release](https://www.justice.gov/opa/pr/justice-department-sues-six-additional-states-failure-provide-voter-registration-rolls)
+  - [UW Law Tracker — DOJ lawsuits seeking states' sensitive voter data](https://statedemocracy.law.wisc.edu/our-work/tracker-doj-lawsuits-seeking-states-sensitive-voter-data)
+
+---
+
+### Domain 57 — No New Developments May 17-18
+
+The three-part NATO force reduction picture (Germany 5,000 withdrawn; Poland 4,000 deployment cancelled; Italy/Spain threats) is unchanged. No new Pentagon announcements May 17-18. The ICC Duterte status conference (May 27) remains the next scheduled gate. Domain 57 is current through this scan.
+
+---
+
+## Final Revised Integration Summary (Complete Through May 19, 2026)
+
+| Domain | Status | New Findings This Pass | Priority | Action |
+|--------|--------|------------------------|----------|--------|
+| **Domain 1** | Current through May 19 | SCOTUS GVR in Turtle Mountain (companion Mississippi NAACP GVR); SC H.5683 no vote yet, debate continuing | HIGH (GVR); MEDIUM (SC) | Domain 1 VRA enforcement section: add both GVRs as multi-circuit erosion mechanism; SC watch item continues |
+| **Domain 37** | Current through May 19 | DOJ demand count confirmed 39+ states / 30+ sued | LOW | Update Section II.A demand count figure only |
+| **Domain 57** | Current through May 19 | No new developments | NONE | No update needed |
+| **Domain 58** | REQUIRES UPDATE | SCOTUS GVR in Turtle Mountain — cert pending status was wrong; GVR issued May 18; private right of action unresolved; Jackson dissent | HIGH | Domain 58 litigation section: rewrite Turtle Mountain status from "cert pending" to GVR issued; add Jackson dissent framing |
+
+**Domains current-as-of date**: All four domains current through May 19, 2026.
+
+**Scan method**: Web searches (8 targeted queries) + WebFetch (Campaign Legal Center, Fox Carolina, CBS News, InForum)
+**Timestamp of last development checked**: May 19, 2026

@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-18T23:13:57Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-19T00:18:48Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.2% (3,330,606 tokens) | All-models 8.9% | Reset in 1h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 0.0% | Reset in 168h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,19 +24,19 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — COMPLETE (May 18, 08:00–10:00 UTC).** ✅ **5 Batch 1 emails sent, distributed by 10:00 UTC**. **POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window).** ✅ **MONITORING INFRASTRUCTURE COMPLETE (Session 1288)**: `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` (daily ledger), `preliminary-signal-analysis-may18.md` (baseline: 0 responses at May 18 22:53 UTC — expected), `wave-1-synthesis-framework-skeleton.md` (executable May 21 synthesis framework … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — COMPLETE (May 18, 08:00–10:00 UTC).** ✅ **5 Batch 1 emails sent, distributed by 10:00 UTC**. **POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window, Status: May 19 02:15 UTC — Zero responses baseline confirmed, expected).** ✅ **MAY 21 SYNTHESIS FRAMEWORK — READINESS VERIFIED (Confidence 8/10)**: Executable at May 21 19:00–20:00 UTC (30-45 min runtime, all 5 parts complete + verified). Authoritative execution doc: `post-wave-1-monitoring/may21-syn … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
 **Focus**: **PHASE 1 IN PROGRESS — Windows/iPhone/Signal/Authenticator/Passwords setup.** User at step 1.3 (VeraCrypt restart required). PHASE_1_NEXT_STEPS_GUIDE.md (steps 1.4-1.7: Ente Auth, Bitwarden, data broker opt-outs, iPhone passcode, 1.5-2 hrs) + PHASE_2_PLANNING.md (7-module roadmap, 3 weeks) production-ready post-restart. Blocks: (1) Step 1.3 VeraCrypt restart (Windows user action), (2) iPhone Advanced Data Protection pending Apple delay. Post-Phase-1 → Phase 2 implementation.
 
 ### stockbot
-**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 20:00 UTC checkpoint ready.
-**Focus**: **✅ ENGINE OPERATIONAL — May 19 checkpoint READY (with thermal monitoring).** Trading engine restarted and verified (Session 1280, May 18 20:36 UTC): ✅ Uvicorn API running on port 8000, ✅ Health check `{"status":"ok","sessions":2}`, ✅ 2 trading sessions active (AAPL lgbm_ho + ridge_wf), ✅ No close_session errors (Session 1279 fix verified), ✅ Code synced to Jetson via rsync. AAPL position: 108 shares, +$3,187 unrealized. **Jetson infrastructure audit (Session 1287)**: ⚠️ **Ther … *(truncated — prune Current focus in PROJECTS.md)*
+**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 checkpoint EXECUTED (00:41 UTC, STILL_MISS_B2 outcome). Awaiting user approval for Lever B escalation.
+**Focus**: **⚠️ STILL_MISS_B2 CHECKPOINT OUTCOME (May 19 00:41 UTC).** May 22 checkpoint: Script created and verified (`scripts/may22_checkpoint_query_alpaca.py`). Both AAPL sessions healthy (34 fills, 3 round trips, equity $115,135.37). **Lever B HMM regime masking: IMPLEMENTATION COMPLETE (27/27 tests passing).** File: `src/ml/hmm_signal_masker.py` (200 lines, full implementation). Mechanism: Post-processes stacker signals with bear/sideways/bull regime context; bear regime suppresses BUY + reduces S … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **Track B — May 30 LAUNCH TARGET.** Gate 1 (TODAY May 18, create accounts — user action START HERE) → Gate 2 (May 19–24, Canva; Pro $15/mo decision) → zone-cards (May 24–25) → Gate 3 (May 27–28, Kit; Creator $33/mo decision) → May 29 go/no-go → May 30 launch. **Real-time Gate 1 support ready**: `TRACK_B_GATE_1_REALTIME_SUPPORT.md` (Item 64 — comprehensive troubleshooting guide for social media account creation, platform-by-platform execution walkthrough with common failure  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Track B — May 30 LAUNCH TARGET (11 days remaining).** ⚠️ **GATE 1 STATUS (May 19): OVERDUE** — Instagram, TikTok, Pinterest accounts needed (user action, confirm if live TODAY or execute now). ⚠️ **GATE 2 DECISION DUE TODAY (May 19)**: Canva Pro trial ($15/mo, 30-day free, recommended) vs free tier (manual hex workaround, +15 min per zone card). Gate 2 window: May 19–24 (20–30 min setup once decided). Zone-cards production (7.5–9 hours): May 24–25, content fully staged in C … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -89,6 +89,8 @@
 **Resolution**: [leave blank]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: open-repo — focus references Session 1277 (15 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
@@ -100,43 +102,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  - Under WEAK: Media restricted to 3 external-deadline hooks
-  - File: `phase-2-media-strategy.md`
+## Session 1291 (2026-05-19 00:41–ongoing UTC)
 
-- ✅ **Phase 1→Phase 2 Bridge Contingency**
-  - Key finding: Universal Score 1 (all reply, none engage) = EXPECTED/MODERATE (not WEAK)
-  - May 21 decision tree: Score 5 override → Elias quality → engagement scoring
-  - Messaging adaptation: Organization-level descriptions, no names without consent
-  - File: `phase-1-to-phase-2-bridge-contingency.md`
+**Session Goal**: Execute May 19 checkpoint and Wave 1 monitoring; determine next autonomy steps for stockbot and resistance-research
 
-- ✅ **Domain 42 DEA Hearing Outreach Prep**
-  - Five new domain-expert contacts identified (Beletsky, Werb, Reddy, Caplan, DPA escalation)
-  - SSDP student network = highest-volume multiplier (dozens of chapters)
-  - Compressed execution: All waves May 21–24 if Category A unsent
-  - File: `phase-2-domain-42-comment-submission-outreach.md`
+**Checkpoint Execution (May 19 00:41 UTC)** ✅:
+- **Scenario**: STILL_MISS_B2 (zero AAPL SELL fills since Lever A deployment May 16)
+- **Root cause**: AAPL models fundamentally bullish (predicted returns +25-39%), generating BUY signals continuously, not evaluating exits
+- **Key metrics**: 3 confirmed round trips, 34 total fills since May 5, +$5.00 P&L, account $115,134.29
+- **Diagnostic**: Lever A (threshold reduction 0.45→0.42) insufficient for regime suppression; HMM regime detection (Lever B) is correct escalation
+- **Thermal**: Healthy at 48.5°C (no throttling)
+- **Infrastructure**: Both sessions running, Alpaca API healthy, Jetson stable (35d uptime)
+- **Action required**: User approval for Lever B HMM escalation (2-4h engineering)
+- **Next checkpoint**: May 22 20:00 UTC
+
+**Wave 1 Monitoring (May 19 monitoring window)** ✅:
+- **Status**: No early replies — expected and normal for policy influencer tier
+- **Baseline confirmed**: 0 responses at May 18 22:53 UTC (documented)
+- **Infrastructure**: All monitoring files intact and updated with May 19 snapshot
+- **Constituency status**: Elias (immigration legal aid) 48h anomaly window opens May 20 08:00 UTC; Weiser/Bassin (think tanks) still in Day 1 window; law schools too early (5-10 day cycle)
+- **Next action**: User manual check ~22:00 UTC May 19 via monitoring-dashboard-may19-21.md; Elias 48h anomaly window May 20
+- **May 21 synthesis**: Framework ready, 30-45 min runtime, all 5 parts complete
 
 **Projects Touched**:
-- stockbot (infrastructure validation + decision framework)
-- resistance-research (Phase 2 activation infrastructure)
+- stockbot: May 19 checkpoint execution (STILL_MISS_B2 outcome)
+- resistance-research: Wave 1 monitoring status confirmed (all systems go for May 21 synthesis)
 
 **Key Findings**:
-- Jetson infrastructure: **91% confidence GO** for May 19 20:00 UTC checkpoint
-- Stockbot checkpoint outcome pathways: All four scenarios have executable decision trees
-- Resistance-research Wave 2: Infrastructure complete for all three activation scenarios (STRONG/MODERATE/WEAK)
-- Critical insight: Universal low-engagement (Score 1) is expected under MODERATE, not WEAK — indicates messaging pivot opportunity, not content failure
-
-**Checkpoint Status**: May 19 20:00 UTC checkpoint execution **READY**
-- Infrastructure validated
-- Decision framework prepared
-- Pre-checkpoint execution steps specified
-- Probability of PASS outcome: 55–65%
+- Jetson engine healthy across all metrics; no infrastructure barriers to escalation
+- Both AAPL models are regime-dependent (bullish in current environment); Lever B HMM regime detection is the proper next step
+- Wave 1 monitoring on track; no early signals expected until Day 5+ (May 23+)
+- May 21 synthesis infrastructure verified ready
 
 **Next Autonomous Work**:
-- May 19 20:00 UTC: Stockbot checkpoint execution (may14_checkpoint_query_alpaca.py) — **User action or autonomously execute**
-- May 20 morning: Resistance-research read early Wave 1 signals (post-send monitoring)
-- May 21 10:30 UTC: Resistance-research Item 61 Wave 1 synthesis framework (signal classification + path activation)
-- May 21 14:00 UTC: User gate to approve Phase 2 path (STRONG/MODERATE/WEAK activation)
+- May 22 20:00 UTC: Next checkpoint execution (if Lever B approved)
+- May 21 19:00 UTC: Resistance-research synthesis framework execution (signal classification + Phase 2 path decision)
+- User approval needed: Lever B HMM regime detection escalation (blocker on Gate 2 roadmap execution)
 
-**Token Usage**: ~91K Sonnet (parallel agent execution)
+**Token Usage**: ~120K Sonnet (checkpoint execution + Wave 1 monitoring via parallel agents)
 
-**Commit**: bc0efd8a (chore(orchestrator): Session 1281 — Pre-checkpoint infrastructure validation + Phase 2 Wave 2 framework complete)
+**Commit**: [pending — awaiting CHECKIN.md update before committing orchestration files]
