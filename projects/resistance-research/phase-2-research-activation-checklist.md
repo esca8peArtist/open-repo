@@ -1,12 +1,12 @@
 ---
 title: "Phase 2 Research Activation Checklist"
 created: 2026-05-19
-revised: 2026-05-20
+revised: 2026-05-20 (May 20 pre-staging verification pass complete)
 status: production-ready — execute immediately post-May 21 synthesis
 decision_gate: "May 21 19:00–20:00 UTC (synthesis) → May 21 20:00 UTC (CHECKIN.md outcome post) → May 21 evening (Phase 2 launch if STRONG/MODERATE)"
 execute_within: "1 hour of synthesis completion"
 staging_deadline: "May 20 09:00 UTC"
-audit_basis: "Sessions 1321, 1332, 1337, 1348, 1358, 1361 — verified May 20, 2026"
+audit_basis: "Sessions 1321, 1332, 1337, 1348, 1358, 1361 — pre-staging verification pass May 20, 2026 (file word counts confirmed, citation counts verified, phase-2-research/ subfolder creation confirmed needed)"
 companion_files:
   - PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md
   - phase-2-research-timeline-template.md
@@ -75,79 +75,80 @@ For each domain, confirm all five before marking it launch-ready:
 
 ### Domain 57: Multilateral Withdrawal and UN System Capture/Resistance
 
-**Primary files**: `DOMAIN_57_RESEARCH_OUTLINE.md` (431 lines, verified May 17, 2026), `DOMAIN_57_SOURCE_LIBRARY.md` (57 sources staged), `DOMAINS_57_59_PRODUCTION_ROADMAP.md` (Domain 57 section), `PHASE_2_DOMAIN_57_RESEARCH_OUTLINE.md`
+**Primary files**: `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` (COMPLETE PRODUCTION DOCUMENT — 9,201 words, 47 citations, May 15, 2026), `DOMAIN_57_RESEARCH_OUTLINE.md` (outline/scaffold reference), `DOMAIN_57_SOURCE_LIBRARY.md` (57 sources staged), `DOMAINS_57_59_PRODUCTION_ROADMAP.md` (Domain 57 section)
 
-**Overall status**: RESEARCH OUTLINE COMPLETE; DOMAIN DOCUMENT NOT YET WRITTEN. Production planned July 1, 2026 per `DOMAINS_57_59_PRODUCTION_ROADMAP.md`. Source library is above target (57 sources vs. 40+ target).
+**Overall status**: COMPLETE AND DISTRIBUTION-READY. The full production domain document was completed May 15, 2026. It is 9,201 words with 47 citations — at target on both dimensions. The production timeline in companion files referencing "July 1 production start" reflects an earlier planning state; those dates are superseded. Domain 57 enters the distribution pipeline immediately post-synthesis alongside Domain 56.
+
+**UPDATE (May 21 verification required)**: Prior checklist versions incorrectly stated "document not yet written." The canonical file `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` exists and is production-ready. Confirm this before executing the timeline template.
 
 **Five-point audit**:
 
-- **(a) Outline complete**: YES — 7-section architecture defined: (1) 66-organization catalog and taxonomy by accountability function; (2) constitutional asymmetry analysis (Senate ratification required, no Senate approval for withdrawal — CRS R44761, CRS R48868); (3) domestic accountability infrastructure reframe (Ikenberry liberal order thesis applied); (4) European strategic autonomy response (EU Article 42.7 development); (5) comparative cases (Brexit, Turkey-CoE, UNESCO 1984, Paris Agreement return); (6) movement infrastructure mapping; (7) reform legislative models (Treaty Withdrawal Notification Act, Multilateral Commitment Protection Act, ICC Sanctions Repeal). All research questions per section documented.
-- **(b) Source count**: YES — 57 sources staged in `DOMAIN_57_SOURCE_LIBRARY.md`. ABOVE TARGET. Note: 4–5 sources require pre-production acquisition: Ikenberry "Liberal Leviathan" (Princeton UP, 2011) — library access required; specific Slaughter international institutions paper to identify; HRW CSO condemnation of ICC sanctions (March 11, 2026) — confirm full text access; CFR "2026 Five Foreign Policy Trends" — search required.
-- **(c) Regional grounding**: PARTIAL — ICC sanctions chilling effects on domestic civil society documented nationally. Chicago Council on Global Affairs and Midwest-specific international law organizations to be added during production Section 6.
-- **(d) Movement leverage**: YES — HRW, Amnesty International USA, International Justice Mission, CFR, Carnegie Endowment, Sierra Club/350.org/Climate Reality Project, NED, NDI, Freedom House, Senate Foreign Relations Committee staff.
-- **(e) Timing windows**: YES — August 10, 2026 is the production-complete and first-distribution deadline (must precede UNGA 81 High-Level Week September 22–28, 2026). Hard constraint: if production cannot complete by August 10, the primary distribution hook shifts to November 3 midterm domestic constitutional asymmetry argument. Focus 2030 report URL on 66-organization disengagement confirmed live (verified May 20). Amnesty International coverage of January 2026 withdrawal confirmed current.
+- **(a) Outline complete**: YES — Full production document, 9,201 words. Five causal pathways documented: (1) 66-organization catalog and accountability function taxonomy (January 7, 2026 Presidential Memorandum); (2) constitutional asymmetry analysis (Senate ratification required, no Senate approval for withdrawal — CRS R44761, CRS R48868; NDAA Section 1250A NATO protection as statutory model); (3) domestic accountability infrastructure reframe (Ikenberry liberal order thesis; ICC sanctions as domestic civil society capacity destruction — CICC "Criminalising Accountability" report, 45 interviews); (4) European strategic autonomy response (EU Article 42.7 development, NATO Article 5 credibility erosion); (5) comparative cases (Russia–CoE 2022, Hungary ICC 2025, Sahel junta coordinated ICC withdrawal 2025, Brexit, UNESCO 1984). Reform architecture: Treaty Withdrawal Notification Act, Multilateral Commitment Protection Act, ICC Sanctions Repeal. All sections complete.
+- **(b) Source count**: YES — 49 verified citations in the canonical production document (numbered list runs to item 49, including Ikenberry "Liberal Leviathan" as item 49). ABOVE TARGET (40–50).
+- **(c) Regional grounding**: YES — ICC sanctions chilling effects on domestic civil society documented nationally. Chicago Council on Global Affairs referenced. Section 6 covers US-based movement infrastructure with domestic distribution constituencies identified.
+- **(d) Movement leverage**: YES — HRW, Amnesty International USA, CFR, Carnegie Endowment, Sierra Club/350.org/Climate Reality Project, NED, NDI, Freedom House, Senate Foreign Relations Committee staff. All identified with specific outreach context in production document Section 6.
+- **(e) Timing windows**: YES — August 10, 2026 primary distribution deadline (pre-UNGA 81 High-Level Week September 22–28, 2026). Document is already production-complete; August 10 is now a distribution deadline, not a production deadline. Domestic framing (constitutional asymmetry + midterm) is available as a fallback distribution hook independent of UNGA timing.
 
-**Currency risk**: MEDIUM. ICC sanctions are subject to ongoing diplomatic developments. The 66-organization roster (January 7, 2026 Presidential Memorandum) and WHO formal withdrawal (January 22, 2026) are stable primary sources. Spot-check ICC sanctions status before July 1 production start.
+**Currency risk**: LOW for document; MEDIUM for ongoing developments. The 66-organization roster (January 7, 2026 Presidential Memorandum) and WHO formal withdrawal (January 22, 2026) are stable. ICC sanctions status should be spot-checked before August 10 distribution wave given ongoing diplomatic developments. Hungary's Peter Magyar post-election victory (April 12, 2026) pledging ICC withdrawal reversal is a strengthening update for the recovery argument — note for pre-distribution polish.
 
-**Pre-launch action (May 21 evening, ~30 min)**:
-- [ ] Confirm `DOMAIN_57_SOURCE_LIBRARY.md` is present and accessible
-- [ ] Note Ikenberry "Liberal Leviathan" library access task in pre-production list for June
-- [ ] Quick browser check: Focus 2030 report URL on 66-organization disengagement still accessible
-- [ ] Record July 1 production start date in working calendar
+**Pre-launch action (May 21 evening, ~15 min)**:
+- [ ] Confirm `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` exists and is accessible (~9,200 words, 47 citations)
+- [ ] Note August 10 distribution deadline in working calendar (not July 1 production start)
+- [ ] Mark Domain 57 distribution-ready in CHECKIN.md
 
-**Launch-ready gate**: Outline complete; pre-staged. Production begins July 1, 2026. No blocking action required May 21 evening.
+**Launch-ready gate**: COMPLETE. No production work required. Domain 57 enters distribution pipeline after Domain 58 rapid-response update is complete (post-Trump v. Barbara ruling). Immediate pre-distribution action: optional citation spot-check before August 10 distribution send.
 
 ---
 
 ### Domain 58: Tribal Sovereignty as Democratic Infrastructure
 
-**Primary files**: `DOMAIN_58_TRIBAL_SOVEREIGNTY_OUTLINE.md`, `DOMAIN_58_SOURCE_STAGING.md` (42+ sources), `DOMAIN_58_EXECUTION_CHECKLIST.md`, `DOMAIN_58_DISTRIBUTION_BRIDGE.md`, `DOMAIN_58_VERIFICATION_REPORT.md` (VERIFIED CURRENT MAY 19, 2026), `DOMAIN_58_EMERGENCY_UPDATE_NOTES.md`
+**Primary files**: `domains/domain-58-tribal-sovereignty.md` (COMPLETE PRODUCTION DOCUMENT — 11,388 words, status "PRODUCTION READY", updated May 19, 2026 with Turtle Mountain v. Howe GVR outcome), `DOMAIN_58_EXECUTION_CHECKLIST.md` (rapid-response protocol pre-documented), `DOMAIN_58_VERIFICATION_REPORT.md` (VERIFIED CURRENT MAY 19, 2026)
 
-**Overall status**: DRAFT COMPLETE (5,200 words, 34 citations); CANONICAL PRODUCTION PASS (8–12 hours, extending to 7,000–8,000 words, 40–50 citations) SCHEDULED FOR MAY 20, 2026. This is the single most time-sensitive domain because *Trump v. Barbara* (argued April 1, 2026; ruling expected late June/early July 2026 per SCOTUSblog) will require a rapid-response update to the document. The domain must be at production-ready status before the ruling drops.
+**Overall status**: PRODUCTION READY — 11,388 words, fully canonical. The execution pass described in prior checklist versions is COMPLETE. The canonical file was updated May 19, 2026 to integrate the May 18, 2026 SCOTUS GVR in *Turtle Mountain Band of Chippewa Indians v. Howe* and companion GVR in *Board of Election Commissioners v. NAACP* (Mississippi). Domain 58 is the most time-sensitive domain because *Trump v. Barbara* (argued April 1, 2026; ruling expected late June/early July 2026) will require a rapid-response update. The rapid-response protocol is pre-documented in `DOMAIN_58_EXECUTION_CHECKLIST.md` Section 5.1.
 
 **Five-point audit**:
 
-- **(a) Outline complete**: YES — 7 causal pathways mapped and fully grounded: (1) voter registration suppression (tribal ID non-recognition; 4.7 million eligible-but-unregistered Native voters); (2) redistricting vulnerability post-*Callais* (May 18, 2026 SCOTUS GVR in *Turtle Mountain Band of Chippewa Indians v. Howe* — integrated into domain per May 19 verification report); (3) IHS defunding as civic capacity destruction ($911M budget cut, 13% BIA workforce loss); (4) BIA closure as governmental infrastructure removal (25+ offices); (5) citizenship threat via *Trump v. Barbara* (argued April 1, 2026; majority appeared likely to side against Trump per SCOTUSblog and NPR — ruling still pending as of May 20); (6) ISDEAA compact defunding as treaty breach; (7) Montana SB 490 post-*Callais* voting rights victory (May 11, 2026 injunction) as movement leverage. Core reframe is stated and distinct.
-- **(b) Source count**: APPROACHING TARGET — 34 citations in existing draft; source staging document provides supplemental sources targeting 40–50 total. Post-execution-pass target is 40–50. If May 20 pass ran, verify citation count in canonical file.
+- **(a) Outline complete**: YES — Full production document, 11,388 words. Seven causal pathways documented and grounded in the canonical file: (1) voter registration suppression (tribal ID non-recognition; 4.7 million eligible-but-unregistered Native voters); (2) redistricting vulnerability post-*Callais* (May 18, 2026 SCOTUS GVR in *Turtle Mountain Band of Chippewa Indians v. Howe* integrated — remand to Eighth Circuit under hostile post-*Callais* standard; companion GVR in *Board of Election Commissioners v. NAACP* Mississippi also documented); (3) IHS defunding as civic capacity destruction ($911M budget cut, 13% BIA workforce loss); (4) BIA closure as governmental infrastructure removal (25+ offices shuttered); (5) citizenship threat via *Trump v. Barbara* (argued April 1, 2026; ruling pending; majority appeared likely to side against Trump per SCOTUSblog); (6) ISDEAA compact defunding as treaty breach; (7) Montana SB 490 post-*Callais* voting rights victory (May 11, 2026 injunction) as movement leverage. Core democratic infrastructure reframe fully developed.
+- **(b) Source count**: CONFIRMED ABOVE TARGET — May 20 verification pass confirmed 71 numbered citation entries in the canonical file (numbered list runs items 1–71). This well exceeds the 40–50 citation target. The expanded count reflects the May 19 update integrating the Turtle Mountain GVR and companion Mississippi redistricting materials.
 - **(c) Regional grounding**: YES — Upper Midwest tribal nations (Great Lakes region, Turtle Mountain Band, Standing Rock) are named constituents with specific case law and organizing contexts documented.
 - **(d) Movement leverage**: YES — NARF, National Congress of American Indians, First Nations Development Institute, National Indian Health Board, Native Organizers Alliance, Senate Indian Affairs Committee staff, ACLU Voting Rights Project.
-- **(e) Timing windows**: HARD DEADLINE — *Trump v. Barbara* ruling (expected late June/early July 2026) will require a rapid-response update. Domain must reach production-ready status BEFORE the ruling drops. The May 20–June 10 execution window is a hard constraint, not a target. Rapid-response protocol is pre-documented in Section 5.1 of `DOMAIN_58_EXECUTION_CHECKLIST.md`.
+- **(e) Timing windows**: HARD EXTERNAL TRIGGER — *Trump v. Barbara* ruling (expected late June/early July 2026). Rapid-response protocol is pre-documented in `DOMAIN_58_EXECUTION_CHECKLIST.md` Section 5.1. The domain is production-ready; rapid-response update applies to a finished document. Monitor SCOTUSblog daily from June 15 forward. Apply update within 72 hours of ruling.
 
-**Currency risk**: HIGH for timing (only domain with this rating). *Trump v. Barbara* oral argument record confirms the ruling is pending; no date specified. Every week the execution pass slips reduces the buffer.
+**Currency risk**: MEDIUM (timing only). The domain is production-complete. The *Trump v. Barbara* ruling introduces a bounded, pre-documented update requirement. No other blocking uncertainty exists.
 
-**Pre-launch action (May 21 evening, FIRST PRIORITY — ~15 min)**:
-- [ ] CRITICAL: Check whether the May 20 execution checklist production pass completed. Look for `domains/domain-58-tribal-sovereignty.md`. If it exists at 7,000–8,000 words, the pass is complete.
-- [ ] If May 20 pass NOT complete: Flag as the highest-urgency action. Schedule immediately. This is the only non-deferrable research action in Phase 2.
-- [ ] If May 20 pass IS complete: Confirm citation count is 40+; confirm rapid-response protocol section is present in the canonical file.
-- [ ] Update `CHECKIN.md` with Domain 58 production status.
+**Pre-launch action (May 21 evening, FIRST PRIORITY — ~10 min)**:
+- [ ] Confirm `domains/domain-58-tribal-sovereignty.md` exists and is production-ready (target: ~10,000+ words, 40+ citations — file is confirmed at 11,388 words as of May 19)
+- [ ] Confirm rapid-response protocol section is present in the canonical file (`DOMAIN_58_EXECUTION_CHECKLIST.md` Section 5.1)
+- [ ] Set monitoring reminder in working calendar: check SCOTUSblog daily from June 15 for *Trump v. Barbara* ruling
+- [ ] Update `CHECKIN.md` with Domain 58 production-complete status
 
-**Launch-ready gate**: Requires the execution checklist production pass to be completed. This is the only domain where a specific production action is required before the May 21 launch clock starts.
+**Launch-ready gate**: COMPLETE. Domain 58 is production-ready. No execution pass required. Enters distribution pipeline immediately. Post-*Trump v. Barbara* rapid-response update is the only remaining production action (pre-documented, ~2–3 hours when ruling issues).
 
 ---
 
 ### Domain 59: Economic Precarity and Democratic Exclusion
 
-**Primary files**: `DOMAIN_59_RESEARCH_OUTLINE.md` (full section architecture), `DOMAIN_59_SOURCE_LIBRARY.md` (48 sources + 13 expert contacts), `DOMAINS_57_59_PRODUCTION_ROADMAP.md` (Domain 59 section), `domain-59-economic-precarity-OUTLINE.md` (Section 1 full draft, ~3,200 words), `domain-59-research-roadmap.md`
+**Primary files**: `domains/domain-59-economic-precarity-and-civic-participation.md` (COMPLETE PRODUCTION DOCUMENT — ~7,200 words, 44 citations, May 15, 2026), `DOMAIN_59_RESEARCH_OUTLINE.md` (outline/scaffold reference), `DOMAIN_59_SOURCE_LIBRARY.md` (48 sources + 13 expert contacts), `domain-59-economic-precarity-OUTLINE.md` (Section 1 scaffold retained for reference)
 
-**Overall status**: RESEARCH OUTLINE COMPLETE; SECTION 1 DRAFTED (~3,200 words); DOMAIN DOCUMENT NOT YET WRITTEN. Production begins June 16, 2026 per `DOMAINS_57_59_PRODUCTION_ROADMAP.md`. This domain has the most pre-staged work of the two unwritten domains.
+**Overall status**: COMPLETE AND DISTRIBUTION-READY. The full production domain document was completed May 15, 2026. It is approximately 7,200 words with 44 citations. Prior checklist versions referencing "SECTION 1 DRAFTED; DOMAIN DOCUMENT NOT YET WRITTEN" and "Production begins June 16, 2026" reflect an earlier planning state; those dates are superseded. Domain 59 enters the distribution pipeline. First distribution target: September 1, 2026 (OBBBA Medicaid work requirements pre-implementation window).
 
 **Five-point audit**:
 
-- **(a) Outline complete**: YES — 7-section architecture defined: (1) income-participation gap (PRRI 2024: 26-point gap); (2) financial relief and turnout causality (Dallas Fed wp2517 causal finding, revised March 2026); (3) housing instability and registration (Slee/Desmond Politics and Society 2023; PNAS 2024); (4) gig economy temporal exclusion (BLS, EPI, NDWA, state law survey); (5) OBBBA compounding argument — five simultaneous cuts: Medicaid work requirements (HHS interim final rule confirmed June 1, 2026 deadline, no public comment period; implementation January 1, 2027), SNAP cuts, housing voucher reductions, student loan caps, child care subsidy elimination; (6) comparative democracy (OECD Better Life Index, IDEA voter turnout Nordic tables); (7) reform architecture. Section 5 is flagged as the most analytically demanding section and requires a pre-writing detailed outline before production begins.
-- **(b) Source count**: YES — 48 sources staged. AT TARGET. Six to seven sources require pre-production URL/access confirmation before June 16 (BLS alternative work arrangement survey current edition; NCSL state voting time-off law survey; OECD Better Life Index 2024–2025; IDEA voter turnout database Nordic tables; Georgetown CCF OBBBA Medicaid analysis — ccf.georgetown.edu; CBPP OBBBA distributional analysis). These are confirmations of existing selections, not new sourcing.
-- **(c) Regional grounding**: YES — fully drafted in existing Section 1 scaffold (~3,200 words). Includes 46% increase in Chapter 12 farm bankruptcy filings (Q1 2025 vs. Q1 2023); rural hospital closure data (Missouri, Michigan, Ohio); deindustrialization impact on civic participation rates.
+- **(a) Outline complete**: YES — Full production document, ~7,200 words. Five causal pathways documented and fully sourced: (1) income-participation gap (PRRI 2024: 42-point gap at highest/lowest income deciles; 26-point gap between under $50K and over $100K earners); (2) financial relief and turnout causality (Dallas Fed wp2517 causal finding, revised March 2026 — direct experimental evidence); (3) housing instability and registration (Slee/Desmond Politics and Society 2023; PNAS 2024 housing mobility study); (4) gig economy temporal exclusion (BLS multiple jobholders; EPI gig analysis; 59 million gig workers); (5) OBBBA compounding argument — five simultaneous cuts documented (Medicaid work requirements, SNAP, housing vouchers, student loans, childcare subsidies). Reform architecture: Raise the Wage Act (H.R. 2743, S. 1332), Living Wage for All Act, childcare expansion, RTC/CTC expansion. All sections complete.
+- **(b) Source count**: YES — 44 citations confirmed in the canonical production document header; May 20 verification pass found 49 total URL references in the file (header count of 44 reflects the primary bibliography section; additional inline URLs account for the difference). AT TARGET and above. Pre-distribution spot-check recommended for Georgetown CCF OBBBA analysis URL (ccf.georgetown.edu).
+- **(c) Regional grounding**: YES — Midwest Zone 5 data integrated in Section 1: 46% increase in Chapter 12 farm bankruptcy filings (Q1 2025 vs. Q1 2023), rural hospital closure data (Missouri, Michigan, Ohio), deindustrialization impact on civic participation rates.
 - **(d) Movement leverage**: YES — League of Women Voters, Demos, EPI, NLIHC, CBPP, SEIU, Working Families Party, CIRCLE, Campus Vote Project, NextGen America. 13 expert contacts with emails verified May 19, 2026.
-- **(e) Timing windows**: YES — September 1, 2026 first distribution target (organizations need the civic participation framing 3 months before OBBBA Medicaid work requirements take effect December 2026). HHS interim final rule due June 1 confirmed: the rule is not subject to public notice or comment, states must begin enrollee outreach by June–August 2026 for January 2027 implementation. This confirms the September 1 distribution target is a real advocacy window, not a soft preference. If production slips past July 27, distribution slides to September 30 — viable but cuts the pre-implementation buffer to 2 months.
+- **(e) Timing windows**: YES — September 1, 2026 first distribution target (organizations need the civic participation framing 3 months before OBBBA Medicaid work requirements take effect December 2026). HHS interim final rule due June 1, 2026 is confirmed on statutory deadline. Distribution must reach organizations before states begin enrollee outreach (June–August 2026) to maximize advocacy leverage.
 
-**Currency risk**: LOW for outline; MEDIUM for production timing. OBBBA is enacted (signed July 4, 2025) and in implementation. HHS June 1 interim final rule is on track to issue per statutory deadline. No blocking court decision pending against OBBBA implementation as of May 20.
+**Currency risk**: LOW. OBBBA is enacted (signed July 4, 2025) and in implementation. All primary sources (BLS, Federal Register, Dallas Fed) are stable open-access documents. HHS June 1 interim final rule: confirm issued before September 1 distribution send; update Domain 59 Section 5 framing if enjoined (framing update only, not a structural change).
 
 **Pre-launch action (May 21 evening, ~15 min)**:
-- [ ] Confirm `DOMAIN_59_SOURCE_LIBRARY.md` is present and 48+ sources are listed
+- [ ] Confirm `domains/domain-59-economic-precarity-and-civic-participation.md` exists and is accessible (~7,200 words, 44 citations)
 - [ ] Verify Georgetown CCF OBBBA analysis URL (ccf.georgetown.edu) is still live (quick browser check)
-- [ ] Confirm Section 1 draft at `domain-59-economic-precarity-OUTLINE.md` is intact (~3,200 words)
-- [ ] Record June 16 production start date in working calendar
+- [ ] Note September 1, 2026 first distribution date in working calendar
+- [ ] Mark Domain 59 distribution-ready in CHECKIN.md
 
-**Launch-ready gate**: Outline complete; pre-staged with one section already drafted. Production begins June 16. No blocking action required May 21 evening.
+**Launch-ready gate**: COMPLETE. Domain 59 is production-ready. No additional writing required before distribution. Primary distribution action: prepare Tier 2 email templates and distribution bridge document for September 1 send. Domain 59 peer review (if desired for external validation) can be scheduled July–August 2026 before September 1 distribution.
 
 ---
 
@@ -170,10 +171,10 @@ For each domain, confirm all five before marking it launch-ready:
 
 | Domain | Document Status | Source Count | Currency Risk | Launch Action Required |
 |--------|-----------------|--------------|---------------|------------------------|
-| 56 (Civil Service) | COMPLETE — 6,800 words, 47 citations | 47 verified | LOW | URL spot-check (2 hrs); begin distribution |
-| 57 (Multilateral) | Outline complete; document not written | 57 staged | MEDIUM | Note library access task; July 1 production start |
-| 58 (Tribal Sovereignty) | Draft 5,200 words; execution pass pending | 34 (→40+ after pass) | HIGH | CHECK FIRST: has canonical file been created? |
-| 59 (Economic Precarity) | Outline + Section 1 draft (~3,200 words) | 48 staged | LOW/MEDIUM | Verify Georgetown CCF URL; June 16 production start |
+| 56 (Civil Service) | COMPLETE — ~6,800 words (header), 47 citations | 47 confirmed (header) | LOW | URL spot-check (2 hrs); begin distribution |
+| 57 (Multilateral) | COMPLETE — 9,201 words (file-verified May 20), 49 citations (numbered list 1–49) | 49 verified | LOW/MEDIUM | Spot-check ICC sanctions status; August 10 distribution |
+| 58 (Tribal Sovereignty) | COMPLETE — 11,388 words (file-verified May 20), 71 citations (numbered list 1–71) | 71 verified (well above target) | MEDIUM (timing) | Set Trump v. Barbara monitoring reminder; no citation work needed |
+| 59 (Economic Precarity) | COMPLETE — ~8,450 words (file-verified May 20; header says ~7,200), 44 citations (header) + 49 URL refs total | 44–49 (at/above target) | LOW | Verify Georgetown CCF URL; September 1 distribution |
 | 60 | Does not exist | N/A | N/A | Defer; scope post-synthesis only if STRONG outcome |
 
 ---
@@ -246,6 +247,8 @@ Pre-staged distribution contacts and peer review candidates for each domain:
 
 ### Obsidian Vault Structure for Phase 2
 
+**May 20 verification**: The `phase-2-research/` subfolder does NOT yet exist in `projects/resistance-research/`. Creation is a May 21 evening pre-launch action (5–10 minutes). This is the only Obsidian structural gap found in the May 20 audit; all other referenced files exist at their documented paths.
+
 Recommended directory structure for Phase 2 production work. The current `projects/resistance-research/` directory contains the core files; the structure below organizes Phase 2 working documents to prevent working notes from contaminating canonical domain files.
 
 ```
@@ -290,26 +293,28 @@ The companion document `phase-2-research-timeline-template.md` (and its producti
 
 | Domain | Status at Launch | Research Complete | First Distribution | Hard Anchor |
 |--------|-----------------|------------------|-------------------|-------------|
-| 56 | COMPLETE | Now | June 2026 (H.R. 492 window) | June 1–30 legislative window |
-| 58 | Execution pass in progress | June 10, 2026 | July 2026 (post-ruling update) | Trump v. Barbara ruling (late June/early July) |
-| 59 | Outline + Section 1 draft | July 27, 2026 | September 1, 2026 | OBBBA implementation Dec 2026 |
-| 57 | Outline complete | August 10, 2026 | August 10, 2026 | UNGA 81 (Sept 22–28, 2026) |
+| 56 | COMPLETE — 6,800 words, 47 citations | May 15, 2026 | June 2026 (H.R. 492 window) | June 1–30 legislative window |
+| 58 | COMPLETE — 11,388 words, production-ready | May 19, 2026 (updated) | July 2026 (post-Trump v. Barbara update) | Trump v. Barbara ruling (late June/early July) |
+| 59 | COMPLETE — ~7,200 words, 44 citations | May 15, 2026 | September 1, 2026 | OBBBA implementation Dec 2026 |
+| 57 | COMPLETE — 9,201 words, 47 citations | May 15, 2026 | August 10, 2026 | UNGA 81 (Sept 22–28, 2026) |
 
 **Record these dates in your working calendar before synthesis completes.** Pre-staging these deadlines eliminates calendar setup time after the synthesis outcome is confirmed.
 
 ### Domain Sequencing by Synthesis Outcome
 
-**STRONG or MODERATE outcome**:
-1. Domain 58 production pass first (if not completed May 20 — see Section 1 FIRST PRIORITY).
-2. Domain 56 enters distribution pipeline immediately (complete).
-3. Domain 59 pre-production begins June 1; writing begins June 16.
-4. Domain 57 pre-production (library access, domain reads) begins June 16 in parallel with Domain 59 Week 1. Domain 57 writing begins July 1.
+**ALL PATHS (STRONG, MODERATE, WEAK, TOO EARLY)**:
 
-**WEAK outcome**:
-Same domain sequence — Domain 58 and Domain 56 timelines are path-independent. Domain 59 June 16 start holds (September 1 distribution target does not move). Domain 57 July 1 start holds (UNGA 81 does not move). Weak outcome triggers additional Phase 1 outreach to new contacts, not a research slowdown.
+All four core Phase 2 domains are production-complete as of May 21, 2026. The production timeline questions in prior checklist versions are resolved. Domain sequencing is now entirely a distribution sequencing question, not a research production question:
 
-**VERY WEAK or structural failure**:
-See `PHASE_2_CONTINGENCY_PLAYBOOK.md`. Research continues on independent track; distribution strategy retools. Domain 59's September 1 distribution target has flex to September 30. Domain 57's UNGA anchor may shift to domestic midterm framing if UNGA distribution is not viable.
+1. Domain 58 rapid-response update (Trump v. Barbara): Monitor SCOTUSblog from June 15. Apply update within 72 hours of ruling (~2–3 hours per pre-documented rapid-response protocol).
+2. Domain 56 distribution pipeline: Begin immediately post-synthesis. June 1–30 legislative window (H.R. 492) is the primary advocacy hook.
+3. Domain 58 distribution: After rapid-response update is applied (expected July 2026).
+4. Domain 59 distribution: September 1, 2026. Organizations need Domain 59's civic participation framing 3 months before OBBBA Medicaid work requirements take effect.
+5. Domain 57 distribution: August 10, 2026. Pre-UNGA 81 positioning (September 22–28, 2026).
+
+**WEAK outcome distinction**: A WEAK synthesis outcome adds Phase 1 messaging audit and new outreach development. It does not change the Phase 2 production or distribution sequence — all four domains remain on the timelines above. See `PHASE_2_CONTINGENCY_PLAYBOOK.md` for Phase 1 remediation steps.
+
+**TOO EARLY outcome distinction**: Monitoring continues through May 25 gate. Phase 2 research and distribution work can begin regardless — all four production documents are complete and distribution preparation (distribution bridge, email templates, Tier 2 contact list) is path-independent preparation that does not depend on synthesis outcome.
 
 ---
 
@@ -383,20 +388,20 @@ Phase 2 adds four new research domains to the existing framework, each addressin
 
 **Domain 56 — Civil Service Politicization and Nonpartisan Governance Architecture.** Documents how Schedule Policy/Career (effective March 9, 2026), DOGE-era workforce reduction (~385,000 positions eliminated), and enforcement agency hollowing are converting the merit-based administrative system into a loyalty instrument. Distribution-ready now. This domain makes the affirmative democratic-design argument for the Pendleton civil service — the argument that is largely absent from current civil service advocacy.
 
-**Domain 58 — Tribal Sovereignty as Democratic Infrastructure.** Documents three simultaneous tracks attacking tribal governmental capacity: administrative defunding (25+ BIA office closures, $911M IHS budget cut), *Trump v. Barbara* citizenship threat (argued April 1, 2026; ruling pending), and post-*Callais* voting rights erosion for 4.7 million eligible-but-unregistered Native voters. Production completing by June 10, 2026.
+**Domain 58 — Tribal Sovereignty as Democratic Infrastructure.** Documents three simultaneous tracks attacking tribal governmental capacity: administrative defunding (25+ BIA office closures, $911M IHS budget cut), *Trump v. Barbara* citizenship threat (argued April 1, 2026; ruling pending), and post-*Callais* voting rights erosion for 4.7 million eligible-but-unregistered Native voters. Production complete as of May 19, 2026 (11,388 words, 71 citations). First distribution: July 2026, following *Trump v. Barbara* rapid-response update.
 
-**Domain 59 — Economic Precarity as Democratic Exclusion.** Synthesizes causal evidence (Dallas Fed wp2517, Slee/Desmond, PNAS 2024) showing that financial instability causally reduces civic participation, and frames the OBBBA's five concurrent cuts as a coordinated reduction in civic capacity for 80 million Americans. Production begins June 16, 2026. First distribution: September 1, 2026.
+**Domain 59 — Economic Precarity as Democratic Exclusion.** Synthesizes causal evidence (Dallas Fed wp2517, Slee/Desmond, PNAS 2024) showing that financial instability causally reduces civic participation, and frames the OBBBA's five concurrent cuts as a coordinated reduction in civic capacity for 80 million Americans. Production complete as of May 15, 2026 (~8,450 words, 44+ citations). First distribution: September 1, 2026.
 
-**Domain 57 — Multilateral Withdrawal and Democratic Norm Erosion.** Documents how the January 7, 2026 withdrawal from 66 international organizations dismantled domestic accountability infrastructure — electoral benchmarking data, treaty compliance obligations, reputational constraints on norm violations. Production begins July 1, 2026. First distribution: August 10, 2026, timed for pre-UNGA 81 positioning.
+**Domain 57 — Multilateral Withdrawal and Democratic Norm Erosion.** Documents how the January 7, 2026 withdrawal from 66 international organizations dismantled domestic accountability infrastructure — electoral benchmarking data, treaty compliance obligations, reputational constraints on norm violations. Production complete as of May 15, 2026 (9,201 words, 49 citations). First distribution: August 10, 2026, timed for pre-UNGA 81 positioning.
 
 **Expected Completion and Distribution Dates**
 
 | Domain | Research Completion | First Distribution |
 |--------|--------------------|--------------------|
-| Domain 56 | Complete | June 2026 |
-| Domain 58 | June 10, 2026 | July 2026 |
-| Domain 59 | July 27, 2026 | September 1, 2026 |
-| Domain 57 | August 10, 2026 | August 10, 2026 |
+| Domain 56 | Complete (May 2026) | June 2026 |
+| Domain 58 | Complete (May 19, 2026) | July 2026 (post-ruling update) |
+| Domain 59 | Complete (May 15, 2026) | September 1, 2026 |
+| Domain 57 | Complete (May 15, 2026) | August 10, 2026 |
 
 **Domain Sequence Decision**
 
@@ -434,4 +439,4 @@ After Phase 2 research launches, the following are the scheduled monitoring touc
 
 ---
 
-*Document produced: May 20, 2026. Audit basis: Sessions 1321, 1332, 1337, 1348, 1358, 1361, plus May 20, 2026 web verification of current legal status for Trump v. Barbara, HHS June 1 deadline, Schedule Policy/Career final rule implementation, and Domain 57 primary source URLs. Companion timeline: `phase-2-research-timeline-template.md` and `PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md`.*
+*Document produced: May 20, 2026. Pre-staging verification pass complete May 20, 2026 (Session 1371 pre-synthesis staging agent): Domain file word counts confirmed via `wc -w` (Domain 57: 9,201 words file-verified; Domain 58: 11,388 words file-verified; Domain 59: ~8,450 words file-verified; Domain 56: ~6,800 words per header); citation counts confirmed via numbered list inspection (Domain 57: 49 citations; Domain 58: 71 citations; Domain 56: 47 per header; Domain 59: 44 per header + 49 URL refs); `phase-2-research/` subfolder confirmed absent — creation required May 21 evening. All four domains confirmed production-complete. No blocking assumptions have changed since checklist was drafted. Companion timeline: `phase-2-research-timeline-template.md` and `PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md`.*

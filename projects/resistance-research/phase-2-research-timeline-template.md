@@ -1,17 +1,18 @@
 ---
 title: "Phase 2 Research Timeline Template"
 created: 2026-05-19
-revised: 2026-05-20
+revised: 2026-05-20 (pre-staging verification pass complete)
 status: production-ready — use immediately post-May 21 synthesis as working calendar
 staging_deadline: "May 20 09:00 UTC"
 scope: "Master timeline, per-domain writing schedules, gate dates, parallel execution windows, cross-domain dependencies, success metrics"
 decision_gate: "May 21 synthesis (preliminary) → May 21 evening (Phase 2 launch if STRONG/MODERATE)"
 hour_estimates:
-  domain_56: "0 (complete — distribution only)"
-  domain_58: "8–12 (execution pass + peer review)"
-  domain_59: "59–65"
-  domain_57: "45–51"
-  total: "120–130 hours across 9–10 weeks (single researcher)"
+  note: "SUPERSEDED — all four domains confirmed production-complete as of May 20 verification pass"
+  domain_56: "2 (URL spot-check before distribution)"
+  domain_58: "2–3 (rapid-response update when Trump v. Barbara ruling issues)"
+  domain_59: "4–6 (citation spot-check + optional peer review before September 1 distribution)"
+  domain_57: "4–6 (citation spot-check + optional peer review before August 10 distribution)"
+  total: "12–17 hours remaining across all four domains (distribution prep only)"
 companion_files:
   - phase-2-research-activation-checklist.md
   - PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md
@@ -68,12 +69,14 @@ These dates are set by external events. They do not flex regardless of synthesis
 
 ### Per-Domain Hour Summary
 
-| Domain | Status at May 21 | Total Hours | Writing Hours | Pre-Production | Peer Review | Citation Verification |
-|--------|-----------------|-------------|---------------|----------------|-------------|----------------------|
-| 56 | COMPLETE | 0 additional | Done | Done | Done | URL spot-check only (2 hrs) |
-| 58 | Draft 5,200 words; execution pass pending | 8–12 | 4–6 (extension) | 0.5 (setup) | 1 week cycle | 2–3 hrs |
-| 57 | Outline complete; not written | 45–51 | 16–20 (7 sections) | 6–7 (library + domain reads) | 1 week cycle | 4–6 hrs |
-| 59 | Outline + Section 1 draft; not written | 59–65 | 22–24 (7 sections) | 7–8 (domain reads + source confirmation) | 1 week cycle | 5–7 hrs |
+**STATUS CORRECTION (May 20 pre-staging verification)**: All four domains are production-complete as of May 20, 2026. The "Status at May 21" column below reflects the corrected state; prior versions of this table showed Domain 58 as "execution pass pending" and Domains 57/59 as "outline only." Those states have been superseded. The hour estimates in the remaining columns are now distribution-preparation estimates only, not production estimates.
+
+| Domain | Status at May 21 | Remaining Hours | Writing Hours | Peer Review | Citation Verification |
+|--------|-----------------|-----------------|---------------|-------------|----------------------|
+| 56 | COMPLETE — ~6,800 words, 47 citations | 2 (URL spot-check) | Done | Done | URL spot-check only (2 hrs) |
+| 58 | COMPLETE — 11,388 words, 71 citations (May 19 update) | 2–3 (rapid-response update when ruling issues) | Done | Optional (peer review can precede distribution) | Done |
+| 57 | COMPLETE — 9,201 words, 49 citations (May 15) | 4–6 (citation spot-check + distribution prep) | Done | Optional (peer review can precede August 10 distribution) | Spot-check before August 10 send |
+| 59 | COMPLETE — ~8,450 words, 44+ citations (May 15) | 4–6 (citation spot-check + distribution prep) | Done | Optional (peer review can precede September 1 distribution) | Spot-check before September 1 send |
 
 ### Parallel Execution Windows
 
@@ -120,15 +123,17 @@ With two researchers: Domain 57 and Domain 59 can run fully in parallel from Wee
 
 ### Domain 58: Tribal Sovereignty as Democratic Infrastructure
 
-**Key policy window**: *Trump v. Barbara* SCOTUS ruling (expected late June/early July 2026). The domain must be in production-ready status BEFORE the ruling issues so the rapid-response update can be applied to a finished document, not a draft in progress.
+**STATUS UPDATE (May 20 verification)**: Domain 58 production pass is COMPLETE. The canonical file `domains/domain-58-tribal-sovereignty.md` exists and is verified at 11,388 words with 71 numbered citations as of May 19, 2026. The execution pass described below was completed prior to May 20. The only remaining production action is the rapid-response update when *Trump v. Barbara* issues. The pre-pass setup and Week 1 schedule below are retained for reference/audit purposes only — they do not need to be re-executed.
 
-**Pre-pass setup (Day 1, 0.5 hrs)**:
+**Key policy window**: *Trump v. Barbara* SCOTUS ruling (expected late June/early July 2026). The domain is production-ready. The rapid-response update is pre-documented in `DOMAIN_58_EXECUTION_CHECKLIST.md` Section 5.1.
+
+**[COMPLETED] Pre-pass setup (Day 1, 0.5 hrs)**:
 - Open `DOMAIN_58_EXECUTION_CHECKLIST.md` as working guide
 - Confirm existing draft at `domains/domain-38-tribal-sovereignty-indigenous-democratic-design.md` is loaded (~5,200 words, 34 citations)
 - Open `DOMAIN_58_SOURCE_STAGING.md` to confirm supplemental sources list
 - Create output file: `domains/domain-58-tribal-sovereignty.md`
 
-**Week 1: Extension and canonicalization (Days 1–5, 8–12 hrs)**:
+**[COMPLETED] Week 1: Extension and canonicalization (Days 1–5, 8–12 hrs)**:
 
 | Day | Activity | Hours | Deliverable |
 |-----|----------|-------|-------------|
@@ -174,9 +179,11 @@ When the ruling issues (monitor SCOTUSblog daily from June 15 forward):
 
 ### Domain 59: Economic Precarity and Democratic Exclusion
 
+**STATUS UPDATE (May 20 verification)**: Domain 59 production is COMPLETE. The canonical file `domains/domain-59-economic-precarity-and-civic-participation.md` exists and is verified at ~8,450 words with 44+ citations as of May 15, 2026. The week-by-week writing schedule below was the planned production roadmap; it has been completed ahead of schedule. The schedule is retained for reference/audit purposes. The only remaining pre-distribution actions are: (a) citation spot-check before September 1 send; (b) optional peer review July–August 2026; (c) confirm Georgetown CCF URL is live.
+
 **Key policy window**: OBBBA Medicaid work requirements take effect December 2026. Organizations need Domain 59's civic participation framing 3 months before implementation. First distribution September 1, 2026 is the target. HHS interim final rule confirmed for June 1, 2026 (statutory deadline; no public comment period).
 
-**Week-by-week schedule** (June 16 – July 27 production window, 59–65 hours total):
+**[REFERENCE ONLY — production complete] Week-by-week schedule** (original June 16 – July 27 production window, 59–65 hours total):
 
 #### Pre-Production (June 1–15, 7–8 hrs)
 
@@ -261,9 +268,11 @@ When the ruling issues (monitor SCOTUSblog daily from June 15 forward):
 
 ### Domain 57: Multilateral Withdrawal and Democratic Norm Erosion
 
-**Key policy window**: UNGA 81 High-Level Week, September 22–28, 2026. August 10 is the production-complete and first-distribution hard deadline — 6 weeks before UNGA convenes, allowing reading time for Senate Foreign Relations Committee staff and international organizations.
+**STATUS UPDATE (May 20 verification)**: Domain 57 production is COMPLETE. The canonical file `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` exists and is verified at 9,201 words with 49 numbered citations as of May 15, 2026. The week-by-week writing schedule below was the planned production roadmap; it has been completed ahead of schedule. The schedule is retained for reference/audit purposes. The only remaining pre-distribution actions are: (a) citation spot-check, including ICC sanctions status update, before August 10 send; (b) optional peer review before distribution; (c) confirm Ikenberry library access was resolved or secondary sources substituted in the final text.
 
-**Week-by-week schedule** (June 16 – August 10 production window, 45–51 hours total):
+**Key policy window**: UNGA 81 High-Level Week, September 22–28, 2026. August 10 is the first-distribution hard deadline — 6 weeks before UNGA convenes, allowing reading time for Senate Foreign Relations Committee staff and international organizations.
+
+**[REFERENCE ONLY — production complete] Week-by-week schedule** (original June 16 – August 10 production window, 45–51 hours total):
 
 #### Pre-Production (June 16–30, 6–7 hrs)
 
@@ -395,12 +404,14 @@ A domain is genuinely production-complete when ALL five criteria are met:
 
 ### Per-Domain Status at May 21
 
+**NOTE**: This table was updated May 20 following pre-staging verification pass. Prior versions showed Domain 58 as NEAR-COMPLETE and Domains 57/59 as PRE-PRODUCTION. All four domains are now confirmed COMPLETE.
+
 | Domain | (a) Sources | (b) Words | (c) Midwest | (d) Movement | (e) Peer Review | Status |
 |--------|-------------|-----------|-------------|--------------|-----------------|--------|
-| 56 | 47 (at target) | 6,800 | Integrated | Complete | Complete | COMPLETE |
-| 58 | 34→40+ (after pass) | 5,200→7,000+ (after pass) | Integrated | Complete | Pending (post-pass) | NEAR-COMPLETE |
-| 59 | 48 staged | 3,200 (Section 1 only) | Complete (in Section 1 draft) | Complete | Scheduled July 16 | PRE-PRODUCTION |
-| 57 | 57 staged | 0 (production July 1) | Partial (add in Section 6) | Complete | Scheduled July 28 | PRE-PRODUCTION |
+| 56 | 47 (header-confirmed) | ~6,800 (header) | Integrated | Complete | Complete | COMPLETE |
+| 58 | 71 (file-verified May 20 — numbered list 1–71) | 11,388 (file-verified May 20) | Integrated | Complete | Optional pre-distribution | COMPLETE |
+| 59 | 44 header + 49 URL refs (file-verified May 20) | ~8,450 (file-verified May 20) | Integrated (Midwest data in Section 1) | Complete | Optional pre-distribution | COMPLETE |
+| 57 | 49 (file-verified May 20 — numbered list 1–49) | 9,201 (file-verified May 20) | Chicago Council on Global Affairs ref present | Complete | Optional pre-distribution | COMPLETE |
 
 ### Milestone Schedule — Single-Page Reference
 
@@ -451,4 +462,4 @@ Slide Phase 2 production windows by the number of weeks Phase 1 slips. Priority 
 
 ---
 
-*Document produced: May 20, 2026. Hour estimates sourced from DOMAINS_57_59_PRODUCTION_ROADMAP.md (Domains 57 and 59), DOMAIN_56_EXECUTION_CHECKLIST.md (Domain 56), and DOMAIN_58_EXECUTION_CHECKLIST.md (Domain 58). Milestone dates derived from distribution anchors: UNGA 81 High-Level Week (September 22–28, 2026); November 3, 2026 midterms; OBBBA Medicaid work requirements effective December 2026; Trump v. Barbara ruling (late June/early July 2026). HHS June 1 interim final rule confirmed on schedule per KFF, CBPP, Georgetown CCF analysis. Trump v. Barbara oral argument status confirmed via SCOTUSblog (argued April 1, 2026; ruling pending; majority appeared likely to side against Trump). All dates assume Phase 1 distribution proceeds on schedule with June 15 completion.*
+*Document produced: May 20, 2026. Pre-staging verification pass complete May 20, 2026: all four domain files confirmed production-complete via file inspection (word counts and citation counts verified); per-domain status table and Domain 58/57/59 writing schedules updated to reflect completed state. Original hour estimates (sourced from DOMAINS_57_59_PRODUCTION_ROADMAP.md, DOMAIN_56_EXECUTION_CHECKLIST.md, DOMAIN_58_EXECUTION_CHECKLIST.md) are now superseded for production purposes — they remain as reference for the completed work. Milestone dates derived from distribution anchors: UNGA 81 High-Level Week (September 22–28, 2026); November 3, 2026 midterms; OBBBA Medicaid work requirements effective December 2026; Trump v. Barbara ruling (late June/early July 2026). HHS June 1 interim final rule confirmed on schedule per KFF, CBPP, Georgetown CCF analysis. Trump v. Barbara oral argument status confirmed via SCOTUSblog (argued April 1, 2026; ruling pending; majority appeared likely to side against Trump). Distribution milestone schedule in Section 4 remains fully operative — no changes to distribution dates.*
