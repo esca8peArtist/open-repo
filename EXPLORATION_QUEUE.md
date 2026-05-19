@@ -7,6 +7,71 @@
 
 ## Active Items (Session 1324, May 19)
 
+### ✅ Item 23: Stockbot SSH Key Distribution & Authentication Alternatives
+**Status**: COMPLETE (Session 1328, May 19 2026, 08:25 UTC)
+**Priority**: CRITICAL — Unblocks Lever B HMM config fix (May 22 13:30 UTC deadline)
+**Impact**: HIGH — Provides 5 recovery options for user to restore SSH access before May 22 13:30 UTC deadline
+**Deliverable**: `projects/stockbot/SSH_AUTHENTICATION_RECOVERY_GUIDE.md` (3,200+ words, production-ready)
+**Content Summary**:
+  1. **Five recovery options** (ranked by feasibility):
+     - Option 1: Tailscale SSH (2 min, if Tailscale available)
+     - Option 2: Manual key distribution (5 min, most reliable if you can SSH)
+     - Option 3: Serial console recovery (20-30 min, requires USB-C adapter)
+     - Option 4: Passwordless sudo + agent forwarding (not recommended, requires existing sudo)
+     - Option 5: Jetson recovery mode (not recommended, varies by model)
+  2. **Decision tree**: Which option to use based on your access options
+  3. **Detailed step-by-step instructions** for each option (copy-paste ready)
+  4. **Verification commands** to test SSH after fix
+  5. **Next steps**: Exact commands to apply Lever B HMM config fix once SSH works
+  6. **Troubleshooting**: 7 common problems + solutions
+**Key finding**: Option 2 (manual key distribution) is fastest and most reliable if user can SSH with their own credentials
+**Why this matters**: Orchestrator cannot fix SSH and therefore cannot auto-activate Lever B config. This guide enables immediate user fix before May 22 deadline.
+**Status**: Ready for immediate user action
+
+---
+
+### ⏳ Item 24: Seedwarden Social Media Account Setup Requirements
+**Status**: PENDING (Session 1324, May 19 2026, 08:16 UTC)
+**Priority**: HIGH — Unblocks Gate 1 (May 30 launch target, currently OVERDUE)
+**Impact**: MEDIUM — Identifies account setup steps, verification requirements, content policies; enables rapid execution once user decides to create accounts
+**Goal**: Research Instagram, TikTok, Pinterest account setup requirements and platform-specific content policies for Seedwarden Phase 2 launch. Identify fastest path to verified accounts + business features (analytics, linking, cross-posting)
+**Scope**:
+1. **Instagram setup** (30 min): Account creation → Business profile → Verification requirements (ID, phone, email), Features available (Reels, Shopping tags, Analytics), Integration points (Facebook Pages, Linktree, affiliate links)
+2. **TikTok setup** (30 min): Creator Fund eligibility (10K followers required, 100K views/month; unlikely pre-launch), Business account features, analytics access, content policy (plant identification, foraging legality by state)
+3. **Pinterest setup** (30 min): Business account → Rich Pins (product, article), Verification (domain ownership, phone), Analytics, Shopping integration, SEO amplification
+4. **Cross-posting infrastructure** (30 min): Native vs. automation tools (Buffer, Later, Hootsuite), API limitations, content adaptation per platform
+5. **Compliance & risk** (30 min): Content policies (foraging safety, plant identification accuracy, no medical claims), Age-gating for controlled substances (cannabis/poppies), State-by-state legality
+6. **Fastest path implementation** (30 min): Day-by-day setup schedule, which features can wait, which are critical for launch
+**Feasibility**: HIGH — Platform documentation public; no special access required
+**Effort estimate**: 3-3.5 hours
+**Deliverable**: `projects/seedwarden/SOCIAL_MEDIA_ACCOUNT_SETUP_GUIDE.md` (3,500+ words, platform-by-platform setup checklists, verification requirements, content policy highlights, 14-day pre-launch setup timeline, automation recommendations)
+**Why now**: Gate 1 (user action: create social accounts) is overdue as of May 19. May 30 launch is 11 days away. User needs clear setup sequence to unblock this dependency
+**Next Step**: Execute immediately; deliver by May 19 EOD. User can then execute 14-day setup (May 16-29) to be ready for May 30 launch
+**Key finding**: TikTok likely requires existing TikTok community (10K followers) for analytics; Pinterest/Instagram available immediately
+
+---
+
+### ⏳ Item 25: Resistance-research Phase 2 Domain 59 — Economic Precarity Research Architecture
+**Status**: PENDING (Session 1324, May 19 2026, 08:17 UTC)
+**Priority**: HIGH — Enables Phase 2 execution post-May-21-synthesis (candidates identified: Domains 57, 59, 57-59 timeline)
+**Impact**: HIGH — Pre-stages research outline + source list for Q2-Q3 Phase 2 launch; removes research initiation friction
+**Goal**: Draft comprehensive research architecture for Phase 2 Domain 59 (Economic Precarity as Democratic Exclusion Mechanism). Outline causal pathways, movement leverage, source categories, production timeline. Enable immediate research start (June 15 target per PROJECTS.md) if May 21 synthesis is STRONG or MODERATE
+**Scope**:
+1. **Domain framing** (45 min): Economic precarity as structural democratic exclusion (parallel to housing, healthcare, criminal justice); causal pathways: debt (medical, student, payday, credit card) → attention loss → civic disengagement; labor precarity → political vulnerability to clientelism/patronage; income shock → susceptibility to disinformation
+2. **Evidence base research** (60 min): Pew (precarity surveys), APSR (economic voting), Fed Survey of Household Economics (debt/income ratios), WorkingFamilies studies, union density decline research, gig economy political impact literature
+3. **Movement leverage mapping** (45 min): Economic justice organizations (Economic Policy Institute, People's Action, Fight for 15), labor unions (AFL-CIO policy, SEIU), housing advocates (NLCHP), debt advocacy (Student Debt Crisis, RIP Medical Debt), cash assistance advocates (FI.org)
+4. **Causal pathway specificity** (45 min): Student debt → younger voter participation gap; medical debt → healthcare-political-participation link; payday lending → trap cycles and political volatility; gig economy → union density decline → political mobilization capacity loss
+5. **International precedent** (30 min): EU social protection floors (Denmark universal basic income pilots, German co-determination, French SMIC wage standards); UK living wage debate; Canada CERB impact on political engagement
+6. **Phase 2 sequencing** (30 min): Identify interdependencies with Domains 57, 58, 40, 38; determine whether Domain 59 requires Phase 1 completion first or can launch simultaneously
+**Feasibility**: MEDIUM — Research intensive but public sources; requires literature synthesis
+**Effort estimate**: 4-4.5 hours
+**Deliverable**: `projects/resistance-research/PHASE_2_DOMAIN_59_OUTLINE.md` (5,000+ words, causal pathways, 40+ sources organized by pathway, movement contacts, production timeline 50-60 hours, June 15-July 31 execution window)
+**Why now**: May 21 synthesis determines Phase 2 launch. If synthesis is STRONG/MODERATE, Domain 59 (Economic Precarity) is one of three sequenced Phase 2 candidates. Pre-staging research architecture removes initiation friction and enables June 15 research start without delay
+**Next Step**: Execute immediately; deliver by May 19 EOD. On May 21 post-synthesis, if positive, research can begin immediately June 1-15 for July 15 distribution target
+**Key decision**: Does economic precarity domain focus on individual-scale (household debt/labor precarity) or system-scale (inequality drivers)? This determines framing and evidence base.
+
+---
+
 ### ✅ Item 21: systems-resilience Phase 4 — Education Domain Outline & Source Staging
 **Status**: COMPLETE (Session 1324, May 19 2026, 08:08 UTC)
 **Priority**: HIGH — Prepares immediate Phase 4 research launch post-May-21 synthesis (June 1 deadline)
