@@ -1,19 +1,70 @@
-## Since Last Check-in (Session 1347, May 19 15:10 UTC)
+## Since Last Check-in (Session 1347, May 19 15:10–16:15 UTC)
 
-**Session Status**: 🔴 **NO AUTONOMOUS WORK AVAILABLE — ALL TOP PROJECTS BLOCKED**
+**Session Status**: 🔴 **NO AUTONOMOUS WORK AVAILABLE — ALL PROJECTS BLOCKED OR SCHEDULED**
 
-### Session 1347 Assessment
+### Session 1347 Work Completed
 
-**Orientation Summary**:
-- Verified ORCHESTRATOR_STATE.md (generated May 19 15:10 UTC)
-- 3 active blocks remain: stockbot SSH auth (CRITICAL, May 22 deadline), cybersecurity VeraCrypt restart, mfg-farm test print
-- Exploration Queue: 3 items (85, 86, 87) — none immediately actionable:
-  - Item 85: mfg-farm post-test-print (depends on test print execution — blocked)
-  - Item 86: resistance-research post-synthesis analysis (ready May 21 evening)
-  - Item 87: cybersecurity Phase 2 roadmap (ready May 25-27) — **already completed in Session 1345**
-- All other projects: awaiting user decisions, scheduled execution, or preparation-complete status
+**Orientation & Assessment**:
+- Verified ORCHESTRATOR_STATE.md (May 19 15:10 UTC snapshot)
+- Confirmed 3 active blocks (all real, all user-action required): stockbot SSH auth, cybersecurity VeraCrypt, mfg-farm test print
+- Spawned resistance-research agent to assess synthesis readiness and Item 86 status
 
-**Conclusion**: No autonomous work available. All projects either blocked on user action or awaiting scheduled events (May 21 synthesis). Proceeding with state logging and recommendations.
+**Key Findings**:
+1. **May 21 Synthesis Execution**: 
+   - MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md is production-ready (490 lines, deterministic QRP formula)
+   - All 5 synthesis parts verified ready (confirmed Sessions 1333, 1337)
+   - Process: 25–30 minutes, deterministic classification (STRONG/MODERATE/WEAK/TOO_EARLY)
+   - Current signal state (May 19 19:00 UTC): zero email replies (expected at 35h post-send), no hard bounces
+   - Pre-conditions: user fills wave-1-signal-log-may18-21.md May 20-21, Domain 42 Category A email sent May 21
+
+2. **Exploration Queue Item 86 (Post-Synthesis Analysis Framework)**:
+   - POST_SYNTHESIS_ANALYSIS_FRAMEWORK.md already COMPLETE and production-ready (767 lines)
+   - Includes all 5 components needed for Phase 2 research launch
+   - No autonomous work remains on Item 86
+
+3. **Conclusion**: All pre-synthesis preparation complete. No autonomous work available this session.
+   - Next scheduled work: May 21 19:00–20:00 UTC synthesis execution (autonomous, deterministic)
+   - Post-synthesis: Phase 2 research launch (autonomous if synthesis outcome STRONG/MODERATE)
+
+### 🔴 Block Status — **Unchanged (3 Active)**
+
+1. **Stockbot: Lever B HMM Config + SSH Auth** (CRITICAL, May 22 13:30 UTC deadline)
+   - SSH connection to Jetson fails (orchestrator ED25519 key not authorized)
+   - User action: (A) Authorize orchestrator's public key on Jetson, OR (B) SSH manually for 5-min config fix
+   - Comprehensive activation guide + ready-to-deploy config available (LEVER_B_ACTIVATION_GUIDE.md)
+
+2. **Cybersecurity-Hardening: VeraCrypt Restart** (Windows user action)
+   - Phase 1 step 1.3 paused (pre-boot test requires Windows restart)
+   - PHASE_1_NEXT_STEPS_GUIDE.md production-ready for steps 1.4–1.7 post-restart (1.5–2 hrs)
+
+3. **Mfg-Farm: Test Print Execution** (user 3D printing action)
+   - All pre/post-print deliverables 100% complete
+   - Specifications: 0.20mm layer, PLA+, 3 walls, 220–225°C
+   - Target window: May 22–23
+
+### 📅 Critical Timeline — May 20–22
+
+- **May 20 evening**: User fills `wave-1-signal-log-may18-21.md` (5 min, enables May 21 synthesis)
+- **May 21 19:00–20:00 UTC**: Resistance-research synthesis execution (autonomous, 30 min)
+- **May 21 evening**: Phase 2 research launch if synthesis STRONG/MODERATE (autonomous)
+- **May 22 13:30 UTC**: Stockbot Lever B SSH auth DEADLINE (must be fixed before checkpoint)
+- **May 22 20:00 UTC**: Stockbot May 22 checkpoint execution (with Lever B active if fixed)
+
+### 📊 Session Metrics
+
+- **Status**: Orientation + state assessment complete
+- **Autonomous work available**: None (all prep complete, next work scheduled May 21)
+- **Blocks verified**: 3 active, all real, all user-action required
+- **Deliverables this session**: WORKLOG + CHECKIN updates
+
+### ⏭️ Immediate Actions Needed (User)
+
+**CRITICAL (May 22 deadline)**:
+- Stockbot: Fix SSH auth to Jetson (add ED25519 key to authorized_keys OR manually run config fix)
+
+**Required for May 21 synthesis** (May 20-21):
+- Fill wave-1-signal-log-may18-21.md snapshots (May 20 evening + May 21 evening)
+- Confirm Domain 42 Category A email sent May 21
 
 ---
 

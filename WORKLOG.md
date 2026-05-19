@@ -25,9 +25,18 @@
 - **Scheduled autonomous work**: May 21 19:00 UTC resistance-research synthesis execution (deterministic, no orchestrator work needed — user fills signal log May 20)
 - **Awaiting user decisions**: open-repo Phase 5 implementation (roadmaps complete), seedwarden Phase 3 scope (timeline complete)
 
-**Conclusion**: All top-priority projects are blocked on user action or awaiting scheduled events. No autonomous work available. Proceeding with:
-1. Commit current state (no file changes except CHECKIN.md + WORKLOG.md)
-2. Flag critical May 22 deadline (stockbot SSH auth must be resolved)
+**Resistance-Research Deep Assessment** (General-Research Agent):
+- May 21 synthesis execution framework is production-ready (MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md, 490 lines)
+- Item 86 (post-synthesis analysis framework) is ALREADY COMPLETE and production-ready
+- Synthesis process: deterministic QRP formula, 25-30 minutes, all 5 synthesis parts ready
+- Current signal state (May 19 ~19:00 UTC): zero email replies from 5 contacts (expected at 35h post-send), no hard bounces
+- Pre-conditions for May 21: (1) user fills wave-1-signal-log-may18-21.md May 20-21, (2) Domain 42 Category A email sent May 21
+- No autonomous work available this session—all pre-synthesis prep already complete
+
+**Conclusion**: All top-priority projects are blocked on user action or awaiting scheduled events. Only scheduled work available is May 21 19:00 UTC resistance-research synthesis execution. No autonomous work this session. Proceeding with:
+1. Commit current state (orchestration files only—no code changes)
+2. Update CHECKIN.md with synthesis readiness status
+3. Flag two critical deadlines: (A) May 21 synthesis (user signal log fill), (B) May 22 stockbot Lever B SSH auth
 
 ---
 
