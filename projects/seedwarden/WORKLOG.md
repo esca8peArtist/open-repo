@@ -4,6 +4,31 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Scope Decision Matrix — May 19, 2026
+
+**Task**: Exploration Queue item — Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis. Deliver three production-ready files to unblock May 30 scope decision.
+
+**Audit of existing deliverables before writing**:
+
+- `phase-3-medicinal-herbs-critical-path.md` (v4.0, 4,200+ words): EXISTS and complete. Contains full embedded Gantt, critical path chain visualization, hard deadlines table, float analysis, FTC appendix, pre-sprint checklist (Appendix B), and three scope options (A=5-bundle solo, B=5-bundle two writers, C=3-bundle conservative). Self-contained: no external file dependencies. All gate status current (forager cohort 21.3% cleared, native plants conversion 2.24% cleared).
+
+- `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (v1.0): EXISTS and production-ready. Contains per-supplier profiles for all 5 suppliers (Strictly Medicinal Seeds, Prairie Moon, Mountain Rose Herbs, Southern Exposure, Fedco), Goldenseal CITES decision tree, contingency contacts, outreach calendar May 20–June 22, two email templates (supplier inquiry and botanical garden photo permission), and budget tracking table.
+
+**Gap identified**: `phase-3-scope-decision-matrix.md` — MISSING. The task spec requires this as the third deliverable: mapping the four options from `phase-3-product-expansion-roadmap.md` Appendix A (A=Conservative, B=Standard, C=Aggressive, D=Focused Single-Cohort) to the June 22–July 13 execution window with per-option timeline, resources, risk, and revenue impact so the user can select immediately on May 30.
+
+**File created**:
+- `phase-3-scope-decision-matrix.md` (~1,800 words): Four option profiles (A/B/C/D) with explicit decision trigger table, per-option timeline milestone tables, resource requirements, risk level, and revenue target. Decision Record block at bottom for user to fill in on May 30. Cross-referenced to roadmap Appendix A, critical path document, and supplier tracker. Production-ready.
+
+**No image downloads this session** (decision-support document only).
+**No supplier contacts initiated** (outreach calendar already documented in `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md`).
+
+**Completion status**: All three task deliverables are now production-ready and committed to master:
+1. `phase-3-medicinal-herbs-critical-path.md` — critical path + Gantt + options gate (pre-existing v4.0)
+2. `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` — per-supplier tracker + outreach calendar (pre-existing v1.0)
+3. `phase-3-scope-decision-matrix.md` — options A/B/C/D decision matrix (created this session)
+
+---
+
 ## Seedwarden Agent Session — Exploration Queue Item 93: Launch-Week Brand Assets and Content Templates — May 19, 2026
 
 **Task**: Pre-stage launch-week brand assets and content templates for post-launch execution (May 30+).
