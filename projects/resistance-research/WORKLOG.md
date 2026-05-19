@@ -2,6 +2,29 @@
 
 ---
 
+## May 19, 2026 — Domain Updates May 17-18 Final Synthesis Pass
+
+**Status**: COMPLETE
+
+### Task
+Independent research verification of May 17-18, 2026 developments across Domains 1, 37, 57, 58. Confirm existing `domain-updates-may17-18.md` accuracy and surface any missed developments before May 21 synthesis execution.
+
+### Findings
+
+All prior scan findings in `domain-updates-may17-18.md` confirmed accurate. Four supplemental findings added in new "MAY 19 SYNTHESIS PASS" section appended to the file:
+
+1. **Domain 37**: DC Circuit oral argument (May 14) on law firm executive orders — panel skeptical; ruling pending. Adds parallel judicial track to Section IX documentation.
+2. **Domain 1**: *Callais* cascade now confirmed at 17+ sub-congressional levels (county commissions, school boards); Florida enacted aggressively gerrymandered map the same hour *Callais* was handed down.
+3. **Domain 1**: Virginia redistricting concrete electoral consequence — multiple Democratic candidates suspended campaigns post-SCOTUS refusal; surviving 2021 map still favors Dems 6-5 (nuance for House math).
+4. **Domain 57**: Duterte "unfit for trial" filing specifics — court-appointed neurologist did not dispute progressive nature of illness; fresh fitness assessment may be ordered before May 27 status conference; November trial start contingent.
+
+All four domains confirmed production-ready for May 21 synthesis execution.
+
+### File modified
+`projects/resistance-research/domain-updates-may17-18.md` — appended "MAY 19 SYNTHESIS PASS" section (~130 lines)
+
+---
+
 ## May 19, 2026 — Post-Wave-1 Day 1 Signal Check
 
 **Status**: COMPLETE

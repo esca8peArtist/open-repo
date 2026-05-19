@@ -649,3 +649,86 @@ The three-part NATO force reduction picture (Germany 5,000 withdrawn; Poland 4,0
 
 **Scan method**: Web searches (8 targeted queries) + WebFetch (Campaign Legal Center, Fox Carolina, CBS News, InForum)
 **Timestamp of last development checked**: May 19, 2026
+
+---
+
+## MAY 19 SYNTHESIS PASS — Final Verification Before May 21 Synthesis Execution
+
+**Scan completed**: May 19, 2026
+**Purpose**: Independent verification of all prior scan findings; surface any developments from the precise May 17-18 window not captured in earlier passes; confirm integration readiness for May 21 synthesis
+**Method**: 12 targeted web searches across all four domains; direct review of prior scan conclusions against current search results
+
+---
+
+### Verification Summary
+
+All prior scan findings confirmed accurate against independent search verification. The four domains are current through May 19, 2026. No prior finding was contradicted by this verification pass.
+
+---
+
+### Supplemental Findings — Developments Confirmed in This Pass Not Previously Documented
+
+**1. Domain 37 — DC Circuit Oral Argument on Law Firm Executive Orders (May 14; ruling pending)**
+
+The DC Circuit Court of Appeals heard oral arguments on May 14, 2026 in the consolidated cases challenging Trump's executive orders targeting Perkins Coie, WilmerHale, Jenner & Block, and Susman Godfrey. Chief Judge Sri Srinivasan and Judge Cornelia Pillard pressed DOJ counsel on whether the president's rationale — framed as a national security and discretionary determination — could permissibly be applied to groups defined by religion, race, or political affiliation. The panel appeared skeptical. Paul Clement argued for the law firms that the orders "run afoul of the better part of the Bill of Rights."
+
+- **Domain 37 significance**: This is a live appellate proceeding testing the outer boundary of executive retaliation authority against the legal profession. Four lower court judges (Democratic and Republican appointees) had already found the orders unconstitutional on First Amendment grounds. A DC Circuit ruling against the government would be the highest-level judicial repudiation of executive-branch targeting of private legal counsel yet issued. Ruling is pending; no decision issued as of May 19.
+- **Integration note**: Domain 37 Section IX (executive overreach mechanisms) should note the DC Circuit panel's skepticism at oral argument and the pending ruling as a distinct judicial check that may produce a landmark precedent on retaliation authority. This is separate from the voter-roll and election executive order litigation and should be documented as a parallel track.
+- **Confidence**: HIGH — Courthouse News Service, The Hill, Minnesota Lawyer, Above the Law all confirmed May 14 argument date and panel skepticism.
+- **Sources**:
+  - [DC Circuit signals Trump's law firm sanctions likely unlawful — Courthouse News Service](https://www.courthousenews.com/dc-circuit-signals-trumps-law-firm-sanctions-likely-unlawful/)
+  - [Federal appeals court probes Donald Trump's targeting of law firms — The Hill](https://thehill.com/regulation/court-battles/5878383-federal-appeals-court-trump-law/)
+  - [D.C. Circuit questions Trump's executive orders punishing major law firms — Minnesota Lawyer](https://minnlawyer.com/2026/05/14/d-c-circuit-questions-trumps-executive-orders-punishing-major-law-firms/)
+
+**2. Domain 1 — Callais Cascade Now Confirmed at Sub-Congressional Level (NPR May 18)**
+
+NPR published a piece dated May 18, 2026 specifically analyzing *Callais*'s downstream impact at the state and local level. According to that analysis: at least 17 active legal fights over voting maps or election systems for state legislatures, county commissions, and school boards are now directly affected by the *Callais* ruling. Florida enacted an aggressively gerrymandered congressional map the same hour the *Callais* decision was handed down — a pre-positioned legislative response that was already drafted. The NPR piece also noted that the *Callais* shift to an "intentional discrimination" standard makes proving VRA violations "notoriously difficult" at every level of government, not just congressional.
+
+- **Domain 1 significance**: The existing domain documents the *Callais* cascade at the congressional redistricting level (Tennessee, Louisiana, Alabama, Virginia, South Carolina). The NPR reporting confirms the cascade is simultaneously hitting sub-congressional levels — a scale of electoral map disruption that exceeds prior domain documentation. 17 active sub-congressional fights, not yet individually tracked, represent a second tier of VRA enforcement collapse.
+- **Integration note**: Domain 01 Section 8.6 or the *Callais* cascade section should add the sub-congressional scale dimension: 17+ additional active fights at state legislative, county commission, and school board levels. Florida's same-hour map enactment should be documented as the most aggressive immediate state response.
+- **Confidence**: HIGH — NPR May 18 reporting confirmed; Florida legislative action confirmed by multiple outlets at the time of the *Callais* ruling.
+- **Sources**:
+  - [Why the Supreme Court's voting rights ruling could play a big role at the local level — NPR (May 18, 2026)](https://www.npr.org/2026/05/18/nx-s1-5812837/supreme-court-voting-rights-act-state-local-redistricting)
+  - [Supreme Court avoids taking up a fight over VRA enforcement for now — NPR (May 18, 2026)](https://www.npr.org/2026/05/18/nx-s1-5616665/supreme-court-voting-rights-act-private-right)
+
+**3. Domain 1 — Virginia Redistricting: Electoral Consequences Now Documented (Virginia Mercury May 18)**
+
+The Virginia Mercury published a detailed analysis May 18, 2026 documenting the concrete electoral consequences of the SCOTUS rejection of Virginia Democrats' redistricting emergency appeal: multiple Democratic candidates who had launched congressional campaigns in districts that would have existed under the proposed new map abruptly suspended their campaigns over the weekend following the SCOTUS refusal. The article also documents that the current 2021 Virginia map — which the Supreme Court of Virginia's ruling leaves in place — favors Democrats in six of Virginia's 11 congressional districts, meaning the net effect of the redistricting collapse is not a total Democratic wipeout in Virginia but does eliminate the potential 4-seat gain.
+
+- **Domain 1 significance**: This is the concrete downstream electoral consequence of the procedural judicial nullification documented in prior scans. The candidate suspension cascade is a real-world verification that the redistricting loss is operationally significant, not just legal. It also provides a counter-narrative data point: Virginia's existing 2021 map still leans Democratic, which distinguishes Virginia from Louisiana and Alabama where the post-*Callais* maps explicitly reduce minority representation.
+- **Integration note**: Domain 01 Section 8.6 Virginia entry should note that multiple Democratic candidates suspended campaigns following the SCOTUS refusal, and that the surviving 2021 map still favors Democrats 6-5 — important nuance for the overall House math.
+- **Confidence**: HIGH — Virginia Mercury May 18 analysis confirmed.
+- **Source**: [US Supreme Court decision ends Virginia's redistricting fight, reshapes 2026 races — Virginia Mercury (May 18, 2026)](https://virginiamercury.com/2026/05/18/virginias-redistricting-amendment-was-struck-down-whats-next/)
+
+**4. Domain 57 — Duterte "Unfit for Trial" Filing: Specific Cognitive Deficits Documented (May 17)**
+
+The Manila Times published the formal defense filing details on May 17, 2026 (the opening day of the specific May 17-18 window). The 14-page brief filed by Duterte's new defense team led by Peter Haynes invokes Rule 135 and argues the former president has a "progressive neurological condition" with specific documented deficits: memory, executive function, visuospatial skills, and complex reasoning. Critically, a court-appointed neurologist did not dispute the progressive nature of the illness — only the defense's conclusion that it renders Duterte unfit for trial. The defense is requesting Trial Chamber III to conduct a fresh fitness assessment before the May 27 status conference.
+
+- **Domain 57 significance**: The prior scan notes document the defense's fitness claim and the ICC prosecution's November trial proposal. This supplemental finding adds specificity: the court-appointed neurologist's partial concurrence on the progressive nature of the condition creates genuine ambiguity for the Trial Chamber's fitness determination. If the Chamber orders a new fitness assessment, it could delay the November 30 trial start date — which would affect Domain 57's institutional resilience narrative. The May 27 status conference is the gate.
+- **Integration note**: Domain 57 Section 5.5 (institutional resilience) note on the Duterte case should add: (a) court-appointed neurologist did not dispute the progressive nature of the illness; (b) Chamber may order fresh fitness assessment before May 27 conference; (c) if fitness challenge succeeds, November trial start is at risk. This sharpens the uncertainty around Domain 57's "ICC proceeding to trial" narrative.
+- **Confidence**: HIGH — Manila Times May 17 reporting confirmed; Tribune Philippines May 16-17 confirmed same substance.
+- **Sources**:
+  - [Duterte unfit for trial, new defense team claims — Manila Times (May 17, 2026)](https://www.manilatimes.net/2026/05/17/news/duterte-unfit-for-trial-new-defense-team-claims/2345608)
+  - [Duterte's 'failing' health casts pall at ICC — Tribune Philippines (May 17, 2026)](https://tribune.net.ph/2026/05/17/dutertes-failing-health-casts-pall-at-icc)
+
+---
+
+### Domain 58 — No New Developments Confirmed
+
+Tribal sovereignty searches for May 17-18 returned no new court decisions, executive actions, or legislative developments not already documented. The Lumbee Tribe federal recognition (December 2025) is the most recent significant positive development and is outside this window. The SCOTUS GVR in *Turtle Mountain v. Howe* (May 18) remains the dominant Domain 58 development and is fully documented in prior scans.
+
+---
+
+### Final Integration Table — Complete Through May 19 Synthesis Pass
+
+| Domain | Supplemental Finding | Priority | Integration Note |
+|--------|---------------------|----------|-----------------|
+| **Domain 37** | DC Circuit oral argument on law firm EOs (May 14); panel skeptical; ruling pending | MEDIUM | Add to Section IX as parallel judicial check on executive retaliation; track for ruling |
+| **Domain 1** | *Callais* cascade confirmed at 17+ sub-congressional levels (county/school board); Florida enacted map same hour as ruling | HIGH | Add sub-congressional scale dimension to Section 8.6/*Callais* section |
+| **Domain 1** | Virginia redistricting: Democratic campaigns suspended post-SCOTUS refusal; 2021 map still favors Dems 6-5 | MEDIUM | Add to Virginia entry in Section 8.6: concrete electoral consequence + surviving map nuance |
+| **Domain 57** | Duterte fitness filing: court-appointed neurologist partial concurrence; fresh assessment may be ordered before May 27 | MEDIUM | Sharpen Section 5.5 uncertainty: November trial contingent on fitness determination |
+| **Domain 58** | No new developments | NONE | Current as written |
+
+**Scan method**: 12 targeted web searches
+**Timestamp of last development checked**: May 19, 2026, 06:00 UTC (pre-synthesis)
+**Integration status**: All four domains confirmed production-ready for May 21 synthesis execution
