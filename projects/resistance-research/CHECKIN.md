@@ -1,6 +1,88 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 19, 2026 — Session 1333 synthesis readiness validation complete*
+*Updated: May 19, 2026 — Session 1337 breaking developments scan + May 21 synthesis prep complete*
+
+---
+
+## SESSION 1337 STATUS — May 19, 2026
+
+**Tasks completed this session**:
+1. Breaking developments scan: All 5 Domain 42 categories + general domains 1-43. Findings written to `breaking-developments-may19-supplement.md`.
+2. May 21 synthesis readiness: All 5 synthesis parts confirmed present and production-ready (see verification below).
+3. May 21 execution checklist: Prepared for user (see "May 21 Synthesis Execution Brief" section below).
+
+**Key new finding (Category A / Domain 42)**: The FY2027 CJS anti-rescheduling rider (Section 591, 8-6 committee vote) has a documented precedent of being stripped in bicameral negotiations. The FY2026 final spending deal dropped the equivalent rider entirely. The May 28 DEA electronic deadline is still operative and unchanged. Risk level for rider: real but historically managed in conference — not a guaranteed block. Update Domain 42 risk section before distribution.
+
+**Key new finding (Category B / Domain 37)**: Common Cause/ACLU/Protect Democracy filed an April 21, 2026 lawsuit specifically targeting the SAVE-program cross-match mechanism — a distinct legal theory from the Nichols case. 12 states have voluntarily complied with DOJ data demands. Add to Domain 37 Section V.
+
+**Key new finding (Category B / ICE detention)**: Maryland AG filed a separate FOIA civil rights enforcement suit against ICE for the Baltimore facility — distinct from the Williamsport warehouse NEPA case. Add to litigation tracker as new entry.
+
+**No changes to Phase 1 execution timelines from May 19 developments.** The Nichols ruling (still pending), Abrego Garcia ruling (still overdue), and *Trump v. Barbara* (end of June) remain the three highest-priority pending items.
+
+---
+
+## May 21 Synthesis Execution Brief
+
+**Execute at**: May 21, 19:00–20:00 UTC  
+**Authoritative execution document**: `post-wave-1-monitoring/may21-synthesis-execution-checklist.md`  
+**All synthesis parts confirmed present and production-ready** (verified May 19, 2026)
+
+### Input Requirements (what you need before starting)
+
+1. **Inbox count**: Check your email (wanka95@gmail.com) for any replies from the 5 Batch 1 contacts (Weiser, Elias, Goodman, Chenoweth, Bassin). Log any replies in `post-wave-1-monitoring/wave-1-signal-log-may18-21.md`.
+2. **OOO/bounce count**: Log any auto-replies or hard bounces in the signal log.
+3. **Gist view counts**: Check each Gist URL in incognito browser. Record the delta since H+0 (May 18, ~08:00 UTC) in the signal log's May 21 snapshot section.
+4. All three inputs go into the signal log before running the synthesis checklist.
+
+### Sequence of Operations (May 21, 19:00 UTC)
+
+**Step 1** (19:00–19:08): Read `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` — all rows in the signal log table, all three daily snapshots (May 19, 20, 21). Check inbox for any unlogged replies; score and log them now.
+
+**Step 2** (19:08–19:16): Fill the contact response summary table in `post-wave-1-monitoring/may21-synthesis-execution-checklist.md` (the [FILL] fields). Compute aggregate metrics: total sent (5), bounces, OOOs, adjusted send count, quality reply points, Gist bonus.
+
+**Step 3** (19:16–19:22): Run the classification logic (Steps 5-8 in the checklist). Stop at first match:
+- STRONG: Quality Reply Points >= 2 AND response rate >= 40%, OR any Score 5 override
+- MODERATE: >= 1 Quality Reply Point OR Gist delta > 10
+- WEAK: < 1 QRP AND response rate < 20% AND Gist delta <= 5 (run delivery check first)
+- TOO EARLY: Zero replies AND zero Gist delta AND no bounces (law school window not closed)
+
+**Step 4** (19:22–19:26): Select path from `post-wave-1-monitoring/phase-2-path-activation-summary.md`.
+
+**Step 5** (19:26–20:00): Post CHECKIN.md entry using the template in Step 10 of the execution checklist. Fill all [FILL] fields. Post by 20:00 UTC.
+
+### Output Artifacts
+
+- CHECKIN.md: New synthesis entry posted (from execution checklist Step 10 template)
+- `post-wave-1-monitoring/wave-1-signal-log-may18-21.md`: May 21 72-hour synthesis snapshot section filled
+- `post-wave-1-monitoring/preliminary-signal-analysis-may18.md`: May 21 row filled in Update Log (Section 6)
+
+### Validation Steps
+
+- [ ] All 5 Batch 1 contacts have a row in the contact response summary (even if Score 0)
+- [ ] Aggregate metrics table is complete (no [FILL] fields remaining)
+- [ ] Classification box is checked (exactly one of STRONG/MODERATE/WEAK/TOO EARLY)
+- [ ] Path is selected and written in the CHECKIN.md post
+- [ ] Domain 42 DEA deadline reminder included in CHECKIN.md post
+
+### Classification Framework
+
+| Classification | Condition | Phase 2 Path |
+|---|---|---|
+| STRONG | QRP >= 2 + response rate >= 40%, OR Score 5 override | June 15 parallel D57+D59 launch; user approval required before pre-production |
+| MODERATE | QRP >= 1 OR Gist delta > 10 | Standard Phase 2 timeline; D57 PRIMARY June 10, D59 SECONDARY July 1 |
+| WEAK | QRP < 1 + response rate < 20% + Gist delta <= 5 (delivery confirmed) | D39 June 1 non-negotiable; D57/D59 deferred; messaging audit |
+| TOO EARLY | Zero signals, no bounces | Hold; continue monitoring; classify at May 25 |
+
+**Note on law schools (Goodman, Chenoweth)**: These two contacts are classified TOO EARLY regardless of signal status at 72h. Their structural response window is Day 5–10 (May 23–28). Do not let their silence push the overall classification to WEAK. The overall classification is driven by Weiser, Bassin (think tanks), and Elias (immigration legal aid).
+
+### User Action Deadlines
+
+| Deadline | Action | Urgency |
+|----------|--------|---------|
+| May 20 evening (today/tomorrow) | Fill May 20 snapshot in signal log | Required for synthesis data |
+| May 21 before 10:30 UTC | Final inbox + Gist check; fill May 21 pre-synthesis fields | Required |
+| May 21, 19:00–20:00 UTC | Execute synthesis and post CHECKIN.md | Required |
+| May 24, 11:59 pm ET | Domain 42 DEA electronic filing deadline | Hard deadline — path-independent |
 
 ---
 
