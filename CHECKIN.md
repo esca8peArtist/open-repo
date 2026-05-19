@@ -1,3 +1,40 @@
+## Since Last Check-in (Session 1363, May 19 20:49–21:15 UTC)
+
+**Session Status**: 🟢 **COMPLETED — MAY 21-22 AUTONOMOUS CHECKPOINT READINESS VERIFIED**
+
+### Work Completed
+- ✅ **May 21 synthesis readiness verified**: All 5 synthesis infrastructure components (signal log, execution checklist, analysis framework, Phase 2 activation checklists) audited and confirmed production-ready for May 21 19:00 UTC autonomous execution
+- ✅ **May 22 checkpoint readiness verified**: Checkpoint query script and post-checkpoint decision architecture audited and confirmed production-ready for May 22 20:00 UTC autonomous execution
+- ✅ **Open-repo Phase 5 Candidate 1 documentation committed**: 3 verification documents from Sessions 1353–1358 now committed to master (commit 3e095d56)
+- ✅ **Systems-resilience Phase 4 verified complete**: Framework complete and committed; awaiting June 1 user Phase 5 decision
+- ✅ **Exploration Queue audit**: All items 85–90 complete; items 76–81 staged for post-May-22 activation
+
+### Critical Items Requiring User Action
+1. 🔴 **TODAY/May 20**: SSH key authorization for Jetson Lever B activation (deadline May 22 13:30 UTC — less than 15 hours)
+   - User must either: (A) Add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run 5-minute Lever B config fix
+   - Orchestrator cannot resolve this block
+   - See BLOCKED.md for detailed recovery options and verification commands
+
+2. **May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshot sections with signal monitoring data (required for May 21 19:00 UTC synthesis execution)
+
+3. **May 21 evening**: Review synthesis outcome; if STRONG/MODERATE, activate Phase 2 research launch immediately (all infrastructure ready)
+
+### Project Status Snapshot
+- **Resistance-research**: May 21 synthesis ready to execute autonomously (19:00–20:00 UTC); Phase 2 activation checklist prepared
+- **Stockbot**: May 22 checkpoint ready to execute autonomously (20:00 UTC); SSH auth blocker unresolved (deadline 13:30 UTC)
+- **Systems-resilience**: Phase 4 framework complete; awaiting June 1 user decision for Phase 5 implementation path
+- **Open-repo**: Phase 5 Candidate 1 verification complete; ready for May 25–26 user approval
+- **Seedwarden**: May 30 Phase 2 launch ready; Phase 3 scope decision needed May 25–30
+- **All others**: Awaiting user actions (cybersecurity Phase 1 VeraCrypt restart, mfg-farm test print, etc.)
+
+### Next Autonomous Work (May 21–23)
+1. **May 21 19:00–20:00 UTC**: Resistance-research synthesis execution (autonomous)
+2. **May 21 evening**: Post-synthesis analysis and Phase 2 activation (if outcome allows)
+3. **May 22 20:00 UTC**: Stockbot checkpoint execution (autonomous)
+4. **May 23+**: Route Exploration Queue items 76–81 based on May 21-22 outcomes
+
+---
+
 ## Since Last Check-in (Session 1362, May 19 21:30–22:00+ UTC)
 
 **Session Status**: 🟢 **COMPLETED — PHASE 4 PLANNING FRAMEWORK COMMITTED, PROJECTS.MD SYNCHRONIZED**
