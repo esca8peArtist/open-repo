@@ -2,6 +2,41 @@
 
 ---
 
+## May 19, 2026 — Session 1361 (General Research Agent) — Phase 2 Research Activation Checklist & Timeline (Production Version)
+
+**Status**: COMPLETE — Both uppercase files rewritten with full production depth for May 21 post-synthesis launch
+
+**Deliverables** (2 files, ~5,000+ words combined):
+
+1. **`PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md`** (5 sections + appendix, ~2,800 words):
+   - Section 1: Domain audit (Domains 56–59 + Domain 60 determination) with 5-point audit criteria and domain-specific pre-launch actions; summary readiness matrix
+   - Section 2: Source library organization (per-domain access status), expert contact lists (distribution + peer review roles), API key audit (zero required), Obsidian vault structure, git write access verification
+   - Section 3: Per-domain writing pace expectations (hours breakdown for each domain), peer review protocol, revision loop architecture, publication staging timeline
+   - Section 4: Blocking assumptions audit (per-domain + cross-domain + outcome-specific adjustments for STRONG/MODERATE/WEAK/failure paths)
+   - Section 5: Phase 2 research kick-off email template (copy-paste with [BRACKETED] placeholders, two-audience version)
+   - Appendix: Pre-launch file verification checklist (line-item file check for all four domains)
+
+2. **`PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md`** (4 sections + appendix, ~2,400 words):
+   - Section 1: Master timeline summary (4-phase execution overview, hard constraint list, soft constraint list, 3 parallel execution windows)
+   - Section 2: Per-domain writing schedules with week-by-week tables — Domain 56 (distribution only), Domain 58 (execution pass + peer review), Domain 59 (June 16 – July 27 full production, 5-week calendar), Domain 57 (June 16 – August 10 full production, 5-week calendar)
+   - Section 3: Cross-domain dependencies (D59→D31/47/50; D57→D23/28; D58→D37b; sequencing priority rules; 3 shared sources identified)
+   - Section 4: Success metrics and gate criteria (5-point completion criteria per domain; per-domain status at May 21; weekly checkpoint protocol; monthly synthesis template June/July/August; Tier 2 readiness gate; 7 red-line escalation conditions)
+   - Appendix: Hour estimate reference table
+
+**Key findings (Session 1361)**:
+- Domain 56: Complete (6,800 words, 47 citations); requires only URL spot-check before distribution
+- Domain 57: Outline complete (57 sources staged); production July 1 – August 10; August 10 UNGA constraint hard
+- Domain 58: FIRST PRIORITY — execution pass (May 20) must complete before *Trump v. Barbara* ruling; check canonical file existence on May 21 before any other action
+- Domain 59: Outline + Section 1 draft complete (48 sources); production June 16 – July 27; September 1 distribution target
+- Domain 60: Does not exist; defer to post-synthesis scope if warranted
+- Zero API keys required; all Phase 2 sources are open-access or library-accessible
+
+**Why these replace the prior uppercase versions**: The prior uppercase `PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md` and `PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md` (Session 1351) were shorter template-format documents (2,200 + 2,600 words). The Session 1361 versions are production-depth replacements with full domain-specific detail grounded in the Session 1358 verification audit. Both the lowercase substantive versions (Session 1348) and these uppercase versions now exist; the lowercase versions remain as the deep-analysis companion documents.
+
+**Next action**: May 21 synthesis → user reads outcome → executes `PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md` Section 1 (Domain 58 check first) → Phase 2 research launches same evening.
+
+---
+
 ## May 19, 2026 — Session 1351 (Orchestrator) — Phase 2 Research Activation Checklist (Item 88)
 
 **Status**: COMPLETE — Phase 2 research infrastructure production-ready for May 21 post-synthesis launch
