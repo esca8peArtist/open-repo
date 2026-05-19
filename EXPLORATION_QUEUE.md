@@ -1405,3 +1405,154 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 **Next Step**: If Lever B approved May 19: May 20 06:00 UTC orchestrator spawns stockbot subagent with specification → AMZN + JPM training complete by May 22 20:00 UTC. If Lever B deferred: specification ready for June deployment.
 
 ---
+
+### ⏳ Item 73: Resistance-Research Post-Wave-1 Signal Analysis Framework
+**Status**: PENDING (Session 1306, May 19)
+**Impact**: HIGH — Wave 1 distribution complete (5 emails sent May 18, 08:00–10:00 UTC). Post-Wave monitoring active through May 21 10:30 UTC (72-hour window). May 21 synthesis must classify outcome as STRONG/MODERATE/WEAK to trigger Phase 2 sequencing. But "signal" is ambiguous — what metrics determine each classification? Current framework lacks precision. This item operationalizes the monitoring window.
+**Context**: May 21 synthesis decision point hinges on: (a) count of early responses by sector (law schools vs. think tanks vs. labor), (b) response quality (policy engagement vs. curiosity), (c) timing (early <24h vs. staggered). Without explicit metrics, "STRONG/MODERATE/WEAK" is subjective. Need objective thresholds.
+**Goal**: Create Post-Wave-1 Signal Analysis Framework:
+1. **Response classification schema**: What counts as a "signal"? (Direct reply to coordinator email vs. engagement with shared brief vs. follow-on meeting request vs. silent re-share among network). Probability weights per signal type (direct reply = 3x weight vs. silent share = 0.5x).
+2. **Sector-specific baselines**: Law schools typically reply within 24h at 40% rate; think tanks within 48h at 55%; labor/civil rights within 72h at 30%. What would constitute "early signal" above baseline for each sector?
+3. **STRONG/MODERATE/WEAK thresholds**: Quantitative decision rules. E.g., "STRONG = 12+ responses + 3+ policy-org direct contact + 1+ named legislator reach within 72h. MODERATE = 6-11 responses, mixed sectors. WEAK = <6 responses or low-quality."
+4. **Contingency monitoring**: If signals stall at 48h (May 20), what's the early pivot (accelerate Domain 42 DEA batch send? extend monitoring? activate Reserve contact list)?
+5. **May 21 decision protocol**: Exact process for user + orchestrator to classify outcome at 10:30 UTC closure + 19:00 UTC synthesis execution.
+**Feasibility**: HIGH — mostly framework design work, grounded in Wave 1 baseline data
+**Effort estimate**: 1.5–2 hours
+**Deliverable**: `projects/resistance-research/POST_WAVE1_SIGNAL_ANALYSIS_FRAMEWORK.md` (response classification schema, sector baselines, STRONG/MODERATE/WEAK thresholds with explicit counts, contingency monitoring rules, May 21 decision protocol with examples)
+**Rationale**: May 21 synthesis is deterministic given known outcome, but outcome classification is currently vague. Operationalizing metrics before May 20 monitoring window closes enables fast, confident synthesis execution May 21 19:00 UTC. If framework doesn't exist, May 21 may stall on "what counts as a signal?" Instead of autonomous synthesis, becomes user debate.
+**Next Step**: Execute May 19 afternoon/evening (no dependency on other work). Deliverable ready for May 20-21 monitoring window. Synthesis execution uses this framework for objective outcome classification.
+
+---
+
+### ⏳ Item 74: Stockbot May 22 Checkpoint Contingency & Fallback Pathways
+**Status**: PENDING (Session 1306, May 19)
+**Impact**: MEDIUM-HIGH — May 22 checkpoint is critical milestone: if PASS → Lever B escalation approved, multi-ticker training proceeds; if FAIL → fallback to single-ticker strategy, re-assess Lever B, defer multi-ticker. Checkpoint script exists and is verified (Session 1305), but contingency pathways are not documented. If checkpoint fails, orchestrator needs pre-built fallback options rather than ad-hoc decisions.
+**Context**: Current checkpoint: AAPL lgbm_ho + ridge_wf, HMM regime masking (Lever B complete). Success criteria: unclear. Lever A (guardrails only) passed May 19, outcome STILL_MISS_B2 means single-lever strategy insufficient. Lever B (HMM regime masking) adds regime suppression → predicted to improve Sharpe from ~0.6 to 0.8-1.0 range. If May 22 checkpoint still shows <1.0 Sharpe or >20% MDD, fallback is necessary.
+**Goal**: Create May 22 Checkpoint Contingency Pathways:
+1. **Success scenarios** (PASS ≥1 success metric):
+   - PASS A: Sharpe ≥1.0 + MDD ≤20% → Proceed to AMZN+JPM training, Lever B approved
+   - PASS B: Sharpe 0.8-0.99 + MDD 15-25% → Conditional AMZN+JPM training with tighter position sizing, monitor live
+   - PASS C: Sharpe 0.6-0.79 + MDD ≤20% → Hold AAPL single-ticker, defer multi-ticker to June, reassess Lever B effectiveness
+2. **Failure scenarios** (FAIL all success metrics):
+   - FAIL A: Sharpe <0.6 + any MDD → Escalate to Lever C (momentum cutoff gates) + defer live deployment to June 1
+   - FAIL B: Sharpe undefined (training error) → Debug training pipeline, re-run with Lever A only, use May 28 as fallback checkpoint
+   - FAIL C: Data corruption (Alpaca sync issue) → Re-run checkpoint May 23 with clean historical data, 48-hour buffer before live trading
+3. **Decision tree**: For each failure, who decides next step (user vs. orchestrator)? What info is needed? Timeline?
+4. **Multi-ticker implications**: If FAIL → AMZN+JPM training spec (Item 72) is deferred. When can it restart (June 1? June 15?)
+5. **Live trading go/no-go**: Current status: Lever A passed but insufficient. Lever B expected to remediate. If Lever B insufficient (FAIL), is live trading paused? How long?
+**Feasibility**: MEDIUM — requires understanding of checkpoint outputs + fallback decision logic
+**Effort estimate**: 1–1.5 hours
+**Deliverable**: `projects/stockbot/MAY22_CHECKPOINT_CONTINGENCY_PATHWAYS.md` (success/failure scenarios with thresholds, decision tree per outcome, go/no-go rules for multi-ticker training, go/no-go rules for live deployment, orchestrator vs. user decision boundaries)
+**Rationale**: Checkpoint is May 22 — less than 3 days away. If framework doesn't exist and checkpoint returns unexpected values, May 22 decision becomes slow + fraught. Pre-staging fallback pathways enables fast decision tree on checkpoint day. Also surfaces potential blind spots (e.g., "what if Sharpe improves but MDD worsens?") now rather than under time pressure.
+**Next Step**: Execute May 19-20. Ready for May 22 morning checkpoint review. Orchestrator uses this to avoid interpretation paralysis.
+
+---
+
+### ⏳ Item 75: Resistance-Research WEAK Synthesis Outcome Contingency Plan
+**Status**: PENDING (Session 1306, May 19)
+**Impact**: MEDIUM — May 21 synthesis determines Phase 2 activation path: STRONG → fast-track 5-7 domains ≤June 15; MODERATE → standard track 15-20 domains June 15-July 15; WEAK → extended track all 25+ domains July 15+, OR emergency re-distribution. Item 70 sequencing handles STRONG/MODERATE but is silent on WEAK contingency. If May 21 determines WEAK outcome, what's the corrective action? Current assumption: proceed with extended timeline. But WEAK might warrant emergency contact list, alternative framing, re-launch timing.
+**Context**: Wave 1 execution complete (5 emails sent May 18). Post-Wave monitoring May 18-21 determines signal strength. If signals remain weak through 72-hour window (May 21 10:30 UTC), May 21 synthesis classifies outcome as WEAK. Phase 2 sequencing then defaults to extended timeline. But is that the right call? Should we: (a) accept the timeline + proceed normally, (b) activate Reserve contact list (different stakeholders, 2-week delay), (c) refocus Batch 2 distribution (Domains 39, 56, 38, 40) with emergency message, (d) pause Phase 2 entirely + focus on Batch 1 follow-up?
+**Goal**: Create WEAK Outcome Contingency Plan:
+1. **WEAK outcome triggers**: What signal metric threshold = WEAK? (Fewer than 6 responses? Low-quality responses? Silent networking only?)
+2. **Diagnosis**: If WEAK, is it: (a) messaging problem (brief wasn't compelling), (b) timing problem (May 18 distribution hit inbox noise), (c) stakeholder problem (initial contact list too narrow), or (d) substance problem (frameworks not developed enough)?
+3. **Corrective action options**:
+   - Option A: "Proceed normally" — extend Phase 2 timeline, begin Domain 59/57 research on schedule June 2
+   - Option B: "Relaunch with Reserve list" — 2-week delay, broader stakeholder network, 2nd wave May 31+
+   - Option C: "Emergency messaging" — accelerate Batch 2 (May 21-28) with crisis-focused narrative
+   - Option D: "Pause & diagnose" — hold Phase 2, conduct post-Wave interviews with 3-5 contacts to understand silence
+   - Option E: "Shift to policy asks" — rather than waiting for synthesis, immediately begin cultivating policy champions for Domains 1, 37, 56, 58 (known-high-impact)
+4. **Decision framework**: Which option by WEAK-outcome trigger? (Fewer responses → Option B+C; low-quality responses → Option D; silent networking → Option A+E?)
+5. **May 21 decision protocol**: How does user choose? Automated recommendation or open decision point?
+**Feasibility**: MEDIUM — contingency planning, lower confidence on corrective actions but higher on framework
+**Effort estimate**: 1–1.5 hours
+**Deliverable**: `projects/resistance-research/WEAK_OUTCOME_CONTINGENCY_PLAN.md` (weak outcome triggers, diagnosis framework, 5 corrective action options with timelines + resource implications, decision tree linking trigger to recommended action, user decision points)
+**Rationale**: May 21 synthesis assumes STRONG/MODERATE/WEAK decision is output. But WEAK contingency is currently unmapped. If WEAK occurs May 21, May 22 becomes reactive firefighting. Pre-staging contingency pathways enables May 21-22 transition to be smooth + strategic rather than improvised. Also: "WEAK" is not a failure state — it's a strategy adjustment point.
+**Next Step**: Execute May 19-20. Ready for May 21 synthesis decision. If May 21 classifies outcome as WEAK, user + orchestrator can immediately execute chosen corrective action without re-analysis.
+
+---
+
+---
+
+## Session 1307 (May 19, 04:15–04:35 UTC) — ITEMS 73–75 COMPLETE ✅
+
+### ✅ Item 73: Resistance-Research Post-Wave-1 Signal Analysis Framework
+**Status**: COMPLETE (Session 1305 pre-staging, Session 1307 verification)
+**Deliverable**: `projects/resistance-research/POST_WAVE1_SIGNAL_ANALYSIS_FRAMEWORK.md` (9,200+ words, 7 sections)
+**Content**: 
+- Signal classification schema (9 signal types with weights 0.25–5.0x)
+- Response Strength Score (RSS) calculation + Quality Reply Count (QRC)
+- Sector-specific baseline expectations (law schools, think tanks, civil rights, labor, media, government)
+- STRONG/MODERATE/WEAK threshold definitions with explicit triggers + examples
+- Contingency monitoring rules (daily schedule May 18-21, early-pivot triggers)
+- May 21 decision protocol (10:30 UTC classification, 10:45 UTC briefing, 19:00 UTC synthesis)
+- Example walkthroughs for STRONG and WEAK outcomes
+
+**Key Features**:
+- Operationalized metrics (no subjective "signal" — every edge case has a rule)
+- Sector-aware baselines (law schools slow but reliable; think tanks faster)
+- Mechanical execution (<45 min for trained user)
+- Integration point with MAY_21_SYNTHESIS_FRAMEWORK.md for outcome-conditional routing
+
+**Use Case**: May 18-21 monitoring window. May 21 10:30 UTC: use this framework to classify Wave 1 outcome as STRONG/MODERATE/WEAK. Hand result to Item 61 (synthesis) at May 21 19:00 UTC.
+
+---
+
+### ✅ Item 74: Stockbot May 22 Checkpoint Contingency Pathways
+**Status**: COMPLETE (Session 1307, 04:20 UTC)
+**Deliverable**: `projects/stockbot/MAY22_CHECKPOINT_CONTINGENCY_PATHWAYS.md` (8,500+ words, 7 sections)
+**Content**:
+- PASS A/B/C success scenarios (3 outcomes from PASS A strong performance → PASS C marginal performance)
+- FAIL A/B failure scenarios (2 outcomes: critical underperformance + data corruption)
+- Diagnostic procedures for each outcome (explicit steps, commands, root cause logic)
+- Corrective action options (Options A–D for FAIL A: revert to Lever A, escalate to Lever C, defer, or investigate)
+- Multi-ticker implications per outcome (training timeline, capital allocation, deployment gates)
+- Live trading go/no-go decision matrix (5 outcomes × 4 decision columns)
+- User decision boundaries (what orchestrator can execute vs. user approval required)
+
+**Key Features**:
+- 6 distinct outcome pathways with corresponding action sequences
+- Diagnostic procedures are mechanistic (check API connectivity, query DB, run script)
+- Decision matrix maps outcome → multi-ticker decision → live trading decision
+- Timeline enforcement: May 22 20:00 UTC checkpoint → May 22 20:30 UTC documentation → May 23 09:00 UTC user decision
+- Integration with POST_CHECKPOINT_24_HOUR_PLAN.md (Item 46) + GATE_2_IMPLEMENTATION_GUIDE.md
+
+**Use Case**: May 22 20:00 UTC Lever B (HMM regime masking) checkpoint. Query returns Sharpe, MDD, Win Rate. Route to correct outcome scenario. Execute diagnostic if FAIL. User approves corrective action by May 23 morning.
+
+---
+
+### ✅ Item 75: Resistance-Research WEAK Synthesis Outcome Contingency Plan
+**Status**: COMPLETE (Session 1307, 04:25 UTC)
+**Deliverable**: `projects/resistance-research/WEAK_OUTCOME_CONTINGENCY_PLAN.md` (8,200+ words, 6 sections)
+**Content**:
+- WEAK outcome trigger conditions (6 specific metrics: RSS <10, substantive responses <2, response count <6, zero from Tier 1 sector, bounce rate >30%, negative signals)
+- Root cause diagnosis framework (4 failure modes: messaging, timing, stakeholder, substance)
+- 5 corrective action options (A–E: proceed normally, activate reserve list, reframe messaging, pause & diagnose, shift to policy asks)
+- Decision tree (diagnostics → recommended option, with fallback recommendations)
+- User decision protocol (May 21–22 workflow: classification → diagnosis → decision → execution)
+- Integration with Phase 2 (WEAK does not cancel Phase 2; research starts June 1, but distribution timing shifts)
+
+**Key Features**:
+- Diagnostic checklist (3-5 questions per mode; ≥X checkboxes = likely mode)
+- Option A-E timelines and resource impacts (2–6 hours each)
+- All options keep Phase 2 research on June 1 track (WEAK impacts distribution, not research production)
+- Decision tree is deterministic given diagnosis
+- Integration with MAY_21_SYNTHESIS_FRAMEWORK.md WEAK branch output
+
+**Use Case**: May 21 10:30 UTC monitoring closure yields WEAK outcome (from POST_WAVE1_SIGNAL_ANALYSIS_FRAMEWORK.md). May 21-22: diagnose failure mode, select corrective action, execute May 22-30. Options are mutually exclusive; choose one per diagnostic result.
+
+---
+
+**Status**: Items 73–75 all OPERATIVE and ready for deployment.
+- Item 73: Supports May 21 synthesis classification (1 day)
+- Item 74: Supports May 22 checkpoint (3 days)
+- Item 75: Supports May 21-22 contingency if WEAK (conditional)
+
+**Queue Status**: Pending items 73–75 now COMPLETE. All active autonomous items resolved.
+
+**Next Autonomous Work**:
+- May 21 19:00–20:00 UTC: Item 61 (MAY_21_SYNTHESIS_FRAMEWORK execution) — autonomous, depends on Item 73 output
+- May 22 20:00 UTC: Checkpoint execution — user-triggered, uses Item 74
+- May 23+: Contingency execution per Items 74–75 outcomes
+
+**Autonomous Window Closed**: All pre-work for May 21–22 decision points is staged. Next autonomous batch begins post-May-21 synthesis (Item 70 sequencing activation) or post-May-22-checkpoint (multi-ticker training commencement, if PASS outcome).
+

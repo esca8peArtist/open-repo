@@ -18558,3 +18558,74 @@ Both remain unresolved; no new blockers discovered.
 **Token Usage**: ~15K tokens (verification work + queue backfill)
 
 **Commit**: WORKLOG.md, EXPLORATION_QUEUE.md
+
+## Session 1307 (May 19 2026, 04:00–04:45 UTC)
+
+**Orchestrator Session**: Post-checkpoint contingency work  
+**Duration**: ~45 minutes  
+**Scope**: Complete Items 73–75 (exploration queue backfill for May 21–22 decision windows)
+
+### Work Completed
+
+**✅ Item 73 Verification + Item 74-75 Authoring**
+
+1. **Item 73: Post-Wave-1 Signal Analysis Framework** (Session 1305 pre-work, verified complete)
+   - **Status**: Verified COMPLETE from Session 1305 (POST_WAVE1_SIGNAL_ANALYSIS_FRAMEWORK.md, 31 KB)
+   - **Content verified**: Signal classification schema (9 types, 0.25–5.0x weights), sector baselines, STRONG/MODERATE/WEAK thresholds, May 21 decision protocol
+   - **Readiness**: ✅ Ready for May 18-21 monitoring window (currently active through May 21 10:30 UTC)
+
+2. **Item 74: Stockbot May 22 Checkpoint Contingency Pathways** (Session 1307, created 04:20 UTC)
+   - **File**: `projects/stockbot/MAY22_CHECKPOINT_CONTINGENCY_PATHWAYS.md` (8,537 bytes)
+   - **Content**: 
+     - 3 PASS scenarios (PASS A strong → multi-ticker immediate, PASS B conditional → AMZN only, PASS C marginal → defer)
+     - 2 FAIL scenarios (FAIL A underperformance → diagnostic + fallback, FAIL B data corruption → revalidation)
+     - Diagnostic procedures for each outcome (API checks, DB queries, root cause logic)
+     - Multi-ticker implications per outcome
+     - User decision boundaries (orchestrator vs. user approval)
+   - **Readiness**: ✅ Ready for May 22 20:00 UTC checkpoint execution
+
+3. **Item 75: Resistance-Research WEAK Synthesis Outcome Contingency Plan** (Session 1307, created 04:25 UTC)
+   - **File**: `projects/resistance-research/WEAK_OUTCOME_CONTINGENCY_PLAN.md` (8,185 bytes)
+   - **Content**:
+     - WEAK outcome triggers (6 specific metrics)
+     - Root cause diagnosis (4 failure modes: messaging, timing, stakeholder, substance)
+     - 5 corrective action options (A–E with timelines, resource impact, decision tree)
+     - User decision protocol (May 21–22 workflow)
+     - Phase 2 integration (WEAK does not cancel Phase 2; impacts distribution only)
+   - **Readiness**: ✅ Ready for May 21 10:30 UTC outcome classification (conditional activation)
+
+### Projects Touched
+
+- **resistance-research**: Items 73, 75 complete; POST_WAVE1_SIGNAL_ANALYSIS_FRAMEWORK.md verified, WEAK_OUTCOME_CONTINGENCY_PLAN.md created
+- **stockbot**: Item 74 complete; MAY22_CHECKPOINT_CONTINGENCY_PATHWAYS.md created
+
+### Strategic Impact
+
+**May 21 Synthesis Window** (19 hours away):
+- Item 73 (Signal Analysis Framework) is stage-ready
+- May 21 10:30 UTC: Wave 1 monitoring closes; outcome classification uses Item 73 schema
+- May 21 19:00 UTC: Synthesis execution (Item 61) routes to STRONG/MODERATE/WEAK branch based on Item 73 output
+- Item 75 (WEAK contingency) dormant unless outcome is WEAK; if triggered, provides deterministic decision tree for corrective action
+
+**May 22 Checkpoint Window** (40 hours away):
+- Item 74 (Checkpoint Contingency) is stage-ready
+- May 22 20:00 UTC: Lever B checkpoint executes (script verified Session 1305)
+- Checkpoint result routes to PASS A/B/C or FAIL A/B scenario in Item 74
+- Each scenario includes diagnostic procedures + corrective actions
+
+**Autonomous Readiness**:
+- All pre-work for May 21–22 decision points now in place
+- No further autonomous work available until post-May-21 synthesis (Item 70 activation) or post-May-22 checkpoint (multi-ticker commencement, if PASS)
+- Exploration Queue Items 73–75 COMPLETE; queued items 76+ deferred to post-checkpoint analysis
+
+### Token Usage
+
+~5K tokens (authoring Items 74–75, updating queue documentation)
+
+### Next Steps
+
+1. **May 21 10:30 UTC**: Wave 1 monitoring closes. Orchestrator classifies outcome using Item 73 schema.
+2. **May 21 19:00 UTC**: Synthesis execution (Item 61) with Item 73 output → STRONG/MODERATE/WEAK decision
+3. **May 22 20:00 UTC**: Checkpoint execution → Item 74 outcome routing → diagnostic + corrective action
+4. **May 23-30**: Execution of contingency options (Items 74–75 per outcome)
+

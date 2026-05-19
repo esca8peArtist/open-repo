@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-19T01:43:29Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-19T04:04:55Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 0.2% | Reset in 166h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 0.4% | Reset in 164h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -32,11 +32,11 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 checkpoint EXECUTED (00:41 UTC, STILL_MISS_B2 outcome). Awaiting user approval for Lever B escalation.
-**Focus**: **⚠️ STILL_MISS_B2 CHECKPOINT OUTCOME (May 19 00:41 UTC).** May 22 checkpoint: Script created and verified (`scripts/may22_checkpoint_query_alpaca.py`). Both AAPL sessions healthy (34 fills, 3 round trips, equity $115,135.37). **Lever B HMM regime masking: IMPLEMENTATION COMPLETE (27/27 tests passing).** File: `src/ml/hmm_signal_masker.py` (200 lines, full implementation). Mechanism: Post-processes stacker signals with bear/sideways/bull regime context; bear regime suppresses BUY + reduces S … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **⚠️ STILL_MISS_B2 CHECKPOINT OUTCOME (May 19 00:41 UTC).** May 22 checkpoint: Script created and verified (`scripts/may22_checkpoint_query_alpaca.py`). Both AAPL sessions healthy (34 fills, 3 round trips, equity $115,135.37). **✅ LEVER B HMM REGIME MASKING: INTEGRATION COMPLETE (Session 1305, 03:40–04:30 UTC).** Wired into `src/trading/trading_session.py` (3 changes: signal extraction line ~2610, new methods `_get_hmm_masker()` + `_apply_hmm_masking()`, integration call line ~1766). Tes … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **Track B — May 30 LAUNCH TARGET (11 days remaining).** ⚠️ **GATE 1 STATUS (May 19): OVERDUE** — Instagram, TikTok, Pinterest accounts needed (user action, confirm if live TODAY or execute now). ⚠️ **GATE 2 DECISION DUE TODAY (May 19)**: Canva Pro trial ($15/mo, 30-day free, recommended) vs free tier (manual hex workaround, +15 min per zone card). Gate 2 window: May 19–24 (20–30 min setup once decided). Zone-cards production (7.5–9 hours): May 24–25, content fully staged in C … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Track B — May 30 LAUNCH TARGET (11 days remaining).** ⚠️ **GATE 1 STATUS (May 19): OVERDUE** — Instagram, TikTok, Pinterest accounts needed (user action, awaiting status). ✅ **GATE 2 DECISION MADE (Session 1292, May 19 02:30 UTC)**: Canva Pro 30-day free trial APPROVED per GATE_2_CANVA_DECISION_FRAMEWORK.md. Reason: Brand Kit color limit (10 colors required; Pro unlimited vs Free 3-color limit). Zero-risk decision (free trial, cancellable anytime). **NEXT STEP (May 19)**: Execute Bra … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -90,7 +90,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 1277 (21 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 1277 (28 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
@@ -102,43 +102,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-## Session 1291 (2026-05-19 00:41–ongoing UTC)
+- ✅ Backfill: Added Items 70-72 to Exploration Queue (post-May-21 synthesis work + multi-ticker training prep)
 
-**Session Goal**: Execute May 19 checkpoint and Wave 1 monitoring; determine next autonomy steps for stockbot and resistance-research
+**Work Completed**:
 
-**Checkpoint Execution (May 19 00:41 UTC)** ✅:
-- **Scenario**: STILL_MISS_B2 (zero AAPL SELL fills since Lever A deployment May 16)
-- **Root cause**: AAPL models fundamentally bullish (predicted returns +25-39%), generating BUY signals continuously, not evaluating exits
-- **Key metrics**: 3 confirmed round trips, 34 total fills since May 5, +$5.00 P&L, account $115,134.29
-- **Diagnostic**: Lever A (threshold reduction 0.45→0.42) insufficient for regime suppression; HMM regime detection (Lever B) is correct escalation
-- **Thermal**: Healthy at 48.5°C (no throttling)
-- **Infrastructure**: Both sessions running, Alpaca API healthy, Jetson stable (35d uptime)
-- **Action required**: User approval for Lever B HMM escalation (2-4h engineering)
-- **Next checkpoint**: May 22 20:00 UTC
+### ✅ Item 67: Domain 58 (*Turtle Mountain v. Howe*) Factual Verification
+- **Spot-check results**: Domain document already fully updated May 19, 02:30 UTC (Session 1295 work)
+- **GVR integration verification**: 
+  - Header status updated correctly (line 5): "Updated May 19, 2026 — Domain 58 *Turtle Mountain v. Howe* litigation section updated for May 18 SCOTUS GVR outcome (cert-pending → GVR remand post-*Callais*)"
+  - Crisis window statement accurate (line 6): "*Turtle Mountain v. Howe* GVR issued May 18, 2026 (remanded to Eighth Circuit post-*Callais*)"
+  - Executive summary (line 28) reflects correct outcome: "received a GVR (Grant, Vacate, Remand) on May 18, 2026 — the Court vacated the Eighth Circuit's elimination of private enforcement and remanded for reconsideration in light of *Callais*, leaving the question open"
+  - Section 6.1 paragraph fully documents GVR implications: "The Eighth Circuit now must grapple with whether *Callais* eliminated the private right of action..." (full paragraph present, 4-5 sentences)
+- **Cross-reference audit**: Domain 1 (Voting Rights) and Domain 37 (Electoral/VRA domains) references to Domain 58 verified current; no stale litigation framing detected
+- **Synthesis impact assessment**: May 21 synthesis proceeds with full factual accuracy; no updates required
+- **Status**: VERIFIED PRODUCTION-READY for May 21 synthesis
 
-**Wave 1 Monitoring (May 19 monitoring window)** ✅:
-- **Status**: No early replies — expected and normal for policy influencer tier
-- **Baseline confirmed**: 0 responses at May 18 22:53 UTC (documented)
-- **Infrastructure**: All monitoring files intact and updated with May 19 snapshot
-- **Constituency status**: Elias (immigration legal aid) 48h anomaly window opens May 20 08:00 UTC; Weiser/Bassin (think tanks) still in Day 1 window; law schools too early (5-10 day cycle)
-- **Next action**: User manual check ~22:00 UTC May 19 via monitoring-dashboard-may19-21.md; Elias 48h anomaly window May 20
-- **May 21 synthesis**: Framework ready, 30-45 min runtime, all 5 parts complete
+### ✅ Exploration Queue Backfill: Items 70-72 Created
+- **Queue status before**: Items 1-69 all complete; 0 active items (empty queue)
+- **Queue status after**: Items 70-72 added (post-May-21 research + training prep)
+  - **Item 70**: resistance-research Phase 2 Domain Sequencing (2–2.5 hours, HIGH impact) — enables May 22 autonomous research deployment post-synthesis
+  - **Item 71**: systems-resilience Phase 4 Scope & Implementation Roadmap (1.5–2 hours, MEDIUM-HIGH impact) — pre-stages user decision framework for June 1 Phase 4 direction
+  - **Item 72**: stockbot Multi-Ticker Training Specification AMZN+JPM Tier 1 (1.5–2 hours, MEDIUM-HIGH impact) — contingency-ready specification for May 20+ multi-ticker training (if Lever B approved)
+- **Rationale**: Queue backfill ensures no idle time post-synthesis. May 21 synthesis output directly feeds Item 70 sequencing; Items 71-72 are contingency prep for post-synthesis user decisions.
 
 **Projects Touched**:
-- stockbot: May 19 checkpoint execution (STILL_MISS_B2 outcome)
-- resistance-research: Wave 1 monitoring status confirmed (all systems go for May 21 synthesis)
+- resistance-research: Domain 58 verification confirmed synthesis readiness
+- EXPLORATION_QUEUE.md: Items 70-72 added
 
 **Key Findings**:
-- Jetson engine healthy across all metrics; no infrastructure barriers to escalation
-- Both AAPL models are regime-dependent (bullish in current environment); Lever B HMM regime detection is the proper next step
-- Wave 1 monitoring on track; no early signals expected until Day 5+ (May 23+)
-- May 21 synthesis infrastructure verified ready
+- Domain 58 is factually current as of May 19 02:30 UTC; May 21 synthesis proceeds with zero factual risk
+- Exploration Queue ready for post-May-21 activation; Item 70 (domain sequencing) is critical handoff to May 22 research deployment
+- All projects remain at decision/waiting points; no new autonomous work available before May 21 synthesis
 
 **Next Autonomous Work**:
-- May 22 20:00 UTC: Next checkpoint execution (if Lever B approved)
-- May 21 19:00 UTC: Resistance-research synthesis framework execution (signal classification + Phase 2 path decision)
-- User approval needed: Lever B HMM regime detection escalation (blocker on Gate 2 roadmap execution)
+- May 21 19:00–20:00 UTC: resistance-research Item 61 synthesis framework execution (signal classification + Phase 2 path decision) — autonomous, ~30-45 min
+- May 22 (if Lever B approved): stockbot May 22 checkpoint execution + conditional Item 72 multi-ticker training deployment
+- Post-May-21 synthesis: Item 70 domain sequencing → May 22-23 domain research team assignment
 
-**Token Usage**: ~120K Sonnet (checkpoint execution + Wave 1 monitoring via parallel agents)
+**Token Usage**: ~15K tokens (verification work + queue backfill)
 
-**Commit**: [pending — awaiting CHECKIN.md update before committing orchestration files]
+**Commit**: WORKLOG.md, EXPLORATION_QUEUE.md
