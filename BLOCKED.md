@@ -70,10 +70,35 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ### stockbot — Lever B HMM configuration not activated + SSH auth failure (critical pre-checkpoint fix)
-**Date blocked**: 2026-05-19 05:10 UTC (Session 1316); SSH auth escalated 2026-05-19 05:39 UTC (Session 1319)
-**Context**: Pre-checkpoint infrastructure validation (Session 1316) discovered that Lever B HMM regime masking code was deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`), but the config file `/opt/stockbot/config/active-sessions-2session.json` does NOT have `hmm_regime_masking: true` in strategy_params. Result: May 22 checkpoint will execute with Lever A configuration (same as May 19 that already failed with STILL_MISS_B2 outcome), defeating the purpose of Lever B testing. Fix is simple but CRITICAL: activate config + restart Docker before May 22 13:30 UTC market open (~55 hours from now). **SSH AUTHENTICATION FAILURE**: Orchestrator attempted auto-fix at 05:39 UTC. SSH authentication to Jetson (100.120.18.84) failed with "Permission denied (publickey)". Jetson is reachable (ping successful) but key auth failing. Possible causes: (1) SSH key on this system not authorized on Jetson, (2) Jetson SSH config requires password auth or different key setup. **Impact**: Config activation must proceed manually or SSH access must be restored.
-**What I need**: Either (A) SSH access restored — provide correct SSH key or password setup instructions for ubuntu@100.120.18.84, OR (B) Manual activation — SSH to Jetson yourself and run the fix commands from `projects/stockbot/jetson-pre-checkpoint-validation-report.md` (sections "Fix Command 1" and "Fix Command 2"). Fix takes ~5 min: (1) Edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true` to strategy_params for both AAPL sessions. (2) Run `docker restart stockbot` on Jetson. (3) Verify `/api/health` responds OK.
-**Verify with**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` — should return OK if SSH auth works AND config activated (or `ssh` error message if key still not authorized)
+**Date blocked**: 2026-05-19 05:10 UTC (Session 1316); SSH auth escalated 2026-05-19 05:39 UTC (Session 1319); Confirmed SSH issue 2026-05-19 08:10 UTC (Session 1324)
+**Context**: Pre-checkpoint infrastructure validation (Session 1316) discovered that Lever B HMM regime masking code was deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`), but the config file `/opt/stockbot/config/active-sessions-2session.json` does NOT have `hmm_regime_masking: true` in strategy_params. Result: May 22 checkpoint will execute with Lever A configuration (same as May 19 that already failed with STILL_MISS_B2 outcome), defeating the purpose of Lever B testing. **SSH AUTHENTICATION FAILURE CONFIRMED (Session 1324)**: Orchestrator re-verified SSH at 08:10 UTC. SSH connection to ubuntu@100.120.18.84 fails with "Permission denied (publickey)" after public key offer rejected. Jetson is reachable (ping 6.30ms). Root cause: orchestrator's ED25519 public key (~/.ssh/id_ed25519.pub) is NOT authorized in Jetson's authorized_keys file. SSH key auth cannot proceed without either: (A) adding orchestrator public key to Jetson authorized_keys, or (B) providing alternative auth method (password).
+**What I need**: Either (A) Add orchestrator's public key to Jetson's authorized_keys on remote machine (requires existing access), OR (B) SSH to Jetson manually and execute the 5-minute Lever B config fix yourself. **Fix commands (run on Jetson via SSH with your existing credentials)**:
+```bash
+# Edit config file to add hmm_regime_masking flag
+ssh ubuntu@100.120.18.84
+# (enter password or use your SSH key if different from orchestrator's)
+nano /opt/stockbot/config/active-sessions-2session.json
+# Find both "AAPL_h10_lgbm_ho" and "AAPL_h10_ridge_wf" session blocks
+# For each, ensure strategy_params contains: "hmm_regime_masking": true
+# Example for first session:
+#{
+#  "stacker_name": "AAPL_h10_lgbm_ho",
+#  "threshold_multiplier": 0.4,
+#  "confidence_floor": 0.45,
+#  "strategy_params": {
+#    "hmm_regime_masking": true,
+#    "hmm_observe_mode": false,
+#    "hmm_min_fit_bars": 60,
+#    "hmm_suppress_buy_in_bear": true
+#  }
+#}
+# Save and exit (ctrl+x, y, enter)
+docker restart stockbot
+# Verify:
+curl http://localhost:8000/api/health
+# Should return: {"status":"ok","sessions":2}
+```
+**Verify with**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` — will show SSH error if key still not authorized, or return OK if fixed
 **Resolution**: [leave blank]
 
 ---
