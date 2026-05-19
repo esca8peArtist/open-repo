@@ -1,3 +1,73 @@
+## Since Last Check-in (Session 1309, May 19 04:37–04:50 UTC)
+
+**Session Status**: ✅ **STATE VERIFICATION COMPLETE — All autonomous work scheduled for May 21–22; awaiting user actions May 19–20**
+
+**What Was Done**:
+
+### ✅ Orientation & State Verification
+- **ORCHESTRATOR_STATE.md reviewed**: Current state snapshot at 04:34 UTC confirmed accurate
+- **BLOCKED.md verified**: 2 active blocks (Windows VeraCrypt restart, mfg-farm test print) — both awaiting user action, unresolved
+- **INBOX.md checked**: Zero new items since Session 1305
+- **Exploration Queue audited**: 6+ active (non-completed, non-archived) items; threshold met (>3 minimum)
+
+### ✅ Project Status Assessment
+All top-priority projects have scheduled work or explicit user-action blockers:
+| Project | Status | Next Event | Timeline |
+|---------|--------|-----------|----------|
+| **resistance-research** | Ready → Synthesis | Autonomous execution (May 21 synthesis) | May 21 19:00 UTC |
+| **stockbot** | Ready → Checkpoint | Autonomous execution (May 22 checkpoint) | May 22 20:00 UTC |
+| **seedwarden Track B** | Waiting | Brand Kit setup (user action) | May 19 evening |
+| **cybersecurity-hardening** | Waiting | Windows VeraCrypt restart (user action) | Awaiting user |
+| **mfg-farm** | Waiting | Test print execution (user action) | Awaiting user |
+
+### ✅ May 21–22 Synthesis & Checkpoint Readiness Verification
+- **Synthesis execution checklist**: may21-synthesis-execution-checklist.md verified complete and pre-built
+- **Signal log infrastructure**: wave-1-signal-log-may18-21.md in place; ready for May 19-21 user monitoring inputs
+- **Monitoring dashboard**: monitoring-dashboard-may19-21.md ready for user May 19 evening + May 20 checks
+- **Phase 2 path decision framework**: phase-2-path-activation-summary.md verified production-ready
+- **Synthesis reference document**: wave-1-synthesis-framework-skeleton.md verified complete (15K, May 18 23:56)
+- **Status**: Infrastructure 100% ready for autonomous May 21 19:00 UTC execution. Awaits user signal data input May 19-21.
+
+**Needs Your Input**:
+
+**TODAY (May 19 evening)**:
+1. **Brand Kit setup** (30-45 min): Execute GATE_2_DECISION_AND_EXECUTION_GUIDE.md steps 1-7. Record Brand Kit share link in the guide for documentation.
+2. **Canva Pro trial activation**: No charge during trial; cancellable before day 30 if preferred post-production review.
+3. **Monitoring check** (~22:00 UTC): Check email inbox + Gist views (incognito). Fill May 19 evening row of monitoring-dashboard-may19-21.md per DAILY MONITORING PROCEDURE.
+
+**May 20**:
+1. **Morning check** (~14:00 UTC): Repeat monitoring procedure; fill May 20 morning row of monitoring-dashboard-may19-21.md
+2. **Evening check** (~22:00 UTC): Final check before May 21 gate; fill May 20 evening row
+3. **Critical**: Transfer any new signals to wave-1-signal-log-may18-21.md SIGNAL LOG TABLE before May 21 synthesis
+
+**May 21**:
+1. **Morning check** (before 10:30 UTC): Final 72-hour window closure check; fill May 21 morning row of monitoring-dashboard-may19-21.md
+2. **Pre-synthesis read** (19:00 UTC): Open signal log + email + Gist; prepare May 21 snapshot data before orchestrator execution
+3. **Synthesis execution** (19:00-20:00 UTC): **Autonomous** — orchestrator will execute may21-synthesis-execution-checklist.md; reads your monitoring data, classifies outcome (STRONG/MODERATE/WEAK/TOO_EARLY), determines Phase 2 path
+4. **Post-synthesis review**: Review synthesis outcome in CHECKIN.md; approves parallel tracks if STRONG outcome; confirms corrected domain sequencing file
+
+**Lever B Escalation Decision** (affects May 22 checkpoint):
+- HMM regime masking is **deployed to Jetson and ready**
+- To enable for May 22: modify `active-sessions.json` to include `"hmm_regime_masking": true` in strategy_params for AAPL sessions
+- If deferred: May 22 checkpoint runs equity-only (current configuration); Lever B remains available for June retest if needed
+
+**Critical Timeline**:
+- **May 19 evening**: Brand Kit setup + monitoring check #1 (user actions)
+- **May 20**: Monitoring checks #2-#3 (user actions)
+- **May 21 10:30 UTC**: 72-hour Wave 1 monitoring window closes (hard deadline for final signal log entry)
+- **May 21 19:00–20:00 UTC**: Autonomous synthesis execution (orchestrator; ~30 min runtime)
+- **May 22 20:00 UTC**: Autonomous checkpoint execution (stockbot; ~5-10 min runtime)
+
+**Post-Synthesis Contingency Routing** (May 23-24):
+- **If synthesis = STRONG**: Phase 2 domain research agents spawn for D57 + D59 fast-track (Exploration Queue Item 78). D37 + Domain 58 integration planning begins.
+- **If synthesis = MODERATE**: Standard Phase 2 timeline. D57 primary June 10, D59 secondary July 1. Continue monitoring to May 25 final gate.
+- **If synthesis = WEAK**: Phase 1 remediation (D39 non-negotiable June 1). D38/D40 accelerated. D57/D59 deferred. Requires user decision on delivery vs. content revision.
+- **If synthesis = TOO_EARLY**: Law school response cycle dominates (5-10 day typical). Continue monitoring; reclassify at May 25 final gate.
+
+**Strategic Status**: Session 1308 completed all pre-May-21 autonomous work (Lever B HMM deployment, exploration queue backfill). Session 1309 confirms readiness for May 21-22 decision windows. Zero further autonomous work available until May 21 synthesis executes. Critical path is user decisions + monitoring (May 19-21) → synthesis outcome (May 21 19:00) → checkpoint (May 22 20:00) → post-decision conditional work (May 23+).
+
+---
+
 ## Since Last Check-in (Session 1308, May 19 04:15–04:50 UTC)
 
 **Session Status**: ✅ **LEVER B HMM DEPLOYMENT COMPLETE + EXPLORATION QUEUE EXTENDED (Items 76–78 STAGED)**
