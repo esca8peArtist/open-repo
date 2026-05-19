@@ -1,3 +1,51 @@
+## Since Last Check-in (Session 1362, May 19 21:30–22:00+ UTC)
+
+**Session Status**: 🟢 **COMPLETED — PHASE 4 PLANNING FRAMEWORK COMMITTED, PROJECTS.MD SYNCHRONIZED**
+
+### Session 1362 Summary
+
+**Work Completed**:
+- ✅ **Systems-Resilience: Phase 4 Framework Integration** — COMPLETE
+  - **Committed**: 4 production-ready documents
+    1. `PHASE_4_FRAMEWORK.md` (3.4K words) — Synthesis of Phases 1-3, load-bearing domain analysis, individual-household-community scale integration, Phase 4 gaps and priorities
+    2. `PHASE_4_IMPLEMENTATION_FRAMEWORK.md` — Implementation sequencing and architecture decisions
+    3. `PHASE_4_QUICK_START_MODULES.md` — Quick-start reference for Phase 4 execution
+    4. `PHASE_5_PATH_OPTIONS_FRAMEWORK.md` — Path options analysis (scope, pace, format)
+  - **Updated**: `PROJECTS.md` systems-resilience focus to reflect Phase 4 completion and June 1 decision deadline
+  - **Status**: Phase 3 knowledge base complete; Phase 4 planning complete. User decision required by June 1 for implementation path selection.
+  - **Impact**: Systems-resilience now has clear roadmap for Phase 4 (synthesis/gaps) and Phase 5 (implementation) scope decisions
+
+**Blocked Items Status**:
+- 🔴 **CRITICAL: Stockbot Lever B SSH auth** — Remains unresolved. Deadline **May 22 13:30 UTC** (less than 15 hours). Orchestrator cannot resolve; user must add SSH key or manually execute config fix.
+- 🟡 **Cybersecurity-hardening Phase 1** — Awaiting user VeraCrypt pre-boot restart
+- 🟡 **Mfg-farm test print** — Awaiting user execution
+- 🟡 **Resistance-research signal snapshots** — Due May 20 evening for May 21 synthesis
+- 🟡 **Open-repo Phase 5 Candidate 1 approval** — Expected May 25-26
+- 🟡 **Seedwarden Phase 3 decisions** — Expected May 25-30
+
+**Project Status Snapshot**:
+- **Systems-resilience**: Phase 4 planning complete; waiting for June 1 user decision
+- **Resistance-research**: May 21 synthesis ready to execute; Phase 2 activation checklist prepared
+- **Seedwarden**: Phase 3 critical path complete; May 30 launch ready
+- **Open-repo**: Phase 5 Candidate 1 + 2 assessments complete; Candidate 1 awaiting approval
+- **Stockbot**: 🔴 **CRITICAL: SSH auth required by May 22 13:30 UTC**
+
+**Critical Path — Next 48 Hours**:
+- **TODAY/May 20**: SSH key authorization for Jetson (deadline **May 22 13:30 UTC**)
+- **May 20 evening**: User fills `wave-1-signal-log-may18-21.md` snapshots
+- **May 21 19:00–20:00 UTC**: Resistance-research May 21 synthesis (autonomous)
+- **May 21 evening**: Review synthesis outcome; activate Phase 2 if STRONG/MODERATE
+
+**Items Needing User Input**:
+1. 🔴 **URGENT — TODAY**: SSH auth for Jetson (deadline **May 22 13:30 UTC**)
+2. **May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots
+3. **May 21 evening**: Review synthesis outcome; activate Phase 2 if STRONG/MODERATE
+4. **May 25–26**: Approve Phase 5 Candidate 1 for implementation
+5. **May 25–30**: Three seedwarden Phase 3 decisions (scope, Goldenseal sourcing, writer engagement)
+6. **June 1**: Choose systems-resilience Phase 4 direction
+
+---
+
 ## Since Last Check-in (Session 1361, May 19 20:11–21:15+ UTC)
 
 **Session Status**: 🟢 **COMPLETED — 5 MAJOR DELIVERABLES PRODUCTION-READY, TWO CRITICAL PATHS CLEARED FOR IMMEDIATE EXECUTION**
