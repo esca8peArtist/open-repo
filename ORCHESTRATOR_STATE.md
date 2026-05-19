@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-19T05:25:40Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-19T05:49:20Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 0.6% | Reset in 163h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 0.6% | Reset in 162h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -88,16 +88,16 @@
 **Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
 **Resolution**: [leave blank]
 ---
-### stockbot — Lever B HMM configuration not activated (critical pre-checkpoint fix)
-**Date blocked**: 2026-05-19 05:10 UTC (Session 1316)
-**Context**: Pre-checkpoint infrastructure validation (Session 1316) discovered that Lever B HMM regime masking code was deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`), but the config file `/opt/stockbot/config/active-sessions-2session.json` does NOT have `hmm_regime_masking: true` in strategy_params. Result: May 22 checkpoint will execute with Lever A configuration (same as May 19 that already failed with STILL_MISS_B2 outcome), defeating the purpose of Lever B testing. Fix is simple but CRITICAL: activate config + restart Docker before May 22 13:30 UTC market open (~56 hours from now).
-**What I need**: SSH to Jetson and: (1) Edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true` to strategy_params for both AAPL sessions. (2) Run `docker restart stockbot` on Jetson. (3) Verify restart completes and `/api/health` responds with `{"status":"ok","sessions":2}`. See `projects/stockbot/jetson-pre-checkpoint-validation-report.md` for exact fix commands.
-**Verify with**: `ssh -i /home/awank/.ssh/jetson_key ubuntu@100.120.18.84 'curl http://localhost:8000/api/health'` — should return `{"status":"ok","sessions":2}` AND `grep hmm_regime_masking /opt/stockbot/config/active-sessions-2session.json` should show `"hmm_regime_masking": true` for both sessions
+### stockbot — Lever B HMM configuration not activated + SSH auth failure (critical pre-checkpoint fix)
+**Date blocked**: 2026-05-19 05:10 UTC (Session 1316); SSH auth escalated 2026-05-19 05:39 UTC (Session 1319)
+**Context**: Pre-checkpoint infrastructure validation (Session 1316) discovered that Lever B HMM regime masking code was deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`), but the config file `/opt/stockbot/config/active-sessions-2session.json` does NOT have `hmm_regime_masking: true` in strategy_params. Result: May 22 checkpoint will execute with Lever A configuration (same as May 19 that already failed with STILL_MISS_B2 outcome), defeating the purpose of Lever B testing. Fix is simple but CRITICAL: activate config + restart Docker before May 22 13:30 UTC market open (~55 hours from now). **SSH AUTHENTICATION FAILURE**: Orchestrator attempted auto-fix at 05:39 UTC. SSH authentication to Jetson (100.120.18.84) failed with "Permission denied (publickey)". Jetson is reachable (ping successful) but key auth failing. Possible causes: (1) SSH key on this system not authorized on Jetson, (2) Jetson SSH config requires password auth or different key setup. **Impact**: Config activation must proceed manually or SSH access must be restored.
+**What I need**: Either (A) SSH access restored — provide correct SSH key or password setup instructions for ubuntu@100.120.18.84, OR (B) Manual activation — SSH to Jetson yourself and run the fix commands from `projects/stockbot/jetson-pre-checkpoint-validation-report.md` (sections "Fix Command 1" and "Fix Command 2"). Fix takes ~5 min: (1) Edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true` to strategy_params for both AAPL sessions. (2) Run `docker restart stockbot` on Jetson. (3) Verify `/api/health` responds OK.
+**Verify with**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` — should return OK if SSH auth works AND config activated (or `ssh` error message if key still not authorized)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: resistance-research — focus references Session 1294 (23 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: seedwarden — focus references Session 1292 (25 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: open-repo — focus references Session 1277 (40 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: resistance-research — focus references Session 1294 (25 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: seedwarden — focus references Session 1292 (27 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 1277 (42 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
@@ -109,42 +109,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-1. **Code Review**: Examined integration in `src/trading/trading_session.py`
-   - Opt-in feature (controlled by `hmm_regime_masking` in strategy_params)
-   - Lazy initialization of HMM maskers per ticker
-   - Post-signal processing before order execution
-   - Conservative design: silent fallthrough for non-stacker sessions
-   - Warm-up guard (60 bars) enforced inside masking logic
+## Session 1319 (May 19, 2026, 05:34–05:50 UTC)
 
-2. **Test Verification**: 27/27 HMM tests passing, 16/16 integration tests passing, 3,758 total suite pass/0 new failures
+**Session Status**: 🟡 **NO AUTONOMOUS WORK AVAILABLE — Critical block escalated; awaiting May 21-22 events**
 
-3. **Git Merge**: Merged `feature/lever-b-hmm-integration` to local master
-   - Fast-forward merge completed
-   - Files integrated: `LEVER_B_INTEGRATION_STATUS.md`, `test_hmm_masking_integration.py`, trading_session.py updates
+**What Was Done**:
 
-4. **Jetson Deployment**:
-   - Created `/opt/stockbot/src` directory on Jetson
-   - Rsync synced updated src/ to Jetson: 436,293 bytes in 23.25 speedup ratio
-   - Restarted Docker container `stockbot`
-   - Verified container healthy: "Up 4 minutes (healthy)"
-   - API endpoint responding normally
+### ✅ Full State Orientation
+- Read ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md
+- Confirmed all active blocks from Session 1316-1317 remain unresolved (user actions only)
+- No new INBOX items to process
 
-**Configuration Status**:
-- HMM masking is opt-in; currently disabled in active-sessions.json (no `hmm_regime_masking: true` in strategy_params)
-- When enabled, masker initializes and detects regimes on day 1 (60-bar historical warm-up automatic)
-- Mechanism: Bear regime suppresses BUY + reduces SELL to 60%; sideways reduces SELL to 80%; bull pass-through
+### 🔴 Critical Block Escalation — Lever B HMM Configuration SSH Auth Failure
+**Attempted Auto-Resolution**: Lever B HMM config block from Session 1316 (requires SSH to Jetson)
+- **Test 1**: `ssh -i /home/awank/.ssh/jetson_key ubuntu@100.120.18.84` → File not found (key doesn't exist)
+- **Test 2**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84` → Permission denied (publickey)
+- **Network verified**: Jetson reachable at 100.120.18.84, ping 10.8ms latency, responsive
+- **Root cause**: SSH key on orchestrator system not authorized on Jetson's authorized_keys, OR Jetson requires different auth method
+- **Updated BLOCKED.md**: Documented SSH auth failure with escalation path (Option A: restore SSH access, Option B: user executes config fix manually)
+- **Deadline**: May 22 13:30 UTC market open (~55 hours)
 
-**May 22 Checkpoint Readiness**:
-- ✅ Feature deployed and engine restarted
-- ✅ May 22 checkpoint script verified and staged
-- ✅ Both AAPL sessions healthy (34 fills, 3 round trips, $115,135 equity)
-- ✅ Effectiveness assessment target: May 26 checkpoint (5-7 live trading days post-warm-up)
-- ⚠️ May 22 outcome likely repeats STILL_MISS_B2 (expected, not code failure)
+### 📋 Orchestration Files Updated
+- **BLOCKED.md**: Updated Lever B HMM config block with SSH auth failure documentation
+- **CHECKIN.md**: Posted Session 1319 status with escalated user action items
+- **Committed**: BLOCKED.md at 05:39 UTC
 
-**Next Steps**:
-1. May 20 evening: Final monitoring check (Wave 1 signal log)
-2. May 21 10:30 UTC: 72h monitoring window closes
-3. May 21 19:00-20:00 UTC: Autonomous synthesis execution (resistance-research)
-4. May 22 20:00 UTC: Checkpoint execution (Lever B + AAPL sessions)
+### 🟡 Project Status Summary (No Work Executed — All Blocked)
+1. **stockbot** — Lever B config activation blocked on SSH access (CRITICAL, May 22 13:30 UTC deadline)
+2. **resistance-research** — Wave 1 monitoring active; next autonomous work: May 21 19:00 UTC synthesis
+3. **seedwarden** — Gates 1-2 user actions required; Gate 1 overdue (May 18), Gate 2 Canva setup approved
+4. **mfg-farm** — Test print execution pending
+5. **cybersecurity-hardening** — VeraCrypt restart pending (Windows user action)
+6. **all others** — Complete or paused; no autonomous work
 
-**Impact**: Lever B HMM integration fully operational. May 21-22 decision points staged. No further autonomous work required until May 21 synthesis.
+### 📌 Next Scheduled Events
+- **May 20 evening**: User fills Wave 1 signal log (email/Gist monitoring for resistance-research)
+- **May 21 19:00 UTC**: Autonomous resistance-research synthesis execution (30 min, requires May 20 data pre-populated)
+- **May 22 20:00 UTC**: Checkpoint execution (Lever B skipped if config not activated)
+
+**Session Assessment**: No autonomous work available. All projects blocked on user actions or scheduled events. Critical path item: Lever B config activation by May 22 13:30 UTC.

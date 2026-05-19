@@ -1,5 +1,20 @@
 # Work Log
 
+## Session: General Research Agent — Etsy SEO Q2-Q3 2026 — May 19 2026
+
+**Task**: Deep market research for mfg-farm Etsy pre-launch SEO optimization across 3 product lines (ModRun clips, headphone hooks, magnetic bin labels).
+
+**Files written**:
+- `/home/awank/dev/SuperClaude_Framework/projects/mfg-farm/etsy-seo-strategy-q2-q3-2026.md` — 3,200-word strategy document covering: 2026 algorithm changes (title soft cap, velocity, Star Seller gate), 15+ target keywords per product with saturation estimates, top-10 competitor analysis per line, seasonal demand May-December 2026, price elasticity at $12.99/$16.99/$19.99, bundle AOV optimization, per-product title/tag templates
+- `/home/awank/dev/SuperClaude_Framework/projects/mfg-farm/competitive-positioning-matrix.csv` — 31-row matrix: product x keyword x competitor x price/reviews/stars/gap/differentiator/seasonal/CPC proxy
+
+**Key findings**:
+1. 2026 Etsy algorithm: soft title cap ~70 chars; titles over this face mobile demotion (34% CTR drop documented). Shipping above $6 now causes active ranking suppression.
+2. Headphone hooks: dominant competitor (1,254 reviews, $14.99) has no cable-wrap post — zero-competition keyword cluster ModRun can own immediately.
+3. Magnetic bin labels: BendPrinting (10,500 sales, 4.9 stars) validated $14.99 price floor; N52 neodymium spec is unowned keyword territory.
+4. Launch prices: clips $12.99, hooks $16.99, labels $12.99/10-pack — all below $15 threshold for max recency-window velocity.
+5. January 2027 is single largest demand month for all three product lines — need 15+ reviews per listing before December 26.
+
 ## Session 1317 (Orchestrator: State Verification & User Action Documentation) — May 19 2026, 05:40–05:50 UTC
 
 **Session Status**: 🟡 **NO AUTONOMOUS WORK AVAILABLE — All projects blocked on user actions**
