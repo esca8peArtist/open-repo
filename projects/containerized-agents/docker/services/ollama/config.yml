@@ -38,7 +38,7 @@ ollama:
   context_length: "${OLLAMA_CONTEXT_LENGTH:-8192}"
 
   # --- Network ---
-  host: "0.0.0.0"
+  host: "127.0.0.1"          # Bind to localhost only (internal Docker network)
   port: 11434
 
   # --- Logging ---

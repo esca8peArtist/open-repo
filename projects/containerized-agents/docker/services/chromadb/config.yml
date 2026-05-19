@@ -11,7 +11,7 @@
 # =============================================================================
 
 server:
-  host: "0.0.0.0"           # CHROMA_SERVER_HOST — bind on all interfaces (internal network only)
+  host: "127.0.0.1"          # CHROMA_SERVER_HOST — bind to localhost only (internal Docker network)
   port: 8000                 # CHROMA_SERVER_HTTP_PORT
 
 persistence:
