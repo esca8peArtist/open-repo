@@ -1,3 +1,47 @@
+## Since Last Check-in (Session 1322, May 19 06:43–07:00 UTC)
+
+**Session Status**: ✅ **AUTONOMOUS EXECUTION COMPLETE — Item 67 Domain 58 Verification finished; May 21 synthesis fully staged**
+
+**What Was Done**:
+
+### ✅ Exploration Queue Item 67: Domain 58 Verification Complete
+- **Task**: Verify Domain 58 (*Tribal Sovereignty*) factually current for May 21 synthesis
+- **Execution time**: 12 minutes (within 20-30 min estimate; high efficiency due to May 19 pre-update)
+- **Key findings**: 
+  - Domain 58 already updated with May 18 SCOTUS GVR (*Turtle Mountain v. Howe*)
+  - Zero stale cert-pending language found
+  - Cross-domain references (7 domains) documented and current
+  - No synthesis-impacting updates required
+- **Deliverable**: `DOMAIN_58_VERIFICATION_REPORT.md` (1,200+ words, comprehensive 4-point verification checklist)
+- **Impact**: Clears Domain 58 as canonical reference for May 21 synthesis; all 4 reference domains (1, 37, 56, 58) now verified current
+- **Git commit**: `c618737e` feat(resistance-research): Item 67 — Domain 58 verification complete
+
+### 📊 Synthesis Readiness Status — 100% STAGED
+All 5 synthesis infrastructure components verified production-ready:
+1. ✅ **Domain 58 verification** (this session)
+2. ✅ **POST_WAVE1_SIGNAL_ANALYSIS_FRAMEWORK.md** (Session 1307) — response scoring, sector baselines, STRONG/MODERATE/WEAK thresholds
+3. ✅ **PHASE_2_DOMAIN_RESEARCH_SEQUENCING.md** (Session 1303) — domain classification, dependency chains, parallel execution tracks
+4. ✅ **WEAK_OUTCOME_CONTINGENCY_PLAN.md** (Session 1308) — corrective action decision tree for low-signal outcomes
+5. ✅ **MAY22_CHECKPOINT_CONTINGENCY_PATHWAYS.md** (Session 1307) — stockbot fallback paths for all checkpoint outcomes
+
+**Next autonomous event**: May 21 19:00 UTC — resistance-research synthesis execution (30 min, full autonomy, all infrastructure staged)
+
+### ⏳ Remaining User Actions (Unblocked by Today's Work)
+1. **May 20 evening**: Fill Wave 1 signal log (resistance-research monitoring, 15-30 min)
+2. **May 22 13:30 UTC**: Activate Lever B HMM config on Jetson (CRITICAL, 5-min fix, BLOCKS checkpoint)
+3. **Any time pre-May 30**: Create seedwarden social accounts (Gate 1, overdue, blocks May 30 launch)
+4. **Any time pre-May 30**: Complete cybersecurity Phase 1 VeraCrypt restart (Windows user action)
+5. **Any time**: Execute mfg-farm test print (user action, unblocks Etsy launch)
+
+### 📋 Files Committed
+- **DOMAIN_58_VERIFICATION_REPORT.md** — new verification document, commit c618737e
+- **WORKLOG.md** — updated with Session 1322 entry
+- **CHECKIN.md** — this entry
+
+**Session Assessment**: Quick autonomous verification task completed efficiently. May 21 synthesis infrastructure verified 100% production-ready. No user intervention required before synthesis execution. All critical-path items tracked for May 21-22 window.
+
+---
+
 ## Since Last Check-in (Session 1321, May 19 06:35–07:40 UTC)
 
 **Session Status**: ✅ **EXPLORATION QUEUE REFILLED — 3 new research items executed; May 21-22 critical path unblocked**
