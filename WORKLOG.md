@@ -19415,3 +19415,63 @@ Both remain unresolved; no new blockers discovered.
 
 **Session Assessment**: Orientation and state verification completed. Holding pattern confirmed. No changes to tracked state. All critical items documented in CHECKIN.md with specific user action items and deadlines.
 
+
+---
+
+## Session 1328 (May 19, 2026, 08:15–08:30 UTC)
+
+**Session Status**: 🟡 **EXPLORATION QUEUE EXPANSION — Pending items 23-25 created; Item 23 (SSH auth recovery) in progress**
+
+**What Was Done**:
+
+### Orientation
+- Reviewed ORCHESTRATOR_STATE.md, BLOCKED.md, EXPLORATION_QUEUE.md
+- Confirmed Lever B SSH auth blocker persists (Session 1324: confirmed public key rejected by Jetson)
+- Assessed project status: all higher-priority projects blocked on external dependencies
+- Per orchestration protocol: added 2–3 exploration queue items for high-impact research
+
+### Exploration Queue Expansion (Items 23-25)
+**Pending Items Created**:
+- **Item 23** (CRITICAL, May 22 deadline): SSH Authentication Recovery Guide for Jetson (Tailscale integration, passwordless sudo, fallback recovery)
+- **Item 24** (HIGH, May 30 deadline): Seedwarden Social Media Account Setup Requirements (Instagram/TikTok/Pinterest platform-specific guide)
+- **Item 25** (HIGH, Phase 2 launch): Resistance-research Phase 2 Domain 59 (Economic Precarity) Research Architecture
+
+### Work In Progress
+- **Item 23 START** (SSH Auth Recovery): Research Tailscale SSH integration, passwordless auth alternatives, serial console recovery fallback
+
+### Critical Path Status (Unchanged)
+- **May 22 13:30 UTC**: Lever B config deadline — 52 hours remaining. User action required (manual SSH or key distribution).
+- **May 21 19:00 UTC**: Resistance-research synthesis scheduled (autonomous execution)
+- **May 22 20:00 UTC**: Checkpoint execution
+
+**Next Steps**: 
+1. Complete Item 23 research (SSH recovery guide) → deliver by EOD May 19 → user can execute before May 22 deadline
+2. Execute Item 24 (Seedwarden social media guide) if time permits
+3. Hold Item 25 pending May 21 synthesis outcome
+
+
+### Item 23 Completion
+- **Deliverable**: `projects/stockbot/SSH_AUTHENTICATION_RECOVERY_GUIDE.md` (3,200+ words, production-ready)
+- **Content**: 5 recovery options (Tailscale SSH, manual key distribution, serial console, passwordless sudo, recovery mode) with decision tree and step-by-step instructions
+- **Key finding**: Option 2 (manual key distribution) is fastest for user if they can SSH
+- **Impact**: Enables user to fix Lever B config before May 22 13:30 UTC deadline
+- **Status**: Ready for immediate user execution
+
+
+### Item 24 Completion
+- **Deliverable**: `projects/seedwarden/SOCIAL_MEDIA_ACCOUNT_SETUP_GUIDE.md` (3,500+ words, production-ready)
+- **Content**: Platform-specific guides (Instagram, TikTok, Pinterest), cross-platform strategy, content policies, pre-launch checklist, troubleshooting
+- **Key findings**: TikTok Creator Fund requires 10K followers (unavailable pre-launch), Pinterest best for SEO, Instagram Reels best for engagement
+- **Impact**: Enables immediate user setup of Gate 1 accounts (May 16-29 timeline to May 30 launch)
+- **Status**: Ready for immediate user execution
+
+### Session Summary
+- **Items completed**: 23 (SSH recovery), 24 (Seedwarden social media)
+- **Items pending**: 25 (Phase 2 Domain 59 — deferred pending May 21 synthesis)
+- **Exploration Queue status**: 2 of 3 new items complete; queue refreshed for May 21-22 critical path
+- **Critical path maintained**: All deliverables align with May 21 synthesis and May 22 Lever B deadline
+
+### Key Deliverables for User Review
+1. `projects/stockbot/SSH_AUTHENTICATION_RECOVERY_GUIDE.md` — Immediate action needed (May 22 deadline)
+2. `projects/seedwarden/SOCIAL_MEDIA_ACCOUNT_SETUP_GUIDE.md` — Immediate action (Gate 1 overdue, 14-day setup timeline)
+

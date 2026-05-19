@@ -1,3 +1,64 @@
+## Since Last Check-in (Session 1328, May 19 08:15–08:55 UTC)
+
+**Session Status**: ✅ **EXPLORATION QUEUE ACTIVE — Items 23-24 COMPLETE; critical-path user guides delivered**
+
+**What Was Done**:
+
+### ✅ Exploration Queue Execution (Items 23-24)
+
+**Item 23: Stockbot SSH Authentication Recovery Guide** ✅ COMPLETE
+- **Deliverable**: `projects/stockbot/SSH_AUTHENTICATION_RECOVERY_GUIDE.md` (3,200+ words, production-ready)
+- **Content**: 5 recovery options ranked by feasibility
+  1. **Tailscale SSH** (2 min — fastest if Tailscale already enabled)
+  2. **Manual key distribution** (5 min — most reliable, recommended)
+  3. **Serial console recovery** (20-30 min — fallback, requires USB-C UART adapter)
+  4. Passwordless sudo + agent forwarding (not recommended)
+  5. Jetson recovery mode (not recommended, varies by model)
+- **Decision tree**: Which option to use based on available access methods
+- **Critical inclusion**: Exact commands for Lever B HMM config fix (once SSH restored)
+- **Impact**: Enables user to fix Lever B before May 22 13:30 UTC deadline
+- **Status**: Ready for immediate user execution
+
+**Item 24: Seedwarden Social Media Account Setup Guide** ✅ COMPLETE
+- **Deliverable**: `projects/seedwarden/SOCIAL_MEDIA_ACCOUNT_SETUP_GUIDE.md` (3,500+ words, production-ready)
+- **Content**: Complete platform-specific guides for Instagram, TikTok, Pinterest
+  - Account creation, business profile setup, feature enablement
+  - Content strategy and calendar (Week 1-2 pre-launch, Launch day)
+  - Cross-platform strategy (unified calendar, hashtag strategy, automation tools)
+  - Content policies (plant ID accuracy, foraging safety, controlled substances, affiliate disclosure)
+  - Pre-launch checklist (Week 1-2, Launch day)
+  - Troubleshooting (4 common issues + fixes)
+- **Key findings**:
+  - TikTok Creator Fund unavailable pre-launch (requires 10K followers)
+  - Pinterest most SEO-friendly (highest organic long-term reach)
+  - Instagram Reels highest engagement for plant content
+  - All platforms require accurate plant ID to comply with content policies
+- **Timeline**: 14-day setup (May 16-29) ready for May 30 launch
+- **Impact**: Enables rapid execution of Gate 1 (create social accounts) — overdue as of May 19
+- **Status**: Ready for immediate user execution
+
+### 📊 Project Status
+- **stockbot** (CRITICAL): Lever B SSH auth blocker — SSH recovery guide now available
+- **resistance-research**: May 21 19:00 UTC synthesis approaching (40 hours away)
+- **seedwarden**: Gate 1 (social accounts) guide now available; 14-day setup timeline to May 30
+- **All other projects**: No change from Session 1327
+
+### ⏰ Critical Path (Updated)
+- **Now**: User reads SSH recovery guide + Seedwarden social media guide
+- **May 20 evening**: User fills Wave 1 signal log (resistance-research)
+- **May 21 19:00 UTC**: Autonomous synthesis execution (30 min)
+- **May 22 13:30 UTC**: Lever B config deadline (SSH fix + Docker restart, 5 min after SSH restored)
+- **May 22 20:00 UTC**: Checkpoint execution
+
+**User Actions Needed**:
+1. **CRITICAL (May 22 by 13:30 UTC)**: Execute SSH recovery (5-30 min depending on method)
+2. **High (Today evening)**: Fill Wave 1 signal log (15-30 min)
+3. **High (May 16-29)**: Set up social media accounts (4-6 hours, split across 14 days)
+
+**Session Assessment**: Exploration Queue actively supporting critical path. Two major deliverables now available to user. May 21-22 events fully staged and documented.
+
+---
+
 ## Since Last Check-in (Session 1327, May 19 08:10–08:25 UTC)
 
 **Session Status**: 🟡 **HOLDING PATTERN — SSH verification failed; no autonomous work available**
