@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-19T05:17:49Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-19T05:25:40Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 0.6% | Reset in 163h | check: claude.ai → Settings → Usage & billing
@@ -95,9 +95,9 @@
 **Verify with**: `ssh -i /home/awank/.ssh/jetson_key ubuntu@100.120.18.84 'curl http://localhost:8000/api/health'` — should return `{"status":"ok","sessions":2}` AND `grep hmm_regime_masking /opt/stockbot/config/active-sessions-2session.json` should show `"hmm_regime_masking": true` for both sessions
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: resistance-research — focus references Session 1294 (22 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: seedwarden — focus references Session 1292 (24 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: open-repo — focus references Session 1277 (39 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: resistance-research — focus references Session 1294 (23 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: seedwarden — focus references Session 1292 (25 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 1277 (40 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
