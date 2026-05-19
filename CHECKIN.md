@@ -1,4 +1,59 @@
-## Since Last Check-in (Session 1336, May 19 11:15–12:30 UTC)
+## Since Last Check-in (Session 1337, May 19 10:46–11:15 UTC)
+
+**Session Status**: ✅ **RESISTANCE-RESEARCH WAVE 1 POST-MONITORING + SYNTHESIS PREP COMPLETE**
+
+### ✅ Wave 1 Post-Wave Monitoring — May 19 Breaking Developments Scan (COMPLETE)
+**Deliverable**: `projects/resistance-research/breaking-developments-may19-supplement.md`
+
+**Key findings (May 19)**:
+- **Category A (Drug Policy)**: FY2027 CJS anti-rescheduling rider recalibrated from "active threat" to "historically stripped in conference" — no emergency action needed
+- **Category B (Civil Rights)**: Common Cause/ACLU lawsuit (April 21) on SAVE database + Maryland AG FOIA suit vs ICE Baltimore
+- **Category C (Academic/Admin Law)**: No new developments; CASA decision continues operative
+- **Category D (State AGs)**: No new joint actions; active coalitions continue
+- **General (Domains 1-43)**: Trump v. Barbara ruling end-of-June; FISA 702 deadlock June 12; Abrego Garcia ruling overdue
+
+**Verdict**: No urgent breaking developments. All findings integrated into synthesis path logic.
+
+### ✅ May 21 Synthesis Readiness Verification (CONFIRMED)
+**All 5 synthesis parts confirmed production-ready**:
+- Synthesis Path A (no Domain 37) ✓
+- Synthesis Path A+Domain37 (recommended) ✓
+- Synthesis Path B ✓
+- Signal classification rules (STRONG/MODERATE/WEAK/TOO_EARLY) ✓
+- May 21 execution checklist (Steps 1-12) ✓
+
+**Status**: Autonomous-ready for May 21 19:00-20:00 UTC execution after user fills signal log.
+
+### 🔴 Block Status — Unchanged (All 3 Active)
+- **stockbot**: SSH auth broken; Lever B config not activated. May 22 checkpoint deadline (52 hours).
+- **cybersecurity-hardening**: VeraCrypt restart required (user action).
+- **mfg-farm**: Test print execution required (user action).
+
+### 📊 Critical Path Status
+- **May 20 evening**: resistance-research signal log fill (user action) — **USER ACTION DUE**
+- **May 21 19:00 UTC**: Synthesis execution (autonomous, pre-built) → May 21 20:00 UTC CHECKIN.md post
+- **May 22 13:30 UTC**: Lever B HMM config activation deadline (52 hours, SSH blocker) — **CRITICAL**
+- **May 22 20:00 UTC**: Checkpoint execution (autonomous, pre-built)
+
+### 📋 Exploration Queue Status
+- ✅ **Item 85 COMPLETE** (mfg-farm post-test-print launch sequence)
+- ⏳ **Item 86** (resistance-research post-synthesis analysis, ready May 21 21:00 UTC)
+- ⏳ **Item 87** (cybersecurity Phase 2 roadmap, ready May 25-27)
+
+### Needs Your Input
+**User Actions Due (May 20-21)**:
+1. **May 20 evening (~22:00 UTC)**: Fill signal log snapshot (inbox count, Gist views/comments)
+2. **May 21 before 10:30 UTC**: Final inbox/Gist check, log snapshot
+3. **May 22 before 13:30 UTC**: SSH key situation — either add orchestrator public key to Jetson authorized_keys, or manually execute Lever B config fix on Jetson (5-min task)
+
+### Session 1337 Summary
+- **Work executed**: Resistance-research Wave 1 post-monitoring + May 21 synthesis prep
+- **Token usage**: ~120K (parallel agent execution for breaking developments + synthesis verification)
+- **Impact**: May 21 synthesis execution is autonomous-ready; critical path on track
+
+---
+
+## History (Session 1336, May 19 11:15–12:30 UTC)
 
 **Session Status**: ✅ **ITEM 27 COMPLETE — SEEDWARDEN CONTENT CALENDAR AUDIENCE RESEARCH INTEGRATION**
 
