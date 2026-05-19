@@ -4403,3 +4403,77 @@ Current session: ~200K tokens (Item 65 framework + 2 Phase 3 research docs via p
 
 ---
 
+
+---
+
+## Session 1353 Check-in (May 19, 2026, 16:35 UTC)
+
+### Since Last Check-in
+
+**✅ Accomplished**:
+- **Item 87 COMPLETE**: Exploration Queue — Phase 2 Research Activation Checklist & Timeline Template
+  - 2 comprehensive deliverables: activation checklist (2,800 lines) + timeline template (1,200 lines)
+  - **Audit results**: Domains 56-59 all production-ready. Sources staged (35-50 per domain). Expert contacts verified.
+  - **Risk assessment**: Domain 57 requires June 1-2 source verification (7 flagged sources, 30-min task). Domain 59 conditional on June 1 HHS guidance (non-blocking).
+  - **Templates created**: 8 modular per-domain production templates (weeks 1-3 schedules, peer review cycles, cross-domain bridges, user customization, publication staging)
+  - **Trigger**: May 21 post-synthesis IF outcome is STRONG or MODERATE
+  - **Deadline met**: Completed by May 19 16:35 UTC (1.5 days early for May 20 target)
+
+**No obstacles**: All work was autonomous. No blockers encountered.
+
+### What's In Progress
+
+- **stockbot May 22 checkpoint**: Awaiting user SSH key approval to activate Lever B. Orchestrator public key must be added to Jetson `/home/awank/.ssh/authorized_keys`, OR user must manually SSH and run Lever B config fix. **Deadline: May 22 13:30 UTC** (3 days remaining).
+
+- **resistance-research May 21 synthesis**: All 5 synthesis parts are pre-built and deterministic. Ready for autonomous execution May 21 19:00-20:00 UTC. **Pre-condition**: User fills `wave-1-signal-log-may18-21.md` May 20-21 evening.
+
+### What Needs Your Input
+
+1. **Stockbot SSH Access (URGENT — due by May 22 13:30 UTC)**:
+   - **What**: Orchestrator's ED25519 public key (~/.ssh/id_ed25519.pub) is not authorized on Jetson
+   - **Why**: SSH auth to `ubuntu@100.120.18.84` fails with "Permission denied (publickey)"
+   - **Impact**: Without access, Lever B HMM config cannot be activated before May 22 checkpoint, defeating the purpose of Lever B testing
+   - **Your options**:
+     - Option A: Add orchestrator's public key to Jetson `authorized_keys` (requires existing access to Jetson)
+     - Option B: SSH manually to Jetson and run 5-minute Lever B config fix yourself (see BLOCKED.md for exact commands)
+   - **Timeline**: Must complete by May 22 13:30 UTC (52 hours remaining)
+
+2. **May 21 Synthesis Pre-condition**:
+   - **What**: Fill `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` with all signal data (Gist view counts, email responses, bounce notifications) from May 18-21
+   - **When**: May 20 evening (today-tomorrow) for May 21 synthesis execution
+   - **Time estimate**: 15-30 minutes total (consolidate data collected May 18-21)
+   - **Impact**: Synthesis cannot execute without signal log. This is the gate condition.
+
+### Suggested Next Steps for User
+
+**Priority 1 (May 19-20)**: Resolve stockbot SSH access (Options A or B above). This is blocking critical May 22 checkpoint.
+
+**Priority 2 (May 20 evening)**: Fill signal log for May 21 synthesis execution.
+
+**Priority 3 (May 21 post-synthesis)**: If synthesis outcome is STRONG or MODERATE, Phase 2 research activation email will arrive with next steps for June 1-15 domain production.
+
+### Exploration Queue Status
+
+- ✅ **Item 82** (Session 1337): Seedwarden Track B audience research — COMPLETE
+- ✅ **Item 83** (Session 1334): Open-repo Phase 5 roadmaps — COMPLETE  
+- ✅ **Item 87** (Session 1353): Resistance-research Phase 2 activation framework — COMPLETE
+- ⏳ **Item 85** (blocked on user test print): Mfg-farm post-test-print Etsy launch sequence
+- ⏳ **Item 86** (scheduled May 21 evening): Resistance-research post-synthesis analysis framework
+
+**Queue capacity**: 3 items, none immediately executable. Next queue refresh after May 21 synthesis outcome.
+
+### Critical Path Timeline
+
+| Date | Event | Owner | Status |
+|------|-------|-------|--------|
+| May 20 eve | Signal log fill (pre-synthesis) | User | ⏳ Awaiting action |
+| May 21 19:00 UTC | Synthesis execution | Orchestrator | 🟢 Ready (deterministic) |
+| May 21 eve | Phase 2 activation (if STRONG/MODERATE) | Orchestrator | 🟢 Ready |
+| May 22 13:30 UTC | Lever B config deadline | User (SSH) or Orchestrator (if access granted) | ⚠️ Blocker |
+| May 22 20:00 UTC | Checkpoint execution | Orchestrator | 🟢 Ready |
+| June 1-15 | Phase 2 domain production | Orchestrator (autonomous) | 🟢 Ready (templates staged) |
+| June 15 | Phase 2 publication staging | Orchestrator | 🟢 Ready |
+| July 1 | Tier 1/2 distribution activation | Orchestrator | 🟢 Ready (post-user-decision) |
+
+---
+
