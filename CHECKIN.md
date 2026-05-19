@@ -1,4 +1,31 @@
-## Since Last Check-in (Session 1305, May 19 03:00–04:10 UTC — Exploration Queue Items 70-72 Parallel Execution)
+## Since Last Check-in (Session 1305 Cont'd, May 19 03:40–04:30 UTC — Lever B HMM Integration Complete)
+
+**Session Status**: ✅ **LEVER B HMM INTEGRATION COMPLETE — READY FOR DEPLOYMENT REVIEW**
+
+**What Was Done**:
+- ✅ **stockbot Priority #1**: Lever B HMM regime masking integrated into trading path
+  - Integration point: `src/trading/trading_session.py` (3 surgical changes, <50 lines total)
+  - Tests: 27/27 HMM suite passing, 16/16 new integration tests passing, 3,758/3,758 unit tests passing (zero regressions)
+  - Commit: `68da4d1` on `feature/lever-b-hmm-integration` (NOT pushed, ready for review)
+  - Activation: Set `strategy_params={"hmm_regime_masking": True, "hmm_observe_mode": True}` on TradingSession
+  - Timeline: Ready for immediate merge + Jetson deploy upon user approval
+
+**Needs Your Input**:
+1. **Review Lever B integration branch** (`feature/lever-b-hmm-integration`):
+   - `git log master..feature/lever-b-hmm-integration` (shows 1 commit: `68da4d1`)
+   - `git diff master..feature/lever-b-hmm-integration` (shows 3 changes in trading_session.py + new integration test file)
+2. **Approve/defer**:
+   - If approved: I can merge to master + rsync to Jetson + restart (30 min total, can happen anytime outside market hours)
+   - If deferred: Branch remains available for post-checkpoint activation; May 22 checkpoint proceeds as-is (equity-only AAPL, STILL_MISS_B2 likely repeats)
+
+**May 22 Checkpoint Impact**:
+- Masker will initialize and detect regimes by May 22 (warm-up automatic on session startup)
+- Effectiveness assessment better suited to May 26 checkpoint (5–7 live trading days post-activation required for regime patterns to stabilize)
+- STILL_MISS_B2 outcome on May 22 expected and normal (not a code failure)
+
+---
+
+## Session 1305 (May 19 03:00–04:10 UTC — Exploration Queue Items 70-72 Parallel Execution)
 
 **Session Status**: ✅ **3 EXPLORATION QUEUE ITEMS COMPLETE — PRE-SYNTHESIS + PRE-JUNE DELIVERABLES READY**
 

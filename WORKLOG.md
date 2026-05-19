@@ -48,6 +48,48 @@
 
 **Time Efficiency**: All 3 items executed simultaneously (parallel agents). Sequential execution would have taken ~5–6 hours; parallel execution completed in ~4 hours wall-clock time
 
+---
+
+## Session 1305 (Cont'd) — Lever B HMM Integration — May 19 2026, 03:40–04:30 UTC
+
+**Work Completed**:
+
+### ✅ Lever B HMM Regime Masking Integration (stockbot Priority #1)
+
+**Status**: INTEGRATION COMPLETE — READY FOR DEPLOYMENT REVIEW
+
+**What was integrated**:
+- **File**: `src/ml/hmm_signal_masker.py` (200 lines, existing implementation from prior sessions)
+- **Integration point**: `src/trading/trading_session.py` (3 changes):
+  1. Line ~2610: Extract stacker signal + threshold predictions for masker input
+  2. New methods: `_get_hmm_masker(ticker)` (lazy factory), `_apply_hmm_masking()` (exception-safe wrapper)
+  3. Line ~1766: Insert masking call between signal generation and time-stop guard
+- **Mechanism**: Bear regime suppresses BUY + reduces SELL to 60%; sideways reduces SELL to 80%; bull pass-through. 60-bar warm-up guard automatic (historical bar pre-loading on session startup completes warm-up day 1).
+- **Activation**: Set `strategy_params={"hmm_regime_masking": True, "hmm_observe_mode": True}` on TradingSession. Observe mode logs masking without changing signals (recommended for first 1-2 sessions).
+
+**Test Results**:
+- HMM test suite: 27/27 passing ✅
+- New integration tests: 16/16 passing ✅
+- Full unit suite: 3,758 passed, 89 skipped, 0 new failures ✅
+
+**Commit**: `68da4d1` on `feature/lever-b-hmm-integration`
+- Branch contains complete working integration
+- NOT pushed to remote (per protocol)
+- Ready for user review + deployment decision
+
+**May 22 Checkpoint Impact**:
+- Warm-up completes day 1 (by May 22 checkpoint time), so masker will be initialized and detecting regimes
+- Effectiveness assessment better suited to May 26 checkpoint (5–7 live trading days under active masking required for regime patterns to stabilize)
+- May 22 will show STILL_MISS_B2 likely (as documented in current focus) — this is expected given market timing, not a code issue
+
+**Next Steps (User Action)**:
+1. Review feature/lever-b-hmm-integration branch (`git log master..feature/lever-b-hmm-integration`, `git diff master..feature/lever-b-hmm-integration`)
+2. If approved: Merge to master and deploy to Jetson (trivial: same rsync + restart as May 18)
+3. If deferred: Branch remains available for post-checkpoint activation
+4. Monitoring: May 22 checkpoint will confirm masker initialization; May 26 checkpoint will assess effectiveness post-warm-up
+
+**Status in PROJECTS.md**: Updated current focus to reflect integration complete, awaiting deployment approval
+
 **Commits**: EXPLORATION_QUEUE.md (items 70-72 marked complete + corrections documented), projects/resistance-research/, projects/systems-resilience/, projects/stockbot/
 
 ---
