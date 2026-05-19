@@ -54,6 +54,36 @@
 
 **Status**: Production-ready for May 21 19:00 UTC synthesis execution
 
+---
+
+## Session 1352 Summary (May 19, 15:56 UTC onwards)
+
+**Orientation**: Verified state, checked blocks, identified highest-priority unblocked work (Exploration Queue Item 86)
+
+**Work Completed**: 
+- ✅ Item 86: Resistance-Research Post-Synthesis Analysis Framework (2,800 words, production-ready, committed)
+- ✅ Updated WORKLOG + CHECKIN with session status + critical user actions
+- ✅ Verified Stockbot SSH block still active (user action required for Lever B)
+
+**Blocks Status**: 3 active, unchanged
+- 🔴 **Stockbot SSH auth** (CRITICAL — May 22 deadline): Orchestrator cannot SSH to Jetson; user must add public key to authorized_keys OR manually SSH and run Lever B config fix
+- 🟡 **Cybersecurity VeraCrypt** (user action): User at step 1.3, needs restart before Phase 2 work can proceed
+- 🟡 **Mfg-farm test print** (user action): All pre/post-print deliverables ready; test print execution pending
+
+**Exploration Queue Status**: 
+- Item 85: Blocked (test print)
+- Item 86: ✅ COMPLETE
+- Item 87: Cybersecurity Phase 2 roadmap — *status unclear* (Phase 2 roadmap already complete per Session 1345; may be duplicate or referring to different work)
+- **Need to add**: 2–3 new items to maintain queue health (currently <3 active items)
+
+**Token Usage**: ~80K/200K (40% budget consumed)
+
+**Next Session Priorities** (May 20–21):
+1. **User action — May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshot
+2. **Autonomous — May 21 19:00 UTC**: Synthesis execution + classification
+3. **User action — May 21 post-synthesis**: Activate Phase 2 research per outcome (STRONG/MODERATE/WEAK)
+4. **Critical — May 22 deadline**: Resolve Stockbot SSH auth (if not resolved, May 22 checkpoint outcome deterministic FAIL)
+
 ### Synthesis Readiness Confirmed
 
 **May 21 Synthesis Execution**:
