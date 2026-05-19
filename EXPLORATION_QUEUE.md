@@ -1342,3 +1342,66 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 **Total queue status**: Items 1–69 complete. ✅ Items 67-69 all COMPLETE (Domain 58 spot-check, Phase 2 conditional roadmap, Seedwarden sprint optimization). ✅ Item 68 delivered (PHASE_2_CONDITIONAL_RESEARCH_ROADMAP.md, committed Session 1296). ✅ Item 69 delivered (MAY_24_30_SPRINT_OPTIMIZATION_BY_DECISION.md, committed Session 1297). 📋 Item 61 (Wave 1 synthesis) executes May 21 19:00 UTC (autonomous). Queue ready for May 21+ execution.
 
 ---
+
+## New Items (Session 1302 — 2026-05-19, 02:40–03:00 UTC — Domain 58 Verification Complete)
+
+### ⏳ Item 70: resistance-research Phase 2 Domain Sequencing & Research Preparation
+**Status**: QUEUED (Session 1302, May 19 2026, 02:45 UTC)
+**Impact**: HIGH — May 21 synthesis determines Phase 2 activation path (STRONG/MODERATE/WEAK). Each path requires different domain research sequencing. Item 68 (PHASE_2_CONDITIONAL_RESEARCH_ROADMAP.md) pre-stages frameworks, but May 21-22 post-synthesis window needs executable domain sequencing that orchestrator can hand off without friction.
+**Context**: Phase 2 research will span 40+ domains across 6-8 weeks (June 2 – July 20, post-Wave-1 monitoring closure May 21). Domain 59 foundational work already complete (Session 1300: outline + sources + roadmap). Remaining ~39 domains need sequencing by: (a) research depth (1-day superficial vs. 3-5 day deep), (b) advocacy window (Domain 42 May 28 deadline is solo fast-track; others cluster into June/July windows), (c) dependency chains (some domains enable faster research in others).
+**Goal**: Create Phase 2 post-synthesis domain research sequencing:
+1. **Domain sequencing by impact window**: Fast-track domains due ≤June 15 (Domain 42 DEA + others), standard-track domains June 15–July 15, extended-track domains July 15+. Distribution: ~5-7 domains fast-track, ~15-20 standard, ~15 extended.
+2. **Research depth per domain**: Classify 40 domains into 3 depth tiers: (a) Tier 1 "canonical" (5–7 days, >40 citations) for Phase 2 anchor domains; (b) Tier 2 "substantive" (2–3 days, 20-35 citations) for supporting domains; (c) Tier 3 "foundational brief" (1 day, 10-15 citations) for establishing domain landscape.
+3. **Dependency chain mapping**: Which domains block others (e.g., if Domain 1 (voting rights) foundation unclear, Domain 5-8 voting expansion becomes harder). Create minimal-dependency sequencing so orchestrator can parallelize June research across multiple subagents.
+4. **Advocacy window calendar**: Cross-reference May 21 synthesis outcome (STRONG/MODERATE/WEAK) with each domain's "distribution window" to determine if fast-track research is needed for May-June amplification or if standard June timeline suffices.
+5. **Parallel research track specification**: How many domains can be researched in parallel May 22–June 2? (Estimate: 3 parallel domains = 6-day wall-clock deployment, sequential = 30+ days). Specify subagent assignment strategy.
+**Feasibility**: HIGH — mostly sequencing + dependency analysis work
+**Effort estimate**: 2–2.5 hours
+**Deliverable**: `projects/resistance-research/PHASE_2_DOMAIN_RESEARCH_SEQUENCING.md` (domains classified by impact window + research depth, dependency chain map, advocacy calendar cross-referenced to May 21 outcome, parallel research track specification, May 22–June 30 execution schedule with subagent assignments)
+**Why now**: Item 68 (conditional research roadmap) doesn't specify domain-by-domain sequencing. May 21 synthesis will generate the Phase 2 activation signal; May 22 orchestrator needs to hand off executable sequencing to subagents without improvisation. Pre-staging sequencing May 19-20 ensures zero friction when synthesis outcome lands May 21.
+**Blocker**: None (sequencing analysis work, independent of synthesis outcome)
+**Next Step**: Orchestrator produces sequencing May 19-20 → May 21 synthesis executes → May 21 evening user reviews sequencing + approves parallel tracks → May 22 00:00 UTC orchestrator spawns first Wave of domain research agents → parallel research proceeds through June
+
+---
+
+### ⏳ Item 71: systems-resilience Phase 4 Scope & Implementation Roadmap
+**Status**: QUEUED (Session 1302, May 19 2026, 02:50 UTC)
+**Impact**: MEDIUM-HIGH — Phase 3 complete (28.7K words, 170+ citations, all 5 community-scale domains). Phase 4 scope is not yet defined. User reviews Phase 3 (currently in progress) and must decide Phase 4 direction by June 1. Options likely: (a) implementation/pilot planning for Midwest Zone 5 (3–4 weeks), (b) scaling to other bioregions (6–8 weeks), (c) governance deep-dive (alternative economic/legal frameworks for community resilience), (d) curriculum/training materials. Roadmap must be production-ready by June 1 so user decision can land immediately.
+**Context**: systems-resilience is Priority 7 in current project queue but has strong long-term impact (existential resilience research for post-collapse scenarios). Phase 3 delivered authoritative 100–1,000-person-scale governance, food systems, information, security, and scaling frameworks. Post-Phase-3, the question is: does the project move toward implementation (pilot communities, training), expand to other bioregions (Pacific Northwest, Great Lakes, Appalachian), or deepen theoretical work (economic models, law, governance alternatives)?
+**Goal**: Produce Phase 4 scope & implementation roadmap:
+1. **Phase 4 option analysis** (all options): 
+   - **Option A: Midwest Zone 5 Pilot Implementation** (3–4 weeks, hands-on): Select 2–3 pilot communities (rural MN/WI/ND), develop 200-hour community governance curriculum, conduct 2 in-person workshops (week 1-2), document lessons learned + implementation barriers (week 3), produce pilot report.
+   - **Option B: Bioregion Expansion** (6–8 weeks): Adapt Phase 3 frameworks to 3 other US bioregions (Pacific Northwest, Great Lakes, Appalachian) + 1 international bioregion (likely: Amazon or Southeast Asian high-biodiversity zone). Same research depth as Phase 3, parallel research across 4 bioregions.
+   - **Option C: Governance Deep-Dive** (5–6 weeks): Expand on Phase 3 governance findings (Dunbar threshold 150, delegate council model, 8 Design Principles) into 3 specialized modules: (1) Law & sovereignty for post-collapse governance; (2) Economic models (mutual aid, gift economy, commons); (3) Decision-making & conflict resolution in scale transitions (100→150→500 person thresholds).
+   - **Option D: Curriculum & Training Materials** (4–5 weeks): Convert Phase 3 research into train-the-trainer modules + community workshops. Develop: (a) facilitator guide (90 min governance module, 90 min food systems module, etc.), (b) slide decks for workshops, (c) participant workbooks, (d) community assessment template.
+2. **Timeline + feasibility per option**: Sequential (one at a time) vs. parallel (multiple). Which options could run in parallel June-July?
+3. **Resource requirements**: User time, external expert consultation, community partnerships needed.
+4. **Impact assessment**: Which Phase 4 option best serves systems-resilience Goal (build practical resilience knowledge for communities)?
+**Feasibility**: HIGH — mostly scoping + option analysis work
+**Effort estimate**: 1.5–2 hours
+**Deliverable**: `projects/systems-resilience/PHASE_4_SCOPE_AND_ROADMAP.md` (4 Phase 4 options with timelines + feasibility, resource requirements per option, decision framework for user selection, 6-week execution schedule per option, impact assessment)
+**Why now**: User likely completing Phase 3 review by June 1. Phase 4 decision should land without delay so June research schedule can begin immediately (if implementation path chosen) or summer community engagement can begin (if pilot or curriculum path chosen).
+**Blocker**: None (scoping work, independent of Phase 3 completion)
+**Next Step**: Orchestrator produces Phase 4 roadmap May 19-20 → user reviews Phase 3 + roadmap May 20-31 → decides Phase 4 direction June 1 → executes Phase 4 starting June 2
+
+---
+
+### ⏳ Item 72: stockbot Multi-Ticker Training Specification (AMZN + JPM Tier 1)
+**Status**: QUEUED (Session 1302, May 19 2026, 02:55 UTC)
+**Impact**: MEDIUM-HIGH — Post-gate-1 implementation roadmap (Session 1300) identifies multi-ticker training as critical next step: AMZN + JPM Tier 1 (May 20-22), META/MSFT Tier 2 (May 26-28). But specification is high-level. If Lever B (HMM regime masking) is approved May 19, then May 20-22 autonomous training window opens immediately. Training must be specified precisely: ticker selection rationale, feature engineering targets, backtest dates, validation protocol, deployment checklist. Without specification, May 20 training starts without clarity on success criteria.
+**Context**: Current stockbot infrastructure: AAPL lgbm_ho + AAPL ridge_wf trained May 5-16. Both models are bullish (predicted returns +25-39% across current regime). Lever B HMM regime masking (completed Session 1300, 27/27 tests) suppresses BUY in bear regime, enabling exits. But single-ticker (AAPL) strategy carries concentration risk. Multi-ticker training diversifies both signal generation and regime detection (different tickers have different HMM signatures). AMZN (similar bull-signal momentum) + JPM (defensive, counter-cyclical) provide complementary regime signals.
+**Goal**: Produce AMZN + JPM Tier 1 training specification:
+1. **Ticker selection rationale**: Why AMZN + JPM specifically? (AMZN: high correlation with AAPL in bull regimes, tests if lgbm_ho works across mega-cap tech; JPM: low correlation, defensive, highest-probability hedge against AAPL downside → tests if ridge_wf can generate sell signals in other tickers)
+2. **Feature engineering specification**: What features differ from AAPL? (Different volatility profile → VIX interaction calibration; different momentum decay → lookback windows differ; cross-ticker regime correlation → does AMZN bull regime match AAPL? Does JPM bear regime trigger earlier?)
+3. **Training data specification**: Backtest dates (18 months: June 2024–Dec 2025? Or 12 months: June 2025–June 2026?). Validation split (80/20 train/test). Walk-forward intervals (weekly/monthly update cadence? Or static model trained once).
+4. **Validation protocol**: (a) lgbm_ho validation: R² target, RMSE bound, feature importance stability (top 5 features consistent with AAPL?); (b) ridge_wf validation: precision+recall on SELL signals, false-positive rate <10%, regime agreement with HMM Lever B.
+5. **Deployment checklist**: (a) Model files committed to git; (b) live trading pre-flight (paper trading on Alpaca for 48h before real capital); (c) position sizing verified (<5% per AAPL, <3% per AMZN, <2% per JPM to manage concentration); (d) exit rules wired into trading path.
+6. **Success criteria & fallback**: If AMZN lgbm_ho fails to beat baseline (Sharpe <1.0), revert to AAPL+JPM dyad and defer AMZN to Tier 2. If JPM ridge_wf produces <3 SELL signals in backtest, model undershoots expectations → escalate to Lever C (explicit momentum cutoff gates).
+**Feasibility**: MEDIUM-HIGH — depends on Lever B approval; if approved, specification is mostly documentation work
+**Effort estimate**: 1.5–2 hours (if Lever B approved); 0.5 hours (specification-only) if waiting for approval
+**Deliverable**: `projects/stockbot/AMZN_JPM_TIER1_TRAINING_SPECIFICATION.md` (ticker selection rationale, feature engineering specification, training data + validation split, validation protocol per model, deployment checklist, success criteria + fallback paths)
+**Why now**: If Lever B approved May 19, training window opens May 20. Specification must be ready May 20 06:00 UTC so that training can start without discovery friction. If Lever B deferred, specification is contingency prep. Either way, having specification ready May 19 eliminates bottleneck.
+**Blocker**: Depends on Lever B approval status; can produce specification regardless (contingency)
+**Next Step**: If Lever B approved May 19: May 20 06:00 UTC orchestrator spawns stockbot subagent with specification → AMZN + JPM training complete by May 22 20:00 UTC (in parallel with next checkpoint). If Lever B deferred: specification ready for June implementation.
+
+---
