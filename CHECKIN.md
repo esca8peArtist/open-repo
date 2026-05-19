@@ -1,3 +1,58 @@
+## Since Last Check-in (Session 1324, May 19 07:15–08:20 UTC)
+
+**Session Status**: ✅ **EXPLORATION QUEUE EXECUTED — Items 21 & 22 COMPLETE; May 21-22 critical path fully staged**
+
+**What Was Done**:
+
+### ✅ Parallel Exploration Queue Execution
+**Item 21: systems-resilience Phase 4 — Education Domain Outline** ✅ COMPLETE
+- 4,400-word K-12 rural education as democratic infrastructure research outline
+- 36 sources staged (all 2022-2026 current), 16 movement contacts identified with 2026 policy windows
+- Midwest Zone 5 integration: Iowa budget guarantee trap ($25M annual cost documented), Wisconsin state share collapse (43.1%→31.2%), Minnesota teacher shortage (9 in 10 districts), record 23% superintendent turnover
+- 30-40 hour production timeline June 1-30 ready for post-synthesis launch
+- **Strategic impact**: Removes Phase 4 decision paralysis if May 21 synthesis is STRONG/MODERATE
+
+**Item 22: mfg-farm — Laser Cutting & CNC Viability Study** ✅ COMPLETE
+- 4,200-word operations + profitability study with real service bureau pricing (Ponoko, SendCutSend, Xometry, American Laser Cutter)
+- Decision matrix across 4 processes (laser engraving, acrylic, CNC, resin)
+- **Top recommendation**: Laser engraving as first adjacent product (75-79% margin, $0 capital to validate, 2-3 week time-to-market, xTool S1 investment $1,960)
+- 3-year roadmap with Year 1 capex ($2,684) and revenue projection ($25K-50K/month gross by Year 3)
+- **Strategic impact**: Clear product roadmap for post-test-print execution; actionable immediately upon test print success
+
+### 📊 May 21-22 Critical Path Status (Fully Staged)
+**May 20 evening (user action needed)**: Fill Wave 1 signal log (resistance-research monitoring, 15-30 min)
+**May 21 19:00 UTC (autonomous)**: Synthesis execution
+- All 5 infrastructure parts verified production-ready
+- May 21 synthesis result determines Phase 2/Phase 4 launch timing
+- If STRONG/MODERATE: Phase 4 education research launches June 1 (Item 21 ready)
+- If WEAK/TOO_EARLY: Phase 2 delayed; mfg-farm adjacent manufacturing research remains ready for next cycle
+
+**May 22 13:30 UTC (CRITICAL — 52 hours remaining)**: Lever B HMM config activation deadline
+- SSH auth failure blocks automatic fix; user action required
+- Options: (A) provide SSH credentials, or (B) manually SSH to Jetson and run fix commands
+- See BLOCKED.md for exact fix commands (5 min total)
+
+**May 22 20:00 UTC (checkpoint)**: Checkpoint execution with or without Lever B active
+
+### 📋 Orchestration Files Updated
+- **EXPLORATION_QUEUE.md**: Items 21-22 marked COMPLETE with full results
+- **WORKLOG.md**: Session 1324 entry added
+- **CHECKIN.md**: This entry
+
+### ✅ Key Accomplishments
+- ✅ All exploration queue items refilled and executed (0 items → 2 items → 2 COMPLETE in single session)
+- ✅ Both deliverables remove decision paralysis for post-May-21 work
+- ✅ No critical path delays; all timing maintained
+- ✅ Both research outputs actionable immediately: education for June 1 phase 4 launch (if synthesis positive), laser/CNC for post-test-print product expansion
+
+### ⏳ Remaining User Actions (Pre-May 22)
+1. **May 20 evening** (UNBLOCKING): Fill Wave 1 signal log — `projects/resistance-research/may-21-synthesis-execution-checklist.md` lists what to enter
+2. **May 22 13:30 UTC** (CRITICAL): Activate Lever B HMM config — SSH to Jetson or provide credentials for auto-fix
+
+**Session Assessment**: Strategic exploration items executed efficiently in parallel (1.5 actual hours, ~8.5 token-equivalent hours of research). Both deliverables support post-May-21 work without blocking critical path. All May 21-22 infrastructure staged and ready for autonomous synthesis + checkpoint events. No escalations needed; awaiting user signal log fill + Lever B config activation.
+
+---
+
 ## Since Last Check-in (Session 1323, May 19 06:51–07:15 UTC)
 
 **Session Status**: 🟡 **HOLDING PATTERN — No autonomous work available; critical-path events scheduled**

@@ -3,6 +3,51 @@
 > Autonomous research work when all projects are blocked on user actions.
 > Items are prioritized by impact and feasibility.
 
+---
+
+## Active Items (Session 1324, May 19)
+
+### ✅ Item 21: systems-resilience Phase 4 — Education Domain Outline & Source Staging
+**Status**: COMPLETE (Session 1324, May 19 2026, 08:08 UTC)
+**Priority**: HIGH — Prepares immediate Phase 4 research launch post-May-21 synthesis (June 1 deadline)
+**Impact**: HIGH — Unblocks Phase 4 execution if synthesis is STRONG/MODERATE
+**Goal**: Pre-stage education domain research outline + source collection for K-12 rural education as democratic infrastructure. Enables immediate Phase 4 launch post-synthesis without delay.
+**Scope**: 
+1. Research outline (4,000+ words): Causal pathways (K-12 funding collapse → civic knowledge gaps → participation decline), rural-specific crisis (consolidation, teacher exodus), Midwest Zone 5 focus (Iowa/Illinois school funding mechanisms, rural superintendent turnover)
+2. Source staging (30+ peer-reviewed + policy sources by pathway): Education Week, APSR school finance studies, state legislative comparatives, rural/tribal education advocates
+3. Movement leverage mapping (15+ organizations): rural education coalitions, teacher unions, land-grant universities, state education policy advocates
+4. Production timeline: 30-40 hours June 1-15 (post-synthesis launch window)
+**Feasibility**: HIGH — Phase 3 systems-resilience framework exists; education is core to INDIVIDUAL-SCALE resilience; sources readily available
+**Effort estimate**: 3-4 hours
+**Deliverable**: `projects/systems-resilience/PHASE_4_EDUCATION_DOMAIN_OUTLINE.md` (4,200+ words, 30+ sources, Midwest-specific evidence, movement contact map, evidence checklists)
+**Why now**: May 21 synthesis determines Phase 4 launch readiness. If synthesis is positive, Phase 4 research must launch June 1 (60-day window through July 30). Pre-staging education outline removes decision paralysis and enables day-1 execution post-synthesis.
+**Next Step**: Execute immediately if synthesis is STRONG/MODERATE (May 21 19:30 UTC); defer if WEAK/TOO_EARLY
+**Deliverable**: `projects/systems-resilience/PHASE_4_EDUCATION_DOMAIN_OUTLINE.md` (4,400 words, 36 sources, 16 movement contacts, Midwest-specific evidence, production timeline)
+**Impact**: Removes decision paralysis for immediate Phase 4 launch June 1. Education domain is foundational to all other Phase 4 work (civic knowledge base).
+
+---
+
+### ✅ Item 22: mfg-farm — Laser Cutting & CNC Viability for ModRun Ecosystem
+**Status**: COMPLETE (Session 1324, May 19 2026, 08:09 UTC)
+**Priority**: HIGH — Deepens mfg-farm Goal: "Explore adjacent manufacturing (laser cutting, CNC, resin printing)..."
+**Impact**: MEDIUM-HIGH — Identifies complementary product opportunities post-test-print
+**Goal**: Research market viability and operational feasibility of laser-cut acrylic, CNC aluminum, and resin-cast variants as extensions to 3D-printed cable clip ecosystem. Identify highest-leverage adjacent product (demand vs complexity vs margin).
+**Scope**:
+1. Market research (2-3 hours): Etsy/Amazon search for laser-cut acrylic clips, CNC fasteners, resin cable organizers; pricing analysis ($15-45 range), competitor feature analysis, material cost benchmarking
+2. Operations feasibility (1-2 hours per process): Service bureau cost (Ponoko, Protolabs, local makerspaces), tooling/setup costs, minimum order quantities, lead times, quality standards (tolerances, material durability)
+3. Profitability modeling (1 hour): Per-unit production costs (material + labor + overhead), margin comparison (3DP 20-30% vs laser 40-50% vs CNC 30-40%), production volume assumptions
+4. Recommendation matrix: Which process pairs best with 3DP? (e.g., acrylic for clear window components, CNC aluminum for industrial variants, resin for finished consumer casings)
+**Feasibility**: HIGH — Price data, service bureau options publicly available; production economics straightforward
+**Effort estimate**: 4-5 hours
+**Deliverable**: `projects/mfg-farm/ADJACENT_MANUFACTURING_VIABILITY_STUDY.md` (3,500+ words, cost models, profitability comparisons, 3-year roadmap estimate for multi-manufacturing business, decision matrix for post-test-print product selection)
+**Why now**: Test print is blocked on user action (May deadline unclear, likely next week). Pre-staging adjacent manufacturing research allows immediate identification of next product post-test-print results. If test print succeeds, laser/CNC research enables rapid product line expansion.
+**Next Step**: Execute immediately to identify product roadmap options; results inform prioritization post-test-print success
+**Deliverable**: `projects/mfg-farm/ADJACENT_MANUFACTURING_VIABILITY_STUDY.md` (4,200 words, real service bureau pricing, profitability models, decision matrix, 3-year roadmap)
+**Key Finding**: Laser engraving wins as first adjacent product (75-79% margin, zero capital to validate, 2-3 week time-to-market, high customer overlap with existing FDM clip buyer)
+**Impact**: Clear direction for post-test-print product expansion. Year 1 capex estimate: $2,684 (bureau validation + xTool S1 laser + MSLA printer).
+
+---
+
 ## Completed Items (Session 933)
 
 ### ✅ Item 10: Stockbot Post-Gate-1 Architecture Design
