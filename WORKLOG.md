@@ -39,6 +39,21 @@
 - Gaps: All gaps are user-action gates (Gate 1: social accounts overdue, Canva Brand Kit not created, Kit account not created, zone card PDFs not produced)
 - Action: None — project waiting on user execution
 
+### ✅ Item 86 COMPLETE: Resistance-Research Post-Synthesis Analysis Framework
+
+**Deliverable**: `phase-2-post-synthesis-analysis-framework.md` (2,800 words)
+**Commit**: `a4a742e6`
+**What it does**: One-document reference for May 21 evening post-synthesis. User reads synthesis outcome classification (STRONG/MODERATE/WEAK), goes to matching section, and immediately knows: (1) what outcome means, (2) what happens next, (3) what Phase 2 domains activate, (4) what user actions are required, (5) what timeline applies.
+
+**Key features**:
+- STRONG pathway: Phase 2 all-systems-go, all 4 domains (56–59) activate with staggered distribution windows
+- MODERATE pathway: Phase 2 activation with framing caveats (MODERATE-Gist vs MODERATE-Reply distinction for Tier 2 social proof)
+- WEAK pathway: Root cause analysis, retry conditions, when to abort Phase 2
+- Risk indicators: Early warning signs synthesis may be misclassified (QRP edge cases, response rate floor violations)
+- Cross-referenced to existing activation checklist (Session 1346) and domain timeline templates
+
+**Status**: Production-ready for May 21 19:00 UTC synthesis execution
+
 ### Synthesis Readiness Confirmed
 
 **May 21 Synthesis Execution**:
@@ -46,6 +61,7 @@
 - ✅ Signal log template clear (user fills May 20 ~22:00 UTC snapshot + May 21 synthesis snapshot before 19:00 UTC)
 - ✅ Classification rules deterministic (3 rules + law school carve-out, execution checklist 25–30 min)
 - ✅ Domain 42 Category A sends queued for May 21 morning (May 24 DEA deadline)
+- ✅ **POST-SYNTHESIS ANALYSIS FRAMEWORK COMPLETE** — user can immediately classify outcome and activate Phase 2
 - Pre-condition for user: fill `wave-1-signal-log-may18-21.md` May 20–21
 
 **Parallel Agent Execution** (this session):
