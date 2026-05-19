@@ -1,3 +1,34 @@
+## Since Last Check-in (Session 1370-ORCHESTRATOR, May 19 22:13–22:30 UTC)
+
+**Session Status**: 🟡 **CRITICAL ESCALATION DETECTED — STOCKBOT SSH AUTH DEADLINE 39 HOURS AWAY**
+
+### Critical Alert
+🔴 **STOCKBOT SSH AUTH FAILURE — DEADLINE MAY 22 13:30 UTC (39 HOURS FROM NOW)**
+- **Block**: Jetson SSH key not authorized; Lever B HMM config cannot be deployed remotely
+- **Impact**: May 22 checkpoint at 20:00 UTC will execute with Lever A config (same as May 19 failure), defeating Lever B testing
+- **What I need**: User action by May 22 13:30 UTC — either (A) SSH to Jetson and authorize orchestrator key, OR (B) manually run the 5-min Lever B config fix (see BLOCKED.md lines 71–94 for exact commands)
+- **Time available**: 39 hours remaining
+- **Status**: Cannot be auto-resolved; requires user intervention ASAP
+
+### Orchestrator Status
+- ✅ **Orientation complete**: ORCHESTRATOR_STATE.md reviewed, all active blocks checked
+- ✅ **mfg-farm test print**: Not started (user action required) — no auto resolution available
+- ✅ **Exploration Queue**: Items 94–96 identified and staged for May 22–25 execution (all 3 depend on May 21 synthesis outcome or May 22 checkpoint)
+- ✅ **Session focus**: Confirmed Items 85–93 complete; Items 94–96 ready for post-May-21/May-22 execution
+
+### Next Critical Milestones
+1. **May 20 evening** (user): Fill `wave-1-signal-log-may18-21.md` for May 21 synthesis
+2. **May 21 19:00 UTC** (autonomous): Synthesis execution (fully prepped, 25–35 min)
+3. **May 22 13:30 UTC** (URGENT): Jetson SSH config fix — **ESCALATE IF NO PROGRESS BY MAY 21 17:00 UTC**
+4. **May 22 20:00 UTC** (autonomous): Stockbot checkpoint execution
+
+### Items Needing Immediate User Input
+1. 🔴 **TODAY/MAY 22 (BEFORE 13:30 UTC)**: SSH key auth for Jetson — **CRITICAL 39-HOUR DEADLINE**
+2. **May 20 evening**: Fill signal log for May 21 synthesis
+3. **May 22-25**: Items 94–96 execution (Wave 2 distribution, Seedwarden Phase 3 plans, Stockbot post-checkpoint decision playbook)
+
+---
+
 ## Since Last Check-in (Session 1369-ORCHESTRATOR, May 19 21:56–23:50 UTC)
 
 **Session Status**: 🟢 **COMPLETED — 3-AGENT PARALLEL EXECUTION, 4 DELIVERABLES, EXPLOITATION QUEUE REFILLED, SYNTHESIS READY FOR MAY 21**
