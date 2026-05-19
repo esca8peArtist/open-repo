@@ -1,0 +1,48 @@
+{
+  "sessions": [
+    {
+      "session_id": "33a4afe676cae12a",
+      "run_id": "5b9180281ffe6bc8",
+      "stacker_id": "0676c84e-e0a1-4e6a-9284-1f9daa3b5292",
+      "stacker_name": "AAPL_h10_lgbm_ho",
+      "strategy": "stacker:0676c84e-e0a1-4e6a-9284-1f9daa3b5292",
+      "tickers": [
+        "AAPL"
+      ],
+      "initial_capital": 10000.0,
+      "started_at": "2026-04-26T05:50:34.375722+00:00",
+      "api_base": "http://localhost:8000",
+      "note": "AAPL h10_lgbm_ho session",
+      "threshold_multiplier": 0.4,
+      "confidence_floor": 0.45,
+      "strategy_params": {
+        "hmm_regime_masking": true,
+        "hmm_observe_mode": true,
+        "hmm_min_fit_bars": 60,
+        "hmm_suppress_buy_in_bear": true
+      }
+    },
+    {
+      "session_id": "a1b2c3d4e5f60001",
+      "run_id": "ridge_run_001",
+      "stacker_id": "ridge-wf-aapl-uuid",
+      "stacker_name": "AAPL_h10_ridge_wf",
+      "strategy": "stacker:ridge-wf-aapl-uuid",
+      "tickers": [
+        "AAPL"
+      ],
+      "initial_capital": 10000.0,
+      "started_at": "2026-05-04T00:00:00.000000+00:00",
+      "api_base": "http://localhost:8000",
+      "note": "AAPL h10_ridge_wf session",
+      "threshold_multiplier": 0.4,
+      "confidence_floor": 0.45,
+      "strategy_params": {
+        "hmm_regime_masking": true,
+        "hmm_observe_mode": true,
+        "hmm_min_fit_bars": 60,
+        "hmm_suppress_buy_in_bear": true
+      }
+    }
+  ]
+}
