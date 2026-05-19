@@ -1,3 +1,61 @@
+## Since Last Check-in (Session 1358, May 19 19:25–20:15 UTC)
+
+**Session Status**: 🟢 **COMPLETED — 3 PARALLEL EXPLORATION QUEUE AUDITS EXECUTED, ALL PRE-STAGING VERIFIED PRODUCTION-READY**
+
+### Session 1358 Summary
+
+**Work Completed** (All 3 exploration queue items verified):
+
+1. ✅ **Resistance-Research Phase 2 Research Activation Checklist & Pre-Synthesis Prep** (Agent audit)
+   - Files verified in place: `phase-2-research-activation-checklist.md` (4,578 words, 322 lines) + `phase-2-research-timeline-template.md` (3,726 words, 279 lines)
+   - **Audit findings**: Domains 56–59 production-ready for activation; Domain 60 not required. Per-domain source counts verified (D56: 47 citations, D57: 57 sources staged, D58: 34 citations, D59: 48 sources staged)
+   - **Critical constraint identified**: Domain 58 has hard May 20–June 10 deadline (Trump v. Barbara SCOTUS ruling expected late June/early July)
+   - **Domain-specific access audit**: All identified; zero API keys needed; Obsidian vault structure recommended
+   - **Phase 2 estimate**: 120–130 hours (single researcher) across 9–10 weeks. Peer review cycles + cross-domain bridge architecture all specified
+   - **Status**: Ready for May 21 09:00 UTC post-synthesis review and immediate Phase 2 research launch (if synthesis outcome STRONG/MODERATE)
+
+2. ✅ **Open-repo Phase 5 Candidate 1 ZimWriter Implementation Verification** (Agent audit + new deliverables)
+   - **Audit findings**: libzim 3.9.0 compatible (March 2026 release, zero breaking changes across 3.2–3.9). All 84 tests pass. Real libzim confirmed running (2.31s vs 0.16s stub). Live ZIM file generated with correct magic bytes
+   - **Schema audit**: 10-stub random sample all valid, correct schema, all required fields, consistent data types
+   - **Migration audit**: 003 migration complete, chain correct, partial index syntax valid
+   - **Risk register**: 6 total identified, none blocking merge. Two new: (1) Xapian FTS disabled (MVP acceptable, needs doc), (2) datetime.utcnow() DeprecationWarning on Python 3.12+ (low-priority post-merge)
+   - **New deliverables**: `phase-5-candidate-1-implementation-verification.md` (~1,600 words) + `phase-5-candidate-1-implementation-checklist.md` (1.75–2.5 hour timeline)
+   - **Merge status**: De-risked and deployment-ready. Approval request added to open-source-rideshare CHECKIN.md for May 25-26 user decision
+
+3. ✅ **Seedwarden Phase 3 Medicinal Herbs Production Timeline & Critical Path** (Agent audit)
+   - Files verified in place: `phase-3-medicinal-herbs-critical-path.md` (6,212 words) + `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (5,609 words) + Gantt CSV + ASCII timeline + supplier tracker
+   - **Verification findings**: Both Phase 3 launch gates CONFIRMED CLEARED (forager cohort 21.3% ✓, native plants 2.24% ✓). Phase 3 authorized to launch June 22–July 13 post-Phase-2
+   - **5-bundle critical path**: Women's Health / Respiratory / Immunity / Sleep / Digestive (56–66 hours writing, 12.5 hours Canva, Goldenseal order June 8 = zero-float critical deadline)
+   - **Risk hierarchy verified**: Supplier buffer per tier, design revision mitigations, production bottleneck chain (writing > Goldenseal > SME review)
+   - **Three user decisions needed by May 30**: (1) Sprint scope (Option A: 5 bundles single writer / Option B: two writers / Option C: 3 bundles), (2) Goldenseal sourcing (order or CC path), (3) Second writer engagement
+   - **Status**: All Phase 3 assets operationalized; June 22 execution ready with zero setup delay
+
+**Project Status Snapshot**:
+- **Resistance-research**: May 21 synthesis ready (autonomous); Phase 2 pre-staging verified complete
+- **Open-repo**: Phase 5 Candidate 1 verified de-risked; merge approval ready for May 25-26
+- **Seedwarden Track B**: May 30 launch confirmed ready; Phase 3 critical path verified; gates cleared
+- **Stockbot**: **CRITICAL: SSH auth required by May 22 13:30 UTC** (public key must be added to Jetson authorized_keys or manual Lever B config fix)
+- **Systems-resilience**: Phase 3 complete; awaiting user Phase 5 path decision (June 1)
+- **Cybersecurity-hardening**: Phase 1 at step 1.3 (VeraCrypt restart needed)
+- **Mfg-farm**: All pre/post-print deliverables ready; test print execution pending
+
+**Items Needing User Input**:
+1. **TODAY (May 19–20)**: SSH auth for Jetson — add orchestrator ED25519 public key to authorized_keys (critical May 22 13:30 UTC deadline)
+2. **May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots (10 min, enables May 21 synthesis)
+3. **May 21 evening**: Read synthesis outcome; activate Phase 2 research if STRONG/MODERATE
+4. **May 22 13:30 UTC**: SSH auth deadline; if unresolved, May 22 checkpoint outcome = May 19 repeat
+5. **May 25–26**: Review Phase 5 Candidate 1 verification; approve for merge
+6. **May 25–30**: Three seedwarden Phase 3 decisions (scope, Goldenseal sourcing, second writer)
+
+**Critical Path Summary**:
+- **May 21 19:00 UTC**: Resistance-research synthesis (autonomous, deterministic)
+- **May 22 13:30 UTC**: Stockbot SSH auth deadline (critical)
+- **May 22 20:00 UTC**: Stockbot May 22 checkpoint execution
+- **May 25–26**: User approval for open-repo Phase 5 merge
+- **May 30**: Seedwarden Phase 2 Track B launch
+
+---
+
 ## Since Last Check-in (Session 1357, May 19 19:37–19:50 UTC)
 
 **Session Status**: 🟢 **COMPLETED — PRE-SYNTHESIS VERIFICATION CONFIRMS MAY 21 AUTONOMOUS EXECUTION READY**
