@@ -4,6 +4,70 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Critical Path Analysis — May 19, 2026
+
+**Task**: Develop Phase 3 Medicinal Herbs Production Timeline with critical path analysis for
+the June 22–July 13 execution window (22-day sprint, 5 bundles). Two deliverables: critical
+path document and Gantt CSV.
+
+**Source review**: Read all four existing Phase 3 production-ready assets (Session 861):
+`phase-3-medicinal-herbs-sourcing-guide.md`, `phase-3-medicinal-herbs-content-outline.md`,
+`phase-3-medicinal-herbs-etsy-listings.md`. Also read `PHASE_3_PRODUCTION_TIMELINE.md`,
+`PHASE_3_PHOTOGRAPHY_LOGISTICS_PLAN.md`, and `LIFESTYLE_PHOTOGRAPHY_STRATEGY.md` for
+photography studio standards and supplier lead times.
+
+**Key findings from source review**:
+- Species list: The existing content outline (Session 861, production-ready) uses different
+  species than the task spec in some bundles. Authoritative species are:
+  Women's Health (Black Cohosh, Vitex, Red Clover, Calendula, Lavender),
+  Respiratory (Elderberry, Mullein, Echinacea x2, Thyme),
+  Immunity (Echinacea, Ashwagandha, Elderberry, Goldenseal),
+  Sleep (Valerian, Passionflower, Lemon Balm, Lavender),
+  Digestive (Dandelion, Calendula, Lemon Balm, Ginger).
+- 7 unique species appear across 21 bundle slots (shared species = ~30% rewrite burden, not full redraft).
+- Writing hours confirmed: 64-74 hours total (14-16 hrs Women's Health and Immunity; 12-14 hrs each Respiratory, Sleep, Digestive).
+- Critical constraint: Writing (64-74 hrs) >> Design (12.5 hrs) >> Upload prep (6 hrs).
+- Goldenseal lead time is the earliest hard deadline: 5-6 weeks = order by June 8 for July 13 receipt.
+- Both launch gates cleared: forager cohort 21.3% (gate >20%), native plants 2.24% (gate >1.5%).
+- Photo sourcing: all 21 species have verified Wikimedia Commons CC-BY-SA or iNaturalist CC-BY
+  coverage per sourcing guide. Physical specimens are supplemental, not required.
+- Studio photography is primary plan (indoor, north-facing window); outdoor location is supplement.
+
+**Files written**:
+
+`projects/seedwarden/phase-3-medicinal-herbs-critical-path.md` — 2,800+ words. Eight
+sections: (1) Herb selection finalization with supplier lead times, order deadlines, and
+contingency supplier list for all 21 species across 5 bundles. (2) Writing schedule with
+hour-level daily breakdown for all 3 weeks (June 22-July 13), float day analysis, shared-species
+efficiency adjustment. (3) Canva design timeline (12.5 hours total, parallel track, design lock
+July 3). (4) Photography staging (May 26-June 21 pre-sprint, 4-week track, studio setup
+requirements, props by bundle, two contingencies). (5) Upload sequence (June 29-August 3,
+7-8 day spacing, algorithm rationale, upload-day checklist). (6) Risk analysis: 5 risks with
+probability/impact/mitigation — supplier delays (order by June 8/15, dried herb substitution),
+location unavailable (indoor studio is primary plan), Canva revision loops (design lock date,
+fallback to Google Docs), writing productivity lower than estimate (Week 3 float absorbs 10 hrs
+overrun, shared-species condensation saves 4-6 hrs), critical path constraint (three scope options
+for user decision). (7) Critical path visualization (ASCII Gantt). (8) Week-by-week decision
+points with specific gate dates. Appendices: contingency supplier contacts, Etsy algorithm
+upload spacing guidance, FTC language quick reference.
+
+`projects/seedwarden/phase-3-production-gantt.csv` — 30-row Gantt CSV. Columns: Task, Start,
+End, Duration (days), Predecessors, Float (days), Critical Path?, Notes. Covers all major
+task categories: herb selection, plant sourcing (3 tiers by lead time), location scout, fresh
+herb photography (seedling + mature passes), dry herb photography, photo editing, Canva pre-test,
+writing (all 5 bundles individually), cover design (3 batches), zone card design (2 batches),
+self-edit/FTC review, SEO pass, PDF export, 5 upload milestones (June 29-Aug 3), 2 float days,
+WORKLOG rolling update. Critical path marked YES/No per row. 4 tasks have zero float and are
+explicitly marked critical path.
+
+**No sourcing decisions logged this session** (no images downloaded; analysis only).
+
+**User decision required by May 25**:
+- Scope: 5-bundle sprint (Option A) vs. 3-bundle priority (Option C) vs. two parallel writers (Option B).
+- Goldenseal: confirm order by June 8 or commit to Wikimedia photo substitution.
+
+---
+
 ## Seedwarden Agent Session — Launch Contingency Playbooks + Quick Reference — May 19, 2026
 
 **Task**: Build May 30 launch contingency playbooks and failure mode recovery procedures for
