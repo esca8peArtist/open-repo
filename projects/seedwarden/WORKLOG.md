@@ -4,6 +4,30 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Critical Path Consolidated Decision Document (Session 1363) — May 19, 2026
+
+**Task**: Develop Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis for user decision by May 30. Deliverables: comprehensive critical path document, Gantt timeline, parallel execution analysis, user decision gate (Options A/B/C).
+
+**Finding on existing files**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v2.0, 3,800+ words) and `phase-3-medicinal-herbs-gantt-timeline.md` were production-ready from prior sessions (May 19, 2026 — Sessions 1361 and audit session). The lowercase `phase-3-medicinal-herbs-critical-path.md` was an older 8-section version that lacked the Options A/B/C user decision gate structure and the detailed parallel execution analysis requested.
+
+**Output**: `phase-3-medicinal-herbs-critical-path.md` rewritten as v3.0 (3,900+ words). Consolidates all prior planning and adds:
+- Options A/B/C user decision gate with explicit decision table (Section 8 — new)
+- Parallel execution analysis: confirmed writing + design can run simultaneously; Canva templates from Phase 2 eliminate exploratory design time (Section 7 — new)
+- Photography blocking analysis: table of shot types vs. fresh/dried/stock acceptability; conclusion that dried Mountain Rose Herbs + Wikimedia CC covers 100% of launch requirements (Section 7 — new)
+- Goldenseal zero-float decision rule: confirmed Path 2 (Wikimedia CC) is recommended; live specimen is a quality upgrade, not a quality floor
+- Per-Option revenue and risk analysis with concrete "recommended for" criteria
+- FTC language quick reference retained from v2.0 (Appendix A)
+- Contingency supplier contacts table retained (Appendix B)
+- Full ASCII critical path visualization retained and updated (Appendix C)
+
+**No new image downloads this session** (planning document only).
+**No new supplier contacts initiated** (supplier outreach calendar previously documented in `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md`).
+
+**Files modified**:
+- `phase-3-medicinal-herbs-critical-path.md` — full rewrite to v3.0 (consolidated decision document)
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path v2.0 (Session 1361) — May 19, 2026
 
 **Task**: Deepen and consolidate Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis into a single authoritative document (2,500+ word target, 7 sections).
