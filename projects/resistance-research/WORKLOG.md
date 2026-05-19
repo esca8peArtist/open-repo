@@ -2,6 +2,30 @@
 
 ---
 
+## May 19, 2026 — Exploration Item 86 — Post-Synthesis Analysis Framework
+
+**Status**: COMPLETE
+
+**File**: `projects/resistance-research/POST_SYNTHESIS_ANALYSIS_FRAMEWORK.md`
+
+**Task**: Build the operational post-synthesis analysis companion for the May 21 synthesis execution. The existing file covered strategic Phase 2 interpretation but lacked the fill-in-place operational structure needed by the user and orchestrator.
+
+**What was built** (complete rewrite with all 5 sections):
+
+1. **Signal Classification Interpreter** — deterministic table mapping inbox/Gist count ranges to STRONG/MODERATE/WEAK/TOO EARLY/DELIVERY PROBLEM classifications, including all edge cases (hard bounces, OOO adjustments, contradictory signals, forwardee replies, Gist unavailability). QRP formula and classification confirmation checklist included.
+
+2. **Response Branch Mapping** — all four branches (A: STRONG, B: MODERATE, C: WEAK, D: TOO EARLY) with complete user action checklists (checkbox format), per-branch timeline tables, and exact social proof language for Tier 2 outreach.
+
+3. **Pattern Recognition Template** — structured fill-in prompts for all five synthesis parts (breaking developments, distribution success indicators, contact sentiment, domain urgency signals, next-phase recommendations). Each part has T+0/T+24h/T+7d prompts and sections for emerging themes, surprising findings, gaps, and acceleration opportunities.
+
+4. **Metrics and Impact Tracking** — complete tracking tables for: email metrics (sector norm benchmarks by contact type; per-contact tracking form; aggregate 72h/7d/10d/17d table); Gist metrics (per-URL tracking table; delta tier thresholds with QRP implications); contact response tracking (per-contact engagement form; conversion signal definitions); domain adoption tracker (per-domain resonance; constituency-domain alignment); May 22 Checkpoint Reporting Template (copy-paste format with all fields).
+
+5. **Post-Synthesis Reporting Timeline** — T+0 (May 21 synthesis, 60–90 min), T+24h (May 22 checkpoint, 30–45 min), T+72h (May 24 pre-gate assessment, 30–45 min), T+7d (May 28 full interim report, 45–60 min), T+14d (June 4 full Wave 1 impact report with fill-in template).
+
+**Key design principles**: All templates are copy-paste ready. All thresholds are deterministic. All [FILL] fields are explicitly scoped to data the user or orchestrator can access at the relevant milestone. No judgment calls required beyond applying the rules to actual data.
+
+---
+
 ## May 19, 2026 — Session 1339 — Phase 1 Post-Wave-1 Contingency Decision Framework v2.0
 
 **Status**: COMPLETE
