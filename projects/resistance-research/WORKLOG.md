@@ -2,6 +2,107 @@
 
 ---
 
+## May 19, 2026 — Session 1333 — May 21 Synthesis Readiness Validation
+
+**Status**: COMPLETE — All-clear with one deadline clarification flag
+
+**Task**: Pre-synthesis validation for May 21 19:00–20:00 UTC autonomous execution. Verify all 5 synthesis parts are production-ready, all companion files exist, and execution checklist is executable.
+
+### Validation Results
+
+**Synthesis Parts — All Present and Verified**
+
+- Part 1 (Signal Classification Formula — STRONG/MODERATE/WEAK/TOO_EARLY branches): CONFIRMED. Encoded in `post-wave-1-monitoring/wave-1-synthesis-framework-skeleton.md` Part 2 and `post-wave-1-monitoring/may21-synthesis-execution-checklist.md` Steps 5–8. Four-branch logic is unambiguous and deterministic. Score 5 override → STRONG; Quality Reply Points >= 2 + 40% rate → STRONG; >= 1 QRP OR Gist delta > 10 → MODERATE; < 1 QRP + < 20% rate + Gist <= 5 (delivery confirmed) → WEAK; zero everything + no bounces → TOO_EARLY. Law school contacts (Goodman, Chenoweth) are structurally TOO_EARLY at 72h regardless of outcome — correct by design.
+
+- Part 2 (May 21 synthesis execution script): CONFIRMED. `post-wave-1-monitoring/may21-synthesis-execution-checklist.md` is the authoritative execution document. Step-by-step, time-boxed (8 min reads / 8 min assembly / 6 min classification / 4 min path selection / 4 min post), total 25–30 min. No ambiguity in execution order. All [FILL] fields are clearly scoped to live data collected on May 21.
+
+- Part 3 (Phase 2 path decision logic): CONFIRMED. `post-wave-1-monitoring/wave-1-synthesis-framework-skeleton.md` Parts 3–4 and `post-wave-1-monitoring/phase-2-path-activation-summary.md` together form a complete decision tree. STRONG, MODERATE, WEAK, and TOO_EARLY paths each carry: triggering conditions, immediate actions, Phase 2 domain sequence, and user gate requirements. No gaps.
+
+- Part 4 (Distribution staging — if needed): CONFIRMED (conditional). STRONG path queues D57/D59 pre-production checklists; both source libraries verified in previous sessions (`DOMAIN_57_SOURCE_LIBRARY.md`, `DOMAIN_59_SOURCE_LIBRARY.md`). WEAK path routes to `PHASE_2_OUTCOME_LAUNCH_ROADMAP.md` Section 4.4. TOO_EARLY and MODERATE paths require no distribution action before May 25. Staging is path-gated by design.
+
+- Part 5 (Documentation handoff — user review): CONFIRMED. CHECKIN.md template is embedded in both the synthesis checklist (Step 10) and `wave-1-synthesis-framework-skeleton.md` Part 5. Template is fully structured — preliminary classification, Quality Reply Points, strongest signal, per-constituency status, recommended path, Needs Your Input field, May 25 final gate note, Domain 42 deadline reminder.
+
+**Companion Files — All Present**
+
+All files referenced in the synthesis checklist verified to exist:
+- `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` — EXISTS, signal table active (zero entries beyond baseline, correct for Day 1 pre-synthesis)
+- `post-wave-1-monitoring/wave-1-synthesis-framework-skeleton.md` — EXISTS
+- `post-wave-1-monitoring/phase-2-path-activation-summary.md` — EXISTS
+- `post-wave-1-monitoring/monitoring-dashboard-may19-21.md` — EXISTS
+- `post-wave-1-monitoring/may28-dea-deadline-tracking.md` — EXISTS
+- `post-wave-1-monitoring/preliminary-signal-analysis-may18.md` — EXISTS
+- `WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv` — EXISTS, scoring reference rows intact
+- `WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md` — EXISTS
+- `WAVE_1_DAILY_MONITORING_TEMPLATE.md` — EXISTS
+- `PHASE_2_OUTCOME_LAUNCH_ROADMAP.md` — EXISTS
+- `domain-42-gist-url.md` — EXISTS
+- `domain-42-dea-briefing-template.md` — EXISTS
+- `execution/domain-56-gist-creation-steps.md` — EXISTS
+
+**Signal Log Status**
+
+As of May 19 09:11 UTC: Zero replies logged from all 5 Batch 1 contacts. Last confirmed verification was May 19 ~19:00 UTC in the 48-hour snapshot. This is within expected range — all five contacts remain in active monitoring windows. Law school contacts (Goodman, Chenoweth) are structurally TOO_EARLY. Policy org contacts (Weiser, Bassin) are within their 2–5 day window. Elias's 48-hour anomaly window opens approximately May 20 08:00–10:00 UTC. The signal log structure is correct and ready to receive data through May 21 10:30 UTC.
+
+**Execution Checklist — Executable Assessment**
+
+The checklist is fully executable as written with one external dependency: the user must populate the signal log by May 20 evening (or early May 21) with inbox replies, OOO flags, hard bounces, and a Gist incognito view count. The orchestrator cannot execute those steps autonomously — they require inbox access. Steps that are fully autonomous on May 21:
+- Reading all pre-built files (Steps 1 references)
+- Running classification formula (Steps 5–8) from populated signal data
+- Filling the Data Assembly table (Steps data assembly section)
+- Determining path selection (Step 9)
+- Posting CHECKIN.md entry (Step 10 — template is pre-built)
+- Updating preliminary-signal-analysis-may18.md Section 6 (Step 12)
+
+**Unresolved Dependencies**
+
+1. USER ACTION REQUIRED — Signal log population: The user must check email inbox and Gist views at least once on May 20 and once on May 21 morning (before 10:30 UTC) and fill the monitoring-dashboard-may19-21.md May 20 and May 21 sections. Without this, the synthesis will classify on zero-signal data (TOO_EARLY by default), which may be accurate but cannot be confirmed.
+
+2. USER ACTION REQUIRED — Domain 42 Category A sends: Per `may28-dea-deadline-tracking.md`, if Category A organizations (DPA, MPP, NORML, LEAP, ACLU CLR, Sentencing Project, SSDP) have not yet been sent to, May 21 is the execution day. The WORKLOG from a prior session also identified May 21 as the hard stop for new Domain 42 outreach, with May 24 as the electronic cutoff for organizations filing with DEA. **This means Domain 42 outreach cannot be deferred beyond May 21**. The synthesis checklist correctly flags this as a parallel track, independent of Wave 1 classification outcome.
+
+**Deadline Clarification — Domain 42**
+
+The synthesis checklist template says "Domain 42 DEA deadline: May 28 — 7 days remaining." The full deadline structure per prior research (WORKLOG line 1099–1103):
+- May 20: Mail submission deadline (postal; already passed)
+- May 21: Hard stop for new outreach (organizations need time to act)
+- May 24: Electronic cutoff — 11:59 p.m. ET for organizations filing electronically with DEA
+- May 28: Email submission deadline — nprm@dea.gov, Docket No. DEA-1362
+
+The "May 28" in the synthesis checklist refers to the email submission route, which is the latest-possible channel. The may28-dea-deadline-tracking.md file is internally consistent with this (line 141: "May 28, 2026 (electronic); May 20 (mail postmark — this date has passed; electronic only)"). No blocker. User should be aware that May 28 is the floor, not the ceiling — organizations need lead time and the effective action deadline for this project is May 21.
+
+**No blockers to autonomous execution on May 21.** The synthesis machinery is complete.
+
+**Files written**: WORKLOG.md (this entry), CHECKIN.md (synthesis readiness note added)
+
+---
+
+## May 19, 2026 — Breaking Developments May 18-20 Intelligence Briefing (Second Pass)
+
+**Status**: COMPLETE
+
+**File**: `projects/resistance-research/breaking-developments-may18-20.md`
+
+**Task**: Scan May 17-19, 2026 news for breaking developments affecting resistance-research Domains. Update and extend existing first-pass briefing document with additional findings from second-pass research.
+
+**Additions in second pass**:
+
+1. **GVR case names and Jackson dissent** — *Turtle Mountain Band of Chippewa Indians v. Howe* (No. 25-253) and *Board of Election Commissioners v. NAACP* (Mississippi) identified as the two May 18 SCOTUS GVR orders. Jackson dissent documented (Callais did not address private right of action under Section 2 — analytical mismatch flagged). 28-lawsuit count from Democracy Docket research added.
+
+2. **Private right of action as follow-on threat** — Added as seventh structural finding. Eighth Circuit "only DOJ can sue" holding is the highest-stakes pending lower-court issue in the VRA track.
+
+3. **Reconciliation 2.0 enacted status** — ICE $38.2B funding and 287(g) expansion are enacted law (signed July 4). House Budget Committee 17-16 advancement on May 18 is the in-window procedural signal. Domain 37 language updating required.
+
+4. **Domain 42 deadline discrepancy** — May 24 electronic (not May 28) is operative DEA hearing participation deadline per Federal Register. Critical action flag added.
+
+5. **FISA 702 section added** — Senate deadlocked on "query" definition; June 12 expiration in 24 days; FISC opinion on ongoing FBI compliance failure not yet declassified.
+
+6. **Domain 57 additions** — NATO three-leg force reduction confirmed (Germany withdrawn, Poland cancelled May 14, Italy/Spain threatened). ICC Duterte fitness dispute (Rule 135 brief; May 27 status conference). Hungary ICC reversal by Magyar's Tisza Party — first electoral reversal of ICC withdrawal in court history.
+
+7. **Domain 58 additions** — Trump v. Barbara (birthright citizenship, ruling June–July) added as Domain 58 watch item. 287(g) near-reservation chilling effects documented. Maine Wabanaki precedent (narrowed sovereignty restoration) added.
+
+8. **Priority table updated** — New rows for Domain 42 critical deadline, Domain 37 enacted-status update, Domain 57 three-leg reduction, Domain 58 GVR and Trump v. Barbara, Domain 25 FISA watch.
+
+---
+
 ## May 19, 2026 — mfg-farm Item 1092: Etsy SEO and Competitive Positioning Q2-Q3 2026
 
 **Status**: COMPLETE

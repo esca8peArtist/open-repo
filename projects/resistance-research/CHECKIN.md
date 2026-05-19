@@ -1,8 +1,31 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 19, 2026 — Post-Wave-1 monitoring verification complete; synthesis infrastructure and DEA deadline tracking ready*
+*Updated: May 19, 2026 — Session 1333 synthesis readiness validation complete*
 
 ---
+
+## May 21 Synthesis Ready for Autonomous Execution — Two Pre-Conditions on User (May 19, 2026)
+
+**Status**: All synthesis infrastructure is production-ready. Autonomous execution is clear for May 21 19:00–20:00 UTC.
+
+**What is ready without any further user action**:
+- `post-wave-1-monitoring/may21-synthesis-execution-checklist.md` — authoritative execution document, fully built
+- All 4 signal classification branches (STRONG/MODERATE/WEAK/TOO_EARLY) — deterministic logic, no ambiguity
+- All path decision documents — STRONG/MODERATE/WEAK/TOO_EARLY paths each have triggering conditions, immediate actions, domain sequence, and user gate language
+- CHECKIN.md post template — pre-built in the checklist Step 10; orchestrator only needs to fill [FILL] fields from live signal data
+- All companion files verified present (12 files checked)
+
+**What requires user action before May 21 19:00 UTC**:
+
+1. Fill monitoring-dashboard-may19-21.md May 20 and May 21 pre-synthesis entries. Specifically: check email inbox for replies/OOO/bounces from the 5 Batch 1 contacts; check Gist view counts in incognito; record results. Without this, the synthesis runs on zero-signal data and classifies as TOO_EARLY by default (which may be correct, but cannot be confirmed as accurate vs. structural).
+
+2. Domain 42 Category A sends must happen May 21 if not yet sent (DPA, MPP, NORML, LEAP, ACLU Criminal Law Reform, Sentencing Project, SSDP — 7 orgs). May 21 is the hard outreach stop date — organizations need lead time before the May 24 electronic filing cutoff and May 28 email deadline. Check `BATCH_1_CONTACT_LOG.md` Domain 42 section. Full compressed calendar in `post-wave-1-monitoring/may28-dea-deadline-tracking.md`.
+
+**Deadline clarification**: "May 28" in synthesis template = email submission route to nprm@dea.gov. Operative deadline for organizations filing electronically is **May 24, 11:59 p.m. ET**. May 21 is the last day to send outreach and give them sufficient time.
+
+---
+
+## DOMAIN 42 DEA — URGENT: CHECK SEND STATUS TODAY (May 19, 2026)
 
 ## DOMAIN 42 DEA — URGENT: CHECK SEND STATUS TODAY (May 19, 2026)
 
