@@ -1,6 +1,6 @@
 # Open-Repo MVP Backend
 
-**Status**: Phase 4 Complete - FastAPI + PostgreSQL + Meilisearch + Endorsements + Federation
+**Status**: Phase 4 Complete - Federation live. Phase 5 Candidate 1 (ZimWriter libzim integration) complete - offline ZIM exports ready.
 
 **Version**: 0.4.0
 
@@ -37,7 +37,13 @@ A minimal FastAPI backend for the Open-Repo federated knowledge network. Phase 1
 - JSON column for full JSON-LD content
 
 ### Tests
-- **255 passing tests** covering:
+- **84 export pipeline tests** (Phase 5 Candidate 1):
+  - Real libzim ZIM file generation
+  - Metadata validation and embedding
+  - Xapian full-text indexing
+  - zimcheck binary validation
+  - Attribution footer rendering for federated content
+- **Federation and endorsement tests** covering:
   - Required field validation (title, type, domain, license)
   - Type validation (procedure, recipe, schematic, plan, service-listing)
   - Multilingual content support
