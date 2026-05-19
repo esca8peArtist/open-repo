@@ -4,6 +4,71 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Critical Path + Gantt Timeline (Item 966/1056) — May 19, 2026
+
+**Task**: Build Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis
+(Exploration Queue Item 966/1056). Two deliverables: full critical path document (7 sections,
+2,500+ words) and ASCII Gantt timeline with daily milestone table and resource allocation.
+
+**Decision deadline**: May 30, 2026 (before Phase 2 launch). Phase 3 start: June 22, 2026.
+
+**Source files reviewed**: `phase-3-medicinal-herbs-timeline.md`, `medicinal-herbs-candidate-list.md`,
+`phase-3-medicinal-herbs-sourcing-guide.md`, `PHASE_3_ASSETS_VERIFICATION.md`,
+`PHASE_3_PHOTOGRAPHY_LOGISTICS_PLAN.md`, `PHASE_2_LAUNCH_LOGISTICS.md`,
+`PHASE2_TO_PHASE3_TRANSITION.md`, `phase-3-medicinal-herbs-critical-path.md` (prior session).
+
+**Key findings from source review**:
+- Both Phase 3 launch gates are already CLEARED: forager cohort 21.3% (gate >20%),
+  native plants conversion 2.24% (gate >1.5%). Phase 3 is authorized.
+- June 8 is the only hard pre-sprint deadline: Goldenseal and Black Cohosh have 5–6 week lead
+  times from Prairie Moon / Strictly Medicinal Seeds. This deadline is 20 days away as of today.
+- Writing (64–74 hours raw; 56–66 hours adjusted for shared species) is the binding constraint.
+  Design (12.5 hours) and photography (parallel pre-sprint track) are not blocking.
+- Three May 30 decisions identified: (1) sprint scope (Option A 5-bundle / B 2-writer / C 3-bundle),
+  (2) Goldenseal order path (live specimen vs. Wikimedia CC), (3) second writer engagement.
+- Phase 2 close-out (May 27–29 sprint) and Phase 3 start (June 22) have a clean 24-day
+  separation — no overlap.
+
+**Files written**:
+
+`projects/seedwarden/PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` — 2,900+ words. 7 sections:
+(1) Herb selection finalization: all 5 bundle species maps, 3-tier supplier ordering schedule with
+hard deadlines (June 8/15/22), contingency supplier contacts, full budget table ($260–$385).
+(2) Writing production schedule: adjusted 56–66 hour total (shared-species efficiency), daily
+hour-level breakdown for all 3 weeks, float analysis (Week 3 absorbs 8–10 hour overrun).
+(3) Canva design timeline: 12.5-hour parallel track, cover designs Days 1–14, zone cards
+Days 8–16, design lock July 3 with rationale.
+(4) Photography logistics: May 26–June 21 pre-sprint 4-pass track (props, seedling, mature,
+dried), June 23–26 in-sprint studio batch, supplier delivery window, indoor studio setup details.
+(5) Upload sequence: staggered 7-8 day spacing (Jun 29, Jul 6–7, Jul 13, Jul 20, Aug 3),
+algorithm rationale, fallback paths (gate re-check scenarios A/B/C), contingency timeline for
+July and August delayed starts.
+(6) Risk analysis: 6 risks with probability/impact/float/mitigation — Goldenseal order (zero
+float, hard deadline), other supplier delays (7–14 day float, CC fallback), design revision
+loops (1–3 day float, design lock protection), writing productivity overrun (8-hour float
+Week 3), photography disruption (indoor studio primary), Phase 2 conflict (24-day separation).
+(7) Success metrics: June 22 Day 1 checklist (8 items), June 29 Week 1 snapshot (8 items +
+productivity test), July 6 Week 2 snapshot (6 items), July 13 sprint completion (10 items +
+revenue model at full launch). Appendices: contingency supplier contacts table, FTC language
+quick reference table.
+
+`projects/seedwarden/phase-3-medicinal-herbs-gantt-timeline.md` — ASCII Gantt + daily milestone
+table. ASCII Gantt covers pre-sprint through post-sprint (May 26–Aug 3) across 6 tracks
+(Supplier, Photo, Design, Writing, Upload, Float) with critical path highlighted and float days
+marked. Daily milestone table: 30 rows covering every day of the 22-day sprint with target hours,
+float status, critical path flag, and notes. Separate sections: critical path chain diagram,
+hard deadline table, resource allocation by week (single-writer and two-writer scenarios),
+pre-sprint vs. sprint vs. post-sprint task split, gate summary table, May 30 decisions required.
+
+**No image downloads this session** (production planning only; no sourcing decisions logged).
+
+**User decisions required by May 30**:
+1. Sprint scope: Option A (5-bundle, single writer), B (5-bundle, 2 writers), or C (3-bundle priority)
+2. Goldenseal: order by June 8 from Prairie Moon/Strictly Medicinal OR confirm Wikimedia CC path
+3. Second writer: engage now if Option B, or confirm single-writer capacity for Option A
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Critical Path Analysis — May 19, 2026
 
 **Task**: Develop Phase 3 Medicinal Herbs Production Timeline with critical path analysis for
