@@ -5,10 +5,63 @@
 
 ---
 
-## Active Items (Session 1334, May 19, 09:41 UTC)
+## Active Items (Session 1334, May 19, 12:50 UTC)
 
-### ⏳ Item 82: Seedwarden Track B — Audience Research & Competitive Positioning Strategy
-**Status**: NEW (Session 1334, May 19 2026, 09:41 UTC)
+### ⏳ Item 85: Mfg-farm Post-Test-Print Etsy Launch Sequence
+**Status**: NEW (Session 1334, May 19 2026, 12:50 UTC)
+**Priority**: HIGH — Unblocks Etsy launch immediately post-test-print completion
+**Impact**: HIGH — Pre-staging exact upload sequence removes friction from test-print → launch window (target: within 5 days post-approval)
+**Goal**: Pre-stage the exact 7-step Etsy upload checklist and pre-launch sequence covering: (1) Product listing order optimization, (2) PDF/image upload specifications, (3) Pricing strategy per product tier, (4) Promotional strategy for Day 1-7, (5) Shipping profile setup, (6) Shop policies + about page, (7) Initial email announcement sequence
+**Scope**:
+1. **Upload sequence** (1.5 hrs): Optimal order to upload 21 Phase 1 products (pricing impact analysis, category strategy, tag ordering strategy)
+2. **Pre-launch checklist** (1 hr): Shop setup (policies, about, shipping, payment), email list segment, Kit automation setup for lead magnet
+3. **Day 1-7 promotion strategy** (1 hr): Launch announcement timing (market open/close, day of week), social media angles, email sequence timing
+4. **Backup plans** (30 min): If test print shows design failure, what's the contingency? If test print shows minor adjustments, what's the approach?
+**Deliverable**: `projects/mfg-farm/ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (2,000+ words, 7-step sequence, pre-filled listing templates, timing recommendations)
+**Why now**: Test print is the only blocker to launch. Once user approves test print, May 30-June 6 is the launch window. Pre-staging the entire sequence means user can execute mechanically without discovery.
+**Success criteria**: By May 25, launch sequence complete so May 29-June 2 is pure execution, not planning
+**Next step**: Execute May 19-20; deliver before May 25
+
+---
+
+### ⏳ Item 86: Resistance-research Post-Synthesis Analysis Framework
+**Status**: NEW (Session 1334, May 19 2026, 12:50 UTC)
+**Priority**: MEDIUM — Enables Phase 1 post-analysis if synthesis outcome is STRONG/MODERATE
+**Impact**: MEDIUM — Provides structured analysis of Wave 1 distribution success for Phase 2 planning
+**Goal**: Pre-stage comprehensive analysis framework for post-May-21-synthesis execution, covering: (1) Wave 1 response analysis template, (2) Phase 2 candidate priority reranking based on May 21 synthesis outcome, (3) Phase 2 research sequencing decision tree, (4) Risk mitigation strategies per Phase 2 option
+**Scope**:
+1. **Wave 1 response tracking** (1 hr): Signal classification (STRONG/MODERATE/WEAK/TOO_EARLY) scoring logic, analysis template for responses by contact category
+2. **Phase 2 prioritization** (1.5 hrs): If synthesis is positive, which Phase 2 candidates (Domains 56, 58, 59, 57) are highest priority? Scoring matrix based on: (a) Timing urgency (June 1 deadline vs. July 15), (b) Movement leverage (which domains unblock most coalition action), (c) Research effort vs. impact
+3. **Distribution staging** (1 hr): If STRONG/MODERATE, what's the Path-A+Domain-37 expansion strategy? Which contacts get Domain 37? Which get expanded Phase 2 domains?
+4. **Risk contingency plans** (30 min): If synthesis is WEAK or TOO_EARLY, what's the delay strategy? Does Phase 2 pause, or do certain high-urgency domains (56, 58) proceed independently?
+**Deliverable**: `projects/resistance-research/POST_SYNTHESIS_ANALYSIS_FRAMEWORK.md` (2,500+ words, scoring templates, decision matrices, Phase 2 prioritization guide)
+**Why now**: May 21 synthesis executes 07:00 UTC tomorrow. Having structured analysis ready means May 21 evening user can immediately populate signal log and begin Phase 2 planning without delay.
+**Success criteria**: By May 21 morning, framework is ready so post-synthesis analysis can begin May 21 19:30 UTC
+**Next step**: Execute May 19-20; deliver May 21 morning (by 07:00 UTC before synthesis execution)
+
+---
+
+### ⏳ Item 87: Cybersecurity-hardening Phase 2 Scope & Implementation Planning
+**Status**: NEW (Session 1334, May 19 2026, 12:50 UTC)
+**Priority**: MEDIUM — Enables Phase 2 planning once Phase 1 completes (user restart required)
+**Impact**: MEDIUM — Removes scope uncertainty for 3-week Phase 2 sprint (currently marked as 7-module roadmap)
+**Goal**: Pre-stage Phase 2 scope definition and implementation planning covering: (1) Exact scope of 7-module Phase 2 roadmap, (2) Implementation sequence (which modules in parallel vs. serial), (3) Dependencies on Phase 1 completion, (4) Tier 2 distribution prep (which organizations, which customized playbooks)
+**Scope**:
+1. **7-module roadmap detail** (1.5 hrs): Expand current PHASE_2_PLANNING.md outline (currently 7 modules not named) into concrete modules with time estimates
+2. **Implementation sequence** (1 hr): Which modules can run in parallel (e.g., device hardening + financial privacy)? Which are sequential (e.g., GrapheneOS setup before advanced protection)?
+3. **Tier 2 integration** (1 hr): Which Phase 2 modules directly feed Tier 2 playbooks (immigration + activist + whistleblower + DV survivor)? What's the sequencing to maximize Tier 1-2 coverage?
+4. **Timeline and gates** (30 min): 3-week execution plan with user review gates (Week 1 checkpoint, Week 2 checkpoint)
+**Deliverable**: `projects/cybersecurity-hardening/PHASE_2_DETAILED_ROADMAP.md` (2,500+ words, module-by-module breakdown, implementation sequence, dependencies, Tier 2 integration map)
+**Why now**: Phase 1 is mid-way (user at step 1.3 VeraCrypt restart). Once Phase 1 completes (expected May 20-21), Phase 2 begins immediately. Pre-staging the 3-week roadmap removes "what's next?" delays.
+**Success criteria**: By May 25, Phase 2 roadmap complete so user can review May 25-27 and begin Phase 2 execution May 28 without delay
+**Next step**: Execute May 19-20; deliver before May 25
+
+---
+
+## Previously Active Items (Sessions 1326-1334)
+
+### ✅ Item 82: Seedwarden Track B — Audience Research & Competitive Positioning Strategy
+**Status**: COMPLETE (Session 1334, May 19 2026, 12:15 UTC)
 **Priority**: HIGH — May 30 launch target (11 days); pre-launch research enables Day 1 maximum reach
 **Impact**: HIGH — Validated audience profile + competitor gaps inform content calendar post-launch, enabling data-driven optimization
 **Goal**: Research and document: (1) Exact target audience profile across 4 social platforms (demographics, interests, pain points, content consumption patterns), (2) Competitive landscape analysis (top 20 competitors on Instagram/TikTok/Pinterest, feature gaps, content strategy differences), (3) Content differentiation strategy (what Seedwarden does uniquely vs competitors), (4) Launch week engagement strategy (hashtag research, collab opportunities, micro-influencer overlap analysis)
@@ -29,8 +82,8 @@
 
 ---
 
-### ⏳ Item 83: Open-repo Phase 5 Implementation Roadmaps (Candidates 1 & 2) — DETAILED EDITION
-**Status**: NEW (Session 1334, May 19 2026, 09:41 UTC)
+### ✅ Item 83: Open-repo Phase 5 Implementation Roadmaps (Candidates 1 & 2) — DETAILED EDITION
+**Status**: COMPLETE (Session 1334, May 19 2026, 12:45 UTC)
 **Priority**: HIGH — Phase 5 user decision pending; detailed roadmaps enable rapid execution post-approval
 **Impact**: HIGH — Removes last friction point for Phase 5 launch; user chooses based on clear code-level effort/impact estimates
 **Goal**: Pre-stage detailed implementation roadmaps for Phase 5 Candidates 1 (ZimWriter offline access, 4-6h) and 2 (OPDS feedgen, 3-4h) covering: (1) Exact code entry points and files to modify, (2) Test matrix and coverage requirements per candidate, (3) Integration sequence with Wave 4 federation, (4) Deployment gates and go-live checklist, (5) Post-launch monitoring
