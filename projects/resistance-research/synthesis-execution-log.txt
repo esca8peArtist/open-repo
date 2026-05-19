@@ -1,0 +1,1 @@
+2026-05-19 22:00:37 UTC | DUMMY | MODERATE | QRP=2.0 | rule=Rule 2 — QRP >= 2 but response rate < 40% (Gist-bonus-driven
