@@ -1,3 +1,36 @@
+## Since Last Check-in (Session 1359, May 19 19:44–20:00 UTC)
+
+**Session Status**: 🟢 **COMPLETED — EXPLORATION QUEUE ITEMS MARKED COMPLETE, STATE READY FOR MAY 21 SYNTHESIS & MAY 22 CHECKPOINT**
+
+### Session 1359 Summary
+
+**Work Completed**:
+- ✅ Marked Exploration Queue Items 86, 88, 89 complete in EXPLORATION_QUEUE.md (all deliverables verified present, dated May 17-19)
+- ✅ Updated WORKLOG.md with session summary and critical path (May 21 synthesis, May 22 checkpoint gates)
+- ✅ Verified project status: all autonomous work staged, 3 active blocks confirmed (SSH/VeraCrypt/test-print, user action required)
+
+**Project Status Snapshot**:
+- **Resistance-research**: May 21 19:00 UTC synthesis confirmed autonomous (deterministic, all 5 parts production-ready)
+- **Stockbot**: May 22 20:00 UTC checkpoint confirmed autonomous (decision architecture staged); **CRITICAL: SSH auth required by May 22 13:30 UTC**
+- **Seedwarden Track B**: May 30 launch confirmed ready (all deliverables production-ready)
+- **Open-repo Phase 5**: Candidate 1 verified de-risked (awaiting May 25–26 approval)
+- **Systems-resilience**: Phase 3 complete, Phase 4-5 framework ready for June 1 decision
+
+**Items Needing User Input** (unchanged from Session 1358):
+1. **TODAY (May 19–20)**: SSH auth for Jetson — add orchestrator ED25519 public key (critical May 22 13:30 UTC deadline)
+2. **May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots (10 min, enables May 21 synthesis)
+3. **May 21 evening**: Read synthesis outcome; activate Phase 2 if STRONG/MODERATE
+4. **May 22 13:30 UTC**: SSH auth deadline (if unresolved, May 22 checkpoint outcome = May 19 repeat)
+5. **May 25–26**: Review Phase 5 Candidate 1 verification; approve for merge
+6. **May 25–30**: Three seedwarden Phase 3 decisions (scope, Goldenseal sourcing, second writer)
+
+**Critical Path — Next 36 Hours**:
+- **May 21 19:00 UTC**: Resistance-research synthesis (autonomous, deterministic, ~25-30 min)
+- **May 22 13:30 UTC**: Stockbot Lever B SSH auth deadline (CRITICAL)
+- **May 22 20:00 UTC**: Stockbot May 22 checkpoint autonomous execution
+
+---
+
 ## Since Last Check-in (Session 1358, May 19 19:25–20:15 UTC)
 
 **Session Status**: 🟢 **COMPLETED — 3 PARALLEL EXPLORATION QUEUE AUDITS EXECUTED, ALL PRE-STAGING VERIFIED PRODUCTION-READY**
