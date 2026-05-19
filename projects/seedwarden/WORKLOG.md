@@ -4,6 +4,25 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path v2.0 (Session 1361) — May 19, 2026
+
+**Task**: Deepen and consolidate Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis into a single authoritative document (2,500+ word target, 7 sections).
+
+**Output**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` rewritten as v2.0 (3,800+ words). Consolidates all prior Phase 3 critical path planning files. Key additions over v1.0:
+- Per-section Activity | Duration | Start | End | Dependencies | Float tables (all 7 sections)
+- Risk scoring matrix with Probability × Impact scores and contingency trigger thresholds
+- Decision checklist: "When to Activate Contingency X" for 5 explicit contingency scenarios
+- Supplier risk table by supplier (fastest recovery option per supplier failure)
+- Worst-case recovery analysis: 5-day slip → 3-day net launch slip; 10-day slip → Option C path
+- FTC appendix expanded with Ashwagandha pregnancy/thyroid warning and Sleep bundle drug-interaction language
+- Canva Phase 3 palette hex codes consolidated from `canva-phase-3-adaptation-guide.md`
+- Minimum viable launch definition: Women's Health + Sleep + Respiratory as the 3-bundle floor
+
+**No new supplier contacts or image downloads this session** (production planning consolidation only).
+**Cross-files updated**: None (consolidation into existing PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md only).
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Critical Path Re-Execution Audit — May 19, 2026
 
 **Task**: Execute Exploration Queue item: Phase 3 Medicinal Herbs Production Timeline and
