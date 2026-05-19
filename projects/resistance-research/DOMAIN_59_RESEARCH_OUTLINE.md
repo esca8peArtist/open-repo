@@ -387,4 +387,185 @@ The following questions are organized by section. The June 16 research phase sho
 
 ---
 
-*Document prepared: May 17, 2026. Pre-research pass by Resistance Research Agent. Sources gathered from: Dallas Fed wp2517r1 (March 2026 revision); CIRCLE/Tufts 2024 Youth Poll; PRRI 2024; Slee and Desmond (Politics and Society 2023); PNAS 2024 housing mobility study; EPI Wage Stagnation data; NLIHC; Urban Institute; Eviction Lab; OBBBA (Wikipedia + League of Women Voters analysis); Brennan Center AVR data; Mullainathan and Shafir (2013); IDEA Voter Turnout Database; Ludwig Erhard / Adenauer / Wirtschaftswunder sources.*
+## Section 7: 2026 Policy Flash Point Calendar
+
+The June 15-July 15 research window falls across a cluster of policy deadlines, data releases, and institutional decision points that are directly relevant to Domain 59's argument. Tracking these windows allows the research to incorporate the freshest possible data and connect empirical findings to live advocacy moments.
+
+### 7.1 Federal Reserve FOMC Calendar (Economic Stability Barometer)
+
+The FOMC holds eight scheduled meetings in 2026. The two that fall within or immediately adjacent to the Domain 59 research window are the most important for tracking housing-affordability and wage-pressure conditions:
+
+- **June 16-17, 2026**: FOMC meeting with updated Summary of Economic Projections (SEP). This is one of four "dot plot" meetings per year. The Fed held rates unchanged at 3.50%-3.75% through April 2026. The June meeting will produce updated projections for 2026-2027, including growth, unemployment, and PCE inflation forecasts. With PCE inflation running near 2.8% and unemployment at 4.3%, the June SEP will indicate whether the Fed sees room for cuts that would relieve housing cost pressure. Any rate signal — hold, cut, or hawkish revision — is immediately relevant to mortgage affordability and therefore to the housing-instability pathway (Section 1.3). Research note: if the June 2026 SEP shows the Fed projecting higher rates for longer, this is direct confirmation that the housing cost burden will not ease during the advocacy window. Source: [Federal Reserve FOMC Calendars and Information](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm).
+
+- **July 28-29, 2026**: The next FOMC meeting after the Domain 59 research window closes. Its policy statement will be available for the writing phase. If a rate cut materializes here, the Domain 59 writing should acknowledge it while noting that the structural housing-affordability gap (7.2 million unit shortfall) is not rate-sensitive on the timescale relevant to civic participation.
+
+### 7.2 CPI and Inflation Data Releases (Cost-of-Living Evidence)
+
+The Bureau of Labor Statistics releases the Consumer Price Index at 8:30 AM Eastern on the second Wednesday of each month. Within the research window:
+
+- **June 11, 2026** (May 2026 CPI): The first release falling inside the research window. This will show whether tariff-driven price pressures are increasing shelter costs, food costs, and healthcare costs — the three categories most relevant to Domain 59's cost-of-living argument.
+- **July 15, 2026** (June 2026 CPI): Falls on the last day of the research window. If shelter inflation remains elevated (shelter makes up approximately 36 percent of CPI and has been the most persistent driver), this is direct empirical support for Section 1.3.
+
+Source: [BLS Schedule of Releases for the Consumer Price Index](https://www.bls.gov/schedule/news_release/cpi.htm).
+
+### 7.3 Housing Affordability Report Releases
+
+Two major housing data releases fall within or immediately after the research window:
+
+- **June 9, 2026**: NAR monthly Housing Affordability Index release (10:00 AM ET). This index measures whether a median-income family can qualify for a mortgage on a median-priced existing home. If the index shows deteriorating affordability (which the rate environment suggests), this is a citable real-time data point for the writing phase.
+- **July 15, 2026** (approx.): Joint Center for Housing Studies at Harvard typically releases its annual "State of the Nation's Housing" report in June-July. The 2026 edition will contain the most current data on renter cost burden, eviction trends, and housing supply gaps. This is the single most authoritative annual housing synthesis available. Track release at: [JCHS Publications](https://www.jchs.harvard.edu/research-areas/publications).
+- **Already released — NLIHC Gap Report 2026**: The NLIHC has published The Gap 2026, finding a national shortage of 7.2 million affordable and available rental homes for extremely low-income renter households — just 35 affordable and available homes for every 100 extremely low-income renter households. 74 percent of the 11 million extremely low-income renters are severely cost-burdened. Source: [NLIHC The Gap 2026](https://nlihc.org/gap).
+
+### 7.4 Medicaid Work Requirement Implementation Deadlines (OBBBA Crisis Tracker)
+
+The December 2026 deadline is the most consequential policy flashpoint connected to Domain 59:
+
+- **December 1, 2026**: Iowa implements Medicaid work requirements — the earliest state implementation date under the OBBBA reconciliation law. Iowa's early implementation will produce the first real-world data on coverage loss rates, administrative burden, and downstream health-seeking behavior. This data will become available in January-February 2027, directly feeding the January 2027 advocacy window.
+- **December 31, 2026**: All states must have systems set up to track "community engagement" requirements. States that fail to build systems by this date may face additional penalties. Georgetown CCF projects that administrative burden alone — paperwork, renewal complexity, proof-of-work documentation — will cause coverage losses even among qualifying individuals. Source: [Georgetown CCF Medicaid Work Requirements Implementation (February 2026)](https://ccf.georgetown.edu/2026/02/11/implementing-costly-medicaid-work-reporting-requirements-who-will-foot-the-bill/).
+- **January 1, 2027**: Most states will implement work requirements on this date. The KFF Medicaid Work Requirements Tracker is the authoritative real-time source: [KFF Medicaid Work Requirements Tracker](https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/).
+
+**Research note**: The December 2026 implementation deadline falls between the Domain 59 writing completion (August 10) and the January 2027 advocacy window. The Domain 59 research should explicitly model what the coverage loss data from Iowa will look like and pre-draft the update insert that will be added in January 2027 when the first implementation data is available.
+
+### 7.5 Congressional Economic Hearings (Advocacy Opportunity Windows)
+
+The Joint Economic Committee (JEC) and Senate Banking, Housing, and Urban Affairs Committee are the two primary venues for economic-precarity-and-democracy testimony. Key 2026 hearing windows:
+
+- **Senate Banking Committee — Housing Affordability**: Chairman Tim Scott (R-SC) has made housing affordability a legislative priority in 2026, including passage of the bipartisan 21st Century ROAD to Housing Act (89-10 Senate vote). While the Republican majority's focus is on supply-side deregulation, the committee's housing affordability hearings create an opportunity for Democratic members and advocacy organizations to introduce the eviction-and-voter-turnout evidence base. The Banking Committee hearing calendar is at [banking.senate.gov/hearings](https://www.banking.senate.gov/hearings).
+- **Joint Economic Committee**: The JEC held hearings in Q1 2026 on labor market composition and aging-population economic dynamics. The JEC's minority (Democratic) members have historically used JEC platforms to surface economic inequality data. The JEC hearing calendar is at [jec.senate.gov/public/index.cfm/hearings-calendar](https://www.jec.senate.gov/public/index.cfm/hearings-calendar). Track for any Q3 2026 hearings on wages, housing, or student debt that fall within the advocacy window.
+- **Eviction Lab / NLIHC Hill briefings**: These organizations typically schedule congressional briefings around their major report releases. The 2026 Gap Report has been published; NLIHC-affiliated Hill briefings in May-June 2026 are the most immediate opportunity to connect this research to legislative advocacy. Monitor the [NLIHC Advocacy Calendar](https://nlihc.org/advocacy).
+
+### 7.6 Student Loan Garnishment Escalation Timeline (2026 Ongoing Crisis)
+
+Wage garnishment is not a one-time event but an escalating 2026 process:
+
+- **January 2026**: First garnishment notices sent to approximately 1,000 defaulted borrowers per week.
+- **Q2-Q3 2026**: Garnishment notices scaling up monthly. Approximately 5.5 million borrowers in default as of early 2026; 12 million total either delinquent or in default (more than 1 in 4 federal student loan borrowers).
+- **Ongoing through Domain 59 research window**: The DOE is processing garnishment on a rolling basis. The June-July 2026 window will see the first large cohort of borrowers receiving garnishment after the initial 30-day notice period. This real-time escalation should be tracked through DOE press releases and the [Federal Student Aid website](https://studentaid.gov/help-center/answers/article/what-is-wage-garnishment).
+
+Source: [Fortune, January 7, 2026 — Student Loan Borrowers Wage Garnishment](https://fortune.com/2026/01/07/student-loan-borrowers-wage-garnishment-who-is-affected-how-much-can-government-take/); [ACA International — Wage Garnishment Resumes January 2026](https://www.acainternational.org/news/federal-student-loan-wage-garnishment-resumes-january-2026/).
+
+---
+
+## Section 8: Source Methodology — Economic-Political Linkage Research Tradition
+
+This section identifies the primary scholars, research organizations, and methodological traditions that the June 16-August 10 research should draw on. Unlike the source library (DOMAIN_59_SOURCE_LIBRARY.md), this section characterizes each researcher's methodological contribution and explains why their work is essential to Domain 59's specific causal claims.
+
+### 8.1 The Bartels-Achen Research Program: Democracy Under Stress
+
+**Larry M. Bartels** (Vanderbilt University, Department of Political Science) is the foundational theorist for Domain 59's claim that economic inequality translates directly into political inequality.
+
+- **Unequal Democracy: The Political Economy of the New Gilded Age** (Princeton University Press/Russell Sage Foundation, 2nd ed. 2016): The definitive empirical study of how income inequality produces differential political responsiveness. Bartels documents that senators respond almost exclusively to the preferences of the top income third, and that economic policy outcomes under Republican and Democratic administrations have systematically benefited upper-income households for five decades. Chapter 2 ("Homer Gets a Tax Cut") is the canonical text for the political economy of economic legislation and inequity. URL: [Princeton University Press](https://press.princeton.edu/books/hardcover/9780691172842/unequal-democracy).
+- **"Measuring Political Inequality"** — chapter in *Unequal Democracies: Public Policy, Responsiveness, and Redistribution in an Era of Rising Economic Inequality* (Cambridge University Press, 2024): Bartels's most recent theoretical work. Directly applicable to Domain 59's argument that precarity → exclusion is not merely empirical but reflects deep structural inequality in political responsiveness. This is the primary source for the "democratic design failure" framing.
+- Contact: Vanderbilt Department of Political Science — [my.vanderbilt.edu/larrybartels](https://my.vanderbilt.edu/larrybartels/about-me/).
+
+**Christopher H. Achen** (Princeton University, emeritus) — co-author with Bartels of *Democracy for Realists: Why Elections Do Not Produce Responsive Government* (Princeton University Press, 2016). Achen and Bartels's "blind retrospection" model demonstrates that voters do not evaluate candidates on policy responsiveness but on recent economic conditions — even those caused by weather events or shark attacks. This is directly relevant to Domain 59 because it explains why economic precarity is politically self-reinforcing: precarious voters, unable to engage systematically with policy, default to emotional retrospection that does not register the structural causes of their situation. Cambridge Core discussion: [Perspectives on Politics, 2017](https://www.cambridge.org/core/journals/perspectives-on-politics/article/abs/discussion-of-christopher-h-achen-and-larry-m-bartels-democracy-for-realists-why-elections-do-not-produce-responsive-government/9CDA0706AE69D9AE13EE992A134D79D1).
+
+### 8.2 Marc Hetherington: Polarization and the Working-Class Political Disconnect
+
+**Marc Hetherington** (University of North Carolina at Chapel Hill, Raymond Dawson Professor of Political Science) contributes a different but complementary strand. His work on authoritarian predispositions (*Authoritarianism and Polarization in American Politics*, Cambridge, 2009, with Jonathan Weiler) and worldview-based political sorting (*Prius or Pickup?*, Houghton Mifflin Harcourt, 2018) provides the psychographic structure within which economic precarity operates.
+
+Domain 59's use of Hetherington: the "fixed vs. fluid worldview" framework explains why economic insecurity interacts differently with the political engagement of different demographic groups. Low-income voters with "fixed" worldviews respond to economic insecurity with increased distrust of institutions and reduced civic engagement; low-income voters with "fluid" worldviews may respond with increased political engagement when economically threatened. This heterogeneity undermines the simplistic "precarity causes disengagement" story and requires the more nuanced argument that precarity + institutional distrust + low political efficacy produces disengagement, while precarity alone does not deterministically produce it. Contact: UNC Chapel Hill, Department of Political Science.
+
+### 8.3 Foundational Political Economy Sources (Non-Bartels)
+
+These scholars provide the empirical scaffolding for specific subsections:
+
+- **Martin Gilens** — *Affluence and Influence: Economic Inequality and Political Power in America* (Princeton University Press/Russell Sage, 2012): Establishes that US government policy responds to the preferences of affluent Americans at every income level while ignoring the preferences of middle and lower-income groups. Required reading for Section 5 (reform architecture), because any reform that does not address political responsiveness will be blocked by the structural bias Gilens documents. URL: [Princeton University Press](https://press.princeton.edu/books/paperback/9780691162423/affluence-and-influence).
+- **Kay Lehman Schlozman, Sidney Verba, Henry Brady** — *The Unheavenly Chorus: Unequal Political Voice and the Broken Promise of American Democracy* (Princeton University Press, 2012): The comprehensive study of who participates in American politics and why. Establishes that participation is highly correlated with income and education, and that the participatory gap has widened with inequality. The time-money-civic skills triad (Section 2.1 of Domain 59) is developed most fully here.
+
+### 8.4 Policy Organization Source Methodology
+
+**Economic Policy Institute (EPI)**: The primary quantitative source for wage stagnation, productivity-pay gap, and minimum wage analysis. Josh Bivens (Research Director) and Elise Gould (Senior Economist) are the specific researchers whose work will anchor Sections 1.2 and 5.2. EPI publishes the Nominal Wage Tracker (monthly), the State of Working America (annual), and analysis of OBBBA distributional effects. All publications are open access at [epi.org](https://www.epi.org/).
+
+**Institute for Policy Studies (IPS) — Program on Inequality and the Common Good**: Chuck Collins (Director) and the Inequality.org team produce the most accessible research on wealth concentration and its democratic consequences. Collins's forthcoming book *Burned by Billionaires: How Concentrated Wealth and Power is Ruining Our Lives and Planet* (The New Press, Fall 2025) is directly applicable to Domain 59's democratic design failure argument. IPS also produces the annual "Billionaire Bonanza" report on wealth concentration. URL: [ips-dc.org/project/program-on-inequality-and-the-common-good](https://ips-dc.org/project/program-on-inequality-and-the-common-good/) and [inequality.org](https://inequality.org/).
+
+**Center on Budget and Policy Priorities (CBPP)**: Sharon Parrott (President) leads the organization that produces the most rigorous distributional analysis of OBBBA provisions. CBPP is the essential source for Claim 4's compounding argument — their income-quintile breakdown of OBBBA cuts will show that the bottom two quintiles face 3-5 percent net income reduction from the combined Medicaid, SNAP, student loan, and housing cuts. URL: [cbpp.org](https://www.cbpp.org/).
+
+---
+
+## Section 9: Domain Cross-References — 22, 34, 35
+
+Domain 59 does not stand alone. Its argument is strengthened and constrained by findings in three other completed domains. The June 16-August 10 research must read these domains before writing begins.
+
+### 9.1 Domain 22 — Equity, Disparities, and Structural Racism
+
+*Status: See domains/ directory for completed research.*
+
+Domain 22 establishes the racial dimension of economic disparity that Domain 59 must incorporate without duplicating. The key cross-reference points:
+
+- **Racial wealth gap**: The wealth gap between Black and white households ($171,000 median vs. $20,000 median in 2022) is the asset dimension of the income-participation gap. Domain 59 documents the income side; Domain 22 documents the wealth side. The two together show that the 26-point participation gap is not merely an income phenomenon but reflects durable, racially structured asset deprivation.
+- **Eviction as racial disparity**: Black renters, particularly Black women, face disproportionate eviction rates — the NAACP LDF analysis documents this (DOMAIN_59_SOURCE_LIBRARY.md, D8). Domain 22 provides the legal and structural analysis of why this disparity persists; Domain 59 provides the civic consequence.
+- **OBBBA impact by race**: Domain 22 should contain distributional analysis of OBBBA cuts by race. If it does, Domain 59 should cite it directly rather than re-derive the racial breakdown from scratch. Check Domain 22 Section [X] for the Medicaid and SNAP racial-impact figures before writing Section 3.1.
+- **Boundary**: Domain 59 should not attempt to fully develop the racial justice argument — that is Domain 22's territory. Domain 59's contribution is the civic consequence of the economic disparities Domain 22 documents.
+
+### 9.2 Domain 34 — Congressional Power of the Purse and Fiscal Authority
+
+*Status: Completed April 27, 2026. Full text in domains/domain-34-congressional-power-of-the-purse-fiscal-authority-reassertion.md.*
+
+Domain 34 establishes the mechanism by which the executive has circumvented congressional spending authority — directly relevant to Domain 59's reform architecture section. The key cross-reference points:
+
+- **Impoundment and benefit delivery**: The $425+ billion in withheld appropriations documented in Domain 34 includes specific program funds (Head Start, housing vouchers, SNAP administrative funds) that Domain 59's economic precarity argument depends on. The executive's ability to impound congressionally appropriated funds means that even if Congress passes the economic floor reforms Domain 59 recommends (Section 5.2), the executive can decline to spend them. This is the most important constraint on Domain 59's reform architecture.
+- **GAO enforcement capacity**: Domain 34 documents that Republicans proposed cutting GAO's budget by 50 percent and stripping its ICA enforcement authority. GAO is the institution that would monitor compliance with any new spending requirements for economic stabilization programs. If GAO is defunded, the watchdog capacity for Domain 59's reforms is eliminated before those reforms can be implemented.
+- **Reform interaction**: Domain 59's Section 5.2 (economic floor reforms) must be read in conjunction with Domain 34's reform architecture. A federal minimum wage increase, Medicaid expansion, or childcare subsidy is a spending authorization — it is meaningless without the fiscal authority restoration that Domain 34 advocates. The two domains should cross-recommend each other's reforms.
+- **Citation instruction**: When Domain 59 discusses "federal economic floor reforms," add a cross-reference: "The fiscal authority required to implement these reforms is analyzed in Domain 34 — without restoring the congressional power of the purse, economic floor legislation is subject to executive impoundment."
+
+### 9.3 Domain 35 — SCOTUS Economic Doctrine Post-Loper Bright
+
+*Status: Completed April 27, 2026, updated April 30, 2026. Full text in domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md.*
+
+Domain 35 establishes the judicial constraints on any economic regulation that Domain 59's reform architecture requires. The key cross-reference points:
+
+- **Loper Bright and wage/labor regulations**: The NLRB's capacity to enforce labor organizing rights — which directly affects wage levels and multi-job work reduction — is now structurally vulnerable. Domain 35 documents that *Trump v. Wilcox* (shadow docket, May 2025) and the D.C. Circuit merits ruling (December 2025) have effectively accomplished Humphrey's Executor's functional overruling. An NLRB without stable independent-agency status cannot reliably enforce minimum wage and organizing rights — the two labor reforms most directly responsive to the time-poverty pathway (Section 2.1).
+- **Minimum wage litigation risk**: Post-*Loper Bright*, courts must independently interpret wage statutes without deference to DOL rulemaking. This means any administrative effort to extend minimum wage protections to gig workers or to interpret the FLSA expansively will face de novo judicial review — making statutory specificity in any minimum wage reform essential.
+- **CFPB vulnerability**: Domain 35 documents the CFPB's institutional vulnerability post-*Humphrey's Executor*. The CFPB is Domain 59's primary government source for medical debt and wage garnishment data (DOMAIN_59_SOURCE_LIBRARY.md, C5). If the CFPB loses its independent-agency status, its rulemaking capacity on medical debt collection (currently in litigation) is eliminated. This is both a data sourcing risk (CFPB's data collection depends on its authority) and a reform risk (CFPB-based debt collection reforms would become unenforceable).
+- **Citation instruction**: When Domain 59's Section 5 discusses consumer protection reforms (debt collection regulation, payday lending caps), add: "The CFPB's authority to implement these reforms is subject to the structural vulnerability documented in Domain 35 — any debt-protection reform architecture must account for the post-*Humphrey's Executor* landscape and cannot rely on CFPB administrative discretion as a stable implementation mechanism."
+
+---
+
+## Expert Contact List — Phase 2 Production (June 15-August 10)
+
+This list supersedes and expands the preliminary contact list in DOMAIN_59_SOURCE_LIBRARY.md. These 15 individuals are prioritized for outreach during the peer review phase (July 22-27) and the January 2027 advocacy distribution. Contact methodology: email via institutional page, cc research coordinator; if no response in 7 days, follow up once via LinkedIn or secondary contact.
+
+### Economics and Political Economy of Inequality
+
+1. **Larry M. Bartels** — Vanderbilt University, Department of Political Science. Primary contact for the "political responsiveness to economic inequality" literature. His 2024 Cambridge chapter ("Measuring Political Inequality") is directly applicable. Contact: [my.vanderbilt.edu/larrybartels](https://my.vanderbilt.edu/larrybartels/about-me/). Priority: HIGH — Domain 59's democratic design failure framing builds directly on his framework.
+
+2. **Martin Gilens** — UCLA, Department of Political Science. Contact for the *Affluence and Influence* (2012) empirical work on differential political responsiveness by income. His data on the gap between policy outcomes and median-voter preferences is the empirical complement to Domain 59's participation argument. Contact: UCLA Political Science department page.
+
+3. **Josh Bivens** — Research Director, Economic Policy Institute. The primary source for wage stagnation data, minimum wage analysis, and Q1 2026 low-wage worker conditions. EPI's Nominal Wage Tracker is a standing data source. Contact via [EPI communications](https://www.epi.org/contact/). Priority: HIGH — EPI data is load-bearing for Sections 1.2 and 5.2.
+
+4. **Elise Gould** — Senior Economist, Economic Policy Institute. Focuses specifically on low-wage worker income distribution, childcare costs, and housing affordability as labor market constraints. Contact via EPI. Priority: MEDIUM — her specific research is directly cited in Section 1.2.
+
+5. **Chuck Collins** — Director, Program on Inequality and the Common Good, Institute for Policy Studies. Expert on billionaire wealth concentration and its democratic consequences. His forthcoming *Burned by Billionaires* (The New Press, Fall 2025) connects wealth concentration to democratic legitimacy erosion — a useful complement to Domain 59's income-poverty framing. Contact: [ips-dc.org](https://ips-dc.org/ips_author/chuck-collins/). Priority: MEDIUM — IPS provides the wealth-concentration dimension Domain 59 does not fully develop.
+
+### Housing and Eviction Research
+
+6. **Matthew Desmond** — Princeton University, Eviction Lab Director. The most important single contact for Domain 59. Co-author of Slee/Desmond (2023), the domain's primary causal anchor for the housing-instability pathway. The Eviction Lab's real-time data is the best available source for 2025-2026 eviction trends. Contact: Princeton Sociology department. Priority: CRITICAL — direct outreach for feedback on the housing-instability → voting section is essential for peer review credibility.
+
+7. **Diane Yentel** — Former NLIHC President/CEO. Expert on affordable housing shortage and housing advocacy. The NLIHC Gap 2026 (35 affordable units per 100 ELI households; 7.2 million unit shortfall) is Domain 59's primary housing-shortage statistic. Contact via NLIHC. Priority: MEDIUM.
+
+### Voting Rights and Electoral Research
+
+8. **Wendy Weiser** — Brennan Center for Justice (Director, Democracy Program). Expert on AVR, voting access, and economic barriers to participation. The Brennan Center's AVR effectiveness data anchors Section 5.1. Priority: HIGH — already a Phase 1 Batch 1 contact (see BATCH_1_CONTACT_LOG.md). If she responded to Phase 1 outreach, escalate Domain 59 peer review request.
+
+9. **Michael McDonald** — University of Florida, United States Elections Project Director. The authoritative academic source on US voter turnout data by income and demographic. His USELECT database complements the Census CPS Voting Supplement and provides real-time turnout tracking through 2026. Contact: [uselectionsproject.org](http://www.electproject.org/). Priority: HIGH — empirical foundation for Claim 1.
+
+10. **Kei Kawashima-Ginsberg** — CIRCLE Director, Tufts University. The leading youth civic engagement researcher. CIRCLE's 2024 data (62% of non-voting young people report financial difficulty) is the primary youth-specific evidence in Domain 59. Contact: [circle.tufts.edu](https://circle.tufts.edu/). Priority: HIGH — youth framing is the clearest August 2026 advocacy hook.
+
+### Economic Justice and Policy
+
+11. **Sharon Parrott** — CBPP President. CBPP is the essential source for OBBBA distributional analysis (income-quintile breakdown of cuts). Contact via [CBPP media](https://www.cbpp.org/). Priority: HIGH — CBPP data anchors the multiplicative compounding argument (Claim 4).
+
+12. **Marc Hetherington** — UNC Chapel Hill, Raymond Dawson Professor of Political Science. Expert on authoritarian predispositions, worldview-based political sorting, and working-class political engagement. His *Authoritarianism and Polarization in American Politics* (2009) provides the psychographic framework for understanding why economic precarity interacts differently with different voter populations. Contact: UNC Department of Political Science. Priority: MEDIUM — needed for the nuanced version of the precarity-disengagement argument.
+
+13. **Jared Bernstein** — Former CEA Chair (Biden administration). Expert on economic policy and its distributional consequences. Currently a CBPP contributor and public intellectual. Contact via CBPP or his public writing. Priority: MEDIUM — useful for January 2027 advocacy window framing with incoming Congress.
+
+14. **Kristin Rowe-Finkbeiner** — Executive Director, MomsRising. Expert on the intersection of maternal economic security (childcare costs, SNAP) and civic participation. MomsRising's membership base is precisely the population most affected by the OBBBA's childcare subsidy and SNAP cuts. Contact: [momsrising.org](https://www.momsrising.org/). Priority: MEDIUM — essential for August 2026 coalition-building phase.
+
+15. **Aaron Klein** — Brookings Institution, Senior Fellow. Financial inclusion and debt policy expert. His work on the economic burden of financial exclusion (unbanked households, high-cost credit, wage garnishment) complements the debt coercion pathway (Section 2.4). Contact: Brookings website. Priority: LOW-MEDIUM — most useful for Section 2.4 specifics.
+
+---
+
+*Document updated: May 19, 2026. Sections 7-9 and expanded expert contact list added by Resistance Research Agent. Additional research: FOMC 2026 calendar (federalreserve.gov); BLS CPI release schedule (bls.gov); NLIHC Gap 2026 (nlihc.org/gap); NAR Housing Affordability Index schedule (nar.realtor); Georgetown CCF Medicaid work requirements (ccf.georgetown.edu); KFF Medicaid Work Requirements Tracker (kff.org); Fortune/ACA International student loan garnishment data (January 2026); Bartels — Vanderbilt publications page; Achen/Bartels Democracy for Realists (Cambridge Core); Hetherington/Weiler Prius or Pickup (Houghton Mifflin); Gilens Affluence and Influence (Princeton UP); Collins/IPS Burned by Billionaires (The New Press 2025).*
+
+*Original document prepared: May 17, 2026. Pre-research pass by Resistance Research Agent. Sources gathered from: Dallas Fed wp2517r1 (March 2026 revision); CIRCLE/Tufts 2024 Youth Poll; PRRI 2024; Slee and Desmond (Politics and Society 2023); PNAS 2024 housing mobility study; EPI Wage Stagnation data; NLIHC; Urban Institute; Eviction Lab; OBBBA (Wikipedia + League of Women Voters analysis); Brennan Center AVR data; Mullainathan and Shafir (2013); IDEA Voter Turnout Database; Ludwig Erhard / Adenauer / Wirtschaftswunder sources.*
