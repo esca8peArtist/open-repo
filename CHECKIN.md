@@ -1,3 +1,54 @@
+## Since Last Check-in (Session 1360, May 19 20:15–20:40 UTC)
+
+**Session Status**: 🟢 **COMPLETED — EXPLORATION QUEUE ITEMS 85 + 90 PRODUCTION-READY, PRE-LAUNCH FRAMEWORKS COMPLETE**
+
+### Session 1360 Summary
+
+**Work Completed**:
+- ✅ **Item 85: Mfg-farm Etsy Launch Sequence** — COMPLETE
+  - **Deliverable**: `ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, production-ready)
+  - **Content**: Part 1 (pre-launch shop setup, May 25-29), Part 2 (launch-week execution, May 30-June 2), Part 3 (scaling operations, June 3-15), Part 4 (test print outcome routing: PASS/ADJUSTMENTS/FAIL/PARTIAL with corresponding timelines), Part 5-7 (analytics, contingencies, summary)
+  - **Status**: User can execute mechanically post-test-print approval (no discovery/planning needed)
+  - **Impact**: Unblocks May 29-June 15 Etsy launch window
+
+- ✅ **Item 90: Systems-Resilience Phase 4 Scope Definition** — COMPLETE
+  - **Deliverable**: `PHASE_4_SCOPE_AND_DECISION_FRAMEWORK.md` (3,500+ words, production-ready)
+  - **Content**: Part 1 (Phase 3 retrospective & gaps), Part 2 (3 option scenarios: Regional Scale-Up/Household Scale-Down/Integration), Part 3 (comparison matrix), Part 4 (May 21 synthesis integration), Part 5 (autonomous Phase 4 pre-work May 19-31), Part 6-8 (implementation roadmaps, success criteria)
+  - **Status**: User can choose Phase 4 direction June 1 and begin execution immediately
+  - **Impact**: Enables Phase 4 execution June 1+ while awaiting Phase 5 scope decision
+
+**Project Status Snapshot**:
+- **Mfg-farm**: Etsy launch sequence production-ready (5,500+ words, decision tree for all test-print outcomes)
+- **Systems-resilience**: Phase 4 scope decision framework complete; autonomously ready to begin pre-work May 19-31
+- **Resistance-research**: May 21 19:00 UTC synthesis confirmed autonomous, all 5 synthesis parts production-ready
+- **Stockbot**: 🔴 **CRITICAL: SSH auth required by May 22 13:30 UTC (13h 35m remaining from Session 1359 20:15 UTC, ~12-13h remaining as of 20:40 UTC)**
+- **Seedwarden Track B**: May 30 launch confirmed ready (all deliverables production-ready)
+- **Open-repo Phase 5**: Candidate 1 verified de-risked (awaiting May 25-26 approval)
+
+**Critical Path — Next 48 Hours** (unchanged from Session 1359):
+- **TODAY (May 19–20)**: SSH key authorization for Jetson (deadline **May 22 13:30 UTC**)
+- **May 20 evening**: User fills `wave-1-signal-log-may18-21.md` snapshots (enables May 21 synthesis)
+- **May 21 19:00–20:00 UTC**: Resistance-research May 21 synthesis (autonomous, deterministic)
+- **May 21 evening**: Read synthesis outcome; activate Phase 2 if STRONG/MODERATE
+- **May 22 13:30 UTC**: Stockbot Lever B SSH auth deadline
+- **May 22 20:00 UTC**: Stockbot May 22 checkpoint autonomous execution
+
+**Items Needing User Input** (unchanged from Session 1359):
+1. 🔴 **CRITICAL — TODAY (May 19-20)**: SSH auth for Jetson (deadline May 22 13:30 UTC, 12-13h remaining)
+2. **TODAY or May 21**: Domain 42 Wave 1 send (hard deadline May 24 11:59 p.m. ET)
+3. **May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots
+4. **May 21 evening**: Review synthesis outcome; activate Phase 2 if STRONG/MODERATE
+5. **May 25-26**: Review Phase 5 Candidate 1; approve for merge
+6. **June 1**: Choose Phase 4 direction (Option A/B/C or skip)
+
+**Next Session Actions**:
+- Monitor for stockbot SSH auth completion (critical deadline May 22 13:30 UTC)
+- Prepare for May 21 synthesis execution (user should fill signal log before 19:00 UTC May 21)
+- May 21 19:00 UTC: Execute resistance-research synthesis autonomously
+- If SSH unresolved by May 22 12:00 UTC, provide final escalation options
+
+---
+
 ## Since Last Check-in (Session 1359, May 19 19:44–20:15 UTC)
 
 **Session Status**: 🟢 **COMPLETED — SSH DEADLINE VERIFIED CRITICAL, DOMAIN 42 WAVE 1 STAGED & READY, STATE PREPARED FOR MAY 21 SYNTHESIS & MAY 22 CHECKPOINT**
