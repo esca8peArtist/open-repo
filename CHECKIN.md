@@ -1,28 +1,41 @@
-## Since Last Check-in (Session 1294, 01:00–02:00 UTC May 19)
+## Since Last Check-in (Session 1295, 02:00–02:30 UTC May 19)
 
-**Session Status**: ✅ **MAY 21 SYNTHESIS EXECUTION READY FOR AUTONOMOUS RUN** — Infrastructure verification completed. **All 5 synthesis parts verified production-ready + verified executable (no missing scaffolding, no structural issues).** May 21 autonomous execution at 19:00–20:00 UTC will proceed as scheduled. **May 22 stockbot checkpoint script verified; execution ready upon Lever B approval. Domain 42 DEA Category A batch status flagged as URGENT — May 21 is last viable send day.**
+**Session Status**: ✅ **AUTONOMY READINESS VERIFIED — NO WORK AVAILABLE; AWAITING USER DECISIONS AND MAY 21 SYNTHESIS TRIGGER** 
 
-**Synthesis Readiness Verification Complete**:
-✅ Part 1 (Signal classification framework) — complete, fill-in-place format ready
-✅ Part 2 (Phase 2 path decision logic) — all 4 branches fully specified
-✅ Part 3 (May 28 DEA deadline prep) — 28-contact send table + checklist complete  
-✅ Part 4 (Signal scoring / Gist delta tool) — dashboard + calculator verified
-✅ Part 5 (Supporting infrastructure) — all 6 files complete, cross-references verified
-✅ Pre-execution requirements: May 20 evening monitoring + May 21 morning check (data fill-in only)
+**Orientation & State Assessment Complete**:
+- ✅ ORCHESTRATOR_STATE.md reviewed: All projects in expected state per Session 1294
+- ✅ BLOCKED.md verified: 2 active blocks (cybersecurity-hardening step 1.3 restart, mfg-farm test print) — no new resolutions
+- ✅ INBOX.md verified: No new items to process
+- ✅ PROJECTS.md verified: Top 5 projects all blocked on explicit user actions or scheduled autonomous execution
+- ✅ EXPLORATION_QUEUE.md verified: Items 1-66 complete (last item Item 66 finished Session 1284). **Queue now EMPTY** — added 3 new items (67-69) for future work
 
-**🔴 CRITICAL USER DECISIONS STILL BLOCKING (Due TODAY May 19)**:
-1. **seedwarden Gate 2**: Canva Pro trial ($15/mo, 30-day free, STRONGLY RECOMMENDED) or free tier? (DUE TODAY — May 24 production window blocked without decision)
-2. **seedwarden Gate 1**: Instagram/TikTok/Pinterest accounts LIVE? (WAS DUE MAY 18, escalated to TODAY May 19)
-3. **stockbot Lever B**: Approve 2-hour HMM integration? (Code 100% complete, May 26 effectiveness target. May 22 checkpoint executable with or without Lever B.)
-4. **resistance-research Domain 42 DEA Category A**: Batch send status? May 21 is LAST VIABLE SEND DAY before May 28 deadline.
+**Autonomous Work Assessment**:
+- **Until May 21 19:00 UTC**: NO AUTONOMOUS WORK AVAILABLE
+  - stockbot: Code complete, awaiting Lever B approval (user decision)
+  - resistance-research: All synthesis infrastructure verified ready; execution scheduled May 21 19:00 UTC
+  - cybersecurity-hardening, mfg-farm, seedwarden: All blocked on explicit user actions
+- **May 21 19:00 UTC**: resistance-research synthesis will execute autonomously (30 min, self-contained)
+- **May 22 20:00 UTC**: stockbot checkpoint will execute autonomously (1 hour, if Lever B approved)
 
-**Current Time**: May 19, 2026, 02:15 UTC (41 hours to May 21 synthesis; 45 hours to May 22 checkpoint; 11 days to seedwarden May 30)
+**🔴 CRITICAL USER DECISIONS DUE TODAY (May 19, <22 hours remaining)**:
+1. **seedwarden Gate 2**: Canva Pro trial ($15/mo, 30-day free, STRONGLY RECOMMENDED) or free tier? — **Decision blocks May 24-25 zone-cards production**
+2. **seedwarden Gate 1**: Instagram/TikTok/Pinterest accounts LIVE? — **Was due May 18, still unresolved**
+3. **stockbot Lever B**: Approve 2-hour HMM regime masking integration? — **Affects May 22 checkpoint strategy + May 26 effectiveness timeline**
+4. **resistance-research Domain 42 DEA Category A**: Batch send status? — **May 21 is LAST VIABLE SEND DAY (7 days to May 28 deadline)**
 
-**Autonomous Execution Schedule**:
-- **May 21 19:00–20:00 UTC**: resistance-research synthesis execution (30 min, fully autonomous)
-- **May 22 20:00 UTC**: stockbot checkpoint execution (if Lever B approved; if not, STILL_MISS_B2 likely repeats)
-- **May 24–25**: seedwarden zone-cards production (if Gate 2 decided today)
-- **May 28**: Domain 42 DEA Category A batch send deadline (last day if not sent May 21)
+**May 21 Synthesis Execution Readiness (FINAL VERIFICATION)**:
+- ✅ Execution checklist exists: `post-wave-1-monitoring/may21-synthesis-execution-checklist.md` (171 lines, 9.3 KB)
+- ✅ All 5 synthesis parts verified production-ready (per Session 1294)
+- ✅ Pre-execution requirements: May 20 evening monitoring check + May 21 06:00 UTC morning check (data fill-in only)
+- **User actions needed**: (1) May 20 evening: check monitoring dashboard, record signal metrics; (2) May 21 06:00 UTC: confirm data collected, run synthesis at 19:00 UTC
+
+**Current Time**: May 19, 2026, 02:30 UTC (40.5 hours to May 21 synthesis; 44.5 hours to May 22 checkpoint; 11 days to seedwarden May 30)
+
+**Autonomous Execution Schedule** (CONFIRMED):
+- **May 21 19:00–20:00 UTC**: resistance-research synthesis execution ← **CRITICAL** (user must provide May 20 monitoring data + May 21 morning check)
+- **May 22 20:00 UTC**: stockbot checkpoint execution ← **Conditional on Lever B approval**
+- **May 24–25**: seedwarden zone-cards production ← **Conditional on Gate 2 decision TODAY**
+- **May 28**: Domain 42 DEA Category A batch send deadline (last send day if not completed May 21)
 
 ---
 

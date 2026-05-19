@@ -1273,6 +1273,70 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 
 ---
 
-**Total queue status**: Items 1–66 now staged. Items 61-62 activate May 21 (Wave 1 synthesis). Items 64-66 immediately actionable for May 18-19 events.
+## New Items (Session 1295 — 2026-05-19, 02:30 UTC)
+
+### ⏳ Item 67: Domain 58 (*Turtle Mountain* v. Howe Post-GVR Factual Update Check)
+**Status**: QUEUED (Session 1295, May 19 2026, 02:30 UTC)
+**Impact**: MEDIUM — May 21 synthesis uses Domain 58 (Tribal Sovereignty) as one of 4 core reference domains. May 18 SCOTUS GVR in *Turtle Mountain Band of Chippewa Indians v. Howe* changes the litigation status from "cert pending" to "remanded to Eighth Circuit." Domain 58 must be factually current for synthesis accuracy.
+**Context**: Session 1294 marked Domain 58 as "verified current as of May 19." But this was a spot-check. The *Turtle Mountain* GVR (May 18 SCOTUS order, documented in domain-updates-may17-18.md) requires domain-specific verification: is the current framing in domain-58.md still accurate, or does it reference cert-pending language that's now stale?
+**Goal**: Verify Domain 58 factual accuracy for May 21 synthesis:
+1. **Spot-check**: Search domain-58 for "cert pending," "certiorari," "Howe" — identify any stale litigation framing
+2. **GVR integration**: Is the May 18 remand to Eighth Circuit mentioned? If not, identify the section that should mention it
+3. **Remediation (if needed)**: Update 1-2 sentences to reflect current status (e.g., "Eighth Circuit on remand post-*Callais*" instead of "pending SCOTUS cert")
+4. **Cross-reference check**: Do other domains (1, 37) reference Domain 58? If so, are their references still accurate?
+5. **Synthesis impact**: Will May 21 synthesis conclusions change if Domain 58 is more current? (Likely no, but verify)
+**Feasibility**: HIGH — straightforward factual spot-check
+**Effort estimate**: 20-30 minutes
+**Deliverable**: Domain 58 verification report (1 page): spot-check results, any factual updates needed, updated text if required, cross-reference audit results, synthesis impact assessment
+**Why now**: Domain 58 is one of 4 reference domains for May 21 synthesis (1.5 days away). Verifying accuracy now prevents stale information from influencing Phase 2 path decision. Quick 20-min check eliminates risk.
+**Blocker**: None (verification work only, no code changes required)
+**Next Step**: Orchestrator performs spot-check May 19 afternoon → if no updates needed, synthesis proceeds May 21 with confidence. If updates needed, quick 1-sentence fix applied before synthesis execution.
+
+---
+
+### ⏳ Item 68: Post-May-21 Phase 2 Research Production Infrastructure (Conditional on Wave 1 Outcome)
+**Status**: QUEUED (Session 1295, May 19 2026, 02:30 UTC)
+**Impact**: HIGH — May 21 synthesis determines Phase 2 path (STRONG/MODERATE/WEAK outcome → 4 branches). Each branch triggers different Phase 2 research sequencing. Pre-staging the research production roadmap now (before outcome is known) ensures June 1 research can start immediately without planning friction.
+**Context**: DOMAINS_48_51_PRODUCTION_ROADMAP.md (Item 26, Session 957) exists but is outcome-agnostic. It assumes Phase 2 research will proceed. If Wave 1 outcome is WEAK, user may decide to extend Wave 1 outreach instead of launching Phase 2. If STRONG, research must start June 1. Pre-staging removes the decision-paralysis window (May 22-31) and enables automatic execution.
+**Goal**: Create outcome-conditional Phase 2 research production briefs:
+1. **STRONG outcome branch** (>5 institutional replies, >20 individual contacts engaging): Trigger Phase 2 research June 1. Pre-stage: Domain 56-58 (urgent, June 1-15), Domains 48-51 (parallel, June 1-July 31), stakeholder outreach for expert interviews (May 22-25 prepping, June 1 launch).
+2. **MODERATE outcome branch** (2-4 institutional replies): Delay Phase 2 research to June 15; extend Wave 1 Batch 3 through June 1. Pre-stage: Batch 3 contact variants, Phase 2 delay communication to stakeholder groups.
+3. **WEAK outcome branch** (<2 institutional replies): Regroup. May analyze distribution channels, messaging effectiveness; Phase 2 deferred to July. Pre-stage: Post-wave analysis framework, alternative distribution channels (academic journals, policy blogs, Congressional offices direct outreach).
+4. **TOO_EARLY branch** (Wave 1 still in early window, no conclusion): Continue Wave 1 through June 7; Phase 2 decision deferred to June 15 synthesis.
+5. **June 1 readiness checklist**: For STRONG/MODERATE branches, ensure all 4 infrastructure pieces are ready May 31 (Domain production scaffolds, stakeholder contact groups, cross-domain bridge documentation, QA peer review assignments).
+**Feasibility**: HIGH — builds on existing DOMAINS_48_51_PRODUCTION_ROADMAP.md, mostly conditional branching + templates
+**Effort estimate**: 1.5-2 hours
+**Deliverable**: `projects/resistance-research/PHASE_2_CONDITIONAL_RESEARCH_ROADMAP.md` (4 outcome-branch briefs, June 1 readiness checklist per branch, stakeholder outreach timeline per branch, contingency decision tree for outcome ambiguity)
+**Why now**: May 21 synthesis outcome determines everything. User should have clear branching instructions for May 22 morning so Phase 2 transition is self-executing, not a decision point. Pre-staging May 19 (before outcome) avoids post-synthesis analysis paralysis.
+**Blocker**: Depends on Item 61 (May 21 synthesis execution); can proceed in parallel with synthesis
+**Next Step**: Orchestrator produces conditional roadmap May 22 morning (1-2 hour task) → synthesis outcome populates decision tree → May 22 afternoon user has clear Phase 2 path instructions ready for May 31 go/no-go check
+
+---
+
+### ⏳ Item 69: Seedwarden Post-Gate-2 May 24-30 Sprint Optimization (Conditional on Canva vs Free Tier Decision)
+**Status**: QUEUED (Session 1295, May 19 2026, 02:30 UTC)
+**Impact**: MEDIUM-HIGH — Seedwarden Track B May 30 launch has 2 critical paths (Canva Pro vs free tier). Each requires different production workflow (Canva: 7.5 hrs May 24-25; free tier: +15 min per zone card, more manual labor). Timeline differs by 3-5 hours. User decision TODAY determines May 24-28 sprint logistics, team coordination, contingency buffers.
+**Context**: MAY_29_GO_NO_GO_DECISION_TEMPLATE.md (Item 32, Session 953) pre-stages the final go/no-go decision. But pre-May-29 sprint (May 24-28) doesn't have explicit timeline/workflow for the two decision branches. If user decides Canva Pro today, orchestrator should immediately begin May 24 production scheduling. If free tier, different staffing/tools needed.
+**Goal**: Create decision-conditional May 24-30 sprint optimization briefs:
+1. **Canva Pro branch** ($15/mo free trial decided): Zone-cards production May 24-25 (7.5 hrs), Kit setup May 26-27 (4 hrs pre-recorded content), final QA May 28 (2 hrs).
+   - Resource plan: User 7.5 hrs May 24-25, 2 hrs May 28
+   - Tool setup: Canva Brand Kit export, Gumroad/Shopify kit template finalization, email sequence staging
+   - Risk buffer: 2-hour contingency window built into May 27 (in case of Canva bugs)
+2. **Free tier branch** (hex workaround chosen): Zone-cards production May 24-28 (staggered, 1-2 hrs/day to spread manual labor), Kit setup May 27-28 (4 hrs), final QA May 29 (2 hrs).
+   - Resource plan: User 1-2 hrs daily May 24-28, 4 hrs May 27-28, 2 hrs May 29
+   - Tool setup: Manual hex color mapping, CSV batch export, Gumroad kit template finalization
+   - Risk buffer: 4-hour contingency buffer on May 29 (in case of manual errors)
+3. **May 24 kickoff checklist**: Assets ready (Wikimedia/Canva sources), email templates staged, Kit product description drafted, analytics setup verified (Item 32 complete)
+4. **May 29-30 final gate**: If schedule slipped or issues detected, decision tree for launch delay vs. launch-with-workaround
+**Feasibility**: HIGH — builds on existing CANVA_ZONE_CARD_BATCH_WORKFLOW.md (Item 21), mostly timeline optimization + resource planning
+**Effort estimate**: 1-1.5 hours
+**Deliverable**: `projects/seedwarden/MAY_24_30_SPRINT_OPTIMIZATION_BY_DECISION.md` (Canva Pro branch timeline + resources + tool setup, Free tier branch timeline + resources + tool setup, May 24 kickoff checklist, May 29 final gate decision tree)
+**Why now**: User decision DUE TODAY (May 19). If user decides Canva Pro today, May 20 evening orchestrator can schedule May 24-25 production with exact hour-by-hour timeline. If free tier, different scheduling needed immediately. Pre-staging May 19 (before decision) ensures immediate post-decision execution without planning friction.
+**Blocker**: Depends on Gate 2 user decision (due TODAY May 19); can produce both branches in parallel May 19-20
+**Next Step**: User decides Gate 2 today (Canva Pro or free tier) → Orchestrator populates appropriate branch into production schedule → May 24 06:00 UTC: automated reminders + zone-cards production begins with zero ambiguity on resource allocation
+
+---
+
+**Total queue status**: Items 1–69 now staged. Items 67-69 are May 19-31 enablers (Domain 58 check, Phase 2 conditional prep, Seedwarden sprint optimization). Items 61-62 execute May 21 (Wave 1 synthesis). Item 69 activates immediately upon Gate 2 decision (due TODAY).
 
 ---
