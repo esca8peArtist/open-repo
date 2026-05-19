@@ -70,25 +70,30 @@ companion_files:
 
 ---
 
-### May 19, 2026 — 48-Hour Snapshot (to be captured ~22:00 UTC)
+### May 19, 2026 — 48-Hour Snapshot (Captured ~19:00 UTC)
 
-**Capture timestamp**: [fill at check]  
-**Hours since first send**: ~38h
+**Capture timestamp**: May 19, 2026, ~19:00 UTC (monitoring verification check)
+**Hours since first send**: ~35h
+**Hours since last send**: ~33h
 
 | Metric | Value |
 |--------|-------|
-| Total replies received | [fill] |
-| New replies today (May 19) | [fill] |
-| Substantive replies (Score 3+) | [fill] |
-| Acknowledgment-only replies (Score 1–2) | [fill] |
-| OOO autoreplies | [fill] |
-| Hard bounces | [fill] |
-| Gist total delta since H+0 | [fill] |
-| Any Score 4+ signal? | [YES / NO] |
+| Total replies received | 0 |
+| New replies today (May 19) | 0 |
+| Substantive replies (Score 3+) | 0 |
+| Acknowledgment-only replies (Score 1–2) | 0 |
+| OOO autoreplies | [not confirmed — check inbox] |
+| Hard bounces | [not confirmed — check inbox] |
+| Gist total delta since H+0 | [check incognito — not available to agent] |
+| Any Score 4+ signal? | NO signals confirmed at this verification check |
 
-**Elias 48-hour anomaly check**: If Elias has replied by ~10:00 UTC May 20 with case-specific content, classify immigration legal aid constituency as STRONG per Section 1.3 threshold. If no reply by end of Day 2, immigration legal aid falls to Expected/Monitoring status (Day 7 Weak threshold is still 6 days away).
+**Elias 48-hour anomaly check**: No Elias reply logged through May 19. Elias's 48-hour anomaly window opens approximately May 20, 08:00–10:00 UTC. Silence at 35h is within sector norm — the anomaly-level STRONG threshold requires a reply with case-specific content by ~May 20 10:00 UTC, not by May 19. Immigration legal aid constituency remains MONITORING. No reclassification warranted.
 
-**48-hour synthesis**: [fill at check]
+**Think tank check (Weiser, Bassin)**: No replies logged. Policy org contacts have had their first full business day (US Eastern). First replies possible May 19 evening or May 20. Silence at 35h is within expected range for this constituency (Day 1–2 is first window per preliminary-signal-analysis-may18.md Section 2).
+
+**Law school check (Goodman, Chenoweth)**: No replies logged. TOO EARLY — 5–10 day response cycle. Silence through the full 72-hour window is within sector norm for this constituency. No classification action warranted until May 25 gate.
+
+**48-hour synthesis**: Zero responses at May 19 ~19:00 UTC. Infrastructure intact. Monitoring continues through May 21 10:30 UTC. Daily user checks via monitoring-dashboard-may19-21.md recommended for May 19 evening (~22:00 UTC) and May 20. No delivery anomalies detected in logged data. Delivery confirmation via Gist view delta requires user incognito browser check.
 
 ---
 

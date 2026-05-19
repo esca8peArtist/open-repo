@@ -2,6 +2,33 @@
 
 ---
 
+## May 19, 2026 — Post-Wave-1 Day 1 Signal Check
+
+**Status**: COMPLETE
+
+### Task
+Daily monitoring check — verify infrastructure, log any overnight replies from May 18–19, update signal log with May 19 snapshot status.
+
+### Findings
+
+**No new signals logged.** Zero replies, OOOs, or bounces have been recorded through ~19:00 UTC May 19 (~35h post-send). This is within expected range for all five contacts.
+
+**Infrastructure verified intact**:
+- `wave-1-signal-log-may18-21.md` — May 19 snapshot section updated. Constituency reads documented. Delivery confirmation note added (Gist delta requires user incognito check).
+- `preliminary-signal-analysis-may18.md` — May 19 update log row filled.
+- `monitoring-dashboard-may19-21.md` — Confirmed ready for user's manual daily checks (morning and evening). No agent fill required until signals arrive.
+
+**Constituency read at ~35h**:
+- Elias (immigration legal aid): MONITORING — 48h anomaly window opens May 20 ~08:00 UTC. Silence at 35h is normal.
+- Weiser, Bassin (think tanks): MONITORING — Day 1–2 is first window; silence at 35h is within norm.
+- Goodman, Chenoweth (law schools): TOO EARLY — 5–10 day cycle; no classification action until May 25 gate.
+
+**Next check**: User manual check recommended May 19 ~22:00 UTC (evening) via `post-wave-1-monitoring/monitoring-dashboard-may19-21.md`. Key question: Has Weiser or Bassin replied at Score 3+?
+
+**Upcoming decision gate**: May 21, 19:00–20:00 UTC — 72-hour synthesis. Execute `post-wave-1-monitoring/may21-synthesis-execution-checklist.md`.
+
+---
+
 ## May 19, 2026 — Post-Wave-1 Monitoring Verification + Synthesis Preparation
 
 **Status**: COMPLETE
