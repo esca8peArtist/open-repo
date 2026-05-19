@@ -1,3 +1,58 @@
+## Since Last Check-in (Session 1321, May 19 06:35–07:40 UTC)
+
+**Session Status**: ✅ **EXPLORATION QUEUE REFILLED — 3 new research items executed; May 21-22 critical path unblocked**
+
+**What Was Done**:
+
+### ✅ Exploration Queue Refill & Execution (3 New Items)
+
+**1. resistance-research: Phase 2 Domain 59 Research Outline & Source Staging** ✅ COMPLETE
+- **File**: `PHASE_2_DOMAIN_59_OUTLINE.md` (4,200+ words, 5 sections)
+- **Causal Pathways** (4 mechanisms with effect sizes): Eviction/foreclosure (0.46 pp overall, 5.54 pp in low-eviction neighborhoods), medical debt (44% elevated housing instability), wage stagnation (median $33K income – $17K rent – $15K childcare = zero), job instability/gig economy (institutional trust collapse)
+- **Evidence Base**: 26 peer-reviewed + policy sources structured by pathway, including APSR rural hospital closure study (Cox et al. 2025, 3.8 pp voting reduction), Burning Glass Midwest vicious cycle, LSE gig economy April 2026, UN trust collapse data
+- **Midwest Zone 5 Specific** (entirely new section): Agricultural crisis (+46% Chapter 12 filings, record $624.7B farm debt 2026), deindustrialization (YSU Center for Working Class Studies), rural hospital closures (Commonwealth Fund February 2026, Medicaid revenue -9.6%)
+- **Movement Leverage**: 15 organizations with 2026 policy windows (AFL-CIO/SEIU merger 15M members, NLIHC Our Homes Our Votes mini-grant program 50 orgs, Undue Medical Debt $25.4B jubilee, Farm Aid/NSAC)
+- **Production Timeline**: 50-60 hours June 15-July 15
+- **Impact**: Pre-stages Domain 59 for immediate June 1 launch if May 21 synthesis is STRONG/MODERATE
+
+**2. systems-resilience: Phase 4 Research Initialization & Gap Analysis** ✅ COMPLETE
+- **File**: `PHASE_4_RESEARCH_INITIALIZATION.md` (3,200+ words)
+- **Individual-Scale Gaps** (5 priorities ranked by Midwest impact): education/pedagogy (only planned-but-absent from Phase 3), veterinary care for Zone 5 livestock (emergency interventions, obstetrics), psychological support/trauma care (clinical depression risk in winters), farm equipment repair (diesel tractor/small engine/grain handling), conflict resolution/mediation facilitation
+- **Institutional Bridge Gaps** (3 high-leverage): clinic relationships (healthcare continuity), legal/county government interface (township commission legal standing), schools as resilience hubs (educational continuity, building access)
+- **Phase 4 Options**: Option A (expand individuals, 5-8 domains), Option B (institutional bridges, 3-5 connections), Hybrid (education + veterinary + clinic relationships + legal, 3-4 week timeline)
+- **Recommendation**: Hybrid approach (best ROI for Phase 4 + Phase 5 prerequisites)
+- **Cross-Project Reuse**: off-grid-living (medical depth), seedwarden (livestock/agricultural knowledge), avoids duplication
+- **Impact**: Enables May 21-22 user direction decision; Phase 4 research can launch June 1 if synthesis is positive
+
+**3. open-repo: Phase 5 Candidate Decision Framework** ✅ COMPLETE
+- **File**: `PHASE_5_DECISION_FRAMEWORK.md` (3,100+ words)
+- **Candidate 1 (ZimWriter/libzim)**: 8-11 hours, March 2026 active maintenance, 84 test stubs ready for fill-in, low risk; unblocks downstream Phase 5 work
+- **Candidate 2 (OPDS feedgen)**: 6-8 hours, feedgen inactive (no PyPI release 12+ months), medium risk; depends on Candidate 1 for real data
+- **Candidate 3 (A11y audit)**: 6-14h audit + TBD fixes, scope unpredictable, medium-high risk; audit findings create P0/P1/P2 triage
+- **Recommendation**: Launch Candidate 1 immediately; parallel Candidate 3 audit (6h bounded); defer Candidate 2 to post-ZimWriter
+- **Decision Matrix**: Impact/risk/timeline/DX comparison; user can pick Candidate 1/2/3 with confidence
+- **Impact**: Clear go/no-go removes Phase 5 decision paralysis; Candidate 1 (ZimWriter) can launch immediately
+
+### 📋 Orchestration Files Updated
+- **PROJECTS.md**: Added 3 new exploration queue items, marked all 3 COMPLETE with detailed delivery summaries
+- **Git**: 3 commits (87d12f7e Domain 59, 5271177f Phase 4, 603fcfb3 Phase 5)
+
+### ⏳ Critical Path Status
+- **May 20 evening** (user action): Fill Wave 1 signal log for resistance-research (email/Gist monitoring)
+- **May 21 19:00 UTC** (autonomous): Resistance-research synthesis execution (Domain 58 verified production-ready; all 5 synthesis parts staged)
+- **May 22 13:30 UTC** (CRITICAL): Lever B HMM config deadline (SSH auth failure blocks; needs user activation or manual fix)
+- **May 22 20:00 UTC** (checkpoint): May 22 checkpoint execution (config not activated = Lever A retested)
+
+### ✅ Phase 2 Readiness Summary
+All 3 Phase 2 candidate research (Domains 59, 57, 38-40) now have infrastructure ready:
+- Domain 59 outline + sources staged for June 15-July 15 execution
+- Phase 4 (systems-resilience) ready for May 21-22 user direction decision
+- Phase 5 (open-repo) decision framework removes candidate ambiguity
+
+**Session Assessment**: ✅ Exploration queue fully refreshed and executed. Three production-ready deliverables provide immediate strategic value for May 21-22 checkpoint + Phase 2 launch path. All future-dated work pre-staged. Critical path unblocked pending user actions (May 20 signal log, May 22 Lever B config).
+
+---
+
 ## Since Last Check-in (Session 1320, May 19 05:50–07:30 UTC)
 
 **Session Status**: ✅ **EXPLORATION QUEUE EXECUTED — 5 research items completed; synthesis prep 100% ready; awaiting May 21-22 events**
