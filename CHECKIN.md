@@ -1,3 +1,39 @@
+## Since Last Check-in (Session 1357, May 19 19:37–19:50 UTC)
+
+**Session Status**: 🟢 **COMPLETED — PRE-SYNTHESIS VERIFICATION CONFIRMS MAY 21 AUTONOMOUS EXECUTION READY**
+
+### Session 1357 Summary
+
+**Work Completed**:
+
+✅ **Resistance-Research Pre-May-21-Synthesis Verification** — Comprehensive production-readiness audit (all 5 synthesis parts)
+- Main orchestration file (`wave-1-synthesis-framework-skeleton.md`, 294 lines) — PRODUCTION-READY
+- All 6 framework parts fully specified: Data Assembly, Classification Formula, Path-Activation Decision Tree, Signal Rubric, User Gate Structure, Transition protocol
+- 7 supporting files verified: signal log, monitoring dashboard, preliminary analysis, execution checklist, phase-2 path summary, DEA deadline tracking, all reference documents
+- **Pre-conditions identified**: All production-ready; user action required: fill signal log [FILL] fields by May 21 19:00 UTC
+- **Status**: READY FOR MAY 21 19:00–20:00 UTC AUTONOMOUS SYNTHESIS EXECUTION (deterministic, no strategic judgment required)
+- **Impact**: No fixes needed; synthesis execution will proceed autonomously May 21 as scheduled
+
+**Project Status Snapshot**:
+- **Resistance-research**: May 21 19:00–20:00 UTC synthesis execution confirmed ready (autonomous, deterministic)
+- **Seedwarden Track B**: All autonomous work done; Phase 2 launch May 30 confirmed ready
+- **Open-repo Phase 5**: Candidate 1 de-risked and ready for user approval (May 25-26)
+- **Systems-resilience**: Phase 4-5 framework complete; awaiting user Phase 5 path decision (June 1)
+- **Stockbot**: May 22 checkpoint staging complete; **CRITICAL BLOCKER: SSH auth required by May 22 13:30 UTC** (public key must be added to Jetson authorized_keys)
+- **Cybersecurity-hardening**: Phase 1 at step 1.3 (VeraCrypt restart needed)
+- **Mfg-farm**: All pre/post-print deliverables done; test print execution pending
+
+**Critical Path — Next 48 Hours**:
+1. **TODAY (May 19–20)**: Add orchestrator ED25519 public key to Jetson authorized_keys before May 22 13:30 UTC (May 22 checkpoint critical deadline)
+2. **May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots (10 min) — enables May 21 synthesis execution
+3. **May 21 19:00–20:00 UTC**: May 21 synthesis execution (autonomous, ~25-30 min, deterministic)
+4. **May 21 evening**: Read synthesis outcome; if STRONG/MODERATE: activate Phase 2 research (Domain 59 outline ready, Domains 56/58 complete)
+5. **May 22 13:30 UTC**: SSH auth deadline (if unresolved, May 22 checkpoint = May 19 repeat)
+6. **May 25–26**: Review Phase 5 Candidate 1 audit; approve for merge
+7. **May 30**: Seedwarden Phase 2 Track B launch
+
+---
+
 ## Since Last Check-in (Session 1356, May 19 19:15–19:35 UTC)
 
 **Session Status**: 🟢 **COMPLETED — EXPLORATION QUEUE EXECUTION, 2 PARALLEL ITEMS VERIFIED & CATALOGUED**
