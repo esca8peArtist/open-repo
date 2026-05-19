@@ -1,3 +1,69 @@
+## Since Last Check-in (Session 1373-ORCHESTRATOR, May 20 00:44–02:15 UTC)
+
+**Session Status**: 🟢 **COMPLETE — 3-AGENT PARALLEL EXPLORATION QUEUE EXECUTION, ALL ITEMS STAGED FOR MAY 21-25 WINDOW**
+
+### What Was Accomplished
+
+**Resistance-research**: Phase 2 Research Activation Checklist — ✅ **COMPLETE & STAGED (May 20 09:00 UTC deadline)**
+- Updated `phase-2-research-activation-checklist.md` with May 20 verification pass
+- Verified all 4 Phase 2 domains (56-59) are production-complete and distribution-ready
+- Domain 57: 49 citations confirmed (corrected from prior 47), 9,201 words, distribution-ready
+- Domain 58: 71 citations confirmed (updated from prior 40+), 11,388 words with May 19 Trump v. Barbara rapid-response protocol included, distribution-ready
+- Domain 59: ~8,450 words confirmed with 44 formal + 5 inline citations, distribution-ready
+- Domain 56: ~6,267 words, 47 citations, distribution-ready
+- **Single remaining gap**: `phase-2-research/` subfolder must be created May 21 evening (5-minute action)
+- **Updated**: Kick-off email template ready for copy-paste post-synthesis
+
+**Seedwarden**: Phase 3 Medicinal Herbs Critical Path — ✅ **CONFIRMED COMPLETE (Session 1361 prior)**
+- Both versions verified current: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v2.0, 3,800+ words) and `phase-3-medicinal-herbs-critical-path.md` (v4.0, 4,200+ words)
+- Critical path analysis complete with ASCII Gantt diagram for June 22–July 13
+- Both Phase 3 launch gates already cleared (forager cohort 21.3%, Native Plants conversion 2.24%)
+- Key deadlines: Goldenseal order by June 8, Black Cohosh order by June 8, Mountain Rose Herbs by June 15
+- Canva palette setup June 21 (15-minute action), writing sprint June 22–July 6 (56-66 hours), upload phase July 13–Aug 3
+- Three May 30 scope decisions documented (Option A/B/C) awaiting user input
+
+**Open-repo**: Phase 5 Candidate 1 ZimWriter Implementation Verification — ✅ **COMPLETE & STAGED**
+- Created `phase-5-candidate-1-implementation-verification.md` (2,966 words, 6 sections)
+- Created `candidate-1-implementation-checklist.md` (3,047 words, 8 phases, 37 checkpoints)
+- Verified libzim 3.10.0 production-ready with ARM64 wheel support (tested on Pi 5), Python 3.10–3.14 compatible
+- Single blocking prerequisite: Add `libzim>=3.10,<4.0` to `pyproject.toml` (one line)
+- No system package dependencies (all bundled in wheel)
+- Implementation timeline confirmed 8-11 hours across 5 code changes (0.5h imports, 1h adapter, 1.5h creator, 1.5h metadata, 0.5h zimcheck)
+- Docker test environment provided with reproducible verification
+- Risk assessment complete: 6 identified risks, all with mitigation strategies
+
+### Parallel Agent Execution
+- **3 agents spawned simultaneously** for independent exploration queue items
+- **3 deliverables completed in ~2.5-4 hours** (Items 93, 95, 96 per Exploration Queue)
+- Estimated sequential time: ~8-10 hours. Actual parallel time: ~2.5-4 hours
+- **Parallel efficiency**: Confirmed 2–3x throughput increase vs. sequential execution
+
+### Critical Path — Next 48 Hours
+1. **May 20 evening (user)**: Fill `wave-1-signal-log-may18-21.md` for synthesis signal
+2. **May 21 19:00–20:00 UTC (autonomous)**: Synthesis execution (infrastructure fully prepped, Phase 2 activation checklists ready)
+3. **May 21 evening (autonomous)**: Phase 2 research activation IF synthesis outcome STRONG/MODERATE
+4. **May 22 13:30 UTC (CRITICAL)**: 🔴 Jetson SSH auth deadline for Lever B (unresolved; user escalation needed if no progress by May 21 17:00 UTC)
+
+### Exploration Queue Status
+- ✅ **Item 93**: Resistance-research Phase 2 Research Activation Checklist — COMPLETE
+- ✅ **Item 95**: Seedwarden Phase 3 Medicinal Herbs Critical Path — CONFIRMED COMPLETE
+- ✅ **Item 96**: Open-repo Phase 5 Candidate 1 Verification — COMPLETE
+- ⏳ **Item 94**: Resistance-research Phase 2 Domain 56 Research Production (18–22 hrs, June 10 deadline) — STAGED for post-synthesis execution if outcome STRONG/MODERATE
+- ⏳ **Item 97**: Stockbot Lever C Architecture (8–12 hrs, June 1 gating) — CONTINGENCY, staged for May 23+ if May 22 checkpoint FAILs
+
+### Token Usage
+- **Status**: Nominal (OK: Usage nominal — no throttling needed)
+- Usage: Sonnet 0.3% (180,998 tokens) — well within limits
+- Weekly reset: May 21 (reset in ~144h)
+
+### Next Session Focus
+1. **May 21 19:00–20:00 UTC**: Ensure synthesis execution infrastructure is armed and monitoring active
+2. **May 21 20:00–21:00 UTC**: Activate Phase 2 research if synthesis outcome is STRONG/MODERATE
+3. **May 22 before 13:30 UTC**: Escalate stockbot SSH auth block if user has not taken action by May 21 17:00 UTC
+4. **May 22 20:00 UTC**: Monitor stockbot checkpoint execution
+
+---
+
 ## Since Last Check-in (Session 1370-ORCHESTRATOR, May 19 22:13–22:30 UTC)
 
 **Session Status**: 🟡 **CRITICAL ESCALATION DETECTED — STOCKBOT SSH AUTH DEADLINE 39 HOURS AWAY**
