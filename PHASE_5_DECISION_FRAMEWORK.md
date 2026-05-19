@@ -1,362 +1,272 @@
-# Phase 5 Decision Framework: Candidate Evaluation & Prioritization Guide
+---
+title: "Phase 5 Decision Framework — Candidate Evaluation"
+project: open-repo
+phase: 5
+status: decision-required
+date: 2026-05-19
+author: research-agent
+tags: [phase-5, decision, zimwriter, opds, accessibility, a11y]
+---
 
-**Status**: Framework Ready (User Decision Required)  
-**Date**: 2026-05-18  
-**Purpose**: Help user decide between Phase 5 candidates (ZimWriter, OPDS, README) and determine implementation sequence  
+# Phase 5 Decision Framework: ZimWriter vs. OPDS vs. Accessibility Audit
+
+**Status**: Framework complete — user decision required  
+**Phase 4 result**: 194 tests passing, 0 failures, federation stack complete (Wave 4)  
+**Window**: May 19 – June 5, 2026 (approximately 2.5 weeks)  
+**Decision needed by**: May 20 early morning to allow immediate Phase 5 launch
 
 ---
 
-## Executive Summary: Three Paths Forward
+## Phase 4 Completion Baseline
 
-Phase 4 PR #1 (Federation) is merged, backend is stable with 194 tests passing. Phase 5 opens three distinct directions, each valuable but solving different problems:
+Phase 4 (Wave 4) delivered the complete federation infrastructure:
 
-| Candidate | Delivers | Hours | Blocks | Best For |
-|-----------|----------|-------|--------|----------|
-| **Candidate 1: ZimWriter** | Offline archive export to Kiwix | 4–6 | Nothing (core path) | Users in low-bandwidth regions |
-| **Candidate 2: OPDS** | Discovery mechanism in Kiwix app | 3–4 | Needs Candidate 1 | Discoverability; UX improvement |
-| **Candidate 3: README** | Documentation + security fixes | 2–3 | Nothing (independent) | Community onboarding; security |
+- **Partner registration API** with RSA-SHA256 HTTP signature verification (RFC 8017)
+- **ActivityPub inbox** endpoint receiving Announce and Undo activities
+- **Endorsement propagation** service with cross-node vote aggregation
+- **Conflict detection and logging** with admin resolution dashboard
+- **Test suite**: 194 executed, 4 skipped, 0 failures; 73% coverage overall; 93-99% on federation modules
+- **ZimWriter and OPDSCatalogService stubs** committed to `app/services/export/` with `TODO(post-PR-merge)` markers at every integration point — scaffolding 100% complete, real implementation deferred
 
-**Recommended sequence**: 3 → 1 → 2 (low risk to high impact)  
-**Alternative (aggressive)**: Start 3 + 1 in parallel once 3 lands  
-
----
-
-## Candidate Deep-Dive: What You're Choosing Between
-
-### Candidate 1: ZimWriter libzim Integration
-
-**What it does**: Activates the offline export pipeline. Users get valid ZIM archives they can read in Kiwix.
-
-**Technical scope**:
-- Replace stub `_stub_write_placeholder()` calls with `libzim.Creator` calls (Python wrapper)
-- Wire `add_article()` and `add_image_resource()` to the libzim API
-- Enable Xapian full-text indexing (built into ZIM format)
-- Uncomment `zimcheck` validation that confirms archive integrity
-- Update 6 lines in `pyproject.toml` to add `libzim>=3.2,<4.0`
-
-**Why it matters**:
-- **Unlocks Phase 5 core value**: Users can download open-repo offline—critical for low-bandwidth, field, and disaster scenarios
-- **All downstream work depends on it**: OPDS catalogs need real ZIM output; CDN upload needs real ZIM; weekly exports need real ZIM
-- **No integration debt**: The scaffold is 100% complete. This is purely filling in placeholders
-- **Completely independent**: Does not depend on PR #1 review or any other PR; can be developed right now
-
-**Implementation difficulty**: LOW
-- Every integration point already has a TODO comment
-- 84 export pipeline tests already exist and cover the public interface
-- The stubs are comprehensive enough that implementation is a "fill-in" exercise, not a design exercise
-- Expected to take 4–6 hours for an experienced Python dev
-
-**Risk profile**: MINIMAL
-- No schema migrations
-- No breaking API changes
-- No cross-service dependencies
-- Tests are already written; just need to swap stubs → real code
-
-**User experience after**:
-```
-User downloads 100 MB open-repo.zim → Opens in Kiwix → 
-Full-text searchable offline library of all domains
-```
-
-**What users in your target audience gain**:
-- Farmers in rural areas → planting guides offline during growing season
-- Disaster responders → medical/emergency procedures without internet
-- Offline researchers → complete knowledge base on USB stick
-- Raspberry Pi installations → self-contained knowledge nodes
+No Phase 5 work is currently blocked on code quality or stability. All three candidates can start immediately on separate branches.
 
 ---
 
-### Candidate 2: OPDS Catalog feedgen Migration
+## Section 1: Technical Scope per Candidate
 
-**What it does**: Enables discovery inside Kiwix apps. Users see open-repo content in the Kiwix app store and can download directly from there.
+### Candidate 1: ZimWriter (libzim Integration)
 
-**Technical scope**:
-- Replace raw `xml.etree` XML construction with `feedgen` library for cleaner Atom/RSS handling
-- Implement `OPDSEntry.from_zim_export()` factory (currently a TODO)
-- Add missing OPDS 1.2 elements: `dc:language`, `dc:issued`, `opensearch`, version history
-- Add OPDS search endpoint integration
-- Update 19 existing OPDS tests (most should pass unchanged after refactor)
+**What is involved**: Replace stub placeholders in `app/services/export/zim_writer.py` with real `libzim.writer.Creator` calls. The scaffold is fully built — class hierarchy, metadata models, `ExportConfig`, `ArticleItem`, `ZimWriter`, and HTML rendering with Jinja2 templates are all present. Every integration point carries a `TODO(post-PR-merge)` comment.
 
-**Why it matters**:
-- **Solves discoverability problem**: Right now, users need a direct URL to find open-repo archives. With OPDS, they browse within Kiwix app
-- **Standard interop**: OPDS 1.2 is the standard for ebook/content catalogs. Full compliance means Kiwix app will recognize and surface your archives
-- **Competitive feature**: Kiwix has many content sources; OPDS catalog ensures yours shows up prominently
+**Specific change surface**:
+- Add `libzim>=3.2,<4.0` to `pyproject.toml` (one line)
+- Replace `_stub_write_placeholder()` calls with a `libzim.writer.Creator` context manager
+- Wire `add_article()` and `add_image_resource()` to `creator.add_item()`
+- Enable Xapian full-text indexing via `creator.config_indexing(True, "eng")`
+- Re-enable `zimcheck` subprocess validation in `run_zimcheck()`
+- 84 existing export pipeline tests already cover the public interface; stubs swap out without changing signatures
 
-**Implementation difficulty**: MEDIUM
-- Feedgen library is simpler than raw XML, but requires understanding Atom/OPDS standards
-- The factory method `from_zim_export()` needs to understand ZIM export records (only available after Candidate 1)
-- 19 tests provide good coverage; most will pass with minor assertion updates
+**Dependency situation**: python-libzim 3.8.0 released March 2026 — actively maintained, pre-built wheels available for Linux x86/ARM64, macOS, Windows (CPython only; source distribution available for other platforms). No compiler required for standard deployments.
 
-**Dependency**: Requires Candidate 1 to complete first
-- OPDS catalog needs to populate from real ZIM export records
-- Can be developed in parallel with Candidate 1 if you have extra bandwidth, but should not be merged first
+**Integration points**: Reads from the `content_items` table (Phase 4 schema), streams items in batches of 200, renders via embedded Jinja2 templates (no external dependencies in output HTML), passes through `zimcheck` validation, computes SHA-256 checksum. Downstream consumers (OPDS catalog, CDN upload, scheduled exports) all depend on this producing valid ZIM output.
 
-**Risk profile**: MEDIUM
-- OPDS standard has some gotchas (namespace handling, element ordering)
-- Feedgen library is actively maintained but smaller community than xml.etree
-- If OPDS catalog doesn't validate, Kiwix app may silently ignore it (hard to debug)
-
-**User experience after**:
-```
-User opens Kiwix Android/Desktop → Sees "open-repo" in content directory → 
-Clicks "Download" → Gets your archive → Reads offline
-```
-
-**What users in your target audience gain**:
-- Easier discovery (no URL needed)
-- Confidence that archive is legitimate (signed in app store)
-- One-click install from within Kiwix
-- Updates available through Kiwix's normal content refresh
+**Known complexity**: The libzim Creator API uses a context manager pattern; `add_item()` takes a `WritingBlob` subclass rather than raw bytes. The Xapian indexing configuration is a single method call but requires non-empty `get_title()` on every article item. The `zimcheck` subprocess is already wired; just needs the disabled flag removed. Scope is narrow: no schema migrations, no new API endpoints, no cross-service dependencies.
 
 ---
 
-### Candidate 3: README Accuracy Pass & Security Fix
+### Candidate 2: OPDS feedgen Migration
 
-**What it does**: Updates public-facing documentation to match Phase 4 reality and fixes a security issue in the developer quickstart.
+**Current hardcoded approach**: `app/services/export/opds_generator.py` builds OPDS XML using Python's `xml.etree.ElementTree` directly. Raw element construction, manual namespace injection, and string concatenation handle the Atom feed structure. Four `TODO(post-PR-merge)` markers defer: feedgen library switch (line 353), `dc:language`/`dc:issued`/`opensearch` elements (line 544), version-history sub-entries (line 396), and the search endpoint (line 442). The `OPDSEntry.from_zim_export()` factory method (line 155) is a stub — the catalog cannot currently be populated from real ZIM export records.
 
-**Technical scope**:
-- Update README status line: "Phase 2 Complete" → "Phase 4 Complete (Federation)"
-- Correct test count: 35 → 194
-- Fix `--host 0.0.0.0` to `--host 127.0.0.1` (security rule violation)
-- Update project structure diagram to show actual directories
-- Document Phase 5 goals and federation endpoints
-- Update `API.md` version and endpoint list
+**What auto-generation requires**:
+- Add `feedgen>=0.9` to `pyproject.toml`
+- Rewrite `OPDSCatalogService._build_feed_xml()` to use feedgen's `FeedGenerator` and `FeedEntry` objects, eliminating raw `xml.etree` construction
+- Implement `OPDSEntry.from_zim_export(zim_export_orm_row)` — maps database export records to OPDS entries with acquisition links, file sizes, and checksums
+- Add missing OPDS 1.2 elements: `dc:language`, `dc:issued`, `opensearch` description, version-history sub-entries
+- Add OPDS search endpoint integration (`/opds/v2/searchdescription.xml`)
+- Update 19 existing OPDS tests — most assertions remain valid after the rewrite; namespace handling and element ordering may require minor adjustments
 
-**Why it matters**:
-- **Security fix**: The `0.0.0.0` binding in the quickstart violates the project's absolute security rules. A developer following the README would expose the API to network attack
-- **Community friction**: Anyone reading the repo right now sees Phase 2 documentation for a Phase 4 project. This deters contributors and suggests the project is abandoned
-- **Professional presentation**: A public repository's README is the first thing potential contributors see
+**Integration complexity**: Moderate. The feedgen library abstracts Atom/RSS generation but does not have native OPDS support — OPDS-specific link relations (`rel="acquisition"`, `type="application/x-zim"`) must be set via feedgen's `add_link()` extension mechanism. OPDS 1.2 has namespace subtleties: the `opds:` and `dc:` namespaces must be declared correctly or Kiwix app catalog discovery silently fails. Feedgen's health status is a concern: as of 2026, the library shows inactive release cadence (no new PyPI release in 12+ months) with approximately 35,000 weekly downloads. A fallback to `xml.etree` (currently working) is always available.
 
-**Implementation difficulty**: MINIMAL (2–3 hours, mostly editing)
-- No code changes
-- No test changes
-- No dependencies to update
-- Can be merged independently
-
-**Dependency**: None
-- Can be developed and merged right now, no waiting for other PRs
-- Will be just as valuable after Candidates 1 & 2 ship
-
-**Risk profile**: NONE
-- Pure documentation, no code risk
-- Security fix is a straight substitution
-- Can be reviewed and merged in isolation
-
-**User experience after**:
-```
-Developer finds open-repo on GitHub → Reads Phase 4 status → 
-Understands project scope → Runs correct quickstart (127.0.0.1) → 
-Starts contributing with correct context
-```
-
-**What users in your target audience gain**:
-- Contributors: Clear project status and correct setup instructions
-- All users: Security fix (no network exposure from default dev config)
-- Maintainers: Reduced support friction from confused developers
+**Dependency on Candidate 1**: The `OPDSEntry.from_zim_export()` factory needs real `ZimExport` ORM rows, which only exist after Candidate 1 produces valid output. OPDS can be developed in parallel on a separate branch but should not merge before Candidate 1 lands.
 
 ---
 
-## Implementation Timeline & Dependencies
+### Candidate 3: Accessibility Audit and Improvements
 
-### Sequential Path (Low Risk, 2 weeks)
-```
-Week 1:
-  Mon–Tue (2–3h): Candidate 3 PR — README/docs update
-  → Merge immediately, zero dependencies
+**Audit scope**: WCAG 2.1 Level AA is the appropriate target — it is the internationally recognized standard and the baseline for most public-interest digital infrastructure projects. The audit covers four domains: (1) perceivable content (color contrast 4.5:1 minimum for body text, alt text for images, text resizing to 200%); (2) operable interfaces (full keyboard navigation without mouse, skip links, focus indicators visible); (3) understandable content (form labels, error identification, language declaration); (4) robust markup (semantic HTML, ARIA roles where needed, screen reader compatibility).
 
-  Wed–Thu (4–6h): Candidate 1 branch — ZimWriter libzim integration
-  → Develop alongside Candidate 3, merge after 3 lands
+The `phase-5-export-strategy.md` document already notes a WCAG AA contrast requirement on the ZIM article HTML template (minimum 4.5:1 contrast ratio), but no audit has been run against the web frontend.
 
-Week 2:
-  Fri (3–4h): Candidate 2 branch — OPDS feedgen migration
-  → Merge last, depends on Candidate 1
-```
+**Scope ambiguity**: Open-repo is primarily a backend API. The "web interface" surface depends on what frontend exists — if the current phase only delivers API endpoints and the offline ZIM export, the a11y audit scope is largely limited to the ZIM article HTML template (which is rendered once and baked into offline archives) and any API response format used by screen-reader-accessible clients. A full frontend a11y audit requires a frontend to audit.
 
-### Aggressive Path (Medium Risk, 10 days)
-```
-Day 1: Candidate 3 PR opens → Code review & merge (same day)
-Day 1–3: Candidate 1 + Candidate 2 develop in parallel
-Day 3–4: Candidate 1 merges (no blockers for 2)
-Day 4–5: Candidate 2 merges (has all dependencies)
-```
+**Tools available**:
+- Automated (catches 30-40% of issues): axe-core (usable in Cypress/Playwright), Pa11y CLI, Accessibility Insights by Microsoft
+- Manual (required for the remainder): keyboard-only navigation testing, VoiceOver (macOS), NVDA (Windows/free), ORCA (Linux)
 
-### Conservative Path (Zero Risk, 3 weeks)
-```
-Finish Candidate 3 → Monitor for issues (1 week) → 
-Start Candidate 1 → Monitor (1 week) → 
-Start Candidate 2 (no rush, high confidence)
-```
+**Typical open-source a11y backlog**: Automated scanning on a moderately complex web application typically surfaces 15-50 distinct issue types. Remediation effort is highly variable — missing alt text across many images can be 40+ hours; form label fixes take minutes each; color contrast issues require CSS changes that may ripple through the design system. Professional audits of similar-scope projects estimate 120-160 hours total remediation for comprehensive WCAG AA compliance on a site with 10-20 unique page templates.
 
 ---
 
-## Decision Matrix: What to Prioritize
+## Section 2: User Value Ranking
 
-### If you want **Maximum user impact** immediately:
-→ **Candidate 1 (ZimWriter) first**
-- Enables the core feature (offline access)
-- Everything else depends on it
-- Unblocks Candidate 2 and future features
+| Candidate | Who benefits | User outcome | Mission alignment | Rank |
+|-----------|-------------|-------------|-------------------|------|
+| **1: ZimWriter** | Users in low-bandwidth regions, field workers, disaster responders, off-grid installations | Download a ~50-80 MB ZIM file; read the entire open-repo knowledge base offline in Kiwix on any device; no internet required | Direct — "distributed free info for all humanity" is meaningless without offline access for users who cannot reach the internet reliably | **1st** |
+| **3: A11y** | Blind and low-vision users, motor-impaired users who depend on keyboard navigation, screen reader users | Can actually use open-repo without assistive technology workarounds; equal access to community knowledge | High — "for all humanity" explicitly includes disabled users; without accessibility, a portion of humanity is excluded by design | **2nd** |
+| **2: OPDS** | Kiwix app users who browse the in-app content directory rather than using a direct URL | Discover and one-click-install open-repo archives from within Kiwix Android/Desktop without needing a URL | Medium — improves distribution discoverability and enables library/institutional partnerships that rely on OPDS catalog standards; depends on Candidate 1 first | **3rd** |
 
-### If you want **Fastest morale win** (most complete):
-→ **Candidate 3 (README) first**
-- Mergeable in 1 day, zero risk
-- Fixes a live security issue
-- Improves community perception immediately
-- Then move to Candidate 1
-
-### If you have **limited time / bandwidth**:
-→ **Candidate 3 alone** (2–3 hours, standalone value)
-- Security fix is worth doing regardless
-- Candidate 1 is next when you have a free week
-
-### If you want **all three** eventually:
-→ **Sequential: 3 → 1 → 2** (9–13 hours over 2 weeks)
-- Recommended approach
-- Low risk, all three deliver independently
-- Natural flow: docs → core → polish
+**Ranking rationale**: ZimWriter is ranked first because it is the prerequisite for the project's core offline value proposition — nothing downstream (OPDS, CDN, partnerships) matters without a valid ZIM file. Accessibility is ranked second because it broadens who can use the system at all, which is a harder constraint than how easily users discover it. OPDS is ranked third because it is a discoverability polish layer on top of a working offline export, not a standalone feature.
 
 ---
 
-## Risk Assessment by Candidate
+## Section 3: Developer Experience Impact
 
-### Candidate 1: ZimWriter (MEDIUM risk → LOW risk)
+**Candidate 1 (ZimWriter)**: Adds one new production dependency (`libzim`). Wheel availability is strong for standard deployment targets (Linux x86/ARM64, macOS, Windows); edge cases on unusual platforms require building from source. CI gains a real ZIM validation step via `zimcheck` subprocess — this adds approximately 10-15 seconds to the test suite for a small export but catches format errors that unit mocks cannot. The 84 existing export pipeline tests immediately become meaningful rather than stub-verifying placeholders. Long-term: high maintainability gain — the export pipeline becomes a testable, drivable system rather than a collection of TODOs. No schema migrations, no API surface changes.
 
-**Risks**:
-- libzim Python wrapper is actively maintained but smaller ecosystem than some alternatives
-- Xapian indexing can be tricky if content HTML isn't well-formed
-- zimcheck validation sometimes catches edge cases not caught by tests
+**Candidate 2 (OPDS feedgen migration)**: Removes raw `xml.etree` string construction in favor of feedgen's API — cleaner, shorter code at the cost of an inactive-maintenance upstream dependency. If feedgen is abandoned, the fallback path is a revert to `xml.etree` (already proven to work). The rewrite makes adding RSS variants, alternate ordering, and domain-specific sub-catalogs straightforward; each is a new `FeedEntry` loop, not a string-building exercise. Testing complexity is low: 19 existing tests plus feedgen's own format validation. Long-term: moderate maintainability improvement, with the dependency-health caveat.
 
-**Mitigation**:
-- Start with a small content set (10 items) to test the full export pipeline
-- Run zimcheck locally before shipping
-- Have a rollback plan: tests are comprehensive; stubs can be restored in 30 seconds if needed
-
-**Outcome if it fails**:
-- You find bugs, fix them, move on. The scaffold is so complete that debugging is straightforward
-- Worst case: you skip Candidate 1 and focus on Candidate 2 or 3
+**Candidate 3 (A11y audit)**: Introduces testing infrastructure with no equivalent in the current codebase. Automated a11y tests (axe-core via Playwright) run in CI and fail builds on regressions — valuable safety net but adds 30-90 seconds per CI run depending on the test surface. Manual testing with screen readers is not automatable; it must be re-run after each significant frontend change. The audit itself does not add technical debt — it reveals existing debt. Fixes may range from trivial (missing ARIA labels) to substantive (restructuring semantic HTML). If the project's current frontend surface is small, a11y work is well-contained. If the frontend grows later without an a11y baseline established now, retrofitting becomes significantly harder. Long-term: establishing a11y infrastructure now prevents the compounding cost of retrofitting an inaccessible system.
 
 ---
 
-### Candidate 2: OPDS (MEDIUM risk)
+## Section 4: Timeline Feasibility (May 19 – June 5, 2026)
 
-**Risks**:
-- OPDS 1.2 spec has namespace subtleties; if not done exactly right, Kiwix ignores your catalog silently
-- Feedgen library is smaller community; less Stack Overflow help
-- `OPDSEntry.from_zim_export()` requires understanding ZIM export record schema (depends on Candidate 1)
+### Candidate 1: ZimWriter — 8-12 hours, strong fit
 
-**Mitigation**:
-- Test against Kiwix Android emulator and Desktop (both free)
-- OPDS spec examples exist; copy the pattern
-- If feedgen proves problematic, fallback to raw xml.etree (known to work, just verbose)
+| Sub-task | Estimate |
+|----------|----------|
+| Add `libzim` dependency, verify wheel install | 30 min |
+| Replace stubs with `libzim.writer.Creator` context | 2-3 hours |
+| Wire `add_article()`, `add_image_resource()` | 1-2 hours |
+| Enable Xapian indexing | 30 min |
+| Re-enable and tune `zimcheck` validation | 1 hour |
+| Verify 84 existing tests pass | 1 hour |
+| Run manual test on Kiwix Android (F-Droid) | 1-2 hours |
+| Documentation update | 1 hour |
+| **Total** | **8-11 hours** |
 
-**Outcome if it fails**:
-- Kiwix app doesn't discover your catalog, but users can still access via direct URL
-- Not a blocker; Candidate 1 (ZimWriter) already works independently
+**Risk to timeline**: Low. The scaffolding is complete; this is a fill-in exercise, not a design exercise. The primary unknown is whether `zimcheck` reveals metadata edge cases in the rendered HTML, but the existing test suite is designed to catch these.
 
----
+**Python binding maturity risk**: Low-to-medium. python-libzim 3.8.0 (March 2026) is actively maintained by the openZIM Foundation (the same team that maintains the ZIM format specification). Pre-built wheels cover the expected CI and deployment platforms. The risk is not "will it work" but "will it work on an unusual target" — Raspberry Pi ARM is supported, which is the most important deployment edge case for this project.
 
-### Candidate 3: README (ZERO risk)
+### Candidate 2: OPDS feedgen migration — 6-10 hours, fits with dependency caveat
 
-**Risks**: None. It's documentation.
+| Sub-task | Estimate |
+|----------|----------|
+| Add `feedgen` dependency, audit its OPDS extension support | 1 hour |
+| Rewrite `_build_feed_xml()` with feedgen | 2-3 hours |
+| Implement `OPDSEntry.from_zim_export()` factory | 1-2 hours |
+| Add missing OPDS 1.2 elements | 1-2 hours |
+| Add search endpoint | 1 hour |
+| Update 19 existing tests | 1 hour |
+| Validate against Kiwix catalog discovery | 1 hour |
+| **Total** | **8-11 hours** |
 
-**Mitigation**: N/A
+**Risk to timeline**: Medium. Feedgen's inactive maintenance status means OPDS-specific namespace handling may require workarounds. The silent-failure mode (Kiwix app ignores malformed catalogs without error messages) makes debugging slow. Cannot merge before Candidate 1 — this creates a sequencing dependency within the window.
 
-**Outcome if it fails**: Worst case: typo in README. Fix and re-merge. No code impact.
+**OPDS spec risk**: The OPDS 1.2 specification is standardized and stable, which reduces interpretation risk. The risk is feedgen's integration path for non-standard link relations, not spec ambiguity.
 
----
+### Candidate 3: Accessibility audit — 12-30 hours, tight and scope-dependent
 
-## Community & User Value Comparison
+| Sub-task | Estimate |
+|----------|----------|
+| Automated axe-core/Pa11y scan | 2-4 hours setup + run |
+| Manual keyboard navigation testing | 4-6 hours |
+| Screen reader testing (NVDA + VoiceOver) | 4-8 hours |
+| Document findings | 2-3 hours |
+| Fix critical issues (contrast, missing labels, semantic HTML) | 4-12 hours (findings-dependent) |
+| Write regression tests | 2-3 hours |
+| **Total** | **18-36 hours** |
 
-### Value to Low-Bandwidth Communities
-1. **ZimWriter** (Candidate 1): ⭐⭐⭐⭐⭐ — Direct access to full offline library
-2. **OPDS** (Candidate 2): ⭐⭐ — Indirect (better discoverability, but needs ZimWriter first)
-3. **README** (Candidate 3): ⭐ — No direct benefit, but enables contributors
+**Scope risk**: High. The audit phase is bounded (4-6 hours for automated + basic manual), but remediation scope is unknown until the audit runs. If the ZIM article HTML template and web frontend have pervasive contrast or semantic structure issues, fixing them could easily exceed the window. The correct scoping decision is to do the audit, then triage findings into "critical (fix now)" and "non-critical (backlog)," and only commit to critical fixes in this window.
 
-### Value to Contributors
-1. **README** (Candidate 3): ⭐⭐⭐⭐⭐ — Clear status, correct setup, professional presentation
-2. **ZimWriter** (Candidate 1): ⭐⭐⭐ — Cool feature to work on next
-3. **OPDS** (Candidate 2): ⭐⭐ — Interesting but depends on other work
-
-### Value to Project Completeness
-1. **ZimWriter** (Candidate 1): ⭐⭐⭐⭐⭐ — Core Phase 5 feature
-2. **OPDS** (Candidate 2): ⭐⭐⭐⭐ — Polishes the feature
-3. **README** (Candidate 3): ⭐⭐⭐ — Foundation for growth
-
----
-
-## What Happens If You Choose Each Path
-
-### Path A: All Three (Recommended)
-**Timeline**: 2 weeks  
-**Effort**: 9–13 hours  
-**Outcome**: Phase 5 infrastructure complete. Users have:
-- Valid offline archives (ZimWriter)
-- In-app discoverability (OPDS)
-- Clear contributor onboarding (README)
-- Zero tech debt
-
-**Follow-up work**: CDN upload, scheduled exports, IPFS integration (Phase 5 Wave 2)
+**Unpredictable scope risk**: This is the primary risk for the May 19-June 5 window. A11y audits reliably surface more work than anticipated.
 
 ---
 
-### Path B: ZimWriter Only (Candidate 1)
-**Timeline**: 1 week  
-**Effort**: 4–6 hours  
-**Outcome**: Core Phase 5 feature complete. Users have offline archives.
-- Missing: In-app discoverability (OPDS), professional documentation
+## Section 5: Risk Assessment
 
-**Follow-up work**: Candidate 2 + 3 next; then CDN/scheduling
+### Candidate 1: ZimWriter
+
+**What can break**:
+- libzim wheel not available for the CI/deployment platform — low probability for standard Linux/macOS
+- `zimcheck` validation fails for metadata edge cases (title length > 30 chars, missing illustration, non-ASCII in metadata fields)
+- Xapian indexing generates a corrupt or oversize index for malformed HTML input
+- HTML rendering produces external dependencies (inline `<script>` or external `<link>`) that zimcheck rejects
+
+**Recovery paths**:
+- Platform wheel missing: switch to source distribution build in CI (adds 5-10 minutes to CI but unblocks work)
+- zimcheck failures: documented error messages are specific and actionable; fix is typically a metadata value correction
+- Xapian issues: disable indexing (`config_indexing(False)`) to produce a valid but unsearchable ZIM as a fallback; re-enable after fixing HTML rendering
+- **Fallback (worst case)**: Revert to stub behavior — 30 seconds to undo. ZIP export of HTML files provides a non-ZIM offline option if libzim proves unworkable
+
+**Recovery path clarity**: High. Every failure mode has a specific fix or bypass.
 
 ---
 
-### Path C: README + ZimWriter (Smart Default)
-**Timeline**: 1.5 weeks  
-**Effort**: 6–9 hours  
-**Outcome**: Foundation for growth + core feature complete.
-- Missing: Polish (OPDS)
+### Candidate 2: OPDS feedgen migration
 
-**Follow-up work**: Candidate 2 when you have spare bandwidth; then CDN/scheduling
+**What can break**:
+- feedgen does not natively support OPDS acquisition link relations — workaround needed via `add_link()` extension
+- Namespace declaration order causes Kiwix catalog parser to silently reject the feed
+- `from_zim_export()` factory maps fields incorrectly (wrong MIME type, incorrect file size units, missing acquisition href)
+- OPDS search endpoint returns malformed `searchdescription.xml` that breaks Kiwix search integration
+
+**Recovery paths**:
+- feedgen OPDS limitation: fall back to raw `xml.etree` (already working, just verbose) — zero user impact
+- Namespace ordering: test against Kiwix catalog parser locally before shipping; the OPDS spec has known-good example XML that can be diffed
+- Factory method bugs: 19 existing tests cover acquisition link structure; failures surface immediately in test run
+- **Version the feed format**: expose both `/opds/v1/` (current raw XML) and `/opds/v2/` (feedgen) during transition so existing integrations do not break
+
+**Recovery path clarity**: Medium-high. The main risk (feedgen OPDS namespace handling) has a clean fallback.
 
 ---
 
-### Path D: README Only (Conservative)
-**Timeline**: 1 day  
-**Effort**: 2–3 hours  
-**Outcome**: Security fix + community clarity.
-- Missing: Core Phase 5 feature (ZimWriter)
+### Candidate 3: Accessibility audit
 
-**Best if**: You want one quick win before committing to larger work
+**What can break**:
+- Audit reveals widespread issues that take significantly longer to fix than anticipated (underestimation risk)
+- Screen reader testing reveals interaction patterns that require substantial semantic HTML restructuring
+- CI a11y tests become flaky (false positives) and erode developer trust in the test suite
+- Fixing contrast or semantic structure breaks the visual design of the ZIM article template, requiring design re-review
+
+**Recovery paths**:
+- Scope explosion: explicit triage protocol — categorize findings as P0 (blocks screen reader use entirely), P1 (degrades experience significantly), P2 (best-practice improvements); commit only to P0 fixes in this window; defer P1/P2 to backlog
+- Flaky a11y tests: run axe-core in report-only mode (not blocking) initially; graduate to blocking after the backlog is stable
+- Template design regression: keep a11y fixes scoped to semantic structure and ARIA attributes; avoid visual redesign within this window
+- **If audit finds only minor issues**: This is actually the ideal outcome — fixes are fast, a11y infrastructure is established, future work stays clean
+
+**Recovery path clarity**: Medium. The audit's failure mode is a large backlog, not a broken feature. "Unmanageable" risk is low as long as the triage protocol is applied; without it, scope creep is a real risk for the 2.5-week window.
+
+---
+
+## Decision Matrix
+
+| Criterion | Candidate 1 (ZimWriter) | Candidate 2 (OPDS feedgen) | Candidate 3 (A11y audit) |
+|-----------|------------------------|---------------------------|--------------------------|
+| **User Impact** | High — offline access for low-bandwidth, disaster, off-grid users; core mission deliverable | Medium — easier discovery for existing Kiwix users; requires Candidate 1 first | High — equal access for disabled users; broadens "all humanity" to include impaired users |
+| **Technical Risk** | Low — scaffold complete, libzim 3.8.0 actively maintained, 84 existing tests | Medium — feedgen inactive maintenance, OPDS namespace gotchas, silent failure mode | Medium-High — audit scope unknown, remediation effort unpredictable |
+| **Timeline Feasibility (May 19–June 5)** | 8-11h, strong fit | 8-11h, fits but depends on Candidate 1 merging first | 12-30h, fits only with explicit triage and scope cap on fixes |
+| **Developer Experience** | Adds one actively-maintained dependency; 84 stub tests become real | Removes raw XML boilerplate; adds inactive-maintenance dependency | Adds testing infrastructure; reveals existing debt without creating new debt |
+| **Mission Alignment** | "Distributed free info for all humanity" — offline access is the primary distribution channel for humanity's most disconnected users | "Distributed knowledge" — feeds enable library and institutional partnerships at scale | "For all" — inclusion of disabled users is a prerequisite to "all humanity" |
+| **Unblocks Future Work** | Unblocks OPDS (Candidate 2), CDN upload, scheduled exports, IPFS integration | Unblocks library/institutional distribution partnerships | Unblocks inclusive design across future features; prevents compounding retrofit cost |
+| **Recovery Path** | High clarity — specific fallbacks for every failure mode | Medium-high — raw xml.etree fallback always available | Medium — triage protocol controls scope; no code rollback needed |
 
 ---
 
 ## Recommendation
 
-**For maximum impact with low risk**: Start with **Path C (Candidate 3 + 1)**
+**Pick Candidate 1 (ZimWriter)** as Phase 5 first work item. The scaffold is 100% complete, the dependency is actively maintained, the risk profile is the lowest of the three, and it unblocks every other downstream Phase 5 deliverable. Completing ZimWriter immediately converts 84 stub-verifying tests into real validation and delivers the project's core offline value proposition — the one thing users in low-bandwidth regions and field deployments actually need.
 
-1. **Candidate 3** (README): 2–3 hours, mergeable today, fixes security issue
-2. **Candidate 1** (ZimWriter): 4–6 hours, core Phase 5 feature, enables everything else
-3. **Candidate 2** (OPDS): 3–4 hours, one month later when you have bandwidth
-
-This sequence:
-- Fixes an immediate security issue
-- Delivers the core Phase 5 feature
-- Gives you a clean, professional public-facing repository
-- Leaves OPDS polish for later (still valuable, but not blocking)
-
-**Effort to get a working offline export**: 6–9 hours over 1.5 weeks  
-**Barrier to contribution/adoption**: Cleared (good docs, secure quickstart)  
-**Path to Phase 5 complete**: Clear (CDN + scheduling are straightforward once ZimWriter works)
+**Candidate 3 (Accessibility audit) is the smart second pick** if the window allows it: run the audit in parallel with ZimWriter development, triage findings, and fix only P0 issues before June 5. Establishing a11y infrastructure now is significantly cheaper than retrofitting after the frontend grows. Candidate 2 (OPDS) should follow Candidate 1 but is lower urgency — direct URL download from CDN works without an OPDS catalog; in-app discovery is a polish layer, not a prerequisite.
 
 ---
 
-## Next Steps (User Input Required)
+## User Decision Path
 
-Choose one:
+Review the three candidates and select one of the following paths:
 
-1. **Path A**: "Do all three in order 3 → 1 → 2 over 2 weeks"
-2. **Path B**: "Just do Candidate 1 (ZimWriter) for now"
-3. **Path C**: "Do Candidate 3 + 1 (my recommended default)"
-4. **Path D**: "Just README for now, plan ZimWriter later"
-5. **Custom**: "Different priority order / candidates"
+**Path A — Core feature first (recommended)**: "Start Candidate 1 (ZimWriter). Launch by May 21. Close by May 28. Then assess whether to run Candidate 3 audit in parallel or defer."
 
-Once you decide, I'll create execution checklists for each phase.
+**Path B — Core + accessibility in parallel**: "Start Candidate 1 immediately. Start Candidate 3 audit simultaneously on a separate branch. Triage audit findings and fix P0 issues before June 5. Merge both before window closes."
+
+**Path C — Accessibility first**: "Run Candidate 3 audit before building new features. Ensures the ZIM article HTML template and web layer are a11y-clean before Candidate 1 bakes them into offline archives."
+
+**Path D — All three sequentially**: "Candidate 1 → Candidate 2 → Candidate 3. Full Phase 5 offline stack plus OPDS discoverability plus accessibility baseline. Requires 24-42 hours of work over 2.5 weeks — tight but possible if bandwidth is consistent."
+
+**Confirm selection by May 20 to allow immediate Phase 5 branch creation and work start.**
+
+---
+
+## Sources
+
+- [python-libzim PyPI](https://pypi.org/project/libzim/)
+- [python-libzim GitHub (openzim)](https://github.com/openzim/python-libzim)
+- [feedgen PyPI](https://pypi.org/project/feedgen/)
+- [feedgen GitHub — "Dead Project?" issue](https://github.com/lkiesow/python-feedgen/issues/106)
+- [feedgen Snyk health report](https://snyk.io/advisor/python/feedgen)
+- [WCAG 2.1 AA audit standard rationale (2025)](https://accessible.org/wcag-21-aa-audit-standard-2025/)
+- [WCAG 2 Overview — W3C WAI](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [Accessibility audit scope and effort estimates](https://www.allaccessible.org/blog/website-accessibility-audit-guide-wcag-template)
+- [OPDS catalog standard](https://opds.io/)
