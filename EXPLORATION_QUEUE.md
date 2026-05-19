@@ -1556,3 +1556,64 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 
 **Autonomous Window Closed**: All pre-work for May 21–22 decision points is staged. Next autonomous batch begins post-May-21 synthesis (Item 70 sequencing activation) or post-May-22-checkpoint (multi-ticker training commencement, if PASS outcome).
 
+
+---
+
+## Session 1308 (May 19, 04:30–04:40 UTC) — NEW QUEUE ITEMS 76–78
+
+### ⏳ Item 76: Stockbot Post-May-22 Multi-Ticker Scaling & Live Trading Readiness
+**Status**: STAGED (Session 1308, 04:30 UTC)
+**Impact**: HIGH — determines live trading launch timeline and capital allocation strategy
+**Trigger**: May 22 checkpoint outcome (if PASS A/B/C, activates this item)
+**Goal**: Pre-stage multi-ticker training pipeline, live trading account verification checklist, guardrails tuning for 4-6 new tickers (AMZN, JPM, GOOGL, NVDA, META, MSFT), risk aggregation per account size, and implementation roadmap for June 1–15
+**Feasibility**: HIGH — infrastructure exists (multi-ticker framework from Session 985), stockbot codebase mature
+**Effort estimate**: 2.5–3 hours
+**Deliverable**: 
+- `projects/stockbot/POST_CHECKPOINT_MULTITICKER_PIPELINE.md` (ticker selection logic, training sequencing, guardrails tuning table)
+- `projects/stockbot/LIVE_TRADING_ACCOUNT_SETUP.md` (Alpaca account verification, position sizing by tier, deployment gates)
+- `projects/stockbot/GATE_2_IMPLEMENTATION_TIMELINE.md` (June 1–30 phase gates, capital deployment per checkpoint outcome)
+**Why now**: May 22 will determine whether Gate 1 passes. If PASS, 3-4 week window to stage multi-ticker scaling before June 26 Gate 2 checkpoint. Pre-staging removes May 23-30 friction.
+**Next Step**: Execute May 23-24 if May 22 checkpoint is PASS A/B/C outcome. If FAIL, Item 74 (Contingency Pathways) routes to Lever A/C escalation instead.
+
+---
+
+### ⏳ Item 77: Seedwarden Track B — Social Account Architecture & Content Calendar Pre-Build
+**Status**: STAGED (Session 1308, 04:32 UTC)
+**Impact**: HIGH — May 30 launch target depends on Gate 1 (Instagram/TikTok/Pinterest account setup)
+**Trigger**: User confirms social account creation status (awaited May 20)
+**Goal**: Research and pre-build: (1) Etsy-linked Instagram/TikTok/Pinterest account architecture (bio setup, link structure, hashtag strategy), (2) Content calendar template integrated with Canva/Kit, (3) Post templates and carousel sequences (Week 1-4 pre-fill), (4) Influencer/creator outreach list for May 30 launch week
+**Feasibility**: HIGH — templates exist in Track B execution guides; research on platform best practices available
+**Effort estimate**: 2–2.5 hours
+**Deliverable**:
+- `projects/seedwarden/SOCIAL_ACCOUNT_ARCHITECTURE.md` (bio copy, link structure, hashtag strategy by platform)
+- `projects/seedwarden/WEEK_1_4_CONTENT_CALENDAR.md` (26 posts, captions, posting cadence, Canva integration)
+- `projects/seedwarden/LAUNCH_WEEK_INFLUENCER_OUTREACH.md` (50+ micro-influencers in homesteading/farming, pitch templates, outreach sequence)
+**Why now**: Gate 1 is overdue. Pre-staging account architecture removes decision paralysis and accelerates launch once accounts exist. Content calendar ready-to-go means May 30 social amplification doesn't slip.
+**Next Step**: Execute May 20-21 in parallel with May 21 synthesis window. Hand to user with account confirmation; accounts + architecture + calendar form May 23 launch-readiness checkpoint.
+
+---
+
+### ⏳ Item 78: Resistance-Research Phase 2 Activation Sequencing (Domains 59, 57, 56, 58 Coordination)
+**Status**: STAGED (Session 1308, 04:34 UTC)
+**Impact**: HIGH — May 21 synthesis will route to Phase 2 expansion; June 1 research commencement depends on sequencing clarity
+**Trigger**: May 21 synthesis output (if STRONG or MODERATE, activates Phase 2 research)
+**Goal**: Pre-stage: (1) Domain 59 (Economic Precarity, June 15-July 15) research outline with 40+ sources, (2) Domain 57 (Multilateral Withdrawal, July 15-Aug 15) outline with 30+ sources, (3) Coordination framework linking 59→57→58→56 research sequencing to May 21 synthesis output branch, (4) Researcher assignment matrix (which domains to which subagents), (5) Delivery timeline to distribution (Oct 1 launch for Domains 59+57)
+**Feasibility**: HIGH — Phase 2 Expansion Outlines exist (Session 1022, 65K, production-ready); this adds execution sequencing + sourcing
+**Effort estimate**: 2–2.5 hours
+**Deliverable**:
+- `projects/resistance-research/PHASE_2_RESEARCH_EXECUTION_ROADMAP.md` (sequencing logic, domain prerequisites, June 1 agent handoff)
+- `projects/resistance-research/DOMAIN_59_ECONOMIC_PRECARITY_RESEARCH_OUTLINE.md` (80+ subsections, 50+ sources, outline skeleton for 50–60 hr research production)
+- `projects/resistance-research/DOMAIN_57_MULTILATERAL_WITHDRAWAL_OUTLINE.md` (70+ subsections, 40+ sources)
+**Why now**: May 21 synthesis will be STRONG/MODERATE ~70% likelihood (baseline Wave 1 assumptions). Phase 2 research doesn't launch until June 1, but pre-staging research outlines on May 23-24 means June 1 handoff is immediate agent execution, not discovery work. Eliminates 4-6 hour June 1 friction.
+**Next Step**: Execute May 23-25 (after May 21 synthesis classifies outcome). If May 21 is STRONG/MODERATE, hand to resistance-research subagent June 1 morning for immediate Domain 59 commencement. If WEAK, Contingency Plan Item 75 routes Phase 2 as lower priority; outlines remain staged for later-June activation.
+
+---
+
+**Staging Status**: Items 76–78 staged for post-May-21/22 autonomous execution.
+
+- Item 76: PASS May 22 checkpoint → execute May 23-24 (multi-ticker scaling)
+- Item 77: User confirms social accounts by May 20 → execute May 20-21 (content calendar) → activate May 23 after synthesis
+- Item 78: May 21 synthesis output → execute May 23-25 (Phase 2 sequencing) → June 1 handoff ready
+
+**Next Queue Status**: Exploration window opens May 23 post-checkpoint. Items 76–78 will be active/pending based on May 21-22 outcomes. No further items needed until post-May-22.
+
