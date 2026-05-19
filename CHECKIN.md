@@ -1,36 +1,48 @@
+## Since Last Check-in (Session 1356, May 19 19:15–19:35 UTC)
+
+**Session Status**: 🟢 **COMPLETED — EXPLORATION QUEUE EXECUTION, 2 PARALLEL ITEMS VERIFIED & CATALOGUED**
+
+### Session 1356 Summary
+
+**Work Completed**:
+
+1. ✅ **Seedwarden Phase 3 Medicinal Herbs Critical Path** — Verified + Supplemented
+   - Session 1349 deliverables verified production-ready (5 files: critical path, Gantt timeline, supplier tracker, etc.)
+   - **New**: Supplier Outreach Calendar (May 20–June 22) with email templates and decision gates
+   - **Key findings**: Both Phase 2 launch gates cleared (forager 21.3%, Native Plants 2.24%); writing is binding constraint (56–66 hrs); all photography has Wikimedia fallbacks
+   - **User decisions needed by May 25**: Scope (Option A/B/C), Goldenseal sourcing (live rhizome or CC photos), second writer engagement
+
+2. ✅ **Open-repo Phase 5 Candidate 1 (ZimWriter/libzim)** — Comprehensive Verification Complete
+   - Feature branch `feature/zimwriter-libzim-activation` audited end-to-end
+   - **Readiness**: 91/100, LOW RISK, implementation 100% complete
+   - **Status**: All 5 code changes present and verified; 84 tests passing (0.11s); Alembic migration ready; Xapian disabled (acceptable MVP)
+   - **Remaining post-merge**: 3.5 hours (zimcheck install, E2E testing, ORM model, DB migration, deployment)
+   - **Risk**: 6 identified; 5 operational (none architectural)
+   - **Ready for**: User approval May 25-26 → merge + deployment May 30-31
+
+**Project Status Snapshot**:
+- **Seedwarden Track B**: All autonomous work done; Phase 2 launch May 30 confirmed ready
+- **Open-repo Phase 5**: Candidate 1 de-risked; ready for merge upon approval
+- **Resistance-research**: May 21 19:00 UTC synthesis ready (autonomous, deterministic)
+- **Stockbot**: May 22 checkpoint staging complete; **CRITICAL: SSH auth required by May 22 13:30 UTC**
+- **Systems-resilience**: Phase 4-5 framework complete (Session 1354)
+- **Cybersecurity-hardening**: Phase 1 at step 1.3 (VeraCrypt restart needed)
+- **Mfg-farm**: Test print execution pending
+
+**Critical Path — Next 48 Hours**:
+1. **TODAY (May 19–20)**: Add orchestrator ED25519 public key to Jetson authorized_keys before May 22 13:30 UTC. This unblocks Lever B HMM config for May 22 checkpoint
+2. **May 20 evening** (4-6 hrs before synthesis): Fill `wave-1-signal-log-may18-21.md` snapshots (10 min). May 21 synthesis is autonomous
+3. **May 21 19:00–20:00 UTC**: Resistance-research May 21 synthesis execution (autonomous, ~25-30 min, deterministic)
+4. **May 21 evening**: Read synthesis outcome. If STRONG/MODERATE: activate Phase 2 research immediately (Domain 59 outline ready, Domains 56/58 production-ready)
+5. **May 22 13:30 UTC**: SSH auth deadline. If unresolved, May 22 checkpoint outcome = May 19 repeat (STILL_MISS_B2)
+6. **May 25–26**: Review Phase 5 Candidate 1 audit (files in projects/open-repo/); approve for merge
+7. **May 30**: Seedwarden Phase 2 Track B launch (all deliverables confirmed ready)
+
+---
+
 ## Since Last Check-in (Session 1355, May 19 22:00 UTC)
 
 **Session Status**: ✅ **ORIENTATION COMPLETE — ALL AUTONOMOUS PROJECT WORK COMPLETE, AWAITING MAY 21 SYNTHESIS**
-
-### Session 1355 Summary
-
-**Orientation**:
-- Verified ORCHESTRATOR_STATE.md (May 19 18:57 UTC snapshot)
-- Confirmed all projects: 3 active blocks (stockbot SSH, cybersecurity VeraCrypt, mfg-farm test print), 3 awaiting user decision (open-repo merge approval, systems-resilience June 1-5 path decision, seedwarden user gates), 1 scheduled/autonomous (resistance-research May 21 synthesis)
-- INBOX: Empty (no new items from Discord)
-- Explored Exploration Queue: 90 active items, but all are either STAGED (waiting for May 22 checkpoint outcome, June 1 path decisions, May 21 synthesis result) or COMPLETED in prior session
-
-**No Autonomous Work Available**:
-- Session 1354 completed all available parallel project work
-- All remaining project scope is either:
-  1. BLOCKED on user action (stockbot SSH auth, cybersecurity VeraCrypt restart, mfg-farm test print execution, seedwarden user gates)
-  2. AWAITING USER DECISION (open-repo merge approval May 25-26, systems-resilience June 1-5 path decision, seedwarden 3 implementation gates)
-  3. SCHEDULED/AUTONOMOUS (resistance-research May 21 19:00 UTC synthesis execution)
-  4. STAGED for post-checkpoint (May 22 stockbot checkpoint → post-analysis, contingency planning)
-
-**Critical Path to Next Work**:
-1. **May 20 evening** (user): Fill wave-1-signal-log-may18-21.md snapshots (May 20 evening snapshot)
-2. **May 21 19:00–20:00 UTC** (autonomous): Resistance-research May 21 synthesis execution (deterministic, deterministic, ~25-30 min)
-3. **May 21 evening** (user/autonomous): Phase 2 research launch if synthesis outcome STRONG/MODERATE
-4. **May 22 13:30 UTC** (CRITICAL DEADLINE): Stockbot Lever B SSH auth required or May 22 checkpoint will fail deterministically (same outcome as May 19)
-5. **May 22 20:00 UTC** (autonomous): Stockbot May 22 checkpoint execution
-
-**Recommend Next Session Priorities**:
-1. **TODAY (May 19–20)**: If you can resolve stockbot SSH auth before May 22 13:30 UTC, do it immediately (adds Lever B testing to checkpoint)
-2. **May 20 evening** (4-6 hours before May 21 synthesis): Fill signal log snapshots (10 min), confirm May 21 synthesis is ready (already is)
-3. **May 21 evening** (post-synthesis): Read synthesis outcome, activate Phase 2 if STRONG/MODERATE
-4. **May 25–26**: Review open-repo Phase 5 Candidate 1 audit, approve for merge + deployment May 30-31
-5. **June 1–5**: Decide systems-resilience Phase 5 path (community-scale, individual/household, federation, or institutional bridges)
 
 ---
 
