@@ -1,3 +1,34 @@
+## Since Last Check-in (Session 1365, May 19 21:16–21:30 UTC)
+
+**Session Status**: 🟢 **COMPLETED — CRITICAL SSH BLOCK RE-VERIFIED, STALE FOCUS PRUNED, BLOCKERS CONFIRMED**
+
+### Work Completed
+- ✅ **SSH block re-verified**: Orchestrator ED25519 key still not authorized on Jetson (exit code 255, "Permission denied (publickey,password)")
+- ✅ **Stale focus pruned**: Updated PROJECTS.md focus lines for resistance-research, cybersecurity-hardening, stockbot, seedwarden to current status (removed old session references, condensed to 2–3 lines each)
+- ✅ **Block status confirmed**: mfg-farm test-print-results directory does not exist (user test print not yet executed)
+
+### CRITICAL ALERT — SSH AUTHORIZATION DEADLINE
+🔴 **STOCKBOT LEVER B ACTIVATION DEADLINE: MAY 22 13:30 UTC (less than 14 hours remaining)**
+- **Problem**: Orchestrator cannot SSH to Jetson; Lever B config flag cannot be activated automatically
+- **User action required**: Either (A) Add orchestrator's ED25519 public key to `/root/.ssh/authorized_keys` on Jetson, OR (B) SSH with your credentials and run 5-minute config fix (see BLOCKED.md for exact commands)
+- **Impact if missed**: May 22 checkpoint will execute with Lever A (failed config), defeating purpose of Lever B testing
+- **This session**: Verified block is still real; cannot be auto-resolved. Escalating to urgent.
+
+### Items Requiring Immediate User Action (within 24 hours)
+1. 🔴 **TODAY/May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots (required for May 21 synthesis)
+2. 🔴 **TODAY/May 22 13:30 UTC (URGENT)**: SSH key authorization for Jetson Lever B (deadline — see BLOCKED.md)
+
+### Projects Status
+- **stockbot**: 🔴 CRITICAL — SSH auth required by May 22 13:30 UTC; May 22 checkpoint ready to execute autonomously
+- **resistance-research**: May 21 synthesis ready to execute (awaiting user signal log fill May 20 evening)
+- **seedwarden**: May 30 Phase 2 launch ready; Phase 3 scope decision needed May 25–30
+- **cybersecurity-hardening**: Awaiting user VeraCrypt restart (Phase 1 step 1.3)
+- **mfg-farm**: Awaiting user test print execution
+- **open-repo**: Phase 5 Candidate 1 ready for user approval (May 25–26)
+- **All others**: Complete or awaiting decisions
+
+---
+
 ## Since Last Check-in (Session 1364, May 19 21:30–22:10 UTC)
 
 **Session Status**: 🟢 **COMPLETED — 3 EXPLORATION QUEUE ITEMS DELIVERED: PHASE 2 RESEARCH ACTIVATION + PHASE 3 CRITICAL PATH + PHASE 5 VERIFICATION**
