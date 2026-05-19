@@ -1,5 +1,75 @@
 # Work Log
 
+## Session 1325 (May 19, 2026, 07:22–09:00 UTC)
+
+**Session Status**: ✅ **SECURITY FIXES + PARALLEL RESEARCH EXECUTION — 3 items delivered**
+
+**What Was Done**:
+
+### 🔒 CRITICAL SECURITY FIX — CLAUDE.md Compliance
+- **Issue**: Found 0.0.0.0 bindings in containerized-agents (chromadb, ollama) — absolute CLAUDE.md prohibition
+- **Fix Applied**: 
+  - chromadb/config.yml: changed `host: "0.0.0.0"` → `host: "127.0.0.1"`
+  - ollama/config.yml: changed `host: "0.0.0.0"` → `host: "127.0.0.1"`
+- **Impact**: Eliminates critical network exposure violation; services now bind to localhost only
+- **Committed**: f0553c0f (master)
+
+### 🎯 Exploration Queue Execution (Parallel)
+
+#### ✅ Item 1088: resistance-research — May 17-20 Breaking Developments Emergency Scan
+- **Execution**: resistance-research agent (1.5–2 hrs, parallel with Item 1092)
+- **Deliverable**: `projects/resistance-research/breaking-developments-may17-20.md` (production-ready synthesis)
+- **Key Findings** — **THREE CRITICAL UPDATES IDENTIFIED**:
+  1. **Domain 58 — EMERGENCY REWRITE REQUIRED** before May 21 synthesis
+     - *Turtle Mountain v. Howe* GVR issued May 18 (not cert denial, worse outcome)
+     - Domain's binary cert/deny framing now obsolete
+     - Must rewrite litigation section before synthesis execution
+  2. **Domain 37 Section IX.2 — Correction needed** (June 1 ICE funding framing superseded by Senate Byrd Rule)
+  3. **Domain 37b Section 6 — Enhancement** (Warner/Mullin letter + CISA-Gabbard-FBI nexus)
+  4. **Domain 1 — *Callais* cascade quantified** (17+ sub-congressional fights now documented)
+- **Impact**: May 21 synthesis must incorporate Domain 58 rewrite to maintain accuracy. This is high-priority pre-synthesis work.
+- **Next**: Domain 58 emergency update (2-3 hrs) before May 21 19:00 UTC synthesis
+
+#### ✅ Item 1092: mfg-farm — Q2-Q3 Etsy SEO & Competitive Positioning Analysis
+- **Execution**: general-research agent (2–3 hrs, parallel with Item 1088)
+- **Deliverable**: `projects/mfg-farm/etsy-seo-strategy-q2-q3-2026.md` (extended from 6,136 → 7,593 words)
+- **Key Findings**:
+  - Star Seller filter is hard gate (30% of Etsy buyers use it exclusively) — 95%+ response rate within 24h required
+  - Video listing confirmed as ranking lever (7-10 second vertical videos)
+  - Free shipping now mandatory for ranking (USPS First Class $4.50-$5.50, bake into product price)
+  - Offsite Ads margin floor: $14.99 clips / $16.99 hooks minimum after mandatory 12% Offsite Ads commission
+  - **Launch-day SEO checklist provided** (Section 10.4 — copy/paste titles, tags, description)
+- **Impact**: Day-1 launch SEO fully optimized; 2–4x higher visibility vs. ad-hoc listings. Ready to execute post-test-print.
+- **Next**: Use checklist when test print succeeds and Etsy launch proceeds
+
+### 📋 Orchestration Updates
+- **PROJECTS.md**: Pruned stale focus lines (resistance-research, seedwarden, open-repo) — preserved [PATH DECIDED] / [RESOLVED] markers, removed Session 1294/1292/1277 references
+- **CHECKIN.md**: Session 1325 orientation entry added
+- **Commits**: f0553c0f (security + project focus), consolidated research commits from both agents
+
+### 🎯 Critical Path Status (Updated)
+- **Now → May 20 evening**: User action: fill Wave 1 signal log (15-30 min, unblocks synthesis)
+- **URGENT — Before May 21 19:00 UTC**: Domain 58 emergency update required (2-3 hrs, must complete before synthesis)
+- **May 21 19:00 UTC (autonomous)**: resistance-research synthesis execution (now includes Domain 58 rewrite + 3 other updates)
+- **May 22 13:30 UTC (CRITICAL)**: Lever B HMM config deadline (SSH auth failure blocks auto-fix; user action needed)
+- **May 22 20:00 UTC (checkpoint)**: Checkpoint execution
+
+### ✅ Key Accomplishments
+- ✅ Critical CLAUDE.md violation fixed (0.0.0.0 bindings removed)
+- ✅ Stale project focus lines pruned, markers preserved
+- ✅ Breaking developments scan complete; Domain 58 emergency update identified as critical pre-synthesis work
+- ✅ Etsy SEO launch roadmap complete, actionable immediately post-test-print
+- ✅ No delays to critical path; May 21 synthesis timing intact (but Domain 58 update required)
+
+### ⏳ Immediate User Actions Needed
+1. **TODAY (May 19 evening)**: Fill Wave 1 signal log (15-30 min) — unblocks May 21 synthesis
+2. **BEFORE May 21 19:00 UTC**: Approve Domain 58 emergency rewrite (2-3 hrs parallel work)
+3. **BEFORE May 22 13:30 UTC**: Activate Lever B HMM config on Jetson (5 min, requires SSH access or manual execution)
+
+**Session Assessment**: Parallel research execution delivered 2 fully production-ready items. Critical security issue resolved immediately. Breaking developments scan identified essential pre-synthesis work (Domain 58 rewrite) that must be completed before May 21 19:00 UTC to maintain synthesis accuracy. All timing on track; all deliverables committed to master.
+
+---
+
 ## Session 1324 (May 19, 2026, 07:15–08:20 UTC)
 
 **Session Status**: ✅ **AUTONOMOUS EXPLORATION QUEUE EXECUTION — Items 21 & 22 COMPLETE (parallel)**

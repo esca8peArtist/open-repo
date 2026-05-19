@@ -31,7 +31,14 @@
 - **May 22 13:30 UTC**: Lever B config deadline (CRITICAL — 52 hours, requires user SSH access or manual fix)
 - **May 22 20:00 UTC**: Checkpoint execution (May 19 outcome was STILL_MISS_B2; Lever B activation will be tested)
 
-**Session Assessment**: Orientation complete. SSH auth failure confirmed; user action needed for Lever B fix. Launching parallel research agents for containerized-agents security fix + resistance-research breaking developments scan + mfg-farm SEO analysis (~5 hours concurrent work, execution beginning now).
+**Session Assessment**: Security fixes completed (0.0.0.0 bindings removed). Parallel research agents executed successfully:
+- **resistance-research**: Breaking developments scan COMPLETE — **CRITICAL**: Domain 58 needs emergency rewrite before May 21 synthesis (GVR in *Turtle Mountain v. Howe* May 18 invalidates cert/deny framing)
+- **mfg-farm**: Etsy SEO analysis COMPLETE — launch-day checklist provided, ready post-test-print
+
+**Immediate needs**:
+1. User: Fill Wave 1 signal log today evening (15-30 min)
+2. Domain 58 emergency rewrite before May 21 19:00 UTC (2-3 hrs, CRITICAL for synthesis accuracy)
+3. Lever B HMM config activation by May 22 13:30 UTC (SSH issue or manual execution needed)
 
 ---
 
