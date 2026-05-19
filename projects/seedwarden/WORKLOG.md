@@ -4,6 +4,60 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Launch Contingency Playbooks + Quick Reference — May 19, 2026
+
+**Task**: Build May 30 launch contingency playbooks and failure mode recovery procedures for
+the three-gate framework (Gate 1: May 24 Canva; Gate 2: May 27-28 Kit; Gate 3: May 30 launch).
+Two deliverables: full 16-playbook guide and one-page quick-reference decision tree.
+
+**Analysis**: Existing `SEEDWARDEN_LAUNCH_CONTINGENCIES.md` (2026-05-15, 12 playbooks) used
+an older gate numbering (old Gate 2 = Canva, old Gate 3 = Kit). New task requires the current
+framework (Gate 1 = Canva May 24, Gate 2 = Kit May 27-28, Gate 3 = May 30 launch). The
+existing `failure-mode-decision-tree.md` covered the same 12 failures with the old numbering.
+Two new files written from scratch using current gate structure, referencing current documents
+(SEEDWARDEN_EMAIL_LAUNCH_SEQUENCE_GUIDE.md, SEEDWARDEN_MAY_27_29_PRELAUNCH_MASTER_CHECKLIST.md).
+
+**Files written**:
+
+`projects/seedwarden/SEEDWARDEN_LAUNCH_CONTINGENCIES.md` — supersedes May 15 version.
+~3,400 words. 16 playbooks across 4 parts using the current gate framework. Part 1 (Gate 1,
+May 24, Canva): P1A color limit with 3-tier recovery (hex entry, export/paste, Figma/Affinity
+pivot with time/cost matrix), P1B upload failures with 4 recovery modes (file size, format,
+API/connectivity, silent failure), P1C Brand Kit corruption with full rollback path and zone
+card file recovery procedure, P1D template sync failure with mass Replace Color procedure.
+Part 2 (Gate 2, May 27-28, Kit): P2A email routing failure with 5-step diagnostic checklist
+and tag case-sensitivity root cause, P2B conditional logic blocked with Option 1/2/3 decision
+framework (all-zones email recommended), P2C subscriber list corruption with deduplication
+procedure and prevention export protocol, P2D sequence failure with error-message-specific
+fixes and manual broadcast fallback. Part 3 (Gate 3, May 30): P3A Etsy publish failure with
+8-field validation checklist and Gumroad fallback procedure (15-min setup), P3B Kit broadcast
+failure with retry logic, Gmail fallback, and C5 timing scenario (emails-before-Etsy as
+highest-damage scenario with correction email template), P3C social media failures with
+per-platform recovery (Instagram re-auth, TikTok manual upload flow, Pinterest board creation),
+P3D GA4 tracking failure with scoping note (GA4 is not a launch requirement, Etsy Stats is
+the sales truth). Part 4: escalation protocol with two tiers (immediate escalation vs post-60-min)
+and minimum viable launch definition.
+
+`projects/seedwarden/LAUNCH_DAY_QUICK_REFERENCE.md` — new file (~350 lines, one-page
+decision tree format). Full triage flowchart for May 30. Sections: launch sequence reference
+times (8:00am/10:00am/12:00pm/14:00/15:30/21:00), Gate 1/2/3 failure boxes with branching
+ASCII decision trees for all 16 failure modes, C5 critical scenario (emails before Etsy live)
+prominently flagged as most damaging scenario, escalation decision guide (two-tier: immediate
+vs post-60-min), minimum viable launch definition. All "See Playbook" references point to
+SEEDWARDEN_LAUNCH_CONTINGENCIES.md by part and section.
+
+**Integration**: Both documents reference SEEDWARDEN_EMAIL_LAUNCH_SEQUENCE_GUIDE.md for
+broadcast copy, SEEDWARDEN_MAY_27_29_PRELAUNCH_MASTER_CHECKLIST.md for test protocols,
+MAY_30_LAUNCH_DAY_EXECUTION_PLAN.md for timing, TRACK_B_EXECUTION_READINESS.md for platform
+constraint data (Canva 3-color limit, Kit conditional logic limit confirmed in Item 57 audit).
+Supersedes: SEEDWARDEN_LAUNCH_CONTINGENCIES.md (May 15), failure-mode-decision-tree.md (May 15).
+
+**Status**: Both deliverables production-ready. May 30 launch can proceed with zero ambiguity
+on failure modes. All 12 task-specified failure scenarios covered plus 4 additional (template
+sync, duplicate sends, high bounce rate, multi-platform social failure).
+
+---
+
 ## Seedwarden Agent Session — Items 91–92 Complete — May 20, 2026
 
 **Task**: Identify and execute next high-impact items for May 30 launch finalization. Items 27 (Content Calendar + Audience Integration) and 90 (Gate 1 Setup Guide) complete. 11 days to launch.
