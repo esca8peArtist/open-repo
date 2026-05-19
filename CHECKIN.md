@@ -1,3 +1,47 @@
+## Since Last Check-in (Session 1316, May 19 05:03–05:35 UTC)
+
+**Session Status**: 🔴 **CRITICAL INFRASTRUCTURE VALIDATION COMPLETE; LEVER B CONFIG GAP IDENTIFIED & BLOCKED**
+
+**What Was Done**:
+
+### ✅ Jetson Pre-Checkpoint Infrastructure Validation (Exploration Queue Item)
+- **Scope**: Comprehensive infrastructure validation before May 22 checkpoint (3 days away)
+- **Testing**: 100-cycle synthetic load test, CPU/GPU profiling, memory leak detection, database query benchmarking, Python dependency verification, disk I/O health check
+- **Results**: ALL PASS (CPU 91%+ idle, 47-48°C thermal headroom, 872 MiB memory / 4 GiB available, database queries <7ms vs 100ms threshold, disk 131 GB free, Alpaca network 59ms latency)
+- **Confidence**: 82% infrastructure-ready; rises to 91% after Lever B config fix applied
+- **Deliverable**: `projects/stockbot/jetson-pre-checkpoint-validation-report.md` (1,500+ words, production-ready, committed to master)
+
+### 🔴 CRITICAL BLOCKER IDENTIFIED: Lever B HMM Configuration Not Activated
+- **Issue**: Lever B HMM regime masking code deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`, 415 lines, syntax OK) but `/opt/stockbot/config/active-sessions-2session.json` **does NOT have `hmm_regime_masking: true`** in strategy_params
+- **Impact**: May 22 checkpoint will execute with Lever A configuration (same as May 19 failed attempt), **defeating entire purpose of Lever B testing**
+- **Severity**: CRITICAL — must be fixed before May 22 13:30 UTC market open (~56 hours from now)
+- **Fix**: SSH to Jetson → edit `/opt/stockbot/config/active-sessions-2session.json` → add `"hmm_regime_masking": true` to both session strategy_params → run `docker restart stockbot` → verify restart healthy (5-minute fix)
+- **Status**: Documented in BLOCKED.md with exact fix commands and verification procedure
+
+### ✅ Non-Blocking Issues Identified & Documented
+- **WebSocket connection limit spam**: 14,437 log entries in 24h from orphaned connections; will auto-resolve at May 19 13:30 UTC market open (Alpaca expires orphans); sessions falling back to REST API successfully
+
+### 📋 Files Updated
+- **PROJECTS.md**: Updated stockbot focus line to document Lever B configuration gap and critical deadline
+- **BLOCKED.md**: Added new critical block entry with exact fix commands and SSH verification
+- **WORKLOG.md**: Documented full validation session with results and critical findings
+- **Committed**: All orchestration files with message "Pre-Checkpoint Jetson Infrastructure Validation complete; CRITICAL Lever B config gap identified"
+
+**Needs Your Input** (URGENT):
+
+🔴 **CRITICAL — Before May 22 13:30 UTC market open (~56 hours)**:
+1. **SSH to Jetson** with your key: `ssh -i /home/awank/.ssh/jetson_key ubuntu@100.120.18.84`
+2. **Edit the config file**: `nano /opt/stockbot/config/active-sessions-2session.json` (or `vim`, your preference)
+3. **Find both AAPL session blocks** and locate the `"strategy_params":{...}` section
+4. **Add Lever B activation**: Insert `"hmm_regime_masking": true,` into each session's strategy_params
+5. **Restart Docker**: `docker restart stockbot`
+6. **Verify restart**: `curl http://localhost:8000/api/health` should return `{"status":"ok","sessions":2}`
+7. **Verify config**: `grep -A2 hmm_regime_masking /opt/stockbot/config/active-sessions-2session.json` should show `"hmm_regime_masking": true` for both sessions
+
+**If deferred**: May 22 checkpoint will measure Lever A equity-only performance (same result as May 19). Lever B testing remains available for later date if needed.
+
+---
+
 ## Since Last Check-in (Session 1311, May 19 04:52–05:35 UTC)
 
 **Session Status**: ✅ **ORIENTATION COMPLETE — All systems ready for May 21-22 autonomous execution**
