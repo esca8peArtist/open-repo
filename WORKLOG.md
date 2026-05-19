@@ -52,7 +52,24 @@
 
 **Why completed now**: May 22 checkpoint is 32 hours away. When outcome arrives May 22 20:00 UTC, user can immediately turn to appropriate outcome section in this document and execute next steps deterministically without further deliberation.
 
-**Files committed**: `projects/stockbot/POST_CHECKPOINT_DECISION_ARCHITECTURE.md`
+**Files committed**: 
+- Framework: `WORKLOG.md`, `CHECKIN.md`, `EXPLORATION_QUEUE.md` (commit 7a51d918)
+- Stockbot: `projects/stockbot/POST_CHECKPOINT_DECISION_ARCHITECTURE.md` (commit 48eaf1d)
+
+**Session Summary**:
+- **No autonomous work available on active projects** — all 10 projects blocked on user actions/decisions
+- **Expanded exploration queue** from 3 items (1 active + 2 complete) to 4 active items (Items 85, 88, 89, 90)
+- **Executed Item 88** (Post-May-22-Checkpoint Decision Architecture) — critical pre-checkpoint work completed
+- **Verified SSH block** still active (user must provide credentials or add key)
+- **All blocks remain unresolved** — awaiting user action by May 22 13:30 UTC (31.5 hours remaining)
+- **Next autonomous work**: Items 89, 90 available for May 19-31 execution while awaiting user decisions
+
+**Critical Dependencies for Next Session**:
+1. **May 19 13:30 UTC**: User must restart stockbot container to clear WebSocket error loop (OR confirm it's been restarted)
+2. **May 20 evening**: User fills `wave-1-signal-log-may18-21.md` with signal metrics (triggers May 21 19:00 UTC synthesis execution)
+3. **May 22 13:30 UTC**: User must activate Lever B HMM config on Jetson (SSH to add `hmm_regime_masking: true` to both AAPL session blocks in `active-sessions-2session.json`)
+
+**Token Usage**: ~56K this session (stockbot agent execution for Item 88)
 
 ---
 
