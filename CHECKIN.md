@@ -1,4 +1,43 @@
-## Since Last Check-in (Session 1316, May 19 05:03–05:35 UTC)
+## Since Last Check-in (Session 1317, May 19 05:40–05:50 UTC)
+
+**Session Status**: 🟡 **NO AUTONOMOUS WORK AVAILABLE — Awaiting May 21-22 execution windows and user action items**
+
+**What Was Done**:
+
+### ✅ State Verification (Full Orientation)
+- **Reviewed**: ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md, WORKLOG.md, EXPLORATION_QUEUE.md
+- **Finding**: All active projects blocked on user actions (Jetson SSH, Canva account setup, test print execution, Windows restart)
+- **Queue status**: Items 1-75 complete, Items 76-78 staged with May 21-23 triggers (sufficient queue depth; no new items needed)
+
+### 🔴 Critical Block Verified (Carryover from Session 1316)
+**Stockbot Lever B HMM Configuration** — Block confirmed unresolved:
+- SSH key auth failed (jetson_key not accessible; id_ed25519 also rejected by Jetson)
+- **Fix required**: User SSH to Jetson and execute: (1) Edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true` to strategy_params for both AAPL sessions, (2) Run `docker restart stockbot`, (3) Verify health check responds with `{"status":"ok","sessions":2}` (see BLOCKED.md for exact commands)
+- **Deadline**: May 22 13:30 UTC market open (~56 hours)
+
+### 📋 Projects Blocked on User Actions
+1. **stockbot** — Lever B config activation (CRITICAL, SSH required)
+2. **resistance-research** — No immediate work (Wave 1 done; May 21 19:00 UTC synthesis scheduled)
+3. **seedwarden** — Gate 1 (Instagram/TikTok/Pinterest account setup, overdue May 18) + Gate 2 (Canva Pro trial setup, awaiting your action)
+4. **mfg-farm** — Test print execution (user action, awaiting results)
+5. **cybersecurity-hardening** — Windows VeraCrypt restart (Step 1.3, user action)
+
+### ⏳ Scheduled Autonomous Work (May 21-23)
+- **May 21 19:00 UTC**: Resistance-research Wave 1 synthesis execution (Item 61) — 30-min autonomous runtime
+- **May 22 20:00 UTC**: Stockbot Lever B checkpoint execution (awaiting Lever B config fix)
+- **May 23-24**: Item 76 (Multi-ticker scaling architecture pre-staging) — triggers if May 22 checkpoint passes
+- **May 23-25**: Item 78 (Phase 2 activation sequencing) — triggers if May 21 synthesis is STRONG/MODERATE
+
+### ✅ Session Assessment
+- **Work accomplished**: Orientation complete, block status verified, next autonomous windows identified
+- **Token usage**: ~2K (orientation only, no new research/code work)
+- **Recommendation**: User action items (Lever B config, Seedwarden Gate 1-2, VeraCrypt, test print) are time-critical for May 21-22 deadlines
+
+**Needs Your Input** (URGENT ITEMS):
+
+---
+
+## Session 1316 (May 19 05:03–05:35 UTC)
 
 **Session Status**: 🔴 **CRITICAL INFRASTRUCTURE VALIDATION COMPLETE; LEVER B CONFIG GAP IDENTIFIED & BLOCKED**
 

@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-19T05:02:10Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-19T05:17:49Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 0.6% | Reset in 163h | check: claude.ai → Settings → Usage & billing
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 checkpoint EXECUTED (00:41 UTC, STILL_MISS_B2 outcome). Awaiting user approval for Lever B escalation.
-**Focus**: **⚠️ STILL_MISS_B2 CHECKPOINT OUTCOME (May 19 00:41 UTC).** May 22 checkpoint: Script created and verified (`scripts/may22_checkpoint_query_alpaca.py`). Both AAPL sessions healthy (34 fills, 3 round trips, equity $115,135.37). **✅ LEVER B HMM REGIME MASKING: DEPLOYMENT COMPLETE (Session 1308, 04:19 UTC).** Merged `feature/lever-b-hmm-integration` to master, rsync'd to Jetson `/opt/stockbot/src/`, Docker container restarted and verified healthy. API responding normally. HMM regime detection … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **⚠️ STILL_MISS_B2 CHECKPOINT OUTCOME (May 19 00:41 UTC).** **🔴 CRITICAL: LEVER B CONFIG ACTIVATION REQUIRED (May 19 Session 1316).** May 22 checkpoint: Script created and verified (`scripts/may22_checkpoint_query_alpaca.py`). Both AAPL sessions healthy (34 fills, 3 round trips, equity $115,050.05). **LEVER B HMM DEPLOYMENT**: Code deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`), but `active-sessions-2session.json` config lacks `hmm_regime_masking: true` in strategy_param … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -88,11 +88,16 @@
 **Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
 **Resolution**: [leave blank]
 ---
+### stockbot — Lever B HMM configuration not activated (critical pre-checkpoint fix)
+**Date blocked**: 2026-05-19 05:10 UTC (Session 1316)
+**Context**: Pre-checkpoint infrastructure validation (Session 1316) discovered that Lever B HMM regime masking code was deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`), but the config file `/opt/stockbot/config/active-sessions-2session.json` does NOT have `hmm_regime_masking: true` in strategy_params. Result: May 22 checkpoint will execute with Lever A configuration (same as May 19 that already failed with STILL_MISS_B2 outcome), defeating the purpose of Lever B testing. Fix is simple but CRITICAL: activate config + restart Docker before May 22 13:30 UTC market open (~56 hours from now).
+**What I need**: SSH to Jetson and: (1) Edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true` to strategy_params for both AAPL sessions. (2) Run `docker restart stockbot` on Jetson. (3) Verify restart completes and `/api/health` responds with `{"status":"ok","sessions":2}`. See `projects/stockbot/jetson-pre-checkpoint-validation-report.md` for exact fix commands.
+**Verify with**: `ssh -i /home/awank/.ssh/jetson_key ubuntu@100.120.18.84 'curl http://localhost:8000/api/health'` — should return `{"status":"ok","sessions":2}` AND `grep hmm_regime_masking /opt/stockbot/config/active-sessions-2session.json` should show `"hmm_regime_masking": true` for both sessions
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: resistance-research — focus references Session 1294 (17 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: seedwarden — focus references Session 1292 (19 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: open-repo — focus references Session 1277 (34 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: resistance-research — focus references Session 1294 (22 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: seedwarden — focus references Session 1292 (24 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 1277 (39 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
