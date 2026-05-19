@@ -1,3 +1,50 @@
+## Since Last Check-in (Session 1361, May 19 20:11–21:15 UTC)
+
+**Session Status**: 🟢 **COMPLETED — 3 EXPLORATION QUEUE ITEMS PRODUCTION-READY, PARALLEL RESEARCH AGENTS DELIVERED**
+
+### Session 1361 Summary
+
+**Work Completed** (3 parallel agents):
+- ✅ **Seedwarden: Phase 3 Medicinal Herbs Critical Path Analysis** — COMPLETE
+  - **Deliverable**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (3,800+ words, production-ready)
+  - **Key findings**: Writing is the binding constraint (56–66 hrs); Goldenseal decision needed by June 8; Women's Health bundle has zero float before June 29 upload target; minimum viable launch is 3 bundles (Women's Health + Respiratory + Sleep)
+  - **Impact**: User can decide Phase 3 scope and execute June 22–July 13 sprint with confidence; unblocks post-Phase-2-May-30 planning
+
+- ✅ **Open-repo: Phase 5 Candidate 1 Implementation Verification** — COMPLETE  
+  - **Deliverable**: `PHASE_5_CANDIDATE_1_IMPLEMENTATION_VERIFICATION.md` + `PHASE_5_CANDIDATE_1_IMPLEMENTATION_CHECKLIST.md` (1,500+ words each, production-ready)
+  - **Verdict**: GO — libzim installation trivial (single `uv pip install` command), 84 existing tests pass, 8–11 hour implementation estimate confirmed, zero blocking pre-requisites
+  - **Impact**: De-risks Phase 5 Candidate 1; ready-to-go checklist eliminates 2–3 hours setup friction once user approves
+
+- ✅ **Resistance-research: Phase 2 Research Activation Checklist & Timeline Templates** — COMPLETE
+  - **Deliverables**: `PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md` + `PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md` (1,500+ words each, production-ready)
+  - **Key findings**: Domain 58 is gating item for May 21; all four domains (56–59) audit-verified; four hard constraints identified (June 1 HHS, July 15 election, August 10 UNGA); zero API keys required
+  - **Impact**: Phase 2 research launches same-day post-synthesis May 21 evening (instead of May 22); researcher knows exact timeline and success criteria immediately
+
+**Project Status Snapshot**:
+- **Resistance-research**: May 21 synthesis autonomous; Phase 2 activation checklist production-ready for immediate post-synthesis launch
+- **Seedwarden**: Phase 3 production timeline clear; scope decision by May 30 required; May 30 Phase 2 launch confirmed ready
+- **Open-repo**: Phase 5 Candidate 1 ready for implementation upon user approval (expected May 25–26)
+- **Stockbot**: 🔴 **CRITICAL: SSH auth required by May 22 13:30 UTC (deadline approaching)**
+- **Systems-resilience**: Phase 4 scope framework from Session 1360 enables June 1 decision
+
+**Critical Path — Next 48 Hours** (unchanged):
+- **TODAY (May 19–20)**: SSH key authorization for Jetson (deadline **May 22 13:30 UTC**)
+- **May 20 evening**: User fills `wave-1-signal-log-may18-21.md` snapshots
+- **May 21 19:00–20:00 UTC**: Resistance-research May 21 synthesis (autonomous)
+- **May 21 evening**: Read synthesis outcome; activate Phase 2 if STRONG/MODERATE
+- **May 22 13:30 UTC**: Stockbot Lever B SSH auth deadline
+
+**Items Needing User Input**:
+1. 🔴 **CRITICAL — TODAY (May 19-20)**: SSH auth for Jetson (deadline **May 22 13:30 UTC**)
+2. **TODAY or May 21**: Domain 42 Wave 1 send (hard deadline May 24 11:59 p.m. ET)
+3. **May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots
+4. **May 21 evening**: Review synthesis outcome; activate Phase 2 if STRONG/MODERATE
+5. **May 25–30**: Three seedwarden Phase 3 decisions (scope, Goldenseal sourcing, Etsy launch)
+6. **May 25–26**: Approve Phase 5 Candidate 1 for implementation
+7. **June 1**: Choose systems-resilience Phase 4 direction
+
+---
+
 ## Since Last Check-in (Session 1360, May 19 20:15–20:40 UTC)
 
 **Session Status**: 🟢 **COMPLETED — EXPLORATION QUEUE ITEMS 85 + 90 PRODUCTION-READY, PRE-LAUNCH FRAMEWORKS COMPLETE**
