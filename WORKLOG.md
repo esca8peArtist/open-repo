@@ -1,5 +1,66 @@
 # Work Log
 
+## Session 1360 (May 19, 2026, 20:15–20:35 UTC) — Exploration Queue Execution: Items 85 + 90 Complete
+
+**Session Status**: 🟢 **COMPLETED — TWO MAJOR EXPLORATION QUEUE ITEMS PRODUCTION-READY**
+
+### Orientation
+- Read ORCHESTRATOR_STATE.md: Critical block remains (stockbot SSH auth, May 22 13:30 UTC deadline), resistance-research synthesis ready May 21, all other projects blocked on user actions/decisions
+- Checked INBOX.md: Empty (no new items)
+- Verified usage budget: 0.3% Sonnet tokens (well within limits)
+- Identified autonomous work: 3 Exploration Queue items available (85, 87, 90)
+
+### Work Executed
+
+**✅ Item 85: Mfg-farm Etsy Launch Sequence — COMPLETE**
+- **Deliverable**: `ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, production-ready)
+- **Content**: 
+  - Part 1: Pre-Launch Preparation (May 25-29) — 7-section shop foundation, listing templates, SEO, pricing strategy
+  - Part 2: Launch-Week Execution (May 30-June 2) — Hourly/daily mechanical execution plan with conversion monitoring
+  - Part 3: Post-Launch Scaling (June 3-15) — Supply stabilization, review generation, optimization
+  - Part 4: Test Print Outcome Routing — 4 decision branches (PASS/ADJUSTMENTS/FAIL/PARTIAL) with corresponding timelines
+  - Part 5-7: Analytics, contingency plans, summary timeline
+- **Status**: User can execute mechanically post-test-print approval (no discovery required)
+- **Timeline**: Unblocks May 29-June 15 Etsy launch window post-test-print
+
+**✅ Item 90: Systems-Resilience Phase 4 Scope Definition — COMPLETE**
+- **Deliverable**: `PHASE_4_SCOPE_AND_DECISION_FRAMEWORK.md` (3,500+ words, production-ready)
+- **Content**:
+  - Part 1: Phase 3 retrospective & gap analysis (what Phase 3 delivered, what wasn't covered)
+  - Part 2: 3 option scenarios (Option A: Regional Scale-Up 50K-500K, Option B: Household Scale-Down 2-6 person, Option C: Integration/Cascade Mapping)
+  - Part 3: Comparison matrix (effort, timeline, urgency, impact, constituency)
+  - Part 4: May 21 synthesis integration (decision gate based on resistance-research outcome)
+  - Part 5: Autonomous Phase 4 work roadmap (12 hours available May 19-31 for pre-work)
+  - Part 6-8: Implementation roadmaps, success criteria, quick reference
+- **Status**: User can choose Phase 4 direction June 1 and begin execution immediately
+- **Timeline**: Autonomous pre-work available May 19-31; Phase 4 execution June 1+ pending user decision
+
+**⏳ Item 87: Cybersecurity Phase 2 Detailed Roadmap — DEFERRED**
+- File `PHASE_2_DETAILED_ROADMAP.md` exists from prior session (98.7 KB, May 19 15:13)
+- Likely created by Session 1358 or earlier
+- Confirmed: Contains all Phase 2 module breakdowns (1-7 modules, 28-30 hour estimate, 3-week timeline)
+- No additional work needed; item appears complete from earlier session
+
+### Project Status Updates
+
+**Mfg-farm**: Updated Current focus in PROJECTS.md to reflect Item 85 completion and new `ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` file (5,500+ words, Session 1360, production-ready)
+
+**Systems-resilience**: Phase 4 scope definition complete, enabling June 1 user decision on path forward (Option A/B/C or skip)
+
+### Critical Path — Next 48 Hours
+
+1. **TODAY (May 19-20)**: SSH key authorization for Jetson (critical deadline May 22 13:30 UTC)
+2. **May 20 evening**: User fills `wave-1-signal-log-may18-21.md` snapshots (enables May 21 synthesis)
+3. **May 21 19:00–20:00 UTC**: Resistance-research May 21 synthesis (autonomous, deterministic)
+4. **May 22 13:30 UTC**: Stockbot Lever B SSH auth deadline (13h 35m remaining as of Session 1359)
+5. **May 22 20:00 UTC**: Stockbot May 22 checkpoint autonomous execution
+
+### Commits This Session
+- `e2fc313c`: feat(exploration-queue): Item 85 complete — mfg-farm Etsy launch sequence
+- `de9cce2c`: feat(exploration-queue): Item 90 complete — systems-resilience Phase 4 scope definition
+
+---
+
 ## Session 1359 (May 19, 2026, 19:55–20:15 UTC) — Critical Path Verification: SSH Deadline + Domain 42 Wave 1 Staging
 
 **Session Status**: 🟢 **COMPLETED — CRITICAL FINDINGS LOGGED, DOMAIN 42 STAGING VERIFIED, STATE READY FOR MAY 21 SYNTHESIS & CHECKPOINT**

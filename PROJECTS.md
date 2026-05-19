@@ -56,7 +56,13 @@
 **Status**: Active — ready to prototype
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/mfg-farm/`
-**Current focus**: **[ITEM 85 COMPLETE] POST-TEST-PRINT ETSY LAUNCH SEQUENCE FRAMEWORK (Session 1335).** Test print execution pending (user action required). All pre-print + post-print preparation complete. Pre-print deliverables: designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Post-print deliverables READY**: `etsy-listing-launch-checklist.md` (648 lines), `supplier-negotiation-playbook-consolidated.md` (551 lines), `8-printer-farm-cost-model.md` (639 lines), **`POST_TEST_PRINT_ETSY_LAUNCH_SEQUENCE.md` (379 lines — 5-branch decision framework covering all test outcomes)**. Framework maps test print results to 12 timeline options (8-22 days to launch). User action: (1) Execute test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C (May 22-23), (2) Report outcome, (3) Orchestrator activates corresponding branch for May 29-June 15 launch window.
+**Current focus**: **[ITEM 85 COMPLETE] ETSY LAUNCH SEQUENCE FRAMEWORK PRODUCTION-READY (Session 1360).** Test print execution pending (user action required). All pre-print + post-print preparation complete. **`ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, Session 1360, PRODUCTION-READY)**:
+- Part 1: Pre-Launch Shop & Listing Setup (May 25-29) — 7-section mechanical framework (shop foundation, listing templates, photography specs, SEO, pricing, policies)
+- Part 2: Launch-Week Execution (May 30-June 2) — Hourly/daily automation plan, conversion monitoring, optimization triggers
+- Part 3: Scaling Operations (June 3-15) — Supply chain stabilization, review generation, competitive optimization
+- Part 4: Test Print Outcome Routing — 4 decision paths (PASS/PASS-WITH-ADJUSTMENTS/FAIL/PARTIAL-FAIL) with corresponding launch timelines
+- Part 5-7: Analytics, contingency plans, summary timeline
+**User action**: (1) Execute test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C (May 22-23), (2) Report outcome, (3) Execute corresponding Part 4 branch May 25+ for mechanical Etsy launch.
 
 **Blocked on**: Test print (user action required — see focus above)
 **Notes**: Automation is the core constraint — products and workflows must be designed for minimal human touchpoints per unit. Physical products mean real fulfillment costs (packaging, shipping, storage) — factor these in from the start. Etsy and Amazon have different fee structures and audiences; may want both. Scaling from 1→N printers requires thinking about file management, queue management, quality control, and packaging throughput — not just the printers themselves.

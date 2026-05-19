@@ -93,10 +93,10 @@ All sections production-ready for mechanical execution post-test-print approval.
 
 ---
 
-### ⏳ Item 90: Systems-Resilience Phase 4 Scope Definition & User Decision Framework
-**Status**: NEW (Session 1341, May 19 2026, 12:12 UTC)
-**Priority**: MEDIUM — Phase 3 complete (May 18); Phase 5 user decision window is June 1; Phase 4 gap exists (autonomously workable)
-**Impact**: MEDIUM — Clarifies what work systems-resilience can do autonomously (Phase 4) vs. what requires user direction (Phase 5 path decision). Removes "what's next?" ambiguity.
+### ✅ Item 90: Systems-Resilience Phase 4 Scope Definition & User Decision Framework
+**Status**: COMPLETE (Session 1360, May 19 2026, 20:25 UTC) — Deliverable: `PHASE_4_SCOPE_AND_DECISION_FRAMEWORK.md` (3,500+ words, verified May 19 20:25)
+**Priority**: MEDIUM — Phase 3 complete (May 18); Phase 5 user decision window is June 1; Phase 4 work roadmap now clear.
+**Impact**: MEDIUM — Clarifies Phase 4 work options (Scale Up/Scale Down/Integration) with decision framework. Enables autonomous Phase 4 pre-work May 19-31 while awaiting user Phase 5 scope decision June 1.
 **Goal**: Pre-stage comprehensive Phase 4 scope definition covering: (1) Post-Phase-3 gaps and extensions (what wasn't covered in Phase 3, what could be deepened?), (2) Phase 4 implementation options (Option A: community-scale to regional scale; Option B: household implementation protocols; Option C: cross-domain integration framework), (3) User decision framework (Phase 5 path decision criteria, decision gate June 1), (4) Autonomous Phase 4 work that can proceed while awaiting Phase 5 decision
 **Scope**:
 1. **Phase 3 retrospective & gap analysis** (1 hr): Phase 3 covered 5 community-scale domains (governance, food, info, security, scaling). What's missing? Regional-scale considerations (50k-500k person scale)? Supply chain resilience across multiple communities? Cross-domain failure cascades beyond Phase 3 scope?
