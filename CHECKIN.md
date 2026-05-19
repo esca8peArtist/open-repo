@@ -1,39 +1,42 @@
-## Since Last Check-in (Session 1317, May 19 05:40–05:50 UTC)
+## Since Last Check-in (Session 1319, May 19 05:34–05:50 UTC)
 
-**Session Status**: 🟡 **NO AUTONOMOUS WORK AVAILABLE — Awaiting May 21-22 execution windows and user action items**
+**Session Status**: 🟡 **NO AUTONOMOUS WORK AVAILABLE — Critical block escalated; awaiting May 21-22 execution windows**
 
 **What Was Done**:
 
-### ✅ State Verification (Full Orientation)
-- **Reviewed**: ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md, WORKLOG.md, EXPLORATION_QUEUE.md
-- **Finding**: All active projects blocked on user actions (Jetson SSH, Canva account setup, test print execution, Windows restart)
-- **Queue status**: Items 1-75 complete, Items 76-78 staged with May 21-23 triggers (sufficient queue depth; no new items needed)
+### ✅ Full Orientation & Block Assessment
+- **Reviewed**: ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md
+- **Finding**: All active projects remain blocked on user actions (no change from Session 1317)
+- **No new INBOX items** — processing complete
 
-### 🔴 Critical Block Verified (Carryover from Session 1316)
-**Stockbot Lever B HMM Configuration** — Block confirmed unresolved:
-- SSH key auth failed (jetson_key not accessible; id_ed25519 also rejected by Jetson)
-- **Fix required**: User SSH to Jetson and execute: (1) Edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true` to strategy_params for both AAPL sessions, (2) Run `docker restart stockbot`, (3) Verify health check responds with `{"status":"ok","sessions":2}` (see BLOCKED.md for exact commands)
-- **Deadline**: May 22 13:30 UTC market open (~56 hours)
+### 🔴 Critical Block Escalation — Lever B HMM Configuration
+**SSH Authentication Failure Discovered**:
+- Attempted to auto-resolve Lever B config block from Session 1316 → **SSH auth failed**
+- Jetson reachable (ping successful, 10.8ms latency) but key authentication rejected
+- Tested both referenced keys: `/home/awank/.ssh/jetson_key` (does not exist) and `/home/awank/.ssh/id_ed25519` (rejected)
+- **Root cause**: SSH key on orchestrator not authorized on Jetson, or Jetson requires different auth method
+- **Updated BLOCKED.md** with SSH auth failure details, escalated to require either (A) SSH access restoration, or (B) manual user activation on Jetson
+- **Deadline**: May 22 13:30 UTC market open (~55 hours remaining)
 
-### 📋 Projects Blocked on User Actions
-1. **stockbot** — Lever B config activation (CRITICAL, SSH required)
-2. **resistance-research** — No immediate work (Wave 1 done; May 21 19:00 UTC synthesis scheduled)
-3. **seedwarden** — Gate 1 (Instagram/TikTok/Pinterest account setup, overdue May 18) + Gate 2 (Canva Pro trial setup, awaiting your action)
-4. **mfg-farm** — Test print execution (user action, awaiting results)
-5. **cybersecurity-hardening** — Windows VeraCrypt restart (Step 1.3, user action)
+### 🔴 Critical User Action Items (Time-sensitive, all May 21-22 deadlines)
+1. **stockbot — Lever B HMM config** (CRITICAL): SSH to Jetson and activate `hmm_regime_masking: true` in config (or restore SSH access if key issue can be fixed)
+2. **seedwarden — Gate 1** (OVERDUE May 18): Create Instagram/TikTok/Pinterest accounts for seedwarden brand
+3. **seedwarden — Gate 2** (IN PROGRESS): Set up Canva Pro 30-day trial and execute Brand Kit setup (30-45 min, approved in Session 1292)
+4. **mfg-farm — Test print** (BLOCKED): Execute single test print per specs in BLOCKED.md; evaluate snap-arm clearance
+5. **cybersecurity-hardening — VeraCrypt** (PAUSED Step 1.3): Restart Windows machine, complete pre-boot password entry, execute background encryption start
 
-### ⏳ Scheduled Autonomous Work (May 21-23)
-- **May 21 19:00 UTC**: Resistance-research Wave 1 synthesis execution (Item 61) — 30-min autonomous runtime
-- **May 22 20:00 UTC**: Stockbot Lever B checkpoint execution (awaiting Lever B config fix)
-- **May 23-24**: Item 76 (Multi-ticker scaling architecture pre-staging) — triggers if May 22 checkpoint passes
-- **May 23-25**: Item 78 (Phase 2 activation sequencing) — triggers if May 21 synthesis is STRONG/MODERATE
+### ⏳ Scheduled Autonomous Events (No user action needed)
+- **May 20 evening (~22:00 UTC)**: User monitoring check for resistance-research Wave 1 signals (fills email/Gist data)
+- **May 21 19:00–20:00 UTC**: Resistance-research Wave 1 synthesis execution (30-min autonomous, requires signal data pre-populated May 20)
+- **May 22 20:00 UTC**: Stockbot checkpoint execution (Lever B will be skipped if config not activated; Lever A only)
 
 ### ✅ Session Assessment
-- **Work accomplished**: Orientation complete, block status verified, next autonomous windows identified
-- **Token usage**: ~2K (orientation only, no new research/code work)
-- **Recommendation**: User action items (Lever B config, Seedwarden Gate 1-2, VeraCrypt, test print) are time-critical for May 21-22 deadlines
+- **Work accomplished**: Block escalation documented, user action items prioritized by deadline
+- **Token usage**: <1K (read-only orientation + block update)
+- **Next session**: May 20 evening (user signal monitoring fill) or May 21 (synthesis execution)
+- **Critical path**: Lever B config must be activated by May 22 13:30 UTC; seedwarden Gates 1-2 by May 30 launch target
 
-**Needs Your Input** (URGENT ITEMS):
+**Needs Your Input** (URGENT — Sorted by Deadline):
 
 ---
 
