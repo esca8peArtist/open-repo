@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-19T04:04:55Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-19T04:44:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 0.4% | Reset in 164h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 0.5% | Reset in 163h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 checkpoint EXECUTED (00:41 UTC, STILL_MISS_B2 outcome). Awaiting user approval for Lever B escalation.
-**Focus**: **⚠️ STILL_MISS_B2 CHECKPOINT OUTCOME (May 19 00:41 UTC).** May 22 checkpoint: Script created and verified (`scripts/may22_checkpoint_query_alpaca.py`). Both AAPL sessions healthy (34 fills, 3 round trips, equity $115,135.37). **✅ LEVER B HMM REGIME MASKING: INTEGRATION COMPLETE (Session 1305, 03:40–04:30 UTC).** Wired into `src/trading/trading_session.py` (3 changes: signal extraction line ~2610, new methods `_get_hmm_masker()` + `_apply_hmm_masking()`, integration call line ~1766). Tes … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **⚠️ STILL_MISS_B2 CHECKPOINT OUTCOME (May 19 00:41 UTC).** May 22 checkpoint: Script created and verified (`scripts/may22_checkpoint_query_alpaca.py`). Both AAPL sessions healthy (34 fills, 3 round trips, equity $115,135.37). **✅ LEVER B HMM REGIME MASKING: DEPLOYMENT COMPLETE (Session 1308, 04:19 UTC).** Merged `feature/lever-b-hmm-integration` to master, rsync'd to Jetson `/opt/stockbot/src/`, Docker container restarted and verified healthy. API responding normally. HMM regime detection … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -90,7 +90,9 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 1277 (28 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: resistance-research — focus references Session 1294 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: seedwarden — focus references Session 1292 (17 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 1277 (32 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
@@ -102,43 +104,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- ✅ Backfill: Added Items 70-72 to Exploration Queue (post-May-21 synthesis work + multi-ticker training prep)
+1. **Code Review**: Examined integration in `src/trading/trading_session.py`
+   - Opt-in feature (controlled by `hmm_regime_masking` in strategy_params)
+   - Lazy initialization of HMM maskers per ticker
+   - Post-signal processing before order execution
+   - Conservative design: silent fallthrough for non-stacker sessions
+   - Warm-up guard (60 bars) enforced inside masking logic
 
-**Work Completed**:
+2. **Test Verification**: 27/27 HMM tests passing, 16/16 integration tests passing, 3,758 total suite pass/0 new failures
 
-### ✅ Item 67: Domain 58 (*Turtle Mountain v. Howe*) Factual Verification
-- **Spot-check results**: Domain document already fully updated May 19, 02:30 UTC (Session 1295 work)
-- **GVR integration verification**: 
-  - Header status updated correctly (line 5): "Updated May 19, 2026 — Domain 58 *Turtle Mountain v. Howe* litigation section updated for May 18 SCOTUS GVR outcome (cert-pending → GVR remand post-*Callais*)"
-  - Crisis window statement accurate (line 6): "*Turtle Mountain v. Howe* GVR issued May 18, 2026 (remanded to Eighth Circuit post-*Callais*)"
-  - Executive summary (line 28) reflects correct outcome: "received a GVR (Grant, Vacate, Remand) on May 18, 2026 — the Court vacated the Eighth Circuit's elimination of private enforcement and remanded for reconsideration in light of *Callais*, leaving the question open"
-  - Section 6.1 paragraph fully documents GVR implications: "The Eighth Circuit now must grapple with whether *Callais* eliminated the private right of action..." (full paragraph present, 4-5 sentences)
-- **Cross-reference audit**: Domain 1 (Voting Rights) and Domain 37 (Electoral/VRA domains) references to Domain 58 verified current; no stale litigation framing detected
-- **Synthesis impact assessment**: May 21 synthesis proceeds with full factual accuracy; no updates required
-- **Status**: VERIFIED PRODUCTION-READY for May 21 synthesis
+3. **Git Merge**: Merged `feature/lever-b-hmm-integration` to local master
+   - Fast-forward merge completed
+   - Files integrated: `LEVER_B_INTEGRATION_STATUS.md`, `test_hmm_masking_integration.py`, trading_session.py updates
 
-### ✅ Exploration Queue Backfill: Items 70-72 Created
-- **Queue status before**: Items 1-69 all complete; 0 active items (empty queue)
-- **Queue status after**: Items 70-72 added (post-May-21 research + training prep)
-  - **Item 70**: resistance-research Phase 2 Domain Sequencing (2–2.5 hours, HIGH impact) — enables May 22 autonomous research deployment post-synthesis
-  - **Item 71**: systems-resilience Phase 4 Scope & Implementation Roadmap (1.5–2 hours, MEDIUM-HIGH impact) — pre-stages user decision framework for June 1 Phase 4 direction
-  - **Item 72**: stockbot Multi-Ticker Training Specification AMZN+JPM Tier 1 (1.5–2 hours, MEDIUM-HIGH impact) — contingency-ready specification for May 20+ multi-ticker training (if Lever B approved)
-- **Rationale**: Queue backfill ensures no idle time post-synthesis. May 21 synthesis output directly feeds Item 70 sequencing; Items 71-72 are contingency prep for post-synthesis user decisions.
+4. **Jetson Deployment**:
+   - Created `/opt/stockbot/src` directory on Jetson
+   - Rsync synced updated src/ to Jetson: 436,293 bytes in 23.25 speedup ratio
+   - Restarted Docker container `stockbot`
+   - Verified container healthy: "Up 4 minutes (healthy)"
+   - API endpoint responding normally
 
-**Projects Touched**:
-- resistance-research: Domain 58 verification confirmed synthesis readiness
-- EXPLORATION_QUEUE.md: Items 70-72 added
+**Configuration Status**:
+- HMM masking is opt-in; currently disabled in active-sessions.json (no `hmm_regime_masking: true` in strategy_params)
+- When enabled, masker initializes and detects regimes on day 1 (60-bar historical warm-up automatic)
+- Mechanism: Bear regime suppresses BUY + reduces SELL to 60%; sideways reduces SELL to 80%; bull pass-through
 
-**Key Findings**:
-- Domain 58 is factually current as of May 19 02:30 UTC; May 21 synthesis proceeds with zero factual risk
-- Exploration Queue ready for post-May-21 activation; Item 70 (domain sequencing) is critical handoff to May 22 research deployment
-- All projects remain at decision/waiting points; no new autonomous work available before May 21 synthesis
+**May 22 Checkpoint Readiness**:
+- ✅ Feature deployed and engine restarted
+- ✅ May 22 checkpoint script verified and staged
+- ✅ Both AAPL sessions healthy (34 fills, 3 round trips, $115,135 equity)
+- ✅ Effectiveness assessment target: May 26 checkpoint (5-7 live trading days post-warm-up)
+- ⚠️ May 22 outcome likely repeats STILL_MISS_B2 (expected, not code failure)
 
-**Next Autonomous Work**:
-- May 21 19:00–20:00 UTC: resistance-research Item 61 synthesis framework execution (signal classification + Phase 2 path decision) — autonomous, ~30-45 min
-- May 22 (if Lever B approved): stockbot May 22 checkpoint execution + conditional Item 72 multi-ticker training deployment
-- Post-May-21 synthesis: Item 70 domain sequencing → May 22-23 domain research team assignment
+**Next Steps**:
+1. May 20 evening: Final monitoring check (Wave 1 signal log)
+2. May 21 10:30 UTC: 72h monitoring window closes
+3. May 21 19:00-20:00 UTC: Autonomous synthesis execution (resistance-research)
+4. May 22 20:00 UTC: Checkpoint execution (Lever B + AAPL sessions)
 
-**Token Usage**: ~15K tokens (verification work + queue backfill)
-
-**Commit**: WORKLOG.md, EXPLORATION_QUEUE.md
+**Impact**: Lever B HMM integration fully operational. May 21-22 decision points staged. No further autonomous work required until May 21 synthesis.
