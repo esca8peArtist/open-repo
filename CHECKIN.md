@@ -1,4 +1,57 @@
-## Since Last Check-in (Session 1334, May 19 09:41–13:00 UTC)
+## Since Last Check-in (Session 1335, May 19 10:51–11:15 UTC)
+
+**Session Status**: ✅ **EXPLORATION QUEUE ITEM 85 COMPLETE — POST-TEST-PRINT ETSY LAUNCH FRAMEWORK**
+
+### ✅ Item 85: Mfg-farm Post-Test-Print Etsy Launch Sequence (COMPLETE)
+**Deliverable**: `POST_TEST_PRINT_ETSY_LAUNCH_SEQUENCE.md` (379 lines, 11 sections, 12 timeline options)
+
+**What It Does**:
+- Maps all 5 possible test print outcomes (pass / tolerance issue / snap-arm failure / functional failure / scale/shrinkage) to deterministic launch actions
+- Branch A (pass): Immediate launch May 29-30
+- Branch B (tolerance): Minor redesign, launch June 2-5
+- Branch C (snap-arm failure): Structural redesign, launch June 10-15
+- Branch D (functional): Targeted redesign, launch June 2-5
+- Branch E (scale/shrinkage): Process adjustment, launch May 29-June 2
+
+**Impact**: Once user executes test print (May 22-23) and reports outcome, orchestrator has zero-discovery deployment: activate branch → follow pre-built timeline → launch by June 15 at latest. Existing deliverables (cost model, supplier playbook, Etsy checklist) integrated into each branch.
+
+**Why This Matters**: Test print is currently the only blocker for May 29-Jun 2 Etsy launch window. Item 85 framework enables rapid execution path once test results arrive.
+
+### 🔴 Block Status — Unchanged (All 3 Active)
+- **stockbot**: SSH auth broken (52 hours to May 22 13:30 UTC deadline). Blocks Lever B HMM config activation. Jetson is reachable but public key not authorized.
+- **cybersecurity-hardening**: Phase 1 paused on VeraCrypt restart (user action).
+- **mfg-farm**: Test print execution (user action). Framework (Item 85) now ready.
+
+### 📊 Critical Path Status
+- **May 20 evening**: resistance-research signal log (user action)
+- **May 21 19:00 UTC**: Synthesis execution (autonomous, pre-built)
+- **May 22 13:30 UTC**: Lever B config deadline (52 hours, SSH auth blocker) ← **CRITICAL**
+- **May 22 20:00 UTC**: Checkpoint execution (autonomous, pre-built)
+
+### 📋 Exploration Queue Status
+- ✅ **Item 85 COMPLETE** (mfg-farm post-test-print launch sequence)
+- ⏳ **Item 86** (resistance-research post-synthesis analysis, ready May 21 21:00 UTC)
+- ⏳ **Item 87** (cybersecurity Phase 2 roadmap, ready May 25-27)
+- **Queue depth**: 2 active items. Will need replenishment if May 21/25 triggers don't execute.
+
+### 🎯 Needs Your Input
+1. **SSH auth to Jetson** (URGENT — 52 hours): Either (A) add orchestrator's ED25519 public key (~/.ssh/id_ed25519.pub) to Jetson's authorized_keys, OR (B) SSH manually and run 5-min Lever B config fix. Guide available in BLOCKED.md.
+2. **Test print execution** (May 22-23): Execute at 0.20mm layer height, PLA+, 3 walls, 220–225°C. Post-test-print sequence (Item 85) will route to correct launch branch.
+3. **Signal log** (May 20 evening): Fill `wave-1-signal-log-may18-21.md` with inbox/Gist response counts to trigger May 21 19:00 UTC synthesis.
+
+### 📊 Session Summary
+- **Work completed**: Item 85 (post-test-print framework) — comprehensive decision tree covering 5 outcome branches + 12 launch timelines
+- **Duration**: 25 minutes
+- **Blocks**: No new blocks; 3 existing blocks unchanged, all require user action
+- **Next session**: May 21 (post-synthesis), Item 86 execution + synthesis outcome handling
+
+**Files Committed**: POST_TEST_PRINT_ETSY_LAUNCH_SEQUENCE.md, WORKLOG.md, PROJECTS.md
+
+**Token estimate**: ~12K (comprehensive decision framework)
+
+---
+
+## Since Last Check-in (Session 1334, May 19 09:41–13:00 UTC) [ARCHIVED]
 
 **Session Status**: ✅ **EXPLORATION QUEUE EXECUTION — ITEMS 82 & 83 DELIVERED + 3 NEW ITEMS ADDED**
 
