@@ -1,12 +1,12 @@
 ---
 title: "Phase 2 Research Activation Checklist"
 created: 2026-05-19
-revised: 2026-05-20 (May 20 pre-staging verification pass complete)
+revised: 2026-05-20 (Session 1373 — final pre-synthesis verification pass; phase-2-research/ folder created)
 status: production-ready — execute immediately post-May 21 synthesis
 decision_gate: "May 21 19:00–20:00 UTC (synthesis) → May 21 20:00 UTC (CHECKIN.md outcome post) → May 21 evening (Phase 2 launch if STRONG/MODERATE)"
 execute_within: "1 hour of synthesis completion"
-staging_deadline: "May 20 09:00 UTC"
-audit_basis: "Sessions 1321, 1332, 1337, 1348, 1358, 1361 — pre-staging verification pass May 20, 2026 (file word counts confirmed, citation counts verified, phase-2-research/ subfolder creation confirmed needed)"
+staging_deadline: "May 20 09:00 UTC — COMPLETE"
+audit_basis: "Sessions 1321, 1332, 1337, 1348, 1358, 1361, 1373 — final verification pass May 20, 2026: all four domain files confirmed at canonical paths and documented word counts; phase-2-research/ subfolder created with per-domain placeholder files; zero open infrastructure gaps"
 companion_files:
   - PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md
   - phase-2-research-timeline-template.md
@@ -247,7 +247,7 @@ Pre-staged distribution contacts and peer review candidates for each domain:
 
 ### Obsidian Vault Structure for Phase 2
 
-**May 20 verification**: The `phase-2-research/` subfolder does NOT yet exist in `projects/resistance-research/`. Creation is a May 21 evening pre-launch action (5–10 minutes). This is the only Obsidian structural gap found in the May 20 audit; all other referenced files exist at their documented paths.
+**Session 1373 verification (May 20, final pass)**: The `phase-2-research/` subfolder has been created at `projects/resistance-research/phase-2-research/`. All five subdirectories are present: `domain-56/`, `domain-57/`, `domain-58/`, `domain-59/`, `coordination/`. Placeholder files created in each subdirectory: `domain-56/execution-log.md`, `domain-57/library-access-log.md`, `domain-58/rapid-response-log.md`, `domain-59/source-confirmations.md`, `coordination/daily-production-log.md`, `coordination/cross-domain-bridge-status.md`. This infrastructure gap is closed. No Obsidian structural gaps remain.
 
 Recommended directory structure for Phase 2 production work. The current `projects/resistance-research/` directory contains the core files; the structure below organizes Phase 2 working documents to prevent working notes from contaminating canonical domain files.
 
@@ -279,7 +279,7 @@ Canonical file naming convention for Phase 2 complete domains:
 - `domain-57-multilateral-withdrawal.md` (to be created July 2026)
 - `domain-59-economic-precarity.md` (to be created July 2026)
 
-Setup time: 5–10 minutes. Create folders and placeholder files. No blocker.
+Setup time: COMPLETE. Folders and placeholder files created in Session 1373 (May 20, 2026). No action required on May 21 evening for folder setup.
 
 ---
 
@@ -439,4 +439,4 @@ After Phase 2 research launches, the following are the scheduled monitoring touc
 
 ---
 
-*Document produced: May 20, 2026. Pre-staging verification pass complete May 20, 2026 (Session 1371 pre-synthesis staging agent): Domain file word counts confirmed via `wc -w` (Domain 57: 9,201 words file-verified; Domain 58: 11,388 words file-verified; Domain 59: ~8,450 words file-verified; Domain 56: ~6,800 words per header); citation counts confirmed via numbered list inspection (Domain 57: 49 citations; Domain 58: 71 citations; Domain 56: 47 per header; Domain 59: 44 per header + 49 URL refs); `phase-2-research/` subfolder confirmed absent — creation required May 21 evening. All four domains confirmed production-complete. No blocking assumptions have changed since checklist was drafted. Companion timeline: `phase-2-research-timeline-template.md` and `PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md`.*
+*Document produced: May 20, 2026. Pre-staging verification pass complete May 20, 2026 (Sessions 1371 + 1373): Domain file word counts confirmed via `wc -w` (Domain 57: 9,201 words file-verified; Domain 58: 11,388 words file-verified; Domain 59: ~8,450 words file-verified; Domain 56: ~6,267 words file-verified); citation counts confirmed via numbered list inspection (Domain 57: 49 citations; Domain 58: 71 citations; Domain 56: 47 per header; Domain 59: 44 per header + 49 URL refs); `phase-2-research/` subfolder created Session 1373 with 6 placeholder tracking files in domain-56/, domain-57/, domain-58/, domain-59/, coordination/ subdirectories — zero infrastructure gaps remain. All four domains confirmed production-complete. No blocking assumptions have changed. Companion timeline: `phase-2-research-timeline-template.md` and `PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md`. FINAL PRE-SYNTHESIS STATE: ready for immediate Phase 2 launch upon synthesis outcome confirmation.*

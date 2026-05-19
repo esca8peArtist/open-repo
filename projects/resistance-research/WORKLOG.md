@@ -2,6 +2,37 @@
 
 ---
 
+## May 20, 2026 — Session 1373 (General Research Agent) — Phase 2 Pre-Synthesis Final Verification Pass
+
+**Status**: COMPLETE — Final infrastructure gap closed; both checklist files updated; ready for May 21 same-day launch
+
+**Deliverables**:
+
+1. **`phase-2-research/` subfolder created** — The sole remaining infrastructure gap from prior sessions:
+   - `phase-2-research/domain-56/execution-log.md` (distribution wave tracking + URL spot-check log)
+   - `phase-2-research/domain-57/library-access-log.md` (Ikenberry access tracking + pre-distribution citation log)
+   - `phase-2-research/domain-58/rapid-response-log.md` (Trump v. Barbara monitoring + update log)
+   - `phase-2-research/domain-59/source-confirmations.md` (6 flagged source verification + HHS rule status)
+   - `phase-2-research/coordination/daily-production-log.md` (daily Phase 2 production log, entries begin June 1)
+   - `phase-2-research/coordination/cross-domain-bridge-status.md` (cross-domain reference map + shared sources)
+
+2. **`phase-2-research-activation-checklist.md` updated** — Session 1373 added to audit trail; Obsidian vault section updated to reflect folder creation complete (was: "creation required May 21 evening"); footer production note updated with final verified word counts (Domain 56: 6,267 via wc; Domain 57: 9,201; Domain 58: 11,388; Domain 59: 8,450).
+
+3. **`phase-2-research-timeline-template.md` updated** — Session 1373 added to audit trail; footer updated to confirm zero open infrastructure gaps; document status updated to "FINAL PRE-SYNTHESIS STATE."
+
+**Key verification findings (Session 1373 wc -w pass)**:
+- Domain 57 canonical: `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` — 9,201 words — CONFIRMED
+- Domain 58 canonical: `domains/domain-58-tribal-sovereignty.md` — 11,388 words — CONFIRMED
+- Domain 59 canonical: `domains/domain-59-economic-precarity-and-civic-participation.md` — 8,450 words — CONFIRMED
+- Domain 56 canonical: `domain-56-civil-service-politicization-governance.md` — 6,267 words (header says ~6,800; wc counts differ due to frontmatter exclusion in header estimates) — CONFIRMED
+- `phase-2-research/` subfolder: DID NOT EXIST before this session — CREATED
+
+**Infrastructure gap status**: CLOSED. No open pre-synthesis preparation gaps remain. Both checklist documents require zero additional work before May 21 execution.
+
+**Next action**: May 21 synthesis at 19:00–20:00 UTC → user reads CHECKIN.md outcome → executes `phase-2-research-activation-checklist.md` Section 1 (Domain 58 check first) → Phase 2 research activates same evening.
+
+---
+
 ## May 19, 2026 — Session 1361 (General Research Agent) — Phase 2 Research Activation Checklist & Timeline (Production Version)
 
 **Status**: COMPLETE — Both uppercase files rewritten with full production depth for May 21 post-synthesis launch
