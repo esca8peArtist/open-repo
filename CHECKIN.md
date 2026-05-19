@@ -44,6 +44,14 @@
 5. **May 25–30**: Three seedwarden Phase 3 decisions (scope, Goldenseal sourcing, writer engagement)
 6. **June 1**: Choose systems-resilience Phase 4 direction
 
+**Additional Deliverables** (Session 1362):
+- ✅ **Stockbot Comprehensive Backtesting Report Framework** — PRODUCTION-READY
+  - Framework: `COMPREHENSIVE_BACKTESTING_REPORT_FRAMEWORK.md` (10 sections, 400+ words)
+  - Addresses user escalation from May 8 (priority #1)
+  - Defines scope: all strategies, all gates, live vs. backtest validation, recommendations
+  - Ready for user execution or orchestrator delegation
+  - **Next**: User can execute with framework, or request orchestrator implementation
+
 ---
 
 ## Since Last Check-in (Session 1361, May 19 20:11–21:15+ UTC)
