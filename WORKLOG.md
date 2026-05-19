@@ -19,12 +19,45 @@
 
 ---
 
-### ✅ Item 83: Open-repo Phase 5 Implementation Roadmaps — Detailed Edition (NEW)
-**Status**: Added to exploration queue
+### ✅ Item 83: Open-repo Phase 5 Implementation Roadmaps — Detailed Edition (COMPLETE)
+**Status**: COMPLETE (Session 1334 continuation, May 19)
 **Priority**: HIGH — Phase 5 user decision pending; detailed roadmaps enable rapid execution post-approval
-**Why now**: Phase 5 candidates ready (Item 26 decision matrix delivered), but roadmaps need code-level detail. User can choose Candidate 1/2/both with confidence if implementation effort is clear.
-**Impact**: 4–4.5 hours research (May 19–20) → 3 deliverables (ZimWriter roadmap, OPDS roadmap, decision tree)
-**Next step**: Execute May 19–20; deliver before May 22 checkpoint so user has options ready
+**Deliverables**: 3 production-ready documents
+
+**Document 1: PHASE_5_CANDIDATE_1_ZIMWRITER_IMPLEMENTATION_ROADMAP.md**
+- Architecture diagram showing full ZimWriter data flow post-libzim integration
+- Exact code changes: 5 surgical edits to `app/services/export/zim_writer.py` + `pyproject.toml`
+- Full `ArticleItem` class implementation ready to paste (bridges ZimEntry to libzim Item API)
+- `_apply_metadata_to_creator()` implementation with all 12 ZIM metadata fields
+- `zim_exports` database schema (SQL DDL + SQLAlchemy ORM model)
+- 12-test matrix covering: ZIM binary output, zimcheck validation, offline read, unicode roundtrip, nopic filtering, sync/recovery
+- Step-by-step 13-step integration sequence from branch creation to PR
+- 6-risk assessment with probability/impact/mitigation/recovery path per risk
+- Deployment gate checklist (11 items) and post-launch monitoring metrics
+
+**Document 2: PHASE_5_CANDIDATE_2_OPDS_IMPLEMENTATION_ROADMAP.md**
+- OPDS 1.2 catalog structure diagram (root navigation → acquisition feed → CDN)
+- Exact code changes: 4 edits to `app/services/export/opds_generator.py` + `pyproject.toml`
+- Full `OPDSEntry.from_zim_export()` factory implementation (the critical Candidate 1→2 connector)
+- feedgen-based `_generate_root_catalog_feedgen()` and `_generate_acquisition_feed_feedgen()` implementations
+- DC namespace post-processing via lxml for `dc:language`, `dc:issued`, `opensearch:totalResults`
+- OPDS 1.2 required vs optional field compliance matrix
+- Pagination/filtering design for large catalogs (deferred to Phase 5.1 but documented)
+- 8-test matrix covering: feed validity, acquisition link types, metadata accuracy, Kiwix compatibility
+- Step-by-step 13-step integration sequence
+- 6-risk assessment (feedgen OPDS link relations, silent Kiwix rejection, inactive maintenance, DC namespace conflicts)
+
+**Document 3: PHASE_5_IMPLEMENTATION_DECISION_TREE.md**
+- Decision tree: which candidate first, with rationale (Candidate 1 is mandatory prerequisite)
+- Effort vs. benefit tradeoff table
+- Parallel development timeline (7-day execution plan for both candidates)
+- Phase 6 implications for both scenarios (Candidate 1 only vs. both)
+- Shared go-live checklist (8 shared + 11 Candidate 1 + 11 Candidate 2 items)
+- Rollback procedures for both candidates (git revert paths documented)
+- Success criteria and verification methods per criterion
+- Monitoring dashboards: health endpoint JSON schema + weekly sanity checks + alert conditions
+
+**Impact**: User can read all three documents and know exactly what they're committing to for each candidate. Implementation can begin immediately on approval — no discovery work needed.
 
 ---
 
