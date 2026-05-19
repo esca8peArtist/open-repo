@@ -1,8 +1,29 @@
 # Work Log
 
+## Session 1293 (Orchestrator: Domain 58 Critical Rewrite + May 21 Synthesis Prep) — May 19, 2026, 02:15+ UTC
+
+**Session Status**: IN PROGRESS
+
+### Part A: Domain 58 *Turtle Mountain v. Howe* Litigation Update (CRITICAL FOR DISTRIBUTION)
+
+**Status**: ✅ **COMPLETE** — Domain 58 updated for May 18 SCOTUS GVR outcome. Factual correctness restored before distribution.
+
+**Work Completed**:
+1. **domain-58-tribal-sovereignty.md** — Three sections updated:
+   - **Header** (line 5): *Turtle Mountain* status changed from "redistributed for SCOTUS conference May 14, 2026" to "GVR issued May 18, 2026 (remanded to Eighth Circuit post-*Callais*)"
+   - **Executive Summary** (line 27): Case description changed from pending cert scenario to GVR outcome with substantive explanation of what GVR signifies
+   - **Litigation section** (line 239): Detailed rewrite explaining GVR mechanics, Eighth Circuit remand context, post-*Callais* implications for private Section 2 enforcement
+   - **Metadata**: Added "Updated: May 19, 2026" note documenting the factual correction
+2. **Rationale**: May 18 SCOTUS GVR materially changes Domain 58's *Turtle Mountain* framing from "if cert is granted/denied" binary to concrete GVR remand + Eighth Circuit reconsideration requirement. Critical for distribution credibility — old framing now factually incorrect.
+3. **Verification**: Domain 58 now current through May 19, 2026 (required for May 21 synthesis + distribution readiness).
+
+**Impact**: Domain 58 is now production-ready for distribution. No blocking factual errors remain.
+
+---
+
 ## Session 1292 (Orchestrator: Post-Checkpoint Parallel Execution + Domain 42 Urgent Prep) — May 19, 2026, 00:18–00:35 UTC onward
 
-**Session Status**: ONGOING
+**Session Status**: COMPLETE
 
 ### Part A: Exploration Queue Execution (00:18–01:30 UTC)
 
