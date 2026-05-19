@@ -7,20 +7,19 @@
 
 ## Active Items (Session 1334, May 19, 12:50 UTC)
 
-### ⏳ Item 85: Mfg-farm Post-Test-Print Etsy Launch Sequence
-**Status**: NEW (Session 1334, May 19 2026, 12:50 UTC)
+### ✅ Item 85: Mfg-farm Post-Test-Print Etsy Launch Sequence
+**Status**: COMPLETE (Session 1360, May 19 2026, 20:15 UTC) — Deliverable: `ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, verified May 19 20:15)
 **Priority**: HIGH — Unblocks Etsy launch immediately post-test-print completion
 **Impact**: HIGH — Pre-staging exact upload sequence removes friction from test-print → launch window (target: within 5 days post-approval)
-**Goal**: Pre-stage the exact 7-step Etsy upload checklist and pre-launch sequence covering: (1) Product listing order optimization, (2) PDF/image upload specifications, (3) Pricing strategy per product tier, (4) Promotional strategy for Day 1-7, (5) Shipping profile setup, (6) Shop policies + about page, (7) Initial email announcement sequence
-**Scope**:
-1. **Upload sequence** (1.5 hrs): Optimal order to upload 21 Phase 1 products (pricing impact analysis, category strategy, tag ordering strategy)
-2. **Pre-launch checklist** (1 hr): Shop setup (policies, about, shipping, payment), email list segment, Kit automation setup for lead magnet
-3. **Day 1-7 promotion strategy** (1 hr): Launch announcement timing (market open/close, day of week), social media angles, email sequence timing
-4. **Backup plans** (30 min): If test print shows design failure, what's the contingency? If test print shows minor adjustments, what's the approach?
-**Deliverable**: `projects/mfg-farm/ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (2,000+ words, 7-step sequence, pre-filled listing templates, timing recommendations)
-**Why now**: Test print is the only blocker to launch. Once user approves test print, May 30-June 6 is the launch window. Pre-staging the entire sequence means user can execute mechanically without discovery.
-**Success criteria**: By May 25, launch sequence complete so May 29-June 2 is pure execution, not planning
-**Next step**: Execute May 19-20; deliver before May 25
+**Deliverable completion**: ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md created with:
+- Part 1: Pre-Launch Preparation (May 25-29): Shop foundation, product listing templates, photography requirements, SEO keywords, pricing strategy, shop policies
+- Part 2: Launch-Week Execution (May 30-June 2): Mechanical daily/hourly execution plan with monitoring and optimization triggers
+- Part 3: Post-Launch Scaling (June 3-15): Supply chain stabilization, review generation, promotional testing
+- Part 4: Decision Tree: Test print outcome routing (PASS/PASS-WITH-ADJUSTMENTS/FAIL/PARTIAL-FAIL) with execution paths for each
+- Part 5: Analytics & KPI tracking for Week 1 performance
+- Part 6: Contingency plans for zero orders, shipping damage, quality issues, demand exceeding supply
+- Part 7: Summary timeline (May 22 test print through June 15 scaling)
+All sections production-ready for mechanical execution post-test-print approval.
 
 ---
 
