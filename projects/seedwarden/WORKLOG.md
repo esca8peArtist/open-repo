@@ -4,6 +4,46 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Critical Path Re-Execution Audit — May 19, 2026
+
+**Task**: Execute Exploration Queue item: Phase 3 Medicinal Herbs Production Timeline and
+Critical Path Analysis (3–4 hrs, May 30 gating). Three deliverables: critical path document
+(2,500+ words), Gantt timeline, supplier finalization checklist.
+
+**Finding**: All three deliverables were already completed by two prior sessions, both on
+May 19, 2026 (Item 966/1056 and the earlier session). The queue item was re-queued after
+those sessions ran. All five output files are production-ready:
+- `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` — 2,900+ words, 7 sections
+- `phase-3-medicinal-herbs-critical-path.md` — 2,800+ words, 8 sections
+- `phase-3-medicinal-herbs-gantt-timeline.md` — ASCII Gantt + daily milestone table + resource allocation
+- `phase-3-production-gantt.csv` — 30-row machine-readable Gantt CSV with predecessors and float
+- `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` — supplier profiles for 5 suppliers (template, pending population)
+
+**Gap identified and filled**: The supplier tracker contained no concrete outreach calendar
+(specific email dates, what to ask, decision outputs). This is the one piece that prior sessions
+left as "pending user action" without scheduling. Added a **Supplier Outreach Calendar** (13
+rows, May 20–June 22) to `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` covering:
+- May 20: Email Strictly Medicinal Seeds + Prairie Moon (availability + lead time inquiry)
+- May 22: Evaluate responses; activate botanical garden photo path if needed
+- May 22: Email NC Botanical Garden + Missouri Botanical Garden (if Goldenseal CC photo path activated)
+- May 23: Email Mountain Rose Herbs (dried herbs order for photo props)
+- May 25: Place Goldenseal + Black Cohosh order if confirmed; user scope decision deadline
+- June 3: Confirm Goldenseal delivery status
+- June 8: HARD DEADLINE — Goldenseal order placed or Wikimedia CC path locked
+- June 15: Elderberry + Tier 2 orders placed
+- June 22: Tier 3 orders placed (sprint start day)
+Email templates included for both supplier inquiry and botanical garden photo permission request.
+
+**No new major documents written** (existing deliverables are production-ready and complete).
+**No image downloads this session** (production planning only).
+
+**Status as of this session**: Phase 3 critical path analysis is complete. All three deliverables
+from the task spec are satisfied. The only remaining actions before June 22 are user decisions
+(May 25 scope decision) and supplier outreach (May 20 email send). The queue item should be
+marked complete.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Critical Path + Gantt Timeline (Item 966/1056) — May 19, 2026
 
 **Task**: Build Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis

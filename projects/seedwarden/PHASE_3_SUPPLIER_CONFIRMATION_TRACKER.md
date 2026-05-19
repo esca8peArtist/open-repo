@@ -199,6 +199,75 @@ purpose: >
 
 ---
 
+## Supplier Outreach Calendar (May 19–June 8)
+
+This calendar converts supplier deadlines into a day-by-day action schedule. Each row is a
+concrete action item. Complete in order — earlier actions inform whether later ones are needed.
+
+| Date | Action | Supplier | Contact | What to Ask | Decision Output |
+|---|---|---|---|---|---|
+| **May 20** | Email Strictly Medicinal Seeds | Strictly Medicinal Seeds | info@strictlymedicinalseeds.com | (1) Do you have Goldenseal rhizome divisions in stock? (2) What is current lead time for shipping? (3) Do you have Black Cohosh transplants or 2-year seedlings available? (4) Can you ship by July 13? | If YES to (4): place Goldenseal + Black Cohosh order immediately. If NO: move to Prairie Moon. |
+| **May 20** | Email Prairie Moon Nursery | Prairie Moon Nursery | info@prairiemoon.com (backup: 866-417-8156) | (1) Do you have Goldenseal rhizome divisions available now or in June shipping? (2) Black Cohosh bare-root — current stock? (3) Elderberry bare-root — available for June 15 order? (4) Lead time for each? | Documents fallback availability for all three Tier 1–2 species. |
+| **May 22** | Evaluate responses + decide scope | — | — | Review both responses. If neither can deliver Goldenseal by July 13: activate Wikimedia CC photo path (email media@ncbg.unc.edu and media@mobot.org same day). | Hard decision: live Goldenseal specimen OR Wikimedia CC path. Document in this file. |
+| **May 22** | Email NC + MO Botanical Gardens (if Goldenseal photo path activated) | NC Botanical Garden / Missouri Botanical Garden | media@ncbg.unc.edu / media@mobot.org | "We are producing an educational digital guide on Goldenseal cultivation and conservation. We would like to request permission to use one or two of your institutional Goldenseal habitat photographs for non-commercial educational purposes with full attribution. Who should I contact regarding educational licensing?" | Photo license granted (fast, usually 48–72 hrs) OR referral to image library. |
+| **May 23** | Email Mountain Rose Herbs (dried herbs order) | Mountain Rose Herbs | wholesale@mountainroseherbs.com | (1) What is current lead time for wholesale/sample dried herb orders? (2) Can you ship 1 oz each of: Black Cohosh root, Goldenseal root, Elderberry berry, Echinacea purpurea root, Valerian root, Lemon Balm leaf, Lavender flower, Mullein leaf, Calendula flower, Ashwagandha root, Passionflower herb, Dandelion root, Ginger rhizome? (3) Do you confirm cultivated source on Goldenseal and Black Cohosh? | Confirm dried herb order for photo props (target delivery by June 15). Total budget: $80–$120. |
+| **May 25** | Place Goldenseal + Black Cohosh order (if supplier confirmed) | Best available Tier A supplier | Per response above | Order 3–5 Goldenseal rhizome divisions + 2 Black Cohosh 2-year seedlings. Note tracking number in Final Supplier Decision table below. | Order confirmation email. Log tracking # in this file. |
+| **May 25** | User scope decision deadline | — | — | Decide: Option A (5-bundle single writer), Option B (5-bundle two writers), or Option C (3-bundle priority). Log decision in WORKLOG.md. | Decision gates all downstream planning. |
+| **May 30** | Phase 2 launches | — | — | Monitor Phase 2 launch; check Phase 3 gate status once more for confirmation (gates already cleared but re-verify). | Phase 3 confirmed proceed. |
+| **June 3** | Confirm Goldenseal order delivery status | Supplier per tracking # | Per order confirmation | Check tracking number. If delayed beyond June 20: activate full Wikimedia CC path for Goldenseal (the live specimen window closes if arrival is after July 13). | If delayed: note in WORKLOG.md and confirm Wikimedia CC is the production path. |
+| **June 8** | HARD DEADLINE: Goldenseal order must be placed OR Wikimedia CC path confirmed | All paths | All contacts above | Last day to place a Goldenseal order with a plausible July 13 arrival. If order not placed today: send Wikimedia CC confirmation email to NC Botanical Garden as the official photo source. | **Zero float from this point. No action today = no live specimen.** |
+| **June 13** | Place Mountain Rose Herbs dried herbs order (if not placed May 23) | Mountain Rose Herbs | wholesale@mountainroseherbs.com | Same as May 23 inquiry, now with urgency: need delivery by June 18 for studio photography. | Order placed with June 18 target delivery. |
+| **June 15** | Place Elderberry + Tier 2 orders | Prairie Moon or local nursery | info@prairiemoon.com or local nursery phone | Elderberry bare-root: order for arrival by July 13. Note tracking number. | Elderberry order confirmed. |
+| **June 22** | Place Tier 3 orders (sprint start day) | Strictly Medicinal Seeds (primary) | info@strictlymedicinalseeds.com | Order: Echinacea (both species if available), Ashwagandha, Passionflower, Valerian. Verify Ginger rhizome source (grocery store or Strictly Medicinal). Confirm Vitex from local nursery. | Sprint begins with all Tier 3 orders placed. |
+
+**Email template for Goldenseal/Black Cohosh inquiry (May 20):**
+
+```
+Subject: Availability inquiry — Goldenseal rhizome divisions + Black Cohosh seedlings
+
+Hello,
+
+I am producing an educational medicinal herb cultivation guide series and am sourcing plants 
+for photography and verification purposes. I have a few availability questions:
+
+1. Do you currently have Goldenseal (Hydrastis canadensis) rhizome divisions in stock or 
+   available for June shipping?
+2. Do you have Black Cohosh (Actaea racemosa) 2-year seedlings or transplants available?
+3. What is your current fulfillment lead time for plant orders?
+4. Would plants ordered today arrive by July 13?
+
+If confirmed available, I would like to place a small order (3–5 Goldenseal rhizome divisions, 
+2 Black Cohosh seedlings). I would appreciate your confirmation of cultivated origin on both 
+species for our guide citation.
+
+Thank you,
+[Your name]
+```
+
+**Email template for Botanical Garden photo permission (May 22):**
+
+```
+Subject: Educational photo permission request — Goldenseal (Hydrastis canadensis)
+
+Hello,
+
+I am creating a digital educational guide on medicinal herb cultivation and conservation for 
+home gardeners and practitioner herbalists. We are writing a section on Goldenseal (Hydrastis 
+canadensis), including its CITES Appendix II listing and the importance of cultivated sources.
+
+We would like to request permission to use 1–2 photographs of Goldenseal in its natural or 
+cultivated habitat setting for this non-commercial educational publication, with full institutional 
+attribution and photo credit.
+
+Could you direct me to the appropriate contact or licensing process for educational-use image 
+requests?
+
+Thank you,
+[Your name]
+```
+
+---
+
 ## Critical Decision Tree: Goldenseal by June 8
 
 **Question 1: Is Goldenseal ordering possible?**
