@@ -1,5 +1,46 @@
 # Work Log
 
+## Session 1329 (May 19, 2026, 08:16–08:35 UTC)
+
+**Session Status**: ✅ **CRITICAL-PATH INFRASTRUCTURE AUDIT COMPLETE — May 21-22 fully verified and staged**
+
+**What Was Done**:
+
+### ✅ May 21 Synthesis Infrastructure Audit
+- **Verification scope**: `projects/resistance-research/post-wave-1-monitoring/` directory (8 files, 144 KB)
+- **May 21 execution checklist**: `may21-synthesis-execution-checklist.md` — FULL PRODUCTION-READY
+  - Pre-built for 25–30 min autonomous execution at 19:00–20:00 UTC
+  - All [FILL] placeholders documented; deterministic classification logic
+  - CHECKIN.md post template ready; checklist steps flow-ordered
+- **Supporting infrastructure verified**:
+  - wave-1-signal-log template ready for user May 20 evening data entry
+  - monitoring-dashboard, phase-2-path-activation-summary, framework-skeleton all present
+  - DEA May 28 deadline tracker in place
+- **Status**: 100% autonomous execution May 21 after user fills signal log May 20 evening
+
+### 📋 CHECKIN.md Updated
+- Added Session 1329 entry documenting synthesis readiness + 3-day critical path
+- Clear user requirements: signal log fill (May 20), SSH recovery (May 22), no other actions needed
+- May 21-22 autonomous events fully documented
+- User can read entry to understand what will happen next
+
+### 🔒 BLOCKED.md Resolved
+- Usage limits calibration verified (May 17 baseline, within 7-day window) ✅
+- SSH auth block persists (same as Session 1319) — user guide (Item 23) delivers recovery options
+- Lever B HMM config block remains active (May 22 13:30 UTC deadline — 46 hours remaining)
+
+### 📊 Project Status Summary
+- **stockbot**: Lever B block active; SSH recovery guide available
+- **resistance-research**: May 21 synthesis fully staged; May 20 signal log pending user input
+- **seedwarden**: Gate 1 setup guide available; no further autonomous work until user creates accounts
+- **All other projects**: Blocked on user actions (cybersecurity Phase 1 restart, mfg-farm test print, open-repo Phase 5 decision)
+- **Exploration Queue**: Items 79-81 staged and conditional; will trigger on May 22 checkpoint outcomes
+
+### 🎯 Assessment
+All critical infrastructure verified ready. No autonomous project work available until May 21 synthesis or May 22 checkpoint outcomes. Holding pattern continues pending user actions (signal log May 20, SSH recovery May 22) and scheduled events. No escalations needed.
+
+---
+
 ## Session 1327 (May 19, 2026, 08:10–08:25 UTC)
 
 **Session Status**: 🟡 **HOLDING PATTERN CONTINUES — No autonomous work available; critical-path events staged**

@@ -1,3 +1,68 @@
+## Since Last Check-in (Session 1329, May 19 08:16–?? UTC)
+
+**Session Status**: ✅ **MAY 21 SYNTHESIS INFRASTRUCTURE VERIFIED READY; 3-day critical path confirmed**
+
+**What Was Confirmed**:
+
+### ✅ May 21 Synthesis Readiness Audit
+- **May 21 Execution Checklist**: `projects/resistance-research/post-wave-1-monitoring/may21-synthesis-execution-checklist.md` — PRODUCTION-READY
+  - Pre-built for autonomous execution: 25–30 min at 19:00–20:00 UTC
+  - All [FILL] templates documented; user data populates checklist at execution time
+  - Classification logic deterministic (STRONG/MODERATE/WEAK/TOO_EARLY branches pre-built)
+  - CHECKIN.md post template ready for 20:00 UTC completion
+- **Supporting Infrastructure**: 7 supporting docs verified complete
+  - `wave-1-signal-log-may18-21.md` — ready for user signal logging (May 18-21)
+  - `monitoring-dashboard-may19-21.md` — metrics ready
+  - `phase-2-path-activation-summary.md` — decision tree ready
+  - `wave-1-synthesis-framework-skeleton.md` — reference doc for orchestrator
+  - `may28-dea-deadline-tracking.md` — DEA May 28 hard deadline tracked
+  - `preliminary-signal-analysis-may18.md` — baseline analysis ready
+  - `CHECKPOINT_MAY18_STATUS.md` — status snapshot ready
+
+**Summary**: May 21 synthesis is 100% autonomous. User fills signal log by May 20 evening; orchestrator executes synthesis alone at May 21 19:00 UTC.
+
+### 📋 User Requirements (3-day critical path)
+
+**TODAY (May 19)**:
+- 🟢 **Optional**: Read `SSH_AUTHENTICATION_RECOVERY_GUIDE.md` if you have 5 min (preview May 22 options)
+- 🟢 **Optional**: Review `SOCIAL_MEDIA_ACCOUNT_SETUP_GUIDE.md` if you plan Gate 1 setup
+
+**May 20 evening**:
+- 🔴 **CRITICAL (Unblocks May 21 synthesis)**: Fill `wave-1-signal-log-may18-21.md` with email replies + Gist view counts (15–30 min)
+  - What to log: Any replies to Wave 1 Batch 1 emails (scored STRONG/MODERATE/WEAK per checklist reference)
+  - Where to log: `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` — Table + snapshots
+  - Why: May 21 synthesis reads this table to classify Wave 1 outcome
+
+**May 21 evening (19:00–20:00 UTC)**:
+- ✅ Orchestrator executes synthesis autonomously (no user action required)
+  - Reads signal log → calculates Quality Reply Points → classifies outcome
+  - Posts CHECKIN.md entry with preliminary path decision
+  - If STRONG/MODERATE: Phase 2 domains activated; awaiting user approval before pre-production
+  - If WEAK/TOO_EARLY: Holds for May 25 final gate or content remediation decision
+
+**May 22 by 13:30 UTC (46 hours from now)**:
+- 🔴 **CRITICAL (Lever B deadline)**: Execute SSH recovery + activate Lever B config (5–30 min total)
+  - Option A: Follow `SSH_AUTHENTICATION_RECOVERY_GUIDE.md` (automated option recommended)
+  - Option B: Provide SSH credentials to orchestrator for automation
+  - Impact: Without fix, May 22 checkpoint re-tests Lever A (repeats STILL_MISS_B2 outcome instead of testing Lever B)
+  - Exact config commands documented in BLOCKED.md + guide
+
+**May 22 by 20:00 UTC**:
+- ✅ Checkpoint executes autonomously (no user action required)
+  - Queries Alpaca API for fills since May 19
+  - Classifies outcome (PASS A/B/C, or NEAR/FAR_MISS)
+  - Logs result to CHECKIN.md and WORKLOG.md
+
+### 📊 Project Status (Unchanged)
+- **stockbot**: Lever B SSH block remains; SSH recovery guide now available
+- **resistance-research**: May 21 synthesis fully staged and ready
+- **seedwarden**: Gate 1 guide available; 14-day setup timeline ready
+- **All other projects**: No new work available; all blocked on user actions
+
+**Session Assessment**: All three critical-path infrastructure items (May 21 synthesis, May 22 Lever B, May 22 checkpoint) verified fully ready. User requirements clearly documented. Orchestration state stable. Awaiting user actions on signal log (May 20) and SSH recovery (May 22).
+
+---
+
 ## Since Last Check-in (Session 1328, May 19 08:15–08:55 UTC)
 
 **Session Status**: ✅ **EXPLORATION QUEUE ACTIVE — Items 23-24 COMPLETE; critical-path user guides delivered**
