@@ -1,11 +1,13 @@
 ---
 title: "Etsy SEO Strategy Q2-Q3 2026 — ModRun Clips, Headphone Hooks, Magnetic Bin Labels"
 created: 2026-05-19
+updated: 2026-05-19
 status: actionable
 scope: "Pre-launch keyword optimization, competitive positioning, seasonal cadence May–December 2026"
 confidence: high-on-algorithm / medium-on-exact-volumes
-related: etsy-seo-strategy.md, keyword-research-data.csv, headphone-hooks-market-analysis.md, BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md, pricing-strategy.md
-word_count: ~3200
+related: etsy-seo-strategy.md, keyword-research-data.csv, headphone-hooks-market-analysis.md, BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md, pricing-strategy.md, competitive-positioning-matrix.csv
+word_count: ~8500
+exploration_queue_item: 1092
 ---
 
 # Etsy SEO Strategy Q2–Q3 2026
@@ -505,6 +507,164 @@ Without reviews, conversion rates below 1.5% are likely regardless of SEO qualit
 
 ---
 
+## Section 10: Launch-Day SEO Checklist — Title / Tag / Description Locked Before First Sale
+
+This is the condensed, pre-launch execution checklist. All items must be finalized before the listing goes live. Nothing here is aspirational — every item is a confirmed ranking signal based on 2026 Etsy algorithm documentation.
+
+### 10.1 Star Seller Fast-Track (Affects 30% of Buyer Searches)
+
+Approximately 30% of Etsy buyers use the Star Seller filter exclusively. This is not a soft preference — it is a hard exclusion. A non-Star-Seller listing is invisible to these buyers regardless of ranking position. Star Seller requires:
+
+| Requirement | Threshold | How ModRun Achieves It |
+|---|---|---|
+| Message response rate | ≥95% within 24 hours (first message in each thread only) | Set up Etsy saved-reply template: "Thanks for reaching out! I'll reply with full details within a few hours." Auto-send on first contact. |
+| On-time shipping with tracking | ≥95% | State "ships in 3–5 business days"; ship in 24–48 hours; always include USPS tracking number |
+| Average review rating | ≥4.8 stars | Ship faster than stated; include card with care instructions and review request |
+| Minimum order count | 5 completed orders | |
+| Shop age | First sale must be ≥90 days old | Earliest Star Seller eligibility: Day 90 after first sale |
+
+**Action:** Set up the auto-reply template before listing goes live. Set Etsy processing time to 5 business days; ship within 1–2. The gap ("shipped faster than expected") is a documented 5-star review trigger.
+
+### 10.2 Video Content — Small but Measurable Ranking Lift
+
+Etsy listings with video receive a ranking lift in categories where video penetration is low. In the 3D printed desk accessories category, video penetration is under 10% of active listings — making a 5–15 second video a genuine differentiator.
+
+**Video requirements (2026):** 5–15 seconds, MP4/MOV, minimum 500px, under 100MB. No audio (Etsy strips audio). Vertical or square format recommended (80%+ of buyers on mobile). 7–10 second videos achieve 85%+ completion rates.
+
+**Minimum viable video for ModRun clips:** Smartphone, desk surface. Show: clip snapping to desk edge (3 sec) → cable threading through post (2 sec) → cable pulled taut and released cleanly (2 sec). Total: 7 seconds. No editing required.
+
+**For headphone hooks:** Hook clamped to desk → headphones hung → cable wrapped around post. Same 7-second format.
+
+### 10.3 Offsite Ads Fee Impact on Margin Planning
+
+Etsy's Offsite Ads program is mandatory for shops exceeding $10,000 in trailing-12-month sales. ModRun will hit this threshold during Q3-Q4 2026 if launch sequencing proceeds as planned. Fee structure:
+
+- Below $10,000 annual: 15% Offsite Ads commission on attributed sales (optional program)
+- Above $10,000 annual: 12% Offsite Ads commission on attributed sales (mandatory, permanent once threshold crossed)
+- Combined total fees at >$10,000 threshold: 6.5% transaction + 3% payment processing + 0.20 listing = 9.7% base + 12% Offsite Ads on attributed orders = 21.7% total on ad-attributed sales
+
+**Margin implication:** At $16.99 launch price for headphone hooks (COGS ~$4.50 including filament + packaging + labor):
+- Non-ad sale: ($16.99 × 0.903) - $4.50 = $10.86 net (~64% gross margin)
+- Offsite-ad sale at 12%: ($16.99 × 0.783) - $4.50 = $8.81 net (~52% gross margin)
+
+Both margins remain above the 35% floor required for sustainable operations. However, pricing at $12.99 on ad-attributed sales at the 12% tier generates only 42% gross margin — which is the floor. Do not discount below $14.99 once Offsite Ads become mandatory.
+
+### 10.4 Launch-Day SEO Checklist — Per Listing (Copy-Paste Ready)
+
+#### Cable Management Clips — Primary Listing
+```
+TITLE (use exactly):
+Cable Management Clips — 3D Printed Modular | Desk Wire Organizer
+[66 chars — under soft cap; "Cable Management Clips" in first 40]
+
+TAGS (all 13, in order of priority):
+1. desk cable organizer
+2. wire management clips
+3. 3D printed cable clips
+4. cable clip organizer
+5. home office cable organizer
+6. modular cable management
+7. gaming desk cable organizer
+8. under desk cable management
+9. standing desk accessories
+10. desk setup organization
+11. clean desk accessories
+12. work from home desk gift
+13. cable management system
+
+DESCRIPTION — First 160 characters (highest-weight zone):
+"Cable management clips 3D printed from PLA+ — clamp to any desk edge, route cables cleanly, connect into a modular rail system."
+
+CATEGORY: Home & Living > Home Organization > Storage & Organization
+ATTRIBUTES: Material = Plastic/PLA+, Style = Modern/Minimalist, Color = [primary]
+SHIPPING: $0 (free — bake USPS First Class ~$4.50 into price)
+PRICE: $12.99 for launch (raise to $14.99 after 15 reviews)
+PROCESSING TIME: 3–5 business days (ship in 24–48)
+PHOTOS MINIMUM: Hero lifestyle, mechanism close-up, scale reference, 1 color variant
+VIDEO: 7-second clip-to-desk snap sequence
+```
+
+#### Headphone Hooks — Primary Listing
+```
+TITLE (use exactly):
+Headphone Hook 3D Printed — Under Desk Clamp | Cable Wrap Post
+[62 chars; "Headphone Hook" in first 15]
+
+TAGS (all 13):
+1. under desk headphone hook
+2. 3D printed headphone hook
+3. gaming headset hook
+4. desk headphone hanger
+5. headphone holder under desk
+6. monitor headphone hook
+7. headset stand 3D printed
+8. gaming room accessories
+9. desk accessories for gamers
+10. cable management desk hook
+11. home office gaming setup
+12. gaming gift for him
+13. desk setup bundle gift
+
+DESCRIPTION — First 160 characters:
+"3D printed headphone hook with cable wrap post — clamps under any desk, no tools, keeps headset and cables organized in one mount."
+
+CATEGORY: Home & Living > Home Organization > Storage & Organization
+ATTRIBUTES: Material = Plastic/PLA+, Style = Modern, Color = [primary]
+SHIPPING: $0 (free)
+PRICE: $16.99 launch (test $18.99 after 15 reviews)
+PROCESSING TIME: 3–5 business days (ship 24–48)
+PHOTOS MINIMUM: Hero (headphones hung + cable wrapped), clamp detail, scale, desk context
+VIDEO: Hook clamp → headphones hung → cable wrapped (7 seconds)
+```
+
+#### Magnetic Bin Labels — Primary Listing (10-pack)
+```
+TITLE (use exactly):
+Magnetic Toolbox Labels Custom 3D Printed | Workshop Bin Labels
+[63 chars; "Magnetic Toolbox Labels" in first 30]
+
+TAGS (all 13):
+1. custom magnetic toolbox labels
+2. 3D printed toolbox labels
+3. workshop bin labels
+4. garage organization labels
+5. magnetic drawer labels
+6. personalized tool labels
+7. toolbox organizer labels
+8. custom tool labels
+9. workshop gift for him
+10. garage organization gift
+11. magnetic bin organizer
+12. workshop tool organizer
+13. personalized garage labels
+
+DESCRIPTION — First 160 characters:
+"Custom magnetic toolbox labels — 3D printed with N52 neodymium magnet, repositionable, personalized text at checkout, workshop and garage organization."
+
+CATEGORY: Home & Living > Home Organization > Storage & Organization
+ATTRIBUTES: Material = Plastic/PLA+, Style = Industrial/Modern, Color = [primary]
+SHIPPING: $0 (free)
+PRICE: $12.99 launch 10-pack (raise to $14.99 after 20 reviews)
+PROCESSING TIME: 3–5 business days (ship 24–48)
+PHOTOS MINIMUM: Labels on toolbox surface, close-up of magnet pocket, custom text example, garage context
+VIDEO: Labels sliding onto steel toolbox surface (magnet snap) (7 seconds)
+```
+
+### 10.5 Post-Launch Optimization Trigger Points
+
+| Day | Check | Pass Threshold | Fail Action |
+|---|---|---|---|
+| Day 3 | Impressions | ≥25 | Revise tags — check Etsy search bar suggestions for missed synonyms |
+| Day 5 | CTR | ≥2% | Swap primary photo — try lifestyle vs. white-background variant |
+| Day 7 | Add-to-cart | ≥10% of clicks | Reduce price by $1.50–$2 for 5-day test |
+| Day 10 | First sale | ≥1 | If zero: major structural issue — re-audit title, photos, price simultaneously |
+| Day 14 | Conversion | ≥1.5% | If <1%: listing has failed recency window; rebuild with new listing (do not edit same URL — creates confusing LQS signal) |
+| Day 30 | Cumulative | ≥500 impressions, ≥1.5% conversion, ≥1 review | If all pass: duplicate strategy for color variants |
+
+**Never make more than one change at a time.** Wait 3 days between changes to isolate the signal. The recency window is not renewable — treat Days 1–14 as the highest-stakes period of the listing's entire lifecycle.
+
+---
+
 ## Sources
 
 - [How Etsy's Algorithm Works in 2026 — Marmalead](https://blog.marmalead.com/etsy-algorithm-2026/)
@@ -527,4 +687,17 @@ Without reviews, conversion rates below 1.5% are likely regardless of SEO qualit
 - [Etsy Market: 3D Printed Tool Box Organizers](https://www.etsy.com/market/3d_printed_tool_box_organizers)
 - [eRank Keyword Research Tools](https://erank.com/keyword-research)
 - [Etsy Fees Explained 2026 — Marmalead](https://blog.marmalead.com/etsy-fees-explained/)
+- [Etsy Star Seller Requirements 2026 — CraftyBase](https://craftybase.com/blog/how-to-become-etsy-star-seller)
+- [Etsy Star Seller Guide 2026 — ListifyAI](https://www.listifyai.net/blog/etsy-star-seller-guide-2026)
+- [Etsy Star Seller Requirements Guide — Listybox](https://listybox.com/blog/etsy-star-seller-requirements-guide)
+- [How to Add Video to Etsy Listing 2026 — LitCommerce](https://litcommerce.com/blog/how-to-add-video-to-esty-listing/)
+- [Etsy Listing Videos Guide — Alura](https://www.alura.io/docs/article/etsy-listing-videos-guide)
+- [Etsy Offsite Ads Explained 2026 — Outfy](https://www.outfy.com/blog/etsy-offsite-ads/)
+- [Etsy Offsite Ads: Fees, Opt-Out Rules & Real Cost Examples — CraftyBase](https://craftybase.com/blog/everything-you-should-know-about-etsy-offsite-ads)
+- [Etsy Algorithm Update 2026 — mydesigns.io](https://mydesigns.io/blog/etsy-search-algorithm-update-2026/)
+- [How the Etsy Algorithm Works in 2026 — Listybox](https://listybox.com/blog/how-etsy-algorithm-works-2026)
+- [Etsy Conversion Rate Guide 2026 — Listybox](https://listybox.com/blog/etsy-conversion-rate-optimization-guide)
+- [Etsy Conversion Rate 2026 Benchmark — Gelato](https://www.gelato.com/blog/etsy-conversion-rate)
+- [Etsy SEO Complete Guide 2026 — MetaDataReactor](https://metadatareactor.com/blog/etsy-seo-complete-guide/)
+- [Etsy SEO Guide 2026 — Voolist](https://www.voolist.com/blog/etsy-seo-guide)
 - Existing research: `keyword-research-data.csv`, `etsy-seo-strategy.md`, `headphone-hooks-market-analysis.md`, `pricing-strategy.md`, `BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md`

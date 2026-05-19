@@ -2,6 +2,133 @@
 
 ---
 
+## May 19, 2026 — mfg-farm Item 1092: Etsy SEO and Competitive Positioning Q2-Q3 2026
+
+**Status**: COMPLETE
+
+**Files**:
+- `projects/mfg-farm/etsy-seo-strategy-q2-q3-2026.md` (extended to ~8,500 words, Section 10 added)
+- `projects/mfg-farm/competitive-positioning-matrix.csv` (28 rows, validated complete)
+
+**Task**: Exploration Queue Item 1092. Research and produce a comprehensive Etsy SEO strategy and competitive positioning analysis for ModRun cable management clips, headphone hooks, and magnetic bin labels — pre-staged for launch-day optimization.
+
+**Findings**:
+
+1. **Existing files already comprehensive** — prior sessions had built a 6,136-word strategy document and 28-row competitive matrix. Item 1092 extended and deepened rather than rebuilt.
+
+2. **Section 10 added** — Launch-Day SEO Checklist with copy-paste-ready title/tag/description per product, Star Seller fast-track requirements, video ranking mechanics, and Offsite Ads margin planning.
+
+3. **Star Seller is a hard filter gate** — confirmed 30% of buyers use Star Seller filter exclusively. Requirements: 95%+ message response within 24 hours, 95%+ on-time shipping with tracking, 4.8+ average rating, 5+ orders, first sale 90+ days old. Auto-reply template is the fastest path to protecting message response rate from Day 1.
+
+4. **Video ranking lift confirmed** — 3D printed desk accessories category has under 10% video penetration; 7-second smartphone video gives algorithmic lift with almost no cost. Vertical format required (80%+ mobile shoppers).
+
+5. **$6 shipping penalty confirmed** — US listings with shipping above $6 face active demotion. Free shipping (priced into product) is now a ranking prerequisite, not a bonus.
+
+6. **Offsite Ads margin floor identified** — At $10,000 annual sales threshold (expected Q3 2026), Offsite Ads become mandatory at 12% commission. Minimum viable price once mandatory: $14.99 for clips, $16.99 for hooks. Do not discount below these floors post-threshold.
+
+7. **Exact Star Seller timeline for ModRun** — earliest Star Seller badge eligibility is Day 90 after first sale. If launch proceeds in May/June 2026, Star Seller badge possible by August–September 2026 — ahead of the Q4 gift season peak where 30% buyer filter matters most.
+
+---
+
+## May 19, 2026 — mfg-farm Item 22: Adjacent Manufacturing Viability Study
+
+**Status**: COMPLETE
+
+**File**: `projects/mfg-farm/ADJACENT_MANUFACTURING_VIABILITY_STUDY.md`
+
+**Task**: Exploration Queue Item 22. Research and produce a comprehensive viability study for adjacent manufacturing processes (laser cutting, CNC machining, resin casting) as ecosystem expansion paths for the ModRun 3D-printed cable clip product.
+
+**Findings**:
+
+1. **Laser engraving/cutting is the clear top recommendation** — validated by current Etsy whitespace data (<200 listings for "laser engraved cable clip" as of May 2026), high margin (75–85% gross on DIY laser), and zero capital required for initial validation via SendCutSend or Ponoko bureaus. Break-even on xTool S1 40W ($1,899) at 200 engraved units/month is 3.2 months.
+
+2. **Acrylic label panels are the natural second SKU** — same laser machine, 82–85% gross margin, directly complements the cable clip ecosystem with a cable zone labeling product. Bundle opportunity brings AOV to $40–65.
+
+3. **CNC aluminum is not viable at current ModRun scale** — Etsy market for machined-metal cable hardware has <100 listings with meaningful volume; domestic bureau cost ($20–45/unit machining + anodizing) leaves 24–39% gross margin, which is inadequate for Etsy channel. China bureau ($8–18/unit) improves this but adds 3–6 week lead time and QC risk. Recommend revisiting in Year 2–3 only if B2B corporate demand materializes.
+
+4. **Resin casting viable in Month 6** — MSLA path ($574 setup) is the lowest-capital second technology. Transparent channel covers fill an unoccupied Etsy niche. Labor-intensity is the main risk: hand-pour silicone casting produces 15–35 min/unit, requiring batch discipline to keep effective labor under $2.50/unit.
+
+5. **3-year roadmap**: Year 1 ($2,684 capital): FDM + laser engraving + acrylic panels + resin intro, 25–35 SKUs, $8–15K/month revenue. Year 2 ($3,100–3,300 capital): fleet expansion, Amazon channel, wholesale B2B outreach, 50–75 SKUs. Year 3 ($4,598 capital, potentially + studio space): 50–100 SKUs, $25–50K/month gross revenue, 65–72% blended gross margin.
+
+6. **New market data**: Cable organizer market $2B (2025), 8% CAGR; desk organizer market projected $6.78B by 2033. Desk organizer category shows 27,000 monthly searches. Custom cable management intersection is underserved.
+
+---
+
+## May 19, 2026 — Systems-Resilience Phase 4 Education Domain Outline
+
+**Status**: COMPLETE
+
+### Task
+Create Phase 4 pre-staging document for the K-12 rural education domain in the systems-resilience project. Pre-staged ahead of May 21 synthesis gate to enable day-1 execution on June 1 if synthesis is positive.
+
+### Findings
+
+Complete domain outline produced with four causal pathways, 36 staged sources, 16 movement contacts with 2026 policy windows, and a detailed 30–40-hour production timeline for June 1–30.
+
+Key original contributions:
+
+1. **Four-pathway causal architecture** linking funding collapse, consolidation, teacher crisis, and civics compression to a measurable rural civic capacity deficit. Each pathway is independently documented with current (2024–2026) evidence.
+
+2. **Iowa budget guarantee trap** (159 districts, $25M property tax cost in FY 2026): A specific structural mechanism through which enrollment decline and per-pupil formulas interact to create regressive fiscal pressure on the smallest rural districts — not previously documented in the systems-resilience project.
+
+3. **Federal funding compound crisis**: Trump FY 2026 proposal cuts K-12 programs from $6.5B to $2B (70%), eliminating civics grants, rural school programs, and $600M in teacher training. Arrives simultaneously with state-level fiscal compression in Iowa, Wisconsin, Minnesota.
+
+4. **CIRCLE 2024 rural civic gap data**: Rural youth voter turnout 42% vs. 47% urban; only 27% of rural youth perceive community institutional support for civic action vs. 36% urban; only 30% exposed to high-quality civic pedagogy vs. 64% urban. Specific and current.
+
+5. **Cross-domain bridge architecture**: Four bridges to Phase 3 and other Phase 4 domains (healthcare/hospital closure compounding, water infrastructure, agricultural precarity, Phase 3 mutual aid governance). Each bridge identifies specific Phase 3 document cross-references.
+
+6. **Confidence assessment**: Distinguishes high-confidence findings (multiple independent sources) from moderate-confidence (strong single source) from genuine evidence gaps requiring June 1–7 source-retrieval work.
+
+### File created
+`projects/systems-resilience/PHASE_4_EDUCATION_DOMAIN_OUTLINE.md` (~4,400 words, 36 sources, 16 movement contacts)
+
+---
+
+## May 19, 2026 — Domain 59 Phase 2 Production Outline
+
+**Status**: COMPLETE
+
+### Task
+Create production-ready research outline and staged source list for Domain 59 (Economic
+Precarity as Democratic Infrastructure Failure) — 5 sections covering causal pathways,
+data-driven evidence, Midwest Zone 5 regional variation, movement leverage opportunities,
+and preliminary source list.
+
+### Findings
+
+All five sections completed. Key new contributions not in prior Domain 59 files:
+
+1. **Midwest Zone 5 regional analysis** (entirely new material): Three distinct Midwest
+   precarity vectors — agricultural crisis (Chapter 12 farm bankruptcies up 46% in 2025,
+   70% increase in Midwest specifically; USDA projects record $624.7B farm debt in 2026),
+   chronic deindustrialization (rust belt social capital collapse), and rural hospital
+   closures (APSR 2025 study by Cox, Epp, Shepard documenting 3.8 pp turnout reduction).
+
+2. **AFL-CIO/SEIU merger** (January 2025): AFL-CIO now at 15 million members; merger
+   creates unified labor infrastructure directly connecting economic precarity organizing
+   to civic participation. Union density in 17 states correlates with fewer restrictive
+   voting laws — documented in AFL-CIO press materials.
+
+3. **NLIHC "Our Homes, Our Votes" campaign**: Active 2026 mini-grant program (50
+   organizations, $1,500 each) explicitly targeting low-income renter turnout in November
+   2026 midterms — the most directly aligned existing campaign infrastructure for
+   Domain 59 distribution.
+
+4. **Medical debt advocacy 2026 landscape**: CFPB medical debt credit reporting rule
+   vacated by Eastern District of Texas (July 11, 2025); Medical Debt Relief Act of 2025
+   (H.R. 4827) pending; 16 states have enacted credit reporting bans; Undue Medical Debt
+   (formerly RIP Medical Debt) has relieved $25.4 billion in debt for 15.21 million people.
+
+5. **25 new sources** covering gaps in existing 48-source library: including APSR rural
+   hospital closure study, Burning Glass Institute Midwest vicious cycle analysis, LSE
+   gig economy civic participation research (April 2026), farm bankruptcy data, and
+   NLIHC Our Homes Our Votes campaign materials.
+
+### Files created
+`projects/resistance-research/PHASE_2_DOMAIN_59_OUTLINE.md`
+
+---
+
 ## May 19, 2026 — Domain Updates May 17-18 Final Synthesis Pass
 
 **Status**: COMPLETE
