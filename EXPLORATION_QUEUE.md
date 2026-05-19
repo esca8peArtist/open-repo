@@ -1642,6 +1642,66 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 **Status**: STAGED (Session 1308, 04:34 UTC)
 **Impact**: HIGH — May 21 synthesis will route to Phase 2 expansion; June 1 research commencement depends on sequencing clarity
 **Trigger**: May 21 synthesis output (if STRONG or MODERATE, activates Phase 2 research)
+
+---
+
+## Session 1326 (May 19, 07:40–08:00 UTC) — NEW QUEUE ITEMS 79–81
+
+### ✅ Item 77: Seedwarden Track B — Social Account Architecture & Content Calendar Pre-Build
+**Status**: COMPLETE (Session 1326, 07:45 UTC)
+**Deliverable**: 
+- `projects/seedwarden/SOCIAL_ACCOUNT_ARCHITECTURE.md` (2,100 words, 5-platform architecture with bio copy, link strategy, hashtag optimization, research-backed algorithm insights for April-May 2026)
+- `projects/seedwarden/WEEK_1_4_CONTENT_CALENDAR.md` (1,400 words, 26 pre-written posts with captions, Canva templates, CTA, hashtags, platform-specific posting times; 60/30/10 content mix)
+- `projects/seedwarden/LAUNCH_WEEK_INFLUENCER_OUTREACH.md` (1,000 words, 55 micro-influencer contacts across 4 cohorts + 3 outreach templates + day-by-day launch amplification schedule)
+**Key Features**: All docs integrated with Canva Pro Brand Kit (approved Gate 2), Kit email sequences, existing Phase 2 brand voice. Influencer list sourced from Feedspot 2026, Influencer Hero, and Seedwarden competitive analysis. Ready for immediate hand-off when Gate 1 (social accounts) confirmed.
+**Impact**: Removes 4-6 hours of decision paralysis post-account creation. May 30 launch on critical path: accounts (Gate 1) → Brand Kit setup (Gate 2, 30-45 min) → content calendar execution (2-3 days) → launch May 30.
+
+---
+
+### ⏳ Item 79: Stockbot Post-Checkpoint Live Trading Risk Management Playbook
+**Status**: STAGED (Session 1326, 07:48 UTC)
+**Impact**: HIGH — May 22 checkpoint outcome determines live trading entry point and risk envelope
+**Trigger**: May 22 checkpoint result (if PASS A/B/C outcome)
+**Goal**: Pre-stage comprehensive live trading risk management framework covering: (1) Position sizing by account tier + checkpoint outcome, (2) Margin utilization and leverage limits, (3) Intraday risk monitoring (per-session stop-losses, concentration alerts, VIX regime triggers), (4) Emergency liquidation procedures with data preservation, (5) Daily P&L and portfolio rebalancing rules, (6) Quarterly checkpoints and capital reinvestment decision logic
+**Feasibility**: HIGH — stockbot risk framework exists (guardrails.py, position_manager.py), Alpaca API well-documented, capital structure known
+**Effort estimate**: 2.5–3 hours
+**Deliverable**: 
+- `projects/stockbot/LIVE_TRADING_RISK_MANAGEMENT.md` (position sizing tables by outcome, margin limits with formulas, intraday monitoring checklist, emergency procedures)
+- `projects/stockbot/QUARTERLY_CHECKPOINT_DECISION_FRAMEWORK.md` (P&L reinvestment logic, capital allocation updates, performance review gates)
+**Why now**: May 22 checkpoint determines GO/NO-GO for live trading. If PASS A/B/C, June 1-30 is the live trading onboarding window. Risk framework must be production-ready before first live trades to prevent capital loss from position sizing errors.
+**Next Step**: Execute May 23 if May 22 outcome is PASS A/B/C. Hand to user with live trading activation checklist.
+
+---
+
+### ⏳ Item 80: Cybersecurity-Hardening Phase 2 Multi-Tier Rollout Strategy & Timeline
+**Status**: STAGED (Session 1326, 07:50 UTC)
+**Impact**: HIGH — Phase 1 completion (June 1 target) enables immediate Tier 2 launch; rollout coordination required
+**Trigger**: Phase 1 completion (June 1) + user adoption metrics from Item 17 (success measurement framework)
+**Goal**: Pre-stage Tier 2 multi-tier rollout strategy covering: (1) Tier 2 cohort selection framework (40-50 organizations by sector/geography), (2) Phased pilot architecture (Pilot A June 15-July 15, Pilot B August 1-Sept 1), (3) Messaging variants per organization type (local gov, NGO, political, education), (4) Success metrics and continuation gates, (5) Tier 3 readiness criteria (1,000+ org deployment)
+**Feasibility**: HIGH — Tier 1 templates ready (Session 942), Tier 2 messaging complete (Session 957), measurement framework deployed (Item 17)
+**Effort estimate**: 3–4 hours
+**Deliverable**: 
+- `projects/cybersecurity-hardening/PHASE_2_TIER_2_PILOT_PLAYBOOK.md` (cohort selection matrix, 12-week pilot timeline, messaging variants, adoption targets)
+- `projects/cybersecurity-hardening/TIER_3_SCALING_ROADMAP.md` (conditions for 1,000+ org deployment, network effects strategy, sustainability model)
+**Why now**: Phase 1 results (May 21-June 1) will determine Tier 2 readiness. If Phase 1 adoption >60%, Tier 2 launch must be ready for June 15 start. Pre-staging removes planning paralysis and enables day-1 execution.
+**Next Step**: Execute June 1-2 post-Phase-1-completion. Hand to user with Tier 2 cohort list + launch sequence.
+
+---
+
+### ⏳ Item 81: Open-repo Phase 5 Implementation Roadmap Expansion (Candidates 1 & 2)
+**Status**: STAGED (Session 1326, 07:52 UTC)
+**Impact**: MEDIUM — Phase 5 user decision pending; pre-staging implementation details enables rapid execution
+**Trigger**: User selects Phase 5 Candidate 1 (ZimWriter) or Candidate 2 (OPDS) or both
+**Goal**: Pre-stage detailed implementation roadmaps for Candidate 1 (ZimWriter offline access library, 4-6h estimated) and Candidate 2 (OPDS feedgen migration, 3-4h estimated) covering: (1) Architecture and code entry points, (2) Test coverage requirements, (3) Integration with existing Wave 4 federation, (4) Deployment gates and go-live checklist, (5) Success criteria for Phase 5 completion
+**Feasibility**: HIGH — Phase 4 complete (255 tests passing), architecture stable, code patterns established
+**Effort estimate**: 2–3 hours per candidate (4-6 hours total for both)
+**Deliverable**: 
+- `projects/open-repo/CANDIDATE_1_ZIMWRITER_IMPLEMENTATION_ROADMAP.md` (architecture diagram, code entry points, test matrix, integration sequence, 4-6h execution plan)
+- `projects/open-repo/CANDIDATE_2_OPDS_IMPLEMENTATION_ROADMAP.md` (architecture diagram, code entry points, test matrix, integration sequence, 3-4h execution plan)
+**Why now**: Phase 5 decision awaited (user to choose Candidate 1, 2, or both). Implementation roadmaps remove last friction point and enable user to pick confidently based on clear effort/impact tradeoffs. Once chosen, roadmap is the execution blueprint.
+**Next Step**: Execute May 19-20 in parallel. Hand to user with "if you choose Candidate 1, here's the 4-6h execution plan" and corresponding for Candidate 2.
+
+---
 **Goal**: Pre-stage: (1) Domain 59 (Economic Precarity, June 15-July 15) research outline with 40+ sources, (2) Domain 57 (Multilateral Withdrawal, July 15-Aug 15) outline with 30+ sources, (3) Coordination framework linking 59→57→58→56 research sequencing to May 21 synthesis output branch, (4) Researcher assignment matrix (which domains to which subagents), (5) Delivery timeline to distribution (Oct 1 launch for Domains 59+57)
 **Feasibility**: HIGH — Phase 2 Expansion Outlines exist (Session 1022, 65K, production-ready); this adds execution sequencing + sourcing
 **Effort estimate**: 2–2.5 hours
