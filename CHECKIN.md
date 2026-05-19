@@ -1,33 +1,38 @@
-## Since Last Check-in (Session 1359, May 19 19:44–20:00 UTC)
+## Since Last Check-in (Session 1359, May 19 19:44–20:15 UTC)
 
-**Session Status**: 🟢 **COMPLETED — EXPLORATION QUEUE ITEMS MARKED COMPLETE, STATE READY FOR MAY 21 SYNTHESIS & MAY 22 CHECKPOINT**
+**Session Status**: 🟢 **COMPLETED — SSH DEADLINE VERIFIED CRITICAL, DOMAIN 42 WAVE 1 STAGED & READY, STATE PREPARED FOR MAY 21 SYNTHESIS & MAY 22 CHECKPOINT**
 
 ### Session 1359 Summary
 
 **Work Completed**:
-- ✅ Marked Exploration Queue Items 86, 88, 89 complete in EXPLORATION_QUEUE.md (all deliverables verified present, dated May 17-19)
-- ✅ Updated WORKLOG.md with session summary and critical path (May 21 synthesis, May 22 checkpoint gates)
-- ✅ Verified project status: all autonomous work staged, 3 active blocks confirmed (SSH/VeraCrypt/test-print, user action required)
+- ✅ Re-verified SSH auth to Jetson (failure confirmed; ED25519 key not authorized; BLOCKED.md updated with "Permission denied (publickey,password)" timestamp May 19 19:55 UTC)
+- ✅ Sent Discord notification about critical May 22 13:30 UTC deadline (13h 35m remaining)
+- ✅ Verified Domain 42 Wave 1 email package (5 Category A emails staged, Gist live, ready for user action)
+- ✅ Verified resistance-research synthesis infrastructure (all 5 parts production-ready for May 21 19:00–20:00 UTC autonomous execution)
+- ✅ Marked Exploration Queue Items 86, 88, 89 complete (Session 1358, deliverables verified present May 17-19)
 
 **Project Status Snapshot**:
-- **Resistance-research**: May 21 19:00 UTC synthesis confirmed autonomous (deterministic, all 5 parts production-ready)
-- **Stockbot**: May 22 20:00 UTC checkpoint confirmed autonomous (decision architecture staged); **CRITICAL: SSH auth required by May 22 13:30 UTC**
+- **Resistance-research**: May 21 19:00 UTC synthesis confirmed autonomous (deterministic, all 5 parts production-ready; precondition: user fills signal log by May 20 evening)
+- **Stockbot**: May 22 20:00 UTC checkpoint confirmed autonomous (decision architecture staged); **🔴 CRITICAL: SSH auth required by May 22 13:30 UTC (13h 35m remaining)**
+- **Domain 42 DEA Deadline**: May 28 (9 days); Category A email package STAGED — Gist live, emails ready for user to fill `[Your name]`/`[Your contact information]` and send TODAY or May 21 (hard deadline May 24 electronic cutoff)
 - **Seedwarden Track B**: May 30 launch confirmed ready (all deliverables production-ready)
 - **Open-repo Phase 5**: Candidate 1 verified de-risked (awaiting May 25–26 approval)
 - **Systems-resilience**: Phase 3 complete, Phase 4-5 framework ready for June 1 decision
 
-**Items Needing User Input** (unchanged from Session 1358):
-1. **TODAY (May 19–20)**: SSH auth for Jetson — add orchestrator ED25519 public key (critical May 22 13:30 UTC deadline)
-2. **May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots (10 min, enables May 21 synthesis)
-3. **May 21 evening**: Read synthesis outcome; activate Phase 2 if STRONG/MODERATE
-4. **May 22 13:30 UTC**: SSH auth deadline (if unresolved, May 22 checkpoint outcome = May 19 repeat)
-5. **May 25–26**: Review Phase 5 Candidate 1 verification; approve for merge
-6. **May 25–30**: Three seedwarden Phase 3 decisions (scope, Goldenseal sourcing, second writer)
+**Items Needing User Input** (updated with Domain 42):
+1. **🔴 CRITICAL — TODAY (May 19–20)**: SSH auth for Jetson — add orchestrator ED25519 public key to authorized_keys (deadline **May 22 13:30 UTC**, 13h 35m remaining)
+2. **TODAY or May 21**: Domain 42 Wave 1 send — fill `[Your name]`/`[Your contact information]` in 5 Category A emails + send (hard deadline May 24 11:59 p.m. ET; DEA deadline May 28)
+3. **May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots (10 min, enables May 21 synthesis)
+4. **May 21 evening**: Read synthesis outcome; activate Phase 2 if STRONG/MODERATE
+5. **May 22 13:30 UTC**: SSH auth deadline (if unresolved, May 22 checkpoint outcome = May 19 repeat)
+6. **May 25–26**: Review Phase 5 Candidate 1 verification; approve for merge
+7. **May 25–30**: Three seedwarden Phase 3 decisions (scope, Goldenseal sourcing, second writer)
 
-**Critical Path — Next 36 Hours**:
+**Critical Path — Next 72 Hours**:
 - **May 21 19:00 UTC**: Resistance-research synthesis (autonomous, deterministic, ~25-30 min)
-- **May 22 13:30 UTC**: Stockbot Lever B SSH auth deadline (CRITICAL)
+- **May 22 13:30 UTC**: Stockbot Lever B SSH auth deadline (🔴 CRITICAL — if unresolved, checkpoint outcome repeats May 19)
 - **May 22 20:00 UTC**: Stockbot May 22 checkpoint autonomous execution
+- **May 24 23:59 ET**: Domain 42 electronic submission deadline (5 days remaining)
 
 ---
 
