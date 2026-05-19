@@ -4,6 +4,62 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Agent Session — Track B May 30 Supply Chain Contingency Plan (v4.0) — 2026-05-19
+
+**Task**: Develop comprehensive supply chain contingency plan for Track B May 30 launch.
+Scope: (1) backup supplier availability if primary vendors miss deadlines; (2) minimum
+viable launch if Canva palette refresh is delayed; (3) location contingencies if outdoor
+permit delays; (4) critical-path timeline compression options (which guides can compress
+from 15 to 10 days without quality loss). Produce `phase-2-supply-chain-contingencies.md`
+with vendor alternates, timeline recovery options (best/medium/worst), risk scoring matrix,
+and decision checklist.
+
+**File written**:
+
+`projects/seedwarden/phase-2-supply-chain-contingencies.md` — Version 4.0 (supersedes v2.0
+from May 18). 2,700+ words across 7 sections. Source files read: GATE_2_DECISION_AND_EXECUTION_GUIDE.md,
+PHASE_2_LAUNCH_LOGISTICS.md, PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md (v3.0), MAY_30_RISK_AND_CONTINGENCY_PLAN.md,
+MAY_24_30_SPRINT_OPTIMIZATION_BY_DECISION.md.
+
+**Sections**:
+1. Executive Summary — current risk levels across 4 workstreams; dominant scenario is medium
+   case (3-guide May 30 launch + June 4 completion, probability 45%)
+2. Vendor Alternates Matrix — Mountain Rose Herbs (4 backup tiers with phone + email);
+   Strictly Medicinal Seeds (4 backup tiers including Brushwood Nursery); Prairie Moon
+   Nursery (separate fallbacks for Ramps and Trillium); iNaturalist CC-BY permanent baseline
+   (taxon IDs for all 5 species)
+3. Minimum Viable Launch — Canva palette delay: Option A (manual hex entry, 100% quality),
+   Option B (existing Seedwarden palette), Option C (Figma migration); decision tree
+4. Location Contingencies — ABG permit confirmed lost; indoor studio pre-activated; Options
+   2–4 (ABG short-notice call, UpS private farm, Peerspace/Giggster rental studio)
+5. Critical-Path Compression — guide-by-guide matrix: Ginseng/Goldenseal/Black Cohosh
+   compress cleanly to 10 days; Bloodroot/Ramps constrained by sourcing events; emergency
+   2-day compression plan (May 28 start) for 3-guide MVL
+6. Risk Scoring Matrix — 19 risk IDs with probability, launch impact, revenue impact, and
+   severity tiers; Tier 0 (zero launch impact, ~80% probability of at least one occurring);
+   Tier 1 (3-guide launch, 10%); Tier 2 (emergency compression, 5%); Tier 3 (June 10, 2%)
+7. Timeline Recovery — best case (40%, full 5-guide May 30); medium case (45%, 3-guide
+   May 30 + June 4); worst case (2%, 2-guide MVL May 30 or June 10); revenue comparison table
+   showing any May 30 launch outperforms June 10 deferred launch by 10–20%
+8. Decision Checklist — date-stamped checks May 19–30; 5-check May 29 go/no-go audit;
+   vendor quick-reference card with all phone numbers
+
+**Key findings**:
+- The only genuine May 30 kill scenario is Canva production not starting by May 28 EOD
+  (probability ~2%). Requires every Tier 0 fallback to also fail simultaneously.
+- Dominant risk is Tier 1: Canva starts May 27 (1-day slip) → 3-guide May 30 launch.
+  Revenue impact 5–8% below baseline; recovered by June 5 June 4 follow-up broadcast.
+- Fresh ramp leaves (farmers market, $3–8, same-day purchase) are the preferred Ramps photo
+  prop regardless of Prairie Moon Nursery status. Purchase today or tomorrow without fail.
+- American Ginseng, Goldenseal, Black Cohosh all compress cleanly from 15 days to 10 days
+  with zero quality loss. These 3 are the minimum viable launch set.
+- Bloodroot requires rhizome specimen or BHL illustration decision before Day 4 starts.
+  BHL path eliminates the 30-minute oxidation window scheduling constraint.
+- Prairie Moon bare root shipping window ends late May — call 866-417-8156 today to confirm
+  whether the order is still shippable.
+
+---
+
 ## Agent Session — Phase 2 Supply Chain Risk & Contingency Planning (Exploration Queue) — 2026-05-19
 
 **Task**: Exploration Queue item — "Phase 2 Supply Chain Risk & Contingency Planning." Build

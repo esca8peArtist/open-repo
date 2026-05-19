@@ -1,539 +1,419 @@
 ---
-title: "Phase 2 Supply Chain Contingency Planning — Comprehensive Reference"
-version: 2.0
-prepared: 2026-05-18
+title: "Track B Phase 2 Supply Chain Contingency Plan — May 30 Launch"
+version: 4.0
+prepared: 2026-05-19
 launch-target: 2026-05-30
-days-remaining: 12
-decision-gate: 2026-05-25
-status: active — primary contingency reference for May 18–30 window
-activation-target: under 15 minutes per scenario
+days-remaining: 11
+status: ACTIVE — primary contingency reference for May 19–30 sprint window
+activation-standard: Every contingency documented here is actionable in under 15 minutes
+scope: Track B Phase 2 — Appalachian Medicinals series (American Ginseng, Goldenseal,
+       Black Cohosh, Bloodroot, Ramps); zone card production; Canva Brand Kit; photo logistics
+gate-assumption: "Gate 1 (social accounts) and Gate 2 (Canva Brand Kit) resolved May 19"
 references:
+  - GATE_2_DECISION_AND_EXECUTION_GUIDE.md
   - PHASE_2_LAUNCH_LOGISTICS.md
+  - PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md (v3.0, May 19)
   - phase-2-plant-sourcing-vendor-list.md
   - PHASE_2_ENDANGERED_SPECIES_PROCUREMENT_TIMELINE.md
   - PHASE_2_PHOTOGRAPHY_LOGISTICS.md
   - CANVA_ENDANGERED_SPECIES_STYLE_GUIDE.md
-  - phase-2-location-scout-report.md
   - MAY_30_RISK_AND_CONTINGENCY_PLAN.md
-  - contingency-paths.md
+  - MAY_24_30_SPRINT_OPTIMIZATION_BY_DECISION.md
+  - TRACK_B_USER_GATES.md
 ---
 
-# Phase 2 Supply Chain Contingency Planning — Comprehensive Reference
+# Track B Phase 2 Supply Chain Contingency Plan — May 30, 2026
 
-**Prepared**: May 18, 2026
-**Launch target**: May 30, 2026 — 12 days remaining
-**Scope**: Track B Phase 2 — foraged plant guides and medicinal plants (Appalachian Medicinals
-series: American Ginseng, Goldenseal, Black Cohosh, Bloodroot, Ramps). This document covers
-the 22-day window May 9–30. Phase 3 (June 22–July 13, medicinal bundles) is out of scope here.
-**Activation standard**: Every contingency documented here is actionable in under 15 minutes.
-**How to use this document**: When a delay is detected, find the vendor or scenario in
-Section 1 or Section 3. Read the trigger threshold. If the threshold is met, execute the
-documented response immediately. Log the action in WORKLOG.md within 3 minutes of activation.
+**Prepared**: May 19, 2026 — 11 days to launch  
+**Launch target**: May 30, 2026, 10:00am EST  
+**Track**: Track B — Appalachian Medicinals series (5 guides)  
+**Gate assumption**: Gate 1 (Instagram, TikTok, Pinterest accounts) and Gate 2 (Canva
+Brand Kit) both resolved May 19. All contingency planning proceeds from this state.
 
-**Primary supplier summary**:
-- Mountain Rose Herbs: order deadline May 15, arriving May 17–21 (2–3 day USPS Priority from Eugene, OR)
-- Strictly Medicinal Seeds: arriving May 24–30 (8–12 day lead time, live Black Cohosh plant)
-- Prairie Moon Nursery: arriving May 24–27 (7–14 day lead time, Ramps bulblets + Trillium bare root)
+**Business purpose**: De-risk the May 30 launch by documenting specific vendor alternates,
+timeline recovery options, a risk scoring matrix, and a decision checklist for every scenario
+that can materially affect whether guides reach buyers on schedule.
 
-**Core principle**: The supply chain is a quality multiplier, not a launch gate. Physical
-specimens improve guides. iNaturalist CC-BY photos make guides. The only hard blocker for
-May 30 is fewer than 2 guide PDFs export-ready by May 29 evening. Every other supply chain
-failure has a documented fallback that preserves the date.
+**Core principle**: The supply chain — physical specimens, location access, Canva palette
+configuration — is a quality multiplier, not a launch gate. iNaturalist CC-BY photos make
+guides. Physical specimens improve them. The only hard blocker for May 30 is fewer than
+2 guide PDFs export-ready by May 29 evening. Every other failure documented here has a
+fallback that preserves the date.
 
----
-
-## Section 1: Vendor Alternates — Backup Suppliers With Full Contact and Timeline
-
-### 1.1 Mountain Rose Herbs — If May 17–21 Delivery Window Is Missed
-
-Mountain Rose Herbs (mountainroseherbs.com) is the primary supplier for American Ginseng
-dried whole root ($14–22/oz) and Goldenseal dried root ($14–20/oz). They ship from Eugene,
-Oregon on 2–3 day USPS Priority. Order deadline: May 15. Expected arrival window: May 17–21.
-A miss at this vendor is a logistics failure, not a supply failure — these products are
-available year-round from multiple domestic sources.
-
-**Detection trigger**: No shipping confirmation email within 48 hours of placing the May 15
-order, OR no delivery by May 21 end-of-day.
-
-**First action before activating backup**: Call Mountain Rose Herbs directly at 503-549-9559
-(customer service, M–F 8am–5pm PT) or email orders@mountainroseherbs.com. Request the
-tracking number and revised delivery date. If arrival is projected by May 22 or earlier,
-hold — dried roots require zero acclimatization and can be photographed within minutes of
-arrival. Do not cancel a confirmed in-transit order.
-
-**Backup vendor A — Starwest Botanicals**
-
-- Website: starwest-botanicals.com
-- Phone: 800-800-4372 (M–F 8am–5pm PT)
-- Email: orders@starwest-botanicals.com
-- Address: 161 Main Ave, Sacramento, CA 95838
-- Products in stock: Organic ginseng root cut and sifted, organic goldenseal root powder and
-  whole root — both year-round
-- Unit pricing: Ginseng dried root $12–19/oz; Goldenseal dried root $14–22/oz (comparable
-  to Mountain Rose Herbs; pricing is seasonally stable)
-- Processing lead time: 1–2 business days from Sacramento warehouse
-- Shipping: USPS Priority Mail (3–5 days to eastern US) or FedEx Ground (3–4 days)
-- Total lead time from order: 4–6 days to most US destinations
-- Reliability rating: High — established since 1975; organic certification comparable to
-  Mountain Rose Herbs; used interchangeably by professional herbalists
-- Activation threshold: If Mountain Rose Herbs has no shipping confirmation by 48 hours
-  post-order, place Starwest order the same day. Cancel Mountain Rose Herbs when Starwest
-  ships confirmation arrives.
-- Cost differential: Approximately $0–5/oz lower unit cost; shipping cost approximately
-  equivalent; net order cost is the same or marginally lower
-
-**Backup vendor B — Bulk Herb Store**
-
-- Website: bulkherbstore.com
-- Phone: 877-278-4257 (M–F 8am–5pm CT)
-- Email: support@bulkherbstore.com
-- Address: 26 Commerce St, Pleasantville, TN 37033
-- Products: Organic ginseng root and goldenseal root; ships from Tennessee, which reduces
-  transit time to southeastern and eastern US addresses
-- Unit pricing: Ginseng $13–20/oz; Goldenseal $15–23/oz
-- Processing lead time: 1–2 business days
-- Shipping: USPS Priority or FedEx; 2–4 days to Appalachian region
-- Total lead time: 3–5 days from order (faster than Starwest for NC/VA/TN buyers)
-- Activation threshold: Use as parallel option to Starwest if Tennessee proximity accelerates
-  delivery. Check both sites and choose whichever shows faster estimated transit to your zip.
-
-**Backup vendor C — Local retail (same-day, zero lead time)**
-
-- Goldenseal dried root: Natural food stores (Whole Foods bulk herb section, independent
-  natural food co-ops, dedicated herb shops such as Mountain Rose Herbs resellers). Call
-  ahead to confirm stock. Cost: $18–30/oz (retail premium of 30–50% over mail-order). Lead
-  time: zero.
-- Ginseng dried whole root: Less common in bulk retail. Best sources are Korean grocery
-  stores, which reliably stock Korean red ginseng (Panax ginseng) and sometimes American
-  ginseng (Panax quinquefolius) whole root in the supplement or produce section. The root
-  morphology is photographically sufficient for guide production — both are Panax genus with
-  the characteristic forked root structure. Caption accordingly: "Panax ginseng (shown for
-  root morphology comparison)."
-- Action: If no mail-order vendor can confirm delivery before the photography session date,
-  execute local retail purchase the same day the decision is made. No schedule impact.
-
-**Backup vendor D — Amazon Prime (emergency only)**
-
-- Sellers: Frontier Co-op and Starwest Botanicals both sell through Amazon. Search "dried
-  ginseng root whole" and "dried goldenseal root" with Prime filter.
-- Delivery: 1–2 days with Prime
-- Cost: 15–30% higher than direct vendor due to marketplace markup
-- Use if: local retail has failed and no direct vendor can deliver in time
-- Quality: Equivalent — same Frontier Co-op and Starwest product, different fulfillment path
-
-**Quality assessment**: All four backup paths produce roots that are photographically
-equivalent to Mountain Rose Herbs for guide production. The yellow goldenseal cross-section
-color and ginseng root morphology are not vendor-specific properties. No guide content
-quality degradation results from any of these switches.
+**How to use**: Find the delay. Read the trigger threshold. If the threshold is met, execute
+the documented response immediately. Log the action in WORKLOG.md within 3 minutes using
+the format in Section 6.
 
 ---
 
-### 1.2 Strictly Medicinal Seeds and Prairie Moon Nursery — Fallbacks for Live Plant Window
+## Executive Summary
 
-These vendors supply the live endangered species specimens. Strictly Medicinal Seeds
-(strictlymedicinalseeds.com) supplies Black Cohosh potted plant ($8–12, 8–12 day lead time).
-Expected arrival window: May 24–30 (based on current order timing). Prairie Moon Nursery
-(prairiemoon.com) supplies Ramps bulblets and Trillium bare root ($8–15 each, 7–14 day lead
-time). Expected arrival window: May 24–27. Prairie Moon ships potted and bare-root plants
-late April through late May from their Midwest greenhouse; spring orders dispatch by order
-date when plants are well-rooted.
+Eleven days remain. The critical path runs through one item only: Canva guide production
+starting on or before May 26 and continuing through May 29. Physical specimen delays,
+location permit failures, and lifestyle photo delays are all Tier 0 events — recoverable
+within hours, with zero impact on the launch date under any realistic scenario.
 
-**Detection trigger for Strictly Medicinal**: No tracking number by May 21.
-Contact: Email form at strictlymedicinalseeds.com/contact or call 541-846-6704 (Horizon
-Herbs / Strictly Medicinal, Williams, OR). Email: horizonherbs@gmail.com.
+The four supply chain workstreams and their current risk levels as of May 19:
 
-**Detection trigger for Prairie Moon**: No tracking number by May 21.
-Contact: 866-417-8156 (toll-free); prairiemoon.com/contact; email customerservice@prairiemoon.com.
-Address: 31837 Old Hwy 14, New Auburn, WI 54757.
+| Workstream | Current Status | Risk Level | Kill Scenario? |
+|-----------|---------------|------------|----------------|
+| Plant sourcing (Mountain Rose Herbs, Strictly Medicinal, Prairie Moon) | Orders placed or in-window | Low | No — 4 independent fallback layers |
+| Canva Brand Kit and palette | Gate 2 resolved May 19 | Low | No — manual hex entry preserves 100% quality |
+| Location scouting / outdoor permit | Asheville Botanical Garden deadline passed May 12 | Confirmed loss | No — indoor studio + iNaturalist is the baseline |
+| Canva guide production (May 26–29) | Not started; 7 days away | Medium | Yes if not started by May 28 EOD |
 
-**Maximum acceptable delivery slip**: May 28. Delivery after May 28 triggers iNaturalist
-sourcing sprint immediately — do not wait for the physical specimen to arrive.
-
-**Backup vendor A — Etsy native plant growers (3–7 day lead time)**
-
-- Search: "black cohosh live plant," "ramps bulbs cultivated," "trillium grandiflorum live,"
-  "native plant appalachian live"
-- Filter sellers by location: NC, VA, WV, TN, KY, PA preferred for seasonal compatibility
-  and faster transit
-- Before ordering, message the seller to confirm: (a) cultivated origin, not wild-harvested;
-  (b) can ship within 2 business days; (c) actively growing, not dormant
-- Cost: $10–25 per species (comparable to commercial nurseries)
-- Lead time: 3–7 days if seller ships within 2 days
-- Activation threshold: If both Strictly Medicinal and Prairie Moon show no tracking by
-  May 19, search Etsy the same day and place orders. Use the vendor communication template
-  in PHASE_2_ENDANGERED_SPECIES_PROCUREMENT_TIMELINE.md.
-
-**Backup vendor B — NC Native Plant Society plant sales (zero lead time)**
-
-- Organization: NC Native Plant Society, ncnps.org
-- Spring plant sales through May in the Appalachian region — call chapter contacts for dates
-  and remaining inventory. Local chapter contacts at ncnps.org/chapters
-- Western Carolina Botanical Club: wncbotanicalclub.org — periodic plant exchanges
-- Appalachian State University native plant sale: May annual event (confirm current year dates)
-- Cost: $4–12 per plant (lowest cost option for live specimens)
-- Limitation: Availability is event-dependent and unpredictable; call or email to confirm
-  Black Cohosh or Trillium is in inventory before making a trip
-- This is the fastest physical-specimen fallback if a sale happens to be occurring
-
-**Backup vendor C — Brushwood Nursery**
-
-- Website: brushwoodnursery.com
-- Phone: 706-245-4276
-- Email: info@brushwoodnursery.com
-- Address: 11912 Brushwood Rd, Young Harris, GA 30582
-- Products: Native Appalachian woodland plants including Black Cohosh (Actaea racemosa),
-  Trillium species, and other at-risk woodland species — cultivated stock
-- Lead time: 5–9 days via USPS; ships spring through early summer
-- Cost: $12–20 per plant
-- Note: Confirm cultivated origin at time of order. Brushwood Nursery is a specialty
-  Appalachian native plant nursery; cultivated stock confirmed in prior research.
-
-**Permanent fallback — iNaturalist CC-BY sourcing sprint (0-day lead time)**
-
-For every species where live plant procurement fails, iNaturalist CC-BY Research Grade
-observations provide complete photo coverage. This is not a compromise — it is the baseline
-guide photo standard. Physical specimens are the enhancement layer.
-
-Filter URL:
-`https://www.inaturalist.org/observations?taxon_id=[ID]&license=CC-BY&quality_grade=research&photos=true`
-
-Per-species coverage assessment:
-
-| Species | Taxon ID | iNaturalist Supply | Recommended Angles |
-|---------|----------|-------------------|--------------------|
-| Black Cohosh (Actaea racemosa) | 78781 | Abundant — Appalachian region well covered | Leaf habit, compound leaf arrangement, flower raceme (archive), woodland context |
-| Trillium grandiflorum | 60222 | Very abundant — most-photographed woodland wildflower in eastern NA | Bloom, leaf arrangement, woodland floor context, multiple seasonal stages |
-| Ramps (Allium tricoccum) | 54495 | Good — April–May observations richest | Leaf colony, leaf texture close-up, bulb visible at base, woodland emergence |
-| Bloodroot (Sanguinaria canadensis) | 58841 | Good for bloom; thin for rhizome cross-section | Bloom, leaf, BHL illustration fills rhizome gap |
-| Wild Bergamot (Monarda fistulosa) | 52853 | Excellent — common and widespread | Flower head, stem habit, prairie/meadow context |
-| American Ginseng (Panax quinquefolius) | 52678 | Moderate — not as frequently photographed due to conservation concerns | Compound leaf, root collar, forest context; dried root prop is primary ID element |
-
-**Sprint protocol**: One sitting, 2–3 hours. Cover all 5–6 species in sequence. Download
-3–5 images per species. Record each in WORKLOG.md with observer name, iNaturalist URL,
-license (must be CC-BY, not CC-BY-NC), and access date. Total time investment: 2–3 hours.
+The only scenario that kills the May 30 launch is Canva production not starting by May 28
+end-of-day. Probability: approximately 2%, because it requires every other preparatory track
+to also fail simultaneously. The dominant risk is a 1-day Canva start slip (May 27 instead
+of May 26), which produces a 3-guide May 30 launch and a June 4 full-collection release.
+That outcome is not a failure — it is the documented medium-case plan.
 
 ---
 
-### 1.3 Phase 2 Medicinal Herb Suppliers (Phase 2 Prep — Guide Content Sources)
+## Section 1: Vendor Alternates — Backup Supplier Matrix
 
-The Phase 2 guide production draw on a secondary tier of medicinal herb suppliers for
-reference material and Phase 3 pre-staging. Contact details for primary and backup vendors:
+### 1.1 Mountain Rose Herbs — Dried Root Props (Ginseng and Goldenseal)
 
-**Primary educational reference sources:**
+**Role**: Primary supplier for American Ginseng dried whole root ($14–22/oz) and Goldenseal
+dried root ($14–20/oz). Ships from Eugene, Oregon via USPS Priority (2–3 day transit to most
+East Coast addresses). Order deadline: May 15. Expected delivery window: May 17–22.
 
-- USDA PLANTS Database: plants.usda.gov — species fact sheets, range maps, conservation
-  status. Free. No account required.
-- iNaturalist: inaturalist.org — observations, range data, phenology. Free.
-- Botanical Electronic News (BEN): Accessible via Biodiversity Heritage Library (BHL),
-  biodiversitylibrary.org — 19th-century botanical illustrations, public domain.
-- NC State Extension: plants.ces.ncsu.edu — cultivation profiles for medicinal species.
-- United Plant Savers: unitedplantsavers.org — At-Risk species list, cultivation guides.
-  Email: info@unitedplantsavers.org for referrals.
+**Why Mountain Rose Herbs matters**: The dried ginseng root intact-and-cross-sectioned is
+the single most visually distinctive photograph in the Ginseng guide. The yellow goldenseal
+cross-section, lightly misted to deepen color, is the series' strongest identification image.
+A delay at this vendor is a logistics failure, not a supply failure — dried medicinal roots
+are available year-round from multiple domestic sources.
 
-**Wholesale herb suppliers for Phase 3 content verification:**
+**Detection trigger**: No shipping confirmation email within 48 hours of placing the order,
+or no delivery by May 22 end-of-day.
 
-- Pacific Botanicals: pacificbotanicals.com | 541-479-7777 | Grants Pass, OR — bulk
-  organic herbs; minimum orders apply. Useful as Phase 3 sourcing reference for cultivation
-  economics data in guides.
-- Zack Woods Herb Farm: zackwoodsherbs.com | Hyde Park, VT — small-farm cultivated at-risk
-  species; useful for pricing data and cultivation context for guide content.
-- Frontier Co-op: frontiercoop.com | 844-550-6200 — bulk herb supplier with verified
-  sustainable sourcing data; good reference for wild-harvest pressure statistics.
+**First action before activating a backup**: Call Mountain Rose Herbs at 503-549-9559
+(M–F 8am–5pm PT) or email orders@mountainroseherbs.com. Request the tracking number and
+revised delivery date. If arrival is projected for May 23 or earlier, hold — dried roots
+require zero acclimatization and can be photographed within minutes of arrival.
+
+| Tier | Vendor | Products | Lead Time | Contact | Cost |
+|------|--------|----------|-----------|---------|------|
+| Primary | Mountain Rose Herbs, mountainroseherbs.com | Ginseng dried whole root (1 oz), Goldenseal dried root (1 oz) | 2–3 days USPS Priority from Eugene OR | 503-549-9559; orders@mountainroseherbs.com | $14–22 ginseng; $14–20 goldenseal |
+| Backup A | Starwest Botanicals, starwest-botanicals.com | Same products, comparable organic certification; established since 1975 | 1–2 days processing + 1–3 days USPS Priority (ships same day if ordered before 11am PT); 4–5 days total to East Coast | 800-800-4372; orders@starwest-botanicals.com | $12–19 ginseng; $14–22 goldenseal |
+| Backup B | Bulk Herb Store, bulkherbstore.com | Ginseng root, goldenseal root; ships from Tennessee, reducing East Coast transit | 1–2 days processing + 2–4 days ship (faster to Appalachian region than CA-based vendors) | 877-278-4257; support@bulkherbstore.com | $13–20 ginseng; $15–23 goldenseal |
+| Fallback A | Local Whole Foods bulk herb section, independent natural food co-op, or dedicated herb shop | Goldenseal dried root reliably stocked in bulk herbs; ginseng less common but available at some locations | Zero lead time — call ahead to confirm stock | Search "natural food store" or "herb shop" near your zip code | $18–30/oz (30–50% retail premium, but eliminates all shipping wait) |
+| Fallback B | Korean grocery store (in-person) | Whole ginseng root — Korean red ginseng or American ginseng — in supplement or produce section; root morphology is photographically sufficient; caption as "Panax ginseng, shown for root morphology comparison" if Korean red ginseng | Zero lead time | Search "Korean grocery" near your zip code | $10–25 for a photogenic whole root |
+| Fallback C | Amazon Prime — Frontier Co-op or Starwest Botanicals marketplace listings | Same products via marketplace fulfillment | 1–2 days with Prime | amazon.com: search "dried ginseng root whole" + "dried goldenseal root" with Prime filter | 15–30% above direct-vendor pricing |
+
+**Quality impact of any switch**: None. Root color, morphology, and photographic value are
+properties of the species, not the vendor. All fallback paths produce photographically
+equivalent specimens for guide production.
+
+**Cost premium at fallback**: Local retail adds $6–13 over mail-order. Amazon Prime adds
+zero shipping cost but 15–30% product markup. Maximum additional spend under any single-vendor
+miss: approximately $20. No scenario requires a budget increase greater than $20 above the
+original Mountain Rose Herbs estimate.
 
 ---
 
-## Section 2: Minimum Viable Launch — Decision Tree for User Gate Delays
+### 1.2 Strictly Medicinal Seeds — Black Cohosh Live Plant
 
-### 2.1 If Canva Palette Refresh (User Gate, May 26) Is Delayed
+**Role**: Primary supplier for Black Cohosh (Actaea racemosa) potted live plant ($8–12).
+Ships from Williams, Oregon. Lead time: 8–12 days. Expected arrival window: May 24–30.
 
-The Canva Brand Kit "Endangered Species Series" palette adds 7 specialist colors to the
-existing Seedwarden Brand Kit. Setup is estimated at 45–90 minutes and requires user login
-to Canva. If this gate slips past May 26 when guide production begins, three paths exist:
+**Photo dependency**: The live Black Cohosh plant is a quality enhancement. The guide's
+conservation narrative — the "95% wild-harvested" statistic that is the series' strongest
+ecological hook — is text content, not photo-dependent. iNaturalist CC-BY Research Grade
+observations for Actaea racemosa are abundant in the Appalachian region and cover every
+required angle: leaf habit, compound leaf arrangement, flower raceme archive, and woodland
+context.
 
-**Path A — Manual hex entry (preferred fallback, zero quality loss)**
+**Detection trigger**: No tracking number by May 21 (8 days after a May 13 order, or 6 days
+after a May 15 order).
 
-Canva's color picker accepts typed hex values. The palette codes are:
-- Deep Forest Floor: #1C2B1A (section header backgrounds)
-- Aged Bark: #3B2A1A (dividers, accent bars)
-- Pale Parchment: #F0E6C8 (body text background fields)
-- Sage Mist: #7A9A6E (accent lines, bullet points)
-- Bone White: #F5F1E8 (full-page background)
-- Conservation Red: #8B2000 (conservation status callout boxes)
-- Species Gold: #C49A2A (pull quote highlights, species name accents)
+**Maximum viable delivery date**: May 28. If arrival is projected after May 28, activate
+the iNaturalist sourcing sprint immediately. Do not wait for the physical specimen.
+
+| Tier | Vendor | Products | Lead Time | Contact | Cost |
+|------|--------|----------|-----------|---------|------|
+| Primary | Strictly Medicinal Seeds, strictlymedicinalseeds.com | Black Cohosh (Actaea racemosa) potted live plant; ships March 15–July 25 | 8–12 days; expected arrival May 24–30 if ordered by May 13–15 | 541-846-6704; horizonherbs@gmail.com | $8–12 |
+| Backup A | Brushwood Nursery, brushwoodnursery.com | Black Cohosh (Actaea racemosa) cultivated stock; native Appalachian woodland species nursery | 5–9 days USPS from Young Harris, GA | 706-245-4276; info@brushwoodnursery.com | $12–20 |
+| Backup B | Etsy native plant sellers | Search "black cohosh live plant"; filter by sellers in NC, VA, WV, TN, KY, PA for fastest transit; message seller before ordering to confirm: (a) cultivated origin, not wild-harvested; (b) actively growing, not dormant; (c) ships within 2 business days | 3–7 days if seller ships within 2 days | Direct message via Etsy shop | $10–25 |
+| Backup C | NC Native Plant Society chapter plant sales, ncnps.org | Black Cohosh and other native woodland species at spring sales through May | Zero lead time if a sale is scheduled; call chapter contact before making a trip | ncnps.org/chapters for local contacts | $4–12 |
+| Fallback | iNaturalist CC-BY sourcing sprint — PERMANENT BASELINE | Taxon ID 78781 (Actaea racemosa): abundant Appalachian coverage; Research Grade observations at every seasonal stage | Zero — 30 min per species for a complete photo set | inaturalist.org/observations?taxon_id=78781&license=CC-BY&quality_grade=research&photos=true | Free |
+
+---
+
+### 1.3 Prairie Moon Nursery — Ramps Bulblets and Trillium Bare Root
+
+**Role**: Primary supplier for Ramps (Allium tricoccum) bulblets ($8–15) and Trillium
+grandiflorum bare root ($8–20). Ships from New Auburn, Wisconsin. Lead time: 7–14 days.
+Expected arrival window: May 24–27. Prairie Moon bare root shipping ends late May — orders
+placed after May 15 are at the trailing edge of the shipping window.
+
+**Critical note**: Call 866-417-8156 today (May 19) to confirm whether a post-May-15 order
+is still shippable. If Prairie Moon cannot fulfill: the fresh ramp leaves path (farmers
+market, same-day purchase, $3–8) is the preferred Ramps photo prop regardless. Fresh leaves
+are a superior photography subject to bulblets — larger, more colorful, easier to style.
+
+**Detection trigger**: No tracking number by May 21, or Prairie Moon confirms they cannot
+fulfill the late-spring bare root order.
+
+| Tier | Vendor | Products | Lead Time | Contact | Cost |
+|------|--------|----------|-----------|---------|------|
+| Primary | Prairie Moon Nursery, prairiemoon.com | Ramps bulblets, Trillium grandiflorum bare root | 7–14 days; spring bare root ships late April through late May — confirm stock today | 866-417-8156; customerservice@prairiemoon.com; 31837 Old Hwy 14, New Auburn WI | $8–15 per species |
+| Backup A (Ramps) | Etsy native plant sellers | Search "ramps bulbs cultivated"; message seller before ordering to confirm cultivated origin and shipping timeline | 3–7 days if seller ships within 2 days | Message via Etsy | $10–25 |
+| Backup A (Trillium) | Etsy native plant sellers | Search "trillium grandiflorum live"; same vetting protocol as above | 3–7 days | Message via Etsy | $10–25 |
+| Backup B | Western Carolina Botanical Club, wncbotanicalclub.org | Member plant exchanges; Appalachian native species; event-dependent availability | Zero lead time if a sale is scheduled; email contact form first | wncbotanicalclub.org | $4–12 |
+| Fallback Ramps | Farmers market or specialty grocery (Whole Foods, co-op, Asian grocery) | Fresh ramp leaves — superior photography prop to bulblets; ramp season ends late May in most Appalachian markets | Zero lead time — purchase May 18–19; refrigerate in damp paper towel; photograph within 48 hours | Call ahead to confirm ramp season is active | $3–8 |
+| Fallback Trillium | iNaturalist CC-BY sourcing sprint | Taxon ID 60222 (Trillium grandiflorum): the most-photographed woodland wildflower in eastern North America; very abundant at every seasonal stage | Zero — 30 min sprint | inaturalist.org/observations?taxon_id=60222&license=CC-BY&quality_grade=research&photos=true | Free |
+
+---
+
+### 1.4 Local Garden Center — Wild Bergamot (Supporting Title)
+
+Wild Bergamot (Monarda fistulosa) is a supporting title, not in the 5-guide critical set.
+Same-day purchase at Home Depot, Lowe's, or an independent nursery. Confirm "Monarda fistulosa"
+straight species (not a cultivar like 'Jacob Cline' — the straight species is accurate for
+guide photography). Fallback: iNaturalist CC-BY, taxon ID 52853, excellent coverage.
+
+---
+
+### 1.5 iNaturalist CC-BY Permanent Fallback — All Species
+
+The iNaturalist CC-BY path is not a compromise. It is the baseline guide photo standard for
+this series. All prior Seedwarden guides were produced using iNaturalist CC-BY Research Grade
+observations. Physical specimens are the quality enhancement layer.
+
+Every photo used in a published guide must be one of: (1) proprietary, photographed by the
+user for Seedwarden; (2) iNaturalist CC-BY (license verified as CC-BY, not CC-BY-NC — the
+default iNaturalist license is CC-BY-NC, which is non-commercial and cannot be used in a
+product; add `&license=CC-BY` to the filter URL explicitly); or (3) Biodiversity Heritage
+Library illustration (public domain pre-1927 publication). No photo enters a guide without
+a logged attribution in WORKLOG.md.
+
+**Sprint protocol**: One sitting, 2–3 hours, covering all 5 species. Download 3–5 images
+per species. Record: observer name, iNaturalist observation URL, license (CC-BY), access date.
+
+| Species | Taxon ID | iNaturalist Supply | Best Angles for Guides |
+|---------|----------|--------------------|----------------------|
+| American Ginseng (Panax quinquefolius) | 52678 | Moderate — conservation sensitivity limits some observations; dried root prop fills gap | Compound leaf, root collar, forest understory context |
+| Goldenseal (Hydrastis canadensis) | 47920 | Good — Appalachian coverage adequate; root cross-section from physical specimen | Leaf habit, flower (seasonal archive), woodland context |
+| Black Cohosh (Actaea racemosa) | 78781 | Abundant — Appalachian region well covered | Leaf habit, compound leaf arrangement, flower raceme archive |
+| Ramps (Allium tricoccum) | 54495 | Good — April–May observations richest | Leaf colony, leaf texture close-up, woodland emergence |
+| Bloodroot (Sanguinaria canadensis) | 58841 | Good for bloom and leaf; thin for rhizome cross-section | Bloom, leaf, BHL 19th-century illustration fills rhizome gap |
+
+---
+
+## Section 2: Minimum Viable Launch — Canva Palette Refresh Delay
+
+### 2.1 Current State
+
+Gate 2 (Canva Brand Kit with 10 colors: 6 brand + 4 zone band) was resolved May 19. The
+additional "Endangered Species Series" palette extension (7 specialist colors for the
+Appalachian Medicinals guides) requires a separate 20-minute setup during the May 24–26
+production prep window. If this extension is not added before May 26 guide production begins,
+three options exist.
+
+### 2.2 Palette Options — No Quality Loss Required
+
+**Option A — Manual hex entry (recommended if extension not set up by May 26)**  
+Canva's color picker accepts typed hex values. The 7 endangered species palette codes are:
+
+| Color Name | Hex Code | Usage |
+|-----------|----------|-------|
+| Deep Forest Floor | #1C2B1A | Section header backgrounds |
+| Aged Bark | #3B2A1A | Dividers, accent bars |
+| Pale Parchment | #F0E6C8 | Body text background fields |
+| Sage Mist | #7A9A6E | Accent lines, bullet points |
+| Bone White | #F5F1E8 | Full-page background |
+| Conservation Red | #8B2000 | Conservation status callout boxes |
+| Species Gold | #C49A2A | Pull quote highlights, species name accents |
 
 Production overhead vs. Brand Kit: approximately 2–3 minutes per color application per
 guide, totaling 30–50 minutes across all 5 guides. The final PDF output is pixel-for-pixel
 identical to Brand Kit output. Visual quality: 100%. Launch date: unaffected.
 
-**Path B — Launch with existing Seedwarden palette, add Endangered Species palette in Phase 3**
+**Option B — Launch with existing Seedwarden palette, add extension before Phase 3**  
+The existing Seedwarden Brand Kit (Deep Forest Green #143b28, Warm Cream #F5EDD6, Sage
+#8FA882, Burnt Sienna #A0522D) is a complete botanical design palette. Conservation Red
+and Species Gold add a conservation-signaling layer — without them, guides read as premium
+botanical reference rather than explicitly conservation-education themed. Quality impact:
+approximately 5% below baseline conversion on buyers who respond specifically to the
+conservation visual signal. The educational content quality is unaffected.
 
-The existing Seedwarden palette is a complete botanical design palette. The conservation-
-specific colors (Conservation Red, Species Gold) signal that the series is conservation-
-education themed rather than general botanical reference. Without them, the guides read as
-high-quality botanical guides but without the explicit conservation premium visual signal.
+**Option C — Figma migration if Canva has technical issues**  
+If Canva has account-level technical issues (not a palette configuration issue), Figma is
+the alternative. Free tier available. Native botanical template library. Estimated migration
+time: 2–3 hours to rebuild the Ginseng master template in Figma. Guide production can begin
+May 27 instead of May 26, with the 1-day buffer absorbed by the existing schedule float.
 
-Quality impact by guide (1 = no impact, 5 = high impact):
+**Decision rule**: Never delay the launch date for palette configuration. A 5-day launch
+delay costs approximately 15–25% of first-30-day revenue due to lost Kit email momentum.
+A palette quality slip from full Brand Kit to manual hex entry costs approximately 0% (output
+is identical). Option A always preserves the launch date and the full quality level.
 
-| Guide | Impact Without New Palette | Primary Affected Element | Workaround |
-|-------|--------------------------|--------------------------|------------|
-| American Ginseng | 2/5 | Conservation status callout box color | Use existing dark teal or forest green as callout background |
-| Goldenseal | 2/5 | Same callout box | Same workaround |
-| Black Cohosh | 3/5 | "95% wild-harvested" statistic callout box | Conservation Red creates visual urgency; standard red is acceptable |
-| Bloodroot | 2/5 | Sanguinarine toxicity disclaimer box | Any high-contrast red functions; educational content unaffected |
-| Ramps | 1/5 | Species Gold name accents | Conservation framing is narrative in this guide, not color-coded |
-
-**Decision rule**: Never slip the launch date for a design element. A 5-day launch delay
-costs an estimated 15–25% of first-30-day revenue due to lost Kit email momentum and
-social post timing. A design quality slip from 100% to ~80% costs an estimated 5% of
-first-30-day revenue. The math is unambiguous — launch on schedule with available design.
-
-**MVL decision tree:**
+### 2.3 Palette Decision Tree
 
 ```
-Is Brand Kit setup complete before May 26 production start?
+Is the Endangered Species palette extension in the Canva Brand Kit before May 26?
   YES → Proceed. No action needed.
   NO  → Is manual hex entry feasible (30–50 min overhead acceptable)?
-          YES → Use manual hex entry. Launch May 30 at full quality.
+          YES → Use manual hex entry. Quality: 100%. Launch date: unaffected.
           NO  → Is Canva account experiencing technical issues?
-                  YES → Switch to Figma (free tier, 2–3 hr migration). Delay start to May 27.
+                  YES → Migrate to Figma free tier. Delay production start to May 27.
                         Absorb into existing 1-day schedule buffer.
                   NO  → Launch with existing Seedwarden palette. Add Endangered Species
-                        palette before any Phase 3 production. Note in WORKLOG.md.
+                        extension before Phase 3 production begins. Log in WORKLOG.md.
 ```
 
 ---
 
-### 2.2 If Photo Shoot (User Gate, May 14–16) Is Delayed
+## Section 3: Location Contingencies — Outdoor Permit Delays
 
-**Trigger**: Lifestyle photo shoot (Clusters A, B, C) not completed by May 23.
+### 3.1 Current Situation
 
-Lifestyle photos are Etsy listing enhancement images (slots 4–5). Guide PDF content is
-independent of them. The critical path runs through guide PDF export, not listing photos.
+The Asheville Botanical Garden (ABG) commercial photography permit required 7-day advance
+notice. The application deadline for a May 20–22 shoot was May 12. As of May 19, that window
+has closed without a confirmed permit. The United Plant Savers (UpS) private forest farm
+referral required outreach by May 10. Both field location paths are unconfirmed.
 
-**MVL path — existing mockups as listing images:**
+**Impact assessment**: The field location adds naturalistic woodland colony context shots.
+It cannot provide: dried root close-ups, seed photography, leaf detail, or any guide-interior
+identification photography — all of which are equivalent or superior indoors with controlled
+light. The habitat context gap is filled entirely by iNaturalist CC-BY archive. Per
+PHASE_2_LAUNCH_LOGISTICS.md Section 2.1: "The guides do not require a field shoot to launch
+on May 30." The home indoor studio is the operational baseline from this date.
 
-Mockup images are complete for all 21 products in the `mockups/` directory. These are
-functional, credible Etsy listing images. Mockups convert at a slightly lower rate than
-lifestyle photos (estimated 10–20% fewer clicks on the lifestyle-specific image slot), but
-the launch proceeds at full quality for the product itself.
+### 3.2 Option 1 — Home Indoor Studio (Confirmed Baseline, $0–20)
 
-Action: If lifestyle shoot is not completed by May 23, load mockup images as Etsy listing
-slots 4–5. Schedule lifestyle shoot for June 1–7 as a post-launch enhancement. Frame in
-the Kit launch email: "New guide photography coming June 7 — guides are available now."
-
-**MVL path — one-day compressed lifestyle shoot:**
-
-The 30-shot lifestyle sequence (Clusters A, B, C) can be executed in a single 6–8 hour
-session with no location dependency. Any day with south- or east-facing window access works.
-If all three clusters must be shot in one day, prioritize Cluster A (most products) and
-Cluster C (food preservation — no window light dependency). Cluster B can be supplemented
-with mockups if the full session runs over time.
-
----
-
-### 2.3 If Guide Production Is Delayed (User Gate, May 26–30)
-
-The Canva production sprint is the only genuine critical path item. The MVL thresholds are:
-
-| Production Start Date | MVL on May 30 | June Completion | Action |
-|-----------------------|--------------|----------------|--------|
-| May 26 (as planned) | 5 guides | N/A | Proceed as planned |
-| May 27 (1 day slip) | 3 guides | June 4 (2 guides) | Ginseng, Goldenseal, Black Cohosh on May 30; Bloodroot + Ramps June 4 |
-| May 28 (2 day slip) | 2 guides | June 4 (3 guides) | Ginseng + Black Cohosh on May 30; three remaining June 4 |
-| May 29 (3 day slip) | 0 guides viable | June 10 (5 guides) | Do not attempt. Activate June 10 deferred launch. Notify Kit subscribers. |
-
-**The hard floor**: Launching with fewer than 2 guides is not viable — a 2-guide launch
-is the minimum that supports a bundle listing and a coherent "Appalachian Medicinals series"
-marketing story. A 1-guide launch delays purchasing intent rather than enabling it.
-
-**Decision deadline**: May 27 at end-of-day. If Canva production has not started with at
-least 1 guide in progress, activate the 3-guide MVL plan for May 30 and June 4 completion.
-Do not wait until May 29 to make this decision.
-
----
-
-## Section 3: Location Contingencies — Indoor Studio Options With Cost and Timing
-
-### 3.1 Situation Assessment
-
-The Asheville Botanical Garden commercial photography permit (May 12 application deadline)
-has passed without a confirmed permit. The United Plant Savers private forest farm referral
-(May 10 outreach deadline) is unconfirmed. Per PHASE_2_LAUNCH_LOGISTICS.md Section 2.1:
-"The guides do not require a field shoot to launch on May 30."
-
-The field location adds: naturalistic woodland colony context shots. It cannot add: dried
-root close-ups, seed photography, leaf detail, any guide-interior identification photography.
-All of these are equivalent or superior indoors with controlled light. The habitat context
-gap is filled entirely by iNaturalist CC-BY archive observations.
-
----
-
-### 3.2 Option 1 — Home Indoor Studio (Own Space, Preferred)
-
-**Cost**: $0 (setup already available) to $20 (foam-core board if not owned)
-**Booking timeline**: Immediate — no reservation required
-**Capability**: All root prop shots, leaf detail, seed photography, live plant habit shots
-**Light requirements**: East- or south-facing window; 9am–noon for best quality
+**Cost**: $0 if foam-core board is already on hand; $8–12 to purchase at Michaels, Hobby
+Lobby, or Target.  
+**Lead time**: Immediate — no reservation, no permit, weather-independent.  
+**Capability**: All root prop close-ups, seed photography, leaf detail, potted plant habit
+shots, dried specimen arrangements — every guide-interior identification photograph at
+equivalent or superior quality to outdoor field work.  
+**Gap**: Naturalistic woodland backdrop for habitat context — filled by iNaturalist CC-BY.
 
 Setup checklist (15 minutes):
-- Clear kitchen table or work surface
-- Position 3–5 feet from largest window
-- White foam-core board (24x36 in, $8–12 at Michaels, Hobby Lobby, or Target) on shadow side
-- White card or dark velvet as specimen backdrop (2 options for contrast variation)
-- Confirm camera or smartphone at 12MP+; macro clip lens for root detail (optional but useful)
+- Clear kitchen table or work surface; position 3–5 feet from largest east- or south-facing window
+- White foam-core board (24x36 in) on the shadow side as fill reflector
+- Two backdrop options: white card for root and seed props; dark velvet or navy linen for high-contrast leaf shots
+- Confirm camera at 12MP+ minimum; macro clip lens (Moment or Xenvo) optional but recommended for root detail
 
-This is the zero-friction option. The only procurement action is purchasing the foam-core
-board if it is not already in hand.
+**Editing standard**: Exposure +0.2 to +0.4; Contrast +20; Highlights -30; Shadows +20;
+White Balance 5500–6000K; Green Saturation +12; Blue Saturation -10. Export 2400px long
+edge, JPEG 88–90%, 1:1 square crop, to `projects/seedwarden/marketing/lifestyle-photos/etsy-ready/`.
 
-Editing setup: Apply the Seedwarden preset (Exposure +0.2/+0.4, Contrast +20, Highlights
--30, Shadows +20, White Balance 5500–6000K, Green Saturation +12) consistently across all
-frames. Export at 2400px long edge, JPEG 88–90%, 1:1 square crop.
+### 3.3 Option 2 — Asheville Botanical Garden Short-Notice Field Session
 
----
+**Address**: 151 W.T. Weaver Blvd, Asheville, NC 28804  
+**Phone**: 828-252-5190  
+**Email**: info@ashevillebotanicalgarden.org  
+**Cost**: $25 per 2-hour session (1–2 person crew, no anchored equipment); $75–150 full day.  
+**Short-notice path**: Call on May 19 or 20. Request the facility rental coordinator by name.
+Frame as: "1–2 person botanical guide photography session, no anchored lights, 3 hours,
+May 20–22." Small crews are frequently accommodated with 24–72 hour notice even past the
+stated 7-day window.  
+**What it adds**: Naturalistic woodland understory backdrop; colony context shots.  
+**Decision rule**: Worth a 5-minute phone call. If approved, treat as a bonus session. If
+denied, home indoor studio is the confirmed plan with no quality compromise.
 
-### 3.3 Option 2 — Asheville Botanical Garden (Short-Notice Field Session)
+### 3.4 Option 3 — Private Forest Farm via United Plant Savers
 
-**Address**: 151 W.T. Weaver Blvd, Asheville, NC 28804
-**Website**: ashevillebotanicalgarden.org/facility-rental/
-**Phone**: 828-252-5190
-**Email**: info@ashevillebotanicalgarden.org
+**Contact**: info@unitedplantsavers.org; unitedplantsavers.org  
+**Cost**: $0 direct; offer $50–100 honorarium or guide copies to the hosting farmer.  
+**Booking timeline**: 10 days from outreach response. If outreach was sent by May 13, a
+response could arrive by May 19–20.  
+**Alternative contact**: Western NC Botanical Club, wncbotanicalclub.org  
+**Decision rule**: If a confirmed response arrives before May 20 with a date, execute.
+If no response by May 20 end-of-day, home indoor studio is the confirmed and final plan.
+Do not plan the May 20–22 session around an unconfirmed private site access.
 
-**Cost**: $25 per 2-hour session (1–2 person crew, minimal equipment); $75–150 for a full day
-**Standard booking timeline**: 7-day advance notice required for commercial photography
-**Short-notice option**: Call directly and explain the situation. Small 1–2 person crews
-with no anchored equipment are frequently accommodated with 24–72 hour notice. Ask for the
-facility rental coordinator by name. Frame as: "botanical guide photography for a digital
-educational publication; 1–2 people, no anchored lights, 3-hour session, May 20–22."
+### 3.5 Option 4 — Rental Photography Studio (Contingency for Poor Natural Light)
 
-**Capability adds over home studio**: Naturalistic woodland understory backdrop, colony
-context shots, in-situ root collar shots where garden staff permit
-**Capability limitation**: Photography restricted to pathways and non-planted areas under
-commercial permit — photographer brings their own specimens and photographs against the
-woodland backdrop
+If home window light is genuinely insufficient on shoot days (sustained overcast, window
+orientation wrong for botanical work), a rental studio is the fallback.
 
-**Verdict**: Worth a phone call on May 17 or 18. If approved, execute. If denied, home
-studio (Option 1) produces all required guide-interior photography at no loss.
+**Peerspace** (peerspace.com): Search "photography studio Asheville NC." Daylight studios
+with north-facing windows or skylights, $25–75/hour, 2-hour minimum. 24–48 hour booking
+lead time. Request: "Natural light studio with table space; botanical specimen photography;
+1–2 people; no flash."
 
----
+**Giggster** (giggster.com): Same search approach. Typically lower cost than Peerspace for
+smaller markets. Check both platforms and book whichever has confirmed natural light availability
+and faster booking.
 
-### 3.4 Option 3 — Private Forest Farm via United Plant Savers Referral
+**Cost**: $50–150 for a half-day session. Within the 15% contingency budget.  
+**When to book**: Only if May 17 forecast shows 3+ consecutive overcast days covering
+May 19–22. For most Asheville-area homes, the home indoor studio produces equivalent or
+superior results for botanical specimen photography.
 
-**Contact**: info@unitedplantsavers.org
-**Website**: unitedplantsavers.org
-**Address**: UpS Goldenseal Sanctuary, 317 Wesley Chapel Rd, Rutland, OH 45775 (national
-office; regional referrals arranged via email)
+### 3.6 Schedule Impact if Location Flips
 
-**Cost**: $0 direct; offer $50–100 honorarium or guide copies to the hosting farmer as
-reciprocal gift
-**Booking timeline**: 10-day minimum from initial outreach; a May 13 email could yield
-a response by May 18–20 with a confirmed host site
-**Alternative contact**: Western NC Botanical Club, wncbotanicalclub.org — members may
-have private forest farm access or be able to make referrals. Email: contact form on website.
-
-**Capability adds**: Access to private landowner land with authentic in-situ woodland context;
-may include actual wild ginseng or goldenseal growing populations (observe only; do not
-photograph identifiable harvest locations)
-**Access logistics**: Drive time 30–90 minutes from Asheville depending on site; download
-offline maps before departure; cell signal variable on gravel roads; confirm access road
-condition with landowner before departure
-**Permission format**: Email confirmation from landowner is sufficient documentation
-
-**Verdict**: The strongest field option if a response arrives before May 19. If no response
-by May 19, activate home studio. Do not plan the May 20 session around an unconfirmed
-private access.
+| Effect | Field to Indoor | Indoor to Field |
+|--------|----------------|-----------------|
+| Scheduling complexity | Simplified — no travel, weather-independent, any hour | Adds 1–2 hours travel; requires confirmed permit date |
+| Guide-interior photo quality | Equivalent or superior (controlled light, stable specimens) | Adds only naturalistic woodland backdrop |
+| Habitat context | From iNaturalist CC-BY sprint (2–3 hours, any day) | From field session |
+| Launch date risk | Zero | Low — adds logistical variables |
 
 ---
 
-### 3.5 Option 4 — Rental Photography Studio (Asheville Area)
+## Section 4: Critical-Path Compression — Which Guides Compress from 15 to 10 Days
 
-If natural light is insufficient on shoot days (sustained overcast, wrong window orientation),
-a rental studio with controlled lighting is the fallback.
+### 4.1 The Critical Path (May 19–30, 11 Days)
 
-**Option 4A — Local creative studio rental via Peerspace**
+Starting from today (May 19), the remaining production has five phases. Only Phase 5 (Canva
+guide production) is a genuine bottleneck. The other phases can be compressed, parallelized,
+or bypassed with documented fallbacks.
 
-- Website: peerspace.com — search "photography studio Asheville NC" or "creative studio
-  Asheville NC with natural light"
-- Typical offerings in Asheville area: daylight studios with north-facing windows or
-  skylights; industrial loft spaces; craft studio spaces
-- Cost: $25–75/hour for small studio spaces; 2-hour minimum typical; $50–150 for a
-  half-day session
-- Booking timeline: 24–48 hours advance for most listings; some allow same-day booking
-  after direct message to host
-- What to request: "Natural light studio with table space; botanical photography of small
-  specimens and books; 1–2 people, no flash equipment"
-- Verification: Confirm natural light availability and table surface size before booking.
-  Controlled-light studios with only artificial lighting are not suitable substitutes for
-  the Seedwarden window-light preset.
+| Phase | Window | Duration | Compressible? | Method |
+|-------|--------|----------|---------------|--------|
+| Lifestyle photography (Clusters A, B, C) | May 19–23 | 6–8 hours | Yes — single-day execution | Compress all 3 clusters into one 8-hour session |
+| Botanical specimen photography | May 19–22 | 3–6 hours | Yes — indoor studio eliminates travel | Any day May 19–22; 90-min minimum viable shoot |
+| iNaturalist CC-BY sprint | Any day before May 26 | 2–3 hours | Yes — can run in parallel with other tasks | One dedicated sitting; not dependent on physical specimens |
+| Canva Brand Kit + Endangered Species palette | May 24–25 | 45–90 min | Yes — extension is 20 min; fallback is manual hex | Manual hex adds 30–50 min overhead if skipped |
+| Canva guide production + export | May 26–29 | 17–22 hours | Partially — see 4.2 | See compression matrix |
 
-**Option 4B — Giggster rental studio listings**
+### 4.2 Guide-Level Compression Matrix
 
-- Website: giggster.com — same search approach as Peerspace
-- Typically lower cost than Peerspace for small bookings; strong in smaller markets
-- Asheville area listings may be limited; check both platforms and book whichever has
-  confirmed availability and natural light
-
-**Cost summary for studio rental contingency**: $50–150 for a half-day session. This is
-within the 15% contingency budget. Use only if home window light is genuinely insufficient
-(sustained overcast + no south-facing window available). For most Asheville-area homes,
-the home indoor studio (Option 1) produces results that match or exceed a rented studio
-for botanical specimen photography.
-
-**Booking decision rule**: If May 18 weather forecast shows 3+ consecutive overcast days
-covering May 19–22, and home window light is confirmed insufficient, book a Peerspace or
-Giggster studio for May 20 or 21 (the first clear availability). Cancel or rebook if
-forecast clears. Most Peerspace hosts allow same-day cancellation with notice.
-
----
-
-## Section 4: Critical-Path Compression Matrix
-
-### 4.1 Guide-Type by Compression Strategy by Quality Impact
-
-The 15-day production window (May 15–30) has five distinct Canva guide production days
-(May 26–30). Under a compressed 10-day window (May 21–30), the following matrix applies:
+The original 15-day production window (May 15–30) has 5 Canva production days (May 26–30).
+Under a compressed 10-day window (May 21–30), the following applies:
 
 | Guide | Standard Duration | Compressed Duration | Compression Bottleneck | Quality at Compression | Strategy |
-|-------|------------------|--------------------|-----------------------|----------------------|----------|
-| American Ginseng (master template) | 5–6 hours (Day 1) | 5–6 hours (Day 1, no change) | Cannot compress — all design decisions for the series are made here; errors cascade downstream | Full quality; no compression possible without quality risk | Must be completed fully before Day 2 begins. Schedule uninterrupted 6-hour block. |
-| Goldenseal | 3–4 hours (Day 2) | 3–4 hours (Day 2, no change) | Template duplication from Ginseng master is fast; species content substitution is the work | Full quality; no compression needed | Standard pace. The guide is inherently fast once the master exists. |
-| Black Cohosh | 3–4 hours (Day 3) | 2–3 hours combined with partial QA | iNaturalist CC-BY is the complete photo set; no procurement wait; the "95% wild-harvested" callout is text, not photo-dependent | Full quality; compression by 1 hour achievable | Prepare all CC-BY photos in a 45-min session before Day 3 Canva work begins. Eliminates in-session sourcing. |
-| Bloodroot | 2–3 hours (Day 4 AM) | 1.5–2 hours (compressed) | Rhizome cross-section requires same-session photography (30-min oxidation window); if using BHL illustration instead, this constraint disappears | Full quality with BHL illustration. Reduced (minor) if rhizome photo is unavailable and the illustration gap is visible. | Decide on rhizome vs. BHL before Day 4 starts. BHL path is faster and eliminates the oxidation-window scheduling constraint entirely. Pre-load the BHL illustration before Day 4 AM. |
-| Ramps | 2–3 hours (Day 4 PM) | 1.5–2 hours (compressed) | Fresh ramp leaves must be in hand (purchased May 18–19); photography can be batched with other sessions to save setup/teardown time | Full quality if leaves are fresh; iNaturalist CC-BY is adequate fallback if leaves unavailable by Day 4 | Purchase leaves May 18–19 regardless of other sourcing status. Batch Ramps photography with any other May 18–20 session that uses the same window-light setup. |
+|-------|-----------------|--------------------|-----------------------|----------------------|----------|
+| American Ginseng (master template) | 5–6 hours Day 1 | 4–5 hours Day 1 — slight compression only | Cannot compress below 4 hours. All design decisions made here cascade to all 4 subsequent guides. Errors in the master propagate. | 100% at 4–5 hours. Not further compressible without cascade risk. | Prepare all photos and hex codes in a 30-min pre-session before opening Canva. Eliminates all in-session sourcing delays. |
+| Goldenseal | 3–4 hours Day 2 | 2.5–3 hours Day 2 | Template duplication from Ginseng master is fast; the species content substitution is the work. Yellow root cross-section photo must be confirmed before starting. | 100% — compression comes from the template efficiency, not from cutting content | Confirm root cross-section photo is filed before Day 2 starts. No in-session sourcing. |
+| Black Cohosh | 3–4 hours Day 3 | 2–2.5 hours Day 2 PM or Day 3 AM | All photos are iNaturalist CC-BY — pre-download all 4–5 photos before the Canva session. No in-session sourcing. The "95% wild-harvested" callout is text, not photo-dependent. | 100% — compression is possible because this guide has no physical specimen dependency | Execute iNaturalist sprint for Black Cohosh before May 26. Log all photos in WORKLOG.md. Open Canva with all photos ready. |
+| Bloodroot | 2–3 hours Day 4 AM | 1.5–2 hours Day 4 AM — compression by eliminating the rhizome photo constraint | Rhizome cross-section requires same-session photography (30-min oxidation window on shoot day). If using BHL illustration instead, this constraint disappears entirely. | 100% with BHL illustration; minor visual reduction (botany-visible only) if rhizome is unavailable | Decide BHL vs. rhizome before Day 4 starts. BHL path is faster, removes the oxidation-window scheduling constraint, and produces a publishable guide. Pre-download the BHL illustration before Day 4 AM. |
+| Ramps | 2–3 hours Day 4 PM | 1.5–2 hours Day 4 PM — compression by batching photography with another session | Fresh ramp leaves must be in hand (purchased May 18–19); leaf photography can be batched with any other May 18–22 session using the same window-light setup, eliminating per-session setup overhead. | 100% if leaves are fresh and batched photography session completed | Purchase leaves May 18–19 regardless of other sourcing status. Photograph in the same session as botanical specimens. Store refrigerated in damp paper towel until shoot. |
 
-**Maximum daily capacity without quality loss**: 2 guides per day for days 2–4; 1 guide
-for Day 1 (master template). Attempting 3 guides in a single day introduces attribution
-errors, conservation status language drift, and inconsistent formatting. Hold the 2-guide
+**Guides that compress cleanly from 15 days to 10 days (American Ginseng, Goldenseal, Black
+Cohosh)**: All three have fully independent photo sourcing paths. Photos can be confirmed any
+day May 19–25 via local retail, Mountain Rose Herbs, or iNaturalist. Canva production begins
+May 26 with zero open photo questions. These three guides are the 3-guide MVL set.
+
+**Guides that do not compress below their natural constraints (Bloodroot, Ramps)**: Bloodroot
+requires either a rhizome specimen (arrival-dependent) or a BHL illustration decision made in
+advance. Ramps requires fresh leaves (same-day farmers market purchase). Neither can be
+accelerated beyond their natural sourcing events. Both are produceable May 28–29 at full
+quality under the standard 5-day Canva plan.
+
+**Maximum daily production without quality loss**: 1 guide on Day 1 (master template requires
+full design attention — do not attempt Goldenseal the same day as Ginseng master); 2 guides
+on each of Days 2–4. Attempting 3 guides in a single day introduces attribution errors,
+conservation status language drift, and formatting inconsistencies. Hold the 2-guide-per-day
 ceiling regardless of schedule pressure.
-
----
-
-### 4.2 Two-Track Compression (May 28 Parallel Production Day)
-
-Day 3 (May 28) is the one day where parallel production reduces total elapsed time without
-quality risk. Black Cohosh (Canva production) and internal QA on Ginseng + Goldenseal
-(document review) can run in two windows:
-
-- 9:00am–12:30pm: Black Cohosh Canva production (3–4 hours, undivided attention)
-- 12:30pm–2:00pm: Internal QA pass on Ginseng and Goldenseal (1.5 hours, separate window)
-
-This approach absorbs QA into Day 3 rather than requiring a separate Day 5 QA session.
-If Bloodroot and Ramps are completed by May 29 evening, May 30 morning becomes purely
-a final QA and Etsy upload session (2 hours), with no writing required.
-
----
 
 ### 4.3 Emergency 2-Day Compression (If Production Starts May 28)
 
-If Canva production is delayed until May 28 (2-day slip from plan), the following
-emergency compression achieves a 3-guide May 30 launch:
+If Canva production is delayed until May 28 (2-day slip from plan), this emergency schedule
+achieves a 3-guide May 30 launch:
 
-**Day 1 (May 28) — Ginseng master + Goldenseal (8–9 hours total)**:
-- AM session 9am–3pm: Ginseng master template. All design decisions made here.
-- PM session 4pm–7pm: Goldenseal duplication (3–4 hours from the completed Ginseng master).
-  Total: 8–9 hours. Requires full uninterrupted day.
+**Day 1 — May 28 (8–9 hours)**:
+- AM session 9am–3pm: American Ginseng master template (4–5 hours). All design decisions
+  made here. Do not cut short.
+- PM session 4pm–7pm: Goldenseal duplication (3–4 hours from the completed master).
 
-**Day 2 (May 29) — Black Cohosh + QA (5–6 hours total)**:
-- AM session 9am–12pm: Black Cohosh (3–4 hours, all photos pre-confirmed as CC-BY).
+**Day 2 — May 29 (5–6 hours)**:
+- AM session 9am–noon: Black Cohosh (2–2.5 hours, all photos pre-confirmed CC-BY).
 - PM session 1pm–2pm: QA pass on all 3 guides.
 - PM session 2pm–3pm: Etsy drafts finalized for all 3 guides.
 
@@ -541,265 +421,483 @@ emergency compression achieves a 3-guide May 30 launch:
 
 Bloodroot and Ramps defer to June 4. Announce in the Kit launch email: "The complete
 5-guide Appalachian Medicinals collection will be available June 4. The first 3 guides
-are live now."
-
-Quality impact of emergency compression: Full quality for the 3 guides produced. The
-two deferred guides (Bloodroot, Ramps) are produced at normal pace June 1–4.
+are live now." Revenue impact: 8–12% below full-launch baseline; recovered within 5 days
+when the June 4 follow-up Kit broadcast goes out.
 
 ---
 
 ## Section 5: Risk Scoring Matrix
 
-### 5.1 Supplier Delay × Impact × Trigger Threshold
+### 5.1 Full Risk Inventory
 
-| Supplier | Delay Scenario | Probability | Launch Date Impact | Guide Quality Impact | Revenue Impact | Recoverable? | Recovery Time | Activation Trigger |
-|----------|---------------|-------------|-------------------|---------------------|----------------|-------------|--------------|-------------------|
-| Mountain Rose Herbs | No ship by EOD Day 2 post-order | 15% | None | None — local retail equivalent | None | Yes | Same day | No shipping email within 48 hr |
-| Mountain Rose Herbs | Delivery damaged | 5% | None | None | None | Yes | Same day (reorder or local retail) | Damage visible on arrival |
-| Starwest Botanicals (backup) | Out of stock | 5% | None | None | None | Yes | Same day (Bulk Herb Store or local retail) | "Out of stock" on product page |
-| Strictly Medicinal Seeds | Arrives May 24–30 (expected window) | 65% | None | Minimal — no proprietary Black Cohosh habit shot | None | Yes | 2–3 hr iNat sprint | No tracking by May 21 |
-| Strictly Medicinal Seeds | Arrives after May 28 (post-shoot) | 20% | None | Minimal — iNat CC-BY covers the guide | None | Yes | Already resolved by iNat sprint | No tracking by May 21 |
-| Prairie Moon Nursery | Arrives May 24–27 (expected window) | 60% | None | Minimal — fresh ramp leaves from market | None | Yes | Same day (market purchase) | No tracking by May 21 |
-| Prairie Moon Nursery | Arrives May 29+ | 15% | None | Minimal | None | Yes | iNat CC-BY already sourced | No tracking by May 21 |
-| All live plant vendors miss entirely | Total miss, May 20–30 window | 8% | None | Minor — all 5 guides on CC-BY only | None | Yes | 2–3 hr iNat sprint | No tracking from any vendor by May 21 |
-| Canva Brand Kit not set up by May 26 | User gate missed | 10% | None | Minor positioning signal (see Section 2) | ~5% below baseline | Yes — manual hex entry | 30–50 min overhead | Brand Kit not visible in Canva by May 25 EOD |
-| ABG permit + UpS farm both unavailable | Field shoot blocked | 45% | None — indoor studio available immediately | None for guide-interior shots | None | Yes | 15 min indoor setup | No confirmation by May 20 AM |
-| Lifestyle shoot delayed to May 24+ | Shoot missed before production | 10% | None — existing mockups fill listing slots | Minor — mockup vs. lifestyle conversion difference | ~10–20% listing click reduction on slot 4–5 | Yes — post-launch shoot | June 1–7 | No shoot by May 23 |
-| Canva production start delayed to May 28 | 2-day stacked delay | 5% | Partial — 3 guides May 30, 2 guides June 4 | None at completion | Minor — smaller initial bundle | Yes | Emergency 2-day compression | No Canva work by May 27 EOD |
-| Canva production not started by May 29 | Multiple simultaneous failures | 2% | High — June 10 deferred launch | None at June 10 (full quality) | Moderate — 11-day delay | Yes | June 10 full launch | No Canva work by May 28 EOD |
+| Risk ID | Scenario | Probability | Guide Launch Impact | Revenue Impact (30-day vs. baseline) | Recoverable? | Recovery Time | Activation Trigger |
+|---------|----------|-------------|--------------------|------------------------------------|-------------|--------------|-------------------|
+| R-01 | Mountain Rose Herbs: no ship confirmation within 48 hr of order | 15% | Zero | None | Yes | Same day — local retail purchase | No shipping email within 48 hr |
+| R-02 | Mountain Rose Herbs: delivery delayed past May 22 | 8% | Zero | None | Yes | Same day — local retail purchase | No delivery by May 22 EOD |
+| R-03 | Mountain Rose Herbs: delivery damaged | 5% | Zero | None | Yes | Same day — reorder or local retail | Damage visible on arrival |
+| R-04 | Strictly Medicinal Seeds: arrives in expected window May 24–30 | 65% | Zero — expected; iNat sprint covers Black Cohosh regardless | None | Pre-planned | 2–3 hr iNat sprint any day before May 26 | No tracking by May 21 |
+| R-05 | Strictly Medicinal Seeds: arrives after May 28 | 20% | Zero — iNat sprint is complete baseline | None | Yes | Already resolved by pre-May-26 sprint | No tracking by May 21 |
+| R-06 | Prairie Moon Nursery: bare root shipping window closed | 30% | Zero — fresh ramp leaves and iNat cover both species | None | Yes | Same day — farmers market purchase | Call May 19 to confirm |
+| R-07 | Prairie Moon Nursery: arrives May 28+ | 15% | Zero — fresh leaves and iNat already in hand | None | Yes | Already mitigated | No tracking by May 21 |
+| R-08 | All mail-order vendors miss entirely | 5% | Zero — Mountain Rose Herbs local retail + iNat sprint covers all species | None | Yes | 1 day (local retail + sprint) | No tracking from any vendor by May 21 |
+| R-09 | Asheville Botanical Garden permit denied (confirmed) | Confirmed | Zero — indoor studio covers all guide-interior photography | None | Yes — indoor studio pre-activated | 15 min (studio setup) | Already known; indoor studio is the baseline |
+| R-10 | UpS private farm outreach unconfirmed by May 20 | High | Zero — indoor studio is the baseline | None | Yes — same | Immediate if no response by May 20 | No response by May 20 EOD |
+| R-11 | Lifestyle photo shoot delayed past May 23 | 15% | Zero — guide PDFs are independent of listing photos | -8 to -12% on Etsy listing click-through (slot 4–5 only) | Yes — post-launch shoot | Immediate: load mockups from mockups/ directory | No shoot by May 23 |
+| R-12 | iNaturalist CC-BY sprint not completed before May 26 | 10% | Moderate — creates in-session sourcing gaps during Canva production | -3 to -5% (slower Canva sessions) | Yes | 2–3 hr sprint | Sprint not done by May 25 EOD |
+| R-13 | Canva Endangered Species palette extension not configured before May 26 | 20% | Zero — manual hex entry preserves 100% quality | -0 to -3% (positioning signal only) | Yes — manual hex entry (30–50 min overhead) | Not in Brand Kit by May 25 EOD |
+| R-14 | Canva production delayed 1 day — starts May 27 | 10% | Low — 3-guide May 30 launch viable; Bloodroot + Ramps June 4 | -5 to -8% | Yes — 3-guide MVL plan | No Canva work by May 26 EOD → activate 3-guide plan May 27 AM |
+| R-15 | Canva production delayed 2 days — starts May 28 | 5% | Moderate — emergency 2-day compression; 3 guides May 30 | -8 to -12% | Yes — emergency compression | No Canva work by May 27 EOD → emergency compression activated |
+| R-16 | Canva production not started by May 29 | 2% | High — June 10 deferred launch | -20 to -30% | Yes, at full quality June 10 | No Canva work by May 28 EOD → June 10 activated |
+| R-17 | Zone card production not completed by May 25 | 8% | Zero on guide launch; Kit Email 1 delayed 1–3 days | List building delayed 1–3 days | Yes — send zone cards when ready | Zone cards not done by May 25 | TRACK_B_USER_GATES.md |
+| R-18 | Etsy account hold or platform issue on May 30 | 3% | High if unresolved; Gumroad fallback is 15-min activation | -10 to -20% on marketplace switch | Yes — Gumroad fallback | Etsy listings not publishable May 30 AM | PHASE_2_GO_NO_GO_DASHBOARD.md |
+| R-19 | Kit automation not activated by May 29 | 5% | Zero on guide launch; email capture delayed | List building delayed | Yes — Gmail manual broadcast fallback | Kit sequence not "Published" by May 29 | TRACK_B_USER_GATES.md Gate 3 |
 
 ### 5.2 Severity Tiers
 
-**Tier 1 — Zero launch impact (all supply/location failures)**: Every physical specimen
-delay, every location access denial, every live plant procurement miss. All are recoverable
-with documented fallbacks in under 3 hours. Probability of any Tier 1 event occurring: ~80%.
-Probability that a Tier 1 event damages the May 30 launch: 0%.
+**Tier 0 — Zero launch date impact**: R-01 through R-13. All physical specimen delays, all
+location access denials, all live plant procurement misses, all lifestyle photo delays, all
+iNaturalist sprint delays, all Canva palette configuration issues. Every item in this tier is
+recoverable with documented fallbacks in under 3 hours. The collective probability of at least
+one Tier 0 event occurring: approximately 80%. The probability that any Tier 0 event damages
+the May 30 launch: 0%.
 
-**Tier 2 — Partial launch impact (Canva production delays)**: A 1–2 day slip in Canva
-start date results in a 3-guide May 30 launch and a June 4 full-collection completion.
-May 30 marketing event proceeds. Probability: ~5%.
+**Tier 1 — Minor impact** (R-14): A 1-day Canva start slip (May 27 instead of May 26)
+produces a 3-guide May 30 launch and June 4 full-collection completion. The May 30 marketing
+event — Kit broadcast, social posts, Etsy debut — proceeds in full. Revenue impact: 5–8%
+below baseline. Probability: 10%.
 
-**Tier 3 — Full launch impact (Canva production not started by May 29)**: Requires
-simultaneous failure of all pre-production tracks. Probability: ~2%. Response: June 10
-deferred launch; all 5 guides at full quality; Kit broadcast date update.
+**Tier 2 — Moderate impact** (R-15): A 2-day slip requires emergency compression. 3 guides
+May 30, 2 guides June 4. Revenue impact: 8–12% below baseline. Probability: 5%.
 
----
+**Tier 3 — Full launch impact** (R-16): Canva not started by May 29 end-of-day. Requires
+simultaneous failure of all pre-production tracks AND failure to execute any of the
+iNaturalist or local retail fallbacks. Probability: 2%. Response: June 10 full launch at
+100% quality.
 
-## Section 6: Decision Checklist — Specific Decision Points With Under-15-Minute Activation
-
-### How to Use This Checklist
-
-Run each gate check on the specified date. Each check takes 2–5 minutes. If a check fails,
-the contingency reference is listed beside it. Total time for a failed check plus contingency
-activation: under 15 minutes.
-
-**WORKLOG.md entry format for any activated contingency:**
-`[DATE] — CONTINGENCY ACTIVATED: [Vendor/scenario] — [Failure type] — [Fallback path] — [Action taken] — [Revised milestones if any]`
-
----
-
-### May 18 (Today) — Specimen and Location Check
-
-- [ ] Check Mountain Rose Herbs order. Order deadline was May 15. No shipping confirmation?
-  If YES: Call 503-549-9559 now. If not shipped: place Starwest Botanicals order (starwest-botanicals.com)
-  immediately. Expected arrival window is May 17–21; if Mountain Rose cannot confirm by May 21,
-  activate local retail fallback same day. Contingency: Section 1.1 Backup A.
-- [ ] Check Strictly Medicinal Seeds order status. Expected arrival window May 24–30.
-  If no order confirmation exists: place order today. If projected arrival after May 28:
-  begin iNaturalist CC-BY Black Cohosh sprint this week. Contingency: Section 1.2.
-- [ ] Check Prairie Moon Nursery order. Expected arrival window May 24–27.
-  If no order confirmation exists: place order today. If arrival projected after May 28:
-  purchase fresh ramp leaves this week (May 18–19) and begin iNaturalist CC-BY Trillium
-  sprint. Contingency: Section 1.2.
-- [ ] Purchase fresh ramp leaves today or May 19 regardless of Prairie Moon status.
-  Refrigerate in damp paper towel immediately. Photograph within 24 hours of purchase.
-- [ ] Confirm foam-core board (24x36 in) is in hand or purchase today.
-  Indoor studio is pre-activated from this date. Run 1 test frame and log in WORKLOG.md.
-- [ ] Check Asheville Botanical Garden permit status. Not confirmed?
-  If YES: Call 828-252-5190 on May 19. Ask for facility rental coordinator. Short-notice
-  approval is possible. If denied: Option 1 (home indoor studio) is activated.
+**The critical observation**: Tier 3 requires every single Tier 0 fallback to also fail
+simultaneously. This is not a realistic scenario given the number of independent fallback
+paths. The dominant risk is Tier 1 or Tier 2, both recoverable with a 3-guide May 30 launch
+and June 4 completion. A Tier 1 or Tier 2 outcome is not a failure.
 
 ---
 
-### May 19 — Vendor Escalation Gate
+## Section 6: Timeline Recovery Options — Best / Medium / Worst Scenarios
 
-- [ ] If Strictly Medicinal Seeds has not confirmed an order or a ship date: place order
-  today if not already placed. Projected arrival window is May 24–30; if no confirmation by
-  May 21, activate iNaturalist CC-BY sprint for Black Cohosh. Do not wait for physical specimen.
-- [ ] If Prairie Moon Nursery has not confirmed an order or a ship date: place order today
-  if not already placed. Projected arrival window is May 24–27; confirm ramp leaves are
-  purchased and refrigerated as parallel track; activate iNaturalist CC-BY sprint for Trillium.
-- [ ] If both vendors show no tracking by EOD May 21: search Etsy for Brushwood Nursery or
-  native plant sellers (Section 1.2 Backup A). Place Etsy seller order same day if physical
-  specimens are still desired.
-- [ ] Asheville Botanical Garden call placed? If no permit by May 19 EOD: activate
-  home indoor studio. Log in WORKLOG.md: "Indoor studio activated. Field location unavailable."
+### 6.1 Best Case — All Suppliers On Time, Canva Starts May 26
+
+**Probability**: approximately 40%
+
+**Conditions**:
+- Mountain Rose Herbs roots confirmed in hand or photographed by May 22
+- Strictly Medicinal Seeds Black Cohosh arrives May 24–26 (expected window)
+- Prairie Moon Nursery order confirmed, or fresh ramp leaves purchased May 18–19
+- Lifestyle shoot completed May 19–23
+- iNaturalist CC-BY sprint completed for all 5 species by May 24
+- Canva Endangered Species palette extension configured May 24–25
+- Canva guide production starts May 26 as scheduled
+
+| Date | Milestone |
+|------|-----------|
+| May 19 (today) | Gate 1 + Gate 2 resolved. Indoor studio activated. iNat sprint queued for this week. |
+| May 19–22 | Botanical specimen photography — indoor studio session; minimum viable shoot: 4 shots (ginseng root intact + cross-section; goldenseal root misted; fresh ramp leaves) |
+| May 20–23 | Lifestyle shoot Clusters A+B+C — can combine into single 6–8 hour session |
+| May 21–24 | iNaturalist CC-BY sprint — all 5 species, 3–5 images each, all attributions logged in WORKLOG.md |
+| May 22 | Mountain Rose Herbs roots in hand (if not already); photographed and filed to assets directory |
+| May 24–25 | Canva: Endangered Species palette extension added (20 min); zone card production (7.5 hours across 2 days) |
+| May 25 | Supply Chain All-Clear Gate — all photo sourcing confirmed or fallbacks logged; no open questions |
+| May 26 | Canva Day 1: American Ginseng master template (4–5 hours). Etsy draft listings started for all 5 guides. |
+| May 27 | Canva Day 2: Goldenseal guide. Kit launch broadcast drafted and staged for May 30 12:00pm. |
+| May 28 | Canva Day 3: Black Cohosh + internal QA on first 3 completed guides. Etsy draft listings populated. |
+| May 29 | Canva Day 4: Bloodroot + Ramps sprint. All 5 guides exported as final PDFs. |
+| May 29, 8:00pm | Go/No-Go audit: 5 checks pass; launch status GREEN. |
+| May 30, before 10:00am | Final QA + attribution check + Etsy publish all listings. |
+| May 30, 10:00am | Etsy listings live — all 5 Appalachian Medicinals guides + bundle listing. |
+| May 30, 12:00pm | Kit launch broadcast sends to all subscribers. |
+| May 30, 2:00–4:00pm | Social posts publish (Instagram, TikTok, Pinterest). |
 
 ---
 
-### May 20 — Location Final Decision Gate
+### 6.2 Medium Case — 1–2 Delays of 3–5 Days, Canva Starts May 27
 
-- [ ] Field location status: Confirm or deny. Decision is irreversible after today.
-  ABG confirmed? Proceed with field session May 20–22.
-  ABG denied AND UpS farm confirmed? Proceed with private farm session.
-  Neither confirmed? Home indoor studio is active. Begin Appalachian botanical session today
-  using indoor setup. Do not wait another day.
-- [ ] Live plants in hand (Black Cohosh from any vendor, or confirmed iNat CC-BY)?
-  If YES: begin 48-hour acclimatization countdown for any live plant specimens.
+**Probability**: approximately 45% — the most likely outcome given current timeline state
+
+**Trigger conditions**: Any combination of the following, where iNaturalist fallbacks absorb
+the physical specimen delays but consume 1–2 days of pre-production buffer:
+- Live plants (Strictly Medicinal, Prairie Moon) arrive May 25–28 instead of May 24
+- Lifestyle photo shoot pushed to May 22–24
+- Canva Endangered Species palette extension not configured until May 26 (adds 30–50 min
+  overhead to Canva Day 1, effectively consuming the buffer)
+- Zone card production not complete until May 26 (delays Kit Email 1 only, not guide launch)
+
+**Impact**: Canva production start slips to May 27. Under the compressed 3-day schedule
+(see Section 4.3), 3 guides (Ginseng, Goldenseal, Black Cohosh) complete by May 29 evening.
+Bloodroot and Ramps complete June 1–4. The May 30 marketing event proceeds in full.
+
+**Customer messaging**: No customer sees this as a partial launch. Etsy listing copy for
+Bloodroot and Ramps reads: "Part of the Appalachian Medicinals series — full 5-guide
+collection available June 4." Kit launch email: "The first 3 guides in the Appalachian
+Medicinals series are live today. Bloodroot and Ramps complete the collection June 4."
+
+| Date | Milestone | Adjustment from Best Case |
+|------|-----------|--------------------------|
+| May 21–24 | iNaturalist CC-BY sprint — this is the primary photo source; no dependency on physical specimen arrivals | iNat sprint absorbs all late-arriving vendor delays |
+| May 24–26 | Live plant photography when specimens arrive; batch with indoor studio session if already scheduled | 2–4 days later than best case; iNat covers the gap |
+| May 27 | Canva production begins: American Ginseng master (4–5 hours) | 1 day later than best case |
+| May 28 | Goldenseal (2.5–3 hours AM) + Black Cohosh (2–2.5 hours PM) — double guide day | Compressed double-guide day — achievable if photos pre-confirmed |
+| May 29 | Internal QA on all 3 guides (1.5 hours); Etsy drafts finalized; Bloodroot deferred to June 1; Ramps deferred to June 4 | Bloodroot and Ramps confirmed deferred; Kit broadcast copy updated |
+| May 29, 8:00pm | Go/No-Go audit: at least 3 guides export-ready; proceed |  |
+| May 30 | 3 guides live on Etsy; Kit broadcast sends "3 guides now, full collection June 4" | June 4 follow-up Kit broadcast pre-staged |
+| June 1–4 | Bloodroot + Ramps produced and published; June 4 follow-up Kit broadcast sends | Revenue fully recovered by June 5 |
+
+**Revenue impact**: 5–8% below full-launch baseline in Week 1. The June 4 follow-up Kit
+broadcast to existing subscribers acts as a second launch event and recovers the delta.
+
+---
+
+### 6.3 Worst Case — Multiple Stacked Delays, Canva Starts May 28 or Later
+
+**Probability**: approximately 2%
+
+**Conditions**: Canva production cannot start before May 28 due to multiple simultaneous
+failures consuming all pre-production time. This scenario requires at least 3 of the
+following to fail simultaneously without using their documented fallbacks: lifestyle shoot,
+botanical photography, iNaturalist sprint, Canva Brand Kit setup. Given that the iNaturalist
+sprint can be executed in 2–3 hours on any day from any device with internet access, this
+scenario requires an extreme combination of events.
+
+**Response**:
+
+| Date | Milestone |
+|------|-----------|
+| May 28 | Decision made at 9:00am if no Canva work started by May 27 EOD. Activate 2-day emergency compression. |
+| May 28, AM | Canva Day 1: American Ginseng master only (4–5 hours — do not compromise) |
+| May 28, PM | Goldenseal duplication (3–4 hours from Ginseng master) |
+| May 29, AM | Black Cohosh (2–2.5 hours; all photos pre-confirmed CC-BY from iNat sprint) |
+| May 29, PM | QA pass on 3 guides; Etsy drafts finalized; 2–3 guides exported as PDFs |
+| May 29, 5:00pm | If 2+ guides exported: May 30 minimum viable launch proceeds |
+| May 30, 10:00am | 2–3 guides live on Etsy; Kit broadcast sends |
+| May 30, 12:00pm | Kit broadcast: "2 guides live now, full 5-guide collection June 10" |
+| June 3–9 | Bloodroot, Ramps, and any missing guides produced at standard pace |
+| June 10 | Full 5-guide collection live; follow-up Kit broadcast |
+
+**If no Canva work by May 28 EOD**: June 10 full launch. Decision locked by May 28 at 5:00pm.
+Update Kit broadcast scheduled send date from May 30 to June 10. Update all social posts.
+The June 10 launch is not a failure — it is 11 days of additional Canva production from
+May 30, more than enough for 5 guides at full quality.
+
+**What is preserved in June 10 launch**: Full guide quality. Conservation narrative accuracy.
+iNaturalist attribution completeness. The Appalachian Medicinals series is as strong on
+June 10 as it would have been on May 30.
+
+**What is lost**: The Kit broadcast date window. Approximately 20–30% of first-30-day revenue
+is driven by the urgency of the launch email. A 10-day delay reduces this window's
+effectiveness. Recoverable through post-launch social content and future broadcasts over
+the following 60 days.
+
+---
+
+### 6.4 Launch Scope vs. Revenue Summary
+
+| Launch Configuration | Guides Live May 30 | Revenue Impact Week 1 | June Completion |
+|--------------------|-------------------|----------------------|-----------------|
+| Full launch (5 guides, full palette, proprietary photos) | 5 | Baseline | N/A |
+| 3-guide MVL May 30 + 2 guides June 4 | 3 | -5 to -8% | June 4: 2 guides |
+| 2-guide MVL May 30 + 3 guides June 10 | 2 | -10 to -15% | June 10: 3 guides |
+| Full launch with existing Canva palette (no Endangered Species extension) | 5 | -3 to -5% | N/A |
+| Full launch with 100% CC-BY photos (no proprietary specimens) | 5 | -0 to -3% | N/A |
+| Full launch with mockup listing images (no lifestyle photos) | 5 | -8 to -12% on listing click-through | Lifestyle shoot June 1–7 |
+| June 10 deferred full launch | 5 | -20 to -30% (Kit momentum window lost) | June 10 |
+
+**Key insight**: Any launch configuration on May 30 — even 2 guides with 100% CC-BY photos
+and mockup listing images — outperforms a June 10 full launch by 10–20% on first-30-day
+revenue, because the Kit broadcast date drives the email open rate window. Moving the
+broadcast date destroys that window. Moving the guide count does not.
+
+---
+
+## Section 7: Decision Checklist — Date-Stamped, Under-15-Minute Activation
+
+Run each gate check on the specified date. Each check takes 2–5 minutes. A failed check
+plus contingency activation takes under 15 minutes.
+
+**WORKLOG.md entry format for any activated contingency**:
+```
+[DATE] — CONTINGENCY ACTIVATED: [Vendor/Scenario name]
+  Failure type: [What happened]
+  Trigger threshold: [What metric crossed the threshold]
+  Fallback path: [Which fallback was selected]
+  Action taken: [Specific action + time executed]
+  Revised milestones: [Any date changes — or "none, launch date unaffected"]
+```
+
+---
+
+### May 19 (Today) — Activation Gate
+
+- [ ] Confirm or place Mountain Rose Herbs order for ginseng + goldenseal dried roots.
+  Call 503-549-9559 if no order confirmation exists. If not shipped within 48 hours of
+  order: activate Starwest Botanicals (starwest-botanicals.com) same day. Log in WORKLOG.md.
+
+- [ ] Call Prairie Moon Nursery at 866-417-8156 to confirm whether bare root order placed
+  after May 15 is still shippable. If not: purchase fresh ramp leaves today or tomorrow
+  at farmers market or specialty grocery. Refrigerate in damp paper towel immediately.
+  Log decision in WORKLOG.md.
+
+- [ ] Confirm Strictly Medicinal Seeds order placed. If not: place today. Expected arrival
+  May 24–30. iNaturalist CC-BY sprint for Black Cohosh is the parallel path regardless of
+  order status — begin sprint this week.
+
+- [ ] Activate home indoor studio: confirm foam-core board on hand ($8–12 at Michaels if
+  not). Run 1 test frame today or tomorrow. Review at 100% zoom to confirm focus and exposure.
+  Log in WORKLOG.md: "Indoor studio activated [date]. Test frame reviewed."
+
+- [ ] Send United Plant Savers outreach email (info@unitedplantsavers.org) if not already
+  sent. Subject: "Request for private farm photography access — botanical guide project."
+  Do not plan the May 20 session around an unconfirmed response.
+
+- [ ] Call Asheville Botanical Garden (828-252-5190) to ask about short-notice accommodation
+  for a 1–2 person botanical photography session May 20–22. If denied: home indoor studio
+  is the confirmed plan. Log outcome in WORKLOG.md.
+
+- [ ] Schedule the lifestyle photo shoot — commit to a specific date May 19–23. Block
+  calendar time (6–8 hours for all 3 clusters in one session, or 2 sessions of 3–4 hours).
+
+- [ ] Gate 1 + Gate 2 confirmed resolved today: log in WORKLOG.md.
+  Update TRACK_B_GATE_COMPLETION_VERIFICATION.md with completion dates and handles.
+
+---
+
+### May 20 — Location and Vendor Escalation Gate
+
+- [ ] Field location final decision: if ABG and UpS farm are both unconfirmed by 8:00am,
+  home indoor studio is the confirmed plan. Log in WORKLOG.md:
+  "Indoor studio confirmed as final plan — no field location available for May 20–22 window."
+
+- [ ] Fresh ramp leaves: confirm purchased (May 18–19 target). If not purchased yet: buy
+  today without fail — ramp season is ending. Refrigerate immediately.
+
+- [ ] Mountain Rose Herbs tracking: shipping confirmation received? If not: call 503-549-9559.
+  If not shipped: place Starwest Botanicals order same day (Section 1.1 Backup A).
 
 ---
 
 ### May 21 — iNaturalist Sprint Gate
 
-- [ ] Are iNaturalist CC-BY photos downloaded and logged for all 5 species in the guide set?
-  If any species is missing: execute sprint section for that species today (30–45 min per
-  species). Do not enter Canva production week (May 26) with open photo sourcing gaps.
-- [ ] iNaturalist license check: Confirm all downloaded photos are CC-BY (not CC-BY-NC).
-  The default iNaturalist license is CC-BY-NC (non-commercial); must filter explicitly.
-  Filter: add `&license=CC-BY` to the observation URL. Re-verify any photo where the
-  license is ambiguous.
+- [ ] Begin or complete iNaturalist CC-BY sprint. Target: all 5 species (Ginseng, Goldenseal,
+  Black Cohosh, Ramps, Bloodroot), 3–5 images each, all CC-BY license verified (not CC-BY-NC).
+  Log every photo in WORKLOG.md with: observer name, iNaturalist observation URL, license
+  type, access date.
+
+- [ ] Strictly Medicinal Seeds: tracking number received? If not: confirm iNaturalist CC-BY
+  is the photo path for Black Cohosh. No action required beyond what is already logged.
+
+- [ ] Prairie Moon Nursery: tracking number received? If not: confirm fresh ramp leaves are
+  the Ramps prop + iNaturalist CC-BY for Trillium.
 
 ---
 
-### May 22 — Mountain Rose Herbs Tracking Gate
+### May 22 — Mountain Rose Herbs Final Gate
 
-- [ ] Dried roots (ginseng, goldenseal) should be in hand from Mountain Rose Herbs by
-  May 15. If still not arrived by May 22: execute local retail purchase same day.
-  Korean grocery (ginseng) + Whole Foods / co-op (goldenseal) or Starwest via Amazon Prime.
-  Photograph specimens within the same session as purchase.
-- [ ] If Starwest Botanicals backup order was placed: confirm expected delivery date.
-  If after May 25: local retail purchase today. Do not wait for Starwest.
+- [ ] Mountain Rose Herbs roots: in hand? If YES — photograph immediately (ginseng intact root
+  + cross-section; goldenseal dry then mist lightly, photograph within 5 minutes).
+  If NO AND no tracking showing delivery today or tomorrow: execute local retail purchase
+  same day. Korean grocery (ginseng root) + Whole Foods / co-op (goldenseal).
+  Photograph specimens in the same session as purchase. Log in WORKLOG.md.
 
----
-
-### May 24 — Canva Brand Kit Gate
-
-- [ ] Complete Canva Brand Kit "Endangered Species Series" palette setup today.
-  Hex codes: #1C2B1A, #3B2A1A, #F0E6C8, #7A9A6E, #F5F1E8, #8B2000, #C49A2A.
-  Reference: CANVA_ENDANGERED_SPECIES_STYLE_GUIDE.md. Estimated time: 45–90 minutes.
-- [ ] Build zone-card master template after Brand Kit setup (1–2 hours). Both in same session.
-- [ ] Brand Kit not completable today?
-  Log decision in WORKLOG.md: "Manual hex entry confirmed for May 26 production."
-  Add 30–50 minutes to each production day's time estimate.
+- [ ] Lifestyle photo shoot: completed? If not: today or May 23 is the final window before
+  the launch flips to mockup-only for listing images. If not completable by May 23: load
+  mockup images as Etsy listing slots 4–5 and schedule lifestyle shoot June 1–7.
 
 ---
 
-### May 25 — Supply Chain All-Clear Gate (Final Decision Day)
+### May 24 — Canva Production Prep Gate
 
-No open procurement questions should survive past this date. Every item below must resolve
-to YES or to a documented fallback before May 26 Canva production begins.
+- [ ] Add Endangered Species palette extension to Canva Brand Kit (20 minutes). Hex codes
+  documented in Section 2.2 above. Do this before zone card production begins.
 
-- [ ] Mountain Rose Herbs dried roots: photographed and filed to assets directory. YES / NO + fallback logged.
-- [ ] Black Cohosh: live plant photographed OR iNat CC-BY photos in WORKLOG.md. YES / NO + fallback logged.
-- [ ] Ramps: fresh leaves photographed OR iNat CC-BY woodland emergence confirmed. YES / NO + fallback logged.
-- [ ] Trillium: arrived and photographed OR iNat CC-BY confirmed. YES / NO + fallback logged.
-- [ ] Bloodroot: rhizome photographed OR iNat CC-BY + BHL illustration confirmed. YES / NO + fallback logged.
-- [ ] Wild Bergamot: live plant photographed OR iNat CC-BY confirmed. YES / NO + fallback logged.
-- [ ] CC-BY license verification: all sourced iNat photos confirmed CC-BY (not CC-BY-NC). YES.
-- [ ] Canva Brand Kit: complete OR manual hex entry confirmed in WORKLOG.md. YES.
-- [ ] Kit launch broadcast: drafted and staged for May 30 12:00pm send. YES.
-- [ ] Etsy draft listings: all 5 guides + bundle listing in Draft status with title, price,
-  description, and PDF attached (or ready to attach May 30 AM). YES.
+- [ ] Begin zone card production (7.5–9 hours across May 24–25). Brand Kit confirmed active
+  (Gate 2 complete). Zone card content is ready in CANVA_ZONE_CARD_BATCH_WORKFLOW.md.
+  Design specs in CANVA_ZONE_CARD_DESIGN_GUIDE.md.
 
-If any item is NO on May 25: resolve it using the documented fallback before end-of-day.
-The May 26 Canva session starts with zero open procurement questions. This is the rule.
+- [ ] Palette extension not completable today: log in WORKLOG.md — "Manual hex entry confirmed
+  for May 26 production." Add 30–50 minutes to each Canva production day's time estimate.
 
 ---
 
-### May 26 — Production Start Gate
+### May 25 — Supply Chain All-Clear Gate (Final Decision Day Before Canva)
 
-- [ ] Begin American Ginseng master template. All design decisions made today propagate
-  to all four subsequent guides. Do not start until all Ginseng photos are confirmed.
-- [ ] Cannot start Canva production today due to an unresolved blocker?
-  Identify the specific blocker. 2-hour resolution window. If unresolvable in 2 hours:
-  activate 3-guide May 30 plan. Log in WORKLOG.md. Proceed with Ginseng + Goldenseal + Black
-  Cohosh production starting today; defer Bloodroot + Ramps to June 4.
+All photo sourcing must be resolved before this date. No open questions survive to May 26
+Canva production. Check each item. If any item is NO: resolve using documented fallback
+before end-of-day.
+
+- [ ] Ginseng: dried root photographed and filed to assets directory. YES / fallback logged.
+- [ ] Goldenseal: yellow root cross-section photographed and filed. YES / fallback logged.
+- [ ] Black Cohosh: live plant photographed OR iNaturalist CC-BY photos in WORKLOG.md. YES.
+- [ ] Ramps: fresh leaf photograph OR iNaturalist CC-BY woodland emergence confirmed. YES.
+- [ ] Bloodroot: rhizome photographed OR BHL illustration pre-downloaded + iNat CC-BY confirmed. YES.
+- [ ] Wild Bergamot: live plant photographed OR iNaturalist CC-BY confirmed. YES.
+- [ ] All iNat CC-BY license checks: every downloaded photo verified CC-BY (not CC-BY-NC). YES.
+- [ ] Zone cards: 8 PDFs in assets/zone-cards/; all Google Drive links tested in incognito. YES.
+- [ ] Canva Brand Kit: Endangered Species palette active OR manual hex entry confirmed in WORKLOG.md. YES.
+- [ ] Kit launch broadcast: drafted and staged for May 30, 12:00pm. YES.
+- [ ] Etsy draft listings: all 5 guides + bundle listing in Draft status, with title, price,
+  description. YES.
+
+**If any item is NO at May 25 end-of-day**: Execute the documented fallback immediately.
+The May 26 Canva session starts with zero open procurement questions. This is non-negotiable.
 
 ---
 
-### May 27 — Production Checkpoint (End of Day)
+### May 26 — Production Start Gate (Highest-Stakes Date)
 
-- [ ] Is at least 1 guide (American Ginseng) fully export-ready or nearly complete by EOD?
-  YES: Proceed on schedule. Goldenseal tomorrow.
-  NO: Activate 3-guide emergency compression (Section 4.3). Log in WORKLOG.md.
-  Notify no one externally yet — the May 30 event proceeds.
+- [ ] Begin American Ginseng master template. All photos confirmed and filed. All hex codes
+  noted. Open Canva with everything ready. Do not start Day 1 without confirming the Ginseng
+  root photo is in the assets directory.
+
+- [ ] If an unresolved blocker prevents starting today: identify the specific blocker.
+  Allow a 2-hour resolution window. If unresolvable in 2 hours: activate 3-guide May 30 plan.
+  Log in WORKLOG.md: "3-guide MVL plan activated. Ginseng + Goldenseal + Black Cohosh
+  targeting May 30. Bloodroot + Ramps targeting June 4."
+
+- [ ] Create Etsy draft listings for all 5 guides + bundle listing alongside Day 1 Canva work.
+  A title, description, and price can be entered in 15–20 minutes per guide — do not leave
+  listing setup entirely to May 30 morning.
 
 ---
 
-### May 29 — Go/No-Go Decision Gate (8:00pm)
+### May 27 — Production Checkpoint
 
-Work through these 5 checks in sequence. Target: all checked by 8:30pm.
+- [ ] End-of-day check: Is at least 1 guide (American Ginseng) export-ready or in its final
+  hour of Canva work?
+  YES: Proceed on schedule — Goldenseal tomorrow.
+  NO: Activate emergency 3-day compression (Section 4.3). Log in WORKLOG.md.
+  The May 30 launch proceeds with 3 guides.
 
-1. Are at least 2 Phase 2 guide PDFs exported and attached to Etsy draft listings?
-   YES → continue. NO → slip to June 10; log in WORKLOG.md; update Kit broadcast date.
+- [ ] Kit launch broadcast: drafted and staged for May 30, 12:00pm? YES — do not leave this
+  to May 29. If yes: review copy to ensure guide count is accurate for the likely launch scope.
 
-2. Is the Kit launch broadcast staged for May 30 12:00pm send?
-   YES → continue. NO (broadcast not staged) → stage it now, 30 minutes.
-   NO (Kit account does not exist) → fallback to Gmail manual broadcast at 12pm.
+---
 
-3. Are Etsy draft listings in Draft status with prices, descriptions, and guide PDFs attached?
-   YES → continue. NO → fix before 11:00pm. If cannot fix → slip to June 10.
+### May 28 — QA and Final Production Gate
 
-4. Are Google Drive zone card links accessible from an incognito browser window?
-   YES → continue. NO → fix Drive sharing permissions now (5-minute fix). Retest.
+- [ ] Internal QA pass on all completed guides: conservation status language accuracy; photo
+  attribution completeness per WORKLOG.md entries; no placeholder text remaining (search
+  "TBD," "INSERT," "[Name]" across all completed PDFs).
 
-5. Is at least 1 social post staged (Buffer/Later scheduled, or manual file + caption ready)?
-   YES → launch is GO. NO → pull mockup from `mockups/`; write caption from
-   `phase-2-social-content-calendar-60day.md`; queue for manual May 30 2:00pm post.
+- [ ] Etsy draft listings: all completed guides have populated titles, descriptions, prices,
+  and PDF files attached (or staged to attach May 30 AM).
 
-**If all 5 pass**: Launch proceeds May 30. Close this document.
-**If check 1 fails**: June 10 launch. No other check matters.
-**If checks 2–5 fail**: Execute same-day fixes (all resolvable within 1 hour if discovered
-by 9:00pm). No checks 2–5 failure triggers a date change.
+- [ ] If Canva production has not started and today is May 28: this is the absolute final day
+  for emergency compression (Section 4.3). Decision: if no Canva work complete by May 28
+  at 5:00pm, activate June 10 deferred launch. Update Kit broadcast date. Log in WORKLOG.md.
+
+---
+
+### May 29, 8:00pm — Go/No-Go Audit (5 Checks)
+
+Work through these 5 checks in sequence. Target: all completed by 8:30pm.
+
+**Check 1**: Are at least 2 Phase 2 guide PDFs exported and attached to Etsy draft listings?
+- YES: Continue to Check 2.
+- NO: Slip to June 10. Log in WORKLOG.md. Update Kit broadcast scheduled send date.
+  No other check matters if Check 1 fails.
+
+**Check 2**: Is the Kit launch broadcast staged for May 30, 12:00pm?
+- YES: Continue to Check 3.
+- NO (not staged): Stage it now — 30 minutes.
+- NO (Kit account does not exist): Fallback to Gmail manual broadcast at 12pm.
+  Draft the email now; it is in TRACK_B_EMAIL_STAGING.md.
+
+**Check 3**: Are Etsy draft listings in Draft status with prices, descriptions, and PDFs attached?
+- YES: Continue to Check 4.
+- NO: Fix before 11:00pm tonight. If cannot fix: slip to June 10.
+
+**Check 4**: Are Google Drive zone card links accessible from an incognito browser window?
+- YES: Continue to Check 5.
+- NO: Fix Drive sharing permissions now. Change to "Viewer, anyone with link." Retest in
+  incognito. This is a 5-minute fix.
+
+**Check 5**: Is at least 1 social post staged (Buffer/Later scheduled, or manual file + caption ready)?
+- YES: Launch is GO.
+- NO: Pull a mockup image from `projects/seedwarden/mockups/`; write a caption from
+  `phase-2-social-content-calendar-60day.md` Day 30 section; queue for manual post at 2pm
+  May 30. This takes 15 minutes.
+
+**If all 5 pass**: Launch proceeds May 30 per `may-30-launch-sequence.md`.  
+**If Check 1 fails**: June 10 launch. Close this document.  
+**If Checks 2–5 fail**: Execute same-day fixes. All resolvable within 1 hour if discovered
+by 9:00pm. No Check 2–5 failure triggers a date change.
 
 ---
 
 ### May 30, 8:00am — Final Pre-Launch Verification
 
-- [ ] Run minute-by-minute verification from `may-30-launch-sequence.md`
+- [ ] Run the minute-by-minute verification from `may-30-launch-sequence.md`.
 - [ ] If Etsy listings are not publishable due to a platform issue: activate Gumroad fallback
-  from `PHASE_2_GO_NO_GO_DASHBOARD.md` Contingency Tree B (15-minute setup)
-- [ ] Confirm Kit broadcast is still staged for 12:00pm (check Kit dashboard)
-- [ ] Social posts confirmed scheduled or manual post files ready
+  from `PHASE_2_GO_NO_GO_DASHBOARD.md` Contingency Tree B (15-minute setup at gumroad.com,
+  wanka95@gmail.com; update Kit broadcast links to Gumroad URLs).
+- [ ] Confirm Kit broadcast is staged for 12:00pm. Check Kit dashboard.
+- [ ] Social posts confirmed scheduled in Buffer/Later, or manual post files ready.
 
 ---
 
-## Confidence Assessment and User-Input Gaps
+## Vendor Quick-Reference Card
 
-**Confidence: 90%+** on all documented fallbacks. Every contingency path above has been
-cross-verified against existing project documentation (vendor details, lead times, taxon
-IDs, palette hex codes, Canva production estimates).
-
-**Gaps that require user input before May 25:**
-
-1. Current order status for Mountain Rose Herbs, Strictly Medicinal Seeds, Prairie Moon
-   Nursery — whether orders have been placed and whether tracking numbers are confirmed.
-   These are the highest-leverage pieces of information currently unknown.
-
-2. Whether the Asheville Botanical Garden permit was submitted on or before May 12, or
-   whether a short-notice call has been placed. If neither has occurred, Option 1 (home
-   indoor studio) should be treated as confirmed-active immediately.
-
-3. Status of the Canva Brand Kit "Endangered Species Series" palette setup. If already
-   complete, Section 2 gates are closed.
-
-4. Whether the lifestyle photo shoot (Clusters A, B, C) has been executed. If complete,
-   the listing enhancement image track is resolved.
-
-These four questions, once answered, close the last open probability ranges in the risk
-matrix above and allow the contingency document to operate with 98%+ confidence.
+| Slot | Primary | Backup A | Backup B | Fallback |
+|------|---------|----------|----------|---------|
+| Dried ginseng root | Mountain Rose Herbs 503-549-9559 | Starwest Botanicals 800-800-4372 | Bulk Herb Store 877-278-4257 | Korean grocery or Amazon Prime same/next day |
+| Dried goldenseal root | Mountain Rose Herbs 503-549-9559 | Starwest Botanicals 800-800-4372 | Whole Foods / co-op bulk herbs | Amazon Prime |
+| Black Cohosh live plant | Strictly Medicinal Seeds 541-846-6704 | Brushwood Nursery 706-245-4276 | Etsy native plant sellers | iNaturalist CC-BY taxon ID 78781 |
+| Ramps (bulblets) | Prairie Moon Nursery 866-417-8156 | Etsy "ramps bulbs cultivated" | WNC Botanical Club | Farmers market fresh leaves (preferred prop) |
+| Trillium bare root | Prairie Moon Nursery 866-417-8156 | Etsy "trillium grandiflorum live" | NC Native Plant Society chapter sale | iNaturalist CC-BY taxon ID 60222 |
+| Botanical habitat photos | Proprietary field shoot (ABG permit) | iNaturalist CC-BY Research Grade | NC Botanical Garden institutional archive | BHL historical illustrations (public domain) |
+| Canva palette | Brand Kit — Endangered Species extension | Manual hex entry (see Section 2.2) | Existing Seedwarden palette | Figma free tier (2–3 hr migration) |
+| Lifestyle listing photos | Original lifestyle shoot (Clusters A/B/C) | Minimum viable 12-shot shoot | Existing mockups (mockups/ directory) | Post-launch shoot June 1–7 |
 
 ---
 
-*Prepared: 2026-05-18. Version 2.1 — supplier arrival windows updated to reflect current
-order timing (Mountain Rose May 17–21, Strictly Medicinal May 24–30, Prairie Moon May 24–27);
-Track B Phase 2 scope clarified in header; risk matrix probability updated to reflect
-expected-window arrivals rather than early-window best-case. Previous versions: 2.0 (initial
-comprehensive expansion, same date). Cross-references: PHASE_2_LAUNCH_LOGISTICS.md (supplier
-milestones), PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md (extended scenario analysis and vendor
-communication templates), phase-2-plant-sourcing-vendor-list.md (vendor specs and storage
-protocols), CANVA_ENDANGERED_SPECIES_STYLE_GUIDE.md (palette hex codes), PHASE_2_PHOTOGRAPHY_LOGISTICS.md
-(studio and field logistics), ENDANGERED_SPECIES_PHOTO_PIPELINE.md (iNaturalist taxon IDs
-and CC-BY sourcing protocol). Web-verified May 2026: Mountain Rose Herbs 2–10 day domestic
-transit confirmed current; Prairie Moon Nursery spring potted plants ship late April through
-late May from Midwest; Strictly Medicinal Seeds live plant shipping window March 15–July 25.*
+## Final Assessment
+
+**May 30 launch is achievable.** The supply chain is well-covered. The calendar is the
+constraint. Every physical specimen delay has a same-day fallback. Every location failure
+is already absorbed by the indoor studio baseline. The only decision that determines launch
+scope is when Canva guide production begins.
+
+**Three outcomes, in order of probability**:
+
+1. **Full 5-guide launch May 30** (40%): Canva starts May 26 as planned. All suppliers
+   on time or covered by iNaturalist sprint. All 5 guides export-ready May 29 evening.
+
+2. **3-guide launch May 30 + June 4 completion** (45%): Canva starts May 27 (1-day slip).
+   3 guides (Ginseng, Goldenseal, Black Cohosh) complete May 29 evening under compressed
+   schedule. May 30 marketing event proceeds in full. Revenue impact: 5–8% below baseline,
+   recovered by June 5.
+
+3. **2-guide MVL launch May 30 or June 10** (15%): Canva starts May 28 or later. Emergency
+   compression produces 2 guides on May 30 or defers to June 10. Revenue impact: 10–30%
+   below baseline depending on whether May 30 date is preserved.
+
+**The non-negotiable rule**: Never launch with fewer than 2 complete guide PDFs. Never delay
+the launch date to add a guide. A 2-guide May 30 launch outperforms a 5-guide June 10 launch
+on first-30-day revenue.
+
+---
+
+*Version 4.0 — Prepared May 19, 2026. Supersedes phase-2-supply-chain-contingencies.md v2.0
+(May 18) and PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md v3.0 (May 19, execution/). Scope expanded
+from v3.0 to include: explicit Track B framing; full vendor alternates matrix for all species
+with phone numbers and email addresses; Section 2 Canva palette MVL decision tree with hex
+codes; Section 3 expanded location contingencies with Peerspace/Giggster fallback; Section 4
+guide-by-guide compression matrix with quality-at-compression assessment; Section 5 17-risk
+scoring matrix with probability, revenue impact, and severity tiers; Section 6 three-scenario
+timeline recovery with dated milestone tables and revenue comparison; Section 7 date-stamped
+decision checklist May 19–30 with 5-check May 29 go/no-go audit.*
+
+*Cross-references: GATE_2_DECISION_AND_EXECUTION_GUIDE.md (Brand Kit setup; Canva Pro trial
+activation), PHASE_2_LAUNCH_LOGISTICS.md (supplier details, photography schedule, production
+timeline), PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md v3.0 (prior version — vendor communication
+templates, zone card compression detail), MAY_24_30_SPRINT_OPTIMIZATION_BY_DECISION.md
+(Branch A/B zone card and Kit setup timelines), MAY_30_RISK_AND_CONTINGENCY_PLAN.md (platform
+risk, Gumroad fallback, partial-gate viability), TRACK_B_USER_GATES.md (Gate schedule and
+zone card dependency), PHASE_2_GO_NO_GO_DASHBOARD.md (May 29 go/no-go criteria and
+Gumroad contingency), may-30-launch-sequence.md (minute-by-minute May 30 script).*
