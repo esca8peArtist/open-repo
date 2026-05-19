@@ -1,3 +1,50 @@
+## Since Last Check-in (Session 1311, May 19 04:52–05:35 UTC)
+
+**Session Status**: ✅ **ORIENTATION COMPLETE — All systems ready for May 21-22 autonomous execution**
+
+**What Was Done**:
+
+### ✅ Comprehensive State Orientation
+- Full ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md, and Exploration Queue reviewed
+- Verified 2 active blocks (VeraCrypt, test print) are genuine user actions, not orchestrator-resolvable
+- Confirmed all 3 stale focus lines in PROJECTS.md requiring pruning (Sessions 1294/1292/1277)
+- Explored Exploration Queue: Found both executable items already completed (May 17-18)
+
+### ✅ Breaking Developments Research
+- Conducted targeted WebSearch on May 17-18 developments for Domains 1, 37, 57, 58
+- Findings confirmed already integrated into domain files:
+  - **Domain 58**: May 18 Supreme Court tribal sovereignty GVR (Spirit Lake Tribe v. Jaeger) ✅
+  - **Domain 1**: SAVE Act Senate escalation (Section 2.4) ✅
+  - **Domain 37**: CISA operational pullback (Section III.E) ✅
+  - **Domain 57**: No new multilateral developments (remains current through May 17) ✅
+- All domains current and production-ready for May 21 synthesis
+
+### ✅ May 21-22 Autonomous Event Readiness
+- **May 21 19:00-20:00 UTC**: Synthesis execution framework verified production-ready
+- **May 22 20:00 UTC**: Checkpoint script (scripts/may22_checkpoint_query_alpaca.py) verified in place
+- Both events require only user monitoring data input May 19-21; no additional prep needed
+
+**Needs Your Input**:
+
+**TODAY (May 19 evening)**:
+1. **Brand Kit setup** (Canva Pro trial, 30-45 min) — Execute `projects/seedwarden/GATE_2_DECISION_AND_EXECUTION_GUIDE.md` steps 1-7
+2. **Monitoring check #1** (~5 min) — Fill May 19 evening row of monitoring dashboard per `DAILY MONITORING PROCEDURE`
+
+**May 20**:
+1. **Morning + evening monitoring checks** (~5 min each) — Fill monitoring dashboard rows
+2. **Transfer signals to wave-1-signal-log-may18-21.md** before May 21 synthesis
+
+**May 21** (Critical deadline):
+1. **Morning check before 10:30 UTC** — 72-hour monitoring window closes (hard deadline)
+2. **Pre-synthesis setup** (19:00 UTC) — Prepare signal log + monitoring data
+3. **Synthesis execution** (19:00-20:00 UTC) — **Autonomous** — orchestrator runs synthesis with your monitoring data
+
+### ⚠️ Potential Gaps Identified
+1. **PROJECTS.md stale focus lines** — 3 focus entries truncated (resistance-research, seedwarden, open-repo). Recommend pruning to current session state.
+2. **No Exploration Queue items available** after May 21 synthesis until May 22 checkpoint completion. Protocol suggests adding 2-3 new items if queue < 3 active items post-completion.
+
+---
+
 ## Since Last Check-in (Session 1309, May 19 04:37–04:50 UTC)
 
 **Session Status**: ✅ **STATE VERIFICATION COMPLETE — All autonomous work scheduled for May 21–22; awaiting user actions May 19–20**
