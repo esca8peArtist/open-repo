@@ -18629,3 +18629,55 @@ Both remain unresolved; no new blockers discovered.
 3. **May 22 20:00 UTC**: Checkpoint execution → Item 74 outcome routing → diagnostic + corrective action
 4. **May 23-30**: Execution of contingency options (Items 74–75 per outcome)
 
+
+## Session 1308 (Orchestrator: Lever B HMM Integration Deployment) — May 19 2026, 04:19 UTC
+
+**Session Status**: ✅ **LEVER B HMM INTEGRATION DEPLOYED TO JETSON — READY FOR MAY 22 CHECKPOINT**
+
+**Work Completed**:
+
+### ✅ Lever B HMM Regime Masking: Feature Branch Merged & Deployed
+
+**Scope**: Review and deploy `feature/lever-b-hmm-integration` (Session 1305 work) to Jetson trading engine
+
+**Actions Taken**:
+1. **Code Review**: Examined integration in `src/trading/trading_session.py`
+   - Opt-in feature (controlled by `hmm_regime_masking` in strategy_params)
+   - Lazy initialization of HMM maskers per ticker
+   - Post-signal processing before order execution
+   - Conservative design: silent fallthrough for non-stacker sessions
+   - Warm-up guard (60 bars) enforced inside masking logic
+
+2. **Test Verification**: 27/27 HMM tests passing, 16/16 integration tests passing, 3,758 total suite pass/0 new failures
+
+3. **Git Merge**: Merged `feature/lever-b-hmm-integration` to local master
+   - Fast-forward merge completed
+   - Files integrated: `LEVER_B_INTEGRATION_STATUS.md`, `test_hmm_masking_integration.py`, trading_session.py updates
+
+4. **Jetson Deployment**:
+   - Created `/opt/stockbot/src` directory on Jetson
+   - Rsync synced updated src/ to Jetson: 436,293 bytes in 23.25 speedup ratio
+   - Restarted Docker container `stockbot`
+   - Verified container healthy: "Up 4 minutes (healthy)"
+   - API endpoint responding normally
+
+**Configuration Status**:
+- HMM masking is opt-in; currently disabled in active-sessions.json (no `hmm_regime_masking: true` in strategy_params)
+- When enabled, masker initializes and detects regimes on day 1 (60-bar historical warm-up automatic)
+- Mechanism: Bear regime suppresses BUY + reduces SELL to 60%; sideways reduces SELL to 80%; bull pass-through
+
+**May 22 Checkpoint Readiness**:
+- ✅ Feature deployed and engine restarted
+- ✅ May 22 checkpoint script verified and staged
+- ✅ Both AAPL sessions healthy (34 fills, 3 round trips, $115,135 equity)
+- ✅ Effectiveness assessment target: May 26 checkpoint (5-7 live trading days post-warm-up)
+- ⚠️ May 22 outcome likely repeats STILL_MISS_B2 (expected, not code failure)
+
+**Next Steps**:
+1. May 20 evening: Final monitoring check (Wave 1 signal log)
+2. May 21 10:30 UTC: 72h monitoring window closes
+3. May 21 19:00-20:00 UTC: Autonomous synthesis execution (resistance-research)
+4. May 22 20:00 UTC: Checkpoint execution (Lever B + AAPL sessions)
+
+**Impact**: Lever B HMM integration fully operational. May 21-22 decision points staged. No further autonomous work required until May 21 synthesis.
+
