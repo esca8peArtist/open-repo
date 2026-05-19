@@ -1,4 +1,32 @@
-## Since Last Check-in (Session 1339, May 19 11:15–12:30 UTC)
+## Since Last Check-in (Session 1340, May 19 11:50–13:20 UTC)
+
+**Session Status**: 🔴 **CRITICAL FINDING: WebSocket Error Loop on Jetson — Container Restart Required Before 13:30 UTC**
+
+### Critical Action Required (URGENT — 2 hours 40 minutes remaining)
+
+**Finding**: Stockbot container restarted at 04:21 UTC today (cause unknown). Since restart, Alpaca WebSocket in continuous error loop (429 connection limit exceeded, ~2,250 errors/minute). Effects:
+- CPU elevated 31-44% (still <80% checkpoint threshold)
+- Memory +380 MiB (stable, not growing)
+- **Checkpoint API operational** (REST endpoint verified 12:57 UTC)
+- **Inference uncertain** — Zero trades today; consistent with blocked AAPL session event loops
+
+**Infrastructure Verdict**: CONDITIONAL GO (82% confidence) — all metrics pass EXCEPT WebSocket loop
+
+**Action**: Before 13:30 UTC, restart container to clear error loop and restore inference:
+```bash
+ssh awank@100.120.18.84 "docker restart stockbot"
+```
+
+**Why this matters**: May 19 checkpoint is deterministic (no human decisions required), but if inference is blocked by WebSocket loop, today's Lever A exit signal evaluation may not have run. Restart clears the loop, recovers CPU/memory, and validates inference before tonight's 20:00 UTC checkpoint.
+
+**Timeline**:
+- **Before 13:30 UTC**: Decide on restart
+- **19:30 UTC**: Run checkpoint verification script
+- **20:00 UTC**: Execute checkpoint query as scheduled
+
+---
+
+## Session 1339 History (May 19 11:15–12:30 UTC)
 
 **Session Status**: ✅ **PARALLEL AGENT EXECUTION — THREE CRITICAL-PATH DOCUMENTS COMPLETE**
 
@@ -69,44 +97,66 @@
    - Evaluate snap-arm clearance, report pass/fail
    - All pre-print deliverables ready
 
-### 📊 Critical Path Timeline
+### ✅ Session 1340 Deliverables (Infrastructure Validation + Contingency Framework)
 
-**May 19** (today):
-- ✅ Checkpoint playbook complete (Section 6 triage checklist ready)
-- ✅ Synthesis framework complete (pre-built, deterministic)
-- ✅ Launch contingencies complete (failure modes documented)
-- **20:00 UTC (in 8.75 hours)**: Stockbot checkpoint execution. Use Section 6 triage checklist + checkpoint-outcome-decision-playbook.md to route outcome.
+**1. Stockbot Pre-Checkpoint Infrastructure Validation** — jetson-pre-checkpoint-validation-report.md
+   - **All 6 infrastructure dimensions PASS** (CPU, memory, latency, database, dependencies, disk)
+   - **Yellow Flag — WebSocket Error Loop**: Container restarted 04:21 UTC. WebSocket in 429 error loop since restart (~2,250 errors/min). CPU elevated 31-44%, memory +380 MiB (stable). Checkpoint API fully operational. Inference execution uncertain (zero trades today).
+   - **Verdict**: CONDITIONAL GO (82% infrastructure confidence)
+   - **Required action**: Container restart before 13:30 UTC to clear WebSocket loop and validate inference
+
+**2. Resistance-Research Phase 1 Contingency Decision Framework** — phase-1-contingency-decision-framework.md
+   - Quantified outcome thresholds (email response rates, Gist view rates, QRP scoring)
+   - Constituency impact matrix with ranking (Immigration legal aid #1, Think tanks #2, Law schools #3, Unions #4)
+   - Four-branch decision tree (Strong / Moderate / Weak / Mixed scenarios)
+   - Real-time monitoring protocol with 4 UTC checkpoints (May 19-21)
+   - **Enables May 20-21 Phase 2 pivot decisions if Wave 1 underperforms**
+
+### 📊 Updated Critical Path Timeline
+
+**May 19** (today, 11:50 UTC):
+- ✅ Pre-checkpoint infrastructure validation complete
+- ✅ Contingency decision framework complete
+- 🔴 **CRITICAL ACTION**: Container restart before 13:30 UTC: `ssh awank@100.120.18.84 "docker restart stockbot"`
+- **19:30 UTC**: Run checkpoint verification script
+- **20:00 UTC**: Stockbot May 19 checkpoint execution (CONDITIONAL GO verdict)
 
 **May 20**:
 - **Evening (~22:00 UTC)**: User fills `wave-1-signal-log-may18-21.md` with signal metrics (~30 min work)
 - **Pre-condition for May 21 synthesis**: Signal log must be filled by 19:00 UTC May 21
 
 **May 21**:
-- **19:00–20:00 UTC**: Resistance-research synthesis execution (autonomous, uses MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md)
-- **20:00 UTC**: CHECKIN.md post with synthesis outcome
+- **19:00–20:00 UTC**: Resistance-research synthesis execution (autonomous, uses MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md + phase-1-contingency-decision-framework.md for routing)
+- **20:00 UTC**: CHECKIN.md post with synthesis outcome + Phase 2 domain sequence
 
-**May 22** (50 hours away):
-- **13:30 UTC deadline**: Lever B HMM config activation (49 hours remaining — **CRITICAL** blocker)
+**May 22** (48 hours away):
+- **13:30 UTC deadline**: Lever B HMM config activation (**CRITICAL** blocker)
 - **20:00 UTC**: Stockbot May 22 checkpoint execution. Script ready (`scripts/may22_checkpoint_query_alpaca.py`).
 
 **May 27-30**: Seedwarden pre-launch (user follows Items 91-92 checklists, 6 hours total work). Launch contingencies provide all failure-mode recovery paths.
 
 ### Needs Your Input
 
-**CRITICAL (49 hours remaining, May 22 13:30 UTC deadline)**:
-1. **SSH to Jetson**: Add orchestrator's ED25519 public key to Jetson authorized_keys, OR SSH manually and run 5-min Lever B config fix commands (see BLOCKED.md).
+**🔴 CRITICAL (TODAY — 2 hours 40 minutes remaining, May 19 13:30 UTC)**:
+1. **Container restart decision**: WebSocket error loop found. Restart container to clear loop and validate inference before 20:00 UTC checkpoint.
+   ```bash
+   ssh awank@100.120.18.84 "docker restart stockbot"
+   ```
 
-**Due May 20 evening** (37 hours):
-2. **Signal log**: Fill `wave-1-signal-log-may18-21.md` with inbox/Gist response counts. Triggers May 21 19:00 UTC synthesis.
+**CRITICAL (48 hours remaining, May 22 13:30 UTC deadline)**:
+2. **SSH to Jetson**: Add orchestrator's ED25519 public key to Jetson authorized_keys, OR SSH manually and run 5-min Lever B config fix commands (see BLOCKED.md). **This unblocks May 22 checkpoint Lever B testing.**
 
-**Due May 27** (136 hours):
-3. **Gate 1 (social accounts)**: Create social media accounts for Seedwarden launch (TikTok/Instagram/Pinterest). Item 91 checklist provides 3 contingency paths if still pending May 27.
+**Due May 20 evening** (36 hours):
+3. **Signal log**: Fill `wave-1-signal-log-may18-21.md` with inbox/Gist response counts. Triggers May 21 19:00 UTC synthesis.
 
-**Due May 22-23** (estimate 50-60 hours):
-4. **Cybersecurity VeraCrypt restart**: Complete Step 1.3 Windows restart + pre-boot test + Encrypt click to resume Phase 1 progression.
+**Due May 27** (135 hours):
+4. **Gate 1 (social accounts)**: Create social media accounts for Seedwarden launch (TikTok/Instagram/Pinterest). Item 91 checklist provides 3 contingency paths if still pending May 27.
 
-**Due May 23** (estimate 70-80 hours):
-5. **Mfg-Farm test print**: Execute single test print, report snap-arm clearance evaluation (pass/fail). Unblocks Item 85 launch-sequence execution.
+**Due May 22-23** (estimate 49-59 hours):
+5. **Cybersecurity VeraCrypt restart**: Complete Step 1.3 Windows restart + pre-boot test + Encrypt click to resume Phase 1 progression.
+
+**Due May 23** (estimate 69-79 hours):
+6. **Mfg-Farm test print**: Execute single test print, report snap-arm clearance evaluation (pass/fail). Unblocks Item 85 launch-sequence execution.
 
 ## Since Last Check-in (Session 1338, May 19 11:15–12:45 UTC)
 
