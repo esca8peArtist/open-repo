@@ -1,3 +1,31 @@
+## Since Last Check-in (Session 1327, May 19 08:10–08:25 UTC)
+
+**Session Status**: 🟡 **HOLDING PATTERN — SSH verification failed; no autonomous work available**
+
+**Assessment**: 
+- ✅ State fully oriented; BLOCKED.md, INBOX.md, PROJECTS.md stable
+- ❌ **SSH block still active** (Lever B config): same "Permission denied (publickey,password)" as Session 1319
+- 🟡 Exploration Queue has 3 items staged (79-81) but all conditionally triggered (not yet executable)
+- ⏳ Critical path confirmed: May 21 synthesis (40 hours), May 22 checkpoint (46 hours to Lever B deadline)
+
+**Immediate User Actions Needed**:
+1. **🔴 CRITICAL — May 22 by 13:30 UTC (46 hours)**: Lever B HMM config activation
+   - Option A: Provide SSH credentials for `ubuntu@100.120.18.84` 
+   - Option B: Manually SSH to Jetson and run fix commands (5 min, documented in BLOCKED.md)
+   - Impact: Without activation, May 22 checkpoint re-tests Lever A (repeats STILL_MISS_B2 outcome)
+
+2. **Today evening**: Fill Wave 1 signal log in `projects/resistance-research/may-21-synthesis-execution-checklist.md` (unblocks May 21 synthesis)
+
+3. **Before May 30**: Create seedwarden social accounts (Instagram/TikTok/Pinterest, Gate 1 overdue)
+
+**Next Scheduled Events**:
+- **May 21 19:00 UTC**: Autonomous resistance-research synthesis (Wave 1 data → Phase 2 decision)
+- **May 22 20:00 UTC**: Checkpoint execution
+
+**No escalations. All state stable. Awaiting user actions and scheduled events.**
+
+---
+
 ## Since Last Check-in (Session 1326, May 19 07:40–08:05 UTC)
 
 **Session Status**: ✅ **QUEUE EXPANSION — Item 77 complete, strategic items 79-81 staged**
