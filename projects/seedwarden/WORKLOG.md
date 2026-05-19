@@ -4,6 +4,31 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Critical Path v4.0 Self-Contained Document — May 19, 2026
+
+**Task**: Rewrite `phase-3-medicinal-herbs-critical-path.md` as a fully self-contained production timeline and critical path document (2,500+ word target). The existing v3.0 (3,900 words) referenced many external files; this v4.0 eliminates those dependencies and embeds the full Gantt chart inline.
+
+**Changes made**:
+- `phase-3-medicinal-herbs-critical-path.md` rewritten as v4.0 (4,200+ words). Key additions over v3.0:
+  - Full Gantt chart embedded in Section 8 (previously a cross-reference to the separate Gantt file)
+  - Critical path chain visualization embedded (previously Appendix C only)
+  - Hard deadlines table (zero-float events, consequence of miss)
+  - Float days per task — explicit table clarifying which tasks can slip
+  - Pre-sprint action checklist (Appendix B) — 15-item ordered action list with USER tags for all items requiring direct user action, covering May 30–June 22
+  - `[DECISION]` labels on the three May 30 decisions for scan-readability
+  - Self-contained flag in YAML front matter (confirms document does not require external files to use)
+  - "How to Use This Document" header section for first-time readers
+  - Prop styling by bundle table (previously only in photography logistics file)
+  - Per-bundle upload checklist (8-step, previously in Etsy listings file)
+
+**No new image downloads this session** (critical path planning document).
+**No new supplier contacts initiated** (supplier calendar documented in prior session).
+
+**Files modified**:
+- `phase-3-medicinal-herbs-critical-path.md` — full rewrite to v4.0 (self-contained)
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Critical Path Consolidated Decision Document (Session 1363) — May 19, 2026
 
 **Task**: Develop Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis for user decision by May 30. Deliverables: comprehensive critical path document, Gantt timeline, parallel execution analysis, user decision gate (Options A/B/C).
