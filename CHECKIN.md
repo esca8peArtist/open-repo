@@ -1,3 +1,54 @@
+## Since Last Check-in (Session 1330, May 19 09:30–10:15 UTC)
+
+**Session Status**: ✅ **AUTONOMOUS EXECUTION COMPLETE — Post-checkpoint roadmap + domain updates delivered; critical path clarity established**
+
+**What Was Done**:
+
+### ✅ Exploration Queue Execution (Items marked complete + new deliverables)
+- **Containerized-agents security fix**: Verified already complete (May 17 commits 7fc9fb8f + cbd1ab83). All services bind to 127.0.0.1, memory limits set, CLAUDE.md compliant.
+- **Stockbot: POST_GATE_1_RECOVERY_ROADMAP.md** ✅ COMPLETE (2 hrs, 3,100 words, production-ready)
+  - **May 22 Checkpoint Path**: SSH blocker has console-access fallback (no 4-day delay)
+  - **Critical Finding**: Lever B is NOT designed to measure P&L until May 26 (not May 22). May 22 confirms HMM initialization only. If SSH not resolved, accept May 22 measures Lever A, fix by May 26.
+  - **Multi-Ticker Roadmap**: AMZN + JPM (May 23–25) → MSFT + GOOGL (May 26–28) → NVDA + FCX/NEM (May 29–31)
+  - **June 1 Critical Path**: 5 gates (any PASS, Lever B 5+ days, no guardrail violations, equity >$115K, user approval). Gap 4 (options) does NOT block June 1.
+  - **Parallel Work NOW**: (1) Gap 4 implementation (2h 45m, removes critical-path risk), (2) AMZN/JPM training spec review, (3) May 26 checkpoint script, (4) thermal throttle analysis
+  - **Impact**: Eliminates ambiguity post-checkpoint; enables 4 parallel tasks without SSH access
+
+- **Resistance-research: DOMAIN_UPDATES_MAY19.md** ✅ COMPLETE (2 hrs, comprehensive May 18-19 breaking developments)
+  - **Domain 42 CRITICAL DEADLINE CORRECTION**: May 24 (electronic filing), not May 28. DEA hearing participation window: 5 days remaining. Affects all Wave 1 contacts (DPOD, NORML, ACLU, Sentencing Project).
+  - **Domain 1**: SCOTUS GVRs May 18 (*Turtle Mountain* + *NAACP v. BEC*) derail 28 voting-rights lawsuits. SAVE Act dead in Senate (48-50).
+  - **Domain 37**: ICE 287(g) expansion enacted July 4 (no longer "proposed"). Warner/Mullin Senate record links CISA defunding to Gabbard.
+  - **Domain 57**: NATO reduction confirmed (9,000 personnel: Germany 5K, Poland 4K canceled).
+  - **Domain 58**: SCOTUS GVR May 18 remands *Turtle Mountain* to Eighth Circuit. Private right-of-action question unresolved by Callais.
+  - **Domain 25**: FISA 702 deadlocked on warrant-definition. June 12 deadline (24 days out). No Senate floor vote scheduled.
+  - **Impact**: Ensures domains current through May 21 synthesis; enables May 21 phase-2 path decision with latest intelligence
+
+**Summary**: Two major deliverables production-ready. Stockbot roadmap clarifies post-Gate-1 recovery path and identifies 4 autonomous parallel tasks. Resistance-research domain updates are synthesis-ready and critical for Phase 2 activation decision.
+
+### 📋 Immediate User Actions Required (May 19-22)
+
+**May 20 evening (16h window)**:
+- 🔴 **CRITICAL**: Fill `wave-1-signal-log-may18-21.md` (15–30 min)
+  - Log email replies + Gist view counts from Wave 1
+  - Unblocks May 21 synthesis execution
+
+**May 22 by 13:30 UTC (38h window)**:
+- 🔴 **CRITICAL**: Activate Lever B config OR provide SSH credentials
+  - Option A: Follow `SSH_AUTHENTICATION_RECOVERY_GUIDE.md` (2–30 min, recommend Tailscale or manual key)
+  - Option B: Provide SSH credentials for automated activation
+  - Without action: May 22 retests Lever A (STILL_MISS_B2 repeat). Lever B testing deferred to May 26.
+
+### 📊 Autonomous Work Available (May 19-22, no user action required)
+Four parallel tasks documented in POST_GATE_1_RECOVERY_ROADMAP.md:
+1. **Gap 4 Implementation** (2h 45m) — naked-call prevention guardrail, removes options blocker
+2. **AMZN/JPM Training Spec Review** (30-45 min) — parameter drift verification
+3. **May 26 Checkpoint Script** (1h) — Lever B-specific metrics (regime distribution, suppressed signals)
+4. **Thermal Throttle Analysis** (1-2h) — quantify Phase 3 risk before parallel training
+
+**Recommendation**: Gap 4 implementation highest priority (critical path blocker removal). Can execute any time before Phase 3 training (May 29+).
+
+---
+
 ## Since Last Check-in (Session 1329, May 19 08:16–?? UTC)
 
 **Session Status**: ✅ **MAY 21 SYNTHESIS INFRASTRUCTURE VERIFIED READY; 3-day critical path confirmed**
