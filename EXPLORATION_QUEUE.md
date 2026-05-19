@@ -58,6 +58,62 @@
 
 ---
 
+### ⏳ Item 88: Stockbot Post-May-22-Checkpoint Decision Architecture
+**Status**: NEW (Session 1341, May 19 2026, 12:12 UTC)
+**Priority**: HIGH — May 22 checkpoint executes in 32 hours; decision framework needed before outcome arrives
+**Impact**: HIGH — Removes decision friction; when checkpoint outcome arrives, decision path is clear
+**Goal**: Pre-stage comprehensive post-checkpoint decision framework covering: (1) Lever B evaluation methodology (pass/fail criteria for HMM regime masking results), (2) Options trading readiness assessment (Gap 4 naked-call prevention status), (3) Multi-ticker expansion decision tree (AMZN/JPM readiness, capital allocation), (4) Jetson hardware upgrade needs (thermal, disk, memory), (5) May 22-30 architecture roadmap per outcome
+**Scope**:
+1. **Lever B evaluation framework** (1.5 hrs): What metrics define "Lever B improved over Lever A"? Comparison matrix for trades, fills, round-trip quality, Sharpe improvements. Success thresholds for next deployment phase.
+2. **Options trading gap assessment** (1 hr): Gap 4 (naked-call prevention) is CRITICAL for options activation. Is it implemented? If not, what's the implementation timeline vs. Gate 2 schedule?
+3. **Multi-ticker expansion readiness** (1.5 hrs): AMZN/JPM positions from April still exist. Are position-sizing controls ready? Capital allocation strategy? Risk aggregation framework tested?
+4. **Hardware upgrade roadmap** (1 hr): Jetson thermal at 81-87°C idle. Extended compute blocked until cooling installed. When can cooling be added? Impact on May 30-June 15 trading schedule?
+5. **Conditional roadmaps** (1 hr): If checkpoint is PASS, what's June schedule? If STILL_MISS/FAR_MISS, what's remediation timeline? Gate 2 decision gates?
+**Deliverable**: `projects/stockbot/POST_CHECKPOINT_DECISION_ARCHITECTURE.md` (3,000+ words, decision matrices, condition-specific roadmaps, resource allocation scenarios)
+**Why now**: May 22 checkpoint outcome will be binary but consequences are multi-dimensional (Lever B works/fails, options ready/blocked, hardware limits reached). Having structured decision architecture ready means May 22-24 can execute decisions mechanically, not deliberatively.
+**Success criteria**: By May 22 morning, framework complete so May 22 evening outcome can be immediately actioned with clear next-steps per result
+**Next step**: Execute May 19-20; deliver before May 22 20:00 UTC checkpoint execution
+
+---
+
+### ⏳ Item 89: Resistance-Research Phase 2 Implementation Master Plan
+**Status**: NEW (Session 1341, May 19 2026, 12:12 UTC)
+**Priority**: HIGH — Phase 2 research execution begins May 22-25 post-checkpoint; master plan needed before synthesis outcome
+**Impact**: HIGH — Phase 2 spans 6 months (June-November 2026) with 6-8 candidate domains. Master plan removes sequencing ambiguity and ensures critical deadlines (HHS June 1, EU AI Act August 2) are prioritized.
+**Goal**: Pre-stage comprehensive Phase 2 implementation master plan covering: (1) Domain sequencing logic (which 6-8 domains, in what order, why), (2) Resource allocation across 6 months, (3) Dependency mapping (Domain 39 before Domain 57?), (4) Distribution integration (how Phase 2 domains integrate into Batches 2-3), (5) Movement leverage sequencing (which domains unlock which coalition actions), (6) Contingency paths (if synthesis is WEAK, which domains proceed independently?)
+**Scope**:
+1. **Candidate domain prioritization** (2 hrs): Currently identified: Domains 56, 58, 59, 57, 61, 62, 63. Score each on: timing urgency (June 1 deadline? July 15?), movement leverage (which coalitions unblock?), research effort, risk of outdated findings. Output: prioritized sequence with justification.
+2. **Implementation timeline** (1.5 hrs): Master calendar June 1 - November 30. Which domains in parallel? Which sequential? Resource constraints (orchestrator capacity, availability of secondary agents). Milestone gates (completion dates, user review gates, distribution readiness dates).
+3. **Distribution integration** (1 hr): Batch 2 reaches which orgs? Batch 3? Does Phase 2 expand Batch 1 contacts or target new audiences? When does Domain 37 integration happen relative to Phase 2 domains?
+4. **Risk contingency** (1 hr): If synthesis is WEAK/TOO_EARLY, what's the Phase 2 delay strategy? Do domains 56, 58 proceed independently due to June 1 deadline? Does Phase 2 contract to 3-4 domains instead of 6-8?
+5. **Success metrics per domain** (1 hr): What defines "Phase 2 Domain 56 successful"? Response rate? Media coverage? Law school adoption? Define quantitative thresholds.
+**Deliverable**: `projects/resistance-research/PHASE_2_MASTER_IMPLEMENTATION_PLAN.md` (4,000+ words, prioritized domain sequence with scoring, calendar + milestones, distribution matrix, contingency paths, success metrics per domain)
+**Why now**: May 21 synthesis executes at 19:00 UTC. Outcome will be STRONG/MODERATE/WEAK/TOO_EARLY. May 22-25 Phase 2 launch depends on having master plan ready. If synthesis is STRONG, orchestrator executes Phase 2 immediately; if WEAK, user needs clear contingency routing without deliberation.
+**Success criteria**: By May 21 evening, master plan complete so Phase 2 launch can begin May 22 without planning delays
+**Next step**: Execute May 19-20; deliver May 21 afternoon before synthesis execution (by 17:00 UTC)
+
+---
+
+### ⏳ Item 90: Systems-Resilience Phase 4 Scope Definition & User Decision Framework
+**Status**: NEW (Session 1341, May 19 2026, 12:12 UTC)
+**Priority**: MEDIUM — Phase 3 complete (May 18); Phase 5 user decision window is June 1; Phase 4 gap exists (autonomously workable)
+**Impact**: MEDIUM — Clarifies what work systems-resilience can do autonomously (Phase 4) vs. what requires user direction (Phase 5 path decision). Removes "what's next?" ambiguity.
+**Goal**: Pre-stage comprehensive Phase 4 scope definition covering: (1) Post-Phase-3 gaps and extensions (what wasn't covered in Phase 3, what could be deepened?), (2) Phase 4 implementation options (Option A: community-scale to regional scale; Option B: household implementation protocols; Option C: cross-domain integration framework), (3) User decision framework (Phase 5 path decision criteria, decision gate June 1), (4) Autonomous Phase 4 work that can proceed while awaiting Phase 5 decision
+**Scope**:
+1. **Phase 3 retrospective & gap analysis** (1 hr): Phase 3 covered 5 community-scale domains (governance, food, info, security, scaling). What's missing? Regional-scale considerations (50k-500k person scale)? Supply chain resilience across multiple communities? Cross-domain failure cascades beyond Phase 3 scope?
+2. **Three Phase 4 option scenarios** (2 hrs): 
+   - **Option A (Scale Up)**: Extend to regional scale (50K-500K people). Add: regional governance federation, cross-community supply chains, regional comms networks. Effort: 40-60 hrs. Timeline: June 1-August 1.
+   - **Option B (Scale Down)**: Household implementation protocols. Transform Phase 2-3 community plans into executable household checklists. Add: household economics, household supply chains, household comms. Effort: 50-70 hrs. Timeline: June 1-September 1.
+   - **Option C (Integration)**: Cross-domain failure cascade analysis. How do failures in one domain (food supply) cascade through other domains? Add: interdependency maps, cascading-failure recovery protocols. Effort: 30-40 hrs. Timeline: June 15-August 15.
+3. **Phase 5 user decision framework** (1.5 hrs): Decision criteria per option (timeline, effort, Midwest-specific relevance, adjacent domains needed). Success metrics per option. Dependencies (does Option A need completion of Option B?). Resource constraints.
+4. **Autonomous Phase 4 work** (1 hr): What can orchestrator execute on immediately while awaiting Phase 5 decision? Cross-domain failure mapping? Regional governance federation architecture? Household protocol templates? Pre-stage work that's decision-independent.
+**Deliverable**: `projects/systems-resilience/PHASE_4_SCOPE_AND_DECISION_FRAMEWORK.md` (3,500+ words, gap analysis summary, three option scenarios with detail, decision matrix, success metrics, autonomous Phase 4 work roadmap)
+**Why now**: Phase 3 just completed (May 18). Phase 5 user decision gate is June 1 (13 days). While awaiting user decision, Phase 4 scope definition is autonomous work that clarifies the decision. Phase 4 autonomous work can begin May 19-31 without waiting for Phase 5 decision.
+**Success criteria**: By May 31, Phase 4 scope complete and Phase 5 decision framework ready for user review; autonomous Phase 4 work roadmap staged for May 22-31 execution
+**Next step**: Execute May 19-25; deliver before May 31
+
+---
+
 ## Previously Active Items (Sessions 1326-1334)
 
 ### ✅ Item 82: Seedwarden Track B — Audience Research & Competitive Positioning Strategy

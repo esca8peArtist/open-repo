@@ -1,3 +1,47 @@
+## Since Last Check-in (Session 1341, May 19 12:12–12:50 UTC)
+
+**Session Status**: 🟡 **EXPLORATION QUEUE EXPANSION + ITEM 88 EXECUTION — No Autonomous Work on Active Projects**
+
+### Session 1341 Deliverables
+
+**✅ Exploration Queue Management**:
+- **Items 86, 87 marked COMPLETE** (Session 1340): Post-synthesis analysis framework + Phase 2 detailed roadmap both production-ready
+- **Items 88, 89, 90 added (NEW)**: Three high-value autonomous items to replace completed queue items
+  - **Item 88**: Post-May-22-Checkpoint Decision Architecture (EXECUTED THIS SESSION, COMPLETE) 
+  - **Item 89**: Resistance-Research Phase 2 Implementation Master Plan (queued for May 19-21 execution)
+  - **Item 90**: Systems-Resilience Phase 4 Scope Definition (queued for May 19-31 execution)
+
+**✅ Item 88 Completion: Post-May-22-Checkpoint Decision Architecture** (stockbot agent)
+- **Deliverable**: `projects/stockbot/POST_CHECKPOINT_DECISION_ARCHITECTURE.md` (5,988 words, production-ready)
+- **Five decision frameworks**:
+  1. Lever B evaluation (HMM regime masking success metrics vs. May 19 baseline)
+  2. Options trading readiness (Gap 6 naked-call prevention status: MISSING from codebase)
+  3. Multi-ticker expansion (capital + memory constraints; 6-session pilot recommended)
+  4. Jetson thermal (live market measurement needed to confirm constraint severity)
+  5. Conditional roadmaps (explicit 15/30/60-day consequences per checkpoint outcome)
+- **Critical finding**: Gap 6 is fully absent from `src/guardrails.py` and architecture — options activation blocked across ALL checkpoint outcomes until Gap 6 implemented (5-engineering-day timeline)
+- **Use case**: When May 22 20:00 UTC checkpoint outcome arrives, user turns to appropriate outcome section and executes next steps deterministically
+
+### 🔴 Block Status — **Unchanged (3 Active)**
+
+All 3 blocks remain unresolved as of 12:50 UTC:
+1. **Stockbot: SSH Auth Failure** (CRITICAL, 31.5 hours to May 22 13:30 UTC deadline)
+   - Verification attempted: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84` → "Permission denied (publickey)"
+   - User action required: Add orchestrator public key to Jetson authorized_keys OR manually SSH and run 5-min Lever B config fix
+   - Impact: Without SSH access, May 22 checkpoint will measure Lever A (repeats May 19 outcome)
+
+2. **Cybersecurity-Hardening: VeraCrypt Restart** (Windows user action pending)
+3. **Mfg-Farm: Test Print Execution** (user action pending)
+
+### 📊 Project Snapshot (12:50 UTC)
+
+- **Stockbot**: 2-session AAPL Jetson-only. May 19 checkpoint executed (STILL_MISS_B2). May 22 checkpoint queued (CONDITIONAL GO, awaiting Lever B config activation + container restart).
+- **Resistance-Research**: Wave 1 COMPLETE (5 Batch 1 emails sent, distributed May 18 10:00 UTC). Synthesis execution May 21 19:00 UTC (autonomous, requires user signal log fill by May 20 evening).
+- **Seedwarden**: Track B awaiting Gate 1 (social account creation, OVERDUE). May 30 launch contingency playbooks ready.
+- **All other projects**: Awaiting user decisions or actions (Phase 5 decisions for open-repo/systems-resilience, test print for mfg-farm, VeraCrypt restart for cybersecurity).
+
+---
+
 ## Since Last Check-in (Session 1340, May 19 11:50–13:20 UTC)
 
 **Session Status**: 🔴 **CRITICAL FINDING: WebSocket Error Loop on Jetson — Container Restart Required Before 13:30 UTC**
