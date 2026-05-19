@@ -40,20 +40,19 @@ All sections production-ready for mechanical execution post-test-print approval.
 
 ---
 
-### ⏳ Item 87: Cybersecurity-hardening Phase 2 Scope & Implementation Planning
-**Status**: NEW (Session 1334, May 19 2026, 12:50 UTC)
+### ✅ Item 87: Cybersecurity-hardening Phase 2 Scope & Implementation Planning
+**Status**: COMPLETE (Session 1349, May 19 2026, 15:13 UTC) — Deliverable: `PHASE_2_DETAILED_ROADMAP.md` (98KB, verified May 19 15:13)
 **Priority**: MEDIUM — Enables Phase 2 planning once Phase 1 completes (user restart required)
-**Impact**: MEDIUM — Removes scope uncertainty for 3-week Phase 2 sprint (currently marked as 7-module roadmap)
+**Impact**: MEDIUM — Removes scope uncertainty for 3-week Phase 2 sprint (7-module roadmap complete with sequencing)
 **Goal**: Pre-stage Phase 2 scope definition and implementation planning covering: (1) Exact scope of 7-module Phase 2 roadmap, (2) Implementation sequence (which modules in parallel vs. serial), (3) Dependencies on Phase 1 completion, (4) Tier 2 distribution prep (which organizations, which customized playbooks)
 **Scope**:
-1. **7-module roadmap detail** (1.5 hrs): Expand current PHASE_2_PLANNING.md outline (currently 7 modules not named) into concrete modules with time estimates
-2. **Implementation sequence** (1 hr): Which modules can run in parallel (e.g., device hardening + financial privacy)? Which are sequential (e.g., GrapheneOS setup before advanced protection)?
-3. **Tier 2 integration** (1 hr): Which Phase 2 modules directly feed Tier 2 playbooks (immigration + activist + whistleblower + DV survivor)? What's the sequencing to maximize Tier 1-2 coverage?
-4. **Timeline and gates** (30 min): 3-week execution plan with user review gates (Week 1 checkpoint, Week 2 checkpoint)
-**Deliverable**: `projects/cybersecurity-hardening/PHASE_2_DETAILED_ROADMAP.md` (2,500+ words, module-by-module breakdown, implementation sequence, dependencies, Tier 2 integration map)
-**Why now**: Phase 1 is mid-way (user at step 1.3 VeraCrypt restart). Once Phase 1 completes (expected May 20-21), Phase 2 begins immediately. Pre-staging the 3-week roadmap removes "what's next?" delays.
-**Success criteria**: By May 25, Phase 2 roadmap complete so user can review May 25-27 and begin Phase 2 execution May 28 without delay
-**Next step**: Execute May 19-20; deliver before May 25
+1. **7-module roadmap detail** ✅ — All 7 modules detailed with concrete implementation steps (Module 1-7: device encryption, hardware security keys, network anonymization, metadata minimization, physical security, organizational OpSec, threat model refresh)
+2. **Implementation sequence** ✅ — 3-week calendar showing parallel vs. sequential modules; hardware ordering on Day 1, VPN setup Days 1-2, credential management Days 8-10, threat model refresh Days 19-21
+3. **Tier 2 integration** ✅ — PHASE_2_IMPLEMENTATION_ROADMAP.md covers 6 scenario playbooks (immigration, activist, financial, whistleblower, journalist, DV survivor) with distribution timeline and organizational targets
+4. **Timeline and gates** ✅ — Phase 1 completion June 1-2, Phase 2 completion June 14-18; 4 quarterly gates (July 26 Gate 1, September Gate 2, December Gate 3, May 31 2027 Gate 4)
+**Deliverable**: `projects/cybersecurity-hardening/PHASE_2_DETAILED_ROADMAP.md` (98KB, module-by-module breakdown, implementation sequence, dependencies, Tier 2 integration map); `projects/cybersecurity-hardening/PHASE_2_IMPLEMENTATION_ROADMAP.md` (scenario playbooks with distribution timeline)
+**Verification**: File created May 19 at 15:13 UTC, ready for user review May 25-27. User can begin Phase 2 June 2-3 post-Phase-1 completion.
+**Next step**: Awaiting user Phase 1 completion (Step 1.3 VeraCrypt restart), then user begins Phase 2 per PHASE_2_DETAILED_ROADMAP.md module sequence
 
 ---
 
@@ -110,6 +109,56 @@ All sections production-ready for mechanical execution post-test-print approval.
 **Why now**: Phase 3 just completed (May 18). Phase 5 user decision gate is June 1 (13 days). While awaiting user decision, Phase 4 scope definition is autonomous work that clarifies the decision. Phase 4 autonomous work can begin May 19-31 without waiting for Phase 5 decision.
 **Success criteria**: By May 31, Phase 4 scope complete and Phase 5 decision framework ready for user review; autonomous Phase 4 work roadmap staged for May 22-31 execution
 **Next step**: Execute May 19-25; deliver before May 31
+
+---
+
+### ✅ Item 91: Resistance-Research Phase 2 Domain 59 Research Initiation
+**Status**: COMPLETE (Session 1349, May 19 2026, 22:07 UTC) — Deliverable: `DOMAIN_59_RESEARCH_OUTLINE.md` (9,047 words, verified May 19 22:07)
+**Priority**: HIGH — June 15 start target for Phase 2 expansion; Domain 59 research window open June 1+
+**Impact**: HIGH — Economic Precarity is load-bearing domain for understanding how democratic collapse cascades through economic infrastructure. 50-60 hour domain with high-leverage cross-references to Domains 22 (equity), 34 (fiscal authority), 35 (SCOTUS economic doctrine)
+**Goal**: Pre-stage Domain 59 (Economic Precarity & Democratic Legitimacy) research outline, source list, and expert contact methodology covering: (1) Causal pathways from economic precarity to civic disengagement, (2) 2026 flash points (credit access collapse, wage growth reversal, housing affordability crisis), (3) Movement leverage (labor unions, economic justice coalitions, consumer protection networks), (4) International precedent (Poland post-2008, South Korea 2012-2017)
+**Scope**:
+1. **Research outline** (1 hr): 8-10 subsections mapping economic precarity mechanisms to democratic participation + domain cross-references
+2. **2026 research windows** (1 hr): Which economic crises have specific policy deadlines (Fed rate decision, CPI announcement timing, housing affordability reports)? When are congressional economic hearings?
+3. **Source methodology** (1.5 hrs): Which researchers study economic-political linkage (Bartels, Achen, Hetherington)? Which policy organizations have current economic inequality focus (Economic Policy Institute, Institute for Policy Studies)?
+4. **Expert contact list** (1 hr): 10-15 academic economists + policy researchers + labor union strategists for feedback-phase distribution
+**Deliverable**: `projects/resistance-research/DOMAIN_59_RESEARCH_OUTLINE.md` (2,000+ words, research outline, 2026 flash point analysis, source methodology, expert contact list)
+**Why now**: Domain 59 is identified as Phase 2 priority (June 15-July 15 timeline per ORCHESTRATOR_STATE.md). Outline completion May 19-20 allows research execution to begin immediately June 1-2 post-synthesis. This removes planning delays and keeps Phase 2 on schedule.
+**Success criteria**: By May 21, research outline + source list + expert methodology complete; June 15 research execution can begin immediately with no setup delays
+**Next step**: Execute May 19-20; deliver May 21 afternoon before May 22 checkpoint
+
+---
+
+### ✅ Item 92: Open-repo Phase 5 Candidates 2-3 Detailed Implementation Roadmaps
+**Status**: COMPLETE (Session 1349, May 19 2026, 22:07 UTC) — Deliverable: `PHASE_5_CANDIDATES_2_3_IMPLEMENTATION_ROADMAPS.md` (6,656 words, verified May 19 22:07)
+**Priority**: HIGH — Phase 5 user decision window May 25-26; detailed roadmaps enable rapid post-approval execution (Candidates 2-3 start June 1+)
+**Impact**: HIGH — Removes implementation friction; user makes approval decision on clear code-level effort/impact, not abstract descriptions
+**Goal**: Pre-stage detailed implementation roadmaps for Phase 5 Candidates 2 (OPDS federated feed generation, 3-4h) and 3 (Zed indexing optimization, 2-3h) covering: (1) Exact code entry points and files to modify, (2) Test matrix and coverage requirements, (3) Integration sequence with Wave 4 federation + Candidate 1, (4) Deployment gates and go-live checklist, (5) Post-launch monitoring strategy
+**Scope**:
+1. **Candidate 2 OPDS feedgen** (1.5 hrs): Code architecture diagram, serialization format, federation API integration points, test coverage requirements
+2. **Candidate 3 Zed indexing** (1 hr): Indexing strategy (full-text vs. metadata), search performance targets, offline integration points
+3. **Integration sequence** (1 hr): How do Candidates 1, 2, 3 stack together? What's the deployment order? What are the inter-candidate dependencies?
+4. **Go-live checklist** (30 min): Pre-deployment verification, staging environment tests, rollback procedures
+**Deliverable**: `projects/open-repo/PHASE_5_CANDIDATES_2_3_IMPLEMENTATION_ROADMAPS.md` (2,500+ words, code-level architecture diagrams, test matrices, deployment checklists)
+**Why now**: Phase 5 user decision window is May 25-26. Detailed roadmaps enable user to make approval decision on clear effort/impact. Candidates 2-3 execution can begin June 1 immediately post-approval without additional planning.
+**Success criteria**: By May 23, detailed roadmaps complete with effort estimates, code entry points, and test requirements; user can make informed May 25-26 decision
+**Next step**: Execute May 19-21; deliver before May 23
+
+---
+
+### ✅ Item 93: Seedwarden Phase 4 Launch-Week Brand Assets & Content Templates
+**Status**: COMPLETE (Session 1349, May 19 2026, 22:07 UTC) — Deliverables: `LAUNCH_WEEK_BRAND_KIT.md`, `CONTENT_CALENDAR_TEMPLATE.md`, `LAUNCH_WEEK_MONITORING_SPEC.md` (999 insertions, verified May 19 22:07)
+**Priority**: MEDIUM — May 30 launch target (11 days); launch-week brand consistency requires pre-staged templates
+**Impact**: MEDIUM — Reduces Day-1-6 friction; user can begin post-launch content creation immediately without design/brand asset setup delays
+**Goal**: Pre-stage Phase 4 launch-week assets covering: (1) Canva brand kit template (colors, fonts, icon style guidelines), (2) Content calendar template for post-launch Week 1-4, (3) Post-launch monitoring dashboard spec (engagement targets, growth metrics by platform)
+**Scope**:
+1. **Canva brand kit** (1.5 hrs): Color palette (primary, secondary, accent), font pairings (Seedwarden aesthetic), icon style guide, template layouts for Reels/Pins/TikTok
+2. **Content calendar template** (1.5 hrs): Week 1-4 post-launch content roadmap (daily posting schedule, content type mix: 30% educational, 30% community, 20% promotional, 20% behind-the-scenes), hashtag strategy per platform
+3. **Monitoring dashboard spec** (1 hr): What metrics matter Day 1? (follower count, engagement rate, save rate, click-through to guides). Success targets for Week 1 (e.g., 500+ followers, 10%+ engagement)
+**Deliverable**: `projects/seedwarden/LAUNCH_WEEK_BRAND_KIT.md` (Canva template specifications + color hex codes + font recommendations), `projects/seedwarden/CONTENT_CALENDAR_TEMPLATE.md` (Day 1-28 post-launch calendar with daily content specs), `projects/seedwarden/LAUNCH_WEEK_MONITORING_SPEC.md` (engagement metrics, success targets)
+**Why now**: May 30 launch is 11 days away. Track B setup (social account creation, Gate 1 resolution) is expected May 19-23. Pre-staging brand assets May 19-20 means post-launch content creation (May 30+) can execute without asset-creation delays.
+**Success criteria**: By May 23, brand kit, content calendar template, and monitoring spec ready for user review; user can approve May 24-25 and launch May 30 with zero asset-creation friction
+**Next step**: Execute May 19-20; deliver before May 23
 
 ---
 

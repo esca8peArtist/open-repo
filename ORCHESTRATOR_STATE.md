@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-19T20:58:48Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-19T21:40:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 1.9% | Reset in 147h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.0% | Reset in 146h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,24 +24,24 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PATH DECIDED] Wave 1 EXECUTION — COMPLETE (May 18, 08:00–10:00 UTC).** ✅ **5 Batch 1 emails sent, distributed by 10:00 UTC**. **POST-WAVE-1 MONITORING ACTIVE (May 18-21, 72h window, Status: May 19 10:46 UTC — Session 1337 breaking developments scan COMPLETE).** ✅ **MAY 21 SYNTHESIS READINESS CONFIRMED (Session 1337, 10:46 UTC)**: All 5 synthesis parts verified present and production-ready. Execution deterministic and autonomous. **PHASE 2 RESEARCH ACTIVATION CHECKLIST COMPLETE & VER … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **May 21 SYNTHESIS EXECUTION READY** — Wave 1 distribution complete, 5 synthesis parts verified. May 20 evening: user fills signal log. May 21 19:00–20:00 UTC: autonomous synthesis execution. Phase 2 research activation infrastructure complete (`phase-2-research-activation-checklist.md`, `phase-2-research-timeline-template.md`, Domains 56+58 research complete). **CRITICAL PATH**: Signal log fill May 20 evening → May 21 synthesis → Phase 2 launch if outcome STRONG/MODERATE.
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
-**Focus**: **PHASE 1 IN PROGRESS — Windows/iPhone/Signal/Authenticator/Passwords setup.** User at step 1.3 (VeraCrypt restart required). PHASE_1_NEXT_STEPS_GUIDE.md (steps 1.4-1.7: Ente Auth, Bitwarden, data broker opt-outs, iPhone passcode, 1.5-2 hrs) production-ready post-restart. **PHASE 2 ROADMAP COMPLETE (Session 1345): PHASE_2_IMPLEMENTATION_ROADMAP.md (4,167 words, 3-wave sequencing, production-ready for May 25-27 user review).** Finding: All 6 scenario playbooks (50,000 words) already complete; P … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **PHASE 1 IN PROGRESS** — Step 1.3 VeraCrypt restart pending. Steps 1.4–1.7 (Ente Auth, Bitwarden, data broker opt-outs, 1.5–2 hrs) ready post-restart. **PHASE 2 ROADMAP COMPLETE** — `PHASE_2_IMPLEMENTATION_ROADMAP.md` (3-wave sequencing), all 6 scenario playbooks ready (50K words), ready for May 25–27 user review and execution.
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 checkpoint EXECUTED (00:41 UTC, STILL_MISS_B2 outcome). Awaiting user approval for Lever B escalation.
-**Focus**: **[BLOCKED — Lever B HMM Config Activation] (May 19, Session 1341).** Lever B code deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`), but `active-sessions-2session.json` config missing `"hmm_regime_masking": true` flag. **What's blocking**: SSH auth to Jetson (orchestrator's ED25519 key not authorized in Jetson's `authorized_keys`). **What's ready**: Comprehensive activation guide + ready-to-deploy config created (`LEVER_B_ACTIVATION_GUIDE.md`, `active-sessions-2session-LEVER-B- … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[BLOCKED — SSH AUTH FAILURE, CRITICAL DEADLINE MAY 22 13:30 UTC]** Lever B code deployed, but config missing `"hmm_regime_masking": true` flag. SSH auth to Jetson failed (orchestrator key not authorized). **User action required by May 22 13:30 UTC**: Either (A) Add orchestrator's public key to Jetson authorized_keys, OR (B) SSH manually and run 5-min config fix (see BLOCKED.md). Activation guide + ready config available. Trading engine healthy: 2 sessions, 34 fills, $115K equity.
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **Track B — May 30 LAUNCH TARGET (11 days remaining, fully operationalized).** ✅ **[ITEMS 27, 90, 91, 92 COMPLETE] LAUNCH SEQUENCE COMPLETE (Session 1338, May 19).** Content calendar + audience research integration (Item 27), Gate 1 rapid setup guide (Item 90), pre-launch master checklist 3-day sprint May 27-29 (Item 91), email automation sequence 5-email + fallback (Item 92). **ALL DELIVERABLES PRODUCTION-READY**: 1,653 lines of operationalized framework. **PHASE 3 CRITICAL PATH VERIFIED CO … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **TRACK B — MAY 30 LAUNCH TARGET (11 days).** ✅ Launch sequence complete (content calendar, rapid setup guide, master checklist, email automation — 1,653 lines production-ready). Phase 3 critical path complete (22-day timeline June 22–July 13, sourcing + writing + Canva, 3 scope options identified). **Awaiting user**: Gate 1 resolution → Brand Kit setup May 19–23 → Final checks May 27–29 → Launch May 30.
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5 CANDIDATE 1 VERIFICATION COMPLETE] Phase 4 complete. Candidate 3 (README security fix, 0.0.0.0→127.0.0.1) MERGED.** PR #1 (Wave 4 Federation, 194 tests) merged to main. ✅ **PHASE 5 CANDIDATE 1 IMPLEMENTATION COMPLETE & VERIFIED (Session 1353 implementation, Session 1358 verification)**:
+**Focus**: **[PHASE 5 CANDIDATE 1 VERIFICATION COMPLETE] Phase 4 complete. Candidate 3 (README security fix, 0.0.0.0→127.0.0.1) MERGED.** PR #1 (Wave 4 Federation, 194 tests) merged to main. ✅ **PHASE 5 CANDIDATE 1 GO/NO-GO STATUS (Session 1364, May 19 21:30–22:10 UTC, comprehensive verification)**:
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
@@ -94,11 +94,6 @@
 **What I need**: Either (A) Add orchestrator's public key to Jetson's authorized_keys on remote machine (requires existing access), OR (B) SSH to Jetson manually and execute the 5-minute Lever B config fix yourself **by May 22 13:30 UTC (13 hours 35 minutes remaining)**. **Fix commands (run on Jetson via SSH with your existing credentials)**:
 ```bash
 
-## State Drift Warnings
-⚠️ STALE FOCUS: resistance-research — focus references Session 1337 (26 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 1345 (18 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: stockbot — focus references Session 1341 (22 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: seedwarden — focus references Session 1338 (25 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
