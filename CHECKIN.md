@@ -26,6 +26,13 @@
 
 **Why This Matters**: Test print is currently the only blocker for May 29-Jun 2 Etsy launch window. Item 85 framework enables rapid execution path once test results arrive.
 
+### ✅ Item 88: Stockbot Post-Checkpoint Decision Framework (COMPLETE)
+**Deliverable**: `POST_CHECKPOINT_DECISION_FRAMEWORK_MAY22.md` (production-ready, callable at 2026-05-22 20:00 UTC)
+
+**What was delivered**: One-page decision matrix + 5 scenario sections (PASS, NEAR_MISS_B2, FAR_MISS_LEVER_A_ONLY, FAR_MISS_C1_ASYNC, FAR_MISS_C2_OUTAGE) with pre-mapped action sequences for each. Pre-checkpoint verification checklist (SSH status, Lever B config status). Gate 2 activation logic for AMZN/JPM scaling. Emergency protocols for infrastructure failures. Execution checklist (May 22 20:00–21:30 UTC timeline).
+
+**Why this matters**: May 22 checkpoint executes in 3 days. Framework enables deterministic post-checkpoint decisions within 60 minutes of execution with zero analysis lag. May 19 outcome was STILL_MISS_B2; May 22 will test Lever B effectiveness (if SSH key added) or repeat May 19 (if SSH blocked). Both paths pre-built.
+
 ### 🔴 Block Status — Unchanged (All 3 Active)
 - **stockbot**: SSH auth broken (52 hours to May 22 13:30 UTC deadline). Blocks Lever B HMM config activation. Jetson is reachable but public key not authorized.
 - **cybersecurity-hardening**: Phase 1 paused on VeraCrypt restart (user action).

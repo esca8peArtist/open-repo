@@ -74,7 +74,30 @@
 - Item 85 blocked (test print)
 - Items 86, 87 timing-dependent (May 21+, May 25+)
 
-**Token Usage**: ~35K this session (research integration + document generation)
+**Token Usage**: ~35K for Item 27
+
+---
+
+### ✅ Item 88: Stockbot Post-Checkpoint Decision Framework (May 22)
+
+**Deliverable**: `POST_CHECKPOINT_DECISION_FRAMEWORK_MAY22.md` (production-ready decision guide)
+
+**What was created**:
+- **One-page decision matrix**: Maps May 22 checkpoint outcome signals to decision paths (PASS, NEAR_MISS_B2, FAR_MISS_LEVER_A_ONLY, FAR_MISS_C1_ASYNC, FAR_MISS_C2_OUTAGE)
+- **Pre-checkpoint verification checklist**: SSH status, Lever B config status, engine health (must verify before 20:00 UTC May 22)
+- **Five decision sections** (1–5): Each with full context, what it means, immediate actions, and timeline
+- **Gate 2 activation logic**: Conditional path for AMZN/JPM session scaling (depends on h+10 SELL execution)
+- **Emergency protocols**: Escalation paths for SSH auth unresolved (Lever B undeployed) and infrastructure outages
+- **Execution checklist**: May 22 20:00–21:30 UTC timeline (checkpoint → route → decision → actions)
+- **Quick reference metrics table**: Interpretation guide for 6 key checkpoint metrics
+
+**Why this matters**: May 22 checkpoint (20:00 UTC) will execute in 3 days. Having a deterministic decision framework ready enables immediate post-checkpoint action (no analysis loop, no delays). May 19 checkpoint produced STILL_MISS_B2 outcome (Lever A only; no h+10 sell). May 22 will test whether Lever B HMM improves the outcome (if SSH key is added by May 22 13:30 UTC) or repeats May 19 (if SSH remains blocked). Framework pre-builds both paths.
+
+**Status**: PRODUCTION READY — callable at 2026-05-22 20:00 UTC
+
+**Impact**: May 22–25 post-checkpoint work (Gate 2 scaling vs. escalation vs. troubleshooting) will execute within 60 minutes of checkpoint completion, with zero discovery lag.
+
+**Token Usage**: ~25K for Item 88 (decision framework design + scenario mapping + action sequencing)
 
 ---
 
