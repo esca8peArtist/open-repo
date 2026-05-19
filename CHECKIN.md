@@ -1,13 +1,20 @@
-## Since Last Check-in (Session 1293, 02:15–ongoing UTC May 19)
+## Since Last Check-in (Session 1293, 02:15–02:45 UTC May 19)
 
-**Session Status**: ✅ **DOMAIN 58 CRITICAL REWRITE COMPLETE** — Autonomous domain factual update executed. Domain 58 *Turtle Mountain v. Howe* litigation section updated for May 18 SCOTUS GVR outcome (cert-pending scenario replaced with GVR remand + Eighth Circuit reconsideration mechanics). **All four synthesis domains (1, 37, 56, 58) now verified current through May 19, 2026.** May 21 synthesis framework ready for execution (19:00–20:00 UTC).
+**Session Status**: ✅ **DOMAIN 58 CRITICAL REWRITE COMPLETE + MAY 21 SYNTHESIS FRAMEWORK VERIFIED READY** — Autonomous domain factual update + infrastructure verification executed. Domain 58 *Turtle Mountain v. Howe* litigation section updated for May 18 SCOTUS GVR outcome. **All four synthesis domains (1, 37, 56, 58) verified current through May 19, 2026.** **May 21 synthesis and monitoring infrastructure fully staged and verified**: checklist ready, signal log structured, daily snapshots pre-built (fill-in-place format). **Orchestrator will execute May 21 19:00–20:00 UTC synthesis autonomously (30 min runtime).**
 
-**CRITICAL USER DECISIONS REMAIN NEEDED (Due TODAY May 19)**:
-1. **seedwarden Gate 2**: Canva Pro trial ($15/mo, 30-day free, RECOMMENDED) or free tier (manual hex workaround)?
-2. **seedwarden Gate 1**: Instagram/TikTok/Pinterest accounts live? (Was due May 18, escalated to May 19)
-3. **stockbot Lever B**: Proceed with 2-hour integration (code complete, infrastructure ready)?
+**🔴 CRITICAL USER DECISIONS DUE TODAY (May 19 — BLOCKING EXECUTION)**:
+1. **seedwarden Gate 2**: Canva Pro trial ($15/mo, 30-day free, **STRONGLY RECOMMENDED**) or free tier (manual hex workaround)?
+2. **seedwarden Gate 1**: Instagram/TikTok/Pinterest accounts live? (Was due May 18, **escalated to May 19 CRITICAL**). If not, execute today.
+3. **stockbot Lever B**: Proceed with 2-hour integration (code 100% complete, infrastructure ready, May 26 effectiveness target)?
 
-**Current Time**: May 19, 2026, 02:20 UTC (42 hours to resistance-research May 21 synthesis; 45 hours to stockbot May 22 checkpoint; 11 days to seedwarden May 30 launch)
+**Current Time**: May 19, 2026, 02:45 UTC (41 hours to resistance-research May 21 synthesis; 45 hours to stockbot May 22 checkpoint; 11 days to seedwarden May 30 launch)
+
+**May 21 READINESS STATUS** ✅:
+- Domain 58 *Turtle Mountain* update — COMPLETE
+- Signal log structure — READY for daily user entries
+- May 21 synthesis checklist — COMPLETE (25-30 min autonomous execution at 19:00 UTC)
+- Domain 42 DEA execution checklist — COMPLETE (user action 08:00-12:30 ET May 21)
+- User gate: Gist baseline check (5 min before 19:00 UTC) — **CRITICAL — blocks synthesis accuracy**
 
 ---
 
