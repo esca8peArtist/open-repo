@@ -1,3 +1,42 @@
+## Since Last Check-in (Session 1323, May 19 06:51–07:15 UTC)
+
+**Session Status**: 🟡 **HOLDING PATTERN — No autonomous work available; critical-path events scheduled**
+
+**Assessment**: All higher-priority projects blocked on user actions or scheduled events. Exploration queue has 0 active executable items. This is expected given the imminent May 21 synthesis (autonomous) and May 22 checkpoint (blocked on Lever B config activation).
+
+**What was done**:
+- Full state orientation: read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
+- Verified all 5 active blocks remain unchanged (no user resolutions submitted)
+- Confirmed no INBOX items to process
+- Assessed all projects for unblocked work — found none
+- Checked exploration queue — 0 active executable items (all staged/complete/crossed-out)
+
+**Critical items needing user action**:
+
+1. **🔴 CRITICAL — May 22 13:30 UTC Lever B HMM Config Activation** (52 hours remaining)
+   - **Block**: SSH auth failure on orchestrator → Jetson (Key not authorized on Jetson)
+   - **Options**: 
+     - **(A)** Restore SSH access: provide correct SSH key or password setup for `ubuntu@100.120.18.84`
+     - **(B)** Manual fix: SSH to Jetson yourself and run commands from `projects/stockbot/jetson-pre-checkpoint-validation-report.md` (5 min, sections "Fix Command 1" and "Fix Command 2")
+   - **Impact**: If not activated by deadline, May 22 checkpoint re-tests Lever A (repeats May 19 STILL_MISS_B2)
+   - **Verify command**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+
+2. **May 20 evening** — Fill Wave 1 signal log for resistance-research (15-30 min, unblocks May 21 synthesis)
+
+3. **Any time pre-May 30**: Create seedwarden social media accounts (Gate 1: Instagram/TikTok/Pinterest, overdue)
+
+4. **Any time**: Execute mfg-farm test print (unblocks Etsy launch)
+
+5. **Any time**: Complete cybersecurity-hardening Phase 1 VeraCrypt restart (Windows)
+
+**Next scheduled events**:
+- **May 21 19:00 UTC** — Autonomous resistance-research synthesis (Wave 1 monitoring data → Phase 2 path decision)
+- **May 22 20:00 UTC** — Checkpoint execution (Lever B if config activated; Lever A if not)
+
+**Session Assessment**: Session is a check-in and state verification in a holding pattern. No changes to BLOCKED.md, PROJECTS.md, or INBOX.md. All state files remain unchanged. Awaiting user actions before next autonomous work becomes available.
+
+---
+
 ## Since Last Check-in (Session 1322, May 19 06:43–07:00 UTC)
 
 **Session Status**: ✅ **AUTONOMOUS EXECUTION COMPLETE — Item 67 Domain 58 Verification finished; May 21 synthesis fully staged**
