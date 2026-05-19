@@ -1,20 +1,28 @@
-## Since Last Check-in (Session 1293, 02:15–02:45 UTC May 19)
+## Since Last Check-in (Session 1294, 01:00–02:00 UTC May 19)
 
-**Session Status**: ✅ **DOMAIN 58 CRITICAL REWRITE COMPLETE + MAY 21 SYNTHESIS FRAMEWORK VERIFIED READY** — Autonomous domain factual update + infrastructure verification executed. Domain 58 *Turtle Mountain v. Howe* litigation section updated for May 18 SCOTUS GVR outcome. **All four synthesis domains (1, 37, 56, 58) verified current through May 19, 2026.** **May 21 synthesis and monitoring infrastructure fully staged and verified**: checklist ready, signal log structured, daily snapshots pre-built (fill-in-place format). **Orchestrator will execute May 21 19:00–20:00 UTC synthesis autonomously (30 min runtime).**
+**Session Status**: ✅ **MAY 21 SYNTHESIS EXECUTION READY FOR AUTONOMOUS RUN** — Infrastructure verification completed. **All 5 synthesis parts verified production-ready + verified executable (no missing scaffolding, no structural issues).** May 21 autonomous execution at 19:00–20:00 UTC will proceed as scheduled. **May 22 stockbot checkpoint script verified; execution ready upon Lever B approval. Domain 42 DEA Category A batch status flagged as URGENT — May 21 is last viable send day.**
 
-**🔴 CRITICAL USER DECISIONS DUE TODAY (May 19 — BLOCKING EXECUTION)**:
-1. **seedwarden Gate 2**: Canva Pro trial ($15/mo, 30-day free, **STRONGLY RECOMMENDED**) or free tier (manual hex workaround)?
-2. **seedwarden Gate 1**: Instagram/TikTok/Pinterest accounts live? (Was due May 18, **escalated to May 19 CRITICAL**). If not, execute today.
-3. **stockbot Lever B**: Proceed with 2-hour integration (code 100% complete, infrastructure ready, May 26 effectiveness target)?
+**Synthesis Readiness Verification Complete**:
+✅ Part 1 (Signal classification framework) — complete, fill-in-place format ready
+✅ Part 2 (Phase 2 path decision logic) — all 4 branches fully specified
+✅ Part 3 (May 28 DEA deadline prep) — 28-contact send table + checklist complete  
+✅ Part 4 (Signal scoring / Gist delta tool) — dashboard + calculator verified
+✅ Part 5 (Supporting infrastructure) — all 6 files complete, cross-references verified
+✅ Pre-execution requirements: May 20 evening monitoring + May 21 morning check (data fill-in only)
 
-**Current Time**: May 19, 2026, 02:45 UTC (41 hours to resistance-research May 21 synthesis; 45 hours to stockbot May 22 checkpoint; 11 days to seedwarden May 30 launch)
+**🔴 CRITICAL USER DECISIONS STILL BLOCKING (Due TODAY May 19)**:
+1. **seedwarden Gate 2**: Canva Pro trial ($15/mo, 30-day free, STRONGLY RECOMMENDED) or free tier? (DUE TODAY — May 24 production window blocked without decision)
+2. **seedwarden Gate 1**: Instagram/TikTok/Pinterest accounts LIVE? (WAS DUE MAY 18, escalated to TODAY May 19)
+3. **stockbot Lever B**: Approve 2-hour HMM integration? (Code 100% complete, May 26 effectiveness target. May 22 checkpoint executable with or without Lever B.)
+4. **resistance-research Domain 42 DEA Category A**: Batch send status? May 21 is LAST VIABLE SEND DAY before May 28 deadline.
 
-**May 21 READINESS STATUS** ✅:
-- Domain 58 *Turtle Mountain* update — COMPLETE
-- Signal log structure — READY for daily user entries
-- May 21 synthesis checklist — COMPLETE (25-30 min autonomous execution at 19:00 UTC)
-- Domain 42 DEA execution checklist — COMPLETE (user action 08:00-12:30 ET May 21)
-- User gate: Gist baseline check (5 min before 19:00 UTC) — **CRITICAL — blocks synthesis accuracy**
+**Current Time**: May 19, 2026, 02:15 UTC (41 hours to May 21 synthesis; 45 hours to May 22 checkpoint; 11 days to seedwarden May 30)
+
+**Autonomous Execution Schedule**:
+- **May 21 19:00–20:00 UTC**: resistance-research synthesis execution (30 min, fully autonomous)
+- **May 22 20:00 UTC**: stockbot checkpoint execution (if Lever B approved; if not, STILL_MISS_B2 likely repeats)
+- **May 24–25**: seedwarden zone-cards production (if Gate 2 decided today)
+- **May 28**: Domain 42 DEA Category A batch send deadline (last day if not sent May 21)
 
 ---
 
