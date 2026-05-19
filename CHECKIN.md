@@ -95,9 +95,19 @@ Three parallel subagents executed scheduled exploration queue items:
 **🟠 URGENT (BEFORE May 21 19:00 UTC)**:
 
 1. **Resistance-research Gist baseline**: Run incognito check on 5 Batch 1 Gist URLs, record delta since H+0 (May 18 08:00 UTC) in `wave-1-signal-log-may18-21.md` May 18 snapshot. (5-min user action)
-2. **Domain 42 DEA Category A**: Confirm if 7-organization batch sent May 8–10 as originally planned, or if May 21 compressed execution needed (May 21 is last viable day, deadline May 28).
 
-**Decision required**: Return answers in next message. Items 1-3 block May 30 seedwarden/May 22 stockbot execution.
+2. **Domain 42 DEA Category A sends — CONFIRMED UNSENT; May 21 is final send day** ⚠️
+   - **Status**: BATCH_1_CONTACT_LOG.md Domain 42 sub-batch shows all 5 organizations (DPA, NORML, ACLU, Sentencing Project, LEAP) with **blank send dates** as of May 13
+   - **Critical finding**: Emails are fully drafted, Gist is LIVE ✓, only action remaining is fill your name/contact info and execute on May 21
+   - **Timeline**: May 21 (TODAY + 2 days) is the **absolute last viable send day** — organizations need 7+ days to draft participation notice before May 28 deadline
+   - **Orchestrator action completed**: Created comprehensive execution checklist at `projects/resistance-research/MAY_21_DOMAIN42_EXECUTION_CHECKLIST.md` with all verification steps, email sending sequence (staggered), and follow-up protocol
+   - **Your action on May 21** (2-2.5 hours total):
+     1. 08:00-09:00 ET: Run all 5 verification steps (DEA docket, Gist, contact emails, templates)
+     2. 09:30-11:30 ET: Send 5 Category A emails (staggered 25-30 min apart)
+     3. 12:00-12:30 ET: Update send logs
+   - **Ready to execute**: Checklist is production-ready; all pre-work complete
+
+**Decision required**: Return answers to items 1-3 (above) in next message. Items 1-3 block May 30 seedwarden/May 22 stockbot execution.
 
 ### Key Dates & Milestones
 
