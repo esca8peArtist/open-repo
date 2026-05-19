@@ -5,6 +5,101 @@
 
 ---
 
+## Active Items (Session 1334, May 19, 09:41 UTC)
+
+### ⏳ Item 82: Seedwarden Track B — Audience Research & Competitive Positioning Strategy
+**Status**: NEW (Session 1334, May 19 2026, 09:41 UTC)
+**Priority**: HIGH — May 30 launch target (11 days); pre-launch research enables Day 1 maximum reach
+**Impact**: HIGH — Validated audience profile + competitor gaps inform content calendar post-launch, enabling data-driven optimization
+**Goal**: Research and document: (1) Exact target audience profile across 4 social platforms (demographics, interests, pain points, content consumption patterns), (2) Competitive landscape analysis (top 20 competitors on Instagram/TikTok/Pinterest, feature gaps, content strategy differences), (3) Content differentiation strategy (what Seedwarden does uniquely vs competitors), (4) Launch week engagement strategy (hashtag research, collab opportunities, micro-influencer overlap analysis)
+**Scope**:
+1. **Audience research** (1.5 hrs): Analyze follower profiles of 10 reference accounts (homesteading, permaculture, plant ID content), platform algorithm insights (Reels vs TikTok vs Pins performance), seasonal demand patterns (May gardening season advantage)
+2. **Competitive analysis** (2 hrs): Top 20 competitors across platforms, feature inventory (guides, seed sources, tools, community), content calendar patterns (posting frequency, content mix ratios), gap identification (what's missing in existing content)
+3. **Differentiation strategy** (1 hr): Seedwarden unique value (Midwest Zone 5 + combination of wild edibles + cultivated + ecosystem), positioning vs broader homesteading influencers
+4. **Launch week tactical plan** (1 hr): Hashtag strategy per platform, micro-influencer collab targets (15+ candidates with matching audiences), press release angles, organic growth levers
+**Feasibility**: HIGH — Platform data publicly available; competitive analysis straightforward; audience insights from analytics + research tools (Semrush, Brandwatch trial)
+**Effort estimate**: 4–4.5 hours
+**Deliverable**: 
+- `projects/seedwarden/TRACK_B_AUDIENCE_RESEARCH.md` (2,500+ words, demographic profile, platform-specific audience breakdowns, seasonal trends, psychographic insights)
+- `projects/seedwarden/COMPETITIVE_POSITIONING_ANALYSIS.md` (2,000+ words, feature matrix 20 competitors, gap analysis, differentiation angles)
+- `projects/seedwarden/LAUNCH_WEEK_GROWTH_STRATEGY.md` (1,500+ words, hashtag research + volume, 15 micro-influencer targets + intro templates, press angles, Day 1-7 growth projections)
+**Why now**: May 30 launch 11 days away. Once social accounts are created (Gate 1, still awaited), Day 1 content calendar + growth strategy must be ready to deploy. Pre-staging research now means May 24-29 is pure execution, not discovery.
+**Success criteria**: By May 25, clear audience persona + 3 content differentiation angles + 15 micro-influencer outreach targets ready
+**Next step**: Execute May 19-20; deliver before May 22 so content calendar (Item 27) can integrate audience insights into post calendar
+
+---
+
+### ⏳ Item 83: Open-repo Phase 5 Implementation Roadmaps (Candidates 1 & 2) — DETAILED EDITION
+**Status**: NEW (Session 1334, May 19 2026, 09:41 UTC)
+**Priority**: HIGH — Phase 5 user decision pending; detailed roadmaps enable rapid execution post-approval
+**Impact**: HIGH — Removes last friction point for Phase 5 launch; user chooses based on clear code-level effort/impact estimates
+**Goal**: Pre-stage detailed implementation roadmaps for Phase 5 Candidates 1 (ZimWriter offline access, 4-6h) and 2 (OPDS feedgen, 3-4h) covering: (1) Exact code entry points and files to modify, (2) Test matrix and coverage requirements per candidate, (3) Integration sequence with Wave 4 federation, (4) Deployment gates and go-live checklist, (5) Post-launch monitoring
+**Scope**:
+1. **Candidate 1: ZimWriter Implementation** (2 hrs):
+   - Architecture diagram: offline library structure + compression approach
+   - Code entry points: federated_index.py, federation_service.py integration points
+   - Database schema for offline archive metadata
+   - Serialization/sync protocol (what gets bundled, when, how to verify offline integrity)
+   - Test matrix: 8-12 test scenarios (download, offline read, corrupted archive recovery, sync conflict)
+   - Integration sequence: Phase 4 → add offline module → wire federation → test → deploy
+
+2. **Candidate 2: OPDS Implementation** (2 hrs):
+   - Architecture diagram: OPDS 1.2 catalog structure, feed generation approach
+   - Code entry points: publication_service.py, new opds_generator.py module
+   - Metadata mapping: existing book metadata → OPDS feed fields (required vs optional)
+   - Pagination/filtering for large catalogs
+   - Test matrix: 6-8 test scenarios (feed validity, pagination, metadata accuracy, feed discovery)
+   - Integration sequence: Phase 4 → add OPDS generator → wire federation → test → deploy
+
+3. **Decision framework** (30 min): Which candidate first based on impact vs effort tradeoff, interdependencies, Phase 6 implications
+
+4. **Go-live checklist** (30 min): Pre-deployment verification, rollback procedure, monitoring dashboards (user download patterns, feed consumption, error rates)
+
+**Feasibility**: HIGH — Phase 4 code complete (255 tests passing); candidate scopes are well-defined
+**Effort estimate**: 4–4.5 hours
+**Deliverable**: 
+- `projects/open-repo/PHASE_5_CANDIDATE_1_ZIMWRITER_IMPLEMENTATION_ROADMAP.md` (architecture + code entry points + test matrix + 4-6h sequence)
+- `projects/open-repo/PHASE_5_CANDIDATE_2_OPDS_IMPLEMENTATION_ROADMAP.md` (architecture + code entry points + test matrix + 3-4h sequence)
+- `projects/open-repo/PHASE_5_IMPLEMENTATION_DECISION_TREE.md` (which candidate first, integration order, risk assessment per candidate)
+**Why now**: Phase 5 decision awaited. Detailed roadmaps remove "I don't know how long this will take" uncertainty and enable user to choose confidently.
+**Success criteria**: By May 22, user can look at Candidate 1 roadmap + Candidate 2 roadmap and know exactly what they're committing to
+**Next step**: Execute May 19-20; deliver before May 22 checkpoint so user can review and decide May 22-23
+
+---
+
+### ⏳ Item 84: Systems-resilience Phase 4 — Research Architecture & Implementation Roadmap
+**Status**: NEW (Session 1334, May 19 2026, 09:41 UTC)
+**Priority**: HIGH — May 21 synthesis outcome determines Phase 4 launch; pre-staging removes decision paralysis
+**Impact**: HIGH — If synthesis is STRONG/MODERATE, Phase 4 begins June 1; having roadmap ready enables day-1 agent handoff
+**Goal**: Pre-stage Phase 4 research architecture and implementation roadmap covering: (1) Phase 4 scope definition (individual-scale how-to guides? household implementation? community builder toolkit?), (2) Domain prioritization based on May 21 synthesis outcome branches, (3) Research outline architecture for each domain, (4) Agent assignment and sequencing for parallel research, (5) Success metrics and completion timeline
+**Scope**:
+1. **Phase 4 scope decision framework** (1 hr): Analysis of 3 options:
+   - Option A: Individual-scale how-to guides (water harvesting, food preservation, medical remedies) — 40-50 hrs, June 1-July 15 timeline, DIY execution focus
+   - Option B: Household implementation roadmap (coordinate Phase 2 domains into unified household setup plan) — 30-40 hrs, June 1-July 1, systems integration focus
+   - Option C: Community builder toolkit (Phase 3 principles + practical gov/food/info infrastructure templates for groups 100-500 people) — 60-80 hrs, June 1-Aug 15, institutional design focus
+2. **May 21 synthesis integration** (1 hr): How May 21 resistance-research synthesis outcome (STRONG/MODERATE/WEAK/TOO_EARLY) gates Phase 4 scope:
+   - STRONG/MODERATE: All three Phase 4 options viable; user prioritizes based on urgency/audience
+   - WEAK: Phase 4 deferred or Option A (simplest, fastest) recommended
+   - TOO_EARLY: Phase 4 contingency planning (what takes priority instead)
+3. **Research outlines for 3 candidate domains** (1.5 hrs): Detailed outline skeletons for:
+   - How-to guide: Food preservation (smoking, root cellar, fermentation + Midwest specific)
+   - Implementation roadmap: Household water system (rainwater + greywater + storage + treatment)
+   - Community toolkit: Governance document templates + decision-making protocols + crisis communication
+4. **Agent sequencing** (1 hr): If Phase 4 launches, which domains research in parallel (water + food + governance independent)? Which require Phase 1/2/3 completion first?
+5. **Timeline and milestones** (30 min): June-August execution roadmap with user review gates, delivery dates per domain
+
+**Feasibility**: HIGH — Phase 1-3 complete; research patterns established; scope options are clear
+**Effort estimate**: 4–4.5 hours
+**Deliverable**: 
+- `projects/systems-resilience/PHASE_4_SCOPE_OPTIONS_AND_DECISION_FRAMEWORK.md` (Option A/B/C analysis, May 21 synthesis integration, user decision guide)
+- `projects/systems-resilience/PHASE_4_RESEARCH_OUTLINES_SAMPLE_DOMAINS.md` (3 detailed research outline examples: how-to + implementation + community toolkit)
+- `projects/systems-resilience/PHASE_4_IMPLEMENTATION_ROADMAP.md` (research sequencing, agent assignment, June-August timeline, success criteria)
+**Why now**: May 21 synthesis outcome determines Phase 4 viability. Having 3 option packages ready means user can choose May 21 evening, and Phase 4 begins June 1 without delay.
+**Success criteria**: By May 21 evening, user can read 3 Phase 4 options and know exactly what Phase 4 looks like under each synthesis outcome
+**Next step**: Execute May 19-20; deliver May 21 morning (before synthesis execution at 19:00 UTC) so user has options ready for decision if synthesis is positive
+
+---
+
 ## Active Items (Session 1324, May 19)
 
 ### ✅ Item 23: Stockbot SSH Key Distribution & Authentication Alternatives
