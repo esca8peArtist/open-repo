@@ -56,8 +56,8 @@
 
 ---
 
-### ⏳ Item 25: Resistance-research Phase 2 Domain 59 — Economic Precarity Research Architecture
-**Status**: PENDING (Session 1324, May 19 2026, 08:17 UTC)
+### ✅ Item 25: Resistance-research Phase 2 Domain 59 — Economic Precarity Research Architecture
+**Status**: COMPLETE (Session 1329, May 19 2026, 09:30 UTC; originally started Session 1324)
 **Priority**: HIGH — Enables Phase 2 execution post-May-21-synthesis (candidates identified: Domains 57, 59, 57-59 timeline)
 **Impact**: HIGH — Pre-stages research outline + source list for Q2-Q3 Phase 2 launch; removes research initiation friction
 **Goal**: Draft comprehensive research architecture for Phase 2 Domain 59 (Economic Precarity as Democratic Exclusion Mechanism). Outline causal pathways, movement leverage, source categories, production timeline. Enable immediate research start (June 15 target per PROJECTS.md) if May 21 synthesis is STRONG or MODERATE
@@ -74,6 +74,60 @@
 **Why now**: May 21 synthesis determines Phase 2 launch. If synthesis is STRONG/MODERATE, Domain 59 (Economic Precarity) is one of three sequenced Phase 2 candidates. Pre-staging research architecture removes initiation friction and enables June 15 research start without delay
 **Next Step**: Execute immediately; deliver by May 19 EOD. On May 21 post-synthesis, if positive, research can begin immediately June 1-15 for July 15 distribution target
 **Key decision**: Does economic precarity domain focus on individual-scale (household debt/labor precarity) or system-scale (inequality drivers)? This determines framing and evidence base.
+
+---
+
+### ⏳ Item 26: open-repo Phase 5 Candidate Comparison & Decision Matrix
+**Status**: PENDING (Session 1329, May 19 2026)
+**Priority**: HIGH — Unblocks Phase 5 immediate execution post-user-decision
+**Impact**: HIGH — Enables rapid candidate prioritization for Phase 5 launch
+**Goal**: Create side-by-side comparison matrix for Phase 5 candidates (1: ZimWriter offline access tool, 2: OPDS feeds) with implementation checklists. Enable user to make binary priority decision in <5 minutes.
+**Scope**:
+1. **Candidate comparison matrix** (2 hours): Feature set, implementation complexity (hours), risk profile, user impact per candidate. Matrix: ZimWriter vs OPDS across 12 dimensions (offline access, feed richness, API integration, deployment complexity, maintenance burden, user documentation, etc.)
+2. **Implementation checklists** (1.5 hours): Step-by-step breakdown for each candidate showing what orchestrator will build, what user must approve, what can execute immediately post-approval
+3. **Success metrics per candidate** (30 min): What constitutes "done" for Phase 5 per candidate (test coverage, documentation, deployment readiness)
+4. **Timeline estimate**: Both candidates show 4–6 hour implementation windows; matrix clarifies relative feasibility
+**Feasibility**: HIGH — Prior Phase 4 docs contain full candidate scope; synthesis is straightforward
+**Effort estimate**: 3.5 hours
+**Deliverable**: `projects/open-repo/PHASE_5_CANDIDATE_DECISION_MATRIX.md` (2,500+ words, visual matrix, implementation checklists per candidate, 5-minute user decision guide)
+**Why now**: Phase 4 complete (both candidates ready), Phase 5 user decision is only blocker. Candidate decision matrix removes analysis burden — user sees pros/cons formatted for rapid decision-making.
+**Next Step**: Execute immediately; deliver to enable Phase 5 launch immediately post-user-decision
+
+---
+
+### ⏳ Item 27: seedwarden Track B May 24–25 Zone-Card Production Readiness
+**Status**: PENDING (Session 1329, May 19 2026)
+**Priority**: HIGH — May 30 launch target (11 days), Track B production scheduled May 24–25
+**Impact**: MEDIUM-HIGH — Pre-stages exact templates + production workflow for 7.5–9 hour zone-card sprint
+**Goal**: Create Canva templates + production schedule + quality checklist for May 24–25 zone-card production sprint (7.5–9 hour timeline per ZONE_CARD_PRODUCTION_WORKFLOW.md). Enable execution without decision-making day-of.
+**Scope**:
+1. **Canva template pack** (2 hours): 5 base templates (zone map, plant ID card, habitat marker, fact box, QR code layout), all Canva Pro–compatible, with text/asset swap points clearly marked
+2. **Production schedule breakdown** (1 hour): Hour-by-hour timeline May 24–25, task allocation (graphics, copy, QR setup, export), decision milestones
+3. **Quality checklist** (30 min): Plant ID accuracy criteria, image licensing compliance, metadata verification (UTM codes, shortlink setup), format validation (export dimensions, file size)
+4. **Asset inventory** (1 hour): What's ready now vs what needs sourcing before May 24 (plant photos, Midwest location data, fact copy)
+**Feasibility**: HIGH — Seedwarden brand kit finalized (Session 1333); asset library exists; templates are straightforward Canva designs
+**Effort estimate**: 4 hours
+**Deliverable**: `projects/seedwarden/TRACK_B_MAY_24_PRODUCTION_TEMPLATES_AND_CHECKLIST.md` (3,500+ words, Canva template links, hour-by-hour schedule, quality checklist, asset inventory with sources)
+**Why now**: May 30 launch 11 days away, May 24–25 production sprint is next immediate milestone. Pre-staging templates + schedule removes decision paralysis day-of and ensures quality consistency.
+**Next Step**: Execute immediately; templates ready by May 20 EOD to allow user review/adjustment before May 24 sprint
+
+---
+
+### ⏳ Item 28: cybersecurity-hardening Phase 2 Implementation Playbook
+**Status**: PENDING (Session 1329, May 19 2026)
+**Priority**: MEDIUM — Prepares Phase 2 execution once Phase 1 completes (user restart required)
+**Impact**: MEDIUM — Removes friction from 3-week Phase 2 implementation once Phase 1 finishes
+**Goal**: Create detailed Phase 2 implementation playbook for 7-module security hardening (3-week execution roadmap). Phase 2 modules: (1) Secure email setup, (2) Secure device backup, (3) Travel security, (4) Incident response, (5) Operational security, (6) Supply chain defense, (7) Continuous learning. Define pre-requisites, success criteria, automation opportunities per module.
+**Scope**:
+1. **Module-by-module breakdown** (2 hours): Each of 7 modules: scope, pre-requisites, success criteria, estimated time, tooling requirements, documentation links
+2. **3-week execution calendar** (1 hour): Week 1 (Modules 1–2, ~6 hours), Week 2 (Modules 3–4, ~7 hours), Week 3 (Modules 5–7, ~6 hours). Decision points and testing windows.
+3. **Automation opportunities** (1.5 hours): Which Phase 2 steps can be scripted/automated (backup scheduling, incident playbook templates, supply chain monitoring). Identify orchestrator vs user action.
+4. **Success metrics** (30 min): What constitutes "Phase 2 complete" (all 7 modules verified, incident response practiced, continuous learning subscription active, etc.)
+**Feasibility**: HIGH — Phase 1 architecture established; Phase 2 modules are well-defined security standards (NIST, CISA, etc.)
+**Effort estimate**: 4.5 hours
+**Deliverable**: `projects/cybersecurity-hardening/PHASE_2_IMPLEMENTATION_PLAYBOOK.md` (4,500+ words, module-by-module checklists, 3-week calendar, automation scripts for where applicable, success rubric)
+**Why now**: Phase 1 nearing completion (user restart → steps 1.4–1.7, then Phase 2). Playbook removes implementation friction and enables rapid Phase 2 launch post-Phase-1-completion.
+**Next Step**: Execute immediately; ready for Phase 2 start once Phase 1 finishes (estimated May 22–23)
 
 ---
 
