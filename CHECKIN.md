@@ -30,6 +30,49 @@
 
 **Status**: Production-ready for May 21 19:00–20:00 UTC synthesis execution, May 21 evening post-synthesis Phase 2 activation
 
+---
+
+## 🎯 Needs Your Input — Critical Path to May 22 Checkpoint
+
+### 🔴 CRITICAL BLOCKER — Stockbot Lever B SSH Authentication (User Action Required)
+
+**Deadline**: May 22 13:30 UTC (market open)
+
+**What's blocking**: Orchestrator cannot SSH to Jetson to activate Lever B HMM regime masking config.
+
+**Your options**:
+1. **Option A** (recommended): Add orchestrator's public key to Jetson's `authorized_keys` file
+   - Run on Jetson: `echo "$(cat /home/awank/.ssh/id_ed25519.pub)" >> ~/.ssh/authorized_keys`
+   - Then orchestrator can rsync + restart automatically
+
+2. **Option B** (manual fix): SSH to Jetson yourself and edit config
+   - Command: `nano /opt/stockbot/config/active-sessions-2session.json`
+   - For each session block, add: `"hmm_regime_masking": true` in strategy_params
+   - Run: `docker restart stockbot`
+   - Verify: `curl http://localhost:8000/api/health` returns `{"status":"ok","sessions":2}`
+
+**Why this matters**: May 22 checkpoint will execute with Lever A config (same as May 19, which failed with STILL_MISS_B2). Lever B activation is required to test regime masking improvement.
+
+**Impact if not resolved**: May 22 checkpoint outcome will be deterministic FAIL (same as May 19). Lever B validation deferred to future checkpoints.
+
+### 📋 May 20-21 Signal Log & Synthesis (Autonomous Execution)
+
+**May 20 evening** (~22:00 UTC):
+- Fill `wave-1-signal-log-may18-21.md` with May 20 snapshot
+- Record brief signal strength assessment (strong/moderate/weak/equivocal)
+
+**May 21** (morning + evening):
+- Fill `wave-1-signal-log-may18-21.md` with May 21 pre-synthesis snapshot (before 19:00 UTC)
+- **19:00–20:00 UTC**: Synthesis execution runs autonomously (5 synthesis parts, deterministic 25–30 min)
+- **~20:00 UTC**: Read synthesis outcome classification (see `phase-2-post-synthesis-analysis-framework.md`)
+- **~20:00 UTC evening**: Activate Phase 2 research based on outcome (if STRONG/MODERATE, proceed with Domains 56–59)
+
+### 📅 Other Upcoming Deadlines
+
+**May 25–27**: Cybersecurity Phase 2 implementation roadmap review (all content ready, user decision on wave sequencing)
+
+**May 30**: Seedwarden Track B launch (all framework ready, user needs to complete: social account setup, Canva Brand Kit, Kit account)
+
 ### 📊 Project Status Update
 
 **Resistance-Research**: Wave 1 COMPLETE + Phase 2 activation infrastructure COMPLETE (synthesis analysis framework ready for May 21 execution)
