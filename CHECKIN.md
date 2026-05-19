@@ -1,3 +1,38 @@
+## Since Last Check-in (Session 1366, May 19 21:35–22:05 UTC)
+
+**Session Status**: 🟢 **COMPLETED — 3 EXPLORATION QUEUE ITEMS VERIFIED, CRITICAL OPEN-REPO FINDING, MAY 21-22 PREP READY**
+
+### Work Completed (3 parallel agents)
+- ✅ **resistance-research**: Phase 2 Research Activation Checklist + Timeline files verified production-ready (5,545 + 5,990 words, Sessions 1361/1364). Critical path documented: Domain 58 MUST complete before late June Trump v. Barbara ruling; Domains 56/59/57 have staggered deadlines through Aug 10.
+- ✅ **seedwarden**: Phase 3 Medicinal Herbs Critical Path rewritten to v4.0 (4,200+ words, self-contained). Embedded Gantt, hard-deadline consequences, float analysis, 15-item pre-sprint checklist. All 5 decision gates marked for May 30 scope determination.
+- ✅ **open-repo**: Phase 5 Candidate 1 verification audit complete. **CRITICAL FINDING: Implementation already done on feature/zimwriter-libzim-activation branch (ec0ff7be).** Merge takes 0.5–1h; from-scratch implementation unnecessary (would be 8–11h). libzim 3.10.0 ARM64 confirmed compatible.
+
+### Key Finding — Open-Repo Phase 5 Acceleration
+🟢 **Candidate 1 is ready to ship with minimal effort**:
+- Feature branch contains all 5 code changes from roadmap (already implemented)
+- Merge + test = ~1 hour vs. 8–11 hours from scratch
+- Path recommendation: Merge branch immediately upon May 25–26 user approval
+- Risks identified: zimcheck version strictness (title char limit), Xapian not enabled (search disabled until Phase 5.2), ArticleItem defined inline (minor), fallback PNG 48x48 (untested live but correct)
+
+### Critical Path — Immediate Next 48 Hours
+1. **May 20 evening** (user): Fill wave-1-signal-log-may18-21.md snapshots
+2. **May 21 19:00–20:00 UTC** (autonomous): Resistance-research synthesis (fully prepped)
+3. **May 22 13:30 UTC** (URGENT): Jetson SSH auth for Lever B — 12+ hours remaining, unresolved autonomously
+
+### Blocks Remaining
+- 🔴 **stockbot SSH auth** — May 22 13:30 UTC deadline (unresolvable autonomously)
+- **mfg-farm test print** — User action required
+- **cybersecurity-hardening Phase 1** — User Windows restart required
+- **seedwarden Track A** — User Etsy corrections required (Track B clear)
+
+### Timeline Summary
+- **May 21 post-synthesis**: Activate Phase 2 research if STRONG/MODERATE outcome
+- **May 22 20:00 UTC**: Stockbot checkpoint (autonomous)
+- **May 25-26**: open-repo Candidate 1 approval → 1-hour merge deployment
+- **May 25-30**: seedwarden Phase 2 launch → user chooses Phase 3 scope
+
+---
+
 ## Since Last Check-in (Session 1365, May 19 21:16–21:30 UTC)
 
 **Session Status**: 🟢 **COMPLETED — CRITICAL SSH BLOCK RE-VERIFIED, STALE FOCUS PRUNED, BLOCKERS CONFIRMED**

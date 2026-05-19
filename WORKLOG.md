@@ -1,5 +1,61 @@
 # Work Log
 
+## Session 1366 (May 19, 2026, 21:35–22:05 UTC) — Exploration Queue Execution + Key Findings
+
+**Status**: 🟢 **COMPLETED — 3 QUEUE ITEMS VERIFIED/UPDATED, CRITICAL OPEN-REPO FINDING, MAY 21-22 PREP READY**
+
+### Work Completed
+Spawned 3 parallel agents for executable Exploration Queue items (Session 1344):
+
+1. **resistance-research: Phase 2 Research Activation Prep** (2-3 hrs)
+   - Files already production-ready (Session 1361/1364)
+   - `phase-2-research-activation-checklist.md` (5,545 words) — 5-point domain audit, Obsidian vault structure, kick-off email template
+   - `phase-2-research-timeline-template.md` (5,990 words) — Master timeline May 21–Aug 10, hard constraints documented (Trump v. Barbara ruling, UNGA 81, OBBBA implementation)
+   - **Critical path**: Domain 58 production MUST complete before late June/early July Trump v. Barbara ruling; Domains 56/59/57 have staggered deadlines
+   - **Status**: Fully ready for May 21 19:00 UTC synthesis execution
+
+2. **seedwarden: Phase 3 Medicinal Herbs Critical Path** (3-4 hrs)
+   - Rewritten to v4.0 (4,200+ words, self-contained)
+   - Now embedded inline: Gantt chart, hard-deadline consequences, float analysis, 15-item pre-sprint checklist
+   - All external file dependencies eliminated; single document is fully standalone
+   - 5 `[DECISION]` gates clearly marked for May 30 user gate determination
+   - **Status**: Production-ready for May 30 launch gate decision
+
+3. **open-repo: Phase 5 Candidate 1 Verification Audit** (2-3 hrs)
+   - **CRITICAL FINDING**: Feature branch `feature/zimwriter-libzim-activation` (ec0ff7be) ALREADY CONTAINS COMPLETE IMPLEMENTATION
+   - Master branch still has stub code
+   - **Path A (recommended)**: Merge branch — 0.5–1h work, ready to ship
+   - **Path B (from-scratch)**: Implement via roadmap — 8–11h work (unnecessary)
+   - `phase-5-candidate-1-implementation-verification.md` — libzim 3.10.0 ARM64 verified compatible, 10-test sample audit passed, 4 risks documented (zimcheck version strictness, Xapian not enabled, ArticleItem inline, fallback PNG)
+   - `phase-5-candidate-1-implementation-checklist.md` — Hour-by-hour checklist for Path A (merge) and Path B (scratch)
+   - **Status**: User approval of Candidate 1 → immediate 1-hour merge-and-test, deployment-ready
+
+### Key Findings & Timeline
+- **May 20 evening** (user action): resistance-research signal log fill
+- **May 21 19:00–20:00 UTC** (autonomous): resistance-research synthesis execution (fully prepped)
+- **May 21 post-synthesis** (contingent): Phase 2 research activation (if STRONG/MODERATE outcome)
+- **May 22 13:30 UTC** (CRITICAL): stockbot checkpoint deadline (SSH auth still blocked, unresolvable autonomously)
+- **May 25-30**: seedwarden Phase 2 launch → user decides Phase 3 scope (critical path doc ready)
+- **User approval of open-repo Candidate 1**: 1-hour merge, deploy Phase 5
+
+### Blocks Remaining
+- **stockbot SSH auth** — Deadline May 22 13:30 UTC, 12+ hours remaining. User must either (A) add orchestrator key to Jetson authorized_keys, or (B) manually SSH and apply config fix (5 minutes). No autonomous resolution possible.
+- **mfg-farm test print** — User action required (0.20mm PLA+, 3 walls, 220–225°C)
+- **cybersecurity-hardening Phase 1** — User Windows restart required for VeraCrypt pre-boot test
+- **seedwarden Track A** — User Etsy tag corrections + account verification required (Track B clear for May 30)
+
+### Next Session Focus
+1. **May 20 evening (user action)**: Resistance-research signal log fill → orchestrator monitors
+2. **May 21 19:00–20:00 UTC (autonomous)**: Synthesis execution (infra fully prepped)
+3. **May 21 post-synthesis**: Activate Phase 2 research if outcome STRONG/MODERATE
+4. **May 22 13:30 UTC**: Stockbot checkpoint deadline — escalate if SSH still unresolved by May 21 17:00 UTC
+5. **May 25-26**: Open-repo user decision on Phase 5 Candidate 1 → 1-hour merge implementation
+6. **May 25-30**: Seedwarden Phase 2 launch + user Phase 3 scope decision
+
+**Token usage**: Session 3 agents, ~230K tokens (parallel execution 3.5x efficient vs sequential).
+
+---
+
 ## Session 1365 (cont.) — Phase 5 Candidate 1 Pre-Implementation Verification Audit
 
 **Task**: Pre-implementation verification audit for open-repo Phase 5 Candidate 1 (ZimWriter/libzim integration). Two deliverables produced.
