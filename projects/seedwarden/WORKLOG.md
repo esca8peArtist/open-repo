@@ -4,6 +4,47 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Agent Session — Phase 2 Supply Chain Risk & Contingency Planning (Exploration Queue) — 2026-05-19
+
+**Task**: Exploration Queue item — "Phase 2 Supply Chain Risk & Contingency Planning." Build
+comprehensive contingency plan assuming Gate 1 (social accounts) and Gate 2 (Canva Brand Kit)
+resolve today, May 19. 11 days remaining to May 30 launch.
+
+**File written**:
+
+`projects/seedwarden/PHASE_2_SUPPLY_CHAIN_CONTINGENCIES.md` — Version 3.0 (replaces v2.0 and
+v2.1, both dated May 18). 2,500+ words. Sections: (1) Vendor Backup Matrix with primary ×
+backup × fallback structure for Mountain Rose Herbs, Strictly Medicinal Seeds, Prairie Moon
+Nursery, and Local Garden Center; (2) Minimum Viable Launch definitions — guide count (5/3/2),
+Canva palette options, photo supply, lifestyle photos, revenue impact model; (3) Location
+Contingencies with impact-on-schedule analysis for field→indoor flip; (4) Critical-Path
+Compression Matrix covering guide production, zone card production, writing speed assessment,
+and minimum viable shoot complexity; (5) Risk Scoring Matrix — 17 risk IDs with probability
+estimates, revenue impact, decision triggers, and severity tiers; (6) Timeline Recovery
+Decision Tree for best/medium/worst cases with dates; (7) One-page Contingency Activation
+Checklist with date-stamped decision points May 19–30 and WORKLOG entry format.
+
+**Key findings**:
+- The only genuine May 30 kill scenario is Canva production not starting by May 28 EOD
+  (probability ~2%). All supply chain, location, and photo risks are Tier 0 — zero launch
+  date impact, documented fallbacks available in under 15 minutes.
+- The most probable outcome is medium case: 3-guide May 30 launch + 2 guides June 4 if
+  Canva start slips to May 27. Revenue impact: 5–8% below baseline. Acceptable.
+- Fresh ramp leaves (farmers market, May 18–19 purchase) are the preferred Ramps photo prop
+  regardless of Prairie Moon Nursery order status. Activate today.
+- iNaturalist CC-BY sprint (2–3 hours, all 5 species) should be executed this week (May 19–24)
+  to eliminate all in-session photo sourcing from Canva production week.
+- Prairie Moon bare root shipping window ends late May. Call 866-417-8156 today to confirm
+  order viability. If cannot ship: activate fresh ramp leaves + iNat for Trillium.
+
+**Cross-references**:
+- phase-2-supply-chain-contingencies.md (v2.0, May 18) — prior version, superseded
+- PHASE_2_LAUNCH_LOGISTICS.md — supplier details, production schedule, shoot logistics
+- TRACK_B_USER_GATES.md — Gate schedule, zone card production timeline, Kit setup
+- PHASE_2_GO_NO_GO_DASHBOARD.md — May 29 go/no-go criteria, Gumroad fallback
+
+---
+
 ## Agent Session — Track B Launch Preparation Audit + Gate 2/3 Readiness Advancement — 2026-05-19
 
 **Task**: Advance Track B preparation toward May 30 launch. Gate 1 is a user action (social accounts). Focus on Gate 2 readiness, zone-card production, Gate 3 readiness, and May 29 go/no-go framework.
