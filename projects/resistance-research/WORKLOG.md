@@ -2,6 +2,34 @@
 
 ---
 
+## May 19, 2026 — Session 1339 — Phase 1 Post-Wave-1 Contingency Decision Framework v2.0
+
+**Status**: COMPLETE
+
+**File**: `projects/resistance-research/phase-1-contingency-decision-framework.md` (updated from v1.0 to v2.0)
+
+**Task**: Phase 1 Post-Wave-1 Contingency Path Analysis — decision framework for mixed-signal scenarios to inform May 21 19:00 UTC synthesis path selection.
+
+**What was added in v2.0** (over the May 18 v1.0 baseline):
+
+1. Quantified Gist view rate tiers (Exceptional >50 delta, Good 15-50, Minimum 5-14, Inconclusive <5) with classification implications for each tier.
+
+2. Refined constituency impact matrix: immigration legal aid (15/15) confirmed highest Phase 2 leverage; decision rule established for "Phase 1 success at 20% response" — success if the responding contact is Elias OR Weiser/Bassin; "on track but not yet confirmed" if law school only.
+
+3. Phase 2 domain prioritization under weak signal: weak-signal fallback combination = Domain 39 (June 1 HHS deadline) + Domain 59 (June 30 CTC deadline) + Domain 57 (Aug 10 UNGA deadline); sub-branches for which constituency signaled.
+
+4. Four-branch decision tree: Branch A (Strong, ≥50%), Branch B (Moderate, 25-50% with 4 sub-branches by constituency), Branch C (Weak, <25% delivery-confirmed), Branch D (Mixed signal — strong from 1 constituency/weak from others, 3 sub-branches). Each branch has: Phase 2 domain sequence, Batch 2 launch window, resource allocation (hours), decision gates, CHECKIN.md entry template.
+
+5. Real-time monitoring protocol for May 19-21: specific checkpoint times (May 19 20:00 UTC, May 20 09:00 UTC, May 20 20:00 UTC, May 21 19:00 UTC), what to check at each, what signals would change the trajectory, and a trajectory detection table for pre-preparing the correct Phase 2 materials.
+
+6. Policy window calendar updated with confirmed June-August 2026 deadlines (HHS June 1, CTC June 30, EU AI Act August 2, UNGA August 10).
+
+7. Appendix: Historical precedent for outreach response rates (sector norms for litigation orgs, think tanks, academic contacts), policy window sources.
+
+**Key finding**: Constituency sub-branching is the critical element missing from earlier frameworks. At 20-30% overall response, the correct Phase 2 domain sequence differs depending on whether immigration legal aid (D57+D56), think tanks (D56+D59), or law schools (D38+D59) provided the signal. The framework now handles all three sub-branches without requiring judgment calls at synthesis time.
+
+---
+
 ## May 19, 2026 — Session 1333 — May 21 Synthesis Readiness Validation
 
 **Status**: COMPLETE — All-clear with one deadline clarification flag
