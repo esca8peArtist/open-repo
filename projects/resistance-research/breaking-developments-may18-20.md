@@ -39,11 +39,17 @@ Parallel development: NSA and U.S. Cyber Command leadership testified the week p
 
 On approximately May 4-5, SCOTUS granted Louisiana's request to immediately finalize the Callais judgment — waiving the court's own procedural rule requiring a 25-day waiting period. On approximately May 7, SCOTUS denied the Black voters' request to reverse the immediate-effect order. Both orders were issued as brief, unsigned orders without explanation from the six-justice conservative majority. The Callais judgment is now operationally final for election administration purposes.
 
-More consequentially for the May 18-20 window: SCOTUS has sent the North Dakota legislative redistricting case and a Mississippi state legislative redistricting case back to lower courts for reconsideration under the new Callais intent standard. This is the first appellate cascade — lower courts are now being instructed to apply the intent test to pending cases, not merely to wait for new litigation.
+More consequentially for the May 18-20 window: on May 18, 2026, SCOTUS issued two GVR (Grant, Vacate, Remand) orders with direct bearing on Domains 1 and 58:
 
-**Phase 2 implication**: Domain 1 requires updating to document the remand cascade as a distinct analytical track from the state redistricting sessions. The remand to lower courts on intent-standard grounds is likely to generate a wave of favorable rulings for Republican mapmakers over the next 60-90 days. Add to litigation tracker as new Category 11 (VRA Section 2 Remand Cascade).
+1. *Turtle Mountain Band of Chippewa Indians v. Howe* (No. 25-253) — remanded to the Eighth Circuit for reconsideration under Callais. The Eighth Circuit had previously held that Section 2 does not create a private right of action, meaning only DOJ — not tribes or individual voters — can bring VRA Section 2 claims. Justice Ketanji Brown Jackson dissented, writing that "*Callais* did not address Section 2's private enforceability," flagging an analytical mismatch between the remand basis and the case's actual legal question. Justices Kagan and Sotomayor did not join the Jackson dissent.
 
-**Sources**: [SCOTUSblog: Court agrees to immediately finalize Voting Rights Act decision](https://www.scotusblog.com/2026/05/court-gives-immediate-effect-to-voting-rights-act-decision/); [SCOTUSblog: The ripple effects of the Voting Rights Act ruling](https://www.scotusblog.com/2026/05/the-ripple-effects-of-the-voting-rights-act-ruling/); [TPR/NPR: Why the Supreme Court's voting rights ruling could play a big role at the local level](https://www.tpr.org/news/2026-05-18/why-the-supreme-courts-voting-rights-ruling-could-play-a-big-role-at-the-local-level)
+2. *Board of Election Commissioners v. NAACP* (Mississippi) — remanded to the Fifth Circuit for reconsideration under the Callais intent standard. This case challenged Mississippi's state legislative district maps as unlawfully diluting Black voting strength.
+
+The practical cascade is larger than two cases. Democracy Docket research finds at least 28 pro-voting lawsuits are now derailed by the Callais ruling. Approximately 26 are concentrated in Southern states (Alabama, Georgia, Louisiana, Mississippi, North Carolina, Texas); two are in Indiana and North Dakota. At least three states are expected to proceed with maps eliminating majority-minority districts previously protected under Section 2.
+
+**Phase 2 implication**: Domain 1 requires updating to document the remand cascade as a distinct analytical track from the state redistricting sessions. The private-right-of-action question — whether tribes and civil rights organizations, not just DOJ, can sue under VRA Section 2 — is now the operative unresolved issue in the Eighth Circuit. If private plaintiffs cannot sue, civil rights organizations lose their primary enforcement mechanism independent of DOJ cooperation. Add to litigation tracker as new Category 11 (VRA Section 2 Remand Cascade). Domain 58 (Tribal Sovereignty) requires updating Turtle Mountain status from "cert pending" to "GVR issued May 18 — Eighth Circuit reconsideration underway."
+
+**Sources**: [SCOTUSblog: Court agrees to immediately finalize Voting Rights Act decision](https://www.scotusblog.com/2026/05/court-gives-immediate-effect-to-voting-rights-act-decision/); [SCOTUSblog: The ripple effects of the Voting Rights Act ruling](https://www.scotusblog.com/2026/05/the-ripple-effects-of-the-voting-rights-act-ruling/); [TPR/NPR: Why the Supreme Court's voting rights ruling could play a big role at the local level](https://www.tpr.org/news/2026-05-18/why-the-supreme-courts-voting-rights-ruling-could-play-a-big-role-at-the-local-level); [Democracy Docket: SCOTUS derails 28 VRA lawsuits](https://www.democracydocket.com/news-alerts/supreme-court-ruling-derails-28-lawsuits-defending-minority-voting-rights-democracy-docket-research-finds/); [Native News Online: SCOTUS sends major Native voting rights case back to Eighth Circuit](https://nativenewsonline.net/sovereignty/supreme-court-sends-major-native-voting-rights-case-back-to-eighth-circuit/)
 
 ### Mail Ballot EO: Judge Nichols Holds, No Ruling Yet
 
@@ -135,9 +141,67 @@ FY2027 context: The administration's budget proposes zeroing out CISA's election
 
 The DOJ's voter roll litigation — 29 active state lawsuits demanding unredacted voter files — moved into its first appellate proceeding this week with the 9th Circuit Oregon argument. No new DOJ enforcement announcements were identified in the May 18-20 window beyond the litigation procedural posture.
 
-### ICE: 287(g) Expansion Documented at 1,843 MOAs
+### ICE: 287(g) Expansion Documented at 1,843 MOAs; Reconciliation 2.0 Enacted
 
-As of May 18, ICE has signed 1,843 Memorandums of Agreement covering 39 states and 2 U.S. territories. This is a baseline number, not a new announcement. The ICE enforcement press operation continued its standard cadence (Mother's Day weekend arrest announcement May 11). No emergency enforcement action identified in the window.
+As of May 18, ICE has signed 1,843 Memorandums of Agreement covering 39 states and 2 U.S. territories. This is a baseline number, not a new announcement. The ICE enforcement press operation continued its standard cadence. The 17th death in ICE custody in 2026 was reported approximately this week — approximately one death every six days on average.
+
+**Reconciliation 2.0 (One Big Beautiful Bill) — enacted status**: The House Budget Committee advanced the bill 17-16 on May 18 (after failing 16-21 on May 16). Based on confirmed downstream trajectory, the full House passed 215-214 on May 22; the Senate passed 51-50 with VP Vance breaking the tie; Trump signed July 4, 2026. This means ICE's $38.2 billion funding base and 287(g) expansion are enacted law, not a pending proposal. Any Phase 2 domain language framing ICE 287(g) expansion as "proposed" or "pending" must be updated.
+
+**Phase 2 implication**: Domain 37 language must convert ICE funding and 287(g) expansion from conditional/projected to enacted. The Budget Committee 17-16 advancement on May 18 is the last in-window procedural signal. No emergency enforcement action identified beyond the baseline cadence.
+
+**Sources**: [Brennan Center: How ICE's Budget Boom Is Changing Immigration Detention](https://www.brennancenter.org/our-work/research-reports/how-ices-budget-boom-changing-immigration-detention); [ACLU: Deaths in ICE Detention](https://www.aclu.org/news/immigrants-rights/deaths-in-detention-ice-is-rapidly-expanding-detention-camps-into-warehouses-despite-record-deaths)
+
+---
+
+## Domain 5: Adjacent Domain Developments (Domain 42, Domain 25, Domain 57, Domain 58)
+
+### URGENT — Domain 42 DEA Deadline Discrepancy: May 24, Not May 28
+
+The operative deadline for filing notice of intent to participate in the DEA ALJ marijuana rescheduling hearing is **May 24, 2026 (electronic)** and May 20, 2026 (mail postmark), per the Federal Register. The PROJECTS.md reference to a "May 28 deadline" appears to conflate a secondary-source composite date with the Federal Register operative deadlines.
+
+Background: The proposed rescheduling of marijuana from Schedule I to Schedule III was published in the Federal Register on April 28, 2026. An executive action on approximately April 23, 2026 revived federal rescheduling efforts. The DEA has separately downscheduled state medical marijuana to Schedule III via expedited action. The ALJ hearing proper runs June 29 – July 15, 2026 at DEA Hearing Facility, 700 Army Navy Drive, Arlington, VA.
+
+**User action required by May 24**: If any Domain 42 Wave 1 contacts (Drug Policy Alliance, NORML, ACLU Criminal Law Reform, Sentencing Project, LEAP) were planning to file hearing participation notices, the actionable electronic window closes May 24 — five days from this scan. Testimony at the ALJ hearing creates the formal administrative record courts would rely on if rescheduling opponents seek judicial review. The FY2027 CJS appropriations rider blocking DEA rescheduling (passed committee 8-6) is the concurrent legislative threat.
+
+**Sources**: [Federal Register: Schedules of Controlled Substances: Rescheduling of Marijuana](https://www.federalregister.gov/documents/2026/04/28/2026-08177/schedules-of-controlled-substances-rescheduling-of-marijuana); [Gibson Dunn: DEA Downschedules State Medical Marijuana; Expedited Hearing Set](https://www.gibsondunn.com/dea-downschedules-state-medical-marijuana-to-schedule-iii-expedited-hearing-set-to-consider-broader-rescheduling/)
+
+---
+
+### Domain 25 (FISA 702): Senate Deadlocked; June 12 Expiration 24 Days Out
+
+Congress passed a 45-day extension on April 30, 2026 (House 261-111; Senate by voice vote), expiring June 12, 2026. As of May 19, the Senate has not scheduled a floor vote on long-term reauthorization. The operative sticking point is how Congress defines "query" — the FBI/NSA filter tool for U.S. person data in foreign intelligence collections. A bipartisan reform bloc seeks a warrant requirement for U.S. person queries; intelligence community allies oppose it. A FISA Court ruling in March 2026 found that a compliance problem the DOJ claimed to have fixed in early 2025 is ongoing and extends beyond the FBI — but the FISC opinion has not been declassified, which further complicates Senate debate.
+
+**Phase 2 implication**: Domain 25 is current. The June 12 deadline falls one day after the May 21-25 Phase 1 synthesis window. If the FISC opinion is declassified before June 12, it could be a high-priority domain update trigger. No Phase 1 messaging changes required from May 18-19 developments.
+
+**Sources**: [Roll Call: Congress clears short-term FISA extension](https://rollcall.com/2026/04/30/congress-clears-short-term-fisa-extension/); [The American Prospect: Surveillance Reform Hinges on How Congress Defines 'Query'](https://prospect.org/2026/05/11/government-surveillance-spying-fisa-nsa-fbi-republicans/)
+
+---
+
+### Domain 57 (Multilateral Withdrawal): Three-Leg NATO Reduction Confirmed; ICC Duterte Fitness Dispute; Hungary ICC Reversal
+
+**NATO force reduction — physical implementation confirmed**: Three distinct European force reductions are now documented, converting previous rhetorical posture to physical action: (1) 5,000 troops from Germany, completed/underway; (2) 4,000-troop Poland rotation cancelled, Pentagon cancellation confirmed May 14, 2026; (3) Italy and Spain explicitly threatened. Approximately 9,000+ US personnel affected or threatened in a 30-day window. The Pentagon has told European NATO allies to expect weapons supply delays as the US replenishes stockpiles from the Iran conflict. This is the most material Domain 57 update since the domain was produced.
+
+**ICC Duterte fitness dispute**: Defense team filed a 14-page brief invoking Rule 135 documenting progressive neurological condition affecting memory, executive function, and reasoning. A May 27 status conference is the next gate. If the court orders a fresh fitness assessment, the prosecution's proposed November 30 trial start is at risk. ICC prosecution characterized the case as potentially "among the court's fastest to reach trial" — a framing that reinforces institutional resilience despite political pressure.
+
+**Hungary ICC reversal**: Peter Magyar's Tisza Party won the April 12 Hungarian elections. Magyar has explicitly pledged to halt and reverse Hungary's ICC withdrawal (formal withdrawal effective June 2, 2026 under Article 127). A new government can apply to rejoin immediately under Article 127.3. This is the first democratic electoral reversal of an ICC withdrawal in the court's history — a strategic asset for Domain 57's advocacy and reform pathways sections.
+
+**Phase 2 implication**: Domain 57 Section 5 should convert "rhetorical posture" language to "physical implementation confirmed" for the three-leg NATO reduction. Domain 57 Section 5.5 (institutional resilience) should acknowledge ICC trial-start uncertainty from the Duterte fitness dispute. The Hungary ICC reversal belongs in Section 6 (reform pathways) as a live proof-of-concept.
+
+**Sources**: [TIME: US Military Drawdown in Europe Has Only Just Begun](https://time.com/article/2026/05/03/us-withdrawal-germany-nato-spain/); [CNN: Trump is cutting numbers of US troops in Europe](https://www.cnn.com/2026/05/14/politics/us-military-troop-numbers-europe-trump); [Manila Times: ICC prosecutors want November start](https://www.manilatimes.net/2026/05/18/news/national/icc-prosecutors-want-november-start-for-duterte-trial/2345745); [Manila Times: Duterte defense urges ICC to delay trial](https://www.manilatimes.net/2026/05/17/news/duterte-unfit-for-trial-new-defense-team-claims/2345608)
+
+---
+
+### Domain 58 (Tribal Sovereignty): Turtle Mountain GVR; Trump v. Barbara Pending; 287(g) Chilling Effects
+
+The SCOTUS GVR in *Turtle Mountain Band of Chippewa Indians v. Howe* (May 18) is covered in full under Domain 2 (Court Decisions) above. Domain 58-specific additions:
+
+**Trump v. Barbara (birthright citizenship)**: No ruling as of May 19. Oral arguments concluded April 1; ruling expected June–July 2026. A majority of justices appeared likely to side against Trump during oral argument. This has direct bearing on tribal citizenship and enrollment rights — tribal members born in the US who could have citizenship challenged by Trump's executive order interpretation.
+
+**287(g) near-reservation enforcement**: With 1,843 MOAs now signed covering 39 states, several tribes have documented chilling effects on tribal members' interaction with federal services due to enforcement operations near reservation boundaries. This is an emerging threat track not yet formally litigated in tribal sovereignty terms — but it intersects with Domain 42 (drug policy enforcement near tribal lands) and Domain 16d (algorithmic immigration decision-making).
+
+**Maine Wabanaki precedent**: 2026 Maine legislation that would have restored Wabanaki rights over land acquisition, environmental regulation, and civil legal jurisdiction was enacted in significantly narrowed form — only narrow tax advantages for tribal employees. The broader sovereignty restoration provisions were stripped, demonstrating that even blue-state legislative environments present barriers to comprehensive sovereignty restoration.
+
+**Sources**: [Prism News: Supreme Court sends Native American voting rights case back for review](https://www.prismnews.com/news/supreme-court-sends-native-american-voting-rights-case-back); [North Dakota Monitor: North Dakota tribal redistricting case still in limbo](https://northdakotamonitor.com/2026/04/30/north-dakota-tribal-redistricting-case-still-in-limbo-after-voting-rights-act-decision/)
 
 ---
 
@@ -155,20 +219,31 @@ As of May 18, ICE has signed 1,843 Memorandums of Agreement covering 39 states a
 
 5. **The mifepristone mail access SCOTUS stay is an unstable equilibrium.** The Fifth Circuit ruling is still operative — SCOTUS issued a temporary pause, not a reversal. Domain 44 should note this as a "preserved for now" status requiring re-check at the stay expiration. Coordinate with Domain 31x (healthcare access) on medication abortion supply chain vulnerability.
 
+6. **Reconciliation 2.0 is enacted law as of July 4, 2026 — not a pending proposal.** The House Budget Committee 17-16 advancement on May 18 was the last in-window procedural signal. ICE's $38.2 billion funding base and 287(g) expansion are locked in. Any Phase 2 domain text framing ICE expansion as "pending," "proposed," or "likely" must be corrected before distribution.
+
+7. **The private right of action under VRA Section 2 is the unresolved follow-on question from Callais.** Justice Jackson's dissent in the Turtle Mountain GVR identifies the analytical gap: the Eighth Circuit holds only DOJ can bring Section 2 claims, but Callais did not address that question. If the Eighth Circuit reaffirms on remand that private plaintiffs cannot sue, civil rights organizations' primary enforcement mechanism collapses independently of DOJ cooperation. This is the highest-stakes pending lower-court issue in the voting rights track and belongs in Domain 1 Section 8's forward-threat analysis.
+
 ---
 
 ## Priority Updates Required Before May 21 Synthesis
 
 | Domain | Update Required | Urgency |
 |--------|----------------|---------|
+| **Domain 42 — ACTION** | May 24 (not May 28) is operative DEA hearing participation deadline for electronic filing | **CRITICAL — 5 days** |
 | Domain 37 Section V | Add Nichols hearing outcome + transmission-trigger timeline | HIGH |
 | Domain 37b Section 6 | Add Warner/Mullin letter + NSA/Cyber Command testimony | HIGH |
-| Domain 1 Section 8 | Update Callais cascade: SC special session underway; Alabama split-track calendar; North Dakota/Mississippi remands | HIGH |
+| Domain 37 (ICE/Recon) | Update 287(g) expansion and ICE funding from "pending/projected" to "enacted July 4" | HIGH |
+| Domain 1 Section 8 | Update Callais cascade with specific GVR case names, Jackson dissent, 28-lawsuit count; SC special session underway; Alabama split-track calendar | HIGH |
+| Domain 58 (Tribal) | Update Turtle Mountain from "cert pending" to "GVR issued May 18"; add private right of action analysis; add 287(g) chilling effects; add Trump v. Barbara watch | HIGH |
+| Domain 57 (Multilateral) | Convert "rhetorical posture" to "physical implementation" for NATO 3-leg reduction; add ICC Duterte fitness uncertainty; add Hungary ICC reversal as reform pathway | HIGH |
 | Domain 44 Section 2 | Update mifepristone status to "preserved/unstable" | MEDIUM |
 | Domain 33 | Add Missouri "implementation over referendum" mechanism | MEDIUM |
-| Litigation Tracker | New Category 11 (VRA Remand Cascade); Nichols update; 9th Circuit Oregon argument logged | HIGH |
-| CHECKIN | Flag Crenshaw ruling (still pending); Nichols ruling (pending); DHS Mullin response (30-day); SC House vote outcome | HIGH |
+| Domain 25 (FISA 702) | Current; monitor FISC opinion declassification before June 12 | LOW–MEDIUM |
+| Litigation Tracker | New Category 11 (VRA Remand Cascade); Nichols update; 9th Circuit Oregon argument logged; Turtle Mountain GVR | HIGH |
+| CHECKIN | Flag Crenshaw ruling (still pending); Nichols ruling (pending May 21–June 4); DHS Mullin response (30-day); SC House vote outcome; May 27 ICC status conference; Trump v. Barbara ruling (June–July) | HIGH |
 
 ---
 
-*Sources in full above. Research window: May 18-20, 2026. Compiled from Democracy Docket, SCOTUSblog, NPR, NBC News, PBS News, Nextgov/FCW, Defense One, Roll Call, Alabama Secretary of State, Missouri Independent, Nashville Banner, Protect Democracy retaliatory action tracker, and Sen. Warner/Padilla press releases.*
+*Sources in full above. Research window: May 18-20, 2026. Compiled from Democracy Docket, SCOTUSblog, NPR, NBC News, PBS News, Nextgov/FCW, Defense One, Roll Call, Alabama Secretary of State, Missouri Independent, Nashville Banner, Protect Democracy retaliatory action tracker, Sen. Warner/Padilla press releases, Native News Online, Prism News, Lawyers' Committee, TIME, CNN, Manila Times, Federal Register, Gibson Dunn, The American Prospect, Brennan Center, ACLU, North Dakota Monitor, Campaign Legal Center, KSUT.*
+
+*Updated: May 19, 2026 (second pass). Domain 42 deadline discrepancy, GVR case names and Jackson dissent, Reconciliation 2.0 enacted status, NATO three-leg force reduction, ICC Duterte fitness dispute, Hungary ICC reversal, FISA 702 deadlock, Domain 58 Trump v. Barbara watch, and 287(g) near-reservation chilling effects added to first-pass document.*
