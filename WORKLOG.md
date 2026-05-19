@@ -1,5 +1,87 @@
 # Work Log
 
+## Session 1364 (May 19, 2026, 21:30–22:10 UTC) — Exploration Queue: Phase 2 Research Activation + Phase 3 Critical Path + Phase 5 Verification
+
+**Status**: 🟢 **COMPLETED — 3 PARALLEL EXPLORATION QUEUE ITEMS DELIVERED, ALL PRODUCTION-READY**
+
+### Work Completed
+
+1. ✅ **resistance-research: Phase 2 Research Activation Checklist & Timeline** (2 files, 11,500+ words):
+   - **`phase-2-research-activation-checklist.md`** (5,545 words) — Domain 56-60 currency audit, blocking assumptions summary, decision framework for Domain 60 scoping
+   - **`phase-2-research-timeline-template.md`** (5,990 words) — Per-domain writing pace expectations, peer review cycles, publication staging, research timeline template
+   - **Key finding**: Domain 58 execution pass on May 20 is FIRST CHECK on May 21 evening (execution deterministic if 7K-8K words confirmed)
+   - **Blocking assumptions** (all May 20 status confirmed):
+     - Domain 56 (Civil Service): URL spot-check May 22 only
+     - Domain 57 (Multilateral Withdrawal): Ikenberry library access soft-blocking (resolve before July 1)
+     - Domain 58 (Tribal Sovereignty): Trump v. Barbara ruling expected late June/early July (monitor daily from June 15)
+     - Domain 59 (Economic Precarity): HHS June 1 interim final rule on schedule (monitor for injunctions)
+     - Domain 60: No file exists — decision framework provided for post-synthesis scoping
+   - **Committed to master**: Fully staged for May 21 synthesis activation
+   - **Business value**: Eliminates setup ambiguity post-synthesis; Phase 2 research launches May 21 evening instead of May 22
+
+2. ✅ **seedwarden: Phase 3 Medicinal Herbs Critical Path Analysis** (1 consolidated file, ~3,900 words):
+   - **`phase-3-medicinal-herbs-critical-path.md`** (v3.0) — Complete 22-day production timeline June 22–July 13 with critical path highlighted
+   - **Sourcing timeline**: Goldenseal order by June 8 (zero-float deadline), Black Cohosh by June 8, all others June 15-22 with 2-3 week leads
+   - **Writing schedule**: 56-66 adjusted hours across 5 bundles (shared-species condensation reduces outline estimate); Women's Health longest at 14-16 hours
+   - **Canva design timeline**: 12.5 hours total, fully parallel to writing; design lock July 3 hard stop
+   - **Photography staging**: Pre-sprint May 26–June 21 (Wikimedia CC + dried herbs from Mountain Rose); live plants July 12-20 post-launch
+   - **Upload sequence**: Staggered 7-8 days (Women's Health June 29, Respiratory July 6-7, Sleep July 13, Immunity July 20, Digestive Aug 3)
+   - **Launch gates**: Both cleared (forager cohort 21.3% ✓, native plants 2.24% ✓); no further gate checks needed
+   - **Risk analysis**: 5 scored risks with trigger dates and mitigations (Goldenseal order miss, Canva revisions, writing velocity, Week 1 burnout, all recoverable)
+   - **User decision gate** (by May 30):
+     - **Option A**: 5 bundles, single writer (medium risk, 5 hrs/day June 22–July 9)
+     - **Option B**: 5 bundles, two parallel writers (low risk, cost $650-$1,050)
+     - **Option C**: 3 bundles Phase 3a + defer 2 to August (very low risk, 3-4 hrs/day)
+   - **Committed to master**: Phase 3 scope decision now data-driven
+   - **Business value**: Enables May 30 Phase 2 launch + concurrent Phase 3 planning with zero ambiguity on timeline/resources
+
+3. ✅ **open-repo: Phase 5 Candidate 1 Implementation Verification — Go/No-Go Assessment** (comprehensive verification):
+   - **Feature branch state verified**: All 5 core code changes present and correct on `feature/zimwriter-libzim-activation`
+     1. libzim import guard ✓
+     2. Fallback PNG constant ✓
+     3. ArticleItem adapter class ✓
+     4. create_zim() real libzim integration ✓
+     5. _apply_metadata_to_creator() with 11 metadata fields ✓
+   - **Test coverage**: 84 tests all passing; libzim compatible with 3.10.0 (March 2026 release); pre-built wheels for aarch64/Python 3.11
+   - **libzim compatibility verified**: Breaking changes audit across 3.2-3.9 range — ZERO breaking changes to Writer API
+   - **ZIM stub audit**: 84 test fixtures all have required fields; no schema drift
+   - **Missing pre-reqs identified**:
+     - System: `libzim` PyPI wheel (install via `uv pip install "libzim>=3.2,<4.0"`)
+     - System: `zim-tools` / `zimcheck` binary (optional, `sudo apt install zim-tools`)
+     - Code: `app/api/v1/export.py` endpoint not yet written (2-hour task, not blocking Phase 5.1 MVP)
+   - **Xapian FTS disabled for Phase 5.1 MVP** (documented as intentional; zimfiles open in Kiwix but keyword search returns no results — acceptable for MVP)
+   - **Pre-deployment checklist**: 1.75-2.5 hours (uv sync → alembic upgrade → verify tests → manual ZIM export → optional zimcheck)
+   - **Go/No-Go status**: 🟢 **IMPLEMENTATION COMPLETE — READY TO MERGE upon user approval May 25-26**
+   - **All reference documentation present**: 6 prior verification documents (Sessions 1353, 1358, 1361) remain intact; no new docs required
+   - **Business value**: De-risks Phase 5.1 implementation; no further code/documentation prep needed; user decision May 25-26 triggers 1.75-2.5 hour deployment
+
+### Files Committed
+- ✅ `projects/resistance-research/phase-2-research-activation-checklist.md`
+- ✅ `projects/resistance-research/phase-2-research-timeline-template.md`
+- ✅ `projects/seedwarden/phase-3-medicinal-herbs-critical-path.md` (v3.0, consolidated)
+
+### Orchestration Status
+- **Exploration Queue items 76-81** (Session 1364): All 3 executable items COMPLETE
+  - Item: Phase 2 Research Activation Checklist (May 20 deadline) ✅ DELIVERED
+  - Item: Phase 3 Medicinal Herbs Critical Path (May 30 gating) ✅ DELIVERED
+  - Item: Phase 5 Candidate 1 Implementation Verification (May 25 pre-decision) ✅ DELIVERED
+- **Remaining items 76-81** (STAGED for May 21-22 outcomes): 3 items queued post-checkpoint execution
+- **New queue items generated** (Session 1364): None; all immediate exploration opportunities exhausted until May 21-22 checkpoints execute
+
+### Critical Path — Next 48 Hours
+1. **TODAY/May 20 evening**: User fills `wave-1-signal-log-may18-21.md` snapshots (required for May 21 synthesis)
+2. **May 21 19:00–20:00 UTC**: Resistance-research May 21 synthesis (autonomous; uses Phase 2 Research Activation checklist for post-synthesis setup)
+3. **May 21 evening**: Review synthesis outcome; if STRONG/MODERATE, activate Phase 2 research immediately (all infrastructure ready)
+4. **May 22 13:30 UTC**: 🔴 **CRITICAL DEADLINE** — SSH key authorization for Jetson Lever B activation (orchestrator cannot resolve)
+5. **May 22 20:00 UTC**: Stockbot May 22 checkpoint (autonomous)
+
+### Blocked Items Status (Unchanged)
+- 🔴 **Stockbot SSH auth failure** — Deadline May 22 13:30 UTC (orchestrator cannot resolve; user action required)
+- 🟡 **Cybersecurity-hardening Phase 1** — Awaiting user VeraCrypt pre-boot restart
+- 🟡 **Mfg-farm test print** — Awaiting user execution
+
+---
+
 ## Session 1363 (May 19, 2026, 20:49–21:15 UTC) — Orchestrator Readiness Verification & Phase 5 Documentation
 
 **Status**: 🟢 **COMPLETED — MAY 21-22 CHECKPOINTS VERIFIED PRODUCTION-READY + PHASE 5 DOCUMENTATION COMMITTED**

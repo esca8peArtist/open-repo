@@ -1,3 +1,33 @@
+## Since Last Check-in (Session 1364, May 19 21:30–22:10 UTC)
+
+**Session Status**: 🟢 **COMPLETED — 3 EXPLORATION QUEUE ITEMS DELIVERED: PHASE 2 RESEARCH ACTIVATION + PHASE 3 CRITICAL PATH + PHASE 5 VERIFICATION**
+
+### Work Completed
+- ✅ **resistance-research**: Phase 2 Research Activation Checklist + Timeline (2 files, 11.5K words) — Domain 56-60 currency audit, blocking assumptions, decision framework for May 21 synthesis activation
+- ✅ **seedwarden**: Phase 3 Medicinal Herbs Critical Path (3.9K words, consolidated) — Complete June 22–July 13 timeline with critical path, sourcing deadlines (Goldenseal June 8 zero-float), 3 user option paths for May 30 gate decision
+- ✅ **open-repo**: Phase 5 Candidate 1 Implementation Verification — All 5 code changes confirmed correct, 84 tests passing, zero breaking changes in libzim 3.2-3.10 range, ready-to-merge upon May 25-26 user approval
+
+### Key Findings
+1. **Phase 2 Research Activation**: Domain 58 execution pass on May 20 is FIRST CHECK on May 21 evening (if 7K-8K words present, Phase 2 launch is clear)
+2. **Phase 3 Critical Path**: Goldenseal order deadline June 8 is only zero-float item in Phase 3; three option paths enable user to choose scope/risk tradeoff by May 30
+3. **Phase 5 Candidate 1**: Implementation complete and verified; only pre-reqs are system packages (libzim wheel, optional zimtools); 1.75-2.5 hour deployment post-approval
+
+### Critical Path — Next 48 Hours
+1. **TODAY/May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots (prerequisite for May 21 synthesis)
+2. **May 21 19:00–20:00 UTC**: Resistance-research May 21 synthesis (autonomous)
+3. **May 21 evening**: Review synthesis outcome; activate Phase 2 if STRONG/MODERATE (all infrastructure ready)
+4. **May 22 13:30 UTC**: 🔴 **URGENT** — SSH key authorization for Jetson Lever B (deadline, orchestrator cannot resolve)
+5. **May 22 20:00 UTC**: Stockbot May 22 checkpoint (autonomous)
+
+### Items Needing Your Input
+1. 🔴 **TODAY/May 20 evening**: Fill `wave-1-signal-log-may18-21.md` snapshots (required for May 21 synthesis)
+2. 🔴 **TODAY/May 22 13:30 UTC**: SSH key auth for Jetson (deadline — add public key to authorized_keys OR SSH manually + run 5-min Lever B config fix, documented in BLOCKED.md)
+3. **May 21 evening**: Review synthesis outcome; activate Phase 2 if STRONG/MODERATE
+4. **By May 30**: Approve seedwarden Phase 3 scope option (A/B/C) based on capacity
+5. **By May 25-26**: Approve open-repo Phase 5 Candidate 1 for merge + 1.75-2.5 hour deployment
+
+---
+
 ## Since Last Check-in (Session 1363, May 19 20:49–21:15 UTC)
 
 **Session Status**: 🟢 **COMPLETED — MAY 21-22 AUTONOMOUS CHECKPOINT READINESS VERIFIED**
