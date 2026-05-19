@@ -59,7 +59,9 @@
 - **seedwarden**: Gate 1 guide available; 14-day setup timeline ready
 - **All other projects**: No new work available; all blocked on user actions
 
-**Session Assessment**: All three critical-path infrastructure items (May 21 synthesis, May 22 Lever B, May 22 checkpoint) verified fully ready. User requirements clearly documented. Orchestration state stable. Awaiting user actions on signal log (May 20) and SSH recovery (May 22).
+**Optional Work Available**: Item 81 (Open-repo Phase 5 implementation roadmaps) is actionable now as proactive preparation for Phase 5 decision-making. This would create detailed 4-6h execution plans for ZimWriter and OPDS so you can decide Phase 5 priorities with full visibility. Offer for next session if you want to make Phase 5 progress.
+
+**Session Assessment**: All three critical-path infrastructure items (May 21 synthesis, May 22 Lever B, May 22 checkpoint) verified fully ready. User requirements clearly documented. Orchestration state stable. Awaiting user actions on signal log (May 20) and SSH recovery (May 22). Item 81 available as optional exploration work if Phase 5 planning is a priority.
 
 ---
 
