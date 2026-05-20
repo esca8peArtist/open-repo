@@ -1,3 +1,49 @@
+## Since Last Check-in (Session 1382-ORCHESTRATOR, May 20 02:11–04:00 UTC) — Phase 3 Expansion + May 21 Synthesis Prep
+
+**Session Status**: ✅ **COMPLETE — PHASE 3 CANDIDATE 2 EXPANDED + SYNTHESIS EXECUTION STAGING VERIFIED**
+
+### What Was Accomplished
+
+**Phase 3 Candidate 2: Institutional Playbooks Expansion** ✅ COMPLETE
+- **Deliverable**: `phase-3-institutional-playbooks.md` (13,200 words, 6 sector-specific playbooks)
+- **Six constituencies operationalized**:
+  1. State Attorneys General (71 lawsuits, parens patriae leverage, interstate coordination)
+  2. Civil Service Unions (AFGE 1.3M, career protection, MSPB reconstruction)
+  3. Labor Unions (AFL-CIO 12.5M + SEIU 3.8M, sectoral bargaining, electoral integration)
+  4. Law School Clinics (constitutional litigation, rapid-response templates, amicus architecture)
+  5. Religious Coalitions (380,000 congregations, voter mobilization networks)
+  6. State Legislators (constitutional amendment ratification, model legislation sequencing)
+- **Additional components**: Alliance matrix (natural clusters), conflict mitigation strategies (8 scenarios), Year 1-3 measurement framework, 15 case studies (2-3 per sector)
+- **Purpose**: Bridges the gap between abstract 35-domain proposal framework and operational implementation that actual constituencies can execute post-distribution
+- **Timing**: Medium-high priority Phase 3 candidate; complete outline enabled efficient expansion during May 20 window
+- **Committed**: Session 1382 (commits 30911bfc + 6bc1168d + 418cec2c)
+
+**May 21 Synthesis Execution Staging** ✅ VERIFIED
+- All Phase 2 research (Domains 56-59, 35,306 words) staged and production-ready
+- Synthesis infrastructure confirmed operational
+- Outcome routing frameworks ready (STRONG/MODERATE → Phase 2 activation; WEAK → contingency roadmap)
+- **Timeline locked**: May 21 19:00–20:00 UTC synthesis execution (fully autonomous)
+
+### Blockers Unchanged (3 active)
+
+- 🔴 **Stockbot SSH auth + Lever B config** — May 22 13:30 UTC deadline (CRITICAL) — Live validation report ready
+- Cybersecurity-hardening Phase 1 — Awaiting Windows restart
+- Mfg-farm test print — Awaiting user execution
+
+### Needs Your Input (Next 48 Hours)
+
+**TONIGHT (May 20 evening) — 🔴 URGENT**:
+1. **Resistance-Research Signal Log** — Fill `wave-1-signal-log-may18-21.md` (through May 21 10:30 UTC) to enable May 21 19:00 UTC synthesis
+   - This is the gate input for Phase 2 research activation outcome
+
+**May 22 13:30 UTC — 🔴 CRITICAL DEADLINE**:
+2. **Stockbot Lever B Config Deploy** — Either (A) add orchestrator public key to Jetson authorized_keys, OR (B) SSH and rsync + restart
+   - Technical details: `JETSON_PRE_CHECKPOINT_VALIDATION_REPORT_MAY22.md`
+   - Live validation confirms 84% checkpoint confidence contingent on this fix
+   - **If no action by May 21 17:00 UTC**: Will escalate
+
+---
+
 ## Since Last Check-in (Session 1381-ORCHESTRATOR, May 20 21:00–21:45 UTC)
 
 **Session Status**: ✅ **COMPLETE — LIVE JETSON VALIDATION + 3 CONTINGENCY FRAMEWORKS STAGED FOR MAY 21-22 TRIGGERS**
