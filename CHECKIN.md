@@ -135,11 +135,37 @@
 - Parallel throughput: 3 independent research streams completed simultaneously
 - All 3 deliverables committed to master, production-ready
 
+### May 20 Session 1434 — Synthesis Verification Complete + Post-Synthesis Work Plan Ready
+
+**Verification Complete**: Full May 21 19:00 UTC synthesis infrastructure verified production-ready (verification agent, direct file audit).
+- ✅ All 5 Phase 2 canonical domain files confirmed in place (Domains 56–59 + G)
+- ✅ All 5 synthesis checklist/timeline documents confirmed current
+- ✅ Trump v. Barbara rapid-response fully staged (24-hour protocol, 3 scenario playbooks, Tier 1–3 contacts)
+- ✅ `POST_SYNTHESIS_EXECUTION_PLAN.md` created — maps Hours 1–48 post-synthesis work, four synthesis outcomes (STRONG/MODERATE/WEAK/TOO EARLY), decision tree for Trump v. Barbara ruling
+- 🔴 **ONE GAP**: Domain 58 (Tribal Sovereignty) Gist publication not yet done. Effort: 15–30 min (requires user GitHub credentials). Risk if not fixed: Tier 1 rapid-response uses email attachment instead of Gist link. Flag to user at synthesis time.
+
+**Post-Synthesis Work Ready**: Hours 1–48 autonomous tasks pre-mapped:
+- **Hours 0–2 (May 21 20:00 UTC)**: Autonomous synthesis result posting + signal log updates
+- **Hours 2–12 (user asleep)**: Pre-distribution prep (URL verification lists, email structure drafts)
+- **Hours 12–24 (May 22 morning)**: User decisions on domain sequencing (staggered vs simultaneous), Phase 1/2 parallelism, Domain 58 pre-ruling strategy
+- **Hours 24–48 (May 22–23)**: Distribution URL testing (2h user time), email drafting, contact verification
+
+**Critical Timeline Alignment**:
+- May 21 19:00 UTC synthesis → May 21 20:00 UTC user sees outcome in CHECKIN.md
+- If STRONG/MODERATE: Phase 2 distribution can launch May 26+ (Domain 56) and June 1 (Domain 59)
+- May 22 13:30 UTC: Stockbot Lever B config deadline (independent of synthesis)
+- May 22 20:00 UTC: Stockbot checkpoint (tests Lever B or falls back to Lever A)
+- June 1: Domain 59 (Economic Precarity) distribution hard deadline + HHS OBBBA rule release
+- June 15: Domains 56, 58, G distribution hard deadlines (pre-Trump v. Barbara)
+- June-July: Trump v. Barbara ruling (will trigger Hours 0–24 rapid-response protocol)
+
 ### Critical User Actions Still Required
 
-**May 20 ~22:00 UTC (next 2 hours)**: Signal log fill (for May 21 synthesis pre-processing)
-**May 21 before 19:00 UTC**: Check SCOTUSblog for Trump v. Barbara ruling (or any breaking judicial developments)
-**May 22 13:30 UTC (16 hours remaining)**: **CRITICAL** — Lever B HMM config fix — Either (A) Add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run config fix (see BLOCKED.md for commands)
+**May 20 ~22:00 UTC (next 1.5 hours)**: Signal log fill (for May 21 synthesis pre-processing) — required for synthesis quality metrics
+**May 20 before 22:00 UTC: Domain 58 Gist publication** (15–30 min, GitHub credentials required) — CRITICAL for late-June rapid-response if Trump v. Barbara ruling issues before June 15 distribution
+**May 21 before 19:00 UTC**: Check SCOTUSblog for Trump v. Barbara ruling (or any breaking judicial developments) — ruling expected late June but monitor for early release
+**May 21 within 24h of synthesis completion**: Four Phase 2 distribution decisions (domain sequencing, parallel vs sequential, pre-ruling vs post-ruling, hard deadline confirmation)
+**May 22 13:30 UTC (38 hours remaining)**: **CRITICAL** — Lever B HMM config fix — Either (A) Add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run config fix (see BLOCKED.md for commands)
 **May 22 by deadline (2 days remaining)**: Supplier inquiry emails to Strictly Medicinal Seeds + Prairie Moon Nursery (Goldenseal order deadline critical-path item)
 
 ### Next Scheduled Events
