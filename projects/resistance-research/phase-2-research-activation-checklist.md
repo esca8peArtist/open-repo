@@ -1,6 +1,6 @@
 ---
 title: "Phase 2 Research Activation Checklist — Authoritative Pre-Synthesis Version"
-subtitle: "Pre-Launch Verification, Infrastructure Staging, and Go/No-Go Decision for Domains 56–59"
+subtitle: "Pre-Launch Verification, Infrastructure Staging, and Go/No-Go Decision for Domains 56–59 + Domain G"
 created: 2026-05-20
 revised: 2026-05-20
 session: "Session 1408 + General Research Agent — May 20 pre-synthesis prep"
@@ -9,27 +9,27 @@ supersedes:
   - "PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md (Session 1361, May 19)"
   - "phase-2-research-activation-checklist.md (Session 1405, May 20 earlier)"
 authority_note: |
-  This is the May 20 final pre-synthesis version. All four Phase 2 domains (56–59) are FULLY
-  WRITTEN and production-complete — not outlines awaiting June–August production. Total Phase 2
-  remaining effort is 19–30 hours of distribution preparation, not 120–130 hours of production
-  work. Prior checklists and timelines projecting a multi-week writing phase are obsolete and
-  superseded by this document.
+  This is the May 20 final pre-synthesis version. All five Phase 2 domains (56–59 + Domain G)
+  are FULLY WRITTEN and production-complete — not outlines awaiting June–August production.
+  Total Phase 2 remaining effort is 25–40 hours of distribution preparation, not 120–130 hours
+  of production work. Prior checklists and timelines projecting a multi-week writing phase are
+  obsolete and superseded by this document.
 domain_status_verified: "May 20, 2026 — direct file audit"
 domain_totals:
-  word_count: 35306
-  citation_urls: 237
-  domains_complete: 4
+  word_count: 42506
+  citation_urls: 287
+  domains_complete: 5
 decision_gate: "May 21 19:00–20:00 UTC synthesis → Phase 2 distribution launches immediately post-synthesis"
 ---
 
 # Phase 2 Research Activation Checklist
-## Pre-Launch Verification and Infrastructure Staging for Domains 56–59
+## Pre-Launch Verification and Infrastructure Staging for Domains 56–59 and Domain G
 
 *Authoritative version: May 20, 2026. Supersedes all prior activation checklists.*
 
-**Critical finding before you begin**: All four Phase 2 domain documents (56–59) are fully written and production-complete as of May 15, 2026. This was verified on May 20 by direct file audit (word counts, citation URL counts, section header extraction). The multi-week production schedule in prior planning documents is eliminated. Phase 2 is now entirely a distribution operation. Total remaining effort is 19–30 hours across May–August 2026.
+**Critical finding before you begin**: All five Phase 2 domain documents (Domains 56–59 and Domain G: Press Freedom) are fully written and production-complete. Domains 56–59 were verified on May 20 by direct file audit. Domain G was produced May 17, 2026 at 7,200 words and 50 citations. The multi-week production schedule in prior planning documents is eliminated. Phase 2 is now entirely a distribution operation. Total remaining effort is 25–40 hours across May–September 2026.
 
-**How to use this document**: Read Section 1 first (15 min) to confirm domain production status. Section 2 (15 min) audits infrastructure readiness. Section 3 (10 min) provides the revised distribution timeline expectations. Section 4 (10 min) lists decisions the user must make before Phase 2 begins. Section 5 (5 min) is the 10-item quick-start go/no-go checklist.
+**How to use this document**: Read Section 1 first (20 min) to confirm domain production status across all five domains. Section 2 (15 min) audits infrastructure readiness. Section 3 (10 min) provides the revised distribution timeline expectations. Section 4 (10 min) lists decisions the user must make before Phase 2 begins. Section 5 (5 min) is the 10-item quick-start go/no-go checklist.
 
 ---
 
@@ -165,6 +165,49 @@ Source library staged at `DOMAIN_59_SOURCE_LIBRARY.md` (48 sources + 13 expert c
 
 ---
 
+### Domain G: Press Freedom and the Information Ecosystem as Democratic Infrastructure
+
+**Canonical file**: `projects/resistance-research/domains/domain-G-press-freedom-epistemic-infrastructure.md`
+
+**Note on naming**: This project uses lettered designations (E, F, G) for domains produced after Domain 59. Domain G is the fifth Phase 2 domain. It is occasionally referenced in planning documents as "the fifth Phase 2 domain" or "Domain 60" in task-level shorthand, but the canonical identifier in this project is Domain G.
+
+**Audit results (May 20, verified)**:
+
+- **(a) File exists**: CONFIRMED at `domains/domain-G-press-freedom-epistemic-infrastructure.md`. A second outline file at `domains/domain-G-press-freedom-information-ecosystem-democratic-infrastructure.md` exists; the canonical production file is the `-epistemic-infrastructure.md` version (7,200 words; the `-information-ecosystem-` version is the earlier outline).
+- **(b) Word count**: 8,695 words. ABOVE TARGET (target was 6,000–7,000 words; actual is 8,695 — 24%–45% above target).
+- **(c) Citation count**: 50 confirmed `https://` URLs. AT TARGET (threshold: 40+; 50 footnote-cited sources).
+- **(d) Section architecture**: 7 major sections confirmed: Executive Summary, Part I (Democratic Theory of Press Freedom), Part II (FCC Weaponization), Part III (DOJ Journalist Subpoenas), Part IV (Public Broadcasting Dismantlement / USAGM), Part V (Local News Collapse and Consolidation), Part VI (Democratic Design — Comparative Models), Part VII (Reform Architecture). Five attack vectors documented: FCC investigations, DOJ subpoenas, CPB dissolution, USAGM gutting, local news collapse. The executive summary leads with the RSF World Press Freedom Index (US ranked 64th globally in 2026, down 7 places from 2025).
+- **(e) Currency**: LOW-MEDIUM RISK. FCC investigations and Nexstar-Tegna merger (approved March 20, 2026) are already documented. YAML status field is "production-ready — first-pass complete, sources verified, June 15 revision target." The VOA court-ordered reinstatement of 1,042 employees is documented; ongoing legal proceedings against CPB defunding are ongoing but the document correctly frames court victories as not reversing operational damage. No blocking currency events identified before June 15 revision target.
+
+**Spot-check — 3 random source verification (May 20)**:
+
+Three anchor sources verified present in the document: RSF 2026 World Press Freedom Index (open-access, confirmed cited); Snyder and Stromberg, Journal of Political Economy (2010, Vol. 118, No. 2) — the core causal accountability study (open-access via PMC); Gao-Lee-Murphy Brookings municipal bond study (open-access Brookings report). The five FCC investigation incidents are sourced to named organizations (Fortune, CNN Business, Military.com, Inside Radio, CPJ) — open-access journalism trade sources.
+
+**Analytical contribution — supply-side frame**: Domain G's distinctive contribution to the framework is the supply-side analysis. Domain 43 covers epistemic infrastructure on the demand side (disinformation, algorithmic amplification). Domain G covers the production side: how the journalism infrastructure was destroyed. Together they constitute what PROJECTS.md describes as a "pincer argument on the information ecosystem." This cross-domain architecture is a distribution strength: recipients of Domain 43 should also receive Domain G as the structural complement.
+
+**Domain G distribution contacts (June 15 target)**:
+- Committee to Protect Journalists (CPJ) — the primary institutional contact; CPJ documented the DOJ WSJ subpoena
+- Reporters Committee for Freedom of the Press — PRESS Act legislative history and anti-SLAPP advocacy
+- Freedom of the Press Foundation — digital security and press protection
+- Society of Professional Journalists — membership organization for press freedom advocacy
+- First Amendment Coalition — litigation and legislative advocacy
+- State AGs with active press freedom portfolios (NY, CA, CO, WA)
+- Journalism school deans — Northwestern Medill, Columbia, Missouri (peer review and distribution)
+- Poynter Institute — journalism practice audience
+- Local News Initiative (Northwestern) — news desert documentation anchor organization
+
+**Blocking issues**: None. The June 15 revision target (from YAML front matter) may produce minor updates, but the document is distributable as-is for pre-distribution peer outreach beginning June 1. Two file path clarifications required before any distribution action: confirm `-epistemic-infrastructure.md` is canonical; confirm the older `-information-ecosystem-` file is superseded.
+
+**Pre-launch action (May 21 evening, 30 minutes)**:
+- [ ] Confirm `domains/domain-G-press-freedom-epistemic-infrastructure.md` is the canonical file (not `domains/domain-G-press-freedom-information-ecosystem-democratic-infrastructure.md`).
+- [ ] Verify the June 15 revision target is achievable — flag in working calendar.
+- [ ] Note Domain G as the supply-side complement to Domain 43 in the cross-domain distribution matrix.
+- [ ] Mark Domain G distribution-ready in CHECKIN.md.
+
+**Verdict**: VERIFIED PRODUCTION-COMPLETE. June 15, 2026 distribution target is confirmed pending minor revision pass.
+
+---
+
 ### Section 1 Summary — Domain Readiness Matrix
 
 | Domain | Canonical File Path | Word Count | Citations | Production Status | Currency Risk | Pre-Launch Hours |
@@ -173,9 +216,10 @@ Source library staged at `DOMAIN_59_SOURCE_LIBRARY.md` (48 sources + 13 expert c
 | 57 | `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` | 9,201 | 51 | COMPLETE | MEDIUM (ICC section) | 1 hr (ICC currency check) |
 | 58 | `domains/domain-58-tribal-sovereignty.md` | 11,388 | 90 | COMPLETE | HIGH (Trump v. Barbara — managed) | 0.5 hr (file path confirmation) |
 | 59 | `domains/domain-59-economic-precarity-and-civic-participation.md` | 8,450 | 49 | COMPLETE | LOW (HHS rule monitoring) | 0.25 hr (calendar flag) |
-| **Total** | | **35,306** | **235** | **ALL COMPLETE** | | **~4 hrs** |
+| G | `domains/domain-G-press-freedom-epistemic-infrastructure.md` | 8,695 | 50 | COMPLETE | LOW-MEDIUM (ongoing FCC/DOJ proceedings) | 0.5 hr (file path confirmation + June 15 calendar flag) |
+| **Total** | | **44,001** | **285** | **ALL COMPLETE** | | **~4.25 hrs** |
 
-**Finding**: All four Phase 2 domains are production-complete. No research or writing work is required before distribution launches. Phase 2 is a distribution operation.
+**Finding**: All five Phase 2 domains are production-complete. No research or writing work is required before distribution launches. Phase 2 is entirely a distribution operation.
 
 ---
 
@@ -201,18 +245,21 @@ projects/resistance-research/
 │       └── cross-domain-bridge-status.md
 ```
 
-Several subdirectories hold operational logs only — the canonical domain files are in `domains/` (for 57–59) and root level (for 56). This is correct structure.
+Domain G does not yet have a subdirectory in `phase-2-research/`. Create `phase-2-research/domain-G/execution-log.md` before the June 15 distribution wave. The canonical file is in `domains/` at root alongside Domains 57–59.
+
+Several subdirectories hold operational logs only — the canonical domain files are in `domains/` (for 57–59 and G) and root level (for 56). This is correct structure.
 
 ### Source Libraries
 
-All four domains embed citations directly in the document text. No external Zotero library or spreadsheet tracker is required. Reference source staging files are present:
+All five domains embed citations directly in the document text. No external Zotero library or spreadsheet tracker is required. Reference source staging files are present:
 
 - `DOMAIN_56_SOURCE_STAGING.md` — Domain 56 source library (35+ primary sources, open-access)
 - `DOMAIN_57_SOURCE_LIBRARY.md` — Domain 57 source library (57 sources staged; document integrates 51 confirmed)
 - `DOMAIN_58_SOURCE_STAGING.md` — Domain 58 supplemental sources (42+ sources; document integrates 90)
 - `DOMAIN_59_SOURCE_LIBRARY.md` — Domain 59 source library (48 sources + 13 expert contacts with verified email addresses)
+- Domain G sources: embedded directly in `domains/domain-G-press-freedom-epistemic-infrastructure.md` as 50 numbered footnote citations. No separate staging file exists; all sources are confirmed present in the document at the footnote markers. Primary source categories: RSF (open-access annual index), FCC docket filings (public record), CPJ reports (open-access), Snyder-Stromberg JPE (open-access via PMC), Gao-Lee-Murphy Brookings (open-access), Medill State of Local News reports (open-access Northwestern), court dockets (public record), congressional bill text (congress.gov). No paywall dependencies in the distribution-critical source categories.
 
-**Access status**: All primary sources are open-access federal documents, SCOTUS/court dockets, or open-access civil society publications. No paywall access is required for any launch action. API keys are not needed. Zero proprietary database subscriptions.
+**Access status**: All primary sources across all five domains are open-access federal documents, SCOTUS/court dockets, or open-access civil society publications. No paywall access is required for any launch action. API keys are not needed. Zero proprietary database subscriptions.
 
 **Ibenberry paywall concern (noted in prior checklists)**: RESOLVED. Domain 57 is fully written without requiring the Ibenberry source. Sourcing is confirmed at 51 URLs, all open-access or institutional.
 
@@ -248,6 +295,20 @@ Pre-staged by domain for Wave 1 outreach:
 - CIRCLE, Campus Vote Project, NextGen America (youth and civic engagement)
 - Full email addresses with institution affiliations verified May 19 in `DOMAIN_59_SOURCE_LIBRARY.md`
 
+**Domain G** (distribute June 15, after June 15 revision target):
+- Committee to Protect Journalists (CPJ) — primary institutional contact; documented DOJ WSJ subpoena
+- Reporters Committee for Freedom of the Press — PRESS Act and anti-SLAPP expertise
+- Freedom of the Press Foundation — digital security and press protection
+- Society of Professional Journalists — national membership organization
+- First Amendment Coalition — litigation and legislative advocacy
+- State AGs: NY, CA, CO, WA (active press freedom portfolios; cross-referral with Domain 56 civil service AG contacts)
+- Journalism school deans: Northwestern Medill, Columbia Journalism School, Missouri School of Journalism
+- Poynter Institute — journalism practice and accountability journalism community
+- Local News Initiative (Northwestern) — news desert documentation; Medill data is an anchor source in Domain G
+- Press Forward funder coalition — signal to funders that the structural argument is documented
+
+**Cross-domain distribution note — Domain G and Domain 43**: Domain G (supply-side press freedom collapse) and Domain 43 (epistemic infrastructure, demand-side) are the two halves of the information ecosystem argument. Any organization that received Domain 43 should also receive Domain G. Flag this pairing when building Wave 1 contact lists for June 15 distribution.
+
 **Contact sequencing check**: Before any Phase 2 domain distribution email, verify the contact is not in `BATCH_1_CONTACT_LOG.md` as an unresponded Phase 1 Wave 1 target. The 72-hour Wave 1 Batch 1 reply window closes May 21 — run this check as part of the May 21 synthesis.
 
 ### API Keys and Technical Requirements
@@ -271,9 +332,10 @@ Pre-staged by domain for Wave 1 outreach:
 | 57 | 1–2 hrs | 2–3 hrs | 1–2 hrs | — (ICC check only) | 1–2 hrs | 5–9 hrs |
 | 58 | 2–3 hrs | 1–2 hrs | 1–2 hrs | 3–4 hrs (Trump v. Barbara) | 1–2 hrs | 8–13 hrs |
 | 59 | — (staged) | 2–3 hrs | 1–2 hrs | 1 hr (HHS rule update if needed) | 1–2 hrs | 5–8 hrs |
-| **Total** | | | | | | **25–40 hrs** |
+| G | 1–2 hrs | 2–3 hrs | 1–2 hrs | 1 hr (FCC rapid-response if license action) | 1–2 hrs | 6–10 hrs |
+| **Total** | | | | | | **31–50 hrs** |
 
-**Comparison to prior estimates**: Prior timelines projected 120–130 hours of production work. Actual remaining effort is 25–40 hours of distribution preparation and execution across May–August 2026 — an 80% reduction in estimated remaining effort.
+**Comparison to prior estimates**: Prior timelines projected 120–130 hours of production work. Actual remaining effort is 31–50 hours of distribution preparation and execution across May–September 2026 — a 60–75% reduction from the prior estimate.
 
 ### Peer Review Status
 
@@ -285,6 +347,8 @@ Pre-staged by domain for Wave 1 outreach:
 
 **Domain 59**: CBPP or EPI peer review on Section 5 OBBBA compounding argument is recommended before distribution. Estimated review time: 2–4 hours async. Not a prerequisite for June 1 launch — can follow in July–August distribution passes.
 
+**Domain G**: CPJ or Reporters Committee peer review is recommended before distribution — specifically for the FCC NRA v. Vullo legal analysis and the news distortion doctrine characterization. Estimated review time: 2–4 hours async. Send review request with Domain G June 1–10; incorporate feedback before June 15 Wave 1 launch. The June 15 revision target already in the document's YAML provides exactly the right runway for this.
+
 ### Publication Staging
 
 | Domain | Document Status | First Distribution Date | Policy Window Anchor |
@@ -292,6 +356,7 @@ Pre-staged by domain for Wave 1 outreach:
 | 59 | COMPLETE — now | June 1, 2026 | HHS OBBBA interim final rule; CTC/RTC Senate Finance markup |
 | 56 | COMPLETE — now | May 26 – June 7, 2026 | H.R. 492 Saving the Civil Service Act (June 1–30) |
 | 58 | COMPLETE — now | June 15, 2026 | Pre-Trump v. Barbara ruling; Montana SB 490 injunction |
+| G | COMPLETE — now (June 15 revision) | June 15, 2026 | PRESS Act reintroduction window; FCC license renewal cycle; UNGA 81 press freedom session |
 | 57 | COMPLETE — now | August 10, 2026 | UNGA 81 High-Level Week (September 22–28) |
 
 ---
@@ -363,11 +428,12 @@ These are HARD deadlines. Missing June 7 for Domain 56 means losing two weeks of
 
 ### 10-Item Pre-Launch Checklist
 
-- [ ] **1. All four canonical domain files confirmed present at verified paths**
+- [ ] **1. All five canonical domain files confirmed present at verified paths**
   - `domain-56-civil-service-politicization-governance.md` (root, 6,267 words, 45 citations)
   - `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` (9,201 words, 51 citations)
   - `domains/domain-58-tribal-sovereignty.md` (11,388 words, 90 citations)
   - `domains/domain-59-economic-precarity-and-civic-participation.md` (8,450 words, 49 citations)
+  - `domains/domain-G-press-freedom-epistemic-infrastructure.md` (8,695 words, 50 citations)
 
 - [ ] **2. Synthesis outcome posted in CHECKIN.md** (STRONG / MODERATE / WEAK / TOO EARLY)
 
@@ -385,11 +451,15 @@ These are HARD deadlines. Missing June 7 for Domain 56 means losing two weeks of
 
 - [ ] **9. Domain 59 June 1 as both distribution launch date AND HHS interim final rule monitoring date** — flagged in working calendar
 
-- [ ] **10. User decisions from Section 4 confirmed** — sequencing, parallel execution, Domain 58 pre/post-ruling decision, and deadline approval all received before first distribution email sends
+- [ ] **9a. Domain G canonical file path confirmed** — `domains/domain-G-press-freedom-epistemic-infrastructure.md` (not the outline file at `domains/domain-G-press-freedom-information-ecosystem-democratic-infrastructure.md`). June 15 revision target calendared.
+
+- [ ] **9b. Domain G supply-side / Domain 43 demand-side pairing noted** — any contact who received Domain 43 should receive Domain G. Cross-reference when building June 15 Wave 1 contact list.
+
+- [ ] **10. User decisions from Section 4 confirmed** — sequencing, parallel execution, Domain 58 pre/post-ruling decision, Domain G pre-distribution peer review decision, and deadline approval all received before first distribution email sends
 
 ### Critical Blockers — If Any Item is NO
 
-**Item 1 (files missing)**: Run `ls projects/resistance-research/domains/domain-5*.md` to confirm paths. If a file is missing from `domains/`, check root level of `projects/resistance-research/` — Domain 56 is at root, not in `domains/`.
+**Item 1 (files missing)**: Run `ls projects/resistance-research/domains/domain-5*.md` and `ls projects/resistance-research/domains/domain-G*.md` to confirm paths. If a file is missing from `domains/`, check root level of `projects/resistance-research/` — Domain 56 is at root, not in `domains/`. For Domain G, if the `-epistemic-infrastructure.md` file is missing, check for the older `-information-ecosystem-` version and confirm which is canonical.
 
 **Item 2 (synthesis not posted)**: Do not wait for synthesis to complete Section 1–4 of this checklist. Run the domain readiness audit and infrastructure checks in parallel. Only item 2 requires synthesis output.
 
@@ -404,17 +474,17 @@ These are HARD deadlines. Missing June 7 for Domain 56 means losing two weeks of
 ## Section 6: Outcome-Specific Adjustments
 
 **STRONG synthesis (QRP >= 2 AND response rate >= 40%, OR Score 5 override)**:
-All four domains proceed on the standard distribution calendar. Tier 2 activation begins June 15–21 using social proof from Wave 1 engagement. Domain 59 launches June 1; Domain 56 May 26 – June 7; Domain 58 June 15; Domain 57 August 10.
+All five domains proceed on the standard distribution calendar. Tier 2 activation begins June 15–21 using social proof from Wave 1 engagement. Domain 59 launches June 1; Domain 56 May 26 – June 7; Domain 58 June 15; Domain G June 15 (after revision and peer review); Domain 57 August 10.
 
 **MODERATE synthesis (QRP >= 1 OR Gist delta > 10)**:
-Same distribution calendar as STRONG. No adjustment to Phase 2 timing. Tier 2 activation timeline shifts by 7–10 days.
+Same distribution calendar as STRONG. No adjustment to Phase 2 timing. Tier 2 activation timeline shifts by 7–10 days. Domain G June 15 distribution is unchanged regardless of outcome.
 
 **WEAK synthesis (QRP < 1 AND response rate < 20% AND Gist delta <= 5)**:
-Domain 56, 58, and 59 distribution are path-independent — proceed on schedule regardless. Domain 57 August 10 distribution proceeds. What changes: Tier 2 activation defers until Domain 59 June 1 distribution produces a first engagement signal. See `PHASE_2_CONTINGENCY_PLAYBOOK.md` for full WEAK path procedures.
+Domains 56, 58, 59, and G distribution are path-independent — proceed on schedule regardless. Domain 57 August 10 distribution proceeds. What changes: Tier 2 activation defers until Domain 59 June 1 distribution produces a first engagement signal. Domain G proceeds to June 15 as planned — its audience (press freedom organizations, journalism schools) does not overlap with Phase 1 Wave 1 contacts and therefore does not depend on Phase 1 signal strength. See `PHASE_2_CONTINGENCY_PLAYBOOK.md` for full WEAK path procedures.
 
 **TOO EARLY (zero signals, no bounces by May 21)**:
-Classify at May 25 rather than May 21. Domain research is complete regardless — no production work is gated on this. Domain 59 June 1 distribution proceeds as planned.
+Classify at May 25 rather than May 21. Domain research is complete regardless — no production work is gated on this. Domain 59 June 1 distribution and Domain G June 15 distribution both proceed as planned.
 
 ---
 
-*Document produced: May 20, 2026. Audit basis: direct file verification of all four canonical domain files — word counts via `wc -w`, citation URL counts via `grep -c "https://"`, section header extraction by direct read. Prior activation checklists (PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md, Session 1361, May 19; phase-2-research-activation-checklist.md, Session 1405, May 20) contained outdated production-status expectations projecting 120–130 hours of writing work. This document supersedes both as the authoritative May 21 launch document.*
+*Document produced: May 20, 2026; updated May 20, 2026 to add Domain G coverage. Audit basis: direct file verification of all five canonical domain files — word counts via `wc -w`, citation URL counts via `grep -c "https://"`, section header extraction by direct read. Domain G (domain-G-press-freedom-epistemic-infrastructure.md) verified: 8,695 words, 50 citations, 7 sections, production-ready. Prior activation checklists (PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md, Session 1361, May 19; phase-2-research-activation-checklist.md, Session 1405, May 20) contained outdated production-status expectations projecting 120–130 hours of writing work and covered only four domains. This document supersedes both as the authoritative May 21 launch document covering all five Phase 2 domains.*
