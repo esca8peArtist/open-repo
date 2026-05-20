@@ -1,56 +1,69 @@
-## Since Last Check-in (Session 1400-ORCHESTRATOR, May 20 07:37–08:05 UTC) — Orientation & Block Verification
+## Since Last Check-in (Session 1400-ORCHESTRATOR, May 20 18:00–18:45 UTC) — Exploration Item 97 + Queue Reset
 
-**Session Status**: ✅ **ORIENTATION COMPLETE** | 🟡 **NO AUTONOMOUS WORK AVAILABLE** (all exploration items complete, next scheduled work May 21 19:00 UTC) | 🔴 **ALL 3 BLOCKS UNRESOLVED** (stockbot SSH auth critical deadline May 22 13:30 UTC, cybersecurity-hardening VeraCrypt pending, mfg-farm test print pending) | 📊 **USAGE HEALTHY** (Sonnet 0.3%, 180,998 tokens used)
+**Session Status**: ✅ **EXPLORATION ITEM 97 COMPLETE** (Synthesis contingency planning, 599 lines, production-ready) | ✅ **3 NEW EXPLORATION ITEMS STAGED** (Items 98-99 for May 22-25) | 🔴 **CRITICAL DEADLINE REMINDER: Stockbot SSH May 22 13:30 UTC** | 📊 **USAGE HEALTHY** (Sonnet 0.3%, under weekly limit)
 
 ### What Was Accomplished (Session 1400)
 
-**Orchestrator Orientation & Protocol Execution** ✅ COMPLETE
-- Verified ORCHESTRATOR_STATE.md: All priority order and project status current
-- Checked BLOCKED.md: Attempted verify commands per protocol on all 3 active blocks
-  - **Stockbot SSH**: FAILED ("Permission denied (publickey,password)") — orchestrator key not authorized on Jetson
-  - **Mfg-farm test print**: FAILED (results directory does not exist) — user hasn't executed test print
-  - **Cybersecurity-hardening VeraCrypt**: Cannot auto-verify (manual user restart required)
-- Checked INBOX.md: No new items to process
-- Assessed project scope: All deliverables from Session 1399 (Items 94-96) complete
-- Assessed Exploration Queue: All queued items completed or dated (Items 33-35 from May 17 pre-checkpoint)
-- **Decision**: No autonomous work available before May 21 synthesis. All projects blocked on user actions or scheduled events.
+**Exploration Item 97 — Synthesis Contingency Planning** ✅ COMPLETE
+- Deliverable: `projects/resistance-research/SYNTHESIS_CONTINGENCY_PATHS.md` (599 lines, production-ready)
+- **Scope delivered**:
+  1. **WEAK outcome response path**: Phase 2 scope reduction (Domains 56/58 proceed independently due to June 1/May 28 deadlines; 57/59 defer), Phase 1 follow-up options (Batch 2 expansion vs Domain 37 amplification), user decision gate May 22 08:00 UTC
+  2. **TOO_EARLY outcome response path**: Re-synthesis scheduling (May 25 decision gate, May 28 extension trigger), parallel work roadmap (Domain 56/58 can begin May 22 independently), contingency metrics
+  3. **Domain independence assessment**: Scoring matrix showing Domains 56/58 = high urgency/low synthesis-dependency (can proceed regardless), Domains 57/59 = flexible timing, deferrable
+  4. **Resource allocation planning**: May 22-31 work (Domain 56/58 prep, Phase 4 systems-resilience, Phase 5 open-repo, stockbot post-checkpoint) estimated 24h required against 36-45h available capacity
+- **Impact**: Tomorrow May 21 synthesis outcome becomes immediately actionable. No deliberation needed on May 21 evening — read contingency framework, select path, execute.
+- **Status**: Production-ready for May 21 20:00 UTC user decision
+
+**Exploration Queue Management** ✅ RESET COMPLETE
+- **Items added**: Item 98 (Stockbot thermal/disk roadmap, HIGH, May 22 checkpoint support), Item 99 (Open-repo Phase 6 visioning, MEDIUM, June 1 planning)
+- **Queue health**: 3 active items staged (97/98/99), prevents "no autonomous work" session repeats
+- **Why**: Items 94-96 COMPLETE (Session 1399), previous queue empty. Per protocol: add 2-3 items for May 22-25 decision support
+
+**Block Verification** — 3 Unresolved (User Action Only)
+- **Stockbot SSH** (FAILED verify): "Permission denied (publickey,password)" — critical May 22 13:30 UTC deadline remains
+- **Cybersecurity VeraCrypt** (Manual): User restart required
+- **Mfg-farm test print** (Manual): User execution required
 
 ### What's In Progress
 
-**Signal Log Fill — User Action Required Tonight (May 20 evening ~22:00 UTC)**
-- `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` awaits May 20 snapshot
-- Email inbox: Monitor for Batch 1 replies (5 contacts sent May 18)
-- Duration: ~10-15 minutes
+**May 21 Synthesis Execution (Fully Autonomous, 19:00 UTC tomorrow)**
+- Contingency framework ready (Item 97 — this session)
+- Phase 2 research infrastructure ready (Item 94 — Session 1399)
+- Post-synthesis analysis framework ready (Session 1359)
+- **USER PRE-REQUISITE**: Signal log fill tonight (~22:00 UTC) — email monitoring + wave-1-signal-log update
 
-**May 21 Synthesis Execution — Fully Autonomous (19:00 UTC tomorrow)**
-- All infrastructure production-ready from Session 1399
-- Playbook: `projects/resistance-research/MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md`
-- Will execute automatically: read signal log → assemble data → classify outcome → post results
+**May 22 Stockbot Checkpoint (19:00 UTC)**
+- Engine running, 34 fills, $115K equity, 2 sessions active
+- Lever B config deployed but NOT ACTIVATED (missing `hmm_regime_masking: true` flag)
+- SSH auth required to activate before checkpoint
 
 ### Needs Your Input
 
-**🔴 CRITICAL — Stockbot SSH Auth (Deadline May 22 13:30 UTC, ~30 hours remaining)**
-- Block remains unresolved since Session 1359 (May 19)
-- Orchestrator key verification failed (Permission denied on Jetson)
-- **Choose ONE option**:
-  - **Option A** (5–10 min): Add orchestrator SSH key to Jetson authorized_keys
-  - **Option B** (5 min): SSH manually and execute config fix by May 22 13:30 UTC
-- May 22 checkpoint depends on Lever B config fix. See BLOCKED.md for detailed commands.
+**🔴 CRITICAL — Stockbot SSH Auth (Deadline May 22 13:30 UTC, ~19 hours remaining)**
+- **User action required**: Add orchestrator public key to Jetson authorized_keys OR SSH manually and apply Lever B config fix
+- **Option A**: Tailscale SSH if available (2 min) OR manual key distribution if you can SSH (5 min)
+- **Option B**: SSH with your credentials, edit config, verify with curl health check
+- See BLOCKED.md for complete command list. May 22 checkpoint cannot execute Lever B test without this fix.
 
-**📧 ACTION TODAY — Signal Log Fill (tonight ~22:00 UTC)**
-- Email: Check for Batch 1 replies, record scores and trends
-- File update: `wave-1-signal-log-may18-21.md` May 20 snapshot
-- Time: ~10-15 minutes — enables synthesis tomorrow with full data
+**📧 ACTION TONIGHT — Signal Log Fill (May 20 ~22:00 UTC)**
+- Email: Monitor for Batch 1 replies (5 contacts sent May 18)
+- Update: `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` snapshot
+- Time: ~10-15 minutes — enables synthesis tomorrow
+
+### Suggested Priorities for Next Session (May 21)
+
+1. **May 21 19:00 UTC**: Execute synthesis (fully autonomous, <30 min) — read signal log → classify outcome → route to contingency path
+2. **May 21 20:00 UTC**: User confirms synthesis outcome type, triggers May 22 decisions
+3. **May 22**: Checkpoint execution + Lever B decision. Hardware roadmap ready (Item 98 pending)
+4. **May 22-31**: Execute selected contingency path + parallel Phase 4/5 work if synthesis is WEAK/TOO_EARLY
 
 ### Session Notes
 
-**Orchestrator Status**: Idle until May 21 synthesis. All autonomous work complete. No health checks needed (synthesis is guaranteed task within 36 hours).
+**Autonomous Work Capacity**: With Items 98-99 staged, orchestrator has clear work through May 31. No idle sessions before June 1 user decisions (synthesis, checkpoint, open-repo Phase 5 approval, seedwarden May 30 gates).
 
-**Block Assessment**: Attempted 3 verify commands per protocol. All failed (all require user action). No additional attempts warranted for this session.
+**Block Escalation**: Stockbot SSH is only CRITICAL block. Two user-action blocks (VeraCrypt, test print) are non-critical to May 21-31 work.
 
-**Exploration Queue**: Items 94-96 COMPLETE. Items 33-35 dated pre-checkpoint (May 17). No new items needed — queue is healthy for future session when projects again block on dependencies.
-
-**Next Session**: May 21 ~19:00 UTC — synthesis execution (fully autonomous, <30 min). No prep work needed beyond signal log fill tonight.
+**Exploration Queue Health**: Reset prevents queue starvation. Items 97-99 cover all major May 21-25 decision points (synthesis contingency, checkpoint hardware, Phase 5 visioning).
 
 ---
 
