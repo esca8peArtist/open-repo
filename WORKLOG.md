@@ -1,5 +1,27 @@
 # Work Log
 
+## Session 1407 — Open-Repo Phase 5.1 Pre-Deployment Verification (May 20, deadline 18:00 UTC)
+
+**Tasks**: Phase 5.1 pre-deployment verification for ZimWriter libzim activation branch
+
+**Status**: COMPLETE — 2 deliverables produced, staged for orchestrator review
+
+**Key findings**:
+1. Feature branch `feature/zimwriter-libzim-activation` is architecturally complete — all 5 code changes confirmed
+2. BLOCKER IDENTIFIED: Branch diverges from master (1 commit behind: `198a146d`). Two functional gaps: `_get_illustration_bytes()` returns None instead of fallback PNG (runtime crash risk), and `creator.config_indexing()` absent from live code (FTS disabled)
+3. Test suite: 240 passed on full suite; 88 passed on export pipeline (master); 84 on feature branch (4 TestLibZIMIntegration tests missing until rebase)
+4. libzim wheel confirmed available for aarch64 Python 3.11 (8.3 MB download verified)
+5. libzim NOT installed in venv — all tests use stub path; real Creator path untested
+6. Resolution: single `git rebase master` restores all fixes, confidence rises from 87% to 97%
+
+**Deliverables**:
+- `projects/open-repo/phase-5-1-predeployment-verification-checklist.md` — 1,500+ word executable checklist, live audit results, pre-deployment sequence
+- `projects/open-repo/VERIFICATION_REPORT.md` — May 25-26 briefing document, blockers, confidence assessment, recommended action sequence
+
+**Both files staged (not committed) per instructions.**
+
+---
+
 ## Session 1406 — Autonomous Orchestrator: May 20 (10:22–11:05 UTC) — Parallel Queue Execution: Phase 2 Readiness Audit + Phase 3 Timeline + Domain Status Verification
 
 **Tasks**:

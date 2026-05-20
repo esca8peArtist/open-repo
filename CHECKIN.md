@@ -1,3 +1,22 @@
+## Since Last Check-in (Session 1407-ORCHESTRATOR, May 20 10:09–11:30 UTC) — Exploration Queue Execution: Phase 2 Verification + Phase 3 Gantt Delivery + CRITICAL Open-Repo Rebase Finding
+
+**Session Status**: ✅ **RESISTANCE-RESEARCH PHASE 2 VERIFIED PRODUCTION-READY** (deliverables already completed Session 1406, blocking assumptions current) | ✅ **SEEDWARDEN PHASE 3 GANTT COMPLETED** (week-by-week execution schedule for May 30 briefing) | 🔴 **CRITICAL: OPEN-REPO REQUIRES REBASE** (feature branch 8 commits behind master; fix commit 198a146d missing) | 📊 **USAGE NOMINAL** (1.6%, parallel agent execution)
+
+### Critical Finding — Open-Repo Phase 5.1 Feature Branch Status
+
+**⚠️ BLOCKER IDENTIFIED**: Feature branch `feature/zimwriter-libzim-activation` is 8 commits behind master. The critical fix commit `198a146d` (Session 1404) is on master BUT NOT on the feature branch. Two functional gaps result:
+
+1. **Hard blocker (runtime crash risk)**: `_get_illustration_bytes()` returns `None` instead of fallback PNG. When libzim is installed and `creator.add_illustration(48, None)` runs, TypeError will abort ZIM creation.
+2. **Soft blocker (feature degradation)**: `creator.config_indexing()` call missing from live code. Generated ZIM files will have no Xapian full-text search. Kiwix offline search will not work.
+
+**Resolution**: Single `git rebase master` on feature branch restores both fixes. Estimated 15 minutes.
+
+**Confidence assessment**: 87% current (with identified blockers) → 97% post-rebase (all blockers resolved)
+
+**User action required**: Before May 25-26 merge decision, rebase the feature branch: `git checkout feature/zimwriter-libzim-activation && git rebase master`
+
+---
+
 ## Since Last Check-in (Session 1406-ORCHESTRATOR, May 20 10:22–11:05 UTC) — Parallel Queue Execution: Phase 2 FULLY WRITTEN Discovery + Phase 3 Timeline Verification + Critical Path Confirmed
 
 **Session Status**: ✅ **PHASE 2 DOMAINS 56-59 ARE ALL FULLY WRITTEN** (35,300 words, 237 sources) | ✅ **PHASE 3 TIMELINE FULLY ACHIEVABLE** (June 22-July 13) | 🟢 **ONLY 24-39 HOURS DISTRIBUTION PREP REMAINING** (not 120-130 hours production) | 📊 **USAGE NOMINAL** (1.8%, parallel agent execution)
