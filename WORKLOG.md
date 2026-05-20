@@ -1,5 +1,31 @@
 # Work Log
 
+## Session RESEARCH-AGENT (May 20) — Phase 5 Candidate 1 ZimWriter Implementation Verification & Pre-Deployment Checklist
+
+**Session Type**: Exploration Queue — Phase 5 Candidate 1 verification
+
+**Outputs**:
+- `projects/open-repo/phase-5-candidate-1-implementation-verification.md` — libzim audit, Xapian compatibility, ZIM stub validation, two defects identified
+- `projects/open-repo/candidate-1-implementation-checklist.md` — executable merge-path checklist (2-3 hr, replaces 8-11 hr from-scratch guide)
+
+**Key Findings**:
+
+1. **Implementation already complete** on `feature/zimwriter-libzim-activation` (commit ec0ff7be). All 5 roadmap code changes are present. 88 tests pass. Migration 003 exists and is correctly chained from 002.
+
+2. **Defect 1 identified**: Duplicate `_FALLBACK_ILLUSTRATION_PNG` constant — lines 65-70 (1x1 pixel PNG) and line 75 (48x48 pixel PNG) both define the same variable. Python silently uses the second. The first definition must be removed before merge.
+
+3. **Defect 2 identified (higher priority)**: `_apply_metadata_to_creator()` wraps all Creator API calls in `except AttributeError: pass`. Any metadata failure (wrong method name, API version mismatch) is silently swallowed — no exception, no log, just a ZIM file with missing metadata that will fail zimcheck with no traceable cause. The bare except must be removed.
+
+4. **libzim compatibility confirmed**: libzim 3.10.0 (latest) ships aarch64 wheels, supports Python 3.11.2, bundles its own Xapian (system Xapian not needed). No breaking changes in writer API between 3.2 and 3.10. Version pin `>=3.2,<4.0` is correct.
+
+5. **zimcheck binary not installed** on current system — requires `apt-get install zim-tools` as an explicit CI setup step.
+
+6. **Path forward**: Two defects are ~15 minutes of editing. After fixing, merge path requires approximately 2-3 hours total including integration tests.
+
+**Elapsed Time**: ~1 session
+
+---
+
 ## Session RESEARCH-AGENT (May 20) — Phase 5 Wave 2 Veterinary Care Pre-Research Complete
 
 **Session Type**: Deep research pre-execution for systems-resilience Phase 5 Wave 2
