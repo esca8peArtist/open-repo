@@ -4,6 +4,37 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Pre-Decision Critical Path and Gantt Timeline — May 20, 2026
+
+**Task**: Pre-decision Phase 3 production timeline and critical path analysis for May 30 scope decision. Produce two production-ready deliverables: (1) `phase-3-medicinal-herbs-critical-path.md` (2,800+ words, full critical path analysis with all spec sections), (2) `phase-3-medicinal-herbs-gantt-timeline.md` (Gantt-style timeline with critical path highlighted, float days identified, dependencies marked, and three risk mitigation checkpoints).
+
+**Files audited before writing**:
+- `phase-3-medicinal-herbs-content-outline.md` (5,800 words): All 5 bundle outlines, species list, word targets, per-bundle hours, FTC framing, shared-species structure. Primary data source for writing schedule.
+- `phase-3-medicinal-herbs-sourcing-guide.md` (2,400 words): Per-species photo sourcing paths, supplier contacts (Prairie Moon, Strictly Medicinal, Mountain Rose, Southern Exposure, Fedco), lead times, FGV verification steps.
+- `phase-3-medicinal-herbs-critical-path.md` (v4.0): Prior version — complete but superseded by v5.0 this session with task-spec additions including per-herb complexity notes, palette decision slip impact analysis, supplier delay recovery sequence, and July 20 contingency path.
+- `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v2.0): Prior version of the uppercase variant — retained as archive.
+- `phase-3-medicinal-herbs-gantt-timeline.md` (prior version): Prior Gantt — solid structure, superseded by v2.0 this session with checkpoint sections, dependency map, shared-species dependency table, and worst-case recovery paths.
+- `phase-3-medicinal-herbs-etsy-listings.md` (3,200 words): Bundle copy and photo sequences; used for upload checklist and gate status verification.
+
+**Decisions made during session**:
+- `phase-3-medicinal-herbs-critical-path.md` upgraded to v5.0 in place. Key additions vs. v4.0: per-herb production complexity notes in the sourcing tables (Goldenseal and Ashwagandha flagged as highest complexity), palette finalization deadline section (June 15) with slip impact quantification (6 hours rework if palette changes post-production), supplier delay recovery sequence (5-step process), three `[DECISION]` markers keyed to May 30 action requirements.
+- `phase-3-medicinal-herbs-gantt-timeline.md` upgraded to v2.0 in place. Key additions: three risk mitigation checkpoints (June 30, July 7, July 13) with green conditions and contingency triggers, shared-species cross-bundle dependency table, worst-case recovery paths (5-day and 10-day overrun scenarios), dependency map showing all upstream → downstream chains.
+- Both gate conditions (forager cohort 21.3%, native plants conversion 2.24%) confirmed cleared with margin. Forager cohort monitoring through July 13 documented as optional, not required.
+- Palette decision deadline hardened at June 15 (6 days before brand kit loading on June 21). Decision slipping past June 15 quantified: each affected cover = 1.2 hours rework; all 5 covers = 6 hours total rework, equivalent to one full Day 1 writing session.
+
+**Files created/updated**:
+
+1. `phase-3-medicinal-herbs-critical-path.md` — upgraded from v4.0 to v5.0. 2,800+ words. Full critical path analysis covering all five spec sections: herb selection + supplier sourcing with per-herb complexity; writing schedule with day-by-day tables and pace self-tests; Canva design timeline with palette decision deadline and slip impact; photography staging with fresh vs. dried decision matrix and supplier scheduling; upload sequence with gate status and staggered upload rationale; risk analysis table with scoring; success metrics. Three appendices: FTC quick reference, May 30 decision table, pre-sprint checklist.
+
+2. `phase-3-medicinal-herbs-gantt-timeline.md` — upgraded from prior version to v2.0. Full Gantt-style timeline with: pre-sprint timeline (May 26–June 21), 22-day sprint Gantt (June 22–July 13), critical path highlighted with chain diagram, float days table by activity, dependency map (upstream → downstream), shared-species dependency table, three risk mitigation checkpoints (June 30, July 7, July 13) with green conditions and contingency triggers, daily milestone reference table (all 22 days), worst-case recovery paths (5-day and 10-day overrun), gate and milestone summary table.
+
+**No image downloads this session** (documentation only).
+**No supplier contacts initiated** (outreach calendar documented in pre-sprint checklist; user executes starting June 1).
+
+**Completion status**: Both deliverables production-ready for May 30 scope decision. Three decisions required May 30: (1) sprint scope A/B/C, (2) Goldenseal path, (3) palette finalization timeline. Goldenseal order deadline June 8 is the next hard action gate after May 30.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Medicinal Herbs Production Launch Preparation — May 20, 2026
 
 **Task**: Exploration Queue item — Phase 3 Medicinal Herbs Production Launch Preparation (4–6 hrs, May 28 gating). Produce two production-ready deliverables for Anya review.
