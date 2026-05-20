@@ -4,6 +4,35 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path Analysis & Production Timeline (Exploration Queue Item, May 30 Phase 2 launch briefing) — May 20, 2026
+
+**Task**: Phase 3 Medicinal Herbs Critical Path Analysis and Production Timeline. Deadline May 20 17:00 UTC. Scope: 5-bundle medicinal herbs selection finalization, writing production schedule, Canva design critical path, photography staging timeline, upload sequence and launch gates, risk mitigation. Deliverables: `phase-3-medicinal-herbs-critical-path.md` (2,500+ words) and `PHASE_3_GANTT_TIMELINE.csv` (week-by-week schedule with resource allocation).
+
+**Files audited before writing**:
+- `phase-3-medicinal-herbs-critical-path.md` (v5.0, 2,800+ words, May 20): Found complete and production-ready from prior sessions today. All six scope sections present and verified against task specification: medicinal herb selection (5 bundles, species locked), sourcing timeline by tier (Tier 1/2/3, per-herb complexity, compliance notes), writing production schedule (per-bundle hours, shared-species efficiency, week-by-week day table), Canva design critical path (12.5 hrs, per-bundle schedule, design lock July 3, palette decision gate June 15), photography staging (pre-sprint and in-sprint tracks, fresh/dried/CC decision matrix, studio backgrounds, supplier delivery vs. sprint timing), upload sequence (staggered June 29–Aug 3, gate status, per-bundle checklist, Kit email triggers, fallback paths), risk matrix (10 risks scored P×I, 5 contingency triggers with step-by-step activation). Both launch gates confirmed cleared: forager cohort 21.3% (gate >20%), native plants conversion 2.24% (gate >1.5%). Three May 30 decisions documented in Appendix B and C. Word count 2,800+. No gaps found.
+- `medicinal-herbs-candidate-list.md` (May 7): All 12 primary species confirmed with bundles, conservation status, sourcing contacts, photo sourcing paths, FTC framing, and margin models. Consistent with critical path document.
+- `phase-3-medicinal-herbs-gantt-timeline.csv` (day-by-day task level, 63 rows): Confirmed complete day-by-day task Gantt. Columns match required schema (Task / Bundle-Track / Start Date / Duration / Dependencies / Float Days / Critical Path Y/N / Notes). This file does NOT match the `PHASE_3_GANTT_TIMELINE.csv` filename required by the task specification, and does not include week-by-week summary rows or per-week resource allocation totals.
+- `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v2.0, May 19): Earlier version (3,800+ words). Contains ASCII Gantt and worst-case recovery analysis. Superseded by `phase-3-medicinal-herbs-critical-path.md` v5.0.
+- `WORKLOG.md`: Prior session entries confirmed both `phase-3-medicinal-herbs-critical-path.md` and `phase-3-medicinal-herbs-gantt-timeline.csv` produced in earlier sessions today. `PHASE_3_GANTT_TIMELINE.csv` (uppercase, week-by-week format) not present.
+
+**Key findings**:
+- `phase-3-medicinal-herbs-critical-path.md` v5.0 satisfies all task specification criteria. No changes needed. File is production-ready.
+- `PHASE_3_GANTT_TIMELINE.csv` did not exist. The task specification requires this specific filename with week-by-week format and per-week resource allocation — distinct from the existing day-by-day task Gantt. Required creation.
+- No image downloads needed. No supplier contacts. All specification criteria met.
+
+**Files confirmed present (no changes)**:
+- `phase-3-medicinal-herbs-critical-path.md` — v5.0, 2,800+ words, all six sections complete. Production-ready.
+
+**Files created**:
+- `PHASE_3_GANTT_TIMELINE.csv` — 62 rows. Structure: Pre-Sprint phase (14 rows: 3 decision gates, 4 supplier deadlines, 6 photography tasks, 1 brand kit load); Week 1 summary (13 rows: WH Day 1–3 writing, Resp Day 1–3 writing, 4 photography sessions, 2 cover designs, Week 1 total resource row); Week 2 summary (14 rows: WH upload milestone, Immunity Day 1–4 writing, Sleep Day 1–3 writing, 3 cover designs, 2 zone cards, Checkpoint 1, Week 2 total resource row); Week 3 summary (13 rows: Resp upload, Digestive Day 1–3 writing, 3 design tasks, FTC review, SEO pass, upload prep, Float Day 1, Sleep upload, Checkpoint 3, Week 3 total resource row); Post-Sprint (2 rows: Immunity July 20, Digestive August 3); Contingency (5 rows); Resource Summary (4 rows: Week 1 total, Week 2 total, Week 3 total, Sprint total). Critical path marked YES on all zero-float tasks. Resource column shows hours per task and per-week totals: Week 1 43.4 hrs / Week 2 35 hrs / Week 3 29.9 hrs / Sprint total 108.3 hrs.
+
+**Both deliverables are staged and production-ready. Not committed per task instructions — staged for orchestrator review pending verification before May 30 Phase 2 launch briefing.**
+
+**No image downloads this session**.
+**No supplier contacts initiated**.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path Analysis (Exploration Queue) — May 20, 2026
 
 **Task**: Develop detailed production timeline with critical path analysis for Phase 3 medicinal herbs (June 22–July 13, 22-day window). Deliverables: `phase-3-medicinal-herbs-critical-path.md` (2,500+ words), `phase-3-medicinal-herbs-gantt-timeline.csv` (Gantt with critical path column), and `phase-3-supplier-confirmation-tracker.md` (per-supplier delivery feasibility + alternates).
