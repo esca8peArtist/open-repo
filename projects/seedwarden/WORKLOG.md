@@ -4,6 +4,55 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — HERBALIST_PRACTITIONER_ECOSYSTEM.md — May 20, 2026
+
+**Task**: Produce the Phase 3 practitioner-tier targeting document for $120–$150 bundles.
+Deliverable: `HERBALIST_PRACTITIONER_ECOSYSTEM.md` — ~4,000 words, 6 sections.
+
+**Files read before writing**:
+- `phase-3-herbalist-ecosystem-map.md` — prior 6,800-word ecosystem map (Session 1429)
+- `herbalist-network-ecosystem-mapping.md` — organization directory (Parts 1–6)
+- `PHASE_3_HERBALIST_NETWORK_PRESTAGING.md` — 25-contact expert network, outreach SOPs
+- `PHASE_3_AUDIENCE_STRATEGY.md` — segment LTV profiles, channel strategies
+- `phase-3-practitioner-messaging-framework.md` — messaging hooks, friction preemption
+
+**Research conducted**:
+- ND licensing by state (AANP/AANMC sources) — confirmed 26 licensed jurisdictions,
+  key unlicensed hotspot states (NY, FL, TX)
+- Summer 2026 herbalism event calendar (HerbRally) — confirmed June–August event dates
+- California naturopathic doctor density and Ayurveda center landscape
+- Appalachia School of Holistic Herbalism — confirmed Asheville, NC location and
+  oldest SE school status
+- Oregon ND licensing scope (OANP, OBNM) — confirmed full scope-of-practice state
+- Herbalism Substack publications — identified 5 practitioner-oriented accounts
+
+**File created (1 deliverable)**:
+
+1. `HERBALIST_PRACTITIONER_ECOSYSTEM.md` — ~4,000 words. All 6 required sections:
+   (1) Practitioner Tiers and Network Mapping — 6 tiers: AHG structure (professional
+   vs. student track, 13 chapters, symposium), clinical herbalism schools and alumni
+   networks, NAMA with herbalist overlap analysis, iridology/alternative medicine
+   directories, naturopathic networks with full state-by-state licensing breakdown,
+   community circles and online forums (Reddit, Facebook, HerbMentor, HerbRally);
+   (2) Geographic Hotspots — CO, CA, OR, NY, Appalachia — each with practitioner
+   density, bundle fit, and Phase 3 channel specifics; (3) Communication Channels —
+   newsletters ranked by reach and practitioner fit, Substack landscape, podcast table
+   with pitch angles, social media content format recommendations, academic journals
+   and trade publications; (4) Cross-Selling and Bundle Opportunities — tier-by-tier
+   purchase driver analysis, adjacent product spending ecosystem, clinic gift sets,
+   workshop materials, and 4 named partnership opportunities with contact paths;
+   (5) Messaging Refinement — Phase 2 vs. Phase 3 messaging contrast table,
+   credibility signals strategy with pre-launch action sequence, pricing and bundle
+   composition specification for $120–$150 tier; (6) Action Items — directory
+   compilation and contact outreach by June 1/8/15, newsletter outreach schedule
+   June 22–August 13, full event calendar table (8 events with Seedwarden actions),
+   audience segmentation matrix (8 rows: practice type, geography, price sensitivity,
+   bundle priority, primary channel), first-cohort priority order.
+
+**No conflicting information noted.** Data consistent with prior session research.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Herbalist Ecosystem Map — May 20, 2026
 
 **Task**: Map the herbalist practitioner ecosystem for Phase 3 launch targeting. Produce
