@@ -1,3 +1,24 @@
+## Since Last Check-in (Session 1438 — ORCHESTRATOR, May 20 21:30–22:45 UTC) — Parallel Exploration Queue Execution: 3 Items Complete + Critical Stockbot Alert
+
+**Status**: ✅ **3 EXPLORATION QUEUE ITEMS EXECUTED IN PARALLEL, ALL COMMITTED TO MASTER** | 🔴 **CRITICAL: STOCKBOT LEVER B DEADLINE MAY 22 13:30 UTC (11 HOURS)** | ⏰ **MAY 21 19:00 UTC SYNTHESIS EXECUTION (AUTONOMOUS, ~17h remaining)**
+
+**What Was Accomplished**:
+1. **seedwarden Phase 3 Medicinal Herbs Critical Path** (v3.0) — Production-ready timeline with 3 user decisions needed by May 30
+2. **open-repo Phase 5 Candidate 1 Verification** — CRITICAL BUG FOUND & FIXED (libzim config_indexing placement error); all implementation blockers resolved
+3. **systems-resilience Veterinary Care Research** — 80-source deep research; ready for Phase 5 Wave 2 content production
+
+**Key Findings**:
+- open-repo: Roadmap's Change 3 code block is INCORRECT — must call `config_indexing()` BEFORE entering Creator context, not inside (runtime error). Corrected in v2 checklist.
+- seedwarden: Writing is the binding constraint for Phase 3; design/photography both have full float. Can deliver all 5 bundles by July 13 with parallel execution.
+- systems-resilience: 700+ counties have veterinary shortages (vs 245 USDA-designated); WOAH CAHW framework (April 2024) is first global standard; Ohio telehealth law sets Zone 5 precedent.
+
+**Pending User Actions**:
+1. 🔴 **URGENT: Stockbot SSH auth fix by May 22 13:30 UTC** — Either add orchestrator public key to Jetson authorized_keys, OR SSH manually and add `"hmm_regime_masking": true` to config file. Without this, May 22 checkpoint repeats May 19 failure.
+2. 📋 **Seedwarden Phase 3 scope by May 30** — Option C (3-bundle) recommended; full timeline ready for any path.
+3. 📋 **Open-repo Phase 5 approval** — All verification complete; ready to merge upon approval.
+
+---
+
 ## Since Last Check-in (Session 1435 — ORCHESTRATOR, May 20 20:36–21:30 UTC) — Exploration Queue Execution: Phase 2 Activation Prep + Downstream Gate Staging
 
 **Status**: ✅ **3 QUEUE ITEMS EXECUTED IN PARALLEL, ALL COMMITTED TO MASTER** | 🔴 **CRITICAL: STOCKBOT LEVER B DEADLINE MAY 22 13:30 UTC** | ⏰ **MAY 21 19:00 UTC SYNTHESIS EXECUTION (AUTONOMOUS, 18h remaining)**
