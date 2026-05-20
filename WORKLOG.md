@@ -1,5 +1,29 @@
 # Work Log
 
+## Session 1396 — systems-resilience: Phase 5 Tier 2 Household Coordination Infrastructure Guide (May 20, 2026)
+
+**Task**: Write the Household Coordination Infrastructure Guide (Phase 5, Tier 2, Dimension 1) — the bridge document connecting Tier 1 individual documents and Phase 3 community-scale domains.
+
+**Deliverable**: `projects/systems-resilience/phase-5/tier-2-household-coordination-infrastructure-guide.md`
+
+**Stats**: 7,623 words | 28 citations | All 8 sections complete
+
+**Sections written**:
+1. Bridge Architecture — three household types, decision hierarchy, individual→household→community tiering
+2. Household Governance Framework — domain-specialist authority with assembly override, modified consent model, four-step conflict resolution protocol, mandatory apprenticeship for knowledge preservation, household decision log
+3. Household Food Systems Coordination — caloric baseline (28–32K cal/day for 15 adults), four role assignments, 6-month FIFO rotation protocol, Zone 5 seasonal labor calendar, supply chain relationships
+4. Household Information Infrastructure — three-layer communication architecture (GMRS, AREDN, HF), runner protocol, printed procedures binder + skills inventory + household log, information security policy
+5. Household Security & Defense Coordination — actual threat profile (desperate individuals, not organized raiders), three-ring early warning, watch rotation for 15-person household, contact protocol, non-kinetic measures
+6. Household Economic Coordination — resource balance sheet template, labor economics for 15-person household (~432 hrs/week available), skills inventory framework (6 domains), trade relationships and emergency reserve policy
+7. Individual → Household Transition Checklist — pre-join checklist, what household infrastructure must exist before members join, 7-week onboarding protocol with provisional period
+8. Implementation Timeline — pre-formation (weeks 1–4), forming household (weeks 5–12), 3-month autonomous operation benchmark (9-item checklist), 6-month community integration target
+
+**Key sources used**: Twin Oaks governance (55+ years), East Wind governance (50+ years), Sociocracy For All consent model, Foundation for Intentional Community membership process, Phase 3 all five domains, existing household/ documents, Zone 5 agronomic figures
+
+**Forward references created**: tier-3-community-coordination-framework.md, tier-2-veterinary-care-guide.md, tier-2-psychological-support-guide.md, tier-2-conflict-resolution-deep-dive.md (all planned)
+
+---
+
 ## Session 1394 — Orchestrator: Exploration Queue Execution + May 21 Synthesis Prep (May 20, 2026, 05:22–09:00 UTC)
 
 **Session Type**: Parallel Exploration Queue execution + synthesis readiness verification
