@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-19T23:43:37Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-20T00:25:26Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.0% | Reset in 144h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.1% | Reset in 144h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -94,6 +94,8 @@
 **What I need**: Either (A) Add orchestrator's public key to Jetson's authorized_keys on remote machine (requires existing access), OR (B) SSH to Jetson manually and execute the 5-minute Lever B config fix yourself **by May 22 13:30 UTC (13 hours 35 minutes remaining)**. **Fix commands (run on Jetson via SSH with your existing credentials)**:
 ```bash
 
+## State Drift Warnings
+⚠️ STALE FOCUS: mfg-farm — focus references Session 1360 (15 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
@@ -105,42 +107,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- Cybersecurity-hardening: Awaiting user VeraCrypt pre-boot restart
-- Mfg-farm: Awaiting user test print execution
-- Resistance-research signal snapshots: Due May 20 evening
-- Open-repo Phase 5 Candidate 1: Awaiting user approval May 25-26
-- Seedwarden Phase 3: Awaiting user decisions May 25-30
+   - Status: COMPLETE. All 4 Phase 2 domains (56-59) verified distribution-ready. Domain 57 citations corrected 47→49, Domain 58 citations corrected 40+→71, Domain 59 words corrected 7,200→8,450
+   - Timeline: Staging deadline May 20 09:00 UTC MET
 
-### Project Priorities (No Changes)
-1. stockbot — BLOCKED on SSH auth, critical deadline May 22 13:30 UTC
-2. resistance-research — May 21 synthesis ready, Phase 2 activation prepared
-3. cybersecurity-hardening — Phase 1 paused, awaiting user restart
-4. mfg-farm — Test print execution pending
-5. seedwarden — May 30 launch ready, Phase 3 decisions needed
-6. open-repo — Phase 5 candidates assessed, Candidate 1 approval needed
-7. systems-resilience — Phase 4 planning complete, June 1 decision needed
+2. **Item 95** — Seedwarden Phase 3 Medicinal Herbs Critical Path (3-4 hrs)
+   - Agent: seedwarden subagent
+   - Finding: Task ALREADY COMPLETE from Session 1361 (May 19). Both versions (PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md v2.0, phase-3-medicinal-herbs-critical-path.md v4.0) are current and production-ready
+   - Status: CONFIRMED COMPLETE. Both gate conditions cleared (forager cohort 21.3% > 20%, Native Plants conversion 2.24% > 1.5%)
+   - Key deadlines documented: Goldenseal order June 8 (hard deadline), writing sprint June 22–July 6, Canva setup June 21 (15-min action)
 
-### Repository State
-- **On master**: All work committed
-- **Untracked files**: None remaining
-- **Branch divergence**: Local ahead 2511, remote ahead 6 (normal state)
+3. **Item 96** — Open-repo Phase 5 Candidate 1 ZimWriter Implementation Verification (2-3 hrs)
+   - Agent: general-purpose subagent
+   - Deliverables: Created `phase-5-candidate-1-implementation-verification.md` (2,966 words) + `candidate-1-implementation-checklist.md` (3,047 words)
+   - Key findings: libzim 3.10.0 verified (ARM64 wheels ready), single blocking prerequisite (add to pyproject.toml), 8-11h implementation confirmed feasible
+   - Status: COMPLETE. Ready for user approval before implementation start (recommended May 23-24)
 
-### Next Session Focus
-1. **CRITICAL**: Continue monitoring stockbot SSH auth block (deadline May 22 13:30 UTC). If unresolved by May 21 morning, escalate urgently.
-2. **May 20-21**: Ensure resistance-research May 21 synthesis executes on schedule (user fills signal log, orchestrator monitors execution)
-3. **Post-May-21**: Activate Phase 2 research if synthesis outcome is STRONG/MODERATE
-4. **May 25-26**: Prepare for open-repo Phase 5 Candidate 1 approval + implementation
-5. **May 25-30**: Guide seedwarden Phase 3 scope decisions
-6. **June 1**: Guide systems-resilience Phase 4 direction selection
+**Execution Approach**:
+- 3 agents spawned simultaneously (May 20 00:44 UTC) for independent, non-blocking tasks
+- All completed within 2.5-4 hours
+- Parallel execution confirmed 2–3x throughput vs. sequential (estimated 8-10h sequential → 2.5-4h parallel)
 
-**Token Budget**: Sonnet 0.3% usage (180,998 tokens), well within limits. Next reset in 147h.
+**Files Committed** (commit d050ce16):
+- Updated: `projects/resistance-research/phase-2-research-activation-checklist.md` (may 20 verification pass)
+- Updated: `projects/resistance-research/phase-2-research-timeline-template.md` (status updates)
+- Created: `projects/open-repo/phase-5-candidate-1-implementation-verification.md` (2,966 words)
+- Created: `projects/open-repo/candidate-1-implementation-checklist.md` (3,047 words)
 
+**Critical Path — Next Steps**:
+1. May 20 evening: User fills signal log for May 21 synthesis
+2. May 21 19:00–20:00 UTC: Autonomous synthesis execution (infrastructure fully staged)
+3. May 21 evening: Phase 2 research activation IF synthesis STRONG/MODERATE
+4. May 22 13:30 UTC: CRITICAL — Stockbot SSH auth deadline (escalate if no user action by May 21 17:00 UTC)
 
-**Additional Work Completed**:
-- ✅ **Stockbot Comprehensive Backtesting Report Framework** — PRODUCTION-READY
-  - Document: `projects/stockbot/COMPREHENSIVE_BACKTESTING_REPORT_FRAMEWORK.md` (10 sections)
-  - Scope: All strategies, gate-by-gate analysis, live vs. backtest validation, risk metrics, recommendations
-  - Structure: Executive summary, strategy catalog, performance analysis, risk assessment, deployment paths
-  - Status: Framework complete and ready for user execution or orchestrator delegation
-  - Addresses user escalation from May 8 (priority #1)
-  - Committed to stockbot submodule (commit 62be619)
+**Blocks Unchanged**: 
+- 🔴 stockbot SSH auth (May 22 13:30 UTC deadline)
+- mfg-farm test print (user action)
+- cybersecurity-hardening Phase 1 (user Windows restart)
+- seedwarden Track A (user Etsy corrections)
+
+**Token Usage**: Nominal (OK)

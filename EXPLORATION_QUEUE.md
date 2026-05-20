@@ -1827,21 +1827,20 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 
 ---
 
-### ⏳ Item 73: Resistance-Research Post-Wave-1 Signal Analysis Framework
-**Status**: PENDING (Session 1306, May 19)
-**Impact**: HIGH — Wave 1 distribution complete (5 emails sent May 18, 08:00–10:00 UTC). Post-Wave monitoring active through May 21 10:30 UTC (72-hour window). May 21 synthesis must classify outcome as STRONG/MODERATE/WEAK to trigger Phase 2 sequencing. But "signal" is ambiguous — what metrics determine each classification? Current framework lacks precision. This item operationalizes the monitoring window.
-**Context**: May 21 synthesis decision point hinges on: (a) count of early responses by sector (law schools vs. think tanks vs. labor), (b) response quality (policy engagement vs. curiosity), (c) timing (early <24h vs. staggered). Without explicit metrics, "STRONG/MODERATE/WEAK" is subjective. Need objective thresholds.
-**Goal**: Create Post-Wave-1 Signal Analysis Framework:
-1. **Response classification schema**: What counts as a "signal"? (Direct reply to coordinator email vs. engagement with shared brief vs. follow-on meeting request vs. silent re-share among network). Probability weights per signal type (direct reply = 3x weight vs. silent share = 0.5x).
-2. **Sector-specific baselines**: Law schools typically reply within 24h at 40% rate; think tanks within 48h at 55%; labor/civil rights within 72h at 30%. What would constitute "early signal" above baseline for each sector?
-3. **STRONG/MODERATE/WEAK thresholds**: Quantitative decision rules. E.g., "STRONG = 12+ responses + 3+ policy-org direct contact + 1+ named legislator reach within 72h. MODERATE = 6-11 responses, mixed sectors. WEAK = <6 responses or low-quality."
-4. **Contingency monitoring**: If signals stall at 48h (May 20), what's the early pivot (accelerate Domain 42 DEA batch send? extend monitoring? activate Reserve contact list)?
-5. **May 21 decision protocol**: Exact process for user + orchestrator to classify outcome at 10:30 UTC closure + 19:00 UTC synthesis execution.
-**Feasibility**: HIGH — mostly framework design work, grounded in Wave 1 baseline data
-**Effort estimate**: 1.5–2 hours
-**Deliverable**: `projects/resistance-research/POST_WAVE1_SIGNAL_ANALYSIS_FRAMEWORK.md` (response classification schema, sector baselines, STRONG/MODERATE/WEAK thresholds with explicit counts, contingency monitoring rules, May 21 decision protocol with examples)
-**Rationale**: May 21 synthesis is deterministic given known outcome, but outcome classification is currently vague. Operationalizing metrics before May 20 monitoring window closes enables fast, confident synthesis execution May 21 19:00 UTC. If framework doesn't exist, May 21 may stall on "what counts as a signal?" Instead of autonomous synthesis, becomes user debate.
-**Next Step**: Execute May 19 afternoon/evening (no dependency on other work). Deliverable ready for May 20-21 monitoring window. Synthesis execution uses this framework for objective outcome classification.
+### ✅ Item 73: Resistance-Research Post-Wave-1 Signal Analysis Framework
+**Status**: COMPLETE (Session 1376, May 20 2026, 01:10 UTC) — Deliverable: `POST_WAVE_1_SIGNAL_ANALYSIS_FRAMEWORK.md` (456 lines, production-ready)
+**Impact**: HIGH — May 21 synthesis MUST classify outcome objectively. Without framework, classification becomes subjective and delays Phase 2 activation. This framework eliminates ambiguity.
+**Deliverable summary**: 
+- ✅ **Section 1**: Response classification schema (Scores 0–5, quality points accumulation, secondary Gist analytics)
+- ✅ **Section 2**: Sector-specific baselines (law schools 5–10 days, think tanks 1–3 days, Elias 48–72h; response rate baselines)
+- ✅ **Section 3**: STRONG/MODERATE/WEAK/TOO_EARLY thresholds with decision matrix (quantitative rules, matching examples)
+- ✅ **Section 4**: Contingency triggers (signal stalls, baseline mismatches, pre-synthesis escalation rules)
+- ✅ **Section 5**: May 21 decision protocol with 3-minute classification steps + CHECKIN.md template
+- ✅ **Section 6**: Quick reference decision tree + summary
+**How to use**: (1) May 20 evening: user fills wave-1-signal-log-may18-21.md, (2) May 21 19:00 UTC: orchestrator reads signal log → applies Section 3 formula → determines STRONG/MODERATE/WEAK/TOO_EARLY, (3) May 21 20:00 UTC: populate CHECKIN.md with outcome + user confirms path. No deliberation; mechanical execution.
+**Verification**: Framework tested against Wave 1 baseline scenarios (zero replies, single policy org reply, law school reply, Gist delta > 10). All scenarios produce deterministic classification.
+**Rationale**: May 21 synthesis is autonomous but outcome classification requires objective metrics. This framework removes interpretation ambiguity and enables instant Phase 2 path routing post-classification.
+**Status impact**: Item 73 COMPLETE → May 21 synthesis can execute mechanically at 19:00 UTC → Phase 2 activation (STRONG/MODERATE) OR diagnostic pathway (WEAK/TOO_EARLY) determined same evening → no delay into May 22
 
 ---
 
