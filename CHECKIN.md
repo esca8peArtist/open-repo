@@ -1,3 +1,38 @@
+## Since Last Check-in (Session 1441 — ORCHESTRATOR, May 20 21:50–22:30 UTC) — May 22 Checkpoint Contingency Planning + PROJECTS.md Focus Pruning
+
+**Status**: ✅ **CHECKPOINT CONTINGENCY PATHWAYS COMPLETE** | ✅ **RESISTANCE-RESEARCH FOCUS UPDATED** | 🔴 **STOCKBOT LEVER B DEADLINE: MAY 22 13:30 UTC (11 HOURS)** | ⏰ **MAY 21 19:00 UTC SYNTHESIS STILL ON TRACK**
+
+**What Was Accomplished**:
+1. ✅ **PROJECTS.md Resistance-Research Focus Pruned** — Removed stale Session 1422 reference (19 sessions old). Updated to current Session 1441 context. Consolidated focus line from 500+ chars to concise current-state summary while preserving all critical info (May 21 synthesis, contingency protocols). Improves ORCHESTRATOR_STATE.md coherence.
+2. ✅ **Stockbot May 22 Checkpoint Contingency Pathways Document Created** — Production-ready (2,800 words). Pre-stages all 6 checkpoint outcomes with deterministic decision trees:
+   - PASS A/B/C: Multi-ticker expansion pathways (AMZN±JPM deployment timelines)
+   - FAIL A/B/C: Fallback gates (HMM investigation, training error retry, SSH unresolved deferral)
+   - Removes decision friction from May 22 evening; outcomes route mechanically to actions
+   - Integrated risk mitigation (thermal, capital, model, data), post-checkpoint responsibilities, full timeline
+
+**Key Status Updates**:
+- **SSH Auth Blocker**: Still unresolved as of 22:30 UTC. User deadline May 22 13:30 UTC (11 hours remaining). If unresolved → checkpoint cannot execute → FAIL C scenario activates.
+- **May 21 Synthesis**: ✅ Still fully pre-staged and autonomous (19+ hours away). No additional work needed.
+- **Item 74 (Checkpoint Contingency)**: ✅ COMPLETED — Item was PENDING since Session 1306; now PRODUCTION-READY for May 22 execution.
+
+**Pending User Actions** (Priority Order):
+1. 🔴 **URGENT (May 22 13:30 UTC deadline)**: SSH auth fix — Either (A) add orchestrator public key to Jetson `~/.ssh/authorized_keys`, or (B) SSH manually and add `"hmm_regime_masking": true` to active-sessions-2session.json config
+2. 📋 **May 21 ~19:00 UTC**: Synthesis executes autonomously (no user action needed; optional monitoring)
+3. 📋 **May 22 ~20:00 UTC**: Checkpoint executes (pending SSH resolution); use contingency pathways document for decision routing
+
+**Next Autonomous Windows**:
+- **May 21 19:00 UTC**: Resistance-research synthesis execution (fully autonomous)
+- **May 22 20:00 UTC**: Stockbot checkpoint + contingency decision routing (if SSH resolved)
+- **May 23+ (if SSH unresolved)**: Escalation protocols activate; May 28 fallback checkpoint planned
+
+**Files Committed This Session**:
+- PROJECTS.md (resistance-research focus update)
+- projects/stockbot/MAY22_CHECKPOINT_CONTINGENCY_PATHWAYS.md (new)
+- WORKLOG.md (session entry)
+- CHECKIN.md (this entry)
+
+---
+
 ## Since Last Check-in (Session 1441 — ORCHESTRATOR, May 20 21:42–22:15 UTC) — Domain 58 Gist Publication + Pre-Synthesis Preparation
 
 **Status**: ✅ **DOMAIN 58 GIST PUBLISHED FOR DISTRIBUTION** | ✅ **MAY 21 SYNTHESIS FULLY PRE-STAGED AND AUTONOMOUS** | 🔴 **CRITICAL: STOCKBOT LEVER B DEADLINE MAY 22 13:30 UTC (~13 HOURS)** | ⏰ **NEXT AUTONOMOUS EVENT: MAY 21 19:00 UTC SYNTHESIS**

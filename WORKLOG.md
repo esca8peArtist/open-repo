@@ -51,6 +51,66 @@
 
 ---
 
+## Session 1441 (May 20, 21:50–22:30 UTC) — ORCHESTRATOR: May 22 Checkpoint Contingency Planning + Stale Focus Pruning
+
+**Session Type**: Autonomous orchestration — contingency planning + project state maintenance
+
+**Context**: All main projects blocked on external dependencies (stockbot SSH auth, cybersecurity VeraCrypt, mfg-farm test print). Exploration Queue Items 103-105 complete (Sessions 1416+). Strategic gap: Item 74 (Stockbot May 22 Checkpoint Contingency) still PENDING; checkpoint 2 days away. Secondary task: PROJECTS.md resistance-research focus stale (references Session 1422, 19 sessions ago).
+
+**Work Completed**:
+
+### 1. ✅ PROJECTS.md Resistance-Research Focus Line Update
+- **Issue**: Focus line referenced Session 1422 (19 sessions ago); marked as stale in ORCHESTRATOR_STATE.md warning
+- **Action**: Pruned focus line to remove session-specific details; consolidated to essential current state
+- **Before**: 500+ char line with Domain G integration, Session 1422 reference, extensive detail
+- **After**: Concise focus line capturing May 21 19:00 UTC synthesis readiness, user action items, Phase 2 contingency protocols
+- **Impact**: Improves ORCHESTRATOR_STATE.md coherence; focus line now current to Session 1441 context
+- **Status**: ✅ Focus updated; maintains all critical information while removing stale details
+
+### 2. ✅ Stockbot May 22 Checkpoint Contingency Pathways Document Created
+- **File**: `projects/stockbot/MAY22_CHECKPOINT_CONTINGENCY_PATHWAYS.md` (2,800+ words, production-ready)
+- **Scope**: Pre-stages decision pathways for all 6 checkpoint outcomes
+  - PASS A (Sharpe ≥1.0, MDD ≤20%): Multi-ticker expansion (AMZN+JPM)
+  - PASS B (Sharpe 0.8–0.99): AMZN approved, JPM conditional
+  - PASS C (Sharpe 0.6–0.79): Single-ticker AAPL, re-assess June 1
+  - FAIL A (Sharpe <0.6): Strategy failure, Lever C investigation
+  - FAIL B (Sharpe undefined): Training error, May 24 retry
+  - FAIL C (Cannot execute): SSH auth unresolved, May 28 fallback
+- **Key Features**:
+  - Deterministic decision tree: each outcome routes to specific actions
+  - Risk mitigation strategies for thermal, capital, model, data risks
+  - Timeline summary (May 22 13:30 SSH deadline through June 1 re-baseline)
+  - Post-checkpoint orchestrator vs. user responsibilities clearly defined
+- **Impact**: Removes decision friction from May 22 evening. When checkpoint outcome arrives, path is mechanical.
+- **Status**: ✅ PRODUCTION-READY for May 22 20:00 UTC checkpoint execution
+
+**Blockers Encountered**: None — both tasks executed to completion
+
+**Decisions Made**:
+- Prioritized Item 74 completion (May 22 checkpoint 2 days away; PENDING since Session 1306)
+- Did NOT attempt additional Exploration Queue work (would have required spawning agents on already-blocked projects)
+- Did NOT update CHECKIN.md yet (will do after confirming no other autonomous work available)
+
+**Status After This Session**:
+- **Resistance-Research Focus**: ✅ Current to Session 1441
+- **Stockbot Contingency**: ✅ PRODUCTION-READY for May 22 checkpoint
+- **SSH Auth Blocker**: Still unresolved; 13.5 hours remain for user action (May 22 13:30 UTC deadline)
+- **May 21 Synthesis**: ✅ Still on track (autonomous 19:00 UTC May 21)
+- **Main Projects**: All still blocked on external dependencies
+
+**Commits Needed**:
+- PROJECTS.md (resistance-research focus update)
+- projects/stockbot/MAY22_CHECKPOINT_CONTINGENCY_PATHWAYS.md (new file)
+- WORKLOG.md (this entry)
+- CHECKIN.md (session summary + critical action items)
+
+**Next Autonomous Window**: 
+- May 21 19:00 UTC (resistance-research synthesis + Phase 2 contingency playbook execution)
+- OR May 22 after checkpoint (if SSH resolved and checkpoint executes)
+- OR May 23 (if SSH unresolved, checkpoint deferred; escalation protocols activate)
+
+---
+
 ## Session 1440 (May 20, 21:35–23:15 UTC) — ORCHESTRATOR: Exploration Queue Execution (Phase 2 Activation + Tribal Voting Rights Research)
 
 **Session Type**: Autonomous orchestration — main projects blocked on user actions; executing high-value Exploration Queue items supporting May 21 synthesis
