@@ -1,4 +1,68 @@
-## Since Last Check-in (Session 1428-ORCHESTRATOR, May 20 17:19–17:40 UTC) — Orientation Complete; Exploration Queue Verification; Ready for May 21 Synthesis
+## Since Last Check-in (Session 1429-ORCHESTRATOR, May 20 19:45–21:25 UTC) — Parallel Exploration Queue Execution Complete; All Pre-Research Production-Ready
+
+**Session Status**: ✅ **PARALLEL EXPLORATION QUEUE EXECUTION COMPLETE** | ✅ **3 RESEARCH DELIVERABLES PRODUCTION-READY** | 🔴 **CRITICAL DEADLINE: MAY 22 13:30 UTC (STOCKBOT LEVER B CONFIG)** | ⏰ **NEXT AUTONOMOUS EVENT: MAY 21 19:00 UTC SYNTHESIS (22h remaining)**
+
+**What Was Done**: All main projects remain blocked on user actions. Rather than idle, spawned 3 parallel research agents on Exploration Queue items. All completed successfully with production-ready findings immediately useful for Phase 2 synthesis (May 21) and Phase 5 Wave 2 planning.
+
+### Deliverables (Session 1429 — Parallel Research Execution)
+
+**1. resistance-research: Trump v. Barbara Rapid-Response Context** ✅ COMPLETE
+- **File**: `projects/resistance-research/trump-v-barbara-rapid-response.md`
+- **Findings**:
+  - Case status: Argued April 1, 2026 (Supreme Court No. 25-365). Ruling expected late June or early July 2026. Fully enjoined pending decision.
+  - Oral argument read: 7-2 or 6-3 favoring respondents (against EO). Chief Justice Roberts and Justices Gorsuch, Jackson, center bloc skeptical. Thomas/Alito likely dissenters.
+  - **Tribal citizenship dimension**: Solicitor General told Justice Gorsuch that children of tribal Indians are "not birthright citizens" under 14th Amendment — most direct threat to constitutional tribal citizenship foundation since Elk v. Wilkins (1884).
+  - **Three ruling scenarios mapped with distribution protocols** (A: Constitutional holding; B: Statutory holding; C: EO partially upheld)
+  - **Tier 1-3 rapid-response contact list**: NARF, NCAI, Native News Online, Indian Country Today, Four Directions, Western Native Voice (24h); CLC, Brennan Center, NAACP LDF, ACLU (72h); Congressional committees (1 week)
+  - **Action checklist for ruling day**: 7 concrete steps from SCOTUSblog read through Senate Indian Affairs follow-up
+  - **Critical update for Domain 58**: Montana SB 490 victory (May 11) proves post-Callais state constitutional challenge pathway works — must add to all Phase 2 distribution materials
+- **Impact**: May 21 19:00 UTC synthesis can execute instant Phase 2 distribution protocols upon ruling announcement with zero setup delay. Pre-research removes all discovery lag.
+
+**2. seedwarden: Phase 3 Herbalist Network Ecosystem Map** ✅ COMPLETE
+- **File**: `projects/seedwarden/phase-3-herbalist-ecosystem-map.md` (~6,800 words)
+- **Findings**:
+  - **Professional networks**: AHG (4,000–6,000 practitioners, 13 chapters, filterable directory) + AANP (7,500 licensed NDs, highest per-practitioner LTV) are Tier 1 targets. NAMA, NAHA secondary.
+  - **Educational landscape**: 15 schools mapped (Herbal Academy dominates by volume; Bastyr/NDMU highest credentials). Seedwarden directly fills 3 curriculum gaps: sourcing ethics, evidence-tiered language, cultivation-to-use continuity.
+  - **Events/hubs**: 8 events mapped (AHG Symposium 400–700 attendees, Wild Indigo 200–500). **June 22 launch timing is favorable** — positioned between Wild Indigo (June 12-14) and AHG Symposium (August 14-16).
+  - **Publications**: AHG journal + HerbalGram are peer-reviewed credibility channels. Mountain Rose Herbs + LearningHerbs newsletters are highest-reach practitioner email lists open to external content.
+  - **Top 20 practitioners mapped** with credential, audience, specialty, receptiveness, and bundle alignment. Tier 1 for outreach: Rosemary Gladstar, Juliet Blankespoor, Rosalee de la Forêt, John Gallagher, Susan Leopold, Richo Cech.
+  - **Five practice-type archetypes** (Clinical, Student/Emerging, Wildcrafter, Culinary, Ceremonial/Spiritual) with messaging differentiation and early-adopter profile (AHG-pursuing, Appalachian/PNW/NE, UpS-engaged, clinical-program-connected).
+  - **Six alliance partners identified** with cross-promotion mechanics (Mountain Rose Herbs affiliate, LearningHerbs, Strictly Medicinal, UpS, AHG chapters, Herbal Academy).
+  - **4-cohort first-phase sequence** (A: AHG directory, B: UpS/conservation, C: student/school, D: ND/NP institutional) with ROI-ranked distribution priority stack.
+- **Critical finding**: Single RH reviewer credibility gate required before AHG outreach begins (Women's Health bundle must clear first or becomes negative review risk).
+- **Impact**: June 22 launch has full practitioner targeting strategy, contact pathways, credibility sequence, and partnership framework. First-cohort acquisition is unblocked.
+
+**3. systems-resilience: Phase 5 Wave 2 Veterinary Care Research** ✅ COMPLETE
+- **File**: `projects/systems-resilience/phase-5-veterinary-care-research.md`
+- **Findings**:
+  - **Critical error corrected**: Previous guide draft incorrectly listed injectable penicillin and oxytetracycline as OTC. FDA GFI 263 (effective June 11, 2023) moved ALL medically important antibiotics to Rx-only. Legal prerequisite for household crisis care is pre-crisis VCPR (veterinary-client-patient relationship).
+  - **Shortage data**: 245 USDA shortage areas (record high), 47 states affected. Food animal vets are 3.4% of workforce. Graduate entry rate collapsed to 3.3% (from ~40% forty years ago). Decline: 15% food/mixed animal practitioners in past decade.
+  - **RHDV2 (Rabbit Hemorrhagic Disease) Midwest risk**: Minnesota confirmed cases (2021), South Dakota endemic wild populations, North Carolina first domestic cases (January 2026). Zone 5 meat rabbit operations need specific biosecurity warning. No US-approved vaccine exists.
+  - **International models**: CAHW (Community Animal Health Worker) model documented across Kenya/Ethiopia with measurable outcomes. USD 350/household/year economic protection value (Kenya). Structure directly transferable to Phase 5 Tier 3 Community Veterinary Cooperative concept.
+  - **Telemedicine update**: AVMA December 2025 policy amendment now allows emergency-only consultations without prior VCPR — meaningful expansion but still connectivity-dependent and Rx authority still requires established VCPR.
+  - **All citation gaps resolved**: 60 total sources documented. All 6 gaps from preliminary draft resolved (RHDV2 Midwest, erysipelas vaccine OTC, GFI 263 antibiotics, FAMACHA training, egg binding protocols, Lyme/ringworm Zone 5).
+- **Impact**: Wave 2 guide writing can proceed immediately with corrected veterinary availability data and full research foundation. Preliminary draft errors prevented before production.
+
+**Execution Metrics**: 
+- Wall-clock duration: ~100 minutes (orientation 5 min, 3 parallel agents ~95 min)
+- Parallel throughput: 3 independent research streams completed simultaneously
+- All 3 deliverables committed to master, production-ready
+
+### Critical User Actions Still Required
+
+**May 20 ~22:00 UTC (next 2 hours)**: Signal log fill (for May 21 synthesis pre-processing)
+**May 21 before 19:00 UTC**: Check SCOTUSblog for Trump v. Barbara ruling (or any breaking judicial developments)
+**May 22 13:30 UTC (16 hours remaining)**: **CRITICAL** — Lever B HMM config fix — Either (A) Add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run config fix (see BLOCKED.md for commands)
+**May 22 by deadline (2 days remaining)**: Supplier inquiry emails to Strictly Medicinal Seeds + Prairie Moon Nursery (Goldenseal order deadline critical-path item)
+
+### Next Scheduled Events
+- **May 21 19:00 UTC** — resistance-research Phase 2 synthesis execution (fully autonomous, user monitoring only)
+- **May 22 13:30 UTC** — **CRITICAL DEADLINE**: Lever B config fix (user action required; affects May 22 20:00 UTC checkpoint outcome)
+- **May 22 20:00 UTC** — stockbot checkpoint execution (tests Lever B if config fixed; falls back to Lever A if not)
+
+---
+
+## Previous Check-in (Session 1428-ORCHESTRATOR, May 20 17:19–17:40 UTC) — Orientation Complete; Exploration Queue Verification; Ready for May 21 Synthesis
 
 **Session Status**: ✅ **ORIENTATION COMPLETE** | ✅ **EXPLORATION QUEUE VERIFIED** | 🟢 **ALL PRE-STAGING COMPREHENSIVE** | 🔴 **CRITICAL DEADLINE: MAY 22 13:30 UTC (STOCKBOT LEVER B CONFIG)** | ⏰ **NEXT AUTONOMOUS EVENT: MAY 21 19:00 UTC SYNTHESIS (24h remaining)**
 
