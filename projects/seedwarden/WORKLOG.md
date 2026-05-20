@@ -4,6 +4,55 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Critical Path & Gantt Timeline — May 20, 2026
+
+**Task**: Build Phase 3 medicinal herbs critical path analysis and production timeline.  
+**Deliverables**: `phase-3-medicinal-herbs-critical-path.md` (v6.0) + `phase-3-medicinal-herbs-gantt-timeline.csv` (updated).
+
+**Files read before writing**:
+- `HERBALIST_PRACTITIONER_ECOSYSTEM.md` — practitioner tier targeting, event calendar, supplier network
+- `canva-phase-3-adaptation-guide.md` — Phase 3 Canva aesthetic, color palette, design workflow
+- `TRACK_B_MAY30_DECISION_FRAMEWORK.md` — May 30 decision brief, launch gate status
+- `TRACK_B_MAY_30_DECISION_PACKAGE.md` — full decision matrices, revenue projections, scope options
+- `phase-3-medicinal-herbs-critical-path.md` (v5.0) — prior critical path document
+- `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (v3.0) — supplier profiles, lead times, ordering calendar
+- `PHASE_3_PHOTOGRAPHY_LOGISTICS_PLAN.md` — photography locations, shoot plan, studio setup
+- `phase-3-medicinal-herbs-content-outline.md` — per-bundle content outlines, house style rules
+- `PHASE_3_PRE_SPRINT_SUMMARY.md` — asset verification status, decision checklist
+- `phase-3-medicinal-herbs-gantt-timeline.csv` (prior version) — existing task structure
+
+**Work performed**:
+- Rewrote `phase-3-medicinal-herbs-critical-path.md` to v6.0 (3,200+ words) covering:
+  (1) Finalized species map for all 5 bundles with SKUs and upload targets;
+  (2) Full supplier sourcing timeline — Tier 1 (June 8 hard deadline), Tier 2 (June 15),
+  Tier 3 (June 22), plus fallback paths and budget summary;
+  (3) Per-bundle writing schedule with day-by-day dates, word targets, hours, float,
+  peer review windows for Women's Health and Immunity bundles;
+  (4) Canva design timeline — per-bundle schedule parallel to writing, palette decision
+  reference, design lock (July 3), branding consistency checks;
+  (5) Photography staging — fresh vs. dried vs. CC stock decision matrix, lighting setup
+  requirements, pre-sprint track (June 3–21), in-sprint studio sessions;
+  (6) Upload sequence with staggered 7-day spacing, conditional Phase 2 gate dependencies,
+  practitioner tier activation (July 15), and per-bundle upload checklist;
+  (7) Risk analysis with probability × impact scoring, supplier delay recovery sequence,
+  design revision loop mitigation, writing bottleneck resolution order, float summary;
+  (8) FTC language quick reference and pre-sprint action checklist.
+- Updated `phase-3-medicinal-herbs-gantt-timeline.csv` with 87 tasks covering full
+  pre-sprint, sprint (June 22–July 13), post-sprint, contingency, and financial tracks.
+  Added milestone column, revenue gate column, float days per task, and critical path flags.
+
+**Key decisions surfaced in this session**:
+- Three decisions required by May 30: Sprint scope (Option C recommended), Canva palette
+  (six hex codes confirmed), Goldenseal sourcing path (Path 2 recommended under Option C).
+- Launch gates already cleared: forager cohort 21.3% (gate >20%), native plants 2.24% (gate >1.5%).
+- No additional demand validation needed before June 22 sprint start.
+
+**Files modified**:
+1. `phase-3-medicinal-herbs-critical-path.md` — v6.0 (supersedes v5.0, May 20)
+2. `phase-3-medicinal-herbs-gantt-timeline.csv` — full sprint timeline with 87 tasks
+
+---
+
 ## Seedwarden Agent Session — HERBALIST_PRACTITIONER_ECOSYSTEM.md — May 20, 2026
 
 **Task**: Produce the Phase 3 practitioner-tier targeting document for $120–$150 bundles.
