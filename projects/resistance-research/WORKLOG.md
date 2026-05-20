@@ -2,6 +2,32 @@
 
 ---
 
+## May 20, 2026 — Session 1380 (Resistance Research Agent) — Phase 2 WEAK Outcome Contingency Roadmap
+
+**Status**: COMPLETE — `PHASE_2_WEAK_OUTCOME_CONTINGENCY_ROADMAP.md` written (3,500+ words, 5 sections). Queued for activation only if May 21 synthesis outcome is WEAK.
+
+**Deliverables**:
+
+1. **`PHASE_2_WEAK_OUTCOME_CONTINGENCY_ROADMAP.md`** (new file, ~4,500 words):
+   - Section 1: Domain prioritization matrix for WEAK scenario — Domains 56 (rank 1), 58 (rank 2), 59 (rank 3); Domain 57 deferred to August. Matrix cross-references H.R. 492 legislative window (June-July), Trump v. Barbara ruling window (late June/early July), and OBBBA SNAP/Medicaid implementation timeline.
+   - Section 2: Messaging pivot templates — 4 constituency-specific email opens (law schools/Domain 56, immigration legal aid/Domain 58, unions/Domain 59, think tanks/Domain 56) using institutional-gap frame rather than Phase 1 momentum frame. All templates cite domain-specific findings (Schedule Policy/Career litigation landscape, Trump v. Barbara tribal citizenship argument, Dallas Fed Working Paper 2517, V-Dem electoral autocracy literature).
+   - Section 3: Tier 2 candidate pool — 10 organizations for Domain 56 (civil service priority): Partnership for Public Service, Volcker Alliance, NAPA, Government Accountability Project, PEER, Senior Executives Association, Center for American Progress, NTEU, Protect Democracy re-engagement, FEEA/Federal Workers Legal Defense Network. Each with key staff, email, 2026 policy focus, why-to-contact brief, hook language, and outreach timing.
+   - Section 4: Pacing analysis — rapid-sequence (all by July 31) vs. staggered (monthly, through September). Recommendation: staggered with Trump v. Barbara expedite option for Domain 58.
+   - Section 5: Execution timeline — May 22 through September 30 with per-domain milestones, Tier 1 re-engagement schedule by domain-specific hook, and dependency flags for H.R. 492, Trump v. Barbara, OBBBA implementation, and Domain 57 legislative data.
+
+2. **WORKLOG.md updated** (this entry).
+
+**Cross-checks completed**:
+- Domain 56, 57, 58, 59 production-ready status confirmed per Session 1373 wc verification
+- H.R. 492 legislative status verified: House Committee on Oversight and Government Reform, 18% committee passage probability, June-July 2026 window
+- Trump v. Barbara: oral arguments April 1, 2026, ruling pending late June/early July; tribal citizenship argument documented
+- HHS OBBBA June 1 interim final rule: confirmed no public comment period; January 2027 work requirement effective date confirmed
+- Schedule Policy/Career litigation: AFGE/AFSCME N.D. Cal. + NTEU facial challenge both active, no relief granted as of May 20
+
+**Queued status**: Document remains in queue and is NOT executed unless May 21 synthesis outcome is WEAK. If STRONG or MODERATE, use PHASE_2_ACTIVATION_AGENT_BRIEFS.md.
+
+---
+
 ## May 20, 2026 — Session 1373 (General Research Agent) — Phase 2 Pre-Synthesis Final Verification Pass
 
 **Status**: COMPLETE — Final infrastructure gap closed; both checklist files updated; ready for May 21 same-day launch
