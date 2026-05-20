@@ -4,6 +4,49 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Production Planning — May 20, 2026 (Task 2)
+
+**Task**: Phase 3 unblocking tasks — (1) Critical path analysis v4.0, (2) Herbalist Network Ecosystem Mapping v2.0. Both documents produced as definitive uppercase files for June planning.
+
+**Files read before writing**:
+- `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v3.0) — prior decision document
+- `phase-3-medicinal-herbs-critical-path.md` (v6.0 lowercase) — per-bundle writing schedule, FTC mandatory language
+- `medicinal-herbs-candidate-list.md` — 12-species sourcing profiles, margins, conservation status
+- `phase-3-medicinal-herbs-sourcing-guide.md` — photo sourcing paths, supplier contacts, FGV verification
+- `HERBALIST_PRACTITIONER_ECOSYSTEM.md` — practitioner tiers, geographic hotspots, channels, messaging
+- `herbalist-network-ecosystem-mapping.md` (v1.0 lowercase) — prior network landscape document
+- `phase-3-practitioner-messaging-framework.md` — segment hooks, friction preemption
+- `TRACK_B_FINAL_EXECUTION_GUIDE.md` — Phase 2 baseline metrics, launch gates
+
+**Work performed**:
+
+**Task 1 — `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` upgraded to v4.0** (~3,900 words):
+- Retained all v3.0 content (species map, supplier tiers, writing schedule, design timeline, photography staging, upload sequence, risk matrix, float summary, pre-sprint checklist)
+- Added full Gantt-style timeline table (22-day sprint, D1–D22, June 22–July 13) with Writing, Design, Photography, Upload/Admin columns, Critical Path flag, and Float column per day
+- Clarified critical path sequence and post-sprint upload dates (July 15 practitioner tier, July 20 Immunity, August 3 Digestive)
+- Integrated launch gate metrics from TRACK_B_FINAL_EXECUTION_GUIDE.md (forager cohort 21.3%, native plants 2.24%) as confirmed cleared with margin
+- All three May 30 decisions formatted as decision blocks with options and recommendation
+
+**Task 2 — `HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md` written at v2.0** (~3,800 words):
+- Part 1: Practitioner networks — AHG (13 chapters with Phase 3 priority ratings), NAMA, clinical schools (8 programs with enrollment + Instagram + bundle fit), ND networks (26 licensed states, AANP chapter contacts), UpS
+- Part 2: Community hubs — Tier 1 newsletters (6 contacts with reach + outreach timing), podcast targets (5), social media top voices (6 accounts), content format performance
+- Part 3: Cross-selling — bundle alignment matrix by practitioner profile (8 segments × 5 bundles), practitioners who teach courses/certifications as highest-value sub-segment, Mountain Rose Herbs + Strictly Medicinal Seeds cross-promotion
+- Part 4: Event calendar — 9 events June 6–August 30 with Seedwarden action per event
+- Part 5: Practitioner pain points (5 identified with product response per pain point) + buying patterns (peak windows by segment with Phase 3 timing assessment)
+- Part 6: Messaging matrix — segment-by-segment hooks, friction preemption, subject line examples, authority positioning protocol, pre-launch credibility action (1 RH review required by June 15)
+- Part 7: Distribution channel priority matrix (10 channels) + direct outreach contact list — Tier A (10–15 organizational gatekeepers with emails), Tier B (15–25 individual practitioners via AHG directory), Tier C (10–15 school instructors), Tier D (10–15 apothecary retail accounts)
+- Part 8: Three-tier audience segmentation framework (Tier 1 Clinical/Certified, Tier 2 Educational, Tier 3 Enthusiast) + first-cohort priority order
+
+**Key additions beyond prior versions**:
+- Gantt table in critical path (not present in any prior version)
+- Practitioner pain point analysis with product feature mapping (new framework)
+- Buying pattern seasonality table by segment (new)
+- Tiered direct outreach list with Tier A organizational contacts, specific emails, outreach message descriptions (new)
+- Apothecary retail Tier D contacts (new)
+- Audience segmentation LTV estimates and conversion timeline estimates (new)
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path v3.0 — May 20, 2026
 
 **Task**: Queue Item 991 — Build detailed critical path analysis for June 22–July 13 medicinal herbs production (3–4 hour exploratory work). Decision document for user scope authorization by May 30.
