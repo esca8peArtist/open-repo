@@ -1,5 +1,83 @@
 # Work Log
 
+## Session 1397 — May 20, Autonomous Orchestrator (06:30–TBD UTC)
+
+**Task**: Orchestrate May 20 autonomous work. Assess available scope (non-blocked items), spawn parallel agents for foundational research, prepare for May 21 synthesis execution.
+
+**Status**: IN PROGRESS
+
+**Work Plan**:
+- ✅ Commit Session 1396 production-ready files (open-repo Phase 5 verification, systems-resilience Phase 4 synthesis)
+- ✅ Spawn 2 parallel agents:
+  1. **systems-resilience Phase 5 Wave 2 Planning** — outline Tier 2 veterinary care + psychological support + conflict resolution + Tier 3 community framework; research sources and structure (2-3 hrs)
+  2. **seedwarden Phase 3 Execution Prep** — Phase 3 supplier research, photography location scouting, writing asset outline, execution timeline refinement (2-3 hrs) — COMPLETE
+- ⏳ Update ORCHESTRATOR_STATE.md post-execution
+- ⏳ Final commit: all orchestration files on master
+
+**Notes**: All main projects either blocked (SSH auth, test print, VeraCrypt restart) or scheduled (May 21 synthesis). No project-critical work available today. Using wave-1 exploration queue items to advance foundational work on non-blocked high-priority projects.
+
+---
+
+## Session 1397 — seedwarden: Phase 3 Execution Preparation (May 20, 2026)
+
+**Task**: Research and write Phase 3 execution preparation document covering supplier backups, photography venues, writing workflow, and refined timeline.
+
+**Deliverable**: `projects/seedwarden/PHASE_3_EXECUTION_PREPARATION.md`
+
+**Stats**: ~3,100 words | Production-ready for May 30 decision gate
+
+**Key findings**:
+
+**Supplier backup research**:
+- Companion Plants (Athens, OH): confirmed Goldenseal and Black Cohosh as core inventory through June; strongest geographic backup for Midwest Zone 5 at-risk species. Order by June 1 (not June 8) to maximize specimen quality on arrival. Contact: (740) 592-4643.
+- Crimson Sage Nursery (Northern CA): CCOF Certified Organic; live 4-inch potted specimens (better establishment than bare-root on arrival); carries both Goldenseal and Black Cohosh. Ships March–November. Activate if Companion Plants is depleted by May 25.
+- Native Wildflowers Nursery (McMinnville, TN): Goldenseal bareroot confirmed at $4.99/plant in 2026 customer reviews; lowest per-unit price found. Use as cost hedge (10-15 roots, ~$50-75) alongside CC path confirmation if needed.
+- Pacific Botanicals (OR): Regenerative Organic Certified (higher standard than Mountain Rose Herbs USDA Organic); full 13-species dried herb coverage; 3-5 day standard shipping. Primary backup for Mountain Rose Herbs dried props order.
+- Lead-time summary: June 1-8 confirmation window is feasible with all four backup suppliers identified.
+
+**Photography venue scouting (3 venues)**:
+1. Morton Arboretum (Lisle, IL, Zone 5b): highest priority — woodland/prairie collections include established Black Cohosh, Echinacea, Wild Bergamot, Elderberry in natural Zone 5 habitat. Photography permit process documented at mortonarb.org. Medicinal Plant Walk program confirms active medicinal collections. Schedule June 22-24 (sprint Week 1) for Women's Health + Respiratory bundle photos.
+2. Rhubarb Botanicals (Mount Vernon, IA): Certified Organic farm with 80+ medicinal herb varieties in managed rows; best source for farm-context photography (practitioner-market visual register). Farm Store Sat-Sun 10 AM-2 PM. Best window: July 12-18 for post-sprint v1.1 upgrade shots (Calendula, Lemon Balm, Lavender at peak).
+3. Missouri Botanical Garden (St. Louis, MO): St. Louis Herb Society Garden — 350 varieties in curated medicinal beds; ideal for Sleep bundle (Valerian, Passionflower, Lavender, Lemon Balm) and Digestive bundle. Educational photography permits reviewed case-by-case (media@mobot.org). Schedule June 22-24 (Day 2 after Morton) or standalone July 1-5.
+
+**Writing workflow refined**:
+- Citation-first drafting approach: 2-session structure (Session 1: research batch, all tabs open, citation list built; Session 2: draft with sources already gathered). Eliminates mid-draft source hunting.
+- 20-30 citations per bundle target achieved using 7 source categories: botanical ID (USDA PLANTS), cultivation (NRCS Plant Guides), phytochemistry (PubMed reviews), traditional use (HerbalGram + Moerman's NAEB), conservation (United Plant Savers), contraindications (NCCIH), supplier verification (FGV directory).
+- Shared-species efficiency documented: 7 species appear in two bundles; second occurrence at ~40% first-occurrence effort saves 12-17 hours across the full 5-bundle sprint.
+- Writing rhythm: 7-day bundle cycle at 4 hours/day = 28 hours per bundle first occurrence; 20-24 hours for bundles with shared-species carries.
+
+**May 30 decision gates**:
+- Decision 1: Scope Option A (5 bundles single writer), B (two writers), or C (3-bundle priority) — Option C recommended
+- Decision 2: Goldenseal Path 1 (order from Companion Plants by June 1) or Path 2 (Wikimedia CC) — Path 1 recommended if Companion Plants confirms availability by May 22-25
+- Decision 3: Canva palette — six hex codes confirmed (May 19 adaptation guide is authoritative) or revisions documented by June 15
+
+---
+
+## Session 1396 — systems-resilience: Phase 5 Tier 1 Individual Education & Pedagogy (May 20, 2026)
+
+**Task**: Write the Individual Education & Pedagogy document (Phase 5, Tier 1, Dimension: Knowledge Preservation) — filling the structural Gap 1 identified in the Phase 4 synthesis framework. The planned-but-never-built individual education document.
+
+**Deliverable**: `projects/systems-resilience/phase-5/tier-1-individual-education-pedagogy.md`
+
+**Stats**: ~7,400 words | 31 citations | All 7 sections complete
+
+**Sections written**:
+1. Why Education Matters for Resilience — the knowledge problem, Amish/Mennonite positive case, Japan post-1945 negative case, Midwest pioneer and tribal knowledge context, core argument
+2. Skill Inventory Framework — six domains (water, food, shelter, energy, healthcare, security/coordination), three levels per domain, resilience weight, transfer methods, plus a completed blank template for household use
+3. Knowledge Preservation Systems — household notebook (archival paper specifications, ANSI/NISO Z39.48, 200–300 page target, 8 content categories, storage and update cycle), oral transmission (story-based encoding, Zone 5 seasonal apprenticeship windows, mnemonic devices, multi-generational chains), physical/specimen methods (household herbarium, seed collections, preserved food samples, photographic documentation)
+4. Pedagogy: How to Teach Survival Knowledge — cognitive science of skill acquisition, executive function degradation under stress vs. procedural memory preservation, automaticity threshold (~40–50 repetitions), spaced repetition maintenance schedule, teaching methods by skill type (procedural, decision-making, diagnostic, leadership), stress-realistic training, intergenerational age-appropriate progression, knowledge bottleneck problem
+5. Failure Modes and Recovery — knowledge loss via death/departure, skill atrophy, intergenerational rupture, literacy loss and documentation inaccessibility, physical loss of documentation — each with mitigation and recovery strategy
+6. Implementation Checklist — 24 action items organized by months 1–2, 2–6, 6–12, 12–24, and 24+
+7. Timeline — from knowledge gap to competence; connection to community scale; how individual skill inventory feeds Phase 3 skills census
+
+**Key sources used**: Amish education research (Skill Nation, CTEEC, Discover Lancaster), Japan postwar craft knowledge loss (EdoKagura, Garland Magazine), Standing Rock ecological calendars (PMC 9736771), Anishinaabe food sovereignty (SARE North Central, USDA), archival paper standards (Archival Products), oral tradition research (FATSIL, TIJER, PMC 8513776), intergenerational knowledge erosion (PMC 12656025), stress and procedural memory (Frontiers in Psychology, PMC 5756532, PMC 11959019), automaticity/overlearning (Teachers Institute), spaced repetition (Wikipedia/PMC 1876761), apprenticeship effectiveness (ResearchGate, McKinsey, ScienceDirect), ethnobotanical specimen methods (PMC 4151377, Sage Journals 2023), child gardening development (PMC 10005652, White Hutchinson), food preservation pedagogy (PMC 10830356)
+
+**Gap filled**: Phase 4 Synthesis Framework Gap 1 — Education and Pedagogy (the only planned Phase 1 document that was never built)
+
+**Forward references created**: tier-2-veterinary-care-guide.md (next in Wave 1), tier-2-psychological-support-guide.md, tier-2-conflict-resolution-deep-dive.md, tier-3-community-coordination-framework.md
+
+---
+
 ## Session 1396 — systems-resilience: Phase 5 Tier 2 Household Coordination Infrastructure Guide (May 20, 2026)
 
 **Task**: Write the Household Coordination Infrastructure Guide (Phase 5, Tier 2, Dimension 1) — the bridge document connecting Tier 1 individual documents and Phase 3 community-scale domains.
