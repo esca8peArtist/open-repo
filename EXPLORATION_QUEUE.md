@@ -5,7 +5,60 @@
 
 ---
 
-## Active Items (Session 1400, May 20 18:00 UTC)
+## Active Items (Session 1416, May 20 13:05 UTC)
+
+### ✅ Item 103: Systems-Resilience Phase 4 Autonomous Work Execution Plan (May 22-31)
+**Status**: COMPLETE (Session 1416, May 20 2026)
+**Priority**: MEDIUM — All projects blocked on user/scheduled events through May 22. Phase 5 user decision not until June 1. Phase 4 autonomous work can proceed immediately May 22-31.
+**Impact**: MEDIUM — Advances systems-resilience Goal even if Phase 5 decision is delayed. Maintains project momentum during May 22-31 checkpoint window.
+**Goal**: Identify and execute autonomous Phase 4 work that proceeds regardless of Phase 5 user decision, covering: (1) Which Phase 4 research domains can start May 22 (household protocols? regional governance federation? cross-domain failure cascade analysis?), (2) Exact research outlines for 2-3 candidate domains, (3) Subagent sequencing (can domains research in parallel?), (4) May 22-31 execution roadmap with completion targets.
+**Scope** (2-3 hrs):
+  1. **Phase 4 scope options review** (30 min): Reminder on Options A/B/C from Item 90 (Scale Up / Scale Down / Integration). Which work is decision-independent (all options need this foundational research)?
+  2. **Domain research outline prep** (1.5 hrs): Detailed research outlines for 2-3 Phase 4 domains (e.g., household-scale water systems + household economics + regional supply chains). What sources? What depth? Citation targets?
+  3. **Parallel execution analysis** (30 min): If orchestrator runs domains in parallel May 22-31, which can proceed independently? What pre-requires Phase 5 decision?
+  4. **Execution roadmap** (30 min): May 22-26 research phase (4 days), May 27-31 drafting phase (5 days). Completion targets per domain.
+**Deliverable**: `projects/systems-resilience/PHASE_4_MAY_22_31_AUTONOMOUS_WORK_ROADMAP.md` (2,000+ words, domain outlines, parallel execution matrix, May 22-31 timeline)
+**Why now**: Phase 5 decision gate is June 1. While waiting, Phase 4 autonomous work removes decision friction and advances project toward June 1 user choice point with clear execution roadmap.
+**Success criteria**: By May 31, Phase 4 foundational research for 2-3 domains is complete and ready for Phase 5 decision integration June 1
+**Trigger**: Execute immediately May 20-21 (if synthesis outcome is known by then, integrate; otherwise use baseline assumptions). Ready for May 22-31 orchestrator execution.
+
+---
+
+### ✅ Item 104: Resistance-Research Phase 1 Batch 2 Outreach Architecture (Post-Synthesis Contingency)
+**Status**: COMPLETE (Session 1416, May 20)
+**Priority**: HIGH — Wave 1 synthesis executes May 21 19:00 UTC. If outcome is STRONG/MODERATE, Phase 1 Batch 2 outreach should launch by May 25-28. Architecture pre-staging enables immediate May 21 evening kickoff.
+**Impact**: HIGH — Phase 1 Batch 2 extends Wave 1 reach to additional contact tiers (State AG offices, law schools, environmental law organizations). Delays Phase 2 activation if Phase 1 response is insufficient. Pre-staging removes planning friction from May 21 decision.
+**Goal**: Pre-stage comprehensive Batch 2 outreach architecture for STRONG/MODERATE synthesis outcomes, covering: (1) Phase 1 Batch 2 target contact tiers (40-60 orgs: state attorneys general, law school policy centers, environmental law nonprofits, indigenous rights organizations), (2) Customized messaging per tier (legal angle for AG offices, academic angle for law schools), (3) Outreach timeline (May 25-28 rollout, June 1-15 response window), (4) Success metrics and decision gates (response rate thresholds for Phase 2 acceleration vs. deferral).
+**Scope** (2-3 hrs):
+  1. **Contact tier prioritization** (1 hr): Identify top 50 organizations for Batch 2 by: (a) Movement leverage (which orgs amplify Phase 1 message most?), (b) Reciprocal interest (who was interested in Wave 1?), (c) Domain alignment (which tiers reach specific Phase 2 candidates — e.g., tribal orgs for Domain 58).
+  2. **Messaging variants** (1 hr): Per-tier customized intro emails (AG offices: legal vulnerability angle, law schools: academic research angle, environmental orgs: Endangered Species Act angle, indigenous orgs: tribal sovereignty angle). Template per tier.
+  3. **Execution timeline** (30 min): May 25-28 contact push (coordinated with synthesis outcome June 1 activation). Response window May 28-June 15. Decision gate: if >30% response, Phase 2 activates June 1; if <30%, Phase 2 defers, Batch 3 launches instead.
+  4. **Success metrics** (30 min): Response rate per tier, message open rate (if email tracked), coalition formation (did outreach result in org partnerships?). Thresholds for Phase 1 continuation vs. Phase 2 activation.
+**Deliverable**: `projects/resistance-research/BATCH_2_OUTREACH_ARCHITECTURE.md` (2,500+ words, contact tier scoring, messaging variants with templates, timeline, success thresholds)
+**Why now**: May 21 synthesis outcome determines whether Batch 2 launches. Having architecture pre-staged May 20 means May 21 evening decision is immediate execution, not discovery work.
+**Success criteria**: By May 21 19:30 UTC post-synthesis, outcome is known, Batch 2 contacts are identified, and May 25 outreach can begin without planning delays
+**Trigger**: Execute May 20 (before synthesis). If synthesis is STRONG/MODERATE, Batch 2 activates May 25. If WEAK/TOO_EARLY, Batch 2 is deprioritized per Item 101 contingency playbook.
+
+---
+
+### ⏳ Item 105: Seedwarden Phase 3 Production Pre-Staging & June 22 Launch Timeline Verification
+**Status**: STAGED (Session 1416)
+**Priority**: MEDIUM — Phase 3 assets verified complete (May 20, Item 100), critical path analyzed. June 22 launch is 33 days away. Pre-staging removes friction from May 30 user decision day.
+**Impact**: MEDIUM — Phase 3 execution window is tight (June 1-July 13, 5 bundles, 56-66 hours writing + photography + design). Any planning friction on June 1 delays launch or necessitates scope reduction. Full execution prep removes June 1-22 risk.
+**Goal**: Complete comprehensive Phase 3 execution pre-staging covering: (1) Week-by-week June 1-July 13 production schedule (when does writing start? when photography? when Canva? when upload?), (2) May 30-June 1 pre-execution setup (supplier orders confirmed? Canva Brand Kit finalized? schedule blocked on user calendar?), (3) Contingency triggers (if writing falls behind by June 24, activate scope reduction Plan B), (4) Risk mitigation (weather delays on photo shoot, supplier overruns, design bottlenecks).
+**Scope** (2-3 hrs):
+  1. **June 1-July 13 production calendar** (1.5 hrs): Detailed week-by-week plan showing: June 1-3 (supplier orders, brand kit final), June 5-7 (photo shoot), June 22-29 (Women's Health writing + Canva + upload), June 30-July 7 (Respiratory writing + design), July 8-13 (Sleep writing + upload + post-launch optimization). Float analysis per task (photography has 5-14 day float, design has 1-4 day float). Scope reduction triggers.
+  2. **May 30-June 1 setup checklist** (30 min): What must user complete by June 1 for launch to proceed on schedule? (Supplier orders placed? Canva Brand Kit finalized? Calendar blocked for June 22-29 writing sprint?)
+  3. **Risk register** (30 min): 6-8 risks with mitigation. High-risk: photo shoot weather delay (5-7 day slide?), supplier overrun (add 3-5 days?), writing overrun (trigger scope reduction). Escalation criteria.
+  4. **Post-launch monitoring** (30 min): June 22-July 13 is execution-intensive. What monitoring happens daily/weekly to catch slips early?
+**Deliverable**: `projects/seedwarden/PHASE_3_PRODUCTION_MASTER_SCHEDULE.md` (2,500+ words, week-by-week calendar, setup checklist, risk register, monitoring protocol)
+**Why now**: Phase 3 assets verified complete, critical path already analyzed. Production schedule is last remaining pre-staging work before May 30 user decisions → June 1 supplier orders → June 22 launch. Completing this now removes June 1 friction and ensures tight June execution doesn't slip due to planning overhead.
+**Success criteria**: By May 30 user decision day, comprehensive production schedule is ready for user approval. June 1 supplier orders trigger automatically from schedule. June 22 launch proceeds on time with zero planning friction.
+**Trigger**: Execute May 20-21 (uses completed PHASE_3_CRITICAL_PATH_ANALYSIS_CONFIRMED from Item 100). Ready for user review May 25-30. Schedule activates June 1 post-user-decision.
+
+---
+
+## Previously Active Items (Session 1400, May 20 18:00 UTC)
 
 ### ✅ Item 97: Resistance-Research May 21 Synthesis CONTINGENCY PLANNING (Weak/TOO_EARLY Paths)
 **Status**: COMPLETE (Session 1400, May 20 18:30 UTC)
