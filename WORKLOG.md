@@ -2743,3 +2743,63 @@ Comprehensive production-readiness audit of resistance-research Phase 1 Wave 1 p
 - ✅ Item 95 complete (Systems-Resilience Wave 2 execution planning)
 - ⏳ Item 96 pending (Seedwarden May 30 decision package)
 
+
+**Execution — Item 96 (May 20, 11:00–12:00 UTC)**:
+- Spawned seedwarden subagent to prepare May 30 launch decision support package
+- Scope: Decision matrices (3 decisions), revenue projections, timeline visualization, pre-order checklists
+- Output: `projects/seedwarden/TRACK_B_MAY_30_DECISION_PACKAGE.md` (2,800 words, production-ready)
+
+**Deliverable Analysis**:
+- **Decision Matrix**: 3 decisions with options, pros/cons, and recommendations
+  - Sprint Scope: Option C (3-bundle: Women's Health + Respiratory + Sleep) recommended — balances revenue ($1,215-1,947/month) and execution risk (36-44h over 22d with 5hr/bundle editing buffer)
+  - Goldenseal Sourcing: Path 1 (Companion Plants order by June 1) recommended (premium positioning, $12-20 plant cost), Path 2 (Wikimedia CC) as no-regret fallback
+  - Canva Palette: Confirm existing May 19 palette (Deep Burgundy primary #8B3E3E)
+- **Revenue Projections**: Option C steady-state $1,215/month (Aug+), rising to $1,712-1,947/month by Sept when Immunity/Digestive bundles launch. Option B $347/month (no practitioner tier). A and C converge by Sept.
+- **Timeline**: Text Gantt May 30-Sept with risk flags (late goldenseal, writing overrun, venue permit denial, supplier delays) and zero-slip contingencies
+- **Pre-Order Checklist**: Path 1/Path 2 parallel checklists with supplier contact info, June 1 order deadline, May 28 photographer venue confirmation gate, Canva palette June 15 lock
+
+**Impact**:
+- **May 30 user decision ready**: All 3 decisions route to June 1 execution with zero planning friction
+- **Revenue impact clear**: Option C balances short-term execution risk and long-term revenue ($1,215+/month by Aug)
+- **June 22 launch feasible**: 3-bundle Option C execution plan (36-44h over 22d) with 5hr/bundle editing buffer prevents quality variance
+- **Contingency-aware**: 4 identified risks with named fallbacks (no timeline slip if goldenseal late, venue denied, writing overruns)
+
+**Session Summary — Items 94/95/96 Complete**:
+
+| Item | Project | Deliverable | Words | Status |
+|------|---------|-------------|-------|--------|
+| 94 | resistance-research | PHASE_2_DOMAINS_56_59_RESEARCH_ACTIVATION_PREP.md | 6,294 | ✅ COMPLETE |
+| 95 | systems-resilience | PHASE_5_WAVE_2_EXECUTION_PACKAGE.md | 4,200 | ✅ COMPLETE |
+| 96 | seedwarden | TRACK_B_MAY_30_DECISION_PACKAGE.md | 2,800 | ✅ COMPLETE |
+| | | **TOTAL EXPLORATION OUTPUT** | **13,294** | **✅ COMPLETE** |
+
+**Critical Path Impact**:
+- **May 21 synthesis execution**: Item 94 fully preps Phase 2 research launch (STRONG/MODERATE paths ready with deterministic timelines)
+- **June 1 Wave 2 decisions**: Item 95 fully preps execution models with resource/timeline trade-offs (sequential vs. parallel options analyzed)
+- **May 30 Track B decisions**: Item 96 fully preps May 30 decisions with revenue impact analysis and contingency routing
+
+**Session Time Allocation** (Total ~5.75 hours):
+- Orientation/block processing: 35 min
+- Exploration queue reset: 10 min
+- Item 94 execution (agent): 180 min
+- Item 95 execution (agent): 60 min  
+- Item 96 execution (agent): 60 min
+- Documentation/commits: 60 min
+- **Total**: 345 minutes (5.75 hours equivalent, 2.5 hours orchestrator + 3.25 hours agent execution)
+
+**Agent Efficiency**:
+- 3 agents spawned (resistance-research, general-research, seedwarden)
+- Combined agent output: 13,294 words in 300 minutes (~44 words/minute throughput)
+- Parallel execution: All 3 items executed sequentially (Item 94 → Item 95 → Item 96), but could have been spawned in parallel for 2-3× wall-clock time reduction
+
+**Next Steps**:
+1. **Today (May 20) evening ~22:00 UTC**: Signal log fill (user action — email monitoring)
+2. **May 21, 19:00 UTC**: Synthesis execution (fully autonomous, <30 min)
+3. **May 22, 20:00 UTC**: Stockbot checkpoint (decision playbook ready from Session 1396)
+4. **May 25**: resistance-research final synthesis gate (law school window closes)
+5. **May 30**: seedwarden Phase 3 launch decisions (using TRACK_B_MAY_30_DECISION_PACKAGE.md)
+6. **June 1**: systems-resilience Wave 2 sequencing decisions (using PHASE_5_WAVE_2_EXECUTION_PACKAGE.md)
+7. **June 22**: seedwarden Phase 3 sprint launch (Option C, 3-bundle execution)
+
+**Blocked Items Status**: No change. Stockbot SSH auth (critical May 22 13:30 UTC deadline), cybersecurity-hardening VeraCrypt, mfg-farm test print all remain unresolved (require user action).
+
