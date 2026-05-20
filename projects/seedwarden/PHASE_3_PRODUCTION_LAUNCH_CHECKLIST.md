@@ -1,7 +1,7 @@
 ---
 title: "Phase 3 Medicinal Herbs — Production Launch Preparation Checklist"
 date: 2026-05-20
-version: 2.0
+version: 3.0
 status: production-ready — Anya review May 28
 purpose: >
   Comprehensive pre-launch preparation guide enabling zero-delay June 22 execution start
@@ -18,7 +18,7 @@ tags: [seedwarden, phase-3, production-checklist, medicinal-herbs, launch-prep, 
 
 # Phase 3 Medicinal Herbs — Production Launch Preparation Checklist
 
-**Version**: 2.0 (May 20, 2026)
+**Version**: 3.0 (May 20, 2026)
 **For review by**: Anya — May 28 approval gate
 **Execution window**: June 22 – July 13, 2026
 **Pre-sprint preparation window**: May 20 – June 21, 2026
@@ -216,6 +216,14 @@ Load these six hex codes into the Phase 2 Canva Brand Kit under a new palette na
 | Dark Charcoal | #2C2C2C | Body text, all bundles (maintained from Phase 2) |
 
 **Palette pre-test (June 21, 30 minutes)**: Create one zone card using the new palette before the sprint begins. Confirm that all six hex codes render correctly in Canva export. If any color renders differently than expected, document the actual rendered value and update the Brand Kit. Do not proceed to sprint design without confirming the palette.
+
+**[USER DECISION GATE — June 15]**: Confirm palette authorization before design production begins. The six hex codes above are sourced from `canva-phase-3-adaptation-guide.md` (May 19, 2026). An older document — `phase-3-canva-mockup-brief.md` (May 9, 2026) — specifies a different palette. The May 19 adaptation guide is the authoritative version, but Anya must explicitly confirm this by June 15 so design production does not begin on a palette she later rejects.
+
+**Decision required (June 15 deadline)**:
+- [ ] I confirm the six hex codes in Section 3.2 above are the authoritative Phase 3 palette — proceed with loading into Canva Brand Kit
+- [ ] I want to revise the palette before June 15 — [Anya documents revised hex codes here]
+
+**Impact of deciding after June 15**: Bundle cover design begins June 23. A palette change after design production starts requires recoloring all completed covers — approximately 2–3 hours of rework per cover already completed. Decide by June 15 to preserve full design float.
 
 ### 3.3 Per-Bundle Design Schedule (Embedded in Sprint)
 
@@ -423,6 +431,39 @@ Execute this checklist for each bundle at its scheduled upload date.
 - [ ] Practitioner 10-pack listing uploaded simultaneously ($120–$150; practitioner license variant)
 - [ ] FTC compliance confirmed: no efficacy claims in listing description, disclaimer present in PDF
 
+**5.5a SEO Keyword Bank (Pre-populated for Phase 3 Medicinal Herb Bundles)**
+
+Research basis: Etsy search volume patterns from `etsy-seo-market-research.md` + seasonal demand windows for each bundle theme. Apply per-bundle titles and tags from the pools below. Each tag must be 20 characters or fewer.
+
+**Shared cross-bundle keywords** (apply to all five listings):
+- `medicinal herb guide` (18 chars)
+- `herbal medicine pdf` (19 chars)
+- `herb growing guide` (18 chars)
+- `herbalist reference` (19 chars)
+- `medicinal plants` (16 chars)
+- `herbal remedy guide` (19 chars)
+- `plant medicine guide` (20 chars)
+
+**Bundle-specific tags** (add 6 per bundle from this pool to reach 13 total):
+
+| Bundle | Primary Tag | Secondary Tags (pick 5 more from shared pool) |
+|---|---|---|
+| Women's Health | `womens herb guide` (18) | `black cohosh guide` (19), `vitex herb` (10), `calendula growing` (17), `women herbal health` (19), `red clover herb` (15) |
+| Respiratory | `respiratory herbs` (18) | `elderberry guide` (16), `echinacea growing` (17), `mullein herb guide` (18), `immune herb pdf` (15), `cold remedy herbs` (17) |
+| Immunity | `immune support herbs` (20) | `goldenseal guide` (16), `ashwagandha grow` (16), `echinacea guide` (15), `immunity herb pdf` (17), `goldenseal plant` (16) |
+| Sleep | `sleep herb guide` (17) | `valerian growing` (16), `passionflower herb` (18), `lemon balm guide` (16), `nervine herbs` (13), `calming herb pdf` (16) |
+| Digestive | `digestive herb guide` (20) | `dandelion root guide` (20), `ginger growing` (14), `gut health herbs` (15), `bitters herb guide` (18), `digestive plants` (16) |
+
+**Etsy title templates** (under 140 characters, primary keyword in first 40 characters):
+
+- Women's Health: `Medicinal Herb Guide — Women's Health Bundle | Black Cohosh, Vitex, Calendula, Red Clover, Lavender | Growing + Traditional Use PDF`
+- Respiratory: `Respiratory Herb Guide PDF | Elderberry, Mullein, Echinacea, Thyme | Grow + Use Medicinal Herbs | Printable Guide`
+- Immunity: `Immunity Herb Guide | Goldenseal, Echinacea, Ashwagandha, Elderberry | Medicinal Herb Growing PDF | CITES Sourcing Notes`
+- Sleep: `Sleep Herb Guide PDF | Valerian, Passionflower, Lemon Balm, Lavender | Nervine Herbs Growing + Traditional Use`
+- Digestive: `Digestive Herb Guide | Dandelion, Ginger, Calendula, Lemon Balm | Bitters + Gut Health Plants | Medicinal PDF`
+
+**SEO pass schedule**: Conduct a full keyword density review on July 10 (after first upload, before Respiratory upload) to verify search placement and adjust any underperforming tags based on Etsy Stats > Traffic > Search terms data.
+
 ---
 
 ## Section 6: Pre-Execution Verification — Final 48 Hours
@@ -584,7 +625,7 @@ Send content outline and sourcing guide to Writer B by June 1. Include FTC langu
 
 ---
 
-*Document prepared: May 20, 2026 (v2.0 — production-ready for Anya review May 28)*
+*Document prepared: May 20, 2026 (v3.0 — production-ready for Anya review May 28; adds palette decision gate June 15, SEO keyword bank, Etsy title templates)*
 *Seedwarden Agent — Phase 3 pre-execution preparation*
 *Next action: May 20 supplier inquiry emails (Strictly Medicinal Seeds + Prairie Moon Nursery)*
 *Next review checkpoint: June 8 (Goldenseal deadline), June 21 (pre-sprint readiness)*
