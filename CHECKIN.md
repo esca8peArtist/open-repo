@@ -1,11 +1,37 @@
-## Since Last Check-in (Session 1386-ORCHESTRATOR, May 20 03:08–?? UTC) — Block Verification + Escalation
+## Since Last Check-in (Session 1388-ORCHESTRATOR, May 20 03:30–04:50 UTC) — Queue Build + Autonomous Research
 
-**Session Status**: 🔴 **CRITICAL ESCALATION — STOCKBOT SSH AUTH DEADLINE IMMINENT (58 HOURS REMAINING)**
+**Session Status**: ✅ **ESCALATION COMPLETED + AUTONOMOUS RESEARCH DELIVERED** | 🔴 **STOCKBOT SSH DEADLINE UNCHANGED (58 HOURS)**
+
+### What Was Accomplished (Session 1388)
+
+**1. Queue Replenishment** ✅
+- **Previous**: 1 active exploration item (Domain 59 research, conditional on synthesis)
+- **Added**: 2 new items (stockbot Options Gap 1, systems-resilience Phase 4 household-scale research)
+- **New total**: 3 active exploration items
+- **Committed to**: PROJECTS.md
+
+**2. Systems-Resilience Phase 4 Household-Scale Infrastructure Gap Analysis** ✅ **COMPLETE**
+- **Deliverable**: `phase-4-household-scale-gap-analysis.md` (5,962 words, 54 sources, 5 research dimensions)
+- **Research scope**: Coordination infrastructure, conflict resolution, psychological support, education/skill transfer, equipment maintenance
+- **Critical finding**: Household scale (8–25 person) has **structurally distinct failure modes** not resolvable by scaling smaller/larger
+- **Key discoveries**:
+  - Sociocratic consent + 3-step escalation most effective conflict resolution (pure consensus fails 10–20 person scale)
+  - Pre-crisis social cohesion strongest psychological resilience predictor
+  - Craft guild observation model most effective for tacit knowledge transfer  
+  - Standardized equipment + distributed stewardship = 70%+ repair success
+- **Phase 4 timeline if household scale chosen**: 65–79 hours, September 6 target (6–8 hrs/week pacing)
+- **Impact**: Removes ambiguity for June 1 user Phase 4 scope decision (individual gaps / household fill / community depth)
+- **Committed**: `9896c34b` to master
+
+**3. Critical Escalation: Stockbot SSH Auth** ✅
+- **Action taken**: Discord notification sent with Option A (add key) + Option B (manual config fix)
+- **Status**: Re-verified SSH auth still failing (unchanged from Session 1387)
+- **Timeline**: ~58 hours remaining (May 22 13:30 UTC)
 
 ### Critical Issue Requiring Immediate User Action
 
 **🔴 STOCKBOT LEVER B CONFIG — DEADLINE: MAY 22 13:30 UTC (~58 HOURS)**
-- **Status**: SSH auth to Jetson still failing (verified Session 1386, 03:08 UTC)
+- **Status**: SSH auth to Jetson still failing (verified Session 1388, 04:35 UTC)
 - **Problem**: Orchestrator's ED25519 key is NOT authorized on Jetson (same error as Session 1359)
 - **Impact**: Lever B HMM regime masking code is deployed but config file missing `"hmm_regime_masking": true` flag. May 22 checkpoint will execute with Lever A config (failed May 19 with STILL_MISS_B2), defeating test purpose.
 - **What you must do NOW**:
