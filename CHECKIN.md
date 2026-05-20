@@ -1,3 +1,61 @@
+## Since Last Check-in (Session 1405-ORCHESTRATOR, May 20 09:43–10:00 UTC) — Status Verification + Critical Deadline Alert + Synthesis Readiness Confirmation
+
+**Session Status**: ✅ **ALL PROJECTS REVIEWED** | 🔴 **CRITICAL DEADLINE: Stockbot SSH Auth May 22 13:30 UTC (~36 hours)** | ✅ **RESISTANCE-RESEARCH SYNTHESIS READY MAY 21 19:00 UTC** | 📊 **USAGE NOMINAL** (0.3%, minimal)
+
+### What Was Done (Session 1405)
+
+**Orientation + Block Verification**:
+- Verified stockbot SSH auth still failing: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84` → "Permission denied (publickey,password)"
+- Confirmed resistance-research synthesis infrastructure complete and ready for May 21 19:00 UTC execution
+- All projects reviewed: no new unblocked work available (all top-priority projects either blocked on user actions or scheduled)
+
+**Critical Status Summary**:
+1. **Stockbot SSH Auth Block** — CRITICAL DEADLINE **May 22 13:30 UTC** (~36 hours from now):
+   - Issue: Orchestrator ED25519 public key NOT authorized on Jetson
+   - Impact: May 22 checkpoint will execute with Lever A config (defeating Lever B testing)
+   - User action required: Either (A) add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run 5-min Lever B config fix (commands in BLOCKED.md)
+   
+2. **Resistance-Research Synthesis** — **May 21 19:00 UTC** (scheduled, fully autonomous):
+   - All files present and verified ready
+   - Synthesis execution script ready: `synthesis-execution-monitor.py`
+   - User action required TONIGHT (~May 20 22:00 UTC): Fill signal log "May 20 — Day 2 Snapshot" in `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` (fill Gist view counts + any new replies)
+   - User action required BEFORE 19:00 UTC May 21: Check SCOTUSblog for Trump v. Barbara ruling (if issued, execute Domain 58 rapid-response before synthesis)
+
+3. **All Other Projects** — No autonomous work available (blocked on user actions or scheduled):
+   - **Cybersecurity-hardening**: Awaiting VeraCrypt restart (user action)
+   - **Mfg-farm**: Awaiting test print (user action)
+   - **Seedwarden**: Track B ready for May 30 (no immediate work)
+   - **Open-repo**: Phase 5.1 MVP production-ready, awaiting user merge approval
+   - **Off-grid-living**: Complete, awaiting user social media execution
+   - **Workout**: Awaiting user review
+   - **Open-source-rideshare**: Paused
+
+### No In-Progress Work
+
+All scheduled tasks are either user-dependent (tonight's signal log fill) or autonomous-future (May 21 synthesis). No blocking development work available.
+
+### Needs Your Input — URGENT
+
+**🔴 CRITICAL — Stockbot SSH Auth Deadline May 22 13:30 UTC** (36 hours remaining):
+- Current time: May 20 09:43 UTC
+- Deadline: May 22 13:30 UTC
+- **User action required immediately** — either:
+  - **(A) Add orchestrator public key to Jetson authorized_keys** (requires existing Jetson access):
+    ```bash
+    ssh ubuntu@100.120.18.84
+    # (use your existing credentials)
+    echo "$(cat ~/.ssh/id_ed25519.pub)" >> ~/.ssh/authorized_keys
+    ```
+  - **(B) SSH manually and execute Lever B config fix** (5 minutes, see BLOCKED.md for exact commands)
+  - **DO NOT DELAY** — checkpoint executes May 22 20:00 UTC; SSH fix must complete before then
+
+**📧 ACTION TONIGHT — Signal Log Fill** (May 20 ~22:00 UTC, 15 minutes):
+- File: `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+- Section: "May 20, 2026 — Day 2 Snapshot"
+- What to fill: Gist view counts (check incognito), any new replies from contacts, response trend assessment
+
+---
+
 ## Since Last Check-in (Session 1404-ORCHESTRATOR, May 20 08:52–09:15 UTC) — Fix open-repo Phase 5.1 Critical Defects + Update Orchestration Files
 
 **Session Status**: ✅ **OPEN-REPO PHASE 5.1 CRITICAL DEFECTS ALL FIXED** (production-ready, awaiting user merge approval) | ✅ **LIBZIM INTEGRATION TESTS ADDED** (4 new tests, 88 total passing) | 🟢 **MVP NOW UNBLOCKED FOR MERGE** | 📊 **USAGE NOMINAL** (0.3%, minimal session burn)
