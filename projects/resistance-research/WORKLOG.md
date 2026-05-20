@@ -2,6 +2,35 @@
 
 ---
 
+## May 21, 2026 — General Research Agent — Phase 2 Activation Checklist + Timeline Template Currency Update
+
+**Task**: Audit Phase 2 domains (56–59 + Domain G) for production-readiness and May 2026 currency. Update both activation documents with live research findings. Verify word counts. Prepare same-day synthesis launch package.
+
+**Files updated**:
+- `projects/resistance-research/phase-2-research-activation-checklist.md` — May 21 currency audit integrated: Section 1A (live currency audit with three material findings), corrected Domain 58 word count (12,611 confirmed by `wc -w`), updated Section 1 summary matrix with currency risk revisions, expanded quick-start checklist (items 11–12 added for currency audit follow-through). Authoritative for May 21 19:00 UTC activation.
+- `projects/resistance-research/phase-2-research-timeline-template.md` — May 21 currency audit integrated: YAML updated with three material developments, critical finding paragraph updated with live word counts (45,224 total), Section 7 (Synthesis Outcome Decision Tree) added — full STRONG/MODERATE/WEAK/TOO EARLY calendar tables with Nebraska OBBBA hook noted across all paths. Document footer updated with May 21 sources. Authoritative five-domain distribution calendar.
+
+**May 21 currency audit findings (live web searches)**:
+1. **OBBBA / Domain 59**: Nebraska implemented Medicaid work requirements May 1, 2026 — the first state under OBBBA. CBO projects 4.8M losing coverage over 10 years. Domain 59's civic participation argument is now live empirical data, not projection. Cover email framing elevated to "current-events analysis." Sources: Ballotpedia, NPR, CBPP.
+2. **ICC / Domain 57**: May 13, 2026 — U.S. District Court D.C. enjoined enforcement of Francesca Albanese ICC sanctions designation. Hungary PM-elect Magyar pledged to halt ICC withdrawal before June 2 deadline. Both are positive countermovement signals that require July spot-check before August 10 Domain 57 launch. Sources: OFAC, HRW, CICC.
+3. **Press Freedom / Domain G**: FCC directed Disney's ABC to file license renewals within 30 days (by May 28, 2026) — widely characterized as politically retaliatory (Kimmel controversy). RSF 2026 Press Freedom Index confirmed US 64th globally (cited in Domain G executive summary). ABC case is the most recent and highest-profile FCC retaliation example; one paragraph addition to Domain G Section II recommended. Sources: CNN Business, Al Jazeera, RSF.
+4. **Trump v. Barbara / Domain 58**: Not yet ruled as of May 21. Expected late June/early July 2026. Pre-ruling distribution June 15 proceeds as planned. Sources: SCOTUSblog confirmed.
+5. **Schedule P/C / Domain 56**: No injunction in place. Four lawsuits pending. H.R. 492 in committee with 78 cosponsors, no floor vote. Domain 56 framing confirmed accurate. Sources: Federal News Network, FedWeek.
+
+**Word count verification (May 21, `wc -w`)**:
+- Domain 56: 6,267 words (confirmed)
+- Domain 57: 9,201 words (confirmed)
+- Domain 58: 12,611 words (updated from prior reported 11,388 — reflects May 20 Trump v. Barbara rapid-response additions)
+- Domain 59: 8,450 words (confirmed)
+- Domain G: 8,695 words (confirmed)
+- **Total: 45,224 words, 285 citation URLs across 5 domains**
+
+**Decision tree completeness**: Section 7 in phase-2-research-timeline-template.md provides full STRONG/MODERATE/WEAK/TOO EARLY calendar tables. All four outcomes result in the same five-domain distribution launch dates — only Tier 2 activation pace changes. Synthesis outcome does not gate any domain launch.
+
+**Confidence**: High. All domain file audits performed by direct file read + bash `wc -w` commands. Currency audit based on live web searches with source confirmation. All sources open-access.
+
+---
+
 ## May 20, 2026 — General Research Agent — Trump v. Barbara Pre-Research (Round 2 — Deepen and Deliver)
 
 **Task**: Deepen the May 20 pre-research into structured deliverables per orchestrator brief. Ruling not issued as of May 20, 2026.

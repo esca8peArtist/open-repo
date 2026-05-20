@@ -15,19 +15,28 @@ critical_update: |
   Total remaining effort: 31–50 hours across May–September 2026.
 hard_deadlines:
   domain_56: "June 7, 2026 (Wave 1 complete — H.R. 492 first three weeks)"
-  domain_59: "June 1, 2026 (first distribution — HHS rule anchor)"
-  domain_58: "June 15, 2026 (Wave 1 launch — pre-Trump v. Barbara)"
+  domain_59: "June 1, 2026 (first distribution — OBBBA Nebraska implementation NOW LIVE May 1; urgency elevated)"
+  domain_58: "June 15, 2026 (Wave 1 launch — pre-Trump v. Barbara; ruling not yet issued May 21)"
   domain_58_rapid_response: "Within 24 hours of Trump v. Barbara ruling"
-  domain_G: "June 15, 2026 (Wave 1 launch — after June 15 revision + CPJ/RCFP peer review)"
-  domain_57: "August 10, 2026 (Wave 1 launch — UNGA 81 lead time)"
+  domain_G: "June 15, 2026 (Wave 1 launch — after June 15 revision + CPJ/RCFP peer review; ABC license deadline May 28 to monitor)"
+  domain_57: "August 10, 2026 (Wave 1 launch — UNGA 81 lead time; ICC Albanese injunction + Hungary halt monitoring added)"
+currency_audit_may21: |
+  Three material developments verified May 21:
+  1. OBBBA Nebraska May 1 implementation (Domain 59 urgency elevated)
+  2. ICC Albanese sanctions injunction May 13 (Domain 57 medium risk confirmed, elevated)
+  3. Hungary PM-elect Magyar ICC halt pledge; June 2 withdrawal deadline live (Domain 57 alliance section update needed July)
+  Domain 58: Trump v. Barbara not issued as of May 21. Monitoring continues.
+  Domain G: FCC ABC license challenge confirmed; RSF 64th ranking confirmed.
 ---
 
 # Phase 2 Research Timeline Template
 ## Distribution Calendar: All Five Phase 2 Domains Production-Complete
 
-*Authoritative version: May 20, 2026. Supersedes all prior production-oriented timelines.*
+*Authoritative version: May 21, 2026. Supersedes all prior production-oriented timelines. May 21 currency audit complete — three material developments noted, none alter distribution deadlines.*
 
-**Critical finding**: All five Phase 2 domain documents (Domains 56–59 and Domain G: Press Freedom) are production-complete. No research or writing work remains before distribution. This document provides the distribution-only calendar, per-domain schedules with decision gates, and critical path analysis for the May–September 2026 execution window.
+**Critical finding**: All five Phase 2 domain documents (Domains 56–59 and Domain G: Press Freedom) are production-complete. May 21 word count verification: 45,224 total words (D56: 6,267 / D57: 9,201 / D58: 12,611 / D59: 8,450 / D-G: 8,695). No research or writing work remains before distribution. This document provides the distribution-only calendar, per-domain schedules with decision gates, and critical path analysis for the May–September 2026 execution window.
+
+**May 21 currency audit**: Live web searches confirmed three material developments since May 20 staging (detailed in `phase-2-research-activation-checklist.md` Section 1A). Domain 59 urgency is elevated — OBBBA work requirements already in live implementation in Nebraska as of May 1, 2026. Domain 57 requires July spot-check for ICC Albanese injunction (May 13) and Hungary ICC withdrawal halt (June 2 deadline). Domain G requires ABC license monitoring through May 28. None of these alter the distribution calendar.
 
 **Note on Domain G naming**: This project uses lettered designations (E, F, G) for domains produced after Domain 59. "Domain 60" in task-level shorthand and "Domain G" in the canonical project files refer to the same document: `domains/domain-G-press-freedom-epistemic-infrastructure.md`.
 
@@ -41,7 +50,7 @@ The prior production timeline projected Domains 57 and 59 completing August 2026
 |--------|-------------------|-------------------|-----------------------|-------------|---------------|----------------------|
 | 56 | Complete (6,267 words, 45 citations) | May 26 | June 7 (Wave 1) | Not required | May 22–25 | June 7 (H.R. 492 window first three weeks) |
 | 59 | Complete (8,450 words, 49 citations) | June 1 | June 30 (Wave 1+2) | Optional (CBPP/EPI) | May 25–31 | June 1 (HHS OBBBA interim final rule release) |
-| 58 | Complete (11,388 words, 90 citations) | June 15 | July 2026 (post-ruling) | NARF (June 1–14) | June 1–14 | June 15 (pre-Trump v. Barbara); within 24 hrs of ruling (rapid-response) |
+| 58 | Complete (12,611 words, 90 citations — updated May 20 with rapid-response additions) | June 15 | July 2026 (post-ruling) | NARF (June 1–14) | June 1–14 | June 15 (pre-Trump v. Barbara; ruling not issued May 21); within 24 hrs of ruling (rapid-response) |
 | G | Complete (8,695 words, 50 citations) | June 15 | July 31 (Wave 1+2) | CPJ/RCFP (June 1–14) | June 1–14 | June 15 (after revision pass; PRESS Act reintroduction window) |
 | 57 | Complete (9,201 words, 51 citations) | August 10 | September 28 | Not required | July 1–August 9 | August 10 (UNGA 81 lead time — 43 days) |
 
@@ -278,6 +287,119 @@ The Phase 2 production milestone: all five domains are in active distribution.
 
 ---
 
+## Section 7: Synthesis Outcome Decision Tree
+
+*Read this section immediately after May 21 19:00–20:00 UTC synthesis outcome is posted in CHECKIN.md. The synthesis classifies as STRONG, MODERATE, WEAK, or TOO EARLY. The calendar in Sections 1–6 does not change based on outcome — all five domains have path-independent launch dates. What changes is Tier 2 activation pace and any accelerated parallel research.*
+
+---
+
+### STRONG Outcome (QRP >= 2 AND response rate >= 40%, OR Score 5 override)
+
+**What changes**: Tier 2 outreach activation advances to June 15–21 — the earliest window. No distribution calendar changes.
+
+**Same-evening actions (May 21, post-synthesis)**:
+1. Post STRONG classification in CHECKIN.md per synthesis framework template.
+2. Queue Tier 2 pre-contact list preparation for May 25 user gate.
+3. Note that Domain 56 Wave 1 starts May 26 regardless — no acceleration possible for the lead domain.
+
+**Domain calendar under STRONG**:
+
+| Date | Domain | Action |
+|------|--------|--------|
+| May 26 | Domain 56 | Wave 1 launch — partnership orgs, civil service unions |
+| June 1 | Domain 59 | Wave 1 launch — OBBBA Nebraska hook in cover email; HHS rule monitor |
+| June 1 | Domains 58/G | NARF + CPJ/RCFP peer review requests sent |
+| June 7 | Domain 56 | Wave 1 complete — H.R. 492 window captured |
+| June 15 | Domains 58/G | Wave 1 launch (simultaneous) |
+| June 15–21 | Tier 2 | Activation with full social proof — STRONG signal framing |
+| July (ruling-triggered) | Domain 58 | Rapid-response update committed within 24 hours |
+| August 10 | Domain 57 | Wave 1 launch — UNGA 81 lead time |
+| September 22–28 | Domains 57/G | UNGA 81 High-Level Week — both in active circulation |
+
+**STRONG path note on Nebraska/OBBBA**: Lead the Domain 59 June 1 cover email with: "Nebraska became the first state to require Medicaid work requirements under the OBBBA as of May 1, 2026. Domain 59's civic participation analysis of this policy is no longer prospective — it documents the democratic exclusion mechanism now operating." This framing positions the document as responsive analysis, not prospective advocacy.
+
+---
+
+### MODERATE Outcome (QRP >= 1 OR Gist delta > 10)
+
+**What changes**: Tier 2 outreach activation shifts to June 22–28 (7-day delay from STRONG). No distribution calendar changes.
+
+**Same-evening actions (May 21, post-synthesis)**:
+1. Post MODERATE classification in CHECKIN.md per synthesis framework template.
+2. Note that if any additional signals arrive May 22–25, QRP recalculates and MODERATE can upgrade to STRONG.
+3. Domain 56 Wave 1 starts May 26 as scheduled.
+
+**Domain calendar under MODERATE**: Identical to STRONG except Tier 2 activation date shifts from June 15–21 to June 22–28. All five domain distribution launch dates are unchanged.
+
+| Date | Domain | Action |
+|------|--------|--------|
+| May 26 | Domain 56 | Wave 1 launch |
+| June 1 | Domain 59 | Wave 1 launch |
+| June 7 | Domain 56 | Wave 1 complete |
+| June 15 | Domains 58/G | Wave 1 launch |
+| June 22–28 | Tier 2 | Activation — lead with policy urgency, not social proof (unless Score 3+ reply exists) |
+| August 10 | Domain 57 | Wave 1 launch |
+
+**MODERATE upgrade rule**: At any point May 21–28, if a new signal pushes QRP to >= 2 with response rate >= 40%, upgrade to STRONG immediately in CHECKIN.md. The June 15 Tier 2 window is still achievable if upgrade posts by May 25.
+
+---
+
+### WEAK Outcome (QRP = 0, Gist delta <= 5, delivery confirmed)
+
+**What changes**: Tier 2 activation defers until Domain 59 June 1 distribution produces a first engagement signal. All five domain distribution calendars proceed unchanged — the synthesis outcome does not defer any domain launch date.
+
+**Same-evening actions (May 21, post-synthesis)**:
+1. Post WEAK classification in CHECKIN.md per synthesis framework template.
+2. Confirm delivery self-test was run — WEAK classification is invalid without this check.
+3. Domain 56 Wave 1 starts May 26 as scheduled.
+4. Flag for user: delivery problem diagnosis vs. content revision decision is required before any Phase 1 remediation.
+
+**Domain calendar under WEAK**: All five domain distribution dates are unchanged. What changes is Tier 2 activation gating.
+
+| Date | Domain | Action |
+|------|--------|--------|
+| May 26 | Domain 56 | Wave 1 launch — path-independent |
+| June 1 | Domain 59 | Wave 1 launch — NON-NEGOTIABLE; Nebraska hook in cover email |
+| June 15 | Domains 58/G | Wave 1 launch — path-independent |
+| June 29–July 5 | Tier 2 | Conditional — only if Domain 59 has produced Score 3+ signal |
+| August 10 | Domain 57 | Wave 1 launch — path-independent |
+
+**WEAK path note**: Domain 59 is the single strongest candidate for generating engagement under WEAK conditions because its audience (EPI, NLIHC, CBPP, SEIU) is entirely distinct from Phase 1 Wave 1 contacts. If Phase 1 failed due to contact mismatch or delivery, Domain 59 reaches a different institutional tier that may respond differently. The OBBBA Nebraska hook is a genuine current-events accelerant regardless of Phase 1 outcome.
+
+---
+
+### TOO EARLY Outcome (zero signals at 72h, law school window not closed)
+
+**What changes**: Nothing until May 25 final classification gate. All distribution calendar dates hold. Domain 56 Wave 1 starts May 26 as scheduled.
+
+**Same-evening actions (May 21, post-synthesis)**:
+1. Post TOO EARLY classification in CHECKIN.md per synthesis framework template.
+2. Note May 25 resolution gate — TOO EARLY cannot persist past May 25.
+3. Confirm delivery self-test was run.
+4. Domain 56 Wave 1 starts May 26 regardless of classification.
+
+**May 25 resolution**: TOO EARLY resolves into STRONG, MODERATE, or WEAK at May 25 gate with full 7-day signal data. If law school contacts (Goodman, Chenoweth) have replied at Score 3+, this likely resolves to MODERATE. If Elias has replied at Score 4+, this likely resolves to STRONG. If all five remain silent with delivery confirmed, resolves to WEAK.
+
+---
+
+### Cross-Path Summary Table
+
+| Question | STRONG | MODERATE | WEAK | TOO EARLY |
+|----------|--------|----------|------|-----------|
+| Domain 56 starts May 26? | YES | YES | YES | YES |
+| Domain 59 starts June 1? | YES | YES | YES | YES |
+| Domains 58/G start June 15? | YES | YES | YES | YES |
+| Domain 57 starts August 10? | YES | YES | YES | Pending May 25 resolution (YES expected) |
+| Tier 2 activation date | June 15–21 | June 22–28 | Conditional on D59 June 1 signal | Pending May 25 |
+| Nebraska OBBBA hook in D59 cover email? | YES | YES | YES | YES |
+| ABC license monitoring active? | YES | YES | YES | YES |
+| Domain 57 ICC + Hungary July check | YES | YES | YES | YES |
+| Phase 2 research production needed? | NO | NO | NO | NO |
+
+**Universal finding**: All five domains launch on schedule regardless of synthesis outcome. The synthesis outcome only affects Tier 2 activation pace. Phase 2 is a pure distribution operation on all paths.
+
+---
+
 ## Appendix: Hour Estimate Reference
 
 | Domain | URL Spot-Check | Cover Email Prep | Wave 1 Execution | Rapid-Response | Wave 2 Execution | Total |
@@ -293,4 +415,4 @@ The Phase 2 production milestone: all five domains are in active distribution.
 
 ---
 
-*Document produced: May 20, 2026; updated May 20, 2026 to add Domain G. Domain status confirmed by direct file audit: word counts (`wc -w`), citation URL counts (`grep -c "https://"`), section header scan. All five domains production-complete: Domains 56–59 as of May 15, 2026; Domain G as of May 17, 2026. Domain G audit: 8,695 words, 50 citations, 7 sections, YAML status "production-ready." Milestone dates derived from: UNGA 81 High-Level Week (September 22–28, 2026); OBBBA Medicaid work requirements effective December 2026; Trump v. Barbara ruling (expected late June/early July 2026); H.R. 492 legislative window (June 1–30, 2026); PRESS Act reintroduction window (June 2026). This document supersedes PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md (Session 1361, May 19) and the prior phase-2-research-timeline-template.md (Session 1405, May 20) as the authoritative five-domain distribution calendar.*
+*Document produced: May 20, 2026; updated May 20, 2026 to add Domain G; updated May 21, 2026 with live currency audit findings (Section 7 synthesis decision tree added, OBBBA Nebraska implementation noted, Domain 58 word count corrected to 12,611). Domain status confirmed by direct file audit May 21: word counts via `wc -w` (D56: 6,267 / D57: 9,201 / D58: 12,611 / D59: 8,450 / D-G: 8,695 — total: 45,224), citation URL counts via `grep -c "https://"`, section header scan. All five domains production-complete. May 21 currency audit sources: Ballotpedia (Nebraska OBBBA May 1), NPR (Nebraska Day 1), CBPP (Nebraska work requirements critique), OFAC (ICC Albanese injunction), ICC/HRW (Hungary ICC halt), CNN Business (FCC ABC license challenge), Al Jazeera/RSF (press freedom index), SCOTUSblog (Trump v. Barbara pending). Milestone dates derived from: UNGA 81 High-Level Week (September 22–28, 2026); OBBBA Medicaid work requirements effective December 2026 (state-level earlier implementation already live); Trump v. Barbara ruling (pending — expected late June/early July 2026); H.R. 492 legislative window (June 1–30, 2026); PRESS Act reintroduction window (June 2026); FCC ABC license review deadline May 28. This document supersedes PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md (Session 1361, May 19) and the prior phase-2-research-timeline-template.md (Session 1405, May 20) as the authoritative five-domain distribution calendar.*
