@@ -24,6 +24,35 @@
 
 ---
 
+## Session 1396 — stockbot: Exploration Item 96 — Post-Checkpoint Decision Execution Playbook (May 20, 2026)
+
+**Task**: Develop comprehensive decision playbook for May 22 20:00 UTC checkpoint outcome, enabling mechanical user execution without deliberation.
+
+**Deliverable**: `projects/stockbot/POST_CHECKPOINT_EXECUTION_PLAYBOOK.md`
+
+**Stats**: 6,205 words | All 6 sections complete | Committed ee62a24
+
+**Sections written**:
+1. Checkpoint script command — Ready-to-run SQL query for outcome classification (6 fill-in variables)
+2. Routing table — One-lookup decision tree (30 seconds) routes to correct section per outcome
+3. Recording template — User fills in May 22 outcome, commit before any action
+4. Four outcome-specific decision trees:
+   - **PASS**: Lever B validation thresholds (Sharpe ≥0.8, MDD ≤20%), multi-ticker 6-gate go/no-go, early Gate 2 assessment
+   - **STILL_MISS_B2**: 4 sub-case diagnosis with parameter sensitivity table (h=5/8/10/12/15, HMM lookback 30/45/60/90 bars), Lever B v2 remediation timeline (May 23-29)
+   - **FAR_MISS_C1**: Confirms h+10 timing issue not code failure, h+10 SELL monitoring May 23-25, reclassification trigger at h+12
+   - **FAR_MISS_C2**: Options quarantine, 4-step root-cause diagnosis (position-sizing, capital allocation, Alpaca API, guardrails verification), recovery matrix with escalation
+5. Metric thresholds — Defines what "PASS" means (minimum: any positive aapl_sells_since_lever_b; strong: Sharpe ≥0.8; Gate 2 requirement: Sharpe ≥1.0)
+6. Per-outcome timelines — 2-week roadmaps (May 23–June 6) for each outcome path with daily milestones
+
+**Key decision frameworks embedded**:
+- Multi-ticker 6-gate go/no-go table (Lever B PASS + position sizing verified + API health good → AMZN/JPM launch May 28-30; otherwise defer to June 1)
+- Options Gap 4 quarantine decision (defer options activation to June 9+ post-Lever-B-validation)
+- Jetson thermal assessment (corrected: 48.2°C idle with 36.8°C headroom, thermal constraint non-binding for 6-session deployment; cooling not required)
+
+**Critical timing**: Ready for May 22 evening use (checkpoint outcome 20:00 UTC). Enables May 23-25 execution without deliberation.
+
+---
+
 ## Session 1394 — Orchestrator: Exploration Queue Execution + May 21 Synthesis Prep (May 20, 2026, 05:22–09:00 UTC)
 
 **Session Type**: Parallel Exploration Queue execution + synthesis readiness verification
