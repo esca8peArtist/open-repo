@@ -110,21 +110,53 @@ All 3 active blocks remain — require user action:
 2. **cybersecurity-hardening VeraCrypt** — Windows restart + pre-boot password (Phase 1 walkthrough paused)
 3. **mfg-farm test print** — Execute with specifications (0.20mm, PLA+, 3 walls, 220–225°C)
 
+### 🚨 CRITICAL: Needs Your Input TODAY (May 20)
+
+**DEADLINE: May 22 13:30 UTC (23 hours remaining)**
+
+1. **[URGENT] Stockbot SSH Auth Resolution** — Choose ONE option and execute NOW (takes ~5 minutes):
+   - **Option A (Permanent)**: Add orchestrator's public key to Jetson authorized_keys
+   - **Option B (Quick)**: SSH manually and add `"hmm_regime_masking": true` flag to config
+   - **File**: `projects/stockbot/SSH_AUTH_MITIGATION_URGENT.md` (step-by-step guide)
+   - **Why**: If not fixed by May 22 13:30 UTC, May 22 checkpoint will execute with wrong config and waste Lever B test window
+   - **Impact**: Fixes all future SSH orchestrator access; unblocks May 22 checkpoint and Gate 2 decision-making
+   - **Next**: Once fixed, engine runs Lever B May 21-22, checkpoint executes May 22 20:00 UTC
+
+2. **[May 20 ~22:00 UTC]** Resistance-Research Signal Log Fill (15 min):
+   - Check inbox for new Gist activity, record view count, fill "May 20 — Day 2 Snapshot" in `post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+   - **Impact**: Provides data for synthesis outcome calibration on May 21 19:00 UTC
+
+3. **[May 21 before 19:00 UTC]** Check SCOTUSblog for Trump v. Barbara Ruling:
+   - If ruling issued, execute Domain 58 rapid-response before synthesis
+   - **Impact**: May 21 synthesis outcome accuracy improves if ruling is fresh
+   - **Timeline**: Synthesis executes fully autonomous May 21 19:00–20:00 UTC
+
 ### Projects Status Summary
 
-- **resistance-research**: ✅ READY — May 21 19:00 UTC synthesis execution (fully autonomous, pre-staging complete)
-  - May 20 ~22:00 UTC: User action needed (signal log fill)
-  - May 21 before 19:00 UTC: User action needed (check SCOTUSblog for Trump v. Barbara ruling)
-- **stockbot**: 🔴 BLOCKED — SSH auth failure, critical deadline May 22 13:30 UTC
+- **stockbot**: 🔴 **CRITICAL BLOCK** — SSH auth failure, deadline May 22 13:30 UTC
+  - ⚠️ **NEEDS YOUR INPUT TODAY**: SSH key setup OR manual config fix (~5 min)
   - Item 98 complete: Hardware roadmap ready for post-checkpoint decision
-  - Item 102 queued: Lever A vs B comparison framework (pending execution)
+  - Item 102 complete: Lever A vs B comparison framework ready for May 22 outcome
+  - Items 100-105 complete: All exploration queue items pre-staged
+  
+- **resistance-research**: ✅ READY — May 21 19:00 UTC synthesis execution (fully autonomous)
+  - May 20 ~22:00 UTC: User action needed (signal log fill, 15 min)
+  - May 21 before 19:00 UTC: User action needed (check SCOTUSblog, 5 min)
+  - May 21 19:00–20:00 UTC: Autonomous synthesis execution
+  
 - **seedwarden**: ✅ READY FOR WORK — Track B unblocked, May 30 launch target
-  - Item 100 queued: May 30 launch execution pre-staging
+  - Item 100 complete: May 30 launch execution pre-staging
+  - Items 101-105 complete: Phase 3 pre-staging and contingency playbooks ready
+  
 - **open-repo**: ✅ Phase 5.1 MVP merge conflict resolved, awaiting user merge review
   - Item 99 complete: Phase 6 architecture visioning (informs Phase 5 choices)
+  
+- **systems-resilience**: ✅ Phase 4 autonomous work ready May 22-31
+  - Item 103 complete: Phase 4 execution roadmap for May 22-31
+  - Phase 5 Wave 1 complete; Phase 5 Wave 2 awaiting user decision (June 1)
+  
 - **cybersecurity-hardening**: 🔴 BLOCKED — Phase 1 VeraCrypt restart (awaiting user action)
 - **mfg-farm**: 🔴 BLOCKED — Test print execution (awaiting user action)
-- **systems-resilience**: ✅ Phase 5 Wave 1 complete; Phase 5 Wave 2 awaiting user decision (June 1)
 - **All others**: Complete or paused
 
 ### Exploration Queue Status
