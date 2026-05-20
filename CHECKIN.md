@@ -10,6 +10,15 @@
 - ✅ Open-repo Phase 5 pre-deployment package verified (6 documents, 98.2% confidence, awaiting user approval May 25)
 - ✅ Seedwarden Phase 3 critical path verified (June 8 Goldenseal deadline, writing is binding constraint)
 
+**Phase 2 Activation Pre-Staging** — Pre-created all agent briefs for May 21 deployment:
+- ✅ `PHASE_2_ACTIVATION_AGENT_BRIEFS.md` (300+ lines, 3 agent briefs + contingency routing)
+- ✅ Domain 39 pre-distribution brief (Gist + email templates + contact verification)
+- ✅ Domains 57+59 research activation brief (6-week parallel, source verification + pre-production)
+- ✅ Tier 2 pre-contact brief (law schools, unions, immigration legal aid)
+- ✅ MODERATE branch alternative (Domains 56+38, June 10 start)
+- ✅ WEAK/TOO_EARLY contingency (defer Phase 2, Wave 1 optimization)
+- **Ready for**: Copy-paste deployment May 21 20:30 UTC if STRONG/MODERATE outcome (zero friction)
+
 **Stale Focus Cleanup** — Refreshed mfg-farm and systems-resilience project focus lines in PROJECTS.md:
 - Updated mfg-farm focus: Added "verified current May 20" note (Session 1360 work still production-ready, awaiting test print)
 - Updated systems-resilience focus: Added "verified current May 20" note (Session 1362 architecture still valid, awaiting June 1 user decision)
