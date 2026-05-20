@@ -2,6 +2,29 @@
 
 ---
 
+## May 20, 2026 — General Research Agent — Pre-Synthesis Domain Updates + Phase 2 Activation Kit
+
+**Status**: COMPLETE — Two pre-synthesis preparation deliverables produced.
+
+**Task 1: domain-updates-may18-20.md** (~1,500 words, structured briefing document)
+- Discrete findings per affected domain (37, 1, 57, 58) with integration notes and urgency flags
+- 72-hour scan window (May 18–20, 2026) covering: SAVE Act Senate failure, Nichols hearing outcome, Warner/Mullin CISA letter, 9th Circuit voter-roll Oregon+California consolidation, OBBBA enacted status (ICE funding correction required), Callais cascade 7-consequence summary, SC House Clyburn-district passage, private right of action under VRA Section 2, NATO Grynkewich multi-year withdrawal doctrine, Hungary ICC June 2 deadline, ICC Duterte fitness dispute, Turtle Mountain GVR status, 287(g) near-reservation chilling effects
+- Pre-synthesis vs. post-synthesis update triage
+- CHECKIN.md monitoring flags (6 items: Nichols, SC Senate, Hungary ICC June 2, Trump v. Barbara, ICC May 27 conference, DHS Mullin response)
+- **Deliverable**: `/projects/resistance-research/domain-updates-may18-20.md`
+
+**Task 2: Phase 2 Research Activation Kit — Verification**
+- Verified all three Phase 2 activation documents are production-ready (Session 1405, May 20):
+  - `phase-2-research-activation-checklist.md` — authoritative May 20 version, supersedes May 19 version; confirms all four domains (56, 57, 58, 59) are FULLY WRITTEN and production-complete (35,000+ words, 237+ citations total)
+  - `phase-2-research-timeline-template.md` — revised distribution-only timeline (19–30 hours remaining vs. prior 120–130 hour production estimate)
+  - `phase-2-research-kick-off-email-template.txt` — three-version email kit (peer reviewer, institutional partner, congressional staff) with send sequencing and 5 user decisions
+- Critical finding: All four Phase 2 domains are complete ahead of schedule. Domain 57 (9,201 words, 51 citations), Domain 58 (11,388 words, 90 citations), Domain 59 (8,450 words, 49 citations), Domain 56 (6,267 words, 47 citations) — total 35,306 words, 237 citations.
+- Phase 2 is a distribution-only operation from May 21 forward. No research production work remains.
+
+**Research note**: No additional May 20 late-breaking developments identified beyond those already captured in `breaking-developments-may18-20.md` third pass. Hungary ICC status, SC House passage, NATO Grynkewich statement, and 9th Circuit consolidation all confirmed via May 20 web searches.
+
+---
+
 ## May 20, 2026 — Resistance Research Agent — Phase 2 Domain 59 Research Outline
 
 **Status**: COMPLETE — `PHASE_2_DOMAIN_59_RESEARCH_OUTLINE.md` updated (1,800+ words, full Phase 2 production outline). Updated from May 15 prior outline to incorporate OBBBA Medicaid implementation confirmation, ITEP/CBPP CTC structural exclusion findings, Rastogi/Laurison 2025 widening turnout gap data, and full Phase 2 cross-domain architecture (Domains 56, 57, 37, 42, 38).
