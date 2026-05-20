@@ -621,3 +621,121 @@ class WebFingerResponse(BaseModel):
 
     subject: str
     links: List[Dict[str, str]]
+
+
+# ============================================================================
+# Phase 4 Wave 4: Federation Partner Admin Schemas
+# ============================================================================
+
+
+class FederationPartnerRegisterRequest(BaseModel):
+    """Request body for registering a new federation partner."""
+
+    name: str = Field(..., min_length=1, max_length=255, description="Human-readable partner name")
+    base_url: str = Field(..., min_length=8, max_length=512, description="Partner node base URL")
+    public_key_pem: str = Field(..., min_length=10, description="PEM-encoded RSA public key")
+    key_id: str = Field(..., min_length=8, max_length=512, description="Key identifier URI")
+
+    @field_validator("base_url")
+    @classmethod
+    def validate_base_url(cls, v: str) -> str:
+        """Validate base_url looks like an HTTP(S) URL."""
+        if not (v.startswith("http://") or v.startswith("https://")):
+            raise ValueError("base_url must start with http:// or https://")
+        return v.rstrip("/")
+
+    @field_validator("key_id")
+    @classmethod
+    def validate_key_id(cls, v: str) -> str:
+        """Validate key_id looks like a URL."""
+        if not (v.startswith("http://") or v.startswith("https://")):
+            raise ValueError("key_id must be an HTTP(S) URI")
+        return v
+
+
+class FederationPartnerResponse(BaseModel):
+    """Response for a single federation partner."""
+
+    id: int
+    name: str
+    base_url: str
+    key_id: str
+    trust_state: str
+    last_key_refresh_at: Optional[datetime] = None
+    last_activity_at: Optional[datetime] = None
+    public_key_expires_at: Optional[datetime] = None
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class FederationPartnerListResponse(BaseModel):
+    """Paginated list of federation partners."""
+
+    partners: List[FederationPartnerResponse]
+    total: int
+
+
+class FederationPartnerDetailResponse(FederationPartnerResponse):
+    """Detailed federation partner response including public key PEM."""
+
+    public_key_pem: str
+    failed_signature_count: Optional[int] = 0
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class TrustStateUpdateRequest(BaseModel):
+    """Request body for updating a partner's trust state."""
+
+    trust_state: str = Field(
+        ...,
+        description="New trust state. Must be one of: pending, trusted, untrusted, revoked",
+    )
+
+    @field_validator("trust_state")
+    @classmethod
+    def validate_trust_state(cls, v: str) -> str:
+        """Validate trust_state is a known value."""
+        allowed = {"pending", "trusted", "untrusted", "revoked"}
+        if v not in allowed:
+            raise ValueError(f"trust_state must be one of: {', '.join(sorted(allowed))}")
+        return v
+
+
+class KeyRotationRequest(BaseModel):
+    """Request body for rotating a partner's public key."""
+
+    public_key_pem: str = Field(..., min_length=10, description="New PEM-encoded RSA public key")
+    key_id: str = Field(..., min_length=8, max_length=512, description="New key identifier URI")
+
+    @field_validator("key_id")
+    @classmethod
+    def validate_key_id(cls, v: str) -> str:
+        """Validate key_id looks like a URL."""
+        if not (v.startswith("http://") or v.startswith("https://")):
+            raise ValueError("key_id must be an HTTP(S) URI")
+        return v
+
+
+class ActivityLogEntryResponse(BaseModel):
+    """Single activity log entry for the audit trail endpoint."""
+
+    id: int
+    activity_type: str
+    activity_id: str
+    actor_url: str
+    partner_id: Optional[int]
+    signature_verified: int
+    created_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class ActivityLogResponse(BaseModel):
+    """Response for the partner activity log endpoint."""
+
+    partner_id: int
+    activities: List[ActivityLogEntryResponse]
+    total: int

@@ -270,6 +270,9 @@ class FederationPartner(Base):
         index=True,
     )
 
+    # Signature failure tracking
+    failed_signature_count = Column(Integer, nullable=False, default=0)
+
     # Timestamps
     created_at = Column(DateTime, nullable=False, default=datetime.utcnow, index=True)
     updated_at = Column(DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)

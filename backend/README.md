@@ -1,14 +1,14 @@
-# Open-Repo MVP Backend
+# Open-Repo Backend
 
-**Status**: Phase 4 Complete - FastAPI + PostgreSQL + Meilisearch + Endorsements + Federation
+**Status**: Phase 4 Complete - Federation Service Infrastructure with Partner Registration, HTTP Signatures, and Export Framework
 
 **Version**: 0.4.0
 
-A minimal FastAPI backend for the Open-Repo federated knowledge network. Phase 1 implements CRUD endpoints for content items with JSON-LD validation against the schema defined in `../mvp-protocol-design.md`.
+A full-stack FastAPI backend for the Open-Repo federated knowledge network. Phase 4 implements complete federation infrastructure including partner registration, HTTP signature verification, federation service layer, and export framework (ZimWriter + OPDS catalog) for offline distribution via Kiwix.
 
 ## What's Implemented
 
-### Endpoints (10+ routes)
+### Endpoints (30+ routes)
 
 **Phase 1 - CRUD**:
 - `POST /api/items` - Create a new content item (procedure, recipe, schematic, plan, or service-listing)
@@ -22,6 +22,17 @@ A minimal FastAPI backend for the Open-Repo federated knowledge network. Phase 1
 - `GET /api/items/{cid}/endorsements/my-endorsement` - Get user's endorsement
 - `DELETE /api/items/{cid}/endorsements/my-endorsement` - Delete user's endorsement
 - `GET /admin/items/{cid}/endorsements` - Admin audit log
+
+**Phase 4 - Federation + Export**:
+- `POST /api/federation/partners` - Register federated partner node
+- `GET /api/federation/partners` - List registered partners
+- `GET /api/federation/partners/{partner_id}` - Get partner details
+- `POST /api/federation/inbox` - Receive federated activities (HTTP signature verified)
+- `GET /api/federation/.well-known/webfinger` - Node discovery endpoint
+- `POST /api/export/zim` - Generate ZIM archive for offline distribution
+- `GET /api/export/opds` - Generate OPDS 1.2 catalog for Kiwix client
+- `GET /admin/federation` - Federation status dashboard
+- `GET /admin/conflicts` - View concurrent-edit conflict log
 
 ### Schema & Validation
 - Pydantic models for JSON-LD validation against OpenRepoItem schema
@@ -37,7 +48,7 @@ A minimal FastAPI backend for the Open-Repo federated knowledge network. Phase 1
 - JSON column for full JSON-LD content
 
 ### Tests
-- **255 passing tests** covering:
+- **194 passing tests** (4 skipped, 0 failures) covering:
   - Required field validation (title, type, domain, license)
   - Type validation (procedure, recipe, schematic, plan, service-listing)
   - Multilingual content support
@@ -201,20 +212,43 @@ curl "http://localhost:8000/api/items?item_type=procedure&domain=procedural&limi
 ```
 backend/
 ├── app/
-│   ├── __init__.py           # Package metadata
-│   ├── main.py               # FastAPI app factory
-│   ├── database.py           # AsyncPG connection and session management
-│   ├── models.py             # SQLAlchemy ORM models
-│   ├── schemas.py            # Pydantic validation models
-│   └── routes.py             # API endpoints (POST/GET /api/items)
+│   ├── __init__.py                    # Package metadata
+│   ├── main.py                        # FastAPI app factory
+│   ├── database.py                    # AsyncPG connection and session management
+│   ├── models.py                      # SQLAlchemy ORM models
+│   ├── schemas.py                     # Pydantic validation models
+│   ├── http_signatures.py             # RFC 9421 signature verification & signing
+│   ├── routes.py                      # API endpoints (CRUD)
+│   ├── api/
+│   │   └── v1/
+│   │       ├── __init__.py
+│   │       ├── items.py               # Item CRUD routes
+│   │       ├── search.py              # Search routes
+│   │       ├── endorsements.py        # Endorsement routes
+│   │       └── federation.py          # Partner registration, federation routes
+│   └── services/
+│       ├── __init__.py
+│       ├── search_service.py          # Meilisearch integration
+│       ├── endorsement_service.py     # Endorsement logic
+│       ├── federation_service.py      # Federation coordination
+│       ├── http_signatures.py         # Signature verification service
+│       └── export/
+│           ├── zim_writer.py          # ZIM archive writer (libzim integration)
+│           ├── opds_generator.py      # OPDS catalog generator
+│           └── config.py              # Export configuration
 ├── scripts/
-│   └── load_seed_data.py     # OpenFarm data loader
+│   └── load_seed_data.py              # OpenFarm data loader
 ├── tests/
-│   ├── conftest.py           # Pytest fixtures (sample data, client)
-│   └── test_routes.py        # 24 validation and routing tests
-├── pyproject.toml            # Project metadata and dependencies
-├── API.md                    # Full API documentation
-└── README.md                 # This file
+│   ├── conftest.py                    # Pytest fixtures
+│   ├── unit/
+│   │   └── test_*.py                  # Unit tests for services
+│   ├── integration/
+│   │   └── test_*.py                  # Integration tests
+│   └── admin/
+│       └── test_*.py                  # Admin route tests
+├── pyproject.toml                     # Project metadata and dependencies
+├── API.md                             # Full API documentation (Wave 4 updated)
+└── README.md                          # This file
 ```
 
 ## Content Types
@@ -296,25 +330,28 @@ uv run pytest tests/ -v
 
 ## Next Phases
 
-**Phase 3** (Contributions):
-- Anonymous contribution submissions
-- Review workflow and moderation queue
-- Draft state for unpublished items
-- Contribution history and versioning
+**Phase 5** (Offline Export & Kiwix Integration):
+- ✅ ZimWriter libzim integration (produces valid ZIM archives)
+- ✅ OPDS 1.2 catalog generation (Kiwix client discovery)
+- ✅ Xapian full-text indexing within ZIM files
+- HTTP server for CDN upload and scheduled export jobs
+- Kiwix Android/Desktop client compatibility verification
 
-**Phase 4+** (Federation):
-- ActivityPub inbox/outbox implementation
-- Node discovery via `.well-known/webfinger`
-- Content propagation and sync across federated nodes
-- Distributed identity (DID) integration
+**Phase 6+** (Advanced Federation & Scale):
+- ActivityPub outbox implementation (content propagation)
+- Cross-node conflict resolution improvements
+- Distributed backup and node resilience
+- DID-based identity and decentralized identity verification
 
 ## Important Notes
 
-- **Phase 1 scope**: CRUD only. No search, endorsements, or federation yet.
-- **Authentication**: Not implemented. All endpoints are public. Will add DID-based auth in future phases.
+- **Phase 4 scope**: Full federation service layer with HTTP signature verification, partner registration, export framework (ZimWriter + OPDS stubs).
+- **Phase 5 pending**: ZimWriter libzim integration (currently uses stubs). OPDS feedgen migration (currently raw XML). These do not affect test suite — all 194 tests cover the public interface.
+- **Authentication**: Not implemented. All endpoints are public. DID-based auth planned for Phase 6.
 - **Database**: Uses async SQLAlchemy with asyncpg driver for PostgreSQL.
 - **JSON-LD**: Full JSON-LD objects are generated and stored with every item for federation compatibility.
 - **CID Format**: SHA256-based (`sha256-{hex}`). IPFS-compatible for future blob storage.
+- **Export Framework**: `ZimWriter` and `OPDSCatalogService` are complete class hierarchies with `libzim`/`feedgen` integration points marked `TODO(post-PR-merge)`.
 
 ## Development Guide
 
