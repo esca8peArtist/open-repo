@@ -6532,3 +6532,59 @@ Current session: ~200K tokens (Item 65 framework + 2 Phase 3 research docs via p
 
 ---
 
+
+---
+
+## Since Last Check-in (Session 1397 → 1398)
+
+**Date**: May 20, 2026, 06:57 UTC (Orchestrator Session 1398)
+
+### What Was Accomplished
+
+**1. Exploration Queue Execution: Phase 2 Research Activation (COMPLETE)**
+- Created `phase-2-research-activation-checklist.md`: Comprehensive pre-launch verification covering domain audits, source libraries, organizational contacts, blocking assumptions, infrastructure setup
+- Created `phase-2-research-timeline-template.md`: Week-by-week production schedule for Domain 59 (June 1–Aug 15) + Domain 57 (July 1–Sept 15) with checkpoint gates, peer review coordination, contingency timelines
+- **Impact**: May 21 synthesis can launch with zero setup friction; Phase 2 research activation ready for same-day evening execution if synthesis outcome STRONG/MODERATE
+- **Deliverables**: 1,500+ words (checklist) + 1,800+ words (timeline) = 3,300+ words total research infrastructure documentation
+- Committed to master (commit 24903f4e)
+
+### What's In Progress
+
+**Blocked Projects** (no change):
+1. **stockbot**: SSH auth failure to Jetson — critical deadline May 22 13:30 UTC. User must either (A) add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run 5-minute config fix. **Status**: Block remains active; cannot resolve autonomously.
+2. **cybersecurity-hardening**: VeraCrypt pre-boot test restart required. Phase 1 walkthrough paused pending Windows restart. **Status**: User action required.
+3. **mfg-farm**: Test print execution required. All pre-print deliverables complete. **Status**: Awaiting test print results.
+
+**Active Projects** (no change):
+- **resistance-research**: May 21 synthesis execution scheduled 19:00–20:00 UTC (fully autonomous). If outcome STRONG/MODERATE, Phase 2 research launches immediately with zero setup lag.
+- **seedwarden**: Track B June 22 launch ready; Phase 3 execution prep complete. Awaiting three user decisions by May 30.
+- **systems-resilience**: Phase 5 Wave 1 complete; Wave 2 planning ready. Awaiting user decision on sequencing + scope.
+- **open-repo**: Phase 5.1 MVP ready for merge. Awaiting user decision May 23–24 on implementation start.
+- **all others**: Complete, paused, or awaiting user execution
+
+### Items Needing Your Input
+
+**URGENT (by May 22 13:30 UTC)**:
+1. **stockbot SSH auth fix**: Add orchestrator public key to Jetson authorized_keys, OR SSH manually and run config fix. **Verify command**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+
+**Tonight (May 20, ~22:00 UTC)**:
+1. **resistance-research signal log fill**: 10–15 minutes. (Supports May 21 synthesis execution.) **Trigger**: If you're available this evening, fill the signal log (instructions in resistance-research/PROJECTS.md current focus). If not available, synthesis can still run May 21 with signal log filled during synthesis execution.
+
+**By May 23–24**:
+1. **open-repo Phase 5 direction decision**: Approve Phase 5.1 implementation start (ZimWriter libzim activation) or defer.
+2. **seedwarden Phase 3 scope decision**: Choose scope option + Goldenseal path + Canva palette by May 30.
+3. **systems-resilience Wave 2 decision**: Wave 2 sequencing (Vet-first or psychological-first?) + Tier 3 scope + parallel vs. serial execution by May 30.
+
+### Suggested Priorities for Next Session
+
+1. **Resolve stockbot SSH auth** (may be self-resolved if you added key, or will need manual fix by May 22 13:30 UTC)
+2. **May 21 synthesis execution** (19:00 UTC, fully autonomous — no action needed)
+3. **Post-synthesis Phase 2 launch** (if synthesis outcome STRONG/MODERATE, Phase 2 research kicks off immediately)
+4. **Prepare seedwarden decisions** (May 30 deadline — scope, Goldenseal path, Canva palette)
+
+### Metrics
+
+- **Usage**: 0.3% (180,998 tokens) — well within budget
+- **Blocked items**: 3 (all user-action dependent, all tracked)
+- **Exploration queue**: 1 completed this session; 2 remaining (seedwarden Phase 3 Timeline, open-repo Phase 5 Verification)
+
