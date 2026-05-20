@@ -1,3 +1,59 @@
+## Since Last Check-in (Session 1400-ORCHESTRATOR, May 20 07:37–08:05 UTC) — Orientation & Block Verification
+
+**Session Status**: ✅ **ORIENTATION COMPLETE** | 🟡 **NO AUTONOMOUS WORK AVAILABLE** (all exploration items complete, next scheduled work May 21 19:00 UTC) | 🔴 **ALL 3 BLOCKS UNRESOLVED** (stockbot SSH auth critical deadline May 22 13:30 UTC, cybersecurity-hardening VeraCrypt pending, mfg-farm test print pending) | 📊 **USAGE HEALTHY** (Sonnet 0.3%, 180,998 tokens used)
+
+### What Was Accomplished (Session 1400)
+
+**Orchestrator Orientation & Protocol Execution** ✅ COMPLETE
+- Verified ORCHESTRATOR_STATE.md: All priority order and project status current
+- Checked BLOCKED.md: Attempted verify commands per protocol on all 3 active blocks
+  - **Stockbot SSH**: FAILED ("Permission denied (publickey,password)") — orchestrator key not authorized on Jetson
+  - **Mfg-farm test print**: FAILED (results directory does not exist) — user hasn't executed test print
+  - **Cybersecurity-hardening VeraCrypt**: Cannot auto-verify (manual user restart required)
+- Checked INBOX.md: No new items to process
+- Assessed project scope: All deliverables from Session 1399 (Items 94-96) complete
+- Assessed Exploration Queue: All queued items completed or dated (Items 33-35 from May 17 pre-checkpoint)
+- **Decision**: No autonomous work available before May 21 synthesis. All projects blocked on user actions or scheduled events.
+
+### What's In Progress
+
+**Signal Log Fill — User Action Required Tonight (May 20 evening ~22:00 UTC)**
+- `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` awaits May 20 snapshot
+- Email inbox: Monitor for Batch 1 replies (5 contacts sent May 18)
+- Duration: ~10-15 minutes
+
+**May 21 Synthesis Execution — Fully Autonomous (19:00 UTC tomorrow)**
+- All infrastructure production-ready from Session 1399
+- Playbook: `projects/resistance-research/MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md`
+- Will execute automatically: read signal log → assemble data → classify outcome → post results
+
+### Needs Your Input
+
+**🔴 CRITICAL — Stockbot SSH Auth (Deadline May 22 13:30 UTC, ~30 hours remaining)**
+- Block remains unresolved since Session 1359 (May 19)
+- Orchestrator key verification failed (Permission denied on Jetson)
+- **Choose ONE option**:
+  - **Option A** (5–10 min): Add orchestrator SSH key to Jetson authorized_keys
+  - **Option B** (5 min): SSH manually and execute config fix by May 22 13:30 UTC
+- May 22 checkpoint depends on Lever B config fix. See BLOCKED.md for detailed commands.
+
+**📧 ACTION TODAY — Signal Log Fill (tonight ~22:00 UTC)**
+- Email: Check for Batch 1 replies, record scores and trends
+- File update: `wave-1-signal-log-may18-21.md` May 20 snapshot
+- Time: ~10-15 minutes — enables synthesis tomorrow with full data
+
+### Session Notes
+
+**Orchestrator Status**: Idle until May 21 synthesis. All autonomous work complete. No health checks needed (synthesis is guaranteed task within 36 hours).
+
+**Block Assessment**: Attempted 3 verify commands per protocol. All failed (all require user action). No additional attempts warranted for this session.
+
+**Exploration Queue**: Items 94-96 COMPLETE. Items 33-35 dated pre-checkpoint (May 17). No new items needed — queue is healthy for future session when projects again block on dependencies.
+
+**Next Session**: May 21 ~19:00 UTC — synthesis execution (fully autonomous, <30 min). No prep work needed beyond signal log fill tonight.
+
+---
+
 ## Since Last Check-in (Session 1399-ORCHESTRATOR, May 20 07:07–10:30 UTC) — Exploration Queue Reset + Phase 2 Research Activation Prep
 
 **Session Status**: ✅ **EXPLORATION ITEM 94 COMPLETE** (Phase 2 Domains 56-59 research activation prep, 6,294 words) | ✅ **EXPLORATION QUEUE RESET** (3 new items added: Items 94, 95, 96) | 🟡 **SIGNAL LOG FILL NEEDED TODAY** (May 20 evening ~22:00 UTC, requires email monitoring) | ✅ **SYNTHESIS EXECUTION SCHEDULED** (May 21 19:00 UTC, fully autonomous <30 min) | **Total output: ~6,500 words** | **3.75h execution time**
