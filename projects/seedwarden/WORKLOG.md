@@ -4,6 +4,52 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Herbalist Ecosystem Map — May 20, 2026
+
+**Task**: Map the herbalist practitioner ecosystem for Phase 3 launch targeting. Produce
+a complete network analysis covering professional networks, educational channels, community
+hubs, publications and media, top practitioner voices, audience segmentation, cross-selling
+opportunities, and Phase 3 targeting strategy.
+
+**Files read before writing**:
+- `herbalist-network-ecosystem-mapping.md` — existing Parts 1–6 (organization directory,
+  community hubs, social media, email communities, top voices, cross-selling, events calendar)
+- `PHASE_3_HERBALIST_NETWORK_PRESTAGING.md` — 25-contact expert network, interview templates,
+  evidence-gathering SOPs, outreach timeline
+- `PHASE_3_AUDIENCE_STRATEGY.md` — three segment LTV profiles, five channel strategies,
+  lead magnet framework, 60-post social calendar
+- `herbalist-audience-segmentation.csv` — 8-row segment table with size, messaging, channels
+
+**Research conducted**:
+- Web searches: AHG membership and symposium attendance, NAHA membership structure,
+  HerbalGram circulation, herbalism podcast audience metrics, practitioner type segmentation,
+  US herbal medicine market size 2025–2026, AHG chapter list 2025–2026
+
+**File created (1 deliverable)**:
+
+1. `phase-3-herbalist-ecosystem-map.md` — ~6,800 words. All 8 required sections:
+   (1) Professional Network Overview (AHG, NAMA, NAHA, AANP, UpS, HSA; 2 most influential
+   networks identified); (2) Educational Landscape (15 schools, graduate pipeline, curriculum
+   gap analysis); (3) Events and Community Hubs (8 events with dates, estimated attendance,
+   opportunity windows; 5 geographic hubs; 4 online communities); (4) Publications and Media
+   (HerbalGram, AHG journal, newsletters ranked by audience and fit, 7 podcasts with pitch
+   angles); (5) Top Practitioners Map (20 named voices with credential, affiliation, audience,
+   specialty, receptiveness, bundle alignment); (6) Audience Segmentation (5 practitioner
+   archetypes by practice type, credential dimension, geographic dimension, early adopter
+   profile); (7) Cross-Selling and Alliance Opportunities (practitioner spending ecosystem,
+   5 content gaps Seedwarden fills, 6 natural alliance partners, 3 co-distribution channels);
+   (8) Phase 3 Targeting Strategy (4 first-cohort sequence cohorts A–D, messaging angles by
+   segment, 8-channel distribution priority stack, events calendar timing overlay, credibility
+   threshold risk mitigation).
+
+**Cross-references used**:
+- PHASE_3_AUDIENCE_STRATEGY.md (segment LTV profiles, lead magnet specs)
+- PHASE_3_HERBALIST_NETWORK_PRESTAGING.md (expert contacts, outreach templates)
+- herbalist-audience-segmentation.csv (segment table)
+- herbalist-network-ecosystem-mapping.md (organization directory, community data)
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Deep Content and Preparation Work — May 20, 2026
 
 **Task**: Produce five Phase 3 deepening documents covering bundle content outlines, photo sourcing, Canva design system, revenue/pricing strategy, and Etsy competitive analysis. Decision-independent work that advances the June 22 sprint start and June 22 launch regardless of May 30 scope/Goldenseal/palette decisions.
