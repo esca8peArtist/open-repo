@@ -37,8 +37,9 @@ Health check endpoint. Returns API and database status.
 ```json
 {
   "status": "healthy",
-  "version": "0.1.0",
-  "database": "healthy"
+  "version": "0.4.0",
+  "database": "healthy",
+  "federation": "ready"
 }
 ```
 
@@ -56,9 +57,10 @@ Root endpoint returning API metadata.
 ```json
 {
   "name": "Open-Repo API",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "docs": "/docs",
-  "health": "/health"
+  "health": "/health",
+  "federation": "/fed"
 }
 ```
 
@@ -470,7 +472,7 @@ asyncio.run(init_db())
 
 ```bash
 # Development server with auto-reload
-uv run uvicorn app.main:create_app --reload --host 0.0.0.0 --port 8000
+uv run uvicorn app.main:create_app --reload --host 127.0.0.1 --port 8000
 
 # Or directly
 cd backend

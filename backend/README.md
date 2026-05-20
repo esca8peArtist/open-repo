@@ -103,7 +103,7 @@ export DATABASE_URL="postgresql+asyncpg://postgres:postgres@localhost:5432/open_
 # Start the server with auto-reload
 uv run uvicorn app.main:create_app --reload --host 127.0.0.1 --port 8000
 
-# Server will be available at http://localhost:8000
+# Server will be available at http://127.0.0.1:8000
 # Interactive API docs at http://localhost:8000/docs
 # ReDoc at http://localhost:8000/redoc
 ```
