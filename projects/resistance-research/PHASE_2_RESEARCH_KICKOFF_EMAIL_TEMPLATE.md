@@ -2,10 +2,13 @@
 title: "Phase 2 Research Kick-Off Email Template — Ready for User Approval"
 subtitle: "Three Versions: Peer Reviewer, Institutional Partner, Congressional Staff"
 created: 2026-05-21
-session: "General Research Agent — Phase 2 Activation Prep"
+revised: 2026-05-21
+session: "General Research Agent — Phase 2 Activation Prep (revised to add Domain G: Press Freedom)"
 status: "ready for user approval and send — fill [BRACKETED] fields before sending"
 do_not_send_until: "May 21 synthesis outcome confirmed (STRONG or MODERATE) AND user decisions confirmed (PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md Section 5)"
-domain_sequence: "D56 (May 26–June 7) → D59 (June 1) → D58 (June 15) → D57 (August 10)"
+domain_sequence: "D56 (May 26–June 7) → D59 (June 1) → D58 (June 15) → D-G (June 15 or June 22) → D57 (August 10)"
+domain_count: 5
+revision_note: "May 21 revision adds Domain G (Press Freedom, 8,695 words, 50 citations, June 15 distribution) — completing the five-domain Phase 2 kick-off email package. Prior version covered four domains only."
 companion_files:
   - PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md
   - PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md
@@ -31,10 +34,13 @@ note: |
 
 | Domain | First Distribution Date | Policy Anchor | Document Stats |
 |--------|------------------------|---------------|----------------|
-| Domain 56: Civil Service Politicization | May 26 – June 7, 2026 | H.R. 492 / Saving the Civil Service Act (June 1–30) | 6,267 words, 47 citations |
+| Domain 56: Civil Service Politicization | May 26 – June 7, 2026 | H.R. 492 / Saving the Civil Service Act (June 1–30) | 6,267 words, 45 citations |
 | Domain 59: Economic Precarity | June 1, 2026 | HHS OBBBA interim final rule; CTC/RTC Senate Finance markup | 8,450 words, 49 citations |
-| Domain 58: Tribal Sovereignty | June 15, 2026 | Pre-Trump v. Barbara ruling; Montana SB 490 injunction | 11,388 words, 90 citations |
+| Domain 58: Tribal Sovereignty | June 15, 2026 | Pre-Trump v. Barbara ruling; post-Callais voting rights | 11,388 words, 90 citations |
+| Domain G: Press Freedom | June 15, 2026 (or June 22 staggered) | PRESS Act reintroduction window; FCC license renewal cycle; UNGA 81 press freedom session | 8,695 words, 50 citations |
 | Domain 57: Multilateral Withdrawal | August 10, 2026 | UNGA 81 High-Level Week (September 22–28) | 9,201 words, 51 citations |
+
+**Domain G note**: Domains 58 and G share the June 15 target date but have entirely different contact lists (tribal sovereignty vs. press freedom). They can be sent simultaneously or staggered by one week (Domain G June 22). Both proceed regardless of synthesis outcome.
 
 ---
 
@@ -175,6 +181,14 @@ The brief argues that tribal sovereignty is democratic infrastructure — the 57
 
 ---
 
+**For Domain G — Senate Commerce Committee or House Energy and Commerce (PRESS Act window)**:
+
+The PRESS Act (S. 1090 / H.R. 4702 in the current Congress) passed the House unanimously in January 2024 before being blocked in the Senate in December 2024. I have completed an 8,695-word research brief documenting five attack vectors against the journalism infrastructure that a federal shield law would help protect: FCC license investigations of news organizations (five documented cases since January 2025), DOJ journalist subpoenas (WSJ reporter case documented by CPJ), CPB dissolution and USAGM gutting (Voice of America ordered shuttered; court-ordered reinstatement of 1,042 employees), local news collapse (a documented gap in 222 counties leaving 28 million Americans with no local news source), and media consolidation.
+
+The brief documents causal evidence from the political science literature: Snyder and Stromberg (2010) established that newspaper circulation loss reduces congressional accountability — incumbents' positions become less widely reported, voter knowledge falls, and spending efficiency declines. The US ranked 64th in RSF's 2026 World Press Freedom Index — down 7 places from 2025 and 11 from 2023. The brief frames press freedom as democratic infrastructure, not media industry protection, which may be useful for committee messaging during the PRESS Act reintroduction window.
+
+---
+
 **For Domain 57 — Senate Foreign Relations Committee**:
 
 The January 7, 2026 Presidential Memorandum withdrawing the United States from 66 international organizations raises constitutional questions your committee may wish to examine ahead of UNGA 81 High-Level Week in September.
@@ -221,6 +235,15 @@ The January 7, 2026 withdrawal from 66 international organizations is not foreig
 The 574 federally recognized tribal nations are sovereign governments, not a minority population seeking civil rights protections. The 2025–2026 assault on tribal program infrastructure — 25+ BIA office closures, 13% BIA workforce reduction, $8.05B IHS funding against a $63B documented need, Trump v. Barbara citizenship threat (argued April 1, 2026; ruling expected late June/early July), and post-Callais voting rights erosion affecting 4.7 million eligible-but-unregistered Native voters — is the dismantling of governmental capacity in 574 functioning democracies. Domain 58 documents seven causal pathways, provides a post-Callais litigation analysis, and includes a pre-built rapid-response protocol for the Trump v. Barbara ruling.
 
 **Distribution target**: June 15, 2026 (pre-ruling); updated rapid-response distribution within 24 hours of ruling.
+
+---
+
+**Domain G: Press Freedom and the Information Ecosystem as Democratic Infrastructure**
+8,695 words — 50 citations — Available June 15, 2026 (simultaneous with Domain 58, or June 22 staggered)
+
+The United States ranked 64th in RSF's 2026 World Press Freedom Index — down 7 places from 2025 — because the journalism production infrastructure has been systematically dismantled through five simultaneous attack vectors: FCC license investigations used as punitive tools against critical coverage (five documented cases since January 2025), DOJ journalist subpoenas normalizing source exposure (WSJ reporter case documented by CPJ), CPB dissolution and USAGM gutting removing public broadcasting capacity, local news collapse leaving 222 counties — 28 million Americans — with no local news source, and media consolidation concentrating 70% of broadcast television in three companies. Domain G provides the supply-side analysis that complements Domain 43's demand-side epistemic infrastructure work: together these two documents constitute the full information ecosystem argument. The Snyder-Stromberg (2010) causal evidence anchors the democratic theory: newspaper circulation loss reduces congressional accountability directly, not through diffuse mechanisms.
+
+**Distribution target**: June 15, 2026 (CPJ and RCFP as primary peer review and distribution contacts; PRESS Act reintroduction legislative window). Canonical file: `domains/domain-G-press-freedom-epistemic-infrastructure.md`.
 
 ---
 
@@ -286,6 +309,16 @@ Phase 2 Wave 1 sends, in order:
 - ACLU Voting Rights Project
 - Senate Indian Affairs Committee staff
 
+**Wave 1C-parallel (June 15 or June 22 staggered)**: Domain G press freedom contacts
+- Committee to Protect Journalists (CPJ) — lead contact; peer reviewer for FCC NRA v. Vullo analysis
+- Reporters Committee for Freedom of the Press — PRESS Act legislative history and anti-SLAPP
+- Freedom of the Press Foundation — digital security and press protection
+- Society of Professional Journalists — membership organization
+- First Amendment Coalition — litigation and legislative advocacy
+- Journalism schools: Northwestern Medill, Columbia Journalism School, Missouri School of Journalism (Wave 1 secondary)
+- Poynter Institute and Local News Initiative (Northwestern) — journalism practice community
+- Cross-reference with Domain 43 contacts: any organization that received Domain 43 (epistemic infrastructure, demand-side) should receive Domain G (press freedom, supply-side) as the structural complement
+
 **Wave 1D (August 10)**: Domain 57 international law contacts
 - Human Rights Watch
 - Amnesty International USA
@@ -297,7 +330,8 @@ Phase 2 Wave 1 sends, in order:
 **Wave 2 (July – September)**: Secondary contacts per domain
 - Domain 59: CIRCLE, Campus Vote Project, NextGen America, SEIU, Working Families Party
 - Domain 58: Native Organizers Alliance, National Indian Health Board, First Nations Development Institute
-- Domain 57: Sierra Club, 350.org (UNFCCC withdrawal angle), Congressional multilateralism caucus
+- Domain G: State AGs (NY, CA, CO, WA — FCC NRA v. Vullo retaliation hook), Press Forward funder coalition, journalism philanthropy networks, journalism school faculty Wave 2
+- Domain 57: Sierra Club, 350.org (UNFCCC withdrawal angle), Congressional multilateralism caucus; Domain G UNGA press freedom session pairing with Domain 57 for September 22–28 High-Level Week
 - Domain 56: Government Accountability Project, Federal Times
 
 Stagger sends within each wave by 30–45 minutes. Track sends in `phase-2-research/domain-XX/execution-log.md`.
@@ -316,8 +350,10 @@ Before any email sends, confirm:
 
 4. **Congressional outreach**: Confirm whether to use Version C (congressional staff) for any contacts. These require a confirmed active legislative window — only send during the June 1–30 H.R. 492 window (Domain 56), the pre-ruling window (Domain 58 Indian Affairs), or the pre-UNGA window (Domain 57 Foreign Relations).
 
-5. **Domain 60 scope (STRONG outcome only)**: If synthesis is STRONG, confirm whether to scope Domain 60 in June. Two candidates: IEEPA/Trade Policy Economic Sovereignty or consolidated disability rights domain.
+5. **Domain G peer review**: Confirm whether CPJ and/or Reporters Committee peer review for Domain G is requested before June 15 distribution (strongly recommended for the FCC NRA v. Vullo legal analysis). If yes, send peer review request June 1 with explicit June 13 deadline. If no, distribute June 15 without external review.
+
+6. **Phase 3 domain scoping (STRONG outcome only)**: If synthesis is STRONG and Phase 2 distribution produces early engagement, confirm whether to begin scoping Phase 3 Domain H (Constitutional Architecture) or Domain I (International Democratic Standards) in July 2026. Phase 3 formal launch remains January 2027 — July scoping is optional early work.
 
 ---
 
-*Document produced: May 21, 2026. For use post-synthesis (May 21 19:00–20:00 UTC). Companion files: PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md (this session), PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md (this session), phase-2-research-kick-off-email-template.txt (Session 1405, May 20 — original three-version template; this document supersedes and extends it).*
+*Document produced: May 21, 2026; revised May 21, 2026 to add Domain G (Press Freedom). For use post-synthesis (May 21 19:00–20:00 UTC). This document now covers all five Phase 2 domains (56, 57, 58, 59, G) consistent with `phase-2-research-activation-checklist.md` and `phase-2-research-timeline-template.md` (both revised May 20, Session 1419 + Domain G extension). Companion files: PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md, PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md, phase-2-research-kick-off-email-template.txt (Session 1405, May 20 — original four-domain version; this document supersedes and extends it).*
