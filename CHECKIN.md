@@ -1,3 +1,39 @@
+## Since Last Check-in (Session 1375-ORCHESTRATOR, May 20 00:07–present UTC)
+
+**Session Status**: ✅ **COMPLETE — SEEDWARDEN PHASE 3 PRODUCTION LAUNCH PREPARATION DELIVERED; CRITICAL PATH VISIBLE**
+
+### What Was Accomplished
+
+**Seedwarden**: Phase 3 Medicinal Herbs Production Launch Preparation — ✅ **100% COMPLETE** (4–6 hrs)
+- Created `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` (v2.0, 2,600+ words, production-ready):
+  - Section 1: Supplier confirmation calendar (May 20–June 22 action table), Goldenseal decision tree with 4-step process, budget summary ($320–$485 total)
+  - Section 2: Writing templates with research depth standards table, legal language checklist (CITES, drug interactions, contraindications per bundle)
+  - Section 3: Canva workflow with 6 Phase 3 hex colors assigned, per-bundle design schedule with float analysis (design lock July 3), PDF fallback trigger
+  - Section 4: Photography staging (shot-type decision table, 4-week timeline with success criteria, studio spec, file organization structure)
+  - Section 5: Gate compliance checklist (weekly monitoring, per-scenario rules, cohort identification, 9-item upload readiness per bundle)
+  - Section 6: Pre-execution audit (30-item June 21 checklist, WORKLOG.md sprint sign-off template)
+  - Three appendices: critical timeline (May 20–Aug 3 with float), scope options (A/B/C), contingency triggers with response actions
+- Created `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (v2.0, 700+ words, production-ready):
+  - Master species-to-supplier availability matrix (17 species × 5 suppliers with codes, conservation tier, order deadlines)
+  - Per-supplier pricing tables with retail/wholesale ranges (Prairie Moon, Strictly Medicinal, Mountain Rose, Southern Exposure, Fedco)
+  - [CONFIRM] markers for live supplier responses vs. research benchmarks
+  - Goldenseal decision tree (4-step: May 20 inquiry → May 22–25 evaluation → June 7 botanical garden backup → June 8 hard deadline)
+  - Ordering calendar (May 20–June 22, all supplier contacts consolidated)
+  - Budget tracking table pre-structured for Anya's responses
+- **Delivery Impact**: May 30 Phase 2 close-out → June 22 Phase 3 execution with zero setup ambiguity. Supplier confirmation window clear through June 8.
+- Committed to master (subject to subagent confirmation)
+
+### Critical Blocks — Status Update
+
+🔴 **URGENT: Stockbot SSH Auth + Lever B Config** — May 22 13:30 UTC deadline (~37 hours remaining)
+- **Status**: Unresolved since Session 1324 (May 19 19:55 UTC, re-verified failing Session 1359)
+- **Root cause**: Orchestrator ED25519 public key NOT in Jetson authorized_keys
+- **User action required** (by May 22 13:30 UTC): Either (A) add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run 5-minute Lever B config fix
+- **Escalation trigger**: If no user action by May 21 17:00 UTC, escalate to Discord per ORCHESTRATOR_STATE critical path
+- **Impact**: May 22 checkpoint cannot execute with Lever B config missing. Checkpoint will run Lever A (same as failed May 19), defeating purpose of Lever B testing.
+
+---
+
 ## Since Last Check-in (Session 1374-ORCHESTRATOR, May 20 23:55 UTC – May 21 03:30 UTC)
 
 **Session Status**: ✅ **COMPLETE — 3-AGENT PARALLEL PRE-STAGING, EXPLORATION QUEUE ITEMS 94-96 DELIVERED**
@@ -90,26 +126,35 @@
 
 ### Items Needing Your Input (Next 24–48 Hours)
 
-1. 🔴 **TODAY (May 21)**: **URGENT — Stockbot Jetson SSH auth** — Either:
+1. 🔴 **TODAY/TOMORROW (May 21)**: **URGENT — Stockbot Jetson SSH auth** — Either:
    - Add orchestrator public key to `~/.ssh/authorized_keys` on Jetson (if you have existing access), OR
    - SSH to Jetson yourself and run the 5-minute Lever B config fix (see BLOCKED.md lines 71–94)
-   - **Deadline**: May 22 13:30 UTC (10 hours from check-in time)
+   - **Deadline**: May 22 13:30 UTC (~37 hours remaining)
+   - **Escalation trigger**: If no action by May 21 17:00 UTC, Discord notification will be sent
 
-2. **May 21 evening**: Fill `wave-1-signal-log-may18-21.md` with snapshots for May 21 synthesis
+2. **May 20 evening (TONIGHT)**: Fill `wave-1-signal-log-may18-21.md` with snapshots for May 21 synthesis
+   - Read instructions in `post-wave-1-monitoring/may21-synthesis-execution-checklist.md`
+   - Pre-built synthesis infrastructure is 100% ready; zero setup needed
 
 3. **May 25–26**: Approve Phase 5 Candidate 1 ZimWriter merge (go/no-go decision for deployment)
+   - `phase-5-candidate-1-implementation-verification.md` and `candidate-1-implementation-checklist.md` complete and verified
 
 4. **May 30**: Decide Phase 3 execution scope (5-bundle full, 3-bundle priority, or parallel options) before Phase 2 launch
+   - `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` and `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` now complete (Session 1375)
 
 ### Exploration Queue Status
 
-✅ **Items 85–96 all complete or staged**
-- ✅ Item 93 (Phase 2 Research Activation): Complete
-- ✅ Item 95 (Phase 3 Critical Path): Complete
-- ✅ Item 96 (Phase 5 Verification): Complete
-- 🔄 Items 94+ (post-May-22-checkpoint): Staged for May 22–23 execution
+✅ **Items 94–97 all complete or staged**
+- ✅ Item 94 (Phase 2 Research Activation): Complete (Session 1374)
+- ✅ Item 95 (Phase 3 Critical Path): Complete (Session 1374)
+- ✅ Item 96 (Phase 5 Verification): Complete (Session 1374)
+- ✅ Item 97 (Phase 3 Production Launch Prep): Complete (Session 1375, THIS SESSION)
+- 🔄 Items 98+ (post-May-22-checkpoint): Staged for May 22–23 execution
 
-**Zero active queue items** — all executable pre-May-22 work has been staged. Remaining items depend on May 21/22 outcomes.
+**Current status**: All executable pre-May-22 work is complete or staged. Remaining queue items depend on:
+- May 21 synthesis outcome (triggers Phase 2 research production + Phase 2 Domain 56 research)
+- May 22 checkpoint outcome (triggers post-checkpoint readiness assessment or recovery roadmap)
+- User decisions on Phase 5, Phase 3 scope, systems-resilience Phase 5 path
 
 ### Token Usage
 
