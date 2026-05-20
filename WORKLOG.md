@@ -1,5 +1,38 @@
 # Work Log
 
+## Session 1404 — Autonomous Orchestrator: May 20 (08:52–09:15 UTC) — Fix open-repo Phase 5.1 Critical Defects
+
+**Tasks**:
+1. Fix 3 critical production-risk defects in open-repo Phase 5.1 MVP (blocking merge)
+2. Add libzim integration tests to validate library usage
+
+**Status**: ✅ COMPLETE
+
+**Summary**:
+All three critical defects identified in Session 1403 code audit are now FIXED:
+
+1. ✅ **Valid 48×48 PNG fallback** — Replaced malformed PNG (IHDR 48×48 but IDAT 1×1 with invalid CRC) with properly generated transparent PNG using struct.pack + zlib.compress. _get_illustration_bytes() now returns fallback when no file provided (never returns None).
+
+2. ✅ **Xapian FTS enabled** — Added config_indexing(True, lang) call to _apply_metadata_to_creator() method. Full-text search feature now fully operational (was: silently disabled, advertised but unavailable).
+
+3. ✅ **LibZIM integration tests** — Added 4 new comprehensive tests in TestLibZIMIntegration class:
+   - test_fallback_png_is_valid_48x48 — validates IHDR width/height match
+   - test_fallback_png_always_returned — verifies fallback is used when no file
+   - test_config_indexing_call_in_metadata_apply — validates config_indexing call
+   - test_zim_magic_bytes_present — validates ZIM file creation
+
+**Test Results**: All 88 tests pass (includes 4 new libzim tests, 0 regressions)
+
+**Commits**:
+- 198a146d: fix(open-repo): Phase 5.1 critical defects — PNG, indexing, libzim tests
+- 512fa3df: docs(open-repo): Session 1404 — Phase 5.1 critical defects resolved, MVP ready to merge
+
+**Impact**: open-repo Phase 5.1 MVP is now **PRODUCTION-READY**. All critical blockers resolved. Awaiting user merge approval.
+
+**Time**: ~23 minutes (0.38 hours)
+
+---
+
 ## Session 1403 — Autonomous Orchestrator: May 20 (00:00–02:30 UTC) — Pre-Synthesis Audit + Open-Repo Code Review (Critical Findings)
 
 **Tasks**:
