@@ -1,3 +1,50 @@
+## Since Last Check-in (Session 1384-ORCHESTRATOR, May 20 ~18:00+ UTC) — Phase 2 Research Activation Pre-Synthesis Prep
+
+**Session Status**: ✅ **COMPLETE — PHASE 2 RESEARCH INFRASTRUCTURE STAGED FOR MAY 21 SYNTHESIS**
+
+### What Was Accomplished
+
+**Phase 2 Research Activation Checklist Created** ✅
+- **Deliverable**: `projects/resistance-research/phase-2-research-activation-checklist.md` (2,500+ words, production-ready)
+- **Purpose**: Remove post-synthesis setup friction. Once May 21 synthesis returns STRONG/MODERATE, Phase 2 research can launch same-evening with zero delays.
+- **Scope**:
+  1. **Domain readiness audit** — Verification for all 5 Phase 2 domains (56-60), with checklist for May 20-21 source currency and breaking developments
+  2. **Research infrastructure pre-staging** — Source libraries, expert contacts, Obsidian vault verification
+  3. **Per-domain production estimates** — 170-210 total hours, May-July 2026 timeline
+  4. **Wave 1 sequencing** (June 1-15): Domains 56/59/58 (critical deadlines: H.R. 492 June 1, HHS guidance June 1, Turtle Mountain May 28)
+  5. **Wave 2 sequencing** (June 15-July 15): Domains 57/60 (lower urgency, election protection pre-November)
+  6. **Blocking assumptions** — 5 assumptions to verify before synthesis (H.R. 4827 status, Turtle Mountain decision date, Congressional recess, source accessibility, user bandwidth)
+  7. **Kick-off email template** — Pre-drafted for May 21 post-synthesis with 3 user options (A: immediate launch, B: defer to June 1, C: conditional)
+  8. **Success checkpoints** — May 21, May 28, June 10, July 15 milestones
+
+- **Impact**: Removes ambiguity post-synthesis. User can decide Phase 2 scope within 30 minutes of synthesis outcome (instead of 2-3 hours setup).
+
+### Blocks Status
+
+**Unchanged active blocks** (unchanged from Session 1383):
+- 🔴 **Stockbot SSH auth + Lever B config** (May 22 13:30 UTC deadline) — 13.5 hours remaining; user action required
+- 🟡 **Seedwarden test print, VeraCrypt restart, Etsy corrections** — All awaiting user action
+
+**No new blockers discovered.**
+
+### Needs Your Input
+
+**TONIGHT (May 20 evening) — CRITICAL**:
+1. **Resistance-Research Signal Log** — Fill signal log through May 21 10:30 UTC to trigger May 21 19:00 UTC synthesis
+2. **Phase 2 decision prep** — Review 3 options in phase-2-research-activation-checklist.md (Option A recommended: immediate Wave 1 launch)
+
+**May 22 13:30 UTC — HARD DEADLINE**:
+3. **Stockbot Lever B config** — Either add orchestrator key to Jetson authorized_keys, OR SSH and run 5-min config fix
+
+### Recommended Priorities for Next Session
+
+1. **May 21 19:00–20:00 UTC**: Execute synthesis (autonomous)
+2. **May 21 evening**: User decision (Phase 2 Option A/B/C) + kickoff if STRONG/MODERATE outcome
+3. **May 22 morning**: Stockbot Lever B escalation check (13.5 hours to deadline)
+4. **May 22–30**: Seedwarden May 30 launch execution (all documentation ready, 6 user gates documented)
+
+---
+
 ## Since Last Check-in (Session 1383-ORCHESTRATOR, May 20 05:00–07:00 UTC) — Phase 3 Distribution + Readiness Assessments
 
 **Session Status**: ✅ **COMPLETE — PHASE 3 CANDIDATE 4 DISTRIBUTION INFRASTRUCTURE READY FOR IMMEDIATE DEPLOYMENT**
