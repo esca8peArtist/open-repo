@@ -1,3 +1,41 @@
+## Since Last Check-in (Session 1420-ORCHESTRATOR, May 20 15:40–16:00 UTC) — Block Verification: SSH Timeout (New Finding), Synthesis Ready May 21, Awaiting User Action on Stockbot
+
+**Session Status**: ✅ **ORIENTATION COMPLETE** | 🔴 **SSH AUTH BLOCK ESCALATED** (NEW FINDING: connection timeout, not auth denial) | 🟢 **MAY 21 19:00 UTC SYNTHESIS SCHEDULED (AUTONOMOUS)** | ⚠️ **CRITICAL: JETSON UNRESPONSIVE — SSH TIMING OUT** | ⚠️ **DEADLINE: MAY 22 13:30 UTC (45 HOURS REMAINING)**
+
+### What Was Done (Session 1420 — Orchestrator Block Verification)
+
+**Orientation** ✅
+- Read: ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md (no new items), PROJECTS.md, EXPLORATION_QUEUE.md
+- Assessment: All top-priority projects blocked on user actions (stockbot SSH, cybersecurity VeraCrypt, mfg-farm test print) OR scheduled autonomous events (resistance-research May 21 19:00 UTC synthesis)
+- Status: Correct — all orchestration files current and consistent
+
+**Block Verification Execution**:
+1. **mfg-farm test print**: `ls -la projects/mfg-farm/test-print-results/` → NOT FOUND (block confirmed active)
+2. **stockbot SSH auth**:
+   - Attempted: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl ...'`
+   - **NEW FINDING**: Connection **timing out** (not "Permission denied")
+   - Ping succeeds: `ping 100.120.18.84` → 0% packet loss, 10.952ms RTT (network OK)
+   - SSH port 22 unresponsive: `ssh ... ubuntu@100.120.18.84` → 255 error, "Connection timed out"
+   - **Diagnosis**: Jetson is reachable at network layer but SSH daemon not responding. Possible: (a) hung SSH daemon, (b) SSH port blocked at Jetson firewall, (c) SSH service not running. This is DIFFERENT from "orchestrator key not authorized" — suggests daemon issue, not key issue.
+3. **cybersecurity-hardening VeraCrypt**: Cannot auto-verify (requires Windows user action)
+
+### Impact & Recommendations
+
+**CRITICAL**: SSH timeout may indicate Jetson connectivity/daemon crisis in addition to auth key gap. Two failure modes now in play:
+1. If SSH never recovers (daemon hung), manual SSH via user's key also fails → **Lever B config remains unfixed → May 22 checkpoint repeats May 19 outcome (STILL_MISS_B2)**
+2. If SSH daemon recovers but key still not authorized, config fix still requires either: (A) Add orchestrator key, or (B) User SSH manually
+
+**User Action by May 22 13:30 UTC** (45 hours):
+- **Priority 1**: Verify Jetson SSH daemon is running: `systemctl status ssh` or `sudo systemctl restart ssh`
+- **Priority 2**: If daemon OK, add orchestrator's ED25519 public key to `~/.ssh/authorized_keys` on Jetson: `cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 "cat >> ~/.ssh/authorized_keys"`
+- **Priority 3**: If neither option, SSH manually with your credentials and run the 5-min config fix documented in BLOCKED.md (Lever B HMM regime masking flag)
+
+**Next Autonomous Event**:
+- **May 21 19:00 UTC**: resistance-research synthesis execution (autonomous, fully staged)
+- **May 22 20:00 UTC**: stockbot checkpoint execution (waits on Lever B config, but will execute regardless with Lever A if config unresolved)
+
+---
+
 ## Since Last Check-in (Session 1419-ORCHESTRATOR, May 20 15:15–18:30 UTC) — Critical Path Complete, May 21 Synthesis Ready, Phase 3/5 Infrastructure Ready
 
 **Session Status**: ✅ **CRITICAL PATH ITEM COMPLETE (Phase 2 Research Activation Checklist)** | ✅ **3 EXPLORATION QUEUE ITEMS COMPLETE IN PARALLEL** | 🟢 **MAY 21 SYNTHESIS INFRASTRUCTURE PRE-STAGED (READY)** | 🟢 **PHASE 3 & 5 DECISION INFRASTRUCTURE COMPLETE** | ⚠️ **CRITICAL DEADLINE: MAY 22 13:30 UTC**
