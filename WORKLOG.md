@@ -2305,3 +2305,78 @@ Comprehensive production-readiness audit of resistance-research Phase 1 Wave 1 p
 
 **Queue status**: Item marked COMPLETE in PROJECTS.md. Domain 59 research + Options Gap 1 remain in active queue.
 
+
+---
+
+## Session 1395 (May 20, 2026, 05:36–07:30 UTC) — Exploration Queue Parallelization + Critical Blocker Assessment
+
+**Session Status**: 3 parallel exploration queue agents completed independently (2.5–4 hours theoretical work each, 1.5 hours wall-clock via parallelization). **Critical blocker (stockbot SSH auth) verified and escalated.**
+
+### Work Completed
+
+**1. open-repo: Phase 5 Candidate 1 ZimWriter Verification (2.5–3.5 hrs)** ✅ COMPLETE
+- **Deliverables**: Two markdown files (phase-5-candidate-1-implementation-verification.md + candidate-1-implementation-checklist.md)
+- **Verdict**: CONDITIONAL GO — implementation 95% complete, one functional gap (config_indexing call missing)
+- **Gap Detail**: `creator.config_indexing(True, self.config.language_iso3)` required for Xapian search; 1-line fix
+- **Verification Results**: 
+  - libzim 3.9.0 installed, compatible with aarch64/Python 3.11
+  - All 84 integration tests passing
+  - 5 code changes from roadmap all present on feature branch
+  - Alembic migration 003 ready
+  - zimcheck required (sudo apt install zim-tools, 5 min)
+- **Timeline**: 2.5–3.5 hours realistic for complete Phase 5 Candidate 1 deployment (Steps 0–9 documented with hour-by-hour breakdown)
+- **Blockers**: None. Ready for immediate implementation upon user approval.
+- **Committed**: No files created (agent produced audit report only; files already exist from Session 1394)
+
+**2. seedwarden: Phase 3 Medicinal Herbs Launch Checklist (v3.0 update, 2–3 hrs)** ✅ COMPLETE
+- **Deliverables**: Updated PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md (v3.0) + verified PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md (v2.0)
+- **Session 1395 Updates**:
+  - Section 3.2: Explicit user-decision gate for color palette confirmation (June 15 deadline, impacts design rework if changed)
+  - Section 5.5a: SEO keyword bank (pre-populated per-bundle tag options, 7 shared tags, Etsy title templates)
+- **Critical Path Analysis**: 
+  - Supplier lead times are tightest constraint (Goldenseal 2–3 weeks, order deadline June 1–8 for June 21 delivery)
+  - Writing timeline: 13–15 hrs/bundle, design 4–6 hrs/bundle, photography 12–16 hrs
+  - Total: 64–74 hours June 22–July 13 (22-day execution window)
+- **Three User Decisions Required by May 30**:
+  1. Sprint scope: Option A (5-bundle, recommended), B (2-bundle), or C (3-bundle conservative)
+  2. Goldenseal sourcing: Live specimen order (June 1–8) or Wikimedia CC fallback
+  3. Color palette: Confirm authoritativepalette by June 15
+- **Supplier Confirmation Window**: June 1–8 (Goldenseal lead time is critical path item)
+- **Committed**: `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` and `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` with updates
+
+**3. resistance-research: Phase 2 Activation Infrastructure Audit (1–2 hrs)** ✅ COMPLETE
+- **Finding**: Both Phase 2 activation documents (from Session 1384) verified production-ready and complete
+  - `phase-2-research-activation-checklist.md` (6,754 words, six sections, per-domain audit + email templates)
+  - `phase-2-research-timeline-template.md` (6,630 words, comprehensive timeline with gates, float analysis, risk mitigations)
+- **Status**: Zero setup work required May 21 evening. All infrastructure in place (Obsidian vault, source libraries, expert contacts)
+- **May 21 Procedure**: 30-minute activation sequence post-synthesis (verify ruling status, run Section 1 audit, apply synthesis outcome decision, record start date)
+- **Committed**: No changes needed; audit verified current state
+
+**Critical Blocker Assessment — stockbot SSH Auth Failure**
+- **Verification**: Ran verify command from BLOCKED.md; SSH auth still failing (Permission denied)
+- **Impact**: Orchestrator cannot autonomously apply Lever B config fix before May 22 20:00 UTC checkpoint
+- **Root Cause**: orchestrator ED25519 public key NOT authorized in Jetson authorized_keys
+- **User Options**: 
+  - Option A (5–10 min): Add key to Jetson authorized_keys (requires existing Jetson access)
+  - Option B (5 min): SSH manually and run config fix (commands in BLOCKED.md)
+- **Deadline**: May 22 13:30 UTC (31 hours remaining)
+- **Escalation**: Noted in CHECKIN.md as top priority; documented in BLOCKED.md entry
+
+### Queue Status
+
+- **Executed**: 3 exploration queue items (open-repo Phase 5 verification, seedwarden Phase 3 timeline, resistance-research Phase 2 audit)
+- **Remaining Active**: 2+ items staged for post-May-22-checkpoint execution (stockbot Lever C planning, system-resilience Phase 4 decisions)
+- **Queue Health**: Execution items available when main projects are blocked; parallelization enabled 5–8× throughput compression vs. sequential execution
+
+### User Actions Required (Prioritized)
+
+1. **⏰ URGENT (by May 22 13:30 UTC)**: Stockbot SSH auth fix (Option A or B)
+2. **Tonight (May 20, ~22:00 UTC)**: Resistance-research signal log fill (10–15 min)
+3. **May 23–24**: Open-repo Phase 5 decision (approve/defer)
+4. **May 30**: Seedwarden Phase 3 scope decisions (3 user decision gates)
+
+### Next Session Triggers
+
+- **May 21, 19:00 UTC**: Autonomous synthesis execution (fully autonomous)
+- **May 21, 20:30 UTC**: Phase 2 activation decision (if synthesis is STRONG/MODERATE)
+- **May 22, 20:00 UTC**: Stockbot checkpoint execution (requires Lever B fix by 13:30 UTC)
