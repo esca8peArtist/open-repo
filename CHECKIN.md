@@ -1,25 +1,32 @@
-## Since Last Check-in (Session 1427-ORCHESTRATOR, May 20 17:13 UTC) — No Autonomous Work Available; All Pre-Staging Complete; Next Event May 21 19:00 UTC Synthesis
+## Since Last Check-in (Session 1428-ORCHESTRATOR, May 20 17:19–17:40 UTC) — Orientation Complete; Exploration Queue Verification; Ready for May 21 Synthesis
 
-**Session Status**: ✅ **ORIENTATION COMPLETE** | 🟢 **ALL PRE-STAGING COMPREHENSIVE** | 🔴 **CRITICAL DEADLINE: MAY 22 13:30 UTC (STOCKBOT LEVER B CONFIG)** | ⏰ **NEXT AUTONOMOUS EVENT: MAY 21 19:00 UTC SYNTHESIS (24h from now)**
+**Session Status**: ✅ **ORIENTATION COMPLETE** | ✅ **EXPLORATION QUEUE VERIFIED** | 🟢 **ALL PRE-STAGING COMPREHENSIVE** | 🔴 **CRITICAL DEADLINE: MAY 22 13:30 UTC (STOCKBOT LEVER B CONFIG)** | ⏰ **NEXT AUTONOMOUS EVENT: MAY 21 19:00 UTC SYNTHESIS (24h remaining)**
 
-**Session Approach**: Following Session 1426 comprehensive Phase 3 deepening, oriented to assess if additional autonomous work was available. Assessment: No autonomous work available. All projects blocked on user actions or scheduled autonomous events. Previous decision (Session 1426) to hold Exploration Queue execution pending May 22 checkpoint result remains optimal — Phase 2 activation and queue work will be triggered simultaneously on May 21 19:00 UTC synthesis completion.
+**Session Approach**: Oriented to current state following Sessions 1426-1427 comprehensive staging. Verified all active blocks (3 confirmed), confirmed no autonomous work available across all projects, validated Exploration Queue Trump v. Barbara research (already complete in prior sessions with rapid-response infrastructure in place). Assessment: All systems ready for May 21 19:00 UTC autonomous synthesis execution.
 
 **Status Summary**:
-- ✅ **All pre-staging complete**: Sessions 1423-1426 completed comprehensive preparation work (Phase 3 deepening, resistance-research synthesis staging, seedwarden supplier prep, systems-resilience Wave 2 drafts, open-repo Phase 6 visioning)
-- ✅ **Orchestration files in sync**: ORCHESTRATOR_STATE, BLOCKED.md, PROJECTS.md, INBOX.md, WORKLOG.md all current
+- ✅ **All pre-staging complete**: Sessions 1423-1427 completed comprehensive preparation work (Phase 3 deepening, resistance-research synthesis staging, seedwarden supplier prep, systems-resilience Wave 2 drafts, Exploration Queue item verification)
+- ✅ **Orchestration files in sync**: ORCHESTRATOR_STATE, BLOCKED.md, PROJECTS.md, INBOX.md, WORKLOG.md all current through May 20 17:19 UTC
+- ✅ **Exploration Queue verified**: Trump v. Barbara case research item (Exploration Queue top item) confirmed complete with 6-section research document + 3 rapid-response protocol documents + coalition landscape mapping. Ruling expected June 19-30, 2026. Rapid-response infrastructure ready for all scenarios (A/B/C).
 - 🔴 **Three active blocks confirmed**: 
-  1. **stockbot** — SSH auth to Jetson failed; config flag `"hmm_regime_masking": true` not activated (DEADLINE: May 22 13:30 UTC)
-  2. **cybersecurity-hardening** — VeraCrypt pre-boot restart pending
-  3. **mfg-farm** — Test print execution pending
-- 🟢 **May 21 19:00 UTC synthesis**: Fully autonomous, zero setup lag. Phase 2 research will launch same-day if synthesis is STRONG/MODERATE
-- 🟢 **Exploration Queue**: 31+ pending items held per prior decision (Session 1426 rationale: May 22 checkpoint triggers Phase 4 + Batch 2 work, making queue execution more targeted). All prep items (97-105) completed.
+  1. **stockbot** — SSH auth to Jetson failed; config flag `"hmm_regime_masking": true` not activated (DEADLINE: May 22 13:30 UTC — 19h remaining)
+  2. **cybersecurity-hardening** — VeraCrypt pre-boot restart pending (manual block, cannot auto-verify)
+  3. **mfg-farm** — Test print execution pending (manual block, cannot auto-verify)
+- 🟢 **May 21 19:00 UTC synthesis**: Fully autonomous, zero setup lag. Phase 2 research will launch same-day if synthesis is STRONG/MODERATE outcome.
+- 🟢 **Exploration Queue**: 31+ pending items held per prior decision. Queue execution deferred pending May 22 checkpoint outcome (Phase 4 + Batch 2 work will be triggered simultaneously).
+
+**Critical Items Requiring User Action**:
+1. **May 20 ~22:00 UTC (6h remaining)**: Signal log fill (for May 21 synthesis pre-processing)
+2. **May 21 before 19:00 UTC**: Check SCOTUSblog for Trump v. Barbara ruling (or any breaking judicial developments)
+3. **May 22 13:30 UTC (19h remaining)**: **CRITICAL** — Lever B HMM config fix (SSH auth OR manual config edit required to enable `"hmm_regime_masking": true`)
+4. **May 22 by deadline**: Supplier inquiry emails to Strictly Medicinal Seeds + Prairie Moon Nursery (2-day float remaining from May 20)
 
 **Next Scheduled Events**:
-- **May 21 19:00 UTC** — resistance-research synthesis (autonomous, no user action)
-- **May 22 13:30 UTC** — CRITICAL DEADLINE: Lever B config fix (user action: SSH daemon restart + key auth, OR manual config edit)
-- **May 22 20:00 UTC** — stockbot checkpoint execution (tests Lever B if config fixed, falls back to Lever A if not)
+- **May 21 19:00 UTC** — resistance-research May 21 synthesis execution (fully autonomous, user monitoring only)
+- **May 22 13:30 UTC** — **CRITICAL DEADLINE**: Lever B config fix (user action required; affects May 22 20:00 UTC checkpoint outcome)
+- **May 22 20:00 UTC** — stockbot checkpoint execution (tests Lever B if config fixed; falls back to Lever A if not)
 
-**Elapsed Time**: 5 minutes (orientation + verification only; no autonomous work available to execute)
+**Elapsed Time**: 21 minutes (orientation 10 min, Exploration Queue verification 11 min)
 
 ---
 
