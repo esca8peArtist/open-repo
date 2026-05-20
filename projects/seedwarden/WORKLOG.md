@@ -4,6 +4,22 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — Phase 3 Medicinal Herbs Critical Path Analysis + Gantt Timeline (v6.0) — May 20, 2026
+
+**Task**: Phase 3 Medicinal Herbs critical path analysis and Gantt timeline production. Execution window June 22 – July 13, 2026 (22 calendar days). Five bundles: Women's Health, Respiratory, Sleep, Immunity, Digestive.
+
+**Supplier research conducted (May 20, 2026)**:
+- Mountain Rose Herbs: Standard transit 1–10 business days; East Coast 7–10 days; FedEx 2Day/3Day expedited available for orders under 100 lbs placed before 3 PM PST; no retail minimum; $200 wholesale minimum. Recommendation: order dried herbs by June 13 (not June 15) for East Coast delivery guarantee.
+- Prairie Moon Nursery: Potted 3-packs ship within 1 week of order; select species available through mid-July 2026. East Coast transit 3–7 days. Expedited by request. June 8 orders for Goldenseal and Black Cohosh are viable for late-June/early-July arrival.
+- Strictly Medicinal Seeds: USPS shipping; 2–3 week lead time typical for spring/summer plant orders; free shipping on seed-only orders over $20.
+- Frontier Co-op: Free shipping over $39; 3–5 business day estimated transit; emergency backup for all dried herbs at $16–79/lb; broad medicinal herb catalog confirmed.
+
+**Files created**:
+- `phase-3-medicinal-herbs-critical-path-analysis.md` — v6.0, 2,900+ words, 7 sections: herb selection + sourcing timeline (5 bundles, 3 supplier tiers, per-herb complexity notes, current lead times), writing schedule + bottleneck analysis (sequential vs. parallel dependencies, content depth breakdown, research phase hours), Canva design + photography timeline (12.5 design hours, 2-track photo plan, fresh/dried/CC decision matrix), production workflow + parallel execution (22-day day-by-day sprint with hours/float/critical path), risk analysis (4 risks scored P×I with mitigations and contingency triggers), supplier contact table (Mountain Rose/Prairie Moon/Strictly Medicinal/Frontier Co-op with current May 2026 data), implementation roadmap (6 user decisions, pre-sprint action checklist).
+- `phase-3-medicinal-herbs-gantt-timeline.csv` — 67 rows. Schema: Task ID / Task Name / Start / End / Duration (days) / Precedent / Resource / Status / Float / Critical Path. Covers: 4 pre-decision gates, 7 pre-sprint supplier/photo/setup tasks, 22-day sprint with per-day writing tasks (WH D1–D3, Resp D1–D4, Immunity D1–D4, Sleep D1–D3, Digestive D1–D3), 9 design tasks, 4 studio photography sessions, 5 Etsy upload milestones, 3 checkpoints, 5 contingency triggers. Critical path marked YES on all zero-float tasks. Both launch gates cleared in header.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path Analysis & Production Timeline (Exploration Queue Item, May 30 Phase 2 launch briefing) — May 20, 2026
 
 **Task**: Phase 3 Medicinal Herbs Critical Path Analysis and Production Timeline. Deadline May 20 17:00 UTC. Scope: 5-bundle medicinal herbs selection finalization, writing production schedule, Canva design critical path, photography staging timeline, upload sequence and launch gates, risk mitigation. Deliverables: `phase-3-medicinal-herbs-critical-path.md` (2,500+ words) and `PHASE_3_GANTT_TIMELINE.csv` (week-by-week schedule with resource allocation).
