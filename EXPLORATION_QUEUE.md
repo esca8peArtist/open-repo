@@ -23,8 +23,8 @@
 
 ---
 
-### 🔄 Item 98: Stockbot Post-May-22-Checkpoint Thermal & Disk Scaling Roadmap
-**Status**: PENDING (Session 1400)
+### ✅ Item 98: Stockbot Post-May-22-Checkpoint Thermal & Disk Scaling Roadmap
+**Status**: COMPLETE (Session 1414, May 20 12:30–12:50 UTC)
 **Priority**: HIGH — May 22 checkpoint outcome will trigger May 22-31 architecture decisions. Jetson thermal limit (81-87°C idle) is hard gate for extended compute. Disk and memory limits constrain multi-ticker scaling.
 **Impact**: HIGH — Removes hardware-constraint uncertainty from May 22-31 decisions. Clear thermal remediation roadmap (fan install?, compute reduction?, throttling strategy?) and scaling timeline (how many additional tickers can Jetson support before hardware upgrade?).
 **Goal**: Pre-stage comprehensive hardware upgrade planning for Jetson covering: (1) Thermal management options (active cooling, compute reduction, throttling thresholds), (2) Disk/memory constraints vs trading session count, (3) Multi-ticker expansion capacity analysis (how many AMZN/JPM/etc sessions fit within current hardware?), (4) 3-month hardware upgrade roadmap if live trading needs more capacity.
@@ -39,8 +39,8 @@
 
 ---
 
-### 🔄 Item 99: Open-Repo Phase 6 Architecture Visioning (Post-Phase-5 Expansion)
-**Status**: PENDING (Session 1400)
+### ✅ Item 99: Open-Repo Phase 6 Architecture Visioning (Post-Phase-5 Expansion)
+**Status**: COMPLETE (Session 1414, May 20 12:50–13:10 UTC)
 **Priority**: MEDIUM — Phase 5 decisions expected May 25-26. Phase 5.1 MVP ready (98.2% confidence, Candidate 1 verified). Phase 6 visioning now enables post-Phase-5 planning.
 **Impact**: MEDIUM — Clarifies long-term project trajectory beyond Phase 5. Phase 6 options (internationalization, advanced search, third-party API ecosystem, commercial deployment platform) inform Phase 5 architecture decisions (which designs support Phase 6 scaling).
 **Goal**: Pre-stage comprehensive Phase 6 architecture options covering: (1) Use-case expansion beyond offline archive (API-first federated search across partner libraries, commercial deployment model), (2) Technical architecture evolution (from single-library offline to multi-library federation to SaaS platform), (3) Sustainability model (volunteer/nonprofit vs commercial licensing), (4) Timeline to Phase 6 (6-month post-Phase-5? 1-year?).
@@ -51,6 +51,54 @@
 **Deliverable**: `projects/open-repo/PHASE_6_ARCHITECTURE_OPTIONS.md` (2,500+ words, three option scenarios with detail, sustainability model analysis, library partnership landscape, 1-year roadmap)
 **Why now**: Phase 5 architecture decisions should anticipate Phase 6 feasibility. If Phase 5 selects offline-first (Candidate 1), does that preclude later cloud deployment (Phase 6B)? Pre-staging Phase 6 thinking enables Phase 5 decisions to be forward-compatible.
 **Success criteria**: By June 1, Phase 5 execution proceeds with clarity on Phase 6 trajectory. Phase 6 begins planning for potential July-August user decision.
+
+---
+
+### 🔄 Item 100: Seedwarden Track B May 30 Launch Execution Pre-Staging
+**Status**: PENDING (Session 1414)
+**Priority**: MEDIUM — May 30 launch target is 10 days away; Track B execution is fully unblocked (no user-action gates). Asset verification, risk register, and execution gap analysis can proceed autonomously.
+**Impact**: MEDIUM — Identifies any last-minute missing assets, asset currency verification, risk mitigation for May 30-June 22 launch window. Removes execution friction on May 30 decision day.
+**Goal**: Complete full execution pre-staging for Seedwarden Track B May 30-June 22 launch sequence covering: (1) Asset inventory validation (all 63 mockups, 10 stock images, email copy, calendar confirmed present and current), (2) Execution gap analysis (what's still pending from user?), (3) Risk register for May 30-June 22 (weather delays, supplier delays, photo shoot overrun, email automation failures), (4) May 30-June 22 execution timeline with checkpoints.
+**Scope** (2-3 hrs):
+  1. **Asset inventory audit** (1 hr): Verify all 63 mockup files exist, stock images confirmed, email copy final, calendar confirmed. Check file dates to ensure current (May 20 or earlier). Document any missing/stale assets.
+  2. **Execution gap analysis** (45 min): What user actions remain before May 30? (Social account creation, Canva Brand Kit setup, Kit account setup). What orchestrator actions are pre-scheduled? Timeline of who-does-what May 30-June 22.
+  3. **Risk register** (45 min): 5-8 risks with likelihood/impact/mitigation. High-risk: weather delays on May 17-18 photo shoot (slide 5-7 days?), email automation failures (test protocol, fallback manual send), supplier overrun (contingency supplier list).
+  4. **Execution checkpoint calendar** (30 min): May 30 decision day, June 1-3 setup window, June 5-7 asset upload window, June 8 launch day, June 8-22 optimization period. Decision gates and approval checkpoints.
+**Deliverable**: `projects/seedwarden/TRACK_B_EXECUTION_STAGING_MAY_30.md` (2,500+ words, asset inventory checklist, execution gap map, risk register, checkpoint calendar)
+**Why now**: May 30 is 10 days away. Having execution staging complete means May 30 user decision is mechanical (execute plan), not planning overhead. Track B has no user-action blockers — execution prep can proceed autonomously.
+**Success criteria**: By May 30, comprehensive execution staging is complete. User review May 30 morning, execution begins immediately post-decision with zero friction.
+
+---
+
+### 🔄 Item 101: Resistance-Research May 21 Synthesis Enhanced Contingency Playbooks
+**Status**: PENDING (Session 1414)
+**Priority**: HIGH — May 21 synthesis executes 19:00 UTC tomorrow (31 hours). Item 97 completed pre-staging WEAK/TOO_EARLY paths, but does not cover STRONG/MODERATE outcomes with same depth.
+**Impact**: HIGH — Synthesis outcome is binary, but consequences span 4 dimensions: Phase 2 domain sequencing, Phase 1 follow-up strategy, distribution expansion (Batch 2/3), parallel-vs-serial execution. Each outcome needs detailed playbook for immediate May 21 evening execution.
+**Goal**: Expand Item 97 contingency planning to comprehensive 4-outcome playbooks covering STRONG/MODERATE/WEAK/TOO_EARLY synthesis outcomes with: (1) For each outcome, exact Phase 2 domain sequencing decision, (2) Phase 1 follow-up strategy per outcome (expand Domain 37? begin Batch 2? defer?), (3) Parallel execution analysis (can multiple domains run concurrently?), (4) First-week action list (May 21-28) for each outcome.
+**Scope** (2-3 hrs):
+  1. **STRONG outcome playbook** (45 min): Phase 2 domains 56+58+59+57 all proceed. Which first? Sequencing based on: timing urgency (June 1 deadline), movement leverage (which domains unblock most coalitions), research effort (short vs. long). Phase 1 Batch 2 timing: parallel or sequential? Parallel execution capacity analysis.
+  2. **MODERATE outcome playbook** (45 min): Phase 2 proceeds but slower. Domains 56+58 (highest urgency) begin immediately, others defer or parallel-track. Phase 1 Batch 2 timing? Distribution expansion (Batch 2 targets) by when? First-week focus (May 21-28): launch domains 56+58, begin Batch 2 outreach prep?
+  3. **WEAK outcome playbook** (45 min): Phase 2 scope contracts to 56+58 only (June 1/May 28 deadlines too urgent to defer). Phase 1 follow-up expands: Domain 37 reaches new audiences? Targeted messaging amplification? Batch 2 deferred. First-week (May 21-28): complete 56+58 research, prepare Domain 37 expansion.
+  4. **TOO_EARLY outcome playbook** (30 min): Synthesis signals insufficient for distribution. Re-synthesis window: May 35-June 4 (2 weeks). Which Phase 2 domains proceed independently while waiting? (56+58 proceed due to deadlines, 57+59 can defer). What autonomously runs May 22-31? (Systems-resilience Phase 4? Open-repo Phase 5 MVP execution?). First-week: focus on May 22 checkpoint execution, Phase 2 research scaling.
+**Deliverable**: `projects/resistance-research/SYNTHESIS_CONTINGENCY_EXECUTION_PLAYBOOKS.md` (3,000+ words, 4 outcome playbooks with decision trees, domain sequencing matrices, first-week action lists, Phase 1/2/Batch timing per outcome)
+**Why now**: May 21 synthesis result will arrive binary. Having 4 detailed playbooks pre-staged means May 21 evening decision is: "read playbook, select outcome, execute." Zero deliberation. Accelerates May 22-31 work kickoff.
+**Success criteria**: By May 21 19:30 UTC (30 min post-synthesis), outcome is identified, playbook is selected, and May 21-22 first actions are clear. No decision paralysis.
+
+---
+
+### 🔄 Item 102: Stockbot Lever A vs B Comparison Analysis & Post-Checkpoint Decision Tree
+**Status**: PENDING (Session 1414)
+**Priority**: HIGH — May 22 checkpoint executes at 20:00 UTC (32 hours remaining). Lever B HMM regime masking is the test. But outcome interpretation is not straightforward: what counts as "improvement"?
+**Impact**: HIGH — May 22 checkpoint result triggers May 22-June 15 architecture decisions (Gate 2 pass/fail, multi-ticker expansion, options trading activation, hardware upgrades). Clear comparison framework means May 22 evening outcome is immediately actionable without analysis overhead.
+**Goal**: Pre-stage comprehensive Lever A vs B comparison framework covering: (1) Which metrics matter (Sharpe, MDD, trade quality, signal timing, fill quality), (2) What counts as "improvement" (Sharpe +0.1? MDD -5%?), (3) Decision thresholds for Gate 2 pass/conditional/fail, (4) Conditional roadmaps per outcome (if PASS, multi-ticker expansion; if conditional, slower ramp; if FAIL, return to Lever A + investigation).
+**Scope** (2-3 hrs):
+  1. **Metric comparison framework** (1 hr): Lever A baseline (May 19 checkpoint results: AAPL position +$2.7K, 2 sessions, 34 fills, ~0.7 Sharpe estimated). Lever B test window (May 21-22, expect 10-20 fills if HMM regime masking fires). Key metrics: (a) Sharpe improvement, (b) MDD reduction, (c) Win rate change, (d) Signal timing fidelity (HMM firing accuracy). Definition of "meaningful improvement" per metric.
+  2. **Gate 2 decision thresholds** (1 hr): Lever B PASS criteria: Sharpe +0.2, MDD -10%, win rate +5pp. Conditional (proceed cautiously): Sharpe flat/+0.1, MDD -5% to -10%. FAIL (revert to Lever A): Sharpe decline, MDD increase >5%. Multi-ticker expansion gate: PASS = AAPL+2 new tickers, Conditional = AAPL only, FAIL = AAPL + diagnostic.
+  3. **Conditional roadmaps** (1 hr): If PASS (best case): Begin AMZN/JPM sessions by June 1, target 10-15 tickers by June 15, activate options trading post-Gate-1 validation. If Conditional: Scale slowly, re-baseline Lever B behavior, revisit Gate 2 June 8. If FAIL: Revert to Lever A, investigate HMM regime masking logic, schedule post-mortem.
+  4. **Hardware constraints integration** (30 min): How do thermal/disk limits interact with multi-ticker expansion decision? (Thermal: 10-12 tickers pre-cooling, 20+ post-cooling; Disk: 8-month headroom at current 2-ticker pace). Fan install May 25-26 unlocks June 1+ scaling. Timeline integration with Gate 2 outcome.
+**Deliverable**: `projects/stockbot/LEVER_B_COMPARISON_FRAMEWORK_MAY_22.md` (2,500+ words, baseline metrics, decision thresholds, Gate 2 pass/conditional/fail decision trees, conditional roadmaps with hardware integration)
+**Why now**: May 22 checkpoint executes in 32 hours. Having clear decision thresholds pre-staged means checkpoint outcome is immediately actionable. Removes "is this result good enough?" analysis work from May 22 evening.
+**Success criteria**: By May 22 13:00 UTC (7 hours before checkpoint), framework complete. When checkpoint result arrives May 22 20:00 UTC, outcome is mechanically mapped to Gate 2 decision and May 22-June 15 roadmap.
 
 ---
 
