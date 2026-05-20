@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-20T00:38:18Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-20T01:34:13Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.1% | Reset in 143h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.2% | Reset in 142h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,12 +19,12 @@
 ## Active Projects
 ### mfg-farm
 **Status**: Active — ready to prototype
-**Focus**: **[ITEM 85 COMPLETE] ETSY LAUNCH SEQUENCE FRAMEWORK PRODUCTION-READY (Session 1360).** Test print execution pending (user action required). All pre-print + post-print preparation complete. **`ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, Session 1360, PRODUCTION-READY)**:
+**Focus**: **[ITEM 85 COMPLETE] ETSY LAUNCH SEQUENCE FRAMEWORK PRODUCTION-READY (Session 1360, verified current May 20).** Test print execution pending (user action required). All pre-print + post-print preparation complete. **`ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, PRODUCTION-READY)**:
 **Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **May 21 SYNTHESIS EXECUTION READY** — Wave 1 distribution complete, 5 synthesis parts verified. May 20 evening: user fills signal log. May 21 19:00–20:00 UTC: autonomous synthesis execution. Phase 2 research activation infrastructure complete (`phase-2-research-activation-checklist.md`, `phase-2-research-timeline-template.md`, Domains 56+58 research complete). **CRITICAL PATH**: Signal log fill May 20 evening → May 21 synthesis → Phase 2 launch if outcome STRONG/MODERATE.
+**Focus**: **[PHASE 2 INFRASTRUCTURE COMPLETE] May 21 SYNTHESIS EXECUTION READY (Session 1378 audit).** Phase 2 research activation 100% staged: Domains 56-59 (35,306 words, all production-ready), Obsidian vault + source staging confirmed, distribution sequencing (June/July/August/September gates) mapped to external triggers (H.R. 492 / Trump v. Barbara ruling / UNGA 81 / OBBBA). Zero setup work remains. **CRITICAL PATH**: Signal log fill May 20 evening (tonight) → May 21 19:00–20:00 UTC synthesis exec … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,16 +36,16 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **TRACK B — MAY 30 LAUNCH TARGET (11 days).** ✅ Launch sequence complete (content calendar, rapid setup guide, master checklist, email automation — 1,653 lines production-ready). Phase 3 critical path complete (22-day timeline June 22–July 13, sourcing + writing + Canva, 3 scope options identified). **Awaiting user**: Gate 1 resolution → Brand Kit setup May 19–23 → Final checks May 27–29 → Launch May 30.
+**Focus**: **[PHASE 3 CRITICAL PATH COMPLETE] TRACK B — MAY 30 LAUNCH TARGET (Session 1378 analysis).** ✅ Launch sequence complete (1,653 lines). ✅ Phase 3 critical path complete: Writing is binding constraint (56–66h for 5 bundles), photography has 5–14 day float, design has 1–4 day float. June 22–July 13 window achievable. **THREE DECISIONS REQUIRED BY MAY 30**: (1) Sprint scope (Option A: single writer 5 bundles, Option B: two writers parallel, Option C: 3-bundle priority launch RECOMMENDE … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5 CANDIDATE 1 VERIFICATION COMPLETE] Phase 4 complete. Candidate 3 (README security fix, 0.0.0.0→127.0.0.1) MERGED.** PR #1 (Wave 4 Federation, 194 tests) merged to main. ✅ **PHASE 5 CANDIDATE 1 GO/NO-GO STATUS (Session 1364, May 19 21:30–22:10 UTC, comprehensive verification)**:
+**Focus**: **[PHASE 5.1 MVP GO FOR MERGE — 98.2% CONFIDENCE] Phase 4 complete. Pre-deployment package complete (Session 1378, 2,834+ lines, 6 documents).** Code: All 5 required changes verified on `feature/zimwriter-libzim-activation` (commit ec0ff7be). Tests: 84/84 passing with real libzim integration. Compatibility: libzim 3.10.0 verified compatible with aarch64/Python 3.11 (pre-built wheel confirmed on PyPI). Breaking changes: NONE (Phase 4 federation unaffected). Risks: 6 identified, NONE blocking me … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **[PATH DECIDED] PHASE 3 COMPLETE + PHASE 4 SYNTHESIS ARCHITECTURE COMPLETE (Session 1362)** — Phase 3: All 5 community-scale domains (100–10,000 person scale) fully researched and production-ready (~28,700 words, 170+ citations). Key synthesis findings: (1) Governance is load-bearing — all other domains depend on it; (2) Information infrastructure is load-bearing for governance; (3) 150-person (Dunbar's) threshold is critical scaling transition; (4) Individual scale has 5 domain gaps iden … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PATH DECIDED] PHASE 3 COMPLETE + PHASE 4 SYNTHESIS ARCHITECTURE COMPLETE (Session 1362, verified current May 20).** Phase 3: All 5 community-scale domains (100–10,000 person scale) fully researched and production-ready (~28,700 words, 170+ citations). Key synthesis findings: (1) Governance is load-bearing — all other domains depend on it; (2) Information infrastructure is load-bearing for governance; (3) 150-person (Dunbar's) threshold is critical scaling transition; (4) Individual scale  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -95,7 +95,8 @@
 ```bash
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 1360 (16 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 1360 (19 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 1362 (17 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
