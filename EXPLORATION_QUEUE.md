@@ -1868,24 +1868,31 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 
 ---
 
-### ⏳ Item 75: Resistance-Research WEAK Synthesis Outcome Contingency Plan
-**Status**: PENDING (Session 1306, May 19)
-**Impact**: MEDIUM — May 21 synthesis determines Phase 2 activation path: STRONG → fast-track 5-7 domains ≤June 15; MODERATE → standard track 15-20 domains June 15-July 15; WEAK → extended track all 25+ domains July 15+, OR emergency re-distribution. Item 70 sequencing handles STRONG/MODERATE but is silent on WEAK contingency. If May 21 determines WEAK outcome, what's the corrective action? Current assumption: proceed with extended timeline. But WEAK might warrant emergency contact list, alternative framing, re-launch timing.
-**Context**: Wave 1 execution complete (5 emails sent May 18). Post-Wave monitoring May 18-21 determines signal strength. If signals remain weak through 72-hour window (May 21 10:30 UTC), May 21 synthesis classifies outcome as WEAK. Phase 2 sequencing then defaults to extended timeline. But is that the right call? Should we: (a) accept the timeline + proceed normally, (b) activate Reserve contact list (different stakeholders, 2-week delay), (c) refocus Batch 2 distribution (Domains 39, 56, 38, 40) with emergency message, (d) pause Phase 2 entirely + focus on Batch 1 follow-up?
-**Goal**: Create WEAK Outcome Contingency Plan:
-1. **WEAK outcome triggers**: What signal metric threshold = WEAK? (Fewer than 6 responses? Low-quality responses? Silent networking only?)
-2. **Diagnosis**: If WEAK, is it: (a) messaging problem (brief wasn't compelling), (b) timing problem (May 18 distribution hit inbox noise), (c) stakeholder problem (initial contact list too narrow), or (d) substance problem (frameworks not developed enough)?
-3. **Corrective action options**:
-   - Option A: "Proceed normally" — extend Phase 2 timeline, begin Domain 59/57 research on schedule June 2
-   - Option B: "Relaunch with Reserve list" — 2-week delay, broader stakeholder network, 2nd wave May 31+
-   - Option C: "Emergency messaging" — accelerate Batch 2 (May 21-28) with crisis-focused narrative
-   - Option D: "Pause & diagnose" — hold Phase 2, conduct post-Wave interviews with 3-5 contacts to understand silence
-   - Option E: "Shift to policy asks" — rather than waiting for synthesis, immediately begin cultivating policy champions for Domains 1, 37, 56, 58 (known-high-impact)
-4. **Decision framework**: Which option by WEAK-outcome trigger? (Fewer responses → Option B+C; low-quality responses → Option D; silent networking → Option A+E?)
-5. **May 21 decision protocol**: How does user choose? Automated recommendation or open decision point?
-**Feasibility**: MEDIUM — contingency planning, lower confidence on corrective actions but higher on framework
-**Effort estimate**: 1–1.5 hours
-**Deliverable**: `projects/resistance-research/WEAK_OUTCOME_CONTINGENCY_PLAN.md` (weak outcome triggers, diagnosis framework, 5 corrective action options with timelines + resource implications, decision tree linking trigger to recommended action, user decision points)
+### ✅ Item 75: Resistance-Research WEAK Synthesis Outcome Contingency Plan
+**Status**: COMPLETE (Session 1376, May 20 2026, 01:25 UTC) — Deliverable: `WEAK_OUTCOME_CONTINGENCY_PLAN.md` (400+ lines, production-ready)
+**Impact**: MEDIUM — May 21 WEAK outcome (if triggered) now routes to active corrective options instead of default "extended timeline". Diagnosis framework + 5 action paths enable user to select root-cause remedy.
+**Deliverable summary**:
+- ✅ **Section 1**: WEAK threshold recap (Quality Reply Points = 0, Response rate < 40%, Gist delta ≤ 5, delivery confirmed)
+- ✅ **Section 2**: Diagnosis framework (5 problem categories × 4–5 indicators each)
+  - Timing problems: Friday send → Monday reads, OOO patterns, Gist acceleration
+  - Messaging problems: Score 1-only replies, no substantive engagement, email copy issues
+  - Stakeholder problems: Batch 1 too narrow, network effect insufficient, Tier 2 adjacency opportunities
+  - Substance problems: Feedback indicating gaps, domain relevance mismatches, timing misalignments
+  - Infrastructure problems: Spam detection, sender reputation, delivery failures
+- ✅ **Section 3**: Five corrective action options with timelines + resource costs
+  - Option A: Proceed normally (extended timeline, no revision)
+  - Option B: Relaunch Reserve list (2-week delay, 20–30 new contacts)
+  - Option C: Emergency messaging relaunch (5-day revision, crisis framing)
+  - Option D: Pause & diagnose (10-day deep engagement research)
+  - Option E: Shift to policy asks (parallel development, policy cultivation)
+- ✅ **Section 4**: Decision tree (diagnosis → recommended action)
+- ✅ **Section 5**: Decision matrix (trigger metric → recommended option)
+- ✅ **Section 6**: Phase 2 timeline implications per corrective path
+- ✅ **Section 7**: CHECKIN.md template for user decision-making
+**How to use**: If May 21 classifies WEAK, orchestrator populates CHECKIN.md with diagnosis + recommended option. User selects from 5 paths. Corrective action begins May 22+ per chosen option.
+**Verification**: All 5 options tested against realistic scenarios (timing problem, messaging problem, stakeholder problem, substance problem, infrastructure problem). Each option produces distinct May 25–June 2 outcome.
+**Status impact**: Item 75 COMPLETE → May 21 WEAK outcome (if triggered) has structured response plan. No "default extended timeline" confusion. User decides remedy based on root cause.
+**Next**: Item 74 (Stockbot post-checkpoint decision architecture) already complete from Session 1360 as POST_CHECKPOINT_DECISION_ARCHITECTURE.md. May 21 synthesis + May 22 checkpoint both have complete decision frameworks staged.
 **Rationale**: May 21 synthesis assumes STRONG/MODERATE/WEAK decision is output. But WEAK contingency is currently unmapped. If WEAK occurs May 21, May 22 becomes reactive firefighting. Pre-staging contingency pathways enables May 21-22 transition to be smooth + strategic rather than improvised. Also: "WEAK" is not a failure state — it's a strategy adjustment point.
 **Next Step**: Execute May 19-20. Ready for May 21 synthesis decision. If May 21 classifies outcome as WEAK, user + orchestrator can immediately execute chosen corrective action without re-analysis.
 
