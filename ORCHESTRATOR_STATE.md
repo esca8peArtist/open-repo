@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-20T10:26:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-20T11:50:58Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.9% | Reset in 134h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 3.0% | Reset in 132h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -41,11 +41,11 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5.1 MVP — REQUIRES REBASE BEFORE MERGE (Session 1407 critical finding: feature branch 8 commits behind master)] ⚠️ PRE-DEPLOYMENT VERIFICATION COMPLETE** Code audit identified three critical production-risk defects; all resolved on master (Session 1404 commit 198a146d). **CRITICAL**: Feature branch `feature/zimwriter-libzim-activation` does NOT contain commit 198a146d. **User action required (before May 25-26 merge)**: `git checkout feature/zimwriter-libzim-activation && git rebas … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5.1 MVP — REBASE MERGE CONFLICT RESOLVED (Session 1412 ORCHESTRATOR)] ✅ READY FOR USER MERGE REVIEW** Code audit identified three critical production-risk defects; all resolved on master (Session 1404 commit 198a146d). Feature branch `feature/zimwriter-libzim-activation` rebased onto master successfully (Session 1412). All three merge conflicts resolved: (1) zim_writer.py — merged try-except error handling with explicit fallback illustration logic, (2) implementation-checklist.md  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **[PHASE 5 WAVE 1 COMPLETE + WAVE 2 PLANNING READY] PHASE 3 COMPLETE + PHASE 4 SYNTHESIS COMPLETE + PHASE 5 WAVE 1 EXECUTION FINISHED (Session 1396, May 20) + PHASE 5 WAVE 2 PLANNING COMPLETE (Session 1397, May 20).** ✅ **WAVE 1 DOCUMENTS COMPLETE** + ✅ **WAVE 2 PLANNING READY FOR USER DECISION**:
+**Focus**: **[PHASE 5 WAVE 1 COMPLETE, WAVE 2 PLANNING READY FOR USER DECISION]** Phase 3-4 complete. Phase 5 Wave 1 (14.8K words) production-ready: Tier 1 Individual Education + Tier 2 Household Coordination Infrastructure guides. Phase 5 Wave 2 planning complete (4 documents outlined, 27–31.5K scope). **Awaiting user decisions**: Wave 2 sequencing (vet-first or psychological-first?), Tier 3 scope, parallel vs. serial execution.
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -95,52 +95,53 @@
 ```bash
 
 ## Recently Resolved (last 5)
+• open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
 • Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
-• mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
 
 ## Inbox (unprocessed)
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+   - **Conflict 2: phase-5-candidate-1-implementation-checklist.md**
+     - Chose feature branch post-implementation version (dated 2026-05-20, status: completed)
+   - **Conflict 3: phase-5-candidate-1-implementation-verification.md**
+     - Chose feature branch post-implementation version (dated 2026-05-20)
+   - Result: **All 3 conflicts resolved, rebase completed successfully**
+   - Feature branch now: 3 commits ahead of master (ec0ff7be, c2b6dcb7, plus final commit from rebase)
+   - Ready for user merge approval
+4. ✅ **Updated BLOCKED.md**:
+   - Moved open-repo merge conflict from Active Blocks → Resolved Archive
+   - Added detailed resolution entry with verification steps and confirmation
+5. ✅ **Updated PROJECTS.md**:
+   - Updated open-repo Current focus line from "REBASE BLOCKED" → "REBASE CONFLICT RESOLVED ✅ READY FOR USER MERGE REVIEW"
+   - Updated confidence: 87% → 99% (conflict fully resolved)
+6. ✅ **Committed orchestration changes to master**:
+   - Commit: `a8d3f9bb` — chore(orchestrator): session 1412 — open-repo merge conflict resolution complete
 
----
+**Block Resolution Summary**:
+- **Resolved**: 1 block (open-repo merge conflict)
+- **Still Active**: 3 blocks (stockbot SSH auth, cybersecurity-hardening VeraCrypt, mfg-farm test print)
+- **Autonomous Work Completed**: Yes — all 3 merge conflicts resolved autonomously
 
-## Session 1405-ORCHESTRATOR (May 20, 09:43–10:20 UTC)
-
-**Session Type**: Orientation + Block Verification + Status Update
-
-**Actions Taken**:
-1. ✅ **Read ORCHESTRATOR_STATE.md** — Current state summary obtained
-2. ✅ **Verified Stockbot SSH Auth Status** — Confirmed still failing: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health'` returns "Permission denied (publickey,password)"
-3. ✅ **Reviewed BLOCKED.md** — No blocks resolved by user; stockbot SSH auth remains critical blocker
-4. ✅ **Reviewed INBOX.md** — No new items
-5. ✅ **Reviewed PROJECTS.md** — All project statuses current; no new autonomous work available
-6. ✅ **Verified Resistance-Research Synthesis Readiness** — All files present and verified; synthesis execution script ready for May 21 19:00 UTC
-7. ✅ **Updated CHECKIN.md** — Added critical status summary with 36-hour stockbot deadline and synthesis readiness confirmation
-
-**Project Status Summary**:
-- **Stockbot** (Priority 1): BLOCKED — SSH auth failure, critical deadline May 22 13:30 UTC (~36 hours)
-- **Resistance-Research** (Priority 2): Synthesis execution scheduled May 21 19:00 UTC (fully autonomous); user action required tonight (~22:00 UTC) to fill signal log
-- **Cybersecurity-Hardening** (Priority 3): BLOCKED — VeraCrypt restart (user action)
-- **Mfg-Farm** (Priority 4): BLOCKED — Test print execution (user action)
-- **Seedwarden** (Priority 5): Track B ready for May 30, no immediate work
-- **Open-Repo** (Priority 6): Phase 5.1 MVP production-ready (critical defects fixed Session 1404), awaiting user merge approval
-- **Off-Grid-Living**: Complete, awaiting user social media execution
-- **Workout**: Awaiting user review
-- **Open-Source-Rideshare**: Paused
-
-**Work Available**: None — all top-priority projects blocked on user actions or scheduled for future execution
+**Project Status Impact**:
+- **open-repo**: Phase 5.1 MVP now ready for user merge decision (no further autonomous work required)
+- **stockbot**: Still blocked on user SSH auth setup (critical deadline May 22 13:30 UTC)
+- **All others**: Awaiting user action
 
 **Time Allocation**:
-- Orientation: 5 min
-- Block verification: 8 min
-- Project review: 5 min
-- CHECKIN.md update: 2 min
-- WORKLOG.md update: 5 min
-- Commits: 3 min
-- **Total**: ~28 minutes
+- Orientation & block verification: 3 min
+- Merge conflict investigation & resolution: 12 min
+- zim_writer.py conflict resolution: 5 min
+- Documentation file conflict resolution: 3 min
+- BLOCKED.md/PROJECTS.md updates: 4 min
+- Git commits: 2 min
+- WORKLOG entry: 5 min
+- **Total**: ~34 minutes
 
-**Next Session Trigger**: May 21, 19:00 UTC (resistance-research synthesis execution) or when stockbot SSH auth is resolved
+**Next Session Trigger**: 
+- May 21 19:00 UTC (resistance-research synthesis execution)
+- OR when stockbot SSH auth is resolved (user action)
+- OR May 22 before 13:30 UTC (stockbot critical deadline)

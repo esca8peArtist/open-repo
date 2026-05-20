@@ -2,6 +2,53 @@
 
 ---
 
+## May 20, 2026 — General Research Agent — Trump v. Barbara Pre-Research (Round 2 — Deepen and Deliver)
+
+**Task**: Deepen the May 20 pre-research into structured deliverables per orchestrator brief. Ruling not issued as of May 20, 2026.
+
+**Files produced**:
+- `projects/resistance-research/exploration/trump-v-barbara-case-research.md` (~2,400 words, 35+ sources) — Comprehensive 5-section case research document: docket and full timeline (Jan 20, 2025 EO signing through projected ruling window), legal brief synthesis (government's two-track argument, *Wong Kim Ark* respondent case, constitutional hook), tribal coalition landscape (NCAI Fineday statement, NARF position, Berger/Ablavsky amicus, Historians' amicus — coalition positions confirmed as of May 20), *Callais* cascade relationship analysis (two-axis threat structure), advocacy window analysis (pre-ruling preparation, three post-ruling scenarios with distribution timing). Extends prior TRUMP_V_BARBARA_CASE_SUMMARY.md with new sourcing not available in earlier session.
+- `projects/resistance-research/exploration/domain-58-rapid-response-checklist.md` (~800 words) — Exact edit checklist: all-scenario required edits (document header, Sections 3.1, 3.2, 7, 9.1, footer), plus branch-specific edits for each of four scenarios (A/B/B-Hybrid/C). Three pre-drafted Tier 1 messaging hooks (Branch A, B, C). Distribution timing decision table. Pre-ruling verification checklist.
+- `projects/resistance-research/domains/domain-58-tribal-sovereignty.md` — Added "Ruling Status — Trump v. Barbara" section (new section before the synthesis team note): current case posture with May 20 verification date, oral argument findings summary (Sauer stumble verbatim — "I'm not sure, I have to think through that"), coalition positions (NCAI Fineday statement, NARF position, Berger/Ablavsky amicus, Historians' amicus), conditional distribution trigger table (4 scenarios keyed to ruling date), probability assessment table, 7 new sources added.
+
+**Key findings from this session** (extending May 20 Session 1405 research):
+1. Sauer's exact formulation at oral argument is more damaging than initially characterized. He initially said "I think so... if they're lawfully domiciled here," then reconsidered: "I'm not sure, I have to think through that" — before eventually settling on "the children of tribal Indians are not birthright citizens." The progressive stumble (not a single clear answer) reveals the government had not thought through the tribal implications before argument.
+2. NCAI has an on-record specific legal position via General Counsel Lennie Fineday: the reliance on *Elk v. Wilkins* "is misplaced. It's a misreading and a misunderstanding." This is the official tribal government coalition position statement for rapid-response messaging.
+3. Two academic amicus briefs with high mainstream media profiles: Berger/Ablavsky (Iowa Law + Stanford Law, covered by NBC News, New York Times, Indianz.com) and a Historians' brief (documented by Brennan Center). Both provide specific analytical support for the respondents' position on the tribal-citizenship question.
+4. SCOTUS opinion timeline confirmed: ~35 cases remaining as of mid-May; weekly Thursday opinion drops through June; term ends June 30. Trump v. Barbara expected final two weeks of June (June 19–30 most likely window).
+5. Ruling has NOT issued as of May 20, 2026. All pre-staging complete for May 21 synthesis execution check.
+
+**Confidence**: High on case status, legal analysis, and coalition positions; moderate on ruling scenario probabilities (orbital argument analysis, not inside information).
+
+---
+
+## May 21, 2026 — General Research Agent — Phase 2 Research Activation Checklist (Production)
+
+**Files produced/updated**:
+- `projects/resistance-research/PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md` (~2,600 words) — Supersedes May 19 Session 1361 version and May 20 Session 1405/1408 versions. Authoritative pre-synthesis activation checklist reflecting the critical May 20 finding: all four Phase 2 domains are fully written and production-complete. Contains: per-domain readiness matrix (Domains 56–59 + Domain 60 decision), infrastructure pre-staging verification, distribution timeline summary, per-domain blocking assumption audit, 5 user decisions required before first send, 10-item pre-launch quick check. Domain sequence confirmed: D56 (May 26–June 7) → D59 (June 1) → D58 (June 15) → D57 (August 10).
+- `projects/resistance-research/PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md` (~2,200 words) — Supersedes May 19 and May 20 versions. Distribution-only calendar (prior 120–130 hour production timeline eliminated). Per-domain week-by-week distribution schedules with hard gate dates, parallel execution windows, cross-domain dependency map, success metrics, red-line escalation criteria, and monthly synthesis gates. Total remaining effort: 29–44 hours distribution preparation and execution (vs. prior 120–130 hour production estimate).
+- `projects/resistance-research/PHASE_2_RESEARCH_KICKOFF_EMAIL_TEMPLATE.md` (~2,400 words) — New file (extends and supersedes phase-2-research-kick-off-email-template.txt). Three ready-to-send email versions: Version A (peer reviewer/research collaborator), Version B (institutional distribution partner), Version C (congressional staff — three committee-specific variants). Includes domain descriptions, send sequencing guide, personalization guide, and user decision requirements.
+
+**Key finding**: All four Phase 2 domains are production-complete (verified May 20): D56 (6,267 words, 45 citations), D57 (9,201 words, 51 citations), D58 (11,388 words, 90 citations), D59 (8,450 words, 49 citations). Total: 35,306 words, 235 confirmed citation URLs. Phase 2 remaining effort is 29–44 hours of distribution work, not 120–130 hours of production writing. These three documents replace the outdated activation kit with accurate, launch-ready materials reflecting the actual production state.
+
+---
+
+## May 20, 2026 — General Research Agent — Trump v. Barbara Pre-Research (Domain 58 Rapid-Response)
+
+**Files produced**:
+- `projects/resistance-research/exploration/TRUMP_V_BARBARA_CASE_SUMMARY.md` (~2,200 words) — Full 6-section case summary: docket status, case merits and tribal implications, coalition positions, legal brief synthesis with ruling prediction, Callais cascade precedent comparison, and advocacy window analysis with distribution decision tree.
+- `projects/resistance-research/exploration/TRUMP_V_BARBARA_RAPID_RESPONSE_PROTOCOL.md` (~900 words) — Three-branch decision tree (Broad Reaffirmation / Narrow Rejection / Adverse) with same-day action sequences, framing messages, legislative activation paths, Tier 1/2/3 contact distribution sequencing, and pre-ruling monitoring checklist.
+
+**Key findings**:
+1. Trump v. Barbara (No. 25-365) IS a tribal voting rights case — its primary framing is birthright citizenship, but Solicitor General Sauer stated at oral argument that tribal Indians are "not birthright citizens" under the Fourteenth Amendment, grounding tribal citizenship in the Indian Citizenship Act of 1924 (statute) rather than the Constitution. A statutory-citizenship theory means what Congress gave, Congress or a future executive can take away.
+2. Ruling expected late June / early July 2026. Most likely outcome: narrow rejection of EO 14160 on Wong Kim Ark grounds without definitive resolution of the tribal analogy — probability assessed as high.
+3. Concurrent context as of May 20, 2026: Callais (April 29) gutted VRA Section 2 effects standard; Turtle Mountain GVR (May 18) returned ND tribal redistricting case to 8th Circuit under Callais — hostile outcome per DOMAIN_58_EMERGENCY_UPDATE_NOTES.md; Montana SB 490 enjoined (May 11) under state constitution. Three active fronts beyond Trump v. Barbara.
+4. Distribution pre-staging complete for all three ruling scenarios. Tier 1 contacts (NARF, NCAI, Campaign Legal Center, Native Vote Alliance) and Tier 2 contacts (Brennan Center, ACLU VRP, Lawyers' Committee, NAACP LDF) identified with contact information.
+
+**Confidence**: High on case status and legal analysis; moderate on ruling prediction (bench alignment analysis is based on oral argument transcript review and court-watcher consensus, not inside information).
+
+---
+
 ## May 20, 2026 — General Research Agent — Phase 2 Research Activation Checklist + Timeline Template (Pre-Synthesis Prep)
 
 **Files produced**:

@@ -479,6 +479,79 @@ In the 10 states with significant tribal populations — Oklahoma, Arizona, New 
 
 ---
 
+## Ruling Status — Trump v. Barbara
+
+**Last verified**: May 20, 2026
+**Status**: PENDING — ruling not issued
+**Distribution trigger**: This section activates Domain 58 rapid-response upon ruling issuance
+
+### Current Case Posture (as of May 20, 2026)
+
+Trump v. Barbara (No. 25-365) was argued April 1, 2026. As of May 20, 2026, no ruling has issued. The case is pending in the final weeks of the Supreme Court's October 2025 term.
+
+**Opinion release schedule**: The Court issues opinions on Thursdays and Fridays during the final term weeks, typically adding days as the June 30 deadline approaches. Approximately 35 cases remained undecided as of mid-May 2026. Trump v. Barbara, as the term's highest-profile constitutional ruling, is expected in the final two weeks of June (June 19 through June 30) or, at the latest, the first week of July. The Court has no formal extension mechanism — any ruling after June 30 would require a July sitting, which is historically rare.
+
+**Monitoring protocol**: Check SCOTUSblog live blog every Thursday and Friday at 10:00 a.m. ET beginning the week of June 9, 2026. NARF Tribal Supreme Court Project (sct.narf.org) issues same-day alerts. SCOTUSblog's "OT 2025 Stats" page tracks remaining cases in real time.
+
+### What the Oral Argument Established
+
+The April 1 argument produced three findings relevant to rapid-response preparation:
+
+**The Sauer stumble**: When Justice Gorsuch asked whether newly born Native American babies would still be entitled to U.S. citizenship under the government's proposed test, Solicitor General Sauer initially responded "I think so. On our test, yeah, if they're lawfully domiciled here" — then immediately reconsidered: "I'm not sure. I have to think through that." After further pressing from Gorsuch, Sauer settled on the position that "the children of tribal Indians are not birthright citizens" under the Fourteenth Amendment, grounding their citizenship solely in the Indian Citizenship Act of 1924. The fact that Sauer had to talk himself into this position — and initially wavered — is itself significant: it signals that the government's lawyers had not fully thought through the tribal implications before argument, and that the tribal citizenship question was a pressure point the Court identified independently.
+
+**Roberts's "quirky" remark**: Chief Justice Roberts described the government's argument as "quirky" during argument — a characterization that signals not merely skepticism but a degree of doctrinal disdain. Roberts's authorial fingerprints on a future majority opinion are likely to reflect this skepticism; his tendency to write narrow majorities suggests the ruling will reject the EO on *Wong Kim Ark* grounds without extensively engaging the tribal analogy.
+
+**The bench was hostile across ideological lines**: Court observers noted that questioning came from across the bench — not only from the liberal justices but from Gorsuch and, implicitly, Roberts. The government faced skepticism from justices whose votes it needed. The probability assessment for a government loss remains high (assessed at 80%+ based on oral argument read).
+
+### Coalition Positions (Confirmed as of May 20, 2026)
+
+**NCAI General Counsel Lennie Fineday** (the organization's official legal position): "We believe the reliance on Elk to deny birthright citizenship to children of undocumented immigrants is misplaced. It's a misreading and a misunderstanding." The NCAI has specifically characterized the *Elk v. Wilkins* invocation as inappropriate — the case "rests solely on the specific nature of 'quasi-sovereign tribal government'" and cannot be generalized as the government attempts.
+
+**NARF Tribal Supreme Court Project**: Filed analysis characterizing the government's position as an attempt to use the history of Native exclusion as a weapon rather than as a cautionary precedent. NARF monitors the case through its Tribal Supreme Court Project (sct.narf.org), which tracks every pending SCOTUS case affecting tribal interests.
+
+**Berger/Ablavsky amicus brief** (University of Iowa Law / Stanford Law): Bethany Berger (Iowa) and Gregory Ablavsky (Stanford) filed a joint amicus brief arguing that the government misinterprets the historical record — Native Americans' unique legal status as members of sovereign nations is not analogous to the status of undocumented immigrants, and using federal Indian law to justify restricting birthright citizenship inverts the purpose of that body of law. The brief received national media coverage (NBC News, New York Times, Indianz.com). This is the strongest academic rebuttal to Sauer's historical analogy.
+
+**Historians' amicus brief** (Brennan Center): A separate historians' brief, documented by the Brennan Center, addressed the historical framing of the Citizenship Clause debates and the role of Native exclusion in that history — arguing that the framers understood the tribal-Indian exception narrowly and did not intend it to serve as a general template for limiting birthright citizenship.
+
+**Native American Voting Rights Coalition**: Monitoring the case through NARF's Tribal Supreme Court Project. No independent amicus brief has been confirmed, but the NAVRC's member organizations (NARF, NCAI, ACLU VRP, Lawyers' Committee, Fair Elections Center, Western Native Voice, Four Directions) are the first-call distribution targets upon ruling.
+
+### Conditional Distribution Trigger
+
+**If ruling issues before May 21, 19:00 UTC**: Execute Domain 58 rapid-response distribution before synthesis. Full protocol in `exploration/TRUMP_V_BARBARA_RAPID_RESPONSE_PROTOCOL.md`.
+
+**If ruling issues May 21 through June 14**: Execute rapid-response within 72 hours. Domain 58 July 15 baseline distribution shifts to immediate.
+
+**If ruling issues June 15 through July 15**: Incorporate ruling findings into July 15 baseline distribution. No schedule change required.
+
+**If ruling issues after July 15**: Domain 58 distribution has already occurred. Issue a supplemental update to the Tier 1 contact list (NARF, NCAI, Campaign Legal Center, Native Vote Alliance) within 72 hours of ruling.
+
+**If ruling issues before synthesis and is ADVERSE (any part of Sauer's tribal citizenship theory validated)**: Emergency distribution. Do not wait for synthesis. See Branch C in `exploration/TRUMP_V_BARBARA_RAPID_RESPONSE_PROTOCOL.md`.
+
+### Ruling Scenario Probability Assessment (May 20, 2026)
+
+| Scenario | Probability | Trigger Condition |
+|---|---|---|
+| Narrow rejection — *Wong Kim Ark* grounds, minimal tribal engagement | 55–60% | Court rejects EO without extensively addressing tribal analogy |
+| Broad rejection — explicit repudiation of *Elk v. Wilkins* misuse | 20–25% | Court explicitly addresses and rejects Sauer's tribal-Indian historical analogy |
+| Narrow rejection with adverse tribal dicta | 10–15% | Court rejects EO but includes language characterizing tribal Indians as "historically excluded" class |
+| Government prevails (any form) | 5% | Court upholds EO; Roberts would need to join Thomas + 3 others |
+
+**Confidence**: Moderate-high on probability ranking; lower confidence on boundary between "narrow rejection" and "broad rejection" scenarios. The key unknown is whether the majority opinion will engage the tribal analogy at all — Roberts's instinct for narrow rulings cuts against engagement, but Gorsuch's oral argument focus on the tribal question may produce a concurrence addressing it even if the majority does not.
+
+### New Sources Added for This Section
+
+- [Indianz.com — "'I'm not sure': Trump attorney stumbles on American Indian citizenship questions"](https://indianz.com/News/2026/04/01/im-not-sure-trump-attorney-stumbles-on-american-indian-citizenship-questions/)
+- [Bethany Berger files Supreme Court amicus brief in Trump v. Barbara — Iowa Law](https://law.uiowa.edu/news/2026/03/bethany-berger-files-supreme-court-amicus-brief-trump-v-barbara)
+- [Bethany Berger featured in national news — Iowa Law](https://law.uiowa.edu/news/2026/04/bethany-berger-national-news-trump-v-barbara)
+- [Historians' Amicus Brief in Trump v. Barbara — Brennan Center](https://www.brennancenter.org/our-work/research-reports/historians-amicus-brief-trump-v-barbara)
+- [NCAI Lennie Fineday statement on *Elk v. Wilkins* misuse — NBC News](https://www.nbcnews.com/politics/supreme-court/trump-birthright-citizenship-supreme-court-native-american-rcna263223)
+- [11 big SCOTUS cases that will be decided soon — Reason/Volokh](https://reason.com/2026/05/07/11-big-scotus-cases-that-will-be-decided-soon/)
+- [Supreme Court opinion season is coming — The Hill](https://thehill.com/newsletters/the-gavel/5874668-supreme-court-decision-guide/)
+
+*This section added: May 20, 2026 — General Research Agent pre-research update. Updates Section 3.1's "As of May 15, 2026" status note. Full rapid-response protocol: `exploration/TRUMP_V_BARBARA_RAPID_RESPONSE_PROTOCOL.md`. Case summary with full legal analysis: `exploration/TRUMP_V_BARBARA_CASE_SUMMARY.md`.*
+
+---
+
 ## NOTE TO SYNTHESIS TEAM — DOMAIN 58 POST-WAVE-1 UPDATE
 
 **Flag**: This domain was updated post-Wave-1 on May 19, 2026 following the May 18 SCOTUS GVR in *Turtle Mountain v. Howe* and companion GVR in *Board of Election Commissioners v. NAACP*. The litigation section (Section 6.1 and new Section 6.1a) was fully rewritten.
