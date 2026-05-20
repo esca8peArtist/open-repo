@@ -1,5 +1,79 @@
 # Work Log
 
+## Session 1433 (May 20, 20:02–21:30 UTC) — Exploration Queue: Parallel 4-Agent Execution
+
+**Session Type**: Autonomous orchestrator — parallel Exploration Queue work (all 4 executable items)
+
+**Trigger**: All top-priority projects blocked on external dependencies (stockbot SSH auth, cybersecurity VeraCrypt restart, mfg-farm test print). Per protocol, worked Exploration Queue instead.
+
+**Agents Spawned** (4 parallel):
+1. **resistance-research**: Phase 2 Research Activation Checklist (already production-complete)
+2. **seedwarden**: Herbalist network ecosystem mapping
+3. **resistance-research**: Trump v. Barbara tribal voting case rapid-response  
+4. **general-research**: Phase 5 Candidate 1 ZimWriter implementation verification
+
+**Outputs** (all committed to master):
+
+1. ✅ **Phase 2 Research Activation Checklist + Timeline** — Audit found both deliverables already exist and are production-complete:
+   - `/projects/resistance-research/phase-2-research-activation-checklist.md` (5,742 words, canonical version)
+   - `/projects/resistance-research/phase-2-research-timeline-template.md` (5,670 words, canonical version)
+   - All 5 Phase 2 domains fully written (Domains 56–60 including Domain G), 44,001 words total, 285 citations
+   - Key finding: **No research production needed** — only distribution planning. User decisions needed before Phase 2 launch (path sequencing, parallel vs sequential execution, Domain 58 pre-ruling vs post-ruling distribution, deadline confirmations).
+
+2. ✅ **HERBALIST_PRACTITIONER_ECOSYSTEM.md** (4,000 words) — Phase 3 practitioner targeting:
+   - AHG chapters, clinical herbalism schools (Herbal Academy, Chestnut, Colorado School), NAMA membership tiers
+   - Iridology and ND networks (state-by-state licensing analysis: 26 licensed, 26+ unlicensed states)
+   - Geographic hotspots: CA, OR, CO, NY, Appalachia with bundle-fit analysis
+   - Newsletter/podcast/social media communication channels (7 priority channels identified)
+   - Cross-selling ecosystem ($200–$1,200/year per practitioner type)
+   - Messaging refinement: Phase 2 vs Phase 3 contrast table
+   - Action timeline: June 1, June 8, June 15 gates; 8-event calendar through August
+   - Committed to master (77f22a63)
+
+3. ✅ **TRUMP_V_BARBARA_CASE_RESEARCH.md** (2,000–2,500 words) — Tribal voting rights case pre-research:
+   - Case status: pending SCOTUS decision, expected late June/early July (oral arguments April 2, 2026)
+   - Constitutional implications: birthright citizenship test case for tribal Indians vs Elk v. Wilkins standard
+   - Key scholarly anchor: Berger/Ablavsky amicus brief (February 2026, Cohen's Handbook co-editors)
+   - Tribal coalition positioning: NCAI, NARF, Native News Online, Indianz.com
+   - Projected 7-2 or 6-3 ruling (Thomas/Alito probable dissenters)
+   - Advocacy window: Senate Indian Affairs Committee (72h post-ruling), FY2027 Interior appropriations (Aug-Sep), state-level VRA (MT, ND, SD, AZ, OK)
+   - 24-hour rapid-response execution timeline (pre-staging items distinguished)
+   - Cross-references existing Domain 58 infrastructure (trump-v-barbara-rapid-response.md, distribution bridge, verification report)
+   - Committed to master
+
+4. ✅ **Phase 5 Candidate 1 Implementation Verification** — Open-repo ZimWriter merge-path assessment:
+   - **Key finding**: Implementation already complete on feature/zimwriter-libzim-activation (commit ec0ff7be). All 5 roadmap code changes present, 88 tests pass, Alembic migration 003 in place.
+   - **Defect 1** (medium): Duplicate `_FALLBACK_ILLUSTRATION_PNG` constant (lines 65-70 dead code, line 75 used). Fix: delete first definition. Effort: 2 min.
+   - **Defect 2** (high priority): `_apply_metadata_to_creator()` silent exception swallowing — any ZIM metadata failure is silently dropped, creating `.zim.invalid` files with no traceable cause. Fix: remove try/except wrapper. Effort: 5 min.
+   - Environmental gap: `zimcheck` binary not installed (requires `apt-get install zim-tools` in CI)
+   - libzim compatibility confirmed: v3.10.0 ships aarch64 wheels, supports Python 3.11.2, bundles Xapian, no breaking changes in 3.x API
+   - **Merge path**: 2 defect fixes (~15 min) + integration tests (2–3 hrs total)
+   - Two deliverables committed:
+     * `phase-5-candidate-1-implementation-verification.md` (1,800+ words, libzim audit + Xapian compatibility + ZIM stub validation + risk assessment)
+     * `candidate-1-implementation-checklist.md` (2–3 hr executable merge-path, replaces prior 8–11 hr from-scratch guide)
+
+**Block Status**:
+- **stockbot SSH auth** — Critical deadline May 22 13:30 UTC. Still blocked (external).
+- **cybersecurity-hardening VeraCrypt restart** — Manual user action. Still blocked.
+- **mfg-farm test print** — Manual user action. Still blocked.
+
+**Time Allocation**:
+- Agent spawning & monitoring: ~5 min
+- Parallel execution: ~90 min total wall-clock (agent overhead absorbed)
+- Results review & logging: ~10 min
+- **Total elapsed**: ~105 min (1h 45m)
+
+**Status After This Session**:
+- All 4 Exploration Queue items executed (100% completion)
+- resistance-research infrastructure fully staged for May 21 synthesis (zero setup lag)
+- seedwarden Phase 3 practitioner targeting roadmap complete (ready for June 22 launch planning)
+- Trump v. Barbara rapid-response fully pre-staged (ready for late June ruling)
+- open-repo Phase 5 Candidate 1 merge path clear (2 fixable defects, 2–3 hr merge timeline)
+
+**Next Autonomous Window**: May 21 19:00 UTC — resistance-research May 21 synthesis execution (fully autonomous, pre-staged infrastructure ready).
+
+---
+
 ## Session RESEARCH-AGENT (May 20) — Phase 5 Candidate 1 ZimWriter Implementation Verification & Pre-Deployment Checklist
 
 **Session Type**: Exploration Queue — Phase 5 Candidate 1 verification
