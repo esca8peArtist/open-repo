@@ -1,6 +1,26 @@
-## Since Last Check-in (Session 1385-ORCHESTRATOR, May 20 02:49–05:00 UTC) — Parallel Pre-Execution Prep (3 Projects)
+## Since Last Check-in (Session 1386-ORCHESTRATOR, May 20 03:08–?? UTC) — Block Verification + Escalation
 
-**Session Status**: ✅ **COMPLETE — 3 EXPLORATION QUEUE ITEMS EXECUTED IN PARALLEL**
+**Session Status**: 🔴 **CRITICAL ESCALATION — STOCKBOT SSH AUTH DEADLINE IMMINENT (58 HOURS REMAINING)**
+
+### Critical Issue Requiring Immediate User Action
+
+**🔴 STOCKBOT LEVER B CONFIG — DEADLINE: MAY 22 13:30 UTC (~58 HOURS)**
+- **Status**: SSH auth to Jetson still failing (verified Session 1386, 03:08 UTC)
+- **Problem**: Orchestrator's ED25519 key is NOT authorized on Jetson (same error as Session 1359)
+- **Impact**: Lever B HMM regime masking code is deployed but config file missing `"hmm_regime_masking": true` flag. May 22 checkpoint will execute with Lever A config (failed May 19 with STILL_MISS_B2), defeating test purpose.
+- **What you must do NOW**:
+  - **Option A (recommended, 5-10 min)**: Add orchestrator's public key to Jetson authorized_keys
+    ```bash
+    # Display orchestrator public key (to add to Jetson authorized_keys)
+    cat ~/.ssh/id_ed25519.pub
+    # Then SSH to Jetson with YOUR credentials and add it to ~ubuntu/.ssh/authorized_keys
+    ```
+  - **Option B (5-minute manual fix)**: SSH to Jetson yourself and run the config fix documented in BLOCKED.md (search for "Fix commands")
+- **Urgency**: CRITICAL. This is blocking May 22 checkpoint validation. No autonomous workaround possible.
+
+---
+
+**Session Status**: ✅ **COMPLETE — 3 EXPLORATION QUEUE ITEMS EXECUTED IN PARALLEL** (Session 1385)
 
 ### What Was Accomplished
 
@@ -28,16 +48,16 @@
   - Risk register complete (8 identified, all mitigated)
 - **Ready for**: May 30 user scope decision (no additional work needed)
 
-### Key Decisions Required from User (by May 30)
+### Key Decisions Required from User (URGENT + Timeline)
+
+**TODAY (May 20) — CRITICAL DEADLINE 13:30 UTC May 22**:
+1. **🔴 STOCKBOT LEVER B FIX — ~58 HOURS REMAINING** — Add orchestrator key to Jetson authorized_keys OR SSH and run 5-min config fix (see escalation above)
 
 **TONIGHT (May 20 evening)**:
-1. **Resistance-Research signal log** — Fill through May 21 10:30 UTC (triggers May 21 synthesis)
+2. **Resistance-Research signal log** — Fill through May 21 10:30 UTC (triggers May 21 synthesis tomorrow)
 
 **May 21 evening (post-synthesis)**:
-2. **Phase 2 scope decision** — Option A (immediate Wave 1) / B (defer to June 1) / C (conditional)
-
-**May 22 13:30 UTC — HARD DEADLINE**:
-3. **Stockbot Lever B fix** — Add orchestrator key to Jetson OR SSH and run 5-min config fix (~13.5 hours remaining)
+3. **Phase 2 scope decision** — Option A (immediate Wave 1) / B (defer to June 1) / C (conditional) — Phase 2 activation checklist ready
 
 **May 25-26**:
 4. **Open-repo Phase 5.1 approval** — Approve candidate merge to enable May 28 pre-deployment testing
