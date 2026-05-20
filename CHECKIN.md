@@ -1,10 +1,22 @@
-## Since Last Check-in (Session 1400-ORCHESTRATOR, May 20 18:00–18:45 UTC) — Exploration Item 97 + Queue Reset
+## Since Last Check-in (Sessions 1400-1401-ORCHESTRATOR, May 20 18:00–09:30 UTC) — Items 97-98 Complete (Synthesis Contingency + Thermal Roadmap)
 
-**Session Status**: ✅ **EXPLORATION ITEM 97 COMPLETE** (Synthesis contingency planning, 599 lines, production-ready) | ✅ **3 NEW EXPLORATION ITEMS STAGED** (Items 98-99 for May 22-25) | 🔴 **CRITICAL DEADLINE REMINDER: Stockbot SSH May 22 13:30 UTC** | 📊 **USAGE HEALTHY** (Sonnet 0.3%, under weekly limit)
+**Session Status**: ✅ **EXPLORATION ITEM 97 COMPLETE** (Synthesis contingency planning, 599 lines) | ✅ **EXPLORATION ITEM 98 COMPLETE** (Thermal/disk roadmap, 3,300 words) | 🟢 **May 21 SYNTHESIS FULLY PREPPED** (Item 97 contingency paths ready) | 🟢 **May 22 CHECKPOINT HARDWARE SUPPORT READY** (Item 98 decision tree) | 🔴 **CRITICAL DEADLINE: Stockbot SSH May 22 13:30 UTC** | 📊 **USAGE HEALTHY** (0.4%, well under limit)
 
-### What Was Accomplished (Session 1400)
+### What Was Accomplished (Sessions 1400-1401)
 
-**Exploration Item 97 — Synthesis Contingency Planning** ✅ COMPLETE
+**Exploration Item 98 — Stockbot Thermal/Disk Roadmap for Gate 2** ✅ COMPLETE (Session 1401)
+- Deliverable: `projects/stockbot/THERMAL_DISK_ROADMAP_GATE2.md` (3,300 words, production-ready)
+- **Scope delivered**:
+  1. **Current thermal/disk baseline**: Jetson Pi 5 specs, idle 81-84°C, compute 87.8°C, hard throttle at 87°C (600 MHz floor, 75% degradation)
+  2. **Multi-ticker thermal impact**: Single $5 active cooler solves thermal constraint entirely (idle 81°C → 45°C, sustained load 75°C → 60-63°C)
+  3. **Multi-ticker disk impact**: NOT a constraint — 227 GB total, 30-session = 32 GB, 50-session = 34 GB. Log rotation capped at 12.5 GB.
+  4. **Upgrade options**: A (none), B (cooler $5, 5min install), C (USB fan $25), D (1TB NVMe $50), E (combined $65)
+  5. **May 22 checkpoint decision tree**: PASS/STILL_MISS_B2 → order cooler, install May 23, resume May 24. FAR_MISS → defer cooling to June 1.
+- **Key finding**: $5 active cooler is the ONLY action needed to enable full multi-ticker Gate 2 scaling. Install by May 24, resume training May 25 with no thermal risk. **No NVMe upgrade needed**.
+- **Impact**: May 22 checkpoint outcome immediately routes to clear hardware action (order cooler) + resume timeline. Zero ambiguity on Gate 2 feasibility.
+- **Status**: Production-ready for May 22 morning checkpoint decision support
+
+**Exploration Item 97 — Synthesis Contingency Planning** ✅ COMPLETE (Session 1400)
 - Deliverable: `projects/resistance-research/SYNTHESIS_CONTINGENCY_PATHS.md` (599 lines, production-ready)
 - **Scope delivered**:
   1. **WEAK outcome response path**: Phase 2 scope reduction (Domains 56/58 proceed independently due to June 1/May 28 deadlines; 57/59 defer), Phase 1 follow-up options (Batch 2 expansion vs Domain 37 amplification), user decision gate May 22 08:00 UTC
