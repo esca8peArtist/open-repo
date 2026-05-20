@@ -4,6 +4,45 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Deep Content and Preparation Work — May 20, 2026
+
+**Task**: Produce five Phase 3 deepening documents covering bundle content outlines, photo sourcing, Canva design system, revenue/pricing strategy, and Etsy competitive analysis. Decision-independent work that advances the June 22 sprint start and June 22 launch regardless of May 30 scope/Goldenseal/palette decisions.
+
+**Files read before writing**:
+- `phase-3-medicinal-herbs-content-outline.md` — full structural outline, all 5 bundles, May 7, 2026
+- `medicinal-herbs-candidate-list.md` — 12 species, conservation status, sourcing, margin models
+- `PHASE_3_PRODUCTION_TIMELINE.md` — version 4.0, sprint schedule, critical path, supplier timeline
+- `canva-phase-3-adaptation-guide.md` — authoritative Phase 3 palette (May 19, 2026)
+- `CANVA_EXECUTION_PLAYBOOK.md` — Phase 2 Canva template foundation
+- `competitor-landscape.md` — Etsy market structure analysis, April 30, 2026
+- `COMPETITIVE_POSITIONING_ANALYSIS.md` — social platform competitor analysis
+- `phase-3-financial-projections.md` — Kickstarter and hardware financial model (prior scope)
+- `WORKLOG.md` — session log
+- `phase-3-assets/` directory structure
+
+**Research conducted**:
+- Web searches: Etsy medicinal herbs PDF pricing 2026, herbal guide top sellers, digital product profit margins, conversion rates, practitioner niche competitive landscape
+- Wikimedia Commons coverage confirmed for all 12 Phase 3 species
+- Etsy listing direct access blocked (403); competitor data from Google search index and prior research
+
+**Files created (5 deliverables)**:
+
+1. `PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md` — 3,400+ words. Per-bundle section-by-section writing brief deepening the May 7 structural outline. Includes: standardized 8-section template with word allocations, FTC compliance language blocks, writing approach notes, mandatory content checklist per species, cross-reference map (5 shared species across 9 bundle appearances), shared-species efficiency table (~4-5 sprint hours saved), daily word count target table (D1–D17), and pre-sprint writing task list. Quality gate checklist per section.
+
+2. `PHASE_3_PHOTO_SOURCING_AND_BRIEF_REFINED.md` — 2,200+ words. Platform coverage analysis (Wikimedia vs. iNaturalist vs. Unsplash by content type), per-bundle cover selection with sourcing paths and fallbacks, physical photography brief for June 17-21 Mountain Rose Herbs studio session (complete shot list for all 5 bundles, 30 shots), studio setup instructions (lighting, camera, props), cull and edit protocol, stock platform search tips, attribution log template with file naming convention, week-by-week photography checklist (May 26–June 21).
+
+3. `PHASE_3_CANVA_DESIGN_SYSTEM.md` — 1,800+ words. Resolves the Decision 3 palette discrepancy in favor of canva-phase-3-adaptation-guide.md (May 19) as authoritative. Specifies: all 6 hex codes with Brand Kit loading instructions, complete typography system (3 fonts, sizes, rules), cover template structural diagram (annotated), interior page template structural diagram, per-bundle visual differentiation brief (how Women's Health and Immunity differ despite sharing Burgundy; how Respiratory and Digestive differ despite sharing Sage Green), Canva workflow from upload to export, batch vs. manual workflow decision, complete export specifications (bundle PDFs, Etsy images, zone cards), Google Docs fallback path, pre-upload design quality checklist.
+
+4. `PHASE_3_REVENUE_AND_PRICING_STRATEGY.md` — 1,800+ words. Per-bundle production COGS table (hours × imputed rate + design + photo allocation), Etsy fee structure with per-transaction math at $20 and $22 price points, break-even unit analysis (all five bundles break even at 23-24 sales), practitioner 10-pack P&L (higher margin, lower break-even), launch discount policy (no launch discount recommended), multi-bundle Complete Library offer ($85 for 5 bundles), Etsy price band analysis ($3-10, $10-20, $18-30, $30-75), specific competitor pricing benchmarks, steady-state revenue projections (3 scenarios: $580/month conservative → $2,120/month optimistic), forager cohort cross-sell revenue quantification ($1,500 Week 1-2 at August launch), Option A vs. Option C 12-month revenue gap model (~$5,600).
+
+5. `PHASE_3_COMPETITIVE_ANALYSIS.md` — 1,800+ words. 10 competitor profiles (positioning, structure, pricing, reviews, what works, what is missing, threat level). Market gap analysis (5 gaps Seedwarden fills: themed bundles, cultivation depth, conservation narrative, practitioner FTC framing, forager-to-herbalist progression). Positioning statement. SEO differentiation strategy (long-tail cultivation keywords vs. breadth terms). Practitioner tier as revenue moat. Review velocity strategy (5 reviews per bundle by Day 14 via forager cohort email).
+
+**No image downloads this session. No supplier contacts initiated (supplier inquiry deadline was May 20 — verify sent status per PHASE_3_PRODUCTION_TIMELINE.md).**
+
+**Critical note**: Decision 3 (palette) is now documented as resolved — canva-phase-3-adaptation-guide.md (May 19) is authoritative. Load 6 Phase 3 hex codes into Canva Brand Kit by June 21 (hard deadline per production timeline).
+
+---
+
 ## Seedwarden Agent Session — Track B Execution Pre-Staging (Exploration Queue Item 100) — May 20, 2026
 
 **Task**: Produce comprehensive execution pre-staging document for Track B May 30–June 22 launch window. Four deliverable sections: asset inventory audit, execution gap map, risk register, execution checkpoint calendar with decision gates.
