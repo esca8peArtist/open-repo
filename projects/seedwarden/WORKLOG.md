@@ -4,6 +4,37 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Critical Path Production Planning (Full Scope) — May 20, 2026
+
+**Task**: Phase 3 Medicinal Herbs production timeline and critical path analysis for pre-May-30 scope/timing decision. Produce complete Gantt CSV and verify critical path document coverage against full task spec.
+
+**Files audited before writing**:
+- `phase-3-medicinal-herbs-critical-path.md` (v5.0, 2800+ words): Production-ready. Covers all six task spec sections — herb selection + sourcing timeline by tier, writing schedule (week-by-week with daily breakdown), Canva design timeline, photography staging, upload sequence + gate status, risk analysis. Three appendices (FTC quick reference, May 30 decision table, pre-sprint checklist). Confirmed production-ready for May 30 decision.
+- `phase-3-medicinal-herbs-gantt-timeline.md` (v2.0): Confirmed production-ready. Pre-sprint Gantt (May 26–Jun 21) + 22-day sprint Gantt (Jun 22–Jul 13) + critical path chain diagram + float table + dependency map + shared-species dependency table + three risk mitigation checkpoints (Jun 30 / Jul 7 / Jul 13) + worst-case recovery paths (5-day and 10-day overrun) + daily milestone reference table.
+- `phase-3-execution-gantt.csv` (prior session): Existed at 35 rows from an earlier session. Solid structure but misaligned with v2.0 Gantt checkpoint structure, missing revenue impact column and decision gate markers.
+- `phase-3-medicinal-herbs-production-timeline.md` (v5.0, 2500+ words): Additional comprehensive document covering gate conditions, sourcing Tiers 1–3, launch sequence rationale, detailed sourcing analysis.
+- `phase-3-medicinal-herbs-content-outline.md`: 5-bundle content spec with word targets, per-species section briefs, FTC framing, shared-species notes. Used to verify writing hour estimates and revenue break-even math.
+- `phase-3-medicinal-herbs-sourcing-guide.md`: Per-species photo sourcing + supplier contacts + lead times. Verified alignment with CSV Gantt supplier deadline rows.
+- `phase-3-assets/PHASE_3_EXECUTION_GUIDE.md`: Phase 3 master execution guide. Confirmed Section 2 timeline matches critical path document upload sequence and gate dates.
+- `WORKLOG.md`: Prior session entries reviewed for context and continuity.
+
+**Decisions made during session**:
+- Critical path document (v5.0) and Gantt markdown (v2.0) confirmed production-ready with no gaps relative to task spec. No revision needed.
+- `phase-3-execution-gantt.csv` upgraded to v2.0 (36 data rows + header). Key additions: three `[DECISION]` rows with decision logic and fallback paths; three `[CHECKPOINT]` rows with green conditions and contingency triggers; five `[CONTINGENCY]` rows with explicit activation triggers and revenue impact; three `[REVENUE MODEL]` rows covering break-even per bundle, 12-month projection, and forager cohort attach rate model; revenue/decision gate column added to every row; notes column expanded to include FTC mandatory language examples, species-specific accuracy requirements, and practitioner 10-pack pricing rationale.
+- Revenue break-even confirmed: 14–17 units per bundle at $20–22 (based on 13–16 hrs × $25/hr imputed COGS). 5-bundle portfolio break-even: ~75–90 total sales. 12-month projection: $2,100–$3,500 guide sales alone; $5,000–$7,000 with practitioner 10-pack tier active.
+- Both launch gates (forager cohort 21.3% / native plants conversion 2.24%) confirmed cleared with margin. No further monitoring required before Jun 22 sprint start.
+
+**Files created/updated**:
+
+1. `phase-3-execution-gantt.csv` — upgraded from prior session (35 rows) to v2.0 (36 data rows). Full structured Gantt covering: pre-sprint supplier deadlines (Jun 8 / Jun 15 hard deadlines with zero float), three decision gates (May 30 — scope / Goldenseal path / palette), 22-day sprint by day (D1–D22) with phase / date / track / task / type / duration / owner / dependencies / float days / critical path flag / revenue or decision gate / notes columns, three formal checkpoints (Jun 30 / Jul 7 / Jul 13) with green conditions and contingency triggers, five post-sprint milestones (Jul 20 Immunity / Aug 3 Digestive), three revenue model rows (break-even / 12-month projection / attach rate model), five contingency paths with explicit activation triggers.
+
+**No image downloads this session** (planning/CSV work only).
+**No supplier contacts initiated** (outreach calendar documented in pre-sprint checklist of critical path doc; user executes starting June 1).
+
+**Completion status**: All Phase 3 pre-decision deliverables production-ready for May 30 scope decision. Three decisions required May 30: (1) sprint scope A/B/C, (2) Goldenseal path, (3) palette finalization timeline. Goldenseal order deadline June 8 is the next hard action gate.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Pre-Decision Critical Path and Gantt Timeline — May 20, 2026
 
 **Task**: Pre-decision Phase 3 production timeline and critical path analysis for May 30 scope decision. Produce two production-ready deliverables: (1) `phase-3-medicinal-herbs-critical-path.md` (2,800+ words, full critical path analysis with all spec sections), (2) `phase-3-medicinal-herbs-gantt-timeline.md` (Gantt-style timeline with critical path highlighted, float days identified, dependencies marked, and three risk mitigation checkpoints).
