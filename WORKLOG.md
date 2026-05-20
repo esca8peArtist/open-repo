@@ -1,5 +1,31 @@
 # Work Log
 
+## Session RESEARCH-AGENT (May 20) — Phase 5 Wave 2 Veterinary Care Pre-Research Complete
+
+**Session Type**: Deep research pre-execution for systems-resilience Phase 5 Wave 2
+
+**Output**: `projects/systems-resilience/phase-5-veterinary-care-research.md`
+
+**Key Findings**:
+
+1. **Critical error corrected**: The preliminary draft (`phase-5-wave-2-veterinary-care-guide.md`) lists injectable penicillin and oxytetracycline (LA-200) as "Confirmed OTC availability (as of 2026)" — this is wrong. FDA GFI 263 (effective June 11, 2023) moved all medically important antibiotics — including injectable penicillin, LA-200 oxytetracycline, tylosin, gentamicin, and sulfonamides — to prescription-only status. Banamine (flunixin meglumine) has always been prescription-only. This error needs correction before full production.
+
+2. **What remains OTC confirmed**: Vaccines (all species), dewormers/anthelmintics, ionophores, probiotics, electrolytes, epinephrine, topical wound care, nutritional supplements. Erysipelas vaccine for pigs confirmed OTC (vaccines were explicitly excluded from GFI 263).
+
+3. **Shortage data updated**: 245 USDA shortage areas across 47 states as of 2026 (up from 243 in 2025); 3.4% of vets in food animal practice; graduate entry rate dropped from ~40% (40 years ago) to 3.3% (2024); 15% total food/mixed animal vet decline past decade; Rural Veterinary Workforce Act (H.R. 2398/S. 1163) pending — would make VMLRP tax-exempt, adding ~75 vets/year.
+
+4. **RHDV2 Midwest risk**: Minnesota confirmed domestic rabbit cases; South Dakota endemic in wild populations. No US-approved vaccine. Zone 5 homesteaders with meat rabbits need specific RHDV2 biosecurity protocol.
+
+5. **International models documented**: CAHW model (Ethiopia, Kenya, Uganda) shows community-trained lay practitioners can significantly reduce livestock disease burden and achieve higher vaccination coverage than traditional government programs. FAO/WVA/HealthforAnimals blended learning model (2025). Key transferable: referral-focused training, fee-for-service sustainability, community trust.
+
+6. **Telemedicine update**: AVMA amended telemedicine policy December 2025 to allow emergency-only consultations without prior VCPR — useful bridge resource but connectivity-dependent and prescription authority still requires established VCPR.
+
+7. **All 6 flagged citation gaps from preliminary draft's Production Notes filled**: RHDV2 Midwest, Erysipelas vaccine OTC status, GFI 263 antibiotics, FAMACHA training, egg binding chickens, Lyme/ringworm Zone 5. 60 total sources documented.
+
+**Elapsed Time**: ~1 session
+
+---
+
 ## Session 1428-ORCHESTRATOR (May 20, 17:19–17:40 UTC) — Orientation Complete; Exploration Queue Verified; Ready for May 21 Synthesis
 
 **Session Type**: Autonomous project orchestration with Exploration Queue verification
