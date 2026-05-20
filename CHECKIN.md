@@ -1,3 +1,49 @@
+## Since Last Check-in (Session 1404-ORCHESTRATOR, May 20 08:52–09:15 UTC) — Fix open-repo Phase 5.1 Critical Defects + Update Orchestration Files
+
+**Session Status**: ✅ **OPEN-REPO PHASE 5.1 CRITICAL DEFECTS ALL FIXED** (production-ready, awaiting user merge approval) | ✅ **LIBZIM INTEGRATION TESTS ADDED** (4 new tests, 88 total passing) | 🟢 **MVP NOW UNBLOCKED FOR MERGE** | 📊 **USAGE NOMINAL** (0.3%, minimal session burn)
+
+### What Was Accomplished (Session 1404)
+
+**Open-Repo Phase 5.1: All Critical Defects Fixed** ✅ COMPLETE
+- **Session 1403 identified three production-risk defects blocking MVP merge**; all now resolved:
+  1. ✅ **Valid 48×48 PNG fallback** — Replaced malformed PNG (IHDR 48×48, IDAT 1×1 with invalid CRC) with properly generated transparent PNG via struct.pack + zlib.compress. _get_illustration_bytes() now returns fallback when no file provided.
+  2. ✅ **Xapian FTS enabled** — Added config_indexing(True, lang) call to _apply_metadata_to_creator(). Full-text search feature now fully operational (was: silently disabled despite being advertised).
+  3. ✅ **LibZIM integration tests** — Added 4 comprehensive tests in TestLibZIMIntegration:
+     - test_fallback_png_is_valid_48x48 — validates IHDR width/height are exactly 48×48
+     - test_fallback_png_always_returned — verifies fallback used when no file provided
+     - test_config_indexing_call_in_metadata_apply — validates config_indexing(True, "eng") called
+     - test_zim_magic_bytes_present — validates ZIM file creation and integrity
+- **Test Results**: All 88 tests pass (includes 4 new libzim tests, 0 regressions)
+- **Commits**:
+  - 198a146d: fix(open-repo): Phase 5.1 critical defects — PNG, indexing, libzim tests
+  - 512fa3df: docs(open-repo): Session 1404 — Phase 5.1 critical defects resolved, MVP ready to merge
+  - 76ef2286: chore(orchestrator): session 1404 — open-repo Phase 5.1 critical fixes complete
+- **Status**: **PRODUCTION-READY** — All critical blockers resolved. Awaiting user merge approval.
+
+### What's In Progress
+
+Nothing — all ready work for next scheduled events (May 21 synthesis, May 22 checkpoint).
+
+### Needs Your Input
+
+**🟢 OPEN-REPO MERGE APPROVAL** (no rush, Phase 5.1 MVP is ready)
+- User decision: Approve merge for open-repo Phase 5.1 MVP (all critical defects fixed, code production-ready)
+- Timeline: Can merge anytime after user review; recommend May 25-26 per Session 1403
+
+**🔴 CRITICAL — Stockbot SSH Auth** (Deadline May 22 13:30 UTC, **~29 hours remaining**)
+- Issue persists: Orchestrator ED25519 key NOT authorized on Jetson. May 22 checkpoint will execute with Lever A config (same as May 19 failure) unless SSH access is fixed.
+- **User action required** (same as Session 1403): (A) Add orchestrator public key to Jetson authorized_keys, OR (B) manually SSH and run 5-min Lever B config fix
+
+**📧 ACTION TONIGHT — Signal Log Fill** (May 20 ~22:00 UTC, ~15 minutes, same as Session 1403)
+- File: `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+- Section: "May 20 — Day 2 Snapshot" (update Gist view counts + any new replies)
+
+### Session Notes
+
+This session completed the Session 1403 code audit findings for open-repo. All three production-risk defects are fixed and validated with new integration tests. Phase 5.1 MVP is now unblocked for merge. The remaining work on this project is Phase 5.2 (post-merge): unused compression parameter, stale TODO markers, datetime deprecation warning, README claim mismatch. These are deferred and non-blocking.
+
+---
+
 ## Since Last Check-in (Session 1403-ORCHESTRATOR, May 20 00:00–02:30 UTC) — Pre-Synthesis Audit + Open-Repo Code Review (Critical Findings)
 
 **Session Status**: ✅ **RESISTANCE-RESEARCH PRE-SYNTHESIS AUDIT COMPLETE** (all files verified, ready for May 21 execution) | ⚠️ **OPEN-REPO PHASE 5.1 AUDIT COMPLETE — CRITICAL DEFECTS FOUND** (MVP not ready, requires follow-up fixes) | 🔴 **STOCKBOT SSH AUTH BLOCK UNRESOLVED** (deadline May 22 13:30 UTC, 29 hours remaining) | 📊 **USAGE HEALTHY** (0.3%, well under limit)
