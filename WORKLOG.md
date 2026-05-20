@@ -1,5 +1,33 @@
 # Work Log
 
+## Session 1390-RESEARCH-AGENT (May 20, 2026) — Phase 5 Candidate 1 Pre-Deployment Verification
+
+**Task**: Verify Phase 5 Candidate 1 (ZimWriter/libzim) implementation readiness; produce pre-deployment documentation.
+
+### Work Completed
+
+**1. Codebase audit** — Read all Phase 5 documentation, feature branch diffs, test file, and live codebase:
+- Confirmed `feature/zimwriter-libzim-activation` (commit `ec0ff7be`) has all 5 code changes present
+- Verified 84 tests pass on master (`84 passed in 0.14s`) against stub implementation
+- Confirmed libzim 3.10.0 aarch64 wheel available on PyPI (no compilation needed)
+- Confirmed Xapian is bundled in libzim wheel — no system Xapian packages required
+
+**2. New finding not in prior documentation** — `creator.config_indexing()` appears in the docstring example in the feature branch but is NOT called in the actual production `else` block. This means Xapian FTS is silently disabled in the current implementation. Flagged in both deliverables as a P1 Phase 5.2 item (one-line fix).
+
+**3. Deliverables written**:
+- `projects/open-repo/phase-5-candidate-1-implementation-verification.md` (1,600+ words) — full audit with live system verification, Xapian gap documented, risk register, go/no-go matrix
+- `projects/open-repo/candidate-1-implementation-checklist.md` (1,800+ words) — hour-by-hour Path A (0.5-1h merge) and Path B (8-11h from scratch), Docker test environment, Definition of Done
+
+### Key Findings
+- 5 code changes all verified present and correct on feature branch
+- libzim 3.10.0 available; wheel installs without compilation on aarch64
+- Xapian FTS NOT enabled in feature branch production code (docstring says yes, live code says no)
+- zimcheck v3.1.3 available in apt, not yet installed
+- Migration 003 chains correctly from 002 (federation_conflicts)
+- No blockers to merge — recommendation: GO for May 25-26 user approval
+
+---
+
 ## Session 1390-ORCHESTRATOR (May 20, 2026 — 03:52–04:30 UTC) — Block Verification + Synthesis Readiness + Queue Assessment
 
 **Status**: ✅ **BLOCK VERIFICATION COMPLETE** | ⏳ **MAY 21 SYNTHESIS READY** | 🎯 **ALL PROJECTS BLOCKED ON USER ACTIONS — EXPLORATION QUEUE AVAILABLE**
