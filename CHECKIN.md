@@ -59,28 +59,51 @@
 **May 21 evening (post-synthesis)**:
 3. **Phase 2 scope decision** — Option A (immediate Wave 1) / B (defer to June 1) / C (conditional) — Phase 2 activation checklist ready
 
+**May 21 19:00–20:00 UTC (tomorrow)**:
+3. **Resistance-Research Synthesis Execution** — Autonomous execution (fully staged, no user input needed during synthesis). Post outcome to CHECKIN.md afterward.
+
+**May 21 evening (post-synthesis)**:
+4. **Phase 2 scope decision** — Based on synthesis outcome (STRONG/MODERATE/WEAK), choose Option A/B/C/D using phase-2-research-activation-checklist.md
+
 **May 25-26**:
-4. **Open-repo Phase 5.1 approval** — Approve candidate merge to enable May 28 pre-deployment testing
+5. **Open-repo Phase 5.1 approval** — Approve candidate merge to enable May 28 pre-deployment testing
 
 **May 30**:
-5. **Seedwarden Phase 2 launch** — Execute 6 user gates (all documented, zero setup friction)
-6. **Seedwarden Phase 3 scope** — Choose Option A/B/C/D for June 22–July 13 execution
+6. **Seedwarden Phase 2 launch** — Execute 6 user gates (all documented, zero setup friction)
+7. **Seedwarden Phase 3 scope** — Choose Option A/B/C/D for June 22–July 13 execution
 
 ### Blocks Status
 
-**Unchanged active blocks** (3):
-- 🔴 **Stockbot SSH auth + Lever B config** (May 22 13:30 UTC) — ~13.5 hours remaining; user action required; no autonomous workaround
-- 🟡 **Seedwarden test print, cybersecurity-hardening VeraCrypt, mfg-farm test print** — All awaiting user action
+**Active critical block** (1):
+- 🔴 **Stockbot SSH auth + Lever B config** (May 22 13:30 UTC deadline) — **~58 HOURS REMAINING**. User action required NOW. No autonomous workaround. Either: (A) Add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run 5-min config fix (documented in BLOCKED.md).
+
+**Unchanged secondary blocks** (4):
+- 🟡 **Seedwarden Track A**: 3 tag corrections + Etsy account verification (user action)
+- 🟡 **Cybersecurity-hardening Phase 1**: VeraCrypt pre-boot restart (user Windows action)
+- 🟡 **Mfg-farm**: Test print execution (user action)
+- 🟡 **Resistance-research Phase 2 activation**: Awaiting synthesis outcome May 21 evening + user Phase 2 scope decision
 
 **No new blockers discovered.**
 
-### Recommended Priorities for Next Session
+### Recommended Sequence for Next 72 Hours
 
-1. **May 21 19:00–20:00 UTC**: Execute May 21 synthesis (autonomous, fully staged)
-2. **May 21 evening**: User decision on Phase 2 scope (Option A/B/C) + launch kickoff if synthesis is STRONG/MODERATE
-3. **May 22 morning**: Stockbot SSH auth deadline escalation check (13.5 hours to 13:30 UTC deadline)
-4. **May 22-24**: Open-repo pre-deployment testing prep (if user approves Phase 5.1 merge by May 26)
-5. **May 30**: Seedwarden launch execution (all user gates documented, ready to execute)
+**URGENT (TODAY — May 20)**:
+1. **🔴 Stockbot SSH auth** — Add key to Jetson OR SSH manually for config fix (DEADLINE: May 22 13:30 UTC)
+
+**TONIGHT (May 20 evening)**:
+2. **Resistance-Research signal log** — Fill signal log through May 21 10:30 UTC to trigger tomorrow's synthesis
+
+**TOMORROW (May 21)**:
+3. **May 21 19:00–20:00 UTC**: Autonomous synthesis execution (orchestrator runs; no user input during synthesis)
+4. **May 21 20:00 UTC**: Post synthesis outcome to CHECKIN.md
+5. **May 21 evening**: Work through phase-2-research-activation-checklist.md to launch Phase 2 research (Option A/B/C/D)
+
+**May 22-24**:
+6. **May 22 morning checkpoint**: Verify stockbot SSH auth is fixed (if not done already) — critical for May 22 13:30 UTC checkpoint
+7. **Open-repo Phase 5.1 testing prep**: If user approves merge by May 26
+
+**May 30**:
+8. **Seedwarden Phase 2 launch**: Execute 6 user gates (all documented)
 
 ---
 

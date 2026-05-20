@@ -26,17 +26,23 @@
 
 ### Session Analysis
 
-**Work available but blocked**:
-- **Resistance-research**: Phase 2 synthesis is scheduled for tomorrow (May 21 19:00 UTC). Infrastructure is fully staged. No autonomous work remaining until synthesis execution.
-- **Open-repo**: Phase 5.1 ready for merge (98.2% confidence). Awaiting May 25-26 user approval.
-- **Seedwarden**: All Phase 3 planning complete. Awaiting May 30 user launch decision.
-- **Cybersecurity-hardening**: Phase 1 paused (user Windows restart needed); Phase 2 ready for May 25-27 user review.
+**Autonomous execution status**:
+- ✅ **Resistance-research Phase 2 synthesis**: Fully staged for May 21 19:00–20:00 UTC autonomous execution. Phase 2 activation checklist production-ready. User will decide Phase 2 scope (Option A/B/C/D) evening of May 21 based on synthesis outcome.
+- ✅ **All infrastructure for May 21-30 work complete**: No setup friction; all orchestration documents and production files in place.
 
-**Blocks preventing autonomous work**:
-- 🔴 **Stockbot SSH auth** (CRITICAL, May 22 13:30 UTC deadline) — No workaround; user action required
+**Work available but awaiting external events**:
+- **Open-repo**: Phase 5.1 ready for merge (98.2% confidence). Awaiting May 25-26 user approval.
+- **Seedwarden**: All Phase 3 planning complete. Awaiting May 30 user launch decisions.
+- **Cybersecurity-hardening**: Phase 2 ready for May 25-27 user review; Phase 1 paused pending user Windows restart.
+
+**Critical blockers**:
+- 🔴 **Stockbot SSH auth** (CRITICAL, ~58 hours to May 22 13:30 UTC deadline) — No autonomous workaround; user action required immediately
 - 🟡 **Mfg-farm, Seedwarden Track A, Cybersecurity Phase 1**: All awaiting user action
 
-**Decision**: No additional autonomous work available in high-priority projects. All highest-priority items are either staged for execution (resistance-research synthesis tomorrow) or blocked on user action. Recommend user attention to: (1) stockbot SSH auth deadline (URGENT), (2) resistance-research signal log fill tonight, (3) Phase 2 launch decision tomorrow evening.
+**Session conclusion**: No additional autonomous work remains in high-priority projects. All highest-priority items are either staged for execution (resistance-research synthesis tomorrow) or hard-blocked on user action. Recommended immediate priorities for user: 
+1. **Stockbot SSH auth** — URGENT, deadline ~58 hours from now (May 22 13:30 UTC)
+2. **Resistance-Research signal log** — Fill tonight to trigger May 21 synthesis
+3. **Phase 2 scope decision** — Tomorrow evening post-synthesis outcome
 
 ---
 
