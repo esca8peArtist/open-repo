@@ -2,6 +2,48 @@
 
 ---
 
+## May 20, 2026 — Resistance Research Agent — Phase 2 Domain 59 Research Outline
+
+**Status**: COMPLETE — `PHASE_2_DOMAIN_59_RESEARCH_OUTLINE.md` updated (1,800+ words, full Phase 2 production outline). Updated from May 15 prior outline to incorporate OBBBA Medicaid implementation confirmation, ITEP/CBPP CTC structural exclusion findings, Rastogi/Laurison 2025 widening turnout gap data, and full Phase 2 cross-domain architecture (Domains 56, 57, 37, 42, 38).
+
+**Deliverable**: `/projects/resistance-research/PHASE_2_DOMAIN_59_RESEARCH_OUTLINE.md`
+
+**Contents**:
+- Status summary for June 1 approval decision — confirmed no blocking dependencies; production can begin June 15
+- Core thesis: economic precarity as democratic design failure; five-pathway causal structure; reframe from poverty advocacy to democracy infrastructure advocacy
+- Section 1 (Quantified Barriers): Research gaps confirmed — state-level 2026 midterm turnout data, OBBBA Medicaid implementation state notification timeline (June-August 2026), CTC structural exclusion confirmed by ITEP/CBPP tracking; source list 8 primary sources
+- Section 2 (Five Causal Pathways): All five pathways confirmed in canonical document; production gaps — cross-pathway compound exposure modeling, post-2024 gendered participation rates, 2025-2026 gig economy applied political behavior update; source list 8 primary sources
+- Section 3 (Policy Leverage Windows): Five time-bounded windows — CTC June-August 2026 (ACTIVE), Medicaid work requirements response June-August 2026 (ACTIVE/WORSENING), federal minimum wage post-2026 midterms, housing 2027, gig worker reclassification state track
+- Section 4 (Movement Leverage): Five constituency clusters with contact intelligence; strongest-per-window mapping; coalition gap identified — democracy-participation argument not yet assembled into existing economic justice coalition
+- Section 5 (Cross-Domain Architecture): Explicit connecting analysis — Domain 57 (institutional/material democratic capacity crisis; both incomplete without the other), Domain 56 (contractor classification as private-sector mirror of Schedule F civil service stripping), Domain 37 (income-turnout gap explains why Domain 37 suppression mechanisms work on targeted populations), Domain 42 (overlapping populations face drug enforcement + economic precarity + disenfranchisement simultaneously), Domain 38 (regulatory capture/contractor classification as parallel design choices)
+- Production timeline: 50-65 hours, June 15-July 15; Phase 1 research gap-closing (20-25 hrs), Phase 2 writing/integration (20-25 hrs), Phase 3 distribution prep (10-15 hrs); condensed brief deliverable by June 25 for CTC advocacy window
+- Blocking dependencies: none; risk register with four risks and mitigations
+
+**Research updates incorporated from web search (May 20)**:
+- OBBBA Medicaid work requirements: December 30, 2026 effective date confirmed; states must notify enrollees June-August 2026; Urban Institute projects 4.9-10.1M fewer enrollees in 2028
+- CTC: OBBBA's $2,200 maximum excludes lowest-income quintile; Senate Finance Committee proposal "does nothing for 17 million children" (CBPP May 2026 tracking); American Family Act/fully-refundable CTC confirmed as advocacy target
+- Income-turnout gap: Rastogi and Laurison (Sociological Perspectives, 2025) — 17 points in 2016, 27 points in 2020, 42 points confirmed in 2024 presidential election
+
+---
+
+## May 20, 2026 — General Research Agent — Synthesis Contingency Paths
+
+**Status**: COMPLETE — `SYNTHESIS_CONTINGENCY_PATHS.md` (production-ready, ~3,800 words). Pre-staged for May 21 evening use if synthesis outcome is WEAK or TOO_EARLY.
+
+**Deliverable**: `/projects/resistance-research/SYNTHESIS_CONTINGENCY_PATHS.md`
+
+**Contents**:
+- Executive summary decision tree (STRONG/MODERATE → activation; WEAK/TOO_EARLY → this document)
+- Section 1: WEAK outcome response — definition, immediate autonomous actions, Phase 2 scope reduction with staggered domain sequence (D56 June 1 / D58 July 1 / D59 Aug 1 / D57 Aug 10), three Phase 1 follow-up options (A: Batch 2 expansion / B: Domain 37 amplification / C: narrative bridge), user decision gates (May 22 08:00 UTC)
+- Section 2: TOO_EARLY outcome response — classification definition, mandatory May 25 resolution gate, re-synthesis triggers, parallel autonomous work during wait period
+- Section 3: Domain independence assessment — scoring matrix for all four Phase 2 domains (timing urgency, synthesis dependency, research effort, movement leverage); D56 + D58 proceed May 22 regardless; D59 + D57 deferred
+- Section 4: Resource allocation plan — priority-ordered work items for May 22–31, capacity analysis (24 hours of required work within 36–45 hour capacity window), decision gates with exact UTC timestamps
+- Appendix: Full text-format decision tree for all four synthesis outcomes
+
+**Source authority**: MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md, PHASE_2_WEAK_OUTCOME_CONTINGENCY_ROADMAP.md, WEAK_OUTCOME_CONTINGENCY_PLAN.md, SYNTHESIS_SIGNAL_LOG.md, ORCHESTRATOR_STATE.md, PROJECTS.md resistance-research section.
+
+---
+
 ## May 20, 2026 — Session 1382 (Resistance Research Agent) — Phase 3 Candidate 2 Institutional Playbooks Expansion
 
 **Status**: COMPLETE — `phase-3-institutional-playbooks.md` expanded from 7,000-word outline to 13,200-word comprehensive implementation guide. Committed to master.

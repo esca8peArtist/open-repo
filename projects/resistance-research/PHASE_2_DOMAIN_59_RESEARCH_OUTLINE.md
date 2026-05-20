@@ -1,346 +1,330 @@
-# Phase 2 Domain 59: Economic Precarity & Civic Participation Crisis
+---
+title: "Phase 2 Domain 59 Research Outline — Economic Precarity & Civic Participation Crisis"
+created: 2026-05-20
+status: "production-ready outline — June 1 approval decision"
+session: "Resistance Research Agent — Domain 59 Phase 2 research outline (updated)"
+canonical_document: "domains/domain-59-economic-precarity-and-civic-participation.md"
+canonical_word_count: 8,450
+production_window: "June 15 – July 15, 2026 (50-65 hours)"
+distribution_target: "July 15, 2026 (primary); June 1–15 (CTC/RTC advocacy window supplemental)"
+priority_level: "HIGH — Phase 2 second-priority peer to Domain 57; highest-priority economic-structural domain in Phase 2 queue"
+blocking_dependencies: none
+cross_references:
+  - PHASE_2_DOMAIN_57_RESEARCH_OUTLINE.md
+  - PHASE_2_ACTIVATION_AGENT_BRIEFS.md
+  - SYNTHESIS_CONTINGENCY_PATHS.md
+  - domains/domain-59-economic-precarity-and-civic-participation.md (8,450-word canonical)
+  - domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md
+  - domains/domain-37-federal-executive-interference-2026-midterms.md
+  - domains/domain-42-drug-policy-democratic-legitimacy-regulatory-capture.md
+  - domains/domain-38-regulatory-capture-ai-governance.md
+---
 
-**Scope**: May 15, 2026 (outline staging)  
-**Production timeline**: June 15 – July 15, 2026 (50-60 hours)  
-**Distribution deadline**: July 15, 2026  
-**Priority level**: HIGH — Time-sensitive RTC/CTC advocacy window (June-Aug 2026), child tax credit expansion pending congressional action
+# Phase 2 Domain 59 Research Outline
+## Economic Precarity and the Civic Participation Crisis
+
+*Updated: May 20, 2026 — Post-OBBBA confirmation, post-Laurison/Rastogi 2025 turnout data, pre-Phase 2 approval decision*
 
 ---
 
-## Central Thesis
+## Status Summary for June 1 Decision
 
-Economic precarity is a structural barrier to democratic participation. Wage stagnation, housing costs, healthcare debt, childcare inaccessibility, and gig-economy labor insecurity create **time poverty** — the material incapacity to engage in civic participation. When low-income Americans work 50+ hour weeks across multiple jobs, spend 15-20+ hours on childcare, and face medical debt crises, they have neither the time nor the cognitive resources for voting, organizing, testimony, or political engagement. This is not individual choice — it is structural design. The consequence is democratic exclusion of 40% of the electorate whose economic precarity directly suppresses their political voice. Federal policy can reverse this exclusion through wage floors, housing investment, healthcare cost containment, and childcare accessibility — mechanisms that simultaneously increase democracy participation and improve material conditions.
+Domain 59 has a **complete 8,450-word canonical research document** (`domains/domain-59-economic-precarity-and-civic-participation.md`) staged and verified as of May 15, 2026. This outline governs the June 15-July 15 production phase: the expansion from canonical research to distributable advocacy material, coalition outreach preparation, and integration into the Phase 2 distribution framework. No prerequisite research is blocking. If the user approves Phase 2 expansion on or after June 1, Domain 59 production can begin the same day.
 
----
-
-## 1. Quantified Barriers — The Time-Poverty Architecture
-
-### 1.1 Work Hours & Wage Stagnation
-
-**Current data (May 2026)**:
-- Full-time wage baseline: $33,280/year (~$16/hour), unchanged in real terms since 1998 (30-year stagnation)
-- Multi-job prevalence: 8.4% of workforce (~13M Americans) work 2+ jobs, concentrated in <$35K income bracket (Bureau of Labor Statistics, March 2026)
-- Gig economy workers: 59M (~18% of workforce) as primary or secondary income, average earnings $18K/year (Pew, 2026)
-- Commute time burden: 27.5 minutes average (one-way), low-income workers average 32+ minutes (longer distance = cheaper housing tradeoff)
-- Work-week reality: 50+ hours/week across jobs + 2 hours commute = 52 waking hours/week for paid labor alone
-
-**Civic participation time requirement**:
-- Voting logistics (travel, wait): 45-90 minutes per election cycle (2x/year in 2026 midterm context)
-- Organizing participation (union meetings, tenant councils, political campaigns): 4-10 hours/month for basic engagement
-- Testimony/advocacy (hearings, public comments, letters): 3-5 hours per issue per year
-- Research/information consumption: 5-10 hours/month for informed participation
-- **Total minimum**: 15-20 hours/month (180-240 hours/year) for functional democratic engagement
-
-**Availability gap**:
-- Full-time wage worker with childcare: 168 hours/week – 50 work – 15 childcare – 56 sleep – 20 household = 27 hours/week discretionary
-- Multi-job worker: 168 – 50-60 work – 15 childcare – 56 sleep – 20 household = 17-27 hours/week (heavily constrained)
-- Gig economy worker (variable): 168 – 40-60 work – 10-20 childcare – 56 sleep – 20 household = 32-42 hours/week (fragmented, not consolidated for participation)
-- **Result**: Civic participation requires 4-6 hours consolidated time/month — more than many low-income workers have consistently available
-
-### 1.2 Housing Costs as Wage Suppressor
-
-**Current data (May 2026)**:
-- Median rent (US): $2,100/month (~$25K/year, 75% income for full-time $33K wage worker)
-- Homeownership down-payment barrier: $50K-80K median (2 years of gross income for median worker)
-- Rent-to-income ratio: 30% standard; 40%+ = cost-burdened; 50%+ = severely cost-burdened
-- Severely cost-burdened households: 21M Americans (~17% of renter households), concentrated in major metros and rural areas
-- Consequence of cost-burden: Food insecurity increases 28-34% per 10% rent increase, healthcare deferral increases 22-26%
-
-**Civic participation impact**:
-- Cost-burdened households: Move every 2-3 years (lost voter registration, broken civic connections, organizational discontinuity)
-- Eviction threat (30M renters at <2 months' savings): Tenant organizing suppressed by retaliation fear; 65% of evicted households do not participate in post-eviction civic organizing (Eviction Lab, 2026)
-- Geographic sorting: Affordable housing in distant suburbs/rural areas = 45+ minute commutes, reducing time/cognitive load for local participation
-
-### 1.3 Healthcare Debt & Medical Crisis as Civic Suppressant
-
-**Current data (May 2026)**:
-- Medical debt: $188B owed by 43M Americans (41% of adult population has outstanding medical debt)
-- Bankruptcy prevalence: 66% of US bankruptcies involve medical debt (up from 46% in 2001)
-- Emergency room debt: Single ER visit = $2,000-5,000 average; uninsured = $8,000-12,000
-- Medicaid coverage gap: 2.5M Americans in non-expansion states have no insurance; 8M in states with coverage gaps
-- Consequence of medical debt: Wage garnishment (average $200-400/month), asset seizure (vehicles, homes), credit destruction
-- Cognitive load: Medical debt crisis consumes 8-15 hours/month (phone calls, payment negotiations, collection disputes, documentation)
-
-**Civic participation impact**:
-- Medical crisis households: Participation drops 45-60% during crisis period; 30% of non-participants cite "too busy handling medical crisis" (Gallup, 2026)
-- Wage garnishment: Further reduces disposable income, increasing precarity
-- Dental care deferral: 38% of low-income Americans defer dental care due to cost, leading to untreated infection, time away from work/organizing
-
-### 1.4 Childcare Inaccessibility & Women's Exclusion
-
-**Current data (May 2026)**:
-- Childcare cost (US median): $18,000-27,000/year (ages 0-5); 32% of household income for median household
-- Childcare workforce wages: $31K/year average (teacher-level education, minimum); creates childcare job precarity mirroring parent precarity
-- Childcare deserts: 39M children live in areas without adequate childcare; rural/metro underserved equally
-- Maternal employment barrier: 4M women out of workforce primarily due to childcare cost (Pew, 2026)
-- Single mothers (21M in US): Average household income $31K; childcare represents 58-65% of income, or work stoppage
-
-**Civic participation impact**:
-- Women with children: Participation rates 18-25% lower than childless women (time and energy devoted to childcare management)
-- Single mothers: Highest precarity; 72% report "cannot attend meetings/voting due to childcare"
-- Organizing/political participation disproportionately impacts mothers (72% participation drop vs. 15-20% for fathers)
-- Women of color: Concentration in childcare deserts, income <$30K, highest exclusion rates (78-82% barriers)
+**June 1 decision gate**: Does the user confirm Phase 2 Path B (expansion into new domains including Domain 59) or a STRONG/MODERATE synthesis outcome directs Phase 2 launch? If yes: Domain 59 production activates June 15, runs parallel to Domain 57 (June 10-August 10), and distributes by July 15 — positioned to reach the Senate Finance Committee reconciliation markup window.
 
 ---
 
-## 2. Causal Pathways — How Economic Precarity Suppresses Democratic Voice
+## Core Thesis
 
-### 2.1 The Time-Poverty Pathway
-Wage stagnation + multi-job requirement → 50+ work hours → 32+ minute commute → 15-20 hours childcare → <15 hours discretionary time/week → Insufficient time for civic participation (requires 4-6 consolidated hours/month) → **Democratic exclusion**
+Economic precarity is a structural barrier to democratic participation — and the correct analytical frame is not poverty advocacy but **democratic design failure**. The United States has constructed a political participation system that nominally grants universal suffrage but materially limits effective civic engagement to households with sufficient income, stable housing, accessible healthcare, and affordable childcare to generate the discretionary time that democratic participation requires.
 
-### 2.2 The Housing-Instability Pathway
-Housing costs 40%+ income → Constant moving threat/actual moves → Voter registration breaks → Organizational disconnection → Community trust erosion (each move = new neighbors, new schools, new organizations) → Loss of civic social capital → **Democratic disengagement**
+The income-based voter turnout gap reached 42 percentage points in the 2024 presidential election — the highest documented in modern US history, widened from 27 points in 2020 and 17 points in 2016 (Rastogi and Laurison, *Sociological Perspectives*, 2025). This widening gap is not explained by political alienation or ideological withdrawal. It is explained by the material structure of **time poverty**: the systematic, quantifiable depletion of discretionary hours that economic precarity produces, through five distinct and documented causal mechanisms.
 
-### 2.3 The Medical-Debt Pathway
-Medical crisis → $2K-5K debt → Wage garnishment $200-400/month → Further income collapse → Cognitive load (payment negotiations 8-15 hours/month) → Reduced cognitive resources for political engagement → **Participation suppression through mental bandwidth exhaustion**
+The thesis has three components. First, wage stagnation, housing costs, healthcare debt, childcare inaccessibility, and gig economy contractor classification each constitute a discrete pathway from material scarcity to civic exclusion — with different populations most exposed to each pathway, and different policy interventions available to interrupt each. Second, these pathways compound across overlapping populations: the single mother with medical debt in a childcare desert is not facing one barrier but five simultaneously. Third, the policy instruments that would interrupt these pathways — CTC expansion, minimum wage increases, housing affordability investment, childcare subsidy, gig worker reclassification — are not welfare measures with civic side effects; they are **democratic infrastructure investments** whose participation returns can be argued on the same grounds that election protection advocates use to defend voting rights legislation.
 
-### 2.4 The Gendered-Caregiving Pathway
-Women + childcare responsibility (72% of unpaid childcare borne by women) → Additional 15-20 hours/week unpaid labor on top of paid work → Highest time-poverty among women (especially single mothers) → Highest democratic exclusion among women with children → **Gendered democratic deficit**
-
-### 2.5 The Gig-Economy Pathway
-Classification as contractor (not employee) → No wage floor, no benefits, variable hours → Must maintain 50+ hours/week work to achieve $25K income → No consolidated time blocks → Cannot commit to regular meetings/organizing → **Structurally unavailable for sustained participation**
+This reframe is Domain 59's primary strategic contribution to the Phase 2 framework: it provides the bridge between economic justice advocacy and democratic renewal advocacy that no existing Phase 1 or Phase 2 domain supplies.
 
 ---
 
-## 3. Current Policy Leverage Windows
+## Section 1: The Time-Poverty Architecture — Quantified Barriers
 
-### 3.1 Child Tax Credit / Advanced Tax Credit (RTC/CTC) Advocacy Window — June-August 2026
+**Research objective**: Establish the hours-based case that economic precarity structurally prevents the consolidation of time required for civic participation. This section is the empirical foundation that makes the democratic design argument defensible to skeptics who treat participation as a preference rather than a material constraint.
 
-**Context**: Biden child tax credit expansion (American Rescue Plan provision) expires December 31, 2025. June 2026 Congress must decide on renewal/expansion.
+**Core data already established in canonical document**:
+- Federal minimum wage at $7.25/hour — seventeen years without adjustment, the longest stagnation in the statute's 87-year history; 20 states still at federal floor covering 60.2 million workers
+- Median full-time wage $33,280/year; real average hourly earnings declined 0.3% April 2025-April 2026 (BLS Real Earnings Summary, April 2026)
+- 8+ million Americans working two or more jobs, concentrated below $35,000 income; average aggregate work hours 50-60/week for multi-job holders
+- 22.7 million renter households cost-burdened (49% of all renters), 12.1 million severely cost-burdened (Harvard JCHS, 2026)
+- 100 million Americans carrying medical or dental debt, $220 billion total household medical debt (CFPB, 2025)
+- Childcare averaging $1,230/month nationally; 51% of Americans in childcare deserts; mothers working full-time spending 19.5 hours/week on combined childcare and household work vs. 12.3 for fathers (BLS American Time Use Survey, 2025)
+- 59 million gig economy participants; 57% working more than 40 hours weekly; no wage floor, no benefits, no predictable scheduling
+- Income-voter turnout gap: 42 percentage points in 2024 (PRRI, 2024; Rastogi and Laurison, 2025)
 
-**Key organizations**: Center on Budget and Policy Priorities (CBPP), Institute on Taxation and Economic Policy (ITEP), Economic Policy Institute (EPI), National Women's Law Center (NWLC)
+**Research gaps to close in production phase (June 15 - July 15)**:
+1. State-level variation in income-turnout gap for 2026 midterm context — current data is 2024 presidential; 2022 midterm precinct-level analysis needed for competitive districts
+2. Updated OBBBA Medicaid work requirement implementation timeline — confirmed December 30, 2026 effective date for work requirements; states must send outreach notices June-August 2026; Urban Institute projects 4.9-10.1 million fewer enrollees in 2028 (high/low mitigation scenarios)
+3. CTC structural exclusion — confirmed: OBBBA's $2,200 maximum CTC excludes the lowest-income families; Senate Finance Committee proposal does nothing for the 17 million children currently excluded (CBPP tracking, May 2026); American Family Act/fully-refundable CTC proposals are the advocacy target
+4. Gig economy schedule predictability research — Bae and Haselswerdt (2023) confirmed in canonical document; 2025-2026 update needed on California rideshare unionization law outcomes and Alabama Portable Benefits Act implementation
+5. Eviction-civic-participation link update — Slee and Desmond (2023) and PNAS (2024) housing voucher study confirmed; check for 2025-2026 replication studies using post-OBBBA housing data
 
-**Mechanism**: $3,000-3,600/child annual tax credit → $250-300/month direct cash assistance → Increase low-income household disposable income $3,000-4,200/year
+**Unique contribution of this section**: The hours calculus — the calculation that a multi-job worker with children has 17-27 hours of discretionary time weekly, that democratic participation requires 4-6 consolidated hours monthly, and that the consolidation requirement is the actual structural barrier — is not established anywhere in the existing literature at this level of specificity. This section is the source of the "time poverty" framing that organizers and Congressional staff can use immediately.
 
-**Democracy impact**: 
-- Childcare cost reduction by 13-17% → 2-3 hours/month freed for participation
-- Medical debt capacity: $250-300/month toward debt reduction = 4-year payoff timeline vs. 8-10 year
-- Work hours: Modest income floor reduces need for second job in 12-15% of affected households
+**Primary sources**: BLS Real Earnings Summary and Multiple Jobholders tables; Harvard JCHS Americas Rental Housing 2026; CFPB medical debt analysis 2025; Care.com 2026 Cost of Care Report; BLS American Time Use Survey 2024 results; PRRI 2024 election survey; Rastogi and Laurison 2025
 
-**Movement leverage**: CBPP + ITEP research infrastructure (5-6 peer-reviewed studies 2024-2026 on cash assistance + civic participation), labor union endorsement infrastructure (AFL-CIO, SEIU already supporting), maternal justice networks (MomsRising, Million Moms, women-of-color coalitions)
-
-**Timeline**:
-- May 22-June 7: Congressional budget proposals released
-- June 15-July 15: Amendment/markup window
-- July 15-August 15: Final vote window (House/Senate committee votes)
-- Distribution opportunity: **June 1 – August 15**: Coordinate briefings with Congressional offices, submit testimony, coordinate media strategy
-
-### 3.2 Minimum Wage Advocacy Windows (2027-2028)
-
-**Opportunity**: 2026 midterms + post-2026 legislative window (2027 new Congress)
-
-**Current baseline**: Federal minimum wage $7.25/hour (since 2009, 17-year stagnation)
-
-**Target**: $15/hour floor (2026 cost of living equivalent: ~$19-21/hour; $15 represents 2015-level minimum)
-
-**Movement leverage**: AFL-CIO, Fight for $15, SEIU, worker cooperatives, economic justice networks
-
-**Timeline**: June 2026 (post-midterm planning) – 2027 (new Congress legislative push)
-
-### 3.3 Housing Advocacy & Zoning Reform Windows (2026-2027)
-
-**Opportunity**: State/local zoning reform (Minneapolis 2020 precedent), post-midterm housing legislative push
-
-**Movement leverage**: Yimbyism + housing justice coalitions (JustFix, TenantUnion, CLT federations), labor unions (construction trades + union housing advocacy), racial justice networks
-
-**Timeline**: June 2026 – 2027 (state legislative sessions)
+**Target length**: 1,200-1,500 words. This is the empirical core; precision matters more than scope.
 
 ---
 
-## 4. Movement Leverage & Organizational Landscape
+## Section 2: Five Causal Pathways — How Precarity Converts to Exclusion
 
-### 4.1 Primary Movement Constituencies
+**Research objective**: Establish that the income-participation gap is not correlational but mechanistically explained through five distinct pathways, each with documented empirical support. This section transforms the statistical finding in Section 1 into a causal argument that can survive peer review and Congressional testimony.
 
-**Labor unions (12.5M members, 10% of US workforce)**:
-- AFL-CIO, SEIU (2.2M public sector), UFCW (1.3M retail/food), CNA (170K nurses), UAW (390K autos)
-- Organizing advantage: Already reaching low-income workers, built-in civic infrastructure (union meetings = participation channel)
-- Alignment: Wage/work-hour justice = core labor mission
-- Leverage point: Union member testimony in Congressional hearings (June-July 2026 RTC window)
+**Pathways established in canonical document**:
 
-**Economic justice networks**:
-- Center on Budget & Policy Priorities (CBPP), Economic Policy Institute (EPI), Institute on Taxation (ITEP), Institute for Women's Policy Research (IWPR)
-- Advantage: Research infrastructure (peer-reviewed studies on economic precarity + civic participation), Congressional testimony credibility
-- Alignment: Economic data → democratic design → civic participation link
-- Leverage point: Peer-reviewed briefings for Congressional offices (40+ studies 2023-2026 on cash + civic)
+1. **The Time-Poverty Pathway** (Section 2.1): Direct time depletion through multi-job work hours + commute + childcare leaves insufficient consolidated hours for sustained civic participation. Voter participation rates 38-48 percentage points lower at bottom income quintile vs. top (Econofact; PRRI 2024). Widening trend 2016-2020 confirmed (Rastogi and Laurison, 2025).
 
-**Maternal justice & women's organizations**:
-- MomsRising (5M members), Center for American Progress women's program, National Women's Law Center (NWLC)
-- Advantage: Direct reach to impacted constituency (mothers, especially single mothers), emotional resonance
-- Alignment: Childcare + economic security = core mission
-- Leverage point: Testimony from affected mothers (RTC Congressional hearings June 2026)
+2. **The Housing-Instability Pathway** (Section 2.2): Cost-burdened households move every 2-3 years, severing voter registration and civic organizational connections. Eviction produces lasting civic penalty (Slee and Desmond, 2023). Residential mobility decreases voting for nearly two decades even when mobility is policy-induced (PNAS, 2024 housing voucher study). SAVE Act documentation requirements fall hardest on high-mobility low-income renters (Domain 1 connection).
 
-**Housing justice coalitions**:
-- JustFix, TenantUnion, CLT Federations, Housing Matters/PolicyLink, Homes for All coalition
-- Advantage: Direct organizing capacity, existing tenant infrastructure
-- Alignment: Housing stability = civic participation prerequisite
-- Leverage point: Housing-stability-as-democracy-requirement frame for zoning reform + RTC testimony
+3. **The Medical-Debt Cognitive Taxation Pathway** (Section 2.3): Medical debt management consumes 8-15 hours monthly and depletes working memory (Mullainathan and Shafir, *Science*, 2013; replicated in *Journal of Economic Psychology* meta-analysis, 2024). Wage garnishment ($200-400/month average) reduces disposable income available for civic participation costs. OBBBA Medicaid cuts create new medical debt for 7.5-10 million people losing coverage — this pathway is actively worsening in 2026.
 
-**Community development & benefit corporations**:
-- Local Initiatives Support Corporation (LISC), Rennaissance (CDCs), credit unions (7K+ serving low-income, $500B+ assets)
-- Advantage: Direct financial infrastructure for low-income households
-- Alignment: Economic stability = customer retention
-- Leverage point: Product innovation (earned income credit pre-loading, childcare FSA pre-funding)
+4. **The Gendered Caregiving Pathway** (Section 2.4): 72% of unpaid childcare borne by women; single mothers at $31,000/year average income face 47-58% of gross income consumed by childcare at national median; organizational participation rates 18-25% lower for mothers with children under 5 than childless women. Child and Dependent Care Tax Credit Enhancement Act (S. 1421, 119th Congress) is the legislative target.
 
-### 4.2 Coalition Opportunities
+5. **The Gig-Economy Structural Unavailability Pathway** (Section 2.5): Schedule unpredictability eliminates the advance commitment capability that sustained organizational participation requires. Gig workers shift toward expressive participation (protests, one-time contacts) and away from sustained participation (voting, organizational membership) — rational adaptation to scheduling constraints, not preference change (Bae and Haselswerdt, 2023).
 
-**Economic Precarity + Electoral Participation Frame**:
-- Unique angle: Frames economic policy as *democracy infrastructure*, not just welfare
-- Coalition builders: CBPP + MomsRising + labor unions + housing justice
-- Timeline: June-August 2026 RTC window → January 2027 new Congressional session → 2028 minimum wage/housing push
+**Intersectional patterns to develop in production phase**:
+- Racialized concentration: 50%+ of Black households and 48% of Latino households below $40,000; intersection with Domain 42's felony disenfranchisement pathway and Domain 48's LFO precarity cycle means same populations face multiple overlapping exclusion mechanisms simultaneously
+- Geographic concentration: Rural areas face simultaneous childcare desert exposure, longer commutes, and Medicaid coverage gaps — highest combined pathway exposure
+- Single mothers: Intersect the childcare pathway, time-poverty pathway, and medical-debt pathway at maximum exposure; highest combined suppression rate
 
-**Racial Justice Integration**:
-- Economic precarity is racialized (50%+ of Black households <$40K income; 48% Latino <$40K)
-- Black maternal mortality + economic precarity nexus (Domain 39 connection)
-- Movement partners: NAACP, Ella Baker Center, Black Mamas Matter Alliance
+**Research gaps to close**:
+1. Post-2024 survey data on gendered participation rates — canonical document uses 2023-2024 data; 2025 midterm benchmark needed
+2. Cross-pathway modeling — estimate of combined suppression effect for multi-pathway-exposed households (currently pathways are documented individually; compound exposure model needed)
+3. Cognitive bandwidth research update — Mullainathan/Shafir 2013 foundational; 2024 meta-analysis confirms replication; 2025-2026 applied political behavior studies needed
+
+**Primary sources**: Econofact voting-income data; PRRI 2024 election survey; Slee and Desmond (2023); PNAS (2024) housing voucher mobility study; Mullainathan and Shafir (Science, 2013); Journal of Economic Psychology meta-analysis (2024); BLS American Time Use Survey; Bae and Haselswerdt (Perspectives on Politics, 2023)
+
+**Target length**: 1,000-1,200 words. The pathway architecture is the analytical core.
 
 ---
 
-## 5. Cross-Domain Bridges
+## Section 3: Current Policy Leverage Windows — 2026-2027
 
-### 5.1 Connections to Existing Domains
+**Research objective**: Identify specific, time-bounded legislative and regulatory windows where advocacy can interrupt the five pathways. This section converts the causal analysis into actionable organizing intelligence.
 
-**Domain 31 (Healthcare Access & Medicaid)**: Economic precarity *causes* healthcare deferral; Medicaid expansion provides direct pathway to cost relief
-**Domain 42 (Drug Policy & Democracy)**: Incarceration + fines + debt creates economic precarity → criminal justice precarity cycle
-**Domain 48 (Criminal Justice & Civic Exclusion)**: Fines/LFOs create precarity; debt-based debtors' prisons suppress civic participation
-**Domain 39 (Healthcare Access & Democratic Infrastructure)**: Maternal mortality correlates with economic precarity (prenatal care deferral, stress-induced hypertension, delayed delivery)
-**Domain 1 (Voting Rights)**: Economic precarity suppresses voter turnout; ID costs, time off work, childcare access are differential burdens
-**Domain 33 (State Autocratization)**: Economic precarity makes people vulnerable to disinformation/extremism (cognitive load theory + alienation)
-**Domain 43 (Epistemic Infrastructure)**: Economic precarity → time poverty → reduced news consumption → epistemic vulnerability to misinformation
+**Window 1: CTC/EITC Expansion — June-August 2026 (ACTIVE)**
 
-### 5.2 Unique Contribution
+The OBBBA's CTC structure was confirmed in May 2026 research: the $2,200 maximum credit excludes the families who need it most. The lowest-income quintile of families receives an average CTC benefit of $0. Approximately 30% of all US children receive a reduced or no credit because their families earn too little to qualify for the refundable portion. Among the poorest fifth of households, 99% miss the full credit. Black, Hispanic, and Native American children are excluded at 40-50% rates.
 
-**What this domain adds**:
-- First domain explicitly framing economic precarity as *democratic design failure*, not individual failure
-- Quantified time-poverty architecture (enables precision in reform design)
-- Policy leverage windows (actionable, time-sensitive, with real Congressional opportunity May 2026)
-- Gendered analysis (women's structural exclusion from democracy through unpaid caregiving)
-- Material root explanation for democratic disengagement (explains why education/messaging alone fails)
+The advocacy target is the American Family Act (or analogous fully-refundable CTC expansion) as an amendment in the Senate Finance Committee markup expected June-July 2026. The CBPP's Senate Finance tracking blog confirms this as the active window. The democratic design argument — that CTC expansion is participation infrastructure that reduces cognitive bandwidth tax, childcare cost, and medical debt capacity — is the framing shift that can bring election protection advocates into coalition with economic justice advocates at this window.
 
-**What it doesn't duplicate**:
-- Domain 31: Healthcare access vs. economic accessibility of healthcare (different mechanism)
-- Domain 42: Drug policy capture vs. economic precarity creating vulnerability to that capture
-- Domains 1, 33: Voter suppression mechanisms vs. economic barriers to political engagement
+The CBPP + ITEP + National Women's Law Center + MomsRising coalition has existing Congressional relationships and research infrastructure. The production task is integrating Domain 59's democratic participation argument into the brief packets these organizations deliver to Senate Finance offices in June.
 
----
+**Window 2: Medicaid Work Requirements Response — June-August 2026 (ACTIVE, WORSENING)**
 
-## 6. Research Outline & Source Staging
+States must send outreach notices to current Medicaid enrollees in June, July, or August 2026 (depending on state decisions about lookback periods) ahead of the December 30, 2026 effective date for work requirements. Urban Institute projects 4.9-10.1 million fewer Medicaid expansion enrollees in 2028. This is the moment when the medical debt cognitive taxation pathway is about to worsen substantially for the population that already has the highest pathway exposure.
 
-### 6.1 Section 1: Quantified Architecture (800-1000 words)
-**Research needs**:
-- BLS wage stagnation data (1998-2026)
-- Census Bureau housing affordability, commute time
-- Urban Institute healthcare debt analysis (43M Americans, $188B)
-- Pew economic precarity survey (2024-2026, detailed by income quintile)
-- American Time Use Survey (labor hours, childcare, discretionary time)
-- Eviction Lab tenant organizing suppression (Desmond/Gromis 2025-2026)
+The advocacy window is the state-level implementation period: state legislatures and governors deciding whether to implement early (Nebraska, May 2026) or seek extensions to 2028 (allowed under HHS authority). Domain 59's medical-debt pathway analysis provides the democratic design argument for state-level delay or minimization advocacy: each person who loses coverage is a person whose cognitive bandwidth for civic participation will decrease as medical debt increases.
 
-**Key studies** (15-20 sources minimum):
-- Bivens & Mishel (EPI, 2015, updated 2026): "The zombie wage: How stagnation became normal"
-- Burkhauser & Larrimore (Census, 2016, updated 2025): "Impact of housing costs on civic participation" (quasi-experimental design, eviction as natural experiment)
-- Morduch & Bloom (Journal of Economic Literature, 2023): "Income instability and household financial fragility"
-- Piketty & Saez (2024): "Wage stagnation and political participation: A 20-year analysis"
-- Callahan et al. (Pew, 2026): "The time-poverty trap: How work hours suppress political engagement"
+**Window 3: Federal Minimum Wage — Post-2026 Midterms (November 2026-2027)**
 
-### 6.2 Section 2: Causal Pathways (600-800 words)
-**Research needs**:
-- Econometric evidence (time-series or panel) on work hours → participation
-- Quasi-experimental evidence (job loss, wage increase, housing assistance) → participation shifts
-- Behavioral evidence (cognitive load + decision fatigue literature, applied to political engagement)
+The Living Wage for All Act (H.R. — 119th Congress, April 2026) proposes $25/hour; the Raise the Wage Act (H.R. 2743, S. 1332) proposes $17/hour phase-in. Neither has current Senate traction. The post-midterm window (November 2026-January 2027 new Congress) is the relevant legislative horizon. Domain 59's time-poverty quantification provides the most direct evidence for the democratic participation argument: at $25/hour, multi-job dependency decreases for 12-15% of affected households, directly reducing weekly work-hour burden and freeing consolidated time for civic participation.
 
-**Key studies**:
-- Scammon et al. (Behavioral Public Administration, 2024): "Cognitive load and political participation"
-- Mullainathan & Shafir (2013, applied 2026): "Scarcity: Why having too little means so much"
-- Desmond (2016, analyzed 2026): "Eviction and political disengagement: A natural experiment"
-- Callahan & Pew (2026): "Cash assistance and civic participation: RCT evidence from EITC expansion"
+The pre-midterm work (July-October 2026) is coalition-building: integrating the democracy-participation frame into the Living Wage for All Act endorsement coalition's messaging, which currently does not use democracy-participation arguments.
 
-### 6.3 Section 3: Policy Levers (500-700 words)
-**Research needs**:
-- RTC/CTC impact analysis (CBPP, ITEP simulations 2026)
-- Minimum wage comparative analysis (15 state/city natural experiments 2015-2026)
-- Housing policy case studies (Minneapolis zoning reform 2020+, California SB9 2021+)
+**Window 4: Housing Policy — State Legislative Sessions 2026-2027**
 
-**Key sources**:
-- CBPP (2026): "Extended CTC impact analysis: Child poverty, household income, opportunity cost"
-- ITEP (2026): "Tax credit expansion scenarios: Fiscal impact, behavioral response"
-- Autor et al. (2022, refreshed 2026): "Minimum wage employment and wage effects: Meta-analysis"
-- Scally & Mullan (PolicyLink, 2023, expanded 2026): "Housing policy and civic participation"
+Post-2026 midterm state legislative sessions in competitive states with new Democratic majorities or coalition opportunities. Minneapolis 2020 upzoning and California SB 9 are the leading case studies. NLIHC, PolicyLink, and JustFix provide the advocacy infrastructure. Domain 59's housing-instability pathway analysis — specifically the residential mobility civic penalty and the geographic sorting effect — provides the democracy-participation argument for zoning reform that current housing advocacy largely does not use.
 
-### 6.4 Section 4: Movement Landscape (400-600 words)
-**Research needs**:
-- Organizational mapping (10-15 primary organizations, 5 coalition opportunities)
-- Media/testimony strategy (Congressional testimony windows, hearing schedule 2026)
-- Timeline coordination with other movements (labor, housing, women's rights)
+**Window 5: Gig Worker Reclassification — State + Federal Tracks**
 
-**Key contacts/organizations**:
-- CBPP: Jared Bernstein (chief economist), Sharon Parrott (economic security)
-- ITEP: Steve Wamhoff (policy director)
-- NWLC: Emily Martin (economic security)
-- MomsRising: Kristin Rowe-Finkbeiner
-- Labor unions: AFL-CIO legislative affairs, SEIU public sector division
-- JustFix/TenantUnion: Housing advocacy infrastructure
+California rideshare unionization law (2026) and Alabama Portable Benefits Act (2026) are state-level apertures. Federal reclassification requires either FLSA amendment (legislative) or NLRB rulemaking (administrative). The federal track is closed in current Republican majority; state track is active. Domain 59's structural unavailability analysis — schedule predictability as democratic participation prerequisite — provides the democracy argument for state legislatures considering portable benefits and reclassification legislation.
 
-### 6.5 Section 5: Implementation Strategy (400-500 words)
-**Key decisions**:
-- Distribution angle: Economic precarity as *democracy design failure* (not just welfare advocacy)
-- Movement integration: Coordinate with labor/housing/women's movements, not standalone
-- Timeline: RTC June 2026 window as Tier 1 distribution target; minimum wage/housing windows as Tier 2 Q4 2026-2027
-- Evidence presentation: Lead with time-poverty quantification (visceral, understandable), transition to policy levers
+**Production requirements for this section**: Confirm Senate Finance markup schedule (current CBPP tracking is the best source); verify OBBBA work requirement outreach notice deadlines by state; confirm Living Wage for All Act current co-sponsor count and congressional timeline.
+
+**Target length**: 900-1,100 words. Precision on legislative windows and timelines is essential — advocacy organizations will calendar-test this material immediately.
 
 ---
 
-## 7. Production Timeline & Resource Estimate
+## Section 4: Movement Leverage Analysis
 
-**Phase 1 (June 1-10): Research & Evidence Synthesis** (20-25 hours)
-- BLS/Census data compilation
-- Academic literature review (40-50 studies)
-- Organizational contact outreach (10-15 leads)
-- Preliminary case study selection
+**Research objective**: Map the organizational landscape with enough specificity that production can move immediately to outreach. This is not a general survey — it is a contact and coalition-readiness assessment.
 
-**Phase 2 (June 11-20): Writing & Integration** (15-20 hours)
-- Domain narrative (5-6 drafts, 2,000-2,500 words)
-- Cross-domain bridge analysis (Domain 31, 39, 42, 48, 1, 33, 43)
-- Source integration & citation
-- Peer review (CBPP/ITEP researcher feedback)
+**Primary constituency clusters (established in canonical document)**:
 
-**Phase 3 (June 21-30): Distribution Staging** (5-10 hours)
-- Template integration (proposal + Substack + Reddit)
-- Movement contact verification (45+ organizations)
-- Pre-launch feedback loop
+**Labor Unions** (AFL-CIO 12.5M + SEIU 2.2M, post-2025 merger; UFCW 1.3M; CNA 170K; UAW 390K): The largest pre-organized constituency for economic precarity advocacy. Union halls are civic infrastructure; union meetings are participation training; AFL-CIO legislative affairs has direct Congressional access. The framing shift from "wage advocacy" to "democracy infrastructure advocacy" creates a new argument for Congressional offices skeptical of welfare frames but responsive to democracy frames. AFL-CIO's institutional credibility is the vehicle for this reframe. Contact: AFL-CIO legislative affairs division; SEIU President April Verrett's office (vocal Living Wage for All Act support).
 
-**Total: 50-60 hours** (aligns with Phase 2 domain estimate)
+**Economic Justice Research Networks** (CBPP, ITEP, EPI, IWPR, Urban Institute): These organizations have the peer-reviewed research infrastructure and Congressional testimony credibility. Sharon Parrott (CBPP economic security), Steve Wamhoff (ITEP policy director), and IWPR's gender-disaggregated economic data are the core contacts. The production task is providing Domain 59's democratic participation analysis as a supplement to the briefing packets they are already delivering in the CTC/RTC window.
 
----
+**Maternal Justice and Women's Organizations** (MomsRising 5M members, NWLC, Black Mamas Matter Alliance, CAP women's program): Direct constituency reach to single mothers — the demographic group with highest combined pathway exposure. MomsRising's executive director Kristin Rowe-Finkbeiner (kristin.rowe-finkbeiner@momsrising.org) and NWLC's Emily Martin (economic security program) are the highest-leverage contacts for the CTC June advocacy window.
 
-## 8. Success Criteria & Milestones
+**Housing Justice Coalitions** (NLIHC, PolicyLink, JustFix, National Housing Law Project): The housing-instability pathway is the least developed in current economic justice + democracy advocacy. NLIHC's annual "Out of Reach" report documents rent-to-wage gaps by county — precisely the input needed for Domain 59's geographic sorting argument. PolicyLink's Housing Matters program has already done the "housing stability as civic participation prerequisite" framing work; Domain 59 deepens it.
 
-**Production success**:
-✅ 2,000-2,500 word domain document  
-✅ 40-50 sourced citations (peer-reviewed, government, organizational research)  
-✅ Clear policy levers + timeline windows identified  
-✅ Movement landscape + coalition opportunities mapped  
-✅ Unique contribution distinguishable from Domains 31, 39, 42, 48
+**Racial Justice Networks** (NAACP, Ella Baker Center, Black Mamas Matter Alliance): Economic precarity is racialized — the intersection of wage suppression, childcare inaccessibility, medical debt, and housing instability falls with maximum force on Black and Latino households. These organizations must be integrated into coalition outreach from the outset, not treated as add-on contacts. Domain 59's cross-domain connections to Domains 42 and 48 (criminal justice economic precarity cycle) create the natural bridge to racial justice networks whose primary focus is the justice system but who share constituency with economic precarity advocacy.
 
-**Distribution success** (post-production):
-- RTC testimony: 3-5 Congressional offices briefed (June-July 2026)
-- Media: 2-3 op-ed placements (economics/policy media)
-- Movement adoption: 2-3 coalition integrations (labor + women's + housing)
-- Vocabulary impact: "Time poverty" + "economic precarity as democracy barrier" in movement documents (12-month window)
+**Strongest constituencies per leverage pathway**:
+- CTC June window: CBPP + ITEP + MomsRising + NWLC (research credibility + direct constituency)
+- Medicaid work requirements: CBPP health program + AMA + state-level advocacy networks
+- Minimum wage (2027): AFL-CIO + SEIU + One Fair Wage + Black Women's Roundtable + NAACP
+- Housing (2027): NLIHC + PolicyLink + JustFix (state-level legislative strategy)
+- Gig worker reclassification: SEIU + National Employment Law Project (NELP) + California Labor Federation
+
+**Coalition opportunity not yet assembled**: The convergence of labor unions, maternal justice organizations, economic research networks, and housing justice coalitions under the unified "economic precarity as democratic design failure" frame does not currently exist. The Living Wage for All Act endorsement list shows the constituent organizations are assembled for wage advocacy. What is absent is the democracy-participation argument that would bring election protection organizations (Democracy Docket, Protect Democracy, Brennan Center) into coalition with these economic justice advocates. Domain 59 provides that connective frame.
+
+**Target length**: 700-900 words. The key deliverable is a contact and coalition-readiness matrix, not a general landscape survey.
 
 ---
 
-## 9. Contingency & Risk Mitigation
+## Section 5: Cross-Domain Architecture — How Domain 59 Completes the Phase 2 Narrative
 
-**Risk 1: RTC/CTC legislative window closes (no renewal)**
-- *Mitigation*: Pivot to post-midterm (2027) minimum wage window; housing policy remains evergreen
+**Research objective**: Demonstrate Domain 59's structural role in the Phase 2 framework — it is not parallel to Domains 56-58 and 37, 42; it is the material-root explanation that connects and amplifies the other domains' findings.
 
-**Risk 2: Insufficient academic evidence on causality (reverse causality: politics → economics)**
-- *Mitigation*: Use quasi-experimental designs (natural experiments: eviction, wage increases, tax credits); behavioral theory as secondary pathway
+**Domain 57 connection** (Multilateral Withdrawal and Democratic Norm Erosion):
 
-**Risk 3: Movement adoption slow (economic precarity framing is unfamiliar)**
-- *Mitigation*: Pilot with 2-3 organizations (CBPP, labor, MomsRising) for vocabulary development; iterate based on feedback
+Domain 57 establishes that the US withdrawal from 66 international accountability institutions removes the external constraints on domestic authoritarian drift. Domain 59 establishes why domestic civil society cannot compensate for that loss: the 40% of the electorate with the least economic security — the population that would need to be the first line of democratic defense — is structurally excluded from meaningful civic participation by material precarity. The combination is a democratic capacity crisis from both directions: external accountability withdrawn, internal participation suppressed. Domain 57 addresses the institutional architecture of democratic backsliding; Domain 59 addresses the material-economic architecture of the same backsliding. Neither is complete without the other.
+
+**Domain 56 connection** (Civil Service Politicization):
+
+Domain 56 documents how Schedule F and Schedule Policy/Career politicize the federal civil service, eliminating the administrative competence and institutional independence that effective democratic governance requires. Domain 59's analysis of gig economy contractor classification is the private-sector mirror of the same structural problem: when workers lack the employment protections that allow them to act as independent agents — whether federal employees under Schedule F or gig workers under contractor classification — both the democratic governance quality and the civic participation capacity of the affected population deteriorate simultaneously. Domain 59 provides the labor-classification framework that links civil service politicization (Domain 56) to gig economy precarity as related expressions of the same design principle: stripping workers of the protections that enable independent civic agency.
+
+**Domain 37 connection** (Federal Executive Interference in 2026 Midterms):
+
+Domain 37 documents five specific mechanisms through which the Trump administration is interfering with the November 2026 midterms: voter roll purges, mail ballot restrictions, DOJ Civil Rights Division capture, ICE psychological intimidation, and strategic disinformation. Domain 59's income-voter turnout gap establishes who is most vulnerable to each of these mechanisms. The SAVE Act documentation requirements (analyzed in Domain 37 context) fall hardest on voters who have moved frequently — the same cost-burdened renters who move every 2-3 years under Domain 59's housing-instability pathway. ICE intimidation effects are concentrated in immigrant-worker communities that overlap substantially with the gig economy and sub-$35,000 income bracket. Domain 59 provides the economic-structural explanation for why Domain 37's suppression mechanisms work as effectively as they do against the populations they target.
+
+**Domain 42 connection** (Drug Policy and Regulatory Capture):
+
+Domain 42 establishes that federal drug prohibition creates democratic exclusion through three mechanisms: DEA regulatory capture of the scheduling process, felony disenfranchisement of enforcement-affected communities, and a federal-state conflict that has blocked democratic resolution for fifteen years. Domain 59 provides the economic-precarity context that amplifies each: the communities most subjected to drug enforcement are disproportionately low-income, concentrated in the same sub-$40,000 income bracket where Domain 59's pathways operate at maximum intensity. Felony disenfranchisement removes people from the civic process; Domain 59's pathways remove them from practical civic capacity even before formal disenfranchisement occurs. The combined effect on Black and Latino low-income communities — where drug enforcement, economic precarity, housing instability, and childcare inaccessibility overlap simultaneously — is democratic exclusion far exceeding what any single domain documents alone.
+
+**Domain 38 connection** (Regulatory Capture):
+
+Domain 38's regulatory capture analysis — across financial sector independence, AI governance, and FISA intelligence oversight — establishes that the regulatory mechanisms designed to protect democratic institutions from concentrated private power are being systematically captured by the interests they are supposed to regulate. Domain 59 provides the labor-market correlate: the same deregulatory design logic that enables regulatory capture in financial and AI governance also enables the contractor classification that strips gig workers of wage floors and schedule predictability. The through-line is consistent: design choices that remove accountability mechanisms from concentrated power (regulatory capture) and design choices that remove protections from dispersed workers (contractor classification) are expressions of the same structural preference for concentrated-power-unaccountability over distributed-democratic-agency.
+
+**Phase 2 narrative completion**: Domains 56 (civil service), 57 (multilateral withdrawal), 58 (tribal sovereignty), and Domain 59 (economic precarity) address four distinct structural constraints on democratic participation — institutional, international, indigenous-sovereignty, and material-economic. Together they establish that the democratic crisis documented in Phase 1 is not merely a product of specific executive actions (which can be reversed by court orders or elections) but of structural design features that would persist even after specific actors leave office. Domain 59 is the domain that brings the argument to ordinary households: the structural constraints on democratic participation are not abstract institutional failures experienced by civic organizations. They are the 17 extra hours per week that a single mother works to cover childcare, the voter registration that didn't survive the third move in five years, the two hours spent on the phone with the debt collector instead of attending the town hall. Domain 59 grounds the Phase 2 structural argument in material life.
+
+**What Domain 59 does not duplicate**:
+- Domain 31 (Healthcare Access): That domain's Medicaid analysis is supply-side (coverage availability); Domain 59's medical debt pathway is demand-side (debt consequence on existing covered and uninsured households)
+- Domain 39 (Healthcare as Democratic Infrastructure): That domain establishes health insurance coverage → voter turnout via Oregon Health Insurance Experiment RCT; Domain 59's pathway is income stability and cognitive bandwidth — distinct mechanism, overlapping conclusion
+- Domain 1 (Voting Rights): That domain documents formal voter suppression mechanisms; Domain 59 documents informal material barriers — different legal theories, different advocacy coalitions, different policy remedies
+
+**Target length**: 800-1,000 words.
 
 ---
 
-**Production-ready for June 1-15, 2026 initiation. Ready for immediate research expansion upon user selection of Path B or post-Phase-1-Wave-1 approval.**
+## Production Timeline and Resource Estimate
 
-**Committed by Session 1063 (2026-05-15) as exploration queue item #3. Awaiting production initiation approval post-Phase-1-decision or upon Phase 2 expansion authorization.**
+**Prerequisite status**: None blocking. The 8,450-word canonical document is complete and verified (Session 1373 wc pass confirmed). Phase 2-research/domain-59/source-confirmations.md created with source verification log. No additional pre-production work required before June 15.
+
+**Phase 1 — Research Expansion and Gap-Closing (June 15-25): 20-25 hours**
+
+- Update state-level income-turnout data for 2026 midterm context (2022 precinct-level data)
+- Confirm OBBBA Medicaid work requirement outreach notice deadlines by state (June-August 2026 state notifications)
+- Verify Senate Finance Committee markup timeline for CTC amendment window
+- Update Living Wage for All Act co-sponsor count and Senate companion bill status
+- Confirm California rideshare unionization law implementation outcomes (first-year data, if available)
+- Compile cross-pathway compound exposure data (multiple pathways, same households) — new modeling not in canonical document
+- Final contact verification for 15-20 priority organizational contacts
+
+**Phase 2 — Writing, Cross-Domain Integration, Peer Review (June 25-July 8): 20-25 hours**
+
+- Expand canonical document from 8,450 words to full distributable research paper (10,000-12,000 words)
+- Cross-domain bridge integration: formal connecting text for Domains 56, 57, 37, 42, 38 connections developed in this outline
+- Peer review pass with CBPP and ITEP contacts on economic data accuracy (email-based, 3-5 business days turnaround)
+- Production of supplemental brief for CTC advocacy window (4-6 page condensed version for Senate Finance Committee staff distribution)
+
+**Phase 3 — Distribution Preparation (July 8-15): 10-15 hours**
+
+- Template integration: full research paper version, Substack version, condensed policy brief version
+- Coalition contact preparation: personalized outreach emails for 5 priority organizations (AFL-CIO, CBPP, MomsRising, NWLC, NLIHC)
+- Pre-launch feedback from 2-3 coalition partners before July 15 distribution
+- Gist creation and distribution log initialization
+
+**Total: 50-65 hours** — upper bound reflects the cross-domain bridge work required to complete the Phase 2 narrative connections; lower bound assumes streamlined peer review and no significant data gaps.
+
+**Parallel execution**: Domain 59 (June 15-July 15) runs concurrent with Domain 57 (June 10-August 10). No conflicts — different sections, different source sets, different coalition targets. Both can proceed simultaneously under separate agent assignments.
+
+---
+
+## Blocking Dependencies and Risk Register
+
+**No blocking dependencies exist.** Production can begin June 15 without waiting for any other domain to complete, any external data to publish, or any litigation outcome.
+
+**Risk 1: CTC advocacy window closes before production completes (if reconciliation markup moves faster than expected)**
+Mitigation: The 4-6 page condensed policy brief (Phase 2 deliverable) can be produced by June 25 — 10 days into production — and distributed to Senate Finance contacts before the full paper is complete. The CTC advocacy window does not require the full 10,000-12,000 word paper; it requires the brief.
+
+**Risk 2: Senate Finance CTC markup produces no amendment opportunity (both House and Senate versions maintain structural exclusion of lowest-income families)**
+Mitigation: CBPP's confirmed tracking shows neither House nor Senate version expands benefits for the 17 million children currently excluded. This makes the advocacy frame — "the current OBBBA CTC is a democratic participation failure, not just a poverty failure" — more urgent, not less. Even in a no-win legislative outcome, establishing the democratic participation frame in the record creates the vocabulary for the 2027-2028 legislative cycle.
+
+**Risk 3: Cross-domain bridge work extends production beyond July 15**
+Mitigation: Cross-domain sections are the last to be produced (Phase 2, weeks 2-3). If timeline pressure materializes, cross-domain integration can be staged for a second distribution wave (August 2026) without delaying the primary July 15 distribution.
+
+**Risk 4: Coalition adoption slow because economic precarity reframe is unfamiliar**
+Mitigation: Pilot with 3 organizations (CBPP, AFL-CIO, MomsRising) whose staff are already researching at the intersection of economic security and civic participation. Iterate based on feedback before broader distribution.
+
+---
+
+## June 1 Decision Support: What Approval Unlocks
+
+If the user confirms Phase 2 expansion on June 1 (Path B approval, or STRONG/MODERATE synthesis outcome from May 21 directing Phase 2 launch):
+
+- June 1-14: Final pre-production source verification (15 hours, runs concurrently with other Phase 2 preparation)
+- June 15: Domain 59 production begins (first 8 hours: OBBBA data update, Senate Finance timeline confirmation, cross-pathway compound exposure modeling)
+- June 25: Condensed policy brief complete — deployable to CTC advocacy window regardless of full paper completion
+- July 1: Full paper draft complete — peer review begins with CBPP/ITEP contacts
+- July 15: Distribution-ready full paper, complete distribution preparation
+
+If the user selects WEAK/TOO_EARLY contingency (per SYNTHESIS_CONTINGENCY_PATHS.md), Domain 59 defers to August 1 initiation (third priority after Domains 56 and 58 under WEAK staggered sequence). The June-July CTC advocacy window is partially forfeited, but the minimum wage and housing windows (November 2026-2027) are unaffected, and the full paper can still be completed before the new Congress opens in January 2027.
+
+---
+
+## Sources Referenced in This Outline
+
+**Wage and Labor**:
+- [BLS Real Earnings Summary April 2026](https://www.bls.gov/news.release/realer.nr0.htm)
+- [BLS Multiple Jobholders Table A-39](https://www.bls.gov/web/empsit/cpseea0039.htm)
+- [Federal Minimum Wage — Nowsta 2026](https://nowsta.com/blog/federal-minimum-wage-2026/)
+- [Living Wage for All Act — Representative Ramirez press release](https://ramirez.house.gov/media/press-releases/ramirez-garcia-simon-mejia-workers-labor-leaders-introduce-living-wage-all-0)
+- [Raise the Wage Act S.1332 — Congress.gov](https://www.congress.gov/bill/119th-congress/senate-bill/1332)
+- [Gig Economy Statistics 2026 — Upwork](https://www.upwork.com/resources/gig-economy-statistics)
+- [Gig Economy is Reshaping How People Work — LSE USAPP Blog, Bae and Haselswerdt, April 2026](https://blogs.lse.ac.uk/usappblog/2026/04/02/the-gig-economy-is-reshaping-how-people-work-and-what-they-think-about-social-protections-and-politics/)
+
+**Housing**:
+- [Americas Rental Housing 2026 — Harvard JCHS](https://www.jchs.harvard.edu/americas-rental-housing-2026)
+- [Eviction and Voter Turnout — Slee and Desmond, Politics and Society 2023](https://journals.sagepub.com/doi/10.1177/00323292211050716)
+- [Residential Mobility and Persistently Depressed Voting — PNAS 2024](https://www.pnas.org/doi/10.1073/pnas.2306287121)
+- [Housing Instability Is a Critical Barrier to Voting Access — Urban Institute](https://housingmatters.urban.org/articles/housing-instability-critical-barrier-voting-access)
+- [Nearly Half of Renter Households Are Cost-Burdened — Census Bureau 2024](https://www.census.gov/newsroom/press-releases/2024/renter-households-cost-burdened-race.html)
+
+**Medical Debt and OBBBA**:
+- [Medical Debt Statistics in US 2026 — The World Data](https://theworlddata.com/medical-debt-statistics-in-us/)
+- [Medicaid Provisions of OBBBA — Modern Medicaid Alliance](https://modernmedicaid.org/medicaid-provisions-and-implementation-of-one-big-beautiful-bill/)
+- [Projected Reductions in Medicaid Expansion Enrollment Under OBBBA — Urban Institute](https://www.urban.org/research/publication/projected-reductions-medicaid-expansion-enrollment-under-obbbas-work)
+- [Day 1 of Medicaid Work Requirements in Nebraska — NPR, May 2026](https://www.npr.org/2026/05/01/nx-s1-5806260/trump-medicaid-work-requirements-nebraska-big-beautiful-bill-hr1-obbba)
+- [Poverty Impedes Cognitive Function — Mani et al., Science 2013](https://www.science.org/doi/10.1126/science.1238041)
+- [Financial Scarcity and Cognitive Performance Meta-Analysis — Journal of Economic Psychology 2024](https://www.sciencedirect.com/science/article/pii/S0167487024000102)
+
+**Childcare**:
+- [2026 Cost of Care Report — Care.com](https://www.care.com/c/how-much-does-child-care-cost/)
+- [American Time Use Survey 2024 — BLS](https://www.bls.gov/news.release/atus.nr0.htm)
+- [Child Care Costs in the United States — EPI](https://www.epi.org/child-care-costs-in-the-united-states/)
+- [Child and Dependent Care Tax Credit Enhancement Act S.1421 — Congress.gov](https://www.congress.gov/bill/119th-congress/senate-bill/1421/all-info)
+
+**Child Tax Credit**:
+- [Child Tax Credit Leaves Out Millions of Children in 2026 — ITEP](https://itep.org/child-tax-credit-2026-obbba-trump-taxes/)
+- [Senate Finance Committee's CTC Proposal Does Nothing for 17 Million Children Left Out — CBPP](https://www.cbpp.org/blog/tracking-senate-action-on-tax-and-budget-reconciliation-plan)
+- [House and Senate Plans Boost Child Tax Credit — Tax Policy Center](https://taxpolicycenter.org/taxvox/house-and-senate-plans-boost-child-tax-credit-could-help-more-low-income-families)
+- [2025 Reconciliation Law: Modest Changes to Child Care Tax Benefits — Tax Policy Center](https://taxpolicycenter.org/taxvox/2025-reconciliation-law-makes-some-modest-changes-child-care-tax-benefits-provides-little)
+- [Will the Reconciliation Bill's CTC Changes Leave Out Children in Low-Income Families? — Brookings](https://www.brookings.edu/articles/will-the-reconciliation-bills-child-tax-credit-changes-leave-out-children-in-low-income-working-families/)
+
+**Civic Participation and Income Gap**:
+- [Voting and Income — Econofact](https://econofact.org/voting-and-income)
+- [Breaking Down Differences Between Voters and Non-Voters in 2024 — PRRI](https://prri.org/spotlight/breaking-down-the-differences-between-voters-and-non-voters-in-the-2024-election/)
+- [Higher Turnout, Greater Inequality? Precinct-Level Analysis 2016-2020 — Rastogi and Laurison, Sociological Perspectives 2025](https://journals.sagepub.com/doi/10.1177/23780231251338441)
+- [Income Gap in Voting: Moderating Effects of Income Inequality — PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9433354/)
+
+**Labor Movement**:
+- [AFL-CIO Social and Economic Justice](https://aflcio.org/what-unions-do/social-economic-justice)
+- [SEIU Rejoins AFL-CIO — HR Dive](https://www.hrdive.com/news/seiu-re-joins-afl-cio/737153/)
+
+---
+
+*Committed May 20, 2026 — updated from May 15, 2026 outline (Session 1063). Incorporates confirmed OBBBA Medicaid work requirement timeline, confirmed CTC structural exclusion findings from ITEP and CBPP May 2026 tracking, Laurison/Rastogi 2025 widening turnout gap data, and full Phase 2 cross-domain architecture connections. Ready for June 1 user approval decision.*
