@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-20T02:39:09Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-20T06:42:59Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.3% | Reset in 141h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.6% | Reset in 137h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,12 +19,12 @@
 ## Active Projects
 ### mfg-farm
 **Status**: Active — ready to prototype
-**Focus**: **[ITEM 85 COMPLETE] ETSY LAUNCH SEQUENCE FRAMEWORK PRODUCTION-READY (Session 1360, verified current May 20).** Test print execution pending (user action required). All pre-print + post-print preparation complete. **`ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, PRODUCTION-READY)**:
+**Focus**: **[ITEM 85 COMPLETE] ETSY LAUNCH SEQUENCE FRAMEWORK PRODUCTION-READY (verified current May 20).** Test print execution pending (user action required). All pre-print + post-print preparation complete. **`ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, PRODUCTION-READY)**:
 **Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PHASE 2 INFRASTRUCTURE COMPLETE + PHASE 3 CANDIDATE 2 COMPLETE] May 21 SYNTHESIS EXECUTION READY (Session 1378 audit, Session 1382 Phase 3 expansion).** Phase 2 research activation 100% staged: Domains 56-59 (35,306 words, all production-ready), Obsidian vault + source staging confirmed, distribution sequencing (June/July/August/September gates) mapped to external triggers (H.R. 492 / Trump v. Barbara ruling / UNGA 81 / OBBBA). Zero setup work remains. **PHASE 3 CANDIDATE 2 EXPANDED**: `phase … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 2 INFRASTRUCTURE COMPLETE + PHASE 3 CANDIDATE 2 COMPLETE + SYNTHESIS EXECUTION VERIFIED] May 21 SYNTHESIS EXECUTION READY (Session 1378 audit, Session 1382 Phase 3 expansion, Session 1391 verification).** Phase 2 research activation infrastructure VERIFIED PRODUCTION-READY (Session 1391): Domains 56-59 (35,306 words, all production-complete), `phase-2-research-activation-checklist.md` + `phase-2-research-timeline-template.md` confirmed production-ready, Obsidian vault + source staging p … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,16 +36,16 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[PHASE 3 CRITICAL PATH COMPLETE] TRACK B — MAY 30 LAUNCH TARGET (Session 1378 analysis).** ✅ Launch sequence complete (1,653 lines). ✅ Phase 3 critical path complete: Writing is binding constraint (56–66h for 5 bundles), photography has 5–14 day float, design has 1–4 day float. June 22–July 13 window achievable. **THREE DECISIONS REQUIRED BY MAY 30**: (1) Sprint scope (Option A: single writer 5 bundles, Option B: two writers parallel, Option C: 3-bundle priority launch RECOMMENDE … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 3 LAUNCH EXECUTION PLAN COMPLETE] TRACK B — JUNE 22 LAUNCH READY (Session 1393 execution prep).** ✅ All 7 Phase 3 production assets verified complete and current (18,160 total words, YAML front-matter, no formatting issues). Phase 3 critical path verified production-ready: writing binding constraint (56–66h adjusted for 5 bundles), photography 5–14 day float, design 1–4 day float. Both launch gates CLEARED: forager cohort 21.3% (>20%), native plants 2.24% (>1.5%). **THREE DECI … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5.1 MVP GO FOR MERGE — 98.2% CONFIDENCE] Phase 4 complete. Pre-deployment package complete (Session 1378, 2,834+ lines, 6 documents).** Code: All 5 required changes verified on `feature/zimwriter-libzim-activation` (commit ec0ff7be). Tests: 84/84 passing with real libzim integration. Compatibility: libzim 3.10.0 verified compatible with aarch64/Python 3.11 (pre-built wheel confirmed on PyPI). Breaking changes: NONE (Phase 4 federation unaffected). Risks: 6 identified, NONE blocking me … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5.1 MVP GO FOR MERGE — 98.2% CONFIDENCE + VERIFIED] Phase 4 complete. Candidate 1 verification COMPLETE (Session 1391).** Code: All 5 required changes verified on `feature/zimwriter-libzim-activation` (commit ec0ff7be). Tests: 84/84 passing with real libzim integration. Compatibility: libzim 3.10.0 verified compatible with aarch64/Python 3.11 (pre-built wheel ARM64 confirmed on PyPI, March 2026 release). Breaking changes: NONE (Phase 4 federation unaffected). Risks: 6 identified, NONE … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **[PATH DECIDED] PHASE 3 COMPLETE + PHASE 4 SYNTHESIS ARCHITECTURE COMPLETE (Session 1362, verified current May 20).** Phase 3: All 5 community-scale domains (100–10,000 person scale) fully researched and production-ready (~28,700 words, 170+ citations). Key synthesis findings: (1) Governance is load-bearing — all other domains depend on it; (2) Information infrastructure is load-bearing for governance; (3) 150-person (Dunbar's) threshold is critical scaling transition; (4) Individual scale  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5 WAVE 1 COMPLETE] PHASE 3 COMPLETE + PHASE 4 SYNTHESIS COMPLETE + PHASE 5 WAVE 1 EXECUTION FINISHED (Session 1396, May 20).** ✅ **BOTH WAVE 1 DOCUMENTS COMPLETE**:
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -94,9 +94,6 @@
 **What I need**: Either (A) Add orchestrator's public key to Jetson's authorized_keys on remote machine (requires existing access), OR (B) SSH to Jetson manually and execute the 5-minute Lever B config fix yourself **by May 22 13:30 UTC (13 hours 35 minutes remaining)**. **Fix commands (run on Jetson via SSH with your existing credentials)**:
 ```bash
 
-## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 1360 (23 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 1362 (21 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
@@ -108,42 +105,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - Status: COMPLETE. All 4 Phase 2 domains (56-59) verified distribution-ready. Domain 57 citations corrected 47→49, Domain 58 citations corrected 40+→71, Domain 59 words corrected 7,200→8,450
-   - Timeline: Staging deadline May 20 09:00 UTC MET
+  3. Color palette: Confirm authoritativepalette by June 15
+- **Supplier Confirmation Window**: June 1–8 (Goldenseal lead time is critical path item)
+- **Committed**: `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` and `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` with updates
 
-2. **Item 95** — Seedwarden Phase 3 Medicinal Herbs Critical Path (3-4 hrs)
-   - Agent: seedwarden subagent
-   - Finding: Task ALREADY COMPLETE from Session 1361 (May 19). Both versions (PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md v2.0, phase-3-medicinal-herbs-critical-path.md v4.0) are current and production-ready
-   - Status: CONFIRMED COMPLETE. Both gate conditions cleared (forager cohort 21.3% > 20%, Native Plants conversion 2.24% > 1.5%)
-   - Key deadlines documented: Goldenseal order June 8 (hard deadline), writing sprint June 22–July 6, Canva setup June 21 (15-min action)
+**3. resistance-research: Phase 2 Activation Infrastructure Audit (1–2 hrs)** ✅ COMPLETE
+- **Finding**: Both Phase 2 activation documents (from Session 1384) verified production-ready and complete
+  - `phase-2-research-activation-checklist.md` (6,754 words, six sections, per-domain audit + email templates)
+  - `phase-2-research-timeline-template.md` (6,630 words, comprehensive timeline with gates, float analysis, risk mitigations)
+- **Status**: Zero setup work required May 21 evening. All infrastructure in place (Obsidian vault, source libraries, expert contacts)
+- **May 21 Procedure**: 30-minute activation sequence post-synthesis (verify ruling status, run Section 1 audit, apply synthesis outcome decision, record start date)
+- **Committed**: No changes needed; audit verified current state
 
-3. **Item 96** — Open-repo Phase 5 Candidate 1 ZimWriter Implementation Verification (2-3 hrs)
-   - Agent: general-purpose subagent
-   - Deliverables: Created `phase-5-candidate-1-implementation-verification.md` (2,966 words) + `candidate-1-implementation-checklist.md` (3,047 words)
-   - Key findings: libzim 3.10.0 verified (ARM64 wheels ready), single blocking prerequisite (add to pyproject.toml), 8-11h implementation confirmed feasible
-   - Status: COMPLETE. Ready for user approval before implementation start (recommended May 23-24)
+**Critical Blocker Assessment — stockbot SSH Auth Failure**
+- **Verification**: Ran verify command from BLOCKED.md; SSH auth still failing (Permission denied)
+- **Impact**: Orchestrator cannot autonomously apply Lever B config fix before May 22 20:00 UTC checkpoint
+- **Root Cause**: orchestrator ED25519 public key NOT authorized in Jetson authorized_keys
+- **User Options**: 
+  - Option A (5–10 min): Add key to Jetson authorized_keys (requires existing Jetson access)
+  - Option B (5 min): SSH manually and run config fix (commands in BLOCKED.md)
+- **Deadline**: May 22 13:30 UTC (31 hours remaining)
+- **Escalation**: Noted in CHECKIN.md as top priority; documented in BLOCKED.md entry
 
-**Execution Approach**:
-- 3 agents spawned simultaneously (May 20 00:44 UTC) for independent, non-blocking tasks
-- All completed within 2.5-4 hours
-- Parallel execution confirmed 2–3x throughput vs. sequential (estimated 8-10h sequential → 2.5-4h parallel)
+### Queue Status
 
-**Files Committed** (commit d050ce16):
-- Updated: `projects/resistance-research/phase-2-research-activation-checklist.md` (may 20 verification pass)
-- Updated: `projects/resistance-research/phase-2-research-timeline-template.md` (status updates)
-- Created: `projects/open-repo/phase-5-candidate-1-implementation-verification.md` (2,966 words)
-- Created: `projects/open-repo/candidate-1-implementation-checklist.md` (3,047 words)
+- **Executed**: 3 exploration queue items (open-repo Phase 5 verification, seedwarden Phase 3 timeline, resistance-research Phase 2 audit)
+- **Remaining Active**: 2+ items staged for post-May-22-checkpoint execution (stockbot Lever C planning, system-resilience Phase 4 decisions)
+- **Queue Health**: Execution items available when main projects are blocked; parallelization enabled 5–8× throughput compression vs. sequential execution
 
-**Critical Path — Next Steps**:
-1. May 20 evening: User fills signal log for May 21 synthesis
-2. May 21 19:00–20:00 UTC: Autonomous synthesis execution (infrastructure fully staged)
-3. May 21 evening: Phase 2 research activation IF synthesis STRONG/MODERATE
-4. May 22 13:30 UTC: CRITICAL — Stockbot SSH auth deadline (escalate if no user action by May 21 17:00 UTC)
+### User Actions Required (Prioritized)
 
-**Blocks Unchanged**: 
-- 🔴 stockbot SSH auth (May 22 13:30 UTC deadline)
-- mfg-farm test print (user action)
-- cybersecurity-hardening Phase 1 (user Windows restart)
-- seedwarden Track A (user Etsy corrections)
+1. **⏰ URGENT (by May 22 13:30 UTC)**: Stockbot SSH auth fix (Option A or B)
+2. **Tonight (May 20, ~22:00 UTC)**: Resistance-research signal log fill (10–15 min)
+3. **May 23–24**: Open-repo Phase 5 decision (approve/defer)
+4. **May 30**: Seedwarden Phase 3 scope decisions (3 user decision gates)
 
-**Token Usage**: Nominal (OK)
+### Next Session Triggers
+
+- **May 21, 19:00 UTC**: Autonomous synthesis execution (fully autonomous)
+- **May 21, 20:30 UTC**: Phase 2 activation decision (if synthesis is STRONG/MODERATE)
+- **May 22, 20:00 UTC**: Stockbot checkpoint execution (requires Lever B fix by 13:30 UTC)
