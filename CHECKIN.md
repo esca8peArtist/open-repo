@@ -1,3 +1,90 @@
+## Since Last Check-in (Session 1414-ORCHESTRATOR, May 20 12:00–13:30 UTC) — Exploration Queue Execution (2 Items Complete) ✅
+
+**Session Status**: ✅ **EXPLORATION QUEUE ITEM 1 COMPLETE: Trump v. Barbara Rapid-Response Research** | ✅ **EXPLORATION QUEUE ITEM 2 COMPLETE: Seedwarden Herbalist Ecosystem Mapping** | 🟢 **SYNTHESIS EXECUTION READY FOR MAY 21 19:00 UTC** | 🟢 **QUEUE ITEMS AHEAD OF SYNTHESIS COMPLETION**
+
+### What Was Done (Session 1414)
+
+**Parallel Exploration Queue Execution — 2 Agents, Both Complete** ✅
+
+**Exploration Queue Item 1: Trump v. Barbara Tribal Voting Case Rapid-Response Research** (6–8 hrs estimated)
+- **Completed**: Comprehensive pre-research for Domain 58 (Tribal Sovereignty) rapid-response distribution
+- **Deliverables**:
+  - `projects/resistance-research/exploration/trump-v-barbara-case-research.md` (2,400 words, 35+ sources)
+  - `projects/resistance-research/exploration/domain-58-rapid-response-checklist.md` (800 words with exact edit specifications)
+  - Updated `domain-58-tribal-sovereignty.md` with "Ruling Status — Trump v. Barbara" section
+- **Key Findings**:
+  - Case (No. 25-365) argued April 1, 2026; ruling NOT yet issued
+  - Ruling expected June 19–30, 2026 (90% probability); first week of July as tail
+  - Sauer's three-stage stumble on tribal citizenship: "I think so" → "I'm not sure" → "children of tribal Indians are not birthright citizens"
+  - Coalition positions on record: NCAI General Counsel Lennie Fineday ("misreading and misunderstanding"), academic amicus briefs (Berger/Ablavsky), Historians' brief
+  - Two-axis threat: *Callais* erodes VRA Section 2; Trump v. Barbara threatens constitutional floor on tribal citizenship
+  - Probability assessment: 55–60% narrow rejection (*Wong Kim Ark* grounds); 20–25% broad rejection; 10–15% narrow rejection + adverse dicta; 5% government prevails
+  - **Gap flagged**: ICA Reaffirmation Act draft confirmation needed (if NARF or congressional ally has pre-drafted version, identify before ruling issues)
+- **Rapid-Response Protocol**: Pre-staged for all three ruling scenarios (broad reaffirmation, narrow rejection, adverse)
+- **Committed**: `3b1bdd45` feat(resistance-research): Trump v. Barbara tribal voting case rapid-response research
+
+**Exploration Queue Item 2: Seedwarden Herbalist Network Ecosystem Mapping** (6–8 hrs estimated)
+- **Completed**: Comprehensive practitioner network research for Phase 3 (June 22–July 13) audience targeting
+- **Deliverables**:
+  - `projects/seedwarden/herbalist-network-ecosystem-mapping.md` (4,100 words, 20+ sources)
+  - `projects/seedwarden/herbalist-audience-segmentation.csv` (7 segments with price sensitivity, messaging, channel analysis)
+  - `projects/seedwarden/phase-3-practitioner-messaging-framework.md` (1,350 words with per-segment hooks)
+- **Key Findings**:
+  - **AHG Symposium August 14–16, 2026**: 36th annual creates secondary launch window (pre-event email July 28–Aug 13) + 13 chapter newsletters = warm outreach to RH-level practitioners
+  - **NAMA 2026 conference already completed** (May 1–3 virtual); Ayurvedic practitioner outreach via newsletter/regional events only
+  - **Herbal Academy competitor analysis**: 875K Instagram followers, 100K+ students, $47–$297 pricing. Seedwarden's $120–$150 within band; differentiation via "evidence-cited, not PLM" must be front-loaded
+  - **Natural distribution partners identified**:
+    - Mountain Rose Herbs (431K IG) — sells guides + educational resources, zero direct competition
+    - LearningHerbs/Rosalee (269K IG) — educational focus, affiliate/newsletter placement opportunity
+  - **Wild Indigo Herb Fest (June 12–14, Harrodsburg KY)**: Anchors Appalachian pre-launch social 10 days before June 22 launch
+  - **Price friction minimal** ($120–150 = 1 clinical consultation, ~$125/hr median). Primary friction: brand trust + content credibility (botanial nomenclature, contraindication sourcing scrutiny)
+  - **Geographic messaging variation critical**:
+    - Appalachian practitioners: conservation framing (Black Cohosh, Goldenseal ethics)
+    - Pacific Northwest: bioregional + cultivation framing
+    - New England: community herbalism + Rosemary Gladstar tradition signals
+- **Committed**: `19167715` feat(seedwarden): Herbalist network ecosystem mapping and Phase 3 practitioner strategy
+
+### Synthesis Execution Readiness
+
+**May 21 19:00 UTC synthesis execution status**: ✅ **ALL PRE-STAGING COMPLETE**
+- Trump v. Barbara rapid-response pre-research complete (if ruling drops before synthesis, instant distribution ready)
+- May 20 evening: user fills signal log (~22:00 UTC) — **USER ACTION REQUIRED TONIGHT**
+- May 21 before 19:00 UTC: user checks SCOTUSblog for ruling — **USER ACTION REQUIRED TOMORROW MORNING**
+- May 21 19:00 UTC: orchestrator executes synthesis checklist (fully autonomous, <30 min)
+
+### Block Status (Unchanged)
+
+All 3 active blocks remain — require user action:
+1. **stockbot SSH auth** — ⚠️ **CRITICAL DEADLINE MAY 22 13:30 UTC** (~24 hours remaining as of May 20 13:30)
+2. **cybersecurity-hardening VeraCrypt** — Windows restart + pre-boot password
+3. **mfg-farm test print** — Execute with specifications (0.20mm, PLA+, 3 walls, 220–225°C)
+
+### Projects Status Summary
+
+- **resistance-research**: ✅ READY — May 21 synthesis execution (fully autonomous, Trump v. Barbara pre-staging complete)
+- **seedwarden**: ✅ Phase 3 audience research complete — ready for June 22 launch (awaiting user scope decision by May 30)
+- **stockbot**: 🔴 BLOCKED — SSH auth failure, critical deadline May 22 13:30 UTC
+- **cybersecurity-hardening**: 🔴 BLOCKED — VeraCrypt Phase 1 restart
+- **mfg-farm**: 🔴 BLOCKED — Test print execution
+- **All others**: Complete or awaiting user review/decisions
+
+### Exploration Queue Status
+
+- ✅ **COMPLETE**: Trump v. Barbara tribal voting case rapid-response context (2 of 4 queue items)
+- ✅ **COMPLETE**: Seedwarden herbalist network ecosystem mapping (2 of 4 queue items)
+- **REMAINING** (not executed this session):
+  - systems-resilience veterinary care in crisis contexts (8–10 hrs)
+  - stockbot Options Gap 4 Implementation Specification (4–8 hrs, staged post-Gate-1)
+
+### Recommendations for Next Session
+
+1. **May 21 19:00 UTC**: Execute resistance-research synthesis (orchestrator autonomous action — no user input required)
+2. **May 22 before 13:30 UTC**: ⚠️ CRITICAL — Resolve stockbot SSH auth failure OR manually execute 5-min Lever B config fix (see BLOCKED.md for details)
+3. **May 30**: User decisions needed on seedwarden Phase 3 scope (writer count, Goldenseal source, timeline)
+4. **Post-synthesis**: If outcome is STRONG/MODERATE, activate Phase 2 research (Domains 56–59 already written; only distribution prep remaining)
+
+---
+
 ## Since Last Check-in (Session 1413-ORCHESTRATOR, May 20 13:33 UTC) — Phase 2/3 Planning Prep Complete ✅
 
 **Session Status**: ✅ **PHASE 2 DOMAINS ALL WRITTEN (35.3K WORDS COMPLETE)** | ✅ **PHASE 2 RESEARCH ACTIVATION CHECKLIST COMPLETE** | ✅ **PHASE 3 MEDICINAL HERBS CRITICAL PATH READY** | ✅ **TRUMP V. BARBARA RAPID-RESPONSE PRE-STAGED** | 🟢 **NO AUTONOMOUS WORK REMAINING**

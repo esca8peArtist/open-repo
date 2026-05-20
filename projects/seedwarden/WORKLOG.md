@@ -4,6 +4,27 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Research Agent Session — Herbalist Network Ecosystem Mapping — May 20, 2026
+
+**Task**: Full herbalist practitioner network research for Phase 3 audience targeting. Three deliverables produced supporting June 22 medicinal herbs bundle launch.
+
+**Files created**:
+- `herbalist-network-ecosystem-mapping.md` (~4,100 words): Network landscape (AHG, NAMA, 8 major schools, UpS, HSA, IIPA, academic programs); 40-entry organization directory with membership size estimates, contact paths, and Phase 3 fit ratings; geographic hub analysis (Appalachian, Pacific NW, New England, Midwest, Southwest); online community mapping (Reddit r/herbalism ~110K members, Facebook groups, HerbMentor, HerbRally); social media hub analysis (Instagram follower counts for 12 major accounts; top hashtags); email community estimates; top 12 Instagram influencers with follower counts; 6 podcast platforms profiled; top 7 academic/published voices; 5 cross-selling distribution partner recommendations; price compatibility analysis ($120–$150 fit confirmed vs. market norms); 10-event calendar for June–August 2026 outreach.
+- `herbalist-audience-segmentation.csv`: 7 rows (AHG Registered Herbalists, Clinical Herbalism Students, Iridology Practitioners, Etsy Herbal Product Sellers, Ayurvedic Practitioners, Cottage Industry Herbalists, Academic Ethnobotanists). Columns: Segment Name, Size Estimate, Median Price Sensitivity, Key Needs, Recommended Messaging, Distribution Channel(s), Geographic Focus.
+- `phase-3-practitioner-messaging-framework.md` (~1,350 words): UVP per segment (5 segments); 3–5 messaging hooks per segment with use-case examples; full pre-launch to post-launch timing table (June 8 – August 30); 7-entry friction preemption table covering PLR concerns, pricing resistance, brand trust gap, and tradition-specific objections.
+
+**Key findings**:
+- AHG 36th Annual Symposium is August 14–16, 2026 (location TBD). This is outside Phase 3 sprint (June 22 – July 13) but is the highest-value practitioner audience moment of the year; pre-event outreach window is July 28–Aug 13.
+- NAMA 2026 conference already completed (May 1–3 virtual). Next NAMA opportunity is newsletter and regional events.
+- Herbal Academy (875K IG, 100K+ cumulative students) is the dominant online school — a competitor in content, not a distribution partner; their pricing ($47–$297) establishes the upper practitioner purchasing ceiling.
+- Mountain Rose Herbs (431K IG) and LearningHerbs (269K IG) are the two strongest natural distribution partnership candidates.
+- Wild Indigo Herb Fest (June 12–14 KY) falls just before Phase 3 launch and is the ideal pre-launch organic social timing anchor for Appalachian practitioner segment.
+- $120–$150 practitioner tier is well within market norms (clinical consultation = $125 median; single CE event = $200–$500).
+
+**No images downloaded. No supplier contacts initiated.**
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Production Timeline + Critical Path (Orchestrator Planning Task) — May 20, 2026
 
 **Task**: Develop detailed production timeline with critical path analysis for Phase 3 medicinal herbs. Execution window June 22 – July 13, 2026 (22-day window). Three deliverables requested: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (2,500+ words), `PHASE_3_PRODUCTION_GANTT.csv` (56+ row Gantt), `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md`.
