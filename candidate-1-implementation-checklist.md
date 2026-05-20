@@ -3,186 +3,352 @@ title: "Phase 5 Candidate 1: ZimWriter libzim Integration — Implementation Che
 project: open-repo
 phase: 5
 candidate: 1
-status: ready-for-implementation
+document_type: execution-checklist
+status: ready-to-execute
 date: 2026-05-20
-total_effort: "8-11 hours"
+total_effort: "0.5–1h (Path A: merge feature branch) or 8–11h (Path B: from scratch)"
 ---
 
 # Phase 5 Candidate 1: Implementation Checklist
-## ZimWriter libzim Integration — Per-Task Hour Breakdown
+## Hour-by-Hour Breakdown for ZimWriter libzim Integration
 
-**Purpose**: Step-by-step checklist with per-item hour estimates and blockers. Developer follows this sequentially.
+**Situation**: The implementation is complete on `feature/zimwriter-libzim-activation` (commit `ec0ff7be`). Two paths are available:
 
-**Effort allocation**: 8-11 hours total (5.5 hours core implementation + 2.5-3.5 hours testing/debug/verification)
+- **Path A (Recommended)**: Merge the feature branch. Total time: 0.5–1 hour.
+- **Path B**: Implement from scratch using the roadmap. Total time: 8–11 hours.
 
 ---
 
-## PHASE 0: Setup (0.5 hours)
+## Pre-Flight Verification (Both Paths — 10 minutes)
 
-### [ ] 0.1 Create feature branch
-**Time**: 5 minutes
-**Blocker**: None
+Complete all checks before starting.
+
+| # | Check | Command | Expected |
+|---|-------|---------|----------|
+| PF1 | Python version | `python3 --version` | `Python 3.11.x` |
+| PF2 | Architecture | `uname -m` | `aarch64` |
+| PF3 | Working directory | `git status` | On `master`, clean |
+| PF4 | Baseline tests pass | `cd projects/open-repo/backend && python3 -m pytest tests/integration/test_export_pipeline.py -q --tb=no` | `84 passed` |
+| PF5 | Feature branch exists | `git branch -a \| grep zimwriter` | Shows `feature/zimwriter-libzim-activation` |
+| PF6 | Disk space | `df -h /tmp` | At least 2 GB free |
+| PF7 | Network (libzim install) | `curl -s https://pypi.org/pypi/libzim/json \| python3 -c "import json,sys; d=json.load(sys.stdin); print(d['info']['version'])"` | `3.10.0` |
+
+**BLOCKER**: If PF4 fails (not 84 passed), stop. Do not proceed until baseline is restored.
+
+---
+
+## Path A: Merge Feature Branch (Recommended — 0.5–1 hour)
+
+### A.1 Environment Setup
+**Duration**: 15 minutes  
+**Blocker for**: Everything else in Path A.
+
+#### A.1.1 Install libzim wheel
+**Time**: 2–3 minutes
 
 ```bash
-git checkout -b feature/zimwriter-libzim-integration
-git log --oneline | head -3  # Verify you're on master first
+cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend
+uv pip install "libzim>=3.2,<4.0"
 ```
 
-**Verification**: `git branch | grep "zimwriter"` shows your branch
+Verify immediately:
+```bash
+uv run python3 -c "
+from libzim.writer import Creator, Item, StringProvider, Hint
+import libzim
+print('libzim version:', libzim.__version__)
+print('Creator:', Creator)
+print('All imports OK')
+"
+```
 
----
+Expected output:
+```
+libzim version: 3.10.0
+Creator: <class 'libzim.writer.Creator'>
+All imports OK
+```
 
-### [ ] 0.2 Install zimcheck (optional but recommended for full testing)
-**Time**: 5 minutes
-**Blocker**: None (can skip for unit tests only)
+**If install fails**: Run `uv pip install libzim --verbose` to see the error. If "no matching distribution," verify Python 3.11 and aarch64 with `python3 --version && uname -m`. The wheel `libzim-3.10.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl` should resolve. If behind a proxy, set `UV_HTTP_TIMEOUT=120`.
+
+#### A.1.2 Install zimcheck binary
+**Time**: 2–3 minutes  
+**Parallel with A.1.1**: Yes, run in a second terminal.
 
 ```bash
-# Linux
-apt-get update && apt-get install -y zim-tools
+sudo apt-get install -y zim-tools
+```
 
-# macOS
-brew install zim-tools
-
-# Verify
+Verify:
+```bash
 which zimcheck && zimcheck --version
 ```
 
-**Verification**: `zimcheck --version` shows version string (e.g., "1.6.0")
+Expected: Path printed (e.g., `/usr/bin/zimcheck`), version `3.1.3` or similar.
+
+**If apt fails**: Download static binary from `https://github.com/openzim/zim-tools/releases`, extract to `/usr/local/bin/zimcheck`, and `chmod +x`.
 
 ---
 
-### [ ] 0.3 Create test ZIM template file for manual validation
-**Time**: 5 minutes
-**Blocker**: None
+### A.2 Merge Feature Branch
+**Duration**: 5–10 minutes  
+**Blocker for**: A.3 onward.
 
-Create file `test_manual_zim.py`:
-```python
-"""Manual test to generate a small ZIM for debugging."""
+```bash
+cd /home/awank/dev/SuperClaude_Framework
+git checkout master
+git merge feature/zimwriter-libzim-activation --no-ff -m "feat(phase-5): activate libzim integration in ZimWriter"
+```
+
+**If merge conflicts appear**: The feature branch diverged from master at commit `ec0ff7be`. Conflicts most likely in:
+1. `projects/open-repo/backend/pyproject.toml` — accept the feature branch version (adds `"libzim>=3.2,<4.0"`)
+2. `projects/open-repo/backend/app/services/export/zim_writer.py` — accept the feature branch version (adds import guard, ArticleItem, real create_zim() path, metadata implementation)
+
+Resolve and then:
+```bash
+git add projects/open-repo/backend/pyproject.toml
+git add projects/open-repo/backend/app/services/export/zim_writer.py
+git add projects/open-repo/backend/alembic/versions/003_add_zim_exports_table.py
+git merge --continue
+```
+
+---
+
+### A.3 Validate Against Real libzim
+**Duration**: 5 minutes  
+**Blocker**: A.1.1 (libzim installed).
+
+```bash
+cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend
+python3 -m pytest tests/integration/test_export_pipeline.py -q --tb=short
+```
+
+Expected: `84 passed` (identical to pre-merge baseline — tests run in stub mode because test fixtures pass `zimcheck_binary=None` and libzim generates a real ZIM but tests only verify interface contracts).
+
+**If any test fails**: Stop. Do not proceed. Investigate the failure — it indicates a merge conflict was resolved incorrectly or a new incompatibility was introduced.
+
+---
+
+### A.4 Smoke Test — Real ZIM File
+**Duration**: 5 minutes  
+**Blocker**: A.1.1 (libzim installed), A.2 (feature branch merged).
+
+```bash
+cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend
+
+uv run python3 -c "
 from pathlib import Path
 from app.services.export.zim_writer import (
-    ZimWriter, ZimMetadata, ExportConfig, ZimEntry
+    ZimWriter, ZimMetadata, ExportConfig, ExportScope
 )
 
 metadata = ZimMetadata(
-    title="Test Archive",
-    description="Test content",
-    language="eng",
-    creator="Test",
-    publisher="Test",
-    date="2026-05-20",
-    name="test_archive",
-    flavour="test"
+    title='Open-Repo Test',
+    description='Smoke test export',
+    language='eng',
+    name='open-repo_en_nopic',
+    flavour='nopic',
+    creator='Open-Repo Community',
+    publisher='Open-Repo',
+    source_url='https://test.example.org',
 )
-
-entries = [
-    ZimEntry(
-        path="index",
-        title="Welcome",
-        content="<h1>Welcome</h1><p>Test article</p>",
-        mime_type="text/html; charset=utf-8",
-        is_front_article=True
-    )
-]
-
-config = ExportConfig(language_iso3="eng")
+config = ExportConfig(
+    scope=ExportScope.LOCAL_ONLY,
+    flavour='nopic',
+    include_images=False,
+    language='en',
+    language_iso3='eng',
+)
 writer = ZimWriter(
-    entries=entries,
     metadata=metadata,
     config=config,
-    output_path=Path("test_manual.zim"),
-    zimcheck_binary="/usr/bin/zimcheck"  # Or adjust for your system
+    output_path=Path('/tmp/smoke-test.zim'),
+    zimcheck_binary=None,
 )
-
-result = writer.create_zim()
-print(f"✓ ZIM created at {result.output_path}")
-print(f"  Size: {result.file_size_bytes} bytes")
-print(f"  Valid: {result.zimcheck_passed}")
+writer.add_article(
+    path='index',
+    content='<html><body><h1>Smoke Test</h1><p>Real ZIM output.</p></body></html>',
+    article_type='procedure',
+)
+result = writer.create_zim(run_zimcheck=False)
+print('Output path:', result.output_path)
+print('File size:', result.file_size_bytes, 'bytes')
+print('SHA-256:', result.sha256)
+print('Article count:', result.article_count)
+print()
+magic = open('/tmp/smoke-test.zim', 'rb').read(4)
+print('ZIM magic bytes:', magic.hex())
+assert magic == b'\x5a\x49\x4d\x04', f'FAIL: bad magic {magic!r}'
+print('ZIM magic header: PASS')
+"
 ```
 
-**Verification**: File created, no syntax errors
+Expected output:
+```
+Output path: /tmp/smoke-test.zim
+File size: [>1024] bytes
+SHA-256: [64 hex chars]
+Article count: 1
+ZIM magic bytes: 5a494d04
+ZIM magic header: PASS
+```
+
+**Blocker if smoke test fails**: The `_LIBZIM_AVAILABLE` flag may be `False` despite installation. Check with `uv run python3 -c "from libzim.writer import Creator; print('OK')"`. If this fails, libzim is not in the UV venv — run `uv pip install "libzim>=3.2,<4.0"` again inside the backend directory.
 
 ---
 
-## PHASE 1: Dependency and Imports (0.5 hours)
-
-### [ ] 1.1 Add libzim to pyproject.toml
-**Time**: 5 minutes
-**Blocker**: None
-
-Edit `pyproject.toml`, locate `[project.dependencies]` section:
-```toml
-[project.dependencies]
-pytest = ">=7.0.0"
-click = ">=8.0.0"
-rich = ">=13.0.0"
-libzim = ">=3.10,<4.0"  # ADD THIS LINE
-```
-
-**Verification**: `grep "libzim" pyproject.toml` returns the new line
-
----
-
-### [ ] 1.2 Install libzim wheel
-**Time**: 15 minutes
-**Blocker**: None
+### A.5 zimcheck Validation
+**Duration**: 3 minutes  
+**Blocker**: A.1.2 (zimcheck installed), A.4 (real ZIM file produced).
 
 ```bash
-uv pip install libzim
-
-# Verify installation
-python3 -c "from libzim.writer import Creator, Item, StringProvider, Hint; print('✓ Writer OK')"
-python3 -c "from libzim.reader import Archive; print('✓ Reader OK')"
+zimcheck /tmp/smoke-test.zim
+echo "zimcheck exit code: $?"
 ```
 
-**Verification**: Both imports succeed with no errors
+Expected: Output with no `ERROR` lines; exit code 0. Possible warnings about illustration size or title length are acceptable — they do not indicate failure.
+
+**If zimcheck fails**: Common causes and fixes:
+- `Description` metadata > 80 chars: `ZimMetadata.validate()` enforces this at Python level; should not occur
+- Missing illustration: `_FALLBACK_ILLUSTRATION_PNG` is always set; should not occur
+- Title > 30 chars: zimcheck warning only (not failure) in version 3.1.3
+- Name format invalid: Must match `[a-z0-9-]+_[a-z]{2,3}_[a-z0-9-]+` pattern; enforced at Python level
+
+Run `zimcheck /tmp/smoke-test.zim --verbose` for detailed error output.
 
 ---
 
-### [ ] 1.3 Add import guard in zim_writer.py
-**Time**: 10 minutes
-**Blocker**: libzim must be installed (from 1.2)
+### A.6 Apply Alembic Migration
+**Duration**: 5 minutes  
+**Blocker**: Requires running PostgreSQL instance.
 
-Edit `app/services/export/zim_writer.py`, add after existing imports (around line 48):
+```bash
+cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend
+alembic upgrade head
+```
+
+Expected:
+```
+INFO  [alembic.runtime.migration] Running upgrade 002 -> 003, Add zim_exports table for Phase 5
+```
+
+Verify migration applied:
+```bash
+alembic current
+# Expected: 003 (head)
+```
+
+**If database is not available**: This step can be deferred. The zim_writer.py changes and smoke test above work without the database migration. Apply migration when the database instance is accessible.
+
+---
+
+### A.7 Optional — Kiwix Device Test
+**Duration**: 15–30 minutes (optional but strongly recommended before declaring production-ready)
+
+```bash
+# Transfer ZIM to an Android device or open on desktop
+# Option A: Kiwix Desktop (Linux)
+apt-get install -y kiwix-tools
+kiwix-serve /tmp/smoke-test.zim --port 8080
+# Open http://localhost:8080 in browser
+
+# Option B: Transfer to Android
+adb push /tmp/smoke-test.zim /sdcard/Download/
+# Open Kiwix app on device, add library → navigate to /sdcard/Download/smoke-test.zim
+```
+
+Verify:
+- Article displays with correct title ("Smoke Test")
+- HTML renders without broken styles
+- (Xapian search not expected to work until Phase 5.2 adds `config_indexing()` call)
+
+---
+
+### Path A Summary
+
+| Step | Duration | Blocker? | Gate Condition |
+|------|----------|----------|----------------|
+| A.1.1 Install libzim wheel | 2–3 min | Yes (for A.4) | `from libzim.writer import Creator` succeeds |
+| A.1.2 Install zimcheck | 2–3 min | No (for tests) | `zimcheck --version` prints version |
+| A.2 Merge feature branch | 5–10 min | Yes (for A.3) | No conflicts, clean merge |
+| A.3 Validate 84 tests | 5 min | Yes (stop if fail) | `84 passed` |
+| A.4 Smoke test ZIM | 5 min | Yes (stop if fail) | ZIM magic header `5a494d04` |
+| A.5 zimcheck validation | 3 min | Recommended | Exit code 0, no ERROR lines |
+| A.6 Alembic migration | 5 min | Deferred OK | `alembic current` shows `003` |
+| A.7 Kiwix device test | 15–30 min | Optional | Articles display correctly |
+| **Total Path A** | **0.5–1h** | | All gate conditions met |
+
+---
+
+## Path B: From-Scratch Implementation (8–11 hours)
+
+Use Path B only if the feature branch is unavailable or has been abandoned.
+
+### B.0 — Setup and Branch Creation (30 minutes)
+**Duration**: 30 minutes
+
+```bash
+# Create feature branch
+git checkout -b feature/zimwriter-libzim-integration
+
+# Install libzim
+cd projects/open-repo/backend
+uv pip install "libzim>=3.2,<4.0"
+
+# Install zimcheck
+sudo apt-get install -y zim-tools
+
+# Verify baseline
+python3 -m pytest tests/integration/test_export_pipeline.py -q
+# Expected: 84 passed
+```
+
+Gate: `from libzim.writer import Creator, Item, StringProvider, Hint` succeeds.
+
+---
+
+### B.1 — Add libzim Import Guard (15 minutes)
+**Duration**: 15 minutes  
+**File**: `app/services/export/zim_writer.py`  
+**Location**: After line 49 (`from typing import Optional`)
+
+Add import guard immediately after the standard library imports:
 
 ```python
-# libzim integration — try import with fallback for stub behavior
+# TRY-EXCEPT import guard for libzim
 try:
     from libzim.writer import Creator, Item, StringProvider, Hint
     _LIBZIM_AVAILABLE = True
 except ImportError:
     _LIBZIM_AVAILABLE = False
     Creator = None  # type: ignore[assignment,misc]
+    Item = object   # type: ignore[assignment,misc]
+    StringProvider = None  # type: ignore[assignment,misc]
+    Hint = None  # type: ignore[assignment,misc]
+
+# Fallback 48x48 transparent PNG for ZIM illustration
+_FALLBACK_ILLUSTRATION_PNG = (
+    b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x000\x00\x00\x000"
+    b"\x08\x06\x00\x00\x00W\x02\xf9\x87\x00\x00\x00\x0bIDATx\x9cc"
+    b"\x00\x01\x00\x00\x05\x00\x01\r\n-\xb4\x00\x00\x00\x00IEND\xaeB`\x82"
+)
 ```
 
-**Verification**:
-```bash
-python3 -c "from app.services.export.zim_writer import _LIBZIM_AVAILABLE; print(f'libzim available: {_LIBZIM_AVAILABLE}')"
-```
-
-Expected output: `libzim available: True`
+Gate: `python3 -m pytest tests/integration/test_export_pipeline.py -q` still shows `84 passed`.
 
 ---
 
-### [ ] 1.4 Commit Phase 1
-**Time**: 5 minutes
-
-```bash
-git add pyproject.toml app/services/export/zim_writer.py
-git commit -m "feat(zim): add libzim>=3.10 dependency and import guard"
-git log --oneline | head -3  # Verify commit
-```
-
----
-
-## PHASE 2: ArticleItem Adapter (1.0 hour)
-
-### [ ] 2.1 Add ArticleItem class
-**Time**: 20 minutes
-**Blocker**: Phase 1 must be complete
-
-Edit `app/services/export/zim_writer.py`. Locate the `ZimEntry` dataclass (around line 400), then add `ArticleItem` **after** it and **before** the `ZimWriter` class:
+### B.2 — Add ArticleItem Adapter Class (45 minutes)
+**Duration**: 45 minutes  
+**File**: `app/services/export/zim_writer.py`  
+**Location**: New class, after the `ZimEntry` dataclass (before the `ZimWriter` class)
 
 ```python
+# ---------------------------------------------------------------------------
+# libzim adapter class
+# ---------------------------------------------------------------------------
+
+
 class ArticleItem(Item):
     """
     Adapter from ZimEntry to libzim's Item interface.
@@ -191,8 +357,8 @@ class ArticleItem(Item):
     This class bridges ZimEntry (our data model) to libzim's API.
 
     Thread safety: Each ArticleItem instance is consumed once by add_item()
-    and not retained. Thread-safe as long as the owning ZimWriter is
-    called from a single thread (which is enforced by ZimWriter's docs).
+    and not retained. Thread-safe as long as the owning ZimWriter is called
+    from a single thread (enforced by ZimWriter's design).
     """
 
     def __init__(self, entry: "ZimEntry") -> None:
@@ -218,184 +384,99 @@ class ArticleItem(Item):
         return StringProvider(content)
 ```
 
-**Verification**:
-```bash
-python3 -c "from app.services.export.zim_writer import ArticleItem; print('✓ ArticleItem OK')"
-```
-
----
-
-### [ ] 2.2 Run existing tests (should all still pass)
-**Time**: 30 minutes
-**Blocker**: Phase 1 must be complete
-
-```bash
-uv run pytest tests/unit/test_zim_writer.py -v
-uv run pytest tests/unit/test_zim_metadata.py -v
-```
-
-Expected: All 84+ tests pass (still using stub placeholders)
-
-**Verification**: Exit code 0, no failures
-
----
-
-### [ ] 2.3 Manual test: Instantiate ArticleItem
-**Time**: 10 minutes
+Gate: Unit test that constructs `ArticleItem(entry)` and asserts all 5 methods return correct values (see test sketch below).
 
 ```python
-# In Python shell or test file
-from app.services.export.zim_writer import ArticleItem, ZimEntry
-from libzim.writer import Hint
-
+# Quick sanity test — run manually before continuing:
+uv run python3 -c "
+from app.services.export.zim_writer import ZimEntry, ArticleItem
 entry = ZimEntry(
-    path="test/article",
-    title="Test",
-    content="<p>Test</p>",
-    mime_type="text/html; charset=utf-8",
-    is_front_article=True
+    path='test/article',
+    title='Test Article',
+    content='<h1>Test</h1>',
+    mime_type='text/html; charset=utf-8',
+    is_front_article=True,
 )
-
 item = ArticleItem(entry)
-print(f"Path: {item.get_path()}")
-print(f"Title: {item.get_title()}")
-print(f"MIME: {item.get_mimetype()}")
-print(f"Hints: {item.get_hints()}")
-print("✓ All methods work")
-```
-
-**Verification**: Output shows all methods return correct values
-
----
-
-### [ ] 2.4 Commit Phase 2
-**Time**: 5 minutes
-
-```bash
-git add app/services/export/zim_writer.py
-git commit -m "feat(zim): add ArticleItem adapter class for libzim integration"
+assert item.get_path() == 'test/article'
+assert item.get_title() == 'Test Article'
+assert item.get_mimetype() == 'text/html; charset=utf-8'
+print('ArticleItem: PASS')
+"
 ```
 
 ---
 
-## PHASE 3: Real Creator Context (1.5 hours)
+### B.3 — Replace Stub in create_zim() (1 hour)
+**Duration**: 1 hour  
+**File**: `app/services/export/zim_writer.py`  
+**Location**: Around line 759–762
 
-### [ ] 3.1 Replace create_zim() stub call
-**Time**: 25 minutes
-**Blocker**: Phase 1-2 must be complete
-
-Edit `app/services/export/zim_writer.py`. Locate the `create_zim()` method (around line 762). Find the stub call:
+Find the stub call:
 ```python
-        # TODO(post-PR-merge): Replace this stub with actual python-libzim Creator calls
-        # See the docstring above for the correct implementation pattern.
-        # For now, write a placeholder file to allow test harness to run.
-        self._stub_write_placeholder()
+# TODO(post-PR-merge): Replace this stub with actual python-libzim Creator calls
+# See the docstring above for the correct implementation pattern.
+# For now, write a placeholder file to allow test harness to run.
+self._stub_write_placeholder()
 ```
 
-Replace it with:
+Replace with:
 ```python
-        if not _LIBZIM_AVAILABLE:
-            # Fallback stub for environments without libzim installed (dev/CI without wheel)
-            self._stub_write_placeholder()
-        else:
-            with Creator(str(self.output_path)) as creator:
-                creator.config_indexing(True, self.config.language_iso3)
-                creator.set_mainpath("index")
-                self._apply_metadata_to_creator(creator)
-                for entry in self._entries:
-                    creator.add_item(ArticleItem(entry))
-            # Creator.__exit__ triggers ZIM file finalization and write
+if not _LIBZIM_AVAILABLE:
+    # Fallback stub for environments without libzim installed (dev/CI without wheel)
+    placeholder_content = (
+        f"STUB ZIM PLACEHOLDER\n"
+        f"name={self.metadata.name}\n"
+        f"articles={self._article_count}\n"
+        f"resources={self._resource_count}\n"
+        f"generated_at={datetime.utcnow().isoformat()}\n"
+    ).encode("utf-8")
+    self.output_path.write_bytes(placeholder_content)
+else:
+    # Use real libzim Creator for ZIM file generation
+    with Creator(str(self.output_path)) as creator:
+        creator.config_indexing(True, self.config.language_iso3)  # Enable Xapian FTS
+        creator.set_mainpath("index")
+        self._apply_metadata_to_creator(creator)
+        for entry in self._entries:
+            creator.add_item(ArticleItem(entry))
+    # Creator.__exit__ triggers ZIM file finalization and write
 ```
 
-**Verification**: No syntax errors, code loads
+Note: This adds `creator.config_indexing()` which the feature branch omits. Including it here enables Xapian FTS from the start.
+
+Gate: ZIM magic bytes test:
 ```bash
-python3 -c "from app.services.export.zim_writer import ZimWriter; print('✓ ZimWriter OK')"
+uv run python3 -c "
+from pathlib import Path
+from app.services.export.zim_writer import ZimWriter, ZimMetadata, ExportConfig, ExportScope
+metadata = ZimMetadata(title='Test', description='Test', language='eng',
+    name='test_en_nopic', flavour='nopic', creator='Test', publisher='Test',
+    source_url='https://example.org')
+config = ExportConfig(scope=ExportScope.LOCAL_ONLY, flavour='nopic',
+    include_images=False, language='en', language_iso3='eng')
+writer = ZimWriter(metadata=metadata, config=config,
+    output_path=Path('/tmp/b3-test.zim'), zimcheck_binary=None)
+writer.add_article(path='index', content='<h1>Test</h1>', article_type='procedure')
+result = writer.create_zim(run_zimcheck=False)
+magic = open('/tmp/b3-test.zim', 'rb').read(4)
+assert magic == b'\x5a\x49\x4d\x04', f'FAIL: {magic!r}'
+print('ZIM magic header: PASS; size', result.file_size_bytes, 'bytes')
+"
 ```
 
 ---
 
-### [ ] 3.2 Run unit tests (expect failures in metadata validation)
-**Time**: 40 minutes
-**Blocker**: Phase 3.1 must be complete
+### B.4 — Implement _apply_metadata_to_creator() (45 minutes)
+**Duration**: 45 minutes  
+**File**: `app/services/export/zim_writer.py`  
+**Location**: `_apply_metadata_to_creator()` method (currently `pass`)
 
-```bash
-uv run pytest tests/unit/test_zim_writer.py::test_zim_writer_creates_real_zim_file -xvs
-```
-
-Expected: May fail with "AttributeError: 'NoneType' object has no attribute 'add_metadata'" (because `_apply_metadata_to_creator()` is still `pass`). This is expected.
-
----
-
-### [ ] 3.3 Manual hex check (optional but informative)
-**Time**: 5 minutes
-
-Run the test file `test_manual_zim.py`:
-```bash
-python3 test_manual_zim.py
-```
-
-Then inspect the output:
-```bash
-file test_manual.zim  # Should show "ZIM archive"
-xxd test_manual.zim | head -3  # First bytes should be "5a49 4d04" (ZIM magic)
-```
-
-**Verification**: 
-- `file` shows ZIM archive
-- `xxd` shows magic header `5a 49 4d 04`
-- File size > 1 KB
-
-If these pass, real ZIM creation is working! If not, debug with: `xxd test_manual.zim | head -5`
-
----
-
-### [ ] 3.4 Commit Phase 3
-**Time**: 5 minutes
-
-```bash
-git add app/services/export/zim_writer.py
-git commit -m "feat(zim): activate real libzim.Creator in create_zim()"
-```
-
----
-
-## PHASE 4: Metadata Implementation (1.5 hours)
-
-### [ ] 4.1 Add _FALLBACK_ILLUSTRATION_PNG constant
-**Time**: 5 minutes
-**Blocker**: Phase 3 must be complete
-
-Edit `app/services/export/zim_writer.py`. Add this at module level, **before** the `ZimWriter` class:
+Replace the `pass` body with:
 
 ```python
-# Minimal 1x1 transparent PNG — used as fallback illustration when no icon is provided.
-# This is a well-formed PNG that passes zimcheck with a warning rather than a failure.
-# Replace with a real 48x48 branded icon before publishing.
-_FALLBACK_ILLUSTRATION_PNG = (
-    b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x000\x00\x00\x000"
-    b"\x08\x06\x00\x00\x00W\x02\xf9\x87\x00\x00\x00\x0bIDATx\x9cc"
-    b"\x00\x01\x00\x00\x05\x00\x01\r\n-\xb4\x00\x00\x00\x00IEND\xaeB`\x82"
-)
-```
-
-**Verification**: No syntax errors
-```bash
-python3 -c "from app.services.export.zim_writer import _FALLBACK_ILLUSTRATION_PNG; print(f'PNG length: {len(_FALLBACK_ILLUSTRATION_PNG)}')"
-```
-
-Expected output: `PNG length: 98`
-
----
-
-### [ ] 4.2 Implement _apply_metadata_to_creator()
-**Time**: 30 minutes
-**Blocker**: Phase 4.1 must be complete
-
-Edit `app/services/export/zim_writer.py`. Locate the `_apply_metadata_to_creator()` method (around line 870). It currently has just `pass`. Replace the entire body:
-
-```python
-    def _apply_metadata_to_creator(self, creator: "Creator") -> None:
-        """Apply all ZimMetadata fields to the open libzim Creator instance."""
+    def _apply_metadata_to_creator(self, creator: object) -> None:
+        """Apply all ZimMetadata fields to a python-libzim Creator instance."""
         creator.add_metadata("Title", self.metadata.title)
         creator.add_metadata("Description", self.metadata.description)
         creator.add_metadata("Language", self.metadata.language)
@@ -409,498 +490,299 @@ Edit `app/services/export/zim_writer.py`. Locate the `_apply_metadata_to_creator
         creator.add_metadata("Scraper", self.metadata.scraper)
         if self.metadata.long_description:
             creator.add_metadata("LongDescription", self.metadata.long_description)
-        # Add illustration — required for zimcheck to pass
         illustration_bytes = self._get_illustration_bytes()
         if illustration_bytes:
             creator.add_illustration(48, illustration_bytes)
         else:
-            # Fallback: 1x1 transparent PNG (passes zimcheck with a warning, not a failure)
             creator.add_illustration(48, _FALLBACK_ILLUSTRATION_PNG)
 ```
 
-**Verification**: No syntax errors
+Gate: Use `libzim.reader.Archive` to verify metadata roundtrip:
 ```bash
-python3 -c "from app.services.export.zim_writer import ZimWriter; print('✓ ZimWriter OK')"
-```
-
----
-
-### [ ] 4.3 Run manual metadata test
-**Time**: 20 minutes
-
-Run the test file again:
-```bash
-python3 test_manual_zim.py
-```
-
-If successful, verify metadata:
-```bash
-python3 << 'EOF'
+uv run python3 -c "
+# Re-use /tmp/b3-test.zim from B.3 (or regenerate)
 from libzim.reader import Archive
-
-archive = Archive("test_manual.zim")
-metadata = archive.metadata
-
-print("Metadata retrieved:")
-for key in ["Title", "Description", "Language", "Creator", "Publisher"]:
-    print(f"  {key}: {metadata.get(key, 'NOT FOUND')}")
-print("✓ Metadata OK")
-EOF
+a = Archive('/tmp/b3-test.zim')
+print('Title:', a.get_metadata('Title'))
+print('Description:', a.get_metadata('Description'))
+print('Language:', a.get_metadata('Language'))
+# If these print correct values, metadata integration is working
+"
 ```
-
-**Verification**: All 5+ metadata fields present
 
 ---
 
-### [ ] 4.4 Run unit tests (expect all to pass now)
-**Time**: 30 minutes
+### B.5 — pyproject.toml Update (10 minutes)
+**Duration**: 10 minutes  
+**File**: `pyproject.toml`
+
+Add under `[project.dependencies]`:
+```toml
+"libzim>=3.2,<4.0",
+```
+
+Gate: `uv pip install -e .` resolves without conflicts.
+
+---
+
+### B.6 — Run Full 84-Test Suite (15 minutes)
+**Duration**: 15 minutes
 
 ```bash
-uv run pytest tests/unit/test_zim_writer.py -v
-uv run pytest tests/unit/test_zim_metadata.py -v
+python3 -m pytest tests/integration/test_export_pipeline.py -v --tb=short
 ```
 
-Expected: All 84+ tests pass
+Expected: `84 passed` (tests run in stub-or-real mode; all should pass because tests do not check ZIM binary format).
 
-**Verification**: Exit code 0, count shows "84 passed"
+**Blocker**: Any failure here blocks all subsequent steps.
 
 ---
 
-### [ ] 4.5 Commit Phase 4
-**Time**: 5 minutes
+### B.7 — zimcheck Integration Test (30 minutes)
+**Duration**: 30 minutes
 
 ```bash
-git add app/services/export/zim_writer.py
-git commit -m "feat(zim): implement full metadata application with fallback illustration"
-```
-
----
-
-## PHASE 5: ZimCheck Validation (0.5 hours)
-
-### [ ] 5.1 Verify zimcheck is installed and ready
-**Time**: 5 minutes
-**Blocker**: zimcheck binary must be available
-
-```bash
-which zimcheck && zimcheck --version
-```
-
-If missing:
-```bash
-# Linux
-apt-get install zim-tools
-
-# macOS
-brew install zim-tools
-```
-
-**Verification**: `zimcheck --version` shows version string
-
----
-
-### [ ] 5.2 Verify create_zim() uses run_zimcheck=True by default
-**Time**: 5 minutes
-
-Search `app/services/export/zim_writer.py` for the `create_zim()` method signature. Verify:
-```python
-def create_zim(self, run_zimcheck: bool = True) -> ZimWriteResult:
-```
-
-Default should be `True`. If it's `False`, change it to `True`.
-
-**Verification**: `grep "run_zimcheck: bool = True" app/services/export/zim_writer.py` returns the line
-
----
-
-### [ ] 5.3 Test zimcheck integration
-**Time**: 15 minutes
-
-Create a test script `test_zimcheck.py`:
-```python
-"""Test zimcheck validation."""
+# Generate a 10-article test export
+uv run python3 -c "
 from pathlib import Path
-import subprocess
-from app.services.export.zim_writer import (
-    ZimWriter, ZimMetadata, ExportConfig, ZimEntry
-)
+from app.services.export.zim_writer import ZimWriter, ZimMetadata, ExportConfig, ExportScope
 
 metadata = ZimMetadata(
-    title="Test",
-    description="Test",
-    language="eng",
-    creator="Test",
-    publisher="Test",
-    date="2026-05-20",
-    name="test",
-    flavour="test"
+    title='Open-Repo Full Test',
+    description='zimcheck validation',
+    language='eng',
+    name='open-repo_en_nopic',
+    flavour='nopic',
+    creator='Open-Repo Community',
+    publisher='Open-Repo',
+    source_url='https://test.open-repo.example.org',
 )
+config = ExportConfig(scope=ExportScope.LOCAL_ONLY, flavour='nopic',
+    include_images=False, language='en', language_iso3='eng')
+writer = ZimWriter(metadata=metadata, config=config,
+    output_path=Path('/tmp/b7-test.zim'),
+    zimcheck_binary='/usr/bin/zimcheck')
 
-entries = [
-    ZimEntry(
-        path="index",
-        title="Test",
-        content="<p>Test</p>",
-        mime_type="text/html; charset=utf-8",
-        is_front_article=True
+# Add index + 9 articles
+writer.add_article(path='index', content='<html><body><h1>Library</h1></body></html>', article_type='procedure')
+for i in range(9):
+    writer.add_article(
+        path=f'agriculture/article-{i:02d}',
+        content=f'<html><body><h1>Article {i}</h1><p>Content of article {i}.</p></body></html>',
+        article_type='procedure',
     )
-]
-
-config = ExportConfig(language_iso3="eng")
-writer = ZimWriter(
-    entries=entries,
-    metadata=metadata,
-    config=config,
-    output_path=Path("test_zimcheck.zim"),
-    zimcheck_binary="/usr/bin/zimcheck"
-)
 
 result = writer.create_zim(run_zimcheck=True)
-print(f"ZIM created: {result.output_path}")
-print(f"ZimCheck passed: {result.zimcheck_passed}")
-print(f"Size: {result.file_size_bytes} bytes")
-
-# Manual verification
-ret = subprocess.run(["zimcheck", str(result.output_path)], capture_output=True)
-print(f"zimcheck exit code: {ret.returncode}")
-if ret.returncode == 0:
-    print("✓ zimcheck validation passed")
-else:
-    print("✗ zimcheck validation failed:")
-    print(ret.stdout.decode())
-    print(ret.stderr.decode())
+print('zimcheck_passed:', result.zimcheck_passed)
+print('Article count:', result.article_count)
+"
 ```
 
-Run it:
-```bash
-python3 test_zimcheck.py
-```
+Expected: `zimcheck_passed: True`.
 
-**Verification**: 
-- `ZimCheck passed: True`
-- `zimcheck exit code: 0`
-- Output shows "✓ zimcheck validation passed"
+**If zimcheck fails**: Run `zimcheck /tmp/b7-test.zim --verbose` to get specific error messages. Common fixes listed in Section A.5 above.
 
-If zimcheck fails, debug with:
+---
+
+### B.8 — Alembic Migration (1 hour)
+**Duration**: 1 hour  
+**File**: `alembic/versions/003_add_zim_exports_table.py`
+
+Create the migration file (copy from `PHASE_5_CANDIDATE_1_ZIMWRITER_IMPLEMENTATION_ROADMAP.md`, Section "Database Schema"). Full schema: 22 columns, 2 custom indexes.
+
+Apply:
 ```bash
-zimcheck --verbose test_zimcheck.zim
+alembic upgrade head
+alembic current  # Expected: 003 (head)
 ```
 
 ---
 
-### [ ] 5.4 Run integration tests
-**Time**: 10 minutes
-**Blocker**: zimcheck binary must be installed
+### B.9 — Write 12 New Integration Tests (1.5 hours)
+**Duration**: 1.5 hours
 
-```bash
-uv run pytest tests/integration/test_zimcheck_validation.py -v -m integration
-```
+Create two new test files (see roadmap Section "Test Matrix" for 12 test IDs):
 
-Expected: 6+ tests pass
+- `tests/unit/test_zim_writer_real.py` — Tests 1-5, 11-12 (no subprocess, verify ZIM binary)
+- `tests/integration/test_zimcheck_validation.py` — Tests 6-7 (requires zimcheck)
+- `tests/integration/test_zim_readback.py` — Tests 8-9 (uses libzim.reader.Archive)
 
-**Verification**: Exit code 0, no failures
-
----
-
-### [ ] 5.5 Commit Phase 5
-**Time**: 5 minutes
-
-```bash
-git add app/services/export/zim_writer.py
-git commit -m "feat(zim): re-enable zimcheck validation for all exports"
-```
+Gate: All 12 new tests pass alongside the original 84.
 
 ---
 
-## PHASE 6: Full Test Cycle (1.0 hour)
+### B.10 — Remove Stub Method (15 minutes)
+**Duration**: 15 minutes  
+**File**: `app/services/export/zim_writer.py`
 
-### [ ] 6.1 Run all 84+ export tests
-**Time**: 15 minutes
+Delete `_stub_write_placeholder()` method entirely (approximately lines 914–931). Re-run full test suite to confirm nothing breaks:
 
 ```bash
-uv run pytest tests/ -k "export" -v
+python3 -m pytest tests/ -k "export or zim" -v
 ```
 
-Expected: 84+ tests pass, 0 failures
-
-**Verification**: Output shows "X passed"
+Gate: All tests pass; no stub references remain.
 
 ---
 
-### [ ] 6.2 Run full test suite (optional, comprehensive)
-**Time**: 30 minutes
+### B.11 — Manual End-to-End Test (30 minutes)
+**Duration**: 30 minutes (required before PR)
 
 ```bash
-uv run pytest tests/ -v
+# Generate a realistic 50-article export from test data
+# Transfer to Kiwix Desktop or Android (see A.7 above)
 ```
 
-This runs ALL tests, not just export-related.
-
-**Verification**: Exit code 0, no critical failures
+Verify:
+- Articles display correctly
+- Navigation works
+- In-app search returns results (requires Xapian FTS enabled via `config_indexing()`)
 
 ---
 
-### [ ] 6.3 Generate a 50-article test ZIM (final manual validation)
-**Time**: 15 minutes
+### B.12 — Commit and PR (30 minutes)
+**Duration**: 30 minutes
 
-Create `test_50_articles.py`:
-```python
-"""Generate a 50-article ZIM for final validation."""
+```bash
+git add projects/open-repo/backend/app/services/export/zim_writer.py
+git add projects/open-repo/backend/pyproject.toml
+git add projects/open-repo/backend/alembic/versions/003_add_zim_exports_table.py
+git add projects/open-repo/backend/tests/unit/test_zim_writer_real.py
+git add projects/open-repo/backend/tests/integration/test_zimcheck_validation.py
+git add projects/open-repo/backend/tests/integration/test_zim_readback.py
+
+git commit -m "feat(phase-5): activate libzim integration in ZimWriter
+
+- Replace stub _stub_write_placeholder() with real Creator context manager
+- Add ArticleItem adapter class (ZimEntry -> libzim.writer.Item)
+- Implement _apply_metadata_to_creator() with all 11 ZIM metadata fields
+- Add Alembic migration 003: zim_exports table (22 columns, 3 indexes)
+- Add libzim>=3.2,<4.0 to pyproject.toml dependencies
+- Import guard preserves test compatibility without libzim installed
+- Enable Xapian FTS via creator.config_indexing()
+
+All 84 existing tests pass. 12 new integration tests added."
+```
+
+---
+
+### Path B Summary
+
+| Step | Duration | Blocker? | Gate |
+|------|----------|----------|------|
+| B.0 Setup, branch, install | 30 min | Yes | 84 tests pass; libzim imports OK |
+| B.1 Import guard + fallback PNG | 15 min | Yes (for B.2) | 84 tests still pass |
+| B.2 ArticleItem class | 45 min | Yes (for B.3) | get_path/title/etc. return correct values |
+| B.3 create_zim() integration | 1 hr | Yes (for B.4) | ZIM magic header `5a494d04` |
+| B.4 _apply_metadata_to_creator() | 45 min | Yes (for B.7) | Metadata roundtrip via Archive |
+| B.5 pyproject.toml update | 10 min | No | `uv pip install -e .` resolves |
+| B.6 Full 84-test suite | 15 min | Yes (stop if fail) | `84 passed` |
+| B.7 zimcheck integration test | 30 min | Recommended | zimcheck_passed=True |
+| B.8 Alembic migration | 1 hr | Deferred OK | `alembic current` = 003 |
+| B.9 12 new integration tests | 1.5 hr | Recommended | All 12 pass |
+| B.10 Remove stub method | 15 min | Yes | All tests pass post-deletion |
+| B.11 Manual E2E test | 30 min | Recommended | Articles display in Kiwix |
+| B.12 Commit and PR | 30 min | | PR ready for review |
+| **Total Path B** | **8–11 hr** | | All gate conditions met |
+
+---
+
+## Docker Test Environment (Optional — Isolated Testing)
+
+Use this to validate ZIM output in a clean environment separate from the host system.
+
+```dockerfile
+# File: projects/open-repo/docker/zim-test.Dockerfile
+FROM python:3.11-slim-bookworm
+
+RUN apt-get update && apt-get install -y \
+    zim-tools \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY projects/open-repo/backend/pyproject.toml .
+COPY projects/open-repo/backend/app/ ./app/
+COPY projects/open-repo/backend/tests/ ./tests/
+
+RUN pip install -e ".[dev]" && \
+    pip install "libzim>=3.2,<4.0"
+
+CMD ["python3", "-m", "pytest", "tests/integration/test_export_pipeline.py", "-v"]
+```
+
+Build and run:
+```bash
+docker build -t open-repo-zim-test -f projects/open-repo/docker/zim-test.Dockerfile .
+docker run --rm open-repo-zim-test
+```
+
+Expected: `84 passed` inside the container.
+
+For generating and validating a real ZIM inside the container:
+```bash
+docker run --rm \
+  -v /tmp/zim-output:/output \
+  open-repo-zim-test \
+  python3 -c "
 from pathlib import Path
-from app.services.export.zim_writer import (
-    ZimWriter, ZimMetadata, ExportConfig, ZimEntry
-)
-
-metadata = ZimMetadata(
-    title="50-Article Test",
-    description="Manual validation export",
-    language="eng",
-    creator="Test",
-    publisher="Test",
-    date="2026-05-20",
-    name="test_50",
-    flavour="test"
-)
-
-# Create 50 entries
-entries = []
-for i in range(50):
-    entries.append(
-        ZimEntry(
-            path=f"articles/article-{i:03d}",
-            title=f"Article {i}",
-            content=f"<h1>Article {i}</h1><p>Content {i}</p>",
-            mime_type="text/html; charset=utf-8",
-            is_front_article=(i == 0)
-        )
-    )
-
-config = ExportConfig(language_iso3="eng")
-writer = ZimWriter(
-    entries=entries,
-    metadata=metadata,
-    config=config,
-    output_path=Path("test_50_articles.zim"),
-    zimcheck_binary="/usr/bin/zimcheck"
-)
-
-result = writer.create_zim()
-print(f"✓ ZIM created: {result.output_path}")
-print(f"  Size: {result.file_size_bytes:,} bytes")
-print(f"  Valid: {result.zimcheck_passed}")
-print(f"  Duration: {result.generation_duration_seconds:.2f}s")
+from app.services.export.zim_writer import ZimWriter, ZimMetadata, ExportConfig, ExportScope
+# ... same smoke test as A.4 above, output to /output/smoke-test.zim
+"
+zimcheck /tmp/zim-output/smoke-test.zim
 ```
-
-Run it:
-```bash
-python3 test_50_articles.py
-time zimcheck test_50_articles.zim
-```
-
-**Verification**:
-- ZIM file created successfully
-- Size is between 10KB-1MB (reasonable for 50 articles)
-- zimcheck passes with exit code 0
-- Generation time is <5 seconds
 
 ---
 
-### [ ] 6.4 Verify no references to old stubs remain
-**Time**: 5 minutes
+## Flags and Known Issues
 
-```bash
-grep -r "_stub_write_placeholder" app/
-```
+### Issue 1: Xapian FTS Omitted in Feature Branch
 
-Expected: No results (all stubs removed)
+The feature branch `ec0ff7be` does NOT call `creator.config_indexing()` in the production `else` block, even though the docstring shows it as part of the correct pattern. ZIM archives produced by the feature branch will not have in-app search.
 
-**Verification**: No output or "No such file"
+**For Path A users**: Add one line after merge:
 
----
-
-## PHASE 7: Cleanup and Dead Code Removal (0.5 hours)
-
-### [ ] 7.1 Delete _stub_write_placeholder() method
-**Time**: 10 minutes
-**Blocker**: All tests must pass (Phase 6)
-
-Edit `app/services/export/zim_writer.py`. Find the `_stub_write_placeholder()` method (around line 914-931) and delete it entirely.
-
-Verify no references remain:
-```bash
-grep -r "_stub_write_placeholder" app/
-```
-
-**Verification**: No output
-
----
-
-### [ ] 7.2 Remove any TODO comments about libzim
-**Time**: 5 minutes
-
-Search for and remove any comments like:
+In `create_zim()`, inside the `with Creator(...) as creator:` block, add:
 ```python
-# TODO(post-PR-merge): Replace this stub with actual python-libzim Creator calls
+creator.config_indexing(True, self.config.language_iso3)
 ```
+immediately before `creator.set_mainpath("index")`.
 
-Expected: 0-2 removals
+**For Path B users**: B.3 above already includes this line.
 
-```bash
-grep -n "TODO.*libzim" app/services/export/zim_writer.py
-```
+### Issue 2: Export API Endpoint Absent
 
----
+No HTTP endpoint exists to trigger ZIM generation. Phase 5 MVP works via direct Python calls or an APScheduler job. The export API endpoint (`POST /api/v1/exports`) is Phase 5.2 scope. Document this in the PR description.
 
-### [ ] 7.3 Run full test suite one more time
-**Time**: 15 minutes
+### Issue 3: Database Required for Alembic Migration
 
-```bash
-uv run pytest tests/ -k "export" -v
-```
-
-Expected: All 84+ tests still pass (dead code removal doesn't affect functionality)
-
-**Verification**: Exit code 0, no failures
+Steps A.6 and B.8 require a running PostgreSQL instance. If unavailable, defer migration. The ZimWriter code and tests work without the DB migration; the migration is only needed to persist `ZimWriteResult` data in production.
 
 ---
 
-### [ ] 7.4 Commit Phase 7
-**Time**: 5 minutes
+## Definition of Done
 
-```bash
-git add app/services/export/zim_writer.py
-git commit -m "chore(zim): remove dead _stub_write_placeholder() method after libzim activation"
-```
+Before declaring Phase 5.1 complete, all of these must be checked:
 
----
-
-## PHASE 8: Documentation and Final Cleanup (0.5 hours)
-
-### [ ] 8.1 Update docstrings
-**Time**: 10 minutes
-
-Verify that:
-- `ZimWriter.create_zim()` docstring mentions libzim integration (update if needed)
-- `ArticleItem` class has proper docstring (already added in Phase 2)
-- `_apply_metadata_to_creator()` has proper docstring (already added in Phase 4)
-
-No code changes needed if docstrings are already complete.
+- [ ] All 84 existing tests pass with real libzim installed (`84 passed`)
+- [ ] ZIM magic header verified (`5a494d04`)
+- [ ] zimcheck passes on a 10-article test export (exit code 0)
+- [ ] `alembic upgrade head` applies migration 003 cleanly
+- [ ] ZIM archive opens in Kiwix (Desktop or Android)
+- [ ] SHA-256 checksum sidecar file produces correct verification (`sha256sum -c`)
+- [ ] No `0.0.0.0` bindings introduced (per CLAUDE.md absolute rule)
+- [ ] PR does not merge until Phase 4 PR #1 is merged to main (dependency gate)
+- [ ] Phase 5.2 items documented in PR description: Xapian FTS, branded PNG, export API
+- [ ] `_stub_write_placeholder()` method removed after all tests confirmed passing (Path B only)
 
 ---
 
-### [ ] 8.2 Create a summary test output file
-**Time**: 10 minutes
+## Sources
 
-Run this and save output:
-```bash
-uv run pytest tests/ -k "export" -v --tb=short > TEST_RESULTS_ZIMWRITER.txt 2>&1
-cat TEST_RESULTS_ZIMWRITER.txt | tail -20
-```
-
-This creates a record of test results.
-
----
-
-### [ ] 8.3 Final branch verification
-**Time**: 5 minutes
-
-```bash
-git log --oneline | head -10  # Show recent commits
-git status                     # Should be clean
-```
-
-Expected: 5-7 new commits, no uncommitted changes
-
----
-
-### [ ] 8.4 Push branch (optional at this stage)
-**Time**: 5 minutes
-
-```bash
-git push -u origin feature/zimwriter-libzim-integration
-```
-
-Create PR on GitHub (link goes in PROJECTS.md).
-
----
-
-## Summary Table
-
-| Phase | Item | Hours | Blocker? | Status |
-|-------|------|-------|----------|--------|
-| **0: Setup** | Create branch | 0.05 | None | — |
-| | Install zimcheck | 0.05 | None | Optional |
-| | Create test template | 0.05 | None | — |
-| **1: Dependency** | Add to pyproject.toml | 0.08 | None | ✓ Required |
-| | Install libzim wheel | 0.25 | None | ✓ Required |
-| | Add import guard | 0.17 | Phase 1.2 | ✓ Required |
-| | Commit | 0.05 | — | — |
-| **2: ArticleItem** | Add class | 0.33 | Phase 1 | ✓ Required |
-| | Run tests | 0.50 | Phase 2.1 | — |
-| | Manual test | 0.17 | Phase 2.1 | — |
-| | Commit | 0.05 | — | — |
-| **3: Creator** | Replace stub | 0.42 | Phase 1-2 | ✓ Required |
-| | Run tests | 0.67 | Phase 3.1 | — |
-| | Hex check | 0.08 | Phase 3.1 | Optional |
-| | Commit | 0.05 | — | — |
-| **4: Metadata** | Add fallback PNG | 0.08 | Phase 3 | ✓ Required |
-| | Implement method | 0.50 | Phase 4.1 | ✓ Required |
-| | Manual test | 0.33 | Phase 4.2 | — |
-| | Run tests | 0.50 | Phase 4.2 | — |
-| | Commit | 0.05 | — | — |
-| **5: ZimCheck** | Verify installed | 0.08 | None | — |
-| | Verify default | 0.08 | None | — |
-| | Test integration | 0.25 | zimcheck binary | — |
-| | Run integration tests | 0.17 | zimcheck binary | — |
-| | Commit | 0.05 | — | — |
-| **6: Full Test** | Run export tests | 0.25 | Phase 1-5 | — |
-| | Run full suite | 0.50 | Phase 1-5 | Optional |
-| | 50-article test | 0.25 | Phase 1-5 | — |
-| | Verify stubs removed | 0.08 | Phase 1-5 | — |
-| **7: Cleanup** | Delete stub method | 0.17 | Phase 6 | Optional |
-| | Remove TODO | 0.08 | Phase 7.1 | Optional |
-| | Final test | 0.25 | Phase 7 | — |
-| | Commit | 0.05 | — | — |
-| **8: Documentation** | Update docstrings | 0.17 | None | — |
-| | Test summary | 0.17 | Phase 1-5 | — |
-| | Branch verification | 0.08 | All | — |
-| | Push branch | 0.08 | All | Optional |
-| **TOTAL** | | **8.5** | — | — |
-
-**Key dependencies**:
-- Phase 1 blocks all others
-- Phase 2 blocks Phase 3
-- Phase 3 blocks Phase 4
-- Phases 4-5 can run in parallel (optional)
-- Phase 6 requires Phases 1-5 complete
-- Phase 7 requires Phase 6 pass
-- Phase 8 is polish (not blocking)
-
-**Estimated calendar time** (single developer, no breaks): 8-10 hours = 1 working day
-
-**Recommended approach**:
-- Day 1 morning: Phases 0-2 (2 hours)
-- Day 1 afternoon: Phases 3-4 (3 hours)
-- Day 1 evening: Phases 5-6 (2 hours)
-- Day 2 morning: Phases 7-8 (1 hour), create PR
-
-**If blocked or debugging**:
-- Extended test debugging: +1-2 hours
-- zimcheck failures: +0.5-1 hour (debug with `zimcheck --verbose`)
-- libzim installation issues: +0.5 hour (consult source build docs)
-
----
-
-## Success Criteria
-
-✓ **All 84+ export tests pass**
-✓ **zimcheck validation passes on all generated ZIMs**
-✓ **ZIM magic header verified (`5a 49 4d 04`)**
-✓ **Metadata readable via `libzim.reader.Archive`**
-✓ **50-article test ZIM generated successfully**
-✓ **No references to stub code remain**
-✓ **Feature branch ready for PR**
-
-**User go-live approval needed after**: Phase 6 completion (all tests pass)
-
-**Recommend merge to master**: After user review + approval
+- [python-libzim ReadTheDocs](https://python-libzim.readthedocs.io/en/latest/)
+- [python-libzim PyPI](https://pypi.org/project/libzim/)
+- [openZIM Metadata specification](https://wiki.openzim.org/wiki/Metadata)
+- [openZIM ZIM file format](https://wiki.openzim.org/wiki/ZIM_file_format)
+- [zim-tools releases](https://github.com/openzim/zim-tools/releases)
+- [Kiwix OPDS documentation](https://wiki.kiwix.org/wiki/OPDS)
