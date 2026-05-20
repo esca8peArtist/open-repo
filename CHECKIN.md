@@ -1,3 +1,51 @@
+## Since Last Check-in (Session 1411-ORCHESTRATOR, May 20 11:18–12:15 UTC) — Block Verification + Rebase Conflict Discovery + Exploration Queue Expansion
+
+**Session Status**: ⚠️ **OPEN-REPO REBASE BLOCKED ON MERGE CONFLICT** | 📋 **3 NEW EXPLORATION QUEUE ITEMS ADDED** | 🟢 **NO NEW AUTONOMOUS WORK AVAILABLE** | ⏰ **SYNTHESIS EXECUTION ON TRACK MAY 21 19:00 UTC**
+
+### What Was Done (Session 1411)
+
+**Block Verification & Rebase Conflict Discovery**:
+
+1. **Verified Active Blocks** ✅ CONFIRMED
+   - **Stockbot SSH auth**: Still failing (no user action since Session 1405). Critical deadline May 22 13:30 UTC (~25 hours remaining).
+   - **Mfg-farm test print**: Pending since May 13. Specifications ready.
+   - **Cybersecurity-hardening VeraCrypt**: Pending since May 16. Restart + pre-boot password required.
+
+2. **Assessed Autonomous Work Opportunities** ✅ INCOMPLETE
+   - **open-repo Phase 5.1 rebase**: Attempted `git rebase master feature/zimwriter-libzim-activation` → **MERGE CONFLICT ENCOUNTERED** in `projects/open-repo/backend/app/services/export/zim_writer.py` at commit `ec0ff7be` (Phase 5 Candidate 1 libzim integration)
+   - **Conflict type**: Code merge required to integrate master's production-risk defect fixes with feature branch's libzim implementation
+   - **Action required**: Manual conflict resolution before May 25-26 deadline
+   - **Status**: Documented as new blocker in BLOCKED.md
+
+3. **Exploration Queue Expansion** ✅ COMPLETE
+   - Added 3 new research items (previously queue was empty after Session 1409):
+     1. **resistance-research**: Trump v. Barbara tribal voting case rapid-response context (6–8 hrs) — actionable if ruling issued before May 21 synthesis
+     2. **seedwarden**: Herbalist network ecosystem mapping (6–8 hrs) — Phase 3 practitioner audience targeting prep
+     3. **systems-resilience**: Veterinary care in crisis contexts (8–10 hrs) — Phase 5 Wave 2 pre-research for user decision
+
+### Critical Path for May 21 Synthesis Execution (Unchanged)
+
+- **TODAY (May 20) ~22:00 UTC**: User fills Wave 1 signal log (May 20 evening checkpoint)
+- **MAY 21 before 19:00 UTC**: User checks SCOTUSblog for Trump v. Barbara ruling (if issued, Domain 58 rapid-response protocol available)
+- **MAY 21 19:00 UTC**: Orchestrator executes synthesis (fully autonomous)
+- **MAY 21 20:00 UTC**: User reads synthesis outcome in CHECKIN.md
+
+### Unresolved Active Blocks (4 Total, 1 New)
+
+1. **Stockbot SSH auth** — Critical deadline May 22 13:30 UTC (~25 hours remaining)
+2. **Mfg-farm test print** — Pending user execution (8 days)
+3. **Cybersecurity-hardening VeraCrypt** — Pending user machine restart (4 days)
+4. **open-repo Phase 5.1 rebase** — **NEW (Session 1411)**: Merge conflict in zim_writer.py requires manual resolution (deadline May 25-26)
+
+### What's Next
+
+- **May 21 19:00 UTC**: Synthesis execution (fully autonomous)
+- **May 22 13:30 UTC**: Stockbot critical deadline
+- **May 25-26**: Open-repo rebase merge conflict must be resolved before Phase 5.1 merge
+- **May 30–31**: Open-repo Phase 5.1 deployment (ready once rebase complete and user approves merge)
+
+---
+
 ## Since Last Check-in (Session 1410-ORCHESTRATOR, May 20 11:10–12:30 UTC) — Pre-Synthesis Readiness Verification + Status Consolidation
 
 **Session Status**: ✅ **EXPLORATION QUEUE EMPTY** (all 3 items completed in Session 1409) | ✅ **MAY 21 SYNTHESIS EXECUTION READY** (all infrastructure verified) | ⚠️ **3 BLOCKS REMAIN ACTIVE** (SSH auth, test print, VeraCrypt) | 🟢 **NO AUTONOMOUS WORK AVAILABLE** (all projects blocked or scheduled)

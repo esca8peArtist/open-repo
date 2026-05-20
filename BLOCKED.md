@@ -30,6 +30,12 @@ When the block is resolved (Resolution written OR Verify command passes):
 <!-- AUTO:CALIBRATION:START -->
 <!-- AUTO:CALIBRATION:END -->
 
+### open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker)
+**Date blocked**: 2026-05-20 11:40 UTC
+**Context**: Phase 5.1 MVP (ZimWriter libzim activation) is production-ready on feature branch `feature/zimwriter-libzim-activation`. Master branch has 2 new commits since feature branch was last updated (commit 198a146d with critical production-risk defect fixes). Feature branch must be rebased to master before merge. Attempted rebase encountered merge conflict in `projects/open-repo/backend/app/services/export/zim_writer.py` at commit `ec0ff7be` (feat: Phase 5 Candidate 1 libzim integration).
+**What I need**: Resolve merge conflict in `zim_writer.py` — decide which code changes from master + feature branch should be kept. Conflict appears to be in the core ZimWriter implementation; careful review needed to ensure both master's production fixes and feature branch's libzim integration are correctly merged.
+**Verify with**: `git rebase master feature/zimwriter-libzim-activation` — if successful (no conflicts), rebase completes and feature branch is ready for merge
+**Resolution**: [leave blank]
 
 ---MOVED TO RESOLVED ARCHIVE---
 
