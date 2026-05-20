@@ -22,6 +22,24 @@
 
 ---
 
+## May 20, 2026 — General Research Agent — Pre-Synthesis Breaking Developments Scan (FINAL)
+
+**Task**: Final end-of-window scan for May 18–20 developments affecting Domains 1, 37, 56, 57, 58 for May 21 19:00 UTC synthesis.
+
+**Files produced**:
+- `projects/resistance-research/breaking-developments-may18-20-FINAL.md` (~1,400 words) — FINAL consolidated pre-synthesis brief. Does not re-state findings already documented in three prior-pass documents; records only genuinely new May 20 search findings plus a consolidated master integration checklist for synthesis orchestrator.
+
+**New findings beyond prior passes**:
+1. **Massie defeat (Domain 37)**: Rep. Massie lost the most expensive House primary in US history ($34M, May 19). Combined with Cassidy Senate defeat (May 16–17), this documents intraparty check collapse across both chambers in a single 72-hour window. Massie's concession quote ("If the legislative branch always votes with the president, we do have a king") is distribution-ready.
+2. **Domain 56 operational status confirmed**: Schedule Policy/Career is live (March 8), MSPB appeal pathway closed (March 9), no injunction in place as of May 20. Four lawsuits pending with no injunctive relief. H.R. 492 / S. 134 dead in committee. Domain 56 framing must shift from "threatened" to "operational — contested without current injunctive protection." NTEU June 8 admin record / June 22 status report are next monitoring gates.
+3. **Hungary ICC halt not yet filed (Domain 57)**: As of May 20, Magyar's government has not yet formally filed the withdrawal halt with the UN Secretary-General. June 2 deadline is live. Reversal remains procedurally straightforward (supermajority) but has not occurred.
+4. **Grynkewich detail confirmed**: Additional "several hundred minor elements" in redeployment planning confirmed beyond the 5,000 Germany figure.
+5. **DOJ voter data demand count updated**: 44 states (up from 39+ in prior passes) per CDT May 2026 tracking.
+
+**Confidence**: High — findings sourced from Federal News Network, Government Executive, FedWeek, CRS, CDT, Al Jazeera, PBS, The Intercept, Coalition for the ICC, ASIL, Military Times, Newsmax.
+
+---
+
 ## May 21, 2026 — General Research Agent — Phase 2 Research Activation Checklist (Production)
 
 **Files produced/updated**:
