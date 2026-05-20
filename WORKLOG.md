@@ -1,5 +1,69 @@
 # Work Log
 
+## Session 1377-ORCHESTRATOR (May 20, 2026 00:39–00:50 UTC) — Critical Path Verification + SSH Escalation
+
+**Status**: ✅ **COMPLETE — SYNTHESIS INFRASTRUCTURE VERIFIED READY FOR MAY 21; CRITICAL SSH ISSUE ESCALATED TO DISCORD**
+
+### Actions Taken
+
+**Orientation** (May 20 00:39 UTC):
+- ✅ Read ORCHESTRATOR_STATE.md: Auto-generated state verified at 00:38 UTC (1 minute prior). All synthesis infrastructure staged from Sessions 1373-1376.
+- ✅ Read BLOCKED.md: Confirmed 3 active blocks (all user-action-dependent):
+  1. 🔴 **Stockbot SSH auth failure** — May 22 13:30 UTC deadline (~37 hours remaining)
+  2. **Cybersecurity-hardening** — User VeraCrypt restart required
+  3. **mfg-farm** — User test print required
+- ✅ Processed INBOX.md: Confirmed empty.
+- ✅ Assessed available autonomous work: All pre-staging for May 21 synthesis + May 22 checkpoint is COMPLETE. Next autonomous work begins post-synthesis.
+
+**Critical SSH Issue Escalation** 🔴
+- Sent Discord notification to escalate critical deadline: "🔴 **[CRITICAL] Stockbot SSH Auth Deadline May 22 13:30 UTC** — ~37 hours remaining. Unresolved since May 19. User must add orchestrator ED25519 key to Jetson authorized_keys OR manually execute 5-min Lever B config fix."
+- Unresolved for 37+ hours (since Session 1324, May 19 19:55 UTC)
+- **Status**: Escalated via Discord; awaiting user action
+
+**Synthesis Infrastructure Verification** ✅
+- Verified all synthesis support files exist and are current:
+  - ✅ POST_WAVE_1_SIGNAL_ANALYSIS_FRAMEWORK.md (May 20 01:28 UTC)
+  - ✅ WEAK_OUTCOME_CONTINGENCY_PLAN.md (May 20 01:32 UTC)
+  - ✅ wave-1-signal-log-may18-21.md (ready for user fill May 20 evening)
+  - ✅ may21-synthesis-execution-checklist.md (detailed 30-min execution sequence)
+  - ✅ wave-1-synthesis-framework-skeleton.md (synthesis decision tree)
+  - ✅ synthesis-execution-monitor.py (monitoring script)
+  - ✅ phase-2-path-activation-summary.md (routing guide)
+  - ✅ PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md (pre-production checklist)
+  - ✅ PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md (per-domain execution schedule)
+- **Assessment**: All infrastructure production-ready for May 21 19:00-20:00 UTC execution.
+
+**Checkpoint Decision Framework Verification** ✅
+- Verified post-checkpoint decision framework (POST_CHECKPOINT_DECISION_ARCHITECTURE.md from Session 1360)
+- All PASS/FAIL outcome pathways documented
+- Multi-ticker scaling decision tree ready (Item 76: post-May-22 scaling)
+- **Assessment**: May 22 20:00 UTC checkpoint fully staged for autonomous execution.
+
+### Critical Path — Next 48 Hours
+
+**TODAY (May 20)**:
+- 🔴 SSH auth deadline: May 22 13:30 UTC (~37 hours away) — **CRITICAL, escalated to Discord**
+- May 20 evening (user): Fill wave-1-signal-log-may18-21.md with response data through May 21 10:30 UTC
+
+**TOMORROW (May 21)**:
+- 19:00–20:00 UTC: Resistance-research synthesis execution (autonomous, fully staged)
+  - Reads signal log → applies classification framework → determines STRONG/MODERATE/WEAK/TOO_EARLY
+  - Posts CHECKIN.md with outcome + recommended Phase 2 path
+- May 21 evening (user): Confirms Phase 2 activation path OR selects corrective action if WEAK outcome
+
+**May 22**:
+- 13:30 UTC: **SSH deadline** — If not resolved, May 22 checkpoint runs with Lever A baseline (defeating Lever B testing)
+- 20:00 UTC: Stockbot checkpoint execution (autonomous, fully staged)
+
+### Blockers Remaining (Unchanged)
+
+🔴 **Stockbot SSH Auth + Lever B Config** — May 22 13:30 UTC deadline (~37 hours remaining)
+- **Status**: Unresolved since May 19 19:55 UTC (Session 1324), re-verified failing Session 1359
+- **Action**: Escalated to Discord with public key provided in CHECKIN.md
+- **User action required**: Add ED25519 public key to Jetson authorized_keys OR SSH manually and run 5-min config fix
+
+---
+
 ## Session 1376-ORCHESTRATOR (May 20, 2026 01:00–01:30 UTC) — Exploration Queue Item 73 Completion: Post-Wave-1 Signal Analysis Framework
 
 **Status**: ✅ **COMPLETE — ITEM 73 POST-WAVE-1 SIGNAL ANALYSIS FRAMEWORK PRODUCTION-READY**

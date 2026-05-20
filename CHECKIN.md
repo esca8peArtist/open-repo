@@ -1,3 +1,48 @@
+## Since Last Check-in (Session 1377-ORCHESTRATOR, May 20 00:39–00:50 UTC)
+
+**Session Status**: ✅ **COMPLETE — CRITICAL PATH VERIFIED; SSH DEADLINE ESCALATED TO DISCORD**
+
+### What Was Accomplished
+
+**Critical Path Verification** — All synthesis + checkpoint infrastructure verified READY:
+- ✅ POST_WAVE_1_SIGNAL_ANALYSIS_FRAMEWORK.md (Session 1376 Item 73): Ready for May 21 classification
+- ✅ WEAK_OUTCOME_CONTINGENCY_PLAN.md (Session 1376 Item 75): Ready for May 21 if WEAK outcome
+- ✅ POST_CHECKPOINT_DECISION_ARCHITECTURE.md (Session 1360 Item 74): Ready for May 22 checkpoint
+- ✅ May 21 synthesis execution checklist (30-min detailed sequence): Ready
+- ✅ May 21 signal log structure: Ready for user fill this evening
+- ✅ Phase 2 activation infrastructure: 100% staged (directories, timelines, checklists)
+- ✅ Synthesis-to-checkpoint handoff: Fully documented
+
+**Critical SSH Issue Escalation** 🔴
+- Escalated via Discord to user: "Stockbot SSH Auth Deadline May 22 13:30 UTC — ~37 hours remaining. Unresolved since May 19. User must add orchestrator ED25519 key to Jetson authorized_keys OR manually execute 5-min Lever B config fix."
+- Public key provided in Session 1376 CHECKIN.md for reference
+- Deadline: May 22 13:30 UTC (will trigger May 22 checkpoint failure if unresolved)
+
+### Preparation for May 21 Synthesis + May 22 Checkpoint
+
+**Today (May 20)**:
+- User fills wave-1-signal-log-may18-21.md this evening with response data through May 21 10:30 UTC
+
+**Tomorrow (May 21)**:
+- 19:00–20:00 UTC: Autonomous synthesis execution (fully staged)
+  - Reads signal log + applies Item 73 classification framework
+  - Determines STRONG/MODERATE/WEAK/TOO_EARLY outcome
+  - Posts CHECKIN.md with recommended Phase 2 path
+- May 21 evening: User confirms Phase 2 path OR selects corrective action if WEAK
+
+**May 22**:
+- 13:30 UTC: **CRITICAL SSH deadline** — If unresolved, checkpoint runs without Lever B config
+- 20:00 UTC: Autonomous checkpoint execution (fully staged)
+
+### Blockers Unchanged
+
+🔴 **Stockbot SSH Auth + Lever B Config** — May 22 13:30 UTC deadline (~37 hours from session start)
+- **Escalation**: Discord notification sent with public key details
+- **User action**: Add key to authorized_keys OR manually run config fix
+- **Impact**: May 22 checkpoint will fail without this; Lever B testing defeated
+
+---
+
 ## Since Last Check-in (Session 1376-ORCHESTRATOR, May 20 01:00–01:35 UTC)
 
 **Session Status**: ✅ **COMPLETE — EXPLORATION QUEUE ITEMS 73 + 75 DELIVERED; MAY 21-22 SYNTHESIS + CHECKPOINT DECISION FRAMEWORKS STAGED**

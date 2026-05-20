@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-20T00:25:26Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-20T00:38:18Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.1% | Reset in 144h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.1% | Reset in 143h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -95,7 +95,7 @@
 ```bash
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 1360 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 1360 (16 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
