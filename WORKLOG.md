@@ -1,5 +1,33 @@
 # Work Log
 
+## Session 1436 (May 20) — Open-Repo Phase 5 Candidate 1 Pre-Deployment Verification (Queue Item 997)
+
+**Session Type**: Targeted verification — General Research Agent
+
+**Trigger**: Queue Item 997 — verify Candidate 1 (ZimWriter/libzim) for implementation readiness before Phase 5 execution approval.
+
+**Scope**: Audit libzim bindings, validate 88 test stubs, identify missing pre-reqs, produce corrected implementation checklist with hour-by-hour timeline, document Docker test environment.
+
+**Files Created**:
+- `projects/open-repo/PHASE_5_CANDIDATE_1_IMPLEMENTATION_VERIFICATION_v2.md` — Definitive pre-deployment audit; supersedes v1 (which overstated completeness)
+- `projects/open-repo/PHASE_5_CANDIDATE_1_IMPLEMENTATION_CHECKLIST_v2.md` — Corrected step-by-step checklist with hour estimates
+
+**Key Findings**:
+- ✅ libzim 3.9.0 installed, aarch64 wheel, no compiler needed. `from libzim.writer import Creator, Item, StringProvider, Hint` imports clean.
+- ✅ Underlying C library: libzim 9.5.1. API fully functional.
+- ✅ Fallback PNG verified: 48x48 dimensions confirmed by parsing IHDR chunk.
+- ✅ 88 tests pass baseline (0.30s). 10 schema tests manually executed — all pass.
+- **CORRECTION TO PRIOR REPORTS**: `PHASE_5_CANDIDATE_1_IMPLEMENTATION_VERIFICATION_FINAL.md` (Session 1353) incorrectly reported implementation "100% complete." The working tree on master still has `_stub_write_placeholder()` active in `create_zim()`. Three feature branches exist but have not been merged.
+- **CRITICAL BUG FOUND**: Roadmap's Change 3 (and the inline docstring) place `creator.config_indexing()` inside the `with Creator(...) as creator:` context. This raises `RuntimeError: Creator started`. Confirmed by live test. The corrected pattern is: instantiate `Creator`, call `config_indexing()`, then enter `with creator:`. Checklist v2 contains the corrected code.
+- **Missing from pyproject.toml**: `libzim` and `jinja2` not declared (installed manually; not in `[project.dependencies]`).
+- **Missing system package**: `zimcheck` binary not installed; `zim-tools 3.1.3-1` available via `sudo apt install zim-tools`.
+- **Missing Alembic migration**: Only 001 and 002 exist; migration 003 (zim_exports table) not yet created.
+- **Missing API endpoint**: `app/api/v1/export.py` does not exist.
+
+**Status**: Phase 5 Candidate 1 ready to implement once config_indexing bug is corrected per checklist v2. 8–10 hours estimated. No blockers other than the corrected Change 3 pattern.
+
+---
+
 ## Session 1435 (May 20, 20:36–21:30 UTC) — Autonomous Exploration Queue Execution: Phase 2 Activation Prep + Downstream Gate Staging
 
 **Session Type**: Autonomous orchestrator — 3-agent parallel execution
