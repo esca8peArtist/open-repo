@@ -474,3 +474,70 @@ Seven sections averaging approximately 850 words each at 700–800 words/hour fo
 ---
 
 *Document prepared: May 15, 2026. Production-ready for June 10, 2026 initiation. All sources confirmed publicly accessible. Recommended as second of two Phase 2 priority domains for parallel production with Domain 59 (Economic Precarity), with Domain 57 entering research phase July 1 while Domain 59 enters final writing phase.*
+
+---
+
+## 10. May 18-20 Breaking Developments Update — Domain 57 Currency Supplement
+
+*Added: May 20, 2026. Purpose: Update Domain 57 outline with developments from the May 18-20 breaking developments scan that directly affect this domain's analytical framing, source list, and distribution strategy.*
+
+### 10.1 NATO: Multi-Year Phased Reduction Doctrine Now Official
+
+The most significant Domain 57 update from the May 18-20 window is the May 19 statement by NATO Supreme Allied Commander Europe Gen. Alexus Grynkewich confirming that the US drawdown from Europe is a "multi-year ongoing process," not a discrete action. Grynkewich said European allies should "absolutely" expect additional troop withdrawals. The Pentagon has simultaneously confirmed it is "significantly scaling down" its commitment under the NATO Force Model — reducing the wartime capabilities the US would make available in a crisis, in addition to forward-deployed numbers.
+
+**Impact on Section 1.2 (Withdrawal Mechanisms)**: The Grynkewich statement closes the ambiguity between "rhetorical posture" and "physical implementation" for NATO. This is now an officially announced multi-year drawdown doctrine. The three-leg confirmed reduction (5,000 from Germany, Poland rotation cancelled, Italy/Spain threatened) should be reframed as the first stage of a staged strategic realignment, not three discrete incidents.
+
+**Impact on Section 2.1 (Accountability Infrastructure Removal)**: The NATO Force Model scaling-down removes the wartime-capability backstop that European democracies depend on for security — a different accountability function from human rights treaty compliance, but still a structural constraint that the US is removing unilaterally.
+
+**New sources to incorporate**:
+- [Military Times: More US troop withdrawals from Europe expected, NATO commander says (May 19, 2026)](https://www.militarytimes.com/news/your-military/2026/05/19/more-us-troop-withdrawals-from-europe-expected-nato-commander-says/)
+- [Bloomberg: Top NATO Official Says 5,000 US Troops to Leave Europe (May 19, 2026)](https://www.bloomberg.com/news/articles/2026-05-19/top-nato-military-official-says-5-000-us-troops-to-leave-europe/)
+- [UPI: US cuts Europe troops; NATO says defense posture remains strong (May 20, 2026)](https://www.upi.com/Top_News/World-News/2026/05/20/belgium-US-NATO-troop-withdrawl/8281779253414/)
+- [Euronews: Can US law stop Trump from withdrawing troops from Europe? (May 5, 2026)](https://www.euronews.com/my-europe/2026/05/05/can-us-law-stop-trump-from-withdrawing-troops-from-europe/)
+
+### 10.2 Hungary ICC Reversal: June 2 Hard Deadline — Proof-of-Concept Window Open Now
+
+Hungary's formal ICC withdrawal takes effect June 2, 2026 under Article 127 of the Rome Statute — 13 days from this writing. PM-elect Péter Magyar has publicly pledged to halt the withdrawal before that date and to re-engage ICC obligations including Netanyahu arrest warrant execution. His Tisza Party won the April 12 election by a landslide. Magyar used his first international press conference to make the ICC commitment explicitly.
+
+HRW's April 24 analysis, "Hungary's Road Back to the Rule of Law Runs through the ICC," frames this as the proof-of-concept moment for democratic reversal of institutional withdrawal.
+
+**Impact on Section 1.3 (Authoritarian Actors)**: The Hungary case study must be updated. As of May 15 (domain production date), the situation was "Orbán withdrawing, Magyar pledging reversal." As of June 2, it will be either "withdrawal halted — reversibility confirmed" or "withdrawal completed — reversal process initiated." Both outcomes are strategically significant for the domain's argument, but in opposite directions. The June 2 outcome is a binary observable test of whether electoral regime change can reverse multilateral withdrawal within the one-year notice period.
+
+**Impact on Section 5.3 (Success Criteria — Reversibility)**: The Philippines ICC re-accession (Marcos 2023) was the only prior proof-of-concept for reversibility. If Magyar halts the withdrawal before June 2, Hungary becomes the first case in which reversal occurred before formal exit completed — a stronger proof-of-concept because it demonstrates that the one-year notice period is a genuine window for democratic intervention, not only a procedural formality.
+
+**Impact on Section 9 (Risk Mitigation)**: Risk 2 ("ICC credibility sufficiently damaged") is partially addressed by the Magyar development. A Hungarian reversal strengthens the argument that ICC institutional survival is achievable through democratic electoral change, not only structural institutional reform.
+
+**New sources to incorporate**:
+- [HRW: Hungary's Road Back to the Rule of Law Runs through the ICC (April 24, 2026)](https://www.hrw.org/news/2026/04/24/hungarys-road-back-to-the-rule-of-law-runs-through-the-icc)
+- [Al Jazeera Liberties: Hungary's Court Moment — Magyar Pledges to Reverse ICC Withdrawal](https://liberties.aljazeera.com/en/hungarys-court-moment-magyar-pledges-to-reverse-icc-withdrawal/)
+- [Israel Hayom: Hungary's new leader vows to rejoin ICC (April 13, 2026)](https://www.israelhayom.com/2026/04/13/hungarys-new-leader-vows-to-rejoin-icc-calls-israel-an-important-partner/)
+- [Haaretz: Hungary PM-elect pledges ICC return (April 13, 2026)](https://www.haaretz.com/world-news/europe/2026-04-13/ty-article/.premium/hungarys-pm-elect-magyar-pledges-icc-return-vows-pragmatic-israel-policy-shift/0000019d-8799-d7a4-a7df-bf9f38e90000)
+
+### 10.3 ICC Duterte Trial: Fitness Dispute Adds Uncertainty to Section 5.5
+
+A 14-page brief filed by Rodrigo Duterte's defense team invokes Rule 135, documenting a progressive neurological condition affecting memory, executive function, and reasoning. The May 27 status conference is the next gate. If the court orders a fresh fitness assessment, the November 30 trial start is at risk. The prosecution's framing of this as "among the court's fastest to reach trial" becomes evidence of institutional resilience under political pressure regardless of the fitness outcome.
+
+**Impact on Section 5.1 (Success Criteria — Institutional Survival)**: The Domain 57 outline does not currently address the Duterte trial as an institutional resilience indicator. It should. The trial proceeding against a former head of state — even one with fitness complications — demonstrates ICC functional capacity in the face of US sanctions pressure. The fitness dispute is an individual procedural complication, not an institutional failure.
+
+**New sources to incorporate**:
+- [Manila Times: ICC prosecutors want November start (May 18, 2026)](https://www.manilatimes.net/2026/05/18/news/national/icc-prosecutors-want-november-start-for-duterte-trial/2345745)
+- [Manila Times: Duterte defense urges ICC to delay trial (May 17, 2026)](https://www.manilatimes.net/2026/05/17/news/national/duterte-unfit-for-trial-new-defense-team-claims/2345608)
+
+### 10.4 V-Dem and Freedom House Data Points — Confirmed Active for Production
+
+Both primary comparative democracy sources cited in the outline are confirmed current:
+- **V-Dem 2026 Democracy Report** confirms US is declining "at unprecedented speed" and classifies the US as "electoral democracy" for the first time in 50+ years
+- **Freedom House Freedom in the World 2026** documents the 20th consecutive year of global freedom decline, with the "Growing Shadow of Autocracy" framing
+
+These are the two anchor data points for Section 1.4 (Timeline and Acceleration Pattern) and for the Executive Summary's comparative claims. Both were available for the May 15 production document and remain current. No updates needed — use as-is in production.
+
+### 10.5 Production Timeline Currency Assessment
+
+The outline's production window (June 10 – August 10, 2026) and distribution target (August 10, 2026, pre-UNGA 81) remain correct. The May 18-20 developments do not require date changes. However, two monitoring items should be added to the blocking dependencies (Section 8):
+
+- **June 2, 2026**: Hungary ICC withdrawal halt outcome (Magyar files withdrawal-halt or withdrawal completes) — determines whether Section 5.3 features a "reversal-before-exit" proof-of-concept or a "reversal-after-exit re-accession" case
+- **May 27, 2026**: ICC Duterte fitness status conference — determines whether November 30 trial start remains operative; affects Section 5.1 institutional resilience argument
+
+Neither is a hard block on production — research can proceed in parallel. But both outcomes affect specific sections and should be incorporated before the August 10 distribution draft is finalized.
+
+*Currency supplement added: May 20, 2026. Sources: Military Times, Bloomberg, UPI, Euronews, HRW, Al Jazeera Liberties, Israel Hayom, Haaretz, Manila Times (x2).*

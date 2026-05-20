@@ -247,3 +247,88 @@ The SCOTUS GVR in *Turtle Mountain Band of Chippewa Indians v. Howe* (May 18) is
 *Sources in full above. Research window: May 18-20, 2026. Compiled from Democracy Docket, SCOTUSblog, NPR, NBC News, PBS News, Nextgov/FCW, Defense One, Roll Call, Alabama Secretary of State, Missouri Independent, Nashville Banner, Protect Democracy retaliatory action tracker, Sen. Warner/Padilla press releases, Native News Online, Prism News, Lawyers' Committee, TIME, CNN, Manila Times, Federal Register, Gibson Dunn, The American Prospect, Brennan Center, ACLU, North Dakota Monitor, Campaign Legal Center, KSUT.*
 
 *Updated: May 19, 2026 (second pass). Domain 42 deadline discrepancy, GVR case names and Jackson dissent, Reconciliation 2.0 enacted status, NATO three-leg force reduction, ICC Duterte fitness dispute, Hungary ICC reversal, FISA 702 deadlock, Domain 58 Trump v. Barbara watch, and 287(g) near-reservation chilling effects added to first-pass document.*
+
+---
+
+## May 20, 2026 — Third Pass: End-of-Window Confirmations
+
+*Added: May 20, 2026. Four developments resolved or confirmed on May 20 that materially update the analysis above.*
+
+---
+
+### A. South Carolina House Passes Redistricting Plan — Moves to Senate (CONFIRMED May 20)
+
+**Status**: The South Carolina House passed a congressional redistricting map during a special session that ran past midnight into Wednesday, May 20. The vote — occurring after Republicans imposed amendment caps limiting total amendments to 124 (down from more than 600 filed) and setting strict time limits after three full days of debate — sends the map to the South Carolina Senate.
+
+The plan would eliminate the state's only majority-Black congressional district (Rep. James Clyburn's District 6) and reshape it to Republican advantage. Gov. McMaster called the special session explicitly at Trump's urging, framing redistricting as part of the national House-majority-retention strategy ahead of the midterms. Republicans invoked procedural rules to restrict Democratic amendments after 20+ hours of debate addressed only nine of the originally filed 600+ amendments.
+
+**What happens next**: The Senate (which blocked the extension resolution 29-17 earlier this month) now faces the House-passed map directly. Senate passage would require navigating the same five-Republican defection dynamic that previously blocked the session extension vote. A Senate vote is expected within days. If passed, legal challenges would be immediate — Democracy Docket has flagged South Carolina as a priority litigation target.
+
+**Phase 2 update**: The CHECKIN monitoring flag "SC House vote outcome" is now resolved. The Domain 1 Section 8 Callais cascade entry must update South Carolina from "special session underway" to "House passed; Senate pending." This is now the most live gerrymander attempt in the country — the first would-be elimination of an incumbent majority-Black House district since Callais.
+
+**Sources**: [WRDW/WAGT: SC redistricting passes House, heads to Senate](https://www.wrdw.com/2026/05/20/sc-redistricting-proposal-passes-house-heads-state-senate/); [Fox Carolina: Same development, local coverage](https://www.foxcarolina.com/2026/05/20/sc-redistricting-proposal-passes-house-heads-state-senate/); [SC Daily Gazette: House weighs redrawing maps](https://scdailygazette.com/2026/05/19/sc-house-weighs-redrawing-congressional-maps-in-mid-decade-redistricting-push/)
+
+---
+
+### B. NATO Commander Grynkewich: More Withdrawals "Absolutely" Coming (Confirmed May 19)
+
+**Status**: NATO Supreme Allied Commander Europe Gen. Alexus Grynkewich held a press conference in Brussels on May 19 and stated that European allies should "absolutely" expect additional US troop withdrawals as European NATO members strengthen their own conventional defense capacities. He described the redeployment process as "ongoing for several years" — explicitly framing the current 5,000-troop withdrawal (armored brigade combat team plus long-range fires battalion cancellation) as the first wave, not a one-time event.
+
+Grynkewich's framing — "as the European pillar of the alliance gets stronger, this allows the US to reduce its presence" — is the official institutional rationale for sequential withdrawal. The Pentagon simultaneously confirmed it is "significantly scaling down" its commitment under the NATO Force Model, meaning the wartime capabilities the US would make available to NATO in a major crisis are being reduced in addition to forward-deployed troop numbers.
+
+**Statutory constraint**: Congress has already enacted a constraint: the Pentagon cannot reduce troop levels in Europe below 76,000 for more than 45 days unless it certifies the cuts are in the national interest, consults NATO allies, and submits a detailed Congressional report. The current 5,000-troop reduction brings the European presence toward that threshold but does not yet breach it.
+
+**Phase 2 update for Domain 57**: The Grynkewich statement converts the NATO drawdown from three discrete data points (5,000 Germany, Poland rotation cancelled, Italy/Spain threatened) to a formally stated multi-year phased reduction strategy. The Domain 57 research outline's NATO section should frame this as a structural realignment, not episodic force management. The domain currently treats NATO withdrawal as a "rhetorical posture" versus "physical implementation" question — the Grynkewich statement eliminates that ambiguity: this is official doctrine for ongoing reduction.
+
+**Sources**: [Military Times: More US troop withdrawals expected, NATO commander says](https://www.militarytimes.com/news/your-military/2026/05/19/more-us-troop-withdrawals-from-europe-expected-nato-commander-says/); [Bloomberg: Top NATO official says 5,000 US troops to leave Europe](https://www.bloomberg.com/news/articles/2026-05-19/top-nato-military-official-says-5-000-us-troops-to-leave-europe/); [UPI: US cuts Europe troops; NATO says defense posture remains strong](https://www.upi.com/Top_News/World-News/2026/05/20/belgium-US-NATO-troop-withdrawl/8281779253414/); [Euronews: Can US law stop Trump from withdrawing troops from Europe?](https://www.euronews.com/my-europe/2026/05/05/can-us-law-stop-trump-from-withdrawing-troops-from-europe/)
+
+---
+
+### C. Hungary ICC Reversal: Formal Deadline Is June 2, 2026 (Confirmed)
+
+**Status**: The Hungary ICC withdrawal, initiated by Orbán in April 2025, takes effect June 2, 2026 under Article 127 of the Rome Statute. PM-elect Péter Magyar has publicly pledged to halt the withdrawal before it takes effect and to re-engage ICC obligations — including executing the arrest warrant against Netanyahu should he visit for the October 2026 anniversary events. Magyar's Tisza Party won Hungary's April 12 election by a landslide, and Magyar has used his first international press conference to make the ICC reversal commitment explicit.
+
+The June 2 deadline is now 13 days out. If Magyar forms a government and files a withdrawal-halt with the UN Secretary-General before June 2, Hungary's ICC membership is preserved. If the transition is delayed or Orbán's caretaker government does not facilitate the reversal filing, Hungary formally exits the ICC, and Magyar would need to pursue re-accession (a faster process under Article 127.3 but a separate procedural step from halting withdrawal).
+
+**Phase 2 update for Domain 57**: This is the most significant recent development for the Domain 57 reform pathways analysis. HRW's April 24 piece, "Hungary's Road Back to the Rule of Law Runs through the ICC," frames the Magyar commitment as a test case for democratic reversal of institutional withdrawal. The domain document should add: (1) the June 2 deadline as an imminent observable outcome; (2) Magyar as a proof-of-concept for the reversibility argument in Section 5.3; (3) the Netanyahu arrest warrant question as a concrete test of re-engagement credibility. Update CHECKIN with June 2 as a high-priority monitoring date.
+
+**Sources**: [HRW: Hungary's Road Back to the Rule of Law Runs through the ICC (April 24, 2026)](https://www.hrw.org/news/2026/04/24/hungarys-road-back-to-the-rule-of-law-runs-through-the-icc); [Al Jazeera Liberties: Hungary's Court Moment — Magyar Pledges to Reverse ICC Withdrawal](https://liberties.aljazeera.com/en/hungarys-court-moment-magyar-pledges-to-reverse-icc-withdrawal/); [Haaretz: Hungary's PM-elect pledges ICC return (April 13)](https://www.haaretz.com/world-news/europe/2026-04-13/ty-article/.premium/hungarys-pm-elect-magyar-pledges-icc-return-vows-pragmatic-israel-policy-shift/0000019d-8799-d7a4-a7df-bf9f38e90000); [Israel Hayom: Hungary's new leader vows to rejoin ICC](https://www.israelhayom.com/2026/04/13/hungarys-new-leader-vows-to-rejoin-icc-calls-israel-an-important-partner/)
+
+---
+
+### D. Ninth Circuit Voter Rolls: Panel Skepticism Confirmed — No Ruling Yet
+
+**Status**: The May 19 Ninth Circuit argument on the Oregon and California voter-roll cases (heard together) produced strong skeptical questioning from the panel, confirming the signal read in the prior day's scan. Judge Lucy Koh (Biden appointee) directly challenged the DOJ's legal foundation, asking whether the Civil Rights Act of 1960 authority was "as plain" as claimed given that the initial letter to Oregon officials had not cited this law. The DOJ has not prevailed in a single district court case among the 29 state voter-roll lawsuits. No ruling from the bench; written ruling expected in 30-90 days.
+
+The case structurally matters for Domain 37: the 9th Circuit is hearing both the Oregon and California cases together, and its ruling will apply to those two states' litigation plus establish precedent for the other 27 states' cases. A 9th Circuit affirmance of dismissal would effectively end DOJ voter-roll litigation in most of the country, because the states that have resisted are disproportionately in Democratic-controlled states whose cases are in plaintiff-friendly circuits. A reversal would accelerate a constitutional confrontation.
+
+**Phase 2 update**: Domain 37 voter-roll sub-section (recommended in the Priority Updates table above) needs to note the California consolidation — the 9th Circuit is reviewing California and Oregon simultaneously, which expands the precedential stakes.
+
+**Sources**: [Courthouse News: Ninth Circuit digs into DOJ demand for Oregon voter records](https://www.courthousenews.com/ninth-circuit-digs-into-doj-demand-for-oregon-voter-records/); [Washington Examiner: Ninth Circuit likely adds to DOJ losing streak](https://www.washingtonexaminer.com/news/justice/4575062/ninth-circuit-likely-adds-doj-losing-streak-state-voter-roll-lawsuits/); [Epoch Times: Ninth Circuit hears DOJ appeal on Oregon and California voter records](https://www.theepochtimes.com/us/ninth-circuit-hears-doj-appeal-over-oregon-california-refusal-to-hand-over-voter-records-6027946)
+
+---
+
+### Updated Priority Table (May 20 Third Pass)
+
+The table below supersedes the Priority Updates table in the main body. Items marked [RESOLVED] have confirmed outcomes.
+
+| Domain / Item | Update | Urgency |
+|---|---|---|
+| **Domain 42 — ACTION** | May 24 (not May 28) operative DEA deadline | **CRITICAL — 4 days** |
+| **Domain 1 Section 8 — SC** | [UPDATED] SC House passed; Senate pending | HIGH |
+| **Domain 57 — NATO** | [UPDATED] Grynkewich: multi-year phased withdrawal doctrine confirmed | HIGH |
+| **Domain 57 — Hungary ICC** | [UPDATED] June 2 formal exit deadline — Magyar reversal pledge confirmed | HIGH |
+| CHECKIN — June 2 | Hungary ICC withdrawal halt deadline (Magyar must act) | HIGH |
+| Domain 37 Section V | Nichols ruling still pending; "no harm until transmission" risk live | HIGH |
+| Domain 37b Section 6 | Warner/Mullin letter; NSA/Cyber Command testimony; add California consolidation in voter-roll case | HIGH |
+| Domain 37 (ICE/Recon) | Convert 287(g)/ICE funding to enacted language | HIGH |
+| Domain 1 Section 8 | Callais cascade: GVR names, Jackson dissent, 28-lawsuit count; Alabama split-track | HIGH |
+| Domain 58 | Turtle Mountain GVR; private right of action; 287(g) chilling; Trump v. Barbara watch | HIGH |
+| Domain 44 Section 2 | Mifepristone: "preserved/unstable" status | MEDIUM |
+| Domain 33 | Missouri "implementation over referendum" mechanism | MEDIUM |
+| Litigation Tracker | New Category 11 (VRA Remand Cascade); Nichols pending; 9th Circuit Oregon/CA logged | HIGH |
+| CHECKIN | Crenshaw ruling (overdue); Nichols (pending); SC Senate vote (days); June 2 Hungary ICC; Trump v. Slaughter (June); Trump v. Barbara (June–July) | HIGH |
+
+---
+
+*Third pass added: May 20, 2026. South Carolina House passage, NATO commander Grynkewich doctrine statement, Hungary ICC June 2 deadline, and Ninth Circuit voter-roll panel signals added. Sources: WRDW, Fox Carolina, SC Daily Gazette, Military Times, Bloomberg, UPI, Euronews, HRW, Al Jazeera, Haaretz, Israel Hayom, Courthouse News, Washington Examiner, Epoch Times.*
