@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-20T12:49:43Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-20T17:11:38Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 3.1% | Reset in 131h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 3.3% | Reset in 127h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PHASE 2 INFRASTRUCTURE COMPLETE + PHASE 3 CANDIDATE 2 COMPLETE + SYNTHESIS EXECUTION VERIFIED + PRE-SYNTHESIS STAGING AUDIT COMPLETE (Session 1403)] CRITICAL DISCOVERY (Session 1406): ALL PHASE 2 DOMAINS 56-59 ARE FULLY WRITTEN (~35,300 WORDS, 237 SOURCES) — NOT OUTLINES.** Phase 2 research activation infrastructure VERIFIED PRODUCTION-READY (Session 1391, re-verified Session 1403): Domains 56-59 (35,306 words, all production-complete), `phase-2-research-activation-checklist.md` + `phase-2- … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 2 RESEARCH ACTIVATION PACKAGE COMPLETE + DOMAIN G INTEGRATION VERIFIED (Session 1422)] ✅ MAY 21 SYNTHESIS READY (19:00 UTC AUTONOMOUS, ZERO SETUP LAG).** All Phase 2 domains fully written (44,001 words, 285 citations, 5 domains: 56, 57, 58, 59, G). Phase 2 research activation checklist COMPLETE: `phase-2-research-activation-checklist.md` + `phase-2-research-timeline-template.md` + `PHASE_2_RESEARCH_KICKOFF_EMAIL_TEMPLATE.md` (Session 1422 extended with Domain G congressional outreach, … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,16 +36,16 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[PHASE 3 EXECUTION PLAN COMPLETE + EXECUTION PREP COMPLETE] TRACK B — JUNE 22 LAUNCH READY (Session 1397 full execution prep) — CRITICAL PATH ANALYSIS VERIFIED (Session 1406).** ✅ All 7 Phase 3 production assets verified complete and current (18,160 total words, YAML front-matter, no formatting issues). ✅ **PHASE 3 CRITICAL PATH ANALYSIS CONFIRMED (Session 1406)**: `phase-3-medicinal-herbs-gantt-timeline.csv` (56-row timeline, critical-path marking, contingency rows) + `phase-3-supplie … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 3 PRODUCTION TIMELINE + LAUNCH CHECKLIST + DEEPENING COMPLETE (Session 1426)] TRACK B — JUNE 22 LAUNCH READY — COMPREHENSIVE PRE-SPRINT STAGING COMPLETE.** ✅ **Session 1426 Deliverables**: `PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md` (3,400 words, per-bundle mandatory content checklists, FTC compliance blocks, cross-reference savings 4-5 hours) + `PHASE_3_PHOTO_SOURCING_AND_BRIEF_REFINED.md` (2,200 words, 30-shot studio shot list for Mountain Rose dried herb session, Wikimedia cov … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5.1 MVP — REBASE MERGE CONFLICT RESOLVED (Session 1412 ORCHESTRATOR)] ✅ READY FOR USER MERGE REVIEW** Code audit identified three critical production-risk defects; all resolved on master (Session 1404 commit 198a146d). Feature branch `feature/zimwriter-libzim-activation` rebased onto master successfully (Session 1412). All three merge conflicts resolved: (1) zim_writer.py — merged try-except error handling with explicit fallback illustration logic, (2) implementation-checklist.md  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5.1 MVP — READY FOR USER MERGE REVIEW (Session 1412) + PRE-DEPLOYMENT VERIFICATION COMPLETE (Session 1419)] ✅ READY FOR USER APPROVAL & IMPLEMENTATION** Code audit identified three critical production-risk defects; all resolved on master (Session 1404 commit 198a146d). Feature branch `feature/zimwriter-libzim-activation` rebased successfully (Session 1412). All three merge conflicts resolved. **Pre-deployment verification (Session 1419)**: `phase-5-candidate-1-implementation-verific … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **[PHASE 5 WAVE 1 COMPLETE, WAVE 2 PLANNING READY FOR USER DECISION]** Phase 3-4 complete. Phase 5 Wave 1 (14.8K words) production-ready: Tier 1 Individual Education + Tier 2 Household Coordination Infrastructure guides. Phase 5 Wave 2 planning complete (4 documents outlined, 27–31.5K scope). **Awaiting user decisions**: Wave 2 sequencing (vet-first or psychological-first?), Tier 3 scope, parallel vs. serial execution.
+**Focus**: **[PHASE 5 WAVE 1 COMPLETE + WAVE 2 PRELIMINARY DRAFTS READY (Session 1422)]** Phase 3-4 complete. Phase 5 Wave 1 (14.8K words) production-ready: Tier 1 Individual Education + Tier 2 Household Coordination Infrastructure guides. ✅ **PHASE 5 WAVE 2 (Session 1422)**: All 4 content documents drafted at 35% depth (veterinary care, psychological support, conflict resolution, community playbook — ~136K bytes total). `PHASE_5_WAVE_2_DECISION_FRAMEWORK.md` ready for June 1 review. **Key finding**: P … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -105,43 +105,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - **Impact**: Informs Phase 5 architecture choices (ensure forward-compatibility), enables user Phase 6 decision June–July, scopes Phase 6 execution Aug 2026+
+   - **Item 3 (May 21 before 19:00 UTC)**: Check SCOTUSblog for Trump v. Barbara ruling
+   - Updated projects status summary to reflect critical block prominence and deadline
+   - Result: User sees urgent action items at top of CHECKIN.md on next review
 
-4. ✅ **Updated EXPLORATION_QUEUE.md**:
-   - Marked Item 98 COMPLETE (May 20 12:30-12:50 UTC)
-   - Marked Item 99 COMPLETE (May 20 12:50-13:10 UTC)
-   - Status: Queue now has 3 pending items (100, 101, 102) — balanced and ready for next session
+3. ✅ **Verified Block Status**:
+   - SSH auth verification command still fails (confirms block is active)
+   - mfg-farm test-print-results still doesn't exist (confirms block is active)
+   - cybersecurity-hardening VeraCrypt restart still needed (cannot auto-verify)
+   - All 3 blocks remain in BLOCKED.md unchanged
 
-**Blocks Verified**:
-- **stockbot SSH auth** — Still active, user action required (critical deadline May 22 13:30 UTC)
-- **cybersecurity-hardening VeraCrypt** — Still active, user action required (Windows restart)
-- **mfg-farm test print** — Still active, user action required (3D printer execution)
+4. ✅ **Exploration Queue Assessment**:
+   - Confirmed Items 100-105 completed in Sessions 1414-1417
+   - Identified 31+ pending items remain in queue
+   - Decision: Hold queue execution pending stockbot block resolution
+   - Rationale: May 22 checkpoint result will trigger Phase 4 work (systems-resilience) and Batch 2 outreach (resistance-research), making queue work more targeted
 
-**Projects Ready for Autonomous Work (Next Session)**:
-- **resistance-research** — May 21 19:00 UTC synthesis execution (scheduled autonomous)
-- **seedwarden** — Track B unblocked (ready for May 30 launch prep)
-- Exploration Queue: 3 new items pending (Items 100, 101, 102)
+**Status After This Session**:
+- **Critical block**: Escalation complete, user has clear action path
+- **May 21 synthesis**: Still fully autonomous, user prep items clear
+- **May 22 checkpoint**: May 22 20:00 UTC → all decision frameworks pre-staged
+- **Next autonomous window**: May 21 19:00 UTC (resistance-research synthesis, fully autonomous)
+- **Next phase**: If user resolves SSH auth today, May 21-22 window proceeds on schedule; if not, May 22 checkpoint repeats May 19 outcome (STILL_MISS_B2)
 
-**Deliverables Staged for User**:
-- Item 98: Hardware roadmap ready for May 22 checkpoint decision
-- Item 99: Phase 6 architecture ready for Phase 5 user decision (May 25–26)
-- Items 100, 101, 102: Queued for next session
+**Deliverables**:
+- SSH_AUTH_MITIGATION_URGENT.md (user guide, 200+ lines)
+- CHECKIN.md updated with critical action items (user-facing)
 
 **Time Allocation**:
-- Orientation & ORCHESTRATOR_STATE review: 5 min
-- Exploration Queue seeding (Items 100-102): 10 min
-- Item 98 execution (stockbot agent spawned): 20 min (agent runtime)
-- Item 99 execution (general-research agent spawned): 20 min (agent runtime)
-- EXPLORATION_QUEUE.md updates: 3 min
-- WORKLOG.md entry: 5 min
-- **Total elapsed**: ~1 hour (agents ran in parallel)
+- Orientation: 10 min
+- SSH mitigation guide creation: 10 min
+- CHECKIN.md update: 5 min
+- Verification & documentation: 5 min
+- **Total elapsed**: ~30 minutes
 
-**Parallel Execution Impact**:
-- Items 98 + 99 executed in parallel (spawned in same message)
-- Wall-clock duration: ~50 minutes (vs 70+ minutes sequential)
-- Estimated 25% time savings from parallel execution
+**Next Session Trigger**:
+- May 21 19:00 UTC (resistance-research synthesis execution — fully autonomous, scheduled)
+- OR May 22 before 13:30 UTC (if user resolves stockbot SSH auth, orchestrator can execute follow-up config verification)
+- OR May 22 20:00 UTC (stockbot checkpoint outcome, decision framework application)
 
-**Next Session Trigger**: 
-- May 21 19:00 UTC (resistance-research synthesis execution — SCHEDULED AUTONOMOUS)
-- May 22 before 13:30 UTC (stockbot critical deadline — if user has not resolved SSH auth, block will escalate to decision checkpoint)
-- May 22 after 20:00 UTC (stockbot checkpoint outcome arrives — hardware roadmap (Item 98) needed for decision)
+---
