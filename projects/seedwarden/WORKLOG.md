@@ -4,6 +4,41 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Production Launch Readiness Checklist — May 20, 2026
+
+**Task**: Create comprehensive pre-launch checklist (`PHASE_3_MEDICINAL_HERBS_LAUNCH_CHECKLIST.md`) enabling June 22 execution start with zero setup delay. Scope: all six domains (bundle finalization, writing templates, Canva workflow, photography, launch gates, risk register). Target: 3,500–4,500 words, executable playbook June 1–22.
+
+**Files audited before writing**:
+- `phase-3-medicinal-herbs-critical-path.md` (v5.0): Full critical path, day-by-day writing schedule, gate status, float analysis, supplier tiers, FTC appendix. Used as primary data source for Sections 1, 2, 5, and 6.
+- `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (v2.0): Master species-to-supplier availability table, per-supplier pricing and lead times, Goldenseal decision tree, ordering calendar. Used for Section 1 supplier table and ordering calendar.
+- `medicinal-herbs-candidate-list.md`: 12 species with bundle assignments, margin models, sourcing contacts. Used to verify species list and pricing.
+- `phase-3-medicinal-herbs-strategy.md`: Bundle themes, pricing architecture, buyer segments, revenue projections. Used for upload sequence rationale and metric targets.
+- `phase-3-medicinal-herbs-content-outline.md`: Per-bundle content briefs, word targets, species section structure, FTC rules. Used for Section 2 writing template inventory and hours.
+- `canva-phase-3-adaptation-guide.md`: Phase 2 vs Phase 3 palette, stock image sourcing by bundle, zone card template adaptation, design timeline. Used for Section 3.
+- `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` (v2.0): Prior session checklist (2,600 words). Reviewed to avoid duplication; new file is a synthesis document with different structure and expanded scope.
+- `phase-3-production-templates/`: Confirmed all four writing templates (medicinal-bundle-outline-template.md, species-guide-template.md, practitioner-content-template.md, content-outline source) are production-ready.
+- `WORKLOG.md`: Prior session entries reviewed for continuity.
+
+**Key facts confirmed from source documents**:
+- Both launch gates confirmed CLEARED: forager cohort 21.3% (gate >20%), native plants conversion 2.24% (gate >1.5%). No further gate checks required before June 22.
+- 5 bundles locked: Women's Health, Respiratory, Sleep, Immunity, Digestive. 14 unique species. 18,300 total words.
+- Upload order: Women's Health June 29, Respiratory July 6–7, Sleep July 13, Immunity July 20, Digestive August 3.
+- Writing hours: 64–74 raw; 56–66 adjusted (shared-species efficiency).
+- Design hours: 23 total (12.5 core covers + zone cards + 7.5–10 practitioner covers).
+- Goldenseal June 8 order deadline is the single binding pre-sprint hard deadline.
+- Four writing templates confirmed production-ready in `phase-3-production-templates/`.
+- Canva Pro renewal must be verified by May 30.
+
+**File created**:
+1. `PHASE_3_MEDICINAL_HERBS_LAUNCH_CHECKLIST.md` (v1.0, ~4,100 words). Six sections: (1) Bundle finalization + supplier confirmation table with all 17 species, budget total $320–$485, ordering calendar with hard deadlines; (2) Writing templates inventory + hours breakdown by bundle with totals, house style rules, practitioner variant specification; (3) Canva workflow with palette table, reuse vs. new design inventory, per-bundle design Gantt June 1–July 10, roles and approval process, Canva Pro renewal flag; (4) Photography staging checklist with states-to-capture table, pre-sprint 4-week schedule, in-sprint days, image specs, supplier-late contingency protocol; (5) Launch gates with current status, staggered upload sequence with dates and SKUs, per-bundle upload checklist, June 22 Day 1 orientation, post-launch metrics baseline; (6) Risk register with 10 risks scored by probability × impact, mitigation and contingency trigger for each, revenue impact column. Cross-reference index at close. Appendix: consolidated parallel action table for June 1–21 pre-sprint window.
+
+**No image downloads this session** (documentation only).
+**No supplier contacts initiated** (ordering calendar documented; Anya executes supplier emails starting May 20 per prior session calendar).
+
+**Completion status**: `PHASE_3_MEDICINAL_HERBS_LAUNCH_CHECKLIST.md` is production-ready as the executive playbook for June 1–22 pre-sprint execution. It synthesizes all prior Phase 3 planning documents into one navigable reference without duplicating them. Next required actions: May 30 scope decision (Option A/B/C), June 8 Goldenseal deadline, June 15 palette finalization and Elderberry order.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Critical Path Production Planning (Full Scope) — May 20, 2026
 
 **Task**: Phase 3 Medicinal Herbs production timeline and critical path analysis for pre-May-30 scope/timing decision. Produce complete Gantt CSV and verify critical path document coverage against full task spec.
