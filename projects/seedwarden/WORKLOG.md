@@ -4,6 +4,45 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path v3.0 — May 20, 2026
+
+**Task**: Queue Item 991 — Build detailed critical path analysis for June 22–July 13 medicinal herbs production (3–4 hour exploratory work). Decision document for user scope authorization by May 30.
+
+**Files read before writing**:
+- `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v2.0, May 19) — prior decision document
+- `phase-3-medicinal-herbs-critical-path.md` (v6.0, May 20) — per-bundle writing schedule, FTC mandatory language
+- `phase-3-medicinal-herbs-gantt-timeline.md` (v2.0, May 20) — sprint Gantt, checkpoint structure
+- `phase-3-medicinal-herbs-gantt-timeline.csv` — 87-task CSV
+- `medicinal-herbs-candidate-list.md` — 12-species sourcing profiles, margins, conservation status
+- `ORCHESTRATOR_STATE.md` — current session context, priority order
+- `WORKLOG.md` — prior session entries
+
+**Work performed**:
+Rewrote `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` to v3.0 (~4,200 words) consolidating and deepening:
+1. Species map (production-locked, 5 bundles, all SKUs + upload targets)
+2. Full supplier sourcing timeline — Tier 1 (June 8 hard deadline), Tier 2 (June 15), Tier 3 (June 22), budget summary, backup contacts
+3. Mandatory contraindication register — per-species FTC-required language for all 9 legally sensitive species across the 5 bundles
+4. Per-bundle writing schedule with day-by-day dates, word targets, hours, float, peer review windows (Women's Health June 22–29, Immunity July 1–10)
+5. Canva design timeline — per-bundle schedule parallel to writing, palette version history, design lock July 3, practitioner bundle cover (8.5"×11") added
+6. Photography staging — fresh vs. dried state decision matrix for all 14 unique species, pre-sprint track (May 26–June 21), in-sprint studio sessions (June 23–26)
+7. Upload sequence with staggered 7-day spacing, Kit tag activation per bundle
+8. Risk analysis — 10 risks with probability × impact scoring, all 5 contingency decision trees with activation dates
+9. ASCII Gantt inline (June 22–July 13), float analysis table, pre-sprint hard deadline table
+10. Worst-case recovery (5-day slip → August 8 final launch; 10-day slip → August 17 with Option C)
+11. Sprint completion checklist (July 13) with peer review confirmation items
+12. Three May 30 decisions in decision format, FTC quick reference, supplier contacts
+
+**Key decisions surfaced**:
+- Three decisions required by May 30: Sprint scope (Option C recommended), Goldenseal sourcing path (Path 2 / CC recommended under Option C), second writer (only if Option B)
+- Launch gates both cleared with margin; no additional validation needed before June 22
+- Peer review windows added for Women's Health and Immunity (not in prior versions) — critical for practitioner credibility on Etsy
+- Practitioner 10-pack cover (8.5"×11") added to design scope — 1.5 hours, floats 5 days post-design-lock
+
+**File modified**:
+1. `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` — v3.0 (supersedes v2.0, May 19)
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Critical Path & Gantt Timeline — May 20, 2026
 
 **Task**: Build Phase 3 medicinal herbs critical path analysis and production timeline.  
