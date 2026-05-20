@@ -9,12 +9,32 @@
 **Work Plan**:
 - ✅ Commit Session 1396 production-ready files (open-repo Phase 5 verification, systems-resilience Phase 4 synthesis)
 - ✅ Spawn 2 parallel agents:
-  1. **systems-resilience Phase 5 Wave 2 Planning** — outline Tier 2 veterinary care + psychological support + conflict resolution + Tier 3 community framework; research sources and structure (2-3 hrs)
+  1. **systems-resilience Phase 5 Wave 2 Planning** — outline Tier 2 veterinary care + psychological support + conflict resolution + Tier 3 community framework; research sources and structure (2-3 hrs) — COMPLETE
   2. **seedwarden Phase 3 Execution Prep** — Phase 3 supplier research, photography location scouting, writing asset outline, execution timeline refinement (2-3 hrs) — COMPLETE
 - ⏳ Update ORCHESTRATOR_STATE.md post-execution
 - ⏳ Final commit: all orchestration files on master
 
 **Notes**: All main projects either blocked (SSH auth, test print, VeraCrypt restart) or scheduled (May 21 synthesis). No project-critical work available today. Using wave-1 exploration queue items to advance foundational work on non-blocked high-priority projects.
+
+---
+
+## Session 1397 — systems-resilience: Phase 5 Wave 2 Planning (May 20, 2026)
+
+**Task**: Read Wave 1 documents, research sources, and produce production-ready planning document for the four remaining Phase 5 documents.
+
+**Deliverable**: `projects/systems-resilience/PHASE_5_WAVE_2_PLANNING.md`
+
+**Stats**: ~3,800 words | 4 document outlines | Sources validated against academic and practitioner databases
+
+**Documents outlined**:
+1. **Tier 2 Veterinary Care Guide** (Gap 2) — Zone 5 livestock disease calendar, preventive protocols, first response + obstetric emergencies, zoonotic disease recognition, household supply cache. 8 sources validated. 6,500–7,500 words target.
+2. **Tier 2 Psychological Support Infrastructure** (Gap 3) — Zone 5 psychological risk profile, Psychological First Aid lay practitioner layer, community grief rituals + collective healing, winter depression + SAD management, caregiver burnout. 9 sources validated including WHO PFA guide and key PMC systematic reviews. 7,000–8,000 words target.
+3. **Tier 2 Conflict Resolution Deep Dive** (Gap 5) — conflict typology, NVC facilitation language, mediator toolkit, restorative circles, escalation thresholds, building household mediation capacity. 8 sources validated. 6,000–7,000 words target.
+4. **Tier 3 Community Coordination Framework** (structural capstone) — federation problem, Ostrom design principles applied to shared resources, delegate selection, Phase 5 Tier 2 scaling to community, Phase 3 domain activation map, 18-month federation timeline. 8 sources validated. 7,500–9,000 words (must be written last). 
+
+**Key research findings**: Rural veterinary shortage crisis (245 shortage areas in 47 states) makes Gap 2 urgent beyond planning context. PFA evidence base is honestly contested (PMC 10624106 2023 systematic review). Psychological Support and Conflict Resolution are tightly coupled and recommended for Wave 2a parallel execution. Tier 3 is the Phase 5 capstone requiring all four Tier 2 documents as prerequisites.
+
+**Decision questions for project lead**: (1) confirm sequencing vs. Veterinary-first; (2) full vs. abbreviated Tier 3 scope; (3) parallel agent approach for Wave 2a; (4) whether Farm Equipment Repair (Gap 4) belongs in Phase 5.
 
 ---
 
