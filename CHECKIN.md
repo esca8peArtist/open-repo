@@ -1,3 +1,96 @@
+## Since Last Check-in (Session 1413-ORCHESTRATOR, May 20 13:33 UTC) — Phase 2/3 Planning Prep Complete ✅
+
+**Session Status**: ✅ **PHASE 2 DOMAINS ALL WRITTEN (35.3K WORDS COMPLETE)** | ✅ **PHASE 2 RESEARCH ACTIVATION CHECKLIST COMPLETE** | ✅ **PHASE 3 MEDICINAL HERBS CRITICAL PATH READY** | ✅ **TRUMP V. BARBARA RAPID-RESPONSE PRE-STAGED** | 🟢 **NO AUTONOMOUS WORK REMAINING**
+
+### What Was Done (Session 1413)
+
+**Parallel Exploration Queue Execution — 3 Agents, All Complete** ✅
+
+**Agent 1: resistance-research Phase 2 Research Activation Checklist**
+- **Critical Discovery**: All FOUR Phase 2 domains (56–59) are **already fully written** — 35,306 words total, 235+ citations
+- **Impact**: Prior timeline estimated 120–130 hours of production writing — INCORRECT
+- **Revised scope**: Only 29–44 hours of distribution preparation remaining (not writing)
+- **Deliverables produced**:
+  - `PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md` (updated, production-ready checklist for May 21 synthesis)
+  - `PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md` (updated, distribution-only calendar with hard gate dates)
+  - `PHASE_2_RESEARCH_KICKOFF_EMAIL_TEMPLATE.md` (new, 3 email versions ready for user approval)
+- **Blocking assumptions documented**:
+  - Domain 58 Trump v. Barbara ruling (expected June-July) — pre-check SCOTUSblog May 21 ✅
+  - Domain 59 HHS OBBBA June 1 deadline — check HHS.gov June 1
+  - Domain 56 H.R. 492 legislative window June 1-30 (Wave 1A must go by June 7)
+  - Domain 57 ICC section currency (check July before Aug 10 distribution)
+  - Domain 60 does NOT exist (scope only if synthesis outcome STRONG)
+- **May 21 19:00 UTC synthesis execution**: Zero blocking gaps — fully autonomous ✅
+
+**Agent 2: seedwarden Phase 3 Medicinal Herbs Critical Path Analysis**
+- **Status**: All 3 deliverables confirmed production-ready and current (May 19-20 versions) ✅
+- **Deliverables verified**:
+  - `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (7,485 words, critical path analysis complete)
+  - `PHASE_3_PRODUCTION_GANTT.csv` (67 data rows, critical path marked, float days identified)
+  - `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (392 lines, supplier calendars + ordering deadlines)
+- **Critical path constraint**: Writing (64–74 hours for 5 bundles), zero float
+- **Launch gates**: BOTH CLEARED ✅
+  - Forager cohort 21.3% (threshold >20%)
+  - Native plants conversion 2.24% (threshold >1.5%)
+- **Key user decisions required by May 30**:
+  1. Sprint scope (single writer / two writers / 3-bundle priority) — recommending Option C (3-bundle conservative with proper editing)
+  2. Goldenseal path (live order June 8 vs. Wikimedia CC + botanical garden) — recommending CC path (zero cost, zero production risk)
+  3. Second writer briefing (if parallel writing chosen) — must begin June 1
+- **June 22 launch execution**: AUTHORIZED, awaiting user scope decision
+
+**Agent 3: Trump v. Barbara Tribal Voting Case Rapid-Response Context**
+- **Critical finding**: Case (No. 25-365) is the birthright citizenship case (EO 14160), not pure tribal voting rights
+- **Tribal dimension**: SG Sauer forced by Justice Gorsuch to state children of tribal Indians "not birthright citizens," threatening 102 years of settled law
+- **Case status**: Argued April 1, 2026; ruling expected late June/early July 2026
+- **Concurrent litigation**: Turtle Mountain v. Howe GVR'd May 18 under hostile Callais standard (multi-circuit erosion strategy)
+- **Ruling prediction**: Most likely narrow rejection of EO 14160, but risk of dicta creating future litigation hooks
+- **Deliverables produced**:
+  - `TRUMP_V_BARBARA_CASE_SUMMARY.md` (~2,200 words, 6 sections with 29 sourced URLs)
+  - `TRUMP_V_BARBARA_RAPID_RESPONSE_PROTOCOL.md` (3-branch decision tree with same-day action sequences)
+- **Domain 58 rapid-response**: Pre-staged for all three ruling scenarios
+  - **Broad reaffirmation**: Same-day distribution + NAVRA legislative activation
+  - **Narrow rejection** (most likely): 48-72h distribution + Callais cascade pivot
+  - **Adverse** (tribal citizenship language survives): 24h emergency distribution + Indian Citizenship Act amendment ask
+
+### PROJECTS.md Updates
+
+- **systems-resilience**: Pruned stale focus line (was referencing Session 1397, now current and concise)
+
+### Block Status (Unchanged)
+
+All 3 active blocks remain unchanged (require user action):
+1. **stockbot SSH auth** — Critical deadline **May 22 13:30 UTC** (~24 hours remaining)
+2. **cybersecurity-hardening VeraCrypt** — Machine restart + pre-boot password required
+3. **mfg-farm test print** — Specifications ready for execution
+
+### Autonomous Work Remaining
+
+**NONE** — All unblocked projects have deliverables complete:
+- **resistance-research**: Phase 2 prep complete; synthesis scheduled May 21 19:00 UTC (autonomous)
+- **seedwarden**: Phase 3 planning complete; awaiting user scope decision by May 30
+- **open-repo**: Phase 5.1 MVP ready; awaiting user merge review
+- **All others**: Complete or awaiting user review
+
+### Critical Path to Next Autonomous Work
+
+1. **May 21 19:00 UTC**: resistance-research synthesis execution (fully autonomous, <30 min)
+2. **May 21 post-synthesis**: Phase 2 research launches same-day if user approves Phase 2 activation checklist
+3. **May 30**: seedwarden user decisions unlock Phase 3 execution planning
+4. **May 22 13:30 UTC**: ⚠️ **CRITICAL DEADLINE** — stockbot Lever B config fix (user SSH auth required)
+
+### What's Next
+
+- **TODAY (May 20) ~22:00 UTC**: User fills Wave 1 signal log (resistance-research monitoring) — unchanged
+- **MAY 21 before 19:00 UTC**: User checks SCOTUSblog for Trump v. Barbara ruling — unchanged
+- **MAY 21 19:00 UTC**: Synthesis execution (fully autonomous) — unchanged, all prep complete
+- **MAY 22 13:30 UTC**: ⚠️ Stockbot critical deadline — user SSH auth or manual config fix required
+- **MAY 25-26**: open-repo Phase 5.1 MVP ready for user merge approval
+- **MAY 30**: seedwarden Phase 3 scope decisions unlock June planning
+
+**Next Session Trigger**: May 21, 19:00 UTC (synthesis execution) — scheduled in start-orchestrator.sh
+
+---
+
 ## Since Last Check-in (Session 1412-ORCHESTRATOR, May 20 12:00–12:35 UTC) — Open-Repo Merge Conflict Resolution Complete ✅
 
 **Session Status**: ✅ **OPEN-REPO REBASE MERGE CONFLICT RESOLVED** | ✅ **FEATURE BRANCH READY FOR USER MERGE APPROVAL** | 🟢 **AUTONOMOUS BLOCK RESOLUTION COMPLETE** | ⏰ **SYNTHESIS EXECUTION ON TRACK MAY 21 19:00 UTC**
