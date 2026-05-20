@@ -5,7 +5,59 @@
 
 ---
 
-## Active Items (Session 1334, May 19, 12:50 UTC)
+## Active Items (Session 1399, May 20, 07:07 UTC)
+
+### ✅ Item 94: Resistance-Research Phase 2 Domains 56-59 Research Activation Prep
+**Status**: COMPLETE (Session 1399, May 20, 07:07 UTC)
+**Priority**: HIGH — synthesis execution May 21 19:00 UTC; Phase 2 launch depends on prep
+**Impact**: HIGH — if synthesis outcome is STRONG/MODERATE, Phase 2 research launches same-day May 21 evening. Pre-staging templates, source lists, and execution workflows removes 3-4 hours of setup friction.
+**Goal**: Prepare final research activation package for top 4 Phase 2 candidate domains (56: Civil Service Politicization, 57: Multilateral Withdrawal, 58: Tribal Sovereignty, 59: Economic Precarity) so research execution can begin May 21 evening post-synthesis with zero setup delays.
+**Scope** (2-3 hrs):
+  1. **Source staging**: Finalize 50-100 sources per domain (56, 58 existing; 57, 59 outlines from prior session)
+  2. **Research templates**: Citation-first templates, evidence checklist, cross-reference validation
+  3. **Writing workflow**: Per-domain writing cycle estimates, citation targets, outline-to-draft conversion templates
+  4. **Execution scheduling**: Which domain first if STRONG? Which if MODERATE? Sequencing vs. parallel track analysis.
+**Deliverable**: `projects/resistance-research/PHASE_2_DOMAINS_56_59_RESEARCH_ACTIVATION_PREP.md` (2,000+ words, sources per domain, templates, scheduling matrix)
+**Completion**: File created with 6,294 words, PRODUCTION-READY:
+- **Section 1**: Source Lists (52 sources D56, 52 sources D58, 57 sources D57, 48 sources D59) — organized by section, Primary/Secondary prioritization, time-critical flags
+- **Section 2**: Research & Writing Templates — citation-first protocol, evidence checklist, cross-reference validation, outline→draft process
+- **Section 3**: Per-Domain Writing Workflows — D56 (8h), D58 (12h), D57 (51h with bottleneck ID), D59 (65h with OBBBA pre-outline)
+- **Section 4**: Execution Scheduling Matrix — STRONG/MODERATE/WEAK paths with exact dates, user confirmation gates, MODERATE-to-STRONG upgrade rules
+**Success criteria met**: Ready for immediate Phase 2 research launch May 21 evening post-synthesis. All domains ready for deterministic execution regardless of synthesis outcome.
+
+---
+
+### ⏳ Item 95: Systems-Resilience Wave 2 Execution Planning Prep
+**Status**: PENDING — ready for execution May 20, 07:07 UTC  
+**Priority**: HIGH — Wave 2 user decisions June 1; execution July 16+; prep work can start now
+**Impact**: HIGH — Wave 2 spans 4 documents (7-9K words each, 27-31.5K total). Pre-staging research outlines, source lists, and writing workflows removes 1-2 weeks of planning overhead pre-execution.
+**Goal**: Prepare final execution planning package for Wave 2 candidates (Veterinary Care, Psychological Support, Conflict Resolution, Community Framework) so execution can begin immediately July 16 post-user-decision-June-1.
+**Scope** (2-3 hrs):
+  1. **Research outlines**: Finalize 4 document outlines (existing from Phase 5 Wave 2 planning) with detailed section structure, scope per section, evidence requirements
+  2. **Source staging**: 30-50 sources per domain, organized by section, with priority (primary vs. secondary)
+  3. **Writing workflow**: Per-document writing cycle, citation targets, example structure per section
+  4. **Execution scheduling**: Parallel vs. serial analysis, 4-document writing timeline options (8 weeks? 12 weeks?)
+**Deliverable**: `projects/systems-resilience/PHASE_5_WAVE_2_EXECUTION_PACKAGE.md` (3,000+ words, detailed outlines, sources, templates, scheduling options)
+**Success criteria**: By June 1, ready so Wave 2 execution can begin July 16 with fully staged research infrastructure.
+
+---
+
+### ⏳ Item 96: Seedwarden Track B May 30 Launch Decision Support Package
+**Status**: PENDING — ready for execution May 20, 07:07 UTC
+**Priority**: MEDIUM — May 30 user decisions are 10 days away; June 22 launch cannot proceed without these decisions
+**Impact**: MEDIUM — Three critical decisions needed (sprint scope, Goldenseal path, Canva palette). Pre-staging decision-support package removes ambiguity and accelerates May 30 decision process.
+**Goal**: Create comprehensive decision-support package for Seedwarden Track B May 30 launch decisions (sprint scope: conservative vs. aggressive?, Goldenseal sourcing: Companion Plants vs. Wikimedia CC?, Canva palette: user preference confirmation?) so May 30 can execute decisions mechanically without planning overhead.
+**Scope** (1-2 hrs):
+  1. **Decision matrix**: All 3 decisions with trade-off analysis (timeline, effort, revenue impact, risk per option)
+  2. **Revenue projections**: Steady-state vs. practitioner-tier impacts per sprint scope option
+  3. **Timeline visualization**: 3-bundle conservative vs. 5-bundle aggressive calendar with float analysis
+  4. **Pre-order checklist**: Goldenseal order window (June 1-8 Companion Plants vs. Wikimedia CC sourcing timing)
+**Deliverable**: `projects/seedwarden/TRACK_B_MAY_30_DECISION_PACKAGE.md` (2,000+ words, decision matrices, trade-off analysis, timeline options, pre-order checklist)
+**Success criteria**: By May 29, ready so May 30 user can execute 3 decisions with full impact analysis.
+
+---
+
+## Previously Active Items (Session 1334, May 19, 12:50 UTC)
 
 ### ✅ Item 85: Mfg-farm Post-Test-Print Etsy Launch Sequence
 **Status**: COMPLETE (Session 1360, May 19 2026, 20:15 UTC) — Deliverable: `ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, verified May 19 20:15)

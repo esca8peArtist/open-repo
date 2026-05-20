@@ -2637,3 +2637,59 @@ Comprehensive production-readiness audit of resistance-research Phase 1 Wave 1 p
 - Active remaining: 2 items (seedwarden Phase 3 Timeline, open-repo Phase 5 Candidate 1 Verification)
 - If no main project work available in next session: Proceed with seedwarden Phase 3 Timeline (3–4 hrs) or open-repo Phase 5 verification (2–3 hrs)
 
+
+---
+
+## Session 1399 — May 20, 2026, 07:07 UTC — Exploration Queue Item 94 (Phase 2 Research Activation Prep)
+
+**Orientation & Block Processing**:
+- Read ORCHESTRATOR_STATE.md: 3 active blocks (stockbot SSH auth, cybersecurity-hardening VeraCrypt, mfg-farm test print) all remain unresolved
+- All main projects blocked on user actions OR awaiting user decisions (stockbot SSH auth, cybersecurity-hardening Phase 1 VeraCrypt restart, mfg-farm test print, seedwarden May 30 decisions, open-repo May 25 approval, systems-resilience June 1 Wave 2 decisions)
+- Synthesis execution scheduled May 21 19:00 UTC (fully autonomous)
+- Signal log fill needed May 20 evening (requires email monitoring)
+
+**Exploration Queue Assessment**:
+- EXPLORATION_QUEUE.md showed all items (85-93) marked COMPLETE
+- Per protocol: fewer than 3 active items → add 2-3 new items
+- Added 3 items:
+  - Item 94: Phase 2 Domains 56-59 Research Activation Prep (HIGH — May 21 synthesis critical path)
+  - Item 95: Systems-Resilience Wave 2 Execution Planning Prep (HIGH — July 16 launch support)
+  - Item 96: Seedwarden Track B May 30 Launch Decision Support (MEDIUM — May 30 decisions)
+
+**Execution — Item 94 (May 20, 07:07–10:00 UTC)**:
+- Spawned resistance-research subagent to prepare Phase 2 domains research activation package
+- Scope: Source staging (D56, D57, D58, D59), research templates, writing workflows, execution scheduling matrix
+- Output: `projects/resistance-research/PHASE_2_DOMAINS_56_59_RESEARCH_ACTIVATION_PREP.md` (6,294 words, production-ready)
+
+**Deliverable Analysis**:
+- **Source Lists**: D56 (52 sources, 6 section-organized tables), D58 (52 sources, voter registration/economic sovereignty/litigation tables), D57 (57 sources, 5 organized tables with acquisition blockers), D59 (48 sources, 5 causal/behavioral/government/OBBBA/polling tables)
+- **Research Templates**: Citation-first protocol, evidence checklist (confirmed vs. preliminary), cross-reference validation map, outline→draft process (5 steps)
+- **Writing Workflows**: D56 (8h production pass), D58 (12h with post-Callais focus), D57 (51h with Section 2-3 bottlenecks), D59 (65h with OBBBA pre-outline provided)
+- **Execution Scheduling**: STRONG/MODERATE/WEAK/path deterministic decision trees with exact June-Sept timelines, user confirmation gates, MODERATE-to-STRONG upgrade rules
+
+**Impact**:
+- **May 21 synthesis is fully prepped**: If outcome STRONG/MODERATE, Phase 2 research launches same-day evening with zero planning overhead
+- **STRONG path**: D57+D59 parallel June 15 launch, both complete Sept 1
+- **MODERATE path** (most likely): D57 primary June 10, D59 secondary July 1; Aug 10 + Sept 1 distribution
+- **WEAK path**: D57 deferred Aug 1, D59 deferred July 15; user decision required on root cause
+
+**Time Allocation**:
+- Orientation: 15 min
+- Block processing: 10 min
+- Exploration queue reset: 10 min
+- Item 94 execution: 180 min (agent)
+- Documentation + commit: 10 min
+- **Total: 225 minutes (3.75 hours)**
+
+**Next Steps**:
+1. **Today (May 20) evening ~22:00 UTC**: Signal log fill (requires email monitoring for Batch 1 responses)
+2. **May 21, 19:00 UTC**: Synthesis execution (fully autonomous, <30 min)
+3. **May 21 evening (post-synthesis)**: If outcome STRONG/MODERATE, Phase 2 research launches with PHASE_2_DOMAINS_56_59_RESEARCH_ACTIVATION_PREP.md infrastructure
+4. **May 22 onwards**: Implementation of execution path per synthesis outcome
+
+**Exploration Queue Status**: 
+- ✅ Item 94 complete
+- ⏳ Item 95 active (Systems-Resilience Wave 2) — ready for execution
+- ⏳ Item 96 active (Seedwarden May 30) — ready for execution
+- Next priority: Item 95 (Wave 2 planning) or May 21 synthesis execution
+
