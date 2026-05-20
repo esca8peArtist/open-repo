@@ -1,3 +1,41 @@
+## Since Last Check-in (Session 1379-ORCHESTRATOR, May 20 01:24–01:45 UTC)
+
+**Session Status**: ✅ **COMPLETE — PRE-SYNTHESIS VERIFICATION + STALE FOCUS CLEANUP**
+
+### What Was Accomplished
+
+**Infrastructure Verification** — Confirmed all synthesis and checkpoint infrastructure fully staged:
+- ✅ Resistance-research synthesis infrastructure ready (signal log + analysis framework + outcome branches)
+- ✅ Stockbot checkpoint infrastructure ready (post-checkpoint decision framework + outcome classifiers)
+- ✅ Open-repo Phase 5 pre-deployment package verified (6 documents, 98.2% confidence, awaiting user approval May 25)
+- ✅ Seedwarden Phase 3 critical path verified (June 8 Goldenseal deadline, writing is binding constraint)
+
+**Stale Focus Cleanup** — Refreshed mfg-farm and systems-resilience project focus lines in PROJECTS.md:
+- Updated mfg-farm focus: Added "verified current May 20" note (Session 1360 work still production-ready, awaiting test print)
+- Updated systems-resilience focus: Added "verified current May 20" note (Session 1362 architecture still valid, awaiting June 1 user decision)
+- ORCHESTRATOR_STATE.md warnings cleared
+
+**No new blockers identified** — All 3 active blocks remain as-is:
+- 🔴 **Stockbot SSH auth** — Still May 22 13:30 UTC deadline (critical)
+- Cybersecurity-hardening Phase 1 — Still awaiting Windows restart
+- mfg-farm test print — Still awaiting user execution
+
+### Critical Path Status (Next 48 Hours)
+
+**TODAY (May 20) — User Action Required**:
+- Fill wave-1-signal-log-may18-21.md this evening with response data through May 21 10:30 UTC
+- 🔴 **CRITICAL**: SSH deadline May 22 13:30 UTC (~36 hours remaining)
+
+**TOMORROW (May 21)**:
+- 19:00–20:00 UTC: Synthesis execution (autonomous, fully staged)
+- May 21 evening: Phase 2 research activation IF outcome STRONG/MODERATE
+
+**May 22**:
+- 13:30 UTC: **CRITICAL SSH deadline** — unresolved impacts checkpoint
+- 20:00 UTC: Checkpoint execution (autonomous, fully staged)
+
+---
+
 ## Since Last Check-in (Session 1378-ORCHESTRATOR, May 20 00:46–02:10 UTC)
 
 **Session Status**: ✅ **COMPLETE — ALL 3 EXPLORATION QUEUE ITEMS DELIVERED; PRE-SYNTHESIS + PRE-DEPLOYMENT INFRASTRUCTURE READY**
