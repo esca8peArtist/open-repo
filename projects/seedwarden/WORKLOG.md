@@ -4,6 +4,32 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path Analysis (Exploration Queue) — May 20, 2026
+
+**Task**: Develop detailed production timeline with critical path analysis for Phase 3 medicinal herbs (June 22–July 13, 22-day window). Deliverables: `phase-3-medicinal-herbs-critical-path.md` (2,500+ words), `phase-3-medicinal-herbs-gantt-timeline.csv` (Gantt with critical path column), and `phase-3-supplier-confirmation-tracker.md` (per-supplier delivery feasibility + alternates).
+
+**Files audited before writing**:
+- `phase-3-medicinal-herbs-critical-path.md` (v5.0, 2,800+ words): Found complete and production-ready from prior sessions. All six specification sections present: medicinal herb selection (5 bundles locked), sourcing timeline by tier (Tier 1/2/3 with per-herb complexity notes), writing schedule (per-bundle hours with shared-species efficiency), Canva design timeline (12.5 hours total with per-bundle schedule), photography staging (indoor studio strategy with fresh/dried/CC decision matrix), upload sequence (staggered June 29–Aug 3 with gate status), and risk analysis matrix (10 risks scored). Both launch gates confirmed cleared (forager cohort 21.3%, native plants 2.24%). No substantive gaps found.
+- `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (v2.0, 700+ words): Found complete from prior sessions. Master species-to-supplier table (17 species × 5 suppliers), per-supplier profiles, Goldenseal decision tree, ordering calendar, response log forms, and budget tracker all present.
+- `phase-3-execution-gantt.csv`: Found complete CSV Gantt with full task detail. Column schema differs from task specification (task spec requires: Task, Start Date, Duration (days), Dependencies, Float Days, Critical Path Y/N). File is under a different name than the required deliverable.
+- `phase-3-medicinal-herbs-gantt-timeline.md` (v2.0): ASCII art Gantt with sprint visualization — Markdown format, not CSV.
+
+**Key findings**:
+- `phase-3-medicinal-herbs-critical-path.md` satisfies all specification criteria at v5.0. No changes needed.
+- The task specification requires `phase-3-medicinal-herbs-gantt-timeline.csv` (CSV with specific columns). Neither existing Gantt file matches this exact filename and column schema simultaneously — required a new file.
+- The task specification requires `phase-3-supplier-confirmation-tracker.md` (lowercase). `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (uppercase) exists. A new lowercase file was created matching the spec filename, reorganized to lead with executive summary and delivery feasibility table as the task scope description requires.
+
+**Files created**:
+1. `phase-3-medicinal-herbs-gantt-timeline.csv` — 56 rows. Columns: Task / Bundle-Track / Start Date / Duration (days) / Dependencies / Float Days / Critical Path Y/N / Notes. Covers: 3 pre-sprint decisions, 6 supplier deadlines, 7 photography tasks, 22 sprint writing days, 11 design tasks, 5 upload milestones, 3 sprint checkpoints, 5 contingency rows. Critical path marked YES on all zero-float tasks. Post-sprint Immunity (Jul 20) and Digestive (Aug 3) milestones included.
+2. `phase-3-supplier-confirmation-tracker.md` — 8 sections: (1) June 21 delivery feasibility executive summary per supplier (yes/no/maybe with conditions); (2–6) per-supplier profiles with lead times, pricing, bulk discount policy, delivery feasibility, and alternate sources; (7) Goldenseal decision tree; (8) sign-off checklist. Current order status documented as all-pending (no pre-orders placed as of May 20).
+
+**No image downloads this session**.
+**No supplier contacts initiated** (ordering calendar begins May 20 per Appendix C of critical path doc; user places orders).
+
+**Completion status**: All three required deliverables are production-ready. `phase-3-medicinal-herbs-critical-path.md` v5.0 is authoritative and unchanged. New CSV Gantt and lowercase supplier tracker created to match task specification filenames and column schemas. User can make June Phase 3 scope decision with full timeline visibility.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Production Timeline (Exploration Queue) — May 20, 2026
 
 **Task**: Produce detailed Phase 3 medicinal herbs production timeline enabling user decisions by May 30 while Phase 2 executes. Deliverables: `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` (2,000+ words) and `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (800+ words).
@@ -68,6 +94,33 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 **No supplier contacts initiated**.
 
 **Completion status**: Track B launch readiness package complete. All three deliverables are production-ready for May 30 decision gate. Next required actions: May 30 scope + Goldenseal + palette decisions confirmed by user; June 1 supplier outreach; June 8 Goldenseal order deadline; June 22 execution launch.
+
+---
+
+## Seedwarden Agent Session — Track B May 30 Decision Package (Exploration Queue Item 96) — May 20, 2026
+
+**Task**: Create comprehensive decision-support package (`TRACK_B_MAY_30_DECISION_PACKAGE.md`) for all three required May 30 decisions. Target: 2,000+ words, production-ready for immediate May 30 use with no planning overhead needed.
+
+**Files audited before writing**:
+- `PHASE_3_EXECUTION_PREPARATION.md` (May 20, 3,100+ words): Full supplier research (Companion Plants, Crimson Sage, Native Wildflowers, Pacific Botanicals), photography venue scout (Morton Arboretum, Rhubarb Botanicals, Missouri Botanical Garden), writing workflow outline, refined Option C timeline. Used as primary source for all three decision matrices and the Gantt timeline.
+- `canva-phase-3-adaptation-guide.md` (May 19): Authoritative six-hex Phase 3 palette. Confirmed as the production standard superseding the May 9 mockup brief.
+- `phase-3-assets/canva-mockup-briefs/phase-3-canva-mockup-brief.md` (May 9): Older five-color palette (Herb Brown, Herb Sage, etc.). Documented discrepancy with May 19 version; May 19 is authoritative.
+- `TRACK_B_MAY30_DECISION_FRAMEWORK.md` (May 20): Prior single-page decision brief. Used for option labeling cross-reference (note: option labels are inconsistent across documents; package uses A=Conservative/5-bundle, B=Minimal/2-bundle, C=Balanced/3-bundle for clarity).
+
+**Key findings confirmed**:
+- Phase 3 launch gates both cleared: forager cohort 21.3%, native plants conversion 2.24%. No additional validation needed.
+- Option C (3-bundle: Women's Health, Respiratory, Sleep) remains the recommended sprint scope across all prior sessions. Unlocks practitioner tier July 13, steady-state $1,215/month core + practitioners August+.
+- Palette discrepancy resolved: May 19 six-hex palette is authoritative. May 9 brief uses a different primary (Herb Brown #6B4F35 vs. Deep Burgundy #8B3E3E). User must confirm the May 19 version by May 30 to lock brand kit by June 15.
+- Goldenseal is Immunity bundle only (deferred to July 20 under Option C) — this is a quality upgrade decision, not a launch gate for the June 22–July 13 sprint.
+- Companion Plants (Ohio) is the primary backup supplier with confirmed Goldenseal availability through June. June 1 order deadline (not June 8) recommended for maximum acclimation time.
+
+**Files created**:
+1. `TRACK_B_MAY_30_DECISION_PACKAGE.md` (~2,800 words). Four sections: (1) Decision Matrix — three decision tables (sprint scope, Goldenseal sourcing, Canva palette) with options/pros/cons/recommendation for each; (2) Revenue Projections — per-option revenue breakdown, comparison summary table, practitioner tier analysis; (3) Timeline Visualization — text-based Gantt May 30 through Aug 3 with risk flags and contingency triggers for each risk; (4) Pre-Order Checklist — actionable checklists for Path 1 (Companion Plants order), Path 2 (Wikimedia CC), and Canva palette lock. Decision Record block for user to fill in May 30.
+
+**No image downloads this session**.
+**No supplier contacts initiated** (user places orders June 1).
+
+**Completion status**: Decision package production-ready for May 30 use. All three decisions have clear recommendations with rationale. Revenue implications clear (Option C: $1,215/month steady-state August+, rising to $1,712–1,947/month when all 5 bundles live September+). Pre-order checklist prevents missed deadlines. June 1 supplier order and June 15 palette lock are the next hard actions.
 
 ---
 
