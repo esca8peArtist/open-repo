@@ -2,6 +2,24 @@
 
 ---
 
+## May 20, 2026 — General Research Agent — Domain 58 Trump v. Barbara Rapid-Response Research Memo
+
+**Task**: Produce a comprehensive rapid-response research memo on Trump v. Barbara (No. 25-365) and its tribal sovereignty implications for Domain 58 Phase 2 distribution. Synthesize all existing pre-staging research into consolidated briefing format.
+
+**File created**:
+- `projects/resistance-research/DOMAIN_58_TRUMP_V_BARBARA_RAPID_RESPONSE.md` — 3,400-word rapid-response memo covering: (1) SCOTUS case status and constitutional question, (2) tribal coalition organizations and expected responses, (3) legal precedent analysis including the Callais cascade, (4) advocacy windows and 15 rapid-response contact organizations, (5) rapid-response protocol with pre-staged email template. 60 sources cited.
+
+**Key findings**:
+1. **Framing clarification**: Trump v. Barbara is primarily a birthright citizenship case, not a tribal voting rights case. The tribal significance derives from Solicitor General Sauer's April 1 oral argument statement that children of tribal Indians are "not birthright citizens" under the Fourteenth Amendment — the most direct threat to the constitutional foundation of the tribal franchise since 1924.
+2. **Ruling timing**: No decision as of May 20, 2026. Expected late June to early July 2026 (end of OT2025 term). Probability of ruling by May 31: under 5%. Daily SCOTUSblog monitoring recommended from June 15.
+3. **Callais cascade confirmed active**: Three simultaneous tracks — Callais ruling (April 29), Turtle Mountain GVR (May 18), and pending Trump v. Barbara — operate in combination against tribal political power. The cascade is documented, not predicted.
+4. **Montana SB 490 victory (May 11)**: Western Native Voice et al. won a post-Callais state constitutional tribal voting rights case — the first documented such victory. This is the "here's what works now" frame for all distribution.
+5. **Distribution infrastructure**: Domain 58 materials fully pre-staged and executable within 2 hours of ruling issuance per DOMAIN_58_DISTRIBUTION_BRIDGE.md Window 1.
+
+**Confidence**: High on case status, Gorsuch/Sauer exchange, Callais outcome, Turtle Mountain GVR, Montana SB 490. Moderate on ruling scenario probability (inherent oral-argument-tea-leaf uncertainty). One gap: Gist publication of Domain 58 remains pending — required for link-based distribution before ruling issues.
+
+---
+
 ## May 21, 2026 — General Research Agent — Phase 2 Activation Checklist + Timeline Template Currency Update
 
 **Task**: Audit Phase 2 domains (56–59 + Domain G) for production-readiness and May 2026 currency. Update both activation documents with live research findings. Verify word counts. Prepare same-day synthesis launch package.

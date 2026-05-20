@@ -1,3 +1,33 @@
+## Since Last Check-in (Session 1441 — ORCHESTRATOR, May 20 21:42–22:15 UTC) — Domain 58 Gist Publication + Pre-Synthesis Preparation
+
+**Status**: ✅ **DOMAIN 58 GIST PUBLISHED FOR DISTRIBUTION** | ✅ **MAY 21 SYNTHESIS FULLY PRE-STAGED AND AUTONOMOUS** | 🔴 **CRITICAL: STOCKBOT LEVER B DEADLINE MAY 22 13:30 UTC (~13 HOURS)** | ⏰ **NEXT AUTONOMOUS EVENT: MAY 21 19:00 UTC SYNTHESIS**
+
+**What Was Accomplished**:
+1. ✅ **Domain 58 GitHub Gist Published** — Created public Gist at https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f. Enables rapid-response distribution if Trump v. Barbara ruling issues May 21-31. Updated DISTRIBUTION_GIST_URLS.md to record Gist URL.
+2. ✅ **May 21 Synthesis Status Verified** — All pre-staging confirmed complete from Session 1440. Phase 2 research activation checklist finalized, Trump v. Barbara rapid-response protocol staged, Domain 58 now distribution-ready.
+3. ✅ **Trump v. Barbara Ruling Status** — Confirmed via SCOTUSblog: ruling still pending as of May 20 21:42 UTC, expected late June-early July. <5% probability of ruling by May 31.
+
+**Current Project Status**:
+- **Stockbot**: 🔴 SSH auth failure + Lever B config still blocking. No autonomous workaround available. User action required by May 22 13:30 UTC.
+- **Resistance-research**: ✅ Fully pre-staged. May 21 19:00 UTC synthesis executes autonomously (no user setup required). Distribution-ready.
+- **All other projects**: Blocked on user actions (VeraCrypt restart, test print execution).
+
+**Pending User Actions**:
+1. 🔴 **CRITICAL: SSH auth fix by May 22 13:30 UTC** — Either add orchestrator public key to Jetson authorized_keys, or SSH manually and add `"hmm_regime_masking": true` to config
+2. 📋 **May 21 ~19:00 UTC**: Synthesis executes autonomously (can optionally monitor, but no user action needed)
+3. 📋 **May 21 ~20:00 UTC**: Synthesis outcome determines Phase 2 research activation (if STRONG/MODERATE, research launches same-day)
+4. 📋 **May 22 ~20:00 UTC**: Checkpoint executes and decision frameworks apply
+
+**Next Scheduled Autonomous Event**:
+- **May 21 19:00 UTC**: Resistance-research Phase 2 synthesis execution (fully autonomous, ~1 hour runtime)
+
+**Changes Made**:
+- Created Domain 58 GitHub Gist (https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f)
+- Updated: `DISTRIBUTION_GIST_URLS.md` with Domain 58 reference
+- Verified: All May 21 synthesis pre-staging from Session 1440 still current
+
+---
+
 ## Since Last Check-in (Session 1440 — ORCHESTRATOR, May 20 21:35–23:15 UTC) — Exploration Queue Execution: Phase 2 + Trump v. Barbara Research
 
 **Status**: ✅ **2 EXPLORATION QUEUE ITEMS EXECUTED (PHASE 2 ACTIVATION VERIFIED + TRUMP V. BARBARA RESEARCH COMPLETE)** | 🔴 **CRITICAL: STOCKBOT LEVER B DEADLINE MAY 22 13:30 UTC (14 HOURS)** | ⏰ **MAY 21 SYNTHESIS AUTONOMOUS (19+ HOURS, FULLY PRE-STAGED)** | ✅ **PHASE 2 DISTRIBUTION READY FOR SAME-DAY POST-SYNTHESIS LAUNCH**

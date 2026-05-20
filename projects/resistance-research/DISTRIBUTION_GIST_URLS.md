@@ -16,6 +16,7 @@ Created 2026-04-30 05:50 UTC. These are the canonical reference documents for al
 | **Democratic Renewal Proposal** (35 domains) | https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | 537 KB | 2026-04-14 |
 | **Executive Summary** | https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4 | ~20 KB | 2026-04-27 |
 | **Domain 37 — Federal Executive Interference** | https://gist.github.com/esca8peArtist/1277f5d5bcb0fe46604bbaba8fa37fd0 | ~40 KB | 2026-05-14 |
+| **Domain 58 — Tribal Sovereignty, Voting Rights & Constitutional Authority** | https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f | 102 KB | 2026-05-20 |
 | **Litigation Tracker 2026** | https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0 | ~45 KB | 2026-04-29 |
 | **First Amendment Suppression Tracker** | https://gist.github.com/esca8peArtist/10d0a86e386e6c3c11c3830295a6503c | ~35 KB | 2026-04-28 |
 | **Environmental Rollbacks Tracker** | https://gist.github.com/esca8peArtist/87e2bdb931b77480e56a08044c567bc4 | ~42 KB | 2026-04-29 |
