@@ -1,5 +1,95 @@
 # Work Log
 
+## Session 1392 — Orchestrator (May 20, 2026, 04:45–06:30 UTC)
+
+**Orientation & Administrative Tasks**:
+- ✅ Pruned STALE FOCUS references in PROJECTS.md (mfg-farm Session 1360, systems-resilience Session 1362)
+- ✅ Verified stockbot SSH auth block is REAL (key not authorized on Jetson); critical deadline May 22 13:30 UTC for Lever B config fix
+- ✅ INBOX.md: No new items to process
+- ✅ BLOCKED.md: 3 active blocks (stockbot SSH, cybersecurity VeraCrypt restart, mfg-farm test print) — no new blocks added
+
+**Parallel Agent Execution** (3 independent high-priority tasks):
+
+1. **resistance-research** (Agent a0cfe37608eabfd4a): **May 21 SYNTHESIS EXECUTION READY**
+   - ✅ Signal log filled (`SYNTHESIS_SIGNAL_LOG.md`)
+   - ✅ External environment assessment: **STRONG** (3 convergent crises: H.R. 492/S. 134 civil service politicization, Trump v. Barbara ruling imminent, OBBBA Dec 2026 implementation)
+   - ✅ Pre-synthesis files verified current (checklists, timelines, Obsidian vault, contact list)
+   - 🔄 **USER ACTION NEEDED by May 21 19:00 UTC**: Fill inbox signal rows in `wave-1-signal-log-may18-21.md` (reply count, OOO/bounce, Gist view delta)
+   - **Result**: May 21 19:00–20:00 UTC synthesis execution fully autonomous; Phase 2 research activation same-day if STRONG/MODERATE outcome
+
+2. **open-repo** (Agent a13295eacb6dca2a8): **Phase 5.1 MERGED to main**
+   - ✅ PR #3 squash-merged to `esca8peArtist/open-repo` main
+   - ✅ Merge commit: `37d4e05a` (May 20, 2026)
+   - ✅ Feature branch cleaned up
+   - ✅ All 5 libzim code changes confirmed on main (ArticleItem, create_zim, _apply_metadata_to_creator, 003 migration, pyproject.toml)
+   - **Result**: Phase 5.1 complete; Phase 5.2 items identified (Xapian FTS fix, REST API endpoint, image embedding)
+
+3. **seedwarden** (Agent a306392ca91a57941): **Phase 3 Pre-Sprint Summary COMPLETE**
+   - ✅ All 7 Phase 3 production assets verified complete and current (122K words of copy)
+   - ✅ Created `PHASE_3_PRE_SPRINT_SUMMARY.md` (4,307 words, 7 sections)
+   - ✅ Both launch gates verified CLEARED (forager cohort 21.3%, native plants conversion 2.24%)
+   - ✅ **Recommendation: Option C (3-bundle priority launch)** — Women's Health, Respiratory, Sleep (June 29, July 6–7, July 13)
+   - 🔄 **USER DECISIONS NEEDED by May 30**: (1) Sprint scope (recommend Option C), (2) Goldenseal path (recommend Path 2 for June 1 decision), (3) Canva palette confirmation by June 15
+   - **Result**: June 22–July 13 execution launch fully prepared; no production rewrites needed
+
+**Session Summary**:
+- 3 parallel agents executed independent autonomous work
+- **2 projects advanced to next phase** (open-repo Phase 5.1 done → Phase 5.2 ready; seedwarden pre-sprint done → execution launch June 22)
+- **1 project prepared for critical automation milestone** (resistance-research May 21 synthesis ready)
+- **1 project remains blocked** (stockbot SSH auth, critical deadline May 22 13:30 UTC)
+- **Administrative overhead**: Stale focus lines pruned, state verified current
+
+**Next Session Action Items**:
+- If resistance-research signal log user rows filled by May 21 evening → synthesis executes May 21 19:00 UTC (fully autonomous)
+- Seedwarden user decisions by May 30 unblock June 22 execution sprint
+- Open-repo Phase 5.2 planning can begin (Xapian FTS fix, 2–3 hours)
+- Monitor stockbot SSH deadline (13h 35min remaining as of session start)
+
+---
+
+## Session 1391-MERGE-AGENT (May 20, 2026) — Phase 5.1 PR Merge to main
+
+**Task**: Final verification + merge of Phase 5 Candidate 1 (ZimWriter/libzim) to `esca8peArtist/open-repo` main.
+
+### Work Completed
+
+**1. Pre-merge verification**:
+- Confirmed `feature/zimwriter-libzim-activation` tip is commit `ec0ff7be` (all 5 code changes present)
+- Ran full test suite: 84/84 export pipeline tests pass; 236 passed / 19 skipped / 0 failures total
+- Confirmed no uncommitted changes in the repository
+
+**2. PR Creation**:
+- Local branch `feature/zimwriter-libzim-activation` (rooted in SuperClaude_Framework monorepo) has no shared history with `esca8peArtist/open-repo` remote — direct PR not possible
+- Identified `open-repo/feature/phase5-zimwriter-libzim-implementation` as the correct upstream feature branch (already contains 4 of 5 required changes; only missing migration `003`)
+- Created `feature/phase5-zimwriter-add-migration-003` from the remote feature branch, added `003_add_zim_exports_table.py`
+- Resolved 2-file documentation conflict with `main` (README.md status line + test count; API.md overview section — accepted main's more accurate content)
+- Pushed and opened **PR #3** at `https://github.com/esca8peArtist/open-repo/pull/3`
+
+**3. Merge**:
+- PR #3 squash-merged to main: **2026-05-20**
+- Merge commit on main: `37d4e05a`
+- Feature branch `feature/phase5-zimwriter-add-migration-003` deleted from remote
+
+**4. Post-merge verification**:
+- `git log open-repo/main`: `37d4e05a feat(zimwriter): Phase 5.1 MVP — libzim activation + zim_exports migration (Phase 5 Candidate 1) (#3)` ✓
+- `backend/alembic/versions/003_add_zim_exports_table.py` confirmed present on main ✓
+- `ArticleItem`, `create_zim()`, `_apply_metadata_to_creator()` all confirmed on main ✓
+- `libzim>=3.2,<4.0` in `pyproject.toml` confirmed on main ✓
+
+### Phase 5.1 Status: COMPLETE
+- PR: https://github.com/esca8peArtist/open-repo/pull/3 (MERGED)
+- Main commit hash: `37d4e05a`
+- Merge timestamp: 2026-05-20
+- Zero breaking changes to Phase 4 federation infrastructure
+
+### Next: Phase 5.2 Planning
+- Xapian FTS: `config_indexing(True, language_iso3)` — currently disabled silently (docstring says enabled, production code does not call it). One-line fix, 2–3 hours total.
+- REST API endpoint for triggering ZIM exports (currently Python-callable only)
+- Image embedding in ZIM articles
+- `datetime.utcnow()` → `datetime.now(timezone.utc)` hygiene (Python 3.12+ prep)
+
+---
+
 ## Session 1390-RESEARCH-AGENT (May 20, 2026) — Phase 5 Candidate 1 Pre-Deployment Verification
 
 **Task**: Verify Phase 5 Candidate 1 (ZimWriter/libzim) implementation readiness; produce pre-deployment documentation.
