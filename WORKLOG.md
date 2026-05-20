@@ -1,5 +1,29 @@
 # Work Log
 
+## Session 1437 (May 20) — Systems Resilience Veterinary Care Research (Queue Item 952)
+
+**Session Type**: Deep research — General Research Agent
+
+**Trigger**: Queue Item 952 — Phase 5 Wave 2 Tier 2 Veterinary Care Guide pre-research (8–10 hour research phase). Existing pre-research file (`phase-5-veterinary-care-research.md`) was already complete; this session deepened and extended it with new angles.
+
+**Scope**: Four focus areas: (1) rural veterinary shortage crisis with state-by-state data, (2) livestock care without vets — diagnostic protocols and decision trees, (3) companion animal care constraints, (4) international farm veterinary models.
+
+**Files Created**:
+- `projects/systems-resilience/SYSTEMS_RESILIENCE_VETERINARY_CARE_RESEARCH.md` — 3,500+ word research intelligence document, 80 curated sources, 8 major sections
+
+**Key Findings**:
+- Farm Journal Foundation county analysis (700+ counties with shortages) vs. 245 USDA-designated areas: formal designation undercounts actual gap by ~3x due to nomination bottleneck.
+- Iowa-specific: NIFA shortage region IA257 — 60 food animal vets serving 786K+ cattle and 4.29M swine across 9 counties; 4 counties at >1:100,000 vet-to-livestock ratio.
+- WOAH launched comprehensive CAHW competency and curriculum guidelines in April 2024 — 11 modules, 23 core competencies, 40 learning units per module. First globally standardized CAHW framework.
+- Ohio enacted veterinary telehealth law September 30, 2025 — critical Zone 5-adjacent finding: livestock require in-person VCPR before telehealth; companion animals can establish VCPR remotely.
+- Nebraska $150,000 rural veterinary grant program (announced April 2025) is the most generous U.S. rural incentive program found in the research base.
+- Missouri VHC small ruminant emergency triage list provides the clearest lay-accessible threshold list: 8 specific emergency signs warranting immediate professional care.
+- Chicken 90-second rapid assessment protocol (Virginia Tech/Backyard Chickens Hub) achieves 91% diagnostic accuracy vs. 63% with ad hoc approach.
+
+**Status**: Research complete. Ready for full guide production (Phase 5 Wave 2b).
+
+---
+
 ## Session 1436 (May 20) — Open-Repo Phase 5 Candidate 1 Pre-Deployment Verification (Queue Item 997)
 
 **Session Type**: Targeted verification — General Research Agent
