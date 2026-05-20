@@ -30,13 +30,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 <!-- AUTO:CALIBRATION:START -->
 <!-- AUTO:CALIBRATION:END -->
 
-### open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker)
-**Date blocked**: 2026-05-20 11:40 UTC
-**Context**: Phase 5.1 MVP (ZimWriter libzim activation) is production-ready on feature branch `feature/zimwriter-libzim-activation`. Master branch has 2 new commits since feature branch was last updated (commit 198a146d with critical production-risk defect fixes). Feature branch must be rebased to master before merge. Attempted rebase encountered merge conflict in `projects/open-repo/backend/app/services/export/zim_writer.py` at commit `ec0ff7be` (feat: Phase 5 Candidate 1 libzim integration).
-**What I need**: Resolve merge conflict in `zim_writer.py` — decide which code changes from master + feature branch should be kept. Conflict appears to be in the core ZimWriter implementation; careful review needed to ensure both master's production fixes and feature branch's libzim integration are correctly merged.
-**Verify with**: `git rebase master feature/zimwriter-libzim-activation` — if successful (no conflicts), rebase completes and feature branch is ready for merge
-**Resolution**: [leave blank]
-
 ---MOVED TO RESOLVED ARCHIVE---
 
 ---
@@ -104,6 +97,19 @@ curl http://localhost:8000/api/health
 ---
 
 ## Resolved Archive
+
+### open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker)
+**Date blocked**: 2026-05-20 11:40 UTC
+**Date resolved**: 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
+**Context**: Phase 5.1 MVP (ZimWriter libzim activation) was production-ready on feature branch `feature/zimwriter-libzim-activation`. Master branch had 2 new commits since feature branch was last updated (commit 198a146d with critical production-risk defect fixes). Feature branch needed rebase to master before merge. Rebase encountered 3 merge conflicts: zim_writer.py + two documentation files.
+**Resolution**: ✅ **RESOLVED** — All three merge conflicts resolved:
+1. **zim_writer.py** (commit ec0ff7be): Merged try-except error handling from HEAD with explicit fallback illustration logic from feature branch. Result: safer implementation with better fallback handling.
+2. **phase-5-candidate-1-implementation-checklist.md**: Kept post-implementation version (c2b6dcb7) showing actual execution steps.
+3. **phase-5-candidate-1-implementation-verification.md**: Kept post-implementation version reflecting completed implementation.
+4. **Rebase completed successfully**: Feature branch `feature/zimwriter-libzim-activation` is now 3 commits ahead of master and ready for merge.
+5. **Verification**: `git rebase master feature/zimwriter-libzim-activation` completed with no conflicts. Feature branch ready for user merge review.
+
+---
 
 ### Usage limits — weekly calibration reminder
 **Date blocked**: 2026-05-19 (auto-added each Tuesday by reset-usage-budget.sh)
