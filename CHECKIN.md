@@ -1,42 +1,54 @@
-## Since Last Check-in (Session 1414-ORCHESTRATOR, May 20 12:18–13:20 UTC) — Exploration Queue Seeding + Item Execution ✅
+## Since Last Check-in (Session 1415-ORCHESTRATOR, May 20 13:45–14:15 UTC) — Critical Event Pre-Staging: Items 101-102 Complete ✅
 
-**Session Status**: ✅ **EXPLORATION QUEUE ITEMS 98 & 99 COMPLETE** | ✅ **3 NEW QUEUE ITEMS SEEDED** | 🟢 **MAY 21 SYNTHESIS EXECUTION READY (AUTONOMOUS)** | 🟡 **3 USER-ACTION BLOCKS REMAIN**
+**Session Status**: ✅ **ITEMS 101-102 COMPLETE (HIGH PRIORITY)** | 🟢 **MAY 21 SYNTHESIS EXECUTION PRE-STAGED** | 🟢 **MAY 22 CHECKPOINT DECISION FRAMEWORK READY** | 🟡 **3 USER-ACTION BLOCKS REMAIN** | ⚠️ **CRITICAL DEADLINE: MAY 22 13:30 UTC**
 
-### What Was Done (Session 1414)
+### What Was Done (Session 1415)
 
-**Exploration Queue Management** ✅
-- **Seeded 3 new items**: Items 100, 101, 102 (total queue now 5 pending items, balanced for next sessions)
-  - Item 100: Seedwarden Track B May 30 Launch Execution Pre-Staging (2.5K scope)
-  - Item 101: Resistance-Research May 21 Synthesis Enhanced Contingency Playbooks (3K scope)
-  - Item 102: Stockbot Lever A vs B Comparison Analysis (2.5K scope)
-- **Rationale**: Per protocol, queue had 2 pending items; if <3 items, seed 2-3 before proceeding
+**Parallel Exploration Queue Execution — 2 HIGH-PRIORITY Items Complete** ✅
 
-**Parallel Exploration Queue Execution — 2 Agents, Both Complete** ✅
+**Item 101: Resistance-Research Synthesis Contingency Execution Playbooks** (COMPLETE)
+- **Deliverable**: `projects/resistance-research/SYNTHESIS_CONTINGENCY_EXECUTION_PLAYBOOKS.md` (comprehensive playbook set)
+- **Key Deliverables**:
+  - 4 outcome playbooks: STRONG, MODERATE, WEAK, TOO_EARLY with detailed first-week action lists per outcome
+  - Domain sequencing matrices showing which Phase 2 domains proceed under each scenario
+  - Four-outcome summary matrix (one table covering every key dimension across all outcomes)
+  - Path-independent non-negotiables checklist (6 items true on all paths)
+  - Upgrade/downgrade trigger table for mid-stream reclassification
+  - Consolidated May 21–June 1 timeline table (single-page operations view for any outcome)
+- **Key Insights**:
+  - STRONG outcome: 4 domains proceed concurrently (56/58 June 1, 57 June 10, 59 June 15); 45h work fits 72–112h window with buffer
+  - MODERATE outcome: Focus on institutional gap framing for Batch 2 outreach (different messaging than STRONG)
+  - WEAK outcome: Domains 56+58 only; Domain 37 expansion as standalone supplement track
+  - TOO_EARLY outcome: Clear autonomous work inventory for May 22-28 (not idle holding)
+  - Root cause diagnosis step formalized; CHECKIN.md flag arrives with recommendation, not just outcome
+- **Impact**: May 21 19:00 UTC synthesis delivers binary outcome; having 4 pre-staged playbooks means "read outcome, select playbook, execute" with zero deliberation. Eliminates May 21 evening decision paralysis.
+- **Ready for**: May 21 19:30 UTC (30 min post-synthesis) immediate playbook selection and first actions
 
-**Item 98: Stockbot Hardware Upgrade Roadmap** (COMPLETE)
-- **Deliverable**: `projects/stockbot/HARDWARE_UPGRADE_ROADMAP_MAY_22_DECISION.md` (763 lines, 5,738 words)
-- **Key Findings**:
-  - **Production Jetson (100.120.18.84)**: 48.2°C idle, thermally HEALTHY with 31.8°C headroom to throttle onset
-  - **Dev machine (local RPi5)**: 81–87.8°C thermal issue — this is the constraint limiting training work, NOT production trading
-  - **Thermal remediation** — Option A recommended: heatsink + 30mm fan ($15–20, 2h install), reduces idle to 35–42°C
-  - **Disk/memory capacity**: 130GB free scales to 50+ sessions for 10+ months; memory ceiling at 20+ sessions (container at 73% of 4GB limit; fix is config-only)
-  - **Multi-ticker scaling**: Pre-cooling 10–12 tickers; post-cooling 20+ tickers; full 40-ticker live trading fits in 80-min pre-market window with active cooling
-  - **Hardware timeline**: Order fan May 20-21 ($15), install May 25-26 (2h), verify thermal May 27-31, memory upgrade if needed June 8-15
-  - **Decision tree**: Maps all May 22 checkpoint outcomes (PASS/FAR_MISS/FAIL variants) to specific hardware actions
-- **Impact**: Removes thermal/disk uncertainty from May 22–June 15 multi-ticker scaling decisions
-- **Ready for**: May 22 afternoon checkpoint decision (hardware roadmap informs Gate 2 expansion feasibility)
+**Item 102: Stockbot Lever B Comparison Analysis & Decision Framework** (COMPLETE)
+- **Deliverable**: `projects/stockbot/LEVER_B_COMPARISON_FRAMEWORK_MAY_22.md` (5,606 words, committed to stockbot submodule)
+- **Key Deliverables**:
+  - **Section 1**: Lever A baseline (May 19 checkpoint: 34 fills, 3 round trips, $5 PnL, $115,134 equity, ~0.7 Sharpe estimated)
+  - **Section 2**: Metric comparison framework (Sharpe, MDD, win rate, signal timing) with meaningful improvement thresholds
+  - **Section 3**: Gate 2 decision thresholds:
+    - PASS: Sharpe +0.2, MDD -10%, win rate +5pp → enables AMZN+JPM by June 1
+    - Conditional: Sharpe flat/+0.1, MDD -5% to -10% → scale slowly, AMZN only
+    - FAIL: Sharpe decline, MDD >5% increase → revert to Lever A + investigate
+  - **Section 4**: Pre-classification check for SSH blocker (config never activated → REPEAT_STILL_MISS_B2, not strategy FAIL)
+  - **Section 5**: Three conditional roadmaps with specific tickers and timelines per outcome
+  - **Section 6**: Hardware integration (thermal/disk caps, fan install May 25-26, memory upgrade timeline)
+  - **Section 7**: Quick-reference decision tree (readable in <2 minutes)
+- **Key Insights**:
+  - Lever B must reach Sharpe ≥1.0 (not just baseline +0.2) to demonstrate alpha vs. complexity
+  - SSH blocker handling prevents misclassifying unactivated Lever B as strategy failure
+  - Hardware constraints are load-bearing on multi-ticker scaling decision (thermal: 10-12 pre-cooling, 20+ post)
+- **Impact**: May 22 20:00 UTC checkpoint delivers numerical result; having clear thresholds pre-staged means immediate outcome classification and roadmap execution without analysis overhead.
+- **Ready for**: May 22 20:30 UTC (30 min post-checkpoint) result interpretation and first action confirmation
 
-**Item 99: Open-Repo Phase 6 Architecture Visioning** (COMPLETE)
-- **Deliverable**: `projects/open-repo/PHASE_6_ARCHITECTURE_OPTIONS.md` (~3,800 words)
-- **Key Findings**:
-  - **Phase 5 forward-compatibility**: ZimWriter (offline) doesn't preclude SaaS deployment; complementary. Minor forward-compat changes: <2h work (add library_id namespace, use CANONICAL_BASE_URL, namespace CDN paths)
-  - **Phase 6 recommendation**: Option B (SaaS Hosting) first, then Option A (Federated Search) at 12 months. SaaS is prerequisite infrastructure for federation.
-  - **Real market data**: LYRASIS (1,100+ libraries), ByWater/Koha (1,425), Kiwix (10M+ ZIM downloads Feb-Mar 2024), Mellon grants ($25–250K range for community archives)
-  - **Hybrid sustainability**: Free self-hosted + SaaS tiers ($490–custom/yr) + nonprofit membership ($3–10K/yr) + freemium API
-  - **Revenue projection**: Year 1: $100K ARR (SaaS), Year 2: $500K, Year 3: $250–500K from federation membership
-  - **12-month roadmap**: May–Jun Phase 5, Jul–Oct Phase 6 MVP, Oct–Dec private beta, Jan–Mar 2027 public launch
-- **Impact**: Informs Phase 5 architecture choices (ensure forward-compatibility), enables user Phase 6 decision June–July
-- **Ready for**: Phase 5 architecture finalization (May 25–26 user review)
+**Session Impact**: 
+- **Removed decision paralysis vectors**: Both May 21 synthesis and May 22 checkpoint now have pre-staged decision frameworks
+- **Reduced May 21-22 evening overhead**: Instead of 1-2 hours analysis on each event, decision is "read outcome, select playbook, execute"
+- **Parallel execution**: Both agents ran concurrently; total session elapsed 13 minutes (agents: 375s + 448s parallel)
+- **Production-ready**: Both deliverables committed and immediately actionable
 
 ### Block Status (Unchanged)
 
@@ -67,37 +79,60 @@ All 3 active blocks remain — require user action:
 
 - ✅ **COMPLETE**: Item 98 — Stockbot Hardware Upgrade Roadmap (5,738 words)
 - ✅ **COMPLETE**: Item 99 — Open-Repo Phase 6 Architecture (3,800 words)
-- **PENDING** (3 items, balanced queue):
-  - Item 100: Seedwarden Track B May 30 Launch Execution Pre-Staging
-  - Item 101: Resistance-Research May 21 Synthesis Enhanced Contingency Playbooks
-  - Item 102: Stockbot Lever A vs B Comparison Analysis
+- ✅ **COMPLETE**: Item 100 — Seedwarden Track B Execution Pre-Staging (2,500+ words)
+- ✅ **COMPLETE**: Item 101 — Resistance-Research Synthesis Contingency Playbooks (comprehensive playbook set)
+- ✅ **COMPLETE**: Item 102 — Stockbot Lever B Comparison Framework (5,606 words)
+- **Queue Status**: 5 of 5 seeded items now complete; next session may need to seed Items 103+
 
-### Session 1414 Completion Summary
+### Session 1415 Completion Summary
 
-**Exploration Queue Execution**: 3 of 5 pending items completed
-- ✅ Item 98: Stockbot Hardware Upgrade Roadmap (5,738 words) — thermal analysis, capacity projections, decision tree
-- ✅ Item 99: Open-Repo Phase 6 Architecture (3,800 words) — three Phase 6 options, sustainability model, real market data
-- ✅ Item 100: Seedwarden Track B Execution Staging (2,500+ words) — asset inventory, gap analysis, risk register, checkpoint calendar
-- 🔄 Item 101: Resistance-Research Contingency Playbooks (spawned, socket error, reattempt next session)
-- 🔄 Item 102: Stockbot Lever A vs B Comparison (pending, next session)
+**Exploration Queue Execution**: 2 HIGH-PRIORITY items completed this session
+- ✅ Item 101: Resistance-Research Synthesis Contingency Playbooks — 4 outcome playbooks with decision trees, timelines, first-week actions
+- ✅ Item 102: Stockbot Lever B Comparison Framework — baseline metrics, decision thresholds, conditional roadmaps, hardware integration
 
-**Queue seeding**: 3 new items added (Items 100, 101, 102), queue now balanced at 5 pending items
+**Prior Session Items (1414) Status**:
+- ✅ Item 98: Stockbot Hardware Upgrade Roadmap (complete Session 1414)
+- ✅ Item 99: Open-Repo Phase 6 Architecture (complete Session 1414)
+- ✅ Item 100: Seedwarden Track B Execution Pre-Staging (complete Session 1414)
 
-**Total work this session**: ~1.5–2 hours, 3 exploration items + seeding + commits
+**Total work this session**: ~30 minutes
+- Orientation & assessment: 5 min
+- Item 101 agent: 6.3 min (parallel)
+- Item 102 agent: 7.5 min (parallel)
+- This summary: 5 min
+- Total: ~30 min (agents ran concurrently)
 
-**Blocks**: 3 active blocks remain (all user-action dependent; stockbot SSH auth critical deadline May 22 13:30 UTC)
+**Blocks**: 3 active blocks remain (all user-action dependent; stockbot SSH auth **CRITICAL DEADLINE MAY 22 13:30 UTC**)
 
-### Recommendations for Next Session
+### Recommendations for Next Session (Session 1416)
 
-**May 20 (TODAY) ~22:00 UTC — USER ACTIONS REQUIRED**:
-1. Fill signal log in `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` (May 20 Day 2 Snapshot)
-2. Check SCOTUSblog for Trump v. Barbara ruling status (affects Domain 58 rapid-response)
+**CRITICAL DEADLINE — May 22 13:30 UTC (29 hours remaining)**:
+- **Action required**: Either (A) Add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and execute Lever B config fix
+- **Impact**: Lever B config determines May 22 20:00 UTC checkpoint outcome (if not activated, restarts with Lever A config)
+- **Context**: SSH auth failure prevents orchestrator from applying fix automatically; manual intervention required
+- **Success path**: Fix applied by May 22 13:00 UTC → Lever B active → checkpoint at 20:00 UTC uses HMM regime masking → decision framework (Item 102) applies directly
 
-**May 21 AUTONOMOUS EXECUTION**:
-3. 19:00 UTC: Orchestrator autonomous synthesis execution (fully autonomous, <30 min) — will use enhanced contingency playbooks if Item 101 completes before May 21
+**May 21 SCHEDULED AUTONOMOUS WORK** (fully pre-staged):
+1. **19:00 UTC**: Resistance-research synthesis execution (fully autonomous, <30 min)
+   - 4 outcome playbooks (Item 101) staged for immediate post-synthesis decision
+   - Expected outcomes: STRONG/MODERATE/WEAK/TOO_EARLY; playbooks pre-matched
+   - No user input needed; outcomes auto-route to appropriate contingency path
 
-**May 22 CRITICAL DEADLINE**:
-4. Before 13:30 UTC: Resolve stockbot SSH auth OR manually execute Lever B config fix (see BLOCKED.md)
+2. **User actions (low-priority, May 20-21)**:
+   - May 20 ~22:00 UTC: Fill May 20 Day 2 signal log snapshot (5 min)
+   - May 21 before 19:00 UTC: Check SCOTUSblog for Trump v. Barbara ruling (affects Domain 58 rapid-response, 5 min)
+   - These are optional enhancements; synthesis proceeds regardless
+
+**May 22 SCHEDULED AUTONOMOUS WORK** (decision framework pre-staged):
+3. **20:00 UTC**: Stockbot checkpoint execution
+   - Lever B comparison framework (Item 102) staged for immediate result interpretation
+   - Framework handles all outcomes: PASS/Conditional/FAIL with conditional roadmaps
+   - Hardware integration included (thermal/disk constraints)
+   - Expected outcomes: Sharpe/MDD/win rate metrics → decision thresholds → immediate roadmap execution
+
+**May 30 TARGET**: Seedwarden Track B launch (Item 100 execution pre-staging complete)
+
+**Next Autonomous Queue Items**: If sessions complete May 21-22 early, items 103+ can be seeded/executed
 5. After 20:00 UTC: Use Item 98 hardware roadmap + Item 102 (Lever A vs B) for Gate 2 decision
 
 **May 30 & BEYOND**:
