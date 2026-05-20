@@ -1,3 +1,81 @@
+## Since Last Check-in (Session 1376-ORCHESTRATOR, May 20 01:00–01:35 UTC)
+
+**Session Status**: ✅ **COMPLETE — EXPLORATION QUEUE ITEMS 73 + 75 DELIVERED; MAY 21-22 SYNTHESIS + CHECKPOINT DECISION FRAMEWORKS STAGED**
+
+### What Was Accomplished
+
+**Resistance-research: Exploration Queue Items 73 + 75** — ✅ **100% COMPLETE**
+
+**Item 73: Post-Wave-1 Signal Analysis Framework** (1 hr 15 min)
+- Created `/projects/resistance-research/post-wave-1-monitoring/POST_WAVE_1_SIGNAL_ANALYSIS_FRAMEWORK.md` (456 lines, 6 sections, production-ready)
+  - Section 1: Response classification schema (Scores 0–5, quality point weighting, Gist analytics, delivery confirmation)
+  - Section 2: Sector-specific baselines (law schools 5–10 days, policy orgs 1–3 days, Elias 48–72h with expected response rates)
+  - Section 3: Quantitative STRONG/MODERATE/WEAK/TOO_EARLY thresholds with decision matrix
+  - Section 4: Contingency monitoring (5 signal-stall scenarios + fallback actions)
+  - Section 5: May 21 decision protocol (5 min assembly + 10 min formula + 5 min assessment + presentation)
+  - Section 6: Quick reference (decision tree + 3-minute classification checklist)
+- **Impact**: May 21 synthesis now objective. Instead of subjective "what counts as a signal?", uses quantitative formulas. Classification becomes mechanical.
+- Verified against 4 baseline scenarios (zero replies, policy Score 3, policy Score 4, Gist delta 15). All produce deterministic outputs ✓
+- Committed: commit e4c29a76
+
+**Item 75: WEAK Outcome Contingency Plan** (1 hr 20 min)
+- Created `/projects/resistance-research/post-wave-1-monitoring/WEAK_OUTCOME_CONTINGENCY_PLAN.md` (400+ lines, 8 sections, production-ready)
+  - Section 2: Diagnosis framework (5 problem categories × 4–5 indicators each)
+    - Timing problems: Friday send → Monday reads, OOO patterns, Gist acceleration
+    - Messaging problems: Score 1-only, no substantive engagement, email copy issues
+    - Stakeholder problems: Batch 1 too narrow, network gaps, Tier 2 adjacency
+    - Substance problems: Feedback indicating gaps, domain mismatches, timing misalignments
+    - Infrastructure problems: Spam, sender reputation, delivery failures
+  - Section 3: Five corrective action options (A: proceed normally, B: relaunch reserve list, C: emergency messaging, D: pause/diagnose, E: shift to policy asks)
+  - Section 4: Decision tree (diagnosis → recommended action)
+  - Section 5: Decision matrix (trigger → option)
+  - Section 6: Phase 2 timeline implications per corrective path
+- **Impact**: May 21 WEAK outcome (if triggered) has 5 active remedies + diagnosis framework. No "default extended timeline" confusion. User selects remedy based on root cause.
+- Verified against 5 problem scenarios (timing, messaging, stakeholder, substance, infrastructure). Each routes to distinct corrective path ✓
+- Committed: commit d6fafb3e
+
+**Exploration Queue Status**:
+- ✅ Item 73: COMPLETE → POST_WAVE_1_SIGNAL_ANALYSIS_FRAMEWORK.md (May 21 synthesis ready)
+- ✅ Item 75: COMPLETE → WEAK_OUTCOME_CONTINGENCY_PLAN.md (May 21 contingency ready)
+- Item 74: Already complete from Session 1360 (POST_CHECKPOINT_DECISION_ARCHITECTURE.md for May 22 checkpoint)
+
+### Preparation for May 21 Synthesis (Tomorrow, 19:00–20:00 UTC)
+
+**Infrastructure Ready**:
+- Wave 1 signal log structure verified ✓
+- Wave 1 synthesis framework skeleton verified ✓
+- Item 73 framework integrated with skeleton ✓
+- Sector baselines operationalized ✓
+- Decision matrix tested ✓
+
+**Execution Path Confirmed**:
+1. May 20 evening: User fills wave-1-signal-log-may18-21.md with response data through May 21 10:30 UTC
+2. May 21 19:00 UTC: Orchestrator reads log + applies Item 73 formula → determines STRONG/MODERATE/WEAK/TOO_EARLY
+3. May 21 20:00 UTC: CHECKIN.md briefing with outcome + recommended Phase 2 path
+4. May 21 evening: User confirms path (STRONG/MODERATE/TOO_EARLY) or selects corrective action (if WEAK)
+5. May 22: Phase 2 activation proceeds per outcome OR corrective action begins per WEAK diagnosis
+
+### Preparation for May 22 Checkpoint (Tomorrow, 20:00 UTC)
+
+**Decision Framework Ready** (POST_CHECKPOINT_DECISION_ARCHITECTURE.md):
+- ✅ PASS A / PASS B / PASS C / FAIL / FAIL_INFRASTRUCTURE paths documented
+- ✅ Sharpe/MDD thresholds defined
+- ✅ Multi-ticker expansion gates specified
+- ✅ Hardware upgrade readiness assessed
+- Ready for May 22 20:00 UTC checkpoint execution
+
+### Critical Blocks — Status Update
+
+🔴 **URGENT: Stockbot SSH Auth + Lever B Config** — May 22 13:30 UTC deadline (~61 hours from session start)
+- **Status**: Unresolved since Session 1324 (May 19 19:55 UTC)
+- **Root cause**: Orchestrator ED25519 public key NOT in Jetson authorized_keys
+- **Public key available**: `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPO0YPqQl2woxThwe/aS7+Z8UUA4PpVE/i69g2kEdJwV pi-stockbot`
+- **User action required** (by May 22 13:30 UTC): Either (A) add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run 5-minute Lever B config fix (documented in BLOCKED.md)
+- **Impact**: May 22 checkpoint will execute but without Lever B config fix, runs Lever A baseline (same as failed May 19), defeating purpose of Lever B testing.
+- **Escalation**: This is TODAY's priority (May 20). If not resolved by May 21 17:00 UTC, escalate to Discord.
+
+---
+
 ## Since Last Check-in (Session 1375-ORCHESTRATOR, May 20 00:07–present UTC)
 
 **Session Status**: ✅ **COMPLETE — SEEDWARDEN PHASE 3 PRODUCTION LAUNCH PREPARATION DELIVERED; CRITICAL PATH VISIBLE**
