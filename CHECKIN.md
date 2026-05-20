@@ -1,3 +1,48 @@
+## Since Last Check-in (Session 1406-ORCHESTRATOR, May 20 10:22–11:05 UTC) — Parallel Queue Execution: Phase 2 FULLY WRITTEN Discovery + Phase 3 Timeline Verification + Critical Path Confirmed
+
+**Session Status**: ✅ **PHASE 2 DOMAINS 56-59 ARE ALL FULLY WRITTEN** (35,300 words, 237 sources) | ✅ **PHASE 3 TIMELINE FULLY ACHIEVABLE** (June 22-July 13) | 🟢 **ONLY 24-39 HOURS DISTRIBUTION PREP REMAINING** (not 120-130 hours production) | 📊 **USAGE NOMINAL** (1.8%, parallel agent execution)
+
+### What Was Done (Session 1406)
+
+**Parallel Exploration Queue Execution** — 3 agents spawned simultaneously:
+
+1. **Resistance-Research: Phase 2 Research Activation Checklist** ✅ COMPLETE
+   - **CRITICAL DISCOVERY**: All four Phase 2 domains (56-59) are **fully written** (~35,300 words total, 237 cited sources)
+   - Previous timeline expected 120-130 hours production work June-August
+   - **Actual remaining work**: 24-39 hours distribution preparation only
+   - HHS OBBBA rule (June 1 deadline) will NOT impact Domain 59 — core argument unaffected
+   - Trump v. Barbara ruling will NOT block Domain 58 — distribution June 15 is post-ruling
+   - **Deliverables**: `phase-2-research-activation-checklist.md` + `phase-2-research-timeline-template.md` + `phase-2-research-kick-off-email-template.txt`
+   - **Impact**: Phase 2 is production-complete and distribution-ready; synthesis May 21 can proceed with full confidence
+
+2. **Seedwarden: Phase 3 Medicinal Herbs Production Timeline** ✅ COMPLETE
+   - Critical path analysis confirms June 22-July 13 execution window is fully achievable
+   - Writing is binding constraint (56-66h for 5 bundles); photography/design have 4-14 day float
+   - Both launch gates are cleared: forager cohort 21.3% (>20% ✓), native plants 2.24% (>1.5% ✓)
+   - Pace self-test at June 24 EOD is in-sprint decision point for scope reduction if needed
+   - All supplier confirmation deadlines documented with alternates
+   - **Deliverables**: `phase-3-medicinal-herbs-gantt-timeline.csv` + `phase-3-supplier-confirmation-tracker.md`
+   - **Impact**: User can confidently green-light June 22 Phase 3 launch at May 30 decision gate
+
+3. **Open-Repo: Phase 5 Candidate 1 ZimWriter Verification** ⚠️ STALE (no action taken)
+   - Phase 5.1 ZimWriter implementation is already complete and merged (commit 198a146d, Session 1404)
+   - The exploration queue task was written assuming implementation hadn't been done — it's outdated
+   - No pre-deployment prep work needed
+
+### Summary of Project Status Changes
+
+- **Resistance-Research**: Phase 2 is PRODUCTION-COMPLETE (all writing done); only distribution prep remains
+- **Seedwarden**: Phase 3 is TIMELINE-VERIFIED (June 22-July 13 fully feasible with documented critical path)
+- **Open-Repo**: Phase 5.1 is already implemented and merged (no additional work needed)
+
+### Updated PROJECTS.md Focus Lines
+
+Both resistance-research and seedwarden Current focus lines have been updated to reflect Session 1406 findings:
+- resistance-research: Added "CRITICAL DISCOVERY" marker + revised timeline (24-39h not 120-130h)
+- seedwarden: Added critical path analysis verification + Gantt timeline + supplier tracker references
+
+---
+
 ## Since Last Check-in (Session 1405-ORCHESTRATOR, May 20 09:43–10:00 UTC) — Status Verification + Critical Deadline Alert + Synthesis Readiness Confirmation
 
 **Session Status**: ✅ **ALL PROJECTS REVIEWED** | 🔴 **CRITICAL DEADLINE: Stockbot SSH Auth May 22 13:30 UTC (~36 hours)** | ✅ **RESISTANCE-RESEARCH SYNTHESIS READY MAY 21 19:00 UTC** | 📊 **USAGE NOMINAL** (0.3%, minimal)

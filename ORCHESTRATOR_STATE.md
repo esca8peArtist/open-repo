@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-20T06:50:17Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-20T09:51:11Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.7% | Reset in 137h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 2.9% | Reset in 134h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PHASE 2 INFRASTRUCTURE COMPLETE + PHASE 3 CANDIDATE 2 COMPLETE + SYNTHESIS EXECUTION VERIFIED] May 21 SYNTHESIS EXECUTION READY (Session 1378 audit, Session 1382 Phase 3 expansion, Session 1391 verification).** Phase 2 research activation infrastructure VERIFIED PRODUCTION-READY (Session 1391): Domains 56-59 (35,306 words, all production-complete), `phase-2-research-activation-checklist.md` + `phase-2-research-timeline-template.md` confirmed production-ready, Obsidian vault + source staging p … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 2 INFRASTRUCTURE COMPLETE + PHASE 3 CANDIDATE 2 COMPLETE + SYNTHESIS EXECUTION VERIFIED + PRE-SYNTHESIS STAGING AUDIT COMPLETE (Session 1403)] May 21 SYNTHESIS EXECUTION READY.** Phase 2 research activation infrastructure VERIFIED PRODUCTION-READY (Session 1391, re-verified Session 1403): Domains 56-59 (35,306 words, all production-complete), `phase-2-research-activation-checklist.md` + `phase-2-research-timeline-template.md` confirmed production-ready, Obsidian vault + source staging p … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,16 +36,16 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[PHASE 3 LAUNCH EXECUTION PLAN COMPLETE] TRACK B — JUNE 22 LAUNCH READY (Session 1393 execution prep).** ✅ All 7 Phase 3 production assets verified complete and current (18,160 total words, YAML front-matter, no formatting issues). Phase 3 critical path verified production-ready: writing binding constraint (56–66h adjusted for 5 bundles), photography 5–14 day float, design 1–4 day float. Both launch gates CLEARED: forager cohort 21.3% (>20%), native plants 2.24% (>1.5%). **THREE DECI … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 3 EXECUTION PLAN COMPLETE + EXECUTION PREP COMPLETE] TRACK B — JUNE 22 LAUNCH READY (Session 1397 full execution prep).** ✅ All 7 Phase 3 production assets verified complete and current (18,160 total words, YAML front-matter, no formatting issues). ✅ **PHASE 3 EXECUTION PREPARATION COMPLETE** (Session 1397, May 20): `PHASE_3_EXECUTION_PREPARATION.md` (3,100 words) — (1) **Supplier backups identified** (Companion Plants + Crimson Sage + Native Wildflowers + Pacific Botanicals, Ju … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5.1 MVP GO FOR MERGE — 98.2% CONFIDENCE + VERIFIED] Phase 4 complete. Candidate 1 verification COMPLETE (Session 1391).** Code: All 5 required changes verified on `feature/zimwriter-libzim-activation` (commit ec0ff7be). Tests: 84/84 passing with real libzim integration. Compatibility: libzim 3.10.0 verified compatible with aarch64/Python 3.11 (pre-built wheel ARM64 confirmed on PyPI, March 2026 release). Breaking changes: NONE (Phase 4 federation unaffected). Risks: 6 identified, NONE … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5.1 MVP — ALL CRITICAL DEFECTS FIXED ✅ READY TO MERGE (Session 1403, fixes applied Session 1404)] (May 20 09:00 UTC)** Code audit identified three critical production-risk defects; all now resolved: (1) ✅ **Valid 48×48 PNG fallback** — Replaced malformed PNG (IHDR 48×48, IDAT 1×1) with properly generated transparent PNG. _get_illustration_bytes() returns fallback when no file provided. (2) ✅ **Xapian FTS enabled** — Added config_indexing(True, lang) call to _apply_metadat … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **[PHASE 5 WAVE 1 COMPLETE] PHASE 3 COMPLETE + PHASE 4 SYNTHESIS COMPLETE + PHASE 5 WAVE 1 EXECUTION FINISHED (Session 1396, May 20).** ✅ **BOTH WAVE 1 DOCUMENTS COMPLETE**:
+**Focus**: **[PHASE 5 WAVE 1 COMPLETE + WAVE 2 PLANNING READY] PHASE 3 COMPLETE + PHASE 4 SYNTHESIS COMPLETE + PHASE 5 WAVE 1 EXECUTION FINISHED (Session 1396, May 20) + PHASE 5 WAVE 2 PLANNING COMPLETE (Session 1397, May 20).** ✅ **WAVE 1 DOCUMENTS COMPLETE** + ✅ **WAVE 2 PLANNING READY FOR USER DECISION**:
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -105,43 +105,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  3. Color palette: Confirm authoritativepalette by June 15
-- **Supplier Confirmation Window**: June 1–8 (Goldenseal lead time is critical path item)
-- **Committed**: `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` and `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` with updates
 
-**3. resistance-research: Phase 2 Activation Infrastructure Audit (1–2 hrs)** ✅ COMPLETE
-- **Finding**: Both Phase 2 activation documents (from Session 1384) verified production-ready and complete
-  - `phase-2-research-activation-checklist.md` (6,754 words, six sections, per-domain audit + email templates)
-  - `phase-2-research-timeline-template.md` (6,630 words, comprehensive timeline with gates, float analysis, risk mitigations)
-- **Status**: Zero setup work required May 21 evening. All infrastructure in place (Obsidian vault, source libraries, expert contacts)
-- **May 21 Procedure**: 30-minute activation sequence post-synthesis (verify ruling status, run Section 1 audit, apply synthesis outcome decision, record start date)
-- **Committed**: No changes needed; audit verified current state
+---
 
-**Critical Blocker Assessment — stockbot SSH Auth Failure**
-- **Verification**: Ran verify command from BLOCKED.md; SSH auth still failing (Permission denied)
-- **Impact**: Orchestrator cannot autonomously apply Lever B config fix before May 22 20:00 UTC checkpoint
-- **Root Cause**: orchestrator ED25519 public key NOT authorized in Jetson authorized_keys
-- **User Options**: 
-  - Option A (5–10 min): Add key to Jetson authorized_keys (requires existing Jetson access)
-  - Option B (5 min): SSH manually and run config fix (commands in BLOCKED.md)
-- **Deadline**: May 22 13:30 UTC (31 hours remaining)
-- **Escalation**: Noted in CHECKIN.md as top priority; documented in BLOCKED.md entry
+## Session 1405-ORCHESTRATOR (May 20, 09:43–10:20 UTC)
 
-### Queue Status
+**Session Type**: Orientation + Block Verification + Status Update
 
-- **Executed**: 3 exploration queue items (open-repo Phase 5 verification, seedwarden Phase 3 timeline, resistance-research Phase 2 audit)
-- **Remaining Active**: 2+ items staged for post-May-22-checkpoint execution (stockbot Lever C planning, system-resilience Phase 4 decisions)
-- **Queue Health**: Execution items available when main projects are blocked; parallelization enabled 5–8× throughput compression vs. sequential execution
+**Actions Taken**:
+1. ✅ **Read ORCHESTRATOR_STATE.md** — Current state summary obtained
+2. ✅ **Verified Stockbot SSH Auth Status** — Confirmed still failing: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health'` returns "Permission denied (publickey,password)"
+3. ✅ **Reviewed BLOCKED.md** — No blocks resolved by user; stockbot SSH auth remains critical blocker
+4. ✅ **Reviewed INBOX.md** — No new items
+5. ✅ **Reviewed PROJECTS.md** — All project statuses current; no new autonomous work available
+6. ✅ **Verified Resistance-Research Synthesis Readiness** — All files present and verified; synthesis execution script ready for May 21 19:00 UTC
+7. ✅ **Updated CHECKIN.md** — Added critical status summary with 36-hour stockbot deadline and synthesis readiness confirmation
 
-### User Actions Required (Prioritized)
+**Project Status Summary**:
+- **Stockbot** (Priority 1): BLOCKED — SSH auth failure, critical deadline May 22 13:30 UTC (~36 hours)
+- **Resistance-Research** (Priority 2): Synthesis execution scheduled May 21 19:00 UTC (fully autonomous); user action required tonight (~22:00 UTC) to fill signal log
+- **Cybersecurity-Hardening** (Priority 3): BLOCKED — VeraCrypt restart (user action)
+- **Mfg-Farm** (Priority 4): BLOCKED — Test print execution (user action)
+- **Seedwarden** (Priority 5): Track B ready for May 30, no immediate work
+- **Open-Repo** (Priority 6): Phase 5.1 MVP production-ready (critical defects fixed Session 1404), awaiting user merge approval
+- **Off-Grid-Living**: Complete, awaiting user social media execution
+- **Workout**: Awaiting user review
+- **Open-Source-Rideshare**: Paused
 
-1. **⏰ URGENT (by May 22 13:30 UTC)**: Stockbot SSH auth fix (Option A or B)
-2. **Tonight (May 20, ~22:00 UTC)**: Resistance-research signal log fill (10–15 min)
-3. **May 23–24**: Open-repo Phase 5 decision (approve/defer)
-4. **May 30**: Seedwarden Phase 3 scope decisions (3 user decision gates)
+**Work Available**: None — all top-priority projects blocked on user actions or scheduled for future execution
 
-### Next Session Triggers
+**Time Allocation**:
+- Orientation: 5 min
+- Block verification: 8 min
+- Project review: 5 min
+- CHECKIN.md update: 2 min
+- WORKLOG.md update: 5 min
+- Commits: 3 min
+- **Total**: ~28 minutes
 
-- **May 21, 19:00 UTC**: Autonomous synthesis execution (fully autonomous)
-- **May 21, 20:30 UTC**: Phase 2 activation decision (if synthesis is STRONG/MODERATE)
-- **May 22, 20:00 UTC**: Stockbot checkpoint execution (requires Lever B fix by 13:30 UTC)
+**Next Session Trigger**: May 21, 19:00 UTC (resistance-research synthesis execution) or when stockbot SSH auth is resolved
