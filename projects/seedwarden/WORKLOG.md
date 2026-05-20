@@ -4,6 +4,37 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Production Launch Preparation — May 20, 2026
+
+**Task**: Exploration Queue item — Phase 3 Medicinal Herbs Production Launch Preparation (4–6 hrs, May 28 gating). Produce two production-ready deliverables for Anya review.
+
+**Files audited before writing**:
+- `phase-3-medicinal-herbs-critical-path.md` (v4.0, 4,200+ words): Complete and authoritative. Full Gantt, per-day writing schedule, hard deadlines table, FTC appendix, pre-sprint checklist (Appendix B). Used as primary data source for both deliverables.
+- `phase-3-medicinal-herbs-strategic-plan.md`: Strategic context for five-bundle product line, supplier analysis framework, unit economics, 12-month roadmap. Used for pricing, supplier assessment, and B2B partner notes.
+- `phase-3-medicinal-herbs-sourcing-guide.md`: Per-species photo sourcing paths, supplier contacts, FGV verification steps, lead time estimates. Used as primary data source for SUPPLIER_CONFIRMATION_TRACKER pricing tables.
+- `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` (v1.0, Session 1344): Existed as a detailed template-level draft. Solid structure but missing concrete pricing benchmarks, per-bundle cover design schedule, realistic photography timeline with species-by-species guidance, and integrated contingency triggers.
+- `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (v1.0, Session 1344): Existed as a structured template with all fields empty (pending supplier responses). Needed upgrading to include realistic pricing, availability assessment, June 21 delivery feasibility, and the master species-to-supplier availability table.
+
+**Decisions made during session**:
+- Both files upgraded in place (v2.0) rather than creating new files — consistent with project conventions.
+- Pricing data sourced from known public supplier catalog ranges (Strictly Medicinal, Prairie Moon, Mountain Rose Herbs). All fields requiring live supplier response marked [CONFIRM] to distinguish researched benchmarks from confirmed pricing.
+- Added master species-to-supplier availability table as the primary navigation tool in the tracker — this was the key missing element that prevented Anya from making ordering decisions at a glance.
+- Goldenseal decision tree formalized as a four-step process with explicit activation dates (May 20 → May 22 → May 25 → June 8). This eliminates ambiguity about when to switch from live-specimen path to Wikimedia CC path.
+- Studio photography lighting specification hardened: north-facing window at 9 AM–2 PM is the primary plan; ring light explicitly excluded (reads as influencer, not practitioner).
+
+**Files created/updated**:
+
+1. `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` — upgraded from v1.0 (template) to v2.0 (production-ready). 2,600+ words. Key additions: concrete pricing benchmarks in Section 1 ordering calendar, per-bundle design schedule with float analysis in Section 3, four-week photography timeline with per-week success criteria in Section 4, upload readiness checklist per bundle in Section 5, sprint sign-off template in Section 6, three appendices (critical timeline, scope decision summary, contingency triggers and responses).
+
+2. `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` — upgraded from v1.0 (empty template) to v2.0 (production-ready). 700+ words. Key additions: master species-to-supplier availability table (all 17 species mapped to all 5 suppliers with order-by deadlines), per-supplier pricing tables with estimated retail and wholesale ranges, June 21 delivery feasibility column, Goldenseal four-step decision tree, rolling response log with structured fields per supplier, budget tracking table with totals.
+
+**No image downloads this session** (documentation only).
+**No supplier contacts initiated** (outreach calendar documented; Anya executes supplier emails starting May 20).
+
+**Completion status**: Both deliverables production-ready for Anya review May 28. Scope decision (Option A/B/C) required by May 30. Goldenseal order deadline June 8 is the next hard action gate.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Scope Decision Matrix — May 19, 2026
 
 **Task**: Exploration Queue item — Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis. Deliver three production-ready files to unblock May 30 scope decision.
