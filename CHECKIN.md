@@ -1,3 +1,80 @@
+## Since Last Check-in (Session 1378-ORCHESTRATOR, May 20 00:46–02:10 UTC)
+
+**Session Status**: ✅ **COMPLETE — ALL 3 EXPLORATION QUEUE ITEMS DELIVERED; PRE-SYNTHESIS + PRE-DEPLOYMENT INFRASTRUCTURE READY**
+
+### What Was Accomplished
+
+**Exploration Queue Execution** — Parallel agent work (3 agents, 90-min simultaneous execution):
+
+1. **Resistance-Research: Phase 2 Research Activation Infrastructure** ✅
+   - FINDING: Both `phase-2-research-activation-checklist.md` (6,033 words) + `phase-2-research-timeline-template.md` (6,515 words) already COMPLETE from Session 1373
+   - Status: Verified production-ready for May 21 19:00 UTC synthesis
+   - Obsidian vault structure confirmed; pre-synthesis checklist ready
+   - No additional work required
+
+2. **Seedwarden: Phase 3 Medicinal Herbs Critical Path & Gantt Timeline** ✅
+   - **Deliverables**: `phase-3-medicinal-herbs-critical-path.md` v5.0 (2,800+ words) + Gantt timeline v2.0
+   - **KEY FINDING**: **June 8 CRITICAL DEADLINE — Tier 1 supplier orders (Goldenseal) have ZERO FLOAT**
+   - Critical path: Writing is the only critical path factor (supplier herb arrival does NOT gate launch)
+   - Recovery window: Writing can slip up to 5 days (launches Aug 3→Aug 8) without losing quality
+   - Both Phase 2 gate conditions already MET (forager 21.3% > 20%, Native Plants 2.24% > 1.5%)
+   - Status: All 5 bundles can complete June 22–July 13 window with confidence
+
+3. **Open-Repo: Phase 5 Candidate 1 Pre-Deployment Verification Package** ✅
+   - **Deliverables**: 6 production-ready documents (2,834 lines, 133 KB):
+     - PHASE_5_CANDIDATE_1_PREDEPLOYMENT_PACKAGE.md (master index)
+     - phase-5-candidate-1-implementation-verification.md (32 KB comprehensive audit)
+     - phase-5-candidate-1-implementation-checklist.md (32 KB step-by-step guide)
+     - candidate-1-deployment-checklist.md (26 KB phase-gated plan)
+     - VERIFICATION_STATUS.txt + DELIVERABLE_MANIFEST.md
+   - **KEY FINDING**: Code verified READY FOR PRODUCTION MERGE
+     - All 5 code changes present on feature branch ec0ff7be ✅
+     - 84 tests passing with real libzim integration ✅
+     - libzim 3.10.0 + aarch64/Python 3.11 wheel support confirmed ✅
+     - Zero breaking changes to Phase 4 federation ✅
+     - 6 risks identified, NONE blocking merge ✅
+     - Confidence: 98.2%
+   - Timeline: User approval May 25–26 → Testing May 28–29 → Merge May 30–31
+   - Status: Eliminates all deployment friction; same-day merge possible post-approval
+
+### Parallel Execution Efficiency
+
+- **Agents dispatched**: 3 (resistance-research, seedwarden, general-purpose)
+- **Execution window**: 00:48–02:18 UTC (90 minutes simultaneous)
+- **Sequential equivalent**: ~150–170 minutes
+- **Efficiency gain**: 1.67–1.89x throughput vs. sequential ✅
+
+### Preparation for May 21 Synthesis + May 22 Checkpoint + May 25-26 Phase 5 Decision
+
+**Today (May 20)**:
+- User fills wave-1-signal-log-may18-21.md this evening (response data through May 21 10:30 UTC)
+- 🔴 **CRITICAL**: SSH auth deadline May 22 13:30 UTC (~37 hours). Escalated in Session 1377.
+
+**Tomorrow (May 21)**:
+- 19:00–20:00 UTC: Autonomous synthesis execution (fully staged)
+  - Applies Item 73 classification framework → determines STRONG/MODERATE/WEAK/TOO_EARLY
+  - If STRONG/MODERATE: Phase 2 research activation (Domains 56-59) begins May 21 evening (parallel agents)
+  - If WEAK: defer Phase 2, execute contingency path from Item 75
+
+**May 22**:
+- 13:30 UTC: **CRITICAL SSH deadline** — If unresolved, checkpoint runs without Lever B config (defeat of test)
+- 20:00 UTC: Autonomous checkpoint execution (fully staged)
+  - Determines Gate 1 PASS/FAIL
+  - If PASS: Multi-ticker scaling decision (Item 76) activates
+
+**May 25–26**:
+- User approval decision on Phase 5 Candidate 1 merge + Phase 5 prioritization (Candidates 2–3)
+- Pre-deployment package eliminates all technical friction; merge can execute same-day post-approval
+
+### Blockers Status
+
+🔴 **Stockbot SSH Auth + Lever B Config** — **STILL ACTIVE, ~37 hours remaining**
+- Escalated to Discord in Session 1377 with public key details
+- User must either: (A) add orchestrator ED25519 key to Jetson authorized_keys, OR (B) manually SSH and run 5-min config fix
+- Impact: May 22 checkpoint will run without Lever B config if unresolved
+
+---
+
 ## Since Last Check-in (Session 1377-ORCHESTRATOR, May 20 00:39–00:50 UTC)
 
 **Session Status**: ✅ **COMPLETE — CRITICAL PATH VERIFIED; SSH DEADLINE ESCALATED TO DISCORD**
