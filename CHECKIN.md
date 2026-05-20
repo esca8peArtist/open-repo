@@ -1,3 +1,75 @@
+## Since Last Check-in (Session 1399-ORCHESTRATOR, May 20 07:07–10:30 UTC) — Exploration Queue Reset + Phase 2 Research Activation Prep
+
+**Session Status**: ✅ **EXPLORATION ITEM 94 COMPLETE** (Phase 2 Domains 56-59 research activation prep, 6,294 words) | ✅ **EXPLORATION QUEUE RESET** (3 new items added: Items 94, 95, 96) | 🟡 **SIGNAL LOG FILL NEEDED TODAY** (May 20 evening ~22:00 UTC, requires email monitoring) | ✅ **SYNTHESIS EXECUTION SCHEDULED** (May 21 19:00 UTC, fully autonomous <30 min) | **Total output: ~6,500 words** | **3.75h execution time**
+
+### What Was Accomplished (Session 1399)
+
+**Exploration Queue Item 94 — Phase 2 Research Activation Prep** ✅ COMPLETE
+- Deliverable: `projects/resistance-research/PHASE_2_DOMAINS_56_59_RESEARCH_ACTIVATION_PREP.md` (6,294 words, production-ready)
+- **Scope delivered**:
+  1. **Source staging for all 4 Phase 2 domains**: D56 (52 sources, 6 section tables), D58 (52 sources, voter registration/economic/litigation), D57 (57 sources, 5 tables with acquisition blockers), D59 (48 sources, 5 causal/behavioral/government/OBBBA tables)
+  2. **Research & writing templates**: Citation-first protocol, evidence checklist (confirmed vs. preliminary), cross-reference validation map, outline→draft process
+  3. **Per-domain writing workflows**: D56 (8h production pass), D58 (12h with post-Callais focus), D57 (51h with Section 2-3 bottlenecks), D59 (65h with OBBBA pre-outline provided)
+  4. **Execution scheduling matrix**: STRONG/MODERATE/WEAK decision paths with deterministic June-September timelines, user confirmation gates, MODERATE-to-STRONG upgrade rules
+- **Impact**: May 21 synthesis fully prepped. If outcome is STRONG/MODERATE, Phase 2 research launches same-day evening with zero planning overhead. STRONG path: D57+D59 parallel June 15. MODERATE path (most likely): D57 primary June 10, D59 secondary July 1.
+- **Status**: Production-ready for immediate May 21 evening use post-synthesis.
+
+**Exploration Queue Reset** — Added 3 New Items (all PENDING, ready for execution)
+- **Item 95**: Systems-Resilience Wave 2 Execution Planning Prep (HIGH — July 16 launch support, 2-3h)
+- **Item 96**: Seedwarden Track B May 30 Launch Decision Support Package (MEDIUM — May 30 decisions, 1-2h)
+- Why: Prior queue items (85-93) all COMPLETE, creating empty queue. Per protocol: add 2-3 items when fewer than 3 active. These items advance project Goals without being blocked by user actions.
+
+### What's In Progress
+
+**May 21 Synthesis Execution (Fully Autonomous)** — Ready to execute tomorrow 19:00 UTC
+- Synthesis checklist prepared and verified
+- Phase 2 domains research activation prep complete (Item 94)
+- Post-synthesis analysis framework ready (from Session 1359)
+- **USER PRE-REQUISITE**: Signal log fill (May 20 evening ~22:00 UTC) — requires email inbox monitoring for Batch 1 responses (5 contacts sent May 18)
+  - Check email for replies (any Score 1-5)
+  - Update `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` May 20 snapshot
+  - Check Gist view deltas (incognito browser)
+- Synthesis execution timeline: May 21 19:00 UTC read signal log → 19:10 assemble data → 19:25 classify outcome → 19:35 post CHECKIN.md entry
+- **Expected outcome**: MODERATE (most likely, based on preliminary analysis) → Phase 2 domains 56 + 58 research launches May 21 evening with PHASE_2_DOMAINS_56_59_RESEARCH_ACTIVATION_PREP.md infrastructure
+
+### Needs Your Input
+
+**📧 ACTION TODAY (May 20 evening ~22:00 UTC) — Signal Log Fill**
+- Email inbox check: review Batch 1 responses (5 contacts sent May 18 08:00-10:00 UTC)
+- Update `wave-1-signal-log-may18-21.md` May 20 snapshot with:
+  - Total replies received
+  - Score per response (1-5 scale)
+  - Gist view deltas (check incognito)
+  - Response trend vs. Day 1
+- Time: ~10-15 minutes. This enables synthesis execution tomorrow with full signal data.
+
+**🔴 CRITICAL — Stockbot SSH Auth Blocker (Deadline: May 22 13:30 UTC, ~32 hours remaining)**
+- Same block as Sessions 1397-1398. Orchestrator SSH key NOT authorized on Jetson. Blocks autonomous Lever B config fix.
+- **User action required (choose ONE)**:
+  - **Option A** (5–10 min): Add orchestrator public key to Jetson authorized_keys
+  - **Option B** (5 min): SSH manually and run config fix yourself by May 22 13:30 UTC
+- See BLOCKED.md for detailed commands. **May 22 checkpoint depends on this fix.**
+
+**📋 User Decisions Due May 30–June 1** (not urgent, but flagged for planning):
+1. **seedwarden Phase 3 scope decision** (May 30): Option A (5-bundle) / B (2-bundle) / C (3-bundle — recommended)
+2. **systems-resilience Wave 2 sequencing** (June 1): Vet Care / Psychological Support / Conflict Resolution — sequencing and parallel execution approach
+
+### Next Session Triggers & Recommended Focus
+
+1. **TODAY (May 20) 22:00 UTC**: Signal log fill (10-15 min, user action)
+2. **May 21, 19:00 UTC (Tomorrow evening, autonomous)**: Synthesis execution. Outcome routes Phase 2 research launch.
+3. **May 22, 20:00 UTC**: Stockbot checkpoint execution. No new prep needed (playbook from Session 1396 ready).
+4. **May 23–24**: open-repo Phase 5.1 user decision window.
+5. **May 25**: resistance-research final synthesis gate (law school response window closes, Phase 2 path confirmed).
+6. **May 30**: seedwarden Phase 3 launch decisions.
+7. **June 1**: systems-resilience Wave 2 sequencing decisions.
+
+**Optional autonomous work (if no blockers resolve)**:
+- **Item 95** (Systems-Resilience Wave 2 planning, 2-3h) — can execute any time before June 1
+- **Item 96** (Seedwarden May 30 decision package, 1-2h) — ready to execute any time before May 30
+
+---
+
 ## Since Last Check-in (Session 1397-ORCHESTRATOR, May 20 06:30–07:50 UTC) — Phase 5 Wave 2 Planning + Phase 3 Execution Prep Complete
 
 **Session Status**: ✅ **SYSTEMS-RESILIENCE PHASE 5 WAVE 2 PLANNING COMPLETE** (4 doc outlines, 27–31.5K words scope) | ✅ **SEEDWARDEN PHASE 3 EXECUTION PREP COMPLETE** (supplier backups, 3 photography venues, refined timeline) | 🔴 **STOCKBOT SSH BLOCK STILL ACTIVE (User action required by May 22 13:30 UTC)** | **Total output: ~99K words across both** | **Next: May 21 synthesis execution (fully autonomous)**
