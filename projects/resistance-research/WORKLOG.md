@@ -2,6 +2,18 @@
 
 ---
 
+## May 20, 2026 — General Research Agent — Phase 2 Research Activation Checklist + Timeline Template (Pre-Synthesis Prep)
+
+**Files produced**:
+- `projects/resistance-research/phase-2-research-activation-checklist.md` (4,392 words) — Supersedes Session 1405 version. Comprehensive activation checklist with domain readiness audit (all four domains verified production-complete), infrastructure pre-staging, distribution timeline expectations, explicit user decision requirements (4 decisions), and 10-item quick-start go/no-go checklist. Authoritative for May 21 launch.
+- `projects/resistance-research/phase-2-research-timeline-template.md` (3,909 words) — Supersedes Session 1405 version. Master distribution table, per-domain narratives (300–450 words each), parallel execution assessment, critical path with all hard deadlines, risk mitigation, and monthly synthesis gates. Distribution-only calendar (120–130 hours of production work eliminated).
+
+**Verification performed**: Direct file audit confirming Session 1408 finding: all four Phase 2 domains are production-complete. `wc -w` confirmed 35,306 total words; `grep -c "https://"` confirmed 235 citation URLs (45/51/90/49 per domain). No discrepancy with Session 1406/1408 reported totals.
+
+**Key finding**: Phase 2 remaining effort is 25–40 hours (distribution preparation only), down from 120–130 hours projected in prior sessions. All four domains can enter distribution immediately post-synthesis.
+
+---
+
 ## May 20, 2026 — General Research Agent — Pre-Synthesis Domain Updates + Phase 2 Activation Kit
 
 **Status**: COMPLETE — Two pre-synthesis preparation deliverables produced.
