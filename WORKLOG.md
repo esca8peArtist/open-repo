@@ -1,5 +1,32 @@
 # Work Log
 
+## Session 1422-RESEARCH (May 20, 17:00–17:15 UTC)
+
+**Session Type**: Phase 5 Wave 2 Preliminary Drafting
+
+**Actions Taken**:
+
+1. Read existing Phase 5 planning documents (PHASE_5_WAVE_2_PLANNING.md, PHASE_5_WAVE_2_EXECUTION_PACKAGE.md) and Wave 1 Household Coordination guide to ensure continuity.
+
+2. Produced all five deliverables:
+
+   - `projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md` — 35% depth; Zone 5 livestock disease calendar, vaccination protocols, obstetric first response, zoonotic disease recognition, supply cache guidance; 32 citations staged; OTC medication verification flagged as pre-draft research task
+   - `projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md` — 35% depth; Zone 5 risk profile, PFA lay-practitioner layer (with evidence caveat accurately framed), collective grief rituals, winter SAD management (including suicide protocol), caregiver burnout prevention; 31 citations staged
+   - `projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md` — 35% depth; four-category conflict typology, NVC as facilitation language, mediator toolkit, restorative circle facilitation guide, escalation thresholds (abuse vs. conflict distinction), mediation capacity building; 18 citations staged
+   - `projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md` — 35% depth; federation model comparison, Ostrom commons governance applied to Zone 5 resources, delegate selection and communication, Phase 5 Tier 2 community-scale extensions, Phase 3 activation matrix, 18-month federation timeline; 23 citations staged; MUST be last document produced
+   - `projects/systems-resilience/PHASE_5_WAVE_2_DECISION_FRAMEWORK.md` — 1,600+ words; sequencing trade-offs (vet-first vs. psych-first), execution options (A/B/C), Tier 3 scope decision, farm equipment repair deferral recommendation; June 1 decision checklist
+
+3. All files production-ready for July 16 full execution once user confirms sequencing.
+
+**Key Findings**:
+- Psychological-first sequencing recommendation confirmed: Psych + Conflict are structurally coupled; separating them adds integration overhead
+- Tier 3 community playbook has hard structural dependency on all three Tier 2 documents being in first-draft form — this constraint is non-negotiable and is enforced in the preliminary draft
+- Pre-execution research tasks identified (~5 hours total) that can reduce production session burden: OTC medication status, QPR training, NAFCM directory, social rhythm therapy PMC source
+
+**Next Action**: User confirms sequencing decisions by June 1; full production begins July 16
+
+---
+
 ## Session 1421-ORCHESTRATOR (May 20, 15:48 UTC)
 
 **Session Type**: Orientation + Block Re-Verification + State Assessment
