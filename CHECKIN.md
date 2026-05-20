@@ -1,6 +1,6 @@
-## Since Last Check-in (Session 1420-ORCHESTRATOR, May 20 15:40–16:00 UTC) — Block Verification: SSH Timeout (New Finding), Synthesis Ready May 21, Awaiting User Action on Stockbot
+## Since Last Check-in (Session 1421-ORCHESTRATOR, May 20 15:48 UTC) — SSH Timeout Confirmed, Critical Deadline May 22 13:30 UTC, Synthesis Ready May 21
 
-**Session Status**: ✅ **ORIENTATION COMPLETE** | 🔴 **SSH AUTH BLOCK ESCALATED** (NEW FINDING: connection timeout, not auth denial) | 🟢 **MAY 21 19:00 UTC SYNTHESIS SCHEDULED (AUTONOMOUS)** | ⚠️ **CRITICAL: JETSON UNRESPONSIVE — SSH TIMING OUT** | ⚠️ **DEADLINE: MAY 22 13:30 UTC (45 HOURS REMAINING)**
+**Session Status**: ✅ **ORIENTATION COMPLETE** | 🔴 **SSH TIMEOUT BLOCK REMAINS ACTIVE** (confirmed re-test) | 🟢 **MAY 21 19:00 UTC SYNTHESIS SCHEDULED (AUTONOMOUS, 27 HOURS)** | ⚠️ **CRITICAL DEADLINE: MAY 22 13:30 UTC (~21.5 HOURS)**
 
 ### What Was Done (Session 1420 — Orchestrator Block Verification)
 
@@ -19,20 +19,76 @@
    - **Diagnosis**: Jetson is reachable at network layer but SSH daemon not responding. Possible: (a) hung SSH daemon, (b) SSH port blocked at Jetson firewall, (c) SSH service not running. This is DIFFERENT from "orchestrator key not authorized" — suggests daemon issue, not key issue.
 3. **cybersecurity-hardening VeraCrypt**: Cannot auto-verify (requires Windows user action)
 
-### Impact & Recommendations
+### What's Happening (Session 1421 Assessment)
 
-**CRITICAL**: SSH timeout may indicate Jetson connectivity/daemon crisis in addition to auth key gap. Two failure modes now in play:
-1. If SSH never recovers (daemon hung), manual SSH via user's key also fails → **Lever B config remains unfixed → May 22 checkpoint repeats May 19 outcome (STILL_MISS_B2)**
-2. If SSH daemon recovers but key still not authorized, config fix still requires either: (A) Add orchestrator key, or (B) User SSH manually
+**SSH Status**: 🔴 **JETSON SSH DAEMON UNRESPONSIVE** — Connection times out (exit 255) instead of auth error. Network connectivity is OK (ping succeeds, 0% loss). This suggests SSH daemon is hung, blocked by firewall, or not running — NOT just a key authorization issue.
 
-**User Action by May 22 13:30 UTC** (45 hours):
-- **Priority 1**: Verify Jetson SSH daemon is running: `systemctl status ssh` or `sudo systemctl restart ssh`
-- **Priority 2**: If daemon OK, add orchestrator's ED25519 public key to `~/.ssh/authorized_keys` on Jetson: `cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 "cat >> ~/.ssh/authorized_keys"`
-- **Priority 3**: If neither option, SSH manually with your credentials and run the 5-min config fix documented in BLOCKED.md (Lever B HMM regime masking flag)
+**Critical Path**: May 22 stockbot checkpoint executes at 20:00 UTC. Lever B (HMM regime masking) test requires config flag `"hmm_regime_masking": true` in active-sessions-2session.json. Without this flag, checkpoint repeats May 19 outcome (STILL_MISS_B2 miss pattern).
 
-**Next Autonomous Event**:
-- **May 21 19:00 UTC**: resistance-research synthesis execution (autonomous, fully staged)
-- **May 22 20:00 UTC**: stockbot checkpoint execution (waits on Lever B config, but will execute regardless with Lever A if config unresolved)
+**Timeline**:
+- **NOW**: May 20 15:48 UTC
+- **May 21 19:00 UTC**: resistance-research synthesis executes (autonomous, no action needed)
+- **May 22 13:30 UTC**: **CRITICAL DEADLINE** — Lever B config must be fixed by this time (~21.5 hours from now)
+- **May 22 20:00 UTC**: stockbot checkpoint executes (uses Lever B if config fixed, falls back to Lever A if not)
+
+### Needs Your Input — URGENT ACTION REQUIRED BY MAY 22 13:30 UTC
+
+**Three-step priority sequence** (pick the one that works for you):
+
+**STEP 1 (Fastest — 2 min)**: Fix Jetson SSH daemon and add orchestrator key
+```bash
+# On Jetson (via whatever method you currently use to SSH):
+systemctl status ssh                    # Check if SSH daemon is running
+sudo systemctl restart ssh              # Restart if needed (or start if stopped)
+
+# Then, add orchestrator's public key (run from this Pi):
+cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 "cat >> ~/.ssh/authorized_keys"
+```
+After this, orchestrator can directly SSH and fix config. **Ideal outcome.**
+
+**STEP 2 (If Step 1 fails)**: SSH manually and run the 5-min config fix
+```bash
+# SSH to Jetson with your password/key (whatever works):
+ssh ubuntu@100.120.18.84
+
+# Then run this to add the HMM regime masking flag:
+nano /opt/stockbot/config/active-sessions-2session.json
+# Find both "AAPL_h10_lgbm_ho" and "AAPL_h10_ridge_wf" session blocks
+# Add to each block's strategy_params: "hmm_regime_masking": true
+# Save (ctrl+x, y, enter)
+
+docker restart stockbot
+curl http://localhost:8000/api/health    # Should return {"status":"ok","sessions":2}
+```
+
+**STEP 3 (Manual SSH not possible)**: Do nothing and accept outcome
+- May 22 checkpoint will execute with Lever A configuration (same as May 19)
+- Result will be STILL_MISS_B2 (confirmed miss pattern)
+- Post-checkpoint, Jetson SSH issue will be diagnosed and resolved
+
+**Recommended**: Do STEP 1 (fastest, enables automatic config fix)
+
+### What's Next
+
+**May 21 19:00 UTC — resistance-research Synthesis** 🟢 **AUTONOMOUS** — No user action needed
+- All Phase 2 domains complete (44K+ words, 285+ citations, 5 domains: 56, 57, 58, 59, G)
+- Synthesis framework complete: contingency playbooks, decision trees, Batch 2 outreach architecture
+- Expected outcome: <30min execution, determines Phase 2 activation status (STRONG/MODERATE/WEAK/TOO_EARLY)
+- Phase 2 research will launch same-day if synthesis is STRONG/MODERATE
+
+**May 22 20:00 UTC — stockbot Checkpoint** 🔄 **AWAITS LEVER B CONFIG FIX**
+- Tests Lever B (HMM regime masking) vs Lever A baseline
+- If config fixed by 13:30 UTC: Executes with Lever B test
+- If config NOT fixed: Executes with Lever A (repeats May 19 outcome STILL_MISS_B2)
+- Gate 2 decision (multi-ticker scaling go/no-go) depends on this outcome
+
+### Other Projects — Waiting on User Actions
+
+- **mfg-farm**: Test print pending (all pre-print deliverables complete)
+- **cybersecurity-hardening**: Phase 1 VeraCrypt restart pending (all Phase 1 steps outlined, Phase 2 roadmap complete)
+- **seedwarden**: Track B June 22 launch ready; Track A waiting on tag corrections + Etsy verification
+- **open-repo**: Phase 5.1 MVP (ZimWriter) ready for user merge decision May 25-26
+- **systems-resilience**: Phase 5 Wave 1 complete; Wave 2 awaiting user decision on sequencing (June 1)
 
 ---
 
