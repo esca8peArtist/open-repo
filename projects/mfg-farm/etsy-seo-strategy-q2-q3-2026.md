@@ -1,12 +1,12 @@
 ---
 title: "Etsy SEO Strategy Q2-Q3 2026 — ModRun Clips, Headphone Hooks, Magnetic Bin Labels"
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-20
 status: actionable
-scope: "Pre-launch keyword optimization, competitive positioning, seasonal cadence May–December 2026"
+scope: "Pre-launch keyword optimization, competitive positioning, seasonal cadence May–December 2026, ChatGPT discovery layer"
 confidence: high-on-algorithm / medium-on-exact-volumes
 related: etsy-seo-strategy.md, keyword-research-data.csv, headphone-hooks-market-analysis.md, BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md, pricing-strategy.md, competitive-positioning-matrix.csv
-word_count: ~8500
+word_count: ~10500
 exploration_queue_item: 1092
 ---
 
@@ -665,6 +665,76 @@ VIDEO: Labels sliding onto steel toolbox surface (magnet snap) (7 seconds)
 
 ---
 
+## Section 11: ChatGPT Discovery Layer — New Visibility Channel (May 2026)
+
+### 11.1 What Changed
+
+On May 4–5, 2026, Etsy launched its native app inside ChatGPT, giving US ChatGPT Plus, Pro, and Free users the ability to browse and purchase directly from Etsy sellers within a chat interface. Buyers can write natural-language queries like "Help me find a desk organization gift for a college student under $30" and ChatGPT surfaces Etsy listings semantically matched to the request. This is a materially different discovery mechanism from Etsy's own search — it bypasses keywords entirely in favor of how well the listing description answers a conversational buyer question.
+
+ChatGPT had approximately 600 million weekly active users as of the launch date. Etsy confirmed that ChatGPT "works well as a discovery channel" — buyers often browse the ChatGPT recommendation before clicking through to Etsy to review the listing in full. The window to be among the listings that ChatGPT consistently surfaces for natural-language gift queries is open now, before the optimization meta catches up.
+
+**Key implication:** ModRun's three product lines are exactly the type of functional, gift-able desk products that show up well in conversational gift queries. Cable clips, headphone hooks, and workshop labels are things buyers describe in natural language ("something to help my husband organize his desk," "a gift for a gamer who hates tangled cables"). If ModRun's descriptions contain the conversational language that matches these queries, the listings have genuine chatbot discoverability before they have reviews.
+
+### 11.2 How ChatGPT Selects Listings
+
+Based on seller reports and the listing audit framework published in May 2026, ChatGPT's semantic matching appears to favor listings with:
+
+1. **Use-case framing in the opening description** — not the product name, but the situation: "For the person who wants a clean desk without spending an hour re-routing cables."
+2. **Recipient persona language** — explicit naming of who the product is for: "for the gamer," "for the home-office worker," "for the dad with a workshop full of unlabeled bins."
+3. **Sensory and functional specificity** — material feel, mechanism action, expected result: "snaps over any desk edge up to 30mm thick," "holds without adhesive damage," "N52 neodymium magnet repositions 1,000+ times."
+4. **Moment framing** — when the product is used and what it solves: "no more cables sliding off the desk at the worst moment," "find the right drill bit in under five seconds."
+
+ChatGPT membership in Offsite Ads appears to be a technical prerequisite for checkout completion, but discovery (appearing in ChatGPT results) does not require it.
+
+### 11.3 Description Rewrite Templates — ModRun Products
+
+The following description language is written for ChatGPT semantic discovery. It should be placed in the **first 250 characters of each listing description** (after the keyword-optimized 160-character SEO opening), since that zone carries both Etsy NLP indexing weight and appears in ChatGPT's listing summary.
+
+**Cable Management Clips — ChatGPT-optimized paragraph (add after SEO opening):**
+```
+For the home-office worker who stacks monitors and loses a cable every time. These 3D printed clips
+snap to any desk edge — no adhesive, no tools, no holes — and route charging cables, USB-C, and
+headphone cords exactly where you want them. Works on sitting desks and standing desks alike.
+Perfect practical gift under $20.
+```
+
+**Headphone Hooks — ChatGPT-optimized paragraph:**
+```
+For the gamer or remote worker who hangs their headset on their monitor and calls it organization.
+This 3D printed under-desk clamp holds headphones securely and has a built-in cable wrap post —
+so the headset cord never droops or tangles. Clamps to any desk edge without tools or damage in
+under 60 seconds. Genuinely useful gift under $20.
+```
+
+**Magnetic Bin Labels — ChatGPT-optimized paragraph:**
+```
+For the workshop or garage owner who knows exactly which bin holds what, until they don't.
+These 3D printed magnetic labels snap to any steel toolbox surface with N52 neodymium magnets —
+strong enough to stay put through vibration, easy to reposition when the shop layout changes.
+You specify the text at checkout. Great practical gift for the person who has everything but
+organized storage.
+```
+
+### 11.4 Monthly Audit Protocol
+
+The ChatGPT integration behavior may shift within the first 60–90 days as Etsy and OpenAI tune the semantic matching layer. Recommended protocol:
+
+1. On the first of each month, type `@Etsy [natural language buyer question for each product]` in ChatGPT and note whether ModRun listings appear.
+2. If not appearing: review the first 250 characters of the description against the four criteria in 11.2 and adjust the weakest element.
+3. Do not change the title during this test — the Etsy LQS depends on title stability. Only adjust description language.
+4. Test queries to run monthly:
+   - "Find a gift for a home office worker who hates cable clutter, under $20"
+   - "3D printed desk accessories gift for gamer under $25"
+   - "Custom magnetic labels for a toolbox organizer gift under $25"
+
+### 11.5 Interaction With Offsite Ads
+
+Once ModRun exceeds $10,000 in annual sales (mandatory Offsite Ads threshold), the 12% commission on ad-attributed sales applies. ChatGPT-referred sales that complete checkout within ChatGPT (Instant Checkout flow) are categorized as Offsite Ads attributions by Etsy — meaning the 12% fee applies to those sales once the threshold is crossed. Below $10,000, Offsite Ads can be opted out, and ChatGPT discovery still drives click-through to the Etsy listing for completion there (no 15% fee for that buyer journey if the purchase completes on Etsy.com rather than in the ChatGPT instant checkout).
+
+**Margin note:** At $16.99 launch price for headphone hooks, a ChatGPT-attributed Instant Checkout sale post-threshold carries the same ~52% gross margin as any other Offsite Ad. Still above the floor. The discovery value is additive, not margin-threatening, at current pricing.
+
+---
+
 ## Sources
 
 - [How Etsy's Algorithm Works in 2026 — Marmalead](https://blog.marmalead.com/etsy-algorithm-2026/)
@@ -701,3 +771,11 @@ VIDEO: Labels sliding onto steel toolbox surface (magnet snap) (7 seconds)
 - [Etsy SEO Complete Guide 2026 — MetaDataReactor](https://metadatareactor.com/blog/etsy-seo-complete-guide/)
 - [Etsy SEO Guide 2026 — Voolist](https://www.voolist.com/blog/etsy-seo-guide)
 - Existing research: `keyword-research-data.csv`, `etsy-seo-strategy.md`, `headphone-hooks-market-analysis.md`, `pricing-strategy.md`, `BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md`
+- [Etsy Launches ChatGPT App, Tests AI Search Agent for Gifting — Retail Brew](https://www.retailbrew.com/stories/2026/05/04/etsy-launches-chatgpt-app-tests-ai-search-agent-to-help-with-gifting)
+- [Etsy Launches Its App Within ChatGPT — TechCrunch](https://techcrunch.com/2026/05/05/etsy-launches-its-app-within-chatgpt-as-it-continues-its-ai-push/)
+- [How Etsy Sellers Feel About the ChatGPT Checkout Integration — Modern Retail](https://www.modernretail.co/technology/how-etsy-sellers-feel-about-the-new-chatgpt-checkout-integration/)
+- [Buy It in ChatGPT: Instant Checkout and the Agentic Commerce Protocol — OpenAI](https://openai.com/index/buy-it-in-chatgpt/)
+- [Etsy ChatGPT App: 30-Min Listing Audit for Sellers (May 2026) — FindSkill.ai](https://findskill.ai/blog/etsy-chatgpt-app-listing-audit-30-min/)
+- [ChatGPT for Etsy: Complete Guide 2026 — Insight Agent](https://www.insightagent.app/guides/chatgpt-for-etsy)
+- [Etsy SEO 2026: What's Changed & How to Rank — Insight Agent](https://www.insightagent.app/guides/etsy-seo-2026)
+- [How to Use AI for Etsy Listings: Optimizing Titles and Descriptions — Netalith](https://netalith.com/blogs/e-commerce-strategy/using-ai-for-etsy-listings-optimization-2026)
