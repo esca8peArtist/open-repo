@@ -39,11 +39,18 @@
 - **1 project remains blocked** (stockbot SSH auth, critical deadline May 22 13:30 UTC)
 - **Administrative overhead**: Stale focus lines pruned, state verified current
 
-**Next Session Action Items**:
-- If resistance-research signal log user rows filled by May 21 evening → synthesis executes May 21 19:00 UTC (fully autonomous)
-- Seedwarden user decisions by May 30 unblock June 22 execution sprint
-- Open-repo Phase 5.2 planning can begin (Xapian FTS fix, 2–3 hours)
-- Monitor stockbot SSH deadline (13h 35min remaining as of session start)
+**Session 1392 Final Status**:
+- ✅ **Session complete**: All autonomous project work finished
+- ✅ **Orchestration committed**: PROJECTS.md, BLOCKED.md, WORKLOG.md, CHECKIN.md all current
+- ✅ **Critical path ready**: May 21 19:00–20:00 UTC synthesis execution fully autonomous
+- 🔴 **Blocking items**: 3 user actions required (stockbot SSH by May 22 13:30, seedwarden decisions by May 30, resistance-research signal log tonight)
+- 🔴 **Exploration Queue**: 15+ items queued but blocked on external prerequisites (May 21+ synthesis, May 22 checkpoint outcomes)
+
+**Next Session Action Items** (May 21, 19:00 UTC):
+- May 21 19:00–20:00 UTC: Synthesis execution (fully autonomous, no user input during synthesis)
+- May 21 20:30 UTC: Post-synthesis classification → Phase 2 activation decision
+- May 21 21:00+ UTC: Phase 2 research launch if STRONG/MODERATE outcome
+- May 22 20:00 UTC: Stockbot checkpoint execution (requires Lever B fix by 13:30 UTC)
 
 ---
 
