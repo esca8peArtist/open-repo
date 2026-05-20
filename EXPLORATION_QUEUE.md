@@ -5,7 +5,54 @@
 
 ---
 
-## Active Items (Session 1399, May 20, 07:07 UTC)
+## Active Items (Session 1400, May 20 18:00 UTC)
+
+### 🔄 Item 97: Resistance-Research May 21 Synthesis CONTINGENCY PLANNING (Weak/TOO_EARLY Paths)
+**Status**: PENDING (Session 1400)
+**Priority**: HIGH — Synthesis executes tomorrow (May 21 19:00 UTC); if WEAK/TOO_EARLY, contingency path clarity needed within hours
+**Impact**: HIGH — Removes decision paralysis if synthesis result is unexpectedly WEAK. Identifies which Phase 2 domains (56, 58) can proceed independently due to June 1 deadline urgency, which domains defer, and whether Phase 1 follow-up (Domain 37 expansion, additional Phase 1 cycles) takes priority.
+**Goal**: Pre-stage comprehensive contingency architecture for WEAK/TOO_EARLY synthesis outcomes so May 21 evening can immediately pivot to alternative sequencing without deliberation.
+**Scope** (2-3 hrs):
+  1. **WEAK outcome response path** (1 hr): Phase 2 scope reduction to highest-urgency domains (56: Civil Service Politicization, 58: Tribal Sovereignty) due to June 1/May 28 deadlines. Domain 57/59 defer to Q3. Phase 1 follow-up options (Domain 37 expansion reach, targeted messaging amplification, international distribution). User decision gates and decision timeline.
+  2. **TOO_EARLY outcome response path** (1 hr): If synthesis signals haven't reached sufficient volume, what's the 2-week re-synthesis schedule (May 35-June 4)? Which Phase 2 domains proceed independently while waiting? Does orchestrator begin Phase 1 Batch 2 outreach in parallel? 
+  3. **Domain independence assessment** (45 min): Which Phase 2 candidates can execute without Phase 1 completion? (Domain 56 high-urgency, Domain 58 gated by Trump v. Barbara litigation, Domain 59 has June 15 start window flexibility). Sequencing analysis: autonomous vs dependent.
+  4. **Alternative resource allocation** (30 min): If Phase 2 delayed, what autonomous work proceeds May 22-31? (Systems-resilience Phase 4, open-repo Phase 5 execution, stockbot post-checkpoint architecture work). Capacity analysis for parallel execution.
+**Deliverable**: `projects/resistance-research/SYNTHESIS_CONTINGENCY_PATHS.md` (2,500+ words, decision trees, domain sequencing matrices, resource allocation scenarios for WEAK and TOO_EARLY outcomes)
+**Why now**: May 21 synthesis is binary but consequences are multi-dimensional. Having contingency paths pre-staged means May 21 evening decision can be immediate, not deliberative.
+**Success criteria**: By May 21 evening, clear path is selected and May 22-31 work is scoped without friction
+
+---
+
+### 🔄 Item 98: Stockbot Post-May-22-Checkpoint Thermal & Disk Scaling Roadmap
+**Status**: PENDING (Session 1400)
+**Priority**: HIGH — May 22 checkpoint outcome will trigger May 22-31 architecture decisions. Jetson thermal limit (81-87°C idle) is hard gate for extended compute. Disk and memory limits constrain multi-ticker scaling.
+**Impact**: HIGH — Removes hardware-constraint uncertainty from May 22-31 decisions. Clear thermal remediation roadmap (fan install?, compute reduction?, throttling strategy?) and scaling timeline (how many additional tickers can Jetson support before hardware upgrade?).
+**Goal**: Pre-stage comprehensive hardware upgrade planning for Jetson covering: (1) Thermal management options (active cooling, compute reduction, throttling thresholds), (2) Disk/memory constraints vs trading session count, (3) Multi-ticker expansion capacity analysis (how many AMZN/JPM/etc sessions fit within current hardware?), (4) 3-month hardware upgrade roadmap if live trading needs more capacity.
+**Scope** (2-3 hrs):
+  1. **Thermal analysis** (1 hr): Current state (81-87°C idle, 87.8°C under compute). Options: (A) Attach heatsink + 30mm fan ($15, 2h install, reduces to ~60-65°C), (B) Reduce background processes (saves 5-10°C), (C) Throttle to prevent >85°C (caps performance). Timeline: fan install May 25-26, enables June 1 launch without thermal risk.
+  2. **Disk/memory capacity analysis** (1 hr): Current state (40% disk used after cleanup, 8GB memory observed). Scaling: 2 AAPL sessions = ~100MB logs/day; 10 tickers = ~500MB/day. Projected: 15GB/month growth, 132GB free = 8 month headroom. Memory ceiling: 50 sessions = ~90% of 16GB. Recommendation: 10-15 additional sessions sustainable; beyond 20 needs upgrade.
+  3. **Multi-ticker capacity roadmap** (1 hr): Given thermal + disk constraints, what's the max sustainable session count (May 22-June 15)? (Answer: ~10-12 tickers pre-cooling, ~20+ post-cooling). What's the hardware upgrade timeline to support full target (40+ tickers for live trading)? (Answer: June cooling, July memory/storage if scaling to 40+).
+  4. **May-June hardware action plan** (30 min): Fan purchase + install (May 25-26, $15), logistics for June upgrade window (memory stick purchase June 1, install June 7-8, downtime risk analysis).
+**Deliverable**: `projects/stockbot/HARDWARE_UPGRADE_ROADMAP_MAY_22_DECISION.md` (2,500+ words, thermal analysis with options, capacity projections, 3-month timeline, BOM and installation procedures)
+**Why now**: May 22 checkpoint outcome will determine multi-ticker scaling urgency. If Gate 2 passes or even near-miss, Lever A multi-expansion becomes May timeline priority. Hardware constraints directly impact feasibility. Pre-staging removes "can we actually support N tickers?" uncertainty from May 22 decision-making.
+**Success criteria**: By May 22 afternoon, clear hardware roadmap allows orchestrator to proceed with scaling decisions without thermal/disk risks
+
+---
+
+### 🔄 Item 99: Open-Repo Phase 6 Architecture Visioning (Post-Phase-5 Expansion)
+**Status**: PENDING (Session 1400)
+**Priority**: MEDIUM — Phase 5 decisions expected May 25-26. Phase 5.1 MVP ready (98.2% confidence, Candidate 1 verified). Phase 6 visioning now enables post-Phase-5 planning.
+**Impact**: MEDIUM — Clarifies long-term project trajectory beyond Phase 5. Phase 6 options (internationalization, advanced search, third-party API ecosystem, commercial deployment platform) inform Phase 5 architecture decisions (which designs support Phase 6 scaling).
+**Goal**: Pre-stage comprehensive Phase 6 architecture options covering: (1) Use-case expansion beyond offline archive (API-first federated search across partner libraries, commercial deployment model), (2) Technical architecture evolution (from single-library offline to multi-library federation to SaaS platform), (3) Sustainability model (volunteer/nonprofit vs commercial licensing), (4) Timeline to Phase 6 (6-month post-Phase-5? 1-year?).
+**Scope** (2-3 hrs):
+  1. **Phase 5 closure assessment** (45 min): Candidate 1 (offline) + Candidate 2 (OPDS) + Candidate 3 (search) = what does "Phase 5 complete" look like? (Answer: offline-capable, federated-read-capable, full-text searchable single library). What gaps remain? (Answer: multi-library federation, commercial hosting, advanced analytics, third-party API).
+  2. **Phase 6 option scenarios** (1.5 hrs): Option A (Federated Search Platform, 100-150h, enables library network discovery), Option B (Commercial SaaS Hosting, 80-120h, enables revenue model), Option C (Third-Party API Ecosystem, 120-180h, enables developer integration). Cost-benefit and timeline per option. User base expansion potential per option.
+  3. **Sustainability model analysis** (45 min): Current (volunteer-driven, open-source). Options: (A) Grant-funded nonprofit model (Mellon Foundation library grants, typical $50-150K), (B) Commercial licensing (libraries pay per deployment, typical $5-50K/year), (C) Hybrid (free for <100K volumes, commercial for larger). Movement leverage (library coalitions vs academic vs K-12).
+**Deliverable**: `projects/open-repo/PHASE_6_ARCHITECTURE_OPTIONS.md` (2,500+ words, three option scenarios with detail, sustainability model analysis, library partnership landscape, 1-year roadmap)
+**Why now**: Phase 5 architecture decisions should anticipate Phase 6 feasibility. If Phase 5 selects offline-first (Candidate 1), does that preclude later cloud deployment (Phase 6B)? Pre-staging Phase 6 thinking enables Phase 5 decisions to be forward-compatible.
+**Success criteria**: By June 1, Phase 5 execution proceeds with clarity on Phase 6 trajectory. Phase 6 begins planning for potential July-August user decision.
+
+---
 
 ### ✅ Item 94: Resistance-Research Phase 2 Domains 56-59 Research Activation Prep
 **Status**: COMPLETE (Session 1399, May 20, 07:07 UTC)
