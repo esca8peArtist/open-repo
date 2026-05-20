@@ -1,3 +1,100 @@
+## Since Last Check-in (Session 1403-ORCHESTRATOR, May 20 00:00–02:30 UTC) — Pre-Synthesis Audit + Open-Repo Code Review (Critical Findings)
+
+**Session Status**: ✅ **RESISTANCE-RESEARCH PRE-SYNTHESIS AUDIT COMPLETE** (all files verified, ready for May 21 execution) | ⚠️ **OPEN-REPO PHASE 5.1 AUDIT COMPLETE — CRITICAL DEFECTS FOUND** (MVP not ready, requires follow-up fixes) | 🔴 **STOCKBOT SSH AUTH BLOCK UNRESOLVED** (deadline May 22 13:30 UTC, 29 hours remaining) | 📊 **USAGE HEALTHY** (0.3%, well under limit)
+
+### What Was Accomplished (Session 1403)
+
+**Resistance-Research: Pre-Synthesis Staging Audit** ✅ COMPLETE
+- **Deliverable**: `PRE_SYNTHESIS_STAGING_AUDIT.md` committed to projects/resistance-research/
+- **Full audit findings**:
+  - ✅ All 14 required files present + current (6 authority files, 8 synthesis execution files)
+  - ✅ Contact list verified (all 5 Batch 1 contacts have correct emails, synthesis-ready)
+  - ✅ Signal log in correct pre-fill state (May 18-19 complete, May 20-21 awaiting user input)
+  - ✅ Infrastructure zero gaps — synthesis can execute as designed
+  - ℹ️ **Timeline ahead of plan**: Domains 57 + 59 complete (7,200 words each, not "outline-only"), post-synthesis work is citation verification + Gist creation, not production writing
+- **Status**: **SYNTHESIS EXECUTION READY** for May 21 19:00 UTC
+- **Two user actions required before synthesis**:
+  1. **Tonight (May 20 ~22:00 UTC)**: Signal log fill — check inbox, score Gist views, update `wave-1-signal-log-may18-21.md` Day 2 snapshot
+  2. **Before 19:00 UTC May 21**: SCOTUSblog check — verify Trump v. Barbara not yet ruled. If ruled, execute Domain 58 rapid-response before synthesis.
+
+**Open-Repo: Phase 5.1 MVP Code Audit** ⚠️ CRITICAL FINDINGS
+- **Deliverable**: Comprehensive code review (1,400+ line analysis with 8 defects identified)
+- **Three Critical Production-Risk Defects** (MVP-blocking):
+  1. **Malformed fallback PNG** (`_FALLBACK_ILLUSTRATION_PNG`): IHDR declares 48×48 RGBA but IDAT contains only 1×1 pixel. Invalid CRC. zimcheck will fail on exports using fallback path.
+     - **Fix**: Replace with valid 48×48 PNG (~10 lines)
+  2. **Missing `config_indexing()` call** (line 832–836): Xapian full-text indexing advertised but silently disabled. Kiwix readers cannot search generated ZIM files.
+     - **Fix**: Add one line: `creator.config_indexing(True, self.config.language_iso3)`
+  3. **Tests don't validate libzim integration**: All 84 tests would pass identically against stub fallback. No tests read ZIM with `libzim.reader.Archive` or verify magic bytes.
+     - **Fix**: Backfill 3-5 libzim integration tests (reading ZIM, asserting magic bytes, iterating entries)
+- **Four High/Medium Issues** (Phase 5.2 suitable):
+  - Unused `compression` parameter never wired to libzim Creator
+  - 5 stale `TODO(post-PR-merge)` markers (should be Phase 5.2 issue references)
+  - `datetime.utcnow()` deprecated on Python 3.12+
+  - README claim mismatch (advertises test coverage that doesn't exist)
+- **PR Status**: PR #3 (identical 5-change set) already merged to `open-repo/main` (commit 37d4e05a, May 20 04:53 UTC). New PR not needed; fixes should be applied via follow-up PR from `main` branch.
+- **Verdict**: **Phase 5.1 MVP NOT READY** — "98.2% confidence" claim understates production risk. Three critical fixes required before merge complete. Real integration is functional but test coverage overstated.
+- **Recommendation**: Create follow-up PR from `open-repo/main` with three critical fixes + libzim verification tests before claiming MVP complete.
+
+### What's In Progress
+
+**May 21 Synthesis Execution (19:00 UTC, fully autonomous <30 min)**
+- Infrastructure fully verified and ready
+- Breaking developments briefing ready (South Carolina gerrymander, NATO doctrine, Hungary deadline)
+- **PREREQUISITE**: Signal log fill tonight (~22:00 UTC) — check inbox, update snapshot
+
+**May 22 Stockbot Checkpoint + Lever B Testing (19:00 UTC, ~27 hours remaining)**
+- Engine running, 34 fills, $115K equity, 2 sessions active
+- Lever B code deployed, config ready BUT NOT ACTIVATED (missing `hmm_regime_masking: true`)
+- **CRITICAL BLOCKER PERSISTS**: SSH auth to Jetson still failing
+
+### Needs Your Input
+
+**🔴 CRITICAL — Stockbot SSH Auth (Deadline May 22 13:30 UTC, ~29 hours remaining)**
+- **Issue**: Orchestrator ED25519 public key NOT authorized on Jetson ubuntu@100.120.18.84. SSH connection fails with "Permission denied (publickey,password)"
+- **Impact**: Cannot apply Lever B HMM config fix remotely. May 22 checkpoint will execute with Lever A config (same as May 19 STILL_MISS_B2 outcome), defeating Lever B test purpose.
+- **User action required** (pick ONE):
+  - **Option A** (if you have existing SSH access to Jetson): Add orchestrator public key to `~/.ssh/authorized_keys` on Jetson, OR manually SSH and run 5-min config fix (see BLOCKED.md for exact commands)
+  - **Option B** (if no access): Provide password-based SSH credentials so orchestrator can connect and apply fix
+- **Commands to run** (if Option A — manual SSH):
+  ```bash
+  ssh ubuntu@100.120.18.84
+  nano /opt/stockbot/config/active-sessions-2session.json
+  # Find both "AAPL_h10_lgbm_ho" and "AAPL_h10_ridge_wf" strategy_params blocks
+  # Add "hmm_regime_masking": true to each
+  # Save (ctrl+x, y, enter)
+  docker restart stockbot
+  curl http://localhost:8000/api/health  # Should return {"status":"ok","sessions":2}
+  ```
+
+**📧 ACTION TONIGHT — Signal Log Fill (May 20 ~22:00 UTC, ~15 minutes)**
+- **What to do**: Monitor inbox for any replies to May 18 batch emails (5 contacts)
+- **File to update**: `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+- **Section to fill**: "May 20 — Day 2 Snapshot" (view 4 Gist URLs in incognito, score replies 0-5)
+- **Purpose**: Signal log drives synthesis outcome classification tomorrow at 19:00 UTC
+
+**🔀 DECISION: Open-Repo Phase 5.1 Fixes** (not urgent, but blocking MVP claim)
+- Three critical defects found in libzim integration require fixes before Phase 5.1 can be marked complete
+- When you're ready: approve creating follow-up PR from `open-repo/main` with the three fixes (malformed PNG, missing config_indexing, libzim tests)
+- Estimated effort: 2-3 hours for someone familiar with libzim integration
+- Non-blocking: Code is functional despite defects, just risky for production
+
+### Suggested Priorities for Next Session (May 21)
+
+1. **May 20 ~22:00 UTC (TONIGHT)**: Signal log fill (user action, ~15 min)
+2. **May 21 ~12:00 UTC**: Final stockbot SSH resolution attempt (email/Slack confirmation from user about Jetson access)
+3. **May 21 19:00 UTC**: Synthesis execution (fully autonomous, <30 min) — reads signal log → classifies outcome → routes to contingency path
+4. **May 22**: Checkpoint execution + Lever B outcome routing. If user provides SSH access/credentials, Lever B fix can execute pre-checkpoint.
+
+### Session Notes
+
+**Pre-Synthesis Validation**: All infrastructure verified ready for May 21 19:00 UTC autonomous synthesis execution. Zero infrastructure gaps. Only prerequisites are user actions (signal log fill tonight, SCOTUSblog check tomorrow).
+
+**Open-Repo Risk Escalation**: Phase 5.1 MVP has three production-risk defects that current status doesn't surface. Libzim integration is functionally complete but test coverage is overstated and critical features are silently disabled (Xapian FTS, zimcheck validation). Not a showstopper, but should be fixed before claiming MVP complete and especially before any production deployment.
+
+**Stockbot SSH Deadline Critical**: 29 hours remaining for user action to enable Lever B testing. Without SSH access, May 22 checkpoint will execute with Lever A config (prior failure configuration). Recommend immediate user action on this.
+
+---
+
 ## Since Last Check-in (Session 1402-ORCHESTRATOR, May 20 08:14–12:45 UTC) — Items 98-99 Autonomous Parallel Execution (Resistance-Research Breaking Developments + Mfg-Farm Etsy SEO)
 
 **Session Status**: ✅ **EXPLORATION ITEM 98a COMPLETE** (Breaking developments May 18-20 emergency scan) | ✅ **EXPLORATION ITEM 98b COMPLETE** (Domain 57 outline extension) | ✅ **EXPLORATION ITEM 99 COMPLETE** (Mfg-farm Etsy SEO + ChatGPT discovery) | ✅ **EXPLORATION ITEM 100 COMPLETE** (Domain 59 outline, 8,450 words) | ✅ **SSH ACTIVATION GUIDE** (User-friendly resolution for May 22 deadline) | 🟢 **May 21 SYNTHESIS FULLY PREPPED** (breaking developments briefing ready) | 🟡 **CRITICAL: Stockbot SSH deadline May 22 13:30 UTC** | 📊 **USAGE HEALTHY** (0.4%, well under limit)

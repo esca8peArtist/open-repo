@@ -1,5 +1,89 @@
 # Work Log
 
+## Session 1403 — Autonomous Orchestrator: May 20 (00:00–02:30 UTC) — Pre-Synthesis Audit + Open-Repo Code Review (Critical Findings)
+
+**Tasks**:
+1. Orientation + block verification — assess project state, verify active blocks
+2. Pre-synthesis validation for resistance-research (May 21 19:00 UTC execution)
+3. Phase 5.1 MVP code audit for open-repo (libzim integration, test coverage)
+
+**Status**: ✅ COMPLETE (parallel agent execution)
+
+**Orientation** (00:00–00:15 UTC):
+- **Critical block verified — stockbot SSH auth STILL FAILING** — Orchestrator ED25519 key not authorized on Jetson. Deadline: May 22 13:30 UTC (29 hours remaining).
+  - Verify command re-executed: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health'` → **Permission denied (publickey,password)**
+  - **User action required**: Either (A) add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run 5-min Lever B config fix. See BLOCKED.md for exact commands.
+- **Other blocks**: cybersecurity-hardening VeraCrypt restart, mfg-farm test print (both user actions, less urgent)
+- **Priority projects with autonomous work**: resistance-research (pre-synthesis audit), open-repo (code review/merge validation)
+
+**Parallel Agent Execution**:
+
+**Agent 1 — resistance-research: Pre-Synthesis Staging Audit** (00:15–01:20 UTC) ✅ COMPLETE
+- **Deliverable**: `PRE_SYNTHESIS_STAGING_AUDIT.md` committed to projects/resistance-research/
+- **Findings**: 
+  - ✅ All 6 authority files present (DOMAIN_56/57/58/59 staging, production roadmap, post-synthesis analysis)
+  - ✅ All 8 synthesis execution files present (checklists, signal log, monitoring dashboard, path summary, preliminary analysis, framework skeleton, contingency)
+  - ✅ Contact list verified (all 5 Batch 1 contacts have correct emails, ready for distribution)
+  - ✅ Signal log in correct pre-fill state (May 18-19 complete, May 20-21 awaiting user input)
+  - ⚠️ **Two user actions required before May 21 19:00 UTC synthesis**:
+    1. **Signal log fill** (tonight, May 20 ~22:00 UTC): Check inbox, score Gist views (0-5), fill "May 20 — Day 2 Snapshot" section
+    2. **SCOTUSblog check** (before 19:00 UTC May 21): Verify Trump v. Barbara not yet ruled. If ruled, execute Domain 58 rapid-response before synthesis.
+  - ℹ️ **Major finding**: Timeline already ahead of plan — Domains 57 + 59 complete (7,200 words each, May 15), not "outline only" as stated in activation prep. Post-synthesis work is citation verification + Gist creation, not production.
+  - **Status**: SYNTHESIS EXECUTION READY — zero infrastructure gaps, all dependencies met
+
+**Agent 2 — open-repo: Phase 5.1 MVP Code Audit & Merge Readiness** (00:15–01:35 UTC) ⚠️ CRITICAL FINDINGS
+- **Deliverable**: Comprehensive code review + audit report (1,400+ line analysis)
+- **Critical Findings — Three Production-Risk Defects**:
+  1. **Malformed fallback PNG** (`_FALLBACK_ILLUSTRATION_PNG` bytes 65–68)
+     - IHDR declares 48×48 RGBA (requires 9,264 bytes IDAT) but IDAT contains only 5 bytes (1×1 pixel)
+     - Invalid CRC, one byte short (67 vs. canonical 68)
+     - **Impact**: zimcheck will fail on any export using fallback path. Pillow rejects as SyntaxError.
+     - **Fix**: Replace with valid 48×48 PNG (~10 lines of struct.pack + zlib.compress, or external PNG file)
+  2. **Missing `config_indexing()` call** (lines 832–836)
+     - Docstring shows correct pattern; README advertises "Xapian full-text indexing" feature
+     - Without `creator.config_indexing(True, lang)` call, Kiwix readers cannot perform full-text search
+     - **Impact**: Advertised search feature silently unavailable
+     - **Fix**: Add one line after `with Creator(...) as creator:`
+  3. **Tests don't validate libzim integration** (test_export_pipeline.py lines 14-19, 115+)
+     - All tests use `zimcheck_binary=None` and `run_zimcheck=False`
+     - Tests would pass identically with `_LIBZIM_AVAILABLE = False` (stub fallback)
+     - No tests read ZIM with `libzim.reader.Archive` or verify magic bytes
+     - **Impact**: "84/84 passing with real libzim integration" claim is available but unverified
+     - **Fix**: Backfill 3-5 tests reading ZIM, asserting magic bytes, iterating entries, verifying metadata
+- **Additional High/Medium Issues** (6 identified):
+  - Unused `compression` parameter (never wired to libzim Creator)
+  - 5 stale `TODO(post-PR-merge)` markers (should be Phase 5.2 issue references)
+  - `datetime.utcnow()` deprecated in Python 3.12+
+  - README claim mismatch (advertises what tests don't verify)
+  - Migration index count documentation inaccuracy
+  - Stale module docstring ("stub phase", "mock python-libzim")
+- **PR Status**: PR #3 (identical 5-change set) already merged to `open-repo/main` (commit 37d4e05a, May 20 04:53 UTC). New PR not needed; fixes should be applied to merged code via follow-up PR from `main` branch.
+- **Verdict**: **Phase 5.1 MVP NOT READY** — three critical defects block merge claim. Libzim integration is functional but production risk is understated by "98.2% confidence" claim. Recommend:
+  - Create follow-up PR from `open-repo/main` with the three critical fixes
+  - Backfill libzim verification tests
+  - Update README to match actual test coverage
+  - Do NOT claim MVP complete until these three are merged
+
+**Session Impact**:
+- ✅ **resistance-research**: Synthesis execution confirmed ready; awaiting two user actions (signal log fill tonight, SCOTUSblog check tomorrow)
+- ⚠️ **open-repo**: Critical audit findings prevent "ready to merge" claim; Phase 5.1 MVP requires follow-up PR with three fixes
+- 🔴 **stockbot**: SSH auth block STILL UNRESOLVED — critical May 22 13:30 UTC deadline approaching. User action required.
+
+**Project Updates**:
+- **PROJECTS.md** (resistance-research): Updated current focus to reflect pre-synthesis audit complete, user actions documented
+- **PROJECTS.md** (open-repo): Updated current focus to reflect critical defects found, MVP not ready claim, recommended fixes
+- **PRE_SYNTHESIS_STAGING_AUDIT.md**: Committed to projects/resistance-research/ with full inventory
+- **Code audit findings**: Detailed in agent output, recommendations documented
+
+**Next Steps**:
+1. **TODAY (May 20 ~22:00 UTC)**: User fills signal log (resistance-research)
+2. **TOMORROW (May 21 before 19:00 UTC)**: User checks SCOTUSblog (resistance-research)
+3. **TOMORROW (May 21 19:00 UTC)**: Orchestrator executes synthesis (resistance-research, fully autonomous)
+4. **BY MAY 22 13:30 UTC**: User resolves stockbot SSH auth (critical deadline)
+5. **FOLLOW-UP**: open-repo follow-up PR with three critical fixes (when user decides to proceed)
+
+---
+
 ## Session 1402 — Autonomous Orchestrator: May 20 (08:14–13:15 UTC) — Items 98-99 Parallel Execution (Breaking Developments + Domain 57 + Etsy SEO)
 
 **Tasks**:
