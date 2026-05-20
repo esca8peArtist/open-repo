@@ -1,465 +1,478 @@
 ---
-title: "Phase 2 Research Timeline Template"
-created: 2026-05-19
-revised: 2026-05-20 (Session 1373 — final pre-synthesis verification pass complete)
-status: production-ready — use immediately post-May 21 synthesis as working calendar
-staging_deadline: "May 20 09:00 UTC — COMPLETE"
-scope: "Master timeline, per-domain writing schedules, gate dates, parallel execution windows, cross-domain dependencies, success metrics"
-decision_gate: "May 21 synthesis (preliminary) → May 21 evening (Phase 2 launch if STRONG/MODERATE)"
-hour_estimates:
-  note: "SUPERSEDED — all four domains confirmed production-complete as of May 20 verification pass"
-  domain_56: "2 (URL spot-check before distribution)"
-  domain_58: "2–3 (rapid-response update when Trump v. Barbara ruling issues)"
-  domain_59: "4–6 (citation spot-check + optional peer review before September 1 distribution)"
-  domain_57: "4–6 (citation spot-check + optional peer review before August 10 distribution)"
-  total: "12–17 hours remaining across all four domains (distribution prep only)"
+title: "Phase 2 Research Timeline Template — Production Version"
+created: 2026-05-20
+revised: 2026-05-21
+session: "Session 1384 — General Research Agent (pre-synthesis prep)"
+status: "production-ready — use immediately post-May 21 synthesis as working calendar"
+decision_gate: "May 21 19:00–20:00 UTC synthesis → May 21 20:00 UTC CHECKIN.md outcome → May 21 evening Phase 2 launch (if STRONG/MODERATE)"
+scope: "Master distribution timeline, per-domain schedules, calendar view June–August 2026, critical path, decision gates, risk mitigation"
+supersedes:
+  - "phase-2-research-timeline-template.md (Session 1373 — May 20 version; this document adds critical path analysis, decision gate triggers, and risk register)"
+  - "PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md (Session 1361 — May 19 version; outdated domain status)"
 companion_files:
-  - phase-2-research-activation-checklist.md
-  - PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md
-  - DOMAINS_57_59_PRODUCTION_ROADMAP.md
-  - DOMAIN_56_EXECUTION_CHECKLIST.md
-  - DOMAIN_58_EXECUTION_CHECKLIST.md
-  - MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md
+  - "phase-2-research-activation-checklist.md (domain readiness, source library, go/no-go gate)"
+  - "DOMAIN_58_EXECUTION_CHECKLIST.md (Section 5.1 rapid-response protocol)"
+  - "DOMAIN_56_DISTRIBUTION_BRIDGE.md"
+  - "DOMAIN_58_DISTRIBUTION_BRIDGE.md"
+  - "MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md"
+domain_status_may20:
+  domain_56: "COMPLETE — 6,267 words / 47 citations — distribution-ready"
+  domain_57: "COMPLETE — 9,201 words / 49 citations — citation spot-check pending (July 28 – Aug 9)"
+  domain_58: "COMPLETE — 11,388 words / 71 citations — rapid-response standby"
+  domain_59: "COMPLETE — 8,450 words / 44+ citations — source URL confirmations pending (June 1–15)"
+remaining_hours:
+  domain_56: "11–16 (distribution prep only)"
+  domain_57: "12–19 (citation spot-check + distribution prep)"
+  domain_58: "5–10 (rapid-response update + distribution prep)"
+  domain_59: "13–18 (source confirmations + citation spot-check + distribution prep)"
+  total: "41–63 hours across June–September 2026 (distribution preparation and quality assurance only)"
 ---
 
 # Phase 2 Research Timeline Template
 
-*Resistance Research Agent — May 20, 2026 (Staging deadline: May 20 09:00 UTC)*
+*Resistance Research Agent — Session 1384, May 21, 2026*
 
-**Purpose**: This document is the operational calendar for Phase 2 research — per-domain writing schedules with week-by-week breakdowns, hard gate dates, parallel execution windows, cross-domain dependency maps, and completion criteria. It is the "when and how long" complement to `phase-2-research-activation-checklist.md` (the "what and whether").
+**Purpose**: This document is the operational calendar for Phase 2 distribution — per-domain distribution schedules with week-by-week breakdowns, hard gate dates, parallel execution windows, critical path analysis, synthesis-triggered decision gates, and risk mitigation. It is the "when and how long" companion to `phase-2-research-activation-checklist.md` (the "what and whether").
 
-**How to use**: After the May 21 synthesis CHECKIN.md outcome is posted, use Section 1 (Master Timeline Summary) to confirm which phase you are in. Then go directly to the per-domain schedule for whichever domain requires action today. Section 3 identifies dependencies that affect sequencing. Section 4 provides the criteria for knowing when each domain is genuinely complete, not just done. If you are reading this on May 21 evening with an outcome confirmed, go directly to Section 1 and use it as your working calendar from that point forward.
+**How to use**: On May 21 evening, after the synthesis CHECKIN.md outcome is posted, go to Section 2 (Decision Gates) to confirm which track you are on. Then use Section 1 (Master Timeline Summary) as your working calendar. Section 3 (Calendar View, June 1 – August 15) gives the day-by-day milestone picture. Section 4 (Critical Path) identifies the three domains on the critical path vs. float. Section 5 (Risk Mitigation) pre-empts the three most likely failure modes.
 
-**Confidence level**: HIGH for timelines, MEDIUM for hour estimates (±15% typical variance for technical policy writing). Hour estimates are sourced from `DOMAINS_57_59_PRODUCTION_ROADMAP.md` (Domains 57, 59), `DOMAIN_56_EXECUTION_CHECKLIST.md` (Domain 56), `DOMAIN_58_EXECUTION_CHECKLIST.md` (Domain 58). All milestone dates derive from distribution anchors with documented slack calculations.
+**Confidence level**: HIGH for distribution anchor dates (UNGA 81, OBBBA implementation, *Trump v. Barbara* window, H.R. 492 window — all grounded in confirmed external calendars). HIGH for domain completion status (May 20 file-verified: all four canonical files confirmed production-complete). MEDIUM for hour estimates (±15% variance typical for policy distribution work; distribution contact response times are inherently uncertain).
+
+**Key orientation for May 21 evening**: Phase 2 requires 41–63 hours of distribution-preparation and quality-assurance work across June–September 2026. This is not research production — all four domains are written and internally consistent. The work is citation spot-checks, peer review (optional), cover email drafting, and contact outreach. The timeline is manageable at 8–10 hours/week across 10 weeks.
 
 ---
 
 ## Section 1: Master Timeline Summary
 
-*One-page overview of the complete Q2–Q3 2026 execution across all four domains.*
+*One-page overview of the complete Phase 2 distribution execution, May 21 through September 2026.*
 
 ### Overview at a Glance
 
-Phase 2 research runs approximately 10 weeks from May 21 through August 10, 2026, with distribution continuing through November 2026. It is divided into four overlapping phases with one or two domains active at a time:
+Phase 2 distribution runs approximately 15 weeks from May 21 through September 1, 2026, with extended distribution through November 2026. It is organized into four overlapping execution phases:
 
 | Phase | Dates | Domains Active | Primary Output |
 |-------|-------|----------------|----------------|
-| Phase 2 Launch | May 21 – June 15 | 56 (distribution), 58 (production) | Domain 56 Wave 1 distribution; Domain 58 canonical file |
-| Parallel Pre-Production | June 16 – June 30 | 57 (pre-production), 59 (research) | Domain 57 library access + domain reads; Domain 59 Sections 1–3 research |
-| Production Intensive | July 1 – July 27 | 59 (writing + peer review), 57 (research + writing) | Domain 59 first complete draft; Domain 57 research notes complete |
-| Finalization | July 28 – August 10 | 57 (peer review + revision), 59 (distribution staging) | All four domains in distribution-ready status |
+| Phase 2 Launch | May 21 – June 10 | 56 (distribution), 58 (peer review) | Domain 56 Wave 1 sends; Domain 58 peer review initiated |
+| Pre-Distribution Checks | June 1 – June 30 | 57 (ICC currency check), 59 (source confirmations) | All source URL confirmations complete for Domains 57 and 59 |
+| Quality Assurance | July 1 – August 9 | 59 (optional peer review + citation spot-check), 57 (optional peer review + citation spot-check) | All four domains at publication-ready status |
+| Full Distribution | August 10 – September 1 | 57 (Wave 1), 59 (Wave 1) | Domain 57 August 10 launch; Domain 59 September 1 launch |
 
 ### Hard Constraints — Non-Negotiable Dates
 
-These dates are set by external events. They do not flex regardless of synthesis outcome or researcher bandwidth:
+These dates are set by external events and do not flex regardless of synthesis outcome or researcher bandwidth:
 
-1. **May 20 – June 10**: Domain 58 production pass MUST complete before *Trump v. Barbara* ruling issues. The ruling is expected late June/early July 2026 (oral arguments concluded April 1, 2026; SCOTUSblog confirms majority appeared likely to side against Trump; no ruling yet as of May 20). Every week the execution pass slips past May 25 reduces the safety buffer against an early ruling.
+1. **August 10, 2026**: Domain 57 first distribution date. This is the latest viable pre-positioning date before UNGA 81 High-Level Week (September 22–28, 2026). Senate Foreign Relations Committee staff and international organizations need 6 weeks of lead time. If Domain 57 misses August 10, the primary distribution hook shifts to the November 3 domestic midterm framing — still viable but weaker for international constituencies and international organizations at UNGA.
 
-2. **August 10, 2026**: Domain 57 production MUST complete and first distribution MUST launch. This is the latest viable pre-positioning date before UNGA 81 High-Level Week (September 22–28, 2026). If Domain 57 misses August 10, the primary distribution hook shifts to November 3 midterm domestic framing — still viable but a weaker hook for international constituencies.
+2. **September 1, 2026**: Domain 59 first distribution target. Organizations need Domain 59's civic participation framing 3 months before OBBBA Medicaid work requirements take effect (December 2026). States begin enrollee outreach June–August 2026 for January 2027 implementation — the advocacy window is real, not symbolic. If citation spot-check cannot complete by July 27, the maximum slip is September 30 (2-month pre-implementation buffer instead of 3).
 
-3. **September 1, 2026**: Domain 59 first distribution TARGET. Organizations need Domain 59's civic participation framing 3 months before OBBBA Medicaid work requirements take effect (December 2026). HHS is confirmed to issue the June 1, 2026 interim final rule on schedule (statutory deadline; no public comment). States will begin enrollee outreach June–August 2026 for January 2027 implementation — creating a real advocacy window, not a soft preference. If production slips past July 27, this slides to September 30 maximum (2-month pre-implementation buffer instead of 3).
+3. **September 22–28, 2026**: UNGA 81 High-Level Week. Domain 57 distribution must have reached Senate Foreign Relations Committee staff, international law organizations, and NDI/NED/Freedom House contacts 6 weeks before this date (August 10). UNGA date is immovable.
 
-4. **September 22–28, 2026**: UNGA 81 High-Level Week. Domain 57 must be in the hands of international law organizations, Senate Foreign Relations Committee staff, and NDI/NED/Freedom House contacts 6 weeks prior (August 10 first distribution).
+4. ***Trump v. Barbara* rapid-response obligation**: This has no fixed date — it is a trigger-driven constraint. When the ruling issues (expected late June/early July 2026), Domain 58's rapid-response update must be applied within 72 hours. Domain 58 first distribution follows the rapid-response update, targeting July 2026. The ruling date is the external variable; the 72-hour response window is fixed.
 
 ### Soft Constraints — Track But Not Fixed
 
-- **June 1–30**: H.R. 492 / Saving the Civil Service Act legislative window enhances Domain 56 distribution positioning. Not required; if the window closes without Domain 56 being distributed, the domain remains valid for subsequent distribution.
-- **Late June/Early July**: *Trump v. Barbara* ruling triggers Domain 58 rapid-response update. Timing is uncertain within a 6-week window; production must complete before the window opens.
-- **July 20**: If Domain 59 production completion slips past this date, the September 1 distribution target is at serious risk. Flag immediately if production falls behind.
+- **June 1–30**: H.R. 492 / Saving the Civil Service Act legislative window. Enhanced Domain 56 distribution opportunity (Pendleton Act democratic-infrastructure reframe is the analytical complement to H.R. 492's legislative argument). Not required — Domain 56 is distribution-valid outside this window.
+- **June 1**: HHS interim final rule on OBBBA Medicaid work requirements (statutory deadline). Confirms Domain 59's implementation timeline; may include LTSS guidance that requires a 1-paragraph update to Section 5. 30-minute check on June 1.
+- **July 20**: Internal slip threshold for Domain 59. If citation spot-check has not begun by July 20, the September 1 distribution target is at serious risk. Flag immediately.
 
 ### Per-Domain Hour Summary
 
-**STATUS CORRECTION (May 20 pre-staging verification)**: All four domains are production-complete as of May 20, 2026. The "Status at May 21" column below reflects the corrected state; prior versions of this table showed Domain 58 as "execution pass pending" and Domains 57/59 as "outline only." Those states have been superseded. The hour estimates in the remaining columns are now distribution-preparation estimates only, not production estimates.
+All domains are production-complete. The remaining hours are distribution-preparation and quality-assurance only.
 
-| Domain | Status at May 21 | Remaining Hours | Writing Hours | Peer Review | Citation Verification |
-|--------|-----------------|-----------------|---------------|-------------|----------------------|
-| 56 | COMPLETE — ~6,800 words, 47 citations | 2 (URL spot-check) | Done | Done | URL spot-check only (2 hrs) |
-| 58 | COMPLETE — 11,388 words, 71 citations (May 19 update) | 2–3 (rapid-response update when ruling issues) | Done | Optional (peer review can precede distribution) | Done |
-| 57 | COMPLETE — 9,201 words, 49 citations (May 15) | 4–6 (citation spot-check + distribution prep) | Done | Optional (peer review can precede August 10 distribution) | Spot-check before August 10 send |
-| 59 | COMPLETE — ~8,450 words, 44+ citations (May 15) | 4–6 (citation spot-check + distribution prep) | Done | Optional (peer review can precede September 1 distribution) | Spot-check before September 1 send |
+| Domain | Status at May 21 | Remaining Work | Hours | Hard Deadline |
+|--------|-----------------|----------------|-------|---------------|
+| 56 | COMPLETE — 6,267 words / 47 citations | URL spot-check + Wave 1–2 distribution prep | 11–16 | June 1–30 window (soft) |
+| 57 | COMPLETE — 9,201 words / 49 citations | ICC currency check + optional peer review + citation spot-check + distribution prep | 12–19 | August 10 (hard — UNGA anchor) |
+| 58 | COMPLETE — 11,388 words / 71 citations | Optional peer review + rapid-response update when ruling issues + distribution prep | 5–10 | Ruling-triggered (72 hrs — external) |
+| 59 | COMPLETE — 8,450 words / 44+ citations | Source URL confirmations + optional peer review + citation spot-check + distribution prep | 13–18 | September 1 (hard), September 30 max slip |
+| **Total** | | | **41–63 hours** | |
 
-### Parallel Execution Windows
+### Parallel Execution Opportunities
 
-Three windows exist where two domains can advance simultaneously with a single researcher:
+Three periods exist where two domains can advance simultaneously:
 
-1. **May 22 – June 10**: Domain 56 URL spot-check and distribution prep (2–4 hours) runs in parallel with Domain 58 production pass (8–12 hours). Fully independent activities.
+1. **May 22 – June 10 (Domain 56 + Domain 58)**: Domain 56 URL spot-check and distribution email drafting (5–6 hours) runs in parallel with Domain 58 optional peer review initiation (1-hour handoff). Fully independent activities.
 
-2. **June 16 – June 30**: Domain 59 research (Sections 1–3, ~12 hours) and Domain 57 pre-production (domain reads + library access + Section 2 research, 6–7 hours) can overlap. Single researcher: Domain 59 research in mornings (higher analytical intensity — quantitative social science papers require sustained focus), Domain 57 pre-production in afternoons (reading CRS reports and federal documents is lower intensity). Combined: 18–19 hours across two weeks at approximately 9–10 hours per week.
+2. **June 1 – June 30 (Domain 57 + Domain 59)**: Domain 57 ICC currency check (3–4 hours, June 1–5) and Domain 59 source URL confirmations (2–3 hours, June 1–15) can run simultaneously in a single work session — both are browser-based URL verifications with no analytical depth required.
 
-3. **July 16 – July 27**: Domain 57 writing (Sections 1–3, 8–10 hours) and Domain 59 peer review (external reviewer has the draft) can overlap. Researcher writes Domain 57 while waiting for Domain 59 reviewer feedback. If Domain 59 reviewer returns early, allow one day to process feedback before resuming Domain 57 writing.
-
-With two researchers: Domain 57 and Domain 59 can run fully in parallel from Week 5 (July 1) onward. Each researcher reviews the other's domain — built-in quality gate without requiring a third party. Combined hours per week drop to 20–22; both domains complete by August 10.
-
----
-
-## Section 2: Per-Domain Writing Schedules
-
-*For each domain: the key policy window, week-by-week production breakdown, gate dates, and distribution timeline.*
+3. **July 28 – August 9 (Domain 57 citation spot-check + Domain 59 distribution prep)**: Domain 57 citation verification (4–6 hours, July 28 – August 9) runs concurrently with Domain 59 distribution material preparation (cover email drafting, distribution bridge customization, 3–4 hours, August 1–15). Domain 59 peer review feedback is being incorporated in this window; reviewer holds Domain 57 draft.
 
 ---
 
-### Domain 56: Civil Service Politicization and Nonpartisan Governance Architecture
+## Section 2: Decision Gates — Synthesis Outcome Triggers
 
-**Status**: COMPLETE. No writing schedule needed.
+*Read synthesis outcome in CHECKIN.md first. Then apply the matching trigger.*
 
-**Key policy window**: H.R. 492 / Saving the Civil Service Act, June 1–30, 2026 (Senate HSGAC consideration window). The Pendleton Act democratic-infrastructure reframe in Domain 56 is the analytical complement to the legislative argument in H.R. 492. Distributing Domain 56 to congressional staffers during active committee consideration creates a policy-advocacy alignment not available outside this window.
+### Trigger: STRONG (Quality Reply Points ≥ 3.5)
 
-**Distribution schedule**:
+**Immediate actions (May 21 evening)**:
+1. Begin Domain 56 URL spot-check or schedule for May 22 morning (2 hours)
+2. Open `DOMAIN_56_DISTRIBUTION_BRIDGE.md` — identify Wave 1 contacts (5 minutes)
+3. Update `phase-2-research/domain-56/execution-log.md` with Phase 2 activation date
+4. Confirm *Trump v. Barbara* has not yet issued (SCOTUSblog check — 2 minutes)
 
-| Date | Action | Audience | Hours |
-|------|--------|----------|-------|
-| May 22, 2026 | URL spot-check — browser-test all 47 citations | Internal | 2 |
-| May 22–25 | Identify 5–7 highest-priority Wave 1 contacts; draft cover emails | Partnership for Public Service, AFGE, NTEU, Brookings, Government Executive | 3–4 |
-| May 26 – June 7 | Send Wave 1 distribution emails | 5–7 contacts (governance angle) | 1–2 |
-| June 1–30 | Coordinate outreach with H.R. 492 window; identify HSGAC and House Oversight Committee staff contacts | Congressional staff | 2–4 |
-| June 15 | Wave 2 distribution | NAPA, Brookings Governance Studies, Government Accountability Project | 1–2 |
-| Q3 2026 (TBD) | Update document with PEER v. OPM preliminary injunction outcome when issued | Prior distribution contacts | 2 |
+**Week of May 22 (Domain 56 activation week)**:
+- Complete Domain 56 URL spot-check by May 22 end
+- Draft cover emails for 5–7 Wave 1 contacts by May 25
+- Schedule Domain 58 optional peer review for first two weeks of June
 
-**Gate date**: May 22, 2026 (URL spot-check). All subsequent distribution steps proceed after URL confirmation passes.
+**Month of June (pre-distribution checks)**:
+- June 1–5: Domain 57 ICC currency check (3–4 hours)
+- June 1–15: Domain 59 source URL confirmations (2–3 hours)
+- June 1–10: Domain 58 peer review in progress
+- June 1–30: Domain 56 Wave 1 distribution sends + H.R. 492 congressional outreach
 
-**Completion date**: COMPLETE. Distribution-pipeline-only from May 21 forward.
-
----
-
-### Domain 58: Tribal Sovereignty as Democratic Infrastructure
-
-**STATUS UPDATE (May 20 verification)**: Domain 58 production pass is COMPLETE. The canonical file `domains/domain-58-tribal-sovereignty.md` exists and is verified at 11,388 words with 71 numbered citations as of May 19, 2026. The execution pass described below was completed prior to May 20. The only remaining production action is the rapid-response update when *Trump v. Barbara* issues. The pre-pass setup and Week 1 schedule below are retained for reference/audit purposes only — they do not need to be re-executed.
-
-**Key policy window**: *Trump v. Barbara* SCOTUS ruling (expected late June/early July 2026). The domain is production-ready. The rapid-response update is pre-documented in `DOMAIN_58_EXECUTION_CHECKLIST.md` Section 5.1.
-
-**[COMPLETED] Pre-pass setup (Day 1, 0.5 hrs)**:
-- Open `DOMAIN_58_EXECUTION_CHECKLIST.md` as working guide
-- Confirm existing draft at `domains/domain-38-tribal-sovereignty-indigenous-democratic-design.md` is loaded (~5,200 words, 34 citations)
-- Open `DOMAIN_58_SOURCE_STAGING.md` to confirm supplemental sources list
-- Create output file: `domains/domain-58-tribal-sovereignty.md`
-
-**[COMPLETED] Week 1: Extension and canonicalization (Days 1–5, 8–12 hrs)**:
-
-| Day | Activity | Hours | Deliverable |
-|-----|----------|-------|-------------|
-| 1 | Setup + review existing draft; identify sections needing extension | 2 | Annotated draft with extension targets |
-| 2 | Draft extensions for Sections 2–3 (citizenship threat pathway, IHS/BIA defunding) | 3 | Sections 2–3 extended to target length |
-| 3 | Draft extensions for Sections 4–5 (redistricting post-*Callais*, rapid-response protocol) | 3 | Sections 4–5 extended; rapid-response protocol in place |
-| 4 | Integrate supplemental citations from `DOMAIN_58_SOURCE_STAGING.md`; verify all claims are citation-anchored | 2 | Citations integrated; 40+ total |
-| 5 | Internal review pass; cross-reference accuracy check vs. Domain 37b; confirm Montana SB 490 and *Turtle Mountain* GVR (May 18, 2026) are reflected | 1–2 | Canonical file complete (~7,000–8,000 words, 40–50 citations) |
-
-**Gate: June 10, 2026 — PRODUCTION COMPLETE MILESTONE**. Canonical file at `domains/domain-58-tribal-sovereignty.md` exists; is 7,000–8,000 words; has 40–50 citations; rapid-response protocol section is present.
-
-**Peer review cycle (June 1–17)**:
-
-| Date | Action | Hours |
-|------|--------|-------|
-| June 1–7 | Send draft to peer reviewer (Native American law specialist or Domain 1/37b voting rights researcher); structured review brief with three questions: (1) factual accuracy of citizenship threat analysis; (2) accuracy of redistricting post-*Callais* analysis; (3) completeness of movement landscape mapping | 1 |
-| June 7–14 | Reviewer has draft (5–7 business days async review) | External |
-| June 14–17 | Incorporate P0 and P1 feedback; final citation URL verification | 2–3 |
-
-**Gate: June 17, 2026 — PEER REVIEW COMPLETE**. All P0 issues resolved; domain is at publication-ready status. This is the latest peer review completion date that maintains adequate buffer before *Trump v. Barbara* ruling window.
-
-**External trigger: *Trump v. Barbara* ruling (expected late June/early July 2026)**:
-
-When the ruling issues (monitor SCOTUSblog daily from June 15 forward):
-1. Read ruling within 24 hours
-2. Apply rapid-response protocol from `DOMAIN_58_EXECUTION_CHECKLIST.md` Section 5.1 (pre-written; expected 2–3 hours of update work)
-3. Update Section 2 (citizenship threat pathway) with ruling outcome
-4. Update rapid-response protocol section with holding details and downstream effects on tribal citizenship status
-5. Commit revised canonical file to master
-
-**Distribution timeline**:
-
-| Date | Action | Audience |
-|------|--------|----------|
-| July 1–15 | Wave 1 (post-ruling update complete) | NARF, NCAI, ACLU Voting Rights, Senate Indian Affairs Committee staff |
-| August 2026 | Wave 2 | Native Organizers Alliance, National Indian Health Board, First Nations Development Institute |
-
-**Hard gate**: Domain 58 must reach production-ready status by June 10, 2026 (peer review complete by June 17, 2026). If production has not started by May 25, the June 10 deadline is at risk. Escalate immediately.
-
-**Completion date**: June 10, 2026 (production-ready). Post-ruling update + first distribution July 2026.
+Full Phase 2 running at maximum velocity.
 
 ---
 
-### Domain 59: Economic Precarity and Democratic Exclusion
+### Trigger: MODERATE (Quality Reply Points 2.0–3.4)
 
-**STATUS UPDATE (May 20 verification)**: Domain 59 production is COMPLETE. The canonical file `domains/domain-59-economic-precarity-and-civic-participation.md` exists and is verified at ~8,450 words with 44+ citations as of May 15, 2026. The week-by-week writing schedule below was the planned production roadmap; it has been completed ahead of schedule. The schedule is retained for reference/audit purposes. The only remaining pre-distribution actions are: (a) citation spot-check before September 1 send; (b) optional peer review July–August 2026; (c) confirm Georgetown CCF URL is live.
+**Immediate actions**: Same as STRONG. No adjustment to Phase 2 sequence or timing.
 
-**Key policy window**: OBBBA Medicaid work requirements take effect December 2026. Organizations need Domain 59's civic participation framing 3 months before implementation. First distribution September 1, 2026 is the target. HHS interim final rule confirmed for June 1, 2026 (statutory deadline; no public comment period).
-
-**[REFERENCE ONLY — production complete] Week-by-week schedule** (original June 16 – July 27 production window, 59–65 hours total):
-
-#### Pre-Production (June 1–15, 7–8 hrs)
-
-| Date | Activity | Hours | Gate |
-|------|----------|-------|------|
-| June 1–5 | Acquire and confirm missing sources: BLS alternative work arrangement survey (current edition); NCSL state voting time-off law survey; OECD Better Life Index 2024–2025; IDEA voter turnout database Nordic tables | 3 | Source folder complete |
-| June 8–12 | Pre-production domain reads: read Domains 31 (Healthcare/OBBBA), 47 (Housing Security), 50 (Healthcare-Democracy Nexus) in full; annotate exact cross-reference boundaries; map what Domain 59 Section 5 can cite vs. what must not duplicate | 4 | Cross-reference map complete |
-| June 12–15 | Confirm Georgetown CCF and CBPP OBBBA analysis URL access; confirm Slee/Desmond Princeton repository working paper version accessible | 1 | All primary sources confirmed accessible |
-
-**Gate: June 15, 2026 — PRE-PRODUCTION COMPLETE**. Proceed to research start June 16.
-
-#### Week 1: Research Phase 1 — Sections 1–3 and Section 5 Outline (June 16–27, ~16 hrs)
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| June 16–17 | Research Section 1 (income-participation gap): CPS Voting and Registration Supplement; PRRI 2024 American Values Survey (26-point gap finding); Harvard IOP Spring 2026 Youth Poll; Schlozman/Verba/Brady income-turnout chapters | 4 | 4 | Section 1 research notes |
-| June 18–20 | Research Section 2 (scarcity framework + Dallas Fed causality): Dallas Fed wp2517 full read (revised March 2026) and wp2517r1; Mullainathan/Shafir "Scarcity" bandwidth tax chapter; cognitive bandwidth mechanism documentation | 4 | 8 | Section 2 research notes |
-| June 23–25 | Research Section 3 (housing instability): Slee/Desmond Politics and Society 2023 full read; PNAS 2024 housing mobility and political participation; McCartney dissertation (eviction and voter registration); Desmond "Evicted" supplemental data | 4 | 12 | Section 3 research notes |
-| June 26–27 | Outline Section 5 (OBBBA compounding argument) in detail before writing: map the 5-cut compounding structure; quantify each cut's civic participation effect using Georgetown CCF (Medicaid), CBPP (SNAP), Urban Institute (housing vouchers), CBO (work requirements), Commonwealth Fund (coverage losses) | 4 | 16 | Section 5 detailed outline complete |
-
-**Gate: June 27, 2026 — WAVE 1 RESEARCH MILESTONE**. Sections 1–3 research complete; Section 5 outline complete. No writing has started yet — separation of research and writing phases is specified in `DOMAINS_57_59_PRODUCTION_ROADMAP.md`.
-
-#### Week 2: Research Phase 2 — Sections 4, 6, 7 (July 1–5, ~9 hrs)
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| July 1–2 | Research Section 4 (gig economy temporal exclusion): BLS alternative work arrangements survey; EPI gig economy analysis; NDWA survey data on domestic worker voting; NCSL state voting time-off law survey | 4 | 20 | Section 4 research notes |
-| July 3–5 | Research Sections 6–7: Section 6 comparative democracy (OECD Better Life Index civic participation data; IDEA voter turnout database Nordic comparison; Cambridge Core economic security and democracy literature); Section 7 reform architecture (RTC/CTC legislative models; state automation fund policy options; portable benefits frameworks) | 5 | 25 | Sections 6–7 research notes |
-
-**Gate: July 5, 2026 — ALL RESEARCH COMPLETE**. Full research notes for all 7 sections; Section 5 detailed outline already done. Proceed to writing phase.
-
-#### Week 3: Writing Phase 1 — Sections 1–5 (July 1–15, ~17 hrs)
-
-*Writing begins July 1 while Section 4/6/7 research continues — these are non-conflicting tracks since Section 1–3 research completed June 27.*
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| July 1–2 | Write Sections 1–2 (income-participation gap + scarcity framework): most empirically grounded; establishes analytical register; target ~1,200 words each | 4 | 29 | Sections 1–2 drafted (~2,400 words) |
-| July 8–10 | Write Section 3 (housing instability): Slee/Desmond causal finding is the anchor; PNAS 2024 and McCartney supporting; ~1,200 words | 3 | 32 | Section 3 drafted |
-| July 11–12 | Write Section 4 (gig economy temporal exclusion): BLS data + state law survey; ~1,000 words | 2 | 34 | Section 4 drafted |
-| July 13–15 | Write Section 5 (OBBBA compounding argument): 2 full writing days; most demanding section; compounding structure (5 simultaneous cuts, multiplicative not additive) requires precise quantification; target ~1,400 words | 5 | 39 | Section 5 drafted |
-
-**Internal review checkpoint (July 12, ~2 hrs)**: After Sections 1–4 are drafted, read them sequentially for internal consistency. Check: (a) causal claims stated at appropriate confidence levels; (b) cross-references to Domains 31/47/50 are accurate and not duplicative; (c) analytical register is consistent across sections. Then proceed to Section 5 with confidence.
-
-**Gate: July 15, 2026 — SECTIONS 1–5 COMPLETE DRAFT** (~6,000–7,000 words).
-
-#### Week 4: Writing Phase 2 — Sections 6–7 and Peer Review Handoff (July 15–22)
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| July 15 | Write Sections 6–7 (comparative democracy + reform architecture): ~1,000 words each | 3–4 | 43 | **FIRST COMPLETE DRAFT MILESTONE** — all 7 sections (~8,200 words) |
-| July 16 | Send complete draft to peer reviewer (Domain 47 researcher preferred; EPI economist as alternative) with structured review brief: three questions — (1) is the Dallas Fed causal finding characterized accurately? (2) is the Section 5 multiplicative compounding argument defensible? (3) is the Mullainathan/Shafir bandwidth tax framework accurately applied? | 1 | 44 | Draft sent; reviewer clock starts |
-| July 16–22 | Peer review in progress (5–7 business days) | External | — | Reviewer has draft |
-
-**Gate: July 22, 2026 — PEER REVIEW FEEDBACK RECEIVED (TARGET)**. If reviewer returns early, process feedback immediately.
-
-#### Week 5: Revision and Finalization (July 23–27, ~10 hrs)
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| July 23–24 | Process peer review feedback: implement all P0 (blocking errors) within 24 hours; implement highest-impact P1 items | 3–4 | 47 | Revised draft complete |
-| July 25–26 | Citation verification: browser-test ALL citations (48+ sources); confirm all data figures cross-referenced to source tables; confirm all legislative citations on Congress.gov; update any dead URLs | 5–7 | 54 | All citations verified live |
-| July 27 | Final edit: publication-ready formatting; confirm Midwest Zone 5 section intact (already in Section 1 draft); commit canonical file | 2 | 56 | **PRODUCTION COMPLETE MILESTONE** — `domain-59-economic-precarity.md` committed to master |
-
-**Gate: July 27, 2026 — DOMAIN 59 PRODUCTION COMPLETE**. Canonical file at 7,500–8,500 words; 48+ citations; all URLs verified; peer review incorporated.
-
-**Distribution timeline**:
-
-| Date | Action | Audience |
-|------|--------|----------|
-| August 1–15 | Prepare Wave 1 distribution materials; customize distribution bridge document; draft cover emails | Internal prep |
-| September 1, 2026 | **FIRST DISTRIBUTION DATE** — Wave 1 | LWV, Demos, EPI, NLIHC, CBPP, SEIU, NextGen America |
-| September 15 – October 1 | Wave 2 | Working Families Party, CIRCLE, Campus Vote Project, labor union networks |
-| October 1 – November 3 | Final pre-midterm distribution | Election protection orgs, state voter protection coalitions |
-| January–February 2027 | Phase 3 institutional materials | SNAP comment letters, Medicaid work requirement comment period, congressional testimony |
-
-**Hard distribution deadline**: September 1, 2026. If production slips past July 27, flag immediately — September 30 is the maximum slip before the 3-month pre-implementation buffer is cut to 2 months.
-
-**Completion date**: July 27, 2026 (production). September 1, 2026 (first distribution).
+**Additional consideration**: If Phase 1 reply rate was low (1–2 substantive contacts), initiate a Phase 1 second-wave outreach to new contacts as a parallel workstream in June. This does not gate Phase 2 distribution. Domain 56 and Domain 58 are time-gated by external events and proceed regardless of Phase 1 second-wave status.
 
 ---
 
-### Domain 57: Multilateral Withdrawal and Democratic Norm Erosion
+### Trigger: WEAK (Quality Reply Points 1.0–1.9)
 
-**STATUS UPDATE (May 20 verification)**: Domain 57 production is COMPLETE. The canonical file `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` exists and is verified at 9,201 words with 49 numbered citations as of May 15, 2026. The week-by-week writing schedule below was the planned production roadmap; it has been completed ahead of schedule. The schedule is retained for reference/audit purposes. The only remaining pre-distribution actions are: (a) citation spot-check, including ICC sanctions status update, before August 10 send; (b) optional peer review before distribution; (c) confirm Ikenberry library access was resolved or secondary sources substituted in the final text.
+**Immediate actions**: Phase 2 proceeds on independent distribution track. *Trump v. Barbara* (Domain 58) and UNGA 81 (Domain 57) are external clocks — they do not respond to Phase 1 outcomes.
 
-**Key policy window**: UNGA 81 High-Level Week, September 22–28, 2026. August 10 is the first-distribution hard deadline — 6 weeks before UNGA convenes, allowing reading time for Senate Foreign Relations Committee staff and international organizations.
+**Sequencing adjustment**: Lead with Domain 56 in June, using the H.R. 492 legislative window to build Phase 2 distribution relationships that Phase 1 did not fully establish. Domain 56's Pendleton Act democratic-infrastructure reframe is a fresh analytical angle for contacts who did not respond to Phase 1 framing. A strong Domain 56 distribution round can warm up the network for Domains 57, 58, and 59.
 
-**[REFERENCE ONLY — production complete] Week-by-week schedule** (original June 16 – August 10 production window, 45–51 hours total):
-
-#### Pre-Production (June 16–30, 6–7 hrs)
-
-| Date | Activity | Hours | Gate |
-|------|----------|-------|------|
-| June 16–20 | Read Domains 23 (Trade Policy) and 28 (Foreign Policy) in full; map exact cross-reference boundaries for Section 2 (constitutional authority) and Section 4 (trade policy adjacency) | 2 | Cross-reference map complete |
-| June 16–20 | Acquire library-access sources: Ikenberry "Liberal Leviathan" (Princeton UP, 2011) — identify chapters on domestic order and accountability constraints; identify specific Slaughter international institutions paper most relevant to accountability mechanisms | 2 | Library sources acquired or alternatives identified |
-| June 23–27 | Research Section 2 in full (constitutional law): CRS R44761 and R48868 full reads; 2024 NDAA Section 1250A statutory text; Curtiss-Wright doctrine and limitations; Verfassungsblog constitutional constraints analysis | 2–3 | Section 2 research notes complete |
-
-**Gate: June 30, 2026 — PRE-PRODUCTION COMPLETE**. Library access resolved; Section 2 research complete; cross-reference boundaries mapped.
-
-#### Week 1: Research Phase — Sections 1, 3, 4 (July 1–5, ~11 hrs)
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| July 1–2 | Research Section 1 (66-organization catalog and taxonomy): systematic review of January 7, 2026 Presidential Memorandum; catalog all 66 organizations by accountability function (electoral benchmarking, treaty compliance, norm cost); cross-reference Focus 2030 report | 4 | 4 | Section 1 research notes + taxonomy table |
-| July 3–4 | Research Section 3 (domestic accountability infrastructure reframe): Ikenberry "liberal order" thesis applied to domestic accountability argument; ICC sanctions chilling effects (CICC "Criminalising Accountability" report; HRW CSO condemnation March 11, 2026); benchmarking data as civil society tool | 4 | 8 | Section 3 research notes |
-| July 5 | Research Section 4 (European strategic autonomy): EUISS, ECFR, Chatham House synthesis on EU Article 42.7 development; E3G on climate coalition fragmentation | 3 | 11 | Section 4 research notes |
-
-#### Week 2: Research Phase — Sections 5, 6, 7 (July 8–12, ~9 hrs)
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| July 8–9 | Research Section 5 (comparative cases): Brexit Article 50 trigger; Turkey–Council of Europe democratic backsliding; UNESCO 1984 US withdrawal and 2003 return; Paris Agreement withdrawal and Biden return | 4 | 15 | Section 5 research notes |
-| July 10–11 | Research Section 6 (movement infrastructure): map primary distribution constituency; identify 5–7 organizations bridging international accountability and domestic civil society advocacy | 3 | 18 | Section 6 research notes + movement landscape map |
-| July 12 | Research Section 7 (reform pathways): Treaty Withdrawal Notification Act; Multilateral Commitment Protection Act; ICC Sanctions Repeal; current Senate sponsors and hearing status | 2 | 20 | Section 7 research notes |
-
-**Gate: July 12, 2026 — ALL RESEARCH COMPLETE**. Full research notes for all 7 sections. Proceed to writing.
-
-#### Week 3: Writing Phase — Sections 1–3 (July 16–20, ~10 hrs)
-
-*Domain 59 peer review runs concurrently — researcher writes Domain 57 while Domain 59 reviewer has the draft.*
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| July 16 | Write Section 1 (66-organization catalog): taxonomy of accountability functions; policy narrative on Presidential Memorandum scope; ~1,000 words | 2 | 22 | Section 1 drafted |
-| July 17–18 | Write Section 2 (constitutional asymmetry): most technically demanding section; Article II ratification power; Curtiss-Wright doctrine; CRS R44761/R48868; 2024 NDAA Section 1250A; ~1,200 words | 4 | 26 | Section 2 drafted |
-| July 19–20 | Write Section 3 (domestic accountability infrastructure reframe): Ikenberry applied to domestic argument; ICC sanctions as case study in civil society capacity destruction; benchmarking data as democratic tool; ~1,200 words | 4 | 30 | Section 3 drafted |
-
-#### Week 4: Writing Phase — Sections 4–7 and Internal Review (July 21–27, ~10 hrs)
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| July 21–22 | Write Section 4 (European strategic autonomy): EU Article 42.7 development; NATO Article 5 credibility erosion; European coalition consequences; ~1,000 words | 3 | 33 | Section 4 drafted |
-| July 23–24 | Write Section 5 (comparative cases): Brexit, Turkey-CoE, UNESCO 1984, Paris Agreement; pattern analysis; ~1,000 words | 3 | 36 | Section 5 drafted |
-| July 25 | Write Sections 6–7 (movement infrastructure + reform pathways): ~1,000 words combined | 2 | 38 | **FIRST COMPLETE DRAFT MILESTONE** — all 7 sections (~6,500–7,500 words) |
-| July 27 | Internal review checkpoint: read complete draft; confirm the "withdrawal as domestic accountability dismantlement" reframe is demonstrated by evidence, not merely asserted; confirm Section 3 Ikenberry application is accurate and not overclaimed | 2 | 40 | Draft ready for peer review |
-
-**Gate: July 27, 2026 — COMPLETE DRAFT READY FOR PEER REVIEW**.
-
-#### Week 5: Peer Review and Finalization (July 28 – August 10, ~11 hrs)
-
-| Date | Activity | Hours | Cumulative | Deliverable |
-|------|----------|-------|------------|-------------|
-| July 28 | Send draft to peer reviewer (Domain 23 researcher preferred; Domain 28 as alternative) with structured review brief: three questions — (1) is the constitutional asymmetry argument in Section 2 legally accurate? (2) is the "withdrawal as domestic accountability dismantlement" reframe in Section 3 defensible? (3) is the European strategic autonomy analysis in Section 4 accurate? | 1 | 41 | Draft sent; reviewer clock starts |
-| July 28 – August 3 | Peer review in progress (1 week) | External | — | Reviewer has draft |
-| August 4–5 | Process peer review feedback; implement all P0 items; implement highest-impact P1 items | 3 | 44 | Revised draft complete |
-| August 6–9 | Citation verification: browser-test all citations (45–57 sources); CRS citations confirmed; academic citations confirmed against journal DOIs; all international organization URLs verified | 4–6 | 50 | All citations verified live |
-| August 10 | Final edit; publication-ready formatting; integration into framework executive summary; commit canonical file | 2 | 52 | **PRODUCTION COMPLETE MILESTONE** — `domain-57-multilateral-withdrawal.md` committed to master |
-
-**Gate: August 10, 2026 — DOMAIN 57 PRODUCTION COMPLETE AND FIRST DISTRIBUTION LAUNCHES**.
-
-**Distribution timeline**:
-
-| Date | Action | Audience |
-|------|--------|----------|
-| August 10, 2026 | **FIRST DISTRIBUTION DATE** — Wave 1 | HRW, Amnesty, CFR, Carnegie, Sierra Club, NED, NDI, Freedom House |
-| August 15 – September 22 | Wave 2 | Senate Foreign Relations Committee staff; climate advocacy organizations; congressional multilateralism caucus |
-| September 22–28, 2026 | UNGA 81 High-Level Week — maximum relevance window | International constituency at UNGA |
-| October – December 2026 | Phase 3 institutional materials | Senate Foreign Relations hearing materials; NDI/IRI/Freedom House grant cycle (FY2027) |
-
-**Hard distribution deadline**: August 10, 2026. If production cannot complete by August 10, reframe the primary distribution hook to the November 3 midterm domestic constitutional asymmetry argument — the ICC sanctions and domestic civil society framing is not calendar-constrained.
-
-**Completion date**: August 10, 2026 (production and first distribution).
+**Timing adjustments**: None. All hard deadlines hold. Domain 59 September 30 maximum flex is available if Phase 1 second-wave work competes for bandwidth in June–July.
 
 ---
 
-## Section 3: Cross-Domain Dependencies
+### Trigger: Very Weak / Structural Failure (Quality Reply Points < 1.0)
 
-### Dependency Map
+**Immediate actions**: See `PHASE_2_CONTINGENCY_PLAYBOOK.md` for Phase 1 remediation steps. Phase 2 distribution continues on independent track.
 
-**Domain 59 requires pre-production reads of Domains 31, 47, 50 (non-blocking, 4 hours)**:
-Domain 59 Section 5 (OBBBA compounding argument) must be calibrated against three existing domains to avoid duplication and identify cross-reference language. This is a 4-hour pre-production reading task (built into the June 8–12 pre-production week); it is not a blocking dependency.
-
-**Domain 57 requires pre-production reads of Domains 23 and 28 (non-blocking, 2 hours)**:
-Domain 57 Sections 2 and 4 must be calibrated against Trade Policy (Domain 23) and Foreign Policy (Domain 28) to avoid duplication in constitutional authority analysis. This is a 2-hour pre-production reading task.
-
-**Domain 58 timing → all other Phase 2 domains (external clock)**:
-Domain 58's *Trump v. Barbara* hard deadline affects production sequencing for the entire Phase 2 corpus. Priority rule: Domain 58 production pass is the single most time-sensitive task in Phase 2. All other Phase 2 tasks are lower priority until Domain 58 production pass is confirmed complete.
-
-### Sequencing Constraint: Which Domain Must Complete First?
-
-Domain 58 production pass MUST complete first — before any other Phase 2 production work begins. This is a hard rule driven by the *Trump v. Barbara* timing constraint.
-
-After Domain 58 production is confirmed complete, the sequence is parallel:
-- Domain 56 distribution proceeds immediately (already complete)
-- Domain 59 pre-production begins June 1 (domain reads and source confirmations)
-- Domain 57 pre-production begins June 16 (library access and CRS reads)
-- Domain 59 production begins June 16
-- Domain 57 production begins July 1
-
-No domain production start date depends on another domain's production completion date except that each domain's writing phase cannot begin until that domain's own research phase is complete.
-
-### Shared Sources
-
-Three sources appear in multiple domains and should be cited with cross-references rather than full re-documentation:
-
-1. **CBPP OBBBA distributional analysis**: Central to Domain 59 Section 5. If cited in Domain 39 (Healthcare), note the cross-reference rather than re-documenting.
-2. **CRS reports on presidential power** (R44761, R48868): Central to Domain 57 Section 2. If any other domain references presidential withdrawal authority, cite Domain 57 as the full analysis.
-3. **Dallas Fed wp2517**: Central to Domain 59 Section 2. Unique to Domain 59 in the Phase 2 corpus — no cross-domain duplication concern.
+**Timing adjustments**: Domain 57 UNGA 81 anchor (August 10) holds. If researcher bandwidth is constrained by Phase 1 remediation work in July, consider shifting Domain 57 primary distribution hook to November 3 domestic midterm framing — the ICC sanctions and domestic civil society capacity argument is not calendar-constrained in the same way the international UNGA audience is. Domain 59 September 30 maximum flex. Domain 58 *Trump v. Barbara* update — 72 hours regardless.
 
 ---
 
-## Section 4: Success Metrics and Gate Criteria
+## Section 3: Calendar View — June 1 to August 15, 2026
 
-### Per-Domain Completion Criteria
+*Week-by-week execution schedule. Each week lists the domain(s) active, the primary task, expected hours, and gate status.*
 
-A domain is genuinely production-complete when ALL five criteria are met:
+---
 
-**(a) 40–50+ sources cited**: The minimum source threshold for Phase 2 domains. Source count should be verified in the canonical file's citation list, not estimated.
+### May 22 – May 31: Phase 2 Launch Week
 
-**(b) 7,000–8,500 words**: Target for fully written Phase 2 domain documents (Domains 57, 59). Domain 58 has a slightly lower target (7,000–8,000 words) given the existing draft starting point. Domain 56 already meets this at 6,800 words.
+| Date | Domain | Task | Hours | Gate |
+|------|--------|------|-------|------|
+| May 22 | 56 | URL spot-check: browser-test all 47 citations from `DOMAIN_56_EXECUTION_CHECKLIST.md` verification list; record pass/fail in `phase-2-research/domain-56/execution-log.md` | 2 | Domain 56 distribution-ready gate |
+| May 22–25 | 56 | Identify 5–7 Wave 1 contacts from `DOMAIN_56_DISTRIBUTION_BRIDGE.md`; draft personalized cover emails using Section 5 of `phase-2-research-activation-checklist.md` template | 3–4 | Wave 1 emails ready |
+| May 22–25 | 58 | Identify peer reviewer (Native American law specialist or NARF researcher); draft peer review brief with 3 structured questions: (1) accuracy of citizenship threat analysis, (2) accuracy of redistricting post-*Callais* analysis, (3) completeness of movement landscape | 1 | Peer review initiated |
+| May 26 | 56 | Send Wave 1 distribution emails | 1–2 | Wave 1 sent |
+| May 26–31 | 58 | Peer review in progress; reviewer has complete draft | External | Reviewer clock running |
 
-**(c) Midwest Zone 5 analysis integrated**: At least 2–3 concrete Midwest data points or organizational references appear in the final document. Domain 56: AFGE/NTEU Midwest membership. Domain 58: Upper Midwest tribal nations, Great Lakes voting rights cases. Domain 59: Farm bankruptcy filings (46% increase Q1 2025 vs. Q1 2023), rural hospital closures, deindustrialization data (all already in Section 1 draft). Domain 57: Chicago Council on Global Affairs to be added in Section 6.
+**Week cumulative hours**: 7–9 hours. **Gate status at May 31**: Domain 56 Wave 1 launched; Domain 58 peer review in progress.
 
-**(d) Movement leverage section complete**: At least 5–7 organizations named in the distribution section; role (peer review, distribution, advocacy) specified; connection between domain findings and organizations' existing campaigns articulated.
+---
 
-**(e) Peer review passed**: One external reviewer has reviewed the complete draft and provided structured feedback. All P0 (blocking) issues incorporated. A peer review log file documents the reviewer, date, feedback summary, and resolution status for each issue.
+### June 1 – June 7: Multi-Domain Pre-Distribution Checks
 
-### Per-Domain Status at May 21
+| Date | Domain | Task | Hours | Gate |
+|------|--------|------|-------|------|
+| June 1 | ALL | HHS.gov check: has final LTSS guidance been issued? (30 min). Check PACER/civil rights trackers for OBBBA injunction. (30 min) | 1 | Domain 59 Section 5 currency confirmed |
+| June 1–5 | 57 | ICC currency check: confirm ICC sanctions status via CICC report and HRW.org (March 11 CSO condemnation URL). Check Focus 2030 report URL accessibility. Flag any diplomatic developments since May 20. | 3–4 | Domain 57 ICC status confirmed |
+| June 1–5 | 59 | Source URL confirmations batch 1: Slee/Desmond Princeton repository; Kuk/Hajnal/Lajevardi PNAS 2024 direct URL; Georgetown CCF OBBBA analysis; CBPP OBBBA distributional analysis | 1–2 | 4 of 6 source confirmations complete |
+| June 1–7 | 56 | H.R. 492 legislative window opens. Check Congress.gov for bill status. If H.R. 492 has advanced to committee markup: add congressional staff to Wave 1 distribution and send immediately. | 1 | H.R. 492 status noted; congressional outreach scoped |
+| June 5–7 | 59 | Source URL confirmations batch 2: OECD Better Life Index specific tables; IDEA voter turnout database Nordic comparison tables | 1 | All 6 source confirmations complete |
+| June 7 | 58 | Peer review return deadline (5–7 business days from May 26 send). Process feedback: categorize all P0 (blocking) and P1 (significant) items. | 3 | Peer review complete gate |
 
-**NOTE**: This table was updated May 20 following pre-staging verification pass. Prior versions showed Domain 58 as NEAR-COMPLETE and Domains 57/59 as PRE-PRODUCTION. All four domains are now confirmed COMPLETE.
+**Week cumulative hours**: 9–12 hours. **Gate status at June 7**: Domain 57 ICC check complete; Domain 59 source confirmations complete; Domain 58 peer review returned.
 
-| Domain | (a) Sources | (b) Words | (c) Midwest | (d) Movement | (e) Peer Review | Status |
-|--------|-------------|-----------|-------------|--------------|-----------------|--------|
-| 56 | 47 (header-confirmed) | ~6,800 (header) | Integrated | Complete | Complete | COMPLETE |
-| 58 | 71 (file-verified May 20 — numbered list 1–71) | 11,388 (file-verified May 20) | Integrated | Complete | Optional pre-distribution | COMPLETE |
-| 59 | 44 header + 49 URL refs (file-verified May 20) | ~8,450 (file-verified May 20) | Integrated (Midwest data in Section 1) | Complete | Optional pre-distribution | COMPLETE |
-| 57 | 49 (file-verified May 20 — numbered list 1–49) | 9,201 (file-verified May 20) | Chicago Council on Global Affairs ref present | Complete | Optional pre-distribution | COMPLETE |
+---
 
-### Milestone Schedule — Single-Page Reference
+### June 8 – June 15: Domain 56 Congressional Window + Domain 58 Finalization
 
-Pin or print this as the working calendar after synthesis.
+| Date | Domain | Task | Hours | Gate |
+|------|--------|------|-------|------|
+| June 8–10 | 58 | Incorporate peer review feedback: all P0 items within 24 hours; highest-impact P1 items within 48 hours. Commit revised canonical file. | 2–3 | Domain 58 publication-ready gate |
+| June 8–10 | 56 | Congressional outreach: identify Senate HSGAC and House Oversight Committee staff contacts; send Domain 56 with H.R. 492 framing note | 2–4 | Congressional distribution underway |
+| June 12–15 | 59 | Confirm Domain 59 pre-distribution plan: schedule optional peer review for July 16–22 window; confirm reviewer availability | 1 | Domain 59 peer review scheduled |
+| June 15 | 56 | Domain 56 Wave 2 distribution: NAPA, Brookings Governance Studies, Government Accountability Project | 1–2 | Wave 2 sent |
 
-| Milestone | Domain | Target Date | Hard/Soft |
-|-----------|--------|-------------|-----------|
-| Domain 56 URL spot-check complete | 56 | May 22, 2026 | Hard |
+**Week cumulative hours**: 6–10 hours. **Gate status at June 15**: Domain 56 Wave 1 and Wave 2 complete; Domain 58 publication-ready; Domain 59 peer review scheduled.
+
+---
+
+### June 16 – June 30: Domain 57 Audit Completion + Domain 59 Pre-Distribution Window
+
+| Date | Domain | Task | Hours | Gate |
+|------|--------|------|-------|------|
+| June 15–20 | 57 | Confirm Ikenberry citation status in canonical file (check Section 3): direct Princeton citations or secondary summaries? Record in `phase-2-research/domain-57/library-access-log.md`. | 1 | Ikenberry status confirmed |
+| June 15–20 | ALL | Begin SCOTUSblog daily monitoring for *Trump v. Barbara* ruling. This monitoring requires only 5 minutes/day. | 0 (routine) | Monitoring active |
+| June 20–30 | 57 | Confirm optional peer review scheduling for July 28 – August 7 window. Identify reviewer (Domain 23 researcher, trade policy, or Domain 28 foreign policy). Draft peer review brief: three questions (constitutional asymmetry accuracy, "withdrawal as domestic accountability dismantlement" defensibility, European strategic autonomy analysis accuracy). | 1 | Domain 57 peer review ready to initiate |
+| June 30 | 57 | All pre-distribution work for Domain 57 complete: ICC currency confirmed, Ikenberry status confirmed, peer reviewer identified. | — | Domain 57 August 10 on track |
+
+**Week cumulative hours**: 2–3 hours. **Gate status at June 30**: All four domains on track for their respective distribution dates.
+
+---
+
+### July 1 – July 15: Domain 59 Peer Review + Domain 57 Citation Preparation
+
+| Date | Domain | Task | Hours | Gate |
+|------|--------|------|-------|------|
+| July 1–5 | 59 | Final pre-distribution review of canonical file: confirm Section 5 OBBBA compounding argument matches latest HHS guidance (per June 1 check); confirm Midwest Zone 5 data is intact; confirm cross-domain references to Domains 31, 47, 50 are accurate. | 2 | Domain 59 distribution-ready (conditional on peer review) |
+| July 5 | 58 | *Trump v. Barbara* monitoring: no ruling yet expected before mid-June, but confirm via SCOTUSblog by July 5 that ruling has not issued. Log check. | 5 min | Monitoring current |
+| July 8–12 | 57 | Begin citation spot-check preparation: pull canonical file's 49-citation numbered list; identify the four ICC/Ikenberry/Focus-2030/CRS category citations that require priority verification; schedule 4–6 hour spot-check for July 28 – August 9. | 1 | Citation spot-check queued |
+| July 15 | 59 | Confirm complete draft is ready for peer reviewer send on July 16. Verify no structural changes needed based on any June policy developments (OBBBA injunction status, HHS guidance updates). | 1 | Peer review handoff ready |
+
+**Week cumulative hours**: 4–5 hours. **Gate status at July 15**: Domain 59 ready for peer review; Domain 57 citation spot-check queued; Domain 58 rapid-response monitoring current.
+
+---
+
+### July 16 – July 27: Domain 59 Peer Review + Domain 57 Citation Spot-Check
+
+| Date | Domain | Task | Hours | Gate |
+|------|--------|------|-------|------|
+| July 16 | 59 | Send complete canonical draft to peer reviewer with structured brief (three questions: Dallas Fed causal finding characterization, Section 5 multiplicative compounding argument defensibility, Mullainathan/Shafir bandwidth tax framework application) | 1 | Reviewer clock starts |
+| July 16–22 | 59 | Peer review in progress (5–7 business days). Researcher moves to Domain 57 distribution preparation. | External | Reviewer has draft |
+| July 16–22 | 56 | Domain 56 Q3 update preparation: monitor PEER et al. v. Trump/OPM for preliminary injunction ruling. If ruling has issued, prepare 2-hour update to canonical file and send update notification to Wave 1 and Wave 2 contacts. | 2 (if ruling issues) | Domain 56 current |
+| July 22–25 | 59 | Process peer review feedback: implement all P0 items within 24 hours; implement highest-impact P1 items by July 25. If reviewer returns early (before July 22), process immediately. | 3–4 | Domain 59 revised draft complete |
+| July 25–27 | 59 | Citation spot-check: browser-test all 44+ citations; confirm OBBBA-specific citations (Georgetown CCF, CBPP, Urban Institute, CBO, Commonwealth Fund) are live; update any dead URLs | 4–6 | Domain 59 publication-ready gate |
+| July 27 | 59 | Final edit: confirm Midwest Zone 5 section intact; confirm publication-ready formatting; commit revised canonical file | 2 | **DOMAIN 59 DISTRIBUTION-READY — July 27, 2026** |
+
+**Week cumulative hours (July 16–27)**: 12–15 hours. **Gate status at July 27**: Domain 59 distribution-ready; Domain 58 monitoring current; Domain 57 peer review about to begin.
+
+---
+
+### July 28 – August 9: Domain 57 Peer Review + Domain 59 Distribution Prep
+
+| Date | Domain | Task | Hours | Gate |
+|------|--------|------|-------|------|
+| July 28 | 57 | Send canonical draft to peer reviewer (Domain 23/trade policy preferred, Domain 28/foreign policy as alternative) with structured brief | 1 | Reviewer clock starts |
+| July 28 – August 3 | 57 | Peer review in progress (7 calendar days). Researcher prepares Domain 59 distribution materials simultaneously. | External | Reviewer has draft |
+| July 28 – August 3 | 59 | Prepare Domain 59 Wave 1 distribution materials: customize distribution bridge document for each target audience; draft cover emails for LWV, Demos, EPI, NLIHC, CBPP, SEIU, NextGen America | 3–4 | Domain 59 Wave 1 emails ready |
+| July 28 – August 9 | 57 | Citation spot-check (concurrent with peer review): browser-test all 49 citations; priority: ICC sanctions URLs, Focus 2030 report, CRS R44761/R48868 on Congress.gov, all international organization URLs | 4–6 | All citations verified live |
+| August 4–5 | 57 | Process peer review feedback: implement all P0 items within 24 hours; implement highest-impact P1 items | 3 | Domain 57 revised draft complete |
+| August 6–9 | 57 | Final edit: confirm "withdrawal as domestic accountability dismantlement" reframe is demonstrated throughout; confirm Midwest Zone 5 reference (Chicago Council on Global Affairs) is present; confirm publication-ready formatting | 2 | **DOMAIN 57 DISTRIBUTION-READY — August 9, 2026** |
+
+**Week cumulative hours (July 28 – August 9)**: 13–16 hours. **Gate status at August 9**: Domain 57 distribution-ready; Domain 59 Wave 1 emails ready to send.
+
+---
+
+### August 10 – August 15: Full Distribution Launch
+
+| Date | Domain | Task | Hours | Gate |
+|------|--------|------|-------|------|
+| August 10 | 57 | **Wave 1 distribution sends**: HRW, Amnesty International USA, CFR, Carnegie Endowment, Sierra Club/350.org, NED, NDI, Freedom House. Personalized cover emails sent. | 1–2 | **DOMAIN 57 WAVE 1 LAUNCHED — August 10, 2026** |
+| August 10–15 | 57 | Wave 2 preparation: identify Senate Foreign Relations Committee staff contacts; climate advocacy organization contacts; congressional multilateralism caucus members | 2 | Wave 2 ready |
+| August 1–15 | 58 | If *Trump v. Barbara* has issued (likely late June/early July — see rapid-response log): Domain 58 Wave 1 already distributed in July 2026. August status: Wave 2 distribution to Native Organizers Alliance, National Indian Health Board, First Nations Development Institute. | 1–2 | Domain 58 Wave 2 |
+| August 10–15 | 56 | PEER v. OPM injunction status: if ruling has issued, prepare Domain 56 update and re-distribute to all prior contacts. | 2 (if ruling issues) | Domain 56 current |
+
+**Week cumulative hours**: 5–8 hours. **Gate status at August 15**: All four domains in active distribution; all hard deadlines met.
+
+---
+
+### August 15 – September 1: Final Distribution Execution
+
+| Date | Domain | Task | Hours |
+|------|--------|------|-------|
+| August 15 – September 22 | 57 | Wave 2: Senate Foreign Relations Committee staff, climate advocacy organizations, congressional multilateralism caucus | 2–3 |
+| September 1 | 59 | **Wave 1 distribution sends**: LWV, Demos, EPI, NLIHC, CBPP, SEIU, NextGen America | 1–2 |
+| September 15 – October 1 | 59 | Wave 2: Working Families Party, CIRCLE, Campus Vote Project, labor union networks | 2–3 |
+| September 22–28 | 57 | UNGA 81 High-Level Week — maximum relevance for international constituency | Distribution live |
+| October 1 – November 3 | 59 | Final pre-midterm distribution: election protection organizations, state voter protection coalitions | 2–3 |
+| December 2026 | 59 | OBBBA Medicaid work requirements take effect — advocacy organizations use Domain 59 for congressional testimony, comment letters, media framing | Distribution live |
+
+---
+
+## Section 4: Critical Path Analysis
+
+### What Is the Critical Path?
+
+The critical path in Phase 2 is the sequence of tasks that determines the earliest possible date by which all four domains can be in distribution. Any task on the critical path, if delayed, delays the overall Phase 2 completion date. Tasks not on the critical path have float — they can slip without affecting the overall schedule.
+
+### Critical Path Domains
+
+**Domain 58 is the single most time-critical domain** — but its criticality is external-event-driven, not researcher-driven. The *Trump v. Barbara* ruling date is an external clock. The 72-hour rapid-response obligation is fixed. The researcher's contribution to the critical path for Domain 58 is ensuring that the rapid-response update is applied cleanly and promptly when the ruling issues. The optional peer review (June 2026) should complete before the ruling window opens (late June/early July) to ensure the rapid-response update applies to a peer-reviewed document.
+
+**Domain 57 has the latest hard deadline (August 10)** and is therefore the critical-path domain in the sense that its August 9 completion date determines whether the UNGA 81 pre-positioning window is met. The citation spot-check (July 28 – August 9) is the last gate before distribution and cannot slip. If it begins late, it compresses peer review integration — the most fragile point.
+
+**Domain 59 has the latest distribution date (September 1)** but has more float than Domain 57 because its maximum slip date is September 30 (vs. no flex for Domain 57). Domain 59 is on the critical path for the OBBBA pre-implementation advocacy window, but that window has built-in flex.
+
+### Float Analysis
+
+| Domain | Hard Distribution Deadline | Float | Slip Risk |
+|--------|--------------------------|-------|-----------|
+| 56 | None (June window is soft) | 4+ weeks | LOW — distribution-complete, only update obligation is PEER v. OPM ruling |
+| 58 | Ruling-triggered (external) | Zero (ruling date is external) | MEDIUM — ruling date could arrive before June peer review completes |
+| 57 | August 10, 2026 | Zero for UNGA anchor; shifts to November 3 if missed | MEDIUM — July citation spot-check is the bottleneck |
+| 59 | September 1; max slip September 30 | 2 weeks | LOW-MEDIUM — optional peer review adds risk if reviewer is slow |
+
+### Critical Path Sequence
+
+The binding sequence is:
+
+1. **Domain 56 URL spot-check** (May 22) → enables Wave 1 launch (May 26)
+2. **Domain 57 ICC currency check** (June 1–5) → enables citation spot-check to proceed on correct baseline (July 28)
+3. **Domain 57 citation spot-check** (July 28 – August 9) → gates August 10 distribution
+4. **Domain 59 peer review handoff** (July 16) → gates citation spot-check start (July 25)
+5. **Domain 59 citation spot-check** (July 25–27) → gates September 1 distribution
+
+The only dependency between domains: Domain 59 peer review must complete before Domain 59 citation spot-check begins (single researcher constraint). If using two researchers, Domain 59 peer review and Domain 57 citation spot-check can run fully in parallel (July 28 – August 9), saving approximately one week.
+
+### Where the Schedule Is Most Fragile
+
+**Most fragile point**: Domain 57 citation spot-check window (July 28 – August 9). This is 13 calendar days to complete 4–6 hours of citation verification, process peer review feedback (3 hours), and do a final edit (2 hours). If peer reviewer returns feedback late (after August 3) or if citation verification reveals significant URL rot, the August 10 distribution date is at risk. Mitigation: send peer review request July 28 with explicit "must return by August 3" deadline; begin citation spot-check July 28 concurrently (do not wait for peer review to be processed first).
+
+**Second most fragile point**: *Trump v. Barbara* ruling timing (Domain 58). If the ruling issues before Domain 58 peer review completes (i.e., before June 10), the rapid-response update takes priority over peer review completion. Mitigation: send Domain 58 peer review brief immediately after synthesis (May 26); request return by June 7; incorporate by June 10. This provides a 2–3 week buffer before the earliest plausible ruling date.
+
+---
+
+## Section 5: Risk Mitigation
+
+*Pre-empts the three most likely failure modes in Phase 2 distribution.*
+
+### Risk 1: Domain 57 Citation Spot-Check Reveals High URL Failure Rate
+
+**Probability**: MEDIUM. ICC sanctions documents (CICC, HRW) and European institution publications have moderate URL stability. CRS reports on Congress.gov are stable.
+
+**Trigger condition**: More than 10% of 49 citations (5+ citations) are dead links during July 28 – August 9 spot-check.
+
+**Mitigation**:
+- For ICC sanctions documents: check Internet Archive (archive.org) for the specific publication. CICC and HRW reports are routinely archived.
+- For European institution documents: check the official organization's document archive. EUISS, ECFR, and Chatham House maintain document archives independently of direct-link pages.
+- For academic citations: check journal DOI directly (DOI resolver is more stable than journal home page links).
+- For CRS reports: confirm current access policy at Congress.gov (CRS external product policy has been evolving; R44761 and R48868 should be accessible).
+
+**Acceptable slip**: If citation verification reveals that 5+ citations require replacement sourcing, add 3–5 hours to the spot-check task. This can compress the August 6–9 final edit window to August 7–9 without missing the August 10 launch date. If 10+ citations require replacement sourcing, flag to user immediately — a 1-day slip to August 11 is preferable to distributing with dead citations.
+
+---
+
+### Risk 2: *Trump v. Barbara* Issues Before Domain 58 Peer Review Completes
+
+**Probability**: MEDIUM-HIGH. The ruling is expected late June/early July 2026. If Domain 58 peer review begins May 26 and the reviewer takes 7 full business days, feedback returns June 7–10. The ruling could issue as early as late June (5-week buffer post-peer-review completion). If the ruling issues in late June, the buffer is adequate. If it issues in mid-June, peer review may still be in progress.
+
+**Trigger condition**: SCOTUSblog reports *Trump v. Barbara* decision has issued while Domain 58 peer review feedback is still outstanding (before June 10).
+
+**Mitigation**:
+- Immediately pause peer review. Email reviewer: "The ruling we flagged as a time-sensitive trigger has issued. I need to apply an update to the document before incorporating your feedback. I will resend the updated version within 72 hours."
+- Apply rapid-response protocol from `DOMAIN_58_EXECUTION_CHECKLIST.md` Section 5.1 (2–3 hours).
+- Commit updated canonical file.
+- Resend updated canonical file to peer reviewer. Ask reviewer to confirm whether the update changes any of the three original review questions. If no, reviewer can complete review based on updated file without starting over.
+- Distribution proceeds after peer review incorporation (which is now happening on the post-ruling-update version).
+
+**Time cost of this scenario**: 2–3 additional hours (rapid-response application) + 1-day delay for reviewer communication. Total slip: 1–2 days. Domain 58 July distribution target unaffected.
+
+---
+
+### Risk 3: Domain 59 Peer Reviewer Returns Late or Does Not Return
+
+**Probability**: LOW-MEDIUM. Peer review commitments have inherent uncertainty. Reviewer may have scheduling conflicts in late July.
+
+**Trigger condition**: Domain 59 peer reviewer has not returned feedback by July 22 (target return date).
+
+**Mitigation — Days 0–3 after missed return date**:
+- Send one follow-up email: "Checking in on the Domain 59 review — hoping to receive feedback by [July 24] to stay on track for the September 1 distribution. Even a brief note on the three questions would be very helpful."
+
+**Mitigation — Day 4 after missed return date (July 26)**:
+- If no feedback by July 26, proceed with a self-check review:
+  1. Read the complete document as a fresh reader; check the three original review questions yourself.
+  2. Check: is the Dallas Fed causal finding stated at appropriate confidence levels? Is the Section 5 compounding argument using "multiplicative" in a way that is defensible without an explicit model?
+  3. Apply any corrections found.
+  4. Proceed to citation spot-check July 25–27 as scheduled (it can overlap with the self-check).
+- Log that peer review was not completed in `phase-2-research/domain-59/source-confirmations.md` peer review note.
+- Distribution proceeds on September 1 schedule. Note in distribution cover emails that the document has been self-reviewed but external peer review is pending — if a distribution contact wants to provide feedback before wider distribution, that can serve as a retroactive peer review.
+
+**Effect on September 1 distribution**: Zero. Citation spot-check timeline is unchanged. Distribution date holds.
+
+---
+
+## Section 6: Milestone Schedule — Single-Page Reference
+
+*Pin this as the working calendar after synthesis. Hard gates are bolded.*
+
+| Milestone | Domain | Target Date | Type |
+|-----------|--------|-------------|------|
+| Phase 2 activated | ALL | May 21 evening | Decision gate |
+| Domain 56 URL spot-check complete | 56 | May 22 | Hard distribution gate |
 | Domain 56 Wave 1 distribution sent | 56 | May 26 – June 7 | Soft |
-| Domain 58 production pass complete | 58 | June 10, 2026 | Hard |
-| Domain 58 peer review complete | 58 | June 17, 2026 | Hard (vs. Trump v. Barbara) |
-| Domain 59 pre-production sources confirmed | 59 | June 15, 2026 | Soft |
-| Domain 57 library access secured | 57 | June 15, 2026 | Soft-Hard |
-| HHS June 1 interim final rule issued | 59 (context) | June 1, 2026 | External anchor |
-| Domain 59 research Phase 1 complete | 59 | June 27, 2026 | Hard |
-| Domain 57 pre-production complete | 57 | June 30, 2026 | Hard |
-| Domain 59 complete first draft | 59 | July 15, 2026 | Hard |
-| Domain 57 research complete | 57 | July 12, 2026 | Hard |
-| *Trump v. Barbara* ruling (expected) | 58 | Late June/Early July | External trigger |
-| Domain 58 rapid-response update applied | 58 | Within 72 hrs of ruling | Hard |
-| Domain 58 first distribution wave | 58 | July 2026 | Soft |
-| Domain 57 complete first draft | 57 | July 27, 2026 | Hard |
-| Domain 59 peer review + revision complete | 59 | July 27, 2026 | Hard |
-| Domain 59 production complete | 59 | July 27, 2026 | Hard |
-| Domain 57 peer review + revision complete | 57 | August 7, 2026 | Hard |
-| Domain 57 production complete | 57 | August 10, 2026 | Hard |
-| Domain 57 first distribution wave | 57 | August 10, 2026 | Hard (UNGA anchor) |
-| Domain 59 first distribution wave | 59 | September 1, 2026 | Hard |
+| Domain 58 peer review sent | 58 | May 26 | Soft |
+| Domain 57 ICC currency check complete | 57 | June 1–5 | Soft |
+| Domain 59 source URL confirmations complete | 59 | June 1–15 | Soft |
+| HHS OBBBA Medicaid interim final rule issued | 59 (context) | June 1 | External anchor |
+| Domain 58 peer review incorporated | 58 | June 7–10 | Hard (vs. ruling window) |
+| Domain 56 congressional window outreach complete | 56 | June 1–30 | Soft |
+| Domain 56 Wave 2 complete | 56 | June 15 | Soft |
+| Domain 57 peer review scheduled | 57 | June 30 | Soft |
+| Domain 59 peer review scheduled | 59 | June 30 | Soft |
+| SCOTUSblog daily monitoring begins | 58 | June 15 | Standing obligation |
+| *Trump v. Barbara* ruling expected | 58 | Late June/Early July | External trigger |
+| Domain 58 rapid-response update applied | 58 | Within 72 hrs of ruling | **Hard** |
+| Domain 58 Wave 1 distribution sent | 58 | July 2026 | Soft |
+| Domain 59 peer review sent to reviewer | 59 | July 16 | Soft |
+| Domain 59 peer review feedback returned | 59 | July 22 | Soft (see Risk 3 mitigation) |
+| Domain 59 peer review incorporated | 59 | July 25 | Soft |
+| Domain 59 citation spot-check complete | 59 | July 27 | **Hard** |
+| **Domain 59 distribution-ready** | 59 | **July 27, 2026** | **Hard** |
+| Domain 57 peer review sent | 57 | July 28 | **Hard** |
+| Domain 57 citation spot-check begins | 57 | July 28 | **Hard** |
+| Domain 57 peer review feedback returned | 57 | August 3 | **Hard** |
+| Domain 57 citation spot-check complete | 57 | August 9 | **Hard** |
+| Domain 57 final edit complete | 57 | August 9 | **Hard** |
+| **Domain 57 distribution-ready + Wave 1 sent** | 57 | **August 10, 2026** | **Hard (UNGA anchor)** |
+| Domain 58 Wave 2 distribution | 58 | August 2026 | Soft |
+| Domain 57 Wave 2 distribution | 57 | August 15 – September 22 | Soft |
+| **Domain 59 Wave 1 distribution sent** | 59 | **September 1, 2026** | **Hard** |
 | UNGA 81 High-Level Week | 57 | September 22–28, 2026 | External anchor |
+| Domain 59 Wave 2 distribution | 59 | September 15 – October 1 | Soft |
+| Domain 59 final pre-midterm distribution | 59 | October 1 – November 3 | Soft |
 | OBBBA Medicaid work requirements effective | 59 | December 2026 | External anchor |
 
-### Contingency Adjustments
+---
 
-**If Domain 58 production pass slips past June 1**:
-Escalate to user immediately. Options: compress peer review to 3–5 days (acceptable for a domain extending an existing draft, not writing from scratch); skip external peer review and run self-check only (acceptable if researcher has strong tribal law and voting rights familiarity); accept that the rapid-response update will be applied to a draft-in-progress rather than a final document. The last option is manageable but not ideal.
+## Appendix A: Contingency Schedule Adjustments
 
-**If Domain 59 production slips past July 20**:
-The September 1 distribution target is at serious risk. Flag immediately. Options: compress revision phase by 2–3 days (feasible if peer review feedback is light); compress citation verification by working one domain section per day in parallel with revision.
+### If Domain 57 August 10 Hard Deadline Cannot Be Met
 
-**If OBBBA implementation enjoined before June 16**:
-Domain 59 Section 5 framing shifts: replace "enacted and in implementation" with "enacted and enjoined." The civic participation argument is unchanged; the timeline language updates. An injunction actually strengthens the advocacy window: organizations can use Domain 59 to argue why the injunction should be made permanent on democratic-design grounds.
+**Threshold**: If peer review feedback has not been returned by August 5 (5 days before deadline), August 10 distribution is at risk.
 
-**If Phase 1 distribution slips past June 15**:
-Slide Phase 2 production windows by the number of weeks Phase 1 slips. Priority rules:
-- Domain 58 *Trump v. Barbara* timing does not flex regardless of Phase 1 status
-- Domain 59 distribution target has 2-week flex maximum (to September 30)
-- Domain 57 UNGA anchor has zero flex: if production cannot complete by September 15, shift primary frame to midterm domestic constitutional asymmetry argument
+**Action**: Proceed with distribution August 10 using a self-checked version (not peer-reviewed). Email peer reviewer that distribution is proceeding on August 10 and request any substantive corrections within 48 hours of distribution — the distribution can note "feedback welcome" without holding for formal peer review. This is acceptable for a domain where the primary distribution constituency (Senate Foreign Relations Committee staff, HRW, Amnesty, CFR) will provide substantive feedback on their own through engagement.
+
+**Fallback distribution anchor**: November 3, 2026 domestic midterm framing (constitutional asymmetry argument + ICC sanctions chilling effects on civil society). International UNGA constituency is deferred to post-UNGA follow-up (October–November 2026).
 
 ---
 
-*Document produced: May 20, 2026. Final pre-synthesis verification pass complete May 20, 2026 (Sessions 1371 + 1373): all four domain files confirmed production-complete via file inspection (Domain 57: 9,201 words / 49 citations; Domain 58: 11,388 words / 71 citations; Domain 59: 8,450 words / 44+ citations; Domain 56: 6,267 words / 47 citations). `phase-2-research/` subfolder created Session 1373 with tracking files for all four domains — the sole remaining infrastructure gap from prior sessions is now closed. Original production hour estimates (sourced from DOMAINS_57_59_PRODUCTION_ROADMAP.md, DOMAIN_56_EXECUTION_CHECKLIST.md, DOMAIN_58_EXECUTION_CHECKLIST.md) are superseded — all four domains are complete; remaining hours are distribution-prep only (12–17 hours total across all domains). Milestone dates derived from distribution anchors: UNGA 81 High-Level Week (September 22–28, 2026); November 3, 2026 midterms; OBBBA Medicaid work requirements effective December 2026; Trump v. Barbara ruling (late June/early July 2026). HHS June 1 interim final rule confirmed on schedule. Trump v. Barbara argued April 1, 2026; ruling pending; majority appeared likely to side against Trump per SCOTUSblog. Distribution milestone schedule in Section 4 remains fully operative. FINAL PRE-SYNTHESIS STATE: this document is ready to use as the working calendar from May 21 20:00 UTC onward.*
+### If *Trump v. Barbara* Is Still Pending at August 10
+
+**Scenario**: Ruling has not issued by August 10 (possible but unlikely given April 1 argument date and end-of-term June/July pattern).
+
+**Action**: Distribute Domain 58 without the rapid-response update in late August. Flag in distribution cover email that the SCOTUS ruling is still pending and that an updated version will follow within 72 hours of the ruling. This is a distribution-positive framing: "I am distributing this now so you have time to read it before the ruling issues — the rapid-response update will follow immediately when the ruling drops."
+
+---
+
+### If OBBBA Medicaid Work Requirements Are Enjoined Before September 1
+
+**Trigger**: Federal court issues preliminary or permanent injunction against OBBBA Section 30000 (Medicaid work requirements) before September 1 distribution.
+
+**Action**: Update Domain 59 Section 5 framing in a 1-hour edit: replace "enacted and in implementation" with "enacted and enjoined." Add one sentence: "The preliminary injunction creates a legal mechanism organizations can support on democratic-design grounds — the civic participation argument in Section 5 applies to the underlying policy regardless of its current enjoined status." Distribution proceeds September 1 with updated framing.
+
+**Effect on advocacy value**: An injunction increases advocacy value. Organizations can now argue for making the injunction permanent on democratic-design grounds, in addition to the standard public health and economic arguments. Domain 59 becomes a stronger tool, not a weaker one.
+
+---
+
+## Appendix B: Per-Domain Completion Criteria
+
+*How to know when a domain is ready for distribution — the definitive gate criteria.*
+
+A domain is genuinely distribution-ready when ALL five criteria are met:
+
+**(a) Source count at target**: Domain 56 ≥ 47; Domain 57 ≥ 49; Domain 58 ≥ 71; Domain 59 ≥ 44. Count from the canonical file's numbered citation list, not from memory.
+
+**(b) All citations URL-verified live**: Browser-tested within 30 days of first distribution date. Any dead URL replaced with Internet Archive equivalent or substitute source. Zero unresolved dead URLs at time of distribution.
+
+**(c) Midwest Zone 5 analysis confirmed present**: At least 2–3 concrete Midwest data points in the canonical file. Domain 56: AFGE/NTEU Midwest membership + DOJ Voting Section Midwest enforcement capacity. Domain 57: Chicago Council on Global Affairs reference + Midwest senators on Senate Foreign Relations Committee. Domain 58: Upper Midwest tribal nations (Great Lakes, Standing Rock, Turtle Mountain) + Montana SB 490 organizer context. Domain 59: Farm bankruptcy filings (46% increase Q1 2025 vs. Q1 2023) + rural hospital closures (Missouri, Michigan, Ohio) + deindustrialization civic participation data.
+
+**(d) No open blocking issues from peer review**: If peer review was conducted, all P0 (factual blocking) items incorporated. P1 items either incorporated or explicitly deferred with rationale documented in peer review log. If peer review was not conducted, self-check review documented (see Risk 3 mitigation).
+
+**(e) Distribution bridge document current**: Each domain's distribution bridge document (`DOMAIN_56_DISTRIBUTION_BRIDGE.md`, `DOMAIN_58_DISTRIBUTION_BRIDGE.md` — Domains 57 and 59 to create) lists current first-wave contacts, wave timing, and audience-specific framing for each constituency type. The bridge document should be updated to reflect any policy developments since production (e.g., H.R. 492 markup, *Trump v. Barbara* ruling, OBBBA injunction).
+
+---
+
+*Document produced: 2026-05-21 (Session 1384). Domain word counts and citation counts confirmed May 20 via file inspection: Domain 56 (6,267 words / 47 citations — root dir); Domain 57 (9,201 words / 49 citations — domains/ subdir); Domain 58 (11,388 words / 71 citations — domains/ subdir); Domain 59 (8,450 words / 44+ citations — domains/ subdir). Total production corpus: 35,306 words, 211+ citations. Distribution anchor dates: UNGA 81 High-Level Week September 22–28, 2026 (UN calendar confirmed); OBBBA Medicaid work requirements effective December 2026 (statutory); Trump v. Barbara argued April 1, 2026, ruling pending (SCOTUSblog confirmed as of May 20); H.R. 492 Saving the Civil Service Act in Senate HSGAC consideration (Congress.gov); HHS June 1 interim final rule on OBBBA Medicaid work requirements (statutory deadline, no public comment period). Milestone schedule cross-checked against phase-2-research-activation-checklist.md (Session 1384) for consistency. This document supersedes PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md (Session 1361, May 19) and the May 20 version of phase-2-research-timeline-template.md (Sessions 1371–1373).*
