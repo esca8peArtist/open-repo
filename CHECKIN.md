@@ -21,16 +21,44 @@
 2. **seedwarden: Practitioner Relationship Pre-Outreach & Affiliate Mapping** (3–4 hrs, June 1 gating) — influencer research, affiliate partnerships, pre-outreach strategy
 3. **cybersecurity-hardening: Windows BitLocker Transition & VeraCrypt Replacement** (2–3 hrs, June 15 gating) — contingency plan for VeraCrypt cert expiration June-July
 
+**Synthesis Execution Preparation (COMPLETE)**:
+- ✅ **SYNTHESIS_EXECUTION_CHECKLIST.md created**: detailed 5-step checklist for autonomous execution at 19:00 UTC
+  - Pre-execution verification steps (18:00 UTC: signal logs, Trump ruling, playbook readiness, network connectivity)
+  - Step-by-step execution procedure (19:00-21:30 UTC)
+  - Outcome decision tree with scoring logic
+  - Post-execution success criteria
+  - Next session trigger dates mapped
+- ✅ **Automated wake-up scheduled**: CronCreate reminder at 18:00 UTC for pre-execution verification (1 hour before synthesis)
+- ✅ **All materials staged**: SYNTHESIS_OUTCOME_PLAYBOOKS.md, Phase 2 domains, contact lists, decision logic
+
 **Ready for Autonomous Execution**:
 - **May 21 19:00 UTC**: resistance-research synthesis execution
-  - SYNTHESIS_OUTCOME_PLAYBOOKS.md fully staged and committed
-  - All decision logic pre-built (outcome selector, contact escalation, non-negotiables)
-  - Trigger: Read synthesis signal logs + Trump v. Barbara ruling status → execute corresponding playbook → Phase 2 launches same-day if STRONG/MODERATE
+  - Full execution environment staged and verified
+  - Pre-execution checklist ready for 18:00 UTC review
+  - Decision tree: STRONG/MODERATE → same-day Phase 2 launch; WEAK → May 28 hold; TOO_EARLY → May 25 gate; CRISIS → Trump v. Barbara rapid-response
+  - Automated wake-up reminder scheduled for 18:00 UTC
+
+**Session 1449 Summary (05:58–06:30 UTC)**:
+- ✅ Oriented to state after Session 1447 exploration queue completion
+- ✅ Refreshed exploration queue with 3 new items (mfg-farm supply chain, seedwarden practitioner outreach, cybersecurity BitLocker)
+- ✅ Sent critical deadline alert to Discord (stockbot SSH, May 22 13:30 UTC)
+- ✅ Verified SSH block still active (user action required)
+- ✅ Prepared detailed synthesis execution environment (SYNTHESIS_EXECUTION_CHECKLIST.md)
+- ✅ Scheduled automated pre-execution verification reminder (18:00 UTC)
+- ✅ Committed all orchestration and reference files
+- **Status**: Ready for autonomous execution; all non-human work complete; synthesis staged for 19:00 UTC
+
+**Files Created/Updated**:
+- `SYNTHESIS_EXECUTION_CHECKLIST.md` (new) — detailed execution steps + decision tree
+- `WORKLOG.md` (updated) — Session 1449 activity log
+- `CHECKIN.md` (updated) — synthesis prep completion notes
+- `PROJECTS.md` (updated) — 3 new exploration queue items
 
 **Next Session Triggers**:
-1. **May 21 19:00 UTC** (TODAY, autonomous): Resistance-research synthesis execution → select outcome → execute playbook
-2. **May 22 13:30 UTC** (user action deadline): SSH auth fix for Lever B config OR checkpoint cannot proceed
-3. **May 22 20:00 UTC** (checkpoint): stockbot checkpoint execution → outcome determines May 23 decision path
+1. **May 21 18:00 UTC** (automated): Pre-execution verification checklist (signal logs, ruling status, playbook readiness)
+2. **May 21 19:00 UTC** (TODAY, autonomous): Resistance-research synthesis execution → select outcome → execute playbook
+3. **May 22 13:30 UTC** (user action deadline): SSH auth fix for Lever B config OR checkpoint cannot proceed
+4. **May 22 20:00 UTC** (checkpoint): stockbot checkpoint execution → outcome determines May 23 decision path
 
 ---
 
