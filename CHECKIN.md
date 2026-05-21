@@ -1,9 +1,69 @@
-## Since Last Check-in (Session 1458 — ORCHESTRATOR, May 21 11:15–12:55 UTC) — Exploration Queue Refreshed, 15 Pre-Gate Deliverables Complete
+## Session 1459 — CRITICAL ESCALATION (May 21 11:35 UTC) — Signal Log Unfilled, Synthesis Blocked, Zero Autonomous Work
 
-**Status**: ✅ **EXPLORATION ITEMS 16-18 COMPLETE (3.5h turnaround)** | ✅ **PHASE 5.2 POST-MERGE READY** | ✅ **PHASE 2 PRE-STAGING COMPLETE** | ✅ **PHASE 3 MARKETING SCAFFOLDED** | ⏰ **SYNTHESIS: May 21 19:00 UTC (6h 5m)** | 🔴 **SSH CRITICAL: May 22 13:30 UTC (24h 35m)**
+**Status**: 🔴 **CRITICAL: SIGNAL LOG UNFILLED** | ✅ **ALL EXPLORATION ITEMS 1-18 COMPLETE** | ✅ **ZERO AUTONOMOUS WORK AVAILABLE** | ⏰ **SYNTHESIS BLOCKED: May 21 19:00 UTC (7h 25m)** | 🔴 **SSH CRITICAL: May 22 13:30 UTC (24h 55m)**
 
-**What was accomplished**:
-- ✅ Orientation verified all 4 blocks remain active (signal log 17 unfilled, SSH auth failing, test print pending, VeraCrypt restart needed)
+**CRITICAL ESCALATION — USER ACTION REQUIRED IMMEDIATELY:**
+
+Resistance-research Phase 2 synthesis is **BLOCKED** and cannot execute at 19:00 UTC WITHOUT the signal log filled. The log currently has **17 unfilled `[fill]` placeholders** waiting for actual response monitoring data from May 18-21.
+
+**Signal log location**: `/projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+
+**Required data (FILL BY 19:00 UTC TODAY)**:
+1. **May 20 ~22:00 UTC snapshot** — responses from Batch 1 contacts (Goodman, Weiser, Chenoweth, Bassin, Elias):
+   - Total replies (all formats)
+   - Substantive replies (meaningful engagement)
+   - Gist delta (before/after view counts)
+   - OOO/bounces
+2. **May 21 72-hour synthesis snapshot** — aggregated across full monitoring window:
+   - Total responses May 18-21
+   - Quality Reply Points (substantive engagement score)
+   - Per-constituency status
+3. **SIGNAL LOG TABLE** — any new responses received May 18-21 (one row per email)
+4. **Trump v. Barbara ruling** (secondary) — if birthright citizenship ruling issued, log for Domain 58 rapid-response
+
+**Without filled signal log, synthesis cannot classify outcome as STRONG/MODERATE/WEAK/TOO_EARLY and cannot proceed.**
+
+---
+
+**Current status**:
+- 🔴 **Signal log unfilled** (17 templates) — synthesis BLOCKED until user fills May 18-21 response data
+- 🔴 **SSH auth failing** (May 22 13:30 UTC deadline) — Lever B config cannot deploy without fix
+- ⏳ **Exploration queue complete** — items 1-18 done; items 19+ require new discovery
+- ⏳ **Synthesis ready to execute** — infrastructure staged, awaiting signal log fill before 19:00 UTC
+- ⏳ **Checkpoint ready to execute** — fully pre-staged for May 22 20:00 UTC autonomous execution
+
+**Next autonomous milestones**:
+1. **May 21 19:00 UTC (7h 25m)**: Synthesis execution — BLOCKED if signal log unfilled
+   - If signal log filled by deadline: autonomous synthesis executes, determines Phase 2 launch path
+   - If signal log unfilled: synthesis defers; user can backfill and re-trigger manually
+2. **May 22 13:30 UTC (24h 55m)**: SSH auth fix deadline — CRITICAL for Lever B testing
+   - User must either: (A) add orchestrator public key to authorized_keys, OR (B) SSH manually and run config fix
+3. **May 22 20:00 UTC (33h 25m)**: Checkpoint execution — fully autonomous, fully pre-staged
+   - Executes regardless of prior outcomes; determines Gate 2 strategy path
+
+**Session 1459 assessment**:
+- ✅ Orientation complete
+- ✅ All exploration queue items 1-18 verified complete
+- ✅ Zero autonomous code work available (all projects blocked)
+
+**User action items (IMMEDIATE — before 19:00 UTC)**:
+1. **CRITICAL — Fill signal log** by 19:00 UTC today:
+   - Location: `/projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+   - Fill 17 templates with May 18-21 response monitoring data
+   - Templates: May 20 ~22:00 UTC snapshot (7 metrics) + May 21 72-hour snapshot (8 metrics) + per-constituency status
+2. **Secondary — Trump v. Barbara ruling check**:
+   - If birthright citizenship ruling has been issued, log in signal log for Domain 58 rapid-response
+
+**User action items (May 22 by 13:30 UTC)**:
+1. **SSH auth fix (CRITICAL)**:
+   - Option A: Add orchestrator public key to Jetson authorized_keys (requires existing access)
+   - Option B: SSH manually and run config fix for Lever B `hmm_regime_masking: true` flag
+   - 5-minute manual fix — commands documented in BLOCKED.md
+
+**Next autonomous milestones**:
+1. **May 21 19:00 UTC**: Synthesis execution (autonomous) — BLOCKED if signal log unfilled
+2. **May 22 13:30 UTC**: SSH auth deadline
+3. **May 22 20:00 UTC**: Checkpoint execution (fully autonomous, fully pre-staged)
 - ✅ Exploration Queue refreshed: added items 16-18 (immediate research/architecture work while waiting for synthesis/checkpoint)
 - ✅ Spawned 3 parallel subagents (11:16 UTC) — all completed within 99-minute window (12:55 UTC)
   - **open-repo (Item 16)**: Phase 5.2 Post-Merge Implementation — 3 files
