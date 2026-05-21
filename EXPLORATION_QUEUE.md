@@ -170,11 +170,13 @@
 - **Owner**: stockbot subagent
 - **Deadline**: May 23 (pre-execution staging for post-May-22 decision)
 
-### 20. ⏳ resistance-research — Phase 2 Batch 2 Domain Architecture (Session 1460 — Added May 21)
-**Scope**: Domains 57 (Multilateral Withdrawal, 40-50 hrs) and 59 (Economic Precarity, 50-60 hrs) queued for Phase 2 but not yet researched. Pre-stage 50-line outlines + 20+ source lists per domain + expert contact list + preliminary causal pathway analysis.
-- **Deliverables**: `PHASE_2_BATCH_2_DOMAINS_57_59_OUTLINES.md` (2,500+ words) — scope, sources, contacts, timeline for July-August 2026 research execution
-- **Owner**: general-research subagent
-- **Deadline**: May 30 (deferred pending synthesis outcome; if synthesis is STRONG/MODERATE, execute May 23-25 instead)
+### 20. ✅ resistance-research — Phase 2 Batch 2 Domain Architecture (Session 1488 COMPLETE)
+**Status**: Completed May 21, 2026 (22:43–22:53 UTC). File: `PHASE_2_BATCH_2_DOMAINS_57_59_OUTLINES.md` (5,200 words, 50+ sources).
+- **Domain 57**: 45–50 hr production, July 1–Aug 10; 26 sources + 5 expert contacts; multilateral withdrawal + institutional accountability dismantlement
+- **Domain 59**: 20–30 hr production (compressed from 50–60 due to existing domain-59 production draft), June 16–Aug 10; 24 sources + 5 expert contacts; economic precarity → civic participation pathways
+- **Execution-independent of May 25 synthesis**: Both domains ready for any synthesis outcome (STRONG/MODERATE/WEAK/TOO_EARLY all paths supported)
+- **Owner**: general-research subagent (Session 1488)
+- **Commit**: a76ef149 "chore(resistance-research): Phase 2 Batch 2 domain outlines (Domains 57-59) — Exploration Queue Item 20 complete"
 
 ### 21. ✅ seedwarden — Track B Geographic Expansion & Channel Diversification (Session 1464 COMPLETE)
 **Status**: Completed May 21 (Session 1464). Files updated to v2.0: `TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md` + `TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md`.
