@@ -1,5 +1,46 @@
 # Work Log
 
+## Research Agent — Multi-Channel Sales Architecture (May 21, 2026)
+
+**Date**: May 21, 2026
+**Status**: Complete — 4 production-ready documents for mfg-farm multi-channel expansion
+
+**Deliverables** (all written to `projects/mfg-farm/`):
+
+**1. MULTI_CHANNEL_SALES_ARCHITECTURE.md**
+- Lead finding: Shopify D2C is not viable until LTV/CAC ratio reaches 3:1+; $60 blended D2C CAC for home goods makes single-purchase Shopify economics negative at Phase 1/2 volumes
+- Full fee comparison matrix: Etsy 11.0% vs Amazon FBA 30.4% vs Shopify D2C 6.6% effective fees on $28.99 Starter Bundle
+- Channel activation roadmap: Etsy Phase 1 (Month 0–3) → Amazon FBA Phase 2 (Month 3–6 conditional) → Shopify D2C Phase 3 (Month 7–12 conditional)
+- Feature parity matrix across all three channels; platform risk assessment and stability ratings
+- Etsy Offsite Ads inflection point identified: when monthly revenue crosses $833, effective Etsy fee rises to 23%, narrowing the FBA fee gap to ~7pp
+
+**2. AMAZON_FBA_READINESS_CHECKLIST.md**
+- Step-by-step activation checklist: account setup (Days 1–3), Handmade category application, Brand Registry
+- Product category mapping for all ModRun SKUs; Economy tier explicitly excluded from Amazon
+- All SKUs confirmed Small Standard-Size tier; 2026 FBA fee schedule applied per ASIN weight
+- Listing templates for Starter Bundle, Pro Expansion Pack, Standard 3-Pack
+- Vine enrollment protocol and Sponsored Products campaign structure with ACOS targets
+- Capital breakdown: $272–$322 minimum (without trademark), $522–$672 with trademark/Vine path
+
+**3. SHOPIFY_PRINTFUL_INTEGRATION_GUIDE.md**
+- Critical correction documented: Printful's warehousing for own-inventory products was discontinued March 1, 2026 — not applicable to ModRun
+- Shopify D2C economics with LTV/CAC model showing break-even requires 3+ purchase LTV
+- Full store setup: Shopify Basic ($39/month), Shopify Payments, Pirate Ship integration, Craftybase sync
+- Inventory architecture: Craftybase (Etsy + Shopify source of truth) + QuickSync Pro ($29/month, adds Amazon) = $78/month total sync infrastructure
+- Automated post-purchase email flows via Klaviyo (free ≤500 contacts)
+- Traffic source plan: package QR codes → organic social → Google Shopping (first paid channel)
+
+**4. UNIFIED_INVENTORY_MODEL.md**
+- Three inventory types: Type 1 Virtual/Etsy (made-to-order), Type 2 FBA Forward Stock, Type 3 Shopify Finished Goods Buffer
+- Complete tracking schema: Google Sheets tables for Finished Goods, FBA Stock, Filament
+- Oversell prevention per channel; Etsy made-to-order architecture makes oversell near-zero if quantity stays at 999
+- Backorder handling: Shopify waitlist via Klaviyo; Etsy processing-time extension; Amazon FBM bridge during FBA stockout
+- Seasonal pre-build calendar: Q4 FBA batch timeline (September 1 print → September 25 live) and January 2027 pre-build protocol
+- Emergency procedures for all three stockout/oversell scenarios
+- Sync infrastructure summary: $78/month total for Phase 3; upgrade path to Linnworks at 300+ orders/month
+
+---
+
 ## Session 1456 — Autonomous Orchestration & State Verification (May 21, 10:43 UTC)
 
 **Date**: May 21, 2026 10:43 UTC
