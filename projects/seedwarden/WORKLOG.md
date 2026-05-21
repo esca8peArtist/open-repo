@@ -4,6 +4,24 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Vendor Pre-Staging (Exploration Queue Item 27 Execution) — May 21, 2026
+
+**Task**: Pre-stage vendor negotiations that do not depend on May 30 user decisions (scope, sourcing path, writer). Produce three production-ready files enabling June 1 commitments immediately post-user-decision. All outreach executable May 22.
+
+**Files produced** (all in `projects/seedwarden/`):
+
+- `phase-3-vendor-negotiation-templates.md` (~2,400 words) — Four Goldenseal RFQ templates (Prairie Moon, Strictly Medicinal, Mountain Rose Herbs, Southern Exposure); eight AHG peer reviewer recruitment email variants (RH independent, ND faculty, MD narrow-scope, PhD academic, clinical sleep specialist, long-tenure RH, northeast herbalist, AHG directory general); Canva designer brief template with scope-switchable deliverable count (3-bundle vs. 5-bundle); designer quick-reference table (15 verified Etsy/Fiverr botanical/herbalist designers, estimated rates $35–$180/design, review signal, direct contact links).
+
+- `phase-3-pricing-negotiation-ranges.md` (~1,900 words) — Goldenseal live specimen ranges ($12–22/unit; walk-away $25+); dried root ranges ($14–20/oz Mountain Rose Herbs; walk-away $25+); combined dried specimen order estimate ($41–52 for five species); peer reviewer honorarium tiers by credential type (RH: complimentary set + optional $50 stipend; ND/faculty: $75–150; MD: $200–250; PhD: $75–150); payment timing guidance (50% on confirmation, 50% on delivery); Canva designer rate cards (Fiverr $45–75/cover, Etsy $80–130/cover; zone cards $30–55 Fiverr, $50–85 Etsy); full-set bundle pricing (5-bundle: $500–900 Fiverr, $750–1,400 Etsy; 3-bundle: $300–540 Fiverr, $450–840 Etsy); self-execute vs. hire comparison (12.5 hrs vs. $500–900 cash, break-even analysis); negotiation leverage points for all three vendor categories.
+
+- `phase-3-vendor-timeline-roadmap.md` (~2,100 words) — Day-by-day outreach and confirmation calendar May 22 through June 21; response tracking tables for all three vendor categories; five-phase timeline (Outreach Launch, Quote Collection, User Decision Gate, Vendor Confirmations, Pre-Sprint Window); ASCII sprint diagram; contingency paths for each vendor category failure mode (no cultivated Goldenseal confirmed, no reviewer by June 8, designer misses July 3 deadline, writer not confirmed by June 1).
+
+**Evidence base**: PHASE_3_GOLDENSEAL_SOURCING_COMPARISON.md (v1.0), PEER_REVIEWER_RECRUITMENT_STRATEGY.md (v1.0), PHASE_3_SECOND_WRITER_CANDIDATE_PROFILES.md (v1.0), PHASE_3_CANVA_DESIGN_SYSTEM.md (May 20), PHASE_3_SCOPE_DECISION_MATRIX.md, phase-2-plant-sourcing-vendor-list.md (May 7).
+
+**Status**: All three files send-ready May 22. No May 30 decisions required before sending. Templates cover both sourcing paths (Path 1 live specimen, Path 2 Wikimedia CC) and all scope options (A/B/C). Designer brief includes scope-switchable quote request.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Scope Decision Support (Exploration Queue Item 27) — May 21, 2026
 
 **Task**: Produce three decision-support documents for Phase 3 scope decision gate May 30: `PHASE_3_SCOPE_DECISION_MATRIX.md`, `PHASE_3_RESOURCE_ALLOCATION_SCENARIOS.md`, and `PHASE_3_LAUNCH_RISK_REGISTER.md`. Deadline: May 21 23:00 UTC for user review May 22–30.
