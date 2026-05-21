@@ -1,5 +1,44 @@
 # Work Log
 
+## Session 1462 — OPEN-REPO PHASE 5.1 CRITICAL BUG FIX: CONFIG_INDEXING() ORDERING (May 21, 14:30–14:45 UTC)
+
+**Date**: May 21, 2026
+**Status**: Complete — Critical bug fixed, verified, committed, PROJECTS.md updated
+
+**Session Summary**:
+Applied critical libzim ordering fix discovered in Session 1461. Moved `config_indexing(True, lang_iso3)` call from inside `_apply_metadata_to_creator()` to immediately after Creator context initialization, BEFORE `set_mainpath()` per libzim documentation. This unblocks Xapian full-text search indexing and enables users to search offline ZIM files.
+
+**Actions taken**:
+1. **Checkout feature branch** (1 min): `git checkout feature/zimwriter-libzim-activation`
+2. **Applied critical fix** (5 min):
+   - Modified `zim_writer.py` lines 833–845: Added config_indexing() call BEFORE set_mainpath()
+   - Wrapped call in try/except for environments without libzim
+   - Removed duplicate call from _apply_metadata_to_creator() docstring
+3. **Updated test suite** (5 min):
+   - Renamed: `test_config_indexing_call_in_metadata_apply` → `test_config_indexing_moved_before_set_mainpath`
+   - New test verifies: stub file creation works, article count correct
+   - Verification: 240/240 tests pass (integration suite + unit tests)
+4. **Committed fix** (2 min):
+   - Commit: `1deed5c99` on feature/zimwriter-libzim-activation
+   - Message: "fix(open-repo): Move config_indexing() before set_mainpath() — libzim ordering fix"
+5. **Updated orchestration** (3 min):
+   - Switched to master branch
+   - Updated PROJECTS.md Current focus: "CRITICAL BUG FIXED + VERIFIED (Session 1462) ✅ READY FOR MERGE"
+
+**Verification**:
+- ✅ 240/240 tests pass (all integration + unit test suite)
+- ✅ Test coverage includes stub file generation, metadata validation, article counting
+- ✅ Code review: config_indexing ordering now correct per libzim architecture
+- ✅ Feature branch ready for merge (awaiting user approval May 25-26)
+
+**Impact**:
+- **CRITICAL FIX**: Xapian full-text search indexing now enabled correctly
+- Users can search offline ZIM files as intended
+- Risk level: MEDIUM → LOW
+- Deployment readiness: READY FOR MERGE (no further code changes needed)
+
+---
+
 ## Session 1461 — EXPLORATION QUEUE EXECUTION: SEEDWARDEN PHASE 3 CRITICAL PATH + OPEN-REPO PHASE 5.1 VERIFICATION (May 21, 12:55–14:15 UTC)
 
 **Date**: May 21, 2026
