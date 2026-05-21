@@ -100,6 +100,39 @@
 
 ---
 
+## Active Items (Session 1457+)
+
+### 13. ✅ stockbot — Gate 2 Execution Validation and Decision Tree (Session 1457 COMPLETE)
+**Status**: Completed May 21 (Session 1457, 10:55–11:55 UTC). Files: `GATE_2_VALIDATION_CHECKLIST.md` + `GATE_2_DECISION_FLOWCHART.md` + `GATE_2_PRE_EXECUTION_STAGING.md` + 2 config files pre-staged (`active-sessions-4session.json`, `active-sessions-3session.json`).
+**Key findings**: 
+  - Architecture is logically sound; all 9 outcome branches complete and executable
+  - 9 gaps identified, 1 closed (active-sessions-4session.json created)
+  - Remaining gaps: missing scripts (train_stacker.py, validate_model.py, hmm_offline_analysis.py, run_options_backtest.py) — alternatives documented
+  - Critical dependency: SSH auth to Jetson still blocks post-checkpoint actions (user action required by May 22 13:30 UTC)
+  - All config pre-staging complete; execution ready for May 22 20:00 UTC checkpoint
+
+### 14. ✅ mfg-farm — Multi-Channel Sales Architecture (Session 1457 COMPLETE)
+**Status**: Completed May 21 (Session 1457, 10:55–12:20 UTC). Files: `MULTI_CHANNEL_SALES_ARCHITECTURE.md` + `AMAZON_FBA_READINESS_CHECKLIST.md` + `SHOPIFY_PRINTFUL_INTEGRATION_GUIDE.md` + `UNIFIED_INVENTORY_MODEL.md`.
+**Key findings**:
+  - Platform fee structure 2026: Etsy 11.0% (rising to 23% on $10K+ revenue with Offsite Ads), Amazon FBA 30.4% ($8.81 on $28.99 item), Shopify 6.6% (but requires 3+ LTV/CAC for profitability)
+  - **Printful discontinued warehousing service effective March 1, 2026** — guidance updated to self-fulfillment from workshop + Pirate Ship labels
+  - Amazon FBA viable at $272–$322 min capital; trademark filing at $400+ capital unlocks Vine reviews and 3-4 month timeline compression
+  - Sync infrastructure: Craftybase Studio + QuickSync Pro = $78/month for 3-channel operations
+  - Etsy made-to-order has lowest oversell risk; Amazon FBA stockout is highest-consequence (Prime badge loss requires 2-4 weeks recovery)
+  - Upgrade to Linnworks ($499/month) not justified before 300+ combined monthly orders
+
+### 15. ✅ systems-resilience — Phase 5 Wave 3 Veterinary Network Architecture (Session 1457 COMPLETE)
+**Status**: Completed May 21 (Session 1457, 10:55–12:55 UTC). Files: `PHASE_5_WAVE_3_VETERINARY_NETWORK_TOPOLOGY.md` + `VETERINARY_EQUIPMENT_ACCESS_MODEL.md` + `VETERINARY_KNOWLEDGE_PLATFORM_ARCHITECTURE.md` + `VETERINARY_PRACTITIONER_DEVELOPMENT_PATHWAYS.md` + `VETERINARY_NETWORK_SUSTAINABILITY_MODEL.md`.
+**Key findings**:
+  - **Hybrid topology (DVM hub + CAHW spokes) is non-negotiable** — no peer-to-peer network can maintain VCPR, prescription access, or telehealth without DVM anchor
+  - **WOAH CAHW framework (April 2024)** is curriculum foundation with 23 competencies; Ohio State developing U.S. alignment
+  - **Fee-for-service sustainability is critical design choice** — East Africa volunteer programs are gone; fee-based programs sustain 30+ years
+  - **USDA VSGP FY2026 primary funding** (RPE $125–200K, EET $250–300K grants) — but applications due April 2026; plan for FY2027 if starting now
+  - **DVM succession planning at Year 1** is only guaranteed resilience measure against hub single-point failure
+  - Full case studies included: RAVS, Scotland HIVSS, East Africa CAHW, India A-HELP, Farm Journal Foundation State Readiness program
+
+---
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
