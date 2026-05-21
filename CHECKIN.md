@@ -1,3 +1,34 @@
+## Session 1493 — ORCHESTRATOR: FINAL PRE-DEADLINE STATUS (May 21, 23:27 UTC)
+
+**Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE: May 22 13:30 UTC (~13h 3m remaining)** | ⏳ **Block confirmed active; no autonomous work available**
+
+**What Happened**:
+
+1. ✅ **Re-verified SSH Block (STILL ACTIVE)**
+   - SSH auth failure confirmed at May 21 23:27 UTC
+   - `ssh ubuntu@100.120.18.84 'echo OK'` returns "Permission denied (publickey)"
+   - Block status unchanged from Session 1492 (9 minutes prior)
+   - **Action required**: User must EITHER (A) Add orchestrator ED25519 key to Jetson authorized_keys, OR (B) SSH manually to apply Lever B config fix (documented in BLOCKED.md lines 76–101)
+   - **Deadline**: May 22 13:30 UTC (13 hours, 3 minutes remaining)
+
+2. ✅ **Autonomy Assessment Confirmed**
+   - **No autonomous work available** to advance deadline or resolve block
+   - Exploration Queue Item 20 completed in Session 1488 (22:40 UTC)
+   - All other active projects blocked on user actions (Windows restart, test print, Gist creation, scope decisions)
+   - Workspace state clean and ready
+
+3. ✅ **Escalation Status**
+   - Discord notification sent in Session 1491 (23:10 UTC) — user alerted
+   - BLOCKED.md updated and current (confirms block active with clear action options)
+   - All state files current and tracked
+
+**Next Session Triggers**:
+- **May 22 13:30 UTC**: Stockbot SSH deadline pass/fail point
+- **May 22 14:00–20:00 UTC**: Checkpoint execution window
+- **May 22 21:00 UTC**: Checkpoint outcome + post-deadline analysis
+
+---
+
 ## Session 1492 — ORCHESTRATOR: PRE-DEADLINE FINAL CHECK + STATE COMMIT (May 21, 23:16 UTC)
 
 **Status**: 🔴 **STOCKBOT SSH DEADLINE: May 22 13:30 UTC (~14h 14m remaining)** | ⏳ **All projects assessed; no autonomous work available**
