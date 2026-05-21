@@ -191,6 +191,26 @@ complete and verified. The branch was independently audited today (not by the Se
 
 ---
 
+## open-repo Phase 5 Candidate 1 — Verification & Checklist (Session 1477)
+
+**Branch:** `feature/phase5-verification-docs` (pushed to esca8peArtist/open-repo)
+**Files:** `PHASE_5_CANDIDATE_1_IMPLEMENTATION_VERIFICATION.md` (Session 1477 rewrite), `PHASE_5_CANDIDATE_1_IMPLEMENTATION_CHECKLIST.md` (Session 1477 rewrite)
+**Date:** 2026-05-21
+
+### Summary
+
+Session 1477 produced updated verification and implementation checklist documents for the Phase 5 Candidate 1 ZimWriter/libzim activation. These supersede the Session 1361/1353 versions.
+
+**Critical finding (new — not in prior audits)**: The feature branch `create_zim()` live code path (the `else:` block) does NOT call `creator.config_indexing(True, self.config.language_iso3)`. This call appears only in the docstring example block (inside `"""`), not in executable code. Without this call, Xapian full-text search will not be built into generated ZIM files — Kiwix search will return zero results. This is a one-line fix required before production activation.
+
+**Overall verdict**: CONDITIONAL GO for merge. Safe to approve the `feature/zimwriter-libzim-activation` branch merge on May 25-26. Three pre-activation items must be resolved before replacing the stub with real libzim in production (config_indexing fix, ZimExport ORM model, html.escape() on attribution footer).
+
+**Checklist**: 7-phase executable checklist covering environment verification through Docker deployment. Total estimated time: 90-120 minutes from start to deployment-ready state.
+
+**Action needed**: Review the critical `config_indexing` finding and confirm it should be applied as part of the Phase 5.1 activation PR (or as a separate fix PR before activating the real Creator path).
+
+---
+
 ## Needs Your Input
 
 ### feat/background-checks-firebase-push — driver availability integrated into ride matching
