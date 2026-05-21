@@ -298,4 +298,114 @@ The EU revenue ceiling at even moderate penetration is materially larger than Ca
 
 ---
 
-*Cross-references: TRACK_A_REGULATORY_RESEARCH.md (physical product regulatory context), PHASE_3_OPTION_ANALYSIS.md (June 22 US launch baseline), TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md (channel sequencing)*
+## Section 5: Risk Assessment — Geographic Expansion (May 30–July 2026 Monitoring)
+
+The following risks are specific to international expansion of a digital herbal education product. Generic risks (currency volatility, platform downtime) are excluded. Each risk has a monitoring trigger and a mitigation pathway.
+
+### Risk 1: Health Canada NHP Regulatory Re-classification
+
+**What it is**: Health Canada could, in a future regulatory update, reclassify digital guides that discuss dosage protocols or therapeutic applications as natural health product "labeling" subject to NPN requirements. The current position — that educational guides are not regulated as NHPs — rests on a regulatory interpretation, not a statutory exemption.
+
+**Probability**: Low. Health Canada's 2025 red tape reduction measures moved in the opposite direction (loosening NHP requirements). A re-classification targeting educational publishers specifically would be politically unusual and would likely take 2–4 years to implement through normal regulatory process.
+
+**Monitoring trigger**: Health Canada NNHPD newsletter / regulatory update announcements. Check quarterly at canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html.
+
+**Mitigation**: Ensure guide language maintains strict educational framing throughout. Avoid direct dosing instructions (use "traditional preparation ranges described by herbalists as..." rather than "dose X mg for Y days"). This framing is already consistent with PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md guidance.
+
+**Action if triggered**: Consult a Canadian natural health product regulatory attorney (National Health Products Association of Canada — nhpac.com — maintains a vendor referral list). Anticipated cost: $500–$1,500 for a single regulatory opinion letter.
+
+---
+
+### Risk 2: MHRA Enforcement Scope Expansion (UK)
+
+**What it is**: The MHRA has signaled interest in expanding oversight of digital health content that includes specific therapeutic claims about herbal products. If the MHRA issues guidance classifying digital educational guides with dosage information as regulated "labeling," Seedwarden's UK sales could become subject to THR compliance requirements.
+
+**Probability**: Low-to-medium. The MHRA's 2024–2025 enforcement focus has been on physical products and social media influencer health claims, not educational publishers. However, the UK's post-Brexit regulatory environment has been more active in herbal regulation than expected.
+
+**Monitoring trigger**: MHRA herbal medicines enforcement news at gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency. Quarterly review.
+
+**Mitigation**: Same guide language framing as Canada risk above. Additionally, include a UK-specific disclaimer in any UK-facing marketing materials: "This guide is produced for educational and informational purposes. It does not constitute medical advice and is not subject to the UK Traditional Herbal Registration scheme."
+
+**Action if triggered**: Withdraw UK Etsy listings as a precaution, consult a UK life sciences solicitor. The UK Herbal Medicines Advisory Committee (HMAC) publishes guidance and can be contacted for pre-consultation.
+
+---
+
+### Risk 3: GDPR Enforcement for Passive EU Subscribers
+
+**What it is**: EU residents who discover Seedwarden on Etsy and subscribe to the Kit email list via the bio link create a GDPR compliance obligation, even if Seedwarden has not actively targeted EU markets. If an EU subscriber files a complaint with a supervisory authority (e.g., the CNIL in France or BfDI in Germany) claiming their data was collected without proper GDPR consent, Seedwarden could face a formal inquiry.
+
+**Probability**: Medium. Kit's sign-up form does not currently implement double opt-in or explicit GDPR consent language. Any EU subscriber acquired passively between June 22 and the date GDPR infrastructure is implemented is technically a compliance exposure.
+
+**Monitoring trigger**: Monitor Kit subscriber geographic data from Day 1. If EU subscribers (any country) exceed 5% of total list before GDPR infrastructure is in place, treat as an active risk.
+
+**Mitigation**: Activate Kit's double opt-in setting for all new subscribers immediately at launch. Add a one-line GDPR consent checkbox to the landing page ("I agree to receive educational emails. I can unsubscribe at any time.") — this satisfies the substance of GDPR Article 6(1)(a) consent for the email use case. Full implementation timeline: 4–8 hours, should be completed by June 15 pre-launch as part of the Kit email infrastructure (per TRACK_B_EMAIL_SEQUENCES.md schedule).
+
+**Action if triggered**: Do not delete EU subscribers unilaterally (this may itself violate data retention obligations if they have made purchases). Consult an EU GDPR specialist via IAPP (iapp.org) for a one-hour paid consultation ($200–$400) to determine whether a DPA (data processing agreement) with Kit is sufficient or whether additional action is needed.
+
+---
+
+### Risk 4: CITES-Listed Herb Content Triggering Platform Review
+
+**What it is**: Several herbs in the Phase 3 bundles — specifically American Ginseng (*Panax quinquefolius*), Black Cohosh (*Actaea racemosa*), and Goldenseal (*Hydrastis canadensis*) — are either CITES Appendix II (American Ginseng) or candidates for listing (Goldenseal). International digital guides discussing harvest, cultivation, or trade of CITES-listed species could, in theory, attract Etsy platform moderation if an automated system flags "wildlife trade" keywords.
+
+**Probability**: Low. Etsy's automated content review focuses on physical wildlife products, not educational text about plants. Digital guides discussing sustainable cultivation of CITES-adjacent species are standard in the herbal education category.
+
+**Monitoring trigger**: Etsy listing removal or content warning for any Track B listing. Cross-reference with listings in PHASE_3_MEDICINAL_HERBS_LAUNCH_CHECKLIST.md to confirm all listings remain active at weekly review.
+
+**Mitigation**: Frame all CITES-adjacent species content around cultivation and sustainability explicitly. Language such as "sustainably cultivated sources only — wild harvest of this at-risk species is strongly discouraged" signals conservation awareness and reduces platform moderation risk while also differentiating from competitor guides. This framing is already embedded in the Phase 3 sourcing guide.
+
+**International dimension**: Canada, UK, and EU all have CITES obligations. Guides sold to international buyers discussing CITES-listed species are not themselves subject to CITES (CITES applies to the physical trade of specimens), but the guide should not include content that could be read as facilitating illegal harvest or export. Current guide framing is compliant.
+
+---
+
+### Risk 5: Etsy International Selling Restrictions (Country-Level Blocks)
+
+**What it is**: Etsy can restrict or block sales to specific countries due to sanctions compliance (OFAC, UK OFSI, EU sanctions lists), legal requirements, or platform policy changes. While Canada, UK, and Germany/France/Italy are stable trading partners, EU-level sanctions changes or a future Etsy policy update could affect digital product delivery to specific markets.
+
+**Probability**: Very low for Canada, UK, Germany, France, Italy. Non-zero for any market in a sanctions environment.
+
+**Monitoring trigger**: Etsy's seller policy updates (etsy.com/seller-handbook). Subscribe to Etsy Seller News emails. Review quarterly.
+
+**Mitigation**: Maintain Amazon KDP as a parallel international distribution channel (activated August 2026 per TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md). KDP's international reach across Amazon.ca, Amazon.co.uk, Amazon.de, Amazon.fr, and Amazon.it provides redundancy. If Etsy restricts a market, KDP serves as the continuity channel with zero additional content adaptation.
+
+---
+
+### Risk 6: Currency Exchange Rate Compression on International Margins
+
+**What it is**: Etsy automatically handles currency conversion for international buyers (buyers pay in local currency; Etsy converts to USD at Etsy's FX rate, which incorporates a 2.5% conversion fee on the seller's currency conversion). For Canadian buyers, this means a $22 USD listing price appears as approximately CAD $30 (at 1.36 CAD/USD). If the Canadian dollar strengthens significantly relative to USD, the CAD price of Seedwarden's guides rises in local currency terms, potentially reducing conversion.
+
+**Current FX exposure**: Canada (CAD): 2.5% Etsy conversion fee reduces net revenue from a CAD-denominated sale by $0.49 on a $22 listing — marginal impact. UK (GBP): approximately £17.50 at current 0.79 GBP/USD — competitive with UK-produced practitioner guides in the £15–£25 range.
+
+**Monitoring trigger**: Review Etsy Payment Account FX rates quarterly. Flag if USD/CAD rate moves more than 8% (net revenue impact >$1.50 per sale) or USD/GBP moves more than 8% (net revenue impact >$1.57 per sale).
+
+**Mitigation**: For Etsy-based international sales, no currency hedge is available or warranted at this revenue scale. For a future Shopify direct storefront, enable local currency pricing via Shopify Markets to lock in GBP/CAD price points independent of USD FX fluctuations.
+
+---
+
+### Risk 7: Practitioner Network Saturation and Outreach Timing Conflict
+
+**What it is**: The same practitioners who are targets for the US June 22 Tier A launch outreach (per PRACTITIONER_FIRST_CONTACT_SEQUENCE.md) have overlapping affiliations with Canadian, UK, and EU networks. If Canada and UK outreach campaigns launch too close to the June 22 US campaign, the same practitioners may receive multiple touchpoints from Seedwarden within a short window, triggering a "spam perception" response that damages the relationship.
+
+**Specific overlap at-risk contacts**: AHG Registered Herbalists with dual US/Canada practice locations (particularly Pacific Northwest practitioners who serve BC/Washington border populations). NIMH-affiliated UK herbalists who are also AHG members (a small but real overlap — several UK-trained herbalists hold dual AHG membership).
+
+**Monitoring trigger**: Before activating Canada OHA outreach in September 2026, cross-reference the Canada target list against the June 22 Tier A and Tier B US contact lists. Any practitioner appearing on both lists should receive a Canada-specific follow-up note ("I noticed you also practice in Ontario — here's how the bundle applies to your Canadian clinical practice") rather than a cold-start outreach.
+
+**Mitigation**: Maintain a master contact CRM (Google Sheets) with country-of-practice field. Tag all contacts with their primary market before outreach begins. The 3-month gap between US launch (June 22) and Canada outreach (September 1) is sufficient to avoid overlap perception if the September Canada outreach references the prior US contact rather than ignoring it.
+
+---
+
+### Risk Summary Table
+
+| Risk | Probability | Revenue Impact | Monitoring Frequency | Mitigation Owner |
+|---|---|---|---|---|
+| Health Canada NHP reclassification | Low | High if triggered (list withdrawal required) | Quarterly | Content language audit |
+| MHRA enforcement scope expansion | Low-medium | High if triggered | Quarterly | UK-specific disclaimer added pre-launch |
+| GDPR enforcement (passive EU subscribers) | Medium | Medium (inquiry, not fine likely at this scale) | Continuous from launch day | Kit double opt-in + consent checkbox |
+| CITES species content triggering platform review | Low | Medium (listing removal, not legal action) | Weekly Etsy listing check |Content framing in guides |
+| Etsy international selling restrictions | Very low | Low (KDP redundancy available) | Quarterly | Amazon KDP parallel activation |
+| FX compression on international margins | Low-medium | Low (<$2/sale at current rates) | Quarterly | Accept at current scale; Shopify Markets for future |
+| Practitioner network outreach timing conflict | Medium | Low-medium (relationship cost, not revenue loss) | Pre-campaign list audit | CRM cross-referencing before each market activation |
+
+---
+
+*Cross-references: TRACK_A_REGULATORY_RESEARCH.md (physical product regulatory context), PHASE_3_OPTION_ANALYSIS.md (June 22 US launch baseline), TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md (channel sequencing), PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md (at-risk species and CITES context)*
