@@ -1,5 +1,25 @@
 # Work Log
 
+## Session 1447 (May 21) — open-repo: Phase 5.1 Pre-Merge Security & Integration Audit
+
+**Task**: Comprehensive pre-merge security and integration audit for `feature/zimwriter-libzim-activation` branch before user approves merge to master.
+
+**Deliverables**:
+- `projects/open-repo/phase-5-1-pre-merge-audit-findings.md` (2,200+ words — five-area audit)
+- `projects/open-repo/phase-5-1-implementation-checklist.md` (1,500+ words — pre-merge + post-merge activation checklists)
+
+**Key findings**:
+- **Overall verdict**: CONDITIONAL APPROVE — 0 merge blockers, 4 post-merge action items
+- **Security**: Zero known CVEs in libzim (Snyk confirmed clean). One XSS finding: `source_node_url`/`source_node_name` are interpolated into attribution footer HTML without `html.escape()` — moderate severity, post-merge fix required before federation activation
+- **Integration**: 88/88 integration tests pass in 0.13s. Clean schema mapping between ContentItem and ZimWriter. BLOCKER (pre-activation only): `ZimExport` SQLAlchemy ORM class missing from `models.py` despite migration 003 defining the table
+- **Dependencies**: ARM64 (aarch64) wheel confirmed available for libzim 3.9.0/3.10.0 for Python 3.11.2 on Raspberry Pi 5. Recommend upgrading pin to 3.10.0 for C++ 9.7.0 hardening patches. `libzim` not yet in pyproject.toml — must add before activation
+- **Performance**: Small corpus (500 articles) estimated 15–45s write time, 1–5 MB ZIM file. Memory buffering pattern safe up to ~5,000 articles; streaming mode needed beyond that
+- **Documentation**: Inline docstrings are excellent. README not updated for Phase 5 — post-merge task
+
+**Merge decision**: GO — merge is safe in stub phase. 3 pre-activation blockers documented in Part B of checklist.
+
+---
+
 ## Session 1447 (May 21, continued) — cybersecurity-hardening: Phase 2 Threat Verification
 
 **Task**: Verify Phase 2 planning documents (PERSONAL_OPSEC_PLAN.md and PHASE_2_IMPLEMENTATION_ROADMAP.md) against the May 2026 threat landscape across five areas: OS vulnerabilities, password managers, encryption/Signal, carrier/biometric threats, and vendor compromises.
