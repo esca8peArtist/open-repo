@@ -1,10 +1,32 @@
-## Since Last Check-in (Session 1444 — ORCHESTRATOR, May 21 00:41–01:45 UTC) — Phase 2/3/5 Pre-Deployment Acceleration
+## Since Last Check-in (Session 1445 — ORCHESTRATOR, May 21 01:35–TBD UTC) — Exploration Queue Activation + Synthesis Preparation
 
-**Status**: ✅ **3 PARALLEL AGENTS COMPLETED HIGH-IMPACT PREP WORK** | ✅ **PHASE 2 RESEARCH ACTIVATION CHECKLIST EXTENDED & FINALIZED** | ✅ **PHASE 3 MEDICINAL HERBS CRITICAL PATH v5.0 & TIMELINE COMPLETED** | ✅ **PHASE 5.1 ZIMWRITER VERIFICATION & CHECKLIST v3 COMPLETE** | 🔴 **STOCKBOT LEVER B DEADLINE: MAY 22 13:30 UTC (~12 HOURS)** | ⏰ **MAY 21 SYNTHESIS: 18 HOURS TO EXECUTION**
+**Status**: ✅ **2 PARALLEL AGENTS COMPLETED EXPLORATION QUEUE WORK** | ✅ **TRUMP V. BARBARA RAPID-RESPONSE INFRASTRUCTURE BUILT** | ✅ **PHASE 3 SUPPLIER CONFIRMATION + PRODUCTION CHECKLIST FINALIZED** | ✅ **MAY 21 SYNTHESIS SCHEDULED FOR 19:00 UTC (AUTONOMOUS EXECUTION)** | 🔴 **STOCKBOT LEVER B DEADLINE: MAY 22 13:30 UTC (~35 HOURS REMAINING)** | ⏰ **SYNTHESIS EXECUTION: 17.5 HOURS AWAY**
 
-**Work Completed**:
+**Work Completed (Session 1445)**:
 
-1. ✅ **Resistance-Research: Phase 2 Research Activation Finalized**
+1. ✅ **Resistance-Research: Trump v. Barbara Rapid-Response Infrastructure Built**
+   - **File created**: `TRUMP_V_BARBARA_RAPID_RESPONSE_INFRASTRUCTURE.md` (2,500+ words, 56 verified sources)
+   - **Case status confirmed**: No ruling issued as of May 21. Expected ruling window: late June 2026. Monitoring begins June 15.
+   - **Key findings**:
+     - 29-senator Republican amicus brief explicitly argues tribal members lack birthright citizenship — creates statutory threat vector beyond executive
+     - 14-senator Democratic letter (Schatz et al.) documents SAVE Act harms to tribal voting access
+     - Gorsuch/Sauer oral argument exchange ("I'm not sure") is significant legal vulnerability in government's case
+     - Callais cascade relationship clarified: Callais weakened VRA Section 2 (existing effects framework now requires intent inference); Trump v. Barbara is separate constitutional case with broader long-term impact
+   - **Distribution infrastructure**: Three scenario hooks (constitutional reaffirmation / statutory holding / adverse) pre-written. Single critical pre-ruling action: publish Domain 58 as GitHub Gist to enable link-based distribution.
+   - **Post-ruling advocacy window**: Day 0–30 post-ruling. Montana SB 490 injunction (May 11, first post-Callais tribal voting rights victory) is the "here's what works now" frame. Senate Indian Affairs Committee emergency hearing request ready if Scenario C (adverse).
+   - **Status**: Domain 58 distribution infrastructure production-ready for May 21 synthesis outcome (STRONG/MODERATE) and ready for rapid-response upon ruling issuance (late June).
+
+2. ✅ **Seedwarden: Phase 3 Production Launch Preparation Finalized**
+   - **Files updated/created**:
+     - `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` v4.0: Three critical dates, per-bundle delivery requirements, Goldenseal Wikimedia CC licensing confirmed (Path 2, zero cost, CC-BY-SA 4.0 Eric Hunt photos)
+     - `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` v6.0: Writing template word counts (13–17 gross hours per bundle), stock image requirements per bundle, pre-launch FTC compliance checklist, June 22 turn-key daily schedule
+     - `phase-3-timeline.csv`: Consolidated Gantt with 68 milestones, all 5 bundles mapped, critical path identified (zero float on D-01/S-05/G-01-04/W-01-03/M-01-06)
+   - **Key finding**: Women's Health is only bundle with live specimen (Black Cohosh) deliverable by June 21. All other bundles use Wikimedia CC or Phase 2 archive photos for v1.0.
+   - **June 22 Start Checklist**: Hour-by-hour schedule for Days 1–2 (June 21 setup + June 22–23 writing) with pace assessment trigger to detect writing slip early
+   - **Status**: Phase 3 is turn-key ready. May 30 Phase 2 launch → zero setup lag before June 22 sprint start. All supplier order windows and contingencies pre-decided.
+
+**Prior Session 1444 Work** (continuing context from previous check-in):
+1. ✅ **Resistance-Research: Phase 2 Research Activation Checklist** 
    - **Updated**: `phase-2-research-activation-checklist.md` (Sections 7–8 added; now complete)
      - Section 7: Domain 60 audit — confirmed Domain 60 doesn't exist; Domain G (Press Freedom, 8,695 words) absorbs the 5th Phase 2 slot
      - Section 8: Phase 2 Research Kick-Off Summary with explicit priority ordering, estimated completion dates, success criteria for all synthesis outcomes (STRONG/MODERATE/WEAK/TOO_EARLY)
@@ -42,21 +64,26 @@
    - **Status**: Pre-deployment checklist ready; user approval May 25–26 → implementation May 25–28 ✅
 
 **Key Status**:
-- **All 3 Active Blocks Remain**: SSH auth, test print, VeraCrypt restart all pending user action (no change from Session 1443)
-- **High-Impact Prep Completed**: All three projects (resistance-research, seedwarden, open-repo) have pre-deployment infrastructure finalized and committed to master
-- **May 21 Synthesis** (18 hours away): Fully autonomous. Phase 2 research activation infrastructure ready to trigger launch post-outcome.
-- **May 30 Seedwarden Gate**: Three user decisions required by May 30 for June 22 execution. Timeline finalized with supplier deadlines mapped.
-- **May 25 User Approval Gate**: Phase 5.1 implementation checklist ready for user decision on MVP vs. recommended vs. full track.
+- **All 3 Active Blocks Remain**: SSH auth (critical, May 22 13:30 UTC deadline), test print, VeraCrypt restart all pending user action (no change from Session 1443-1444)
+- **Exploration Queue Work Completed**: 2 parallel agents executed high-leverage items (Trump v. Barbara + Seedwarden Phase 3 prep). Both items production-ready and committed to master.
+- **May 21 Synthesis** (17.5 hours away): Fully autonomous execution at 19:00 UTC. Prerequisite: user fills signal log snapshot (currently unfilled as of 01:35 UTC). Framework: MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md.
+- **May 30 Seedwarden Gate**: Three user decisions required for June 22 execution (Option C sprint scope, Goldenseal sourcing Path 2 confirmed, Canva palette). All timeline, supplier, and compliance pre-work complete.
+- **May 25 User Approval Gate**: Phase 5.1 implementation checklist ready for user decision on MVP vs. recommended vs. full track (from prior Session 1444).
+- **Resistance-Research Post-Synthesis**: Phase 2 research can launch same-day if synthesis outcome is STRONG/MODERATE. All infrastructure pre-staged with Domain 58 rapid-response ready.
 
-**Session Decision**:
-All top-priority projects blocked on external dependencies. Per orchestrator protocol, spawned parallel agents for 3 independent, high-leverage prep tasks: (1) Phase 2 activation finalization, (2) Phase 3 timeline completion, (3) Phase 5.1 verification. All completed successfully with committed output. No new issues or blockers identified. System positioned for May 21 19:00 UTC synthesis and downstream May 25/30 user decision gates.
+**Session 1445 Decision**:
+All main projects blocked on user actions (stockbot SSH fix by May 22 13:30 UTC, test print execution, VeraCrypt restart). Exploration Queue had 30+ pending items. Per orchestrator protocol: "If all projects are blocked on external dependencies, work the Exploration Queue." Spawned 2 parallel agents for independent, high-leverage Exploration Queue items: (1) Resistance-research Trump v. Barbara rapid-response infrastructure (supports Domain 58 distribution readiness), (2) Seedwarden Phase 3 production launch preparation (enables May 30 Phase 2 close-out with zero setup lag). Both completed successfully, committed to master. 
+
+**Synthesis preparation**: CronCreate scheduled MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md execution for 19:00 UTC (May 21, 2026). Autonomous execution requires user to fill wave-1-signal-log-may18-21.md snapshot by 19:00 UTC (currently unfilled as of 01:35 UTC May 21). Synthesis outcome determines Phase 2 research activation sequence.
+
+No new issues or blockers identified beyond the three pre-existing (stockbot SSH, test print, VeraCrypt). System positioned for May 21 19:00 UTC synthesis and downstream May 22 20:00 UTC checkpoint.
 
 **Pending User Actions** (Priority Order):
-1. 🔴 **CRITICAL (May 22 13:30 UTC deadline — ~12 hours)**: Stockbot SSH auth fix — Either (A) add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and add `"hmm_regime_masking": true` to config. Without this, May 22 checkpoint cannot execute.
-2. 📋 **May 21 ~19:00 UTC**: Resistance-research synthesis executes autonomously. No action required (optional monitoring).
-3. 📋 **May 25–26**: Open-repo Phase 5.1 approval decision (MVP/recommended/full track).
-4. 📋 **May 30**: Seedwarden Phase 3 scope decision (Option C sprint scope recommended; Goldenseal sourcing decision; Canva palette auto-lock).
-5. 📋 **~June 1**: Systems-resilience Phase 5 path decision (community vs household vs individual focus).
+1. 🔴 **CRITICAL (May 22 13:30 UTC deadline — 35 hours)**: Stockbot SSH auth fix — Either (A) add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and add `"hmm_regime_masking": true` to config. Without this, May 22 checkpoint cannot execute. **Mitigation documents ready**: SSH_AUTH_MITIGATION_URGENT.md from Session 1443 has all steps.
+2. 📋 **May 21 BEFORE 19:00 UTC**: Fill wave-1-signal-log-may18-21.md snapshot sections (May 20 evening and May 21 morning). Trump v. Barbara ruling check: **CONFIRMED NO RULING YET** (pending late June, synthesis framework execution does not require it). May 21 synthesis at 19:00 UTC is fully autonomous once signal log is filled.
+3. 📋 **May 25–26**: Open-repo Phase 5.1 approval decision (MVP/recommended/full track). Checklist v3 ready from Session 1444.
+4. 📋 **May 30**: Seedwarden Phase 3 scope decision (Option C sprint scope RECOMMENDED; Goldenseal sourcing PATH 2 CONFIRMED; Canva palette auto-lock June 15).
+5. 📋 **~June 1**: Systems-resilience Phase 5 path decision (community vs household vs individual focus). Wave 2 research complete, awaiting sequencing/scope/timeline decision.
 
 **Next Autonomous Windows**:
 - **May 21 19:00 UTC**: Resistance-research Phase 2 synthesis (fully autonomous, ~1 hour) — Phase 2 research launches same-day if STRONG/MODERATE
