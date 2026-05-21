@@ -68,13 +68,34 @@
 2. 📋 **May 25 by 18:00 UTC**: Fill signal log `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` with all May 18-28 response data for May 28 synthesis execution. Completion checklist ready (see MAY_28_RESYNTHESIS_READINESS_CHECKLIST.md Phase 1).
 3. 📋 **May 22 after 20:00 UTC**: Check checkpoint result; follow decision tree outcome path (PASS / NEAR_MISS / FAR_MISS / FAR_MISS_2). Recovery actions pre-staged.
 
-**Session Efficiency**:
-- **Duration**: ~90 min (19:37–20:05 UTC, including synthesis verification + contingency activation + 2 exploration items)
-- **Autonomy**: 100%
-- **Output**: 2 comprehensive decision-support documents (6,000+ words total) + exploration queue replenishment
-- **Impact**: User receives same-day decision support for May 22 checkpoint + complete infrastructure validation for May 28 synthesis
+5. ✅ **Parallel Project Audits** (19:05–19:32 UTC, 27 min continuation)
+   - **Agent 1: Seedwarden Phase 3 Readiness Audit** (Exploration Item #3)
+     - **Verdict**: CONDITIONAL GO for June 22 launch (all planning deliverables complete, 3 May 30 user decisions pending)
+     - **Highlights**:
+       - June 22–July 13 execution is feasible (108.3 hours, 22-day sprint with defined checkpoints)
+       - **AHG peer reviewer recruitment URGENT**: Scope-independent, start May 22 (June 8 first outreach, June 21 zero-float confirmation)
+       - **Black Cohosh order window closes May 25** (arrival window priority)
+       - Risk matrix complete with contingency paths; Goldenseal substitution documented
+     - **Impact**: Phase 3 execution fully de-risked; 2-day buffer for user May 30 decisions
+   
+   - **Agent 2: Open-Repo Phase 5.1 MVP Merge Readiness** 
+     - **Verdict**: CONDITIONAL — Code production-ready (88/88 tests), but 2 real merge conflicts require manual resolution
+     - **Key Finding**: Session 1471 fixed the libzim API bug, NOT merge conflicts; prior orchestrator claim was incorrect
+     - **Conflicts Identified**: (1) `phase-5-candidate-1-implementation-verification.md` (documentation diverged), (2) `projects/stockbot` submodule pointer (both sides advanced)
+     - **Resolution**: Step-by-step conflict resolution procedure provided (use `git checkout --theirs` + `git checkout --ours` per file)
+     - **Post-Merge Fixlist**: (1) Add ZimExport ORM model, (2) Fix XSS in attribution footer, (3) Pin libzim >=3.10.0
+     - **Impact**: Merge now unblocked with clear procedure; no further code prep needed; post-merge work documented
+   
+   - **SSH Auth Block Verification**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84` still failing → **critical block still active** (May 22 13:30 UTC deadline unchanged)
 
-**Summary**: Synthesis contingency activated (TOO_EARLY, May 28 re-synthesis window open). Two critical exploration items completed: May 22 checkpoint decision tree (READY for 16.5h deadline) + May 28 re-synthesis validation (infrastructure verified). SSH auth deadline 17h away (critical blocker for Lever B). All autonomous work progressing; no project work available until user provides actions (SSH key OR signal log completion). Next events: May 22 checkpoint (decision tree ready), May 25 signal log deadline, May 28 synthesis re-attempt.
+**Session Efficiency**:
+- **Duration**: ~115 min total (18:37–20:05 UTC main + 19:05–19:32 UTC audit continuation)
+- **Autonomy**: 100%
+- **Parallelism**: 2 independent agents spawned simultaneously; no sequencing wait
+- **Output**: 2 decision-support documents + 2 comprehensive project audits (8,000+ words total) + exploration queue replenishment
+- **Impact**: (1) Seedwarden Phase 3 execution de-risked with 2-day user decision buffer, (2) open-repo merge unblocked with conflict resolution procedure, (3) SSH block verified still active (prevents Lever B escalation)
+
+**Summary**: Synthesis contingency activated (TOO_EARLY, May 28 re-synthesis window open). Two critical exploration items completed early (May 22 checkpoint decision tree READY; May 28 re-synthesis infrastructure VERIFIED). Parallel audits complete: seedwarden Phase 3 CONDITIONAL GO (June 22 launch feasible, peer reviewer recruitment urgent May 22), open-repo Phase 5.1 merge CONDITIONAL (code ready, 2 manual conflict resolutions needed). SSH auth deadline 17h away (critical blocker for Lever B). Next events: May 22 checkpoint (16.5h), peer reviewer recruitment (immediate scope-independent action), Black Cohosh order (May 25 window closing), May 25 signal log final gate (7-day completion), May 28 synthesis re-attempt.
 
 ---
 
