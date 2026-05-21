@@ -1,216 +1,410 @@
 ---
-title: "Phase 4 Research Initialization"
+title: "Phase 4 Research Initialization & Gap Analysis"
 project: systems-resilience
 phase: 4
 status: decision-required
-created: 2026-05-19
+created: 2026-05-21
 decision_deadline: 2026-06-01
 execution_start: 2026-06-02
 audience: "Project lead — Phase 4 direction decision"
+word_count: ~3900
+cross_references:
+  - PHASE_4_FRAMEWORK.md
+  - PHASE_5_PATH_OPTIONS_FRAMEWORK.md
+  - phase-3/05-scaling-pathways-and-thresholds.md
+  - household/01-household-coordination-overview.md
 ---
 
-# Phase 4 Research Initialization
+# Phase 4 Research Initialization & Gap Analysis
 
-> **Purpose**: Enable the user to decide between Option A (individual-scale depth), Option B (household-to-institutional bridges), or a Hybrid before Phase 4 research launches June 1.
+> **Purpose**: Map the Phase 4 research landscape, identify priority gaps, and frame the scope decision before execution begins June 1.
 >
-> **Phase 3 status**: Complete. Five domain documents at community scale (100–1,000 people): governance, food systems, information infrastructure, security/defense, and scaling pathways. Seven individual-scale documents (water, food, shelter, energy, healthcare, agriculture, moisture extraction). Five household coordination documents.
+> **Reading time**: 15–20 minutes.
 >
-> **User decision required**: Select Option A / Option B / Hybrid before Phase 4 research initiation.
+> **User decision required by June 1, 2026**: Select Option A, B, or C scope before research launches.
 
 ---
 
-## Section 1: Individual-Scale Gap Analysis
+## Section 1: What Phase 4 Is — and Why It Exists
 
-### What the Seven Documents Cover
+### What Phase 4 Covers
 
-The existing individual layer is strong on physical survival domains (water, food, shelter, energy) and the agricultural knowledge that Zone 5 demands (regenerative methods, Three Sisters, cover crops, soil biology). Healthcare covers triage, MARCH protocol, wound management, fractures, infections, anaphylaxis, heat and cold emergencies, tick-borne illness, and dental abscesses. The two major strengths of the individual layer are its Zone 5 Midwest specificity and its quantitative precision (exact calorie counts, exact square footage, exact timing).
+Phase 4 is synthesis and implementation architecture. It does not produce new domain research — it produces the connective tissue between 18 domain documents already written across three scales and the execution decisions that Phase 5 requires.
 
-### What Is Missing
+Concretely, Phase 4 does three things:
 
-**Education / self-directed learning.** This was the original `06-education.md` in the PLAN.md directory spec, and it was never built. A community of 150–500 people without functioning schools faces an immediate child development and adult skill-transfer problem within 6–12 months. There is no document covering: what to teach, how to teach it without formal training, how to manage mixed-age learning groups, what reference materials to prioritize, or how to identify and leverage community members with subject expertise. This is the single largest planned-but-absent document in the individual layer.
+**1. Cross-scale integration.** Phases 1–3 were built domain-by-domain: water at individual scale, then water at household scale, then community food systems. Phase 4 asks the orthogonal question: how does an individual's water competency connect to a 3-household cluster's cistern coordination, and how does that connect to a town of 120 people's municipal water redundancy? The current corpus has vertical depth within each domain; Phase 4 builds horizontal bridges across scales within each domain, then maps the critical interdependencies between domains.
 
-**Veterinary care.** The food documents cover livestock only in aggregate caloric terms. There is no coverage of: routine animal health (vaccination schedules for cattle, pigs, chickens, goats), wound care and limb injuries in farm animals, obstetric emergencies in livestock (dystocia is a routine crisis on a working farm), zoonotic disease identification, and emergency slaughter protocols for sick animals. In a Zone 5 agricultural context, livestock health is a direct food security variable. Loss of a dairy animal or breeding pair to an untreated condition translates directly to nutritional loss. Veterinary care is also one of the hardest skills to improvise — the knowledge base is large and the stakes per individual animal are high.
+**2. Implementation sequencing.** Phase 3 synthesis (documented in PHASE_4_FRAMEWORK.md) identified the correct community-scale build order: information infrastructure first, then governance, then food, then security, then scaling protocols. Phase 4 extends this backward to individual and household scales: what must be stable at individual scale before household coordination can function? What household-level infrastructure must be in place before community-scale organization adds value? These sequencing questions are not answered in any single Phase 1–3 document.
 
-**Advanced equipment repair.** The off-grid-living project covers tools and fabrication well at the generic level. What is absent in systems-resilience is Zone 5 Midwest farm-specific repair: small engine repair for tillers, seeders, and ATVs; diesel tractor field repair (fuel system, hydraulics, alternator); grain handling equipment (elevator legs, augers, moisture testers); and solar/battery system fault diagnosis. A 150-person community with a failed tractor during planting season faces a catastrophic production shortfall. These are distinct from general tools knowledge — they require knowing specific failure modes for common Midwest farm equipment.
+**3. Institutional bridge identification.** Phases 1–3 treat existing institutions — schools, county health clinics, local government, utilities — as background infrastructure. Phase 4 maps the interface layer: where do household networks and informal community structures need to formally engage with (or partially substitute for) these institutions? The bridge layer is the prerequisite for Phase 5 implementation planning, which cannot proceed without knowing which institution relationships are load-bearing.
 
-**Conflict resolution and mediation.** The governance documents (Phase 3) describe structural mechanisms but do not address the facilitation skills needed to operate them. A community mediator needs to: de-escalate interpersonal conflicts before they reach assembly, facilitate difficult meetings where resource allocation is contested, hold structured dialogue between parties in active dispute, and distinguish between conflicts that can be resolved through process and those that require removal of a community member. These are learnable skills with established frameworks (interest-based negotiation, restorative circles, transformative mediation) that are entirely absent from the corpus.
+### How Phase 4 Differs from Phase 3
 
-**Psychological support and trauma-informed care.** The healthcare document covers physical emergencies only. In extended disruption scenarios, depression, anxiety, PTSD, grief, and interpersonal psychological trauma are the dominant health burden after the immediate survival phase. A community without anyone trained in psychological first aid, grief facilitation, or even basic active listening frameworks for crisis support will experience cumulative social deterioration. Zone 5 winter (November through March) significantly amplifies psychological risk — seasonal depression, isolation, and reduced light are endemic stressors that precede the crisis and worsen under it.
+Phase 3 was domain research: deep, sourced analysis of one infrastructure domain (food systems, information, security, governance, scaling) at one scale (community). Each document stood independently.
 
-**Teaching and pedagogy.** Adjacent to the education gap but distinct: the question of how to teach skills across a community. When a community has one trained mechanic, one experienced midwife, or one person who understands water chemistry — how does that knowledge transfer to two, three, or ten additional people under field conditions? Adult learning theory, apprenticeship structures, demonstration-based teaching, and error-tolerant instruction design are learnable domains. Without coverage of how knowledge transfers, the community remains dependent on single points of failure.
+Phase 4 is integration work. The raw material is Phase 1–3 documents themselves. Phase 4 does not require the same volume of external source research — it requires careful reading of what already exists, identification of gaps and connection points, and a small amount of targeted external research for the institutional bridge layer (where Phase 1–3 documents are genuinely silent).
 
-### Highest-Impact Gaps for Zone 5 Midwest
+The output of Phase 4 is a smaller set of documents (3–6 rather than 5+ per phase) that are denser and more decision-relevant. A Phase 4 document on implementation sequencing does not need to be 6,000 words; it needs to be precise.
 
-The three gaps with the clearest Zone 5 justification are: (1) veterinary care — because small-scale livestock is central to the agricultural model already documented; (2) education and pedagogy — because Zone 5 winter creates extended indoor time that is the natural window for knowledge transfer, and no document covers it; and (3) psychological support — because Zone 5 winters are clinically demonstrated to produce depression and isolation even under normal conditions, and extended disruption would intensify this significantly.
+### Why Phase 4 Cannot Be Skipped
 
----
+Phase 5 requires a blueprint it does not yet have. The three Phase 5 paths (individual education guides, household implementation playbooks, and institutional/community implementation) each depend on different Phase 4 outputs:
 
-## Section 2: Institutional Bridge Research
+- Individual education guides require knowing which individual-scale gaps are genuine and which are already covered in off-grid-living or seedwarden documents.
+- Household playbooks require knowing how 3-household clusters scale to 8–25 person networks — a gap not addressed anywhere in the current corpus.
+- Institutional implementation requires the bridge analysis Phase 3 explicitly deferred.
 
-### The Research Problem
-
-Phase 3 documents describe what a community of 100–1,000 people needs to build internally. They treat existing institutions (schools, clinics, county government, libraries) primarily as background infrastructure that may or may not be functional. What Phase 3 does not address is the interface layer: how does a household network or small mutual-aid community relate to, support, or substitute for formal civic institutions when those institutions are degraded or absent?
-
-This is a qualitatively different research question. It is not about building parallel systems from scratch — it is about the handoff layer between informal community networks and formal institutions operating at partial capacity.
-
-### Schools as Resilience Hubs
-
-A rural Zone 5 school building is typically the largest, most energy-intensive, most structurally sound building in a small community. It has kitchens, water infrastructure, storage, gymnasium space, and communications equipment. When schools close — due to grid failure, staff unavailability, or community contraction — that physical infrastructure does not disappear. The research question is: what does a household network need to know to use a school building as a community hub during disruption? Secondary questions include: how do household networks support educational continuity when formal schooling fails (what is the minimum viable educational provision for children 5–18, and who can provide it)? What curriculum records and materials should be preserved or replicated from school archives?
-
-The institutional bridge here runs in both directions: households can support school continuity (by providing staffing, labor, and food), and the school can support households (by providing space, infrastructure, and a known community coordination point).
-
-### Clinics as Knowledge Anchors
-
-Rural clinic relationships with household medical knowledge are underdeveloped in the existing corpus. The current individual healthcare document treats the clinic as an evacuation destination. A more nuanced view: rural clinics — especially federally qualified health centers (FQHCs) and critical access hospitals (CAHs) — have staff with skills that can be shared pre-crisis, pharmaceutical supplies that could be accessed through community agreements, and diagnostic equipment (glucometers, blood pressure cuffs, oximeters) that could be maintained within the community with staff training. The research question is: what relationships between household networks and rural health infrastructure are worth building before a crisis? What skills can a rural NP or PA teach to community members in a half-day session? What pharmaceutical stockpiling or access agreements are legally available to communities?
-
-The bridge also runs in the other direction: if a clinic loses grid power, what can a household network provide (backup power, food for staff, housing for on-call personnel) to keep the clinic operational during a disruption?
-
-### Local Government and County Services
-
-Zone 5 Midwest county government provides services that household networks cannot replicate: road maintenance (critical for agricultural transport), welfare checks on elderly residents, emergency management coordination, and the legal authority to declare emergencies that unlocks state and federal resources. When county government is degraded — key staff absent, budget collapsed, communications down — household networks need to know: which county services are most critical and which can be suspended? What is the county emergency plan and does the community know it? Who has authority to declare a local emergency and what does that unlock? How do household networks interface with a township government that may still be partially functional?
-
-This is also the domain of legal structure: household mutual aid networks have no legal standing. A community that wants to enter contracts, hold property collectively, or access government resources needs some form of legal organization. What are the lightest-weight legal structures (limited liability companies, agricultural cooperatives, nonprofit 501(c)(3)s, or township commissions) that give a community the minimum legal standing to interface with government while maintaining informal governance?
-
-### Communications: Household Radio Networks to Institutional Broadcast
-
-The Phase 3 information infrastructure document covers GMRS, AREDN mesh, and HF shortwave for community-to-community coordination. What it does not cover is the relationship between community radio networks and broadcast infrastructure: county emergency alert systems, NOAA weather radio, state emergency broadcast systems, and the Emergency Alert System (EAS) in general. Research questions: how does a community register its GMRS network with county emergency management so that it receives official alerts? What is the process for becoming an ARES (Amateur Radio Emergency Service) affiliate, and what does that give a community in terms of access to official emergency communication infrastructure? Under what circumstances can a community's radio operators transmit on frequencies normally reserved for official use?
-
-### If County Government Collapses: The Coordination Problem
-
-The hardest-to-research but highest-impact bridge scenario: what does a household network need to coordinate with remaining institutional fragments when county government is largely non-functional? From existing disaster research (Hurricane Maria, Appalachian flooding, persistent California drought emergency), the pattern is consistent: some institutions survive partial collapse (the library, the fire station, a single clinic, a church with generator), and the coordination challenge is connecting the informal household network to these surviving institutions in a way that extends both parties' capabilities. Research would need to surface: what communication protocols, legal authorities, and resource-sharing mechanisms have been used in documented collapse scenarios to maintain partial institutional function? What does the Zapatista model (which built parallel institutions alongside, not instead of, formal government) suggest for Midwest communities?
+Without Phase 4, Phase 5 would either repeat work already done (duplicating off-grid-living content) or leave critical design questions unresolved (the 8–25 person gap, the institutional handoff layer). Phase 4 is the shortest path to a Phase 5 that does not waste research effort.
 
 ---
 
-## Section 3: Phase 4 Scope Decision
+## Section 2: Gap Analysis — Priority Gaps Phase 4 Must Address
 
-### Option A: Individual-Scale Expansion
-
-Five to seven new individual-scale documents focused on the highest-impact gaps. This option deepens the individual/household layer before moving outward. It produces immediately actionable content that any single person or small group can use without institutional coordination. The content is entirely within the existing project's architecture and cross-references cleanly with existing documents.
-
-The strongest candidates for Option A documents, ranked by impact:
-
-1. **Individual education and pedagogy** — covers child education continuity, adult skill transfer, mixed-age teaching, and reference material prioritization for Zone 5 context. Fills the only planned-but-absent document in the original PLAN.md spec.
-2. **Veterinary care for small-scale livestock** — covers cattle, pigs, chickens, and goats for Zone 5 Midwest farmers; routine health, obstetric emergencies, zoonotic disease, and field slaughter. Directly supports the existing agriculture documents.
-3. **Conflict resolution and mediation** — covers interest-based negotiation, facilitation skills, restorative practices, and community mediator training. Bridges individual skills to the governance documents in Phase 3.
-4. **Psychological support and trauma-informed care** — covers psychological first aid, grief facilitation, depression management in winter-intensive contexts, and basic counseling frameworks that a non-clinician can apply. Zone 5 winter amplifies this need significantly.
-5. **Advanced equipment repair (farm and mechanical systems)** — covers diesel tractor field repair, small engine maintenance, grain handling equipment, and solar/battery system diagnosis. Completes the tools layer for the Midwest agricultural context.
-
-### Option B: Institutional Bridge Research
-
-Three to five focused bridge documents covering the interfaces between household networks and surviving institutions. This option is higher-complexity research (the documentary record for these interfaces is thinner than for individual survival skills) but higher strategic value for Phase 5 implementation planning. Without the bridge layer, Phase 5 (community-scale implementation) will hit a wall at the point where informal networks need to interface with legal, medical, and governmental structures.
-
-The strongest candidates for Option B bridges, ranked by leverage:
-
-1. **Schools as resilience hubs** — covers building access, educational continuity protocols, and the household-to-school support relationship. High-leverage because the school building is already the community's largest shared infrastructure.
-2. **Clinic and health infrastructure relationships** — covers pre-crisis skill sharing, pharmaceutical access, and the mutual support relationship between household networks and rural health providers. Directly extends the existing healthcare documents upward in scale.
-3. **Legal structure and county government interface** — covers the lightest-weight legal vehicles for community networks, county emergency plan integration, and the interface with township and county government under degraded conditions.
-
-### Option A+B Hybrid
-
-A smaller individual expansion (two to three documents) combined with one to two bridge documents. This approach prevents the individual layer from becoming isolated from the institutional context that Phase 5 will require. The natural pairing is: individual education + individual veterinary care (the two highest-impact and most Zone 5-specific gaps) combined with the clinic bridge (the highest-leverage institutional interface for healthcare continuity) and the legal/county bridge (required for any Phase 5 implementation work). This is the option most likely to produce usable content for Phase 5 regardless of which direction implementation planning takes.
-
-### Cross-Project Reuse
-
-Phase 4 can draw heavily on existing project content rather than researching from scratch:
-
-- **off-grid-living/08-medical-health.md** provides the most comprehensive existing medical coverage in the project ecosystem. Individual healthcare (Phase 1) already cross-references it; an expanded trauma or psychological care document should extend it, not duplicate it. The off-grid-living document covers childbirth, CBRN scenarios, and chronic disease management at depths that do not need to be replicated.
-- **off-grid-living/10-tools-fabrication.md** provides the generic tools and fabrication foundation. The Phase 4 equipment repair document should reference this and specialize for Zone 5 Midwest farm equipment rather than repeating general metalworking or woodworking content.
-- **off-grid-living/16-skills-knowledge.md** provides the tiered skill framework (Novice/Competent/Proficient/Expert) and learning pathway structure. The pedagogy document can adopt this framework rather than inventing a parallel one.
-- **seedwarden products** (seed-saving-field-manual, small-scale-livestock-field-manual, hunting-fishing-trapping-field-manual) cover agricultural production depth that the veterinary care document can build on rather than duplicate. The livestock field manual in particular handles basic animal husbandry; veterinary care extends it into health management and emergency interventions.
+Eight gaps are identified below, ordered by **leverage**: how much downstream Phase 5 work each gap unlocks or blocks.
 
 ---
 
-## Section 4: Timeline and Research Candidates
+### Gap 1: The 8–25 Person Scale Is Entirely Absent
 
-### If Option A (Individual Expansion — Five Documents)
+**What's covered**: Phase 1 covers one adult. Phase 2 covers 3–6 person clusters. Phase 3 covers 100–1,000 people.
 
-**Estimated timeline: 4–6 weeks** of research and writing at normal session pace.
+**What's missing**: The 8–25 person range — the most common unit for extended-family rural relocation, small cooperative living, and neighborhood coordination clusters. A 15-person group using Phase 2 documents must interpolate governance, water math, food production, and healthcare protocols designed for half their number. A family of four who recruit two neighboring households immediately exceed Phase 2 assumptions.
 
-- **Individual education and pedagogy** (1.5 weeks): Research candidates include the Sudbury model, Reggio Emilia emergency adaptations, unschooling literature for resource-constrained environments, and the documented practices of Amish and Mennonite one-room schooling. Zone 5 framing: winter indoor time as the natural learning window, apprenticeship pairing as the primary adult skill-transfer mechanism, and reference library design for a community without internet access. Effort: medium — literature is accessible and the Zone 5 context is well-defined.
+**Research effort**: 2–3 hours. Primarily synthesis — scaling Phase 2 math to the new population range and drafting a governance template bridging Phase 2 charter and Phase 3 delegate council.
 
-- **Veterinary care for Zone 5 small-scale livestock** (1.5 weeks): Research candidates include the Merck Veterinary Manual (free online), USDA APHIS livestock health resources, Extension service publications for Zone 5 livestock producers, and the Gail Damerow chicken and livestock health references. Focus: cattle (calving, respiratory disease, foot rot), pigs (reproductive, respiratory), chickens (coccidiosis, Marek's, egg binding), goats (kidding, urinary calculi in males). Effort: high — the knowledge base is large; the document should be a reference card format rather than exhaustive coverage.
-
-- **Conflict resolution and mediation** (0.5 weeks): Research candidates include Getting to Yes (Fisher and Ury), the Community Boards mediation model, restorative circle documentation from Dominic Barter's work, and the Zapatista horizontal governance facilitation practices already cited in Phase 3. Effort: low — the foundational frameworks are well-documented and can be synthesized quickly.
-
-- **Psychological support and trauma-informed care** (1 week): Research candidates include Psychological First Aid (WHO field guide, free), the Sphere Handbook (humanitarian mental health standards), Bessel van der Kolk's trauma framework, and winter-specific depression management protocols from Scandinavian public health research. Zone 5 framing: seasonal affective disorder as baseline stressor, grief facilitation for community loss, anxiety management without pharmaceutical access. Effort: medium — the research is abundant but requires careful scoping to avoid clinical overreach.
-
-- **Advanced equipment repair for Midwest farm context** (1 week): Research candidates include Case IH and John Deere service manuals (many available free online), the ATTRA National Sustainable Agriculture Information Service, and small engine repair curricula from community college vocational programs. Focus: diesel tractor (fuel system, hydraulics, alternator), small engines (carburetor, ignition, fuel), solar/battery system fault diagnosis, grain auger and elevator leg maintenance. Effort: medium — technical content is accessible; the challenge is scoping to the most common failure modes.
-
-### If Option B (Institutional Bridges — Three Documents)
-
-**Estimated timeline: 3–4 weeks** of research and writing.
-
-- **Schools as resilience hubs** (1 week): Research candidates include FEMA's school safety and emergency management resources, the Green School Initiative infrastructure documentation, international development literature on community schools in low-resource settings, and the documented use of school buildings in Hurricane Katrina and Maria relief coordination. Key question: what triggers and protocols govern community access to school buildings during emergencies, and how do household networks establish pre-crisis relationships with school administrators? Effort: medium — the policy landscape is complex but the practical questions are narrow.
-
-- **Clinic and health infrastructure relationships** (1.5 weeks): Research candidates include HRSA's Critical Access Hospital documentation, FQHC emergency preparedness requirements, Medecins Sans Frontieres field protocols for extending clinic capability through community health workers, and the Project ECHO model for rural health knowledge dissemination. Key question: what does a rural NP or PA have legal authority to teach laypeople, and what formal channels exist for community-level pharmaceutical access planning? Effort: high — this involves legal and regulatory questions with significant regional variation.
-
-- **Legal structure and county government interface** (1 week): Research candidates include FEMA's Community Emergency Response Team (CERT) program documentation, the National Emergency Management Association's county emergency plan templates, and the legal literature on agricultural cooperatives and community benefit organizations in Midwest states. Key question: what is the lightest-weight legal structure that gives a 150-person household network standing to enter contracts, hold shared property, and access government resources in Minnesota, Wisconsin, or North Dakota? Effort: medium — legal research requires state-specific investigation but the framework questions are well-defined.
-
-### If Hybrid (Two Individual + Two Bridge Documents)
-
-**Estimated timeline: 3–4 weeks** of research and writing.
-
-- Individual education and pedagogy (1 week, scoped to apprenticeship and reference library design — not full pedagogy depth)
-- Veterinary care for Zone 5 livestock (1.5 weeks, scoped to emergency response and common failure modes — not comprehensive reference)
-- Clinic and health infrastructure relationships (1 week, scoped to skill-sharing and community agreements — not full regulatory analysis)
-- Legal structure and county government interface (0.5 weeks, scoped to three specific legal vehicles and CERT integration)
-
-The hybrid produces Phase 5-ready content on the individual side (education and veterinary care are the gaps most likely to emerge in a real implementation scenario) while establishing the minimum institutional bridge layer needed for Phase 5 planning.
+**Leverage**: Very high. Unlocks the household playbook Phase 5 path entirely.
 
 ---
 
-## Section 5: Cross-Project Reference Mapping
+### Gap 2: Individual-to-Household Integration Is Implicit, Not Documented
 
-### From off-grid-living (reuse opportunities)
+**What's covered**: Phase 1 assumes solo competence. Phase 2 assumes Phase 1 competencies are already built. Each cross-references the other but does not address the transition.
 
-- **02-shelter-construction.md**: Deep construction content — timber framing, foundation types, insulation systems, envelope sealing. Phase 4 individual shelter expansion (if any) should reference rather than duplicate. Also relevant to the "schools as resilience hubs" bridge document for assessing building suitability.
-- **07-heating-cooling.md**: Comprehensive wood heat, propane, passive solar, and summer cooling content. Individual shelter document already cross-references it; no duplication needed.
-- **08-medical-health.md**: The most complete medical reference in the project ecosystem — covers childbirth, CBRN, chronic disease, surgical basics, and dental. Phase 4 psychological support document should extend this (mental health section is acknowledged as thin in the off-grid-living document) rather than duplicate the physical care coverage.
-- **10-tools-fabrication.md**: Complete toolset and metalworking/woodworking coverage. Phase 4 equipment repair document should cite this as the general foundation and specialize for Zone 5 farm-specific failure modes rather than repeating.
-- **13-community-organization.md**: Covers scale-appropriate governance models, conflict resolution basics, and mutual aid structures. Phase 4 conflict resolution document should adopt the scale framework here and go deeper on facilitation skills and specific restorative practices.
-- **16-skills-knowledge.md**: Provides the Tier 1–4 skill framework and proficiency levels. Phase 4 education/pedagogy document should adopt these definitions to avoid creating parallel competency frameworks.
+**What's missing**: How a household cluster assesses and fills competency gaps across members with partial readiness. How the 90-day food buffer requirement (individual scale) translates to a 3-household cluster where not all households have built their buffer. Who teaches whom, using what structure, when people join at different competency levels.
 
-### From seedwarden (reuse opportunities)
+**Research effort**: 2–3 hours synthesis plus light external research on competency mapping frameworks.
 
-- **small-scale-livestock-field-manual.md**: Covers basic livestock care, housing, feeding, and basic health monitoring. Phase 4 veterinary care document picks up where this leaves off — from routine care into health emergency response and obstetric interventions. Cite this as the prerequisite; do not repeat husbandry basics.
-- **seed-saving-field-manual.md**: Covers seed selection, processing, and storage. Individual agriculture document (06-agriculture.md) already cross-references seedwarden's survival-garden-regional-plans. No additional integration needed for Phase 4 individual expansion.
-- **hunting-fishing-trapping-field-manual.md**: Covers protein procurement from wild sources. Individual food document already cross-references this. No additional integration needed unless Phase 4 expands food coverage.
-- **harvest-preservation-field-manual.md** and **fermented-preserved-harvest-handbook.md**: Cover food preservation. Individual food document already links these. No duplication needed.
-- **native-plants-regional-guide.md**: Covers regional native plants for foraging and habitat. Agriculture document covers native medicinals (wild ginger, echinacea, yarrow). Overlap risk: low — the seedwarden guide is product-oriented; Phase 4 would frame these as community medicine resources.
-
-### From resistance-research / open-repo (potential relevance)
-
-- Resistance-research materials on information commons and distributed knowledge may be relevant to the "schools as resilience hubs" bridge document — specifically for thinking about how to design a community reference library that functions without internet and resists single-point-of-failure information loss.
-- If open-repo covers distributed ledger or mutual credit systems, there may be overlap with the legal structure and community exchange content in the institutional bridge documents. The county government interface document should check this before writing.
-
-### Overlap Risks to Avoid
-
-- Do not duplicate the off-grid-living medical content in a Phase 4 psychological support document. The off-grid-living document is the physical care reference; Phase 4 extends into mental health and social support.
-- Do not duplicate the community governance frameworks in Phase 3 in a Phase 4 conflict resolution document. Phase 3 describes structure; Phase 4 addresses facilitation skills within that structure.
-- Do not re-cover Three Sisters, cover crops, or regenerative agriculture in a Phase 4 veterinary document. Agriculture is well-covered; veterinary care is the gap.
+**Leverage**: High. Required for any household playbook Phase 5 output.
 
 ---
 
-## Decision Matrix: Option A vs. Option B
+### Gap 3: Education and Skill Transfer — The Planned-but-Absent Document
 
-| Criterion | Option A (Individual Expansion) | Option B (Institutional Bridges) | Hybrid |
+**What's covered**: Nothing. PLAN.md specified `individual/06-education.md` which was never written. Off-grid-living's `16-skills-knowledge.md` provides a Tier 1–4 skill framework but not teaching methodology.
+
+**What's missing**: How to teach skills without formal training infrastructure. Mixed-age learning group management. Reference library design for a community without internet. Apprenticeship structure design. How to identify and leverage community members with subject expertise before crisis pressure makes improvisation costly.
+
+**Why it matters**: Without skill transfer mechanisms, the community is permanently dependent on founding competencies — single points of failure at every specialist role. Zone 5 winter (November–March) creates a five-month indoor learning window the current corpus does not address.
+
+**Research effort**: 3–4 hours. Sources are accessible: Amish one-room schooling, Reggio Emilia emergency education adaptations, John Holt unschooling literature, WHO trainer-of-trainers frameworks.
+
+**Leverage**: High. Needed for both individual guide and household playbook Phase 5 paths.
+
+---
+
+### Gap 4: Veterinary Care for Small-Scale Livestock
+
+**What's covered**: Seedwarden livestock manual covers basic husbandry (housing, feeding, monitoring). Individual agriculture covers livestock only in aggregate caloric terms.
+
+**What's missing**: Health emergency response. Vaccination schedules for cattle, pigs, chickens, and goats in Zone 5. Obstetric emergencies (dystocia in cattle and goats is a routine crisis, not an edge case). Zoonotic disease identification. Emergency slaughter protocols. Field diagnosis without veterinary access.
+
+**Why it matters**: Loss of a dairy animal or breeding pair to an untreated condition is a food security event in the Zone 5 agricultural model. This is not a domain where improvisation is survivable.
+
+**Research effort**: 3–4 hours. Merck Veterinary Manual (free online), USDA APHIS, University of Minnesota Extension bulletins, Gail Damerow's livestock health references.
+
+**Leverage**: High. Load-bearing for Zone 5 agricultural continuity.
+
+---
+
+### Gap 5: Psychological Support and Winter Mental Health
+
+**What's covered**: Individual healthcare covers acute physical emergencies only (MARCH, wound management, fractures, infections). No Phase 1–3 document addresses mental health.
+
+**What's missing**: Psychological First Aid for non-clinicians. Zone 5 winter-specific protocols (seasonal affective disorder is a documented baseline stressor that precedes crisis and worsens under it). Grief facilitation. Anxiety management without pharmaceutical access.
+
+**Why it matters**: In extended disruption, depression, anxiety, PTSD, and grief are the dominant health burden after the immediate survival phase. Zone 5 November–March isolation amplifies this to clinical significance.
+
+**Research effort**: 2–3 hours. WHO Psychological First Aid guide (free, non-clinician designed), Sphere Handbook mental health standards, Scandinavian seasonal depression protocols.
+
+**Leverage**: Medium-high. Load-bearing for long-term community function, not immediate infrastructure.
+
+---
+
+### Gap 6: Household-to-Community Transition — The 25–100 Person No-Man's-Land
+
+**What's covered**: Phase 2 addresses 3–6 households explicitly. Phase 3 addresses 100+ with the Dunbar threshold (~150) as its reference point. The gap between them is acknowledged but not filled.
+
+**What's missing**: Scaling mechanics from a 3-household cluster (Phase 2 endpoint) to a 25–50 household community (Phase 3 minimum). How does the one-page charter evolve into a town assembly? What triggers the governance transition? This is the exact transition every Phase 2 practitioner faces if they succeed.
+
+**Research effort**: 2–3 hours synthesis from Phase 3 scaling pathways document (05-scaling-pathways-and-thresholds.md), designing transition mechanics backward from Dunbar-threshold governance model.
+
+**Leverage**: Medium-high. Required for household playbooks that include growth planning.
+
+---
+
+### Gap 7: Institutional Bridge Layer — Clinics, Schools, County Government
+
+**What's covered**: Phase 3 treats institutions as background conditions. Governance notes county government has legal authority households lack; information infrastructure covers community radio but not county emergency management integration.
+
+**What's missing**: Pre-crisis relationships with rural health clinics (what skills can a rural NP legally teach?). School building access protocols when formal schooling suspends. Lightest-weight legal structure for a 150-person network to enter contracts and hold shared property. GMRS network registration with county emergency management.
+
+**Research effort**: 4–6 hours. Hardest research domain — policy, legal, and regulatory questions vary by state and have a thinner documentary record than survival skills.
+
+**Leverage**: Medium. High leverage for institutional Phase 5 path; lower for individual and household paths.
+
+---
+
+### Gap 8: Implementation Metrics — Measuring Success Across Scales
+
+**What's covered**: Phase 1–3 documents describe what to build but not how to measure whether it is working.
+
+**What's missing**: Measurable standards for "water secure" (gallons stored per person, redundancy level, days of supply). Food security metrics (months of stored food, local caloric coverage percentage). Governance health indicators measurable before a crisis tests them.
+
+**Research effort**: 1–2 hours synthesis. The quantitative standards are already embedded in Phase 1–3 documents (exact calorie counts, exact gallons, exact square footage) and need extraction into a measurement framework.
+
+**Leverage**: Medium. Not a prerequisite for any Phase 5 path but significantly improves playbook quality.
+
+---
+
+**Total research effort across all 8 gaps**: 20–28 hours, or roughly 5–7 focused sessions. Gaps 1–4 are the highest-leverage set; completing them unlocks 80% of Phase 5 value regardless of which Phase 5 path is selected.
+
+---
+
+## Section 3: Priority Research Areas
+
+The 8 gaps above translate into 6 discrete research and writing topics for Phase 4. These are mapped below with their current coverage, what's missing, why it matters, estimated hours, key sources, and cross-topic dependencies.
+
+---
+
+### Research Topic A: Scale-Bridging — The 8–25 Person Synthesis Document
+
+**Current coverage**: Phase 2 covers 3–6 person clusters. Phase 3 covers 100+. Nothing covers 8–25 people.
+
+**What's missing**: Scaled water storage math, governance template for groups larger than a family but smaller than a community, food production planning, healthcare coverage requirements at this scale.
+
+**Why it matters**: Most common starting scale for people acting on this project's content. A document here serves the largest immediate audience.
+
+**Estimated hours**: 2–3 (primarily synthesis; Phase 2 and Phase 3 documents are the primary material; USDA food production math fills the caloric gap).
+
+**Dependencies**: Enables Topic D. No prerequisite research needed.
+
+---
+
+### Research Topic B: Skill Transfer and Community Learning
+
+**Current coverage**: off-grid-living's `16-skills-knowledge.md` provides a Tier 1–4 skill framework. No Phase 1–3 document covers pedagogy or teaching methodology.
+
+**What's missing**: How skills transfer from one expert to multiple learners under field conditions. Apprenticeship design. Reference library composition for no-internet contexts. Child education continuity when formal schooling suspends.
+
+**Why it matters**: Knowledge redundancy is as critical as equipment redundancy. The original `individual/06-education.md` was planned but never written — this is the only document from the PLAN.md spec that remains absent.
+
+**Estimated hours**: 3–4. Sources: Amish and Mennonite one-room schooling, Reggio Emilia emergency education adaptations, John Holt on unschooling, John Taylor Gatto on community-based learning.
+
+**Dependencies**: Referenced by Topic D. Standalone value regardless.
+
+---
+
+### Research Topic C: Veterinary Emergency Care for Zone 5 Livestock
+
+**Current coverage**: Seedwarden livestock manual covers basic husbandry. Individual agriculture document covers livestock only in aggregate caloric production terms.
+
+**What's missing**: Health emergencies (foot rot in cattle, coccidiosis and Marek's in chickens, urinary calculi in male goats, dystocia across species). Zoonotic disease identification. Emergency slaughter protocols for sick animals.
+
+**Why it matters**: Losing a dairy cow or breeding pair to an untreated condition is a food security event in the Zone 5 agricultural model.
+
+**Estimated hours**: 3–4. Sources: Merck Veterinary Manual (free online), USDA APHIS publications, University of Minnesota Extension bulletins, Gail Damerow's livestock health references.
+
+**Dependencies**: Builds on seedwarden livestock manual. No prerequisite research needed.
+
+---
+
+### Research Topic D: Household Implementation Playbook Architecture
+
+**Current coverage**: Phase 2 documents are research-oriented (what to coordinate) not execution-oriented (how to start). Phase 3 community overview is prescriptive but for 100+ people.
+
+**What's missing**: Step-by-step implementation sequence for 3–25 person cluster from zero. Month 1 priorities, capital sequencing, first governance meeting design, six-month week-by-week roadmap.
+
+**Why it matters**: Converts Phase 1–3 research into an actionable program. Without it, the corpus is a reference library, not a guide.
+
+**Estimated hours**: 3–4 (synthesis-heavy; PHASE_4_FRAMEWORK.md provides sequencing logic; Transition Towns 12-step model provides structural comparison).
+
+**Dependencies**: Benefits from Topics A and B being resolved first. Can proceed in parallel.
+
+---
+
+### Research Topic E: Psychological Support and Winter Mental Health
+
+**Current coverage**: Individual healthcare covers acute physical emergencies only. No Phase 1–3 document addresses mental health.
+
+**What's missing**: Psychological First Aid protocols for non-clinicians. Zone 5 winter depression management without pharmaceutical access. Grief facilitation. When to refer.
+
+**Estimated hours**: 2–3. Sources: WHO Psychological First Aid field guide (free, non-clinician designed), Sphere Handbook mental health standards, Scandinavian seasonal depression protocols.
+
+**Dependencies**: Extends off-grid-living `08-medical-health.md` (mental health section thin there). No prerequisite research needed.
+
+---
+
+### Research Topic F: Institutional Bridge Analysis
+
+**Current coverage**: Phase 3 governance notes county government has legal authority household networks lack. Phase 3 information infrastructure covers community radio but not county emergency management integration.
+
+**What's missing**: Schools-as-hubs (building access protocols). Rural clinic skill-sharing. Legal structures for household networks (cooperatives, CERT affiliation). County emergency plan integration.
+
+**Estimated hours**: 4–6. The most research-intensive topic due to legal and policy variation by state. Sources: FEMA CERT documentation, HRSA Critical Access Hospital emergency preparedness requirements, Project ECHO model, state cooperative law for Minnesota/Wisconsin/North Dakota, Hurricane Maria mutual aid case studies.
+
+**Dependencies**: Prerequisite for institutional Phase 5 path. Low dependency for individual or household paths.
+
+---
+
+## Section 4: Institutional Bridges Analysis
+
+The institutions below are existing infrastructure that partial-crisis conditions will degrade but not eliminate. Phase 4 must map the interface protocol between informal household networks and these surviving assets. The bridge runs in both directions: household networks can support institutions (backup power, staff housing, food), and institutions can support household networks (space, regulatory authority, specialist skills, state and federal resource access).
+
+---
+
+### Schools
+
+A rural Zone 5 school building is typically the largest, most structurally sound building in a small community — commercial kitchen, water infrastructure, gymnasium, storage, and often satellite internet and generator capacity. When formal schooling suspends, the physical infrastructure does not disappear.
+
+**Current Phase 1–3 coverage**: None. Schools are not mentioned in any Phase 1–3 document.
+
+**Bridge research needed**: What triggers and protocols govern community emergency access to school buildings? What pre-crisis Memoranda of Understanding with school districts are legally available? What is the household network's role in supporting educational continuity (staffing, food for staff, facility maintenance)?
+
+**Change that enables resilience**: Designated emergency access protocols; pre-crisis MOU with school district. State education departments universally require school emergency management plans — Phase 4 research should surface whether community organization roles are already embedded in those requirements. [Needs Research]
+
+---
+
+### Rural Health Clinics and Critical Access Hospitals
+
+Federally Qualified Health Centers (FQHCs) and Critical Access Hospitals (CAHs) are federally required to maintain emergency preparedness plans and have staff with exactly the skills Phase 4's healthcare gap requires.
+
+**Current Phase 1–3 coverage**: Individual healthcare document treats the clinic as an evacuation destination when care exceeds household capacity. No pre-crisis interface is documented.
+
+**Bridge research needed**: What skills can a rural NP or PA legally teach community members in a structured session? What formal channels exist for community pharmaceutical access agreements? What can a household network provide to keep a clinic operational during grid outage?
+
+**Documented model**: Project ECHO (Extension for Community Healthcare Outcomes) disseminates specialist knowledge to rural providers — Phase 4 should surface whether ECHO has protocols applicable to community resilience contexts. [Needs Research for Zone 5 specifics]
+
+---
+
+### County Government and Emergency Management
+
+Zone 5 county government (typically 10–30 employees) provides road maintenance, emergency coordination, and legal authority to declare emergencies unlocking state and federal resources. It degrades quickly under extended crisis.
+
+**Current Phase 1–3 coverage**: Phase 3 governance notes county authority but does not operationalize the household-network interface.
+
+**Key bridge questions**: CERT (Community Emergency Response Team) affiliation gives a community organization recognized standing with county emergency management at essentially zero cost. An agricultural cooperative gives legal standing to hold property and enter contracts. A 501(c)(3) enables tax-advantaged resource sharing. Phase 4 should map which structure fits which community size and risk profile.
+
+**Needs research**: State-specific cooperative law varies significantly between Minnesota, Wisconsin, and North Dakota. [Needs Research]
+
+---
+
+### Communications: Community Radio to Official Emergency Systems
+
+Phase 3 covers GMRS, AREDN mesh, and HF shortwave. It does not cover the interface with official emergency infrastructure.
+
+**Bridge research needed**: How does a community register its GMRS network with county emergency management? What does ARES (Amateur Radio Emergency Service) affiliation provide in access to official emergency communication channels? This is the most tractable institutional bridge — the ARRL publishes affiliation procedures, and most counties have ARES contacts. [Needs Research — modest effort]
+
+---
+
+## Section 5: Phase 4 Scope Options
+
+Three options are available. Each is viable; they differ in time investment, research intensity, and which Phase 5 path they best support.
+
+---
+
+### Option A: Individual and Household Depth (No Institutional Research)
+
+**Focus**: Fill the individual-scale gaps (education, veterinary care, psychological support) and resolve the 8–25 person synthesis gap.
+
+**Deliverables**: 3–5 documents. Education/pedagogy, veterinary care, psychological support, 8–25 person synthesis, individual-to-household integration bridge.
+
+**Time estimate**: 3–4 weeks at normal session pace.
+
+**Pros**: Highest immediate usability. Any individual, family, or small cluster can act on these documents without institutional coordination. Research sources are well-documented and accessible. Zone 5 specificity is high throughout. Builds on the strongest Phase 1–3 foundation (individual and household documents are already the most complete).
+
+**Cons**: Does not address the institutional bridge layer. Phase 5 institutional path remains blocked. Communities that succeed at household scale and want to engage with county government, school districts, or health clinics will have no guidance.
+
+**Connection to Phase 5**: Enables individual education guide (directly) and household implementation playbook (with the synthesis documents). Does not enable institutional Phase 5 path.
+
+---
+
+### Option B: Institutional Bridge Focus (Compressed Individual Expansion)
+
+**Focus**: Produce the institutional bridge analysis (schools, clinics, county government, communications) plus a minimal synthesis document covering the 8–25 person scale.
+
+**Deliverables**: 3–4 documents. Institutional bridges (possibly as one document with sub-sections), 8–25 person synthesis, legal structure analysis.
+
+**Time estimate**: 3–4 weeks but research-intensity is higher. Legal and policy questions require state-specific investigation.
+
+**Pros**: Unlocks the institutional Phase 5 path. High strategic value for communities moving toward formal implementation. The bridge research is not available elsewhere in the corpus and is genuinely novel relative to Phase 1–3 work.
+
+**Cons**: Higher research difficulty. Documentary record for institutional interfaces is thinner than for individual survival skills. Legal research requires regional specificity. Immediate usability is lower — individuals and small clusters cannot act on institutional bridge documents without existing institutional relationships.
+
+**Connection to Phase 5**: Enables institutional/community implementation path. Partially enables household playbook (legal structure component). Does not fill individual education guide gaps.
+
+---
+
+### Option C: Hybrid — High-Leverage Synthesis First, Targeted Institutional Second
+
+**Focus**: Resolve the three highest-leverage gaps (8–25 person scale, education/pedagogy, veterinary care) plus the single most important institutional bridge (county government/CERT/legal structure).
+
+**Deliverables**: 4–5 documents. 8–25 person synthesis, education and skill transfer, veterinary care, legal structure and county interface. Optional fifth: psychological support.
+
+**Time estimate**: 3–4 weeks. Research intensity is medium — the synthesis documents are faster to produce than the institutional bridges.
+
+**Pros**: Addresses the most critical individual/household gaps without deferring institutional work entirely. The legal structure and county government document is the highest-leverage institutional bridge (enables property holding and CERT affiliation for any Phase 5 path). Produces content across both individual and institutional domains.
+
+**Cons**: Does not produce complete institutional bridge coverage. Schools-as-resilience-hubs and clinic relationship documents would be deferred to a Phase 4b or Phase 5 appendix.
+
+**Connection to Phase 5**: Enables household playbook most fully. Partially enables individual guide (education + veterinary care) and partially enables institutional path (legal structure + county interface). This is the option most likely to produce a usable Phase 5 regardless of which path is selected.
+
+**Recommendation note**: Option C has the highest risk-adjusted value. It fills the gaps that block the most Phase 5 paths while keeping research complexity manageable. If the user's primary constraint is time, Option C produces 80% of the value at 60% of the effort compared to completing both A and B in sequence.
+
+---
+
+## Section 6: Decision Framework for Phase 5 Path
+
+### Three Phase 5 Paths and What Each Requires from Phase 4
+
+| Phase 5 Path | Description | Phase 4 Prerequisites | Blocked Without |
 |---|---|---|---|
-| **Research difficulty** | Medium — large but well-documented knowledge base | High — policy, legal, and regulatory questions with regional variation | Medium — scoped to practical questions in each domain |
-| **Writing effort** | 4–6 weeks | 3–4 weeks | 3–4 weeks |
-| **Immediate usability** | High — any individual or small group can use this today | Medium — requires institutional relationships to act on | High for individual docs; medium for bridge docs |
-| **Phase 5 dependency** | Low — Phase 5 can proceed without individual expansion | High — Phase 5 implementation planning requires bridge layer | Medium — Phase 5 gets partial bridge coverage |
-| **Zone 5 specificity** | Very high — veterinary care, winter psychology, and farm equipment repair are all Zone 5-specific | Medium — institutional bridges are nationally applicable with regional variation | High for individual docs; medium for bridge docs |
-| **Cross-project reuse** | High — off-grid-living and seedwarden cover prerequisite content in most domains | Medium — resistance-research and open-repo may be relevant | High |
-| **Gap criticality** | High — education and veterinary care are planned-but-absent; these are real operational holes | Medium — bridges improve Phase 5 efficiency but Phase 5 can proceed without them | High overall |
-| **Risk if skipped** | Community has seven survival domains but cannot teach skills or manage livestock health | Phase 5 implementation hits institutional interface problems without documented solutions | Balanced |
-| **Recommended if** | Project is primarily a field reference for practitioners | Project is moving toward institutional engagement and community implementation | Project wants both; user is comfortable with longer timeline |
+| **Individual education guides** | Printable, standalone guides on specific individual skills (education, veterinary care, psychological support) | Gap 3 (education), Gap 4 (veterinary care), Gap 5 (psychological support) | None of these gaps filled in Phase 1–3 |
+| **Household implementation playbooks** | Step-by-step implementation sequences for 3–25 person clusters, domain by domain | Gap 1 (8–25 scale), Gap 2 (individual-household integration), Topic D (playbook architecture) | Household playbook cannot be written without 8–25 person synthesis |
+| **Institutional/community implementation** | Engagement frameworks for community organizations working with schools, clinics, county government | Gap 7 (institutional bridges), Topic F (bridge analysis) | Institutional path entirely blocked without bridge research |
 
-### User Decision Required
+---
 
-**Select one before Phase 4 research initiation (deadline: June 1, 2026):**
+### Which Phase 4 Option Best Supports Each Phase 5 Path
 
-- [ ] **Option A — Individual Expansion**: Five documents over 4–6 weeks. Priority order: education/pedagogy, veterinary care, conflict resolution, psychological support, equipment repair.
-- [ ] **Option B — Institutional Bridges**: Three documents over 3–4 weeks. Priority order: clinic/health infrastructure relationships, legal structure and county government interface, schools as resilience hubs.
-- [ ] **Hybrid — Two Individual + Two Bridge**: Four documents over 3–4 weeks. Education/pedagogy + veterinary care (individual); clinic relationships + legal structure (bridge).
+| Phase 4 Option | Supports Individual Guides | Supports Household Playbook | Supports Institutional Path |
+|---|---|---|---|
+| Option A (individual depth) | Fully | Mostly (missing legal structure) | No |
+| Option B (institutional focus) | Partially (8–25 scale only) | Partially | Fully |
+| Option C (hybrid) | Mostly | Fully | Partially (legal/county only) |
 
-Phase 4 research initiation is blocked on this decision. Phase 5 (implementation planning at community scale) follows Phase 4 completion.
+---
+
+### What User Input Is Needed Before June 1
+
+Three questions determine the Phase 4 scope:
+
+**Question 1: What is the most likely Phase 5 output?** If the answer is "something people can actually read and use" rather than "institutional planning frameworks," Option A or C is correct. If the answer is "tools for community organizations engaging local institutions," Option B is correct.
+
+**Question 2: What is the priority Zone 5 gap?** Veterinary care and education are the two most Zone 5-specific gaps with no existing coverage anywhere in the project ecosystem. If these are the felt gaps, Option A or C prioritizes them correctly.
+
+**Question 3: Is there a defined group at the household or community scale ready to act?** If yes, the 8–25 person synthesis (Gap 1) and household playbook (Topic D) are the highest-priority deliverables — Option C. If there is no defined group yet, individual education guides are more immediately actionable — Option A.
+
+---
+
+### Recommendation
+
+Option C (Hybrid) is the recommended path. It fills the three highest-leverage gaps regardless of Phase 5 direction (8–25 person scale, education, veterinary care), adds the minimum institutional bridge (legal structure and CERT affiliation), and leaves institutional depth research for Phase 4b if the institutional Phase 5 path is selected. This prevents Phase 4 from either over-investing in institutional research before a Phase 5 direction is confirmed, or leaving the household playbook unwritable because the 8–25 person gap is unresolved.
+
+**User decision required by June 1, 2026:**
+
+- [ ] **Option A — Individual and Household Depth**: 3–5 documents, 3–4 weeks. Fills education, veterinary care, psychological support, and 8–25 person synthesis. Does not address institutional bridges.
+- [ ] **Option B — Institutional Bridge Focus**: 3–4 documents, 3–4 weeks. Addresses schools, clinics, county government, legal structure. Fills 8–25 scale synthesis. Does not fill education or veterinary care gaps.
+- [ ] **Option C — Hybrid (recommended)**: 4–5 documents, 3–4 weeks. Fills 8–25 scale synthesis, education and skill transfer, veterinary care, legal structure and county interface. Optional: psychological support.
+
+Phase 4 research initiation is blocked on this decision.
