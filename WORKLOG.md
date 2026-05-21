@@ -1,5 +1,62 @@
 # Work Log
 
+## Session 1484 — ORCHESTRATOR: PARALLEL EXECUTION — SEEDWARDEN PHASE 3 + OPEN-REPO PHASE 5 (May 21-22, 2026)
+
+**Date**: 2026-05-21 21:56–23:15 UTC
+**Status**: ✅ COMPLETE
+**Type**: Autonomous orchestrator session with parallel agent execution
+
+**Pre-Session Protocol**:
+1. ✅ Orient: Read ORCHESTRATOR_STATE.md; verified priority order and active blocks
+2. ✅ Block verification: All 4 active blocks remain real (stockbot SSH auth, resistance-research synthesis TOO_EARLY, cybersecurity-hardening restart, mfg-farm test print)
+3. ✅ INBOX.md: No new items to process
+4. ✅ Exploration Queue: 3 executable items identified
+
+**Critical Deadline Alert**:
+- **STOCKBOT LEVER B**: May 22 13:30 UTC (15.5 hours remaining) — SSH auth failure blocks config fix. User action required: Either (A) add orchestrator public key to Jetson authorized_keys, OR (B) SSH manually and run 5-min config fix. Block is real, cannot resolve autonomously.
+
+**Work Executed**:
+
+1. ✅ **seedwarden: Phase 3 Medicinal Herbs Critical Path Analysis** (parallel agent, Session 1484a)
+   - Deliverables: `phase-3-medicinal-herbs-critical-path.md` (3,200 words, 7 sections + appendices) + `phase-3-medicinal-herbs-gantt.csv` (77 rows)
+   - Key finding: June 22–July 13 window is structurally feasible with critical path = writing sequence
+   - 5 bundles production-locked with supplier order deadlines: Goldenseal (June 8 — 5–6 week lead), Tier 2 (June 15), Tier 3 (June 22)
+   - Writing: 56–66 adjusted hours (bottleneck = June 24 pace gate at 2,500 words WH bundle)
+   - Design + Photography fully parallel to writing (14 + 28 hours respectively, substantial float)
+   - Option C contingency: 3-bundle scope reduces duration by 20–22 hours, adds 2 float days
+   - Both Phase 2 gates cleared with margin (forager 21.3% vs. 20%, native plants 2.24% vs. 1.5%)
+   - Staggered upload strategy (7-day spacing) maximizes Etsy algorithmic discovery; Phase 2 slips cascade linearly with no scope reduction required
+
+2. ✅ **open-repo: Phase 5 Candidate 1 Implementation Verification** (parallel agent, Session 1484b)
+   - Deliverables: `phase-5-candidate-1-implementation-verification.md` (v4.0, ~2,800 words) + `phase-5-candidate-1-implementation-checklist.md` (v4.0, ~1,800 words)
+   - All 5 code changes verified complete and correct on `feature/zimwriter-libzim-activation`
+   - 88/88 tests passing; config_indexing() API ordering fix (Session 1471) verified correct
+   - libzim 3.9.0 installed (ARM64 wheel, C++ 9.5.1, static bundling); 3.10.0 recommended for patches
+   - 3 pre-activation gaps (none are merge blockers):
+     1. pyproject.toml version pin: change `>=3.2,<4.0` to `>=3.10.0,<4.0` (1 line)
+     2. ZimExport ORM model missing from models.py (migration 003 exists, model does not) — 30 min fix
+     3. Attribution footer XSS: source_node_url/source_node_name unescaped — not required for Phase 5.1 LOCAL_ONLY MVP, but must fix before FEDERATED scope
+   - Minimum viable activation: 3 hours (merge + pin + ORM + install + smoke test)
+   - Full production-ready: 8–11 hours (includes post-activation test suite)
+   - Thermal constraint: Pi 5 at 87.8°C under compute; schedule exports off-peak, heatsink recommended
+   - zimcheck title length trap: Debian Bookworm zim-tools 3.1.3 fails titles >30 chars (example "Open-Repo: Full Library (English)" is 34 chars)
+
+**Session Efficiency**:
+- Pre-session block verification: 5 min
+- Parallel agent execution: 2 agents × ~9-10 min each (total wall-clock 9-10 min, sequential would be 18-20 min)
+- Agent 1 (seedwarden): 3,200 words delivered, 1 Gantt CSV, structured critical path with 7 decision gates
+- Agent 2 (open-repo): ~4,600 words total across 2 files, verification checklist with risk flags
+- Total deliverables: ~7,600 words of production-ready documentation + 1 Gantt timeline CSV
+- Status: 2 exploration queue items cleared; seedwarden Phase 3 timing validated; open-repo Phase 5 pre-activation gaps documented
+
+**Next Session Triggers**:
+- May 22 13:30 UTC: Stockbot checkpoint (deadline for SSH fix); if PASS → Gate 2 activation decision
+- May 25 18:00 UTC: Resistance-research synthesis re-execution window (full signal log fill required)
+- May 30: Seedwarden Track B launch completion (triggers Phase 3 medicinal herbs June 22 start)
+- Post-user-action: Phase 5.1 merge approval enables Phase 5 activation chain (3–11 hours from merge to production)
+
+---
+
 ## Session 1483 — OPEN-REPO: PHASE 5 CANDIDATE 1 IMPLEMENTATION VERIFICATION (May 21, 2026)
 
 **Date**: May 21, 2026

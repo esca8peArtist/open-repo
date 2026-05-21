@@ -1,3 +1,44 @@
+## Session 1484 — ORCHESTRATOR: PARALLEL EXECUTION — SEEDWARDEN PHASE 3 + OPEN-REPO PHASE 5 (May 21, 21:56–23:15 UTC)
+
+**Status**: ✅ **SEEDWARDEN PHASE 3 TIMING VALIDATED** | ✅ **OPEN-REPO PHASE 5.1 PRE-ACTIVATION GAPS MAPPED** | 🔴 **STOCKBOT DEADLINE ALERT: May 22 13:30 UTC (15.5 hours)**
+
+**What Was Accomplished**:
+
+1. ✅ **SEEDWARDEN: Phase 3 Medicinal Herbs Critical Path (3,200 words + Gantt timeline)**
+   - **Verdict**: June 22–July 13 execution window is STRUCTURALLY FEASIBLE with Option A (5 bundles) or Option C (3 bundles)
+   - **Critical Path**: Writing is the sole constraint (56–66 adjusted hours); Design + Photography run fully parallel with substantial float (14 + 28 hours with 3–14 day float each)
+   - **Supplier Deadlines**: Goldenseal June 8 (5–6 week lead, binary decision path: cost difference $175), Tier 2 June 15, Tier 3 June 22
+   - **Pace Gate**: June 24 EOD at 2,500 words for Women's Health bundle — if missed, Option C activates (trim to 3 bundles, reduces 20–22 hours)
+   - **Phase 2 Cascade**: If Phase 2 launch slips 5 days, all upload dates shift 5 days (zero scope reduction required). 10-day slip compresses Q4 review window but remains viable.
+   - **Deliverables**: Phase 3 ready to launch May 31 evening with zero planning friction
+
+2. ✅ **OPEN-REPO: Phase 5 Implementation Verification (4,600 words across 2 files)**
+   - **All 5 Code Changes**: Complete and correct on `feature/zimwriter-libzim-activation`; 88/88 tests passing
+   - **Pre-Activation Gaps** (all resolvable, none are merge blockers):
+     1. `pyproject.toml`: version pin should be `>=3.10.0,<4.0` not `>=3.2,<4.0` — 1 line fix
+     2. `ZimExport` ORM model missing from `models.py` — migration 003 exists, model must be added (30 min)
+     3. Attribution footer XSS: `source_node_url`/`source_node_name` unescaped — NOT required for Phase 5.1 LOCAL_ONLY MVP
+   - **Activation Timeline**: Minimum viable (merge + 3 fixes) = 3 hours; production-ready (+ test suite) = 8–11 hours
+   - **Thermal**: Pi 5 hits 87.8°C under compute; schedule exports off-peak, heatsink recommended
+   - **Toolchain**: zimcheck not installed; requires `apt install zim-tools` (Debian Bookworm 3.1.3 has title >30 char bug — either shorten titles or upgrade to 3.3.0+)
+
+**Exploration Queue Status**: 
+- ✅ **seedwarden: Phase 3 Medicinal Herbs Production Timeline** — COMPLETE
+- ✅ **open-repo: Phase 5 Candidate 1 ZimWriter Implementation Verification** — COMPLETE
+- ⏳ **stockbot: Options Gap 4 Implementation Specification** — Staged for post-Gate-1-PASS (May 23+)
+- ⏳ **resistance-research: Phase 2 Domain 59 Research Production** — Staged for post-May-25-synthesis
+
+**Needs Your Input**:
+
+| Project | Decision | Deadline | Impact |
+|---------|----------|----------|--------|
+| **stockbot** | SSH fix OR add orchestrator key | May 22 13:30 UTC | Lever B activation for May 22 checkpoint |
+| **seedwarden** | Approve Phase 3 scope (Option A vs Option C) | May 30 | 5-bundle vs 3-bundle medicinal herbs; both feasible |
+| **open-repo** | Approve Phase 5.1 merge | May 25-26 | Enables Phase 5 activation (3–11 hours post-merge) |
+| **resistance-research** | Fill signal log data | May 25 18:00 UTC | Enables May 25 synthesis re-execution (currently TOO_EARLY) |
+
+---
+
 ## Session 1482 — ORCHESTRATOR: STOCKBOT LEVER B READINESS AUDIT + OPEN-REPO VERIFICATION (May 21, 21:49 UTC)
 
 **Status**: ✅ **STOCKBOT LEVER B FULLY STAGED FOR DEPLOYMENT** | ✅ **OPEN-REPO PHASE 5.1 MERGE READY** | 🔴 **CRITICAL DEADLINE: May 22 13:30 UTC (SSH AUTHORIZATION REQUIRED)**
