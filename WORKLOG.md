@@ -1,5 +1,24 @@
 # Work Log
 
+## Session 1492 — RESEARCH: Phase 5.1 ZimWriter Implementation Verification and Pre-Deployment Prep (May 22)
+
+**Date**: 2026-05-22
+**Status**: COMPLETE
+**Type**: Exploration Queue item — Phase 5 Candidate 1 pre-merge verification
+
+**Deliverables**:
+
+1. `projects/open-repo/phase-5-candidate-1-implementation-verification.md` — v5.0 (1,850+ words). Live code audit: all 5 code changes verified present and correct on feature branch. New finding: ORM type mismatch (`generation_duration_seconds` is `Float` in migration 003 but `Integer` in ORM; 4 boolean columns using `Integer` instead of `Boolean`). libzim 3.10.0 confirmed installed (C++ 9.7.0). 88-test stub suite passing. zimcheck 3.1.3 available via apt but not installed. Random sample of 10 export tests audited — all schema-consistent, all required fields covered.
+
+2. `projects/open-repo/phase-5-1-implementation-checklist.md` — v5.0 (2,000+ words). Step-by-step activation checklist with 9 sub-stages (A.1–A.4 merge, B.1–B.9 activation). New Step B.1 added for ORM type fix. Hour-by-hour timeline: 2 hours to minimum viable activation (LOCAL_ONLY scope), 6.75 hours to full production-ready. All commands verified against live codebase. Thermal risk section updated with Pi 5 87.8°C constraint.
+
+**Key findings**:
+- pyproject.toml libzim pin and ZimExport ORM model are on feature branch (commit 274eb1f2), not master — will land when branch merges
+- New finding: ORM type discrepancy (Float/Boolean vs Integer) — 5-minute fix, must be applied before first export job writes timing data
+- zimcheck 3.1.3 title-length limitation (>30 chars = hard error) confirmed relevant; smoke test title pre-set to safe length
+- 240 is full backend test count; 88 is export-specific — both correct; ORCHESTRATOR_STATE count refers to full suite
+- Merge has exactly 2 documentation file conflicts; backend code merges cleanly
+
 ## Session 1491 — ORCHESTRATOR: CRITICAL-DEADLINE WATCHDOG + STATE REFRESH (May 21, 23:10 UTC)
 
 **Date**: 2026-05-21 23:10:15 UTC

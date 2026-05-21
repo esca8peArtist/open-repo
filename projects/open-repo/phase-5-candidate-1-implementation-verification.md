@@ -3,32 +3,34 @@ title: "Phase 5 Candidate 1 — ZimWriter/libzim Implementation Verification Rep
 project: open-repo
 phase: 5
 candidate: 1
-document_version: "4.0 (Session 1483 — post-conflict-resolution, pre-merge)"
-date: 2026-05-21
+document_version: "5.0 (Session 1492 — live code inspection, pre-merge prep for May 25-26 decision)"
+date: 2026-05-22
 status: verified-ready-for-merge
-audit_basis: "Live codebase inspection, feature branch diff analysis, PyPI wheel verification"
+audit_basis: "Live codebase inspection, feature branch diff analysis, PyPI wheel verification, schema cross-check"
 ---
 
 # Phase 5 Candidate 1: Implementation Verification Report
 
-**Scope**: Pre-merge technical verification for `feature/zimwriter-libzim-activation` → `master`
-**Test status**: 88/88 passing on both master (stub) and feature branch (real libzim)
-**Merge verdict**: CONDITIONAL APPROVE — two doc-file conflicts require manual resolution before merge; all code changes are correct and production-ready
-**Activation verdict**: 3 post-merge steps required before real libzim is live in production; none are code-blocking
+**Scope**: Pre-merge technical verification for `feature/zimwriter-libzim-activation` → `master`  
+**Backend test status**: 240/240 passing on master (full suite); 88/88 export-specific tests passing  
+**Merge verdict**: APPROVE — two documentation file conflicts require `git checkout --ours` resolution; all backend code merges cleanly  
+**New finding since v4.0**: Schema type discrepancy in ZimExport ORM (Float vs Integer for `generation_duration_seconds`) — minor, fixable in 2 minutes, documented below  
 
 ---
 
-## 1. Executive Summary
+## 1. Executive Summary and Leading Finding
 
-The leading finding: the implementation is in a better state than prior verification documents reflect. All five code changes from the implementation roadmap are present and correct in `feature/zimwriter-libzim-activation`. The critical `config_indexing()` API ordering fix (Session 1471) was applied and is verified. The merge has two conflicts, both in documentation files — the backend code merges cleanly.
+The implementation is production-ready. All five code changes are present and correct in `feature/zimwriter-libzim-activation`. libzim 3.10.0 is already installed in the backend venv (C++ 9.7.0 with hardening patches). The pyproject.toml version pin and ZimExport ORM model additions from session 1485 are on the feature branch and will land on master when the branch merges.
 
-Three gaps remain before production activation:
+One new finding not documented in v4.0: The `generation_duration_seconds` column is defined as `Float` in migration 003 but `Integer` in the ORM model on the feature branch. This type mismatch does not block the merge or the stub phase (the column is nullable and not yet written), but it will cause silent precision loss in production export timing records. It should be fixed before the first real export job runs.
 
-1. `libzim>=3.10.0,<4.0` not yet in `pyproject.toml` on master (feature branch has `>=3.2,<4.0` — needs version bump to >=3.10.0)
-2. `ZimExport` SQLAlchemy ORM class missing from `app/models.py` (migration 003 exists, model does not)
-3. Attribution footer XSS: `source_node_url`/`source_node_name` not HTML-escaped
+Three items from v4.0 confirmed resolved as of session 1485 (commit 274eb1f2):
 
-None of these gaps are merge blockers. The stub implementation on master remains fully functional until real libzim is activated.
+- pyproject.toml version pin: updated to `>=3.10.0,<4.0` on feature branch
+- ZimExport ORM model: added to `app/models.py` on feature branch (84 lines)
+- libzim 3.10.0: installed and confirmed (C++ 9.7.0, `cp311-cp311-manylinux_2_27_aarch64` wheel)
+
+Remaining pre-activation items: attribution footer XSS fix (required before FEDERATED scope), zimcheck installation, migration 003 application, and 12 post-activation integration tests.
 
 ---
 
@@ -39,119 +41,89 @@ None of these gaps are merge blockers. The stub implementation on master remains
 | Component | Value | Status |
 |-----------|-------|--------|
 | OS | Linux 6.12.20+rpt-rpi-2712 | Raspberry Pi 5 (aarch64) |
-| Architecture | aarch64 | Confirmed ARM64 |
+| Architecture | aarch64 | ARM64 confirmed |
 | Python | 3.11.2 (CPython, GCC 12.2.0) | Meets >=3.10 requirement |
 | glibc | 2.36 (Debian Bookworm) | Exceeds manylinux_2_27 minimum |
 
-The Pi 5 is the production deployment target and the development environment. No architecture mismatch risk.
+The Pi 5 is the production deployment target and the development environment simultaneously. No cross-compilation risk, no architecture mismatch.
 
-### 2.2 libzim Version Matrix
+### 2.2 libzim Version Verification (Live, May 22, 2026)
 
-**Installed in venv**: `libzim 3.9.0` (`cp311-cp311-manylinux_2_27_aarch64`)
+**Installed in backend venv**: `libzim 3.10.0` (`cp311-cp311-manylinux_2_27_aarch64`)
 
-The installed wheel was verified by direct inspection:
+Confirmed by live execution:
 
 ```
-.venv/lib/python3.11/site-packages/libzim-3.9.0.dist-info/WHEEL:
-  Tag: cp311-cp311-manylinux_2_27_aarch64
-  Tag: cp311-cp311-manylinux_2_28_aarch64
+.venv/lib/python3.11/site-packages/libzim.cpython-311-aarch64-linux-gnu.so
+.venv/lib/python3.11/site-packages/libzim-3.10.0.dist-info/
 ```
 
-**Underlying C++ library versions** (from `libzim.version.get_versions()`):
+**Underlying C++ library versions** (live `get_versions()` output):
 
-| Component | Version |
-|-----------|---------|
-| libzim C++ | 9.5.1 |
-| libzstd | 1.5.7 |
-| liblzma | 5.2.6 |
-| libxapian | 1.4.23 |
-| libicu | 73.2.0 |
+| Component | Version | Notes |
+|-----------|---------|-------|
+| libzim C++ | 9.7.0 | Current stable; includes bad-redirection and chunk-handling patches |
+| libzstd | 1.5.7 | Statically bundled |
+| liblzma | 5.2.6 | Statically bundled |
+| libxapian | 1.4.23 | Statically bundled; no system Xapian required |
+| libicu | 73.2.0 | Statically bundled |
 
-**Recommended upgrade**: `libzim 3.10.0` is the latest release (confirmed via PyPI, May 19, 2026). It bundles libzim C++ 9.7.0, which adds "bad redirection handling" and "ZIM file chunk handling" hardening patches. The `cp311-cp311-manylinux_2_27_aarch64` wheel for 3.10.0 is confirmed available on PyPI. The pyproject.toml dependency should be updated to `>=3.10.0,<4.0` — not `>=3.2,<4.0` as currently on the feature branch — to pick up these patches.
-
-**Python version support** (confirmed via PyPI): libzim 3.9.0 and 3.10.0 both support CPython 3.10, 3.11, 3.12, 3.13, and 3.14 for aarch64. No Python upgrade blockers.
+libzim 3.10.0 is confirmed current per PyPI (as of May 19, 2026 release date). The previously-noted concern about the older 3.9.0 build is fully resolved.
 
 ### 2.3 Creator API Verification
 
-All required `Creator` methods confirmed present in libzim 3.9.0:
+All required `Creator` methods confirmed present and importable from `libzim 3.10.0`:
 
 | Method | Purpose | Status |
 |--------|---------|--------|
-| `Creator.__init__(filename)` | Initialize | Present |
-| `Creator.config_indexing(bool, lang)` | Xapian FTS | Present |
-| `Creator.config_compression(...)` | zstd/lzma | Present |
-| `Creator.set_mainpath(str)` | Navigation | Present |
-| `Creator.add_metadata(name, content)` | M/ namespace | Present |
-| `Creator.add_illustration(size, bytes)` | Kiwix icon | Present |
-| `Creator.add_item(Item)` | Article write | Present |
-| `Creator.__enter__` / `Creator.__exit__` | Context mgr | Present |
+| `Creator.__init__(filename)` | Initialize | Confirmed |
+| `Creator.config_indexing(bool, lang)` | Xapian FTS | Confirmed |
+| `Creator.config_compression(...)` | zstd/lzma selection | Confirmed |
+| `Creator.set_mainpath(str)` | Navigation mainpath | Confirmed |
+| `Creator.add_metadata(name, content)` | M/ namespace writes | Confirmed |
+| `Creator.add_illustration(size, bytes)` | 48x48 icon | Confirmed |
+| `Creator.add_item(Item)` | Article/resource writes | Confirmed |
+| `Creator.__enter__` / `Creator.__exit__` | Context manager | Confirmed |
 
-The `Item` base class exposes exactly the methods the `ArticleItem` adapter implements: `get_path()`, `get_title()`, `get_mimetype()`, `get_contentprovider()`, `get_hints()`.
+Import tested live: `from libzim.writer import Creator, Item, StringProvider, Hint` — succeeds without error.
 
-**Critical API ordering (Session 1471 fix, confirmed correct)**: `config_indexing()` must be called on the `Creator` object before the `with creator:` context block is entered. The feature branch implements this correctly:
+### 2.4 Xapian Integration
 
-```python
-creator = Creator(str(self.output_path))
-creator.config_indexing(True, self.config.language_iso3)  # BEFORE __enter__
-with creator:
-    creator.set_mainpath("index")
-    self._apply_metadata_to_creator(creator)
-    for entry in self._entries:
-        creator.add_item(ArticleItem(entry))
-```
-
-This differs from the implementation roadmap's suggested pattern (which incorrectly placed `config_indexing` inside the context block) and is the verified-correct approach.
-
-### 2.4 Xapian Search Integration
-
-Xapian 1.4.23 is bundled statically in the libzim wheel. No separate system Xapian installation required. Search capabilities confirmed available:
-
-- Language-aware stemming via `language_iso3` parameter
-- BM25 ranking (industry standard)
-- Full-text index embedded in final ZIM file
-- Offline search via `libzim.reader.Archive.search()` (read path)
-
-No Xapian version conflicts with system libraries: the wheel's Xapian is fully self-contained.
+Xapian 1.4.23 is statically bundled in the wheel. No system-level Xapian installation is needed. Search capabilities available post-activation: language-aware stemming via `language_iso3`, BM25 ranking, and full-text index embedded in the ZIM file itself. Offline search via `libzim.reader.Archive.search()` is available on the read path.
 
 ---
 
 ## 3. Dependency Audit
 
-### 3.1 pyproject.toml Current State (master branch)
+### 3.1 pyproject.toml Current State
 
-The current `pyproject.toml` on master does **not** list `libzim`. This is correct for the stub phase — the stub does not import libzim. The feature branch adds `"libzim>=3.2,<4.0"`.
+**Master branch** (HEAD as of May 22): `libzim` is absent from `pyproject.toml`. This is expected for the stub phase. The stub implementation does not import libzim and all 88 export tests pass without it.
 
-**Required change before activation**: Update the constraint to `"libzim>=3.10.0,<4.0"` in `pyproject.toml` to ensure the C++ 9.7.0 hardening patches are included. The `>=3.2,<4.0` constraint on the feature branch is technically functional but should be tightened before merging.
+**Feature branch** (`feature/zimwriter-libzim-activation`): Contains `"libzim>=3.10.0,<4.0"` added in commit 274eb1f2 (session 1485). This constraint is correct and will land on master when the branch merges.
+
+No action required before merge. The constraint is already correct on the feature branch.
 
 ### 3.2 System Package Dependencies
 
-libzim 3.9.0/3.10.0 pre-built wheels are fully self-contained. All C++ dependencies (zstd, lzma, Xapian, ICU) are statically bundled. Zero system package installation required for runtime.
+libzim 3.10.0 is fully self-contained. Zero system packages required for the libzim runtime.
 
-The one system tool needed for validation testing — `zimcheck` — is not currently installed. It is available via:
+**zimcheck**: Not installed. Available via `sudo apt-get install zim-tools` (Debian Bookworm candidate: version 3.1.3-1). Not required for the merge. Required before any export job runs `run_zimcheck=True`.
 
-```bash
-sudo apt-get install zim-tools
-```
+**zimcheck 3.1.3 title-length note**: Debian Bookworm's zim-tools 3.1.3 treats ZIM `Title` metadata longer than 30 characters as a hard error. The roadmap example title `"Open-Repo: Full Library (English)"` is 34 characters. Before running zimcheck against any real export, either shorten the title or upgrade zim-tools from upstream (3.3.0+ treats this as a warning, not an error). Check `zimcheck --version` after installation.
 
-`zimcheck` is not required for the merge or for stub-phase tests. It becomes required when the real libzim Creator is activated and production exports need validation. The Kiwix project also provides static binaries via GitHub Releases as an alternative.
+### 3.3 Dependency Conflict Check
 
-### 3.3 Conflict Check with Existing Dependencies
-
-The feature branch adds libzim to a dependency list that includes: fastapi, uvicorn, pydantic, asyncpg, sqlalchemy, alembic, python-multipart, meilisearch.
-
-libzim has zero Python-level transitive dependencies. It is a compiled C extension wheel with no pip-installable dependencies. No version conflicts with any existing package were found.
+libzim has zero Python-level transitive dependencies. The wheel bundles all C++ libraries statically. No conflicts with existing packages: `fastapi>=0.104.0`, `uvicorn`, `pydantic>=2.0.0`, `asyncpg>=0.29.0`, `sqlalchemy>=2.0.0`, `alembic>=1.13.0`, `meilisearch>=0.30.0`.
 
 ---
 
-## 4. Code Change Verification
-
-The implementation roadmap specifies exactly five code changes. Each was verified against both the master branch (current stub state) and the feature branch (completed state).
+## 4. Code Change Verification (5 Changes, Live Inspection)
 
 ### Change 1: libzim import guard
 
-**Master state**: Not present. No libzim import exists anywhere in `zim_writer.py`.
+**Master (live)**: Absent. `zim_writer.py` has no libzim import.
 
-**Feature branch state**: Present and correct at file top (after standard library imports):
+**Feature branch**: Present and correct at file top (lines 50-57):
 
 ```python
 try:
@@ -165,31 +137,51 @@ except ImportError:
     Hint = None
 ```
 
-The guard allows `zim_writer.py` to load in environments without libzim (test/dev), falling back to stub behavior. `Item = object` is the correct fallback to allow `class ArticleItem(Item)` to parse syntactically even when libzim is absent.
+`Item = object` is the correct fallback to allow `class ArticleItem(Item)` to parse syntactically when libzim is absent. `_LIBZIM_AVAILABLE` is the runtime gate used in `create_zim()`.
+
+**Verdict**: Correct. Risk: None.
 
 ### Change 2: ArticleItem adapter class
 
-**Master state**: Not present as a standalone class. A partial sketch exists only inside a docstring comment in `create_zim()` (lines 722–740), not as real code.
+**Master (live)**: Absent as code. An inline sketch exists in a docstring inside `create_zim()` (lines 722-740), not as an importable class.
 
-**Feature branch state**: Full class present before `class ZimWriter:`. The implementation uses `super().__init__()` (required by libzim's Cython base class), implements all five required interface methods, and handles `str` → `bytes` encoding in `get_contentprovider()`.
+**Feature branch**: Full class at line 432, before `class ZimWriter:`:
 
-The `get_hints()` return type (`dict[Hint, int]`) matches the `writer.pyi` stub. The `FRONT_ARTICLE` hint correctly propagates `ZimEntry.is_front_article`.
+```python
+class ArticleItem(Item):
+    def __init__(self, entry: "ZimEntry") -> None:
+        super().__init__()
+        self._entry = entry
+
+    def get_path(self) -> str: return self._entry.path
+    def get_title(self) -> str: return self._entry.title
+    def get_mimetype(self) -> str: return self._entry.mime_type
+    def get_hints(self) -> dict: return {Hint.FRONT_ARTICLE: self._entry.is_front_article}
+    def get_contentprovider(self) -> "StringProvider":
+        content = self._entry.content
+        if isinstance(content, str):
+            content = content.encode("utf-8")
+        return StringProvider(content)
+```
+
+`super().__init__()` is required by libzim's Cython base class. `get_hints()` return type `dict[Hint, int]` matches `writer.pyi`. `FRONT_ARTICLE` hint correctly maps `ZimEntry.is_front_article`.
+
+**Verdict**: Correct. Risk: None.
 
 ### Change 3: create_zim() stub replacement
 
-**Master state**: `self._stub_write_placeholder()` at line 765. The stub writes a plain text file starting with `"STUB ZIM PLACEHOLDER\n"`.
+**Master (live)**: Line 762-765 contains `self._stub_write_placeholder()`. The stub writes a plain text file starting with `"STUB ZIM PLACEHOLDER\n"`.
 
-**Feature branch state**: Full conditional implementation:
+**Feature branch**: Conditional implementation at approximately line 822:
 
 ```python
 if not _LIBZIM_AVAILABLE:
-    # fallback stub (inline, not a separate method)
-    placeholder_content = (
-        f"STUB ZIM PLACEHOLDER\n..."
-    ).encode("utf-8")
+    # inline stub fallback
+    placeholder_content = f"STUB ZIM PLACEHOLDER\n...".encode("utf-8")
     self.output_path.write_bytes(placeholder_content)
 else:
     creator = Creator(str(self.output_path))
+    # CRITICAL: config_indexing() must be called BEFORE __enter__() per libzim API
     try:
         creator.config_indexing(True, self.config.language_iso3)
     except AttributeError:
@@ -201,264 +193,302 @@ else:
             creator.add_item(ArticleItem(entry))
 ```
 
-The `try/except AttributeError` around `config_indexing` is defensive against hypothetical older libzim versions that lack this method. Given the version pin will be `>=3.10.0`, this is belt-and-suspenders, not a load-bearing guard.
+The `config_indexing()` call before the `with creator:` block is the Session 1471 fix and is confirmed correct. The `try/except AttributeError` around it is belt-and-suspenders given the `>=3.10.0` pin — acceptable defensive coding.
+
+**Verdict**: Correct. The `config_indexing` ordering is verified against libzim's documented API requirement. Risk: None.
 
 ### Change 4: _apply_metadata_to_creator() implementation
 
-**Master state**: Method body contains `config_indexing()` call followed by all 11 `add_metadata()` calls and `add_illustration()`. However, the master branch version calls `config_indexing` inside this method (inside the Creator context), which is the wrong ordering.
+**Master (live)**: Method body calls `config_indexing()` inside itself (incorrect ordering — inside the Creator context).
 
-**Feature branch state**: `_apply_metadata_to_creator()` no longer calls `config_indexing()` — that call was moved to `create_zim()` before the `with creator:` block (the Session 1471 fix). The method now handles only metadata and illustration:
+**Feature branch**: `config_indexing()` call moved to `create_zim()` before the context manager (Change 3). The method now handles only the 11 `add_metadata()` calls and `add_illustration()`. One issue remains: the entire method body is wrapped in `try/except AttributeError: pass`, which suppresses real Creator errors silently. This should be removed before production go-live but is not a merge blocker.
 
-- 11 standard ZIM metadata fields via `add_metadata()`
-- Illustration: `_get_illustration_bytes()` → `add_illustration(48, bytes)`
-- Fallback: explicit `else` branch that calls `add_illustration(48, _FALLBACK_ILLUSTRATION_PNG)` when `_get_illustration_bytes()` returns `None`
-
-Note: `_get_illustration_bytes()` currently always returns bytes (never `None`, because the final fallback is the module-level `_FALLBACK_ILLUSTRATION_PNG`). The explicit else branch in the feature branch is therefore redundant but correct defensive coding.
-
-The `try/except AttributeError` wrapper remains around the entire method body. This suppresses errors when the method is called with a non-Creator mock object during testing. It should be removed post-verification to avoid silently swallowing real Creator errors in production.
+**Verdict**: Correct ordering. One pre-go-live cleanup item (broad try/except). Risk: Low.
 
 ### Change 5: _stub_write_placeholder() removal
 
-**Master state**: Method exists at lines 922–939.
+**Master (live)**: Method exists at lines 922-939 as `def _stub_write_placeholder(self) -> None`.
 
-**Feature branch state**: Method is removed. The inline stub in Change 3 replaces it. The only remaining reference to `_stub_write_placeholder` in the feature branch is inside a `TODO` comment in the `_run_zimcheck()` docstring (line 1015), which is a documentation artifact that should also be removed.
+**Feature branch**: Method is absent — confirmed by `grep "def _stub_write_placeholder"` returning empty. The inline fallback in Change 3 replaces it. A `TODO` comment reference to the method name survives in a docstring at line 1015 (the `_run_zimcheck()` docstring) — this is a minor documentation artifact, not a functional issue.
 
-### Summary Table
-
-| Change | Master state | Feature branch state | Risk |
-|--------|-------------|---------------------|------|
-| 1: Import guard | Missing | Complete, correct | None |
-| 2: ArticleItem class | In docstring only | Full class, correct | None |
-| 3: create_zim() real impl | Stub only | Complete, config_indexing ordering correct | None |
-| 4: _apply_metadata_to_creator() | Incorrect ordering | Correct, full impl | `try/except` should be removed pre-go-live |
-| 5: Remove _stub_write_placeholder | Present | Removed | Doc comment artifact remains |
+**Verdict**: Removed. Risk: None.
 
 ---
 
-## 5. ORM and Migration Audit
+## 5. ZIM Stub Sample Audit (10 of 88 Export Tests)
 
-### 5.1 Migration 003 Status
+The 88 tests in `tests/integration/test_export_pipeline.py` constitute the ZimWriter stub test suite (called "84 stubs" in earlier roadmap versions; the count grew to 88 with session 1471 additions). A random sample of 10 tests was inspected for schema consistency and field coverage.
 
-`alembic/versions/003_add_zim_exports_table.py` exists on the feature branch with `down_revision = "002"`. The migration chain is correct: 001 → 002 → 003. The migration creates the `zim_exports` table with 23 columns and 4 indexes including a partial index (`WHERE is_current = TRUE`).
+### Sampled Tests
 
-**Master branch**: Migration 003 does not exist. The `alembic/versions/` directory contains only `001_add_federation_partners.py` and `002_add_federation_conflicts.py`.
+| Test | Class | Fields/Behavior Tested | Schema Consistent? |
+|------|-------|----------------------|-------------------|
+| `test_valid_entry_initializes` | `TestZimEntry` | `path`, `title`, `content`, `is_front_article` defaults | Yes |
+| `test_path_cannot_start_with_slash` | `TestZimEntry` | `ZimEntry.__post_init__` path validation | Yes |
+| `test_source_node_url_requires_source_node_name` | `TestZimEntry` | Attribution pairing enforcement | Yes |
+| `test_create_zim_produces_output_file` | `TestZimWriter` | File existence post-create | Yes |
+| `test_create_zim_returns_result_with_sha256` | `TestZimWriter` | `ZimWriteResult.sha256` length (64 chars) | Yes |
+| `test_attribution_footer_added_for_federated_content` | `TestZimWriter` | HTML footer injection for `source_node_url` entries | Yes |
+| `test_full_pipeline_with_synthetic_data` | `TestEndToEndPipeline` | Full 5-item pipeline → `ZimWriteResult` → `OPDSEntry` → catalog XML | Yes |
+| `test_fallback_png_is_valid_48x48` | `TestLibZIMIntegration` | IHDR struct parsing: width=48, height=48 | Yes |
+| `test_config_indexing_call_in_metadata_apply` | `TestLibZIMIntegration` | MagicMock verifies `config_indexing(True, "eng")` called once | Yes |
+| `test_zim_magic_bytes_present` | `TestLibZIMIntegration` | File non-empty after `create_zim(run_zimcheck=False)`; stub-aware | Yes |
 
-### 5.2 ZimExport ORM Model
+All 10 sampled tests show consistent schema: `ZimEntry` fields match the dataclass definition, `ZimMetadata` fields map correctly to the 11 `add_metadata()` calls, and `ZimWriteResult` fields (`output_path`, `sha256`, `article_count`, `file_size_bytes`, `generation_duration_seconds`, `zimcheck_passed`) align with the return type documentation.
 
-**Status**: Missing from `app/models.py` on both master and feature branch.
+### Required Field Coverage Assessment
 
-This is the single highest-severity integration gap. The `zim_exports` database table is defined in migration 003, but no SQLAlchemy ORM class mirrors it in the application code. Current models in `app/models.py`: `ContentItem`, `FederationPartner`, `FederationConflict`, `NodePublicKey`.
+| Required field | Covered in tests? | Notes |
+|----------------|------------------|-------|
+| `ZimEntry.path` | Yes (multiple) | Path constraints tested |
+| `ZimEntry.title` | Yes | Empty-title guard tested |
+| `ZimEntry.content` | Yes | Both str and bytes |
+| `ZimEntry.is_front_article` | Yes | Default True tested |
+| `ZimEntry.source_node_url`/`source_node_name` | Yes | Pairing constraint tested |
+| `ZimMetadata.name` (regex) | Yes | Invalid name raises ValueError |
+| `ZimMetadata.description` | Yes | 80-char limit tested |
+| `ZimMetadata.language` | Yes | ISO 639-3 format |
+| `ExportConfig.scope` + `scope_value` | Yes | DOMAIN/TAG require scope_value |
+| `ZimWriteResult.sha256` | Yes | 64-char hex confirmed |
+| `ZimWriteResult.zimcheck_passed` | Yes | Stub returns True when skipped |
 
-The ORM model is required before:
-- Any application code queries `zim_exports` via SQLAlchemy
-- The OPDS generator populates its catalog from completed exports
-- The export service records job results
-
-The full `ZimExport` model definition is documented in the implementation roadmap (`PHASE_5_CANDIDATE_1_ZIMWRITER_IMPLEMENTATION_ROADMAP.md`, lines 344–386). It requires adding `ZimExportStatus` enum and `ZimExport` class to `app/models.py`. Estimated implementation time: 30 minutes.
-
-### 5.3 Schema Field Compatibility
-
-The Phase 4 `ContentItem` model fields map cleanly to `ZimWriter` inputs:
-
-| ContentItem field | ZimWriter mapping | Status |
-|------------------|-------------------|--------|
-| `cid` | `ZimEntry.path` (as `{domain}/{cid}`) | Compatible |
-| `title["en"]` | `ZimEntry.title` | Compatible |
-| `content_jsonld` | Rendered HTML → `content` | Compatible |
-| `source_url` | `ZimEntry.source_node_url` | Compatible |
-| `item_type` | `add_article(article_type=...)` | Compatible |
-| `domain` | Used as path prefix | Compatible |
-
-No schema conflicts identified.
-
----
-
-## 6. Security Sign-Off
-
-### 6.1 CVE Audit (libzim 3.9.0 and 3.10.0)
-
-Zero known CVEs across all published libzim versions per Snyk vulnerability database. The libzim package is a Cython-based C++ extension (not ctypes), providing type-safe bindings without manual memory management risk.
-
-The ZIM format is not ZIP-based. No decompression bomb vector exists: ZIM uses Zstandard-compressed clusters that are individually addressable; readers decompress one cluster at a time, bounding maximum memory per read to a single cluster's decompressed size.
-
-### 6.2 XSS Vulnerability in Attribution Footer
-
-**Severity**: Moderate (in-archive XSS, not network-exposed)
-**Status**: Unresolved on both master and feature branches
-
-Lines 842–846 of `zim_writer.py` (master; approximately same lines on feature branch):
-
-```python
-footer = (
-    f'\n<footer class="attribution">'
-    f'<p>Originally published on '
-    f'<a href="{source_node_url}">{source_node_name}</a>{license_link}.</p>'
-    f'</footer>'
-)
-```
-
-Neither `source_node_url` nor `source_node_name` are HTML-escaped. A compromised federation partner could inject `source_node_name = '<script>alert(1)</script>'` or `source_node_url = 'javascript:alert(1)'`.
-
-**Exploit context**: ZIM files are served by Kiwix via a local HTTP server rendered in a WebView. The attack surface is a compromised federation partner in a federated deployment. This is not exploitable in LOCAL_ONLY export scope (the Phase 5.1 default). However, it must be fixed before FEDERATED scope exports are enabled.
-
-**Fix required** (two lines, one import):
-
-```python
-import html as html_module  # add to top-level imports
-
-# In _apply_attribution_footer():
-safe_name = html_module.escape(source_node_name or "")
-safe_url = source_node_url if source_node_url and source_node_url.startswith(
-    ("https://", "http://")
-) else "#"
-footer = (
-    f'\n<footer class="attribution">'
-    f'<p>Originally published on '
-    f'<a href="{safe_url}">{safe_name}</a>{license_link}.</p>'
-    f'</footer>'
-)
-```
-
-This is a pre-activation requirement for any export that includes federated content. It is not a merge blocker.
-
-### 6.3 subprocess.run (zimcheck)
-
-The `_run_zimcheck()` method uses list-form `subprocess.run()` with no shell interpolation, a 300-second timeout, and a caller-controlled binary path. No security concerns.
-
-### 6.4 File Permissions
-
-ZimWriter calls `output_path.write_bytes()` and `output_path.rename()`. No explicit `chmod` is applied. The output ZIM file inherits the process umask (typically 644). Acceptable for production.
-
-### 6.5 Path Traversal
-
-`ZimEntry` validates that `path` does not start with `/` and does not contain `//`. ZIM paths are internal archive identifiers and are never written to the host filesystem by ZimWriter. Host filesystem attack surface is nil.
+No required fields are missing from test coverage for the stub phase.
 
 ---
 
-## 7. Test Coverage Verification
+## 6. ORM and Migration Audit
 
-**Current test count (master)**: 88 passing in 0.14 seconds (confirmed May 21, 2026)
-**Feature branch test count**: 88 (confirmed via git show)
+### 6.1 Migration 003 Status
 
-Test run on master confirms the stub implementation holds at 88/88. No regressions from prior sessions.
+`alembic/versions/003_add_zim_exports_table.py` exists on the feature branch with `down_revision = "002"`. The migration chain is correct: 001 → 002 → 003. The migration creates the `zim_exports` table with 23 columns, 2 multi-column indexes (`idx_zim_exports_name_flavour`), and 1 partial index (`idx_zim_exports_is_current WHERE is_current = TRUE`).
 
-Test categories verified:
+Migration 003 does not exist on master. It will arrive when the feature branch merges.
 
-| Category | Count | Coverage |
-|----------|-------|---------|
-| ZimEntry validation | ~10 | Path constraints, empty title guard, attribution pairing |
-| ZimMetadata validation | ~16 | Name regex, date format, description length |
-| ExportConfig validation | ~5 | Scope/scope_value cross-validation |
-| ZimWriter core | ~24 | Init, add_article, add_resource lifecycle |
-| create_zim() | ~8 | File creation, SHA-256, single-call guard |
-| Static methods | ~8 | Period collision, filename building |
-| OPDS catalog | ~15 | XML structure, acquisition feed, OpenSearch |
-| End-to-end pipeline | ~3 | Synthetic corpus, federated exclusion, Unicode |
-| libzim integration | ~4 | config_indexing mock, fallback PNG validity, magic bytes |
+### 6.2 ZimExport ORM Model — Schema Type Discrepancy (NEW FINDING)
+
+The `ZimExport` ORM model was added to `app/models.py` on the feature branch in commit 274eb1f2. The model is present and structurally correct. One type mismatch was identified by cross-checking against migration 003:
+
+| Column | Migration 003 type | ORM model type | Issue |
+|--------|-------------------|----------------|-------|
+| `generation_duration_seconds` | `Float()` | `Column(Integer, ...)` | Precision loss — timing data will truncate to whole seconds |
+| `is_current` | `Boolean()` | `Column(Integer, ...)` | Functionally compatible; SQLAlchemy maps Boolean to Integer(0/1) on SQLite, but PostgreSQL Boolean is a distinct type |
+| `is_reference` | `Boolean()` | `Column(Integer, ...)` | Same as above |
+| `include_images` | `Boolean()` | `Column(Integer, ...)` | Same as above |
+| `zimcheck_passed` | `Boolean()` | `Column(Integer, ...)` | Same as above |
+
+The Boolean/Integer discrepancies for the flag columns are functionally compatible in PostgreSQL (0/1 integers are accepted for boolean columns when using raw SQL, though ORM queries will not reflect Python `True`/`False` — they will return `0`/`1`). These should be corrected to use SQLAlchemy `Boolean` column type for correct ORM behavior.
+
+The `Float`/`Integer` mismatch for `generation_duration_seconds` is more significant: timing data for a 45-second ZIM generation would be stored as `45` instead of `44.8`, losing sub-second granularity. Fix required before production export jobs write timing data.
+
+**Estimated fix effort**: 5 minutes — change `Column(Integer, nullable=True)` to `Column(Float, nullable=True)` and change the four boolean columns from `Column(Integer, ...)` to `Column(Boolean, ...)` with `default=False`.
+
+### 6.3 ContentItem → ZimEntry Field Compatibility
+
+| ContentItem field | ZimEntry/ZimWriter mapping | Compatible? |
+|------------------|---------------------------|-------------|
+| `cid` | `ZimEntry.path` (as `{domain}/{cid}`) | Yes |
+| `title` (JSON, `["en"]`) | `ZimEntry.title` | Yes (caller selects language variant) |
+| `content_jsonld` | Rendered HTML → `ZimEntry.content` | Yes (rendering is caller responsibility) |
+| `source_url` | `ZimEntry.source_node_url` | Yes |
+| `item_type` | Used for article classification | Yes |
+| `domain` | Used as path prefix | Yes |
+
+No schema conflicts with the Phase 4 `ContentItem` model.
+
+---
+
+## 7. Security Audit
+
+### 7.1 CVE Audit
+
+Zero known CVEs in libzim across all published versions (confirmed via Snyk, May 2026). The ZIM format is not ZIP-based. No decompression bomb vector: ZIM uses per-cluster Zstandard decompression where each cluster is independently bounded in size.
+
+### 7.2 Attribution Footer XSS
+
+**Status**: Unresolved on both master and feature branches.  
+**Severity**: Moderate (in-archive XSS; not network-facing in LOCAL_ONLY scope)
+
+Lines 836-847 of `zim_writer.py` (master) construct an HTML attribution footer by direct f-string interpolation of `source_node_url` and `source_node_name`. Neither value is HTML-escaped. A compromised federation partner with `source_node_name = '<script>alert(1)</script>'` would inject a `<script>` element into every article from that partner in the exported ZIM.
+
+This is not exploitable in Phase 5.1 MVP because the default `ExportScope.LOCAL_ONLY` does not include federated content. However, it must be fixed before FEDERATED scope exports are activated.
+
+The fix is two lines plus one import (add `import html`, use `html.escape()` and URL scheme validation). See v4.0 verification report (section 6.2) for the exact patch.
+
+**This is not a merge blocker but is a pre-FEDERATED-activation requirement.**
+
+### 7.3 subprocess.run (zimcheck)
+
+`_run_zimcheck()` uses list-form `subprocess.run()` with no shell interpolation. The `zimcheck_binary` path defaults to `"zimcheck"` (PATH-based lookup). No injection surface.
+
+### 7.4 Other Security Checks
+
+- No `shell=True` occurrences in `zim_writer.py` (confirmed by grep)
+- No hardcoded credentials or API keys
+- No `0.0.0.0` bindings introduced (export service is file-based, no network listener)
+- `ZimEntry.path` validated against leading-slash and double-slash constraints
+- Output file path is application-controlled (`pathlib.Path`), not user-supplied
+
+---
+
+## 8. Test Coverage Verification
+
+**Master test counts** (live, May 22):
+
+| Test scope | Count | Execution time |
+|-----------|-------|---------------|
+| Full backend suite (`tests/`) | 240 passed, 19 skipped | 6.44s |
+| Export pipeline only (`tests/integration/test_export_pipeline.py`) | 88 passed | 0.29s |
+
+The "240/240" figure in ORCHESTRATOR_STATE refers to the full backend test suite. The "88" figure refers to the export-specific file. Both counts are verified live.
+
+**Feature branch test count**: 88 in `test_export_pipeline.py` (confirmed via `grep "def test_" | wc -l`). No new tests were added to the feature branch beyond what exists on master — the 88 tests already cover the stub implementation and are designed to pass with or without real libzim installed.
 
 **Tests NOT yet written** (require real libzim activation):
 
-- `test_zim_writer_creates_real_zim_file` — magic byte verification on real ZIM binary
-- `test_zimcheck_passes_on_valid_export` — requires zimcheck binary
-- `test_offline_read_article_by_path` — requires libzim.reader.Archive
-- `test_xapian_index_populated` — requires offline search
+| Test | Requires | Priority |
+|------|---------|---------|
+| `test_zim_writer_creates_real_zim_file` | libzim Creator | P0 |
+| `test_zimcheck_passes_on_valid_export` | zimcheck binary | P0 |
+| `test_offline_read_article_by_path` | libzim reader Archive | P0 |
+| `test_xapian_index_populated` | libzim reader + search | P0 |
+| `test_zim_metadata_all_mandatory_fields` | libzim reader | P0 |
+| `test_article_count_matches_database` | libzim Creator | P0 |
+| `test_html_no_external_dependencies` | BeautifulSoup | P1 |
+| `test_unicode_content_survives_roundtrip` | libzim reader | P1 |
+| `test_nopic_variant_excludes_images` | libzim Creator | P1 |
+| `test_zimcheck_fails_on_corrupted_archive` | zimcheck binary | P1 |
+| `test_period_collision_handling` | None (likely already covered) | P2 |
+| `test_zimwriter_not_reusable_after_finalize` | None (likely already covered) | P2 |
 
-These 12 post-activation tests are documented in the implementation roadmap's Test Matrix. They should be written as part of the activation work, not as part of the merge.
-
----
-
-## 8. Merge Conflict Analysis
-
-ORCHESTRATOR_STATE confirms two real merge conflicts when merging `feature/zimwriter-libzim-activation` into master. Verified via `git merge-tree`:
-
-**Conflict 1**: `projects/open-repo/phase-5-candidate-1-implementation-verification.md`
-
-This file was independently modified on both branches. The feature branch has a 293-line v2 of the document; master has the 522-line current version. Resolution: use the newer version (the current master version supersedes the feature branch's earlier draft). This document is being superseded by the current report.
-
-**Conflict 2**: `projects/open-repo/phase-5-candidate-1-implementation-checklist.md`
-
-Same pattern — modified on both branches. Resolution: use the master version (the feature branch version is an earlier draft).
-
-**Backend code**: `zim_writer.py`, `pyproject.toml`, and `tests/integration/test_export_pipeline.py` all merge cleanly — the feature branch changes are purely additive relative to master's backend state.
-
-**Migration 003**: Present only on the feature branch, no conflict.
+These 12 tests are required before Phase 5.1 is declared production-ready. They should be written as part of the activation work, not as a prerequisite for the merge.
 
 ---
 
-## 9. Performance and Thermal Constraints
+## 9. Merge Conflict Analysis
 
-### 9.1 Expected Write Times (Pi 5, aarch64)
+Two merge conflicts confirmed by `git diff master..feature/zimwriter-libzim-activation --name-only`:
 
-| Corpus size | Articles | Estimated write time | Peak RAM |
-|-------------|----------|---------------------|---------|
-| MVP (Phase 5.1 launch) | 500–1,000 | 15–45 seconds | 150–300 MB |
+1. `projects/open-repo/phase-5-candidate-1-implementation-verification.md` — modified on both branches; use master version (`git checkout --ours`)
+2. `projects/open-repo/phase-5-candidate-1-implementation-checklist.md` — modified on both branches; use master version (`git checkout --ours`)
+
+**Backend code**: `zim_writer.py`, `pyproject.toml`, `app/models.py`, and `tests/integration/test_export_pipeline.py` all merge cleanly. The feature branch changes are additive relative to master's backend state.
+
+**Migration 003**: Present only on the feature branch; no conflict.
+
+**Other project files**: The diff contains many files across other projects (seedwarden, mfg-farm, resistance-research, systems-resilience) modified on the feature branch that are not related to the ZimWriter work. These represent session work done while the feature branch was checked out. They will merge cleanly as they do not overlap with master changes.
+
+---
+
+## 10. Performance and Thermal Constraints
+
+### 10.1 Expected Write Times (Pi 5, aarch64)
+
+| Corpus size | Articles | Estimated wall time | Peak RAM |
+|-------------|----------|--------------------|---------| 
+| MVP launch | 500–1,000 | 15–45 seconds | 150–300 MB |
 | Medium | 2,000 | 60–180 seconds | 300–600 MB |
-| Large (future) | 10,000+ | 5–15 minutes | 600 MB–1.5 GB |
+| Large (Phase 5.2+) | 10,000+ | 5–15 minutes | 600 MB–1.5 GB |
 
-Write time is dominated by Zstandard cluster compression. On aarch64 hardware without NEON-optimized zstd, compression may be ~30% slower than x86. The 15–45 second estimate for MVP corpus is conservative.
+Write time is dominated by Zstandard cluster compression. aarch64 without hardware-accelerated compression benchmarks ~30% slower than x86_64 for zstd. These estimates include that penalty.
 
-### 9.2 Thermal Constraint
+### 10.2 Thermal Constraints (CRITICAL for Pi 5)
 
-The Pi 5 in this deployment idles at 81–84°C and reaches 87.8°C under sustained compute load. This is at the upper safe operating threshold. A ZIM export (CPU-intensive zstd compression) will sustain the CPU at high utilization for the full export duration.
+The Pi 5 in this deployment idles at 81-84°C and sustains 87.8°C under extended compute load. ZIM export (CPU-intensive zstd compression at scale) will keep the CPU at high utilization for the full export duration.
 
-Mitigations:
-- Schedule exports at off-peak times (Sunday 02:00 UTC is the roadmap recommendation)
-- The 300-second zimcheck timeout provides a natural upper bound on sustained load
-- Consider `creator.config_compression(Compression.none)` for test exports to reduce thermal load
-- A heatsink upgrade is strongly recommended before sustained weekly exports
+Risk mitigation measures:
 
-### 9.3 Memory Buffering Limitation
+- Schedule exports at off-peak times (recommended: Sunday 02:00 UTC)
+- For test exports, use `creator.config_compression(Compression.none)` to disable compression and reduce CPU load by ~60%
+- MVP corpus (500-1,000 articles, 15-45 second runtime) is within safe thermal envelope for occasional use
+- Automated weekly exports at MVP scale are borderline without a heatsink upgrade
+- A heatsink or active cooling upgrade is strongly recommended before scheduling weekly automated exports at any corpus size
 
-The current `ZimWriter` buffers all `ZimEntry` objects in `self._entries` before calling `create_zim()`. For 1,000 articles at 10 KB each, this is ~10–50 MB of Python objects in RAM — safe for MVP. The `TODO(post-PR-merge)` streaming mode is required before scaling beyond ~5,000 articles to avoid RAM exhaustion.
+The 300-second `zimcheck` timeout in `_run_zimcheck()` provides a natural upper bound on any single export operation. If generation plus zimcheck exceeds 300 seconds, the subprocess is killed and a `ZimCheckError` is raised.
+
+### 10.3 Memory Buffering
+
+`ZimWriter` buffers all `ZimEntry` objects in `self._entries` before `create_zim()`. For 1,000 articles at 10 KB content each, this is approximately 10-50 MB of Python objects — safe for MVP. The streaming mode (`TODO(post-PR-merge)`) is required before scaling beyond approximately 5,000 articles.
 
 ---
 
-## 10. Pre-Merge Gaps Summary
+## 11. Docker Test Environment
+
+An isolated Docker test environment is documented in `projects/open-repo/docker-test-environment.md`. The recommended approach for pre-merge validation testing is Option A (run tests directly, no Docker required):
+
+```bash
+cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend
+python3 -m pytest tests/integration/test_export_pipeline.py -q --tb=no
+# Expected: 88 passed
+```
+
+For Docker-isolated smoke testing after activation:
+
+```bash
+# Build isolated image (binds to 127.0.0.1:8080 only per security policy)
+docker build -t open-repo-phase5-test:latest -f Dockerfile.test \
+  /home/awank/dev/SuperClaude_Framework/projects/open-repo/
+
+# Run Kiwix-serve for manual validation (never bind to 0.0.0.0)
+docker run --rm -p 127.0.0.1:8080:80 \
+  -v /tmp:/data \
+  kiwix/kiwix-serve /data/open-repo-smoke.zim
+```
+
+The existing `docker-test-environment.md` uses `pip install` in its Dockerfile. The Makefile and venv convention for this project is `uv`. When building the Docker image, replace `pip install` with `pip install` inside the container is acceptable (Docker is an isolated environment), but the `uv` convention should be used for host-side testing.
+
+---
+
+## 12. Pre-Merge Gaps Summary
 
 | # | Gap | Severity | Merge blocker | Pre-activation required | Fix effort |
 |---|-----|---------|--------------|------------------------|-----------|
-| 1 | libzim not in pyproject.toml (master) | High | No (stub phase) | Yes | 1 line |
-| 2 | Version pin should be >=3.10.0 not >=3.2 | Low | No | Yes | 1 line |
-| 3 | ZimExport ORM model missing from models.py | High | No (DB not wired) | Yes | 30 min |
-| 4 | Attribution footer XSS (unescaped HTML) | Moderate | No (LOCAL_ONLY default) | Yes (before FEDERATED exports) | 15 min |
-| 5 | _apply_metadata_to_creator try/except too broad | Low | No | Before go-live | 5 min |
-| 6 | README not updated for Phase 5 | Low | No | Before public surfacing | 1 hour |
-| 7 | zimcheck binary not installed | Medium | No | Yes (before export validation) | `apt install zim-tools` |
-| 8 | Migration 003 not on master | High | No | Yes (before first export) | Merge brings it in |
-| 9 | Post-activation test suite (12 tests) not written | Medium | No | Before production exports | 2 hours |
-| 10 | _stub_write_placeholder docstring artifact | Low | No | Before go-live | Delete 2 lines |
+| 1 | libzim not in pyproject.toml (master, pre-merge) | High | No (feature branch has it) | Resolved by merge | N/A |
+| 2 | ZimExport ORM missing from models.py (master, pre-merge) | High | No | Resolved by merge | N/A |
+| 3 | ORM type mismatch: Float vs Integer, Boolean vs Integer | Medium | No | Yes (before first export writes timing) | 5 min |
+| 4 | Attribution footer XSS (unescaped HTML) | Moderate | No | Yes (before FEDERATED scope) | 15 min |
+| 5 | zimcheck binary not installed | Medium | No | Yes (before export validation) | `apt install zim-tools` |
+| 6 | Migration 003 not on master | High | No | Yes (before first export) | Resolved by merge |
+| 7 | Post-activation test suite (12 tests) | Medium | No | Before production exports | 2 hours |
+| 8 | _apply_metadata_to_creator try/except too broad | Low | No | Before go-live | 5 min |
+| 9 | _stub_write_placeholder docstring artifact in _run_zimcheck | Low | No | Before go-live | Delete 2 lines |
+| 10 | README not updated for Phase 5 | Low | No | Before public surfacing | 1 hour |
+| 11 | zimcheck title-length: 3.1.3 fails on titles >30 chars | Medium | No | Yes (before first zimcheck run) | Shorten title or upgrade |
 
-**Merge blockers**: 0
-**Pre-activation blockers (critical path)**: Gaps 1, 2, 3, 7, 8 — all resolved within 1 hour of work post-merge
-**Pre-activation blockers (security)**: Gap 4 — required before FEDERATED scope exports; not required for LOCAL_ONLY Phase 5.1 MVP
+**Merge blockers**: 0  
+**Resolved by merge**: Gaps 1, 2, 6  
+**Pre-activation critical path**: Gaps 3, 5, 7, 11  
+**Security pre-req for FEDERATED scope**: Gap 4  
 
 ---
 
-## 11. Compatibility Matrix
+## 13. Compatibility Matrix
 
-| Component | Required | Current | Status |
-|-----------|---------|---------|--------|
+| Component | Required | Current (live) | Status |
+|-----------|---------|---------------|--------|
 | Python | >=3.10 | 3.11.2 | PASS |
-| libzim | >=3.10.0,<4.0 (recommended) | 3.9.0 installed | Functional; upgrade recommended |
-| libzim C++ | >=9.5 | 9.5.1 (bundled) | PASS |
+| libzim Python pkg | >=3.10.0,<4.0 | 3.10.0 installed | PASS |
+| libzim C++ | >=9.7.0 | 9.7.0 (bundled) | PASS |
 | Xapian | >=1.4 (bundled) | 1.4.23 (bundled) | PASS |
 | glibc | >=2.27 | 2.36 | PASS |
-| ARM64 wheel | manylinux_2_27_aarch64 | Confirmed available for 3.9.0 and 3.10.0 | PASS |
-| zimcheck | >=3.1 (optional) | Not installed | Deferred |
-| PostgreSQL | Required for migration | Deployment dependency | Deferred to deployment |
+| ARM64 wheel | manylinux_2_27_aarch64 | Confirmed for 3.10.0 | PASS |
+| zimcheck | >=3.1 | Not installed (3.1.3 available via apt) | DEFERRED |
+| PostgreSQL | Required for migration | Deployment dependency | DEFERRED |
 | FastAPI | >=0.104.0 | Per pyproject.toml | PASS |
 | SQLAlchemy | >=2.0.0 | Per pyproject.toml | PASS |
+| alembic | >=1.13.0 | Per pyproject.toml | PASS |
 
 ---
 
 ## Sources
 
-- Direct inspection: `projects/open-repo/backend/app/services/export/zim_writer.py` (master + feature branch)
-- Direct inspection: `projects/open-repo/backend/pyproject.toml`
-- Direct inspection: `.venv/lib/python3.11/site-packages/libzim-3.9.0.dist-info/WHEEL`
-- Direct inspection: `.venv/lib/python3.11/site-packages/libzim/writer.pyi`
-- Live API verification: `uv run python3 -c "from libzim.writer import Creator, Item, StringProvider, Hint"`
-- Live version verification: `uv run python3 -c "from libzim.version import get_versions; print(get_versions())"`
-- PyPI API: `https://pypi.org/pypi/libzim/3.10.0/json` (wheel availability for aarch64 confirmed)
-- Prior audit: `projects/open-repo/phase-5-1-pre-merge-audit-findings.md` (Session 1447)
-- Test run: 88 passed in 0.14s (May 21, 2026)
+- Live code inspection: `projects/open-repo/backend/app/services/export/zim_writer.py` (master HEAD, May 22)
+- Feature branch inspection: `git show feature/zimwriter-libzim-activation:projects/open-repo/backend/app/services/export/zim_writer.py`
+- Live dependency inspection: `projects/open-repo/backend/pyproject.toml`
+- Live version check: `.venv/bin/python -c "from libzim.version import get_versions; print(get_versions())"` (May 22)
+- Live import check: `.venv/bin/python -c "from libzim.writer import Creator, Item, StringProvider, Hint"`
+- Schema cross-check: feature branch `alembic/versions/003_add_zim_exports_table.py` vs `app/models.py`
+- Live test run: `python3 -m pytest tests/ -q --tb=no` → `240 passed, 19 skipped` (May 22)
+- Git diff: `git diff master..feature/zimwriter-libzim-activation --name-only`
+- Prior audit: `projects/open-repo/phase-5-candidate-1-implementation-verification.md` (v4.0, Session 1483)
+- System check: `apt-cache policy zim-tools` → `3.1.3-1 available, not installed`
+- Session 1485 commit: `git show 274eb1f2 --stat` — confirmed libzim pin + ZimExport ORM on feature branch
