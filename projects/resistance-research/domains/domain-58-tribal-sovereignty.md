@@ -552,6 +552,82 @@ The April 1 argument produced three findings relevant to rapid-response preparat
 
 ---
 
+## 11a. Post-Trump v. Barbara Surveillance Escalation Pathways
+
+*Section added: May 21, 2026 — General Research Agent. This section addresses what DOJ and ICE are likely to do regardless of how Trump v. Barbara resolves. The ruling's most probable outcome (birthright citizenship upheld) eliminates one tool while leaving five parallel mechanisms in active deployment.*
+
+### The Pivot Framework: Administrative Circumvention of a Likely Adverse Ruling
+
+A 6-3 or 7-2 ruling against the executive order removes birthright citizenship denial as an administrative tool but does not restrain the enforcement infrastructure already built around the same operational objective. As of May 2026, five mechanisms are either active or in pre-deployment status.
+
+**Mechanism 1: ICE Birth Tourism Initiative (April 10, 2026)**
+
+ICE's Homeland Security Investigations launched a nationwide Birth Tourism Initiative targeting commercial networks facilitating pregnant foreign nationals. The initiative operates through visa fraud investigation, surveillance of maternity service networks, and financial crimes prosecution — not citizenship denial. If SCOTUS upholds birthright citizenship, this infrastructure becomes the statutory route to the same enforcement outcome: prosecuting the facilitators rather than denying citizenship to the children. The investigation methods (surveillance of travel-to-hospital patterns, visa application cross-checking, medical provider audits) are equivalent to a citizenship surveillance operation. Sources: [Immigration Policy Tracking Project](https://immpolicytracking.org/policies/ice-launches-birth-tourism-initiative/); [U.S. News](https://www.usnews.com/news/world/articles/2026-04-10/exclusive-ice-launches-new-effort-to-uncover-us-birth-tourism-schemes)
+
+**Mechanism 2: Mobile Fortify Biometric Override**
+
+ICE's Mobile Fortify smartphone tool — used more than 100,000 times as of January 2026 — allows agents to query a 1.2-billion-image facial recognition database and override documentary citizenship evidence. ICE has told Congress that a Mobile Fortify biometric match is a "definitive determination" and that agents may disregard birth certificates if the app indicates otherwise. Tribal members who have interacted with any federal biometric system face erroneous match risk. DHS retains all biometrics collected, including from U.S. citizens, for 15 years without a warrant. No tribal ID recognition guidance has been issued despite formal Senate requests. Sources: [Biometric Update (Jan 2026)](https://www.biometricupdate.com/202601/lawsuit-casts-new-light-on-ice-cbps-expanding-biometric-visual-surveillance-dragnet); [NARF — Know Your Rights](https://narf.org/citizenship-immigration-2025/)
+
+**Mechanism 3: Medicaid/SSA Administrative Data Sharing**
+
+A July 2025 CMS-ICE data exchange agreement provides immigration enforcement access to Medicaid enrollment data including names, addresses, Social Security numbers, and claims history. As of January 5, 2026, HHS resumed sharing basic biographical and location data. The SAVE Act (pending Senate vote) compounds this mechanism by requiring birth-certificate-compliant proof of citizenship for voter registration — a requirement no current tribal ID satisfies. The Navajo Nation Council unanimously opposed the SAVE Act in April 2026. Sources: [KFF analysis](https://www.kff.org/immigrant-health/potential-implications-of-the-new-medicaid-data-sharing-agreement-between-cms-and-ice/); [Federal News Network](https://federalnewsnetwork.com/litigation/2026/01/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/)
+
+**Mechanism 4: Commercial Location Data — Penlink**
+
+ICE's September 2025 subscription to Penlink enables access to mobile phone location histories without a warrant. Combined with Mobile Fortify facial recognition, this creates a continuous interior surveillance loop targeting populations in enforcement-priority areas. Tribal members near reservation boundaries in Arizona, New Mexico, and South Dakota are geographically co-located with these enforcement zones. Source: [Biometric Update](https://www.biometricupdate.com/202601/data-quotas-and-biometric-surveillance-are-reshaping-us-immigration-enforcement)
+
+**Mechanism 5: Birth Certificate Authenticity Disputes**
+
+The Birth Tourism Initiative creates a class of birth certificates issued at facilities under investigation. ICE's existing posture — biometric match overrides documentary evidence — means any birth certificate issued at an investigated hospital is potentially contestable regardless of the parents' status. This does not require legislation or a SCOTUS ruling; it requires only the continued deployment of tools already operational.
+
+**Threat Assessment Summary**
+
+All five mechanisms are operational or in active legislative pipeline. A favorable ruling in Trump v. Barbara removes the direct citizenship-denial tool but does not constrain the surveillance, data sharing, or biometric override infrastructure. The post-ruling advocacy demand must therefore address mechanisms 1-5 directly, not only the ruling's constitutional holding. Key asks: (a) DHS tribal ID recognition guidance (sensors' request, still unresolved); (b) Mobile Fortify warrant requirement legislation; (c) SAVE Act defeat or tribal ID amendment; (d) CMS-ICE data sharing injunction extension; (e) Penlink subscription Fourth Amendment challenge.
+
+---
+
+## 11b. Tribal Citizenship Admin Law Defense
+
+*Section added: May 21, 2026 — General Research Agent. This section addresses the administrative law theories available to tribes defending against citizenship status attacks that bypass the SCOTUS ruling.*
+
+### The Core Administrative Escalation Risk
+
+Solicitor General Sauer's Trump v. Barbara argument that tribal citizenship is statutory rather than constitutional creates an official government record arguing that Congress could, by statute, narrow or eliminate the Indian Citizenship Act. This argument fails in Trump v. Barbara, but it establishes a template for future administrative action: if the BIA were to administratively redefine eligibility criteria for federal recognition or enrollment, using blood quantum codification as the mechanism, it could reduce the treaty obligation beneficiary class without requiring SCOTUS approval.
+
+This is not hypothetical. The Dawes Act era (1887-1934) demonstrated exactly this mechanism: the federal government used blood quantum requirements imposed as conditions of federal recognition to restrict treaty obligations and reduce the enrolled population eligible for federal services. The IRA (1934) corrected this partially by allowing tribes to adopt their own constitutions — but many of those constitutions were drafted under federal supervision and incorporated blood quantum thresholds as federal-preferred conditions.
+
+### Defense Framework 1: ISDEAA Contract Rights as Administrative Citizenship Floor
+
+Under ISDEAA, compact contracts explicitly tie service eligibility to enrolled tribal membership. The Secretarial Amount calculation — what it would cost the federal government to administer programs directly — is based on the enrolled population. Any administrative action reducing the eligible enrolled population reduces the Secretarial Amount and constitutes unilateral modification of a binding federal contract. ISDEAA Section 110 provides a direct cause of action for Secretarial Amount violations. This mechanism creates a direct dollar consequence to any administrative enrollment restriction: reduced enrollment = reduced compact liability = breach of ISDEAA contract = actionable claim.
+
+### Defense Framework 2: Fiduciary Trust Duty Prohibits Unilateral Beneficiary Redefinition
+
+The federal government is a fiduciary of tribal trust interests. The basic principle of fiduciary law — confirmed in United States v. Mitchell (1983) — is that a fiduciary cannot redefine the beneficiary class to reduce its own obligations. Any Interior Department or BIA action purporting to narrow enrollment criteria for purposes of federal recognition or Indian Citizenship Act eligibility is self-dealing: the government reduces its own treaty obligation by restricting who can claim it. Such action is cognizable as breach of fiduciary duty in the Court of Federal Claims, which has concurrent jurisdiction over trust obligation claims.
+
+### Defense Framework 3: APA Arbitrary-and-Capricious Review
+
+Any BIA rule or policy memorandum affecting federal recognition criteria or blood quantum standards must survive APA arbitrary-and-capricious review under Motor Vehicle Manufacturers Association v. State Farm (1983). The GAO's January 2026 report (GAO-26-108673) documented that the BIA cannot demonstrate cost savings from its workforce reductions, has created "critical gaps" in service delivery, and acted without impact assessment or tribal consultation. An agency with no administrative record for its major operational changes fails arbitrary-and-capricious review. The weaker the BIA's documentation, the stronger the APA challenge to any downstream enrollment or recognition decision it makes during this period.
+
+**Critical insight**: An underfunded, understaffed BIA that cannot document its own decisions is a better APA defendant for tribal plaintiffs than a fully-functioning agency. The DOGE-directed workforce reductions that weaken BIA's operational capacity simultaneously weaken the administrative record the agency would need to defend enrollment decisions in court.
+
+### The Callais Factual Correction
+
+The task brief references "Callais v. Stieda" as a redistricting victory with tribal citizenship precedent implications. This case name does not exist; the relevant cases are: (1) Louisiana v. Callais (April 29, 2026), which gutted VRA Section 2's discriminatory-effects standard and set back tribal redistricting challenges — it is not a tribal citizenship victory; and (2) Western Native Voice v. Montana (May 11, 2026), a state constitutional challenge that blocked Montana SB 490's elimination of Election Day registration — this is the actual post-Callais tribal voting rights win. The admin law defense frameworks above do not rely on Callais. They rely on ISDEAA, trust fiduciary duty, and APA review.
+
+### Turtle Mountain v. Howe Post-GVR Litigation Calendar
+
+The May 18, 2026 GVR returns the case to the Eighth Circuit for reconsideration in light of Callais. The Eighth Circuit must now address whether the private right of action under Section 2 survives in a post-Callais doctrinal environment. Tactical points for tribal litigants on remand:
+
+1. Front-load the doctrinal mismatch: Callais narrowed the substantive discriminatory-effects standard, not the enforcement mechanism. Justice Jackson's dissent from the GVR confirms this — Callais "did not address" private enforceability. The Eighth Circuit should not apply a Callais-hostile standard to a question Callais never resolved.
+
+2. Develop parallel state constitutional claims now, before the Eighth Circuit rules. North Dakota, South Dakota, and Minnesota all have state equal protection provisions that can support redistricting claims independent of VRA Section 2. The Montana SB 490 injunction model is directly applicable.
+
+3. Document the mootness risk. The Eighth Circuit's prior holding that private enforcement is unavailable was the basis for the government's argument that the map remains in effect. If the Eighth Circuit reinstates that holding and the North Dakota legislature redistricts again before the case is resolved, the litigation approaches mootness. Tribal litigants should seek injunctions preserving the existing court-ordered maps during the remand period.
+
+**Expected Eighth Circuit briefing timeline**: Petitioner's brief on remand — Q3 2026. Respondents' brief — Q4 2026. Decision — Q1 2027 at earliest. No relief is imminent; the 2026 midterm elections will occur under maps whose status is unresolved.
+
+---
+
 ## NOTE TO SYNTHESIS TEAM — DOMAIN 58 POST-WAVE-1 UPDATE
 
 **Flag**: This domain was updated post-Wave-1 on May 19, 2026 following the May 18 SCOTUS GVR in *Turtle Mountain v. Howe* and companion GVR in *Board of Election Commissioners v. NAACP*. The litigation section (Section 6.1 and new Section 6.1a) was fully rewritten.

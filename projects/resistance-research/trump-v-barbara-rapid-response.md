@@ -437,3 +437,170 @@ Sources: [Democracy Docket — Montana SB 490 injunction](https://www.democracyd
 **5. Dual citizenship precedent**: The Indian Citizenship Act of 1924 explicitly preserved tribal sovereignty while extending U.S. citizenship. That dual status has been reinforced by a century of federal law. Treating tribal membership as analogous to foreign allegiance — which is what the Barbara theory requires — reverses 200 years of federal Indian law and the explicit framework Congress built in 1924.
 
 *Supplement added: May 21, 2026 — research agent session*
+
+---
+
+## May 21 v3 Supplement: Surveillance Escalation Pathways and Tribal Citizenship Admin Law Defense
+
+*Added: May 21, 2026 — General Research Agent deep-research pass. Purpose: pre-position for Phase 1 Tier 1 distribution (May 25+) and Domain 58 Phase 2 integration. Extends the May 20 and May 21 supplements with: (1) DOJ/ICE enforcement pivot pathways if SCOTUS upholds birthright citizenship; (2) tribal citizenship admin law defense against blood-quantum administrative exploitation; (3) updated BIA reorganization context for litigation planning.*
+
+---
+
+### Section 1: DOJ/ICE Enforcement Pivots If SCOTUS Upholds Birthright Citizenship
+
+The most likely ruling in Trump v. Barbara is a 6-3 or 7-2 decision against the executive order, preserving birthright citizenship. That outcome eliminates one administrative tool but does not constrain DOJ and ICE from pursuing parallel enforcement mechanisms targeting the same population. Based on documented enforcement activity already underway as of May 2026, five pivot mechanisms are in active or imminent deployment.
+
+**Pivot 1: Birth Tourism Investigation Infrastructure**
+
+On April 10, 2026, ICE's Homeland Security Investigations division issued an internal directive launching the "Birth Tourism Initiative" — a nationwide program targeting commercial networks that facilitate pregnant foreign nationals traveling to the U.S. to give birth. The initiative targets visa fraud, financial crimes, and commercial operators (maternity hotels, birthing houses) that arrange travel and medical services.
+
+The legal framing is narrowed to commercial fraud rather than citizenship status. But the operational infrastructure is identical to what a birthright-citizenship enforcement regime would require: surveillance of visa applications from pregnant women, network analysis of travel and medical service providers, and cross-checks against foreign hospital and insurance records. If SCOTUS upholds birthright citizenship, this infrastructure does not disappear; it becomes the preexisting foundation for a statutory immigration fraud campaign that achieves similar enforcement effect through criminal prosecution rather than administrative citizenship denial.
+
+Source: [Immigration Policy Tracking Project — ICE Birth Tourism Initiative](https://immpolicytracking.org/policies/ice-launches-birth-tourism-initiative/); [U.S. News — ICE launches effort against birth tourism schemes](https://www.usnews.com/news/world/articles/2026-04-10/exclusive-ice-launches-new-effort-to-uncover-us-birth-tourism-schemes)
+
+**Pivot 2: Mobile Fortify Biometric Override of Documentary Citizenship Evidence**
+
+ICE's field deployment of Mobile Fortify — a smartphone biometric tool querying a 1.2-billion-image facial recognition database — has been used more than 100,000 times as of January 2026, according to a lawsuit filed by the State of Illinois and the City of Chicago. The lawsuit documents a critical enforcement posture: ICE officials told Congress that a biometric match through Mobile Fortify constitutes a "definitive determination" of non-citizen status, and that agents may "ignore evidence of American citizenship — including a birth certificate — if the app indicates otherwise."
+
+The tribal-specific danger: Mobile Fortify queries the Automated Biometric Identification System (IDENT), which contains immigration-sourced biometric data. Tribal members who have interacted with any federal system that cross-references IDENT — including border crossing records, tribal gaming compact databases, or historic BIA enrollment biometrics — face erroneous match risk. ICE has confirmed it retains all biometrics collected through Mobile Fortify, including data from U.S. citizens, for 15 years without a warrant requirement. This creates a de facto interior surveillance registry with no tribal carve-out.
+
+Since Trump signed EO 14160, multiple tribal members have been stopped and questioned by ICE agents on suspicion of being undocumented. No DHS guidance or training on tribal ID recognition has been issued in response to senators' formal requests.
+
+Source: [Biometric Update — ICE/CBP biometric surveillance dragnet (Jan 2026)](https://www.biometricupdate.com/202601/lawsuit-casts-new-light-on-ice-cbps-expanding-biometric-visual-surveillance-dragnet); [Mobile Fortify — Wikipedia](https://en.wikipedia.org/wiki/Mobile_Fortify); [NARF — Native Americans and Immigration Enforcement Know Your Rights](https://narf.org/citizenship-immigration-2025/); [Vanderbilt Law School — Eyes Everywhere: ICE's Expanded Use of Surveillance Technologies](https://law.vanderbilt.edu/eyes-everywhere-ices-expanded-use-of-surveillance-technologies/)
+
+**Pivot 3: Medicaid/SSA Administrative Data Sharing as Citizenship Verification Infrastructure**
+
+A July 2025 data exchange agreement between CMS (Centers for Medicare & Medicaid Services) and ICE established access for immigration enforcement to the personal data of Medicaid enrollees, including names, addresses, Social Security numbers, and claims history. An injunction limited sharing to "basic biographical, location and contact information" for individuals confirmed as undocumented; as of January 5, 2026, HHS resumed sharing within those parameters.
+
+The SAVE Act (Safeguard American Voter Eligibility Act), pending in the Senate, compounds this mechanism. The SAVE Act requires documentary proof of citizenship for voter registration, but the tribal IDs it nominally accepts must include "place of birth" — a field no current tribal ID includes. On the Navajo Nation (420,000 enrolled members), many residents lack physical addresses, requiring GPS coordinate submission. More than 3,000 ballots were rejected at tribal precincts in Arizona during the 2024 election under pre-SAVE procedures.
+
+The compound risk: Medicaid enrollment data + SAVE Act voter registration challenges create a two-step administrative exclusion mechanism. A tribal member enrolled in Medicaid who cannot produce a SAVE Act-compliant birth certificate or tribal ID with a place-of-birth field faces simultaneous administrative challenges to healthcare eligibility and voter registration — neither of which requires a SCOTUS ruling to execute. The Navajo Nation Council unanimously passed a resolution opposing the SAVE Act in April 2026.
+
+Source: [KFF — Medicaid Data Sharing Agreement with ICE](https://www.kff.org/immigrant-health/potential-implications-of-the-new-medicaid-data-sharing-agreement-between-cms-and-ice/); [Federal News Network — HHS authorized to resume Medicaid data sharing](https://federalnewsnetwork.com/litigation/2026/01/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/); [NPR/WSIU — Navajo Nation slams SAVE Act](https://www.wsiu.org/politics-elections/2026-04-09/its-going-to-be-chaos-on-rural-navajo-nation-tribal-leaders-slam-voter-id-bill)
+
+**Pivot 4: Commercial Location Data and Penlink Subscription**
+
+ICE's September 2025 subscription to Penlink — a commercial data analysis platform aggregating mobile phone location data — provides access to location histories without a warrant. This capability enables surveillance of geographic patterns consistent with birth tourism (repeated travel to hospital areas, extended stays near maternity facilities by foreign-national phone numbers) and, by logical extension, the movement of tribal members near reservation borders in enforcement-priority areas.
+
+The Biometric Update's January 2026 analysis documented that ICE's expanded use of commercial location data, combined with Mobile Fortify field deployment, constitutes "a biometric feedback loop" in which facial recognition, location data, and immigration database cross-checks create continuous interior surveillance infrastructure targeting any population designated as enforcement-priority. Tribal members near reservation boundaries in states with active ICE operations — particularly Arizona, New Mexico, and South Dakota — face the same surveillance infrastructure as any other targeted population.
+
+Source: [Biometric Update — Data, quotas, and biometric surveillance reshaping immigration enforcement](https://www.biometricupdate.com/202601/data-quotas-and-biometric-surveillance-are-reshaping-us-immigration-enforcement)
+
+**Pivot 5: State-Level ID Challenges and Birth Certificate Authenticity Disputes**
+
+The Birth Tourism Initiative's operational methodology — visa application review, medical record cross-checks, network analysis — creates a precedent for administrative challenges to documentary citizenship evidence. If a birth certificate was issued at a hospital identified in a Birth Tourism Investigation as a maternity tourism facility, the birth certificate itself becomes a disputed document. ICE's congressional testimony that Mobile Fortify matches override birth certificate evidence establishes the legal posture: documentary citizenship is contestable; biometric determination is definitive.
+
+For tribal members born in the same hospital facilities now subject to birth tourism investigation, this creates a class of birth certificates flagged for additional scrutiny regardless of parental status. The enforcement infrastructure does not require the SCOTUS ruling to go a specific direction — it only requires the continued deployment of tools already in the field.
+
+**Enforcement Pivot Threat Level Assessment (as of May 21, 2026)**
+
+| Mechanism | Current Status | Tribal-Specific Risk | Likely Post-Barbara Trajectory |
+|---|---|---|---|
+| Birth Tourism Initiative | Active (April 2026) | Low direct, moderate indirect (hospital birth record cross-referencing) | Expansion to criminal prosecution of facilitators |
+| Mobile Fortify biometric override | Active (100,000+ uses) | High — no tribal carve-out, no recognition guidance | Continued deployment; no policy change expected |
+| Medicaid/SSA data sharing | Active (resumed Jan 2026) | Moderate — affects tribal Medicaid enrollees | Congressional SAVE Act vote will determine scope |
+| Commercial location data (Penlink) | Active (Sept 2025) | Moderate — border area tribes exposed | Continued subscription; no Fourth Amendment barrier currently |
+| Birth certificate authenticity disputes | Framework established | Moderate — hospital overlap risk | Expansion if Birth Tourism Initiative yields prosecutions |
+
+---
+
+### Section 2: Tribal Citizenship Admin Law Defense — Blood Quantum and the Administrative Escalation Threat
+
+The administration's legal theory in Trump v. Barbara contains an embedded threat to tribal citizenship that does not require a SCOTUS ruling to actualize: the position that tribal membership is a separate sovereign allegiance, not a constitutional citizenship basis, opens the door to administrative escalation that uses federal recognition criteria — blood quantum codification — as a mechanism for restricting tribal citizenship and, by extension, tribal political power.
+
+**The Blood Quantum Mechanism**
+
+Blood quantum — a fractional measure of "Indian blood" — was introduced by the federal government in the Dawes Act era (1887) as a tool to restrict tribal citizenship and reduce treaty obligations. The federal government mandated blood quantum requirements as conditions of federal recognition; 70% of federally recognized tribes currently use some blood quantum threshold for enrollment, often because their constitutions adopted during the Indian Reorganization Act era (1934) required it.
+
+The administrative escalation threat runs through the federal recognition process: if the Interior Department or BIA were to administratively redefine federal recognition criteria to require minimum blood quantum thresholds — using the Indian Citizenship Act's language ("all non-citizen Indians born within the territorial limits") as the trigger for reconsidering what "Indian" means — it could reduce the population eligible for Indian Citizenship Act protection without requiring either SCOTUS approval or congressional authorization. The IRA-era tribal constitutions that incorporated blood quantum requirements were federally mandated conditions, not tribal choices; the federal government cannot retroactively reduce their own treaty obligations by redefining who is "Indian" for purposes of a statute they wrote.
+
+**Why the Callais Victory Matters Here (and Why It Was Mischaracterized in Earlier Research)**
+
+The task brief references "Callais v. Stieda" as a tribal citizenship redistricting victory. This requires a factual correction important for accurate distribution: Louisiana v. Callais (April 29, 2026) was not a tribal sovereignty victory. It was a decision that gutted VRA Section 2's discriminatory-effects standard, setting back tribal redistricting cases significantly. The Montana SB 490 victory (Western Native Voice v. Montana, May 11, 2026) is the actual post-Callais tribal voting rights win — a state constitutional challenge that blocked a law eliminating Election Day registration hours disproportionately used by Native voters.
+
+The administrative law defense for tribal citizenship is not grounded in Callais. It is grounded in three separate frameworks:
+
+**Framework 1: ISDEAA Self-Determination Contract Rights as Citizenship-Adjacent Protections**
+
+Under ISDEAA, over 400 tribes administer federal programs directly. Those compact contracts explicitly tie service eligibility to tribal membership. If the federal government were to challenge citizenship documentation requirements by redefining who qualifies as a "tribal member" for ISDEAA purposes, tribes have a direct contractual cause of action: the Secretarial Amount calculation is based on the enrolled membership population, and any administrative redefinition of "tribal member" that reduces the Secretarial Amount is a unilateral modification of a binding federal contract.
+
+**Framework 2: Trust Duty as a Floor on Administrative Citizenship Determination**
+
+The federal trust relationship is a fiduciary obligation. Fiduciaries cannot self-deal: the federal government cannot reduce its own treaty obligations by administratively narrowing the beneficiary class without tribal consent and explicit congressional authorization. Any BIA action that purported to redefine tribal membership eligibility for citizenship purposes — without tribal government consent and without an act of Congress — would be cognizable as breach of fiduciary duty in the Court of Federal Claims.
+
+**Framework 3: APA Arbitrary-and-Capricious Review of Enrollment Decisions**
+
+If the BIA or Interior were to issue rules or policy memoranda affecting federal recognition criteria or blood quantum standards, those rules would be subject to APA arbitrary-and-capricious review. The GAO's January 2026 report on BIA workforce reductions documented that the agency cannot demonstrate cost savings, has created "critical gaps" in service delivery, and lacks an impact assessment for its reorganization decisions. An agency that cannot document the basis for major administrative changes fails arbitrary-and-capricious review under the Motor Vehicle Manufacturers standard. Underfunded BIA = better APA defendant: the same incapacity that weakens the BIA's administrative function also weakens its ability to defend administrative decisions against APA challenge.
+
+**The Turtle Mountain v. Howe Post-GVR Defense Model**
+
+The Turtle Mountain GVR requires the Eighth Circuit to reconsider the private right of action under Section 2 in light of Callais. The Eighth Circuit's prior holding — that private plaintiffs cannot enforce Section 2 — was vacated, but not reversed. The defense strategy for tribes now involves two simultaneous tracks:
+
+1. Preserve the possibility that the Eighth Circuit, on remand, rules more favorably — Justice Jackson's dissent established that Callais does not address private enforceability, which is the argument tribal litigants must make on remand. Briefing should front-load the doctrinal mismatch argument: Callais narrowed the substantive standard, not the enforcement mechanism.
+
+2. Develop parallel state constitutional claims in Eighth Circuit states (North Dakota, South Dakota, Minnesota) using the Montana SB 490 model. These state-level claims survive the federal VRA erosion regardless of how the Eighth Circuit rules on remand. North Dakota's constitution has its own equal protection guarantee; the question is whether an underfunded post-DOGE North Dakota government can be shown to have violated it through procedural shortcuts in redistricting.
+
+**Advocacy Argument: The "What Congress Gave, Congress Can Take" Danger**
+
+The most important advocacy framing for post-Barbara distribution is not the ruling itself. It is the warning the ruling creates: Sauer's position establishes that the executive branch's lawyers believe tribal citizenship is a statutory gift from Congress rather than a constitutional right. That argument fails in Trump v. Barbara, but it is now in the official record. Every future administration that wants to restrict tribal voting rights has a DOJ brief to cite.
+
+The affirmative advocacy response must be preemptive: an Indian Citizenship Act Reaffirmation Amendment establishing that tribal citizenship under the 1924 Act is an implementation of the Fourteenth Amendment's guarantee, not a statutory alternative to it. Pre-drafted legislation should be ready for Senate Indian Affairs Committee introduction within 72 hours of the ruling's release.
+
+---
+
+### Section 3: BIA Reorganization as Litigation Window — Updated Context
+
+The GAO's January 2026 report (GAO-26-108673) on BIA workforce reductions documents specific findings that strengthen litigation claims:
+
+- BIA has lost 13% of its total workforce since January 2025; the Office of the Assistant Secretary for Indian Affairs lost 27%; the Pacific Regional Office lost 29%; Alaska Regional Office lost 22%; Southern Plains lost 26%
+- GAO found that staffing cuts have "caused delays in carrying out work, left regions and agencies with critical gaps, an exacerbation of previously identified issues with lack of sufficient workforce capacity"
+- BIA officials told GAO in December 2025 there were "no plans to reorganize or further reduce the workforce" — but tribal leaders simultaneously reported at congressional hearings that a reorganization plan involving deeper cuts was being drafted
+- The reorganization has proceeded without tribal consultation — a violation of Executive Order 13175 obligations that have not been formally revoked
+- BIA cannot demonstrate that any of these workforce reductions are producing cost savings — the agency cannot account for whether the functions performed by terminated staff are being performed by anyone else
+
+**Litigation Windows Created by BIA Reorganization**
+
+The 13% workforce loss and the documented "critical gaps" create three specific, ripe litigation windows:
+
+**Window 1 — Probate function failure**: BIA's Office of Hearings and Appeals probate division handles intestate heirship determinations for tribal trust land. When offices close, probate determinations stop. Trust land with unresolved heirship cannot be developed, leased, or sold. Tribes whose trust land title is frozen due to BIA probate office closures have a ripe breach-of-trust claim in the Court of Federal Claims. The claim does not require demonstrating intent — it requires documenting the service failure and the resulting title freeze. The August 2026 scheduled closure of the Ashland, Wisconsin BIA office (serving all 11 Wisconsin tribes) creates a specific pre-closure advocacy hook.
+
+**Window 2 — ISDEAA Section 110 compact funding claims**: If any tribe's FY2026 compact funding has been reduced below the Secretarial Amount (what it would cost the federal government to administer the same program directly), a statutory cause of action exists under ISDEAA Section 110. No tribe has yet filed this claim for FY2026 reductions. The statutory mechanism is ripe; the barrier is documentation. Native American Finance Officers Association (NAFOA) members are the best-positioned to document the Secretarial Amount calculation for their specific compacts.
+
+**Window 3 — Arbitrary administrative action**: An agency that cannot justify its reorganization decisions, cannot demonstrate cost savings, and acts without tribal consultation fails APA review under the standard established in Motor Vehicle Manufacturers Association v. State Farm (1983). The GAO's documented finding that BIA cannot account for the impact of its workforce reductions is the foundation of this claim. The weaker the BIA's administrative record, the stronger the APA arbitrary-and-capricious claim. This is the inverse of the normal litigation dynamic: administration neglect strengthens the plaintiff's hand.
+
+**BIA Reorganization Timeline and Litigation Calendar**
+
+| Date | Event | Litigation Implication |
+|---|---|---|
+| January 2025 | BIA begins DOGE-directed workforce reductions | Staffing loss accumulation begins |
+| March/April 2026 | BIA reorganization plan reported without tribal consultation | EO 13175 violation trigger; no published plan |
+| April 2026 | GAO-26-108673 released | Documents "critical gaps," no cost-savings evidence |
+| May 2026 | Office of the Assistant Secretary for Indian Affairs at -27% | Probate/trust function impaired |
+| August 2026 | Ashland, Wisconsin BIA office scheduled closure | 11-tribe impact; advocacy and litigation window |
+| Fall 2026 | FY2027 Interior appropriations markup | Treaty obligation budget floor amendment window |
+| Late 2026 | Post-GVR Eighth Circuit briefing in Turtle Mountain | Private right of action briefing deadline |
+
+---
+
+### Section 4: Updated Contact List for Tribal Sovereignty Organizations
+
+*For Phase 2 Tier 1 distribution. All contacts confirmed as of May 2026.*
+
+| Organization | Role | Contact | Priority |
+|---|---|---|---|
+| **Native American Rights Fund (NARF)** | Primary litigation; Turtle Mountain, Montana voter reg, tribal citizenship | vote@narf.org \| (303) 447-8760 \| sct.narf.org | Tier 1 |
+| **National Congress of American Indians (NCAI)** | 574-nation umbrella; General Counsel Lennie Fineday (tribal citizenship); emergency resolution capacity | policy@ncai.org \| (202) 466-7767 | Tier 1 |
+| **Native News Online** | 500,000-reader tribal media; editorial infrastructure for Trump v. Barbara response | editorial@nativenewsonline.net | Tier 1 |
+| **Western Native Voice** | Montana litigation; post-Callais SB 490 win (May 11) | westernnativevoice.org/contact | Tier 1 |
+| **Four Directions** | SD/MT tribal voting rights litigation and organizing | fourdirectionsvote.com/contact | Tier 1 |
+| **Native American Finance Officers Association (NAFOA)** | ISDEAA compact budget documentation for Section 110 claims | nafoa.org | Tier 1 (BIA litigation) |
+| **Campaign Legal Center** | Active in Turtle Mountain; post-Callais Section 2 strategy | campaignlegal.org/contact | Tier 2 |
+| **Brennan Center for Justice** | Amicus in Barbara; gateway to mainstream democratic reform funders | brennancenter.org | Tier 2 |
+| **Democracy Docket** | Tracks 28 Callais-derailed lawsuits; tribal coverage | democracydocket.com | Tier 2 |
+| **Senate Indian Affairs Committee** | Primary congressional target; hearing request on Indian Citizenship Act reaffirmation | senate.gov/committees/indian-affairs | Tier 3 (post-ruling) |
+| **ASU Indian Legal Program (Robert Miller)** | Leading academic on Elk v. Wilkins; oral argument commentary | law.asu.edu Indian Legal Program | Tier 3 (academic validation) |
+| **Prof. Bethany Berger (U. Iowa Law)** | Amicus brief co-author; federal Indian law scholar | law.uiowa.edu | Tier 3 (academic validation) |
+| **Navajo Nation Attorney General's Office** | Largest tribal nation; SAVE Act resolution passed April 2026 | navajonationcouncil.org | Tier 2 (SAVE Act framing) |
+| **Indian Country Today** | National tribal media; correspondent coverage of Barbara and Callais | editor@indiancountrytoday.com | Tier 1 (media) |
+
+*v3 supplement added: May 21, 2026 — General Research Agent deep-research pass. Sections cover: DOJ/ICE surveillance pivot pathways (5 mechanisms), tribal citizenship admin law defense theory (3 frameworks), BIA reorganization litigation windows (3 windows + calendar), and updated Tier 1/2/3 distribution contacts.*
