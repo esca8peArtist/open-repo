@@ -1,5 +1,75 @@
 # Work Log
 
+## Session 1461 — EXPLORATION QUEUE EXECUTION: SEEDWARDEN PHASE 3 CRITICAL PATH + OPEN-REPO PHASE 5.1 VERIFICATION (May 21, 12:55–14:15 UTC)
+
+**Date**: May 21, 2026
+**Status**: Complete — 2 parallel agents completed; critical bug found in open-repo; Phase 3 timeline ready for May 30 gates
+
+**Session Summary**:
+Orientation confirmed 4 active unresolved blocks (SSH critical deadline May 22 13:30 UTC, signal log synthesis deadline May 21 19:00 UTC). Executed two high-value Exploration Queue items: (1) seedwarden Phase 3 Critical Path Analysis → production-ready timeline for May 30 decision gates, (2) open-repo Phase 5.1 MVP verification → **CRITICAL BUG FOUND** in zim_writer.py config_indexing() call ordering (HIGH impact on full-text search, requires 2-line fix before merge approval).
+
+**Actions taken**:
+1. **Block verification** (5 min): Confirmed all 4 blocks remain active (no new resolutions)
+   - resistance-research: signal log 17 [fill] templates unfilled (synthesis deadline 19:00 UTC ≈ 5.5h remaining)
+   - stockbot: SSH auth failing to Jetson (critical deadline May 22 13:30 UTC ≈ 23h remaining)
+   - cybersecurity-hardening: VeraCrypt restart pending
+   - mfg-farm: Test print pending
+2. **Spawned 2 parallel subagents** (12:55 UTC):
+   - seedwarden agent → Phase 3 Critical Path & Gantt timeline
+   - general-purpose agent → open-repo Phase 5.1 MVP verification + fix identification
+3. **Both agents completed** (14:15 UTC — 80-minute turnaround)
+
+**Key Deliverables**:
+
+**Seedwarden**:
+- ✅ `phase-3-medicinal-herbs-critical-path.md` v7.0 (5,600 words, supersedes v6.0)
+  - Zero-float critical path from May 30 decisions → August 3 full launch
+  - 8 sections + 2 appendices with risk scoring matrix (11 risks identified)
+  - **New finding**: AHG peer reviewer is highest-severity pre-sprint risk (Score 6)
+  - Three May 30 decision gates clearly defined (scope, Goldenseal sourcing, Canva palette)
+  - **Recommended path**: Option C (3-bundle Women's Health+Respiratory+Sleep, 36–44 hours) + Path 2 Wikimedia CC Goldenseal ($0 cost)
+- ✅ `phase-3-gantt-timeline.csv` (75 rows, full critical path mapping June 22–July 13)
+  - 19 pre-sprint rows (May 21–June 21) with 3 decision gates + peer reviewer critical path
+  - 44 sprint rows with all 3 tracks (writing, design, photography)
+  - Resource summary: 43.4h Week 1, 35h Week 2, 29.9h Week 3, 108.3h total sprint
+
+**open-repo** — **🚨 CRITICAL BUG FOUND** 🚨:
+- ✅ `phase-5-implementation-verification-final.md` (1,400+ words)
+  - **CRITICAL BUG**: `creator.config_indexing()` call is in wrong location in zim_writer.py line 835
+    - WRONG: Inside `_apply_metadata_to_creator()` (called AFTER `set_mainpath()`)
+    - CORRECT: Must be called BEFORE `set_mainpath()` per libzim docs
+    - **Impact**: HIGH — Xapian full-text search indexing may fail; users cannot search offline
+    - **Fix**: 2-line move (5 minutes to apply)
+  - Full code audit: 88/88 baseline tests passing ✅
+  - libzim 3.9.0 + Python 3.11.2 confirmed compatible
+  - Risk assessment: MEDIUM → LOW after critical fix
+  - Overall: READY FOR MERGE pending 2-line fix + re-verify tests
+- ✅ `phase-5-implementation-checklist-final.md` (1,100+ words)
+  - **Critical pre-checklist**: Step-by-step instructions to apply the config_indexing() fix
+  - 6 phases of pre-deployment verification (2-3 hours total)
+  - Hour-by-hour breakdown with completion gates
+
+**Files committed**: 4 new files (seedwarden ×2, open-repo ×2) to master
+
+**Critical path update**:
+- **May 21 19:00 UTC (~5.5h remaining)**: Synthesis execution — BLOCKED if signal log unfilled
+- **May 22 13:30 UTC (~23h remaining)**: SSH critical deadline for Lever B config
+- **May 22 20:00 UTC (~32h remaining)**: Checkpoint execution (fully autonomous)
+- **May 25–26**: open-repo Phase 5.1 MVP merge approval (pending critical fix application)
+- **May 30**: seedwarden Phase 2 launch + Phase 3 decision gates
+
+**Immediate user action items**:
+1. 🚨 **FILL SIGNAL LOG by 19:00 UTC today** (May 18-21 response data) — synthesis BLOCKED without this
+2. 🔴 **Apply open-repo critical fix** (zim_writer.py line 835, 2-line reorder) — before merge approval
+3. 🔴 **SSH fix by May 22 13:30 UTC** (add orchestrator key OR manually run 5-min config fix) — critical deadline for Lever B
+
+**Next autonomous milestones** (pending user action):
+- May 21 19:00 UTC: Synthesis execution IF signal log filled → immediate Phase 2 activation if STRONG/MODERATE
+- May 22 20:00 UTC: Checkpoint execution (fully autonomous)
+- May 25–26: User merge decision on open-repo Phase 5.1 MVP (ready post-fix)
+
+---
+
 ## Session 1459 — CRITICAL ESCALATION: Signal Log Unfilled, Synthesis Blocked (May 21, 11:35 UTC, ORCHESTRATOR)
 
 **Date**: May 21, 2026

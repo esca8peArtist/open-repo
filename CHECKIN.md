@@ -1,3 +1,49 @@
+## Session 1461 — EXPLORATION QUEUE EXECUTION: PHASE 3 TIMELINE + PHASE 5.1 CRITICAL BUG AUDIT (May 21, 12:55–14:15 UTC)
+
+**Status**: 🔴 **CRITICAL: SIGNAL LOG UNFILLED** (17 templates, due May 21 19:00 UTC = ~4.5h) | 🔴 **SSH AUTH CRITICAL** (May 22 13:30 UTC deadline) | 🚨 **OPEN-REPO CRITICAL BUG FOUND** (zim_writer.py config_indexing() call order) | ✅ **SEEDWARDEN PHASE 3 TIMELINE READY** (May 30 gates fully planned) | 🟢 **SYNTHESIS STAGED** (May 21 19:00 UTC) | 🟢 **CHECKPOINT STAGED** (May 22 20:00 UTC)
+
+**Work accomplished**:
+1. ✅ Verified 4 active blocks remain unresolved (no new user action)
+2. ✅ **Spawned 2 parallel Exploration Queue agents** (Item 5 + Item 6):
+   - seedwarden: Phase 3 Critical Path & Gantt Timeline → **COMPLETE**
+   - open-repo: Phase 5.1 MVP Verification & Critical Bug Audit → **COMPLETE + BUG FOUND**
+3. ✅ Updated WORKLOG.md, PROJECTS.md (seedwarden, open-repo) with Session 1461 findings
+4. ✅ All 4 files committed to master
+
+**Critical findings**:
+- **🚨 open-repo Phase 5.1 MVP**: HIGH-impact bug found in zim_writer.py line 835 — `creator.config_indexing()` is in WRONG location. **Impact**: Xapian full-text search indexing FAILS. **Fix**: 2-line reorder (5 minutes). **Status**: READY FOR MERGE pending critical fix + test re-verify.
+- **seedwarden Phase 3**: Critical path timeline complete (v7.0, 5,600 words). **Key finding**: AHG peer reviewer recruitment is highest-severity pre-sprint risk (June 8 outreach deadline needed for 6-week response cycle). **Recommended path**: Option C (3-bundle, 36–44 hours) + Path 2 Goldenseal sourcing ($0 cost). **Three May 30 decision gates** clearly defined with quantified options.
+
+**Immediate user action items** (by priority):
+1. 🔴 **FILL SIGNAL LOG by May 21 19:00 UTC** (~4.5h remaining) — synthesis BLOCKED without May 18-21 response data
+   - Location: `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+   - Then execute: `cd projects/resistance-research && uv run python synthesis-execution-monitor.py`
+2. 🚨 **Apply open-repo critical fix** (before May 25-26 merge approval):
+   - File: `app/services/export/zim_writer.py` line 835
+   - Fix: Move `creator.config_indexing()` call BEFORE `set_mainpath()`
+   - Time: 5 minutes to apply, 2 minutes to verify tests
+   - Documentation ready: `phase-5-implementation-verification-final.md` + checklist
+3. 🔴 **SSH fix by May 22 13:30 UTC** (Lever B HMM config critical deadline)
+   - Option A: Add orchestrator public key to Jetson authorized_keys
+   - Option B: SSH manually and run 5-minute config fix (scripts ready in BLOCKED.md)
+
+**Next autonomous milestones** (pending user action):
+- **May 21 19:00 UTC** (4.5h): Synthesis execution IF signal log filled → Phase 2 launch if STRONG/MODERATE
+- **May 22 13:30 UTC** (24h): SSH auth deadline for Lever B testing
+- **May 22 20:00 UTC** (32h): Checkpoint execution (fully autonomous)
+- **May 25–26**: open-repo Phase 5.1 MVP merge approval (pending critical fix application)
+- **May 30**: seedwarden Phase 2 launch + Phase 3 decision gates
+
+**Session 1461 summary**:
+- ✅ High-value Exploration Queue work executed (2 parallel agents, 80-minute turnaround)
+- ✅ Critical bug found and audit completed (open-repo Phase 5.1)
+- ✅ Phase 3 timeline ready for May 30 user decision gates (seedwarden)
+- 🔴 Critical path: signal log fill (4.5h) → synthesis 19:00 UTC → open-repo fix (before May 25) → SSH fix (by May 22 13:30 UTC) → checkpoint May 22 20:00 UTC
+
+**Usage**: Sonnet 0.3% (continuing from Session 1460 budget); parallel agent work efficient (80 minutes for 2 major audit/planning deliverables)
+
+---
+
 ## Session 1460 — EXPLORATION QUEUE REFRESH + CRITICAL ESCALATION CONFIRMATION (May 21 11:49 UTC)
 
 **Status**: 🔴 **CRITICAL: SIGNAL LOG UNFILLED** (17 templates, due 19:00 UTC = ~7h) | 🔴 **SSH AUTH CRITICAL** (May 22 13:30 UTC = ~26h) | ✅ **EXPLORATION QUEUE REFRESHED: Items 19-21 added** | ⏰ **SYNTHESIS STAGED: May 21 19:00 UTC** | ⏰ **CHECKPOINT STAGED: May 22 20:00 UTC**
