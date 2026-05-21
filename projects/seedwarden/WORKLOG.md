@@ -4,6 +4,56 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path Analysis — May 21, 2026
+
+**Task**: Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis. Exploration Queue item, ~3 hours.
+Scope: (1) five-bundle selection finalization with supplier lead-time analysis and tier-1/tier-2 decision matrix, (2) writing production schedule with daily breakdown across 3 weeks, (3) Canva design production timeline with float analysis, (4) photography staging with decision matrix and pre-sprint track, (5) upload sequence with five launch gates, (6) risk matrix with contingency triggers.
+
+**Files read before writing**:
+- `phase-3-medicinal-herbs-etsy-listings.md` — bundle species, SKUs, pricing, photo sequence briefs
+- `phase-3-medicinal-herbs-sourcing-guide.md` — supplier contacts, lead times, photo sourcing paths, FGV verification
+- `phase-3-medicinal-herbs-content-outline.md` — word counts per bundle (3,500–3,800), development hour estimates (64–74 raw; 56–66 adjusted), shared-species list
+- `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v5.0) — existing critical path document to supersede
+- `phase-3-medicinal-herbs-critical-path.md` (v6.0) — most recent version reviewed
+- `PHASE_3_GANTT_TIMELINE.csv` — existing 71-row Gantt, confirmed production-ready
+- `phase-3-assets/canva-mockup-briefs/phase-3-canva-mockup-brief.md` — confirmed Phase 2 templates available
+- `WORKLOG.md` — prior session entries
+
+**Work performed**:
+
+**`PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` — updated to v6.0 (8,678 words)**:
+
+- Executive Summary: Both launch gates confirmed CLEARED (forager cohort 21.3% vs. >20% gate; native plants 2.24% vs. >1.5% gate). Three May 30 decisions flagged. Option C (3-bundle) recommended.
+- Critical path map: zero-float sequence from May 30 decisions through August 3 full launch
+- Float summary table: writing is binding constraint (56–66 hrs, 2 float days); design (14 hrs, 3–14 days float); photography (18 hrs pre-sprint, 5–14 days float)
+- Section 1: All 5 bundles confirmed production-locked. Species map with SKUs, prices, upload targets. Tier-1 vs. Tier-2 decision matrix. Option A/B/C time-budget comparison table.
+- Section 2: Three-tier supplier timeline. Tier 1 (June 8 zero-float): Goldenseal (CITES Appendix II, Path 1/Path 2 decision) + Black Cohosh (UpS At-Risk). Tier 2 (June 15): Elderberry + Mountain Rose Herbs ($93–141 dried herbs, all 12 active species). Tier 3 (June 22): 7 species with CC photo fallbacks confirmed. Budget summary: Path 1 $255–408, Path 2 $233–371.
+- Section 3: Writing schedule with day-by-day breakdown for all 22 sprint days. Week 1 (June 22–28): Women's Health 3,800w + Respiratory 3,600w, 31 writing hours. Week 2 (June 29–July 5): Immunity 3,800w + Sleep 3,500w, 28 writing hours. Week 3 (July 6–13): Digestive 3,600w + FTC review + SEO pass + 2 uploads, 14 writing hours. Pace gate June 24 EOD (2,500w WH). Revision buffers 1.5–2 hrs per bundle. Total sprint: ~108 hours across all tracks.
+- Section 4: Canva design timeline. 14 hours total, all parallel. Production palette confirmed (Deep Burgundy #8B3E3E, Sage Green #6B8E6F, Apothecary Gold #D4AF37, Clinical Cream #F9F5F0, Muted Lavender #9B8BA0, Dark Charcoal #2C2C2C). Replaces Herb Brown #6B4F35 from May 9 brief. Design lock July 3 EOD. 10-day float insight confirmed.
+- Section 5: Photography staging. 12-day float insight confirmed. Pre-sprint track June 3–21 (18 hrs total). In-sprint sessions June 23–26 (10 hrs, secondary to writing). Decision matrix: CC stock is primary source for all shot types at launch. v1.1 upgrades for live specimens post-sprint.
+- Section 6: Upload sequence. All 5 launch gates documented with pass/fail conditions. Kit.com email sequence triggers mapped per upload milestone. Conditional fallbacks A and B documented.
+- Section 7: Risk matrix (8 risks scored P×I). Supplier delay recovery 4-step sequence. Writing bottleneck resolution order (4 steps). Float days summary table.
+- Section 8: Three May 30 decisions with recommendation and consequence-if-deferred.
+- Appendix A: FTC language quick reference (6 do-not-write vs. write-instead pairs; CITES sidebar verbatim; 5 mandatory per-species warnings).
+- Appendix B: Pre-sprint action checklist May 21–June 22 with 16 dated actions and zero-float flags.
+
+**`PHASE_3_GANTT_TIMELINE.csv` — confirmed production-ready (no changes needed)**:
+- 71 rows confirmed present: PRE-SPRINT (14 rows), WEEK 1 (13 rows), WEEK 2 (14 rows), WEEK 3 (13 rows), POST-SPRINT (2 rows), CONTINGENCY (5 rows), RESOURCE SUMMARY (4 rows)
+- All tasks have: start date, end date, duration, dependencies, float days, critical path Y/N, resource hours, status, notes
+- Five milestones confirmed: WH June 29, Resp July 6, Sleep July 13, Immunity July 20, Digestive Aug 3
+
+**Key determinations from this session**:
+- Both launch gates are CLEARED with margin — no blockers to June 22 execution start
+- Writing is the binding constraint on all 22 sprint days; design and photography float on every task
+- Option C (3-bundle: Women's Health + Respiratory + Sleep) is the recommended scope for single writer
+- June 8 is the hard supplier deadline for Goldenseal; Path 2 (Wikimedia CC) is recommended under Option C
+- June 15 is the hard deadline for Elderberry and Mountain Rose Herbs dried herbs (studio session June 17–21)
+- June 24 EOD is the pace gate: Women's Health must be at 2,500 words or Option C activates immediately
+- Practitioner tier ($120–150/bundle) unlocks July 13 when Sleep goes live (3-bundle clinical library minimum)
+- All 14 unique species have verified Wikimedia CC-BY-SA or iNaturalist CC-BY photo coverage for launch
+
+---
+
 ## Seedwarden Agent Session — Phase 2 Analytics & Success Metrics Tracker — May 21, 2026
 
 **Task**: Build production-ready Phase 2 analytics infrastructure. Exploration Queue item, 2-3 hrs.
