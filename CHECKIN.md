@@ -1,4 +1,96 @@
-## Since Last Check-in (Session 1446 — ORCHESTRATOR, May 21 01:52–03:30 UTC) — May 21 Synthesis Readiness + Major Phase 2 Discovery
+## Since Last Check-in (Session 1446 — ORCHESTRATOR, May 21 02:13–TBD UTC) — Exploration Queue Parallel Execution + Domain 58 Framing Correction
+
+**Status**: ✅ **2 EXPLORATION QUEUE ITEMS COMPLETE (parallel agents)** | ✅ **TRUMP V. BARBARA RESEARCH COMPLETE** | ✅ **HERBALIST NETWORK ECOSYSTEM MAPPED FOR PHASE 3** | ✅ **DOMAIN 58 FRAMING CORRECTED** | 🔴 **STOCKBOT SSH DEADLINE: MAY 22 13:30 UTC (36 HOURS REMAINING)** | ⏰ **SYNTHESIS EXECUTION: 17 HOURS AWAY (19:00 UTC)**
+
+---
+
+## 🎯 Work Completed (Session 1446 — May 21 02:13 UTC)
+
+### 1. ✅ Resistance-Research: Trump v. Barbara Rapid-Response Research
+
+**Deliverable**: `trump-v-barbara-rapid-response.md` v2 (7,000+ word supplement)
+
+**Critical Framing Correction** (affects Domain 58 strategy):
+- **Trump v. Barbara is a BIRTHRIGHT CITIZENSHIP case**, not a voting rights case per se
+- Tribal citizenship dimension is real but emerged from admin legal theory (not primary facts)
+- Solicitor General Sauer's argument at oral argument: "tribal Indians' children are not birthright citizens" (statute-derived, not constitutional)
+- Justice Gorsuch exposed this as "the most damaging moment for the government"
+
+**Key Findings**:
+- **Turtle Mountain GVR** (May 19, just 2 days ago): SCOTUS 8-1 decision vacating Eighth Circuit tribal redistricting win, remanded under *Callais*. Jackson dissented. Deliberate multi-circuit erosion cascade confirmed.
+- **Callais-to-Barbara Compound Threat**: *Callais* removes redistricting tools; *Barbara* threatens voting right itself (constitutional foundation)
+- **SAVE Act Compound Threat**: Birth certificate voter registration requirement, no tribal ID shows "place of birth", 3,000+ Navajo ballots rejected in 2024. If *Barbara* validates "tribal citizenship is statutory," SAVE Act becomes disenfranchisement tool.
+- **Three Ruling Scenarios**: (A) Constitutional holding striking EO + affirming tribal citizenship (moderate-high probability), (B) Statutory holding avoiding constitutional question (high probability), (C) EO upheld or citizenship destabilized (very low)
+- **Amici Landscape**: 5 key filings (Indian Law Scholars, Historians, 51 immigrant rights orgs, 217 Dem Congress, 200+ organizations vs. 25 GOP AGs, Citizens United)
+- **Post-Ruling Activation Window**: Hours 0–6 (tribal angle secondary), Days 1–3 (peak media window), Days 3–14 (legislative)
+- **State Victory Model**: Montana SB 490 (May 11) first documented post-*Callais* tribal voting rights victory
+
+**Business Value**: Pre-research complete enables instant Domain 58 distribution within hours of ruling (late June–early July expected). All infrastructure ready for rapid response.
+
+**CORRECTION APPLIED**: PROJECTS.md Domain 58 description updated (line 82) to reflect: birthright citizenship case (not voting rights case), Turtle Mountain GVR May 19 discovery, tribal citizenship secondary thread via admin legal theory
+
+---
+
+### 2. ✅ Seedwarden: Herbalist Network Ecosystem Mapping
+
+**Deliverable**: `HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md` v3.0 (7,200 words, production-ready)
+
+**Complete Ecosystem Mapped**:
+
+| Component | Finding | Business Impact |
+|-----------|---------|-----------------|
+| **Network Directories** | AHG 4K–6K members, NAMA 4 tiers, AANP 7.5K licensed NDs | Cold outreach paths identified, chapter contacts listed |
+| **Community Hubs** | 11 online (r/herbalism 130K), 2 in-person (AHG Symposium Aug 14–16, Wild Indigo June 12–14) | Conversion runs through AHG + HerbMentor + school alumni, not Reddit/Discord |
+| **Top Voices** (25) | John Gallagher/LearningHerbs 269K IG, Mountain Rose 431K, Herbal Academy 875K, Tieraona Low Dog, David Winston | Distribution allies + credibility reviewers identified, podcast pitch window 4–12 weeks |
+| **Publications** (8) | Mountain Rose 100K+, Herbal Academy 100K+, HerbalGram trade publication | Editorial mentions signal credibility; HerbalGram placement goal |
+| **Audience Segments** (5) | Clinical Practitioners (low price sensitivity), Students (curriculum alignment), Wildcrafters (conservation ethics), Ayurvedic/NAMA (cross-system translation), Educators (workshop license model) | Messaging angles per segment, price points clear ($120–$150 bundles = 1 consultation fee for clinicians) |
+| **Cross-Selling** | 4 content white spaces (UpS at-risk status, FTC-compliant therapeutic claims, cultivation-to-use continuity, regional bioregional notes) | Phase 3 differentiator clear; alliance partners identified |
+
+**CRITICAL BLOCKER IDENTIFIED**: One RH (AHG)-level peer reviewer confirmation BEFORE June 22 launch. Single sentence "reviewed by [Name], RH (AHG)" in Etsy listing collapses primary practitioner credibility objection.
+
+**June 1–22 Activation Timeline**:
+- June 1: AHG directory compilation
+- June 8: Affiliate applications (Herbal Academy, LearningHerbs, UpS, Strictly Medicinal, Mountain Rose)
+- June 15: Peer reviewer secured (CRITICAL)
+- June 22: Launch day + AHG directory cold outreach + chapter newsletter submissions
+
+**Business Value**: Phase 3 now has targeting precision (5 segments, messaging angles, influencer contacts, affiliate partnerships, publication windows). Critical success factor identified and actionable by June 15.
+
+---
+
+### 3. ✅ Updated PROJECTS.md (2 changes)
+
+1. **Line 82** (Domain 58): Corrected Trump v. Barbara framing — birthright citizenship case (not voting rights case), added Turtle Mountain GVR May 19, referenced `trump-v-barbara-rapid-response.md` v2 supplement
+2. **Line 713** (Seedwarden Current Focus): Added herbalist network mapping completion (v3.0, 7,200 words), highlighted RH peer review blocker (June 15 deadline), updated June 1–22 activation stack
+3. **Exploration Queue** (lines 952, 957–959): Marked both items COMPLETE with summaries
+
+---
+
+**Summary**:
+
+| Project | Status | Work Complete | Blockers | Next |
+|---------|--------|---|---------|------|
+| resistance-research | ✅ Active | Trump v. Barbara rapid-response research, Domain 58 framing corrected | None (synthesis at 19:00 UTC autonomous) | May 21 19:00 UTC synthesis (autonomous) |
+| seedwarden | ✅ Active | Herbalist network ecosystem complete (7.2K words) | RH peer review by June 15 (actionable by June 8) | June 22 launch readiness (critical peer review blocker identified) |
+| stockbot | 🔴 Blocked | None (parallel agents don't work on blocked projects) | SSH auth failure (deadline May 22 13:30 UTC) | Awaiting user SSH key or manual config fix |
+
+---
+
+**Needs Your Input** (Unchanged from Session 1445):
+
+🔴 **CRITICAL — Before May 22 13:30 UTC (36 hours remaining)**:
+- **Stockbot Lever B activation** — SSH to Jetson and edit `/opt/stockbot/config/active-sessions-2session.json` to activate `hmm_regime_masking: true` (exact commands in BLOCKED.md), OR add orchestrator's public key to Jetson authorized_keys
+
+🟡 **HIGH — Before May 21 10:30 UTC (17 hours remaining)**:
+- **Resistance-research Wave 1 monitoring** — Fill signal log or monitor Gist view counts / inbox replies before May 21 19:00 UTC synthesis
+
+🟡 **MEDIUM — Before May 30 (9 days remaining)**:
+- **Seedwarden Gate 1** — Instagram/TikTok/Pinterest account setup (OVERDUE, needed by May 25 per TRACK_B_SOCIAL_ACCOUNT_CHECKLIST.md)
+- **Seedwarden Phase 3** — Three user decisions by May 30: (1) Sprint scope (Option C recommended), (2) Goldenseal sourcing (Path 2 Wikimedia recommended, $0 cost), (3) Canva palette finalization
+
+---
+
+## Summary: Previous Check-in (Session 1446 — ORCHESTRATOR, May 21 01:52–03:30 UTC) — May 21 Synthesis Readiness + Major Phase 2 Discovery
 
 **Status**: ✅ **MAY 21 SYNTHESIS PREPARATION COMPLETE** | 🟢 **MAJOR DISCOVERY: ALL PHASE 2 DOMAINS PRODUCTION-COMPLETE** | ✅ **PHASE 3 TIMELINE UPDATED V6.0** | 🔴 **STOCKBOT DEADLINE: MAY 22 13:30 UTC (36 HOURS)** | ⏰ **SYNTHESIS EXECUTION: 15 HOURS AWAY (19:00 UTC)**
 
