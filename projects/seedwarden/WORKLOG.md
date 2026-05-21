@@ -4,6 +4,40 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Practitioner Relationship Roadmap + Affiliate Partnership Strategy — May 21, 2026
+
+**Task**: Exploration Queue item — Phase 3–4 practitioner relationship roadmap and affiliate partnership strategy.
+
+**Files produced**:
+- `PRACTITIONER_RELATIONSHIP_ROADMAP.md` (~4,200 words) — 25-influencer roster with Tier 1/2/3 classification, credibility filter assessment, pre-outreach strategy, fresh/dried sourcing decision matrix, 4-window engagement timeline (May 28 – August 13), Phase 4 credibility prep implications, and key metrics tracking table.
+- `AFFILIATE_PARTNERSHIP_MATRIX.csv` — 11 affiliate programs evaluated across commission rate, cookie window, setup cost, setup effort, audience fit, and expected monthly revenue. Recommended Phase 3 implementation: native Etsy coupon code affiliate tracking (zero setup cost). Phase 4 recommendation: Payhip Pro for direct-store affiliate program.
+- `CMARKETING_PARTNERSHIP_OPPORTUNITIES.md` (~2,800 words) — 3-tier co-marketing framework; Tier A targets (Mountain Rose Herbs, LearningHerbs, Herbal Academy); Tier B targets (Strictly Medicinal Seeds, UpS, Chestnut School, functional nutrition, yoga/sleep); Tier C platform plays (Substack, Discord, HerbRally); bundle co-marketing opportunities table; 3 outreach templates.
+
+**Key findings**:
+- **Minimum viable credibility for June 22 launch**: One named RH (AHG) reviewer in product listings. Single highest-leverage pre-launch action. Target: Rosalee de la Forêt, Jade Alicandro, or Jenn Dazey (ND, RH, Bastyr).
+- **Highest-ROI partnership**: LearningHerbs / HerbMentor (John Gallagher) — affiliate ecosystem already operating; audience is highest-fit practitioner learner base in the US. Outreach deadline May 28.
+- **Amazon Associates not recommended for digital guides**: 3% commission, 24-hour cookie, guides not sold on Amazon. Etsy affiliate via Awin (4%, 30-day cookie) is the correct external affiliate path.
+- **Native Etsy coupon code affiliate program** (15% discount code per influencer, 10–20% revenue share paid manually via PayPal) is the recommended Phase 3 implementation — zero setup cost, launches with first influencer agreement.
+- **Mountain Rose Herbs cross-promotion**: No product conflict; their 100K+ email list is the exact Seedwarden buyer profile. Contact marketing@mountainroseherbs.com by June 8.
+- **Phase 4 credibility**: David Winston (AHG RH, *Adaptogens* author) is the key relationship to cultivate in Window 3 (June 22 – July 13) for Phase 4 adaptogen bundle credibility.
+
+**External research performed**:
+- Herbalist influencer follower counts (Influencer Hero, Feedspot top 50 herbal YouTube channels)
+- Amazon Associates commission rates 2025–2026 (affiliatexblocks.com, helpingmerchants.com)
+- Etsy affiliate program via Awin (getlasso.co, poptribe.com, insightagent.app)
+- Mountain Rose Herbs affiliate program terms (mountainroseherbs.com/affiliates)
+- Herbal Academy affiliate program commission rate (theherbalacademy.com/affiliate-program)
+- Payhip built-in affiliate features (payhip.com, help.payhip.com)
+- Gumroad affiliate terms (gumroad.com, affylist.com)
+- ShareASale merchant setup requirements (shareasale.com, shoutmeloud.com)
+- Custom affiliate platforms: Tapfiliate, Rewardful, ShareASale comparison (tapfiliate.com, referralcandy.com)
+- Mary Blue herbalist credentials + followers (@maryblueherbalist Instagram, maryblueherbalist.com)
+- Jess Bergeron credentials + Instagram following (theherbalacademy.com/blog/jess-bergeron)
+- Aviva Romm MD Instagram followers (dr.avivaromm, avivaromm.com)
+- Wellness co-marketing partnership structures (mgmediacreative.com, winsomemarketing.com)
+
+---
+
 ## Seedwarden Agent Session — Phase 4 Adjacent Product Market Research — May 21, 2026
 
 **Task**: Phase 4 adjacent product market research. Exploration Queue item. Decision deadline June 1, 2026; production start July 15, 2026.
