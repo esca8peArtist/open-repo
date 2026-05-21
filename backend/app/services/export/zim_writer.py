@@ -833,6 +833,11 @@ class ZimWriter:
         else:
             # Use real libzim Creator for ZIM file generation
             with Creator(str(self.output_path)) as creator:
+                # CRITICAL: config_indexing() must be called BEFORE set_mainpath() per libzim docs
+                try:
+                    creator.config_indexing(True, self.config.language_iso3)
+                except AttributeError:
+                    pass
                 creator.set_mainpath("index")
                 self._apply_metadata_to_creator(creator)
                 for entry in self._entries:
@@ -951,14 +956,9 @@ class ZimWriter:
 
         This method is called inside the create_zim() Creator context.
 
-        When implemented with the real Creator object:
-            creator.config_indexing(True, self.config.language_iso3)  # Enable Xapian FTS
-            creator.add_metadata("Title", self.metadata.title)
-            creator.add_metadata("Description", self.metadata.description)
-            ... (other metadata calls)
+        Note: config_indexing() is called BEFORE set_mainpath() in create_zim() per libzim docs.
         """
         try:
-            creator.config_indexing(True, self.config.language_iso3)
             creator.add_metadata("Title", self.metadata.title)
             creator.add_metadata("Description", self.metadata.description)
             creator.add_metadata("Language", self.metadata.language)
