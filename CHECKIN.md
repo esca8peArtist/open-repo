@@ -1,3 +1,55 @@
+## Session 1463 — EXPLORATION QUEUE ITEMS 19-21 EXECUTION: POST-EVENT STAGING (May 21, 15:00–15:45 UTC)
+
+**Status**: ✅ **ITEMS 19-21 COMPLETE & COMMITTED** | ⏰ **SYNTHESIS DEADLINE: 3h 15m** (May 21 19:00 UTC, signal log still unfilled) | ⏰ **SSH AUTH DEADLINE: 22h 45m** (May 22 13:30 UTC)
+
+**Work accomplished**:
+1. ✅ **Spawned 3 parallel Exploration Queue subagents** (May 21 15:00)
+   - stockbot subagent → Item 19: Gate 2 execution staging
+   - resistance-research subagent → Item 20: Phase 2 Batch 2 outlines  
+   - seedwarden subagent → Item 21: Geographic expansion + wholesale channels
+2. ✅ **All 3 agents completed within 45 minutes** (May 21 15:45)
+
+**Deliverables committed to master**:
+
+1. **stockbot** — `GATE_2_EXECUTION_STAGING.md` (2,500+ words)
+   - Decision tree keyed to 7 execution metrics (SSH status, observe mode, warmup, hard fail, pass variants, weak, fail)
+   - Three post-PASS paths detailed: Expansion GO (criteria + 30-min execution), Covered-call reconnaissance (optional parallel), Defer (explicit gates)
+   - FAIL rollback section: 6 numbered shell commands, recovery decision tree with 3 sub-options (B1/B2/B3), root-cause diagnostics
+   - Decision matrix covering all 8 outcome branches + 5 blocking dependencies table
+   - **Ready for**: Immediate execution post-May-22-20:00-UTC-checkpoint
+
+2. **resistance-research** — `PHASE_2_BATCH_2_DOMAINS_57_59_OUTLINES.md` (2,800+ words)
+   - Domain 57 (Multilateral Withdrawal): 8-section outline, 4 causal pathways, 5 expert contacts (Koh, Hathaway, Dakwar, SaCouto, Wendt), 15 primary sources, 40–50 hour timeline, Aug 10 advocacy deadline
+   - Domain 59 (Economic Precarity): 8-section outline, cognitive-tunneling multiplier effect framing, 5 expert contacts (Bartels, Desmond, Bivens, Kawashima-Ginsberg, Parrott), 14 primary sources, 50–60 hour timeline, Sept 1 deadline for Nov 3 midterm election
+   - Cross-reference index: Domain 57 ↔ Zones 3 (Youngstown), Domain 59 ↔ multiplicative amplifier for 7 existing domains
+   - **Ready for**: May 23-25 research execution if synthesis outcome is STRONG/MODERATE (Item 5 dependency satisfied)
+
+3. **seedwarden** — Enhanced `TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md` + `TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md` (4,000+ words)
+   - Geographic analysis: Risk assessment with 7 named risks (Health Canada reclassification, MHRA scope, GDPR enforcement, CITES content, Etsy restrictions, FX compression, practitioner overlap). Monitoring frequency and mitigation for each. Recommendation: Canada first (HST simplicity), UK second (VAT audit risk medium), EU third (GDPR manual compliance).
+   - Wholesale channels: Acupuncturist sub-channel (38K LAcs nationally, TCM positioning), midwife sub-channel (13K CNMs, Women's Health framing). Tier 1 partner list: 10 named targets with specific outreach angles and realistic response timelines. Tier 1A (educators/authors): Tieraona Low Dog MD/RH, David Winston RH, Christopher Hobbs PhD. Tier 1B (institutional): Jenn Dazey/Bastyr, Notre Dame program, 7Song/NSOBM. Tier 1C (amplifiers): AHG Education, UPS, Herbal Academy, Shannon Bell PhD/Virginia Tech.
+   - Channel risk assessment: 5 risks with activation thresholds and recovery gates
+   - **Ready for**: June 15 post-launch activation (June 22 Phase 2 launch date)
+
+**Critical path update**:
+1. 🔴 **May 21 19:00 UTC (3h 15m)**: Signal log fill → synthesis execution
+   - If filled + STRONG/MODERATE outcome: Item 5 (Phase 2 Batch 1) activates same-day
+   - If filled + WEAK/TOO_EARLY outcome: Item 5 defers to May 25-28 contingency
+   - If unfilled: Synthesis blocked, Item 5 deferred indefinitely
+2. 🔴 **May 22 13:30 UTC (22h 45m)**: SSH auth fix deadline (Lever B HMM config)
+3. ⏰ **May 22 20:00 UTC (32h 15m)**: Checkpoint execution (autonomous, fully pre-staged)
+4. ✅ **May 23-25**: Item 19 (Gate 2 execution) activates post-checkpoint if outcome available
+5. ✅ **May 23-25 or May 25-28**: Item 20 (Phase 2 Batch 2 research) activates post-synthesis
+6. ✅ **June 1**: Item 21 (geographic expansion outreach) activates
+
+**Immediate user action items**:
+1. 🔴 **FILL SIGNAL LOG by May 21 19:00 UTC** (3h 15m) — May 18-21 response data, 17 templates remain
+2. 🔴 **SSH FIX by May 22 13:30 UTC** (22h 45m) — Lever B HMM config deployment
+3. ✅ **open-repo critical fix** already applied (Session 1462) — ready for merge
+
+**Usage**: 3 parallel subagents completed all work within 45-minute window. Total session duration ~45 min (orientation 10 min + agent dispatch 15 min + completion 20 min).
+
+---
+
 ## Session 1462 — OPEN-REPO PHASE 5.1 CRITICAL BUG FIX + VERIFICATION (May 21, 14:30–14:50 UTC)
 
 **Status**: ✅ **CRITICAL BUG FIXED + VERIFIED** | ⏰ **SYNTHESIS DEADLINE: 4h 10m** (May 21 19:00 UTC, signal log still unfilled) | ⏰ **SSH AUTH DEADLINE: 23h 40m** (May 22 13:30 UTC)
