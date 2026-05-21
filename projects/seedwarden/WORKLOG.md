@@ -4,6 +4,49 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Critical Path v5.0 + Timeline CSV — May 21, 2026
+
+**Task**: Phase 3 medicinal herbs critical path analysis and production timeline. Scope: (1) bundle selection confirmation, (2) writing schedule, (3) Canva design timeline, (4) photography staging, (5) upload sequence, (6) risk analysis. Deliverables: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` updated to v5.0 and new `phase-3-timeline.csv`.
+
+**Files read before writing**:
+- `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v4.0) — prior decision document
+- `phase-3-medicinal-herbs-critical-path.md` (v6.0) — per-bundle writing schedule, FTC mandatory language
+- `medicinal-herbs-candidate-list.md` — 12-species sourcing profiles, margins, conservation status
+- `phase-3-medicinal-herbs-sourcing-guide.md` — photo sourcing paths, supplier contacts, FGV verification
+- `phase-3-medicinal-herbs-gantt-timeline.csv` — 87-task sprint gantt
+- `PHASE_3_PRODUCTION_GANTT.csv` — alternative production gantt (69 tasks)
+- `WORKLOG.md` — prior session entries
+
+**Work performed**:
+
+**Task 1 — `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` upgraded to v5.0**:
+- Retained all v4.0 content (species map, supplier tiers, writing schedule, design timeline, photography staging, upload sequence, risk matrix, float summary, pre-sprint checklist, FTC language, Gantt table)
+- Added new Section 0: Critical Path Map and Float Summary — includes ASCII critical path sequence from May 30 decisions through August 3 Digestive upload; per-track float summary table (writing 2 float days / design 3–14 days / photography 5–14 days); critical path diagnosis; May 30 gate decision table with "consequence if deferred" column
+- Added Appendix C: Accelerated Upload Sequence — conditional on Phase 2 forager cohort exceeding 30% mid-July; maps each bundle's accelerated date and the trigger condition
+- Updated version to 5.0, date to May 21, companion-csv pointer to `phase-3-timeline.csv`
+- Updated footer: added May 30 and June 1 to next review dates; added PHASE_3_PRODUCTION_GANTT.csv as source file
+
+**Task 2 — `phase-3-timeline.csv` created (new file)**:
+- 66-row milestone spreadsheet with columns: Milestone ID, Milestone Name, Phase, Track, Start Date, End Date, Duration (days), Resource, Predecessor IDs, Float (days), Critical Path (Y/N), Gate Date, User Decision Required, Notes
+- Covers all phases: Pre-Sprint (decisions + supplier + photography), Sprint W1/W2/W3 (writing + design + uploads), Post-Sprint (Milestones 4–6), peer review windows, gate checks, risks (5), contingencies (5), resource summaries (5), financial models (3)
+- Critical path tasks flagged Y: D-01, D-02, G-01, G-02, G-03, A-01, W-01 through W-05, W-08 through W-11, DS-07, M-01 through M-06, GC-03, F-01, PS-01
+- User decision required flagged Y: D-01, D-02 (May 30 hard), D-03 (June 15 soft/auto-lock), G-04, W-03 (pace gate trigger)
+- Float days quantified per task; ZERO float tasks called out explicitly
+- Supplier hard deadlines: May 25 (Black Cohosh order — S-03), June 8 (Goldenseal — G-01), June 15 (Elderberry + MRH dried herbs — G-02 + G-03), June 15 (Palette — G-04), June 21 (attribution log — A-01)
+
+**Key determinations from this session**:
+- Writing has 8 hours of structural float (2 float days July 12 and July 13 afternoon) and ZERO float on critical-path writing days D1–D5 (June 22–26)
+- Design has 3–14 days of float on all cover tasks and is NEVER on the critical path
+- Photography is not a launch blocker (all 14 species have verified Wikimedia CC coverage)
+- Supplier Tier 1 decisions must be made by May 30 to enable June 1 supplier contact; only Black Cohosh requires a May 25 order for June sprint Week 1 photography
+- Both launch gates cleared with margin (forager cohort +1.3 pp buffer, native plants +0.74 pp buffer); Fallback B probability assessed as low
+
+**Files modified/created**:
+1. `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` — updated to v5.0
+2. `phase-3-timeline.csv` — created (new file; 66 milestone rows)
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Production Planning — May 20, 2026 (Task 2)
 
 **Task**: Phase 3 unblocking tasks — (1) Critical path analysis v4.0, (2) Herbalist Network Ecosystem Mapping v2.0. Both documents produced as definitive uppercase files for June planning.

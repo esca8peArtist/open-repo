@@ -1,7 +1,7 @@
 ---
 title: "Phase 3 Medicinal Herbs — Critical Path Analysis & Production Timeline"
-date: 2026-05-20
-version: 4.0
+date: 2026-05-21
+version: 5.0
 status: production-ready
 phase: Phase 3 pre-execution
 decision-deadline: May 30, 2026
@@ -9,42 +9,116 @@ execution-window: June 22 – July 13, 2026 (22 calendar days)
 gate-status:
   forager-cohort: CLEARED (21.3%, gate >20%)
   native-plants-conversion: CLEARED (2.24%, gate >1.5%)
-word-count: 3,900+
-supersedes: v3.0 (2026-05-20)
+word-count: 4,800+
+supersedes: v4.0 (2026-05-20)
+companion-csv: phase-3-timeline.csv
 cross-references:
-  - phase-3-medicinal-herbs-gantt-timeline.md
   - phase-3-medicinal-herbs-gantt-timeline.csv
   - phase-3-medicinal-herbs-sourcing-guide.md
   - phase-3-medicinal-herbs-content-outline.md
   - HERBALIST_PRACTITIONER_ECOSYSTEM.md
   - HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md
   - TRACK_B_FINAL_EXECUTION_GUIDE.md
+  - PHASE_3_PRODUCTION_GANTT.csv
 tags: [seedwarden, phase-3, critical-path, production-timeline, medicinal-herbs, decision-support]
 ---
 
 # Phase 3 Medicinal Herbs — Critical Path Analysis & Production Timeline
 
-**Version**: 4.0
-**Prepared**: May 20, 2026
-**Decision deadline**: May 30, 2026
+**Version**: 5.0
+**Prepared**: May 21, 2026
+**Decision deadline**: May 30, 2026 (Track B launches; Phase 3 June supply-chain orders must be authorized)
 **Execution window**: June 22 – July 13, 2026 (22 calendar days)
 **Launch gates**: BOTH CLEARED — forager cohort 21.3% (gate >20%), native plants conversion 2.24% (gate >1.5%)
+**Companion spreadsheet**: `phase-3-timeline.csv` (milestone-level; start date, duration, resource, dependencies, float days, gate dates)
 
 ---
 
 ## Executive Summary
 
-Phase 3 is authorized. Both demand-validation gates are cleared with margin before Phase 2 launches May 30. The June 22–July 13 sprint is feasible for a single writer producing all five bundles at 4–5 focused hours per day; the recommended scope is three bundles (Women's Health + Respiratory + Sleep), which keeps the critical path at 36–44 adjusted writing hours and carries 2 structural float days.
+Phase 3 is authorized. Both demand-validation gates are cleared with margin before Phase 2 launches May 30. The June 22–July 13 sprint is feasible for a single writer producing all five bundles at 4–5 focused hours per day. The recommended scope is three bundles (Women's Health + Respiratory + Sleep), which keeps the critical path at 36–44 adjusted writing hours and carries 2 structural float days.
 
-The binding constraint is writing. At 56–66 adjusted hours for all five bundles, the critical path runs through writing alone: Women's Health complete June 28 → upload June 29 → Respiratory upload July 6–7 → Sleep upload July 13. Design (14 hours) and photography (parallel pre-sprint track) carry 3–14 days of float on every task and do not threaten any launch date under the recommended scope.
+The binding constraint is writing. At 56–66 adjusted hours for all five bundles, the critical path runs through writing alone: Women's Health complete June 28 → upload June 29 → Respiratory upload July 6–7 → Sleep upload July 13. Design (14 hours total) and photography (parallel pre-sprint track, 18 hours total) carry 3–14 days of float on every task and do not threaten any launch date under the recommended scope.
 
-**Three decisions are required by May 30:**
+**Supplier orders for June delivery must be placed before May 30 for two species** (Black Cohosh has a 5–6 week lead time; a May 25 order yields a June 21–28 arrival within sprint Week 1). All other sourcing deadlines fall in June and require no action today.
+
+**Three decisions are required by May 30** and are flagged `[DECISION]` throughout this document:
 
 1. **Sprint scope** — Option A (all 5 bundles, single writer, 5 hrs/day Weeks 1–2), Option B (split between two writers), or Option C (3-bundle priority: Women's Health + Respiratory + Sleep — recommended).
 2. **Goldenseal path** — Order live specimen from Prairie Moon or Strictly Medicinal by June 8, or confirm Wikimedia CC photo path. One path must be logged in WORKLOG.md by June 8.
-3. **Canva palette** — Confirm the six hex codes below by June 15 or they lock automatically.
+3. **Canva palette** — Confirm the six hex codes in Section 4 by June 15 or they lock automatically.
 
 Under Option C (recommended), Immunity and Digestive defer to July 20 and August 3 respectively. The 90-day revenue difference versus Option A closes entirely by September. The practitioner 10-bundle tier ($120–$150) unlocks July 13 when Sleep goes live, meeting the minimum 3-bundle clinical library threshold.
+
+---
+
+## Section 0: Critical Path Map and Float Summary
+
+This section is the single-reference summary for the production critical path. All supporting detail is in Sections 1–8. The companion spreadsheet `phase-3-timeline.csv` contains the full milestone table with start dates, durations, resources, predecessors, float days, and gate dates.
+
+### Critical Path Sequence (Zero-Float Activities Only)
+
+```
+[May 30]  DECISIONS: Sprint scope + Goldenseal path + Palette (user)
+     |
+[June 1]  Black Cohosh order placed — Strictly Medicinal (5–6 wk lead)
+     |
+[June 8]  HARD DEADLINE: Goldenseal order placed OR CC path confirmed
+     |
+[June 15] HARD DEADLINE: Elderberry order + Mountain Rose Herbs dried herbs + Palette decision
+     |
+[June 21] Attribution log complete + Canva brand kit loaded
+     |
+[June 22] SPRINT D1: Women's Health writing begins (700 words — Black Cohosh)
+     |
+[June 24] PACE GATE: WH must be at 2,500 words EOD — if not, activate Option C immediately
+     |
+[June 28] Women's Health PDF export QA complete (3,800 words)
+     |
+[June 29] UPLOAD: Women's Health ($22) — MILESTONE 1
+     |
+[July 2]  Immunity writing complete (Goldenseal cultivation + CITES sidebar)
+     |
+[July 3]  DESIGN LOCK: Digestive cover finalized — no cover changes after EOD
+     |
+[July 5]  Sleep writing complete (3,500 words)
+     |
+[July 6]  UPLOAD: Respiratory ($20) — MILESTONE 2
+     |
+[July 11] Digestive writing complete (3,600 words) + all 5 PDFs export-ready
+     |
+[July 12] FLOAT DAY 1 (8 hrs — absorbs Week 3 overrun)
+     |
+[July 13] UPLOAD: Sleep ($20) — MILESTONE 3 / Sprint close
+     |
+[July 15] Practitioner tier live ($120–$150, 3-bundle minimum met)
+     |
+[July 20] UPLOAD: Immunity ($22) — post-sprint
+     |
+[Aug  3]  UPLOAD: Digestive ($20) — full 5-bundle launch complete
+```
+
+### Float Summary by Track
+
+| Track | Total Hours | Critical-Path Hours | Float Hours | Float Days |
+|---|---|---|---|---|
+| Writing | 56–66 adj. hrs | 56–66 hrs | 8 hrs (2 float days) | 2 days |
+| Design | 14.0 hrs | 0 hrs (fully parallel) | 3–14 days per task | 3–14 days |
+| Photography | 18.0 hrs (pre-sprint) | 0 hrs (pre-sprint only) | 5–14 days per activity | 5–14 days |
+| Supplier — Tier 1 | 2 orders | 0 (float = 0 if writing-only path) | 0 days if Path 1; infinite if Path 2 | 0 or infinite |
+| Supplier — Tier 2 | 2 orders | 0 (quality only) | 5 days (MRH); 7 days (Elderberry) | 5–7 days |
+
+**Critical path diagnosis**: Writing is the only binding constraint. Design and photography are fully parallel and carry enough float to absorb any single-bundle overrun without threatening an upload date. Photography is not a launch blocker — all 14 unique species have verified Wikimedia Commons CC-BY-SA or iNaturalist CC-BY coverage. The two Tier 1 supplier orders (Black Cohosh and Goldenseal) affect photography quality in v1.1, not launch dates for v1.0.
+
+### May 30 Gate — Decisions Required Before June 1 Supplier Orders
+
+The following three decisions must be logged in WORKLOG.md by May 30 to enable June 1 supplier contact and June 8 order placement:
+
+| Decision | Options | Recommendation | Consequence if Deferred |
+|---|---|---|---|
+| Sprint scope | A (5 bundles) / B (2 writers) / C (3 bundles) | C | Cannot brief second writer by June 1 deadline (Option B only) |
+| Goldenseal path | Path 1 (order June 8) / Path 2 (Wikimedia CC) | Path 2 under Option C | Immunity photography plan unresolved entering sprint |
+| Canva palette | Confirm 6 hex codes / accept auto-lock June 15 | Accept auto-lock if no strong preference | No consequence — auto-lock is production-ready |
 
 ---
 
@@ -490,6 +564,25 @@ All five bundles must use qualifying language for any therapeutic claims.
 
 ---
 
-*Document version 4.0 — May 20, 2026. Supersedes v3.0 (2026-05-20).*
-*Source files: `phase-3-medicinal-herbs-content-outline.md`, `phase-3-medicinal-herbs-sourcing-guide.md`, `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md`, `canva-phase-3-adaptation-guide.md`, `HERBALIST_PRACTITIONER_ECOSYSTEM.md`, `HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md`, `TRACK_B_FINAL_EXECUTION_GUIDE.md`, `TRACK_B_MAY_30_DECISION_PACKAGE.md`.*
-*Next reviews: June 8 (Goldenseal deadline), June 15 (palette + supplier deadline), June 20 (pre-sprint gate check), June 22 (sprint launch), June 24 (D3 pace gate).*
+---
+
+## Appendix C: Accelerated Upload Sequence — If Gates Pass Mid-July
+
+Both gates are already cleared. If Phase 2 forager cohort exceeds 30% (strong overperformance) by mid-July, the upload sequence can be accelerated by 7 days per bundle:
+
+| Accelerated Date | Bundle | Original Date | Condition |
+|---|---|---|---|
+| July 13 | Women's Health + Respiratory simultaneously | June 29 + July 6 | Only if both are written and export-ready early |
+| July 18 | Sleep | July 13 | 5-day acceleration |
+| July 22 | Practitioner tier | July 15 | After Sleep live |
+| July 25 | Immunity | July 20 | 5-day acceleration |
+| August 10 | Digestive | August 3 | Minimal acceleration justified |
+
+**Acceleration trigger**: If both post-Phase 2 gate checks (June 6 and June 13) show forager cohort above 27%, accelerate Respiratory upload to July 2 (same day as Immunity writing completion). This yields 7 additional days of Etsy discovery window before the July burnout-resolution peak. Log in WORKLOG.md if triggered.
+
+---
+
+*Document version 5.0 — May 21, 2026. Supersedes v4.0 (2026-05-20).*
+*Companion CSV: `phase-3-timeline.csv` (milestone spreadsheet — start date, duration, resource, dependencies, float days, gate dates).*
+*Source files: `phase-3-medicinal-herbs-content-outline.md`, `phase-3-medicinal-herbs-sourcing-guide.md`, `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md`, `canva-phase-3-adaptation-guide.md`, `HERBALIST_PRACTITIONER_ECOSYSTEM.md`, `HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md`, `TRACK_B_FINAL_EXECUTION_GUIDE.md`, `TRACK_B_MAY_30_DECISION_PACKAGE.md`, `PHASE_3_PRODUCTION_GANTT.csv`.*
+*Next reviews: May 30 (3 decisions), June 1 (Black Cohosh order), June 8 (Goldenseal deadline), June 15 (palette + Tier 2 supplier deadline), June 20 (pre-sprint gate check), June 22 (sprint launch), June 24 (D3 pace gate).*
