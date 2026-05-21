@@ -569,4 +569,127 @@ Classify at May 25 rather than May 21. Domain research is complete regardless �
 
 ---
 
-*Document produced: May 20, 2026; updated May 20, 2026 to add Domain G coverage; updated May 21, 2026 with live currency audit findings and corrected Domain 58 word count (12,611 confirmed by `wc -w`). Audit basis: direct file verification of all five canonical domain files — word counts via `wc -w` confirmed May 21, citation URL counts via `grep -c "https://"`, section header extraction by direct read. Total confirmed May 21: 45,224 words, 285 citation URLs, 5 domains production-complete. May 21 currency audit: live web searches on all five domain topic areas — three material developments identified (see Section 1A). None are launch blockers; all require under 6 total hours of pre-distribution action. Prior activation checklists (PHASE_2_RESEARCH_ACTIVATION_CHECKLIST.md, Session 1361, May 19; phase-2-research-activation-checklist.md, Session 1405, May 20) contained outdated production-status expectations projecting 120–130 hours of writing work and covered only four domains. This document supersedes both as the authoritative May 21 launch document covering all five Phase 2 domains.*
+---
+
+## Section 7: Domain 60 — Status, Decision Framework, and Candidate Assessment
+
+*This section addresses the task-scope requirement to audit Domain 60 in addition to Domains 56–59. As of May 21, 2026, no Domain 60 file exists at any path in `projects/resistance-research/` or `projects/resistance-research/domains/`. The following provides the complete decision framework for whether to scope Domain 60 in Phase 2.*
+
+### Audit Finding — Domain 60
+
+**File search result**: No domain file, outline, source library, or scoping document exists for "Domain 60" at any path in the resistance-research project directory. The project used lettered designations (Domain G) for domains produced after Domain 59; Domain G (Press Freedom) is the functional equivalent of Domain 60 in prior task-level shorthand. Domain G is fully written at 8,695 words and confirmed production-complete.
+
+**Conclusion**: Domain 60 as a separate research project does not exist. Domain G absorbs the "fifth Phase 2 domain" slot. Any prior planning document that referenced "Domain 60" was using shorthand for Domain G.
+
+### Domain 60 Scoping Decision by Synthesis Outcome
+
+| Outcome | Domain 60 Decision |
+|---------|--------------------|
+| STRONG | Scope Domain 60 in June 2026 as an optional expansion. Two candidates (below). Neither is required for Phase 2 launch. |
+| MODERATE | Domains 56–59 and G are adequate. Domain 60 deferred to Phase 3 or later. |
+| WEAK | No Domain 60. Focus on completing Phase 2 distribution for Domains 56–59 and G on schedule. |
+
+### Domain 60 Candidate Assessment (STRONG path only)
+
+**Candidate A — IEEPA/Trade Policy Economic Sovereignty**: SCOTUS issued a landmark ruling in February 2026 restricting presidential IEEPA tariff authority without congressional authorization. This creates a fresh constitutional anchor for a domain analyzing trade policy unilateralism and democratic design. Domain 23 (Trade Policy/Tariff Unilateralism) exists in the archive but predates the February 2026 ruling. A Domain 60 on this topic would extend Domain 23 with the new constitutional constraint and its downstream implications for separation of powers in economic policy. **Estimated effort**: 6,000–7,000 words, 30–40 sources, 20–25 hours research and writing.
+
+**Candidate B — Consolidated Disability Rights and Democratic Infrastructure**: The SSA 7,000-job cut, OBBBA disability population impact, and P&A program defunding create a distinct disability-democracy nexus not fully covered by Domain 41b (Disability Rights/Benefit Infrastructure) or Domain 39 (Healthcare). A Domain 60 would synthesize the compounding effects on disabled voters specifically: guardianship-based disenfranchisement, SSA administrative collapse, P&A program elimination, and OBBBA work requirement inadequacy for disability. **Estimated effort**: 5,000–6,000 words, 25–35 sources, 15–20 hours.
+
+**Decision gate for Domain 60 (STRONG outcome only)**: Confirm by June 5 whether to scope Domain 60. If confirmed, assign a research session by June 10 to produce the outline and source library. Domain 60 would target a late September 2026 distribution date — after the UNGA 81 window and aligned with OBBBA December 2026 implementation approaching.
+
+---
+
+## Section 8: Phase 2 Research Kick-Off Summary
+
+*This section provides the consolidated kick-off brief for post-synthesis execution. Read this section first if you are activating Phase 2 immediately after the May 21 synthesis outcome is posted.*
+
+### Lead Finding for Activation
+
+All five Phase 2 domains (56, 57, 58, 59, and Domain G) are production-complete. No research or writing work remains. Phase 2 activates as a distribution operation, not a research operation. The synthesis outcome affects only Tier 2 outreach timing — it does not gate any domain distribution date.
+
+### Domain Sequencing — Research and Distribution Order
+
+The following order is confirmed for Phase 2 distribution, based on policy window alignment:
+
+**Priority 1 — Domain 56** (first distribution May 26): Civil service politicization. Hard window: H.R. 492 Saving the Civil Service Act committee markup expected June 1–30. Urgency: Schedule Policy/Career is operational; the clock is running on federal workforce politicization. Audience: Partnership for Public Service, AFGE, NTEU, Senate HSGAC.
+
+**Priority 2 — Domain 59** (first distribution June 1): Economic precarity and civic participation. Hard window: HHS OBBBA interim final rule June 1; Nebraska OBBBA work requirement implementation live May 1. Urgency: The civic participation argument is now live empirical data in Nebraska — the pre-election window for voting rights organizations to use this analysis is narrowing. Audience: CBPP, EPI, NLIHC, SEIU, League of Women Voters.
+
+**Priority 3 — Domains 58 and G** (both June 15): Tribal sovereignty and press freedom. Hard window for Domain 58: Trump v. Barbara ruling expected late June — pre-ruling distribution creates a two-wave engagement strategy. Hard window for Domain G: PRESS Act reintroduction and FCC license renewal cycle open June–July. Domain G also supports the UNGA 81 press freedom session (September) as a companion to Domain 57.
+
+**Priority 4 — Domain 57** (August 10): Multilateral withdrawal. Hard window: UNGA 81 High-Level Week September 22–28. August 10 distribution gives 43 days of lead time. Domain 57 is the only Phase 2 domain whose primary audience is international rather than domestic.
+
+### Estimated Completion Dates by Domain
+
+| Domain | Distribution Start | Wave 1 Complete | Wave 2 Target | Policy Anchor |
+|--------|-------------------|----------------|---------------|---------------|
+| 56 | May 26 | June 7 | July 15 | H.R. 492 window |
+| 59 | June 1 | June 30 | September 1 | OBBBA implementation |
+| 58 | June 15 | July 15 (post-ruling) | August 1 | Trump v. Barbara ruling |
+| G | June 15 or June 22 | July 31 | UNGA Sept. | PRESS Act + UNGA 81 |
+| 57 | August 10 | September 28 | November 3 | UNGA 81 + Midterms |
+
+Wave 2 distribution reaches a second tier of organizations (congressional staff, law school clinics, regional advocacy networks) and is less time-sensitive than Wave 1. Wave 2 for each domain begins 2–4 weeks after Wave 1 is confirmed received by primary contacts.
+
+### Success Criteria by Synthesis Outcome
+
+**STRONG outcome** (QRP >= 2 AND response rate >= 40%, OR Score 5 override):
+- All four domains begin distribution on schedule (May 26, June 1, June 15, August 10)
+- Tier 2 activation begins June 15–21 using social proof framing from Wave 1 responses
+- Domain 60 scoping decision made by June 5
+- Success metric at June 30 synthesis gate: at least two domains (56, 59) have produced Wave 1 engagement signals (Score 3+ response from at least one Wave 1 contact per domain)
+- STRONG path does NOT accelerate any distribution date — it accelerates Tier 2 expansion and Domain 60 scoping only
+
+**MODERATE outcome** (QRP >= 1 OR Gist delta > 10):
+- All four domains begin distribution on schedule — identical calendar to STRONG
+- Tier 2 activation shifts 7–10 days to June 22–28
+- No Domain 60 scoping in June
+- Success metric at June 30 synthesis gate: at least one domain (Domain 59 is highest probability) has produced a Score 3+ Wave 1 response that upgrades the Tier 2 activation to STRONG framing for subsequent outreach waves
+- MODERATE path's single highest-priority action: lead Domain 59 June 1 cover email with Nebraska OBBBA hook as the current-events anchor
+
+**WEAK outcome** (QRP = 0, Gist delta <= 5, delivery confirmed):
+- Domains 56, 58, 59, and G distribute on their scheduled dates — UNCHANGED
+- Domain 57 August 10 distribution proceeds — UNCHANGED
+- Tier 2 activation defers until Domain 59 June 1 produces a Score 3+ signal
+- Delivery/content diagnosis required within 72 hours of WEAK classification — do NOT revise content before diagnosing whether the problem is delivery or content
+- Success metric: Domain 59's distinct audience (economic justice organizations with no overlap with Phase 1 Wave 1 contacts) serves as the reset distribution test. A Score 3+ response from any Domain 59 Wave 1 contact reclassifies the Phase 2 trajectory to MODERATE and unlocks Tier 2 activation
+- WEAK does NOT mean Phase 2 is paused — it means Tier 2 expansion is gated pending the Domain 59 reset test
+
+**TOO EARLY outcome** (zero signals, no bounces, law school window open):
+- No path decisions before May 25 final gate
+- All distribution dates hold — Domain 56 May 26, Domain 59 June 1
+- TOO EARLY resolves into STRONG, MODERATE, or WEAK at May 25 with 7-day signal data
+- No action required tonight except running the delivery self-test
+
+### Research Hours Already Completed
+
+| Domain | Research Hours Invested | Word Count Delivered | Status |
+|--------|------------------------|---------------------|--------|
+| 56 | ~40 hrs (estimated) | 6,267 | COMPLETE |
+| 57 | ~50 hrs (estimated) | 9,201 | COMPLETE |
+| 58 | ~70 hrs (estimated) | 12,611 | COMPLETE |
+| 59 | ~45 hrs (estimated) | 8,450 | COMPLETE |
+| G | ~40 hrs (estimated) | 8,695 | COMPLETE |
+| **Total** | **~245 hrs** | **45,224** | **ALL COMPLETE** |
+
+Remaining Phase 2 effort is 31–50 hours of distribution preparation and execution — approximately 13–20% of total research investment already made. The research corpus is ready.
+
+### Zero-Lag Launch Protocol
+
+To launch Phase 2 with zero setup ambiguity immediately post-synthesis:
+
+1. Read synthesis outcome from CHECKIN.md (posted by 20:00 UTC May 21)
+2. Note which path applies (STRONG/MODERATE/WEAK/TOO EARLY)
+3. Confirm Trump v. Barbara has NOT issued (SCOTUSblog)
+4. Confirm all 5 canonical file paths are accessible
+5. Add Nebraska OBBBA hook sentence to Domain 59 cover email draft
+6. Begin Domain 56 URL spot-check (2 hours) — this is path-independent; start regardless of synthesis outcome
+7. Schedule NARF peer review request for June 1 (Domain 58 gate)
+8. If STRONG: also queue Tier 2 pre-contact list for May 25 user gate; decide Domain 60 by June 5
+9. If MODERATE or WEAK: same launch steps, Tier 2 timing adjusted per outcome
+
+Total setup time from reading synthesis outcome to first action: under 15 minutes.
+
+---
+
+*Document produced: May 20–21, 2026. Sections 7 and 8 added Session 1443. Full audit basis: direct file verification of all five canonical domain files (wc -w, grep -c "https://", section header extraction) confirmed May 21: D56 (6,267 words, 45 citations), D57 (9,201 words, 51 citations), D58 (12,611 words, 90 citations), D59 (8,450 words, 49 citations), D-G (8,695 words, 50 citations). Total: 45,224 words, 285 citation URLs. May 21 currency audit confirmed three material developments (Section 1A): Nebraska OBBBA May 1 implementation, ICC Albanese injunction May 13, Hungary PM-elect Marcel ICC halt pledge. Section 7 confirms Domain 60 does not exist as a separate file — Domain G absorbs the fifth Phase 2 domain slot. Section 8 provides the kick-off summary and zero-lag launch protocol the task brief required.*

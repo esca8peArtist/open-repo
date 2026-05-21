@@ -415,4 +415,163 @@ The Phase 2 production milestone: all five domains are in active distribution.
 
 ---
 
-*Document produced: May 20, 2026; updated May 20, 2026 to add Domain G; updated May 21, 2026 with live currency audit findings (Section 7 synthesis decision tree added, OBBBA Nebraska implementation noted, Domain 58 word count corrected to 12,611). Domain status confirmed by direct file audit May 21: word counts via `wc -w` (D56: 6,267 / D57: 9,201 / D58: 12,611 / D59: 8,450 / D-G: 8,695 — total: 45,224), citation URL counts via `grep -c "https://"`, section header scan. All five domains production-complete. May 21 currency audit sources: Ballotpedia (Nebraska OBBBA May 1), NPR (Nebraska Day 1), CBPP (Nebraska work requirements critique), OFAC (ICC Albanese injunction), ICC/HRW (Hungary ICC halt), CNN Business (FCC ABC license challenge), Al Jazeera/RSF (press freedom index), SCOTUSblog (Trump v. Barbara pending). Milestone dates derived from: UNGA 81 High-Level Week (September 22–28, 2026); OBBBA Medicaid work requirements effective December 2026 (state-level earlier implementation already live); Trump v. Barbara ruling (pending — expected late June/early July 2026); H.R. 492 legislative window (June 1–30, 2026); PRESS Act reintroduction window (June 2026); FCC ABC license review deadline May 28. This document supersedes PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md (Session 1361, May 19) and the prior phase-2-research-timeline-template.md (Session 1405, May 20) as the authoritative five-domain distribution calendar.*
+---
+
+## Section 8: Per-Domain Execution Gate Schedule — Session 1443 Addendum
+
+*This section was added Session 1443 to fulfill the task brief's requirement for per-domain writing pace expectations, peer review cycles, revision loops, and publication staging milestones. Because all five Phase 2 domains are production-complete, this section reframes "writing pace" as "distribution execution pace" — the relevant throughput metric for Phase 2.*
+
+### Why Writing Pace Is No Longer the Binding Constraint
+
+Prior planning documents (Sessions 1321–1361) estimated 120–130 hours of research and writing work across June–August 2026, derived from production schedules for Domains 57 and 59 that assumed they were unwritten outlines. The May 20 audit eliminated this assumption: both domains are fully written. The binding constraint for Phase 2 is now distribution execution pace — how fast cover emails can be written, peer reviews can be scheduled and incorporated, and Wave 1 outreach can be sent and tracked.
+
+The following table converts the prior writing-pace framework into a distribution-execution-pace equivalent, preserving the format the task requires.
+
+### Per-Domain Distribution Execution Timeline
+
+#### Domain 56 — Civil Service Politicization
+
+| Gate | Date | Milestone | Effort |
+|------|------|-----------|--------|
+| Pre-launch | May 21–22 | URL spot-check (45 citations) | 2 hrs |
+| Cover email | May 22–24 | Write Wave 1 cover emails (Partnership for Public Service, AFGE, NTEU, Brookings) | 3–4 hrs |
+| Wave 1 launch | May 26 | First distribution emails sent | 1–2 hrs |
+| Legislative window opens | June 1 | H.R. 492 committee markup window begins; send congressional staff contacts | 1 hr |
+| Wave 1 complete | June 7 | All Wave 1 contacts reached; engagement tracking begins | — |
+| Mid-distribution check | June 15 | Response log: any Score 3+ signals? Flag for Tier 2 acceleration. | 1 hr |
+| Wave 2 launch | June 22 | Congressional contacts, state-level civil service reform organizations | 1–2 hrs |
+| Distribution complete | July 15 | Wave 2 complete; domain enters UNGA press freedom package reference | — |
+
+**Peer review**: Not required. Document is legally and factually verifiable against public federal records.
+**Revision triggers**: PEER v. Trump/OPM injunction ruling (Q3 2026) — if issued, update litigation section within 24 hours and send update to Wave 1 contacts.
+
+---
+
+#### Domain 59 — Economic Precarity and Civic Participation
+
+| Gate | Date | Milestone | Effort |
+|------|------|-----------|--------|
+| Cover email prep | May 25–31 | Write Nebraska OBBBA hook into cover email; confirm HHS rule language | 2–3 hrs |
+| HHS rule monitoring | June 1 (8am) | Check HHS Federal Register before sending; update cover email if material change | 30 min |
+| Wave 1 launch | June 1 | First distribution: CBPP, EPI, NLIHC, SEIU, League of Women Voters | 1–2 hrs |
+| Domain 59 expert contacts | June 1–7 | 13 verified expert contacts from DOMAIN_59_SOURCE_LIBRARY.md — send as Wave 1b | 1 hr |
+| Wave 1 mid-check | June 15 | Review engagement signals; any Score 3+ upgrades Tier 2 activation | 30 min |
+| Optional peer review | June 15–30 | CBPP or EPI review OBBBA compounding argument (Section 5) | 2–4 hrs async |
+| Wave 2 launch | July 1 | Youth organizations, campus engagement (CIRCLE, NextGen America), state AGs | 1–2 hrs |
+| Pre-OBBBA push | September 1 | Final Wave 2 distribution; Medicaid work requirements effective December 2026 | 1 hr |
+| Distribution complete | September 30 | Domain 59 enters pre-midterm background reference | — |
+
+**Peer review**: Optional. CBPP or EPI review of OBBBA Section 5 strengthens credibility but is not required for launch.
+**Revision triggers**: HHS June 1 rule with material implementation changes (30 min cover email update); SNAP cut implementation dates confirmed (one-paragraph update to Section 5 if needed).
+
+---
+
+#### Domain 58 — Tribal Sovereignty as Democratic Infrastructure
+
+| Gate | Date | Milestone | Effort |
+|------|------|-----------|--------|
+| SCOTUS monitoring | Daily from May 22 | SCOTUSblog + sct.narf.org check for Trump v. Barbara ruling | 5 min/day |
+| NARF peer review request | June 1–5 | Send peer review request to NARF legal team with June 13 deadline | 30 min |
+| Peer review period | June 5–14 | NARF reviews tribal voting rights, Callais analysis, citizenship framing | 2–4 hrs async |
+| Peer review incorporation | June 14 | Incorporate NARF feedback; final edit pass | 2 hrs |
+| Wave 1 launch | June 15 | NARF, NCAI, NOA, Senate Indian Affairs Committee staff, ACLU VRP | 1–2 hrs |
+| Trump v. Barbara monitoring | June 19–30 | Daily SCOTUSblog check; ruling expected final two weeks of June | 5 min/day |
+| Rapid-response trigger | Within 24 hrs of ruling | Execute Section 9 protocol; update canonical file; send update to all Wave 1 contacts | 2–3 hrs |
+| Post-ruling Wave 2 | July 15 | Post-ruling distribution with updated document; second-tier organizations | 1–2 hrs |
+| Tier 2 integration gate | August 1 | Confirm Wave 1 receipts; package for Tier 2 briefing | 1 hr |
+
+**Peer review**: Required (NARF). The tribal voting rights and Callais constitutional analysis require tribal law expertise for accuracy validation.
+**Revision triggers**: Trump v. Barbara ruling (mandatory rapid-response within 24 hours, 2–3 hrs effort); Montana SB 490 injunction status (monitor; update if injunction lifted).
+
+---
+
+#### Domain G — Press Freedom and the Information Ecosystem
+
+| Gate | Date | Milestone | Effort |
+|------|------|-----------|--------|
+| ABC FCC monitoring | May 22 – June 15 | Track FCC action on Disney/ABC license renewals (deadline May 28) | 10 min/day |
+| ABC paragraph draft | June 1–5 | Write one-paragraph addition to Domain G Section II (ABC license challenge) | 45 min |
+| CPJ/RCFP peer review request | June 1–5 | Send peer review request with June 13 deadline (FCC legal analysis) | 30 min |
+| Peer review period | June 5–14 | CPJ or RCFP reviews FCC NRA v. Vullo and DOJ subpoena sections | 2–4 hrs async |
+| Peer review incorporation | June 14 | Incorporate feedback; add ABC paragraph | 1–2 hrs |
+| Wave 1 launch | June 15 or 22 | CPJ, RCFP, journalism schools; or June 22 if review arrives late | 1–2 hrs |
+| FCC monitoring | Ongoing through July | If FCC acts on ABC renewals, update cover email same-day | 5 min/day |
+| Wave 2 launch | July 31 | State AGs (NY, CA, CO, WA), journalism school deans, Press Forward | 1–2 hrs |
+| UNGA 81 prep | August 10 | Package Domain G with Domain 57 for UNGA 81 press freedom session | 1 hr |
+| Tier 2 integration gate | July 31 | Confirm Wave 1 receipts from CPJ, RCFP, at least one journalism school | 30 min |
+
+**Peer review**: Required (CPJ or RCFP). FCC license retaliation legal analysis and DOJ journalist subpoena framing benefit from press freedom legal expertise.
+**Revision triggers**: FCC action on ABC license (same-day cover email update); PRESS Act reintroduction or floor vote (update cover email legislative hook within 24 hours).
+
+---
+
+#### Domain 57 — Multilateral Withdrawal and US Commitment Collapse
+
+| Gate | Date | Milestone | Effort |
+|------|------|-----------|--------|
+| ICC monitoring | June 1–30 | Track Hungary June 2 ICC withdrawal halt deadline | 10 min/day |
+| Hungary resolution | June 2 | Confirm whether Magyar filed withdrawal halt — record for July update | 30 min |
+| Albanese injunction monitoring | July 1 | Check D.C. federal court for Albanese injunction status (was it appealed?) | 30 min |
+| ICC section spot-check | July 1–15 | Full ICC section currency review: Albanese injunction + Hungary reversal + Grynkewich | 1–2 hrs |
+| Grynkewich integration | July 5–15 | Add NATO drawdown formalization (Grynkewich May 19 press conference) to Section 4 | 1 hr |
+| Cover email prep | July 15–August 7 | Write Wave 1 cover emails for HRW, Amnesty, CFR, Carnegie, NED, NDI, Freedom House | 2–3 hrs |
+| Senate Foreign Relations | July 31 | Draft cover email for Senate Foreign Relations Committee staff contacts | 1 hr |
+| Wave 1 launch | August 10 | All Wave 1 emails sent — 43-day UNGA lead time begins | 1–2 hrs |
+| UNGA High-Level Week | September 22–28 | Domain 57 in active circulation; Senate staff briefings possible | — |
+| Wave 2 launch | September 15 | Midterm domestic framing wave: state legislators, civic education organizations | 1–2 hrs |
+| Distribution complete | September 28 | UNGA 81 High-Level Week concludes; midterm preparation window opens | — |
+
+**Peer review**: Not required. All 51 citation URLs are public government records, academic publications, or established think tank reports. Domain 57 is the most institutionally legible of the five domains — its evidence base is the most mainstream.
+**Revision triggers**: ICC Albanese injunction outcome (1-hr section update if overturned); Hungary ICC withdrawal confirmed or reversed (1-sentence update); additional major NATO withdrawal development (1-hr update if before August 10).
+
+---
+
+### Cross-Domain Execution Dependencies
+
+The following dependencies determine sequencing within overlapping execution windows:
+
+**June 1–14 parallel window (critical)**:
+- Domain 59: Wave 1 launching + expert contact follow-ups
+- Domain 58: NARF peer review running passively (send June 1, incorporate June 14)
+- Domain G: CPJ/RCFP peer review running passively (send June 1–5, incorporate June 14)
+- These three tasks have no shared bottleneck — they run independently in parallel
+
+**June 15 parallel launch window**:
+- Domain 59: Wave 1 mid-check (30 min) — runs same morning as Domain 58 and G launches
+- Domain 58: Wave 1 launch (1–2 hrs)
+- Domain G: Wave 1 launch (1–2 hrs) — same day or June 22 if staggered
+- Both Domain 58 and G can launch same day because contact lists have zero overlap
+
+**July 1–August 9 staging window (Domain 57)**:
+- Domain 57: Currency check (1–2 hrs) and cover email prep (2–3 hrs) — runs while Domains 58, G, 59 are in mid-distribution
+- Domain 58: Rapid-response update if Trump v. Barbara issues during this window (2–3 hrs)
+- Both are independent — neither blocks the other
+
+**Peak parallel workload (June 15 – July 15)**:
+- Domains 58, 59, and G simultaneously in Wave 1 distribution and mid-distribution tracking
+- Estimated peak effort: 8–10 hours per week for two weeks
+- This is within single-researcher capacity
+
+---
+
+### Contingency Buffer Schedule
+
+Each domain has implicit buffer built into its gate schedule:
+
+| Domain | Buffer Between Last Gate and Hard Deadline | Buffer Use Case |
+|--------|------------------------------------------|-----------------|
+| 56 | June 7 (Wave 1 complete) — H.R. 492 window ends June 30 — 23 days | Delayed response incorporation, Wave 2 cover email revision |
+| 59 | September 1 (Wave 2 target) — December 2026 work requirement implementation — 3 months | OBBBA implementation update; post-ruling Medicaid expansion |
+| 58 | June 15 (Wave 1 launch) — late June ruling window — 2–4 weeks | Peer review incorporation overflow; ruling response preparation |
+| G | June 15 or 22 (Wave 1 launch) — July 31 Tier 2 gate — 5–6 weeks | Late peer review arrival; FCC action response |
+| 57 | August 10 (Wave 1 launch) — September 22 UNGA — 43 days | Senate staff briefing prep; additional ICC developments |
+
+**July 20–27 production catch-up buffer (path-independent)**: This week is explicitly reserved across all outcomes. If any domain's distribution preparation has experienced unexpected delay, this window restores August 10 Domain 57 readiness.
+
+---
+
+*Section 8 added: May 21, 2026 — Session 1443. This section fulfills the task brief requirement for per-domain writing pace expectations, peer review cycles, revision loops, and publication staging milestones, reframed for Phase 2 as distribution-execution gates because all research and writing is complete.*
+
+---
+
+*Document produced: May 20, 2026; updated May 20, 2026 to add Domain G; updated May 21, 2026 with live currency audit findings (Section 7 synthesis decision tree added, OBBBA Nebraska implementation noted, Domain 58 word count corrected to 12,611); updated May 21, 2026 Session 1443 to add Section 8 (per-domain execution gate schedule). Domain status confirmed by direct file audit May 21: word counts via `wc -w` (D56: 6,267 / D57: 9,201 / D58: 12,611 / D59: 8,450 / D-G: 8,695 — total: 45,224), citation URL counts via `grep -c "https://"`, section header scan. All five domains production-complete. May 21 currency audit sources: Ballotpedia (Nebraska OBBBA May 1), NPR (Nebraska Day 1), CBPP (Nebraska work requirements critique), OFAC (ICC Albanese injunction), ICC/HRW (Hungary ICC halt), CNN Business (FCC ABC license challenge), Al Jazeera/RSF (press freedom index), SCOTUSblog (Trump v. Barbara pending). Milestone dates derived from: UNGA 81 High-Level Week (September 22–28, 2026); OBBBA Medicaid work requirements effective December 2026 (state-level earlier implementation already live); Trump v. Barbara ruling (pending — expected late June/early July 2026); H.R. 492 legislative window (June 1–30, 2026); PRESS Act reintroduction window (June 2026); FCC ABC license review deadline May 28. This document supersedes PHASE_2_RESEARCH_TIMELINE_TEMPLATE.md (Session 1361, May 19) and the prior phase-2-research-timeline-template.md (Session 1405, May 20) as the authoritative five-domain distribution calendar.*

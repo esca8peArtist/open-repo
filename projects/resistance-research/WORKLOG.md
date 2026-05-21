@@ -2,7 +2,29 @@
 
 ---
 
-## May 20, 2026 — General Research Agent — Domain 58 Trump v. Barbara Rapid-Response Research Memo
+## May 21, 2026 — General Research Agent — Phase 2 Activation Checklist + Timeline Template (Session 1443)
+
+**Task**: Build Phase 2 research activation checklist and timeline template to enable zero-lag Phase 2 launch post-synthesis. Audit Domains 56–60 for production readiness; pre-stage research infrastructure; build per-domain execution timeline; identify blocking assumptions; draft Phase 2 kick-off summary with synthesis outcome decision framework.
+
+**Files updated**:
+- `projects/resistance-research/phase-2-research-activation-checklist.md` — Sections 7 and 8 added. Section 7: Domain 60 audit (confirmed no separate Domain 60 file exists — Domain G absorbs the fifth Phase 2 slot; two Domain 60 candidates assessed for STRONG-path optional scoping). Section 8: Phase 2 Research Kick-Off Summary — zero-lag launch protocol, domain sequencing rationale, estimated completion dates per domain, success criteria for STRONG/MODERATE/WEAK/TOO EARLY synthesis outcomes, research hours invested summary (245 hrs estimated, 45,224 words delivered).
+- `projects/resistance-research/phase-2-research-timeline-template.md` — Section 8 added. Per-domain distribution execution gate schedule with specific dates, milestones, effort estimates, peer review cycles, revision triggers, and contingency buffers for all five domains. Cross-domain execution dependency map for the June 1–14, June 15, and July–August parallel windows. Peak workload calculation (8–10 hrs/week June 15–July 15 — within single-researcher capacity).
+
+**Key audit findings confirmed this session**:
+1. Domain 60 does not exist as a separate file at any path — confirmed by directory scan. Domain G (Press Freedom, 8,695 words) absorbs the fifth Phase 2 domain slot. Two candidates for optional STRONG-path scoping: (A) IEEPA/Trade Policy Economic Sovereignty (February 2026 SCOTUS ruling creates new anchor); (B) Consolidated Disability Rights (SSA cuts + OBBBA disability population impact).
+2. All five Phase 2 domains production-complete: D56 (6,267 words, 45 citations), D57 (9,201 words, 51 citations), D58 (12,611 words, 90 citations), D59 (8,450 words, 49 citations), D-G (8,695 words, 50 citations). Total: 45,224 words, 285 citations.
+3. Domain 59 urgency elevated: Nebraska implemented OBBBA Medicaid work requirements May 1, 2026 — live empirical data, not projection. Cover email updated with Nebraska hook.
+4. Domain 57 medium-high currency risk: ICC Albanese injunction (May 13 D.C. federal court) and Hungary PM-elect Magyar ICC halt pledge (June 2 deadline) are countermovement signals requiring July spot-check before August 10 distribution.
+5. Domain G FCC monitoring: ABC license renewal deadline May 28; RSF 64th ranking confirmed. One-paragraph ABC addition recommended in June 1–14 revision pass.
+6. Blocking assumptions across all five domains: NONE. All five can distribute on their scheduled dates regardless of synthesis outcome.
+
+**Synthesis outcome decision framework**: STRONG/MODERATE/WEAK/TOO EARLY success criteria documented in Section 8 of activation checklist. Universal finding: all five domains launch on schedule regardless of synthesis outcome — only Tier 2 activation pace changes.
+
+**Confidence**: High. Audit based on direct file reads of all five canonical domain files plus PHASE_2_DOMAINS_56_59_RESEARCH_ACTIVATION_PREP.md, PHASE_2_DOMAINS_38_40_OUTLINES.md, PHASE_2_DOMAINS_57_59_OUTLINES.md, MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md, and WORKLOG entries through May 21. May 21 currency audit from live web searches (Nebraska OBBBA, ICC Albanese injunction, Hungary, FCC ABC, SCOTUSblog).
+
+---
+
+## May 21, 2026 — General Research Agent — Phase 2 Activation Checklist + Timeline Template Currency Update
 
 **Task**: Produce a comprehensive rapid-response research memo on Trump v. Barbara (No. 25-365) and its tribal sovereignty implications for Domain 58 Phase 2 distribution. Synthesize all existing pre-staging research into consolidated briefing format.
 
