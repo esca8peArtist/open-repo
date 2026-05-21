@@ -4,6 +4,28 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Track B Geographic Expansion and Wholesale Channel Strategy (Exploration Queue Item 21) — May 21, 2026
+
+**Task**: Research and produce strategic analysis for Track B post-June-22 geographic expansion (Canada, UK, EU) and wholesale channel development (practitioner direct, complementary clinics, natural retailers, online marketplaces). Independent of Track A blockers and May 30 scope decisions.
+
+**Files produced** (all in `projects/seedwarden/`):
+
+- `TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md` (~3,200 words) — Full regulatory, tax, market sizing, and go/no-go threshold analysis for Canada (NNHPD, GST/HST, OHA practitioner network, 3,700–4,400 addressable practitioners), UK (MHRA/THR inapplicability to digital guides, Etsy VAT handling, NIMH network 1,900–2,500 practitioners), and EU Germany/France/Italy (GDPR, VAT OSS, ESCOP, 13,000–21,000 addressable practitioners). Phase sequencing: Canada Phase 1 September, UK Phase 2 October, EU Phase 3 Q1 2027. Compliance cost table showing near-zero cost for Etsy-based sales across all markets.
+
+- `TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md` (~3,000 words) — Four channel deep-dives: (1) Practitioner Direct — $112.87 net/10-pack at 20% affiliate commission, Tier A June 22 / Tier B July 15, Etsy coupon + Payhip Pro migration path; (2) Complementary Clinics — access code card consignment model, $10.35 net/consignment vs $13.59 wholesale, 50–100 clinic Pacific Northwest first cluster July 1; (3) Natural Foods Co-ops — printed POD model, $10.37 net, 20-unit MOQ, UPC/GS1 requirement, UNFI/KeHE deferred Phase 3; (4) Online Marketplaces — Amazon KDP at 35% royalty ($7.70 net at $22, no KDP Select exclusivity), iHerb/Vitacost inapplicable, Payhip/Gumroad backup. Margin hierarchy table. Year 1 revenue projection $26,900–$62,500 across all channels.
+
+- `TRACK_B_GO_LIVE_SEQUENCING.md` (~1,800 words) — Month-by-month activation plan June 22–December 2026. Phase 0 (pre-launch June 15–21), Phase 1A (launch week), Phase 1B (stabilization June 29–July 14, first go/no-go checkpoint at July 14), Phase 1C (Tier B + clinics July 15–August 15), Phase 2 (Amazon KDP + Canada + UK + co-ops September–October), Phase 3 (scale + holiday November–December). Capacity requirements per phase, customer service load estimate, full go/no-go checkpoint table with revenue-denominated triggers.
+
+**Key findings**:
+- Digital PDF guides are not subject to Canada NHP licensing, UK THR registration, or EU Traditional Herbal Registration. Regulatory compliance cost for international Etsy sales is zero — Etsy handles GST/HST, UK VAT (20%), and EU VAT as the marketplace operator.
+- Practitioner 10-pack is the highest-margin wholesale unit: $112.87 net at 20% affiliate commission vs. $19.66 for a direct consumer sale. The priority sequencing case is clear: maximize 10-pack penetration before opening lower-margin channels.
+- Amazon KDP international distribution (US, Canada, UK) is the lowest-complexity international expansion path — no additional compliance required beyond the US Etsy launch. Activate in Phase 2 (August/September) after launch reviews validate content quality.
+- UNFI/KeHE distributor pathway deferred to 2027 — requires physical product, 500+ unit MOQ, net-30/60 terms, and a food broker relationship that is inappropriate for bootstrap Phase 1 operations.
+
+**Sources consulted**: Canada.ca NNHPD guidance, Health Canada simplified GST/HST registration framework, GOV.UK MHRA THR guidance, UK VAT digital services rules (HMRC), EU e-Commerce framework, GDPR cross-border requirements, Amazon KDP royalty structure, GS1 US UPC pricing, Emergen Research herbalist market sizing, Ontario Herbalists Association (OHA) directory overview.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Launch Marketing and Affiliate Onboarding (Exploration Queue Item 18) — May 21, 2026
 
 **Task**: Pre-stage Phase 3 launch marketing and affiliate onboarding for June 22 launch. All deliverables are scope-independent (universal regardless of May 30 bundle scope decision).
