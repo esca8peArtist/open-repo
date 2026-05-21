@@ -1,3 +1,22 @@
+## Session 1479 — ORCHESTRATOR: RESISTANCE-RESEARCH PHASE 2 DISTRIBUTION PREP (May 21, 20:41 UTC)
+
+**Status**: ✅ **DOMAIN 56 + 39 DISTRIBUTION PREP COMPLETE** | ⏳ **USER ACTION: GIST CREATION** | 🔴 **CRITICAL: SSH AUTH DEADLINE 16.5h** (May 22 13:30 UTC)
+
+**Work Accomplished**:
+- ✅ **Domain 56 Distribution Strategy** — 4 Tier 1 orgs, email templates, H.R. 492/S. 134 talking points, May 24-28 execution calendar
+- ✅ **Domain 39 Distribution Strategy** — 10 orgs across 4 tiers, June 1 HHS deadline framing (no-comment-period advocacy), May 29-June 10 execution calendar
+- ✅ **Pre-Synthesis Distribution Readiness** — Confirms Domains 56 + 39 ship under ALL May 28 synthesis outcomes (STRONG/MODERATE/WEAK/TOO_EARLY); explains why Domains 57/59 remain on hold
+
+**Needs Your Input**:
+1. 🔴 **IMMEDIATE (16.5h remaining, May 22 13:30 UTC)**: SSH key authorization — Add orchestrator ED25519 public key to Jetson authorized_keys, OR SSH manually and run 5-min Lever B config fix (see BLOCKED.md).
+2. ⏳ **May 24 (Domain 56)**: Create GitHub Gist for `domain-56-civil-service-politicization-governance.md` (6,267 words, 47 citations) and insert URL into 4 email templates in `DOMAIN_56_DISTRIBUTION_STRATEGY.md`. Gist created → send emails May 24-28 to Partnership for Public Service, AFGE, GAP, NTEU.
+3. ⏳ **May 29 (Domain 39)**: Create GitHub Gist for `domain-39-healthcare-access-democratic-infrastructure.md` (6,673 words, 47 citations) and insert URL into email templates in `DOMAIN_39_DISTRIBUTION_STRATEGY.md`. Gist created → send emails May 30-31 (targeting June 1 HHS deadline window).
+4. ⏳ **May 25 18:00 UTC deadline**: Fill signal log (`projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`) with May 20-21 response data (can be partial); full 7-day data required by May 25 for May 25 19:00 UTC re-synthesis execution.
+
+**Summary**: All resistance-research Phase 2 distribution infrastructure ready. Domains 56 + 39 confirmed ready to ship under all May 28 synthesis outcomes. Only autonomous work remaining is May 25 re-synthesis (automated, requires user signal log fill). Next session: May 25 re-synthesis outcome determination → activate corresponding distribution execution for Domains 56 + 39.
+
+---
+
 ## Session 1477 — ORCHESTRATOR: EXPLORATION QUEUE EXECUTION — SEEDWARDEN PHASE 3 + OPEN-REPO PHASE 5 VERIFICATION (May 21, 20:05–21:15 UTC)
 
 **Status**: ✅ **2 EXPLORATION ITEMS COMPLETE** | ✅ **SEEDWARDEN PHASE 3 CRITICAL PATH READY FOR MAY 30 DECISIONS** | ✅ **OPEN-REPO PHASE 5 CANDIDATE 1 VERIFICATION COMPLETE — MERGE SAFE** | 🔴 **SSH AUTH DEADLINE: 17h remaining** (May 22 13:30 UTC)
