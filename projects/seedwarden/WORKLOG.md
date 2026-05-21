@@ -4,6 +4,54 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Herbalist Network Ecosystem Mapping — May 21, 2026
+
+**Task**: Herbalist network ecosystem mapping for Phase 3 practitioner tier ($120–$150 bundles). Exploration Queue item, 6–8 hours estimated.
+
+**Scope**: (1) practitioner network directories (AHG, NAMA, AANP, clinical herbalism schools, IIPA), (2) community hubs (online: subreddits, Facebook groups, Discord; in-person: conferences, workshops), (3) top voices (20–30 herbalism influencers and educators with follower counts), (4) publications and newsletters (trade publications, practitioner newsletters, podcasts with estimated reach), (5) audience segmentation (5 segments with demographics, values, messaging angles), (6) cross-selling analysis (adjacent products and alliance partners), (7) Phase 3 messaging strategy by segment.
+
+**Files read before writing**:
+- `HERBALIST_PRACTITIONER_ECOSYSTEM.md` — existing v1.0 ecosystem map (~4,000 words)
+- `phase-3-herbalist-ecosystem-map.md` — existing v1.0 map (~6,800 words)
+- `HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md` (v2.0) — prior version to supersede
+- `herbalist-network-ecosystem-mapping.md` (v1.0 lowercase) — additional research
+- `WORKLOG.md` — prior session entries for context
+
+**External research performed**:
+- AHG directory, chapters, and symposium information
+- NAMA professional membership tiers and 2026 conference status
+- AANP regulated states and state chapter contacts
+- Online community hubs: Reddit r/herbalism, r/HerbalMedicine, Facebook groups, Discord servers (DISBOARD listings)
+- Herbalism influencer follower counts: Collabs.io, InfluencerHero, Uppromote listings
+- HerbalGram / ABC membership and circulation
+- US Herbalist and Herbal Practitioner market size 2024–2025 (Grand View Research, IMARC Group)
+- Podcast reach data via Rephonic and Feedspot
+
+**Work performed**:
+
+**`HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md` — updated to v3.0 (~7,200 words)**:
+
+- Executive summary: Phase 3 audience overview, market context ($547–634M market, 14–17% CAGR), first-cohort priority order
+- Section 1 (Network Directories): AHG (13-chapter table with Phase 3 priority ratings, directory filter path, chapter contact), NAMA (4 membership tiers with dues, herbalist overlap analysis), AANP (26 licensed states, 4 priority state chapters with contacts), 11 clinical herbalism schools in table format, UpS, HSA, IIPA, Herbalists Without Borders
+- Section 2 (Community Hubs): 5 geographic hubs (Appalachian, PNW, New England, SW, Midwest) with practitioner density notes; 11-entry online communities table with membership estimates (Reddit 130K+, Herbal Academy Facebook 30–50K, HerbMentor paid community, Discord servers); 8-event in-person conference calendar with attendance estimates and Phase 3 actions
+- Section 3 (Top Voices): 25 voices in table format — name, credential, platform/followers, specialty, Phase 3 relevance, bundle alignment. Includes follower counts for: Herbal Academy 875K, Mountain Rose Herbs 431K, Chestnut School 303K, LearningHerbs 269K, Rosemary Gladstar 217K, Carmen Adams 220K TikTok, Rosalee de la Forêt 111K, Sajah Popham 159K, Mel Mutterspaugh 21.5K, Brittany Wood Nickerson 15K, Jade Alicandro 13K, and publication-reach figures for non-IG voices
+- Section 4 (Publications and Newsletters): 3 trade publications (HerbalGram, Natural Foods Merchandiser, Phytotherapy Research), 8 practitioner newsletters with estimated reach, 4 Substack publications, 6 podcasts with episode counts and audience estimates; contact emails listed for each outreach target
+- Section 5 (Audience Segmentation): 5 segments each with: who, demographics, values, what they need, price sensitivity, primary messaging angle, friction to preempt, size estimate, primary channels, bundle priority, estimated $120–$150 appeal
+- Section 6 (Cross-Selling): Adjacent spend categories with dollar ranges, 4 genuine content gaps Seedwarden fills vs. existing market, 4 natural alliance partners with contacts and model, 4 co-distribution opportunities including apothecary retail accounts table
+- Section 7 (Phase 3 Messaging): Core positioning statement, 6-segment messaging matrix with hooks and friction preempts, credibility architecture (pass/fail elements for practitioner scan), distribution channel priority stack (8 channels ranked by ROI-per-effort), social proof sequence with 4 dated phases
+
+**Key determinations from this session**:
+- Three existing ecosystem mapping files already present (v1.0 lowercase, v1.0 practitioner ecosystem, v2.0 uppercase); v3.0 supersedes all three with expanded coverage
+- Online community hub count extended to 11 identified communities (exceeds the 10-hub success criterion)
+- Top voices count: 25 entries covering the 20–30 target range; all US-based with follower counts or estimated reach
+- Publications count: 8 practitioner newsletters plus 3 trade publications, 4 Substack channels, 6 podcasts
+- US Herbalist market size confirmed: $547–634M (2024–2025); 14–17% CAGR through 2033 — strong Phase 3 opportunity context
+- Key risk confirmed: practitioner credibility threshold is binary; one RH peer review before June 22 is non-negotiable for AHG channel activation
+- Audience segment 5 (Community Educators) identified as underserved in prior documents; 10-copy workshop license framing is the conversion mechanism for this segment
+- Outreach action deadlines confirmed: June 1 (AHG directory), June 8 (affiliates + UpS), June 15 (peer reviewer), June 22 (launch day outreach)
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path Analysis — May 21, 2026
 
 **Task**: Phase 3 Medicinal Herbs Production Timeline and Critical Path Analysis. Exploration Queue item, ~3 hours.
