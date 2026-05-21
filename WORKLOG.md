@@ -1,5 +1,35 @@
 # Work Log
 
+## Session 1445 (May 21, General Research Agent) — mfg-farm Etsy SEO & Competitive Positioning
+
+**Task**: Q2-Q3 2026 Etsy SEO & Competitive Positioning research for mfg-farm products (ModRun clips, headphone hooks, magnetic bin labels). Pre-staging launch-day SEO before test print passes.
+
+**Files Created**:
+
+1. `projects/mfg-farm/ETSY_SEO_STRATEGY_Q2_Q3_2026.md` — ~3,200-word production-ready launch reference
+   - Section 1: Executive summary with exact title templates, top 3 keywords, launch prices per product
+   - Section 2: Keyword research tables (35 keywords across 3 product lines: search volume, competition, saturation %, priority, use location)
+   - Section 3: Competitor analysis summary (top 3 competitors per product, price/rating/title patterns, key gaps)
+   - Section 4: Seasonal demand calendar (May–Dec 2026, month-by-month relative demand %, strategy actions)
+   - Section 5: Algorithm best practices (title structure, 13-tag rules, ranking factor priority matrix, title update policy)
+   - Section 6: Pricing strategy (base prices, conversion estimates, bundle matrix with AOV lift, psychological pricing rules)
+   - Section 7: Launch-day checklist — copy-paste ready titles, tags, description openings, ChatGPT discovery paragraphs, photo/video requirements, post-launch monitoring triggers with pass/fail thresholds
+   - Key finding: Etsy-ChatGPT integration (live May 4–5, 2026) adds new AI discovery layer; descriptions need conversational buyer-persona language in first 250 chars
+
+2. `projects/mfg-farm/ETSY_COMPETITIVE_POSITIONING_MATRIX.csv` — 29-row structured matrix
+   - Columns: Product, Keyword, Search_Volume_Est, Competition_Level, Saturation_Pct, Top_Competitor_Name, Competitor_Price_USD, Competitor_Rating, Competitor_Reviews, Recommended_Price_USD, Recommended_Tags, Seasonal_Peak, CPC_Proxy, Notes
+   - Filterable by product, sortable by competition level; ready for launch-day use
+
+**Key Findings**:
+- "cable wrap headphone hook" and "modular cable management" are near-zero competition terms ModRun can own from Day 1
+- "neodymium magnet labels" is completely unoccupied — no competitor markets N52 spec; ModRun owns it by default
+- Launch price $12.99 for clips and labels; $16.99 for hooks; raise after 15–20 reviews
+- 70-char title soft cap from Feb 2026 NLP update — titles over 70 chars face mobile demotion
+- January 2027 is the peak demand month across all three categories — listings must be live and have reviews before Jan 1
+- Existing prior research (10,500-word deep-dive at etsy-seo-strategy-q2-q3-2026.md) not duplicated; new files serve as condensed execution reference
+
+---
+
 ## Session 1445 (May 21 01:18–TBD UTC) — Orchestrator: Synthesis Preparation + Parallel Exploration Work
 
 **Orchestrator Tasks**:
