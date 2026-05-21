@@ -320,3 +320,120 @@ Add: Western Native Voice v. Montana (SB 490), decided May 11, 2026 — Montana 
 - State Voting Rights Acts medium article: https://democracymaps.medium.com/the-supreme-courts-decision-to-gut-the-vra-means-state-level-protections-are-more-important-than-2142bb9cbc5a
 
 *Produced: May 20, 2026. Session rapid-response research for Trump v. Barbara ruling pre-positioning. Cross-reference: DOMAIN_58_EMERGENCY_UPDATE_NOTES.md (May 19), DOMAIN_58_DISTRIBUTION_BRIDGE.md (May 15), DOMAIN_58_TRIBAL_SOVEREIGNTY_OUTLINE.md (May 15).*
+
+---
+
+## May 21 Research Supplement
+
+*Added: May 21, 2026 — independent research pass validating and extending May 20 pre-research. Confirms core structure; adds full amici landscape, SAVE Act compound-threat analysis, and extended Callais-to-Barbara precedent chain.*
+
+### Confirmed: Docket Status
+
+Case fully argued April 1, 2026. Expected ruling: late June to early July 2026. No ruling issued as of May 21.
+
+SCOTUSblog read from oral argument: seven justices expressed skepticism toward the administration's position. Chief Justice Roberts ("Well, it's a new world. It's the same Constitution.") and Gorsuch appeared most hostile. Thomas and Alito are the probable dissenters. Law professor Stephen Vladeck characterized the Gorsuch-Sauer exchange on tribal citizenship as "the most damaging moment for the government" in the entire proceeding.
+
+Sources: [SCOTUSblog — appears likely to side against Trump](https://www.scotusblog.com/2026/04/supreme-court-appears-likely-to-side-against-trump-on-birthright-citizenship/); [Capture Cascade Timeline — Gorsuch exchange](https://capturecascade.org/event/2026-04-01--scotus-birthright-citizenship-oral-arguments)
+
+### Confirmed: The Gorsuch-Sauer Exchange (exact record)
+
+The sequence is fully confirmed by multiple independent sources:
+
+> Gorsuch: "Do you think they [Native Americans] are birthright citizens?"
+> Sauer: "I think so, yes" — citing the Indian Citizenship Act of 1924 (statute).
+> Gorsuch: "Put aside the statute. Do you think they're birthright citizens?"
+> Sauer: "No, I think the clear understanding that everybody agrees in the congressional debates is that the children of tribal Indians are not birthright citizens."
+
+Sources: [Native News Online — oral argument analysis](https://nativenewsonline.net/opinion/the-indian-problem-is-back-this-time-in-a-supreme-court-argument-over-birthright-citizenship/); [KJZZ — Elk v. Wilkins cited](https://www.kjzz.org/indigenous-affairs/2026-04-04/an-1884-case-about-tribal-members-was-cited-to-end-birthright-citizenship); [Mondaq — Akin Gump oral argument analysis](https://www.mondaq.com/unitedstates/general-immigration/1770172/supreme-court-hears-argument-on-birthright-citizenship-executive-order-and-discusses-citizenship-of-native-americans)
+
+### Extended Amici Landscape
+
+The May 20 file focused on NARF and NCAI as primary tribal-law watchers. The full amici landscape on the respondents' side is substantially broader and should be reflected in outreach framing:
+
+**Federal Indian law scholars (direct tribal sovereignty amicus)**:
+- Professors Gregory Ablavsky (Stanford Law) and Bethany Berger (University of Iowa Law, Associate Dean) filed February 26, 2026. Core argument: Native Americans are "a narrow historical exception to birthright citizenship" because tribal nations are separate sovereigns — a categorically distinct status from undocumented immigrants. The administration is "misinterpreting this history and improperly using federal Indian law." This brief is the primary scholarly corrective to the Elk v. Wilkins misuse.
+- Source: [University of Iowa College of Law announcement](https://law.uiowa.edu/news/2026/03/bethany-berger-files-supreme-court-amicus-brief-trump-v-barbara)
+
+**Historians' brief**:
+- Professors Martha S. Jones (Johns Hopkins) and Kate Masur (Northwestern), facilitated by Brennan Center. Core argument: The Fourteenth Amendment was deliberately written with an expansive birthright citizenship principle based on decades of advocacy by free Black Americans before the Civil War — not limited to freed enslaved people or to domiciled parents.
+- Source: [Brennan Center — Historians' Amicus Brief](https://www.brennancenter.org/our-work/research-reports/historians-amicus-brief-trump-v-barbara)
+
+**51 immigrants' rights groups**:
+- Filed February 27, 2026. Includes Women's Refugee Commission. Arguments center on constitutional citizenship, statelessness risk, and gender-equal nationality rights.
+- Source: [Women's Refugee Commission](https://www.womensrefugeecommission.org/research-resources/amicus-brief-filed-in-support-of-respondents-in-trump-v-barbara/)
+
+**217 Democratic members of Congress (bicameral)**:
+- Filed by House Democrats' Litigation Task Force.
+- Source: [House Democrats' Litigation Task Force](https://litigationtaskforce.house.gov/news/press-releases/house-democrats-litigation-task-force-files-bicameral-amicus-brief-to-supreme-court-defending-birthright-citizenship-against-trump-attacks)
+
+**Constitutional Accountability Center**:
+- Core argument: "Subject to the jurisdiction thereof" encompasses anyone subject to U.S. legal authority; historical dictionaries and international legal practice at the Amendment's ratification support the broad reading.
+- Source: [Constitutional Accountability Center](https://www.theusconstitution.org/litigation/trump-v-barbara/)
+
+**U.S. Conference of Catholic Bishops**:
+- Supporting respondents. Moral and theological framing on birthright citizenship.
+- Source: [USCCB](https://www.usccb.org/resources/trump-v-barbara)
+
+**Common Cause**:
+- Defending birthright citizenship and the broader constitutional limit on executive power.
+- Source: [Common Cause](https://www.commoncause.org/work/trump-v-barbara/)
+
+**NAACP, League of Women Voters, National Urban League, and 200+ other organizations**:
+- Part of the 42+ respondent-side amicus filings.
+
+**Administration-supporting amici (for context)**:
+- Attorneys general from 25 Republican states; 31 Republican House members (led by Rep. Claudia Tenney); legal scholars Epstein, Von Spakovsky, Wurman; Citizens United.
+- Source: [Tenney press release](https://tenney.house.gov/media/press-releases/congresswoman-tenney-leads-amicus-brief-supreme-court-case-birthright)
+
+### New Finding: The SAVE Act as a Third Simultaneous Threat
+
+The SAVE Act (Safeguard American Voter Eligibility Act), currently pending Senate vote, requires documentary proof of citizenship including birth certificates for voter registration. Its interaction with Trump v. Barbara creates a compound threat not captured in the May 20 pre-research:
+
+1. The administration's legal theory in Barbara explicitly holds that tribal members' citizenship is statutory, not constitutional — casting doubt on whether tribal membership alone establishes citizenship under federal law.
+2. The SAVE Act requires "proof of citizenship" documentation for voter registration but the tribal IDs it nominally accepts must show "place of birth" — a requirement that no tribal ID currently meets.
+3. On the Navajo Nation (420,000 enrolled members), many residents lack physical addresses. Voter registration applicants are directed to provide latitude/longitude or Google Plus Codes — information that many tribal elders do not know.
+4. More than 3,000 ballots were rejected at tribal precincts in northern Arizona during the 2024 election under pre-SAVE Act procedures.
+5. The compound threat: if Barbara validates the "tribal citizenship is statutory" argument, a future administration could use SAVE Act infrastructure to challenge tribal members' voter registration documents on grounds that statutory citizenship under the 1924 Act is insufficient constitutional basis.
+
+In April 2026, the Navajo Nation Council unanimously passed a resolution opposing the SAVE Act. Council Speaker Crystalyne Curley: "It's just very ironic that we've been here for thousands of years that we're being questioned if we are really citizens of this nation."
+
+Sources: [NPR/WSIU — Navajo Nation slams SAVE Act](https://www.wsiu.org/politics-elections/2026-04-09/its-going-to-be-chaos-on-rural-navajo-nation-tribal-leaders-slam-voter-id-bill); [ICT News — SAVE Act disenfranchisement](https://ictnews.org/news/voting-rights-groups-say-save-act-would-disenfranchise-voters/)
+
+### Extended Precedent Chain
+
+The full erosion sequence in chronological order:
+
+| Case / Event | Date | Effect on Tribal Voting Rights |
+|---|---|---|
+| *Shelby County v. Holder* | June 25, 2013 | Section 5 preclearance gutted; tribal nations in covered states lost advance protection against discriminatory voting laws |
+| *Brnovich v. DNC* | July 1, 2021 | Section 2 narrowed for voting procedure challenges; raised bar for proof |
+| *Allen v. Milligan* | June 8, 2023 | Temporary Section 2 restoration on redistricting; forced Louisiana and Alabama to create majority-minority districts |
+| SAVE Act introduced | 2024 (reintroduced 2026) | Documentary citizenship requirement for voter registration; tribal ID lacking birth-location field means de facto exclusion |
+| *Louisiana v. Callais* | April 29, 2026 | Section 2 gutted; results test replaced by intent test; states can dismantle court-ordered minority districts; direct harm to tribal redistricting cases in MT, ND, SD, OK |
+| *Turtle Mountain Band v. Howe* — GVR | May 18, 2026 | SCOTUS vacated favorable Eighth Circuit ruling; remanded for reconsideration under hostile *Callais* standard; tribal map in effect for now but future uncertain |
+| *Board of Election Commissioners v. NAACP* — GVR | May 18, 2026 | Mississippi companion GVR same day; confirms multi-circuit erosion cascade across Fifth and Eighth Circuits |
+| *Trump v. Barbara* | Late June/July 2026 | **Pending**; threatens constitutional basis of tribal birthright citizenship; government position is tribal citizenship is statutory, not constitutional |
+
+The cascade logic: *Shelby County* removed advance protection. *Brnovich* raised the bar for procedure challenges. *Callais* gutted the redistricting remedy. *Turtle Mountain* GVR weaponized *Callais* against existing tribal victories. *Barbara* threatens the constitutional citizenship foundation underlying the franchise itself.
+
+### State-Level Wins as Post-Callais Alternative Model
+
+**Montana SB 490 — May 11, 2026**: Montana's First Judicial District Court (Lewis and Clark County) enjoined SB 490, which would have eliminated eight hours of Election Day voter registration and disproportionately suppressed Native American turnout. Plaintiffs: Western Native Voice, Confederated Salish and Kootenai Tribes, Blackfeet Nation, Fort Belknap Indian Community, Northern Cheyenne Tribe. This is the first documented post-*Callais* state-level tribal voting rights victory and proves the state constitutional challenge pathway survives even where federal VRA Section 2 has been gutted.
+
+Eight states have adopted State Voting Rights Acts: California (2002), Washington (2018), Virginia (2021), New York (2022), Connecticut (2023), Minnesota (2024), Colorado (2025), Maryland (2026). None of the five priority states for tribal voting (Montana, North Dakota, South Dakota, Arizona, Oklahoma) have state-level VRA equivalents. This is the primary legislative advocacy target for post-*Callais* tribal voting rights work.
+
+Sources: [Democracy Docket — Montana SB 490 injunction](https://www.democracydocket.com/news-alerts/montana-court-blocks-republican-backed-attack-on-election-day-registration/); [Western Native Voice](https://westernnativevoice.org)
+
+### Five Advocacy Angles (for Domain 58 outreach materials)
+
+**1. Citizenship as right, not gift**: The administration's theory is that tribal citizenship was given by Congress in 1924 and is therefore a statutory gift rather than a constitutional right. The Fourteenth Amendment was enacted precisely to end the era of contingent citizenship. "What Congress gave, Congress can take" is the argument the Amendment was designed to foreclose.
+
+**2. The John Elk frame**: John Elk was a Winnebago man who moved to Omaha, renounced tribal citizenship, and in 1880 tried to register to vote. The Supreme Court denied him the franchise using the same jurisdictional theory the Trump administration now deploys in Barbara. The ruling that denied John Elk the right to vote in 1884 is being resurrected to deny birthright citizenship in 2026.
+
+**3. Three-front attack frame**: The 2026 midterm cycle sees tribal voting rights attacked from three simultaneous directions — *Callais* (no redistricting remedy), the SAVE Act (documentary exclusion), and *Barbara* (constitutional citizenship threat). No single attack is unprecedented; the combination is.
+
+**4. Electoral margin stakes**: The Navajo Nation has 420,000 enrolled members. Cherokee Nation has 370,000+. In Montana, North Dakota, and South Dakota, tribal turnout is the margin variable in competitive Senate races. Undermining tribal citizenship is a calculation about who controls the Senate.
+
+**5. Dual citizenship precedent**: The Indian Citizenship Act of 1924 explicitly preserved tribal sovereignty while extending U.S. citizenship. That dual status has been reinforced by a century of federal law. Treating tribal membership as analogous to foreign allegiance — which is what the Barbara theory requires — reverses 200 years of federal Indian law and the explicit framework Congress built in 1924.
+
+*Supplement added: May 21, 2026 — research agent session*

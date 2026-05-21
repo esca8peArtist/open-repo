@@ -1,5 +1,26 @@
 # Work Log
 
+## Session 1447 (May 21 UTC) — General Research Agent: Veterinary Care Crisis Contexts Deep Research
+
+**Task**: Phase 5 Wave 2 deep research on veterinary care in crisis contexts. Extended prior research documents (phase-5-veterinary-care-research.md and SYSTEMS_RESILIENCE_VETERINARY_CARE_RESEARCH.md, both May 20) to fill documented gaps and add new material.
+
+**File Created**:
+- `projects/systems-resilience/veterinary-care-crisis-contexts-research.md` — 45 net new sources, 8 research sections
+
+**Key Findings Added** (not in prior documents):
+1. **One Big Beautiful Bill Act (July 2025)**: Caps federal veterinary student loans at $50K/year/$200K lifetime, eliminates Grad PLUS Loans effective July 2026. Worsens the structural debt-income disparity driving rural shortage — the most significant policy development since the prior research cycle.
+2. **State telehealth mapping (extended)**: VVCA map (updated April 13, 2026) confirms Illinois expressly prohibits telemedicine VCPR; Michigan has no VCPR statute (effectively permissive); Iowa, Indiana, Wisconsin, Missouri likely in physical-exam-required majority. Ohio livestock requires in-person VCPR before telehealth. Zone 5 producers largely cannot use veterinary telemedicine for livestock prescriptions without prior in-person VCPR.
+3. **Texas Panhandle wildfire (February 2024) as documented mass casualty livestock triage case study**: 700 cattle triaged, 271 treated; documented burn triage decision rules including delayed-presentation hoof slough (4–7 days post-fire); professional capacity covered a fraction of affected animals.
+4. **H5N1 dairy cattle outbreak (2024) as One Health crisis scenario**: 19 states confirmed including Iowa, Minnesota, Wisconsin; 41 human infections in farm workers/veterinary practitioners; H5N1 confirmed in Oregon pigs November 2024 (comingled-species biosecurity implication for Zone 5 homesteads).
+5. **52% companion animal care access data**: PetSmart Charities-Gallup 2024–2025 survey (n=2,498); 71% cite cost as primary barrier; baseline finding that most U.S. pet owners already defer care before any disruption scenario.
+6. **India MVU model**: National program provisions one mobile veterinary unit per 100,000 livestock population; Andhra Pradesh's 1962 Call Service model; hybrid telemedicine + scheduled visit model.
+7. **Supply chain disruption case study**: 2020–2023 penicillin shortage (19% sales decline 2020–2021, Chinese API supplier quality failure + human amoxicillin diversion) + GFI 263 timing compounding the crisis.
+8. **Ethnoveterinary evidence base**: Sub-Saharan Africa systematic review — extensive documentation of traditional practices, limited pharmacological validation; framework for acknowledging community knowledge while maintaining escalation thresholds.
+
+**Confidence**: High on all lead findings (multiple independent authoritative sources).
+
+---
+
 ## Session 1445 (May 21 01:36–TBD UTC) — Orchestrator: Parallel Subagent Execution
 
 **Execution Model**: Spawned 2 parallel subagents at 01:36 UTC for independent autonomous work while main orchestrator prepares for May 21 19:00 UTC synthesis. No blocking dependencies between agent tasks.
@@ -5679,5 +5700,70 @@ Comprehensive production-readiness audit of resistance-research Phase 1 Wave 1 p
 - May 21 19:00 UTC (resistance-research synthesis execution — fully autonomous, scheduled)
 - OR May 22 before 13:30 UTC (if user resolves stockbot SSH auth, orchestrator can verify config fix)
 - OR May 22 20:00 UTC (stockbot checkpoint outcome, decision framework application)
+
+---
+
+## Session 1446 (Continued) — Systems-Resilience Veterinary Care Research
+
+### 4. ✅ **Systems-Resilience Agent: Veterinary Care in Crisis Contexts Research**
+
+**Task**: Session 1411 Exploration Queue item (remaining) — Research veterinary care systems in crisis and resource-constrained contexts for Phase 5 Wave 2 guide development.
+
+**Deliverable**: `projects/systems-resilience/veterinary-care-crisis-contexts-research.md` (8,392 words, production-ready for Wave 2 outline, 68 KB)
+
+**Eight Major New Findings** (extending prior May 20 documents):
+
+1. **One Big Beautiful Bill Act (OBBB, July 2025)** — Student loan caps ($50K/year, $200K lifetime, no GRAD PLUS) effective July 2026 accelerate shortage. Food animal practice income (~$100K/year) now even less viable vs. companion animal (~$133K/year). Shortage trajectory accelerating, not stable.
+
+2. **State Telehealth Law Mapping** — Zone 5 largely locked out. Illinois prohibits telemedicine VCPR, Michigan has no VCPR statute (pending legislation), Iowa/Indiana/Wisconsin/Missouri require physical exams before livestock telemedicine. Ohio's Sept 2025 law requires in-person VCPR for livestock first. Practical action: annual in-person VCPR to enable producer telemedicine use.
+
+3. **Texas Panhandle Wildfire (Feb 2024)** — First documented mass livestock casualty triage case study. 1M+ acres burned, 10,000+ cattle killed. Texas A&M triage rules: (a) euthanize extensive burns immediately, (b) hoof slough at 4–7 days post-fire is kill criterion (counterintuitive injury), (c) professional capacity covered small fraction — producer independent triage dominated response.
+
+4. **H5N1 Dairy Cattle Outbreak (2024)** — One Health crisis scenario. 19 states confirmed including Iowa/Minnesota/Wisconsin (Zone 5 core), 41 human infections including veterinarians. Oregon backyard pigs confirmed November 2024 via poultry contact — biosecurity implication for mixed-species Zone 5 homesteads. Outbreak exposed surveillance gap from thin large-animal veterinary coverage.
+
+5. **Companion Animal Access Crisis** — PetSmart Charities-Gallup survey (Nov 2024–Jan 2025): 52% of pet owners skipped/declined needed care in past year; 71% cite cost. Households under $60K most affected. Baseline before any disruption. Community clinic model (Project Street Vet, humane society hardship) serves population but nationally fragmented, locally variable.
+
+6. **India Mobile Veterinary Unit Model** — Most substantial international model documented. One MVU per 100,000 livestock population. Andhra Pradesh 1962 Call Service is most farmer-accessible — single number, on-farm visit, no clinic needed. March 2025 cabinet approval ₹3,880 crore (~$460M USD) over 2 years. Hybrid telemedicine-plus-scheduled-mobile-visit is most transferable architecture for U.S. community veterinary cooperative design.
+
+7. **Drug Supply Chain Disruption (2020–2023)** — Penicillin shortage 19% sales decline from Chinese API supplier failure + human amoxicillin diverting shared ingredient base. GFI 263 transition arrived June 2023 as supply recovering, compounding access gap. Scenario (supply disruption + regulatory transition + access shortage) shows why prescription pre-positioning is controlling guide recommendation.
+
+8. **Ethnoveterinary Evidence Base** — Sub-Saharan Africa 56-document systematic review. 138 plants documented in Cameroon. Evidence quality: extensive documentation, limited pharmacological validation. Some validated (garlic for ectoparasites, Cucurbita pepo for tapeworms). Frame as legitimate resilience capacity, not superstition, with escalation thresholds to formal care.
+
+**Business Value**: Phase 5 Wave 2 pre-research complete. All success criteria met: rural shortage quantified (700+ counties + OBBB context), 7+ triage conditions documented, 4+ international models analyzed, 9-state telehealth mapping, 5 crisis scenarios, file structured for guide writers with Wave 2 implications. Ready for June 1 user decision on Wave 2 execution sequence.
+
+---
+
+## Session 1446 Final Status
+
+**Exploration Queue Completion**: All 3 active items COMPLETE
+1. ✅ resistance-research: Trump v. Barbara rapid-response research (7K words)
+2. ✅ seedwarden: Herbalist network ecosystem mapping (7.2K words)
+3. ✅ systems-resilience: Veterinary care crisis contexts research (8.4K words)
+
+**Deliverables Created** (3 files):
+- `trump-v-barbara-rapid-response.md` v2 supplement (7K words, Domain 58 framing correction)
+- `HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md` v3.0 (7.2K words, practitioner ecosystem complete)
+- `veterinary-care-crisis-contexts-research.md` (8.4K words, Wave 2 pre-research complete)
+
+**PROJECTS.md Updates** (2 corrections):
+- Domain 58 framing corrected (birthright citizenship, not voting rights)
+- Seedwarden Current Focus updated (herbalist network mapping complete, RH peer review blocker identified)
+- Exploration Queue items marked complete (all 3)
+
+**Session Metrics**:
+- **Duration**: 3.5 hours elapsed
+- **Agents spawned**: 3 parallel (resistance-research, seedwarden, systems-resilience)
+- **Token usage**: ~350K total (agents ~300K, orchestrator ~50K)
+- **Orchestration commits**: 1 (Session 1446 exploration queue completion)
+
+**Blockers** (unchanged, 3 active):
+- stockbot: SSH auth (May 22 13:30 UTC deadline — 36 hours remaining)
+- mfg-farm: test-print-results
+- cybersecurity-hardening: VeraCrypt restart
+
+**Next Session Trigger**:
+- May 21 19:00 UTC (resistance-research synthesis execution — fully autonomous, scheduled)
+- OR May 22 before 13:30 UTC (if user resolves stockbot SSH auth)
+- OR May 22 20:00 UTC (stockbot checkpoint outcome)
 
 ---
