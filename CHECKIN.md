@@ -1,3 +1,88 @@
+## Since Last Check-in (Session 1451 — ORCHESTRATOR, May 21 06:44–07:00 UTC) — Exploration Queue Refresh + Synthesis Execution Scheduled
+
+**Status**: ✅ **EXPLORATION QUEUE REFRESHED (3 new items, 2 completed)** | ✅ **SYNTHESIS EXECUTION SCHEDULED 19:00 UTC (12+ hours away, cron jobs active)** | 🔴 **STOCKBOT SSH CRITICAL DEADLINE: May 22 13:30 UTC (30.5 hours, user action required)**
+
+### Session 1451 Work (06:44–07:00 UTC)
+
+**Orientation & State Assessment**:
+- ✅ Verified all three active blocks remain active (no new resolutions, all user action items)
+- ✅ Confirmed exploration queue cleared from Session 1450
+- ✅ Trump v. Barbara status checked (SCOTUS majority appears likely to strike down executive order, ruling expected late June/early July 2026)
+- ✅ Synthesis infrastructure ready for 19:00 UTC autonomous execution
+
+**Parallel Agent Work (Exploration Queue Refresh)**:
+
+**Item 1: stockbot — Gate 2 Post-Checkpoint Architecture Decision Framework** ✅ COMPLETE
+- **Agent**: stockbot subagent (specialized execution)
+- **Deliverable**: `projects/stockbot/GATE_2_ARCHITECTURE_DECISION_FRAMEWORK.md` (3,800 words)
+- **Key findings**: 
+  - **Scenario A (Equity-Only)**: $2–3K/month, 1.2–1.5 Sharpe, 15–20% max DD; no new code required beyond existing ARCH
+  - **Scenario B (Covered-Call Overlay)**: $3.2–4.5K/month, 1.3–1.7 Sharpe, 10–14% max DD; 36–42 hours dev; **recommended post-PASS path**
+  - **Scenario C (Multi-Strategy Ensemble)**: September 1 target, $6–8K/month projected; CSP capital lockout is structural constraint (5 CSPs = 85.8% equity freeze)
+  - **Critical blocker identified**: Gap 4 (naked-call prevention) must be implemented before any covered-call writes (2 hours, cannot skip)
+- **Decision tree**: Binary fork on May 22 SSH auth outcome — either Lever B runs or fails; routes user to correct scenario
+- **Gates**: User decision May 22-23 post-checkpoint
+
+**Item 2: cybersecurity-hardening — Trump v. Barbara Rapid-Response Research** ✅ COMPLETE
+- **Agent**: general-research agent
+- **Deliverables**: Updated `projects/resistance-research/trump-v-barbara-rapid-response.md` v3 (2,200 words) + `domains/domain-58-tribal-sovereignty.md` sections 11a, 11b (1,700 words)
+- **Key findings**:
+  - **Ruling projection**: 6-3 or 7-2 against executive order (Roberts: government argument "quirky"; Gorsuch: pointed questioning on tribal citizenship)
+  - **DOJ/ICE pivot mechanisms** (all already active): Birth Tourism Initiative, Mobile Fortify biometric override, CMS-ICE Medicaid data sharing, Penlink location data, birth certificate authenticity disputes
+  - **Tribal citizenship admin law defenses** (3 frameworks): ISDEAA Section 110 (no tribe filed FY2026 claim yet), Mitchell fiduciary duty prohibition, APA arbitrary-and-capricious (GAO-26-108673 is evidentiary foundation)
+  - **Factual correction**: Callais v. Stieda does not exist; actual tribal win is Western Native Voice v. Montana (May 11, 2026)
+  - **Turtle Mountain v. Howe**: GVR issued May 19; no Eighth Circuit relief before Q1 2027; state constitutional claims must develop now
+  - **Litigation windows**: Probate function failure (Court of Federal Claims, ripe now), ISDEAA Section 110 (ripe, no tribe filed), APA arbitrary-and-capricious (ripe)
+- **Gates**: Phase 1 Tier 1 distribution (May 25+), Domain 58 integration in Phase 2
+
+**Synthesis Preparation & Scheduling**:
+- ✅ Created `projects/resistance-research/SYNTHESIS_EXECUTION_FRAMEWORK_MAY21.md` with 4-outcome determination framework
+- ✅ Scheduled cron jobs:
+  - Job 908838d3: Pre-execution review at 18:00 UTC (state verification + Trump ruling confirmation)
+  - Job c1da6c3c: Synthesis execution at 19:00 UTC (autonomous Phase 2 launch path determination)
+- ✅ Staged SYNTHESIS_EXECUTION_FRAMEWORK with:
+  - 4-outcome decision tree: STRONG / MODERATE / WEAK / TOO_EARLY
+  - Go/no-go criteria per outcome
+  - Next-step actions keyed to outcome
+  - Integration with broader Phase 1 Batch 2 timeline (May 21-23 distribution if STRONG/MODERATE; May 25-28 if WEAK; June 1+ if TOO_EARLY)
+
+**Files Committed** (this session):
+- EXPLORATION_QUEUE.md (created, 3 active items + 3 completed items logged)
+- stockbot: GATE_2_ARCHITECTURE_DECISION_FRAMEWORK.md
+- resistance-research: Trump v. Barbara rapid-response v3 supplement + Domain 58 updates
+- resistance-research: SYNTHESIS_EXECUTION_FRAMEWORK_MAY21.md
+- WORKLOG.md (Session 1451 log)
+
+**Session 1451 Summary (06:44–07:00 UTC)**:
+- ✅ Oriented to state: 3 active blocks unresolved (all user action items), exploration queue cleared
+- ✅ Spawned 2 parallel agents for exploration queue refresh (Gate 2 architecture + Trump v. Barbara research)
+- ✅ Both agents completed work within execution window (74.6K + 85.3K tokens, production-ready deliverables)
+- ✅ Created synthesis execution framework with 4-outcome determination logic
+- ✅ Scheduled cron jobs for pre-execution review (18:00 UTC) and synthesis execution (19:00 UTC)
+- ✅ All deliverables committed to master (exploration queue + framework + agent work)
+- **Status**: Ready for May 21 19:00 UTC autonomous synthesis execution. All 11.5 hours of idle time budgeted for synthesis prep + potential additional work.
+
+### Needs Your Input (Session 1451 + Upcoming)
+
+**CRITICAL DEADLINE — May 22 13:30 UTC (30.5 hours remaining)**: stockbot Lever B SSH auth fix
+- **Action required**: Either (A) add orchestrator's ED25519 public key to Jetson `/home/ubuntu/.ssh/authorized_keys`, OR (B) SSH manually to ubuntu@100.120.18.84 and run 5-minute HMM config fix (see BLOCKED.md line 89-92 for exact commands)
+- **If not completed**: Lever B HMM configuration cannot be activated for May 22 20:00 UTC checkpoint
+- **Fallback**: Gate 2 architecture decision framework includes contingency if Lever B fails (Scenario A: equity-only continuation)
+
+**May 21 19:00 UTC — Resistance-Research Synthesis Autonomous Execution**
+- **Pre-execution items** (already done):
+  - ✅ Trump v. Barbara ruling check completed (May 21 06:44 UTC): majority appears likely to preserve birthright citizenship; ruling expected late June/early July
+  - ⏳ Signal log fill (May 20 ~22:00 UTC) — verify if completed, non-blocking if not
+- **Synthesis outcome determines**: STRONG/MODERATE (same-day Phase 2 distribution May 21-23) vs WEAK/TOO_EARLY (hold until May 25-28 gate with additional research)
+
+**Suggested Next Actions (after May 21 synthesis)**:
+1. **If synthesis outcome is STRONG/MODERATE**: Phase 2 research distribution begins May 21-23. Gates: June 1 Tier 1 distribution completion.
+2. **If synthesis outcome is WEAK/TOO_EARLY**: Hold pattern activates; re-synthesis scheduled for May 25-28. Continue May 22 checkpoint execution; Phase 2 launch contingencies staged.
+3. **May 22 Checkpoint (20:00 UTC)**: stockbot checkpoint execution; outcome determines Gate 2 strategy (Scenario A/B/C selection).
+4. **May 22 13:30 UTC**: stockbot SSH auth deadline; either fix Lever B or proceed with Lever A fallback.
+
+---
+
 ## Since Last Check-in (Session 1450 — ORCHESTRATOR, May 21 06:30–07:20 UTC) — All 3 Exploration Queue Items Complete (Parallel Agents)
 
 **Status**: ✅ **ALL 3 EXPLORATION QUEUE ITEMS COMPLETE & COMMITTED (mfg-farm supply chain, seedwarden practitioner outreach, cybersecurity encryption transition)** | ⏰ **RESISTANCE-RESEARCH SYNTHESIS COUNTDOWN: May 21 19:00 UTC (11.5 hours away)** | 🔴 **STOCKBOT SSH CRITICAL DEADLINE: May 22 13:30 UTC (31 hours, user action required)**
