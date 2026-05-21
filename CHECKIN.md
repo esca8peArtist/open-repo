@@ -1,20 +1,33 @@
-## Session 1460 — MONITORING STATE (May 21 11:43 UTC) — All Blocks Verified, Synthesis Staged, Awaiting User Signal Log
+## Session 1460 — EXPLORATION QUEUE REFRESH + CRITICAL ESCALATION CONFIRMATION (May 21 11:49 UTC)
 
-**Status**: 🔴 **CRITICAL: SIGNAL LOG UNFILLED** (17 templates, due 19:00 UTC = 7h 17m) | ✅ **ALL EXPLORATION ITEMS 1-18 COMPLETE** | ✅ **ZERO AUTONOMOUS WORK AVAILABLE** | ⏰ **SYNTHESIS STAGED: May 21 19:00 UTC** | ⏰ **CHECKPOINT STAGED: May 22 20:00 UTC** | 🔴 **SSH CRITICAL: May 22 13:30 UTC (24h 50m)**
+**Status**: 🔴 **CRITICAL: SIGNAL LOG UNFILLED** (17 templates, due 19:00 UTC = ~7h) | 🔴 **SSH AUTH CRITICAL** (May 22 13:30 UTC = ~26h) | ✅ **EXPLORATION QUEUE REFRESHED: Items 19-21 added** | ⏰ **SYNTHESIS STAGED: May 21 19:00 UTC** | ⏰ **CHECKPOINT STAGED: May 22 20:00 UTC**
 
-**Session 1460 assessment** (brief verification):
-- ✅ No new blocks resolved since Session 1459 (8 minutes ago)
-- ✅ Signal log still has 17 [fill] templates unfilled — synthesis blocked
-- ✅ SSH to Jetson still failing — critical deadline May 22 13:30 UTC
-- ✅ All 18 exploration items still complete; zero autonomous work available
-- ✅ Synthesis infrastructure ready; awaiting signal log fill before 19:00 UTC execution
-- ✅ Checkpoint fully pre-staged for May 22 20:00 UTC autonomous execution
-- ✅ No new autonomous work can be queued until synthesis/checkpoint outcomes determine next phase
+**Session 1460 work completed**:
+1. ✅ Verified all 4 active blocks — no new resolutions
+   - resistance-research signal log: 17 [fill] placeholders remain (synthesis blocked)
+   - stockbot SSH auth: verification command failed "Permission denied (publickey,password)" (critical deadline <26h)
+   - cybersecurity-hardening VeraCrypt: manual restart required (cannot auto-verify)
+   - mfg-farm test print: not executed (user action required)
 
-**Critical path unchanged from Session 1459**:
-1. **May 21 19:00 UTC (7h 17m)**: Synthesis execution — BLOCKED if signal log unfilled
-2. **May 22 13:30 UTC (24h 50m)**: SSH auth deadline — CRITICAL for Lever B config
-3. **May 22 20:00 UTC (32h 17m)**: Checkpoint execution — fully autonomous, fully pre-staged
+2. ✅ Assessed autonomous work landscape
+   - All 18 exploration items complete (Sessions 1443-1458)
+   - Zero new autonomous code work available (all projects blocked on user actions or synthesis/checkpoint outcomes)
+   - Per protocol: queue was empty of pending work; added 3 new items
+
+3. ✅ Added 3 new exploration items to queue
+   - **Item 19**: stockbot — Gate 2 Post-Checkpoint Execution Decision Intelligence (stockbot subagent, deadline May 23)
+   - **Item 20**: resistance-research — Phase 2 Batch 2 Domain Architecture (general-research subagent, deadline May 30/May 25 if synthesis is STRONG)
+   - **Item 21**: seedwarden — Track B Geographic Expansion & Channel Diversification (seedwarden subagent, deadline June 1)
+
+**Critical path summary**:
+1. **May 21 19:00 UTC (~7h remaining)**: Resistance-research synthesis execution — **BLOCKED if signal log unfilled**
+2. **May 22 13:30 UTC (~26h remaining)**: SSH auth fix deadline — **CRITICAL for Lever B HMM config deployment**
+3. **May 22 20:00 UTC (~32h remaining)**: Stockbot checkpoint execution — fully autonomous, fully pre-staged
+
+**Immediate user action items**:
+1. **FILL SIGNAL LOG by 19:00 UTC** (May 18-21 response data) — required for synthesis execution
+2. **SSH FIX by May 22 13:30 UTC** — add public key OR manually run config fix on Jetson
+3. **(Optional) Check Trump v. Barbara ruling** — if issued, log for Domain 58 rapid-response
 
 ---
 

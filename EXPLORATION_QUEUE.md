@@ -164,6 +164,26 @@
 
 ---
 
+### 19. ⏳ stockbot — Gate 2 Post-Checkpoint Execution Decision Intelligence (Session 1460 — Added May 21)
+**Scope**: If May 22 20:00 UTC checkpoint outcome is PASS (Lever B HMM regime masking successful), what are decision points for June 1-15? If FAIL, what's the Lever A revert + option B1 (covered-call overlay) rapid-response timeline?
+- **Deliverables**: Decision tree for 3 post-PASS paths (multi-ticker expansion GO, covered-call exploration, defer to June 15), rapid-response checklist for FAIL scenario (Lever A revert rollback commands, timeline)
+- **Owner**: stockbot subagent
+- **Deadline**: May 23 (pre-execution staging for post-May-22 decision)
+
+### 20. ⏳ resistance-research — Phase 2 Batch 2 Domain Architecture (Session 1460 — Added May 21)
+**Scope**: Domains 57 (Multilateral Withdrawal, 40-50 hrs) and 59 (Economic Precarity, 50-60 hrs) queued for Phase 2 but not yet researched. Pre-stage 50-line outlines + 20+ source lists per domain + expert contact list + preliminary causal pathway analysis.
+- **Deliverables**: `PHASE_2_BATCH_2_DOMAINS_57_59_OUTLINES.md` (2,500+ words) — scope, sources, contacts, timeline for July-August 2026 research execution
+- **Owner**: general-research subagent
+- **Deadline**: May 30 (deferred pending synthesis outcome; if synthesis is STRONG/MODERATE, execute May 23-25 instead)
+
+### 21. ⏳ seedwarden — Track B Geographic Expansion & Channel Diversification (Session 1460 — Added May 21)
+**Scope**: Track B June 22 launch is ready; Track A has blockers. Research geographic markets (Canada, UK, EU) + wholesale channels (practitioners, clinics, complementary medicine retailers) that don't depend on Track A user decisions.
+- **Deliverables**: `TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md` (compliance, VAT/HST, practitioner networks by region) + `TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md` (margins, partner tiers, MOQs)
+- **Owner**: seedwarden subagent
+- **Deadline**: June 1 (supports June 15 post-launch channel activation)
+
+---
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
