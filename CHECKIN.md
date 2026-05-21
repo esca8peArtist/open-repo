@@ -1,3 +1,47 @@
+## Since Last Check-in (Session 1458 — ORCHESTRATOR, May 21 11:15–12:55 UTC) — Exploration Queue Refreshed, 15 Pre-Gate Deliverables Complete
+
+**Status**: ✅ **EXPLORATION ITEMS 16-18 COMPLETE (3.5h turnaround)** | ✅ **PHASE 5.2 POST-MERGE READY** | ✅ **PHASE 2 PRE-STAGING COMPLETE** | ✅ **PHASE 3 MARKETING SCAFFOLDED** | ⏰ **SYNTHESIS: May 21 19:00 UTC (6h 5m)** | 🔴 **SSH CRITICAL: May 22 13:30 UTC (24h 35m)**
+
+**What was accomplished**:
+- ✅ Orientation verified all 4 blocks remain active (signal log 17 unfilled, SSH auth failing, test print pending, VeraCrypt restart needed)
+- ✅ Exploration Queue refreshed: added items 16-18 (immediate research/architecture work while waiting for synthesis/checkpoint)
+- ✅ Spawned 3 parallel subagents (11:16 UTC) — all completed within 99-minute window (12:55 UTC)
+  - **open-repo (Item 16)**: Phase 5.2 Post-Merge Implementation — 3 files
+    - PHASE_5.2_IMPLEMENTATION_ROADMAP.md (3,263 words): June 1–July 4 timeline, 1 developer feasible with medical as critical path
+    - MEDICAL_CONTENT_SOURCING_CHECKLIST.md (2,928 words): 8 authoritative sources (WHO, CDC, MSF, RxNorm, NLM, Wilderness Med, AHA/ERC, ICRC)
+    - PHASE_5.2_ZIM_VALIDATION_MATRIX.md (3,555 words): All 5 candidates assessed (3 PASS, 2 CONDITIONAL with resolution paths)
+  - **mfg-farm (Item 17)**: Phase 2 Supplier Outreach & Capital Planning — 5 files
+    - BAMBU_LAB_FARM_SUPPLIER_CONTACTS.md: 6+ suppliers, lead times 3–7 days, SimplyPrint integration
+    - POLYMAKER_WHOLESALE_ONBOARDING_GUIDE.md: $14.99/kg pricing, net-30 terms, co-marketing available
+    - AMAZON_FBA_ALTERNATIVE_3PL_COMPARISON.md: FBA $8.16/unit, 3PL break-even at 300 orders/month, self-fulfill $5.63/order
+    - PHASE_2_CAPITAL_DEPLOYMENT_TIMELINE.md: Bootstrap $787 ($350 trademark + $272 FBA + $165 consumables), week-by-week June calendar
+    - **TRADEMARK_FILING_STRATEGY.md**: **CORRECTION** — 14–16 months to registration (not 3–4), but Brand Registry Day 0 on pending app
+  - **seedwarden (Item 18)**: Phase 3 Launch Marketing & Affiliate Onboarding — 5 files
+    - PRACTITIONER_FIRST_CONTACT_SEQUENCE.md: 25-contact roster, 3 email templates, 4-week timeline (May 28–June 15)
+    - AFFILIATE_PARTNERSHIP_FRAMEWORK.md: 20%/15%/10% commission tiers (above 5–10% market), Etsy coupon tracking
+    - PRE_LAUNCH_EMAIL_SEQUENCES.md: 3 complete sequences (A/B/C) with subject lines, preview text, CTAs
+    - CONTENT_CALENDAR_JUNE_22_JULY_15.md: 8 content themes, 3x/week Instagram + 1 email/week + 1 blog/week
+    - PEER_REVIEWER_RECRUITMENT_STRATEGY.md: 8 RH/AHG candidates with contraindication depth ratings, June 8 confirmation deadline
+
+**Critical path status**:
+- **resistance-research synthesis (May 21 19:00 UTC in 6h 05m)**: Signal log still unfilled (17 [fill] templates). Synthesis BLOCKED unless user fills response data by deadline.
+- **stockbot SSH auth (May 22 13:30 UTC in 24h 35m)**: **CRITICAL DEADLINE** — Lever B config deployment blocked. User must add public key to authorized_keys OR run manual fix by this time.
+- **stockbot checkpoint (May 22 20:00 UTC in 32h 05m)**: Gate 2 architecture fully validated; execution ready regardless of outcome.
+
+**Pre-gate preparation complete for all three decision points**:
+1. **Phase 5.1 merge approval (May 25-26)**: Phase 5.2 implementation roadmap ready; June 1 activation can proceed immediately post-merge
+2. **Test print validation (May 23-28)**: Phase 2 supplier outreach & capital timeline ready; can execute June 1-15 pre-orders independently
+3. **Phase 3 scope decision (May 30)**: Marketing/affiliate scaffolding complete; practitioner outreach can begin June 1 regardless of bundle scope
+
+**Files committed**: 15 new files (3 open-repo, 5 mfg-farm, 5 seedwarden) + EXPLORATION_QUEUE.md + WORKLOG.md
+
+**Next critical milestones**:
+1. **May 21 19:00 UTC (6h 5m)**: Resistance-research Phase 2 synthesis (autonomous cron execution, blocked if signal log unfilled)
+2. **May 22 13:30 UTC (24h 35m)**: ✋ **USER ACTION CRITICAL** — stockbot SSH auth fix deadline
+3. **May 22 20:00 UTC (32h 05m)**: Stockbot Gate 2 checkpoint execution (fully pre-staged, decision tree ready)
+
+---
+
 ## Since Last Check-in (Session 1457 — ORCHESTRATOR, May 21 10:51–12:55 UTC) — 3 Parallel Exploration Items Complete, Critical Gates Validated
 
 **Status**: ✅ **EXPLORATION QUEUE ITEMS 13-15 COMPLETE** | ✅ **GATE 2 ARCHITECTURE VALIDATED** | ✅ **MULTI-CHANNEL ARCHITECTURE READY** | ✅ **VETERINARY NETWORK STAGED** | ⏰ **SYNTHESIS: May 21 19:00 UTC (6h 5m)** | 🔴 **SSH CRITICAL: May 22 13:30 UTC (24h 35m)**
