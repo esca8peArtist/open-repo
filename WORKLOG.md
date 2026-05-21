@@ -1,5 +1,53 @@
 # Work Log
 
+## Session 1451 (May 21, 06:34–19:00 UTC) — Exploration Queue Refresh + Synthesis Preparation
+
+**Task**: Create exploration queue with 3 active items; spawn parallel agents for Gate 2 architecture + Trump v. Barbara research; prepare for resistance-research synthesis execution at 19:00 UTC.
+
+**Blocks Resolution**:
+- ✅ Checked all three active blocks (stockbot SSH auth, cybersecurity-hardening Windows restart, mfg-farm test print) — all remain active (user action items, no automation possible)
+- ✅ Trump v. Barbara status verified: SCOTUS oral arguments April 1, majority appears likely to strike down executive order (preserve birthright citizenship), ruling expected late June/early July 2026
+
+**Files Produced**:
+
+### EXPLORATION_QUEUE.md (created)
+- 3 active items queued for parallel agent work:
+  1. **stockbot — Gate 2 Post-Checkpoint Architecture Decision Framework** (completed)
+  2. **cybersecurity-hardening — Trump v. Barbara Rapid-Response Update** (completed)
+  3. **mfg-farm — Multi-Printer Scaling Architecture** (queued for future session)
+
+### stockbot Agent Deliverable
+- `projects/stockbot/GATE_2_ARCHITECTURE_DECISION_FRAMEWORK.md` (3,800 words)
+  - **Scenario A** (Equity-Only): $2–3K/month, 1.2–1.5 Sharpe, 15–20% max DD
+  - **Scenario B** (Covered-Call Overlay): $3.2–4.5K/month, 1.3–1.7 Sharpe, 10–14% max DD (recommended post-PASS)
+  - **Scenario C** (Multi-Strategy Ensemble): $6–8K/month projected, September 1 target (capital lockout constraints identified)
+  - Decision tree keyed to May 22 checkpoint outcome
+  - **Critical blocker identified**: Gap 4 (naked-call prevention) must be implemented before any covered-call writes (2 hours, can't skip)
+
+### general-research Agent Deliverable
+- `projects/resistance-research/trump-v-barbara-rapid-response.md` v3 supplement (2,200 words)
+- `projects/resistance-research/domains/domain-58-tribal-sovereignty.md` sections 11a, 11b (1,700 words)
+  - **Key findings**: 
+    - Ruling projection: 6-3 or 7-2 against executive order (late June/early July 2026)
+    - Five DOJ/ICE pivot mechanisms already active (Birth Tourism Initiative, Mobile Fortify biometric override, CMS-ICE Medicaid data sharing, Penlink location data, birth certificate authenticity disputes)
+    - Tribal citizenship admin law defenses: ISDEAA Section 110, fiduciary duty breach, APA arbitrary-and-capricious (GAO-26-108673 provides evidentiary foundation)
+    - **Factual correction**: Callais v. Stieda does not exist; actual tribal win is Western Native Voice v. Montana (May 11, 2026)
+    - Turtle Mountain v. Howe post-GVR calendar: no Eighth Circuit relief before Q1 2027
+
+**Commits**:
+- Stockbot submodule: `feat(stockbot): Gate 2 post-checkpoint architecture decision framework`
+- Resistance-research submodule: `docs(resistance-research): Trump v. Barbara rapid-response v3 supplement + Domain 58 tribal surveillance escalation analysis`
+- Main repo: `chore(orchestrator): session 1451 — exploration queue created (3 active items), Gate 2 architecture + Trump v. Barbara research complete`
+
+**Next**:
+- 18:00 UTC: Pre-execution review for resistance-research synthesis
+- 19:00 UTC: Execute resistance-research synthesis (Phase 2 launch path determination)
+- 19:30–21:00 UTC: Post-synthesis cleanup and check-in preparation
+
+**Status**: On track. Two of three exploration items complete. Synthesis execution scheduled for 19:00 UTC (ready to proceed autonomously). All active blocks remain unresolved (user action items only).
+
+---
+
 ## Session 1450 (May 21, continued) — cybersecurity-hardening: Windows Encryption Transition Guide (VeraCrypt Certificate Crisis)
 
 **Task**: Research and write complete Windows encryption transition guide for VeraCrypt certificate expiration crisis (June 27, 2026 hard deadline). Three production-ready files.
