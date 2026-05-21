@@ -4,6 +4,69 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 2 Analytics & Success Metrics Tracker — May 21, 2026
+
+**Task**: Build production-ready Phase 2 analytics infrastructure. Exploration Queue item, 2-3 hrs.
+Scope: (1) consolidated Google Sheets template specification for 7 sheets, (2) formula specification
+for all 23 core metrics (daily/weekly/monthly), (3) Etsy API endpoint documentation, (4) GA4 custom
+event schema, (5) Kit integration procedure, (6) 5-step user setup procedure for May 29-30 execution.
+
+**Files read before writing**:
+- `PHASE_2_ANALYTICS_GOOGLE_SHEETS_TEMPLATE_SPEC.md` — existing 7-sheet column definitions
+- `PHASE_2_ANALYTICS_SETUP_GUIDE.md` — existing 5-step walkthrough
+- `PHASE_2_ANALYTICS_INFRASTRUCTURE_PRESTAGING.md` — Etsy OAuth scripts, Discord alerts
+- `phase-2-analytics-strategy.md` — cohort logic, decision triggers, baseline expectations
+- `WORKLOG.md` — prior session entries
+- `analytics/` directory contents
+
+**Work performed**:
+
+**`PHASE_2_ANALYTICS_SETUP.md` — created (new file, ~3,200 words)**:
+
+- Section 1: Overview — why analytics on Day 1 matters; 23-metric scope table breaking down
+  daily (10), weekly (15), and monthly synthesis (23) metric groups
+- Section 2: Google Sheets Template — complete 7-tab specification with all column headers,
+  source instructions, and formulas; Tab 3 Monthly Synthesis includes scored go/no-go formula
+  that auto-calculates Phase 3 decision from 23 pass/fail rows; Tab 4 Cohort Tracking includes
+  7-day / 14-day / 30-day retention curve columns with formulas
+- Section 3: Formula Specification — complete formula pseudocode and actual Sheets formulas for
+  all derived daily metrics (AOV, CVR, repeat buyer rate, cart abandonment proxy, refund rate),
+  weekly metrics (SUMIF weekly rollups, WoW %, cohort AOV, cross-sell rate, seasonal variation
+  index, retention averages), and monthly metrics (total revenue, AOV, bundle %, Phase 1 repeat
+  rate, email revenue per subscriber, Phase 3 trigger formulas)
+- Section 4: API Connection Details — Etsy API v3 OAuth 2.0 auth procedure, 4 key endpoints
+  with parameters, rate limit guidance; GA4 custom dimensions (5), audience segments (4), Kit
+  landing page event script; UTM parameter convention table for all 5 surfaces; Kit tag
+  inventory and manual export workflow
+- Section 5: User Setup Procedure — 5 steps with time estimates totaling 30 minutes; Steps 1-2
+  (Etsy+GA4, Kit) flagged "do by May 25", Steps 3 (Sheets) "do by May 27", Steps 4-5 (baselines
+  + walkthrough) "must happen May 29"; step-by-step with exact UI paths
+- Section 6: Interpretation Guide — meaning of each daily metric; pattern recognition section
+  covering 5 problem patterns with specific diagnosis and action for each; escalation rules
+  distinguishing RED (same-day action) from YELLOW (expected variation)
+- Section 7: Decision Triggers — GREEN/YELLOW/RED threshold tables for daily and weekly metrics;
+  4 Phase 3 expansion triggers with cohort size >500, CVR >8%, AOV >$45, repeat rate >12%;
+  launch day Checkpoint 1 and Checkpoint 2 rules; Phase 2 mid-point check June 15 criteria;
+  Phase 3 final gate June 30 with decision documentation protocol
+- Appendix A: print-ready launch day checklist with time-stamped checkpoints
+- Appendix B: cross-reference table to all 11 supporting documents
+
+**Key determinations from this session**:
+- Existing analytics infrastructure is comprehensive but fragmented across 5+ files; this
+  document consolidates the operational layer into a single 30-minute execution reference
+- Formula architecture uses cumulative-to-daily difference pattern throughout (safer than
+  manual daily entry for high-frequency data)
+- Phase 3 trigger metrics hardened: cohort size >500 sessions (not buyers), CVR >8% (top guide
+  only, not store average), AOV >$45 (multi-guide orders only), repeat rate >12% (30-day window)
+- Cart abandonment proxy documented (favorites/order ratio >10:1) as an approximation since
+  Etsy API does not expose true abandon data
+- Looker Studio upgrade trigger specified at 200 orders/month as previously established
+
+**Files created**:
+1. `PHASE_2_ANALYTICS_SETUP.md` — consolidated production setup guide (new file)
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Critical Path v5.0 + Timeline CSV — May 21, 2026
 
 **Task**: Phase 3 medicinal herbs critical path analysis and production timeline. Scope: (1) bundle selection confirmation, (2) writing schedule, (3) Canva design timeline, (4) photography staging, (5) upload sequence, (6) risk analysis. Deliverables: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` updated to v5.0 and new `phase-3-timeline.csv`.
