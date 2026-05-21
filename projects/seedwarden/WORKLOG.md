@@ -30,25 +30,53 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
-## Seedwarden Agent Session — Track B Geographic Expansion and Wholesale Channel Strategy (Exploration Queue Item 21) — May 21, 2026
+## Seedwarden Agent Session — Track B Geographic Expansion and Wholesale Channel Strategy v1.0 (Exploration Queue Item 21, first pass) — May 21, 2026
 
 **Task**: Research and produce strategic analysis for Track B post-June-22 geographic expansion (Canada, UK, EU) and wholesale channel development (practitioner direct, complementary clinics, natural retailers, online marketplaces). Independent of Track A blockers and May 30 scope decisions.
 
 **Files produced** (all in `projects/seedwarden/`):
 
-- `TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md` (~3,200 words) — Full regulatory, tax, market sizing, and go/no-go threshold analysis for Canada (NNHPD, GST/HST, OHA practitioner network, 3,700–4,400 addressable practitioners), UK (MHRA/THR inapplicability to digital guides, Etsy VAT handling, NIMH network 1,900–2,500 practitioners), and EU Germany/France/Italy (GDPR, VAT OSS, ESCOP, 13,000–21,000 addressable practitioners). Phase sequencing: Canada Phase 1 September, UK Phase 2 October, EU Phase 3 Q1 2027. Compliance cost table showing near-zero cost for Etsy-based sales across all markets.
+- `TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md` (v1.0, ~3,200 words) — Full regulatory, tax, market sizing, and go/no-go threshold analysis for Canada (NNHPD, GST/HST, OHA practitioner network, 3,700–4,400 addressable practitioners), UK (MHRA/THR inapplicability to digital guides, Etsy VAT handling, NIMH network 1,900–2,500 practitioners), and EU Germany/France/Italy (GDPR, VAT OSS, ESCOP, 13,000–21,000 addressable practitioners). Phase sequencing: Canada Phase 1 September, UK Phase 2 October, EU Phase 3 Q1 2027.
 
-- `TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md` (~3,000 words) — Four channel deep-dives: (1) Practitioner Direct — $112.87 net/10-pack at 20% affiliate commission, Tier A June 22 / Tier B July 15, Etsy coupon + Payhip Pro migration path; (2) Complementary Clinics — access code card consignment model, $10.35 net/consignment vs $13.59 wholesale, 50–100 clinic Pacific Northwest first cluster July 1; (3) Natural Foods Co-ops — printed POD model, $10.37 net, 20-unit MOQ, UPC/GS1 requirement, UNFI/KeHE deferred Phase 3; (4) Online Marketplaces — Amazon KDP at 35% royalty ($7.70 net at $22, no KDP Select exclusivity), iHerb/Vitacost inapplicable, Payhip/Gumroad backup. Margin hierarchy table. Year 1 revenue projection $26,900–$62,500 across all channels.
+- `TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md` (v1.0, ~3,000 words) — Four channel deep-dives with margin hierarchy table. Year 1 revenue projection $26,900–$62,500 across all channels.
 
-- `TRACK_B_GO_LIVE_SEQUENCING.md` (~1,800 words) — Month-by-month activation plan June 22–December 2026. Phase 0 (pre-launch June 15–21), Phase 1A (launch week), Phase 1B (stabilization June 29–July 14, first go/no-go checkpoint at July 14), Phase 1C (Tier B + clinics July 15–August 15), Phase 2 (Amazon KDP + Canada + UK + co-ops September–October), Phase 3 (scale + holiday November–December). Capacity requirements per phase, customer service load estimate, full go/no-go checkpoint table with revenue-denominated triggers.
+- `TRACK_B_GO_LIVE_SEQUENCING.md` (~1,800 words) — Month-by-month activation plan June 22–December 2026.
 
-**Key findings**:
-- Digital PDF guides are not subject to Canada NHP licensing, UK THR registration, or EU Traditional Herbal Registration. Regulatory compliance cost for international Etsy sales is zero — Etsy handles GST/HST, UK VAT (20%), and EU VAT as the marketplace operator.
-- Practitioner 10-pack is the highest-margin wholesale unit: $112.87 net at 20% affiliate commission vs. $19.66 for a direct consumer sale. The priority sequencing case is clear: maximize 10-pack penetration before opening lower-margin channels.
-- Amazon KDP international distribution (US, Canada, UK) is the lowest-complexity international expansion path — no additional compliance required beyond the US Etsy launch. Activate in Phase 2 (August/September) after launch reviews validate content quality.
-- UNFI/KeHE distributor pathway deferred to 2027 — requires physical product, 500+ unit MOQ, net-30/60 terms, and a food broker relationship that is inappropriate for bootstrap Phase 1 operations.
+**Key findings (v1.0)**: Digital PDF guides are not subject to Canada NHP licensing, UK THR registration, or EU Traditional Herbal Registration. Regulatory compliance cost for international Etsy sales is zero — Etsy handles GST/HST, UK VAT (20%), and EU VAT as the marketplace operator.
 
 **Sources consulted**: Canada.ca NNHPD guidance, Health Canada simplified GST/HST registration framework, GOV.UK MHRA THR guidance, UK VAT digital services rules (HMRC), EU e-Commerce framework, GDPR cross-border requirements, Amazon KDP royalty structure, GS1 US UPC pricing, Emergen Research herbalist market sizing, Ontario Herbalists Association (OHA) directory overview.
+
+---
+
+## Seedwarden Agent Session — Track B Geographic Expansion and Wholesale Channel Strategy v2.0 (Exploration Queue Item 21, expanded scope) — May 21, 2026
+
+**Task**: Expand Item 21 deliverables to full scope: add Australia/NZ coverage, per-region practitioner network maps with specific association links and contact names, go/no-go decision matrix per region, corporate wellness B2B subscription channel, white-label channel, mainstream wellness wholesale analysis (Whole Foods/CVS/GNC), and complete per-channel margin matrix.
+
+**Files updated** (all in `projects/seedwarden/`):
+
+- `TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md` (v2.0, ~5,500 words) — Expanded from v1.0 with:
+  - Australia: TGA complementary medicines framework (digital guides not regulated), Etsy GST handling (10% collected by platform), NHAA + ATMS practitioner network (6,000–8,600 addressable practitioners), market size USD $3.4B (2024) with 26.6% CAGR, revenue model $4,879–$6,951 conservative / $12,198–$17,484 base case Year 1. Key contacts: Tini Gruner (NHAA President), Ann Vlass (ATMS Executive Director).
+  - New Zealand: Therapeutic Products Act repeal (December 2024), standalone NHP Bill in development (no immediate digital guide impact), NZAMH + NMHNZ practitioner associations (200–400 practitioners), NZD $280M market, NZ bundled with Australia activation at near-zero incremental cost.
+  - Per-region practitioner network mapping: 15+ Canada association links (CAND, OHA, BCND, OAND, AANP, CCNM, Boucher, Wild Rose, Quebec, Manitoba, Nova Scotia, Canadian Herbalist Collective, Herbal Medicine Providers, Herb Society, Pacific Rim College) with 5 contact names; 8+ UK association links (NIMH, RCHM, BHMA, CPP, AMH, URHP, GRCCT, Scottish) with 3 contact names; 6+ EU association links (DGP, EHTPA, SNH, AFPA, FIE, ESCOP) with 2 per country; 5+ Australia/NZ links (NHAA, ATMS, Endeavour, SSNT, ANPA, NZAMH, NMHNZ, NHP NZ, Herb Federation NZ, NZACM) with 2 key contact names.
+  - Go/No-Go decision matrix: Canada GO ($20K potential, zero compliance, September 2026), UK MAYBE (October 2026 pending US+CA revenue), Australia LATER (November 2026 Phase 3 trigger), NZ bundled with Australia, EU LATER (Q1 2027 trigger requires $5K+ passive Etsy revenue).
+  - Practitioner network quick reference table (20 rows, all regions).
+
+- `TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md` (v2.0, ~4,500 words) — Expanded from v1.0 with:
+  - Corporate wellness subscriptions: $15–25/employee/year pricing tiers (Starter $1,500/year, Growth $6,000/year, Enterprise custom). $1,356.20 net per Starter contract — equivalent to 69 consumer bundle sales from one contract. 5-contract Year 1 target = $6,780 net recurring. Outreach targets: HR managers at integrative-health-friendly employers, Gympass/Wellhub vendor program, Thrive Global content partnership. Timeline: September 2026 outreach, October-November first contracts.
+  - White-label licensing: $200/bundle, $750/library, $500/year subscription, $350/year resale license. $143.90 net per single-bundle license. Canva Brand Kit workflow (1 hour/bundle to produce). 10–30 licenses/year revenue target: $1,440–$4,312 net. Outreach to herbal school instructors and clinic owners.
+  - Mainstream wellness wholesale: Whole Foods (slotting fees $500–2,000, 6–12 month approval, Phase 3 2027+), CVS/Walgreens (500–2,000 unit minimum, 9–18 month approval, Phase 3+), GNC/Vitamin Shoppe (product liability insurance $800–1,500/year required, 50–500 unit minimum, Phase 3).
+  - Complete per-channel margin matrix: 13 channels compared across net per unit, minimum order, setup complexity, time to revenue, volume potential.
+  - Revenue/complexity tradeoff matrix (retail vs. wholesale vs. B2B comparison).
+  - Updated Year 1 revenue projection: $31,040–$73,592 (increased from $26,900–$62,500 in v1.0 with corporate wellness and white-label channels added).
+
+**Key additions in v2.0**:
+- Australia: Etsy collects 10% GST on digital products for Australian buyers automatically. No TGA registration required for educational guides. NHAA has Herbal Medicine Summit 2026 as a sponsorship/educational partnership opportunity.
+- NZ: Therapeutic Products Act repealed December 2024; NHP Bill in development; no immediate regulatory impact on digital guide sales.
+- Corporate wellness: $1,356+ net per annual contract; highest margin per transaction of any channel. 4–8 week sales cycle vs. 2–4 weeks for practitioner direct.
+- White-label: 27% margin premium over wholesale 10-pack equivalent ($143.90 vs $112.87 net) justified by branding customization value.
+- Whole Foods/CVS/GNC: Documented and deferred to Phase 3 — slotting fees, 6–18 month approval timelines, and 500+ unit MOQs make these inappropriate for June 22 – December 2026 activation window.
+
+**Sources consulted**: NHAA website (nhaa.org.au), ATMS website (atms.com.au), TGA complementary medicines framework (tga.gov.au), New Zealand TPA repeal bill documentation (beehive.govt.nz), Etsy Help Center Australian GST guidance, ATO GST rules for imported digital services, NZAMH (nzamh.org.nz), Grand View Research Australia herbal medicine market sizing, Expert Market Research AU herbal supplements CAGR data, CAND (cand.ca), OHA (ontarioherbalists.ca), NIMH (nimh.org.uk), RCHM (rchm.co.uk), DGP (phytotherapy.de), FIE (erboristi.it), EHTPA (ehtpa.eu).
 
 ---
 

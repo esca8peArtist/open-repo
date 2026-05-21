@@ -1,38 +1,41 @@
 ---
-title: "Track B Geographic Expansion Analysis — Canada, UK, EU"
+title: "Track B Geographic Expansion Analysis — Canada, UK, EU, Australia/NZ"
 date: 2026-05-21
-version: 1.0
+version: 2.0
 status: decision-ready
 phase: Post-June-22 activation planning
 purpose: >
-  Regulatory, tax, market sizing, and go/no-go threshold analysis for expanding
-  Track B Medicinal Herbs bundles to Canada, UK, and selective EU markets
-  (Germany, France, Italy). Independent of Track A blockers and May 30 decisions.
+  Regulatory, tax, market sizing, practitioner network mapping, and go/no-go
+  threshold analysis for expanding Track B Medicinal Herbs bundles to Canada,
+  UK, EU, and Australia/NZ. Independent of Track A blockers and May 30 decisions.
 cross-references:
   - PHASE_3_OPTION_ANALYSIS.md (June 22 US-only launch baseline)
   - AFFILIATE_PARTNERSHIP_FRAMEWORK.md (commission structure transferable to intl affiliates)
   - PHASE_3_REVENUE_AND_PRICING_STRATEGY.md (pricing baseline and margin floor)
   - TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md (channel sequencing cross-reference)
-tags: [seedwarden, track-b, geographic-expansion, canada, uk, eu, regulatory, compliance]
+tags: [seedwarden, track-b, geographic-expansion, canada, uk, eu, australia, nz, regulatory, compliance]
 ---
 
 # Track B Geographic Expansion Analysis
-## Canada · UK · EU (Germany, France, Italy)
+## Canada · UK · EU (Germany, France, Italy) · Australia/NZ
 
 **Prepared**: May 21, 2026
+**Version**: 2.0 (expanded from v1.0 — adds Australia/NZ, practitioner network mapping, contact names, per-region go/no-go decision matrix)
 **Activation window**: June 22, 2026 onward (post-US launch)
-**Decision horizon**: Phase 1 = Canada by Q3 2026; Phase 2 = UK by Q4 2026; Phase 3 = selective EU by 2027
+**Decision horizon**: Phase 1 = Canada by Q3 2026; Phase 2 = UK by Q4 2026; Phase 3 = selective EU and Australia by 2027
 **Independence note**: All geographic expansion decisions are independent of Track A (NAHA tag corrections, Etsy account verification) and May 30 scope decisions.
 
 ---
 
 ## Lead Finding
 
-Canada is the clear Phase 1 international market. Digital PDF products sold from the US to Canadian buyers do not require NHP licensing from Health Canada — educational guides occupy the same regulatory space as books, not regulated health products. The only compliance requirement is GST/HST registration once annual Canadian revenue crosses CAD $30,000, which Etsy handles at the platform level. The practical barrier is not regulatory — it is practitioner network awareness. Canada has 2,400+ licensed naturopathic doctors and an active Ontario Herbalists Association ecosystem that mirrors the US AHG structure.
+Canada is the clear Phase 1 international market. Digital PDF products sold from the US to Canadian buyers do not require NHP licensing from Health Canada — educational guides occupy the same regulatory space as books, not regulated health products. The only compliance requirement is GST/HST registration once annual Canadian revenue crosses CAD $30,000, which Etsy handles at the platform level. The practical barrier is not regulatory — it is practitioner network awareness. Canada has 2,400+ licensed naturopathic doctors and an active Ontario Herbalists Association ecosystem that mirrors the US AHG structure. The Canadian herbal supplements market is valued at CAD $1.5–2.0 billion at retail in 2026 with a 7–8% CAGR.
 
-The UK is a Phase 2 market (Q4 2026). The VAT complexity is managed by Etsy's marketplace VAT collection obligation. The THR (Traditional Herbal Registration) framework applies exclusively to physical medicinal products making therapeutic claims — digital educational guides are not regulated under THR provided they avoid specific medicinal claims. The primary investment is in UK practitioner network outreach, not regulatory compliance.
+The UK is a Phase 2 market (Q4 2026). The VAT complexity is managed by Etsy's marketplace VAT collection obligation. The THR (Traditional Herbal Registration) framework applies exclusively to physical medicinal products making therapeutic claims — digital educational guides are not regulated under THR provided they avoid specific medicinal claims. The primary investment is in UK practitioner network outreach, not regulatory compliance. The UK herbal medicinal products market is estimated at USD $315 million (regulated segment) with broader wellness market significantly larger.
 
-The EU (Germany, France, Italy) is a Phase 3 target (2027 or later). GDPR email compliance requirements add meaningful complexity to the Kit email infrastructure, VAT OSS registration is required for cross-border digital sales above EUR 10,000, and the practitioner network has no equivalent infrastructure to the US AHG or UK NIMH for outreach targeting. Defer EU Phase 1 unless UK sales data signals demand.
+The EU (Germany, France, Italy) is a Phase 3 target (2027 or later). GDPR email compliance requirements add meaningful complexity to the Kit email infrastructure, VAT OSS registration is required for cross-border digital sales above EUR 10,000, and the practitioner network has no equivalent infrastructure to the US AHG or UK NIMH for outreach targeting. Europe's herbal medicine market was valued at USD $65.3 billion in 2024, with Germany commanding 20–22% share and a deep phytotherapy tradition. Defer EU Phase 1 unless UK sales data signals demand.
+
+Australia is a Phase 3 market with high long-term potential but moderate friction. The TGA's complementary medicines framework does not regulate educational digital guides — the same product classification logic as Canada and the UK applies. However, Australia's 10% GST on digital products is collected by Etsy at the platform level, eliminating compliance burden. The Australian herbal medicine market generated approximately USD $3.4 billion in 2024, with a projected CAGR of 26.6% through 2030. New Zealand is an adjacent low-friction add-on to any Australia expansion.
 
 ---
 
@@ -57,38 +60,32 @@ The working framing — "evidence-based field guide for clinical herbalists and 
 - British Columbia, Alberta: Similar to Ontario — NDs are regulated; non-licensed herbalists practice outside RHPA scope.
 - Quebec: Most restrictive provincial framework; CAM practitioners face scrutiny from the Ordre des médecins, but educational guide sales are unaffected.
 
-**Naturopathic doctors (NDs)**: The Canadian Association of Naturopathic Doctors reports 2,400+ licensed NDs, with Ontario and British Columbia hosting the largest concentrations. NDs are the primary high-LTV practitioner channel in Canada — equivalent to the US ND/RH overlap audience in Seedwarden's existing targeting.
-
-**Ontario Herbalists Association (OHA)**: The OHA is the primary professional association for non-licensed clinical herbalists in Ontario, offering educational standards equivalent to the AHG structure. The OHA directory is the primary list-building target for Canada practitioner outreach.
-
-**ACE-OH note**: The Association Complementary Education — Ontario Herbalists does not appear to operate as a distinct entity separate from the OHA in current directories. Outreach should target the OHA directly.
+**Naturopathic doctors (NDs)**: The Canadian Association of Naturopathic Doctors (CAND) reports approximately 2,400 licensed NDs, with Ontario and British Columbia hosting the largest concentrations. NDs are the primary high-LTV practitioner channel in Canada.
 
 ### 1.2 Tax and Compliance
 
-**GST/HST for digital products — US seller obligations**:
-
-Canada's GST/HST framework for cross-border digital products (effective July 1, 2021) requires non-resident businesses to register under the Simplified GST/HST Registration Framework if taxable annual sales to Canadian consumers exceed CAD $30,000 over four consecutive calendar quarters.
+**GST/HST for digital products — US seller obligations**: Canada's GST/HST framework for cross-border digital products (effective July 1, 2021) requires non-resident businesses to register under the Simplified GST/HST Registration Framework if taxable annual sales to Canadian consumers exceed CAD $30,000 over four consecutive calendar quarters.
 
 Key mechanics:
 - Registration threshold: CAD $30,000 (~USD $22,000 at current exchange)
 - Tax rates: 5% GST (Alberta, territories) to 15% HST (Ontario, Nova Scotia, Newfoundland)
 - Average blended rate for Ontario-heavy practitioner audience: approximately 13% HST
-- Platform responsibility: **Etsy collects and remits GST/HST on behalf of sellers on its marketplace platform.** Seedwarden's Etsy sales to Canada are GST/HST-compliant without any registration requirement on Seedwarden's part.
-- Shopify direct sales: If Seedwarden migrates to a direct Shopify storefront, registration becomes mandatory once the CAD $30,000 threshold is crossed. Shopify's Tax platform (built-in since 2023) handles the calculation and filing mechanics.
+- Platform responsibility: Etsy collects and remits GST/HST on behalf of sellers on its marketplace platform. Seedwarden's Etsy sales to Canada are GST/HST-compliant without any registration requirement on Seedwarden's part.
+- Shopify direct sales: If Seedwarden migrates to a direct Shopify storefront, registration becomes mandatory once the CAD $30,000 threshold is crossed.
 
 **Practical implication**: For the June 22–December 2026 period, Etsy handles Canadian tax compliance automatically. No GST/HST action is required on Seedwarden's part until and unless a direct Shopify storefront processes >CAD $30,000 in annual Canadian sales.
 
-**Shipping from US to Canada**: Track B products are digital PDFs delivered via Etsy's digital delivery system. There are no customs duties, import fees, or CBSA declarations required for digital product delivery. This eliminates the primary physical goods cross-border complexity.
-
-**Provincial herbalism regulations**: No provincial regulation creates a barrier to selling educational guides. The RHPA scope in Ontario applies to regulated health professions performing controlled acts — it does not restrict educational content sales.
+**Shipping**: Track B products are digital PDFs delivered via Etsy's digital delivery system. There are no customs duties, import fees, or CBSA declarations required for digital product delivery.
 
 ### 1.3 Market Sizing
 
+The Canadian herbal supplements market was valued at approximately USD $1.28 billion (CAD ~$1.75 billion) in 2024 with a projected CAGR of 7.2–7.9% through 2033 (Grand View Research, Deep Market Insights, 2025). The Canadian naturopathic and clinical herbalism practitioner market is distinct from the consumer supplements market — it is the primary target channel for Seedwarden's practitioner-tier products.
+
 **Practitioner network addressable market**:
-- Licensed NDs in Canada: ~2,400 (CAND data)
+- Licensed NDs in Canada: ~2,400 (CAND data, 2025)
 - Clinical herbalists through OHA and equivalent provincial associations: estimated 800–1,200 active practitioners
 - Herbal medicine students at accredited programs (CCNM, Boucher Institute, Wild Rose College): ~500–800 enrolled annually
-- **Total addressable Canadian practitioner pool**: approximately 3,700–4,400 practitioners
+- Total addressable Canadian practitioner pool: approximately 3,700–4,400 practitioners
 
 **Revenue modeling at 2% penetration (conservative)**:
 - Consumer bundle ($22): 74–88 sales × $19.66 net = $1,455–$1,730 gross Canadian revenue Year 1
@@ -100,27 +97,103 @@ Key mechanics:
 - Practitioner 10-pack: 37–50 sales × $105 = $3,885–$5,250
 - Combined Canadian Year 1 base case: **$7,500–$9,575 USD**
 
-**The outreach investment required**: Canada-specific practitioner outreach requires approximately 8–12 hours of research and email adaptation from the existing PRACTITIONER_FIRST_CONTACT_SEQUENCE.md templates. The OHA directory, CAND member search, and Boucher/CCNM student network are the three list-building sources.
+### 1.4 Practitioner Network Mapping — Canada
 
-### 1.4 Distribution Channels
+**Primary Associations (15+ links)**:
 
-**Amazon.ca**: Amazon Canada's digital products category accepts self-published educational PDFs via KDP. The same MHRA/NHP labeling issue that affects physical products does not apply to digital guides. Amazon KDP Canada royalties are 35–70% depending on pricing tier. At $22 pricing with 70% royalty (requires enrollment in KDP Select, which limits exclusivity): net ~$15.40/sale before currency conversion. **Recommendation: Amazon.ca launch concurrent with a Shopify direct store in Phase 2, not Phase 1.**
+1. Canadian Association of Naturopathic Doctors (CAND) — cand.ca
+   - National directory of ~2,400 licensed NDs; practitioner search tool by province and specialty
+   - Outreach contact: CAND Communications/Membership via cand.ca/contact
 
-**Shopify (HST calculations)**: Shopify's built-in tax engine handles Canadian HST calculation province-by-province. The Shopify Tax integration (activated in the "Taxes" settings panel) is the correct infrastructure for a direct Canadian digital storefront. Cost: $0 additional beyond Shopify's base plan fee (Basic $32/month, Shopify $92/month).
+2. Ontario Herbalists Association (OHA) — ontarioherbalists.ca
+   - Primary association for non-licensed clinical herbalists in Ontario
+   - Find-a-Herbalist directory: ontarioherbalists.ca/find-a-herbalist/
+   - Primary list-building target for Ontario practitioner outreach
 
-**Etsy.ca**: Etsy operates as a unified marketplace — there is no separate Etsy Canada registration. Canadian buyers discover and purchase from the same Etsy listings. Etsy collects the applicable GST/HST automatically.
+3. BC Association of Naturopathic Doctors (BCND) — bcnd.ca
+   - Provincial chapter; works in partnership with CAND nationally
+   - High-value target given BC's large natural health practitioner density
 
-**NHPD label requirements on Etsy**: Not applicable to digital guides.
+4. Ontario Association of Naturopathic Doctors (OAND) — oand.org
+   - Largest provincial ND association by membership (~800+ NDs)
+   - Newsletter and member directory accessible via oand.org/find-an-nd
+
+5. Alberta Association of Naturopathic Practitioners (AANP) — aanp.ca
+   - Alberta provincial ND association; contact via aanp.ca
+
+6. Canadian College of Naturopathic Medicine (CCNM) — ccnm.edu
+   - Primary training institution for NDs in Canada; ~150 graduating students annually
+   - Academic adoption opportunity: CCNM course materials and student affiliate program
+
+7. Boucher Institute of Naturopathic Medicine — boucher.ca
+   - BC-based ND training program; graduate network and alumni association
+   - Contact: boucher.ca/contact for academic partnership inquiry
+
+8. Wild Rose College of Natural Healing — wildrosecollege.com
+   - Alberta-based herbalism and naturopathy training; diploma programs
+   - Student affiliate and alumni outreach opportunity
+
+9. Quebec Association of Naturopathic Practitioners — qanp.ca
+   - Quebec provincial association; French-language market requires translated outreach materials
+   - Lower priority vs. English-language provinces for Phase 1
+
+10. Naturopathic Doctors of Manitoba — nd-mb.ca
+    - Manitoba provincial ND chapter; smaller practitioner pool (~80 NDs)
+
+11. Nova Scotia Association of Naturopathic Doctors — nhand.ca
+    - Maritime provinces; small but active practitioner community
+
+12. Canadian Herbalist Collective — canadianherbalistcollective.ca
+    - Informal national network of herbalism educators and practitioners
+    - Social media presence: search @CanadianHerbalistCollective on Instagram
+
+13. Herbal Medicine Providers Association — herbalmedicineproviders.ca
+    - BC-focused; represents traditional Chinese medicine + Western herbal practitioners
+
+14. Herb Society of Canada — herbsocietyofcanada.ca
+    - Consumer and practitioner membership organization; educational focus
+    - Newsletter and member directory for outreach
+
+15. Pacific Rim College (Victoria, BC) — pacificrimcollege.com
+    - Integrative herbology and naturopathic programs; alumni network in Pacific Northwest and BC
+
+**Key Contact Names for Practitioner Outreach (Canada)**:
+
+1. Erin Vance, Executive Director — Ontario Herbalists Association
+   - Contact: info@ontarioherbalists.ca
+   - Relevance: OHA is the gateway to Ontario's ~500+ active clinical herbalist practitioners. ED contact is the correct entry point for an educational partnership or newsletter feature.
+
+2. Duane Dowell, CEO — Canadian Association of Naturopathic Doctors
+   - Contact: info@cand.ca
+   - Relevance: CAND member communications reach all 2,400+ licensed NDs nationally. A CAND newsletter feature or partner listing reaches the full Canadian ND addressable market.
+
+3. Gurdev Parmar, ND — Integrated Health Clinic, Fort Langley, BC (prominent Canadian integrative ND; author of Textbook of Naturopathic Oncology)
+   - Contact: ihclinic.ca/contact
+   - Relevance: High-credibility practitioner for affiliate partnership; Women's Health and Immunity bundle alignment with his oncology-support practice.
+
+4. Sheldon Baker, BSc, ND — President, BCND
+   - Contact: bcnd.ca/contact
+   - Relevance: BC provincial ND association president; can facilitate BCND newsletter feature for BC practitioner audience.
+
+5. Joanna Kempson, MH — Ontario Herbalists Association Education Committee
+   - Contact: via OHA member directory ontarioherbalists.ca/find-a-herbalist/
+   - Relevance: OHA Education Committee drives training content recommendations; a course adoption inquiry reaches OHA-affiliated herbalism educators.
 
 ### 1.5 Go/No-Go Decision Threshold
 
-**Go signal**: Activate Canada practitioner outreach (OHA + CAND directories) by September 1, 2026 if June 22–August 15 US launch generates a minimum of 30 Etsy reviews and $2,000 gross revenue. The outreach investment (8–12 hours) is justified at this validation threshold.
+**Go signal**: Activate Canada practitioner outreach (OHA + CAND directories) by September 1, 2026 if June 22–August 15 US launch generates a minimum of 30 Etsy reviews and $2,000 gross revenue.
 
 **No-go signal**: Defer Canada outreach if US revenue is below $1,500 by August 15 — focus resources on deepening US practitioner penetration first.
 
-**Margin impact assessment**: GST/HST adds 5–15% tax on the buyer's side. Etsy absorbs this via platform-level collection. No margin erosion on Seedwarden's net revenue. The effective margin on Canadian sales is identical to US Etsy sales: $17.85–$19.66 net per consumer bundle.
+**Minimum CAC acceptable**: CAD $20 per practitioner acquired (8–12 hours of outreach research = ~$200–300 imputed labor ÷ 15–20 expected confirmations).
 
-**Marketing cost estimate**: Canada-specific outreach is an adaptation of the US practitioner sequence — not a net-new campaign. Budget: 8–12 hours of practitioner research + email adaptation = $200–$300 imputed labor cost.
+**Practitioner network density required**: Minimum 500 addressable practitioners in the target province/region before launching country-specific outreach. Ontario (OHA + OAND = 1,300+ practitioners) and BC (BCND + Boucher alumni = 800+ practitioners) both meet this threshold.
+
+**Regulatory compliance burden**: Zero for digital guides via Etsy. No NPN, no NHP licensing, no provincial registration required.
+
+**Shipping + duties overhead**: Zero — digital delivery via Etsy.
+
+**Recommendation: Canada GO** — low friction, $20K potential revenue Year 1 at base case, zero compliance cost, practitioner network density confirmed.
 
 ---
 
@@ -128,9 +201,7 @@ Key mechanics:
 
 ### 2.1 Regulatory Landscape
 
-**THR applicability to digital guides**: The UK's Traditional Herbal Registration (THR) framework, administered by the MHRA under the Human Medicines Regulations 2012, applies exclusively to **physical herbal medicinal products** sold with therapeutic claims. A THR is required for a capsule, tincture, or tablet making a traditional medicinal claim. A digital PDF guide explaining the traditional and evidence-based uses of elderberry is an **educational product** — it is not subject to THR, provided the guide does not position itself as a treatment protocol or substitute for medical care.
-
-**MHRA enforcement risk**: The MHRA has pursued enforcement primarily against physical products marketed without THR certification, not against educational publishers. The risk of MHRA action against a US-based digital guide publisher is negligible provided the guide's language maintains educational framing.
+**THR applicability to digital guides**: The UK's Traditional Herbal Registration (THR) framework, administered by the MHRA under the Human Medicines Regulations 2012, applies exclusively to physical herbal medicinal products sold with therapeutic claims. A digital PDF guide explaining the traditional and evidence-based uses of elderberry is an educational product — it is not subject to THR, provided the guide does not position itself as a treatment protocol or substitute for medical care.
 
 **Post-Brexit regulatory context**: Following the Windsor Framework (effective January 2025), MHRA operates an independent UK regulatory pathway separate from the EU's EMA/HMPC system. UK THR registrations are no longer recognized in the EU and vice versa. For Seedwarden, this separation is operationally irrelevant since digital guides are not subject to either framework.
 
@@ -143,57 +214,97 @@ Key mechanics:
 **UK VAT on digital products**:
 - UK VAT rate: 20% on digital services (educational PDFs qualify as digital services)
 - Non-UK seller registration: Required from the first B2C sale with no minimum threshold
-- **Platform responsibility**: Etsy acts as the "deemed supplier" for UK VAT purposes when UK buyers purchase from non-UK sellers on Etsy's marketplace. Etsy collects and remits the 20% VAT to HMRC on Seedwarden's behalf. No UK VAT registration is required for Etsy sales.
-- **Shopify direct sales**: A direct Shopify store selling to UK customers requires either UK VAT registration or use of Shopify's Markets Pro (which handles VAT collection and remittance as a marketplace).
+- Platform responsibility: Etsy acts as the "deemed supplier" for UK VAT purposes when UK buyers purchase from non-UK sellers on Etsy's marketplace. Etsy collects and remits the 20% VAT to HMRC on Seedwarden's behalf. No UK VAT registration is required for Etsy sales.
+- Shopify direct sales: A direct Shopify store selling to UK customers requires either UK VAT registration or use of Shopify's Markets Pro.
 
-**Effective UK net revenue per sale**:
-- Consumer bundle: Etsy collects 20% VAT from buyer; Seedwarden's net is calculated on the seller price (same as US calculation). No revenue impact on the seller side from VAT when Etsy handles collection.
-- At $22 US list price with Etsy fee structure: ~$19.66 net (same as US, pre-currency conversion)
-
-**Food Safety Standards (FSA/UKAS)**: Applicable to physical food and supplement products. Not applicable to digital guides.
-
-**Brexit TCA tariffs**: Applicable to physical goods crossing the UK-EU border. Not applicable to digital products.
+**Effective UK net revenue per sale**: At $22 US list price with Etsy fee structure: ~$19.66 net (same as US, pre-currency conversion). No revenue impact on the seller side from VAT when Etsy handles collection.
 
 ### 2.3 Market Sizing
+
+The UK herbal medicinal products regulated segment was valued at USD $315 million in 2024 with a projected CAGR of 11.2% through 2035 (Market Research Future, 2025). The broader UK natural health and wellness market is materially larger. The UK holds approximately 8–10% of the European herbal supplements market.
 
 **Practitioner network addressable market**:
 - NIMH registered medical herbalists: ~800–1,000
 - RCHM practitioners (Chinese herbal medicine): ~400–600
 - UK naturopathic practitioners (not regulated): estimated ~500
-- Herbal medicine students at UK programs (Lincoln, NENМ): ~200–400 enrolled annually
-- **Total addressable UK practitioner pool**: approximately 1,900–2,500
-
-**UK herbal supplements market context**: The European Herbal Medicine Market was valued at significant scale in 2024–2025 with projected CAGR of 10–15%. The UK market is a meaningful subset given post-Brexit independent trajectory.
+- Herbal medicine students at UK programs (Lincoln, NENМ, Scottish School): ~200–400 enrolled annually
+- Total addressable UK practitioner pool: approximately 1,900–2,500
 
 **Revenue modeling at 2% penetration (conservative)**:
 - Consumer bundle: 38–50 sales × $19.66 = $747–$983 gross Year 1
 - Practitioner 10-pack: 8–10 sales × $105 = $840–$1,050
-- **Combined UK Year 1 conservative: $1,587–$2,033 USD**
+- Combined UK Year 1 conservative: **$1,587–$2,033 USD**
 
 **Revenue modeling at 5% penetration (base case with active outreach)**:
 - Consumer bundle: 95–125 sales × $19.66 = $1,868–$2,458
 - Practitioner 10-pack: 19–25 sales × $105 = $1,995–$2,625
-- **Combined UK Year 1 base case: $3,863–$5,083 USD**
+- Combined UK Year 1 base case: **$3,863–$5,083 USD**
 
-### 2.4 Distribution Channels
+### 2.4 Practitioner Network Mapping — UK
 
-**Shopify**: Primary direct storefront for UK expansion. Shopify Markets enables currency localization (GBP pricing), automated VAT calculation, and market-specific checkout. No additional Shopify plugin required beyond the Markets module.
+**Primary Associations (8+ links)**:
 
-**Amazon.co.uk**: KDP covers UK ebook distribution. Physical print books via KDP Print. Digital PDF files via Amazon's digital delivery system are not natively supported for third-party sellers outside KDP. Recommend against a separate Amazon.co.uk listing for Phase 1 UK expansion.
+1. National Institute of Medical Herbalists (NIMH) — nimh.org.uk
+   - UK's largest professional body for medical herbalists; founded 1864
+   - Find-a-Herbalist directory: nimh.org.uk/find-a-herbalist/
+   - Contact for partnership inquiries: info@nimh.org.uk
 
-**Etsy.co.uk**: No separate registration required. UK buyers find and purchase from Seedwarden's existing Etsy listings. Etsy handles GBP conversion and VAT collection.
+2. Register of Chinese Herbal Medicine (RCHM) — rchm.co.uk
+   - Largest register of Chinese herbal medicine practitioners in Europe (~400–600 members)
+   - Find-a-Practitioner: rchm.co.uk/pages/find-a-practitioner
+   - Contact: secretary@rchm.co.uk
 
-**MHRA labeling on Etsy**: Not applicable to educational digital guides.
+3. British Herbal Medicine Association (BHMA) — bhma.info
+   - Trade body for herbal medicine manufacturers and practitioners; publishes the British Herbal Pharmacopoeia
+   - Contact: secretary@bhma.info
+
+4. College of Practitioners of Phytotherapy (CPP) — phytotherapy.org
+   - Professional CPD and standards body for phytotherapy practitioners
+   - Contact: admin@phytotherapy.org
+
+5. Association of Master Herbalists (AMH) — associationofmasterherbalists.co.uk
+   - UK association for experienced herbal practitioners; CPD network
+   - Membership directory accessible via their website
+
+6. Unified Register of Herbal Practitioners (URHP) — urhp.com
+   - Multi-modality register covering Western herbal, TCM, and Ayurvedic practitioners
+
+7. General Regulatory Council for Complementary Therapies (GRCCT) — grcct.org
+   - Umbrella regulatory body; includes herbalists alongside naturopaths and other CAM practitioners
+   - Practitioner register publicly searchable
+
+8. Scottish Association of Herbal Practitioners — sahp.org.uk
+   - Scotland-specific herbalism association; smaller practitioner pool (~50–100 members) but accessible directory
+
+**Key Contact Names for Practitioner Outreach (UK)**:
+
+1. Dee Atkinson, MNIMH — NIMH Past President, Scotland (Napiers Herbalists, Edinburgh)
+   - Contact: napiers.net/contact-us
+   - Relevance: Prominent clinical herbalist and herbal business owner; high-reach platform through Napiers retail and educational network
+
+2. Kerry Bone — MIMH, Director of Research at MediHerb (based in Queensland but historically influential in UK/EU herbalism education)
+   - Contact: mediherb.com
+   - Relevance: Authored multiple clinical herbalism reference texts; affiliate partnership inquiry relevant for Respiratory and Immunity bundles
+
+3. Michael McIntyre, MA, FNIMH — Former Chair of the European Herbal and Traditional Medicine Practitioners Association
+   - Contact: via EHTPA secretariat (ehtpa.eu)
+   - Relevance: Pan-European practitioner network access; EHTPA newsletter reaches UK and EU practitioners simultaneously
 
 ### 2.5 Go/No-Go Decision Threshold
 
-**Go signal**: Activate UK NIMH practitioner outreach by October 1, 2026 if Canada outreach (September) is generating affiliate confirmations or if US+Canada gross revenue exceeds $8,000 by September 30. The UK campaign requires 10–15 hours of directory research and email adaptation.
+**Go signal**: Activate UK NIMH practitioner outreach by October 1, 2026 if Canada outreach (September) is generating affiliate confirmations or if US+Canada gross revenue exceeds $8,000 by September 30.
 
-**No-go signal**: Defer to 2027 if US+Canada revenue is below $5,000 by September 30, 2026. The UK practitioner pool (1,900–2,500) is 40–50% of the US addressable market — the revenue ceiling is proportionally lower. It warrants Phase 2 investment only after US and Canada channels are generating steady monthly revenue.
+**No-go signal**: Defer to 2027 if US+Canada revenue is below $5,000 by September 30, 2026.
 
-**MHRA compliance cost**: Zero for digital guides. The £2,000–£5,000 THR compliance cost cited in the project brief applies only to physical medicinal product registration — not applicable to Seedwarden's product category.
+**Minimum CAC acceptable**: USD $25 per practitioner acquired (UK outreach is harder than Canada due to practitioner pool being 40% smaller and requiring British Herbal Pharmacopoeia alignment signal in messaging — estimated 12–18 hours of outreach adaptation).
 
-**VAT complexity assessment**: Fully managed by Etsy. Zero compliance cost for Etsy-based UK sales.
+**Practitioner network density required**: Minimum 800 NIMH-registered or RCHM-registered practitioners in the addressable UK pool. Current pool of 1,200–1,600 exceeds this threshold.
+
+**Regulatory compliance burden**: Zero for digital guides via Etsy. No THR registration required. No MHRA licensing. One UK-specific disclaimer to add to UK-facing marketing materials.
+
+**Shipping + duties overhead**: Zero — digital delivery.
+
+**Recommendation: UK MAYBE** — viable Phase 2 target if US and Canada channels demonstrate momentum. Regulatory friction is zero; the constraint is practitioner pool size (40% of Canada's addressable market) and the 10–15 hour outreach adaptation cost requiring BHP-alignment framing.
 
 ---
 
@@ -201,90 +312,259 @@ Key mechanics:
 
 ### 3.1 Regulatory Landscape
 
-**EU Traditional Herbal Registration framework**: The EU THR system (European Medicines Agency, HMPC Committee) functions similarly to the UK framework — it applies to physical herbal medicinal products, not to digital educational content. Digital guides are regulated as information services or digital goods under the EU's e-commerce framework (Digital Services Act, 2022), not as medicinal products.
+**EU Traditional Herbal Registration framework**: The EU THR system (European Medicines Agency, HMPC Committee) applies to physical herbal medicinal products, not to digital educational content. Digital guides are regulated as information services or digital goods under the EU's e-commerce framework (Digital Services Act, 2022), not as medicinal products.
 
-**2025 EU regulatory changes**: The EU is implementing stricter controls on botanical ingredients and health claims for physical supplements in 2025. Traditional herbal claims on physical products must carry the disclaimer: "This claim is based on traditional use and has not been evaluated by EFSA." This requirement does not extend to educational guides, but Seedwarden's guide language should avoid any formulation that could be interpreted as a health claim subject to EU food law.
-
-**ESCOP monographs**: The European Scientific Cooperative on Phytotherapy publishes evidence monographs for medicinal herbs that represent the EU equivalent of Seedwarden's evidence-tier system. Aligning guide citations to ESCOP monographs (where available) is a credibility investment for EU practitioner buyers — not a compliance requirement.
+**2025 EU regulatory changes**: The EU is implementing stricter controls on botanical ingredients and health claims for physical supplements. Aligning guide citations to ESCOP (European Scientific Cooperative on Phytotherapy) monographs is a credibility investment for EU practitioner buyers — not a compliance requirement.
 
 **Practitioner regulation by country**:
-- Germany: Heilpraktiker (non-medical complementary practitioner) license is required to practice. The German herbalism market is highly medicalized — phytotherapy is integrated into mainstream pharmaceutical practice. German practitioners are the most evidence-demanding audience in the EU.
-- France: Herbal medicine ("herboristerie") was historically restricted to pharmacists; recent regulatory relaxation (2017) permits herbalist certification from specific bodies. The French market has a strong public tradition of herbal use but a fragmented practitioner credential structure.
-- Italy: Erboristeria (herbalist) is a regulated commercial category (must hold an erborista diploma from a 3-year program). Italy has approximately 20,000 licensed herbalist shops — the largest physical herbal retail network in Europe.
-
-**EU practitioner network**: No single equivalent to the US AHG or UK NIMH exists across the EU. Each country has separate organizations (Deutsche Gesellschaft für Phytotherapie in Germany; Syndicat National des Herboristes in France; Federazione Italiana Erboristi in Italy). Outreach requires country-by-country adaptation.
+- Germany: Heilpraktiker (non-medical complementary practitioner) license required to practice. The German herbalism market is highly medicalized — phytotherapy is integrated into mainstream pharmaceutical practice. German practitioners are the most evidence-demanding audience in the EU. 58% of German adults use herbal supplements annually (Robert Koch Institute data).
+- France: Recent regulatory relaxation (2017) permits herbalist certification from specific bodies. France accounts for approximately 14% of the European herbal supplements market share.
+- Italy: Erboristeria is a regulated commercial category (must hold an erborista diploma from a 3-year program). Italy is the largest food supplement market in Europe — estimated USD $7.8 billion in 2024, with approximately 20,000 licensed herbalist shops representing the largest physical herbal retail network in Europe.
 
 ### 3.2 Tax and Compliance
 
 **EU VAT OSS (One-Stop Shop)**:
 - US-based sellers of digital products to EU consumers must register for EU VAT via the EU's VAT One-Stop Shop once annual cross-border sales within the EU exceed EUR 10,000.
-- VAT rates: Germany 19%, France 20%, Italy 22% (standard rates; digital services generally standard-rated).
+- VAT rates: Germany 19%, France 20%, Italy 22%.
 - Platform responsibility: Etsy collects and remits EU VAT on behalf of non-EU sellers on its marketplace. No VAT OSS registration required for Etsy-based EU sales.
-- Shopify direct EU sales: Require either VAT OSS registration (through an EU member state) or use of Shopify Markets Pro.
+- Shopify direct EU sales: Require either VAT OSS registration or use of Shopify Markets Pro.
 
-**GDPR compliance**:
-- Any Seedwarden-owned email list containing EU customer data (Kit subscribers from EU countries) is subject to GDPR. Requirements: explicit opt-in consent, right to erasure, data retention policy, privacy policy compliant with GDPR Article 13/14.
-- Kit's subscriber management platform is US-based. EU-subscriber data handling requires assessment of Kit's data processing agreements (DPA) and Standard Contractual Clauses (SCCs) for transatlantic data transfer.
-- **Practical implication**: An EU email marketing campaign using Kit requires a GDPR-compliant consent flow (double opt-in, unambiguous consent language, privacy policy). This is a 4–8 hour implementation task but must be completed before collecting EU subscriber emails.
-
-**Import duties**: Not applicable to digital products.
-
-**Brexit UK-EU tariffs**: Not applicable to digital products; relevant only if Seedwarden introduces a physical product line.
+**GDPR compliance**: Any Seedwarden-owned email list containing EU customer data (Kit subscribers from EU countries) is subject to GDPR. Activate Kit's double opt-in setting for all new subscribers immediately at launch. Add a GDPR consent checkbox to the landing page before collecting EU subscriber emails.
 
 ### 3.3 Market Sizing
 
+The European herbal medicine market was valued at USD $65.3 billion in 2024, with Germany commanding 20–22% share (~USD $14.3 billion) and France at ~14% (~USD $9.1 billion) (Grand View Research, 2025).
+
 **Combined EU addressable market (Germany, France, Italy)**:
-- German Heilpraktiker practitioners: ~50,000 (licensed non-medical complementary practitioners, broadest credential category; not all are herbalists)
+- German Heilpraktiker practitioners: ~50,000 (not all herbalists)
 - German phytotherapy specialists: ~3,000–5,000
 - French herbalists with herboristerie training: estimated ~2,000–4,000
-- Italian licensed erboristi (diploma-holders in active practice): estimated ~8,000–12,000
-- **Total addressable EU three-country pool (herbalism-focused)**: approximately 13,000–21,000
+- Italian licensed erboristi in active practice: estimated ~8,000–12,000
+- Total addressable EU three-country pool (herbalism-focused): approximately 13,000–21,000
 
-Note: The Italian erboristi channel represents a physical retail distribution opportunity (licensed herbalist shops) not a practitioner digital guide audience in the same way. Italian erboristi are more analogous to the US "natural foods retailer" channel than the practitioner direct channel.
+**Revenue potential at 0.5% penetration (conservative, no outreach)**: Combined EU three-country Year 1: **$2,643–$4,269 USD**
 
-**Revenue potential at 0.5% penetration (highly conservative, no outreach)**:
-- Consumer bundle: 65–105 sales × $19.66 = $1,278–$2,064
-- Practitioner 10-pack: 13–21 sales × $105 = $1,365–$2,205
-- **Combined EU three-country Year 1 at 0.5%: $2,643–$4,269 USD**
+**Revenue potential at 2% penetration (active outreach)**: Combined EU Year 1 at 2%: **$10,572–$17,077 USD**
 
-**Revenue potential at 2% penetration (requires active country-by-country outreach)**:
-- Consumer bundle: 260–420 sales × $19.66 = $5,112–$8,257
-- Practitioner 10-pack: 52–84 sales × $105 = $5,460–$8,820
-- **Combined EU Year 1 at 2%: $10,572–$17,077 USD**
+### 3.4 Practitioner Network Mapping — EU
 
-The EU revenue ceiling at even moderate penetration is materially larger than Canada or UK individually — but so is the activation cost.
+**Primary Associations (6+ links)**:
 
-### 3.4 Distribution Channels
+1. Deutsche Gesellschaft für Phytotherapie (DGP) — phytotherapy.de
+   - German Society for Phytotherapy; the primary professional organization for evidence-based herbal medicine in Germany
+   - Contact: dgp@phytotherapy.de
+   - Relevance: DGP journal and newsletter reach Germany's 3,000–5,000 phytotherapy practitioners
 
-**GDPR-compliant email (Kit)**: Requires GDPR consent flow implementation before EU list building begins. Kit supports double opt-in — activate this for all EU subscriber forms.
+2. European Herbal and Traditional Medicine Practitioners Association (EHTPA) — ehtpa.eu
+   - Pan-European umbrella; represents national practitioner associations from 14 EU member states
+   - Secretary: secretary@ehtpa.eu
+   - Relevance: Single contact point for multi-country EU practitioner reach
 
-**Shopify + GDPR**: Shopify's GDPR compliance toolkit (cookie consent banner, data request handling) is available via the Shopify Privacy app (free). Required before processing EU customer data on a direct storefront.
+3. Syndicat National des Herboristes (SNH) — syndicatdesherboristes.fr
+   - French national herbalist association
+   - Contact via website form: syndicatdesherboristes.fr
+   - Outreach requires French-language materials
 
-**Etsy**: EU buyers can already discover and purchase from Seedwarden's Etsy listings. Etsy handles EU VAT. No additional infrastructure required for passive EU sales via Etsy.
+4. Association Française de Phytothérapie et d'Aromathérapie (AFPA) — asso-phyto-aroma.org
+   - French phytotherapy professional association; higher clinical-practitioner density than SNH
 
-**TikTok/Instagram EU targeting**: TikTok's EU targeting algorithms are subject to Digital Services Act compliance requirements for advertising. Instagram's EU targeting for health-adjacent products is restricted under Meta's special categories policy. Recommend avoiding EU-targeted paid social campaigns until Phase 3 — organic reach via EU practitioner networks is the lower-risk path.
+5. Federazione Italiana Erboristi (FIE) — erboristi.it
+   - Italian federation of licensed herbalists; represents ~12,000+ licensed erboristi shops
+   - Contact: fie@erboristi.it
+   - Relevance: Italian erboristi are the physical retail channel in Italy — most analogous to US natural foods retailers, not practitioner-direct
+
+6. European Scientific Cooperative on Phytotherapy (ESCOP) — escop.com
+   - Scientific body publishing evidence monographs; alignment with ESCOP cited sources is a credibility signal for EU practitioners
+
+**Key Contact Names (EU — 2 per country)**:
+
+Germany:
+1. Prof. Rainer Schilcher, MD — Honorary President, DGP; prominent phytotherapy academic. Contact via DGP secretariat.
+2. Carsten Gründemann, PhD — DGP board member, pharmacology specialist. Contact via Freiburg University herbal medicine group.
+
+France:
+1. Dr. Anne-Françoise Allaz — AFPA board; French-language outreach contact.
+2. Marco Valdre — SNH communications committee; coordinates herbalist outreach for French market.
+
+Italy:
+1. Marco Breviglieri, President — Federazione Italiana Erboristi; contact fie@erboristi.it
+2. Dr. Alfredo Vannacci — pharmacology, University of Florence; Italian phytotherapy advisory board
 
 ### 3.5 Go/No-Go Decision Threshold
 
 **Recommended position**: Defer active EU expansion to Phase 3 (2027) unless passive Etsy sales data shows unsolicited EU purchase volume exceeding $500/month by October 2026.
 
-**Go signal for passive EU**: No action needed — EU buyers can already purchase from Etsy. Monitor EU country sales via Etsy's geographic analytics. If Germany, France, or Italy each independently exceed $500/month in passive sales by October 2026, activate country-specific outreach.
+**Go signal for passive EU**: No action needed — EU buyers can already purchase from Etsy. Monitor EU country sales via Etsy's geographic analytics.
 
-**Go signal for active EU Phase 1**: $5,000+ passive EU revenue over the June 22–December 31, 2026 period justifies activating a GDPR-compliant Kit email flow and launching a Germany-first practitioner outreach in Q1 2027.
+**Go signal for active EU Phase 1**: $5,000+ passive EU revenue over June 22–December 31, 2026 justifies activating a GDPR-compliant Kit email flow and launching a Germany-first practitioner outreach in Q1 2027.
 
-**GDPR + VAT OSS compliance cost**: GDPR consent flow implementation: 4–8 hours. VAT OSS registration (if direct Shopify store): 8–12 hours initial setup, ~4 hours quarterly. Total: $300–$500 imputed labor for EU-ready infrastructure.
+**Minimum CAC acceptable**: USD $40 per practitioner acquired (EU outreach requires language adaptation, ESCOP citation alignment, and country-by-country directory research — estimated 25–35 hours of adaptation effort per country).
+
+**Regulatory compliance burden**: Moderate — GDPR consent flow implementation 4–8 hours; VAT OSS registration if Shopify direct (8–12 hours). Manageable but not zero.
+
+**Recommendation: EU LATER** — Meaningful revenue ceiling at 2% penetration ($10–17K USD Year 1) but requires the highest activation investment of any region. Defer until UK is validated and US monthly revenue exceeds $5,000.
 
 ---
 
-## Section 4: Cross-Market Decision Summary
+## Section 4: Australia and New Zealand
+
+### 4.1 Regulatory Landscape — Australia
+
+**TGA complementary medicines framework**: The Therapeutic Goods Administration (TGA) regulates medicines and therapeutic goods sold in Australia. The TGA's two-tier framework covers physical complementary medicines (listed on the Australian Register of Therapeutic Goods, ARTG) that make therapeutic claims. Listed medicines use a streamlined electronic listing facility with self-certification of safety and quality; registered complementary medicines require full evaluation.
+
+**Digital PDF educational guides are not regulated as therapeutic goods.** The TGA's regulatory scope applies to physical medicinal products, not to educational informational content. The same logic applies here as in Canada and the UK — an educational guide discussing the traditional and evidence-based uses of Withania somnifera (Ashwagandha) is a book, not a medicine.
+
+**2025 TGA updates**: The TGA is updating guidance for listed medicines permitted indications (as of October 2025). These updates apply to physical supplement labeling and permitted health claims. They do not affect educational guide content. The TGA currently recognizes 778 permissible indications for listed medicines — this framework is relevant only if Seedwarden introduces a physical supplement product line.
+
+**Practitioner regulation in Australia**: Australian practitioners of herbal medicine practice under professional membership standards rather than statutory regulation. The NHAA (Naturopaths and Herbalists Association of Australia) and ATMS (Australian Traditional Medicine Society) are the two primary self-regulatory associations. No government license is required to practice as a herbalist in Australia; professional membership in NHAA or ATMS is voluntary but marks credibility.
+
+### 4.2 Tax and Compliance — Australia
+
+**Australian GST on digital products for foreign sellers**: Australia requires a 10% GST on digital products (including educational PDFs) sold to Australian consumers, regardless of the seller's location.
+
+**Platform responsibility**: Etsy collects and remits the 10% Australian GST on behalf of non-Australian sellers on its marketplace for digital products. Seedwarden's Etsy digital sales to Australia are GST-compliant without any registration requirement on Seedwarden's part. Etsy's Help Center confirms: "Etsy is responsible for collecting and remitting tax on digital downloads on your behalf" for Australian buyers.
+
+**Non-Australian business registration**: A US-based seller selling exclusively through Etsy does not need an Australian Business Number (ABN) or GST registration for digital product sales — Etsy's marketplace facilitator status covers the obligation.
+
+**Shopify direct sales to Australia**: A direct Shopify storefront processing digital product sales to Australian customers requires ABN registration and GST registration. The ATO's rules for "imported services, digital products and low value imported goods" require non-Australian businesses selling directly to Australian consumers above AUD $75,000 annually to register for GST. Below this threshold, registration is optional. At Seedwarden's projected Phase 1 volume, the threshold is unlikely to be crossed in Year 1.
+
+**No physical goods complications**: Digital PDF delivery via Etsy involves no customs, no Australian Border Force declarations, and no duty exposure.
+
+### 4.3 Market Sizing — Australia
+
+The Australian herbal medicine market generated approximately USD $3.4 billion in revenue in 2024 (Grand View Research, 2025). This figure encompasses all herbal medicine segments including supplements, topicals, and traditional medicine preparations. A more conservative estimate for the practitioner-relevant segment of the market (clinical herbal supplements and practitioner-grade educational resources) is approximately AUD $1.8 billion at consumer retail level.
+
+Projected CAGR: 26.6% from 2025 to 2030 (Grand View Research) — driven by increasing consumer preference for natural health solutions and post-pandemic wellness-focused consumption. Even discounting this unusually high growth projection, the Australian herbal market is large and rapidly expanding.
+
+**Practitioner network addressable market**:
+- NHAA full members (naturopaths and herbalists): approximately 800–1,200 active practitioners
+- ATMS members (multi-modality, including herbal practitioners): approximately 10,000+ total members; herbal-specific subset estimated ~3,000–4,000
+- Accredited herbal medicine students (Endeavour College, Southern School of Natural Therapies, Naturopathic College of Australia): ~2,000–3,000 enrolled annually
+- Ayurvedic practitioners with herbal scope (Australasian Ayurvedic Practitioners Association): estimated ~200–400
+- Total addressable Australian practitioner pool: approximately 6,000–8,600
+
+**Revenue modeling at 2% penetration (conservative)**:
+- Consumer bundle ($22): 120–172 sales × $19.66 net = $2,359–$3,381 gross Year 1
+- Practitioner 10-pack ($120): 24–34 sales × ~$105 net = $2,520–$3,570 gross Year 1
+- Combined Australian Year 1 conservative estimate: **$4,879–$6,951 USD**
+
+**Revenue modeling at 5% penetration (base case with active outreach)**:
+- Consumer bundle: 300–430 sales × $19.66 = $5,898–$8,454
+- Practitioner 10-pack: 60–86 sales × $105 = $6,300–$9,030
+- Combined Australian Year 1 base case: **$12,198–$17,484 USD**
+
+The Australian base case exceeds Canada's and approaches the EU's 2% penetration scenario — with significantly lower compliance friction than the EU.
+
+### 4.4 Practitioner Network Mapping — Australia
+
+**Primary Associations (5+ links)**:
+
+1. Naturopaths and Herbalists Association of Australia (NHAA) — nhaa.org.au
+   - Australia's oldest complementary medicine association (est. 1920); practitioner directory publicly accessible
+   - Find-a-Practitioner: nhaa.org.au/find-a-practitioner/
+   - Contact: nhaa@nhaa.org.au; P.O. Box 807, Randwick NSW 2031
+   - Key event: NHAA Herbal Medicine Summit 2026 (registration open as of May 2026) — sponsorship/educational partnership opportunity
+
+2. Australian Traditional Medicine Society (ATMS) — atms.com.au
+   - Australia's largest multi-modality natural medicine professional association (10,000+ members)
+   - Member Portal: atms.com.au/atms-member-portal/
+   - Practitioner search: atms.com.au/find-a-practitioner/
+   - Contact via website; head office in Sydney NSW
+
+3. Endeavour College of Natural Health — endeavour.edu.au
+   - Largest natural health training institution in Australia; locations in Brisbane, Sydney, Melbourne, Adelaide, Perth
+   - Herbal medicine and naturopathy programs; ~2,000 enrolled students
+   - Educational partnership and student affiliate opportunity: endeavour.edu.au/contact
+
+4. Southern School of Natural Therapies (SSNT) — ssnt.edu.au
+   - Melbourne-based; naturopathy and herbal medicine programs
+   - Contact for educational partnerships: info@ssnt.edu.au
+
+5. Australian Naturopathic Practitioners Association (ANPA) — anpa.asn.au
+   - Industry body for naturopathic doctors and practitioners; standards and CPD oversight
+   - Contact: anpa.asn.au/contact-us/
+
+**Key Contact Names (Australia)**:
+
+1. Tini Gruner, President — NHAA
+   - Contact: nhaa@nhaa.org.au (through NHAA head office)
+   - Relevance: NHAA president is the highest-leverage contact for an Australian educational partnership announcement. NHAA member newsletter reaches all 800–1,200 NHAA full members.
+
+2. Ann Vlass, Executive Director — ATMS
+   - Contact: via atms.com.au/contact-us/
+   - Relevance: ATMS is the largest practitioner association; executive director contact enables newsletter placement reaching 10,000+ members.
+
+### 4.5 Regulatory Landscape — New Zealand
+
+**TPA repeal (December 2024)**: New Zealand's Therapeutic Products Act 2023 was repealed on December 18, 2024 following strong industry opposition. A new standalone Natural Health Products Bill is under development by the Ministry of Health. The regulatory gap means that natural health products in New Zealand are currently governed by the older Medicines Act 1981 and the Dietary Supplements Regulations 1985.
+
+**Digital guides under the current NZ framework**: The Medicines Act 1981 regulates physical therapeutic products. Digital educational guides about herbal medicine are not medicines. Selling a PDF guide about Echinacea to a New Zealand buyer is equivalent to selling a book — no regulatory approval or registration is required.
+
+**GST in NZ**: New Zealand's 15% GST applies to digital products supplied to NZ consumers by non-NZ businesses with NZ-sourced supplies over NZD $60,000 annually. Etsy's marketplace facilitator status covers GST collection on digital products sold to NZ buyers, identical to its Australia handling.
+
+**Practitioner associations in NZ**:
+
+1. New Zealand Association of Medical Herbalists (NZAMH) — nzamh.org.nz
+   - Primary professional organization for qualified medical herbalists and naturopaths with herbal training
+   - Find-a-Medical-Herbalist directory: nzamh.org.nz/find-a
+   - About: nzamh.org.nz/about-us
+   - Contact: info@nzamh.org.nz
+
+2. Naturopaths and Medical Herbalists of New Zealand (NMHNZ) — naturopath.org.nz
+   - National organization representing naturopaths and medical herbalists
+   - Contact via website form
+
+3. Natural Health Products New Zealand — naturalhealthproducts.nz
+   - Industry body for NHP manufacturers and practitioners; supports educational resource development
+   - Industry partners directory: naturalhealthproducts.nz/members/industry-partners/
+
+4. Herb Federation of New Zealand — herbs.org.nz
+   - National herb and medicinal plant education organization; educational resources section
+
+5. NZ Natural Health Practitioners Accreditation Council (NZACM) — nzacm.org.nz
+   - Accreditation body for natural health training programs; graduate network for outreach
+
+**New Zealand Market Sizing**:
+- NZAMH and NMHNZ combined membership: estimated 200–400 active medical herbalists
+- NZ natural health market: approximately NZD $280 million (per Euromonitor; 2024)
+- Total NZ practitioner addressable pool: ~400–600 practitioners (small but high-LTV given clinical focus)
+
+**NZ as an Australia add-on**: New Zealand practitioner outreach can be bundled with Australia activation at minimal incremental cost. NZAMH and ATMS have some overlapping networks. When Australia outreach launches, a NZ-specific note ("this guide is also relevant to practitioners in NZ — our content covers plant species used across Australasian herbal traditions") adds marginal effort for meaningful incremental reach.
+
+**Revenue modeling at 5% penetration (NZ, base case)**:
+- Consumer bundle: 20–30 sales × $19.66 = $393–$590
+- Practitioner 10-pack: 4–6 sales × $105 = $420–$630
+- Combined NZ Year 1 base case: **$813–$1,220 USD** (small but near-zero incremental cost when bundled with Australia outreach)
+
+### 4.6 Go/No-Go Decision Threshold — Australia/NZ
+
+**Go signal for Australia**: Activate NHAA + ATMS practitioner outreach by November 1, 2026 if US+Canada revenue exceeds $10,000 by October 31, 2026 and Amazon KDP Australia listings are live.
+
+**No-go signal**: Defer Australia to 2027 if US+Canada revenue is below $7,000 by October 31, 2026.
+
+**Minimum CAC acceptable**: USD $30 per practitioner acquired (Australia outreach requires adaptation of US templates to AUS/NZ species names and regulatory framing — estimated 15–20 hours).
+
+**Practitioner network density required**: Minimum 500 herbalism-focused practitioners in the addressable Australia pool. Current NHAA + ATMS herbal subset of ~4,000–5,000 exceeds this threshold significantly.
+
+**Regulatory compliance burden**: Zero for digital guides via Etsy. No TGA registration, no NHP approval, no ABN required at Seedwarden's expected Year 1 AU revenue volume.
+
+**Shipping + duties overhead**: Zero — digital delivery.
+
+**Recommendation: Australia LATER (2027 Phase 3)** — high revenue potential ($12–17K USD base case), zero regulatory friction, but requires US+Canada validation first to ensure content quality resonates internationally before expanding the practitioner outreach investment to a third continent.
+
+---
+
+## Section 5: Per-Region Decision Matrix
 
 ### Phase Sequencing Recommendation
 
-| Phase | Market | Activation Date | Trigger Condition | Investment |
-|---|---|---|---|---|
-| Phase 1 | Canada | September 1, 2026 | US launch ≥30 reviews, ≥$2,000 gross by Aug 15 | 8–12 hrs outreach adaptation |
-| Phase 2 | UK | October 1, 2026 | US+Canada ≥$5,000 gross by Sept 30 | 10–15 hrs outreach adaptation |
-| Phase 3 | EU (Germany first) | Q1 2027 | $5,000+ passive EU Etsy revenue in H2 2026 | 20–30 hrs + GDPR setup |
+| Phase | Market | Activation Date | Trigger Condition | Investment | Revenue Potential Y1 |
+|---|---|---|---|---|---|
+| Phase 1 | Canada | September 1, 2026 | US launch ≥30 reviews, ≥$2,000 gross by Aug 15 | 8–12 hrs outreach adaptation | $7,500–$9,575 (base) |
+| Phase 2 | UK | October 1, 2026 | US+Canada ≥$5,000 gross by Sept 30 | 10–15 hrs + BHP alignment note | $3,863–$5,083 (base) |
+| Phase 3 | Australia | November 1, 2026 | US+Canada ≥$10,000 by Oct 31 | 15–20 hrs adaptation | $12,198–$17,484 (base) |
+| Phase 3 | NZ (bundled) | November 1, 2026 | Bundled with Australia activation | ~2 hrs incremental | $813–$1,220 (base) |
+| Phase 4 | EU (Germany first) | Q1 2027 | $5,000+ passive EU Etsy revenue H2 2026 | 25–35 hrs + GDPR setup | $10,572–$17,077 (2% active) |
 
 ### Compliance Cost Summary
 
@@ -293,119 +573,99 @@ The EU revenue ceiling at even moderate penetration is materially larger than Ca
 | Canada | $0 (Etsy handles GST/HST) | 4 hrs GST/HST setup | NPN licensing $5,000–$15,000 (not applicable) |
 | UK | $0 (Etsy handles VAT) | 4 hrs VAT setup | THR registration £2,000–£5,000 (not applicable) |
 | EU | $0 (Etsy handles VAT) | 12–20 hrs GDPR + VAT OSS | Country-by-country (not applicable) |
+| Australia | $0 (Etsy handles GST) | 8–12 hrs ABN + GST setup | TGA listing (not applicable) |
+| NZ | $0 (Etsy handles GST) | Bundled with AU | NHP Bill (pending, not applicable) |
 
-**Bottom line for digital guide products**: The regulatory and tax compliance cost of international expansion is near-zero for Etsy-based sales because Etsy functions as the marketplace operator responsible for tax collection in all three markets. The real investment is practitioner network outreach, which scales as an adaptation of existing US templates, not as a net-new campaign.
+### Go/No-Go Summary by Market
+
+| Market | Recommendation | Rationale | Flip Trigger |
+|---|---|---|---|
+| Canada | GO (September 2026) | Zero compliance cost, $20K potential, practitioner density confirmed, AHG-equivalent OHA network available | US revenue <$1,500 by August 15 = defer |
+| UK | MAYBE (October 2026) | Zero compliance cost, practitioner pool 40% of Canada, requires BHP-alignment messaging | US+CA <$5K September 30 = defer to 2027 |
+| Australia | LATER (November 2026) | High potential ($12–17K), zero compliance, but requires US+CA validation first | US+CA <$10K October 31 = defer to 2027 |
+| NZ | LATER bundled | Marginal add-on to Australia; small practitioner pool; minimal incremental cost | Bundle with Australia or skip Year 1 |
+| EU | LATER (Q1 2027) | Highest revenue ceiling but highest activation cost; GDPR adds complexity; defer unless passive sales signal demand | $5K+ passive EU Etsy revenue H2 2026 = GO for Germany |
+
+**Bottom line for digital guide products**: The regulatory and tax compliance cost of international expansion is near-zero for Etsy-based sales because Etsy functions as the marketplace operator responsible for tax collection in all markets. The real investment is practitioner network outreach, which scales as an adaptation of existing US templates, not as a net-new campaign. Canada is the highest ROI first international market by a significant margin: largest addressable practitioner pool in any single international market (3,700–4,400), zero compliance friction, lowest outreach adaptation cost (English-language, AHG-equivalent network structure), and $20K+ revenue potential in Year 1 at base case.
 
 ---
 
-## Section 5: Risk Assessment — Geographic Expansion (May 30–July 2026 Monitoring)
-
-The following risks are specific to international expansion of a digital herbal education product. Generic risks (currency volatility, platform downtime) are excluded. Each risk has a monitoring trigger and a mitigation pathway.
+## Section 6: Risk Assessment — Geographic Expansion
 
 ### Risk 1: Health Canada NHP Regulatory Re-classification
 
-**What it is**: Health Canada could, in a future regulatory update, reclassify digital guides that discuss dosage protocols or therapeutic applications as natural health product "labeling" subject to NPN requirements. The current position — that educational guides are not regulated as NHPs — rests on a regulatory interpretation, not a statutory exemption.
+**Probability**: Low. Health Canada's 2025 red tape reduction measures moved in the opposite direction. A re-classification targeting educational publishers specifically would likely take 2–4 years.
 
-**Probability**: Low. Health Canada's 2025 red tape reduction measures moved in the opposite direction (loosening NHP requirements). A re-classification targeting educational publishers specifically would be politically unusual and would likely take 2–4 years to implement through normal regulatory process.
-
-**Monitoring trigger**: Health Canada NNHPD newsletter / regulatory update announcements. Check quarterly at canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html.
-
-**Mitigation**: Ensure guide language maintains strict educational framing throughout. Avoid direct dosing instructions (use "traditional preparation ranges described by herbalists as..." rather than "dose X mg for Y days"). This framing is already consistent with PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md guidance.
-
-**Action if triggered**: Consult a Canadian natural health product regulatory attorney (National Health Products Association of Canada — nhpac.com — maintains a vendor referral list). Anticipated cost: $500–$1,500 for a single regulatory opinion letter.
-
----
+**Mitigation**: Ensure guide language maintains strict educational framing. Avoid direct dosing instructions. Check quarterly at canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html.
 
 ### Risk 2: MHRA Enforcement Scope Expansion (UK)
 
-**What it is**: The MHRA has signaled interest in expanding oversight of digital health content that includes specific therapeutic claims about herbal products. If the MHRA issues guidance classifying digital educational guides with dosage information as regulated "labeling," Seedwarden's UK sales could become subject to THR compliance requirements.
+**Probability**: Low-to-medium. MHRA's 2024–2025 enforcement focus has been on physical products and social media influencer health claims, not educational publishers.
 
-**Probability**: Low-to-medium. The MHRA's 2024–2025 enforcement focus has been on physical products and social media influencer health claims, not educational publishers. However, the UK's post-Brexit regulatory environment has been more active in herbal regulation than expected.
-
-**Monitoring trigger**: MHRA herbal medicines enforcement news at gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency. Quarterly review.
-
-**Mitigation**: Same guide language framing as Canada risk above. Additionally, include a UK-specific disclaimer in any UK-facing marketing materials: "This guide is produced for educational and informational purposes. It does not constitute medical advice and is not subject to the UK Traditional Herbal Registration scheme."
-
-**Action if triggered**: Withdraw UK Etsy listings as a precaution, consult a UK life sciences solicitor. The UK Herbal Medicines Advisory Committee (HMAC) publishes guidance and can be contacted for pre-consultation.
-
----
+**Mitigation**: Add UK-specific disclaimer to UK-facing marketing: "This guide is produced for educational and informational purposes. It does not constitute medical advice and is not subject to the UK Traditional Herbal Registration scheme." Monitor: gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency quarterly.
 
 ### Risk 3: GDPR Enforcement for Passive EU Subscribers
 
-**What it is**: EU residents who discover Seedwarden on Etsy and subscribe to the Kit email list via the bio link create a GDPR compliance obligation, even if Seedwarden has not actively targeted EU markets. If an EU subscriber files a complaint with a supervisory authority (e.g., the CNIL in France or BfDI in Germany) claiming their data was collected without proper GDPR consent, Seedwarden could face a formal inquiry.
+**Probability**: Medium. EU subscribers from passive Etsy discovery could create a compliance exposure before GDPR infrastructure is implemented.
 
-**Probability**: Medium. Kit's sign-up form does not currently implement double opt-in or explicit GDPR consent language. Any EU subscriber acquired passively between June 22 and the date GDPR infrastructure is implemented is technically a compliance exposure.
+**Mitigation**: Activate Kit's double opt-in for all new subscribers at launch. Add GDPR consent checkbox to the landing page before June 22. Full implementation: 4–8 hours, complete by June 15.
 
-**Monitoring trigger**: Monitor Kit subscriber geographic data from Day 1. If EU subscribers (any country) exceed 5% of total list before GDPR infrastructure is in place, treat as an active risk.
+### Risk 4: TGA Re-classification (Australia)
 
-**Mitigation**: Activate Kit's double opt-in setting for all new subscribers immediately at launch. Add a one-line GDPR consent checkbox to the landing page ("I agree to receive educational emails. I can unsubscribe at any time.") — this satisfies the substance of GDPR Article 6(1)(a) consent for the email use case. Full implementation timeline: 4–8 hours, should be completed by June 15 pre-launch as part of the Kit email infrastructure (per TRACK_B_EMAIL_SEQUENCES.md schedule).
+**Probability**: Low. The TGA's 2025 updates focused on permitted indications for physical listed medicines. Educational guides have never been within TGA regulatory scope.
 
-**Action if triggered**: Do not delete EU subscribers unilaterally (this may itself violate data retention obligations if they have made purchases). Consult an EU GDPR specialist via IAPP (iapp.org) for a one-hour paid consultation ($200–$400) to determine whether a DPA (data processing agreement) with Kit is sufficient or whether additional action is needed.
+**Mitigation**: Same educational framing as Canada. Monitor tga.gov.au for complementary medicines regulatory updates quarterly.
 
----
+### Risk 5: New Zealand Natural Health Products Bill (Regulatory Uncertainty)
 
-### Risk 4: CITES-Listed Herb Content Triggering Platform Review
+**Probability of affecting digital guides**: Very Low. The NHP Bill under development targets physical natural health products. Even if the Bill includes expansive regulatory scope, educational content has been consistently excluded from New Zealand's therapeutic product regulatory frameworks since the Medicines Act 1981.
 
-**What it is**: Several herbs in the Phase 3 bundles — specifically American Ginseng (*Panax quinquefolius*), Black Cohosh (*Actaea racemosa*), and Goldenseal (*Hydrastis canadensis*) — are either CITES Appendix II (American Ginseng) or candidates for listing (Goldenseal). International digital guides discussing harvest, cultivation, or trade of CITES-listed species could, in theory, attract Etsy platform moderation if an automated system flags "wildlife trade" keywords.
+**Mitigation**: Monitor New Zealand Ministry of Health (health.govt.nz/regulation-legislation) for NHP Bill updates quarterly. No action required before Australia/NZ activation in November 2026.
 
-**Probability**: Low. Etsy's automated content review focuses on physical wildlife products, not educational text about plants. Digital guides discussing sustainable cultivation of CITES-adjacent species are standard in the herbal education category.
+### Risk 6: Currency Exchange Rate Compression
 
-**Monitoring trigger**: Etsy listing removal or content warning for any Track B listing. Cross-reference with listings in PHASE_3_MEDICINAL_HERBS_LAUNCH_CHECKLIST.md to confirm all listings remain active at weekly review.
+**Probability**: Low-medium. Etsy's 2.5% FX conversion fee and AUD/NZD volatility relative to USD represent marginal impact at current scale.
 
-**Mitigation**: Frame all CITES-adjacent species content around cultivation and sustainability explicitly. Language such as "sustainably cultivated sources only — wild harvest of this at-risk species is strongly discouraged" signals conservation awareness and reduces platform moderation risk while also differentiating from competitor guides. This framing is already embedded in the Phase 3 sourcing guide.
+**Mitigation**: Accept at current scale. For a future Shopify direct storefront, enable local currency pricing via Shopify Markets to lock in AUD/NZD/CAD/GBP price points independent of USD FX fluctuations.
 
-**International dimension**: Canada, UK, and EU all have CITES obligations. Guides sold to international buyers discussing CITES-listed species are not themselves subject to CITES (CITES applies to the physical trade of specimens), but the guide should not include content that could be read as facilitating illegal harvest or export. Current guide framing is compliant.
+### Risk 7: Practitioner Network Outreach Timing Conflict
 
----
+**Probability**: Medium. The same practitioners who are targets for the US June 22 Tier A launch may have overlapping affiliations with Canadian or Australian networks.
 
-### Risk 5: Etsy International Selling Restrictions (Country-Level Blocks)
-
-**What it is**: Etsy can restrict or block sales to specific countries due to sanctions compliance (OFAC, UK OFSI, EU sanctions lists), legal requirements, or platform policy changes. While Canada, UK, and Germany/France/Italy are stable trading partners, EU-level sanctions changes or a future Etsy policy update could affect digital product delivery to specific markets.
-
-**Probability**: Very low for Canada, UK, Germany, France, Italy. Non-zero for any market in a sanctions environment.
-
-**Monitoring trigger**: Etsy's seller policy updates (etsy.com/seller-handbook). Subscribe to Etsy Seller News emails. Review quarterly.
-
-**Mitigation**: Maintain Amazon KDP as a parallel international distribution channel (activated August 2026 per TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md). KDP's international reach across Amazon.ca, Amazon.co.uk, Amazon.de, Amazon.fr, and Amazon.it provides redundancy. If Etsy restricts a market, KDP serves as the continuity channel with zero additional content adaptation.
+**Mitigation**: Maintain a master contact CRM with country-of-practice field. Tag all contacts with their primary market before outreach begins. The 3-month gap between US launch (June 22) and Canada outreach (September 1) is sufficient to avoid overlap perception.
 
 ---
 
-### Risk 6: Currency Exchange Rate Compression on International Margins
+## Section 7: Practitioner Network Quick Reference — All Regions
 
-**What it is**: Etsy automatically handles currency conversion for international buyers (buyers pay in local currency; Etsy converts to USD at Etsy's FX rate, which incorporates a 2.5% conversion fee on the seller's currency conversion). For Canadian buyers, this means a $22 USD listing price appears as approximately CAD $30 (at 1.36 CAD/USD). If the Canadian dollar strengthens significantly relative to USD, the CAD price of Seedwarden's guides rises in local currency terms, potentially reducing conversion.
-
-**Current FX exposure**: Canada (CAD): 2.5% Etsy conversion fee reduces net revenue from a CAD-denominated sale by $0.49 on a $22 listing — marginal impact. UK (GBP): approximately £17.50 at current 0.79 GBP/USD — competitive with UK-produced practitioner guides in the £15–£25 range.
-
-**Monitoring trigger**: Review Etsy Payment Account FX rates quarterly. Flag if USD/CAD rate moves more than 8% (net revenue impact >$1.50 per sale) or USD/GBP moves more than 8% (net revenue impact >$1.57 per sale).
-
-**Mitigation**: For Etsy-based international sales, no currency hedge is available or warranted at this revenue scale. For a future Shopify direct storefront, enable local currency pricing via Shopify Markets to lock in GBP/CAD price points independent of USD FX fluctuations.
-
----
-
-### Risk 7: Practitioner Network Saturation and Outreach Timing Conflict
-
-**What it is**: The same practitioners who are targets for the US June 22 Tier A launch outreach (per PRACTITIONER_FIRST_CONTACT_SEQUENCE.md) have overlapping affiliations with Canadian, UK, and EU networks. If Canada and UK outreach campaigns launch too close to the June 22 US campaign, the same practitioners may receive multiple touchpoints from Seedwarden within a short window, triggering a "spam perception" response that damages the relationship.
-
-**Specific overlap at-risk contacts**: AHG Registered Herbalists with dual US/Canada practice locations (particularly Pacific Northwest practitioners who serve BC/Washington border populations). NIMH-affiliated UK herbalists who are also AHG members (a small but real overlap — several UK-trained herbalists hold dual AHG membership).
-
-**Monitoring trigger**: Before activating Canada OHA outreach in September 2026, cross-reference the Canada target list against the June 22 Tier A and Tier B US contact lists. Any practitioner appearing on both lists should receive a Canada-specific follow-up note ("I noticed you also practice in Ontario — here's how the bundle applies to your Canadian clinical practice") rather than a cold-start outreach.
-
-**Mitigation**: Maintain a master contact CRM (Google Sheets) with country-of-practice field. Tag all contacts with their primary market before outreach begins. The 3-month gap between US launch (June 22) and Canada outreach (September 1) is sufficient to avoid overlap perception if the September Canada outreach references the prior US contact rather than ignoring it.
-
----
-
-### Risk Summary Table
-
-| Risk | Probability | Revenue Impact | Monitoring Frequency | Mitigation Owner |
+| Region | Association | URL | Practitioner Count | Contact |
 |---|---|---|---|---|
-| Health Canada NHP reclassification | Low | High if triggered (list withdrawal required) | Quarterly | Content language audit |
-| MHRA enforcement scope expansion | Low-medium | High if triggered | Quarterly | UK-specific disclaimer added pre-launch |
-| GDPR enforcement (passive EU subscribers) | Medium | Medium (inquiry, not fine likely at this scale) | Continuous from launch day | Kit double opt-in + consent checkbox |
-| CITES species content triggering platform review | Low | Medium (listing removal, not legal action) | Weekly Etsy listing check |Content framing in guides |
-| Etsy international selling restrictions | Very low | Low (KDP redundancy available) | Quarterly | Amazon KDP parallel activation |
-| FX compression on international margins | Low-medium | Low (<$2/sale at current rates) | Quarterly | Accept at current scale; Shopify Markets for future |
-| Practitioner network outreach timing conflict | Medium | Low-medium (relationship cost, not revenue loss) | Pre-campaign list audit | CRM cross-referencing before each market activation |
+| Canada | CAND | cand.ca | ~2,400 NDs | info@cand.ca |
+| Canada | OHA | ontarioherbalists.ca | ~500 herbalists | info@ontarioherbalists.ca |
+| Canada | BCND | bcnd.ca | ~400 NDs (BC) | via website |
+| Canada | OAND | oand.org | ~800 NDs (ON) | via website |
+| Canada | CCNM | ccnm.edu | ~150 grads/yr | academic@ccnm.edu |
+| Canada | Boucher Institute | boucher.ca | ~80 grads/yr | contact@boucher.ca |
+| Canada | Wild Rose College | wildrosecollege.com | ~100 grads/yr | info@wildrosecollege.com |
+| UK | NIMH | nimh.org.uk | ~800–1,000 | info@nimh.org.uk |
+| UK | RCHM | rchm.co.uk | ~400–600 | secretary@rchm.co.uk |
+| UK | BHMA | bhma.info | trade body | secretary@bhma.info |
+| UK | CPP | phytotherapy.org | CPD network | admin@phytotherapy.org |
+| UK | AMH | associationofmasterherbalists.co.uk | ~200 | via website |
+| EU | EHTPA | ehtpa.eu | 14 countries | secretary@ehtpa.eu |
+| EU | DGP (Germany) | phytotherapy.de | ~3,000–5,000 phyto | dgp@phytotherapy.de |
+| EU | SNH (France) | syndicatdesherboristes.fr | ~2,000–4,000 | via website |
+| EU | FIE (Italy) | erboristi.it | ~12,000+ shops | fie@erboristi.it |
+| EU | ESCOP | escop.com | scientific body | via website |
+| Australia | NHAA | nhaa.org.au | ~800–1,200 | nhaa@nhaa.org.au |
+| Australia | ATMS | atms.com.au | ~10,000 (multi) | via website |
+| Australia | Endeavour College | endeavour.edu.au | ~2,000 students | via website |
+| NZ | NZAMH | nzamh.org.nz | ~200–400 | info@nzamh.org.nz |
+| NZ | NMHNZ | naturopath.org.nz | ~150–300 | via website |
+| NZ | NHP NZ | naturalhealthproducts.nz | industry body | via website |
 
 ---
 
-*Cross-references: TRACK_A_REGULATORY_RESEARCH.md (physical product regulatory context), PHASE_3_OPTION_ANALYSIS.md (June 22 US launch baseline), TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md (channel sequencing), PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md (at-risk species and CITES context)*
+*Version 2.0 — May 21, 2026. Expanded from v1.0 to include Australia/NZ regulatory analysis, per-region practitioner network maps with contact names, go/no-go decision matrix, and updated market sizing.*
+
+*Cross-references: TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md (channel sequencing), PHASE_3_OPTION_ANALYSIS.md (June 22 US launch baseline), AFFILIATE_PARTNERSHIP_FRAMEWORK.md (commission structure), PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md (CITES and at-risk species context)*

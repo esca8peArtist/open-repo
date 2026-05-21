@@ -176,11 +176,18 @@
 - **Owner**: general-research subagent
 - **Deadline**: May 30 (deferred pending synthesis outcome; if synthesis is STRONG/MODERATE, execute May 23-25 instead)
 
-### 21. ⏳ seedwarden — Track B Geographic Expansion & Channel Diversification (Session 1460 — Added May 21)
-**Scope**: Track B June 22 launch is ready; Track A has blockers. Research geographic markets (Canada, UK, EU) + wholesale channels (practitioners, clinics, complementary medicine retailers) that don't depend on Track A user decisions.
-- **Deliverables**: `TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md` (compliance, VAT/HST, practitioner networks by region) + `TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md` (margins, partner tiers, MOQs)
-- **Owner**: seedwarden subagent
-- **Deadline**: June 1 (supports June 15 post-launch channel activation)
+### 21. ✅ seedwarden — Track B Geographic Expansion & Channel Diversification (Session 1464 COMPLETE)
+**Status**: Completed May 21 (Session 1464). Files updated to v2.0: `TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md` + `TRACK_B_WHOLESALE_CHANNEL_STRATEGY.md`.
+**Key findings**:
+- Australia added (v2.0): TGA does not regulate digital educational guides; Etsy collects 10% GST automatically; NHAA + ATMS = 6,000–8,600 addressable practitioners; USD $3.4B market (2024); $12–17K revenue potential base case Year 1.
+- NZ added: TPA repealed December 2024; NHP Bill in development; bundled with Australia activation at near-zero incremental cost.
+- Practitioner network maps: 15+ Canada links (5 contact names), 8+ UK links (3 contact names), 6+ EU links (2/country), 5+ AU/NZ links (2 contact names). Full 20-row quick reference table.
+- Go/No-Go matrix: Canada GO (September 2026), UK MAYBE (October), Australia LATER (November), EU LATER (Q1 2027).
+- Corporate wellness channel added: $1,356+ net per Starter contract ($1,500/year), 4–8 week sales cycle, September 2026 outreach start.
+- White-label channel added: $143.90 net/bundle license, Canva 1hr production, 10–30 licenses/year target.
+- Mainstream wellness wholesale documented and deferred: Whole Foods (6–12 month approval, $500–2,000 slotting), CVS/Walgreens (9–18 months), GNC (insurance + 50–500 unit MOQ) — all Phase 3 2027+.
+- Year 1 revenue projection updated: $31,040–$73,592 (up from $26,900–$62,500 in v1.0).
+- **Deadline**: June 1 — complete. Supports June 15 post-launch channel activation and June 1 user decision window for geographic scope.
 
 ---
 
