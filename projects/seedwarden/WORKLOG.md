@@ -4,6 +4,26 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Production Launch Preparation (Exploration Queue Item, May 28 Gate) — May 21, 2026
+
+**Task**: Produce two production-ready deliverables for Phase 3 Medicinal Herbs Production Launch Preparation gating May 28: `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` and `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md`. Scope assumes Option C (Women's Health + Respiratory + Sleep priority bundles, Immunity + Digestive deferred to August wave).
+
+**Status**: Both files already at production-ready versions as of prior May 21 sessions. Verified against all task specification requirements. No gaps found. Files committed as-is.
+
+**Files verified production-ready**:
+
+- `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` (v6.0, ~4,200 words, 7 sections) — Covers all 5 required sections: (1) herb selection finalization with mandatory content flags, shared-species efficiency table, word allocation table for 5 bundles; (2) writing production templates with per-section word counts, adjusted hours by bundle, quality depth requirements; (3) Canva design timeline with 12.5-hour budget, per-bundle hex codes, stock image requirements per bundle, design lock July 3 EOD; (4) photography pre-staging checklist — 4-phase timeline May 26–June 21, priority table by upload sequence, Mountain Rose Herbs dried herb order by June 15, phase-specific shoot targets; (5) pre-gate compliance checklist — forager cohort tracker table (21.3% cleared), native plants conversion monitor (2.24% cleared), upload readiness checklist, FTC pre-compliance review, Kit email automation sequences. Sections 6–7 add risk matrix and June 22 turn-key launch checklist.
+
+- `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (v4.0, ~2,600 words) — Covers all 5 suppliers with June 21–July 5 lead-time windows: Prairie Moon Nursery (info@prairiemoon.com, 866-417-8156), Strictly Medicinal Seeds (info@strictlymedicinalseeds.com), Mountain Rose Herbs (wholesale@mountainroseherbs.com), Southern Exposure Seed Exchange (southernexposure.com/contact/), Fedco Seeds (fedcoseeds.com/contact). Bulk pricing at Phase 3 photography volumes (1–3 specimens per species; MRH retail 1 oz per species $93–141 total). MOQ constraints documented (no MOQ for retail orders at all live-plant suppliers; MRH $250–500 opening wholesale, retail used for Phase 3). Alternative/fallback suppliers documented for all species. June 8 Goldenseal hard deadline flagged prominently; Path 2 (Wikimedia CC) pre-selected as recommended. Ordering calendar with 9 action rows from May 20 through June 22.
+
+**Three-bundle scope (Option C) assumptions baked in**: All deadlines, supplier contacts, herb quantities, and photo fallbacks assume Women's Health (June 29), Respiratory (July 6–7), and Sleep (July 13) as the binding upload sequence. Immunity (July 20) and Digestive (August 3) are included in full but carry explicit float that makes them scope-extensible without a separate planning pass.
+
+**Decisions still pending (May 30 deadline)**: (1) Sprint scope Option A vs. C — files assume Option C as recommended; (2) Goldenseal Path 1 vs. Path 2 — Path 2 pre-selected in tracker; (3) Canva palette confirmation — 6 hex codes in checklist pending user sign-off by June 15.
+
+**Sources read**: PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md v6.0, PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md v4.0, WORKLOG.md (prior sessions).
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path and Gantt Timeline (Production Timeline Deliverables) — May 21, 2026
 
 **Task**: Build comprehensive Phase 3 medicinal herbs production timeline with critical path analysis supporting May 30 user decision gates for Phase 2 launch. Scope covers 5 bundles (Women's Health, Respiratory, Immunity, Sleep, Digestive), June 22–July 13 execution window, 22-day sprint.
