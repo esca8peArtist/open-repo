@@ -2,6 +2,31 @@
 
 ---
 
+## May 21, 2026 — General Research Agent — Synthesis Outcome Playbooks (Pre-Synthesis Session)
+
+**Task**: Build `SYNTHESIS_OUTCOME_PLAYBOOKS.md` — comprehensive, action-specific playbooks for all four synthesis outcome possibilities (STRONG, MODERATE, WEAK, TOO_EARLY) plus a crisis trigger playbook for a same-day Trump v. Barbara ruling. Designed to eliminate 2–4 hour post-synthesis planning lag and enable same-day Phase 2 activation on STRONG/MODERATE outcomes.
+
+**File created**:
+- `projects/resistance-research/SYNTHESIS_OUTCOME_PLAYBOOKS.md` — 1,900+ words delivered (actual: ~3,700 words). All five required sections complete:
+
+1. **STRONG playbook** (Section 1): Phase 2 launch timing same-day evening May 21; Domains 56+58 activate tonight; Domains 57+59 queue June 1. Contains: decision flowchart, full phase 2 activation sequence table, contact cascade with Tier 2 activation timeline by constituency, distribution coordination matrix (May 21 vs. May 22–28), three message skeletons (Batch 2 law school, D56 Tier 2, D58 Tier 1 post-ruling).
+
+2. **MODERATE playbook** (Section 2): Phase 2 launch May 22 (1-day shift); D57 June 10, D59 July 1, Tier 2 June 22–28. Contains: decision flowchart, domain sequencing matrix with MODERATE vs. STRONG differences, contact escalation matrix with per-contact framing, Domain 58 tribal sovereignty contingency messaging, three message skeletons (Batch 2 no social proof, D56 institutional gap, D57 research launch announcement).
+
+3. **WEAK playbook** (Section 3): D58 rapid-response hold mechanics; D56+D39 proceed independently; re-synthesis May 25; organizations that see D58 delayed vs. those that receive it regardless (ruling-triggered). Contains: decision flowchart, D58 hold protocol, productive work inventory, two message skeletons (D56 no social proof, D37 re-engagement).
+
+4. **TOO_EARLY playbook** (Section 4): Hold pattern mechanics; autonomous D56+58 prep; monitoring gates May 23/25/28; stakeholder communication template for partners asking about status during wait.
+
+5. **Crisis trigger playbook** (Section 5): 24-hour Domain 58 rapid-response window override if Trump v. Barbara ruling issues May 21. Contains: hourly protocol (Hours 0–2, 2–4, 4–8, 8–24), call escalation sequence (NARF, NCAI, indigenous media, Senate Indian Affairs), messaging protocol by scenario (A constitutional/B statutory/C adverse), synthesis classification rules during crisis.
+
+6. **Cross-outcome infrastructure** (Sections 6–8): Three decision flowcharts (master outcome selector, domain activation by outcome grid, upgrade/downgrade conditions table), full contact escalation matrix (Domain 56 Tier 1, Domain 58 Tier 1, all-domain Tier 2 with per-outcome earliest send dates), execution notes on timing implications.
+
+**Key differentiators from existing `SYNTHESIS_CONTINGENCY_EXECUTION_PLAYBOOKS.md`**: That document focuses on domain sequencing rationale and Batch 2–3 timing logic. This document adds: (1) who to call first in what order for each outcome, (2) pre-written template message skeletons ready to customize and send, (3) visual decision flowcharts for quick orientation at synthesis time, (4) explicit rules for which organizations see Domain 58 delayed vs. which receive it regardless, (5) crisis trigger playbook for same-day ruling (not covered in prior documents).
+
+**Confidence**: High. All activation sequences, contact lists, and domain dates drawn directly from canonical authority files (MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md, SYNTHESIS_CONTINGENCY_EXECUTION_PLAYBOOKS.md, TRUMP_V_BARBARA_RAPID_RESPONSE_INFRASTRUCTURE.md, DOMAIN_58_DISTRIBUTION_BRIDGE.md). No new research required; this is purely operational synthesis of existing infrastructure.
+
+---
+
 ## May 21, 2026 — General Research Agent — Phase 2 Pre-Decision Infrastructure Verification (Pre-Synthesis Session)
 
 **Task**: Verify both Phase 2 pre-decision infrastructure deliverables are production-ready and committed to master by May 21 12:00 UTC — 7 hours before the 19:00 UTC synthesis execution. Audit domain files, confirm infrastructure status, and log findings.

@@ -4,6 +4,39 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 4 Adjacent Product Market Research — May 21, 2026
+
+**Task**: Phase 4 adjacent product market research. Exploration Queue item. Decision deadline June 1, 2026; production start July 15, 2026.
+
+**Files produced**:
+- `PHASE_4_MARKET_RESEARCH.md` (~3,200 words) — full 7-category analysis with per-category 8-dimension coverage, practitioner bundle strategy, revenue scaling architecture, supplier viability, and production complexity ranking
+- `PHASE_4_CATEGORY_COMPARISON_MATRIX.csv` — 7 categories × 15 dimensions matrix with GREEN/YELLOW/RED launch recommendations
+
+**Key findings**:
+- **Top recommendation**: Two-category parallel launch — Tea Blends (July 15) + Herbal Skincare (August 15). Combined with Phase 3, reaches $3K/month by October–November 2026.
+- **Wellness Bundles**: Wave 3 (October 2026), Q4 gifting play. Highest AOV ($45–55). Layers on top of Tea + Skincare SKUs.
+- **Aromatherapy**: Yellow — September 2026, 2 SKUs only after Tea + Skincare stable.
+- **Deferred**: Culinary Blends (lowest strategic fit), Pest Management (seasonal + low cross-sell), Nutrition/Supplements (cGMP regulatory burden eliminates viability at current scale — defer to Phase 5, Q2 2027 minimum).
+- **Revenue path**: Phase 3 ($800–1,200) + Tea ($2,200) + Skincare ($1,600) = $4,000–5,000/month by Q4 2026. $3K target reachable by October 2026.
+
+**External research performed**:
+- Herbal beauty products market size (FMI, IMARC, Precedence Research)
+- Herbal tea market size and functional segment growth (FMI, Emergen Research)
+- Natural insect repellent market (Grand View Research)
+- Essential oil / aromatherapy market (Business Research Insights, AromaWeb)
+- Wellness subscription box market (Business Research Insights)
+- Seasoning/culinary herb market (Grand View Research)
+- US herbalist & herbal practitioner market (IMARC Group)
+- FDA dietary supplement regulations (Etsy Seller Handbook, Chestnut School of Herbal Medicine)
+- FDA MoCRA cosmetics regulations (FDA.gov)
+- Cottage food law / herbal tea FDA compliance (Find Home Grown, Farm Commons)
+- Etsy fee structure 2025–2026 (Printful, Growthwillow)
+- Mountain Rose Herbs wholesale terms
+- Skincare production COGS (Made by Genie, Naturo & Orgo)
+- COGS for handmade sellers methodology (Craftybase)
+
+---
+
 ## Seedwarden Agent Session — Herbalist Network Ecosystem Mapping — May 21, 2026
 
 **Task**: Herbalist network ecosystem mapping for Phase 3 practitioner tier ($120–$150 bundles). Exploration Queue item, 6–8 hours estimated.
