@@ -131,6 +131,37 @@
   - **DVM succession planning at Year 1** is only guaranteed resilience measure against hub single-point failure
   - Full case studies included: RAVS, Scotland HIVSS, East Africa CAHW, India A-HELP, Farm Journal Foundation State Readiness program
 
+### 16. ⏳ open-repo — Phase 5.2 Post-Merge Implementation Sequence (Session 1458)
+**Scope**: Phase 5.1 MVP awaiting user approval (expected May 25-26 merge). Phase 5.2 candidates already evaluated and ranked (Medical 8.20, Water 7.90, Seed 7.80, Food 7.65, Botanical 7.55). Design implementation sequence for top 3-5 candidates pre-merge so June 1+ execution is seamless.
+- **Deliverables**: 
+  - Phase 5.2 Implementation Roadmap (June timeline, resource allocation, developer capacity)
+  - Medical content sourcing checklist (likely first candidate due to score + dependency criticality)
+  - ZIM integration validation for top 5 candidates (library compatibility, author/source data formats)
+- **Owner**: open-source-rideshare subagent (project-appropriate)
+- **Deadline**: May 28 (pre-user-approval feedback window)
+
+### 17. ⏳ mfg-farm — Phase 2 Supplier Outreach & Capital Planning Pre-Staging (Session 1458)
+**Scope**: Phase 2 Etsy launch pending user test-print decision (May 23-28 expected); Phase 2 scaling starts June 3 post-Phase-1 validation. Pre-stage supplier outreach, capital planning, and timeline that doesn't depend on test-print results.
+- **Deliverables**:
+  - Bambu Lab farm supplier contact list + bulk discount tiers (SimplyPrint integration)
+  - Polymaker wholesale onboarding checklist (wholesale volume pricing, March 2026 partnership terms)
+  - Amazon FBA supplier setup guide (Printful discontinued March 1 — alternative self-fulfillment or 3PL options)
+  - Phase 2 capital deployment timeline (trademark filing, equipment, working capital)
+  - Trademark filing strategy & timeline (USPTO $400+ per class, 3-4 month standard, 6-9 month exam)
+- **Owner**: mfg-farm subagent
+- **Deadline**: June 1 (ready for June 3 Phase 2 start)
+
+### 18. ⏳ seedwarden — Phase 3 Launch Marketing & Affiliate Onboarding Pre-Staging (Session 1458)
+**Scope**: Track B June 22 launch is ready pending May 30 user decisions (scope, sourcing, writer). Pre-stage marketing execution, affiliate partnerships, and email sequences that don't depend on scope decision.
+- **Deliverables**:
+  - First-contact outreach sequence for 25 practitioner voices (identified in HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md)
+  - Affiliate partnership framework (AHG directories, NAMA tiers, clinical herbalist networks — co-marketing angles)
+  - Pre-launch email sequence (welcome series, benefit framing, practitioner-tier positioning) — 4-8 emails
+  - Content calendar skeleton for June 22–July 15 (3-week post-launch window, social/email/blog content themes)
+  - Peer review recruitment strategy (RH/AHG credentials, contraindication depth 4–5 rating — identify 6-8 candidates for June 1 outreach)
+- **Owner**: seedwarden subagent
+- **Deadline**: June 1 (ready for June 22 launch + May 30 post-decision execution)
+
 ---
 
 ## Queue Management Rules
