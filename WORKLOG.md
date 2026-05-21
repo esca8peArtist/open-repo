@@ -19,6 +19,26 @@
 
 ---
 
+## Session 1450 (May 21, continued) — seedwarden: Practitioner Relationship Pre-Outreach & Affiliate Partnership Mapping
+
+**Task**: Research and write practitioner relationship roadmap, affiliate partnership matrix, and co-marketing opportunities for seedwarden Phase 3-4 launch.
+
+**Files produced**:
+- `projects/seedwarden/PRACTITIONER_RELATIONSHIP_ROADMAP.md` (~4,200 words) — credibility filter assessment, 25 influencers in 3 tiers (Tier 1: 284K–303K IG reach; Tier 2: 13K–21.5K IG; Tier 3: 51K–220K TikTok), pre-outreach strategy with fresh/dried decision matrix, 4-window engagement timeline (May 28→June 7 → June 15→22 → June 22→July 13 → July 14+), Phase 4 credibility prep
+- `projects/seedwarden/AFFILIATE_PARTNERSHIP_MATRIX.csv` — 11 affiliate programs evaluated (Amazon Associates, Etsy/Awin, Mountain Rose Herbs, Herbal Academy, native Etsy coupon codes, Payhip, ShareASale, etc.) with commission rates, cookie lengths, setup cost, and recommendations
+- `projects/seedwarden/CMARKETING_PARTNERSHIP_OPPORTUNITIES.md` (~2,800 words) — Tier A partners (activate June 1–22: Mountain Rose Herbs, LearningHerbs/HerbMentor, Herbal Academy), Tier B partners (June 22–July 13), Tier C (post-launch), bundle opportunities table, three outreach templates
+
+**Key findings**:
+1. **Credibility filter is binary**: Latin binomial + species authority, evidence-tier attribution, complete contraindication table, sourcing ethics statement = minimum viable for $120–150 practitioner tier
+2. **Top-tier influencers identified**: Aviva Romm MD (284K), Juliet Blankespoor (303K), Jess Bergeron (750K IG, 438K TikTok), John Gallagher (269K), Rosalee de la Forêt (111K), Christopher Hobbs PhD (peer reviewer), Cassandra Quave PhD (Emory botanist)
+3. **Affiliate program recommendations**: Native Etsy coupon codes are fastest to implement (zero cost, 15% commission manually tracked); Mountain Rose Herbs (10% commission) + LearningHerbs (15–20%) are highest-fit practitioner audiences; Herbal Academy affiliate (15%) doubles as self-promotion to 50K+ student base
+4. **Co-marketing opportunities**: Mountain Rose Herbs email audience (100K+) exact buyer overlap; Strictly Medicinal Seeds (cultivation buyer = guide buyer); United Plant Savers (conservation credibility); seed-to-practitioner bundle strategy (guide + dried samples)
+5. **Pre-outreach timeline**: Window 1 (May 28–June 7) secures RH reviewer + warms LearningHerbs affiliate; Window 2 (June 15–22) activates Tier 2; Window 3 (June 22–July 13) launch-day posts + podcast pitches; Window 4 (July+) AHG chapters + symposium
+
+**Completion notes**: seedwarden exploration queue item from Session 1449 queue refresh — delivered before June 1 gate. Roadmap gates Phase 4 practitioner bundle strategy and eliminates pre-launch credibility uncertainty.
+
+---
+
 ## Session 1449 (May 21, 05:58–06:15 UTC) — Orchestrator: State Orientation + Exploration Queue Refresh
 
 **Task**: Orient to current state after Session 1447 exploration queue completion; assess available autonomous work; refresh exploration queue; prepare for May 21 19:00 UTC resistance-research synthesis execution.
