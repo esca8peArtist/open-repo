@@ -4,6 +4,50 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Implementation Checklists (Exploration Queue Item 9) — May 21, 2026
+
+**Task**: Pre-build implementation checklists for all 10 Phase 3 decision combinations so that May 30 user decision triggers immediate execution with no preparation lag. Deadline May 28, 2026.
+
+**Files produced** (all in `projects/seedwarden/phase-3-implementation/`):
+
+- `PHASE_3_IMPLEMENTATION_CHECKLIST_MATRIX.md` — 10 complete self-contained execution checklists, one per decision combination (Scope A/B/C × Path 1/2 × Solo/Writer). Each checklist covers: pre-execution validation, asset delivery (May 30–June 21), design and photography, writing sprint week-by-week with daily task breakdowns, contraindication review gates, affiliate bundle cuts, social media launch steps, monitoring metrics, and per-upload QA checklist. Cross-combination fallback routing table included.
+
+- `PHASE_3_TIMELINE_GANTT_CHARTS.md` — 10 ASCII Gantt charts, one per combination. Visual timeline from May 30 decision through August 31. Shows all tracks (decisions, supplier orders, writer hire, photography, Canva design, writing sprint, upload milestones, practitioner tier, peer review, affiliate/Kit, monitoring). Includes Path 1 vs. Path 2 sourcing timeline comparison table, solo vs. hired-writer timeline differences table, June 22 hard launch date analysis across all options, and full dependency visualization covering all structural dependencies shared across all 10 combinations.
+
+- `PHASE_3_CONTINGENCY_TRIGGERS.md` — 7 failure mode playbooks: (1) writer unavailable after hire — 3 scenarios (cancel before sprint, content fails review, unresponsive mid-sprint) with backup writer list and timeline recovery; (2) Goldenseal sourcing delayed — Path 1 non-shipment response, stock unavailable response, Path 2 slippage after June 21; (3) design assets late — photography float analysis, cover design simplification protocol, launch window slippage calculation per bundle; (4) contraindication review identifies gaps — Level 1–4 severity classification with specific response per level, escalation to practitioner network protocol; (5) affiliate partner issues — 4 scenarios (content change request, commission dispute, bundle cover scope change, practitioner reviewer messaging request); (6) Phase 2 gates drop below threshold — single gate and dual gate responses with adjusted upload schedules; (7) Etsy account issue — policy violation and payment hold responses. Quick-reference trigger summary table with response times.
+
+- `PHASE_3_COMMUNICATION_TEMPLATES.md` — 8 send-ready templates: (1) writer offer letter with scope, payment milestones, FTC compliance requirements, work-for-hire clause; (2) practitioner reviewer invitation — Women's Health bundle (Black Cohosh + Vitex); (3) practitioner reviewer invitation — Immunity bundle (Goldenseal CITES + Ashwagandha thyroid); (4) pre-launch affiliate messaging with coupon code, commission structure, ready-to-use caption; (5) launch day email to Etsy followers — 5 versions (one per bundle) with FTC-compliant species-specific hooks; (6) social media post templates — 15 posts total (3 per bundle), covering Instagram/Facebook/TikTok, all using evidence-tiered language throughout; (7) Kit email broadcast for FORAGER20 cross-sell segment (August 3 Digestive trigger); (8) v1.1 update notification for Immunity bundle buyers (applicable if Path 1 Goldenseal photography upgrade is produced).
+
+**Key decisions reflected**:
+- Combination 6 (Option C solo, Path 2, Wikimedia CC) is flagged as recommended default throughout all documents
+- All checklists are self-contained: no new decisions are required after May 30 for any combination
+- June 22 sprint start is the universal execution trigger; May 30 decision delay slides dates proportionally
+- All contraindication language in communication templates uses FTC Quick Reference framing from PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md Appendix A
+
+**Reference files read**: PHASE_3_OPTION_ANALYSIS.md, PHASE_3_GOLDENSEAL_SOURCING_COMPARISON.md, PHASE_3_SECOND_WRITER_CANDIDATE_PROFILES.md, PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md v6.0.
+
+---
+
+## Seedwarden Agent Session — Phase 3 Option Analysis (Exploration Queue Item 6) — May 21, 2026
+
+**Task**: Phase 3 (medicinal herbs) sprint scope decision package — production-ready decision documents for user decision by May 30.
+
+**Files produced**:
+- `PHASE_3_OPTION_ANALYSIS.md` (~2,800 words) — side-by-side cost/timeline/revenue for Options A (5-bundle solo), B (5-bundle + writer), and C (3-bundle solo); 10-scenario COGS/revenue/timeline matrix; decision tree; recommendation framework; 6-month revenue convergence analysis; per-bundle demand rationale; risk register; pre-sprint decision checklist.
+- `PHASE_3_GOLDENSEAL_SOURCING_COMPARISON.md` (~2,200 words) — Path 1 (live specimen, $15–22, June 8 hard deadline) vs. Path 2 (Wikimedia CC + NC Botanical Garden, $0) tradeoff; CITES Appendix II conservation context; brand perception analysis; v1.0/v1.1 hybrid strategy for Option A; action items for each path.
+- `PHASE_3_SECOND_WRITER_CANDIDATE_PROFILES.md` (~2,400 words) — applicable only if Option B selected; bundle assignment and writing hour breakdown; non-negotiable qualification criteria (AHG RH / ND credential, contraindication depth, FTC competency, writing sample); four candidate sourcing paths (AHG directory, Chestnut School, Herbal Academy, academic herbalists, freelance fallback); candidate profile template; contract and payment structure; hiring timeline; go/no-go checklist.
+
+**Key findings**:
+- Option C (3-bundle solo) is recommended as the default for a single writer: 36–44 adjusted writing hours, 3–4 hrs/day pace, 4 float days, $0–371 out-of-pocket, practitioner tier live July 15.
+- The 90-day revenue difference between Option C and Option A is approximately $745 — this gap closes by September. No permanent revenue disadvantage to Option C.
+- Path 2 (Wikimedia CC + NC Botanical Garden image request) is sufficient for Immunity bundle launch quality on July 20. Path 1 is a v1.1 brand investment, not a launch requirement under Option C.
+- Option B requires a writer confirmed by June 1 (zero-float dependency); if unavailable, activate Option C immediately.
+- Critical Path v6.0 labels differ from the prompt's framing: what the prompt called "Option B (5-bundle)" is "Option A" in v6.0; the Critical Path's "Option B" is the two-writer variant. All deliverables reconcile both framings.
+
+**Source document**: PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md v6.0 (May 21, 2026).
+
+---
+
 ## Seedwarden Agent Session — Practitioner Relationship Roadmap + Affiliate Partnership Strategy — May 21, 2026
 
 **Task**: Exploration Queue item — Phase 3–4 practitioner relationship roadmap and affiliate partnership strategy.
