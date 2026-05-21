@@ -4,6 +4,34 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Production Timeline & Critical Path Analysis (Exploration Queue) — May 21, 2026
+
+**Task**: Produce definitive critical path analysis and Gantt CSV for Phase 3 medicinal herbs production timeline. Validate June 22–July 13 (22-day) execution window feasibility. Identify user gates, parallel-execution opportunities, and risk mitigation strategies.
+
+**Files produced** (both in `projects/seedwarden/`):
+
+- `phase-3-medicinal-herbs-critical-path.md` (v8.0, ~3,200 words, 7 sections + 2 appendices) — Supersedes v7.0 (`PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md`). Covers: (1) Medicinal Herb Selection Finalization — 5 bundles confirmed, 21 species slots / 14 unique species, sourcing timeline by tier (Tier 1 June 8, Tier 2 June 15, Tier 3 June 22), order deadline table, budget $233–$408 by path; (2) Writing Schedule — 56–66 adjusted hours total for 5 bundles (64–74 raw), per-bundle hour breakdown, parallel vs. sequential tradeoffs, bottleneck identification at D3 June 24 pace gate; (3) Canva Design Timeline — 14 hours total, 1.2 hrs/cover, Phase 2 template reuse (no rebuild), design lock July 3 EOD, per-bundle schedule with float days; (4) Photography Staging — fresh/dried/CC decision matrix, pre-sprint track June 3–21, in-sprint sessions June 23–26, supplier coordination table, 12-day float for photography; (5) Upload Sequence and Launch Gates — both Phase 2 gates cleared (forager cohort 21.3%, native plants 2.24%), June 22 go/no-go criteria (5 conditions), staggered upload June 29–August 3, Phase 2 slip cascade table; (6) Risk Analysis — 10-risk scoring matrix (P×I), float-day allocation per risk, 4 contingency branch scenarios; (7) Critical Path Summary — ASCII Gantt showing 22-day window, float days marked, user decision gates flagged, writing identified as sole binding constraint.
+
+- `phase-3-medicinal-herbs-gantt.csv` (77 rows, 14 columns) — Companion Gantt for the June 22–July 13 sprint plus pre-sprint track (May 21–June 21) and post-sprint milestones (July 15–August 3). Columns: Row, Sprint Day, Week, Track, Task, Start Date, End Date, Duration Days, Predecessor, Float Days, Critical Path, Resource Hours, Milestone, Notes. Covers: all pre-sprint decisions and supplier deadlines; all 22 sprint days (writing by bundle, design by bundle, photography sessions, checkpoints); all 5 upload milestones; 9 contingency branches; 4 resource summary rows (Week 1: 43.4 hrs, Week 2: 35 hrs, Week 3: 29.9 hrs, Sprint Total: 108.3 hrs). Critical path tasks flagged YES with 0 float. All 3 user gates flagged in Decision rows.
+
+**Feasibility verdict**: FEASIBLE. The June 22–July 13 window is structurally viable for all 5 bundles under Option A (single writer, 4–5 hrs/day) or 3 priority bundles under Option C (recommended, 3–4 hrs/day). Both Phase 2 launch gates are already cleared. Critical path is writing only — all other tracks (design 14 hrs, photography 18 pre-sprint + 10 in-sprint) carry 3–14 days of float and do not threaten any upload date.
+
+**Three user decisions required by May 30**:
+1. Sprint scope: Option A (5 bundles, 56–66 adj. hrs) / Option B (2 writers) / Option C (3-bundle priority — recommended)
+2. Goldenseal path: Path 1 (live order June 8, $15–22) or Path 2 (Wikimedia CC — recommended under Option C)
+3. Canva palette: confirm 6 hex codes or defer to June 15 auto-lock
+
+**Key structural findings**:
+- Photography is not a launch blocker under any scenario — 100% CC fallback coverage for all 14 species
+- Design lock July 3 EOD is the only zero-float design task; all 5 covers carry 3–4 days of float otherwise
+- Mountain Rose Herbs dried herb order (June 15) is the single highest-impact supplier action for photography quality
+- Phase 2 slip of 5 days shifts all three core upload dates by 5 days with zero scope reduction; 10-day slip compresses review accumulation before November–December peak but does not require scope reduction
+- Option C reduces writing from 56–66 to 36–44 adjusted hours and adds 2 structural float days; estimated 90-day revenue difference versus Option A is approximately $745, closing by September
+
+**Evidence base**: PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md (v7.0), phase-3-medicinal-herbs-gantt-timeline.csv (76-row prior Gantt), medicinal-herbs-candidate-list.md, phase-3-medicinal-herbs-sourcing-guide.md, phase-3-medicinal-herbs-content-outline.md.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Readiness Audit (Session 1476, Exploration Item #3) — May 21, 2026
 
 **Task**: Phase 3 medicinal herbs readiness audit for June 22 launch. Verify 5 audit domains: (1) PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md v7.0, (2) phase-3-gantt-timeline.csv, (3) all Phase 3 assets per ORCHESTRATOR_STATE, (4) risk analysis coverage, (5) May 30 decision gates.
