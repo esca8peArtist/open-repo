@@ -1,5 +1,39 @@
 # Work Log
 
+## Session 1451 (continued) — mfg-farm: Multi-Printer Farm Scaling Research
+
+**Task**: Exploration queue item 3 — multi-printer farm scaling roadmap for ModRun, covering technical architecture (fleet management, slicing, QC), economic model (hardware costs, throughput, ROI), implementation timeline (May 30 – Q4 2026), and risk mitigation (failure modes, tariff exposure, quality at scale).
+
+**Files produced**:
+- `projects/mfg-farm/MULTI_PRINTER_SCALING_ROADMAP.md` (~4,700 words) — 4-part document covering: (1) technical architecture (Prusa MK4S vs Bambu A1 vs P1S fleet economics, Bambu Farm Manager + SimplyPrint + Printago software stack, color-discipline spool management, parallel slicing via Bambu Studio CLI, 3-stage QC system); (2) economic model (per-printer cost and breakeven tables, space/electrical/ventilation costs, filament cost curve from $14/kg retail to $11/kg wholesale, throughput efficiency by printer count with diminishing returns quantified, staffing thresholds); (3) implementation timeline with Gantt (May 30 single-printer validation → June Phase 1 → July–August Phase 2 → September–October Phase 3 → November 5th printer if gate met); (4) risk mitigation (printer failure modes by component, tariff response by phase, quality drift in parallel production, staffing documentation discipline).
+- `projects/mfg-farm/PRINTER_FARM_EQUIPMENT_SPECIFICATIONS.md` (~3,200 words) — 6-section equipment matrix with columns (Name, Cost, Spec Highlights, Integration Notes, Fleet-Scale Considerations) covering: printer hardware (P1S, A1, A1 Mini, P2S, MK4S, K2 Plus — all with fleet verdict); fleet management software (Bambu App, Bambu Farm Manager, SimplyPrint, Printago, Obico); infrastructure (workbench, surge protection, UPS, exhaust fan, dehumidifier, dry boxes); filament supply (eSUN, Overture, Polymaker wholesale, MatterHackers, Polar Filament, Hatchbox); consumables (nozzles, PEI plates, PTFE tubing, heat cartridge, thermistor, drive belts, HEPA filters); and phase-by-phase equipment summary tables.
+
+**Key findings**:
+- Bambu Farm Manager (free, launched May 2025) covers Phase 1–2 monitoring needs without subscription; SimplyPrint ($10/month) adds AI failure detection critical for Phase 2+; Printago adds Etsy-to-queue automation for Phase 3+
+- 5-printer farm captures 3.8× single-printer throughput (not 5×) due to queue contention and color scheduling friction — diminishing returns well-quantified
+- Printer 5 addition paired with FT production tech hire (~$2,880/month) is net-neutral initially; value unlocks as Q4 2026 demand compounds
+- Polymaker wholesale ($14.99/kg, $1,000 MOQ, Texas-warehoused) is the correct Phase 2 tariff hedge — domestic sourcing at near-retail-competitive pricing
+- Hardware breakeven for each printer addition: 4–8 weeks regardless of phase (P1S at $399 is economically irrelevant vs. labor costs)
+
+---
+
+## Session 1451 (continued) — systems-resilience: Phase 5 Wave 2 Decision Framework
+
+**Task**: Exploration queue item 4 — Phase 5 Wave 2 implementation decision framework for systems-resilience.
+
+**Files produced**:
+- `projects/systems-resilience/PHASE_5_WAVE_2_DECISION_FRAMEWORK.md` (v2, ~2,400 words) — supersedes v1 (2026-05-20). Full options analysis with cost/timeline/quality tradeoffs for three execution options, 9-combination decision matrix (3 options x 3 Tier 3 scope choices), author hiring checklist, timeline skeletons for Option A and B, pre-execution research task list, and complete June 1 decision checklist. Decision linked to prior deliverables (PHASE_5_WAVE_2_PLANNING.md, PHASE_5_WAVE_2_EXECUTION_PACKAGE.md, SYSTEMS_RESILIENCE_VETERINARY_CARE_RESEARCH.md).
+- `projects/systems-resilience/PHASE_5_WAVE_2_AUTHOR_PROFILES.md` (new, ~2,100 words) — three candidate profiles: (1) Conflict Resolution specialist (community mediator, $40–55/hr, recommended second writer), (2) Psychological Support specialist (licensed therapist, $60–75/hr, alternative second writer), (3) Community Governance specialist (commons governance practitioner, $45–60/hr, Option C only). Each profile includes credential requirements, sourcing channels, availability window, rate range, fit assessment with specific interview questions, and onboarding checklist.
+
+**Key findings**:
+- Recommended combination: Option B (Partial Parallel) + Tier 3 Comprehensive — only option meeting September target while maintaining quality and containing cost to $1,600–2,475 for a single second writer
+- Option A (Serial) is the fallback if no second writer is available — same total hours, October 15 completion, highest per-document quality
+- Option C (Full Parallel) costs $6,100–8,925 in writer fees and carries the Tier 3 dependency cascade risk (Tier 3 Section 4 cannot be written before the other three documents exist in draft)
+- Veterinary Care should stay with the primary writer regardless of option — the RVT/DVM background requirement for triage protocols makes this the highest credential-specificity document
+- 5-hour pre-execution research task list identified that can be completed before July 16 to reduce session burden
+
+---
+
 ## Session 1451 (May 21, 06:34–19:00 UTC) — Exploration Queue Refresh + Synthesis Preparation
 
 **Task**: Create exploration queue with 3 active items; spawn parallel agents for Gate 2 architecture + Trump v. Barbara research; prepare for resistance-research synthesis execution at 19:00 UTC.
@@ -6264,5 +6298,66 @@ Comprehensive production-readiness audit of resistance-research Phase 1 Wave 1 p
 - Orchestration: WORKLOG.md, PROJECTS.md, CHECKIN.md (4 commits)
 
 **Session Outcome**: Ready for May 21 19:00 UTC autonomous synthesis execution. All exploration work complete. Critical deadline at May 22 13:30 UTC requires user action (SSH auth fix).
+
+---
+
+## Session 1452 (May 21, 07:00–12:30 UTC) — Exploration Queue Item Completion (Items 3, 4, 6)
+
+**Status**: ✅ **ALL EXPLORATION QUEUE ITEMS 3, 4, 6 COMPLETE** | ⏰ **SYNTHESIS EXECUTION SCHEDULED 19:00 UTC (6.5 hours away)** | 🔴 **CRITICAL DEADLINE: May 22 13:30 UTC (25.5 hours, stockbot SSH auth)**
+
+**Task**: Spawn parallel agents for exploration queue items 3 (mfg-farm scaling), 4 (systems-resilience Phase 5 Wave 2 decision framework), and 6 (seedwarden Phase 3 option analysis). Item 5 deferred pending synthesis outcome.
+
+**Parallel Agent Execution**:
+
+### Item 3: ✅ mfg-farm — Multi-Printer Scaling Architecture (Session 1452)
+- **Deliverables**: `MULTI_PRINTER_SCALING_ROADMAP.md` (4,700 words) + `PRINTER_FARM_EQUIPMENT_SPECIFICATIONS.md` (3,200 words)
+- **Key findings**: 
+  - Bambu Lab ecosystem (Farm Manager + SimplyPrint + Printago) is optimal fleet management stack
+  - Each printer breaks even in 4–8 weeks regardless of phase (hardware cost is economically irrelevant vs. labor)
+  - 5-printer farm captures 3.8× single-printer throughput (not 5×) due to queue contention and color scheduling friction
+  - Polymaker wholesale activation ($14.99/kg, $1,000 MOQ) is correct Phase 2 tariff hedge
+  - Implementation timeline: May 30 validation → June Phase 1 → July-Aug Phase 2 → Sept-Oct Phase 3 → Nov Phase 4
+- **Readiness**: Supports June 3 scaling execution gate
+
+### Item 4: ✅ systems-resilience — Phase 5 Wave 2 Decision Framework (Session 1452)
+- **Deliverables**: `PHASE_5_WAVE_2_DECISION_FRAMEWORK.md` (v2, 2,400 words) + `PHASE_5_WAVE_2_AUTHOR_PROFILES.md` (2,100 words)
+- **Key findings**:
+  - **RECOMMENDED**: Option B (Partial Parallel) + Tier 3 Comprehensive — only option meeting September target while containing cost to $1,600–2,475
+  - Veterinary Care must stay with primary writer (RVT/DVM credential requirement non-negotiable)
+  - Conflict Resolution specialist is the recommended second writer ($40–55/hr, lowest credential threshold)
+  - Option A (Serial) is the cost-free fallback (October 15 completion, highest quality)
+  - Option C (Full Parallel) costs $6,100–8,925 and carries Tier 3 dependency cascade risk
+  - Pre-execution research task list (5 hours) identified to reduce July 16 session burden
+- **Readiness**: Supports June 1 user decision window
+
+### Item 6: ✅ seedwarden — Phase 3 Decision Option Analysis (Session 1452)
+- **Deliverables**: `PHASE_3_OPTION_ANALYSIS.md` (2,800 words) + `PHASE_3_GOLDENSEAL_SOURCING_COMPARISON.md` (2,200 words) + `PHASE_3_SECOND_WRITER_CANDIDATE_PROFILES.md` (2,400 words)
+- **Key findings**:
+  - **Cost/revenue matrix** covers all 10 option combinations (Option A/B/C × Path 1/Path 2 sourcing)
+  - **Option C (3-bundle solo)** recommended: Women's Health + Respiratory + Sleep launch Aug 1, 45-hour writing sprint, $0 out-of-pocket, lowest risk
+  - **Option A (5-bundle solo)** is maximum-scope alternative: all bundles live Sept 1, 74-hour sprint, $0 out-of-pocket (but workload intensive)
+  - **Goldenseal sourcing**: Path 1 (Wikimedia CC, $0, non-exclusive) vs. Path 2 (botanical garden commission, $500–800, brand premium)
+  - **Second writer**: Non-negotiable criteria filter (AHG/NAHA/RH credential, 5+ years herbs, June 22 availability, contraindication depth 4–5 on 1–5 scale)
+  - **V1.0/V1.1 hybrid strategy**: Launch with CC photography, update post-sprint if garden photo arrives late
+- **Readiness**: Supports May 30 user decision window (three decisions needed: scope, sourcing, writer)
+
+**Files Committed**:
+- EXPLORATION_QUEUE.md (marked items 3, 4, 6 complete)
+- mfg-farm: MULTI_PRINTER_SCALING_ROADMAP.md, PRINTER_FARM_EQUIPMENT_SPECIFICATIONS.md
+- systems-resilience: PHASE_5_WAVE_2_DECISION_FRAMEWORK.md (v2), PHASE_5_WAVE_2_AUTHOR_PROFILES.md
+- seedwarden: PHASE_3_OPTION_ANALYSIS.md, PHASE_3_GOLDENSEAL_SOURCING_COMPARISON.md, PHASE_3_SECOND_WRITER_CANDIDATE_PROFILES.md
+
+**Session 1452 Summary** (07:00–12:30 UTC):
+- ✅ Spawned 3 parallel agents for items 3, 4, 6
+- ✅ All agents completed within 5.5-hour window (exceptional efficiency)
+- ✅ All deliverables production-ready with decision frameworks for user input
+- ✅ Updated EXPLORATION_QUEUE.md to reflect item completion status
+- **Status**: Exploration queue currently has 1 active item (Item 5, deferred pending synthesis outcome). Ready for May 21 19:00 UTC synthesis execution and immediate Phase 2 activation if outcome is STRONG/MODERATE.
+
+**Next**: 
+1. May 21 18:00 UTC: Pre-execution review cron job (state verification)
+2. May 21 19:00 UTC: Synthesis execution cron job (autonomous Phase 2 launch path determination)
+3. May 22 13:30 UTC: Critical deadline for stockbot SSH auth fix (user action)
+4. May 22 20:00 UTC: stockbot checkpoint execution (outcome determines Gate 2 strategy)
 
 ---
