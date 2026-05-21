@@ -1,3 +1,42 @@
+## Session 1491 — ORCHESTRATOR: CRITICAL-DEADLINE WATCHDOG (May 21, 23:10 UTC)
+
+**Status**: 🔴 **STOCKBOT SSH DEADLINE: May 22 13:30 UTC (~14h 20m remaining)** | ✅ **Discord escalation sent**
+
+**What Happened**:
+
+1. ✅ **Critical Escalation Executed**
+   - **Discord notification sent** at 23:10 UTC to `DISCORD_WEBHOOK_URL`
+   - Message: Stockbot SSH auth failure + May 22 13:30 UTC deadline + user action required (Options A/B)
+   - BLOCKED.md verified current with full context (lines 73–103)
+   - All prior session state confirmed intact
+
+2. ✅ **Autonomy Assessment Complete**
+   - **No autonomous work available**: All projects blocked on user actions (SSH, VeraCrypt restart, test print, synthesis May 25, scope decisions)
+   - **Exploration Queue**: Items 1–20 complete; no new items added (per protocol: only add when queue <3 AND projects have unblocked work; current state: queue complete AND all projects blocked)
+   - **Workspace state**: All tests passing, all commits clean, no uncommitted changes requiring attention
+
+3. 🔴 **Critical Path Items (User Action Only)**:
+   | Project | Action | Deadline | Impact |
+   |---------|--------|----------|--------|
+   | **STOCKBOT** | SSH fix (A/B/C) | **May 22 13:30 UTC** | Lever B HMM; May 22 checkpoint |
+   | resistance-research | Signal log fill (any May 20-21 data) | May 22 evening | May 25 re-synthesis prep |
+   | mfg-farm | Test print (user action) | May 22-23 | Etsy launch path |
+   | cybersecurity-hardening | VeraCrypt restart + click Encrypt | Any time | Phase 1 walkthrough resume |
+   | seedwarden | Phase 3 scope decision (A vs C) | May 30 | Track B June 22 launch gate |
+
+**Workspace State**:
+- All orchestration files current (BLOCKED.md, PROJECTS.md, WORKLOG.md, INBOX.md)
+- Git clean: Master branch, no uncommitted changes
+- No health checks run (not warranted; critical deadline takes precedence; next checks after May 22 21:00 UTC)
+- **Ready state**: Waiting for user action on May 22 SSH deadline
+
+**Next Session Triggers**:
+- **May 22 13:30 UTC**: Stockbot checkpoint + SSH deadline pass/fail (auto-check if config updated)
+- **May 22 20:00 UTC**: Stockbot checkpoint execution (scheduled)
+- **May 22 23:00 UTC**: Checkpoint outcome analysis + block resolution
+
+---
+
 ## Session 1490 — ORCHESTRATOR: PRE-DEADLINE STATE CONFIRMATION + ESCALATION (May 21, 23:02 UTC)
 
 **Status**: ✅ **FINAL PRE-DEADLINE CHECK** | 🔴 **STOCKBOT SSH DEADLINE: May 22 13:30 UTC (13h 28m remaining)**
