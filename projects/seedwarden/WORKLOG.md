@@ -4,6 +4,27 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Scope Decision Support (Exploration Queue Item 27) — May 21, 2026
+
+**Task**: Produce three decision-support documents for Phase 3 scope decision gate May 30: `PHASE_3_SCOPE_DECISION_MATRIX.md`, `PHASE_3_RESOURCE_ALLOCATION_SCENARIOS.md`, and `PHASE_3_LAUNCH_RISK_REGISTER.md`. Deadline: May 21 23:00 UTC for user review May 22–30.
+
+**Files produced** (all in `projects/seedwarden/`):
+
+- `PHASE_3_SCOPE_DECISION_MATRIX.md` (v1.0, ~2,400 words, 5 sections) — Quantified tradeoff analysis for Options A (all 5 bundles), B (second writer), and C (3-bundle focus). Covers: revenue upside per option with market sizing ($633M US herbalist market, IMARC Group); launch risk analysis (overschedule probability, team fatigue, quality slip risk, post-launch support burden); Option B contractor cost ($2,475 one-time, break-even 6–12 weeks); Option C Phase 4 readiness impact (Tea Blends July 15 launch supported by Option C's 4 float days post-sprint); risk-adjusted EV per option (Option A $3,193, Option B $2,955, Option C $3,080 — with Option C carrying 60% Bull probability vs. Option A's 30%); and a May 30 decision log template. Recommendation: Option C.
+
+- `PHASE_3_RESOURCE_ALLOCATION_SCENARIOS.md` (v1.0, ~2,100 words, 6 sections) — Hour-by-hour sprint allocation under Option A and Option C (Option A: 108.3 hrs; Option C: 93.9 hrs — 14.4 hrs saved). Covers: daily writing hours by week and option; complete supplier ordering calendar (May 25 Black Cohosh, June 8 Goldenseal, June 15 Elderberry + MRH, June 22 Tier 3); supplier confirmation protocol for at-risk species (nursery-propagated verification); photography sequence (5-phase pre-sprint track June 3–21 + in-sprint sessions June 23–26); Canva design schedule (14.0 hrs, palette load June 21, design lock July 3 EOD); AHG peer reviewer coordination timeline (June 8 outreach, June 15 follow-up, June 21 confirmation deadline); sustainable daily pace check (Option A: 4.9 hrs/calendar day or 6.8 hrs/weekday if weekends off; Option C: 4.3 hrs/calendar day or 5.9 hrs/weekday).
+
+- `PHASE_3_LAUNCH_RISK_REGISTER.md` (v1.0, ~1,200 words, 5 sections) — Top risks per option with mitigation strategies, kill criteria, and go/no-go decision tree. Option A risks (5 identified): writing pace failure at June 24 gate (P=2, I=2, Score=4), Week 1 pace unsustainable (P=2, I=2, Score=4), Canva design revision loops (P=2, I=2, Score=4), FTC compliance gap (P=1, I=3, Score=3), AHG peer reviewer not secured (P=2, I=3, Score=6 — highest severity). Option C risks (4 identified): MRH delivery delay (P=1, I=2, Score=2), Goldenseal photo delay (P=1, I=1, Score=1), palette auto-lock (P=2, I=1, Score=2), Phase 4 Tea slip (P=2, I=1, Score=2). Kill criteria defined for 4 scenarios. May 22–29 go/no-go decision tree with early warning signals and confidence check template.
+
+**Evidence base**: PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md (v6.0), PHASE_3_GANTT_TIMELINE.csv (75 rows), PHASE_4_MARKET_RESEARCH.md, HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md (v3.0), TRACK_B_GEOGRAPHIC_EXPANSION_ANALYSIS.md (v2.0).
+
+**Decisions pending (May 30 deadline)**:
+1. Sprint scope: Option A / B / C — Option C recommended
+2. Goldenseal path: Path 1 (order by June 8) / Path 2 (Wikimedia CC + NC Botanical Garden) — Path 2 recommended under Option C
+3. Canva palette: confirm 6 hex codes or defer to June 15 auto-lock
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Medicinal Herbs Production Launch Preparation (Exploration Queue Item, May 28 Gate) — May 21, 2026
 
 **Task**: Produce two production-ready deliverables for Phase 3 Medicinal Herbs Production Launch Preparation gating May 28: `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` and `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md`. Scope assumes Option C (Women's Health + Respiratory + Sleep priority bundles, Immunity + Digestive deferred to August wave).
