@@ -2,6 +2,24 @@
 
 ---
 
+## May 21, 2026 — General Research Agent — Phase 2 Batch 2 Domain Outlines (Exploration Queue Item 20)
+
+**Task**: Pre-stage production-ready outlines for Domains 57 (Multilateral Withdrawal) and 59 (Economic Precarity) so that research execution can start immediately May 23–25 if May 21 19:00 UTC synthesis outcome is STRONG or MODERATE.
+
+**File created**: `projects/resistance-research/PHASE_2_BATCH_2_DOMAINS_57_59_OUTLINES.md` (~3,200 words)
+
+**Key outputs**:
+
+- **Domain 57** (Multilateral Withdrawal, 40–50 hours estimated): 8-section outline covering withdrawal architecture, constitutional asymmetry (Senate consent required to enter, plenary executive claim to exit), domestic accountability infrastructure removal, comparative ecosystem (Russia/Hungary/Sahel/Turkey), universal jurisdiction as resilient backstop, China institutional capture parallel, movement leverage, and reform architecture (Treaty Withdrawal Notification Act + Multilateral Commitment Protection Act + ICC Sanctions Repeal). 4 causal pathways documented. 5 expert contacts (Harold Hongju Koh, Oona Hathaway, Jamil Dakwar, Susana SaCouto, Fabian Wendt). 15 primary sources confirmed. Advocacy window: August 10 hard deadline (6 weeks before UNGA 81 High-Level Week, September 22–28).
+
+- **Domain 59** (Economic Precarity, 50–60 hours estimated; ~20–30 hours from existing production base): 8-section outline covering income-participation gap, wage stagnation as structural time poverty, housing instability pathway, medical debt cognitive bandwidth mechanism, gig economy institutional disconnection, OBBBA as multiplicative accelerant (five concurrent cuts), Midwest stacked precarity crisis, and reform architecture. 4 causal pathways documented. 5 expert contacts (Bartels, Desmond, Bivens, Kawashima-Ginsberg, Parrott). 14 primary sources confirmed. Advocacy window: September 1, 2026 (6 weeks before November 3 midterms). **Note**: production-complete Sections 1–5 (8,200 words) already exist at `domain-59-economic-precarity-democratic-infrastructure.md` (May 19).
+
+- **Cross-reference index**: Domain 57 cross-referenced to Domains 6 (Judicial Independence — shared Youngstown Zone 3 analysis), 19 (War Powers — consultation architecture Domain 57 would preserve), and 28 (Venezuela unilateralism — sequential executive power concentration). Domain 59 cross-referenced to Domains 31 (Healthcare/OBBBA — upstream policy, Domain 59 is downstream democratic consequence), 33 (State Autocratization — economic precarity amplifies formal suppression mechanisms), 51 (Campaign Finance — supply-side complement to Domain 59's demand-side suppression analysis), and 54 (Criminal Justice — LFOs share cognitive bandwidth suppression mechanism, precarity-to-incarceration pipeline documented).
+
+**Confidence**: High — both outlines build directly on prior pre-research passes (May 15–19, 2026) with confirmed source libraries. Domain 59 production base is complete; execution window is integration and distribution prep. Domain 57 requires original synthesis work but all source infrastructure is staged.
+
+---
+
 ## May 21, 2026 — General Research Agent — Phase 2 Distribution Infrastructure (Exploration Queue Item 7)
 
 **Task**: Pre-build Phase 2 distribution infrastructure for all four May 21 synthesis outcomes (STRONG/MODERATE/WEAK/TOO_EARLY) so that post-synthesis execution at May 25 gate can begin immediately. Four deliverables per task spec.
