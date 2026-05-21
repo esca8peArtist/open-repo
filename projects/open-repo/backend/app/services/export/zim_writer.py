@@ -832,12 +832,13 @@ class ZimWriter:
             self.output_path.write_bytes(placeholder_content)
         else:
             # Use real libzim Creator for ZIM file generation
-            with Creator(str(self.output_path)) as creator:
-                # CRITICAL: config_indexing() must be called BEFORE set_mainpath() per libzim docs
-                try:
-                    creator.config_indexing(True, self.config.language_iso3)
-                except AttributeError:
-                    pass
+            creator = Creator(str(self.output_path))
+            # CRITICAL: config_indexing() must be called BEFORE __enter__() per libzim API
+            try:
+                creator.config_indexing(True, self.config.language_iso3)
+            except AttributeError:
+                pass
+            with creator:
                 creator.set_mainpath("index")
                 self._apply_metadata_to_creator(creator)
                 for entry in self._entries:
