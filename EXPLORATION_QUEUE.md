@@ -131,7 +131,7 @@
   - **DVM succession planning at Year 1** is only guaranteed resilience measure against hub single-point failure
   - Full case studies included: RAVS, Scotland HIVSS, East Africa CAHW, India A-HELP, Farm Journal Foundation State Readiness program
 
-### 16. ⏳ open-repo — Phase 5.2 Post-Merge Implementation Sequence (Session 1458)
+### 16. ✅ open-repo — Phase 5.2 Post-Merge Implementation Sequence (Session 1458 COMPLETE)
 **Scope**: Phase 5.1 MVP awaiting user approval (expected May 25-26 merge). Phase 5.2 candidates already evaluated and ranked (Medical 8.20, Water 7.90, Seed 7.80, Food 7.65, Botanical 7.55). Design implementation sequence for top 3-5 candidates pre-merge so June 1+ execution is seamless.
 - **Deliverables**: 
   - Phase 5.2 Implementation Roadmap (June timeline, resource allocation, developer capacity)
@@ -140,7 +140,7 @@
 - **Owner**: open-source-rideshare subagent (project-appropriate)
 - **Deadline**: May 28 (pre-user-approval feedback window)
 
-### 17. ⏳ mfg-farm — Phase 2 Supplier Outreach & Capital Planning Pre-Staging (Session 1458)
+### 17. ✅ mfg-farm — Phase 2 Supplier Outreach & Capital Planning Pre-Staging (Session 1458 COMPLETE)
 **Scope**: Phase 2 Etsy launch pending user test-print decision (May 23-28 expected); Phase 2 scaling starts June 3 post-Phase-1 validation. Pre-stage supplier outreach, capital planning, and timeline that doesn't depend on test-print results.
 - **Deliverables**:
   - Bambu Lab farm supplier contact list + bulk discount tiers (SimplyPrint integration)
@@ -151,7 +151,7 @@
 - **Owner**: mfg-farm subagent
 - **Deadline**: June 1 (ready for June 3 Phase 2 start)
 
-### 18. ⏳ seedwarden — Phase 3 Launch Marketing & Affiliate Onboarding Pre-Staging (Session 1458)
+### 18. ✅ seedwarden — Phase 3 Launch Marketing & Affiliate Onboarding Pre-Staging (Session 1458 COMPLETE)
 **Scope**: Track B June 22 launch is ready pending May 30 user decisions (scope, sourcing, writer). Pre-stage marketing execution, affiliate partnerships, and email sequences that don't depend on scope decision.
 - **Deliverables**:
   - First-contact outreach sequence for 25 practitioner voices (identified in HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md)

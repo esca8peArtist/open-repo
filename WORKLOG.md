@@ -1,5 +1,63 @@
 # Work Log
 
+## Session 1458-item17 — mfg-farm Phase 2 Supplier Outreach & Capital Planning (May 21, Research Agent)
+
+**Date**: May 21, 2026
+**Status**: Complete — 5 production-ready deliverables
+
+**Deliverables created:**
+1. `projects/mfg-farm/BAMBU_LAB_FARM_SUPPLIER_CONTACTS.md` — 6+ supplier contacts with lead times, SimplyPrint integration checklist, tranche procurement calendar
+2. `projects/mfg-farm/POLYMAKER_WHOLESALE_ONBOARDING_GUIDE.md` — Account application process, pricing tiers, net-30 terms, technical support, activation timeline
+3. `projects/mfg-farm/AMAZON_FBA_ALTERNATIVE_3PL_COMPARISON.md` — FBA vs. 3PL vs. self-fulfill comparison with actual cost per unit, Printful discontinuation context, WFS comparison
+4. `projects/mfg-farm/PHASE_2_CAPITAL_DEPLOYMENT_TIMELINE.md` — Sequenced capital map: $787 bootstrap scenario + week-by-week June 2026 calendar, what can be pre-ordered now
+5. `projects/mfg-farm/TRADEMARK_FILING_STRATEGY.md` — USPTO filing strategy for Class 20, step-by-step checklist, June 15 target for April 2027 registration (Brand Registry available Day 0 on pending application)
+
+**Key findings:**
+- Trademark filing June 15 unlocks Amazon Brand Registry immediately (pending serial number accepted); Vine reviews begin 4–6 weeks after filing
+- Total Phase 2 bootstrap capital: ~$787 (trademark $350 + FBA lean $272 + consumables $165)
+- FBA cost per unit: $8.16 in fees on $28.99 Starter Bundle; net margin 71.9%
+- Self-fulfillment cheaper than 3PL until 300+ orders/month (Simpl/ShipMonk break-even)
+- Polymaker wholesale: $1,000 MOQ ($14.99/kg PolyLite PLA), net-30 available after 3 orders, free shipping above $3,000
+- MatterHackers is only US distributor with documented farm bundles + 2-year extended warranty
+
+---
+
+## Session 1458 — Exploration Queue Refresh & Parallel Agent Completion (May 21, 11:15–12:55 UTC)
+
+**Date**: May 21, 2026
+**Status**: Complete — 3 parallel agents completed; 15 production-ready deliverables; exploration queue refreshed
+
+**Session Summary**:
+Orientation verified all blocks remain active and unresolved (signal log unfilled, SSH auth blocked, test print pending, VeraCrypt restart needed). Exploration Queue exhausted (items 1-15 complete). Added and immediately executed 3 new strategic exploration items to maintain queue and fill pre-synthesis/pre-checkpoint preparation gaps. All agents completed within 100-minute window (11:16–12:55 UTC).
+
+**Actions taken**:
+1. **Verified block status**: All 4 active blocks confirmed real; no resolutions filled by user since Session 1457
+   - resistance-research: signal log still has 17 [fill] templates (synthesis deadline 19:00 UTC = 6h 05m remaining)
+   - stockbot: SSH auth still failing (critical deadline May 22 13:30 UTC = 24h 35m remaining)
+   - cybersecurity-hardening: VeraCrypt restart pending
+   - mfg-farm: Test print pending
+2. **Added 3 exploration items** (11:15 UTC):
+   - Item 16: open-repo Phase 5.2 Post-Merge Implementation Sequence (deadline May 28)
+   - Item 17: mfg-farm Phase 2 Supplier Outreach & Capital Planning Pre-Staging (deadline June 1)
+   - Item 18: seedwarden Phase 3 Launch Marketing & Affiliate Onboarding Pre-Staging (deadline June 1)
+3. **Spawned 3 parallel subagents** (11:16 UTC):
+   - open-source-rideshare agent → Item 16 (Phase 5.2 post-merge strategy)
+   - general-research agent → Item 17 (supplier/capital planning)
+   - seedwarden agent → Item 18 (marketing/affiliate prep)
+4. **All agents completed** (12:55 UTC — 99-minute turnaround):
+   - ✅ Item 16: 3 files (Phase_5.2_IMPLEMENTATION_ROADMAP.md, MEDICAL_CONTENT_SOURCING_CHECKLIST.md, PHASE_5.2_ZIM_VALIDATION_MATRIX.md)
+   - ✅ Item 17: 5 files (BAMBU_LAB_FARM_SUPPLIER_CONTACTS.md, POLYMAKER_WHOLESALE_ONBOARDING_GUIDE.md, AMAZON_FBA_ALTERNATIVE_3PL_COMPARISON.md, PHASE_2_CAPITAL_DEPLOYMENT_TIMELINE.md, TRADEMARK_FILING_STRATEGY.md)
+   - ✅ Item 18: 5 files (PRACTITIONER_FIRST_CONTACT_SEQUENCE.md, AFFILIATE_PARTNERSHIP_FRAMEWORK.md, PRE_LAUNCH_EMAIL_SEQUENCES.md, CONTENT_CALENDAR_JUNE_22_JULY_15.md, PEER_REVIEWER_RECRUITMENT_STRATEGY.md)
+
+**Key Deliverables & Findings**:
+- **Item 16 (open-repo Phase 5.2)**: Implementation roadmap June 1–July 4, feasible for 1 developer. Medical sourcing from 8 authoritative sources (WHO, CDC, MSF, RxNorm, Wilderness Med). ZIM validation: 3 PASS / 2 CONDITIONAL PASS (both resolvable within wave sequence).
+- **Item 17 (mfg-farm Phase 2)**: 6+ supplier contacts (Bambu Lab, MatterHackers, Dynamism, Polymaker wholesale). **CORRECTION**: Trademark filing 14–16 months (not 3–4), but Brand Registry available Day 0. Bootstrap capital: $787 ($350 trademark + $272 FBA + $165 consumables).
+- **Item 18 (seedwarden Phase 3)**: 25-contact practitioner roster, 3 email templates, affiliate tiers 20%/15%/10%, 8-person peer reviewer list with RH/AHG credentials, May 28–June 15 outreach window.
+
+**Files committed**: 15 new files (3 open-repo, 5 mfg-farm, 5 seedwarden) + EXPLORATION_QUEUE.md with items 16-18 marked ✅
+
+---
+
 ## Session 1457 — Parallel Exploration Queue Execution (May 21, 10:51–12:55 UTC)
 
 **Date**: May 21, 2026
