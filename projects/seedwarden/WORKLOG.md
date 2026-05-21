@@ -4,6 +4,33 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Launch Marketing and Affiliate Onboarding (Exploration Queue Item 18) — May 21, 2026
+
+**Task**: Pre-stage Phase 3 launch marketing and affiliate onboarding for June 22 launch. All deliverables are scope-independent (universal regardless of May 30 bundle scope decision).
+
+**Files produced** (all in `projects/seedwarden/`):
+
+- `PRACTITIONER_FIRST_CONTACT_SEQUENCE.md` (~1,500 words) — 25-contact roster with segment coding (CP/ED/WC), outreach priority ranking, three send-ready email templates (clinical practitioners, educators, wildcrafters), 4-week timeline (May 28 outreach through June 22 partner-ready), success metrics table (target 10 partner confirmations, minimum 8 by June 1).
+
+- `AFFILIATE_PARTNERSHIP_FRAMEWORK.md` (~2,000 words) — Formal affiliate program structure. Three commission tiers: Tier 1 AHG/NAMA credentialed at 20%, Tier 2 independent practitioners at 15%, Tier 3 media/organizational at 10%. Etsy coupon code tracking (Phase 3) with UTM parameter supplement. Full co-marketing asset package (email snippet versions A+B, Instagram captions per bundle, product images, landing page block). Monthly payout schedule starting July 1. Agreement terms (no NDA, non-exclusive, affiliate disclosure requirement). Tier maintenance and deactivation policy. Phase 4 Payhip Pro upgrade path.
+
+- `PRE_LAUNCH_EMAIL_SEQUENCES.md` (~1,500 words) — Three Kit sequences with full email bodies, subject lines, preview text, CTA buttons, and UTM parameters. Sequence A: 4-email welcome series over 14 days for existing 500-buyer list (species spotlight, evidence-tier explainer, price/value framing, launch-day CTA). Sequence B: 3-email practitioner-tier nurture (contraindication depth demo, evidence-tier system explainer, comparison table vs. alternatives). Sequence C: 3-email re-engagement + sunset for 6-month inactive subscribers (stay/go offer, free sample, list cleanup).
+
+- `CONTENT_CALENDAR_JUNE_22_JULY_15.md` (~1,000 words) — 3.5-week calendar across Instagram (10 posts + daily launch-week stories), Kit email (4 broadcasts, 1/week), and blog (3 posts, 1/week). Eight content themes: launch announcement, species education, evidence/credibility, conservation/sourcing, practitioner testimonials, behind the scenes, community FAQ, post-launch retrospective. Content ownership matrix: in-house vs. affiliate co-creation. Full post-by-post schedule with dates, captions, hashtags, and owner.
+
+- `PEER_REVIEWER_RECRUITMENT_STRATEGY.md` (~800 words) — 8 candidate roster: Priority 1 (Women's Health): Rosalee de la Forêt RH + Jenn Dazey ND/RH Bastyr; Priority 2 (Immunity): Tieraona Low Dog MD/RH + Christopher Hobbs PhD/RH; Priority 3 (Sleep/Digestive): Jade Alicandro, Katja Swift, David Winston RH, 7Song. All candidates include AHG/NAMA credential verification, contraindication depth rating (4–5 scale), contact path, and first outreach date. Review timeline (confirmation by June 8, review complete June 21), deliverable requirements (written confirmation + optional pull-quote), compensation framework by reviewer type.
+
+**Key decisions reflected**:
+- All 5 deliverables are scope-independent: practitioner outreach network is universal regardless of whether May 30 decision selects 3-bundle, 5-bundle solo, or 5-bundle + writer
+- Minimum viable outcome for launch credibility: one named RH reviewer confirmed by June 8 (Women's Health bundle)
+- Phase 3 affiliate program uses native Etsy coupon codes (zero setup cost); Phase 4 Payhip Pro migration path documented
+- Commission rates set above market minimum (20%/15%/10% vs. 3–10% typical) to attract high-trust credentialed practitioners
+- Peer reviewer outreach is combined with affiliate first-contact (same email, two asks) to minimize contact touchpoints
+
+**Source documents read**: HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md v3.0, AFFILIATE_PARTNERSHIP_MATRIX.csv, PRACTITIONER_RELATIONSHIP_ROADMAP.md, CMARKETING_PARTNERSHIP_OPPORTUNITIES.md, TRACK_B_EMAIL_SEQUENCES.md, phase-3-practitioner-messaging-framework.md, PHASE_3_HERBALIST_NETWORK_PRESTAGING.md.
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Implementation Checklists (Exploration Queue Item 9) — May 21, 2026
 
 **Task**: Pre-build implementation checklists for all 10 Phase 3 decision combinations so that May 30 user decision triggers immediate execution with no preparation lag. Deadline May 28, 2026.
