@@ -2,6 +2,32 @@
 
 ---
 
+## May 21, 2026 — Resistance Research Subagent — Phase 2 Domains 56+39 Distribution Prep (Session 1479)
+
+**Task**: Prepare Domains 56 (Civil Service Politicization) and 39 (Healthcare Access) for distribution on May 28 and June 1 respectively. Verify domain documents are production-ready. Write distribution strategies with contact templates, timelines, and talking points. Create pre-synthesis contingency readiness document confirming both domains ship regardless of May 28 synthesis outcome.
+
+**Files created**:
+
+- `projects/resistance-research/DOMAIN_56_DISTRIBUTION_STRATEGY.md` — Full distribution strategy for Domain 56, May 28 launch. Includes: document verification (6,267 words, 47 citations, production-ready at root path); 1-page executive summary brief for recipient organizations; four Tier 1 Wave 1 email templates with complete subject lines and bodies (Partnership for Public Service media@ourpublicservice.org, AFGE info@afge.org, GAP info@whistleblower.org, NTEU nteu@nteu.org); talking points for H.R. 492/S. 134 briefings; Tier 2/3 wave organizations and framing; May 24-28 execution timeline; success metrics; DOJ Voting Section remnant briefing note.
+
+- `projects/resistance-research/DOMAIN_39_DISTRIBUTION_STRATEGY.md` — Full distribution strategy for Domain 39, June 1 HHS deadline. Includes: document verification (6,673 words, 47 citations, production-ready at root path); June 1 deadline explanation (no public comment period; advocacy through litigation, HHS discretion, congressional, and state channels); 1-page executive summary; 10 recipient organizations across four tiers with full email templates (Georgetown CCF, NHeLP, CBPP, KFF, Brennan Center, Protect Democracy, IRG, Black Mamas Matter Alliance, NDRN, Disability Rights Advocates); key talking points for June 1 deadline action framework; May 29-June 10 execution timeline; success metrics.
+
+- `projects/resistance-research/PRE_SYNTHESIS_DISTRIBUTION_READINESS.md` — Decision logic document confirming Domains 56+39 are READY FOR SHIPMENT independent of May 28 synthesis outcome (STRONG/MODERATE/WEAK/TOO_EARLY). Documents why D56+39 are synthesis-independent (fixed legislative window, external deadline, target audiences with independent utility logic). Documents why D57/59 remain on hold (research hours required, audience credentialing dependency, distant hard deadlines). Pre-send checklists for both domains. May 28 synthesis independence test table for all four outcome scenarios.
+
+**Key findings**:
+
+1. **Both domain documents are production-ready at the root path** (not domains/ subdirectory as task brief implied). Domain 56: `domain-56-civil-service-politicization-governance.md` (6,267 words, 47 citations). Domain 39: `domain-39-healthcare-access-democratic-infrastructure.md` (6,673 words, 47 citations). Both match spec.
+
+2. **May 28 as Domain 56 distribution date is confirmed across multiple prior documents** (POST_SYNTHESIS_ANALYSIS_FRAMEWORK.md, PHASE_2_EXECUTION_ROADMAP.md, phase-2-wave-2-research-activation-timeline.md). The DOMAIN_56_EXECUTION_CHECKLIST.md's June 15-30 wave is the full campaign; May 28 is the initial Wave 1 launch. Not in conflict.
+
+3. **Domain 39's June 1 deadline is a rule publication date, not a comment deadline** — advocacy channels are litigation prep, HHS discretion outreach, congressional pressure, and state-level advocacy. This is documented in the domain's own timing section and in the distribution strategy.
+
+4. **Discrepancy flagged**: `domains/domain-39-healthcare-access-democratic-infrastructure.md` also exists in the domains/ subdirectory. Root version matches metadata spec; use root version for Gist creation. Recommend verifying they are identical before June 1 send.
+
+**Confidence**: High — both documents verified production-ready from direct file reads. Contact information drawn from DOMAIN_56_DISTRIBUTION_BRIDGE.md (verified May 15, 2026). Timeline logic verified against POST_SYNTHESIS_ANALYSIS_FRAMEWORK.md and phase-2-wave-2-research-activation-timeline.md.
+
+---
+
 ## May 21, 2026 — General Research Agent — Phase 2 Batch 2 Domain Outlines (Exploration Queue Item 20)
 
 **Task**: Pre-stage production-ready outlines for Domains 57 (Multilateral Withdrawal) and 59 (Economic Precarity) so that research execution can start immediately May 23–25 if May 21 19:00 UTC synthesis outcome is STRONG or MODERATE.
