@@ -2,6 +2,32 @@
 
 ---
 
+## May 21, 2026 — General Research Agent — Trump v. Barbara v3 Supplement + Domain 58 Surveillance Escalation Sections
+
+**Task**: Produce rapid-response update for Domain 58 distribution: (1) Trump v. Barbara ruling projection and DOJ/ICE pivot pathways; (2) tribal citizenship admin law defense; (3) BIA reorganization litigation windows; (4) updated contacts. Target: Phase 1 Tier 1 distribution (May 25+) and Domain 58 Phase 2 integration.
+
+**Files modified**:
+- `projects/resistance-research/trump-v-barbara-rapid-response.md` — v3 supplement appended (~2,200 words): Section 1 (5 DOJ/ICE enforcement pivot mechanisms with threat assessment table), Section 2 (tribal citizenship admin law defense, 3 frameworks: ISDEAA contracts, fiduciary trust duty, APA review), Section 3 (BIA reorganization litigation windows with calendar), Section 4 (updated Tier 1/2/3 contact list with 14 organizations)
+- `projects/resistance-research/domains/domain-58-tribal-sovereignty.md` — Two new sections appended before synthesis team note: Section 11a "Post-Trump v. Barbara Surveillance Escalation Pathways" (~800 words, 5 mechanisms with sources) and Section 11b "Tribal Citizenship Admin Law Defense" (~900 words, 3 frameworks + Callais factual correction + Turtle Mountain post-GVR litigation calendar)
+
+**Key findings**:
+
+1. **DOJ/ICE pivot mechanisms are already operational**: Birth Tourism Initiative (active April 2026), Mobile Fortify biometric override (100,000+ uses, birth certificate override posture confirmed to Congress), Medicaid/CMS data sharing (resumed January 2026), Penlink commercial location data (active September 2025), and birth certificate authenticity dispute infrastructure (emerging from birth tourism investigations). A favorable SCOTUS ruling in Barbara removes one tool but does not constrain these five.
+
+2. **Blood quantum administrative escalation risk**: Sauer's "tribal citizenship is statutory" argument is now in the official government record. The admin law defense relies on three frameworks that do not depend on Callais: ISDEAA contract rights (Secretarial Amount reduction = breach), trust fiduciary duty (self-dealing prohibition prevents unilateral beneficiary redefinition), and APA arbitrary-and-capricious (GAO-26-108673 documents BIA's failure to justify its decisions — same record weakness that creates litigation windows also constrains future enrollment restrictions).
+
+3. **Callais factual correction for distribution**: "Callais v. Stieda" referenced in the task brief does not exist. Louisiana v. Callais was an adverse ruling (gutted Section 2 effects standard). The actual tribal win is Western Native Voice v. Montana (May 11, 2026), blocking Montana SB 490 on state constitutional grounds.
+
+4. **BIA reorganization creates three ripe litigation windows**: (a) Probate function failure → Court of Federal Claims breach of trust; (b) ISDEAA Section 110 compact underfunding → statutory cause of action (no tribe has filed yet for FY2026); (c) APA arbitrary-and-capricious → GAO documentation is the foundation. August 2026 Ashland WI closure is the specific advocacy hook.
+
+5. **Turtle Mountain post-GVR calendar**: No Eighth Circuit relief before 2027. 2026 midterms occur under legally uncertain maps. Parallel state constitutional claims in ND, SD, MN should be developed now.
+
+**Confidence**: High on surveillance mechanism documentation (all primary sources confirmed). Moderate-high on admin law defense frameworks (established doctrine, but the specific blood quantum escalation threat is analytical projection, not documented policy). The Callais factual correction is confirmed across multiple searches.
+
+**Deadline met**: May 23 Phase 2 finalization deadline.
+
+---
+
 ## May 21, 2026 — General Research Agent — Synthesis Outcome Playbooks (Pre-Synthesis Session)
 
 **Task**: Build `SYNTHESIS_OUTCOME_PLAYBOOKS.md` — comprehensive, action-specific playbooks for all four synthesis outcome possibilities (STRONG, MODERATE, WEAK, TOO_EARLY) plus a crisis trigger playbook for a same-day Trump v. Barbara ruling. Designed to eliminate 2–4 hour post-synthesis planning lag and enable same-day Phase 2 activation on STRONG/MODERATE outcomes.
