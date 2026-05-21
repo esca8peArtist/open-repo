@@ -24,8 +24,17 @@
 2. **May 22 13:30 UTC (~26h remaining)**: SSH auth fix deadline — **CRITICAL for Lever B HMM config deployment**
 3. **May 22 20:00 UTC (~32h remaining)**: Stockbot checkpoint execution — fully autonomous, fully pre-staged
 
+**Synthesis infrastructure verified**:
+- ✅ Script ready: `projects/resistance-research/synthesis-execution-monitor.py` (execute with `uv run python`)
+- ✅ Checklist ready: `projects/resistance-research/post-wave-1-monitoring/may21-synthesis-execution-checklist.md`
+- ✅ Framework ready: `projects/resistance-research/post-wave-1-monitoring/phase-2-path-activation-summary.md`
+- ✅ Phase 2 activation infrastructure pre-staged for all 4 outcomes (STRONG/MODERATE/WEAK/TOO_EARLY)
+- 🔴 **BLOCKED**: Signal log unfilled (17 [fill] templates) — script will fail or output incomplete analysis if log not filled
+
 **Immediate user action items**:
 1. **FILL SIGNAL LOG by 19:00 UTC** (May 18-21 response data) — required for synthesis execution
+   - Location: `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+   - Then run: `cd projects/resistance-research && uv run python synthesis-execution-monitor.py`
 2. **SSH FIX by May 22 13:30 UTC** — add public key OR manually run config fix on Jetson
 3. **(Optional) Check Trump v. Barbara ruling** — if issued, log for Domain 58 rapid-response
 
