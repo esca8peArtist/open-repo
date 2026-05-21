@@ -7,19 +7,21 @@
 **Status**: Complete — final block verification, synthesis window confirmed locked, exploration queue assessed
 
 **Session Summary**:
-Verified all autonomous work exhausted and properly staged. Confirmed signal log remains unfilled (17 placeholders) — synthesis will not execute at 19:00 UTC without immediate user action. SSH auth deadline May 22 13:30 UTC; checkpoint May 22 20:00 UTC. All exploration queue items (25-27) staged for post-event triggers. System in idle state awaiting user signal log fill or checkpoint outcome.
+Verified all autonomous work exhausted and properly staged. Confirmed signal log remains unfilled (17 placeholders) — synthesis will not execute at 19:00 UTC without immediate user action. SSH auth deadline May 22 13:30 UTC; checkpoint May 22 20:00 UTC. Discovered critical discrepancy in open-repo Phase 5.1 MVP: claimed "READY FOR MERGE" but libzim integration tests failing (38 failures + 65 errors, not 240 passing as Session 1462 reported). System in idle state awaiting user signal log fill or checkpoint outcome.
 
 **Critical Findings**:
 1. ✅ **Synthesis execution blocked on user action** — 17 unfilled [fill] placeholders in signal log. 2h 3m window remaining for user to fill (May 21 19:00 UTC deadline).
 2. ✅ **SSH auth deadline imminent** — May 22 13:30 UTC (20h 33m remaining). Jetson authorization still failing; user must add orchestrator public key or SSH manually.
-3. ✅ **All autonomous work staged** — Exploration Queue items 25-27 ready for post-synthesis/post-checkpoint execution.
-4. ✅ **Projects remain blocked** — No new autonomous work available; all dependencies are user actions or scheduled events.
+3. ⚠️ **open-repo libzim integration tests FAILING** — Phase 5.1 MVP merge BLOCKED. Feature branch `feature/zimwriter-libzim-activation` has broken libzim integration (RuntimeError: Creator started). Session 1462's claim of "240/240 tests pass" is inaccurate. ZIM tests show 38 failures + 65 errors. Root cause: `config_indexing()` called AFTER context manager initialization, violating libzim API constraints. Test results indicate feature branch is NOT ready for merge despite Session 1462 verification.
+4. ✅ **All autonomous work staged** — Exploration Queue items 25-27 ready for post-synthesis/post-checkpoint execution.
+5. ✅ **Projects remain blocked** — No new autonomous work available; all dependencies are user actions or scheduled events.
 
 **Actions Taken**:
 1. **Synthesis window verification**: Confirmed signal log status (17 [fill] placeholders), current time (16:57 UTC), deadline (19:00 UTC = 2h 3m remaining)
 2. **SSH auth reconfirmed**: Tested SSH access to Jetson (still "Permission denied"), deadline documented
 3. **Exploration queue final assessment**: Items 25-27 staged and ready for activation triggers
-4. **CHECKIN.md updated**: Added Session 1470 summary with final timing status
+4. **open-repo Phase 5.1 MVP investigation**: Checked out feature branch `feature/zimwriter-libzim-activation` and ran comprehensive test suite. Results: 38 failed, 156 passed (net 38 failures + 65 test errors = 103 tests not passing). ZIM-specific tests: 10 failed, 41 passed. Root cause: RuntimeError "Creator started" when `config_indexing()` called in create_zim() method (line 838). The fix applied (commit 1dee5c99) moved `config_indexing()` before `set_mainpath()` but still executes AFTER context manager enters, violating libzim API constraints requiring `config_indexing()` before creator initialization. Session 1462's verification of "240/240 tests pass" is inaccurate; feature branch is NOT merge-ready. Created BLOCKED.md entry for investigation + fix.
+5. **BLOCKED.md updated**: Added new active block for open-repo libzim integration failure; documented root cause and merge blocker
 
 **Files Modified**:
 - `CHECKIN.md`: Session 1470 entry added (synthesis window monitoring summary)
