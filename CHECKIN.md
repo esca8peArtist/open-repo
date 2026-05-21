@@ -2,6 +2,22 @@
 
 **Status**: ✅ **2 PARALLEL AGENTS COMPLETED EXPLORATION QUEUE WORK** | ✅ **TRUMP V. BARBARA RAPID-RESPONSE INFRASTRUCTURE BUILT** | ✅ **PHASE 3 SUPPLIER CONFIRMATION + PRODUCTION CHECKLIST FINALIZED** | ✅ **MAY 21 SYNTHESIS SCHEDULED FOR 19:00 UTC (AUTONOMOUS EXECUTION)** | 🔴 **STOCKBOT LEVER B DEADLINE: MAY 22 13:30 UTC (~35 HOURS REMAINING)** | ⏰ **SYNTHESIS EXECUTION: 17.5 HOURS AWAY**
 
+---
+
+## ⏰ SYNTHESIS EXECUTION SCHEDULED: MAY 21 19:00 UTC (17.5 HOURS FROM NOW)
+
+**What's happening**: Autonomous resistance-research Phase 2 synthesis execution at 19:00 UTC per MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md. Outcome determines Phase 2 path (STRONG/MODERATE/WEAK/TOO_EARLY). User decision gate at May 25 (final classification).
+
+**What's needed from you before 19:00 UTC**:
+- **Signal log snapshot** (May 20 ~22:00 UTC should have been filled): Current status as of 01:18 UTC May 21 = UNFILLED (contains [fill] placeholders only)
+- **Optional but helpful**: Check inbox for any contact replies that arrived May 20–21 morning. Orchestrator will check directly at 19:00 UTC if not pre-logged.
+
+**If signal log is not filled before 19:00 UTC**: Orchestrator will check inbox and Gist view counts directly at synthesis time, classify on live data, and flag signal log fill status in the synthesis CHECKIN.md post.
+
+**Trump v. Barbara user action item**: Confirmed status = no ruling yet; ruling expected late June 2026. Domain 58 rapid-response infrastructure built and ready. No action needed from you now.
+
+---
+
 **Work Completed (Session 1445)**:
 
 1. ✅ **Resistance-Research: Trump v. Barbara Rapid-Response Infrastructure Built**
