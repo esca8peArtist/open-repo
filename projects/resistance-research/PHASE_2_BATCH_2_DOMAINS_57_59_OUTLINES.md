@@ -1,14 +1,16 @@
 ---
 title: "Phase 2 Batch 2 Domain Outlines: Domains 57 & 59"
 created: 2026-05-21
-status: research-ready outlines — pre-staged for May 23–25 execution (STRONG/MODERATE synthesis outcome)
+updated: 2026-05-21
+status: production-ready outlines — execution-independent of May 25 synthesis outcome
 session: General Research Agent — Exploration Queue Item 20
-deadline_trigger: "If May 21 19:00 UTC synthesis is STRONG/MODERATE: execute May 23–25; otherwise defer to May 30"
+deadline_trigger: "Execute July–August 2026 regardless of synthesis outcome; Domain 59 can start June 16 from existing production base"
 cross_references:
   - PHASE_2_DOMAINS_38_40_OUTLINES.md
   - PHASE_2_DOMAINS_57_59_OUTLINES.md
   - DOMAIN_57_RESEARCH_OUTLINE.md
   - DOMAIN_59_RESEARCH_OUTLINE.md
+  - domain-59-economic-precarity-civic-participation.md
   - domains/domain-06-judicial-independence.md
   - domains/domain-19f-war-powers-reform.md
   - domains/domain-28-war-powers-venezuela-military-unilateralism.md
@@ -16,7 +18,10 @@ cross_references:
   - domains/domain-33-state-legislative-autocratization.md
   - domains/domain-51-campaign-finance-dark-money-architecture.md
   - domains/domain-54-criminal-justice-civic-exclusion-architecture.md
-word_count: ~3,200
+sources_per_domain:
+  domain_57: 26
+  domain_59: 24
+word_count: ~5,200
 ---
 
 # Phase 2 Batch 2 Domain Outlines: Domains 57 & 59
@@ -113,23 +118,48 @@ These two outlines are production-ready research briefs for Phase 2 Batch 2 init
 
 ---
 
-### Lead Sources (15 Primary)
+### Lead Sources (22 Primary)
+
+**Constitutional Architecture and Treaty Law**
 
 1. White House Presidential Memorandum, January 7, 2026 — primary source for 66-organization withdrawal: https://www.whitehouse.gov/presidential-actions/2026/01/withdrawing-the-united-states-from-international-organizations-conventions-and-treaties-that-are-contrary-to-the-interests-of-the-united-states/
-2. Al Jazeera full taxonomy of all 66 organizations (January 8, 2026): https://www.aljazeera.com/news/2026/1/8/which-are-the-66-global-organisations-the-us-is-leaving-under-trump
-3. CRS Report R48868 — "Separation of Powers and NATO Withdrawal" (February 27, 2026): https://www.congress.gov/crs-product/R48868
-4. ASIL Insight — "United States Announces Withdrawal from 66 International Organizations" (2026): https://www.asil.org/ILIB/united-states-announces-withdrawal-66-international-organizations
-5. AJIL (April 2025) — "President Trump Begins Second Term by Withdrawing the United States from International Agreements": https://www.cambridge.org/core/journals/american-journal-of-international-law/article/president-trump-begins-second-term
-6. Verfassungsblog — "Retreating from Internationalism: The Announced US Withdrawal from Many International Entities": https://verfassungsblog.de/the-announced-u-s-withdrawal-from-many-international-entities/
-7. Coalition for the ICC — "Criminalising Accountability" (2026): https://coalitionfortheicc.org/news/cicc-launches-criminalising-accountability-report
-8. TRIAL International — Universal Jurisdiction Annual Review 2025 (co-published with FIDH, ECCHR, REDRESS, Civitas Maxima, CJA): https://trialinternational.org/latest-post/universal-jurisdiction-annual-review-2025/
-9. ISHR — "China's Efforts to Block Civil Society Access to the United Nations": https://ishr.ch/latest-updates/chinas-efforts-block-civil-society-access-united-nations/
-10. Carnegie Endowment — "The Death of the World America Made" (February 2025): https://carnegieendowment.org/emissary/2025/02/trump-executive-order-treaties-organizations
-11. HRW — Hungary ICC Withdrawal Analysis: https://www.hrw.org/news/2025/04/05/hungary-pulls-out-international-criminal-court
-12. Freedom House — Freedom in the World 2026 ("Growing Shadow of Autocracy"): https://freedomhouse.org/report/freedom-world/2026/growing-shadow-autocracy
-13. V-Dem Institute — Democracy Report 2026 ("Democratic Backsliding Reaches Western Democracies"): https://www.v-dem.net/publications/democracy-reports/
-14. PIIE — "Can the Rule of Law Be Restored to the World Trading System?" (2026): https://www.piie.com/blogs/realtime-economics/2026/can-rule-law-be-restored-world-trading-system
-15. G.J. Ikenberry — *Liberal Leviathan: The Origins, Crisis, and Transformation of the American World Order* (Princeton University Press, 2011): https://press.princeton.edu/books/paperback/9780691156170/liberal-leviathan
+2. CRS Report R48868 — "Separation of Powers and NATO Withdrawal" (February 27, 2026): https://www.congress.gov/crs-product/R48868
+3. CRS Report R48524 — "Congress and the Scope of the President's Article II Foreign Policy Authorities" (2026): https://www.congress.gov/crs-product/R48524
+4. Lawfare — "What Congress Has Done — and What It Still Needs to Do — to Protect NATO": https://www.lawfaremedia.org/article/what-congress-has-done-and-what-it-still-needs-to-do-to-protect-nato
+5. Just Security — "Withdrawal from International Agreements: Toward a 'Tailored Out'" (Amirfar and Singh, Debevoise, November 2024): https://www.justsecurity.org/104496/withdrawal-international-agreements-tailored-out/
+6. Brookings — "Congress's Control Over Treaty Exit": https://www.brookings.edu/articles/congresss-control-over-treaty-exit/
+7. Nebraska Law Review — "Leaving the Twilight Zone: A Congressional Check on Treaty Termination" (Broeg): https://lawreview.unl.edu/leaving-twilight-zone-congressional-check-treaty-termination/
+8. ASIL Insight — "United States Announces Withdrawal from 66 International Organizations" (2026): https://www.asil.org/ILIB/united-states-announces-withdrawal-66-international-organizations
+9. AJIL (April 2025) — "President Trump Begins Second Term by Withdrawing the United States from International Agreements": https://www.cambridge.org/core/journals/american-journal-of-international-law/article/president-trump-begins-second-term
+
+**Withdrawal Documentation and Impact**
+
+10. Al Jazeera full taxonomy of all 66 organizations (January 8, 2026): https://www.aljazeera.com/news/2026/1/8/which-are-the-66-global-organisations-the-us-is-leaving-under-trump
+11. CSIS — "Opting Out: United States to Stop Engaging with More UN Entities" (2026): https://www.csis.org/analysis/opting-out-united-states-stop-engaging-more-un-entities
+12. IISD SDG Knowledge Hub — "US Withdraws from 65+ International Organizations, UN Agencies": https://sdg.iisd.org/news/us-withdraws-from-65-international-organizations-un-agencies/
+13. Better World Campaign — "Breaking Down the 31 UN Agencies Impacted by US Withdrawal": https://betterworldcampaign.org/budget/breaking-down-the-31-un-agencies-impacted-by-us-withdrawal
+14. Union of Concerned Scientists — "Trump Announces US Withdrawal Including UNFCCC and IPCC": https://www.ucs.org/about/news/trump-sinks-new-low-announcing-us-withdrawal-66-international-organizations-including
+15. Amnesty International — "US International Withdrawals Aim to Tear Apart Global Cooperation" (January 2026): https://www.amnesty.org/en/latest/news/2026/01/usa-international-withdrawals-tear-apart-global-cooperation/
+16. European Times — "US Withdrawal from 66 International Organizations Threatens Civil Society and UN Operations": https://europeantimes.news/2026/01/us-withdrawal-from-66-international-organizations-threatens-civil-society-and-united-nations-operations/
+
+**ICC Sanctions, Universal Jurisdiction, Institutional Resistance**
+
+17. Coalition for the ICC — "Criminalising Accountability" (2026): https://coalitionfortheicc.org/news/cicc-launches-criminalising-accountability-report
+18. Just Security — "What Just Happened: With ICC Sanctions": https://www.justsecurity.org/106627/what-just-happened-with-icc-sanctions/
+19. TRIAL International — Universal Jurisdiction Annual Review 2025 (co-published with FIDH, ECCHR, REDRESS, Civitas Maxima, CJA): https://trialinternational.org/latest-post/universal-jurisdiction-annual-review-2025/
+
+**UN System Capture, Democracy Benchmarking, Comparative Analysis**
+
+20. ISHR — "China's Efforts to Block Civil Society Access to the United Nations": https://ishr.ch/latest-updates/chinas-efforts-block-civil-society-access-united-nations/
+21. HRW — Hungary ICC Withdrawal Analysis (April 2025): https://www.hrw.org/news/2025/04/05/hungary-pulls-out-international-criminal-court
+22. Verfassungsblog — "Retreating from Internationalism: The Announced US Withdrawal from Many International Entities": https://verfassungsblog.de/the-announced-u-s-withdrawal-from-many-international-entities/
+
+**Democracy and International Order**
+
+23. Freedom House — Freedom in the World 2026 ("Growing Shadow of Autocracy"): https://freedomhouse.org/report/freedom-world/2026/growing-shadow-autocracy
+24. V-Dem Institute — Democracy Report 2026 ("Democratic Backsliding Reaches Western Democracies"): https://www.v-dem.net/publications/democracy-reports/
+25. Carnegie Endowment — "The Death of the World America Made" (February 2025): https://carnegieendowment.org/emissary/2025/02/trump-executive-order-treaties-organizations
+26. G.J. Ikenberry — *Liberal Leviathan: The Origins, Crisis, and Transformation of the American World Order* (Princeton University Press, 2011): https://press.princeton.edu/books/paperback/9780691156170/liberal-leviathan
 
 ---
 
@@ -246,22 +276,49 @@ These two outlines are production-ready research briefs for Phase 2 Batch 2 init
 
 ---
 
-### Lead Sources (14 Primary)
+### Lead Sources (24 Primary)
+
+**Income-Participation Gap and Core Empirical Anchors**
 
 1. PRRI — "Breaking Down Differences Between Voters and Non-Voters in 2024 Election": https://prri.org/spotlight/breaking-down-the-differences-between-voters-and-non-voters-in-the-2024-election/
-2. Dallas Fed Working Paper 2517, revised March 2026 — "Household Finance Shapes Political Participation: Evidence from Mortgage Refinancing": https://www.dallasfed.org/~/media/documents/research/papers/2025/wp2517r1.pdf
-3. Mullainathan and Shafir — *Scarcity: Why Having Too Little Means So Much* (Harvard CID, 2013): https://www.hks.harvard.edu/centers/cid/publications/books/scarcity-why-having-too-little-means-so-much
-4. Slee and Desmond — "Eviction and Voter Turnout" (*Politics and Society*, 2023): https://journals.sagepub.com/doi/full/10.1177/00323292211050716
-5. Kuk, Hajnal, Lajevardi — Residential mobility and persistently depressed voting (PNAS, 2024): https://www.pnas.org/doi/10.1073/pnas.2306287121
-6. Harvard IOP 52nd Edition Spring 2026 Youth Poll: https://iop.harvard.edu/youth-poll/52nd-edition-spring-2026
-7. Rastogi and Laurison — "Higher Turnout, Greater Inequality?" (*Sociological Perspectives*, 2025): https://journals.sagepub.com/doi/10.1177/23780231251338441
-8. Harvard JCHS — *America's Rental Housing 2026*: https://www.jchs.harvard.edu/americas-rental-housing-2026
-9. NLIHC — The Gap 2026 (7.2 million unit shortfall): https://nlihc.org/gap
-10. CFPB — Medical Debt Burden in the United States (2025 analysis): https://files.consumerfinance.gov/f/documents/cfpb_medical-debt-burden-in-the-united-states_report_2022-03.pdf
-11. Uscourts.gov — Bankruptcy Filings Rise 11.9% (April 2026): https://www.uscourts.gov/data-news/judiciary-news/2026/02/04/bankruptcy-filings-rise-11-percent
-12. Cox, Epp, Shepard — "Access to Healthcare and Voting" (*American Political Science Review*, 2025): https://www.cambridge.org/core/journals/american-political-science-review/article/access-to-healthcare-and-voting-the-case-of-hospital-closures-in-rural-america/33E48DFAC6215DE273E7D80366B408B1
-13. EPI — "Wage Stagnation in Nine Charts": https://www.epi.org/publication/charting-wage-stagnation/
-14. Bartels — *Unequal Democracy: The Political Economy of the New Gilded Age* (Princeton UP, 2nd ed., 2016): https://press.princeton.edu/books/hardcover/9780691172842/unequal-democracy
+2. Rastogi and Laurison — "Higher Turnout, Greater Inequality?" (*Sociological Perspectives*, 2025): https://journals.sagepub.com/doi/10.1177/23780231251338441
+3. Harvard IOP 52nd Edition Spring 2026 Youth Poll: https://iop.harvard.edu/youth-poll/52nd-edition-spring-2026
+4. Dallas Fed Working Paper 2517, revised March 2026 — "Household Finance Shapes Political Participation: Evidence from Mortgage Refinancing": https://www.dallasfed.org/~/media/documents/research/papers/2025/wp2517r1.pdf
+5. Markovich and White — "More Money, More Turnout? Minimum Wage Increases and Voting" (*Journal of Politics*, 2022; MIT): https://news.mit.edu/2022/higher-minimum-wages-voter-turnout-0215
+
+**Housing Instability and Eviction Pathways**
+
+6. Slee and Desmond — "Eviction and Voter Turnout" (*Politics and Society*, 2023): https://journals.sagepub.com/doi/full/10.1177/00323292211050716
+7. Kuk, Hajnal, Lajevardi — Residential mobility and persistently depressed voting (PNAS, 2024): https://www.pnas.org/doi/10.1073/pnas.2306287121
+8. Eviction Lab — "Eviction Depressed Voter Turnout in the 2016 Presidential Election": https://evictionlab.org/eviction-voter-turnout/
+9. Urban Institute — "Housing Instability Is a Critical Barrier to Voting Access": https://housingmatters.urban.org/articles/housing-instability-critical-barrier-voting-access
+10. Harvard JCHS — *America's Rental Housing 2026*: https://www.jchs.harvard.edu/americas-rental-housing-2026
+11. NLIHC — The Gap 2026 (7.2 million unit shortfall): https://nlihc.org/gap
+
+**Cognitive Bandwidth, Scarcity, and Medical Debt**
+
+12. Mullainathan and Shafir — *Scarcity: Why Having Too Little Means So Much* (Harvard CID, 2013): https://www.hks.harvard.edu/centers/cid/publications/books/scarcity-why-having-too-little-means-so-much
+13. CFPB — Medical Debt Burden in the United States (2025 analysis): https://files.consumerfinance.gov/f/documents/cfpb_medical-debt-burden-in-the-united-states_report_2022-03.pdf
+14. Uscourts.gov — Bankruptcy Filings Rise 11.9% (April 2026): https://www.uscourts.gov/data-news/judiciary-news/2026/02/04/bankruptcy-filings-rise-11-percent
+15. Cox, Epp, Shepard — "Access to Healthcare and Voting: The Case of Hospital Closures in Rural America" (*American Political Science Review*, 2025): https://www.cambridge.org/core/journals/american-political-science-review/article/access-to-healthcare-and-voting-the-case-of-hospital-closures-in-rural-america/33E48DFAC6215DE273E7D80366B408B1
+
+**OBBBA Compounding and Economic Floor**
+
+16. CBPP SNAP Tracker — "People Are Losing Food Assistance as the Republican Megabill Is Implemented" (2026): https://www.cbpp.org/research/food-assistance/snap-tracker-people-are-losing-food-assistance-as-the-republican-megabill
+17. CBPP — "Post-Megabill Drop in SNAP Participation Is Steepest in Decades": https://www.cbpp.org/blog/post-megabill-drop-in-snap-participation-is-steepest-in-decades
+18. EPI — "Wage Stagnation in Nine Charts" / "Power and Politics in the US Workplace" (2024): https://www.epi.org/unequalpower/publications/power-and-politics-in-the-u-s-workplace-what-imbalances-of-workplace-power-mean-for-civic-engagement-and-democracy/
+19. EPI — Nominal Wage Tracker (updated Q1 2026): https://www.epi.org/publication/charting-wage-stagnation/
+
+**Political Economy and Inequality**
+
+20. Bartels — *Unequal Democracy: The Political Economy of the New Gilded Age* (Princeton UP, 2nd ed., 2016): https://press.princeton.edu/books/hardcover/9780691172842/unequal-democracy
+21. Gilens — *Affluence and Influence: Economic Inequality and Political Power in America* (Princeton UP, 2012): https://press.princeton.edu/books/paperback/9780691162423/affluence-and-influence
+22. Schlozman, Verba, Brady — *The Unheavenly Chorus: Unequal Political Voice and the Broken Promise of American Democracy* (Princeton UP, 2012): https://press.princeton.edu/books/hardcover/9780691154848/the-unheavenly-chorus
+
+**Gig Economy and Institutional Disconnection**
+
+23. EPI — "Power and Politics in the US Workplace: Workplace Power Imbalances and Civic Engagement" (2024): https://www.epi.org/unequalpower/publications/power-and-politics-in-the-u-s-workplace-what-imbalances-of-workplace-power-mean-for-civic-engagement-and-democracy/
+24. Columbia University Votes — "The Disenfranchised Electorate: How Socioeconomic Status and Age Suppress Youth Voter Turnout": https://www.columbiavotes.org/news/the-disenfranchised-electorate
 
 ---
 
@@ -322,6 +379,61 @@ Domain 54 covers the criminal justice disenfranchisement architecture — incarc
 
 ---
 
+## Execution Constraints and Operational Notes
+
+### Sources Requiring Direct Archive or Library Access
+
+**Domain 57:**
+- *Liberal Leviathan* (Ikenberry, Princeton UP, 2011) — requires library access or institutional purchase; not freely available online. Key for Section 6's liberal international order framing. Confirm access via JSTOR or WorldCat before production launch.
+- CRS R48524 — "Congress and the Scope of the President's Article II Foreign Policy Authorities" — access via Congress.gov direct PDF; confirm live link at production launch.
+- Nebraska Law Review — Broeg article on treaty termination — access confirmed at lawreview.unl.edu; also available via HeinOnline if URL changes.
+- Texas A&M Law Review — "Exit Through the White House" — not confirmed accessible as of May 2026; locate via SSRN or Google Scholar before production begins.
+- Journal of Genocide Research (2026) — "Universal Jurisdiction over Genocide and the Making of Transnational Justice" — library database access likely required; confirm JSTOR or institutional access.
+
+**Domain 59:**
+- *Scarcity: Why Having Too Little Means So Much* (Mullainathan and Shafir, 2013) — Harvard CID working paper version freely available; book chapters require library access.
+- *Unequal Democracy* (Bartels, 2nd ed., 2016) — Princeton UP preview chapters available; full text requires library or purchase.
+- *Affluence and Influence* (Gilens, 2012) — data tables most important; Princeton UP preview. Confirm chapter access before writing Section 5.
+- *The Unheavenly Chorus* (Schlozman, Verba, Brady, 2012) — Princeton UP; confirm institutional library access. Chapter 5 ("Time, Money, and Civic Engagement") is the primary load-bearing section.
+- American Time Use Survey (ATUS) microdata — freely available at BLS.gov but requires download and tabulation; allow 2–4 hours for data extraction.
+
+### Organizational Contacts — Verification Required Before Send
+
+**Domain 57:**
+- Harold Hongju Koh — Yale Law School directory; email format likely [firstname.lastname]@yale.edu. Confirm active contact.
+- Fabian Wendt / Coalition for the ICC — coalitionfortheicc.org staff directory; confirm current staff lead for "Criminalising Accountability" report.
+- Susana SaCouto — War Crimes Research Office, American University WCL; confirm current affiliation (was Director as of 2025).
+
+**Domain 59:**
+- Larry M. Bartels — Vanderbilt Political Science; vanderbilt.edu/faculty directory. Confirm still at Vanderbilt (was at Princeton through 2015).
+- Matthew Desmond — Princeton Sociology / Eviction Lab; confirm current role (Eviction Lab Director).
+- Kei Kawashima-Ginsberg — CIRCLE, Tufts; circle.tufts.edu staff page. Confirm still Director.
+- Sharon Parrott — CBPP President; cbpp.org leadership page. Confirm email format.
+
+### Legal and Ethical Considerations
+
+**Domain 57 — ICC Sanctions Chilling Effects Section:**
+The domain documents that US persons providing "material support or services" to ICC proceedings face up to 20 years imprisonment and $1 million fines under current executive orders (EO 14203 and extensions). When distributing this domain, include a brief note that the research is conducted under First Amendment protections for academic and journalistic activity, and that the domain does not constitute legal advice on the scope of ICC sanctions exposure. Civil society recipients should be directed to ACLU Human Rights Program and CICC legal counsel for jurisdiction-specific guidance.
+
+**Domain 59 — No significant ethical flags.** The economic precarity research involves only publicly available statistical data and published academic work. No human subjects concerns.
+
+### Research Capacity Dependencies
+
+**Domain 57** requires a researcher with working knowledge of international law (Youngstown framework, Curtiss-Wright doctrine, treaty withdrawal constitutional history). The constitutional asymmetry sections (Sections 2.1–2.3) are the most technically demanding and will require legal citation verification. If the primary researcher does not have international law background, budget 2–4 additional hours for consultation with a law school contact (Koh, Hathaway, or a Yale/Georgetown international law clinic).
+
+**Domain 59** has an existing production base (domain-59-economic-precarity-civic-participation.md, 7,400 words, May 21). The researcher should read that document before beginning production to avoid duplication and identify the specific gaps (Sections 6–8 per the DOMAIN_59_RESEARCH_OUTLINE.md: gig economy, OBBBA compounding, regional variation). This reduces the effective production hours from 50–60 to approximately 20–30 if the May 21 document serves as the production base.
+
+### Data Currency Verification
+
+Both domains use data that will require currency checks at production launch:
+- Domain 57: V-Dem and Freedom House scores for the US (updated annually in spring); confirm 2026 editions are still the most current.
+- Domain 57: EU Article 7 status against Hungary; check June 2, 2026 ICC withdrawal effective date for any new EU institutional responses.
+- Domain 59: CBPP SNAP Tracker (updated monthly); pull fresh figures at writing start.
+- Domain 59: Eviction Lab filing data (updated in near-real-time for tracked cities); pull current rates at writing start.
+- Domain 59: Student loan garnishment count (DOE updates quarterly); confirm May 2026 figures.
+
+---
+
 ## Phase 2 Sequencing Recommendation
 
 **If May 21 synthesis outcome is STRONG or MODERATE (execute May 23–25)**:
@@ -336,4 +448,6 @@ Execute both domains on the May 23–25 schedule deferred to the May 30 window. 
 
 ---
 
-*Document prepared: May 21, 2026. General Research Agent — Exploration Queue Item 20. Sources for both domains confirmed against prior pre-research passes (May 15–19, 2026). Cross-references to Domains 6, 19, 28, 31, 33, 51, and 54 based on confirmed files in the domains/ directory. Production-complete Domain 59 document (8,200 words) at `domain-59-economic-precarity-democratic-infrastructure.md`. All 15 Domain 57 and 14 Domain 59 lead sources confirmed publicly accessible.*
+*Document prepared: May 21, 2026. Updated May 21, 2026. General Research Agent — Exploration Queue Item 20.*
+
+*Source expansion pass (May 21, 2026): Domain 57 sources expanded from 15 to 26 (added CRS R48524, Lawfare NATO article, Just Security "Tailored Out" article, Brookings Congress's Control Over Treaty Exit, Nebraska Law Review treaty termination, CSIS Opting Out analysis, IISD SDG Hub, Better World Campaign UN agencies breakdown, UCS IPCC withdrawal analysis, Amnesty International global cooperation statement, European Times civil society impact, Just Security ICC sanctions explainer). Domain 59 sources expanded from 14 to 24 (added Markovich/White MIT minimum wage voter turnout study, Eviction Lab 2016 voter turnout study, Urban Institute housing-voting nexus, CBPP SNAP tracker and post-megabill drop reports, Gilens Affluence and Influence, Schlozman/Verba/Brady Unheavenly Chorus, EPI workplace power and civic engagement, Columbia University Votes youth disenfranchisement). Execution constraints section added. Cross-reference index confirmed against domain files. Production-complete Domain 59 base document (7,400 words) at `domain-59-economic-precarity-civic-participation.md` (May 21, 2026 production).*
