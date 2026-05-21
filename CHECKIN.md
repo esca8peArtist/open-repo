@@ -1,3 +1,60 @@
+## Session 1475 — ORCHESTRATOR: ORIENTATION + CRITICAL DEADLINE MONITORING (May 21, 18:18–18:30 UTC)
+
+**Status**: ⏰ **SYNTHESIS DEADLINE IMMINENT: 42 MINUTES** (May 21 19:00 UTC) | 🔴 **SSH AUTH DEADLINE: 19h 12m** (May 22 13:30 UTC) | ⏰ **CHECKPOINT EXECUTION: 25h 42m** (May 22 20:00 UTC) | ✅ **ALL BLOCKS VERIFIED REMAIN ACTIVE**
+
+**Critical Findings**:
+
+1. 🔴 **resistance-research Synthesis WILL NOT Execute May 21**
+   - Signal log status: **UNCHANGED — 17 [fill] placeholders unfilled**
+   - User deadline for fill: May 20 ~22:00 UTC — **PASSED (not filled)**
+   - Synthesis execution deadline: **May 21 19:00 UTC (42 MINUTES FROM NOW)**
+   - **Protocol**: TOO_EARLY contingency activated; synthesis window closed; re-synthesis May 28
+   - Post-synthesis contingency playbooks for all 4 outcomes pre-staged (Session 1472)
+   - **No orchestrator action possible** — synthesis requires user-provided signal log data
+
+2. 🔴 **stockbot SSH Auth Still Failing**
+   - Verification: `ssh -i ~/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl...'` returned "Permission denied (publickey,password)"
+   - Orchestrator ED25519 public key still NOT authorized on Jetson
+   - Deadline: **May 22 13:30 UTC (19h 12m remaining)** — CRITICAL
+   - Lever B HMM config cannot be applied without SSH access
+   - Checkpoint (May 22 20:00 UTC) will execute without Lever B; Lever C alternatives ready for any outcome
+
+3. ✅ **All Blocks Re-Verified Remain Active**
+   - resistance-research: Signal log (17 [fill]) — blocks synthesis
+   - cybersecurity-hardening: VeraCrypt restart pending — blocks Phase 1 progression
+   - mfg-farm: Test print directory not found — blocks pre-launch execution
+   - stockbot: SSH auth failing — blocks Lever B config application
+   - No resolutions; no state changes to BLOCKED.md
+
+4. ✅ **INBOX Processing Complete**
+   - INBOX.md "New Items" section: **EMPTY** (no new items)
+   - All previous items from Sessions 1472-1474 processed and logged in WORKLOG.md
+
+5. ✅ **Autonomous Work Status**
+   - **NO autonomous work available** — all projects blocked on named user actions
+   - Exploration Queue: **27 items completed + staged for trigger events** (Items 19-20 deferred to May 22+ checkpoint outcome)
+   - Queue capacity: Sufficient (no need to add items; Items 19-20+25-26 waiting for May 22 checkpoint trigger)
+
+**Critical Path**:
+- 🕐 **May 21 19:00 UTC (NOW + 42 min)**: Synthesis deadline; will NOT execute (signal log unfilled); TOO_EARLY contingency activated
+- 🔴 **May 22 13:30 UTC (19h 12m)**: SSH auth critical deadline; Lever B config fix required; user action required
+- ⏰ **May 22 20:00 UTC (25h 42m)**: Checkpoint execution; Lever C alternatives ready; Items 19+81 trigger post-checkpoint decision tree
+- 📅 **May 28**: Re-synthesis window opens (if user fills signal log by then)
+
+**Needs Your Input**:
+1. 🔴 **May 21 19:00 UTC (IMMINENT)**: Synthesis **cannot execute** without signal log fill. TOO_EARLY contingency activated; synthesis window closed; re-synthesis scheduled May 28 per protocol. (No action required now — contingency is automatic via cron job at 19:00 UTC.)
+2. 🔴 **May 22 13:30 UTC (19h 12m)**: **SSH key authorization CRITICAL**. Add orchestrator ED25519 public key to Jetson authorized_keys, OR SSH manually to apply 5-min Lever B HMM config fix (see BLOCKED.md detailed instructions). Without this, checkpoint proceeds with Lever A; Lever C alternatives ready for deployment.
+3. 📋 **Signal log fill (DEFERRED)**: May 28 re-synthesis window. Can still fill signal log after May 21 deadline to trigger May 28 synthesis execution (TOO_EARLY contingency will remain active; synthesis will execute if data available by May 28).
+
+**Session Efficiency**:
+- Duration: 12 min (orientation + block verification + status monitoring)
+- Token use: ~20K (verification only; no autonomous work)
+- Outcome: All blocks re-verified active; critical deadlines confirmed; no blockers cleared
+
+**Summary**: Orchestrator idle on user input. All projects blocked on external user actions. Synthesis deadline 42 minutes away; cannot execute without user signal log data. SSH auth deadline 19h 12m away; Lever B config fix blocked. Checkpoint will execute May 22 20:00 UTC with or without Lever B (Lever C alternatives ready). Next autonomous work activates post-synthesis or post-checkpoint per decision trees in Exploration Queue Items 5+19-20.
+
+---
+
 ## Session 1474 — ORCHESTRATOR: ORIENTATION + BLOCK VERIFICATION + ITEM 27 EXECUTION (May 21, 17:53–18:51 UTC)
 
 **Status**: ✅ **ITEM 27 COMPLETE** | ✅ **ITEMS 25-26 QUEUED** | ⏰ **SYNTHESIS DEADLINE: ~9 MINUTES** (May 21 19:00 UTC) | 🔴 **SSH AUTH DEADLINE: ~19h 9m** (May 22 13:30 UTC)

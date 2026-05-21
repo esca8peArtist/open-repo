@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-21T12:54:41Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-21T18:18:35Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 4.3% | Reset in 107h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 4.5% | Reset in 102h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -41,7 +41,7 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5.1 MVP — CRITICAL BUG FIXED + VERIFIED (Session 1462)] ✅ READY FOR MERGE** Feature branch `feature/zimwriter-libzim-activation` contains full offline ZIM export pipeline. **Critical fix applied** (Session 1462, 07:15 UTC): `creator.config_indexing()` moved BEFORE `set_mainpath()` in `zim_writer.py` lines 836-840 (violating libzim docs was blocking Xapian full-text search). **Verification**: 240/240 tests pass; test suite updated to verify correct ordering. ✅ **Session 1461 Delive … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5.1 MVP — LIBZIM API BUG FIXED + RE-VERIFIED (Session 1471)] ✅ READY FOR MERGE** Feature branch `feature/zimwriter-libzim-activation` contains full offline ZIM export pipeline. **Root cause discovered & fixed** (Session 1471, 19:15 UTC): Prior Session 1462 fix was INCOMPLETE — it moved `creator.config_indexing()` only inside the context manager before `set_mainpath()`, but libzim requires `config_indexing()` to be called BEFORE the Creator object enters its context manager (before … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
@@ -95,56 +95,55 @@
 **Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (18 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 1438 (25 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (29 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 1438 (36 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
+• open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked ← 2026-05-21 ~19:15 UTC (Session 1471 — orchestrator autonomous fix)
 • open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
 • Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
 • stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 • stockbot — Guardrails.py not wired into trading path; position-sizing enforcement gap ← 2026-05-18 (Session 1206)
-• stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 
 ## Inbox (unprocessed)
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- **Key findings**:
-  - **RECOMMENDED**: Option B (Partial Parallel) + Tier 3 Comprehensive — only option meeting September target while containing cost to $1,600–2,475
-  - Veterinary Care must stay with primary writer (RVT/DVM credential requirement non-negotiable)
-  - Conflict Resolution specialist is the recommended second writer ($40–55/hr, lowest credential threshold)
-  - Option A (Serial) is the cost-free fallback (October 15 completion, highest quality)
-  - Option C (Full Parallel) costs $6,100–8,925 and carries Tier 3 dependency cascade risk
-  - Pre-execution research task list (5 hours) identified to reduce July 16 session burden
-- **Readiness**: Supports June 1 user decision window
+**Exploration Queue**:
+All active executable items exhausted. Sessions 1472-1473 repurposed synthesis-delay window (synthesis blocked on user signal log) to execute Exploration Queue Items 26-27 (stockbot Lever C contingency + seedwarden Phase 3 scope decision matrix). No remaining queue items available for autonomous execution.
 
-### Item 6: ✅ seedwarden — Phase 3 Decision Option Analysis (Session 1452)
-- **Deliverables**: `PHASE_3_OPTION_ANALYSIS.md` (2,800 words) + `PHASE_3_GOLDENSEAL_SOURCING_COMPARISON.md` (2,200 words) + `PHASE_3_SECOND_WRITER_CANDIDATE_PROFILES.md` (2,400 words)
-- **Key findings**:
-  - **Cost/revenue matrix** covers all 10 option combinations (Option A/B/C × Path 1/Path 2 sourcing)
-  - **Option C (3-bundle solo)** recommended: Women's Health + Respiratory + Sleep launch Aug 1, 45-hour writing sprint, $0 out-of-pocket, lowest risk
-  - **Option A (5-bundle solo)** is maximum-scope alternative: all bundles live Sept 1, 74-hour sprint, $0 out-of-pocket (but workload intensive)
-  - **Goldenseal sourcing**: Path 1 (Wikimedia CC, $0, non-exclusive) vs. Path 2 (botanical garden commission, $500–800, brand premium)
-  - **Second writer**: Non-negotiable criteria filter (AHG/NAHA/RH credential, 5+ years herbs, June 22 availability, contraindication depth 4–5 on 1–5 scale)
-  - **V1.0/V1.1 hybrid strategy**: Launch with CC photography, update post-sprint if garden photo arrives late
-- **Readiness**: Supports May 30 user decision window (three decisions needed: scope, sourcing, writer)
+**Autonomous Work Availability**:
+**NONE** — All project work blocked on user actions. All exploration items complete or staged for post-user-decision execution.
 
-**Files Committed**:
-- EXPLORATION_QUEUE.md (marked items 3, 4, 6 complete)
-- mfg-farm: MULTI_PRINTER_SCALING_ROADMAP.md, PRINTER_FARM_EQUIPMENT_SPECIFICATIONS.md
-- systems-resilience: PHASE_5_WAVE_2_DECISION_FRAMEWORK.md (v2), PHASE_5_WAVE_2_AUTHOR_PROFILES.md
-- seedwarden: PHASE_3_OPTION_ANALYSIS.md, PHASE_3_GOLDENSEAL_SOURCING_COMPARISON.md, PHASE_3_SECOND_WRITER_CANDIDATE_PROFILES.md
+**Critical Path Monitoring**:
 
-**Session 1452 Summary** (07:00–12:30 UTC):
-- ✅ Spawned 3 parallel agents for items 3, 4, 6
-- ✅ All agents completed within 5.5-hour window (exceptional efficiency)
-- ✅ All deliverables production-ready with decision frameworks for user input
-- ✅ Updated EXPLORATION_QUEUE.md to reflect item completion status
-- **Status**: Exploration queue currently has 1 active item (Item 5, deferred pending synthesis outcome). Ready for May 21 19:00 UTC synthesis execution and immediate Phase 2 activation if outcome is STRONG/MODERATE.
+- ⏰ **May 21 19:00 UTC** (66 min remaining): Synthesis deadline. **Will NOT execute** without signal log data. Per protocol, moving to TOO_EARLY contingency (synthesis window: May 28). Post-synthesis contingency playbooks pre-staged (Session 1472) for all 4 outcomes.
 
-**Next**: 
-1. May 21 18:00 UTC: Pre-execution review cron job (state verification)
-2. May 21 19:00 UTC: Synthesis execution cron job (autonomous Phase 2 launch path determination)
-3. May 22 13:30 UTC: Critical deadline for stockbot SSH auth fix (user action)
-4. May 22 20:00 UTC: stockbot checkpoint execution (outcome determines Gate 2 strategy)
+- 🔴 **May 22 13:30 UTC** (19h 37m remaining): CRITICAL SSH auth deadline for Lever B HMM config activation. User action required: authorize SSH key OR apply manual fix.
 
----
+- ⏰ **May 22 20:00 UTC** (26h remaining): Checkpoint execution. Lever C alternatives pre-staged (Session 1473) for any outcome (PASS/NEAR-MISS/FAR-MISS).
+
+- 📅 **May 25-26**: open-repo Phase 5.1 MVP merge window (unblocked; awaiting user merge approval).
+
+- 📅 **May 28**: Re-synthesis window (if signal log data provided by user).
+
+- 📅 **May 30**: seedwarden Phase 3 scope decision window. Decision matrix + resource allocation + risk register ready (Session 1473).
+
+**Orchestration Files Updated**:
+- WORKLOG.md: This entry
+- CHECKIN.md: Updated with Session 1474 status (to be added)
+- BLOCKED.md: No changes (all blocks verified remain active; no resolutions)
+- PROJECTS.md: No changes
+- INBOX.md: No new items
+
+**Session Efficiency**:
+- Duration: ~7 min (orientation + block checks)
+- Outcome: All blocks re-verified; synthesis deadline confirmed critical; autonomous work exhausted
+- Next action: Commit orchestration files; update CHECKIN.md; wait for user input or May 21 19:00 UTC synthesis outcome
+
+**Recommendations for Next Session**:
+1. If user fills signal log by May 21 19:00 UTC: synthesis will execute May 21 evening (autonomous cron job); activate matching contingency playbook
+2. If user fills signal log after May 21 19:00 UTC: manually trigger synthesis May 28 per protocol; activate matching outcome playbook
+3. If user authorizes SSH key: orchestrator can activate Lever B config immediately; checkpoint May 22 20:00 UTC proceeds with Lever B enabled
+4. If user does not authorize SSH by May 22 13:30 UTC: checkpoint proceeds without Lever B (Lever A outcome); Lever C alternatives ready for deployment
+
+**No further autonomous work available** — all projects blocked on external user actions.
