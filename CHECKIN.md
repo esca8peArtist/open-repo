@@ -31,12 +31,29 @@
 - ✅ Phase 2 activation infrastructure pre-staged for all 4 outcomes (STRONG/MODERATE/WEAK/TOO_EARLY)
 - 🔴 **BLOCKED**: Signal log unfilled (17 [fill] templates) — script will fail or output incomplete analysis if log not filled
 
+**Post-synthesis execution infrastructure verified**:
+- ✅ Phase 2 Batch 1 architecture ready for immediate execution if synthesis outcome is STRONG/MODERATE
+- ✅ `projects/resistance-research/execution/phase-2-outcome-launch-roadmap.md` (May 17) — complete execution guide for all 4 outcome branches
+- ✅ Item 5 (Phase 2 Batch 1 architecture) can activate May 21 21:00 UTC if signal log filled + synthesis executes with STRONG/MODERATE outcome
+- ✅ Fallback: if synthesis is WEAK/TOO_EARLY, Item 5 defers to May 25-28 contingency window
+
 **Immediate user action items**:
 1. **FILL SIGNAL LOG by 19:00 UTC** (May 18-21 response data) — required for synthesis execution
    - Location: `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
    - Then run: `cd projects/resistance-research && uv run python synthesis-execution-monitor.py`
+   - **Time remaining: ~7 hours**
 2. **SSH FIX by May 22 13:30 UTC** — add public key OR manually run config fix on Jetson
+   - **Time remaining: ~26 hours**
+   - Critical for Lever B HMM configuration deployment
 3. **(Optional) Check Trump v. Barbara ruling** — if issued, log for Domain 58 rapid-response
+
+**Session 1460 final summary**:
+- ✅ Orientation + block verification complete
+- ✅ Exploration queue refreshed: Items 19-21 added (Item 21 complete, 19-20 encountered socket errors)
+- ✅ Synthesis infrastructure verified ready (blocked on signal log fill)
+- ✅ Phase 2 execution infrastructure verified ready (immediate post-synthesis if STRONG)
+- ✅ Checkpoint infrastructure fully pre-staged (May 22 20:00 UTC autonomous execution)
+- 🔴 **Critical path**: signal log fill (7h) → synthesis 19:00 UTC → SSH fix (26h) → checkpoint 20:00 UTC (May 22)
 
 ---
 
