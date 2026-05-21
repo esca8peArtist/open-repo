@@ -1,5 +1,24 @@
 # Work Log
 
+## Session 1450 (May 21) — mfg-farm: Pre-Production Supply Chain Risk Mitigation Strategy
+
+**Task**: Research and write pre-production supply chain risk mitigation strategy for mfg-farm (ModRun Etsy print farm).
+
+**Files produced**:
+- `projects/mfg-farm/PRE_PRODUCTION_SUPPLY_CHAIN_RISK_MITIGATION.md` (3,800+ words) — full strategy document covering vendor dependency map, risk matrix, backup vendor directory, component substitution guide, MOQ/lead time analysis, fulfillment time budget, safety stock calculations, and 1→3→5 printer scaling roadmap
+- `projects/mfg-farm/BACKUP_VENDOR_MATRIX.csv` — 30-row component × vendor matrix covering all 8 component types with pricing, MOQ, lead times, tariff risk, and notes
+
+**Key findings**:
+1. All packaging/maintenance consumables are available next-day via Amazon Prime — effectively zero lead time risk at launch
+2. Active tariff risk: Chinese-origin filament (eSUN, Overture, Anycubic) has already seen 10–75% price increases since Q4 2025; Polymaker +10% May 2025, Bambu PLA refills +20%, Elegoo bulk +75%; domestic alternatives (Polymaker wholesale Texas, Polar Filament Michigan) are now cost-competitive at scale
+3. Approximately 1/3 of specialty PLA colors are out of stock at any given time (April 2026 data) — restrict production colors to black/white/grey/navy for reliability
+4. Pre-launch safety stock investment: ~$232–302 total (6 filament spools + printer consumables kit + packaging buffer) — covers 6–8 weeks at launch scale
+5. Single-printer failure is the dominant production risk; full Xometry overflow option documented as contingency
+
+**Completion notes**: mfg-farm exploration queue item from Session 1449 queue refresh — delivered before May 30 Etsy launch gate.
+
+---
+
 ## Session 1449 (May 21, 05:58–06:15 UTC) — Orchestrator: State Orientation + Exploration Queue Refresh
 
 **Task**: Orient to current state after Session 1447 exploration queue completion; assess available autonomous work; refresh exploration queue; prepare for May 21 19:00 UTC resistance-research synthesis execution.
