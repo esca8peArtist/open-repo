@@ -4,6 +4,32 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path and Gantt Timeline (Production Timeline Deliverables) — May 21, 2026
+
+**Task**: Build comprehensive Phase 3 medicinal herbs production timeline with critical path analysis supporting May 30 user decision gates for Phase 2 launch. Scope covers 5 bundles (Women's Health, Respiratory, Immunity, Sleep, Digestive), June 22–July 13 execution window, 22-day sprint.
+
+**Files produced** (all in `projects/seedwarden/`):
+
+- `phase-3-medicinal-herbs-critical-path.md` (v7.0, ~5,600 words) — Comprehensive critical path analysis and production timeline. Supersedes v6.0 (May 20). Covers: executive summary, zero-float critical path map, float summary by track, Section 1 (5-bundle species map, Option A/B/C comparison), Section 2 (supplier sourcing timeline — Tier 1/2/3, budget summary, FGV verification steps), Section 3 (writing schedule — all 22 sprint days, contraindication register, peer review requirements), Section 4 (Canva design timeline, palette production version, per-bundle design schedule), Section 5 (photography staging — fresh/dried decision matrix, pre-sprint track, in-sprint sessions), Section 6 (upload sequence, all 5 launch gates, Kit email triggers), Section 7 (risk scoring matrix with new AHG peer reviewer risk added, supplier delay recovery, float summary), Section 8 (3 decisions required by May 30), Appendix A (FTC language quick reference, CITES sidebar), Appendix B (pre-sprint action checklist with peer reviewer lead times added).
+
+- `phase-3-gantt-timeline.csv` (75 rows) — Sprint Gantt spreadsheet covering June 22–July 13 with pre-sprint rows (May 21–June 21), post-sprint rows (July 20, August 3), 6 contingency rows, and 4 resource summary rows. Columns: Row, Period, Phase, Track, Task, Start Date, End Date, Duration Days, Dependencies, Float Days, Critical Path, Resource Hours, Status, Notes. Includes 5 sprint checkpoints (June 28, July 3, July 5, July 7, July 13), all zero-float deadlines flagged, peer reviewer critical blocker as standalone task row, design lock at July 3 EOD, and all contingency triggers.
+
+**Key additions vs. v6.0 of the critical path document**:
+- AHG peer reviewer risk added to risk scoring matrix (P=2, I=3, Score=6 — highest severity pre-sprint risk). Includes 3-step action sequence with lead times (June 8 / June 15 / June 21).
+- Revenue ceiling risk explicitly documented: practitioner-tier ($120–150) cold outreach to AHG directory will not convert at target rate without named reviewer on listing.
+- Contraindication register added to writing section per Session 1438 standards — 6 species with mandatory contraindication language, flagged as non-deferrable to v1.1.
+- May 30 slip impact quantified: 5-day slip = 5-day launch slip; 10-day slip = August 17 all-bundles-live (compresses Nov–Dec review accumulation window).
+- Peer reviewer action added to Appendix B pre-sprint checklist (June 8, June 15, June 20, June 21 milestones).
+
+**Sources consulted**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v6.0, May 21), `HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md` (v3.0, May 21), `phase-3-medicinal-herbs-etsy-listings.md` (May 7), `phase-3-medicinal-herbs-sourcing-guide.md` (May 7), `PHASE_3_GANTT_TIMELINE.csv` (71-row reference).
+
+**Decisions pending (May 30 deadline)**:
+1. Sprint scope: Option A (5 bundles / single writer) / Option B (5 bundles / 2 writers) / Option C (3-bundle priority — recommended)
+2. Goldenseal path: Path 1 (live order by June 8 — $15–22) / Path 2 (Wikimedia CC + NC Botanical Garden outreach — $0, recommended under Option C)
+3. Canva palette: confirm 6 hex codes by June 15 or auto-lock to production-ready codes in critical path document
+
+---
+
 ## Seedwarden Agent Session — Track B Geographic Expansion and Wholesale Channel Strategy (Exploration Queue Item 21) — May 21, 2026
 
 **Task**: Research and produce strategic analysis for Track B post-June-22 geographic expansion (Canada, UK, EU) and wholesale channel development (practitioner direct, complementary clinics, natural retailers, online marketplaces). Independent of Track A blockers and May 30 scope decisions.
