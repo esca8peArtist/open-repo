@@ -2,6 +2,33 @@
 
 ---
 
+## May 21, 2026 — General Research Agent — Phase 2 Distribution Infrastructure (Exploration Queue Item 7)
+
+**Task**: Pre-build Phase 2 distribution infrastructure for all four May 21 synthesis outcomes (STRONG/MODERATE/WEAK/TOO_EARLY) so that post-synthesis execution at May 25 gate can begin immediately. Four deliverables per task spec.
+
+**Files created** (`projects/resistance-research/phase-2-execution/`):
+
+- `PHASE_2_DISTRIBUTION_GIST_TEMPLATES.md` — Four outcome-specific Gist cover page templates for Domains 56, 57, 58, 59. Each domain has a cover for each outcome (16 templates total). Covers contain: distribution context, outcome-specific social proof language (present under STRONG/MODERATE, absent under WEAK), domain hook summaries, and how-to-use guidance per recipient type. TOO_EARLY section contains baseline drafts for D56/D58 with placeholder update instructions post-May-25-gate. Includes full publication execution checklist.
+
+- `PHASE_2_EMAIL_TEMPLATES_AND_VARIANTS.md` — 12 email templates: 4 outcomes × 3 Tiers (Tier 1: civil service orgs, Tier 2: tribal/immigration legal aid/constitutional clinics, Tier 3: labor/think tanks). Every template has: complete subject line options, full body with inline conditional social-proof language, and a specific per-recipient-type ask. TOO_EARLY section contains interim response template (for inbound inquiries during hold) and pre-positioned D56 Tier 1 draft instructions. Full send schedule quick reference table.
+
+- `PHASE_2_CONTACT_STRATIFICATION.md` — Three-part structure: (1) Batch 1 five-contact Phase 2 re-engagement decision matrix with per-Score triggers and domain hooks; (2) Tier 2 contacts by constituency (civil service, tribal, immigration legal aid) with per-contact email, domain hook, engagement tier, and outcome-specific ask for STRONG/MODERATE/WEAK; (3) Tier 3 contacts by constituency (labor, economic think tanks, foreign policy/democracy think tanks) with same structure. Per-contact ask customization rules. Outcome-specific activation order for all four outcomes.
+
+- `PHASE_2_OUTCOME_TIMELINE_DECISION_TREE.md` — Four outcome sections (STRONG/MODERATE/WEAK/TOO_EARLY) each with: immediately shipping domains vs. deferred domains table, week-by-week research and distribution schedule, upgrade/downgrade trigger conditions, and pivot assessment checklist. Section 5: path-independent constraints (D39 May 28, D42 May 28, D56 June 1, D58 ruling trigger, D57 Sept 1 hard deadline, D59 Aug 31 hard deadline). Section 6: immediate vs. deferred domain comparison table (all four outcomes × all domains). Section 8: policy window pre-emption rules (Trump v. Barbara, Schedule F ruling, OBBBA amendment).
+
+**Key design decisions**:
+- All four Gist covers use outcome-calibrated framing: STRONG has full social proof anchor, MODERATE has conditional social proof (only if Score 3+ reply confirmed), WEAK has utility-only framing with no Phase 1 references
+- D58 Gist templates contain all three ruling scenario variants (A/B/C) with instruction to delete inapplicable scenarios once ruling is known — prevents needing to create new copy post-ruling
+- TOO_EARLY email templates exist as a gap-filler only (inbound response template); all outbound templates are in STRONG/MODERATE/WEAK sections because TOO_EARLY resolves to one of those three at May 25
+- Contact stratification explicitly guards against Tier 3 activation under WEAK without D39 engagement signal — no social proof anchor = no Tier 3 sends
+- Timeline decision tree includes mid-stream upgrade/downgrade conditions for each path so mid-execution reclassification (e.g., Score 5 signal during D57 research) is handled without replanning
+
+**Confidence**: High on template completeness and outcome calibration — all four outcomes have fully executable infrastructure. Moderate on specific contact email addresses in Tier 2/3 (these should be re-verified the week of each send, per the contact stratification checklist).
+
+**Deadline met**: May 22 EOD deadline per task spec.
+
+---
+
 ## May 21, 2026 — General Research Agent — Trump v. Barbara v3 Supplement + Domain 58 Surveillance Escalation Sections
 
 **Task**: Produce rapid-response update for Domain 58 distribution: (1) Trump v. Barbara ruling projection and DOJ/ICE pivot pathways; (2) tribal citizenship admin law defense; (3) BIA reorganization litigation windows; (4) updated contacts. Target: Phase 1 Tier 1 distribution (May 25+) and Domain 58 Phase 2 integration.
