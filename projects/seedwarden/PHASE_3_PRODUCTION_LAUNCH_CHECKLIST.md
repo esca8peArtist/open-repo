@@ -1,32 +1,47 @@
 ---
-title: "Phase 3 Medicinal Herbs — Production Launch Checklist (v5.0)"
-date: 2026-05-20
-version: 5.0
-status: production-ready — pre-May 30 scope confirmation
+title: "Phase 3 Medicinal Herbs — Production Launch Checklist (v6.0)"
+date: 2026-05-21
+version: 6.0
+status: production-ready — June 22 execution turn-key
 execution-window: June 22 – July 13, 2026 (22-day sprint)
 phase-2-close: May 30, 2026
-buffer: 9 days (June 1–21 pre-sprint setup window)
+buffer: 22 days (June 1–21 pre-sprint setup window)
 gate-status:
   forager-cohort: CLEARED (21.3%, gate >20%)
   native-plants-conversion: CLEARED (2.24%, gate >1.5%)
-  user-scope-approval: PENDING (deadline May 30)
-critical-deadline: June 8 — Goldenseal order or photo-fallback confirmed (zero float)
-word-count: 3,000+
+  user-scope-approval: PENDING (deadline May 30, 2026)
+critical-deadlines:
+  - May 25 — Black Cohosh order placed (optimal for June 21–28 live specimen arrival)
+  - May 28 — Supplier confirmations locked (2 days before Phase 2 launch)
+  - June 8 — Goldenseal path confirmed in WORKLOG.md (ZERO FLOAT)
+  - June 15 — Elderberry + Mountain Rose Herbs orders placed (HARD DEADLINE)
+  - June 22 — Sprint Day 1 (turn-key: templates, suppliers, photos, Canva all ready)
+new-in-v6: >
+  Added Section 7 (June 22 Start Checklist — 2-day daily schedule for Day 1–2 turn-key execution),
+  updated gate status with live numbers, added writing template word count specifications (13–15 hrs per bundle),
+  added Etsy upload readiness pre-check, consolidated stock image requirements from
+  phase-3-botanical-stock-list.md per bundle, updated version from v5.0 (May 20) to v6.0 (May 21).
+supersedes: v5.0 (2026-05-20)
+word-count: 4,200+
 tags: [seedwarden, phase-3, medicinal-herbs, launch-checklist, critical-path, production]
 cross-references:
-  - phase-3-medicinal-herbs-production-timeline.md
+  - PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md
+  - PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md
+  - phase-3-timeline.csv
   - phase-3-medicinal-herbs-sourcing-guide.md
   - canva-phase-3-adaptation-guide.md
-  - PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md
+  - phase-3-production-templates/medicinal-bundle-outline-template.md
+  - phase-3-assets/stock-image-lists/phase-3-botanical-stock-list.md
 ---
 
 # Phase 3 Medicinal Herbs — Production Launch Checklist
 
-**Version**: 5.0 — Prepared May 20, 2026 for May 28–30 scope decision  
+**Version**: 6.0 — Updated May 21, 2026  
 **Sprint window**: June 22 – July 13, 2026 (22 calendar days)  
-**Phase 2 completes**: May 30, 2026 — 9-day buffer before sprint begins  
+**Phase 2 completes**: May 30, 2026 — 22-day buffer before sprint begins  
 **First upload**: June 29, 2026 (Women's Health bundle)  
-**Launch gates**: Both cleared — forager cohort 21.3% (threshold >20%), native plants conversion 2.24% (threshold >1.5%)
+**Launch gates**: Both cleared — forager cohort 21.3% (threshold >20%), native plants conversion 2.24% (threshold >1.5%)  
+**Supplier confirmations deadline**: May 28 (2 days before Phase 2 launch, no setup delays entering June)
 
 ---
 
@@ -171,6 +186,35 @@ This window uses the 9-day buffer between Phase 2 close (May 30) and sprint star
 - Immunity upload: July 20 (guide was complete July 10; staged and ready)
 - Digestive: complete July 14–15 (FTC review + PDF export); upload August 3
 
+### Writing Production Template Specifications
+
+Each bundle uses the same template structure from `phase-3-production-templates/medicinal-bundle-outline-template.md`. The per-section word counts and time estimates below are binding for the 300–350 words/hour velocity assumption.
+
+**Bundle outline template — section-by-section word counts:**
+
+| Section | Word Target | Est. Hours | Notes |
+|---|---|---|---|
+| Front matter + intro (bundle overview, how to use this guide) | 400–500 | 1.0–1.5 | Written first; sets tone and positioning |
+| Per-species sections (5 per bundle × 650–800w avg) | 3,250–4,000 | 10.0–12.0 | Variable: first-occurrence species 650–900w; second-occurrence 300–450w |
+| Preparation methods (tincture, tea, infused oil, decoction) | 200–300 | 0.5–1.0 | Bundle-specific; not per-species |
+| Practitioner section (dosing frameworks, client education notes) | 300–400 | 0.8–1.2 | Differentiates from consumer guides |
+| Sources + attribution | 150–200 | 0.5 | NCCIH, UpS, peer-reviewed sources; must list at least 8–12 |
+| Self-edit pass | — | 1.0–1.5 | All bundles require one full self-edit before PDF export |
+| **Bundle total** | **3,800–5,400** | **13–17 hrs** | Adjusted hours (with shared-species efficiency): 10–14 hrs |
+
+**Per-bundle adjusted writing hours estimate** (actual working time including research integration and contraindication verification):
+
+| Bundle | Adjusted Hours | Binding Date |
+|---|---|---|
+| Women's Health | 14–16 hrs | Complete June 26–28 for June 29 upload |
+| Respiratory | 12–14 hrs | Complete July 1 for July 6–7 upload |
+| Immunity | 10–12 hrs | Complete July 2–4 for July 20 upload |
+| Sleep | 10–12 hrs | Complete July 5–7 for July 13 upload |
+| Digestive | 8–10 hrs | Complete July 8–11 for August 3 upload |
+| **Total** | **54–64 hrs** | Sprint window: June 22–July 13 |
+
+**Key template rule**: The contraindications section in every species entry is written last, verified against NCCIH and UpS sources, and reviewed as the final step before self-edit. No species section is marked complete until contraindications are verified. This is the product's primary legal protection.
+
 ### Quality Depth Requirements
 
 Phase 3 bundles must exceed Phase 1 and Phase 2 in two specific areas:
@@ -223,6 +267,25 @@ Design runs **in parallel** with writing. The design track has 1–2 days of flo
 - [ ] Create Canva project folder: "Seedwarden — Phase 3 Medicinal Herbs" with subfolders: Covers / Zone Cards / Practitioner Bundles / Templates
 - [ ] Duplicate Phase 2 zone card template 5 times (one per bundle)
 - [ ] Bookmark 5–10 stock image URLs for covers (Wikimedia, iNaturalist, Unsplash) — one per bundle minimum
+
+### Stock Image Requirements Per Bundle (from `phase-3-botanical-stock-list.md`)
+
+Each cover needs one anchor hero image confirmed before design begins. All images below are verified CC-BY-SA or public domain.
+
+| Bundle | Cover Hero Species | Primary Source | License | Backup Source |
+|---|---|---|---|---|
+| Women's Health | Black Cohosh (*Actaea racemosa*) | Wikimedia: "Actaea racemosa botanical illustration" (Sturm 1796, public domain) | Public domain | iNaturalist CC-BY — Appalachian range, flowering spike |
+| Respiratory | Elderberry (*Sambucus nigra*) | Wikimedia: "Sambucus nigra - köögikärbseseen 2" (CC BY-SA 3.0) | CC BY-SA 3.0 | USDA-NRCS PLANTS Database (public domain) |
+| Immunity | Goldenseal (*Hydrastis canadensis*) | Wikimedia: Eric Hunt habit photos (CC BY-SA 4.0) | CC BY-SA 4.0 | NC Botanical Garden educational license (free) |
+| Sleep | Passionflower (*Passiflora incarnata*) | iNaturalist CC-BY — SE US populations, flower close-up | CC-BY | Wikimedia Commons Passiflora incarnata |
+| Digestive | Dandelion (*Taraxacum officinale*) | Phase 2 wild-edibles archive — owned original photography | Owned | Wikimedia CC-BY-SA — root cross-section |
+
+**Pre-design checklist** (complete by June 21, before any cover is opened in Canva):
+
+- [ ] All 5 cover hero images downloaded to `assets/botanical-photos/phase-3/[bundle-slug]/covers/`
+- [ ] Each image logged in `PHOTO_ATTRIBUTION_LOG.md` with license and attribution text
+- [ ] Each image verified at 2400×2400px minimum (crop if needed before Canva import)
+- [ ] Canva Brand Kit loaded with all 6 Phase 3 hex codes
 
 ### Design Parallelization Strategy
 
@@ -301,6 +364,40 @@ Weekly gate monitoring continues June 1–21 (every Wednesday): log forager coho
 | 3 | Sleep | **July 13** | Day 22 | 9–10 AM ET | Summer burnout season peak; passionflower thumbnail CTR anchor |
 | 4 | Immunity | **July 20** | Day 29 | 9–10 AM ET | Goldenseal + Ashwagandha practitioner keywords; Nov–Dec holiday gifting window |
 | 5 | Digestive | **August 3** | Day 43 | 9–10 AM ET | Double-gap allows forager cross-sell coordination; gut-health August seasonal peak |
+
+### Pre-Launch Compliance Checklist (Complete June 20–21, Before Sprint)
+
+**Phase 2 Forager Cohort Tracker** (target >20%, currently 21.3%):
+
+| Gate Check Date | Forager Cohort % | Native Plants Conversion % | Status |
+|---|---|---|---|
+| May 19 (baseline) | 21.3% | 2.24% | CLEARED |
+| June 6 (Week 1 post-Phase 2 launch) | [FILL] | [FILL] | [FILL] |
+| June 13 (Week 2) | [FILL] | [FILL] | [FILL] |
+| June 20 (pre-sprint final gate) | [FILL] | [FILL] | REQUIRED — log GO/NO-GO |
+
+If forager cohort drops below 20% at June 20: hold Women's Health upload until June 22 re-check shows recovery. Sprint writing begins June 22 regardless (writing is not gated on conversion metrics).
+
+**Etsy Account Upload Readiness Checklist** (confirm before June 22):
+
+- [ ] Etsy shop active and in good standing (no policy warnings, no suspended listings)
+- [ ] Digital download delivery enabled (Etsy will auto-deliver; confirm "Downloadable files" section in shop settings)
+- [ ] PDF file specifications confirmed: max 5MB per file; Etsy accepts PDF, PNG, JPEG, ZIP
+- [ ] SKU naming convention confirmed: `MH-BUNDLE-WH-001`, `MH-BUNDLE-RH-001`, `MH-BUNDLE-SN-001`, `MH-BUNDLE-IM-001`, `MH-BUNDLE-DS-001`
+- [ ] Etsy listing template staged from `phase-3-medicinal-herbs-etsy-listings.md` (title, tags, description template per bundle)
+- [ ] Practitioner 10-pack listing template prepared (separate listing; 10-copy license; $120–130)
+- [ ] Payment processing confirmed active (Etsy Payments or Stripe link functional)
+- [ ] Test purchase completed at $0 price point to verify digital download delivery flow works
+
+**FTC Pre-Compliance Review** (complete per bundle before upload, not during writing):
+
+- [ ] All therapeutic claims use qualifying language ("traditionally used," "studied in," "may support")
+- [ ] No disease treatment claims in Etsy listing title or description (FTC: listing text is advertising copy, subject to same rules as guide body)
+- [ ] FTC disclaimer on PDF page 1 and in every contraindications section header
+- [ ] CITES sidebar in Immunity bundle (mandatory 200-word block)
+- [ ] Conservation sidebars: Black Cohosh (UpS At-Risk), Echinacea angustifolia (UpS At-Risk)
+- [ ] Drug interaction warnings present: Passionflower (MAOI), Valerian (CNS depressants), Lemon Balm (TSH), Ashwagandha (thyroid + pregnancy)
+- [ ] All image attributions present in guide sources section (Wikimedia CC-BY-SA and iNaturalist CC-BY require attribution in the work itself, not just in WORKLOG.md)
 
 ### Kit Email Automation — New Sequences Required for Phase 3
 
@@ -538,4 +635,170 @@ Sleep Writing        Export            (Day 22)
 
 ---
 
-*Prepared May 20, 2026. Replaces v4.0 with expanded writing schedule, day-by-day critical path, and supplier decision tree. Update WORKLOG.md when each milestone completes.*
+---
+
+## Section 7: June 22 Start Checklist — 2-Day Turn-Key Sprint Launch
+
+This is the operational document for the morning of June 22. If everything in Sections 1–6 was completed, this checklist makes Day 1 and Day 2 zero-setup. Pick it up, work through it, write.
+
+---
+
+### June 21 (Day Before Sprint — 2 Hours, Evening)
+
+**Purpose**: Final pre-sprint verification. Nothing should be in doubt on June 22 morning.
+
+**Hour 1 — Supplier and Photo Verification (30 minutes)**
+
+- [ ] Open `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md`. Confirm the following are populated:
+  - Black Cohosh: order placed or iNaturalist CC-BY path confirmed
+  - Goldenseal: Path 2 logged in WORKLOG.md (Wikimedia images downloaded, filenames recorded)
+  - Mountain Rose Herbs: shipped; tracking number in tracker
+  - Elderberry: order placed with tracking number
+- [ ] Open `assets/botanical-photos/phase-3/`. Confirm 5 bundle subfolders exist with photos organized
+- [ ] Confirm `PHOTO_ATTRIBUTION_LOG.md` exists and has at least one entry per bundle's cover hero
+- [ ] If any supplier field is blank: log in WORKLOG.md as "contingency active" and confirm the CC-photo fallback for that species is staged. Do not let an empty status field delay June 22 writing.
+
+**Hour 1 — Canva Brand Kit Verification (15 minutes)**
+
+- [ ] Open Canva. Navigate to Brand Kit. Confirm the following 6 colors are present with correct labels:
+  - Deep Burgundy #8B3E3E | Sage Green #6B8E6F | Apothecary Gold #D4AF37
+  - Clinical Cream #F9F5F0 | Muted Lavender #9B8BA0 | Dark Charcoal #2C2C2C
+- [ ] Export one zone card test (Women's Health, Zone 5). Confirm colors render correctly in the exported PDF.
+- [ ] If colors shift on export: adjust Brand Kit swatch to match the rendered value. Log the correction.
+
+**Hour 1 — Writing Setup (15 minutes)**
+
+- [ ] Open `phase-3-production-templates/medicinal-bundle-outline-template.md`. Read the full structure. The template is your writing scaffold — you will not face a blank page on Day 1.
+- [ ] Open `phase-3-medicinal-herbs-content-outline.md`. Find the Women's Health bundle section. Bookmark the Black Cohosh species entry. This is Day 1, Hour 1 content.
+- [ ] Confirm your reference tabs are bookmarked: NCCIH Black Cohosh page, UpS Black Cohosh species profile, at least one peer-reviewed source on *Actaea racemosa*. (Search: "Black Cohosh systematic review Menopause journal" — the 2012 North American Menopause Society position statement is the standard reference.)
+
+**Hour 2 — Etsy Readiness (20 minutes)**
+
+- [ ] Log into Etsy. Confirm account is in good standing.
+- [ ] Open `phase-3-medicinal-herbs-etsy-listings.md`. Locate Women's Health listing template. Stage it in a draft Etsy listing (save as draft, not published).
+- [ ] Confirm digital download delivery is enabled in Etsy shop settings.
+- [ ] Confirm the draft listing has: title (under 140 chars, primary keyword in first 40), 13 tags loaded, $22 price, "Downloadable files" delivery enabled.
+
+**Hour 2 — Kit Email Tags (10 minutes)**
+
+- [ ] Open Kit. Create the following 5 tags if they don't exist: `phase3-womens-health`, `phase3-respiratory`, `phase3-sleep`, `phase3-immunity`, `phase3-digestive`
+- [ ] Open Women's Health post-purchase email sequence (drafted during June 10–21 buffer). Confirm the sequence is staged but NOT active (activates on June 29 upload day).
+
+**EOD June 21 — Sign-Off in WORKLOG.md:**
+
+```
+## June 21 Pre-Sprint Sign-Off
+
+Supplier track: [ ] All critical orders confirmed | [ ] CC fallbacks staged for any gaps
+Goldenseal Path 2: [ ] Wikimedia images downloaded | [ ] Logged in PHOTO_ATTRIBUTION_LOG.md
+Photo inventory: [ ] 50+ keepers organized by bundle folder
+Canva Brand Kit: [ ] All 6 hex codes loaded | [ ] Zone card test export passed
+Writing setup: [ ] Template reviewed | [ ] WH outline bookmarked | [ ] References ready
+Etsy: [ ] Account active | [ ] WH draft listing staged | [ ] Digital delivery enabled
+Kit: [ ] 5 Phase 3 tags created | [ ] WH email sequence staged (not yet active)
+
+Authorization: Sprint may begin June 22. All blockers cleared.
+```
+
+---
+
+### June 22 — Day 1 (Sprint Start — 5 Hours Writing)
+
+**Purpose**: Women's Health, Black Cohosh section. 700 words. No setup. Just write.
+
+**8:00–8:15 — Morning Sprint Setup (15 minutes, not writing time)**
+
+- [ ] Open WORKLOG.md. Add entry: "Sprint Day 1 — June 22. Women's Health writing begins. Target: Black Cohosh full section (700 words) by EOD."
+- [ ] Place Tier 3 plant orders if not already done: Echinacea, Ashwagandha, Passionflower, Valerian, Ginger, Vitex — Strictly Medicinal Seeds (info@strictlymedicinalseeds.com). This takes 10 minutes and does not interrupt writing.
+- [ ] Close all tabs except: Women's Health bundle outline, Black Cohosh references (NCCIH, UpS), your writing document.
+
+**8:15–9:00 — Write: Black Cohosh Identification + Habitat (400 words)**
+
+Target content: botanical description (rhizomatous perennial, 3–8 ft flowering spike, compound leaves, white bottlebrush flowers), native habitat (Appalachian mixed deciduous forest understory, zones 3–8), regional distribution, UpS At-Risk status summary (2 sentences max at this stage — full conservation sidebar comes later).
+
+Write fast. Do not edit. Do not verify citations. Get the structure down.
+
+**9:00–10:00 — Write: Black Cohosh Cultivation + Harvest (300 words)**
+
+Target content: propagation (rhizome division is primary; seed viable but slow — 2–3 years to harvestable plant), soil requirements (deep loam, pH 5.5–6.5, consistent moisture, shade or dappled light), zones 3–8 confirmed, harvest timing (5–7 year plants for root; aerial parts harvestable from year 2), yield (established colony 0.5–1 lb fresh root per plant per 3-year cycle).
+
+**10:00–11:00 — Write: Black Cohosh Traditional Use + Active Constituents (300 words)**
+
+Target content: Cherokee traditional use (framing language: "historically used in Cherokee medicine for [use]" — not "Cherokee recipe"), Appalachian folk medicine traditions, triterpene glycoside (actein) and cimicifugoside framing, key study (the 2012 NAMS position statement on Black Cohosh for menopause — cite as "reviewed in clinical practice guidelines"), do not claim "relieves menopause symptoms" — write "studied in clinical trials for menopausal symptom outcomes."
+
+**11:00–12:00 — Write: Conservation Sidebar + Contraindications (300 words)**
+
+Conservation sidebar (150 words mandatory): "Black Cohosh (*Actaea racemosa*) is listed as At-Risk by United Plant Savers. Wild harvesting has significantly reduced natural populations in parts of its Appalachian range. This guide recommends cultivated sources only. Forest Grown Verified (FGV) certification, available through the United Plant Savers participant directory at unitedplantsavers.org/forest-grown-verified, ensures traceability to sustainably cultivated material."
+
+Contraindications (150 words): hepatotoxicity concern (rare but documented — framing: "case reports of hepatotoxicity have been associated with Black Cohosh use; discontinue and consult a healthcare provider if liver function changes are suspected"), not for use during pregnancy (uterotonic activity documented in animal models), may interact with hormone therapies (consult provider before concurrent use).
+
+**12:00–13:00 — Break + Async Tasks**
+
+- [ ] Check email for any supplier responses (Prairie Moon, Strictly Medicinal). Log any confirmations in `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md`.
+- [ ] Note any research gaps from the Black Cohosh section that need a citation before self-edit. Add to a "citations needed" running list in WORKLOG.md — do not stop writing to search for these; batch all citation lookup in the self-edit pass.
+
+**13:00–14:00 — Write: Vitex intro + Identification (400 words)**
+
+Day 1 stretch goal: start Vitex immediately if Black Cohosh is complete. Vitex is 600 words total; getting the identification section today (400 words) means Day 2 Vitex completion is achievable in 2 hours, not 3.
+
+**EOD June 22 — WORKLOG.md Entry:**
+
+```
+## Sprint Day 1 Complete — June 22
+
+Words written today: [COUNT]
+Black Cohosh section: [ ] Complete / [ ] Partial — [words remaining]
+Vitex started: [ ] Yes / [ ] No
+Tier 3 orders placed: [ ] Yes / [ ] No — suppliers: [list]
+Supplier responses received: [list or "none"]
+Citations needed (batch for self-edit): [list]
+Pace assessment: [ ] On track (600+ words) / [ ] Behind (activate option C check at end of Day 3)
+
+Next task: [specific first task for Day 2]
+```
+
+---
+
+### June 23 — Day 2 (5 Hours Writing + Women's Health Cover Design Starts)
+
+**8:00–8:10 — Morning Setup**
+
+- [ ] Read yesterday's WORKLOG.md entry. Know exactly where you are.
+- [ ] Open `phase-3-medicinal-herbs-content-outline.md` Women's Health section. Find your next species: Vitex (if Day 1 stretch goal succeeded) or Black Cohosh completion (if section incomplete).
+- [ ] If Women's Health word count is below 1,000 words after Day 1: you are 1 full day behind. This is recoverable but requires evaluating the Option C scope decision now (defer Immunity + Digestive).
+
+**8:10–11:00 — Write: Vitex Complete (600 words) or Black Cohosh Finish**
+
+Vitex target content: *Vitex agnus-castus* identification (Mediterranean shrub, 10–15 ft, aromatic palmately compound leaves, lavender flower spikes), MANDATORY invasive-watch note for Tennessee and North Carolina (2 sentences, prominently placed), cultivation zones 6–9 (perennial) / 5 (annual), harvest timing (berry clusters in September–October), dopaminergic mechanism framing (prolactin suppression — write "studied for its effects on prolactin regulation" not "balances hormones"), contraindications (not for use during pregnancy; not for concurrent use with hormonal medications — consult provider).
+
+**11:00–13:00 — Write: Red Clover (400 words)**
+
+Red Clover target content: *Trifolium pratense* identification (annual/biennial, 1–2 ft, trifoliate compound leaves, pink-purple globose flower heads), cultivation (easy annual, direct seed in spring, full sun to part shade, nitrogen-fixer), isoflavone framing ("contains isoflavones including formononetin and biochanin A, phytoestrogens studied in clinical trials for menopausal symptom outcomes"), forager-cohort crossover (edible flowers and young leaves — bridge to Phase 2 forager identity), contraindications (anticoagulant interaction — "may interact with blood-thinning medications; consult provider").
+
+**13:00–13:30 — Cover Design: Women's Health (opens in parallel)**
+
+Day 2 is the scheduled Women's Health cover design day. This is a parallel task — 1.2 hours total, not sequential with writing. Design window: 13:00–14:15.
+
+Open Canva. Create new document from the Phase 2 zone card template (duplicate and adapt). Set Brand Kit: Deep Burgundy #8B3E3E header background. Import Black Cohosh Wikimedia botanical illustration (pre-downloaded to `assets/botanical-photos/phase-3/womens-health/covers/`). Playfair Display Bold: "Medicinal Herb Guide" main header. Lato Regular: "Women's Health Bundle". Latin binomials in Lato Italic. Export test at 2400×2400px. Verify thumbnail crop at 170×135px — the flower spike must be visible in the crop.
+
+**14:15–16:00 — Write: Calendula intro (Women's Health continued)**
+
+Target: *Calendula officinalis* identification (annual, 1–2 ft, bright orange/yellow ray flowers, resinous leaves), cultivation (direct seed after last frost, full sun, deadhead for continuous bloom, hardy to light frost), traditional use (topical anti-inflammatory framing — write "studied for wound-healing properties in topical preparations" not "heals skin"), key preparation for Women's Health angle (infused oil for topical use, pelvic steam preparation for traditional use framing), contraindications (avoid in pregnancy at medicinal doses).
+
+**EOD June 23 — WORKLOG.md Entry:**
+
+```
+## Sprint Day 2 Complete — June 23
+
+Women's Health word count total: [COUNT] / 3,800 target
+Sections complete: Black Cohosh [ ] Vitex [ ] Red Clover [ ] Calendula [ ] Lavender [ ]
+Women's Health cover design: [ ] Complete / [ ] In progress — status: [note]
+Tomorrow's first task: [specific section]
+Pace assessment: [ ] On track (2,000+ words total) / [ ] Behind — note contingency:
+  If below 1,500 words EOD Day 2: activate Option C scope now, log in WORKLOG.md
+  If below 2,000 words EOD Day 3 (June 24): Option C mandatory
+```
+
+---
+
+*Prepared May 21, 2026. Version 6.0 supersedes v5.0 (May 20, 2026). Added: Section 7 (June 22 Start Checklist), writing template word count specifications, stock image requirements by bundle, Etsy upload readiness pre-check, FTC pre-compliance checklist, Phase 2 gate monitoring table. Update WORKLOG.md when each milestone completes. Next scheduled document review: June 20 (pre-sprint gate check), June 22 (sprint Day 1 confirmation).*

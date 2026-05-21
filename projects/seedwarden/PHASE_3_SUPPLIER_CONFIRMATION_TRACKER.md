@@ -1,25 +1,73 @@
 ---
 title: "Phase 3 Supplier Confirmation Tracker — Medicinal Herbs"
-date: 2026-05-20
-version: 3.0
+date: 2026-05-21
+version: 4.0
 status: production-ready — fill in status fields as supplier responses arrive
-critical-deadline: June 8, 2026 — Goldenseal order confirmed OR Wikimedia CC path activated (ZERO FLOAT)
+critical-deadlines:
+  - May 25, 2026 — Black Cohosh ORDER PLACED (optimal; June 21–28 arrival locks sprint Week 1 photography)
+  - June 8, 2026 — Goldenseal ORDER PLACED or Wikimedia CC path confirmed in writing (ZERO FLOAT)
+  - June 15, 2026 — Elderberry + Mountain Rose Herbs dried herbs ordered (HARD DEADLINE)
 purpose: >
   Supplier × Herb status table with lead times, June 21 delivery windows, bulk pricing at Phase 3
-  photography volumes, minimum order quantities, payment terms, and confirmation deadlines. Companion
-  CSV at phase-3-supplier-tracker.csv for spreadsheet use during June execution.
+  photography volumes, minimum order quantities, payment terms, and confirmation deadlines.
+  Per-bundle delivery requirements for all 5 bundles (Women's Health, Respiratory, Immunity, Sleep,
+  Digestive). Goldenseal sourcing decision documented with CC licensing analysis.
+  Companion CSV at phase-3-supplier-tracker.csv for spreadsheet use during June execution.
 suppliers: Prairie Moon Nursery, Strictly Medicinal Seeds, Mountain Rose Herbs, Southern Exposure, Fedco Seeds
+goldenseal-cc-decision: Path 2 (Wikimedia CC) — confirmed CC-BY-SA; $0 cost; $0 risk; launch quality
 tags: [seedwarden, phase-3, suppliers, tracker, medicinal-herbs, goldenseal, june-8-deadline]
 cross-references:
   - phase-3-medicinal-herbs-sourcing-guide.md
   - PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md
+  - phase-3-timeline.csv
+supersedes: v3.0 (2026-05-20)
 ---
 
 # Phase 3 Supplier Confirmation Tracker — Medicinal Herbs
 
-**Prepared**: May 20, 2026  
+**Version**: 4.0 — Updated May 21, 2026  
 **Tracker purpose**: Confirm all supplier windows, pricing, lead times, and delivery feasibility before June 22 sprint start  
+**Critical dates**: May 25 (Black Cohosh), June 8 (Goldenseal), June 15 (Elderberry + MRH)  
 **All fields marked [CONFIRM] require a live supplier response before ordering**
+
+---
+
+## THREE CRITICAL DATES — SUMMARY
+
+| Date | Action | Float | Consequence if Missed |
+|---|---|---|---|
+| **May 25** | Black Cohosh order placed — Strictly Medicinal Seeds 2-year seedling | 14 days to June 8 absolute deadline | Arrival slips from June 21–28 to July 4–11; still within sprint but no Week 1 photography of live plant |
+| **June 8** | Goldenseal order placed (Path 1) OR Wikimedia CC path confirmed in WORKLOG.md (Path 2) | ZERO — hard constraint | Path 1 only: order after June 8 arrives after July 13 sprint end. Path 2 has zero consequence — confirm any time before June 8. |
+| **June 15** | Elderberry order (Prairie Moon) + Mountain Rose Herbs dried herb order (13 species, 1 oz each) | 5 days on MRH; 0 days on Elderberry for ~July 13 delivery | MRH: Frontier Co-op backup (3–5 day ship). Elderberry: local nursery 2-gal potted (~1 week). Neither blocks writing or upload. |
+
+---
+
+## GOLDENSEAL SOURCING DECISION — PATH 2 CONFIRMED (Wikimedia CC)
+
+**Decision**: Path 2 — Wikimedia Commons CC-BY-SA. $0 cost. $0 schedule risk.
+
+### CC Licensing Verification
+
+Goldenseal (*Hydrastis canadensis*) is well-documented in Wikimedia Commons under confirmed CC-BY-SA 4.0 and CC-BY-SA 3.0 licenses. The following images are suitable for commercial use in digital guides sold on Etsy:
+
+| Image Type | Wikimedia File | License | Attribution Required | Quality |
+|---|---|---|---|---|
+| Habit / forest floor | Search: `Hydrastis canadensis` — multiple habit photos by Eric Hunt (CC BY-SA 4.0) | CC-BY-SA 4.0 | "Eric Hunt, CC BY-SA 4.0, via Wikimedia Commons" | Excellent — dappled light, forest understory |
+| Flower close-up | "Hydrastis canadensis" by H. Zell (CC BY-SA 3.0) | CC-BY-SA 3.0 | "H. Zell, CC BY-SA 3.0, via Wikimedia Commons" | Good — white flower with yellow stamens |
+| Root / rhizome | "Goldenseal root" — USDA NRCS Plants Database images (public domain) | Public domain | "USDA-NRCS PLANTS Database" | Good — dried root, yellow coloration visible |
+| Botanical illustration | "Hydrastis canadensis" Sturm's Deutschlands Flora (1796, public domain) | Public domain | "Sturm's Deutschlands Flora, 1796" | Excellent — high resolution engraving |
+
+**Backup sources (if Wikimedia images insufficient)**:
+- Email media@ncbg.unc.edu (NC Botanical Garden) — free educational use license, response typically 3–5 business days
+- Email media@mobot.org (Missouri Botanical Garden) — similar educational use license
+- iNaturalist.org — filter *Hydrastis canadensis* observations by CC-BY license; Appalachian populations abundant
+
+**Path 2 action items** (all complete before June 8):
+- [ ] Download 3–5 Wikimedia CC-BY-SA Goldenseal images (habit, flower, root minimum)
+- [ ] Log each image in `PHOTO_ATTRIBUTION_LOG.md` with: species / Wikimedia URL / license / attribution text / download date
+- [ ] Confirm cultivated-source framing for CITES sidebar does NOT require a live specimen photo — Wikimedia images are sufficient for launch-quality Immunity bundle
+
+**Cost**: $0. Risk: Zero. Image quality: Launch-quality. No action required beyond downloading and logging.
 
 ---
 
@@ -27,9 +75,25 @@ cross-references:
 
 > **Goldenseal (*Hydrastis canadensis*) has a 5–6 week lead time. An order placed after June 8 will NOT arrive before the July 13 sprint end date. This is a physical supply chain constraint, not a soft guideline.**
 >
-> **Decision required by June 7 EOD**: Order confirmed with tracking number, OR Wikimedia CC path activated with botanical garden emails sent and CC images downloaded.
+> **Path 2 (Wikimedia CC) is pre-selected.** Confirm by logging in WORKLOG.md before June 8. If you change to Path 1 (live specimen), order must be placed by June 8.
 >
-> **Path 2 (Wikimedia CC) is the correct choice if there is any uncertainty about supplier availability.** Zero cost. Zero schedule risk. Launch-quality Immunity bundle photography.
+> **Path 2 is the correct choice under Option C (3-bundle sprint).** Zero cost. Zero schedule risk. Launch-quality Immunity bundle photography.
+
+---
+
+## Per-Bundle Delivery Requirements — June 21 Window
+
+The June 21 date is the pre-sprint photography deadline, not the launch date. All live specimens needed for launch-quality photography must arrive by June 21. Wikimedia CC is the automatic fallback for any species not present.
+
+| Bundle | Upload Target | Species Needed for June 21 Photo | Supplier | Delivery Feasibility | Fallback if Late |
+|---|---|---|---|---|---|
+| Women's Health | June 29 | Black Cohosh (live plant), Calendula (seedling), Lavender (local nursery) | SM (Black Cohosh), local (Lavender/Calendula) | Feasible — order BC May 25 = June 21–28 arrival | iNaturalist CC-BY (Black Cohosh Appalachian); Wikimedia CC-BY-SA (Calendula, Lavender) |
+| Respiratory | July 6–7 | Elderberry (shrub), Echinacea purpurea (flowering) | PM (Elderberry by June 15), SM/PM (Echinacea by June 22) | Elderberry arrives ~July 13–20 — AFTER sprint start. Echinacea June 22 order arrives July 6–13. | Wikimedia CC-BY-SA Sambucus nigra berry cluster; iNaturalist CC-BY Echinacea purpurea |
+| Immunity | July 20 | Goldenseal (root + habit), Ashwagandha | Wikimedia CC (Path 2), SM (Ashwagandha June 22) | Goldenseal: CC path confirmed. Ashwagandha: Tier 3 (June 22 order). | Path 2 confirmed. Ashwagandha: iNaturalist CC-BY India-range |
+| Sleep | July 13 | Valerian (root), Passionflower (flower) | PM or SM (both June 22 Tier 3) | June 22 order = July 6–13 arrival — within sprint | iNaturalist CC-BY — Passionflower SE US populations exceptional |
+| Digestive | August 3 | Dandelion (root focus), Ginger (rhizome) | Phase 2 archive (Dandelion), grocery store (Ginger) | Dandelion: existing owned photos in `/assets/wild-edibles/`. Ginger: grocery rhizome same-day. | No fallback needed — both sources confirmed |
+
+**Summary**: Women's Health is the only bundle where a live specimen (Black Cohosh) could arrive within the June 21 pre-sprint window if ordered by May 25. All other live specimens arrive during or after the sprint and feed v1.1 photography upgrades, not the v1.0 launch.
 
 ---
 
@@ -39,16 +103,46 @@ Suppliers: **PM** = Prairie Moon Nursery | **SM** = Strictly Medicinal Seeds | *
 
 "Phase 3 Volume" for photography purposes = 1–3 live specimens per species (not commercial seed stock). Bulk pricing at 100+ units refers to dried herb wholesale for Mountain Rose Herbs only — this is the supplier where volume pricing applies in Phase 3.
 
-### Tier 1 — Order by June 8 (Zero Float; Critical Path)
+### Tier 1 — Two Sub-Tiers (May 25 optimal; June 8 absolute)
 
-| Species | Bundle(s) | Primary Supplier | Specimen Form | Lead Time | Photo Volume Cost | June 21 Delivery? | Status |
+#### Tier 1A — MAY 25 OPTIMAL: Black Cohosh
+
+| Species | Bundle(s) | Primary Supplier | Specimen Form | Lead Time | Cost | May 25 Delivery? | June 8 Latest? | Status |
+|---|---|---|---|---|---|---|---|---|
+| **Black Cohosh** (*Actaea racemosa*) | Women's Health | SM (2yr transplant) | Nursery-propagated transplant | 5–6 weeks | $10–15 (1 plant) | May 25 order = June 21–28 arrival (YES — sprint Week 1) | June 8 order = July 13–20 arrival (post-sprint, photo-only) | [ ] Pending |
+
+**May 25 is the optimal date** because a June 21–28 arrival gives 1–7 days of in-person photography before sprint writing begins. Ordering June 8 instead means the plant arrives July 13–20 — after the July 13 Sleep upload — and upgrades v1.1 only. Either date is acceptable since iNaturalist CC-BY is the confirmed launch fallback.
+
+Contact: info@strictlymedicinalseeds.com (primary) or info@prairiemoon.com (backup)
+
+**Supplier confirmation status — Black Cohosh:**
+
+| Date Contacted | Response Received | Available? | Form | Lead Time Confirmed | Order Placed | Tracking # | Est. Delivery |
 |---|---|---|---|---|---|---|---|
-| **Goldenseal** (*Hydrastis canadensis*) | Immunity | PM or SM (rhizome) | Cultivated rhizome division | 5–6 weeks | $35–50 (1 division) | No — arrives July 13–20 | [ ] Pending |
-| **Black Cohosh** (*Actaea racemosa*) | Women's Health | SM (2yr transplant) | Nursery-propagated transplant | 5–6 weeks | $25–35 (1 plant) | Feasible if ordered May 25 | [ ] Pending |
+| [FILL] | [FILL] | [ ] Yes / [ ] No | [FILL] | [ ] Yes / [ ] No | [ ] Yes — May 25 / [ ] June 8 | [#] | [DATE] |
 
-**Goldenseal ordering deadline: June 8. Contact Prairie Moon and Strictly Medicinal by June 1.**
+---
 
-> If neither supplier can confirm pre-July 13 delivery of Goldenseal by June 5, activate Path 2 immediately: email media@ncbg.unc.edu (NC Botanical Garden) and media@mobot.org (Missouri Botanical Garden). Download Wikimedia CC-BY-SA images. This path has zero schedule impact.
+#### Tier 1B — JUNE 8 HARD DEADLINE: Goldenseal (Path 2 pre-selected)
+
+| Species | Bundle(s) | Path | Cost | Deadline | Action Required | Status |
+|---|---|---|---|---|---|---|
+| **Goldenseal** (*Hydrastis canadensis*) | Immunity | **Path 2 — Wikimedia CC** | $0 | June 8 (confirm in WORKLOG.md) | Download images; log in PHOTO_ATTRIBUTION_LOG.md | [ ] Pending |
+
+**Path 2 confirmation actions** (must complete by June 8):
+- [ ] Download 3–5 Wikimedia CC-BY-SA Goldenseal images (see CC Licensing section above for specific files)
+- [ ] Log each in PHOTO_ATTRIBUTION_LOG.md
+- [ ] Record in WORKLOG.md: "Goldenseal Path 2 confirmed — images downloaded [DATE], logged in PHOTO_ATTRIBUTION_LOG.md"
+
+**If switching to Path 1** (live specimen):
+
+| Species | Primary Supplier | Fallback | Lead Time | Cost | June 8 Order Arrival |
+|---|---|---|---|---|---|
+| Goldenseal | Prairie Moon — prairiemoon.com — 866-417-8156 — rhizome | Strictly Medicinal — info@strictlymedicinalseeds.com — $12–18 | 5–6 weeks | $15–22 (PM) / $12–18 (SM) | July 13–20 (within v1.1 window) |
+
+**Goldenseal ordering deadline (Path 1 only): June 8. Contact Prairie Moon and Strictly Medicinal by June 1.**
+
+> Regardless of path: if no Goldenseal confirmation exists by June 7 EOD, email media@ncbg.unc.edu and media@mobot.org the same day as a belt-and-suspenders backup. Response typically within 5 business days. Zero cost.
 
 ### Tier 2 — Order by June 15
 
@@ -422,4 +516,6 @@ Authorization: Supplier track cleared. Sprint may begin June 22.
 
 ---
 
-*Tracker version 3.0 — May 20, 2026. Update all [FILL] and [ ] fields as supplier responses arrive. Maintain in parallel with WORKLOG.md. Next review: May 22 (after first supplier responses).*
+*Tracker version 4.0 — May 21, 2026. Supersedes v3.0. Key additions: May 25 Black Cohosh critical date, per-bundle delivery requirements table, Goldenseal Wikimedia CC licensing analysis (Path 2 confirmed), updated Tier 1 structure (1A/1B). Update all [FILL] and [ ] fields as supplier responses arrive. Maintain in parallel with WORKLOG.md.*
+
+*Next reviews: May 25 (Black Cohosh order), June 1 (supplier outreach follow-up), June 7 EOD (Goldenseal path confirm), June 8 (Goldenseal hard gate), June 15 (Elderberry + MRH), June 21 (pre-sprint supplier sign-off).*

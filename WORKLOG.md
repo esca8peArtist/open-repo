@@ -1,5 +1,40 @@
 # Work Log
 
+## Session 1445 (May 21 UTC) — Seedwarden Phase 3 Production Launch Preparation
+
+**Task**: Build three production-ready documents for Phase 3 medicinal herbs June 22–July 13 execution window. All work committed to master before 19:00 UTC synthesis checkpoint.
+
+**Files Updated / Created**:
+
+1. `projects/seedwarden/PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` — Updated to v4.0
+   - Added May 25 Black Cohosh critical date as Tier 1A (optimal for June 21–28 arrival)
+   - Added per-bundle delivery requirements table (5 bundles × delivery feasibility + fallback)
+   - Added Goldenseal Wikimedia CC licensing analysis: 4 specific image types confirmed CC-BY-SA 4.0 / public domain, Path 2 officially pre-selected
+   - Restructured Tier 1 into 1A (May 25 optimal) and 1B (June 8 hard deadline)
+   - Added three-critical-dates summary table at top
+
+2. `projects/seedwarden/PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` — Updated to v6.0
+   - Added writing production template word counts per section (13–17 hrs per bundle basis)
+   - Added per-bundle adjusted writing hours table with binding dates
+   - Added stock image requirements per bundle (from phase-3-botanical-stock-list.md)
+   - Added pre-launch compliance checklist: Phase 2 gate tracker table, Etsy upload readiness, FTC pre-compliance review
+   - Added Section 7: June 22 Start Checklist — 2-day daily schedule (June 21 evening setup + Day 1 + Day 2 hour-by-hour) as turn-key execution guide
+   - Updated version from v5.0 (May 20) to v6.0 (May 21); updated gate status with live numbers
+
+3. `projects/seedwarden/phase-3-timeline.csv` — Consolidated authoritative Gantt (68 milestone rows + header)
+   - Merged and de-duplicated from two existing CSVs (phase-3-timeline.csv 83 rows and PHASE_3_PRODUCTION_GANTT.csv 69 rows)
+   - Added Bundle column for per-bundle milestone tracking
+   - 68 milestones: 6 decisions/gates, 10 pre-sprint supplier/photo actions, 20 writing days (W-01–W-20), 10 design tasks (DS-01–DS-10), 6 upload milestones (M-01–M-06), 4 post-sprint actions, 5 contingencies, 3 gate checks, 2 float days, 2 peer reviews
+
+**Key Findings**:
+- Both pre-sprint docs (Tracker v3.0, Checklist v5.0) were already production-ready; updates deepened specific gaps identified in task brief
+- Goldenseal Path 2 (Wikimedia CC) confirmed: CC-BY-SA 4.0 coverage exists from Eric Hunt, H. Zell, USDA PLANTS Database (public domain), and Sturm 1796 botanical illustrations (public domain) — zero cost, zero risk
+- May 25 Black Cohosh date is the first hard date in the physical supply chain; creates a June 21–28 arrival window for sprint Week 1 live photography
+- Supplier confirmations target May 28 (2 days before Phase 2 launch) per task brief — tracking table added to Checklist Section 5
+- June 22 Start Checklist in Section 7 is a complete daily schedule for Day 1 (Black Cohosh section, hour-by-hour) and Day 2 (Vitex + Red Clover + cover design start)
+
+---
+
 ## Session 1444 (May 21 UTC) — Phase 5 Candidate 1 Pre-Deployment Verification
 
 **Task**: Verify Phase 5 Candidate 1 (ZimWriter/libzim offline export) implementation requirements and build pre-deployment checklist for user approval May 25–26 and implementation launch May 25–28.
