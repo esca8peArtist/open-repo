@@ -1,3 +1,45 @@
+## Session 1471 — OPEN-REPO LIBZIM BUG FIX + BLOCK RESOLUTION (May 21, 19:00–19:20 UTC)
+
+**Status**: ✅ **OPEN-REPO LIBZIM BUG FIXED + TESTS PASSING** | ✅ **PHASE 5.1 MVP READY FOR MERGE** | 🔴 **SYNTHESIS BLOCKED ON SIGNAL LOG** (May 21 19:00 UTC window closed) | 🔴 **SSH AUTH DEADLINE: 19h 10m remaining** (May 22 13:30 UTC) | ⏰ **CHECKPOINT EXECUTION: 25h 40m** (May 22 20:00 UTC)
+
+**Work accomplished**:
+
+1. ✅ **OPEN-REPO LIBZIM INTEGRATION BUG FIXED** — Identified and resolved critical bug that was blocking Phase 5.1 MVP merge:
+   - **Root cause**: Session 1462 moved `config_indexing()` to before `set_mainpath()`, but still inside context manager. Libzim Creator object initializes when `__enter__()` is called; `config_indexing()` MUST be called BEFORE context manager entry.
+   - **Solution**: Create Creator object → Call `config_indexing()` → Then enter `with creator:` block
+   - **Implementation**: Modified `zim_writer.py` (7-line change: lines 835-845)
+   - **Verification**: ALL 51 ZIM integration tests now PASS (was 38 failed + 65 errors in Session 1470)
+   - **Commit**: `be29394b` on feature/zimwriter-libzim-activation
+   - **Status**: Phase 5.1 MVP technically ready for merge; no further code changes needed
+
+2. ✅ **BLOCKED.md UPDATED** — Moved open-repo libzim block from "Active Blocks" to "Resolved Archive"; documented root cause and Session 1471 fix
+
+3. ✅ **PROJECTS.md UPDATED** — Corrected open-repo Current focus; replaced inaccurate Session 1462 claim ("240/240 tests pass") with actual root cause and Session 1471 verification
+
+**Critical Path Update**:
+- 🔴 **May 21 19:00 UTC**: Synthesis window **CLOSED** — signal log was not filled by user; synthesis will not execute May 21. Fallback: TOO_EARLY protocol activates; re-synthesis scheduled for May 28.
+- ✅ **May 25-26**: open-repo Phase 5.1 MVP merge window **UNBLOCKED** — Phase 5.1 MVP now ready for user merge approval (no code blockers remain)
+- 🔴 **May 22 13:30 UTC (19h 10m)**: SSH auth deadline — requires user SSH key authorization or manual Jetson fix
+- ⏰ **May 22 20:00 UTC (25h 40m)**: Checkpoint execution — will proceed; Lever B config incomplete without SSH fix
+
+**Needs Your Input**:
+1. ⏳ **May 21 synthesis outcome**: Synthesis did NOT execute (signal log unfilled at 19:00 UTC deadline). TOO_EARLY protocol: re-synthesis scheduled for May 28 per contingency routing. Phase 2 same-day activation deferred.
+2. 🔴 **May 22 13:30 UTC (19h 10m)**: SSH key authorization critical. Add orchestrator ED25519 public key to Jetson authorized_keys, OR SSH manually to apply Lever B config fix (see BLOCKED.md for commands).
+3. ✅ **May 25-26**: open-repo Phase 5.1 MVP merge window is now UNBLOCKED. Feature branch ready for your review/merge approval.
+
+**Deliverables Status**:
+- ✅ open-repo libzim integration: FIXED, tests verified (51/51 pass)
+- ✅ Phase 5.1 MVP: Technically ready for merge (awaiting user approval)
+- ✅ BLOCKED.md: open-repo libzim resolved, 4 active blocks remain (all user-action blockers)
+- ✅ PROJECTS.md: Current focus updated for all affected projects
+
+**Session Efficiency**:
+- Duration: 20 min
+- Autonomy: 100% (no user action required for this fix)
+- Impact: Unblocked critical merge deliverable
+
+---
+
 ## Session 1470 — SYNTHESIS WINDOW MONITORING + OPEN-REPO CRITICAL DISCOVERY (May 21, 17:03–17:35 UTC)
 
 **Status**: ✅ **ALL AUTONOMOUS WORK EXHAUSTED** | 🔴 **SYNTHESIS BLOCKED ON SIGNAL LOG** (May 21 19:00 UTC, user action required — 1h 25m remaining) | ⚠️ **OPEN-REPO LIBZIM TESTS FAILING** (Phase 5.1 MVP not merge-ready) | 🔴 **SSH AUTH DEADLINE: 20h 5m** (May 22 13:30 UTC) | ⏰ **CHECKPOINT EXECUTION: 26h 35m** (May 22 20:00 UTC)
