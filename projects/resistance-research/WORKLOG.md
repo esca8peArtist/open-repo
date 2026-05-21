@@ -2,6 +2,23 @@
 
 ---
 
+## May 21, 2026 — General Research Agent — Trump v. Barbara Rapid-Response Infrastructure (Domain 58)
+
+**Task**: Research and produce consolidated rapid-response infrastructure document for Trump v. Barbara (No. 25-365) and Domain 58 (Tribal Sovereignty). May 21 synthesis checkpoint.
+
+**File created**:
+- `projects/resistance-research/TRUMP_V_BARBARA_RAPID_RESPONSE_INFRASTRUCTURE.md` — 2,500-word consolidated rapid-response infrastructure document covering: (1) current case status (ruling pending, expected late June/early July — confirmed May 21 via SCOTUSblog), (2) tribal coalition landscape with 6 primary organizations and 14-senator Senate minority coalition, (3) legal analysis with government vs. respondent arguments and narrowest/broadest ruling scenarios, (4) Callais cascade precision correction and prior case comparison, (5) post-ruling advocacy window with three scenario hooks, (6) Domain 58 distribution trigger conditions with specific hourly protocol, (7) complete contact list (NARF, NCAI, Senate Indian Affairs Committee, indigenous media, voting rights organizations, academic experts). 56 sources cited.
+
+**Key new findings (not in prior May 20 memos)**:
+1. **Republican Senate amicus brief**: 29 Republican senators (Schmitt, Cruz, and 27 others) filed an amicus brief explicitly arguing that tribal members "who maintain their tribal relations are not, in the sense of the Fourteenth Amendment, born subject to the jurisdiction of the United States." This is the legislative-branch endorsement of the Elk-revival theory — creating a statutory threat vector even if the Court rules narrowly.
+2. **Schatz/Padilla 14-senator letter**: 14 Democratic senators formally warned Secretary Burgum of harmful impacts of the SAVE Act and anti-voter executive orders on Native communities, citing three specific mechanisms: Tribal ID documentation failures, geographic travel burdens, and mail voting restrictions in Alaska. These senators are the primary legislative contact targets for any post-ruling Indian Citizenship Act reaffirmation effort.
+3. **Callais precision correction**: The Callais holding does not eliminate the discriminatory-effects standard — it imposes an intent-inference requirement on top of existing effects analysis. Domain 58 distribution materials should say "substantially weakened" rather than "eliminated." The distinction matters for credibility with legal audiences.
+4. **Sauer "I'm not sure" documented**: Indianz.com confirmed Sauer said "I'm not sure" before arriving at his "not birthright citizens" answer — the inconsistency is itself legally significant and should be included in distribution materials.
+
+**Confidence**: High. All key findings confirmed across multiple independent primary sources. Ruling timing projection (late June) based on term schedule patterns — inherently probabilistic but well-founded.
+
+---
+
 ## May 21, 2026 — General Research Agent — Phase 2 Activation Checklist + Timeline Template (Session 1443)
 
 **Task**: Build Phase 2 research activation checklist and timeline template to enable zero-lag Phase 2 launch post-synthesis. Audit Domains 56–60 for production readiness; pre-stage research infrastructure; build per-domain execution timeline; identify blocking assumptions; draft Phase 2 kick-off summary with synthesis outcome decision framework.
