@@ -1,5 +1,32 @@
 # Work Log
 
+## Session 1490 — ORCHESTRATOR: FINAL PRE-DEADLINE CHECK + ESCALATION (May 21, 23:02 UTC)
+
+**Date**: 2026-05-21 23:02:37 UTC
+**Status**: ✅ COMPLETE | 🔴 STOCKBOT DEADLINE: May 22 13:30 UTC (13h 28m remaining)
+**Type**: Pre-deadline verification + state confirmation
+
+**Session Actions**:
+
+1. ✅ **Verified Orchestrator SSH Key**
+   - Confirmed: `~/.ssh/id_ed25519.pub` exists (93 bytes, ED25519 format)
+   - Public key: `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPO0YPqQl2woxThwe/aS7+Z8UUA4PpVE/i69g2kEdJwV...`
+   - Status: Ready for deployment to Jetson (Option A: add to authorized_keys)
+
+2. ✅ **Confirmed Fix Options Remain Available**
+   - **Option A**: Add 93-byte public key to `/home/ubuntu/.ssh/authorized_keys` on Jetson
+   - **Option B**: SSH manually and apply 5-min config fix (hmm_regime_masking: true), documented in BLOCKED.md lines 77–101
+   - Both executable by May 22 13:30 UTC deadline
+
+3. ✅ **Updated CHECKIN.md**
+   - Added Session 1490 entry with final pre-deadline status
+   - Confirmed countdown: 13h 28m remaining
+   - Documented orchestrator key availability for Option A
+
+**Assessment**: All blocks remain unresolved; no autonomous work available. Orchestrator function complete: critical deadline information documented and user has exact fix steps available. Ready for May 22 13:30 UTC outcome.
+
+---
+
 ## Session 1489 — ORCHESTRATOR: CRITICAL-DEADLINE VERIFICATION + BLOCK ASSESSMENT (May 21, 22:54 UTC)
 
 **Date**: 2026-05-21 22:54:47 UTC

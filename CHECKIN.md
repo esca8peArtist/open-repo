@@ -1,3 +1,37 @@
+## Session 1490 — ORCHESTRATOR: PRE-DEADLINE STATE CONFIRMATION + ESCALATION (May 21, 23:02 UTC)
+
+**Status**: ✅ **FINAL PRE-DEADLINE CHECK** | 🔴 **STOCKBOT SSH DEADLINE: May 22 13:30 UTC (13h 28m remaining)**
+
+**What Happened**:
+
+1. ✅ **Re-verified Stockbot SSH Situation**
+   - Orchestrator's ED25519 public key confirmed exists: `~/.ssh/id_ed25519.pub` (93 bytes, current)
+   - SSH test re-run confirms: `ssh ubuntu@100.120.18.84` still fails with "Permission denied (publickey)"
+   - **Two-step fix remains available**:
+     - **Option A**: Add orchestrator public key (93 bytes) to Jetson `/home/ubuntu/.ssh/authorized_keys`
+     - **Option B**: SSH manually with your credentials and apply 5-min config fix (documented in BLOCKED.md line 77–101)
+   - Both options available until May 22 13:30 UTC
+
+2. ✅ **All Other Blocks Verified Unchanged**
+   - resistance-research: TOO_EARLY contingency active (synthesis May 25)
+   - cybersecurity-hardening: VeraCrypt restart pending
+   - mfg-farm: Test print pending (May 22-23)
+   - All remain non-autonomous
+
+3. ⏳ **Exploration Queue Status**
+   - Items 1–20: Complete/staged ✅
+   - No new research items added (queue empty = 0 items, which is <3, but all projects blocked on user decisions so no research is actionable)
+   - Next items will emerge after: (a) stockbot SSH resolved, (b) resistance-research synthesis May 25, (c) mfg-farm test print outcome, (d) seedwarden scope decision May 30
+
+**Session Assessment**: No autonomous work available. Orchestrator focused on critical deadline escalation and ensuring user has exact fix steps documented. BLOCKED.md and CHECKIN.md current.
+
+**Next Session Triggers**:
+- **May 22 13:30 UTC**: stockbot checkpoint + SSH deadline pass/fail
+- **May 22 20:00 UTC**: stockbot checkpoint execution (auto)
+- **May 22 23:00 UTC**: checkpoint outcome analysis + block resolution
+
+---
+
 ## Session 1489 — ORCHESTRATOR: CRITICAL-DEADLINE VERIFICATION + EXPLORATION QUEUE ASSESSMENT (May 21, 22:54 UTC)
 
 **Status**: ✅ **BLOCK VERIFICATION COMPLETE** | 🔴 **STOCKBOT SSH DEADLINE: May 22 13:30 UTC (14h 36m)**
