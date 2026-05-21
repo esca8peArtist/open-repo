@@ -30,6 +30,16 @@ When the block is resolved (Resolution written OR Verify command passes):
 <!-- AUTO:CALIBRATION:START -->
 <!-- AUTO:CALIBRATION:END -->
 
+---
+
+### resistance-research — Signal log not filled; May 21 19:00 UTC synthesis blocked
+
+**Date blocked**: 2026-05-21 07:58 UTC (Session 1453 — orchestrator discovery)
+**Context**: Resistance-research Phase 2 synthesis execution scheduled for May 21 19:00 UTC. Pre-synthesis checklist (may21-synthesis-execution-checklist.md) requires user to fill the signal log (`post-wave-1-monitoring/wave-1-signal-log-may18-21.md`) with response data before synthesis can execute. User action item (May 20 ~22:00 UTC — signal log fill) was due yesterday evening and has not been completed. Current time: May 21 07:58 UTC; synthesis execution: May 21 19:00 UTC (11 hours remaining). Signal log has template [fill] placeholders for May 20 and May 21 daily snapshots and synthesis snapshot, but no data has been populated. Without filled signal log, the synthesis cannot execute (it needs actual response counts, scores, Gist delta figures, and per-contact engagement data to classify as STRONG/MODERATE/WEAK/TOO_EARLY).
+**What I need**: Fill `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` with all response data from May 18-21 monitoring window (responses from Batch 1 contacts: Goodman, Weiser, Chenoweth, Bassin, Elias). Required fields: (1) May 20 ~22:00 UTC snapshot (total replies, substantive replies, Gist delta, OOO/bounces), (2) May 21 72-hour synthesis snapshot (total responses, Quality Reply Points, per-constituency status), (3) SIGNAL LOG TABLE entries for any new email responses received May 18-21. Also required (secondary): Trump v. Barbara ruling check (due May 21 before 19:00 UTC) — check whether ruling has been issued; if yes, log it for Domain 58 rapid-response activation post-synthesis.
+**Verify with**: `grep -c '\[fill\]' /home/awank/dev/SuperClaude_Framework/projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` — should return 0 (all templates filled); then `head -30 CHECKIN.md | grep -A 3 'Wave 1 Synthesis' | wc -l` should show synthesis entry exists (4+ lines).
+**Resolution**: [leave blank]
+
 ---MOVED TO RESOLVED ARCHIVE---
 
 ---
