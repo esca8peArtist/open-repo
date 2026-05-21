@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-20T17:11:38Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-21T00:41:59Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 3.3% | Reset in 127h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 3.6% | Reset in 119h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PHASE 2 RESEARCH ACTIVATION PACKAGE COMPLETE + DOMAIN G INTEGRATION VERIFIED (Session 1422)] ✅ MAY 21 SYNTHESIS READY (19:00 UTC AUTONOMOUS, ZERO SETUP LAG).** All Phase 2 domains fully written (44,001 words, 285 citations, 5 domains: 56, 57, 58, 59, G). Phase 2 research activation checklist COMPLETE: `phase-2-research-activation-checklist.md` + `phase-2-research-timeline-template.md` + `PHASE_2_RESEARCH_KICKOFF_EMAIL_TEMPLATE.md` (Session 1422 extended with Domain G congressional outreach, … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 2 RESEARCH ACTIVATION COMPLETE] ✅ MAY 21 19:00 UTC SYNTHESIS READY (autonomous execution).** Phase 2 domains complete (56, 58 production-ready; 57, 59 staged; Domain G integrated). May 21 synthesis determines Phase 2 launch path (STRONG/MODERATE proceeds same-day, WEAK/TOO_EARLY activates contingency protocols). **User action items**: (1) May 20 ~22:00 UTC — signal log fill, (2) May 21 before 19:00 UTC — Trump v. Barbara ruling check. Phase 1 Batch 2 architecture (post-synthesis)  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,16 +36,16 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[PHASE 3 PRODUCTION TIMELINE + LAUNCH CHECKLIST + DEEPENING COMPLETE (Session 1426)] TRACK B — JUNE 22 LAUNCH READY — COMPREHENSIVE PRE-SPRINT STAGING COMPLETE.** ✅ **Session 1426 Deliverables**: `PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md` (3,400 words, per-bundle mandatory content checklists, FTC compliance blocks, cross-reference savings 4-5 hours) + `PHASE_3_PHOTO_SOURCING_AND_BRIEF_REFINED.md` (2,200 words, 30-shot studio shot list for Mountain Rose dried herb session, Wikimedia cov … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 3 CRITICAL PATH v3.0 + MEDICINAL HERBS PRODUCTION TIMELINE COMPLETE (Session 1438)] TRACK B — JUNE 22 LAUNCH READY.** ✅ **Session 1438 Deliverables**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` v3.0 (4,200 words, production-ready timeline with mandatory contraindication register, peer review windows, practitioner bundle cover scope, fresh/dried decision matrix, risk activation dates). Key finding: **Writing is the only binding constraint; design (14h) + photography (10h) both fully  … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5.1 MVP — READY FOR USER MERGE REVIEW (Session 1412) + PRE-DEPLOYMENT VERIFICATION COMPLETE (Session 1419)] ✅ READY FOR USER APPROVAL & IMPLEMENTATION** Code audit identified three critical production-risk defects; all resolved on master (Session 1404 commit 198a146d). Feature branch `feature/zimwriter-libzim-activation` rebased successfully (Session 1412). All three merge conflicts resolved. **Pre-deployment verification (Session 1419)**: `phase-5-candidate-1-implementation-verific … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5.1 MVP — CRITICAL BUG FIXED, READY FOR USER MERGE REVIEW (Session 1438)] ✅ ALL BLOCKERS RESOLVED & IMPLEMENTATION CHECKLIST v2 PRODUCTION-READY** Code audit identified three critical production-risk defects; all resolved on master (Session 1404 commit 198a146d). Feature branch `feature/zimwriter-libzim-activation` rebased successfully (Session 1412). All three merge conflicts resolved. **Session 1438 Verification Update**: ✅ libzim 3.9.0 installed (aarch64 wheel), Python 3.11.2 c … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **[PHASE 5 WAVE 1 COMPLETE + WAVE 2 PRELIMINARY DRAFTS READY (Session 1422)]** Phase 3-4 complete. Phase 5 Wave 1 (14.8K words) production-ready: Tier 1 Individual Education + Tier 2 Household Coordination Infrastructure guides. ✅ **PHASE 5 WAVE 2 (Session 1422)**: All 4 content documents drafted at 35% depth (veterinary care, psychological support, conflict resolution, community playbook — ~136K bytes total). `PHASE_5_WAVE_2_DECISION_FRAMEWORK.md` ready for June 1 review. **Key finding**: P … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5 WAVE 1 COMPLETE + WAVE 2 VETERINARY CARE RESEARCH COMPLETE (Session 1438)]** Phase 3-4 complete. Phase 5 Wave 1 (14.8K words) production-ready: Tier 1 Individual Education + Tier 2 Household Coordination Infrastructure guides. ✅ **PHASE 5 WAVE 2 RESEARCH (Session 1438)**: `SYSTEMS_RESILIENCE_VETERINARY_CARE_RESEARCH.md` (3,500+ words, 80 sources) — Deep research extending phase-5-veterinary-care-research.md with: (1) Rural shortage magnitude (700+ counties vs 245 USDA-designated,  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
