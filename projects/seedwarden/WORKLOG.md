@@ -4,6 +4,34 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Track B June 22–July 13 Launch Execution Task Breakdown (Exploration Queue Item #3) — May 21, 2026
+
+**Task**: Produce two production-ready deliverables for the May 30 user scope decision gate: `track-b-june-22-launch-task-breakdown.md` (full execution task breakdown with critical path analysis, resource matrix, and risk register) and `track-b-gantt-timeline.csv` (Gantt chart with all tasks, float days, dependencies, and critical path highlighted).
+
+**Files produced** (both in `projects/seedwarden/`):
+
+- `track-b-june-22-launch-task-breakdown.md` (~2,900 words, 10 sections) — Covers: (1) medicinal herb selection finalization with sourcing timeline by tier (Tier 1 June 8 deadline, Tier 2 June 15, Tier 3 June 22), supplier payment terms, Goldenseal decision tree; (2) writing schedule breakdown — 56–66 adjusted hours total across 5 bundles, per-bundle day-by-day task list with mandatory content flags for each species section, pre-sprint writing tasks (June 1–21); (3) Canva design task list — 12.5 hours total, zone card template reuse analysis (reusable: 6 hours total vs. 15–20 hours per-bundle from scratch), per-bundle schedule with float; (4) photography breakdown — why 3–4 weeks not 1 day, four-week pre-sprint track, equipment/props checklist, in-sprint session schedule, fresh vs. dried vs. stock decision matrix; (5) upload and launch sequence — 5 milestones (June 29 / July 6–7 / July 13 / July 20 / August 3) with pre-upload checklist and forager cohort conditional trigger; (6) critical path analysis — primary critical path sequence (May 30 → June 29 chain with zero-float tasks), what compresses vs. what serializes, design bottleneck at July 3 EOD design lock; (7) resource requirements matrix — time allocation by week, equipment list, people requirements for Option A vs. B vs. C; (8) risk analysis with recovery timelines for 6 risks (supplier delay, MRH delivery, writing pace, design revision loop, Vitex invasive omission, gate metric decay); (9) six key research questions answered explicitly; (10) May 30 decision summary with three decisions required.
+
+- `track-b-gantt-timeline.csv` (86 rows, 14 columns) — Full Gantt covering June 22–July 13 sprint window plus pre-sprint track (May 22–June 21) and post-sprint milestones (July 15–August 3). Columns: Task ID, Task Name, Phase, Track, Start Date, End Date, Duration (days), Predecessor IDs, Float (days), Critical Path flag, Milestone flag, Revenue Gate flag, Notes. Covers: all major task blocks (supplier outreach, writing by bundle and day, design by bundle, photography by week, QA/review, uploads, staging); start/end dates; dependencies via predecessor IDs; float days per task; milestone markers for all 5 bundle uploads plus practitioner tier activation; contingency and financial model rows. Critical path tasks flagged YES in Critical Path column with 0 float. Contingency rows (A through H) document all recovery paths.
+
+**Evidence base**: PHASE_3_PRODUCTION_TIMELINE.md (v4.0), phase-3-medicinal-herbs-critical-path-analysis.md (v6.0), PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md (May 20), phase-3-medicinal-herbs-gantt-timeline.csv (69-task source Gantt), PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md (v4.0), PHASE_3_GOLDENSEAL_SOURCING_COMPARISON.md (v1.0), TRACK_B_MAY30_DECISION_FRAMEWORK.md (May 20), phase-3-medicinal-herbs-strategy.md (May 7).
+
+**Key findings documented**:
+- Photography requires 3–4 weeks pre-sprint (not 1 day) due to non-overlapping timing windows for seedlings, mature/flowering, and dried herb studio work
+- Canva zone card template is reusable: 6 hours total vs. 15–20 hours per-bundle from scratch
+- Mountain Rose Herbs East Coast transit is 7–10 business days; order deadline is June 13 (not June 15) to guarantee June 21 arrival
+- Goldenseal recovery path if unavailable June 10: (A) substitute Barberry (berberine-containing, no CITES, stronger comparative framing); (B) Wikimedia CC photography only, zero delay; (C) Immunity delayed to August 3 (least preferred)
+- All three primary upload dates (June 29, July 6–7, July 13) survive Option C activation — Immunity and Digestive slip 14 days each, not the core sprint dates
+- Supplier payment terms: all suppliers standard retail at time of order; no budget gate beyond order placement deadlines
+
+**Decisions pending (May 30 deadline)**:
+1. Sprint scope: Option A (all 5 bundles, 56–66 adjusted hours, 4–5 hrs/day) or Option C (3-bundle priority, 37–43 hours, 3–4 hrs/day) — Option C recommended if June daily availability is uncertain
+2. Goldenseal path: Path 1 (Prairie Moon order by June 8, $35–50) or Path 2 (Wikimedia CC, $0, immediate) — Path 2 recommended under Option C
+3. Canva palette: confirm 6 hex codes or request alternatives by June 15 — auto-confirmed June 15 if no action taken
+4. Pre-authorize Option C activation at June 24 pace gate (eliminates need for mid-sprint approval)
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Vendor Pre-Staging (Exploration Queue Item 27 Execution) — May 21, 2026
 
 **Task**: Pre-stage vendor negotiations that do not depend on May 30 user decisions (scope, sourcing path, writer). Produce three production-ready files enabling June 1 commitments immediately post-user-decision. All outreach executable May 22.
