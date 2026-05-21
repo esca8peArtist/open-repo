@@ -211,6 +211,29 @@
 
 ---
 
+### 25. ⏳ open-repo — Phase 5.3 Federation & Distributed Versioning Architecture (Session 1474 — Added May 21)
+**Scope**: Phase 5.1 MVP (offline ZIM export) ready for merge; Phase 5.2 candidates (Medical, Water, Seed, Food, Botanical) pre-evaluated. But the long-term Goal includes federation (sharing libraries across communities), versioning, and differential updates — Phase 5.3+. Design federated library architecture for offline sharing, version control for collaborative library updates, and differential sync to minimize bandwidth on poor connections.
+- **Deliverables**: `FEDERATION_ARCHITECTURE.md` (distributed identity, library sharing protocols, trust model), `VERSIONING_STRATEGY.md` (content versioning, collaborative editing, merge conflict resolution), `DIFFERENTIAL_SYNC_PROTOCOL.md` (delta compression, bandwidth optimization). Estimate 15-20 hours.
+- **Owner**: open-source-rideshare subagent
+- **Deadline**: May 30 (pre-Phase-5.2-completion planning)
+
+### 26. ⏳ stockbot — Jetson Infrastructure Hardening & Disaster Recovery (Session 1474 — Added May 21)
+**Scope**: Lever B deployment blocked on SSH auth (user action), but underlying Jetson reliability improvements don't depend on Lever B outcome. Design comprehensive infrastructure hardening: monitoring (Prometheus/Grafana), logging (ELK stack or managed), backup strategy (database snapshots + filesystem), disaster recovery (RTO/RPO targets), security hardening (firewall, fail2ban, secrets rotation).
+- **Deliverables**: `JETSON_MONITORING_ARCHITECTURE.md` (metrics collection, alert rules, health dashboard), `JETSON_BACKUP_STRATEGY.md` (frequency, retention, recovery testing), `DISASTER_RECOVERY_RUNBOOK.md` (RTO/RPO targets, failover procedures, validation checklist). Estimate 12-15 hours.
+- **Owner**: stockbot subagent
+- **Deadline**: May 30 (ready for June 1 live trading hardening phase)
+
+### 27. ✅ seedwarden — Phase 3 Vendor Negotiation Pre-Staging (Session 1474 COMPLETE)
+**Status**: Completed May 21 (Session 1474, 18:51 UTC). Files: `phase-3-vendor-negotiation-templates.md` + `phase-3-pricing-negotiation-ranges.md` + `phase-3-vendor-timeline-roadmap.md`.
+**Key findings**:
+- RFQ templates for 4 suppliers (Prairie Moon, Strictly Medicinal, Mountain Rose, Southern Exposure) are path-agnostic — can send all four May 22 to cover both Path 1 (live specimen) and Path 2 (Wikimedia CC) outcomes
+- Peer reviewer email has 8 variants calibrated by credential tier (RH independent, ND/faculty, MD, PhD, clinical specialists, veteran RH, first-aid herbalists, cold AHG directory contact)
+- Canva designer brief requests dual-scope quotes (5-bundle and 3-bundle) in one email so designers quote pre-decision and user can select scope May 30
+- Timeline: Start outreach May 22 (6-day window to June 8 Goldenseal zero-float deadline), confirms May 30-June 1, final delivery locked June 15
+- Contingency paths documented for vendor no-shows (backup suppliers, cold AHG outreach, Canva self-execute fallback)
+
+---
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
