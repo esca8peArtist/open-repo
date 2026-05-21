@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-21T01:35:36Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-21T01:52:15Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 3.7% | Reset in 118h | check: claude.ai → Settings → Usage & billing
@@ -19,7 +19,7 @@
 ## Active Projects
 ### mfg-farm
 **Status**: Active — ready to prototype
-**Focus**: **[ITEM 85 COMPLETE] ETSY LAUNCH SEQUENCE FRAMEWORK PRODUCTION-READY (verified current May 20).** Test print execution pending (user action required). All pre-print + post-print preparation complete. **`ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, PRODUCTION-READY)**:
+**Focus**: **[ITEM 85 COMPLETE] ETSY LAUNCH SEQUENCE FRAMEWORK PRODUCTION-READY (verified current May 20).** Test print execution pending (user action required). All pre-print + post-print preparation complete. **SEO RESEARCH COMPLETE** (Session 1445): `ETSY_SEO_STRATEGY_Q2_Q3_2026.md` (3,200 words) + competitive matrix — 15+ keyword research, seasonal demand patterns, algorithm updates (Feb 2026 NLP 70-char title cap, May 2026 ChatGPT integration), pricing strategy ($12.99 clips launch, $16.99 hooks, $1 … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
