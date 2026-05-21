@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-21T08:13:20Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-21T12:54:41Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 4.0% | Reset in 112h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 4.3% | Reset in 107h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -36,12 +36,12 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[PHASE 3 CRITICAL PATH v3.0 + MEDICINAL HERBS PRODUCTION TIMELINE + HERBALIST NETWORK ECOSYSTEM MAPPING COMPLETE (Sessions 1438, 1446)] TRACK B — JUNE 22 LAUNCH READY.** ✅ **Session 1438 Deliverables**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` v3.0 (4,200 words, production-ready timeline with mandatory contraindication register, peer review windows, practitioner bundle cover scope, fresh/dried decision matrix, risk activation dates). ✅ **Session 1446 Deliverable**: `HERBALIST_NETWORK_E … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 3 CRITICAL PATH v7.0 (Session 1461) + GANTT TIMELINE COMPLETE — MAY 30 DECISION GATES READY] TRACK B — JUNE 22 LAUNCH READY.** ✅ **Session 1461 Deliverables**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` v7.0 (5,600 words, supersedes v6.0 — comprehensive 8-section timeline + 2 appendices with zero-float critical path from May 30 decisions through August 3 full launch) + `phase-3-gantt-timeline.csv` (75-row Gantt spreadsheet with May 21–August 3 milestones, float days, resource  … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5.1 MVP — CRITICAL BUG FIXED, READY FOR USER MERGE REVIEW (Session 1438)] ✅ ALL BLOCKERS RESOLVED & IMPLEMENTATION CHECKLIST v2 PRODUCTION-READY** Code audit identified three critical production-risk defects; all resolved on master (Session 1404 commit 198a146d). Feature branch `feature/zimwriter-libzim-activation` rebased successfully (Session 1412). All three merge conflicts resolved. **Session 1438 Verification Update**: ✅ libzim 3.9.0 installed (aarch64 wheel), Python 3.11.2 c … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5.1 MVP — CRITICAL BUG FIXED + VERIFIED (Session 1462)] ✅ READY FOR MERGE** Feature branch `feature/zimwriter-libzim-activation` contains full offline ZIM export pipeline. **Critical fix applied** (Session 1462, 07:15 UTC): `creator.config_indexing()` moved BEFORE `set_mainpath()` in `zim_writer.py` lines 836-840 (violating libzim docs was blocking Xapian full-text search). **Verification**: 240/240 tests pass; test suite updated to verify correct ordering. ✅ **Session 1461 Delive … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
@@ -95,8 +95,8 @@
 **Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 1438 (15 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 1438 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (18 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 1438 (25 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
 • Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
