@@ -34,6 +34,25 @@
 - ✅ All three items now gate June+ project milestones with zero setup ambiguity
 - **Status**: Exploration queue fully cleared; ready for May 21 19:00 UTC synthesis execution
 
+### Needs Your Input (Session 1450 + Upcoming)
+
+**CRITICAL DEADLINE — May 22 13:30 UTC (31 hours remaining)**: stockbot Lever B HMM configuration
+- **Action required**: Either (A) add orchestrator's public SSH key to Jetson authorized_keys, OR (B) SSH to Jetson manually and run 5-minute HMM config fix (see BLOCKED.md for exact commands)
+- **If not completed by deadline**: Lever B configuration cannot be activated for May 22 checkpoint, defeating purpose of Lever B testing
+- **Status**: SSH auth still failing as of May 21 06:28 UTC; block entry in BLOCKED.md has complete fix instructions
+
+**May 21 19:00 UTC — Resistance-Research Synthesis Autonomous Execution**
+- **What happens**: Orchestrator automatically reads signal logs, checks Trump v. Barbara ruling status, calculates synthesis outcome (STRONG/MODERATE/WEAK/TOO_EARLY/CRISIS), and executes corresponding Phase 2 launch playbook
+- **Pre-execution items** (should be done before 19:00 UTC if possible, but not blocking):
+  - (1) May 20 ~22:00 UTC — signal log fill (check if completed; if not, can still execute synthesis with current data)
+  - (2) May 21 before 19:00 UTC — Trump v. Barbara ruling check (conducted May 21 06:15 UTC — no ruling expected until late June/early July; contingency path applies)
+- **Post-synthesis**: User will receive synthesis outcome + Phase 2 launch path determined (same-day, May 22, May 28, May 25 gate, or Trump v. Barbara rapid-response)
+
+**Suggested Next Actions (after May 21 synthesis)**:
+1. **If synthesis outcome is STRONG/MODERATE**: Phase 2 research launches immediately May 21 evening or May 22. Review SYNTHESIS_OUTCOME_PLAYBOOKS.md section for selected outcome to understand next steps.
+2. **If synthesis outcome is WEAK/TOO_EARLY**: Hold pattern activates; synthesis re-check scheduled for May 25 or May 28. Continue May 22 checkpoint execution; Phase 2 launch paused pending re-synthesis.
+3. **May 22 Checkpoint (20:00 UTC)**: stockbot checkpoint execution regardless of synthesis outcome. Outcome determines Gate 2 strategy and Lever C activation decision.
+
 ---
 
 ## Since Last Check-in (Session 1449 — ORCHESTRATOR, May 21 05:58–06:15 UTC) — Post-Session-1447 Queue Refresh + Synthesis Countdown
