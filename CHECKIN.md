@@ -1,3 +1,47 @@
+## Session 1486 — ORCHESTRATOR: OPEN-REPO PROJECTS.MD STATE SYNC (May 22, 2026)
+
+**Status**: ✅ **OPEN-REPO PRE-ACTIVATION GAPS VERIFIED & DOCUMENTED** | 🔴 **STOCKBOT SSH DEADLINE: May 22 13:30 UTC (imminent)**
+
+**What Was Accomplished**:
+
+1. ✅ **VERIFIED Session 1485 Fixes (Feature Branch)**
+   - Confirmed feature/zimwriter-libzim-activation has commit 274eb1f2 with all fixes
+   - **Gap 1**: pyproject.toml libzim pin `>=3.2,<4.0` → `>=3.10.0,<4.0` ✅
+   - **Gap 2**: ZimExport ORM model (64 lines) added to models.py ✅
+   - **Gap 3**: Attribution footer XSS deferred (optional for MVP)
+   - Test suite: 240 tests passing (88 integration + 152 unit)
+
+2. ✅ **UPDATED PROJECTS.md Current Focus (open-repo)**
+   - Added "(Session 1485)" marker to header showing gaps are fixed
+   - Changed status from "PRE-ACTIVATION GAPS (none are merge blockers)" to "RESOLVED GAPS"
+   - Updated activation timeline: "Minimum viable (merge only) = 0.5 hours" (was 3 hours)
+   - Updated test count: 240/240 (was 88/88)
+   - Updated libzim version: 3.10.0 with C++ 9.7.0 patches
+   - GO/NO-GO: "All pre-merge gaps resolved. Ready for user approval May 25-26"
+
+3. ✅ **COMMITTED TO MASTER**
+   - Commit: 8e4663a9 "chore(projects): open-repo Phase 5.1 pre-activation gaps resolved (Session 1485)"
+   - Orchestration state now synchronized with reality (Session 1485 fixes documented)
+
+**Autonomy Assessment**: 
+- ✅ **open-repo**: All pre-merge autonomous work complete. Feature branch ready for user merge review (May 25-26).
+- 🔴 **stockbot**: SSH deadline imminent (May 22 13:30 UTC). Cannot fix autonomously.
+- ⏳ **resistance-research**: Phase 2 distribution planning awaits user Gist creation.
+- ⏳ **seedwarden**: Awaiting May 23-25 peer reviewer responses; May 30 user scope decision.
+- ⏳ **cybersecurity-hardening, mfg-farm**: User action required.
+
+**Needs Your Input** (URGENT):
+
+| Project | Decision | Deadline | Impact |
+|---------|----------|----------|--------|
+| **🔴 STOCKBOT** | SSH fix (Option A/B/C) — CRITICAL | **May 22 13:30 UTC** | Lever B config; May 22 checkpoint |
+| **open-repo** | Approve Phase 5.1 merge | May 25-26 | Enables Phase 5 (3–11 hour activation) |
+| **resistance-research** | Create GitHub Gists for Domains 56 + 39 | By May 29 | Distribution planning + email template URLs |
+
+**Next Session**: Monitor stockbot SSH deadline (May 22 13:30 UTC). Post-checkpoint (May 22 20:00 UTC), check outcome and spawn Phase 2 agents if synthesis succeeds. No further autonomous code work available until user approvals.
+
+---
+
 ## Session 1485 — ORCHESTRATOR: OPEN-REPO PRE-ACTIVATION GAPS FIXED (May 21, 22:14–23:45 UTC)
 
 **Status**: ✅ **OPEN-REPO PHASE 5.1 PRE-ACTIVATION GAPS 1 & 2 RESOLVED** | 🔴 **🚨 CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (14.8 HOURS REMAINING)**

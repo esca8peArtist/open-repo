@@ -8480,3 +8480,56 @@ All active executable items exhausted. Sessions 1472-1473 repurposed synthesis-d
 **Session Efficiency**: 17 min, 100% autonomy, 8 personalized emails sent, 1 recruitment log file created + committed, critical path tracking infrastructure established
 
 **Summary**: Phase 3 peer reviewer recruitment Tier 1 outreach executed in full (8 RH candidates contacted May 22 afternoon). Recruitment log established for response monitoring and contingency tracking. Expected first responses May 23–25; success target 1–2 RH validations by June 21 for June 22 launch credibility. Tier 2 expansion (Herbal Academy instructors, ND network) staged for May 29 if <40% Tier 1 response rate. All critical paths documented with fallback messaging ready if recruitment goals not met.
+
+## Session 1486 — ORCHESTRATOR: OPEN-REPO PRE-ACTIVATION GAPS VERIFICATION + PROJECTS.MD UPDATE (May 21-22, 2026)
+
+**Date**: 2026-05-21 23:45 UTC – 2026-05-22 01:30 UTC
+**Status**: ✅ COMPLETE
+**Type**: Autonomous orchestration state sync
+
+**Pre-Session Orientation**:
+1. ✅ Read ORCHESTRATOR_STATE.md
+2. ✅ Verified active blocks (4 real: stockbot SSH auth, resistance-research TOO_EARLY, cybersecurity-hardening restart, mfg-farm test print)
+3. ✅ Identified pre-activation gaps documented in PROJECTS.md as still open, but verified they were FIXED in Session 1485
+4. ✅ Task selection: Update PROJECTS.md Current focus to reflect Session 1485 fixes
+
+**Work Executed**:
+
+1. ✅ **Verified Session 1485 Fixes on Feature Branch**
+   - Checked feature/zimwriter-libzim-activation branch
+   - Confirmed commit 274eb1f2: "fix(open-repo): Phase 5.1 pre-activation gaps — libzim version pin + ZimExport ORM model"
+   - Verified diff: (1) pyproject.toml changed `>=3.2,<4.0` to `>=3.10.0,<4.0` ✅, (2) models.py added full ZimExport ORM class (64 lines) ✅
+   - Ran test suite: 240 tests passing (88 integration + 152 unit) ✅
+
+2. ✅ **Updated PROJECTS.md Current Focus (open-repo)**
+   - Preserved marker: **[PHASE 5.1 MVP IMPLEMENTATION VERIFICATION COMPLETE (Session 1484); PRE-ACTIVATION GAPS FIXED (Session 1485)]**
+   - Updated status to reflect: Gap 1 (version pin) RESOLVED ✅, Gap 2 (ORM model) RESOLVED ✅, Gap 3 (XSS footer) DEFERRED to Phase 5.2
+   - Updated activation timeline: Now "Minimum viable (merge only) = 0.5 hours" (down from "merge + 3 fixes = 3 hours")
+   - Clarified GO/NO-GO: "All pre-merge gaps resolved. Ready for user approval May 25-26 → 0.5–11 hour activation window"
+   - Added test count clarification: 240/240 tests passing (88/88 integration + 152/152 unit)
+   - Added libzim version clarification: 3.10.0 installed (C++ 9.7.0 hardening patches)
+
+3. ✅ **Committed PROJECTS.md Update to Master**
+   - Commit: 8e4663a9
+   - Message: "chore(projects): open-repo Phase 5.1 pre-activation gaps resolved (Session 1485)"
+   - Links to commit 274eb1f2 on feature branch for reference
+   - Documentation of which gaps are fixed vs. deferred
+
+**Critical Status Updates**:
+- **open-repo**: Feature branch ready for user merge review (May 25-26). All pre-merge work complete. 0 autonomous blockers remaining.
+- **stockbot**: SSH auth deadline May 22 13:30 UTC (still blocking Lever B config fix). Checkpoint proceeds regardless May 22 20:00 UTC.
+- **resistance-research**: TOO_EARLY contingency active; Phase 2 work unblocked; distribution planning awaits user Gist creation.
+- **seedwarden**: Track B on schedule; Phase 3 recruitment execution complete (May 22); awaiting responses May 23-25.
+
+**Session Efficiency**:
+- State verification + branch inspection: 5 min
+- Test suite run: 10 min
+- PROJECTS.md update: 3 min
+- Commit + finalization: 2 min
+- Total: 20 min
+- Deliverable: PROJECTS.md state synchronized with Session 1485 reality; feature branch accurately documented as merge-ready
+
+**Autonomy Note**: No further autonomous code work available for open-repo (user approval gate for merge). Resistance-research Phase 2 distribution planning awaits user Gist creation. All other active projects blocked on manual user actions (stockbot SSH, cybersecurity-hardening restart, mfg-farm test print, seedwarden May 30 decisions) or awaiting external responses (seedwarden recruitment May 23-25).
+
+---
+
