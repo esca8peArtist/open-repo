@@ -7897,3 +7897,58 @@ All active executable items exhausted. Sessions 1472-1473 repurposed synthesis-d
 - If called before May 22 20:00 UTC: Continue with exploration items #2 and #3 (May 28 re-synthesis validation, seedwarden readiness)
 - If synthesis doesn't run May 21 OR May 25: May 28 re-synthesis infrastructure validation (item #2) becomes critical
 
+
+**UPDATE (19:30–20:05 UTC)**: 
+
+4. ✅ **Exploration Queue Item #2 (SECONDARY PRIORITY)**: May 28 Re-Synthesis Infrastructure Validation
+   - **Reason for execution**: May 28 is confirmed re-synthesis date; infrastructure validation ensures May 28 execution succeeds with complete signal log
+   - **Deliverable**: 1 file created in projects/resistance-research/
+     - `MAY_28_RESYNTHESIS_READINESS_CHECKLIST.md` (2,300+ words, comprehensive validation checklist for May 28 synthesis execution)
+       - Phase 1: Signal log completion checklist (May 25 17:00 UTC deadline — user action required)
+         - All [fill] placeholders verification (should return 0)
+         - Delivery self-test result logging
+         - Trump v. Barbara ruling status watch-list
+       - Phase 2: Synthesis script validation (May 27 16:00–18:00 UTC)
+         - Script existence + executable verification
+         - Test run against real signal log (must return classification, not error)
+         - Parse error handling (if signal log still incomplete)
+         - Output files verification (synthesis-execution-output.md, synthesis-execution-log.txt)
+       - Phase 3: Contingency playbooks readiness (May 27 validation)
+         - All 4 outcome playbooks present (STRONG/MODERATE/WEAK/TOO_EARLY)
+         - Each outcome playbook's immediate actions checklist verified
+         - Domain 42 DEA deadline reminders confirmed
+       - Phase 4: Project focus updates (May 27 17:00 UTC)
+         - PROJECTS.md current focus reflects TOO_EARLY contingency (not May 21 synthesis)
+         - BLOCKED.md block status current
+         - May 28 synthesis deadline logged and discoverable
+       - Phase 5: May 28 execution protocol (step-by-step, 19:00–20:00 UTC)
+         - Execute synthesis script
+         - Verify output files
+         - Post CHECKIN.md entry
+         - Activate contingency playbook (immediate actions)
+         - Update PROJECTS.md with outcome + next steps
+       - Risk register: 5 risks × mitigation × contingency
+       - Success criteria checklist (7 items)
+   - **Key feature**: Comprehensive phase-by-phase validation ensures May 28 synthesis either succeeds with full data OR fails gracefully with clear user communication
+   - Committed to master: MAY_28_RESYNTHESIS_READINESS_CHECKLIST.md
+
+**Session Summary (19:54 UTC)**:
+- ✅ **Exploration Queue Items Completed**: 2 of 3
+  1. ✅ May 22 checkpoint decision tree (CRITICAL, due May 22 20:00 UTC)
+  2. ✅ May 28 re-synthesis validation (CRITICAL, due May 28 19:00 UTC)
+  3. ⏳ seedwarden Phase 3 readiness (DUE MAY 23, not started)
+- ✅ **Synthesis contingency**: TOO_EARLY protocol activated; May 28 re-synthesis window open
+- ✅ **Critical path monitoring**: May 22 checkpoint + May 28 synthesis readiness = on track
+
+**Commits This Session**:
+1. Synthesis contingency activation + exploration queue replenishment (PROJECTS.md, BLOCKED.md)
+2. May 22 checkpoint decision tree (stockbot submodule)
+3. WORKLOG.md first update
+4. May 28 re-synthesis readiness checklist (resistance-research)
+
+**Session Efficiency**:
+- **Duration**: ~65 min (19:30 UTC, includes Item #1 + Item #2 + 2 commits + WORKLOG updates)
+- **Output**: 2 comprehensive decision support documents (6,000+ words total) + infrastructure validation checklist
+- **Impact**: User receives same-day decision support for May 22 checkpoint + complete pre-flight for May 28 re-synthesis
+- **Autonomy**: 100%
+
