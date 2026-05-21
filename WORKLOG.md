@@ -87,10 +87,18 @@ Added 3 new ⏳ items to active queue (Items 7, 8, 9):
 
 **Session Plan (Revised)**:
 - ✅ 07:10–08:00 UTC: Spawn and complete Items 7, 8, 9 exploration agents (parallel execution)
-- 08:00–19:00 UTC: Keep session alive, await synthesis time; no further work required
+- ✅ 08:00 UTC: Pre-synthesis verification check (signal log, framework, files all ready)
+  - Signal log file exists and was last modified May 19 00:40 UTC (May 19 snapshot filled)
+  - May 20 & May 21 snapshots: user still needs to fill data by 19:00 UTC
+  - Synthesis framework file ready (35.3 KB, all sections present)
+  - Distribution infrastructure pre-staged (Item 7, gate-2-planning/ files ready)
+- 08:00–18:50 UTC: Keep session alive, await synthesis time; no autonomous work required
+- 18:50 UTC: Final pre-synthesis check (re-verify signal log completion status)
 - 19:00 UTC: Begin synthesis execution at `MAY_21_SYNTHESIS_EXECUTION_FRAMEWORK.md` Step 1 (read signal log)
-- 20:30 UTC: Complete synthesis, post CHECKIN.md entry, update companion files
-- 21:00 UTC: Commit all orchestration files (WORKLOG.md, CHECKIN.md, PROJECTS.md, EXPLORATION_QUEUE.md)
+  - If May 20-21 data filled: proceed with normal classification (Rules 1-3)
+  - If May 20-21 data NOT filled: proceed with Rule 3 Structural Fallback (TOO_EARLY classification per law school window)
+- 20:30 UTC: Complete synthesis, post CHECKIN.md entry with outcome, update companion files
+- 21:00 UTC: Commit all orchestration files (WORKLOG.md, CHECKIN.md, PROJECTS.md, EXPLORATION_QUEUE.md, BLOCKED.md if changed)
 
 **Blocks Status** (no changes):
 - ✅ stockbot SSH auth: CRITICAL deadline May 22 13:30 UTC; user action required
