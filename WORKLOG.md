@@ -1,5 +1,24 @@
 # Work Log
 
+## Session 1450 (May 21, continued) — cybersecurity-hardening: Windows Encryption Transition Guide (VeraCrypt Certificate Crisis)
+
+**Task**: Research and write complete Windows encryption transition guide for VeraCrypt certificate expiration crisis (June 27, 2026 hard deadline). Three production-ready files.
+
+**Files produced**:
+- `projects/cybersecurity-hardening/WINDOWS_ENCRYPTION_TRANSITION_GUIDE.md` (~3,000 words) — executive summary, BitLocker setup guide (Pro/Enterprise + Home Device Encryption), VeraCrypt end-of-life timeline, three migration options (Full BitLocker, Hybrid, Cryptomator), decision matrix, alternatives comparison (BitLocker/Cryptomator/7-Zip/Boxcryptor), rollback protocol
+- `projects/cybersecurity-hardening/BITLOCKER_SETUP_CHECKLIST.md` — six-section operational checklist: pre-setup verification (TPM 2.0, UEFI, edition check, Raspberry Pi 5 non-TPM path), backup steps, activation wizard steps, recovery key backup/storage/testing, post-setup verification commands, troubleshooting for 6 common failure modes
+- `projects/cybersecurity-hardening/VERACRYPT_RECOVERY_PROTOCOL.md` — event timeline, what users experience after June 27 (three scenarios: Secure Boot on, Secure Boot off, running session), immediate actions (rescue disk, header backup), three emergency recovery procedures (rescue disk, external decryption, Linux live USB), extended-use stopgaps, risk assessment matrix, migration schedule to Phase 2 July launch
+
+**Key findings**:
+1. Hard deadline is June 27, 2026 — UEFI CA 2011 revocation; no grace period
+2. As of May 21, no new VeraCrypt release with updated certificate has shipped despite account restoration promise
+3. Running session is safe; revocation fires on next reboot — users on live systems should migrate before rebooting
+4. Rescue disk must be created NOW while system is functional — it cannot be created after revocation
+5. Windows Home users must use Device Encryption (TPM + Microsoft account) or Cryptomator; no native BitLocker
+6. Cryptomator is the strongest cross-platform alternative for file-level encryption (independently audited, open source)
+
+---
+
 ## Session 1450 (May 21) — mfg-farm: Pre-Production Supply Chain Risk Mitigation Strategy
 
 **Task**: Research and write pre-production supply chain risk mitigation strategy for mfg-farm (ModRun Etsy print farm).
