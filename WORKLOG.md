@@ -1,5 +1,39 @@
 # Work Log
 
+## Session 1444 (May 21 UTC) — Phase 5 Candidate 1 Pre-Deployment Verification
+
+**Task**: Verify Phase 5 Candidate 1 (ZimWriter/libzim offline export) implementation requirements and build pre-deployment checklist for user approval May 25–26 and implementation launch May 25–28.
+
+**Files Produced**:
+- `projects/open-repo/PHASE_5_CANDIDATE_1_IMPLEMENTATION_VERIFICATION_v3.md` — Full compatibility audit, critical bug findings, gap analysis, timeline breakdown
+- `projects/open-repo/phase-5-candidate-1-implementation-checklist-v3.md` — Step-by-step implementation checklist (v3), verified against live system
+
+**Key Findings**:
+
+1. **libzim 3.9.0 confirmed installed and functional** — ARM64 pre-built wheel works on Raspberry Pi 5 / Debian Bookworm. `from libzim.writer import Creator, Item, StringProvider, Hint` imports successfully. Note: `libzim.__version__` raises AttributeError; use `importlib.metadata.version('libzim')` instead.
+
+2. **Critical API bug confirmed live** — Calling `creator.config_indexing()` inside the `with creator:` context manager raises `RuntimeError: Creator started` against libzim 3.9.0. The corrected pattern (pre-context calls confirmed via live test) is documented in v3 checklist Step B3. The bug is also present in `_apply_metadata_to_creator()` (line 886), which must be removed from that method.
+
+3. **Second bug in _apply_metadata_to_creator()** — `try: ... except AttributeError: pass` guard silently swallows real errors. Must be removed in Step B4.
+
+4. **Test baseline is 88** (not 84 or 100 as cited in earlier docs). Target after Phase 5 is 100 (88 + 12 new tests).
+
+5. **Missing from pyproject.toml**: `libzim>=3.2,<4.0` and `jinja2>=3.1` (both installed but not declared).
+
+6. **zimcheck not installed** — `sudo apt install zim-tools` available (version 3.1.3-1), requires sudo. Deferred to deployment environment; core integration does not require it.
+
+7. **Alembic migration 003 not created** — `zim_exports` table schema fully specified in roadmap, ready to implement.
+
+8. **export.py endpoint missing** — `app/api/v1/export.py` does not exist. Flagged as Phase 5.2 deferral (MVP-acceptable gap).
+
+9. **_FALLBACK_ILLUSTRATION_PNG already in codebase** (line 55) — tested with `add_illustration(48, ...)` against libzim 3.9.0, confirmed accepted. Do NOT replace with roadmap document bytes.
+
+10. **Full Creator flow end-to-end tested**: magic bytes `5a494d04`, file size 60,217 bytes for minimal archive, illustration accepted.
+
+**Status**: All technical unknowns resolved. Implementation ready to launch May 25. MVP track documented (4–5 hours, skips zimcheck and new unit tests).
+
+---
+
 ## Session 1443 (May 20, 22:06–23:30 UTC) — ORCHESTRATOR: Parallel Exploration Queue Execution + 3 Subagent Coordination
 
 **Session Type**: Autonomous orchestration — spawned 3 parallel subagents for independent Exploration Queue work while primary projects blocked on user actions
