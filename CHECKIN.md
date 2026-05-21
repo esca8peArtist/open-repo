@@ -1,3 +1,77 @@
+## Since Last Check-in (Session 1446 — ORCHESTRATOR, May 21 01:52–03:30 UTC) — May 21 Synthesis Readiness + Major Phase 2 Discovery
+
+**Status**: ✅ **MAY 21 SYNTHESIS PREPARATION COMPLETE** | 🟢 **MAJOR DISCOVERY: ALL PHASE 2 DOMAINS PRODUCTION-COMPLETE** | ✅ **PHASE 3 TIMELINE UPDATED V6.0** | 🔴 **STOCKBOT DEADLINE: MAY 22 13:30 UTC (36 HOURS)** | ⏰ **SYNTHESIS EXECUTION: 15 HOURS AWAY (19:00 UTC)**
+
+---
+
+## 🟢 MAJOR DISCOVERY: Phase 2 Research Complete (All 5 Domains)
+
+**Critical Finding**: Resistance-research Phase 2 audit revealed **all five domains are PRODUCTION-COMPLETE**:
+
+| Domain | Canonical File | Words | Citations | Status | First Distribution |
+|--------|----------------|-------|-----------|--------|-------------------|
+| 56 | Civil Service Politicization | 6,267 | 45 | COMPLETE ✅ | May 26–June 7 |
+| 57 | Multilateral Withdrawal | 9,201 | 51 | COMPLETE ✅ | August 10 |
+| 58 | Tribal Sovereignty | 11,388 | 90 | COMPLETE ✅ | June 15 |
+| 59 | Economic Precarity | 8,450 | 49 | COMPLETE ✅ | June 1 |
+| G | Press Freedom | 8,695 | 50 | COMPLETE ✅ | June 15 or 22 |
+| **TOTAL** | | **44,001** | **285** | **ALL COMPLETE** | |
+
+**What This Means**:
+- Phase 2 research writing is DONE (this was a 120–130 hour unknowable)
+- What remains: 25–40 hours of distribution prep (known, scheduled, high-confidence)
+- Phase 2 can launch same-day post-synthesis (May 21 19:00 UTC outcome → May 21 20:30 UTC distribution path decided)
+- Three outcome-based decision paths documented (STRONG/MODERATE/WEAK with explicit sequencing)
+
+**Blocking Assumptions Verified**:
+- Domain 56: No blockers
+- Domain 57: ICC currency check before August 10 (soft deadline, not hard)
+- Domain 58: Trump v. Barbara ruling expected late June; publication deadline June 15 (9 days before anticipated ruling)
+- Domain 59: HHS OBBBA rule June 1 gate (conditional, not structural)
+
+**Business Impact**: Phase 2 research execution roadmap is now deterministic and scheduled. Tier 2 contact lists verified (91 organizations, pre-customized per constituency). Outcomes no longer uncertain — the only variable is decision speed post-synthesis.
+
+---
+
+## Trump v. Barbara Ruling Status Confirmed
+
+**No ruling as of May 21 2026.** Expected decision window: late June – early July (~90% by June 30).
+
+**Key Finding**: Case is primarily birthright citizenship challenge, but acquired tribal significance through April 1 oral argument exchange where government attorney Sauer stated tribal children are not constitutional citizens. If ruling validates this position, it threatens constitutional basis for tribal voting rights (9.7M people).
+
+**Critical Action**: Domain 58 Gist must publish BEFORE June 30 (before ruling). Rapid-response infrastructure pre-staged in `DOMAIN_58_TRUMP_V_BARBARA_RAPID_RESPONSE.md` with three scenario templates (favorable/neutral/adverse).
+
+**Distribution Timeline**: Begin daily monitoring June 15. If ruling comes before June 15 distribution, immediate rapid-response activation (24–48 hour turnaround). All infrastructure ready.
+
+---
+
+## Phase 3 Medicinal Herbs Timeline Updated (v5.0 → v6.0)
+
+**Updated**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` rewritten to v6.0 (8,678 words, comprehensive scope).
+
+**Key Findings**:
+- ✅ Writing is the BINDING CONSTRAINT (56–66 hours for full scope)
+- ✅ Canva design has 10-day float (not critical path)
+- ✅ Photography has 12-day float (not critical path)
+- ✅ **Two launch gates PASSED**: Forager cohort 21.3% > 20% threshold, Native Plants conversion 2.24% > 1.5%
+- ✅ **Three gates PENDING**: Bundle selection (Option A/B/C by May 30), supplier confirmation (June 8), production start (June 22)
+
+**Critical Deadlines**:
+- **June 8 HARD DEADLINE**: Supplier confirmation window closes (Goldenseal lead time critical for June 22 sprint)
+- **June 24 PACE GATE**: Writing velocity check (must complete Women's Health + Respiratory = 7,400 words by EOD)
+- **June 22–July 13**: 22-day execution window (all five bundles or subset per Option A/B/C)
+
+**Option Comparison**:
+- Option A (5 bundles, conservative): 56–66 hours, July 13 launch, all bundles live simultaneously
+- Option C (3 bundles, aggressive): 36–44 hours, June 29 Women's Health + July 13 Respiratory/Immunity, defer Sleep/Digestive to August
+
+**What User Decides by May 30**:
+1. Sprint scope (Option A/B/C with time implications)
+2. Goldenseal sourcing (Path 2 Wikimedia CC confirmed at zero cost, CC-BY-SA 4.0)
+3. Canva palette finalization (default: continue Phase 2 palette with 6 hex codes documented)
+
+---
+
 ## Since Last Check-in (Session 1445 — ORCHESTRATOR, May 21 01:35–TBD UTC) — Exploration Queue Activation + Synthesis Preparation
 
 **Status**: ✅ **2 PARALLEL AGENTS COMPLETED EXPLORATION QUEUE WORK** | ✅ **TRUMP V. BARBARA RAPID-RESPONSE INFRASTRUCTURE BUILT** | ✅ **PHASE 3 SUPPLIER CONFIRMATION + PRODUCTION CHECKLIST FINALIZED** | ✅ **MAY 21 SYNTHESIS SCHEDULED FOR 19:00 UTC (AUTONOMOUS EXECUTION)** | 🔴 **STOCKBOT LEVER B DEADLINE: MAY 22 13:30 UTC (~35 HOURS REMAINING)** | ⏰ **SYNTHESIS EXECUTION: 17.5 HOURS AWAY**
