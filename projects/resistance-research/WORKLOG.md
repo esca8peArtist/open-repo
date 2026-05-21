@@ -2,6 +2,40 @@
 
 ---
 
+## May 21, 2026 — General Research Agent — Phase 2 Batch 2 Outlines Expansion (Exploration Queue Item 20, Pass 2)
+
+**Task**: Verify and extend the previously created `PHASE_2_BATCH_2_DOMAINS_57_59_OUTLINES.md` to meet production-readiness success criteria. Prior version (May 21 earlier session) had 15 Domain 57 sources and 14 Domain 59 sources — both below the 20+ minimum. Added execution constraints section (missing from prior pass).
+
+**File updated**: `projects/resistance-research/PHASE_2_BATCH_2_DOMAINS_57_59_OUTLINES.md`
+
+**Changes made**:
+
+1. **Domain 57 sources expanded from 15 to 26**: Added CRS R48524 (Article II foreign policy authorities), Lawfare NATO withdrawal analysis, Just Security "Tailored Out" treaty withdrawal framework (Amirfar/Singh, Debevoise, 2024), Brookings "Congress's Control Over Treaty Exit," Nebraska Law Review treaty termination check (Broeg), CSIS "Opting Out" UN entities analysis, IISD SDG Hub US withdrawal documentation, Better World Campaign 31 UN agencies breakdown, Union of Concerned Scientists IPCC/UNFCCC withdrawal statement, Amnesty International global cooperation withdrawal statement, European Times civil society impact analysis, Just Security ICC sanctions explainer. Sources organized into five labeled categories for production use.
+
+2. **Domain 59 sources expanded from 14 to 24**: Added Markovich/White MIT study on minimum wage raises voter turnout 2–3pp (Journal of Politics 2022), Eviction Lab "Eviction Depressed Voter Turnout in 2016," Urban Institute "Housing Instability Is a Critical Barrier to Voting Access," CBPP SNAP Tracker (post-megabill participation drop steepest in decades), CBPP "Post-Megabill Drop in SNAP Participation," EPI "Power and Politics in the US Workplace" (workplace power imbalances and civic engagement), Gilens *Affluence and Influence* (Princeton UP, 2012), Schlozman/Verba/Brady *The Unheavenly Chorus* (Princeton UP, 2012), Columbia University Votes youth disenfranchisement analysis. Sources organized into six labeled categories.
+
+3. **Execution constraints section added** (new): Archive access requirements for library-only sources (Ikenberry, Bartels, Gilens, Schlozman; Texas A&M Law Review; Journal of Genocide Research); organizational contact verification checklist (8 contacts confirmed as requiring pre-send verification); legal/ethical note on ICC sanctions section (distribution advisory for civil society recipients); research capacity dependencies (international law background requirement for Domain 57 Sections 2.1-2.3; Domain 59 production base reduction from 50-60 hours to 20-30 hours using May 21 document); data currency verification checklist (V-Dem, Freedom House, CBPP SNAP Tracker, Eviction Lab, student loan garnishment count).
+
+4. **Metadata updated**: Sources per domain added to YAML frontmatter (D57: 26, D59: 24); status updated to "production-ready outlines — execution-independent of May 25 synthesis outcome."
+
+**Success criteria met**:
+- Two complete domain outlines (57, 59): YES
+- 20+ sources per domain with full citation: YES (D57: 26, D59: 24)
+- 3-5 expert contacts per domain: YES (5 each, from prior pass)
+- Causal pathways documented: YES (4 per domain, from prior pass)
+- Cross-domain bridges (3-5 per domain): YES (D57: 3, D59: 4, from prior pass)
+- Production timeline: YES (D57: July 1–August 10; D59: June 16–August 10 / 20-30 hrs from existing base)
+- Execution constraints documented: YES (added this pass)
+
+**Key new sources confirmed live**:
+- Just Security "Tailored Out" (2024): justsecurity.org/104496
+- Brookings "Congress's Control Over Treaty Exit": brookings.edu/articles/congresss-control-over-treaty-exit/
+- Markovich/White MIT minimum wage voter turnout: news.mit.edu/2022
+- CBPP SNAP Tracker (2026 updates): cbpp.org/research/food-assistance/snap-tracker
+- EPI workplace power and civic engagement: epi.org/unequalpower
+
+---
+
 ## May 21, 2026 — Resistance Research Subagent — Phase 2 Domains 56+39 Distribution Prep (Session 1479)
 
 **Task**: Prepare Domains 56 (Civil Service Politicization) and 39 (Healthcare Access) for distribution on May 28 and June 1 respectively. Verify domain documents are production-ready. Write distribution strategies with contact templates, timelines, and talking points. Create pre-synthesis contingency readiness document confirming both domains ship regardless of May 28 synthesis outcome.
