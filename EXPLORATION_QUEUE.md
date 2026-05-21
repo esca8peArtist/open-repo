@@ -37,40 +37,14 @@
 ### 9. ✅ seedwarden — Phase 3 Implementation Checklist Matrix (Session 1454 COMPLETE)
 **Status**: Completed May 21 (Session 1454, 08:14–09:20 UTC). 4 files: `PHASE_3_IMPLEMENTATION_CHECKLIST_MATRIX.md` + `TIMELINE_GANTT_CHARTS.md` + `CONTINGENCY_TRIGGERS.md` + `COMMUNICATION_TEMPLATES.md`. 10 per-option checklists, Gantt charts for all combinations, 7 failure mode playbooks, 8 send-ready templates. Default recommendation: Option C solo (June 22 launch feasible). Ready for immediate execution May 30 post-user-decision.
 
-### 10. ⏳ stockbot — Phase 3 Multi-Ticker Expansion Architecture (Session 1455)
-**Scope**: Design framework for moving beyond single-ticker AAPL models (lgbm_ho, ridge_wf) to a diversified portfolio architecture. Parallel to Gate 2 contingency work.
-- **Context**: Post-checkpoint (May 22), Lever B outcome (PASS/FAIL) determines Gate 2 routing. Phase 3 multi-ticker expansion is independent — can be researched while Gate 2 executes. Phase 3 execution timeline: June 15–July 15.
-- **Deliverables**: 
-  - `PHASE_3_TICKER_EXPANSION_FRAMEWORK.md` (decision framework for ticker selection)
-  - `MULTI_TICKER_MODEL_TRANSFER_LEARNING_STRATEGY.md` (how to adapt AAPL models to new tickers, confidence assessment)
-  - `PORTFOLIO_CONSTRUCTION_RISK_PARITY.md` (correlation analysis, position sizing, volatility targeting)
-  - Execution timeline: June 15–30 research, July 1–15 implementation
-- **Owner**: stockbot subagent
-- **Deadline**: May 23 (pre-checkpoint research to support Gate 2 Phase 3 planning)
+### 10. ✅ stockbot — Phase 3 Multi-Ticker Expansion Architecture (Session 1455 COMPLETE)
+**Status**: Completed May 21 (Session 1455, 09:39-09:41 UTC). Files: `PHASE_3_TICKER_EXPANSION_FRAMEWORK.md` + `MULTI_TICKER_MODEL_TRANSFER_LEARNING_STRATEGY.md`. Decision framework complete with hard filters (ADOV, volatility bands, sector saturation), candidate pool analysis, and feature engineering transfer assessment. Cross-references existing `portfolio-construction-risk-parity.md`. Ready for June 15 activation upon Gate 2 PASS outcome.
 
-### 11. ⏳ cybersecurity-hardening — Phase 3 Advanced Threat Defense Architecture (Session 1455)
-**Scope**: Design Phase 3 scope to follow May 25-27 Phase 1 user execution + Phase 2 review completion.
-- **Context**: Phase 2 implementation roadmap complete and ready for May 25-27 user execution. While user executes Phase 2, research Phase 3 to support June 1 planning. Phase 3 covers threats not in Phase 2 scope: supply chain attacks, APT-level endpoint hardening, ransomware recovery, infrastructure-scale security (corporate/SMB models).
-- **Deliverables**:
-  - `PHASE_3_SUPPLY_CHAIN_SECURITY_ARCHITECTURE.md` (SBOM monitoring, dependency scanning, artifact verification)
-  - `PHASE_3_APT_ENDPOINT_DEFENSE.md` (kernel-level defense, behavioral detection, threat intel integration, incident response)
-  - `PHASE_3_RANSOMWARE_RECOVERY_PLAN.md` (immutable backups, recovery procedures, insurance integration)
-  - `PHASE_3_INFRASTRUCTURE_HARDENING.md` (network segmentation, IAM policies, zero trust, DNS security)
-  - Phase 3 execution timeline: June 1–30 planning, July 1–31 implementation
-- **Owner**: general-research subagent (non-implementation, research-focused)
-- **Deadline**: May 24 (pre-Phase-2-user-execution to ensure Phase 3 readiness)
+### 11. ✅ cybersecurity-hardening — Phase 3 Advanced Threat Defense Architecture (Session 1455 COMPLETE)
+**Status**: Completed May 21 (Session 1455, 09:40-09:44 UTC). All 4 files delivered: `PHASE_3_SUPPLY_CHAIN_SECURITY_ARCHITECTURE.md` (Syft/Grype/Cosign CI pipeline), `PHASE_3_APT_ENDPOINT_DEFENSE.md` (AppArmor/sysctl/Wazuh/osquery), `PHASE_3_RANSOMWARE_RECOVERY_PLAN.md` (3-2-1-1-0 immutable backups, restic+B2), `PHASE_3_INFRASTRUCTURE_HARDENING.md` (VLAN/Authentik/Tailscale/DNS). NIST SP 800-161/800-61 grounding. Ready for June 1 planning upon Phase 2 user execution completion (May 25-27).
 
-### 12. ⏳ open-repo — Phase 5.2 Feature Candidates Evaluation (Session 1455)
-**Scope**: Identify and evaluate Phase 5.2 feature candidates while awaiting May 25-26 user merge approval for Phase 5.1 MVP.
-- **Context**: Phase 5.1 MVP (zimwriter/libzim integration) ready for user merge review. Phase 5.2 should expand feature coverage to other "subset-of-humanity" domains not yet in open-repo. Pre-plan Phase 5.2 to support post-merge implementation (June 1+).
-- **Deliverables**:
-  - `PHASE_5.2_FEATURE_CANDIDATES.md` (top 10 candidate features: coverage gaps, impact, dependencies)
-  - `PHASE_5.2_CAPABILITY_AUDIT.md` (library/tool assessment for each candidate, implementation risk)
-  - `PHASE_5.2_PRIORITY_MATRIX.md` (impact × effort scoring, alignment with off-grid-living/systems-resilience projects)
-  - Recommended priority: biological preservation (seed banking, genetic archiving), offline medical references, water systems documentation
-  - Phase 5.2 execution timeline: June 1–30 (parallel to Phase 5.1 user feedback integration)
-- **Owner**: general-research subagent
-- **Deadline**: May 24 (pre-merge approval to ensure Phase 5.2 readiness)
+### 12. ✅ open-repo — Phase 5.2 Feature Candidates Evaluation (Session 1455 COMPLETE)
+**Status**: Completed May 21 (Session 1455, 09:41-09:45 UTC). All 3 files delivered: `PHASE_5.2_FEATURE_CANDIDATES.md` (10 candidates: Medical, Water, Seed, Food, Energy, Communications, Sanitation, Security, Governance, Botanical), `PHASE_5.2_CAPABILITY_AUDIT.md` (library requirements, data sources, ZIM compatibility, person-hours), `PHASE_5.2_PRIORITY_MATRIX.md` (composite scoring, top 5: Medical 8.20 / Water 7.90 / Seed 7.80 / Food 7.65 / Botanical 7.55, June 48-72 hour scope). Ready for post-Phase-5.1-merge implementation (June 1+).
 
 ---
 
