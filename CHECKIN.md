@@ -1,3 +1,50 @@
+## Session 1492 — ORCHESTRATOR: PRE-DEADLINE FINAL CHECK + STATE COMMIT (May 21, 23:16 UTC)
+
+**Status**: 🔴 **STOCKBOT SSH DEADLINE: May 22 13:30 UTC (~14h 14m remaining)** | ⏳ **All projects assessed; no autonomous work available**
+
+**What Happened**:
+
+1. ✅ **Stockbot SSH Status Verified (No Change)**
+   - Jetson still reachable (ping OK)
+   - SSH auth still failing: `ssh ubuntu@100.120.18.84` returns "Permission denied (publickey)"
+   - Orchestrator ED25519 key confirmed exists but is not authorized on Jetson
+   - **Status**: Block remains active; requires user action (Option A: add key to authorized_keys, OR Option B: SSH manually to apply config fix)
+   - **Time remaining**: ~14h 14m until May 22 13:30 UTC deadline
+
+2. ✅ **Project Assessment Complete**
+   - **stockbot**: Full block (SSH auth failure)
+   - **resistance-research**: Full block (synthesis deferred May 25, TOO_EARLY contingency active)
+   - **cybersecurity-hardening**: Full block (Windows VeraCrypt restart required)
+   - **mfg-farm**: Full block (physical test print required)
+   - **seedwarden**: Track B no blockers, but all Phase 2 user gates (social setup, Canva setup, Kit setup) require manual action — no autonomous prep work available beyond what's already staged
+   - **open-repo**: Phase 5.1 MVP confirmed production-ready: ✅ **240/240 backend tests PASS, 19 skipped**. Code awaits user merge approval.
+   - **systems-resilience**: Phase 5 Wave 1 complete, awaiting user decision on Wave 2 sequencing
+   - **off-grid-living**: Complete, awaiting user social media execution
+
+3. ✅ **Exploration Queue Status**
+   - Items 1–20: All complete or staged
+   - Items 21–26: Deferred pending external events (May 25 synthesis, May 22 checkpoint, scope decisions)
+   - **Assessment**: Queue correctly reflects project state; no new executable items available
+
+**Autonomous Work Available**: NONE
+- All active projects blocked on user actions (SSH, physical, restarts, decisions)
+- Exploration Queue empty of executable items
+- Pre-merge staging work (open-repo post-merge activation guide) is optional optimization, not critical path
+
+**Workspace State**:
+- **Modified files**: ORCHESTRATOR_STATE.md, projects/resistance-research/WORKLOG.md, projects/stockbot (submodule)
+- **Uncommitted changes**: Ready to commit on master
+- **Git status**: Master branch, 2,846 commits ahead of origin
+
+**Next Session Triggers**:
+- **May 22 13:30 UTC**: Stockbot checkpoint + SSH deadline pass/fail → auto-check if config updated
+- **May 22 20:00 UTC**: Checkpoint execution (scheduled automatic run)
+- **May 22 23:00 UTC**: Checkpoint outcome analysis + block resolution
+- **May 25 17:00 UTC**: Resistance-research signal log verify check
+- **May 25 19:00 UTC**: Synthesis execution or contingency routing
+
+---
+
 ## Session 1491 — ORCHESTRATOR: CRITICAL-DEADLINE WATCHDOG (May 21, 23:10 UTC)
 
 **Status**: 🔴 **STOCKBOT SSH DEADLINE: May 22 13:30 UTC (~14h 20m remaining)** | ✅ **Discord escalation sent**
