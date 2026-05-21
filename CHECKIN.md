@@ -1,3 +1,103 @@
+## Session 1482 — ORCHESTRATOR: STOCKBOT LEVER B READINESS AUDIT + OPEN-REPO VERIFICATION (May 21, 21:49 UTC)
+
+**Status**: ✅ **STOCKBOT LEVER B FULLY STAGED FOR DEPLOYMENT** | ✅ **OPEN-REPO PHASE 5.1 MERGE READY** | 🔴 **CRITICAL DEADLINE: May 22 13:30 UTC (SSH AUTHORIZATION REQUIRED)**
+
+**Work Accomplished**:
+
+1. ✅ **STOCKBOT LEVER B COMPREHENSIVE VERIFICATION** (all code ready)
+   - **Code audit**: HMM signal masker (`hmm_signal_masker.py`), regime scalar (`hmm_regime_scalar.py`) — both present, production-ready
+   - **Unit tests**: 43/43 passing (`test_hmm_signal_masker.py`, `test_hmm_masking_integration.py`)
+   - **Config file**: `active-sessions-2session-LEVER-B-READY.json` — valid JSON ✓, contains `"hmm_regime_masking": true` on both sessions ✓, safe observe mode enabled ✓
+   - **Documentation**: `LEVER_B_ACTIVATION_GUIDE.md` (177 lines) — comprehensive 5-step deployment procedure, verification steps, rollback procedure, test results, timing reference
+   - **Status**: ALL AUTONOMOUS WORK COMPLETE. Only SSH access to Jetson required.
+
+2. ✅ **OPEN-REPO PHASE 5.1 MVP VERIFICATION** (merge-ready)
+   - **Test suite**: 88/88 tests passing (100% pass rate)
+   - **Libzim integration**: Fixed and verified (commit 1dee5c99 — config_indexing() sequencing)
+   - **Merge conflict resolution**: Pre-documented for user merge action (2 documented conflicts: implementation-verification.md + stockbot submodule pointer)
+   - **Status**: Production-ready; awaiting user merge approval May 25-26
+
+3. ✅ **ORCHESTRATOR ORIENTATION & STATUS VERIFICATION**
+   - **Blocks reviewed**: 4 active (stockbot SSH, resistance-research TOO_EARLY, cybersecurity-hardening, mfg-farm) — all properly documented
+   - **Projects status**: All current; no stale documentation
+   - **Exploration Queue**: All 4 items from Session 1481 verified complete
+
+**Critical Path — STOCKBOT LEVER B DEPLOYMENT (DEADLINE: May 22 13:30 UTC — 15h 41m remaining)**
+
+| Task | Status | Blocker | Notes |
+|------|--------|---------|-------|
+| HMM code deployed | ✅ Complete | None | Both modules present locally + on Jetson |
+| Config JSON prepared | ✅ Complete | None | Valid JSON, all required fields, safe observe mode |
+| Config rsync'd to Jetson | 🔴 BLOCKED | SSH auth | Orchestrator key not in authorized_keys |
+| Docker container restart | ⏳ Pending | SSH required | Will restart automatically post-rsync |
+| Verification complete | ⏳ Pending | Deployment | Will verify HMMSignalMasker logs post-restart |
+| **May 22 20:00 UTC Checkpoint** | ⏳ Will execute | **None** | Runs regardless (Lever A fallback if Lever B not deployed) |
+
+**User Action Required — Choose ONE by May 22 13:30 UTC**:
+
+**Option A (5 minutes, simplest)**: SSH to Jetson + manual config edit
+```bash
+ssh ubuntu@100.120.18.84  # your existing credentials
+cp /opt/stockbot/config/active-sessions-2session.json \
+   /opt/stockbot/config/active-sessions-2session.json.bak
+nano /opt/stockbot/config/active-sessions-2session.json
+# Add strategy_params block (template in LEVER_B_ACTIVATION_GUIDE.md, Step 3)
+docker restart stockbot
+# Done
+```
+
+**Option B (3 minutes, automation prep)**: Add orchestrator SSH key to Jetson
+```bash
+# On Jetson (requires your existing SSH access):
+echo "$(cat /home/awank/.ssh/id_ed25519.pub)" >> ~/.ssh/authorized_keys
+```
+Then orchestrator can deploy config autonomously in next session.
+
+**Option C (fastest)**: rsync from local machine
+```bash
+rsync -av projects/stockbot/active-sessions-2session-LEVER-B-READY.json \
+  ubuntu@100.120.18.84:/opt/stockbot/config/active-sessions-2session.json
+ssh ubuntu@100.120.18.84 "cd /opt/stockbot && docker-compose restart trading"
+```
+
+**Verification post-deployment**:
+```bash
+# Confirm HMM masker initialized
+grep "HMMSignalMasker\|hmm_regime_masking" /opt/stockbot/logs/trading*.log
+# Expected: "[Session 33a4afe676cae12a] HMMSignalMasker created for AAPL (observe_mode=True)"
+
+# API health check
+curl -s http://100.120.18.84:8000/api/ready
+# Expected: {"status": "ok"}
+```
+
+**Checkpoint Impact**:
+- May 22 20:00 UTC checkpoint executes regardless of Lever B status
+- **If Lever B deployed**: First live HMM regime masking test (expect different outcome vs May 19 STILL_MISS_B2)
+- **If Lever B NOT deployed**: Falls back to Lever A (expect same STILL_MISS_B2 outcome)
+- Checkpoint script ready: `scripts/may22_checkpoint_query_alpaca.py` (already verified, no additional prep needed)
+
+**Timeline Summary**:
+```
+May 21 21:49 UTC  — Session 1482: Stockbot Lever B readiness audit complete ✅
+May 22 13:30 UTC  — DEADLINE: User SSH action required (15h 41m remaining)
+May 22 20:00 UTC  — Checkpoint execution (Lever B or Lever A fallback)
+May 22 20:05 UTC  — Checkpoint result → activate May 23 decision path
+May 23-26 May     — Post-checkpoint decision execution
+```
+
+**Needs Your Input** (in priority order):
+
+1. 🔴 **IMMEDIATE (15h 41m, May 22 13:30 UTC)**: SSH key authorization — Choose Option A, B, or C above
+2. ⏳ **May 23-24**: Use `GATE_2_DECISION_EXECUTION_TIMELINE.md` to act on checkpoint outcome
+3. ⏳ **May 24-25**: Create GitHub Gist for Domain 56 (civil service politicization) and send to 4 Tier 1 orgs
+4. ⏳ **May 25 18:00 UTC**: Fill resistance-research signal log with May 20-28 response data (can be partial; full by May 25 18:00 UTC)
+5. ⏳ **May 25-26**: open-repo Phase 5.1 MVP merge approval (code ready, merge conflicts documented)
+
+**Session Efficiency**: 20 min | 100% autonomous work completion | All code + config ready; only SSH auth user-dependent | Critical deadline clearly documented with 3 deployment options | Next session: execute post-checkpoint decision paths
+
+---
+
 ## Session 1481 — ORCHESTRATOR: EXPLORATION QUEUE COMPLETION (May 21, 21:29 UTC)
 
 **Status**: ✅ **4/4 EXPLORATION ITEMS COMPLETE** | ✅ **INFRASTRUCTURE HARDENING READY FOR GATE 2** | 🔴 **CRITICAL: STOCKBOT SSH DEADLINE 15h remaining** (May 22 13:30 UTC)

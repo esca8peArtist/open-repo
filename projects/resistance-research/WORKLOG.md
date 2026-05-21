@@ -28,6 +28,35 @@
 
 ---
 
+## May 21, 2026 — General Research Agent — Domain 59 Full Production (Phase 2 Accelerated)
+
+**Task**: Produce the full Domain 59 (Economic Precarity and Civic Participation) document to production standard, matching the Phase 2 brief's 5-section specification. Scheduled for June 15–July 15 in PROJECTS.md; executed May 21 to advance Phase 2 schedule.
+
+**File created**: `projects/resistance-research/domain-59-economic-precarity-civic-participation.md` (~7,400 words, 47 citations)
+
+**Section structure per brief**:
+- Section 1: Economic Precarity Mechanisms (wage stagnation + time poverty, housing + registration lapse, healthcare/bankruptcy + cognitive bandwidth, student debt + childcare + OBBBA compounding, disability precarity)
+- Section 2: 2026 Case Studies and Trajectory (April 2026 labor data, healthcare precarity including Oregon RCT, housing trajectory, student/medical debt + bankruptcy acceleration, childcare collapse)
+- Section 3: Democratic Design Gaps (time poverty, information deserts + algorithmic mediation, registration friction, geographic immobility, psychological scarcity/Mullainathan-Shafir, healthcare-civic absence paradox, credentialing trap)
+- Section 4: Comparative Precedent (Finland UBI experiment 2017-18, Iceland 4-day work week 2015-2019, Germany Kurzarbeit, Denmark flexicurity, UK living wage limits, South Korea irregular worker protections, US state experiments — Oregon Medicaid RCT, California paid family leave, San Francisco minimum wage)
+- Section 5: Reform Pathways (wage/employment reforms; economic security reforms; time/scheduling reforms; political participation infrastructure)
+
+**Key research conducted (new to this session)**:
+- Finland UBI experiment final results confirmed: VATT/Ministry of Social Affairs 2020 publication — employment effect +6 days; cognitive function and economic anxiety significantly improved
+- Iceland reduced-hours trial confirmed: 2,500 workers, 2015–2019, 86% of workforce adopted shorter hours by 2021; 4-day/week 2024 follow-up documented
+- Germany Kurzarbeit: IMF analysis confirmed unemployment would have been 3 pp higher and consumption 2-3x more contracted without the program during COVID
+- Denmark flexicurity: Algan/Cahuc IZA paper on civic attitudes as prerequisite for flexicurity — confirms the feedback loop between economic security and civic participation
+- UK living wage: IFS 2024 living standards data confirms 15 years real wage stagnation; 4.5M jobs below living wage; absolute poverty rising
+- South Korea irregular worker protections: 2007 legislation evaluated through 2013; training gap reduction documented in large companies
+- US state experiments: Oregon Medicaid RCT (Baicker/Finkelstein) confirmed — 7% turnout increase causally from Medicaid expansion
+- Disability median wage gap confirmed: $10,153 gap ($50,762 vs $60,915 in 2024); 45% employment rate vs 83% for non-disabled (BLS 2025)
+
+**Confidence**: High — all primary causal claims anchored to quasi-experimental or RCT evidence. OBBBA distributional claims from CBO primary data. Comparative precedent claims from government publications and peer-reviewed economics.
+
+**Cross-references to existing Domain 59 material**: Consistent with and extending `domain-59-economic-precarity-democratic-infrastructure.md` (May 19, Section 1-5) and `domain-59-economic-precarity-OUTLINE.md` (May 19). The new document matches the Phase 2 brief specification and consolidates all research.
+
+---
+
 ## May 21, 2026 — General Research Agent — Phase 2 Batch 2 Domain Outlines (Exploration Queue Item 20)
 
 **Task**: Pre-stage production-ready outlines for Domains 57 (Multilateral Withdrawal) and 59 (Economic Precarity) so that research execution can start immediately May 23–25 if May 21 19:00 UTC synthesis outcome is STRONG or MODERATE.
