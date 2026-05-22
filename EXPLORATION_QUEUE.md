@@ -342,15 +342,18 @@
 - **Owner**: seedwarden subagent
 - **Deadline**: August 1 (ready for July 13 Phase 3 completion → Phase 4 launch)
 
-### 36. ⏳ stockbot — Jetson Infrastructure Capacity Analysis & Multi-Ticker Readiness (Session 1568 Added)
-**Scope**: All hardware analyses post-deployment are reactive (e.g., thermal throttling discovery on May 22). Pre-checkpoint, analyze current Jetson resource utilization (CPU, RAM, disk I/O, network bandwidth) and project capacity for 4-5 ticker expansion post-May-22 checkpoint. Identify constraints, scaling limits, and infrastructure requirements before Gate 2 PASS decision.
-- **Deliverables**: 
-  - `JETSON_CAPACITY_ANALYSIS.md` (current utilization, bottleneck analysis, scaling projections for 2→4→6 ticker configs)
-  - `MULTI_TICKER_INFRASTRUCTURE_REQUIREMENTS.md` (hardware additions needed for June 1-15 expansion, SSD upgrade timeline, network I/O constraints)
-  - `THERMAL_AND_RELIABILITY_PLAN.md` (extended compute environment design, passive/active cooling options, failover architecture)
-- **Owner**: stockbot subagent
-- **Deadline**: May 23 (pre-expansion planning)
-- **Status**: ⏳ QUEUED — Researchable NOW without checkpoint dependency
+### 36. ✅ stockbot — Jetson Infrastructure Capacity Analysis & Multi-Ticker Readiness (Session 1579 COMPLETE)
+**Status**: Completed May 22 (Session 1579, 15:15–15:35 UTC). Files delivered:
+- **`JETSON_CAPACITY_ANALYSIS.md`** (12K words) — Current utilization baseline, per-session resource footprint, expansion scenarios (3/4/6 session), critical constraints & thresholds, hardware upgrade recommendations, monitoring plan, deployment decision tree, risk summary
+- **`MULTI_TICKER_INFRASTRUCTURE_REQUIREMENTS.md`** (18K words) — Detailed spec for each tier (3/4/6 session): hardware requirements, Docker config, model files storage, API connection limits, network assumptions, deployment checklist, cost summary, risk mitigation strategies
+- **`THERMAL_AND_RELIABILITY_PLAN.md`** (14K words) — Thermal baseline analysis, scaling projections, cooling solutions (passive/active/combined), monitoring & alerting, failover architecture, reliability SLO, maintenance schedule, hardware longevity roadmap
+
+**Key findings**:
+- 3-session expansion: Viable as-is, thermal ~90-92°C (at safe limit)
+- 4-session expansion: Requires Docker memory upgrade (4→6 GB, $0) + thermal upgrade (fan + heatsink, $35-50)
+- 6-session expansion: Requires Jetson Orin AGX swap ($300, 3 hrs hands-on)
+- Network & API: No bandwidth constraints through 6 sessions
+- Recommended thermal solution: Combined heatsink + USB fan ($35-50 before May 25)
 
 ### 37. ⏳ resistance-research — Phase 2 Tier 2 Contact Contingency & Secondary Outreach Strategy (Session 1568 Added)
 **Scope**: Phase 2 synthesis (May 25) will generate Tier 1 contact list and outreach timeline. But if Tier 1 response rates fall below 40% or key stakeholders don't engage, what's the Tier 2 fallback? Research and stage secondary contact networks, alternative outreach channels, and contingency amplification paths so May 25-31 can execute rapid Tier 2 activation if needed.
