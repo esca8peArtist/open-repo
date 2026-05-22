@@ -1,3 +1,64 @@
+## Session 1500 — ORCHESTRATOR: SSH BLOCK RE-VERIFIED + CRITICAL DEADLINE IMMINENT (May 22, ~02:00 UTC)
+
+**Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~11-12 hours remaining)**
+
+**What Happened**:
+
+1. ✅ **SSH Block Re-Verified — Still Active**
+   - Command: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+   - **Result**: Permission denied (publickey,password) — orchestrator key not authorized
+   - **Status**: Block remains active. No change since Session 1499 (01:10 UTC)
+   - **Impact**: May 22 20:00 UTC checkpoint WILL execute Lever A only if not resolved by 13:30 UTC
+
+2. **Autonomous Work Assessment**
+   - ✅ No new items in INBOX.md
+   - ✅ No resolved blocks in BLOCKED.md (SSH remains active with blank Resolution field)
+   - ✅ All projects remain blocked on external dependencies:
+     - stockbot: SSH auth (user action by 13:30 UTC)
+     - resistance-research: May 25 synthesis + user Gist creation
+     - cybersecurity-hardening: User VeraCrypt restart
+     - mfg-farm: Test print execution
+     - seedwarden: Three user gates (Instagram, Canva, email)
+     - open-repo: Medical reviewer ID (May 31)
+     - systems-resilience: Phase 5 Wave 2 decision
+   - **Verdict**: **Zero autonomous work available.** All projects blocked on named external dependencies (user actions, external events, decisions).
+
+**Needs Your Input** 🔴 **CRITICAL — 11-12 hours remaining**:
+
+**Execute ONE of these options by May 22 13:30 UTC**:
+
+**Option A (5 minutes)**: SSH manually and run the config fix
+```bash
+ssh ubuntu@100.120.18.84
+# (enter password or use your SSH key)
+nano /opt/stockbot/config/active-sessions-2session.json
+
+# Find both "AAPL_h10_lgbm_ho" and "AAPL_h10_ridge_wf" blocks
+# For each, ensure strategy_params contains: "hmm_regime_masking": true
+# Then: ctrl+x, y, enter to save
+
+docker restart stockbot
+curl http://localhost:8000/api/health
+# Should return: {"status":"ok","sessions":2}
+```
+
+**Option B (2-3 minutes)**: Add orchestrator's public key to Jetson
+```bash
+# Get the public key:
+cat /home/awank/.ssh/id_ed25519.pub
+
+# SSH to Jetson and add it:
+ssh ubuntu@100.120.18.84
+mkdir -p ~/.ssh && nano ~/.ssh/authorized_keys
+# Paste the public key on a new line, save (ctrl+x, y, enter)
+```
+
+**Consequences**:
+- ✅ **If resolved by 13:30 UTC**: May 22 20:00 UTC checkpoint executes with Lever B (HMM regime masking enabled)
+- 🔴 **If not resolved by 13:30 UTC**: May 22 20:00 UTC checkpoint executes with Lever A only (Lever B testing defeated, same outcome as May 19 STILL_MISS_B2)
+
+---
+
 ## Session 1499 — ORCHESTRATOR: CRITICAL DEADLINE ECHO + NO AUTONOMOUS WORK (May 22, 01:10 UTC)
 
 **Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (13 hours 20 minutes remaining)** — User action required TODAY
