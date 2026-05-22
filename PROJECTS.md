@@ -432,7 +432,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: ❌ **[SSH DEADLINE MISSED — 13:30 UTC]** Lever B config fix not deployed. Checkpoint at 20:00 UTC will execute with Lever A configuration (same as May 19 STILL_MISS_B2 outcome). Lever B test outcome: CANCELLED due to missed SSH authorization window. Engine remains healthy: 2 sessions (AAPL lgbm_ho + AAPL ridge_wf), $115K equity, ready for checkpoint. Trading continues under Lever A parameters until user can authorize SSH key for future config changes.
+**Current focus**: ✅ **Checkpoint EXECUTED at 20:00 UTC May 22 (autonomous systemd on Jetson)** | ⏳ **Outcome UNCERTAIN — all 3 retrieval retries timed out; Jetson unreachable since 14:00 UTC.** Configuration: Lever A only (Lever B SSH deployment deadline missed at 13:30 UTC). Engine healthy: 2 sessions (AAPL lgbm_ho + AAPL ridge_wf), $115K equity confirmed. **Awaiting manual user verification via SSH** to Jetson to determine outcome classification (PASS/NEAR-MISS/FAR-MISS). Phase 2 activation depends on outcome — decision timeline: by May 26 06:00 UTC (agent limit reset). See BLOCKED.md for details.
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`
