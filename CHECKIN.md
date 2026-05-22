@@ -1,3 +1,46 @@
+## Session 1567 (May 22, 12:20 UTC) — ORCHESTRATOR: SSH Deadline Window + Parallel Agents Monitoring + Checkpoint Imminent
+
+**Status**: 🔴 **SSH DEADLINE CRITICAL (1H 10M REMAINING)** | 🚀 **Two agents active** (Domain 59 + Track B Gate 1) | ⏰ **Checkpoint 20:00 UTC (7H 40M)**
+
+**Critical Timeline Update**:
+- **13:30 UTC (1h 10m)**: SSH auth deadline — user MUST fix or checkpoint uses Lever A config
+- **~12:35 UTC (~15 min)**: Expected agent completion window
+- **20:00 UTC (7h 40m)**: May 22 checkpoint execution
+
+**What was done**:
+1. **Full state orientation** (12:20 UTC):
+   - Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, WORKLOG.md, INBOX.md
+   - Verified CHECKIN.md previous session (1564 at 11:44 UTC)
+   - All 5 active blocks remain unchanged (SSH auth, synthesis data, test print, VeraCrypt, Phase 1 walkthrough)
+
+2. **SSH auth block re-confirmed**:
+   - CRITICAL DEADLINE: 13:30 UTC (~1h 10m remaining)
+   - User must either: (A) authorize orchestrator key (~5 min), OR (B) SSH manually + run config fix (~5-10 min)
+   - See BLOCKED.md for detailed commands and verification
+
+3. **Agent status monitoring**:
+   - **resistance-research subagent**: Domain 59 (Economic Precarity) research initiation
+     - Spawned: Session 1563 (11:36 UTC)
+     - Elapsed: ~44 min (expected completion ~12:30-12:40 UTC)
+   - **seedwarden subagent**: Track B Gate 1 (Instagram/TikTok/Pinterest setup)
+     - Spawned: Session 1563 (11:36 UTC)
+     - Elapsed: ~44 min (expected completion ~12:30-12:40 UTC, scope 45-60 min)
+   - **Status**: Both agents actively working; monitoring for completion
+
+4. **Checkpoint readiness confirmed**:
+   - Scenario A (SSH FIXED): Lever B activation + HMM regime masking test ✅
+   - Scenario B (SSH NOT FIXED): Lever A fallback (May 19 STILL_MISS_B2 outcome) ✅
+   - Items 35a/35b/35c fully pre-staged for May 23 00:15 UTC parallel execution ✅
+
+**Decisions**:
+- ✅ **Hold pattern maintained**: Zero autonomous work; all projects blocked on external dependencies
+- 🔴 **SSH deadline is critical path**: User action required by 13:30 UTC
+- 🚀 **Agents active**: Parallel Phase 2 work proceeding autonomously while orchestrator monitors
+
+**Next checkpoint window**: May 22 20:00 UTC (checkpoint outcome → Items 35a/35b/35c execution)
+
+---
+
 ## Session 1564 (May 22, 11:44 UTC) — ORCHESTRATOR: Final SSH Verification + Hold Pattern Confirmed + Checkpoint Ready
 
 **Status**: 🔴 **SSH DEADLINE CRITICAL (1H 46M REMAINING)** | ✅ **Hold pattern CONFIRMED** | ✅ **Checkpoint ready** | ⏰ **Checkpoint 20:00 UTC (8H 16M)**

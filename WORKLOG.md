@@ -1,5 +1,56 @@
 # Work Log
 
+## Session 1567 (2026-05-22 12:20 UTC) — ORCHESTRATOR: SSH Deadline Window + Parallel Agent Monitoring + Checkpoint Staged
+
+**Status**: 🔴 **SSH DEADLINE CRITICAL (1H 10M REMAINING)** | 🚀 **Two agents active** (Domain 59 + Track B Gate 1, est. completion ~12:35-12:40 UTC) | ⏰ **Checkpoint 20:00 UTC (7H 40M)**
+
+**What was done**:
+
+1. **Complete state re-orientation** (12:20 UTC):
+   - Read ORCHESTRATOR_STATE.md, WORKLOG.md (Sessions 1563-1566), PROJECTS.md, BLOCKED.md, INBOX.md, CHECKIN.md
+   - INBOX.md: No new items
+   - All 5 active blocks verified unchanged since Session 1566 (11 min prior)
+   - Agent spawning confirmed (Session 1563 11:36 UTC)
+
+2. **SSH auth deadline verification** (12:20 UTC):
+   - CRITICAL DEADLINE: 13:30 UTC (~1h 10m remaining)
+   - Block status: Still FAILING as of Session 1566 (11:08 UTC final verification)
+   - User MUST apply Option A (~5 min) or Option B (~5-10 min) by deadline or Lever B test is defeated
+   - See BLOCKED.md for full command details
+
+3. **Agent monitoring** (12:20 UTC):
+   - **resistance-research**: Domain 59 research initiation spawned 11:36 UTC, running ~44 min
+   - **seedwarden**: Track B Gate 1 (Instagram/TikTok/Pinterest) spawned 11:36 UTC, running ~44 min
+   - Expected completion: ~12:30-12:40 UTC (est. 10-20 min remaining)
+   - Parallel execution confirmed active; monitoring for completion notifications
+
+4. **Checkpoint readiness audit** (12:20 UTC):
+   - May 22 20:00 UTC checkpoint fully staged and ready
+   - Scenario A (SSH FIXED): Lever B HMM regime masking test ✅
+   - Scenario B (SSH NOT FIXED): Lever A fallback (same as May 19) ✅
+   - Items 35a/35b/35c all pre-staged for May 23 00:15 UTC parallel execution ✅
+
+5. **Autonomous scope re-confirmed**:
+   - All 12 active projects remain blocked on external dependencies (SSH fix, user decisions, test print, VeraCrypt, synthesis data)
+   - No additional autonomous work available before checkpoint
+   - Exploration Queue healthy (Items 35a/35b/35c near-term, Items 33/34/35 long-term)
+
+**Critical Timeline**:
+- **13:30 UTC (~1h 10m)**: SSH deadline — checkpoint outcome depends on this fix
+- **~12:35 UTC (~15 min)**: Expected agent completion window
+- **20:00 UTC (7h 40m)**: Checkpoint execution + Items 35a/35b/35c post-checkpoint staging
+
+**Decisions**:
+- ✅ **Hold pattern maintained**: Zero autonomous work; agents active in parallel; all other projects blocked
+- 🔴 **SSH deadline is critical path**: User action required; no orchestrator workaround available
+- ✅ **Checkpoint fully staged**: Either outcome (SSH fixed or not) routes to fully pre-staged Items 35a/35b/35c
+
+**Next autonomous window**: 
+- May 22 ~12:35-12:40 UTC: Agent completion notifications → log results
+- May 22 20:00 UTC: Checkpoint execution → Items 35a/35b/35c parallel spawn
+
+---
+
 ## Session 1566 (2026-05-22 12:13 UTC) — ORCHESTRATOR: Block Verification + SSH Deadline Imminent (1H 17M REMAINING)
 
 **Status**: 🔴 **SSH DEADLINE CRITICAL (1H 17M REMAINING)** | ✅ **Hold pattern CONFIRMED** | ✅ **Checkpoint ready** | ⏰ **Checkpoint 20:00 UTC (7H 47M)**
