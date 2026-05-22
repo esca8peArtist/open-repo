@@ -1,18 +1,19 @@
 """
 ZimWriter: Python-libzim-based ZIM file generation for open-repo offline exports.
 
-This module provides the stub interfaces for Phase 5 ZIM file generation. The class
-structure, method signatures, docstrings, and data models are complete. The actual
-python-libzim integration is stubbed with TODO markers at each integration point.
+Phase 5.1 production implementation. Generates valid ZIM archives using the
+python-libzim C extension (libzim>=3.10.0,<4.0). Includes Xapian full-text search
+indexing, federated attribution footers, and graceful fallback for environments
+where libzim is not installed.
 
 Design references:
   - phase-5-kiwix-integration-guide.md (metadata spec, naming, CDN)
   - phase-5-offline-export-architecture.md (end-to-end flow, federation integration)
   - phase-5-kiwix-architecture.md (python-libzim API overview)
 
-Dependencies (to be added to pyproject.toml before full implementation):
-  - libzim>=3.2,<4.0  (PyPI package name: libzim, not python-libzim)
-  - jinja2>=3.1       (likely already present via Phase 4)
+Dependencies (listed in pyproject.toml):
+  - libzim>=3.10.0,<4.0  (PyPI package name: libzim; C++ 9.7.0 hardening patches)
+  - jinja2>=3.1
 
 Usage pattern (post-implementation):
     metadata = ZimMetadata(
@@ -40,6 +41,7 @@ Usage pattern (post-implementation):
 from __future__ import annotations
 
 import hashlib
+import html as html_module
 import logging
 import subprocess
 from dataclasses import dataclass, field
@@ -47,6 +49,7 @@ from datetime import datetime
 from enum import Enum
 from pathlib import Path
 from typing import Optional
+from urllib.parse import urlparse
 
 from libzim.writer import Creator, Item, StringProvider, Hint, Compression
 
@@ -901,16 +904,37 @@ class ZimWriter:
         if not source_node_url:
             return content
 
+        # Sanitize all federation-partner-supplied strings before HTML interpolation.
+        # source_node_url and source_node_name originate from untrusted federated peers;
+        # without sanitization a malicious peer could inject stored XSS into the ZIM.
+        safe_node_name = html_module.escape(source_node_name or "", quote=True)
+
+        # Reject javascript: and data: URI schemes to prevent protocol-level XSS.
+        _ALLOWED_URL_SCHEMES = {"http", "https", "ftp"}
+        try:
+            parsed = urlparse(source_node_url)
+            if parsed.scheme.lower() not in _ALLOWED_URL_SCHEMES:
+                logger.warning(
+                    "Attribution footer: rejected unsafe URL scheme '%s' from peer '%s'",
+                    parsed.scheme, source_node_name,
+                )
+                return content
+        except Exception:
+            return content
+        safe_node_url = html_module.escape(source_node_url, quote=True)
+
         license_link = ""
         if license_url and license_name:
-            license_link = f' under <a href="{license_url}">{license_name}</a>'
+            safe_license_url = html_module.escape(license_url, quote=True)
+            safe_license_name = html_module.escape(license_name, quote=True)
+            license_link = f' under <a href="{safe_license_url}">{safe_license_name}</a>'
         elif license_name:
-            license_link = f" under {license_name}"
+            license_link = f" under {html_module.escape(license_name, quote=True)}"
 
         footer = (
             f'\n<footer class="attribution">'
             f'<p>Originally published on '
-            f'<a href="{source_node_url}">{source_node_name}</a>{license_link}.</p>'
+            f'<a href="{safe_node_url}">{safe_node_name}</a>{license_link}.</p>'
             f'</footer>'
         )
 
