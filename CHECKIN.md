@@ -7,7 +7,7 @@
 - **Time remaining**: 61 minutes to checkpoint (20:00 UTC)
 - **Project status**: All 4 active blocks remain unresolved; no new INBOX items
 - **Autonomy**: Agent limit enforced + external dependencies → no autonomous work until May 26 06:00 UTC reset or post-checkpoint
-- **Action**: Scheduled ScheduleWakeup(20:04 UTC) to monitor Items 35a/35c post-checkpoint activation eligibility
+- **Action**: ✅ ScheduleWakeup(21:05 UTC / +3360s) created to monitor Items 35a/35c post-checkpoint activation eligibility (fires after checkpoint completes at 20:00 UTC)
 
 **Critical Timeline**:
 - **20:00 UTC**: Checkpoint executes autonomously on Jetson (systemd timer, ~99% certainty)

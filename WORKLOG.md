@@ -12,7 +12,9 @@
 
 **Session Verdict**: Brief confirmation session. Checkpoint will execute autonomously on Jetson at 20:00 UTC. No autonomous work available pending agent limit reset (May 26 06:00 UTC) or post-checkpoint completion. All state current and ready. Orchestrator monitoring active via scheduled wakeup.
 
-**Commit**: WORKLOG.md + CHECKIN.md (Session 1604)
+**Follow-up (19:08 UTC)**: Wakeup scheduled for 21:05 UTC (+3360s) — will fire after checkpoint completes to monitor Items 35a/35c post-checkpoint activation eligibility. Hold pattern remains FINAL and CORRECT.
+
+**Commit**: WORKLOG.md + CHECKIN.md (Session 1604 + wakeup confirmation)
 
 ---
 
