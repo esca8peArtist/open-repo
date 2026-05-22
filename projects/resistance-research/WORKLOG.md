@@ -5809,3 +5809,78 @@ Created a 500–800 word executable contingency playbook condensing PHASE_1_POST
 
 - `/projects/resistance-research/CONTINGENCY_ACTIVATION_PLAYBOOK.md` — CREATED
 - `/projects/resistance-research/WORKLOG.md` — UPDATED (this entry)
+
+---
+
+## May 22, 2026 — Resistance Research Agent — Phase 2 Distribution Infrastructure: Domains 57, 58, 59
+
+**Session type**: Distribution infrastructure creation — Phase 2 domain distribution build-out
+**Files created**: 9 new execution files (3 per domain: email template, contact list, gist creation steps)
+**Domains covered**: Domain 57 (Multilateral Withdrawal), Domain 58 (Tribal Sovereignty), Domain 59 (Economic Precarity)
+**Note**: Domain 56 distribution infrastructure was already complete (email template, contact list, gist creation steps, social media, wave-1-readiness all existed in execution/ from May 18, 2026)
+
+---
+
+### Phase 2 Distribution Infrastructure Status
+
+All four Phase 2 domains (56, 57, 58, 59) now have complete distribution infrastructure. Summary:
+
+| Domain | Email Template | Contact List | Gist Steps | Status |
+|--------|---------------|--------------|------------|--------|
+| 56 (Civil Service) | execution/domain-56-email-template.md | execution/domain-56-contact-list.md | execution/domain-56-gist-creation-steps.md | COMPLETE (May 18) |
+| 57 (Multilateral Withdrawal) | execution/domain-57-email-template.md | execution/domain-57-contact-list.md | execution/domain-57-gist-creation-steps.md | COMPLETE (May 22) |
+| 58 (Tribal Sovereignty) | execution/domain-58-email-template.md | execution/domain-58-contact-list.md | execution/domain-58-gist-creation-steps.md | COMPLETE (May 22) |
+| 59 (Economic Precarity) | execution/domain-59-email-template.md | execution/domain-59-contact-list.md | execution/domain-59-gist-creation-steps.md | COMPLETE (May 22) |
+
+---
+
+### Domain 57 — Multilateral Withdrawal (August 10 distribution target)
+
+**Email template**: 4 templates — international human rights organizations, foreign policy/democracy research, congressional staff (NDAA Section 1250A / Treaty Withdrawal Notification Act), universal jurisdiction litigation networks
+**Contact list**: 12 contacts across 4 tiers — HRW, CICC, Freedom House, Amnesty (Tier 1); NDI, Carnegie, TRIAL International, ECCHR, Senate Foreign Relations (Tier 2); CFR, Stimson, FIDH (Tier 3)
+**Gist steps**: Filename `domain-57-multilateral-withdrawal-us-commitment-collapse-2026.md`; Zone A/B/D structure; API alternative provided; create by August 8
+**Hook**: ICC sanctions domestic First Amendment story + constitutional asymmetry (NDAA Section 1250A) + Hungary reversal as democratic recovery proof-of-concept
+**Send window**: August 10–31 (six weeks before UNGA 81 High-Level Week September 22–28)
+
+### Domain 58 — Tribal Sovereignty (June 5 distribution target)
+
+**Email template**: 4 templates — tribal legal/sovereignty organizations, voting rights organizations, congressional oversight staff, academic federal Indian law
+**Contact list**: 13 contacts — NARF, NCAI, Brennan Center, ACLU Voting Rights, NCUIH (Tier 1); Campaign Legal Center, Senate Indian Affairs, Democracy Forward, Native News Online, Leadership Conference (Tier 2); Georgetown Law, Protect Democracy, NIHB (Tier 3)
+**Gist steps**: Filename `domain-58-tribal-sovereignty-democratic-infrastructure-2026.md`; rapid response protocol for Trump v. Barbara ruling; create by June 3
+**Critical rapid response**: If Trump v. Barbara issues before June 10, advance all Tier 1 sends to within 72 hours of ruling — flag in CHECKIN.md
+**Send window**: June 5–30; Trump v. Barbara ruling (June/July 2026) is the distribution trigger
+
+### Domain 59 — Economic Precarity (June 1 distribution target)
+
+**Email template**: 4 templates — labor organizations/economic justice research, voting rights/democracy reform, healthcare/social policy research, maternal justice/childcare advocacy
+**Contact list**: 14 contacts — EPI, CBPP, Demos, NWLC, NELP (Tier 1); AFL-CIO, Brennan Center, MomsRising, Urban Institute, CLASP (Tier 2); Common Cause, RWJF, PFAW, Families USA (Tier 3)
+**Gist steps**: Filename `domain-59-economic-precarity-civic-participation-crisis-2026.md`; create by May 30; Senate Finance Committee CTC/RTC markup window is the send trigger
+**Hook**: 42-point income turnout gap (highest in modern US history) + five mechanistic pathways + OBBBA Medicaid implementation live (Nebraska May 1, 2026)
+**Send window**: June 1–21; aligned with Senate Finance Committee CTC/RTC markup
+
+---
+
+### Gist Creation: May 24 User Action
+
+All three new domains require Gist creation before first sends. Recommended creation order and dates:
+
+1. **Domain 59** — Create May 30 (two days before June 1 send window)
+2. **Domain 58** — Create June 3 (two days before June 5 send window; or same day if Trump v. Barbara issues first)
+3. **Domain 57** — Create August 8 (two days before August 10 send window)
+
+For May 24: If Domain 56 Gist has not yet been created, that is the first priority. Domain 59 Gist creation on May 30 is the next deadline. All Gist creation procedures are in `execution/domain-NN-gist-creation-steps.md`.
+
+---
+
+### Files Created/Modified
+
+- `projects/resistance-research/execution/domain-57-email-template.md` — CREATED
+- `projects/resistance-research/execution/domain-57-contact-list.md` — CREATED
+- `projects/resistance-research/execution/domain-57-gist-creation-steps.md` — CREATED
+- `projects/resistance-research/execution/domain-58-email-template.md` — CREATED
+- `projects/resistance-research/execution/domain-58-contact-list.md` — CREATED
+- `projects/resistance-research/execution/domain-58-gist-creation-steps.md` — CREATED
+- `projects/resistance-research/execution/domain-59-email-template.md` — CREATED
+- `projects/resistance-research/execution/domain-59-contact-list.md` — CREATED
+- `projects/resistance-research/execution/domain-59-gist-creation-steps.md` — CREATED
+- `projects/resistance-research/WORKLOG.md` — UPDATED (this entry)
