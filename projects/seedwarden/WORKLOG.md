@@ -4,6 +4,85 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Photo Attribution Log Pre-Staging — May 22, 2026
+
+**Task**: Advance Track B toward May 30 launch target. Audit full project state, identify highest-value autonomous work, and execute.
+
+**Files read**: ORCHESTRATOR_STATE.md, WORKLOG.md (recent sessions and lines 3830–3910), TRACK_B_MAY22_PRELAUNCH_STATUS.md, TRACK_B_USER_GATES.md, TRACK_B_MAY_30_LAUNCH_READINESS_CHECKLIST.md, PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md (v8.0, all 841 lines), PHASE_3_MEDICINAL_HERBS_LAUNCH_CHECKLIST.md (v1.0), phase-3-medicinal-herbs-sourcing-guide.md (all parts), phase-3-medicinal-herbs-content-outline.md (first 60 lines), native-plants-guide-expansion.md (first 80 lines).
+
+**Audit findings**:
+- 18/18 wild-edibles habit photos: CONFIRMED PRESENT in `assets/wild-edibles/`. All CC-licensed, all attributions logged at WORKLOG.md lines 3882–3905. No further work needed on this standing task (the ORCHESTRATOR_STATE.md agent profile shows "0/18 complete" but this is stale — previous sessions completed all 18).
+- Phase 3 critical path: COMPLETE at v8.0 (12,211 words, 9 sections + 2 appendices). No gaps found. Appendix A (FTC Quick Reference) and CITES verbatim sidebar both present. Appendix B (Pre-Sprint Action Checklist) complete.
+- Phase 3 scope decision analysis: COMPLETE (phase-3-scope-decision-analysis.md, produced this session by prior agent). Recommendation: Option C.
+- Phase 3 timeline CSV: COMPLETE (phase-3-timeline.csv, 76 rows, produced this session).
+- May 30 launch checklists: THREE versions exist and are comprehensive (SEEDWARDEN_MAY_30_FINAL_LAUNCH_CHECKLIST.md, MAY_30_FINAL_LAUNCH_READINESS_CHECKLIST.md, TRACK_B_MAY_30_LAUNCH_READINESS_CHECKLIST.md).
+- All 3 Track B user gates (social accounts, Canva Brand Kit, Kit email): OVERDUE as of May 22. Not started. These are user-action items only — no autonomous path.
+- Zone card PDFs: ABSENT from `assets/zone-cards/` (0 PDFs). User-action item requiring Canva (Gate 2 + zone card production).
+- `assets/phase-3-medicinal-herbs/` directory: DID NOT EXIST before this session.
+- `PHOTO_ATTRIBUTION_LOG.md` for Phase 3: DID NOT EXIST. This was an explicit AGENT task in PHASE_3_MEDICINAL_HERBS_LAUNCH_CHECKLIST.md Section 3.3 (line 224: "June 5–10 | Create PHOTO_ATTRIBUTION_LOG.md in assets/phase-3-medicinal-herbs/ | AGENT").
+
+**Autonomous work executed**:
+
+**Deliverable 1**: Created `assets/phase-3-medicinal-herbs/` directory (previously absent).
+
+**Deliverable 2**: Created `projects/seedwarden/assets/phase-3-medicinal-herbs/PHOTO_ATTRIBUTION_LOG.md` (~350 lines).
+
+Content covers all 14 unique species across all 5 bundles:
+- Women's Health: Black Cohosh, Vitex, Red Clover, Calendula, Lavender
+- Respiratory: Elderberry, Mullein, Echinacea purpurea, Echinacea angustifolia, Thyme
+- Sleep: Valerian, Passionflower, Lemon Balm (Lavender cross-referenced from WH)
+- Immunity: Ashwagandha, Goldenseal (Echinacea + Elderberry cross-referenced from Resp)
+- Digestive: Dandelion (root only — habit pre-staged from wild-edibles archive), Ginger (Calendula + Lemon Balm cross-referenced)
+
+Per species: Wikimedia Commons search URL, iNaturalist fallback URL, priority shot list, target filename convention, empty confirmation table (user fills June 1–21), mandatory warnings flagged for guide body (Ashwagandha, Passionflower, Valerian, Lemon Balm, Goldenseal CITES verbatim sidebar).
+
+One image pre-staged (dandelion habit: existing wild-edibles archive, Greg Hume CC BY-SA 3.0, source URL logged, attribution string complete).
+
+**Key findings**:
+- The log eliminates a zero-float, 1-hour task from the June 21 pre-sprint gate (attribution logging). User now opens the log, fills confirmed image selections column-by-column during the June 1–21 window, and the June 21 gate becomes a completion verification rather than a creation task.
+- All Wikimedia search URLs are pre-populated from phase-3-medicinal-herbs-sourcing-guide.md — user does not need to construct URLs manually.
+- Eric Hunt CC-BY-SA 4.0 and H. Zell CC-BY-SA 3.0 are called out for Goldenseal (confirmed in v8.0 critical path) as the primary known CC sources.
+- Cross-bundle shared species are logged once and cross-referenced (Calendula, Lemon Balm, Lavender, Echinacea, Elderberry) — no duplicate sourcing work required.
+
+**Sources read**: phase-3-medicinal-herbs-sourcing-guide.md (all parts — Wikimedia URLs, iNaturalist fallbacks, direct contact targets), PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md v8.0 (Section 1 supplier intelligence, Appendix A FTC/CITES text), phase-3-medicinal-herbs-content-outline.md (species list verification).
+
+---
+
+## Seedwarden Agent Session — Phase 3 Scope Decision Analysis — May 22, 2026
+
+**Task**: Produce quantitative decision framework for choosing between Options A (5-bundle solo), B (2-writer outsourced), and C (3-bundle solo) before May 30.
+
+**Files read**: `phase-3-scope-decision-matrix.md`, `PHASE_3_OPTION_ANALYSIS.md`, `phase-3-medicinal-herbs-strategy.md`, `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v8.0, header), `phase-3-financial-projections.md`.
+
+**Files produced**:
+- `projects/seedwarden/phase-3-scope-decision-analysis.md` — ~2,000-word decision framework including: executive summary (default = Option C); market demand scores for all 5 bundles (Women's Health 9/10, Sleep 8/10, Respiratory 8/10, Immunity 7/10, Digestive 6/10); ROI projection table with 90-day revenue, 12-month cumulative, gross margin %, and payback period by option; production timeline comparison (wall-clock, person-hours, float days); outsourcing analysis ($1,600–$2,000 realistic writer cost, zero-float June 1 deadline, payback condition); per-bundle and per-option risk matrix with sunk-cost ceiling; final decision rules keyed to May 30 Phase 1 sales data (trigger thresholds: 30 sales / 1.5% / 3% / writer confirmed).
+
+**Key findings**:
+- Option C delivers the strongest net 90-day return ($2,030–$2,670) at lowest sunk-cost exposure ($1,471 max unrecoverable); Option B's $700 annual advantage does not offset $1,600–$2,000 writer cost
+- Women's Health and Sleep are the two highest-demand bundles and the two most requiring author accuracy — making them poor candidates for writer delegation
+- Decision rules are tied directly to May 30 Phase 1 launch data; no decision needs to be made before then
+
+---
+
+## Seedwarden Agent Session — Phase 3 Critical Path v9.0 + Gantt CSV — May 22, 2026
+
+**Task**: Produce comprehensive Phase 3 medicinal herbs production timeline with critical path analysis for June 22–July 13. Deliverables: `phase-3-medicinal-herbs-critical-path.md` (v9.0, all 7 sections) and updated `phase-3-timeline.csv` (Gantt-ready, columns: task / start / duration / dependencies / float).
+
+**Files read**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v8.0, all 842 lines), `phase-3-medicinal-herbs-critical-path.md` (v1.0 decision brief, all 390 lines), `phase-3-medicinal-herbs-gantt-timeline.csv` (all 79 rows), `phase-3-timeline.csv` (existing 70 rows), `WORKLOG.md` (lines 1–80).
+
+**Files produced**:
+- `projects/seedwarden/phase-3-medicinal-herbs-critical-path.md` — upgraded from v1.0 decision brief (~2,800 words) to v9.0 comprehensive production reference (7,760 words, 7 full sections + float day analysis + May 30 action checklist + companion document map). Covers: (1) Bundle selection + sourcing timeline with May 22 supplier intelligence; (2) Day-by-day writing schedule for all 22 sprint days with word targets, hours, float, and critical path flags; (3) Canva design timeline with per-bundle schedule, palette hex codes, and design lock protocol; (4) Photography staging — fresh vs. dried decision table, pre-sprint track June 3–21, in-sprint sessions June 23–26, supplier coordination; (5) Upload sequence June 29–August 3 with strategic rationale, per-bundle upload checklist, Kit email triggers, fallback paths; (6) Risk scoring matrix (11 items), supplier delay recovery, writing bottleneck resolution order, FTC quick reference, mandatory per-species warnings, CITES verbatim sidebar; (7) Full inline Gantt June 22–July 13 by week and track with float days, float inventory, critical path zero-float chain, float summary table.
+- `projects/seedwarden/phase-3-timeline.csv` — updated to 76 data rows + header; columns: task / start / duration / dependencies / float. Covers all pre-sprint decisions, supplier deadlines, photography, sprint Days 1–22, milestones (Women's Health upload June 29, Resp July 6, Sleep July 13, Immunity July 20, Digestive Aug 3), practitioner tier activation July 15, 8 contingency scenarios.
+
+**Key findings**:
+- Both Phase 2 launch gates remain CLEARED: forager cohort 21.3%, native plants conversion 2.24%
+- Critical path is writing only — design and photography carry 3–14 days of float each
+- Zero-float chain runs May 30 decisions through August 3 full launch
+- Recommended path unchanged: Option C (3-bundle priority) + Path 2 (Wikimedia CC for Goldenseal)
+- June 8 is the next hard user deadline: Goldenseal path confirmation + AHG reviewer outreach
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Decision Brief Production — May 22, 2026
 
 **Task**: Verify production-readiness of `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` v8.0 (Exploration Queue task: 3–4 hour analysis). Produce `phase-3-medicinal-herbs-critical-path.md` as an actionable decision brief to enable Go/No-Go decisions on Phase 3 scope before May 30.
