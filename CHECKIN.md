@@ -1,3 +1,24 @@
+## Session 1540 — ORCHESTRATOR: FINAL PRE-CHECKPOINT VERIFICATION (May 22, 08:23 UTC — 5H 7MIN TO DEADLINE)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~5H 7MIN REMAINING)** | ✅ **Hold pattern VERIFIED STABLE** | ✅ **No autonomous work available** | ✅ **All blocks unchanged**
+
+**What was done**:
+- **Critical deadline verification**: Re-ran SSH auth check — **STILL FAILING** (`Permission denied (publickey,password)`)
+- **Block status**: All 4 blocks verified unchanged (stockbot SSH, resistance-research TOO_EARLY, cybersecurity-hardening VeraCrypt, mfg-farm test print)
+- **Project scope audit**: Re-read Goals for unfinished autonomous scope — all high-priority projects blocked on named external dependencies
+- **Conclusion**: Hold pattern remains CORRECT and COMPLETE. System properly awaiting user SSH auth fix or May 22 20:00 UTC checkpoint outcome.
+
+🔴 **ABSOLUTE CRITICAL — USER ACTION DEADLINE: 13:30 UTC (5H 7MIN REMAINING)**:
+- **Stockbot Lever B HMM config MUST be fixed by checkpoint execution** (see BLOCKED.md lines 73-104)
+- **Choose ONE** (fastest path is Option A):
+  - **Option A** (fastest, <5 min): Add orchestrator ED25519 public key to Jetson authorized_keys
+  - **Option B** (manual SSH, ~5 min): SSH and run 5-min config fix (commands in BLOCKED.md)
+- **Verify**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` should return OK
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (Lever B activation outcome determines Phase 2 synthesis routing)
+
+---
+
 ## Session 1539 — ORCHESTRATOR: HOLD PATTERN STABLE + FINAL PRE-CHECKPOINT WINDOW (May 22, 08:16–08:25 UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~5H 5MIN REMAINING)** | ✅ **Hold pattern VERIFIED STABLE** | ✅ **No autonomous work available** | ✅ **All blocks unchanged**
