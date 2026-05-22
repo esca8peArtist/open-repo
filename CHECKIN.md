@@ -1,3 +1,40 @@
+## Session 1551 — ORCHESTRATOR: SSH Deadline Verification + Critical Alert (May 22, 09:57–10:05 UTC)
+
+**Status**: 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (3H 33MIN)** | ✅ **Hold pattern verified stable** | ✅ **Discord alert sent** | ⏰ **Awaiting user action or checkpoint**
+
+**What was done**:
+1. **Verified SSH block status (09:57 UTC)**: Ran orchestrator SSH verification command:
+   - Result: `Permission denied (publickey,password)` — orchestrator key NOT authorized on Jetson
+   - Block remains REAL and blocking
+   
+2. **Confirmed zero autonomous work before checkpoint**:
+   - All active projects blocked on external dependencies only
+   - Exploration Queue Items 35a/35b/35c staged for 20:00 UTC post-checkpoint
+   - No pre-checkpoint work available
+   - Hold pattern verified correct and stable
+
+3. **Sent critical Discord alert**:
+   - Notified user of SSH deadline: 13:30 UTC (3h 33min remaining)
+   - Provided two user action options (A: add public key, B: manual SSH + config fix)
+   - Alerted that failure to fix results in checkpoint FAIL outcome
+
+4. **Updated WORKLOG.md** — Logged Session 1551 verification and alert
+
+**Critical deadline status**:
+- **13:30 UTC (3h 33min)**: Stockbot Lever B HMM config must be activated or checkpoint will execute with Lever A (FAIL outcome)
+- **User options**: 
+  - Option A (fastest, <5 min): Add orchestrator ED25519 public key to Jetson authorized_keys
+  - Option B (5-10 min): SSH manually and run config fix (BLOCKED.md lines 77-101)
+
+**Next autonomous window**:
+- **13:30 UTC**: If SSH fixed, orchestrator can deploy config remotely (auto-execution)
+- **20:00 UTC**: May 22 checkpoint executes (Lever B activation success/failure determines next phase)
+- **20:00+ UTC**: Items 35a/35b/35c execution begins (4-6 hours total work based on checkpoint outcome)
+
+**Files committed**: WORKLOG.md, CHECKIN.md
+
+---
+
 ## Session 1550 — ORCHESTRATOR: Hold Pattern Confirmation (May 22, 09:50–10:10 UTC)
 
 **Status**: 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (~3H 20MIN REMAINING)** | ✅ **Hold pattern STABLE** | ✅ **All blocks verified real** | ✅ **Checkpoint ready**
