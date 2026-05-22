@@ -46,6 +46,33 @@
 ### 12. ✅ open-repo — Phase 5.2 Feature Candidates Evaluation (Session 1455 COMPLETE)
 **Status**: Completed May 21 (Session 1455, 09:41-09:45 UTC). All 3 files delivered: `PHASE_5.2_FEATURE_CANDIDATES.md` (10 candidates: Medical, Water, Seed, Food, Energy, Communications, Sanitation, Security, Governance, Botanical), `PHASE_5.2_CAPABILITY_AUDIT.md` (library requirements, data sources, ZIM compatibility, person-hours), `PHASE_5.2_PRIORITY_MATRIX.md` (composite scoring, top 5: Medical 8.20 / Water 7.90 / Seed 7.80 / Food 7.65 / Botanical 7.55, June 48-72 hour scope). Ready for post-Phase-5.1-merge implementation (June 1+).
 
+### 35a. ⏳ stockbot — Post-Checkpoint Readiness Assessment (May 22 20:00 UTC, 4-6 hrs)
+**Context**: May 22 20:00 UTC checkpoint outcome (Lever B activation success/failure) determines next phase. If PASS: expand to AMZN/JPM tier. If FAIL: options for recovery (revert, alternative approach, defer).
+**Deliverables**: 
+- If Lever B PASS: Deployment readiness spec for multi-ticker expansion (risk management, position limits, Jetson capacity)
+- If Lever B FAIL: Failure analysis + 3-option recovery roadmap
+- Resource contention analysis vs. Wave 2 (June 1-July 10)
+**Owner**: stockbot subagent
+**Deadline**: May 23 morning post-checkpoint
+
+### 35b. ⏳ resistance-research — Phase 2 Synthesis Outcome Routing (May 22 20:00 UTC, 3-4 hrs)
+**Context**: May 28 synthesis outcome (STRONG/MODERATE/WEAK/DELIVERY_PROBLEM) determines Phase 2 activation path. Each outcome has pre-staged decision tree and execution checklist.
+**Deliverables**: 
+- Read synthesis outcome from post-wave-1-monitoring/synthesis-outcome.txt
+- Route to corresponding contingency path (STRONG: immediate Phase 2 execution; MODERATE: phase 2 with caution gates; WEAK/DELIVERY_PROBLEM: escalation playbook)
+- Execute first 48h actions per outcome path
+**Owner**: resistance-research subagent
+**Deadline**: May 28 20:15 UTC (immediately post-synthesis)
+
+### 35c. ⏳ systems-resilience — Wave 2 Contingency & Resource Reallocation (May 22 20:00 UTC, 2-3 hrs)
+**Context**: Checkpoint outcome (Lever B PASS/FAIL) determines June resource availability for Wave 2 (80-100 hrs, June 10-July 10). Resource contention vs. stockbot expansion path + open-repo Phase 5.1 deployment.
+**Deliverables**: 
+- Refine `JUNE_RESOURCE_ALLOCATION_AND_CRITICAL_PATH.md` with actual checkpoint outcome (Scenario A/B/C activation)
+- Wave 2 author onboarding readiness if parallel execution approved
+- Contingency triggers if contention exceeds 3-level threshold
+**Owner**: orchestrator (standalone analysis) + systems-resilience subagent if Wave 2 execution triggers
+**Deadline**: May 23 morning post-checkpoint
+
 ---
 
 ## Completed Items (Session 1454)
