@@ -1,5 +1,24 @@
 # Work Log
 
+## Session 1571 (2026-05-22 13:07 UTC) — 🚨 ORCHESTRATOR CRITICAL: SSH DEADLINE 23 MINUTES REMAINING
+
+**Status**: 🔴 **CRITICAL — SSH deadline in 23 min (13:30 UTC)**
+
+**Session Actions**:
+1. ✅ Verified current time: 13:07:44 UTC
+2. ✅ Checked SSH auth status: **STILL FAILING** — orchestrator ED25519 key not authorized
+3. ✅ Verified Jetson network: ping 2/2 successful, SSH daemon healthy
+4. ✅ Updated CHECKIN.md with current time and remaining deadline
+5. ✅ Prepared Discord notification ready to send if user action not taken by 13:30 UTC
+
+**What's needed**: User must execute ONE of:
+- **Option A** (5 min): `cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'`
+- **Option B** (10 min): SSH manually and add `"hmm_regime_masking": true` to config file
+
+**Next**: Awaiting user action by 13:30 UTC. If not resolved, checkpoint at 20:00 UTC executes with Lever A config.
+
+---
+
 ## Session 1570 (2026-05-22 12:56 UTC) — 🚨 ORCHESTRATOR CRITICAL: SSH DEADLINE 34 MIN AWAY
 
 **Status**: 🔴 **CRITICAL — SSH DEADLINE 13:30 UTC IN 34 MINUTES** | **User action required immediately**

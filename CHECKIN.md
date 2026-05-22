@@ -1,21 +1,20 @@
-## Session 1570 (May 22, 12:56 UTC) — 🚨 ORCHESTRATOR CRITICAL: SSH DEADLINE 34 MINUTES
+## Session 1571 (May 22, 13:07 UTC) — 🚨 ORCHESTRATOR CRITICAL: SSH DEADLINE 23 MINUTES REMAINING
 
-**Status**: 🚨 **SSH DEADLINE CRITICAL — 33 MIN REMAINING (13:30 UTC)** | ⏰ **Checkpoint 20:00 UTC (7h 4m away)**
+**Status**: 🚨 **SSH DEADLINE CRITICAL — 23 MIN REMAINING (13:30 UTC)** | ⏰ **Checkpoint 20:00 UTC (6h 53m away)**
 
-**Time remaining**: May 22 13:30 UTC is **34 minutes away** from current time 12:56:22 UTC
+**Time remaining**: May 22 13:30 UTC is **~23 minutes away** from current time 13:07:44 UTC
 
-**Escalation Actions Completed**:
-- ✅ Discord notification sent (13:30+ UTC) — urgent message with recovery options
-- ✅ CHECKIN.md escalated with bold header + immediate action items
-- ✅ WORKLOG.md updated with session entry documenting deadline miss
-- ✅ PROJECTS.md stockbot focus updated (deadline passed, recovery window emphasized)
-- ✅ All orchestration files committed to master
+**SSH Status Verification (13:07 UTC)**:
+- ✅ Jetson REACHABLE (ping 2/2 successful)
+- ✅ SSH daemon RESPONDING (handshake completes)
+- ❌ **STILL FAILING: Orchestrator ED25519 key NOT in authorized_keys** 
+  - SSH error: "Permission denied (publickey,password)"
+  - Key rejected; Jetson awaiting user action
 
-**CRITICAL ESCALATION — USER ACTION REQUIRED IMMEDIATELY**:
-- **SSH deadline: MAY 22 13:30 UTC** — **THIS DEADLINE HAS JUST PASSED**
+**CRITICAL ESCALATION — USER ACTION REQUIRED WITHIN NEXT 23 MINUTES**:
+- **SSH deadline: MAY 22 13:30 UTC** — **23 MINUTES REMAINING**
 - **SSH auth still FAILING** — Orchestrator key NOT authorized on Jetson
-- **May 22 20:00 UTC checkpoint at risk** — Config fix MUST happen in next 6.5 hours
-- **Discord notification sent** at deadline time (13:30+ UTC)
+- **May 22 20:00 UTC checkpoint at risk** — Config fix MUST happen within 23 minutes OR checkpoint executes with Lever A (repeats May 19 failure)
 
 **URGENT ACTIONS (do one immediately)**:
 - **Option A** (recommended, 5 min): Add orchestrator public key:
