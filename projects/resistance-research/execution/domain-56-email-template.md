@@ -1,7 +1,7 @@
 ---
 title: "Domain 56 Email Templates — Civil Service Politicization Distribution"
 created: "2026-05-18"
-status: "ready — fill [YOUR_NAME], [YOUR_CONTACT_INFO], [DOMAIN_56_GIST_URL] before sending"
+status: "ready — fill [YOUR_NAME], [YOUR_CONTACT_INFO], https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f before sending"
 send_window: "May 18-19 (Tier 1); May 20-24 (Tier 2); May 25-31 (Tier 3)"
 ---
 
@@ -11,7 +11,7 @@ send_window: "May 18-19 (Tier 1); May 20-24 (Tier 2); May 25-31 (Tier 3)"
 Four category-specific templates. Before sending any template, fill three fields:
 - `[YOUR_NAME]`
 - `[YOUR_CONTACT_INFO]` (email or institutional affiliation)
-- `[DOMAIN_56_GIST_URL]` (fill after creating the Gist per `domain-56-gist-creation-steps.md`)
+- `https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f` (fill after creating the Gist per `domain-56-gist-creation-steps.md`)
 
 Send window: May 18-19 is the Tier 1 window; Tier 2 May 20-24; Tier 3 May 25-31.
 
@@ -42,7 +42,7 @@ The Hungarian and Polish case studies document what this architecture produces o
 
 The legislative hook: H.R. 492 / Saving the Civil Service Act and S. 134 are both in committee. The pre-recess window for influencing markup scheduling is June 1-30. This document makes the democratic-design argument for why H.R. 492 is a democracy-preservation bill, not merely an employment-protection bill — which broadens the co-sponsor coalition.
 
-Full document (6,800 words, 47 citations): [DOMAIN_56_GIST_URL]
+Full document (6,800 words, 47 citations): https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 I'm happy to discuss the analysis, provide an adapted version suited to your publication standards, or connect on the H.R. 492 legislative strategy.
 
@@ -72,7 +72,7 @@ The document maps directly to your litigation strategy:
 
 The midterm frame: the political party that permanently converts career law enforcement positions to loyalty employment wins permanent advantages in voting rights enforcement, regulatory enforcement, and election administration — regardless of future election outcomes. That argument works across the full democratic activist community, not just among federal employees.
 
-Full document (6,800 words, 47 citations, including the CRS LSB11412 legal analysis): [DOMAIN_56_GIST_URL]
+Full document (6,800 words, 47 citations, including the CRS LSB11412 legal analysis): https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 [YOUR_NAME]
 [YOUR_CONTACT_INFO]
@@ -104,7 +104,7 @@ The comparative analysis includes:
 
 The legal analysis covers Loper Bright's post-Chevron implications for the statutory authority challenge and the constitutional argument for MSPB independence under Humphrey's Executor.
 
-Full document (6,800 words, 47 citations): [DOMAIN_56_GIST_URL]
+Full document (6,800 words, 47 citations): https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 I'm happy to discuss the analysis or adapt it for your publication format.
 
@@ -135,7 +135,7 @@ Three specific elements that may be directly useful:
 
 **For Democracy Forward**: Section 3 maps directly to your PEER v. Trump litigation. The APA arbitrary-and-capricious argument (115+ organizational comments not adequately addressed; insufficient engagement with the departure from the Biden 2024 final rule) and the Loper Bright statutory authority argument are the document's primary legal analysis. The academic citations (CRS LSB11412; Berkeley Law Fisk paper) provide the documentary support for these arguments.
 
-Full document (6,800 words, 47 citations): [DOMAIN_56_GIST_URL]
+Full document (6,800 words, 47 citations): https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 [YOUR_NAME]
 [YOUR_CONTACT_INFO]
@@ -160,4 +160,4 @@ Full document (6,800 words, 47 citations): [DOMAIN_56_GIST_URL]
 
 ---
 
-*Templates created: May 18, 2026. All contacts verified as current. Gist URL placeholder (`[DOMAIN_56_GIST_URL]`) must be filled after creating the Gist per `domain-56-gist-creation-steps.md` before any email is sent.*
+*Templates created: May 18, 2026. All contacts verified as current. Gist URL placeholder (`https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f`) must be filled after creating the Gist per `domain-56-gist-creation-steps.md` before any email is sent.*

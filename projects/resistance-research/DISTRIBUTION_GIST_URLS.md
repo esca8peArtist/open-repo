@@ -17,7 +17,7 @@ Created 2026-04-30 05:50 UTC. These are the canonical reference documents for al
 | **Executive Summary** | https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4 | ~20 KB | 2026-04-27 |
 | **Domain 37 — Federal Executive Interference** | https://gist.github.com/esca8peArtist/1277f5d5bcb0fe46604bbaba8fa37fd0 | ~40 KB | 2026-05-14 |
 | **Domain 58 — Tribal Sovereignty, Voting Rights & Constitutional Authority** | https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f | 102 KB | 2026-05-20 |
-| **Domain 56** (Civil Service Politicization) | [HASH — fill after creation; see execution/domain-56-gist-creation-steps.md] | ~55 KB | — |
+| **Domain 56** (Civil Service Politicization) | https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f | ~55 KB | 2026-05-22 |
 | **Domain 59** (Economic Precarity / Civic Participation) | [HASH — fill after creation by May 30; see execution/domain-59-gist-creation-steps.md] | ~58 KB | — |
 | **Domain 57** (Multilateral Withdrawal) | [HASH — fill after creation by Aug 8; see execution/domain-57-gist-creation-steps.md] | ~60 KB | — |
 | **Litigation Tracker 2026** | https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0 | ~45 KB | 2026-04-29 |

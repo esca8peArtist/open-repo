@@ -1,7 +1,7 @@
 ---
 title: "Domain 56 Social Media Hooks — Civil Service Politicization"
 created: "2026-05-18"
-status: "ready — fill [DOMAIN_56_GIST_URL] before posting"
+status: "ready — fill https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f before posting"
 window: "May 19-24, 2026"
 ---
 
@@ -10,7 +10,7 @@ window: "May 19-24, 2026"
 
 Five distinct angles for Twitter/X, Mastodon, or LinkedIn. The Partnership for Public Service briefing May 19 is the news hook for the first post. Stagger by 24-48 hours to extend the distribution window.
 
-Fill `[DOMAIN_56_GIST_URL]` (from `domain-56-gist-creation-steps.md`) before posting.
+Fill `https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f` (from `domain-56-gist-creation-steps.md`) before posting.
 
 ---
 
@@ -22,7 +22,7 @@ Fill `[DOMAIN_56_GIST_URL]` (from `domain-56-gist-creation-steps.md`) before pos
 **Tweet version** (under 280 characters):
 > The merit civil service is not primarily a job protection system. It is the mechanism through which elections produce neutral law enforcement. Destroying it = formal elections + captured administration = elected autocracy.
 >
-> New research, 47 citations: [DOMAIN_56_GIST_URL]
+> New research, 47 citations: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 **LinkedIn/longer version**:
 > The framing of civil service protection as an "employment issue" misses what is actually at stake.
@@ -37,7 +37,7 @@ Fill `[DOMAIN_56_GIST_URL]` (from `domain-56-gist-creation-steps.md`) before pos
 >
 > Hungary and Poland provide the documented end-state. Germany's Basic Law provides the constitutional alternative.
 >
-> Full document (47 citations): [DOMAIN_56_GIST_URL]
+> Full document (47 citations): https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 ---
 
@@ -72,7 +72,7 @@ Tweet 3:
 Tweet 4:
 > The resistance is documented: H.R. 492 (Saving the Civil Service Act), PEER v. Trump (N.D. Cal., motion to dismiss heard May 12), NTEU facial challenge to the EO, AFGE Civil Service Strong coalition.
 >
-> Full 47-citation analysis: [DOMAIN_56_GIST_URL]
+> Full 47-citation analysis: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 ---
 
@@ -94,7 +94,7 @@ Tweet 4:
 >
 > The Congressional Research Service's 2026 analysis (LSB11412) identifies this as the strongest litigation angle. The case is PEER v. Trump, N.D. Cal. Motion to dismiss heard May 12.
 >
-> Full analysis: [DOMAIN_56_GIST_URL]
+> Full analysis: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 ---
 
@@ -112,7 +112,7 @@ Tweet 4:
 >
 > Poland's Tusk government (2024) is learning the same lesson. CER documents the legal and practical constraints on reversing PiS's civil service capture.
 >
-> The architecture is designed to be self-sustaining. [DOMAIN_56_GIST_URL]
+> The architecture is designed to be self-sustaining. https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 **LinkedIn/longer version**:
 > Three international case studies that should inform current US civil service debates:
@@ -125,7 +125,7 @@ Tweet 4:
 >
 > The lesson: statutory civil service protection can be repealed or reinterpreted. Constitutional embedding is more durable. The US is currently operating on the statutory model while exhibiting the conditions that led Germany to choose the constitutional one.
 >
-> Full analysis: [DOMAIN_56_GIST_URL]
+> Full analysis: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 ---
 
@@ -141,7 +141,7 @@ Tweet 4:
 >
 > The democratic-design argument: this is not primarily an employment-protection bill. It is a mechanism to ensure elections produce neutral law enforcement rather than patronage compliance.
 >
-> Contact the House Oversight Committee and Senate Homeland Security Committee. [DOMAIN_56_GIST_URL]
+> Contact the House Oversight Committee and Senate Homeland Security Committee. https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 **LinkedIn version**:
 > There are two legislative vehicles for restoring the merit civil service:
@@ -156,7 +156,7 @@ Tweet 4:
 >
 > Contact your representatives. Specifically: House Oversight and Government Reform Committee (Republican chair, but bipartisan argument available for members in competitive districts) and Senate Homeland Security and Governmental Affairs Committee.
 >
-> Full document: [DOMAIN_56_GIST_URL]
+> Full document: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
 ---
 
@@ -172,4 +172,4 @@ Tweet 4:
 
 ---
 
-*Social media hooks created: May 19, 2026. Fill `[DOMAIN_56_GIST_URL]` before any post. Adjust timing if Gist creation is delayed. Coordinate with Wave 1 email sends — ideally Post 1 goes out same day as Tier 1 email (May 18-19).*
+*Social media hooks created: May 19, 2026. Fill `https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f` before any post. Adjust timing if Gist creation is delayed. Coordinate with Wave 1 email sends — ideally Post 1 goes out same day as Tier 1 email (May 18-19).*
