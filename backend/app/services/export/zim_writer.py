@@ -48,11 +48,10 @@ from enum import Enum
 from pathlib import Path
 from typing import Optional
 
+from libzim.writer import Creator, Item, StringProvider, Hint, Compression
+
 logger = logging.getLogger(__name__)
 
-# Fallback 48x48 transparent PNG illustration (valid ZIP format, passes zimcheck)
-# Generated via: struct.pack + zlib.compress for RGBA pixel data
-_FALLBACK_ILLUSTRATION_PNG = b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x000\x00\x00\x000\x08\x06\x00\x00\x00W\x02\xf9\x87\x00\x00\x00\x1fIDATx\xda\xed\xc1\x01\x01\x00\x00\x00\x82 \xff\xafnH@\x01\x00\x00\x00\x00\x00\x00\x00\x00/\x06$0\x00\x01to\xbc%\x00\x00\x00\x00IEND\xaeB`\x82'
 
 # ---------------------------------------------------------------------------
 # Enumerations and configuration models
@@ -405,6 +404,51 @@ class ZimEntry:
 
 
 # ---------------------------------------------------------------------------
+# libzim Item subclass
+# ---------------------------------------------------------------------------
+
+
+class ArticleItem(Item):
+    """
+    Implementation of libzim.writer.Item for ZimEntry objects.
+
+    Converts ZimEntry dataclass objects into the Item interface required
+    by libzim's Creator.add_item() method.
+    """
+
+    def __init__(self, entry: ZimEntry) -> None:
+        """Initialize ArticleItem from a ZimEntry."""
+        super().__init__()
+        self.entry = entry
+
+    def get_path(self) -> str:
+        """Return the ZIM-relative path for this entry."""
+        return self.entry.path
+
+    def get_title(self) -> str:
+        """Return the display title for this entry."""
+        return self.entry.title
+
+    def get_mimetype(self) -> str:
+        """Return the MIME type for this entry."""
+        return self.entry.mime_type
+
+    def get_hints(self) -> dict:
+        """Return hints for libzim indexing."""
+        hints = {}
+        if self.entry.is_front_article:
+            hints[Hint.FRONT_ARTICLE] = True
+        return hints
+
+    def get_contentprovider(self):
+        """Return a StringProvider for the entry content."""
+        content = self.entry.content
+        if isinstance(content, str):
+            content = content.encode("utf-8")
+        return StringProvider(content)
+
+
+# ---------------------------------------------------------------------------
 # Main ZimWriter class
 # ---------------------------------------------------------------------------
 
@@ -597,15 +641,6 @@ class ZimWriter:
         self._entries.append(entry)
         self._article_count += 1
 
-        # TODO(post-PR-merge): Instead of buffering, call creator.add_item() directly
-        # once the Creator context is open. This requires restructuring ZimWriter to
-        # use a context manager pattern:
-        #   with Creator(str(self.output_path)) as self._creator:
-        #       self._configure_creator()
-        #       self.add_article(...)  # calls creator.add_item() directly
-        #       ...
-        #   # Creator closed = ZIM finalized
-
     def add_resource(
         self,
         path: str,
@@ -668,8 +703,6 @@ class ZimWriter:
         )
         self._entries.append(entry)
         self._resource_count += 1
-
-        # TODO(post-PR-merge): Call creator.add_item() directly (see add_article TODO)
 
     def create_zim(
         self,
@@ -759,10 +792,45 @@ class ZimWriter:
             self._resource_count,
         )
 
-        # TODO(post-PR-merge): Replace this stub with actual python-libzim Creator calls
-        # See the docstring above for the correct implementation pattern.
-        # For now, write a placeholder file to allow test harness to run.
-        self._stub_write_placeholder()
+        # Create ZIM file using libzim Creator
+        try:
+            creator = Creator(str(self.output_path))
+
+            # All configuration MUST happen before entering the context manager
+            # Configure compression
+            # "default" and "zstd" both use zstd (libzim's default)
+            # "none" uses no compression
+            if compression == "none":
+                creator.config_compression(Compression.none)
+            elif compression in ("default", "zstd"):
+                creator.config_compression(Compression.zstd)
+
+            # Configure Xapian full-text indexing with the content language
+            creator.config_indexing(True, self.config.language_iso3)
+
+            with creator:
+                # Set the main landing page (index)
+                creator.set_mainpath("index")
+
+                # Apply metadata to the Creator
+                self._apply_metadata_to_creator(creator)
+
+                # Add illustration if available
+                illustration_bytes = self._get_illustration_bytes()
+                if illustration_bytes:
+                    creator.add_illustration(48, illustration_bytes)
+
+                # Add all entries (articles and resources) to the Creator
+                for entry in self._entries:
+                    item = ArticleItem(entry)
+                    creator.add_item(item)
+
+        except Exception as e:
+            logger.error(
+                "Failed to create ZIM file: %s — %s",
+                self.output_path.name, str(e)
+            )
+            raise
 
         self._is_finalized = True
         end_time = datetime.utcnow()
@@ -870,38 +938,25 @@ class ZimWriter:
             return re.sub(r"<[^>]+>", "", h1_match.group(1)).strip()
         return None
 
-    def _apply_metadata_to_creator(self, creator: object) -> None:
+    def _apply_metadata_to_creator(self, creator: Creator) -> None:
         """
         Apply all ZimMetadata fields to a python-libzim Creator instance.
 
         This method is called inside the create_zim() Creator context.
-
-        When implemented with the real Creator object:
-            creator.config_indexing(True, self.config.language_iso3)  # Enable Xapian FTS
-            creator.add_metadata("Title", self.metadata.title)
-            creator.add_metadata("Description", self.metadata.description)
-            ... (other metadata calls)
         """
-        try:
-            creator.config_indexing(True, self.config.language_iso3)
-            creator.add_metadata("Title", self.metadata.title)
-            creator.add_metadata("Description", self.metadata.description)
-            creator.add_metadata("Language", self.metadata.language)
-            creator.add_metadata("Creator", self.metadata.creator)
-            creator.add_metadata("Publisher", self.metadata.publisher)
-            creator.add_metadata("Date", self.metadata.date)
-            creator.add_metadata("Name", self.metadata.name)
-            creator.add_metadata("Flavour", self.metadata.flavour)
-            creator.add_metadata("Tags", self.metadata.tags)
-            creator.add_metadata("Source", self.metadata.source_url)
-            creator.add_metadata("Scraper", self.metadata.scraper)
-            if self.metadata.long_description:
-                creator.add_metadata("LongDescription", self.metadata.long_description)
-            illustration_bytes = self._get_illustration_bytes()
-            if illustration_bytes:
-                creator.add_illustration(48, illustration_bytes)
-        except AttributeError:
-            pass
+        creator.add_metadata("Title", self.metadata.title)
+        creator.add_metadata("Description", self.metadata.description)
+        creator.add_metadata("Language", self.metadata.language)
+        creator.add_metadata("Creator", self.metadata.creator)
+        creator.add_metadata("Publisher", self.metadata.publisher)
+        creator.add_metadata("Date", self.metadata.date)
+        creator.add_metadata("Name", self.metadata.name)
+        creator.add_metadata("Flavour", self.metadata.flavour)
+        creator.add_metadata("Tags", self.metadata.tags)
+        creator.add_metadata("Source", self.metadata.source_url)
+        creator.add_metadata("Scraper", self.metadata.scraper)
+        if self.metadata.long_description:
+            creator.add_metadata("LongDescription", self.metadata.long_description)
 
     def _get_illustration_bytes(self) -> Optional[bytes]:
         """
@@ -910,33 +965,14 @@ class ZimWriter:
         Priority:
           1. Bytes passed to __init__ as illustration_bytes
           2. File at metadata.illustration_48x48_path
-          3. Fallback 48x48 transparent PNG (always returns bytes, never None)
+          3. None (caller handles fallback)
         """
         if self._illustration_bytes:
             return self._illustration_bytes
         if self.metadata.illustration_48x48_path:
             with open(self.metadata.illustration_48x48_path, "rb") as f:
                 return f.read()
-        return _FALLBACK_ILLUSTRATION_PNG
-
-    def _stub_write_placeholder(self) -> None:
-        """
-        Write a placeholder file during stub phase.
-
-        This allows the test harness to run without python-libzim installed.
-        Replaced by actual Creator calls in the full implementation.
-
-        TODO(post-PR-merge): Remove this method entirely. The create_zim()
-        method should use the Creator context manager directly.
-        """
-        placeholder_content = (
-            f"STUB ZIM PLACEHOLDER\n"
-            f"name={self.metadata.name}\n"
-            f"articles={self._article_count}\n"
-            f"resources={self._resource_count}\n"
-            f"generated_at={datetime.utcnow().isoformat()}\n"
-        ).encode("utf-8")
-        self.output_path.write_bytes(placeholder_content)
+        return None
 
     def _run_zimcheck(self) -> bool:
         """
@@ -949,10 +985,6 @@ class ZimWriter:
           - apt: apt-get install zim-tools
           - brew: brew install zim-tools
           - Docker: FROM openzim/zim-tools (zimcheck is included)
-
-        TODO(post-PR-merge): zimcheck should be run against the real ZIM file,
-        not the placeholder. The stub _stub_write_placeholder() produces a file
-        that zimcheck will reject. During the stub phase, run_zimcheck=False.
         """
         if not self.zimcheck_binary:
             return True
