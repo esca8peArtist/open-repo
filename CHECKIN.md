@@ -1,30 +1,33 @@
-## Session 1561 — ORCHESTRATOR: Final Hold Pattern Confirmation Before Checkpoint (May 22, 11:24 UTC)
+## Session 1562 — ORCHESTRATOR: Critical SSH Deadline (2H REMAINING) + Hold Pattern Confirmed (May 22, 11:30 UTC)
 
-**Status**: ✅ **Hold pattern CORRECT** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 6MIN REMAINING)** | ✅ **SSH block STILL FAILING** | ⏰ **Checkpoint 20:00 UTC (8H 36MIN)**
+**Status**: ✅ **Hold pattern CORRECT** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H REMAINING)** | ✅ **SSH block STILL FAILING** | ⏰ **Checkpoint 20:00 UTC (8H 30M)**
+
+**Needs Your Input — CRITICAL (by May 22 13:30 UTC)**:
+1. **SSH auth block**: Orchestrator key NOT authorized on Jetson; checkpoint will use Lever A config (May 19 outcome) unless fixed.
+   - **Option A** (recommended, ~5min): Add orchestrator public key to Jetson authorized_keys: `cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'`
+   - **Option B** (~5-10min): SSH manually and run the 5-min Lever B config fix (see BLOCKED.md for commands)
+   - **DEADLINE**: May 22 13:30 UTC — ~2 hours remaining
 
 **What was accomplished**:
-1. **Final orientation** (11:24 UTC):
-   - All 5 active blocks verified unchanged; SSH auth still NOT authorized
-   - All project Goals re-confirmed — zero autonomous work available before checkpoint
-   - Exploration Queue verified: Items 35a/35b/35c staged for May 22 post-checkpoint; Items 33/34/35 deferred to June 1+
-   - Usage budget healthy: Sonnet 0.3%, All-models 5.8% (well under 80% threshold)
+1. **Final orientation** (11:30 UTC):
+   - SSH auth re-verified: still failing (`Permission denied (publickey,password)`)
+   - All 5 active blocks unchanged; all project Goals confirmed
+   - Usage budget healthy: Sonnet 0.3%, All-models 5.8% (well under threshold)
 
-2. **Hold pattern diagnosis — FINAL**:
-   - ✅ All projects blocked on external dependencies (user decisions, physical actions, or scheduled future events)
-   - ✅ All pre-checkpoint prep work complete (Gate 2 contingency architectures, multi-project decision frameworks, all exploration items staged)
-   - ✅ No autonomous scope remaining before checkpoint
-   - ✅ SSH auth deadline imminent (2h 6m) — user action required; orchestrator cannot resolve
-   - ✅ Post-checkpoint work fully pre-staged (Items 35a/35b/35c ready to spawn at 20:00 UTC)
+2. **Autonomous scope audit — FINAL**:
+   - All 12 active projects blocked on external dependencies (user decisions, physical actions, scheduled events)
+   - Exploration Queue: Items 35a/35b/35c queued for May 22 20:00 UTC post-checkpoint (triggered by checkpoint outcome, not autonomous work)
+   - **Conclusion**: Zero autonomous work available; hold pattern CORRECT
 
-3. **Checkpoint readiness final**:
-   - **Scenario A (SSH FIXED by 13:30)**: Lever B config activation + HMM regime masking test executes at 20:00 UTC
-   - **Scenario B (SSH NOT FIXED by 13:30)**: Checkpoint executes with Lever A config (same as May 19 STILL_MISS_B2 outcome)
-   - Either way: Items 35a/35b/35c execute immediately post-checkpoint (May 23 morning) to route to corresponding decision trees
+3. **Checkpoint readiness confirmed**:
+   - **Scenario A (SSH FIXED by 13:30)**: Lever B config activation + HMM regime masking test executes at 20:00 UTC ✅ READY
+   - **Scenario B (SSH NOT FIXED by 13:30)**: Checkpoint executes with Lever A config (same as May 19 STILL_MISS_B2 outcome) ✅ READY
+   - **Scenario C (post-checkpoint)**: Items 35a/35b/35c execute in parallel May 23 00:15–12:00 UTC (9–12h total, all decision trees pre-staged) ✅ READY
 
 **Decisions**:
-- ✅ **Hold pattern maintained**: Correct decision. All projects blocked on external dependencies.
-- ✅ **No escalation**: SSH auth cannot be resolved autonomously; user action required by 13:30 UTC
-- ✅ **Post-checkpoint execution**: Items 35a/35b/35c ready to spawn in parallel immediately after checkpoint outcome (May 23 00:15–08:00 UTC, 9–12h total)
+- ✅ **Hold pattern maintained**: Zero autonomous work before checkpoint; all projects correctly blocked on external dependencies
+- 🔴 **SSH deadline escalation**: This is the critical path item; cannot proceed autonomously; user action required by 13:30 UTC
+- ✅ **Checkpoint execution ready**: Either outcome routes to fully pre-staged decision frameworks (Items 35a/35b/35c)
 
 ---
 
