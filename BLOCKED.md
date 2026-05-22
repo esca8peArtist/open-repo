@@ -32,6 +32,18 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — Jetson unreachable; checkpoint at risk (May 22 20:00 UTC, 6h away)
+
+**Date blocked**: 2026-05-22 13:50 UTC (Session 1573 — API health check failure)
+**Context**: Pre-checkpoint verification attempt (14:00 UTC, 6 hours before 20:00 UTC checkpoint execution) detected critical connectivity issue. Health check to http://100.120.18.84:8000/api/health timed out. Subsequent ping to Jetson IP 100.120.18.84 shows 100% packet loss. Tailscale status shows connection "active; direct" but ping unreachable. SSH auth failing (key not authorized, same as before). Checkpoint is scheduled to execute automatically at 20:00 UTC on the Jetson.
+**What I need**: (1) Verify Jetson is physically on and connected to network. Check: (a) Power status (LED indicators), (b) Network cable or wireless status, (c) If Jetson rebooted, check if trading engine auto-started (`ps aux | grep launch_stacker_sessions.py`). (2) If Jetson is online but API is down, SSH and restart Docker container: `ssh ubuntu@100.120.18.84 && docker restart stockbot && curl http://localhost:8000/api/health`. (3) If Jetson network is unstable, check Tailscale connection on Jetson side or restart Tailscale daemon.
+**Verify with**: `curl -s http://100.120.18.84:8000/api/health | jq .status` — should return "ok" if healthy. If that succeeds, respond with JSON health status.
+**Resolution**: [leave blank — critical path blocker; cannot auto-verify remotely]
+
+---
+
+---
+
 ### resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled)
 
 **Date blocked**: 2026-05-21 07:58 UTC (Session 1453 — orchestrator discovery); **Status changed**: 2026-05-21 18:54 UTC (Session 1476 — synthesis execution verification)
