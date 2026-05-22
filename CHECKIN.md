@@ -1,3 +1,30 @@
+## Session 1530 — ORCHESTRATOR: HOLD PATTERN MAINTENANCE + FINAL DEADLINE VERIFICATION (May 22, 07:13–07:25 UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H 17MIN REMAINING)** | ✅ **Blocks re-verified: SSH still failing** | ✅ **Hold pattern maintained correctly** | ✅ **No autonomous work available**
+
+**What was accomplished**:
+- Rapid re-orientation: Verified ORCHESTRATOR_STATE.md status (generated 07:12 UTC), BLOCKED.md active blocks, PROJECTS.md project statuses
+- Block verification re-test:
+  - **stockbot SSH**: Re-ran auth verification → `Permission denied (publickey,password)` — **SSH block STILL FAILING, unresolved**
+  - **mfg-farm test print**: Verified directory missing → block remains active
+  - **resistance-research**: TOO_EARLY contingency path (no action until May 25)
+  - **cybersecurity-hardening**: Manual-only, cannot auto-verify
+- INBOX.md: No new items since May 17
+- Assessment: All blocks remain as documented; no autonomous work available; hold pattern remains correct
+- All 5 orchestration files verified current and ready for commit
+
+🔴 **CRITICAL — USER ACTION REQUIRED BY 13:30 UTC (6H 17MIN REMAINING — DEADLINE FIRM)**:
+- **Stockbot Lever B HMM config fix is REQUIRED for May 22 checkpoint to test Lever B instead of repeating Lever A**
+- **If NOT fixed by 13:30 UTC**: Checkpoint executes with Lever A config (identical to May 19 failure outcome), defeating entire Lever B testing objective
+- **Choose ONE action** — see BLOCKED.md §stockbot (lines 73-104) for full implementation details:
+  - **Option A (fastest)**: Add orchestrator ED25519 public key to Jetson authorized_keys
+  - **Option B (manual SSH)**: Run 5-min config fix via manual SSH (commands provided in BLOCKED.md)
+- **Post-fix verification**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` should return OK
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (checkpoint outcome at 13:30 UTC determines routing to Lever B scaling, Phase 2 synthesis, or recovery scenarios documented in MAY_22_CHECKPOINT_DECISION_ROADMAP.md)
+
+---
+
 ## Session 1529 — ORCHESTRATOR: CRITICAL DEADLINE COUNTDOWN + HOLD PATTERN VERIFICATION (May 22, 07:05–07:20 UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H 25MIN REMAINING)** | ✅ **All blocks verified unchanged** | ✅ **Hold pattern maintained correctly** | ✅ **No autonomous work available**
