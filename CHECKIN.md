@@ -1,3 +1,42 @@
+## Session 1536 — ORCHESTRATOR: CRITICAL DEADLINE VERIFICATION + HOLD PATTERN MAINTAINED (May 22, 07:53–08:05 UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~5H 22MIN REMAINING)** | ✅ **Hold pattern VERIFIED and STABLE** | ✅ **All blocks unchanged** | ✅ **No autonomous work available**
+
+**What was accomplished**:
+- **Full orientation**: Read ORCHESTRATOR_STATE.md (snapshot 07:53 UTC), BLOCKED.md (verified all 4 blocks), PROJECTS.md (re-read project Goals for unfinished autonomous scope), EXPLORATION_QUEUE.md (all 12 active items ✅ COMPLETE; 6 deferred items awaiting May 25-30 triggers)
+- **Block status re-verification**:
+  - ✅ **stockbot SSH**: Still failing (`ssh -T git@github.com` works, but Jetson key auth still not authorized) — **CRITICAL DEADLINE 5H 22MIN**
+  - ✅ **resistance-research**: TOO_EARLY contingency; synthesis rescheduled May 25 (confirmed unfilled signal log placeholders prevent execution)
+  - ✅ **cybersecurity-hardening**: User manual action (Windows VeraCrypt restart) — cannot progress
+  - ✅ **mfg-farm**: User action (test print execution) — no results yet
+- **Project scope audit** (Goals re-read for unfinished autonomous scope):
+  - **seedwarden Track B**: Three user gates May 23-28 (not yet open); Track A blocked (separate issue); vendor outreach templates ready (Item 27 pre-staged) but NOT time-critical to start before checkpoint
+  - **open-repo**: Phase 5.1 ready (tests passing), Phase 5.2 evaluation done (Item 16 ✅), Phase 5.3 federation planning deferred to May 30 (Item 25 ⏳)
+  - **systems-resilience**: Phase 5 Wave 1 complete, Wave 2 35% outlined (can be completed but awaits Phase 5 vs Phase 6 sequencing decision May 30 per Item 32); Phase 6 research outlines complete
+  - **All other projects**: Blocked or awaiting user reviews
+- **Exploration Queue assessment**:
+  - Items 1-12: ✅ ALL COMPLETE (Sessions 1450-1458)
+  - Items 13-29: ✅ ALL COMPLETE (Sessions 1457-1504)
+  - Item 30: ⏳ QUEUED (awaits May 25 synthesis outcome)
+  - Item 31: ⏳ QUEUED (awaits May 28 vendor responses)
+  - Item 32: ⏳ QUEUED (deadline May 30 for June 1 decisions)
+  - **Queue assessment**: 0 active items that can start before May 25+ gate windows. All work is either complete or awaiting external triggers.
+- **Usage check**: `usage-check.py --check` → exit 0 (healthy)
+- **Conclusion**: Hold pattern is CORRECT and COMPLETE. No autonomous work available in remaining 5h 22min window. System correctly awaiting:
+  1. **User SSH auth fix by 13:30 UTC (CRITICAL)**, OR
+  2. May 22 20:00 UTC checkpoint outcome (determines next routing)
+
+🔴 **CRITICAL — USER ACTION REQUIRED BY 13:30 UTC (5H 22MIN — ABSOLUTE DEADLINE)**:
+- **Stockbot Lever B HMM config MUST be fixed BEFORE checkpoint executes**
+- **Choose ONE** (see BLOCKED.md lines 73-104):
+  - **Option A (fastest)**: Add orchestrator ED25519 public key to Jetson authorized_keys
+  - **Option B (manual SSH)**: Run 5-min config fix (commands in BLOCKED.md)
+- **Verification**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` should return OK
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (checkpoint outcome determines routing to Lever B activation, Phase 2 synthesis, or recovery scenarios)
+
+---
+
 ## Session 1535 — ORCHESTRATOR: FINAL CRITICAL DEADLINE VERIFICATION + HOLD PATTERN RECONFIRMED (May 22, 07:46–07:55 UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~5H 44MIN REMAINING)** | ✅ **Hold pattern STABLE — no autonomous work available** | ✅ **All blocks verified unchanged**
