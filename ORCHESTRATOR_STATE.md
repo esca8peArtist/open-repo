@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-22T07:05:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-22T07:33:06Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 5.4% | Reset in 89h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 5.4% | Reset in 88h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -95,9 +95,11 @@
 **Resolution**: [leave blank]
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (83 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: open-repo — focus references Session 1513 (15 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 1498 (30 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (87 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: resistance-research — focus references Session 1515 (17 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: seedwarden — focus references Session 1515 (17 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 1513 (19 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 1498 (34 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked ← 2026-05-21 ~19:15 UTC (Session 1471 — orchestrator autonomous fix)
 • open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
@@ -109,42 +111,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- ✅ Pre-checkpoint staging 100% complete (Items 1-29)
-- ✅ Decision frameworks ready (Items 31-32 will execute post-May-30-user-decisions)
-- ✅ Post-checkpoint routing playbooks pre-written (SYNTHESIS_OUTCOME_PLAYBOOKS.md, MAY_22_CHECKPOINT_DECISION_ROADMAP.md)
-- ✅ All blocks current and user-action-dependent
-- **Next action**: Commit orchestration files; maintain hold until May 22 13:30 UTC checkpoint outcome determines routing
+- cybersecurity-hardening: Manual-only verification (VeraCrypt Windows restart user-initiated)
 
-**Recommended for User**:
-1. **URGENT (by 13:30 UTC TODAY)**: Resolve stockbot SSH auth failure (5 min fix, commands in BLOCKED.md)
-2. **May 23+**: Post-checkpoint outcome determines routing (Item 30 if synthesis runs; Item 31 parallel with checkpoint contingencies)
+**Critical Deadline Reconfirmed**: May 22 13:30 UTC (~6h 17m remaining)
+- Stockbot Lever B HMM config must be fixed by user (Option A or Option B, documented in BLOCKED.md)
+- Failure impact: May 22 checkpoint defaults to Lever A config (repeat of May 19 STILL_MISS_B2 failure)
 
-**Session Efficiency**:
-- Orientation + queue assessment: 12 min
-- CHECKIN.md update: 1 min
-- Total: 13 min
-- **Net result**: Confirmed system in correct hold pattern, all pre-checkpoint work complete, ready for post-deadline routing
+**Status**: Hold pattern correct; no autonomous action available; system awaiting:
+1. User SSH auth fix (deadline 13:30 UTC today)
+2. May 22 13:30 UTC checkpoint outcome (routes to Lever B scaling, Phase 2 synthesis, or recovery scenarios)
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint
 
 ---
 
-## Session 1524 (May 22, 06:30–06:45 UTC) — Final Pre-Deadline Verification
+## Session 1531 (May 22, 07:13–07:30 UTC) — Final Pre-Checkpoint Verification + Hold Pattern Confirmation
 
-**Orchestrator Status**: Hold pattern verified, SSH auth block confirmed still active
+**Orchestrator Status**: All blocks verified unchanged; hold pattern correct; no autonomous work available
 
-**Verifications Completed**:
-- Jetson connectivity: ✅ Reachable (ping 100.120.18.84 OK)
-- Orchestrator ED25519 key: ✅ Key exists at /home/awank/.ssh/id_ed25519
-- SSH auth status: ❌ Key NOT authorized on Jetson (`Permission denied (publickey,password)`)
-- BLOCKED.md: ✅ All 4 active blocks reviewed and current
-- PROJECTS.md: ✅ All project status current
-- INBOX.md: ✅ No new items
-- System state: ✅ No autonomous work available (hold pattern is correct)
+**Session Activities**:
+1. **Oriented** via ORCHESTRATOR_STATE.md (snapshot from 07:19 UTC)
+2. **Verified critical deadline**: Stockbot Lever B HMM config requires user SSH fix by 13:30 UTC (6h 5m remaining) — currently FAILING
+3. **Verified block status**: 
+   - stockbot SSH auth: Still failing (`Permission denied (publickey)`)
+   - Jetson connectivity: ✅ Reachable (ping OK)
+   - resistance-research: TOO_EARLY contingency active (no action until May 25)
+   - cybersecurity-hardening: Manual user action (Windows restart)
+   - mfg-farm: Test print pending (no results yet)
+4. **Confirmed Exploration Queue**: Very few active items; most recent items COMPLETE or STAGED. No new items needed.
+5. **Assessed project unfinished scope**: 
+   - seedwarden: Track B ready (awaiting user gates May 23-28)
+   - open-repo: Phase 5.1 ready (awaiting user decision)
+   - systems-resilience: Phase 6 gap analysis complete (awaiting Phase 5 user decision)
+   - resistance-research: Phase 2 ready for synthesis outcome
+6. **Updated CHECKIN.md**: Session 1531 findings logged
 
-**Critical Deadline**:
-- **Today 13:30 UTC** (~7 hours remaining): Stockbot Lever B HMM config must be activated
-- **User action required**: Either add orchestrator public key to Jetson authorized_keys, OR SSH manually and run 5-min config fix
-- **Failure impact**: May 22 checkpoint uses Lever A config (repeat of failed May 19), defeating Lever B testing
-
-**Decision**: No autonomous action available. System correctly in hold pattern. CHECKIN.md updated with urgent action items. All orchestration files committed.
+**Decision**: System is correctly in hold pattern. No autonomous work until: (1) SSH auth fixed (user action), or (2) May 22 20:00 UTC checkpoint outcome received.
 
 **Next autonomous window**: May 22 20:00 UTC post-checkpoint
+
+---

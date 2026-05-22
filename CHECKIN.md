@@ -1,3 +1,23 @@
+## Session 1533 — ORCHESTRATOR: HOLD PATTERN STABLE + CRITICAL DEADLINE 5H 55M REMAINING (May 22, 07:34–07:40 UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~5H 55MIN REMAINING)** | ✅ **No new blocks appeared** | ✅ **Hold pattern maintained** | ✅ **No autonomous work available**
+
+**What was accomplished**:
+- Lightweight re-check (no full re-orientation, session 1532 completed 1 min ago)
+- Verified usage check passed (no throttling)
+- No new items in INBOX.md, no new changes to BLOCKED.md since session 1532
+- Assessment: Hold pattern remains correct; system awaiting (1) user SSH auth fix by 13:30 UTC, or (2) May 22 20:00 UTC checkpoint outcome
+
+🔴 **CRITICAL — USER ACTION REQUIRED BY 13:30 UTC (5H 55MIN REMAINING — FIRM DEADLINE)**:
+- See session 1532 for full context: Stockbot Lever B HMM config fix required
+- **Options** (see BLOCKED.md lines 73-104):
+  - Option A (fastest): Add orchestrator ED25519 public key to Jetson authorized_keys  
+  - Option B (manual SSH): Run 5-min config fix via manual SSH
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint
+
+---
+
 ## Session 1532 — ORCHESTRATOR: HOLD PATTERN RECONFIRMED + CRITICAL DEADLINE 6H REMAINING (May 22, 07:27–07:35 UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H REMAINING)** | ✅ **SSH block re-verified FAILING** | ✅ **Hold pattern maintained correctly** | ✅ **No autonomous work available**
