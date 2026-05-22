@@ -1,33 +1,39 @@
-## Session 1556 — ORCHESTRATOR: Critical Deadline Alert + Hold Pattern Finalized (May 22, 10:39–10:47 UTC)
+## Session 1556 — ORCHESTRATOR: Critical Deadline Alert + Hold Pattern Verified (May 22, 10:39–10:46 UTC)
 
-**Status**: ✅ **Hold pattern CORRECT** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 51MIN)** | ✅ **Usage nominal** | ⏰ **Checkpoint 20:00 UTC**
+**Status**: ✅ **Hold pattern CORRECT** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 44MIN REMAINING)** | ✅ **Usage nominal** | ⏰ **Checkpoint 20:00 UTC (9H 14MIN)**
 
 **Accomplishments**:
-- ✅ Verified all 5 active blocks are real and unchanged
-- ✅ Confirmed Exploration Queue has 3 items (35a/35b/35c) queued for post-checkpoint only
-- ✅ Assessed all projects: zero autonomous work available before May 22 20:00 UTC
-- ✅ Sent Discord alert about critical SSH deadline
+- ✅ SSH auth block VERIFIED FAILING at 10:46 UTC (Permission denied)
+- ✅ All 5 active blocks confirmed real and unchanged
+- ✅ Exploration Queue: 32 items complete, Item 30 queued for May 25 (attempted agent spawn hit token limit on agent tool)
+- ✅ All projects confirmed blocked on named external dependencies only
+- ✅ Zero autonomous work available before May 22 20:00 UTC checkpoint
 
-**Critical deadline**:
-- **🔴 13:30 UTC (2h 51m remaining)**: SSH auth fix required for Lever B activation
-  - Option A: Add orchestrator ED25519 public key to Jetson authorized_keys
-  - Option B: SSH manually with credentials + run 5-min config fix (see BLOCKED.md lines 77-101)
-  - Without fix: May 22 checkpoint executes with Lever A (same as May 19 STILL_MISS_B2 outcome)
+**CRITICAL DEADLINE**:
+- **🔴 13:30 UTC (2H 44M remaining)**: SSH auth fix required for Lever B activation
+  - **Option A (fastest, <5 min)**: Add orchestrator ED25519 public key to Jetson `~/.ssh/authorized_keys`
+  - **Option B (manual SSH, ~5-10 min)**: SSH to Jetson + edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true` to both session blocks, then `docker restart stockbot`
+  - **Verify after fix**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+  - **If NOT fixed**: May 22 20:00 UTC checkpoint executes with Lever A config (same as May 19 STILL_MISS_B2 outcome)
 
-**System status**:
-- All 5 projects: blocked on external dependencies (no autonomous work)
-- Exploration Queue: items 35a/35b/35c ready for post-20:00-UTC execution
-- Usage: nominal (checked 10:40 UTC)
-- Hold pattern: verified STABLE and CORRECT
+**Project status** (all blocked):
+- **stockbot**: SSH auth blocker (deadline 13:30 UTC) — Lever B test at risk
+- **resistance-research**: TOO_EARLY contingency — May 25 re-synthesis with 7-day data
+- **cybersecurity-hardening**: VeraCrypt restart (manual)
+- **mfg-farm**: Test print execution (manual)
+- **seedwarden**: Track A blocked (manual); Track B gates May 23-28
 
-**Next actions**:
-1. **User action (URGENT, before 13:30 UTC)**: Resolve SSH auth block for Lever B activation
-2. **Orchestrator (20:00 UTC post-checkpoint)**: Execute Items 35a/35b/35c in parallel:
-   - Item 35a: stockbot post-checkpoint readiness assessment (4-6 hrs)
-   - Item 35b: resistance-research synthesis outcome routing (3-4 hrs)
-   - Item 35c: systems-resilience Wave 2 contingency planning (2-3 hrs)
+**Next autonomous window**:
+- **May 22 20:00 UTC post-checkpoint**: Execute Items 35a/35b/35c in parallel (9-12 hours total):
+  - Item 35a: stockbot post-checkpoint readiness (4-6h, depends on Lever B outcome)
+  - Item 35b: resistance-research Phase 2 routing (3-4h, depends on checkpoint status)
+  - Item 35c: systems-resilience Wave 2 contingency (2-3h, resource allocation based on outcome)
 
-**Needs your input**: None at this moment; await 13:30 UTC deadline outcome then checkpoint execution at 20:00 UTC.
+**Needs your input**:
+- **URGENT (before 13:30 UTC)**: SSH fix — see options above
+- **May 25 18:00 UTC**: User decision on Phase 2 synthesis outcome (if synthesis executes and produces outcome)
+- **May 30**: Seedwarden Phase 3 scope decisions
+- **May 30 or June 1**: stockbot Gate 2 decision (based on May 22 checkpoint outcome)
 
 ---
 

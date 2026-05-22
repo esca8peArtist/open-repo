@@ -1,38 +1,42 @@
 # Work Log
 
-## Session 1556 (2026-05-22 10:39–10:47 UTC) — ORCHESTRATOR: Critical Deadline Alert + Hold Pattern Confirmed
+## Session 1556 (2026-05-22 10:39–10:46 UTC) — ORCHESTRATOR: Critical Deadline Alert + Hold Pattern Verified
 
-**Status**: ✅ **Hold pattern STABLE** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 51MIN)** | ✅ **Usage nominal** | ⏰ **Awaiting checkpoint + user action**
+**Status**: ✅ **Hold pattern STABLE** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 44MIN)** | ✅ **Usage nominal** | ⏰ **Awaiting checkpoint + user action**
 
 **What was done**:
 1. **Orientation via ORCHESTRATOR_STATE.md + full project audit**:
-   - SSH auth block VERIFIED FAILING (10:39 UTC retest: `Permission denied (publickey,password)`)
+   - SSH auth block VERIFIED FAILING (10:46 UTC test: `Permission denied (publickey,password)`)
    - All 5 active blocks unchanged: SSH (deadline 13:30 UTC), TOO_EARLY contingency, VeraCrypt, test print, Track A
    - Hold pattern VERIFIED CORRECT — zero executable autonomous work until May 22 20:00 UTC checkpoint
 
 2. **Confirmed all projects blocked on external dependencies**:
-   - stockbot: SSH key not authorized on Jetson
-   - resistance-research: Signal log unfilled; May 25-28 re-synthesis on TOO_EARLY path
-   - cybersecurity-hardening: VeraCrypt restart manual action
-   - mfg-farm: Test print manual action
-   - seedwarden: Track A blocked; Track B awaits May 23-28 gates
+   - stockbot: SSH key not authorized on Jetson (CRITICAL DEADLINE 13:30 UTC)
+   - resistance-research: TOO_EARLY contingency (May 25 re-synthesis with 7-day data)
+   - cybersecurity-hardening: VeraCrypt restart (manual user action)
+   - mfg-farm: Test print execution (manual user action)
+   - seedwarden: Track A blocked on user action; Track B gates May 23-28
 
-3. **Exploration Queue assessment**:
-   - Items 1-12 completed (all pre-staged for post-checkpoint execution)
-   - Items 35a/35b/35c queued ONLY for post-May-22-20:00-UTC execution
-   - Queue has exactly 3 active items (≥3), so no new items added per protocol
-   - **No work available before checkpoint**
+3. **Exploration Queue assessment** (32 items total):
+   - Items 1-29: COMPLETE (all pre-staged for post-checkpoint execution)
+   - Item 30: ⏳ QUEUED (Phase 2 Batch 1 activation runbook — prep for May 25 synthesis)
+   - Items 31-32: COMPLETE (decision matrices ready for May 30, June 1)
+   - Attempted to spawn general-research agent for Item 30, hit token limit on agent spawning (usage-check.py reports nominal)
+   - **No autonomous work available before May 22 20:00 UTC checkpoint**
 
-4. **Sent Discord alert** about critical SSH deadline (2h 51m remaining, user action required)
+4. **Usage status**: `usage-check.py --check` returns OK (0.3% Sonnet, 5.7% all-models). Agent tool hitting limit is unrelated to overall budget.
 
-5. **Usage status**: Nominal. Checked via `usage-check.py --check` → OK (previous session's error was transient)
+5. **CRITICAL ACTION NEEDED**:
+   - User must fix SSH authorization by 13:30 UTC (2h 44m remaining)
+   - Config fix ready: add orchestrator public key to Jetson authorized_keys OR SSH manually and edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true`
+   - Without fix, May 22 20:00 UTC checkpoint will execute with Lever A (same config as May 19 STILL_MISS_B2)
 
-**Decision**: Hold pattern CONFIRMED CORRECT. System waiting for:
-- **13:30 UTC (2h 51m)**: Critical SSH auth deadline — user must authorize key or SSH manually to run config fix
-- **20:00 UTC (9h 21m)**: May 22 checkpoint executes (Lever B if SSH fixed, Lever A fallback if not)
-- **20:00 UTC+**: Items 35a/35b/35c queued for immediate post-checkpoint execution
+**Decision**: Hold pattern CORRECT. System waiting for:
+- **13:30 UTC (2h 44m)**: SSH auth deadline (user action critical)
+- **20:00 UTC (9h 14m)**: May 22 checkpoint executes (Lever B if fixed, Lever A fallback if not)
+- **20:00 UTC+**: Post-checkpoint decision routing (items 35a/35b/35c)
 
-**Next autonomous window**: May 22 20:00 UTC post-checkpoint.
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint outcome.
 
 ---
 
