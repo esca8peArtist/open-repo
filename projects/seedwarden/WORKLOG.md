@@ -4,6 +4,32 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path v8.0 Production — May 22, 2026
+
+**Task**: Develop Phase 3 medicinal herbs production timeline and critical path analysis for June 22–July 13 launch window. Deliverables: updated canonical critical path document (v8.0) incorporating May 22 supplier intelligence, inline Gantt timeline, and standalone float day analysis section.
+
+**Files updated**:
+
+- `projects/seedwarden/PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` — upgraded from v7.0 (May 21) to v8.0 (May 22). Changes: (1) Supplier intelligence update in Section 1 — Prairie Moon Nursery confirmed OUT OF STOCK for Goldenseal and Black Cohosh (spring season closed); Mountain Rose Herbs Goldenseal root and Black Cohosh root both confirmed OUT OF STOCK; NativeWildflowers.net added as confirmed primary live-specimen source ($4.99 Goldenseal, $5.99 Black Cohosh, ships immediately); Path 2 (Wikimedia CC) recommendation upgraded from "preferred" to "confirmed zero-risk option." Tier 2 table updated to reflect 11-species MRH order (not 13) with local retail or iNaturalist fallback for Goldenseal and Black Cohosh dried root. Budget summary revised to $218–$386 (down from $233–$408). (2) Section 8 added — Inline Gantt Timeline covering all pre-sprint dates (May 30–June 21), all 22 sprint days by week and track (writing, design, photography, upload), and post-sprint milestones (July 15–August 3). Tables include hours, float days, and critical path flags per task. (3) Section 9 added — Float Day Analysis standalone section: critical path zero-float chain (May 30 → August 3), float inventory by track (writing 2 named days, design 3–14 days per task, photography non-blocking throughout, supplier by tier, peer review revenue-ceiling-only gate), float prioritization decision tree for Float Day 1, and schedule slack summary table. Document word count approximately 7,800 words across 9 sections + 2 appendices.
+
+**Evidence base**: PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md (v7.0), PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md (v5.0, May 22 supplier stockout data), phase-3-medicinal-herbs-gantt-timeline.csv (77 rows), WORKLOG.md prior sessions.
+
+**Key findings preserved and verified**:
+- Both Phase 2 launch gates CLEARED: forager cohort 21.3% (gate >20%), native plants conversion 2.24% (gate >1.5%)
+- Sprint feasibility confirmed: June 22–July 13 window viable for 3–5 bundles at 4–5 focused hours per day
+- Critical path is writing only — all other tracks carry 3–14 days of float
+- Three user decisions remain pending (May 30 deadline): sprint scope (Option A/B/C), Goldenseal path, Canva palette
+- May 22 supplier intelligence changes primary supplier for Black Cohosh to NativeWildflowers.net; Path 2 (Wikimedia CC) for Goldenseal is now confirmed only zero-risk option given primary supplier stockouts
+
+**Three decisions still required by May 30** (unchanged from v7.0):
+1. Sprint scope: Option A (5 bundles, 56–66 adj. hrs) / Option B (2 writers) / Option C (3-bundle priority — recommended)
+2. Goldenseal path: Path 1 (NativeWildflowers.net $4.99, June 8 order) or Path 2 (Wikimedia CC — confirmed zero-risk, recommended)
+3. Canva palette: confirm 6 hex codes or defer to June 15 auto-lock
+
+**Sources read**: PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md (v7.0), PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md (v5.0), phase-3-medicinal-herbs-gantt-timeline.csv, phase-3-medicinal-herbs-critical-path.md (v8.0 lowercase version), WORKLOG.md (prior sessions).
+
+---
+
 ## Seedwarden Agent Session — Track B May 22 Pre-Launch Status Brief — May 22, 2026
 
 **Task**: Identify the most valuable autonomous work item for Track B toward the May 30 launch target and execute it. Audited full project state across PROJECTS.md, WORKLOG.md, TRACK_B_LAUNCH_STATUS.md, TRACK_B_USER_GATES.md, MAY_29_GO_NO_GO_DECISION_TEMPLATE.md, SEEDWARDEN_MAY_27_29_PRELAUNCH_MASTER_CHECKLIST.md, TRACK_B_FINAL_GO_NO_GO_CHECKLIST.md, and the full EXPLORATION_QUEUE.md seedwarden section.
