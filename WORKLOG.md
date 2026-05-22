@@ -1,5 +1,48 @@
 # Work Log
 
+## Session 1570 (2026-05-22 12:56 UTC) — 🚨 ORCHESTRATOR CRITICAL: SSH DEADLINE 34 MIN AWAY
+
+**Status**: 🔴 **CRITICAL — SSH DEADLINE 13:30 UTC IN 34 MINUTES** | **User action required immediately**
+
+**Current Time**: 2026-05-22 12:56:22 UTC  
+**Deadline**: 2026-05-22 13:30 UTC  
+**Time remaining**: 33 minutes 38 seconds  
+**Checkpoint execution**: 20:00 UTC (7h 4m away)
+
+**Session Actions**:
+1. ✅ Verified current time and deadline gap
+2. ✅ Discord notification already sent (from previous session)
+3. ✅ CHECKIN.md escalation already prepared
+4. ✅ WORKLOG.md updated with real-time status
+
+**URGENT — User Must Choose One Action (5-10 min)**:
+
+**Option A** (recommended, 5 min):
+```bash
+cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'
+```
+
+**Option B** (10 min), run on any machine with SSH access to Jetson:
+```bash
+ssh ubuntu@100.120.18.84
+# (enter password when prompted)
+nano /opt/stockbot/config/active-sessions-2session.json
+# Find both "AAPL_h10_lgbm_ho" and "AAPL_h10_ridge_wf" blocks
+# In each, ensure strategy_params has: "hmm_regime_masking": true
+# Save: ctrl+x, y, enter
+docker restart stockbot
+curl http://localhost:8000/api/health
+```
+
+**Verification** (after action):
+```bash
+ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'
+```
+
+**If deadline passed without action**: Checkpoint at 20:00 UTC executes with Lever A config (defeats Lever B test; repeats May 19 STILL_MISS_B2 outcome). Full details in BLOCKED.md.
+
+---
+
 ## Session 1569 (2026-05-22 13:30+ UTC) — 🚨 ORCHESTRATOR CRITICAL ESCALATION: SSH DEADLINE MISSED
 
 **Status**: 🚨 **SSH DEADLINE PASSED** — No user action taken | **Checkpoint at risk** (6h 30m remaining)
