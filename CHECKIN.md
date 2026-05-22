@@ -1,3 +1,46 @@
+## Session 1557 — ORCHESTRATOR: Hold Pattern Stable + Checkpoint Readiness Confirmed (May 22, 10:54 UTC)
+
+**Status**: ✅ **Hold pattern STABLE** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 36MIN)** | ✅ **All blocks verified** | ⏰ **Checkpoint 20:00 UTC (9H 6MIN)**
+
+**Accomplishments**:
+- ✅ Orientation complete via ORCHESTRATOR_STATE.md — all block states verified unchanged
+- ✅ SSH auth failure re-confirmed (Session 1554 verification still valid)
+- ✅ Exploration Queue audit: 4 items queued (all post-checkpoint), queue at capacity
+- ✅ Confirmed zero autonomous work before checkpoint — all post-checkpoint deliverables pre-staged
+- ✅ Checkpoint readiness verified: Items 35a/35b/35c execution plans complete
+
+**CRITICAL DEADLINE (2H 36MIN REMAINING)**:
+- **13:30 UTC SSH deadline**: User must either:
+  - **Option A** (fastest, <5 min): Add orchestrator ED25519 public key to Jetson `~/.ssh/authorized_keys`
+  - **Option B** (manual, ~5-10 min): SSH with credentials, edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true`, then `docker restart stockbot`
+  - **If NOT fixed**: May 22 20:00 UTC checkpoint executes with Lever A config (same as May 19 STILL_MISS_B2 outcome, defeating Lever B test purpose)
+
+**Project status** (all blocked, no change from Session 1556):
+- **stockbot**: SSH auth critical deadline 13:30 UTC
+- **resistance-research**: TOO_EARLY contingency (May 25/28 re-synthesis)
+- **cybersecurity-hardening**: VeraCrypt restart pending (Phase 1 complete 1.1-1.2)
+- **mfg-farm**: Test print pending
+- **seedwarden**: Track A blocked (tag corrections); Track B gates May 23-28 (ready)
+
+**Post-checkpoint execution plan** (Items 35a/35b/35c):
+- **Item 35a**: stockbot readiness (spawns at 20:00 UTC, 4-6h based on Lever B PASS/FAIL)
+  - If PASS: multi-ticker expansion readiness, AMZN/JPM risk spec
+  - If FAIL: failure analysis + 3-option recovery (Lever A revert, Option B1 covered-call, defer)
+- **Item 35b**: resistance-research Phase 2 routing (spawns at 20:00 UTC, 3-4h)
+  - Routes based on checkpoint outcome and May 25 synthesis (if STRONG/MODERATE: same-day execution; TOO_EARLY: May 28 contingency)
+- **Item 35c**: systems-resilience Wave 2 contingency (spawns at 20:00 UTC, 2-3h)
+  - Resource contention analysis based on Lever B outcome (Scenario A/B/C activation)
+
+**Needs your input**:
+- **URGENT (before 13:30 UTC)**: SSH fix — see options above
+- **May 25 17:00 UTC**: Verify signal log is filled (`grep -c '\[fill\]'` should return 0)
+- **May 30**: Seedwarden Phase 3 scope decisions (Option A/B/C, writer, sourcing)
+- **Post-checkpoint (May 23)**: stockbot Gate 2 decision (expansion, Option B1, defer)
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (spawn Items 35a/35b/35c in parallel)
+
+---
+
 ## Session 1556 — ORCHESTRATOR: Critical Deadline Alert + Hold Pattern Verified (May 22, 10:39–10:46 UTC)
 
 **Status**: ✅ **Hold pattern CORRECT** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 44MIN REMAINING)** | ✅ **Usage nominal** | ⏰ **Checkpoint 20:00 UTC (9H 14MIN)**
