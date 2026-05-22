@@ -342,6 +342,38 @@
 - **Owner**: seedwarden subagent
 - **Deadline**: August 1 (ready for July 13 Phase 3 completion → Phase 4 launch)
 
+### 36. ⏳ stockbot — Jetson Infrastructure Capacity Analysis & Multi-Ticker Readiness (Session 1568 Added)
+**Scope**: All hardware analyses post-deployment are reactive (e.g., thermal throttling discovery on May 22). Pre-checkpoint, analyze current Jetson resource utilization (CPU, RAM, disk I/O, network bandwidth) and project capacity for 4-5 ticker expansion post-May-22 checkpoint. Identify constraints, scaling limits, and infrastructure requirements before Gate 2 PASS decision.
+- **Deliverables**: 
+  - `JETSON_CAPACITY_ANALYSIS.md` (current utilization, bottleneck analysis, scaling projections for 2→4→6 ticker configs)
+  - `MULTI_TICKER_INFRASTRUCTURE_REQUIREMENTS.md` (hardware additions needed for June 1-15 expansion, SSD upgrade timeline, network I/O constraints)
+  - `THERMAL_AND_RELIABILITY_PLAN.md` (extended compute environment design, passive/active cooling options, failover architecture)
+- **Owner**: stockbot subagent
+- **Deadline**: May 23 (pre-expansion planning)
+- **Status**: ⏳ QUEUED — Researchable NOW without checkpoint dependency
+
+### 37. ⏳ resistance-research — Phase 2 Tier 2 Contact Contingency & Secondary Outreach Strategy (Session 1568 Added)
+**Scope**: Phase 2 synthesis (May 25) will generate Tier 1 contact list and outreach timeline. But if Tier 1 response rates fall below 40% or key stakeholders don't engage, what's the Tier 2 fallback? Research and stage secondary contact networks, alternative outreach channels, and contingency amplification paths so May 25-31 can execute rapid Tier 2 activation if needed.
+- **Deliverables**: 
+  - `PHASE_2_TIER_2_CONTACT_STRATEGY.md` (secondary contacts for each domain, response probability analysis)
+  - `CONTINGENCY_ACTIVATION_CHECKLIST.md` (Tier 2 outreach templates, timeline if Tier 1 insufficient, escalation triggers)
+  - `ALTERNATIVE_AMPLIFICATION_CHANNELS.md` (media outreach, podcast booking, coalition amplification networks)
+- **Owner**: resistance-research subagent
+- **Deadline**: May 28 (pre-Tier 2 activation window)
+- **Status**: ⏳ QUEUED — Researchable NOW without synthesis outcome dependency
+
+### 38. ⏳ cybersecurity-hardening — Incident Response Automation & Zero-Trust Monitoring Architecture (Session 1568 Added)
+**Scope**: Phase 1-2 are personal device hardening. Phase 3 is infrastructure security. But distributed team operations require automated incident response and zero-trust network design. Research and design automation-first incident response playbooks, monitoring architecture, and zero-trust network topology that integrates with Phase 3 rollout.
+- **Deliverables**: 
+  - `INCIDENT_RESPONSE_AUTOMATION_FRAMEWORK.md` (Wazuh/osquery SOAR integration, automated response playbooks for common threats)
+  - `ZERO_TRUST_NETWORK_ARCHITECTURE.md` (Tailscale zero-trust mesh, Authentik identity layer, segmentation strategy)
+  - `THREAT_MONITORING_DASHBOARD_SPEC.md` (real-time threat visualization, alert rules, escalation paths)
+- **Owner**: cybersecurity-hardening subagent
+- **Deadline**: June 1 (pre-Phase-3 execution)
+- **Status**: ⏳ QUEUED — Researchable NOW without user action dependency
+
+---
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
