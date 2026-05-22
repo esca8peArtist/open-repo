@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-22T07:33:06Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-22T10:25:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 5.4% | Reset in 88h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 5.7% | Reset in 86h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,12 +19,12 @@
 ## Active Projects
 ### mfg-farm
 **Status**: Active — ready to prototype
-**Focus**: **[ITEM 85 COMPLETE] ETSY LAUNCH SEQUENCE FRAMEWORK PRODUCTION-READY (verified current May 20).** Test print execution pending (user action required). All pre-print + post-print preparation complete. **SEO RESEARCH COMPLETE** (Session 1445): `ETSY_SEO_STRATEGY_Q2_Q3_2026.md` (3,200 words) + competitive matrix — 15+ keyword research, seasonal demand patterns, algorithm updates (Feb 2026 NLP 70-char title cap, May 2026 ChatGPT integration), pricing strategy ($12.99 clips launch, $16.99 hooks, $1 … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Test print execution pending (user action required).** All pre-launch preparation complete: launch sequence framework production-ready, SEO strategy locked, competitive analysis done, pricing and supply chain planned. **`ETSY_LAUNCH_SEQUENCE_AND_CHECKLIST.md` (5,500+ words, PRODUCTION-READY)**:
 **Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **✅ PHASE 2 DOMAIN 56 UNBLOCKED (Session 1515)** — GitHub Gist created May 22 05:XX UTC (https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f). Five Tier 1 email drafts prepared and committed. **Status**: Domain 56 awaiting user to fill sender credentials and send 5 emails over 24–48 hours (5 min fill + 15–20 min sending = 20–25 min total). Domain 58 Gist already live (May 20, ready to send June 5-10 or 72h after Trump v. Barbara ruling). Domain 59 action needed May 3 … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 2 Domain 56 & 58 distribution in progress (May 22–June 10).** Gists created and ready for user distribution: Domain 56 (Civil Service Politicization, Gist live May 22), Domain 58 (Tribal Sovereignty, Gist live May 20). **May 25 re-synthesis scheduled** (TOO_EARLY contingency active due to signal log 20 unfilled fields; re-sync with 7-day data May 28). **User action timeline**: Domain 56 Tier 1 sends (NOW), Domain 58 sends (June 5-10 or 72h post-Trump v. Barbara ruling), Domain 59 (May  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,16 +36,16 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[PHASE 3 PRODUCTION-READY + TRACK B GATES CRITICAL PATH (Session 1515)]** ✅ **Phase 3 Medicinal Herbs v8.0 audit complete** (Session 1515): All nine sections production-ready, zero implementation gaps identified. **New artifact**: `PHOTO_ATTRIBUTION_LOG.md` created (eliminates zero-float June 5–10 task; all 14 species sourced with Wikimedia URLs + iNaturalist fallbacks + attribution strings pre-staged). **Track B Critical Path (May 23–28)**: Three user-only gates total ~3–4 hours. Gate … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 3 Medicinal Herbs v8.0 production-ready, Track B launch May 30 on critical path.** Phase 3 audit complete: all nine sections production-ready, photo attribution fully sourced (Wikimedia + iNaturalist), zero implementation gaps. **Track B Critical Gates (May 23–28)**: Gate 1 (Instagram/TikTok/Pinterest setup, 45–60 min), Gate 2 (Canva Brand Kit + zone cards, 4–6 hrs), Gate 3 (Kit email + landing page, 3–4.5 hrs). **May 30 User Decisions**: Scope (Option A/B/C), Goldenseal sourcing … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[✅ STAGE 0 ACTIVATION COMPLETE (Session 1513) — PHASE 5.1 MVP FULLY ACTIVATED]** Real libzim.writer.Creator implementation + migration 003 extracted and committed on master (commit 7b7df5af). **Activation COMPLETE**: (1) ✅ libzim 3.9.0 wheel installed, (2) ✅ alembic migration 003 validated (creates zim_exports table with 28 columns), (3) ✅ ZIM writer bugs fixed (3 issues: fallback PNG, config_indexing ordering, metadata handler), (4) ✅ full test suite passing (240 passed, 0 failed) … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 5.1 MVP (offline ZIM export) production-ready for merge.** libzim 3.9.0 integration complete: migration 003 validated, writer bugs fixed, 240 tests passing. **Ready for**: User decision by May 25-26 on Phase 5 candidates (Candidate 1 ZIM export RECOMMENDED for immediate merge). **Medical reviewer ID needed by May 31**. Thermal note: Pi 5 runs 80.7°C idle; sustained exports need active cooling.
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **[PHASE 6 GAP ANALYSIS COMPLETE + 2 QUEUE ITEMS STAGED (Session 1498)]** ✅ **Phase 5 Status**: Wave 1 production-ready (14.6K words), Wave 2 35% staged (outlines + citations). **Phase 6 Gap Analysis Complete**: Identified three load-bearing Phase 6 domains: (1) Farm equipment repair / right-to-repair (John Deere settlement + EPA Feb 2026 guidance), (2) Meshtastic / LoRa mesh networking (915 MHz ISM, $30-60/node, offline comms for Zone 5), (3) Community-scale microgrid design (DOE C-MAP grants … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 5 Wave 1 production-ready (14.6K words), Wave 2 35% staged. Phase 6 gap analysis complete.** Three Phase 6 load-bearing domains identified: (1) Farm equipment repair / right-to-repair, (2) Meshtastic/LoRa mesh networking, (3) Community-scale microgrid design. **Cross-domain bridges** to cybersecurity-hardening, open-repo, resistance-research identified. **User decision required by June 1**: Wave 2 sequencing order and Phase 6 execution timing (can run in parallel). **Next**: June 1 user  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -94,12 +94,6 @@
 **Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
 **Resolution**: [leave blank]
 
-## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (87 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: resistance-research — focus references Session 1515 (17 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: seedwarden — focus references Session 1515 (17 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: open-repo — focus references Session 1513 (19 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 1498 (34 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked ← 2026-05-21 ~19:15 UTC (Session 1471 — orchestrator autonomous fix)
 • open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
@@ -111,35 +105,6 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- cybersecurity-hardening: Manual-only verification (VeraCrypt Windows restart user-initiated)
-
-**Critical Deadline Reconfirmed**: May 22 13:30 UTC (~6h 17m remaining)
-- Stockbot Lever B HMM config must be fixed by user (Option A or Option B, documented in BLOCKED.md)
-- Failure impact: May 22 checkpoint defaults to Lever A config (repeat of May 19 STILL_MISS_B2 failure)
-
-**Status**: Hold pattern correct; no autonomous action available; system awaiting:
-1. User SSH auth fix (deadline 13:30 UTC today)
-2. May 22 13:30 UTC checkpoint outcome (routes to Lever B scaling, Phase 2 synthesis, or recovery scenarios)
-
-**Next autonomous window**: May 22 20:00 UTC post-checkpoint
-
----
-
-## Session 1531 (May 22, 07:13–07:30 UTC) — Final Pre-Checkpoint Verification + Hold Pattern Confirmation
-
-**Orchestrator Status**: All blocks verified unchanged; hold pattern correct; no autonomous work available
-
-**Session Activities**:
-1. **Oriented** via ORCHESTRATOR_STATE.md (snapshot from 07:19 UTC)
-2. **Verified critical deadline**: Stockbot Lever B HMM config requires user SSH fix by 13:30 UTC (6h 5m remaining) — currently FAILING
-3. **Verified block status**: 
-   - stockbot SSH auth: Still failing (`Permission denied (publickey)`)
-   - Jetson connectivity: ✅ Reachable (ping OK)
-   - resistance-research: TOO_EARLY contingency active (no action until May 25)
-   - cybersecurity-hardening: Manual user action (Windows restart)
-   - mfg-farm: Test print pending (no results yet)
-4. **Confirmed Exploration Queue**: Very few active items; most recent items COMPLETE or STAGED. No new items needed.
-5. **Assessed project unfinished scope**: 
    - seedwarden: Track B ready (awaiting user gates May 23-28)
    - open-repo: Phase 5.1 ready (awaiting user decision)
    - systems-resilience: Phase 6 gap analysis complete (awaiting Phase 5 user decision)
@@ -151,3 +116,32 @@
 **Next autonomous window**: May 22 20:00 UTC post-checkpoint
 
 ---
+
+**Session 1543 (May 22, 08:44 UTC) — Orchestrator: Comprehensive Hold Pattern Verification**
+
+- **Orientation complete**: Read ORCHESTRATOR_STATE.md, PROJECTS.md (full), BLOCKED.md, INBOX.md, EXPLORATION_QUEUE.md
+- **SSH auth block re-verified**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84` still returns `Permission denied (publickey,password)`. Orchestrator key NOT authorized. Block is real.
+- **All active blocks audited**: stockbot SSH (critical deadline 13:30 UTC), resistance-research (TOO_EARLY contingency), cybersecurity-hardening (VeraCrypt restart), mfg-farm (test print), seedwarden (Track A blocked; Track B May 23-28 gates)
+- **Project Goals re-read**: All 12 active projects confirmed blocked on named external dependencies only. Zero unfinished autonomous scope.
+- **Exploration Queue**: Domains 31-37 COMPLETE; Phase 3 candidates identified but NOT tasked for autonomous work.
+- **Decision**: Hold pattern VERIFIED CORRECT. System stable and waiting for: (1) User SSH fix by 13:30 UTC, (2) May 22 20:00 UTC checkpoint outcome.
+- **Next autonomous window**: May 22 20:00 UTC post-checkpoint (Phase 2 synthesis routing + Phase 6 activation)
+
+---
+
+## Session 1552 (May 22, 10:10–10:25 UTC) — Final Pre-Checkpoint SSH Verification + Hold Pattern Confirmation
+
+**Orchestrator Status**: SSH auth block still FAILING; critical deadline now ~3h 20m away
+
+**Session Activities**:
+1. **Oriented** via ORCHESTRATOR_STATE.md (snapshot from 10:10 UTC) — confirmed May 22 20:00 UTC checkpoint and SSH auth deadline both imminent
+2. **Re-verified SSH auth block**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` returns:
+   - `ssh_askpass: exec(/usr/bin/ssh-askpass): No such file or directory`
+   - `Permission denied (publickey,password)` (3 retries)
+   - **STILL FAILING** — Orchestrator key NOT authorized on Jetson
+3. **Assessed autonomous scope**: All projects blocked on named external dependencies. Zero unfinished autonomous work. Exploration Queue items 35a/35b/35c queued for post-checkpoint execution.
+4. **CRITICAL DEADLINE STATUS**: User must either (A) authorize orchestrator key on Jetson, OR (B) SSH manually and run 5-minute config fix by May 22 13:30 UTC (3h 20m remaining). Without fix, May 22 20:00 UTC checkpoint will execute with Lever A config (same as May 19 STILL_MISS_B2 outcome), defeating Lever B test purpose.
+
+**Decision**: Hold pattern VERIFIED CORRECT. System stable. Awaiting: (1) User SSH fix by 13:30 UTC (CRITICAL), or (2) May 22 20:00 UTC checkpoint execution with Lever A fallback.
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (post-checkpoint readiness assessment + synthesis outcome routing)
