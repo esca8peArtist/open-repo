@@ -32,13 +32,13 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Jetson unreachable; checkpoint at risk (May 22 20:00 UTC, 6h away)
+### stockbot — Jetson unreachable; checkpoint at risk (May 22 20:00 UTC, ~6h away)
 
 **Date blocked**: 2026-05-22 13:50 UTC (Session 1573 — API health check failure)
-**Context**: Pre-checkpoint verification attempt (14:00 UTC, 6 hours before 20:00 UTC checkpoint execution) detected critical connectivity issue. Health check to http://100.120.18.84:8000/api/health timed out. Subsequent ping to Jetson IP 100.120.18.84 shows 100% packet loss. Tailscale status shows connection "active; direct" but ping unreachable. SSH auth failing (key not authorized, same as before). Checkpoint is scheduled to execute automatically at 20:00 UTC on the Jetson.
-**What I need**: (1) Verify Jetson is physically on and connected to network. Check: (a) Power status (LED indicators), (b) Network cable or wireless status, (c) If Jetson rebooted, check if trading engine auto-started (`ps aux | grep launch_stacker_sessions.py`). (2) If Jetson is online but API is down, SSH and restart Docker container: `ssh ubuntu@100.120.18.84 && docker restart stockbot && curl http://localhost:8000/api/health`. (3) If Jetson network is unstable, check Tailscale connection on Jetson side or restart Tailscale daemon.
-**Verify with**: `curl -s http://100.120.18.84:8000/api/health | jq .status` — should return "ok" if healthy. If that succeeds, respond with JSON health status.
-**Resolution**: [leave blank — critical path blocker; cannot auto-verify remotely]
+**Context**: Pre-checkpoint verification attempt detected critical connectivity issue. Health check to http://100.120.18.84:8000/api/health timed out (Session 1573, Session 1574 14:00 UTC). Session 1569 diagnostics (12:57 UTC) confirmed: Jetson network/SSH daemon healthy, but orchestrator ED25519 public key NOT authorized in Jetson's authorized_keys file. User SSH action deadline was 13:30 UTC May 22 (to deploy Lever B config fix before checkpoint). Deadline has PASSED (now 14:00 UTC). Checkpoint scheduled to execute automatically at 20:00 UTC on Jetson with current Lever A configuration (no Lever B HMM regime masking test). Health check continues to time out — API endpoint unreachable or trading engine may be down.
+**What I need**: (1) **IMMEDIATE (before 20:00 UTC)**: Physical or SSH verification: Is Jetson powered on? Is trading engine running? Can you SSH to Jetson and check `docker ps | grep stockbot` or `ps aux | grep launch_stacker_sessions.py`? (2) If engine is down, restart it: `ssh ubuntu@100.120.18.84 && cd /opt/stockbot && docker restart stockbot` or manual restart from Jetson terminal. (3) **Optional**: If you want to fix Lever B config: `ssh ubuntu@100.120.18.84 -c "cat > ~/.ssh/authorized_keys << 'EOF'` + paste orchestrator ED25519 public key. (4) Report status so checkpoint execution is verified possible.
+**Verify with**: `curl -s http://100.120.18.84:8000/api/health | jq .status` — should return "ok" if healthy. If successful, respond with JSON health status. If still fails after user action, checkpoint may execute without pre-flight verification.
+**Resolution**: [leave blank — SSH deadline missed at 13:30 UTC; checkpoint will proceed at 20:00 UTC with current config]
 
 ---
 
