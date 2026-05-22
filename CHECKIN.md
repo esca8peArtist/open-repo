@@ -1,29 +1,35 @@
-## Session 1518 — ORCHESTRATOR: FINAL ORIENTATION + HOLDPATTERN (May 22, 05:50–06:02 UTC)
+## Session 1519 — ORCHESTRATOR: HOLD PATTERN CONFIRMED + CRITICAL STOCKBOT DEADLINE (May 22, 05:57–06:15 UTC)
 
-**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~7H 40MIN)** | ✅ **All systems verified, no new blockers** | ✅ **Exploration Queue: 29 items complete, 3 deferred post-checkpoint** | ⏳ **Proper holdpattern — awaiting deadline**
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~7H 30MIN)** | ✅ **All systems verified, no new blockers** | ✅ **Pre-checkpoint work 100% complete** | ✅ **Hold pattern is correct state — awaiting user action**
 
-**Session Summary**:
+**Session 1519 Summary** (Current orientation):
 - ✅ Verified all 4 active BLOCKED items (stockbot SSH, resistance-research synthesis TOO_EARLY, cybersecurity-hardening VeraCrypt, mfg-farm test print)
 - ✅ Confirmed Exploration Queue status: 29 items complete (pre-staged architecture/frameworks), 3 items deferred (30-32: post-synthesis/post-decision execution)
-- ✅ No autonomous unblocked work available in 7h 40m window — all projects awaiting user action or post-deadline execution
+- ✅ **No autonomous work available in 7h 30m window** — all projects awaiting user action, external events, or post-deadline execution
 - ✅ Pre-checkpoint staging complete: decision frameworks, contingency playbooks, architecture roadmaps all pre-built for immediate post-checkpoint execution
+- ✅ **This is the correct hold pattern** — system designed to be idle here, waiting for checkpoint outcome to determine routing
 
-**Critical Action Required by 13:30 UTC TODAY**:
-- **Stockbot SSH deadline**: User must resolve SSH auth failure to enable orchestrator config fix
-- **Option A**: Add orchestrator ED25519 public key to Jetson authorized_keys file
-- **Option B**: SSH manually and execute 5-min config fix (exact commands in BLOCKED.md lines 76-101)
-- **Consequence if missed**: May 22 checkpoint executes with Lever A config (repeat of May 19 STILL_MISS_B2 outcome)
+**CRITICAL — TODAY by 13:30 UTC (SESSION 1519 RECONFIRM)**:
+- **Stockbot SSH auth failure blocks Lever B testing** — orchestrator cannot resolve this autonomously
+- **Option A (recommended)**: Add orchestrator ED25519 public key to Jetson authorized_keys
+  - Key: `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPO0YPqQl2woxThwe/aS7+Z8UUA4PpVE/i69g2kEdJwV pi-stockbot`
+  - Then orchestrator will verify config fix at checkpoint time
+- **Option B (fallback)**: SSH to Jetson and manually execute 5-min config fix (exact commands in BLOCKED.md lines 76-101)
+- **Consequence if missed by 13:30 UTC**: May 22 checkpoint executes with Lever A config (repeat of May 19 STILL_MISS_B2 outcome, defeating Lever B testing purpose)
+- **Verify afterwards**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
 
-**System Status**:
-- ✅ All orchestration files current (PROJECTS.md, WORKLOG.md, BLOCKED.md, CHECKIN.md, INBOX.md)
-- ✅ Pre-checkpoint decision frameworks ready: MAY_22_CHECKPOINT_DECISION_ROADMAP.md + SYNTHESIS_OUTCOME_PLAYBOOKS.md (Session 1447)
-- ✅ Exploration Queue staged with post-checkpoint items
-- 🔴 Waiting on May 22 13:30 UTC checkpoint outcome to route to next autonomous work
+**System Status** (Session 1519):
+- ✅ All orchestration files current and committed (PROJECTS.md, WORKLOG.md, BLOCKED.md, CHECKIN.md, INBOX.md)
+- ✅ Pre-checkpoint decision frameworks ready (MAY_22_CHECKPOINT_DECISION_ROADMAP.md + SYNTHESIS_OUTCOME_PLAYBOOKS.md)
+- ✅ All independent work streams complete (Exploration Queue 1-29, seedwarden Phase 3, Domain 56 Gist, resistance-research Wave 1)
+- 🔴 **Orchestrator idle** — waiting on user action (stockbot SSH) and then checkpoint outcome (13:30 UTC) to route to next work
 
-**Next Steps**:
-1. **If user resolves SSH auth before 13:30 UTC**: Orchestrator will verify config fix and log outcome to WORKLOG.md
-2. **At/after 13:30 UTC**: Checkpoint outcome determines routing → consult MAY_22_CHECKPOINT_DECISION_MATRICES.csv and SYNTHESIS_OUTCOME_PLAYBOOKS.md
-3. **May 23+**: Based on outcome, spawn agents for Phase 2 research, Lever C contingency planning, or live trading prep as appropriate
+**Post-Deadline Routing** (May 22 13:30 UTC checkpoint outcome):
+1. **Checkpoint PASSES (Lever A/B test succeeds)**: Multi-ticker scaling decision + Phase 2 research + Lever C development
+2. **Checkpoint FAILS (STILL_MISS outcome)**: Lever C contingency activation + post-mortem analysis + recovery path
+3. **Resistance-research**: TOO_EARLY contingency active; re-synthesis at May 25 18:00 UTC with full 7-day signal log
+4. **Seedwarden**: Track B gates May 23–28 (user actions); Track A blocked on Tag corrections + Etsy account
+5. **All post-deadline work**: Staged in Exploration Queue Items 30-32 and SYNTHESIS_OUTCOME_PLAYBOOKS.md
 
 ---
 
