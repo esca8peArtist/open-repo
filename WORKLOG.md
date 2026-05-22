@@ -10791,3 +10791,40 @@ Of these, farm equipment repair and mesh networking/microgrid are executable NOW
 **Next autonomous window**: 
 - May 22 20:00 UTC post-checkpoint (agent results logged, Items 35a/35b/35c execution + synthesis outcome routing)
 - If SSH fixed before 13:30 UTC: May 22 checkpoint may have different outcome (Lever B enabled instead of Lever A fallback)
+
+---
+
+## Session 1565 (May 22, 12:00 UTC) — ORCHESTRATOR: SSH Critical Deadline Verification + Agent Monitoring
+
+**Status**: 🔴 **SSH AUTH CRITICAL** (deadline 13:30 UTC, 1h 30m remaining) | ✅ **Two agents active** (Domain 59 + Track B Gate 1) | ⏰ **Checkpoint 20:00 UTC (8h)**
+
+**Session Activities**:
+
+1. **Final Orientation**:
+   - Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
+   - Read WORKLOG.md (Session 1564 logged at 11:51 UTC)
+   - No new INBOX items
+   - Confirmed 4 active blocks, all user-action-dependent
+
+2. **SSH Auth FINAL Verification** (12:00:41 UTC):
+   - Ran: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health'`
+   - Result: **FAILED** — "Permission denied (publickey,password)" after 3 password retry attempts
+   - **CONFIRMED STILL FAILING** — Orchestrator ED25519 key NOT authorized on Jetson
+   - **CRITICAL DEADLINE**: 13:30 UTC (1h 30m remaining) — User must apply fix OR checkpoint executes with Lever A fallback
+
+3. **Autonomous Work Assessment**:
+   - **All active projects**: 4 hard blocks (SSH auth, test print, VeraCrypt restart, synthesis data)
+   - **Unblocked Work**: Two agents running from Session 1563
+     - ✅ **resistance-research subagent**: Domain 59 (Economic Precarity) research initiation (25+ min elapsed)
+     - ✅ **seedwarden subagent**: Track B Gate 1 (Instagram/TikTok/Pinterest setup, 45-60 min scope, 25+ min elapsed)
+   - **Exploration Queue**: 3+ items staged for post-checkpoint execution (Items 35a/35b/35c)
+   - **Verdict**: Agents are actively working on production-ready autonomous tasks. System correctly in hold pattern.
+
+4. **Critical Timeline**:
+   - **13:30 UTC (1h 30m)**: SSH deadline. User MUST act or checkpoint defaults to Lever A config.
+   - **20:00 UTC (8h)**: May 22 checkpoint execution (Lever A with wrong config if SSH unfixed, OR Lever B if SSH fixed in time).
+   - **Agent completion expected**: ~12:45-13:00 UTC for both (Track B Gate 1 is 45-60 min, Domain 59 is concurrent research initiation)
+
+**Decision**: Hold pattern maintained. Agents active. Awaiting: (1) User SSH fix by 13:30 UTC (CRITICAL), or (2) Checkpoint execution at 20:00 UTC with agents' results.
+
+**Next autonomous window**: 20:00 UTC post-checkpoint (agent results logged, checkpoint outcome routing, Items 35a/35b/35c execution if applicable).
