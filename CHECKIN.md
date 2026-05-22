@@ -13,7 +13,13 @@
 - Checkpoint execution: Will proceed at 20:00 UTC regardless of Jetson status (checkpoint is cron-scheduled on Jetson itself)
 - User intervention required: Physical check / SSH verification to confirm engine status
 
-**Next Step**: Monitor for checkpoint completion at 20:00 UTC (May 22). Engine is either (a) running and will checkpoint, or (b) offline and checkpoint will execute when restarted.
+**Session Complete**: All orchestration files committed. No autonomous work available until May 26 06:00 UTC (agent limit reset) or user provides input for blocked projects.
+
+**Next Steps**:
+1. **May 22 20:00 UTC**: Checkpoint executes (autonomous, no user action needed)
+2. **May 22 20:15 UTC+**: Monitor checkpoint outcome (will be visible in Jetson logs when engine comes back online)
+3. **May 26 06:00 UTC**: Agent limit resets; can execute queued research (systems-resilience Wave 2, resistance-research synthesis prep)
+4. **Anytime**: User can take actions on blocked items (VeraCrypt restart, test print, Domain 56 emails, seedwarden gates)
 
 ---
 
