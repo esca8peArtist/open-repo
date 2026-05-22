@@ -1,3 +1,47 @@
+## Session 1496 — ORCHESTRATOR: CRITICAL DEADLINE MONITORING + SSH ESCALATION (May 22, 00:25–00:35 UTC)
+
+**Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE: May 22 13:30 UTC (~13h remaining)** | ⚠️ **SSH auth still failing; user action required TODAY**
+
+**What Happened**:
+
+1. 🔴 **SSH Auth Block Confirmed (00:25 UTC)**
+   - SSH verification failed: `Permission denied (publickey,password)`
+   - Block type: Orchestrator ED25519 key NOT authorized on Jetson
+   - Persistence: Issue remains from Sessions 1494-1495
+   - **Action Window**: ~13 hours remaining until May 22 13:30 UTC checkpoint deadline
+
+2. 🔴 **Critical Situation**:
+   - **Lever B HMM config** is deployed on Jetson but config file missing `"hmm_regime_masking": true`
+   - **May 22 20:00 UTC checkpoint** will execute with Lever A only (defeating Lever B testing objective)
+   - **Root cause**: SSH auth failure prevents orchestrator from applying config fix remotely
+   - **User options**:
+     - **(A) Quick fix (5 min)**: SSH to `ubuntu@100.120.18.84` and run commands in BLOCKED.md
+     - **(B) Infrastructure fix (2-3 min)**: Add orchestrator's public key `~/.ssh/id_ed25519.pub` to Jetson `~/.ssh/authorized_keys`
+   - **Both options must be completed by 13:30 UTC**
+
+3. **Project Status**:
+   - ✅ BLOCKED.md verified with stockbot SSH entry
+   - ✅ PROJECTS.md current focus lines reviewed
+   - ✅ No new INBOX items
+   - All other projects: Blocked on external dependencies (user decisions May 30-June 1, synthesis May 25, checkpoint outcome May 22)
+
+4. **Autonomous Work Assessment**:
+   - **Available**: None identified beyond monitoring deadline
+   - **Reason**: All active projects blocked on: SSH auth (stockbot), user Gist creation (resistance-research Domain 56), user decisions (seedwarden May 30, systems-resilience June 1), VeraCrypt restart (cybersecurity-hardening), test print (mfg-farm), user merge approval (open-repo)
+   - **Exploration Queue**: Empty (all items complete or deferred)
+
+**Needs Your Input**:
+- 🔴 **URGENT**: Choose SSH fix option (A or B) and execute before 13:30 UTC today (May 22)
+- No other user actions needed this session
+
+**Session Outcome**:
+- ✅ SSH block escalated and current status verified
+- ✅ 13h action window confirmed
+- ✅ No autonomous work available; orchestrator idle until deadline or user input
+- ✅ All orchestration files ready for commit
+
+---
+
 ## Session 1495 — ORCHESTRATOR: SECOND VERIFICATION + NO AUTONOMOUS WORK AVAILABLE (May 22, 00:18 UTC)
 
 **Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE: May 22 13:30 UTC (~13h 12m remaining)** | ✅ **Exploration Queue all items complete; all projects blocked on external dependencies**
