@@ -31,10 +31,28 @@
    - Execution readiness: 100% — ready for 20:05 UTC May 22 use immediately upon checkpoint query completion
 
 **Key Findings**:
-- Previous session (1575) hit agent concurrency limit (may affect parallel execution)
-- All unblocked work available but primary focus is pre-checkpoint outcome prep
-- Resistance-research Domain 56 Tier 2 distribution window expires May 24 18:00 UTC (~52 hours) — user action item
+- Jetson connectivity unresolved (health check timeout reconfirmed); does not block checkpoint execution
+- All unblocked work available but primary focus is pre-checkpoint outcome prep (accomplished)
+- Resistance-research Domain 56 Tier 2 distribution window expires May 24 18:00 UTC (~51h) — user action item
 - May 25 re-synthesis deadline: signal log fill required by May 25 18:00 UTC
+- Exploration Queue refreshed with 3 new items for May 23+ execution
+
+**Session Summary**:
+- **Duration**: 14:21–14:45 UTC (~24 minutes elapsed)
+- **Items delivered**: 1 of 3 Exploration Queue items (stockbot post-checkpoint protocol)
+- **Commits**: 5 commits to master (queue refresh, decision protocol, CHECKIN update, WORKLOG progress)
+- **Checkpoint readiness**: 100% — post-event analysis framework ready for 20:05 UTC use
+
+**What to Do at 20:00 UTC May 22**:
+1. Checkpoint executes automatically on Jetson (cron-scheduled)
+2. Result query window 20:05–20:35 UTC — run `may22_checkpoint_query_alpaca.py` and classify outcome using MAY_22_CHECKPOINT_OUTCOME_ANALYSIS_PROTOCOL.md
+3. Print Section 6 Decision Card for quick reference
+4. Route May 23 user decision window based on outcome classification
+
+**Next Session Priorities** (May 23+):
+1. Verify checkpoint executed successfully at 20:00 UTC May 22
+2. Execute post-event analysis and May 23 decision routing
+3. When conditions permit, execute Exploration Queue Items #2 and #3 (systems-resilience Wave 2 research, open-repo Phase 5.1 finalization)
 
 ---
 
