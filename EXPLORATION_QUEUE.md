@@ -258,16 +258,23 @@
 - **Owner**: resistance-research subagent
 - **Deadline**: May 25 19:00 UTC (post-synthesis, ready for immediate execution)
 
-### 31. ⏳ seedwarden — May 30 Gate Decision Package (Session 1505 — Added May 22)
-**Scope**: Track B June 22 launch deadline requires three user decisions by May 30: (1) Phase 3 implementation scope (Option A: 5 bundles, B: 2 writers, C: 3 bundles recommended), (2) Goldenseal sourcing (Path 1: NativeWildflowers, Path 2: Wikimedia CC), (3) Canva designer scope. Pre-stage decision matrix, vendor feedback compilation, and implementation roadmaps for all 10 option combinations.
-- **Deliverables**: 
-  - Updated Phase 3 Decision Matrix (cost/revenue/timeline for all combinations)
-  - Vendor feedback & pricing summary (suppliers queried May 22, responses due May 28-30)
-  - Three implementation roadmaps (one per scope option, detailed weekly timeline)
-  - Designer quote comparison (if multiple candidates, highlight tradeoffs)
-  - Go/No-Go scorecard for May 30 decision meeting
-- **Owner**: seedwarden subagent
-- **Deadline**: May 28 (vendor responses collected + analysis complete before May 30 decision)
+### 31. ✅ seedwarden — May 30 Gate Decision Package (Session 1544 COMPLETE)
+**Status**: Completed May 22 (Session 1544, 09:05–09:30 UTC). Files delivered:
+- **`PHASE_3_DECISION_MATRIX_V2.md`** — 10-option matrix (A1/A2, B1/B2, C1/C2 × Path 1/2). Key finding: C2 (3-bundle + Wikimedia CC) is default recommended, $113 EV advantage over A2, 5× lower Bear probability (5% vs 25%). Matrix includes vendor response integration protocol so May 28-30 responses feed directly into decision record.
+- **`PHASE_3_IMPLEMENTATION_ROADMAPS_DETAILED.md`** — Three fully staged weekly timelines (June 1–July 13) for Options A, B, C. Upload calendar identical across all three (Women's Health June 29, Respiratory July 6-7, Sleep July 9, Immunity July 20, Digestive August 3). Option C exits sprint with 4 float days intact + Phase 4 prep starting July 14 (18 days earlier than Option A). All roadmaps include named rollback triggers with specific numeric thresholds.
+- **`PHASE_3_DESIGNER_RFQ_FRAMEWORK.md`** — Two send-ready RFQ email variants (5-bundle and 3-bundle). 5-bundle variant explicitly requests split quote (3-bundle + 5-bundle prices) for contingency coverage. Scoring rubric: 25-point system with 17/25 floor. Budget ceilings firm: $840 (3-bundle), $1,400 (5-bundle). Self-design fallback staged at 7 hours if no quote clears ceiling by June 5.
+- **`PHASE_3_GO_NO_GO_SCORECARD.md`** — Meeting-ready decision instrument. Two scope go/no-go questions (pace confirmation + contractor confirmation) eliminate Options A and B if conditions unmet, leaving C2 default. If one/both met, 3-dimension scoring grid (30% cost / 35% timeline risk / 35% quality) produces weighted recommendation. Contingency clause auto-activates C2 on June 1 09:00 if decision delayed.
+
+**User action required May 22**: Send vendor RFQs (4 suppliers) + designer RFQs (2 variants) per templates. Responses due May 28-30 for May 30 decision meeting.
+
+**Deadline**: May 28 (vendor responses collected + compilation complete before May 30 decision)
+
+### 31b. ⏳ systems-resilience — Phase 6 Community-Scale Microgrid Design (Session 1544 — Added May 22)
+**Scope**: Complete Phase 6 gap analysis by researching third load-bearing domain (Items 28-29 complete: Farm equipment repair, Meshtastic/LoRa mesh networking). Microgrid design (~8-10K words, 25-30 sources) covers: technical architecture (topology, solar sizing, LiFePO4 battery, genset backup, control systems), regulatory (FERC Order 2222, state community solar, interconnection, insurance), economics (cost models $4-6K/kW, $2-4K/kWh battery, payback 8-12 years), case studies (Village Power, Block Island, Brooklyn Microgrid, ZESCO, Hephaestus), design sequence for Zone 5, resilience targets, organizational model (cooperative, utility interconnection, maintenance).
+- **Deliverables**: `phase-6-community-scale-microgrid-design.md` (10K words, 25-30 sources, 8-section structure)
+- **Owner**: general-research subagent
+- **Deadline**: May 27 (needed for Item 32 analysis on May 30)
+- **Status**: Token limit blocked Session 1544 retry. Resumable.
 
 ### 32. ⏳ Multi-Project Decision Readiness (June 1) (Session 1505 — Added May 22)
 **Scope**: June 1 is decision window for 3+ projects (systems-resilience Phase 5 Wave 2 vs Phase 6 sequencing, open-repo Phase 5.1 activation approval, general resource allocation). Pre-stage decision frameworks, timeline impact analysis, and sequencing alternatives.
