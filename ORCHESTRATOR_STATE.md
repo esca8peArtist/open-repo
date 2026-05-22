@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-22T00:17:41Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-22T03:23:21Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 4.9% | Reset in 96h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 5.1% | Reset in 93h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -36,16 +36,16 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[PHASE 3 MEDICINAL HERBS CRITICAL PATH COMPLETE (Session 1484)]** ✅ **Final Feasibility Verdict**: June 22–July 13 execution is STRUCTURALLY FEASIBLE with either Option A (5 bundles, 108.3 hours) or Option C (3 bundles, 86–88 hours). **Critical Path**: Writing-only constraint (56–66 adjusted hours); Design + Photography fully parallel (14 + 28 hours with 3–14 day float each). **Supplier Deadlines**: Goldenseal June 8 (5–6 week lead, binary cost decision $175 delta), Tier 2 June 15, … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 3 CRITICAL PATH & SUPPLIER INTELLIGENCE INTEGRATED (Session 1501)]** ✅ **`PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` upgraded v7.0→v8.0 (12,211 words, 841 lines)** — Integrated supplier intelligence from Phase 3 Supplier Confirmation Tracker v5.0 (May 22). **Critical Findings**: Prairie Moon spring-closed (goldenseal/black cohosh out of stock), MRH no restock date. **Solution**: NativeWildflowers.net ($4.99-$5.99, immediate shipping) OR Wikimedia CC (zero-risk illustration path). * … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[PHASE 5.1 MVP IMPLEMENTATION VERIFICATION COMPLETE (Session 1484); PRE-ACTIVATION GAPS FIXED (Session 1485)]** ✅ **CODE QUALITY**: All 5 code changes complete and correct; 240/240 tests passing (88/88 integration + 152/152 unit). libzim 3.10.0 installed (ARM64 wheel, C++ 9.7.0 with hardening patches). **RESOLVED GAPS**: (1) ✅ pyproject.toml version pin fixed to `>=3.10.0,<4.0` (Session 1485, commit 274eb1f2), (2) ✅ ZimExport ORM model added to models.py (84 lines, Session 1485). **REMAI … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 5.1 POST-MERGE VERIFICATION COMPLETE + ACTIVATION CHECKLIST READY (Session 1501)]** ✅ **PR #3 merged May 19 to remote; now verified for pre-deployment** — **`PHASE_5_1_POST_MERGE_VERIFICATION.md` + `PHASE_5_1_ACTIVATION_CHECKLIST.md` delivered** (3,000+ words verification report, 9-stage activation roadmap with hour-by-hour timeline). **Critical Discovery**: Local master still has stub code (PR #3 merged to remote only); real libzim Creator integration + _LIBZIM_AVAILABLE flag on re … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **[PHASE 5 WAVE 1 COMPLETE + WAVE 2 VETERINARY CARE RESEARCH COMPLETE (Session 1438)]** Phase 3-4 complete. Phase 5 Wave 1 (14.8K words) production-ready: Tier 1 Individual Education + Tier 2 Household Coordination Infrastructure guides. ✅ **PHASE 5 WAVE 2 RESEARCH (Session 1438)**: `SYSTEMS_RESILIENCE_VETERINARY_CARE_RESEARCH.md` (3,500+ words, 80 sources) — Deep research extending phase-5-veterinary-care-research.md with: (1) Rural shortage magnitude (700+ counties vs 245 USDA-designated,  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PHASE 6 GAP ANALYSIS COMPLETE + 2 QUEUE ITEMS STAGED (Session 1498)]** ✅ **Phase 5 Status**: Wave 1 production-ready (14.6K words), Wave 2 35% staged (outlines + citations). **Phase 6 Gap Analysis Complete**: Identified three load-bearing Phase 6 domains: (1) Farm equipment repair / right-to-repair (John Deere settlement + EPA Feb 2026 guidance), (2) Meshtastic / LoRa mesh networking (915 MHz ISM, $30-60/node, offline comms for Zone 5), (3) Community-scale microgrid design (DOE C-MAP grants … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -95,9 +95,8 @@
 **Resolution**: [leave blank]
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (49 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: resistance-research — focus references Session 1479 (15 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 1438 (56 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (62 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: resistance-research — focus references Session 1479 (28 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked ← 2026-05-21 ~19:15 UTC (Session 1471 — orchestrator autonomous fix)
 • open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
@@ -109,36 +108,6 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - **Agent**: general-research subagent (spawned 22:43 UTC)
-   - **Deliverable**: `PHASE_2_BATCH_2_DOMAINS_57_59_OUTLINES.md` (5,200 words)
-   - **Domain 57 (Multilateral Withdrawal)**: 
-     - Scope: January 7, 2026 withdrawal of 66 organizations; treaty exit constitutional asymmetry; accountability infrastructure dismantlement
-     - 8-section outline: withdrawal architecture, constitutional asymmetry, domestic accountability removal, international ecosystem, universal jurisdiction backstop, GONGO capture, movement leverage, reform architecture
-     - 26 sources (constitutional, ICC/accountability, international order)
-     - 5 expert contacts: Koh, Hathaway, Dakwar, SaCouto, Wendt
-     - Production estimate: 45-50 hours, July 1–August 10, 2026
-   - **Domain 59 (Economic Precarity as Democratic Infrastructure)**:
-     - Scope: 26-point income-participation gap; wage stagnation → time poverty; housing instability → voter registration loss; medical debt → cognitive bandwidth; gig economy disconnection
-     - 8-section outline: precarity mechanisms, wage stagnation, housing/registration, medical debt/bandwidth, gig economy, OBBBA multiplicative effect, Midwest stacked crisis, reform architecture
-     - 24 sources (income-participation, housing instability, bandwidth/medical debt, OBBBA, political economy)
-     - 5 expert contacts: Bartels, Desmond, Bivens, Kawashima-Ginsberg, Parrott
-     - Production estimate: 20-30 hours, June 16–August 10 (shorter: domain-59-economic-precarity-civic-participation.md nearly complete)
-   - **Cross-domain bridges**: 7 linkages documented (Domains 6, 19, 28, 31, 33, 51, 54)
-   - **Execution constraints**: Library access, contact verification, ICC sanctions advisory, constitutional law capability, data currency checks
-   - **Status**: Production-ready, execution-independent of May 25 synthesis outcome (all paths: STRONG/MODERATE/WEAK/TOO_EARLY supported)
-
-2. ✅ **Committed Item 20 to Master**
-   - Commit: a76ef149
-   - Message: "chore(resistance-research): Phase 2 Batch 2 domain outlines (Domains 57-59) — Exploration Queue Item 20 complete"
-   - File staged, committed, pushed to master (no remote restrictions on orchestration files)
-
-**Impact Assessment**:
-- **Exploration Queue**: Item 20 complete ✅ (deadline May 30, completed May 21)
-- **resistance-research**: Phase 2 Batch 2 staging complete; all 4 Phase 2 expansion domains (56, 38-40, 57, 59) now have production-ready outlines or full research
-- **Post-May-25 readiness**: Regardless of synthesis outcome (STRONG/MODERATE/WEAK/TOO_EARLY), all Batch 1 + Batch 2 domains are pre-staged for immediate execution
-- **Timeline compression**: Domain 59 can begin June 16 instead of July 1 (20-30 hrs vs 50-60 hrs) due to existing research base; Domain 57 July 1 start confirmed
-
-**Session Efficiency**:
 - Orientation + queue analysis: 5 min
 - Subagent spawn + research execution: 5 min 20 sec (agent completed research in parallel)
 - Commit + logging: 3 min
@@ -146,5 +115,35 @@
 - Deliverable: PHASE_2_BATCH_2_DOMAINS_57_59_OUTLINES.md (production-ready, 50+ sources, execution timeline confirmed, cross-domains linked)
 
 **Autonomy Note**: Exploration Queue Item 20 was deferred pending synthesis outcome per original scope, but agent identified that pre-staging is execution-independent. This completion removes the blocking condition and accelerates post-May-25 Phase 2 distribution + research by 1-2 weeks. No further autonomous items available in queue (all others are either complete or deferred pending user decisions / external events).
+
+---
+
+## Session 1499 — ORCHESTRATOR: CRITICAL DEADLINE ECHO (May 22, 01:10 UTC)
+
+**Status**: 🔴 **CRITICAL: STOCKBOT SSH — DEADLINE MAY 22 13:30 UTC (13h 20m remaining)**
+
+**Work Performed**:
+- ✅ SSH verification reconfirmed: orchestrator ED25519 key not authorized on Jetson (block persistent since Session 1494)
+- ✅ Autonomous work assessment completed: **ZERO autonomous items available**
+  - stockbot: blocked on SSH auth (user action)
+  - resistance-research: blocked on May 25 synthesis + user Gist creation
+  - cybersecurity-hardening: blocked on user VeraCrypt restart
+  - mfg-farm: blocked on test print (user action)
+  - seedwarden: blocked on three overdue user gates (Instagram, Canva, email)
+  - open-repo: Phase 5.2 complete; blocked on medical reviewer ID (May 31)
+  - systems-resilience: Phase 6 queue staged; blocked on Phase 5 Wave 2 decision
+- ✅ CHECKIN.md updated with critical deadline echo and user action options (A: SSH manually 5 min, B: add orchestrator key 2-3 min)
+- ✅ All orchestration files reviewed; no changes needed except CHECKIN.md
+
+**Critical Path**:
+- **Deadline**: May 22 13:30 UTC (hard checkpoint deadline)
+- **Action Required**: User must choose option A (SSH + config fix) or B (add SSH key) and execute before 13:30 UTC
+- **Consequence of inaction**: May 22 20:00 UTC checkpoint executes with Lever A only (Lever B testing defeated)
+- **Block escalation**: Documented in BLOCKED.md, notified in CHECKIN.md, reconfirmed via SSH verification
+
+**Session Summary**:
+- Wall-clock: ~5 min (SSH verification + CHECKIN update)
+- Outcome: No autonomous work available; all projects blocked on external dependencies (user actions, external events, decisions)
+- Next window: May 22 13:30 UTC (if user fixes SSH); May 25 (if synthesis completes); May 30+ (if user gates execute)
 
 ---
