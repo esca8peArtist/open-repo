@@ -1,5 +1,54 @@
 # Work Log
 
+## Session 1566 (2026-05-22 12:13 UTC) — ORCHESTRATOR: Block Verification + SSH Deadline Imminent (1H 17M REMAINING)
+
+**Status**: 🔴 **SSH DEADLINE CRITICAL (1H 17M REMAINING)** | ✅ **Hold pattern CONFIRMED** | ✅ **Checkpoint ready** | ⏰ **Checkpoint 20:00 UTC (7H 47M)**
+
+**What was done**:
+1. **Complete state orientation** (12:13 UTC):
+   - Read ORCHESTRATOR_STATE.md (12:13 snapshot), BLOCKED.md, EXPLORATION_QUEUE.md, PROJECTS.md, CHECKIN.md
+   - No new INBOX.md items
+   - All 5 active blocks verified unchanged
+
+2. **SSH auth block verification** (12:13 UTC):
+   - Re-executed: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+   - Result: **`Permission denied (publickey,password)`** — orchestrator ED25519 key still NOT authorized
+   - Block status: **CONFIRMED FAILING**, CRITICAL DEADLINE 1H 17M away
+
+3. **mfg-farm test print block verification** (12:13 UTC):
+   - Checked: `ls -la projects/mfg-farm/test-print-results/` 
+   - Result: **Directory does not exist** — test print NOT executed
+   - Block status: Still awaiting user action
+
+4. **Autonomous scope re-assessment**:
+   - All 12 active projects blocked on external dependencies (SSH fix, user decisions, test print, VeraCrypt restart, synthesis May 25+)
+   - Two subagents spawned in Session 1563: resistance-research (Domain 59) + seedwarden (Track B Gate 1)
+     - Expected completion: ~12:30-12:40 UTC
+     - Once complete: Agent results logged to WORKLOG.md; hold pattern continues until 20:00 UTC checkpoint
+   - Exploration Queue: Items 35a/35b/35c ready for post-checkpoint (May 23 00:15 UTC)
+   - **Verdict**: Zero autonomous work until agents complete + checkpoint executes
+
+5. **Checkpoint readiness confirmed**:
+   - May 22 20:00 UTC checkpoint will execute regardless of SSH outcome:
+     - **Scenario A (SSH FIXED by 13:30)**: Lever B config activation + HMM regime masking test ✅ READY
+     - **Scenario B (SSH NOT FIXED by 13:30)**: Lever A fallback (same as May 19 STILL_MISS_B2) ✅ READY
+   - Items 35a/35b/35c fully pre-staged for parallel execution at May 23 00:15 UTC ✅ READY
+
+**Critical User Action**:
+- **DEADLINE**: May 22 13:30 UTC (1H 17M remaining)
+- **Option A** (~5 min): Add orchestrator public key to Jetson authorized_keys
+- **Option B** (~5-10 min): SSH manually + run Lever B config fix (see BLOCKED.md)
+- **If NOT fixed**: Checkpoint executes with Lever A config, defeating Lever B test purpose
+
+**Decisions**:
+- ✅ Hold pattern maintained — zero autonomous work available before checkpoint
+- 🔴 SSH deadline is critical path — user action required
+- ✅ Checkpoint execution ready — either outcome fully pre-staged
+
+**Next autonomous window**: May 22 20:00 UTC checkpoint outcome → May 23 00:15 UTC parallel execution Items 35a/35b/35c
+
+---
+
 ## Session 1564 (2026-05-22 11:44 UTC) — ORCHESTRATOR: Final SSH Verification + Hold Pattern Maintained
 
 **Status**: 🔴 **SSH DEADLINE CRITICAL (1H 46M REMAINING)** | ✅ **Hold pattern CONFIRMED** | ✅ **Checkpoint ready** | ⏰ **Checkpoint 20:00 UTC (8H 16M)**
