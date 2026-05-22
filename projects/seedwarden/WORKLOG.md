@@ -4,6 +4,64 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — May 30 Gate Decision Package (Exploration Queue Item 31) — May 22, 2026
+
+**Task**: Prepare Phase 3 May 30 Gate Decision Package for Track B Phase 3 implementation. June 22 deadline. Three decisions: scope (A/B/C), Goldenseal sourcing (Path 1/2), Canva designer scope.
+
+**Context**: Item 27 (Vendor Negotiation Templates) confirmed COMPLETE. Vendor responses expected May 28–30. Three implementation roadmaps partially staged — this session completes them.
+
+**Files read**: PHASE_3_SCOPE_DECISION_MATRIX.md (v1.0), PHASE_3_GOLDENSEAL_SOURCING_COMPARISON.md, TRACK_B_MAY30_DECISION_FRAMEWORK.md, phase-3-vendor-negotiation-templates.md (Item 27), PHASE_3_CANVA_DESIGN_SYSTEM.md, PHASE_3_RESOURCE_ALLOCATION_SCENARIOS.md, phase-3-financial-projections.md, WORKLOG.md (recent sessions).
+
+**Files created** (all in `projects/seedwarden/`):
+
+**Deliverable 1**: `PHASE_3_DECISION_MATRIX_V2.md`
+- Full 10-combination option matrix: A1, A2, B1 (eliminated), B2, C1 (eliminated), C2 (recommended), plus C2+v1.1 hybrid and A2+v1.1 hybrid
+- Per combination: total direct cost breakdown, 90-day revenue (conservative/base/optimistic), risk-adjusted EV, 12-month cumulative revenue, writer hours, designer hours, Bear probability, primary failure mode
+- Side-by-side cost and revenue summary table
+- Designer scope decision framework (3-bundle vs. 5-bundle, outsource vs. self-design)
+- Timeline comparison by combination (May 30 through June 21 pre-sprint hard deadlines)
+- Vendor response integration protocol (May 28–30 responses feed directly into this matrix)
+- Decision record template for WORKLOG.md copy on May 30
+
+**Deliverable 2**: `PHASE_3_IMPLEMENTATION_ROADMAPS_DETAILED.md`
+- Three fully detailed weekly timelines (Option A, B, C) covering June 1–July 13 (pre-sprint + full sprint)
+- Option A: 22 calendar days, 108.3 total sprint hours, June 24 hard pace gate, explicit rollback trigger at WH 2,400 words
+- Option B: Contractor briefing calendar (June 1–5), test section gate (June 5), parallel writing tracks with management overhead accounting
+- Option C: 93.9 total sprint hours, 4 structural float days, Phase 4 Tea Blends prep window July 14, cleanest pre-sprint window of all three options
+- Cross-roadmap milestone comparison table (all three options reach the same upload calendar)
+- Rollback trigger definitions for each roadmap with specific conditions and responses
+
+**Deliverable 3**: `PHASE_3_DESIGNER_RFQ_FRAMEWORK.md`
+- Priority designer shortlist (5 candidates: BotanicalPressDesign, herbalistdesigns, ApothecaryArtStudio, WildcraftedDesignCo, canva_herbalist)
+- 5-bundle RFQ email variant (Option A/B scope) — send-ready, tailored to scope context
+- 3-bundle RFQ email variant (Option C scope, default) — includes scope expansion rate request for post-sprint Immunity + Digestive
+- Quote evaluation scoring criteria (5 dimensions, 25-point scale, 17/25 minimum threshold)
+- Contract terms template (one-paragraph scope confirmation, 50/50 payment structure)
+- Self-design fallback protocol (7 hrs for 3-bundle Canva self-design; embedded sprint schedule)
+- Budget guard rails: 3-bundle ceiling $840; 5-bundle ceiling $1,400; floor $45/deliverable
+
+**Deliverable 4**: `PHASE_3_GO_NO_GO_SCORECARD.md`
+- Three-question scope go/no-go gate (pace confirmation, contractor confirmation, C2 default)
+- Cost vs. benefit assessment with live fill-in table (actual vendor quotes feed directly in)
+- Timeline risk checklist (10 risk factors per combination; C2 scores 1/10 risks)
+- Quality tradeoff scoring grid (7 dimensions, 1–5 scale)
+- Weighted total recommendation engine (30% cost / 35% timeline / 35% quality)
+- Goldenseal path go/no-go (stock status feeds directly from vendor responses)
+- Designer scope go/no-go
+- Canva palette confirmation (authoritative: canva-phase-3-adaptation-guide.md, 6 hex codes)
+- Final decision record block — copy to WORKLOG.md on May 30
+- Contingency defaults (C2 activates automatically on June 1 if decision delayed)
+
+**Key findings**:
+- C2 (3-bundle, Wikimedia CC) is the recommended combination across all three scoring dimensions
+- C2 costs $450–$840 vs. A2's $750–$1,400 while delivering $3,080 risk-adjusted EV vs. $3,193 — a $113 EV difference at 5× lower Bear probability
+- Option B2 has 45% Bear probability (contractor unavailability) and $2,850–$4,200 cost — it is the weakest option on cost efficiency
+- All three options hit identical upload dates (June 29 Women's Health, July 6–7 Respiratory, July 13 Sleep, July 20 Immunity, August 3 Digestive) — the sprint scope only changes writing pace and float, not launch calendar
+- C2 leaves the sprint on July 13 with 4 float days intact vs. 2 under A2 — enabling Phase 4 Tea Blends prep to begin July 14 (18 days earlier than Option A)
+- The decision package is self-contained: user reads PHASE_3_GO_NO_GO_SCORECARD.md on May 30, fills in vendor quote data, scores the matrix, and signs the decision record in under 30 minutes
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Photo Attribution Log Pre-Staging — May 22, 2026
 
 **Task**: Advance Track B toward May 30 launch target. Audit full project state, identify highest-value autonomous work, and execute.
