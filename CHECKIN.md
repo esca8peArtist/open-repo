@@ -1,3 +1,26 @@
+## Session 1525 — ORCHESTRATOR: CRITICAL DEADLINE VERIFICATION + HOLD PATTERN (May 22, 06:36–06:50 UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H 54MIN)** | ✅ **SSH block verified still active** | ✅ **No autonomous work available** | ✅ **Hold pattern confirmed correct**
+
+**What was accomplished**:
+- Orientation complete: Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
+- Verified SSH auth block status: Ran verification command → confirmed "Permission denied (publickey,password)" — SSH key still NOT authorized on Jetson
+- Confirmed all 4 active blocks unchanged: stockbot SSH (CRITICAL DEADLINE 13:30 UTC), resistance-research synthesis TOO_EARLY (May 25–28 contingency path), cybersecurity-hardening VeraCrypt (user restart), mfg-farm test print (user execution)
+- INBOX.md processed: No new items (cleared log confirms last processing May 17)
+- Assessment: No autonomous work available before 13:30 UTC deadline. Hold pattern is correct state — system designed to wait for checkpoint outcome to determine post-deadline routing
+- All orchestration files current and up-to-date; committing this session's CHECKIN.md update
+
+**🔴 CRITICAL ACTION REQUIRED — DEADLINE 13:30 UTC (≈6 HOURS 54 MINUTES)**:
+- **Stockbot Lever B HMM config not activated due to SSH auth failure**
+- **Impact if missed**: May 22 checkpoint executes with Lever A config (identical to failed May 19), defeating Lever B testing objective
+- **User must choose ONE** (see BLOCKED.md or CHECKIN.md "Needs Your Input"):
+  - **Option A**: Add orchestrator ED25519 public key to Jetson authorized_keys
+  - **Option B**: SSH manually + run 5-min config fix from BLOCKED.md
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (checkpoint outcome determines routing to Leverage B scaling, Phase 2 research synthesis, or recovery path)
+
+---
+
 ## Session 1524 — ORCHESTRATOR: FINAL VERIFICATION BEFORE DEADLINE (May 22, 06:30–06:45 UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~7 HOURS)** | ✅ **All systems verified** | ✅ **Pre-checkpoint work 100% complete** | **AWAITING URGENT USER ACTION**
