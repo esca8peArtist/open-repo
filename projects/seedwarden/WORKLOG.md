@@ -4,6 +4,26 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Seedwarden Agent Session — Phase 3 Decision Brief Production — May 22, 2026
+
+**Task**: Verify production-readiness of `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` v8.0 (Exploration Queue task: 3–4 hour analysis). Produce `phase-3-medicinal-herbs-critical-path.md` as an actionable decision brief to enable Go/No-Go decisions on Phase 3 scope before May 30.
+
+**Assessment of v8.0 master document**: Production-ready. All 9 sections and 2 appendices are complete and internally consistent. No gaps found. Supplier intelligence is current as of May 22 (Prairie Moon and MRH out-of-stock status incorporated). Inline Gantt covers all 22 sprint days by week and track. Float day analysis is standalone in Section 9 with decision tree and schedule slack summary.
+
+**Files read**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` (v8.0, all 842 lines), `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (v5.0, lines 1–60), `phase-3-medicinal-herbs-gantt-timeline.csv` (first 20 rows), `phase-3-medicinal-herbs-critical-path.md` (previous May 21 version, lines 1–80), `WORKLOG.md` (lines 1–60).
+
+**File produced**: `projects/seedwarden/phase-3-medicinal-herbs-critical-path.md` (~2,800 words) — replaces previous May 21 version (~3,200 words). New document is a decision brief structured around the three May 30 decisions, including: (1) Go/No-Go verdict with gate status; (2) Decision 1 (sprint scope Options A/B/C with full Option C rationale); (3) Decision 2 (Goldenseal path — confirmed Path 2 as only zero-risk option given May 22 supplier stockouts); (4) Decision 3 (Canva palette auto-lock behavior); (5) Critical path map (zero-float chain May 30 → August 3); (6) Full 22-day inline Gantt by week and track with hours, float, and critical-path flags; (7) Float Day inventory with spending order; (8) 10-item risk matrix with contingency triggers; (9) Supply budget updated May 22; (10) Revenue projection table; (11) Three human-execution supplier actions before June 22; (12) Production-ready verification checklist for v8.0; (13) May 30 action checklist (20 minutes total); (14) Document map for all companion files.
+
+**Key findings**:
+- Both Phase 2 launch gates CLEARED: forager cohort 21.3%, native plants conversion 2.24%
+- v8.0 master document is complete and production-ready — no gaps requiring filling
+- Three decisions remain pending (May 30): sprint scope, Goldenseal path, Canva palette
+- Recommended path: Option C (3-bundle priority) + Path 2 (Wikimedia CC for Goldenseal)
+- Critical path is writing only; design and photography are fully non-blocking
+- May 22 supplier intelligence: Prairie Moon OOS (both species), MRH OOS (both root products), NativeWildflowers.net confirmed NOW-shipping for both
+
+---
+
 ## Seedwarden Agent Session — Phase 3 Medicinal Herbs Critical Path v8.0 Production — May 22, 2026
 
 **Task**: Develop Phase 3 medicinal herbs production timeline and critical path analysis for June 22–July 13 launch window. Deliverables: updated canonical critical path document (v8.0) incorporating May 22 supplier intelligence, inline Gantt timeline, and standalone float day analysis section.
