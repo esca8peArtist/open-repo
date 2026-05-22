@@ -13359,3 +13359,69 @@ Current session: ~200K tokens (Item 65 framework + 2 Phase 3 research docs via p
 4. **May 25 18:00 UTC**: Resistance-research signal log fill deadline (for May 25 19:00 UTC synthesis)
 
 **System Status**: ✅ Stable. Hold pattern correct. All contingencies pre-staged. Awaiting user SSH action or checkpoint outcome.
+
+---
+
+## Since Last Check-in (May 22, 12:00 UTC — Session 1565)
+
+**Timeline**: Session 1565 (12:00–12:02 UTC, 2 min elapsed)
+
+**Critical Status**: 🔴 **SSH AUTH CRITICAL** (deadline 13:30 UTC, 1h 30m remaining) | ✅ **Agents running (25+ min)** | ⏰ **Checkpoint 20:00 UTC (8h)**
+
+### What was accomplished
+
+1. **Session 1565 Orientation** (12:00 UTC):
+   - Re-read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, WORKLOG.md
+   - Verified SSH auth still FAILING (final check before critical deadline window)
+   - Confirmed agent status: Both running (Domain 59 + Track B Gate 1, ~25 min elapsed, 45-60 min completion window for Track B)
+   - Confirmed hold pattern is CORRECT — no changes needed
+
+2. **SSH Final Verification** (12:00:41 UTC):
+   - Command: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health'`
+   - Result: **FAILED** — `Permission denied (publickey,password)` after 3 password retry attempts
+   - **CRITICAL DEADLINE**: 13:30 UTC (1h 30m remaining)
+
+3. **Autonomous Work Assessment**:
+   - **Two agents active**: resistance-research (Domain 59) + seedwarden (Track B Gate 1), ~25 min run time, ETA 45–60 min
+   - **Exploration Queue**: Items 35a/35b/35c staged for post-checkpoint (will execute 20:00 UTC onwards)
+   - **Project Goals**: All unblocked work is being executed by agents. Hold pattern correct.
+
+### System Status Summary
+
+✅ **Stable**: Hold pattern correct. Agents running. SSH deadline approaching. Checkpoint ready.
+
+🔴 **CRITICAL BLOCKER PENDING**: SSH auth fix by 13:30 UTC or checkpoint executes with Lever A fallback.
+
+✅ **Contingency Status**: If Lever A forced → May 23 Lever C recovery roadmap queued. If Lever B enabled → May 23 post-checkpoint Items 35a/35b/35c execute.
+
+### Immediate Actions Required (by 13:30 UTC)
+
+**Option A** (add orchestrator public key to Jetson):
+```bash
+cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'
+```
+
+**Option B** (SSH manually + run 5-min config fix):
+```bash
+ssh ubuntu@100.120.18.84
+nano /opt/stockbot/config/active-sessions-2session.json
+# Find both "AAPL_h10_lgbm_ho" and "AAPL_h10_ridge_wf" session blocks
+# Add "hmm_regime_masking": true to strategy_params in each
+# Save and exit (ctrl+x, y, enter)
+docker restart stockbot
+```
+
+### Next Autonomous Window
+
+- **13:30 UTC**: SSH deadline (1h 30m remaining)
+- **20:00 UTC**: May 22 checkpoint execution (agents' results logged, Items 35a/35b/35c routing)
+
+**Agents' estimated completion**: 12:30–13:00 UTC (Track B Gate 1 is 45–60 min scope)
+**Agent results expected**: Will be logged in WORKLOG.md when agents complete
+
+**System recommendation**: 
+- If SSH fixed by 13:30 UTC: Lever B HMM regime masking test will proceed as planned
+- If SSH NOT fixed: Lever A fallback config (repeat of May 19 outcome), Lever C recovery roadmap activates May 23
+
+---
+
