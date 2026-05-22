@@ -15,7 +15,14 @@
 - **Option A** (5 min): `cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'`
 - **Option B** (10 min): SSH manually and add `"hmm_regime_masking": true` to config file
 
-**Next**: Awaiting user action by 13:30 UTC. If not resolved, checkpoint at 20:00 UTC executes with Lever A config.
+**Post-Deadline Action Plan**:
+- **Prepared**: Scenario A (SSH fixed) + Scenario B (deadline missed) + executor script
+- **Monitoring**: Background task waiting until 13:30 UTC deadline, will check SSH auth automatically
+- **Timeline**: 
+  - 13:30 UTC: Deadline lock + SSH status check
+  - ~13:35 UTC: Post-deadline actions execute (Scenario A or B)
+  - 20:00 UTC: May 22 checkpoint execution (automatic)
+- **Next**: Awaiting task-notification from deadline monitor (ETA 13:30 UTC)
 
 ---
 
