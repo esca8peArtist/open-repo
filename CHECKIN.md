@@ -1,3 +1,23 @@
+## Session 1526 — ORCHESTRATOR: PRE-DEADLINE HEALTH VERIFICATION (May 22, 07:00–07:15 UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H 30MIN REMAINING)** | ✅ **All systems healthy** | ✅ **Hold pattern maintained** | **Awaiting checkpoint outcome**
+
+**What was accomplished**:
+- Pre-deadline health verification: Jetson reachable (ping 14.9ms latency), system responding normally
+- Confirmed SSH auth block status unchanged: Still preventing orchestrator-initiated config fix
+- All 4 active blocks verified still in place (stockbot SSH, resistance-research synthesis TOO_EARLY, cybersecurity-hardening VeraCrypt, mfg-farm test print)
+- INBOX.md: No new items since last processing
+- Assessment: Hold pattern remains correct; no autonomous work available
+
+**Critical deadline status**:
+- **TODAY by 13:30 UTC (~6.5 hours remaining)**: Stockbot Lever B HMM config fix required
+- Options (choose one): (A) Add orchestrator ED25519 public key to Jetson authorized_keys, OR (B) SSH manually + run config fix commands
+- All instructions documented in BLOCKED.md and CHECKIN.md "Needs Your Input"
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (checkpoint outcome determines routing)
+
+---
+
 ## Session 1525 — ORCHESTRATOR: CRITICAL DEADLINE VERIFICATION + HOLD PATTERN (May 22, 06:36–06:50 UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H 54MIN)** | ✅ **SSH block verified still active** | ✅ **No autonomous work available** | ✅ **Hold pattern confirmed correct**
