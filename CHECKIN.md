@@ -1,3 +1,26 @@
+## Session 1529 — ORCHESTRATOR: CRITICAL DEADLINE COUNTDOWN + HOLD PATTERN VERIFICATION (May 22, 07:05–07:20 UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H 25MIN REMAINING)** | ✅ **All blocks verified unchanged** | ✅ **Hold pattern maintained correctly** | ✅ **No autonomous work available**
+
+**What was accomplished**:
+- Full orientation: Verified ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md status
+- All 4 active blocks verified unchanged: (1) **stockbot SSH (CRITICAL deadline 13:30 UTC)**, (2) resistance-research synthesis TOO_EARLY (May 25–28 contingency), (3) cybersecurity-hardening VeraCrypt (user restart), (4) mfg-farm test print (user execution)
+- INBOX.md: No new items since May 17 processing
+- Jetson connectivity: Reachable (verified in Session 1524)
+- Assessment: No autonomous work available; system correctly in hold pattern awaiting (1) user SSH auth fix and (2) May 22 13:30 UTC checkpoint outcome
+- All orchestration files current and consistent
+
+🔴 **CRITICAL — USER ACTION REQUIRED BY 13:30 UTC (6H 25MIN)**:
+- **Stockbot Lever B HMM config fix MUST complete before checkpoint**
+- **Choose ONE** — see BLOCKED.md for full details:
+  - Option A: Add orchestrator ED25519 public key to Jetson authorized_keys
+  - Option B: SSH manually + run 5-min config fix (commands in BLOCKED.md lines 76-101)
+- **Verification after fix**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` should return OK
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (checkpoint outcome determines routing to Lever B scaling, Phase 2 synthesis, or recovery path)
+
+---
+
 ## Session 1528 — ORCHESTRATOR: HOLD PATTERN MAINTENANCE + DEADLINE COUNTDOWN (May 22, 07:00–07:05 UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H 30MIN REMAINING)** | ✅ **SSH block verified STILL FAILING** | ✅ **No autonomous work available** | ✅ **Hold pattern maintained**
@@ -8,13 +31,6 @@
 - All 4 active blocks verified unchanged: (1) **stockbot SSH (CRITICAL deadline 13:30 UTC TODAY)**, (2) resistance-research synthesis TOO_EARLY (May 25 re-synthesis), (3) cybersecurity-hardening VeraCrypt (user restart), (4) mfg-farm test print (user execution)
 - Exploration Queue: No new items; system correctly in hold pattern
 - Assessment: No autonomous work available; hold pattern remains correct state
-
-🔴 **CRITICAL — USER ACTION REQUIRED BY 13:30 UTC (6H 30MIN)**:
-- **Stockbot Lever B HMM config fix MUST complete before checkpoint**
-- **Choose ONE** — see BLOCKED.md for full details:
-  - Option A: Add orchestrator ED25519 public key to Jetson authorized_keys
-  - Option B: SSH manually + run 5-min config fix (commands in BLOCKED.md lines 76-101)
-- **Verification after fix**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` should return OK
 
 **Next autonomous window**: May 22 20:00 UTC post-checkpoint (checkpoint outcome determines routing)
 

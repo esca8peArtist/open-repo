@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-22T06:30:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-22T07:05:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 5.3% | Reset in 90h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 5.4% | Reset in 89h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -95,8 +95,9 @@
 **Resolution**: [leave blank]
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (78 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 1498 (25 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (83 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 1513 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 1498 (30 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked ← 2026-05-21 ~19:15 UTC (Session 1471 — orchestrator autonomous fix)
 • open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
@@ -108,31 +109,6 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
-**Orientation Completed**:
-- ✅ ORCHESTRATOR_STATE.md (comprehensive state, priorities, recent activity)
-- ✅ BLOCKED.md (4 active blocks verified: stockbot SSH, resistance-research synthesis, cybersecurity-hardening VeraCrypt, mfg-farm test print)
-- ✅ INBOX.md (no new items)
-- ✅ PROJECTS.md (all projects reviewed for autonomous work)
-- ✅ EXPLORATION_QUEUE.md (full assessment completed)
-
-**Key Finding — Exploration Queue Status**:
-- **Items 1-29**: ✅ ALL COMPLETE (pre-staged, production-ready)
-  - 12 items (Sessions 1450-1455): architecture frameworks (Gate 2, multi-ticker, scaling, Phase 3, etc.)
-  - 5 items (Sessions 1457-1458): implementation roadmaps (sales, suppliers, marketing)
-  - 12 items (Sessions 1464-1489): specialized research (affiliate, vendor, disaster recovery, mesh networking, farm equipment)
-- **Items 30-32**: ⏳ DEFERRED for post-deadline execution
-  - Item 30: Post-synthesis Phase 2 activation (May 25 post-synthesis)
-  - Item 31: Seedwarden May 30 Gate Decision Package (May 22 start, May 28 completion)
-  - Item 32: Multi-project Decision Readiness (deadline May 30)
-
-**Correct State Verified**:
-- No autonomous unblocked work available in the 7h 40m window before May 22 13:30 UTC deadline
-- All top-priority projects genuinely blocked on user action (not on orchestrator work)
-- Exploration Queue properly staged: pre-checkpoint work complete, post-checkpoint work queued
-- **This is the expected hold pattern** — system is in correct state, awaiting deadline
-
-**Conclusion**:
 - ✅ Pre-checkpoint staging 100% complete (Items 1-29)
 - ✅ Decision frameworks ready (Items 31-32 will execute post-May-30-user-decisions)
 - ✅ Post-checkpoint routing playbooks pre-written (SYNTHESIS_OUTCOME_PLAYBOOKS.md, MAY_22_CHECKPOINT_DECISION_ROADMAP.md)
@@ -148,3 +124,27 @@
 - CHECKIN.md update: 1 min
 - Total: 13 min
 - **Net result**: Confirmed system in correct hold pattern, all pre-checkpoint work complete, ready for post-deadline routing
+
+---
+
+## Session 1524 (May 22, 06:30–06:45 UTC) — Final Pre-Deadline Verification
+
+**Orchestrator Status**: Hold pattern verified, SSH auth block confirmed still active
+
+**Verifications Completed**:
+- Jetson connectivity: ✅ Reachable (ping 100.120.18.84 OK)
+- Orchestrator ED25519 key: ✅ Key exists at /home/awank/.ssh/id_ed25519
+- SSH auth status: ❌ Key NOT authorized on Jetson (`Permission denied (publickey,password)`)
+- BLOCKED.md: ✅ All 4 active blocks reviewed and current
+- PROJECTS.md: ✅ All project status current
+- INBOX.md: ✅ No new items
+- System state: ✅ No autonomous work available (hold pattern is correct)
+
+**Critical Deadline**:
+- **Today 13:30 UTC** (~7 hours remaining): Stockbot Lever B HMM config must be activated
+- **User action required**: Either add orchestrator public key to Jetson authorized_keys, OR SSH manually and run 5-min config fix
+- **Failure impact**: May 22 checkpoint uses Lever A config (repeat of failed May 19), defeating Lever B testing
+
+**Decision**: No autonomous action available. System correctly in hold pattern. CHECKIN.md updated with urgent action items. All orchestration files committed.
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint
