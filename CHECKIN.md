@@ -1,3 +1,20 @@
+## Session 1514 — ORCHESTRATOR: PHASE 2 DISTRIBUTION AUDIT + CRITICAL DEADLINE CHECK (May 22, 04:54–05:XX UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~8.5 HOURS)** | ✅ **Phase 2 distribution execution-ready** | ✅ **Zero new blocks**
+
+**What changed**:
+- **Resistance-research Phase 2 Distribution**: Comprehensive audit complete. Domain 56 ready for Gist creation TODAY (10-min user action). Domain 58 Gist already live; ready to send June 5-10. Domain 59 staging complete for May 30 action. Domain 57 set for August 8.
+- **Stockbot SSH deadline re-verified**: Tried SSH connection at 04:54 UTC — auth still failing. ~8.5 hours until May 22 13:30 UTC deadline. Cannot be fixed by orchestrator.
+
+**What's next**:
+1. **🔴 TODAY by 13:30 UTC (8.5 HOURS REMAINING)**: Stockbot SSH auth fix — user action required (see "Needs Your Input" below)
+2. **TODAY or ASAP after (if not done)**: Create Domain 56 Gist (~10 min, instructions in resistance-research/)
+3. **May 23**: Seedwarden Instagram gate (awaiting gate prep verification, retrying agent)
+4. **May 24**: Seedwarden Canva + email gate
+5. **May 25–26**: User decision on open-repo Phase 5 direction (Candidate 1 recommended)
+
+---
+
 ## Session 1513 — ORCHESTRATOR: STAGE 0 ACTIVATION COMPLETE (May 22, 04:36–05:24 UTC)
 
 **Status**: ✅ **OPEN-REPO PHASE 5.1 MVP FULLY ACTIVATED** | 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (8h remaining)** | ✅ **Zero new blocks**
@@ -51,11 +68,26 @@ Your action: Either (A) add orchestrator's ED25519 public key to Jetson authoriz
 - **Estimated time**: 2–7 hours depending on scope
 - **User decision**: May 25–26 on Phase 5 direction (Candidate 1 RECOMMENDED for immediate merge)
 
-### ✅ **Resistance-Research Distribution Infrastructure Ready** (Next: Create Gists, send May 24+)
+### ✅ **Resistance-Research Phase 2 Distribution Audit Complete** (Session 1514)
 
-- Domains 56, 57, 58, 59 distribution templates complete
-- **Next step**: Create Gist for Domain 56 by May 24 (if not done); repeat for Domain 59 (May 30), Domain 58 (June 3), Domain 57 (Aug 8)
-- Each Gist takes ~10 min following the `domain-NN-gist-creation-steps.md` in `projects/resistance-research/execution/`
+**Status**: All four Phase 2 domains (56-59) distribution infrastructure verified and ready for execution.
+
+- **Domain 56 (Civil Service Politicization)**: Infrastructure complete, **READY FOR GIST CREATION TODAY** (~10 min). H.R. 492 committee markup window still open (June 1-30). Tier 1 sends follow immediately after Gist creation.
+- **Domain 58 (Tribal Sovereignty)**: **Gist already created May 20** at https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f. Ready to send Tier 1 emails (June 5-10 window, OR within 72h of Trump v. Barbara ruling if issued). Fill `[YOUR_NAME]`, `[YOUR_CONTACT_INFO]`, `[DOMAIN_58_GIST_URL]` in email template.
+- **Domain 59 (Economic Precarity)**: Infrastructure complete, **action needed May 30** (create Gist, send Tier 1). Nebraska Medicaid work requirements live May 1 — timing acute for CBPP/Families USA.
+- **Domain 57 (Multilateral Withdrawal)**: No action until August 8 (distribution window: Aug 10, six weeks before UNGA 81).
+
+**Priority sequence** (from agent audit May 22):
+1. Now (May 22-23): Create Domain 56 Gist (10 min) + send 5 Tier 1 emails (~60 min) = **70 min total**
+2. May 25-31: Domain 56 Tier 2 (4 emails) + Tier 3 (2 emails), staggered
+3. May 30: Create Domain 59 Gist (10 min)
+4. June 1: Domain 59 Tier 1 sends (5 emails)
+5. June 5-10 (or 72h after Trump ruling): Domain 58 Tier 1 sends
+6. August 8: Domain 57 Gist creation; August 10 Tier 1 sends
+
+**Files** (Session 1514 audit):
+- Status checklist: `projects/resistance-research/phase-2-distribution-status-may22.md`
+- Gist registry: `projects/resistance-research/DISTRIBUTION_GIST_URLS.md` (updated with Domain 58 live URL)
 
 ---
 
