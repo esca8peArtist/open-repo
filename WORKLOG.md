@@ -1,5 +1,29 @@
 # Work Log
 
+## Session 1498 (2026-05-22 UTC) — RESEARCH AGENT: open-repo Phase 5 post-merge fixes + Phase 5.2 Wave 0 schema design
+
+**Status**: ✅ COMPLETE
+
+**Findings**:
+- Phase 5.1 MVP was already merged to open-repo/main (PR #3, commit 37d4e05a, May 19). The merge decision was made by the user — no further merge decision needed.
+- The zim_writer.py on main has full real libzim Creator integration (not stubs). 84 integration tests in the test suite.
+- Four post-merge action items from the pre-merge audit remained open. All four are now resolved on `feature/phase-5-post-merge-fixes` branch.
+
+**Actions Completed**:
+1. ✅ **Security fix (Item #1)**: Applied `html.escape()` to all federation-partner-supplied strings in `_apply_attribution_footer()`. Added URL scheme validation (rejects `javascript:` and `data:` URIs) via `urlparse`. This closes the MODERATE severity XSS finding.
+2. ✅ **ZimExport ORM (Item #2)**: Added `ZimExport` SQLAlchemy class to `backend/app/models.py` mirroring all 24 columns from migration 003. Includes `ZimExportStatus` enum and `from_zim_write_result()` factory classmethod. Wires the OPDS generator's DB query pattern.
+3. ✅ **libzim pin upgrade (Item #3)**: Upgraded from `>=3.2,<4.0` to `>=3.10.0,<4.0` in `pyproject.toml` to pick up C++ 9.7.0 hardening patches. Bumped package version to 0.5.0.
+4. ✅ **README update (Item #4)**: Updated `backend/README.md` — Phase 5.1 status, ZimWriter + OPDS + zim_exports table description, libzim installation instructions, Phase 5.2/5.3 roadmap in Next Phases, removed stale "stubs" language.
+5. ✅ **Phase 5.2 Wave 0 schemas**: Created `backend/app/services/importers/schemas.py` with five validated dataclass schemas (MedicalArticle, WaterProcedure, SeedSpecies, FoodSafetyTable, BotanicalSpecies). All safety-critical fields enforced via `__post_init__`. Added `backend/tests/test_phase52_schemas.py` with 53 tests (18 marked `@pytest.mark.data_integrity`).
+
+**Branch**: `feature/phase-5-post-merge-fixes` on `github.com/esca8peArtist/open-repo`
+**Commits**: 5 logical commits pushed
+**PR URL**: https://github.com/esca8peArtist/open-repo/pull/new/feature/phase-5-post-merge-fixes
+
+**Blocker for Wave 1 (June 1)**: Medical content reviewer must be identified by May 31. See PHASE_5.2_IMPLEMENTATION_ROADMAP.md §0.1.
+
+---
+
 ## Session 1497 (2026-05-22 00:32–00:52 UTC) — ORCHESTRATOR: Exploration Queue Item 25 + Deadline Monitoring
 
 **Status**: ✅ **EXPLORATION ITEM 25 COMPLETE** | 🔴 **CRITICAL STOCKBOT SSH DEADLINE: May 22 13:30 UTC (~13h remaining)**
