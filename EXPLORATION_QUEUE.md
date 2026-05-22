@@ -219,11 +219,18 @@
 - **Owner**: open-source-rideshare subagent
 - **Deadline**: May 30 (pre-Phase-5.2-completion planning)
 
-### 26. ⏳ stockbot — Jetson Infrastructure Hardening & Disaster Recovery (Session 1474 — Added May 21)
-**Scope**: Lever B deployment blocked on SSH auth (user action), but underlying Jetson reliability improvements don't depend on Lever B outcome. Design comprehensive infrastructure hardening: monitoring (Prometheus/Grafana), logging (ELK stack or managed), backup strategy (database snapshots + filesystem), disaster recovery (RTO/RPO targets), security hardening (firewall, fail2ban, secrets rotation).
-- **Deliverables**: `JETSON_MONITORING_ARCHITECTURE.md` (metrics collection, alert rules, health dashboard), `JETSON_BACKUP_STRATEGY.md` (frequency, retention, recovery testing), `DISASTER_RECOVERY_RUNBOOK.md` (RTO/RPO targets, failover procedures, validation checklist). Estimate 12-15 hours.
-- **Owner**: stockbot subagent
-- **Deadline**: May 30 (ready for June 1 live trading hardening phase)
+### 26. ✅ stockbot — Jetson Infrastructure Hardening & Disaster Recovery (Session 1489 COMPLETE)
+**Status**: Completed May 21 (Session 1489, 23:50–[completion time] UTC). Files: `JETSON_MONITORING_ARCHITECTURE.md` (3,922 words) + `JETSON_BACKUP_STRATEGY.md` (3,443 words) + `DISASTER_RECOVERY_RUNBOOK.md` (4,039 words).
+**Key findings**:
+- Prometheus metrics collection with cached Alpaca account state (avoids rate-limiting trading engine)
+- Critical alerts: AlpacaAuthFailure (immediate), DiskUsageCritical (92%), BackupHeartbeatMissing (bridges monitoring/backup)
+- SQLite backup via `.backup` command (not naive cp) for consistency during active writes
+- Dedicated backup SSH key setup for passwordless rsync to Pi 5
+- Full Grafana dashboard mockup (6 panel rows, color thresholds, data sources)
+- Two new disaster scenarios: Alpaca auth failure (3-cause diagnosis) and disk full (emergency cleanup)
+- Last-resort recovery script: `sync_db_from_alpaca.py` reconstructs fill history from Alpaca order API
+- Discord incident communication protocol (open/update/close sequence)
+- Ready for May 30 deadline; June 1 live trading hardening phase execution can proceed
 
 ### 27. ✅ seedwarden — Phase 3 Vendor Negotiation Pre-Staging (Session 1474 COMPLETE)
 **Status**: Completed May 21 (Session 1474, 18:51 UTC). Files: `phase-3-vendor-negotiation-templates.md` + `phase-3-pricing-negotiation-ranges.md` + `phase-3-vendor-timeline-roadmap.md`.
