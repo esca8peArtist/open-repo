@@ -11055,3 +11055,34 @@ Of these, farm equipment repair and mesh networking/microgrid are executable NOW
    - Awaiting subagent completion (~12:40–13:00 UTC expected): resistance-research Domain 59, seedwarden Track B Gate 1
 
 ---
+
+### Session 1569 Update (12:57 UTC) — SSH Status Clarification
+
+**Jetson Network Diagnostic (Session 1569, 12:47–12:57 UTC)**:
+
+1. **Network Connectivity**: ✅ VERIFIED HEALTHY
+   - Ping to 100.120.18.84: 2/2 packets successful (9.7ms avg)
+   - Tailscale status: xxsb-01 (100.120.18.84) **active; direct 10.0.0.126:41641**
+   - **Conclusion**: Jetson is reachable and Tailscale is working
+
+2. **SSH Daemon Status**: ✅ VERIFIED HEALTHY
+   - SSH port 22: Responding (no timeout, handshake completes)
+   - Earlier timeout was transient (possibly network glitch)
+   - SSH handshake successful, auth methods advertised correctly
+   - **Conclusion**: SSH daemon is healthy and responsive
+
+3. **SSH Authentication Failure**: ❌ **ROOT CAUSE CONFIRMED**
+   - Command: `ssh -vvv ... ubuntu@100.120.18.84`
+   - Response: Key rejected ("Authentications that can continue: publickey,password")
+   - ED25519 public key: Not in Jetson's authorized_keys
+   - **Conclusion**: Orchestrator key NOT authorized on Jetson
+   
+4. **Impact & Timeline**:
+   - Jetson is ready to receive config fix (network and SSH are healthy)
+   - User can SSH with password auth OR add orchestrator's public key
+   - **Deadline**: 13:30 UTC (~35-40 min remaining)
+   - **Checkpoint**: 20:00 UTC (7h remaining)
+   - **Recovery**: Either Option A or Option B from BLOCKED.md will immediately restore access
+
+5. **Autonomous Status**: Hold pattern maintained. Awaiting subagent completion and user SSH action. No new risks identified.
+
