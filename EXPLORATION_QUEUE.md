@@ -277,16 +277,23 @@
 - **Deadline**: May 27 ✅ COMPLETED (needed for Item 32 analysis)
 - **Status**: PRODUCTION-READY. Ready for Item 32 integration.
 
-### 32. ⏳ Multi-Project Decision Readiness (June 1) (Session 1505 — Added May 22)
-**Scope**: June 1 is decision window for 3+ projects (systems-resilience Phase 5 Wave 2 vs Phase 6 sequencing, open-repo Phase 5.1 activation approval, general resource allocation). Pre-stage decision frameworks, timeline impact analysis, and sequencing alternatives.
-- **Deliverables**: 
-  - Wave 2 vs Phase 6 execution order analysis (resource conflict analysis, sequential vs parallel feasibility, June 1–July 15 timeline impact)
-  - Phase 5.1 activation checklist (extraction, thermal testing, pre-deployment validation — June 1-15 readiness)
-  - June resource allocation framework (hours/week for Wave 2, Phase 6, open-repo, other projects)
-  - Multi-project critical path (which decisions block which subsequent work)
-  - Post-May-22-checkpoint stockbot decision execution tree (if Gate 2 PASS, June 1-15 options; if FAIL, rapid recovery plan)
-- **Owner**: orchestrator + project-appropriate subagents (systems-resilience, open-repo, stockbot)
-- **Deadline**: May 30 (complete before June 1 decision window)
+### 32. ✅ Multi-Project Decision Readiness (June 1) (Session 1547 COMPLETE — May 22 10:30 UTC)
+**Status**: Completed May 22 (Session 1547, 10:30–11:15 UTC). Files delivered:
+- **`PHASE_5_WAVE_2_PHASE_6_EXECUTION_SEQUENCING.md`** (6,800 words) — 3-option analysis (Sequential/Parallel/Hybrid), resource estimates, contingency triggers, recommendation (Hybrid Option 3 preferred)
+- **`PHASE_5.1_ACTIVATION_CHECKLIST.md`** (5,200 words) — Pre-merge verification gates, post-merge validation (database migration, ZIM export testing), deployment sequence, Phase 5.2 kickoff gates, 21-hour resource estimate
+- **`JUNE_RESOURCE_ALLOCATION_AND_CRITICAL_PATH.md`** (7,500 words) — 3 scenarios (Scenario A: Lever B PASS + expansion, Scenario B: Lever B FAIL + Option B1, Scenario C: Caution/decision pending), resource hour estimates, critical path diagram, decision tree tied to May 22 checkpoint outcome
+
+**Key findings**:
+- Systems-resilience: Hybrid sequencing recommended (Wave 1 pub Jun 1–5, Phase 6 framework Jun 5–15, Wave 2 author Jun 10–Jul 10) = 120 total hours, 40 hours in June
+- Open-repo: Phase 5.1 production-ready for June 1–15 activation window (21 hours estimation: 4 hrs pre-merge verification, 6 hrs post-merge validation, 11 hrs deployment/monitoring)
+- Stockbot: 3 decision trees detailed (Scenario A: 76 hrs expansion, Scenario B: 17 hrs Option B1 implementation, Scenario C: 5 hrs maintenance)
+- Resource contention: Scenario A (Lever B PASS expansion) creates MEDIUM contention (author 125 hrs/month June); Scenario B (Option B1) and C (caution) create LOW contention
+- Critical path (all scenarios): Wave 1 publication (earliest gate) → Phase 6 framework (mid-June gate) → Wave 2 completion (July 10) → Joint publication (July 15)
+
+**User action required June 1**: (1) Approve Wave 1 publication, (2) Confirm/decide Stockbot Gate 2 direction (expansion, Option B1, or defer), (3) Confirm author capacity, (4) Approve Phase 5.1 merge
+
+**Owner**: orchestrator (Session 1547)
+**Deadline**: May 30 ✅ COMPLETED (advanced from May 30; ready for June 1 user input)
 
 ---
 
