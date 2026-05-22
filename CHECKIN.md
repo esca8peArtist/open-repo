@@ -13301,3 +13301,61 @@ Current session: ~200K tokens (Item 65 framework + 2 Phase 3 research docs via p
 - ✅ CHECKIN.md — Current section written
 
 **Commit timestamp**: May 22, 2026, 07:25 UTC
+
+---
+
+## Since Last Check-in (May 22, 11:51 UTC — Sessions 1543–1564)
+
+**Timeline**: Sessions 1543, 1552, 1563, 1564 (07:25–11:51 UTC, 4h 26m window)
+
+**Critical Status**: 🔴 **SSH AUTH CRITICAL** (deadline 13:30 UTC, ~1h 39m remaining) | ✅ **Agents running** | ⏰ **Checkpoint 20:00 UTC (8h 9m)**
+
+### What was accomplished
+
+1. **Sessions 1543–1552** (Hold pattern maintenance):
+   - Final pre-deadline verifications completed
+   - SSH auth block re-verified failing (multiple sessions, each finding same "Permission denied" result)
+   - All project Goals confirmed blocked on external dependencies only
+
+2. **Session 1563** (11:36 UTC — Autonomous work identification + agent dispatch):
+   - **Identified unblocked autonomous work**:
+     - **resistance-research**: Domains 59 (Economic Precarity) and 57 (Multilateral Withdrawal) research can proceed autonomously, independent of May 25 synthesis outcome
+     - **seedwarden Track B**: Gates 1–3 are autonomous and ready (May 23–28 execution, May 30 launch critical path)
+   - **Spawned two parallel agents** (11:36 UTC):
+     - ✅ **resistance-research subagent**: Phase 2 Domain 59 research initiation (Economic Precarity domain, 50–60 hr timeline, June 15–July 15 production window)
+     - ✅ **seedwarden subagent**: Track B Gate 1 execution (Instagram/TikTok/Pinterest platform setup, 45–60 min scope, May 30 launch critical path)
+   - **Rationale**: Both independent, non-blocking; parallel execution maximizes throughput before checkpoint
+
+3. **Session 1564** (current, 11:51 UTC — Final hold pattern + agent monitoring):
+   - Re-verified SSH auth block: **STILL FAILING** (11:51 UTC verify command returned `Permission denied (publickey,password)`)
+   - Assessed additional autonomous work: Exploration Queue Items 25/30/33/34/35 examined; none are critical-path for pre-checkpoint window
+   - Confirmed hold pattern is CORRECT: Two agents running, SSH deadline imminent, checkpoint at 20:00 UTC
+   - **Committed WORKLOG.md** with Session 1564 status update
+
+### Critical Timeline
+
+- **13:30 UTC** (~1h 39m): SSH auth deadline. User MUST fix (Option A: authorize orchestrator key to Jetson, OR Option B: SSH manually + run 5-min config fix). Commands in BLOCKED.md.
+- **20:00 UTC** (~8h 9m): May 22 checkpoint execution. If SSH fixed: Lever B HMM regime masking test. If NOT fixed: Lever A fallback (same as May 19 outcome).
+- **May 23 00:15 UTC**: Post-checkpoint Items 35a/35b/35c autonomous execution (4–6h, 3–4h, 2–3h respectively). Results from both running agents (resistance-research Domain 59, seedwarden Track B Gate 1) logged and integrated.
+
+### Needs Your Input
+
+**URGENT (by 13:30 UTC, ~1h 39m remaining)**:
+1. **SSH authorization**: Add orchestrator public key to Jetson authorized_keys, OR SSH manually and run Lever B config fix (5 min total). See BLOCKED.md for full commands.
+   - **Option A** (recommended): `cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'`
+   - **Option B**: SSH manually, edit `/opt/stockbot/config/active-sessions-2session.json`, add `"hmm_regime_masking": true` to both session blocks, save, run `docker restart stockbot`
+   - **Impact if NOT fixed**: May 22 20:00 UTC checkpoint executes with Lever A config (same as May 19 STILL_MISS_B2 outcome), defeating Lever B test purpose
+
+### Autonomous Agents Status
+
+- ✅ **resistance-research subagent** (Domain 59 research): Spawned 11:36 UTC, 50–60 hr timeline, running
+- ✅ **seedwarden subagent** (Track B Gate 1): Spawned 11:36 UTC, 45–60 min scope, running (ETA completion before checkpoint)
+
+### Next Steps
+
+1. **Immediate (by 13:30 UTC)**: User fixes SSH auth OR checkpoint executes with fallback
+2. **20:00 UTC**: May 22 checkpoint executes (outcome: PASS with Lever B, or PASS with Lever A fallback)
+3. **May 23 00:15 UTC**: Post-checkpoint Items 35a/35b/35c execute in parallel (agent results integrated, synthesis routing confirmed)
+4. **May 25 18:00 UTC**: Resistance-research signal log fill deadline (for May 25 19:00 UTC synthesis)
+
+**System Status**: ✅ Stable. Hold pattern correct. All contingencies pre-staged. Awaiting user SSH action or checkpoint outcome.
