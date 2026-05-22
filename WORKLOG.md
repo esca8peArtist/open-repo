@@ -8622,6 +8622,62 @@ All active executable items exhausted. Sessions 1472-1473 repurposed synthesis-d
 
 **No further autonomous work available** — all projects blocked on external user actions.
 
+---
+
+## Session 1498 (May 22, 2026) — General Research Agent: systems-resilience Phase 6 Gap Analysis & Planning
+
+**Status**: COMPLETE — Phase 6 scope defined; 2 new exploration queue items added to PROJECTS.md
+
+### Work Completed
+
+**Phase 6 Gap Analysis — Full Corpus Audit**:
+
+Conducted a complete audit of all systems-resilience documents across phases 1–5 to identify what has and has not been built:
+
+**Built (Phase 1–5)**:
+- Individual scale (Phase 1): water, food, shelter, energy, healthcare, agriculture (6 documents, ~7,700 lines)
+- Household scale (Phase 2): coordination overview, water, food, energy, healthcare, community-scale overview (6 documents)
+- Community scale (Phase 3): phase overview, emergency response infrastructure, infrastructure interdependency, mutual aid networks (4 documents)
+- Phase 4 integration: cross-domain failure cascade maps, regional governance federation framework, household-scale gap analysis
+- Phase 5 Wave 1: Tier 1 individual education/pedagogy (~7,400 words, 31 citations), Tier 2 household coordination infrastructure guide (~7,200 words, 28 citations) — production-ready
+- Phase 5 Wave 2: Veterinary care, psychological support, conflict resolution, community implementation playbook — all at 35% preliminary draft; Wave 2 research/pre-research complete; awaiting June 1 user decision on execution sequencing
+- Midwest: calendar, extreme weather, foraging species
+
+**Confirmed gaps (not yet addressed by any document)**:
+
+1. **Farm equipment repair / right-to-repair** — explicitly identified in PHASE_4_RESEARCH_INITIALIZATION.md Gap Analysis as a Tier 1 individual priority for Zone 5 and ranked as a "highly executable from existing literature" item. No document exists. The 2026 right-to-repair landscape (Deere class-action settlement April 2026, EPA guidance February 2026, federal FARM Act) makes this newly actionable and independently relevant.
+
+2. **Meshtastic / LoRa mesh networking** — community/01-emergency-response-infrastructure.md covers ham radio and physical messenger routes but predates the 2024–2025 Meshtastic hardware maturation. No document addresses LoRa mesh networking despite it being the lowest-cost, no-license, highest-redundancy tier of the Zone 5 communications stack.
+
+3. **Community-scale energy microgrid design** — individual/04-energy.md explicitly references "community/04-energy.md (planned)" for microgrid guidance. That document does not exist. DOE's 2025–2026 C-MAP program and sodium-ion battery developments make this newly relevant for Zone 5 cold-climate applications.
+
+**Cross-domain bridge findings**:
+
+- **systems-resilience + cybersecurity-hardening**: Farm equipment repair connects to dealer scan tool access as an attack surface (OBD/J1939 equivalent on modern tractors) — cybersecurity-hardening Phase 2 could develop a parallel security brief on agricultural control system vulnerability.
+- **systems-resilience + open-repo**: Meshtastic mesh networking connects to open-repo's offline knowledge distribution — mesh nodes can host local knowledge caches (ZIM files) accessible to nearby devices without internet. The offline knowledge architecture item already in PROJECTS.md Exploration Queue (Session 1277) is directly reinforced.
+- **systems-resilience + off-grid-living**: Community microgrid design extends off-grid-living's `06-energy-power.md` to the community scale; cross-reference bridge is already noted in individual/04-energy.md.
+- **systems-resilience + resistance-research**: Regional governance federation framework directly connects to resistance-research's democratic renewal proposal — both use three-tier subsidiarity models. Phase 6 Tier 3 community implementation playbook (Wave 2 final document) is the implementation layer for the governance frameworks resistance-research theorizes.
+
+**Wave 2 status assessment**:
+Phase 5 Wave 2 four documents (veterinary care, psychological support, conflict resolution, community framework) are at 35% preliminary draft. Pre-research for all four is complete. All are waiting for June 1 user decision on execution sequence (Option A: serial July 16–Oct 15; Option B: partial parallel July 16–Sep 1). These are NOT Phase 6 — they are the completion of Phase 5. Phase 6 is the two newly identified gaps above.
+
+**Phase 6 scope decision**:
+
+Phase 6 comprises exactly the domains NOT covered by Phases 1–5 or their planned Wave 2 completions:
+- Farm equipment repair (Tier 1 individual + Tier 2 household)
+- Zone 5 mesh networking communications layer (community/Tier 3 supplement)
+- Community-scale microgrid design (community/04-energy.md — the planned document that never existed)
+
+Of these, farm equipment repair and mesh networking/microgrid are executable NOW without any user decision, because they have no predecessor dependencies and the research base is strong (Deere settlement, DOE C-MAP, Meshtastic ecosystem matured 2024–2025).
+
+**Deliverables**:
+- Added 2 new exploration queue items to PROJECTS.md under "NEW ITEMS (Session 1498)":
+  1. `systems-resilience: Phase 6 Infrastructure Gap Research — Farm Equipment Repair & Right-to-Repair` (4–6 hours, executable immediately, deliverable: `phase-6-farm-equipment-repair-guide.md`, 6,000–7,500 words)
+  2. `systems-resilience: Phase 6 Infrastructure Gap Research — Communications & Mesh Networking for Zone 5` (4–5 hours, executable immediately, deliverable: `phase-6-communications-mesh-networking-guide.md`, 5,500–6,500 words)
+
+**Files Modified**:
+- PROJECTS.md (exploration queue items added under Session 1498)
+
 
 ---
 
