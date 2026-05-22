@@ -1,3 +1,59 @@
+## Session 1517 — ORCHESTRATOR: FINAL ORIENTATION COMPLETE + DEADLINE HOLDPATTERN (May 22, 05:42–XX:XX UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~7H 48MIN)** | ✅ **Orientation complete, all blocks verified** | ✅ **No autonomous unblocked work available** | ⏳ **Awaiting deadline + post-checkpoint routing**
+
+**Final Orientation Summary**:
+- Verified all 4 BLOCKED items are current and user-action dependent
+- Confirmed stockbot SSH auth failure (orchestrator key not authorized on Jetson) — blocks Lever B config deployment
+- Explored Exploration Queue: 20+ items documented, nearly all staged for post-checkpoint or post-synthesis execution
+- No truly autonomous unblocked work available in the immediate 7.5h window
+
+**Critical Action Required by 13:30 UTC TODAY**:
+- **Stockbot SSH deadline**: User must resolve SSH auth failure to enable orchestrator config fix
+- **Option A**: Add orchestrator ED25519 public key to Jetson authorized_keys file
+- **Option B**: SSH manually and execute 5-min config fix (exact commands in BLOCKED.md lines 76-101)
+- **Consequence if missed**: May 22 checkpoint executes with Lever A config (repeat of May 19 STILL_MISS_B2 outcome)
+
+**System Status**:
+- ✅ All orchestration files current (PROJECTS.md, WORKLOG.md, BLOCKED.md, CHECKIN.md, INBOX.md)
+- ✅ Pre-checkpoint decision frameworks ready: MAY_22_CHECKPOINT_DECISION_ROADMAP.md + SYNTHESIS_OUTCOME_PLAYBOOKS.md (Session 1447)
+- ✅ Exploration Queue staged with post-checkpoint items
+- 🔴 Waiting on May 22 13:30 UTC checkpoint outcome to route to next autonomous work
+
+**Next Steps**:
+1. **If user resolves SSH auth before 13:30 UTC**: Orchestrator will verify config fix and log outcome to WORKLOG.md
+2. **At/after 13:30 UTC**: Checkpoint outcome determines routing → consult MAY_22_CHECKPOINT_DECISION_MATRICES.csv and SYNTHESIS_OUTCOME_PLAYBOOKS.md
+3. **May 23+**: Based on outcome, spawn agents for Phase 2 research, Lever C contingency planning, or live trading prep as appropriate
+
+---
+
+### 🔴 Needs Your Input
+
+**CRITICAL — TODAY by 13:30 UTC (May 22)**:
+- **Stockbot SSH Auth Fix**: Orchestrator cannot resolve this. Choose:
+  - **Option A** (recommended if you have Jetson access): Add orchestrator's ED25519 public key to `~/.ssh/authorized_keys` on Jetson
+    - Key: `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPO0YPqQl2woxThwe/aS7+Z8UUA4PpVE/i69g2kEdJwV pi-stockbot`
+  - **Option B** (quick fallback): SSH to Jetson manually and run commands from BLOCKED.md lines 76-101 (5 min total)
+  - **If neither**: May 22 checkpoint will use Lever A config (same as May 19 STILL_MISS_B2), defeating Lever B testing
+  - Verify with: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+
+**May 23–28 (Seedwarden Track B — 3 user gates, currently overdue but recoverable)**:
+- Gate 1 (Social accounts): Instagram, TikTok, Pinterest setup (~45–60 min) — see `projects/seedwarden/TRACK_B_GATE_1_QUICK_REFERENCE.md`
+- Gate 2 (Canva Brand Kit): Set color palette + export zone cards (~4–6 hrs) — see `TRACK_B_CANVA_SETUP_AND_EXPORT_GUIDE.md`
+- Gate 3 (Kit email + landing): Email copy + landing page setup (~3–4.5 hrs) — see `TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md`
+- **May 30 launch is achievable** if all gates complete by May 28. No orchestrator blockers.
+
+**May 25 (Resistance-research Phase 2)**:
+- Signal log fill for May 28 re-synthesis: Fill any May 20-21 response data collected so far; full 7-day window required by May 25 18:00 UTC
+- Domain 56 Tier 1 emails: Fill sender credentials and send 5 emails (5 min fill + 15–20 min sending = ~20–25 min total)
+
+**May 30 and beyond (post-user-decisions)**:
+- seedwarden: Track B launch (all user gates must complete by May 28)
+- resistance-research: Phase 2 synthesis outcome routing (May 25 18:00 UTC triggers May 28 re-synthesis)
+- stockbot: If May 22 checkpoint PASSES, user decision on Lever B escalation + multi-ticker scaling; if FAIL, recovery path decision
+
+---
+
 ## Session 1516 — ORCHESTRATOR: ORIENTATION + CRITICAL DEADLINE RECONFIRMATION (May 22, 05:31 UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (≈8H 59MIN REMAINING)** | ✅ **All projects verified, no new blockers** | **Autonomous Phase 6 research ready to proceed**
