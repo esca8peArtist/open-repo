@@ -32,13 +32,13 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Jetson unreachable; checkpoint at risk (May 22 20:00 UTC, ~6h away)
+### stockbot — Jetson unreachable; checkpoint at risk (May 22 20:00 UTC, ~5h 45m away)
 
 **Date blocked**: 2026-05-22 13:50 UTC (Session 1573 — API health check failure)
-**Context**: Pre-checkpoint verification attempt detected critical connectivity issue. Health check to http://100.120.18.84:8000/api/health timed out (Session 1573, Session 1574 14:00 UTC). Session 1569 diagnostics (12:57 UTC) confirmed: Jetson network/SSH daemon healthy, but orchestrator ED25519 public key NOT authorized in Jetson's authorized_keys file. User SSH action deadline was 13:30 UTC May 22 (to deploy Lever B config fix before checkpoint). Deadline has PASSED (now 14:00 UTC). Checkpoint scheduled to execute automatically at 20:00 UTC on Jetson with current Lever A configuration (no Lever B HMM regime masking test). Health check continues to time out — API endpoint unreachable or trading engine may be down.
-**What I need**: (1) **IMMEDIATE (before 20:00 UTC)**: Physical or SSH verification: Is Jetson powered on? Is trading engine running? Can you SSH to Jetson and check `docker ps | grep stockbot` or `ps aux | grep launch_stacker_sessions.py`? (2) If engine is down, restart it: `ssh ubuntu@100.120.18.84 && cd /opt/stockbot && docker restart stockbot` or manual restart from Jetson terminal. (3) **Optional**: If you want to fix Lever B config: `ssh ubuntu@100.120.18.84 -c "cat > ~/.ssh/authorized_keys << 'EOF'` + paste orchestrator ED25519 public key. (4) Report status so checkpoint execution is verified possible.
+**Context**: Pre-checkpoint verification attempt detected critical connectivity issue. Health check to http://100.120.18.84:8000/api/health timed out (Session 1573, Session 1574 14:00 UTC, Session 1575 14:14 UTC reconfirmed timeout). Session 1569 diagnostics (12:57 UTC) confirmed: Jetson network/SSH daemon healthy, but orchestrator ED25519 public key NOT authorized in Jetson's authorized_keys file. User SSH action deadline was 13:30 UTC May 22 (to deploy Lever B config fix before checkpoint). **Deadline has PASSED (now 14:14 UTC, 44 minutes ago)**. Checkpoint scheduled to execute automatically at 20:00 UTC on Jetson with current Lever A configuration (no Lever B HMM regime masking test). Health check continues to time out — API endpoint unreachable or trading engine may be down.
+**What I need**: (1) **IMMEDIATE (before 20:00 UTC)**: Physical or SSH verification: Is Jetson powered on? Is trading engine running? Can you SSH to Jetson and check `docker ps | grep stockbot` or `ps aux | grep launch_stacker_sessions.py`? (2) If engine is down, restart it: `ssh ubuntu@100.120.18.84 && cd /opt/stockbot && docker restart stockbot` or manual restart from Jetson terminal. (3) Report status so checkpoint execution is verified possible.
 **Verify with**: `curl -s http://100.120.18.84:8000/api/health | jq .status` — should return "ok" if healthy. If successful, respond with JSON health status. If still fails after user action, checkpoint may execute without pre-flight verification.
-**Resolution**: [leave blank — SSH deadline missed at 13:30 UTC; checkpoint will proceed at 20:00 UTC with current config]
+**Resolution**: [leave blank — SSH deadline missed 14:14 UTC; Jetson unreachable; checkpoint will proceed at 20:00 UTC with current config unless user intervenes]
 
 ---
 
