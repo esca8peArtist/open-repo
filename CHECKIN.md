@@ -1,3 +1,63 @@
+## Session 1504 — ORCHESTRATOR: PHASE 6 RESEARCH COMPLETE + CRITICAL DEADLINE MONITORING (May 22, 02:27–03:20 UTC)
+
+**Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~10 hours remaining)** | ✅ **Phase 6 Research Complete**
+
+**Work Accomplished**:
+1. ✅ **Queue audit**: Identified systems-resilience Phase 6 as unfinished autonomous scope (2 domains explicitly mentioned in PROJECTS.md but not queued)
+2. ✅ **Queue management**: Added items 28–29 (farm equipment repair, LoRa mesh networking) to EXPLORATION_QUEUE.md
+3. ✅ **Phase 6 research spawned & completed**: 
+   - `phase-6-farm-equipment-repair-right-to-repair.md` (10,200 words, 30 sources, John Deere settlement + EPA Feb 2026 guidance + DIY cost comparison)
+   - `phase-6-meshtastic-lora-mesh-networking.md` (9,800 words, 30 sources, 915 MHz hardware + Zone 5 deployment + $2,520 25-household cost model)
+4. ✅ **EXPLORATION_QUEUE.md updated**: Items 28–29 marked complete; queue now has 2 deferred items (5, 25)
+
+**Autonomous Work Assessment**: After Phase 6 completion, all projects are fully blocked on external dependencies:
+- **stockbot** — SSH auth failure (user action by 13:30 UTC)
+- **resistance-research** — May 25 synthesis + user Gist creation
+- **cybersecurity-hardening** — User VeraCrypt restart
+- **mfg-farm** — Test print execution
+- **seedwarden** — User scope/sourcing/writer decisions (May 30)
+- **open-repo** — Medical reviewer ID (May 31)
+- **systems-resilience** — Phase 5 Wave 2 decision (June 1); Phase 6 now complete
+- **off-grid-living** — User social media execution
+- **workout** — User review
+- **career-training** — User review
+
+**Needs Your Input**:
+
+### 🔴 CRITICAL: Stockbot SSH Deadline May 22 13:30 UTC
+
+User must execute **ONE option by deadline** (10 hours remaining):
+
+**Option A (5 min)**: SSH + config fix
+```bash
+ssh ubuntu@100.120.18.84
+nano /opt/stockbot/config/active-sessions-2session.json
+# Add "hmm_regime_masking": true to both AAPL sessions' strategy_params
+docker restart stockbot
+curl http://localhost:8000/api/health
+```
+
+**Option B (2-3 min)**: Add orchestrator public key to Jetson authorized_keys
+```bash
+cat /home/awank/.ssh/id_ed25519.pub
+# SSH to Jetson and append to ~/.ssh/authorized_keys
+```
+
+**Consequence**: If not resolved by 13:30 UTC, May 22 20:00 UTC checkpoint executes with Lever A only (Lever B HMM regime masking testing defeated).
+
+### 📋 Other Items Awaiting User Action
+
+**By May 25 (synthesis re-execution)**:
+- resistance-research: Fill signal log with any May 20-21 response data collected
+
+**By May 30 (Phase 3 implementation)**:
+- seedwarden: Sprint scope (Option A/B/C), Goldenseal sourcing (Path 1/2), Canva palette (confirm hex or defer)
+
+**By June 1**:
+- systems-resilience: Wave 2 sequencing vs. Phase 6 execution order (Phase 6 now complete and independent)
+
+---
+
 ## Session 1503 — ORCHESTRATOR: FINAL VERIFICATION + CRITICAL DEADLINE MAINTAINED (May 22, 02:21 UTC)
 
 **Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~11h 9m remaining)**

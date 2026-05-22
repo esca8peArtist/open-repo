@@ -241,6 +241,14 @@
 - Timeline: Start outreach May 22 (6-day window to June 8 Goldenseal zero-float deadline), confirms May 30-June 1, final delivery locked June 15
 - Contingency paths documented for vendor no-shows (backup suppliers, cold AHG outreach, Canva self-execute fallback)
 
+### 28. ✅ systems-resilience — Phase 6 Farm Equipment Repair & Right-to-Repair (Session 1504 COMPLETE)
+**Status**: Completed May 22 (Session 1504, 02:27–03:20 UTC). File: `phase-6-farm-equipment-repair-right-to-repair.md` (10,200 words, 30 sources).
+**Key findings**: John Deere $99M settlement approved May 2026 requires diagnostic tool + offline reprogramming access by Dec 31 2026. EPA Feb 2026 guidance permits DEF/SCR override for repair. DMCA Section 1201 still exposes circumvention work beyond narrow agricultural exemption. Current tools: CanDo OHV Pro, Jaltest AGV. Cost comparison: DIY parts 3–8× lower than dealer labor. Aftermarket sourcing: Shoup, All States Ag Parts, Sparex, Worthington.
+
+### 29. ✅ systems-resilience — Phase 6 Meshtastic/LoRa Mesh Networking for Zone 5 Offline Comms (Session 1504 COMPLETE)
+**Status**: Completed May 22 (Session 1504, 02:27–03:20 UTC). File: `phase-6-meshtastic-lora-mesh-networking.md` (9,800 words, 30 sources).
+**Key findings**: Meshtastic 915 MHz ($30–60/node) is lowest-cost, highest-resilience option for community text comms with zero infrastructure. 25-household network: ~$2,520 all-in. Hardware hierarchy: Heltec V3 (evaluation), T-Beam Supreme (mobile), RAK WisBlock (fixed solar). LiFePO4 batteries critical for Zone 5 winter (-20°C). MeshCore is alternative for 100+ node networks (64-hop routing). Kiwix bridge enables text queries across mesh from ZIM server. Positioned as Layer 2 in three-layer (GMRS/Meshtastic/HF shortwave) stack.
+
 ---
 
 ## Queue Management Rules
