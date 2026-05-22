@@ -1,22 +1,31 @@
-## Session 1571 (May 22, 13:07 UTC) — 🚨 ORCHESTRATOR CRITICAL: SSH DEADLINE 23 MINUTES REMAINING
+## Session 1571 (May 22, 13:30 UTC) — 🔴 ORCHESTRATOR: SSH DEADLINE MISSED — CHECKPOINT WILL USE LEVER A
 
-**Status**: 🚨 **SSH DEADLINE CRITICAL — 23 MIN REMAINING (13:30 UTC)** | ⏰ **Checkpoint 20:00 UTC (6h 53m away)**
+**Status**: 🔴 **SSH DEADLINE MISSED (13:30 UTC)** | ⏰ **Checkpoint 20:00 UTC (6h 30m away)** | 🚀 **Proceeding with unblocked projects**
 
-**Time remaining**: May 22 13:30 UTC is **~23 minutes away** from current time 13:07:44 UTC
+**Deadline Outcome**:
+- ✅ Background monitor completed at 13:30 UTC deadline
+- ❌ SSH auth final check: **STILL FAILING** — User did not take action
+- **Decision locked**: Checkpoint will execute with Lever A config (same as May 19 STILL_MISS_B2 attempt)
+- **Lever B test**: CANCELLED due to missed deployment window
 
-**SSH Status Verification (13:07 UTC)**:
-- ✅ Jetson REACHABLE (ping 2/2 successful)
-- ✅ SSH daemon RESPONDING (handshake completes)
-- ❌ **STILL FAILING: Orchestrator ED25519 key NOT in authorized_keys** 
-  - SSH error: "Permission denied (publickey,password)"
-  - Key rejected; Jetson awaiting user action
+**Post-Deadline Actions Completed**:
+- ✅ Updated BLOCKED.md: Moved SSH block to Resolved Archive with deadline-missed resolution
+- ✅ Updated PROJECTS.md: Stockbot focus now reflects cancelled Lever B test, Lever A execution at 20:00 UTC
+- ✅ Updated WORKLOG.md: Documented deadline result and next steps
+- ✅ Sent Discord notification: Alerted user to deadline miss and checkpoint status
 
-**CRITICAL ESCALATION — USER ACTION REQUIRED WITHIN NEXT 23 MINUTES**:
-- **SSH deadline: MAY 22 13:30 UTC** — **23 MINUTES REMAINING**
-- **SSH auth still FAILING** — Orchestrator key NOT authorized on Jetson
-- **May 22 20:00 UTC checkpoint at risk** — Config fix MUST happen within 23 minutes OR checkpoint executes with Lever A (repeats May 19 failure)
+**What Happened**:
+- 13:07 UTC: SSH auth check confirmed still failing
+- 13:07 UTC: Sent critical Discord notification
+- 13:09 UTC: Started background deadline monitor (20 min sleep)
+- 13:30 UTC: Monitor reached deadline, checked SSH auth, found still failing
+- 13:30 UTC: Executed Scenario B (deadline missed) — updated orchestration files
 
-**SESSION 1571 STATUS**: Waiting for deadline (13:30 UTC, ~22 min remaining). Will automatically proceed post-deadline based on user action or timeout.
+**Checkpoint Readiness** (20:00 UTC):
+- Engine: HEALTHY (2 sessions, $115K equity, ready to execute)
+- Configuration: Lever A parameters (no HMM regime masking test)
+- Expectation: STILL_MISS_B2 outcome likely (h+8 at checkpoint time, h+10 fires May 24)
+- Post-checkpoint work: Systems-resilience + resistance-research Phase 2 items staged
 
 **URGENT ACTIONS (do one immediately)**:
 - **Option A** (recommended, 5 min): Add orchestrator public key:

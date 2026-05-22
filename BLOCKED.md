@@ -70,46 +70,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Lever B HMM configuration not activated + SSH auth failure (CRITICAL DEADLINE: MAY 22 13:30 UTC)
-**Date blocked**: 2026-05-19 05:10 UTC (Session 1316); SSH auth escalated 2026-05-19 05:39 UTC (Session 1319); Confirmed SSH issue 2026-05-19 08:10 UTC (Session 1324); RE-VERIFIED FAILING 2026-05-19 19:55 UTC (Session 1359); **FINAL ESCALATION 2026-05-22 11:08 UTC (Session 1558)** — SSH STILL FAILING, DEADLINE IMMINENT; **CLARIFICATION SESSION 1569 (12:47–12:57 UTC)** — SSH HEALTHY, AUTH FAILURE CONFIRMED
-**Context**: Pre-checkpoint infrastructure validation (Session 1316) discovered that Lever B HMM regime masking code was deployed to Jetson (`/opt/stockbot/src/ml/hmm_signal_masker.py`), but the config file `/opt/stockbot/config/active-sessions-2session.json` does NOT have `hmm_regime_masking: true` in strategy_params. Result: May 22 checkpoint will execute with Lever A configuration (same as May 19 that already failed with STILL_MISS_B2 outcome), defeating the purpose of Lever B testing. **SSH STATUS (Session 1569, 12:57 UTC — VERIFIED)**: 
-- ✅ Jetson REACHABLE on network (ping 2/2 OK, Tailscale active/direct)
-- ✅ SSH daemon HEALTHY (port 22 responding, handshake completes)
-- ❌ **Orchestrator ED25519 key NOT AUTHORIZED** — SSH auth fails with "Permission denied (publickey,password)"
-- **Root cause confirmed**: ~/.ssh/id_ed25519.pub is NOT in Jetson's ~/.ssh/authorized_keys
-- **CRITICAL**: Checkpoint scheduled for 20:00 UTC today (May 22). Config must be fixed by 13:30 UTC deadline (~35-40 min remaining). User action deadline: **May 22 13:30 UTC**.
-**What I need**: Either (A) Add orchestrator's public key to Jetson's authorized_keys on remote machine (requires existing access), OR (B) SSH to Jetson manually and execute the 5-minute Lever B config fix yourself **by May 22 13:30 UTC (CRITICAL DEADLINE ~2h 21m)**. **Fix commands (run on Jetson via SSH with your existing credentials)**:
-```bash
-# Edit config file to add hmm_regime_masking flag
-ssh ubuntu@100.120.18.84
-# (enter password or use your SSH key if different from orchestrator's)
-nano /opt/stockbot/config/active-sessions-2session.json
-# Find both "AAPL_h10_lgbm_ho" and "AAPL_h10_ridge_wf" session blocks
-# For each, ensure strategy_params contains: "hmm_regime_masking": true
-# Example for first session:
-#{
-#  "stacker_name": "AAPL_h10_lgbm_ho",
-#  "threshold_multiplier": 0.4,
-#  "confidence_floor": 0.45,
-#  "strategy_params": {
-#    "hmm_regime_masking": true,
-#    "hmm_observe_mode": false,
-#    "hmm_min_fit_bars": 60,
-#    "hmm_suppress_buy_in_bear": true
-#  }
-#}
-# Save and exit (ctrl+x, y, enter)
-docker restart stockbot
-# Verify:
-curl http://localhost:8000/api/health
-# Should return: {"status":"ok","sessions":2}
-```
-**Verify with**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` — will show SSH error if key still not authorized, or return OK if fixed
-**Resolution**: [leave blank]
-
----
-
 ## Resolved Archive
+
+### stockbot — SSH deadline missed (May 22 13:30 UTC)
+
+**Date blocked**: 2026-05-19 05:10 UTC (Session 1316)
+**Date resolved**: 2026-05-22 13:30 UTC (Session 1571 — deadline reached)
+**Context**: Orchestrator ED25519 SSH key was not authorized on Jetson. User action deadline: May 22 13:30 UTC. User did not take action to either (A) authorize the key or (B) manually SSH and deploy Lever B config.
+**Resolution**: ❌ **DEADLINE MISSED** (Session 1571, 13:30 UTC) — User did not authorize SSH key or manually deploy config by deadline. Checkpoint at 20:00 UTC will execute with Lever A configuration (does not include HMM regime masking test). Lever B test outcome: CANCELLED. Block resolved (deadline passed, outcome locked).
 
 ### open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked
 

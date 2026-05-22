@@ -15,14 +15,24 @@
 - **Option A** (5 min): `cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'`
 - **Option B** (10 min): SSH manually and add `"hmm_regime_masking": true` to config file
 
-**Post-Deadline Action Plan**:
-- **Prepared**: Scenario A (SSH fixed) + Scenario B (deadline missed) + executor script
-- **Monitoring**: Background task waiting until 13:30 UTC deadline, will check SSH auth automatically
-- **Timeline**: 
-  - 13:30 UTC: Deadline lock + SSH status check
-  - ~13:35 UTC: Post-deadline actions execute (Scenario A or B)
-  - 20:00 UTC: May 22 checkpoint execution (automatic)
-- **Next**: Awaiting task-notification from deadline monitor (ETA 13:30 UTC)
+**Post-Deadline Result (13:30 UTC Reached)**:
+- ✅ Background deadline monitor completed at 13:30 UTC
+- ❌ SSH auth check: **STILL FAILING** — User did not authorize orchestrator key by deadline
+- **Scenario B Executed**: Deadline missed, outcome locked in
+- ✅ BLOCKED.md updated: Moved SSH block to Resolved Archive with deadline-missed note
+- ✅ PROJECTS.md updated: Stockbot focus now reflects Lever B test cancelled, checkpoint will use Lever A
+- ✅ Commitment: All orchestration files ready for commit
+
+**Checkpoint Status (20:00 UTC — ~6h 30m remaining)**:
+- Engine state: HEALTHY (2 sessions, $115K equity)
+- Configuration: Will execute with Lever A parameters (HMM regime masking disabled)
+- Expected outcome: Same as May 19 (STILL_MISS_B2 scenario most likely)
+- User action: SSH key authorization can happen anytime post-checkpoint for future deployments
+
+**Next Work**: 
+1. Commit orchestration files
+2. Assess unblocked project work available until checkpoint
+3. Spawn parallel agents for Phase 2 research (resistance-research, systems-resilience) if time permits
 
 ---
 
