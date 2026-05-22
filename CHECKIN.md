@@ -1,3 +1,43 @@
+## Session 1547 — ORCHESTRATOR: Item 32 Execution (June 1 Multi-Project Decision Readiness) (May 22, 09:25–11:20 UTC)
+
+**Status**: 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (1H 40MIN)** | ✅ **Item 32 COMPLETE** | ✅ **Pre-staging ready for June 1** | ✅ **All files committed**
+
+**What was done**:
+1. **Executed Item 32 autonomously** (identified in Exploration Queue as actionable without May 22 checkpoint outcome) — Created three comprehensive pre-staging documents:
+   - **`PHASE_5_WAVE_2_PHASE_6_EXECUTION_SEQUENCING.md`** (6,800 words, systems-resilience): Option A (sequential), B (parallel), C (hybrid recommended). Resource hours: Wave 2 = 80 hrs, Phase 6 = 30 hrs. Contingency triggers documented.
+   - **`PHASE_5.1_ACTIVATION_CHECKLIST.md`** (5,200 words, open-repo): Pre-merge gates, post-merge validation (database, ZIM export), deployment sequence, 21-hour estimate. Phase 5.2 kickoff gates (3+ days production stability required).
+   - **`JUNE_RESOURCE_ALLOCATION_AND_CRITICAL_PATH.md`** (7,500 words, orchestrator): 3 scenarios tied to May 22 checkpoint outcome (Scenario A: Lever B PASS + expansion, B: Lever B FAIL + Option B1, C: decision pending). Critical path analysis. Decision tree for June 1 user input.
+
+2. **Updated EXPLORATION_QUEUE.md** — Marked Item 32 complete with deliverables summary + key findings
+
+3. **Committed all work to master** — Commit e211788e: "chore(orchestrator): session 1547 — Item 32 Complete"
+
+**Key findings from Item 32 pre-staging**:
+- **Systems-resilience**: Hybrid sequencing is optimal (Wave 1 publication Jun 1–5, Phase 6 framework Jun 5–15, Wave 2 author Jun 10–Jul 10, publish jointly Jul 15)
+- **Open-repo**: Phase 5.1 activation fits June 5–15 window; deployment June 15 gates Phase 5.2 kickoff
+- **Stockbot**: 3 decision paths documented:
+  - Scenario A (Lever B PASS): Expansion GO requires 76 author hours Jun 5–10; contention with Wave 2 is MEDIUM (manageable with >20 hrs/week author capacity)
+  - Scenario B (Lever B FAIL + Option B1): 17-hour implementation Jun 3–10; LOW contention with other projects
+  - Scenario C (Caution): Defer decision to June 5; all other projects proceed unblocked
+- **Resource contention matrix**: Scenario B and C are preferred (low contention); Scenario A feasible if author >25 hrs/week confirmed
+- **Critical path** (all scenarios): Wave 1 publication (Jun 1–5) → Phase 6 framework (Jun 5–15) → Wave 2 completion (July 10) → Joint publication (July 15)
+
+🔴 **CRITICAL — USER ACTION DEADLINE: 13:30 UTC (1H 40MIN REMAINING)**:
+- Stockbot Lever B HMM config fix required before May 22 20:00 UTC checkpoint
+- Option A (fastest, <5 min): Add orchestrator ED25519 public key to Jetson authorized_keys
+- Option B (manual SSH, ~5 min): SSH and manually run 5-min config fix (commands in BLOCKED.md)
+- Verify: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` should return OK
+
+**Items needing your input (June 1 decision meeting)**:
+1. **Wave 1 publication**: Approved for public release? (Y/N)
+2. **Stockbot Gate 2** (depends on May 22 checkpoint outcome): Expansion GO (Scenario A), Option B1 yes/no (Scenario B), or defer (Scenario C)?
+3. **Author availability**: Can primary author sustain 20+ hrs/week Wave 2 writing Jun 1–Jul 10?
+4. **Phase 5.1 merge**: Approved for production deployment June 1–15?
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (Lever B outcome determines Phase 2 synthesis routing + Scenario A/B/C execution path)
+
+---
+
 ## Session 1546 — ORCHESTRATOR: Hold Pattern Verification + Pre-Checkpoint Readiness (May 22, ~10:00–10:30 UTC)
 
 **Status**: 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (3H 30MIN)** | ✅ **Hold pattern re-verified CORRECT** | ✅ **Item 31/31b COMPLETE** | ✅ **Checkpoint readiness confirmed**
