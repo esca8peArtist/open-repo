@@ -1,3 +1,24 @@
+## Session 1558 — ORCHESTRATOR: Final SSH Auth Verification + Hold Pattern Confirmed (May 22, 11:02 UTC)
+
+**Status**: ✅ **Hold pattern CORRECT** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 28MIN)** | ✅ **SSH block VERIFIED STILL FAILING** | ⏰ **Checkpoint 20:00 UTC (8H 58MIN)**
+
+**Verification completed**:
+- ✅ SSH auth check at 11:02 UTC: `Permission denied (publickey,password)` — Orchestrator key NOT authorized on Jetson
+- ✅ All 5 active blocks remain unchanged since Session 1557
+- ✅ Zero autonomous work available — all projects blocked on named external dependencies
+- ✅ Exploration Queue ready for post-checkpoint execution (Items 35a/35b/35c staged)
+
+**CRITICAL ACTION REQUIRED (by 13:30 UTC — 2H 28MIN)**:
+User must either:
+- **Option A** (fastest, <5 min): Add orchestrator ED25519 public key to Jetson `~/.ssh/authorized_keys`
+- **Option B** (manual SSH, ~5-10 min): SSH to Jetson, edit `/opt/stockbot/config/active-sessions-2session.json` to add `"hmm_regime_masking": true` to both AAPL session blocks, then `docker restart stockbot`
+- **Verification**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+- **If NOT fixed by 13:30 UTC**: May 22 20:00 UTC checkpoint executes with Lever A config (same as May 19 STILL_MISS_B2), defeating Lever B test purpose
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (Items 35a/35b/35c execution in parallel, 9-12h total)
+
+---
+
 ## Session 1557 — ORCHESTRATOR: Hold Pattern Stable + Checkpoint Readiness Confirmed (May 22, 10:54 UTC)
 
 **Status**: ✅ **Hold pattern STABLE** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 36MIN)** | ✅ **All blocks verified** | ⏰ **Checkpoint 20:00 UTC (9H 6MIN)**
