@@ -1,3 +1,64 @@
+## Session 1511 — ORCHESTRATOR: AUTONOMOUS DECISION FRAMEWORK RESEARCH (May 22, 04:01–04:15 UTC)
+
+**Status**: ✅ **TWO DECISION FRAMEWORKS READY** | 🔴 **Stockbot SSH deadline 9h 29m away** | ✅ **Zero new blocks**
+
+**Work Accomplished**:
+1. ✅ **State orientation** (3 min): Verified ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
+   - All active blocks persistent (stockbot SSH, resistance-research synthesis, cybersecurity/mfg-farm/seedwarden user actions)
+   - Zero new INBOX items
+   - Exploration Queue Items 31-32 complete; queue capacity available for new items
+
+2. ✅ **Autonomous work assessment** (2 min): Identified unfinished scope within project Goals
+   - **Seedwarden**: Phase 3 scope decision due May 30 — decision framework provided, but no quantitative ROI analysis yet
+   - **Open-repo**: Phase 5 direction decision due May 25-26 — three candidates identified, but no comparative framework yet
+   - Both represent **executable autonomous work** (decision support research)
+
+3. ✅ **Parallel agent execution** (8–9 min wall-clock):
+   - **Item 33 — Seedwarden Phase 3 Scope Analysis**: File `phase-3-scope-decision-analysis.md` (1,800 words)
+     - Market demand scores per bundle (Women's Health 9/10, Sleep 8/10, Respiratory/Immunity 8/10, etc.)
+     - ROI comparison: Option C (3-bundle solo) **best payback** 2–4 units, **lowest sunk cost** $1,471
+     - Decision rules: Choose Option C if Phase 1 conversion <2%, Option A if >3%, Option B only if outsourcing budget confirmed
+     - **Verdict**: Ready for user decision by May 30
+   
+   - **Item 34 — Open-repo Phase 5 Candidate Framework**: File `phase-5-candidate-decision-framework.md` (1,850 words)
+     - Deep-dive on three candidates with impact/risk/timeline analysis
+     - **Recommendation**: Candidate 1 FIRST (ZimWriter, 2-hour MVP, 9/10 impact, 2/10 risk), Candidate 3 SECOND (A11y audit), Candidate 2 THIRD (OPDS feedgen)
+     - **Verdict**: Ready for user decision by May 25–26
+
+**Current Status of Top Projects**:
+
+| Project | Status | Blocker | User Input Needed | Deadline |
+|---------|--------|---------|-------------------|----------|
+| **stockbot** 🔴 | BLOCKED | SSH auth failure | Add key OR manually SSH + config fix | **TODAY 13:30 UTC** |
+| **seedwarden** | Decision required | Phase 3 scope | Choose Option A/B/C (now with quantitative ROI data) | May 30 |
+| **open-repo** | Decision required | Phase 5 direction | Choose Candidate 1/2/3 (now with decision matrix) | May 25–26 |
+| **resistance-research** | Awaiting May 25 | Signal log data collection | Fill wave-1-signal-log-may18-21.md with response data | May 25 |
+| **systems-resilience** | Awaiting decision | Wave 2 vs Phase 6 sequencing | Decide priority order for June 1 execution | June 1 |
+
+**Needs Your Input**:
+
+### 🔴 **URGENT — Stockbot SSH Authorization** (Deadline: TODAY, 2026-05-22, 13:30 UTC)
+
+**Time remaining**: 9 hours 29 minutes
+
+**Your action**: SSH to Jetson and add `"hmm_regime_masking": true` to config, OR add orchestrator's public key to authorized_keys. See Session 1507 for exact commands.
+
+### 📋 **Decision Frameworks Ready** (not urgent, but recommended before deadlines)
+
+**Seedwarden Phase 3 (due May 30)**:
+- New file: `projects/seedwarden/phase-3-scope-decision-analysis.md`
+- Shows: Option C has **2–4x faster payback** than alternatives
+- Recommendation: Option C (3-bundle solo) aligns with timeline + ROI constraints
+- Action: Review framework, decide scope by May 30 evening
+
+**Open-repo Phase 5 (due May 25–26)**:
+- New file: `projects/open-repo/phase-5-candidate-decision-framework.md`
+- Shows: Candidate 1 (ZimWriter) has **9/10 impact, 2/10 risk** — READY TO MERGE immediately
+- Recommendation: Candidate 1 FIRST → Candidate 3 (A11y audit) concurrent/second → Candidate 2 (OPDS) third
+- Action: Review framework, approve Candidate 1 for May 25 merge, decide Phase 5 sequencing by May 26
+
+---
+
 ## Session 1507 — ORCHESTRATOR: DEADLINE MONITORING (May 22, 03:17–03:22 UTC)
 
 **Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~10h 12m remaining)** | ✅ **All blocks persistent** | ✅ **Zero autonomous work available**
