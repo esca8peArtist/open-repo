@@ -1,3 +1,80 @@
+## Session 1505 — ORCHESTRATOR: CRITICAL DEADLINE + EXPLORATION QUEUE REFRESH (May 22, 02:51–03:45 UTC)
+
+**Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~10h 39m remaining)** | ✅ **Queue Items 30-32 added** | ✅ **Phase 6 complete (prior session)**
+
+**Work Accomplished**:
+1. ✅ **State audit**: Verified all project statuses, Exploration Queue at minimum threshold
+2. ✅ **Phase 6 verification**: Confirmed farm equipment repair + LoRa mesh research already complete (commit 73e9bbfb, 11,863 words, 60 sources)
+3. ✅ **Exploration Queue replenishment**: Added Items 30-32 for May 25-June 1 decision windows
+4. ✅ **SSH block reconfirmed**: Attempted SSH — orchestrator key still not authorized. Block remains active and unresolved.
+
+**Exploration Queue (Items 30-32 added)**:
+- **Item 30**: Post-synthesis Phase 2 activation plan (May 25 execution, STRONG/MODERATE/WEAK outcome paths)
+- **Item 31**: May 30 seedwarden gate decision package (Instagram May 23, Canva May 24, verification May 27-28)
+- **Item 32**: June 1 multi-project decision readiness (Wave 2 vs Phase 6 tradeoff analysis, Phase 5.1 activation approval, resource allocation)
+
+**Autonomous Work Assessment**: ZERO executable items remain
+- All projects blocked on user actions, external events, or user decisions
+- Phase 6 research complete
+- Exploration Queue at healthy level (3 items staged for May 25-June 1 decision windows)
+- Critical path: May 22 13:30 UTC SSH deadline (unresolved)
+
+**Needs Your Input**:
+
+### 🔴 CRITICAL — Stockbot SSH Authorization (Deadline: May 22 13:30 UTC, ~10h 39m remaining)
+
+**Status**: Orchestrator's ED25519 public key is NOT authorized on Jetson. SSH auth continues to fail with "Permission denied (publickey,password)".
+
+**User must execute ONE option**:
+
+**Option A — SSH & Config Fix (5 minutes)**:
+```bash
+ssh ubuntu@100.120.18.84
+nano /opt/stockbot/config/active-sessions-2session.json
+# Find both "AAPL_h10_lgbm_ho" and "AAPL_h10_ridge_wf" sections
+# Ensure each has in strategy_params: "hmm_regime_masking": true
+# Save and exit (ctrl+x, y, enter)
+docker restart stockbot
+curl http://localhost:8000/api/health
+# Should return: {"status":"ok","sessions":2}
+```
+
+**Option B — Add Orchestrator Public Key (2-3 minutes)**:
+```bash
+# On local machine, copy orchestrator public key:
+cat /home/awank/.ssh/id_ed25519.pub
+
+# Then SSH to Jetson with your own credentials and append to authorized_keys:
+ssh ubuntu@100.120.18.84
+nano ~/.ssh/authorized_keys
+# Paste the ED25519 key at the end, save and exit
+```
+
+**Consequence of inaction**: May 22 20:00 UTC checkpoint executes with Lever A only. Lever B HMM regime masking testing is defeated, negating the purpose of this checkpoint phase.
+
+### 📋 Other Items Needing User Action (not urgent)
+
+**By May 25** (re-synthesis execution):
+- resistance-research: Fill `wave-1-signal-log-may18-21.md` with any May 20-21 response data collected
+
+**By May 30** (Phase 3 implementation):
+- seedwarden: Three decisions required:
+  - Scope (Option A: 5 bundles, Option B: 2 writers, Option C: 3 bundles recommended)
+  - Goldenseal sourcing (Path 1: NativeWildflowers, Path 2: Wikimedia CC)
+  - Canva palette (confirm hex codes or defer to June 15)
+
+**By June 1** (multi-project sequencing):
+- systems-resilience: Wave 2 sequencing vs. Phase 6 execution order (can run independently)
+- open-repo: Phase 5.1 activation approval (extraction + thermal testing)
+- General: June resource allocation (hours/week for Wave 2 vs Phase 6 vs other projects)
+
+**Session Summary**:
+- Wall-clock: ~50 min (state audit + queue refresh + logging)
+- Outcome: Zero autonomous work; critical deadline reconfirmed
+- Next window: May 23 (if SSH resolves) or May 25 (synthesis execution)
+
+---
+
 ## Session 1504 — ORCHESTRATOR: PHASE 6 RESEARCH COMPLETE + CRITICAL DEADLINE MONITORING (May 22, 02:27–03:20 UTC)
 
 **Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~10 hours remaining)** | ✅ **Phase 6 Research Complete**
