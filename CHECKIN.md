@@ -13489,3 +13489,67 @@ docker restart stockbot
 
 ---
 
+
+---
+
+## Since Last Check-in (May 22, 12:37–12:47 UTC — Session 1569)
+
+**⚠️ CRITICAL ESCALATION: Jetson Connectivity Failure**
+
+**Timeline**: Session 1569 (12:47 UTC, ORCHESTRATOR AUTONOMOUS SESSION)
+
+### 🔴 CRITICAL FINDING
+
+**Jetson Network Unreachable** — Status escalation from auth failure to network timeout:
+
+**Previous Status** (Session 1558, 11:08 UTC): SSH auth failure → "Permission denied (publickey,password)"
+
+**Current Status** (Session 1569, 12:47 UTC):
+```
+Command: ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s ...'
+Result: "Connection timed out"
+```
+
+**Interpretation**: 
+- Jetson is **NOT reachable on network** (not just auth failure)
+- Possible causes:
+  1. Jetson power off or rebooted since Session 1558 (11:08 UTC)
+  2. Tailscale disconnected or down
+  3. Network interface issue
+  4. SSH port blocked
+
+**Impact on Checkpoint**:
+- **Deadline**: 13:30 UTC (43 min remaining to diagnose/fix Jetson)
+- **May 22 20:00 UTC Checkpoint**: CANNOT execute without Jetson access
+- **Trading Engine**: Status UNKNOWN (may be down; cannot verify if running)
+
+### Immediate Actions (by 13:30 UTC)
+
+**Priority 1 — Diagnose Jetson**:
+1. Check physical power/network on Jetson (is it on? Is network connected?)
+2. Check Tailscale: `tailscale status` (is Tailscale running and connected to 100.120.18.84?)
+3. Try direct network ping: `ping 100.120.18.84` (is IP reachable at all?)
+
+**Priority 2 — If Jetson is reachable**:
+- SSH manually: `ssh ubuntu@100.120.18.84`
+- Fix Lever B HMM config (see Option B in previous check-in section)
+- Restart engine: `docker restart stockbot`
+
+**Priority 3 — If Jetson cannot be reached**:
+- Checkpoint will execute at 20:00 UTC with **Lever A fallback** (same as May 19)
+- Lever C recovery roadmap will activate May 23 (post-checkpoint)
+
+### Autonomous Actions Taken
+
+✅ Escalated BLOCKED.md stockbot entry with network timeout status
+✅ Logged Session 1569 findings to WORKLOG.md
+✅ This escalation message added to CHECKIN.md "Needs Your Input"
+
+### System Status
+
+🔴 **CRITICAL**: Jetson unreachable — blocking checkpoint verification  
+⏳ **Agents Running**: resistance-research Domain 59 + seedwarden Track B Gate 1 (running; results expected ~12:40–13:00 UTC)  
+⏰ **Checkpoint**: 20:00 UTC (7h remaining; may execute with Lever A fallback if Jetson not accessible)
+
+**Next autonomous check**: Will monitor for subagent completion and log results to WORKLOG.md
+
