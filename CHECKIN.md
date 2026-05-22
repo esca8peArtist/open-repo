@@ -1,3 +1,51 @@
+## Session 1559 — ORCHESTRATOR: SSH Escalation + Queue Expansion (May 22, 11:08 UTC)
+
+**Status**: ✅ **Hold pattern CONFIRMED** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 21MIN)** | ✅ **SSH block RE-VERIFIED FAILING** | ✅ **Exploration Queue expanded** | ⏰ **Checkpoint 20:00 UTC (8H 52MIN)**
+
+**What was accomplished**:
+1. **SSH auth re-verification** (11:08 UTC):
+   - Executed: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health'`
+   - Result: `Permission denied (publickey,password)` (3 retries) — orchestrator key NOT authorized on Jetson
+   - Block status: STILL FAILING, CRITICAL, deadline in 2H 21M
+
+2. **BLOCKED.md escalation** (11:08 UTC):
+   - Updated stockbot SSH block entry with final escalation marker + time stamp
+   - Committed BLOCKED.md on master: `53caf42b` ("CRITICAL SSH deadline final verification (2H 21M remaining)")
+   - Discord notification attempted (webhook URL not set in environment)
+
+3. **Exploration Queue expansion** (added 3 forward-looking items):
+   - **Item 33**: stockbot Post-Gate-2 Long-Term Architecture (June 15 deadline, post-Gate-2-PASS planning)
+   - **Item 34**: resistance-research Phase 3 Implementation Roadmap (July 1 deadline, post-Phase-2 planning)
+   - **Item 35**: seedwarden Phase 4 Botanical Content & Practitioner Tiers (August 1 deadline, post-Phase-3 planning)
+   - **Rationale**: All current projects blocked; immediate queue has 1 item (Item 25); protocol requires 2-3 new items when queue <3
+
+4. **Post-checkpoint execution staging verified**:
+   - Items 35a/35b/35c (original) remain queued for May 22 20:00 UTC
+   - Items 33/34/35 (new) queued for June 1+ (after checkpoint outcome and immediate post-checkpoint actions complete)
+
+**CRITICAL DEADLINE (2H 21MIN REMAINING)**:
+User must either:
+- **Option A** (<5 min): Add orchestrator ED25519 public key to Jetson `~/.ssh/authorized_keys`
+- **Option B** (~5-10 min): SSH manually + edit `/opt/stockbot/config/active-sessions-2session.json` + `docker restart stockbot`
+- **If NOT fixed by 13:30 UTC**: May 22 20:00 UTC checkpoint executes with Lever A config (same as May 19 STILL_MISS_B2 outcome, defeating Lever B test purpose)
+
+**Project status** (all blocked, unchanged):
+- **stockbot**: SSH auth blocker (deadline 13:30 UTC) — Lever B test at risk
+- **resistance-research**: TOO_EARLY contingency — May 25/28 re-synthesis
+- **cybersecurity-hardening**: VeraCrypt restart pending
+- **mfg-farm**: Test print pending
+- **seedwarden**: Track A blocked; Track B gates May 23-28
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (Items 35a/35b/35c execution)
+
+**Needs your input**:
+- **URGENT (before 13:30 UTC)**: SSH fix — see options above
+- **May 25 18:00 UTC**: Signal log fill status (`grep -c '\[fill\]'` should return 0)
+- **May 30**: Seedwarden Phase 3 scope decisions (Option A/B/C)
+- **Post-checkpoint (May 23 morning)**: stockbot Gate 2 decision (expansion, Option B1, defer)
+
+---
+
 ## Session 1558 — ORCHESTRATOR: Final SSH Auth Verification + Hold Pattern Confirmed (May 22, 11:02 UTC)
 
 **Status**: ✅ **Hold pattern CORRECT** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 28MIN)** | ✅ **SSH block VERIFIED STILL FAILING** | ⏰ **Checkpoint 20:00 UTC (8H 58MIN)**
