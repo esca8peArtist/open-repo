@@ -12346,3 +12346,58 @@ Current session: ~200K tokens (Item 65 framework + 2 Phase 3 research docs via p
 - **Next autonomous action**: Post-deadline routing (May 22 14:00 UTC+)
 
 ---
+
+---
+
+## Since Last Check-in (Session 1530 → 1531)
+
+**Date**: May 22, 2026, 07:25 UTC (Orchestrator Session 1531 — FINAL PRE-CHECKPOINT VERIFICATION)
+
+### Session Status Summary
+
+**Status**: Hold pattern maintained. No autonomous work available. System correctly positioned for May 22 13:30 UTC checkpoint execution.
+
+### Critical Deadline Reconfirmed
+
+**Stockbot Lever B HMM Config — DEADLINE TODAY 13:30 UTC (6h 5m remaining)**
+- **Current status**: SSH auth still FAILING (`Permission denied (publickey)`)
+- **Jetson connectivity**: ✅ Reachable (ping 10.4 ms RTT)
+- **SSH requirement**: User must add orchestrator public key to Jetson authorized_keys, OR manually SSH and run 5-minute config fix
+- **Failure impact**: If not fixed by 13:30 UTC, May 22 checkpoint runs with Lever A config (repeat of May 19 STILL_MISS_B2 failure)
+- **Fix location**: See BLOCKED.md stockbot block for exact commands
+
+### Block Status Verification (All Verified Unchanged)
+
+1. **stockbot SSH auth** — Still failing, requires user action. ⚠️ CRITICAL DEADLINE 13:30 UTC TODAY
+2. **resistance-research synthesis** — TOO_EARLY contingency activated (no action until May 25 re-synthesis)
+3. **cybersecurity-hardening** — Manual Windows restart required (VeraCrypt pre-boot test)
+4. **mfg-farm** — Test print execution required (no results yet)
+
+### Active Blocks Requiring User Action
+
+**URGENT (6h 5m remaining)**:
+- **stockbot SSH**: Fix SSH auth by 13:30 UTC today. Verify command: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+
+**May 25 deadline**:
+- **resistance-research signal log**: Fill `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` with May 20-21 response data (partial fill acceptable; re-synthesis will run May 25 with all available data)
+
+**No current autonomous work** — System correctly awaiting:
+1. Stockbot SSH fix (user action, deadline 13:30 UTC)
+2. May 22 20:00 UTC checkpoint outcome (routes to Phase 2 synthesis, Lever B scaling, or recovery scenarios)
+
+### Next Autonomous Window
+
+**May 22, 20:00 UTC post-checkpoint** — Orchestrator will resume autonomous work based on checkpoint outcome:
+- **If PASS**: Activate Lever B scaling decision, Phase 2 synthesis if pending
+- **If FAIL**: Execute Lever C recovery roadmap analysis
+- **If NEAR-MISS**: Conditional Lever C evaluation per decision matrices
+
+### All Orchestration Files Updated
+
+- ✅ BLOCKED.md — All blocks verified current
+- ✅ PROJECTS.md — All project status current  
+- ✅ INBOX.md — No new items
+- ✅ WORKLOG.md — Session 1531 logged
+- ✅ CHECKIN.md — Current section written
+
+**Commit timestamp**: May 22, 2026, 07:25 UTC
