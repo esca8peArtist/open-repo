@@ -1,3 +1,24 @@
+## Session 1568 (May 22, 12:29 UTC) — ORCHESTRATOR: Agent Completion Window + SSH Deadline ~1H + Checkpoint Ready
+
+**Status**: 🔴 **SSH DEADLINE CRITICAL (1H 1M REMAINING)** | 🚀 **Two agents completing** (Domain 59 + Track B Gate 1, ~6-11 min expected) | ⏰ **Checkpoint 20:00 UTC (7H 31M)**
+
+**CRITICAL: User Action Required by 13:30 UTC (~1 hour)**:
+- **SSH authorization STILL FAILING** — Orchestrator key not authorized on Jetson
+- **Option A** (recommended, 5 min): `cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'`
+- **Option B** (10 min): SSH manually + run 5-min config fix (full commands in BLOCKED.md)
+- **If NOT fixed by 13:30 UTC**: Checkpoint defaults to Lever A config (same as failed May 19 attempt)
+
+**What was verified** (Session 1568, 12:29 UTC):
+1. Hold pattern CONFIRMED CORRECT — zero autonomous work available
+2. Both agents spawned 53 minutes ago — expected completion ~12:35 UTC (within 10 min)
+3. SSH auth block STILL FAILING — same error as Session 1567
+4. All 4 blocks unchanged; Exploration Queue Items 35a/35b/35c staged for post-checkpoint
+5. Critical path: SSH fix by 13:30 UTC; checkpoint execution 20:00 UTC
+
+**Decision**: Hold pattern maintained. Awaiting agent completion and critical user SSH action.
+
+---
+
 ## Session 1567 (May 22, 12:20 UTC) — ORCHESTRATOR: SSH Deadline Window + Parallel Agents Monitoring + Checkpoint Imminent
 
 **Status**: 🔴 **SSH DEADLINE CRITICAL (1H 10M REMAINING)** | 🚀 **Two agents active** (Domain 59 + Track B Gate 1) | ⏰ **Checkpoint 20:00 UTC (7H 40M)**
