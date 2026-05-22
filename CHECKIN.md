@@ -2,44 +2,71 @@
 
 **Status**: ✅ **Checkpoint executed autonomously at 20:00 UTC May 22** | ⏳ **Outcome retrieval FAILED (3 retry timeouts)** | 🔴 **Jetson unreachable since 14:00 UTC; awaiting user SSH verification** | 📋 **Agent limit active until May 26 06:00 UTC** | 🎯 **Critical user actions due May 22-24**
 
-**Work Completed This Session**:
+**Since Last Check-in**:
 
-1. **Orientation** (21:59 UTC):
-   - Read ORCHESTRATOR_STATE.md (auto-generated at 21:59:16 UTC, Session 1606 final state)
-   - Verified commit 2ab6878c (Session 1613) is latest on master
-   - Confirmed checkpoint execution at 20:00 UTC May 22 (autonomous systemd timer on Jetson)
-   - Confirmed all 3 outcome retrieval retries FAILED (20:20, 20:35, 20:50 UTC) — Jetson API endpoint timeout
+1. **May 22 Checkpoint Execution** — ✅ **SUCCESS** (autonomous systemd timer):
+   - Executed at 20:00 UTC May 22 as scheduled
+   - Trading engine healthy: 2 sessions (AAPL lgbm_ho + AAPL ridge_wf), $115K equity
+   - Lever A configuration (Lever B deployment deadline missed at 13:30 UTC)
+   - **CRITICAL BLOCKER**: All 3 outcome retrieval retries failed (20:20, 20:35, 20:50 UTC)
+   - Jetson API endpoint (`http://100.120.18.84:8000/api/health`) unreachable for 7+ hours
+   - Outcome metrics (AAPL sells, round trips, equity, fills) generated on Jetson but cannot be queried
 
-2. **Active Block Status**:
-   - **stockbot**: Checkpoint executed ✅; outcome uncertain due to Jetson unreachability
-     - Impact: Cannot classify PASS/NEAR-MISS/FAR-MISS without outcome retrieval
-     - Depends on: User SSH verification to Jetson (can you reach `ssh ubuntu@100.120.18.84`?)
-     - Decision gate: May 26 06:00 UTC (agent limit reset) or immediate user action
-   - **resistance-research**: Domain 56 Tier 2 ready for user execution
-     - Timeline: Fill name/contact info + send 4 emails by May 24 (~45 min)
-     - Documents: `DOMAIN_56_TIER2_READINESS_MAY22.md`, email templates in `execution/`
-   - **cybersecurity-hardening**: Phase 1.3 VeraCrypt restart required (user action)
-   - **mfg-farm**: Test print execution required (user action)
+2. **What You Need to Do (URGENT)** — **User Actions to Unblock Stockbot Phase 2**:
+   
+   **Immediate Action (May 22-23)**:
+   ```bash
+   # Test 1: Can you SSH into Jetson?
+   ssh ubuntu@100.120.18.84 "curl -s http://localhost:8000/api/health" | head -20
+   
+   # Test 2: If reachable, retrieve checkpoint metrics
+   ssh ubuntu@100.120.18.84 "python /opt/stockbot/scripts/may22_outcome_classifier.py"
+   
+   # Test 3: Determine outcome classification (PASS/NEAR-MISS/FAR-MISS)
+   # and report back with the result
+   ```
+   
+   If you cannot reach Jetson via SSH, the issue is network/power — check:
+   - Is Jetson powered on?
+   - Can you reach it on the tailscale network (100.120.18.84)?
+   - Any thermal throttling or restart cycles?
 
-3. **Autonomous Work Assessment**:
+3. **Autonomous Work Completed This Session**:
    - ✅ systems-resilience: Phase 5 Wave 2 microgrids research **COMPLETED** (21:09 UTC, Session 1606)
    - ✅ resistance-research: Phase 2 activation checklist **COMPLETE** (staged ready)
    - ✅ seedwarden: Track B gates guide **COMPLETE** (staged ready)
-   - ⏸ All other projects: awaiting external dependencies or user approval
-   - **Conclusion**: No additional autonomous work available; hold pattern confirmed
+   - No additional autonomous work available (agent limit active)
 
-4. **Constraints**:
-   - Agent limit: Hard-enforced until May 26 06:00 UTC (per memory notes)
-   - Jetson accessibility: Single blocker for 3 post-checkpoint decision paths
-   - User actions: 4 critical actions due by May 24-28 (resistance-research, seedwarden, cybersecurity, mfg-farm)
+4. **Active Project Blocks** (awaiting user action):
+   - **stockbot** (Priority 1): Jetson verification → determines Phase 2 activation path
+   - **resistance-research** (Priority 2): Domain 56 Tier 2 execution by May 24 (~45 min)
+   - **cybersecurity-hardening** (Priority 3): VeraCrypt restart needed for Phase 1.3
+   - **mfg-farm** (Priority 4): Test print execution (0.20mm, PLA+, 3 walls, 220–225°C)
 
-**Critical Timeline** (unchanged from Session 1613):
-- **May 22-24**: Domain 56 Tier 2 execution (deadline May 24 for June 1-30 legislative window)
-- **May 23-28**: Seedwarden Track B gates (May 30 launch target)
-- **May 25 18:00 UTC**: Signal log completion (resistance-research synthesis prerequisite)
-- **May 26 06:00 UTC**: Agent limit reset; next autonomous work window begins
+**Your Action Checklist** (prioritized by deadline):
 
-**Session Decision**: Hold pattern confirmed. No new autonomous work initiated. Proceeding to commit orchestration files per session protocol.
+| Action | Deadline | Owner | Time | Blocker For |
+|--------|----------|-------|------|------------|
+| **1. SSH to Jetson; retrieve May 22 checkpoint outcome** | May 22-23 | You | 5-10 min | Stockbot Phase 2 (scaling/Lever C) |
+| **2. Domain 56 Tier 2 emails (fill name/contact, send 4)** | May 24 | You | 45 min | June 1-30 legislative window |
+| **3. Seedwarden Track B Gate 1 (social account setup)** | May 23-24 | You | 45-60 min | May 30 launch target |
+| **4. Seedwarden Track B Gate 2 (Canva Brand Kit)** | May 25-26 | You | 4-6 hrs | May 30 launch target |
+| **5. Seedwarden Track B Gate 3 (email + landing page)** | May 27-28 | You | 3-4.5 hrs | May 30 launch target |
+| **6. Signal log completion** | May 25 18:00 UTC | You | 30-60 min | May 25 re-synthesis |
+| **7. VeraCrypt restart** | Anytime | You | 10 min | Cybersecurity Phase 1.4+ |
+| **8. Test print execution** | May 22-23 | You | 2-4 hrs | Mfg-farm launch sequence |
+
+**Hold Pattern Active** — No orchestrator work available until:
+- User provides Jetson outcome → enables stockbot post-checkpoint work (May 23)
+- OR May 26 06:00 UTC agent limit reset (if Jetson remains unreachable)
+
+**Suggested Priority Order**:
+1. SSH to Jetson and retrieve May 22 outcome (SAME SESSION if possible — 5 min)
+2. Domain 56 emails by EOD tomorrow (May 23) — unlocks June 1 legislative deadline
+3. Seedwarden gates May 23-28 — paced to May 30 launch
+4. Signal log by May 25 — enables May 25 re-synthesis
+
+**Committed**: Session 1614 orchestration files (db91639d)
 
 ---
 
