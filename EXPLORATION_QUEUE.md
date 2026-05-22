@@ -249,6 +249,37 @@
 **Status**: Completed May 22 (Session 1504, 02:27–03:20 UTC). File: `phase-6-meshtastic-lora-mesh-networking.md` (9,800 words, 30 sources).
 **Key findings**: Meshtastic 915 MHz ($30–60/node) is lowest-cost, highest-resilience option for community text comms with zero infrastructure. 25-household network: ~$2,520 all-in. Hardware hierarchy: Heltec V3 (evaluation), T-Beam Supreme (mobile), RAK WisBlock (fixed solar). LiFePO4 batteries critical for Zone 5 winter (-20°C). MeshCore is alternative for 100+ node networks (64-hop routing). Kiwix bridge enables text queries across mesh from ZIM server. Positioned as Layer 2 in three-layer (GMRS/Meshtastic/HF shortwave) stack.
 
+### 30. ⏳ resistance-research — Post-Synthesis Phase 2 Batch 1 Activation Plan (Session 1505 — Added May 22)
+**Scope**: May 25 synthesis execution (whether STRONG/MODERATE/WEAK/TOO_EARLY outcome) triggers Phase 2 Batch 1 distribution planning. Pre-stage activation runbook for each outcome path.
+- **Deliverables**: 
+  - Distribution execution checklist (timeline, email sequences, Gist upload, contact stratification by synthesis outcome)
+  - May 28 distribution schedule (if TOO_EARLY path confirmed)
+  - June 1-5 Phase 2 Wave 2 decision readiness (Domain 56 + 39 distribution completion + Domains 57-59 scope confirmation)
+- **Owner**: resistance-research subagent
+- **Deadline**: May 25 19:00 UTC (post-synthesis, ready for immediate execution)
+
+### 31. ⏳ seedwarden — May 30 Gate Decision Package (Session 1505 — Added May 22)
+**Scope**: Track B June 22 launch deadline requires three user decisions by May 30: (1) Phase 3 implementation scope (Option A: 5 bundles, B: 2 writers, C: 3 bundles recommended), (2) Goldenseal sourcing (Path 1: NativeWildflowers, Path 2: Wikimedia CC), (3) Canva designer scope. Pre-stage decision matrix, vendor feedback compilation, and implementation roadmaps for all 10 option combinations.
+- **Deliverables**: 
+  - Updated Phase 3 Decision Matrix (cost/revenue/timeline for all combinations)
+  - Vendor feedback & pricing summary (suppliers queried May 22, responses due May 28-30)
+  - Three implementation roadmaps (one per scope option, detailed weekly timeline)
+  - Designer quote comparison (if multiple candidates, highlight tradeoffs)
+  - Go/No-Go scorecard for May 30 decision meeting
+- **Owner**: seedwarden subagent
+- **Deadline**: May 28 (vendor responses collected + analysis complete before May 30 decision)
+
+### 32. ⏳ Multi-Project Decision Readiness (June 1) (Session 1505 — Added May 22)
+**Scope**: June 1 is decision window for 3+ projects (systems-resilience Phase 5 Wave 2 vs Phase 6 sequencing, open-repo Phase 5.1 activation approval, general resource allocation). Pre-stage decision frameworks, timeline impact analysis, and sequencing alternatives.
+- **Deliverables**: 
+  - Wave 2 vs Phase 6 execution order analysis (resource conflict analysis, sequential vs parallel feasibility, June 1–July 15 timeline impact)
+  - Phase 5.1 activation checklist (extraction, thermal testing, pre-deployment validation — June 1-15 readiness)
+  - June resource allocation framework (hours/week for Wave 2, Phase 6, open-repo, other projects)
+  - Multi-project critical path (which decisions block which subsequent work)
+  - Post-May-22-checkpoint stockbot decision execution tree (if Gate 2 PASS, June 1-15 options; if FAIL, rapid recovery plan)
+- **Owner**: orchestrator + project-appropriate subagents (systems-resilience, open-repo, stockbot)
+- **Deadline**: May 30 (complete before June 1 decision window)
+
 ---
 
 ## Queue Management Rules
