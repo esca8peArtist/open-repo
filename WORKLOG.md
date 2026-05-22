@@ -9877,3 +9877,28 @@ Of these, farm equipment repair and mesh networking/microgrid are executable NOW
 - CHECKIN.md update: 1 min
 - Total: 13 min
 - **Net result**: Confirmed system in correct hold pattern, all pre-checkpoint work complete, ready for post-deadline routing
+
+---
+
+## Session 1524 (May 22, 06:30–06:45 UTC) — Final Pre-Deadline Verification
+
+**Orchestrator Status**: Hold pattern verified, SSH auth block confirmed still active
+
+**Verifications Completed**:
+- Jetson connectivity: ✅ Reachable (ping 100.120.18.84 OK)
+- Orchestrator ED25519 key: ✅ Key exists at /home/awank/.ssh/id_ed25519
+- SSH auth status: ❌ Key NOT authorized on Jetson (`Permission denied (publickey,password)`)
+- BLOCKED.md: ✅ All 4 active blocks reviewed and current
+- PROJECTS.md: ✅ All project status current
+- INBOX.md: ✅ No new items
+- System state: ✅ No autonomous work available (hold pattern is correct)
+
+**Critical Deadline**:
+- **Today 13:30 UTC** (~7 hours remaining): Stockbot Lever B HMM config must be activated
+- **User action required**: Either add orchestrator public key to Jetson authorized_keys, OR SSH manually and run 5-min config fix
+- **Failure impact**: May 22 checkpoint uses Lever A config (repeat of failed May 19), defeating Lever B testing
+
+**Decision**: No autonomous action available. System correctly in hold pattern. CHECKIN.md updated with urgent action items. All orchestration files committed.
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint
+

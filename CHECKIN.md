@@ -1,42 +1,26 @@
-## Session 1523 — ORCHESTRATOR: HOLD PATTERN VERIFIED + COUNTDOWN RECONFIRMED (May 22, 06:23–06:35 UTC)
+## Session 1524 — ORCHESTRATOR: FINAL VERIFICATION BEFORE DEADLINE (May 22, 06:30–06:45 UTC)
 
-**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~7H 7MIN)** | ✅ **All systems verified, zero new blockers** | ✅ **Pre-checkpoint work 100% complete** | **Awaiting user action + checkpoint outcome**
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~7 HOURS)** | ✅ **All systems verified** | ✅ **Pre-checkpoint work 100% complete** | **AWAITING URGENT USER ACTION**
 
 **What was accomplished**:
-- Full orientation verification: ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, EXPLORATION_QUEUE.md reviewed
-- Confirmed all 4 active blocks (stockbot SSH, resistance-research synthesis TOO_EARLY, cybersecurity-hardening VeraCrypt, mfg-farm test print) remain user-action dependent
-- Verified SSH auth block still active: ED25519 public key NOT authorized on Jetson; connection fails with "Permission denied (publickey,password)"
-- Confirmed no autonomous work available in current 7-hour window — hold pattern is correct and system in expected state
-- Verified no new INBOX items
+- Final pre-deadline verification: SSH connectivity to Jetson confirmed (ping OK), orchestrator ED25519 key still NOT authorized
+- Confirmed SSH auth block remains active: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84` returns "Permission denied (publickey,password)"
+- Verified all 4 active blocks unchanged: stockbot SSH (CRITICAL), resistance-research synthesis TOO_EARLY, cybersecurity-hardening VeraCrypt, mfg-farm test print
+- Confirmed no autonomous work available — hold pattern is correct
+- All orchestration files current
 
-**Critical Deadline Reconfirmed**:
-- **TODAY by 13:30 UTC (7 hours 7 minutes)**: Stockbot SSH auth must be fixed for Lever B testing
-- Option A (recommended): Add orchestrator ED25519 public key to Jetson authorized_keys: `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPO0YPqQl2woxThwe/aS7+Z8UUA4PpVE/i69g2kEdJwV pi-stockbot`
-- Option B (fallback): SSH manually and run 5-min config fix (BLOCKED.md lines 76-101)
-- **Failure impact**: May 22 checkpoint uses Lever A config, repeat of May 19 STILL_MISS_B2 outcome, defeating Lever B testing purpose
-- **Verify after**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
-
-**System Status** (Session 1523):
-- ✅ All orchestration files current and verified
-- ✅ Pre-checkpoint work 100% complete (Exploration Queue items 1-29)
-- ✅ Post-checkpoint routing playbooks pre-written and staged
-- ✅ No autonomous blockers or work available — correct state
-- 🔴 **Awaiting**: (1) User SSH auth fix by 13:30 UTC TODAY, (2) May 22 checkpoint outcome, (3) May 25 synthesis outcome
-
-**Next autonomous action**: May 22 20:00 UTC post-checkpoint (routing determined by checkpoint outcome)
-
-### ⚠️ **Needs Your Input — CRITICAL (by 13:30 UTC TODAY)**
-
-**Stockbot SSH Auth Fix** (cannot be resolved autonomously):
-- **Time remaining**: ~7 hours until checkpoint
-- **Impact if missed**: May 22 checkpoint uses Lever A config (same as failed May 19), defeating Lever B testing
-- **Choose one**:
-  1. **Option A (recommended)**: Add this key to `~/.ssh/authorized_keys` on Jetson:
+**🔴 CRITICAL ACTION REQUIRED — CANNOT DELAY**:
+- **TODAY by 13:30 UTC** (approximately 7 hours from 06:30 UTC): Stockbot SSH auth must be fixed
+- **Impact if missed**: May 22 checkpoint executes with Lever A config (identical to failed May 19 test), defeating entire Lever B testing objective
+- **What needs to happen** — choose ONE:
+  1. **Option A (recommended)**: Add orchestrator public key to Jetson authorized_keys:
      ```
      ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPO0YPqQl2woxThwe/aS7+Z8UUA4PpVE/i69g2kEdJwV pi-stockbot
      ```
-  2. **Option B (quick)**: SSH manually and run commands from BLOCKED.md lines 76-101 (5 min)
-- **Verify afterwards**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+  2. **Option B**: SSH manually to `ubuntu@100.120.18.84` and execute config fix from BLOCKED.md lines 76-101 (5 min total)
+- **Verification after fix**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` should return OK
+
+**Next checkpoint**: May 22 20:00 UTC (automated, no orchestrator action needed)
 
 ---
 

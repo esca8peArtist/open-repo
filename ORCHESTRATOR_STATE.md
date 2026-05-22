@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-22T05:42:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-22T06:30:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 0.3% (180,998 tokens) | All-models 5.3% | Reset in 90h | check: claude.ai → Settings → Usage & billing
@@ -95,8 +95,8 @@
 **Resolution**: [leave blank]
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (71 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 1498 (18 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 1445 (78 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 1498 (25 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked ← 2026-05-21 ~19:15 UTC (Session 1471 — orchestrator autonomous fix)
 • open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
@@ -108,42 +108,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  - Supplier intelligence integrated: Prairie Moon spring-closed (out), MRH goldenseal/black cohosh unavailable, NativeWildflowers.net confirmed ($4.99–$5.99, immediate shipping)
-  - June 24 D3 pace gate identified as highest-stakes checkpoint (Women's Health >2,500 words by Day 3)
-  - All 5 bundles (Women's Health, Respiratory, Immunity, Sleep, Digestive) budgeted $218–$386 with fallback CC stock path
-  - Gantt timeline inline with Week 1/2/3 breakdowns, upload sequence June 29–August 3, 8-step upload checklist
-- **Deliverable 2**: `phase-3-timeline.csv` (76-row, Gantt-ready: task, start, duration, dependencies, float)
-- **Business value**: User decision on Phase 3 scope by May 30 now data-driven; zero ambiguity on timeline + resource allocation
 
-### ✅ Exploration Queue Item 32: open-repo Phase 5 Candidate 1 ZimWriter Verification (COMPLETE)
-- **Deliverable**: `phase-5-candidate-1-implementation-verification.md` (~1,700 words, 6 sections)
-- **Key findings**:
-  - **Verdict: Candidate 1 is feasible** — hard dependencies resolved, live verification on 2026-05-22
-  - libzim 3.10.0 confirmed: manylinux_2_28_aarch64 wheel, C++ core 9.7.0 bundled, 88-test suite passing
-  - Corpus quality verified: 10/10 random sample (seed 99) passing, 0/32 data quality issues across full corpus
-  - **Critical issue identified**: `config_indexing()` MUST be called BEFORE `with creator:` entry (not inside context) — docstring is wrong, will cause RuntimeError in libzim 3.9+
-  - Core activation: 2–4 hours; full implementation with tests/migration/PR: 8–11 hours
-  - Blocked gaps: (1) libzim absent from pyproject.toml (5 min fix), (2) _stub_write_placeholder() still active (1.5–2.5 hours fix), (3) zimcheck binary not installed (apt install zim-tools), (4) Migration 003 + ZimExport ORM absent (production need, not smoke test)
-- **Deliverable 2**: `phase-5-candidate-1-implementation-checklist.md` (copy-paste ready, 50+ checkboxes, durations per item)
-- **Business value**: User decision on Phase 5 direction by May 23–24 now fully informed with confidence level; implementation is immediately actionable once approved
+**Orientation Completed**:
+- ✅ ORCHESTRATOR_STATE.md (comprehensive state, priorities, recent activity)
+- ✅ BLOCKED.md (4 active blocks verified: stockbot SSH, resistance-research synthesis, cybersecurity-hardening VeraCrypt, mfg-farm test print)
+- ✅ INBOX.md (no new items)
+- ✅ PROJECTS.md (all projects reviewed for autonomous work)
+- ✅ EXPLORATION_QUEUE.md (full assessment completed)
+
+**Key Finding — Exploration Queue Status**:
+- **Items 1-29**: ✅ ALL COMPLETE (pre-staged, production-ready)
+  - 12 items (Sessions 1450-1455): architecture frameworks (Gate 2, multi-ticker, scaling, Phase 3, etc.)
+  - 5 items (Sessions 1457-1458): implementation roadmaps (sales, suppliers, marketing)
+  - 12 items (Sessions 1464-1489): specialized research (affiliate, vendor, disaster recovery, mesh networking, farm equipment)
+- **Items 30-32**: ⏳ DEFERRED for post-deadline execution
+  - Item 30: Post-synthesis Phase 2 activation (May 25 post-synthesis)
+  - Item 31: Seedwarden May 30 Gate Decision Package (May 22 start, May 28 completion)
+  - Item 32: Multi-project Decision Readiness (deadline May 30)
+
+**Correct State Verified**:
+- No autonomous unblocked work available in the 7h 40m window before May 22 13:30 UTC deadline
+- All top-priority projects genuinely blocked on user action (not on orchestrator work)
+- Exploration Queue properly staged: pre-checkpoint work complete, post-checkpoint work queued
+- **This is the expected hold pattern** — system is in correct state, awaiting deadline
+
+**Conclusion**:
+- ✅ Pre-checkpoint staging 100% complete (Items 1-29)
+- ✅ Decision frameworks ready (Items 31-32 will execute post-May-30-user-decisions)
+- ✅ Post-checkpoint routing playbooks pre-written (SYNTHESIS_OUTCOME_PLAYBOOKS.md, MAY_22_CHECKPOINT_DECISION_ROADMAP.md)
+- ✅ All blocks current and user-action-dependent
+- **Next action**: Commit orchestration files; maintain hold until May 22 13:30 UTC checkpoint outcome determines routing
+
+**Recommended for User**:
+1. **URGENT (by 13:30 UTC TODAY)**: Resolve stockbot SSH auth failure (5 min fix, commands in BLOCKED.md)
+2. **May 23+**: Post-checkpoint outcome determines routing (Item 30 if synthesis runs; Item 31 parallel with checkpoint contingencies)
 
 **Session Efficiency**:
-- Orientation: 3 min (verified blocks, identified 2 executable queue items)
-- Parallel agent execution: 8–10 min (both completed concurrently)
-- Commit + logging: 2 min
-- **Total: ~13 min wall-clock, 0 sequential wait**
-
-**Impact Assessment**:
-- ✅ Exploration Queue: Items 31–32 enhanced, both ready for user decision (May 23–30)
-- ✅ Queue capacity: 2 items complete; remaining queue items are staging (post-user-decision) or deferred (post-May-25 synthesis)
-- ✅ No blocking dependencies: All work was autonomous; no user action required for these deliverables
-
-**Critical Path Status**:
-- **Stockbot SSH deadline**: May 22 13:30 UTC — **user action required, no orchestrator resolution possible** (key not authorized on Jetson; user must either add key or manually SSH + run config fix)
-- **Next autonomous milestone**: May 25 re-synthesis (Phase 2 research activation dependent on signal log fill)
-- **User-decision gates**: Phase 3 scope by May 30, Phase 5 direction by May 23–24, Phase 2 outcome-dependent activation May 21/25
-
-**Recommended Next Steps for User**:
-1. **URGENT (by May 22 13:30 UTC)**: SSH auth fix for stockbot Lever B config (5 min, exact commands in BLOCKED.md)
-2. **May 23–24**: Review open-repo Phase 5 verification report + decide direction (Candidate 1 vs. others)
-3. **May 25–30**: seedwarden Phase 3 scope decision + resistance-research synthesis outcome response
+- Orientation + queue assessment: 12 min
+- CHECKIN.md update: 1 min
+- Total: 13 min
+- **Net result**: Confirmed system in correct hold pattern, all pre-checkpoint work complete, ready for post-deadline routing
