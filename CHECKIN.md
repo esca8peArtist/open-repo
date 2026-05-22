@@ -1,3 +1,20 @@
+## Session 1515 — ORCHESTRATOR: DOMAIN 56 DISTRIBUTION + SEEDWARDEN PHASE 3 AUDIT (May 22, 05:14–05:XX UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~8 HOURS)** | ✅ **Domain 56 Gist created + Tier 1 drafts ready** | ✅ **Seedwarden Phase 3 audit complete** | ✅ **Zero new blocks**
+
+**What changed**:
+- **Resistance-research Domain 56**: GitHub Gist created and publicly live (https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f). All template placeholders replaced. Five Tier 1 email drafts prepared and logged (awaiting user to fill name/email and send).
+- **Seedwarden Track B**: Phase 3 Medicinal Herbs critical path audit complete (v8.0 production-ready, no gaps found). Created `PHOTO_ATTRIBUTION_LOG.md` (eliminates zero-float June task). May 30 launch recoverable if user gates execute May 23–28.
+
+**What's next**:
+1. **🔴 TODAY by 13:30 UTC (8 HOURS REMAINING)**: Stockbot SSH auth fix — user action required (see "Needs Your Input" below)
+2. **ASAP after**: User fills sender credentials in Domain 56 email drafts and sends Tier 1 emails (5 emails over 24–48 hours)
+3. **May 23**: Seedwarden social account gates (Instagram, TikTok, Pinterest) — 45–60 min
+4. **May 24**: Seedwarden Canva Brand Kit — 30 min + 4–6 hrs zone cards
+5. **May 28**: Seedwarden Kit email + landing page — 3–4.5 hrs
+
+---
+
 ## Session 1514 — ORCHESTRATOR: PHASE 2 DISTRIBUTION AUDIT + CRITICAL DEADLINE CHECK (May 22, 04:54–05:XX UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~8.5 HOURS)** | ✅ **Phase 2 distribution execution-ready** | ✅ **Zero new blocks**
@@ -77,9 +94,48 @@
 
 **Needs Your Input**:
 
-### 🔴 **URGENT — Stockbot SSH Authorization** (Deadline: TODAY, 2026-05-22, 13:30 UTC — 9 HOURS REMAINING)
+### 🔴 **URGENT — Stockbot SSH Authorization** (Deadline: TODAY, 2026-05-22, 13:30 UTC — ~8 HOURS REMAINING)
 
 Your action: Either (A) add orchestrator's ED25519 public key to Jetson authorized_keys, OR (B) SSH manually and run 5-min config fix to add `"hmm_regime_masking": true` to `/opt/stockbot/config/active-sessions-2session.json`. See BLOCKED.md for exact commands. **This deadline is non-negotiable** — Lever B config must be deployed before May 22 checkpoint execution.
+
+**Orchestrator's ED25519 public key** (for option A):
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPO0YPqQl2woxThwe/aS7+Z8UUA4PpVE/i69g2kEdJwV pi-stockbot
+```
+
+### ✅ **Resistance-Research Domain 56 Email Sending** (Deadline: ASAP, recommended within 24h)
+
+Five Tier 1 emails are prepared and ready to send. 
+
+**Your action**:
+1. Open `projects/resistance-research/execution/domain-56-tier1-email-drafts-may22.md`
+2. Find-replace "SuperClaude Orchestrator" with your real name (1 instance per email)
+3. Find-replace "orchestrator@superclaude.local" with your real email address (1 instance per email)
+4. Send emails in order:
+   - **Email 1** → media@ourpublicservice.org (Partnership for Public Service) — Template 1
+   - **Email 2** → info@whistleblower.org (GAP) — Template 4
+   - **Email 3** → info@afge.org (AFGE) — Template 2
+   - **Email 4** → Protect Democracy contact form (https://protectdemocracy.org) — Template 4
+   - **Email 5** → nteu@nteu.org (NTEU) — Template 2
+5. Stagger sends over 24–48 hours (recommended: 1-2 per day)
+
+**Business value**: H.R. 492 (Civil Service Reform Act) legislative window June 1-30 is open for committee markup. Tier 1 contacts are decision-makers on this reform. Sends now ensure they see analysis before June committee process begins.
+
+**Time estimate**: 5 min credential fill + 15–20 min sending = 20–25 min total
+
+### ✅ **Seedwarden Track B Gates** (Deadline: May 23–28, essential for May 30 launch)
+
+All three user action gates are overdue but recoverable. Assets fully ready.
+
+| Gate | Due | Status | Time | Reference |
+|------|-----|--------|------|-----------|
+| **Gate 1: Instagram/TikTok/Pinterest** | May 18 | ❌ **4 days overdue** | 45–60 min | `TRACK_B_GATE_1_QUICK_REFERENCE.md` |
+| **Gate 2: Canva Brand Kit + zone cards** | May 24 | ⏳ Due in 2 days | 30 min + 4–6 hrs | `TRACK_B_CANVA_SETUP_AND_EXPORT_GUIDE.md` |
+| **Gate 3: Kit email + landing page** | May 28 | ⏳ Due in 6 days | 3–4.5 hrs | `TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md` |
+
+**Recovery path**: Execute Gate 1 TODAY (May 23), Gate 2 by May 24, Gate 3 by May 26–28. May 30 launch remains achievable if gates complete by May 28.
+
+**Critical timing**: If Gate 1 does not start by May 25, the May 30 launch slips to June 6.
 
 ### ✅ **Open-repo Phase 5.1 Activation Ready** (Next: Install dependencies + testing)
 
@@ -88,26 +144,29 @@ Your action: Either (A) add orchestrator's ED25519 public key to Jetson authoriz
 - **Estimated time**: 2–7 hours depending on scope
 - **User decision**: May 25–26 on Phase 5 direction (Candidate 1 RECOMMENDED for immediate merge)
 
-### ✅ **Resistance-Research Phase 2 Distribution Audit Complete** (Session 1514)
+### ✅ **Resistance-Research Phase 2 Distribution Unblocked** (Session 1515)
 
-**Status**: All four Phase 2 domains (56-59) distribution infrastructure verified and ready for execution.
+**Status**: Domain 56 Gist created + Tier 1 drafts ready. All four Phase 2 domains distribution execution active.
 
-- **Domain 56 (Civil Service Politicization)**: Infrastructure complete, **READY FOR GIST CREATION TODAY** (~10 min). H.R. 492 committee markup window still open (June 1-30). Tier 1 sends follow immediately after Gist creation.
-- **Domain 58 (Tribal Sovereignty)**: **Gist already created May 20** at https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f. Ready to send Tier 1 emails (June 5-10 window, OR within 72h of Trump v. Barbara ruling if issued). Fill `[YOUR_NAME]`, `[YOUR_CONTACT_INFO]`, `[DOMAIN_58_GIST_URL]` in email template.
+- **Domain 56 (Civil Service Politicization)**: ✅ **GIST CREATED MAY 22 05:XX UTC** at https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f. Five Tier 1 email drafts prepared in `projects/resistance-research/execution/domain-56-tier1-email-drafts-may22.md`. **Your action**: Fill sender name/email, then send 5 emails over 24–48 hours (see draft order: Partnership for Public Service first, then GAP, AFGE, Protect Democracy, NTEU).
+- **Domain 58 (Tribal Sovereignty)**: **Gist live since May 20** at https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f. Ready to send Tier 1 emails (June 5-10 window, OR within 72h of Trump v. Barbara ruling if issued). Fill `[YOUR_NAME]`, `[YOUR_CONTACT_INFO]`, `[DOMAIN_58_GIST_URL]` in email template.
 - **Domain 59 (Economic Precarity)**: Infrastructure complete, **action needed May 30** (create Gist, send Tier 1). Nebraska Medicaid work requirements live May 1 — timing acute for CBPP/Families USA.
 - **Domain 57 (Multilateral Withdrawal)**: No action until August 8 (distribution window: Aug 10, six weeks before UNGA 81).
 
-**Priority sequence** (from agent audit May 22):
-1. Now (May 22-23): Create Domain 56 Gist (10 min) + send 5 Tier 1 emails (~60 min) = **70 min total**
-2. May 25-31: Domain 56 Tier 2 (4 emails) + Tier 3 (2 emails), staggered
-3. May 30: Create Domain 59 Gist (10 min)
-4. June 1: Domain 59 Tier 1 sends (5 emails)
-5. June 5-10 (or 72h after Trump ruling): Domain 58 Tier 1 sends
-6. August 8: Domain 57 Gist creation; August 10 Tier 1 sends
+**Priority sequence** (updated May 22 Session 1515):
+1. ✅ **DONE**: Create Domain 56 Gist (May 22 05:XX UTC) — committed
+2. **NOW**: Send 5 Tier 1 emails (~60 min) — drafts ready, awaiting user to fill credentials and send
+3. May 25-31: Domain 56 Tier 2 (4 emails) + Tier 3 (2 emails), staggered
+4. May 30: Create Domain 59 Gist (10 min)
+5. June 1: Domain 59 Tier 1 sends (5 emails)
+6. June 5-10 (or 72h after Trump ruling): Domain 58 Tier 1 sends
+7. August 8: Domain 57 Gist creation; August 10 Tier 1 sends
 
-**Files** (Session 1514 audit):
+**Files** (Session 1515 updates):
+- Domain 56 Gist: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f (LIVE)
+- Tier 1 email drafts: `projects/resistance-research/execution/domain-56-tier1-email-drafts-may22.md`
 - Status checklist: `projects/resistance-research/phase-2-distribution-status-may22.md`
-- Gist registry: `projects/resistance-research/DISTRIBUTION_GIST_URLS.md` (updated with Domain 58 live URL)
+- Gist registry: `projects/resistance-research/DISTRIBUTION_GIST_URLS.md` (updated)
 
 ---
 
