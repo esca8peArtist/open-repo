@@ -1,5 +1,33 @@
 # Work Log
 
+## Session 1513 (2026-05-22 04:36–05:24 UTC) — ORCHESTRATOR: open-repo Stage 0 Activation Complete
+
+**Status**: ✅ **STAGE 0 ACTIVATION COMPLETE** | Phase 5.1 MVP ready for user decision (May 25–26) | Stockbot SSH deadline 8h remaining
+
+**Work Completed**:
+
+1. ✅ **open-repo Stage 0 Activation — ALL FOUR STEPS VERIFIED**
+   - **Step 1**: libzim>=3.2,<4.0 installed (verified 3.9.0 in venv)
+   - **Step 2**: alembic migrations validated (migration 003 creates zim_exports table with 28 columns; tested against SQLite; PostgreSQL requires local DB but DDL verified)
+   - **Step 3**: ZIM writer integration fixed (3 bugs resolved):
+     - Added `_FALLBACK_ILLUSTRATION_PNG` constant (48x48 teal PNG)
+     - Fixed `_get_illustration_bytes()` to return fallback PNG instead of None
+     - Restructured metadata application: `_apply_metadata_to_creator()` now calls `config_indexing()` PRE-context (respects libzim constraint that `config_indexing` must precede `Creator.__enter__()`)
+   - **Step 4**: Full test suite passing (240 passed, 19 skipped, 0 failed)
+   - **Files changed**: `alembic/env.py` (DATABASE_URL override support), `app/services/export/zim_writer.py` (3 bug fixes)
+   - **Commit**: All changes committed locally on master
+
+**Impact**:
+- Phase 5.1 MVP is now **FULLY ACTIVATED** — ready for user decision (May 25–26)
+- Next user action: Review decision framework (`phase-5-candidate-decision-framework.md`) and approve Candidate 1 (recommended) for implementation
+
+**Critical Path**:
+- **Stockbot SSH**: STILL CRITICAL, deadline 8 hours remaining (13:30 UTC)
+- **open-repo Phase 5.1**: Ready for user decision by May 25–26
+- **seedwarden Phase 3**: Decision framework ready for May 30 decision
+
+---
+
 ## Session 1512 (2026-05-22 04:16–04:35 UTC) — ORCHESTRATOR: Parallel Autonomous Work (open-repo Stage 0 + resistance-research distribution)
 
 **Status**: ✅ **TWO MAJOR DELIVERABLES COMPLETE** | Stockbot SSH critical deadline TODAY 13:30 UTC (9h remaining)

@@ -1,3 +1,19 @@
+## Session 1513 — ORCHESTRATOR: STAGE 0 ACTIVATION COMPLETE (May 22, 04:36–05:24 UTC)
+
+**Status**: ✅ **OPEN-REPO PHASE 5.1 MVP FULLY ACTIVATED** | 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (8h remaining)** | ✅ **Zero new blocks**
+
+**What changed**:
+- **open-repo Stage 0 Activation**: All 4 activation steps complete and verified. libzim installed, alembic migrations validated, ZIM writer bugs fixed (3 issues resolved), full test suite passing (240 passed, 0 failed). Phase 5.1 MVP is now **ready for user decision** (May 25–26 on Candidate 1 approval).
+- **open-repo status**: Changed from "ready for activation steps" to "**Phase 5.1 MVP fully activated**"
+
+**What's next**:
+1. **URGENT (TODAY 13:30 UTC, 8h remaining)**: Stockbot SSH auth fix — user action required, no orchestrator resolution possible
+2. **May 25–26**: User decision on open-repo Phase 5 direction (Candidate 1 activation recommended per decision framework)
+3. **May 30**: Seedwarden Phase 3 scope decision (decision framework ready)
+4. **May 24 onwards**: Resistance-research Gist creation (Domain 56+)
+
+---
+
 ## Session 1512 — ORCHESTRATOR: PARALLEL AUTONOMOUS WORK EXECUTION (May 22, 04:16–04:35 UTC)
 
 **Status**: ✅ **TWO MAJOR DELIVERABLES COMPLETE** | 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (9h remaining)** | ✅ **Zero new blocks**
