@@ -16,6 +16,8 @@
 - **SSH auth still FAILING** — Orchestrator key NOT authorized on Jetson
 - **May 22 20:00 UTC checkpoint at risk** — Config fix MUST happen within 23 minutes OR checkpoint executes with Lever A (repeats May 19 failure)
 
+**SESSION 1571 STATUS**: Waiting for deadline (13:30 UTC, ~22 min remaining). Will automatically proceed post-deadline based on user action or timeout.
+
 **URGENT ACTIONS (do one immediately)**:
 - **Option A** (recommended, 5 min): Add orchestrator public key:
   ```bash
