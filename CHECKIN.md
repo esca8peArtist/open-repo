@@ -13553,3 +13553,27 @@ Result: "Connection timed out"
 
 **Next autonomous check**: Will monitor for subagent completion and log results to WORKLOG.md
 
+
+### Final Status (12:57 UTC)
+
+**SSH Status Confirmed**: ✅ Jetson reachable, SSH daemon healthy, **auth failure root cause verified**:
+- Network: ✅ Ping OK, Tailscale active/direct
+- SSH daemon: ✅ Port 22 responding, handshake completes
+- Authorization: ❌ ED25519 key NOT in authorized_keys
+
+**Recovery Options** (both available now):
+- **Option A** (15 seconds): Add public key — `cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'`  
+- **Option B** (5 min manual): SSH with password auth, edit config, restart engine
+
+**Critical Timeline** (updated):
+- **13:30 UTC** (~30-35 min): SSH deadline (either option will work immediately)
+- **12:30–13:15 UTC**: Subagent completion window (Domain 59 + Track B Gate 1)
+- **20:00 UTC** (~7h): May 22 checkpoint execution
+
+**Autonomous Status**: Hold pattern maintained. All orchestration files committed. Awaiting:
+1. SSH fix from user (either option)
+2. Subagent completion + results logging
+3. Checkpoint execution at 20:00 UTC
+
+**System Health**: ✅ Stable. Infrastructure verified. All contingencies staged.
+
