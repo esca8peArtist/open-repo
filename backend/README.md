@@ -1,10 +1,10 @@
 # Open-Repo Backend
 
-**Status**: Phase 4 Complete - Federation Service Infrastructure with Partner Registration, HTTP Signatures, and Export Framework
+**Status**: Phase 5.1 Complete - ZimWriter libzim integration for offline export (ZIM/Kiwix)
 
-**Version**: 0.4.0
+**Version**: 0.5.0
 
-A full-stack FastAPI backend for the Open-Repo federated knowledge network. Phase 4 implements complete federation infrastructure including partner registration, HTTP signature verification, federation service layer, and export framework (ZimWriter + OPDS catalog) for offline distribution via Kiwix.
+A full-stack FastAPI backend for the Open-Repo federated knowledge network. Phase 5.1 delivers production-ready offline export via ZIM archives (readable by Kiwix on any device), building on Phase 4's federation infrastructure. Content items from any federated node can be exported to a single searchable offline file for use in disconnected environments.
 
 ## What's Implemented
 
@@ -328,30 +328,64 @@ Run all tests:
 uv run pytest tests/ -v
 ```
 
+## What's Complete
+
+### Phase 5.1 — Offline Export (ZIM/Kiwix)
+
+The export pipeline is production-ready:
+
+- **ZimWriter** (`app/services/export/zim_writer.py`): Generates valid `.zim` archives using python-libzim. Supports Xapian full-text indexing, federated attribution footers with sanitised HTML, and graceful fallback when libzim is unavailable. Produces archives compatible with Kiwix on Android, iOS, desktop, and kiwix-serve.
+- **OPDS 1.2 catalog** (`app/services/export/opds_generator.py`): Raw XML generation of a complete OPDS feed listing all published ZIM archives. Kiwix clients discover archives via this feed.
+- **zim_exports table** (migration 003): Tracks every ZIM export lifecycle (GENERATING → COMPLETE → SUPERSEDED). `ZimExport` ORM model in `app/models.py`.
+- **84 integration tests** in `tests/integration/test_export_pipeline.py` covering ZimWriter, OPDS, and the full export pipeline.
+
+### Phase 5.2 — Domain Content Modules (June–July 2026)
+
+Five domain-specific importer modules are in design. Each generates ZIM articles from structured source data:
+- Medical Reference (WHO Essential Medicines, ICRC First Aid)
+- Water Systems (WHO Drinking Water Guidelines, CDC disinfection)
+- Seed Preservation (GRIN accession data)
+- Food Safety (USDA Complete Guide to Home Canning)
+- Botanical Knowledge (USDA PLANTS database)
+
+See `PHASE_5.2_IMPLEMENTATION_ROADMAP.md` for the full schedule.
+
+### Installing libzim
+
+The export pipeline requires libzim 3.10.0+:
+
+```bash
+uv pip install "libzim>=3.10.0,<4.0"
+# Optional: install zimcheck for post-export validation
+sudo apt-get install zim-tools
+```
+
+The libzim pre-built wheel covers Python 3.10–3.14 on aarch64 (Raspberry Pi 5), x86_64, and macOS. No compiler or system C++ libraries required.
+
 ## Next Phases
 
-**Phase 5** (Offline Export & Kiwix Integration):
-- ✅ ZimWriter libzim integration (produces valid ZIM archives)
-- ✅ OPDS 1.2 catalog generation (Kiwix client discovery)
-- ✅ Xapian full-text indexing within ZIM files
-- HTTP server for CDN upload and scheduled export jobs
-- Kiwix Android/Desktop client compatibility verification
+**Phase 5.2** (Domain Content Coverage, June–July 2026):
+- Medical Reference, Water Systems, Seed Preservation, Food Safety, Botanical Knowledge importers
+- ~110 new unit + integration tests
+- Full multi-domain ZIM build and OPDS catalog update
+
+**Phase 5.3** (Federation, post-July 2026):
+- Peer-to-peer ZIM library sharing via signed manifests + multi-channel transfer
+- mDNS local library discovery
+- IPFS CID-addressed ZIM distribution
 
 **Phase 6+** (Advanced Federation & Scale):
 - ActivityPub outbox implementation (content propagation)
-- Cross-node conflict resolution improvements
-- Distributed backup and node resilience
 - DID-based identity and decentralized identity verification
+- Cross-node conflict resolution improvements
 
 ## Important Notes
 
-- **Phase 4 scope**: Full federation service layer with HTTP signature verification, partner registration, export framework (ZimWriter + OPDS stubs).
-- **Phase 5 pending**: ZimWriter libzim integration (currently uses stubs). OPDS feedgen migration (currently raw XML). These do not affect test suite — all 194 tests cover the public interface.
 - **Authentication**: Not implemented. All endpoints are public. DID-based auth planned for Phase 6.
 - **Database**: Uses async SQLAlchemy with asyncpg driver for PostgreSQL.
 - **JSON-LD**: Full JSON-LD objects are generated and stored with every item for federation compatibility.
 - **CID Format**: SHA256-based (`sha256-{hex}`). IPFS-compatible for future blob storage.
-- **Export Framework**: `ZimWriter` and `OPDSCatalogService` are complete class hierarchies with `libzim`/`feedgen` integration points marked `TODO(post-PR-merge)`.
+- **Export scope**: The export pipeline can produce LOCAL_ONLY, DOMAIN-scoped, or FULL library ZIM files depending on the ExportConfig.
 
 ## Development Guide
 
