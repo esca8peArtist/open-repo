@@ -31,8 +31,11 @@
 
 **Critical Timeline**:
 - **May 22, 20:00 UTC**: Checkpoint executes autonomously (Jetson cron)
-- **May 22, 20:15–20:35 UTC**: Outcome available; Items 35a-c execute
+- **May 22, 20:05 UTC**: **Scheduled orchestrator session fires** (via CronCreate job 90330af0)
+- **May 22, 20:05–20:35 UTC**: Outcome classification + Items 35a-c execution
 - **May 22, 21:00 UTC**: Post-checkpoint analysis complete; CHECKIN.md updated with decision routing
+
+**Session 1578 Conclusion**: All state committed. Jetson block unresolved; checkpoint proceeds autonomously. No further action until 20:05 UTC checkpoint outcome monitoring session fires.
 
 ---
 
