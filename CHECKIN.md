@@ -1,3 +1,37 @@
+## Session 1560 — ORCHESTRATOR: Hold Pattern Maintained + SSH Deadline Final Verification (May 22, 11:16 UTC)
+
+**Status**: ✅ **Hold pattern CONFIRMED** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 14MIN REMAINING)** | ✅ **SSH block RE-VERIFIED FAILING** | ⏰ **Checkpoint 20:00 UTC (8H 44MIN)**
+
+**What was accomplished**:
+1. **Orientation via ORCHESTRATOR_STATE.md** (11:16 UTC):
+   - All 5 active blocks verified unchanged since Session 1559
+   - Exploration Queue status: Items 35a/35b/35c staged for post-checkpoint execution at 20:00 UTC
+   - All project Goals re-read — zero unfinished autonomous scope before checkpoint
+
+2. **SSH auth final re-verification** (11:16 UTC):
+   - Executed: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health'`
+   - Result: `Permission denied (publickey,password)` — orchestrator key still NOT authorized on Jetson
+   - Block status: STILL FAILING, CRITICAL DEADLINE 2H 14MIN AWAY
+
+3. **Project status verified**:
+   - ✅ stockbot: Engine healthy, Lever B code deployed; SSH auth blocks config activation
+   - ✅ resistance-research: TOO_EARLY contingency; synthesis re-scheduled May 28
+   - ✅ cybersecurity-hardening: Phase 1 in progress, awaiting VeraCrypt restart
+   - ✅ mfg-farm: Production-ready, awaiting test print
+   - ✅ seedwarden: Track B ready for May 23-28 gates; Track A blocked on 2 user actions
+
+4. **Checkpoint readiness assessment**:
+   - Post-checkpoint work (Items 35a/35b/35c) fully pre-staged and ready for spawning at 20:00 UTC
+   - If SSH auth is NOT resolved by 13:30 UTC: checkpoint executes with Lever A config (same as May 19 STILL_MISS_B2 outcome)
+   - If SSH auth IS resolved: Lever B activation will test HMM regime masking configuration
+
+**Decisions**:
+- **Hold pattern is correct**: Zero autonomous work available before checkpoint; all projects blocked on external dependencies
+- **No escalation actions available**: SSH auth block cannot be resolved by orchestrator; user action required by 13:30 UTC
+- **Post-checkpoint readiness**: Items 35a/35b/35c execution ready to spawn in parallel at 20:00 UTC
+
+---
+
 ## Session 1559 — ORCHESTRATOR: SSH Escalation + Queue Expansion (May 22, 11:08 UTC)
 
 **Status**: ✅ **Hold pattern CONFIRMED** | 🔴 **CRITICAL SSH DEADLINE: 13:30 UTC (2H 21MIN)** | ✅ **SSH block RE-VERIFIED FAILING** | ✅ **Exploration Queue expanded** | ⏰ **Checkpoint 20:00 UTC (8H 52MIN)**
