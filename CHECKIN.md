@@ -13,6 +13,26 @@
 4. **May 24**: Seedwarden Canva + email gate
 5. **May 25–26**: User decision on open-repo Phase 5 direction (Candidate 1 recommended)
 
+### ⚠️ **Seedwarden Track B Gates Status — Overdue, But Recoverable** (Session 1514)
+
+**Status**: All three user gates are OVERDUE. Assets fully ready. May 30 launch recoverable if gates execute May 23–28.
+
+| Gate | Original Deadline | Status | Time Required | File |
+|------|------------------|--------|---------------|------|
+| **Gate 1: Social accounts** | May 18 | ❌ NOT STARTED (4 days overdue) | 45–60 min | `TRACK_B_GATE_1_QUICK_REFERENCE.md` |
+| **Gate 2: Canva Brand Kit** | May 24 | ⏳ Due in 2 days | 30 min + 4–6 hrs zone cards | `TRACK_B_CANVA_SETUP_AND_EXPORT_GUIDE.md` |
+| **Gate 3: Kit email + landing** | May 28 | ⏳ Due in 6 days | 3–4.5 hrs | `TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md` |
+
+**Assets verified ready** (May 22 04:54 UTC — orchestrator verification):
+- ✅ 18 wild-edibles photos (in `assets/wild-edibles/`)
+- ✅ 63 mockup images (in `mockups/`)
+- ✅ Seedwarden logo (`logos/seedwarden_logo_1.png`, 898K)
+- ✅ Email copy, content calendar, all reference docs
+
+**Recovery path**: Execute Gate 1 (Instagram/TikTok/Pinterest) May 23, Gate 2 (Canva) May 24, Gate 3 (Kit) May 26–28. May 30 launch remains achievable if gates execute by May 28.
+
+**Critical**: If Gate 1 does not start by May 25, May 30 launch will slip to June 6. No orchestrator blockers exist — all docs are ready to execute, asset files verified in place.
+
 ---
 
 ## Session 1513 — ORCHESTRATOR: STAGE 0 ACTIVATION COMPLETE (May 22, 04:36–05:24 UTC)
