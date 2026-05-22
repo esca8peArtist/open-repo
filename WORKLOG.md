@@ -10748,3 +10748,46 @@ Of these, farm equipment repair and mesh networking/microgrid are executable NOW
    - **Rationale**: Both are independent, non-blocking work. Parallel execution maximizes May 22 throughput before checkpoint execution at 20:00 UTC. Both have clear deliverables and timeline gates.
 
 **Next checkpoint window**: May 22 20:00 UTC (Items 35a/35b/35c autonomous execution based on checkpoint outcome)
+
+---
+
+## Session 1564 (May 22, 11:51 UTC) — ORCHESTRATOR: Final SSH Deadline Hold + Monitoring Parallel Agents
+
+**Orchestrator Status**: 🔴 **SSH AUTH CRITICAL** (deadline 13:30 UTC, 1h 39m remaining) | 🚀 **Two agents active** (Session 1563 dispatch) | ⏰ **Checkpoint 20:00 UTC (8h 9m)**
+
+**Session Activities**:
+
+1. **Oriented**:
+   - Read ORCHESTRATOR_STATE.md (11:51 UTC snapshot)
+   - Read BLOCKED.md (verified 4 active blocks, all user-action-dependent)
+   - Read INBOX.md (no new items)
+   - Verified WORKLOG.md (Session 1563 logged at 11:36 UTC, agents spawned)
+
+2. **SSH Auth Block Re-Verified**:
+   - Ran verify command: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'`
+   - Result: `ssh_askpass: exec(/usr/bin/ssh-askpass): No such file or directory` + `Permission denied (publickey,password)`
+   - **CONFIRMED STILL FAILING** — Orchestrator ED25519 key NOT authorized on Jetson
+   - **CRITICAL DEADLINE**: User must fix by 13:30 UTC (~1h 39m) or May 22 checkpoint defaults to Lever A config (repeat of May 19 failure)
+
+3. **Agent Status** (Session 1563 dispatch at 11:36 UTC):
+   - ✅ **resistance-research subagent**: Domain 59 (Economic Precarity) research initiation
+   - ✅ **seedwarden subagent**: Track B Gate 1 (Instagram/TikTok/Pinterest setup, 45-60 min scope)
+   - **Both agents are actively running** (spawned 15 min ago, monitoring for completion before checkpoint window)
+
+4. **Autonomous Work Assessment**:
+   - **All active projects verified**: 4 blocks are hard external dependencies (SSH auth, test print, VeraCrypt restart, synthesis data). Zero additional autonomous work available.
+   - **Exploration Queue**: Items 35a/35b/35c pre-staged for post-checkpoint execution (depend on May 22 checkpoint outcome for routing)
+   - **Project Goals re-checked**: No unfinished scope outside of named external dependencies
+   - **Verdict**: System correctly in hold pattern. Agents spawned. Awaiting: (1) SSH fix by 13:30 UTC (user-critical), or (2) checkpoint execution at 20:00 UTC with agents' results
+
+5. **Critical Timeline**:
+   - **13:30 UTC (~1h 39m)**: SSH auth deadline. User MUST apply fix (Option A: add orchestrator public key to Jetson authorized_keys, OR Option B: SSH manually + run 5-min config fix, commands in BLOCKED.md)
+   - **20:00 UTC (8h 9m)**: May 22 checkpoint execution (Items 35a/35b/35c autonomous phase, checkpoint outcome routing)
+   - **May 25 18:00 UTC**: Resistance-research Phase 2 synthesis data fill deadline
+   - **May 25 19:00 UTC**: Phase 2 synthesis execution (if signal log filled by 18:00 UTC)
+
+**Decision**: Hold pattern maintained. Both agents active. System stable. Awaiting critical user action on SSH auth by 13:30 UTC.
+
+**Next autonomous window**: 
+- May 22 20:00 UTC post-checkpoint (agent results logged, Items 35a/35b/35c execution + synthesis outcome routing)
+- If SSH fixed before 13:30 UTC: May 22 checkpoint may have different outcome (Lever B enabled instead of Lever A fallback)
