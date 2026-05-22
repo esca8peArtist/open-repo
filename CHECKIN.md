@@ -1,3 +1,25 @@
+## Session 1502 — ORCHESTRATOR: CRITICAL DEADLINE RECONFIRMED + ZERO AUTONOMOUS WORK (May 22, 02:15 UTC)
+
+**Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~11h 15m remaining)**
+
+**Work Performed**:
+1. ✅ **SSH verification reconfirmed**: orchestrator ED25519 key not authorized on Jetson (permission denied). Block persistent.
+2. ✅ **Autonomous work assessment**: ZERO items available.
+   - **INBOX.md**: No new items
+   - **BLOCKED.md**: 4 active blocks (stockbot SSH, resistance-research synthesis May 25, cybersecurity-hardening restart, mfg-farm test print)
+   - **EXPLORATION_QUEUE.md**: All items complete or deferred (Items 1-12 all ✅ or ⏳ post-user-decision)
+   - **Projects status**: All top-priority projects blocked on named external dependencies (user actions, external events, user decisions)
+
+**Critical Path**: User must execute **ONE option by May 22 13:30 UTC**:
+- **Option A** (5 min): SSH + config fix (add `"hmm_regime_masking": true` to both AAPL sessions, restart Docker)
+- **Option B** (2-3 min): Add orchestrator public key to Jetson authorized_keys
+
+**Consequence of inaction**: May 22 20:00 UTC checkpoint executes with Lever A only (Lever B testing defeated).
+
+**Next window**: Post-checkpoint May 23-24 (if user resolves SSH by deadline).
+
+---
+
 ## Session 1501 — ORCHESTRATOR: EXPLORATION QUEUE EXECUTION + SSH DEADLINE MAINTAINED (May 22, 03:00–08:00 UTC)
 
 **Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~5-10 hours remaining)** | ✅ **Queue Items 1-2 COMPLETE**
