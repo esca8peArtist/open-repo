@@ -1,5 +1,39 @@
 # Work Log
 
+## Session 1496 (2026-05-22 00:25–00:35 UTC) — ORCHESTRATOR: Critical Deadline Monitoring
+
+**Status**: 🔴 **CRITICAL DEADLINE IMMINENT** | ⏳ **No autonomous work; orchestrator idle pending May 22 13:30 UTC deadline**
+
+**Actions Taken**:
+1. ✅ Orientation complete — ORCHESTRATOR_STATE.md reviewed
+2. ✅ SSH auth status verified — block persists (Permission denied)
+3. ✅ BLOCKED.md reviewed — stockbot SSH entry current and critical
+4. ✅ INBOX.md reviewed — no new items
+5. ✅ PROJECTS.md priority reviewed — all projects blocked on external dependencies
+6. ✅ CHECKIN.md updated with session 1496 entry — critical deadline escalation
+7. ✅ Commit: `f9cff676` (CHECKIN.md session 1496 update)
+
+**Autonomous Work Assessment**:
+- All projects blocked on: SSH auth (stockbot), user Gist creation (resistance-research), VeraCrypt restart (cybersecurity-hardening), test print (mfg-farm), user decisions (seedwarden May 30, systems-resilience June 1), user merge approval (open-repo)
+- Exploration Queue: Empty (all items complete or deferred)
+- **Verdict**: No autonomous work available
+
+**Critical Deadline Status**:
+- **Event**: May 22 20:00 UTC stockbot checkpoint execution
+- **Blocker**: Lever B HMM config missing `"hmm_regime_masking": true` flag
+- **Root cause**: SSH auth failure prevents orchestrator from applying config remotely
+- **User action required**: (A) 5-min manual SSH fix, OR (B) Add orchestrator key to authorized_keys
+- **Deadline**: May 22 13:30 UTC (to allow buffer before 20:00 checkpoint)
+- **Time remaining**: ~13 hours
+
+**Orchestrator Status**:
+- ✅ All orchestration files current and committed
+- ✅ No new blocks identified
+- ⏳ Idle until: (A) user input on SSH fix, OR (B) May 22 13:30 UTC deadline passes
+- Next: Monitor deadline and prepare for post-checkpoint state updates
+
+---
+
 ## Session 1494 — ORCHESTRATOR: CRITICAL DEADLINE VERIFICATION + BLOCK ESCALATION (May 22, 00:08 UTC)
 
 **Date**: 2026-05-22 00:08–00:20 UTC
