@@ -1,3 +1,25 @@
+## Session 1532 — ORCHESTRATOR: HOLD PATTERN RECONFIRMED + CRITICAL DEADLINE 6H REMAINING (May 22, 07:27–07:35 UTC)
+
+**Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H REMAINING)** | ✅ **SSH block re-verified FAILING** | ✅ **Hold pattern maintained correctly** | ✅ **No autonomous work available**
+
+**What was accomplished**:
+- Full orientation: ORCHESTRATOR_STATE.md (generated 07:26 UTC), BLOCKED.md, PROJECTS.md reviewed
+- SSH block re-verification: Confirmed "Permission denied (publickey)" — orchestrator key still not authorized on Jetson
+- All 4 active blocks status unchanged: (1) **stockbot SSH (CRITICAL deadline 13:30 UTC TODAY)**, (2) resistance-research TOO_EARLY contingency (re-synthesis May 25), (3) cybersecurity-hardening VeraCrypt (user restart), (4) mfg-farm test print (user execution)
+- INBOX.md: No new items since May 17
+- Assessment: Hold pattern remains correct; no autonomous work available in remaining 6h window; system awaiting user SSH auth fix before 13:30 UTC OR May 22 20:00 UTC checkpoint outcome
+
+🔴 **CRITICAL — USER ACTION REQUIRED BY 13:30 UTC (6H REMAINING)**:
+- **Stockbot Lever B HMM config fix MUST complete before May 22 13:30 UTC checkpoint**
+- **Choose ONE** — see BLOCKED.md lines 73-104:
+  - Option A: Add orchestrator ED25519 public key to Jetson authorized_keys
+  - Option B: SSH manually + run 5-min config fix (commands in BLOCKED.md)
+- **Post-fix verification**: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl -s http://localhost:8000/api/health | grep -q status && echo OK'` should return OK
+
+**Next autonomous window**: May 22 20:00 UTC post-checkpoint (checkpoint outcome determines routing to Lever B scaling, Phase 2 synthesis, or recovery scenarios)
+
+---
+
 ## Session 1530 — ORCHESTRATOR: HOLD PATTERN MAINTENANCE + FINAL DEADLINE VERIFICATION (May 22, 07:13–07:25 UTC)
 
 **Status**: 🔴 **CRITICAL STOCKBOT SSH DEADLINE TODAY 13:30 UTC (~6H 17MIN REMAINING)** | ✅ **Blocks re-verified: SSH still failing** | ✅ **Hold pattern maintained correctly** | ✅ **No autonomous work available**
