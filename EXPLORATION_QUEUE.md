@@ -324,6 +324,24 @@
 
 ---
 
+### 33. ⏳ stockbot — Post-Gate-2 Architecture (Long-Term Trading Expansion)
+**Scope**: Gate 2 decision trees (Lever B PASS/FAIL) are complete. If Lever B PASS at May 22 20:00 UTC, multi-ticker expansion follows June 1-15. Beyond June 15: What does sustainable long-term trading architecture look like? Model rotation, retraining cadence, options integration, risk aggregation across 10+ tickers?
+- **Deliverables**: `POST_GATE_2_LONG_TERM_ARCHITECTURE.md` (architecture for 20+ ticker portfolio, model retraining SLA, portfolio Greeks aggregation if options activated, failure mode handling for individual ticker crashes)
+- **Owner**: stockbot subagent
+- **Deadline**: June 15 (post-Gate-2-PASS execution)
+
+### 34. ⏳ resistance-research — Phase 3 Implementation Roadmap (Post-Phase-2)
+**Scope**: Phase 2 research execution (Domains 56-59) is queued for May 25+ outcomes. Phase 2 completes July 15. What comes next? Phase 3 is implementation infrastructure: movement coordination, coalition management, state-level activation, electoral integration. Start planning Phase 3 roadmap now so July 15 → August 1 transition is seamless.
+- **Deliverables**: `PHASE_3_IMPLEMENTATION_ROADMAP.md` (wave sequencing for 35-domain framework deployment to all key constituencies, timeline, resource model, tracking metrics)
+- **Owner**: general-research subagent
+- **Deadline**: July 1 (ready for Phase 2 completion → Phase 3 execution handoff)
+
+### 35. ⏳ seedwarden — Phase 4 Botanical Content & Advanced Practitioner Tiers
+**Scope**: Phase 3 (core medicinal herbs) launches June 22. Phase 3 completion is July 13. What comes after? Phase 4: Botanical identification guides, advanced practitioner tiers (RH/ND/clinical specialist pathways), international herb monographs (European/Ayurvedic/TCM traditions). Start outlining Phase 4 scope now so August 1 launch is on track.
+- **Deliverables**: `PHASE_4_CONTENT_STRATEGY.md` (15-20 botanical identification guides, 3-tier practitioner progression, international herbs sourcing, ZIM integration plan)
+- **Owner**: seedwarden subagent
+- **Deadline**: August 1 (ready for July 13 Phase 3 completion → Phase 4 launch)
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
