@@ -54,6 +54,30 @@ logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
+# Fallback illustration
+# A minimal valid 48x48 PNG (solid teal #2a9d8f) used when no custom
+# illustration is provided. openZIM requires a 48x48 PNG for the Illustration
+# metadata field. This constant allows the module to be imported by tests
+# that verify the PNG's IHDR dimensions.
+# ---------------------------------------------------------------------------
+
+_FALLBACK_ILLUSTRATION_PNG: bytes = (
+    b'\x89PNG\r\n\x1a\n'                          # PNG signature
+    b'\x00\x00\x00\rIHDR'                          # IHDR chunk (13 bytes)
+    b'\x00\x00\x000'                               # width = 48
+    b'\x00\x00\x000'                               # height = 48
+    b'\x08\x02\x00\x00\x00'                        # bit depth=8, RGB, no interlace
+    b'\xd8`n\xd0'                                  # IHDR CRC
+    b'\x00\x00\x00:IDAT'                           # IDAT chunk (58 bytes)
+    b'x\xda\xed\xceA\r\x00\x00\x08\x04\xa0\xcbcY'
+    b'\x13\xd8\xd5\x16\xce\x07\x1b\x01HM\xbf\x12'
+    b'!!!!!!!!!!!!!!!!!!!!!!!!!'
+    b'\xa1;\x0b\xb2)\x06\xb5\xc1\xcc\xc3\xcb'
+    b'\x00\x00\x00\x00IEND\xaeB`\x82'              # IEND chunk
+)
+
+
+# ---------------------------------------------------------------------------
 # Enumerations and configuration models
 # ---------------------------------------------------------------------------
 
@@ -796,24 +820,23 @@ class ZimWriter:
         try:
             creator = Creator(str(self.output_path))
 
-            # All configuration MUST happen before entering the context manager
-            # Configure compression
-            # "default" and "zstd" both use zstd (libzim's default)
-            # "none" uses no compression
+            # All configuration MUST happen before entering the context manager.
+            # Configure compression.
             if compression == "none":
                 creator.config_compression(Compression.none)
             elif compression in ("default", "zstd"):
                 creator.config_compression(Compression.zstd)
 
-            # Configure Xapian full-text indexing with the content language
-            creator.config_indexing(True, self.config.language_iso3)
+            # _apply_metadata_to_creator configures Xapian indexing (pre-context).
+            # config_indexing() must be called before Creator.__enter__().
+            self._apply_metadata_to_creator(creator)
 
             with creator:
                 # Set the main landing page (index)
                 creator.set_mainpath("index")
 
-                # Apply metadata to the Creator
-                self._apply_metadata_to_creator(creator)
+                # Write openZIM metadata fields (add_metadata requires context).
+                self._write_zim_metadata(creator)
 
                 # Add illustration if available
                 illustration_bytes = self._get_illustration_bytes()
@@ -940,9 +963,24 @@ class ZimWriter:
 
     def _apply_metadata_to_creator(self, creator: Creator) -> None:
         """
-        Apply all ZimMetadata fields to a python-libzim Creator instance.
+        Apply pre-context configuration to a python-libzim Creator instance.
 
-        This method is called inside the create_zim() Creator context.
+        This method MUST be called BEFORE entering the Creator context manager
+        (i.e., before ``with creator:``). It configures Xapian full-text
+        indexing, which the libzim API requires to be set before ``__enter__``.
+
+        openZIM metadata fields (Title, Description, etc.) are written inside
+        the context by ``_write_zim_metadata()``.
+        """
+        # config_indexing must be called before Creator.__enter__()
+        creator.config_indexing(True, self.config.language_iso3)
+
+    def _write_zim_metadata(self, creator: Creator) -> None:
+        """
+        Write all openZIM metadata fields to the Creator.
+
+        Must be called INSIDE the Creator context manager (after ``with creator:``),
+        because add_metadata() requires the Creator to be started.
         """
         creator.add_metadata("Title", self.metadata.title)
         creator.add_metadata("Description", self.metadata.description)
@@ -958,21 +996,25 @@ class ZimWriter:
         if self.metadata.long_description:
             creator.add_metadata("LongDescription", self.metadata.long_description)
 
-    def _get_illustration_bytes(self) -> Optional[bytes]:
+    def _get_illustration_bytes(self) -> bytes:
         """
         Return 48x48 PNG bytes for the ZIM illustration field.
 
         Priority:
           1. Bytes passed to __init__ as illustration_bytes
           2. File at metadata.illustration_48x48_path
-          3. None (caller handles fallback)
+          3. _FALLBACK_ILLUSTRATION_PNG (48x48 solid teal PNG)
+
+        Always returns a valid PNG — never None. openZIM requires an
+        Illustration_48x48_at_1 field; omitting it produces a warning
+        in zimcheck and may be rejected by some Kiwix readers.
         """
         if self._illustration_bytes:
             return self._illustration_bytes
         if self.metadata.illustration_48x48_path:
             with open(self.metadata.illustration_48x48_path, "rb") as f:
                 return f.read()
-        return None
+        return _FALLBACK_ILLUSTRATION_PNG
 
     def _run_zimcheck(self) -> bool:
         """

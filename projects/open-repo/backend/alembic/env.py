@@ -15,6 +15,13 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
+# Allow DATABASE_URL environment variable to override alembic.ini URL.
+# This supports local development, CI, and SQLite testing without modifying
+# the committed alembic.ini file.
+database_url = os.environ.get("DATABASE_URL")
+if database_url:
+    config.set_main_option("sqlalchemy.url", database_url)
+
 # add your model's MetaData object here
 # for 'autogenerate' support
 from app.models import Base
