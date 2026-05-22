@@ -1,4 +1,35 @@
-## Session 1573 (May 22, 13:47–14:15 UTC) — ORCHESTRATOR: Checkpoint Ready + Exploration Queue Staged + Agent Limit Reached
+## Session 1573 (May 22, 13:47–14:20 UTC) — 🔴 CRITICAL: JETSON UNREACHABLE — Checkpoint at Risk
+
+**Status**: 🔴 **CRITICAL: Jetson unreachable (API timeout + ping packet loss)** | ⚠️ **Checkpoint 20:00 UTC at risk (6h remaining)** | ❌ **Hold pattern BROKEN** | 🚨 **Immediate user action required**
+
+**CRITICAL ISSUE — Jetson Connectivity Loss**:
+- **Time detected**: 14:00 UTC (6 hours before checkpoint)
+- **Symptoms**: 
+  - Health check to http://100.120.18.84:8000/api/health: TIMEOUT
+  - Ping to 100.120.18.84: 100% PACKET LOSS
+  - Tailscale status: Shows "active; direct" but unreachable
+  - SSH: Auth failing (same SSH key auth issue as before)
+- **Impact**: Stockbot trading engine may be offline; checkpoint execution in 6 hours is at risk
+- **Status**: **CRITICAL BLOCKER** — Cannot verify if engine is running
+
+**User Actions Required (IMMEDIATE)**:
+1. **Physical check** (2 min): Verify Jetson physical status — power LED on, network cable connected or WiFi active
+2. **If Jetson is powered on**: SSH and restart Docker engine:
+   ```bash
+   ssh -i ~/.ssh/id_rsa ubuntu@100.120.18.84  # use password auth
+   ps aux | grep launch_stacker_sessions.py
+   docker ps | grep stockbot
+   docker restart stockbot
+   curl http://localhost:8000/api/health
+   ```
+3. **If network unstable**: Restart Tailscale or network interface on Jetson
+4. **Report back**: Confirm engine status + API health before 20:00 UTC
+
+**Post-Resolution**: Once Jetson is reachable and API responding, checkpoint will execute automatically at 20:00 UTC with Lever A config.
+
+---
+
+## Previous Session 1573 (May 22, 13:47–14:15 UTC) — ORCHESTRATOR: Checkpoint Ready + Exploration Queue Staged + Agent Limit Reached
 
 **Status**: ✅ **SSH deadline MISSED (13:30 UTC passed)** | 🚀 **Checkpoint 20:00 UTC on track (6h 13m)** | ⚠️ **Agent limit reached (resets May 26 06:00 UTC)** | 📋 **All blocks reviewed; hold pattern maintained**
 
