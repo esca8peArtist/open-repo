@@ -23,7 +23,22 @@
    - **13:30 UTC (~1h)**: SSH auth deadline — user MUST apply fix or checkpoint defaults to Lever A config
    - **20:00 UTC (~7h 31m)**: May 22 checkpoint execution + Items 35a/35b/35c routing
 
-**Decision**: Hold pattern maintained. Awaiting agent completion and SSH deadline outcome. System stable. Next autonomous window: 12:40 UTC (agents complete) → 20:00 UTC (checkpoint + Phase 2 execution).
+**Actions Taken**:
+1. **Added Exploration Queue Items 36-38** (12:29 UTC)
+   - Item 36: Jetson capacity analysis for 3-4-6 session expansion
+   - Item 37: Resistance-research Tier 2 contingency outreach
+   - Item 38: Cybersecurity incident response automation
+
+2. **Completed Item 36: Jetson Capacity Analysis** (12:30-12:32 UTC)
+   - Analyzed current baseline: 2-session, 65% CPU, 2.5 GB mem, 87.8°C thermal
+   - Projected 3-session: ✅ Viable without hardware changes
+   - Projected 4-session: ⚠️ Requires Docker memory upgrade (4→6 GB) or capital reduction
+   - Projected 6-session: ❌ Requires Jetson Orin AGX upgrade (defer to June 15)
+   - Identified critical thresholds: Memory (3.5-4.2 GB), CPU (85-100%), Thermal (90-95°C)
+   - Delivered: `JETSON_CAPACITY_ANALYSIS.md` + deployment decision tree
+   - File committed to stockbot submodule
+
+**Decision**: Item 36 complete. Awaiting agent completion (3-8 min) and SSH deadline (58 min). Hold pattern on track. Next autonomous window: 12:40 UTC (agents complete) → 20:00 UTC (checkpoint + Phase 2 execution).
 
 ---
 
