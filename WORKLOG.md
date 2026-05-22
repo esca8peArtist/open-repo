@@ -1,5 +1,33 @@
 # Work Log
 
+## Session 1569 (2026-05-22 13:30+ UTC) — 🚨 ORCHESTRATOR CRITICAL ESCALATION: SSH DEADLINE MISSED
+
+**Status**: 🚨 **SSH DEADLINE PASSED** — No user action taken | **Checkpoint at risk** (6h 30m remaining)
+
+**Session Activities**:
+
+1. **State Verification** (13:30+ UTC):
+   - Deadline window: May 22 13:30 UTC was CRITICAL for Lever B config fix
+   - SSH access re-tested: **STILL FAILING** — orchestrator ED25519 key NOT authorized
+   - Verify command: `ssh -i /home/awank/.ssh/id_ed25519 ubuntu@100.120.18.84 'curl ...'` → **Permission denied (publickey,password)**
+   - Block status: **UNRESOLVED** — deadline has passed
+
+2. **Actions Taken**:
+   - ✅ **Discord notification sent** (13:30+ UTC) with urgent escalation message
+   - ✅ **CHECKIN.md escalated** with bold "DEADLINE PASSED" header and immediate action items
+   - ✅ **WORKLOG.md updated** (this entry) to track deadline miss
+   - ✅ **BLOCKED.md unchanged** — block remains active in unresolved state
+
+3. **Implications**:
+   - **May 22 20:00 UTC checkpoint will execute in 6.5 hours**
+   - **If SSH auth not fixed by then**: Lever B HMM regime masking NOT activated; config defaults to Lever A (same as May 19 STILL_MISS_B2 outcome)
+   - **Recovery window**: 6h 30m remaining until checkpoint execution
+   - **Next autonomous window**: 20:00 UTC (checkpoint execution) → May 23 00:15 UTC (Items 35a/35b/35c routing)
+
+**Decision**: Escalation complete. Awaiting urgent user action on SSH. Monitoring for any checkpoint-time recovery.
+
+---
+
 ## Session 1568 (2026-05-22 12:29 UTC) — ORCHESTRATOR: Hold Pattern Verified + Agent Completion Window + Checkpoint Imminent
 
 **Status**: 🔴 **SSH DEADLINE CRITICAL (1H 1M REMAINING)** | 🚀 **Two agents actively working** (est. completion ~12:35 UTC) | ⏰ **Checkpoint 20:00 UTC (7H 31M)**

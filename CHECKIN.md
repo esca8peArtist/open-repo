@@ -1,3 +1,32 @@
+## Session 1569 (May 22, 13:30+ UTC) — 🚨 ORCHESTRATOR CRITICAL ESCALATION: SSH DEADLINE PASSED
+
+**Status**: 🚨 **SSH DEADLINE MISSED** — Checkpoint at risk | 🚫 **NO USER ACTION TAKEN** | ⏰ **Checkpoint 20:00 UTC (6H 30M)**
+
+**CRITICAL ESCALATION — USER ACTION REQUIRED IMMEDIATELY**:
+- **SSH deadline: MAY 22 13:30 UTC** — **THIS DEADLINE HAS JUST PASSED**
+- **SSH auth still FAILING** — Orchestrator key NOT authorized on Jetson
+- **May 22 20:00 UTC checkpoint at risk** — Config fix MUST happen in next 6.5 hours
+- **Discord notification sent** at deadline time (13:30+ UTC)
+
+**URGENT ACTIONS (do one immediately)**:
+- **Option A** (recommended, 5 min): Add orchestrator public key:
+  ```bash
+  cat ~/.ssh/id_ed25519.pub | ssh ubuntu@100.120.18.84 'cat >> ~/.ssh/authorized_keys'
+  ```
+- **Option B** (10 min): SSH manually and run config fix:
+  ```bash
+  ssh ubuntu@100.120.18.84
+  # (enter password)
+  nano /opt/stockbot/config/active-sessions-2session.json
+  # For both "AAPL_h10_lgbm_ho" and "AAPL_h10_ridge_wf", ensure: "hmm_regime_masking": true
+  docker restart stockbot
+  curl http://localhost:8000/api/health
+  ```
+
+**If NOT fixed by checkpoint (20:00 UTC)**: Lever B test defeated; checkpoint executes with Lever A config (May 19 STILL_MISS_B2 outcome repeated).
+
+---
+
 ## Session 1568 (May 22, 12:29 UTC) — ORCHESTRATOR: Agent Completion Window + SSH Deadline ~1H + Checkpoint Ready
 
 **Status**: 🔴 **SSH DEADLINE CRITICAL (1H 1M REMAINING)** | 🚀 **Two agents completing** (Domain 59 + Track B Gate 1, ~6-11 min expected) | ⏰ **Checkpoint 20:00 UTC (7H 31M)**
