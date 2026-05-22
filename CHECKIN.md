@@ -1,3 +1,70 @@
+## Session 1501 — ORCHESTRATOR: EXPLORATION QUEUE EXECUTION + SSH DEADLINE MAINTAINED (May 22, 03:00–08:00 UTC)
+
+**Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~5-10 hours remaining)** | ✅ **Queue Items 1-2 COMPLETE**
+
+**Work Performed**:
+
+1. ✅ **Re-evaluated Exploration Queue** (Session 1500 concluded "zero autonomous work"; re-audit found 2-3 executable items)
+   - **seedwarden**: Phase 3 Medicinal Herbs Critical Path — marked "executable now for decision prep"
+   - **open-repo**: Phase 5.1 ZimWriter Verification — marked "executable now for pre-decision prep"
+   - Both items independent of external user actions; can proceed in parallel with SSH deadline monitoring
+
+2. ✅ **Spawned 2 Parallel Subagents** (03:00 UTC)
+   - **Seedwarden subagent**: Phase 3 medicinal herbs critical path (3-4 hrs) — completed
+   - **General-research subagent**: Phase 5.1 post-merge verification (2-3 hrs) — completed
+
+3. ✅ **Seedwarden Phase 3 Delivery** (Complete)
+   - **File**: `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` upgraded v7.0 → v8.0 (12,211 words, 841 lines)
+   - **New content**: Supplier intelligence (Prairie Moon, MRH out of stock; NativeWildflowers confirmed), inline Gantt timeline, float day analysis
+   - **Critical finding**: Goldenseal + Black Cohosh procurement requires decision by May 30 (Path 1: NativeWildflowers $4.99 or Path 2: Wikimedia CC illustration)
+   - **Decisions required by May 30**: Sprint scope (Option A/B/C), Goldenseal sourcing (Path 1/2), Canva palette (confirm hex or defer)
+
+4. ✅ **Open-repo Phase 5.1 Delivery** (Complete)
+   - **Files**: `PHASE_5_1_POST_MERGE_VERIFICATION.md` + `PHASE_5_1_ACTIVATION_CHECKLIST.md`
+   - **Critical finding**: PR #3 merged to remote but local master still has stub code — real Creator integration is remote-only
+   - **Verified live**: 240 tests pass, libzim 3.10.0 compatible, thermal baseline 80.7°C (at throttle boundary)
+   - **Stage 0**: Extract zim_writer.py from remote + restore migration 003 before real activation
+   - **Gaps**: zimcheck not installed, README missing Phase 5 section
+
+**Needs Your Input**:
+
+### 🔴 CRITICAL (5-10 hours remaining): Stockbot SSH Deadline May 22 13:30 UTC
+
+**Execute ONE option by deadline**:
+
+**Option A (5 min)**: SSH + config fix
+```bash
+ssh ubuntu@100.120.18.84
+nano /opt/stockbot/config/active-sessions-2session.json
+# Add "hmm_regime_masking": true to both AAPL sessions' strategy_params
+docker restart stockbot
+curl http://localhost:8000/api/health
+```
+
+**Option B (2-3 min)**: Add orchestrator SSH key
+```bash
+cat /home/awank/.ssh/id_ed25519.pub
+# SSH to Jetson and append to ~/.ssh/authorized_keys
+```
+
+### ⏳ Seedwarden Phase 3 (Decision by May 30)
+
+1. **Sprint scope**: Choose Option A (5 bundles, 56-66 hrs), B (2 writers), or C (3-bundle, 36-44 hrs, recommended)
+2. **Goldenseal sourcing**: Path 1 (NativeWildflowers, immediate) or Path 2 (Wikimedia CC, zero-risk, recommended)
+3. **Canva palette**: Confirm 6 hex codes or defer to June 15 auto-lock
+
+### ⏳ Open-repo Phase 5.1 (Stage 0 Pre-Activation)
+
+Extract real libzim integration from remote:
+```bash
+cd projects/open-repo
+git checkout feature/zimwriter-libzim-activation -- src/core/zim_writer.py
+git checkout feature/zimwriter-libzim-activation -- migrations/versions/003_add_zimexport_model.py
+uv run pytest projects/open-repo/tests/ -q --tb=no  # Verify extraction
+```
+
+---
+
 ## Session 1500 — ORCHESTRATOR: SSH BLOCK RE-VERIFIED + CRITICAL DEADLINE CONFIRMED (May 22, 01:50 UTC)
 
 **Status**: 🔴 **CRITICAL: STOCKBOT SSH DEADLINE MAY 22 13:30 UTC (~11.5 hours remaining)**
