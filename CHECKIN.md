@@ -1,3 +1,48 @@
+## Since Last Check-in (Session 1640, May 23 06:28–07:00 UTC)
+
+**Status**: ✅ **Exploration Queue Work COMPLETE** | 🔴 **Agent limit HARD until May 26 06:00 UTC** | ❌ **Jetson unreachable (+26 hrs)** | ⏳ **Hold pattern stable**
+
+**What was accomplished**:
+- ✅ **Exploration Queue Item COMPLETE: Jetson Hardware Resilience & Contingency Recovery**
+  - **JETSON_HARDWARE_CONTINGENCY_RECOVERY.md** (3,200 words, 8 sections): comprehensive contingency planning for permanent Jetson failure
+  - **Sections delivered**:
+    1. Hardware Failure Detection & Diagnosis (pre-recovery confirmation checklist, network/physical/fallback diagnostics)
+    2. Recovery Path Selection (Paths A–C: network recovery [30 min], Pi 5 fallback [45 min], hardware replacement [2–7 days])
+    3. Checkpoint Outcome Classification (critical path to Phase 2 activation; decision matrix PASS/NEAR-MISS/FAR-MISS)
+    4. Capital Preservation Checklist (verify $115K equity safe in Alpaca, independent of Jetson state)
+    5. Implementation Timeline & Decision Gates (May 23–26 roadmap with decision points)
+    6. Cost-Benefit Analysis (4 scenarios: A [network], B [Pi 5 fallback], C [hardware], D [cloud GPU])
+    7. Post-Recovery Hardening (backup automation, monitoring, redundancy)
+    8. Appendices (hardware specs table, failure root cause hypothesis)
+  - **Key insight**: Jetson failure does not endanger capital; recovery options exist for all failure modes
+- ✅ **Block verification**: All 4 blocks confirmed unchanged (Jetson timeout, signal log unfilled, test print pending, VeraCrypt restart)
+- ✅ **Capital preservation confirmed**: $115K safe in Alpaca account (Alpaca is source of truth; all May 22 checkpoint fills recorded and queryable)
+
+**Research scope completed**:
+- Hardware failure detection (5 diagnostic procedures)
+- 4 recovery paths with timeline/cost/risk analysis
+- Decision templates for user to select path
+- Pi 5 fallback procedure (maintains trading during Jetson replacement)
+- Data recovery from Alpaca API (sync_db_from_alpaca.py)
+- Hardware replacement option (Jetson Orin Nano $249, 2–3 day delivery)
+- Cloud failover option (Linode GPU $50/mo, long-term architecture upgrade)
+
+**Critical findings**:
+- **Capital safe**: Jetson failure = API unreachable, not capital loss. Alpaca holds all positions independently.
+- **Fallback ready**: Pi 5 can run 2-session trading engine within 45 min. No capital loss during Jetson replacement.
+- **Recovery path clarity**: 4 distinct options with clear decision triggers (network issue → Path A; hardware failure → Path B or C)
+- **Checkpoint outcome required**: User SSH verification of May 22 checkpoint outcome determines Phase 2 path (PASS/NEAR-MISS/FAR-MISS)
+
+**Awaiting critical user actions**:
+- **May 24 URGENT**: SSH Jetson verification to determine checkpoint outcome + Phase 2 activation path
+- **May 25 18:00 UTC**: Fill 17 [fill] placeholders in signal log for May 25 synthesis execution
+- **May 23–28**: Execute test print (AAPL 0.20mm PLA+) — full contingency playbook ready
+- **If Jetson remains unreachable after May 24**: Decide on Recovery Path (B [Pi 5 fallback] or C [hardware replacement])
+
+**Research type**: Exploration Queue research (not code changes; executable under agent limit HARD constraint)
+
+---
+
 ## Since Last Check-in (Session 1644, May 23 06:15–07:45 UTC)
 
 **Status**: ✅ **Item 15 COMPLETE** | 🔴 **Agent limit HARD until May 26 06:00 UTC** | ❌ **Jetson unreachable (+28.5 hrs)** | ⏳ **Hold pattern stable**
