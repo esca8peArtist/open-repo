@@ -73,6 +73,71 @@
 **Owner**: orchestrator (standalone analysis) + systems-resilience subagent if Wave 2 execution triggers
 **Deadline**: May 23 morning post-checkpoint
 
+### 13. ⏳ stockbot — Jetson Multi-Ticker Deployment Readiness Validation (Session 1638+, 4-5 hrs)
+**Context**: Prepare multi-ticker AMZN/JPM expansion for immediate deployment upon Jetson restart OR outcome verification (pending May 24 user SSH action). No agents required — local code validation only.
+**Scope**:
+- Validate active-sessions.json for AMZN/JPM configurations (model compatibility, risk limits, position sizing)
+- Pre-stage Jetson deployment scripts: sync code, config validation, health check automation
+- Validate multi-ticker risk aggregation (sector caps, correlation analysis, margin requirements)
+- Test rollback procedures for emergency revert to 2-session AAPL-only config
+- Create Phase 2 deployment checklist (pre-market health check, post-deployment monitoring)
+**Deliverables**:
+- `JETSON_MULTI_TICKER_DEPLOYMENT_CHECKLIST.md` (5-section validation + execution plan)
+- `scripts/validate_multiticker_config.py` (config validation + risk analysis)
+- Updated `active-sessions.json` with AMZN/JPM configurations (if not present)
+- `scripts/jetson_deployment_automation.sh` (rsync, health check, rollback)
+- Risk aggregation verification: sector exposure, margin utilization, position cap compliance
+**Owner**: orchestrator (solo)
+**Deadline**: May 26 (ready for immediate deployment upon agent reset or user Jetson verification)
+**Notes**: All code runs locally; no Jetson SSH required (pre-staging only). If Jetson becomes reachable before May 26, deployment can execute immediately without re-validation.
+
+### 14. ✅ resistance-research — Synthesis Automation & Contingency Routing (Session [current] COMPLETE)
+**Status**: Completed May 23 (Session [current]). Files: `synthesis-outcome-router.py` + `SYNTHESIS_AUTOMATION_RUNBOOK.md`.
+**Scope**: May 25 20:00 UTC synthesis will produce outcome (STRONG/MODERATE/WEAK/DELIVERY_PROBLEM/TOO_EARLY). Automate outcome routing to correct contingency path without manual intervention.
+**Deliverables** (COMPLETE):
+- ✅ `synthesis-outcome-router.py` (350 lines): reads synthesis-execution-output.md, parses classification, validates signal log, routes to correct contingency path
+  - Implements routing logic for all 5 outcomes (STRONG, MODERATE, WEAK, DELIVERY_PROBLEM, TOO_EARLY)
+  - Generates contingency-activation-status.md with per-outcome immediate actions checklists
+  - Logs all routing decisions to synthesis-outcome-routing-log.txt
+  - Supports manual outcome overrides for testing (--outcome flag)
+  - Dry-run mode for verification before write
+- ✅ `SYNTHESIS_AUTOMATION_RUNBOOK.md` (500+ lines): comprehensive manual for synthesis automation
+  - Automated execution flow (synthesis → routing → immediate actions → status reporting)
+  - 5 contingency paths fully documented with immediate actions checklists
+  - Manual execution fallback options (if auto fails)
+  - Edge case procedures with solutions (incomplete signal log, delivery problems, overcomes, timing issues)
+  - Safety checks pre/post-synthesis
+  - Troubleshooting guide and rollback procedures
+  - Files reference matrix and who-does-what timeline
+- ✅ Safety validation: signal log completeness check + classification validation
+**Key features**:
+- Fully automated: reads synthesis outcome, validates, routes, generates checklists
+- Robust: handles all 5 outcome paths + edge cases (DELIVERY_PROBLEM, TOO_EARLY special cases)
+- Manual fallback: can override --outcome for testing or emergency
+- Comprehensive documentation: 500+ word runbook covers all scenarios
+- Ready for May 25 execution: can run standalone or be called by orchestrator after synthesis
+**Ready for**: May 25 20:00 UTC synthesis execution + immediate routing + contingency activation
+**Commits**: `15cbcd91` (initial), `9e2f5822` (fix classification handling)
+**Owner**: Orchestrator (Session [current])
+**Deadline**: May 24 ✅ EARLY COMPLETE
+
+### 15. ⏳ systems-resilience — Phase 6 Architecture Research Outline (Session 1638+, 3-4 hrs)
+**Context**: Phase 5 complete (6 production-ready waves). Phase 6 will address next-level resilience architecture. Research outlines topic coverage and dependency mapping before user decision on Phase 6 activation (June 1+).
+**Scope**:
+- Identify Phase 6 research domains (likely: international coordination mechanisms, long-term institutional sustainability, intergenerational equity, cross-sector resilience interdependencies)
+- Research existing frameworks: UN Sendai Framework (disaster risk reduction), UNDRR progress reports, UNESCO resilience initiatives, academic consensus on Phase 6 scope
+- Map domain dependencies: which Phase 6 topics depend on Phase 5 Wave 1-2 completion, which can run in parallel
+- Estimate time/effort for 4-6 Phase 6 domains (~80-120 hours total based on Phase 5 pattern)
+- Create Phase 6 Candidate List with: scope definitions, estimated effort, cross-references to Phase 1-5, movement leverage, distribution timeline
+**Deliverables**:
+- `PHASE_6_RESEARCH_OUTLINE.md` (5-8 identified Phase 6 domains with scope, effort, timing)
+- `PHASE_6_FRAMEWORK_DEPENDENCY_MAP.md` (dependency analysis, parallel execution opportunities)
+- `PHASE_6_ACTIVATION_READINESS_CHECKLIST.md` (preconditions for June 1 user decision)
+- Time/effort estimates by domain for user planning
+**Owner**: orchestrator (solo, WebSearch/WebFetch for framework research)
+**Deadline**: May 27 (ready for June 1 user decision on Phase 6 activation and scope)
+**Notes**: Pure research; no coding or commits required yet. Can use WebSearch for current frameworks, WebFetch for academic sources, and local analysis.
+
 ---
 
 ## Completed Items (Session 1454)
