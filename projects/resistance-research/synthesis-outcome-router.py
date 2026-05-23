@@ -188,20 +188,7 @@ def route_to_contingency_path(classification, signal_log_valid):
 
     action_type: "PROCEED", "WAIT_FOR_SIGNAL_LOG", "HOLD_FOR_DELIVERY_FIX", etc.
     """
-    if not signal_log_valid:
-        if classification == "TOO_EARLY":
-            return "WAIT_FOR_SIGNAL_LOG", {
-                "reason": "Signal log incomplete; cannot finalize classification",
-                "next_step": "Complete signal log by May 25 18:00 UTC; re-run router May 25 20:15 UTC",
-                "estimated_resolution": "May 25 20:30 UTC",
-            }
-        else:
-            return "WARN_SIGNAL_LOG_INCOMPLETE", {
-                "reason": "Classification is STRONG/MODERATE/WEAK but signal log appears incomplete",
-                "advisory": "Verify signal log completion manually before executing contingency actions",
-                "estimated_resolution": "Immediate (manual verification)",
-            }
-
+    # Handle special classifications that override signal log status
     if classification == "DELIVERY_PROBLEM":
         return "HOLD_FOR_DELIVERY_FIX", {
             "reason": "Test email in spam — delivery infrastructure issue",
@@ -211,14 +198,28 @@ def route_to_contingency_path(classification, signal_log_valid):
         }
 
     if classification == "TOO_EARLY":
-        return "HOLD_FOR_GATE", {
-            "reason": "Signal window not closed; cannot classify until May 25",
-            "gate_closes": "May 25 23:59 UTC",
-            "next_step": "Re-run router May 25 20:15 UTC with complete signal log",
-            "estimated_resolution": "May 25 23:59 UTC",
+        if signal_log_valid:
+            return "HOLD_FOR_GATE", {
+                "reason": "Signal window not closed; cannot classify until May 25",
+                "gate_closes": "May 25 23:59 UTC",
+                "next_step": "Re-run router May 25 20:15 UTC with additional signal data",
+                "estimated_resolution": "May 25 23:59 UTC",
+            }
+        else:
+            return "WAIT_FOR_SIGNAL_LOG", {
+                "reason": "Signal log incomplete; cannot finalize classification",
+                "next_step": "Complete signal log by May 25 18:00 UTC; re-run router May 25 20:15 UTC",
+                "estimated_resolution": "May 25 20:30 UTC",
+            }
+
+    if not signal_log_valid:
+        return "WARN_SIGNAL_LOG_INCOMPLETE", {
+            "reason": "Classification is STRONG/MODERATE/WEAK but signal log appears incomplete",
+            "advisory": "Verify signal log completion manually before executing contingency actions",
+            "estimated_resolution": "Immediate (manual verification)",
         }
 
-    # For STRONG, MODERATE, WEAK: proceed with contingency activation
+    # For STRONG, MODERATE, WEAK with valid signal log: proceed with contingency activation
     return "PROCEED", {
         "path": classification,
         "contingency": CONTINGENCY_PATHS[classification],
