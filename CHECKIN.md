@@ -1,20 +1,20 @@
-## Since Last Check-in (Session 1652, May 23 03:21 UTC)
+## Since Last Check-in (Session 1653, May 23 04:10 UTC)
 
-**What was done**: Hold pattern verification #27 (7th consecutive session today) — Jetson health check confirmed timeout (API unreachable, 13h+ downtime). All 4 blocks verified unchanged. Signal log fill status: 17/44 (deadline May 25 18:00 UTC). Test print directory not created. Agent limit remains HARD through May 26 06:00 UTC. No autonomous work available.
+**What was done**: Hold pattern verification #28 (8th consecutive session today) — Jetson health check confirmed timeout (API unreachable, 13h 45m downtime). All 4 blocks verified unchanged. Signal log fill status: 17/44 (deadline May 25 18:00 UTC). Test print directory not created. Agent limit remains HARD through May 26 06:00 UTC. No autonomous work available.
 
 **What's blocked**: 100% of remaining work blocked on user actions or external dependencies:
-1. **stockbot**: Jetson unreachable (May 22 14:00 UTC+); outcome classification requires SSH verification
+1. **stockbot**: Jetson unreachable (May 22 14:00 UTC+, 13h 45m); outcome classification requires SSH verification by May 24
 2. **resistance-research**: 17 [fill] placeholders remain; deadline May 25 18:00 UTC for re-synthesis
-3. **mfg-farm**: Test print pending (0.20mm, PLA+, 3 walls, 220–225°C)
+3. **mfg-farm**: Test print pending (0.20mm, PLA+, 3 walls, 220–225°C) — overdue, execution required ASAP
 4. **cybersecurity-hardening**: VeraCrypt pre-boot restart pending (Windows user action)
 
 **Awaiting user input**:
 - **URGENT (by May 24)**: SSH to Jetson `ssh ubuntu@100.120.18.84 "curl -s http://localhost:8000/api/health"` to verify API and retrieve checkpoint outcome
-- **May 25 18:00 UTC deadline**: Fill 17 [fill] placeholders in signal log
-- **Overdue**: Execute test print for mfg-farm and report outcome
+- **May 25 18:00 UTC deadline**: Fill 17 [fill] placeholders in signal log (7-day response window closes May 25 EOD)
+- **Overdue (May 22-23)**: Execute test print for mfg-farm and report outcome
 - **Pending**: Restart Windows, enter VeraCrypt pre-boot password, click Encrypt
 
-**Suggested next action**: Resolve Jetson SSH outcome ASAP. Otherwise, full work resumes May 26 06:00 UTC when agent limit resets.
+**Suggested next action**: Resolve Jetson SSH outcome ASAP (May 24). Otherwise, full work resumes May 26 06:00 UTC when agent limit resets.
 
 ---
 
