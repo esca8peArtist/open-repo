@@ -398,6 +398,34 @@
 
 ---
 
+### 39. ✅ mfg-farm — Phase 1B Test-Print Contingency & Rapid Restart Playbook (May 23 COMPLETE)
+**Status**: Completed May 23 (Session [current]). File: `TEST_PRINT_CONTINGENCY_PLAYBOOK.md` (14K words).
+- ✅ Success path: 5-day May 23-29 timeline (tolerance validation → photography → supplier outreach → inventory printing → launch)
+- ✅ Failure paths: 6 failure mode diagnostic trees (Jaw gap, Snap arm, Cable post, Rubber pad, Layer separation, AMS color variance)
+- ✅ Recovery decision tree: 1-day recovery (slicer fix), 3-day recovery (filament/nozzle), 8-day deferral (structural issue)
+- ✅ Phase 1B timeline: T+0 through T+7 with daily checklist, success metrics, contingency paths
+**Key finding**: Test print success unlocks May 29 launch on optimal Thursday recency window. Any failure mode <0.1mm out-of-spec is 1-day recoverable. Structural issues (jaw gap >0.2mm or systematic defects) → defer to June 3 post-Phase-1-validation.
+
+### 40. ✅ seedwarden — May 30 Go/No-Go Rollback & Contingency Activation (May 23 COMPLETE)
+**Status**: Completed May 23 (Session [current]). File: `MAY_30_DECISION_GATE_CONTINGENCY_PLAYBOOK.md` (11K words).
+- ✅ Edge Case 1: Decision delayed → Auto-advance to C2 default at May 30 18:00 UTC with 48h notification email
+- ✅ Edge Case 2: Vendor no-show → Backup supplier escalation + self-execute fallback (Canva freelancer or self-design)
+- ✅ Edge Case 3: Writer unavailability → Co-author recruitment (3 pre-identified ND/RH candidates) or self-execute with 60-80 hour sprint
+- ✅ Edge Case 4: Scope ambiguity → Tiebreaker decision framework (cost/timeline/quality weights)
+- ✅ Contingency activation checklist (May 28-31 daily tasks)
+**Key finding**: May 30 decision is fixed gate with multiple pre-staged fallbacks. All contingency paths maintain June 1 implementation start. Cost impact: zero (C2 auto-default, co-author revenue share, or self-execute absorbed).
+
+### 41. ✅ systems-resilience — Phase 5 Wave 2 Author Onboarding Readiness & Contingency (May 23 COMPLETE)
+**Status**: Completed May 23 (Session [current]). File: `WAVE_2_AUTHOR_ONBOARDING_CONTINGENCY.md` (12K words).
+- ✅ Successful onboarding path: June 1-9 sprint (briefing → research kit → outline → first-draft checkpoint)
+- ✅ Co-author contingency: 3 pre-identified candidates (Dr. Sarah Cho, Michael James, Jennifer Park) with 4-hour recruitment window
+- ✅ Self-execute fallbacks: Option B1 (Psychological only), B2 (both guides peer-co-authored), B3 (scaled-back scope)
+- ✅ Hybrid model: Primary author 50% + co-author 50% for workload sharing
+- ✅ Activation checklist (May 28-31 daily tasks, author status confirmation)
+**Key finding**: Author confirmation deadline May 30 16:00 UTC. Co-author recruitment requires <24h turnaround (May 30 afternoon). All outcomes maintain June 10 production start. Self-execute (Option B2) is feasible at 40-50 orchestrator hours if author declines. Quality differential (author-written vs. self-execute) is 0.5-1.0 on 10-point scale; delivery date remains July 10.
+
+---
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
