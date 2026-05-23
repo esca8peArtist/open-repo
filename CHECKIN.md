@@ -1,16 +1,20 @@
-## Since Last Check-in (Session 1644, May 23 02:40 UTC)
+## Since Last Check-in (Session 1645, May 23 02:52 UTC)
 
-**What was done**: Hold pattern verification #19 — confirmed all 4 blocks unchanged (Jetson still unreachable, signal log 17/44 unfilled, test print pending, VeraCrypt restart pending). Agent limit remains HARD through May 26 06:00 UTC. No autonomous work available.
+**What was done**: Hold pattern verification #20 — Jetson health check confirmed timeout (API still unreachable, 12.75h downtime). All 4 blocks verified unchanged and stable. Agent limit remains HARD through May 26 06:00 UTC. No autonomous work available.
 
-**What's blocked**: All forward progress on every project — 100% blocked on user actions or external dependencies (Jetson SSH outcome, signal log fill by May 25, test print execution, VeraCrypt machine restart).
+**What's blocked**: All forward progress on every project — 100% blocked on user actions or external dependencies:
+1. **stockbot**: Jetson unreachable since May 22 14:00 UTC; outcome classification impossible without SSH verification
+2. **resistance-research**: 17 [fill] placeholders remain (deadline May 25 18:00 UTC for re-synthesis)
+3. **mfg-farm**: Test print pending execution (overdue May 22-23)
+4. **cybersecurity-hardening**: VeraCrypt pre-boot restart pending (Windows user action)
 
 **Awaiting user input**:
-- **URGENT (by May 24)**: SSH to Jetson and verify API status to determine checkpoint outcome classification
-- **May 25 18:00 UTC deadline**: Fill 17 remaining [fill] placeholders in signal log for re-synthesis
-- **Overdue**: Execute test print for mfg-farm 
-- **Pending**: Windows machine restart for VeraCrypt encryption
+- **URGENT (by May 24)**: SSH to Jetson `ssh ubuntu@100.120.18.84 "curl -s http://localhost:8000/api/health"` to verify API status and retrieve checkpoint outcome (PASS/NEAR-MISS/FAR-MISS)
+- **May 25 18:00 UTC deadline**: Fill 17 remaining [fill] placeholders in `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` for May 25 re-synthesis
+- **Overdue**: Execute test print for mfg-farm (0.20mm layer height, PLA+, 3 walls, 220–225°C) and report outcome
+- **Pending**: Restart Windows machine, enter VeraCrypt pre-boot password, click Encrypt
 
-**Suggested next action**: If you can resolve any of the 4 blocks (especially Jetson outcome), reach out and unblock forward progress. Otherwise, orchestrator will resume full work capacity on May 26 06:00 UTC when agent limit resets.
+**Suggested next action**: If you can resolve any of the 4 blocks—especially Jetson SSH verification—reach out immediately. Otherwise, orchestrator will resume full work capacity on **May 26 06:00 UTC** when agent limit resets.
 
 ---
 
