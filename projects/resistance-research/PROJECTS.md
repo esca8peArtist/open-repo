@@ -7,17 +7,43 @@
 
 ## Current Focus
 
-*Updated: May 26, 2026 — Phase 2 expansion readiness validated (Session 1653)*
+*Updated: May 27, 2026 — Final May 28–June 1 distribution readiness verification (Session 1693)*
 
-**Phase 2 May 28-June 1 distribution: READY WITH THREE FLAGGED GAPS**
+**MAY 28 CRITICAL TIMELINE — ONE BLOCKER: CREATE GIST BEFORE 13:00 UTC**
 
-Session 1653 readiness validation confirmed all four domains (56, 39, 57, 59) are production-ready. Three gaps require user action:
+Session 1693 pre-launch verification complete. Both domains are production-ready. The single remaining blocker is the Domain 56 GitHub Gist, which has not yet been created.
 
-1. **Domain 39 Gist URL not pre-filled** — replace `[Gist URL — insert before send]` with `https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b` across all 5 email templates before May 30 send. (~5 min, find-and-replace in `DOMAIN_39_JUNE1_PRE_PRODUCTION_CHECKLIST.md`)
-2. **Domain 56 Tier 2 send window slipped** — original window May 20-24 passed; updated window May 26-28 is still open. Verify whether Volcker Alliance, Democracy Forward, CREW, and Government Executive have been sent or remain pending. Log sends in `DISTRIBUTION_EXECUTION_LOG.md`.
-3. **Signal log must be filled before May 28 19:00 UTC** — run `grep -c '\[fill\]' projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` and resolve any remaining placeholders before synthesis script runs.
+### Domain 56 (Civil Service) — May 28 Send
 
-TOO_EARLY contingency staging document: `TOO_EARLY_CONTINGENCY_STAGING_MAY26.md` — authoritative reference for all May 26-June 3 execution.
+**Status**: CLEAR TO SEND — pending Gist creation (10-minute web UI task)
+
+**Execution guide**: `execution/MAY_28_FINAL_EXECUTION_GUIDE.md` — full step-by-step with timeline, Gist creation procedure, placeholder fill instructions, per-email send checklist, and troubleshooting.
+
+**May 28 timeline**:
+- **06:00 UTC (recommended)** or by 13:00 UTC at latest: Create GitHub Gist at https://gist.github.com/new (logged in as esca8peArtist). Source: `domain-56-civil-service-politicization-governance.md` (349 lines, 47 citations). Full procedure in Step 1 of `execution/MAY_28_FINAL_EXECUTION_GUIDE.md`.
+- **06:10–06:30 UTC**: Find-and-replace Gist URL (19 instances across `execution/domain-56-email-template.md` + `execution/domain-56-social-media.md`). Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] (8 instances). Spot-check 5 Tier 1 contact emails.
+- **14:00–14:15 UTC**: Send 5 Tier 1 emails in order: Partnership for Public Service (T1), GAP (T4), AFGE (T2), Protect Democracy (T4, form), NTEU (T2).
+- **14:30–18:00 UTC**: Post 4 social media posts (Post 5 deferred to May 29 10:00 UTC).
+- **18:00 UTC HARD STOP** — synthesis runs at 19:00 UTC; all sends must complete before then.
+
+**Contingency**: If Gist not created by 13:00 UTC, postpone all sends to May 29. June 1 Domain 39 send is unaffected.
+
+### Domain 39 (Healthcare) — June 1 Send
+
+**Status**: PRODUCTION READY — NO BLOCKERS
+
+- Gist live and confirmed accessible: https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b (HTTP 200 verified May 27)
+- 3 templates ready (`execution/domain-39-email-templates.md`), 18 contacts verified (`execution/domain-39-contact-list.md`)
+- June 1 action: fill [YOUR_NAME], [YOUR_CONTACT_INFO], [GIST_URL] + org-specific fields, verify HHS rule status at 13:00 UTC, send 5 Tier 1 emails 13:00–13:30 UTC
+- Full June 1 checklist: `AUDIT_DOMAIN_56_39_MAY28_JUNE1.md` Section 7.2
+
+**Note on Georgetown CCF**: Use `childhealth@georgetown.edu` (corrected May 26) — NOT ccf@georgetown.edu.
+
+---
+
+*Previous entry (May 26, 2026 — Session 1653):*
+
+**Phase 2 May 28-June 1 distribution: READY WITH THREE FLAGGED GAPS** — Session 1653 readiness validation confirmed all four domains (56, 39, 57, 59) production-ready. Gaps from that session: Domain 39 Gist URL pre-fill (resolved — Gist now live); Domain 56 Tier 2 window verification; signal log fill before 19:00 UTC synthesis. TOO_EARLY contingency staging document: `TOO_EARLY_CONTINGENCY_STAGING_MAY26.md`.
 
 *Previous entry:*
 
