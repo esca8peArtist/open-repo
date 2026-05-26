@@ -163,13 +163,61 @@ Note: Black Cohosh (Women's Health) and Goldenseal (Immunity) are confirmed post
 
 ---
 
+---
+
+## May 26 Supplier Constraint Update (Session 1655)
+
+**Critical finding**: Strictly Medicinal Seeds pauses live plant and root shipping during summer heat (typically mid-June through August). This changes the Tier 3 live specimen sourcing assumption for Echinacea purpurea, Passionflower, and Valerian.
+
+**Revised supplier map** (as of May 26):
+
+| Herb | Live Specimen Path | Revised Status |
+|---|---|---|
+| Elderberry | Local nursery 2-gal potted shrub | UNCHANGED — universal June availability; confirm June 1 |
+| Echinacea purpurea | SM live plant (CONDITIONAL on Action 1 email) OR Prairie Moon June check OR Wikimedia CC-BY-SA | REVISED — SM summer shutdown risk; Wikimedia CC path confirmed launch-quality |
+| Lavender | Local nursery potted start | UNCHANGED — universal June-July availability |
+| Lemon Balm | Local nursery potted start | UNCHANGED — universal June-July availability |
+| Mullein | Wikimedia CC-BY-SA only (roadside biennial, not sold at nurseries) | UNCHANGED |
+| Passionflower | SM live plant (CONDITIONAL) OR Prairie Moon June check OR Wikimedia CC-BY-SA | REVISED — SM summer shutdown risk; Wikimedia CC confirmed launch-quality |
+| Valerian | SM live plant (CONDITIONAL) OR Prairie Moon June check OR local herb nursery | REVISED — SM summer shutdown risk; Wikimedia CC confirmed adequate quality |
+
+**Impact on herb selection**: None. The 7-herb selection is unchanged. The SM summer-shutdown finding affects only the live-specimen photography timing. All 7 herbs have confirmed Wikimedia CC-BY-SA photo coverage sufficient for sprint launch — live specimens are a v1.1 photography upgrade, not a launch requirement for any of the 7 sprint herbs.
+
+**Action required**: See `SUPPLIER_CONFIRMATION_ACTION_LIST.md` Action 1 and Action 3.
+
+---
+
+## Etsy Market Demand Validation (Session 1655, May 26)
+
+Research confirmed the global herbal medicinal products market at approximately $271 billion in 2026, growing at 8.4% CAGR through 2036. Etsy digital download demand for herbalist guides is confirmed active, with multiple bestselling guides in the 180-250 page range covering sleep, immune support, respiratory health, and digestive wellness.
+
+**Demand validation by herb**:
+
+| Herb | Market Signal | Etsy Content Gap | Seedwarden Differentiation |
+|---|---|---|---|
+| Elderberry | Immune support is the #1 searched herbal category; elderberry syrup/tincture keywords are among the highest-volume herb terms | Supplement-framing guides dominate; cultivation and native-species content is thin | Cultivation + S. canadensis native species distinction + Sambucol RCT framing |
+| Echinacea | One of the most searched herbal supplement terms; consistent high volume | Species distinction (purpurea vs. angustifolia) is absent from all PLR guides | Two-species story + prairie restoration angle + UpS At-Risk conservation sidebar |
+| Lavender | Highest-recognition wellness herb; top-searched in Etsy bath/apothecary category | Lifestyle guides dominate; cultivation-depth guides are rare | Zone-specific cultivation + English vs. French distinction + distillation vs. fresh harvest |
+| Lemon Balm | High search volume for anxiety and sleep support; tea preparation is the gateway search | General recipe guides dominate; dual nervine+digestive cultivation guides absent | Dual nervine-carminative profile + forager cohort tea bridge + homesteader growing content |
+| Mullein | Cough/ear oil searches consistently high; roadside harvest angle has high forager appeal | Remedy-framing guides dominate; biennial lifecycle cultivation guides essentially absent | Biennial lifecycle content + roadside harvest legality by state + ear oil as culinary-category preparation |
+| Passionflower | Sleep and anxiety category is the fastest-growing herbal Etsy segment; passionflower thumbnail drives high click-through | Anxiolytic supplement guides dominate; native-plant cultivation and maypop fruit content absent | Native *P. incarnata* cultivation + trellis requirements + maypop fruit forager bridge |
+| Valerian | Most recognized sleep herb; "valerian root cultivation" searches are thin relative to supplement demand | Supplement capsule guides dominate; root-cultivation and harvest-timing guides essentially absent on Etsy | Root-cultivation focus + second-year harvest timing + drying protocol + European herbalism history |
+
+**Ashwagandha demand note**: Ashwagandha has crossed from specialty to mainstream as a global adaptogen ingredient (stress, sleep, and adaptogen formulations). Confirmed for the post-sprint Immunity bundle (July 20 target); highest-search-volume adaptogen on Etsy. Not a sprint herb but a high-priority post-sprint anchor.
+
+---
+
 ## Sources
 
 All species assessments synthesize:
 - `medicinal-herbs-candidate-list.md` (May 7, 2026) — full demand, availability, and margin analysis
-- `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md` (v5.0, May 22, 2026) — real-time stock confirmations
+- `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.csv` (v2.0, May 26, 2026) — real-time stock confirmations including SM summer-shutdown update
 - `phase-3-medicinal-herbs-sourcing-guide.md` (May 7, 2026) — photo sourcing paths per species
 - `PHASE_3_PRODUCTION_TIMELINE.md` (v4.0, May 20, 2026) — sprint schedule and critical path
 - [United Plant Savers At-Risk list](https://unitedplantsavers.org/species-at-risk/) — conservation status reference
 - [Etsy search: herbalist guide](https://www.etsy.com/market/herbalist_guide) — demand signal reference
+- [Etsy search: herbal medicine ebook](https://www.etsy.com/market/herbal_medicine_ebook) — category demand cross-check
 - [FTC Health Products Compliance Guidance](https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance) — FTC framing standards
+- [Global Herbal Medicinal Products Market 2026](https://www.futuremarketinsights.com/reports/herbal-medicinal-products-market) — macro market sizing
+- [Strictly Medicinal Seeds shipping FAQ](https://strictlymedicinalseeds.com/frequently-asked-questions-and-answers/) — summer plant shipping pause confirmed
+- [Prairie Moon Nursery shipping information](https://www.prairiemoon.com/shipping-information.html) — spring potted plant window context

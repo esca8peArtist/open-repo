@@ -4,6 +4,38 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 3 Pre-Production Checklist Update — Session 1655, May 26, 2026
+
+**Task**: Build pre-production checklist for Phase 3 medicinal herbs launch (June 22-July 13). Review and update all four deliverables from Session 1509. Sprint start June 22 (27 days away).
+
+**Critical finding**: Strictly Medicinal Seeds pauses live plant and root shipping during summer heat (typically mid-June through August). This changes the Tier 3 live plant sourcing assumption for Echinacea, Passionflower, and Valerian. All three herbs have confirmed Wikimedia CC-BY-SA launch-quality photos — the Wikimedia path was the planned launch path regardless. No impact on herb selection.
+
+**Files updated** (all in `projects/seedwarden/`):
+
+1. `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.csv` — v2.0 update. Added `Status as of May 26 2026` column with per-supplier status changes. Key changes: Strictly Medicinal flagged with summer plant shipping pause; Prairie Moon summer window noted as narrow (spring potted plants ship April-June, mid-summer limited); Action deadlines updated (MRH order rec. date moved to June 13 from June 15). All prior May 22 stockout data preserved.
+
+2. `SUPPLIER_CONFIRMATION_ACTION_LIST.md` — v2.0 update. Action 3 fully revised to reflect SM summer shutdown risk. New 4-step decision tree: (1) check SM email response, (2) check Prairie Moon June 1, (3) buy local nursery Elderberry/Lavender/Lemon Balm, (4) confirm Wikimedia CC path for remaining Tier 3 herbs. Action 1 email revised to ask about summer shipping schedule. Total user time ~60 min across 27 days.
+
+3. `PHASE_3_PRODUCTION_TIMELINE_SKELETON.csv` — Added 6 pre-sprint rows (Actions 1-5 with dates and floats; June 21 pre-sprint readiness audit). Day numbering unchanged (Day 1 = June 22). Sprint end July 13 unchanged.
+
+4. `PHASE_3_MEDICINAL_HERB_SELECTION.md` — Added May 26 Supplier Constraint Update section (SM shutdown, revised supplier map per herb) and Etsy Market Demand Validation section (demand signals per herb, Ashwagandha post-sprint note, market sizing data). Herb selection recommendation unchanged.
+
+**Market demand validation (Session 1655)**:
+- Global herbal medicinal products market: ~$271B in 2026, 8.4% CAGR through 2036.
+- Etsy herbalist guide digital download market confirmed active; multiple bestsellers in sleep/immune/respiratory/digestive categories.
+- All 7 sprint herbs have confirmed Etsy demand gaps in the cultivation-guide angle — no PLR or supplement-framing guide covers the two-species Echinacea story, biennial Mullein lifecycle, root-cultivation Valerian, or maypop fruit Passionflower bridge.
+
+**Supplier status as of May 26**:
+- Mountain Rose Herbs: ACTIVE — 11 sprint herb skus assumed in stock (individual sku status not phone-confirmed); Goldenseal root and Black Cohosh root remain out of stock. Order by June 13.
+- Strictly Medicinal Seeds: CONDITIONAL — summer plant shipping pause pattern confirmed. Email inquiry (Action 1) due May 27 to confirm late-June shipping viability.
+- Prairie Moon: UNCERTAIN for late-June potted plants — spring season window closes by end of June; check June 1.
+- NativeWildflowers.net: CONFIRMED for Black Cohosh ($5.99) and Goldenseal ($4.99) bareroot; order Black Cohosh by May 30.
+- Local nurseries: PRIMARY for Elderberry, Lavender, Lemon Balm — universal June-July availability confirmed.
+
+**No species-level changes**: 7-herb selection (Elderberry, Echinacea, Lavender, Lemon Balm, Mullein, Passionflower, Valerian) is unchanged. Sprint timeline June 22-July 13 unchanged. Three milestones (Women's Health June 29, Respiratory July 4-7, Sleep July 13) unchanged.
+
+---
+
 ## Phase 3 Pre-Production Package — May 26, 2026
 
 **Task**: Phase 3 medicinal herbs pre-production. Five deliverables for May 28-30 decision window. Sprint start June 22 (27 days away).
