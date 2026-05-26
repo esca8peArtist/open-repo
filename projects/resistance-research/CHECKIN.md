@@ -1,8 +1,46 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 19, 2026 — Session 1337 breaking developments scan + May 21 synthesis prep complete*
+*Updated: May 26, 2026 — Domain 39 Gist LIVE + May 28 pre-synthesis verification complete (Session 1665)*
 
 ---
+
+## DOMAIN 58 RAPID-RESPONSE: TWO DEVELOPMENTS CONFIRMED (May 26, 2026)
+
+**Turtle Mountain Band v. Howe — GVR issued May 18**: SCOTUS vacated the 8th Circuit's ruling that had eliminated private plaintiffs' right to enforce VRA Section 2. Remanded for reconsideration under *Callais*. Tribal plaintiffs (Spirit Lake Tribe, Turtle Mountain Band) remain in active litigation. Adds to Domain 58 Pathway 1 (VRA enforcement). Update Domain 58 before June 10 distribution.
+
+**Montana SB 490 — Injunction confirmed May 11**: Montana First Judicial District Court enjoined SB 490, which would have eliminated 8 hours of Election Day voter registration. Tribal intervenors (Confederated Salish and Kootenai Tribes, Blackfeet Nation, Fort Belknap, Northern Cheyenne, Western Native Voice) prevailed. Add to Domain 58 as defensive win. Source: NARF (narf.org/cases/mt-electoral-process-2025/).
+
+**Trump v. Barbara — Still pending**: No ruling issued as of May 26. Oral argument signals (April 1) suggested Court skeptical of administration position. Expected late June / early July. Rapid-response protocol: `trump-v-barbara-rapid-response.md` — confirmed present.
+
+**Files created this session**:
+- `DOMAIN_39_GIST_VERIFICATION_MAY26.md` — Gist accessibility check, contact verification, June 1 readiness
+- `MAY_28_RESYNTHESIS_READINESS_CHECKLIST.md` — all domains verified, templates confirmed, tribal developments logged
+- `DOMAIN_56_MAY28_EMAIL_PREVIEW.md` — 2-3 line preview of all 4 Domain 56 templates with send order
+
+---
+
+## MAY 28 SYNTHESIS EXECUTION — 32 HOURS AWAY (May 26, 2026)
+
+**Execution time**: May 28 19:00 UTC
+
+**Full runbook**: `MAY_28_SYNTHESIS_EXECUTION_CHECKLIST.md`
+
+**Critical warning — stale output file**: `synthesis-execution-output.md` already exists from a prior May 19 test run and shows `classification: MODERATE`. If `synthesis-outcome-router.py` is run WITHOUT first re-running `synthesis-execution-monitor.py`, the router will pick up this stale MODERATE classification. Always run the monitor FIRST (Step B in the runbook), then the router (Step C).
+
+**Georgetown CCF correction applied May 26**: All actionable distribution files have been updated to use `childhealth@georgetown.edu` (NOT ccf@georgetown.edu). Files corrected: DOMAIN_39_JUNE1_PRE_PRODUCTION_CHECKLIST.md, PHASE_2_DISTRIBUTION_EXECUTION_CHECKLIST.md, PHASE_2_PRODUCTION_INFRASTRUCTURE.md, DOMAIN_39_DISTRIBUTION_STRATEGY.md.
+
+**New files created this session**:
+- `MAY_28_SYNTHESIS_EXECUTION_CHECKLIST.md` — unified runbook (Domain 56 sends + synthesis + outcome routing)
+- `MAY_28_OUTCOME_DECISION_QUICK_REFERENCE.md` — one-page guide for each of 5 outcomes
+
+**Signal log must be filled before synthesis runs**:
+- File: `post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+- Check remaining [fill] fields: `grep -c '\[fill\]' projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+- If result > 0: fill those fields before 19:00 UTC May 28
+
+---
+
+
 
 ## SESSION 1337 STATUS — May 19, 2026
 
