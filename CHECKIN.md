@@ -16518,3 +16518,48 @@ Fri 23 May 01:15:42 UTC 2026
 **To commit**: WORKLOG.md, CHECKIN.md
 
 Fri 23 May 06:45:23 UTC 2026
+
+## Since Last Check-in (Session 1645, May 26 05:52–07:00 UTC) — ORCHESTRATOR + 1 PARALLEL AGENT: resistance-research Phase 2 Distribution Prep
+
+**Status**: ✅ **2 major deliverables COMPLETE** | ❌ **Jetson unreachable (73+ hours)** | ⏳ **Signal log: 17 [fill] remaining for May 28 re-synthesis** | 🎯 **May 28-30 execution window clear**
+
+**What was accomplished**:
+
+1. ✅ **EXPLORATION_QUEUE Item 13: Jetson Multi-Ticker Deployment Validation** (orchestrator solo, 30 min)
+   - Created: `scripts/validate_3_4_session_config.py` (validates JSON structure, position sizing, HMM parameters)
+   - **Deliverable**: Validation script confirms 3-session ($70K) and 4-session ($100K) configs structurally ready
+   - **Blocker identified**: Placeholder stacker IDs for AMZN/JPM await model training (45–65 min post-Jetson-recovery)
+   - **Deployment timeline**: May 28–June 1 (post-Jetson-recovery); June 15 hard deadline for Lever B fallback
+
+2. ✅ **resistance-research: Phase 2 Domain 56/39 Distribution Finalization** (parallel agent, 1 hr)
+   - **Deliverable 1**: `DOMAIN_56_TIER_2_DISTRIBUTION_MAY28_CHECKLIST.md` (execution-ready for May 28)
+     - 4 organizations: Volcker Alliance, Democracy Forward, CREW, Government Executive
+     - Complete step-by-step runbook with Bitly tracking, 72h response monitoring, contingency procedures
+   - **Deliverable 2**: `DOMAIN_39_JUNE1_PRE_PRODUCTION_CHECKLIST.md` (execution-ready for May 30–June 3)
+     - 5 ready-to-send templates: Georgetown CCF, NHeLP, Brennan, IRG, Black Mamas Matter
+     - Pre-production sequence with Gist creation blocking step (May 29 user action)
+     - Send schedule optimized per organization response timelines
+   - **Key finding**: Both Domain 56/39 distributions are SYNTHESIS-OUTCOME-INDEPENDENT. Ready for execution regardless of May 25 re-synthesis result (STRONG/MODERATE/WEAK/TOO_EARLY).
+
+**Critical path timeline**:
+- **May 26 (completed)**: Item 13 validation + Domain 56/39 checklists ready ✅
+- **May 28 (user action)**: Domain 56 Tier 2 emails sent (45 min task); re-synthesis executes ~19:00 UTC
+- **May 29 (user action)**: Domain 39 Gist created (blocking step for May 30+ sends)
+- **May 30–June 3 (user action)**: Domain 39 sends per timeline (Georgetown May 30, Brennan/IRG June 1, Black Mamas June 2-3)
+- **June 1**: Phase 1 Impact Framework deployment begins; Phase 2 measurement dashboard activated
+
+**Blocks remain unchanged** (73+ hours):
+- ❌ Jetson unreachable since May 22 14:00 UTC (awaiting user SSH verification)
+- ❌ Signal log unfilled: 17 [fill] remaining; deadline May 28 ~19:00 UTC for re-synthesis
+- ⏳ Cybersecurity-hardening: VeraCrypt restart pending (user action); mfg-farm: test print pending (user action)
+
+**Needs your input**:
+1. **URGENT — Jetson SSH verification**: Can you run `curl -s http://100.120.18.84:8000/api/health | jq .status` to confirm Jetson is reachable? If it times out, Jetson remains down; if it returns JSON, checkpoint outcome can be retrieved.
+2. **May 28 deadline — Signal log completion**: 17 [fill] placeholders must be filled by May 28 18:00 UTC for re-synthesis execution. Progress noted (20→17 from May 25), so user is working on it. Confirm ETA if possible.
+3. **Domain 39 Gist creation**: May 29 user action required. Can you create the Gist from `projects/resistance-research/domains/domain-39-healthcare-access-democratic-infrastructure.md` by May 29 morning? Instructions in `DOMAIN_39_JUNE1_PRE_PRODUCTION_CHECKLIST.md` Section 2.
+
+**Suggested priorities for next session**:
+1. **Verify Jetson status** (highest ROI — unlocks stockbot Phase 2, model training, checkpoint outcome classification)
+2. **Complete signal log fill** (enables May 28 re-synthesis; determines Phase 2 sequencing)
+3. **Execute Domain 56 distribution** (May 28, 45 min user task; infrastructure ready)
+

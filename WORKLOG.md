@@ -14990,3 +14990,26 @@ Of these, farm equipment repair and mesh networking/microgrid are executable NOW
 **Next action**:
 User SSH verification to Jetson (pending BLOCKED.md resolution) → orchestrator runs model training → deployment execution immediately upon training completion.
 
+
+### 2. ✅ **resistance-research: Phase 2 Domain 56/39 Distribution Finalization** (parallel agent, 1 hr)
+   - **Deliverable 1**: `DOMAIN_56_TIER_2_DISTRIBUTION_MAY28_CHECKLIST.md` (complete execution runbook)
+     - May 28 send timeline finalized (original May 22-24 window has passed)
+     - 4 organizations mapped to templates: Volcker Alliance, Democracy Forward, CREW, Government Executive
+     - Step-by-step instructions with exact subject lines, Bitly tracking setup, send log table, 72h response tracking
+     - Contingency: follow-up procedure if no response after 72h
+     - Ready for user execution: user fills [YOUR_NAME] and [YOUR_CONTACT_INFO] once, then sends per checklist
+   - **Deliverable 2**: `DOMAIN_39_JUNE1_PRE_PRODUCTION_CHECKLIST.md` (pre-production + execution guide)
+     - 5 ready-to-send email templates: Georgetown CCF, NHeLP, Brennan Center, Institute for Responsive Government, Black Mamas Matter Alliance
+     - Pre-production sequence (source verification, Gist creation May 29, contact verification, template prep)
+     - Send schedule: Georgetown/NHeLP May 30 (pre-HHS rule), Brennan/IRG June 1 (news hook), Black Mamas Matter June 2-3 (post-Tier 1 response)
+     - Coordination with Domain 56 (prevent scheduling conflicts)
+   - **Key finding**: Domain 56/39 distributions are execution-ready REGARDLESS OF May 25 SYNTHESIS OUTCOME. Both TOO_EARLY contingency and STRONG/MODERATE paths are now supported.
+   - **Critical blocker identified**: Domain 39 Gist creation required by May 29 (user action before May 30 email sends)
+   - **Timeline**: May 26 (user fills name/contact) → May 28 (Domain 56 sends) → May 29 (Domain 39 Gist creation) → May 30–June 3 (Domain 39 sends per schedule)
+
+**Session 1645 Status Summary**:
+- ✅ Item 13 (stockbot deployment validation) COMPLETE — 3-4 session configs validated locally
+- ✅ Phase 2 distribution prep (resistance-research) COMPLETE — Domains 56/39 checklists production-ready
+- 🔴 Critical blockers remain: Jetson unreachable (73+ hours), signal log unfilled (17 [fill] remaining, deadline May 28 ~19:00 UTC)
+- 📅 Next major milestone: May 28 (Domain 56 distribution + re-synthesis execution)
+
