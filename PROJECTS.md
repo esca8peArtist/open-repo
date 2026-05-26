@@ -440,7 +440,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: ⏳ **Jetson unreachable since May 22 14:00 UTC (72+ hours)** — May 22 checkpoint EXECUTED autonomously but outcome cannot be retrieved (API endpoint unreachable). AMZN/JPM multi-ticker code pre-staged and validated locally (VaR: $188.21, 0.16% equity). Phase 2 activation blocked on Jetson SSH reconnect for outcome classification. See BLOCKED.md for verification command and required user action.
+**Current focus**: ✅ **Jetson BACK ONLINE (May 22-26)**. Deployment automation executed successfully May 26; all code and `active-sessions-4session.json` synced to `/opt/stockbot/`. AMZN and JPM pkl models present on Jetson. Phase 2 activation blocked on 3 deployment blockers: (1) **stacker_ids not populated** (need to extract UUIDs from running models via Docker), (2) **JPM model type mismatch** (config expects ridge_wf, only lgbm_ho pkl exists), (3) **DB backup not taken** (pre-switch safety requirement). See BLOCKED.md for details and extraction commands. Test suite: all 960 tests passing (fixed 1 test isolation bug). Deployment checklist items 1.1–1.3 ready; items 1.4–1.7 blocked.
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`

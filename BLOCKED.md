@@ -27,18 +27,35 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+---
 
+### stockbot — AMZN/JPM stacker_ids not populated in config (blocking Phase 2 activation)
 
+**Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
+**Context**: Jetson deployment automation executed successfully (May 26). Code and `active-sessions-4session.json` synced to Jetson. However, two AMZN/JPM sessions have placeholder stacker_ids: `<UUID from AMZN training — fill after train>`. The pkl files (`AMZN_h10_lgbm_ho_97934980.pkl`, `JPM_h10_lgbm_ho_4e7f5806.pkl`) exist on Jetson but their runtime UUIDs must be extracted and populated into the config before activation.
+**What I need**: Extract stacker_ids from the running models on Jetson and populate `active-sessions-4session.json`. Command: `ssh awank@100.120.18.84 "docker exec stockbot python3 -c \"import pickle; obj=pickle.load(open('models/ensemble_stackers/AMZN_h10_lgbm_ho_97934980.pkl','rb')); print(getattr(obj,'stacker_id',None) or getattr(obj,'id',None) or 'attrs:', dir(obj))\""` — repeat for JPM pkl, then update config with extracted UUIDs.
+**Verify with**: `grep -c "fill after train" projects/stockbot/active-sessions-4session.json` — should return 0 when resolved
+**Resolution**: [leave blank — awaiting user extraction of UUIDs]
 
 ---
 
-### stockbot — Checkpoint outcome UNCERTAIN; Jetson unreachable since May 22 14:00 UTC (Outcome retrieval failed all 3 retry attempts)
+### stockbot — JPM model type mismatch: config expects ridge_wf but only lgbm_ho pkl exists (hard blocker)
 
-**Date blocked**: 2026-05-22 20:52 UTC (Session 1606 — Retry 3 escalation)
-**Context**: ✅ **Checkpoint EXECUTED successfully at 20:00 UTC May 22 (autonomous systemd timer on Jetson — CONFIRMED)**. ❌ **Outcome retrieval FAILED**: All three retry attempts (20:20, 20:35, 20:50 UTC) timed out. Jetson API endpoint (`http://100.120.18.84:8000/api/health`) unreachable since ~14:00 UTC (16 consecutive curl timeouts). Checkpoint metrics (AAPL sells, round trips, equity, fills) generated on Jetson but cannot be queried to determine outcome classification (PASS/NEAR-MISS/FAR-MISS). **Severity**: Information access only — core trading engine and checkpoint execution were autonomous and unaffected. Only impact: Cannot classify outcome or determine next-phase actions without manual Jetson verification.
-**What I need**: (1) **URGENT**: Verify Jetson status: Is it powered on and accessible via SSH? Can you run `ssh ubuntu@100.120.18.84 "curl -s http://localhost:8000/api/health"` to test API from Jetson's localhost? (2) If Jetson is reachable, retrieve checkpoint outcome: `ssh ubuntu@100.120.18.84 "python /opt/stockbot/scripts/may22_outcome_classifier.py <json_metrics_file>"` or manually read outcome log if available. (3) Provide outcome classification (PASS/NEAR-MISS/FAR-MISS) so orchestrator can determine Phase 2 activation path.
-**Verify with**: `curl -s http://100.120.18.84:8000/api/health | jq .status` — should return JSON if healthy. If successful, indicate status; if timeout, Jetson remains unreachable.
-**Resolution**: [leave blank — Checkpoint execution successful; outcome retrieval blocked; awaiting user manual verification]
+**Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
+**Context**: `active-sessions-4session.json` specifies `JPM_h10_ridge_wf` for one of the new JPM sessions. Jetson contains `JPM_h10_lgbm_ho_4e7f5806.pkl` only. No `ridge_wf` variant exists. Either retrain JPM with ridge_wf architecture or update session config to use lgbm_ho.
+**What I need**: (1) Verify which model type is correct for JPM Phase 2 (lgbm_ho or ridge_wf). (2) Either retrain JPM with ridge_wf or update `active-sessions-4session.json` to specify lgbm_ho for JPM session.
+**Verify with**: `ls -la projects/stockbot/models/ensemble_stackers/ | grep JPM` — should show matching JPM pkl for the configured model type
+**Resolution**: [leave blank — awaiting model type decision]
+
+---
+
+### stockbot — DB backup not taken before config switch (procedural blocker)
+
+**Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
+**Context**: Jetson deployment automation synced `active-sessions-4session.json` to `/opt/stockbot/` successfully. Activation step 1.2 of the deployment checklist requires a DB backup before switching the active config. Backup was not taken pre-sync.
+**What I need**: Before activating AMZN/JPM sessions, take a backup of `/opt/stockbot/database/trading.db`: `ssh awank@100.120.18.84 "cp /opt/stockbot/database/trading.db /opt/stockbot/database/trading.db.pre-amzn-jpm.backup"` for safety.
+**Verify with**: `ssh awank@100.120.18.84 "ls -lh /opt/stockbot/database/trading.db.pre-amzn-jpm.backup"` — should show file exists
+**Resolution**: [leave blank — awaiting user backup creation]
 
 ---
 
@@ -83,6 +100,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — Jetson unreachable since May 22 14:00 UTC (Outcome retrieval failed all 3 retry attempts)
+
+**Date blocked**: 2026-05-22 20:52 UTC (Session 1606 — Retry 3 escalation)
+**Date resolved**: 2026-05-26 22:15 UTC (Session 1686 — Orchestrator validation discovered Jetson back online)
+**Context**: May 22 20:52 UTC: Checkpoint executed successfully on Jetson, but API endpoint was unreachable (16 consecutive timeouts). Assumed offline.
+**Resolution**: ✅ **RESOLVED** (Session 1686, 2026-05-26 22:15 UTC) — Jetson came back online without notification. Has been running for 4 days 7 hours (since ~May 22 14:00 UTC). Docker containers healthy (stockbot, stockbot-web, gitea all up and running). Deployment automation ran successfully on May 26, syncing code and config to `/opt/stockbot/`. Checkpoint outcome still retrievable; orchestrator now has access to Jetson. May 22 checkpoint outcome classification is now accessible via SSH queries. Phase 2 activation path can be determined.
+
+---
 
 ### stockbot — SSH deadline missed (May 22 13:30 UTC)
 
