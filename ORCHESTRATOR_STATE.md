@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-26T20:46:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-26T22:21:35Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 0.9% | Reset in 147h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.0% (93,423 tokens) | All-models 1.1% | Reset in 146h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **DISTRIBUTION PACKAGES VERIFIED READY — May 28 & June 1 (Session 1659)** | ✅ **DOMAIN 59 COMPLETE (Session 1665)** — 10,495 words, 58 citations; production-ready for Tier 1/2 distribution; identifies 200K-400K Zone 5 households facing compound May-August policy shock (student loan garnishment + Medicaid work requirements + SAVE Act documentation); critical NVRA/Medicaid outreach intersection for immediate org leverage. Ready for Gist creation + distribution template URLs by June 15 de … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **PHASE 1 WAVE 1 MONITORING INFRASTRUCTURE PRODUCTION-READY (Session 1675, May 26)** | **Domain 56 May 28 send** + **Domain 39 June 1 send** — Monitoring dashboard + reply triage + decision trees staged for May 27 pre-testing (enables same-day distribution execution). User actions: (1) Domain 56: Fill [YOUR_NAME] + [YOUR_CONTACT_INFO] in 4 templates (~5 min), send May 28. (2) Domain 39: Replace Gist URL + fill credentials (~25 min), May 31 pre-send checks (HHS rule status), send June 1. (3 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,20 +32,20 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 checkpoint EXECUTED (00:41 UTC, STILL_MISS_B2 outcome). Awaiting user approval for Lever B escalation.
-**Focus**: ⏳ **Jetson unreachable since May 22 14:00 UTC (72+ hours)** — May 22 checkpoint EXECUTED autonomously but outcome cannot be retrieved (API endpoint unreachable). AMZN/JPM multi-ticker code pre-staged and validated locally (VaR: $188.21, 0.16% equity). Phase 2 activation blocked on Jetson SSH reconnect for outcome classification. See BLOCKED.md for verification command and required user action.
+**Focus**: ✅ **Jetson BACK ONLINE (May 22-26)**. Deployment automation executed successfully May 26; all code and `active-sessions-4session.json` synced to `/opt/stockbot/`. AMZN and JPM pkl models present on Jetson. Phase 2 activation blocked on 3 deployment blockers: (1) **stacker_ids not populated** (need to extract UUIDs from running models via Docker), (2) **JPM model type mismatch** (config expects ridge_wf, only lgbm_ho pkl exists), (3) **DB backup not taken** (pre-switch safety requirement). See  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: ✅ **ZONE CARDS COMPLETE — May 30 launch unblocked (Session 1659)** — ✅ **Zone Quick-Start Cards production DONE** (8/8 PDFs generated, all zones production-ready, exported to `projects/seedwarden/assets/zone-cards/`; Python generator via fpdf2; eligible for monthly updates via `uv run python3 generate_zone_cards.py`). ✅ **Gate 3 Automation Kit COMPLETE (Session 1663)** — `GATE_3_AUTOMATION_KIT.md` (self-contained execution guide), `GATE_3_VERIFICATION_SCRIPT.sh` (bash validation), al … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **TRACK B READINESS VERIFICATION COMPLETE (Session 1675, May 26)** — All 8 zone PDFs verified production-ready (zero blocking defects). Zone card footer URL substitution identified (5-min pre-launch task). 15 pre-selected herbalist influencers staged (50K–80K reach), copy-paste email templates (5 variants), social media calendar (May 28–30 teaser + May 30 08:00 UTC launch), Day 3/7/14 monitoring checkpoints with decision thresholds. **Critical path**: Gates 1-2 completion by May 26 23: … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[RESOLVED] Phase 5.1 MVP MERGED + PRE-DEPLOYMENT ENDPOINT COMPLETE (Session 1656)** — ✅ **Merge complete**: feature/zimwriter-libzim-activation merged to master (commit c2572adc, all conflicts resolved) | ✅ **All tests passing**: 240 backend tests + 51 ZIM tests (9.01s) | ✅ **Export.py endpoint COMPLETE** (Session 1656, commit 67715d02): POST /api/v1/export endpoint + 28 tests, all passing; pre-deployment code-only work 100% complete. Zero breaking changes to Phase 4 federation. | **Re … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[RESOLVED] Phase 5.1 MVP MERGED (May 26)** — ✅ Feature merged (commit c2572adc), 240 backend tests + 51 ZIM tests passing, export endpoint complete. Pre-deployment checklist staged (libzim wheel, alembic upgrade, manual ZIM test). Phase 5.2 direction: Candidate 1 (ZimWriter) recommended, Candidates 2-3 (OPDS, A11y) ready for parallel development. Awaiting user approval on Phase 5 focus direction.
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **USER DECISION REQUIRED — May 31 deadline (Session 1664)** | Phase 5 COMPLETE (66.4K words, 423 citations, 12 documents). Phase 6 scope assessed. Two decisions pending: (1) **Phase 5 publication option** — Option A (Wave 1+2 June 1, Wave 3 June 30) RECOMMENDED, Option B (unified June 15), Option C (rolling 6-week from May 30). Full decision matrix in `PHASE_5_PUBLICATION_DECISION_FRAMEWORK.md`. (2) **Phase 6 domain selection** — top-3 recommended: Domain A (Community Economic Resilience), … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 5 COMPLETE (66.4K words, 423 citations, 12 documents, May 26).** Phase 6 unblocked for June 1 activation — scope and readiness documented in `PHASE_6_SCOPE_AND_READINESS.md` (top-3 domains: Community Economic Resilience, Skills Development, Governance Scaling). **User decisions pending by May 31**: (1) Phase 5 publication wave timing (A: June 1+30, B: unified June 15, C: rolling 6-week), (2) Phase 6 domain selection. Full decision framework in `PHASE_5_PUBLICATION_DECISION_FRAMEWORK.md … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -64,12 +64,26 @@
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
 ---
-### stockbot — Checkpoint outcome UNCERTAIN; Jetson unreachable since May 22 14:00 UTC (Outcome retrieval failed all 3 retry attempts)
-**Date blocked**: 2026-05-22 20:52 UTC (Session 1606 — Retry 3 escalation)
-**Context**: ✅ **Checkpoint EXECUTED successfully at 20:00 UTC May 22 (autonomous systemd timer on Jetson — CONFIRMED)**. ❌ **Outcome retrieval FAILED**: All three retry attempts (20:20, 20:35, 20:50 UTC) timed out. Jetson API endpoint (`http://100.120.18.84:8000/api/health`) unreachable since ~14:00 UTC (16 consecutive curl timeouts). Checkpoint metrics (AAPL sells, round trips, equity, fills) generated on Jetson but cannot be queried to determine outcome classification (PASS/NEAR-MISS/FAR-MISS). **Severity**: Information access only — core trading engine and checkpoint execution were autonomous and unaffected. Only impact: Cannot classify outcome or determine next-phase actions without manual Jetson verification.
-**What I need**: (1) **URGENT**: Verify Jetson status: Is it powered on and accessible via SSH? Can you run `ssh ubuntu@100.120.18.84 "curl -s http://localhost:8000/api/health"` to test API from Jetson's localhost? (2) If Jetson is reachable, retrieve checkpoint outcome: `ssh ubuntu@100.120.18.84 "python /opt/stockbot/scripts/may22_outcome_classifier.py <json_metrics_file>"` or manually read outcome log if available. (3) Provide outcome classification (PASS/NEAR-MISS/FAR-MISS) so orchestrator can determine Phase 2 activation path.
-**Verify with**: `curl -s http://100.120.18.84:8000/api/health | jq .status` — should return JSON if healthy. If successful, indicate status; if timeout, Jetson remains unreachable.
-**Resolution**: [leave blank — Checkpoint execution successful; outcome retrieval blocked; awaiting user manual verification]
+### stockbot — AMZN/JPM stacker_ids not populated in config (blocking Phase 2 activation)
+**Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
+**Context**: Jetson deployment automation executed successfully (May 26). Code and `active-sessions-4session.json` synced to Jetson. However, two AMZN/JPM sessions have placeholder stacker_ids: `<UUID from AMZN training — fill after train>`. The pkl files (`AMZN_h10_lgbm_ho_97934980.pkl`, `JPM_h10_lgbm_ho_4e7f5806.pkl`) exist on Jetson but their runtime UUIDs must be extracted and populated into the config before activation.
+**What I need**: Extract stacker_ids from the running models on Jetson and populate `active-sessions-4session.json`. Command: `ssh awank@100.120.18.84 "docker exec stockbot python3 -c \"import pickle; obj=pickle.load(open('models/ensemble_stackers/AMZN_h10_lgbm_ho_97934980.pkl','rb')); print(getattr(obj,'stacker_id',None) or getattr(obj,'id',None) or 'attrs:', dir(obj))\""` — repeat for JPM pkl, then update config with extracted UUIDs.
+**Verify with**: `grep -c "fill after train" projects/stockbot/active-sessions-4session.json` — should return 0 when resolved
+**Resolution**: [leave blank — awaiting user extraction of UUIDs]
+---
+### stockbot — JPM model type mismatch: config expects ridge_wf but only lgbm_ho pkl exists (hard blocker)
+**Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
+**Context**: `active-sessions-4session.json` specifies `JPM_h10_ridge_wf` for one of the new JPM sessions. Jetson contains `JPM_h10_lgbm_ho_4e7f5806.pkl` only. No `ridge_wf` variant exists. Either retrain JPM with ridge_wf architecture or update session config to use lgbm_ho.
+**What I need**: (1) Verify which model type is correct for JPM Phase 2 (lgbm_ho or ridge_wf). (2) Either retrain JPM with ridge_wf or update `active-sessions-4session.json` to specify lgbm_ho for JPM session.
+**Verify with**: `ls -la projects/stockbot/models/ensemble_stackers/ | grep JPM` — should show matching JPM pkl for the configured model type
+**Resolution**: [leave blank — awaiting model type decision]
+---
+### stockbot — DB backup not taken before config switch (procedural blocker)
+**Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
+**Context**: Jetson deployment automation synced `active-sessions-4session.json` to `/opt/stockbot/` successfully. Activation step 1.2 of the deployment checklist requires a DB backup before switching the active config. Backup was not taken pre-sync.
+**What I need**: Before activating AMZN/JPM sessions, take a backup of `/opt/stockbot/database/trading.db`: `ssh awank@100.120.18.84 "cp /opt/stockbot/database/trading.db /opt/stockbot/database/trading.db.pre-amzn-jpm.backup"` for safety.
+**Verify with**: `ssh awank@100.120.18.84 "ls -lh /opt/stockbot/database/trading.db.pre-amzn-jpm.backup"` — should show file exists
+**Resolution**: [leave blank — awaiting user backup creation]
 ---
 ---
 ### resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled)
@@ -79,70 +93,54 @@
 **Verify with**: `grep -c '\[fill\]' /home/awank/dev/SuperClaude_Framework/projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` on May 25 17:00 UTC — should return 0 (all templates filled) to enable May 25 re-synthesis. Also verify: `cd projects/resistance-research && uv run python synthesis-execution-monitor.py 2>&1 | head -5` on May 25 19:00 UTC — should return classification result (STRONG/MODERATE/WEAK/DELIVERY_PROBLEM) instead of error message.
 **Resolution**: [leave blank — contingency activated; will resolve May 25 upon re-synthesis with complete data]
 ---
----
-### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
-**Date blocked**: 2026-05-16
-**Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
-**Progress so far**:
-- ✅ 1.1 Signal — complete (username set, phone number hidden, disappearing messages on)
-- ✅ 1.2 iPhone tracking — steps 1-3 done (tracking off, location audited, personalized ads off). Step 4 (Advanced Data Protection) pending 24-48hr Apple security delay — complete tomorrow
-- 🔄 1.3 VeraCrypt — installed, encryption wizard run, **needs restart to complete pre-boot test**, then click Encrypt to start background encryption
-- ⏳ 1.4 Ente Auth — not started (install from App Store, switch email + financial accounts off SMS 2FA, set carrier SIM PIN)
-- ⏳ 1.5 Bitwarden password manager — not started
-- ⏳ 1.6 Data broker opt-outs — not started (10 sites + 3 federal opt-outs, ~45 min)
-- ⏳ 1.7 iPhone passcode over Face ID — not started (5 min, do anytime)
-**What I need**: Restart Windows machine, type VeraCrypt pre-boot password when prompted, let Windows boot normally, then click Encrypt in VeraCrypt to start background encryption. Then resume Phase 1 walkthrough from step 1.4.
-**Verify with**: `# manual — cannot auto-verify`
 
-## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 1656 (18 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
+• stockbot — Jetson unreachable since May 22 14:00 UTC (Outcome retrieval failed all 3 retry attempts) ← 2026-05-26 22:15 UTC (Session 1686 — Orchestrator validation discovered Jetson back online)
 • stockbot — SSH deadline missed (May 22 13:30 UTC) ← 2026-05-22 13:30 UTC (Session 1571 — deadline reached)
 • open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked ← 2026-05-21 ~19:15 UTC (Session 1471 — orchestrator autonomous fix)
 • open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
 • Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
-• stockbot — Engine not running; May 19 checkpoint at risk (~18 hours remaining) ← 2026-05-18 20:36 UTC (Session 1280)
 
 ## Inbox (unprocessed)
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-## Session 1669 (2026-05-26, 17:20–17:50 UTC) — ORCHESTRATOR: DEADLINE MONITORING + VERIFICATION PREPARATION
+**3 Hard Blockers Before AMZN/JPM Activation**:
+1. **stacker_ids not filled** — `active-sessions-4session.json` still has `<UUID from AMZN training — fill after train>` placeholders for both AMZN/JPM sessions. Need to extract actual UUIDs from running pkl files on Jetson.
+2. **JPM model type mismatch** — Config specifies `JPM_h10_ridge_wf` but only `JPM_h10_lgbm_ho_4e7f5806.pkl` exists on Jetson. Need to either retrain JPM with ridge_wf or update config to use lgbm_ho.
+3. **DB backup not taken** — Deployment checklist item 1.2 requires backup before switching active config. Backup was not taken pre-sync (safe, no data lost, but required before activation).
 
-**Status**: ✅ **ORIENTATION COMPLETE** | ⏳ **CRITICAL DEADLINE MONITORING (23:00 UTC VERIFICATION, 23:59 UTC FINAL DEADLINE)** | 🔴 **ALL AUTONOMOUS WORK BLOCKED**
+**Files updated**: BLOCKED.md (moved old block to resolved, added 3 new deployment blockers), PROJECTS.md (updated focus), WORKLOG.md (this entry)
 
-**Assessment**: All main projects remain blocked on external dependencies. Session 1668 exploration queue work (Domain 39 + Phase 5/4 toolkits) complete and committed. No new autonomous work available. Monitoring mode activated for critical deadline window (6.5 hours remaining).
+**Next steps**: User must resolve 3 blockers to activate Phase 2. Orchestrator is ready to execute final deployment upon blocker resolution.
 
-**Verification Preparation**:
-- **Seedwarden verification**: Checking if Gates 1-2 (social accounts + Canva Brand Kit) are complete by May 26 23:59 UTC
-- **Status at 17:20 UTC**: Gate 1 (Instagram/TikTok/Pinterest) OVERDUE since May 18; Gate 2 (Canva Brand Kit) OVERDUE since May 24
-- **Verification script**: GATE_3_PREFLIGHT_VALIDATION_MAY26.md confirmed all Gate 3 infrastructure ready; depends on Gates 1-2 completion
-- **Contingency**: If Gates 1-2 not complete by 23:59 UTC → slip launch to June 6 or June 15
+---
 
-**Deadline Reference**:
-1. **May 26 23:59 UTC** (6.5 hours from 17:20 UTC): Gates 1-2 completion deadline
-2. **May 28 18:00 UTC** (~41 hours): Resistance-research signal log fill deadline
-3. **May 28 19:00 UTC** (~42 hours): Resistance-research synthesis execution (May 28 resynthesis with TOO_EARLY contingency)
-4. **May 31 23:59 UTC** (~88 hours): Systems-resilience Phase 5 publication option decision (A/B/C)
+### Resistance-Research — Monitoring Infrastructure Pre-Test PASSED ✅
 
-**Monitoring Infrastructure**:
-- ✅ Synthesis execution monitor ready: `synthesis-execution-monitor.py` (awaiting May 28 signal log completion)
-- ✅ Seedwarden Gate 3 infrastructure: All pre-staged, awaiting Gates 1-2 completion
-- ✅ Contingency playbooks: Staged for June 6/15 slip if needed
-- ⏳ Cron verification: Previous gate1_auto_check.sh outdated (May 14 date); manual verification required
+**Status**: Phase 1 Wave 1 monitoring infrastructure is production-ready for May 27 pre-testing and May 28 Domain 56 distribution.
 
-**Next Actions** (user responsibility):
-1. **Immediate (by 23:59 UTC May 26)**: Complete Seedwarden Gates 1-2
-   - Gate 1: Create Instagram, TikTok, Pinterest accounts (30-45 min) → see GATE_1_RAPID_SETUP_GUIDE.md
-   - Gate 2: Set up Canva Brand Kit (30 min) → see GATE_2_DECISION_AND_EXECUTION_GUIDE.md
-2. **May 27 13:00 UTC**: If gates complete, START Gate 3 execution (uses GATE_3_AUTOMATION_KIT.md)
-3. **May 28**: Fill resistance-research signal log (17 [fill] fields) by 18:00 UTC for synthesis
-4. **May 31**: Make systems-resilience publication decision (Option A/B/C)
+**Pre-test audit completed**:
+- ✅ REPLY_TRIAGE_FRAMEWORK.md: Complete, operationally coherent, all escalation logic clear
+- ✅ DAY_7_14_30_DECISION_TREES.md: All three trees terminate in named actions, no dead-end branches, Phase 2 sequencing unambiguous
+- ✅ wave-1-signal-log-may18-21.md: Structural PASS, placeholder logic consistent and parseable
+- ✅ PHASE_1_IMPACT_MONITORING_DASHBOARD.md: Unified operational guide complete
 
-**Standing Blocks** (unchanged):
-- Stockbot: Jetson unreachable 72+ hours (API endpoint, SSH verification needed)
-- Resistance-research: Signal log fill pending (May 28 18:00 UTC deadline)
-- Cybersecurity-hardening: VeraCrypt restart + Phase 1 walkthrough continuation (user action)
-- Mfg-farm: Test print execution (user action)
+**Non-blocking gaps identified** (3 items, all setup-time fixes):
+1. Replies tab has no column schema defined in dashboard docs (easy fix: create tab with Reply_ID, Contact_ID, Date, Score, Category, Key_Content, Notes)
+2. Constituencies tab referenced in Tree 3 but no schema defined (inference fix: Constituency_Name, Contact_IDs, Score_Max, Day30_Strong, Notes)
+3. Checkpoints tab no schema defined (fix: Date, Checkpoint_Type, Determination, Metric_A–D, Notes)
 
-**Session Outcome**: All autonomous work complete and committed (Session 1668 exploration queue + Session 1669 verification prep). Monitoring scheduled for May 26 23:00–23:59 UTC deadline window. No deployment decisions or code changes this session; pure orchestration monitoring and documentation.
+**Issues severity**: All non-blocking; 3 tabs can be built in <15 minutes total at setup time. No document revisions required before May 28 execution.
+
+**Verdict**: Ready for May 27 pre-testing and May 28 Domain 56 distribution. All core decision logic sound, cross-document references accurate, no structural defects.
+
+---
+
+### Summary
+
+Session focused on validation of two independent parallel workstreams:
+1. **Stockbot**: Local validation complete; deployment infrastructure ready; 3 user actions required for Phase 2 activation
+2. **Resistance-Research**: Pre-testing complete; monitoring framework production-ready; minor setup tasks identified for May 27
+
+All orchestration files updated on master. Jetson reconnection is major news — deployment can proceed upon blocker resolution.
