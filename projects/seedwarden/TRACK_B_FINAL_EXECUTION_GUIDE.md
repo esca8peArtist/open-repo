@@ -218,17 +218,23 @@ Do not edit photos during shoot days — capture only.
 | May 15-17 | Full 8-card PDF review — confirm no placeholder text | TRACK_B_CANVA_SETUP_AND_EXPORT_GUIDE.md |
 | May 15 | Upload Cluster D+E images to Etsy slots 4-5 | TRACK_B_PRODUCTION_PIPELINE.md Section 4 |
 
-### May 17-22 (Days 13-18): Kit Automation Live
+### May 27-28 (Gate 3 — CRITICAL PATH): Kit Automation + DNS
 
-| Day | Action | Reference |
+**This window replaces the May 17-22 Kit schedule.** Gates 1-2 were not completed on the original timeline. Gate 3 must now execute May 27-28 to preserve the May 30 launch date.
+
+| Day/Time | Action | Reference |
 |---|---|---|
-| May 17-19 | Upload all 8 zone card PDFs to Google Drive; copy share URLs | TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md |
-| May 17-19 | Build Email 1 (8 zone variants) in Kit | TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md |
-| May 19-21 | Build Emails 2-5 in Kit | TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md |
-| May 21-22 | Wire zone-conditional automation in Kit | TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md |
-| May 22 | End-to-end test: sign up as Zone 5 from incognito window | TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md Step 6 |
-| May 22 | End-to-end test: sign up as Zone 7 | TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md Step 6 |
-| May 22 | Update all social bios from "coming soon" to live landing page if not yet done | social-media-setup.md |
+| May 27 13:00 UTC | START Gate 3 — read GATE_3_KIT_PREBUILD_BRIEF.md before opening kit.co | GATE_3_KIT_PREBUILD_BRIEF.md |
+| May 27 (Phase A) | Create Kit account, verify email, create all 15 tags | GATE_3_AUTOMATION_KIT.md Part 1 Steps 1-2 |
+| May 27 (Phase B) | Build and publish landing page | GATE_3_AUTOMATION_KIT.md Part 1 Step 3 |
+| May 27 (Phase C) | Upload zone card PDFs to Google Drive; test download links | GATE_3_PREFLIGHT_VALIDATION_MAY26.md |
+| May 27 (Phase C) | Build all 8 Email 1 zone variants; build Emails 2-5 | GATE_3_AUTOMATION_KIT.md Part 1 Step 4 |
+| May 27 23:59 UTC | Set automation to PUBLISHED (hard deadline for SPF warmup) | GATE_3_AUTOMATION_KIT.md Step 4 |
+| May 28 morning | Add DNS CNAME records at domain registrar | GATE_3_AUTOMATION_KIT.md Part 2 |
+| May 28 17:00 UTC | DNS CNAME submission HARD DEADLINE | GATE_3_AUTOMATION_KIT.md Part 2 |
+| May 28 (Phase E) | Run 3-test protocol (Zone 5, Zone 8, delay validation) | GATE_3_AUTOMATION_KIT.md Part 3 |
+| May 28 after tests | Run verification script — confirm PASS | GATE_3_VERIFICATION_SCRIPT.sh |
+| May 28 after Gate 3 | Update Instagram, TikTok, Pinterest bios with landing page URL | GATE_3_AUTOMATION_KIT.md |
 
 ### May 22-29 (Days 18-25): Launch Week Scheduling
 
@@ -251,6 +257,36 @@ Do not edit photos during shoot days — capture only.
 | 3:00pm | TikTok launch post goes live |
 | 4:00pm | Pinterest launch pins go live (or trigger scheduler) |
 | End of day | Log all upload dates in WORKLOG.md — conversion measurement window starts today |
+
+---
+
+## Section 2b: Gate 3 Critical Path (May 27-30)
+
+Gates 1-2 were due May 18 and May 24. If you are reading this on May 26, complete Gates 1-2 today before 23:59 UTC, then execute Gate 3 starting May 27.
+
+**Gate 3 hard constraints:**
+
+| Deadline | Action | Consequence of missing |
+|---|---|---|
+| May 27 13:00 UTC | Start Gate 3 (Kit account creation) | DNS propagation window shrinks below 48 hours |
+| May 27 23:59 UTC | Automation set to Published (not Draft) | SPF/DKIM warmup delayed; deliverability risk on May 30 |
+| May 28 17:00 UTC | DNS CNAME records submitted at registrar | Propagation may not complete before May 30 launch traffic |
+| May 29 21:00 UTC | Go/No-Go decision | Final checkpoint — no changes after this |
+| May 30 10:00 UTC | Launch | All gates must be COMPLETE |
+
+**Gate 3 documents — execute in this order:**
+
+1. **[GATE_3_AUTOMATION_KIT.md](GATE_3_AUTOMATION_KIT.md)** — Primary execution document. Self-contained. Contains all Kit email automation steps (Step-by-step account setup, all 15 tags, landing page copy-paste, 5-email sequence with delays, 8 zone-variant routing, DNS CNAME configuration, and the full verification checklist). Start here on May 27.
+
+2. **[GATE_3_KIT_PREBUILD_BRIEF.md](GATE_3_KIT_PREBUILD_BRIEF.md)** — Decision document. All pre-resolved choices (account config, tag names, landing page copy, zone routing strategy, Creator tier decision framework). Read this before opening kit.co.
+
+3. **[MAY_27_GATE_3_DEPLOYMENT_SCRIPT.md](MAY_27_GATE_3_DEPLOYMENT_SCRIPT.md)** — Numbered checkbox script for Phase A through Phase F. Use as a companion to GATE_3_AUTOMATION_KIT.md.
+
+4. **[GATE_3_VERIFICATION_SCRIPT.sh](GATE_3_VERIFICATION_SCRIPT.sh)** — Automated pass/fail script. Run after Gate 3 is complete to verify DNS CNAME propagation, Kit tag existence, and zone card PDF link resolution. Requires `KIT_API_KEY` environment variable. Returns explicit PASS/FAIL with next-step guidance.
+
+5. **[SEEDWARDEN_TRACK_B_GATES_RUNBOOK.md](SEEDWARDEN_TRACK_B_GATES_RUNBOOK.md)** — Contingency playbooks for all failure modes (Gate delayed, Kit free-tier limitation, DNS propagation failure, automation stuck in Draft).
+
+**Email sequence copy location:** `TRACK_B_EMAIL_SEQUENCES.md` — open this in a second window during Gate 3 Phase C (email build). All 5 emails are copy-paste ready with subject lines, preview text, UTM parameters, and delay settings.
 
 ---
 
