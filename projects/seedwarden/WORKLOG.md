@@ -4,6 +4,62 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Wild Edibles Habit Photos — 18-Species Download Session — May 26, 2026
+
+**Task**: Download 18 `-habit.jpg` full-plant photos for wild edibles task list. Status: 0/18 at session start, 18/18 at session end.
+
+**Target directory**: `projects/seedwarden/images/wild-edibles-habit-photos/`
+
+**Sources used**: Wikimedia Commons (all images). All CC-licensed or Public Domain.
+
+**Downloads this session** (11 new downloads, 7 copied from prior session in `assets/wild-edibles/`):
+
+| Species | Common Name | Filename | License | Source |
+|---------|-------------|----------|---------|--------|
+| *Stellaria media* | Chickweed | stellaria-media-habit.jpg | CC-BY-SA | Wikimedia (prior session) |
+| *Taraxacum officinale* | Dandelion | taraxacum-officinale-habit.jpg | CC-BY-SA | Wikimedia (prior session) |
+| *Urtica dioica* | Stinging Nettle | urtica-dioica-habit.jpg | CC-BY-SA | Wikimedia (prior session) |
+| *Rumex acetosella* | Red Sorrel | rumex-acetosella-habit.jpg | CC-BY 3.0 US | Starr-130514-2156... (Maui) |
+| *Viola odorata* | Sweet Violet | viola-odorata-habit.jpg | CC-BY-SA 3.0 | Viola-odorata-plants.jpg |
+| *Trifolium pratense* | Red Clover | trifolium-pratense-habit.jpg | CC-BY 2.0 | Trifolium_pratense_plant_DC1.jpg |
+| *Lactuca virosa* | Wild Lettuce | lactuca-virosa-habit.jpg | Public Domain | Kohler Medizinal-Pflanzen 1884 illustration |
+| *Plantago major* | Common Plantain | plantago-major-habit.jpg | CC-BY 3.0 US | Starr-090610-0527... (Maui) |
+| *Chenopodium album* | Lamb's Quarters | chenopodium-album-habit.jpg | CC-BY-SA | Wikimedia (prior session) |
+| *Portulaca oleracea* | Purslane | portulaca-oleracea-habit.jpg | CC-BY-SA | Wikimedia (prior session) |
+| *Malva sylvestris* | Common Mallow | malva-sylvestris-habit.jpg | Public Domain | Malva_sylvestris_HabitusCampodeCalatrava.jpg |
+| *Galium aparine* | Cleavers | galium-aparine-habit.jpg | CC-BY-SA 2.0 | Galium_aparine_habit_(3477933633).jpg |
+| *Veronica officinalis* | Heath Speedwell | veronica-officinalis-habit.jpg | CC0 | 20180506Veronica_officinalis2.jpg |
+| *Achillea millefolium* | Yarrow | achillea-millefolium-habit.jpg | Public Domain | Achillea_millefolium_ryllik2.jpg (1280px thumb) |
+| *Hypericum perforatum* | St. John's Wort | hypericum-perforatum-habit.jpg | Public Domain | Hypericum_perforatum_Habitus_DehesaBoyalPuertollano.jpg (1280px thumb) |
+| *Silybum marianum* | Milk Thistle | silybum-marianum-habit.jpg | CC-BY-SA 4.0 | Silybum_marianum_in_Aveyron_(1).jpg (1280px thumb) |
+| *Arctium lappa* | Burdock | arctium-lappa-habit.jpg | CC-BY-SA | Wikimedia (prior session) |
+| *Daucus carota* | Wild Carrot | daucus-carota-habit.jpg | CC-BY-SA | Wikimedia (prior session) |
+
+**Technical note**: Wikimedia upload.wikimedia.org applied rate limits (retry-after: 600s) for 3 files during this session (Achillea, Hypericum, Silybum). Resolved by using 1280px thumbnail paths via Wikimedia thumb CDN — all three meet the 800px+ requirement and are covered by the same license.
+
+**Full download log with source URLs**: `images/wild-edibles-habit-photos/HABIT_PHOTO_DOWNLOADS_LOG.md`
+
+---
+
+## Phase 3 Asset Verification — May 26, 2026
+
+**Task**: Verify all Phase 3 assets from prior session are still in place ahead of June 22 launch.
+
+**Result**: ALL CLEAR — 7/7 files present and intact (no missing, no corrupted).
+
+**Files verified**:
+- `phase-3-assets/PHASE_3_EXECUTION_GUIDE.md` (378 lines)
+- `phase-3-assets/canva-mockup-briefs/phase-3-canva-mockup-brief.md` (308 lines)
+- `phase-3-assets/email-templates/phase-3-broadcast-sequence.md` (419 lines)
+- `phase-3-assets/social-templates/phase-3-social-post-templates.md` (372 lines)
+- `phase-3-assets/analytics-templates/phase-3-kpi-dashboard.md` (237 lines)
+- `phase-3-assets/landing-page-copy/phase-3-landing-pages.md` (195 lines)
+- `phase-3-assets/stock-image-lists/phase-3-botanical-stock-list.md` (195 lines)
+
+**Verification report**: `PHASE_3_ASSET_VERIFICATION.md`
+
+---
+
 ## Phase 3 Pre-Production Checklist Update — Session 1655, May 26, 2026
 
 **Task**: Build pre-production checklist for Phase 3 medicinal herbs launch (June 22-July 13). Review and update all four deliverables from Session 1509. Sprint start June 22 (27 days away).
