@@ -1,3 +1,70 @@
+## Since Last Check-in (Session 1660, May 26 13:08–14:30 UTC) — EXPLORATION QUEUE EXECUTION (2 ITEMS COMPLETE)
+
+**Status**: ✅ **SEEDWARDEN PHASE 3 PREP COMPLETE** (medicinal herbs launch checklist + supplier tracker) | ✅ **STOCKBOT JETSON CONTINGENCY COMPLETE** (hardware failure playbook, failover architecture, activation criteria) | ⏳ **All high-priority projects awaiting user action** | ⏰ **May 28 synthesis pre-flight check next executable item**
+
+**What was accomplished**:
+
+### ✅ **Seedwarden: Phase 3 Medicinal Herbs Production Launch Preparation (Exploration Queue Item)**
+
+**Agent Result**: seedwarden (af9d39b4d41c8098c) completed pre-launch preparation for June 22–July 13 execution window.
+
+**Deliverables Created**:
+- **`PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md`** (4,500+ words, v7.0 — supersedes v6.0)
+  - Finalized medicinal herb selection & supplier confirmation matrix (8 suppliers × 14 species)
+  - **Critical update**: Strictly Medicinal summer shutdown flagged (mid-June–August) — requires May 27 email confirmation; Prairie Moon fallback identified
+  - **New deadline discovered**: Black Cohosh order by May 30 (NativeWildflowers.net in stock now, 3–5 day lead time)
+  - Writing production templates with exact word counts per bundle and research depth requirements
+  - Photography pre-staging 4-phase timeline (May 26–June 23, mature/flowering photography critical path)
+  - Pre-gate compliance checklist (forager cohort tracker, Native Plants conversion monitor, gates at 20% cohort and 1.5% conversion)
+- **`PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.csv`** — 8-supplier matrix with lead times, deadlines, order status fields (checkbox placeholders for user completion)
+
+**Status**: Ready for immediate June 22 execution post-Phase-2-May-30 launch. Supplier confirmation window closes June 8 (Goldenseal critical).
+
+**User Actions Next**: (1) Email Strictly Medicinal by May 27 to confirm summer shutdown status, (2) Confirm NativeWildflowers.net Black Cohosh order by May 30, (3) Review supplier matrix and confirm final selections by June 8.
+
+---
+
+### ✅ **Stockbot: Jetson Hardware Resilience & Contingency Recovery Playbook (Exploration Queue Item)**
+
+**Agent Result**: stockbot (a69a37ac059ffdd78) completed contingency planning for persistent Jetson unreachability (5+ days since May 22 14:00 UTC).
+
+**Deliverables Created**:
+- **`JETSON_HARDWARE_FAILURE_CONTINGENCY.md`** (4,263 words)
+  - **CRITICAL FINDING**: "Jetson" is actually Raspberry Pi 5 Model B (Cortex-A76, same as dev machine) — not NVIDIA Jetson Orin. LightGBM and Ridge models are CPU-only and fully capable on Pi 5.
+  - **Root cause probability update (Day 5)**: Power supply failure 35% (persistent pattern), MicroSD corruption 30%, network 10%, other 25%
+  - Data recovery: All fills since account creation recoverable via Alpaca API; local trading.db backups available from May 17–20
+  - Capital preservation: Emergency halt thresholds at >10% drawdown ($103,500) and >20% drawdown ($92,000)
+
+- **`FAILOVER_ARCHITECTURE_OPTIONS.md`** (3,773 words)
+  - **Option A**: Pi 5 failover (reduced model complexity, single-ticker, paper trading) — 1–2 days setup, $10 active cooler required
+  - **Option B**: Cloud failover (AWS EC2 GPU instance) — 3–5 days, higher ongoing cost
+  - **Option C**: Liquidate and pause (preserve capital, restart post-recovery) — immediate, lowest risk
+  - **Decision matrix**: By recovery timeline (24h → A, 3 days → A with fallback to B, 1 week → C)
+
+**Contingency Activation Criteria** (logged to WORKLOG.md):
+  - Jetson offline >7 days (by May 29): Activate Option A — requires user decision
+  - Jetson offline >14 days (by June 5): Execute Option C — requires user decision
+  - Portfolio drawdown >20%: Autonomous emergency halt
+
+**Immediate Actions** (no Jetson required):
+  1. Install Pi 5 active cooler ($5–8) to resolve 80–84°C thermal issue
+  2. Run Alpaca capital check (script provided) to confirm portfolio status since May 22
+  3. Deploy backup_db.sh cron on recovered/replacement host before any trading resumes
+
+**Status**: Production-ready for immediate activation if Jetson remains offline >7 days (May 29 trigger). De-risks capital preservation.
+
+---
+
+### ⏳ **Next Executable Queue Item (May 28 Gate)**
+
+**resistance-research: May 28 Synthesis Infrastructure Pre-flight Check & Contingency Protocol** (1.5–2 hrs) — Not yet started
+- Verify synthesis Python script, Gist files, dependencies (gspread, pandas, jinja2)
+- Test SMTP + Discord webhook connectivity
+- Develop synthesis failure recovery procedure
+- **Deadline**: May 28 19:00 UTC (synthesis execution)
+
+---
+
 ## Since Last Check-in (Session 1659, May 26 12:54–ongoing UTC) — SEEDWARDEN ZONE CARDS COMPLETE + DISTRIBUTION VERIFICATION
 
 **Status**: ✅ **SEEDWARDEN CRITICAL BOTTLENECK RESOLVED** (Zone Cards 0/8 → 8/8 complete) | ✅ **RESISTANCE-RESEARCH DISTRIBUTION VERIFIED READY** (May 28 + June 1 sends unblocked) | 🎯 **May 30 seedwarden launch now achievable** | ⏳ **Awaiting user action on 3 projects** | 🔴 **Jetson still unreachable (5+ days)**
