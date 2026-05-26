@@ -1,5 +1,33 @@
 # Open-Repo Project Worklog
 
+## Phase 5.2 Candidate Evaluation (2026-05-26)
+
+**Completion Date**: 2026-05-26
+
+**Agent**: General Research Agent (claude-sonnet-4-6)
+
+**Objective**: Evaluate Phase 5.2 candidates and produce decision-support documentation for user by May 26-27.
+
+### Files Produced / Updated
+
+- **`/projects/open-repo/PHASE_5_2_CANDIDATE_EVALUATION.md`** — Comprehensive 5-candidate evaluation (OPDS, A11y, Search, API Gateway, Content Domain Expansion). Updated with three research corrections: (1) OPDS scope corrected — Kindle does not support OPDS; primary value is Kiwix discovery; (2) Typesense Pi 5 page-size bug confirmed (jemalloc crash, GitHub #1351 unresolved); SQLite FTS5 added as Pi 5-safe search option; (3) OPDS 1.2 vs 2.0 distinction clarified. New Candidate 5 (Content Domain Expansion) added with full evaluation, scenarios, and risk analysis. Recommendation updated to dual-track parallel execution.
+
+- **`/projects/open-repo/PHASE_5_2_IMPLEMENTATION_FEASIBILITY_MATRIX.csv`** — Expanded from 4 candidates to 14 rows covering individual candidates, parallel combinations, and combined scenarios. Corrected user impact scores for OPDS (Kindle non-support noted). Added content domain expansion modules (Medical, Water, Seed, Food, Botanical) with Pi 5 thermal risk column.
+
+### Key Research Findings
+
+1. **Typesense is blocked on Pi 5**: Confirmed jemalloc crash due to Pi 5's default 16K memory page size. SQLite FTS5 is the safe alternative — zero dependencies, Pi 5 native, BM25 ranking.
+2. **OPDS e-reader value corrected**: Amazon Kindle (~80% market share) does not support OPDS. Kobo supports OPDS but reads EPUB not ZIM. OPDS value is Kiwix discovery, not Kindle/Kobo.
+3. **feedgen confirmed inactive**: No PyPI release in 12+ months; xml.etree fallback remains available and is lower risk.
+4. **OPDS 2.0 is JSON-LD**: OPDS 2.0 uses Readium Web Publication Manifest (JSON-LD). Kiwix uses OPDS 1.2 (Atom/XML). Target is OPDS 1.2.
+5. **Content domain expansion is the highest mission-value Phase 5.2 track**: Medical Reference alone serves ~2B people without reliable healthcare access; all five content modules draw on source documents already written by active projects.
+
+### Recommendation Summary
+
+Primary: API Gateway (4-6 hrs, June 1-3) + OPDS (8-11 hrs, June 4-12) + Medical Reference (10-14 hrs, June 1-10) run in parallel. Secondary: Water Systems (8-12 hrs) in Wave 2 June 8-17. Total Phase 5.2 output: 4 deliverables, ~30-42 combined hours, low risk.
+
+---
+
 ## Stage 0: Pre-requisite Extraction (Phase 5.1 MVP Activation)
 
 **Completion Date**: May 22, 2026

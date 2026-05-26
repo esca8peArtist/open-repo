@@ -2,19 +2,30 @@
 title: "Phase 5.2 Candidate Evaluation Framework"
 project: open-repo
 phase: "5.2 pre-implementation"
-status: "evaluation-complete"
+status: "evaluation-complete — updated 2026-05-26"
 date: 2026-05-26
-decision_deadline: 2026-05-26
+decision_deadline: 2026-05-27
 production_target: June 1-12, 2026
+research_updated: 2026-05-26
 ---
 
 # Phase 5.2 Candidate Evaluation Framework
 
-**Purpose**: Comprehensive feasibility analysis of four Phase 5.2 candidates to inform the user's decision on post-Phase-5.1 priorities.
+**Purpose**: Comprehensive feasibility analysis of five Phase 5.2 candidate tracks to inform the user's decision on post-Phase-5.1 priorities.
 
-**Context**: Phase 5.1 (ZimWriter) is conditional-approved for merge by May 25-26. This evaluation informs which Phase 5.2 feature(s) should follow immediately after Phase 5.1 production validation.
+**Context**: Phase 5.1 (ZimWriter) is conditional-approved for merge by May 25-26. This evaluation informs which Phase 5.2 feature(s) should follow immediately after Phase 5.1 production validation. Updated 2026-05-26 with corrected e-reader market data, Typesense/Pi 5 compatibility findings, SQLite FTS5 as a search option, and a fifth candidate track (Content Domain Expansion).
 
-**Timeline**: Analysis complete by 2026-05-26 13:00 UTC. User decision expected May 25-26. Implementation window: June 1-12, 2026 (11-12 days available).
+**Timeline**: Analysis complete 2026-05-26. User decision needed by May 27. Implementation window: June 1-12, 2026 (11-12 days available).
+
+## Research Corrections Applied in This Update
+
+Three factual corrections to earlier drafts:
+
+1. **OPDS e-reader scope corrected**: Amazon Kindle holds ~80% of the e-reader market (2025) and does NOT support OPDS natively. Kobo (~10% share) supports OPDS via sideloading. The primary OPDS value for open-repo is Kiwix in-app discovery (mobile/desktop), not Kindle or Kobo. Earlier drafts overstated the e-reader discovery benefit.
+
+2. **Typesense Pi 5 page-size bug confirmed**: Typesense has a documented crash on Raspberry Pi 5 caused by jemalloc's incompatibility with the Pi 5's default 16K memory page size (GitHub issue #1351, opened 2023, unresolved as of 2026). This makes Typesense a poor fit for the Pi 5 deployment target without a kernel page-size patch. Meilisearch has aarch64 binaries available via Arch Linux ARM and community Docker images, but official ARM64 support is not explicitly documented. SQLite FTS5 is confirmed as the zero-dependency, Pi 5-safe option.
+
+3. **OPDS 1.2 vs 2.0 distinction**: OPDS 2.0 uses JSON-LD / Readium Web Publication Manifest format — it is not Atom-based. Kiwix uses OPDS 1.2 (Atom/XML). The implementation target is OPDS 1.2 for Kiwix compatibility, not 2.0.
 
 ---
 
@@ -150,11 +161,11 @@ uv run pytest tests/ -k "opds" -v
 
 **Direct value**: Library and institutional partnerships (schools, clinics, NGOs) often require OPDS catalog support for content integration. With OPDS, open-repo becomes discoverable in Kiwix's built-in library browser, removing the friction of "find the CDN URL" for end users.
 
-**Standards compliance**: OPDS 1.2 is an ISO/IEC standard (adopted as TC 46/SC 4 work). Implementing OPDS positions open-repo as a standards-compliant distribution platform, important for institutional and governmental deployments.
+**Standards compliance**: OPDS 1.2 is a widely adopted syndication standard for offline content distribution. Implementing OPDS positions open-repo as a standards-compliant distribution platform, important for institutional and governmental deployments.
 
 **Phase 6 foundation**: OPDS catalog will be part of Phase 6's "retention policy automation" — when a ZIM export is deleted, it must also be removed from the OPDS version history. The catalog structure is foundational to downstream features.
 
-**User demographics impacted**: Non-technical end users who rely on Kiwix's app UI for discovery; institutional procurement teams evaluating content distribution standards; library systems that require OPDS for automated content indexing.
+**Corrected user demographics**: The primary beneficiaries are Kiwix users (Android F-Droid, Desktop, kiwix-serve), not general e-reader users. Amazon Kindle (~80% e-reader market share, 2025 Mordor Intelligence data) does not support OPDS. Rakuten Kobo (~10% market share) supports OPDS via sideloading, but open-repo exports ZIM files, not EPUB — Kobo cannot read ZIM content regardless of OPDS catalog support. The value of OPDS is specifically the Kiwix in-app discovery flow and institutional library catalog integrations that explicitly require OPDS compliance as a procurement criterion.
 
 #### Risk Assessment
 
@@ -312,7 +323,18 @@ Before deploying A11y remediation:
 
 #### What It Delivers
 
-Offline full-text search within ZIM files using either Lunr.js (JavaScript, lightweight) or Whoosh (Python, more powerful). Users can open a ZIM in Kiwix, use the built-in search bar, and get results ranked by relevance in <2 seconds.
+Offline full-text search within ZIM files using libzim's built-in Xapian index (already enabled in Phase 5.1) or, for web-UI deployments of kiwix-serve, an optional supplementary search service. The primary search mechanism — Xapian FTS embedded in the ZIM — is already implemented in Phase 5.1. This candidate addresses the separate concern of federation-level search across multiple ZIM files and/or the kiwix-serve web interface.
+
+**Search engine options evaluated for this candidate** (for federation search — not ZIM-embedded search):
+
+| Option | Pi 5 aarch64 support | Thermal risk | Dependency complexity | Notes |
+|--------|---------------------|--------------|----------------------|-------|
+| **SQLite FTS5** | Native (no binary needed) | None | Zero (stdlib) | BM25 ranking, incremental updates, offline-safe; 30% faster than FTS3/FTS4 |
+| **Meilisearch** | Community aarch64 via Arch Linux ARM; no official Pi 5 binary | Medium (Rust process) | Medium (external service) | 40.7k GitHub stars, MIT license, good multilingual support |
+| **Typesense** | Linux arm64 .deb exists BUT Pi 5 16K page-size causes jemalloc crash (GitHub #1351, unresolved) | Medium | Medium | GPL-3.0; Pi 5 deployment blocked without kernel workaround |
+| **Elasticsearch/OpenSearch** | Official aarch64 builds | High (sustained CPU) | High (JVM required) | Too heavy for Pi 5; ruled out |
+
+**Recommended option**: SQLite FTS5 for any Pi 5-targeted search capability. External services (Meilisearch) are viable for server deployments but add operational complexity. Typesense is blocked on Pi 5 without a kernel-level workaround.
 
 **User-facing outcome**: A clinic in rural Kenya with spotty internet opens "Medical Reference.zim" in Kiwix on a Raspberry Pi. A healthcare worker searches "how to treat severe dehydration" and gets 5 relevant articles ranked by relevance, sorted by keyword frequency. Search results appear in <2 seconds.
 
@@ -507,16 +529,79 @@ Before deploying API Gateway:
 
 ---
 
+### Candidate 5: Content Domain Expansion
+
+#### What It Delivers
+
+Rather than adding infrastructure features (OPDS, Search, A11y, API), this track expands the substantive knowledge content archived in ZIM files. Phase 5.1 established ZIM export capability for open-repo's existing six domain taxonomy (agriculture, water, food, electronics, building, energy). This candidate fills the critical knowledge gaps identified by cross-referencing open-repo's taxonomy against the user's related active projects: systems-resilience, seedwarden, off-grid-living, and cybersecurity-hardening.
+
+Ten content expansion candidates are detailed in `/projects/open-repo/PHASE_5.2_FEATURE_CANDIDATES.md` and scored in `/projects/open-repo/PHASE_5.2_PRIORITY_MATRIX.md`. The top five for June 2026:
+
+| # | Module | New ZIM Domain | Source documents | Implementation |
+|---|--------|---------------|-----------------|---------------|
+| 1 | Medical Reference Archiver | `medicine` | off-grid-living 08-medical-health.md, WHO EML | 10-14 hrs |
+| 2 | Water Systems Archiver | `water` (deepened) | off-grid-living 03-water.md, USDA/CDC guides | 8-12 hrs |
+| 3 | Seed Preservation Archiver | `seeds` | seedwarden project documents, GRIN database | 12-16 hrs |
+| 4 | Food Preservation Archiver | `food` (deepened) | USDA Complete Canning Guide, NCHFP datasets | 8-12 hrs |
+| 5 | Botanical Knowledge Archiver | `botany` | USDA PLANTS CSV, OpenFarm archive, seedwarden | 12-16 hrs |
+
+**Why this competes with infrastructure candidates**: The infrastructure candidates (OPDS, Search, A11y, API Gateway) improve how existing content is discovered, searched, or accessed. Content expansion increases what content exists. If the goal is "offline access for all humanity," gaps in life-critical domains (medicine, water, food safety) are more urgent than discovery improvements for content that already exists in ZIM format. A user who cannot find the medical reference article they need suffers a worse outcome than a user who cannot browse the library using Kiwix's in-app OPDS catalog.
+
+#### Implementation Hours
+
+Each content module is 8-16 hours of implementation. Five modules in parallel waves:
+- Wave 1 (June 1-10): Medical + Water (~22 combined hours, run in parallel)
+- Wave 2 (June 8-17): Seed + Food Preservation (~22 combined hours, run in parallel)
+- Wave 3 (June 18-24): Botanical (~14 hours)
+
+**Important**: Content domain expansion and infrastructure candidates are NOT mutually exclusive. API Gateway (4-6 hrs) can run in parallel with any content module. OPDS (8-11 hrs) can run in parallel if bandwidth allows.
+
+#### Dependencies
+
+No new Python dependencies for the top-4 content modules (Medical, Water, Seed, Food). Botanical module optionally uses `biopython>=1.87` for FASTA/GenBank parsing.
+
+All content modules share one soft dependency: Phase 5.1 must be merged so the export pipeline can generate real ZIM files from the new content types.
+
+#### User Value
+
+**Direct user value**: Healthcare workers, off-grid homesteaders, disaster responders, and students in low-bandwidth regions access life-critical knowledge that does not yet exist in offline form. The Medical Reference module alone could serve the ~2 billion people globally who lack reliable healthcare access and rely on community health workers using reference materials.
+
+**Cross-project value**: Five content modules directly archive content from the user's four active related projects:
+- seedwarden: Seed Preservation and Botanical Knowledge archival
+- systems-resilience: Medical, Water, and Food content cross-references
+- off-grid-living: Primary source for all five modules
+- open-repo: Fills the six existing taxonomy domains with real depth
+
+#### Risk Assessment
+
+| Risk | Probability | Impact | Mitigation |
+|------|-------------|--------|-----------|
+| **Medical accuracy liability** | Medium | High | Prominent disclaimer system; cite authoritative sources only (WHO, CDC, ICRC); never synthesize or interpolate dosing data |
+| **USDA canning data accuracy** | Low | Very High (botulism risk if data is wrong) | Embed verbatim USDA lookup tables; no interpolation; verify table completeness in unit tests |
+| **Content exceeds ZIM size targets** | Low | Low | Each domain ZIM is 1-15 MB; well within domain target (<50 MB) |
+| **BioPython dependency for Botanical** | Low | Low | BioPython is optional; botanical module works with static USDA CSV data if BioPython not installed |
+
+#### Deployment Gate
+
+- Phase 5.1 merged; ZIM export pipeline producing valid files
+- Medical disclaimer system implemented and reviewed
+- USDA processing time tables validated against official source
+- Each module's ZIM passes zimcheck; opens in Kiwix Android/Desktop
+- Unit test suite: 20-30 tests per module; all passing
+
+---
+
 ## Comparative Analysis Matrix
 
 ### Implementation Complexity vs. User Value
 
 | Candidate | Implementation Complexity | Code Risk | User Value | Timeline Risk | Recommendation |
 |-----------|---------------------------|-----------|-----------|----------------|---|
-| **OPDS** | Low-Medium (8-11 hrs, well-scoped) | Low (new code, no existing API changes) | High (unblocks Kiwix discovery, library partnerships) | Low (hard deadline at 11 hours) | **Go immediately after Phase 5.1** |
+| **OPDS** | Low-Medium (8-11 hrs, well-scoped) | Low (new code, no existing API changes) | High for Kiwix users; low for Kindle users (Kindle does not support OPDS) | Low (hard deadline at 11 hours) | **Go immediately after Phase 5.1** |
 | **A11y Audit** | Medium audit + High remediation (10-12 hrs audit + TBD fix) | Low code risk (documentation-first) | High (expands addressable community) | High (remediation scope unknown; could overflow Phase 5.2) | **Audit in Phase 5.2; remediation Phase 6+** |
-| **Search** | Medium (8-11 hrs, well-scoped but Pi 5 testing required) | Medium (heavy computation; thermal throttling risk on Pi 5) | Medium-High (usability for large corpora; not critical path) | High (requires Pi 5 validation; if throttling occurs, redesign needed) | **Do after OPDS; test on Pi 5 first** |
+| **Search** | Medium (8-11 hrs); SQLite FTS5 is lower risk than Meilisearch/Typesense | Low for FTS5 (stdlib); Medium for Meilisearch (external binary); Typesense blocked on Pi 5 | Medium-High (usability for large corpora; not critical path) | Medium (SQLite FTS5 has no Pi 5 thermal risk; Meilisearch needs validation) | **Use SQLite FTS5; test before committing to Meilisearch** |
 | **API Gateway** | Low (4-6 hrs, well-scoped) | Low (no existing API changes; just new endpoint) | Medium (enables federation; not user-facing) | Low (shortest timeline) | **Quick win; can run in parallel with OPDS** |
+| **Content Domain Expansion** | Low per module (8-16 hrs each); total scope is large | Low (new importer modules; no infrastructure changes) | Very High (life-critical knowledge for users who have ZIM but lack content) | Low per module; high if too many run in parallel | **Highest long-term mission value; run in parallel with infrastructure track** |
 
 ### Phase 5.2 Sequencing Scenarios
 
@@ -566,6 +651,21 @@ Outcome:    Phase 5.2 = API Gateway + OPDS
 
 **Rationale**: Run two projects in parallel to maximize throughput. API Gateway is fast and low-risk; OPDS is foundational. Both together maximize user impact.
 
+#### Scenario E: Content Domain Expansion as Phase 5.2 Primary Focus
+
+```
+June 1-10:  Medical + Water systems modules (22 hrs parallel, 2 engineers)
+June 8-17:  Seed + Food Preservation modules (22 hrs parallel, 2 engineers)
+June 18-24: Botanical module (14 hrs)
+June 1-3:   API Gateway (4-6 hrs, runs in parallel with Medical)
+
+Outcome:    Phase 5.2 = 5 content domain modules + API Gateway
+            User value: Life-critical offline knowledge (medicine, water, food, seeds, plants)
+            Risk: Low per module; requires discipline to not scope-creep on medical content
+```
+
+**Rationale**: Phase 5.1 delivered ZIM export infrastructure. Phase 5.2's highest-value contribution may be filling that infrastructure with life-critical content rather than adding more infrastructure layers. Five content modules deliver ~2,340 lines of new code, 10 new content types, 100-150 new unit tests, and 5 new domain ZIM files that directly serve the user's core mission and related projects (seedwarden, systems-resilience, off-grid-living).
+
 #### Scenario D: A11y Audit First (If Accessibility Is Priority)
 
 ```
@@ -609,14 +709,52 @@ Outcome:    Phase 5.2 = A11y Audit + Remediation Plan
 
 ---
 
-## Recommendation for User Decision (May 25-26)
+## Recommendation for User Decision (May 26-27)
 
-### If User Wants Immediate Impact (Recommended)
+### Decision axis: Infrastructure vs. Content
+
+This is the primary strategic question for Phase 5.2. The answer determines which of the scenarios above applies.
+
+**Infrastructure track** (OPDS, Search, A11y, API Gateway): Improves how existing ZIM content is discovered, searched, and accessed. Appropriate if Phase 5.1 content depth is already sufficient and the priority is expanding distribution reach.
+
+**Content expansion track** (Medical, Water, Seed, Food, Botanical): Increases what knowledge exists in ZIM format. Appropriate if the priority is fulfilling the "offline knowledge for all humanity" mission by filling critical knowledge gaps.
+
+**The recommendation is to run both tracks in parallel at different scales**:
+- API Gateway (4-6 hours, very low risk): Run in Week 1 alongside the first content module
+- OPDS (8-11 hours, low risk): Run in Week 2 as a second parallel track
+- Content Domain Wave 1 (Medical + Water, 22 hours parallel): Primary June 1-10 work
+- Content Domain Wave 2 (Seed + Food, 22 hours parallel): June 8-17
+- Search and A11y: Defer to Phase 6; thermal constraints on Pi 5 make Search high-risk, and A11y audit scope is uncapped
+
+### Recommended Sequencing (Optimal for June 1-12 window)
+
+```
+June 1-3:   API Gateway (4-6 hrs) — fast win, unblocks federation
+June 1-10:  Medical Reference Archiver (10-14 hrs, parallel with API Gateway + OPDS)
+June 4-12:  OPDS Feed Generation (8-11 hrs, parallel with Medical content work)
+June 8-17:  Water Systems Archiver (8-12 hrs, parallel with OPDS completion)
+
+Phase 5.2 result: API Gateway + OPDS + Medical + Water
+User value: Federation API + Kiwix discovery + life-critical knowledge offline
+Risk: Low (all four are well-scoped and do not block each other)
+```
+
+### Fallback Sequencing (Single-engineer, linear)
+
+```
+June 1-3:   API Gateway (5 hrs)
+June 3-8:   OPDS (9 hrs)
+June 8-18:  Medical Reference (12 hrs)
+June 18-26: Water Systems (10 hrs)
+```
+
+### If User Prioritizes Infrastructure Only
 
 **Priority 1 (June 1-5): OPDS Feed Generation**
 - **Why**: Unblocks Kiwix in-app discovery; enables library partnerships; positioned for Phase 6
 - **Timeline**: 8-11 hours; fits comfortably in June 1-12 window
 - **Risk**: Low; well-scoped; existing code patterns from Phase 4/5.1
+- **Note**: OPDS value is Kiwix discovery, not Kindle/Kobo (Kindle does not support OPDS)
 
 **Priority 2 (June 5-12, if time remains): API Gateway**
 - **Why**: Enables federation interop; low-risk quick win; positions for Phase 6 distributed sync
@@ -624,30 +762,19 @@ Outcome:    Phase 5.2 = A11y Audit + Remediation Plan
 - **Risk**: Low; depends on Phase 4 (already complete)
 
 **Deferred to Phase 6**: Search indexing + A11y audit
-- **Search**: Requires Pi 5 thermal validation; could extend timeline if issues found
+- **Search**: Use SQLite FTS5 if search is needed on Pi 5; avoid Typesense (Pi 5 page-size bug); validate Meilisearch on actual Pi 5 hardware before committing
 - **A11y**: Audit valuable but remediation scope unknown; better tackled after audit is complete
 
-### If User Prioritizes Offline Search
+### If User Prioritizes Content Mission
 
-**Priority 1 (June 1-6): Search Engine Integration**
-- **Why**: Solves for users with large ZIM files; reduces manual navigation
-- **Caveat**: Must test on Pi 5 for thermal throttling; if found, redesign needed
-- **Timeline**: 8-11 hours; fits in June 1-12 window if no throttling discovered
+**Priority 1 (June 1-10): Medical Reference + Water Systems in parallel**
+- **Why**: Highest life-safety value; source documents already exist (off-grid-living, WHO, CDC)
+- **Timeline**: 22 combined hours across two parallel modules; fits June 1-10 window with two engineers
 
-**Priority 2 (June 6-12): OPDS or API Gateway (partial)
-- **Why**: OPDS unblocks library partnerships; API Gateway is quick win
-- **Risk**: May not complete all of OPDS (8-11 hrs) + Search (8-11 hrs) within 11-day window; prioritize OPDS if time is tight
+**Priority 2 (June 1-3, parallel with Priority 1): API Gateway**
+- **Why**: Low-effort quick win; enables federation partners to consume new ZIM exports
 
-### If User Prioritizes Accessibility
-
-**Priority 1 (June 1-10): A11y Audit + Critical Remediation**
-- **Why**: Expands addressable community; positions project as accessibility-conscious
-- **Caveat**: Audit uncovers remediation effort; high chance of overflow
-- **Timeline**: 10-12 hours for audit; TBD for remediation; recommend "audit + top 5 critical fixes" as Phase 5.2 scope
-
-**Priority 2 (June 10-12): OPDS or API Gateway (partial)
-- **Why**: Parallel feature work to maximize Phase 5.2 impact
-- **Risk**: Only 2-3 hours remain; OPDS (8-11 hrs) won't fit; API Gateway (4-6 hrs) might fit with spillover
+**Deferred to Phase 6**: OPDS, Search, A11y
 
 ---
 
@@ -732,17 +859,38 @@ uv run uvicorn app.main:create_app --reload --host 127.0.0.1 --port 8000
 
 ## Conclusion & Next Steps
 
-The user should decide by **May 26 13:00 UTC**:
+The user should decide by **May 27 13:00 UTC**:
 
-1. **Which Phase 5.2 candidate is the top priority?** (OPDS, Search, A11y audit, or API Gateway)
-2. **Should multiple candidates run in parallel?** (OPDS + API Gateway is feasible and recommended)
-3. **Are there Pi 5 thermal or hardware constraints that should influence the decision?** (affects Search candidate)
-4. **Should A11y audit be Phase 5.2 or Phase 6?** (recommend Phase 6 unless accessibility is top-priority)
+1. **Infrastructure vs. Content primary track?** Infrastructure (OPDS, API Gateway, Search, A11y) vs. Content Domain Expansion (Medical, Water, Seeds, Food, Botanical) — or both in parallel
+2. **Which infrastructure candidates are in scope?** (OPDS + API Gateway recommended; Search and A11y deferred)
+3. **Which content modules are in scope?** (Medical + Water as Wave 1; Seed + Food as Wave 2)
+4. **Should Search use SQLite FTS5 or an external engine?** (SQLite FTS5 strongly recommended for Pi 5 given Typesense page-size bug and Meilisearch's unofficial ARM64 status)
+5. **Should A11y audit be Phase 5.2 or Phase 6?** (recommend Phase 6 unless accessibility is top-priority)
+
+Related documents:
+- Detailed content expansion candidates: `/projects/open-repo/PHASE_5.2_FEATURE_CANDIDATES.md`
+- Content priority scoring: `/projects/open-repo/PHASE_5.2_PRIORITY_MATRIX.md`
+- Phase 5.1 → 5.2 handoff checklist: `/projects/open-repo/PHASE_5.2_CAPABILITY_AUDIT.md`
 
 Once the decision is made, implementation begins immediately June 1. All deliverables (code, tests, documentation) will be production-ready by June 12, 2026.
 
 ---
 
-**Analysis completed**: 2026-05-26 10:15 UTC  
-**Ready for user decision**: Yes  
-**Production implementation ready**: Yes  
+**Analysis completed**: 2026-05-26 (updated with research corrections)
+**Ready for user decision**: Yes
+**Production implementation ready**: Yes
+
+## Sources
+
+- [OPDS 1.2 Specification](https://specs.opds.io/opds-1.2.html)
+- [OPDS 2.0 Draft (JSON-LD/Readium)](https://drafts.opds.io/opds-2.0)
+- [feedgen PyPI — Snyk health analysis (inactive status confirmed)](https://snyk.io/advisor/python/feedgen)
+- [feedgen PyPI page](https://pypi.org/project/feedgen/)
+- [Meilisearch vs Typesense 2026 comparison](https://www.meilisearch.com/blog/meilisearch-vs-typesense)
+- [Meilisearch aarch64 — Arch Linux ARM packages](https://archlinuxarm.org/packages/aarch64/meilisearch)
+- [Typesense Raspberry Pi 5 16K page-size issue (GitHub #1351)](https://github.com/typesense/typesense/issues/1351)
+- [SQLite FTS5 Extension documentation](https://sqlite.org/fts5.html)
+- [E-Reader Market Share 2025 — Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/e-reader-market)
+- [OpenAPI Specification v3.2.0](https://spec.openapis.org/oas/v3.2.0.html)
+- [ActivityPub W3C standard](https://www.w3.org/TR/activitypub/)
+- [Kiwix OPDS wiki documentation](https://wiki.kiwix.org/wiki/OPDS)  
