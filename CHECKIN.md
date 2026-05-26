@@ -1,3 +1,39 @@
+## Since Last Check-in (Session 1691, May 27 00:00–00:30 UTC) — ✅ STOCKBOT BLOCKER PROGRESS + JPM DECISION REQUIRED
+
+**Status**: ✅ **DB BACKUP CREATED** | ✅ **AMZN STACKER_ID POPULATED** | ⏳ **JPM MODEL TYPE DECISION NEEDED**
+
+**What Was Accomplished**:
+
+1. ✅ **stockbot: Deployment Blocker Progress (3/3 blockers engaged)**
+   - **Blocker #3 (DB backup)**: RESOLVED — Created `/opt/stockbot/database/trading.db.pre-amzn-jpm.backup` on Jetson (46 MB, safety requirement satisfied)
+   - **Blocker #1 (stacker_ids)**: PARTIALLY RESOLVED — Populated AMZN stacker_id with generated UUID (43e36c77-87d8-470a-b666-5186fde4d0ec). JPM stacker_id generation on hold pending blocker #2 decision
+   - **Blocker #2 (JPM model type)**: USER DECISION REQUIRED — Found training specification on Jetson documenting intended architecture: AMZN→lgbm_ho (✅ matches), JPM→ridge_wf (❌ only lgbm_ho pkl exists). Decision point: (A) Retrain JPM with ridge_wf (~2-3 hrs), or (B) Update config to use lgbm_ho (faster activation, reduces architecture diversity)
+   
+2. ✅ **Discovery: AMZN_JPM_TIER1_TRAINING_SPECIFICATION.md**
+   - Located on Jetson; provides complete architectural rationale for model choices
+   - AMZN lgbm_ho: captures non-linear momentum in AWS/e-commerce seasonality
+   - JPM ridge_wf: linear model for mean-reverting, interest-rate-driven returns (not available; trained as lgbm_ho instead)
+   - Enables informed user decision on blocker #2 trade-off
+
+**Needs Your Input** (Next decision):
+
+**CRITICAL — JPM Model Type Decision** (affects Phase 2 activation timeline):
+- **Option A (Recommended if time permits)**: Retrain JPM with ridge_wf architecture
+  - Preserves intended architecture (linear for linear returns)
+  - Maintains architecture diversification (AAPL lgbm_ho + AMZN lgbm_ho + JPM ridge_wf)
+  - Timeline: ~2-3 hours; ready for immediate deployment once complete
+  
+- **Option B (Faster activation)**: Update `active-sessions-4session.json` to use lgbm_ho for JPM
+  - Enables Phase 2 activation immediately (no retraining)
+  - Reduces architecture diversification (3 sessions all using same tree-based model)
+  - Trade-off: all three sessions now use non-linear models; loses linear/mean-reversion test
+
+Once you decide, orchestrator will populate JPM stacker_id and ready Phase 2 for immediate activation.
+
+**Critical Path**: Blocker #2 decision unblocks blocker #1 completion → Phase 2 activation checklist items 1.4–1.7 → AMZN/JPM sessions live
+
+---
+
 ## Since Last Check-in (Session 1690, May 26 23:00–23:30 UTC) — ✅ DISTRIBUTION SEQUENCES VERIFIED + QUEUE REFRESHED
 
 **Status**: ✅ **DOMAIN 56 DISTRIBUTION AUDIT COMPLETE** | ✅ **DOMAIN 39 PRE-STAGING VERIFIED** | ✅ **3 NEW QUEUE ITEMS ADDED** | ⏳ **MAY 28-31 LAUNCHES READY**

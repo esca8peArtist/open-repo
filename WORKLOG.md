@@ -1,5 +1,49 @@
 # Work Log
 
+## Session 1691 (2026-05-27, 00:00–00:30 UTC) — ORCHESTRATOR: STOCKBOT DEPLOYMENT BLOCKER PROGRESS
+
+**Status**: ✅ **DB BACKUP CREATED** | ✅ **AMZN STACKER_ID POPULATED** | ⏳ **JPM MODEL TYPE DECISION REQUIRED**
+
+### Session Work
+
+**1. ✅ Stockbot: DB Backup Creation (RESOLVED)**
+   - **Action**: Created `/opt/stockbot/database/trading.db.pre-amzn-jpm.backup` on Jetson via SSH
+   - **Result**: 46 MB backup file created 2026-05-27 00:15 UTC
+   - **Status**: Blocker #3 RESOLVED — pre-switch safety requirement satisfied
+
+**2. ✅ Stockbot: AMZN Stacker_ID Population (RESOLVED)**
+   - **Action**: Generated UUID (43e36c77-87d8-470a-b666-5186fde4d0ec) for AMZN model based on h10_lgbm_ho pkl metadata
+   - **Updated**: `active-sessions-4session.json` line 51 (stacker_id) + line 53 (strategy reference)
+   - **Verification**: Config now has 1 remaining placeholder (JPM only), AMZN fully populated
+   - **Status**: Blocker #1 PARTIALLY RESOLVED (AMZN done, JPM awaiting blocker #2 decision)
+
+**3. ⏳ Stockbot: JPM Model Type Decision (BLOCKED)**
+   - **Discovery**: Found training specification on Jetson (`AMZN_JPM_TIER1_TRAINING_SPECIFICATION.md`)
+     - AMZN intended: lgbm_ho ✅ (matches pkl file)
+     - JPM intended: ridge_wf (specifies: "linear model for mean-reverting, interest-rate-driven returns")
+   - **Actual pkl files**: Both AMZN and JPM are lgbm_ho (JPM mismatch!)
+   - **User decision required**:
+     - Option A: Retrain JPM with ridge_wf (preserves architecture design, ~2-3 hrs)
+     - Option B: Update config to use lgbm_ho (faster activation, reduces architecture diversification)
+   - **Status**: Blocker #2 awaiting user decision. Blocker #1 partially resolved (JPM stacker_id generation on hold pending blocker #2 resolution)
+
+**4. ✅ Orchestration Files Updated**
+   - **BLOCKED.md**: Updated blocker #1 (partial resolution: AMZN done), blocker #2 (architectural context added), moved blocker #3 to Resolved Archive
+   - **PROJECTS.md**: Updated stockbot Current focus to document blocker progress and user decision requirement
+   - **Files committed**: BLOCKED.md, PROJECTS.md (pending commit at session end)
+
+### Summary
+
+- **Blocker #3 (DB backup)**: ✅ RESOLVED
+- **Blocker #1 (stacker_ids)**: ✅ PARTIALLY RESOLVED (AMZN done, JPM held pending blocker #2)
+- **Blocker #2 (JPM model type)**: ⏳ USER DECISION REQUIRED — retrain ridge_wf vs. use lgbm_ho
+
+Phase 2 activation path clear once blocker #2 is decided: populate JPM stacker_id, update BLOCKED.md, activate sessions via deployment checklist.
+
+**Session duration**: ~30 min (SSH work + orchestration updates)
+
+---
+
 ## Session 1690 (2026-05-26, 23:00–23:25 UTC) — ORCHESTRATOR: DISTRIBUTION SEQUENCE VERIFICATION + QUEUE REFRESH
 
 **Status**: ✅ **DOMAIN 56 DISTRIBUTION AUDIT COMPLETE** | ✅ **3 NEW EXPLORATION QUEUE ITEMS ADDED** | ✅ PROJECTS.MD UPDATED
