@@ -4,6 +4,26 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 3 Production Launch Preparation — May 26, 2026
+
+**Task**: Produce Phase 3 medicinal herbs pre-launch preparation checklist and supplier confirmation tracker to enable June 22 execution start with zero setup delay. Exploration queue item: "seedwarden: Phase 3 Medicinal Herbs Production Launch Preparation (4-6 hrs, May 28 gating)."
+
+**Deliverables produced**:
+
+1. `PHASE_3_PRODUCTION_LAUNCH_CHECKLIST.md` — v7.0 (supersedes v6.0, May 21). Full pre-launch preparation checklist: herb selection finalization, supplier confirmation window with per-supplier action tables, writing production templates (bundle outline, species guide, practitioner-content templates with word counts and research depth), Canva production workflow for Phase 3 (palette adaptation, stock image needs per bundle, design timeline), photography pre-staging checklist (June 20-23 shoot, 3-4 day session, location scouting), pre-gate compliance checklist (Phase 2 forager cohort tracker, Native Plants conversion monitor, upload readiness, FTC pre-compliance review), upload sequence (June 29 – August 3), and June 22 start checklist.
+
+2. `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.csv` — Supplier availability matrix for all 8 suppliers (Prairie Moon Nursery, Strictly Medicinal Seeds, Mountain Rose Herbs, Southern Exposure Seed Exchange, Fedco Seeds, NativeWildflowers.net, Local Nursery/Garden Center, Frontier Co-op). Includes lead times, delivery feasibility, order deadlines, confirmed status fields, and per-supplier notes with May 26 status updates.
+
+**Key findings documented** (new since v6.0):
+- Strictly Medicinal Seeds summer live-plant shipping pause identified — do not plan on live transplants for June without email confirmation (send by May 27)
+- NativeWildflowers.net confirmed in-stock for Black Cohosh ($5.99 bareroot) and Goldenseal ($4.99 bareroot) as of May 22; Black Cohosh order deadline is May 30
+- Mountain Rose Herbs: Goldenseal root and Black Cohosh root confirmed OOS (May 22); all other 11 sprint herb skus expected available (verify June 10)
+- Prairie Moon spring potted plant season narrowing — confirm Elderberry, Echinacea, Passionflower, Valerian availability June 1; local nursery is more reliable for Elderberry, Lavender, Lemon Balm
+
+**Supplier confirmation window**: June 8 (Goldenseal hard deadline), June 15 (all dried herbs hard deadline)
+
+---
+
 ## orchestrator session 1653 — seedwarden Phase 2 readiness audit COMPLETE — May 26, 2026
 
 **Task**: Full audit of Phase 2 staging readiness across 6 document areas per orchestrator instructions.
