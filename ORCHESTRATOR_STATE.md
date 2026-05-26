@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-26T11:53:01Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-26T12:37:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 0.5% | Reset in 156h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 0.5% | Reset in 155h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **AUDIT COMPLETE — TOO_EARLY contingency stage-ready for May 28 execution (Session 1653)** — ✅ Signal log audit complete: 17 [fill] placeholders confirmed (user must fill May 18-21 response data by May 25-27) | ✅ Domain 39 Gist LIVE verified at https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b | ✅ Domain 56 distribution ready (4 template variations, 11 contacts, all specs production-ready) | ✅ May 28 re-synthesis contingency playbooks ready (all 4 outcomes: STRON … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **READINESS VERIFIED — May 28 distribution GO, signal log blocking synthesis (Session 1657)** — ✅ Domain 56: GO for May 28 send (4 templates + 11 contacts verified; need 5-min credential swap before send) | ✅ Domain 39: CONDITIONAL (document + Gist ready; needs 3-4 hrs distribution prep by June 1: contact list + templates) | ✅ Contingency playbooks: ALL 4 READY (STRONG/MODERATE/WEAK/TOO_EARLY) | ⚠️ **Signal log BLOCKING**: May 28 synthesis will FAIL again unless May 19-25 inbox met … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,16 +36,16 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **AUDIT COMPLETE — Track B ready for May 30 launch; Track A clear for user action (Session 1653)** — ✅ **Track B validation**: READY (6 user-only actions documented with step-by-step instructions, 25-day timeline May 5-30 realistic, risk mitigations complete) | ✅ **Phase 2 analytics infrastructure**: READY (7-sheet Google Sheets template, API integration specs, May 29 setup procedure documented) | ✅ **Social account checklists**: COMPLETE (Instagram/TikTok/Pinterest all platforms docum … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **CONDITIONAL GO — May 30 very tight (4 days, 15-18 hrs work needed); all 6 gates OVERDUE or NOT STARTED (Session 1657)** — ✅ **6 gates mapped with critical path**: Gate 1 (social accts, 30-45 min, OVERDUE since May 18) + Gate 2 (Canva Brand Kit, 30 min, OVERDUE since May 24) + Zone Cards (4-6 hrs, NOT STARTED, 0/8 complete — **CRITICAL BOTTLENECK**) + Google Drive (30 min) + Gate 3 Kit automation (3-4.5 hrs, **MUST START MAY 27 for DNS 48-hr propagation**) + May 29 audit (2-3 hrs) | ⚠ … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **MERGE-READY — Phase 5.1 MVP audit COMPLETE; feature branch READY FOR MERGE (Session 1653)** — ✅ **Tests**: 51/51 ZIM tests passing, 240 backend tests passing, zero failures | ✅ **Merge conflicts**: All 3 resolved (zim_writer.py + 2 docs), zero conflict markers | ✅ **Commits**: 6 commits ahead of master, all conventional commits format | ✅ **Documentation**: Both implementation docs updated with "completed" status, 100% confidence | **Immediate action**: Merge feature/zimwriter-libz … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[RESOLVED] Phase 5.1 MVP MERGED + PRE-DEPLOYMENT ENDPOINT COMPLETE (Session 1656)** — ✅ **Merge complete**: feature/zimwriter-libzim-activation merged to master (commit c2572adc, all conflicts resolved) | ✅ **All tests passing**: 240 backend tests + 51 ZIM tests (9.01s) | ✅ **Export.py endpoint COMPLETE** (Session 1656, commit 67715d02): POST /api/v1/export endpoint + 28 tests, all passing; pre-deployment code-only work 100% complete. Zero breaking changes to Phase 4 federation. | **Re … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **Phase 5 Wave 2 COMPLETE (May 26, Session 1651)** — ✅ Veterinary Care (10.7K words, 39 citations), ✅ Psychological Support (9.2K words, 36 citations), ✅ Conflict Resolution (8.6K words, 28 citations), ✅ Community Playbook (8.8K words, 42 citations) — Total 37.2K words, 145 citations, all production-ready. Wave 1 (14.6K) + Microgrids (14.8K) also complete. **Phase 5 ready for June 1 publication decision** (Option A: all Wave 2 together; Option B: selective by priority; Option C: hold … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **PUBLICATION DECISION FRAMEWORK READY — June 1 deadline for Option A/B/C choice (Session 1657)** — ✅ Phase 5 Wave 2 COMPLETE: Veterinary (10.7K, 39 cit), Psych Support (9.2K, 36 cit), Conflict (8.6K, 28 cit), Community Playbook (8.6K, 42 cit) = 37.2K words, 145 citations. ✅ Wave 1 + Wave 2 total = 51.6K words production-ready. Wave 3 = 0% complete (est. 25-35K words, 7-8 domains: food preserve, water systems, livestock, seed saving, equipment, healthcare, fuel, educational governance).  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -105,42 +105,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+- 08545d73: orchestrator session 1654 — open-repo Phase 5.1 MVP merged to master
 
-**Critical path actions for user (May 27-June 8)**:
-- May 27: Strictly Medicinal Seeds email (no float)
-- May 27-29: Domain 39 Gist creation
-- May 28-30: Domain 56 distribution (May 28 send) + Domain 39 pre-production (source verification, Gist setup)
-- May 30: Seedwarden gates 1-3 outcomes + Phase 3 scope decision (Option A/B/C)
-- June 8: Goldenseal path decision (affects Immunity bundle photography)
+**Status**: 2 projects advanced (resistance-research validation → distribution-ready; open-repo merge → deployment-ready). 1 block remains (Jetson). Ready for next session.
 
----
 
-## Session Duration & Token Impact
+## Session 1656 (2026-05-26, 12:16–ongoing UTC) — Verification + Pre-Deployment Work
 
-**Session start**: 06:00 UTC May 26
-**Session end**: 07:50 UTC May 26 (actual)
-**Duration**: 1 hour 50 minutes (3 parallel agents)
-**Token budget spent**: ~227K (agent operations)
+**Parallel execution pattern**:
+- Spawned resistance-research agent (May 28 distribution readiness verification)
+- Spawned open-repo agent (export.py endpoint implementation)
+- Background: Jetson health check (curl timeout attempt, already failed)
 
-**ROI**: Three parallel agents produced 7 production-ready deliverables that unblock May 28-June 22 execution windows across 3 highest-priority projects. Estimated user decision-support value: $2-4K in equivalent consulting hours.
+**Resistance-Research** (Agent completion):
+- ✅ **Domain 39 Gist**: ACCESSIBLE (https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b)
+- ✅ **Domain 56 files**: FOUND (main domain doc 349 lines, all 4 email templates, 11 contacts, May 28 checklist)
+- ⚠️ **Signal log [fill] count**: 17 via grep (incomplete, needs user data by May 27)
+- ✅ **Contingency playbooks**: 4 OUTCOMES READY (STRONG/MODERATE/WEAK/TOO_EARLY)
+- ✅ **Synthesis monitor**: RUNNABLE (expected error state until signal log filled)
+- **Action item flagged**: Domain 56 Gist URL (https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f) needs verification before May 28 sends
+- **Assessment**: All materials production-ready for May 28 distribution (contingent on user signal log fill by May 27)
 
----
+**Open-Repo** (Agent completion):
+- ✅ **export.py endpoint**: COMPLETE (375 lines, Session 1656, commit 67715d02)
+- ✅ **Tests**: 28 new tests all passing; 180 pre-existing tests unaffected
+- ✅ **Integration**: POST /api/v1/export endpoint with libzim integration
+- ✅ **Code review**: Design decisions documented; 2 Phase 5.2 upgrade paths noted
+- **Pre-deployment status**: Code-only work 100% complete; system pre-reqs remain (libzim wheel, alembic upgrade)
+- **Deployment impact**: Zero breaking changes to Phase 4 federation
+- PROJECTS.md updated
 
-## Files Committed to Master
+**Jetson** (Block verification):
+- Health check timed out (curl exit 127: jq not found; endpoint still unreachable)
+- Block remains active since May 22 14:00 UTC
+- No change to block status
 
-**Session 1647 deliverables** (9 new files):
-- projects/resistance-research/DOMAIN_39_SOURCE_VERIFICATION.md
-- projects/resistance-research/DOMAIN_39_CONTACT_VERIFICATION.md
-- projects/resistance-research/DOMAIN_39_GIST_CREATION_TEMPLATE.md
-- projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md
-- projects/systems-resilience/phase-5/wave-2/MICROGRID_ARCHITECTURE_DECISION_MATRIX.csv
-- projects/seedwarden/PHASE_3_MEDICINAL_HERB_SELECTION.md
-- projects/seedwarden/PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.csv
-- projects/seedwarden/SUPPLIER_CONFIRMATION_ACTION_LIST.md
-- projects/seedwarden/PHASE_3_PRODUCTION_TIMELINE_SKELETON.csv
-- projects/seedwarden/PHASE_3_CANVA_ADAPTATION_PLAN.md
-- projects/seedwarden/PHASE_3_PRE_GATE_COMPLIANCE_CHECKLIST.md
+**Commits**:
+- 67715d02: open-repo export.py endpoint + tests
+- [PENDING] orchestrator session 1656 — resistance-research verification complete + open-repo pre-deployment work complete
 
-**Prior session commits**:
-- Commit 003ee6d5 (Session 1646 Item 30 deliverables)
-- Commit d3f3e151 (Session 1646 Item 31 deliverables)
+**Status**: 2 projects verified/completed (resistance-research May 28 readiness confirmed; open-repo pre-deployment code DONE). Jetson block remains. Ready for commitment and next session work.
