@@ -1,3 +1,22 @@
+## Since Last Check-in (Session 1661, May 26 15:30 UTC onwards) — GATE 3 PRE-FLIGHT & FINAL VALIDATION
+
+**Status**: ✅ **SEEDWARDEN GATE 3 READY** (pre-flight validation complete, May 27 deployment script finalized) | ⏳ **GATES 1–2 OVERDUE** (social accounts, Canva Brand Kit — May 26 23:59 UTC deadline critical) | ✅ **RESISTANCE-RESEARCH SYNTHESIS READY** (May 28 19:00 UTC infrastructure finalized) | ⏳ **STOCKBOT JETSON** (unreachable 72+ hrs, no autonomous work available)
+
+**What was accomplished**:
+- ✅ Seedwarden Gate 3 pre-flight validation: all 8 zone card PDFs verified, email sequences confirmed copy-paste ready
+- ✅ Created `MAY_27_GATE_3_DEPLOYMENT_SCRIPT.md` (comprehensive user deployment guide, all fields pre-filled, zero decision overhead)
+- ✅ Created `GATE_3_PREFLIGHT_VALIDATION_MAY26.md` (orchestrator validation summary + blocker assessment)
+- ✅ Committed: ad51f60e (feat(seedwarden): Gate 3 pre-flight validation + May 27 deployment script)
+- ✅ Resistance-research: May 28 synthesis infrastructure verified production-ready
+- ⚠️ **Critical blocker**: Seedwarden Gates 1–2 overdue (May 18, May 24 deadlines passed); May 26 23:59 UTC deadline for May 27 Gate 3 start
+
+**Needs your input (URGENT)**:
+- [ ] Seedwarden Gates 1–2: Complete by May 26 23:59 UTC OR notify orchestrator to activate May 30-31 contingency
+- [ ] Stockbot Jetson: Check access when possible (`ssh ubuntu@100.120.18.84 "curl -s http://localhost:8000/api/health"`)
+- [ ] Resistance-research signal log: Fill 17 remaining [fill] fields by May 28 18:00 UTC (will use conservative defaults if empty)
+
+---
+
 ## Since Last Check-in (Session 1660, May 26 13:08–14:30 UTC) — EXPLORATION QUEUE EXECUTION (2 ITEMS COMPLETE)
 
 **Status**: ✅ **SEEDWARDEN PHASE 3 PREP COMPLETE** (medicinal herbs launch checklist + supplier tracker) | ✅ **STOCKBOT JETSON CONTINGENCY COMPLETE** (hardware failure playbook, failover architecture, activation criteria) | ⏳ **All high-priority projects awaiting user action** | ⏰ **May 28 synthesis pre-flight check next executable item**
