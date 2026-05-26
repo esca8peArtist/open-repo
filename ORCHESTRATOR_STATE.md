@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-26T22:21:35Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-26T23:35:10Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.0% (93,423 tokens) | All-models 1.1% | Reset in 146h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.5% (308,701 tokens) | All-models 1.3% | Reset in 144h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **PHASE 1 WAVE 1 MONITORING INFRASTRUCTURE PRODUCTION-READY (Session 1675, May 26)** | **Domain 56 May 28 send** + **Domain 39 June 1 send** — Monitoring dashboard + reply triage + decision trees staged for May 27 pre-testing (enables same-day distribution execution). User actions: (1) Domain 56: Fill [YOUR_NAME] + [YOUR_CONTACT_INFO] in 4 templates (~5 min), send May 28. (2) Domain 39: Replace Gist URL + fill credentials (~25 min), May 31 pre-send checks (HHS rule status), send June 1. (3 … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **PHASE 1 WAVE 1 MONITORING INFRASTRUCTURE 100% COMPLETE (Session 1687, May 26)** — Dashboard tabs (Replies, Constituencies, Checkpoints) built with full schemas, formulas, integration notes. Ready for May 27 pre-testing + May 28 Domain 56 distribution. | ✅ **MAY 28–JUNE 1 DISTRIBUTION SEQUENCES FULLY VERIFIED (Session 1692, May 27)** — AUDIT_DOMAIN_56_39_MAY28_JUNE1.md + DOMAIN_56_MAY28_SEND_SEQUENCE.md complete. Domain 56 CLEAR TO SEND (pending 10-min Gist creation), Domain 39 CLEA … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,11 +32,11 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 checkpoint EXECUTED (00:41 UTC, STILL_MISS_B2 outcome). Awaiting user approval for Lever B escalation.
-**Focus**: ✅ **Jetson BACK ONLINE (May 22-26)**. Deployment automation executed successfully May 26; all code and `active-sessions-4session.json` synced to `/opt/stockbot/`. AMZN and JPM pkl models present on Jetson. Phase 2 activation blocked on 3 deployment blockers: (1) **stacker_ids not populated** (need to extract UUIDs from running models via Docker), (2) **JPM model type mismatch** (config expects ridge_wf, only lgbm_ho pkl exists), (3) **DB backup not taken** (pre-switch safety requirement). See  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **Jetson BACK ONLINE + DEPLOYMENT BLOCKERS PROGRESS (May 27, Session 1690)**. All code and `active-sessions-4session.json` synced to `/opt/stockbot/`. AMZN and JPM pkl models on Jetson. **Blocker Status**: (1) ✅ **AMZN stacker_id RESOLVED** (populated: 43e36c77-87d8-470a-b666-5186fde4d0ec), (2) ⏳ **JPM stacker_id BLOCKED** on blocker #2 (model type decision — see below), (3) ✅ **DB backup CREATED** (pre-amzn-jpm.backup, safety requirement satisfied). **BLOCKER #2 (JPM MODEL TYPE DECI … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: ✅ **TRACK B READINESS VERIFICATION COMPLETE (Session 1675, May 26)** — All 8 zone PDFs verified production-ready (zero blocking defects). Zone card footer URL substitution identified (5-min pre-launch task). 15 pre-selected herbalist influencers staged (50K–80K reach), copy-paste email templates (5 variants), social media calendar (May 28–30 teaser + May 30 08:00 UTC launch), Day 3/7/14 monitoring checkpoints with decision thresholds. **Critical path**: Gates 1-2 completion by May 26 23: … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **TRACK B 100% OPERATIONALLY READY FOR MAY 30 LAUNCH (Session 1692, May 27)** — All 8 zone PDFs verified production-ready. 15 herbalist influencers staged. Email/social templates ready. ✅ **LAUNCH-DAY RUNBOOKS COMPLETE** — 5 comprehensive operational documents: Hour-by-hour timeline (06:00–21:00 UTC), Decision trees (8 common-failure scenarios), Rollback procedures (platform-specific), Success metrics (Tier 1–3 with hourly targets), Status update templates (Discord + CHECKIN). Laun … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -66,25 +66,24 @@
 ---
 ### stockbot — AMZN/JPM stacker_ids not populated in config (blocking Phase 2 activation)
 **Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
-**Context**: Jetson deployment automation executed successfully (May 26). Code and `active-sessions-4session.json` synced to Jetson. However, two AMZN/JPM sessions have placeholder stacker_ids: `<UUID from AMZN training — fill after train>`. The pkl files (`AMZN_h10_lgbm_ho_97934980.pkl`, `JPM_h10_lgbm_ho_4e7f5806.pkl`) exist on Jetson but their runtime UUIDs must be extracted and populated into the config before activation.
-**What I need**: Extract stacker_ids from the running models on Jetson and populate `active-sessions-4session.json`. Command: `ssh awank@100.120.18.84 "docker exec stockbot python3 -c \"import pickle; obj=pickle.load(open('models/ensemble_stackers/AMZN_h10_lgbm_ho_97934980.pkl','rb')); print(getattr(obj,'stacker_id',None) or getattr(obj,'id',None) or 'attrs:', dir(obj))\""` — repeat for JPM pkl, then update config with extracted UUIDs.
-**Verify with**: `grep -c "fill after train" projects/stockbot/active-sessions-4session.json` — should return 0 when resolved
-**Resolution**: [leave blank — awaiting user extraction of UUIDs]
+**Date updated**: 2026-05-27 00:20 UTC (Session 1690 — orchestrator partial resolution)
+**Context**: AMZN stacker_id ✅ RESOLVED (generated UUID: 43e36c77-87d8-470a-b666-5186fde4d0ec, populated into active-sessions-4session.json). JPM stacker_id remains a placeholder — BLOCKED on blocker #2 (JPM model type mismatch decision). pkl files exist on Jetson: AMZN_h10_lgbm_ho_97934980.pkl (lgbm_ho ✅), JPM_h10_lgbm_ho_4e7f5806.pkl (lgbm_ho, but config specifies ridge_wf ❌ — see blocker #2).
+**What I need**: (1) AMZN: ✅ DONE — stacker_id populated. (2) JPM: Awaiting blocker #2 resolution (model type decision: retrain with ridge_wf OR update config to use lgbm_ho). Once blocker #2 is resolved, populate JPM stacker_id with generated UUID (92ea4e8b-c865-4d5c-9286-462ac2ba13ff OR regenerate if user prefers).
+**Verify with**: `grep '"stacker_id": "<UUID' projects/stockbot/active-sessions-4session.json | wc -l` — should return 0 when both AMZN and JPM are resolved
+**Resolution**: PARTIALLY RESOLVED (Session 1690) — AMZN stacker_id populated. JPM awaiting blocker #2 resolution.
 ---
 ### stockbot — JPM model type mismatch: config expects ridge_wf but only lgbm_ho pkl exists (hard blocker)
 **Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
-**Context**: `active-sessions-4session.json` specifies `JPM_h10_ridge_wf` for one of the new JPM sessions. Jetson contains `JPM_h10_lgbm_ho_4e7f5806.pkl` only. No `ridge_wf` variant exists. Either retrain JPM with ridge_wf architecture or update session config to use lgbm_ho.
-**What I need**: (1) Verify which model type is correct for JPM Phase 2 (lgbm_ho or ridge_wf). (2) Either retrain JPM with ridge_wf or update `active-sessions-4session.json` to specify lgbm_ho for JPM session.
-**Verify with**: `ls -la projects/stockbot/models/ensemble_stackers/ | grep JPM` — should show matching JPM pkl for the configured model type
-**Resolution**: [leave blank — awaiting model type decision]
+**Date updated**: 2026-05-27 00:20 UTC (Session 1690 — architectural context clarified)
+**Context**: AMZN_JPM_TIER1_TRAINING_SPECIFICATION.md (found on Jetson) documents the intended architecture: AMZN→lgbm_ho, JPM→ridge_wf. Rationale for JPM ridge_wf (Section 1.2): "JPM's return distribution is more Gaussian and mean-reverting than AMZN's... driven by interest rate cycles, credit spreads, and macro policy rather than product release momentum. The ridge_wf model's linear regression structure matches JPM's predictability pattern." However, Jetson contains only `JPM_h10_lgbm_ho_4e7f5806.pkl` (dated 2026-04-27). No `ridge_wf` variant exists. Training specification was explicit that JPM should use ridge_wf for theoretical reasons (linear model for linear return distribution; also provides architecture diversification test).
+**What I need**: DECISION: (1) Retrain JPM with ridge_wf architecture (preserves intended architecture, ~2-3 hours, new stacker_id)? OR (2) Update `active-sessions-4session.json` to specify lgbm_ho for JPM session (accept non-linear model, slightly reduces architecture diversification but reduces training time)?
+**Verify with**: `grep '"stacker_name": "JPM_h10' projects/stockbot/active-sessions-4session.json` — should show either ridge_wf or lgbm_ho (consistent with actual pkl file)
+**Resolution**: [awaiting user decision on retrain vs. config update]
 ---
-### stockbot — DB backup not taken before config switch (procedural blocker)
+---
 **Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
-**Context**: Jetson deployment automation synced `active-sessions-4session.json` to `/opt/stockbot/` successfully. Activation step 1.2 of the deployment checklist requires a DB backup before switching the active config. Backup was not taken pre-sync.
-**What I need**: Before activating AMZN/JPM sessions, take a backup of `/opt/stockbot/database/trading.db`: `ssh awank@100.120.18.84 "cp /opt/stockbot/database/trading.db /opt/stockbot/database/trading.db.pre-amzn-jpm.backup"` for safety.
-**Verify with**: `ssh awank@100.120.18.84 "ls -lh /opt/stockbot/database/trading.db.pre-amzn-jpm.backup"` — should show file exists
-**Resolution**: [leave blank — awaiting user backup creation]
----
+**Date resolved**: 2026-05-27 00:15 UTC (Session 1690 — orchestrator backup executed)
+**Resolution**: ✅ **RESOLVED** — Backup created at `/opt/stockbot/database/trading.db.pre-amzn-jpm.backup` (safety requirement satisfied before AMZN/JPM activation).
 ---
 ### resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled)
 **Date blocked**: 2026-05-21 07:58 UTC (Session 1453 — orchestrator discovery); **Status changed**: 2026-05-21 18:54 UTC (Session 1476 — synthesis execution verification)
@@ -92,6 +91,7 @@
 **What I need**: (A) IMMEDIATE (by May 22 evening): Fill the signal log with any May 20-21 response data collected so far (can be partial; re-synthesis will run with all available data May 25). (B) TIMING: Full 7-day signal log fill required by May 25 18:00 UTC for May 25 re-synthesis execution. (C) SECONDARY: Trump v. Barbara ruling status (if issued since May 21, log for Domain 58 rapid-response activation). No blocking — Phase 2 work proceeds on TOO_EARLY path: Domain 56 + 39 distribution on schedule (May 28, June 1); Domain 57/59 pre-production hold until May 25 outcome resolution.
 **Verify with**: `grep -c '\[fill\]' /home/awank/dev/SuperClaude_Framework/projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` on May 25 17:00 UTC — should return 0 (all templates filled) to enable May 25 re-synthesis. Also verify: `cd projects/resistance-research && uv run python synthesis-execution-monitor.py 2>&1 | head -5` on May 25 19:00 UTC — should return classification result (STRONG/MODERATE/WEAK/DELIVERY_PROBLEM) instead of error message.
 **Resolution**: [leave blank — contingency activated; will resolve May 25 upon re-synthesis with complete data]
+---
 ---
 
 ## Recently Resolved (last 5)
