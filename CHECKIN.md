@@ -1,3 +1,75 @@
+## Since Last Check-in (Session 1692, May 27 00:30–02:10 UTC) — ✅ MAY 28–JUNE 1 PREPARATION COMPLETE + LAUNCH RUNBOOKS READY
+
+**Status**: ✅ **Resistance-Research Distributions Verified** | ✅ **Seedwarden May 30 Launch Operationally Ready** | ✅ **Systems-Resilience Phase 6 User Decision Supported**
+
+---
+
+### Session 1692 Accomplishments
+
+**1. ✅ Resistance-Research: May 28–June 1 Distribution Sequence Audit (EXPLORATION QUEUE ITEM)**
+   - **AUDIT_DOMAIN_56_39_MAY28_JUNE1.md**: Comprehensive template/contact/Gist verification
+   - **DOMAIN_56_MAY28_SEND_SEQUENCE.md**: Hour-by-hour execution checklist with contingencies
+   - **Domain 56 Verdict**: CLEAR TO SEND (pending 10-min Gist creation by user)
+     - 4 email templates verified, 11 Tier 1 contacts verified, 5 social posts ready
+     - May 28 send window 14:00–18:00 UTC (4 hours, before 19:00 synthesis)
+   - **Domain 39 Verdict**: CLEAR TO SEND (Gist already live)
+     - 3 email templates verified, 18 Tier 1 contacts verified, Gist URL confirmed live
+     - June 1 send window 13:00–13:30 UTC (30 minutes, HHS rule issuance urgency)
+   - **User timeline**: Domain 56 (45 min total: 10 min Gist + 5 min placeholder fill + 30 min send), Domain 39 (35 min: placeholder fill + send)
+
+**2. ✅ Seedwarden: May 30 Launch-Day Operational Runbooks (EXPLORATION QUEUE ITEM)**
+   - **LAUNCH_DAY_HOUR_BY_HOUR_RUNBOOK.md** (491 lines): 06:00–21:00 UTC timeline with decision points
+     - Platform sequencing: Reddit 08:00, email 08:05, DMs 08:15, Instagram 08:30, TikTok 08:45, Pinterest 09:00
+     - Critical go/no-go decision point at 15:00 UTC
+     - Success metrics baseline: minimum 8 Etsy listings live, email sent, 2+ social posts
+   - **LAUNCH_DAY_DECISION_TREES_DETAILED.md** (817 lines): 8 failure scenarios (email, Etsy, social, analytics, low-engagement)
+     - All decision trees include <15-min resolution or escalation paths
+     - Fallback-first design: every failure has <30-min workaround
+   - **LAUNCH_DAY_ROLLBACK_PROCEDURES.md** (487 lines): Platform-specific rollback logic
+   - **LAUNCH_DAY_SUCCESS_METRICS.md** (405 lines): Tier 1–3 criteria with hourly targets
+   - **LAUNCH_DAY_STATUS_TEMPLATE.md** (471 lines): Discord and CHECKIN.md update templates
+   - **Result**: May 30 launch is 100% operationally ready with zero execution friction
+
+**3. ✅ Systems-Resilience: Phase 6 Decision-Support Materials (EXPLORATION QUEUE ITEM)**
+   - **phase-6-candidate-*.md** (3 one-pagers, 1,304–1,499 words each):
+     - Community Economic Resilience (19/25 score, 11 weeks, 75% source ready)
+     - Intergenerational Skills Development (17/25, 12 weeks, 70% source ready)
+     - Governance Scaling + Institutional Adaptation (18/25, 13 weeks, 65% source ready)
+   - **phase-6-selection-matrix.md** (2,269 words): 3 candidates × 5 criteria with weighted scenarios
+   - **phase-6-sequencing-recommendation.md** (3,386 words): Production timeline analysis for single/dual/triple-domain selections
+   - **phase-6-kickoff-template.md** (2,853 words): Copy-paste research agent brief, decision-triggered activation
+   - **Result**: User fully supported for May 31 decision. Orchestrator ready to activate June 1 with zero setup lag.
+
+---
+
+### Needs Your Input (Blocking Items Awaiting Decision)
+
+**1. CRITICAL — JPM Model Type Decision** (Stockbot Phase 2 activation):
+   - Option A: Retrain JPM with ridge_wf (~2-3 hours)
+   - Option B: Update config to lgbm_ho (immediate activation, less architecture diversity)
+   - **Timeline**: Decision whenever convenient; Phase 2 activation proceeds within hours of user choice
+
+**2. ACTION ITEMS FOR MAY 28–JUNE 1**:
+   - **May 28 Domain 56 send**: Create Gist (10 min), fill placeholders (5 min), send 14:00–18:00 UTC (5 min)
+   - **June 1 Domain 39 send**: Fill placeholders (25 min), send 13:00–13:30 UTC (2 min)
+   - **May 30 Seedwarden launch**: Execute 08:00 UTC launch using LAUNCH_DAY_HOUR_BY_HOUR_RUNBOOK.md
+   - **May 31 Systems-Resilience**: Read Phase 6 one-pagers (20 min), decide scope (which domain(s)?)
+
+---
+
+### Status Snapshot
+
+| Project | Status | Next Milestone |
+|---------|--------|----------------|
+| **stockbot** | ⏳ Blocked on JPM decision | Phase 2 activation (awaiting user) |
+| **resistance-research** | ✅ Ready | May 28 Domain 56 send |
+| **seedwarden** | ✅ Ready | May 30 08:00 UTC launch |
+| **systems-resilience** | ✅ Ready | May 31 user decision |
+| **cybersecurity-hardening** | ⏳ Phase 1 in progress | Windows restart + continue |
+| **mfg-farm** | ⏳ Awaiting test print | Execute test print, report outcome |
+
+---
+
 ## Since Last Check-in (Session 1691, May 27 00:00–00:30 UTC) — ✅ STOCKBOT BLOCKER PROGRESS + JPM DECISION REQUIRED
 
 **Status**: ✅ **DB BACKUP CREATED** | ✅ **AMZN STACKER_ID POPULATED** | ⏳ **JPM MODEL TYPE DECISION NEEDED**
