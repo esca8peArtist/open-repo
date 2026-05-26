@@ -1,0 +1,11 @@
+Candidate,Implementation_Hours,Code_Complexity,User_Value_Score,Timeline_Risk,Dependency_Status,Pi5_Thermal_Risk,Testing_Scope,Merge_Blocker,Recommendation_Priority
+OPDS Feed Generation,8-11,Low-Medium,High (9/10),Low,Hard: Phase 5.1 ZimExport ORM required,None,Moderate (8 tests),No,Priority 1 - Do immediately
+Accessibility A11y Audit,10-14 audit + TBD remediation,Low code (audit-focused),High (8/10),High (remediation uncapped),None,None,High (manual + automated),No,Priority 2 - Audit in 5.2; remediation Phase 6
+Search Engine Integration,8-11,Medium,Medium-High (7.5/10),High (requires Pi5 validation),None,High (thermal throttle risk),High (performance + latency),No,Priority 2 - After OPDS; test Pi5 first
+API Gateway Federation,4-6,Low,Medium (6/10),Low,Soft: Phase 5.1 ZimExport optional; Hard: Phase 4 federation complete,None,Low (6 tests),No,Priority 1 - Quick win; parallel with OPDS
+OPDS + API Gateway parallel,12-17 combined,Low-Medium,Very High (9/10 combined),Low (both well-scoped),Hard: Phase 5.1 for OPDS only,None,Moderate (14 tests combined),No,RECOMMENDED - Maximum Phase 5.2 impact
+OPDS + Search sequential,16-22,Medium,Very High (8.5/10 combined),Medium-High (if Search Pi5 throttles),Hard: Phase 5.1 for both,High (Search indexing),High (combined),No,Feasible but tight; Search risks timeline
+Search only,8-11,Medium,Medium-High (7.5/10),High (requires Pi5 validation),None,High (thermal throttle risk),High (performance + latency),No,Not recommended unless offline search is top priority
+A11y Audit only,10-12,Low,Medium (6/10 without remediation),Low,None,None,High (manual-intensive),No,Not recommended; audit only without remediation is incomplete deliverable
+OPDS + A11y Audit,18-25,Low-Medium,Very High (8.5/10 combined),High (A11y remediation uncapped),Hard: Phase 5.1 for OPDS only,None,High (combined),No,Feasible if A11y remediation scoped to critical issues only
+All Four Candidates,30-46,Medium-High,Highest (8.5/10 average),Very High (overflow risk),Multiple,High (Search),Very High (complex),Multiple,Not feasible in Phase 5.2 window; recommend Phase 5.2 + Phase 6 split
