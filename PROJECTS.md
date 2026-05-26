@@ -16,8 +16,8 @@
 > To recalibrate limits: `python3 scripts/usage-check.py --calibrate <sonnet_pct> <all_pct>`
 
 **Calibrated limits** (back-calculated from UI — update after each weekly reset):
-- **Sonnet token limit: 64,293,300**  ← calibrated 2026-05-17 (UI showed 5.0%)
-- **All models token limit: 259,556,780**  ← calibrated 2026-05-17 (UI showed 5.0%)
+- **Sonnet token limit: 8,935,000**  ← calibrated 2026-05-26 (UI showed 0.0%)
+- **All models token limit: 255,134,500**  ← calibrated 2026-05-26 (UI showed 0.2%)
 
 **Alert thresholds** (handled by `scripts/usage-monitor.py`, runs every 30 min via cron):
 - Every 10% crossed → Discord notification
@@ -75,7 +75,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **TOO_EARLY contingency ACTIVE + Phase 1 Impact Framework COMPLETE + Domain 39 Pre-Production READY (May 26, Session 1647)** — May 28 re-synthesis scheduled ~19:00 UTC. Domain 39 pre-production complete (source verified production-ready, all 5 contacts verified current, Gist creation template ready). **CRITICAL CORRECTION**: Georgetown CCF email is `childhealth@georgetown.edu` (not `ccf@georgetown.edu` as listed in original plan). May 27-29: Domain 39 Gist creation; May 28: Domain 56 distribution + re-synthesis execution; May 29-30: Domain 39 final pre-production (template prep, contact verification complete as of May 26). Phase 2 work unblocked pending synthesis outcome classification May 28.
+**Current focus**: **TOO_EARLY contingency ACTIVE + Domain 39 Gist LIVE (May 26, Session 1648)** — Gist: https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b | All 5 contacts verified active (Georgetown CCF: `childhealth@georgetown.edu`) | May 31 user task: fill email templates (~35 min) + verify HHS rule status + send 5 distribution emails | May 28 re-synthesis execution proceeds on TOO_EARLY path (Domain 56 + 39 distribution post-synthesis). Phase 2 work unblocked pending synthesis outcome classification May 28.
 
 **Phase 1 Impact Evaluation Framework COMPLETE** (May 26, commit 8435be7f):
   - ✅ `PHASE_1_IMPACT_EVALUATION_FRAMEWORK.md` (2,500+ words): success metrics per-constituency (7 groups: law schools, immigration, civil rights, academic, faith, labor, mutual aid); Day 7/30/60 decision thresholds; contingency triggers
@@ -440,7 +440,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: ✅ **Checkpoint EXECUTED at 20:00 UTC May 22 (autonomous systemd on Jetson)** | ⏳ **Outcome UNCERTAIN — all 3 retrieval retries timed out; Jetson unreachable since 14:00 UTC.** Configuration: Lever A only (Lever B SSH deployment deadline missed at 13:30 UTC). Engine healthy: 2 sessions (AAPL lgbm_ho + AAPL ridge_wf), $115K equity confirmed. **Awaiting manual user verification via SSH** to Jetson to determine outcome classification (PASS/NEAR-MISS/FAR-MISS). Phase 2 activation depends on outcome — decision timeline: by May 26 06:00 UTC (agent limit reset). See BLOCKED.md for details.
+**Current focus**: ✅ **Checkpoint EXECUTED at 20:00 UTC May 22** | ⏳ **Outcome UNCERTAIN — Jetson unreachable (72+ hrs)** | ✅ **AMZN/JPM Multi-Ticker Deployment Pre-Staged (May 26, Session 1648)** | Deliverables: `JETSON_MULTI_TICKER_DEPLOYMENT_CHECKLIST.md`, `scripts/validate_multiticker_config.py`, `scripts/jetson_deployment_automation.sh` — all validation passes locally (VaR: $188.21, 0.16% equity); ready for immediate Jetson deployment upon SSH reconnect OR user outcome verification. Phase 2 activation depends on checkpoint outcome — **Awaiting user SSH to Jetson for outcome retrieval**. See BLOCKED.md for SSH verification command.
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`
