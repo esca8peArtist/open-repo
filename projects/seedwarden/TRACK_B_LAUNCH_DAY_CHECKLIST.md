@@ -1,165 +1,287 @@
 ---
-title: "Track B Launch Day Checklist — Zone Cards May 30"
-date: 2026-05-26
-version: 1.0
-status: ready-for-execution
+title: "Track B Launch Day Checklist — Production Execution Guide"
+date: 2026-05-30
+version: 2.0
+status: production-ready
 purpose: >
-  Step-by-step pre-launch and launch-day execution checklist for Track B Zone Cards.
-  May 30, 2026. Zero ambiguity. Contingency plans included.
+  Zero-ambiguity execution guide for May 30 08:00 UTC launch. Covers pre-launch
+  verification, launch window activation, post-launch monitoring, and escalation
+  triggers. Built for solo operator. Total time budget: 2.5 hours on launch day.
 ---
 
 # Track B Launch Day Checklist
-## Zone Cards — May 30, 2026
+## Zone Cards — May 30, 2026 — Production Execution Guide
 
-**Launch day**: Friday May 30, 2026
-**Announcement window**: May 30 afternoon/evening (aim for 12:00 PM–8:00 PM local time)
-**Solo operator time budget**: 2–3 hours total on May 30 (prep + post + monitor)
+**Launch date**: Friday May 30, 2026
+**Launch window**: 08:00–08:30 UTC
+**Solo operator time budget**: 2–2.5 hours total (15 min pre-launch + 30 min launch window + 60 min post-launch + 30 min Day 0 monitoring)
 
 ---
 
-## Pre-Launch Checklist (Complete by May 29 evening OR May 30 morning)
+## PRE-LAUNCH VERIFICATION (08:00–08:15 UTC)
 
-Work through this list in order. Each item must be checked before moving to the next section.
+Complete all items in order before posting anything publicly. This window must take no more than 15 minutes.
 
-### Step 1 — Verify All 8 PDFs Are Accessible
+### 1. Zone PDF URL Live Check
 
-- [ ] Open `projects/seedwarden/assets/zone-cards/` and confirm all 8 PDF files are present
-- [ ] Spot-check: open Zone 3, Zone 6, and Zone 9 PDFs directly to confirm they render without errors
-- [ ] File sizes all in 630–640 KB range (any file under 100 KB or over 2 MB indicates a corrupt file — regenerate from `scripts/generate_zone_cards.py` if needed)
+- [ ] Open the Gist URL in an incognito/private browser window (not logged in)
+- [ ] Confirm the Gist loads without authentication prompt
+- [ ] Click through to verify all 8 PDF files are listed:
+  - seedwarden-zone-3-quickstart-card.pdf
+  - seedwarden-zone-4-quickstart-card.pdf
+  - seedwarden-zone-5-quickstart-card.pdf
+  - seedwarden-zone-6-quickstart-card.pdf
+  - seedwarden-zone-7-quickstart-card.pdf
+  - seedwarden-zone-8-quickstart-card.pdf
+  - seedwarden-zone-9-quickstart-card.pdf
+  - seedwarden-zone-10-quickstart-card.pdf
+- [ ] Download one PDF (Zone 5 or Zone 6) to confirm it opens cleanly in browser
+- [ ] Confirm file size is in the 630–650 KB range (any file under 100 KB signals corruption)
 
-**Expected files**:
+**Gist URL**: ___________________________________
+**Backup URL** (Google Drive or Dropbox): ___________________________________
+
+### 2. Gist Accessibility Confirmation
+
+- [ ] Test Gist URL from mobile (iOS Safari or Android Chrome)
+- [ ] Confirm PDFs are downloadable from mobile without login
+- [ ] If PDFs do not open on mobile: switch to backup Google Drive link immediately (do not delay launch)
+
+### 3. Influencer Staging Final Check
+
+- [ ] Confirm Tier 1 outreach sent May 28 (Sabrena Gwin / AHG, Susan Leopold / UpS, John Gallagher / LearningHerbs, Reddit mods for r/herbalism, r/foraging, r/vegetablegardening) — check email sent folder or response tracking log
+- [ ] Confirm Tier 2 outreach sent May 28–29 (Juliet Blankespoor, Herbal Academy, Discord admins) — check response tracking log
+- [ ] Log any pre-launch responses received (herbalists who asked for preview, mods who approved posts) — these are ready to receive the launch URL right now
+- [ ] If any Tier 1 contact is in the "preview requested" state: send them the Gist URL now, before public post
+
+### 4. Social Calendar Timestamp Sync
+
+- [ ] Confirm all scheduled posts in Buffer/Later/native schedulers reflect UTC times (not local time):
+  - Instagram: 08:30 UTC (launch post)
+  - TikTok: 08:45 UTC
+  - Pinterest: 09:00 UTC
+  - Reddit r/herbalism: 08:00 UTC (post manually — cannot be pre-scheduled)
+- [ ] Confirm Instagram bio/link-in-bio shows the Gist URL
+- [ ] If using a scheduling tool: verify the "May 30 zone guides are LIVE" posts have the correct final Gist URL (not the placeholder [LANDING_PAGE_URL] from the calendar template)
+- [ ] If posting manually: open all post drafts in Notes app or Google Doc and verify the Gist URL is pasted in
+
+**Pre-launch verification complete. All 4 boxes checked?** Proceed to Launch Window.
+
+---
+
+## LAUNCH WINDOW (08:15–08:30 UTC)
+
+### 5. Activate Influencer Outreach — Copy-Paste Email Templates
+
+Send the following to any herbalist contact who pre-approved sharing or who will receive the launch notification:
+
+**Email subject**: Zone guides are live — [CONTACT_NAME], here's the link
+
+**Email body** (copy-paste, fill bracketed fields):
 ```
-seedwarden-zone-3-quickstart-card.pdf
-seedwarden-zone-4-quickstart-card.pdf
-seedwarden-zone-5-quickstart-card.pdf
-seedwarden-zone-6-quickstart-card.pdf
-seedwarden-zone-7-quickstart-card.pdf
-seedwarden-zone-8-quickstart-card.pdf
-seedwarden-zone-9-quickstart-card.pdf
-seedwarden-zone-10-quickstart-card.pdf
+Hi [FIRST_NAME],
+
+The Seedwarden Zone Quick-Start Cards are live as of this morning.
+
+All 8 zone guides — free, direct download, no email required:
+[GIST_URL]
+
+If you'd still like to share these with your [community/audience/newsletter], 
+I'd love that. No obligation and no particular ask — just letting you know 
+they're up.
+
+Happy to provide pre-written social copy or a short newsletter blurb 
+if that would help.
+
+Best,
+[YOUR_NAME]
+Seedwarden
+```
+
+**Send to** (check each when sent):
+- [ ] Sabrena Gwin (AHG) — chapters@americanherbalistsguild.com — if she confirmed interest
+- [ ] Susan Leopold (UpS) — info@unitedplantsavers.org — if she confirmed interest
+- [ ] John Gallagher (LearningHerbs) — partnerships@learningherbs.com — if he confirmed interest
+- [ ] Juliet Blankespoor (Chestnut) — via email or Instagram DM — if she confirmed interest
+- [ ] Any other contact who responded to pre-launch outreach
+
+### 6. Post Social Media Calendar Teasers
+
+Post in this exact sequence. The launch announcement and teasers are ready in `TRACK_B_SOCIAL_CALENDAR_MAY28_30.md`.
+
+| UTC Time | Platform | Post type | Copy location | URL to insert |
+|----------|----------|-----------|---------------|---------------|
+| 08:00 | Reddit r/herbalism | Text post (manual) | Post 11 in `TRACK_B_SOCIAL_CALENDAR_MAY28_30.md` | [GIST_URL] |
+| 08:30 | Instagram | Launch post (carousel or single image) | Post 8 in social calendar | [GIST_URL] |
+| 08:45 | TikTok | Launch video (30–60 sec) | Post 9 in social calendar | Bio link = [GIST_URL] |
+| 09:00 | Pinterest | Launch collection pin | Post 10 in social calendar | [GIST_URL] |
+
+- [ ] Reddit post submitted (manual; cannot be pre-scheduled)
+- [ ] Instagram launch post live and link-in-bio confirmed pointing to Gist
+- [ ] TikTok video posted
+- [ ] Pinterest pin published
+
+**Launch window complete. Verified all 4 platforms active?** Proceed to Post-Launch Monitoring.
+
+---
+
+## POST-LAUNCH MONITORING (08:30 UTC onward)
+
+### 7. Click Tracking — Bitly Setup (If Not Pre-Configured)
+
+If a Bitly short link was not created before launch:
+
+1. Go to bitly.com (free account sufficient)
+2. Create a shortened link for your Gist URL
+3. Save the Bitly link: bit.ly/seedwarden-zones or similar
+4. Update Instagram bio and any remaining unposted social content with the Bitly link (the Gist URL itself still works — Bitly is additive for tracking only)
+
+**Bitly link**: ___________________________________
+**Record Day 0 baseline**: Check Bitly at 16:00 UTC and log click count here: ___
+
+### 8. Response Monitoring
+
+Check the following starting at 09:00 UTC and again at 12:00, 16:00, and 20:00 UTC on launch day:
+
+| Platform | What to check | Response action |
+|----------|--------------|-----------------|
+| Email inbox | Replies from herbalist contacts | Respond within 2 hours; confirm partnership if asked |
+| Instagram DMs | Direct messages referencing zone cards | Reply within 2 hours; thank for interest |
+| Reddit post | Upvotes + comments on r/herbalism post | Reply to every comment on launch day |
+| TikTok | Comments on launch video | Reply to first 5+ comments to signal engagement |
+| Pinterest | Pin saves and clicks (check in Pinterest Analytics) | No response needed; note count for Day 3 report |
+
+### 9. Day 3 / Day 7 Checkpoint Thresholds (Reference)
+
+Detailed decision trees are in `TRACK_B_LAUNCH_MONITORING_CHECKPOINTS.md`. Summary:
+
+| Checkpoint | Date | Key threshold | Decision if below threshold |
+|------------|------|--------------|----------------------------|
+| Day 3 | June 2 | 50+ Gist views | Escalate Tier 3 outreach + Reddit repost |
+| Day 3 | June 2 | 20+ Reddit upvotes | Revise Reddit post title, re-frame as community resource |
+| Day 7 | June 6 | 150+ Gist views | Send follow-up DMs to non-responding Tier 1 contacts |
+| Day 7 | June 6 | 3+ organic shares | Create Instagram carousel post if shares = 0 |
+| Day 14 | June 13 | 300+ Gist views | Full decision framework in monitoring doc |
+
+Record Day 0 metrics at end of May 30:
+
+```
+Day 0 (May 30) Snapshot
+Gist views: ___
+Reddit upvotes (r/herbalism): ___
+Instagram reach: ___
+TikTok views: ___
+Direct messages received: ___
+Herbalist contacts who engaged: ___
 ```
 
 ---
 
-### Step 2 — Update Footer URLs (If Not Already Done)
+## ESCALATION TRIGGERS
 
-The PDFs currently contain placeholder footer URLs (`seedwarden.co/zone-calendar` and `seedwarden.co/zone`). Before launch, decide whether to:
+### Escalation 1: Response Falls Below Day 3 Threshold
 
-**Option A — Replace with live URLs**: Edit the `ZONES` dict `footer` section in `projects/seedwarden/scripts/generate_zone_cards.py`, set the actual landing page and calendar URLs, and re-run the script to regenerate all 8 PDFs. Re-verify the regenerated files open correctly.
+**Trigger**: Fewer than 50 Gist views by June 2 (Day 3).
 
-**Option B — Launch with placeholder URLs**: Acceptable for a Gist-based free distribution where the primary call-to-action is the Gist link itself. The placeholder URLs are readable and not broken links — they simply redirect to a page that does not exist yet. If the landing page (`seedwarden.co/zone`) is not live by May 30, keep placeholders and update PDFs in the Week 1 refresh after launch.
+**Immediate actions** (in order, each takes 15 minutes or less):
+1. Send Tier 3 outreach to any contacts not yet reached: Richo Cech (Strictly Medicinal Seeds, newsletter), Katja Swift + Ryn Midura (Holistic Herbalism Podcast, New England Zone 5–6 audience), Seattle Herbalism Society (Facebook, Pacific Northwest)
+2. Post in one additional Reddit community: r/foraging if not yet posted, or r/homesteading as alternative
+3. Add one Instagram Story with direct link sticker pointing to Gist: copy "Zone cards are live — free for every zone" + link sticker
 
-- [ ] Decision made: Option A (updated URLs) or Option B (placeholders acceptable)
-- [ ] If Option A: Script re-run complete, 8 new PDFs verified
+**Do not**: run paid promotion at Day 3. Wait for Day 7 data before any budget decision.
 
----
+### Escalation 2: Gist Goes Down
 
-### Step 3 — Set Up Gist Distribution
+**Trigger**: Gist URL returns 404 or GitHub is unreachable during launch window.
 
-- [ ] Log in to github.com with the Seedwarden account
-- [ ] Create a new Gist (gist.github.com > + New Gist)
-- [ ] Gist title: "Seedwarden Zone Quick-Start Cards — Free Download (Zones 3–10)"
-- [ ] Gist description: "One-page quick-start guides for every USDA growing zone. Free PDF download. Each card includes frost dates, crop timing, storage tips, and heirloom variety spotlight for your zone."
-- [ ] Upload all 8 PDFs to the Gist OR create a Gist with a README-style text file that contains direct GitHub raw file URLs for each PDF (direct links are more reliable for download tracking)
-- [ ] Set Gist to Public
-- [ ] Copy and save the Gist URL: _______________________________
-- [ ] Test the Gist link: open it in a private/incognito browser window to confirm it is publicly accessible without being logged in
+**Immediate actions** (complete within 10 minutes):
+1. Switch to backup URL (Google Drive folder or Dropbox link — must be pre-prepared by May 29)
+2. Update Instagram bio/link-in-bio immediately
+3. Edit any Reddit posts already submitted: add "Edit: Updated link — [new URL]" to post body
+4. Post one Instagram Story: "Link updated — grab it in bio" with new link sticker
+5. Update any remaining unposted social content with the backup URL
+6. Proceed — do not delay the launch because of a link swap
 
-**Gist contingency**: If Gist upload fails or PDFs do not render correctly in Gist:
-- Alternative 1: Upload to Google Drive (set to "Anyone with the link can view"), create a shared folder link, share that link in your announcement posts
-- Alternative 2: Upload to Dropbox public folder
-- Alternative 3: Use GitHub repository direct raw URLs: `https://raw.githubusercontent.com/[username]/[repo]/master/projects/seedwarden/assets/zone-cards/[filename].pdf`
+**Backup URL must be confirmed by May 29 evening.** If backup URL is not ready, create a Google Drive shared folder (Anyone with link, view access) and upload all 8 PDFs before May 30.
 
-- [ ] Backup URL saved (in case Gist is unavailable on launch day): _______________________________
+### Escalation 3: Influencers Do Not Engage by Day 7
 
----
+**Trigger**: Fewer than 2 of the 15 herbalist contacts have responded (any response counts: reply, share, DM) by June 6.
 
-### Step 4 — Test on Mobile
+**Assess first**: Check whether your May 28 outreach emails were sent. If unsent, send them immediately. This is the most common reason for zero influencer response.
 
-- [ ] Open the Gist URL on a mobile phone (both iOS Safari and Android Chrome if possible)
-- [ ] Tap the Zone 3 PDF link and confirm it opens in the browser or downloads correctly
-- [ ] Confirm the PDF is readable at mobile zoom level (the cards are landscape format — users may need to rotate or zoom; this is expected and acceptable)
-- [ ] If PDF does not open on mobile: save the mobile-friendly alternative link (Google Drive or Dropbox viewer link works better on mobile than raw GitHub PDFs)
+**If outreach was sent and still no response**:
+1. Send one gentle follow-up to Tier 1 contacts (Sabrena Gwin, John Gallagher): subject line "Quick follow-up on the zone guides" — one sentence only: "Did you get a chance to look at the cards? Happy to send a direct PDF preview if that would help."
+2. Try the Instagram DM route for any contact you only reached by email (shorter message, more likely to get a read)
+3. Do not send more than one follow-up per contact. Frequency does not increase response rates at this stage.
 
----
+**Adjust for Phase 3**: If influencer channel produces fewer than 3 responses total across all 15 contacts by Day 14, de-prioritize influencer outreach as the primary channel for Phase 3. Organic Reddit and Pinterest will be the primary distribution levers instead.
 
-### Step 5 — Prepare Social Media Posts
+### Escalation 4: Social Platforms Block or Remove Posts
 
-- [ ] Draft all 5 launch-day posts using templates from `TRACK_B_SOCIAL_MEDIA_CALENDAR.md`
-- [ ] Replace "[Gist link or seedwarden.co/zone]" placeholder in each template with the actual Gist URL saved in Step 3
-- [ ] Save all post drafts (Notes app, Google Doc, or scheduling tool)
-- [ ] Update Instagram bio/link-in-bio with Gist URL
-- [ ] If scheduling: queue LinkedIn post for 8:00 AM May 30, Instagram for 12:00 PM, TikTok for 7:00 PM
-- [ ] If posting manually: set a reminder alarm for each posting time
+**Trigger**: Reddit removes posts within the first 24 hours, or Instagram reduces post reach below 50 users.
 
----
+**Reddit removal**:
+1. Check removal reason (mod message or automated filter notification)
+2. If promotional framing triggered the filter: repost with personal framing — "I built a free zone guide, here's Zone [X] as an image" and upload a single card as an image (not a link post)
+3. Image posts bypass most subreddit promotional filters and perform better anyway
+4. If mod-banned for the account: do not create a new account; pivot to r/foraging and r/homesteading where post was not attempted
 
-### Step 6 — Confirm Herbalist Outreach Sent
-
-- [ ] All Tier 1 contacts (7) contacted by May 28 (per `TRACK_B_HERBALIST_OUTREACH_MATRIX.md`)
-- [ ] All Tier 2 contacts (7) contacted by May 29
-- [ ] Response tracking table in `TRACK_B_HERBALIST_OUTREACH_MATRIX.md` updated with any replies received
-- [ ] Any contact who asked for the Gist link before launch: send them the link now (before public announcement is fine — give them a preview)
+**Instagram shadowban or low reach**:
+1. Do not delete and repost (this makes it worse)
+2. Post one Instagram Story immediately after the main post to signal account activity
+3. Reply to any comment within 1 hour of posting to boost engagement signals
+4. Low reach on launch day does not indicate a permanent problem — algorithm visibility improves on Day 2–3 as engagement accumulates
 
 ---
 
-### Step 7 — Final Readiness Check (5 minutes, May 30 morning)
+## POST-LAUNCH DAILY ACTIONS (May 31+)
 
-Complete this the morning of May 30 before you begin posting.
-
-- [ ] Gist is still accessible (test the URL again in incognito)
-- [ ] All 8 PDFs confirmed downloadable from the Gist
-- [ ] Social posts are drafted and ready
-- [ ] Backup URL is saved and tested
-- [ ] Instagram bio updated with Gist link
-- [ ] Phone charged, notifications on for DM responses
-
-**If all 7 boxes checked**: You are cleared to launch. Proceed to the Launch Day Timeline below.
-
----
-
-## Launch Day Timeline (May 30)
-
-| Time | Action | Platform | Notes |
-|------|--------|----------|-------|
-| 8:00 AM | Post LinkedIn launch announcement | LinkedIn | Use Template 3 from outreach matrix, add Gist URL |
-| 10:00 AM | Post Reddit launch thread | Reddit r/vegetablegardening (and r/herbalism if mod-approved) | Use Reddit template from social calendar |
-| 12:00 PM | Post Instagram launch post | Instagram | Fan/grid image of all 8 cards; full caption from social calendar |
-| 12:00 PM | Post Instagram Story sequence | Instagram Stories | 3-story sequence: "They're live" + zone finder + "share with a Zone X friend" |
-| 12:30 PM | Email herbalist contacts who responded | Email | Short note: "Cards are live — here's the link: [Gist URL]" |
-| 2:00 PM | Check Reddit post — respond to any comments | Reddit | Respond within 2 hours of posting for algorithm benefit |
-| 4:00 PM | Post Pinterest launch pin | Pinterest | Full product grid image with direct Gist link |
-| 7:00 PM | Post TikTok launch video | TikTok | Walkthrough video script from social calendar |
-| 8:00 PM | Check all platforms — reply to comments and DMs | All | 20 minutes of engagement to close the launch window |
-| Before bed | Record Day 1 metrics | Monitoring doc | Gist views, Reddit upvotes, IG reach — take a screenshot |
+| Day | Action | Time estimate |
+|-----|--------|---------------|
+| May 31 (Day 1) | Respond to all DMs and comments received on launch day | 20 min |
+| May 31 (Day 1) | Post June 1 Zone 3 Spotlight content (see `TRACK_B_SOCIAL_CALENDAR_MAY28_30.md`) | 15 min |
+| June 1 (Day 2) | Post June 2 Wild Edibles angle content | 15 min |
+| June 2 (Day 3) | Run Day 3 checkpoint (see monitoring doc) | 10 min |
+| June 2 (Day 3) | Post June 3 Native Plants / AHG crossover content | 15 min |
+| June 6 (Day 7) | Run Day 7 checkpoint (see monitoring doc) | 10 min |
+| June 6 (Day 7) | Post June 6 community milestone engagement post | 15 min |
+| June 13 (Day 14) | Run Day 14 checkpoint — Phase 3 go/no-go decision input | 15 min |
 
 ---
 
-## Contingency Plan: If Gist Is Unavailable
+## Quick-Reference Card (Print This)
 
-If github.com is down or the Gist is inaccessible on launch day:
+```
+MAY 30 LAUNCH — TIMES IN UTC
 
-1. Immediately switch to the backup URL saved in Step 3 (Google Drive or Dropbox folder link)
-2. Update the Instagram bio link-in-bio to the backup URL
-3. Edit the Reddit post (if already submitted) to replace the Gist link with the backup URL
-4. Add an Instagram Story: "Link updated — new link in bio" with link sticker
-5. Do not delay the launch — proceed with backup URL. The content is what matters.
+08:00 — Pre-launch verification (15 min)
+        - Gist URL test in incognito: YES / NO
+        - All 8 PDFs accessible: YES / NO
+        - Social posts have real URL (not placeholder): YES / NO
+
+08:00 — Reddit r/herbalism post (manual)
+08:15 — Email herbalist contacts who pre-approved
+08:30 — Instagram launch post
+08:45 — TikTok launch video
+09:00 — Pinterest launch pin
+
+16:00 — Check Bitly clicks + Reddit upvotes
+20:00 — Reply to all comments and DMs
+Before bed — Record Day 0 metrics (Gist views, upvotes, reach)
+
+ESCALATION CONTACTS
+Gist down → switch to backup URL (saved here: _________________)
+Reddit removed → repost as image post
+Influencer no response → one gentle follow-up email/DM (June 2)
+
+DAY 3 THRESHOLD: 50+ Gist views (June 2)
+DAY 7 THRESHOLD: 150+ Gist views (June 6)
+DAY 14 THRESHOLD: 300+ Gist views (June 13)
+```
 
 ---
 
-## Contingency Plan: If No Reddit Mod Approval
-
-If Reddit moderators have not approved your post by launch day morning:
-
-1. Post in r/vegetablegardening as a regular member post (not a promotional post) with personal framing: "I built a free zone guide — here's what Zone [X] looks like" and share one card as an image upload, not a link
-2. Image posts perform better than link posts on Reddit anyway — this may be the better launch format regardless
-3. Separately: post in r/selfhosted, r/homesteading, or r/gardening as alternative communities if the primary subreddits are blocked
-
----
-
-## Post-Launch (May 31+)
-
-- [ ] Record Day 1 stats (Gist views, Reddit upvotes, Instagram reach) in the monitoring checkpoint log (`TRACK_B_LAUNCH_MONITORING_CHECKPOINTS.md`)
-- [ ] Respond to all DMs and comments within 24 hours
-- [ ] Follow up with any herbalist contact who expressed sharing interest but did not post yet (one short follow-up only)
-- [ ] Day 3 checkpoint: June 2 — review metrics against targets in monitoring doc
+*Document version: 2.0 — May 26, 2026*
+*Supersedes: version 1.0 (same filename, dated May 26, 2026 — that version used local-time launch window; this version uses UTC throughout)*
+*Reference documents: TRACK_B_HERBALIST_OUTREACH_MATRIX.md, HERBALIST_OUTREACH_CONTACT_LIST.md, TRACK_B_SOCIAL_CALENDAR_MAY28_30.md, TRACK_B_LAUNCH_MONITORING_CHECKPOINTS.md, ZONE_PDF_VERIFICATION_REPORT.md*
