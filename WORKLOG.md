@@ -21,6 +21,34 @@ Per orchestrator protocol: when Exploration Queue <3 items, add 2-3 new high-val
 3. **systems-resilience: Phase 4 Activation Quick-Start Templates** (4-5 hrs, post-May-31-decision)
    - Three scenario-specific playbooks (Option A/B/C), copy-paste ready, decision-triggered activation
 
+### ✅ Item 2: Seedwarden Track B Launch Readiness (COMPLETED — Agent Execution)
+**Deliverables** (all committed to projects/seedwarden/):
+- `ZONE_CARDS_QUALITY_VERIFICATION.md` (manifest + spot-check results)
+  - All 8 zone PDFs verified production-ready, single-page, 633 KB, May 26 generated
+  - Spot-checked Zones 3, 6, 9: minor text-wrap cosmetics (non-blocking, do not regenerate)
+  - **CRITICAL ACTION REQUIRED**: Footer placeholder URLs (`seedwarden.co/zone`, `seedwarden.co/zone-calendar`) must be updated to live URLs before May 30 launch
+- `TRACK_B_HERBALIST_OUTREACH_MATRIX.md` (18 community leaders + 3 message templates)
+  - Tier 1 targets: Reddit moderators (r/vegetablegardening 1.8M, r/foraging 750K, r/herbalism 130K), Juliet Blankespoor (303K), John Gallagher (50K+)
+  - Message templates: Reddit/Discord DM, Instagram DM, email (affiliate/newsletter variants)
+  - Response tracking table included
+- `TRACK_B_SOCIAL_MEDIA_CALENDAR.md` (5-day calendar, May 28–June 1, copy-paste ready)
+  - Sequenced across 5 platforms (LinkedIn 8AM, Reddit 10AM, Instagram 12PM, Pinterest 12PM, TikTok 7PM on May 30)
+  - Day 1-2: teasers, Day 3: launch, Day 4: process content, Day 5: #seedwardenzone UGC kickoff
+  - Contingencies: Reddit removal, TikTok review, Pinterest lag, Gist unavailability
+- `TRACK_B_LAUNCH_MONITORING_CHECKPOINTS.md` (Day 3/7/14 with decision triggers)
+  - Day 3 (June 2): <50 views = escalate, 50-100 = hold, >100 = proceed
+  - Day 7 (June 6): baseline checks + engagement assessment
+  - Day 14 (June 13): Phase 3 go/no-go decision
+  - Weekly snapshot template: 5-8 min to fill, no analytics required
+- `TRACK_B_LAUNCH_DAY_CHECKLIST.md` (7-step pre-launch + launch timeline)
+  - Pre-launch: PDF verification, footer URL decision, Gist setup, mobile test, post prep, outreach confirmation, readiness
+  - Launch day: LinkedIn 8AM through 8PM engagement close
+  - Contingencies: Gist unavailability (Drive/Dropbox/GitHub fallbacks), Reddit mod non-approval
+
+**Status**: Production-ready for pre-testing May 28-29. User must: (1) Update footer URLs by May 30, (2) Run Day 3-7-14 checkpoints for monitoring, (3) Execute social calendar on schedule. All templates copy-paste ready, solo-operator friendly.
+
+---
+
 ### ✅ Item 1: Phase 1 Monitoring Dashboard (COMPLETED — Agent Execution)
 **Deliverables** (committed `e96dac8c`):
 - `projects/resistance-research/PHASE_1_MONITORING_DASHBOARD.md` (3,800 words, complete SOP)

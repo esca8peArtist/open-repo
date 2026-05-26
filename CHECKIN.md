@@ -17,14 +17,21 @@
 - **Gates 1-2 status**: Instagram/TikTok/Pinterest + Canva Brand Kit setup required (user action, 60-90 min)
 - **Contingency**: If incomplete by 23:59 UTC → June 6 or June 15 launch slip (contingency documented)
 
-**Upcoming Autonomous Work** (Exploration Queue):
+**Completed Autonomous Work** (Exploration Queue):
 1. **Item 1 (Complete)**: resistance-research Phase 1 Monitoring Dashboard ✅
-2. **Item 2 (Next)**: seedwarden Track B Launch Readiness (2-3 hrs, May 30 deadline)
-3. **Item 3 (Post-Decision)**: systems-resilience Phase 4 Activation Templates (4-5 hrs, June 1 gating)
+   - 3 files committed (e96dac8c): Google Sheets template, weekly synthesis, Day 7/14/30 decision trees
+   - Ready for pre-testing May 27; user can run first synthesis by June 4
+2. **Item 2 (Complete)**: seedwarden Track B Launch Readiness ✅
+   - 5 files committed: PDF quality verification, herbalist outreach matrix (18 contacts), social media calendar, monitoring checkpoints, launch day checklist
+   - **CRITICAL**: Footer URLs (`seedwarden.co/zone`, `seedwarden.co/zone-calendar`) must be updated to live URLs before May 30 launch
+
+**Next Exploration Queue Item**:
+3. **Item 3 (Ready to Execute)**: systems-resilience Phase 4 Activation Templates (4-5 hrs, post-May-31-decision)
 
 **Needs Your Input**:
 - **TODAY by 23:59 UTC**: Complete Seedwarden Gates 1-2 (Instagram/TikTok/Pinterest + Canva Brand Kit, 60-90 min)
   - If not completed → activate contingency (June 6 slip is safest option)
+  - **NEW CRITICAL**: Before May 30 launch, update footer URLs in `scripts/generate_zone_cards.py`: replace `seedwarden.co/zone` and `seedwarden.co/zone-calendar` placeholders with live URLs
 - **May 28 by 18:00 UTC**: Fill resistance-research signal log (17 remaining [fill] fields) for May 28 19:00 UTC synthesis
 - **May 31 by 23:59 UTC**: Decide systems-resilience Phase 5 publication timing (Option A/B/C from PHASE_5_PUBLICATION_EXECUTION_TOOLKITS.md)
 
