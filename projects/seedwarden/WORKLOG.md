@@ -4,6 +4,33 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Zone card footer URL substitution — May 26, 2026
+
+**Task**: Replace placeholder footer URLs in all 8 Zone Quick-Start Card PDFs (Track B pre-launch task).
+
+**Action**: Edited `scripts/generate_zone_cards.py` lines 594-600. Replaced both placeholder domains:
+- `seedwarden.co/zone-calendar` (footer left) -> `pages.kit.com/seedwarden-start`
+- `seedwarden.co/zone` (footer right) -> `pages.kit.com/seedwarden-start`
+
+**URL rationale**: `pages.kit.com/seedwarden-start` is the Kit landing page URL pre-staged across project docs (phase-2-buyer-retention-lifecycle-strategy.md and corroborating references throughout). Kit account not yet created; this is the expected URL once `seedwarden` handle is claimed at kit.com.
+
+**Generator run**: Successful. All 8 PDFs regenerated, sizes 632-633 KB (within spec), no errors.
+
+**Files updated**:
+- `scripts/generate_zone_cards.py` (lines 594-600)
+- `assets/zone-cards/seedwarden-zone-3-quickstart-card.pdf` (633 KB)
+- `assets/zone-cards/seedwarden-zone-4-quickstart-card.pdf` (633 KB)
+- `assets/zone-cards/seedwarden-zone-5-quickstart-card.pdf` (633 KB)
+- `assets/zone-cards/seedwarden-zone-6-quickstart-card.pdf` (632 KB)
+- `assets/zone-cards/seedwarden-zone-7-quickstart-card.pdf` (633 KB)
+- `assets/zone-cards/seedwarden-zone-8-quickstart-card.pdf` (632 KB)
+- `assets/zone-cards/seedwarden-zone-9-quickstart-card.pdf` (633 KB)
+- `assets/zone-cards/seedwarden-zone-10-quickstart-card.pdf` (632 KB)
+
+**Note**: If the Kit handle claimed at launch differs from `seedwarden`, re-run the generator with the confirmed URL before uploading PDFs to Google Drive. The 5-minute regeneration procedure is documented in `ZONE_PDF_VERIFICATION_REPORT.md`.
+
+---
+
 ## Track B pre-launch verification complete — May 26, 2026
 
 Track B pre-launch verification complete; all assets production-ready for May 30 launch.

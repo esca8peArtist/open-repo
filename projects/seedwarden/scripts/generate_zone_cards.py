@@ -592,11 +592,11 @@ class ZoneCardPDF(FPDF):
         self.set_text_color(*WARM_CREAM)
         self.set_xy(MARGIN, footer_y + 0.5)
         self.cell(BODY_W / 2, 4.0,
-                  f"Get the full Zone {zone} Calendar — seedwarden.co/zone-calendar",
+                  f"Get the full Zone {zone} Calendar — pages.kit.com/seedwarden-start",
                   align="L")
         self.set_xy(MARGIN + BODY_W / 2, footer_y + 0.5)
         self.cell(BODY_W / 2, 4.0,
-                  "Free guides: seedwarden.co/zone  |  Unsubscribe anytime",
+                  "Free guides: pages.kit.com/seedwarden-start  |  Unsubscribe anytime",
                   align="R")
 
 
