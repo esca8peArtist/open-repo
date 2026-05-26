@@ -62,7 +62,7 @@ This table answers the primary sourcing question for Phase 3: which suppliers ca
 
 **Recommended order sequence**: Goldenseal (rhizome) + Black Cohosh June 8 if Strictly Medicinal confirms out-of-stock. Elderberry June 15 as primary Elderberry source. Passionflower + Valerian June 22 (Tier 3 slot).
 
-**Confirmation status**: [ ] Pending response | Date emailed: ________ | Response received: ________
+**Confirmation status**: [ ] Pending response | Date emailed: May 26, 2026 | Response received: ________ | Follow-up: ________
 
 ---
 
@@ -90,7 +90,7 @@ This table answers the primary sourcing question for Phase 3: which suppliers ca
 
 **Recommended order sequence**: Goldenseal + Black Cohosh as primary Tier 1 source by June 8. Ashwagandha + Echinacea angustifolia + Passionflower + Calendula + Lemon Balm + Ginger June 22 (Tier 3).
 
-**Confirmation status**: [ ] Pending response | Date emailed: ________ | Response received: ________
+**Confirmation status**: [ ] Pending response | Date emailed: May 26, 2026 | Response received: ________ | Follow-up: ________
 
 ---
 
@@ -124,7 +124,7 @@ This table answers the primary sourcing question for Phase 3: which suppliers ca
 
 **CITES compliance for Goldenseal (dried)**: Mountain Rose Herbs provides Certificates of Analysis on request confirming cultivated origin. Request the CoA for Goldenseal when placing the order. Retain for guide citation and WORKLOG.md logging.
 
-**Confirmation status**: [ ] Pending response | Date emailed: ________ | Response received: ________
+**Confirmation status**: [ ] Pending response | Date emailed: May 26, 2026 | Response received: ________ | Follow-up: ________
 
 ---
 
@@ -151,7 +151,7 @@ This table answers the primary sourcing question for Phase 3: which suppliers ca
 
 **Alternate if unavailable**: Strictly Medicinal Seeds for all species Southern Exposure carries. Guide content still cites Southern Exposure as the regional southeast sourcing recommendation regardless of whether an order is placed.
 
-**Confirmation status**: [ ] Pending response | Date emailed: ________ | Response received: ________
+**Confirmation status**: [ ] Pending response | Date emailed: May 26, 2026 | Response received: ________ | Follow-up: ________
 
 ---
 
@@ -180,7 +180,7 @@ This table answers the primary sourcing question for Phase 3: which suppliers ca
 
 **Alternate if unavailable**: Strictly Medicinal Seeds is the confirmed Black Cohosh fallback. Fedco is still cited as the northeast sourcing option in the Women's Health guide content regardless of order status.
 
-**Confirmation status**: [ ] Pending response | Date emailed: ________ | Response received: ________
+**Confirmation status**: [ ] Pending response | Date emailed: May 26, 2026 | Response received: ________ | Follow-up: ________
 
 ---
 

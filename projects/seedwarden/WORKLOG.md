@@ -4,6 +4,32 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 3 Pre-Production Package — May 26, 2026
+
+**Task**: Phase 3 medicinal herbs pre-production. Five deliverables for May 28-30 decision window. Sprint start June 22 (27 days away).
+
+**Context read**: medicinal-herbs-candidate-list.md, phase-3-medicinal-herbs-sourcing-guide.md, PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.md (v5.0 May 22 stockout update), PHASE_3_PRODUCTION_TIMELINE.md (v4.0), PHASE_3_CANVA_DESIGN_SYSTEM.md, canva-phase-3-adaptation-guide.md (May 19 authoritative palette), PHASE_3_READINESS_CHECKLIST.md.
+
+**Files created** (all in `projects/seedwarden/`):
+
+1. `PHASE_3_MEDICINAL_HERB_SELECTION.md` — Final 7-herb recommendation for June 22 sprint. Recommends Elderberry, Echinacea, Lavender, Lemon Balm, Mullein, Passionflower, Valerian as sprint herbs. Black Cohosh and Goldenseal deferred to post-sprint bundles due to supplier stockout constraints confirmed May 22. Includes per-herb justification (demand, availability, writing depth, practitioner interest), supplier checklist, and audience segment mapping.
+
+2. `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER.csv` — 7-supplier × 8-column matrix. Columns: Supplier name, per-herb availability/lead time for all 7 sprint herbs, bulk pricing, June 21 delivery feasibility, notes. Incorporates May 22 stockout intelligence (Prairie Moon goldenseal/BC out of stock; MRH goldenseal/BC root out of stock; NativeWildflowers.net confirmed in-stock backup).
+
+3. `SUPPLIER_CONFIRMATION_ACTION_LIST.md` — 5 user-action checklist with copy-paste email templates, exact supplier contacts, and order links. Total user time ~55 minutes across 27 days. All research pre-resolved. Deadlines: May 27 (SM Seeds email), May 30 (Black Cohosh order), June 1 (Elderberry confirm), June 8 (Goldenseal path log — zero float), June 13 (MRH dried herbs order).
+
+4. `PHASE_3_PRODUCTION_TIMELINE_SKELETON.csv` — 22-row daily production schedule, June 22–July 13. Columns: Day, Date, Day of Week, Week, Task, Hours, Bundle, Dependencies, Float, Notes. Three milestones: Women's Health live June 29 (zero float), Respiratory live July 4-7 (1-day window), Sleep live July 13 (zero float). Critical path identified: writing is the bottleneck; pace gate June 24 (2,500 words by EOD triggers Option C if not met). Design lock July 3.
+
+5. `PHASE_3_PRE_GATE_COMPLIANCE_CHECKLIST.md` — Seven-section gate checklist (A: Phase 2 completion, B: forager cohort monitor, C: budget, D: supplier confirmations, E: Canva readiness, F: timeline authorization, G: June 21 go/no-go). Includes May 30 decision record template for WORKLOG.md. Sprint starts June 22 with zero setup lag when four May 30 outputs are logged.
+
+**Key findings**:
+- Sprint herbs (7) are fully sourced via Wikimedia CC-BY-SA — zero supplier dependency for launch-quality photography on any of the 7 herbs.
+- May 22 stockout intelligence is already incorporated into all five documents — no document treats Prairie Moon goldenseal/BC or MRH dried goldenseal/BC root as available.
+- Production timeline shows 22-day sprint is feasible at Option C scope (37-43 hours, 3 bundles) with 3-4 float days. Option A (5 bundles, 56-66 hours) requires sustained 5+ hours/day in Weeks 1-2.
+- Design adaptation requires ~2-3 hours of brand kit setup by June 21; no redesign from scratch needed.
+
+---
+
 ## Seedwarden Agent Session — May 30 Gate Decision Package (Exploration Queue Item 31) — May 22, 2026
 
 **Task**: Prepare Phase 3 May 30 Gate Decision Package for Track B Phase 3 implementation. June 22 deadline. Three decisions: scope (A/B/C), Goldenseal sourcing (Path 1/2), Canva designer scope.
