@@ -2,6 +2,25 @@
 
 ---
 
+## May 26, 2026 — Resistance Research Agent — Domain 57 Pre-Research Foundation
+
+**Task**: Create pre-research foundation for Domain 57 (Multilateral Withdrawal) to reduce July 15–August 15 production time from 40-50 hours to 30-35 hours. Source discovery and outline phase.
+
+**Files created**:
+- `domain-57-pre-research-outline.md` — 3,400+ words; 5 causal pathways with empirical hooks; Zone 5 Midwest regional analysis; cross-domain bridges (Domains 23, 37, 28, 29); movement leverage by pathway (8-10 orgs per pathway); production gap analysis
+- `domain-57-source-bibliography.md` — 48 annotated sources organized by pathway; spot-check of 5 URLs confirmed; cross-reference index to DOMAIN_57_SOURCE_LIBRARY.md (57 sources, May 17); combined pre-research library: 105 sources
+
+**Key findings by pathway**:
+1. Trade Decoupling: Supreme Court struck down IEEPA tariffs (Feb 20, 2026); Section 122 replacement expires July 24, 2026 — critical congressional authority window falls during production phase
+2. Alliance Fragmentation: NATO withdrawal threats deployed to insulate Iran war executive action from allied accountability; AUKUS DOD review created reliability shock; EU developing Article 42.7 as contingency
+3. De-Dollarization: BRICS intra-bloc 90% national currency settlement; "The Unit" in development; BRICS Grain Exchange targets dollar commodity pricing advantage held by Midwest farmers
+4. Institutional Legitimacy Loss: WTO 9 "appeals into void" (largest single contributor); USTR explicitly rejected WTO dispute resolution; WHO withdrawal ($893M US contribution lost)
+5. Domestic Coalition Cascades: US agricultural exports to China collapsing to $9B in 2026 (from $26B in 2024); 72,000 manufacturing jobs lost April-December 2025; AFBF publicly opposing tariff escalation
+
+**Estimated production time reduction**: 40-50 hours → 33-37 hours (saving ~12-15 hours through pre-staged constitutional framework, source library, and economic pathway analysis)
+
+---
+
 ## May 22, 2026 — Resistance Research Agent — Domain 56 Tier 2 Readiness Verification (Session 1612)
 
 **Task**: Verify Domain 56 Tier 2 (May 20-24 send window) distribution materials are complete, live, and ready for execution. Confirm Gist accessibility, template accuracy, contact list currency, and provide pre-send checklist for user.
