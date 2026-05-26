@@ -1,5 +1,25 @@
 # Work Log
 
+## Session 1652 (May 26) — General Research Agent: DV Survivor Safety Playbook Phase 2
+
+**Status**: COMPLETE
+
+**What was accomplished**:
+1. COMPLETE — **cybersecurity-hardening Phase 2: DV Survivor Safety Playbook**
+   - File: `projects/cybersecurity-hardening/DV_SURVIVOR_SAFETY_PLAYBOOK.md`
+   - Starting from an existing 678-line/10k-word draft; expanded to 897 lines / 13,541 words / 89 sources
+   - Added Section 1.6: Maryland LAP lethality assessment — 11 screen questions, high-danger thresholds, 92.86% sensitivity, non-fatal strangulation 750% homicide risk multiplier
+   - Added Phase 5: Recovery + Rebuilding (6+ months) — trauma-informed reintegration, identity reconstruction, credit rebuilding, de-escalation criteria framework
+   - Added Phase 5 Tools section (NCTSN TF-CBT, secured credit, OurFamilyWizard, SAMHSA locator)
+   - Added Section 4.4: De-escalation triggers (legal, geographic, behavioral) with caveats on residual security hygiene
+   - Added Section 6.5: 911 vs. crisis line decision tree with acute lethality behavioral signals; when to avoid 911
+   - Added Section 6.6: Support network accountability and abuser infiltration prevention (compartmentation, scripted responses, social media discipline, support group screening)
+   - Updated stalkerware list to include SpyBubble and Facebook Messenger spy variants
+   - 25 new sources: CDC MMWR IPH data, LAP research, SAMHSA trauma principles, NFS meta-analysis, DVHRT model, Time 2026 DV crisis structure
+   - Committed to master: 2f9a4a8a
+
+---
+
 ## Session 1651 (May 26, 08:13–08:22 UTC) — ORCHESTRATOR: Exploration Queue Item 2 (systems-resilience Phase 6 Farm Equipment)
 
 **Status**: ✅ **1 exploration queue item COMPLETE** | ⏳ **No further zero-prerequisite items available** | 🔴 **All high-priority projects remain blocked on user action**
