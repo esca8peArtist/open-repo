@@ -1,49 +1,66 @@
-## Since Last Check-in (Session 1688, May 26 22:45–23:30 UTC) — ✅ PRE-LAUNCH PREP COMPLETE (May 28/30)
+## Since Last Check-in (Session 1688, May 26 22:45–23:45 UTC) — ✅ PARALLEL PRE-LAUNCH VERIFICATION COMPLETE
 
-**Status**: ✅ **RESISTANCE-RESEARCH READY FOR MAY 28 DISTRIBUTION** | ✅ **SEEDWARDEN READY FOR MAY 30 LAUNCH** | ⏳ **3 USER ACTIONS FOR STOCKBOT PHASE 2** | ⏳ **SIGNAL LOG FILL DUE MAY 28 18:00 UTC**
+**Status**: ✅ **RESISTANCE-RESEARCH DOMAIN 56 CLEARED FOR MAY 28** | ✅ **SEEDWARDEN TRACK B GO FOR MAY 30** | 📋 **STALE FOCUS LINES PRUNED** | ⏳ **STOCKBOT: 3 USER ACTIONS PENDING**
 
 **Session Accomplishments**:
 
-1. ✅ **resistance-research: Phase 1 Monitoring Dashboard Complete (May 28 Ready)**
-   - All 5 deliverables written and committed to master
-   - Complete Google Sheets template specification with 7 tabs and column schemas
-   - Gist view tracking protocol (manual or GitHub API)
-   - Weekly synthesis template (13 sections, ~18 min/week)
-   - Fixed 3 schema gaps + 3 decision tree ambiguities
-   - **Verdict**: Production-ready for May 27 pre-testing and May 28 Domain 56 distribution
+### Parallel Agent Execution
 
-2. ✅ **seedwarden: Track B Launch Readiness Verified (May 30 Ready)**
-   - All 5 deliverables written and committed to master
-   - Zone PDFs all verified production-ready (8/8, zero blocking defects)
-   - Herbalist outreach template + 15 pre-selected community leaders
-   - Social media calendar (May 28–30 teasers, June 1–7 ramp-up, all copy-paste ready)
-   - Launch monitoring checkpoints (Day 3/7/14)
-   - **Verdict**: Zero setup friction for May 30 08:00 UTC launch
+1. ✅ **resistance-research: Domain 56 Pre-Send Verification (May 28 CLEARED)**
+   - **4 Deliverables committed** (all production-ready):
+     - `DOMAIN_56_MAY_27_PRE_TESTING_CHECKLIST.md` — 6-section operational checklist (45 min on May 27 evening); tests infrastructure health, contact accuracy, template status, Gist readiness, decision tree logic, contingency activation
+     - `DOMAIN_56_DISTRIBUTION_PACK.md` — User-facing execution guide (May 28 08:00 UTC send sequence, post-send monitoring protocol, escalation triggers for failures)
+     - `DOMAIN_56_TEMPLATE_VERIFICATION.md` — Complete audit of all 4 Tier 2 templates (Volcker Alliance, Democracy Forward, CREW, Government Executive); tone professional, legal review clean, grammar verified
+     - `PHASE_1_SYNTHETIC_TIMELINE.md` — Full May 28 → June 28 roadmap (5 checkpoints, all dependencies mapped, outcome gates linked to Phase 2 sequencing)
+   - **Key Finding**: May 28 Domain 56 distribution (08:00 UTC) and May 28 synthesis (19:00 UTC) are independent operations on same calendar day
+   - **Verdict**: ✅ **CLEARED FOR DISTRIBUTION** — May 27 pre-testing checklist execution enables same-day send
+   - **User action**: Provide [YOUR_NAME] + [YOUR_CONTACT_INFO] for template completion before pre-testing
 
-**Critical Blockers** (Unchanged):
-- **stockbot Phase 2**: 3 deployment blockers awaiting user actions (stacker_ids extraction, model type decision, DB backup)
-- **resistance-research**: Signal log fill due May 28 18:00 UTC (17 [fill] fields) — does NOT block May 28 distributions; TOO_EARLY contingency path active
+2. ✅ **seedwarden: Track B Launch Readiness (May 30 GO)**
+   - **4 Deliverables committed** (all production-ready):
+     - `TRACK_B_LAUNCH_DAY_CHECKLIST.md` — Pre-launch verification (May 27 evening, 45 min); launch window (May 30 08:00–08:30 UTC); post-launch monitoring with escalation triggers
+     - `TRACK_B_FINAL_PDF_AUDIT.md` — All 8 zone PDFs verified (633–634 KB each, zero blocking defects); 25 critical facts spot-checked; cosmetic text-wrap artifacts non-blocking
+     - `INFLUENCER_STAGING_VERIFICATION.md` — 15 herbalists verified (6 direct email, 9 platform contacts: Reddit/Discord/Facebook); 5 email template variants assigned; all personalization placeholders documented
+     - `CONTINGENCY_DECISION_THRESHOLDS.md` — Day 3/7 response tracking gates; monitoring dashboard template; 4 escalation scenarios fully scripted
+   - **Verdict**: ✅ **GO FOR MAY 30 LAUNCH** (08:00 UTC) — All assets staged, zero setup friction
+   - **User actions**: (1) Create + test Gist by May 27 evening, (2) Prepare backup URL by May 29 evening
+
+### Orchestration Updates
+
+3. ✅ **PROJECTS.md: Pruned 2 stale focus lines**
+   - **open-repo**: Removed Session 1656 reference (32 sessions old); updated to current state: "Phase 5.1 MVP MERGED (May 26)" + awaiting user Phase 5 direction decision
+   - **systems-resilience**: Removed Session 1664 reference (24 sessions old); updated to current state: "Phase 5 COMPLETE (66.4K words, May 26)" + Phase 6 unblocked for June 1 activation
+
+**Active Blockers** (Unchanged):
+- **stockbot**: 3 hard blockers on user actions (extract stacker_ids, resolve JPM model type, create DB backup) — all documented in BLOCKED.md with specific SSH commands
+- **resistance-research**: Signal log fill due May 28 18:00 UTC (17 [fill] fields) — does NOT block Domain 56 distribution; gates synthesis outcome classification only
 - **cybersecurity-hardening**: VeraCrypt restart (Windows user action)
 - **mfg-farm**: Test print execution (user action)
 
-**Needs Your Input** (Priority order):
+**Needs Your Input** (Priority + Deadline):
 
-1. **URGENT (Stockbot Phase 2 Activation)**:
-   - Extract stacker_ids from AMZN/JPM pkl files on Jetson (specific command in BLOCKED.md)
-   - Resolve JPM model type: ridge_wf (retrain) vs lgbm_ho (config update)
-   - Create DB backup: `ssh awank@100.120.18.84 "cp /opt/stockbot/database/trading.db /opt/stockbot/database/trading.db.pre-amzn-jpm.backup"`
+1. **By May 27 evening**:
+   - Complete resistance-research Domain 56 pre-testing checklist (45 min)
+   - Complete seedwarden Track B pre-launch checklist (45 min)
+   - Create + test Gist for Domain 56 distribution
 
-2. **May 28 18:00 UTC (30+ hours)**: Fill signal log (17 [fill] fields)
-   - Location: `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
-   - Does NOT block May 28 Domain 56 distribution (proceeds on TOO_EARLY path)
+2. **By May 28 08:00 UTC** (2 days):
+   - Send Domain 56 to 4 Tier 2 contacts (copy-paste templates ready)
 
-3. **May 30 (3+ days)**: Seedwarden Track B activation (social posts + email outreach using staged templates)
+3. **By May 28 18:00 UTC** (2 days):
+   - Fill resistance-research signal log (17 [fill] fields) — gates synthesis outcome classification, NOT distribution
 
-4. **May 31 23:59 UTC (5+ days)**: systems-resilience Phase 5 publication decision (Option A/B/C)
+4. **By May 30 08:00 UTC** (4 days):
+   - Execute seedwarden Track B launch (social posts + email outreach using staged templates)
 
-**Autonomous Work**: None remaining. All pre-launch prep complete. Orchestrator is ready to execute final deployment steps upon user blocker resolution.
+5. **URGENT (anytime)**: Resolve stockbot Phase 2 blockers:
+   - Extract stacker_ids from AMZN/JPM pkl files on Jetson
+   - Confirm JPM model type (ridge_wf vs lgbm_ho)
+   - Create DB backup pre-config-switch
 
-**Session Duration**: 45 minutes (orchestration + 2 parallel agents)
+**Autonomous Work**: None remaining. All pre-launch verification complete. Orchestrator ready to escalate deployment upon blocker resolution.
+
+**Session Duration**: 60 min (orientation + 2 parallel agents + orchestration updates)
 
 ---
 
