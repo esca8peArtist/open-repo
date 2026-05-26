@@ -11,7 +11,7 @@ depends_on:
   - opsec-playbook.md
   - phase-2-dv-survivor-safety-playbook.md
   - phase-2-dv-survivor-security-playbook.md
-word_count: ~7,200
+word_count: ~13,500
 sources_confidence: high — grounded in NNEDV Safety Net Project documentation, Coalition Against Stalkerware 2025 Annual Report, AV-Comparatives 2025 Stalkerware Test, USCIS VAWA policy manual (December 2025), California AB 2499 (effective January 2025), Washington State DV Manual for Judges (December 2025), DOJ Legal Assistance for Victims Program 2025, Apple/Google unwanted tracking specification, DomesticShelters.org shelter data, NCADV state coalition directory
 cross_references:
   - opsec-playbook.md (Phase 1 integration)
@@ -52,7 +52,7 @@ The correct framing is not "hardening a device against intrusion." It is "rebuil
 
 ### 1.2 Abuser-Specific Surveillance Tactics
 
-**Stalkerware.** Commercial applications — mSpy, FlexiSPY, Hoverwatch, Cocospy, and dozens of others — are sold for as little as $30/month as "parental monitoring" or "employee monitoring" tools. They require a single session of physical device access for installation and then run invisibly. Capabilities vary by product but commonly include: real-time GPS location updates every 1–15 minutes; all call logs with duration; all SMS messages; iMessage and some encrypted app content via screen capture; keylogging (capturing passwords as they are typed); camera and microphone activation in some products; browser history; and photos. On Android, approximately 90% of commercial stalkerware products require Accessibility Services permission for keylogging and screen content access — an Android-specific entry point. On iPhone, monitoring typically requires either device jailbreaking (visible) or access to the Apple ID credentials to monitor iCloud backups remotely (no device contact required).
+**Stalkerware.** Commercial applications — mSpy, SpyBubble, FlexiSPY, Hoverwatch, Cocospy, and dozens of others — are sold for as little as $30/month as "parental monitoring" or "employee monitoring" tools. Some applications embed inside popular social platforms: Facebook Messenger spy variants intercept messages before encryption is applied, and others hook into WhatsApp, Instagram, and Snapchat using Android Accessibility Services to capture screen content in real time. They require a single session of physical device access for installation and then run invisibly. Capabilities vary by product but commonly include: real-time GPS location updates every 1–15 minutes; all call logs with duration; all SMS messages; iMessage and some encrypted app content via screen capture; keylogging (capturing passwords as they are typed); camera and microphone activation in some products; browser history; and photos. On Android, approximately 90% of commercial stalkerware products require Accessibility Services permission for keylogging and screen content access — an Android-specific entry point. On iPhone, monitoring typically requires either device jailbreaking (visible) or access to the Apple ID credentials to monitor iCloud backups remotely (no device contact required).
 
 The Coalition Against Stalkerware's 2025 annual report documented over 14,000 cases reported through partner organizations — a number that substantially undercounts unreported cases.
 
@@ -77,6 +77,7 @@ The DV threat changes as the survivor's situation changes. Security measures app
 | Phase 2: Immediate Post-Separation (First 72 Hours) | Physical location exposure; financial account lockout | Location security, financial access, physical safety |
 | Phase 3: Ongoing Protection (First 90 Days) | Sustained surveillance, legal proceedings, escalation attempts | Sustained countermeasures, legal protective orders, address confidentiality |
 | Phase 4: Recovery and Rebuilding (3–6 Months+) | Residual data broker exposure, custody weaponization, isolation | Long-term identity safety, autonomy restoration, community reintegration |
+| Phase 5: Rebuilding Independence (6+ Months) | Residual data broker re-aggregation; custody conflict; trauma impacts on decision-making | Identity reconstruction, credit rebuilding, community reintegration, trauma-informed care |
 
 ### 1.4 Data Sources Abusers Exploit
 
@@ -95,6 +96,40 @@ The DV threat changes as the survivor's situation changes. Security measures app
 For undocumented DV survivors, the threat model has a second layer: fear of immigration enforcement may prevent reporting abuse to police, accessing shelters, or filing for protective orders. This fear is not irrational — there are documented cases of abusers threatening to report survivors to ICE as a control mechanism. Key protective legal provisions exist (VAWA self-petition, U visa) but require legal assistance to navigate safely. See Section 5.7 for detailed immigration-DV intersection guidance.
 
 Additionally, law enforcement database links create specific risks when the abuser is a law enforcement officer: DMV records, address databases, and law enforcement information networks are accessible to abusers who are officers without triggering external scrutiny. Address Confidentiality Programs (Section 5.4) are especially critical in this scenario.
+
+### 1.6 Lethality Risk Assessment — The Maryland Lethality Assessment Program (LAP)
+
+The Lethality Assessment Program (LAP), developed by the Maryland Network Against Domestic Violence (MNADV) in 2005 and based on research by Dr. Jacquelyn Campbell of Johns Hopkins University, is the leading evidence-based tool for identifying survivors at highest risk of being killed by an intimate partner. The LAP uses an 11-question screen administered in the field by a responding law enforcement officer, then immediately connects high-danger survivors with a DV hotline advocate.
+
+**The 11 LAP Lethality Screen Questions (administered to victim)**:
+
+1. Has he/she ever used a weapon against you or threatened you with a weapon?
+2. Has he/she threatened to kill you or your children?
+3. Do you think he/she might try to kill you?
+4. Has he/she ever tried to choke/strangle you?
+5. Is he/she violently and constantly jealous of you?
+6. Have you left him/her or separated after living together or being married?
+7. Is he/she unemployed?
+8. Has he/she ever tried to kill himself/herself?
+9. Do you have a child that he/she knows is not his/hers?
+10. Does he/she follow you or spy on you or leave you threatening messages?
+11. Has he/she ever forced you to have sex when you did not want to?
+
+**High-danger threshold**: A "yes" to question 1, 2, or 3 immediately marks the victim as High-Danger. A "yes" to 4 or more of the remaining questions also triggers High-Danger classification. When High-Danger is identified — or when the officer's professional judgment indicates danger regardless of score — the officer calls the DV service provider hotline on the spot and offers the victim an immediate phone conversation with an advocate.
+
+**What the research shows**: The LAP has 92.86% sensitivity for predicting near-fatal violence. In evaluations across multiple states, LAP-connected survivors were significantly more likely to obtain protection orders, establish formal safety plans, and reduce the severity of subsequent violence. The program is now active in more than 250 jurisdictions across the United States.
+
+**Key evidence-based lethality escalation factors** (beyond the LAP screen):
+
+- **Non-fatal strangulation (NFS)**: The single strongest individual predictor of lethal IPV. A survivor who has been strangled by an intimate partner is 750% more likely to be killed by that partner. NFS was present in 43% of intimate partner homicide cases in published research. Any history of strangulation should immediately trigger the most comprehensive safety planning available.
+- **Weapon access and threats**: Abuser possession of a firearm increases homicide risk by a factor of 5. Specific death threats ("I will kill you," "I'll shoot you") are not rhetorical — they are documented predictors.
+- **Separation and exit attempts**: Homicide risk is highest in the weeks immediately following a separation or disclosure that the survivor is planning to leave. The period of attempted separation — not simply post-separation — is the peak lethality window.
+- **Obsessive jealousy and surveillance escalation**: Increasing surveillance intensity (more frequent location checks, showing up at workplace, contacting the survivor's family or friends to ask whereabouts) indicates escalating coercive control and elevated homicide risk.
+- **Prior assault severity escalation**: The trajectory matters — if incidents have become more severe, more frequent, or have involved choking, weapons, or injuries requiring medical care, lethality risk is substantially elevated.
+
+**For advocates and shelter staff**: The LAP is a law enforcement tool, but the underlying risk factors it assesses are relevant to all safety planning. When working through safety planning with a survivor, covering these 11 dimensions systematically — with the survivor's own assessment of their danger — produces better safety plans than generic checklists.
+
+**MNADV training resource**: mnadv.org/lethalityassessmentprogram
 
 ---
 
@@ -193,6 +228,40 @@ Phase 4 addresses long-term threat reduction, autonomy restoration, and communit
 
 **Regaining financial autonomy.** The National Foundation for Credit Counseling (NFCC, nfcc.org) provides free or low-cost financial counseling, including credit rebuilding after economic abuse. Many DV programs include economic empowerment services: employment assistance, vocational training, emergency financial assistance, and housing stability support.
 
+### Phase 5: Recovery and Rebuilding — Six Months and Beyond
+
+Phase 5 addresses the period when immediate survival threats have stabilized and the survivor is engaged in longer-term rebuilding of autonomy, identity, community, and wellbeing. This phase requires a trauma-informed approach that recognizes recovery is not linear, that setbacks occur, and that a survivor's self-defined goals — not an advocate's or institution's timeline — guide the pace.
+
+**Threat reassessment and de-escalation.** The Phase 5 transition is appropriate when specific de-escalation criteria are met, assessed with an advocate:
+
+- A protective order is in place (permanent, not temporary) or legal proceedings have resolved
+- The abuser is incarcerated or geographically distant (verified, not assumed)
+- No protective order violations or contact attempts in 60+ days
+- Custody arrangements are legally formalized and being followed
+- The survivor has stable housing, financial independence, and is not reliant on the abuser for any essential resource
+
+When these conditions are met, some security measures from earlier phases can be relaxed. The burner phone may be replaced by a standard device. Location-sharing protocols can be eased. The credit freeze can be temporarily lifted for legitimate credit applications. An ACP enrollment may be maintained as a precaution even when immediate danger has passed.
+
+**Identity reconstruction.** The recovery period often involves legal name changes (processed at the county level, cost $100–$450 depending on state), updating Social Security records (SSA Form SS-5, free), updating driver license (state DMV, fees vary), updating passport, and systematically notifying financial institutions, employers, and professional licenses. Many states waive or reduce court filing fees for DV survivors; a DV legal advocate can file a fee waiver motion.
+
+**Credit and financial rebuilding.** Economic abuse is present in an estimated 99% of DV situations (NNEDV economic justice data). Phase 5 financial rebuilding typically involves: lifting credit freezes and reviewing credit reports for fraudulent accounts opened by the abuser; disputing false entries with the credit bureaus (supported by a police report or court documentation of identity theft); opening primary credit in the survivor's name (secured credit card is the standard first step); and addressing any joint debt through divorce proceedings or negotiated settlement. The National Foundation for Credit Counseling (NFCC, nfcc.org) provides free or low-cost counseling. Purple Purse Foundation and Allotment.org curate financial resources specifically for DV survivors.
+
+**Ongoing data broker hygiene.** Even with prior opt-outs, data brokers re-aggregate public records on a 30–90 day cycle. New utility accounts, voter registration updates, DMV changes, and property records can repopulate a survivor's profile. Quarterly opt-out resubmissions — or an ongoing Incogni subscription — are recommended through Phase 5 and beyond, especially if the abuser has previously used data brokers to locate the survivor.
+
+**Community and social network rebuilding.** Abusers frequently use isolation as a coercive control strategy — cutting the survivor off from friends, family, and community over months or years. Rebuilding those connections is a Phase 5 priority that the security framework must not inadvertently block. Operational security guidance that requires keeping all contacts limited is appropriate for Phase 2–3; in Phase 5, it becomes a barrier to recovery if maintained without reassessment. A DV advocate can help a survivor evaluate which specific contacts remain risky and which can be safely reconnected with.
+
+**Trauma-informed reintegration.** SAMHSA's six principles of trauma-informed care — safety, trustworthiness, peer support, collaboration, empowerment, and attention to cultural and historical context — are the appropriate framework for Phase 5 service engagement. Specific trauma treatment modalities with evidence for IPV trauma include Trauma-Focused Cognitive Behavioral Therapy (TF-CBT), EMDR (Eye Movement Desensitization and Reprocessing), and Seeking Safety. RAINN (rainn.org) provides free national referrals to trauma-specialized counselors. Many state DV coalitions offer survivors ongoing counseling access beyond the initial shelter period.
+
+**Children's recovery.** Children exposed to DV require their own recovery support. The National Child Traumatic Stress Network (NCTSN, nctsn.org) provides guidelines for trauma-informed parenting after DV exposure. Trauma-Focused CBT for children (TF-CBT) is the most evidence-supported treatment for childhood PTSD from DV exposure. School counselors should be briefed (with the survivor's consent and at a level appropriate to the child's protective order situation) so that in-school support is available.
+
+**Independence milestones.** Phase 5 closure indicators (not a rigid checklist but a rough framework):
+- Survivor has a lease or mortgage in their name only
+- Survivor has an independent phone plan and financial accounts
+- No reliance on the abuser for healthcare, insurance, or childcare
+- Legal proceedings (divorce, custody, protective order) have concluded
+- Survivor has a support network of people they trust
+- Survivor has engaged with trauma counseling as appropriate to their goals
+
 ---
 
 ## Section 3: Tools and Services Per Phase
@@ -236,6 +305,17 @@ Phase 4 addresses long-term threat reduction, autonomy restoration, and communit
 - **NFCC** (nfcc.org): Free and low-cost financial counseling, credit rebuilding, debt management after economic abuse.
 - **Address Confidentiality Program**: State-specific enrollment. Provides substitute mailing address for DMV, voter registration, court records. Approximately 38 states. Contact thehotline.org for your state's program.
 - **DROP Platform** (privacy.ca.gov/drop/): California residents only. One-stop data broker opt-out from 100+ brokers including LexisNexis.
+
+### Phase 5 Tools (Rebuilding, 6+ Months)
+
+- **Incogni** (incogni.com): $7.99/month automated data broker opt-out resubmission, appropriate for ongoing Phase 5 hygiene as new public records are generated.
+- **AnnualCreditReport.com**: Free federal credit report review after lifting credit freeze. Check for fraudulent accounts opened by the abuser during the separation period.
+- **Secured credit card** (any major bank): Standard first step for credit rebuilding after economic abuse. A $200–$500 secured deposit establishes a new credit history in the survivor's name.
+- **RAINN Counseling Referral** (rainn.org/get-help): Free trauma counseling referral service; connects to TF-CBT and EMDR-trained therapists in most states.
+- **NCTSN — Trauma-Focused CBT for Children** (nctsn.org/treatments/trauma-focused-cognitive-behavioral-therapy): Evidence-based treatment for children exposed to DV; child therapist locator tool.
+- **SAMHSA Treatment Locator** (findtreatment.gov or call 1-800-662-4357): Locates mental health and substance use treatment programs. Useful when DV trauma intersects with mental health or substance use needs.
+- **Purple Purse Foundation** / **Allotment.org**: Financial resources and grants curated specifically for DV survivors rebuilding economic independence.
+- **OurFamilyWizard** (ourfamilywizard.com) or **TalkingParents** (talkingparents.com): Court-admissible co-parenting communication platforms for ongoing custody communication that cannot be manipulated or deleted.
 
 ---
 
@@ -287,6 +367,28 @@ Response: Document the tracker with photos before removing it (evidence for prot
 
 **Trigger: Monitoring software found on new device**
 Response: The new device may have been physically accessed by the abuser. Replace it again (do not factory reset — see Phase 1 device principle). File a police report for unauthorized access.
+
+### 4.4 De-Escalation Triggers — When Security Posture Can Be Reduced
+
+Security measures appropriate for Phase 2–3 become burdens if maintained indefinitely. The following conditions, assessed with an advocate, indicate that a de-escalation of security posture is warranted. All of these require verification, not assumption:
+
+**Legal de-escalation triggers**:
+- A permanent (not temporary) protective order is in place and there have been no violations for 60+ days
+- Abuser has been incarcerated for a DV-related offense; order of protection includes no-contact from incarceration
+- Divorce or legal separation is finalized and the abuser has complied with terms for 90+ days
+- Custody arrangements are formalized by court order and have been followed without incident for 90+ days
+
+**Geographic de-escalation triggers**:
+- Abuser has relocated to a different metropolitan area or state (verified through mutual contacts, not assumed)
+- Abuser has been deported (verified through immigration proceedings)
+- Physical distance of 500+ miles, no known travel to survivor's region in 90+ days
+
+**Behavioral de-escalation triggers**:
+- No contact attempts (call, text, email, social media, through intermediaries) for 60+ days
+- No attempts to surveil workplace, shelter, children's school, or social activities in 60+ days
+- Abuser has demonstrably entered and is engaged in a DV intervention program (verified through court monitoring)
+
+**Caveat on de-escalation**: De-escalation of security posture is not the same as eliminating it. The credit freeze should remain until the survivor chooses to lift it for a specific purpose. Data broker opt-outs should continue on a quarterly schedule. Address Confidentiality Program enrollment costs nothing to maintain and should not be abandoned until the survivor has consulted with an advocate. Some survivors find that maintaining a streamlined baseline security posture — Signal for sensitive communications, Bitwarden for passwords, periodic data broker resubmissions — is low-cost and provides long-term assurance even after acute threat has passed.
 
 ---
 
@@ -408,7 +510,95 @@ DV situations frequently involve financial precarity, housing instability, child
 - **Employment support**: YWCA (ywca.org) provides employment readiness programs for DV survivors in many cities. Dress for Success (dressforsuccess.org) provides professional attire. Local workforce development programs (workforce.gov) provide job training and placement.
 - **Transportation**: Many DV shelters provide transportation to appointments. Lyft and Uber have partnerships with some DV organizations for rides to shelters. Local mutual aid networks sometimes coordinate ride shares.
 
-### 6.5 Faith Community Engagement
+### 6.5 Crisis Escalation Decision Tree: 911 vs. Crisis Line vs. Advocate
+
+Not every dangerous moment calls for 911. The wrong call can escalate danger rather than reduce it — particularly when the abuser is law enforcement, when the survivor's immigration status creates arrest risk, or when 911 has historically not responded appropriately. This decision tree provides a framework. A survivor's own judgment about their specific situation always takes precedence.
+
+```
+IMMEDIATE PHYSICAL DANGER — USE THIS TREE
+
+Is there a weapon present or being threatened?
+├── YES → Call 911 immediately. When safe to speak, say "I need police." 
+│         If you cannot speak, leave the line open — dispatchers are 
+│         trained to respond to silent calls. Text 911 where available.
+└── NO → Continue to next question.
+
+Is physical violence occurring or imminent in the next few minutes?
+├── YES → Call 911 if the abuser is not law enforcement AND your 
+│         immigration status does not create higher risk from police 
+│         presence than from the abuser.
+│         If EITHER of those conditions is true → Call National DV 
+│         Hotline (1-800-799-7233) or text START to 88788, or 
+│         Crisis Text Line (text HOME to 741741). Hotline can 
+│         coordinate shelter escort and community crisis response.
+└── NO → Continue.
+
+Has the abuser threatened to kill you or your children today?
+├── YES → Call DV Hotline immediately. Hotline can call law enforcement 
+│         on your behalf if you request it. Report the specific threat 
+│         so it is documented.
+└── NO → Continue.
+
+Are you in a shelter, friend's home, or other safe location?
+├── YES → You are not in immediate danger. Contact your advocate or 
+│         hotline to update your safety plan and document the incident.
+└── NO → Go to a public location. Contact hotline or advocate from there.
+
+AFTER IMMEDIATE SAFETY IS ESTABLISHED:
+→ Document what happened (screenshots, photos, written record with date/time)
+→ Report to law enforcement if a protective order violation occurred
+→ Contact legal aid if court action is appropriate
+→ Contact your DV advocate to reassess safety plan
+```
+
+**Situations where to avoid 911**:
+- The abuser is a law enforcement officer (documented cases where abuser-officers arrive with colleagues who protect them)
+- You are undocumented and the local jurisdiction has ICE referral practices (contact DV Hotline for community-specific guidance on safe reporting)
+- Prior 911 calls resulted in the survivor being arrested (dual arrest scenarios remain a documented problem in some jurisdictions)
+- The abuser has prior law enforcement contact that was dismissed — repeat police contact may reinforce the abuser's belief they can act with impunity
+
+**Alternatives to 911**:
+- National DV Hotline: 1-800-799-7233 (24/7; chat at thehotline.org; text START to 88788)
+- Crisis Text Line: Text HOME to 741741 (24/7; silent)
+- Community crisis response programs (CAHOOTS model, available in Eugene OR, Denver CO, and growing number of cities): dispatches unarmed crisis responders without law enforcement; appropriate for situations involving mental health crisis, de-escalation needs, or fear of police contact
+- Trusted shelter staff or advocate who knows the survivor's situation can call on their behalf
+
+**Acute lethality behavioral signals** — contact 911 or hotline immediately if the abuser is displaying:
+- Threats to kill the survivor, children, or himself
+- Visible intoxication combined with history of physical violence
+- Access to a weapon (gun in the home, knife in hand, improvised weapon)
+- History of strangulation (prior NFS is the strongest individual homicide predictor)
+- Blocking the survivor from leaving the home or car (physical containment)
+- Expressions of hopelessness combined with violence ("I have nothing to lose")
+- Showing up at workplace, shelter, or school after a protective order has been served
+
+### 6.6 Accountability Structures: Preventing Abuser Infiltration of Support Networks
+
+Abusers in coercive control relationships systematically gather information about survivors' support networks and can attempt to infiltrate them. Common tactics:
+
+**Information gathering through social contacts**: The abuser may contact the survivor's family members, coworkers, or mutual friends — presenting as concerned, reasonable, or victimized — to learn the survivor's location, plans, or mental state. This is not innocent: it is intelligence gathering. Family members who have a sympathetic relationship with the abuser are a particular risk.
+
+**Social media monitoring of the support network**: Even if the survivor's own accounts are private or deleted, the abuser can monitor supporters' public accounts for tagged photos, location check-ins, or references to the survivor.
+
+**Use of children**: In custody situations, abusers sometimes question children about where the survivor lives, who she is with, or what she is doing. Children should not be placed in the position of carrying safety-critical information between households. OurFamilyWizard or TalkingParents are appropriate for all co-parenting communication; these platforms prevent manipulation and provide documented records.
+
+**Using sympathetic intermediaries**: A mutual friend who "just wants everyone to be okay" may genuinely believe they are being helpful by sharing the survivor's new address or phone number. Briefing supporters specifically — "Please do not share where I am or how to reach me with anyone, including [abuser's name], no matter what they say" — is necessary.
+
+**Protective protocols for the support network**:
+
+1. **Compartmentation**: Each supporter should know only what they need to know to provide their specific help. The person providing temporary housing should know the survivor is there; they do not necessarily need to know the legal strategy. The person holding documents should know the safe location; they should not know the shelter address.
+
+2. **Designated contact protocol**: Designate one trusted person as the "contact point" who knows how to reach the survivor and who the survivor checks in with on a schedule. This reduces the number of people who hold the full picture.
+
+3. **Scripted response for abuser inquiries**: Supporters should agree in advance on a single response if the abuser contacts them: "I don't know where she is and I'm not able to share information about her." Do not engage, explain, or negotiate. Do not say "I'll let her know you called."
+
+4. **Social media discipline**: Ask supporters to temporarily refrain from tagging the survivor, posting photos that could reveal her location, or commenting on posts that the abuser can see during the high-risk phase (Phase 2–3 especially).
+
+5. **Monitoring for infiltration**: If a supporter behaves strangely — asking unusual questions about the survivor's plans, becoming suddenly friendly with the abuser, or seeming to have information they should not have — treat it as a potential security concern. Limit that person's access to sensitive information. This is not about blame; it may be that the abuser has been manipulating them without the supporter's full awareness.
+
+6. **Support group screening**: DV shelter support groups maintain confidentiality protocols — attendance is not disclosed, group content is not shared. Online survivor communities (forums, Facebook groups) carry more risk because group membership may be visible to the abuser or the abuser's network. Advocates should advise survivors to use screen names and minimal identifying information in online peer support spaces.
+
+### 6.7 Faith Community Engagement
 
 Faith communities can be significant sources of support, housing, childcare, and transportation. DV-competent faith leaders understand that leaving an abusive relationship is not a violation of faith commitments and support survivors actively. Red flags for faith communities that are not DV-competent: pressure to reconcile without safety conditions, counseling the survivor on submission or forgiveness as a prerequisite to safety, treating the DV situation as a "private family matter," or providing couple's counseling (which can increase danger by giving the abuser information about the survivor's disclosures).
 
@@ -668,10 +858,39 @@ For the June/July 2026 NNEDV pilot:
 - [California Courts — Domestic Violence Restraining Orders Overview](https://courts.ca.gov/sites/default/files/courts/default/2024-08/overview.pdf)
 - [Washington Courts — Domestic Violence Manual for Judges (December 2025)](https://www.courts.wa.gov/content/manuals/domViol/chapter8.pdf)
 - [ACLU — Supreme Court Ruling on Domestic Violence Orders of Protection](https://www.aclu.org/press-releases/aclu-disappointed-supreme-court-ruling-domestic-violence-orders-protection)
+- [Maryland Network Against Domestic Violence — Lethality Assessment Program](https://www.mnadv.org/lethalityassessmentprogram/)
+- [MNADV — Domestic Violence Handbook for Maryland Law Enforcement Officers (2024)](https://www.mnadv.org/wp-content/uploads/2025/01/2024-MNADV-Domestic-Violence-Handbook.pdf)
+- [MNADV — LAP Effectiveness Position Paper (June 2022)](https://www.mnadv.org/wp-content/uploads/2021/02/LAP-Effectiveness-Position-Paper.pdf)
+- [NIJ — How Effective Are Lethality Assessment Programs for Addressing Intimate Partner Violence?](https://nij.ojp.gov/topics/articles/how-effective-are-lethality-assessment-programs-addressing-intimate-partner)
+- [FBI LEB — Domestic Violence Lethality Screen for First Responders](https://leb.fbi.gov/file-repository/screen-for-first-responders.pdf)
+- [CDC MMWR — Notes from the Field: Intimate Partner Homicide Among Women, 2018–2021](https://www.cdc.gov/mmwr/volumes/73/wr/mm7334a4.htm)
+- [CDC NISVS — National Intimate Partner and Sexual Violence Survey 2023/2024 Data Brief](https://www.cdc.gov/nisvs/media/pdfs/intimatepartnerviolence-brief.pdf)
+- [DomesticShelters.org — Strangulation is the Highest Predictor of Murder](https://www.domesticshelters.org/articles/identifying-abuse/strangulation-is-the-highest-predictor-of-murder)
+- [Courts.ca.gov — Non-Fatal Strangulation as a Risk Factor for Homicide of Women](https://courts.ca.gov/sites/default/files/courts/default/2024-12/btb25-precondv-04.pdf)
+- [Spencer et al. (2024) — Factors Associated with Non-Fatal Strangulation Victimization in Intimate Relationships: A Meta-Analysis](https://journals.sagepub.com/doi/abs/10.1177/15248380231207874)
+- [NIJ — New Approaches to Policing High-Risk Intimate Partner Victims](https://nij.ojp.gov/topics/articles/new-approaches-policing-high-risk-intimate-partner-victims-and-those-committing)
+- [Geiger Institute — Domestic Violence High Risk Team Model (2025)](https://geigerinstitute.org/wp-content/uploads/2025/10/2025-DVHRT-Overview-4.pdf)
+- [SAMHSA — Infographic: 6 Guiding Principles to a Trauma-Informed Approach](https://www.samhsa.gov/resource/dbhis/infographic-6-guiding-principles-trauma-informed-approach)
+- [SAMHSA — Trauma-Informed Approaches and Programs](https://www.samhsa.gov/mental-health/trauma-violence/trauma-informed-approaches-programs)
+- [NCTSN — Trauma-Focused Cognitive Behavioral Therapy](https://nctsn.org/treatments/trauma-focused-cognitive-behavioral-therapy)
+- [The Hotline — Escalation: Warning Signs of Relationship Abuse](https://www.thehotline.org/resources/escalation/)
+- [California DOJ — Domestic Violence Lethality Risk Assessment](https://post.ca.gov/Portals/0/post_docs/resources/DV_Lethality_Risk_Assessment.pdf)
+- [Sugiura et al. (2024) — The Technification of Domestic Abuse: Methods, Tools and Criminal Justice Responses](https://journals.sagepub.com/doi/full/10.1177/17488958241266760)
+- [Operation Safe Escape — Confronting Tech Abuse Holistically (2024)](https://prismreports.org/2024/02/22/operation-safe-escape-confront-tech-abuse-holistically/)
+- [Time — The Structure of America's Domestic Violence Crisis (May 2026)](https://time.com/article/2026/05/04/the-structure-of-america-s-domestic-violence-crisis/)
+- [NFCC — Financial Counseling for DV Survivors](https://www.nfcc.org/)
+- [Davies, Satyen, Toumbourou (2025) — Trauma-and-Violence-Informed Care for Victim-Survivors: A Qualitative Meta-Synthesis](https://journals.sagepub.com/doi/10.1177/15248380251383933)
+- [VAWNET — Technology-Facilitated Abuse Resource Collection](https://vawnet.org/sc/technology-assisted-abuse)
+- [WomensLaw.org — Abuse Using Technology: Electronic Surveillance](https://www.womenslaw.org/about-abuse/abuse-using-technology/ways-survivors-use-and-abusers-misuse-technology/electronic)
 
 ---
 
-**Version**: 1.0
+**Version**: 1.1
+**Created**: May 26, 2026
+**Updated**: May 26, 2026 — Added Section 1.6 (LAP lethality screening), Phase 5 (Recovery + Rebuilding), Section 3 Phase 5 tools, Section 4.4 (de-escalation triggers), Section 6.5 (crisis escalation decision tree), Section 6.6 (support network accountability/infiltration prevention); 25 additional sources added (total: 55+ sources)
+**Next review**: August 26, 2026 (quarterly)
+**Distribution**: NNEDV pilot — June/July 2026
+**Cross-references**: `opsec-playbook.md` (Phase 1 integration); `phase-2-immigration-surveillance-evasion-playbook.md` (ICE/VAWA); `phase-2-financial-resistance-security-playbook.md` (economic independence); `phase-2-dv-survivor-safety-playbook.md` (device/stalkerware detail); `phase-2-dv-survivor-security-playbook.md` (account/financial/location detail)
 **Created**: May 26, 2026
 **Next review**: August 26, 2026 (quarterly)
 **Distribution**: NNEDV pilot — June/July 2026
