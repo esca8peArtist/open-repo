@@ -98,6 +98,53 @@ One known terminology difference: playbook labels Outcome D as "SPLIT" but synth
 
 ---
 
+## May 26, 2026 — Resistance Research Agent — Domain 59 Full Production (Session 1665)
+
+**Task**: Full production of Domain 59 (Economic Precarity and Democratic Disenfranchisement) per Phase 2 brief. Target: 10,000+ words, 50+ citations, 5 major sections. June 15 distribution deadline.
+
+**Output file**: `projects/resistance-research/phase-2-domains/domain-59-economic-precarity-democratic-disenfranchisement.md`
+
+**Results**:
+
+| Metric | Target | Achieved |
+|--------|--------|----------|
+| Word count | 10,000+ | 10,495 |
+| Citations | 50+ | 58 |
+| Sections | 5 | 5 |
+| Causal pathways with effect sizes | 4 | 4 |
+| Zone 5 state data | All 6 | All 6 |
+| Cross-domain bridges | 4 | 4 |
+
+**Section summary**:
+
+1. **Part I: Four Causal Pathways** (~5,800 words): Income inequality (26-point gap, Rastogi/Laurison precinct-level widening, Dallas Fed WP2517 causal anchor, wage stagnation/time poverty); Housing precarity (Slee/Desmond IV study, PNAS 2024 natural experiment, 22.7M cost-burdened renters, registration lapse mechanism); Healthcare costs (Oregon Medicaid RCT, Cox-Epp-Shepard hospital closure study, OBBBA Medicaid acceleration, Mani et al. bandwidth tax); Student/consumer debt (garnishment restart, risk aversion mechanism, captive audience employer coercion, Bae/Haselswerdt gig worker finding)
+
+2. **Part II: Zone 5 Regional Analysis** (~2,100 words): Full state-by-state housing data (NLIHC Gap 2025 — IL:34/100, IN:34/100, MI:37/100, IA:39/100, WI:35/100, MN:39-41/100); student debt by state (IL $39K/1.6M borrowers, MI $37K/1.4M, etc.); rural hospital closure risk (IL:17, MI:15, WI:10, MN:18 hospitals at risk); 2024 turnout by state; trigger-point analysis for 50% non-participation threshold
+
+3. **Part III: Movement Leverage and 2026 Policy Windows** (~1,200 words): Window 1 (CTC July reconciliation, 99% of poorest children excluded); Window 2 (Medicaid work requirement outreach June–August 2026 as NVRA opportunity); Window 3 (student loan deferral advocacy for single parents/gig workers/medical debt households)
+
+4. **Part IV: Cross-Domain Bridges** (~1,100 words): Domain 1 (SAVE Act compounds economic exclusion; AVR as bridge reform); Domain 22 (captive audience coercion enabled by precarity; Act 10 as Zone 5 case study); Domain 42 (parallel feedback loops; shared population in Black/Latino urban Zone 5 communities); Domain 54 (broadband gap, algorithmic mediation, cognitive bandwidth compounding)
+
+5. **Part V: Strategic Recommendations** (~650 words): Tier 1 organizations (AFL-CIO, NLIHC, mutual aid networks, NEA/AFT); Tier 2 (Student Loan Justice, National Health Law Program, Brennan Center); messaging by constituency (workers/renters/students/healthcare); Phase 2 integration with Domain 39 distribution
+
+**New sources added (not in prior Domain 59 research)**:
+- NLIHC Gap state pages: IL, IN, MI, IA, WI, MN — specific units per 100 ELI renters and shortfall numbers
+- Education Data Initiative: Zone 5 state-by-state student debt (6 states, $208.8B aggregate)
+- Chartis 2026 Rural Health State of the State: Zone 5 hospital closure risk
+- Cox, Epp, and Shepard (APSR 2025): Hospital closure → voting suppression causal study
+- Benton Institute broadband gap data (2025)
+- ITEP CTC analysis (99% of poorest quintile children excluded from full credit)
+- Columbia CPSP OBBBA CTC analysis
+- KFF Medicaid work requirement implementation guidance tracker
+- Keystone Research Center: employer opposition + economic precarity link
+- Democracy Docket: felony disenfranchisement mechanism (cross-domain bridge)
+
+**Phase 2 source library**: Updated with 10 new sources above. Prior library (DOMAIN_59_SOURCE_LIBRARY.md): 48 sources. Total Domain 59 library now: 58 sources in production document + 48 in pre-research library.
+
+**Distribution readiness**: Production-ready for June 15 Tier 1/2 distribution. No Gist created this session — requires user action to publish as GitHub Gist before distribution. Companion to Domain 39 (healthcare access) for economic justice coalition distribution.
+
+---
+
 ## May 22, 2026 — Resistance Research Agent — Domain 56 Tier 2 Readiness Verification (Session 1612)
 
 **Task**: Verify Domain 56 Tier 2 (May 20-24 send window) distribution materials are complete, live, and ready for execution. Confirm Gist accessibility, template accuracy, contact list currency, and provide pre-send checklist for user.
