@@ -2,6 +2,28 @@
 
 ---
 
+## May 26, 2026 — Resistance Research Agent — May 27 Pre-Testing Infrastructure Verification (Session 1688)
+
+Pre-testing infrastructure verified; May 27 pre-testing can proceed with confidence.
+
+**Files verified**:
+- `execution/domain-56-email-template.md` — 4 templates complete and distinct; all placeholders correctly marked; Send Log table present
+- `post-wave-1-monitoring/PHASE_1_IMPACT_MONITORING_DASHBOARD.md` — all 7 sheets documented; Contacts tab schema complete (20 columns); all auto-calculation formulas present; Bitly link table complete; pre-launch checklist complete
+- `post-wave-1-monitoring/REPLY_TRIAGE_FRAMEWORK.md` — all 5 categories complete; classification decision tree has no dead-end branches; escalation matrix covers all 6 triggers; per-domain priority stacks present
+- `post-wave-1-monitoring/DAY_7_14_30_DECISION_TREES.md` — all 3 trees terminate in named determinations; Score 5 override correct; Phase 2 sequencing unambiguous; Domain 39 non-negotiable present in every branch including FAILURE path
+- `post-wave-1-monitoring/wave-1-signal-log-may18-21.md` — structural integrity confirmed; 20 [fill] placeholders expected (TOO_EARLY contingency); May 18 and May 19 snapshot narratives complete
+
+**Non-blocking gaps confirmed** (3 items, all resolvable at Google Sheets setup time in <15 min total):
+1. Replies tab: no column schema in dashboard docs — use Reply_ID, Contact_ID, Date, Score, Category, Key_Content, Notes
+2. Constituencies tab: no schema defined — use Constituency_Name, Contact_IDs, Score_Max, Day30_Strong, Notes
+3. Checkpoints tab: no schema defined — use Date, Checkpoint_Type, Domain, Determination, Metric_A–D, Notes
+
+**Verdict**: Zero HIGH severity issues. May 28 Domain 56 distribution is clear for execution.
+
+**File produced**: `post-wave-1-monitoring/MAY_27_PRETESTING_CHECKLIST.md`
+
+---
+
 ## May 26, 2026 — Resistance Research Agent — Phase 1 Post-Distribution Monitoring Infrastructure (Session 1669+)
 
 **Task**: Build production-ready Phase 1 monitoring dashboard infrastructure package for Wave 1 post-distribution tracking. Domains 56 (May 28) and 39 (June 1) distributions launching.
