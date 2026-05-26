@@ -4,6 +4,30 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Track B Launch Readiness Final Verification — May 26, 2026 (session 2 — gap fill)
+
+**Task**: Complete gaps identified against full task spec: (1) herbalist audience email teaser template (AHG/NAMA, 400-500 words), (2) social media calendar extended from June 1 through June 7 daily ramp-up.
+
+**Zone card verification**: 8 PDFs confirmed present in `assets/zone-cards/`. All 633-634 KB (within 1.5 MB spec). Zones 3-10 all accounted for. No new issues identified.
+
+**New deliverables produced**:
+
+1. `TRACK_B_HERBALIST_EMAIL_TEASER.md` — Standalone 400-500 word email teaser for core herbalist audience (AHG chapter members, NAMA practitioners, online herbalist community members). Three subject line variants, full email body with personalization hook matrix, AHG/NAMA-specific insert language, sending notes.
+
+2. `TRACK_B_SOCIAL_MEDIA_CALENDAR.md` — Extended with 6 new daily posts (June 2-7):
+   - June 2: Zone deep-dive #1 (Zone 3 short-season focus)
+   - June 3: Wild edibles timing angle (forager/wildcrafting audience)
+   - June 4: Native plants focus (AHG/NAMA crossover angle)
+   - June 5: Heirloom variety feature (seed-saving community)
+   - June 6: Storage and preservation angle (homesteading/preparedness)
+   - June 7: Week-1 reflection and community milestone post
+
+**Calendar coverage after extension**: May 28 – June 7 (11 days: 3 pre-launch teasers, launch day, 7-day ramp-up).
+
+**Status**: COMPLETE — all 5 original deliverables plus 2 gap-fill items now production-ready.
+
+---
+
 ## Track B Launch Readiness Final Verification — May 26, 2026
 
 **Task**: Build complete Track B launch readiness package for Zone Cards (May 30 launch). Exploration queue item: "seedwarden: Track B Launch Readiness Final Verification."

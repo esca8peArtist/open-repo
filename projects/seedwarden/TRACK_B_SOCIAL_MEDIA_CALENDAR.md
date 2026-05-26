@@ -382,6 +382,307 @@ Tell me your zone and what you're growing right now ⬇️ Free zone guide in bi
 
 ---
 
+---
+
+### Day 6 — Monday June 2: Zone Deep-Dive #1
+
+**Goal**: Extend reach with zone-specific educational content. Capture gardeners who are not
+yet following but will discover via hashtag or explore feed. Monday = high-intent browsing day.
+
+---
+
+**Instagram (7:00 PM)**
+
+Image: Zone 3 card detail — frost date table and Stupice tomato spotlight cropped to fill frame.
+
+Caption:
+```
+Zone 3 gardeners: you have 95 to 125 growing days.
+
+That's not a lot. Every choice you make has to count.
+
+Short-season must-haves we put in the Zone 3 card:
+— Stupice tomato: 52–65 days from transplant
+— Provider bush bean: 55 days direct sow
+— Lacinato kale: cold-tolerant, extends both ends of your season
+
+Free Zone 3 card at the link in bio. All 8 zones available.
+
+#zone3garden #seedwarden #growyourzone #shortseasongarden #heirlooms
+```
+
+---
+
+**TikTok (7:30 PM)**
+
+Format: 15-second video. Close-up of Zone 3 card on a wooden surface. Hand points to each section.
+
+Script:
+```
+"Zone 3. Ninety-five days. Here's the card we made for you.
+Frost window. What to start NOW. Three heirloom picks that actually make it.
+Free — link in bio."
+```
+
+Caption:
+```
+Zone 3 gardeners: this is yours. 95-day season, short-season picks, frost dates. Free. #zone3 #seedwarden #growyourzone #gardeningbyzone
+```
+
+---
+
+**Pinterest (8:00 PM)**
+
+Pin: "Zone 3 Gardening Quick-Start — Northern Plains, Upper Great Lakes, Mountain Interior" — long-form pin with frost dates and three heirloom picks. Link to zone card direct download.
+
+---
+
+### Day 7 — Tuesday June 3: Wild Edibles Angle
+
+**Goal**: Reach the forager and wildcrafting audience with content that connects Zone Cards
+to wild edibles timing — a natural bridge to the broader Seedwarden product catalog.
+
+---
+
+**Instagram (6:30 PM)**
+
+Caption:
+```
+Wild edibles timing is just as zone-dependent as your garden crops.
+
+Chickweed peaks in Zone 3–5 right now. In Zone 9 it's already bolting.
+Dandelion root harvest window in Zone 6: late April through mid-June.
+Stinging nettle — Zone 7 gardeners, you have about two weeks of tender growth left.
+
+Our Zone Cards include timing for native and wild species alongside garden crops.
+
+Free for your zone — link in bio.
+
+#wildedibles #foragingseason #seedwarden #growyourzone #nativeplants #wildcrafting
+```
+
+Story: Repost any `#seedwardenzone` UGC from launch week. If none yet, post a "still looking for your zone tags" call-to-action.
+
+---
+
+**TikTok (7:00 PM)**
+
+Format: 20-second video. Walk through one zone card on camera and highlight the wild edibles timing note.
+
+Script:
+```
+"Zone 5. Wild edibles window right now:
+Garlic mustard — harvest before it flowers, that's this week.
+Lamb's quarters — still tender, not yet seeding.
+Plantain — harvest from established patches before summer heat.
+One page. Your zone's timing. Free at the link in bio."
+```
+
+Caption:
+```
+Wild edibles timing by zone — Zone 5 edition. What's ready to harvest in your zone right now? #wildedibles #foraging #seedwarden #zone5 #growyourzone
+```
+
+---
+
+**Reddit r/foraging or r/herbalism (10:00 AM)**
+
+Post (if not yet posted in this community):
+```
+Zone-specific wild edibles timing guides — free PDF for every USDA growing zone
+
+I've built one-page quick-start cards for all 8 USDA zones that include timing for wild edibles and native plants alongside garden crops. Zone 5 is in prime garlic mustard and lamb's quarters season right now. Zone 9 folks are past most of the spring ephemerals.
+
+All 8 cards are free PDF downloads — no email required.
+
+[Gist link]
+
+What are you harvesting in your zone right now?
+```
+
+---
+
+### Day 8 — Wednesday June 4: Native Plants Focus
+
+**Goal**: Native plant angle reaches conservation-minded gardeners and herbalists — a distinct
+segment from home food gardeners. This is also the strongest angle for AHG/NAMA audiences.
+
+---
+
+**Instagram (6:30 PM)**
+
+Caption:
+```
+Native plants aren't just for conservation areas.
+
+Zone 6 — Black-Eyed Susan, Wild Bergamot, Echinacea purpurea are all in active bloom window now.
+Zone 8 — Passionflower has started climbing. Yaupon holly is holding berries.
+Zone 4 — Nodding onion is just emerging. Wild ginger is fully leafed.
+
+Native plants are the backbone of a zone-appropriate garden. They know their zone better than any catalog.
+
+Free Zone Cards — native species timing included. Link in bio.
+
+#nativeplants #nativegarden #seedwarden #growyourzone #pollinator #wildedibles #herbalism
+```
+
+---
+
+**Pinterest (8:00 PM)**
+
+Two pins:
+- "Zone 6 Native Plants — What's Blooming Now" featuring Black-Eyed Susan and Wild Bergamot
+- "Native Plants by USDA Zone — Free Reference Guide" linking to the zone card landing page
+
+---
+
+**LinkedIn (8:00 AM)**
+
+```
+One pattern I've noticed in herbalism and native plant education: the information exists,
+but it's rarely organized by the student's or practitioner's specific bioregion.
+
+Zone 3 practitioners have a fundamentally different growing and wildcrafting calendar than Zone 9 practitioners. The plants are different. The timing is different. The preservation windows are different.
+
+Seedwarden Zone Cards are built around that reality — one page per USDA zone, with native plant and wild edibles timing alongside garden crops.
+
+Free for all 8 zones: [link]
+
+If you teach herbalism, botany, or food growing — these are free to share with your students.
+
+#herbalism #nativeplants #botanicalEducation #foodsovereignty #seedwarden
+```
+
+---
+
+### Day 9 — Thursday June 5: Heirloom Variety Feature
+
+**Goal**: Showcase the heirloom variety spotlight angle — this is a strong hook for seed-saving
+communities and Etsy buyers who are already interested in open-pollinated varieties.
+
+---
+
+**Instagram (6:30 PM)**
+
+Carousel (3 slides):
+- Slide 1: Zone 5 heirloom spotlight — Mortgage Lifter tomato card detail
+- Slide 2: Zone 7 heirloom spotlight — Rattlesnake pole bean card detail
+- Slide 3: Zone 9 heirloom spotlight — Iron and Clay cowpea card detail
+
+Caption:
+```
+Heirloom varieties are not interchangeable across zones.
+
+Mortgage Lifter was bred for Zones 5–7. It can struggle where Stupice thrives (Zone 3) or where Arkansas Traveler dominates (Zone 7–9).
+
+Our Zone Cards spotlight the varieties that actually perform in each zone — open-pollinated, seed-saveable, regionally tested.
+
+All 8 cards free at the link in bio.
+
+Swipe to see three zone spotlights. Which one is yours?
+
+#heirloomtomatoes #heirloomvegetables #seedsaving #openpollinatedseeds #seedwarden #growyourzone
+```
+
+---
+
+**TikTok (7:00 PM)**
+
+Format: 30-second video. Fast cuts between three zone card heirloom spotlights.
+
+Script:
+```
+"Zone 5: Mortgage Lifter tomato. 78 days. Classic beefsteak. Bred for your climate.
+Zone 7: Rattlesnake pole bean. 60 days. Heat-tolerant. Gorgeous purple striping.
+Zone 9: Iron and Clay cowpea. 60 days. Heat and drought-tolerant. Staple crop for the South.
+One card per zone. All 8 free. Link in bio."
+```
+
+---
+
+### Day 10 — Friday June 6: Storage and Preservation Angle
+
+**Goal**: Storage framing reaches preparedness, homesteading, and food sovereignty communities —
+slightly different segment from the gardening-first audience. Friday = good for reach-focused posts.
+
+---
+
+**Instagram (6:30 PM)**
+
+Caption:
+```
+Growing is only half of it.
+
+Zone 3 harvest window: 10–12 weeks. Everything that comes out of the ground needs to be stored, fermented, dried, or cellared before first frost.
+
+Zone 9 preservation challenge: the enemy is heat, not frost. Dehydration and fermentation are your primary tools — refrigeration is expensive.
+
+Each zone has its own preservation logic. Our Zone Cards cover it.
+
+Free for your zone — link in bio.
+
+#foodpreservation #foodstorage #homesteadkitchen #fermentation #seedwarden #growyourzone #harvestseason
+```
+
+---
+
+**Pinterest (8:00 PM)**
+
+Two pins with preservation framing:
+- "Zone 3 Food Preservation Guide — Short Season Storage Strategies"
+- "Zone 9 Preservation Techniques — Heat-Season Food Storage for Gulf Coast and SoCal Growers"
+
+---
+
+### Day 11 — Saturday June 7: Weekly Reflection + Community Milestone
+
+**Goal**: End the launch ramp-up week with a reflective, community-focused post. Acknowledge
+engagement received. Keep the invitation open. This post works best as a genuine update,
+not a product push — the product is already established at this point.
+
+---
+
+**Instagram (5:00 PM)**
+
+Caption:
+```
+One week since Zone Cards launched.
+
+Here's what surprised me:
+
+The zone questions started immediately. People know their zone. They were waiting for something built specifically for their bioregion.
+
+Zone 9 growers came in strong — turns out there's very little free content calibrated to Gulf Coast and South Texas timing.
+
+Zone 3 people are racing. Every post that mentions the short season gets engagement from folks who feel the clock every single year.
+
+If you've downloaded your card and found it useful — thank you. If you've shared it with your community, that means more than you know.
+
+All 8 zones still free at the link in bio. Tell me what zone you're in if you haven't already.
+
+#seedwarden #growyourzone #zonecards #gardenreflection #heirloomgarden
+```
+
+Story: Repost the best `#seedwardenzone` UGC from the week. If no UGC yet, show a screenshot of engagement metrics as social proof.
+
+---
+
+**TikTok (7:00 PM)**
+
+Format: 30-second talking head or voiceover. Genuine launch-week recap.
+
+Script:
+```
+"One week of Zone Cards being live. A few things I didn't expect.
+Zone 9 is underserved. That community has been asking for region-specific content.
+Zone 3 people have urgency built in — 95 days is not very many.
+The most common DM I got: 'how do I find out what zone I am?'
+Answer is in my bio. All 8 cards are still free.
+What zone are you in? Tell me below."
+```
+
+---
+
 ## Engagement Hooks Summary
 
 | Hook | Platform | When to Use |
@@ -393,6 +694,12 @@ Tell me your zone and what you're growing right now ⬇️ Free zone guide in bi
 | Zone vs. zone comparison | Instagram, TikTok | May 31 |
 | "Share with a Zone X friend" | Instagram Stories | May 30 |
 | UGC repost promise | Instagram | June 1 |
+| Zone deep-dive (single zone) | Instagram, TikTok, Pinterest | June 2–6 (one zone per day) |
+| Wild edibles seasonal hook | Instagram, TikTok, Reddit | June 3 |
+| Native plants hook | Instagram, LinkedIn, Pinterest | June 4 |
+| Heirloom variety hook | Instagram, TikTok | June 5 |
+| Storage/preservation hook | Instagram, Pinterest | June 6 |
+| Week-1 reflection | Instagram, TikTok | June 7 |
 
 ---
 
