@@ -7,11 +7,16 @@
 - ✅ **New Queue Items Created**: 3 new items added to PROJECTS.md for Phase 2 research foundation (resistance-research Domain 57 pre-research, cybersecurity-hardening DV playbook, systems-resilience Phase 6 foundation)
 - ✅ **Priority Selection**: Selected highest-priority unblocked project (resistance-research, Priority 2) for autonomous work: **Domain 57 pre-research foundation (5-8 hrs)**
 
-**Next steps**:
-- **May 26 (now)**: Spawn parallel agent to begin Domain 57 pre-research (source discovery, outline, cross-domain mapping)
-- **May 28**: Re-synthesis execution, Domain 56 Tier 2 distribution, test print execution
-- **May 30**: seedwarden Phase 2 Track B launch
-- **June 1**: Phase 5 Wave 2 user decision
+**What's ready for user action**:
+1. **Domain 57 pre-research foundation** (COMPLETE) — 105-source bibliography, 5 causal pathways, Zone 5 regional analysis. Ready for July 15-Aug 15 production (40-50 hrs → 33-37 hrs).
+2. **DV Survivor Safety Playbook** (COMPLETE) — 10,116 words, 52 resources verified, production-ready for NNEDV distribution. Opens NNEDV + 60 state DV coalition channels (10M+ survivor population).
+
+**Critical path timeline (unchanged)**:
+- **May 27**: (today+1) No autonomous action; awaiting May 28 events
+- **May 28 (~19:00 UTC)**: Re-synthesis execution with signal log data → Phase 2 outcome classification (STRONG/MODERATE/WEAK/TOO_EARLY). User tasks: (1) Fill signal log [fill] placeholders (17 remaining), (2) Evaluate seedwarden Tier 1 supplier responses, (3) Execute test print for mfg-farm
+- **May 30 (target)**: seedwarden Phase 2 Track B launch (all 3 gates production-ready; user gates 1-3 execution window May 23-28)
+- **May 31 (deadline)**: Domain 39 distribution email send (~35 min user work: fill templates + verify HHS rule + send 5 emails)
+- **June 1 (decision point)**: (1) Phase 5 Wave 2 sequencing decision (informed by microgrids research), (2) Phase 1 Impact Framework deployment + monitoring start
 
 **Blocks remain unchanged** (Jetson unreachable, signal log unfilled, test print pending, VeraCrypt restart pending).
 
