@@ -204,6 +204,8 @@ START: Pull cumulative Bitly clicks and total replies
 - Adoptions sheet: **Count of confirmed adoption signals** (Verification_Status = "Confirmed")
 - Network Map sheet: **Count of cross-organizational referrals** (confirmed or probable)
 
+**Threshold note**: The checks below run in order from highest to lowest. Check FAILURE first (most severe), then STRONG (most positive), then MODERATE, then WEAK, then ASSESS. The FAILURE check fires before any other branch if Week 3–4 Bitly clicks are zero — that condition is catastrophic regardless of other metrics. If FAILURE does not fire, proceed to STRONG.
+
 ### Day 30 Decision Tree
 
 ```
@@ -213,23 +215,39 @@ START: Pull four numbers from dashboard
 (B) Constituencies passing strong threshold [count out of 7]
 (C) Cross-organizational references [count]
 (D) Confirmed adoption signals [count]
+(E) Week 3-4 Gist Views sheet: were Bitly clicks zero in both Week 3 AND Week 4? [YES/NO]
 
+    ├─ [Check FAILURE first — most severe condition]
+    │
+    ├─ A < 10% AND C = 0 AND D = 0 AND E = YES?
+    │
+    │  YES → DETERMINATION: FAILURE
+    │        Phase 1 severely underperforming. Stop here. Do not evaluate other branches.
+    │
+    │        ACTION: User decision required (within 48 hours).
+    │        Update CHECKIN.md under "Needs Your Input" with all four metrics.
+    │        Present three options:
+    │        1. CONTINUE: Apply full failure recovery (Modifications 1–3 + 90-day extension)
+    │        2. PIVOT: Shift to public-channel distribution only (no more direct outreach)
+    │        3. CLOSE: End Phase 1 and move to Phase 2 with whatever social proof exists
+    │        User selects path within 48 hours.
+    │        Send Domain 39 regardless of FAILURE (healthcare deadline is non-negotiable).
+    │
+    │  NO → Continue to STRONG check
+    │
     ├─ [Check for STRONG threshold]
     │
     ├─ A ≥ 50% AND B ≥ 4 AND C ≥ 3 AND D ≥ 2?
     │
     │  YES → DETERMINATION: STRONG
-    │        ✅ Phase 2 launches immediately
+    │        Phase 2 launches immediately.
     │
     │        IMMEDIATE ACTIONS (within 24 hours):
     │        1. Update CHECKIN.md with STRONG result
     │        2. Prepare Domain 39 distribution materials:
     │           - Pull 5 contact email addresses from DISTRIBUTION_OUTREACH_CONTACTS.md
     │           - Prepare email template with Domain 39 Gist link
-    │           - Include 2–3 quote(s) from Score 4–5 Tier 1 replies as social proof
-    │           Example: "This framework has been embraced by Yale Law School
-    │                    and Brennan Center for Justice, who are integrating it into
-    │                    their litigation and policy work..."
+    │           - Include 2–3 quotes from Score 4–5 Tier 1 replies as social proof
     │        3. Send Domain 39 distribution by end of Day 1
     │           (June 1 HHS deadline applies — do not delay)
     │        4. Prepare Domain 56 distribution for launch within 48 hours
@@ -242,19 +260,20 @@ START: Pull four numbers from dashboard
     │
     ├─ [Check for MODERATE threshold]
     │
-    ├─ A 30–49% OR B ≥ 3 OR C ≥ 1 OR D ≥ 1?
+    ├─ A 20–49% OR B ≥ 3 OR C ≥ 1 OR D ≥ 1?
+    │  (Note: upper bound of A is 49% because ≥50% triggers STRONG above.
+    │   Lower bound is 20% because <20% combined with all-zero B/C/D triggers WEAK below.
+    │   If A is 20–49% but B/C/D are all zero, this still triggers MODERATE — partial signal.)
     │
     │  YES → DETERMINATION: MODERATE
-    │        ⏳ Domain 39 launches immediately (healthcare urgency)
-    │           Phase 2 partial expansion
+    │        Domain 39 launches immediately (healthcare urgency).
+    │        Phase 2 partial expansion.
     │
     │        ACTIONS (within 24–48 hours):
     │        1. Update CHECKIN.md with MODERATE result
     │        2. Send Domain 39 distribution within 24 hours
     │           (Same as STRONG — healthcare deadline non-negotiable)
     │        3. Hold Domain 56 distribution until Day 37–40
-    │           (Allow additional Phase 1 data to accumulate;
-    │            more Tier 1 replies = stronger social proof)
     │        4. Extend Phase 1 monitoring period through Day 60
     │           Continue weekly synthesis, Bitly tracking, reply scoring
     │        5. Prepare Tier 2 expansion planning but do NOT send yet
@@ -265,9 +284,11 @@ START: Pull four numbers from dashboard
     ├─ [Check for WEAK threshold]
     │
     ├─ A < 20% AND B < 2 AND C = 0 AND D = 0?
+    │  (All four conditions must be true simultaneously. If any single one is not,
+    │   the result falls in the ASSESS zone between WEAK and MODERATE — see below.)
     │
     │  YES → DETERMINATION: WEAK
-    │        🔴 Phase 1 not tracking targets; contingency activation
+    │        Phase 1 not tracking targets. Contingency activation required.
     │
     │        DO NOT extend Phase 1 unchanged.
     │        Apply 3-modification failure recovery:
@@ -304,38 +325,33 @@ START: Pull four numbers from dashboard
     │        4. Prepare Modification 1 + 2 contact lists and email templates
     │        5. Set Day 90 extension checkpoint (extended timeline for Phase 1)
     │
-    │  NO → [Between WEAK and MODERATE — hold pattern]
-    │       DETERMINATION: ASSESS (not strong, not weak)
-    │       ACTION: Send Domain 39 only (healthcare deadline)
+    │  NO → [Between WEAK and MODERATE: some signals but below MODERATE threshold]
+    │       DETERMINATION: ASSESS
+    │       This applies when A is 10–19% with B≥1 or C≥1 or D≥1 — partial signals
+    │       that do not qualify for MODERATE but are better than WEAK.
+    │       ACTION: Send Domain 39 only (healthcare deadline non-negotiable)
     │              Continue Phase 1 monitoring through Day 60
-    │              Prepare both contingency AND normal Phase 2 options
-    │              Wait for Day 60 checkpoint with fuller data
+    │              Prepare both contingency AND normal Phase 2 options in parallel
+    │              Wait for Day 60 checkpoint with fuller data before committing
+    │              Do NOT activate WEAK failure recovery yet
+    │              Next checkpoint: Day 60 (July 27–28)
     │
-    └─ [Check for FAILURE signal]
-       A < 10% AND C = 0 AND D = 0 AND [Week 3–4 Bitly = 0]?
-       
-       YES → DETERMINATION: FAILURE
-             🔴🔴 Phase 1 severely underperforming
-             
-             ACTION: User decision required
-             Update CHECKIN.md under "Needs Your Input"
-             Present three options:
-             1. CONTINUE: Apply full failure recovery (Modifications 1–3 + 90-day extension)
-             2. PIVOT: Shift to public-channel distribution only (no more direct outreach)
-             3. CLOSE: End Phase 1 and move to Phase 2 with whatever social proof exists
-             
-             User selects path within 48 hours
+    └─ [All checks complete. If you reach this point without a DETERMINATION:
+       this should not happen — every combination of A/B/C/D values is covered
+       by FAILURE, STRONG, MODERATE, WEAK, or ASSESS above.]
 ```
 
 ### Day 30 Determination Reference Table
 
-| Determination | Criteria | Domain 39 | Domain 56 | Phase 2 Tier 2 | Timeline |
-|---------------|----------|-----------|-----------|---|---|
+Check order: FAILURE first, then STRONG, MODERATE, WEAK, ASSESS.
+
+| Determination | Criteria (all conditions listed must be true) | Domain 39 | Domain 56 | Phase 2 Tier 2 | Timeline |
+|---------------|----------------------------------------------|-----------|-----------|----------------|----------|
+| **FAILURE** | A<10% AND C=0 AND D=0 AND Week 3+4 Bitly=0 | Send immediately (healthcare non-negotiable) | User decision | User decision | User decides within 48h |
 | **STRONG** | A≥50% AND B≥4 AND C≥3 AND D≥2 | Launch Day 1 | Launch Day 1–2 | Begin immediately | Full scale |
-| **MODERATE** | A 30-49% OR B≥3 OR C≥1 OR D≥1 | Launch Day 1 | Hold to Day 37 | Plan but wait | Partial scale |
-| **WEAK** | A<20% AND B<2 AND C=0 AND D=0 | Launch Day 1 | Hold to Day 60 | Not yet — apply recovery | Extended |
-| **ASSESS** | Between weak and moderate | Launch Day 1 | Hold to Day 60 | Prepare both paths | Contingent |
-| **FAILURE** | A<10% AND C=0 AND D=0 | User decision | User decision | User decision | User decides |
+| **MODERATE** | A 20–49% OR B≥3 OR C≥1 OR D≥1 (but not STRONG) | Launch Day 1 | Hold to Day 37 | Plan but wait | Partial scale |
+| **WEAK** | A<20% AND B<2 AND C=0 AND D=0 (but not FAILURE) | Launch Day 1 | Hold to Day 60 | Not yet — apply recovery Mods 1–3 | Extended to Day 90 |
+| **ASSESS** | Partial signals: some of A/B/C/D above zero but below MODERATE threshold | Launch Day 1 | Hold to Day 60 | Prepare both paths | Wait for Day 60 |
 
 ### Day 30 Status Update to CHECKIN.md
 

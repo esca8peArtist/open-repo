@@ -125,20 +125,21 @@ Formula for Column L: `=IF(MAX(C2:H2)>=5,"SPIKE","")`
 
 This sheet is separate from the Contacts sheet — it is a per-reply log (one row per reply received, not per contact). Some contacts may reply multiple times.
 
-| Col | Header |
-|-----|--------|
-| A | Reply_ID |
-| B | Contact_ID |
-| C | Organization |
-| D | Reply_Date |
-| E | Reply_Category |
-| F | Engagement_Score |
-| G | Key_Content |
-| H | Action_Required |
-| I | Escalation_Flag |
-| J | Disposition |
+| Col | Header | Notes |
+|-----|--------|-------|
+| A | Reply_ID | R001, R002, … — assign sequentially as replies arrive |
+| B | Contact_ID | Cross-reference to Contacts tab Column A (C001–C999) |
+| C | Organization | Pull from Contacts for consistency |
+| D | Reply_Date | YYYY-MM-DD — date reply received in inbox |
+| E | Reply_Category | Implementation Signal / Critique-Objection / Data Request / General Question / Partnership / Opt-Out |
+| F | Engagement_Score | Integer 0–5 — assign per reply-triage-framework.md scoring tree |
+| G | Key_Content | 1–3 sentences, direct quote or close paraphrase of most important content |
+| H | Action_Required | Yes / No — YES if a response from you is required |
+| I | Escalation_Flag | ESCALATE / blank — set to ESCALATE for Score 4–5 or pattern triggers (see Part 3) |
+| J | Disposition | Responded / Pending / No-Action-Needed / Referred-to-User — update when resolved |
+| K | Notes | Free text — follow-up commitments, FAQ topics extracted from this reply, referral mentions, any context not captured in Key_Content |
 
-For Reply Category definitions and the triage decision tree, see Part 3 of this SOP.
+For Reply Category definitions and the triage decision tree, see Part 3 of this SOP. For the full column specification including aggregate formulas, see `PHASE_1_MONITORING_DASHBOARD_SHEETS_SPEC.md` Tab 3.
 
 ### 1.5 Build the Adoptions Sheet
 
@@ -166,24 +167,26 @@ Verification status values: Confirmed / Probable / Unconfirmed.
 
 ### 1.6 Build the Constituencies Sheet
 
-Seven data rows, one per constituency. One header row.
+Seven data rows, one per constituency. One header row. Pre-populate Column A with the seven constituency names before any contacts are added.
 
-| Col | Header |
-|-----|--------|
-| A | Constituency |
-| B | Total_Contacts |
-| C | Confirmed_Delivered |
-| D | Any_Reply_Count |
-| E | Score3Plus_Count |
-| F | Score3Plus_Rate |
-| G | Day7_Status |
-| H | Day30_Strong |
-| I | Day30_Moderate |
-| J | Adoption_Signals |
-| K | Status_Note |
+| Col | Header | Data Type | Notes |
+|-----|--------|-----------|-------|
+| A | Constituency_Name | Text | Law School / Imm Legal Aid / Civil Rights / Academic / Faith / Labor / Mutual Aid — must match Contacts!E exactly for COUNTIFS to work |
+| B | Contact_IDs | Text | Comma-separated list of Contact_IDs in this constituency — e.g., "C001, C004, C006" — manual reference for auditability |
+| C | Score_Max | Integer | Highest Engagement_Score achieved by any contact in this constituency to date — `=MAXIFS(Contacts!N:N,Contacts!E:E,A2)` |
+| D | Total_Contacts | Formula | `=COUNTIF(Contacts!E:E,A2)` |
+| E | Confirmed_Delivered | Formula | `=COUNTIFS(Contacts!E:E,A2,Contacts!I:I,"Delivered")` |
+| F | Any_Reply_Count | Formula | `=COUNTIFS(Contacts!E:E,A2,Contacts!L:L,"<>")` |
+| G | Score3Plus_Count | Formula | `=COUNTIFS(Contacts!E:E,A2,Contacts!N:N,">=3")` |
+| H | Score3Plus_Rate | Formula | `=IFERROR(G2/E2,"")` |
+| I | Day7_Status | Text | PASS / MONITOR / FAIL — fill manually at Day 7 checkpoint |
+| J | Day30_Strong | Text | YES / NO — fill manually at Day 30: YES if constituency has 3+ Score 3+ replies OR 1 Score 5 reply |
+| K | Day30_Moderate | Text | YES / NO — fill manually at Day 30: YES if constituency has 1–2 Score 3+ replies |
+| L | Adoption_Signals | Formula | `=COUNTIFS(Adoptions!D:D,A2,Adoptions!H:H,"Confirmed")` |
+| M | Notes | Text | Free text — checkpoint observations, which contacts responded, trend assessment |
 
-Column G values: PASS / MONITOR / FAIL
-Column H and I values: YES / NO
+Column I values: PASS / MONITOR / FAIL
+Column J and K values: YES / NO
 
 **Constituency-level formula example (Law School row)**:
 ```
@@ -205,22 +208,25 @@ MODERATE trigger: =IF(COUNTIF(I2:I8,"YES")>=3,"MODERATE — ACTIVATE DOMAIN 39 N
 
 ### 1.7 Build the Checkpoints Sheet
 
-Append-only. Never edit past rows.
+Append-only. Never edit past rows. One row per checkpoint run.
 
-| Col | Header |
-|-----|--------|
-| A | Checkpoint_Date |
-| B | Checkpoint_Type |
-| C | Overall_Reply_Rate |
-| D | Score3Plus_Rate |
-| E | Constituencies_Strong |
-| F | Cross_Org_References |
-| G | Adoption_Signals |
-| H | Determination |
-| I | Action_Taken |
-| J | Notes |
+| Col | Header | Data Type | Allowed Values / Notes |
+|-----|--------|-----------|----------------------|
+| A | Date | Date | YYYY-MM-DD — actual date the checkpoint was run |
+| B | Checkpoint_Type | Text | Day 7 / Day 14 / Day 30 / Day 60 / Pre-Day-30 Score 5 Override / Pre-Day-30 Score 4 Cluster |
+| C | Metric_A | Decimal | Score 3+ reply rate at this checkpoint (e.g., 0.31 = 31%) |
+| D | Metric_B | Integer | Constituencies meeting strong threshold (count of Day30_Strong = YES, or Day7 PASS equivalent) |
+| E | Metric_C | Integer | Cross-organizational references (confirmed + probable count from Network Map / Adoptions tabs) |
+| F | Metric_D | Integer | Confirmed adoption signals (count of Adoptions!H = "Confirmed") |
+| G | Determination | Text | Day 7: HOLD / MONITOR / ESCALATE / CONTACT_VERIFY. Day 14: HOLD / CONTINUE_MONITOR / FAILURE_IMMINENT. Day 30: STRONG / MODERATE / WEAK / ASSESS / FAILURE. Day 60: MOVEMENT / PARTIAL / BELOW_TARGET |
+| H | Action_Taken | Text | Free text — 1–3 sentences describing what action was executed after this determination |
+| I | Notes | Text | Free text — delivery anomalies, external context, unexpected contacts, any observations not captured in metric columns |
 
-Determination values: HOLD / MONITOR / ESCALATE (Day 7) or STRONG / MODERATE / WEAK / FAILURE (Day 30/60).
+Determination values at Day 7: HOLD / MONITOR / ESCALATE / CONTACT_VERIFY
+Determination values at Day 14: HOLD / CONTINUE_MONITOR / FAILURE_IMMINENT
+Determination values at Day 30/60: STRONG / MODERATE / WEAK / ASSESS / FAILURE
+
+For pre-checkpoint data pull procedure and the metric definitions, see `day-7-14-30-decision-trees.md`.
 
 ---
 
