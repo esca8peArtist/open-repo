@@ -1,5 +1,25 @@
 # Work Log
 
+## Session 1666-research (May 26, ongoing UTC) — RESEARCH AGENT: Jetson Hardware Failure Contingency Documentation
+
+**Status**: COMPLETE
+
+**Deliverables**:
+- Updated `projects/stockbot/JETSON_HARDWARE_FAILURE_CONTINGENCY.md` — corrected hardware identification (production host is NVIDIA Jetson Orin Nano/NX, not Pi 5); updated failure probability analysis for eMMC vs MicroSD; 2026 hardware pricing (Pi 5 8GB $175 post-LPDDR4 crisis, Jetson Orin Nano Super $249 in stock); extended recovery scenarios for 3-day/7-day/14-day timelines; confirmed Pi 5 dev machine feasibility for equity-only CPU-based failover without model downgrade.
+- Updated `projects/stockbot/FAILOVER_ARCHITECTURE_OPTIONS.md` — added detailed 3-day/7-day/14-day decision trees; corrected hardware cost tables with 2026 pricing (Pi 5 8GB now $175, narrowing gap with Jetson replacement); added Option D (Raspberry Pi 5 replacement); capital-at-risk decision overlay with runnable Alpaca query; procurement reference table with retailers, SKUs, and lead times.
+
+**Key research findings**:
+1. **Hardware identity confirmed**: Live SSH measurements May 20 (JETSON_PRE_CHECKPOINT_VALIDATION_REPORT_MAY22.md) show 48.2°C idle, GR3D GPU field present — this is a genuine NVIDIA Jetson Orin Nano/NX, not a Pi 5. The Pi 5 is the dev machine (80-84°C idle). Prior contingency document had this reversed.
+2. **Pi 5 feasibility**: Current LightGBM + Ridge models are CPU-only (GR3D was 0% even on Jetson). Pi 5 can run 2-session AAPL trading without model simplification. Thermal constraint (80-84°C idle → cooler mandatory beyond 3 days, $8-12 Amazon Prime).
+3. **2026 hardware pricing**: Pi 5 8GB LPDDR4 memory crisis raised price from $80 to $175 (three rounds of increases since Feb 2026). Jetson Orin Nano Super remains $249 with confirmed availability. Price gap narrowed from $169 to $74 — Jetson now strongly preferred for replacement.
+4. **Replacement timeline**: Jetson Orin Nano Super available at Amazon (2-day Prime), Micro Center same-day. May 28 market open achievable with Prime ordering today.
+5. **Data recovery**: eMMC on Jetson (vs MicroSD) is soldered — data may be unrecoverable if SOM fails. Alpaca API is authoritative fallback for all fill history and position state.
+6. **Capital status**: $115K paper trading; Alpaca holds positions independently of Jetson. Alpaca API queryable from dev machine. No forced liquidation risk. Manual position close available via API or Alpaca UI.
+
+**Sources consulted**: Amazon product page (Jetson Orin Nano Super B0BZJTQ5YP), Micro Center product listing, Raspberry Pi official pricing blog (multiple 2026 price increase announcements), The Register LPDDR4 coverage, Alpaca Python SDK documentation, JETSON_PRE_CHECKPOINT_VALIDATION_REPORT_MAY22.md (live SSH data).
+
+---
+
 ## Session 1665 (May 26, 16:11–17:30+ UTC) — ORCHESTRATOR: Jetson Verification + Resistance-Research Domain 59 Completion
 
 **Status**: ✅ **RESISTANCE-RESEARCH DOMAIN 59 COMPLETE** | 🔴 **JETSON UNREACHABLE CONFIRMED** | ⏳ **SEEDWARDEN GATES 1-2 VERIFICATION SCHEDULED 23:00 UTC**
