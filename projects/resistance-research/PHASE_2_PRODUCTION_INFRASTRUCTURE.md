@@ -482,7 +482,7 @@ Purpose: Four reform proposals that address the suppression mechanism directly, 
    - Contact: info@demos.org; @demos_org
 
 10. **Georgetown Center for Children and Families (CCF)** — OBBBA Medicaid analysis; implementation timeline
-    - Contact: ccf@georgetown.edu; @GTown_CCF
+    - Contact: childhealth@georgetown.edu (NOT ccf@georgetown.edu); @GTown_CCF
 
 11. **National Domestic Workers Alliance (NDWA)** — gig and domestic workers; temporal civic exclusion; worker organizing
     - Contact: info@domesticworkers.org; @domesticworkers
@@ -878,7 +878,7 @@ The following contacts are confirmed real institutions with live contact informa
 - Center on Budget and Policy Priorities — communications@cbpp.org | 202-408-1080 | @CBPPtweets
 - Economic Policy Institute — epi@epi.org | 202-775-8810 | @EconomicPolicy
 - Demos — info@demos.org | @demos_org
-- Georgetown Center for Children and Families — ccf@georgetown.edu | @GTown_CCF
+- Georgetown Center for Children and Families — childhealth@georgetown.edu (NOT ccf@georgetown.edu) | @GTown_CCF
 - National Domestic Workers Alliance — info@domesticworkers.org | @domesticworkers
 - National Low Income Housing Coalition — info@nlihc.org | 202-662-1530 | @NLIHC
 

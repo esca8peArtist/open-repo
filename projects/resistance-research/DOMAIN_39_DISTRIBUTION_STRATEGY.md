@@ -90,7 +90,7 @@ These organizations have the policy analysis infrastructure and HHS relationship
 
 #### 1. Georgetown Center for Children and Families (Georgetown CCF)
 
-**Contact**: https://ccf.georgetown.edu/contact/ | ccf@georgetown.edu (general)
+**Contact**: https://ccf.georgetown.edu/about-us/contact-us/ | childhealth@georgetown.edu (CORRECTED — ccf@georgetown.edu is wrong; /contact/ returns 404)
 **Why**: Georgetown CCF's April 2025 analysis of work requirement disability exemptions is cited directly in Domain 39 (Pathway 5). Their documentation of the SSI-based exemption inadequacy and the "documentation catch-22" is the core of the disability pathway argument. They have the credibility and distribution infrastructure for Medicaid policy.
 **Adoption probability**: High
 **Ask**: Cite the democratic participation framing in their state Medicaid analysis publications; consider distributing through their email list to state Medicaid directors; flag the NVRA nexus argument (Pathway 2) as a new dimension for their enrollment infrastructure work.

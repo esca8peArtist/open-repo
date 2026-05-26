@@ -83,7 +83,7 @@ Verify that the 5 highest-priority contact emails and form URLs are still curren
 
 | # | Organization | Contact Method | URL to Verify |
 |---|---|---|---|
-| 1 | Georgetown Center for Children and Families | ccf@georgetown.edu OR contact form | https://ccf.georgetown.edu/contact/ |
+| 1 | Georgetown Center for Children and Families | childhealth@georgetown.edu (NOT ccf@georgetown.edu) | https://ccf.georgetown.edu/about-us/contact-us/ |
 | 2 | National Health Law Program | info@healthlaw.org OR contact form | https://healthlaw.org/contact/ |
 | 3 | Brennan Center for Justice | Contact form | https://www.brennancenter.org/contact |
 | 4 | Institute for Responsive Government | Contact form | https://responsivegov.org/contact/ |
@@ -117,7 +117,7 @@ These are the four highest-priority sends for June 1. Each is a complete, copy-p
 
 ### Email 1: Georgetown Center for Children and Families
 
-**To**: ccf@georgetown.edu (or use their contact form if email bounces)
+**To**: childhealth@georgetown.edu (CORRECTED — ccf@georgetown.edu is wrong; /contact/ returns 404; use /about-us/contact-us/)
 **Timing**: May 30 (two days before the June 1 rule, giving them time to use the analysis)
 
 **Subject**:
@@ -331,7 +331,7 @@ Run these checks the day before the June 1 send wave:
 
 | # | Organization | Contact | Sent Date | Sent Time | Gist URL Used | Bounce/Error | Notes |
 |---|---|---|---|---|---|---|---|
-| 1 | Georgetown CCF | ccf@georgetown.edu | | | | | |
+| 1 | Georgetown CCF | childhealth@georgetown.edu | | | | | |
 | 2 | NHeLP | info@healthlaw.org | | | | | |
 | 3 | Brennan Center | contact form | | | | | |
 | 4 | IRG | contact form | | | | | |
