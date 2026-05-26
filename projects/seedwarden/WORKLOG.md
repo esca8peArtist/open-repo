@@ -57,6 +57,63 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Zone Quick-Start Cards — 8-Zone PDF Build Complete — May 26, 2026
+
+**Task**: Build all 8 Zone Quick-Start Card PDFs (Zones 3–10) per ZONE_QUICKSTART_CARD_SPEC.md. Track B May 30 deadline.
+
+**Result**: ALL 8 CARDS GENERATED — production-ready PDFs, all valid, all under 1.5MB spec limit.
+
+**Generator script**: `projects/seedwarden/scripts/generate_zone_cards.py`
+
+**Output directory**: `projects/seedwarden/assets/zone-cards/`
+
+| Zone | File | Size | Zone Band Color | Region |
+|------|------|------|----------------|--------|
+| Zone 3 | `seedwarden-zone-3-quickstart-card.pdf` | 633 KB | Cool Slate Blue #3D6B8A | Northern Plains, Mountain Interior, Upper Great Lakes |
+| Zone 4 | `seedwarden-zone-4-quickstart-card.pdf` | 633 KB | Cool Slate Blue #3D6B8A | Upper Midwest, Northern New England, Mountain Valleys |
+| Zone 5 | `seedwarden-zone-5-quickstart-card.pdf` | 633 KB | Forest Green #2D5016 | Central Corridor, Southern New England, Mid-Elevation West |
+| Zone 6 | `seedwarden-zone-6-quickstart-card.pdf` | 632 KB | Forest Green #2D5016 | Mid-Atlantic, Ohio Valley, Central Transition Zone |
+| Zone 7 | `seedwarden-zone-7-quickstart-card.pdf` | 633 KB | Warm Amber #C9943A | Piedmont South, Oklahoma, North Texas, Maritime Northwest |
+| Zone 8 | `seedwarden-zone-8-quickstart-card.pdf` | 632 KB | Warm Amber #C9943A | Deep South, Coastal Pacific Northwest, Central Texas |
+| Zone 9 | `seedwarden-zone-9-quickstart-card.pdf` | 633 KB | Terracotta #A0522D | Gulf Coast, Southern Texas, Central Florida, SoCal Inland |
+| Zone 10 | `seedwarden-zone-10-quickstart-card.pdf` | 632 KB | Terracotta #A0522D | South Florida, Coastal Southern California, Hawaii |
+
+**Brand palette applied** (from ZONE_QUICKSTART_CARD_SPEC.md Part 4, Concept 1 "The Keeper"):
+- Primary: Forest Green #2D5016 — headers, borders, wordmark
+- Background: Warm Cream #F5EDD6 — page background all cards
+- Accent: Burnt Sienna #A0522D — zone number, crop labels, numbered tasks
+- Body text: Dark Charcoal #2C2C2C
+- Spotlight band: Parchment #EDE0C4
+- Footer text: Warm Grey #7A7060
+
+**Typography**: Montserrat Bold (zone number/headers) + Montserrat Regular (body/footer).
+Note: Playfair Display unavailable offline (no network access). Montserrat Bold at 36pt
+fulfills the same visual hierarchy role. The spec allows any sturdy bold font at that size.
+
+**Layout**: US Letter landscape (11×8.5 in), three-column body, full-width Variety Spotlight
+band, branded header with logo, zone color band, footer with Etsy and landing page links.
+
+**Content**: All 8 zones match ZONE_QUICKSTART_CARD_SPEC.md Part 5 exactly — frost dates,
+This Month tasks, Quick-Start Crops, Storage tips, Variety Spotlight.
+
+**Canva Brand Kit gate**: Canva was not used for this build (offline Python generation via
+fpdf2). The production PDFs are ready for May 30 launch without Canva. If the user wishes
+to also build Canva versions (for editable templates), the Brand Kit palette is documented
+in the spec and ZONE_CARD_PRODUCTION_TIMELINE.md Week 0. Canva is not required for launch.
+
+**Next steps for May 30 launch**:
+1. Upload 8 PDFs to Kit (ConvertKit) — Content > Files — and copy the 8 download URLs
+2. Create zone-selection sign-up form in Kit with zone dropdown (Zones 3–10)
+3. Build 8 welcome email automations (one per zone), each with its zone-specific download link
+4. Set up Kit landing page at seedwarden.com/zone with the form embedded
+5. Replace placeholder footer URLs in cards with live Etsy and landing page URLs, re-export
+
+**Canva note**: The footer links currently read `seedwarden.co/zone-calendar` and
+`seedwarden.co/zone` as spec-compliant placeholders. Before May 30 launch, update with
+live URLs by editing the `ZONES` dict `footer` section in the generator script and re-running.
+
+---
+
 ## Phase 3 Asset Verification — May 26, 2026
 
 **Task**: Verify all Phase 3 assets from prior session are still in place ahead of June 22 launch.
