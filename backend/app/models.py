@@ -398,3 +398,67 @@ class NodePublicKey(Base):
 
     def __repr__(self):
         return f"<NodePublicKey id={self.id} key_id={self.key_id} node={self.node_url}>"
+
+
+# ============================================================================
+# Phase 5: ZIM Export Models
+# ============================================================================
+
+
+class ZimExport(Base):
+    """ZIM export model - tracks offline content exports for Phase 5."""
+
+    __tablename__ = "zim_exports"
+
+    # Primary key
+    id = Column(BigInteger, primary_key=True, autoincrement=True, index=True)
+
+    # Export metadata
+    zim_uuid = Column(String(36), nullable=False, unique=True, index=True)
+    name = Column(String(255), nullable=False, index=True)
+    flavour = Column(String(50), nullable=False, index=True)
+    language = Column(String(10), nullable=False)
+    period = Column(String(10), nullable=False, index=True)
+
+    # Content information
+    article_count = Column(Integer, nullable=False)
+    file_size_bytes = Column(BigInteger, nullable=False)
+    sha256 = Column(String(64), nullable=False)
+
+    # Display metadata
+    title = Column(String(255), nullable=False)
+    description = Column(String(80), nullable=False)
+
+    # Storage information
+    cdn_url = Column(String(512), nullable=True)
+    local_path = Column(String(512), nullable=True)
+
+    # Status tracking
+    status = Column(String(20), nullable=False, default="generating", index=True)
+    is_current = Column(Integer, nullable=False, default=0, index=True)
+    is_reference = Column(Integer, nullable=False, default=0)
+
+    # Export scope
+    export_scope = Column(String(20), nullable=False)
+    scope_value = Column(String(100), nullable=True)
+
+    # Export options
+    include_images = Column(Integer, nullable=False, default=0)
+
+    # QA information
+    zimcheck_passed = Column(Integer, nullable=True)
+    zimcheck_output = Column(Text, nullable=True)
+
+    # Timing information
+    generation_duration_seconds = Column(Integer, nullable=True)
+    started_at = Column(DateTime, nullable=False, default=datetime.utcnow)
+    completed_at = Column(DateTime, nullable=True)
+    superseded_at = Column(DateTime, nullable=True)
+    deleted_at = Column(DateTime, nullable=True)
+
+    # Lifecycle timestamps
+    created_at = Column(DateTime, nullable=False, default=datetime.utcnow, index=True)
+    updated_at = Column(DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def __repr__(self):
+        return f"<ZimExport id={self.id} zim_uuid={self.zim_uuid} status={self.status}>"
