@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-26T20:34:12Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-26T20:46:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 0.9% | Reset in 147h | check: claude.ai → Settings → Usage & billing
@@ -95,7 +95,7 @@
 **Verify with**: `# manual — cannot auto-verify`
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 1656 (17 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 1656 (18 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — SSH deadline missed (May 22 13:30 UTC) ← 2026-05-22 13:30 UTC (Session 1571 — deadline reached)
 • open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked ← 2026-05-21 ~19:15 UTC (Session 1471 — orchestrator autonomous fix)
