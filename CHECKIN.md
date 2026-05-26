@@ -1,3 +1,52 @@
+## Since Last Check-in (Session 1688, May 26 22:45–23:30 UTC) — ✅ PRE-LAUNCH PREP COMPLETE (May 28/30)
+
+**Status**: ✅ **RESISTANCE-RESEARCH READY FOR MAY 28 DISTRIBUTION** | ✅ **SEEDWARDEN READY FOR MAY 30 LAUNCH** | ⏳ **3 USER ACTIONS FOR STOCKBOT PHASE 2** | ⏳ **SIGNAL LOG FILL DUE MAY 28 18:00 UTC**
+
+**Session Accomplishments**:
+
+1. ✅ **resistance-research: Phase 1 Monitoring Dashboard Complete (May 28 Ready)**
+   - All 5 deliverables written and committed to master
+   - Complete Google Sheets template specification with 7 tabs and column schemas
+   - Gist view tracking protocol (manual or GitHub API)
+   - Weekly synthesis template (13 sections, ~18 min/week)
+   - Fixed 3 schema gaps + 3 decision tree ambiguities
+   - **Verdict**: Production-ready for May 27 pre-testing and May 28 Domain 56 distribution
+
+2. ✅ **seedwarden: Track B Launch Readiness Verified (May 30 Ready)**
+   - All 5 deliverables written and committed to master
+   - Zone PDFs all verified production-ready (8/8, zero blocking defects)
+   - Herbalist outreach template + 15 pre-selected community leaders
+   - Social media calendar (May 28–30 teasers, June 1–7 ramp-up, all copy-paste ready)
+   - Launch monitoring checkpoints (Day 3/7/14)
+   - **Verdict**: Zero setup friction for May 30 08:00 UTC launch
+
+**Critical Blockers** (Unchanged):
+- **stockbot Phase 2**: 3 deployment blockers awaiting user actions (stacker_ids extraction, model type decision, DB backup)
+- **resistance-research**: Signal log fill due May 28 18:00 UTC (17 [fill] fields) — does NOT block May 28 distributions; TOO_EARLY contingency path active
+- **cybersecurity-hardening**: VeraCrypt restart (Windows user action)
+- **mfg-farm**: Test print execution (user action)
+
+**Needs Your Input** (Priority order):
+
+1. **URGENT (Stockbot Phase 2 Activation)**:
+   - Extract stacker_ids from AMZN/JPM pkl files on Jetson (specific command in BLOCKED.md)
+   - Resolve JPM model type: ridge_wf (retrain) vs lgbm_ho (config update)
+   - Create DB backup: `ssh awank@100.120.18.84 "cp /opt/stockbot/database/trading.db /opt/stockbot/database/trading.db.pre-amzn-jpm.backup"`
+
+2. **May 28 18:00 UTC (30+ hours)**: Fill signal log (17 [fill] fields)
+   - Location: `projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md`
+   - Does NOT block May 28 Domain 56 distribution (proceeds on TOO_EARLY path)
+
+3. **May 30 (3+ days)**: Seedwarden Track B activation (social posts + email outreach using staged templates)
+
+4. **May 31 23:59 UTC (5+ days)**: systems-resilience Phase 5 publication decision (Option A/B/C)
+
+**Autonomous Work**: None remaining. All pre-launch prep complete. Orchestrator is ready to execute final deployment steps upon user blocker resolution.
+
+**Session Duration**: 45 minutes (orchestration + 2 parallel agents)
+
+---
+
 ## Since Last Check-in (Session 1687, May 26 22:15–22:45 UTC) — 🚀 JETSON BACK ONLINE + PHASE 2 DEPLOYMENT BLOCKERS
 
 **Status**: 🚀 **JETSON BACK ONLINE (May 22-26)** | ✅ **STOCKBOT DEPLOYMENT READY** | ⏳ **3 USER ACTIONS REQUIRED FOR PHASE 2** | ✅ **RESISTANCE-RESEARCH READY FOR MAY 28**
