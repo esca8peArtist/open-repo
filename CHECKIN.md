@@ -16910,3 +16910,62 @@ Fri 23 May 06:45:23 UTC 2026
 
 **Usage**: Sonnet 0.0% | All-models 0.2% (227K tokens from parallel agents) | Reset in 161h
 
+---
+
+## Since Last Check-in (Session 1649, May 26 10:22–12:58 UTC)
+
+**What was accomplished**:
+
+✅ **May 28 Synthesis Execution — 100% Ready**
+   - synthesis-outcome-router.py verified production-ready (all 5 contingency paths tested and correct)
+   - **CRITICAL**: Stale synthesis-execution-output.md from May 19 must be cleared before May 28 execution. Execution sequence: monitor → router (not router on stale data)
+   - Georgetown CCF email corrected everywhere (`ccf@georgetown.edu` → `childhealth@georgetown.edu`); 9 instances fixed in 4 files
+   - Domain 56 Tier 2 distribution: all 4 templates verified production-ready, contact emails verified, Gist URL live
+   - Created MAY_28_SYNTHESIS_EXECUTION_CHECKLIST.md (step-by-step unified runbook covering synthesis + Domain 56 + outcome routing with rollback procedures)
+   - Created MAY_28_OUTCOME_DECISION_QUICK_REFERENCE.md (one-page guide for all 5 outcomes)
+
+✅ **Phase 6 Research — Kickoff Ready for June 1 Decision**
+   - Phase 6 architecture review: All Phase 1-5 dependencies complete, Phase 6 unblocked. Critical path Domain 60 → 65. Parallelization saves 2-3 weeks (Domains 60+62 simultaneous Week 1).
+   - Domain 60 source library: 56 authoritative sources (75% free, 21% web-only, 4% paywall). Categories: UN agencies, regional organizations, government coordination, information sharing, OECD, academic literature.
+   - Phase 6 author onboarding brief prepared (scope, Domain 60 starter, timeline, success metrics, communication protocols)
+   - Created JUNE_PHASE_6_RESOURCE_ALLOCATION.md (June 1-10 contention analysis, 3 scenario models, no resource collision with other projects)
+   - Created JUNE_1_PHASE_6_APPROVAL_CHECKLIST.md (user decision package, 4 critical questions, all GO criteria met, risk register with mitigations)
+
+**What's in progress**:
+- ⏳ **Jetson unreachable** (76+ hours) — awaiting SSH verification
+- ⏳ **Signal log** (17 [fill] remaining) — deadline May 28 19:00 UTC
+- ⏳ **Seedwarden gates 1-3** — user execution window May 23-28 (executing now per track B runbook)
+
+**What's blocked**:
+- 🔴 Jetson (awaiting SSH)
+- 🔴 Synthesis (needs stale output file cleared before May 28 execution)
+- 🔴 Signal log (needs user data entry by May 28 evening)
+
+**Needs your input**:
+
+**CRITICAL — May 28 Synthesis Execution (32 hours away)**:
+- Read `MAY_28_SYNTHESIS_EXECUTION_CHECKLIST.md` (it's the unified runbook)
+- **MUST**: Clear stale `synthesis-execution-output.md` from May 19 before running synthesis on May 28 at 19:00 UTC
+- Sequence: (1) Synthesis monitor runs first, (2) Router runs on new output, (3) Outcome routes to one of 5 contingency paths
+- Have `MAY_28_OUTCOME_DECISION_QUICK_REFERENCE.md` open alongside synthesis execution to identify outcome instantly
+
+**May 27-30 User Action Timeline**:
+- **May 27**: Strictly Medicinal Seeds email (5 min; seed supplier confirmation)
+- **May 27-29**: Domain 39 Gist creation (use corrected Georgetown CCF email: `childhealth@georgetown.edu`)
+- **May 28 19:00 UTC**: Synthesis execution (30 min automation, outcome routing, Domain 56 distribution emails 2 hrs)
+- **May 28-30**: Domain 39 pre-production (source verification, Gist upload by May 29)
+- **May 30 (30 min meeting)**: Seedwarden gates verification + Phase 3 scope decision (Option A/B/C)
+
+**June 1 Decision**:
+- Read `JUNE_1_PHASE_6_APPROVAL_CHECKLIST.md` (20 min)
+- Answer 4 questions: Domain scope approval, timeline scenario, author parallel execution model, Phase 6 kick-off date
+- All 7 GO criteria met; ready for immediate execution upon approval
+
+**For next session** (if Jetson remains unreachable):
+- Phase 6 research author recruitment (if user approves June activation)
+- Domain 61-65 source library development (parallel to Domain 60 production)
+- open-repo Phase 5.1 merge deployment if Phase 5 candidates approved
+- Stockbot code improvements pending Jetson reconnect
+
+**Usage**: Sonnet 0.0% | All-models 0.3% (estimated ~95K from 2 parallel agents this session) | Reset in 161h
+
