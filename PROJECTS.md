@@ -440,7 +440,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: ✅ **Checkpoint EXECUTED at 20:00 UTC May 22** | ⏳ **Outcome UNCERTAIN — Jetson unreachable (72+ hrs)** | ✅ **AMZN/JPM Multi-Ticker Deployment Pre-Staged (May 26, Session 1648)** | Deliverables: `JETSON_MULTI_TICKER_DEPLOYMENT_CHECKLIST.md`, `scripts/validate_multiticker_config.py`, `scripts/jetson_deployment_automation.sh` — all validation passes locally (VaR: $188.21, 0.16% equity); ready for immediate Jetson deployment upon SSH reconnect OR user outcome verification. Phase 2 activation depends on checkpoint outcome — **Awaiting user SSH to Jetson for outcome retrieval**. See BLOCKED.md for SSH verification command.
+**Current focus**: ⏳ **Jetson unreachable since May 22 14:00 UTC (72+ hours)** — May 22 checkpoint EXECUTED autonomously but outcome cannot be retrieved (API endpoint unreachable). AMZN/JPM multi-ticker code pre-staged and validated locally (VaR: $188.21, 0.16% equity). Phase 2 activation blocked on Jetson SSH reconnect for outcome classification. See BLOCKED.md for verification command and required user action.
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`

@@ -1,3 +1,48 @@
+## Since Last Check-in (Session 1664, May 26 15:54–17:00+ UTC) — SYSTEMS-RESILIENCE PUBLICATION DECISION FRAMEWORK + PHASE 6 SCOPE READINESS
+
+**Status**: ✅ **PUBLICATION DECISION FRAMEWORK READY** | ✅ **PHASE 6 SCOPE ASSESSED** | 🎯 **MAY 28-31 USER DECISION GATE PREPARED** | 🔴 **ALL PRIORITY PROJECTS REMAIN BLOCKED**
+
+**What was accomplished**:
+
+### ✅ **Systems-Resilience: Publication Decision Framework (May 28-31 Deadline)**
+- **Agent**: general-research
+- **Deliverable**: `PHASE_5_PUBLICATION_DECISION_FRAMEWORK.md` (~2,100 words, 3-option decision matrix)
+- **3 Options Analyzed**:
+  - **Option A (RECOMMENDED)**: Stage Wave 1+2 (43.6K words) June 1-5, defer Wave 3 (22.8K words) to June 30
+    - **Score**: 30/40 (highest across 8 attributes)
+    - **Rationale**: Wave 1+2 is independently coherent arc covering what community organizers need first; Wave 3 is operational supplement for communities already executing
+    - **Timeline**: 2 publication dates (June 1 + June 30), 3-4 week feedback window before Wave 3
+    - **Attributes**: Speed (4/5), community readiness (4/5), feedback velocity (4/5), digestibility (4/5), resource cost (4/5)
+  - **Option B**: Hold all Phase 5 (66.4K words) for unified June 15 publication
+    - **Score**: 24/40
+    - **Trade-off**: Delayed impact, larger single release, higher validation burden
+  - **Option C**: Rolling modular 6-8 week distribution (May 30+)
+    - **Score**: 27/40
+    - **Trade-off**: Coordination overhead, longer execution tail, sustained interest vs. decision fatigue
+
+- **Decision Checklist Provided**: User can review framework and select Option A/B/C by May 28-31 deadline with zero ambiguity
+
+### ✅ **Systems-Resilience: Phase 6 Scope and Readiness Assessment**
+- **Deliverable**: `PHASE_6_SCOPE_AND_READINESS.md` (~2,400 words, 10-domain gap analysis)
+- **Phase 6 Gap Identified**: Largest blind spot in 66.4K-word corpus is economic coordination — Phase 5 documents how to produce goods/services but says nothing about how communities coordinate exchange when markets fail
+- **Top-3 Week 1 Domain Recommendations**:
+  1. **Domain A — Community Economic Resilience** (20 hours): Time banking, barter systems, commons governance, credit in closed systems, LETS models
+  2. **Domain C — Skills Development & Knowledge Transmission** (20 hours): Apprenticeship models, knowledge commons, pedagogical architecture, documentation standards
+  3. **Domain D — Governance Evolution and Scaling** (20 hours): Constitutional design, conflict resolution, 50/100/200-person scaling thresholds, leadership succession
+- **Scope**: 60 hours parallel execution, June 1 kick-off upon user approval, zero prerequisites
+- **User Decision Template**: 5 questions that route to domain priorities based on user's focus (household vs community, timeframe, existing group size)
+
+### 📋 **Immediate User Actions Needed** (Priority order)
+1. **TODAY by 23:59 UTC (7 hours remaining)**: Seedwarden Gates 1-2 completion (social accounts + Canva Brand Kit)
+2. **May 28-31**: Systems-resilience publication decision (Option A/B/C) — all supporting documents now ready for review
+3. **May 28 18:00 UTC**: Resistance-research signal log fill (17 [fill] fields) for May 28 19:00 UTC synthesis
+4. **Ongoing**: Stockbot Jetson SSH status (checkpoint outcome retrieval)
+5. **Ongoing**: Mfg-farm test print execution + outcome reporting
+
+### **Token Usage**: Session 1664 ~78K tokens (systems-resilience agents)
+
+---
+
 ## Since Last Check-in (Session 1663, May 26 15:30–16:25 UTC) — PARALLEL EXECUTION: SEEDWARDEN GATE 3 + SYSTEMS-RESILIENCE WAVE 3 COMPLETION
 
 **Status**: ✅ **2 PARALLEL PROJECTS COMPLETE** | 🎯 **SEEDWARDEN MAY 27 CRITICAL PATH READY** | 📊 **SYSTEMS-RESILIENCE 66.4K WORDS PRODUCTION-READY** | ⏳ **USER ACTION GATES REMAIN OPEN**
