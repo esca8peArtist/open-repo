@@ -2,6 +2,41 @@
 
 ---
 
+## May 27, 2026 — General Research Agent — systems-resilience Phase 6 Launch Infrastructure
+
+**Task**: Create Phase 6 launch infrastructure for systems-resilience project: author outreach materials, Domain A research roadmap, author onboarding kit, and Phase 6 project init script. All staged for June 1 06:00 UTC activation; author confirmation deadline May 30 16:00 UTC.
+
+**Key finding**: Substantial Phase 6 groundwork already exists — 6,800-word Domain A pre-research chapter (38 verified citations), three candidate domain outlines, full sequencing recommendation, and existing decision framework documents. The five new files build on this foundation rather than duplicating it. Domain A's USDA grant angle (Rural Cooperative Development Grant, $24.3M program, fall 2026 application cycle) is a real timing constraint that makes the August 9 completion deadline load-bearing, not arbitrary.
+
+**Files created (all committed in 13449ccc)**:
+- `projects/systems-resilience/author-confirmation-email.md` — 300-400 word co-author confirmation email with three fallback options and May 30 16:00 UTC deadline
+- `projects/systems-resilience/author-outreach-tracking.md` — contact log with five-gate contingency trigger schedule
+- `projects/systems-resilience/phase-6-domain-a-research-roadmap.md` — full research plan: existing pre-research summary, five gap analyses, USDA timing urgency, tiered citation strategy (Tier 1/2/3), milestone calendar June 7 through August 9
+- `projects/systems-resilience/phase-6-author-onboarding-kit.md` — Phase 1-5 history, author scope definition, format/style guide, success criteria, support resources
+- `projects/systems-resilience/phase-6-project-init.sh` — idempotent bash script with --dry-run and --rollback modes; verified clean exit 0 in dry-run
+
+---
+
+## May 27, 2026 — General Research Agent — May 28 Synthesis Contingency Playbooks Pre-Staged
+
+**Task**: Create four pre-staged contingency playbooks for the May 28 synthesis execution, covering all five outcome classifications (STRONG, MODERATE, WEAK, TOO_EARLY, DELIVERY_PROBLEM) with pre-written decision flows, user communication templates, and outcome-specific Phase 2 routing.
+
+**Key finding**: Existing synthesis infrastructure (SYNTHESIS_CONTINGENCY_EXECUTION_PLAYBOOKS.md, SYNTHESIS_OUTCOME_DECISION_TREE.md, MAY_28_OUTCOME_DECISION_QUICK_REFERENCE.md) covers full decision logic from the May 21 synthesis cycle. May 28 playbooks are calibrated to the current state: Domain 56 sends are confirmed for May 28 independent of synthesis; Domain 39 May 30 sends are pre-staged; Phase 2 domain sequence (57/59 gate at June 10) is production-ready.
+
+**Files created**:
+- `SYNTHESIS_OUTCOME_STRONG_PLAYBOOK.md` — STRONG path: full parallel Phase 2 launch, Tier 2 acceleration to May 29–30, social proof anchor instructions for June 1 Domain 56 templates, Batch 2 Priority Group 1 deploy
+- `SYNTHESIS_OUTCOME_MODERATE_PLAYBOOK.md` — MODERATE path: D56/39/58 on schedule, signal source identification for social proof, D57/59 June 10 gate, 24-hour user decision window
+- `SYNTHESIS_OUTCOME_WEAK_PLAYBOOK.md` — WEAK path: root cause mode diagnosis (Mode 1-4), user option (a)/(b) decision framework, May 29–31 recovery actions, re-synthesis trigger condition
+- `SYNTHESIS_CONTINGENCY_ROUTING.md` — Meta-router: outcome classification reference, 30-minute routing decision tree, five pre-written email templates (one per outcome, copy-paste ready), summary matrix
+
+**Critical design decisions**:
+- Domain 56 May 28 and Domain 39 May 30 are marked path-independent in all four files — they execute regardless of synthesis outcome
+- WEAK playbook distinguishes WEAK from DELIVERY_PROBLEM at first step to prevent misrouting
+- TOO_EARLY is handled as a same-night reclassification rather than a separate playbook (May 28 is the final gate)
+- All email templates are copy-paste ready with [FILL] fields limited to synthesis output values (QRP, signal org name, send count)
+
+---
+
 ## May 27, 2026 — Resistance Research Agent — Domain 56 Gist Template Staged; Send Sequence Verified (Session 1694)
 
 **Task**: Pre-stage Domain 56 Gist template for May 28 distribution; verify all content is production-ready; update PROJECTS.md and execution guides to reflect confirmed Gist status.
