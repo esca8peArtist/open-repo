@@ -1,5 +1,81 @@
 # Work Log
 
+## Session 1721 (2026-05-27 12:12–12:45 UTC) — ORCHESTRATOR: PRE-DEPLOYMENT VALIDATION FAILURE DETECTED — MAY 28 DEPLOYMENT BLOCKED
+
+**Status**: 🔴 BLOCKED — Pre-deployment validation checklist (PRE_DEPLOYMENT_VALIDATION_CHECKLIST.md) failed critical gate G3. Jetson health endpoint returns `sessions=0` instead of expected `sessions=2`. Deployment cannot proceed to Option A runbook execution until this is resolved.
+
+### Session Summary
+
+**Task**: Run PRE_DEPLOYMENT_VALIDATION_CHECKLIST (gates G1-G4) before May 28 AM deployment window to verify Jetson readiness for OPTION_A_RIDGE_WF_RETRAIN_RUNBOOK execution.
+
+**Work Completed**:
+
+1. **Pre-Flight Market Hours Check** ✅
+   - Current UTC time: 2026-05-27 12:12 UTC (Wednesday)
+   - US equity market status: CLOSED (opens 13:30 UTC)
+   - Result: PASS — safe window for validation
+
+2. **Comprehensive Pre-Deployment Validation Script** ✅
+   - Executed composite validation on Jetson: 6 passed, 1 failed, 0 warnings
+   - PASS: Outside market hours
+   - PASS: Disk free 131GB (>50GB)
+   - PASS: RAM available 4576MB (>2GB)
+   - PASS: DB backup exists (1.1M)
+   - PASS: Docker container running
+   - 🔴 FAIL: Health endpoint returns sessions=0 (expected >=2)
+   - PASS: JPM lgbm_ho pkl present
+
+3. **Root Cause Investigation** ✅
+   - Container Status: Running (started May 26 23:44 UTC, uptime ~12.5h)
+   - Uvicorn Server: Running on port 8000 (verified via `docker top`)
+   - Process: `/usr/local/bin/uvicorn src.api.dashboard_api:app --host 127.0.0.1 --port 8000`
+   - Container Logs: Stuck in stream initialization error loop
+     - Error: `Stream not fully initialized (market may be closed): 'NoneType' object has no attribute 'is_running'`
+     - Root Cause: realtime_stream.py component failing to gracefully handle market-closed state
+   - Database Files: Exist and have valid data (1.1M size, live + backup)
+   - Database Access Issue: Container unable to open `/opt/stockbot/database/trading.db` (sqlite3.OperationalError)
+   - Alpaca Credentials: Present in container environment (verified via `docker exec`)
+
+4. **Block Documentation** ✅
+   - Created new BLOCKED.md entry: "stockbot — Pre-deployment validation failure: container health check returns sessions=0"
+   - Documented: context, diagnosis, what needs to happen, verification steps
+   - Committed to master (b8de2306)
+
+5. **User Escalation** ✅
+   - Updated CHECKIN.md with critical alert
+   - Documented two resolution paths (Fix First vs. Proceed with Caution)
+   - Committed to master (4413daee)
+
+**Critical Issues Identified**:
+1. **Stream Manager Graceful Offline Handling**: realtime_stream.py throws AttributeError when market is closed and stream component is not fully initialized
+2. **Database Access in Container**: Container process unable to open database file (possibly path/permissions issue)
+3. **Health Endpoint Failure**: Returns empty sessions list because initialization is blocked by stream manager errors
+
+**User Decision Required**:
+- [ ] **Option 1**: Fix stream manager before deploying (1-2 hours investigation, defers deployment to May 29-30)
+- [ ] **Option 2**: Proceed with May 28 deployment despite health check failure (market open may allow sessions to initialize)
+
+**Status Before Session**:
+- May 27 12:12 UTC: All Lever B decision blockers resolved, Phase 2 activation unblocked per Session 1719
+- May 28-31 deployment roadmap fully pre-staged per POST_LEVER_B_ACTIVATION_ROADMAP.md
+- Ready to execute PRE_DEPLOYMENT_VALIDATION_CHECKLIST
+
+**Status After Session**:
+- 🔴 May 28 DEPLOYMENT BLOCKED pending user decision on stream manager issue
+- All other pre-flight gates pass (infrastructure healthy, backups exist, credentials set)
+- Issue is application-level (container code, not infrastructure)
+- Autonomous diagnostic complete; user input required for next steps
+
+**Impact**: May 28-31 deployment timeline at risk if stream manager issue cannot be resolved quickly. May 30 seedwarden Track B launch and May 28 resistance-research Domain 56 distribution unaffected (user-executed, not dependent on Jetson).
+
+**Files Modified**: BLOCKED.md, CHECKIN.md, WORKLOG.md
+
+**Commits**: 
+- b8de2306: chore(orchestrator): session 1721 — detected pre-deployment validation failure
+- 4413daee: chore(orchestrator): session 1721 — May 28 deployment blocked health endpoint failure
+
+---
+
 ## Session 1719 (2026-05-27 12:45–13:15 UTC) — ORCHESTRATOR: LEVER B DECISION EXECUTED + JPM RIDGE_WF TRAINING COMPLETE
 
 **Status**: ✅ COMPLETE — Lever B decision (Option A) confirmed and executed autonomously; JPM ridge_wf model trained; all 4-session stacker_ids populated; Phase 2 activation unblocked.
