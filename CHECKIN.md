@@ -1,10 +1,49 @@
 ---
 
-# 🎯 CURRENT STATUS — May 27, 2026, ~04:45 UTC
+# 🎯 CURRENT STATUS — May 27, 2026, ~05:15 UTC
 
-## Since Last Check-in (Session 1701e Orchestrator, May 27 04:30–04:45 UTC) — ✅ SEEDWARDEN LAUNCH PREP COMPLETE + ALL HIGH-PRIORITY AUTONOMOUS WORK FINISHED
+## Since Last Check-in (Session 1701f Orchestrator, May 27 05:00–05:15 UTC) — ✅ MAY 28 & MAY 30 DISTRIBUTIONS VALIDATED GREEN-LIGHT READY
 
-**Status**: ✅ **SEEDWARDEN TRACK B LAUNCH INFRASTRUCTURE 100% READY** | ✅ **RESISTANCE-RESEARCH MAY 28 READY** | ⏳ **AWAITING USER ACTIONS ON 3 BLOCKS + 3 MAJOR DECISIONS BY MAY 31**
+**Status**: ✅ **RESISTANCE-RESEARCH MAY 28 DOMAIN 56 DISTRIBUTION GREEN-LIGHT READY** | ✅ **SEEDWARDEN MAY 30 TRACK B LAUNCH GREEN-LIGHT READY** | ⏳ **IMMEDIATE USER ACTIONS AVAILABLE FOR MAY 28 & 30**
+
+### Session 1701f Accomplishments (May 27, 05:00–05:15 UTC)
+
+**What Was Done**:
+- Spawned 2 parallel validation agents for immediate pre-distribution checks
+- resistance-research Agent (ad9badc2195be55eb): 5-point comprehensive Domain 56 May 28 validation
+- seedwarden Agent (abea551faca856338): 5-point comprehensive Track B May 30 validation
+
+**Key Findings**:
+
+**resistance-research Domain 56 (May 28, 14:00 UTC send)**:
+- ✅ All 4 email templates verified clean (zero stray placeholders, 8 user-fill placeholders as expected)
+- ✅ Domain 56 Gist verified live and accessible
+- ✅ 7-sheet monitoring dashboard spec complete and production-ready
+- ✅ All 6 pre-send user actions documented and clear
+- ⏳ **User actions**: Fill [YOUR_NAME] + [YOUR_CONTACT_INFO] (~2 min), personalize [Contact Name] per recipient, substitute Bitly links, create Google Sheets dashboard, generate Bitly short codes
+- **Verdict**: ✅ GREEN LIGHT for May 28 14:00 UTC send
+
+**seedwarden Track B (May 30, 08:00 UTC launch)**:
+- ✅ Gist with all 8 zone PDFs verified live and downloadable
+- ✅ All 3 runbooks complete and executable (common issues, rollback procedures, success checkpoints)
+- ✅ Timeline verified (operativen May 26–30 documents dated correctly)
+- ✅ 8-metric success framework at 14:00 UTC go/no-go decision point
+- ⏳ **User actions**: May 28 Tier 1 modmail outreach to 5 targets (~60–75 min), May 30 launch-day sequence (3.5–4 hours)
+- ⚠️ **Minor**: Kit landing page URL needs substitution in social calendar (pending Gate 3 completion)
+- **Verdict**: ✅ GREEN LIGHT for May 30 08:00 UTC launch
+
+**Projects Unblocked**:
+- ✅ resistance-research Phase 1 — May 28 ready (May 25 re-synthesis non-execution does not block; TOO_EARLY contingency path)
+- ✅ seedwarden Track B — May 30 launch ready
+
+**Blocks Status (No Changes)**:
+- stockbot JPM model: Still awaiting user decision (AMZN resolved May 27, JPM ridge_wf decision pending)
+- cybersecurity-hardening: VeraCrypt restart pending (user action)
+- mfg-farm: Test print pending (user action)
+
+**All high-priority autonomous work completed**. Both May 28 and May 30 distributions cleared for execution.
+
+---
 
 ### Session 1701e Accomplishments (May 27, 04:30–04:45 UTC)
 
@@ -159,7 +198,34 @@
 
 ---
 
-## ⏳ Decisions Needed (PRIORITY ORDER)
+## ⏳ Immediate Actions + Decisions Needed (PRIORITY ORDER)
+
+### 🟢 **IMMEDIATE ACTIONS (May 28–30)**
+
+#### 1. **May 28 14:00–18:00 UTC — resistance-research Domain 56 Distribution** ✅ GREEN-LIGHT READY
+   - **Status**: All infrastructure validated and ready (Session 1701f validation)
+   - **User effort**: ~40 minutes total
+     - Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in 4 templates (~2 min)
+     - Personalize [Contact Name / Team] greetings per recipient (~5 min)
+     - Create Google Sheets dashboard + import contacts (~20 min)
+     - Generate 4 Bitly short links (drp-d56, drp-d39, drp-2026, drp-summary) (~10 min)
+     - Substitute raw Gist URL with Bitly links in templates (~3 min)
+   - **Execution**: Follow send log in `domain-56-email-template.md` (step-by-step send to 4 recipients)
+   - **Impact**: Phase 1 Wave 1 Domain 56 distribution to policy organizations (civil service politicization)
+   - **Files**: `projects/resistance-research/execution/domain-56-email-template.md` + monitoring dashboard
+
+#### 2. **May 30 08:00–21:00 UTC — seedwarden Track B Launch** ✅ GREEN-LIGHT READY
+   - **Status**: All infrastructure validated and ready (Session 1701f validation)
+   - **Pre-launch (May 28–29)**: Tier 1 modmail outreach to 5 herbalism communities (~60–75 min May 28)
+   - **Launch day (May 30)**: Hour-by-hour sequence per runbook (~3.5–4 hours distributed across 13-hour window 08:00–21:00 UTC)
+   - **Critical checkpoint**: 14:00 UTC 6-hour decision gate (8-metric go/no-go framework)
+   - **Success criteria**: 7–8 of 8 metrics GREEN; all 8 zone PDFs distributed to 3+ communities
+   - **Files**: `TRACK_B_LAUNCH_DAY_COMMON_ISSUES_DECISION_TREES.md` + `TRACK_B_LAUNCH_DAY_ROLLBACK_PROCEDURES.md` + `TRACK_B_LAUNCH_DAY_SUCCESS_SIGNAL_CHECKPOINTS.md`
+   - **Impact**: Phase 2 Track B Etsy/email launch + herbalist influencer outreach
+
+---
+
+## 🔴 Decisions Needed (PRIORITY ORDER)
 
 ### 1. 🔴 **Stockbot Lever B — URGENT (May 27 EOD)**
    - **Question**: JPM model type — retrain with ridge_wf (2-3 hrs, preserves architecture) OR update config to use lgbm_ho (30 min, faster)?
