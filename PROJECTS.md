@@ -440,7 +440,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: ✅ **[RESOLVED] PRE_DEPLOYMENT_VALIDATION + 3 EXECUTABLE ITEMS COMPLETE (May 27 Session 1728)**. **All gates passed**: G1 (Market Hours) safe, G2 (DB Backup) PASS—140 trades, G3 (Jetson Infrastructure) PASS, G4 (API Credentials) PASS, G5 (Local Source) PASS. **Pre-deployment items executed** (Session 1728, 13:52 UTC): (1) DB backup refresh ✓ 140 trades synced, (2) JPM ridge_wf rsync ✓ to Jetson /opt/stockbot/models/, (3) AMZN UUID verified ✓ 97934980-96ad-4389-8a74-5ce8c06c4c7f. **May 28-31 Deployment Window**: May 28 AM deploy config to Jetson (active-sessions-4session.json push); May 28–30 48h paper pre-flight observation with MAY_28_31_TRADING_MONITORING_PROTOCOL; May 30 AM pre-flight review (user decision: stay paper or promote live); June 1 earliest go-live. Deployment blackout: no deploys 13:30-20:00 UTC Mon–Fri. All infrastructure ready. **Next**: May 28 AM deploy config (user to confirm readiness).
+**Current focus**: ✅ **[RESOLVED] PRE_DEPLOYMENT_VALIDATION GATES PASSED** — All 5 gates (G1–G5): market hours safe, DB backup (140 trades), Jetson infrastructure, API credentials, local source verified. May 28 AM deploy to Jetson ready. May 28–30 48h paper pre-flight observation with monitoring protocol staged. May 30 AM pre-flight review (paper → live decision). June 1 earliest go-live. Deployment blackout: no deploys 13:30-20:00 UTC Mon–Fri.
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`
@@ -815,7 +815,7 @@
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
 **Visibility**: Public — GitHub repo: `esca8peArtist/open-repo`. Use remote `open-repo` for all pushes. Use `git subtree push --prefix=projects/open-repo open-repo <branch>` — never push to `origin`.
 **Working dir**: `projects/open-repo/`
-**Current focus**: ✅ **[RESOLVED] Phase 5.1 + 5.2 Wave 1 COMPLETE (May 26–27)** — ZimWriter export pipeline (commit c2572adc, 240 backend + 51 ZIM tests) + OPDS feed generator (commit 566f4fa6, 4 REST endpoints, 318 tests passing). Phase 5.2 Wave 2 (A11y audit, 4–14h) ready for June 1–6. **✅ Pre-deployment verification COMPLETE (May 27 Session 1728)**: (1) uv sync ✓, (2) libzim 3.10.0 installed ✓, (3) alembic 1.18.4 installed ✓, (4) 318/318 tests PASS ✓. Database migration (alembic upgrade head) awaits PostgreSQL on deployment target. Next: Kiwix integration, load testing, June 12 deployment.
+**Current focus**: ✅ **[RESOLVED] Phase 5.1–5.2 WAVE 1 COMPLETE** — ZimWriter export pipeline + OPDS feed generator production-ready (318/318 tests passing, all pre-deployment verification passed). Wave 2 (A11y audit, 4–14h) queued for June 1–6. Kiwix integration + load testing pending user Phase 5 priority direction. June 12 deployment target.
 
 **Missing pre-reqs (system, not code)**: (1) libzim PyPI wheel — `uv pip install "libzim>=3.2,<4.0"` (2) zim-tools binary — optional, `sudo apt install zim-tools`
 
