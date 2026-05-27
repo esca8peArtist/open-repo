@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-26T23:35:10Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-27T01:00:59Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.5% (308,701 tokens) | All-models 1.3% | Reset in 144h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 4.1% (362,882 tokens) | All-models 1.4% | Reset in 143h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -36,7 +36,7 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: ✅ **TRACK B 100% OPERATIONALLY READY FOR MAY 30 LAUNCH (Session 1692, May 27)** — All 8 zone PDFs verified production-ready. 15 herbalist influencers staged. Email/social templates ready. ✅ **LAUNCH-DAY RUNBOOKS COMPLETE** — 5 comprehensive operational documents: Hour-by-hour timeline (06:00–21:00 UTC), Decision trees (8 common-failure scenarios), Rollback procedures (platform-specific), Success metrics (Tier 1–3 with hourly targets), Status update templates (Discord + CHECKIN). Laun … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **TRACK B 100% READY FOR MAY 30 LAUNCH — PRE-FLIGHT COMPLETE (Session 1693, May 27)** — All 8 zone PDFs verified production-ready (633–634 KB each, no placeholders, no draft sections, Zones 3–10 all present). 15 herbalist influencers staged with verified contact routes. Email/social templates confirmed clean (zero [fill]/[TBD] placeholders in HERBALIST_PARTNERSHIP_EMAIL_TEMPLATE.md + TRACK_B_SOCIAL_SCHEDULING_TEMPLATES.md). ✅ **LAUNCH-DAY RUNBOOKS COMPLETE AND VERIFIED** — 5 docu … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -45,7 +45,7 @@
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **Phase 5 COMPLETE (66.4K words, 423 citations, 12 documents, May 26).** Phase 6 unblocked for June 1 activation — scope and readiness documented in `PHASE_6_SCOPE_AND_READINESS.md` (top-3 domains: Community Economic Resilience, Skills Development, Governance Scaling). **User decisions pending by May 31**: (1) Phase 5 publication wave timing (A: June 1+30, B: unified June 15, C: rolling 6-week), (2) Phase 6 domain selection. Full decision framework in `PHASE_5_PUBLICATION_DECISION_FRAMEWORK.md … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **DECISIONS NEEDED BY MAY 31** — See `JUNE_1_ACTIVATION_SUMMARY.md` for full readiness picture. Phase 5 is 100% production-ready (66,442 words, 423 citations, 12 documents, zero placeholders verified May 27). Phase 6 groundwork complete and committed (candidate outlines for Domains A/C/D, selection matrix, sequencing recommendation). Two user decisions gate June 1 activation: (1) **Phase 5 publication timing** — Option A (Wave 1+2 June 5 + Wave 3 June 30, recommended), Option B (unified June … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)

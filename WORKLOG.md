@@ -1,5 +1,64 @@
 # Work Log
 
+## Session 1695 (2026-05-27, 16:00+ UTC) — ORCHESTRATOR: COMPREHENSIVE BACKTESTING + MAY 28 DISTRIBUTION UNBLOCKED
+
+**Status**: ✅ **STOCKBOT BACKTESTING REPORT COMPLETE** | ✅ **RESISTANCE-RESEARCH MAY 28 DISTRIBUTION UNBLOCKED** | ✅ **5 DELIVERABLES COMMITTED**
+
+### Parallel Agent Execution
+Spawned 2 concurrent agents for user-escalated work and time-critical distribution prep.
+
+#### Agent 1: Stockbot Comprehensive Backtesting Report ✅
+**Deliverable**: `COMPREHENSIVE_BACKTESTING_REPORT.md` (691 lines, ~5,050 words)
+
+**Key Findings**:
+1. **AAPL System** (lgbm_ho + ridge_wf): OOS Sharpe 1.491, +41.06% vs +6.13% buy-and-hold (34.93pp alpha). Ridge_wf adds regime adaptability.
+2. **Multi-Ticker Scaling**: 52-ticker projection: 78–130 trades/month, portfolio Sharpe ~1.32 at 13.5% volatility (vs individual 0.90 Sharpe)
+3. **JPM Model Selection** (CRITICAL FOR BLOCKER #2): **ridge_wf is recommended for JPM** (mean-reverting stock). Expected +0.1 to +0.4 Sharpe advantage over lgbm_ho. JPM lgbm_ho would waste tree capacity on spurious non-linear interactions.
+4. **Production Readiness**: Only JPM model type decision + stacker_id population remain. Time to Phase 2 live: 30–90 min (depending on retrain decision).
+
+**Recommendation**: The backtesting data supports ridge_wf for JPM. Retrain command available in AMZN_JPM_TIER1_TRAINING_SPECIFICATION.md Section 3.3 (~4–6 min on Pi 5).
+
+**Commit**: `chore(stockbot): Comprehensive backtesting report (user escalation)`
+
+#### Agent 2: Resistance-Research May 28 Distribution ✅
+**Status**: 🔓 **MAJOR BLOCKER RESOLVED** — Domain 56 Gist already created (May 22, live at HTTP 200)
+
+**Critical Finding**: Session 1694 flagged Gist creation as a blocker, but the prior session (Session 1691) already created it. DOMAIN_56_MAY28_JUNE1_SEND_VERIFICATION.md (committed this session) confirms:
+- Domain 56 Gist: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f (live, 55 KB)
+- Domain 39 Gist: https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b (live, 58 KB)
+
+**Deliverables**:
+- Created `GIST_TEMPLATE_DOMAIN_56.md` (standby template for re-creation if needed)
+- Updated PROJECTS.md: Removed false Gist-creation blocker; updated May 28 timeline
+- Updated `execution/MAY_28_FINAL_EXECUTION_GUIDE.md`: Status changed "pending Gist creation" → "NO BLOCKERS"
+- Updated `execution/DOMAIN_56_MAY28_SEND_SEQUENCE.md`: Gist creation row replaced with verified-live entry
+
+**Remaining User Actions** (35 min total):
+1. Fill [YOUR_NAME]/[YOUR_CONTACT_INFO] in email templates (~5 min)
+2. Personalize greetings for 11 recipients (~5 min)
+3. Spot-check 5 Tier 1 email addresses (~5 min)
+4. Execute send window 14:00–14:15 UTC May 28 (~5 min)
+
+**Status**: ✅ **MAY 28 DOMAIN 56 DISTRIBUTION READY TO EXECUTE** (no Gist creation needed)
+
+**Commits**: Updated PROJECTS.md, execution guides, new template file
+
+### Deliverables Committed This Session
+1. `projects/resistance-research/DOMAIN_56_MAY28_JUNE1_SEND_VERIFICATION.md` (305 lines)
+2. `projects/seedwarden/MAY_30_LAUNCH_DAY_RUNBOOK.md` (491 lines)
+3. `projects/systems-resilience/PHASE_6_CANDIDATE_COMMUNITY_ECONOMIC_RESILIENCE.md` (285 lines)
+4. `projects/systems-resilience/PHASE_6_CANDIDATE_GOVERNANCE_SCALING.md` (312 lines)
+5. `projects/systems-resilience/PHASE_6_CANDIDATE_SKILLS_DEVELOPMENT.md` (362 lines)
+
+Plus agent-generated deliverables:
+6. `projects/stockbot/COMPREHENSIVE_BACKTESTING_REPORT.md` (691 lines)
+7. `projects/resistance-research/GIST_TEMPLATE_DOMAIN_56.md` (standby)
+8. Updated `PROJECTS.md` and execution guides
+
+**Total Work**: ~2,500 lines of new production-ready content committed + 2 major orchestration updates.
+
+---
+
 ## Session 1694 (2026-05-27, current) — ORCHESTRATOR: DOMAIN 56 GIST CREATION BLOCKERS + PARALLEL EXECUTION PREP
 
 **Status**: 🔍 **Resistance-research analysis complete** | ✅ **Gist creation steps verified** | ⏳ **Awaiting user Gist creation (GitHub web UI, 10 min)**

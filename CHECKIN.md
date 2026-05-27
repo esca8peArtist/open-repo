@@ -1,3 +1,57 @@
+## Since Last Check-in (Session 1695, May 27 16:00+ UTC) — ✅ BACKTESTING REPORT + MAY 28 DISTRIBUTION UNBLOCKED
+
+**Status**: ✅ **STOCKBOT ESCALATION FULFILLED** | ✅ **MAY 28 DOMAIN 56 DISTRIBUTION READY** | ✅ **COMPREHENSIVE BACKTESTING REPORT COMPLETE**
+
+### Session 1695 Accomplishments
+
+**1. ✅ Stockbot: Comprehensive Backtesting Report (USER ESCALATION)**
+   - **Deliverable**: `COMPREHENSIVE_BACKTESTING_REPORT.md` (691 lines, 5,050 words)
+   - **Key Findings**:
+     - AAPL system: Sharpe 1.491, +41.06% return vs +6.13% buy-and-hold (34.93pp alpha)
+     - Multi-ticker projection: 52 tickers → portfolio Sharpe ~1.32 (vs individual 0.90)
+     - **JPM Model Decision (CRITICAL FOR PHASE 2)**: ridge_wf recommended for JPM. Expected +0.1 to +0.4 Sharpe advantage over lgbm_ho. Ridge suppresses spurious momentum features automatically; lgbm_ho would waste capacity on non-existent non-linear patterns in mean-reverting JPM returns.
+   - **Production Readiness**: Only JPM model type decision + stacker_id remain. Time to Phase 2 live: 30–90 min.
+   - **Status**: Stockbot escalation fulfilled; data now available to support JPM decision
+
+**2. ✅ Resistance-Research: May 28 Distribution Unblocked (MAJOR FINDING)**
+   - **Previous session (1694)**: Flagged Domain 56 Gist creation as blocker (10-min user action)
+   - **This session**: Audit revealed Gist was already created May 22 and is live (HTTP 200 verified)
+   - **Resolution**: False blocker removed; PROJECTS.md and execution guides updated
+   - **Remaining user actions**: ~35 min (fill personalization fields + send)
+   - **Status**: ✅ **MAY 28 DOMAIN 56 DISTRIBUTION READY TO EXECUTE (NO BLOCKERS)**
+
+**3. ✅ Committed 5 Production-Ready Deliverables**
+   - resistance-research: DOMAIN_56_MAY28_JUNE1_SEND_VERIFICATION.md
+   - seedwarden: MAY_30_LAUNCH_DAY_RUNBOOK.md  
+   - systems-resilience: 3× Phase 6 candidate documents
+   - **Total**: 1,255 lines of production-ready content
+
+### Items Needing User Input
+
+**1. CRITICAL — Stockbot JPM Model Type Decision**
+   - **Decision**: Retrain JPM with ridge_wf OR update config to accept lgbm_ho?
+   - **Data**: Backtesting report recommends ridge_wf (empirically supported)
+   - **Timeline**: Decision needed to unblock Phase 2 activation (AMZN/JPM deployment)
+   - **Impact**: Ridge_wf path: 4–6 min retrain, +0.1–0.4 Sharpe gain. Lgbm_ho path: 30 min to config update + stacker_id population.
+
+**2. Resistance-Research May 28 Distribution**
+   - **User action**: Fill [YOUR_NAME]/[YOUR_CONTACT_INFO] in templates (~15 min) + execute send 14:00–14:15 UTC May 28
+   - **Ready to execute**: All Gists live, templates complete, contacts verified
+   - **Effort**: 35 min total on May 28 morning
+
+**3. Systems-Resilience May 31 Decisions**
+   - **Decision 1**: Phase 5 publication timing (Option A: June 5+30, Option B: unified June 1, Option C: custom)
+   - **Decision 2**: Phase 6 domain selection and sequencing
+   - **Data**: JUNE_1_ACTIVATION_SUMMARY.md has all options pre-analyzed
+   - **Timeline**: Needed by May 31 for June 1 activation
+
+### Suggested Next Steps
+1. **High Priority**: Stockbot JPM decision (unblocks Phase 2, use backtesting data to decide)
+2. **Execute May 28**: Resistance-research Domain 56 send (35 min, distribution-critical timeline)
+3. **May 31**: Log systems-resilience Phase 5/6 decisions (enables June 1 activation)
+
+---
+
 ## Since Last Check-in (Session 1694, May 27 current) — 🔍 DOMAIN 56 GIST CREATION BLOCKER IDENTIFIED + ACTION PLAN
 
 **Status**: 🔍 **Resistance-research Domain 56 Gist Creation Identified as Only Blocker** | ⏳ **Awaiting User Input (GitHub Gist web UI or PAT)** | ✅ **All other May 28–June 1 work ready**
