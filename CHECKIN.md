@@ -1,5 +1,31 @@
 # 🎯 CURRENT STATUS — May 27, 2026
 
+## Since Last Check-in (Session 1719 Orchestrator, May 27 ~13:15 UTC) — ✅ LEVER B DECISION EXECUTED + JPM RIDGE_WF TRAINING COMPLETE | 🟢 PHASE 2 ACTIVATION UNBLOCKED
+
+### Accomplished This Session
+
+**Critical Blocker Resolution** ✅:
+- **Lever B decision confirmed**: User chose Option A (retrain JPM ridge_wf) — decision signal received May 27 ~00:03 UTC
+- **JPM ridge_wf training**: Completed autonomously (stacker_id 868f378c-1ace-4aab-a258-725c385b1325)
+- **4-session architecture complete**: AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf
+- **Phase 2 activation unblocked**: All stacker_ids populated, no placeholders remaining
+
+**Block Resolution** ✅:
+- Moved "JPM model type mismatch" block from Active to Resolved Archive
+- Moved "AMZN/JPM stacker_ids" block from Active to Resolved Archive
+- Updated BLOCKED.md with full resolution details and rationale
+
+**Project State Updates** ✅:
+- Updated stockbot Status to reflect 4-session Jetson architecture
+- Updated stockbot Current focus with [RESOLVED] marker
+- PROJECTS.md now shows Phase 2 AMZN/JPM activation ready for May 28-31 deployment
+
+**Status**: All critical blockers cleared. System ready for May 28-31 Jetson deployment per POST_LEVER_B_ACTIVATION_ROADMAP.md. No escalation trigger needed (decision made well before May 27 20:30 UTC deadline).
+
+**Next**: May 28-31 autonomous monitoring and trading session activation begin on schedule.
+
+---
+
 ## Since Last Check-in (Session 1719 Orchestrator, May 27 ~12:00–12:45 UTC) — ✅ MAY 28 & MAY 30 PRE-FLIGHT VALIDATION COMPLETE | 🔴 LEVER B DECISION DEADLINE: MAY 27 20:30 UTC (8 HOURS)
 
 ### Accomplished This Session
