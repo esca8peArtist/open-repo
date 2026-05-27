@@ -2,9 +2,9 @@
 
 # 🎯 CURRENT STATUS — May 27, 2026, ~08:00 UTC
 
-## Since Last Check-in (Session 1701j Orchestrator, May 27 ~07:30 UTC) — ✅ PHASE 6 DECISION SUPPORT COMPLETE: USER MAY 31 CHOICE FULLY CONTEXTUALIZED
+## Since Last Check-in (Session 1701j-k Orchestrator, May 27 ~07:30–08:30 UTC) — ✅ MAY 31 USER DECISIONS FULLY CONTEXTUALIZED: BOTH PHASE 5 & PHASE 6 DECISION FRAMEWORKS PRODUCTION-READY
 
-**Status**: ✅ **PHASE 6 DOMAIN SCREENING PRODUCTION-READY** | ✅ **THREE DECISION-SUPPORT DOCS COMMITTED** | 🎯 **MAY 31 USER DECISION WINDOW FULLY PREPARED**
+**Status**: ✅ **PHASE 6 DOMAIN SCREENING PRODUCTION-READY** | ✅ **PHASE 4 ACTIVATION TEMPLATES (3 SCENARIOS + ROUTER) PRODUCTION-READY** | 🎯 **MAY 31 USER DECISION WINDOW FULLY PREPARED WITH ZERO JUNE 1 SETUP LAG**
 
 ### Session 1701j Accomplishments (May 27, ~07:30 UTC)
 
@@ -47,6 +47,44 @@
 - Domain 56 distribution proceeds regardless per contingency path
 
 **Blocks Unchanged**: No new blocks resolved this session; all remain as documented in BLOCKED.md
+
+---
+
+### Session 1701k Accomplishments (May 27, ~08:00–08:30 UTC)
+
+**Deliverables** (4 Phase 4 Activation Documents for Post-May-31-Decision Execution):
+
+1. ✅ **PHASE_4_ACTIVATION_OPTION_A.md** (2,480 words)
+   - **Scenario**: User chooses Option A (Wave 1+2 June 1-5 publication, then Wave 3 June 30)
+   - **3 deliverables**: Governance synthesis workshop outline (3-hour agenda, Day 1-3 structure), household scaling one-pager (48-hour orientation, multi-household coordination), Zone 5 adaptation guide (8-row hard deadline table, Zone 5 resource network)
+   - **Day 1-5 checklist** with go/no-go gate (June 1)
+   - **Ready for**: June 1 activation, zero setup lag
+
+2. ✅ **PHASE_4_ACTIVATION_OPTION_B.md** (2,496 words)
+   - **Scenario**: User chooses Option B (June 15 unified publication, all waves together)
+   - **Weekly breakdown**: Week 1 individual-scale deepening (3 new methodologies), Week 2 household synthesis, Week 3 publication assembly
+   - **Daily standup template** (15 min, 3 tracks: Phase 5 editorial / Phase 4 governance / integration conflicts)
+   - **3 integration checkpoints**: June 3, 10, 14 (with go/no-go criteria + contingency paths)
+   - **Ready for**: June 1 activation, 14-day distributed effort
+
+3. ✅ **PHASE_4_ACTIVATION_OPTION_C.md** (2,648 words)
+   - **Scenario**: User chooses Option C (rolling modular, 1 module/week publication)
+   - **Weekly coordination template** (fill-in-the-blank per module)
+   - **Module pairing matrix** with fail-safe column (which modules can hold 1 week, which cannot)
+   - **Rolling calendar** Weeks 1-8 (May 29 – July 24) with Phase 5 release + Phase 4 task + Zone 5 deadline
+   - **3 slip scenarios** with specific recovery protocols (not generic advice, module-specific)
+   - **Ready for**: June 1 activation, 8-week rolling effort
+
+4. ✅ **PHASE_4_ACTIVATION_ROUTER.md** (1,857 words)
+   - **Decision router**: Reads May 31 CHECKIN inputs, routes to correct template
+   - **3 router inputs**: Phase 5 publication option (A/B/C), Phase 6 domain selections (Governance/Economic/Skills), user availability (full-time/part-time/episodic)
+   - **5-minute activation checklist** (copy-paste ready for June 1)
+   - **Fallback**: If no May 31 decision by June 1, defaults to Option B + 2-week buffer (safety default)
+   - **Phase 6 bridge content**: Additive modifications per Phase 6 domain selected (not scope changes)
+
+**Impact**: User makes May 31 decision → immediately selects corresponding Phase 4 template → June 1 Phase 4 activation begins with zero setup lag. All three templates equally production-ready (equal effort, full detail, decision-agnostic quality).
+
+**Files Committed**: All 4 docs to projects/systems-resilience/phase-4-activation-templates/ + master commit
 
 ---
 
