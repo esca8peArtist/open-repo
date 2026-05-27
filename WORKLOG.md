@@ -1,5 +1,59 @@
 # Work Log
 
+## Session 1728 (2026-05-27 13:49–14:15 UTC) — ORCHESTRATOR: BLOCK RESOLUTION + PRE-DEPLOYMENT VERIFICATION
+
+**Status**: 🟢 SESSION COMPLETE — Resolved stockbot PRE_DEPLOYMENT_VALIDATION block (3 items completed) + Started open-repo pre-deployment verification (dependencies verified, tests pass).
+
+### Session Summary
+
+**Tasks**:
+1. Process BLOCKED.md: resolve any unresolved blocks
+2. Process INBOX.md: handle new items
+3. Autonomously work on highest-priority unblocked project
+4. Update CHECKIN.md and prepare session commit
+
+**Work Completed**:
+
+1. **Resolved stockbot PRE_DEPLOYMENT_VALIDATION_CHECKLIST Block** ✅
+   - **Item 1: DB backup refresh** ✅
+     - Executed: `ssh awank@100.120.18.84 "cp /opt/stockbot/database/trading.db /opt/stockbot/database/trading.db.pre-amzn-jpm.backup"`
+     - Verified: Backup now contains 140 trades (threshold: >100) ✅
+   - **Item 2: JPM ridge_wf pkl rsync** ✅
+     - Executed: `rsync -avz /projects/stockbot/models/ensemble_stackers/JPM_h10_ridge_wf_868f378c.pkl awank@100.120.18.84:/opt/stockbot/models/ensemble_stackers/`
+     - Verified: File now PRESENT on Jetson ✅
+   - **Item 3: AMZN stacker_id fix** ✅
+     - Executed: Updated `active-sessions-4session.json` AMZN stacker_id from `43e36c77` to `97934980-96ad-4389-8a74-5ce8c06c4c7f` (both places: stacker_id and strategy fields)
+     - Verified: Old UUID no longer present in config ✅
+   - **Block moved to Resolved Archive** and committed to BLOCKED.md ✅
+
+2. **INBOX.md Processing** ✅
+   - No new items (empty)
+
+3. **Started open-repo pre-deployment verification** ✅
+   - **uv sync** ✅ — all dependencies synced
+   - **Dependency check** ✅:
+     - libzim 3.10.0 installed ✓
+     - alembic 1.18.4 installed ✓
+   - **Test verification** ✅ — 318/318 tests PASS
+   - **Database migration deferred** — alembic upgrade requires PostgreSQL (will run on deployment target)
+   - **PROJECTS.md updated** to reflect pre-deployment progress
+   - **Note**: Pre-deployment work ready; awaiting user decision for merge → deploy sequence
+
+**Inventory**:
+- ✅ 1 block resolved (BLOCKED.md committed)
+- ✅ 0 INBOX items processed
+- ✅ 1 project advanced (open-repo pre-deployment)
+- ⏳ All projects in healthy state; no new blockers identified
+
+**Next Session**:
+- May 28 14:00 UTC: resistance-research Domain 56 distribution (user-executed)
+- May 28 19:00 UTC: resistance-research synthesis (automated)
+- May 28 21:00 UTC: stockbot deployment window opens
+- May 30 08:00 UTC: seedwarden Track B launch (user-executed)
+- May 31 23:59 UTC: systems-resilience Phase 5/6 user decisions due
+
+---
+
 ## Session 1727 (2026-05-27 13:34–14:15 UTC) — ORCHESTRATOR: PRE-DEPLOYMENT VALIDATION CHECKLIST EXECUTED
 
 **Status**: 🟢 SESSION COMPLETE — Executed PRE_DEPLOYMENT_VALIDATION_CHECKLIST Gates G1-G4. Verdict: CONDITIONAL GO. 3 agent-executable items identified for May 28 AM window before deployment proceeds.

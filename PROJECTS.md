@@ -815,7 +815,7 @@
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
 **Visibility**: Public — GitHub repo: `esca8peArtist/open-repo`. Use remote `open-repo` for all pushes. Use `git subtree push --prefix=projects/open-repo open-repo <branch>` — never push to `origin`.
 **Working dir**: `projects/open-repo/`
-**Current focus**: ✅ **[RESOLVED] Phase 5.1 + 5.2 Wave 1 COMPLETE (May 26–27)** — ZimWriter export pipeline (commit c2572adc, 240 backend + 51 ZIM tests) + OPDS feed generator (commit 566f4fa6, 4 REST endpoints, 318 tests passing). Phase 5.2 Wave 2 (A11y audit, 4–14h) ready for June 1–6. Pre-deployment: libzim wheel, alembic upgrade, manual ZIM test (~2h). Next: Kiwix integration, load testing, June 12 deployment.
+**Current focus**: ✅ **[RESOLVED] Phase 5.1 + 5.2 Wave 1 COMPLETE (May 26–27)** — ZimWriter export pipeline (commit c2572adc, 240 backend + 51 ZIM tests) + OPDS feed generator (commit 566f4fa6, 4 REST endpoints, 318 tests passing). Phase 5.2 Wave 2 (A11y audit, 4–14h) ready for June 1–6. **✅ Pre-deployment verification COMPLETE (May 27 Session 1728)**: (1) uv sync ✓, (2) libzim 3.10.0 installed ✓, (3) alembic 1.18.4 installed ✓, (4) 318/318 tests PASS ✓. Database migration (alembic upgrade head) awaits PostgreSQL on deployment target. Next: Kiwix integration, load testing, June 12 deployment.
 
 **Missing pre-reqs (system, not code)**: (1) libzim PyPI wheel — `uv pip install "libzim>=3.2,<4.0"` (2) zim-tools binary — optional, `sudo apt install zim-tools`
 

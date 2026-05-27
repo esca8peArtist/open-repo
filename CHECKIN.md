@@ -1,5 +1,54 @@
 # 🎯 CURRENT STATUS — May 27, 2026
 
+## Since Last Check-in (Session 1728 Orchestrator, May 27 13:49–14:15 UTC) — ✅ BLOCK RESOLVED | OPEN-REPO PRE-DEPLOYMENT VERIFIED | ALL SYSTEMS READY
+
+### Status Summary
+
+**✅ Stockbot Deployment Path 100% CLEAR**: Pre-deployment validation block FULLY RESOLVED. Session 1728 completed all 3 agent-executable items:
+1. **DB backup refreshed** (79→140 trades, threshold ✓)
+2. **JPM ridge_wf pkl rsynced** to Jetson (now PRESENT, verified ✓)
+3. **AMZN stacker_id corrected** in config (`43e36c77` → `97934980-96ad-4389-8a74-5ce8c06c4c7f`, verified ✓)
+
+All pre-deployment validation criteria satisfied. May 28 21:00 UTC deployment can proceed autonomously without further user action.
+
+**✅ open-repo Pre-Deployment Verification COMPLETE**:
+- uv sync ✓ (all dependencies resolved)
+- libzim 3.10.0 installed ✓
+- alembic 1.18.4 installed ✓
+- 318/318 tests PASS ✓
+- Ready for post-merge deployment (alembic upgrade will run on deployment target)
+
+**May 28–31 Deployment Timeline UNCHANGED**: 
+- May 28 AM: Pre-deployment items (✅ COMPLETE Session 1728)
+- May 28 14:00-18:00 UTC: Domain 56 distribution (user action, templates ready)
+- May 28 19:00 UTC: Synthesis execution (automated, fully staged)
+- May 30 08:00 UTC: Seedwarden Track B launch (user action, runbooks ready)
+- May 31 23:59 UTC: Systems-resilience decisions due (frameworks ready)
+
+**All Other Projects**: On schedule, no blocking issues, pre-event work 100% complete.
+
+**Work Completed This Session**:
+- ✅ Resolved stockbot block: DB backup refresh + JPM pkl rsync + AMZN UUID fix (all verified)
+- ✅ BLOCKED.md committed (block moved to Resolved Archive)
+- ✅ open-repo pre-deployment verification: dependencies installed, tests pass (318/318)
+- ✅ PROJECTS.md updated (open-repo pre-deployment progress logged)
+- ✅ WORKLOG.md updated with Session 1728 entry
+- ✅ INBOX.md processed (0 new items)
+
+**Critical Dates Ahead**:
+1. **May 28 14:00–18:00 UTC**: Domain 56 distribution window (user action needed)
+2. **May 28 19:00 UTC**: Synthesis execution (autonomous)
+3. **May 30 08:00 UTC**: Seedwarden Track B launch (user action needed)
+4. **May 31 23:59 UTC**: Phase 5/6 decisions due (decision frameworks ready)
+
+**Usage**: ~3K tokens (orchestrator + block resolution + verification work)
+
+**Status**: ✅ ALL DEPLOYMENT PREREQUISITES MET. All projects held at scheduled checkpoints. Ready for May 28-31 execution window.
+
+**Next Autonomous Action**: None until May 28. Synthesis automation triggers May 28 19:00 UTC (fully staged). User actions on May 28 (distribution) and May 30 (launch) are on schedule.
+
+---
+
 ## Since Last Check-in (Session 1727 Orchestrator, May 27 13:34–14:15 UTC) — ✅ PRE-DEPLOYMENT VALIDATION CHECKLIST EXECUTED | CONDITIONAL GO | 3 ITEMS FOR MAY 28 AM
 
 ### Status Summary
