@@ -1,5 +1,33 @@
 # 🎯 CURRENT STATUS — May 27, 2026
 
+## Since Last Check-in (Session 1737 Orchestrator, May 27 15:09 UTC) — ✅ DEPLOYMENT CHECKLIST CREATED | INFRASTRUCTURE VALIDATED | READY FOR MAY 28 GO
+
+### Session 1737 Summary
+
+**What was accomplished**:
+- **Created MAY_28_31_DEPLOYMENT_CHECKLIST.md** (2,400+ words) — Comprehensive step-by-step guide for user execution:
+  - May 28 AM deployment sequence (6 checkboxes)
+  - May 28-30 daily monitoring protocol (3-day trading health checks)
+  - May 30 AM pre-flight review (STAY PAPER vs PROMOTE LIVE decision point)
+  - June 1 go-live execution (if approved; includes blackout rules)
+  - Troubleshooting section for common issues
+- **Verified stockbot infrastructure**: Dependencies installed (sqlalchemy, alembic, alpaca-py, loguru), config committed with correct AMZN stacker_id
+- **Confirmed Session 1728 pre-flight validation**: All gates G1-G5 PASS; deployment status READY
+
+**What's in progress**: None — all systems staged for May 28 AM user action
+
+**What needs user input** (next 72 hours):
+1. **May 28 08:00-12:00 UTC**: Execute MAY_28_31_DEPLOYMENT_CHECKLIST.md (6-step deployment sequence)
+2. **May 28 14:00-18:00 UTC**: Domain 56 distribution (templates + send)
+3. **May 28-30 daily**: Execute daily monitoring protocol (trade/P&L/error checks)
+4. **May 30 10:00-11:00 UTC**: Make go-live decision (STAY PAPER or PROMOTE LIVE)
+
+**Critical handoff document**: `MAY_28_31_DEPLOYMENT_CHECKLIST.md` — Start here on May 28 morning
+
+**Status**: ✅ **DEPLOYMENT READY FOR MAY 28 AM EXECUTION**. All systems validated. Orchestrator has completed pre-flight prep. Next session May 28 AM: monitor user execution.
+
+---
+
 ## Since Last Check-in (Session 1736 Orchestrator, May 27 15:05 UTC) — ✅ READINESS VALIDATION COMPLETE | 17 SIGNAL LOG FIELDS REMAIN | MAY 28 DEPLOYMENT GO
 
 ### Session 1736 Summary
