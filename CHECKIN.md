@@ -20,6 +20,22 @@
    - WORKLOG.md: Added Session 1696 entry documenting completion
    - PROJECTS.md: Updated systems-resilience focus to reference new decision support tool
 
+**3. ✅ Seedwarden Track B Pre-Launch Verification (01:32 UTC)**
+   - **Verdict**: **READY FOR MAY 30 LAUNCH** (3 days away)
+   - **Findings**: All 8 zone PDFs present (648–649 KB), contact list functional, email/social templates zero placeholders, 5 runbooks present
+   - **Only pending**: 5-minute footer URL substitution in PDFs (non-blocking for Gist distribution)
+   - **Status**: Launch-day infrastructure 100% ready
+
+**4. ✅ Systems-Resilience Phase 5 Publication Decision Brief (01:32 UTC)**
+   - **Deliverable**: `PHASE_5_PUBLICATION_DECISION_BRIEF.md` (500 words, decision support)
+   - **Content**: Both options clearly presented (Option A: phased June 5+30, Option B: unified June 15 with 10–15 hr integration), recommendation based on decision matrix, success metrics
+   - **Status**: Ready for user decision by May 31
+
+**5. ⏳ Stockbot Checkpoint Outcome Analysis — BLOCKED (01:32 UTC)**
+   - **Finding**: Jetson unreachable (HTTP timeout). Connectivity lost since May 27 01:32 UTC (was online in Session 1690 May 26 22:15 UTC)
+   - **Status**: May 22 checkpoint outcome not retrievable at present time
+   - **Impact**: JPM model type decision blocker (#2) remains — user decision on retrain vs. config update still required
+
 ### Items Needing User Input (by May 31)
 
 **1. PHASE 6 DOMAIN SELECTION (May 31 deadline)**
