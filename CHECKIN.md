@@ -1,5 +1,47 @@
 # 🎯 CURRENT STATUS — May 27, 2026
 
+## Since Last Check-in (Session 1721 Orchestrator, May 27 12:12–present) — 🔴 PRE-DEPLOYMENT VALIDATION FAILURE | MAY 28 DEPLOYMENT BLOCKED
+
+### ⚠️ CRITICAL: Stockbot Health Endpoint Failure Blocks May 28 Deployment
+
+**STATUS**: PRE_DEPLOYMENT_VALIDATION_CHECKLIST failed Gate G3 (Jetson health check).
+
+**Finding**: Health endpoint returns `sessions=0` instead of expected `sessions=2` (AAPL baseline sessions).
+
+**Root Cause**: Container is running Uvicorn on port 8000, but application is stuck in stream initialization error loop. Logs show repeated warnings: `Stream not fully initialized (market may be closed): 'NoneType' object has no attribute 'is_running'`. This is a known issue when market is closed and realtime stream manager fails to gracefully handle offline state.
+
+**Other Pre-Flight Gates**:
+- ✅ G1 Market Hours: MARKET CLOSED (12:12 UTC Wed May 27) — safe for deployment
+- ✅ G2 Database Backup: File exists (1.1M)
+- ✅ Disk Space: 131GB free (>50GB required)
+- ✅ RAM: 4576MB available (>2GB required)
+- ✅ Docker: Container running
+- ✅ Config Files: All present (active-sessions-4session.json, JPM lgbm_ho pkl present)
+- ✅ Alpaca Credentials: Set in container environment
+- 🔴 G3 Health Endpoint: Returns sessions=0 (expected >=2)
+
+**What Needs to Happen Before May 28 Deployment**:
+
+Option 1 (Recommended — defer deployment):
+- Diagnose stream manager initialization block
+- Fix root cause (likely graceful offline handling in realtime_stream.py)
+- Re-test health endpoint before May 28 14:00 UTC market open
+
+Option 2 (Aggressive — accept health check failure):
+- Proceed with deployment despite health endpoint failure
+- Sessions may initialize once market opens at 13:30 UTC
+- Risk: If sessions don't initialize at market open, deployment will fail mid-session with open positions at risk
+
+**User Decision Required** (as of May 27 12:12 UTC):
+- [ ] Fix stream manager before deploying (adds 1-2 hours investigation time, defers deployment to May 29-30)
+- [ ] Proceed with May 28 deployment despite health check failure (market open will test real session initialization)
+
+**Block Status**: Added to BLOCKED.md, committed (b8de2306). Awaiting user decision on May 28 resolution path.
+
+**Next Autonomous Action**: If user chooses "Fix first" → diagnose and repair stream manager. If "Proceed with caution" → run deployment checklist at May 28 14:00 UTC (after market opens, once sessions can initialize).
+
+---
+
 ## Since Last Check-in (Session 1720 Orchestrator, May 27 11:46–present) — ✅ EXPLORATION QUEUE EXECUTED | 🟢 MAY 28-31 DEPLOYMENT ALL GATES CLEAR
 
 ### Accomplished This Session
