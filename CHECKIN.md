@@ -1,62 +1,87 @@
 ---
 
-# 🎯 CURRENT STATUS — May 27, 2026, ~09:15 UTC
+# 🎯 CURRENT STATUS — May 27, 2026, ~08:30 UTC
 
-## Since Last Check-in (Session 1710 Orchestrator, May 27 08:30–09:15 UTC) — ✅ PARALLEL AGENT EXECUTION COMPLETE: SYSTEMS-RESILIENCE + SEEDWARDEN PHASE 3 OPTIMIZATION READY
+## Since Last Check-in (Session 1711 Orchestrator, May 27 07:41–08:30 UTC) — ✅ MAY 28-31 EXECUTION INFRASTRUCTURE COMPLETE: RESISTANCE-RESEARCH + SYSTEMS-RESILIENCE READY
 
-**Status**: ✅ **Systems-resilience Phase 4/5 activation bridges verified production-ready** | ✅ **Seedwarden Phase 3 production optimization framework delivered (8 files)** | 🎯 **ZERO NEW BLOCKS; MAY 28-31 EXECUTION INFRASTRUCTURE COMPLETE**
+**Status**: ✅ **May 28 synthesis monitoring + Domain 56 distribution automated** | ✅ **Systems-resilience Phase 6 author confirmation + launch infrastructure ready** | 🎯 **ALL BLOCKERS UNCHANGED; 4 CRITICAL DEADLINES IN NEXT 96 HOURS**
 
-### Session 1710 Accomplishments
+### Session 1711 Accomplishments
 
-**Orientation Summary**: 
-- All three active blocks reviewed: No autonomous resolutions possible (all require user decisions within 1-3 days)
-- No new INBOX items
-- Exploration Queue Items 2 & 3 identified as executable with parallel agents
+**Parallel Agent Execution** (both agents completed independently):
 
-**Parallel Agent Execution**:
+1. **resistance-research Agent** (May 28 execution automation):
+   - ✅ **synthesis-execution-monitor-checkpoint.md** (895 words): Real-time monitoring for May 28 19:00 UTC synthesis execution. Concrete verification signatures, success/failure detection pathways documented.
+   - ✅ **may-28-outcome-routing.md** (870 words): Strict IF/THEN routing (STRONG/MODERATE/WEAK/TOO_EARLY/DELIVERY_PROBLEM → specific actions). Hard resolution rules explicitly documented.
+   - ✅ **user-notification-templates.md** (490 words): Slack/Discord notifications for each outcome (copy-paste ready, <30 sec activation).
+   - ✅ **domain-56-distribution-checklist.md** (710 words): 4-phase checklist (pre-flight verification, execute sends, post-send logging, response follow-up). Includes timing windows and rollback procedures.
+   - ✅ **distribution-metrics-dashboard-template.md**: 6 tracking surfaces (send log, Bitly clicks, response log, rate summary, org tracker, Tier 3 activation).
+   - **⚠️ Pre-flight check**: `execution/domain-56-email-template.md` must be reviewed for outstanding [fill] placeholders before May 28 14:00 UTC send window.
 
-1. **systems-resilience Agent** (Phase 4/5 activation bridges):
-   - Verified existing deliverables from Session 1708: PHASE_4_OPTION_A/B/C_QUICKSTART.md + PHASE_4_DECISION_BRIDGE.md
-   - All 4 documents production-ready (copy-paste format, zero placeholders, calendar-anchored)
-   - Status: VERIFIED READY FOR MAY 31 USER DECISION
-   - No new files needed; existing Phase 4 quick-starts cover all specifications
+2. **general-research Agent** (systems-resilience Phase 6 author + launch prep):
+   - ✅ **author-confirmation-email.md** (300-400 words): Professional email to proposed Domain A co-author. Role scope, compensation, deadline (May 30 16:00 UTC), 3 fallback paths.
+   - ✅ **author-outreach-tracking.md** (200 words): Live contact log with 5 critical gate triggers (follow-up May 30 14:00, deadline 16:00, fallback May 31 08:00, user lock May 31 23:59, activation June 1 06:00).
+   - ✅ **phase-6-domain-a-research-roadmap.md** (800 words): Five research gaps identified (timebanking data, Midwest barriers, inter-community trade HIGH PRIORITY, USDA grant mechanics, CLT legal). August 9 USDA deadline explained. Citation strategy documented.
+   - ✅ **phase-6-author-onboarding-kit.md** (600 words): Phase 1-5 context, scope definition, style guide (community playbook model), success criteria (45-55K words, 120-150 citations, Zone 5 examples).
+   - ✅ **phase-6-project-init.sh** (160 lines): Idempotent setup script. Creates directories, initializes WORKLOGs, copies onboarding kit. Includes `--dry-run` and rollback support with manifest tracking.
 
-2. **seedwarden Agent** (Phase 3 medicinal herbs production optimization):
-   - Delivered 8 production-ready documents for June 22–July 13 execution window:
-     - `PHASE_3_MEDICINAL_HERBS_FINALIZED_SELECTION.md` — 7-herb selection framework with demand/supply/margin analysis
-     - `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER_FINAL.csv` — Supplier lead times, pricing, June 21 delivery confidence
-     - `PHASE_3_CRITICAL_PATH_ANALYSIS_JUNE22_JULY13.md` — Writing identified as sole binding constraint; per-week milestones
-     - `PHASE_3_PHOTOGRAPHY_STAGING_CHECKLIST.md` — 4-day shoot schedule (June 20–23 + flex day)
-     - `PHASE_3_CANVA_WORKFLOW_OPTIMIZATION.md` — Palette swap workflow, batch production sequence
-     - `PHASE_3_PRODUCTION_TIMELINE_GANTT_FINAL.csv` — 65-row Gantt timeline (May 30–Aug 3)
-     - `PHASE_3_DECISION_GATES_FRAMEWORK.md` — 4 gates with go/no-go criteria (June 15, 21, 29, July 8)
-     - `PHASE_3_SUPPLY_CHAIN_RISK_MITIGATION.md` — Backup suppliers, failure scenarios, recovery options
-   - All documents production-ready (zero placeholders, calendar-anchored deadlines, copy-paste formatted)
-   - Status: READY FOR JUNE 1 PRE-PRODUCTION TASK ACTIVATION
+**Files Committed** (all on master):
+- b9a64785: resistance-research May 28 infrastructure (5 files)
+- 13449ccc: systems-resilience Phase 6 infrastructure (5 files)
 
-### Critical Path & User Actions Needed
+### Critical Path & User Actions Needed (Next 96 Hours)
 
-**May 28 (tomorrow)**: Domain 56 distribution (14:00–18:00 UTC) — user action: fill template fields, verify contacts, execute sends
+**May 27 TODAY (next hours)**:
+- ⏰ **CRITICAL DECISION NEEDED**: stockbot JPM model type decision (Lever B: Option A retrain vs. Option B config). User approval needed NOW for May 29-31 deployment window.
 
-**May 30 (3 days)**: Seedwarden Track B launch (08:00–21:00 UTC) — user action: 3.5–4 hours per runbook
+**May 28 (tomorrow)**:
+- **14:00–18:00 UTC**: Domain 56 Tier 1 send window
+  - User action: Fill [YOUR_NAME] + [YOUR_CONTACT_INFO], verify 3 contact emails, execute sends via `execution/domain-56-email-template.md`
+  - Automation ready: Monitoring, metrics, Tier 3 routing pre-staged
+  - **Pre-flight**: Verify template file has no outstanding [fill] placeholders
+- **19:00 UTC**: Synthesis execution (automated, user monitors via new monitoring checkpoint files)
 
-**May 31 (4 days)**: systems-resilience Phase 5 decision + Phase 6 domain selection (user action: 15 minutes to choose A/B/C + domain)
+**May 30 (in 3 days)**:
+- **08:00–21:00 UTC**: seedwarden Track B launch (user action: 3.5–4 hours per runbook)
+- **16:00 UTC**: systems-resilience author confirmation deadline (HARD GATE for Option A timeline)
+  - Automation ready: Outreach email pre-written, tracking spreadsheet initialized, fallback paths staged
 
-**June 1**: Parallel execution activation (Phase 4 quick-start launch + Phase 3 pre-production task initiation)
+**May 31 (in 4 days)**:
+- **23:59 UTC**: HARD DEADLINE for two Phase 5+6 decisions
+  - Decision 1: Phase 5 publication timing (Option A/B/C) — recommendation: **Option A (Wave 1 June 5-15, Wave 2 June 30)**
+  - Decision 2: Phase 6 domain selection — recommendation: **Domain A solo or A+D combo** for maximum value
 
 ### Active Blocks Status
 
-All 3 hard blockers unchanged (require user decisions, not orchestrator action):
-- **stockbot JPM model type**: Decision due May 27 EOD (Option A: retrain ridge_wf vs. Option B: update config to lgbm_ho)
-- **resistance-research May 28 Domain 56**: User send window 14:00–18:00 UTC (fill placeholders, execute)
+All 3 hard blockers unchanged (require user decisions):
+- **stockbot JPM model type**: Decision due May 27 EOD ⏰ **URGENT**
+- **resistance-research May 28 Domain 56**: User send window 14:00–18:00 UTC (infrastructure ready, user fills + executes)
 - **seedwarden May 30 Track B**: Launch day execution (user: 3.5–4 hours per runbook)
 
-### Files Ready for Commit
+### Usage Budget
 
-- 8 seedwarden Phase 3 optimization files (all new, staged for commit)
-- WORKLOG.md + CHECKIN.md updated with Session 1710 summary
+> Last calibrated May 26, 2026 at 0.0% (Sonnet) / 2.0% (all-models) — reset Tuesday 05:00 UTC
+> Current: Sonnet 1.5% (362K tokens used) — healthy headroom remaining for May 27-31
 
-**Next session focus**: May 28–31 critical path monitoring + June 1 activation
+### Needs Your Input
+
+1. **stockbot Lever B decision** (due today May 27): 
+   - Option A: Retrain JPM with ridge_wf architecture (preserves design intent, 2-3 hrs, new stacker_id)
+   - Option B: Update config to use lgbm_ho (faster pre-flight, 30 min, reduces architecture diversity)
+   - **Recommendation**: Option B (faster activation, lower June incident risk, ridge_wf deferrable to June 15+)
+   - **Action**: Reply with selected option so May 29-31 Jetson deployment can execute autonomously
+
+2. **domain-56-email-template.md verification** (due before May 28 14:00 UTC):
+   - Check file at `projects/resistance-research/execution/domain-56-email-template.md`
+   - Verify no outstanding [fill] placeholders besides [YOUR_NAME] and [YOUR_CONTACT_INFO]
+   - If clean, ready for May 28 send. If issues found, alert orchestrator immediately.
+
+3. **seedwarden Track B launch prep** (due before May 30 08:00 UTC):
+   - Review May 30 runbook (created in Session 1709)
+   - Confirm 3.5–4 hour operator availability May 30 morning
+   - Pre-stage any required materials (Shopify access, upload location, social templates)
+
+**Next session focus**: May 28–31 critical path execution + June 1 parallel activation
 
 ---
 
