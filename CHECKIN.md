@@ -1,5 +1,40 @@
 # 🎯 CURRENT STATUS — May 27, 2026
 
+## Since Last Check-in (Session 1718 Orchestrator, May 27 ~14:30 UTC) — 🔴 **LEVER B DECISION DEADLINE: MAY 27 20:30 UTC (6 HOURS)** | ✅ MAY 28-31 INFRASTRUCTURE PRODUCTION-READY
+
+### ⚠️ CRITICAL: Lever B Decision Due Today
+
+**STATUS**: stockbot Lever B decision REQUIRED by **May 27 20:30 UTC** (~6 hours from now). User choice between:
+- **Option A**: Retrain JPM ridge_wf (2-3 hours, preserves architecture diversity, higher complexity)
+- **Option B**: Config update to lgbm_ho (30 minutes, faster activation, recommended for May 28-31 timeline)
+
+**AUTO-ESCALATION**: If no user decision by 20:30 UTC, system automatically escalates to **Option B** per Session 1713 protocol.
+
+**RUNBOOKS READY**: Both Option A (retraining) and Option B (config update) have complete deployment checklists, validation procedures, and rollback paths staged and committed to master.
+
+**Recommendation**: **Option B** (faster activation + lower June incident risk + consistent with AMZN lgbm_ho baseline)
+
+**Next Step**: User decision due by May 27 20:30 UTC via CHECKIN.md response → orchestrator executes appropriate runbook May 28-29 → May 28-31 monitoring autonomous
+
+---
+
+### ✅ MAY 28-31 Critical Path: 100% Pre-Staged & Ready
+
+| Deadline | Event | Status | Owner | Notes |
+|----------|-------|--------|-------|-------|
+| **May 27 20:30 UTC** | **Lever B decision** | ⏳ AWAITING USER | User | Auto-escalates Option B if no input |
+| May 28 14:00 UTC | Domain 56 email templates filled | ⏳ User action | User | ~20 min, all copy pre-written |
+| May 28 19:00 UTC | Synthesis execution (TOO_EARLY contingency) | ✅ AUTONOMOUS | System | May 28 synthesis routing + May 25 signal log status both staged |
+| May 28-31 | Trading monitoring (4 daily checkpoints) | ✅ AUTONOMOUS | System | Dashboard + thresholds + escalation gates all pre-configured |
+| May 29-31 | Lever B deployment (Option A or B) | ✅ READY | Orchestrator | Both runbooks staged; execution triggers post-decision |
+| May 30 | seedwarden Track B launch (pre-launch outreach May 28) | ✅ User + System | User | All runbooks + decision trees ready; zero setup lag |
+| May 31 23:59 UTC | Phase 5/Phase 6 user decisions | ✅ READY | User | Decision matrices + agent briefs + default activation paths all staged |
+| June 1 06:00 UTC | Phase 4/5 + Phase 3 Wave 2 + Phase 6 activation | ✅ AUTONOMOUS | System | All quickstart checklists + runbooks ready; 15-min setup lag max |
+
+**Status**: May 27-31 requires exactly 2 user decisions (Lever B by 20:30 UTC today, Phase 5/6 by May 31 23:59 UTC). All execution is either autonomous (monitoring, synthesis, routing) or pre-staged with zero-setup runbooks.
+
+---
+
 ## Since Last Check-in (Session 1717 Orchestrator, May 27 ~13:30 UTC) — 🟠 EXPLORATION QUEUE ANALYSIS: ALL PROJECTS BLOCKED ON EXTERNAL DEPENDENCIES, 0 AUTONOMOUS WORK AVAILABLE
 
 **Status**: ⏳ **All Priority 1-6 projects awaiting user decisions/external actions** | ⏳ **Exploration queue at 0 items (all prior items complete)** | ⏳ **May 27 20:30 UTC stockbot Lever B escalation gate 11 hours away** | ⏳ **May 28-31 critical path fully pre-staged in prior sessions** | 🎯 **READY FOR MAY 28 SYNTHESIS & DEPLOYMENT EXECUTION**
