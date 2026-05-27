@@ -4,6 +4,63 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — Phase 3 Production Optimization Framework — May 31, 2026
+
+**Task**: Create Phase 3 production optimization framework (5 primary files + 1 companion) enabling rapid Phase 3 execution upon June 15–20 data arrival. All files decision-agnostic (work regardless of Phase 2 outcome). Staged for June 1 review; orchestrator runs decision tree June 20.
+
+**Files produced** (all in `projects/seedwarden/`):
+
+1. `PHASE_3_PRODUCTION_ACCELERATION_FRAMEWORK.md` — 3,200 words. Three launch scenarios (A/B/C), per-scenario timelines, parallelization strategy during Phase 2 observation window, cost model, author hiring framework adapted from systems-resilience AUTHOR_HIRING_RUNBOOK.md for product content authors. Primary coordination document.
+
+2. `PHASE_3_CONTENT_AUTHORING_TEMPLATE_KIT.md` — 2,300 words. Per-bundle master template, per-species 7-section content block template, practitioner 10-pack section template, Full Library Bundle intro template, common pitfalls, quality checklist (botanical accuracy, contraindication completeness, sourcing verification, FTC compliance).
+
+3. `PHASE_3_BUNDLE_MASTER_TEMPLATE.md` — 2,400 words. Complete Women's Health bundle with filled Introduction block and two fully written species blocks (Lavender and Black Cohosh) at production standard. Copy-paste ready for second author or reuse. Cross-referenced against `phase-3-medicinal-herbs-sourcing-guide.md` for photo sourcing paths.
+
+4. `PHASE_3_PHOTOGRAPHER_AND_SOURCING_RUNBOOK.md` — 1,900 words. Per-bundle sourcing checklist, botanical garden contact list with lead times (NC Botanical Garden, Missouri Botanical Garden, Vermont Wildflower Farm, Mt. Cuba Center, Chicago Botanic Garden, Lady Bird Johnson Wildflower Center), photographer outreach template + shoot brief, 10-day photo delivery timeline, CITES/UpS legal verification, photo delivery checklist with naming convention.
+
+5. `PHASE_3_RAPID_DECISION_TREE.md` — 1,300 words. One-page flowchart for June 20 execution. Exact data gate thresholds for Scenarios A/B/C and Defer. Per-outcome execution packages with immediate action checklists. Rollback scenario. Orchestrator executes in under 5 minutes on June 20.
+
+6. `PHASE_3_UPLOAD_SEQUENCE_OPTIMIZATION.md` — 1,100 words. Upload sequencing (Week 1/3/5/7 stagger), variant SKU model (single/10-pack/library), photo asset directory structure and naming convention, tag strategy by bundle (differentiated from Phase 1/2 tags), pricing test matrix ($12.99–$16.99), Etsy shop description additive update, cross-selling strategy (Phase 2 buyers → Phase 3).
+
+7. `PHASE_3_ETSY_LISTING_CHECKLIST.md` — Per-bundle one-page checklist with SKU + tags + title + description + photos checklist for all 4 Phase 3 bundles + Full Library Bundle. Run before any Etsy publish action.
+
+**Key decisions locked**:
+- June 20 is the orchestrator decision date (data gates: conversion >1.5%, cohort >20%, revenue >$200 minimum for any Phase 3)
+- Scenario A (Women's Health solo): July 15–19 upload target from June 20 decision
+- Scenario C (Full quad): Requires second author; August 16 final upload
+- Author hiring pre-shortlist builds during Phase 2 observation window (June 1–14); outreach only on June 21 if Scenario B/C confirmed
+- All templates cross-referenced against existing `PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md` structure (no structural conflicts)
+- Black Cohosh and Goldenseal conservation sidebars mandatory per UpS/CITES status
+- No Phase 1/2 tags reused in Phase 3 listings (differentiation preserved)
+
+**Cross-references**:
+- All files reference `PHASE_3_DECISION_GATES_FRAMEWORK.md` (sprint gates — still authoritative for June 15/21/29/July 8 gates)
+- Author hiring pattern from `projects/systems-resilience/AUTHOR_HIRING_RUNBOOK.md` — structure preserved, criteria adapted for product content voice
+- Photo sourcing paths confirmed against `phase-3-medicinal-herbs-sourcing-guide.md` (May 7 document)
+
+---
+
+## Session — Phase 3 June 22 Production Sprint Materials — May 27, 2026
+
+**Task**: Produce 8 production-ready Phase 3 medicinal herbs documents for June 1 pre-production launch and June 22–July 13 sprint execution.
+
+**Files produced**:
+1. `PHASE_3_MEDICINAL_HERBS_FINALIZED_SELECTION.md` — Decision-locked 7-herb selection with demand justification, supplier confidence, audience segments, and cross-sell matrix. Supersedes prior selection documents.
+2. `PHASE_3_SUPPLIER_CONFIRMATION_TRACKER_FINAL.csv` — 7-row per-herb tracker with primary/secondary supplier, lead times, June 21 delivery confidence, current pricing (May 2026), and critical notes.
+3. `PHASE_3_CRITICAL_PATH_ANALYSIS_JUNE22_JULY13.md` — 22-day sprint calendar with per-week milestone checks, float inventory for all tracks (writing sole binding constraint), recovery options at June 24/June 29/July 5/July 12 gates, and pre-sprint June 1–21 checklist.
+4. `PHASE_3_PHOTOGRAPHY_STAGING_CHECKLIST.md` — 4-day shoot schedule (June 20–23 + June 24 flex), per-bundle photo types, lighting/location specs, Phase 2 aesthetic consistency rules, props acquisition list, minimum deliverables.
+5. `PHASE_3_CANVA_WORKFLOW_OPTIMIZATION.md` — Palette swap workflow, Brand Kit setup (June 21, 15-minute action), per-bundle cover adaptation, zone card specs, batch production sequence, Google Docs fallback protocol.
+6. `PHASE_3_PRODUCTION_TIMELINE_GANTT_FINAL.csv` — 65 rows, June 22–August 3, task/category/duration/start/end/float/dependencies/owner/critical-path/notes. Covers all tracks: writing, design, photography, sourcing, logistics, upload, marketing.
+7. `PHASE_3_DECISION_GATES_FRAMEWORK.md` — 4 gates: June 15 (pre-sprint authorization), June 21 (assets complete), June 29 (mid-sprint checkpoint), July 8 (pre-upload assets complete). Each with inputs, pass/fail criteria, and go/no-go + recovery logic.
+8. `PHASE_3_SUPPLY_CHAIN_RISK_MITIGATION.md` — Current supplier status (May 26), failure scenarios + responses for 6 named scenarios, lead time buffer analysis (which suppliers must be ordered by June 8), mfg-farm coordination note.
+
+**Key findings**:
+- Writing is the sole critical-path constraint. All other tracks carry 3–14 days of float.
+- June 24 D3 pace gate is the highest-composite-risk event in the entire sprint. Below 2,500 WH words = activate Option C immediately.
+- Mountain Rose Herbs June 13 order + June 15 hard deadline is the only supply chain item that can affect photography timing.
+- All 7 sprint herbs have confirmed Wikimedia CC-BY-SA or iNaturalist CC-BY coverage at launch quality. No supplier failure can block the sprint.
+- These documents operationalize `PHASE_3_MEDICINAL_HERBS_CRITICAL_PATH.md` v8.0 (May 22) into calendar-anchored action. They do not replace v8.0 — cross-reference both.
+
 ## Session 1701e-followup — May 30 Track B Launch Pre-Flight — May 27, 2026
 
 **Task**: Final pre-flight verification for May 30 Track B launch. Gist accessibility test, PDF download verification, contact list audit, template check, monitoring dashboard setup guide, May 30 timeline.
