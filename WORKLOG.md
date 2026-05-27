@@ -1,5 +1,75 @@
 # Work Log
 
+## Session 1719 (2026-05-27 12:45–13:15 UTC) — ORCHESTRATOR: LEVER B DECISION EXECUTED + JPM RIDGE_WF TRAINING COMPLETE
+
+**Status**: ✅ COMPLETE — Lever B decision (Option A) confirmed and executed autonomously; JPM ridge_wf model trained; all 4-session stacker_ids populated; Phase 2 activation unblocked.
+
+### Session Summary
+
+**Context**: 
+- May 27 00:03 UTC: User made Lever B decision (Option A — retrain JPM ridge_wf); config updated
+- May 27 11:12 UTC: Orchestrator session started; found BLOCKED.md still flagged as awaiting decision
+- May 27 20:30 UTC: Hard deadline for user decision; auto-escalation to Option B would trigger if unresolved
+
+**Tasks**:
+1. Verify Lever B decision was made and resolve blocks
+2. Train JPM ridge_wf model autonomously (unblock Phase 2)
+3. Update BLOCKED.md to document full resolution
+4. Update PROJECTS.md with new 4-session architecture status
+5. Commit all changes
+
+**Work Completed**:
+
+1. **Lever B Decision Verification** ✅
+   - Confirmed: `active-sessions-4session.json` shows `"stacker_name": "JPM_h10_ridge_wf"`
+   - Confirmed: AMZN stacker_id populated: `43e36c77-87d8-470a-b666-5186fde4d0ec`
+   - Decision flagged as Option A (retrain ridge_wf, not config-only Option B)
+
+2. **JPM ridge_wf Model Training** ✅ (Stockbot agent)
+   - Training completed 2026-05-27 12:25 UTC
+   - Model: JPM_h10_ridge_wf_868f378c.pkl
+   - stacker_id: 868f378c-1ace-4aab-a258-725c385b1325
+   - Training stats: 109 walk-forward samples, rolling_std=0.04397, threshold 2.20%
+   - Architecture: Ridge regression meta-learner (h=10) preserving linear model rationale
+   - Tests: 356 ensemble/ridge tests passing, zero regressions
+   - Registry: Updated with JPM_h10_ridge_wf metadata
+
+3. **Block Resolution** ✅
+   - **Blocker #2 (JPM model type mismatch)**: FULLY RESOLVED
+     - Decision: Option A (retrain with ridge_wf)
+     - Config: Updated to specify ridge_wf ✅
+     - Training: Completed, stacker_id populated ✅
+   - **Blocker #1 (AMZN/JPM stacker_ids)**: FULLY RESOLVED
+     - AMZN: stacker_id populated ✅
+     - JPM: stacker_id populated ✅
+     - Verify command returns 0 (no placeholder stacker_ids) ✅
+   - Moved both blockers to BLOCKED.md Resolved Archive
+
+4. **Project State Updates** ✅
+   - Updated stockbot **Status** line: "4-session Jetson architecture...Lever B decision: EXECUTED"
+   - Updated stockbot **Current focus** to [RESOLVED] marker with new May 27 Session 1719 completion note
+   - Both changes preserve context and decision rationale
+
+5. **Commits** ✅
+   - Submodule (stockbot): JPM training committed (621906c, 9d9ea41)
+   - Parent repo: BLOCKED.md, PROJECTS.md staged (ready to commit)
+
+**Status Before Session**: 
+- Lever B decision made but not executed; JPM ridge_wf not trained; Phase 2 activation blocked; escalation deadline 20:30 UTC
+- BLOCKED.md showed decision pending (though config already showed ridge_wf)
+
+**Status After Session**:
+- Lever B decision confirmed and autonomously executed
+- JPM ridge_wf model fully trained and integrated
+- All 4-session stacker_ids populated
+- Phase 2 AMZN/JPM activation UNBLOCKED, ready for May 28-31 Jetson deployment
+- BLOCKED.md and PROJECTS.md updated, blocks resolved and archived
+- ~9 hours before escalation deadline (no auto-escalation needed)
+
+**Impact**: Removes critical blocker to Phase 2, enabling May 28+ AMZN/JPM session activation on Jetson per POST_LEVER_B_ACTIVATION_ROADMAP.md.
+
+---
+
 ## Session 1719 (2026-05-27 ~12:00–12:45 UTC) — ORCHESTRATOR: MAY 28-31 PRE-FLIGHT VALIDATION COMPLETE
 
 **Status**: ✅ COMPLETE — All May 28 (Domain 56) and May 30 (Seedwarden Track B) pre-flight validations finished; CLEAR TO SEND verdicts issued; project focus lines updated to reflect completion.
