@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-27T04:02:30Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-27T06:04:54Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 4.1% (362,882 tokens) | All-models 1.6% | Reset in 140h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 4.1% (362,882 tokens) | All-models 1.8% | Reset in 138h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[RESOLVED] MAY 28 DOMAIN 56 DISTRIBUTION 100% READY (Session 1701e, May 27 04:40 UTC)** — Domain 56 Gist verified live (HTTP 200), all 8 PDFs accessible + downloadable. Email templates confirmed clean (zero [fill] placeholders). Monitoring infrastructure production-ready (7-sheet dashboard spec, formula library, decision trees). **User actions remaining for May 28 14:00–18:00 UTC send**: (1) Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in domain-56-email-template.md (~5 min), (2) Personali … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED] MAY 28 DOMAIN 56 DISTRIBUTION 100% READY (Session 1702, May 27 06:00 UTC — VERIFICATION COMPLETE)** — Domain 56 Gist verified live (HTTP 200), all 8 PDFs accessible + downloadable, 47 citations confirmed. Email templates confirmed clean (zero [fill] placeholders), 4 distinct templates for 11 Tier 1-3 contacts. Monitoring infrastructure production-ready (7-sheet dashboard spec verified, formula library, decision trees). Synthesis outcome is non-blocking per contingency design … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -41,11 +41,11 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[RESOLVED] Phase 5.1 MVP MERGED (May 26)** — ✅ Feature merged (commit c2572adc), 240 backend tests + 51 ZIM tests passing, export endpoint complete. Pre-deployment checklist staged (libzim wheel, alembic upgrade, manual ZIM test). Phase 5.2 direction: Candidate 1 (ZimWriter) recommended, Candidates 2-3 (OPDS, A11y) ready for parallel development. Awaiting user approval on Phase 5 focus direction.
+**Focus**: **[RESOLVED] Phase 5.1 MVP MERGED (May 26)** — ✅ Feature merged (commit c2572adc), 240 backend tests + 51 ZIM tests passing, export endpoint complete. Pre-deployment checklist staged (libzim wheel, alembic upgrade, manual ZIM test). **Phase 5.2 CANDIDATES ASSESSED (Session 1702, May 27)** — Candidate 1: ZimWriter (actually Phase 5.1 final work, 8-11 hrs remaining, June 5-10 ready). **Candidate 2 (OPDS Feed Generator — HIGHEST PRIORITY FOR PHASE 5.2 WAVE 1)**: 8-11 hours, 95% scaffold com … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: **DECISIONS NEEDED BY MAY 31** — See `JUNE_1_ACTIVATION_SUMMARY.md` for full readiness picture. Phase 5 is 100% production-ready (66,442 words, 423 citations, 12 documents, zero placeholders verified May 27). Phase 6 groundwork complete and committed (candidate outlines for Domains A/C/D, selection matrix, sequencing recommendation). Two user decisions gate June 1 activation: (1) **Phase 5 publication timing** — Option A (Wave 1+2 June 5 + Wave 3 June 30, recommended), Option B (unified June … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **DECISIONS NEEDED BY MAY 31** — Phase 5 is 100% production-ready (66,442 words, 423 citations, 12 documents, zero placeholders verified May 27). **✅ Phase 6 DECISION FRAMEWORK COMPLETE (Session 1702, May 27)** — `PHASE_6_DECISION_FRAMEWORK.md` (485 lines, production-ready). **✅ PHASE 5 PUBLICATION EXECUTION TOOLKITS COMPLETE (Session 1704, May 27)** — All 5 toolkit documents production-ready: `phase-5-decision-to-execution-bridge.md` (15-min activation protocol), `phase-5-option-a-exe … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
