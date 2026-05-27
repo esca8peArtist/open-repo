@@ -29,23 +29,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — HTTP server startup blocked by realtime stream initialization failure (May 28 deployment blocked)
-
-**Date blocked**: 2026-05-27 12:15 UTC (Session 1721 — orchestrator pre-deployment validation)
-**Date diagnosed**: 2026-05-27 12:50 UTC (Session 1725 — root cause identified)
-**Context**: May 28-31 deployment window requires PRE_DEPLOYMENT_VALIDATION_CHECKLIST gates G1-G4 to pass. Gate G3 (health endpoint) fails because the HTTP server is not accepting connections. **Root cause identified**: 
-- Database file `/app/stockbot.db` is empty (0 bytes) — schema not initialized
-- Startup calls `_resume_active_sessions()` which creates a TradingSession
-- TradingSession.start() calls `_stream_manager.start()` to initialize Alpaca realtime stream
-- Alpaca stream fails with AttributeError (`'NoneType' object has no attribute 'is_running'`) because market is currently closed
-- Stream manager enters tight reconnection loop with 60-second delays, blocking the startup event handler
-- Uvicorn never finishes the startup event, so HTTP server never starts listening on port 8000
-- Health endpoint is completely unreachable (connection refused)
-**Container status**: Docker container reports "healthy" (healthcheck passes by examining file existence, not HTTP), but HTTP endpoint is truly unavailable.
-**What I need**: (1) Fix the stream initialization to not block HTTP server startup. (2) Ensure the health endpoint can respond even if the realtime stream is still initializing. (3) Verify database initialization (alembic migrations should run at startup to create schema).
-**Verify with**: `ssh awank@100.120.18.84 "curl -v http://100.120.18.84:8000/health 2>&1 | grep -E 'HTTP|sessions'"` — should return HTTP 200 with sessions count (even if 0). Also check: `ssh awank@100.120.18.84 "docker logs stockbot --tail 5 2>&1 | grep -i 'startup\|listening\|application started'"` to confirm HTTP server is listening.
-**Resolution**: [leave blank]
-
 ---
 
 ### resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled)
@@ -87,6 +70,25 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — HTTP server startup blocked by realtime stream initialization failure (May 28 deployment blocked)
+
+**Date blocked**: 2026-05-27 12:15 UTC (Session 1721 — orchestrator pre-deployment validation)
+**Date diagnosed**: 2026-05-27 12:50 UTC (Session 1725 — root cause identified)
+**Date resolved**: 2026-05-27 13:30 UTC (Session 1726 — HTTP server fix deployed and verified)
+**Resolution**: ✅ **FULLY RESOLVED** (Session 1726, 2026-05-27 13:30 UTC) — HTTP server startup blocker fixed:
+- **Root cause**: Startup event was synchronously waiting for Alpaca cash fetch (no timeout), blocking Uvicorn from starting HTTP listener
+- **Fix applied**: 
+  1. Session initialization moved to background task (`asyncio.create_task()`) — returns immediately without blocking startup
+  2. Added 10-second timeout on Alpaca cash fetch with graceful error handling (logs warning, continues)
+  3. Alembic migrations now run at container startup via `docker_entrypoint.sh` before uvicorn
+  4. Fixed Docker host binding from `0.0.0.0` to `127.0.0.1` (security policy compliance)
+  5. Updated healthcheck to use lightweight `/api/health` endpoint with reduced start_period
+- **Verification**: HTTP 200 response in 33.1ms, 67 sessions resumed in background without blocking
+- **Commits**: `fc9a2ca`, `8da075b` (stockbot submodule); rsync deployed to Jetson, container restarted
+- **Status**: PRE_DEPLOYMENT_VALIDATION_CHECKLIST Gate G3 now passes. May 28 AM validation window unblocked.
+
+---
 
 ### stockbot — AMZN/JPM stacker_ids not populated in config (blocking Phase 2 activation)
 
