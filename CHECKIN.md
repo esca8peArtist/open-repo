@@ -1,8 +1,56 @@
 ---
 
-# 🎯 CURRENT STATUS — May 27, 2026, ~07:00 UTC
+# 🎯 CURRENT STATUS — May 27, 2026, ~08:00 UTC
 
-## Since Last Check-in (Session 1701i Orchestrator, May 27 ~06:30 UTC) — ✅ DEADLINE EXECUTION SUPPORT DOCS COMPLETE: ALL MAY 28-30 ACTIONS TIMESTAMPED AND CONTINGENCY-MAPPED
+## Since Last Check-in (Session 1701j Orchestrator, May 27 ~07:30 UTC) — ✅ PHASE 6 DECISION SUPPORT COMPLETE: USER MAY 31 CHOICE FULLY CONTEXTUALIZED
+
+**Status**: ✅ **PHASE 6 DOMAIN SCREENING PRODUCTION-READY** | ✅ **THREE DECISION-SUPPORT DOCS COMMITTED** | 🎯 **MAY 31 USER DECISION WINDOW FULLY PREPARED**
+
+### Session 1701j Accomplishments (May 27, ~07:30 UTC)
+
+**Deliverables** (3 Decision-Support Documents for Phase 6 User Selection):
+
+1. ✅ **PHASE_6_DOMAIN_SCREENING.md** (3,800 words)
+   - **Section 1**: One-pager per candidate domain (Community Economic Resilience, Skills Development, Governance Scaling)
+     - Problem definition, research scope (3 core questions per domain), expected word count & depth, source library readiness (75-80% / 70-75% / 65-70%), production hours (220 / 240 / 265), cross-domain bridges, unique contribution
+   - **Section 2**: Decision matrix (3 domains × 5 criteria: Urgency, Availability, Leverage, Scope Fit, User Interest Signals)
+     - Numerical scores 1-5 with rationale paragraphs per cell
+     - Summary: Economic Resilience highest urgency (July 13 deadline for Q3 community organizing); Skills Dev highest 10-20yr leverage; Governance highest strategic multiplier but complexity risk
+   - **Section 3**: Sequencing recommendation
+     - Single-domain scenario: Economic fastest (Aug 9), highest confidence (95%)
+     - Two-domain scenario: Economic + Governance pairing recommended (mitigates risk; Governance benefits from Economic research)
+     - Three-domain scenario: All executable; Governance pushed to Aug 30 (latest completion)
+   - **Section 4**: Copy-paste June 1 orchestrator kickoff template with bracketed fill-ins, checkpoint dates, section writing standards, delivery checklist
+
+2. ✅ **PHASE_6_DECISION_TREE.md** (~900 words)
+   - **Entry point**: "How many Phase 6 domains do you want to research?"
+   - **Four main branches**: 1 domain, 2 domains, 3 domains, defer to Phase 7
+   - **Sub-branches per domain**: Each specific domain → production start date, delivery target, confidence %, dependency risks
+   - **Leaf nodes**: All terminate in named June 1 kickoff actions (e.g., "Begin Economic Resilience production June 8; deliver by August 9 for Q3 community organizing window")
+   - **Summary table**: All decision paths in one view (4 primary + 6 pairing combinations + 1 defer path = 11 total named outcomes)
+
+3. ✅ **PHASE_6_EFFORT_ESTIMATES.csv** (8 columns)
+   - **3 rows** (one per domain): Research Hours, Source Library %, Pre-work Complete?, Production Start, Expected Completion, Conflicts with Phase 5?, User Approval Date
+   - **Key metrics pre-filled**:
+     - Community Economic: 220 hrs, 75-80% sourced, Aug 9 delivery, 95% confidence
+     - Skills Development: 240 hrs, 70-75% sourced, Aug 23 delivery, 88% confidence
+     - Governance Scaling: 265 hrs, 65-70% sourced, Aug 30 delivery, 78% confidence (highest risk due to scope expansion potential)
+
+**Impact**: User can make May 31 decision with full confidence. All three domains have clear effort estimates, unique value propositions, and explicit June 1 kickoff templates ready. Zero post-decision planning overhead.
+
+**Files Committed**: All three docs to projects/systems-resilience/phase-6-decision-support/ + master commit
+
+**Synthesis Status Verification**:
+- Ran `synthesis-execution-monitor.py` on resistance-research: Signal log still has 20 unfilled [fill] fields (no change from May 25)
+- May 25 re-synthesis did NOT execute (user action required: fill signal log with May 20-25 response data)
+- May 28 re-synthesis still scheduled for 19:00 UTC (TOO_EARLY contingency remains active)
+- Domain 56 distribution proceeds regardless per contingency path
+
+**Blocks Unchanged**: No new blocks resolved this session; all remain as documented in BLOCKED.md
+
+---
+
+## Previous Check-in (Session 1701i Orchestrator, May 27 ~06:30 UTC) — ✅ DEADLINE EXECUTION SUPPORT DOCS COMPLETE: ALL MAY 28-30 ACTIONS TIMESTAMPED AND CONTINGENCY-MAPPED
 
 **Status**: ✅ **THREE CRITICAL USER EXECUTION SUPPORT DOCS CREATED** | ✅ **MAY 28 DOMAIN 56 READY FOR 14:00-18:00 UTC SEND** | ✅ **MAY 30 SEEDWARDEN TRACK B READY FOR 08:00 UTC LAUNCH** | ✅ **STOCKBOT JPM DECISION FRAMEWORK READY FOR USER CHOICE**
 
