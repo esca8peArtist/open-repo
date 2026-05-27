@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-27T15:21:24Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-27T15:57:09Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 4.2% (378,236 tokens) | All-models 2.6% | Reset in 129h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 4.2% (378,236 tokens) | All-models 2.6% | Reset in 128h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -67,12 +67,6 @@
 ---
 ---
 ---
-### resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled)
-**Date blocked**: 2026-05-21 07:58 UTC (Session 1453 — orchestrator discovery); **Status changed**: 2026-05-21 18:54 UTC (Session 1476 — synthesis execution verification)
-**Context**: Resistance-research Phase 2 synthesis execution was scheduled for May 21 19:00 UTC. Orchestrator verification at 18:54 UTC (5 min before deadline) confirmed that the signal log (`post-wave-1-monitoring/wave-1-signal-log-may18-21.md`) remains unfilled — 20 [fill] placeholders remain unfilled. Synthesis-execution-monitor.py script run at 18:54 UTC returned error: "Signal log has 20 unfilled [fill] fields. User must complete the May 21 snapshot section before synthesis can run." As of May 21 18:54 UTC, synthesis WILL NOT execute at 19:00 UTC deadline. Per protocol, moving to TOO_EARLY contingency path (synthesis window: May 28). All four contingency playbooks (STRONG/MODERATE/WEAK/TOO_EARLY) are pre-staged in post-synthesis-contingency-execution-playbooks.md. TOO_EARLY path is temporary — classified as such because data collection window has not closed (May 25 final gate allows law school contacts 7+ days to reply, think tank contacts 5+ days). Mandatory re-synthesis will occur May 25 with all 7-day data.
-**What I need**: (A) IMMEDIATE (by May 22 evening): Fill the signal log with any May 20-21 response data collected so far (can be partial; re-synthesis will run with all available data May 25). (B) TIMING: Full 7-day signal log fill required by May 25 18:00 UTC for May 25 re-synthesis execution. (C) SECONDARY: Trump v. Barbara ruling status (if issued since May 21, log for Domain 58 rapid-response activation). No blocking — Phase 2 work proceeds on TOO_EARLY path: Domain 56 + 39 distribution on schedule (May 28, June 1); Domain 57/59 pre-production hold until May 25 outcome resolution.
-**Verify with**: `grep -c '\[fill\]' /home/awank/dev/SuperClaude_Framework/projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` on May 25 17:00 UTC — should return 0 (all templates filled) to enable May 25 re-synthesis. Also verify: `cd projects/resistance-research && uv run python synthesis-execution-monitor.py 2>&1 | head -5` on May 25 19:00 UTC — should return classification result (STRONG/MODERATE/WEAK/DELIVERY_PROBLEM) instead of error message.
-**Resolution**: [leave blank — contingency activated; will resolve May 25 upon re-synthesis with complete data]
 ---
 ---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
@@ -93,13 +87,17 @@
 ### mfg-farm — Test print execution (user action required)
 **Date blocked**: 2026-05-13
 **Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
+**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
+**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
+**Resolution**: [leave blank]
+---
 
 ## Recently Resolved (last 5)
+• resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled) ← 2026-05-27 15:50 UTC (Session 1741 — orchestrator verification)
 • stockbot — PRE_DEPLOYMENT_VALIDATION_CHECKLIST: 3 items require action before May 28 deploy ← 2026-05-27 13:52 UTC (Session 1728 — orchestrator autonomous pre-flight)
 • stockbot — HTTP server startup blocked by realtime stream initialization failure (May 28 deployment blocked) ← 2026-05-27 13:30 UTC (Session 1726 — HTTP server fix deployed and verified)
 • stockbot — AMZN/JPM stacker_ids not populated in config (blocking Phase 2 activation) ← 2026-05-27 12:30 UTC (Session 1719 — JPM ridge_wf training completed, all stacker_ids populated)
 • stockbot — JPM model type mismatch: config expects ridge_wf but only lgbm_ho pkl exists (hard blocker) ← 2026-05-27 12:25 UTC (Session 1719 — JPM ridge_wf model trained autonomously)
-• stockbot — Database backup created (pre-AMZN/JPM safety requirement) ← 2026-05-27 00:15 UTC (Session 1690 — orchestrator backup executed)
 
 ## Inbox (unprocessed)
 *(no new items)*
