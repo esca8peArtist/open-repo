@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-27T13:49:53Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-27T14:08:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 4.2% (378,236 tokens) | All-models 2.4% | Reset in 130h | check: claude.ai → Settings → Usage & billing
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **4-session Jetson architecture (AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf) COMPLETE**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 checkpoint EXECUTED (00:41 UTC, STILL_MISS_B2 outcome). Lever B decision: **EXECUTED (Option A — retrain JPM ridge_wf)**. Phase 2 AMZN/JPM activation UNBLOCKED, ready for May 28-31 Jetson deployment.
-**Focus**: ✅ **[RESOLVED] PRE_DEPLOYMENT_VALIDATION_CHECKLIST GATES EXECUTED (May 27 Session 1727)**. **Gate Results**: G1 (Market Hours) EXPECTED FAIL—safe, G2 (DB Backup) PARTIAL FAIL—refresh needed, G3 (Jetson Infrastructure) PASS, G4 (API Credentials) PASS, G5 (Local Source) PARTIAL FAIL—2 fixes needed. **Verdict: CONDITIONAL GO** — Infrastructure healthy, 3 agent-executable items for May 28 AM: (1) Refresh DB backup (5 min), (2) Rsync JPM ridge_wf pkl to Jetson (2 min), (3) Confirm runbook A … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED] PRE_DEPLOYMENT_VALIDATION + 3 EXECUTABLE ITEMS COMPLETE (May 27 Session 1728)**. **All gates passed**: G1 (Market Hours) safe, G2 (DB Backup) PASS—140 trades, G3 (Jetson Infrastructure) PASS, G4 (API Credentials) PASS, G5 (Local Source) PASS. **Pre-deployment items executed** (Session 1728, 13:52 UTC): (1) DB backup refresh ✓ 140 trades synced, (2) JPM ridge_wf rsync ✓ to Jetson /opt/stockbot/models/, (3) AMZN UUID verified ✓ 97934980-96ad-4389-8a74-5ce8c06c4c7f. **May 2 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -41,7 +41,7 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: ✅ **[RESOLVED] Phase 5.1 + 5.2 Wave 1 COMPLETE (May 26–27)** — ZimWriter export pipeline (commit c2572adc, 240 backend + 51 ZIM tests) + OPDS feed generator (commit 566f4fa6, 4 REST endpoints, 318 tests passing). Phase 5.2 Wave 2 (A11y audit, 4–14h) ready for June 1–6. Pre-deployment: libzim wheel, alembic upgrade, manual ZIM test (~2h). Next: Kiwix integration, load testing, June 12 deployment.
+**Focus**: ✅ **[RESOLVED] Phase 5.1 + 5.2 Wave 1 COMPLETE (May 26–27)** — ZimWriter export pipeline (commit c2572adc, 240 backend + 51 ZIM tests) + OPDS feed generator (commit 566f4fa6, 4 REST endpoints, 318 tests passing). Phase 5.2 Wave 2 (A11y audit, 4–14h) ready for June 1–6. **✅ Pre-deployment verification COMPLETE (May 27 Session 1728)**: (1) uv sync ✓, (2) libzim 3.10.0 installed ✓, (3) alembic 1.18.4 installed ✓, (4) 318/318 tests PASS ✓. Database migration (alembic upgrade head … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
@@ -65,41 +65,41 @@
 ## Active Blocks
 ---
 ---
-### stockbot — PRE_DEPLOYMENT_VALIDATION_CHECKLIST: 3 items require action before May 28 deploy
-**Date blocked**: 2026-05-27 13:38 UTC (Session 1727 — gate validation execution)
-**Context**: Ran full PRE_DEPLOYMENT_VALIDATION_CHECKLIST (gates G1-G4) at 13:38 UTC. Infrastructure is healthy overall but 3 items require attention before May 28 deployment. These are NOT hard blockers for the deployment window itself but must be resolved in the May 28 AM pre-deployment window before starting the runbook.
-**Gate Results**:
-- G1 (Market Hours): EXPECTED FAIL — market is open (13:36 UTC Wednesday). Deploy window is May 28 after 21:00 UTC.
-- G2 (DB Backup): PARTIAL FAIL — backup exists and is fresh (14h old), but trade count = 79 (threshold is >100). Live DB has 140 trades. Backup was created when DB had 79 trades. Needs refresh before deploy.
-- G3.1 (SSH reachable): PASS — Jetson responds in <1s
-- G3.2 (Disk space): PASS — 129GB free (threshold: 50GB)
-- G3.3 (RAM): PASS — 4532MB available (threshold: 2048MB)
-- G3.4 (Docker containers): PASS — stockbot:healthy (Up 13min), stockbot-web:Up 5 days, gitea:Up 5 days
-- G3.5 (Health endpoint): PASS (with correction) — `/api/health` at Tailscale IP returns `{"status":"ok","sessions":67}`. Checklist uses `127.0.0.1:8000/health` which is NOT bound (port binds to `100.120.18.84:8000`). Sessions=67 is the correct baseline — all 67 multi-ticker sessions from April 29 are active (not just 2-session AAPL). This is expected and valid.
-- G4.1 (Alpaca API): PASS — HTTP 200 (credentials use `ALPACA_API_KEY` env var, not `APCA_API_KEY_ID`)
-- G4.2 (Account equity): PASS — $113,518.61 (above $50K threshold)
-- G4.3 (Trading not blocked): PASS — `trading_blocked: False`, `pattern_day_trader: True`
-- G5.1 (Config JSON valid): PASS — 4 sessions, valid JSON
-- G5.1a (Stacker IDs): PARTIAL — AAPL ridge_wf shows `ridge-wf-aapl-uuid` (known pre-existing placeholder, acceptable per OPTION_B_DEPLOYMENT_CHECKLIST.md line 134). AMZN stacker_id is `43e36c77` (WRONG — correct is `97934980-96ad-4389-8a74-5ce8c06c4c7f`). JPM stacker_id `868f378c` is correct.
-- G5.2 (JPM ridge_wf pkl on Jetson): FAIL — `JPM_h10_ridge_wf_868f378c.pkl` is NOT on Jetson. Only `JPM_h10_lgbm_ho_4e7f5806.pkl` is present. File exists locally and must be rsynced before deploy.
-- sqlite3 CLI: NOT INSTALLED on Jetson host OS. DB checks must use `python3 -c "import sqlite3..."` instead.
-**Items requiring action before May 28 runbook execution** (all fixable in May 28 AM window):
-1. **DB backup refresh**: Run on Jetson before deploy:
-   `ssh awank@100.120.18.84 "cp /opt/stockbot/database/trading.db /opt/stockbot/database/trading.db.pre-amzn-jpm.backup && echo BACKUP_REFRESHED"`
-   Then verify count: `ssh awank@100.120.18.84 "python3 -c \"import sqlite3; c=sqlite3.connect('/opt/stockbot/database/trading.db.pre-amzn-jpm.backup'); print(c.execute('SELECT COUNT(*) FROM trades').fetchone()[0])\""`
-2. **AMZN stacker_id fix**: The deployment patch script in OPTION_A/B runbook must set AMZN stacker_id to `97934980-96ad-4389-8a74-5ce8c06c4c7f` (not `43e36c77`). Confirm the runbook patch script uses the correct UUID before executing.
-3. **JPM ridge_wf pkl rsync to Jetson**: Run before deploy:
-   `rsync -avz /home/awank/dev/SuperClaude_Framework/projects/stockbot/models/ensemble_stackers/JPM_h10_ridge_wf_868f378c.pkl awank@100.120.18.84:/opt/stockbot/models/ensemble_stackers/`
-**What I need**: No immediate user action required. These 3 items are agent-executable in the May 28 AM runbook window. Flagging here so they are not missed.
-**Verify with**:
-```bash
+---
+---
+### resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled)
+**Date blocked**: 2026-05-21 07:58 UTC (Session 1453 — orchestrator discovery); **Status changed**: 2026-05-21 18:54 UTC (Session 1476 — synthesis execution verification)
+**Context**: Resistance-research Phase 2 synthesis execution was scheduled for May 21 19:00 UTC. Orchestrator verification at 18:54 UTC (5 min before deadline) confirmed that the signal log (`post-wave-1-monitoring/wave-1-signal-log-may18-21.md`) remains unfilled — 20 [fill] placeholders remain unfilled. Synthesis-execution-monitor.py script run at 18:54 UTC returned error: "Signal log has 20 unfilled [fill] fields. User must complete the May 21 snapshot section before synthesis can run." As of May 21 18:54 UTC, synthesis WILL NOT execute at 19:00 UTC deadline. Per protocol, moving to TOO_EARLY contingency path (synthesis window: May 28). All four contingency playbooks (STRONG/MODERATE/WEAK/TOO_EARLY) are pre-staged in post-synthesis-contingency-execution-playbooks.md. TOO_EARLY path is temporary — classified as such because data collection window has not closed (May 25 final gate allows law school contacts 7+ days to reply, think tank contacts 5+ days). Mandatory re-synthesis will occur May 25 with all 7-day data.
+**What I need**: (A) IMMEDIATE (by May 22 evening): Fill the signal log with any May 20-21 response data collected so far (can be partial; re-synthesis will run with all available data May 25). (B) TIMING: Full 7-day signal log fill required by May 25 18:00 UTC for May 25 re-synthesis execution. (C) SECONDARY: Trump v. Barbara ruling status (if issued since May 21, log for Domain 58 rapid-response activation). No blocking — Phase 2 work proceeds on TOO_EARLY path: Domain 56 + 39 distribution on schedule (May 28, June 1); Domain 57/59 pre-production hold until May 25 outcome resolution.
+**Verify with**: `grep -c '\[fill\]' /home/awank/dev/SuperClaude_Framework/projects/resistance-research/post-wave-1-monitoring/wave-1-signal-log-may18-21.md` on May 25 17:00 UTC — should return 0 (all templates filled) to enable May 25 re-synthesis. Also verify: `cd projects/resistance-research && uv run python synthesis-execution-monitor.py 2>&1 | head -5` on May 25 19:00 UTC — should return classification result (STRONG/MODERATE/WEAK/DELIVERY_PROBLEM) instead of error message.
+**Resolution**: [leave blank — contingency activated; will resolve May 25 upon re-synthesis with complete data]
+---
+---
+### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
+**Date blocked**: 2026-05-16
+**Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
+**Progress so far**:
+- ✅ 1.1 Signal — complete (username set, phone number hidden, disappearing messages on)
+- ✅ 1.2 iPhone tracking — steps 1-3 done (tracking off, location audited, personalized ads off). Step 4 (Advanced Data Protection) pending 24-48hr Apple security delay — complete tomorrow
+- 🔄 1.3 VeraCrypt — installed, encryption wizard run, **needs restart to complete pre-boot test**, then click Encrypt to start background encryption
+- ⏳ 1.4 Ente Auth — not started (install from App Store, switch email + financial accounts off SMS 2FA, set carrier SIM PIN)
+- ⏳ 1.5 Bitwarden password manager — not started
+- ⏳ 1.6 Data broker opt-outs — not started (10 sites + 3 federal opt-outs, ~45 min)
+- ⏳ 1.7 iPhone passcode over Face ID — not started (5 min, do anytime)
+**What I need**: Restart Windows machine, type VeraCrypt pre-boot password when prompted, let Windows boot normally, then click Encrypt in VeraCrypt to start background encryption. Then resume Phase 1 walkthrough from step 1.4.
+**Verify with**: `# manual — cannot auto-verify`
+**Resolution**: [leave blank]
+---
+### mfg-farm — Test print execution (user action required)
+**Date blocked**: 2026-05-13
+**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
 
 ## Recently Resolved (last 5)
+• stockbot — PRE_DEPLOYMENT_VALIDATION_CHECKLIST: 3 items require action before May 28 deploy ← 2026-05-27 13:52 UTC (Session 1728 — orchestrator autonomous pre-flight)
 • stockbot — HTTP server startup blocked by realtime stream initialization failure (May 28 deployment blocked) ← 2026-05-27 13:30 UTC (Session 1726 — HTTP server fix deployed and verified)
 • stockbot — AMZN/JPM stacker_ids not populated in config (blocking Phase 2 activation) ← 2026-05-27 12:30 UTC (Session 1719 — JPM ridge_wf training completed, all stacker_ids populated)
 • stockbot — JPM model type mismatch: config expects ridge_wf but only lgbm_ho pkl exists (hard blocker) ← 2026-05-27 12:25 UTC (Session 1719 — JPM ridge_wf model trained autonomously)
 • stockbot — Database backup created (pre-AMZN/JPM safety requirement) ← 2026-05-27 00:15 UTC (Session 1690 — orchestrator backup executed)
-• stockbot — Jetson unreachable since May 22 14:00 UTC (Outcome retrieval failed all 3 retry attempts) ← 2026-05-26 22:15 UTC (Session 1686 — Orchestrator validation discovered Jetson back online)
 
 ## Inbox (unprocessed)
 *(no new items)*
