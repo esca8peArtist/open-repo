@@ -38,7 +38,11 @@
 - Item 2: ✅ COMPLETE (Session 1709) — Phase 4 & Phase 5 parallel execution bridge
 - Item 3: ✅ COMPLETE (Session 1709) — Seedwarden Phase 3 production optimization
 
-**Queue is now empty** (3/3 items complete). Orchestrator should add 2–3 new items for June 1+ execution support in next session if other autonomous work isn't available.
+**Queue is now empty** (3/3 items complete). → **Orchestrator immediately added 2 new items** (Items 4 & 5) for May 28-31 critical path:
+- **Item 4**: Stockbot May 29-31 Deployment Pre-Flight Checklist (deployed to submodule; validates both Lever B options)
+- **Item 5**: Resistance-Research May 28 Synthesis Contingency Playbooks (4 files committed; routes STRONG/MODERATE/WEAK outcomes to action playbooks)
+
+**Queue now contains** 5 items (all actionable, no gaps).
 
 ### Active Blocks Status (Unchanged)
 

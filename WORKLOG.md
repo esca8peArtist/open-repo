@@ -40,12 +40,44 @@
 
 **Business value**: Eliminates ambiguity around Phase 3 execution. June 22 hard-start gate conditions explicit. Herbalist recruitment strategy pre-staged. Risk contingencies documented. Ready for June 1 user review + June 22 production sprint activation.
 
+### Session 1709 Accomplishments Summary
+
+**Queue Items Completed**: Items 2 & 3 (parallel agents)
+
+**New Queue Items Added**: Items 4 & 5 (created for May 28-31 critical path)
+- **Item 4**: Stockbot May 29-31 Deployment Pre-Flight Checklist (1,500 words) ✅ Created
+  - Option A readiness: 12-item checklist (training autonomy verified, Alpaca creds required, training CPU-only by design)
+  - Option B readiness: 8-item checklist (hardcoded UUIDs, zero user input, rollback automated)
+  - Resource requirements: Option A 3.5 hrs, Option B 50 min
+  - May 29 go/no-go gate: Alpaca credentials prerequisite; auto-pivot to Option B if Alpaca unavailable
+  - May 29-31 daily standup: Log-grep commands for tracking training/config validation progress
+  - File: `projects/stockbot/DEPLOYMENT_PRE_FLIGHT_CHECKLIST.md` (in submodule, separate repo)
+  - Business value: User decides May 27 EOD → orchestrator executes May 29-31 hands-off with validated checklist
+
+- **Item 5**: Resistance-Research May 28 Synthesis Contingency Playbooks (2,400 words) ✅ Created (4 files)
+  - SYNTHESIS_CONTINGENCY_ROUTING.md: Master routing document (outcome → correct playbook)
+  - SYNTHESIS_OUTCOME_STRONG_PLAYBOOK.md: Fast Phase 2 activation (Tier 2 early-send May 29-30)
+  - SYNTHESIS_OUTCOME_MODERATE_PLAYBOOK.md: Proceed with caution (Domains 57/59 behind June 10 gate)
+  - SYNTHESIS_OUTCOME_WEAK_PLAYBOOK.md: User decision (a) proceed May 30 or (b) delay Phase 2 to June 1 for contingency research)
+  - Key constraint: Domain 56 May 28 send is path-independent (proceeds regardless of outcome)
+  - May 28 19:15 UTC: Outcome classification → routing within 5 min
+  - Files: `projects/resistance-research/SYNTHESIS_*.md` (4 files, committed)
+  - Business value: May 28 synthesis → instant outcome routing → correct playbook activated within 15 min
+
+**Exploration Queue Status After Session 1709**:
+- Item 1: ✅ COMPLETE (Session 1708) — May 28 synthesis execution automation
+- Item 2: ✅ COMPLETE (Session 1709) — Phase 4 & Phase 5 parallel execution bridge
+- Item 3: ✅ COMPLETE (Session 1709) — Seedwarden Phase 3 production optimization
+- Item 4: ✅ CREATED (Session 1709) — Stockbot May 29-31 deployment pre-flight
+- Item 5: ✅ CREATED (Session 1709) — Resistance-research May 28 synthesis contingency
+
+**Queue health**: 5 items (all actionable), no empty gaps
+
 ### Session 1709 Orientation Summary
-- **Time**: 07:03–07:25 UTC, May 27, 2026
-- **Blockers reviewed**: 4 active blocks remain unchanged (stockbot JPM decision, cybersecurity VeraCrypt, mfg-farm test print, resistance-research synthesis log)
+- **Time**: 07:03–08:30+ UTC, May 27, 2026
+- **Blockers reviewed**: 4 active blocks unchanged (stockbot JPM decision, cybersecurity VeraCrypt, mfg-farm test print, resistance-research synthesis log)
 - **INBOX.md**: No new items to process
-- **Exploration Queue**: Item 1 complete (Session 1708); Item 2 complete (this session); Item 3 pending (seedwarden Phase 3 optimization, staged for June 1)
-- **Critical decision deadline TODAY**: Stockbot Lever B (May 27 EOD). Config shows JPM ridge_wf but stacker_id placeholder. No user decision communicated. Block remains active.
+- **Critical decision deadline TODAY**: Stockbot Lever B (May 27 EOD). Config shows JPM ridge_wf but stacker_id placeholder. No user decision communicated.
 
 ---
 
