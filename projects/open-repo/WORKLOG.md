@@ -1,5 +1,45 @@
 # Open-Repo Project Worklog
 
+## Phase 5.3 Federation Architecture Research — Deepening Pass (2026-05-27)
+
+**Completion Date**: 2026-05-27
+
+**Agent**: Claude Sonnet 4.6 (General Research Agent — Phase 5.3 Architecture Research)
+
+**Objective**: Deepen the three Phase 5.3 design documents (FEDERATION_ARCHITECTURE.md, VERSIONING_STRATEGY.md, DIFFERENTIAL_SYNC_PROTOCOL.md) with additional real-world case studies, 2025 technology developments, and explicit Phase 5.2 → 5.3 → Phase 6 transition paths. Deadline: May 30, 2026 for user review.
+
+### Documents Updated
+
+1. **`FEDERATION_ARCHITECTURE.md`** (6,271 words — up from 4,641)
+   - Added Section 2.3: Secure Scuttlebutt (SSB) case study — append-only signed feeds as audit log model, gossip sync for efficient replication
+   - Added Section 2.4: Briar/Bramble Protocol case study — transport-agnostic sync (Bluetooth/Wi-Fi Direct/USB), QR-code-based identity exchange, store-and-forward relay
+   - Added Section 2.6: IPFS 2025 state — Bitswap 50-95% bandwidth improvements, Chrome 137 native Ed25519 support (May 2025), Helia verified-fetch and Service Worker Gateway
+   - Expanded Section 4.1: Local discovery now specifies both mDNS (Bonjour/Avahi) and Syncthing UDP broadcast model (port 21028, 30-60 second interval) as complementary options
+   - Added Section 3.3.1: Vouchsafe zero-infrastructure capability graph (Kuri 2026) as future Phase 6 trust delegation model; forward-compatible with Ed25519 Library IDs
+   - Added Section 9: Phase Transition Map — explicit table of what Phase 5.2 must deliver, what Phase 5.3 delivers to Phase 6, and what is deliberately deferred
+
+2. **`VERSIONING_STRATEGY.md`** (4,644 words — up from 3,986)
+   - Added Section 3.3.1: Why CRDTs Are Not the Right Model — three concrete reasons (semantic validity not derivable from merge ops; domain authority is intentionally asymmetric; edit unit is the whole article field); identifies what is correctly borrowed from CRDTs (append-only audit log structure, operation-based delta manifests)
+   - Added Section 7.4: Phase 5.2 to Phase 5.3 Activation Sequence — explicit milestone-keyed table of which versioning infrastructure activates when (Wave 0, Wave 1, Wave 2), resolving timing ambiguity
+   - Updated sources: added CRDT survey (ACM 2024), SSB protocol guide
+
+3. **`DIFFERENTIAL_SYNC_PROTOCOL.md`** (4,796 words — up from 3,871)
+   - Expanded Section 2.1 Approach A: Documented zimdiff/zimpatch current status — tools are actively maintained (openzim/zim-tools 2025); documented known SHA-256 checksum mismatch bug after patching (GitHub issue #8) and mitigation (use zimcheck instead of hash comparison)
+   - Added Section 2.1.1: Syncthing BEP case study — block-level verification enables sub-file download resumption; recommendation to add block hash list to ZIM manifest
+   - Added Section 2.1.2: MTS-1 lightweight delta-encoded telemetry (arXiv 2026) — validates baseline+delta model and maximum chain depth design choices
+   - Added Section 5.2.1: Concrete Phase 5.2 bandwidth estimates for each scenario (PATCH/MINOR/MAJOR, 2G/3G/satellite) — key finding: PATCH updates are feasible in real time even on 2G; worst case is MAJOR releases on satellite (recommend USB bundle path)
+
+### Key Research Findings
+
+- **Zimdiff is production-ready but has a known checksum bug**: Actively maintained in zim-tools; post-patch files are valid and readable but SHA-256 doesn't match original. Mitigation: use zimcheck for verification, not hash comparison.
+- **Syncthing uses UDP broadcast, not standard mDNS**: Port 21027 (21028 for open-repo to avoid conflict), broadcast + IPv6 multicast, 30-60 second intervals. More reliable than mDNS on some Android hotspot configurations.
+- **Chrome 137 (May 2025) added native Ed25519**: All major browsers now support Ed25519 natively. The Library ID signing approach is universally deployable.
+- **CRDTs are the wrong model for safety-critical collaborative content**: Automatic merges are inappropriate where human expert review is required. CRDTs are useful only for the audit log structure (append-only, hash-chained).
+- **IPFS 2025 improvements**: 50-95% Bitswap bandwidth reduction, Service Worker Gateway for browser-based IPFS without a daemon. Phase 5.3 optional IPFS support remains the right design.
+- **Vouchsafe (2026)**: Zero-infrastructure capability delegation using Ed25519 + JWT. Forward-compatible with Library ID infrastructure; design consideration for Phase 6 trust scaling.
+
+---
+
 ## Phase 5.2 Wave 2: A11y Audit Framework Pre-Stage (2026-05-27)
 
 **Completion Date**: 2026-05-27
@@ -346,5 +386,30 @@ With Stage 0 extraction complete, the following Phase 5.1 work can now proceed:
 6. **Merge readiness decision**: READY FOR MERGE. No blockers. Tests green, no conflicts, docs complete, commit hygiene good.
 
 ### Summary
+
+---
+
+## Phase 5.2 Launch Coordination Documents
+
+**Completion Date**: 2026-05-27
+**Session**: orchestrator session 1746 (Exploration Queue Item 44)
+**Author**: General Research Agent
+
+### Files Produced
+
+1. `PHASE_5.1_POST_MERGE_DEPLOYMENT_CHECKLIST.md` — Already existed and production-ready (4 phases, 7 rollback triggers, gate criteria). No changes made.
+
+2. `PHASE_5.2_MEDICAL_WATER_SEED_ROADMAP.md` — Already existed and production-ready (21.5h Medical June 1–15, 20h Water June 10–30, 21h Seed June 15–July 5, parallel vs. sequential analysis recommending staggered starts). No changes made.
+
+3. `PHASE_5.2_INTEGRATION_VALIDATION_MATRIX.md` — NEW. Per-candidate 4-gate validation checklist (Data Compatibility, Media Embedding, Interactive Components, Performance) for Medical/Water/Seed. Includes 3x4 success criteria matrix, fallback paths for each gate failure, and shared validation requirements (backward compatibility, rollback test, accuracy review gate). ~1,800 words.
+
+4. `PHASE_5.2_LAUNCH_COORDINATION.md` — NEW. June 1 decision point with 5-condition check, GO/DEFER decision tree, resource allocation table (30 hours June 1–15, 37 hours June 15–30), per-module and full rollback decision trees, milestone tracking table (17 milestones June 1 – July 10), user review protocol, escalation triggers, and June 2026 calendar summary. ~1,700 words.
+
+### Key Findings
+
+- The four target files exist as two pre-existing (1, 2) and two new (3, 4). Pre-existing files were comprehensive and production-ready; no duplication added.
+- June 1 is the single decision gate: 5 conditions (merge confirmed, 48h monitoring clean, post-merge items done, 240 tests pass, health check up) determine GO vs. DEFER.
+- Resource estimate: 67 total hours for all three modules across June, averaging 2.5 hours/day. July 1 deployment readiness is achievable on a single-developer schedule.
+- The integration validation matrix's 3x4 grid (Medical/Water/Seed × Gate 1–4) is the operational instrument for confirming each module is ZIM-ready before publication.
 
 orchestrator session 1653 — open-repo Phase 5.1 MVP merge readiness audit COMPLETE. Feature branch: READY. Tests: 51/51 passing.

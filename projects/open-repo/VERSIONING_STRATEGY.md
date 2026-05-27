@@ -205,6 +205,20 @@ The third option is legitimate — a localized version may intentionally diverge
 
 **Domain specialist authority**: For safety-critical domains (medical, food safety), the domain authority has final say over conflict resolution in the canonical version. Community voting may inform the decision but does not override it. A medical reviewer who determines that a proposed change to a drug dosage is incorrect can reject it regardless of community sentiment. This reflects the same authority structure used in Wikipedia's featured article review process: community input is valued, but expert review is required for certain content.
 
+### 3.3.1 Why CRDTs Are Not the Right Model Here
+
+Conflict-Free Replicated Data Types (CRDTs) are often proposed for offline collaborative editing because they enable automatic merge without conflicts. The key property of a CRDT is that any two replicas, having received the same set of operations in any order, converge to the same state deterministically — no manual merge required.
+
+For general-purpose collaborative text editing (Apple Notes sync, Google Docs offline mode), CRDTs are the correct choice. They are inappropriate for open-repo content for three reasons:
+
+**1. Semantic validity is not derivable from merge operations.** A CRDT text merge of two edits to a drug dosage table would produce a syntactically valid result, but the dosage it contains might be neither of the two proposed values — it could be a malformed combination. For safety-critical content, "the algorithm produced a deterministic merged state" is not a sufficient review standard. A human reviewer must evaluate the merged content regardless.
+
+**2. Domain authority intentionally introduces asymmetry.** CRDTs model all participants as equal peers. Open-repo's authority model is deliberately hierarchical: the domain authority's version of safety-critical fields is canonical, not one of two equal alternatives. Any merge strategy that treats a field physician's proposed dosage change as automatically mergeable with the WHO guideline is architecturally wrong for this domain.
+
+**3. The editing unit is the entire article, not individual characters.** CRDTs work at the character or operation level. Articles in open-repo are semantic units (a drug monograph, a seed species guide) where the meaningful conflict unit is the entire field (dosage, storage temperature, toxicity classification) — not individual characters. The parent-hash chain model already captures this granularity correctly.
+
+The right CRDT insight to carry forward: the **append-only audit log** (section 5.2) uses a hash-chained append structure that shares the tamper-evidence property of state-based CRDTs, without imposing automatic merge semantics. Operation-based CRDTs are useful inspiration for the delta manifest format in `DIFFERENTIAL_SYNC_PROTOCOL.md` (operations rather than full state transfers), but not for content conflict resolution itself.
+
 ### 3.4 Editing Interface Considerations for Non-Developers
 
 The versioning system described above is technically sound but requires a usable interface for librarians who are not software developers. The current Phase 5.1–5.2 pipeline is developer-facing. Phase 5.3 needs a lightweight editing interface.
@@ -449,6 +463,30 @@ Reproducible builds are important for trust: a community library that receives a
 
 The versioning system integrates with the differential sync protocol (`DIFFERENTIAL_SYNC_PROTOCOL.md`) at the ZIM bundle level. When a new PATCH or MINOR version of a ZIM is published, the export pipeline also generates a delta patch from the previous version to the new version. This delta patch is referenced in the OPDS catalog entry and manifest, enabling bandwidth-efficient updates.
 
+### 7.4 Phase 5.2 to Phase 5.3 Activation Sequence
+
+The versioning system described here activates incrementally, keyed to Phase 5.2 milestones. Nothing in this document requires Phase 5.2 to be complete before Phase 5.3 versioning infrastructure begins.
+
+**Activates when Phase 5.2 Wave 0 completes (domain content sourcing)**:
+- `article_versions` and `zim_bundle_manifests` tables can be created — they don't require domain ZIM content to exist yet
+- Domain authority assignments (which library is authoritative for medical, water, seed) can be established
+- The `change_proposals` workflow can accept its first test submissions even on stub content
+
+**Activates when Phase 5.2 Wave 1 completes (first ZIM exports)**:
+- Semantic versioning begins: the first ZIM export is `v1.0.0`
+- Attribution metadata (section 5.1) can be embedded in the ZIM's article HTML footers from the first export
+- Delta manifest generation activates (the first delta will be from empty → v1.0.0, establishing the baseline)
+
+**Activates when Phase 5.2 Wave 2 completes (all 5 domains in production)**:
+- Multi-language branch tracking can begin (the English canonical is established)
+- The public version catalog (OPDS with version fields, section 4.3) is fully populated
+- PATCH/MINOR/MAJOR version semantics become operationally meaningful because the content is stable enough for community contributors to propose changes
+
+**Remains in Phase 5.3 scope regardless of Phase 5.2 timing**:
+- The contribution pipeline (fork → edit → propose → review → publish) requires a web-based editing interface that is Phase 5.3 new work, not Phase 5.2 work
+- Key rotation procedures (section 3.4 of FEDERATION_ARCHITECTURE.md) are tested after library identity is established in Phase 5.3a
+- The immutable audit log hash-chain bootstrap requires a Phase 5.3a implementation decision on the chain anchoring mechanism (a genesis entry signed by the domain authority's key)
+
 ---
 
 ## Sources
@@ -461,8 +499,12 @@ The versioning system integrates with the differential sync protocol (`DIFFERENT
 - [Git Object Database and Pack Files — Geek Workbench](https://geekworkbench.com/blog/technical/git-object-database-pack-files/)
 - [Offline-First Mobile Architecture — JAIGS 2025](https://www.researchgate.net/publication/393910615_Offline-First_Mobile_Architecture_Enhancing_Usability_and_Resilience_in_Mobile_Systems)
 - [Offline sync and conflict resolution patterns — Sachith Dassanayake (2026)](https://www.sachith.co.uk/offline-sync-conflict-resolution-patterns-architecture-trade%E2%80%91offs-practical-guide-feb-19-2026/)
+- [Conflict-Free Replicated Data Types (CRDTs) — arXiv survey (Shapiro et al.)](https://arxiv.org/pdf/1805.06358)
+- [CRDT Implementation Guide — Velt (October 2025)](https://velt.dev/blog/crdt-implementation-guide-conflict-free-apps)
+- [Approaches to CRDTs — ACM Computing Surveys (2024)](https://dl.acm.org/doi/full/10.1145/3695249)
 - [TypeScript CRDT Toolkits for Offline-First Apps — Medium](https://medium.com/@2nick2patel2/typescript-crdt-toolkits-for-offline-first-apps-conflict-free-sync-without-tears-df456c7a169b)
 - [Kiwix/ZIM incremental updates — MediaWiki](https://www.mediawiki.org/wiki/Kiwix/ZIM_incremental_updates)
+- [Scuttlebutt Protocol Guide — SSBC (append-only feed model)](https://ssbc.github.io/scuttlebutt-protocol-guide/)
 - [Phase 5 Architecture — open-repo project](./PHASE_5_ARCHITECTURE.md)
 - [Phase 5.2 Implementation Roadmap — open-repo project](./PHASE_5.2_IMPLEMENTATION_ROADMAP.md)
 - [Federation Architecture — open-repo project](./FEDERATION_ARCHITECTURE.md)

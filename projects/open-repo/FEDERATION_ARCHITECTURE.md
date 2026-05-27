@@ -94,7 +94,34 @@ BitTorrent v2 (BEP 52) uses per-file SHA-256 Merkle trees, enabling chunk-level 
 - Swarm participation as a default expectation. Many community library deployments cannot maintain open ports or seed continuously. Seeding should be opt-in.
 - The tracker ecosystem. Open-repo needs its own lightweight tracker or must use DHT bootstrap nodes it controls, rather than depending on public BitTorrent infrastructure.
 
-### 2.3 ActivityPub / Fediverse
+### 2.3 Secure Scuttlebutt (SSB)
+
+Secure Scuttlebutt is a peer-to-peer gossip protocol built around append-only, cryptographically signed identity feeds. Each identity has an Ed25519 keypair; every message is signed by the identity's long-term key, chained to the previous message's SHA-256 hash. This creates an immutable, tamper-evident log — exactly the property needed for library audit trails.
+
+**What open-repo takes from SSB**:
+- The append-only feed model for audit logs: every version event (proposal, acceptance, rejection, key rotation) is appended as a signed, chained entry. Tampering with any entry breaks the chain from that point forward.
+- The gossip sync approach: when two SSB peers connect, they exchange vector clocks listing which feed entries each has. Only the missing entries are transferred. This is bandwidth-efficient and works over any transport — TCP, Bluetooth, USB file copy.
+- Content-addressed blobs referenced by SHA-256 hashes: the same CID model used in the open-repo ZIM manifest.
+
+**What open-repo does not take from SSB**:
+- SSB's full social graph (following, unfollowing, blocking) is too heavyweight for the library use case. Open-repo's trust model is simpler: a fixed peer list with explicit trust levels, not a dynamic follow graph.
+- SSB requires knowing which feeds to replicate, determined by the social graph. Open-repo uses domain-scoped peer lists and manifest polling instead.
+- SSB's `EBT` (Epidemic Broadcast Trees) replication protocol is powerful but assumes always-on connectivity. Open-repo's sync is scheduled and batch-oriented, not real-time streaming.
+
+### 2.4 Briar / Bramble Protocol
+
+Briar is a messaging application built for activists and journalists in adversarial environments. Its Bramble protocol suite handles synchronization across Bluetooth, Wi-Fi Direct, Tor, and USB — exactly the transport stack that open-repo's sneakernet and LAN-sharing scenarios require.
+
+**What open-repo takes from Briar**:
+- The transport-agnostic sync design: Briar's Bramble Transport Protocol (BTP) defines a common interface for payload delivery that is independent of whether the underlying channel is Bluetooth, Wi-Fi Direct, or USB. Open-repo's multi-channel approach (HTTP, BitTorrent, IPFS, USB bundle) should similarly define a common verification layer that operates identically regardless of how bytes arrived.
+- Contact verification via QR code: Briar exchanges public keys via QR code scans for initial trust establishment. Open-repo's out-of-band Library ID exchange should support QR code display/scan in the UI for the common case of two librarians in the same room exchanging peer credentials.
+- Store-and-forward relay: Briar allows a mutual contact to carry encrypted messages between disconnected parties. The analogous mechanism in open-repo is the USB courier carrying a signed manifest and ZIM delta bundle — the courier is a relay who does not need to understand or decrypt the content.
+
+**What open-repo does not take from Briar**:
+- Briar's Bramble Onion Protocol (BOP) — Tor integration for metadata resistance — is valuable in adversarial political contexts but adds significant complexity. Phase 5.3 does not require anonymization; Phase 6+ can add a Tor transport option for high-risk deployments.
+- Briar's real-time replication over Bluetooth assumes devices are in proximity. Open-repo's offline sync is asynchronous (USB bundles, scheduled network sync) rather than real-time.
+
+### 2.5 ActivityPub / Fediverse
 
 Phase 4 already implements ActivityPub federation for the open-repo web platform. ActivityPub handles content metadata federation (announcements, endorsements, discovery of new items) efficiently. The `ITEM15_PHASE6_FEDERATION_ROADMAP.md` covers ActivityPub in depth.
 
@@ -106,6 +133,14 @@ Phase 4 already implements ActivityPub federation for the open-repo web platform
 **What Phase 5.3 does not take from ActivityPub**:
 - ActivityPub is not a file transfer protocol. Announcing a ZIM via ActivityPub does not transfer the ZIM. The announcement contains the CID and the transfer channel URLs; the actual transfer uses IPFS, BitTorrent, HTTP, or sneakernet.
 - ActivityPub requires internet connectivity for federation. Fully offline peer discovery must use a separate channel (mDNS, Bluetooth advertisement, or a pre-shared peer list).
+
+### 2.6 IPFS 2025 State: What Has Changed
+
+The IPFS ecosystem changed significantly in 2025 in ways that affect the open-repo federation design. Bitswap (the IPFS block exchange protocol) improvements demonstrated **50–95% bandwidth reductions and 80–98% message volume reduction** in testing, making IPFS more viable for constrained-connectivity environments than it was when Phase 5 was originally designed. The DHT was rebuilt from scratch to handle hundreds of thousands of CIDs without excessive memory usage.
+
+Critically for browser-based open-repo clients: Chrome 137 (May 2025) added native Ed25519 support, joining all other major browsers. This means Ed25519 signatures in the ZIM manifest can be verified in browser JavaScript without a polyfill. This solidifies the Ed25519 Library ID approach as the right cryptographic primitive: it is now universally supported from Raspberry Pi firmware to mobile browsers.
+
+IPFS Helia's `verified-fetch` (a drop-in replacement for the standard Fetch API that verifies content against CIDs) and the Service Worker Gateway (enabling browser-based IPFS retrieval without a daemon) both shipped in 2025. These open a Phase 6 path where a Kiwix-served open-repo library can retrieve IPFS-addressed ZIM chunks directly in the browser, without requiring a local IPFS daemon. Open-repo's current Phase 5.3 design (treating the IPFS daemon as optional) is validated by this direction.
 
 ---
 
@@ -189,6 +224,18 @@ Trust in the open-repo federation is **explicit and bilateral**, not transitive.
 | `verified` | Library ID confirmed via out-of-band channel | Files in accepted domains are auto-fetched if `auto_sync: true` |
 | `blocked` | Deliberately excluded | Manifests and files from this ID are rejected |
 
+### 3.3.1 Alternative: Vouchsafe Capability Graph (Future Phase)
+
+The bilateral trust model described above is appropriate for Phase 5.3 but may become limiting in Phase 6 when many libraries need to establish trusted relationships efficiently. The Vouchsafe model (Kuri, 2026) offers a zero-infrastructure alternative: a directed capability graph where each node is an identity claim and each edge is a delegated capability encoded as a signed JSON Web Token.
+
+In a Vouchsafe-augmented federation, Library A could issue a signed capability token to Library B saying "I vouch for Library B's medical content authority in domain: malaria-treatment." Library C, which trusts Library A, could accept Library B's medical content based on this vouched capability — without having a direct prior relationship with Library B.
+
+The key property is offline verification: Vouchsafe tokens embed the full cryptographic proof chain, enabling verification without network access to the issuing library. This is relevant for the USB sneakernet case where Library C receives a signed bundle from Library B via USB courier and has no way to phone home to Library A to verify the vouching relationship.
+
+Vouchsafe uses Ed25519 signatures and standard JWT/JWS formats, making it compatible with the Library ID infrastructure already specified in section 3.1. Phase 5.3 does not implement Vouchsafe, but the library identity and signing infrastructure is forward-compatible with it.
+
+**Recommendation**: Phase 5.3 implements bilateral trust (explicit peer lists) as specified. Phase 6+ can layer Vouchsafe capability tokens on top of the existing Ed25519 Library ID infrastructure to enable more scalable trust delegation without abandoning the bilateral trust security model.
+
 ### 3.4 Key Rotation
 
 If a library's private key is compromised or lost, it can publish a signed **Key Rotation Notice** from its old key (if available) or initiate an out-of-band rotation:
@@ -210,7 +257,13 @@ The discovery problem has two distinct sub-problems: how do libraries initially 
 
 **Channel 2: Public registry (optional).** Libraries that choose to be publicly discoverable can register on a voluntary public index (hosted by the open-repo project or a community operator). The registry is a static JSON file listing Library IDs, library names, domains covered, and contact endpoints. It is not in the trust path — a library appearing in the registry is not automatically trusted; it just enables discovery. Libraries in the registry can be found by browsing a web page or by querying a registry API.
 
-**Channel 3: mDNS local discovery.** Libraries on the same local network broadcast their presence via mDNS (multicast DNS, the same protocol used by Bonjour/Avahi). A kiwix-serve or open-repo node announces itself as `_open-repo-library._tcp.local` with service fields containing its Library ID and manifest URL. Other nodes on the same LAN discover it automatically without any configuration.
+**Channel 3: Local network discovery.** Libraries on the same local network broadcast their presence. Two protocol options are supported:
+
+*Option A: mDNS (Bonjour/Avahi compatible).* A kiwix-serve or open-repo node announces itself as `_open-repo-library._tcp.local` with service fields containing its Library ID and manifest URL. Other nodes discover it via standard mDNS resolution. This works on any platform that supports Bonjour (macOS, Linux with Avahi, Android 9+, iOS, some Windows setups) without requiring configuration.
+
+*Option B: UDP broadcast announcement (Syncthing local discovery model).* For environments where mDNS is filtered or unavailable (some enterprise Wi-Fi configurations, some Android hotspot modes), the node broadcasts a UDP Announcement packet to `255.255.255.255` on port 21028 (IPv4) and multicast group `ff12::8384` on port 21028 (IPv6), containing the Library ID and manifest URL. The broadcast interval is 30–60 seconds. This is the exact model used by Syncthing's Local Discovery Protocol v4, which has proven reliable across a wide variety of network configurations including Raspberry Pi hotspots.
+
+Both options carry the same payload: Library ID, manifest URL, and a timestamp. Receiving nodes verify the Library ID against their trust store before acting on the announcement.
 
 This enables the key offline use case: two Raspberry Pi libraries in the same room (or connected by a Wi-Fi hotspot) automatically discover each other and can begin sharing ZIM files without any internet connectivity.
 
@@ -423,7 +476,49 @@ Phase 5.3 can be developed incrementally without blocking Phase 5.2:
 
 ---
 
-## 9. Cross-References to Existing Docs
+## 9. Phase Transition Map: 5.2 → 5.3 → Phase 6
+
+This section makes explicit which capabilities unlock at each phase boundary and what Phase 5.2 completion triggers in Phase 5.3.
+
+### 9.1 What Phase 5.2 Must Deliver for 5.3 to Proceed
+
+Phase 5.2 (Medical/Water/Seed domain ZIM content) must deliver the following artifacts before 5.3 implementation begins:
+
+| Phase 5.2 Output | Why 5.3 Needs It |
+|---|---|
+| 5 domain ZIM files with stable naming (`open-repo_en_{domain}_{YYYY-MM}.zim`) | Manifest schema depends on stable ZIM naming conventions |
+| SHA-256 checksums for each ZIM export | The manifest's `sha256` field is populated directly from these |
+| Domain scope definitions (which articles belong to which domain) | Delta manifest `domain` field and domain-scoped peer acceptance lists |
+| OPDS catalog entries for each domain ZIM | Phase 5.3a extends the OPDS entry format with `delta-available` and version fields |
+| Phase 4 Ed25519 keypairs in production | Manifest signing (5.3a) uses these keypairs |
+
+Phase 5.3a can begin immediately upon Phase 5.2 delivering its first full ZIM export — it does not need all 5 domains, just at least one complete domain.
+
+### 9.2 What Phase 5.3 Delivers as Inputs to Phase 6
+
+Phase 6 (`ITEM15_PHASE6_FEDERATION_ROADMAP.md`) is the multi-organization ActivityPub federation. Phase 5.3 provides its prerequisites:
+
+| Phase 5.3 Output | Phase 6 Dependency |
+|---|---|
+| Signed manifest format (5.3a) | Phase 6 can extend the manifest with organizational metadata and GDPR residency tags |
+| Library ID infrastructure (Ed25519 peer identity) | Phase 6's DID:WEB identity resolution builds on top of this |
+| mDNS / UDP peer discovery (5.3c) | Phase 6's instance discovery (analogous to `instances.social`) reuses the same transport primitives |
+| Trust store (peer list database, 5.3c) | Phase 6 extends this with organizational identity, not just library identity |
+| ActivityPub manifest announcements (5.3d) | Phase 6 federation directly extends these to multi-organization content propagation |
+
+The implementation can be understood as: **Phase 5.3 is the file-layer federation; Phase 6 is the social-layer federation.** Both share the same identity and trust substrate.
+
+### 9.3 What Remains Out of Scope Until Phase 6
+
+The following capabilities are deliberately deferred and must not be designed into Phase 5.3:
+
+- **Transitive trust / web of trust**: Phase 5.3 is bilateral only. Vouchsafe delegation is Phase 6+.
+- **Cross-library content ownership and attribution arbitration**: Phase 5.3 treats ZIM files as atomic. Content-level ownership disputes are Phase 6 governance problems.
+- **Real-time collaborative editing**: Phase 5.3 has asynchronous change proposals. Real-time CRDT sync is Phase 6+.
+- **Anonymization / Tor transport**: The high-risk deployment case (libraries in politically adversarial contexts needing transport-layer anonymity) is Phase 6+.
+- **Content licensing cross-checks across the federation**: Phase 5.3 validates license fields locally. Cross-federation license policy enforcement is Phase 6.
+
+## 10. Cross-References to Existing Docs
 
 - ZIM export pipeline: `PHASE_5_ARCHITECTURE.md` section 2
 - Phase 4 HTTP Signature keypairs: `PHASE_4_DESIGN.md`
@@ -439,7 +534,10 @@ Phase 5.3 can be developed incrementally without blocking Phase 5.2:
 - [IPFS — Content Addressed, Versioned, P2P File System (Benet, 2014)](https://arxiv.org/abs/1407.3561)
 - [Design and Evaluation of IPFS (Trautwein et al., 2022)](https://arxiv.org/pdf/2208.05877)
 - [Content Identifiers (CIDs) — IPFS Docs](https://docs.ipfs.tech/concepts/content-addressing/)
+- [Content Addressing: 2025 In Review — IPFS Foundation](https://ipfsfoundation.org/content-addressing-2025-in-review/)
+- [Ed25519 Support in Chrome 137 — IPFS Blog](https://blog.ipfs.tech/2025-08-ed25519/)
 - [Syncthing Block Exchange Protocol v1](https://docs.syncthing.net/specs/bep-v1.html)
+- [Syncthing Local Discovery Protocol v4](https://docs.syncthing.net/specs/localdisco-v4.html)
 - [BitTorrent v2 — libtorrent blog](https://blog.libtorrent.org/2020/09/bittorrent-v2/)
 - [libp2p pubsub Peer Discovery with Kademlia DHT](https://medium.com/rahasak/libp2p-pubsub-peer-discovery-with-kademlia-dht-c8b131550ac7)
 - [Kiwix Hotspot — Offline Knowledge Distribution](https://kiwix.org/en/kiwix-hotspot/)
@@ -448,5 +546,9 @@ Phase 5.3 can be developed incrementally without blocking Phase 5.2:
 - [ActivityPub W3C Specification](https://www.w3.org/TR/activitypub/)
 - [Content Censorship in IPFS (2023)](https://arxiv.org/pdf/2307.12212)
 - [Peer2PIR: Private Queries for IPFS](https://arxiv.org/pdf/2405.17307)
+- [Scuttlebutt Protocol Guide — SSBC](https://ssbc.github.io/scuttlebutt-protocol-guide/)
+- [Secure Scuttlebutt: An Identity-Centric Protocol — ACM](https://dl.acm.org/doi/10.1145/3357150.3357396)
+- [Briar — How It Works (Bramble Protocol)](https://briarproject.org/how-it-works/)
+- [Vouchsafe: A Zero-Infrastructure Capability Graph Model for Offline Identity and Trust (Kuri, 2026)](https://arxiv.org/pdf/2601.02254)
 - [Phase 5 Architecture — open-repo project](./PHASE_5_ARCHITECTURE.md)
 - [Phase 6 Federation Roadmap — open-repo project](./ITEM15_PHASE6_FEDERATION_ROADMAP.md)
