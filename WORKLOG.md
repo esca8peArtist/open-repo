@@ -1,5 +1,62 @@
 # Work Log
 
+## Session 1727 (2026-05-27 13:34–14:15 UTC) — ORCHESTRATOR: PRE-DEPLOYMENT VALIDATION CHECKLIST EXECUTED
+
+**Status**: 🟢 SESSION COMPLETE — Executed PRE_DEPLOYMENT_VALIDATION_CHECKLIST Gates G1-G4. Verdict: CONDITIONAL GO. 3 agent-executable items identified for May 28 AM window before deployment proceeds.
+
+### Session Summary
+
+**Tasks**:
+1. Execute PRE_DEPLOYMENT_VALIDATION_CHECKLIST Gates G1-G4 (stockbot subagent)
+2. Document results and any blockers
+3. Update PROJECTS.md and prepare for May 28 AM window
+
+**Work Completed**:
+
+1. **PRE_DEPLOYMENT_VALIDATION_CHECKLIST Executed** ✅
+   - **G1 (Market Hours Gate)**: EXPECTED FAIL—safe. US market currently open (13:30-21:00 UTC), gate will PASS after 21:00 UTC on May 28.
+   - **G2 (Database Backup Verification)**: PARTIAL FAIL—action required in May 28 AM.
+     - Backup file exists: `/opt/stockbot/database/trading.db.pre-amzn-jpm.backup` ✅
+     - Backup age: 14 hours, FRESH ✅
+     - Backup trade count: 79 (below 100 threshold). Live DB now has 140 trades. Needs refresh.
+   - **G3 (Jetson Infrastructure Validation)**: PASS ✅
+     - SSH reachable <1s ✅
+     - Disk space: 129 GB free (threshold 50 GB) ✅
+     - RAM: 4,532 MB available (threshold 2,048 MB) ✅
+     - Docker containers: all healthy (stockbot, stockbot-web, gitea) ✅
+     - Health endpoint: `/api/health` returns `{"status":"ok","sessions":67}` ✅
+   - **G4 (API Credentials Validation)**: PASS ✅
+     - Alpaca API HTTP 200 ✅
+     - Account equity: $113,518.61 (above $50K threshold) ✅
+     - Cash: $75,049.41 ✅
+     - pattern_day_trader: True, trading_blocked: False ✅
+   - **G5 (Local Source Validation)**: PARTIAL FAIL—2 issues identified.
+     - AMZN stacker_id: WRONG. Has `43e36c77`, needs `97934980-96ad-4389-8a74-5ce8c06c4c7f`. Runbook patch script must use correct UUID.
+     - JPM ridge_wf pkl: MISSING on Jetson. `JPM_h10_ridge_wf_868f378c.pkl` not present. Needs rsync before deploy.
+
+2. **May 28 AM Action Items Identified** ✅
+   - **Item 1 (5 min)**: Refresh DB backup. `cp /opt/stockbot/database/trading.db /opt/stockbot/database/trading.db.pre-amzn-jpm.backup` on Jetson, verify count >= 140.
+   - **Item 2 (2 min)**: Rsync JPM ridge_wf pkl to Jetson. `rsync -avz .../JPM_h10_ridge_wf_868f378c.pkl awank@100.120.18.84:/opt/stockbot/models/ensemble_stackers/`
+   - **Item 3 (verification)**: Confirm runbook OPTION_A_RETRAIN_RUNBOOK.md patch script uses `97934980-96ad-4389-8a74-5ce8c06c4c7f` not `43e36c77`.
+
+3. **Findings Committed to BLOCKED.md** ✅
+   - New block entry added: "stockbot — Pre-deployment Gate G2/G5 items (May 28 AM action items)". Agent already committed.
+
+4. **PROJECTS.md Updated** ✅
+   - Updated stockbot focus line to reflect gate check results and May 28 AM items
+   - Preserved [RESOLVED] marker per orchestration rules
+
+**Verdict**: ✅ **CONDITIONAL GO** — Infrastructure healthy (G3, G4 PASS). 3 agent-executable pre-requisites identified (DB backup, rsync, UUID verification). Deployment can proceed May 28 after 21:00 UTC once items complete in AM pre-flight window.
+
+**Status Going Forward**:
+- May 28 AM: Execute 3 pre-deployment items (DB backup, rsync, UUID check)
+- May 28 AM: Deploy 4-session config to Jetson, restart container
+- May 28–30: 48h paper pre-flight observation (trading monitoring + daily checkpoints)
+- May 30 AM: Pre-flight pass/fail review (user: stay paper or promote live)
+- June 1 earliest: Go-live if pre-flight passes
+
+---
+
 ## Session 1726 (2026-05-27 13:30–14:05 UTC) — ORCHESTRATOR: HTTP STARTUP BLOCKER FIXED + DEPLOYMENT VALIDATION UNBLOCKED
 
 **Status**: 🟢 SESSION COMPLETE — Fixed critical HTTP server startup blocker (stockbot). Deployed and verified. May 28-31 deployment validation now unblocked. All orchestration files updated.
