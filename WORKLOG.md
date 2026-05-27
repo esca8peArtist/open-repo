@@ -1,5 +1,27 @@
 # Work Log
 
+## Session 1701j (2026-05-27) — RESEARCH AGENT: PHASE 6 DECISION SUPPORT PACKAGE
+
+**Status**: COMPLETE — Three decision-support documents committed to master under projects/systems-resilience/phase-6-decision-support/
+
+### Summary
+
+Built Phase 6 domain research screening and decision-support materials for May 31 user decision on which Phase 6 domains to research. Synthesized all existing candidate one-pagers, selection matrix, sequencing recommendation, and Phase 5 completion context into three production files.
+
+**Deliverables**:
+
+1. **PHASE_6_DOMAIN_SCREENING.md** (~3,800 words) — One-pager per candidate domain (Community Economic Resilience, Intergenerational Skills Development, Governance Scaling) with research scope, word count/citation targets, source library readiness %, production hours, cross-domain bridges, and unique contribution. Selection decision matrix (3 candidates x 5 criteria with numerical scores and rationale). Sequencing recommendation for 1-, 2-, and 3-domain scenarios. Copy-paste June 1 orchestrator kickoff template.
+
+2. **PHASE_6_DECISION_TREE.md** (~900 words) — Full decision tree with all branches (single domain, two-domain pairings, three-domain staggered, deferral). Every branch terminates in a named June 1 action. Summary table with delivery targets and confidence percentages per selection.
+
+3. **PHASE_6_EFFORT_ESTIMATES.csv** — 3-row spreadsheet (one per domain candidate). Columns: Domain Name, Research Hours, Source Library %, Pre-work Complete?, Production Start Date, Expected Completion Date, Conflicts with Phase 5?, User Approval Date. Pre-filled with best estimates from prior research outlines.
+
+**Key findings**: Community Economic Resilience has the highest source readiness (75-80%) and fastest production ramp (August 9 delivery, 95% confidence). Governance Scaling has the highest strategic leverage but lowest source readiness (65-70%) and slowest production (August 30, 78% confidence). Skills Development is the only domain addressing the 10-20 year sustainability horizon. Recommended two-domain pairing is Economic + Governance (Economic framing constrains Governance scope expansion risk).
+
+**Files committed**: projects/systems-resilience/phase-6-decision-support/PHASE_6_DOMAIN_SCREENING.md, PHASE_6_DECISION_TREE.md, PHASE_6_EFFORT_ESTIMATES.csv
+
+---
+
 ## Session 1701i (2026-05-27 06:30–07:15 UTC) — ORCHESTRATOR: DEADLINE EXECUTION SUPPORT DOCS + INFRASTRUCTURE VERIFICATION
 
 **Status**: COMPLETE ✅ — Created four critical user execution support documents, committed to master, infrastructure health verified
