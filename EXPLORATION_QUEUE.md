@@ -166,6 +166,36 @@
 
 ## Deferred Items (Post-Synthesis / Post-Checkpoint)
 
+### 49. ⏳ stockbot — Multi-Ticker Portfolio Evolution Roadmap (June 15+)
+**Scope**: Item 33 (Post-Gate-2 Long-Term Architecture) is deferred to June 15 post-execution. But the decision framework for expanding from 4-session to 10-20 ticker scale can be scoped now without waiting for May 22 checkpoint outcome. Pre-stage detailed roadmap covering: model rotation cadence (weekly? monthly? event-driven?), retraining SLA (infrastructure cost, CPU constraints, historical window management), risk aggregation across 10+ tickers (sector concentration, correlation evolution, portfolio-level Greeks if options activated), and failure mode handling (single-ticker crash recovery, cascade failure prevention, drawdown recovery sequencing).
+- **Deliverables**: 
+  - `MULTI_TICKER_EXPANSION_ROADMAP.md` (framework for 4→10→20 tickers, resource estimates per scale, decision gates)
+  - `MODEL_ROTATION_AND_RETRAINING_SLA.md` (weekly/monthly/event-driven cadence analysis, CPU/storage/time budget per ticker, walk-forward window optimization)
+  - `PORTFOLIO_RISK_AGGREGATION_FRAMEWORK.md` (10-ticker sector/correlation risk matrix, Greeks aggregation if options activated, failure cascade analysis)
+- **Owner**: stockbot subagent
+- **Deadline**: June 14 (ready for post-Gate-2-execution long-term architecture decision on June 15)
+
+### 50. ✅ systems-resilience — Phase 6 Wave 1 Activation Readiness Checklist (Session 1764 COMPLETE)
+**Status**: Completed May 27 (Session 1764, 21:20–22:05 UTC). All three deliverables production-ready and committed to projects/systems-resilience/ on master (commit `cc3f0f61`).
+**Scope**: Item 15 (Phase 6 Research Outline) is complete with 6 domains, sequencing, and resource allocation. Supplemented with granular day-by-day execution checklist for June 1-15 Wave 1: author onboarding playbook, daily research coordination templates, peer review recruitment & logistics, publication readiness gates, risk mitigation triggers (author unavailability, research dead-end, scope creep), and rollback procedures for June 1 decision.
+- **Deliverables** (ALL COMPLETE): 
+  - ✅ `PHASE_6_WAVE_1_EXECUTION_CHECKLIST.md` (5,711 words; daily T+0 to T+14 tasks, decision gates, contingencies, scope-subset compatibility)
+  - ✅ `PHASE_6_AUTHOR_ONBOARDING_KIT.md` (4,965 words; briefing template, research kit structure, outline review SLA, first-draft checkpoint protocol, publication template)
+  - ✅ `PHASE_6_COORDINATION_TEMPLATES.md` (3,724 words; daily standup format, weekly sync structure, peer review triage, 9-criterion publication readiness assessment matrix)
+- **Key findings**: All 14,400 words production-ready for instantiation June 1. Domain naming conventions reconciled (6-domain framework supports any 2-6 domain subset). Publication readiness matrix is single unified 30-minute assessment tool per domain. Scope subset compatibility documented throughout (all gates apply to domain subsets).
+- **Owner**: general-research subagent (Session 1764)
+- **Deadline**: May 31 ✅ ADVANCED COMPLETE (4 days early)
+- **Commit**: `cc3f0f61`
+
+### 51. ⏳ seedwarden — Phase 4 Content Strategy & Practitioner Tier Expansion (July 15+)
+**Scope**: Phase 3 (core medicinals, 8 bundles, 22 herbs) launches June 22. Phase 3 completion is July 13. Phase 4 can be scoped now in parallel to position for August launch. Phase 4 expansion: 15-20 botanical identification guides (visual keys + habitat + harvesting), 3-tier practitioner progression (Herbalist → RH → ND/PhD specialist), international herb traditions (European monographs, Ayurvedic Materia Medica, TCM classics), ZIM integration (botanical photography + identification keys), and new bundle strategy (Monographs Bundle, Regional Bundle, Traditions Bundle).
+- **Deliverables**: 
+  - `PHASE_4_CONTENT_STRATEGY.md` (scope of 20 botanical guides, tier architecture, 3-tier progression pathway, international sourcing)
+  - `PHASE_4_INTERNATIONAL_TRADITIONS_SOURCING.md` (European monographs + AHG cross-reference, Ayurvedic classics alignment, TCM database integration)
+  - `PHASE_4_PRACTITIONER_TIER_BUSINESS_MODEL.md` (RH/ND/specialist tier pricing, credential verification, content access tiers, revenue model for each tier)
+- **Owner**: seedwarden subagent
+- **Deadline**: July 14 (ready for July 13 Phase 3 completion → August launch transition)
+
 ### ⌛ resistance-research — Phase 2 Batch 1 Architecture (post-synthesis)
 **Context**: May 21 19:00 UTC synthesis determines Phase 2 launch path. Immediate execution if STRONG/MODERATE; contingency if WEAK/TOO_EARLY.
 **Deadline**: May 22-25 depending on synthesis outcome
