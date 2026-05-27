@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-27T03:22:07Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-27T04:02:30Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 4.1% (362,882 tokens) | All-models 1.6% | Reset in 141h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 4.1% (362,882 tokens) | All-models 1.6% | Reset in 140h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **PHASE 1 WAVE 1 MONITORING INFRASTRUCTURE 100% COMPLETE (Session 1687, May 26)** — Dashboard tabs (Replies, Constituencies, Checkpoints) built with full schemas, formulas, integration notes. Ready for May 27 pre-testing + May 28 Domain 56 distribution. | ✅ **MAY 28–JUNE 1 DISTRIBUTION SEQUENCES FULLY VERIFIED (Session 1692, May 27)** — AUDIT_DOMAIN_56_39_MAY28_JUNE1.md + DOMAIN_56_MAY28_SEND_SEQUENCE.md complete. ✅ **Domain 56 Gist LIVE** (verified May 27, HTTP 200). Domain 56 CLE … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED] MAY 28 DOMAIN 56 DISTRIBUTION 100% READY (Session 1701e, May 27 04:40 UTC)** — Domain 56 Gist verified live (HTTP 200), all 8 PDFs accessible + downloadable. Email templates confirmed clean (zero [fill] placeholders). Monitoring infrastructure production-ready (7-sheet dashboard spec, formula library, decision trees). **User actions remaining for May 28 14:00–18:00 UTC send**: (1) Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in domain-56-email-template.md (~5 min), (2) Personali … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,7 +36,7 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: ✅ **TRACK B 100% READY FOR MAY 30 LAUNCH — PRE-FLIGHT COMPLETE (Session 1693, May 27)** — All 8 zone PDFs verified production-ready (633–634 KB each, no placeholders, no draft sections, Zones 3–10 all present). 15 herbalist influencers staged with verified contact routes. Email/social templates confirmed clean (zero [fill]/[TBD] placeholders in HERBALIST_PARTNERSHIP_EMAIL_TEMPLATE.md + TRACK_B_SOCIAL_SCHEDULING_TEMPLATES.md). ✅ **LAUNCH-DAY RUNBOOKS COMPLETE AND VERIFIED** — 5 docu … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED] TRACK B 100% LAUNCH-READY — ALL PRE-FLIGHT COMPLETE (Session 1701e, May 27 04:30 UTC)** — All 8 zone PDFs production-ready (633–634 KB, verified accessible). 15 herbalist influencers staged, contact list placeholders resolved (modmail addresses confirmed). Email/social templates clean (zero placeholders). ✅ **DISTRIBUTION GIST LIVE** — `https://gist.github.com/esca8peArtist/db0b1798b5b70ff988367982176dc49d` verified accessible (all 8 PDFs downloadable, no auth required … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -80,11 +80,6 @@
 **Verify with**: `grep '"stacker_name": "JPM_h10' projects/stockbot/active-sessions-4session.json` — should show either ridge_wf or lgbm_ho (consistent with actual pkl file)
 **Resolution**: [awaiting user decision on retrain vs. config update]
 ---
----
-**Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
-**Date resolved**: 2026-05-27 00:15 UTC (Session 1690 — orchestrator backup executed)
-**Resolution**: ✅ **RESOLVED** — Backup created at `/opt/stockbot/database/trading.db.pre-amzn-jpm.backup` (safety requirement satisfied before AMZN/JPM activation).
----
 ### resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled)
 **Date blocked**: 2026-05-21 07:58 UTC (Session 1453 — orchestrator discovery); **Status changed**: 2026-05-21 18:54 UTC (Session 1476 — synthesis execution verification)
 **Context**: Resistance-research Phase 2 synthesis execution was scheduled for May 21 19:00 UTC. Orchestrator verification at 18:54 UTC (5 min before deadline) confirmed that the signal log (`post-wave-1-monitoring/wave-1-signal-log-may18-21.md`) remains unfilled — 20 [fill] placeholders remain unfilled. Synthesis-execution-monitor.py script run at 18:54 UTC returned error: "Signal log has 20 unfilled [fill] fields. User must complete the May 21 snapshot section before synthesis can run." As of May 21 18:54 UTC, synthesis WILL NOT execute at 19:00 UTC deadline. Per protocol, moving to TOO_EARLY contingency path (synthesis window: May 28). All four contingency playbooks (STRONG/MODERATE/WEAK/TOO_EARLY) are pre-staged in post-synthesis-contingency-execution-playbooks.md. TOO_EARLY path is temporary — classified as such because data collection window has not closed (May 25 final gate allows law school contacts 7+ days to reply, think tank contacts 5+ days). Mandatory re-synthesis will occur May 25 with all 7-day data.
@@ -93,13 +88,18 @@
 **Resolution**: [leave blank — contingency activated; will resolve May 25 upon re-synthesis with complete data]
 ---
 ---
+### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
+**Date blocked**: 2026-05-16
+**Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
+**Progress so far**:
+- ✅ 1.1 Signal — complete (username set, phone number hidden, disappearing messages on)
 
 ## Recently Resolved (last 5)
+• stockbot — Database backup created (pre-AMZN/JPM safety requirement) ← 2026-05-27 00:15 UTC (Session 1690 — orchestrator backup executed)
 • stockbot — Jetson unreachable since May 22 14:00 UTC (Outcome retrieval failed all 3 retry attempts) ← 2026-05-26 22:15 UTC (Session 1686 — Orchestrator validation discovered Jetson back online)
 • stockbot — SSH deadline missed (May 22 13:30 UTC) ← 2026-05-22 13:30 UTC (Session 1571 — deadline reached)
 • open-repo — Libzim integration tests failing; Phase 5.1 MVP merge blocked ← 2026-05-21 ~19:15 UTC (Session 1471 — orchestrator autonomous fix)
 • open-repo — Feature branch rebase has merge conflicts (Phase 5.1 MVP blocker) ← 2026-05-20 12:15 UTC (Session 1412 — ORCHESTRATOR)
-• Usage limits — weekly calibration reminder ← 2026-05-19 (Session 1327)
 
 ## Inbox (unprocessed)
 *(no new items)*
