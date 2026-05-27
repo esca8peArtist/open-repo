@@ -11,9 +11,9 @@ references:
   - TRACK_B_LAUNCH_DAY_RUNBOOK.md (Session 1691 — full detail)
   - LAUNCH_DAY_HOUR_BY_HOUR_RUNBOOK.md (Etsy-first variant)
   - CONTINGENCY_DECISION_PLAYBOOK.md (scenario decision trees)
-  - MAY_30_ISSUE_DECISION_TREES.md (this session companion)
-  - MAY_30_ROLLBACK_PROTOCOLS.md (this session companion)
-  - MAY_30_SUCCESS_METRICS_TEMPLATE.csv (tracking sheet)
+  - TRACK_B_LAUNCH_DAY_COMMON_ISSUES_DECISION_TREES.md (contingency scenarios)
+  - TRACK_B_LAUNCH_DAY_ROLLBACK_PROCEDURES.md (rollback playbooks)
+  - TRACK_B_LAUNCH_DAY_SUCCESS_SIGNAL_CHECKPOINTS.md (success metrics)
 ---
 
 # May 30, 2026 — Launch Day Runbook
@@ -22,7 +22,7 @@ references:
 **Launch**: May 30, 2026, 08:00 UTC  
 **Total operator time**: 3.5–4.0 hours across the full day  
 **Status entering launch day**: Track B 100% production-ready (verified Session 1693, May 27)  
-**Distribution URL**: Gist URL (insert before May 28 Tier 1 outreach); backup = Google Drive folder
+**Distribution URL**: https://gist.github.com/esca8peArtist/db0b1798b5b70ff988367982176dc49d (inserted 2026-05-27, Session 1701); backup = Google Drive folder
 
 ---
 
@@ -100,7 +100,7 @@ Navigate to r/herbalism. Submit new post using copy from TRACK_B_SOCIAL_CALENDAR
 Free zone-specific quick-start guides for herbalists and gardeners — all 8 USDA zones, no email required
 ```
 
-**Post body** (replace [INSERT GIST URL] before submitting):
+**Post body** (Gist URL inserted 2026-05-27):
 ```
 I spent the last few weeks building zone-specific quick-start cards for gardeners and herbalists. Each card covers:
 
@@ -109,7 +109,7 @@ I spent the last few weeks building zone-specific quick-start cards for gardener
 - Top 5 wild edibles in season by month
 - Soil prep notes and variety recommendations
 
-All 8 zones (3–10) are free to download here: [INSERT GIST URL]
+All 8 zones (3–10) are free to download here: https://gist.github.com/esca8peArtist/db0b1798b5b70ff988367982176dc49d
 
 Zone 5 and Zone 7 are the most requested — if you're in one of those, the timing tables are the main thing people find useful.
 

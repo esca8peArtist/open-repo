@@ -152,7 +152,7 @@ I spent the last few weeks building zone-specific quick-start cards for gardener
 - Top 5 wild edibles in season by month
 - Soil prep notes and variety recommendations
 
-All 8 zones (3–10) are free to download here: [INSERT GIST URL]
+All 8 zones (3–10) are free to download here: https://gist.github.com/esca8peArtist/db0b1798b5b70ff988367982176dc49d
 
 Zone 5 and Zone 7 are the most requested — if you're in one of those, the timing tables in the card are the main thing people find useful.
 

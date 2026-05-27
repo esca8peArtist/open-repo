@@ -23,7 +23,7 @@ purpose: "15 pre-selected herbalist influencers and community leaders for Track 
 
 ## A. Reddit Community Moderators (4 contacts)
 
-### Contact 1: u/[moderator name TBD] — r/herbalism
+### Contact 1: r/herbalism Moderation Team (via modmail)
 **Platform**: Reddit r/herbalism (130,000+ members)  
 **Relationship**: Moderation team  
 **Best outreach**: Reddit modmail to r/herbalism  
@@ -36,7 +36,7 @@ purpose: "15 pre-selected herbalist influencers and community leaders for Track 
 
 ---
 
-### Contact 2: u/[moderator name TBD] — r/gardening
+### Contact 2: r/gardening Moderation Team (via modmail)
 **Platform**: Reddit r/gardening (3.5M+ members; herbal gardening overlap)  
 **Relationship**: Moderation team  
 **Best outreach**: Reddit modmail to r/gardening  
@@ -49,7 +49,7 @@ purpose: "15 pre-selected herbalist influencers and community leaders for Track 
 
 ---
 
-### Contact 3: u/[moderator name TBD] — r/HerbalMedicine
+### Contact 3: r/HerbalMedicine Moderation Team (via modmail)
 **Platform**: Reddit r/HerbalMedicine (20,000–40,000 members; clinically-oriented)  
 **Relationship**: Moderation team  
 **Best outreach**: Reddit modmail or direct message to lead mod  
