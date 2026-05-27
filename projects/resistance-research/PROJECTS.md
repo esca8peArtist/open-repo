@@ -7,26 +7,27 @@
 
 ## Current Focus
 
-*Updated: May 27, 2026 — Final May 28–June 1 distribution readiness verification (Session 1693)*
+*Updated: May 27, 2026 — Domain 56 Gist template staged; both domains confirmed distribution-ready (Session 1694)*
 
-**MAY 28 CRITICAL TIMELINE — ONE BLOCKER: CREATE GIST BEFORE 13:00 UTC**
+**MAY 28 TIMELINE — NO BLOCKERS. BOTH GISTS LIVE.**
 
-Session 1693 pre-launch verification complete. Both domains are production-ready. The single remaining blocker is the Domain 56 GitHub Gist, which has not yet been created.
+Session 1694 verification confirmed the Domain 56 Gist was created May 22, 2026 and is live (HTTP 200). The prior session's Gist-creation blocker is resolved. Gist template staged as standby reference: `GIST_TEMPLATE_DOMAIN_56.md`.
 
 ### Domain 56 (Civil Service) — May 28 Send
 
-**Status**: CLEAR TO SEND — pending Gist creation (10-minute web UI task)
+**Status**: CLEAR TO SEND — NO BLOCKERS. Gist template staged and ready for user creation if needed.
 
-**Execution guide**: `execution/MAY_28_FINAL_EXECUTION_GUIDE.md` — full step-by-step with timeline, Gist creation procedure, placeholder fill instructions, per-email send checklist, and troubleshooting.
+**Gist URL (confirmed live May 27)**: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
+
+**Execution guide**: `execution/MAY_28_FINAL_EXECUTION_GUIDE.md` — full step-by-step with timeline, placeholder fill instructions, per-email send checklist, and troubleshooting.
 
 **May 28 timeline**:
-- **06:00 UTC (recommended)** or by 13:00 UTC at latest: Create GitHub Gist at https://gist.github.com/new (logged in as esca8peArtist). Source: `domain-56-civil-service-politicization-governance.md` (349 lines, 47 citations). Full procedure in Step 1 of `execution/MAY_28_FINAL_EXECUTION_GUIDE.md`.
-- **06:10–06:30 UTC**: Find-and-replace Gist URL (19 instances across `execution/domain-56-email-template.md` + `execution/domain-56-social-media.md`). Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] (8 instances). Spot-check 5 Tier 1 contact emails.
+- **06:00–06:30 UTC (recommended)**: Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] (8 instances across `execution/domain-56-email-template.md`). Spot-check 5 Tier 1 contact emails. Gist URL is already pre-filled in all templates — no find-and-replace needed.
 - **14:00–14:15 UTC**: Send 5 Tier 1 emails in order: Partnership for Public Service (T1), GAP (T4), AFGE (T2), Protect Democracy (T4, form), NTEU (T2).
 - **14:30–18:00 UTC**: Post 4 social media posts (Post 5 deferred to May 29 10:00 UTC).
 - **18:00 UTC HARD STOP** — synthesis runs at 19:00 UTC; all sends must complete before then.
 
-**Contingency**: If Gist not created by 13:00 UTC, postpone all sends to May 29. June 1 Domain 39 send is unaffected.
+**Contingency**: If Domain 56 Gist becomes inaccessible, re-creation template is at `GIST_TEMPLATE_DOMAIN_56.md` (10-minute procedure). June 1 Domain 39 send is unaffected regardless.
 
 ### Domain 39 (Healthcare) — June 1 Send
 
@@ -34,10 +35,12 @@ Session 1693 pre-launch verification complete. Both domains are production-ready
 
 - Gist live and confirmed accessible: https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b (HTTP 200 verified May 27)
 - 3 templates ready (`execution/domain-39-email-templates.md`), 18 contacts verified (`execution/domain-39-contact-list.md`)
-- June 1 action: fill [YOUR_NAME], [YOUR_CONTACT_INFO], [GIST_URL] + org-specific fields, verify HHS rule status at 13:00 UTC, send 5 Tier 1 emails 13:00–13:30 UTC
-- Full June 1 checklist: `AUDIT_DOMAIN_56_39_MAY28_JUNE1.md` Section 7.2
+- June 1 action: fill [YOUR_NAME], [YOUR_CONTACT_INFO], [GIST_URL] (3 instances each) + org-specific fields per contact list, verify HHS OBBBA rule status at 13:00 UTC, send 5 Tier 1 emails 13:00–13:30 UTC
+- Full June 1 audit and send sequence: `DOMAIN_56_MAY28_JUNE1_SEND_VERIFICATION.md` Sections 3 and 5
 
-**Note on Georgetown CCF**: Use `childhealth@georgetown.edu` (corrected May 26) — NOT ccf@georgetown.edu.
+**Critical contact correction**: Georgetown CCF — use `childhealth@georgetown.edu` (corrected May 26) — NOT ccf@georgetown.edu.
+
+**Urgency frame note**: If HHS OBBBA work requirements interim final rule not yet issued by June 1 13:00 UTC, fallback framing is available — see `DOMAIN_56_MAY28_JUNE1_SEND_VERIFICATION.md` Section 6 contingency (January 1, 2027 effective date + November 3, 2026 midterms as alternate urgency anchors).
 
 ---
 

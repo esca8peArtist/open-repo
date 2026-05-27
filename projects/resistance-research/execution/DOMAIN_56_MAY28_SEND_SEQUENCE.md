@@ -14,34 +14,25 @@ status: "EXECUTION READY"
 
 ---
 
-## CRITICAL: PRE-SEND REQUIREMENTS
+## PRE-SEND REQUIREMENTS
 
 **These must be completed BEFORE May 28 14:00 UTC:**
 
-### 1. GitHub Gist Creation (10 minutes — DO THIS FIRST)
+### 1. Gist Status Confirmation (2 minutes — GIST IS ALREADY LIVE)
 
-**Reference**: `execution/domain-56-gist-creation-steps.md`
+**Status**: Domain 56 Gist created May 22, 2026. Confirmed HTTP 200 on May 27, 2026 (Session 1694).
 
-**Steps**:
-1. Open https://gist.github.com/new
-2. Log in as esca8peArtist
-3. **Filename**: `domain-56-civil-service-politicization-nonpartisan-governance-2026.md`
-4. **Paste content**: 
-   - Zone A header (research metadata)
-   - Zone B context (advocacy windows, cross-domain references)
-   - Full document body (from `domain-56-civil-service-politicization-governance.md`)
-   - Zone D footer (About section, license, related documents)
-5. Set to **Public**
-6. Click "Create public gist"
-7. **Copy the URL** (format: `https://gist.github.com/esca8peArtist/<unique-32-char-hash>`)
+**URL**: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f
 
-**Verification**:
+Quick verify — open in incognito window before the send window opens:
 ```bash
-curl -s https://gist.github.com/esca8peArtist/<hash>/raw | head -5
+curl -s https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f/raw | head -5
 # Should return first 5 lines of the domain-56 document
 ```
 
-**⏰ TIME TARGET**: Complete by **May 28 13:00 UTC** (1-hour buffer before 14:00 send window)
+If the Gist is inaccessible, the re-creation procedure is at `GIST_TEMPLATE_DOMAIN_56.md` (10 minutes). If Gist creation cannot be completed by 13:00 UTC, postpone all sends to May 29.
+
+**⏰ TIME TARGET**: Verify by **May 28 06:00 UTC** (morning of send day)
 
 ---
 
@@ -65,18 +56,13 @@ curl -s https://gist.github.com/esca8peArtist/<hash>/raw | head -5
 - Social instances: 0
 - Total: 4 instances
 
-#### B. Gist URL (11 instances across both files)
+#### B. Gist URL — Already Pre-Filled (no action needed)
 
-**[DOMAIN_56_GIST_URL]**: Replace with actual Gist URL from Step 1
+The Gist URL (`https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f`) is written into all 4 email templates and the social posts as a live link, not as a placeholder. Session 1694 audit confirmed this.
 
-**Locations**:
-- `domain-56-email-template.md`: Template 1 (1), Template 2 (1), Template 3 (1), Template 4 (1), Send Log table (7 entries × 0.5 per recipient = tracked separately)
-  - **Count**: 11 instances (in email body + send log)
-- `domain-56-social-media.md`: Post 1 (2 instances — tweet + LinkedIn), Post 2 (1), Post 3 (1), Post 4 (2 — tweet + LinkedIn), Post 5 (2 — tweet + LinkedIn)
-  - **Count**: 8 instances in social posts
-  - **Total across both files**: 19 instances
+**Confirm only**: Search `execution/domain-56-email-template.md` for `8f11e868`. Should appear in all 4 template bodies. If absent, search for `[DOMAIN_56_GIST_URL]` and replace all 19 instances with the live URL.
 
-**⏰ TIME TARGET**: Complete by **May 28 13:30 UTC**
+**⏰ TIME TARGET**: Confirm by **May 28 06:10 UTC**
 
 ---
 
@@ -243,9 +229,8 @@ After all 5 emails sent:
 
 | Item | Time | Status | Notes |
 |------|------|--------|-------|
-| Gist creation starts | TBD | — | Reference: domain-56-gist-creation-steps.md |
-| Gist creation complete | TBD | ⬜ | Record actual Gist URL here: https://gist.github.com/esca8peArtist/`<ACTUAL_HASH>` |
-| Gist verification | TBD | ⬜ | curl response: [first 20 lines check] |
+| Gist confirmed live | May 27, 2026 | ✅ | URL: https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f |
+| Gist re-verify May 28 | May 28, 2026 morning | ⬜ | Incognito check or curl before send window opens |
 | Template placeholders filled | TBD | ⬜ | [YOUR_NAME], [YOUR_CONTACT_INFO], Gist URL |
 | Contact emails spot-checked | TBD | ⬜ | Tier 1 verification complete |
 | All pre-sends confirmed | TBD | ⬜ | Ready to send by 14:00 UTC |
@@ -378,8 +363,9 @@ If form submission fails:
 
 Before proceeding with May 28 sends:
 
-- [ ] **Gist created and URL obtained** (or will be created by May 27 EOD)
-- [ ] **All placeholders identified and fill procedure confirmed** (19 instances across 2 files)
+- [x] **Gist live** — https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f (confirmed May 27, 2026)
+- [ ] **Gist re-verified May 28 morning** (incognito window or curl check)
+- [ ] **[YOUR_NAME] and [YOUR_CONTACT_INFO] filled** (4 instances each in domain-56-email-template.md)
 - [ ] **Contact emails spot-checked** (5 Tier 1 addresses verified)
 - [ ] **Send sequence timeline reviewed** (14:00–18:00 UTC send window, 5 min buffer before 18:00 deadline)
 - [ ] **Social media timing decided** (stagger May 28 afternoon or May 29?)
@@ -387,7 +373,7 @@ Before proceeding with May 28 sends:
 - [ ] **Contingency plans reviewed** (gist slips, bounces, form failures)
 - [ ] **Response monitoring protocol confirmed** (watch for replies; log in signal log)
 
-**Status**: ⬜ READY TO EXECUTE (pending Gist creation)
+**Status**: ✅ READY TO EXECUTE — NO BLOCKERS (Gist live; fill [YOUR_NAME] and [YOUR_CONTACT_INFO] before send)
 
 ---
 
@@ -398,7 +384,7 @@ Before proceeding with May 28 sends:
 **Hard deadline**: May 28, 2026 — 18:00 UTC
 **Success criteria**: 2 of 5 Tier 1 substantive replies within 7 days
 
-**Confidence**: 95% (pending Gist creation)
+**Confidence**: 98% (Gist live, all templates verified, contacts documented)
 
 ---
 
