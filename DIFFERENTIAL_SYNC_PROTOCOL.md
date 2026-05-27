@@ -80,18 +80,21 @@ The differential sync protocol is primarily designed for PATCH and MINOR version
 
 **Approach A: zimdiff / zimpatch (ZIM-native)**
 
-The openZIM project developed `zimdiff` and `zimpatch` tools as part of a 2013 Google Summer of Code project. Zimdiff takes two ZIM files as input, computes their difference, and produces a ZIM diff file where `old_zim + diff_file = new_zim`. Zimpatch applies the diff to produce the updated ZIM.
+The openZIM project developed `zimdiff` and `zimpatch` tools as part of a 2013 Google Summer of Code project, and the tools remain actively maintained in the `openzim/zim-tools` repository as of 2025. Zimdiff takes two ZIM files as input, computes their difference, and produces a ZIM diff file where `old_zim + diff_file = new_zim`. Zimpatch applies the diff to produce the updated ZIM.
 
 The openZIM project revisited this with a ZIM Update v2 initiative in 2024, updating the period suffix format to `YYYY-MM[ll]` to support within-month update releases.
+
+**Known limitation (implementation decision required)**: There is a verified bug where the SHA-256 checksum of the file produced by `zimpatch` does not match the checksum of the original new ZIM file, even when the content is identical. The root cause is that `zimpatch` may produce a different cluster layout than the original zimwriter, because it does not know the cluster size used during the original export. This means that a library applying a binary patch cannot verify the result against the publisher's published SHA-256 — it gets a valid, readable ZIM but with a different hash. The recommended mitigation for open-repo: after `zimpatch` completes, verify the result by running `zimcheck` (which validates content correctness) rather than comparing SHA-256 hashes. Document this behavior clearly to operators.
 
 Strengths:
 - ZIM-native: understands the ZIM cluster structure and article index, enabling smarter diffing than a generic binary diff
 - The receiver does not need the new ZIM — only the old ZIM and the diff file
 - Two patching modes: fast merge (index rewriting, higher storage) or full recompute (lower storage)
 - Diff file is itself in ZIM format, enabling the diff to be inspected or applied by any ZIM-aware tool
+- Actively maintained; included in the standard `zim-tools` package for Linux/macOS/Windows
 
 Weaknesses:
-- The tooling is not fully productionized as of 2025; implementation status requires verification
+- Post-patch SHA-256 mismatch (see above) — requires `zimcheck` rather than hash-based verification after patching
 - Diff file size depends on article content changes, but also on ZIM cluster reorganization — if the cluster layout changes significantly (e.g., when many new articles are added and clusters are rebalanced), the diff file may be large even if content changes are small
 - The receiver must have the exact same version of the old ZIM that the diff was computed against (no partial patch chains without intermediate versions)
 
@@ -132,6 +135,29 @@ Weaknesses:
 - Requires the receiver to have the ZIM build pipeline (libzim) installed and sufficient CPU/RAM to run ZIM assembly — not suitable for bare Kiwix readers
 - The rebuilt ZIM may have different cluster layout than the original, making it technically a new ZIM file (different CID) even with the same content
 - More complex implementation than binary delta approaches
+
+### 2.1.1 Case Study: Syncthing Block Exchange Protocol
+
+The Syncthing BEP is relevant to open-repo's chunk-level verification design. Syncthing's approach to binary file sync over unreliable connections is instructive:
+
+1. The sender hashes the file in fixed-size blocks (default 128 KB). The hash list constitutes the file's "block index."
+2. The receiver fetches the block index first. For each block the receiver already has (from a previous version of the same file), it reuses the local block. Only blocks not yet held are requested from the sender.
+3. Each received block is verified against the block index hash before being written.
+4. A file is only marked complete when all blocks are received and verified.
+
+The key insight for open-repo: **block-level verification enables safe download resumption over unreliable connections at much finer granularity than file-level verification.** A ZIM file download that fails after 30 MB does not waste those 30 MB if block hashes were validated as blocks arrived. Open-repo's existing design (HTTP Range requests) provides byte-range resumption, but not block-level verification. The Syncthing model suggests a refinement for Phase 5.3c: include the block hash list in the ZIM manifest (analogous to BitTorrent piece hashes) so that partial downloads can be verified block-by-block before assembly.
+
+**Implementation cost**: Adding block hashes to the manifest requires one hash computation per 128 KB block during export (negligible) and block-level verification logic in the download client (4–6 hours new work). The block size should match ZIM cluster boundaries (typically 256 KB for Zstandard-compressed ZIM) for maximum deduplication benefit.
+
+### 2.1.2 Case Study: MTS-1 Lightweight Delta-Encoded Telemetry
+
+The MTS-1 format (Magenta Telemetry Standard v1, arXiv 2026) is a binary delta-encoded telemetry format designed for offline-first system monitoring, LAN-assisted proxy delivery, and energy-constrained IoT-to-server transmission. Although its application domain (industrial telemetry) differs from open-repo's (offline libraries), its design decisions are directly applicable:
+
+- MTS-1 uses a **baseline + delta** model: the first transmission is a full snapshot; subsequent transmissions are delta-encoded against the previous snapshot. This is structurally identical to open-repo's MINOR release (full ZIM) + PATCH delta chain model.
+- MTS-1 defines a maximum delta chain depth (configurable, but bounded) to prevent accumulation of unapplyable deltas if intermediate states are lost. This directly validates open-repo's design choice of a maximum 3-deep chain before requiring a full rebase.
+- MTS-1's LAN-assisted proxy delivery (a local node aggregates and relays telemetry, reducing the number of satellite uplink sessions required) is analogous to open-repo's kiwix-serve hotspot acting as a local relay node for ZIM updates.
+
+The MTS-1 paper is the most recent empirical data point for delta-encoded binary sync in bandwidth-constrained IoT/offline contexts, and it validates the architectural approach taken in this document.
 
 ### 2.2 Recommended Approach: Hybrid Strategy
 
@@ -347,6 +373,25 @@ estimated_time_seconds = (delta_size_bytes / p95_speed) * 1.2
 
 **Bandwidth cap enforcement**: The operator can set a maximum daily or weekly bandwidth budget for sync operations. The node tracks usage against this cap and defers non-urgent syncs when the cap is approached.
 
+### 5.2.1 Phase 5.2 Domain ZIM Bandwidth Estimates
+
+The following table applies the bandwidth model to the specific Phase 5.2 domain ZIMs, providing concrete sync estimates for planning.
+
+**Assumptions**: Medical ZIM at Phase 5.2 scope = 50 guides × 400 KB average article = 20 MB uncompressed → ~7 MB compressed at 3:1 Zstandard ratio. Full 5-domain library = ~35 MB total.
+
+| Scenario | Transfer size | 2G (100 Kbps) | 3G (1 Mbps) | Satellite (50 Kbps) |
+|---|---|---|---|---|
+| **First-time full sync (all 5 domains)** | 35 MB | 47 min | 4.7 min | 94 min |
+| **First-time full sync (Medical only)** | 7 MB | 9.5 min | 0.9 min | 19 min |
+| **PATCH update (2 articles corrected)** | ~40 KB | 3 sec | <1 sec | 6 sec |
+| **MINOR update (12 articles changed)** | ~240 KB | 19 sec | 2 sec | 38 sec |
+| **MINOR update (80 new East Africa seeds)** | ~3 MB | 4 min | 24 sec | 8 min |
+| **Delta manifest (JSON, any update)** | ~5–20 KB | <2 sec | <1 sec | <3 sec |
+
+Key finding: **PATCH and small MINOR updates are feasible in real time on 2G**. The 2G case that justifies differential sync is not the small PATCH (which takes seconds even as a full-file re-download at these sizes) but the library that is multiple MINOR versions behind — needing to sync from v1.0 to v1.3 via three sequential MINOR deltas rather than one full re-download.
+
+The worst case for differential sync is MAJOR releases (full structural changes) on satellite connections. For Phase 5.3, MAJOR releases on satellite should always be pre-packaged into USB bundles and sent via the sneakernet channel, not attempted over the satellite uplink.
+
 ### 5.3 Prioritization
 
 When multiple domain ZIMs have updates pending and bandwidth is constrained, updates are prioritized by:
@@ -478,6 +523,7 @@ No sync logic yet — just the manifest generation. Cost: 4–6 hours.
 
 - [Kiwix/ZIM Incremental Updates — MediaWiki](https://www.mediawiki.org/wiki/Kiwix/ZIM_incremental_updates)
 - [T49406 Incremental update: zimdiff & zimpatch — Wikimedia Phabricator](https://phabricator.wikimedia.org/T49406)
+- [Issue #8: zimdiff/zimpatch checksum mismatch — openzim/zim-tools GitHub](https://github.com/openzim/zim-tools/issues/8)
 - [openZIM ZIM Updates — wiki.openzim.org](https://wiki.openzim.org/wiki/ZIM_Updates)
 - [librsync — GitHub](https://github.com/librsync/librsync)
 - [Rsync — Wikipedia](https://en.wikipedia.org/wiki/Rsync)
@@ -485,8 +531,10 @@ No sync logic yet — just the manifest generation. Cost: 4–6 hours.
 - [Git Delta Compression — gitperf.com](https://gitperf.com/chapter-06.html)
 - [How Git Efficiently Transmits Changes — teknikaldomain.me](https://teknikaldomain.me/post/how-git-efficiently-transmits-your-changes/)
 - [Syncthing Block Exchange Protocol v1](https://docs.syncthing.net/specs/bep-v1.html)
+- [Syncthing Local Discovery Protocol v4](https://docs.syncthing.net/specs/localdisco-v4.html)
 - [Anatomy of the Block Exchange Protocol — Reliability Whisperer](https://reliabilitywhisperer.substack.com/p/the-anatomy-of-the-block-exchange)
 - [Efficient game updates (delta encoding case study) — fasterthanli.me](https://fasterthanli.me/articles/efficient-game-updates)
+- [MTS-1: Lightweight Delta-Encoded Telemetry for Low-Resource Offline-First Environments — arXiv 2601.01602](https://arxiv.org/pdf/2601.01602)
 - [Offline-First Done Right — Developers Voice](https://developersvoice.com/blog/mobile/offline-first-sync-patterns/)
 - [Offline sync and conflict resolution — Sachith Dassanayake (2026)](https://www.sachith.co.uk/offline-sync-conflict-resolution-patterns-architecture-trade%E2%80%91offs-practical-guide-feb-19-2026/)
 - [Phase 5 Architecture — open-repo project](./PHASE_5_ARCHITECTURE.md)
