@@ -1,5 +1,56 @@
 # Open-Repo Project Worklog
 
+## Phase 5.2 Wave 2: A11y Audit Framework Pre-Stage (2026-05-27)
+
+**Completion Date**: 2026-05-27
+
+**Agent**: Claude Sonnet 4.6 (Research/General Agent — Session 1715 Exploration Queue Item 2)
+
+**Objective**: Pre-stage the A11y audit infrastructure for Phase 5.2 Wave 2 execution (June 1–6, 2026). All four deliverables are production-ready; the June 1 audit can begin immediately without planning overhead.
+
+### Files Produced
+
+1. **`WCAG_2.1_AA_AUDIT_CHECKLIST.md`** (1,750 words)
+   - 6-category WCAG 2.1 AA checklist: Keyboard Navigation, Screen Reader, Color Contrast, Semantic Markup, Form Accessibility, Performance
+   - Per-section pass/fail criteria with specific rules and measurement thresholds (4.5:1 contrast, tabindex validation, heading hierarchy)
+   - Auto-audit tool reference: axe-core, Lighthouse, WAVE, WebAIM, Pa11y — with install commands
+   - Manual testing procedures: Orca screen reader step-by-step, keyboard-only navigation walkthrough, color contrast inspection
+   - Severity mapping: WCAG Level A = P0, Level AA = P1, Level AAA = P2
+
+2. **`A11Y_AUTOMATED_TEST_SUITE.md`** (1,450 words)
+   - axe-core pytest integration: complete `tests/test_a11y_axecore.py` with Playwright, `run_axe()` helper, 5 copy-paste-ready tests
+   - Lighthouse CI: `lighthouserc.js` config, `scripts/run_lighthouse_batch.sh` batch script, report aggregation script
+   - OPDS smoke tests: complete `tests/test_a11y_opds_smoke.py` (6 tests — 200 checks, response time, content-type, search)
+   - DOM semantics tests: complete `tests/test_a11y_dom_semantics.py` (5 tests — heading hierarchy, icon buttons, form labels, landmarks, lang attr)
+   - GitHub Actions workflow: `.github/workflows/a11y.yml` with pre-deployment gate
+
+3. **`A11Y_AUDIT_FINDINGS_REPORT_TEMPLATE.md`** (1,150 words)
+   - 6 baseline audit tables (one per WCAG category) — fill-in-the-blanks format with example rows
+   - Before/after summary table and axe-core pass count tracker
+   - P0/P1/P2 fix status tracking tables (Day 3 / Day 5 targets)
+   - Root cause analysis section per category (with example text to guide completion)
+   - Remediation evidence section (commit + before/after code snippet + verification command per fix)
+   - Verification section: re-audit commands, summary table, regression prevention
+
+4. **`A11Y_FIX_COMPLEXITY_MATRIX.md`** (1,200 words)
+   - 28-row fix complexity matrix (Issue Type × Effort × Risk Level)
+   - Per-category fix patterns with copy-paste code: keyboard focus trap, skip nav link, modal focus management, ZimWriter alt text generation, CSS contrast replacements, semantic HTML landmarks
+   - Contrast ratio quick-reference table: 6 common failing colors with passing replacements and exact ratios
+   - P0/P1/P2 severity threshold definitions with examples specific to this project
+   - 5 prioritization rules: P0 first by user count, batch similar P1s, no-new-P0s gate, designer flag rule, ZimWriter rebuild rule
+   - Risk mitigation: which fix types need QA, designer input, regression test matrix
+   - Effort budget summary: realistic June 1–6 scope estimate of 8–16 hours total remediation
+
+### June 1 Readiness
+
+All four documents are copy-paste-ready for June 1 audit execution:
+- Checklist: run Section 1–6 sequentially; fill in Result column
+- Test suite: install deps (`uv pip install pytest-playwright beautifulsoup4` + `npm install -D axe-core`), run 3 test files
+- Report template: paste findings from automated scans into pre-formatted tables
+- Complexity matrix: cross-reference any found issue type to get effort estimate immediately
+
+---
+
 ## Phase 5.2 Wave 1: OPDS Feed Generator Implementation (2026-05-27)
 
 **Completion Date**: 2026-05-27
