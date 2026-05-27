@@ -1,5 +1,29 @@
 # Work Log
 
+## Session 1701k (2026-05-27) — RESEARCH AGENT: PHASE 4 ACTIVATION PLAYBOOKS + ROUTER
+
+**Status**: COMPLETE — Four files committed to master under projects/systems-resilience/phase-4-activation-templates/
+
+### Summary
+
+Built three rapid-deployment Phase 4 activation playbooks (one per May 31 publication option) and one activation router, so that whichever option the user selects on May 31, Phase 4 can activate immediately June 1 with zero setup lag.
+
+**Deliverables**:
+
+1. **PHASE_4_ACTIVATION_OPTION_A.md** (~2,480 words) — 5-day playbook for Option A (Wave 1+2 June 1–5, Wave 3 June 30). Three production-ready deliverables: governance synthesis workshop outline (3-hour agenda, Day 1-3 structure, scenario-based architecture comparison, adoption vote procedure), household scaling one-pager (48-hour orientation, first-week audit, multi-household coordination call structure), Zone 5 adaptation guide (sequencing change rationale, 8-row hard deadline table June–October, Zone 5 resource network). Day 1–5 checklist with go/no-go decision point June 1.
+
+2. **PHASE_4_ACTIVATION_OPTION_B.md** (~2,496 words) — 14-day ramp playbook for Option B (unified June 15). Week 1 individual-scale deepening (adaptive capacity mapping, resource dependency chain analysis, stress-test scenarios — three new methodologies not in Phase 3). Week 2 household scaling synthesis and integration. Daily standup template (15 min, Phase 5 + Phase 4 + integration tracks). Three mandatory integration checkpoints (June 3, June 10, June 14 go/no-go). Contingency paths for editorial delay.
+
+3. **PHASE_4_ACTIVATION_OPTION_C.md** (~2,648 words) — 8-week rolling playbook for Option C (1 module/week). Weekly coordination template (fill-in-the-blank per module). Module pairing matrix with fail-safe column (which modules can hold 1 week, which cannot). Rolling publication calendar Weeks 1–8 (May 29 – July 24). Zone 5 critical decision table by week. Three slip scenarios with specific recovery protocols.
+
+4. **PHASE_4_ACTIVATION_ROUTER.md** (~1,857 words) — Decision router. Reads May 31 CHECKIN for three inputs (publication option, Phase 6 domain selections, user availability). Routes to correct template. Applies Phase 6 bridge content modifications per domain selection (Governance Scaling, Economic Resilience, Skills Development). Availability modifications (full-time/part-time/episodic). 5-minute activation checklist (copy-paste ready). Fallback: if no decision by June 1, defaults to Option B + 2-week buffer.
+
+**Key design choices**: All three templates use the same governance synthesis workshop structure (Options A and B run it June 1–3; Option C runs it June 1–3 with a May 29 skeleton session preceding). Router modifications for Phase 6 domains are additive (bridge content only, not scope changes). Fail-safes in Option C are scenario-specific — not generic "delay everything" but "this module can hold, this one cannot."
+
+**Files committed**: projects/systems-resilience/phase-4-activation-templates/PHASE_4_ACTIVATION_OPTION_A.md, OPTION_B.md, OPTION_C.md, PHASE_4_ACTIVATION_ROUTER.md
+
+---
+
 ## Session 1701j (2026-05-27 07:30–08:00 UTC) — ORCHESTRATOR: PHASE 6 DECISION SUPPORT EXECUTION + SYNTHESIS VERIFICATION
 
 **Status**: COMPLETE ✅ — Exploration Queue Item delivered; synthesis status verified; no new blocks identified
