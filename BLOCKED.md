@@ -51,14 +51,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
----
-
-**Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
-**Date resolved**: 2026-05-27 00:15 UTC (Session 1690 — orchestrator backup executed)
-**Resolution**: ✅ **RESOLVED** — Backup created at `/opt/stockbot/database/trading.db.pre-amzn-jpm.backup` (safety requirement satisfied before AMZN/JPM activation).
-
----
-
 ### resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled)
 
 **Date blocked**: 2026-05-21 07:58 UTC (Session 1453 — orchestrator discovery); **Status changed**: 2026-05-21 18:54 UTC (Session 1476 — synthesis execution verification)
@@ -98,6 +90,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — Database backup created (pre-AMZN/JPM safety requirement)
+
+**Date blocked**: 2026-05-26 22:15 UTC (Session 1686 — orchestrator validation)
+**Date resolved**: 2026-05-27 00:15 UTC (Session 1690 — orchestrator backup executed)
+**Resolution**: ✅ **RESOLVED** — Backup created at `/opt/stockbot/database/trading.db.pre-amzn-jpm.backup` (safety requirement satisfied before AMZN/JPM activation).
+
+---
 
 ### stockbot — Jetson unreachable since May 22 14:00 UTC (Outcome retrieval failed all 3 retry attempts)
 
