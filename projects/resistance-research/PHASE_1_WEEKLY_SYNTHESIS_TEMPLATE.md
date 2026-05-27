@@ -1,7 +1,7 @@
 ---
 title: "Phase 1 Weekly Synthesis Template"
 created: 2026-05-26
-version: 1.0
+version: 1.1
 status: production-ready
 scope: >
   Copy-paste template for Monday morning weekly synthesis of Phase 1 monitoring data.
@@ -9,14 +9,19 @@ scope: >
   Sections 7–13 are checkpoint-week-only or as-needed (~6 additional minutes when applicable).
   Total budget: 15–20 minutes per week.
 companion_files:
-  - PHASE_1_MONITORING_DASHBOARD_SHEETS_SPEC.md
-  - PHASE_1_GIST_TRACKING_PROTOCOL.md
-  - reply-triage-framework.md
-  - day-7-14-30-decision-trees.md
+  - PHASE_1_MEASUREMENT_SYSTEM.md
+  - PHASE_1_MEASUREMENT_SPREADSHEET_SPEC.md
+  - PHASE_1_IMPACT_EVALUATION_FRAMEWORK.md
+  - PHASE_1_DECISION_TREES.md
 usage: >
   Copy this entire template. Save as monitoring/phase-1-week-[N]-synthesis-[YYYY-MM-DD].md.
   Fill all bracketed fields. Commit when done.
-first_use_date: "Monday, June 3, 2026 (Day 6)"
+first_use_date: "Monday, June 4, 2026 (Day 7 checkpoint)"
+updated: 2026-05-27
+update_notes: >
+  v1.1: Updated companion_files to reference new PHASE_1_MEASUREMENT_SYSTEM.md and
+  PHASE_1_MEASUREMENT_SPREADSHEET_SPEC.md. Added Week 1 pre-populated example and
+  escalation checklist appendix at end of document.
 ---
 
 # Phase 1 Weekly Synthesis Template
@@ -331,4 +336,188 @@ Use this reference to check whether any alerts were triggered this week:
 
 ---
 
-*Template version 1.0 — May 26, 2026. Use starting June 3, 2026 (Week 1) through at least Week 8 (late July). After Day 60 checkpoint, assess whether continued weekly synthesis is warranted based on Phase 2 launch status.*
+*Template version 1.1 — May 27, 2026. Use starting June 4, 2026 (Day 7 checkpoint) through at least Week 8 (late July). After Day 60 checkpoint, assess whether continued weekly synthesis is warranted based on Phase 2 launch status.*
+
+---
+
+## Appendix A: Week 1 Pre-Populated Example (May 28 – June 3, 2026)
+
+This example shows what a completed Week 1 synthesis looks like under a moderate-positive scenario. Use it as a reference for calibrating scoring and interpretation, not as a template to copy verbatim.
+
+---
+
+# Phase 1 Wave 1 — Week 1 Synthesis (EXAMPLE)
+
+**Week of**: May 28, 2026 through June 3, 2026
+**Date completed**: June 4, 2026
+**Time started / completed**: 09:00 — 09:22 UTC
+**Days elapsed since first Wave 1 send (May 28)**: Day 1 through Day 7
+**Domains in active distribution**: Domain 56 (May 28), Domain 39 (June 1)
+
+---
+
+### Section 1: Running Metrics
+
+| Metric | This Week | Cumulative to Date |
+|--------|-----------|-------------------|
+| Contacts with Send_Date populated | — | 45 |
+| Confirmed delivered | — | 42 (3 unknown — follow up) |
+| Gist clicks — Domain 56 (bit.ly/drp-d56) | 8 | 8 |
+| Gist clicks — Domain 39 (bit.ly/drp-d39) | 4 | 4 |
+| All links total clicks | 23 | 23 |
+| New replies received | 4 | 4 |
+| Overall reply rate (replies / delivered) | — | 9.5% (4/42) |
+| Score 3+ replies | 2 | 2 |
+| Score 3+ rate | — | 4.8% |
+| Score 5 (Implementation Signal) | 0 | 0 |
+| Score 4 (Partnership) | 1 | 1 |
+| Score 2 (Polite ack or OOO) | 1 | 1 |
+| Score 1 (OOO only) | 1 | 1 |
+| Tier 2 candidates flagged | — | 1 |
+| Confirmed adoption signals | — | 0 |
+
+Alert check:
+- [ ] Critique rate > 30%: NO (0 of 4 replies were critiques)
+- [ ] Score 5 received: NO
+- [ ] Score 4 received: YES — one immigration legal aid contact (see Section 2)
+- [ ] Cumulative clicks below Week 1 target: NO (23 vs. 15 target — above)
+- [ ] Delivery bounce: YES — 3 contacts show unknown delivery status; not confirmed bounces
+
+---
+
+### Section 2: New Reply Scoring
+
+**Reply R001 — NILC (Immigration Legal Aid)**
+- Date received: June 2, 2026
+- Category: Partnership
+- Engagement Score: 4
+- Key content: "The Domain 29 model brief language is exactly what we need for a pending Ninth Circuit amicus. I'm forwarding to our litigation director today. Can we adapt this for our specific case context?"
+- Action required: YES — Reply confirming adaptation permission and request for case context details
+- Response sent by: June 5, 2026
+- Escalation: ESCALATE — Score 4 within Day 7. Add to CHECKIN.md under "Early Signals."
+- Tier 2 candidate: YES
+
+**Reply R002 — Harvard Law School (Law School)**
+- Date received: June 2, 2026
+- Category: General Question
+- Engagement Score: 3
+- Key content: "This is a compelling framework. Question on methodology: how are you distinguishing 'democratic erosion' events from normal political contestation in your Domain 37 typology?"
+- Action required: YES — Substantive reply explaining the typology criteria
+- Response sent by: June 5, 2026
+- Escalation: none (Score 3; monitor for follow-up)
+- Tier 2 candidate: YES (if follow-up reply upgrades to Score 4)
+
+**Reply R003 — ACLU National (Civil Rights)**
+- Date received: June 1, 2026
+- Category: General Question (borderline polite ack)
+- Engagement Score: 2
+- Key content: "Thanks for sharing this important work. I'll pass along to our policy team."
+- Action required: NO
+- Response sent by: N/A
+- Escalation: none
+- Tier 2 candidate: NO (Score 2; monitor for policy team follow-up)
+
+**Reply R004 — Unnamed mutual aid contact (Mutual Aid)**
+- Date received: June 3, 2026
+- Category: OOO auto-reply only
+- Engagement Score: 1
+- Key content: "Out of office through June 10."
+- Action required: NO — Add June 10 reminder to follow-up calendar
+- Tier 2 candidate: NO
+
+---
+
+### Section 3: Gist Views Summary
+
+Domain 56 (bit.ly/drp-d56): 8 clicks this week
+Domain 39 (bit.ly/drp-d39): 4 clicks this week (June 1–3 only — first 3 days)
+All links combined this week: 23
+Delta vs. prior week: N/A (first week)
+Click velocity: 23 / 7 = 3.3 clicks/day
+
+Spike detected: YES — Domain 56 had 5 clicks on June 1. This aligns with the Domain 39 send date. Likely cause: Domain 39 recipients saw the Domain 56 Gist URL in the email footer and clicked through. Not an organic amplification event; a cross-send click-through.
+
+Target check: Week 1 cumulative target: 15+. Actual: 23. Status: Above target.
+
+Interpretation: Click velocity is healthy. The June 1 cross-spike confirms that Domain 39 recipients are engaging with Domain 56 materials — a positive cross-domain signal. Watch for whether immigration legal aid contacts (who are the Domain 39 primary audience) also click Domain 56 next week.
+
+---
+
+### Section 6: Tier 2 Candidates
+
+New Tier 2 candidates this week: 1
+
+- Organization: NILC
+- Score: 4
+- What they said: Seeking permission to adapt Domain 29 model brief for Ninth Circuit amicus
+- Domain engaged: Domain 56 (via cross-click), Domain 29 content request
+- Recommended follow-up: Confirm adaptation permission; ask for case name so adoption can be tracked; offer any additional model brief language they need
+- Flagged in Contacts!O: YES (done)
+
+---
+
+### Section 10: Checkpoint Decision (Day 7)
+
+Checkpoint: Day 7
+Checkpoint date: June 4, 2026
+
+Four numbers from dashboard:
+- (A) Score 3+ reply rate: 4.8%
+- (B) Constituencies meeting Day 7 minimum: 4 of 7 (Law School, Imm Legal Aid, Civil Rights, Mutual Aid each have >= 1 signal; Academic, Faith, Labor have zero signal)
+- (C) Cross-organizational references: 1 (NILC forward to litigation director — Probable)
+- (D) Confirmed adoption signals: 0
+
+Decision tree executed: PHASE_1_DECISION_TREES.md, Day 7 tree
+
+DETERMINATION: HOLD — Bitly total 23 >= 15 target; 4 replies >= 2 threshold; 0 bounces confirmed. Normal trajectory.
+
+Phase 2 decision:
+- Domain 39 status: ALREADY ACTIVE (sent June 1)
+- Domain 56 status: ALREADY ACTIVE (sent May 28)
+- Tier 2 expansion: NOT YET — wait for Day 14 to confirm Score 4 from NILC converts to adoption signal
+
+Actions taken:
+- [x] CHECKIN.md updated with Score 4 early signal from NILC
+- [x] Checkpoints tab updated with Day 7 row
+
+Next scheduled checkpoint: Day 14, June 11, 2026
+
+---
+
+### Section 13: Overall Assessment
+
+Trajectory: On Track — slightly above click target; Score 4 in first week is ahead of baseline
+
+Confidence in Phase 2 timing: MEDIUM — on MODERATE track; early NILC signal is promising but insufficient to accelerate Tier 2 before Day 14
+
+One-sentence summary: Week 1 delivered above-target engagement (23 clicks vs. 15 target, 4 replies including 1 Score 4 from NILC with amicus brief request) against a background of three constituencies still at zero signal — trajectory is HOLD with close Day 14 monitoring needed for Academic, Faith, and Labor.
+
+Risk flags:
+- Minor: Academic, Faith, Labor constituencies at zero signal. Not concerning at Day 7; becomes a flag if still zero at Day 14.
+
+---
+
+## Appendix B: Escalation Checklist
+
+Add to CHECKIN.md under "Needs Your Input" if any of the following are true at the end of any synthesis week:
+
+**Escalate same day**:
+- Any reply expressing legal concern, privacy concern, or requesting removal from outreach
+- Score 5 event received (institutional adoption confirmed — publication, curriculum, litigation filing)
+- Bitly total < 5 AND confirmed delivery for all 45 contacts at Day 7
+
+**Escalate within 24 hours**:
+- Three or more email bounces (bounce rate > 6%)
+- Day 14: zero Score 3+ replies from all constituencies with confirmed delivery
+- Score 4 events from two or more contacts within the first 14 days (pre-Day 30 STRONG signal available)
+- Day 30: FAILURE determination
+
+**Escalate within 72 hours**:
+- Day 30: WEAK determination (user decision needed on whether to extend vs. modify approach)
+- Day 60: Z < 4 (fewer than 4 constituencies with at least 1 confirmed adoption — user decision on Phase 2 scope)
+
+**Do not escalate — wait for more data**:
+- Level 1 and Level 2 replies only in Week 1 — normal; wait for Day 14
+- One constituency at zero signal at Day 7 — monitor, not failure
+- Bitly below 15 at Day 7 with some replies present — MONITOR status, not ESCALATE
+- Score 3+ rate below 25% at Day 14 — reply timing peaks at Days 10-21; wait for Day 21 before treating as a below-baseline signal

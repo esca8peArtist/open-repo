@@ -2,6 +2,21 @@
 
 ---
 
+## May 27, 2026 — Resistance Research Agent — Phase 1 Post-Distribution Measurement Framework
+
+**Task**: Design a complete post-distribution measurement system for Phase 1 (May 28 start). Three deliverables: a measurement system document, a spreadsheet spec, and a weekly synthesis template.
+
+**Key findings**: (1) The "15 min/week" estimate in existing docs is accurate for normal weeks but front-loaded — Week 1-2 and checkpoint weeks run 35-60 min. Realistic 8-week total is 5-6 hours, within the 30 min/week normal / 90 min/week synthesis constraint. (2) The most important false-positive prevention measure is separating Level 1 (polite acknowledgment) and Level 2 (click-confirmed read) from Level 3+ (substantive engagement that counts toward go/no-go decisions). Raw Bitly counts alone do not confirm adoption. (3) A Day 14 checkpoint was added — not in existing decision trees — because it is the last low-cost intervention point before Day 30. Framing revision applied at Day 14 has time to produce replies before Day 30; the same revision applied on Day 29 does not. (4) Constituency success signals are genuinely different: immigration legal aid can reach Level 5 within 30 days if there is active litigation; academic contacts reaching Level 5 within 60 days is exceptional, not a standard target.
+
+**Files created**:
+- `PHASE_1_MEASUREMENT_SYSTEM.md` — 2,400 words. Five-level adoption scale with false-positive exclusions, constituency-specific success signals, Day 7/14/30/60 thresholds, solo operator overhead analysis, escalation triggers.
+- `PHASE_1_MEASUREMENT_SPREADSHEET_SPEC.md` — 1,500 words. Complete 7-sheet schema (tabs renamed: Contacts, Gist_Views, Replies, Adoptions, Constituencies, Checkpoints, Synthesis_Log), 15+ column definitions per sheet, all formulas, example data rows, 30-minute setup checklist.
+- `PHASE_1_WEEKLY_SYNTHESIS_TEMPLATE.md` — 950 words. 20-minute weekly synthesis template with 8 sections; Week 1 (May 28 – June 3) fully populated as example including Day 7 decision tree output; escalation checklist at close.
+
+**No contradictions with existing frameworks.** All thresholds in PHASE_1_MEASUREMENT_SYSTEM.md are consistent with PHASE_1_IMPACT_EVALUATION_FRAMEWORK.md Section 4 and PHASE_1_DECISION_TREES.md. Spreadsheet tab names updated from the PHASE_1_MEASUREMENT_DASHBOARD_TEMPLATE.md naming convention (Synthesis_Log replaces Engagement Timeline for solo-operator suitability; Replies added as a new sheet for reply-level data that was missing from the original spec).
+
+---
+
 ## May 27, 2026 — General Research Agent — systems-resilience Phase 6 Launch Infrastructure
 
 **Task**: Create Phase 6 launch infrastructure for systems-resilience project: author outreach materials, Domain A research roadmap, author onboarding kit, and Phase 6 project init script. All staged for June 1 06:00 UTC activation; author confirmation deadline May 30 16:00 UTC.
