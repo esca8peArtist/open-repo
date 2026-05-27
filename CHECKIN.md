@@ -1,5 +1,31 @@
 # 🎯 CURRENT STATUS — May 27, 2026
 
+## Since Last Check-in (May 27 Session 1750–1753)
+
+**Session 1753**: Completed Exploration Queue Items 42-44 (May 28-31 decision support). Three parallel agents:
+
+1. **Stockbot Item 42 — Checkpoint Outcome Analysis & Lever B Decision Framework** — 4 Markdown deliverables:
+   - `MAY_22_CHECKPOINT_OUTCOME_ANALYSIS.md` — STILL_MISS_B2 diagnosis, h+10 exit logic assessment
+   - `LEVER_B_DECISION_FRAMEWORK.md` — 9-dimension comparison (Option A JPM ridge_wf vs. Option B lgbm_ho); **Decision: EXECUTED (Option A, Session 1719)**
+   - `POST_LEVER_B_ACTIVATION_ROADMAP.md` — Steps 4-6 runbook, 4-session risk aggregation, deployment gates
+   - `RISK_TIMELINE_PROJECTION.md` — May 27-June 15 calendar, thermal risk, June capacity impact
+   - **Status**: JPM ridge_wf trained May 27; deployment path clear (rsync + health check by May 31 21:00 UTC)
+
+2. **Systems-Resilience Item 43 — Phase 5 Publication Timeline Decision Impact** — 5 comprehensive files:
+   - `TIMELINE_IMPACT_MATRIX.md` (new) + `DECISION_SUPPORT_RECOMMENDATION.md` (new) + 3 prior support docs
+   - **Recommendation**: Option A (staged Wave 1+2 by June 5, Wave 3 by June 30) with score 8.25/10 (vs B 5.94/10, C 4.29/10)
+   - **May 31 decision gates**: 3 confirmations needed (staged release acceptable?, Wave 2 author confirmed?, Phase 6 domains A+C+D approved?)
+   - All concurrent June projects can proceed simultaneously with Option A
+
+3. **Open-Repo Item 44 — Phase 5.1 Post-Merge Deployment & Phase 5.2 Launch** — 4 production-ready deliverables:
+   - `PHASE_5.1_POST_MERGE_DEPLOYMENT_CHECKLIST.md` + `PHASE_5.2_MEDICAL_WATER_SEED_ROADMAP.md` + validation matrix + launch coordination
+   - **Key finding**: Staggered sequential start recommended (Medical June 1, Water June 10, Seed June 15) due to dosing safety hazard from parallel context-switching
+   - **Status**: All pre-merge decision frameworks ready; post-merge execution ready for June 1 activation
+
+**Outcome**: May 28-31 user decision window now fully supported with comprehensive decision frameworks. Zero autonomous work remains until May 28+ events trigger (synthesis, deployment, user decisions).
+
+---
+
 ## Since Last Check-in (May 27 Session 1750–1752)
 
 **Session 1750**: Completed Exploration Queue Item 25 (Phase 5.3 Federation Architecture). Enhanced FEDERATION_ARCHITECTURE.md, VERSIONING_STRATEGY.md, DIFFERENTIAL_SYNC_PROTOCOL.md with latest research (SSB audit model, Briar precedent, CRDT analysis, zimdiff mitigation). Key finding: differential sync is Phase 5.3c/d refinement, not Phase 5.2 blocker. Phase 5.3 federation architecture now production-ready for May 31 user decision.

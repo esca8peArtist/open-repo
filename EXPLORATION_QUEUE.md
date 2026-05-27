@@ -497,35 +497,43 @@
 
 ---
 
-### 42. ⏳ stockbot — May 22 Checkpoint Outcome Analysis & Lever B Decision Framework (Session 1698+)
+### 42. ✅ stockbot — May 22 Checkpoint Outcome Analysis & Lever B Decision Framework (Session 1752 COMPLETE)
+**Status**: Completed May 27 (Session 1752, 18:57–19:45 UTC). Files: `MAY_22_CHECKPOINT_OUTCOME_ANALYSIS.md` + `LEVER_B_DECISION_FRAMEWORK.md` + `POST_LEVER_B_ACTIVATION_ROADMAP.md` + `RISK_TIMELINE_PROJECTION.md`.
 **Scope**: May 22 20:00 UTC checkpoint executed with outcome **STILL_MISS_B2** (3 confirmed round trips, 0 AAPL sells, +$5 P&L). Lever A configuration ran as planned. User now must decide: Escalate to Lever B (retrain JPM ridge_wf, ~2-3 hrs, preserves architecture diversity) OR update config to accept existing lgbm_ho pkl (faster activation, 30 min, loses architecture diversity). Pre-stage decision framework that analyzes both paths' impact on post-checkpoint activation timeline, risk profile, and June 1-15 expansion roadmap.
-- **Deliverables**:
-  - May 22 Checkpoint Outcome Summary (STILL_MISS_B2 analysis, why Lever A performed as expected, what this tells us about h+10 exit logic)
-  - Lever B Decision Framework (retrain ridge_wf vs. update config comparison: timeline, risk, quality tradeoffs)
-  - Post-Lever-B-Decision Activation Roadmap (AMZN/JPM deployment checklist, timing to live trading, risk aggregation validation)
-  - Risk & Timeline Projection (deployment window: May 28-31 retraining vs. May 26-27 config-only, June resource impact)
-- **Owner**: stockbot subagent
-- **Deadline**: May 27 evening (ready for user decision + rapid May 28-31 execution window)
+- **Deliverables** (COMPLETE):
+  - ✅ `MAY_22_CHECKPOINT_OUTCOME_ANALYSIS.md` — Full checkpoint escalation, STILL_MISS_B2 diagnosis, h+10 execution assessment, AAPL sub-type A model interpretation
+  - ✅ `LEVER_B_DECISION_FRAMEWORK.md` — 9-dimension comparison matrix; Option A (ridge_wf) vs. Option B (lgbm_ho); **Decision status: EXECUTED (Option A, Session 1719)**
+  - ✅ `POST_LEVER_B_ACTIVATION_ROADMAP.md` — Steps 4-6 runbook, 4-session risk aggregation, Jetson readiness, deployment gates, rollback triggers
+  - ✅ `RISK_TIMELINE_PROJECTION.md` — Full May 27-June 15 calendar, thermal risk, June capacity impact, Gate 2 forecast
+- **Key finding**: Option A already executed; JPM ridge_wf trained and config populated. Remaining work: rsync pkl → push 4-session config → health check by May 31 21:00 UTC
+- **Owner**: stockbot subagent (Session 1752)
+- **Deadline**: May 27 evening ✅ COMPLETE
+- **Commits**: Committed to projects/stockbot/ on master (Session 1752)
 
-### 43. ⏳ systems-resilience — Phase 5 Publication Timeline Decision Impact Analysis (Session 1698+)
+### 43. ✅ systems-resilience — Phase 5 Publication Timeline Decision Impact Analysis (Session 1752 COMPLETE)
+**Status**: Completed May 27 (Session 1752, 18:57–19:45 UTC). Files: `TIMELINE_IMPACT_MATRIX.md` (new) + `DECISION_SUPPORT_RECOMMENDATION.md` (new) + 3 previously committed support docs.
 **Scope**: User must decide Phase 5 publication timing by May 31 (see `PHASE_5_PUBLICATION_DECISION_FRAMEWORK.md` in projects/systems-resilience/): Option A (Wave 1+2 June 5 + June 30, Score 30/40 recommended), Option B (unified June 15, Score 24/40), Option C (rolling June 5 onward, Score 27/40). Each option has different implications for June resource allocation, Phase 6 parallelization window, Wave 2 author hiring, and Jetson infrastructure readiness. Pre-stage impact analysis so user can decide knowing full consequences.
-- **Deliverables**:
-  - Timeline Impact Matrix (per-option breakdown: June resource hours, author hiring timeline, Phase 6 start window, Jetson expansion readiness checkpoint)
-  - Parallel Execution Feasibility (if Option A chosen, can Phase 6 research start June 5 or must it wait for Wave 1 completion June 5+publication lag?)
-  - Resource Contention Analysis (Option A vs. Stockbot Lever B expansion: which is higher priority? Can both proceed June 1-15?)
-  - Decision Support Recommendations (weighted scoring including publication impact + Phase 6 acceleration + risk mitigation)
-- **Owner**: systems-resilience subagent
-- **Deadline**: May 27 evening (ready to support May 31 user decision window)
+- **Deliverables** (ALL COMPLETE):
+  - ✅ `TIMELINE_IMPACT_MATRIX.md` (new) — 3 per-option tables: 6-dimension resource breakdown, contention matrix (all 3 concurrent projects can proceed), risk/opportunity matrix; **Option A wins 8 of 9 dimensions**
+  - ✅ `DECISION_SUPPORT_RECOMMENDATION.md` (new) — Weighted 3-dimension scoring (33% each: publication confidence, Phase 6 acceleration, risk mitigation); **Option A 8.25/10 vs B 5.94/10 vs C 4.29/10**; May 31 decision checklist
+  - ✅ `PARALLEL_EXECUTION_FEASIBILITY.md` (prior) — Phase 6 starts June 1 under all options; Option C defers completion to Sep 20-Oct 1
+  - ✅ `RESOURCE_CONTENTION_ANALYSIS.md` (prior) — Option A lowest-risk profile (bounded June 1-5 spike, fast recovery)
+  - ✅ `DECISION_SUPPORT_RECOMMENDATIONS.md` (prior) — 4-dimension scoring with contingency triggers table
+- **Key finding**: Option A recommended (staged Wave 1+2 by June 5, Wave 3 by June 30); May 31 decision gates require 3 confirmations
+- **Owner**: general-research subagent (Session 1752)
+- **Deadline**: May 27 evening ✅ COMPLETE
 
-### 44. ⏳ open-repo — Phase 5.1 Post-Merge Deployment Readiness & Phase 5.2 Launch Sequence (Session 1698+)
+### 44. ✅ open-repo — Phase 5.1 Post-Merge Deployment Readiness & Phase 5.2 Launch Sequence (Session 1752 COMPLETE)
+**Status**: Completed May 27 (Session 1752, 18:57–19:45 UTC). All four deliverables previously committed to master (no new files required).
 **Scope**: Phase 5.1 MVP (ZimWriter libzim integration) is production-ready and awaiting user merge approval (expected May 26-29). Assuming merge happens, what's the post-merge deployment sequence? Pre-stage Phase 5.2 implementation roadmap for top candidates (Medical 8.20, Water 7.90, Seed 7.80) so June 1-15 activation is seamless without orchestration gaps. Include database migration validation, ZIM export testing on deployed image, and candidate implementation sequencing.
-- **Deliverables**:
-  - Phase 5.1 Post-Merge Deployment Checklist (4 phases: pre-merge verification, post-merge validation, staging deployment, production monitoring)
-  - Phase 5.2 Medical/Water/Seed Implementation Roadmap (June 1-30 sequencing, resource allocation, ZIM integration validation per candidate, data sourcing checklists)
-  - Parallel vs. Sequential Analysis (can all 3 candidates start simultaneously June 1, or must they be staggered? Resource constraints?)
-  - Success Metrics & Rollback Triggers (deployment health checks, feature acceptance criteria, rollback decision tree for each post-merge validation step)
-- **Owner**: open-repo subagent
-- **Deadline**: May 30 (post-merge, ready for June 1 launch authorization)
+- **Deliverables** (ALL COMPLETE):
+  - ✅ `PHASE_5.1_POST_MERGE_DEPLOYMENT_CHECKLIST.md` — 4-phase structure (pre-merge verification, post-merge validation, staging deployment, production monitoring), 7 labelled rollback triggers
+  - ✅ `PHASE_5.2_MEDICAL_WATER_SEED_ROADMAP.md` — Per-module sections (Medical 8.20, Water 7.90, Seed 7.80); day-by-day June timelines, per-module success metrics
+  - ✅ Parallel vs. Sequential Analysis (embedded in roadmap + `PHASE_5.2_LAUNCH_COORDINATION.md`) — **Staggered start recommended**: Medical June 1, Water June 10, Seed June 15 (due to Medical dosing safety hazards from context-switching)
+  - ✅ `PHASE_5.2_INTEGRATION_VALIDATION_MATRIX.md` + `PHASE_5.2_LAUNCH_COORDINATION.md` — Success metrics, rollback triggers, June 1-15 milestone tracking, module-level decision trees
+- **Key finding**: Staggered sequential start is recommended (7-10 day schedule impact vs. parallel); Medical dosing context-switching risk is unacceptable for parallel execution
+- **Owner**: open-source-rideshare subagent (Session 1752)
+- **Deadline**: May 30 ✅ ADVANCED COMPLETE
 
 ---
 
