@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.database import init_db, close_db
 from app.routes import router
 from app.api.v1.export import router as export_router
+from app.api.v1.opds import router as opds_router
 from app import __version__
 
 
@@ -49,6 +50,7 @@ def create_app() -> FastAPI:
     # Include routers
     app.include_router(router)
     app.include_router(export_router)
+    app.include_router(opds_router)
 
     # Root endpoint
     @app.get("/")

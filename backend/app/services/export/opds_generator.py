@@ -37,8 +37,30 @@ import re
 import uuid
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import Optional
+from typing import TYPE_CHECKING, Optional
 from xml.etree import ElementTree as ET
+
+# feedgen for cleaner Atom/OPDS generation
+# Fallback to xml.etree if feedgen is not installed
+try:
+    from feedgen.feed import FeedGenerator
+    from feedgen.entry import FeedEntry
+    _FEEDGEN_AVAILABLE = True
+except ImportError:
+    _FEEDGEN_AVAILABLE = False
+    FeedGenerator = None  # type: ignore[assignment,misc]
+    FeedEntry = None      # type: ignore[assignment,misc]
+
+# lxml for post-processing OPDS namespace elements
+try:
+    from lxml import etree as lxml_etree
+    _LXML_AVAILABLE = True
+except ImportError:
+    _LXML_AVAILABLE = False
+    lxml_etree = None  # type: ignore[assignment,misc]
+
+if TYPE_CHECKING:
+    from app.models import ZimExport
 
 logger = logging.getLogger(__name__)
 
@@ -151,9 +173,6 @@ class OPDSEntry:
         Expected keys: uuid, title, name, flavour, language, period, description,
         download_url, file_size_bytes, sha256_checksum, article_count, generated_at.
         Optional: illustration_url, is_reference, version_history.
-
-        TODO(post-PR-merge): Add OPDSEntry.from_zim_export(zim_export_orm_row)
-        classmethod that constructs from the ZimExport SQLAlchemy model directly.
         """
         return cls(
             uuid=data["uuid"],
@@ -171,6 +190,58 @@ class OPDSEntry:
             illustration_url=data.get("illustration_url"),
             is_reference=data.get("is_reference", False),
             version_history=data.get("version_history", []),
+        )
+
+    @classmethod
+    def from_zim_export(cls, export: "ZimExport") -> "OPDSEntry":
+        """
+        Construct an OPDSEntry from a ZimExport ORM row.
+
+        This is the primary construction path for auto-generated OPDS entries.
+        Called by OPDSCatalogService after each successful ZimWriter.create_zim() run.
+
+        Args:
+            export: ZimExport SQLAlchemy model instance (from zim_exports table).
+                    Must have status='available' and a non-None cdn_url.
+
+        Returns:
+            OPDSEntry ready to be added to OPDSGenerator.
+
+        Raises:
+            ValueError: If export.cdn_url is None (upload must complete before
+                        adding to catalog).
+            ValueError: If export.sha256 is None (ZIM must be validated before
+                        adding to catalog).
+        """
+        if not export.cdn_url:
+            raise ValueError(
+                f"ZimExport {export.id} (name={export.name}) has no cdn_url. "
+                f"Upload to CDN must complete before adding to OPDS catalog."
+            )
+        if not export.sha256:
+            raise ValueError(
+                f"ZimExport {export.id} has no sha256 checksum. "
+                f"ZIM must be validated before adding to catalog."
+            )
+
+        # Build version history from sibling exports (same name+flavour, not current)
+        # The caller is responsible for pre-loading version history if needed.
+        # Default: empty version history (populated by OPDSCatalogService).
+        return cls(
+            uuid=export.zim_uuid,
+            title=export.title,
+            name=export.name,
+            flavour=export.flavour,
+            language=export.language,
+            period=export.period,
+            description=export.description,
+            download_url=export.cdn_url,
+            file_size_bytes=export.file_size_bytes,
+            sha256_checksum=export.sha256,
+            article_count=export.article_count,
+            generated_at=export.completed_at or export.created_at,
+            is_reference=bool(export.is_reference),
+            version_history=[],  # populated by OPDSCatalogService if needed
         )
 
     @property
@@ -334,33 +405,42 @@ class OPDSGenerator:
 
         Returns:
             UTF-8 encoded XML bytes, well-formed Atom with OPDS profile.
-
-        Structure produced:
-            <feed xmlns="http://www.w3.org/2005/Atom" ...>
-              <id>urn:uuid:{node_uuid}</id>
-              <title>{node_name} Offline Library Catalog</title>
-              <updated>...</updated>
-              <author>...</author>
-              <link rel="self" type="...navigation" href="{catalog_url}"/>
-              <link rel="start" type="...navigation" href="{catalog_url}"/>
-              <link rel="search" type="opensearch" href=".../searchdescription.xml"/>
-              <entry>
-                <title>All Offline Exports</title>
-                <link rel="subsection" type="...acquisition" href=".../entries"/>
-              </entry>
-            </feed>
-
-        TODO(post-PR-merge): Use feedgen library for cleaner namespace handling:
-            from feedgen.feed import FeedGenerator
-            fg = FeedGenerator()
-            fg.id(f"urn:uuid:{self.node_uuid}")
-            fg.title(f"{self.node_name} Offline Library Catalog")
-            fg.author({"name": self.node_name, "uri": self.node_url})
-            fg.link(href=self.catalog_url, rel="self")
-            # ... add entries
-            return fg.atom_str(pretty=True)
         """
-        # Stub implementation: build minimal valid Atom XML without feedgen
+        if _FEEDGEN_AVAILABLE:
+            return self._generate_root_catalog_feedgen()
+        return self._generate_root_catalog_etree()  # fallback
+
+    def _generate_root_catalog_feedgen(self) -> bytes:
+        """feedgen-based root catalog generation."""
+        entries_url = self.catalog_url.replace("root.xml", "entries")
+        search_url = self.catalog_url.replace("root.xml", "searchdescription.xml")
+
+        fg = FeedGenerator()
+        fg.id(f"urn:uuid:{self.node_uuid}")
+        fg.title(f"{self.node_name} Offline Library Catalog")
+        fg.author({"name": self.node_name, "uri": self.node_url})
+        fg.updated(self._generated_at)
+
+        # OPDS profile link relations
+        fg.link(href=self.catalog_url, rel="self",
+                type=MIME_OPDS_NAV)
+        fg.link(href=self.catalog_url, rel="start",
+                type=MIME_OPDS_NAV)
+        fg.link(href=search_url, rel="search",
+                type=MIME_OPENSEARCH)
+
+        # Navigation entry: subsection link to acquisition feed
+        fe = fg.add_entry()
+        fe.id(f"urn:uuid:{self.node_uuid}:all")
+        fe.title("All Offline Exports")
+        fe.updated(self._generated_at)
+        fe.summary(f"{len(self._entries)} offline ZIM file(s) available for download")
+        fe.link(href=entries_url, rel="subsection", type=MIME_OPDS_ACQ)
+
+        return fg.atom_str(pretty=True)
+
+    def _generate_root_catalog_etree(self) -> bytes:
+        """Fallback xml.etree-based root catalog generation."""
         root = self._build_root_catalog_element()
         xml_str = ET.tostring(root, encoding="unicode", xml_declaration=False)
         xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -378,30 +458,139 @@ class OPDSGenerator:
 
         Returns:
             UTF-8 encoded XML bytes.
-
-        Entry structure:
-            <entry>
-              <id>urn:uuid:{entry.uuid}</id>
-              <title>{entry.title}</title>
-              <updated>{entry.updated_iso}</updated>
-              <dc:language>{entry.language}</dc:language>
-              <summary>{entry.description}</summary>
-              <link type="image/png" href="{illustration_url}" rel="http://opds-spec.org/image"/>
-              <link type="application/x-zim" href="{download_url}"
-                    rel="http://opds-spec.org/acquisition"
-                    length="{file_size_bytes}"
-                    title="{filename}"/>
-            </entry>
-
-        TODO(post-PR-merge): Add version history sub-entries per entry.
-        The OPDS spec does not have a built-in version history structure, but
-        we can add previous versions as additional <link> elements with
-        rel="related" and a custom title like "Previous version: 2026-03".
         """
+        if _FEEDGEN_AVAILABLE:
+            return self._generate_acquisition_feed_feedgen()
+        return self._generate_acquisition_feed_etree()  # fallback
+
+    def _generate_acquisition_feed_feedgen(self) -> bytes:
+        """feedgen-based acquisition feed generation."""
+        entries_url = self.catalog_url.replace("root.xml", "entries")
+
+        fg = FeedGenerator()
+        fg.id(f"urn:uuid:{self.node_uuid}:entries")
+        fg.title(f"{self.node_name} — All Offline Exports")
+        fg.author({"name": self.node_name, "uri": self.node_url})
+        fg.updated(self._generated_at)
+        fg.link(href=entries_url, rel="self", type=MIME_OPDS_ACQ)
+        fg.link(href=self.catalog_url, rel="start", type=MIME_OPDS_NAV)
+
+        for entry in self.get_entries_sorted():
+            self._add_feedgen_entry(fg, entry)
+
+        xml_bytes = fg.atom_str(pretty=True)
+        # Post-process to add DC and OpenSearch namespace elements
+        return self._add_dc_elements_to_feed(xml_bytes, self._entries)
+
+    def _generate_acquisition_feed_etree(self) -> bytes:
+        """Fallback xml.etree-based acquisition feed generation."""
         feed = self._build_acquisition_feed_element()
         xml_str = ET.tostring(feed, encoding="unicode", xml_declaration=False)
         xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>\n'
         return (xml_declaration + xml_str).encode("utf-8")
+
+    def _add_feedgen_entry(self, fg: "FeedGenerator", entry: OPDSEntry) -> None:
+        """Add an OPDSEntry to a feedgen FeedGenerator as a FeedEntry."""
+        fe = fg.add_entry()
+        fe.id(entry.entry_id)
+        fe.title(entry.title)
+        fe.updated(entry.generated_at)
+        fe.summary(entry.description)
+
+        # Acquisition link (primary download)
+        fe.link(
+            href=entry.download_url,
+            rel="http://opds-spec.org/acquisition",
+            type=MIME_ZIM,
+            title=entry.filename,
+        )
+
+        # SHA-256 sidecar
+        fe.link(
+            href=entry.download_url + ".sha256",
+            rel="related",
+            type="text/plain",
+            title=f"SHA-256 checksum for {entry.filename}",
+        )
+
+        # Illustration
+        if entry.illustration_url:
+            fe.link(href=entry.illustration_url,
+                    rel="http://opds-spec.org/image",
+                    type="image/png")
+
+        # Version history
+        for prev in sorted(entry.version_history,
+                           key=lambda v: v.period, reverse=True)[:self.max_version_history]:
+            fe.link(
+                href=prev.download_url,
+                rel="related",
+                type=MIME_ZIM,
+                title=f"Previous version: {prev.period}",
+            )
+
+    def _add_dc_elements_to_feed(self, xml_bytes: bytes,
+                                  entries: list[OPDSEntry]) -> bytes:
+        """
+        Post-process feedgen output to add Dublin Core and OPDS namespace elements.
+
+        feedgen generates valid Atom but lacks native OPDS/DC extension support.
+        This method parses the Atom output and adds dc:language, dc:issued, and
+        opensearch:totalResults elements per entry.
+
+        Called by generate_acquisition_feed() after feedgen generates the base XML.
+        """
+        if not _LXML_AVAILABLE:
+            # lxml not available — return xml_bytes unchanged (DC elements omitted)
+            # This is acceptable for basic OPDS compatibility; Kiwix does not
+            # require dc:language to discover and download ZIM files.
+            logger.warning(
+                "lxml not available; Dublin Core elements will be omitted from OPDS feed. "
+                "Install lxml>=4.9.0 for full OPDS 1.2 compliance."
+            )
+            return xml_bytes
+
+        ATOM_NS = "http://www.w3.org/2005/Atom"
+        DC_NS = "http://purl.org/dc/terms/"
+        OPENSEARCH_NS = "http://a9.com/-/spec/opensearch/1.1/"
+
+        try:
+            root = lxml_etree.fromstring(xml_bytes)
+        except lxml_etree.XMLSyntaxError as exc:
+            logger.error(f"Failed to parse feedgen output as XML: {exc}")
+            return xml_bytes
+
+        # Ensure namespace is in nsmap
+        if "dc" not in root.nsmap:
+            root.set(f"{{{lxml_etree.NSMAP['xmlns']!r}}}dc", DC_NS)
+        if "opensearch" not in root.nsmap:
+            root.set(f"{{{lxml_etree.NSMAP['xmlns']!r}}}opensearch", OPENSEARCH_NS)
+
+        # Add opensearch:totalResults to feed
+        total_elem = lxml_etree.SubElement(
+            root, f"{{{OPENSEARCH_NS}}}totalResults"
+        )
+        total_elem.text = str(len(entries))
+
+        # Add dc:language and dc:issued to each entry
+        entry_map = {e.entry_id: e for e in entries}
+        for entry_elem in root.findall(f"{{{ATOM_NS}}}entry"):
+            id_elem = entry_elem.find(f"{{{ATOM_NS}}}id")
+            if id_elem is None:
+                continue
+            opds_entry = entry_map.get(id_elem.text)
+            if opds_entry is None:
+                continue
+
+            lang_elem = lxml_etree.SubElement(entry_elem, f"{{{DC_NS}}}language")
+            lang_elem.text = opds_entry.language
+
+            issued_elem = lxml_etree.SubElement(entry_elem, f"{{{DC_NS}}}issued")
+            issued_elem.text = opds_entry.period
+
+        return lxml_etree.tostring(
+            root, xml_declaration=True, encoding="utf-8", pretty_print=True
+        )
 
     def generate_single_entry(self, entry_uuid: str) -> Optional[bytes]:
         """
