@@ -44,6 +44,29 @@
   - mfg-farm test print ⏳
   - resistance-research synthesis signal log fill ⏳ (non-blocking for May 28 send)
 
+### User Input Needed — May 27-31 Decision Windows
+
+**CRITICAL DECISIONS BY SPECIFIC DEADLINES**:
+
+| Deadline | Decision | Supporting Materials | Recommendation |
+| --- | --- | --- | --- |
+| **May 27 EOD** | Stockbot Lever B: retrain JPM ridge_wf (Option A, 2-3h) OR update config to lgbm_ho (Option B, 30 min)? | `CHECKPOINT_OUTCOME_ANALYSIS.md`, `LEVER_B_DECISION_FRAMEWORK.md`, `RISK_TIMELINE_PROJECTION.md` | **Option B** (faster pre-flight, lower June risk) |
+| **May 28 14:00–18:00 UTC** | resistance-research: Execute Domain 56 Tier 1 sends (requires 10 min placeholder fill) | `MAY_28_DISTRIBUTION_PREFLIGHT.md`, email templates in domain-56-email-template.md | Execute sends on schedule |
+| **May 30 16:00 UTC** | systems-resilience: Confirm author availability for June 10–July 10 Phase 5 Wave 2 production | Contact author directly; confirm or escalate to co-author recruitment | Confirm by deadline |
+| **May 30 EOD** | seedwarden: Execute May 30 Track B launch (50 min operator time, no decisions needed) | `MAY_30_TRACK_B_LAUNCH_PREFLIGHT.md`, all templates verified | Execute on schedule |
+| **May 31 23:59 UTC** | systems-resilience Phase 5 publication timing: **Option A** (staged June 5+30) OR Option B (unified June 15) OR Option C (rolling 6-week)? | `PUBLICATION_OPTION_IMPACT_MATRIX.md`, `DECISION_SUPPORT_RECOMMENDATIONS.md`, `RESOURCE_CONTENTION_ANALYSIS.md` | **Option A** (score 8.25/10, lowest June contention, 5-day peak then drop) |
+| **May 31 23:59 UTC** | systems-resilience Phase 6 domain selection: **Domain A** (Community Economic Resilience) solo OR with Domain C (Intergenerational Skills) OR with Domain D (Governance)? | `PHASE_6_CANDIDATE_ANALYSIS_AND_RECOMMENDATION.md`, weighted scoring matrix | **Domain A solo** (95% confidence, USDA grant urgency) or **A+D** (maximum strategic value, 85% confidence) |
+
+**Urgency order** (today → May 31):
+1. **Today (May 27 evening)**: Stockbot decision → activates May 28-31 deployment runbook
+2. **May 28 morning**: Fill resistance-research placeholders, verify Tier 1 emails
+3. **May 28 14:00 UTC**: Execute Domain 56 sends (5 min)
+4. **May 30 morning**: Confirm author status for systems-resilience (mandatory gate for all Phase 5 options)
+5. **May 30**: Execute seedwarden Track B launch (no user decision required; all pre-flight complete)
+6. **May 31**: Finalize Phase 5 + Phase 6 decisions → June 1 06:00 UTC activation
+
+**No other user decisions required** between now and May 31. All execution runbooks are staged for both Stockbot options; all decision-support materials are production-ready.
+
 ---
 
 ## Since Last Check-in (Session 1705 Orchestrator, May 27 ~10:30 UTC) — ✅ PHASE 6 DECISION MEMO COMPLETE + OPEN-REPO OPDS WAVE 1 PRODUCTION READY
