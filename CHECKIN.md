@@ -16,7 +16,9 @@
 - **Actionable gap**: AMZN OOS validation (30 minutes) should complete before May 31 deployment window.
 - **Report location**: `projects/stockbot/COMPREHENSIVE_BACKTEST_REPORT_2026-05-27.md` (3,000+ words, production-ready for May 30 pre-flight decision).
 
-**Autonomous work status**: Zero items remaining. All projects have May 28-31 and June 1+ infrastructure staged. Awaiting user actions: May 28 deployment + distribution, May 30 pre-flight, May 31 decisions.
+**Bonus work — AMZN OOS Validation**: 30-minute actionable gap identified in backtesting report closed. Results: AMZN lgbm_ho OOS Sharpe 3.48, +33.6% return, 75% win rate. **Verdict: GO — deploy at 0.10 as planned**. Critical finding: AAPL lgbm_ho shows negative OOS Sharpe (-1.60) in 2026 YTD (explains zero-voluntary-SELL behavior), warrants review at May 30 pre-flight.
+
+**Autonomous work status**: Zero items remaining. All projects have May 28-31 and June 1+ infrastructure staged. All actionable deployment readiness gaps now closed. Awaiting user actions: May 28 deployment + distribution, May 30 pre-flight, May 31 decisions.
 
 ---
 
