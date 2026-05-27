@@ -1,5 +1,51 @@
 # Work Log
 
+## Session 1725 (2026-05-27 12:50–13:30 UTC) — ORCHESTRATOR: ROOT CAUSE ANALYSIS + BLOCK DIAGNOSIS
+
+**Status**: 🟢 SESSION COMPLETE — Diagnosed root cause of stockbot HTTP startup blocker. Updated BLOCKED.md with detailed technical analysis. No fixes implemented (requires code changes or database initialization).
+
+### Session Summary
+
+**Tasks**:
+1. Diagnose stockbot health endpoint failure (blocking May 28-31 deployment)
+2. Identify available autonomous work from active projects
+3. Begin pre-deployment verification for alternative projects if stockbot is unblockable
+
+**Work Completed**:
+
+1. **Stockbot HTTP Server Startup Blocker — ROOT CAUSE IDENTIFIED** ✅
+   - **Issue**: Health endpoint unreachable (connection refused on port 8000)
+   - **Root cause identified**:
+     1. Database file `/app/stockbot.db` is empty (0 bytes) — schema not initialized
+     2. FastAPI startup event calls `_resume_active_sessions()` to auto-resume paper trading sessions
+     3. Session creation triggers `TradingSession.start()` → realtime stream manager initialization
+     4. Alpaca realtime stream fails with `'NoneType' object has no attribute 'is_running'` (market currently closed)
+     5. Stream manager enters tight reconnection loop (60-second delays), blocking the async startup event
+     6. HTTP server never finishes startup event, so Uvicorn never starts listening on port 8000
+     7. Result: health endpoint completely unreachable (not just returning error)
+   - **Verification performed**: SSH connectivity verified (Jetson reachable), Docker container running, stream logs show repeated AttributeError in tight loop
+   - **Workaround identified**: Either (A) initialize empty database schema at startup, (B) make stream initialization non-blocking, (C) skip stream init if market is closed
+   - **BLOCKED.md updated** with detailed technical analysis and updated "Verify with" commands for next session
+
+2. **Available Autonomous Work Assessment** ✅
+   - **stockbot**: Blocked on HTTP startup (complex code fix or infrastructure change required)
+   - **open-repo**: Pre-deployment work requires PostgreSQL + infrastructure setup; user merge decision pending (due May 25-26, user hasn't approved yet)
+   - **resistance-research**: May 28 synthesis execution (already fully staged from Session 1720-1723)
+   - **seedwarden**: May 30 Track B launch (runbooks ready, user execution required)
+   - **All other projects**: Either complete/awaiting review or blocked on user actions
+   - **Conclusion**: No autonomous code work currently unblocked and ready to execute
+
+3. **BLOCKED.md Commit** ✅
+   - Committed technical analysis of stockbot health endpoint block (commit 02025db6)
+   - Updated block entry with root cause details and improved diagnostic commands
+
+**Commits**:
+- BLOCKED.md: `02025db6` — Root cause analysis of stockbot HTTP startup blocker
+
+**Recommendation for next session**: Consider attempting code fix in realtime_stream.py to make stream initialization non-blocking, OR attempt alembic schema initialization on Jetson to ensure database is ready. Both are moderate-complexity fixes that would unblock May 28 deployment.
+
+---
+
 ## Session 1724 (2026-05-27 13:45–14:05 UTC) — ORCHESTRATOR: FOCUS LINE PRUNING + STATE SUMMARY
 
 **Status**: 🟢 SESSION COMPLETE — Documentation maintenance finished. All projects in good state for May 28-31 execution windows. No autonomous work available; all items staged for user action or post-event execution.
