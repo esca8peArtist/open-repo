@@ -1,5 +1,58 @@
 # Work Log
 
+## Session 1752 (2026-05-27 19:15 UTC) — STOCKBOT: COMPREHENSIVE BACKTESTING REPORT DELIVERED | USER ESCALATED PRIORITY #1 COMPLETE
+
+**Status**: 🟢 SESSION COMPLETE — User-escalated comprehensive backtesting report delivered. Report provides complete decision support for May 30 pre-flight review and June 1 go/no-go call.
+
+**What was accomplished**:
+
+### ✅ Comprehensive Backtesting Report (USER ESCALATED Priority #1)
+
+**Executed stockbot subagent (May 27 19:15 UTC)** to deliver comprehensive performance analysis for all 4 trading sessions.
+
+**Deliverable**: `projects/stockbot/COMPREHENSIVE_BACKTEST_REPORT_2026-05-27.md` (3,000+ words, production-ready)
+
+**Key Findings**:
+
+1. **Model Performance Summary**:
+   - AAPL lgbm_ho: **Anchor model** — Backtest Sharpe 1.491, +41.06% OOS return (38 trades), +34.93pp alpha. Live: 3 round trips via h+10 time-stop (Sub-type A behavior — bullish continuation prediction, unvalidated but not a bug).
+   - AAPL ridge_wf: **Live track record** — No standalone backtest extracted, but active and contributing to 3 round trips. Architecture sound.
+   - AMZN lgbm_ho: **Trained, unvalidated** — Identical architecture to AAPL (26-feature pipeline, LightGBM stacker). OOS validation not formally documented (30-min gap to close before deployment).
+   - JPM ridge_wf: **Highest-risk session** — Trained May 27, 109 samples, missing 2022 Fed hiking cycle (primary stress regime for financials). Should deploy at reduced position_size_pct (0.07 vs. 0.15 configured).
+
+2. **Portfolio-Level Assessment**:
+   - Combined estimated Sharpe: ~0.90 (4-session point estimate)
+   - Max drawdown: 12-18% (kill switch at 15% per session = $3,750 stop)
+   - AAPL×2 + AMZN sector concentration: $11.25K = 11.25% of portfolio (within 30% cap)
+   - JPM provides sector diversification (0.35-0.55 correlation to AAPL)
+   - 1-day 95% VaR at max positions: $245 = 0.25% of $100K account
+
+3. **Deployment Readiness**:
+   - **Status**: READY with tiered position sizing
+   - Pre-deployment validation gates G1-G5: ✅ ALL PASSED (WORKLOG May 27 13:52 UTC)
+   - Remaining work: Steps 4-6 of deployment runbook (~50 minutes on May 31 post-market)
+   - 48-hour pre-flight runs June 1-2 with hard gates: container uptime, AMZN+JPM prediction cycles >= 1 each, zero CRITICAL errors, portfolio P&L >= -$500
+
+4. **Critical Findings**:
+   - **AAPL voluntary SELL never fired** in live conditions (exiting via time-stop only) — Not a blocking issue, but requires architecture review if persists past 10 more round trips post-June 1
+   - **JPM ridge_wf training window misses 2022** — Highest-risk property in portfolio. Retrain on 2022-01-01+ data in June/July cycle when Alpaca data availability allows
+   - **Feature expansion inconsistency** — v2 expanded features boosted AAPL (+14.96pp) but degraded META (-19.38pp), PLTR (-51.96pp), UBER (-8.01pp). Do not assume AMZN lgbm_ho will match AAPL performance.
+   - **Options activation not ready** — 6 P0 blockers remain. Earliest realistic date: June 15-July 1.
+
+5. **Recommended Position Sizes for Live Launch**:
+   - AAPL lgbm_ho: 0.15 (maintain — strongest validated model)
+   - AAPL ridge_wf: 0.15 (maintain — existing live track record)
+   - AMZN lgbm_ho: **0.10** (reduce from 0.15 — unvalidated OOS)
+   - JPM ridge_wf: **0.07** (reduce significantly — newest, smallest sample, missing 2022 data)
+
+**Assessment**: Report provides complete decision support for May 30 pre-flight review (paper trading → live decision). Identified one actionable 30-minute gap (AMZN OOS validation) and two architectural review items (AAPL SELL behavior + JPM 2022 data) for June cycle.
+
+**Commit**: `d5b41f3` (stockbot submodule, May 27 19:15 UTC)
+
+**Verdict**: ✅ **SESSION 1752 COMPLETE. USER-ESCALATED PRIORITY #1 COMPREHENSIVE BACKTESTING REPORT DELIVERED. DEPLOYMENT DECISION SUPPORT COMPLETE. READY FOR MAY 30 PRE-FLIGHT REVIEW.**
+
+---
+
 ## Session 1750 (2026-05-27 18:30 UTC) — ORCHESTRATOR: EXPLORATION QUEUE ITEM 25 COMPLETE | PHASE 5.3 FEDERATION ARCHITECTURE DEEPENED
 
 **Status**: 🟢 SESSION COMPLETE — One exploration queue item (Item 25) completed with research deepening. May 28-31 critical window infrastructure remains fully staged.
