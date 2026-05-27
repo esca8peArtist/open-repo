@@ -1,5 +1,32 @@
 # Work Log
 
+## Session 1701d (2026-05-27) — RESEARCH AGENT: PHASE 6 DOMAIN SELECTION DECISION SUPPORT PACKAGE
+
+**Status**: COMPLETE
+
+### Summary: Phase 6 Decision Package — 4 Files, Ready for Anya's May 31 Review
+
+**Deliverables produced** (all in `projects/systems-resilience/phase-6/`):
+
+1. **`phase-6-candidate-one-pagers.md`** (~3,800 words) — Three full one-pagers (Community Economic Resilience, Skills Development, Governance Scaling), each covering research scope, word count estimate, source library readiness, production hours, cross-domain bridges to Phase 5 and other Phase 6 candidates, unique contribution to resilience framework, and key pre-research findings where available. Economic Resilience one-pager includes findings from the production-ready pre-research chapter (6,800 words, 38 verified citations).
+
+2. **`phase-6-selection-decision-matrix.md`** (~2,200 words) — 3-candidate × 5-criterion matrix (Urgency, Source Readiness, Leverage, Scope Fit, Demand), full scoring guidance with 1–5 definitions and rationale, pre-scored researcher assessment, blank scoring section for Anya to complete, weighted scoring tool for three priority scenarios (speed/strategic impact/completeness), and recommended sequencing table for 2+ domain selections.
+
+3. **`phase-6-sequencing-recommendation.md`** (~3,500 words) — Production timelines for every scenario: single-domain (all three paths with week-by-week breakdown), two-domain pairings (A+D, A+C, D+C with rationale and critical path), three-domain option (recommended against for August 30 target; Phase 6b alternative offered). Dependency analysis confirming Phase 6 is NOT blocked by Phase 5 publication timing. June 1 kickoff readiness assessment.
+
+4. **`phase-6-kickoff-template.md`** (~2,800 words) — Complete pre-built agent brief ready for June 1 use. Orchestrator fills in bracketed fields after Anya's May 31 decision. Covers domain definition, three core research questions, out-of-scope boundary, word/citation/section targets, source library protocol, Zone 5 mandatory sections, citation format, cross-domain integration, checkpoint schedule, weekly self-check, and decision rationale appendix.
+
+**Key findings**:
+- Economic Resilience is the lowest-risk selection (75–80% source ready, pre-research chapter exists, 95% confidence on August 9 delivery)
+- Governance Scaling has the highest urgency and leverage scores but the lowest source readiness (65–70%) and highest scope expansion risk
+- Skills Development has the highest long-term leverage score (5/5) but is the most evergreen candidate (lowest urgency)
+- All three candidates are fully independent of Phase 5 publication timing — June 1 launch requires only Anya's domain decision
+- Two-domain pairings: Economic + Governance is highest strategic value (85% confidence August 23); Economic + Skills is highest production confidence (90% confidence August 23)
+
+**Cross-references**: All files reference `phase-6/01-community-economic-resilience.md` (6,800 words, 38 citations, production-ready pre-research chapter for Economic domain). Files also reference `PHASE_6_SCOPE_AND_READINESS.md`, `PHASE_6_RESEARCH_OUTLINE.md`, and the three existing candidate outlines.
+
+---
+
 ## Session 1701 (2026-05-27 03:05+ UTC) — ORCHESTRATOR: EXPLORATION QUEUE PARALLEL RESEARCH DELIVERY
 
 **Status**: COMPLETE — Both agents executed in parallel; two critical decision-support documents ready for May 31 user decisions.
