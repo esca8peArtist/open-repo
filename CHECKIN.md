@@ -1,5 +1,31 @@
 # 🎯 CURRENT STATUS — May 27, 2026
 
+## Since Last Check-in (Session 1730 Orchestrator, May 27 14:30 UTC) — ✅ EXPLORATION QUEUE REFRESHED | 3 JUNE-1 PREP ITEMS STAGED | IDLE UNTIL MAY 28
+
+### Session 1730 Summary
+
+**What was accomplished**:
+- Verified Session 1729 conclusion: "no autonomous work until May 28" is correct — all May 28-31 prep complete
+- Per protocol, confirmed Exploration Queue had 0 active items (required adding 2-3 new items)
+- Added 3 June 1+ preparation exploration items to support upcoming critical gates:
+  1. **stockbot: Gate 2 Options Infrastructure Code Review** (2-3 hrs) — Pre-audit codebase for covered-call readiness before June 1 decision
+  2. **resistance-research: Phase 2 Domain 59 Source Deep-Dive** (2-3 hrs) — Literature review to accelerate production if May 28 synthesis is STRONG/MODERATE
+  3. **seedwarden: Phase 3 Typography & Layout System** (2-3 hrs) — Design system templates ready for June 1-22 production sprint
+- Updated PROJECTS.md Exploration Queue section with new items
+- No autonomous work available between now and May 28 14:00 UTC — orchestrator on watch
+
+**What's in progress**: None (all projects idle, awaiting May 28-31 events)
+
+**What needs user input**: 
+- **May 28 14:00-18:00 UTC**: Domain 56 distribution (user to fill [YOUR_NAME]/[YOUR_CONTACT_INFO] in templates + execute sends)
+- **May 28 19:00 UTC**: Synthesis execution (automated, running regardless of signal log completion)
+- **May 30 08:00 UTC**: Seedwarden Track B launch (user-executed, all runbooks + contingencies ready)
+- **May 31 23:59 UTC**: Phase 5/6 publication decisions (frameworks ready, user to select option A/B/C)
+
+**Status**: ✅ FULLY STAGED FOR MAY 28-31. Orchestrator idle until May 28. Exploration Queue refreshed with 3 June 1+ prep items for future sessions.
+
+---
+
 ## Since Last Check-in (Session 1729 Orchestrator, May 27 14:01–14:05 UTC) — ✅ STATE SYNCED | PROJECTS.MD ALIGNED | MAY 28-31 FULLY STAGED
 
 ### Session 1729 Summary

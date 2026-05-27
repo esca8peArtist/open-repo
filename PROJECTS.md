@@ -1083,6 +1083,16 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 ---
 
+**NEW ITEMS (Session 1730 — 2026-05-27, Queue Refresh — 0 active items → adding 3 June 1+ preparation items)**:
+
+- **stockbot: Gate 2 Options Infrastructure Code Review & Covered-Call Readiness Assessment** — Pre-execution code audit for Gate 2 (June 1): Review `src/options/` modules, EquityPositionManager, TradingSession for covered-call compatibility per OPTIONS_INTEGRATION_ROADMAP.md. Scope: (1) Identify missing modules/functions for covered-call execution (buy-to-cover flow, ITM handling, IV monitoring), (2) Map integration points in TradingSession.\_sync_trade_cycle(), (3) List Gap 4-critical blocks (naked-call prevention, equity tracking), (4) Estimate remediation hours per gap, (5) Identify pre-Gate-2 low-risk wins (config refactor, monitoring UI). Deliverable: `GATE_2_COVERED_CALL_READINESS.md` (2K+ words, code audit + integration map + risk matrix). Effort: 2-3 hours. Business value: June 1 user decision on options activation timing is data-driven; enables same-day gating without discovery lag.
+
+- **resistance-research: Phase 2 Domain 59 Source Deep-Dive & Production Acceleration** — Begin active research for Domain 59 Economic Precarity (June 15 deadline) if May 28 synthesis signals STRONG/MODERATE. Scope: (1) Library deep-read of 25+ sources (peer-reviewed + policy white papers), (2) Extract effect sizes + empirical findings per causal pathway (eviction/foreclosure, medical debt, wage stagnation, job instability), (3) Expand existing outline with 2-3 sentence evidence summaries per pathway, (4) Zone 5 Midwest regional variation literature review (agricultural + deindustrialization impact), (5) Movement organization 2026 policy windows map. Deliverable: `DOMAIN_59_SOURCE_SYNTHESIS.md` (3-4K words, evidence synthesis per pathway, ready for June 1 production kick-off if synthesis is STRONG/MODERATE). Effort: 2-3 hours. Business value: Cuts June 1-15 production time by 12-15 hours; enables immediate writing if synthesis outcome permits activation.
+
+- **seedwarden: Phase 3 Medicinal Herbs Typography & Layout System** — Design unified visual/typographic framework for Phase 3 medicinal herbs bundles (Women's Health, Respiratory, Immunity, Sleep, Digestive), ready for content insertion June 1-22. Scope: (1) Canva typography hierarchy (headers/body/emphasis for bundle cards, info blocks, testimonial layouts), (2) Color palette mapping per bundle theme + accessibility contrast validation (WCAG AA 4.5:1), (3) Layout templates (1x1 guide card, 2x2 bundle comparison, testimonial block, ingredient detail, dosage reference), (4) Image sizing specs + photography style guide (lighting, backgrounds, macro detail capture), (5) Copy-paste Canva starter projects with pre-loaded typography + color (eliminates per-card setup time). Deliverable: `PHASE_3_DESIGN_SYSTEM.md` (2K+ words, typography specs + layout templates + Canva setup guide) + `phase-3-canva-starter-projects.link` (pre-built templates ready for bundle content insertion). Effort: 2-3 hours. Business value: Eliminates design ambiguity during June 1-22 production sprint; writing team focuses on content while design is self-service templated.
+
+---
+
 ---
 
 **COMPLETED ITEMS (Session 1321)**:

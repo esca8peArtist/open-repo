@@ -1,5 +1,68 @@
 # Work Log
 
+## Session 1730 (2026-05-27 14:30 UTC) — ORCHESTRATOR: EXPLORATION QUEUE REFRESH + PRE-JUNE-1 STAGING
+
+**Status**: 🟢 SESSION COMPLETE — Verified zero autonomous work available until May 28 + Reviewed project Goals for unfinished scope + Added 3 exploration queue items for June 1+ execution.
+
+### Session Summary
+
+**Tasks**:
+1. Orient to Session 1729 state (completed, no autonomous work until May 28)
+2. Per protocol: Re-read project Goals for unfinished scope
+3. Per protocol: Ensure Exploration Queue has ≥3 active items (add if needed)
+4. Add pre-June-1 exploration items to support upcoming critical gates
+5. Log session and commit orchestration files
+
+**Work Completed**:
+
+1. **Protocol Compliance Verification** ✅
+   - Confirmed Session 1729 conclusion: "no autonomous work until May 28" is correct
+   - All May 28-31 deliverables staged and ready
+   - Resistance-research signal log still at 17 [fill] fields (May 25 deadline passed, synthesis runs May 28 regardless)
+   - No critical-path work available until tomorrow (May 28 14:00 UTC Domain 56 distribution)
+
+2. **Project Goals Scope Audit** ✅
+   - **stockbot**: Gate 2 options activation (June 1) requires Gate 2 pre-decision preparation
+   - **resistance-research**: Phase 2 Domain 59 production (June 15 deadline) could accelerate if May 28 synthesis is STRONG/MODERATE
+   - **seedwarden**: Phase 3 medicinal herbs production (June 1-22) needs design system finalized
+   - **systems-resilience**: Phase 4/5/6 execution (June 1+) blocked on May 31 user decision
+   - **open-repo**: Phase 5.2 Wave 2 A11y audit (June 1-6) ready to launch
+   - **cybersecurity-hardening, mfg-farm**: Blocked on user action (VeraCrypt restart, test print)
+
+3. **Exploration Queue Refresh** ✅
+   - Pre-refresh status: 0 active items (all pre-event work complete per Session 1712-1716)
+   - Per protocol: <3 items requires adding 2-3 new exploration items
+   - **Added 3 new items** (all non-critical but valuable for June 1+ gates):
+     1. **stockbot: Gate 2 Options Infrastructure Code Review** (2-3 hrs) — Pre-audit codebase for covered-call readiness; identifies gaps before June 1 decision
+     2. **resistance-research: Phase 2 Domain 59 Source Deep-Dive** (2-3 hrs) — Begin literature review for Domain 59; accelerates production if May 28 synthesis permits activation
+     3. **seedwarden: Phase 3 Medicinal Herbs Typography & Layout System** (2-3 hrs) — Design system for Phase 3 bundle production; templates ready for content insertion June 1-22
+   - All items scoped as 2-3 hour explorations; none are critical-path blockers
+   - All items advance project Goals beyond May 28-31 immediate deliverables
+
+4. **PROJECTS.md Updated** ✅
+   - Added NEW ITEMS section (Session 1730) to Exploration Queue
+   - Preserved all completed items and legacy queue history
+
+**Inventory**:
+- ✅ 0 blocks resolved (none new)
+- ✅ 0 INBOX items processed (empty)
+- ✅ 1 PROJECTS.md section added (Exploration Queue)
+- ✅ 3 queue items staged (June 1+ prep work)
+- ✅ All projects remain unblocked for May 28-31 execution
+
+**Next Session(s)**:
+- **May 28 14:00–18:00 UTC**: resistance-research Domain 56 distribution (user-executed)
+- **May 28 19:00 UTC**: resistance-research synthesis execution (automated via synthesis-execution-monitor.py)
+- **May 28+ (deployment window)**: stockbot May 28 AM deploy + 48h paper pre-flight May 28-30
+- **May 30 08:00 UTC**: seedwarden Track B launch (user-executed)
+- **May 31 23:59 UTC**: User decision deadlines (resistance-research synthesis outcome routing, systems-resilience Phase 5 option, seedwarden Phase 3 scope)
+- **June 1+**: Phase 4/5/6 activation based on May 31 decisions + exploration queue items as time permits
+
+**Autonomy Assessment**:
+No autonomous work is available or required between now and May 28 14:00 UTC. The orchestrator will remain idle/on-watch pending May 28 events. Exploration queue items are staged for post-May-31 activation when critical gates are resolved.
+
+---
+
 ## Session 1729 (2026-05-27 14:01–14:05 UTC) — ORCHESTRATOR: STATE SYNC + PROJECTS.MD ALIGNMENT
 
 **Status**: 🟢 SESSION COMPLETE — Verified Session 1728 completion + Updated PROJECTS.md with resolved state + Confirmed all May 28-31 pre-event work complete + No autonomous work available until May 28.
