@@ -1,3 +1,44 @@
+---
+
+# 🎯 CURRENT STATUS — May 27, 2026, ~02:45 UTC
+
+## ✅ All Major Events Ready
+
+| Event | Date | Status | User Action |
+|-------|------|--------|-------------|
+| **Domain 56 Distribution** | May 28 | ✅ Ready (pre-testing PASSED) | Fill email placeholders (2 min); execute send 14:00–18:00 UTC (5 min); setup Google Sheets + Bitly (20 min) |
+| **Seedwarden Track B Launch** | May 30 | ✅ Ready (zero blockers) | Execute launch sequence 06:00 UTC (Etsy publish, influencer outreach, social posts, Kit email) |
+| **Phase 3 Decision Gate** | May 30 | ✅ Ready (cost/timeline/quality matrix complete) | Gather vendor RFQs; meet to decide scope/sourcing/writer by May 30 18:00 UTC |
+| **May 31 Decision Deadline** | May 31 | ✅ Ready (decision frameworks complete) | Decide: (1) stockbot Lever B, (2) systems-resilience Phase 5 timing, (3) Phase 6 domains |
+| **June 1 Activation** | June 1 | ✅ Ready (coordination pack staged) | Execute Wave 1 publication, Phase 6 research launch, Phase 5.1 post-merge deployment, stockbot Lever B deployment |
+
+## ⏳ Decisions Needed (PRIORITY ORDER)
+
+### 1. 🔴 **Stockbot Lever B — URGENT (May 27 EOD)**
+   - **Question**: JPM model type — retrain with ridge_wf (2-3 hrs, preserves architecture) OR update config to use lgbm_ho (30 min, faster)?
+   - **Impact**: Determines May 28-31 deployment schedule (Option A: 2-3 hrs May 28-29; Option B: 30 min May 27-28)
+   - **Files**: `projects/stockbot/MAY_22_CHECKPOINT_OUTCOME_ANALYSIS.md` + `LEVER_B_DECISION_FRAMEWORK.md`
+   - **Recommendation**: Option B (config update) for minimal disruption; Option A (retrain) if architecture diversity is priority
+
+### 2. 🟡 **Systems-Resilience Phase 5 Publication & Phase 6 — By May 31**
+   - **Publication timing** (choose one):
+     - **Option A** (June 5 Wave 1+2 + June 30 Wave 3) — **RECOMMENDED** — best operational timeline
+     - Option B (June 15 unified) — simpler but delays author onboarding 7 days
+     - Option C (rolling June 5 onward) — extends Orchestrator load across 6 weeks
+   - **Phase 6 domains** (choose subset):
+     - **A (Community Economic Resilience)** — co-ops, credit unions, mutual aid — June 1-Aug 30 feasible
+     - **C (Skills Development)** — apprenticeship, credential, expertise transfer — June 1-Aug 30 feasible
+     - **D (Governance Scaling)** — state/local coordination, institutional learning — June 1-Aug 30 feasible
+     - **Recommendation**: A+C+D (all three parallel June 1+)
+   - **Files**: `projects/systems-resilience/PHASE_5_PUBLICATION_TIMELINE_IMPACT_ANALYSIS.md` + `PHASE_6_DOMAIN_SELECTION_DECISION_SUPPORT.md`
+
+### 3. 🟡 **Open-Repo Phase 5.2 Sequencing — By May 30-31**
+   - **Question**: Implement Medical+Water+Seed in full parallel June 1+ OR staggered sequential (Medical June 1-15 → Water June 10-30 → Seed June 15-July 5)?
+   - **Recommendation**: Staggered sequential (maintains medical accuracy focus, water chemistry precision, seed viability confidence)
+   - **Files**: `projects/open-repo/PHASE_5.2_MEDICAL_WATER_SEED_ROADMAP.md`
+
+---
+
 ## Since Last Check-in (Session 1700, May 27 ~02:45+ UTC) — ✅ MAY 27 PRE-TESTING VERIFICATION COMPLETE: RESISTANCE-RESEARCH 100% PRODUCTION-READY FOR MAY 28 DISTRIBUTION
 
 **Status**: ✅ **PRE-TESTING INFRASTRUCTURE VERIFICATION 100% COMPLETE** | 🟢 **ALL 5 SECTIONS PASSED** | ⏳ **AWAITING USER PLACEHOLDER FILL + GOOGLE SHEETS SETUP (MAY 28 MORNING)**

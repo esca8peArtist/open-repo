@@ -523,6 +523,36 @@
 
 ---
 
+### 45. ⏳ Multi-Project June 1 Coordination Pack (Session 1700 — May 27)
+**Scope**: Three major projects activate June 1 simultaneously: (A) systems-resilience Wave 1 publication, (B) Phase 6 framework + research activation, (C) open-repo Phase 5.1 post-merge validation, (D) stockbot Lever B AMZN/JPM deployment (if Lever B decision made by May 31).
+- **Deliverables**: 
+  - June 1 Decision Checklist (what user decisions must be finalized before 06:00 UTC)
+  - Parallel execution coordination (all 4 projects can start June 1? Or dependencies exist?)
+  - Master timeline for June 1-15 critical path (publication dates, deployment gates, author onboarding, Phase 6 research starts)
+  - Contingency activation (if author unavailable, if Phase 6 domain selection delayed, if Lever B retrain slips)
+- **Owner**: orchestrator (coordination research)
+- **Deadline**: May 31 (ready for June 1 06:00 UTC user decision window)
+
+### 46. ⏳ Stockbot Lever B Deployment Execution Package (Session 1700 — May 27)
+**Scope**: User will decide between Option A (retrain JPM ridge_wf, 2-3 hrs) or Option B (update config to lgbm_ho, 30 min) by May 27 EOD. Pre-stage complete execution runbooks for both paths so May 28-June 1 deployment is hands-off.
+- **Deliverables**: 
+  - Option A execution runbook (ridge_wf training steps, model file validation, config update, Jetson sync, health check)
+  - Option B execution runbook (config JSON update, UUID population, Jetson sync, 4-session validation)
+  - Post-deployment validation (4-session active, risk aggregation verified, Alpaca connection healthy)
+  - Rollback procedures for both paths
+- **Owner**: stockbot subagent
+- **Deadline**: May 28 morning (ready for immediate May 28-31 execution post-user-decision)
+
+### 47. ⏳ May 31 Decision Support Consolidation (Session 1700 — May 27)
+**Scope**: Three major user decisions are due by May 31: (1) systems-resilience Phase 5 publication option (A/B/C), (2) Phase 6 domain selection (A+C+D or subset), (3) stockbot Lever B model type (retrain vs. config). Pre-stage a single consolidated decision document that maps all three decisions to their downstream activation timelines.
+- **Deliverables**: 
+  - Single-page decision matrix (3 questions × impact on June 1-15 timeline, author hiring, resource allocation, Jetson deployment)
+  - Decision routing tree (if user picks Phase 5 Option A + Phase 6 A+C+D + Lever B retrain, what's the June 1 schedule?)
+  - Contingency triggers per decision combination
+  - One-click recommendation (optimal path pre-identified for fast user approval)
+- **Owner**: orchestrator (solo synthesis)
+- **Deadline**: May 30 (ready for May 31 user decision meeting)
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
