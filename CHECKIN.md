@@ -1,6 +1,54 @@
 ---
 
-# 🎯 CURRENT STATUS — May 27, 2026, ~07:30 UTC
+# 🎯 CURRENT STATUS — May 27, 2026, ~08:45 UTC
+
+## Since Last Check-in (Session 1703 Orchestrator, May 27 ~08:45 UTC) — ✅ MAY 28 & MAY 30 DISTRIBUTIONS VERIFIED LAUNCH-READY: PRE-FLIGHT COMPLETE
+
+**Status**: ✅ **resistance-research May 28 Distribution Infrastructure VERIFIED READY** | ✅ **seedwarden May 30 Track B Distribution VERIFIED READY** | 🎯 **ZERO NEW BLOCKS; BOTH DISTRIBUTIONS ON SCHEDULE**
+
+### Session 1703 Accomplishments (Two Parallel Agents)
+
+**Agent 1: Resistance-Research May 28 Distribution Pre-Flight**
+- ✅ **Domain 56 Gist**: Live (HTTP 200), all PDFs accessible, no changes since Session 1702
+- ✅ **Google Sheets Dashboard**: Setup guide ready (7 tabs, 20 column schema, all formulas documented, 30-minute setup time for user)
+- ✅ **Bitly Links**: 4 required links documented (drp-d56, drp-d39, drp-2026, drp-summary), 5-minute creation process ready
+- ✅ **May 28 Timeline**: 08:00-23:59 UTC send window; synthesis execution 19:00 UTC with documented stale-file warning
+- **Synthesis Execution Warning** ⚠️: File `synthesis-execution-output.md` is stale from May 19 test run (shows MODERATE). Fix: **MUST run `synthesis-execution-monitor.py` BEFORE `synthesis-outcome-router.py`** to overwrite stale file. Otherwise router will read stale MODERATE classification instead of fresh May 28 outcome. Signal log requires user inbox data fill (~5-10 min before 19:00 UTC).
+- **Deliverable**: `/projects/resistance-research/MAY_28_DISTRIBUTION_PREFLIGHT.md` (commit 2a2a5896)
+
+**Agent 2: Seedwarden May 30 Track B Launch Pre-Flight**
+- ✅ **Zone PDFs**: 8/8 verified (633-634 KB each, HTTP 200 accessible, no changes)
+- ✅ **Gist Live**: Confirmed at https://gist.github.com/esca8peArtist/db0b1798b5b70ff988367982176dc49d
+- ✅ **Herbalist Contacts**: 15/15 verified clean (5 email addresses, 10 platform DMs, zero duplicates, zero placeholders)
+- ✅ **Templates**: Email/social clean (zero [fill] placeholders); two pre-send decisions (fill [LANDING_PAGE_URL] and [COMMISSION_RATE]%)
+- ✅ **May 30 Timeline**: 50 minutes total active work (verification 5 min, monitoring setup 20 min, sends 10-15 min, ongoing checks)
+- **Monitoring Setup**: 4-tab Google Sheets guide (10 min), optional Bitly links (3-5 min, prioritize swdn-gist + 4 zone-specific links)
+- **Launch-Readiness**: ✅ READY — All prerequisites verified; zero blockers
+- **Deliverable**: `/projects/seedwarden/MAY_30_TRACK_B_LAUNCH_PREFLIGHT.md` (commit 28c14dc9)
+
+### User Actions Needed (May 28-30)
+
+1. **May 28 08:00–19:00 UTC**: 
+   - Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in domain-56-email-template.md (~10 min)
+   - Verify 3 Tier 1 contact emails (~15 min)
+   - Execute Tier 1 sends 14:00–18:00 UTC (~5 min)
+   - Optional: Create Google Sheets dashboard (~45 min, enables real-time metrics)
+   - **Critical**: Before 19:00 UTC, fill signal log with May 20-21 response counts (~5-10 min)
+   - **Critical**: At 19:00 UTC, run synthesis monitor → router (in that order; see pre-flight warning above)
+
+2. **May 30 06:00+ UTC**:
+   - Verification pass (~5 min): Check Etsy drafts, social queue, Gist load
+   - Monitoring setup (~20 min): Google Sheets, optional Bitly links
+   - Tier 1 sends 08:00 UTC (~10-15 min): 4 pre-drafted sends + Reddit launch
+   - Tier 2 sends 10:00 UTC (~15 min): 8 sends to Discord DMs, platforms
+   - Ongoing monitoring (12:00, 16:00, 20:00 UTC): Replies, Gist views, clicks
+
+### Blocks Status
+- ✅ No blocks resolved this session
+- ✅ No new blocks identified
+- **Active blocks unchanged**: stockbot JPM decision (user decision), cybersecurity-hardening VeraCrypt (user restart), mfg-farm test print (user action), resistance-research synthesis (signal log fill, non-blocking for May 28 send)
+
+---
 
 ## Since Last Check-in (Session 1702 Orchestrator, May 27 06:00–07:30 UTC) — ✅ THREE PARALLEL VERIFICATIONS COMPLETE: MAY 28-31 DECISION WINDOWS FULLY PREPARED
 
