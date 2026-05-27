@@ -19915,3 +19915,59 @@ Session completed one high-value Exploration Queue item (May 28 synthesis automa
 **Committed**: WORKLOG.md (this entry)
 
 ---
+
+---
+
+## Session 1720 (May 27, 11:46–present) — ORCHESTRATOR: POST-LEVER-B VALIDATION + EXPLORATION QUEUE EXECUTION
+
+**Status**: ✅ PHASE 1 MEASUREMENT FRAMEWORK COMPLETE | ⏳ DEPLOYMENT PREP FINALIZED
+
+### Session Summary
+
+**Context**: 
+- May 27 11:46 UTC: Session 1720 started post-Session-1719 Lever B completion
+- Lever B (Option A) executed; JPM ridge_wf trained; all 4-session stacker_ids populated
+- Pre-deployment validation gates G1 (Alpaca credentials) & G4 (Pi 5 RAM) already PASS
+- Stockbot deployment sequence ready for May 28-31
+- Exploration Queue at 2 active items (Phase 1 Measurement Framework + Options Integration Roadmap)
+
+**Tasks**:
+1. ✅ Execute Exploration Queue Item 1: Phase 1 Post-Distribution Measurement Framework (resistance-research)
+2. ⏳ Assess if Options Integration Roadmap should be worked on today
+3. ⏳ Prepare final May 28 deployment staging
+4. ⏳ Update orchestration files and commit
+
+**Work Completed**:
+
+1. **Phase 1 Post-Distribution Measurement Framework** ✅ (Resistance-Research Agent)
+   - **Deliverable 1**: `PHASE_1_MEASUREMENT_SYSTEM.md` (~2,400 words)
+     - Five-level adoption scale with false-positive prevention (Level 1-2 excluded from go/no-go)
+     - Constituency-specific success signals (law schools ≠ mutual aid networks)
+     - Day 7/14/30/60 checkpoint definitions with numeric thresholds
+     - Solo operator overhead estimate: 5-6 hours total (8 weeks)
+     - Escalation triggers: "same day" vs "wait for data" decision matrix
+   
+   - **Deliverable 2**: `PHASE_1_MEASUREMENT_SPREADSHEET_SPEC.md` (~1,500 words)
+     - Complete 7-sheet Google Sheets schema (Contacts, Gist_Views, Replies, Adoptions, Constituencies, Checkpoints, Synthesis_Log)
+     - 16+ column definitions with data types and formulas
+     - Setup checklist: 25-30 minutes
+     - Example rows showing real data patterns
+   
+   - **Deliverable 3**: `PHASE_1_WEEKLY_SYNTHESIS_TEMPLATE.md` (updated v1.0 → v1.1)
+     - Week 1 pre-populated example (May 28 – June 3 moderate-positive scenario)
+     - Four-tier escalation checklist
+     - 20-minute weekly reporting rhythm
+   
+   - **Committed**: `b1431d5e` to master
+   - **Business Value**: Ready for May 28 Domain 56 distribution monitoring; enables Day 7/14/30/60 checkpoint execution
+
+**Usage**: ~75K tokens (resistance-research agent parallel execution)
+
+### Next Steps
+
+- Continue with Session 1720 deployment prep
+- Assess stockbot Options Integration Roadmap (3-4 hours) — timing not critical, deferred to post-deployment if time allows
+- Finalize May 28 pre-flight checklist review
+- Update PROJECTS.md Exploration Queue to reflect Phase 1 Measurement Framework completion
+- Prepare CHECKIN.md for May 27 end-of-session
+
