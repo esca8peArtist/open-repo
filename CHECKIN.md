@@ -1,3 +1,57 @@
+## Since Last Check-in (Session 1696, May 27 01:30+ UTC) — ✅ PHASE 6 DOMAIN SELECTION FRAMEWORK COMPLETE
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE** | 🎯 **USER DECISION TOOL READY FOR MAY 31 DEADLINE** | ⏳ **AWAITING PHASE 6 DOMAIN SELECTION INPUT**
+
+### Session 1696 Accomplishments
+
+**1. ✅ Systems-Resilience: Phase 6 Domain Selection Decision Support (EXPLORATION QUEUE)**
+   - **Deliverable**: `PHASE_6_DOMAIN_SELECTION_DECISION_SUPPORT.md` (10,500+ words, comprehensive decision framework)
+   - **Content**:
+     - Quick summary table (3 recommended domains: A, C, D)
+     - Detailed one-pagers per domain explaining problem solved, value, prerequisites
+     - 5-question decision framework (routes to recommended domains based on user context)
+     - Selection matrix (A vs. C vs. D comparison, 10 dimensions)
+     - Three startup options (all-three parallel, sequential, single-first)
+     - June 1 kickoff template (post-decision activation)
+   - **Business value**: No setup lag — user decides May 31 → domains go live June 1 with full research infrastructure ready
+   - **Status**: Ready for user review and decision by May 31
+
+**2. ✅ Updated Project Tracking**
+   - WORKLOG.md: Added Session 1696 entry documenting completion
+   - PROJECTS.md: Updated systems-resilience focus to reference new decision support tool
+
+### Items Needing User Input (by May 31)
+
+**1. PHASE 6 DOMAIN SELECTION (May 31 deadline)**
+   - **Input needed**: Which domain(s) to research? Domain A (Economics), C (Skills), D (Governance), or multiple?
+   - **Tool**: Use `PHASE_6_DOMAIN_SELECTION_DECISION_SUPPORT.md` to decide
+   - **Answer format**: Add to CHECKIN.md by May 31 evening:
+     ```
+     ## Phase 6 Domain Selection
+     **Chosen domain(s)**: [A / C / D / multiple]
+     **Primary reason**: [one sentence]
+     **Timing preference**: [parallel / sequential / one-first]
+     ```
+   - **Timeline**: June 1 00:00 UTC activation depends on this decision
+
+**2. Stockbot JPM Model Type Decision** (from Session 1695)
+   - **Decision**: Retrain JPM with ridge_wf OR update config to accept lgbm_ho?
+   - **Data available**: Comprehensive backtesting report recommends ridge_wf
+   - **Impact**: Unblocks Phase 2 activation (AMZN/JPM deployment)
+
+**3. Resistance-Research May 28 Domain 56 Send** (from Session 1695)
+   - **Action**: Fill [YOUR_NAME]/[YOUR_CONTACT_INFO] in templates + execute send May 28 14:00–14:15 UTC
+   - **Status**: All Gists live, no blockers
+
+### Suggested Next Steps
+
+1. **Read** `PHASE_6_DOMAIN_SELECTION_DECISION_SUPPORT.md` (10 min read, full transparency on options)
+2. **Answer** the 5-question decision framework (5 min) — your answers point to recommended domains
+3. **Log decision** in CHECKIN.md by May 31 evening (enables June 1 activation with zero lag)
+4. **Optional**: Also log Stockbot JPM decision if ready (unblocks Phase 2 any time)
+
+---
+
 ## Since Last Check-in (Session 1695, May 27 16:00+ UTC) — ✅ BACKTESTING REPORT + MAY 28 DISTRIBUTION UNBLOCKED
 
 **Status**: ✅ **STOCKBOT ESCALATION FULFILLED** | ✅ **MAY 28 DOMAIN 56 DISTRIBUTION READY** | ✅ **COMPREHENSIVE BACKTESTING REPORT COMPLETE**

@@ -1,5 +1,63 @@
 # Work Log
 
+## Session 1696 (2026-05-27, 01:30+ UTC) — ORCHESTRATOR: PHASE 6 DOMAIN SELECTION DECISION FRAMEWORK
+
+**Status**: ✅ **SYSTEMS-RESILIENCE PHASE 6 EXPLORATION QUEUE ITEM COMPLETE** | 🎯 **USER DECISION FRAMEWORK READY FOR MAY 31**
+
+### Deliverable: Phase 6 Domain Selection Decision Support
+
+**File**: `projects/systems-resilience/PHASE_6_DOMAIN_SELECTION_DECISION_SUPPORT.md` (2,900+ lines, 10,500+ words)
+
+**Purpose**: Decision-support tool enabling user to select Phase 6 domains by May 31, unblocking immediate June 1 activation.
+
+**Content**:
+1. **Quick summary table** (3 recommended domains: A, C, D with key facts)
+2. **Detailed one-pagers** for each domain:
+   - Domain A: Community Economic Resilience (resource distribution, exchange systems, fairness)
+   - Domain C: Skills Development & Knowledge Transmission (practical competency, expertise preservation)
+   - Domain D: Governance Evolution & Scaling (how governance structures scale from 20→100+ people)
+3. **5-question decision framework** (routing logic to recommend domains based on user context)
+4. **Selection matrix** (A vs. C vs. D head-to-head comparison, 10 dimensions)
+5. **Three startup options** (all-three parallel, sequential, or single-domain first)
+6. **June 1 kickoff template** (immediate post-decision activation template)
+7. **Reference integration guide** (how each domain integrates with Phase 5 + Phase 6 pre-research)
+
+**Decision inputs for user** (to provide by May 31):
+- Which domain(s): A / C / D / multiple
+- Primary reason (one sentence)
+- Timing preference (parallel / sequential / one-first)
+- Optional: additional context
+
+**Business value**:
+- **No setup lag**: User decides May 31 → domains live June 1 with full activation (source library, research prompts, writing templates ready)
+- **Full transparency**: User reviews complete one-pagers before deciding, not making blind choices
+- **Flexible execution**: Can do all-three in parallel (60 hours, June 1-15) or prioritize based on acute need
+- **Integration-ready**: Each domain has defined connections to Phase 5 content and Phase 6 pre-research (Farm Equipment, Meshtastic)
+
+**Exploration Queue Status**: Item #3 from Session 1690 NEW ITEMS (2-3 hrs, executable before May 31) — **COMPLETE**
+
+### Strategic Context
+
+**What Phase 1-5 left open** (10 gaps, 10 candidate domains):
+- Phase 1-5 covers how individuals/households/communities produce food, water, power, healthcare, and basic governance
+- What Phase 1-5 does NOT address: economic coordination, skill development systems, governance scaling, inter-community networks, long-arc psychology, legal continuity, infrastructure adaptation, supply chains, organizational resilience, youth engagement
+
+**Highest-priority gaps** (recommended as Phase 6 Week 1 launch):
+1. **Domain A** — Economic fairness (every Phase 5 domain produces but none addresses exchange coordination)
+2. **Domain C** — Skill development (Phase 5 assumes competency; this is how you build it)
+3. **Domain D** — Governance scaling (Phase 5 conflict tools work at 20 people; this is what breaks at 100+)
+
+All three can research in parallel. No dependencies on each other. Together they close the most glaring structural gap in the current corpus.
+
+### Commits Pending
+
+Will commit to master with orchestrator session log after CHECKIN.md update:
+- `PHASE_6_DOMAIN_SELECTION_DECISION_SUPPORT.md` (decision framework, 10.5K words)
+- WORKLOG.md (this entry)
+- CHECKIN.md (session summary, user input needed by May 31)
+
+---
+
 ## Session 1695 (2026-05-27, 16:00+ UTC) — ORCHESTRATOR: COMPREHENSIVE BACKTESTING + MAY 28 DISTRIBUTION UNBLOCKED
 
 **Status**: ✅ **STOCKBOT BACKTESTING REPORT COMPLETE** | ✅ **RESISTANCE-RESEARCH MAY 28 DISTRIBUTION UNBLOCKED** | ✅ **5 DELIVERABLES COMMITTED**
