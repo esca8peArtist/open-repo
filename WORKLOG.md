@@ -19971,3 +19971,93 @@ Session completed one high-value Exploration Queue item (May 28 synthesis automa
 - Update PROJECTS.md Exploration Queue to reflect Phase 1 Measurement Framework completion
 - Prepare CHECKIN.md for May 27 end-of-session
 
+
+---
+
+## Session 1720 (May 27, 11:38–12:35 UTC) — ORCHESTRATOR: Phase 1 Measurement Framework + Deployment Staging
+
+**Status**: ✅ **PHASE 1 MEASUREMENT FRAMEWORK COMPLETE** | ✅ **ALL DEPLOYMENT STAGING READY** | ⏳ **READY FOR MAY 28-31 DEPLOYMENT WINDOW**
+
+### Session Summary
+
+**Context**:
+- Post-Session-1719 Lever B completion (JPM ridge_wf trained, all stacker_ids populated)
+- Exploration Queue items for May 28-June 1 critical path
+- Stockbot deployment checklist and monitoring protocol complete May 27 10:06 UTC
+
+**Key Decisions**:
+1. ✅ **Phase 1 Post-Distribution Measurement Framework** — Delivered by resistance-research agent
+   - Three production-ready documents: adoption scale, spreadsheet spec, weekly synthesis template
+   - Business value: Ready for May 28 Domain 56 distribution monitoring
+   - Committed: b1431d5e to master
+   - Tokens: ~75K
+
+2. ✅ **Options Integration Roadmap Assessment** — Decision: NO, deferred post-deployment
+   - Rationale: Focus must remain on May 28-31 deployment success and Gate 2 (June 26)
+   - Options integration is post-Gate-2 enhancement (June 26+)
+   - Statement: "3-4 hours work, timing not critical, deferred to post-deployment if time allows"
+   - Deferred to Session 1721+ (post-June 1 if time permits)
+
+3. ✅ **May 28 Deployment Staging Verification**
+   - PRE_DEPLOYMENT_VALIDATION_CHECKLIST.md — ready (May 27 10:01)
+   - OPTION_A_DEPLOYMENT_CHECKLIST.md — ready (May 27 10:02)
+   - OPTION_B_DEPLOYMENT_CHECKLIST.md — ready (May 27 10:04)
+   - MAY_28_31_TRADING_MONITORING_PROTOCOL.md — ready (May 27 10:06)
+   - All 4 checklists and monitoring protocol production-ready
+   - All committed to stockbot git (9d9ea41 — JPM ridge_wf training WORKLOG)
+
+4. ✅ **Active Blocks Verification**
+   - resistance-research synthesis block: Still active (signal log unfilled, 20 unfilled [fill] fields remain)
+   - May 25 re-synthesis deadline passed without user filling signal log
+   - Block remains active, no auto-resolution available
+   - Phase 2 work proceeds on TOO_EARLY contingency path (Domain 56 + 39 distribution May 28, June 1)
+   - cybersecurity-hardening: VeraCrypt restart pending (user action)
+   - mfg-farm: Test print pending (user action)
+
+5. ✅ **Exploration Queue Status**
+   - Queue at 0 active items (all prior items from Sessions 1712-1715 delivered)
+   - Identified new items for next session if needed
+   - Current priority: deployment execution (autonomous May 28-31 via checklists)
+
+### Autonomous Work Available
+
+**May 28-31 Deployment Window**:
+- ✅ May 28 AM: Run PRE_DEPLOYMENT_VALIDATION_CHECKLIST (gates G1-G4, all pre-defined, zero user input)
+- ✅ May 28-30: Execute MAY_28_31_TRADING_MONITORING_PROTOCOL (daily checkpoints, numeric thresholds, autonomous escalation)
+- ✅ May 30 AM: Pre-flight pass/fail review (user decision on go-live)
+- ✅ June 1+: Go-live deployment (if pre-flight passes)
+
+**Supporting Work**:
+- Domain 56 distribution May 28 14:00-18:00 UTC (user-executed, templates ready)
+- May 28 19:00 UTC synthesis execution (automated via synthesis-execution-monitor.py)
+- May 30 seedwarden Track B launch (user-executed, runbooks ready)
+
+### Blockers Status
+
+**Active Blocks** (unchanged, all awaiting user action):
+1. resistance-research synthesis: Signal log unfilled (20 [fill] fields), May 25 deadline passed
+2. cybersecurity-hardening: VeraCrypt restart pending
+3. mfg-farm: Test print pending
+
+**Resolved Blocks Since Last Session**: None (all active blocks awaiting same user actions as Session 1719)
+
+### Next Steps (Session 1721+)
+
+**If June 1 arrives**:
+- Phase 4/5 activation (systems-resilience decision frameworks ready)
+- Phase 3 production (seedwarden Track B feedback integrated)
+- Wave 2 A11y audit (test suite + checklist ready)
+- Phase 2 expansion (Domain distributions per sequencing timeline)
+
+**If July 1+ arrives**:
+- Options Integration Roadmap (post-Gate-2 deferred work)
+- Gate 2 evaluation (June 26)
+
+**Critical Path**: All May 28-June 1 infrastructure complete. Zero user decision points required until June 1 except pre-flight pass/fail (May 30 AM) and Phase 5/Phase 6 publication/domain decisions (May 31 23:59 UTC deadline).
+
+### Commits
+
+**This Session**: Pending orchestration commit (WORKLOG.md + CHECKIN.md + PROJECTS.md update + final state verification)
+
+---
+
