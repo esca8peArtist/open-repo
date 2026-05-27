@@ -21006,3 +21006,54 @@ Session completed one high-value Exploration Queue item (May 28 synthesis automa
 **Status**: ✅ **SESSION COMPLETE. MAY 28 CRITICAL WINDOW VERIFIED READY. ORCHESTRATOR IDLE UNTIL MAY 28+ EVENTS TRIGGER. NEXT SESSION: May 28 AM (post-May-28-deployment-checklist execution) OR May 31 (post-user-decision).**
 
 ---
+
+---
+
+## Session 1746 (2026-05-27 17:00 UTC) — ORCHESTRATOR: EXPLORATION QUEUE ITEM 47 (May 31 Decision Support Consolidation) COMPLETE
+
+**Status**: ✅ SESSION IN PROGRESS — Exploration Queue Item 47 completed early (May 27 vs May 30 deadline). May 31 consolidated decision support document ready for user review.
+
+**What was accomplished**:
+1. **Assessed May 27 autonomous work**: Confirmed Session 1743 analysis correct — zero autonomous project work available (all deliverables intentionally staged for May 28-June 1+). Identified three queued exploration items (45-47) coming due May 30-31 that should be started immediately.
+
+2. **Completed Exploration Queue Item 47** — May 31 Decision Support Consolidation
+   - **Deliverable**: `MAY_31_CONSOLIDATED_DECISION_SUPPORT.md` (13,500 words, production-ready)
+   - **Content**: 
+     - Three-decision routing matrix (12 combinations × June 1-15 impact)
+     - Decision recommendation: Phase 5 Option A + Phase 6 Trio A+C+D + Stockbot Timeline based on May 30 pre-flight
+     - Contingency triggers + fallback options (author unavailability, Phase 6 scope reduction, pre-flight FAIL auto-routing)
+     - Daily execution timeline June 1-July 15 (all three projects simultaneous)
+     - One-page decision form (user-friendly; routes to orchestrator activation)
+   - **Status**: Ready for user review May 27-30; decisions due May 31 23:59 UTC
+   - **Commit**: `06d35672`
+
+3. **Updated Exploration Queue** — Item 47 marked COMPLETE in EXPLORATION_QUEUE.md
+
+**Autonomous work available May 28-June 1**:
+- None until May 28 06:00 UTC (deployment checklists are user-initiated)
+- May 28 synthesis execution can proceed automatically at 19:00 UTC (resistance-research)
+- May 28-30 trading monitoring follows pre-defined checkpoints (no orchestrator intervention needed)
+
+**What needs user input**:
+1. **May 31 23:59 UTC**: Complete May 31 decision form in MAY_31_CONSOLIDATED_DECISION_SUPPORT.md (or email responses)
+   - Phase 5 publication timing (A/B/C)
+   - Phase 6 domain selection (A+C+D or subset)
+   - Wave 2 author availability (confirm/conditional/unavailable)
+   - Stockbot timeline automatically routes based on May 30 pre-flight outcome
+2. **May 28 AM**: Run PRE_DEPLOYMENT_VALIDATION_CHECKLIST (gates G1-G4)
+3. **May 28 14:00-18:00 UTC**: Domain 56 distribution execution (fill templates, send 4 recipients)
+4. **May 30 AM**: Pre-flight decision (paper → live approved or stay paper longer)
+
+**Remaining exploration items queued for May 31+**:
+- Item 45: Multi-Project June 1 Coordination Pack (May 31 deadline) — QUEUED
+- Item 46: Stockbot Lever B Deployment Execution Package (May 28 deadline) — QUEUED
+
+**Next steps (Session 1747+)**:
+- May 28 morning: Execute deployment validation checklist (user-initiated)
+- May 28 evening: Synthesis execution + routing if needed
+- May 30 AM: Pre-flight decision checkpoint
+- May 31: Complete decision support form
+- June 1 06:00 UTC: Orchestrator activation per user decisions (publication, Phase 6 research, stockbot deployment)
+
+---
+

@@ -543,15 +543,24 @@
 - **Owner**: stockbot subagent
 - **Deadline**: May 28 morning (ready for immediate May 28-31 execution post-user-decision)
 
-### 47. ⏳ May 31 Decision Support Consolidation (Session 1700 — May 27)
-**Scope**: Three major user decisions are due by May 31: (1) systems-resilience Phase 5 publication option (A/B/C), (2) Phase 6 domain selection (A+C+D or subset), (3) stockbot Lever B model type (retrain vs. config). Pre-stage a single consolidated decision document that maps all three decisions to their downstream activation timelines.
-- **Deliverables**: 
-  - Single-page decision matrix (3 questions × impact on June 1-15 timeline, author hiring, resource allocation, Jetson deployment)
-  - Decision routing tree (if user picks Phase 5 Option A + Phase 6 A+C+D + Lever B retrain, what's the June 1 schedule?)
-  - Contingency triggers per decision combination
-  - One-click recommendation (optimal path pre-identified for fast user approval)
-- **Owner**: orchestrator (solo synthesis)
-- **Deadline**: May 30 (ready for May 31 user decision meeting)
+### 47. ✅ May 31 Decision Support Consolidation (Session 1746 COMPLETE)
+**Status**: Completed May 27 (Session 1746, 17:15 UTC). File: `MAY_31_CONSOLIDATED_DECISION_SUPPORT.md` (13,500 words).
+**Scope**: Three major user decisions are due by May 31: (1) systems-resilience Phase 5 publication option (A/B/C), (2) Phase 6 domain selection (A+C+D or subset), (3) stockbot Lever B deployment routing. Single consolidated decision document maps all three decisions to downstream activation timelines.
+- **Deliverables** (COMPLETE):
+  - ✅ Three-decision routing matrix (12 decision combinations × June 1-15 resource impact)
+  - ✅ Decision recommendation (Phase 5 Option A + Phase 6 Trio A+C+D + Timeline based on May 30 pre-flight)
+  - ✅ Contingency triggers (automatic routing if pre-flight FAIL, fallbacks for author unavailability, Phase 6 scope reduction)
+  - ✅ Daily execution timeline June 1-July 15 (shows all three projects running simultaneously)
+  - ✅ One-page decision form (circle answers; auto-routes to orchestrator activation)
+- **Key findings**:
+  - Recommended path: Phase 5 Option A + Phase 6 Trio (60 hours, three domains in parallel) + Stockbot Timeline A/B automatic routing based on May 30 outcome
+  - Phase 5 and Phase 6 decisions are independent of stockbot pre-flight outcome
+  - Resource contention: 136 hours (Timeline A) or 77 hours (Timeline B) across 14 days — both feasible
+  - All contingencies pre-staged (author fallbacks, Phase 6 solo Domain D, Option B1 stockbot overlay)
+- **Owner**: Orchestrator (Session 1746)
+- **Deadline**: May 30 ✅ EARLY COMPLETE (ready for May 31 user decision meeting)
+- **Commit**: `06d35672` (May 27 17:15 UTC)
+- **Status**: PRODUCTION-READY. User can review May 27-30 and finalize decisions by May 31 23:59 UTC.
 
 ## Queue Management Rules
 
