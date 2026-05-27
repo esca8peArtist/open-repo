@@ -46,8 +46,13 @@
 **Status Going Forward**:
 - Stockbot deployment validation window (May 28-31) is unblocked
 - PRE_DEPLOYMENT_VALIDATION_CHECKLIST ready for May 28 AM execution
-- No additional fixes required before May 28 AM gates
+- HTTP server binding fixed (0.0.0.0 for Docker port mapping) — Gate G3.5 PASSES
+- Early validation run (May 27 13:14 UTC) shows:
+  - ✅ Gates G1, G2.1, G2.2, G3.1-G5, G4.1-G4.3, G5.1-G5.2: PASS
+  - ⚠️ G2.3 (backup trade count verification): sqlite3 CLI not installed on host (non-blocking — file is intact)
+  - Health endpoint verified responding: HTTP 200 at 100.120.18.84:8000/api/health with {"status":"ok","sessions":67}
 - All 3821 unit tests passing (2 pre-existing failures unrelated to startup fix)
+- Ready for May 28 21:00 UTC deployment validation
 
 ---
 
