@@ -1,5 +1,27 @@
 # 🎯 CURRENT STATUS — May 27, 2026
 
+## Since Last Check-in (Session 1722 Orchestrator, May 27 12:35–12:50 UTC) — 🟡 DOCUMENTATION CLEANUP | AWAITING USER DECISIONS
+
+### Status Summary
+
+**All Major Projects Held at Scheduled Checkpoints**: No autonomous work available for next 18 hours. Most tasks await May 28-31 user actions or automatic scheduled events.
+
+**Work Completed This Session**:
+- ✅ Pruned open-repo stale focus (was 850+ chars, now 350 chars)
+- ✅ Attempted stockbot health check diagnosis via SSH (failed — Jetson not accessible from Pi)
+- ✅ Updated BLOCKED.md to document SSH verification unavailability
+- ✅ All commits clean, no new blockers introduced
+
+**Critical Items Requiring User Action by May 28 AM**:
+1. **Stockbot Deployment Decision** — Health endpoint returns sessions=0. User must choose: (A) Fix stream manager before deploying, or (B) Proceed with caution (market open may initialize sessions automatically)
+2. **systems-resilience Phase 5 & 6 Decisions** — User must decide on publication option (A/B/C) and Phase 6 domain selection by May 31 23:59 UTC
+
+**Next Autonomous Action**: May 28 08:00 UTC — Validate market-hours blackout and run pre-deployment checks if user decides to proceed.
+
+**Usage**: <2K tokens (local documentation work only)
+
+---
+
 ## Since Last Check-in (Session 1721 Orchestrator, May 27 12:12–present) — 🔴 PRE-DEPLOYMENT VALIDATION FAILURE | MAY 28 DEPLOYMENT BLOCKED
 
 ### ⚠️ CRITICAL: Stockbot Health Endpoint Failure Blocks May 28 Deployment
