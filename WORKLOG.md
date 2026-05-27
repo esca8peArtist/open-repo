@@ -1,5 +1,90 @@
 # Work Log
 
+## Session 1701 (2026-05-27, 03:00+ UTC) — ORCHESTRATOR: EXPLORATION QUEUE ITEMS 46, 47, 45 (DECISION SUPPORT PACKAGES)
+
+**Status**: ✅ **ITEM 46 COMPLETE** (stockbot subagent: Lever B execution runbooks) | ✅ **ITEM 47 COMPLETE** (May 31 decision consolidation) | ✅ **ITEM 45 COMPLETE** (June 1 coordination pack) | 📋 **ALL THREE DELIVERABLES COMMITTED**
+
+### Summary: Decision Support Infrastructure Complete
+
+**Deliverables Created**:
+
+1. **Item 46 — Stockbot Lever B Deployment Execution Package** (stockbot subagent, commit d73b7d2)
+   - ✅ `OPTION_A_RIDGE_WF_RETRAIN_RUNBOOK.md` — Complete step-by-step execution (training → model validation → Jetson deployment → health check → rollback)
+   - ✅ `OPTION_B_CONFIG_UPDATE_RUNBOOK.md` — Fast-path config-only execution (JSON update → Jetson sync → 4-session validation)
+   - ✅ `POST_DEPLOYMENT_VALIDATION_CHECKLIST.md` — 7-point health verification (4 sessions active, risk aggregation, Alpaca auth, Docker health, backup status)
+   - ✅ `ROLLBACK_PROCEDURES.md` — Documented recovery paths for training failure, validation failure, and Jetson crash scenarios
+   - **Critical finding**: AMZN stacker_id correction identified (config has 43e36c77-... but correct UUID is 97934980-...)
+   - **Owner**: stockbot subagent (a127049f43588d547)
+   - **Status**: Ready for immediate execution upon user decision (May 27 EOD)
+
+2. **Item 47 — May 31 Consolidated Decision Matrix** (orchestrator synthesis)
+   - ✅ `MAY_31_CONSOLIDATED_DECISION_MATRIX.md` — Single-document consolidation of all three user decisions + downstream impact analysis
+   - **Decision 1**: Stockbot Lever B (Option A retrain vs. Option B config)
+   - **Decision 2**: Systems-Resilience Phase 5 publication (Option A staged vs. B unified vs. C rolling)
+   - **Decision 3**: Systems-Resilience Phase 6 domains (A+C+D all three vs. subset)
+   - **Impact analysis**: For each decision, what June 1-15 timeline it unlocks + resource allocation + contingency triggers
+   - **One-click recommendation**: Option A (retrain) + Option A (staged publication) + All three domains (A+C+D)
+   - **Decision template**: Fill-in-the-blank format for May 31 meeting documentation
+   - **Status**: Ready for user May 31 decision meeting (due May 30 EOD per EXPLORATION_QUEUE)
+
+3. **Item 45 — June 1 Coordination Pack** (orchestrator coordination research)
+   - ✅ `JUNE_1_COORDINATION_PACK.md` — Complete orchestration plan for June 1-15 multi-project launch
+   - **Content**:
+     - Four initiatives (Phase 5 publication, Phase 6 research, Open-Repo Phase 5.1, Stockbot 4-session deployment)
+     - Dependency graph (zero blocking relationships — full 4-way parallelization possible)
+     - Critical path analysis (Stockbot is bottleneck item; all others have slack)
+     - 5 scenario analyses (nominal path, Phase 5 delay, Phase 6 writer unavailable, Stockbot deployment fails, all three contingencies)
+     - Parallel execution roadmap (June 1-5 peak load, then staggered completion)
+     - June 1 coordination meeting agenda (90 min, confirms all go/no-go, execution begins 08:00 UTC)
+   - **Key finding**: No blocking relationships exist — all four projects can launch in parallel June 1, no orchestration bottleneck
+   - **Status**: Ready for June 1 coordination meeting use (due May 31 per EXPLORATION_QUEUE)
+
+### Decisions Reflected in Decision Matrix
+
+1. **Stockbot Lever B** (due May 27 EOD):
+   - Both options (A and B) have complete runbooks and validation checklists
+   - Option A recommended (aligns with specification, validates ridge_wf)
+   - Execution can begin immediately upon user decision
+   - AMZN stacker_id correction needed (97934980-... not 43e36c77-...)
+
+2. **Phase 5 Publication** (due May 31):
+   - All three options (A, B, C) fully analyzed in decision matrix
+   - Option A recommended (30/40 score, fastest community impact, lightest resource cost)
+   - If Option A: Wave 1+2 publication June 5 (20-25 hours editorial)
+   - If Option B: Full corpus publication June 15 (30-35 hours editorial)
+   - If Option C: Weekly rolling pairs May 30-July (40-45 hours total)
+
+3. **Phase 6 Domains** (due May 31):
+   - All three domains (A, C, D) recommended as Week 1 launch (coherent arc: govern + exchange + build people)
+   - Alternative: A+C only (defer governance to Week 2) if scope-constrained
+   - All three outlines + source lists ready; research can begin June 1
+
+### Files Committed
+
+**Committed to master (May 27)**:
+- ✅ `MAY_31_CONSOLIDATED_DECISION_MATRIX.md`
+- ✅ `JUNE_1_COORDINATION_PACK.md`
+- (stockbot submodule files committed separately: d73b7d2)
+
+**Not yet committed**:
+- ORCHESTRATOR_STATE.md (scheduled for end-of-session commit)
+- WORKLOG.md (this file, updating now)
+- CHECKIN.md (updating next)
+
+### Critical Observations
+
+1. **Decision Infrastructure Complete**: All three May 31 decisions have complete supporting documentation. User can make informed choices with full downstream impact visibility.
+
+2. **No June 1 Bottlenecks**: Dependency analysis shows zero blocking relationships between four initiatives. All can launch simultaneously June 1 at full capacity without orchestration conflicts.
+
+3. **Stockbot Fast-Path Available**: Both Option A and Option B runbooks are executable immediately. Even if user decides May 28 morning, deployment can complete by May 31 evening.
+
+4. **AMZN stacker_id Correction Required**: Stockbot subagent identified that AMZN stacker_id in active-sessions-4session.json (43e36c77-...) does not exist in _registry.json. Correct UUID is 97934980-... (AMZN_h10_lgbm_ho_97934980.pkl). Both runbooks (A and B) include patch step to correct this.
+
+5. **Phase 6 Parallelization Ready**: All three Week 1 domains (A, C, D) have complete research outlines + 50+ sources. Three researchers can work independently June 1+ with zero coordination overhead.
+
+---
+
 ## Session 1700 (2026-05-27, ~02:38+ UTC) — ORCHESTRATOR: MAY 27 PRE-TESTING VERIFICATION + EXPLORATION QUEUE ITEMS 45-47
 
 **Status**: ✅ **MAY 28 DOMAIN 56 DISTRIBUTION READY** | ✅ **MAY 30 SEEDWARDEN TRACK B LAUNCH READY** | ✅ **3 NEW QUEUE ITEMS STAGED FOR JUNE 1+ EXECUTION** | 📋 **AWAITING MAY 28-31 USER DECISIONS**

@@ -39,6 +39,67 @@
 
 ---
 
+## Since Last Check-in (Session 1701, May 27 ~03:00+ UTC) — ✅ EXPLORATION QUEUE ITEMS 46, 47, 45 COMPLETE: ALL DECISION SUPPORT PACKAGES READY FOR MAY 27-31 USER DECISIONS
+
+**Status**: ✅ **ITEM 46 COMPLETE** (stockbot deployment runbooks) | ✅ **ITEM 47 COMPLETE** (May 31 consolidated decision matrix) | ✅ **ITEM 45 COMPLETE** (June 1 coordination pack) | 📋 **ALL DECISION INFRASTRUCTURE READY**
+
+### Session 1701 Accomplishments (May 27, ~03:00+ UTC)
+
+**Three Critical Deliverables Completed**:
+
+**1. ✅ Exploration Queue Item 46 — Stockbot Lever B Deployment Execution Package** (stockbot subagent)
+   - **Deliverables**: 4 files created + committed (stockbot submodule d73b7d2)
+     - `OPTION_A_RIDGE_WF_RETRAIN_RUNBOOK.md` — Complete training + deployment procedure
+     - `OPTION_B_CONFIG_UPDATE_RUNBOOK.md` — Fast-path config-only execution
+     - `POST_DEPLOYMENT_VALIDATION_CHECKLIST.md` — 7-point health verification
+     - `ROLLBACK_PROCEDURES.md` — Recovery paths for all failure scenarios
+   - **Key Finding**: AMZN stacker_id correction needed (config has 43e36c77-... but correct UUID is 97934980-...)
+   - **Status**: Both option runbooks are production-ready and can execute immediately upon user decision (May 27 EOD)
+   - **Timeline**: Option A (retrain) = 2-3 hours May 28-29; Option B (config) = 30 minutes May 27-28; Jetson deployment validates May 28-31
+
+**2. ✅ Exploration Queue Item 47 — May 31 Consolidated Decision Matrix** (orchestrator synthesis)
+   - **Deliverable**: `MAY_31_CONSOLIDATED_DECISION_MATRIX.md` — Single authoritative source for all three user decisions
+   - **Content**: Decision 1 (Stockbot Lever B) + Decision 2 (Phase 5 publication timing) + Decision 3 (Phase 6 domains)
+   - **Analysis**: Each decision's impact on June 1-15 timeline + resource allocation + contingency triggers
+   - **One-click recommendation**: Option A (retrain) + Option A (staged publication) + A+C+D domains
+   - **Status**: Production-ready for May 31 user decision meeting; decision template included for documentation
+
+**3. ✅ Exploration Queue Item 45 — June 1 Coordination Pack** (orchestrator coordination research)
+   - **Deliverable**: `JUNE_1_COORDINATION_PACK.md` — Complete orchestration plan for June 1-15 multi-project launch
+   - **Content**: 
+     - Four initiatives (Phase 5 publication, Phase 6 research, Open-Repo Phase 5.1, Stockbot 4-session)
+     - Dependency graph (zero blocking relationships — full 4-way parallelization)
+     - Critical path analysis (Stockbot as bottleneck; all others have slack)
+     - 5 scenario analyses (nominal path + 4 contingency scenarios)
+     - June 1 coordination meeting agenda (90 min, confirms go/no-go, 4 projects launch simultaneously)
+   - **Key finding**: No orchestration bottlenecks — all four projects can launch in parallel June 1 without contention
+   - **Status**: Ready for June 1 coordination meeting use (June 1 06:00 UTC)
+
+### Decision Timeline (User Action Needed)
+
+| Decision | Project | Deadline | Status | What User Picks |
+|----------|---------|----------|--------|-----------------|
+| **Stockbot Lever B — JPM model type** | stockbot | **May 27 EOD** | ✅ Runbooks ready | Option A (retrain ridge_wf, 2-3h) OR Option B (config update, 30 min) |
+| **Phase 5 publication timing** | systems-resilience | May 31 | ✅ Decision matrix ready | Option A (staged June 5+30, **recommended**) / B (unified June 15) / C (rolling) |
+| **Phase 6 domain selection** | systems-resilience | May 31 | ✅ Coordination pack ready | A+C+D all three (**recommended**) OR subset (A+C, A, C, D, etc.) |
+
+### Next Steps (Immediate)
+
+**For User (May 27-31)**:
+- [ ] **Today (May 27 EOD)**: Decide stockbot Lever B option; hand decision to orchestrator for May 28-31 deployment
+- [ ] **May 28**: Execute Domain 56 distribution (fill 2 placeholders, launch Google Sheets, execute send 14:00-18:00 UTC)
+- [ ] **May 30**: Execute Seedwarden Track B launch (6:00 UTC, per hour-by-hour runbook)
+- [ ] **May 30-31**: Decide Phase 5 publication option + Phase 6 domains; provide to orchestrator for June 1 coordination meeting
+
+**For Orchestrator (May 27-31)**:
+- [ ] **May 27-28**: Execute stockbot deployment per chosen option (A or B)
+- [ ] **May 28**: Monitor Domain 56 distribution execution
+- [ ] **May 30**: Monitor Seedwarden Track B launch execution
+- [ ] **May 30-31**: Prepare June 1 coordination meeting agenda; confirm go/no-go for all four June 1 initiatives
+- [ ] **June 1 06:00 UTC**: Execute coordination meeting; launch Phase 5 publication, Phase 6 research, Open-Repo Phase 5.1, Stockbot 4-session in parallel
+
+---
+
 ## Since Last Check-in (Session 1700, May 27 ~02:45+ UTC) — ✅ MAY 27 PRE-TESTING VERIFICATION COMPLETE: RESISTANCE-RESEARCH 100% PRODUCTION-READY FOR MAY 28 DISTRIBUTION
 
 **Status**: ✅ **PRE-TESTING INFRASTRUCTURE VERIFICATION 100% COMPLETE** | 🟢 **ALL 5 SECTIONS PASSED** | ⏳ **AWAITING USER PLACEHOLDER FILL + GOOGLE SHEETS SETUP (MAY 28 MORNING)**
