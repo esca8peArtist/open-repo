@@ -4,6 +4,32 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 1701e-followup — May 30 Track B Launch Pre-Flight — May 27, 2026
+
+**Task**: Final pre-flight verification for May 30 Track B launch. Gist accessibility test, PDF download verification, contact list audit, template check, monitoring dashboard setup guide, May 30 timeline.
+
+**Verification results**:
+
+1. **Zone PDFs local (8/8 PASS)**: All 8 PDFs confirmed at `assets/zone-cards/`. Sizes 633–634 KB (647,737–648,973 bytes). Generated 2026-05-26. No changes since Session 1693.
+
+2. **Gist accessibility (8/8 PASS)**: All 8 zone PDF download links tested via HTTP from the distribution Gist (`https://gist.github.com/esca8peArtist/db0b1798b5b70ff988367982176dc49d`). All 8 return HTTP 200 after redirect to `raw.githubusercontent.com`. File sizes match local disk (647–649 KB). No auth required. Gist is publicly accessible. Raw file URLs confirmed via Gist markdown content fetch.
+
+3. **Herbalist contacts (15/15 PASS)**: 5 named contacts have confirmed public emails (Sabrena Gwin, Susan Leopold, John Gallagher, Herbal Academy Partnerships, Juliet Blankespoor). 10 platform DM routes confirmed accessible. No duplicates. No malformed entries. `[moderator name TBD]` for Reddit contacts is structural (modmail works without named mod) — not a blocker.
+
+4. **Email templates (PASS)**: All 5 templates (A–E) have 0 `[fill]`/`[TBD]` placeholders. `[COMMISSION_RATE]%` in Template C is a pending decision (recommended 20%), not an unfilled system placeholder. `[LANDING_PAGE_URL]` is confirmed as the Gist URL — insert before May 28 send.
+
+5. **Social templates (PASS)**: All 16 launch-week posts have complete caption copy and hashtags. One June 3 caption has a live-data instruction (`[Customize with Day 1-2 data]`) — correct behavior, not a stuck placeholder.
+
+6. **Monitoring dashboard**: Google Sheets structure (Contacts, Sends, Replies, Gist_Tracking tabs), Bitly link setup guide, and tracking checklist all documented in `MAY_30_TRACK_B_LAUNCH_PREFLIGHT.md`.
+
+7. **May 30 timeline**: 50 min total active work. Blocks: verification pass (06:00 UTC, 5 min), monitoring setup (06:05 UTC, 20 min), Tier 1 sends (08:00 UTC, 10–15 min), Tier 2 sends (10:00 UTC, 15 min), monitoring (12:00/16:00/20:00 UTC, ongoing).
+
+**New file created**: `MAY_30_TRACK_B_LAUNCH_PREFLIGHT.md` — complete pre-flight verification report with all 6 sections.
+
+**Launch verdict**: READY — zero blockers. Two pre-send decisions documented: (1) insert Gist URL for `[LANDING_PAGE_URL]`; (2) decide commission rate for Template C.
+
+---
+
 ## Session 1693 — May 30 Pre-Launch Pre-Flight Verification — May 27, 2026
 
 **Task**: Track B pre-launch pre-flight verification + May 30 checklist creation.
