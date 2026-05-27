@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-27T06:04:54Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-27T06:16:20Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 4.1% (362,882 tokens) | All-models 1.8% | Reset in 138h | check: claude.ai → Settings → Usage & billing
@@ -41,7 +41,7 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: **[RESOLVED] Phase 5.1 MVP MERGED (May 26)** — ✅ Feature merged (commit c2572adc), 240 backend tests + 51 ZIM tests passing, export endpoint complete. Pre-deployment checklist staged (libzim wheel, alembic upgrade, manual ZIM test). **Phase 5.2 CANDIDATES ASSESSED (Session 1702, May 27)** — Candidate 1: ZimWriter (actually Phase 5.1 final work, 8-11 hrs remaining, June 5-10 ready). **Candidate 2 (OPDS Feed Generator — HIGHEST PRIORITY FOR PHASE 5.2 WAVE 1)**: 8-11 hours, 95% scaffold com … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[RESOLVED] Phase 5.1 MVP MERGED (May 26)** — ✅ Feature merged (commit c2572adc), 240 backend tests + 51 ZIM tests passing, export endpoint complete. **[RESOLVED] PHASE 5.2 WAVE 1 OPDS FEED GENERATOR COMPLETE (Session 1705, May 27)** — ✅ Implementation complete (commit 566f4fa6): four REST endpoints (OPDS 1.2/Atom XML), Dublin Core namespace support, Kiwix in-app catalog discovery enabled, 50 new OPDS compliance tests (318 total passing), OPDSEntry factory methods, production-ready for  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
@@ -94,6 +94,8 @@
 **Progress so far**:
 - ✅ 1.1 Signal — complete (username set, phone number hidden, disappearing messages on)
 
+## State Drift Warnings
+⚠️ STALE FOCUS: stockbot — focus references Session 1690 (15 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Database backup created (pre-AMZN/JPM safety requirement) ← 2026-05-27 00:15 UTC (Session 1690 — orchestrator backup executed)
 • stockbot — Jetson unreachable since May 22 14:00 UTC (Outcome retrieval failed all 3 retry attempts) ← 2026-05-26 22:15 UTC (Session 1686 — Orchestrator validation discovered Jetson back online)
