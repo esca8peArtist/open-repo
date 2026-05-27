@@ -4,6 +4,32 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — Phase 3 Typography and Layout Design System — May 27, 2026
+
+**Task**: Design unified visual/typographic framework for Phase 3 medicinal herbs bundles, ready for content insertion June 1–22. Scope: PHASE_3_DESIGN_SYSTEM.md (2,600+ words) + phase-3-canva-starter-projects.md (template build instructions).
+
+**Files produced** (both in `projects/seedwarden/`):
+
+1. `PHASE_3_DESIGN_SYSTEM.md` — 2,600+ words. Typography hierarchy (8 size roles for covers, interior pages, info blocks, testimonials), WCAG AA contrast validation for all 12 color pairings computed from palette hex codes, five layout template specs (bundle card 2400×2400, 2×2 comparison, testimonial block, ingredient detail, dosage reference card), photography style direction per bundle, copy-paste Canva instructions for brand kit load and template duplication, WCAG quick-reference decision table for sprint use.
+
+2. `phase-3-canva-starter-projects.md` — 1,800+ words. Step-by-step Canva build instructions for all five starter templates (Template 1: bundle card cover 2400×2400; Template 2: info block 8.5×11in; Template 3: testimonial block 1000×1500; Template 4: ingredient detail 1080×1080; Template 5: dosage reference card 8.5×11in). Organized into two 90-minute sessions for June 21. Includes Canva folder structure, sprint workflow protocol (open master > duplicate > replace content > export > log), and troubleshooting for common export issues.
+
+**Key findings from WCAG contrast analysis**:
+- Dark Charcoal on Clinical Cream: 12.87:1 — the primary body text pairing is excellent
+- Clinical Cream on Deep Burgundy: 6.77:1 — header text approved for all sizes
+- Dark Charcoal on Apothecary Gold: 6.64:1 — accent box text approved
+- Clinical Cream on Sage Green: 3.38:1 — passes large text (18pt+) only; body text on Sage Green headers must use Clinical Cream at 14pt Bold minimum
+- Clinical Cream on Muted Lavender: 2.93:1 — fails even large text; Lavender headers must use Clinical Cream text at 18pt Bold minimum for any text smaller than display size
+- Dark Charcoal on Deep Burgundy: 1.90:1 — hard fail; never use Dark Charcoal text on Burgundy backgrounds (corrected in design system — existing docs had this error by implication)
+- Apothecary Gold on Clinical Cream: 1.94:1 — hard fail; decorative use of Gold on Cream is acceptable but never use Gold as text color on Cream backgrounds
+
+**Design system extends (does not replace)**:
+- `canva-phase-3-adaptation-guide.md` (May 19) — remains authoritative for palette hex codes and stock image sourcing
+- `PHASE_3_CANVA_DESIGN_SYSTEM.md` (May 20) — remains authoritative for export specs and design schedule
+- `PHASE_3_CANVA_ADAPTATION_PLAN.md` (May 26) — remains authoritative for pre-sprint checklist
+
+---
+
 ## Session — Phase 3 Production Optimization & Roadmap — May 27, 2026
 
 **Task**: Synthesize all Phase 3 planning into a single June 1 review document covering Track B feedback interpretation, Phase 3 messaging differentiation, June 1 decision checklist, June 1–22 preparation roadmap, June 22–July 13 execution runbook, and WEAK/STRONG Track B contingency framework.
