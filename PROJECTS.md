@@ -981,6 +981,14 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - ~~**off-grid-living: nuclear and radiological preparedness**~~ — moved to project Current focus (Step 3 of publication prep)
 
+---
+
+**ACTIVE ITEMS (Session 1717 — 2026-05-27, Queue Refresh — 0 active items → adding 2)**:
+
+- **resistance-research: Phase 1 Post-Distribution Measurement Framework** — Scope: Design a comprehensive measurement system to assess Phase 1 distribution impact. Current deliverables (40-domain framework, Gist publication, email outreach templates) are complete, but there's no systematic way to measure if the distribution actually moves the needle on policy/advocacy. Research questions: (1) What metrics differentiate "successful distribution" from "just sending documents"? (2) How do we track adoption across 7 constituencies (law schools, immigration legal aid, civil rights, academic, faith, labor, mutual aid)? (3) What are the leading indicators of Phase 2 readiness? (4) What's the measurement overhead for a solo operator? Timeline: 2-3 hours research. Deliverable: `PHASE_1_MEASUREMENT_FRAMEWORK.md` with operational measurement plan, KPI definitions, data collection scripts, weekly reporting template. Cross-reference: Phase 1 Impact Evaluation Framework (Session 1643) covers Day 7/30/60 decision thresholds; this framework should operationalize that into a repeatable system.
+
+- **stockbot: Options Integration Roadmap** — Scope: The codebase contains comprehensive options infrastructure (OptionsLiveSession, OptionsExecutor, GreeksManager, OptionsPositionTracker, OptionsProvider, OptionsBacktestEngine, covered-calls architecture spec) but it's not integrated into the live trading path. The JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md identifies 5 architecture gaps blocking activation. Research questions: (1) What's the safest minimal-viable integration? (2) Which options strategies align with current equity portfolio (covered calls for AMZN/JPM positions)? (3) What are the test/validation gates before options can go live? (4) How does options capital allocation interact with equity position sizing guardrails? Timeline: 3-4 hours research. Deliverable: `OPTIONS_INTEGRATION_ROADMAP.md` with Gate 3 success criteria, phased activation plan (equity-only → covered calls only → multi-strategy ensemble), capital allocation framework, risk boundaries. Cross-reference: JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md (Session 993) identifies gaps; this roadmap should define the path forward.
+
 - ~~**Stockbot: model evaluation framework**~~ — **Done** (Session 484: `model-graduation-criteria.md` complete — four-gate framework for paper-to-live graduation: statistical sufficiency, performance quality, robustness validation, operational readiness)
 
 - ~~**resistance-research: post-launch Phase 2 prep**~~ — **Done** (Phase 2 litigation tracking COMPLETE and production-ready per Session 462)
