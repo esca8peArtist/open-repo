@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-28T17:19:13Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-28T20:01:30Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 7.0% (621,214 tokens) | All-models 4.5% | Reset in 103h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 7.0% (621,214 tokens) | All-models 4.7% | Reset in 100h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[RESOLVED] MAY 28 DOMAIN 56 DISTRIBUTION PRE-FLIGHT + DOMAIN 59 PRODUCTION SYNTHESIS COMPLETE** — Gist verified live, all templates validated, Tier 1 contacts confirmed, May 28 distribution ready 14:00-18:00 UTC. May 28 synthesis running at 19:00 UTC regardless of signal log completion. June 1 Domain 39 distribution queued for HHS deadline window (13:00-14:00 UTC). Phase 2 Tier 2 distribution (Volcker Alliance, Democracy Forward, CREW, Government Executive) ready for post-May 30 sequenci … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED] MAY 28 SYNTHESIS COMPLETE — WEAK OUTCOME (0.0 QRP, all 5 contacts silent)** — Synthesis executed 18:14 UTC, reclassified from TOO_EARLY to WEAK per final gate rule. Signal log: zero Score 3+ replies, zero Gist delta May 18-28. Phase 2 activation on WEAK path: Domain 56 June 1 (framework utility framing — no social proof), Domain 39 May 30 + June 1 (path-independent HHS deadline), Domains 57/59 deferred to August. **IMMEDIATE ACTIONS REQUIRED (by May 29 12:00 UTC)**: (1) Us … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
