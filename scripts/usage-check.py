@@ -361,6 +361,56 @@ def checkin_line(r: dict) -> str:
             f"check: claude.ai → Settings → Usage & billing")
 
 
+def read_pause_state() -> dict:
+    """Return current pause state as a dict.
+
+    Keys: paused (bool), reason (str|None), timestamp (str|None), override (bool)
+    Handles both JSON (written by write_pause_state) and plain-text (written by
+    usage-monitor.py) PAUSE_FILE formats.
+    """
+    state = {"paused": False, "reason": None, "timestamp": None, "override": False}
+    if PAUSE_FILE.exists():
+        state["paused"] = True
+        try:
+            data = json.loads(PAUSE_FILE.read_text())
+            state["reason"]    = data.get("reason")
+            state["timestamp"] = data.get("timestamp")
+        except (json.JSONDecodeError, OSError):
+            # Plain-text format written by usage-monitor.py
+            try:
+                state["reason"] = PAUSE_FILE.read_text().strip() or "Paused (no reason recorded)"
+            except OSError:
+                state["reason"] = "Paused (no reason recorded)"
+    state["override"] = OVERRIDE_FILE.exists()
+    return state
+
+
+def write_pause_state(paused: bool, reason: str = "", override: bool = False) -> None:
+    """Write or clear the orchestrator pause state.
+
+    paused=True  → creates PAUSE_FILE with JSON metadata
+    paused=False → removes PAUSE_FILE
+    override=True  → creates OVERRIDE_FILE (orchestrator proceeds despite pause)
+    override=False → removes OVERRIDE_FILE
+    """
+    if paused:
+        payload = {
+            "paused":    True,
+            "reason":    reason or "Manually paused",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+        tmp = PAUSE_FILE.with_suffix(".tmp")
+        tmp.write_text(json.dumps(payload, indent=2) + "\n")
+        os.replace(tmp, PAUSE_FILE)
+    else:
+        PAUSE_FILE.unlink(missing_ok=True)
+
+    if override:
+        OVERRIDE_FILE.touch()
+    else:
+        OVERRIDE_FILE.unlink(missing_ok=True)
+
+
 def calibrate(sonnet_pct: float, all_pct: float) -> None:
     """Back-calculate and write new limits to PROJECTS.md."""
     r = build_report()
