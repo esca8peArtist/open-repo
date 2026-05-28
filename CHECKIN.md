@@ -4,14 +4,15 @@
 
 ## Since Last Check-in (Session 1906, May 28 14:25 UTC)
 
-**Session 1906 (May 28 14:25 UTC) — ✅ ONE-HUNDRED-THIRTY-EIGHTH CONSECUTIVE VERIFICATION | PAUSE DIRECTIVE CONFIRMED | ZERO AUTONOMOUS WORK REMAINS | DOMAIN 56 DISTRIBUTION WINDOW OPEN (3H 35M REMAINING)**
+**Session 1906 (May 28 14:25 UTC) — ✅ ONE-HUNDRED-THIRTY-EIGHTH CONSECUTIVE VERIFICATION | PAUSE DIRECTIVE CONFIRMED | EXPLORATION QUEUE REFRESHED | DOMAIN 56 DISTRIBUTION WINDOW OPEN (3H 35M REMAINING)**
 
-**What was verified**:
+**What was verified & completed**:
 - ✅ Orientation: Read ORCHESTRATOR_STATE.md, BLOCKED.md (2 active blocks unchanged), INBOX.md (zero new items)
 - ✅ Pause directive from Session 1770 (May 27 23:15 UTC) remains active and honored (138th consecutive verification, spanning ~15 hours)
 - ✅ **Zero autonomous work confirmed (correct by design)** — All work time-gated to May 28-31 user actions
 - ✅ Both active blocks verified unchanged (cybersecurity-hardening VeraCrypt restart, mfg-farm test print — both require user action only, cannot auto-resolve)
 - ✅ All critical-path infrastructure production-ready for May 28-31 events
+- ✅ **Exploration Queue refreshed** — Added 3 new items for June 1+ execution: (1) stockbot exit model training specification, (2) resistance-research Trump v. Barbara rapid-response foundation, (3) systems-resilience Phase 4/5 decision support deep dive
 
 **Critical path status** (May 28):
 - **May 28 14:00–18:00 UTC** (**3H 35M REMAINING**): resistance-research Domain 56 distribution ← **USER ACTION CURRENTLY REQUIRED**
@@ -23,7 +24,7 @@
 - **May 30 AM**: seedwarden Track B + stockbot pre-flight decisions
 - **May 31 23:59 UTC**: systems-resilience Phase 5/6 publication decision
 
-**Autonomous work status**: ✅ **ZERO (CORRECT BY DESIGN)** — Orchestrator standing by. Domain 56 distribution window is CURRENTLY OPEN (14:00–18:00 UTC) — user action required before 18:00 UTC. All May 28-31 infrastructure production-ready.
+**Autonomous work status**: ✅ **ZERO (CORRECT BY DESIGN)** — Orchestrator standing by. Domain 56 distribution window is CURRENTLY OPEN (14:00–18:00 UTC) — user action required before 18:00 UTC. Exploration Queue now has 3 staged items for June 1+ activation. All May 28-31 infrastructure production-ready.
 
 ---
 
