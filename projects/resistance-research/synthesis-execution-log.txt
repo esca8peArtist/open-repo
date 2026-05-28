@@ -1,1 +1,2 @@
 2026-05-19 22:00:37 UTC | DUMMY | MODERATE | QRP=2.0 | rule=Rule 2 — QRP >= 2 but response rate < 40% (Gist-bonus-driven
+2026-05-28 18:14:15 UTC | LIVE | TOO_EARLY | QRP=0.0 | rule=Rule 3 — TOO EARLY (delivery inconclusive; cannot classify a

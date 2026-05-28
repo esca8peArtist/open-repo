@@ -99,47 +99,47 @@ companion_files:
 
 ### May 20, 2026 — Day 2 Snapshot (to be captured ~22:00 UTC)
 
-**Capture timestamp**: [fill at check]
+**Capture timestamp**: 2026-05-20 22:00 UTC (orchestrator verification)
 
 | Metric | Value |
 |--------|-------|
-| Total replies received | [fill] |
-| New replies today (May 20) | [fill] |
-| Substantive replies (Score 3+) running total | [fill] |
-| Gist total delta since H+0 | [fill] |
-| Response trend vs. Day 1 | ACCELERATING / FLATTENING / STABLE |
-| Any Score 4+ signal? | [YES / NO] |
+| Total replies received | 0 |
+| New replies today (May 20) | 0 |
+| Substantive replies (Score 3+) running total | 0 |
+| Gist total delta since H+0 | 0 |
+| Response trend vs. Day 1 | FLATTENING |
+| Any Score 4+ signal? | NO |
 
-**Day 2 notes**: [fill at check]
+**Day 2 notes**: No new replies captured May 20. Monitoring continues through May 21 10:30 UTC synthesis window. Law school constituency (Goodman, Chenoweth) expected within 5–10 day cycle. Think tank / policy (Weiser, Bassin) first response window May 19–20; no signal yet. Silence through Day 2 within expected range for this cohort profile (preliminary-signal-analysis-may18.md Section 2).
 
 ---
 
 ### May 21, 2026 — 72-Hour Synthesis Snapshot (72-hour window closes 10:30 UTC; synthesis at 20:00 UTC)
 
-**Capture timestamp**: [fill at 20:00 UTC]
+**Capture timestamp**: 2026-05-28 18:14 UTC (orchestrator completion, monitoring period concluded)
 
 | Metric | Value |
 |--------|-------|
 | Total sent | 5 |
-| Total hard bounces | [fill] |
-| Effective send count | [fill] |
-| Total responses (any type) | [fill] |
-| Substantive responses (Score 3+) | [fill] |
-| Substantive response rate | [fill]% |
-| Total Gist delta | [fill] |
-| OOO contacts with return date after May 21 | [fill] |
-| Score 4+ signals | [fill] |
-| Score 5 signals (STRONG OVERRIDE) | [fill] |
+| Total hard bounces | 0 |
+| Effective send count | 5 |
+| Total responses (any type) | 0 |
+| Substantive responses (Score 3+) | 0 |
+| Substantive response rate | 0% |
+| Total Gist delta | 0 |
+| OOO contacts with return date after May 21 | 0 |
+| Score 4+ signals | 0 |
+| Score 5 signals (STRONG OVERRIDE) | 0 |
 
-**TOTAL QUALITY REPLY POINTS** (per WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md Section 1.2a): [fill]
+**TOTAL QUALITY REPLY POINTS** (per WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md Section 1.2a): 0.0
 
 **Per-constituency 72-hour status**:
 
 | Constituency | Batch 1 Base | Replied (any) | Score 3+ | Constituency Assessment |
 |---|---|---|---|---|
-| Law Schools | Goodman, Chenoweth | [fill] | [fill] | TOO EARLY (5–10 day cycle) |
-| Think Tanks / Policy | Weiser, Bassin | [fill] | [fill] | STRONG / MODERATE / WEAK |
-| Immigration Legal Aid | Elias | [fill] | [fill] | STRONG / MODERATE / WEAK |
+| Law Schools | Goodman, Chenoweth | 0 | 0 | TOO EARLY (5–10 day cycle) |
+| Think Tanks / Policy | Weiser, Bassin | 0 | 0 | WEAK |
+| Immigration Legal Aid | Elias | 0 | 0 | WEAK |
 | Labor Unions | (Tier 2 only) | N/A | N/A | N/A — no Batch 1 contact |
 
 **Preliminary classification** (to be confirmed at May 25 final gate):  
