@@ -13,7 +13,11 @@
 
 <!-- Add tasks here. Format: - [date] [description] -->
 
-  **PHASE 3 (July+, after 50+ round trips accumulated):**
+## Item Processing Pending Clarification
+
+- [2026-05-29 19:35] /resume — **AWAITING CLARIFICATION** (Session 2128+): Item appears to be either (A) orchestrator resume/unpause signal, or (B) request to reactivate resume project (currently PAUSED, low priority). Pause directive from Session 1770 (May 27 23:15 UTC) remains active. If signal to unpause: explicit Discord confirmation required per pause protocol. If request to resume project work: requires priority change authorization. Logged in WORKLOG.md; awaiting CHECKIN.md clarification request response.
+
+## PHASE 3 (July+, after 50+ round trips accumulated):
   9. Train and activate exit model: follow EXIT_MODEL_BACKTEST_APPROACH.md once 50+ AAPL round trips are in the database. Query trades table, run prepare_training_data_from_trades(), 70/30 chronological split, validate ΔPnL. Then flip exit_model_enabled: true + exit_model_threshold: 0.60 per session.
   10. MSFT gradient_boosting session (Sharpe 3.190 in backtest — highest validated non-original Sharpe in system). Add as 5th session.
   11. Inverse ETF session (PSQ or SH) for bear-regime hedge: train stacker on PSQ, flip HMM masker logic so bear regime ENABLES entries (inverse of normal gating). (5-10h + HMM inversion 4-8h)
