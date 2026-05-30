@@ -1,0 +1,20 @@
+{
+  "github_username": "resistance-research-org",
+  "github_gist_ids": [
+    "2dec7fd03b08ab5b41c55d402f44c261",
+    "2869da6eaeb15a47246ade3bbbc4a3f4",
+    "418d51bda087f15a04d685ab171a5ee0",
+    "10d0a86e386e6c3c11c3830295a6503c"
+  ],
+  "organization_contacts": [
+    {
+      "name": "Brennan Center for Justice",
+      "email": "contact@brennancenter.org",
+      "sector": "think-tank"
+    }
+  ],
+  "gmail_enabled": false,
+  "gmail_credentials_path": "./credentials.json",
+  "log_dir": "./logs",
+  "data_dir": "./data"
+}
