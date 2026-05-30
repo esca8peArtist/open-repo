@@ -872,7 +872,7 @@ P1-P3 summary: Real Alpaca walk-forward backtesting infrastructure built (25 tes
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
 **Visibility**: Public — GitHub repo: `esca8peArtist/open-repo`. Use remote `open-repo` for all pushes. Use `git subtree push --prefix=projects/open-repo open-repo <branch>` — never push to `origin`.
 **Working dir**: `projects/open-repo/`
-**Current focus**: ✅ **[RESOLVED] Phase 5.1–5.2 WAVE 1 COMPLETE** — ZimWriter export pipeline + OPDS feed generator production-ready (318/318 tests passing, all pre-deployment verification passed). Wave 2 (A11y audit, 4–14h) queued for June 1–6. Kiwix integration + load testing pending user Phase 5 priority direction. June 12 deployment target.
+**Current focus**: ✅ **[RESOLVED] PHASE 5.1–5.2 WAVE 1 COMPLETE + WAVE 2 EXECUTION RUNBOOK READY** — ZimWriter export pipeline + OPDS feed generator production-ready (318/318 tests passing, all pre-deployment verification passed). **Wave 2 A11y Audit execution runbook complete** (PHASE_5_WAVE_2_A11Y_EXECUTION_RUNBOOK.md, commit 400c9c4a): 6-day plan June 1–6 with dependency setup, automated scanning (June 1), manual keyboard+screen reader testing (June 2–3), findings consolidation (June 4), P0/P1 fixes + regression tests (June 5–6). All prep docs ready (WCAG_2.1_AA_AUDIT_CHECKLIST.md, A11Y_AUTOMATED_TEST_SUITE.md, templates). Ready for June 1 activation. June 12 deployment target.
 
 **Missing pre-reqs (system, not code)**: (1) libzim PyPI wheel — `uv pip install "libzim>=3.2,<4.0"` (2) zim-tools binary — optional, `sudo apt install zim-tools`
 
