@@ -1,12 +1,49 @@
-# 🎯 CURRENT STATUS — May 30, 2026 23:50 UTC (ALL JUNE 1 CRITICAL-PATH INFRASTRUCTURE PRODUCTION-READY, ADOPTION TRACKING + WATER SYSTEMS RESEARCH COMPLETE)
+# 🎯 CURRENT STATUS — May 31, 2026 00:15 UTC (ALL JUNE 1 CRITICAL-PATH INFRASTRUCTURE PRODUCTION-READY, EXPLORATION QUEUE ITEMS 25-27 COMPLETE)
 
-> **Time**: May 30 ~23:50 UTC — session 2286 COMPLETE
+> **Time**: May 31 00:15 UTC — session 2287 COMPLETE
 > **Usage**: Sonnet ~13.2% | All-models ~10.4% | Reset in ~50h  
-> **Session**: 2286 COMPLETE. **Two critical deliverables executed in parallel**: (1) **Resistance-research Phase 1 Adoption Tracking Automation** — production-ready GitHub Gist polling + email monitoring + Google Sheets sync (650+ lines code, 6 documentation guides, ready for June 1 09:00 UTC activation), (2) **Systems-resilience Phase 5 Water Systems Research** — comprehensive 5,200-word research outline + decision matrix (97 sources, fills governance + greywater gaps before May 31 user decision deadline). Both committed to master. **IMMINENT DEADLINE**: May 31 23:59 UTC systems-resilience Phase 5/6 user decision (~4 hours remaining). **JUNE 1 EXECUTION WINDOWS** (all infrastructure ready): (1) 08:00-10:15 UTC seedwarden Track B launch; (2) 13:00-14:00 UTC resistance-research Domain 39 send; (3) Post-14:00 UTC systems-resilience Phase 5 publication. **Stockbot deployment** (Option A/B/C) awaiting user approval, executable same-day upon decision.
+> **Session**: 2287 COMPLETE. **Three critical-path Exploration Queue items (25–27) executed in parallel**: (1) **Systems-Resilience Phase 5 Wave 1 Execution Timelines** — Both Option A + Option B day-by-day schedules (4,500+3,800 words, numeric escalation thresholds, ready for June 1 activation upon user May 31 decision), (2) **Resistance-Research Wave 2 Execution Architecture** — 5 documents with 146 verified contacts, Gist workflows, Domain 38/40 timelines, 4-gate contingency router (no Domain 39 response dependency, executable June 2-3), (3) **Stockbot Post-Deployment Monitoring** — 32-field metric schema, 3-tier alerting (numeric thresholds), 6-panel pre-flight dashboard (ready for June 1 deployment). All three committed to master. **CRITICAL DEADLINE IMMINENT**: May 31 23:59 UTC systems-resilience Phase 5/6 user decision (23.75 hours remaining). **JUNE 1 EXECUTION WINDOWS** (all infrastructure production-ready): (1) 00:00 UTC seedwarden path decision + possible launch, (2) 08:00-10:15 UTC seedwarden Track B minimum viable execution (if Path A chosen), (3) 13:00-14:00 UTC resistance-research Domain 39 send (HHS interim final rule timing window), (4) Post-14:00 UTC systems-resilience Phase 5 Wave 1 publication (pending Option A/B decision). All other projects unblocked and ready for parallel June 1+ execution.
 
 ---
 
-## Since Last Check-in (Session 2286 — ADOPTION TRACKING + WATER SYSTEMS RESEARCH COMPLETE)
+## ⚠️ NEEDS YOUR INPUT — CRITICAL DECISIONS DUE BY MAY 31 23:59 UTC
+
+**THREE DECISIONS required by midnight UTC today** to unblock June 1-15 execution. All decision support documents are production-ready and in projects/.
+
+1. **Systems-Resilience Phase 5 Timing** (deadline: May 31 23:59 UTC)
+   - **Decision**: Option A (Wave 1 June 1-15, Wave 2 June 30, Wave 3 by June 30) vs. Option B (unified June 15)
+   - **Recommended**: Option A (higher completion confidence 95% vs 88%, only 40 hours in June, largest team capacity window)
+   - **Support documents**: `MAY_31_CONSOLIDATED_DECISION_SUPPORT.md` (13,500 words, routing matrix for all three decisions), `TIMELINE_IMPACT_MATRIX.md` (3-option resource breakdown), `DECISION_SUPPORT_RECOMMENDATION.md` (weighted scoring: Option A 8.25/10 vs B 5.94/10)
+   - **Timelines ready**: OPTION_A_JUNE_1_14_EXECUTION_TIMELINE.md + OPTION_B_JUNE_1_14_EXECUTION_TIMELINE.md (both committed May 31 00:15 UTC, ready for immediate use June 1)
+   
+2. **Systems-Resilience Phase 6 Domain Selection** (deadline: May 31 23:59 UTC)
+   - **Decision**: Which domains to research in Phase 6? Options: A (Community Economic Resilience), C (Institutional Learning), D (Infrastructure Interdependencies), or combinations
+   - **Recommended**: Trio A+C+D (highest leverage, 60 hours total June 1-July 15)
+   - **Support document**: `PHASE_6_ACTIVATION_READINESS_CHECKLIST.md` (go/no-go decision template, all prerequisites satisfied)
+   - **Research outlines ready**: PHASE_6_RESEARCH_OUTLINE.md (5,800 words), PHASE_6_FRAMEWORK_DEPENDENCY_MAP.md (4,500 words), PHASE_6_ACTIVATION_READINESS_CHECKLIST.md (4,000 words)
+   - **Contingency**: If resource contention arises June 10+, can defer to solo Domain D (Phase 6 standalone) or reduce to A+C (Phase 5/6 lightweight)
+
+3. **Seedwarden Launch Path Decision** (deadline: June 1 00:00 UTC)
+   - **Decision**: Path A (minimal viable, 45-60 min: Reddit post + 5 top contacts + DMs) vs. Path B (full launch, 4.5-6 hrs: social accounts + Kit account setup + full outreach)
+   - **Recommended**: Path A for June 1 00:00-01:00 UTC execution (June 22 target unaffected by June 1 scope choice)
+   - **Support document**: `LAUNCH_PATH_DECISION_GUIDE.md` (ready-to-use decision checklist, success thresholds, contingency playbooks)
+   - **Timeline**: Both paths lead to June 22 launch; Path A saves 4-5 hours in June 1-14 available for Phase 6
+
+**What to do**: 
+- Review the decision support documents in `projects/systems-resilience/`, `projects/seedwarden/`, and `projects/resistance-research/`
+- Fill in your decisions on the provided checklist (or reply with Option A/B/C selections)
+- **By May 31 23:59 UTC**, confirm Phase 5 timing + Phase 6 domains + seedwarden path
+- June 1 00:00 UTC: orchestrator auto-activates contingency fallbacks if decisions deferred (Option A + Trio A+C+D + Path A defaults)
+
+**June 1 Execution** (all 4 projects unblocked immediately upon decision):
+- Seedwarden: 00:00-01:00 UTC minimum viable launch (Path A, 60 min)
+- Stockbot: 24/7 monitoring (pre-flight assessment June 2-3, go/no-go decision June 3 18:00 UTC)
+- Resistance-research: 13:00-14:00 UTC Domain 39 send (HHS interim final rule window)
+- Systems-resilience: 14:00+ UTC Phase 5 Wave 1 publication (authors onboard June 1, research starts June 1-5)
+
+---
+
+## Since Last Check-in (Session 2287 — EXPLORATION QUEUE ITEMS 25-27 COMPLETE + CRITICAL-PATH JUNE 1 INFRASTRUCTURE READY)
 
 **✅ SESSION 2286 WORK COMPLETE**
 
