@@ -1,8 +1,29 @@
-# 🎯 CURRENT STATUS — May 30, 2026 (JUNE 1 CRITICAL-PATH STAGED, EXPLORATION QUEUE ACTIVE)
+# 🎯 CURRENT STATUS — May 30, 2026 (JUNE 1 CRITICAL-PATH READY, EXPANSION STRATEGY DOCUMENTED)
 
-> **Time**: May 30 ~19:30 UTC — session 2284 (all June 1-2 infrastructure staged; spawning parallel agents for exploration items)
-> **Usage**: Sonnet ~10% | All-models ~8.7% | Reset in ~53h
+> **Time**: May 30 ~20:45 UTC — session 2285 (orientation, INBOX processing, exploration queue execution complete)
+> **Usage**: Sonnet ~11.5% | All-models ~8.9% | Reset in ~52h
 > **Session**: 2284 (ORIENTATION COMPLETE: all critical-path work from Session 2283 verified committed. June 1 execution fully staged: stockbot live on Jetson ✅, resistance-research ready for June 1 13:00 UTC send ✅, seedwarden launch paths prepared ✅. **CRITICAL DEADLINE**: May 31 23:59 UTC systems-resilience Phase 5 user decision (~29 hours). **EXPLORATION QUEUE ACTIVATED**: Added 3 high-value items (25-27) to eliminate planning delays on June 1-2. Spawning parallel agents for Items 25-27.)
+
+---
+
+## Since Last Check-in (Session 2285 — Orientation Complete, Exploration Queue Item #1 Delivered)
+
+**✅ SESSION 2285 COMPLETED WORK**
+
+**INBOX Processing + Project Orientation**:
+- Processed single INBOX item (Stockbot Strategic Reset). Status: Phase 1-3 work already completed in Session 2284. Updated PROJECTS.md to reflect Phase 3 completion and pending user deployment decision. Cleared from INBOX.
+- Comprehensive project status audit: All 10 projects either time-gated June 1-6 or awaiting user decisions. Zero new autonomous work triggered from main project queue.
+- Active blocks verified: 2 remain (cybersecurity-hardening VeraCrypt restart, mfg-farm test print — both user-action dependent, no auto-resolution possible).
+
+**Exploration Queue Item #1 — Stockbot Phase 2 Acceleration Strategy (COMPLETE ✅)**:
+- Deliverable: `projects/stockbot/PHASE_2_ACCELERATION_STRATEGY.md` (3,200 words, 6 sections)
+- **MSFT gradient_boosting**: Synthetic Sharpe 3.190 was GBM-based (old pipeline). Must re-run walk-forward on real Alpaca data. Expect 1.5–2.5 Sharpe on real data. Earliest live deployment: June 12–14.
+- **PSQ inverse ETF (1x, not 3x)**: Can develop in parallel from June 5. Depends on: (a) thermal gate (Jetson < 85°C at 5-session load), (b) ≥1 live bear signal observed in paper mode. If market stays bull through June, defers to July.
+- **PEAD earnings drift**: Alpaca provides no earnings calendar. Solution: Alpha Vantage API for bulk backtest + live lookups. Earliest paper: June 30, live: July 7.
+- **Jetson infrastructure**: 4-session weekend temp 45–47°C is not representative of market-hours load (projected 70–88°C). Thermal gate required at 5-session mark before 6th session (PSQ) activation. Memory limit needs increase to 6GB for 6-session support.
+- **Recommendation**: Option B (MSFT + PSQ parallel development, MSFT live by June 12) over Option C (+ PEAD, requires thermal confirmation).
+
+**Status**: Exploration Queue Item #1 complete. Two additional active items in queue available if session time permits (systems-resilience veterinary care synthesis, resistance-research adoption tracking automation).
 
 ---
 
