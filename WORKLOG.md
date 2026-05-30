@@ -1,5 +1,17 @@
 # Work Log
 
+- Session 2285 (May 30 ~20:30 UTC): **STOCKBOT PHASE 2 ACCELERATION STRATEGY — COMPLETE**
+  - **File**: `projects/stockbot/PHASE_2_ACCELERATION_STRATEGY.md` (supersedes May 29 version)
+  - **Word count**: ~3,000 words covering all 6 required sections
+  - **Key findings**:
+    - MSFT synthetic Sharpe 3.190 was generated on old GBM pipeline — must re-run walk-forward on real Alpaca data before any deployment; earliest live June 12–14
+    - PSQ is 1x inverse (not 3x); leverage decay 0.5–1% monthly; HMM inversion logic not yet coded (2–3h task); earliest live June 18–22 conditional on bear regime signal
+    - PEAD: Alpaca does not provide earnings calendar; Alpha Vantage recommended as earnings source; IV percentile requires 30-day stored snapshots (unavailable retroactively); earliest paper June 30, live July 7
+    - Jetson 4-session weekend temp 45–47°C is not representative of market-hours load; thermal gate required at 5-session load before PSQ (6th session) is activated
+    - Option B (Moderate: MSFT + PSQ parallel development) is recommended; Option C (+ PEAD) requires active cooling confirmed by June 10
+    - Portfolio correlation matrix shows PSQ provides the highest marginal diversification value of all 3 candidates (-0.85 to -0.88 with tech names)
+  - **Sources read**: PHASE_2_ACCELERATION_STRATEGY.md (prior), LEARNING_LOG.md, EARNINGS_DRIFT_STRATEGY_DESIGN.md, model-graduation-criteria.md, HMM_REGIME_GATING_ANALYSIS.md, THERMAL_AND_RELIABILITY_PLAN.md, BACKTESTING_PIPELINE_AUDIT.md, JETSON_CAPACITY_ANALYSIS.md, JETSON_RESILIENCE_ASSESSMENT.md, COMPREHENSIVE_BACKTEST_REPORT_2026-05-27.md, POSITION_SIZING_FRAMEWORK.md, src/strategies/earnings_drift_strategy.py, src/ml/hmm_signal_masker.py, src/backtesting/walk_forward.py, src/backtesting/alpaca_data_feed.py
+
 - Session 2285 (May 30 ~19:38 UTC): **ORIENTATION + INBOX PROCESSING — STOCKBOT P1-P3 COMPLETE, USER DECISIONS STAGED** 
   - **Phase**: Orientation per Session Protocol (ORCHESTRATOR_STATE.md read, blocks checked, INBOX processed)
   - **Blocks audit**: Two active blocks remain (cybersecurity-hardening VeraCrypt restart, mfg-farm test print — both user-action dependent, no auto-resolution possible)
