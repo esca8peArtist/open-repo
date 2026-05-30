@@ -440,9 +440,9 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: ✅ **[PHASE 2 COMPLETE — SESSION 2284] — MODEL VALIDATION COMPLETE, CRITICAL FINDINGS, JPM READY FOR DEPLOYMENT**
+**Current focus**: ✅ **[PHASE 3 COMPLETE — SESSION 2284] — BACKTESTING PIPELINE + MODEL VALIDATION + DEPLOYMENT ASSESSMENT COMPLETE — AWAITING USER DEPLOYMENT DECISION**
 
-P2 revealed: JPM ridge_wf (6/6 gates ✅) is deployment-ready. AMZN lgbm_ho (5/6) is one G5 fix away. AAPL lgbm_ho (2/6) and ridge_wf (1/6) both fail walk-forward validation — prior synthetic-data claims not confirmed. **Next: P3 — Update graduation criteria doc, create deployment assessment, prepare 2-session (JPM only) or 3-session (JPM + AMZN with G5 fix) configs pending team decision.**
+P1-P3 summary: Real Alpaca walk-forward backtesting infrastructure built (25 tests), 4-model validation complete (598 total tests passing). Results: JPM ridge_wf (6/6 gates ✅) deployment-ready; AMZN lgbm_ho (5/6, one G5 HMM fix away); AAPL models fail walk-forward validation (synthetic-data overfit claims not confirmed). Deployment Assessment (docs/DEPLOYMENT_READINESS_ASSESSMENT_MAY_30.md) outlines 3 options: **Option A** (JPM only, ready today), **Option B** (JPM + AMZN fix, ready June 1, RECOMMENDED), **Option C** (+ AAPL retrain, 2-3 weeks). **User decision required**: Approve which option? Orchestrator executes config update, rsync models, docker restart same-day upon approval.
 
 **PHASE 0 — IMMEDIATE (COMPLETE ✅)**:
 - ✅ P0-1: Jetson switched to 4-session config (Session 2283). Gate 1 breadth test terminated. 4-session config (AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf) active while pipeline built.

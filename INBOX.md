@@ -11,28 +11,7 @@
 
 ## New Items
 
-- [2026-05-30] **ORCHESTRATOR RESUME + STOCKBOT STRATEGIC RESET — PRIORITY #1** — User has directed a complete strategy reassessment for stockbot. Pause directive is lifted. Execute the following in order:
-
-  **IMMEDIATE (before 2026-06-02 13:30 UTC market open)**:
-  1. Switch Jetson (100.120.18.84) from current 67-session config to `active-sessions-4session.json` (AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf). Use rsync + `docker compose restart`. Verify `sessions: 4` on health endpoint. This terminates the Gate 1 breadth test. The 4-session config stays active while the pipeline is built.
-
-  **THEN — STOCKBOT PIPELINE GAPS (4 specific additions to existing infrastructure)**:
-
-  NOTE: Do NOT rebuild from scratch. `src/backtesting/engine.py`, `performance_metrics.py`, `report_generator.py`, and `scripts/run_strategy_evaluation.py` are all production-ready. The 4 gaps below are additions to existing code.
-
-  2. **Gap 1 — Alpaca historical data connector** (~2-4h): `scripts/run_strategy_evaluation.py` uses synthetic GBM data. The `BacktestEngine` is data-agnostic — add an adapter that fetches real Alpaca historical OHLCV bars (via Alpaca SDK, not yfinance) and feeds them into the existing engine. Output: `src/backtesting/alpaca_data_feed.py`. This is the most critical gap — all other validation is meaningless on synthetic data.
-
-  3. **Gap 2 — Multi-window walk-forward engine** (~4-6h): Current `EnsembleStackerModel` does a single 70:30 IS/OOS split. Add a rolling walk-forward wrapper: N windows (e.g. 10 × 3yr IS / 6mo OOS), compute metrics on each OOS fold, report Walk-Forward Efficiency (WFE = median OOS Sharpe / median IS Sharpe). Required for G6 gate. Output: `src/backtesting/walk_forward.py` wrapping existing `BacktestEngine`.
-
-  4. **Gap 3 — Deflated Sharpe Ratio** (~1h): DSR is documented in `model-graduation-criteria.md` and required for G4 gate but not coded anywhere. Add to `src/backtesting/performance_metrics.py`. Formula: penalizes reported Sharpe based on number of strategy variants tested. 10-line implementation.
-
-  5. **Gap 4 — Wire run_strategy_evaluation.py to real data + WFE + DSR**: Update existing `scripts/run_strategy_evaluation.py` to accept `--ticker`, `--start`, `--end`, pull real Alpaca data via Gap 1 adapter, run Gap 2 walk-forward, compute Gap 3 DSR, and output pass/fail on all 6 graduation gates. This becomes the unified "evaluate any model" command.
-
-  6. **Model re-validation** (after gaps 1-4 complete): Run all 4 current sessions through the updated pipeline. AMZN lgbm_ho and JPM ridge_wf must first be retrained with data from 2022-01-01 (Alpaca data) before evaluation — JPM's Sep 2024 training start misses the Fed rate shock regime entirely.
-
-  **CONTEXT**: Gate 1 failed 3 consecutive checkpoints. Comprehensive backtesting report (May 27) revealed that AAPL ridge_wf has no validated backtest, AMZN has no OOS report, and JPM is trained only on Sep 2024–May 2026 data (misses Fed rate shock). The existing backtesting infrastructure is solid — only 4 targeted additions are needed before we can properly validate all models.
-
-  **This item supersedes all prior stockbot sprint plans. Do not create new models until pipeline gaps 1-4 are complete and all current models pass re-validation.**
+(NONE — all pending items processed from last session)
 
 ## Item Processing Pending Clarification
 
@@ -52,6 +31,8 @@
   - Feature expansion policy: universal features (always include): price_vs_52w_low, dollar_volume_ma20, adx_14, price_vs_52w_high, momentum_42d, high_low_range_pct_20d. All others: validate per ticker via FeatureSelector before including.
 
 ## Processing Log
+
+- [2026-05-30] [orchestrator] Session 2285: Processed ORCHESTRATOR RESUME + STOCKBOT STRATEGIC RESET item. **Status**: Phase 1-3 work already completed in Session 2284. CHECKIN.md shows: Phase 1 (backtesting pipeline infrastructure with real Alpaca data) ✅, Phase 2 (model validation on all 4 models) ✅, Phase 3 (deployment readiness assessment) ✅. **Action**: Updated PROJECTS.md stockbot Current focus to reflect Phase 3 completion and pending deployment user decision. Item cleared from New Items; PROJECTS.md updated to reflect decision point.
 
 - [2026-05-28] [orchestrator] Session 1776: Processed STOCKBOT SPRINT PLAN (May 28 pre-queue). **Status**: Sprint work items are already completed and queued into PROJECTS.md in previous session. Item listed: 8 pre-queue completions (MTF bug, exit model, HMM gating, covered calls, diagnostics, earnings filters, learning log); SPRINT 1 (June 1-14, 4 items: SIP subscription, sentiment wiring, sub-$50 tickers, AAPL coordinator); SPRINT 2 (June 15-30, 4 items: regime weighting, feature selection, performance tracker, bear validation). All SPRINT 1-2 items are time-gated for future execution per pause directive. **Action**: Cleared from New Items; documented in WORKLOG.md.
 
