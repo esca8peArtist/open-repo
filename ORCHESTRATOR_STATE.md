@@ -1,5 +1,5 @@
 # Orchestrator State
-> Auto-generated at 2026-05-30T17:14:20Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-30T17:25:41Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
 🟢 Usage: Sonnet 9.2% (821,266 tokens) | All-models 8.4% | Reset in 55h | check: claude.ai → Settings → Usage & billing
@@ -65,6 +65,13 @@
 ## Active Blocks
 ---
 ---
+### stockbot — Alpaca paper-api.alpaca.markets connectivity failure (179+ timeouts, engine blocked)
+**Date blocked**: 2026-05-29 17:19 UTC (Session 2277 — orchestrator diagnosis)
+**Context**: Alpaca paper API connectivity failure started ~May 29 17:19 UTC. All 67 trading sessions began timing out with `ConnectTimeoutError` against `paper-api.alpaca.markets`. As of May 30 17:16 UTC, 179+ consecutive connection failures with all sessions in 120-second backoff loop. Engine health endpoint returns `engine_initialized: false`. Jetson realtime WebSocket stream in continuous `Attempting to reconnect` / `Stream not fully initialized` state. The 4-session AAPL/AMZN/JPM config has never been deployed (still running 67-session mass-ticker config; Option A runbook Steps 4-6 never executed). **CRITICAL BLOCKER**: Paper trading cannot execute without network access to Alpaca API. Live trading deployment impossible.
+**What I need**: (1) Diagnose network path from Jetson (100.120.18.84) to paper-api.alpaca.markets. Test: `ssh awank@100.120.18.84 'curl -s https://paper-api.alpaca.markets/v2/clock'` — if this hangs, network is broken and must be restored. If it succeeds, API is reachable and the config deployment can proceed. (2) If network is confirmed reachable: Execute Option A runbook Steps 4-6 to rsync the 4-session config (with real AMZN/JPM stacker UUIDs populated) and activate it via docker restart. (3) Validate JPM ridge_wf pkl (currently 1,435 bytes, unusually small) using the Step 2 validation script from the runbook before live trading.
+**Verify with**: `ssh awank@100.120.18.84 'curl -s https://paper-api.alpaca.markets/v2/clock | head -c 50'` — should return JSON with market status; if hangs or times out, network is broken.
+**Resolution**: [leave blank]
+---
 ---
 ---
 ---
@@ -86,11 +93,6 @@
 ---
 ### mfg-farm — Test print execution (user action required)
 **Date blocked**: 2026-05-13
-**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
-**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
-**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
-**Resolution**: [leave blank]
----
 
 ## Recently Resolved (last 5)
 • resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled) ← 2026-05-27 15:50 UTC (Session 1741 — orchestrator verification)
