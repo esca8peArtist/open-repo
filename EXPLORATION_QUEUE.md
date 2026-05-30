@@ -333,6 +333,43 @@
 - Resource envelope: $7M–$16M Phase 1-3 (4 years) = 0.04–0.1% of 2022 election spending. Foundation landscape favorable (Ford $60M April 2026, MacArthur $100M March 2026, Democracy Fund $77M 2023)
 - Phase 1 awareness ($50K–$145K) is self-fundable by 10 coalition partners at $5K–$15K each
 
+### 25. ⏳ systems-resilience — Phase 5 Wave 1 Execution Timeline Deep Architecture (May 30 Session 2284)
+**Scope**: User must decide Phase 5 timing (Option A/B/C) + Phase 6 domain selection by May 31 23:59 UTC (30 hours remaining). Phase 5 Wave 1 execution checklist is ready (Session 1764), but lacks day-by-day timeline detail for implementation. Pre-stage detailed daily timeline for BOTH likely options (A preferred, B as contingency) so execution can start immediately June 1 without planning delay.
+- **Deliverables**:
+  - Detailed June 1-14 day-by-day timeline for **Option A** (Wave 1 June 1-15, Wave 2 June 30): author onboarding schedule, daily research coordination, peer review intake calendar, publication gates, risk trigger checkpoints
+  - Detailed June 1-14 day-by-day timeline for **Option B** (Wave 1+2 parallel, June 1-30): parallel execution constraints, resource contention triggers, author workload matrix, coordination overhead analysis
+  - Unified risk trigger runbook (applies to both options): scope creep detection, author unavailability escalation, research dead-end recovery, contingency swap procedures
+  - Critical path analysis: identify which days have zero slack (gate deadlines, author onboarding windows, publication submission deadlines)
+  - Ready-to-execute templates for daily coordination, weekly syncs, peer review triage pre-filled with June 1-15 dates
+- **Owner**: systems-resilience subagent
+- **Deadline**: May 30 23:00 UTC (immediate use on June 1 post-user-decision)
+- **Value**: Eliminates 2-3 hours of planning delay on June 1; enables 24-hour execution start
+
+### 26. ⏳ resistance-research — Wave 2 Post-Domain-39 Execution Architecture (May 30 Session 2284)
+**Scope**: Domain 39 executes June 1 13:00-14:00 UTC. Domains 38 (AI regulatory capture) and 40 (surveillance capitalism) are queued for mid-June. Pre-stage Wave 2 execution roadmap that doesn't depend on Domain 39 response data, so that June 2-3 post-launch assessment can transition directly to Wave 2 outreach without planning overhead.
+- **Deliverables**:
+  - Domain 38 + Domain 40 contact stratification (Tier A/B/C/D, same as Domain 39 model)
+  - Domain 38 + 40 Gist creation steps (parallel to Domain 39 Gist)
+  - Execution timeline for Domain 38 (June 15-20 send window, July 15 distribution for EU AI Act Aug 2 enforcement)
+  - Execution timeline for Domain 40 (June 15-20 send window, July 15 distribution for November 3 midterm impact)
+  - Response monitoring framework (reuse from Domain 39; custom gates for Domain 38/40 movement leverage)
+  - Contingency decision tree: if Domain 39 Day 3 response is <2 contacts, escalate Domain 38/40 outreach tier. If >5 contacts, increase tier scope.
+- **Owner**: resistance-research subagent
+- **Deadline**: May 30 23:59 UTC (ready for June 2 post-Domain-39-send assessment meeting)
+- **Value**: Eliminates 4-6 hours of Wave 2 planning on June 2; enables same-day Wave 2 outreach decision
+
+### 27. ⏳ stockbot — Post-Deployment Live Engine Monitoring System Design (May 30 Session 2284)
+**Scope**: Stockbot engine is live on Jetson as of May 30 18:30 UTC. Engine must run "stable and observable" through June 1-3 pre-flight observation window before market-open decision. Design comprehensive monitoring system that tracks (a) daily paper trading performance (round trips, win rate, signals/ticker), (b) anomalies (position drops, unexpected fills, API errors), (c) pre-flight assessment criteria (Sharpe trend, max drawdown, cumulative P&L).
+- **Deliverables**:
+  - Real-time health dashboard schema (JSON structure for daily metrics collection)
+  - Anomaly detection rules (thresholds for: position drops >10%, fills with >2% slippage, consecutive API errors >3, session crashes)
+  - Pre-flight assessment checklist (8 criteria for go/no-go decision: cumulative P&L trend, max-DD under 10%, signals/ticker >1/day avg, 0 circuit-breaker halts, Docker restart recovery <5min, etc.)
+  - Monitoring automation (cron job to collect metrics 20:00 UTC daily; summary report generation)
+  - Alert escalation: 3-tier severity (INFO: trend only, WARN: threshold exceeded 1x, CRITICAL: repeating threshold violations 3+ times in 48h)
+- **Owner**: stockbot subagent
+- **Deadline**: May 30 23:59 UTC (deploy monitoring June 1, collect data through June 3)
+- **Value**: Informs June 2-3 pre-flight go/no-go decision; eliminates subjective assessment guessing
+
 ---
 
 ### 25. ✅ open-repo — Phase 5.3 Federation & Distributed Versioning Architecture (Session 1750 COMPLETE — May 27)
