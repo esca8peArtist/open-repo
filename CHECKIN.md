@@ -6,6 +6,53 @@
 
 ---
 
+## Since Last Check-in (Session 2284 — Backtesting Pipeline Complete, P1-P2-P3 ✅✅✅)
+
+**✅ STOCKBOT STRATEGIC RESET — CRITICAL PHASE WORK COMPLETE**
+
+**PHASE 1 — Backtesting Pipeline Infrastructure (COMPLETE ✅)**:
+- Built `WalkForwardEngine` class in `src/backtesting/walk_forward_engine.py` with:
+  - Real Alpaca historical data (no synthetic data)
+  - Proper IS/OOS time-series splits (no lookahead, 3 independent verification proofs)
+  - Rolling/expanding window walk-forward CV
+  - Full metric suite: Sharpe, Sortino, Calmar, MaxDD, Win Rate, Profit Factor, t-stat, DSR-adjusted Sharpe, regime breakdown (bull/bear/sideways)
+- Built `scripts/evaluate_model.py` CLI with 6 graduation gates, output templates
+- Created `BACKTESTING_PIPELINE_AUDIT.md` documenting gaps closed
+- Test suite: 75 tests, all passing. Zero regressions.
+- **Status**: Production-ready infrastructure for model evaluation
+
+**PHASE 2 — Model Validation (COMPLETE ✅)**:
+- All 4 models validated against real walk-forward backtesting on 2022-2026 data:
+
+| Model | P2 Result | Gates | OOS Sharpe | Decision |
+|-------|-----------|-------|-----------|----------|
+| JPM ridge_wf | **PASS ✅** | **6/6** | **4.41** | **Deploy immediately** |
+| AMZN lgbm_ho | Near-pass | 5/6 | 3.94 | One HMM fix → deploy |
+| AAPL lgbm_ho | FAIL | 2/6 | 0.65 | Retrain or deprioritize |
+| AAPL ridge_wf | FAIL | 1/6 | 0.10 | 25× overfitting; not salvageable |
+
+- **Critical finding**: Claimed OOS Sharpe 1.491 for AAPL lgbm_ho contradicted by walk-forward actual 0.649
+- **AAPL ridge_wf** shows textbook overfitting (IS 2.5 → OOS 0.1, WFE=0.038)
+- **Bugs fixed**: DSR calculation (was failing all models on G4), JSON serialization, feature registry mismatch
+- **Reports generated**: Full evaluation reports + JSON for all 4 models in `/reports/`
+- **Test suite**: 598 total (P1: 75 + P2: 523), all passing
+
+**Strategic Reset Fully Justified**: Gate 1 failed 3 checkpoints because the 67-session deployment was based on unvalidated synthetic-data models. Walk-forward backtesting exposed actual performance vs. claimed performance.
+
+**PHASE 3 — Deployment Assessment (COMPLETE ✅)**:
+- Created `docs/DEPLOYMENT_READINESS_ASSESSMENT_MAY_30.md` with 3 deployment options:
+  - **Option A: Conservative** — Deploy JPM only (1-session, ready today)
+  - **Option B: Moderate (RECOMMENDED)** — Deploy JPM + AMZN with G5 fix (2-session, JPM today + AMZN in 2-3h)
+  - **Option C: Aggressive** — Include AAPL retrain (3-session, weeks 2-3)
+- **Assessment includes**: Deployment timelines, effort estimates, paper trading requirements, user decision questions
+
+**IMMEDIATE NEXT STEPS (User Decision Required)**:
+- **Approve deployment**: Option A (JPM only), Option B (JPM + AMZN with fix), or Option C (AAPL retrain)?
+- **If approved**: Orchestrator will update Jetson config, rsync, docker restart same day
+- **Timeline**: JPM ready today. AMZN G5 fix (2-3h) makes it ready by May 31-June 1. AAPL retrain (20-40h) weeks 2-3.
+
+---
+
 ## Since Last Check-in (Session 2284 — Exploration Queue Activated)
 
 **Status orientation complete**: Verified all Session 2283 work is committed and working:
@@ -69,10 +116,42 @@
 - **Status**: User chooses Path A (minimum viable, 45-60 min) or Path B (full launch, 4.5–6 hours) by June 1 00:00 UTC. Either path ready immediately upon decision.
 - **Commit**: `c25c1db2`
 
+---
+
+## ⏰ CRITICAL DEADLINES & USER DECISIONS NEEDED
+
+### **May 31 23:59 UTC (IMMINENT — ~34 hours)**
+**Systems-resilience Phase 5 publication decisions**:
+- Which Phase 5 timing option? A (Wave 1 June 5-15, Wave 2 June 30) / B (Wave 1+2 June 15) / C (staggered)? **→ Recommend Option A**
+- Which Phase 6 first domain? A (USDA, 45-55K words) / C (trade policy) / D (other)? **→ Recommend Option A**
+- Files ready: PHASE_5_WAVE_1_OPTION_A_TIMELINE.md, PHASE_5_WAVE_1_OPTION_B_TIMELINE.md, coordination templates
+
+### **June 1 13:00-14:00 UTC (HARD WINDOW)**
+**Resistance-research Domain 39 distribution** (HHS rule issuance timing):
+- Fill ~12 placeholders (name, contact info, Gist URL) in email templates (~10-15 min)
+- Send 5 Tier 1 emails (Georgetown CCF → NHeLP → Brennan Center → IRG → BMMA) (~5 min)
+- **Action**: See "Since Last Check-in" for template locations and email addresses
+
+### **May 31 – June 3 (DECISION WINDOW)**
+**Stockbot deployment approval** (NEW — P2 validation complete):
+- Deploy JPM ridge_wf? (6/6 gates pass, deployment-ready today) **→ Yes**
+- Also deploy AMZN with G5 fix? (5/6 gates, 2-3h fix) **→ Recommend yes**
+- Retrain AAPL? (1-2 weeks) **→ Optional, later priority**
+- See `docs/DEPLOYMENT_READINESS_ASSESSMENT_MAY_30.md` for full analysis + 3 options
+
+### **June 1 (BINARY CHOICE)**
+**Seedwarden launch path**:
+- Path A: Minimum viable (Reddit + email + DMs, 45-60 min, ready now)
+- Path B: Full launch (+ social + Kit account, 4.5-6h, blocking items as of May 27)
+- See `LAUNCH_PATH_DECISION_GUIDE.md` for checklists + success metrics
+
+---
+
 **CRITICAL-PATH TIMELINE** (all unblocked, ready for execution):
-- **May 31 23:59 UTC**: Systems-resilience Phase 5 publication deadline (user decisions on timing Option A/B/C + Phase 6 domain A/C/D required)
-- **June 1 00:00–12:59 UTC**: Seedwarden path decision + launch execution (if Path A: 45-60 min minimum viable)
+- **May 31 23:59 UTC**: Systems-resilience Phase 5/6 user decisions (deadline ~34 hours)
+- **June 1 00:00–12:59 UTC**: Seedwarden path decision + launch execution (if Path A: 45-60 min)
 - **June 1 13:00–14:00 UTC**: Resistance-research Domain 39 send (5 emails, HHS rule timing window)
+- **June 1-3**: Stockbot deployment execution (if approved: Jetson config update + rsync same day)
 
 ## Since Last Check-in (Session 2282 — Diagnostic Agents Deployed)
 
