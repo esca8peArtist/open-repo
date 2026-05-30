@@ -1,25 +1,157 @@
-# 🎯 CURRENT STATUS — May 30, 2026 (CRITICAL DEADLINES IMMINENT)
+# 🎯 CURRENT STATUS — May 30, 2026 (CRITICAL FAILURES + 31-HOUR DEADLINE)
 
-> **Time**: May 30 17:02 UTC — session 2276 verification
-> **Usage**: Sonnet 9.2% (821,266 tokens) | All-models 8.3% | Reset in ~55h
-> **Session**: 2276 (447th consecutive verification — Pause directive honored, zero autonomous work, orchestrator idle)
+> **Time**: May 30 17:02 UTC — session 2277 (pause lifted, subagents deployed)
+> **Usage**: Sonnet ~9.5% | All-models ~8.5% | Reset in ~55h
+> **Session**: 2277 (448th session — Pause directive LIFTED via "Begin now" instruction. Parallel subagent post-delivery verification completed. THREE CRITICAL ITEMS NEED IMMEDIATE ACTION.)
 
-## 🚨 CRITICAL DEADLINES — ACTION REQUIRED
+## 🔴 CRITICAL ISSUES — IMMEDIATE ACTION REQUIRED
 
-**📌 May 31 23:59 UTC Final Publication Decisions (arriving in ~31.97 HOURS)**
+### **1. STOCKBOT — CRITICAL SYSTEM FAILURE (NOT READY FOR LIVE TRADING)**
+
+**Network Blocker**: Alpaca paper-api.alpaca.markets connectivity failure started ~May 29 17:19 UTC. 179+ consecutive timeouts, all 67 sessions in circuit breaker backoff. Engine health: `engine_initialized=false`.
+
+**Config Blocker**: Wrong configuration deployed. Still running 67-session mass-ticker config instead of the planned 4-session AAPL/AMZN/JPM config. Option A runbook Steps 4-6 (rsync active-sessions-4session.json with real UUIDs, rsync JPM ridge_wf pkl, docker restart) were NEVER executed.
+
+**Secondary Issues**:
+- **G3 FAIL**: AMZN/JPM stacker_ids in Jetson config still have `<UUID placeholder>` instead of real UUIDs
+- **G2 WARNING**: JPM ridge_wf pkl (1,435 bytes) is 30x smaller than expected (~45 KB), needs validation before deployment
+
+**Action Required**:
+1. Test network path to Alpaca: `ssh awank@100.120.18.84 'curl -s https://paper-api.alpaca.markets/v2/clock'`
+   - If hangs: network is broken, must restore before any session can function
+   - If succeeds: API is reachable, proceed to Step 2
+2. Execute Option A runbook Steps 4-6:
+   - Rsync active-sessions-4session.json (with real AMZN UUID `97934980-96ad-4389-8a74-5ce8c06c4c7f` + JPM UUID `868f378c-1ace-4aab-a258-725c385b1325` populated)
+   - Rsync JPM ridge_wf pkl from Pi to Jetson
+   - `docker compose restart` to activate new config
+3. Validate JPM pkl with Step 2 validation script from Option A runbook
+
+**Impact**: Blocks all Phase 2 deployment (AMZN/JPM activation). System cannot trade until both network and config issues resolved.
+
+---
+
+### **2. RESISTANCE-RESEARCH — READY TO EXECUTE (95% COMPLETE)**
+
+**Domain 39 Staging Status**: VERIFIED COMPLETE ✅
+
+- Email templates: 3 category-specific + 5 individual Tier 1 drafts ✓
+- Contact list: 18 verified (Georgetown CCF, NHeLP, Brennan Center, BMMA, etc.) ✓
+- Gist: LIVE & accessible (`https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b`) ✓
+- Monitoring framework: 72-hour response thresholds documented ✓
+
+**User Action Required** (~35-42 minutes):
+1. Fill 12 placeholder fields in email templates:
+   - `[YOUR_NAME]` (6 instances)
+   - `[YOUR_CONTACT_INFO]` (6 instances)
+   - `[GIST_URL]` → paste `https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b` (5 instances)
+   - Organization-specific fields per contact (`[CONTACT_FIRST_NAME]`, `[ORGANIZATION_NAME]`, `[ORGANIZATION_SPECIFIC_SENTENCE]`)
+2. Verify Georgetown CCF email: Use `childhealth@georgetown.edu` (NOT `ccf@georgetown.edu` — the Session 2096 verification log has a discrepancy)
+3. Send 5 Tier 1 emails; log each in the Send Log table in `DOMAIN_39_JUNE1_PRE_PRODUCTION_CHECKLIST.md`
+
+**Send Window**: **June 1 13:00-14:00 UTC** (HHS interim final rule issuance timing). This is a hard deadline.
+
+**Blockers**: NONE. All infrastructure is production-ready.
+
+**Relevant Files**:
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/DOMAIN_39_JUNE1_PRE_PRODUCTION_CHECKLIST.md` (five ready-to-send drafts + send log)
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/execution/domain-39-email-templates.md` (three segment templates)
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/execution/domain-39-contact-list.md` (18 contacts, Tier 1 addresses)
+
+---
+
+### **3. SEEDWARDEN — LAUNCH WINDOW CLOSED, NOT EXECUTED (PENDING USER CONFIRMATION)**
+
+**May 30 08:00-10:15 UTC Launch Window**: PASSED with ZERO execution detected.
+
+- No launch-execution-log found
+- No metrics updates
+- Last project file write: May 27 19:14 UTC
+- All monitoring templates remain unfilled (template data, not live data)
+
+**Pre-Launch Staging Status** (as of May 27): COMPLETE ✅
+- 8 zone PDFs verified live ✓
+- 15 herbalist influencers with contact methods ✓
+- Email/social templates complete (0 placeholders) ✓
+- 7 contingency playbooks documented ✓
+- Day 3/7/14 checkpoint monitoring frameworks ✓
+
+**Outstanding User Gates** (as of May 27):
+- Social accounts (Instagram, TikTok, Pinterest) — status unknown
+- Canva Brand Kit configured — deadline was May 24
+- Kit email + automation — deadline was May 27-28
+- Landing page + bio links — part of above
+- Buffer/Later for social — part of above
+
+**Minimum Viable Launch**: Can still proceed WITHOUT social/Kit automation using Gist distribution (Reddit DM + manual emails). Gist is live and publicly accessible. All email templates ready.
+
+**User Action Required**:
+1. **Confirm**: Did ANY outreach happen on May 30? (Email to contacts, Reddit post on r/herbalism, Instagram/TikTok post, DMs)
+   - If YES: Log Gist view count now as baseline; begin Day 3 checkpoint monitoring from that date
+   - If NO: Execute launch using `MAY_30_LAUNCH_DAY_RUNBOOK.md` (all assets staged, ready to go now)
+
+**Relevant Files**:
+- `/home/awank/dev/SuperClaude_Framework/projects/seedwarden/MAY_30_LAUNCH_DAY_RUNBOOK.md` (hour-by-hour operator guide, self-contained)
+- `/home/awank/dev/SuperClaude_Framework/projects/seedwarden/TRACK_B_LAUNCH_MONITORING_CHECKPOINTS.md` (Day 3/7/14 metric templates)
+- `/home/awank/dev/SuperClaude_Framework/projects/seedwarden/CONTINGENCY_DECISION_PLAYBOOK.md` (7 contingency scenarios)
+
+---
+
+## 🚨 CRITICAL DEADLINES — ALSO STILL IMMINENT
+
+**📌 May 31 23:59 UTC Final Publication Decisions (~31 HOURS REMAINING)**
 - **Phase 5 publication timing**: Option A (recommended: Wave 1 June 5-15, Wave 2 June 30) / Option B / Option C
 - **Phase 6 first-domain selection**: Option A (45-55K words, USDA urgency, recommended) / Option C / Option D
 - **Material**: Full analysis in `projects/systems-resilience/phase-5-decision-support-memo.md`
-- **Action required by**: May 31 23:59 UTC (31.97 hours remaining)
-- **Activation**: June 1 06:00 UTC once user decides
+- **Action required by**: May 31 23:59 UTC
+- **Activation**: June 1 06:00 UTC once you decide
+
+---
 
 ## Needs Your Input
 
-**`/resume` signal (May 29 19:35) — URGENT CLARIFICATION NEEDED**
-- **Context**: Signal logged but meaning unclear.
-- **Needed**: Clarification — does this mean (A) unpause orchestrator, or (B) reactivate resume project?
-- **Impact**: (A) triggers June 1+ activation of Exploration Queue items; (B) reactivates resume as separate project.
-- **Status**: Awaiting your reply in Discord or INBOX.
+**Three parallel action streams, all time-sensitive:**
+
+1. **STOCKBOT (today)**: Diagnose Alpaca network path + deploy 4-session config (Steps 4-6 of Option A runbook)
+2. **RESISTANCE-RESEARCH (today, before 13:00 UTC June 1)**: Fill placeholders + send 5 Tier 1 emails
+3. **SEEDWARDEN (today)**: Confirm whether May 30 outreach happened; if not, execute launch via runbook
+4. **SYSTEMS-RESILIENCE (May 31 23:59 UTC)**: Decide Phase 5 timing (A/B/C) + Phase 6 first-domain (A/C/D)
+
+---
+
+## Since Last Check-in (Session 2277, May 30 17:02 UTC) — ✅ FOUR-HUNDRED-FORTY-EIGHTH SESSION | **PAUSE DIRECTIVE LIFTED → PARALLEL SUBAGENT DEPLOYMENT → THREE CRITICAL FINDINGS** | 🔴 **CRITICAL: (1) STOCKBOT SYSTEM FAILURE (Alpaca connectivity + config blocker), (2) RESISTANCE-RESEARCH READY FOR JUNE 1 EXECUTION, (3) SEEDWARDEN LAUNCH DID NOT EXECUTE (pending user confirmation), (4) SYSTEMS-RESILIENCE DEADLINE 31 HOURS**
+
+**Session Summary**: User instruction "Begin now. Orient, then spawn parallel subagents for the top 2–3 unblocked projects" effectively lifted pause directive from Session 1770 (May 27 23:15 UTC). Spawned three concurrent post-delivery verification subagents: (1) **stockbot** deployment audit, (2) **resistance-research** Domain 39 staging verification, (3) **seedwarden** Track B launch execution check. **CRITICAL FINDINGS RETURNED**:
+
+1. **STOCKBOT — CRITICAL SYSTEM FAILURE (NOT READY FOR LIVE TRADING)**
+   - Alpaca paper-api.alpaca.markets connectivity failure since ~May 29 17:19 UTC
+   - 179+ consecutive timeouts, all 67 sessions in circuit breaker backoff
+   - Engine health: `engine_initialized=false`
+   - **CRITICAL BLOCKER 1 (Network)**: Curl to Alpaca API hangs — network path is broken
+   - **CRITICAL BLOCKER 2 (Config)**: Wrong configuration deployed — still running 67-session mass-ticker config instead of 4-session AAPL/AMZN/JPM. Option A runbook Steps 4-6 never executed
+   - **Secondary**: G3 FAIL (AMZN/JPM stacker_ids are placeholders), G2 WARNING (JPM ridge_wf pkl at 1,435 bytes is 30x smaller than expected)
+   - **User action**: (1) Test network path with `ssh awank@100.120.18.84 'curl -s https://paper-api.alpaca.markets/v2/clock'`. (2) If reachable: execute Option A runbook Steps 4-6 (rsync config with real UUIDs, rsync JPM pkl, docker restart). (3) Validate JPM pkl before live trading.
+
+2. **RESISTANCE-RESEARCH — GO FOR EXECUTION (95% COMPLETE)**
+   - Domain 39 staging: VERIFIED COMPLETE ✅
+   - Email templates (3 category + 5 Tier 1 drafts), contact list (18 verified), Gist (live), monitoring framework (documented)
+   - **User action** (~35-42 min): Fill 12 placeholder fields (name, contact info, Gist URL, org-specific) + send 5 Tier 1 emails
+   - **Send window**: June 1 13:00-14:00 UTC (HHS rule issuance) — HARD DEADLINE
+   - **Blockers**: NONE. One minor discrepancy: Georgetown CCF email address (use `childhealth@georgetown.edu` not `ccf@georgetown.edu`)
+
+3. **SEEDWARDEN — LAUNCH DID NOT EXECUTE (PENDING USER CONFIRMATION)**
+   - May 30 08:00-10:15 UTC launch window: PASSED with ZERO execution detected
+   - No launch-execution-log, no metrics updates, last file write May 27 19:14 UTC
+   - Pre-launch staging complete: 8 PDFs verified, 15 influencers, templates ready, 7 contingency playbooks
+   - Outstanding user gates (as of May 27): Social accounts (status unknown), Canva Brand Kit (deadline May 24), Kit email + automation (deadline May 27-28), landing page + bio links, Buffer/Later
+   - **Minimum viable launch**: Can proceed WITHOUT social/Kit automation via Gist distribution (Reddit DM + manual emails). All assets ready.
+   - **User action**: Confirm whether ANY outreach happened May 30. If no: execute launch via `MAY_30_LAUNCH_DAY_RUNBOOK.md`
+
+**CRITICAL-PATH TIMELINE**:
+- **TODAY (May 30)**: Stockbot diagnostics + resistance-research placeholder fill + seedwarden launch confirmation
+- **June 1 13:00 UTC**: Resistance-research 5-email send (hard deadline — HHS rule issuance)
+- **May 31 23:59 UTC**: Systems-resilience Phase 5 publication decision (Option A/B/C timing + Phase 6 domain A/C/D)
+
+**WORKLOG.md** updated with Session 2277 findings. **BLOCKED.md** updated with new stockbot Alpaca connectivity block. **CHECKIN.md** restructured to highlight three parallel action streams. All orchestration files prepared for commit on master.
 
 ---
 
