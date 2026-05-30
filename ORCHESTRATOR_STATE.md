@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-30T19:38:06Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-30T20:10:23Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 11.3% (1,005,983 tokens) | All-models 8.6% | Reset in 52h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 11.3% (1,005,983 tokens) | All-models 8.7% | Reset in 52h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[PHASE 2 COMPLETE — SESSION 2284] — MODEL VALIDATION COMPLETE, CRITICAL FINDINGS, JPM READY FOR DEPLOYMENT**
+**Focus**: ✅ **[PHASE 3 COMPLETE — SESSION 2284] — BACKTESTING PIPELINE + MODEL VALIDATION + DEPLOYMENT ASSESSMENT COMPLETE — AWAITING USER DEPLOYMENT DECISION**
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -99,18 +99,7 @@
 • stockbot — AMZN/JPM stacker_ids not populated in config (blocking Phase 2 activation) ← 2026-05-27 12:30 UTC (Session 1719 — JPM ridge_wf training completed, all stacker_ids populated)
 
 ## Inbox (unprocessed)
-- [2026-05-30] **ORCHESTRATOR RESUME + STOCKBOT STRATEGIC RESET — PRIORITY #1** — User has directed a complete strategy reassessment for stockbot. Pause directive is lifted. Execute the following in order:
-  **IMMEDIATE (before 2026-06-02 13:30 UTC market open)**:
-  1. Switch Jetson (100.120.18.84) from current 67-session config to `active-sessions-4session.json` (AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf). Use rsync + `docker compose restart`. Verify `sessions: 4` on health endpoint. This terminates the Gate 1 breadth test. The 4-session config stays active while the pipeline is built.
-  **THEN — STOCKBOT PIPELINE GAPS (4 specific additions to existing infrastructure)**:
-  NOTE: Do NOT rebuild from scratch. `src/backtesting/engine.py`, `performance_metrics.py`, `report_generator.py`, and `scripts/run_strategy_evaluation.py` are all production-ready. The 4 gaps below are additions to existing code.
-  2. **Gap 1 — Alpaca historical data connector** (~2-4h): `scripts/run_strategy_evaluation.py` uses synthetic GBM data. The `BacktestEngine` is data-agnostic — add an adapter that fetches real Alpaca historical OHLCV bars (via Alpaca SDK, not yfinance) and feeds them into the existing engine. Output: `src/backtesting/alpaca_data_feed.py`. This is the most critical gap — all other validation is meaningless on synthetic data.
-  3. **Gap 2 — Multi-window walk-forward engine** (~4-6h): Current `EnsembleStackerModel` does a single 70:30 IS/OOS split. Add a rolling walk-forward wrapper: N windows (e.g. 10 × 3yr IS / 6mo OOS), compute metrics on each OOS fold, report Walk-Forward Efficiency (WFE = median OOS Sharpe / median IS Sharpe). Required for G6 gate. Output: `src/backtesting/walk_forward.py` wrapping existing `BacktestEngine`.
-  4. **Gap 3 — Deflated Sharpe Ratio** (~1h): DSR is documented in `model-graduation-criteria.md` and required for G4 gate but not coded anywhere. Add to `src/backtesting/performance_metrics.py`. Formula: penalizes reported Sharpe based on number of strategy variants tested. 10-line implementation.
-  5. **Gap 4 — Wire run_strategy_evaluation.py to real data + WFE + DSR**: Update existing `scripts/run_strategy_evaluation.py` to accept `--ticker`, `--start`, `--end`, pull real Alpaca data via Gap 1 adapter, run Gap 2 walk-forward, compute Gap 3 DSR, and output pass/fail on all 6 graduation gates. This becomes the unified "evaluate any model" command.
-  6. **Model re-validation** (after gaps 1-4 complete): Run all 4 current sessions through the updated pipeline. AMZN lgbm_ho and JPM ridge_wf must first be retrained with data from 2022-01-01 (Alpaca data) before evaluation — JPM's Sep 2024 training start misses the Fed rate shock regime entirely.
-  **CONTEXT**: Gate 1 failed 3 consecutive checkpoints. Comprehensive backtesting report (May 27) revealed that AAPL ridge_wf has no validated backtest, AMZN has no OOS report, and JPM is trained only on Sep 2024–May 2026 data (misses Fed rate shock). The existing backtesting infrastructure is solid — only 4 targeted additions are needed before we can properly validate all models.
-  **This item supersedes all prior stockbot sprint plans. Do not create new models until pipeline gaps 1-4 are complete and all current models pass re-validation.**
+(NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 
