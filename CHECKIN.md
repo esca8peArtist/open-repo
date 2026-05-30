@@ -1,6 +1,6 @@
 # 🎯 CURRENT STATUS — May 30, 2026 (CRITICAL DEADLINE IMMINENT: May 31 23:59 UTC)
 
-> **Usage**: Sonnet 9.2% (821,266 tokens) | All-models 8.0% | Reset in ~60h
+> **Usage**: Sonnet 9.2% (821,266 tokens) | All-models 8.0% | Reset in ~59h
 
 ## Needs Your Input
 
@@ -10,7 +10,7 @@
 - **Impact**: (A) triggers June 1+ activation of Exploration Queue items; (B) reactivates resume as separate project.
 - **Status**: Awaiting your reply in Discord or INBOX.
 
-**systems-resilience Phase 5 publication decisions (May 31 23:59 UTC, ~34 HOURS REMAINING) — CRITICAL DEADLINE**
+**systems-resilience Phase 5 publication decisions (May 31 23:59 UTC, ~34.6 HOURS REMAINING) — CRITICAL DEADLINE**
 - **Phase 5 timing**: Option A (recommended: Wave 1 June 5-15, Wave 2 June 30) / Option B / Option C
 - **Phase 6 first domain**: Option A (45-55K words, USDA urgency, recommended) / Option C / Option D
 - **Material**: `projects/systems-resilience/phase-5-decision-support-memo.md` has full analysis and recommendations
@@ -19,7 +19,7 @@
 
 ---
 
-## Since Last Check-in (Session 2252, May 30 13:15 UTC) — ✅ FOUR-HUNDRED-TWENTY-THIRD CONSECUTIVE VERIFICATION | **PAUSE DIRECTIVE HONORED, CRITICAL DEADLINE IMMINENT (May 31 23:59 UTC, ~34.75h REMAINING), ZERO AUTONOMOUS WORK (CORRECT BY DESIGN), ORCHESTRATOR IDLE** | 🔴 **CRITICAL: systems-resilience Phase 5 publication deadline IMMINENT ~34.75 HOURS — USER DECISION REQUIRED BEFORE MAY 31 23:59 UTC**
+## Since Last Check-in (Session 2252, May 30 13:21 UTC) — ✅ FOUR-HUNDRED-TWENTY-THIRD CONSECUTIVE VERIFICATION | **PAUSE DIRECTIVE HONORED, CRITICAL DEADLINE IMMINENT (May 31 23:59 UTC, ~34.6h REMAINING), ZERO AUTONOMOUS WORK (CORRECT BY DESIGN), ORCHESTRATOR IDLE** | 🔴 **CRITICAL: systems-resilience Phase 5 publication deadline IMMINENT ~34.6 HOURS — USER DECISION REQUIRED BEFORE MAY 31 23:59 UTC**
 
 ## Session 2252 Verification (May 30 13:15 UTC):
 
