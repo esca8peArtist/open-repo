@@ -655,6 +655,37 @@
 - **Commit**: `06d35672` (May 27 17:15 UTC)
 - **Status**: PRODUCTION-READY. User can review May 27-30 and finalize decisions by May 31 23:59 UTC.
 
+## Queued for Next Session (June 1+)
+
+### 52. ⏳ mfg-farm — Phase 2 Supplier Outreach Pre-Staging (May 31+)
+**Scope**: Test print outcome (PASS/FAIL/PENDING) determines launch timing, but does not block Phase 2 supplier outreach work (June 3-15 launch target). Pre-stage detailed supplier RFQs, MOQ analysis, lead-time documentation, and pricing negotiation frameworks so May 30-June 1 test print results don't delay June 3 Phase 2 start.
+- **Deliverables**: 
+  - `PHASE_2_SUPPLIER_RFQ_TEMPLATES.md` (supplier contact info, MOQ analysis for Bambu Lab, Polymaker, alternatives)
+  - `PHASE_2_PRICING_NEGOTIATION_PLAYBOOK.md` (wholesale discount tiers, bulk pricing, lead-time trade-offs)
+  - `PHASE_2_CAPITAL_ALLOCATION_TIMELINE.md` (trademark filing, equipment purchases, working capital, June 3 funding decision)
+- **Owner**: mfg-farm subagent
+- **Deadline**: May 31 (ready for June 3 Phase 2 execution regardless of test print outcome)
+
+### 53. ⏳ seedwarden — Phase 4 Botanical Content & Practitioner Tier Architecture (June 1-14)
+**Scope**: Phase 3 launches June 22 (any scope option A/B/C), completes July 13. Phase 4 (botanical guides + practitioner tiers + international traditions) can be scoped now independently of Phase 3 decision. Pre-stage comprehensive Phase 4 content framework so July 13-Aug 1 transition is seamless.
+- **Deliverables**: 
+  - `PHASE_4_BOTANICAL_IDENTIFICATION_GUIDE_ROADMAP.md` (15-20 identification guides, habitat + harvesting protocols, international sourcing)
+  - `PHASE_4_PRACTITIONER_TIER_PROGRESSION.md` (RH/ND/clinical specialist pathways, credential verification, tier-specific content access)
+  - `PHASE_4_INTERNATIONAL_TRADITIONS_SOURCING.md` (European monographs, Ayurvedic Materia Medica, TCM classics, integration points)
+- **Owner**: seedwarden subagent
+- **Deadline**: June 14 (ready for Phase 3 completion July 13 → Phase 4 launch Aug 1)
+
+### 54. ⏳ systems-resilience — Phase 6 Alternate Domain Deep-Dive & Combination Analysis (June 1-15)
+**Scope**: User decision deadline May 31 (Phase 6 domains A/C/D recommended). But what if user selects different combinations? Pre-stage deep-research on Domains B, E, F and analyze alternate combinations (A+B+E, B+C+D, etc.) so June 1 Phase 6 activation can accommodate any user choice without delay.
+- **Deliverables**: 
+  - `PHASE_6_DOMAINS_B_E_F_RESEARCH_OUTLINES.md` (50+ sources per domain, feasibility assessment, cross-integration analysis, 10-week research estimates)
+  - `PHASE_6_ALTERNATE_COMBINATION_SCORING.md` (A+B+E, B+C+D, B+D+E, solo-domain options; parallel vs. sequential timing; risk profiles)
+  - `PHASE_6_DOMAIN_SELECTION_CONTINGENCY_ROADMAP.md` (June 1 activation runbooks for all 6 possible combinations; author onboarding variations)
+- **Owner**: general-research subagent
+- **Deadline**: June 15 (ready for June 1 user domain decision → immediate activation)
+
+---
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
