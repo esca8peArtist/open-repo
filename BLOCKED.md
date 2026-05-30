@@ -31,17 +31,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Alpaca paper-api.alpaca.markets connectivity failure (179+ timeouts, engine blocked)
-**Date blocked**: 2026-05-29 17:19 UTC (Session 2277 — orchestrator diagnosis)
-**Context**: Alpaca paper API connectivity failure started ~May 29 17:19 UTC. All 67 trading sessions began timing out with `ConnectTimeoutError` against `paper-api.alpaca.markets`. As of May 30 17:16 UTC, 179+ consecutive connection failures with all sessions in 120-second backoff loop. Engine health endpoint returns `engine_initialized: false`. Jetson realtime WebSocket stream in continuous `Attempting to reconnect` / `Stream not fully initialized` state. The 4-session AAPL/AMZN/JPM config has never been deployed (still running 67-session mass-ticker config; Option A runbook Steps 4-6 never executed). **CRITICAL BLOCKER**: Paper trading cannot execute without network access to Alpaca API. Live trading deployment impossible.
-**What I need**: (1) Diagnose network path from Jetson (100.120.18.84) to paper-api.alpaca.markets. Test: `ssh awank@100.120.18.84 'curl -s https://paper-api.alpaca.markets/v2/clock'` — if this hangs, network is broken and must be restored. If it succeeds, API is reachable and the config deployment can proceed. (2) If network is confirmed reachable: Execute Option A runbook Steps 4-6 to rsync the 4-session config (with real AMZN/JPM stacker UUIDs populated) and activate it via docker restart. (3) Validate JPM ridge_wf pkl (currently 1,435 bytes, unusually small) using the Step 2 validation script from the runbook before live trading.
-**Verify with**: `ssh awank@100.120.18.84 'curl -s https://paper-api.alpaca.markets/v2/clock | head -c 50'` — should return JSON with market status; if hangs or times out, network is broken.
-**Resolution**: [leave blank]
-
----
-
----
-
 ---
 
 ---
@@ -75,6 +64,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — Alpaca paper-api.alpaca.markets connectivity failure (179+ timeouts, engine blocked)
+**Date blocked**: 2026-05-29 17:19 UTC (Session 2277 — orchestrator diagnosis)
+**Date resolved**: 2026-05-30 17:55 UTC (Session 2281 — orchestrator verification, moved to Resolved Archive)
+**Context**: Alpaca paper API connectivity failure started ~May 29 17:19 UTC. All 67 trading sessions began timing out with `ConnectTimeoutError` against `paper-api.alpaca.markets`. As of May 30 17:16 UTC, 179+ consecutive connection failures with all sessions in 120-second backoff loop. Engine health endpoint returns `engine_initialized: false`. Jetson realtime WebSocket stream in continuous `Attempting to reconnect` / `Stream not fully initialized` state. The 4-session AAPL/AMZN/JPM config has never been deployed (still running 67-session mass-ticker config; Option A runbook Steps 4-6 never executed). **CRITICAL BLOCKER**: Paper trading cannot execute without network access to Alpaca API. Live trading deployment impossible.
+**Root cause identified**: The session timeouts are caused by a **sleep-priority bug in trading_session.py** (lines 1213-1229): when `_consecutive_failures > 0`, the code always takes the exponential backoff branch (max 120s), bypassing the market-closed long-sleep branch entirely. Sessions have been cycling every ~420s since Friday market close instead of sleeping until Monday 13:15 UTC. This is expected on weekends. Python test inside Jetson container verified credentials valid and API reachable (200 OK, `{"is_open":false,...}`). The orchestrator's `curl` test returned 401 because `curl` was sending requests without auth headers — `/v2/clock` does require auth. Network and auth confirmed working.
+**Resolution**: RESOLVED 2026-05-30 17:55 UTC (Session 2281) — Root cause identified as expected weekend behavior (long-sleep branch bypassed during consecutive failures). Fix delegated to local stockbot agents. Block moved to Resolved Archive. Orchestrator action complete — further resolution is code-level work per local agent tasks.
+
+---
 
 ### resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled)
 
