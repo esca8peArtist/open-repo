@@ -1,0 +1,13 @@
+# Phase 1 Adoption Tracking Script Dependencies
+# Install via: pip install -r phase-1-adoption-tracking-requirements.txt
+
+# Core dependencies
+requests>=2.31.0          # HTTP requests (GitHub/Gmail APIs)
+google-auth>=2.25.0       # Google authentication
+gspread>=5.10.0          # Google Sheets integration
+google-auth-httplib2>=0.2.0
+google-auth-oauthlib>=1.0.0
+
+# Optional but recommended
+python-dateutil>=2.8.2    # Date/time utilities
+pytz>=2023.3              # Timezone support

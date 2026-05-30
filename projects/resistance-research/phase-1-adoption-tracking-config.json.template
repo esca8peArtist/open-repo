@@ -1,0 +1,23 @@
+{
+  "github_token": "YOUR_GITHUB_PERSONAL_ACCESS_TOKEN",
+  "github_username": "YOUR_GITHUB_USERNAME",
+  "gmail_credentials": "/path/to/gmail-oauth-credentials.json",
+  "sheets_credentials": "/path/to/google-sheets-service-account.json",
+  "spreadsheet_id": "YOUR_GOOGLE_SHEETS_DOCUMENT_ID",
+  "canonical_gists": {
+    "full_proposal": "2dec7fd03b08ab5b41c55d402f44c261",
+    "executive_summary": "2869da6eaeb15a47246ade3bbbc4a3f4",
+    "litigation_tracker": "418d51bda087f15a04d685ab171a5ee0",
+    "first_amendment": "10d0a86e386e6c3c11c3830295a6503c",
+    "environmental_rollbacks": "87e2bdb931b77480e56a08044c567bc4",
+    "police_consent_decrees": "1f5cb28527c98d12526c14302c725731"
+  },
+  "monitoring": {
+    "email_lookback_hours": 168,
+    "citation_log_enabled": true,
+    "google_alerts_enabled": false,
+    "scholar_alerts_enabled": false,
+    "courtlistener_enabled": false,
+    "legiscan_enabled": false
+  }
+}
