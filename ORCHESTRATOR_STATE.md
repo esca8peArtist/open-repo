@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-30T20:10:23Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-30T21:32:25Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 11.3% (1,005,983 tokens) | All-models 8.7% | Reset in 52h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 11.3% (1,005,983 tokens) | All-models 8.8% | Reset in 50h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -41,7 +41,7 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: ✅ **[RESOLVED] Phase 5.1–5.2 WAVE 1 COMPLETE** — ZimWriter export pipeline + OPDS feed generator production-ready (318/318 tests passing, all pre-deployment verification passed). Wave 2 (A11y audit, 4–14h) queued for June 1–6. Kiwix integration + load testing pending user Phase 5 priority direction. June 12 deployment target.
+**Focus**: ✅ **[RESOLVED] PHASE 5.1–5.2 WAVE 1 COMPLETE + WAVE 2 EXECUTION RUNBOOK READY** — ZimWriter export pipeline + OPDS feed generator production-ready (318/318 tests passing, all pre-deployment verification passed). **Wave 2 A11y Audit execution runbook complete** (PHASE_5_WAVE_2_A11Y_EXECUTION_RUNBOOK.md, commit 400c9c4a): 6-day plan June 1–6 with dependency setup, automated scanning (June 1), manual keyboard+screen reader testing (June 2–3), findings consolidation (June 4), P0/P1 fixes + … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
