@@ -1,7 +1,22 @@
-# 🎯 CURRENT STATUS — May 30, 2026 (CRITICAL DEADLINE IMMINENT: May 31 23:59 UTC ~32.6h)
+# 🎯 CURRENT STATUS — May 30, 2026 (CRITICAL DEADLINES IMMINENT)
 
-> **Usage**: Sonnet 9.2% (821,266 tokens) | All-models 8.1% | Reset in ~57h
-> **Session**: 2264 (435th consecutive verification — Pause directive honored, zero autonomous work, orchestrator idle)
+> **Time**: May 30 15:41 UTC
+> **Usage**: Sonnet 9.2% (821,266 tokens) | All-models 8.1% | Reset in ~56h
+> **Session**: 2266+ (437th+ consecutive verification — Pause directive honored, zero autonomous work, orchestrator idle)
+
+## 🚨 CRITICAL DEADLINES — ACTION REQUIRED
+
+**📌 May 30 16:00 UTC Author Confirmation Deadline (arriving in ~19 MINUTES)**
+- **systems-resilience Phase 5 timing author confirmation** (preliminary decision gate before May 31 final decision)
+- **Contact**: Author confirmation window 14:00-16:00 UTC May 30
+- **Status**: PENDING — requires user confirmation of publication timing preference (Option A/B/C, recommended A)
+
+**📌 May 31 23:59 UTC Final Publication Decisions (arriving in ~32.3 HOURS)**
+- **Phase 5 publication timing**: Option A (recommended: Wave 1 June 5-15, Wave 2 June 30) / Option B / Option C
+- **Phase 6 first-domain selection**: Option A (45-55K words, USDA urgency, recommended) / Option C / Option D
+- **Material**: Full analysis in `projects/systems-resilience/phase-5-decision-support-memo.md`
+- **Action required by**: May 31 23:59 UTC (32.3 hours remaining)
+- **Activation**: June 1 06:00 UTC once user decides
 
 ## Needs Your Input
 
@@ -10,13 +25,6 @@
 - **Needed**: Clarification — does this mean (A) unpause orchestrator, or (B) reactivate resume project?
 - **Impact**: (A) triggers June 1+ activation of Exploration Queue items; (B) reactivates resume as separate project.
 - **Status**: Awaiting your reply in Discord or INBOX.
-
-**systems-resilience Phase 5 publication decisions (May 31 23:59 UTC, ~32.6 HOURS REMAINING) — CRITICAL DEADLINE**
-- **Phase 5 timing**: Option A (recommended: Wave 1 June 5-15, Wave 2 June 30) / Option B / Option C
-- **Phase 6 first domain**: Option A (45-55K words, USDA urgency, recommended) / Option C / Option D
-- **Material**: `projects/systems-resilience/phase-5-decision-support-memo.md` has full analysis and recommendations
-- **Action required by**: May 31 23:59 UTC (fewer than 32.6 hours)
-- **Activation**: June 1 06:00 UTC once user decides
 
 ---
 
