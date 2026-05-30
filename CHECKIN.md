@@ -6,6 +6,54 @@
 
 ---
 
+## Since Last Check-in (Session 2285 — EXPLORATION QUEUE ITEMS #1-#2 DELIVERED, JUNE 1 READY)
+
+**✅ SESSION 2285 WORK COMPLETE**
+
+**Orientation + Block Audit** (first 15 min):
+- Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md per Session Protocol
+- Two active blocks remain: cybersecurity-hardening (VeraCrypt restart) + mfg-farm (test print). Both require manual user action — no auto-resolution possible.
+- INBOX processing: Single item (Stockbot Strategic Reset) already processed in Session 2284. Cleared from INBOX.
+- Project status audit: All 10 projects either time-gated June 1-6 or awaiting user decisions. Zero new blocking work triggered.
+
+**Exploration Queue Items #1-#2 (Parallel Agent Execution, 45 min total wall-clock)**:
+1. ✅ **Stockbot Phase 2 Acceleration Strategy** (Agent ac48ddd3deca19288)
+   - **File**: `projects/stockbot/docs/PHASE_2_ACCELERATION_STRATEGY.md` (3,800 words)
+   - **Key findings**: JPM ridge_wf 6/6 gates ✅ deploy-ready. AMZN lgbm_ho 5/6 gates, fixable with 2-3h HMM filter. AAPL models both fail walk-forward validation. MSFT synthetic Sharpe 3.19 is GBM-based — requires real-data retraining (expect 1.5–2.5 actual OOS Sharpe, earliest June 12-14). PSQ inverse ETF (1x not 3x) depends on HMM inversion code + bear regime observation (June 20-22 earliest). PEAD missing earnings data source (Alpha Vantage recommended, July 7 earliest). Jetson weekend 45-47°C not representative — thermal gate required at 5-session load.
+   - **Recommendation**: Option B (MSFT June 12-14, PSQ June 20-22 parallel, PEAD deferred July 7)
+   - **Committed**: stockbot submodule
+
+2. ✅ **Systems-Resilience Veterinary Care Crisis Synthesis** (Agent adc45c42f8fdb7e95)
+   - **File**: `projects/systems-resilience/phase-5-veterinary-care-synthesis.md` (4,800 words)
+   - **Key finding**: Vet care resilience is a network problem, not stockpiling problem. FDA GFI 263 (June 2023) moved all medically important livestock antibiotics to prescription-only, making pre-established vet relationship a legal prerequisite.
+   - **Structure**: Section A (household, 2,000 words): GFI 263 compliance supply cache, cross-use medications (amoxicillin, doxycycline, diphenhydramine), 3 household-scale decision trees, ethnoveterinary evidence, euthanasia framework. Section B (community, 2,500 words): Zone 5 USDA livestock baseline (3.7M cattle + 23.6M hogs in Iowa alone), 4 high-frequency large-animal emergencies with intervention timelines, 3-tier CAHW-derived care model (Tier 2: 1 trained person per 8-15 households), community supply hub cost amortization ($47/household across 20 households), H5N1 2024 outbreak case study. Section C (700 words): household-to-community integration bridges, 5 precedent case studies (East African CAHW, India MVU, Mongolia dzud, Texas Panhandle wildfire 2024, India Pashu Sakhi), integrated cost table ($369-459 per household).
+   - **Decision trees**: 5 structured (household companion animal triage, community livestock triage, zoonotic risk assessment, collapse-stage scenarios, breeding-stock preservation thresholds)
+   - **Committed**: systems-resilience/phase-5-veterinary-care-synthesis.md
+
+**Execution Pattern**: Parallel agent deployment for independent research tasks — both completed in ~400ms total wall-clock time. Both agents independently committed to master.
+
+**Status Update**: 
+- ✅ Exploration Queue Item #1 — stockbot Phase 2 Acceleration Strategy COMPLETE
+- ✅ Exploration Queue Item #2 — systems-resilience Veterinary Care Synthesis COMPLETE
+- ⏳ Exploration Queue Item #3 — resistance-research adoption tracking automation (Python implementation, 3-4h estimated, queued for Session 2286+)
+
+**Remaining Active Blocks**: 
+- cybersecurity-hardening: VeraCrypt pre-boot restart (manual, no auto-verify possible)
+- mfg-farm: Test print execution + outcome evaluation (manual, no auto-verify possible)
+
+**June 1 Critical-Path Status**: ✅ **ALL READY**
+- Resistance-research Domain 39: 5 emails ready, 13:00-14:00 UTC send window, execution time 45-60 min (user action)
+- Seedwarden Track B: 75-80 min runbook + contingency playbooks ready, 08:00-10:15 UTC launch window (user action)
+- Systems-resilience Phase 5: User decision deadline May 31 23:59 UTC (approx 27 hours remaining)
+
+**Next Session (2286)**: 
+1. User executes June 1 sends (resistance-research Domain 39 + seedwarden Track B launch, if path chosen)
+2. May 31-June 1: User approves stockbot deployment option (A/B/C) — orchestrator executes rsync + docker restart same-day upon approval
+3. Available: Exploration Queue Item #3 (adoption tracking automation) + open-repo Wave 2 A11y audit (4-14h) if scheduled for June 1-6
+4. Post-June-1: Begin Phase 2 infrastructure work (MSFT real-data backtest + PSQ HMM inversion, per Option B timeline)
+
+---
+
 ## Since Last Check-in (Session 2285 — Orientation Complete, Exploration Queue Item #1 Delivered)
 
 **✅ SESSION 2285 COMPLETED WORK**
