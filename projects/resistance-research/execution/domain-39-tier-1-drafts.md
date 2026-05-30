@@ -17,7 +17,7 @@ Five pre-drafted emails for the highest-priority Tier 1 contacts. Each is drawn 
 ---
 
 ## Draft 1: Georgetown Center for Children and Families
-**To**: Joan Alker <jalker@georgetown.edu> (verify current; CC: ccf@georgetown.edu as secondary)
+**To**: Joan Alker <childhealth@georgetown.edu> (CC: Catherine.Hope@Georgetown.edu — recommended)
 **Subject**: Domain 39 — democratic participation argument for your Medicaid work, June 1 HHS rule
 
 ---
@@ -75,7 +75,7 @@ The specific request: if NHeLP is developing pre-litigation documentation on wor
 ---
 
 ## Draft 3: Brennan Center for Justice
-**To**: brennancenter@nyu.edu (route to Democracy Program; check brennancenter.org/experts for Myrna Perez direct email)
+**To**: kennardl@brennan.law.nyu.edu (Voting Rights desk — correct entry point for NVRA arguments)
 **Subject**: Rural hospital closures suppress voter turnout — APSR 2025 finding your 2026 election protection work should have
 
 ---
