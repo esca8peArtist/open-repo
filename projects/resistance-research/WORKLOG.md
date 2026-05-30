@@ -2,6 +2,29 @@
 
 ---
 
+## May 30, 2026 — General Research Agent — Exploration Queue Item 26: Wave 2 Post-Domain-39 Execution Architecture (Domains 38/40)
+
+**Task**: Produce production-ready Wave 2 execution architecture for Domains 38 (AI Regulatory Capture) and 40 (Surveillance Capitalism/Electoral Manipulation) — ready to execute June 2-3 following Domain 39 June 1 launch, without waiting for response data. Five deliverables in `projects/resistance-research/phase-2-execution/`.
+
+**Most important findings and decisions embedded in the architecture**:
+1. **The send schedule is fixed regardless of Domain 39 response data**: Domain 38 Tier A June 15–20; Domain 40 Tier A June 18–22. The June 4 T+72h Domain 39 gate only determines Tier scope (Escalate/Planned/Reduce), not send dates. This eliminates the planning delay that would otherwise occur if Wave 2 decisions waited for Domain 39 T+72h data.
+2. **The 3-day Domain 38/40 stagger is load-bearing**: Three organizations (Brennan Center, ACLU, Protect Democracy) receive both Domain 38 and Domain 40 outreach. The 3–28 day gaps built into the send schedule prevent contact fatigue at these organizations while allowing both domains to execute in the same week.
+3. **Domain 40 timeline was compressed from July 15 to June 18**: The parent DOMAIN_40_CONTACT_STRATIFICATION.md specified July 15 as Tier A send date. The Wave 2 architecture compresses this to June 18 by creating the Domain 40 Gist June 15–17 (parallel to Domain 38 first sends). This gives election protection organizations 4.5 months before November 3 rather than 3.5 months.
+4. **Healthcare + surveillance co-messaging is the highest-leverage cross-domain opportunity**: The OBBBA creates Medicaid coverage losses → NVRA enrollment records change → DOJ voter file collection captures the change → commercial data brokers append behavioral data → AI-generated suppression targeting uses the resulting data. This supply chain connects Domain 39 and Domain 40 in a single pipeline. 15 pre-identified joint-eligible contacts receive a synthesis email July 1–10 if Gate 1 = ESCALATE.
+5. **All contingency thresholds are numeric**: "≥5 unique contacts = ESCALATE; 2–4 = PLANNED; <2 = REDUCE." The decision tree requires no judgment at execution time — only reading a response count and navigating to the matching row.
+6. **Parallel Gist creation is feasible in 25 minutes**: Both Domain 38 and Domain 40 Gists can be created simultaneously on June 13 (or Domain 38 June 12, Domain 40 June 15) with 10 minutes per Gist + verification. The Zone A/Zone D separation is explicit: only the Gist rendered URL crosses from internal planning to external distribution.
+
+**Files created** (all in `projects/resistance-research/phase-2-execution/`):
+- `domains-38-40-contact-stratification.md` — 3,200+ words. Complete Tier A/B/C/D contact lists for both domains with email addresses, send sequence, verification status, cross-domain stagger rules, and execution time estimate (6–8 hours combined Tier A). 146 unique contacts across both domains.
+- `domains-38-40-gist-creation-steps.md` — 2,100+ words. Parallel Gist creation workflow, condensed 10-step checklists for both Domain 38 and Domain 40, Zone A/Zone D separation framework, file naming convention, GitHub API automation notes for future use, three-Gist Wave 2 reference table.
+- `domain-38-execution-timeline.md` — 2,800+ words. EU AI Act Article 50 movement leverage analysis, 5-phase pre-staging + Tier A/B/C/D timeline, day-by-day UTC send schedule (June 12–August 2), T+24/72/168h response gates with numeric escalation thresholds.
+- `domain-40-execution-timeline.md` — 3,000+ words. November 3 hard deadline leverage analysis (4.5-month lead time calculation), PNAS study framing for Tier A emails, 5-phase pre-staging + Tier A/B/C/D timeline, day-by-day UTC send schedule (June 15–November 3), sustained 4-window Tier D campaign through election day.
+- `domain-38-40-contingency-decision-tree.md` — 2,800+ words. Four-gate decision structure (Gate 0/1/2/3), numeric threshold decision matrix (ESCALATE/PLANNED/REDUCE/DELIVERY PROBLEM rows), mandatory stagger rules with minimum gap table, Domain 39/40 co-messaging logic with 15 pre-identified joint-eligible contacts and joint synthesis email template, complete decision tree diagram, response logging protocol.
+
+**Confidence level**: High. Architecture is internally consistent. All send dates respect the 48-hour minimum between contact strata. All contingency thresholds are calibrated to the organization-type response cycles documented in existing PHASE_2_CONTACT_STRATIFICATION.md. Contact lists cross-check against DOMAIN_38_CONTACT_STRATIFICATION.md and DOMAIN_40_CONTACT_STRATIFICATION.md (no conflicts; three stagger rules explicitly documented).
+
+---
+
 ## May 30, 2026 — General Research Agent — Exploration Queue Item 25: Phase 5 Wave 1 Execution Timelines (Options A and B)
 
 **Task**: Produce two production-ready day-by-day execution timelines (June 1–14) for the Phase 5 Wave 1 timing decision: Option A (Wave 1 publication June 5, Wave 2 author hire June 10, Phase 6 framework June 5–15; 40 hrs June budget; score 30/40) and Option B (unified June 15 publication, single author wave, no Wave 2 hire in June; ~24 hrs author-coordination budget; score 24/40). User decision deadline: May 31 23:59 UTC.
