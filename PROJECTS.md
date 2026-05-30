@@ -435,12 +435,49 @@
 ### stockbot
 **Goal**: Build a full-stack model building and automated trading platform with both a web app and iOS app integration. The platform should allow creation, backtesting, and optimization of trading models across multiple model types (stock, options, rule-based, ensemble, multi-timeframe). The end goal is fully automated live trading — but only after models are rigorously vetted and confidence is established through paper trading. Model training and optimization costs must stay under $20/month. Once a model is sufficiently validated through paper trading performance, it graduates to live trading. Profit maximization is the north star, but capital preservation and risk management are non-negotiable constraints.
 **Priority**: High
-**Status**: Active — **4-session Jetson architecture (AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf) COMPLETE**. Trading engine RUNNING (restarted May 18 20:30 UTC). May 19 checkpoint EXECUTED (00:41 UTC, STILL_MISS_B2 outcome). Lever B decision: **EXECUTED (Option A — retrain JPM ridge_wf)**. Phase 2 AMZN/JPM activation UNBLOCKED, ready for May 28-31 Jetson deployment.
+**Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: ✅ **[RESOLVED] PRE_DEPLOYMENT_VALIDATION GATES PASSED + COMPREHENSIVE BACKTESTING REPORT DELIVERED** — All 5 gates (G1–G5) passed May 27. **USER ESCALATED PRIORITY #1 COMPLETE**: Comprehensive backtesting report delivered (3,000+ words) with deployment readiness assessment, model performance analysis (AAPL lgbm_ho/ridge_wf, AMZN lgbm_ho, JPM ridge_wf), portfolio-level risk assessment, critical findings (AMZN OOS validation 30-min gap, JPM 2022 data gap, options not ready), and recommended position sizes for live launch. May 28 AM deploy to Jetson ready (50-min checklist Steps 4-6). May 28–30 48h paper pre-flight observation with monitoring protocol staged. May 30 AM pre-flight review (paper → live decision, report provides full decision support). June 1 earliest go-live. Deployment blackout: no deploys 13:30-20:00 UTC Mon–Fri.
+**Current focus**: 🔴 **[STRATEGIC RESET — USER DIRECTIVE 2026-05-30] — MODEL VALIDATION PIPELINE REQUIRED BEFORE ANY LIVE/PAPER DEPLOYMENT**
+
+User finding: existing gate framework placed too much confidence in unvalidated models. Gate 1 strategy (h10_lgbm_ho) failed 3 checkpoints and strategy-evaluation.md relied on synthetic data. No model in the current 4-session config has a complete walk-forward backtest on real historical data. User has directed building a proper pipeline FIRST, then re-validating all models through it before any deployment.
+
+**PHASE 0 — IMMEDIATE (do before Monday 2026-06-02 13:30 UTC market open)**:
+- P0-1: Switch Jetson to `active-sessions-2session.json` (AAPL lgbm_ho + AAPL ridge_wf only). Gate 1 breadth test (67 sessions) is terminated. 4-session config NOT to be activated until models pass the new pipeline gates. Deploy via rsync + docker restart during non-blackout window.
+
+**PHASE 1 — BACKTESTING PIPELINE (highest priority, ~1 week)**:
+- P1-1: **Audit existing backtesting infrastructure** — document what exists in `src/backtesting/`, identify gaps vs. a production-grade walk-forward engine. Produce `BACKTESTING_PIPELINE_AUDIT.md`.
+- P1-2: **Build walk-forward backtesting harness** — uses real Alpaca historical data (not synthetic). Must implement: proper IS/OOS time-series splits (no lookahead), rolling or expanding window walk-forward CV, full metric suite (annualized Sharpe, Sortino, Calmar, Max Drawdown, Win Rate, Profit Factor, t-statistic, DSR-adjusted Sharpe, regime breakdown). Store results in DB. Output: `src/backtesting/walk_forward_engine.py`.
+- P1-3: **Standardized model evaluation report** — script that takes a trained model + ticker + date range and produces a full evaluation report with all metrics and a pass/fail decision. Output: `scripts/evaluate_model.py` + `EVALUATION_REPORT_TEMPLATE.md`.
+
+**PHASE 2 — VALIDATE ALL CURRENT MODELS (week 2)**:
+- P2-1: Run AAPL lgbm_ho through new harness — compare real OOS Sharpe vs. claimed 1.491 (which came from synthetic-adjacent data with only 38 OOS trades and possible selection bias)
+- P2-2: Run AAPL ridge_wf through new harness — this model has zero validated backtest; critical gap
+- P2-3: Retrain AMZN lgbm_ho with real data from 2022-01-01 onward; run full OOS validation
+- P2-4: Retrain JPM ridge_wf with data from 2022-01-01 onward (covers Fed rate-shock); run OOS validation. Current model trained on Sep 2024–May 2026 only — misses the most informative period for a financials model.
+
+**PHASE 3 — CLEAR GRADUATION GATE (before any paper deployment)**:
+- P3-1: Update `docs/model-graduation-criteria.md` with new gates. All 6 must pass before paper trading:
+  - G1: Walk-forward OOS Sharpe > 1.0 (annualized)
+  - G2: Walk-forward OOS Max Drawdown < 20%
+  - G3: t-statistic > 2.0 on OOS trade P&L distribution
+  - G4: DSR-adjusted Sharpe > 0.8 (surviving multiple-comparison correction)
+  - G5: Positive Sharpe in at least 2 of 3 regimes (bull / bear / sideways) in the OOS period
+  - G6: Walk-forward efficiency (WFE) > 0.50 (OOS Sharpe / IS Sharpe)
+- P3-2: No model to be deployed to paper trading unless all 6 gates pass. Suspend the 4-session config until AAPL ridge_wf, AMZN lgbm_ho, and JPM ridge_wf pass. AAPL lgbm_ho is the only model with any validated backtest — it may continue in 2-session config while the pipeline is built.
+
+**PHASE 4 — PRODUCTION PIPELINE (week 3-4)**:
+- P4-1: **Automated model training + evaluation pipeline** — given ticker + strategy type + date range, produces trained model + full evaluation report + pass/fail in < 30 min. Makes it fast to test new strategies.
+- P4-2: **Model comparison framework** — compare multiple models on same data, portfolio-level backtesting (combined Sharpe, correlation analysis), A/B testing capability. Output: `src/analytics/model_comparison.py`.
+- P4-3: **Live performance tracking vs. backtest** — daily comparison of live session P&L vs. backtest expectations, statistical drift detection (Z-score alert when live diverges > 2 sigma from backtest rolling mean), automatic session pause recommendation when drift detected.
+
+**HARD RULES going forward**:
+- No model enters paper trading without passing all 6 graduation gates from P3-1
+- No model enters live trading without a paper trading track record of ≥ 30 round trips post-gate
+- No new strategy gets deployed to Jetson while the pipeline is being built
+- AAPL lgbm_ho 2-session config is the only allowed active config until pipeline is complete and models re-validated
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`

@@ -11,7 +11,20 @@
 
 ## New Items
 
-<!-- Add tasks here. Format: - [date] [description] -->
+- [2026-05-30] **ORCHESTRATOR RESUME + STOCKBOT STRATEGIC RESET — PRIORITY #1** — User has directed a complete strategy reassessment for stockbot. Pause directive is lifted. Execute the following in order:
+
+  **IMMEDIATE (before 2026-06-02 13:30 UTC market open)**:
+  1. Switch Jetson (100.120.18.84) from current 67-session config to `active-sessions-2session.json` (AAPL lgbm_ho + AAPL ridge_wf only). Use rsync + `docker compose restart`. Verify `sessions: 2` on health endpoint. This terminates the Gate 1 breadth test. The 4-session config is NOT to be activated.
+
+  **THEN — STOCKBOT PIPELINE WORK** (see PROJECTS.md stockbot "Current focus" for full P0–P4 breakdown):
+  2. Produce `BACKTESTING_PIPELINE_AUDIT.md` — inventory what exists in `src/backtesting/`, what a production walk-forward engine needs, what's missing.
+  3. Build `src/backtesting/walk_forward_engine.py` — real Alpaca data, no synthetic data, proper IS/OOS splits, full metric suite (Sharpe, Sortino, Calmar, MDD, Win Rate, Profit Factor, t-stat, DSR-adjusted Sharpe, regime breakdown).
+  4. Build `scripts/evaluate_model.py` — takes a trained model + ticker + date range, produces standardized evaluation report + pass/fail vs. 6 graduation gates.
+  5. Re-validate AAPL lgbm_ho, AAPL ridge_wf, AMZN lgbm_ho, JPM ridge_wf through new harness. AMZN and JPM must be retrained with 2022+ data before evaluation.
+
+  **CONTEXT**: Gate 1 failed 3 consecutive checkpoints. Comprehensive backtesting report (May 27) revealed that AAPL ridge_wf has no validated backtest, AMZN has no OOS report, and JPM is trained only on Sep 2024–May 2026 data (misses Fed rate shock). User's finding: we've been deploying models without knowing if they work. The pipeline must be built and all models must pass 6 graduation gates before any future paper or live deployment.
+
+  **This item supersedes all prior stockbot sprint plans. Do not activate the 4-session config. Do not create new models until the pipeline is built.**
 
 ## Item Processing Pending Clarification
 
