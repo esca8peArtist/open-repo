@@ -6,10 +6,11 @@
 
 ## 🚨 CRITICAL DEADLINES — ACTION REQUIRED
 
-**📌 May 30 16:00 UTC Author Confirmation Deadline (arriving in ~19 MINUTES)**
+**🔴 🔴 URGENT — May 30 16:00 UTC Author Confirmation Deadline (arriving in ~19 MINUTES)**
 - **systems-resilience Phase 5 timing author confirmation** (preliminary decision gate before May 31 final decision)
-- **Contact**: Author confirmation window 14:00-16:00 UTC May 30
+- **Contact**: Author confirmation window 14:00-16:00 UTC May 30 — **WINDOW CLOSING SOON**
 - **Status**: PENDING — requires user confirmation of publication timing preference (Option A/B/C, recommended A)
+- **ACTION**: Confirm with author immediately to secure Phase 5 publication timeline
 
 **📌 May 31 23:59 UTC Final Publication Decisions (arriving in ~32.3 HOURS)**
 - **Phase 5 publication timing**: Option A (recommended: Wave 1 June 5-15, Wave 2 June 30) / Option B / Option C
