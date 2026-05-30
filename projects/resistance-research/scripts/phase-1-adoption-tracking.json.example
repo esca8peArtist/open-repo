@@ -1,0 +1,12 @@
+{
+  "description": "Phase 1 Adoption Tracking Configuration",
+  "comment": "Copy this file to phase-1-adoption-tracking.json and fill in your values",
+  "comment2": "All fields except github_username are optional. Use environment variables if you prefer.",
+  "github_username": "your-github-username-here",
+  "gmail_credentials": "/path/to/gmail-credentials.json",
+  "gmail_manual_log": "/path/to/scripts/data/email-replies-manual.csv",
+  "sheets_credentials": "/path/to/sheets-credentials.json",
+  "spreadsheet_id": "your-google-sheets-id-here",
+  "gist_views_csv": "/path/to/scripts/data/gist-views.csv",
+  "email_log_csv": "/path/to/scripts/data/email-replies.csv"
+}
