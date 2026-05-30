@@ -14,7 +14,7 @@
 - [2026-05-30] **ORCHESTRATOR RESUME + STOCKBOT STRATEGIC RESET — PRIORITY #1** — User has directed a complete strategy reassessment for stockbot. Pause directive is lifted. Execute the following in order:
 
   **IMMEDIATE (before 2026-06-02 13:30 UTC market open)**:
-  1. Switch Jetson (100.120.18.84) from current 67-session config to `active-sessions-2session.json` (AAPL lgbm_ho + AAPL ridge_wf only). Use rsync + `docker compose restart`. Verify `sessions: 2` on health endpoint. This terminates the Gate 1 breadth test. The 4-session config is NOT to be activated.
+  1. Switch Jetson (100.120.18.84) from current 67-session config to `active-sessions-4session.json` (AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf). Use rsync + `docker compose restart`. Verify `sessions: 4` on health endpoint. This terminates the Gate 1 breadth test. The 4-session config stays active while the pipeline is built.
 
   **THEN — STOCKBOT PIPELINE WORK** (see PROJECTS.md stockbot "Current focus" for full P0–P4 breakdown):
   2. Produce `BACKTESTING_PIPELINE_AUDIT.md` — inventory what exists in `src/backtesting/`, what a production walk-forward engine needs, what's missing.

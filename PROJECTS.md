@@ -445,7 +445,7 @@
 User finding: existing gate framework placed too much confidence in unvalidated models. Gate 1 strategy (h10_lgbm_ho) failed 3 checkpoints and strategy-evaluation.md relied on synthetic data. No model in the current 4-session config has a complete walk-forward backtest on real historical data. User has directed building a proper pipeline FIRST, then re-validating all models through it before any deployment.
 
 **PHASE 0 — IMMEDIATE (do before Monday 2026-06-02 13:30 UTC market open)**:
-- P0-1: Switch Jetson to `active-sessions-2session.json` (AAPL lgbm_ho + AAPL ridge_wf only). Gate 1 breadth test (67 sessions) is terminated. 4-session config NOT to be activated until models pass the new pipeline gates. Deploy via rsync + docker restart during non-blackout window.
+- P0-1: Switch Jetson from 67-session config to `active-sessions-4session.json` (AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf). Gate 1 breadth test terminated. 4-session config stays active while pipeline is built. Deploy via rsync + docker restart during non-blackout window.
 
 **PHASE 1 — BACKTESTING PIPELINE (highest priority, ~1 week)**:
 - P1-1: **Audit existing backtesting infrastructure** — document what exists in `src/backtesting/`, identify gaps vs. a production-grade walk-forward engine. Produce `BACKTESTING_PIPELINE_AUDIT.md`.
