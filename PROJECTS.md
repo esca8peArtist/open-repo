@@ -447,10 +447,14 @@ User finding: existing gate framework placed too much confidence in unvalidated 
 **PHASE 0 — IMMEDIATE (do before Monday 2026-06-02 13:30 UTC market open)**:
 - P0-1: Switch Jetson from 67-session config to `active-sessions-4session.json` (AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf). Gate 1 breadth test terminated. 4-session config stays active while pipeline is built. Deploy via rsync + docker restart during non-blackout window.
 
-**PHASE 1 — BACKTESTING PIPELINE (highest priority, ~1 week)**:
-- P1-1: **Audit existing backtesting infrastructure** — document what exists in `src/backtesting/`, identify gaps vs. a production-grade walk-forward engine. Produce `BACKTESTING_PIPELINE_AUDIT.md`.
-- P1-2: **Build walk-forward backtesting harness** — uses real Alpaca historical data (not synthetic). Must implement: proper IS/OOS time-series splits (no lookahead), rolling or expanding window walk-forward CV, full metric suite (annualized Sharpe, Sortino, Calmar, Max Drawdown, Win Rate, Profit Factor, t-statistic, DSR-adjusted Sharpe, regime breakdown). Store results in DB. Output: `src/backtesting/walk_forward_engine.py`.
-- P1-3: **Standardized model evaluation report** — script that takes a trained model + ticker + date range and produces a full evaluation report with all metrics and a pass/fail decision. Output: `scripts/evaluate_model.py` + `EVALUATION_REPORT_TEMPLATE.md`.
+**PHASE 1 — BACKTESTING PIPELINE GAPS (4 targeted additions — do NOT rebuild from scratch)**:
+
+NOTE: Existing infrastructure is production-ready: `src/backtesting/engine.py` (full bar-by-bar sim), `performance_metrics.py` (40+ metrics), `report_generator.py`, `scripts/run_strategy_evaluation.py` (4-gate framework), `scripts/backtest_stackers.py`. Only the 4 gaps below need to be added.
+
+- P1-1: **Alpaca historical data connector** (~2-4h) — `scripts/run_strategy_evaluation.py` uses synthetic GBM data. Add `src/backtesting/alpaca_data_feed.py`: fetches real OHLCV from Alpaca SDK (not yfinance) and feeds existing `BacktestEngine`. This is the most critical gap.
+- P1-2: **Multi-window walk-forward** (~4-6h) — Current stacker uses single 70:30 split. Add `src/backtesting/walk_forward.py`: rolling N-window wrapper around existing engine, computes WFE (median OOS Sharpe / median IS Sharpe). Required for graduation gate G6.
+- P1-3: **Deflated Sharpe Ratio** (~1h) — Documented in `model-graduation-criteria.md` but not coded. Add to `src/backtesting/performance_metrics.py`. Required for graduation gate G4.
+- P1-4: **Update run_strategy_evaluation.py** (~2h) — Add `--ticker`, `--start`, `--end` args; plug in P1-1 data feed, P1-2 walk-forward, P1-3 DSR; output pass/fail on all 6 graduation gates. Becomes the unified "evaluate any model" command.
 
 **PHASE 2 — VALIDATE ALL CURRENT MODELS (week 2)**:
 - P2-1: Run AAPL lgbm_ho through new harness — compare real OOS Sharpe vs. claimed 1.491 (which came from synthetic-adjacent data with only 38 OOS trades and possible selection bias)

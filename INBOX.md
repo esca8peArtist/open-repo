@@ -16,19 +16,27 @@
   **IMMEDIATE (before 2026-06-02 13:30 UTC market open)**:
   1. Switch Jetson (100.120.18.84) from current 67-session config to `active-sessions-4session.json` (AAPL lgbm_ho + AAPL ridge_wf + AMZN lgbm_ho + JPM ridge_wf). Use rsync + `docker compose restart`. Verify `sessions: 4` on health endpoint. This terminates the Gate 1 breadth test. The 4-session config stays active while the pipeline is built.
 
-  **THEN — STOCKBOT PIPELINE WORK** (see PROJECTS.md stockbot "Current focus" for full P0–P4 breakdown):
-  2. Produce `BACKTESTING_PIPELINE_AUDIT.md` — inventory what exists in `src/backtesting/`, what a production walk-forward engine needs, what's missing.
-  3. Build `src/backtesting/walk_forward_engine.py` — real Alpaca data, no synthetic data, proper IS/OOS splits, full metric suite (Sharpe, Sortino, Calmar, MDD, Win Rate, Profit Factor, t-stat, DSR-adjusted Sharpe, regime breakdown).
-  4. Build `scripts/evaluate_model.py` — takes a trained model + ticker + date range, produces standardized evaluation report + pass/fail vs. 6 graduation gates.
-  5. Re-validate AAPL lgbm_ho, AAPL ridge_wf, AMZN lgbm_ho, JPM ridge_wf through new harness. AMZN and JPM must be retrained with 2022+ data before evaluation.
+  **THEN — STOCKBOT PIPELINE GAPS (4 specific additions to existing infrastructure)**:
 
-  **CONTEXT**: Gate 1 failed 3 consecutive checkpoints. Comprehensive backtesting report (May 27) revealed that AAPL ridge_wf has no validated backtest, AMZN has no OOS report, and JPM is trained only on Sep 2024–May 2026 data (misses Fed rate shock). User's finding: we've been deploying models without knowing if they work. The pipeline must be built and all models must pass 6 graduation gates before any future paper or live deployment.
+  NOTE: Do NOT rebuild from scratch. `src/backtesting/engine.py`, `performance_metrics.py`, `report_generator.py`, and `scripts/run_strategy_evaluation.py` are all production-ready. The 4 gaps below are additions to existing code.
 
-  **This item supersedes all prior stockbot sprint plans. Do not activate the 4-session config. Do not create new models until the pipeline is built.**
+  2. **Gap 1 — Alpaca historical data connector** (~2-4h): `scripts/run_strategy_evaluation.py` uses synthetic GBM data. The `BacktestEngine` is data-agnostic — add an adapter that fetches real Alpaca historical OHLCV bars (via Alpaca SDK, not yfinance) and feeds them into the existing engine. Output: `src/backtesting/alpaca_data_feed.py`. This is the most critical gap — all other validation is meaningless on synthetic data.
+
+  3. **Gap 2 — Multi-window walk-forward engine** (~4-6h): Current `EnsembleStackerModel` does a single 70:30 IS/OOS split. Add a rolling walk-forward wrapper: N windows (e.g. 10 × 3yr IS / 6mo OOS), compute metrics on each OOS fold, report Walk-Forward Efficiency (WFE = median OOS Sharpe / median IS Sharpe). Required for G6 gate. Output: `src/backtesting/walk_forward.py` wrapping existing `BacktestEngine`.
+
+  4. **Gap 3 — Deflated Sharpe Ratio** (~1h): DSR is documented in `model-graduation-criteria.md` and required for G4 gate but not coded anywhere. Add to `src/backtesting/performance_metrics.py`. Formula: penalizes reported Sharpe based on number of strategy variants tested. 10-line implementation.
+
+  5. **Gap 4 — Wire run_strategy_evaluation.py to real data + WFE + DSR**: Update existing `scripts/run_strategy_evaluation.py` to accept `--ticker`, `--start`, `--end`, pull real Alpaca data via Gap 1 adapter, run Gap 2 walk-forward, compute Gap 3 DSR, and output pass/fail on all 6 graduation gates. This becomes the unified "evaluate any model" command.
+
+  6. **Model re-validation** (after gaps 1-4 complete): Run all 4 current sessions through the updated pipeline. AMZN lgbm_ho and JPM ridge_wf must first be retrained with data from 2022-01-01 (Alpaca data) before evaluation — JPM's Sep 2024 training start misses the Fed rate shock regime entirely.
+
+  **CONTEXT**: Gate 1 failed 3 consecutive checkpoints. Comprehensive backtesting report (May 27) revealed that AAPL ridge_wf has no validated backtest, AMZN has no OOS report, and JPM is trained only on Sep 2024–May 2026 data (misses Fed rate shock). The existing backtesting infrastructure is solid — only 4 targeted additions are needed before we can properly validate all models.
+
+  **This item supersedes all prior stockbot sprint plans. Do not create new models until pipeline gaps 1-4 are complete and all current models pass re-validation.**
 
 ## Item Processing Pending Clarification
 
-- [2026-05-29 19:35] /resume — **AWAITING CLARIFICATION** (Session 2128+): Item appears to be either (A) orchestrator resume/unpause signal, or (B) request to reactivate resume project (currently PAUSED, low priority). Pause directive from Session 1770 (May 27 23:15 UTC) remains active. If signal to unpause: explicit Discord confirmation required per pause protocol. If request to resume project work: requires priority change authorization. Logged in WORKLOG.md; awaiting CHECKIN.md clarification request response.
+- [2026-05-29 19:35] /resume — **RESOLVED** by Session 2284 INBOX item above. Signal was orchestrator unpause. Orchestrator is now active. No further action needed.
 
 ## PHASE 3 (July+, after 50+ round trips accumulated):
   9. Train and activate exit model: follow EXIT_MODEL_BACKTEST_APPROACH.md once 50+ AAPL round trips are in the database. Query trades table, run prepare_training_data_from_trades(), 70/30 chronological split, validate ΔPnL. Then flip exit_model_enabled: true + exit_model_threshold: 0.60 per session.
