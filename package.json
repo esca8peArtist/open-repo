@@ -1,0 +1,14 @@
+{
+  "name": "open-repo-a11y",
+  "version": "1.0.0",
+  "description": "A11y testing tools for Open-Repo",
+  "devDependencies": {
+    "axe-core": "^4.11.0",
+    "@axe-core/cli": "^4.11.0",
+    "@axe-core/playwright": "^4.11.0",
+    "playwright": "^1.60.0"
+  },
+  "scripts": {
+    "axe:cli": "axe-core"
+  }
+}
