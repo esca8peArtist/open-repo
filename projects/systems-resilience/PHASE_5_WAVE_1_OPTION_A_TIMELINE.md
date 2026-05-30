@@ -9,11 +9,14 @@ activation_start: 2026-06-01T06:00:00Z
 wave_1_end: 2026-06-15T23:59:00Z
 wave_3_target: 2026-06-28T00:00:00Z
 created: 2026-05-30
+updated: 2026-05-30
 companion_docs:
   - PHASE_6_WAVE_1_EXECUTION_CHECKLIST.md
-  - PHASE_5_UNIFIED_RISK_TRIGGER_RUNBOOK.md
+  - PHASE_5_WAVE_1_UNIFIED_RISK_TRIGGER_RUNBOOK.md
   - PHASE_5_COORDINATION_TEMPLATES_PRE-FILLED.md
   - PHASE_5_WAVE_1_OPTION_B_TIMELINE.md
+  - PHASE_5_WAVE_1_CRITICAL_PATH_ANALYSIS.md
+  - PHASE_5_WAVE_1_EXECUTION_TEMPLATES.md
 ---
 
 # Phase 5 Wave 1 — Option A Execution Timeline
@@ -32,7 +35,9 @@ Option A concentrates editorial work into a bounded 5-day spike (June 1-5), publ
 - It creates two independent publication gates (June 5, June 28-30) with separate risk profiles
 - After June 5 the orchestrator drops to passive monitoring, freeing bandwidth for Phase 6 domain review and author onboarding
 - The June 5-30 window allows Wave 1+2 reader feedback to inform a light Wave 3 editorial pass before the June 28-30 publication
-- The June 8 mid-wave checkpoint (the only formal Wave 1 check) is placed at day 8 because that is where the outline-review cycle closes and first-draft writing is fully underway in all fast-track domains — it is the first moment where trajectory is visible and course correction is still low-cost
+- The June 8 mid-wave checkpoint is placed at day 8 because that is where the outline-review cycle closes and first-draft writing is fully underway in all fast-track domains — it is the first moment where trajectory is visible and course correction is still low-cost
+
+**Option A is the lower-resource option.** Total orchestrator hours June 1-15: approximately 35-45 hours (2.5-3 hours/day average, spiking to 6-8 hours on June 1, 3, and 8). This is sustainable without additional capacity.
 
 ---
 
@@ -46,10 +51,122 @@ Before closing May 31, verify all four infrastructure gates are green:
 |------|--------|-------|
 | R-1: User has selected Option A | 23:59 UTC | Logged in ORCHESTRATOR_STATE.md |
 | R-2: Phase 6 domain selection confirmed (A, C, D or subset) | 23:59 UTC | Logged in ORCHESTRATOR_STATE.md |
-| R-3: Phase 5 Wave 1+2 documents verified zero-placeholder | 16:00 UTC | Run placeholder scan: grep -r "\[fill\]\|\[TBD\]\|\[TODO\]" projects/systems-resilience/phase-5-wave-2-*.md |
+| R-3: Phase 5 Wave 1+2 documents verified zero-placeholder | 16:00 UTC | Run placeholder scan: `grep -r "\[fill\]\|\[TBD\]\|\[TODO\]" projects/systems-resilience/phase-5-wave-2-*.md` |
 | R-4: Author status known (confirmed or self-execute fallback) | 18:00 UTC | Author availability logged |
 
 **If any gate is red at 23:59 UTC**: Log the gap and proceed with Option A anyway. The June 1 morning pre-flight (06:00-07:00 UTC) catches and resolves gate failures before author contact begins.
+
+---
+
+## Author Onboarding Schedule — June 1-9
+
+This table is the single reference for who gets which contact on which date. Fill in author names when confirmed.
+
+| Date (T-day) | Author contact type | Domain | Content | Time budget |
+|--------------|---------------------|--------|---------|-------------|
+| June 1 (T+0) | Kickoff briefing email | All confirmed authors | Full onboarding kit, research kit, model doc, domain candidate file | 2 hrs (send + log) |
+| June 2 (T+1) | Orientation confirmation standup | All | Confirm receipt, outline approach, source access | 30 min async per domain |
+| June 3 (T+2) | Research kit verification check | All | Confirm source access; substitute any blocked sources | 1 hr total |
+| June 4 (T+3) | Outline submission day | All | Receive outlines by 17:00 UTC; begin review | 3-4 hrs (review) |
+| June 5 (T+4) | Outline feedback send | All | Return feedback by 12:00 UTC; writing begins | 1-2 hrs |
+| June 6 (T+5) | Wave 2 domain authors | Wave 2 (Ecosystem Restoration, Institutional Learning) | Send their T+0 equivalent briefing | 1-2 hrs |
+| June 7 (T+6) | Weekly sync | All | Week 1 status review; word count, citations, peer reviewer confirmations | 30-45 min async |
+| June 8 (T+7) | First-draft checkpoint | Fast-track and secondary domains | Receive first-draft packages by 12:00 UTC; assess | 4-5 hrs |
+| June 9 (T+8) | Feedback loop closes | All | Send T+7 feedback by 09:00 UTC; Wave 2 outline reviews | 2-3 hrs |
+
+**Author onboarding is complete by June 9.** From June 9 onward, contact is via daily standups (15-30 min async per day) until peer review routing on June 11.
+
+---
+
+## Daily Time Budget Summary (Option A)
+
+| Date | Day | Primary activity | Orchestrator hours | Author hours | Notes |
+|------|-----|-----------------|-------------------|--------------|-------|
+| June 1 | Mon | Kickoff + editorial start | 6-8 | 2-3 | CRITICAL PATH: pre-flight 06:00 |
+| June 2 | Tue | Orientation + editorial | 3-4 | 2-3 | Buffer: can slip 1 day |
+| June 3 | Wed | Editorial completion | 4-5 | 3-4 | CRITICAL PATH: editorial done by 17:00 |
+| June 4 | Thu | Outline gate | 3-4 | 6-8 (outlining) | CRITICAL PATH: outlines due 17:00 |
+| June 5 | Fri | Publication + outline feedback | 5-6 | 4-6 (writing begins) | CRITICAL PATH: publication 06:00-09:00 |
+| June 6 | Sat | Wave 2 ramp + monitoring | 2-3 | 4-6 | Buffer: can slip 1 day |
+| June 7 | Sun | Week 1 review | 2-3 | 2-3 (writing) | Buffer: can slip 1 day |
+| June 8 | Mon | First-draft checkpoint | 5-6 | 8-10 (submitting + writing) | CRITICAL PATH: submissions due 12:00 |
+| June 9 | Tue | Feedback + Wave 2 outlines | 3-4 | 6-8 | Buffer: can slip 1 day |
+| June 10 | Wed | Peer review prep | 3-4 | 6-8 | CRITICAL PATH: reviewers confirmed 12:00 |
+| June 11 | Thu | Peer review send | 3-4 | 6-8 (writing + submitting) | CRITICAL PATH: drafts sent 12:00 |
+| June 12 | Fri | Production + monitoring | 2-3 | 6-8 | Buffer: can slip 1 day |
+| June 13 | Sat | Peer reviews due | 3-4 | 6-8 | CRITICAL PATH: reviews due 17:00 |
+| June 14 | Sun | Integration sweep | 2-3 | 8-10 (addressing feedback) | Buffer: can slip 1 day |
+| June 15 | Mon | Publication readiness gate | 5-6 | 2-3 | CRITICAL PATH: gate 17:00 |
+| **TOTAL** | | | **55-65 hrs** | **75-95 hrs** | |
+
+---
+
+## Peer Review Intake Calendar
+
+This calendar shows when drafts go out and when feedback comes back. Use this to schedule peer reviewer communication.
+
+| Action | Date | UTC Time | Who |
+|--------|------|----------|-----|
+| Peer reviewer introductory email sent | June 1 | 08:00 | Orchestrator → all reviewers |
+| Peer reviewers briefed on template and criteria | June 9 | 14:00-17:00 | Orchestrator → all reviewers |
+| Peer reviewer availability confirmed | June 10 | 12:00 | All reviewers confirmed Y/N |
+| Backup reviewers identified | June 10 | 12:00 | Per domain, logged in WORKLOG.md |
+| Mid-window reviewer check ("still on track?") | June 12 | 12:00 | Orchestrator → all reviewers |
+| Peer review reminder | June 13 | 09:00 | Orchestrator → all reviewers |
+| Peer reviews due | June 13 | 17:00 | All reviewers → Orchestrator |
+| Feedback classified and sent to authors | June 13 | 23:00 | Orchestrator → all authors |
+| Author integration of mandatory items | June 14 | 09:00-17:00 | Authors |
+
+**If any reviewer signals uncertainty before June 12**: activate backup reviewer the same day. Do not wait for the June 13 deadline.
+
+---
+
+## Publication Gates and Their Dates
+
+Option A has two publication events. Each has its own gate.
+
+### Gate 1: Wave 1+2 Publication (June 5)
+
+**Pre-conditions (all must be green by June 4 EOD)**:
+- [ ] All five Wave 1+2 documents: zero placeholder markers
+- [ ] All five documents: consistent YAML frontmatter (`title`, `phase`, `wave`, `status: PRODUCTION-READY`, `created`)
+- [ ] Wave 3 announcement language present in each document or in master distribution note
+- [ ] Distribution list confirmed (Tier 1/2/3 contacts ready)
+- [ ] Publication announcement drafted (per PHASE_5_WAVE_1_EXECUTION_TEMPLATES.md)
+
+**Publication window**: June 5 06:00-09:00 UTC
+
+**Decision gate >**: If a single document fails a last-minute check: publish the four others on schedule; delay the one document by 24 hours. Do not hold the entire corpus for one document.
+
+**Post-publication**: Monitor reader responses June 5-14. Categorize: (A) no action, (B) factual correction, (C) scope addition, (D) Wave 3 content suggestion. Log B and C items for Wave 3 editorial pass.
+
+### Gate 2: Wave 3 Publication (June 28-30)
+
+**Pre-conditions (all must be green by June 27)**:
+- [ ] Wave 3 editorial pass complete (8-12 hours, June 15-27)
+- [ ] Cross-references to Wave 1+2 added where relevant
+- [ ] Frontmatter standardized across all 7 Wave 3 documents
+- [ ] Wave 3 master table of contents written
+- [ ] Any reader feedback from Wave 1+2 incorporated (Category B and C items)
+
+**Publication window**: June 28-30
+
+---
+
+## Risk Trigger Checkpoints (Option A)
+
+These are the dates when risk assessment is mandatory, not optional. At each checkpoint, run the relevant check in PHASE_5_WAVE_1_UNIFIED_RISK_TRIGGER_RUNBOOK.md.
+
+| Date | Trigger type | What to check | Threshold |
+|------|-------------|---------------|-----------|
+| June 2 (T+1) 17:00 UTC | RT-2 author unavailability | Any author has not responded to T+0 email | No response → activate CT-1 within 4 hours |
+| June 4 (T+3) 17:00 UTC | RT-1 scope creep | Outlines received — do any exceed approved scope? | Any out-of-scope section → send correction request same day |
+| June 7 (T+6) 17:00 UTC | RT-2, RT-1, RT-3 | Week 1 review: word counts, citation counts, scope signals | Any at-risk indicator → assess RT activation |
+| June 8 (T+7) 12:00 UTC | All triggers | First-draft quality gate: word count, citations, voice, scope | Two+ at-risk indicators → RT escalation |
+| June 10 (T+9) 12:00 UTC | RT-4 peer review | All reviewers confirmed? Backup assigned? | Any unconfirmed reviewer → activate backup same day |
+| June 12 (T+11) 12:00 UTC | RT-4 | Mid-window reviewer check | No response to check → elevated to WATCH status |
+| June 13 (T+12) 17:00 UTC | RT-4, RT-5 | Peer reviews returned? | Any missing review → backup + internal review activated |
+| June 15 (T+14) 17:00 UTC | All triggers | T+14 publication readiness gate | Score <6.0 → scope adjustment meeting within 24 hours |
 
 ---
 
@@ -71,6 +188,8 @@ This hour is the only work that cannot move. Do not contact authors, do not star
 
 **Decision gate >**: If overnight a blocking condition emerged (Jetson multi-day outage, user scope reversal), assess now. A single non-critical blocker does not delay activation. Log it and proceed. Only a user scope reversal received after 23:59 May 31 warrants a 30-minute pause to recalibrate.
 
+**Time budget: 1 hour**
+
 ### 07:00-09:00 UTC: Author Briefings and Phase 6 Dispatch
 
 **07:00**: Send Phase 6 author briefing email if author is confirmed. Template in PHASE_6_AUTHOR_ONBOARDING_KIT.md. Send simultaneously, not staggered.
@@ -80,6 +199,8 @@ This hour is the only work that cannot move. Do not contact authors, do not star
 **08:00**: Send peer reviewer introduction emails for Phase 6 domains. Use Section 3 template from PHASE_6_COORDINATION_TEMPLATES.md. Tell reviewers: review window is June 11-13 (T+10 to T+12), 48-hour turnaround requested.
 
 **08:30**: If author is NOT confirmed (self-execute fallback): log the self-execute activation. Self-execute schedule: June 10 outline, June 14 first sections, June 24 first-draft checkpoint. This is independent of Wave 1+2 editorial — do not let author status delay editorial.
+
+**Time budget: 2 hours**
 
 ### 09:00-17:00 UTC: Wave 1+2 Editorial Sprint Begins
 
@@ -93,6 +214,8 @@ The editorial work for Wave 1+2 is 4-6 hours total. Spread it across June 1-3 to
 
 **Do not** attempt to complete all editorial work today. Pace is 2-3 hours/day June 1-3.
 
+**Time budget: 2-3 hours (editorial)**
+
 ### 17:00 UTC: T+0 Day-End Check
 
 - [ ] Pre-flight complete and logged?
@@ -101,7 +224,9 @@ The editorial work for Wave 1+2 is 4-6 hours total. Spread it across June 1-3 to
 - [ ] Editorial sprint started (frontmatter check done)?
 - [ ] WORKLOG.md updated
 
-**Author response window note**: Expect 70-80% same-day email responses. Non-responsive Phase 6 authors get one follow-up at T+1 09:00 UTC. Non-response at T+1 17:00 UTC activates CT-1 (see PHASE_5_UNIFIED_RISK_TRIGGER_RUNBOOK.md).
+**Author response window note**: Expect 70-80% same-day email responses. Non-responsive Phase 6 authors get one follow-up at T+1 09:00 UTC. Non-response at T+1 17:00 UTC activates CT-1 (see PHASE_5_WAVE_1_UNIFIED_RISK_TRIGGER_RUNBOOK.md, RT-2).
+
+**Total time budget June 1: 6-8 hours**
 
 ---
 
@@ -109,31 +234,39 @@ The editorial work for Wave 1+2 is 4-6 hours total. Spread it across June 1-3 to
 
 ### 08:00 UTC: First Daily Standup Prompt (Phase 6 Authors)
 
-Send daily standup prompt (template in PHASE_5_COORDINATION_TEMPLATES_PRE-FILLED.md — June 2 pre-filled). Responses needed by 12:00 UTC.
+Send daily standup prompt (template in PHASE_5_WAVE_1_EXECUTION_TEMPLATES.md, June 2 pre-filled). Responses needed by 12:00 UTC.
 
 **T+1 standup focus**: Author understanding confirmed, not output. Are they reading orientation documents? Do they have access to sources? Any questions before outlining begins?
 
+**Time budget: 15 minutes**
+
 ### 09:00 UTC: Author Follow-Up (if T+0 non-responders)
 
-For any Phase 6 author who did not acknowledge the T+0 briefing email: send one follow-up. Subject: "Phase 6 [Domain] — confirming receipt of June 1 briefing." If no response by T+1 17:00 UTC, activate CT-1.
+For any Phase 6 author who did not acknowledge the T+0 briefing email: send one follow-up. Subject: "Phase 6 [Domain] — confirming receipt of June 1 briefing." If no response by T+1 17:00 UTC, activate RT-2 (author unavailability).
 
 ### 09:00-13:00 UTC: Wave 1+2 Editorial Continuation (2 hours today)
 
 - [ ] Complete cross-document consistency check: do all five documents use the same terminology for core concepts (community resilience, Zone 5, governance, mutual aid)?
-- [ ] Identify and resolve any inconsistencies found. A 15-minute author-to-author cross-document note resolves most framing divergences at this stage — except these are completed documents so the orchestrator makes the call and edits directly
-- [ ] Verify citation formatting consistency across all five documents (any format is acceptable at this stage; the goal is internal consistency, not journal-specific formatting)
+- [ ] Identify and resolve any inconsistencies found. The orchestrator makes the call and edits directly.
+- [ ] Verify citation formatting consistency across all five documents (any format acceptable; goal is internal consistency, not journal-specific formatting)
+
+**Time budget: 2 hours (editorial)**
 
 ### 12:00 UTC: Standup Replies Processed
 
 - [ ] Read all Phase 6 author replies
-- [ ] Log each domain status in daily standup log (template in PHASE_5_COORDINATION_TEMPLATES_PRE-FILLED.md)
+- [ ] Log each domain status in daily standup log (template in PHASE_5_WAVE_1_EXECUTION_TEMPLATES.md)
 - [ ] Identify and escalate any Tier 1 or Tier 2 blockers. Respond to blockers before 16:00 UTC
+
+**Time budget: 30 minutes**
 
 ### 16:00 UTC: Blocker Response Deadline
 
 All Tier 1 and Tier 2 blockers resolved or escalation path confirmed. Log in WORKLOG.md.
 
 **Expected output at T+1 EOD**: Phase 6 authors oriented, no writing expected. Wave 1+2 editorial 50-60% complete (frontmatter standardized, cross-document consistency checked). Peer reviewer introductions sent.
+
+**Total time budget June 2: 3-4 hours**
 
 ---
 
@@ -153,11 +286,15 @@ This is the last editorial day. Target: Wave 1+2 is fully publication-ready by 1
 
 **Decision gate >**: Wave 1+2 editorial complete? If yes: proceed to publication preparation. If any document still has placeholder markers or frontmatter gaps: resolve before committing. Do not proceed to publication with any document below editorial standard.
 
+**Time budget: 3 hours (editorial)**
+
 ### 12:00-14:00 UTC: Phase 6 Research Kit Verification
 
 - [ ] Confirm each Phase 6 author (or self-execute) has accessed their research kit (20+ pre-staged sources, model document, domain candidate file)
 - [ ] Any inaccessible sources flagged by authors or research agents? Substitute within 4 hours
 - [ ] Fast-track Phase 6 domain authors (Economic Resilience, Infrastructure Interdependencies if selected): confirm they have begun outlining Section 1
+
+**Time budget: 1 hour**
 
 ### 14:00 UTC: Publication Preparation Begins
 
@@ -166,6 +303,8 @@ This is the last editorial day. Target: Wave 1+2 is fully publication-ready by 1
 - [ ] Schedule publication send for June 5 (2 days buffer from today)
 
 **Expected output at T+2 EOD**: Wave 1+2 editorial complete and committed. Phase 6 authors have confirmed source access. Fast-track Phase 6 domains have begun outlining.
+
+**Total time budget June 3: 4-5 hours**
 
 ---
 
@@ -193,7 +332,7 @@ All Phase 6 domain authors must submit section-by-section outlines by 17:00 UTC.
 - One Zone 5 or community-context implication note per section
 - Integration points with other Phase 6 domains noted
 
-**Decision gate >**: If an outline is not received by 17:00 UTC: send one follow-up. If no response by T+4 09:00 UTC: activate CT-3 (scope/availability concern). Log immediately.
+**Decision gate >**: If an outline is not received by 17:00 UTC: send one follow-up. If no response by T+4 09:00 UTC: activate RT-2 (author unavailability). Log immediately.
 
 ### 17:00-20:00 UTC: Outline Review Begins
 
@@ -207,6 +346,8 @@ Orchestrator begins reviewing received outlines. Evaluate each against:
 **Outline review SLA**: Return feedback by T+4 12:00 UTC (next day noon). Feedback options: (A) Approved, (B) Approved with minor notes (author proceeds), (C) Revision required (resubmit by T+5 EOD).
 
 **Expected output at T+3 EOD**: All Phase 6 domain outlines submitted. Orchestrator outline review in progress. Wave 1+2 publication imminent (June 5).
+
+**Total time budget June 4: 3-4 hours**
 
 ---
 
@@ -224,12 +365,16 @@ This is the primary external-facing action of Option A. Execute with care.
 
 **Decision gate >**: If any Wave 1+2 document fails a last-minute review (discovered placeholder, formatting failure), delay only that document by 24 hours. Do not hold the entire publication. Log the delay. The other four documents publish on schedule.
 
+**Time budget: 2-3 hours**
+
 ### 10:00-12:00 UTC: Phase 6 Outline Feedback Sent
 
 - [ ] Send outline feedback to all Phase 6 authors by 12:00 UTC
 - [ ] Authors with "approved" or "approved with minor notes": begin Section 1 writing today
 - [ ] Authors with "revision required": resubmit by T+5 (June 6) EOD; do not begin writing until revision is approved
 - [ ] Fast-track domains (Economic Resilience, Infrastructure Interdependencies): Section 1 first draft expected by T+5 EOD (4,000-6,000 words)
+
+**Time budget: 2 hours**
 
 ### 13:00 UTC: Option A Monitoring Mode Begins
 
@@ -242,6 +387,8 @@ Wave 1+2 editorial work is complete. The orchestrator drops to passive monitorin
 
 **Expected output at T+4 EOD**: Wave 1+2 published. Phase 6 outlines reviewed and feedback returned. Fast-track Phase 6 authors writing Section 1. Orchestrator in monitoring mode for Wave 1+2.
 
+**Total time budget June 5: 5-6 hours**
+
 ---
 
 ## June 6 (Saturday) — T+5: Wave 2 Domain Ramp (Phase 6)
@@ -250,11 +397,13 @@ Wave 1+2 editorial work is complete. The orchestrator drops to passive monitorin
 
 ### 09:00-11:00 UTC: Wave 2 Phase 6 Domain Onboarding
 
-Wave 2 Phase 6 domains (Ecosystem Restoration, Institutional Learning, or whichever domains are in the secondary wave) begin their orientation today. Their T+0 equivalent is today.
+Wave 2 Phase 6 domains (Ecosystem Restoration, Institutional Learning, or whichever domains are in the secondary wave) begin their orientation today.
 
 - [ ] Send Wave 2 Phase 6 domain author briefing emails (same template as T+0, dated June 6)
 - [ ] Deliver Wave 2 domain research kits
 - [ ] Wave 2 authors begin orientation reading
+
+**Time budget: 2 hours**
 
 ### 11:00-13:00 UTC: Wave 1+2 Reader Response Monitoring
 
@@ -268,9 +417,9 @@ Wave 2 Phase 6 domains (Ecosystem Restoration, Institutional Learning, or whiche
 - [ ] Word count check: where are they?
 - [ ] Any blockers reported via standup? Resolve by 17:00 UTC
 
-**Note on Saturday**: This is a working day in the schedule because June 5 is publication day and June 8 is the T+7 mid-wave checkpoint. Saturday keeps the production sprint continuous.
-
 **Expected output at T+5 EOD**: Wave 2 Phase 6 domain authors oriented. Fast-track Phase 6 domains have Section 1 writing underway (target: 4,000-8,000 words delivered). Wave 1+2 reader feedback categorized.
+
+**Total time budget June 6: 2-3 hours**
 
 ---
 
@@ -278,7 +427,7 @@ Wave 2 Phase 6 domains (Ecosystem Restoration, Institutional Learning, or whiche
 
 ### 08:00 UTC: Weekly Sync Prompt (pre-filled June 7 template)
 
-This is the end-of-week review, not a daily standup. Responses due by 17:00 UTC. Use the Weekly Sync format from PHASE_5_COORDINATION_TEMPLATES_PRE-FILLED.md.
+This is the end-of-week review, not a daily standup. Responses due by 17:00 UTC. Use the Weekly Sync format from PHASE_5_WAVE_1_EXECUTION_TEMPLATES.md.
 
 ### 17:00 UTC: Week 1 Wave-Level Status Review
 
@@ -298,6 +447,8 @@ Compile all weekly sync responses and produce wave-level summary:
 Log T+6 status in WORKLOG.md. This is the last log entry before the June 8 mid-wave checkpoint.
 
 **Expected output at T+6 EOD**: Week 1 wave-level status known. Phase 6 fast-track domains have 8,000-12,000 words in draft. All peer reviewer confirmations received. Any scope-creep flags documented.
+
+**Total time budget June 7: 2-3 hours**
 
 ---
 
@@ -336,30 +487,26 @@ Evaluate each draft against the Research Quality Threshold (from PHASE_6_WAVE_1_
 - No Zone 5 or community context in any section
 - Voice has drifted significantly academic
 
-**Mid-wave assessment: Is scope on track?**
-- [ ] Are all fast-track authors tracking ≥50% of word count target?
-- [ ] Is author engagement healthy? (standup responses arriving on time, quality improving, no distress signals)
-- [ ] Is revision burden acceptable? (Outline feedback incorporated without resistance; no scope arguments)
-
 **Decision gate >**: For each Phase 6 domain, make one of three decisions by T+8 09:00 UTC:
 
 | Decision | Condition | Action |
 |----------|-----------|--------|
 | Green — proceed | All pass criteria met | Confirm with author; continue at pace |
 | Amber — at-risk watch | One at-risk indicator present | 20-minute synchronous call; corrective actions agreed by T+8 EOD |
-| Red — escalate | Fail criterion triggered or two+ at-risk indicators | Activate CT-2 or CT-3 in PHASE_5_UNIFIED_RISK_TRIGGER_RUNBOOK.md |
+| Red — escalate | Fail criterion triggered or two+ at-risk indicators | Activate RT-2 or RT-3 per PHASE_5_WAVE_1_UNIFIED_RISK_TRIGGER_RUNBOOK.md |
 
 Log all T+7 gate decisions in WORKLOG.md before end of June 8.
 
 ### 17:00-18:00 UTC: Mid-Wave Scope Assessment (Orchestrator Internal)
 
 Answer these three questions and log the answers:
+1. **Is scope on track?** Are all domains staying within approved outline boundaries?
+2. **Is author engagement healthy?** Standups arriving on time? Word counts growing? No one gone silent?
+3. **Is revision burden acceptable?** Authors incorporating feedback without major rewrites?
 
-1. **Is scope on track?** (Are all domains staying within their approved outline boundaries? No scope creep observed? No domains have drifted into Phase 5 territory or other domains?)
-2. **Is author engagement healthy?** (Standup responses arriving on time? Word counts growing week-over-week? No author has gone silent or expressed distress?)
-3. **Is revision burden acceptable?** (Authors incorporating feedback without major rewrites? Outline approval held? No major structural changes needed in any domain?)
+If all three answers are YES: proceed without changes. If any answer is NO: activate the relevant risk trigger.
 
-If all three answers are YES: proceed without changes. If any answer is NO: activate the relevant risk trigger in PHASE_5_UNIFIED_RISK_TRIGGER_RUNBOOK.md.
+**Total time budget June 8: 5-6 hours**
 
 ---
 
@@ -372,7 +519,7 @@ If all three answers are YES: proceed without changes. If any answer is NO: acti
 - [ ] Send mid-wave feedback to all Phase 6 authors by 09:00 UTC
 - [ ] Green authors: no action required; continue writing; no additional checkpoints until T+10
 - [ ] Amber authors: 20-minute call today to confirm corrective actions underway; follow up at T+9 17:00 UTC
-- [ ] Red authors: contingency protocol activated per PHASE_5_UNIFIED_RISK_TRIGGER_RUNBOOK.md
+- [ ] Red authors: contingency protocol activated per PHASE_5_WAVE_1_UNIFIED_RISK_TRIGGER_RUNBOOK.md
 
 ### 10:00-13:00 UTC: Wave 2 Phase 6 Domain Outline Reviews
 
@@ -396,6 +543,8 @@ Begin preparing peer review queue so reviewers are ready to receive material at 
 - Secondary Phase 6 domains: 40-50% of full document in draft
 - Wave 2 Phase 6 domains: outlines approved; Section 1 writing begun
 
+**Total time budget June 9: 3-4 hours**
+
 ---
 
 ## June 10 (Wednesday) — T+9: Peer Review Queue Confirmed
@@ -410,33 +559,23 @@ By June 10 all peer reviewers must be confirmed. No peer reviewer confirmed at t
 - [ ] Send peer reviewers the structured review template
 - [ ] Brief peer reviewers on domain scope
 - [ ] Identify backup reviewers for each domain (in case primary cannot complete)
-- [ ] Log peer review tracking table in WORKLOG.md:
-
-```
-| Domain | Peer Reviewer | Confirmed | Backup Reviewer | Review Deadline |
-|--------|--------------|-----------|----------------|----------------|
-| Economic Resilience | [name] | Y/N | [name] | June 13 17:00 UTC |
-| Infrastructure Interdependencies | [name] | Y/N | [name] | June 13 17:00 UTC |
-| International Coordination | [name] | Y/N | [name] | June 13 17:00 UTC |
-| Intergenerational Transmission | [name] | Y/N | [name] | June 13 17:00 UTC |
-| Ecosystem Restoration | [name] | Y/N | [name] | June 13 17:00 UTC |
-| Institutional Learning | [name] | Y/N | [name] | June 13 17:00 UTC |
-```
+- [ ] Log peer review tracking table in WORKLOG.md (template in PHASE_5_WAVE_1_EXECUTION_TEMPLATES.md, Section 3)
 
 ### 12:00-17:00 UTC: Author Production (Monitoring)
 
 All Phase 6 authors continue writing. Orchestrator is in monitoring mode — respond to blockers only.
 
-**Standup focus on T+9**: Are authors tracking their own word count? Any sections ready to send to peer reviewers ahead of the T+10 gate (if so, route them now)?
+**Standup focus on T+9**: Are authors tracking their own word count? Any sections ready to send to peer reviewers ahead of the T+10 gate?
 
 ### 14:00 UTC: Wave 3 Reader Feedback Integration Note
 
-Review the categorized Wave 1+2 reader feedback collected since June 5. For any Category B items (factual corrections) or Category C items (scope additions):
-
-- [ ] Create a brief note for the Wave 3 editorial pass: what, if anything, should Wave 3 address that Wave 1+2 readers have flagged?
+Review the categorized Wave 1+2 reader feedback collected since June 5. For any Category B or C items:
+- [ ] Create a brief note for the Wave 3 editorial pass: what should Wave 3 address that Wave 1+2 readers have flagged?
 - [ ] Do not act on this now. File it as an input to the June 15-27 Wave 3 editorial pass.
 
 **Expected output at T+9 EOD**: All peer reviewers confirmed. Backup reviewers identified. All Phase 6 authors in active production. Wave 3 reader feedback noted for later editorial pass.
+
+**Total time budget June 10: 3-4 hours**
 
 ---
 
@@ -468,6 +607,8 @@ Authors continue writing in unreviewed sections. Peer review is not a blocking g
 
 **Monitoring**: Any peer reviewer questions that arrive today: route to authors within 2 hours.
 
+**Total time budget June 11: 3-4 hours**
+
 ---
 
 ## June 12 (Friday) — T+11: Production and Peer Review in Parallel
@@ -479,16 +620,22 @@ Authors continue writing in unreviewed sections. Peer review is not a blocking g
 With Wave 1+2 monitoring ongoing and Phase 6 production continuing, begin planning the Wave 3 editorial pass (starts June 15).
 
 - [ ] List any reader feedback items from the June 5 Wave 1+2 publication that should inform Wave 3
-- [ ] Identify which Wave 3 documents require cross-references to Wave 1+2 content (per the MAY_31_ACTIVATION_DECISION_FRAMEWORK.md Part 5 plan)
+- [ ] Identify which Wave 3 documents require cross-references to Wave 1+2 content
 - [ ] Estimate Wave 3 editorial hours: target 8-12 hours across June 15-27
+
+### 12:00 UTC: Mid-Window Reviewer Check
+
+Send to all peer reviewers: "You're halfway through the review window. Any questions about the template or the domain? Still on track for June 13 17:00 UTC?" Any reviewer who does not reply by 17:00 UTC is elevated to WATCH status — activate backup if no response by June 12 17:00 UTC.
 
 ### 10:00-17:00 UTC: Production and Peer Review Monitoring
 
 All Phase 6 authors writing. Orchestrator monitoring:
-- [ ] Any peer reviewer delays signaled? If so, activate backup immediately (do not wait for T+12 deadline)
+- [ ] Any peer reviewer delays signaled? If so, activate backup immediately
 - [ ] Any author word counts declining compared to T+6-T+8? Flag as burnout signal, address directly
 
 **Expected output at T+11 EOD**: Phase 6 production at 40-60% of target word count for all domains. Peer reviews in progress. Wave 3 editorial plan drafted.
+
+**Total time budget June 12: 2-3 hours**
 
 ---
 
@@ -505,7 +652,7 @@ Send one reminder to all peer reviewers: "Peer review due today by 17:00 UTC. Pl
 All peer reviews due by 17:00 UTC.
 
 **If a peer review is not returned by 17:00 UTC**:
-- Activate CT-4 (peer review delay contingency) per PHASE_5_UNIFIED_RISK_TRIGGER_RUNBOOK.md
+- Activate RT-4 (peer review bottleneck) per PHASE_5_WAVE_1_UNIFIED_RISK_TRIGGER_RUNBOOK.md
 - Contact backup reviewer immediately
 - Begin orchestrator internal review using structured template (2-3 hours per domain)
 
@@ -515,6 +662,8 @@ For each received review:
 1. Read and classify each item: (M) Mandatory, (A) Advisory, (D) Disputed
 2. Prioritize: corrections and citation requests are mandatory for T+14; scope concerns are advisory
 3. Send consolidated feedback to each author by 23:00 UTC
+
+**Total time budget June 13: 3-4 hours**
 
 ---
 
@@ -531,7 +680,7 @@ Each Phase 6 author:
 - [ ] Completes any remaining unfinished sections (minor gaps acceptable if flagged with [CITATION NEEDED])
 - [ ] Runs placeholder scan: grep for [, TODO, TBD, fill, NEEDS in their document — resolve what is resolvable
 - [ ] Cross-reference check: verify any references to other Phase 6 domains point to correct file and section
-- [ ] Final word count confirmation: document should be at 60-90% of target word count by today EOD (below 60% triggers CT-3 conversation)
+- [ ] Final word count confirmation: document should be at 60-90% of target word count by today EOD (below 60% triggers scope conversation)
 
 ### 09:00-12:00 UTC: Orchestrator T+13 Tasks
 
@@ -543,6 +692,8 @@ Each Phase 6 author:
 ### 13:00 UTC: Wave 1+2 Ongoing Reader Response Review
 
 Quick review of any Wave 1+2 reader responses received June 5-13. Compile into Wave 3 editorial notes. No action today; file for June 15-27.
+
+**Total time budget June 14: 2-3 hours**
 
 ---
 
@@ -586,6 +737,8 @@ Wave 1 complete. Wave 3 editorial pass begins June 15.
 - [ ] Confirm June 15-27 editorial hours available (8-12 hours total)
 - [ ] Activate Wave 3 editorial sprint — first editorial pass begins today
 
+**Total time budget June 15: 5-6 hours**
+
 ---
 
 ## Post-Wave-1: June 15-30 Summary (Option A Continuation)
@@ -621,4 +774,4 @@ Days with buffer (can slip 1 day without cascade): June 2, June 6, June 7, June 
 
 ---
 
-*This timeline is production-ready. Open it June 1 06:00 UTC and execute each day's tasks in order. Log decisions and gate outcomes in WORKLOG.md at each milestone.*
+*This timeline is production-ready. Open it June 1 06:00 UTC and execute each day's tasks in order. Log decisions and gate outcomes in WORKLOG.md at each milestone. Reference PHASE_5_WAVE_1_CRITICAL_PATH_ANALYSIS.md for dependency visualizations and PHASE_5_WAVE_1_UNIFIED_RISK_TRIGGER_RUNBOOK.md when any risk trigger fires.*
