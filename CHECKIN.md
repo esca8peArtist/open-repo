@@ -5,6 +5,37 @@
 
 ---
 
+## Since Last Check-in (Session 2309, 2026-05-31 05:20 UTC)
+
+**What was accomplished**:
+- ✅ **Exploration Queue Items 6-7 COMPLETE**: 
+  - Item 6 (seedwarden Path B): `SEEDWARDEN_PATH_B_FULL_LAUNCH_CHECKLIST.md` — production-ready 7-section checklist for full-launch contingency (Instagram/TikTok/Pinterest + Kit, 3.5-4.5 hours optimized timeline, checkpoint gates, troubleshooting, success criteria). Committed: 3ba9af7c.
+  - Item 7 (resistance-research): `PHASE_2_DOMAIN_CANDIDATES_PRELIMINARY_RESEARCH.md` — phase 2 domain readiness assessment with priority ranking. Critical finding: all 4 candidate domains production-complete, only 48-65 hours post-production work remaining. Priority 1: Domain 58 (Trump v. Barbara trigger).
+- ✅ **All critical-path exploration items now complete**: Items 1-7 finished; zero additional autonomous work available before June 1.
+- ✅ **Orchestration files updated**: PROJECTS.md, WORKLOG.md current; ready to commit to master.
+
+**What's in progress**:
+- **Awaiting user decisions** (no autonomous work remains):
+  - Systems-resilience Phase 5/6 (deadline May 31 23:59 UTC = 18.6h remaining)
+  - Seedwarden Path A vs B (deadline June 1 00:00 UTC = 18.6h remaining)
+  - Stockbot deployment approval (Phase 3 complete, awaiting signal)
+
+**Critical deadlines TODAY**:
+- **May 31 23:59 UTC** (18.6h remaining): Systems-resilience Phase 5 timing + Phase 6 domain decisions. Auto-fallback: Phase 5 Option A + Phase 6 Domain A solo.
+- **May 31 23:59 UTC**: Seedwarden path decision. Auto-fallback: Path A (minimal 45-60 min).
+
+**Items needing your input**:
+- **Systems-resilience Phase 5/6 confirmation**: Confirm timing + domain selections to override auto-fallback defaults. Recommendation: Option A (Wave 1+2 June 5, Wave 3 June 30) + Domain A solo (Community Economic Resilience).
+- **Seedwarden path confirmation**: Minimal viable (Path A) or full launch (Path B)? If Path B chosen, SEEDWARDEN_PATH_B_FULL_LAUNCH_CHECKLIST.md is ready for June 1 00:00 UTC execution.
+- **Stockbot deployment approval**: Models validated, backtesting complete. Options available: A (JPM only), B (JPM + AMZN, RECOMMENDED), C (+ AAPL retrain).
+
+**Suggested priorities for next session**:
+1. **By June 1 00:00 UTC**: User provides Phase 5/6 + seedwarden decisions, or auto-fallback activates Option A + Path A.
+2. **June 1 13:00–14:00 UTC**: Resistance-research Domain 39 email send (5 emails, HHS timing critical).
+3. **June 2 13:30 UTC**: Stockbot market open (Jetson ready for Monday trading).
+
+---
+
 ## Since Last Check-in (Session 2308, 2026-05-31 04:30 UTC)
 
 **What was accomplished**:
