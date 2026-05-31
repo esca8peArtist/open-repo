@@ -1,0 +1,6 @@
+Running axe-core 4.11.4 in chrome-headless
+Error: Error: Server terminated early with status 2
+    at /home/awank/dev/SuperClaude_Framework/projects/open-repo/node_modules/selenium-webdriver/remote/index.js:256:70
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Please report the problem to: https://github.com/dequelabs/axe-core-npm/issues/
+
