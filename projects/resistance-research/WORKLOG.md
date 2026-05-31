@@ -2,6 +2,28 @@
 
 ---
 
+## June 1, 2026 — General Research Agent — Item 7: Phase 2 Domain Candidates Preliminary Research
+
+**Task**: Conduct preliminary research on four Phase 2 domain candidates (Domains 56, 57, 58, 59) identified from Domain 40-list deep research. Assess research confidence, estimate writing time, pre-stage source lists, and rank domains for post-Phase-1 execution.
+
+**Most important findings**:
+
+1. **All four domains are already production-complete** — the critical upfront finding. PHASE_2_NEW_DOMAINS_CANDIDATES.md (May 15) estimated 40–60 hours per domain based on the assumption they were unwritten. All four production documents exist in `domains/`. Total remaining work is 48–65 hours across all four, not 138–172 hours.
+
+2. **Domain 58 (Tribal Sovereignty) is highest priority** — *Trump v. Barbara* ruling (expected June/July 2026) is the distribution trigger. The document is 92% ready with only Gist creation and ruling integration remaining. The ruling will generate an immediate distribution window regardless of outcome (favorable = "argument rejected" framing; adverse = "active holding" framing). Gist should be created immediately.
+
+3. **Domain 59 (Economic Precarity) has the most immediate distribution window** — SNAP work requirements (effective March 2026) have already produced documented 11% national enrollment declines, corroborating the document's causal argument. June 2026 OBBBA implementation scrutiny is the live advocacy window. The causal mechanism gap (benefit-loss to civic-participation-loss, distinct from general income-voting turnout gap) needs 4–6 hours of additional sourcing from PMC literature.
+
+4. **Domain 57 (Multilateral Withdrawal) is lowest urgency** — distribution window is August 10 (pre-UNGA 81 High-Level Week). The domestic-accountability causal pathway needs 4–6 additional academic sources to reach the evidential density standard of the other three domains. Commence sourcing in July 2026.
+
+5. **Domain 56 (Civil Service) is already in active Tier 1 distribution** — Gist live, May 28 send complete. Remaining work is Tier 2 contact expansion (9–12 hours).
+
+**File created**: `projects/resistance-research/PHASE_2_DOMAIN_CANDIDATES_PRELIMINARY_RESEARCH.md` — 5,800+ words covering four domains with confidence assessments, time estimates, 20-source pre-staged lists per domain, highest-impact angles, and ranked execution sequence.
+
+**Sources consulted**: `DOMAINS_41_43_SOURCE_STAGING.md`, `PHASE_2_NEW_DOMAINS_CANDIDATES.md`, `domain-40-surveillance-capitalism-electoral-manipulation.md`, and the four production-complete domain documents in `domains/`. External search verification on: Schedule Policy/Career litigation status (AFGE/AFSCME March 2026 complaint confirmed); *Trump v. Barbara* ruling status (pending, SCOTUSblog confirms likely adverse to Trump); SNAP work requirement enrollment declines (confirmed, 11% national decline through February 2026); multilateral withdrawal domestic accountability sources (gap confirmed — academic sourcing needed).
+
+---
+
 ## June 1, 2026 — General Research Agent — Phase 2 Low-Engagement Contingency Plan
 
 **Task**: Research and write `PHASE_2_CONTINGENCY_EXECUTION_PLAN.md` — a Day 14 decision guidebook covering three engagement paths (Strong >60%, Moderate 30–60%, Weak <30%) with detailed cohort analysis protocol for the weak-engagement scenario.
