@@ -5,22 +5,28 @@
 
 ---
 
-## Since Last Check-in (Session 2313, 2026-05-31 06:XX UTC)
+## Since Last Check-in (Session 2313, 2026-05-31 04:20–06:15 UTC)
 
 **What was accomplished**:
-- ✅ **ORIENTATION COMPLETE**: Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md. Confirmed Session 2312 conclusion accurate: zero autonomous work remains, all 7 projects production-ready for June 1-2 execution windows, only user decisions pending.
-- ✅ **EXPLORATION QUEUE REGENERATED**: Previous queue (Sessions 2307-2311, 13 items) all COMPLETE. Added 3 new meaningful exploration items:
-  1. **Stockbot June 2-4 Post-Deployment Event Runbook** — Decision trees for market-open monitoring, mid-session error recovery, thermal escalation
-  2. **Resistance-research Phase 2 Automation Analysis** — Cost-benefit of automation vs. manual for Domains 38-40 post-Phase-1
-  3. **Seedwarden Phase 3 Community Builder Framework** — Recruitment, compensation, onboarding for Phase 3 scaling (July-August)
-- ✅ **GIT STATUS VERIFIED**: Restored auto-generated ORCHESTRATOR_STATE.md. Stockbot submodule has thermal monitoring changes staged. Orchestration files (PROJECTS.md, CHECKIN.md) current and ready to commit.
-- ✅ **USAGE VERIFIED**: Token budget healthy (11.3% Sonnet, 9.2% all-models, reset in ~44h).
+- ✅ **ORIENTATION COMPLETE**: Verified ORCHESTRATOR_STATE.md (Session 2312 conclusion accurate), BLOCKED.md (2 user-action blocks, no auto-resolvable), PROJECTS.md (all statuses current), INBOX.md (empty).
+- ✅ **EXPLORATION QUEUE ITEM #1 EXECUTED**: `projects/stockbot/JUNE_2_4_EVENT_RUNBOOK.md` (2,127 lines, production-ready) — Comprehensive event-response procedures for June 2-4 market operations (first three market days post-deployment). Covers: market-open pre-flight (4-gate checklist), mid-session error recovery (6 error types with A/B/C response paths), market-close post-mortem, June 3-4 monitoring cadence, decision trees, recovery procedures, June 4 go/no-go criteria for Phase 2 activation. Bridges pre-deployment validation (Session 2311) to live trading execution. Confidence: 92%. Committed to projects/stockbot/.
+- ✅ **USAGE VERIFIED**: Token budget healthy (11.3% Sonnet, 9.2% all-models, reset in ~43.7h). No throttling needed.
+- ✅ **GIT STATUS**: JUNE_2_4_EVENT_RUNBOOK.md committed locally; all orchestration files (WORKLOG.md, CHECKIN.md) updated; ready for final master commit.
 
-**Status**: All autonomous work complete. All critical infrastructure production-ready for June 1-2 execution. User decision deadlines:
-- **May 31 23:59 UTC** (18.5h remaining): Phase 5/6 decision → auto-fallback activates if no input
-- **June 1 00:00 UTC**: Seedwarden path decision → auto-fallback to Path A
+**What's blocked (user decisions only)**:
+1. **Phase 5/6 decision** — Due May 31 23:59 UTC (18.0h remaining). Three options ready (Option A staged, Options B/C documented). Auto-fallback to Option A if no input.
+2. **Seedwarden path decision** — Due June 1 00:00 UTC. Both Path A (54-min execution) and Path B (3.5-4.5-hr execution) checklists production-ready.
+3. **Stockbot deployment** — Code ready (Phase 3 complete); awaiting user market-open decision. JUNE_2_4_EVENT_RUNBOOK.md now covers all live-trading responses.
 
-**Assessment**: Standing by until user decisions or deadline auto-activation. Three new Exploration Queue items available for background work if needed before June 1 execution windows.
+**Critical timeline**:
+- **May 31 23:59 UTC** (18.0h): Phase 5/6 deadline. Auto-fallback activates if no decision.
+- **June 1 00:00 UTC**: Seedwarden path deadline. Auto-fallback to Path A.
+- **June 1 08:00–09:00 UTC** (if Path A): Seedwarden launch (54-min execution checklist ready).
+- **June 1 13:00–14:00 UTC**: Resistance-research Domain 39 distribution (HHS deadline 14:00 UTC, 60-min checklist ready).
+- **June 2 02:00–11:00 UTC**: Stockbot thermal validation (checklist ready from Session 2311).
+- **June 2 13:30 UTC**: Live trading market open (all monitoring, error recovery, post-mortem checklists ready).
+
+**Assessment**: All critical infrastructure production-ready. Stockbot June 2-4 event runbook now complete — fills last gap before market open. Standing by for user decisions (Phase 5/6 by May 31 23:59 UTC, seedwarden path by June 1 00:00 UTC) or auto-fallback activation. Two remaining exploration queue items available if needed.
 
 ---
 
