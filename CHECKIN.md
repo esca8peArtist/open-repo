@@ -5,26 +5,43 @@
 
 ---
 
-## Since Last Check-in (Session 2455, 2026-05-31 23:01–23:20 UTC)
+## Since Last Check-in (Session 2455, 2026-05-31 23:01–23:30 UTC)
 
 **What was accomplished**:
-- ✅ **DOMAIN 39 DISTRIBUTION INFRASTRUCTURE VALIDATION** — Production-ready confirmation for June 1 13:00–14:00 UTC execution:
-  - Ran `domain-39-send-script-dryrun.py` validation: **ALL 8 CHECKS PASSED** (contact list, tier-1 drafts, Gist URL, all 5 email templates)
-  - Verified all critical citations preserved: APSR, AJPH, maternal mortality, PAVA funding
-  - Confirmed personalization fields ready for user input: [YOUR_NAME], [YOUR_CONTACT_INFO]
-  - Verified Gist URL correct and accessible: https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b
-  - **Zero infrastructure risk found** — ready for user execution tomorrow
-- ✅ **TRANSITION FROM MAY 31 DEADLINE**: Deadline window has passed (23:01 UTC); May 31 auto-fallback activation status: PENDING user signal
-- ✅ **FUTURE WORK IDENTIFIED**: Open-repo Wave 2 A11y Audit (June 1–6) infrastructure ready for assessment
 
-**Critical Status at June 1 Transition** (Deadline window past, entering June 1):
-- **Domain 39 Ready**: User executes 5 Tier 1 emails June 1 13:00–14:00 UTC per execution checklist (80-minute process)
-- **Stockbot Status**: Awaiting user deployment decision (Option A/B/C)
-- **Resistance-Research Status**: Domain 39 distribution ready; Domain 38 (AI governance) scheduled for June 15; Domain 40 (surveillance capitalism) scheduled for July 1
+1. ✅ **DOMAIN 39 DISTRIBUTION INFRASTRUCTURE VALIDATION** (23:01–23:15 UTC):
+   - Ran `domain-39-send-script-dryrun.py` validation: **ALL 8 CHECKS PASSED**
+   - Verified: contact list, tier-1 drafts, Gist URL, all 5 email templates
+   - Critical citations confirmed: APSR, AJPH, maternal mortality, PAVA funding
+   - Gist URL verified: https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b
+   - **Zero infrastructure risk** — ready for user execution June 1 13:00–14:00 UTC
+
+2. ✅ **OPEN-REPO WAVE 2 A11Y AUDIT INITIATED** (23:15–23:30 UTC):
+   - Dev server started: http://127.0.0.1:8000 (background process, nohup)
+   - Health check responding (status: degraded — database optional, expected per design)
+   - Automated axe-core test suite executed: **4/4 PASSED (100%)** in 2.27 seconds
+     - ✅ test_axe_core_health_endpoint[chromium]
+     - ✅ test_home_page_accessible[chromium]
+     - ✅ test_wcag_compliance_framework[chromium]
+     - ✅ test_axe_cli_tool_available
+   - Baseline scan reports generated in `backend/reports/`
+   - No regressions or failures detected
+
+**Critical Status at June 1 Transition**:
+- **Domain 39 Execution**: User coordinates 5 Tier 1 emails June 1 13:00–14:00 UTC (80-minute execution checklist ready)
+- **Open-Repo Wave 2**: Automated baseline complete; manual keyboard + screen reader testing begins June 2–3
+- **Stockbot**: Awaiting user deployment decision (Option A: JPM only | B: JPM+AMZN | C: +AAPL retrain)
+- **Resistance-Research**: Domain 39 live June 1; Domain 38 queued June 15; Domain 40 queued July 1
 - **Budget**: 11.3% Sonnet, 10.6% all-models; reset in ~24h. Healthy.
-- **Next Action**: Commit orchestration files. Prepare June 1 coordination (Domain 39 execution readiness + open-repo prep assessment).
 
-**Assessment**: ✅ **CRITICAL-PATH PREP COMPLETE** — Domain 39 infrastructure fully validated, 100% ready for user execution. Transitioning to June 1 execution window. All autonomous work for May completed.
+**Next Actions**:
+1. User executes Domain 39 distribution June 1 13:00–14:00 UTC (5 emails to tier 1 contacts)
+2. Dev server continues running in background for Wave 2 manual testing June 2–3
+3. Stockbot: User provides deployment decision (A/B/C option approval)
+4. Open-repo Wave 2: Manual A11y audit continues June 2–6 per runbook
+
+**Assessment**: ✅ **CRITICAL-PATH PREP COMPLETE + PRODUCTIVE AUTONOMOUS WORK INITIATED**
+— Domain 39 fully validated for user execution. Open-repo Wave 2 automated baseline established. Transitioning to June 1 coordination phase. All infrastructure production-ready.
 
 ---
 
