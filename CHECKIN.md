@@ -5,6 +5,49 @@
 
 ---
 
+## Since Last Check-in (Session 2457, 2026-06-01 00:15–00:45 UTC)
+
+**What was accomplished**:
+- ✅ **DEADLINE PASSED — AUTONOMOUS WORK ACTIVATED**:
+  - May 31 23:59 UTC decision deadline has passed
+  - Transitioned from 144-session standing-by to autonomous post-deadline execution
+  - All critical-path infrastructure verified production-ready at transition point
+
+- ✅ **PARALLEL AGENTS SPAWNED** (concurrent execution):
+  1. **stockbot subagent**: Phase 4 production pipeline work (automated model training, comparison framework, live tracking)
+     - Status: IN PROGRESS
+     - Expected completion: ~1 hour
+  2. **resistance-research subagent**: Domain 58 distribution staging
+     - Status: COMPLETED
+     - Deliverables: Current-status assessment, 4 advocacy windows, 5-org movement leverage map, distribution checklist
+
+- ✅ **RESISTANCE-RESEARCH DOMAIN 58 DELIVERY SUMMARY**:
+  - **Key Finding**: Domain 58 (Tribal Sovereignty) is research-complete; gap is operational/distribution, not content
+  - **Urgent Advocacy Windows Identified**:
+    - PRIMARY: *Trump v. Barbara* ruling imminent (June–July 2026) — both outcomes require immediate action
+    - Secondary: BIA Ashland closure (August), post-midterm legislation (Nov 2026), UNGA indigenous rights (Sept)
+  - **Organizations Ready for Outreach**: NARF, NCAI, Native Organizers Alliance, Brennan Center, Campaign Legal Center — all with email templates + contact intelligence
+  - **Distribution Readiness**: 3 operational items (Gist creation ~2h, contact verification, ruling integration ~1h)
+  - **Confidence**: 90% — research record complete and current through May 29 with June 1 *Trump v. Barbara* status check completed
+
+**What's in progress**:
+- stockbot Phase 4 production pipeline (autonomous agent work, ~1h remaining)
+- Resistance-research awaiting Domain 58 Gist creation + contact verification
+
+**What needs your input**:
+- **None immediate** — autonomous work is proceeding on highest-priority unblocked items
+- **After June 1 completion**: Domain 58 is ready for distribution execution the moment *Trump v. Barbara* ruling issues (72-hour response window)
+- **Stockbot deployment**: Still awaiting your approval of deployment option (A: JPM only | B: JPM+AMZN | C: +AAPL retrain) when ready
+
+**Critical Status**:
+- **Domain 39 execution**: Still ready for your June 1 13:00–14:00 UTC coordination (5 Tier 1 emails to healthcare/voting rights contacts)
+- **Open-repo Wave 2**: Automated baseline complete; manual A11y testing ready to begin June 2
+- **Resistance-research**: Domain 58 staging in final operational phase (Gist + contact verification); Domain 39 awaiting your execution
+
+**Budget**: Sonnet ~11%, all-models ~10%; reset in ~24 hours. Healthy.
+
+---
+
 ## Since Last Check-in (Session 2456, 2026-05-31 23:10–23:15 UTC)
 
 **What was accomplished**:
