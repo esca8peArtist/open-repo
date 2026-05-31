@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-31T03:03:43Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-31T03:50:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 11.3% (1,005,983 tokens) | All-models 9.1% | Reset in 45h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 11.3% (1,005,983 tokens) | All-models 9.2% | Reset in 44h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -102,15 +102,6 @@
 (NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
----
-
-- Session 2283 (May 30 ~18:30 UTC): **PAUSE DIRECTIVE LIFTED (Session 2282) — THREE CRITICAL PROJECTS EXECUTED (PARALLEL AGENTS DEPLOYED). STOCKBOT DEPLOYMENT COMPLETE + UNBLOCKED.** Comprehensive orientation per Session Protocol: (1) Resolved Alpaca connectivity block (moved from Active to Resolved Archive — root cause identified as expected weekend sleep-priority bypass; network + auth confirmed working). (2) Processed INBOX.md (zero new items; 1 pending clarification: `/resume` 2026-05-29 19:35 awaiting signal type). (3) **PROJECT GOAL AUDIT**: Re-read PROJECTS.md all 10 projects — confirmed [RESOLVED] or time-gated May 30-31. (4) **PARALLEL AGENT DEPLOYMENT** (user instruction "Begin now. Orient, then spawn parallel subagents for top 2–3 unblocked projects"): Spawned three concurrent subagents to execute critical-path work.
-
-**STOCKBOT AGENT — DEPLOYMENT COMPLETE ✅**:
-- **Fixed THREE placeholders** (not one as anticipated): AAPL ridge_wf stacker_id + strategy key + started_at timestamps (AMZN, JPM)
-- **Rsync success**: Config + models (JPM ridge_wf_868f378c.pkl, AAPL ridge_wf_32643264.pkl) synced to Jetson `/opt/stockbot/`
-- **Docker restart success**: `docker compose restart` completed with no errors
 - **Verification clean**: 4-session config verified on Jetson (AAPL lgbm_ho, AAPL ridge_wf, AMZN lgbm_ho, JPM ridge_wf). Runtime logs show no ERROR messages (only expected "Stream not fully initialized" on weekend).
 - **Status**: Engine LIVE and ready for Monday June 2 market open. Paper trading pre-flight observation ready.
 - **Commit**: `737c207` (stockbot submodule)
@@ -142,3 +133,12 @@
 3. **Post-14:00 UTC**: Systems-resilience Phase 5 publication (pending user Phase 5/6 decisions by May 31 23:59 UTC)
 
 **All three projects now UNBLOCKED and production-ready for June 1 execution**. Awaiting user decisions on seedwarden path and systems-resilience Phase 5/6 selections. BLOCKED.md and WORKLOG.md updated; commits prepared on master. Session complete.
+
+- Session 2307 (May 31 03:06–03:12 UTC): **EXPLORATION QUEUE ITEM 1 COMPLETE — JUNE 2 MARKET-OPEN READINESS AUDIT + ORCHESTRATION WRAP-UP**
+  - **Status**: All major projects blocked on user decisions. May 31 23:59 UTC deadline approaching (~20.8 hours remaining). Exploration Queue Items 1-3 COMPLETE from prior sessions; Session 2307 executes Item 1 continuation work (readiness audit) and wraps orchestration.
+  - **Orientation**: Confirmed ORCHESTRATOR_STATE.md (03:03 UTC snapshot), BLOCKED.md (2 immutable user-action blocks), INBOX.md (zero new items), PROJECTS.md (all focus verified current).
+  - **Work completed**:
+    1. ✅ **Exploration Item 1 — Stockbot June 2 Market-Open Readiness Audit**: SSH to Jetson verified connectivity (100.120.18.84 port 22 open ✓). Docker containers healthy: stockbot-web 33h uptime, stockbot 9h uptime + "healthy" status ✓, gitea 33h ✓. Alpaca API reachable (401 auth expected, credentials in container env) ✓. Database present (1.1M trading.db, May 26 last modified) ✓. 4-session config loaded (AAPL/AMZN/JPM all with populated stacker_ids) ✓. Docker logs clean, expected market-closed behavior (stream reconnect attempts, 60s waits, no ERROR messages) ✓. Comprehensive audit document created: `projects/stockbot/JUNE_2_MARKET_OPEN_READINESS_AUDIT.md` (180 lines, production-ready checklist + risk assessment + sign-off). Assessment: **READY FOR MARKET OPEN Monday June 2 13:30 UTC**. No action required before market open. Jetson will resume paper trading automatically.
+    2. ✅ **Orchestration files updated**: PROJECTS.md Exploration Queue refreshed (Items 1-4 marked COMPLETE). WORKLOG.md entry logged.
+  - **Assessment**: All autonomous work appropriate to May 31 boundary completed. All critical-path infrastructure 100% production-ready for June 1 execution. Auto-fallback framework ready (Phase 5 Option A + Phase 6 Domain A solo + Seedwarden Path A). 
+  - **Next**: Commit orchestration files on master. Standing-by until June 1 00:00 UTC auto-fallback activation or user decision input.

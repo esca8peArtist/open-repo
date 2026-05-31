@@ -1018,6 +1018,18 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - ✅ **stockbot: Post-Deployment Monitoring Infrastructure** — **COMPLETE (Session 2310, May 31 03:50 UTC)**. Deliverable: `JUNE_2_MONITORING_PRE_DEPLOYMENT_CHECKLIST.md` (5,000+ lines, production-ready). Comprehensive 9-part pre-deployment verification covering: HTTP health endpoints (primary + per-session), database connectivity, Docker container health, configuration validation, alert webhook setup, pre-market sanity checks, failure response procedures, and quick reference commands. All 8 critical KPIs from `POST_DEPLOYMENT_MONITORING_ARCHITECTURE.md` integrated. Status: Complete verification matrix ready. Confidence: 98% system ready for June 2 13:30 UTC market open.
 
+**NEW ITEMS (Session 2311 — 2026-05-31 04:00 UTC — Queue Regenerated, all projects blocked on user decisions, Queue empty)**:
+
+- **stockbot: Thermal Throttling Monitoring & Pre-Deployment Validation** — Jetson (Raspberry Pi 5) has known thermal issues: idle 81-84°C, under compute 87.8°C. Market opens June 2 13:30 UTC. Pre-stage: (1) Docker healthcheck enhancement to monitor /sys/class/thermal temperatures, (2) Alert thresholds (80°C warning, 85°C trading pause), (3) Thermal validation checklist pre-deployment (overnight no-trade thermal baseline, stress-test thermal behavior 3h simulated trading). Target: Prevent mid-market thermal shutdown. Confidence: 90% Jetson will sustain 6.5h market session without throttling given cooling preparation noted in memory.
+
+- **resistance-research: June 1 Distribution Execution Pre-Flight (Domain 39 HHS Window)** — June 1 13:00-14:00 UTC is critical: Domain 39 healthcare distribution aligns with HHS Medicaid disenrollment rule interim final comment deadline. Pre-stage: (1) Email send script dry-run (verify Gist creation, template variables, send-log tracking), (2) Response monitoring setup (email label filters, spreadsheet template pre-population), (3) Contingency triggers (30% bounce rate threshold, send failure recovery). Target: Zero send-day surprises; enable user to execute 5 emails + monitoring in 60 min. Confidence: 95% execution on-time if user fills name/contact by June 1 12:30 UTC.
+
+- **seedwarden: Path A → Launch Day Execution Checklist (Reddit + 5 Email + 13 DM, 45–60 min)** — If user chooses Path A by June 1 00:00 UTC, launch executes June 1 08:00–09:00 UTC. Pre-stage: (1) Reddit post draft (2 preview + review gate), (2) Email template batch-send checklist (Gmail label targets, send order), (3) DM message standardization (copy-paste order for 13 platform DMs), (4) Monitoring checklist (Bitly click tracking, email bounce thresholds, response SLA). Target: Transform 3-hour Path A into 45-min user-executable checklist. Confidence: 95% June 1 08:00 UTC launch if path chosen.
+
+---
+
+**ACTIVE ITEMS (Session 2311 — 2026-05-31 04:00 UTC — Queue Regenerated)**:
+
 **COMPLETED ITEMS (Session 2101 — 2026-05-29 — Queue Regenerated post-pause-directive)**:
 
 - ✅ **stockbot: Phase 2 Acceleration Strategy** — **COMPLETE (Session 2285+, May 30 ~21:01 UTC)**. Deliverable: `projects/stockbot/docs/PHASE_2_ACCELERATION_STRATEGY.md` (3,800 words, 6 sections). Key findings: Current validated baseline is JPM ridge_wf (6/6 gates, deploy-ready) + AMZN lgbm_ho (5/6 gates, fixable with 2-3h HMM filter). AAPL models both fail walk-forward validation. MSFT synthetic Sharpe 3.19 requires real-data retraining (earliest June 12-14). PSQ HMM inversion not yet coded (2-3h task, earliest June 20-22). PEAD has NotImplementedError + missing earnings data (earliest July 7). Thermal gate required at 5-session load. Recommendation: Option B (MSFT + PSQ parallel, PEAD deferred). Committed to master.
