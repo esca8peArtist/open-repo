@@ -31,8 +31,8 @@
   - **Confidence**: 90% — research record complete and current through May 29 with June 1 *Trump v. Barbara* status check completed
 
 **What's in progress**:
-- stockbot Phase 4 production pipeline (autonomous agent work, ~1h remaining)
-- Resistance-research awaiting Domain 58 Gist creation + contact verification
+- stockbot Phase 4 production pipeline (autonomous agent work, spawned Session 2457, in-progress)
+- Resistance-research Domain 58: 3 outstanding items (Gist creation, NOA contact verification, Trump v. Barbara ruling integration) — all documented and staged in WORKLOG.md
 
 **What needs your input**:
 - **None immediate** — autonomous work is proceeding on highest-priority unblocked items
