@@ -4,6 +4,44 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — Community Builder Recruitment Framework — May 31, 2026
+
+**Task**: Exploration Queue Item: seedwarden Phase 3 Community Builder Identification Framework.
+Designed research framework for identifying and recruiting paid community builders for Phase 3
+scaling (July–August 2026).
+
+**File produced**: `COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md`
+
+**Source documents read**: HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md (v3.0, primary input),
+PHASE_3_AUDIENCE_STRATEGY.md, PHASE2_TO_PHASE3_TRANSITION.md, WORKLOG.md.
+
+**External research**: Herbal Academy affiliate commission rate (15%, 21-day cookie);
+Patreon platform take rate (10% + ~3% payment processing = 12–13% total for new creators
+post-August 2025); Skillshare royalty pool model ($0.05–$0.10/min watched, ~20–30% rev share);
+Teachable/Kajabi platform fee (0–7.5% depending on plan); Udemy instructor revenue split (37%
+platform-sourced, 97% instructor-sourced sales).
+
+**Key structural decisions**:
+1. Three recruiter profiles defined: Content Creator (8–15 hr/wk, $150 base + 25% rev share),
+   Practice Builder (3–6 hr/wk, $250 retainer + $15/referral), Mentor (1–2 hr/wk, $75/review).
+2. Five compensation models analyzed (Patreon, Herbal Academy affiliate, Skillshare royalty pool,
+   Teachable/Kajabi flat-fee, Direct hybrid retainer). Recommendation: tiered hybrid
+   (small fixed base + performance), moving to pure revenue share at Tier 3 scale.
+3. Pure revenue share rejected for pre-launch recruitment; hourly billing rejected for alignment
+   and infrastructure reasons.
+4. Three outreach templates written: Content Creator (Instagram/TikTok DM, audience-first framing),
+   Practice Builder (AHG directory cold email, network-first framing), Mentor (named direct
+   personal outreach only — warm introduction preferred).
+5. Onboarding checklist: 8 steps, 17–25 min target, under 30 min achieved.
+6. KPI sets: 5 KPIs per builder type; 11-minute monthly tracking dashboard; 30-min quarterly synthesis.
+7. Recruitment timeline: July 1 open (30 days post-launch gate) → first Zone guide published
+   August 17–23 → AHG Symposium outreach window August 14+.
+8. Minimum viable Phase 3 team: 2+ Content Creators + 1 Practice Builder + 1 Mentor.
+   Solo fallback viable through July if recruitment stalls; September stall creates 12-month
+   delay in practitioner-tier revenue scaling.
+
+---
+
 ## Session — Path B Full-Launch Contingency Checklist — May 31, 2026
 
 **Task**: Exploration Queue Item 6. Produce production-ready Path B full-launch contingency
