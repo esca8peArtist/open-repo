@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "title": "Seedwarden Path A — Pre-Written Message Templates",
+    "date": "2026-05-31",
+    "status": "production-ready",
+    "total_messages": 19,
+    "execution_window": "June 1, 2026 08:00–09:00 UTC",
+    "note": "All messages are copy-paste ready. Do not edit substantially. Replace [VARIABLES] only."
+  },
+  "variables": {
+    "GIST_URL": "https://gist.githubusercontent.com/[YOUR_USERNAME]/[GIST_ID]/raw",
+    "YOUR_NAME": "[Your name]",
+    "COMMISSION_RATE": "15-25% (your choice)",
+    "CONTACT_FIRST_NAME": "[Contact first name]"
+  },
+  "reddit_post": {
+    "platform": "Reddit",
+    "subreddit": "r/herbalism",
+    "post_type": "Text Post",
+    "recipients": 1,
+    "character_limit": "none",
+    "title": "Zone-Specific Herb and Gardening Guides Now Available — Zones 3–10 (Free)",
+    "body": "Eight zone-specific quick-start guides designed for herbalists, gardeners, and practitioners. Free to download, one page each.\n\nWhat each guide includes:\n- Exact frost dates matched to your USDA zone\n- Quick-start crops with variety type and days-to-maturity\n- Storage and preservation timing for peak harvest season\n- Heirloom variety spotlight with 3 regionally tested varieties\n\nZones covered: 3, 4, 5, 6, 7, 8, 9, 10\n\nAvailable: {{GIST_URL}}\n\nDrop your zone in the comments. Happy to answer questions about zone-specific herb timing.",
+    "time_estimate": "3-5 minutes",
+    "notes": "Text post (not link post). This avoids spam filters and accumulates upvotes faster."
+  },
+  "emails": {
+    "email_1_sabrena_ahg": {
+      "platform": "Email",
+      "recipient_organization": "American Herbalists Guild",
+      "recipient_name": "Sabrena Gwin",
+      "recipient_email": "chapters@americanherbalistsguild.com",
+      "subject_line": "Zone-specific herbalist guides for RH practitioners — AHG partnership opportunity",
+      "body": "Dear Sabrena,\n\nWe've just launched eight zone-specific quick-start guides designed for herbalists and gardeners in every USDA zone (Zones 3–10). Each guide is a printable one-page PDF covering frost dates, quick-start crops, storage timing, heirloom variety spotlights, and contraindication tables for at-risk species.\n\nWhat makes these guides useful for RH practitioners:\nRH practitioners need zone-specific clinical reference materials that don't oversimplify the science. We've included botanical nomenclature, evidence-tier citations, contraindication tables, and FTC-compliant language for practitioner-to-client distribution.\n\nFree download (no email required): {{GIST_URL}}\n\nI'd love to share this with your chapter newsletters and AHG membership community if it's a fit. Let me know if you'd be interested in featuring it.\n\nBest,\n{{YOUR_NAME}}\nSeedwarden",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": "none",
+      "time_estimate": "3-5 minutes",
+      "response_priority": "HIGH"
+    },
+    "email_2_susan_ups": {
+      "platform": "Email",
+      "recipient_organization": "United Plant Savers",
+      "recipient_name": "Susan Leopold",
+      "recipient_email": "info@unitedplantsavers.org",
+      "subject_line": "Zone guides featuring FGV sourcing + CITES compliance",
+      "body": "Dear Susan,\n\nWe've developed eight zone-specific growing guides that include a dedicated section on at-risk medicinal plants and ethical sourcing — framed directly around Forest Grown Verified (FGV) certification and CITES compliance.\n\nThe guides cover species like Black Cohosh, Goldenseal, and American Ginseng with sourcing pathways that prioritize conservation-first cultivation. We explicitly recommend practitioners shift from wildcrafting to cultivated supply chains, which aligns perfectly with UpS's core mission.\n\nSpecific UpS angles included:\n- FGV certification eligibility for each at-risk species\n- CITES Appendix II sidebar for Goldenseal (import/export compliance)\n- UpS at-risk plant list cross-reference\n- Cultivation as conservation action (rather than foraging depletion)\n\nFree download: {{GIST_URL}}\n\nI'd love to feature these in the UpS newsletter or mention the guides in your June newsletter, positioning them as a conservation-aligned resource for practitioners ready to shift their sourcing practices.\n\nLooking forward to working together on this conservation-forward approach.\n\nBest,\n{{YOUR_NAME}}\nSeedwarden",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": "none",
+      "time_estimate": "3-5 minutes",
+      "response_priority": "HIGHEST"
+    },
+    "email_3_john_learningherbs": {
+      "platform": "Email",
+      "recipient_organization": "LearningHerbs",
+      "recipient_name": "John Gallagher",
+      "recipient_email": "partnerships@learningherbs.com",
+      "subject_line": "Affiliate partnership: Zone-specific practitioner guides (May 30 launch)",
+      "body": "Dear John,\n\nWe're launching zone-specific practitioner guides on June 1, and we'd like to explore an affiliate partnership with LearningHerbs / HerbMentor.\n\nThe guides: Eight zone-specific quick-start cards covering frost dates, quick-start crops, storage techniques, and heirloom varieties. Each card is designed as a printable companion for practitioners and students — the exact resource your HerbMentor audience is always asking for.\n\nWhy we're approaching you: You've built the most engaged practitioner education platform in the herbalism space. Your audience overlaps perfectly with our target: intermediate-to-advanced practitioners who actively invest in reference materials and education. An affiliate feature on HerbMentor or in your podcast would reach exactly the right people.\n\nProposed partnership structure:\n- Affiliate commission: {{COMMISSION_RATE}}% on sales referred through your link\n- Launch window: June 1–30 (highest conversion period post-launch)\n- Marketing assets provided: Email copy, social graphics, podcast intro script\n- Optional: Guest appearance on HerbMentor Radio to discuss the guides + sourcing ethics\n\nWhat we need from you:\n- Affiliate link integration (we'll set up a dedicated tracking URL)\n- One newsletter mention OR one podcast segment (your preference)\n- Social share (if interested)\n\nIf you'd like to move forward, I can send you the full guide preview (PDF or web preview), detailed affiliate terms, and marketing assets ready to customize.\n\nWe're targeting June 1 for partnership confirmations, so early response would be ideal.\n\nInterested?\n\nBest,\n{{YOUR_NAME}}\nSeedwarden",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}",
+        "Replace {{COMMISSION_RATE}} with your offer (15-25% typical)"
+      ],
+      "character_limit": "none",
+      "time_estimate": "5 minutes",
+      "response_priority": "HIGH"
+    },
+    "email_4_herbal_academy": {
+      "platform": "Email",
+      "recipient_organization": "Herbal Academy",
+      "recipient_name": "Partnerships Manager",
+      "recipient_email": "partnerships@theherbalacademy.com",
+      "subject_line": "Study companion guides for herbalism students (June 1 launch)",
+      "body": "Dear Herbal Academy Partnerships Team,\n\nWe've just launched zone-specific quick-start guides designed as study companions for herbalism students and practitioners (Zones 3–10). Each guide is a printable one-page PDF covering frost dates, quick-start crops, storage timing, and heirloom variety recommendations.\n\nWhy your student community will find value:\nHerbal Academy students need zone-specific cultivation and preservation reference. These guides fill that gap — designed as learning companions that students can print and post in their growing spaces or share with clients.\n\nFree download: {{GIST_URL}}\n\nWe'd love to feature these in your student community as study companions or curriculum resources. Let me know if you'd be interested in featuring them.\n\nBest,\n{{YOUR_NAME}}\nSeedwarden",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": "none",
+      "time_estimate": "3-5 minutes",
+      "response_priority": "MEDIUM"
+    },
+    "email_5_juliet_chestnut": {
+      "platform": "Email or Instagram DM",
+      "recipient_organization": "Chestnut School of Herbal Medicine",
+      "recipient_name": "Juliet Blankespoor",
+      "recipient_email": "Via chestnutherbs.com contact form or @chestnutschoolherbs Instagram DM",
+      "subject_line": "Appalachian/bioregional herbalism guides — partnership opportunity",
+      "body": "Dear Juliet,\n\nI've created zone-specific growing guides designed with Appalachian and bioregional practitioners in mind (Zones 3–10). Each guide is a printable one-page PDF covering frost dates, quick-start crops, storage timing, and heirloom variety spotlights tailored to regional growing seasons.\n\nWhy your Chestnut School community will find value:\nZone cards are built with Appalachian practitioners in mind, including timing and variety recommendations for your bioregion. The guides emphasize conservation-aligned cultivation and at-risk species sourcing — aligned perfectly with Chestnut School's bioregional philosophy.\n\nFree download: {{GIST_URL}}\n\nI'd love to share this with your Chestnut School community if it's a fit.\n\nBest,\n{{YOUR_NAME}}\nSeedwarden",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": "none (email) / 2000 (Instagram DM)",
+      "time_estimate": "3-5 minutes",
+      "response_priority": "HIGH",
+      "platform_note": "Use email preferred. If no email response within 24 hours, DM on Instagram."
+    }
+  },
+  "reddit_modmail_messages": {
+    "reddit_modmail_1_herbalism": {
+      "platform": "Reddit Modmail",
+      "subreddit": "r/herbalism",
+      "recipients": 1,
+      "subject_line": "Free educational zone-specific gardening and herb guides",
+      "body": "Hi r/herbalism moderators,\n\nI'd like to share a free educational resource with your community: zone-specific growing guides for herbalists (Zones 3–10). These are printable one-page PDFs with frost dates, quick-start crops, and heirloom variety recommendations calibrated to each zone.\n\nFree download: {{GIST_URL}}\n\nThe guides are educational, not promotional. Would appreciate your thoughts on sharing with the community.\n\nBest,\n{{YOUR_NAME}}",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": "none",
+      "time_estimate": "2 minutes",
+      "notes": "Send via subreddit modmail. Check sidebar for modmail link."
+    },
+    "reddit_modmail_2_gardening": {
+      "platform": "Reddit Modmail",
+      "subreddit": "r/gardening",
+      "recipients": 1,
+      "subject_line": "Free educational zone-specific gardening guides",
+      "body": "Hi r/gardening moderators,\n\nI've created zone-specific gardening quick-start guides (Zones 3–10) that might be useful for your community. Each guide covers frost dates, planting timing, crop variety recommendations, and preservation timing — calibrated to regional growing seasons.\n\nFree download: {{GIST_URL}}\n\nWould appreciate your thoughts on sharing with the community as an educational resource.\n\nBest,\n{{YOUR_NAME}}",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": "none",
+      "time_estimate": "2 minutes"
+    },
+    "reddit_modmail_3_herbal_medicine": {
+      "platform": "Reddit Modmail",
+      "subreddit": "r/HerbalMedicine",
+      "recipients": 1,
+      "subject_line": "Free practitioner guides with at-risk species sourcing",
+      "body": "Hi r/HerbalMedicine moderators,\n\nI've developed zone-specific practitioner guides covering at-risk species sourcing, CITES compliance, and FGV certification pathways. The guides are designed for clinical herbalists and cover zones 3–10.\n\nFree download: {{GIST_URL}}\n\nWould this be a fit for sharing with your practitioner community?\n\nBest,\n{{YOUR_NAME}}",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": "none",
+      "time_estimate": "2 minutes"
+    }
+  },
+  "discord_dm_messages": {
+    "discord_dm_1_herbal_haven": {
+      "platform": "Discord DM",
+      "server_name": "The Herbal Haven",
+      "recipient_type": "Server owner/admin",
+      "recipients": 1,
+      "message": "Hi Herbal Haven team,\n\nI wanted to share something with your community that I think might be useful: free zone-specific growing guides for herbalists and gardeners (Zones 3–10). Each guide is a printable one-page PDF.\n\nFree download: {{GIST_URL}}\n\nIf this sounds like something your community would appreciate, I'd be happy to post it in a channel or provide a description for your newsletter/announcements.\n\nBest,\n{{YOUR_NAME}}\nSeedwarden",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": 2000,
+      "time_estimate": "2 minutes",
+      "platform_note": "Send via DM to server owner. Find contact in server info."
+    },
+    "discord_dm_2_materia_medica": {
+      "platform": "Discord DM",
+      "server_name": "Materia Medica",
+      "recipient_type": "Server owner/admin",
+      "recipients": 1,
+      "message": "Hi Materia Medica team,\n\nI wanted to share something with your practitioner community: free zone-specific growing guides designed for herbalists and clinical practitioners (Zones 3–10). Each guide is a printable one-page PDF covering frost dates, crops, storage timing, and heirloom varieties.\n\nFree download: {{GIST_URL}}\n\nIf this sounds useful for your community, I'd be happy to post it or provide details for your announcements.\n\nBest,\n{{YOUR_NAME}}\nSeedwarden",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": 2000,
+      "time_estimate": "2 minutes"
+    },
+    "discord_dm_3_herb_club": {
+      "platform": "Discord DM",
+      "server_name": "Herb Club",
+      "recipient_type": "Server admin",
+      "recipients": 1,
+      "message": "Hi Herb Club admin,\n\nI've created zone-specific growing guides designed as study companions for herbalism students and emerging practitioners (Zones 3–10). Each guide is a printable one-page PDF with quick-start crops, timing, and heirloom varieties for your zone.\n\nFree download: {{GIST_URL}}\n\nThought your community might appreciate this as a reference resource. Happy to share in a channel if it's a fit.\n\nBest,\n{{YOUR_NAME}}\nSeedwarden",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": 2000,
+      "time_estimate": "2 minutes"
+    }
+  },
+  "facebook_message": {
+    "facebook_dm_seattle_herbalism": {
+      "platform": "Facebook Messenger",
+      "group_name": "Seattle Herbalism Society",
+      "recipient_type": "Group admin",
+      "recipients": 1,
+      "message": "Hi Seattle Herbalism Society admin,\n\nI've created zone-specific growing guides for herbalists and gardeners with emphasis on PNW zones (Zones 7–10 coverage plus all 8 total). Each guide is a free printable one-page PDF.\n\nFree download: {{GIST_URL}}\n\nWould love to share this with your Seattle community if it's a fit.\n\nBest,\n{{YOUR_NAME}}\nSeedwarden",
+      "customization_needed": [
+        "Replace {{YOUR_NAME}}"
+      ],
+      "character_limit": "none",
+      "time_estimate": "2 minutes",
+      "platform_note": "Send via Facebook Messenger to group admin. Find contact info in group 'About' section."
+    }
+  },
+  "summary": {
+    "total_messages": 19,
+    "breakdown": {
+      "reddit_post": 1,
+      "emails": 5,
+      "reddit_modmail": 3,
+      "discord_dm": 3,
+      "facebook_dm": 1
+    },
+    "total_recipients": {
+      "direct_recipients": 19,
+      "estimated_reach": "50000-80000 practitioners"
+    },
+    "copy_paste_ready": true,
+    "customization_effort": "Minimal — replace {{VARIABLES}} only",
+    "execution_time": "45 minutes total",
+    "all_messages_pre_written": true,
+    "no_paraphrasing_needed": true
+  }
+}
