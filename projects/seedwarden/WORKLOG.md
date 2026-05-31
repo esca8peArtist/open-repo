@@ -4,6 +4,39 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — Path B Full-Launch Contingency Checklist — May 31, 2026
+
+**Task**: Exploration Queue Item 6. Produce production-ready Path B full-launch contingency
+checklist for June 1, 2026 decision point. User has not yet confirmed Path A or Path B —
+this document is ready for immediate activation if Path B is chosen.
+
+**File produced**: `SEEDWARDEN_PATH_B_FULL_LAUNCH_CHECKLIST.md`
+
+**Source documents read**: TRACK_B_SOCIAL_ACCOUNT_CHECKLIST.md, SOCIAL_ACCOUNT_ARCHITECTURE.md,
+kit-account-setup-guide.md, KIT_EMAIL_LAUNCH_SEQUENCE.md, LAUNCH_WEEK_INFLUENCER_OUTREACH.md,
+HERBALIST_OUTREACH_CONTACT_LIST.md, TRACK_B_LAUNCH_DAY_RUNBOOK.md (first 100 lines),
+SEEDWARDEN_CONTINGENCY_ACTIVATION_PATHS.md.
+
+**Key findings and structural decisions**:
+1. Path B adds 3.5–4.5 hours (parallel) vs. Path A's ~60 minutes. The checklist is
+   self-contained — no other document needs to be open during execution.
+2. Wave structure (3 waves): Wave 1 = account creation (all 3 platforms simultaneously,
+   00:00–00:45 UTC); Wave 2 = Kit critical path (sequential dependency chain, 00:30–04:00 UTC);
+   Wave 3 = cross-linking verification (04:00–05:00 UTC). Saves 60–90 min vs sequential.
+3. 6 checkpoint milestones at 15-min intervals. Each has a binary GO/HOLD criterion.
+4. Troubleshooting covers top-3 failure modes per platform: Instagram (verification, creator
+   account switch, profile visibility), TikTok (age restriction, video format, bio link),
+   Pinterest (board limits, pin scheduling, image format), Kit (payment processor prompt,
+   automation Draft state, email non-delivery).
+5. Contingency trees A–E are decision trees with concrete criteria, no vague "try again."
+6. Success criteria: all metrics realistic and measurable — no viral targets. Instagram 10–20
+   followers by Day 5; TikTok 50–200 views on first video by Day 2; Pinterest 50–150 impressions
+   by Day 5; Kit Email 1 delivery 100%, open rate 40%+.
+7. Post-launch activation (Section 7) mirrors Path A go-live sequence, adds social posting
+   schedule (TikTok 2x/day, Instagram 1x/day, Pinterest 3x/day) and DM outreach priority order.
+
+---
+
 ## Session — Phase 4 Botanical Diversification Strategy — May 31, 2026
 
 **Task**: Produce comprehensive Phase 4 Botanical Diversification Strategy for post-June-22 execution decision. Independent of Phase 3 launch scope (3 or 5 bundles).
