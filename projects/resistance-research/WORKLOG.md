@@ -2,6 +2,24 @@
 
 ---
 
+## June 1, 2026 — General Research Agent — Phase 2 Low-Engagement Contingency Plan
+
+**Task**: Research and write `PHASE_2_CONTINGENCY_EXECUTION_PLAN.md` — a Day 14 decision guidebook covering three engagement paths (Strong >60%, Moderate 30–60%, Weak <30%) with detailed cohort analysis protocol for the weak-engagement scenario.
+
+**Most important findings embedded in the document**:
+1. **Existing docs cover operational mechanics thoroughly** (click thresholds, reply scoring, Day 7/14/30 trees in `day-7-14-30-decision-trees.md`). The new document adds the strategic routing layer and the 72-hour root cause / cohort analysis protocol that was missing.
+2. **Five root cause hypotheses for weak engagement**: wrong contact tier (most common), wrong framing, wrong timing (news cycle burial), organizational dysfunction at recipient, content-constituency mismatch. Each has a specific test and fix.
+3. **Constituency, domain, and contact-type cohort breakdowns**: the protocol extracts which 2–3 constituencies engaged, which domains got clicks, and which job titles replied — producing a revised Phase 2 approach grounded in actual engagement data.
+4. **The pivot evidence**: policy brief research confirms that comprehensive frameworks are filed, not shared. Operational domain-specific briefs (2-3 pages, use-case specific) are shared because they are immediately useful. The messaging revision guidance in Section 3 operationalizes this finding.
+5. **Policy windows are time-constrained regardless of path**: H.R. 492 (June–July committee window), Trump v. Barbara ruling (Domain 58 pre-stage required), OBBBA implementation (Domain 59 August 1) — all documented with relaunch deadlines that fit within Path 3's 72-hour analysis + June 22 relaunch schedule.
+6. **Weak engagement is not campaign failure** — it is a diagnostic signal. The document is explicitly framed as a decision guidebook, not a failure-blame document.
+
+**File created**: `projects/resistance-research/PHASE_2_CONTINGENCY_EXECUTION_PLAN.md` — 4,342 words
+
+**Sources consulted**: VoterVoice 2025 Advocacy Benchmark, On Think Tanks research uptake research, existing project docs (`PHASE_2_WEAK_OUTCOME_CONTINGENCY_ROADMAP.md`, `PHASE_2_CONTINGENCY_PLAYBOOK.md`, `day-7-14-30-decision-trees.md`, `PHASE_1_IMPACT_EVALUATION_FRAMEWORK.md`).
+
+---
+
 ## May 30, 2026 — General Research Agent — Exploration Queue Item 26: Wave 2 Post-Domain-39 Execution Architecture (Domains 38/40)
 
 **Task**: Produce production-ready Wave 2 execution architecture for Domains 38 (AI Regulatory Capture) and 40 (Surveillance Capitalism/Electoral Manipulation) — ready to execute June 2-3 following Domain 39 June 1 launch, without waiting for response data. Five deliverables in `projects/resistance-research/phase-2-execution/`.

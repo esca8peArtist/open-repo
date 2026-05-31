@@ -4,6 +4,24 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — Phase 4 Botanical Diversification Strategy — May 31, 2026
+
+**Task**: Produce comprehensive Phase 4 Botanical Diversification Strategy for post-June-22 execution decision. Independent of Phase 3 launch scope (3 or 5 bundles).
+
+**File produced**: `PHASE_4_BOTANICAL_DIVERSIFICATION_STRATEGY.md` (~4,200 words, 6 sections)
+
+**Source documents read**: HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md (v3.0), PHASE_4_MARKET_RESEARCH.md, PHASE_4_PRODUCT_EXPANSION_RESEARCH.md, PHASE_4_EXOTIC_MEDICINAL_SCOPING.md, PHASE_3_MEDICINAL_HERBS_FINALIZED_SELECTION.md, PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md, medicinal-herbs-candidate-list.md, PHASE_2_BUNDLE_STRATEGY.md, PHASE_3_BUNDLE_MASTER_TEMPLATE.md.
+
+**Key findings**:
+1. Five therapeutic gaps identified in Phase 1–3 coverage: pain/inflammation, nervous system (depression/anxiety), skin health (clinical dermatology), circulatory, hormonal non-reproductive. All five are taught in AHG/Herbal Academy curricula and are unmet by existing Seedwarden bundles.
+2. Top 10 Phase 4 bundle candidates ranked. Nervine Materia Medica (St. John's Wort, Skullcap, CA Poppy) ranks first (composite score 8.75) — highest practitioner demand, fastest cross-sell from Phase 3 Sleep/Nervines buyers, St. John's Wort drug interaction table is a genuine PLR-proof differentiator.
+3. Production sequenced across three waves: Wave 1 (Nervine + Skin/Lymphatic, September 15), Wave 2 (Adrenal/Metabolic + Inflammation, November 15), Wave 3 (Circulatory/Heart, December 22).
+4. Gate metrics defined: Phase 3 Days 7/14/30 unlock Wave 1 production; red-light scenario pivots to tea blends physical product track per PHASE_4_MARKET_RESEARCH.md.
+5. Inflammation Support bundle sample outline (Zone 1–8 complete): Willow Bark, Meadowsweet, Turmeric, Devil's Claw — with FairWild sourcing sidebar for devil's claw and evidence-tier differentiation across all four species.
+6. Strategic positioning confirms medical herbalism scope (not wellness) as the differentiation axis vs. Mountain Rose Herbs, Herbal Academy, Strictly Medicinal Seeds, and PLR commodity guides.
+
+---
+
 ## Session — Phase 3 Typography and Layout Design System — May 27, 2026
 
 **Task**: Design unified visual/typographic framework for Phase 3 medicinal herbs bundles, ready for content insertion June 1–22. Scope: PHASE_3_DESIGN_SYSTEM.md (2,600+ words) + phase-3-canva-starter-projects.md (template build instructions).
