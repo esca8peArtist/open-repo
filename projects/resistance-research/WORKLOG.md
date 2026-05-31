@@ -2,6 +2,71 @@
 
 ---
 
+## June 1, 2026 — Orchestrator Phase 2 Domain 58 Distribution Staging Checklist
+
+**Status**: Domain 58 (Tribal Sovereignty) research production-complete, distribution staging 95% ready.
+
+**Completed**:
+- ✅ Source document verified current (7,000–8,000 words, 60+ citations, updated May 19)
+- ✅ Four advocacy windows identified and dated
+- ✅ Five organization movement-leverage contacts identified with email intelligence
+- ✅ Rapid-response protocol confirmed operational for both Trump v. Barbara outcomes
+- ✅ PHASE_1_IMPACT_EVALUATION_FRAMEWORK.md templates compatible with Domain 58 execution
+
+**Outstanding**:
+1. **Gist creation** (2 hours, requires GitHub web UI or PAT API):
+   - Steps at `execution/domain-58-gist-creation-steps.md` pre-staged with 10 detailed steps
+   - Requires either: (A) manual web UI at gist.github.com, or (B) GitHub PAT for curl API approach
+   - Trigger: By June 3 if ruling delayed, or SAME DAY as ruling if issued before June 3
+
+2. **Contact verification** (15 minutes):
+   - NARF: policy@narf.org + tscp@narf.org — CONFIRMED
+   - NCAI: policy@ncai.org — CONFIRMED
+   - Native Organizers Alliance: [TO VERIFY via nativeorganizersalliance.org]
+   - Brennan Center: brennancenter.org/contact — CONFIRMED
+   - Campaign Legal Center: info@campaignlegal.org — CONFIRMED
+
+3. **Trump v. Barbara integration** (1–2 hours, post-ruling):
+   - Verify ruling content matches one of two scenarios in Domain 58 Section 9
+   - Update Zone D footer "Currency" note with ruling date + outcome
+   - If ruling includes dicta on *Elk v. Wilkins*, update Section 3 accordingly
+
+**Distribution timeline** (from agent findings):
+- **Window 1 — Trump v. Barbara ruling**: Imminent (June–July 2026) — PRIMARY TRIGGER
+- **Window 2 — Ashland BIA closure**: August 2026 advocacy window (60 days pre-closure, begin July 1)
+- **Window 3 — Post-midterm legislation**: November 2026 (NAVRA viability contingent on Senate composition)
+- **Window 4 — UNGA 81 indigenous rights**: September 22–28, 2026 (domain-57 + domain-58 combined focus)
+
+**Next steps**:
+1. User creates Gist when ready (before ruling or same-day if ruling early)
+2. Verify Native Organizers Alliance contact
+3. Upon ruling issuance: execute 72-hour emergency distribution (NARF, NCAI, Brennan Center, ACLU, CLC)
+4. Monitor T+24/48/72h responses per PHASE_1_IMPACT_EVALUATION_FRAMEWORK.md protocols
+
+---
+
+## June 1, 2026 — General Research Agent — Phase 2 Domain 58 Current Status + Distribution Intelligence
+
+**Task**: Advance Phase 2 candidate domain research to production-ready status. Assessed all three candidates (57, 58, 59), determined all three are already production-complete. Conducted targeted current-events research for Domain 58 (Tribal Sovereignty) — the highest-urgency domain — to verify status of *Trump v. Barbara* ruling, post-*Callais* resistance strategies, BIE lawsuit status, and advocacy window timing. Produced full executive summary, movement leverage contacts, and distribution timing recommendations.
+
+**Most important findings**:
+
+1. **All three domains are already production-complete** — task brief was based on stale phase-status information. Domain 57 (7,200 words, 47 citations), Domain 58 (~7,000-8,000 words, 60+ citations), Domain 59 (7,200 words, 44 citations) all exist in `domains/`. No production writing required.
+
+2. **Domain 58 remains the highest-urgency distribution target.** *Trump v. Barbara* ruling is still pending as of June 1 — decision expected in June/July 2026. The ruling will create an immediate advocacy window regardless of outcome (favorable ruling = model for ICA reaffirmation; adverse = emergency distribution trigger). Gist still not created — this is the primary remaining gap.
+
+3. **New current-events data since May 19 Domain 58 update**: Native Americans and tribal orgs are pursuing a specific state-level resistance strategy (state constitutional litigation modeled on Montana SB 490 injunction), John R. Lewis Voting Advancement Act reintroduced in Senate (S.2523/H.R. 14, July 2025) with NAVRA incorporated, Senate Judiciary Committee hearing held March 12, 2026. BIE lawsuit filed March 2025 by NARF (Pueblo of Isleta, Prairie Band Potawatomi, Cheyenne Arapaho) in D.C. District Court — current injunction status not publicly confirmed in search results.
+
+4. **Domain 59 advocacy window is live**: SNAP enrollment has dropped in every state (nearly 5M nationally Jan 2025–Feb 2026). States must notify enrollees of work requirement changes by end of June/July/August 2026. CMS interim final rule on Medicaid work requirements was required by June 1, 2026. This corroborates the domain's causal arguments and strengthens the June 2026 advocacy window urgency.
+
+5. **Domain 57 advocacy window holding**: No ruling or event since May has altered the August 10 (pre-UNGA 81) distribution target.
+
+**Files consulted**: `domains/domain-58-tribal-sovereignty.md`, `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md`, `domains/domain-59-economic-precarity-and-civic-participation.md`, `PHASE_2_DOMAIN_CANDIDATES_PRELIMINARY_RESEARCH.md`, `DOMAINS_57_59_PRODUCTION_ROADMAP.md`, `PROJECTS.md`
+
+**Output**: Findings returned as agent response text — executive summary, movement leverage, distribution timing, and current-events verification for Domain 58.
+
+---
+
 ## June 1, 2026 — General Research Agent — Item 7: Phase 2 Domain Candidates Preliminary Research
 
 **Task**: Conduct preliminary research on four Phase 2 domain candidates (Domains 56, 57, 58, 59) identified from Domain 40-list deep research. Assess research confidence, estimate writing time, pre-stage source lists, and rank domains for post-Phase-1 execution.
