@@ -21,8 +21,15 @@ created: 2026-05-31
 **Auto-Fallback Activation**: June 1, 2026 00:00 UTC
 
 **Publication Schedule**: 
-- Wave 1+2: June 5, 2026 (43,621 words, 10 documents, 10 domains)
-- Wave 3: June 30, 2026 (22,821 words, 2 documents, 2 final domains)
+- Wave 1+2: June 5, 2026 (43,621 words, 5 documents)
+- Wave 3: June 30, 2026 (22,821 words, 2 documents)
+
+**Wave 1+2 Document Manifest** (43,621 words total):
+1. `phase-5-wave-2-community-implementation-playbook.md`
+2. `phase-5-wave-2-conflict-resolution-framework.md`
+3. `phase-5-wave-2-psychological-support-guide.md`
+4. `phase-5-wave-2-veterinary-care-guide.md`
+5. `phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md`
 
 **Phase 6 Parallel Track**: Begins June 1 independently; Phase 5 editorial does not block Phase 6 work.
 
@@ -40,15 +47,15 @@ created: 2026-05-31
 
 1. **GitHub Release Template Preparation** (2 hours)
    - Create GitHub Release draft: `v5.0-wave-1-2-production`
-   - File manifest: 10 documents, ordered by domain and dependency (infrastructure → human systems → implementation)
+   - File manifest: Use the 5 Wave 1+2 documents listed above (ordered by domain: microgrids infrastructure, community implementation, conflict resolution, psychological support, veterinary care)
    - Release notes: 500-word summary of Wave 1+2 scope, key concepts, reading path recommendation
-   - Markdown rendering verification (all code blocks, tables, links validate)
+   - Markdown rendering verification (all code blocks, tables, links validate in all 5 documents)
    - Status: PENDING
 
 2. **Publication Artifact Integration** (3 hours)
-   - Merge Wave 1+2 documents into `PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md` (43,621 words)
-   - Table of contents with anchored links to all 10 document sections
-   - Cross-reference audit (all citations verified, no broken links within corpus)
+   - Merge Wave 1+2 documents into `PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md` (43,621 words total)
+   - Table of contents with anchored links to all 5 document sections
+   - Cross-reference audit: verify all citations within the 5 documents link correctly; no broken references
    - Author attribution line for each section
    - Status: PENDING
 
@@ -70,10 +77,10 @@ created: 2026-05-31
    - Status: PENDING
 
 **Success Criteria for Gate 1**: 
-- ✓ GitHub Release published with correct manifest
-- ✓ All 10 documents in integrated corpus, formatted + validated
-- ✓ Email + social distribution executed to all channels
-- ✓ Stakeholder and blogosphere outreach sent
+- ✓ GitHub Release published with all 5 Wave 1+2 documents correctly referenced
+- ✓ All 5 documents in integrated corpus (`PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md`), formatted + validated, cross-references verified
+- ✓ Email + social distribution executed to all channels (Tier 1 direct contacts, Tier 2 organizations, Tier 3 broadcast channels)
+- ✓ Stakeholder and blogosphere outreach sent (NGOs, academic partners, mutual aid networks, 15-20 sustainability blogs)
 
 ---
 
