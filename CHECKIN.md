@@ -3,6 +3,57 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2505, 2026-06-01 14:30–15:30 UTC — Parallel Agent Execution: Domain 51 Research + Seedwarden Verification)
+
+**Session Status**: ✅ **PHASE 2 RESEARCH MILESTONE — Domain 51 Complete (6,800 words, 65 citations); Seedwarden standing task verified 18/18**
+
+**Accomplishments**:
+
+1. **resistance-research — Domain 51 COMPLETE** (Agent a2c6dbf743c348916):
+   - ✅ **File**: `domain-51-campaign-finance-dark-money.md` (6,800 words, 65 citations, high confidence)
+   - ✅ **Research scope**: Citizens United cascade, dark money architecture post-FEC collapse, state ballot measures (California Fair Elections Act, Hawaii SB 2471, Montana I-194), AI industry PAC proliferation (OpenAI Leading the Future PAC, Anthropic AnthroPAC)
+   - ✅ **FEC status integrated**: 200+ day shutdown (longest in history), 195 pending cases with statute-of-limitations exposure, realistic quorum restoration uncertain for fall 2026 election season
+   - ✅ **Movement leverage**: Campaign Legal Center (FEC litigation + Arizona Prop 211 defense), Common Cause California (Fair Elections Act campaign), Issue One ReFormers, Senator Whitehouse, Brennan Center
+   - ✅ **Actionable window**: California July 1 distribution deadline (Fair Elections Act campaign committee formally launched late May)
+   - ✅ **Cross-domain integration**: 9 domains wired (especially Domain 56 — Seila Law/independent agency removal doctrine applies to both FEC enforcement and civil service reclassification)
+   - ✅ **Committed**: `becc2f59` — feat(resistance-research): Domain 51 campaign finance research (phase 2 candidate)
+   - **Status**: Phase 2 research now 1/4 candidates complete; Domain 51 ready for immediate distribution decision
+
+2. **seedwarden — Habit Photos Standing Task Verified 18/18 COMPLETE** (Agent aa3f4b0e7d6248972):
+   - ✅ **Task**: 18 wild edibles `-habit.jpg` full-plant photos (previously completed May 26, commit `726f0df6`)
+   - ✅ **Files verified present** with correct species names, CC-licensed (CC-BY, CC-BY-SA, CC0, Public Domain)
+   - ✅ **Notable**: lactuca-virosa (Wild Lettuce) is Kohler 1884 botanical illustration at 497x594px (below preference, but best available on Wikimedia Commons; field photo can be swapped if found)
+   - ✅ **Logging**: All 18 entries documented in HABIT_PHOTO_DOWNLOADS_LOG.md and WORKLOG.md
+   - **Status**: Standing task retired; Track B photo asset coverage 100% complete
+
+**What's Next**:
+
+1. **Domain 51 Distribution Timeline** (awaiting user decision):
+   - July 1, 2026: California Fair Elections Act advocacy window (campaign committee launching late May)
+   - Movement organizations ready: Campaign Legal Center, Common Cause California, Issue One, Brennan Center
+   - Gist creation + contact list + email templates needed (estimated 1-2 hours autonomous prep)
+
+2. **seedwarden Track B Launch** (awaiting user gate completion):
+   - 5 user action gates: Gate 4 (Google Drive PDFs, 20 min) → Gate 1 (Social accounts, 45–60 min) → Gate 3 (Kit + landing page, 2–3 hrs) → Gate 2 (Canva, 20–30 min) → Gate 5 (Etsy coupon, 5 min)
+   - Once gates complete: Autonomous 7-step pre-launch sequence executes → June 2 launch 07:30 UTC
+
+3. **Remaining Phase 2 Research Candidates** (queued for future sessions):
+   - Domain 51 ✅ COMPLETE
+   - Domain 48 (Criminal Justice Civic Exclusion) — June 15 tentative
+   - Domains 49-50 (Environmental Justice/LGBTQ+ Rights) — July 1 parallel
+   - Domain 54 (Youth Civic Power) — November post-midterm
+
+4. **June 2-3 Critical Path**:
+   - 📅 **June 2 13:30 UTC**: Stockbot market open (JPM ridge_wf + AMZN lgbm_ho live trading) — **MAJOR MILESTONE**
+   - 📅 **June 2-3**: Domain 59 distribution Wave 1 (CBPP/ITEP/NWLC/MomsRising timeline if user executes)
+   - 📅 **June 5 13:00 UTC**: systems-resilience Phase 5 publication gate
+
+**Blocks**: None new. Existing blocks (cybersecurity-hardening: user VeraCrypt restart, mfg-farm: test print) unchanged.
+
+**Usage**: Nominal (no throttling). Next usage refresh: Tuesday June 4.
+
+---
+
 ## Since Last Check-in (Session 2504, 2026-06-01 14:45+ UTC — Domain 58 Automation + Queue Replenishment)
 
 **Session Status**: ✅ **EXPLORATION WORK COMPLETE — Domain 58 SCOTUS monitor production-ready; 2 additional queue items pre-positioned for June 2-30 execution**
