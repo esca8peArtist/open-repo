@@ -1,5 +1,30 @@
 # Work Log
 
+- Session 2462 (June 1 06:30–07:15 UTC): **PARALLEL AGENT WORK COMPLETE — STOCKBOT PHASE 3-4 + OPEN-REPO WAVE 2 MANUAL TESTING INFRASTRUCTURE**
+  - **Protocol**: Post-June 1 13:00 UTC Domain 39 execution window; spawned parallel agents for unblocked projects
+  - **Work Status**: Both parallel agents COMPLETED successfully
+  - **Stockbot Phase 3-4 Completion** (Agent ID: a97dc27f603b000a6):
+    - ✅ **Phase 3 — Graduation Criteria Formalized**:
+      - `docs/model-graduation-criteria.md` — Complete documentation for all 6 gates (G1: OOS Sharpe > 1.0, G2: MaxDD < 20%, G3: t-stat > 2.0, G4: DSR > 0.8, G5: 2/3 regimes positive, G6: WFE > 0.50) with Lo (2002) statistical basis, Bailey-Lopez (2014) corrections, and 30-50% live degradation buffers for each
+      - `docs/model-graduation-checklist.md` — Operator checklist template with fold-by-fold Sharpe breakdown, supporting metrics table, pre-deployment conditions, post-paper-trading approval gate
+      - Three hard rules: paper trading gate (all 6 gates pass), live trading gate (≥30 round trips post-paper), Jetson deployment freeze (no new models until pipeline complete)
+    - ✅ **Phase 4 — Design + Initial Implementation**:
+      - `docs/training-pipeline-design.md` — 6-section design document: input config schema, 7-step process flow with pseudocode, expected runtime (12-30 min/model), output specs, 7 error scenarios, integration map to AlpacaProvider/WalkForwardEngine/ModelTrainingPipeline
+      - `src/training/automated_trainer.py` — AutomatedTrainer class with validate_config() (8 error classes), train_from_config(), save_model(), generate_report(), ConfigValidationError exception
+      - `scripts/train_model_v2.py` — CLI wrapper (--ticker AAPL --strategy lgbm_ho --date-range 2022-01-01:2026-06-01) with exit codes (0: gates pass, 1: gates fail, 2: pipeline error)
+      - 67 unit tests all passing (validate_config, save_model, generate_report, date parsing, pipeline config building, orchestration with mocked ModelTrainingPipeline)
+    - **Deliverable**: Commit landed cleanly on master. Phase 3-4 complete and production-ready.
+  - **Open-Repo Wave 2 Manual Testing Infrastructure** (Agent ID: af949511674f5d713):
+    - ✅ **Keyboard Testing Checklist** (`docs/WAVE_2_KEYBOARD_TESTING_CHECKLIST.md`, 276 lines) — Complete checklist for keyboard-only navigation of `/docs`, `/redoc`, `/`, `/health` with tab order expectations, focus indicator requirements, cross-page validation, fillable "Expected vs. Actual" columns
+    - ✅ **Screen Reader Testing Runbook** (`docs/WAVE_2_SCREEN_READER_TESTING_RUNBOOK.md`, 577 lines) — Step-by-step for NVDA/VoiceOver/Orca with expected audio sequences, landmark hierarchy, heading level verification, 5 live browser verification items
+    - ✅ **Issue Capture Template** (`docs/WAVE_2_TESTING_ISSUE_TEMPLATE.md`, 390 lines) — Structured form with severity (P0/P1/P2), WCAG criterion, impact assessment, 2 reference examples
+    - ✅ **Daily Testing Log** (`docs/WAVE_2_DAILY_TESTING_LOG.md`, 367 lines) — Progress tracker for June 2–6 with daily session info, issues by severity, cumulative completion %, deployment readiness checklist
+    - **Total documentation**: 1,610 lines across 4 files; WCAG 2.1 coverage complete (2.1.1, 2.1.2, 2.4.1, 2.4.7, 3.1.1, 1.3.1, 4.1.2, 4.1.3)
+    - **PROJECTS.md updated**: open-repo Current focus now reflects Wave 2 infrastructure ready for June 2-6 user execution
+    - **Commit**: 489e848f on feature/wave-2-a11y; production-ready
+  - **Summary**: Both parallel agents completed high-value work in parallel. Stockbot now has formalized graduation criteria and initial automated training pipeline. Open-repo has complete manual testing infrastructure ready for user testing June 2-6. Both commits landed cleanly.
+  - **Status**: Cleared for next phase. Awaiting user execution on Domain 39 (13:00–14:00 UTC today) and Wave 2 manual testing (June 2-6).
+
 - Session 2460 (June 1 00:09–00:45 UTC): **STOCKBOT SIGNAL QUALITY AUDIT: PRE-MARKET VALIDATION COMPLETE — CRITICAL SCOPE CORRECTION**
   - **Task**: Validate all 4 active models' signal timing, distribution, and confidence patterns using May 27-31 paper-trading data
   - **Execution**: Spawned stockbot subagent to perform formal walk-forward evaluation audit against live logs and database

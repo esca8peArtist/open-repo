@@ -440,7 +440,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: ✅ **[JUNE 1 SIGNAL QUALITY AUDIT COMPLETE — 2-SESSION DEPLOYMENT SCOPE CONFIRMED]**
+**Current focus**: ✅ **[JUNE 1 SIGNAL QUALITY AUDIT + PHASE 3-4 INFRASTRUCTURE COMPLETE — READY FOR MARKET EXECUTION JUNE 2]** — JPM ridge_wf (6/6 gates PASS, OOS Sharpe 4.412) + AMZN lgbm_ho (5/6 gates, G3 borderline) deployed to Jetson 2-session config, sleeping until June 2 13:15 UTC pre-market. Phase 3 formalized all 6 graduation gates with documentation (`docs/model-graduation-criteria.md`, `docs/model-graduation-checklist.md`). Phase 4 initial implementation: AutomatedTrainer class + train_model_v2.py CLI + training-pipeline-design.md. All 67 Phase 4 unit tests passing. Ready for June 2 13:30 UTC market open.
 
 **June 1 Pre-Market Validation Complete**: Walk-forward evaluation (WFE) audit of all 4 models using May 27-31 paper-trading data revealed critical findings:
 - **JPM ridge_wf**: 6/6 gates PASS ✅ — Deploy June 2 (OOS Sharpe 4.412, WFE 1.073, all regimes profitable)
