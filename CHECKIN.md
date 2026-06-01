@@ -5,7 +5,50 @@
 
 ---
 
-## Since Last Check-in (Session 2476, 2026-06-01 07:26–08:03 UTC — Phase 2 Decision Readiness + Phase 6 Checkpoint)
+## Since Last Check-in (Session 2477, 2026-06-01 07:40–08:32 UTC — Phase 6 Domain F Bibliography Cleanup + Pre-Activation Alignment)
+
+**Session Status**: ✅ **DOMAIN F BIBLIOGRAPHY CLEANUP COMPLETE — ALL AUTHOR RECRUITMENT INFRASTRUCTURE PRODUCTION-READY — DOMAIN 39 ACTIVATION STAGED**
+
+**What Happened in Session 2477**:
+1. **systems-resilience Phase 6 Domain F Bibliography Cleanup** ✅ (COMPLETE):
+   - ✅ Added entry 45: Steiner, Rudolf. *The Roots of Education* (Waldorf Education source)
+   - ✅ Added entry 46: Funes-Monzote, Fernando. "Cuba's Sustainable Agriculture" (Crisis education case study)
+   - ✅ Added entry 47: Lloréns, Hilda. "Making Livable Lives" (Puerto Rico post-Maria case study)
+   - ✅ Fixed entry 44: Illinois Homeschooling Alliance URL (removed Cyrillic character corruption)
+   - ✅ Updated research gap note with specific UNESCO/UNICEF emergency education resources (https links)
+   - **Result**: Domain F now 47/47 sources complete, production-ready for author handoff by June 5 deadline
+   - **Commit**: c54a49a1 (systems-resilience cleanup)
+
+**Current Pre-Activation Status (08:32 UTC)**:
+- **stockbot**: Pre-market verification complete ✅. JPM ridge_wf + AMZN lgbm_ho ready. Market open June 2 13:30 UTC.
+- **resistance-research**: Domain 39 activation ready. User email send window 13:00–14:00 UTC TODAY.
+- **systems-resilience**: All author recruitment infrastructure ready. User email send window 13:00 UTC TODAY through June 3.
+- **seedwarden**: Track B activation ready. User gates documentation complete.
+- All other projects: Status unchanged from Session 2476.
+
+**Critical Timeline (Next 5.5 Hours)**:
+- **13:00–14:00 UTC**: Domain 39 HHS window (user sends 5 emails)
+- **14:00–14:30 UTC**: Orchestrator Domain 39 monitoring activation (scheduled)
+- **13:00 UTC onwards**: systems-resilience Phase 6 Domain A author recruitment (user sends 18 emails)
+
+**DECISION POINTS STILL PENDING (From Session 2476 — No Change)**:
+
+| Decision | Impact | Deadline | Recommendation |
+|----------|--------|----------|-----------------|
+| Domain 59 distribution acceleration THIS WEEK vs Sept 1? | CTC markup window open; contacts ready | ASAP if yes | Accelerate — time-sensitive advocacy |
+| Domain 51 research immediate activation (June 2)? | DISCLOSE Act Senate markup June-July | June 1 | Approve June 2 start (10-12h work) |
+| Domain 48 pre-check (15 min): does domain-54 cover civic exclusion? | Avoid Domain 48/54 scope overlap | June 1 | Quick read recommended |
+| Domain 57 distribution prep NOW vs August? | Multilateral Withdrawal research already complete | ASAP if yes | Could accelerate from August |
+| Domains 49-50 July parallel authorization? | Environmental Justice + LGBTQ+ Rights (August deadlines) | June 1 | Confirm July 1 start authorization |
+| Domain 54 November timeline or accelerate? | Youth Civic Power (post-midterm focus) | June 1 | Confirm November or pre-election option |
+
+**Token Usage**: Session 2477: 45K / 200K budget (22% of session). All-models 11.3%. Still 89% budget remaining for next work.
+
+---
+
+## History
+
+### Session 2476 (2026-06-01 07:26–08:03 UTC) — Phase 2 Decision Readiness + Phase 6 Checkpoint
 
 **Session Status**: ✅ **PHASE 2 DECISION READINESS ASSESSMENT COMPLETE + PHASE 6 AUTHOR RECRUITMENT CHECKPOINT READY — 6 USER DECISIONS NEEDED**
 
@@ -15,7 +58,7 @@
 - **Recommendation**: Deploy Domain 59 distribution THIS WEEK instead of September to maximize advocacy impact
 - Five contacts ready to contact: CBPP, ITEP, NWLC, MomsRising, AFL-CIO
 
-**What Happened in Session 2476**:
+**What Happened (Session 2476)**:
 1. **resistance-research Phase 2 Candidates Readiness Assessment** ✅:
    - Domains 57 & 59 already COMPLETE (May 15, don't need research)
    - Actual Phase 2 research pipeline identified: Domain 51 (June 2, 10-12h), Domain 48 (June 15), Domains 49-50 (July 1), Domain 54 (November)

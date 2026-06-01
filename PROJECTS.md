@@ -953,12 +953,13 @@
 **Priority**: High
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
 **Working dir**: `projects/systems-resilience/`
-**Current focus**: ✅ **[PHASE 5 PRE-PUB PREP COMPLETE + PHASE 6 AUTHOR RECRUITMENT DECISION CHECKPOINT COMPLETE (JUNE 1 08:03 UTC)]** — **Phase 5**: Integrated corpus (45,380 words), publication gate June 5 13:00 UTC (locked). **Phase 6 Domain A**: 18 personalized emails copy-paste ready (14/18 verified via official directories, 4/18 via email patterns). **NEW: Author Recruitment Decision Checkpoint (Session 2476 COMPLETE)**:
+**Current focus**: ✅ **[PHASE 5 PRE-PUB PREP COMPLETE + PHASE 6 AUTHOR RECRUITMENT DECISION CHECKPOINT COMPLETE + DOMAIN F BIBLIOGRAPHY CLEANUP COMPLETE (JUNE 1)]** — **Phase 5**: Integrated corpus (45,380 words), publication gate June 5 13:00 UTC (locked). **Phase 6 Domain A**: 18 personalized emails copy-paste ready (14/18 verified via official directories, 4/18 via email patterns). **Author Recruitment Decision Checkpoint (Session 2476 COMPLETE)**:
   - **Decision tree**: PATH A (author recruited by June 3 EOD UTC → onboarding in 4 hours); PATH B (24h extension under specific conditions); PATH C (fallback: autonomous Domain A research June 10-July 10, publication Aug 30)
-  - **Phase 6 Domains B/E/F audit**: Domain B 46 sources ✅ | Domain E 48 sources ✅ | Domain F 44 sources (4 missing bibliography + 1 URL corruption, 1-2 hours cleanup by June 5)
+  - **Phase 6 Domains B/E/F audit — ALL COMPLETE**: Domain B 46 sources ✅ | Domain E 48 sources ✅ | Domain F 47 sources ✅ (bibliography cleanup June 1 — added 3 missing sources, corrected URL)
   - **8-combination scoring matrix**: A+C+D top-ranked 4.5/5.0 (88% on-time). A+D+E highest delivery 91%. A+B+C highest coherence 3.7/5.0.
   - **Files created**: `PHASE_6_AUTHOR_RECRUITMENT_DECISION_CHECKPOINT.md` | `phase-6-author-onboarding-kit.md` (updated) | `PHASE_6_RESEARCH_COMPLETION_CHECKLIST.md`
   - **Timeline**: User sends 18 emails June 1-2, decision gate June 3 EOD UTC, fallback research starts June 10 if needed
+  - **Next**: All author recruitment infrastructure production-ready; awaiting June 1-3 user email execution and June 3 decision outcome
 **Dependencies**: Pulls from off-grid-living (existing depth), seedwarden (foraging + hunting + container growing content)
 
 ---
