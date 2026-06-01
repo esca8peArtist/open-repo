@@ -3,6 +3,49 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2486, 2026-06-01 10:15–11:15 UTC — Phase 2 Rapid-Activation Runbooks + Domain 39 Post-Activation Routing)
+
+**Session Status**: ✅ **COMPLETE — Phase 2 Rapid-Activation Runbooks Created + Domain 39 Routing Framework Ready — EXPLORATION QUEUE REPLENISHED**
+
+**What Accomplished**:
+- ✅ **Phase 2 Rapid-Activation Runbooks (4 domains) COMPLETE**:
+  - Created `domain-51-research-runbook.md` (21 KB): Campaign Finance & Dark Money research execution guide — 10-14 hours, 3-session structure, 5 empirical anchors, 9-section document template, pre-confirmed source inventory, contingency procedures for all failure modes (stale data, DISCLOSE Act tabled, fewer ballot measures, file exists). Ready for instant activation.
+  - Created `domain-48-research-runbook.md` (24 KB): Criminal Justice & Civic Exclusion — 16-18 hours, critical pre-check gate routing (read domain-54, assess for overlap, route to research or distribution prep). Full session structure, empirical anchors, explicit scope boundaries, contingencies.
+  - Created `domains-49-50-parallel-research-runbook.md` (37 KB): Environmental Justice + LGBTQ+ Rights July execution — combined runbook with 3 execution model options based on researcher capacity. Hard rule: Domain 50 August 1 deadline governs sequencing. Four gate checks, peer review pairings, domain-uniqueness analysis.
+  - Created `domain-57-distribution-runbook.md` (26 KB): Multilateral Withdrawal (research complete May 21, 7,200 words, 47 citations) — distribution-only runbook with Path A (June acceleration) vs. Path B (August 10) timing decision. Gist creation instructions, contact verification checklist, response monitoring checkpoints.
+  - **Business value**: All 4 domains executable with zero ambiguity the moment user approves Phase 2. No research decisions needed — only execution.
+
+- ✅ **Domain 39 Post-Activation Routing Framework COMPLETE**:
+  - Created `domain-39-post-activation-routing.md` (5.2 KB): Decision-support guide for T+14 (June 15 09:00 UTC) checkpoint
+  - Three routing paths based on engagement metrics:
+    - **Path A** (High engagement: 3+ responses OR 100+ Gist views) → Tier 2 expansion June 16-22 + Phase 2 acceleration (Domains 59, 51)
+    - **Path B** (Moderate: 1-2 responses OR 25-99 views) → Selective follow-up June 20-22 + Phase 2 on schedule
+    - **Path C** (Low: 0 responses AND <25 views) → Root-cause investigation + Phase 2 independent
+  - Pre-activation checklist included (verify monitoring dashboard structure, email log, Gist URL)
+  - **Business value**: Pre-positioned routing logic eliminates Day 15 decision paralysis; instant next-action dispatch
+
+**Critical Timeline (NEXT 2 HOURS)**:
+- **NOW–13:00 UTC**: Final 1h 45min before Domain 39 activation. All infrastructure ready. New Phase 2 runbooks staged for user review post-Domain-39.
+- **13:00–13:48 UTC**: Domain 39 user sends 5 Tier 1 emails (HHS June 1 14:00 UTC DEADLINE critical)
+- **14:00–14:30 UTC**: Orchestrator activates Domain 39 monitoring (response tracking, Gist polling, engagement scoring)
+- **June 15 09:00 UTC**: T+14 checkpoint — Route decision (Path A/B/C) → next-action dispatch
+
+**Items Needing User Input (BEFORE 13:00 UTC)**:
+- **None** — all autonomous work complete through Domain 39 activation window. All Phase 2 runbooks ready for post-Domain-39 review.
+
+**Suggested Priorities for Next Session** (post-Domain-39-activation, 14:00+ UTC):
+1. Monitor Domain 39 email send completion (13:00–13:48 UTC) — verify all 5 sent
+2. Activate Domain 39 response monitoring automation (14:00–14:30 UTC)
+3. Monitor stockbot trading session (13:30–20:00 UTC) — Z-score drift, thermal, order fills
+4. Review Phase 2 rapid-activation runbooks (user decision on which domains to research)
+5. Track seedwarden Phase 3 decision status
+
+**Token Budget**: Session ~100K tokens used (large research agent). Estimated 100K remaining (50% available). Next sessions manageable within budget.
+
+**Exploration Queue Status**: REPLENISHED with 5 new Phase 2 + post-Domain-39 items. Queue now has items spanning through June 15 checkpoint and Phase 2 activation.
+
+---
+
 ## Since Last Check-in (Session 2485, 2026-06-01 09:43–10:00 UTC — Seedwarden Phase 3 Planning + Domain 39 Pre-Activation)
 
 **Session Status**: ✅ **COMPLETE — Exploration Queue item executed; all systems ready for Domain 39 activation window (13:00 UTC in 3h 12min)**
