@@ -3,7 +3,49 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
-## Since Last Check-in (Session 2484, 2026-06-01 09:20–09:50 UTC — CRITICAL PRE-FLIGHT VERIFICATION FINAL)
+## Since Last Check-in (Session 2485, 2026-06-01 09:30–10:15 UTC — Domain 39 + Stockbot Activation Prep)
+
+**Session Status**: 🔄 **IN PROGRESS — Two parallel workflows running; Domain 39 GO FOR ACTIVATION; Checkpoint scripts being created**
+
+**What Accomplished**:
+- ✅ **Domain 39 Readiness Verification COMPLETE**:
+  - All 4 pre-activation checks PASSED (Gist HTTP 200, email templates ready, contacts verified, monitoring files present)
+  - **Verdict**: ✅ **GO FOR ACTIVATION** — ready for 13:00–14:30 UTC execution window
+- ✅ **Stockbot Monitoring Infrastructure Review COMPLETE**:
+  - Existing scripts verified production-ready (daily monitoring, alert dispatch)
+  - Missing components identified (3 checkpoint verification scripts, CronCreate jobs)
+  - Workflow spawned to create all missing components
+- ✅ **WORKLOG.md Updated & Committed**: Session 2485 status logged
+
+**What's In Progress**:
+- 🔄 **Checkpoint Scripts Workflow** (2 agents running):
+  - Creating `scripts/june_9_checkpoint_verification.py` (250-300 lines)
+  - Creating `scripts/june_16_checkpoint_verification.py` (280-330 lines)
+  - Creating `scripts/june_23_final_assessment.py` (320-380 lines)
+  - Configuring 4 CronCreate jobs (daily monitoring + 3 checkpoints)
+  - Expected completion: 15-30 minutes
+- ⏰ **Scheduled Wakeup**: 11:34 UTC to check workflow progress and prepare for Domain 39 window
+
+**Items Needing User Input**:
+- **13:00–13:48 UTC TODAY**: Send 5 Domain 39 Tier 1 emails (Georgetown CCF, NHeLP, Black Mamas Matter, Brennan Center, IRG)
+  - Use drafts from `/projects/resistance-research/execution/domain-39-tier-1-drafts.md`
+  - Replace [YOUR_NAME] and [YOUR_CONTACT_INFO] only
+  - 12-minute spacing between sends (13:00, 13:12, 13:24, 13:36, 13:48 UTC)
+  - **CRITICAL TIMING**: HHS Medicaid disenrollment guidance deadline is June 1 14:00 UTC
+
+**Suggested Priorities for Next Session** (post-14:00 UTC Domain 39 activation):
+- Monitor Domain 39 email send completion (13:00–13:48 UTC)
+- Activate Domain 39 response monitoring infrastructure (14:00–14:30 UTC)
+- Verify stockbot checkpoint scripts were created and committed
+- Confirm CronCreate jobs are configured (manual verification needed — tool cannot be called by orchestrator)
+
+**Token Budget**: Session ~5K tokens used; estimated 185K remaining
+
+---
+
+## History
+
+### Session 2484 (2026-06-01 09:20–09:50 UTC — CRITICAL PRE-FLIGHT VERIFICATION FINAL)
 
 **Session Status**: ✅ **COMPLETE — ALL SYSTEMS VERIFIED READY FOR TODAY'S CRITICAL EVENTS (13:00 & 13:30 UTC)**
 
