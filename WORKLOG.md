@@ -43,14 +43,31 @@
       - ✓ Gist verification: DOMAIN_39_GIST_VERIFICATION_MAY26.md present
     - ✅ Domain 59 Staging Verified: All distribution files ready for June 2-3 execution
     - ✅ CronCreate Reminder: Scheduled one-shot at 13:55 UTC (5 min before activation window)
-  - **Pending (14:00-14:30 UTC)**:
+    
+    **2. stockbot Pre-Market Signal Quality Audit (Agent a1d8b8e4ac06f212d, Session 2496)**:
+    - ✅ Signal Quality Review:
+      - **JPM ridge_wf**: 92% confidence — fully ready, OOS Sharpe 4.412 (4.4× threshold), improving across folds (3.80→4.41→4.52)
+      - **AMZN lgbm_ho**: 78% confidence — ready with monitoring flag, OOS Sharpe 3.939 base (3.9× threshold), G5 bear-regime vulnerability identified (HMM observe mode active)
+      - **AAPL lgbm_ho**: Suspended (position_size_pct=0), OOS Sharpe 0.649 (fail), zero voluntary SELL signals
+      - **AAPL ridge_wf**: Suspended (position_size_pct=0), OOS Sharpe 0.096 (fail), 25× overfitting collapse (WF efficiency 0.038)
+    - ✅ Configuration Verification: All settings correct (position sizes 0.15 for JPM/AMZN, 0.0 for AAPL, HMM observe mode true for AMZN)
+    - ✅ Risk Assessment: No signal quality degradation detected; JPM anti-degradation (improving fold-by-fold), AMZN stable (2026 YTD Sharpe 3.48 confirms)
+    - ✅ Anomalies Identified:
+      - AMZN G5 bear-regime failure (MEDIUM): HMM observe active but NOT suppressing; recommend `hmm_observe_mode: false` by June 3
+      - AAPL structural issues (HIGH, MITIGATED): Long-bias + overfitting, both suspended via position_size_pct=0
+    - ✅ Pre-Market Checklist: AAPL suspended ✓, JPM ready ✓, AMZN monitor HMM ⚠, thermal OK ✓, containers healthy ✓
+    - ✅ Confidence: 83% for June 2 market open (JPM 92% + AMZN 78% conditional); path to 90%+ by June 3-5 after HMM fix
+    - ✅ Go/No-Go: **GO FOR JUNE 2** with conditions (AMZN monitor bear-regime morning check, AAPL suspended zero-risk)
+    - ✅ Documentation: Comprehensive audit report created with 9 sections, specific operational thresholds, post-market monitoring plan
+    
+  - **Pending (14:00-14:30 UTC) — DOMAIN 39 ACTIVATION MONITORING**:
     - 14:00: Verify user completed email sends (13:00-13:48 UTC)
     - 14:05: Update response tracking JSON
     - 14:10: Create 5 CronCreate jobs (T+3/7/14/30/45 checkpoints)
     - 14:15: Infrastructure sanity checks
     - 14:20: Log activation to WORKLOG.md
     - 14:30: Commit and confirm monitoring active
-  - **Next Actions**: Domain 39 activation at 14:00 UTC → stockbot market-open readiness June 2 → Phase 2 activation contingent on Domain 39 engagement metrics (T+14 June 15 checkpoint)
+  - **Next Actions**: Domain 39 activation monitoring 14:00-14:30 UTC → stockbot market-open June 2 13:30 UTC (deploy-ready verified) → Phase 2 activation contingent on Domain 39 engagement metrics (T+14 June 15 checkpoint)
 
 - **Session 2495 (June 1, 11:50–13:40 UTC — AUTONOMOUS WORK: open-repo A11y Manual Testing + Domain 39 Activation Prep)**:
   - **Status**: ✅ COMPLETE — Phase 2 manual testing audit fully delivered; ready for Phase 3 implementation
