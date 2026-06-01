@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "domain": "Phase 6 Domain C: Education Infrastructure & Civic Capacity",
+    "created": "2026-06-01",
+    "campaign_type": "Author recruitment + research collaboration",
+    "purpose": "Track response and engagement from 6-10 education sector targets",
+    "activation_time_utc": "2026-06-01T14:00:00Z",
+    "response_deadline_utc": "2026-06-04T23:59:00Z",
+    "instructions": "Populate contact_log after emails sent. Update checkpoint_status as responses arrive."
+  },
+  "send_log": {
+    "date": "2026-06-01",
+    "total_contacts": 10,
+    "total_sent": 0,
+    "send_completed_utc": null,
+    "immediate_bounces": 0,
+    "confirmed_deliveries": 0,
+    "status": "pending — populate after user send"
+  },
+  "checkpoints": [
+    {
+      "checkpoint": "T+1",
+      "date": "2026-06-02",
+      "label": "Early engagement check",
+      "status": "pending",
+      "responses_received": 0,
+      "positive_responses": 0,
+      "notes": "Check for immediate confirmations or questions"
+    },
+    {
+      "checkpoint": "T+3",
+      "date": "2026-06-04",
+      "label": "DEADLINE — final response window closes",
+      "status": "pending",
+      "responses_received": 0,
+      "positive_responses": 0,
+      "deadline": true,
+      "notes": "All responses must be logged by 23:59 UTC"
+    }
+  ],
+  "summary": {
+    "as_of_utc": "2026-06-01T11:00:00Z",
+    "overall_status": "pre-activation — ready for user send",
+    "next_checkpoint": "T+1 (June 2)",
+    "response_window_days": 3
+  }
+}

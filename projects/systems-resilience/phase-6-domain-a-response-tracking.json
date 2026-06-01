@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "domain": "Phase 6 Domain A: Economic Resilience & Community Development",
+    "created": "2026-06-01",
+    "campaign_type": "Author recruitment + research collaboration",
+    "purpose": "Track response and engagement from 18 economic sector targets",
+    "activation_time_utc": "2026-06-01T14:00:00Z",
+    "response_window_days": 7,
+    "instructions": "Populate send_log after user sends emails. Update checkpoints as responses arrive."
+  },
+  "send_log": {
+    "date": "2026-06-01",
+    "total_contacts": 18,
+    "total_sent": 0,
+    "send_completed_utc": null,
+    "immediate_bounces": 0,
+    "confirmed_deliveries": 0,
+    "status": "pending — populate after user send"
+  },
+  "checkpoints": [
+    {
+      "checkpoint": "T+3",
+      "date": "2026-06-04",
+      "label": "Early signal check",
+      "status": "pending",
+      "responses_received": 0,
+      "positive_responses": 0,
+      "notes": "Check for immediate responses or questions"
+    },
+    {
+      "checkpoint": "T+7",
+      "date": "2026-06-08",
+      "label": "Response window closes",
+      "status": "pending",
+      "responses_received": 0,
+      "positive_responses": 0,
+      "notes": "Final count of positive responses; assess next steps"
+    },
+    {
+      "checkpoint": "T+14",
+      "date": "2026-06-15",
+      "label": "Follow-up assessment",
+      "status": "pending",
+      "responses_received": 0,
+      "notes": "Any late confirmations or clarifications received"
+    }
+  ],
+  "summary": {
+    "as_of_utc": "2026-06-01T11:00:00Z",
+    "overall_status": "pre-activation — ready for user send",
+    "next_checkpoint": "T+3 (June 4)",
+    "response_window_days": 7
+  }
+}
