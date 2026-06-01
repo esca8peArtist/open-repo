@@ -3,6 +3,62 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2495, 2026-06-01 11:50–13:50 UTC — open-repo A11y Phase 2 + Domain 39 Monitoring Prep)
+
+**Session Status**: ✅ **COMPLETE — open-repo Wave 2 A11y Phase 2 manual testing audit finished; Domain 39 activation in final preparation**
+
+**What Accomplished**:
+
+1. **open-repo Wave 2 A11y Audit Phase 2: Manual Testing (Complete)** ✅:
+   - Keyboard Navigation: PASS ✅ (Tab/Enter/Space functional, focus visible, no traps)
+   - Semantic HTML: FAIL ✗ (3 Level A violations confirmed in third-party UI libraries)
+   - Accessibility Tree: FAIL ✗ (structural issues in FastAPI Swagger UI + ReDoc, not application code)
+   - Four audit markdown files created + committed (2,003 lines, 62.5 KB documentation):
+     - `PHASE_2_KEYBOARD_NAVIGATION_AUDIT.md` (274 lines)
+     - `PHASE_2_SEMANTIC_HTML_AUDIT.md` (463 lines)
+     - `PHASE_2_ACCESSIBILITY_TREE_AUDIT.md` (662 lines)
+     - `PHASE_2_MANUAL_TESTING_SUMMARY.md` (604 lines)
+   - Violation triage: P0 (60 min fix), P1 (45 min), P2 (25 min) — total 130 min remediation effort
+   - Deployment readiness: 85-90% confidence for June 12 target
+   - Commit: `507c0dcd` — Phase 2 manual testing audit complete
+
+2. **Domain 39 Activation Preparation** ✅:
+   - Reviewed monitoring dashboard (`domain-39-monitoring-dashboard-june1.json`)
+   - Confirmed post-activation routing framework (`domain-39-post-activation-routing.md`)
+   - Ready for 14:05-14:30 UTC orchestrator monitoring window
+   - Monitoring checklist: Email send verification, Gist view baseline, initial response tracking
+
+**Current Time**: 13:50 UTC (approximately, after work completion) — **Domain 39 email send window 13:00-13:48 UTC status unknown; orchestrator monitoring window starts 14:00 UTC**
+
+**Critical Next Steps**:
+- **14:00–14:30 UTC** (NOW → 40 min): Orchestrator Domain 39 monitoring activation:
+  1. Verify 5 emails sent successfully (check send log, no bounces)
+  2. Record baseline Gist view count
+  3. Document initial engagement metrics in monitoring dashboard
+  4. Confirm orchestrator readiness for T+3 checkpoint (June 4 09:00 UTC)
+- **14:30 UTC**: Monitoring window closes; report Domain 39 activation status
+- **June 2 13:30 UTC**: Stockbot market open (JPM + AMZN live)
+- **June 4 09:00 UTC**: T+3 engagement checkpoint
+- **June 15 09:00 UTC**: T+14 Phase 2 routing decision gate
+
+**Project Status Summary**:
+- **open-repo**: A11y Phase 2 COMPLETE ✅; Phase 3 (Fix Implementation) ready June 2-6
+- **resistance-research**: Domain 39 activation IMMINENT (monitoring starts 14:00 UTC)
+- **stockbot**: DEPLOY_READY ✅, market opens tomorrow June 2
+- **systems-resilience**: Phase 5 PRODUCTION-READY ✅, publication June 5
+- **seedwarden**: Track B ready, awaiting user action
+- **cybersecurity-hardening**: Blocked on user restart
+- **mfg-farm**: Blocked on user test print
+
+**Session Completion**:
+- Autonomous work: open-repo manual testing 100% complete ✅
+- Parallelization: Single-agent sprint (open-repo)
+- Ready for: Domain 39 monitoring at 14:00 UTC
+- Commits: 2 (open-repo A11y Phase 2 + PROJECTS.md status, WORKLOG.md + PROJECTS.md orchestration)
+- Token used: ~89K subagent + ~5K orchestrator = ~94K total; 106K remaining
+
+---
+
 ## Since Last Check-in (Session 2494, 2026-06-01 11:39–11:47 UTC — PHASE 5 PRE-PUBLICATION AUDIT COMPLETION)
 
 **Session Status**: ✅ **COMPLETE — systems-resilience Phase 5 pre-publication prep 100% finished; publication-ready by June 5**
