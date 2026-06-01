@@ -41,8 +41,8 @@
   - **Key finding**: All infrastructure production-ready except Domain F bibliography (4 sources need adding). June 3 decision can proceed on schedule.
   - **Next action**: User sends 18 Domain A recruitment emails June 1–2; check responses June 3 AM; decision June 3 23:59 UTC
 
-- Session 2478 (June 1 07:50–08:10 UTC): **STOCKBOT DEPLOY-READY CREATION + PHASE 6 DOMAIN F CITATION VERIFICATION**
-  - **Status**: ✅ Complete; 1 commit (7a30956c); 83K tokens; 250 min agent work
+- Session 2478 (June 1 07:50–08:30 UTC): **STOCKBOT DEPLOY-READY CREATION + PHASE 6 DOMAIN F CITATION VERIFICATION + PHASE 2 DECISION BRIEFING**
+  - **Status**: ✅ Complete; 2 commits (7a30956c, 68436318); 97K tokens; 40 min wall-clock
   - **Task 1 — Stockbot Deployment**: ✅ DEPLOY_READY file created at 07:50 UTC (outside market-hours blackout window). Triggers automated deploy script. 2-session config (JPM ridge_wf + AMZN lgbm_ho) will sync to Jetson and verify before market open June 2 13:30 UTC.
   - **Task 2 — systems-resilience Phase 6 Domain F Citation Audit**: ✅ COMPLETE
     - **Discovery**: Session 2477's bibliography additions (entries 45-47) had verification gaps — non-existent journal citations
@@ -51,8 +51,15 @@
       2. Entry 46 verified: Funes-Monzote "Cuba's Sustainable Agriculture" — corrected to *Monthly Review* 63(8): Jan 2012 (verified publication)
       3. Entry 47 verified: Lloréns "Imaging Disaster: Puerto Rico" — corrected to *Transforming Anthropology* 26(2): 136–156, 2018 (DOI: 10.1111/traa.12126)
     - **Result**: Domain F bibliography now 47 entries, all verified against actual published sources, production-ready for June 5 publication gate
-  - **Commits**: `7a30956c` (Phase 6 Domain F citation verification + URL corrections)
-  - **Next**: Domain 39 activation 13:00-14:30 UTC (user email send + orchestrator monitoring); market open June 2 06:20 UTC pre-market check
+  - **Task 3 — resistance-research Phase 2 User Decision Briefing**: ✅ COMPLETE
+    - **Purpose**: Comprehensive decision-support document for 6 Phase 2 expansion decisions (Domains 59, 51, 48, 57, 49-50, 54)
+    - **Content**: Trade-off analysis, timeline impact, advocacy windows, effort estimates for each decision
+    - **Recommendations**: Domain 59 accelerate (CTC window), Domain 51 June 2 (DISCLOSE Act), Domain 48 pre-check, Domain 57 optional, Domains 49-50 July parallel, Domain 54 November
+    - **File**: `PHASE_2_USER_DECISION_BRIEFING.md` (4,200 words, 6 decision analyses, 1 summary table)
+    - **Ready for**: User to review and confirm decisions; orchestrator ready to execute upon approval
+  - **Commits**: `7a30956c` (Phase 6 citation verification), `68436318` (Phase 2 decision briefing)
+  - **Next**: Domain 39 activation 13:00-14:30 UTC (user email send); monitoring activation 14:00-14:30 UTC; market open June 2 06:20 UTC pre-market check
+  - **Token budget**: 97K used; 103K remaining for session
 
 - Session 2480 (June 1 06:57–07:50 UTC): **2 EXPLORATION QUEUE ITEMS — STOCKBOT PRE-MARKET AUDIT + JUNE 2-5 MONITORING FRAMEWORK**
   - **Status**: ✅ Both complete; all monitoring infrastructure verified production-ready; 185K tokens

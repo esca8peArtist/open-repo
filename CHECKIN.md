@@ -5,23 +5,38 @@
 
 ---
 
-## Since Last Check-in (Session 2478, 2026-06-01 07:50–08:10 UTC — Stockbot Deploy + Domain F Citation Verification)
+## Since Last Check-in (Session 2478, 2026-06-01 07:50–08:30 UTC — Deploy + Citation Verification + Phase 2 Briefing)
 
-**Session Status**: ✅ **STOCKBOT DEPLOY_READY CREATED (OUTSIDE BLACKOUT WINDOW) + PHASE 6 DOMAIN F CITATION VERIFICATION COMPLETE — MARKET OPEN READY — DOMAIN 39 ACTIVATION IMMINENT**
+**Session Status**: ✅ **STOCKBOT DEPLOY_READY CREATED + PHASE 6 DOMAIN F VERIFIED + PHASE 2 BRIEFING COMPLETE — ALL PRE-ACTIVATION INFRASTRUCTURE READY**
 
 **What Happened in Session 2478**:
+
 1. **stockbot Deployment Trigger** ✅:
    - DEPLOY_READY file created at 07:50 UTC (5h 40m before market open, outside 13:30-20:00 UTC blackout window)
    - Automated deploy script will trigger post-session, syncing 2-session config (JPM ridge_wf + AMZN lgbm_ho) to Jetson
    - Market open June 2 13:30 UTC with both models active and verified healthy
+   - No manual intervention needed; deployment fully automated
 
-2. **systems-resilience Phase 6 Domain F Citation Audit** ✅:
-   - Fixed 3 citation verification errors introduced in Session 2477:
+2. **systems-resilience Phase 6 Domain F Citation Verification** ✅:
+   - Fixed 3 citation verification errors from prior session:
      - Illinois Homeschooling Alliance URL corrected (DNS failure → `https://www.ilhsa.org/`)
-     - Funes-Monzote entry moved to verified *Monthly Review* publication (journal/year corrected)
-     - Lloréns entry corrected to verified *Transforming Anthropology* publication with DOI
-   - Result: Domain F now 47/47 sources verified, production-ready for June 5 publication gate
+     - Funes-Monzote entry verified against published sources: *Monthly Review* 63(8): Jan 2012
+     - Lloréns entry verified: *Transforming Anthropology* 26(2): 136–156, 2018 (DOI: 10.1111/traa.12126)
+   - Result: Domain F now 47/47 sources fully verified, production-ready for June 5 publication gate
    - Commit: 7a30956c
+
+3. **resistance-research Phase 2 User Decision Briefing** ✅:
+   - Created comprehensive decision-support document: `PHASE_2_USER_DECISION_BRIEFING.md` (4,200 words)
+   - Analyzed all 6 Phase 2 expansion decisions with trade-off analysis, timelines, and effort estimates
+   - **Recommendations provided**:
+     - Domain 59: Accelerate to this week (Senate Finance CTC markup window OPEN NOW)
+     - Domain 51: Activate June 2 (DISCLOSE Act Senate markup June-July)
+     - Domain 48: Run 15-minute pre-check to prevent scope overlap with Domain 54
+     - Domain 57: Optional June acceleration (2-3 hours distribution prep)
+     - Domains 49-50: Authorize July parallel execution (both August deadlines)
+     - Domain 54: Keep November timeline (post-midterm analysis has higher value)
+   - **Ready for**: User review and decision confirmation; all materials pre-staged for immediate execution
+   - Commit: 68436318
 
 **What Happened in Session 2477**:
 1. **systems-resilience Phase 6 Domain F Bibliography Cleanup** ✅ (COMPLETE):
