@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-01T03:29:56Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-01T04:19:06Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 12.2% (1,089,281 tokens) | All-models 10.9% | Reset in 20h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 12.2% (1,089,281 tokens) | All-models 11.0% | Reset in 20h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[RESOLVED] DOMAIN 39 EXECUTION INFRASTRUCTURE VERIFIED COMPLETE (JUNE 1) — AWAITING USER EXECUTION 13:00–14:00 UTC** — Domain 39 (Healthcare Access): All execution infrastructure verified complete as of June 1 00:37 UTC. Pre-written 5 Tier 1 emails ready (only 2 fields per email: `[YOUR_NAME]` and `[YOUR_CONTACT_INFO]`). Gist URL live and accessible (HTTP 200 verified). Contact list verified (Georgetown CCF, NHeLP, Black Mamas Matter Alliance, Brennan Center, Institute for Responsive … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED] DOMAIN 39 EXECUTION + 14:00 UTC ACTIVATION INFRASTRUCTURE COMPLETE (JUNE 1)** — Domain 39 (Healthcare Access): All 5 pre-written Tier 1 emails verified ready (2 fields each: `[YOUR_NAME]` + `[YOUR_CONTACT_INFO]`). Gist URL live (HTTP 200 verified June 1 04:03 UTC). Contact list verified all active (Georgetown CCF, NHeLP, Black Mamas Matter Alliance, Brennan Center, Institute for Responsive Government). **NEW**: Activation runbook created (`DOMAIN_39_14UTC_ACTIVATION_RUNBOOK.md … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,11 +32,11 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[JUNE 1 SIGNAL QUALITY AUDIT COMPLETE + PHASE 3-4.1 INFRASTRUCTURE DEPLOYMENT COMPLETE]** — JPM ridge_wf (6/6 gates PASS, 92% confidence ✅ GO) + AMZN lgbm_ho (5/6 gates, 78% confidence ⚠️ CONDITIONAL GO). **PHASE 3** (docs/model-graduation-criteria.md): 6-gate framework formalized with decision trees + current model status table + cross-references. **PHASE 4.1** (automated model training + evaluation pipeline): Unified CLIs (`train_and_evaluate_model.py` single-model, `batch_train_ … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[COMPREHENSIVE BACKTESTING REPORT COMPLETE + JUNE 1 SIGNAL QUALITY AUDIT COMPLETE]** — `COMPREHENSIVE_BACKTESTING_REPORT_JUNE_2026.md` (3,600 words, 8 sections): executive summary, strategic context (May 30 reset), validation results per model, 6-gate analysis, deployment recommendations, Phase 4.1 infrastructure overview, Phase 4.2-4.3 live tracking plan, decision tree for June 2 actions. **Model status**: JPM ridge_wf 6/6 PASS ✅ GO, AMZN lgbm_ho 5/6 NEAR-PASS ⚠️ CONDITIONAL GO (w … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[MAY 30 LAUNCH DID NOT EXECUTE — USER ACTION GATES INCOMPLETE]** All infrastructure 100% production-ready; deployment blocked on user action gates (Instagram/TikTok/Pinterest account creation + Kit account setup). All 8 zone PDFs staged, 15 herbalist influencers with verified contact addresses, email/social templates ready, launch-day runbook complete. Track A (tag corrections) does not block Track B. **REVISED LAUNCH WINDOW: June 1-2** (pending user gate completion). Gate 1: Create Instagra … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[TRACK B JUNE 1-2 ACTIVATION CHECKLIST COMPLETE]** All Track B infrastructure verified production-ready: 8 zone PDFs confirmed, 15-contact herbalist influencer list verified, email/social/launch templates all complete. **NEW**: `TRACK_B_JUNE_1_2_ACTIVATION_CHECKLIST.md` created with 5 user action gates clearly mapped (social accounts 30-60 min, Canva Kit 30 min, Kit account 2-3 hrs, Drive setup 20 min, coupon verification 5 min) + 3-tier execution priority + success metrics. Track A (tag c … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
