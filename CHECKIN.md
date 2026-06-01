@@ -44,14 +44,27 @@
 - **June 15 09:00 UTC**: T+14 checkpoint — Route decision (Path A/B/C) → next-action dispatch
 
 **Items Needing User Input (BEFORE 13:00 UTC)**:
-- **None** — all autonomous work complete through Domain 39 activation window. All Phase 2 runbooks ready for post-Domain-39 review.
+- **None** — all autonomous work complete through Domain 39 activation window.
+
+**Items Ready for Autonomous Execution (June 1 12:00-13:00 UTC)**:
+- Phase 6 Domain A recruitment emails: Ready to send (8 academic + 8 practitioner targets verified, personalized templates in PHASE_6_DOMAIN_A_AUTHOR_RECRUITMENT_TARGETS.md)
+- Phase 6 Domain C recruitment emails: Ready to send (6 academic + 6 practitioner targets verified, personalized templates in PHASE_6_DOMAIN_C_AUTHOR_RECRUITMENT_TARGETS.md)
+- Phase 5 Wave 1+2 publication prep: Ready to stage (document identification + merge planning for June 2-5 execution)
+- Phase 4 governance workshop: Ready to facilitate (June 1 18:00 UTC execution; facilitation guide preparation needed)
+
+**CRITICAL TIMELINE (NEXT 2 HOURS)**:
+- **NOW–12:00 UTC**: Phase 6 recruitment email sending window (optional; can defer to 14:00+ UTC)
+- **13:00–13:48 UTC**: Domain 39 user email send monitoring — ORCHESTRATOR PRIMARY RESPONSIBILITY
+- **13:30–20:00 UTC**: Stockbot market open monitoring — Z-score drift, thermal, order fills
+- **14:00–14:30 UTC**: Domain 39 orchestrator monitoring activation — response tracking, Gist polling, engagement scoring
+- **14:00+ UTC**: Resume Phase 5/6 auto-fallback execution (recruitment email backup sends if not completed 12:00-13:00, publication prep begins, governance workshop prep)
 
 **Suggested Priorities for Next Session** (post-Domain-39-activation, 14:00+ UTC):
-1. Monitor Domain 39 email send completion (13:00–13:48 UTC) — verify all 5 sent
-2. Activate Domain 39 response monitoring automation (14:00–14:30 UTC)
-3. Monitor stockbot trading session (13:30–20:00 UTC) — Z-score drift, thermal, order fills
-4. Review Phase 2 rapid-activation runbooks (user decision on which domains to research)
-5. Track seedwarden Phase 3 decision status
+1. Complete Phase 6 Domain A/C recruitment email sends (if not completed 12:00-13:00 UTC window)
+2. Begin Phase 5 Wave 1+2 publication prep (document merging, TOC, June 5 gate management)
+3. Continue stockbot market session monitoring (Z-score drift, thermal throttling, order fill rate)
+4. Plan Phase 4 governance workshop facilitation (June 1 18:00 UTC)
+5. Track Phase 6 recruitment responses (expected June 2-4, decision gate June 3-4 EOD)
 
 **Token Budget**: Session ~100K tokens used (large research agent). Estimated 100K remaining (50% available). Next sessions manageable within budget.
 
