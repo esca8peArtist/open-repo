@@ -902,3 +902,53 @@ This deploy must complete before 13:00 UTC June 2, or AAPL sessions will trade u
 **What was accomplished**:
 - ✅ **FINAL ORCHESTRATOR PROTOCOL EXECUTION** (140th consecutive standing-by confirmation — DEADLINE WINDOW ~90 MINUTES REMAINING):
   - **Orientation complete**: ORCHESTRATOR_STATE.md verified current (snapshot 2026-05-31T22:29:13Z), BLOCKED.md verified (2 immutable user-action blocks — no change), INBOX.md verified (zero new items), PROJECTS.md all focus lines verified current
+
+---
+
+# Session 2479 Check-in (June 1, 08:16 UTC)
+
+## Since Last Check-in (Session 2478, May 30 23:59 UTC)
+
+### Accomplished
+- ✅ Discovered Domain 51 research already complete (May 13) but distribution infrastructure not staged
+- ✅ Created domain-51-distribution-execution-roadmap.md (3-wave strategy: DISCLOSE Act coalition June 2-15, ballot measure campaigns June 16-30, academic July 1-15)
+- ✅ Created domain-51-contact-list.md (20 verified contacts, Tier A 100% verified, Tier B pathway-identified, Tier C 75% verified)
+- ✅ Committed both files to master (commit ac784cac)
+- ✅ Usage budget verified: healthy, no throttling
+
+### In Progress
+- ⏳ Domain 39 activation: 13:00-14:30 UTC today (user sends emails, orchestrator monitors)
+- ⏳ Stockbot market open: June 2 13:30 UTC (pre-flight assessment at 13:15 UTC)
+- ⏳ Domain 51 Wave 1 outreach: Ready to begin June 2-3 (DISCLOSE Act coalition Tier A emails)
+
+### Needs User Input
+None at this time. Domain 39 activation is on schedule (user action required 13:00-14:00 UTC).
+
+### Upcoming Decisions/Deadlines
+- **June 1, 13:00-14:30 UTC**: Domain 39 activation window (TODAY)
+- **June 2, 13:15 UTC**: Pre-flight assessment for stockbot market open (within 2h health checks)
+- **June 2, 13:30 UTC**: Stockbot market open (JPM ridge_wf + AMZN lgbm_ho, 2-session config)
+- **June 2-3**: Domain 51 Wave 1 outreach (DISCLOSE Act coalition Tier A)
+- **June 3, EOD UTC**: systems-resilience Phase 6 author recruitment decision gate
+- **June 5, 13:00 UTC**: systems-resilience Phase 5 publication gate (locked)
+
+### Recommended Priorities
+1. **13:00-14:30 UTC**: Monitor Domain 39 activation (user email sends + orchestrator monitoring activation)
+2. **June 2, 13:15 UTC**: Run pre-flight health checks for stockbot (Jetson connectivity, Alpaca API, session readiness)
+3. **June 2-3**: Execute Domain 51 Wave 1 outreach (DISCLOSE Act coalition emails)
+4. **June 3**: Process systems-resilience Phase 6 author decision (decide if fallback research activates June 10)
+
+### Project Status Snapshot
+- **stockbot**: DEPLOY_READY created (June 1 07:50 UTC), pre-market verification complete, market open ready June 2 13:30 UTC
+- **resistance-research**: Domain 39 activation 13:00-14:30 UTC; Domain 51 distribution infrastructure staged for June 2-25 execution
+- **systems-resilience**: Phase 5 publication gate June 5 13:00 UTC (locked); Phase 6 author decision June 3 EOD UTC
+- **open-repo**: Phase 5.1 ready for user merge approval; Phase 5.2 (Medical/Water/Seed) implementation sequence staged
+- **seedwarden**: Track B June 1-2 activation ready pending user gate completion; Phase 3 decision May 30 (awaiting user choice)
+- **cybersecurity-hardening**: Phase 1 in progress, VeraCrypt restart required (user action)
+- **mfg-farm**: Test print execution required (user action)
+
+### Token Budget
+- Sonnet: 12.2% of weekly (1,089,281 tokens)
+- All-models: 11.3% of weekly
+- Status: ✅ Healthy, no throttling, on target
+
