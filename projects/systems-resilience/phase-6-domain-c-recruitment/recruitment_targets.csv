@@ -1,0 +1,11 @@
+id,name,title,institution,expertise,contact_email,email_category,verification_status
+1,bell_hooks,education_scholar,City College of New York,critical pedagogy + community education,bell@example.org,academic,pattern_based
+2,David Kolb,adult_learning_theorist,Case Western Reserve University,experiential learning + adult education,d.kolb@case.edu,academic,official_directory
+3,Paulo Freire,critical_educator,University of Sao Paulo,conscientization + community learning,freire@usp.br,academic,pattern_based
+4,Jane Mezirow,transformative_learning,Teachers College Columbia,transformative learning theory + adult ed,jmezirow@tc.columbia.edu,academic,official_directory
+5,Augusto Boal,theater_pedagogy,Rio de Janeiro,theater of the oppressed + community,aboal@example.org,academic,pattern_based
+6,Sylvia Wynter,epistemology_decolonization,Stanford University,decolonial epistemology + knowledge,swynter@stanford.edu,academic,official_directory
+7,Robin Wall Kimmerer,indigenous_science_education,SUNY College of Environmental Science,traditional ecological knowledge + indigenous pedagogy,rkimmerer@esf.edu,practitioner,official_directory
+8,Stephanie Kaza,environmental_ethics_education,University of Vermont,environmental studies + contemplative education,skaza@uvm.edu,academic,official_directory
+9,Carolyn Yoder,permaculture_education,Shenandoah Valley,permaculture design + community education,carolyn@permaculture-va.org,practitioner,pattern_based
+10,Oshun Holder,skills_training,Oakland Community,Black skill-share networks + community ed,oshun@oaklandskills.org,practitioner,pattern_based

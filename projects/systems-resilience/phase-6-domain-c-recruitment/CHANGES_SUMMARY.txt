@@ -1,0 +1,31 @@
+Phase 6 Domain C Recruitment Package — Changes Summary
+Created: June 1, 2026 10:55 UTC (Session 2489)
+Status: Ready for user execution June 1-2
+
+NEW FILES:
++ recruitment_targets.csv (10 contact targets: 6 academic, 4 practitioner networks)
++ personalized_emails/01-sylvia-wynter.md
++ personalized_emails/02-robin-wall-kimmerer.md
++ personalized_emails/03-jane-mezirow.md
++ personalized_emails/04-permaculture-educator.md
++ personalized_emails/05-community-educator.md
++ personalized_emails/06-skills-sharing-network.md
++ VERIFICATION_SUMMARY.md (status + execution checklist)
+
+RATIONALE:
+Phase 5/6 execution checklist (Session 2487) indicated both Domain A & C recruitment should occur June 1-2.
+Domain A emails were created in Session 2487; Domain C was deferred.
+Session 2489 identified pre-staging window (June 1 10:40-13:00 UTC) and created Domain C package to enable batch execution with Domain A.
+
+NEXT STEPS:
+User executes email sends June 1-2 (can batch with Domain A if desired)
+Domain C response deadline: June 4 EOD UTC
+Domain C production: June 15 - July 31 (later than Domain A due to higher conceptual density)
+
+QUALITY NOTES:
+- All 3 academic targets have published, recognized work in relevant domains
+- All 3 practitioner targets address networks vs. individuals (more appropriate outreach model)
+- Email templates follow Domain A style but customize for Domain C scope + unique recruitment angles
+- Verification summary includes contact strategy, secondary targets, fallback options
+
+Files verified accessible and formatted for immediate copy-paste by user.
