@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-31T23:09:16Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-31T23:37:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 11.3% (1,005,983 tokens) | All-models 10.6% | Reset in 25h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 11.3% (1,005,983 tokens) | All-models 10.6% | Reset in 24h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[RESOLVED] MAY 28 SYNTHESIS COMPLETE → WEAK OUTCOME → MODE 4 SUBSTANCE ACTIVATED + MAY 30 DOMAIN 39 STAGING COMPLETE** — Mode 4 Substance remediation path A LIVE: Domain 39 pre-distribution staging finalized May 30 08:00-10:00 UTC (email templates by segment completed, 15-20 healthcare/voting rights/disability contact list verified, Gist status verified, distribution execution log templated, response monitoring calendar set). All infrastructure production-ready for June 1 08:00 UTC d … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED] MAY 28 SYNTHESIS COMPLETE → MODE 4 + JUNE 1 DOMAIN 39 & 58 EXECUTION-READY** — Domain 39 (Healthcare Access): pre-distribution staging complete, ready for user execution June 1 13:00–14:00 UTC (5 Tier 1 emails to healthcare/voting rights/disability contacts per PHASE_1_IMPACT_EVALUATION_FRAMEWORK.md). Domain 58 (Tribal Sovereignty): Research production-complete (7,000–8,000 words, 60+ citations); distribution staging NOW COMPLETE (June 1 Session 2457). Distribution readi … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
