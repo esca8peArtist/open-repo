@@ -3,6 +3,46 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2521, 2026-06-01 21:40–21:55 UTC — Pre-Market Standby + DEPLOY_READY Restoration)
+
+**Session Status**: ✅ **ORCHESTRATION STANDBY — ALL SYSTEMS GO FOR JUNE 2 MARKET OPEN**
+
+**Work Completed**:
+
+1. **Orchestrator Orientation & State Assessment** ✅:
+   - Verified all active projects either production-ready or awaiting user decisions/scheduled gates
+   - Confirmed exploration queue fully worked (all items either complete or time-gated)
+   - Two active blocks unchanged (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — both require user action only
+   - Assessment: Zero autonomous work available (correct by design, 40h before market open)
+
+2. **DEPLOY_READY Restoration** ✅:
+   - File was deleted in working directory but tracked in git (state from Session 2519 restoration)
+   - Current time 21:40 UTC is outside market hours blackout (13:30-20:00 UTC)
+   - Restored via `git checkout HEAD -- DEPLOY_READY`
+   - Staged for commit
+   - System ready for post-session deployment trigger at June 2 13:30 UTC market open
+
+**Project Status** (verified, unchanged from Session 2520):
+| Project | Status | Next Action |
+|---------|--------|-------------|
+| **stockbot** | ✅ MARKET OPEN READY | June 2 13:30 UTC (11h 50min away). Deployment automatic via DEPLOY_READY. Pre-market action: activate AMZN `hmm_observe_mode=false` on Jetson anytime before June 3. |
+| **resistance-research** | ✅ PHASE 2 FINALIZED | All research complete. Awaiting user distribution decisions (June 2-3). |
+| **seedwarden** | ✅ GATE 1 READY | Awaiting user gate activation. Zero blockers. |
+| **systems-resilience** | ✅ READY | Author recruitment decision gate June 3 23:59 UTC. Phase 5 publication gate June 5. |
+| **open-repo** | ✅ READY | Phase 3 complete. June 12 deployment on track. |
+| **cybersecurity-hardening** | 🟡 BLOCKED | VeraCrypt Phase 1 restart required (user action). |
+| **mfg-farm** | 🟡 BLOCKED | Test print execution required (user action). |
+
+**Critical Timeline** (unchanged):
+- **Now (21:40 UTC)**: All systems green. Pre-market actions: activate AMZN `hmm_observe_mode=false` anytime before June 3.
+- **June 2 13:30 UTC** (11h 50min): 🚨 **STOCKBOT MARKET OPEN** — JPM ridge_wf + AMZN lgbm_ho live trading begins. Deployment automatic. Pre-market: check Jetson logs 13:00-13:15 UTC for "Market is open" transition.
+- **June 2-3**: Resistance-research user distribution execution (Domains 39, 57, 59, etc.)
+- **June 3 23:59 UTC**: systems-resilience author recruitment decision gate
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication gate
+
+**Commits**:
+- chore(orchestrator): Session 2521 — Pre-market standby + DEPLOY_READY restoration
+
 ## Since Last Check-in (Session 2520, 2026-06-01 21:20–22:55 UTC — Stockbot Signal Quality Audit + Orchestration)
 
 **Session Status**: ✅ **EXPLORATION QUEUE EXECUTION — MARKET-OPEN SIGNAL AUDIT COMPLETE; GO FOR JUNE 2 DEPLOYMENT**
