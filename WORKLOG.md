@@ -1,5 +1,33 @@
 # Work Log
 
+- **Session 2520 (June 1, 21:20–22:55 UTC — STOCKBOT MARKET-OPEN SIGNAL QUALITY AUDIT + ORCHESTRATION)**:
+  - **Status**: ✅ COMPLETE — Exploration Queue item executed; signal quality audit delivered; market-open readiness confirmed
+  - **Work**:
+    1. **Orchestrator Orientation** ✅:
+       - All active projects blocked on user decisions or awaiting deployment automation
+       - Two active user-action blocks confirmed (cybersecurity-hardening VeraCrypt, mfg-farm test print) — no resolution yet
+       - No INBOX.md items; Exploration Queue has pending items
+    2. **Stockbot June 2 Market-Open Pre-Flight Signal Quality Audit** ✅:
+       - Executed pending Exploration Queue item: validate signal quality for 2 deployed models using May 27-31 paper-trading data
+       - **Deliverable**: `projects/stockbot/JUNE_2_MARKET_OPEN_SIGNAL_QUALITY_AUDIT.md` (2,847 words, comprehensive analysis)
+       - **Per-model findings**:
+         - **JPM ridge_wf** (6/6 gates): No divergence detected. 92% confidence GO. Fold-over-fold OOS Sharpe improvement (3.80 → 4.41 → 4.52) into progressively recent data indicates anti-degradation. Bear-regime Sharpe +1.834 confirms all-weather capability.
+         - **AMZN lgbm_ho** (5/6 gates): Signal frequency elevation (+106% vs WFE baseline at 1/4.95 days vs. 1/10.2 days). Win rate and Sharpe remain within 15% of baseline. G5 bear-regime vulnerability flagged (hmm_observe_mode=true). 78% confidence Conditional GO.
+       - **Portfolio assessment**: 83% confidence (above 70% floor). GO for June 2 13:30 UTC market open.
+       - **Pre-June-3 action required**: Activate AMZN `hmm_observe_mode: false` in `/opt/stockbot/active-sessions-4session.json` on Jetson to address G5 bear-regime gate vulnerability
+  - **Risk Flags Identified**:
+    - AMZN signal frequency elevation (+106%): MEDIUM — monitor; raise confidence threshold to 0.60 if >3 signals in first 5 days
+    - AMZN G5 bear-regime vulnerability: MEDIUM — must activate hmm_observe_mode=false before June 3
+    - Insufficient drift tracking data (first 4 days): LOW — expected, first Z-score checkpoint June 9
+  - **Decision Checkpoint**: ✅ GO for June 2 13:30 UTC market open deployment (JPM ridge_wf at $25K, AMZN lgbm_ho at $25K; AAPL sessions suspended)
+  - **Deliverables**: `JUNE_2_MARKET_OPEN_SIGNAL_QUALITY_AUDIT.md` — production-ready signal audit report
+  - **Project Status** (stockbot):
+    - Market open: June 2 13:30 UTC (11 hours remaining)
+    - Deployment: DEPLOY_READY present, deployment automation executes post-session
+    - Configuration: 2-session config (JPM + AMZN) verified active on Jetson
+    - Pre-market action: Activate AMZN hmm_observe_mode=false (can be done anytime before June 3)
+  - **Blockers**: None. Signal quality audit confirms GO for market-open deployment.
+
 - **Session 2519 (June 1, 21:05–22:45 UTC — RESISTANCE-RESEARCH PHASE 2 PRODUCTION FINALIZATION)**:
   - **Status**: ✅ COMPLETE — All Phase 2 production-readiness gaps closed; verification agents confirmed delivery quality; 4 autonomous fixes applied
   - **Work**:
