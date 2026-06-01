@@ -1,14 +1,16 @@
 """FastAPI application factory."""
 
 from contextlib import asynccontextmanager
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.responses import HTMLResponse
 
 from app.database import init_db, close_db
 from app.routes import router
 from app.api.v1.export import router as export_router
 from app.api.v1.opds import router as opds_router
 from app import __version__
+from app.a11y_docs import get_swagger_ui_html, get_redoc_html
 
 
 @asynccontextmanager
@@ -36,6 +38,9 @@ def create_app() -> FastAPI:
         description="Open-Repo MVP Backend - Federated Knowledge Network",
         version=__version__,
         lifespan=lifespan,
+        # Disable automatic docs setup so we can use our custom accessibility-enhanced versions
+        docs_url=None,
+        redoc_url=None,
     )
 
     # Add CORS middleware
@@ -61,6 +66,33 @@ def create_app() -> FastAPI:
             "docs": "/docs",
             "health": "/health",
         }
+
+    # Override documentation endpoints with accessibility-enhanced versions
+    @app.get("/docs", include_in_schema=False)
+    async def swagger_ui_html(req: Request) -> HTMLResponse:
+        """Serve Swagger UI documentation with accessibility enhancements."""
+        root_path = req.scope.get("root_path", "").rstrip("/")
+        openapi_url = root_path + app.openapi_url
+        oauth2_redirect_url = app.swagger_ui_oauth2_redirect_url
+        if oauth2_redirect_url:
+            oauth2_redirect_url = root_path + oauth2_redirect_url
+        return get_swagger_ui_html(
+            openapi_url=openapi_url,
+            title=f"{app.title} - Swagger UI",
+            oauth2_redirect_url=oauth2_redirect_url,
+            init_oauth=app.swagger_ui_init_oauth,
+            swagger_ui_parameters=app.swagger_ui_parameters,
+        )
+
+    @app.get("/redoc", include_in_schema=False)
+    async def redoc_html(req: Request) -> HTMLResponse:
+        """Serve ReDoc documentation with accessibility enhancements."""
+        root_path = req.scope.get("root_path", "").rstrip("/")
+        openapi_url = root_path + app.openapi_url
+        return get_redoc_html(
+            openapi_url=openapi_url,
+            title=f"{app.title} - ReDoc"
+        )
 
     return app
 

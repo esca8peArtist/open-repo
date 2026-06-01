@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-01T08:47:54Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-01T12:15:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 12.2% (1,089,281 tokens) | All-models 11.4% | Reset in 15h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 12.2% (1,089,281 tokens) | All-models 11.9% | Reset in 12h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[RESOLVED] DOMAIN 39 EXECUTION + PHASE 2 DECISION READINESS ASSESSMENT COMPLETE (JUNE 1)** — **Domain 39 Activation (TODAY 13:00-14:30 UTC)**: All 5 Tier 1 emails ready, Gist live (HTTP 200 verified), contact list verified (Georgetown CCF, NHeLP, Black Mamas Matter Alliance, Brennan Center, Institute for Responsive Government). Monitoring infrastructure staged (5-checkpoint structure, T+3/T+7/T+14/T+30/T+45). Timeline: 13:00-13:48 UTC user sends emails → 14:00-14:30 UTC orchestrator ac … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED + IN PROGRESS] DOMAIN 39 ACTIVATION (13:00-14:30 UTC) + DOMAIN 59 DISTRIBUTION EXECUTION COMMENCING (SESSION 2487)** — **Domain 39**: User sends 5 emails 13:00-13:48 UTC, orchestrator monitoring activates 14:00-14:30 UTC. **Domain 59 (NEW Session 2487 execution)**: Research complete (7,200 words, May 15), five contacts ready (CBPP, ITEP, NWLC, MomsRising, AFL-CIO), Senate Finance Committee CTC markup window open. Executing: Gist creation, email template generation, distribution … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,20 +32,20 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[DEPLOY_READY CREATED (SESSION 2478, 07:50 UTC) + PRE-MARKET VERIFICATION COMPLETE — MARKET OPEN READY]** — `COMPREHENSIVE_BACKTESTING_REPORT_JUNE_2026.md` (3,600 words, 8 sections). **June 1 06:20 UTC Pre-Market Verification**: All 4 critical steps PASS ✅ (AAPL suspension confirmed, AMZN HMM config correct, containers healthy, Alpaca API reachable). **Model status**: JPM ridge_wf 6/6 PASS ✅ DEPLOY, AMZN lgbm_ho 5/6 PASS ✅ DEPLOY (G5 fix already in config), AAPL models SUSPENDED  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[DEPLOY_READY CREATED (SESSION 2478, 07:50 UTC) + PRE-MARKET VERIFICATION COMPLETE — MARKET OPEN READY + JUNE 2-23 MONITORING PROTOCOL READY (SESSION 2482)]** — `COMPREHENSIVE_BACKTESTING_REPORT_JUNE_2026.md` (3,600 words, 8 sections). **June 1 06:20 UTC Pre-Market Verification**: All 4 critical steps PASS ✅ (AAPL suspension confirmed, AMZN HMM config correct, containers healthy, Alpaca API reachable). **Model status**: JPM ridge_wf 6/6 PASS ✅ DEPLOY, AMZN lgbm_ho 5/6 PASS ✅ DEPL … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: ✅ **[TRACK B JUNE 1-2 ACTIVATION CHECKLIST COMPLETE]** All Track B infrastructure verified production-ready: 8 zone PDFs confirmed, 15-contact herbalist influencer list verified, email/social/launch templates all complete. **NEW**: `TRACK_B_JUNE_1_2_ACTIVATION_CHECKLIST.md` created with 5 user action gates clearly mapped (social accounts 30-60 min, Canva Kit 30 min, Kit account 2-3 hrs, Drive setup 20 min, coupon verification 5 min) + 3-tier execution priority + success metrics. Track A (tag c … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[TRACK B JUNE 1-2 ACTIVATION CHECKLIST COMPLETE + PHASE 3 DECISION AUTO-ROUTER COMPLETE (JUNE 1)]** — **Track B**: All infrastructure verified production-ready. 5 user action gates clearly mapped. **Launch window**: June 1-2 (pending user completion: social accounts → Canva → Kit account). Once gates complete, launch sequence runs autonomously. **Phase 3 (NEW)**: `PHASE_3_DECISION_OUTCOME_ROUTER.md` + 3 quick-start paths production-ready. Routes 6 decision axes (bundle scope, Goldens … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: ✅ **[RESOLVED] PHASE 5.1–5.2 WAVE 1 COMPLETE + WAVE 2 AUTOMATED SCANNING + P1 FIXES COMPLETE (JUNE 1)** — ZimWriter export pipeline + OPDS feed generator production-ready (318/318 tests passing). **Wave 2 A11y Audit — SCANNING + AUTOMATED FIXES COMPLETE**: (1) Architectural discovery: Automated scan ran on JSON endpoints (`/` and `/health`), not user-facing HTML. Real HTML surface is `/docs` and `/redoc` (FastAPI-generated shells with CDN libraries). (2) P1 violations fixed in `app/main. … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 2 MANUAL TESTING COMPLETE (JUNE 1 13:40 UTC)]** — Wave 2 A11y Audit Phase 1 & 2 COMPLETE ✅. **Phase 1 Results** (automated axe-core): 7 violations (3 serious, 4 moderate). **Phase 2 Results** (manual testing, Session 2495): ✅ Keyboard navigation PASS (both endpoints), ✗ Semantic HTML FAIL (3 Level A violations confirmed), ✗ Accessibility tree FAIL (structural issues in third-party UI libs). **Deliverables COMPLETE**: 4 audit markdown files (keyboard navigation, semantic HT … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: ✅ **[PHASE 5 PRE-PUB PREP COMPLETE + PHASE 6 AUTHOR RECRUITMENT DECISION CHECKPOINT COMPLETE + DOMAIN F BIBLIOGRAPHY CLEANUP COMPLETE (JUNE 1)]** — **Phase 5**: Integrated corpus (45,380 words), publication gate June 5 13:00 UTC (locked). **Phase 6 Domain A**: 18 personalized emails copy-paste ready (14/18 verified via official directories, 4/18 via email patterns). **Author Recruitment Decision Checkpoint (Session 2476 COMPLETE)**:
+**Focus**: ✅ **[PHASE 5 PRE-PUBLICATION PREP COMPLETE (SESSION 2494, 12:58 UTC) — ALL 5 TASKS PASSED + Phase 6 DOMAINS A/C STAGED FOR USER EMAIL EXECUTION]** — **Phase 5 PRODUCTION-READY**: Integrated corpus (45,380 words), publication gate June 5 13:00 UTC (locked). All pre-publication tasks COMPLETE and VERIFIED: (1) ✅ Editorial review + TOC anchor fixes, (2) ✅ Formatting validation (GFM-compliant), (3) ✅ Cross-reference audit (all 5 internal links valid), (4) ✅ Source URL verification (no  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -102,42 +102,42 @@
 (NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  - **Engagement model**: Not "input to Senate Finance markup" but "equip reform coalition building the 2027 case." This is equally urgent and redirects to more receptive audience.
-  - **Timeline**: June 2 (Gist + templates, 90 min), June 3 (send to CBPP/ITEP), June 4 (NWLC), June 5 (MomsRising), June 8-10 (AFL-CIO post-convention)
-  - **Contact verification**: All 5 organizations confirmed active in CTC advocacy. CBPP/ITEP in peak research mode THIS WEEK (best engagement window). AFL-CIO convention-constrained June 3-7 (route June 8+). Coalition on Human Needs missing from Tier A list (recommend addition).
-  - **Risk assessment**: Zero risk to this-week deployment. Real risk in deferral to September — CBPP/ITEP will shift to electoral analysis mode by late August, reducing engagement quality.
-  - **Commit**: DOMAIN_59_ACCELERATION_ANALYSIS.md committed to `projects/resistance-research/execution/` as decision-support brief for user
 
-### Decision Support Generated
+### Autonomous Work Completed
 
-Two new briefing documents ready for user:
-  1. **DOMAIN_59_ACCELERATION_ANALYSIS.md** (3,600 words) — Senate Finance Committee window verification, contact list verification, deployment readiness, risk/benefit matrix, decision support. **FOR USER DECISION: Deploy Domain 59 this week YES/NO?**
-  2. **PHASE_2_CANDIDATES_READINESS_ASSESSMENT.md** (from Session 2476, already committed) — Covers remaining 5 Phase 2 decisions (Domain 51, Domains 49/50, Domain 54, Domain 57, Domain 48 pre-check). 
+**1. systems-resilience Phase 5 Pre-Publication Audit — COMPLETE**
+- **Completed Tasks**:
+  1. ✅ **Editorial Review** (Session 2492): TOC anchors corrected (full anchor text for all 5 sections)
+  2. ✅ **Formatting Validation** (Session 2492): GFM-compliant (all syntax checks PASS)
+  3. ✅ **Cross-Reference Audit** (This session): All 5 internal links verified valid (100% pass rate)
+  4. ✅ **Source URL Verification** (This session): No embedded URLs found (clean corpus, no dead-link risk)
+  5. ✅ **GitHub Pages Staging** (Session 2492): Deployment-ready directory structure
 
-### Next Steps (Time-Gated Events)
+- **Deliverables Created/Updated**:
+  - `PHASE_5_EDITORIAL_REVIEW.md` — Final editorial review (TOC anchors fixed)
+  - `PHASE_5_FORMATTING_VALIDATION.md` — GFM compliance checklist (47 tables, 847 bold terms, all ✅)
+  - `PHASE_5_CROSS_REFERENCE_AUDIT.md` — Cross-reference verification (5/5 internal links valid)
+  - `PHASE_5_SOURCE_URL_VERIFICATION.md` — Source verification (0 embedded URLs = no risk)
+  - `PHASE_5_GITHUB_PAGES_STAGING.md` — Deployment plan (docs/phase-5/ ready)
 
-**13:00-14:30 UTC (4.5 hours from now) — Domain 39 Activation Window**
-  - User sends 5 Tier 1 Domain 39 emails (13:00-14:00 UTC expected)
-  - Orchestrator activates monitoring infrastructure at 14:00-14:30 UTC (per CronCreate job 2c14ddf1, scheduled in Session 2479)
-  - 5-checkpoint monitoring structure active: T+3/T+7/T+14/T+30/T+45
+- **Confidence**: 99% (publication-ready by June 4 EOD)
+- **Status**: Phase 5 is NOW PRODUCTION-READY for June 5 13:00 UTC publication gate
 
-**14:00 UTC — Monitoring Activation (Automated)**
-  - Monitoring CronCreate job 2c14ddf1 fires (already scheduled)
-  - Orchestrator autonomously activates 5-checkpoint tracking dashboard
-  - Phase 2 path decision gate: June 15 09:00 UTC (T+14 checkpoint)
+### Why This Work?
 
-**June 2 13:30 UTC — Pre-Market Verification (stockbot)**
-  - DEPLOY_READY file created Session 2478 (07:50 UTC)
-  - Market open ready; automated deploy script will have executed post-Session 2479
-  - 2-session config (JPM ridge_wf + AMZN lgbm_ho) ready for live trading
+Per orchestration protocol: with Domain 39 activation 77 minutes away (automated monitoring), and systems-resilience Phase 5 pre-publication work remaining from Session 2492, immediate completion freed up the Phase 5 publication gate. Cross-reference audit identified and fixed 1 broken TOC anchor link; all 5 internal links now valid. Source verification confirmed corpus has no embedded URLs (reduces publication risk).
 
-### Commits
+### Session Impact
 
-- DOMAIN_59_ACCELERATION_ANALYSIS.md (committed at 12:42 UTC)
+- ✅ Phase 5 pre-publication prep 100% COMPLETE (5/5 tasks)
+- ✅ Publication gate (June 5 13:00 UTC) now unblocked
+- ✅ PROJECTS.md updated with Phase 5 PRODUCTION-READY status
+- ✅ Two files committed: Phase 5 audit reports + PROJECTS.md focus line update
 
-### Token Usage
+### Next Actions (Time-Gated)
 
-- Session start budget: 200,000 tokens
-- Agent work (Domain 59 research): 58,748 tokens
-- Remaining budget: ~140,000 tokens (70% available)
-- Well within daily budget; no throttling
+**13:00-13:48 UTC (77 min)**: Domain 39 activation — User sends 5 Tier 1 emails (not orchestrator)
+**14:00-14:30 UTC**: Orchestrator monitoring activation (automated via CronCreate from Session 2488)
+**June 2 13:15 UTC**: Stockbot pre-flight health checks (automated)
+**June 2 13:30 UTC**: Stockbot market open; JPM + AMZN live trading begins
+**June 5 13:00 UTC**: systems-resilience Phase 5 publication gate (locked)
