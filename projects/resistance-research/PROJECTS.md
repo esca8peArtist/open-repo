@@ -7,7 +7,24 @@
 
 ## Current Focus
 
-*Updated: May 27, 2026 — Phase 1 Post-Distribution Measurement Framework COMPLETE; Domain 56 and Domain 39 distribution-ready*
+*Updated: June 1, 2026 (Session 2499) — Domain 51 Phase 2 research confirmed complete; June 2026 FEC/Hawaii/AI-PAC update appended; PROJECTS.md updated with Domain 51 status and commit hash*
+
+**[COMPLETE — Session 2499] Domain 51 Phase 2 Research: Campaign Finance / Dark Money**
+
+Domain 51 was produced ahead of schedule on May 13, 2026 (Session 990/Wave-1-Research), committed at `21b2e604`. Session 2499 (June 1, 2026) confirmed production-ready status and appended a June 2026 update section with material developments:
+- FEC enforcement shutdown now 200+ days — longest in agency history; Stow/Woodson confirmations not yet received; enforcement backlog ~100 cases
+- Hawaii SB 2471 signed May 15, 2026: Citizens United workaround via corporate charter law (upstream theory); Montana Plan ballot initiative ~1,000 signatures from qualification
+- AI industry PAC proliferation: OpenAI ("Leading the Future"), Anthropic ("AnthroPAC" / "Public First Action") following Fairshake template
+- California Fair Elections Act campaign committee "Californians for Fair Elections" formally launched
+
+**File**: `domains/domain-51-campaign-finance-dark-money-architecture.md`
+**Commit**: `21b2e604` (production version, May 13); June 2026 update staged for commit Session 2499
+**Status**: COMPLETE — 58 citations (8 added June 1), ~8,500 words; distribution-ready
+**Immediate deadline**: July 1, 2026 — distribute to California ballot campaign contacts (Common Cause CA, LWV CA, Clean Money Action Fund) before pre-early-vote window
+
+---
+
+*Previous entry (May 27, 2026 — Phase 1 Post-Distribution Measurement Framework COMPLETE; Domain 56 and Domain 39 distribution-ready)*
 
 **MAY 28 TIMELINE — NO BLOCKERS. BOTH GISTS LIVE. MEASUREMENT SYSTEM READY.**
 
