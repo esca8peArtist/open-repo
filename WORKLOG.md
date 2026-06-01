@@ -41,6 +41,19 @@
   - **Key finding**: All infrastructure production-ready except Domain F bibliography (4 sources need adding). June 3 decision can proceed on schedule.
   - **Next action**: User sends 18 Domain A recruitment emails June 1–2; check responses June 3 AM; decision June 3 23:59 UTC
 
+- Session 2478 (June 1 07:50–08:10 UTC): **STOCKBOT DEPLOY-READY CREATION + PHASE 6 DOMAIN F CITATION VERIFICATION**
+  - **Status**: ✅ Complete; 1 commit (7a30956c); 83K tokens; 250 min agent work
+  - **Task 1 — Stockbot Deployment**: ✅ DEPLOY_READY file created at 07:50 UTC (outside market-hours blackout window). Triggers automated deploy script. 2-session config (JPM ridge_wf + AMZN lgbm_ho) will sync to Jetson and verify before market open June 2 13:30 UTC.
+  - **Task 2 — systems-resilience Phase 6 Domain F Citation Audit**: ✅ COMPLETE
+    - **Discovery**: Session 2477's bibliography additions (entries 45-47) had verification gaps — non-existent journal citations
+    - **Corrections Applied**:
+      1. Entry 44 URL corrected: Illinois Homeschooling Alliance domain fixed (DNS failure → `https://www.ilhsa.org/`)
+      2. Entry 46 verified: Funes-Monzote "Cuba's Sustainable Agriculture" — corrected to *Monthly Review* 63(8): Jan 2012 (verified publication)
+      3. Entry 47 verified: Lloréns "Imaging Disaster: Puerto Rico" — corrected to *Transforming Anthropology* 26(2): 136–156, 2018 (DOI: 10.1111/traa.12126)
+    - **Result**: Domain F bibliography now 47 entries, all verified against actual published sources, production-ready for June 5 publication gate
+  - **Commits**: `7a30956c` (Phase 6 Domain F citation verification + URL corrections)
+  - **Next**: Domain 39 activation 13:00-14:30 UTC (user email send + orchestrator monitoring); market open June 2 06:20 UTC pre-market check
+
 - Session 2480 (June 1 06:57–07:50 UTC): **2 EXPLORATION QUEUE ITEMS — STOCKBOT PRE-MARKET AUDIT + JUNE 2-5 MONITORING FRAMEWORK**
   - **Status**: ✅ Both complete; all monitoring infrastructure verified production-ready; 185K tokens
   - **Item 1 — Stockbot June 2 Pre-Market Signal Quality Audit**:

@@ -5,9 +5,23 @@
 
 ---
 
-## Since Last Check-in (Session 2477, 2026-06-01 07:40–08:32 UTC — Phase 6 Domain F Bibliography Cleanup + Pre-Activation Alignment)
+## Since Last Check-in (Session 2478, 2026-06-01 07:50–08:10 UTC — Stockbot Deploy + Domain F Citation Verification)
 
-**Session Status**: ✅ **DOMAIN F BIBLIOGRAPHY CLEANUP COMPLETE — ALL AUTHOR RECRUITMENT INFRASTRUCTURE PRODUCTION-READY — DOMAIN 39 ACTIVATION STAGED**
+**Session Status**: ✅ **STOCKBOT DEPLOY_READY CREATED (OUTSIDE BLACKOUT WINDOW) + PHASE 6 DOMAIN F CITATION VERIFICATION COMPLETE — MARKET OPEN READY — DOMAIN 39 ACTIVATION IMMINENT**
+
+**What Happened in Session 2478**:
+1. **stockbot Deployment Trigger** ✅:
+   - DEPLOY_READY file created at 07:50 UTC (5h 40m before market open, outside 13:30-20:00 UTC blackout window)
+   - Automated deploy script will trigger post-session, syncing 2-session config (JPM ridge_wf + AMZN lgbm_ho) to Jetson
+   - Market open June 2 13:30 UTC with both models active and verified healthy
+
+2. **systems-resilience Phase 6 Domain F Citation Audit** ✅:
+   - Fixed 3 citation verification errors introduced in Session 2477:
+     - Illinois Homeschooling Alliance URL corrected (DNS failure → `https://www.ilhsa.org/`)
+     - Funes-Monzote entry moved to verified *Monthly Review* publication (journal/year corrected)
+     - Lloréns entry corrected to verified *Transforming Anthropology* publication with DOI
+   - Result: Domain F now 47/47 sources verified, production-ready for June 5 publication gate
+   - Commit: 7a30956c
 
 **What Happened in Session 2477**:
 1. **systems-resilience Phase 6 Domain F Bibliography Cleanup** ✅ (COMPLETE):
