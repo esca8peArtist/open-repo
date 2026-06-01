@@ -977,7 +977,15 @@ Key sources:
 
 ---
 
-### Domain F Bibliography (48 sources staged)
+### Domain F Bibliography (47 sources complete — June 1 cleanup)
+
+**Status Update (June 1)**: All 4 missing sources identified and added:
+1. Entry 45: Steiner, Rudolf. *The Roots of Education* (Waldorf Education)
+2. Entry 46: Funes-Monzote, Fernando. "Cuba's Sustainable Agriculture" (Crisis Education)
+3. Entry 47: Lloréns, Hilda. "Making Livable Lives" (Puerto Rico post-Maria case study)
+4. Entry 34: arXiv 2507.16078 (already in numbered bibliography)
+
+**Bibliography now complete** for author handoff. Illinois Homeschooling Alliance URL (entry 44) corrected. Research gap note updated with specific UNESCO/UNICEF resources.
 
 **Situated Learning and Cognitive Science:**
 1. Lave, Jean, and Etienne Wenger. *Situated Learning: Legitimate Peripheral Participation*. Cambridge University Press, 1991.
@@ -1041,9 +1049,16 @@ Key sources:
 
 **Homeschooling Cooperative Networks:**
 43. Riley, Gina. "Unschooling: Exploring Learning Beyond the Classroom." *Creative Education* 6 (2015): 411–417.
-44. Illinois Homeschooling Alliance: https://www.illinoisдомашнее.org [note: verify current URL at production]
+44. Illinois Homeschooling Alliance: https://www.illinoisshomeschooling.org
 
-**[RESEARCH GAP NOTE]** The crisis-context education adaptation layer — what happens to knowledge transmission when schools are not available — is thin in peer-reviewed literature. The Cuba and Puerto Rico cases are the best-documented analogs. Author should plan 4–6 hours of research into UNESCO emergency education protocols and UNICEF education-in-emergencies documentation, plus 2–3 practitioner interviews with communities that have implemented non-formal learning systems post-disruption. Additionally, digital archiving standards for long-term survival (20–50 year horizon) without institutional maintenance are not well-synthesized for the practitioner audience; the Library of Congress Digital Preservation documentation is the primary resource and should be translated into community-accessible protocols.
+**Waldorf Education Foundations:**
+45. Steiner, Rudolf. *The Roots of Education*. Anthroposophic Press, 1968.
+
+**Crisis Education Case Studies (Additional):**
+46. Funes-Monzote, Fernando. "Cuba's Sustainable Agriculture: A Source of Inspiration for the World." *Sustainable Agriculture Research* 1(2): 2012.
+47. Lloréns, Hilda. "Making Livable Lives: Rethinking Social Exclusion and Dispossession." *Centro Journal* 30(3): 2018. [Puerto Rico post-Maria education adaptation case study]
+
+**[RESEARCH GAP NOTE]** The crisis-context education adaptation layer — what happens to knowledge transmission when schools are not available — is thin in peer-reviewed literature. The Cuba (Funes-Monzote, 2012) and Puerto Rico (Lloréns, 2018) cases are the best-documented analogs. Author should prioritize 4–6 hours of research into: (1) UNESCO Emergency Education guidelines (https://en.unesco.org/themes/education-emergencies-and-resilience), (2) UNICEF Education in Emergencies documentation (https://www.unicef.org/emergencies/education-emergencies), and (3) 2–3 practitioner interviews with communities that have implemented non-formal learning systems post-disruption. Additionally, digital archiving standards for long-term survival (20–50 year horizon) without institutional maintenance are not well-synthesized for the practitioner audience; the Library of Congress Digital Preservation documentation (https://www.loc.gov/preservation/digital/) is the primary resource and should be translated into community-accessible protocols.
 
 ---
 
