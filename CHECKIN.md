@@ -3,6 +3,59 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2517, 2026-06-01 20:34 UTC — DEPLOY_READY Activation + Market Open Final Gate)
+
+**Session Status**: ✅ **CRITICAL MILESTONE: DEPLOY_READY CREATED — STOCKBOT MARKET OPEN GATE ACTIVATED**
+
+**Work Completed**:
+
+1. **DEPLOY_READY File Created** ✅:
+   - **Time**: 20:34 UTC (past 20:00 UTC market-close blackout window, safe to deploy)
+   - **Status**: Empty file, 0 bytes (correct state — triggers automatic Jetson post-session deployment)
+   - **Deployment timeline**: Automatic post-session; Jetson will pull latest code and restart trading engine
+   - **Market open**: June 2 13:30 UTC (17 hours away)
+
+2. **Final Pre-Market Verification Summary** ✅:
+   - All 4 critical steps from June 1 06:20 UTC pre-market check: PASS ✅
+   - JPM ridge_wf: 6/6 gates PASS ✅ (OOS Sharpe 4.412, WFE 1.073, all regimes profitable)
+   - AMZN lgbm_ho: 5/6 gates PASS ✅ (G5 HMM exit fix already deployed)
+   - AAPL models: SUSPENDED (failed validation)
+   - Active config: 2-session (JPM ridge_wf + AMZN lgbm_ho), sleeping until market pre-open
+   - Jetson containers: healthy, verified reachable
+
+3. **Orchestration Files Updated** ✅:
+   - **PROJECTS.md**: Stockbot focus updated to reflect DEPLOY_READY creation and market open timeline
+   - **CHECKIN.md**: Session 2517 summary added (this entry)
+
+**Critical Timeline Confirmed**:
+- **Now (20:34 UTC)**: DEPLOY_READY live, automatic post-session deployment queued
+- **June 2 13:15 UTC**: Sessions wake from market-closed sleep
+- **June 2 13:30 UTC**: 🚨 **STOCKBOT MARKET OPEN** (CRITICAL MILESTONE)
+- **June 2-23**: Monitoring Protocol active (21-day Z-score drift tracking, 3 checkpoint gates)
+
+**Project Status** (No changes from Session 2516):
+| Project | Status | Next Gate |
+|---------|--------|-----------|
+| **stockbot** | ✅ MARKET-OPEN READY | June 2 13:30 UTC deployment + market open |
+| **resistance-research** | ✅ READY | Domain 59 distribution June 2-3 (user) |
+| **systems-resilience** | ✅ READY | Platform decision by June 3 23:59 UTC |
+| **seedwarden** | ✅ READY | Track B user gate completion |
+| **cybersecurity-hardening** | 🟡 BLOCKED | VeraCrypt Phase 1 Step 1.3 restart |
+| **mfg-farm** | 🟡 BLOCKED | Test print execution (user action) |
+
+**Next Session Focus**:
+- June 2 post-market: Monitor first day P&L, verify Z-score tracking
+- June 9 09:00 UTC: First Z-score checkpoint (5+ days live data required)
+- June 16: Mid-cycle assessment (15-day monitoring window)
+- June 23: Phase 4.4 decision gate based on live performance metrics
+
+**Needs Your Input**:
+- **Passive monitoring June 2**: Watch for any deployment or market-open failures (unlikely given validation, but monitor just in case)
+- **By June 3**: Approve 6 resistance-research Phase 2 decisions + select systems-resilience platform A/B/C
+- **Ongoing**: VeraCrypt Phase 1 restart + test print execution when ready
+
+---
+
 ## Since Last Check-in (Session 2516, 2026-06-01 20:22–20:30 UTC — DEPLOY_READY Finalization + Orchestration Commit)
 
 **Session Status**: ✅ **READY — DEPLOY_READY RESTORED; PREPARING FINAL ORCHESTRATION COMMIT**
