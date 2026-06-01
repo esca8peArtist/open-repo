@@ -6,7 +6,7 @@ phase: 5
 tier: 3
 scale: community
 scale_range: "50–150 people (federation of 5–10 households)"
-status: production-draft
+status: PRODUCTION-READY
 draft_depth: "100% — all sections fully expanded; Section 4 written from actual Tier 2 documents; comprehensive checklists; complete citations"
 created: 2026-05-20
 completed: 2026-05-26

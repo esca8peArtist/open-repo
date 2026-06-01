@@ -6,7 +6,7 @@ phase: 5
 tier: 2
 scale: "household/community boundary"
 scale_range: "8–25 people; inter-household mediation up to 50"
-status: production-draft
+status: PRODUCTION-READY
 draft_depth: "100% — all sections fully expanded; domestic violence contraindication sources integrated; practical examples throughout"
 created: 2026-05-20
 completed: 2026-05-26

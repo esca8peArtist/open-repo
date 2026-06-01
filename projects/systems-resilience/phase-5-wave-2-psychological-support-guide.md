@@ -6,7 +6,7 @@ phase: 5
 tier: 2
 scale: household
 scale_range: "8–25 people"
-status: production-draft
+status: PRODUCTION-READY
 draft_depth: "95% — all sections fully expanded; critical seasonal suicide data corrected; all research completed"
 created: 2026-05-20
 completed: 2026-05-26

@@ -6,7 +6,7 @@ phase: 5
 tier: 2
 scale: household
 scale_range: "5–25 people"
-status: production-draft
+status: PRODUCTION-READY
 draft_depth: "90% — all sections fully expanded; Section 5 includes GFI 263 critical corrections"
 created: 2026-05-20
 completed: 2026-05-26
