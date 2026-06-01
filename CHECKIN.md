@@ -5,34 +5,65 @@
 
 ---
 
-## Since Last Check-in (Session 2473, 2026-06-01 04:48–~06:00 UTC — Phase 4.3 Live vs Backtest Tracker Complete)
+## Since Last Check-in (Session 2474, 2026-06-01 05:41–~06:30 UTC — Stockbot June 2 Readiness + Resistance-Research Activation Prep)
 
-**Session Status**: ✅ **STOCKBOT PHASE 4.3 PRODUCTION-READY** — Live performance tracking infrastructure complete and tested. All June 2-5 market-open operations infrastructure verified ready.
+**Session Status**: ✅ **JUNE 2 MARKET OPEN INFRASTRUCTURE VERIFIED PRODUCTION-READY — ONE CRITICAL ACTION REQUIRED FROM USER BEFORE 13:00 UTC**
 
-**Critical Work Completed** (this session):
-- ✅ **Stockbot Phase 4.3**: Live vs. Backtest Performance Tracker — 45 comprehensive tests, TradingSession integration, Discord alerts, WORKLOG.md reporting
-  - Test classes: Z-score computation, drift thresholds, table persistence, multiple models, edge cases
-  - Integration: Auto-pause at |Z| > 3.0 (CRITICAL), Discord embeds (MEDIUM/HIGH/CRITICAL)
-  - Monitoring: CLI tool `query_drift_logs.py`, daily drift reporting, red flag thresholds
-  - Models: JPM ridge_wf (mean 0.0905%, std 0.8200%), AMZN lgbm_ho (mean 0.2556%, std 1.5000%)
-  - Timeline: June 9 first Z-score window (5+ trading days), June 16 assessment (15-day checkpoint)
+**Critical Action Required (Do This First)**:
+⚠️ **STOCKBOT JETSON DEPLOYMENT — By 13:00 UTC June 2 (in ~7 hours)**
+
+The Jetson is currently running an old 4-session config with AAPL sessions enabled. You must deploy the 2-session config before market open to prevent unwanted AAPL trading. Execute this command:
+
+```bash
+rsync -av /home/awank/dev/SuperClaude_Framework/projects/stockbot/active-sessions-2session.json \
+  awank@100.120.18.84:/opt/stockbot/config/active-sessions-2session.json
+```
+
+After rsync completes, log into the container and restart the engine (or it will auto-load on next startup):
+```bash
+ssh awank@100.120.18.84
+docker exec stockbot supervisorctl restart stacker_engine
+```
+
+This deploy must complete before 13:00 UTC June 2, or AAPL sessions will trade unintentionally.
+
+**Reference**: See `projects/stockbot/JUNE_2_FINAL_DEPLOYMENT_CHECKLIST.md` Section 4 for full details and context.
+
+---
+
+**Critical Work Completed** (Session 2474):
+- ✅ **Stockbot June 2 Final Deployment Checklist** — Live SSH verification via Jetson 100.120.18.84
+  - System readiness: ✅ PASS (thermal 47.1°C nominal, Alpaca paper active $468K buying power, Discord 204, DB healthy)
+  - **Critical finding**: Jetson running old 4-session config with AAPL sessions enabled at 0.15 position_size — will trade unwanted AAPL on June 2
+  - **Action required**: rsync 2-session config to Jetson before 13:00 UTC (prevents AAPL trading, enables AMZN HMM fix)
+  - Database audit: 10 positions (AAPL 108 shares + 9 options) fully reconciled with Alpaca, no discrepancy
+  - Full report: `projects/stockbot/JUNE_2_FINAL_DEPLOYMENT_CHECKLIST.md` (all sections pass)
+
+- ✅ **Resistance-Research Domain 39 Activation Status** — Pre-flight verification for 14:00 UTC hand-off
+  - Infrastructure: 8/8 files verified production-ready (runbook, checklist, tracking log, 5 email drafts, contact list)
+  - Gist URL: HTTP 200 confirmed live (https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b)
+  - Contacts: All 5 orgs verified active (Georgetown CCF, NHeLP, Black Mamas Matter, Brennan Center, IRG)
+  - Checkpoints: T+3/7/14/30/45 in ISO format; T+14 (June 15) critical gate before Domain 38 sends
+  - Full report: `projects/resistance-research/JUNE_1_ACTIVATION_STATUS.md` (all systems go)
 
 **Status Summary — June 2 Market Open**:
-- ✅ Stockbot Phase 4.1 (backtesting pipeline) — COMPLETE
-- ✅ Stockbot Phase 4.2 (model comparison) — COMPLETE
-- ✅ Stockbot Phase 4.3 (live tracking) — COMPLETE
-- ✅ Models validated: JPM 6/6 gates PASS, AMZN 5/6 gates (HMM active), AAPL suspended
-- ✅ Deployment ready: 2-session config, June 2 13:15 UTC pre-market wake, 13:30 UTC market open
-- ✅ All deliverables committed to master
+- ✅ Stockbot Phase 4.1-4.3 infrastructure — COMPLETE and production-ready
+- ✅ Models validated: JPM 6/6 PASS, AMZN 5/6 PASS (G5 fix via rsync), AAPL suspended
+- ⚠️ Deployment config: 2-session ready; rsync required before 13:00 UTC June 2 to prevent AAPL trading
+- ✅ Jetson thermal/API/DB: All systems nominal
+- ✅ Resistance-research: Domain 39 all systems ready (infrastructure verified, contacts active, Gist live)
 
-**Remaining June 2 Actions** (user-triggered):
-- By 13:00 UTC: Execute Domain 39 distribution (5 emails, pre-written)
-- By 14:00 UTC: Orchestrator activates monitoring
-- June 2 13:15 UTC: Stockbot sessions wake for pre-market verification
-- June 2 13:30 UTC: Market opens, trading begins with live drift monitoring active
+**Remaining Today (June 1)**:
+1. **CRITICAL (by 13:00 UTC)**: rsync stockbot 2-session config to Jetson (prevents unwanted AAPL trading)
+2. **By 13:00–14:00 UTC**: Send Domain 39 5 emails (pre-written; fill name + contact info only)
+3. **14:00–14:30 UTC**: Orchestrator activates Domain 39 response monitoring
 
-**Session Duration**: ~1.25 hours (orientation → Phase 4.3 agent → WORKLOG/PROJECTS update → commit)
-**Tokens Used**: 92.6K subagent (Phase 4.3), well within weekly budget
+**Remaining June 2**:
+- 13:15 UTC: Stockbot sessions wake for pre-market checks
+- 13:30 UTC: Market opens, trading begins with live tracking active
+
+**Session Duration**: ~45 min (orientation → 2 parallel agents → WORKLOG/CHECKIN updates)
+**Tokens Used**: 169K subagent (stockbot + resistance-research verification), well within weekly budget
 
 **Next Critical Checkpoints**:
 - June 2 13:30 UTC: Stockbot market open
