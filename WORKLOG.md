@@ -26,15 +26,29 @@
       - Status: Ready for user execution June 1-2
     - **Ready**: June 1 18:00 UTC official start for Wave 1+2 merging (docs already identified & staged)
 
-  - **Why Prioritized**: (a) Domain 39 activation critical-path item occurring in 3h 20min. Verification ensures zero friction at 14:00 UTC handoff. (b) Phase 5/6 execution checklists + manifests generated in previous sessions; verification confirms all source material exists and is accessible. (c) Exploration Queue has 3+ pending items (no new queue items needed per protocol).
+    **3. Phase 6 Domain C Recruitment Package Created** ✅:
+    - ✅ Created 6 personalized recruitment emails for Domain C (Education & Knowledge Systems):
+      1. Sylvia Wynter (decolonial epistemology, Stanford)
+      2. Robin Wall Kimmerer (indigenous knowledge, SUNY ESF)
+      3. Jane Mezirow (transformative learning theory, Teachers College Columbia)
+      4. Permaculture educator networks
+      5. Adult education/community educator networks
+      6. Skills-sharing/mutual aid networks
+    - ✅ Created recruitment_targets.csv (10 contact targets)
+    - ✅ Created VERIFICATION_SUMMARY.md with execution checklist and status
+    - ✅ All files ready for copy-paste by user June 1-2 (same execution window as Domain A)
+    - **Timeline**: June 1-2 send, June 4 EOD response deadline, June 15 production start (later than Domain A due to higher conceptual density)
+
+  - **Why Prioritized**: (a) Domain 39 activation critical-path item occurring in 2.5h. Verification ensures zero friction at 14:00 UTC handoff. (b) Phase 6 Domain C recruitment was deferred in Session 2487; identified pre-staging window June 1 10:40-13:00 UTC to complete both Domain A + C packages for batch user execution. (c) Aligns Phase 5/6 timeline: user can send both recruitment batches June 1-2, enabling June 3 author selection + June 4 onboarding gates.
 
   - **Next Actions**:
-    - **13:00–13:48 UTC**: Await user completion signal (Domain 39 + Phase 6 emails sent)
+    - **13:00–13:48 UTC**: Await user completion signal (Domain 39 + Phase 6 Domain A/C emails sent)
     - **14:00–14:30 UTC**: Execute `ORCHESTRATOR_ACTIVATION_CHECKLIST_JUNE1.md` (verify send completion → update JSON → verify CronCreate → log → commit)
     - **18:00 UTC**: Begin Phase 5 Wave 1+2 document merging (5 docs → integrated narrative + TOC)
-    - **20:00+ UTC**: Phase 6 Domain A/C recruitment email sends (if not completed in morning window)
+    - **18:00+ UTC**: Phase 4 governance workshop prep (if needed for June 1 18:00 UTC execution)
 
-  - **Commits**: None required (verification-only session; no code changes)
+  - **Commits**:
+    - `feat(systems-resilience): Phase 6 Domain C recruitment package (6 personalized emails, 10 contact targets, response deadline June 4)` (5b16a879)
 
 ---
 
