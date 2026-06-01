@@ -75,7 +75,16 @@
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: ✅ **[RESOLVED] DOMAIN 39 EXECUTION + 14:00 UTC ACTIVATION INFRASTRUCTURE COMPLETE (JUNE 1)** — Domain 39 (Healthcare Access): All 5 pre-written Tier 1 emails verified ready (2 fields each: `[YOUR_NAME]` + `[YOUR_CONTACT_INFO]`). Gist URL live (HTTP 200 verified June 1 04:03 UTC). Contact list verified all active (Georgetown CCF, NHeLP, Black Mamas Matter Alliance, Brennan Center, Institute for Responsive Government). **NEW**: Activation runbook created (`DOMAIN_39_14UTC_ACTIVATION_RUNBOOK.md`) with pre-flight checklist, 14:00-14:30 UTC autonomous activation procedure, confirmation criteria, and fallback handling. Monitoring infrastructure ready: `domain-39-response-tracking-log.json` (5-checkpoint structure with dates T+3/T+7/T+14/T+30/T+45) + `DOMAIN_39_ORCHESTRATOR_ACTIVATION_CHECKLIST.md`. **Timeline TODAY**: 13:00-13:48 UTC user sends 5 emails → 14:00-14:30 UTC orchestrator activates monitoring autonomously. Domain 58 (Tribal Sovereignty): Production-complete (7,000–8,000 words, 60+ citations); distribution infrastructure ready (Gist, 5 contacts verified, Trump v. Barbara rapid-response protocol locked). **Next**: User executes email sends June 1 13:00-14:00 UTC; orchestrator handles monitoring activation 14:00-14:30 UTC.
+**Current focus**: ✅ **[RESOLVED] DOMAIN 39 EXECUTION + PHASE 2 DECISION READINESS ASSESSMENT COMPLETE (JUNE 1)** — **Domain 39 Activation (TODAY 13:00-14:30 UTC)**: All 5 Tier 1 emails ready, Gist live (HTTP 200 verified), contact list verified (Georgetown CCF, NHeLP, Black Mamas Matter Alliance, Brennan Center, Institute for Responsive Government). Monitoring infrastructure staged (5-checkpoint structure, T+3/T+7/T+14/T+30/T+45). Timeline: 13:00-13:48 UTC user sends emails → 14:00-14:30 UTC orchestrator activates monitoring. **NEW: Phase 2 Decision Readiness Assessment (Session 2476 COMPLETE)**:
+  - **CRITICAL**: Domains 57 & 59 already DONE (May 15, 7,200 words each) — not research candidates but DISTRIBUTION candidates
+  - **Domain 59 ACCELERATION OPPORTUNITY**: Senate Finance Committee CTC markup window OPEN NOW (was Sept 1 timeline). Five contacts ready (CBPP, ITEP, NWLC, MomsRising, AFL-CIO). Recommended: Deploy this week.
+  - **Actual Phase 2 Research Pipeline** (candidates still needing research):
+    1. Domain 51 (Campaign Finance/Dark Money) — 10-12h, June 2 start, DISCLOSE Act deadline June-July
+    2. Domain 48 (Criminal Justice Civic Exclusion) — June 15 tentative (pending 15-min pre-check of domain-54 coverage)
+    3. Domains 49-50 (Environmental Justice/LGBTQ+ Rights) — July 1 parallel, August deadlines
+    4. Domain 54 (Youth Civic Power) — November post-midterm
+  - **Six User Decisions Required**: (1) Domain 51 immediate activation? (2) Domain 59 distribution acceleration to this week? (3) Domain 57 Gist+contact prep now? (4) Domain 48 pre-check? (5) Domains 49/50 July parallel authorization? (6) Domain 54 November or accelerate?
+  - **File**: `PHASE_2_CANDIDATES_READINESS_ASSESSMENT.md` (311 lines, committed)
 
 **Phase 1 Impact Evaluation Framework COMPLETE** (May 26, commit 8435be7f):
   - ✅ `PHASE_1_IMPACT_EVALUATION_FRAMEWORK.md` (2,500+ words): success metrics per-constituency (7 groups: law schools, immigration, civil rights, academic, faith, labor, mutual aid); Day 7/30/60 decision thresholds; contingency triggers
@@ -944,12 +953,12 @@
 **Priority**: High
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
 **Working dir**: `projects/systems-resilience/`
-**Current focus**: ✅ **[PHASE 5 PRE-PUB PREP COMPLETE + PHASE 6 DOMAIN A EMAIL VERIFICATION COMPLETE (JUNE 1 06:20 UTC)]** — **Phase 5**: Integrated corpus (45,380 words, merged Wave 1+2), GitHub Release template, distribution framework, stakeholder templates. Publication gate: June 5 13:00 UTC. **Phase 6 Domain A**: Author recruitment emails (18 total) with email verification now COMPLETE:
-   - ✅ 14/18 verified via official directories/staff pages (78% high-confidence)
-   - ✅ 4/18 verified via organizational email patterns (22% medium-confidence)
-   - ✅ Files: `recruitment_targets_VERIFIED.csv` (all 18 with verified addresses), `VERIFICATION_SUMMARY.md` (detailed sources), `CHANGES_SUMMARY.txt`
-   - Timeline: Ready for immediate user send June 1-3, decision gate June 3 EOD UTC
-   - **Next phase**: User sends 18 recruitment emails (copy-paste ready) June 1-2; orchestrator monitors responses through June 3 decision gate
+**Current focus**: ✅ **[PHASE 5 PRE-PUB PREP COMPLETE + PHASE 6 AUTHOR RECRUITMENT DECISION CHECKPOINT COMPLETE (JUNE 1 08:03 UTC)]** — **Phase 5**: Integrated corpus (45,380 words), publication gate June 5 13:00 UTC (locked). **Phase 6 Domain A**: 18 personalized emails copy-paste ready (14/18 verified via official directories, 4/18 via email patterns). **NEW: Author Recruitment Decision Checkpoint (Session 2476 COMPLETE)**:
+  - **Decision tree**: PATH A (author recruited by June 3 EOD UTC → onboarding in 4 hours); PATH B (24h extension under specific conditions); PATH C (fallback: autonomous Domain A research June 10-July 10, publication Aug 30)
+  - **Phase 6 Domains B/E/F audit**: Domain B 46 sources ✅ | Domain E 48 sources ✅ | Domain F 44 sources (4 missing bibliography + 1 URL corruption, 1-2 hours cleanup by June 5)
+  - **8-combination scoring matrix**: A+C+D top-ranked 4.5/5.0 (88% on-time). A+D+E highest delivery 91%. A+B+C highest coherence 3.7/5.0.
+  - **Files created**: `PHASE_6_AUTHOR_RECRUITMENT_DECISION_CHECKPOINT.md` | `phase-6-author-onboarding-kit.md` (updated) | `PHASE_6_RESEARCH_COMPLETION_CHECKLIST.md`
+  - **Timeline**: User sends 18 emails June 1-2, decision gate June 3 EOD UTC, fallback research starts June 10 if needed
 **Dependencies**: Pulls from off-grid-living (existing depth), seedwarden (foraging + hunting + container growing content)
 
 ---
