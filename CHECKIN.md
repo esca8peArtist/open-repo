@@ -5,6 +5,58 @@
 
 ---
 
+## Since Last Check-in (Session 2468, 2026-06-01 03:29–04:30 UTC — June 2-3 Post-Market Infrastructure)
+
+**What was accomplished**:
+
+- ✅ **STOCKBOT JUNE 2-5 MARKET-OPEN MONITORING PLAYBOOK — PRODUCTION-READY**
+  - **Deliverable**: `JUNE_2_5_MONITORING_PLAYBOOK.md` (committed a3ca994)
+  - **Contents**: 7 sections covering real-time monitoring dashboard, alert thresholds, anomaly detection, failure recovery, command cards, June 4 go/no-go checklist
+  - **Key features**: 
+    - Dashboard tracks per-session P&L ($100–$400 baseline from backtests), signal timing, order fill rates, thermal status
+    - Alert thresholds: thermal 80/85/87°C, 20% cash floor ($5K on $25K), 3+ failed reconnects, 2σ divergence alert / 3σ pause
+    - Anomaly detection: missed signals (10-day zero-signal window), slippage divergence (<15 bps baseline), signal drift (2σ alert / 3σ pause)
+    - 5 failure recovery scenarios with branching decision trees
+    - June 4 win-rate go/no-go: JPM >=60%, AMZN >=55%
+  - **Status**: Ready for immediate June 2 post-market-close activation (00:00-01:00 UTC June 3)
+
+- ✅ **RESISTANCE-RESEARCH PHASE 1 ADOPTION TRACKING DEPLOYMENT KIT — PRODUCTION-READY**
+  - **Deliverables**: 2 files (PHASE_1_ADOPTION_TRACKING_DEPLOYMENT_GUIDE.md + SETUP_CHECKLIST.md)
+  - **Contents**: 
+    - Quick-start: 6-step, 15–20 minute setup (dependencies, Gmail OAuth2, Sheets config, cron job, first run verification)
+    - Data collection: Days 1-7 expectations + per-day targets, Google Sheets schema (7 tabs, all column specs), pre-populated calibration data from May 28 Domain 56
+    - Decision support: Day 7 checkpoint decision tree (bounce check → Bitly count → reply count → reply quality → go/no-go determination)
+    - Synthesis templates: Weeks 2-4 weekly cadence (script-run → log-review → pull 4 numbers → fill template), 20–30 minute overhead per week
+    - Operational overhead: Honest breakdown (0-min automated runs, 5–10 min daily review, 15–60 min weekly depending on checkpoint week)
+  - **Key finding**: GitHub Gist analytics collection has manual fallback (2-minute direct record). This is now the documented default.
+  - **Status**: Ready for immediate June 3 morning deployment (post-Domain-39-distribution)
+
+- ✅ **STOCKBOT PRE-MARKET READINESS VERIFICATION — ALL 6 CRITICAL ACTIONS CONFIRMED**
+  - **Configuration audit**: active-sessions-4session.json verified against JUNE_2_SIGNAL_QUALITY_AUDIT.md
+  - **AAPL models suspended**: Both lgbm_ho (0.649 Sharpe) and ridge_wf (0.096 Sharpe) at position_size_pct=0.00 ✅
+  - **JPM ridge_wf active**: 6/6 gates PASS, 4.412 OOS Sharpe, 92% confidence, position_size_pct=0.15 ✅
+  - **AMZN lgbm_ho active**: 5/6 gates (G3 borderline), 3.939 OOS Sharpe, 78% confidence, hmm_observe_mode=true, position_size_pct=0.15 ✅
+  - **JPM stacker_id loaded**: 868f378c confirmed in config ✅
+  - **Portfolio confidence for June 2**: 83% (above 70% floor, below 90% target but all known/documented) ✅
+  - **Status**: HIGH CONFIDENCE for June 2 13:30 UTC market open
+
+**Critical timeline — NEXT 48 HOURS**:
+- **13:00–14:00 UTC TODAY (June 1)**: Domain 39 distribution (user action: 5 pre-written emails, 85-min timeline)
+- **14:00–18:00 UTC TODAY (June 1)**: Orchestrator activates monitoring infrastructure
+- **13:15–13:30 UTC June 2**: Final pre-market validation + session startup
+- **13:30–20:00 UTC June 2**: Market session (JPM + AMZN trading, AAPL suspended)
+- **00:00–01:00 UTC June 3**: Post-market-close monitoring playbook execution (stockbot reporting)
+- **June 3 morning**: Post-distribution adoption tracking deployment (resistance-research)
+
+**What needs your input**:
+1. **13:00-14:00 UTC TODAY**: Execute Domain 39 distribution (templates pre-written, 2 fields per email, copy-paste ready)
+2. **By 18:00 UTC TODAY**: systems-resilience Phase 6 domain decision (A+C+D recommended, or auto-fallback if you don't decide)
+3. **By June 3**: mfg-farm Phase 2 funding scenario decision (bootstrap/credit-card/sequential)
+
+**Usage**: Sonnet ~13.8% (estimated, two parallel 45–90 min agents, ~180K tokens). Reset in ~19 hours.
+
+---
+
 ## Since Last Check-in (Session 2467, 2026-06-01 03:40–04:15 UTC — June 1 Execution Infrastructure Pre-Staging)
 
 **What was accomplished**:
