@@ -48,6 +48,53 @@
 
   - **Parallel execution efficiency**: 2 agents (157.2K subagent tokens, ~5 minutes wall-clock) completed independent critical-path work for June 2-3 execution. Total session: 48 minutes from orientation to commit.
 
+- Session 2473 (June 1 04:32–~05:45 UTC): **PHASE 4.3 LIVE VS BACKTEST TRACKER COMPLETION — PRODUCTION-READY FOR JUNE 2 DEPLOYMENT**
+  - **Status**: ✅ Phase 4.3 implementation complete (45/45 tests passing, zero regressions)
+  - **Agent**: stockbot subagent (92.6K tokens)
+  
+  - ✅ **Test Suite** (45 comprehensive tests in `tests/unit/test_analytics/test_live_vs_backtest_tracker.py`):
+    - 10 test classes covering: minimum live days (5-day gate), Z-score computation (validated formula), DriftAlert thresholds (2.0σ), drift table persistence, multiple models (JPM ridge_wf + AMZN lgbm_ho), data class fields, drift history API, tracker initialization, backtest metrics loading, edge cases
+    - All tests pass; validates Z-score computation: `(live_mean - backtest_mean) / (backtest_std / √n)`
+    - JPM ridge_wf baseline: mean 0.0905%, std 0.8200%, Z-alert at 2.0σ
+    - AMZN lgbm_ho baseline: mean 0.2556%, std 1.5000%, Z-alert at 2.0σ
+  
+  - ✅ **TradingSession Integration** (lines 4410–4578 in `src/trading/trading_session.py`):
+    - New methods: `_maybe_check_drift()`, `_send_drift_discord_alert()`, `_append_drift_worklog()`
+    - Auto-pause at |Z| > 3.0 (CRITICAL level)
+    - Discord webhook alerts: MEDIUM (2.0-2.5σ), HIGH (2.5-3.0σ), CRITICAL (>3.0σ)
+    - WORKLOG.md integration: auto-append daily drift report rows with timestamp/ticker/model/Z-score
+  
+  - ✅ **CLI Script** (`scripts/query_drift_logs.py`):
+    - Query `live_vs_backtest_drift` table with filters: `--ticker JPM`, `--days 15`, `--alerts-only`, `--min-z 2.5`, `--json`
+    - Human output: aligned summary table + RED FLAG SUMMARY + STATISTICS
+    - JSON output: NDJSON format for automation
+    - Example: `uv run python scripts/query_drift_logs.py --ticker JPM --days 15`
+  
+  - ✅ **Documentation** (2 files):
+    - `PHASE_4_3_MONITORING_DASHBOARD.md`: Operational dashboard, deployed baselines, red flag thresholds, auto-pause logic, June 9/16 decision trees
+    - `docs/PHASE_4_3_LIVE_TRACKING.md`: Architecture, Z-score formula, DB schema, alert routing, configuration examples, fallback playbook
+    - (Both files excluded from git by project .gitignore convention — correct for operational runbooks)
+  
+  - **Red Flag Thresholds (Production)**:
+    | Model | Metric | Red Flag | Action |
+    |-------|--------|----------|--------|
+    | JPM | Live Sharpe after 15 days | < 1.0 | Suspend + diagnose |
+    | JPM | Zero signals in 15 days | All HOLD | Apply Lever A (tm 0.40) |
+    | AMZN | Live Sharpe after 15 days | < 1.0 | Suspend + diagnose |
+    | AMZN | Bear regime Day 1 | HMM "suppress" | Escalate G5 immediately |
+    | Portfolio | Combined MaxDD | > 10% | Throttle position sizing |
+  
+  - **Monitoring Timeline**:
+    - June 1-2: Deployment infrastructure ready (monitoring playbook from prior session)
+    - June 2 13:30 UTC: Market open with 2-session config (JPM + AMZN)
+    - June 9: First Z-score window opens (5+ trading days of live data collected)
+    - June 9-13: Win rate baseline comparison (JPM 87.5%, AMZN 90.9%)
+    - June 16: 15-day monitoring window closes; comprehensive live-vs-backtest assessment
+    - June 16 decision: Update AMZN G5 status, assess JPM signal frequency
+  
+  - **Code Quality**: 45/45 tests passing, 592 analytics tests total (zero regressions), all deliverables committed
+  - **Next Steps**: June 2 market open activation; Phase 4.3 monitoring begins June 9 with live data accumulation
+
   - **Deployments unblocked**: 
     - Stockbot market open June 2 13:30 UTC covered by monitoring playbook
     - Resistance-research adoption tracking ready for June 3 deployment
