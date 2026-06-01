@@ -20,7 +20,7 @@ Created 2026-04-30 05:50 UTC. These are the canonical reference documents for al
 | **Domain 39** (Healthcare Access as Democratic Infrastructure) | https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b | ~58 KB | 2026-05-26 |
 | **Domain 56** (Civil Service Politicization) | https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f | ~55 KB | 2026-05-22 |
 | **Domain 59** (Economic Precarity / Civic Participation) | https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba | ~58 KB | 2026-06-01 |
-| **Domain 57** (Multilateral Withdrawal) | [HASH — fill after creation by Aug 8; see execution/domain-57-gist-creation-steps.md] | ~60 KB | — |
+| **Domain 57** (Multilateral Withdrawal) | https://gist.github.com/esca8peArtist/a94ef436fd4a678f89e867ac8ed3dd61 | ~60 KB | 2026-06-01 |
 | **Litigation Tracker 2026** | https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0 | ~45 KB | 2026-04-29 |
 | **First Amendment Suppression Tracker** | https://gist.github.com/esca8peArtist/10d0a86e386e6c3c11c3830295a6503c | ~35 KB | 2026-04-28 |
 | **Environmental Rollbacks Tracker** | https://gist.github.com/esca8peArtist/87e2bdb931b77480e56a08044c567bc4 | ~42 KB | 2026-04-29 |
