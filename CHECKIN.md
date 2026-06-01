@@ -5,23 +5,35 @@
 
 ---
 
-## Since Last Check-in (Session 2480, 2026-06-01 06:57–07:50 UTC — All Pre-Market Infrastructure Ready)
+## Since Last Check-in (Session 2476, 2026-06-01 07:26–08:03 UTC — Phase 2 Decision Readiness + Phase 6 Checkpoint)
 
-**Session Status**: ✅ **ALL STOCKBOT PRE-MARKET INFRASTRUCTURE COMPLETE — AWAITING DOMAIN 39 ACTIVATION (4 HOURS 10 MIN)**
+**Session Status**: ✅ **PHASE 2 DECISION READINESS ASSESSMENT COMPLETE + PHASE 6 AUTHOR RECRUITMENT CHECKPOINT READY — 6 USER DECISIONS NEEDED**
 
-**What Happened in Session 2480**:
-1. **Stockbot June 2 Pre-Market Signal Quality Audit** ✅ — Validated all 4 active trading models. JPM ridge_wf (92% confidence, 6/6 gates PASS — ready for deployment). AMZN lgbm_ho (78% confidence, 5/6 gates, conditional on HMM activation). AAPL models suspended per design. Portfolio readiness: 83%.
+**CRITICAL FINDING — Domain 59 Acceleration Opportunity**:
+- Domain 59 (Economic Precarity) is ALREADY COMPLETE (May 15, 7,200 words, 60+ citations)
+- Senate Finance Committee CTC markup window is OPEN NOW (was scheduled for Sept 1 distribution)
+- **Recommendation**: Deploy Domain 59 distribution THIS WEEK instead of September to maximize advocacy impact
+- Five contacts ready to contact: CBPP, ITEP, NWLC, MomsRising, AFL-CIO
 
-2. **Stockbot June 2-5 Monitoring & Recovery Framework** ✅ — Verified production-ready infrastructure from Session 2468:
-   - JUNE_2_5_MONITORING_PLAYBOOK.md (4,229 words): 5-panel dashboard spec, alert thresholds, 5 decision trees, quick-reference cards
-   - monitoring_alert_script.py (863 lines): stdlib-only alert script with JSONL audit logging, dry-run tested, ready for June 2 13:00 UTC activation
+**What Happened in Session 2476**:
+1. **resistance-research Phase 2 Candidates Readiness Assessment** ✅:
+   - Domains 57 & 59 already COMPLETE (May 15, don't need research)
+   - Actual Phase 2 research pipeline identified: Domain 51 (June 2, 10-12h), Domain 48 (June 15), Domains 49-50 (July 1), Domain 54 (November)
+   - **File created**: `PHASE_2_CANDIDATES_READINESS_ASSESSMENT.md` (311 lines, committed)
 
-**Critical Today**: 
-- **13:00–14:00 UTC** (4h 10min away): Domain 39 user email sends (5 organizations, templates copy-paste ready)
+2. **systems-resilience Phase 6 Author Recruitment Decision Checkpoint** ✅:
+   - Created `PHASE_6_AUTHOR_RECRUITMENT_DECISION_CHECKPOINT.md` with full decision tree (PATH A/B/C)
+   - Phase 6 Domains B/E/F audit: Domain B ✅ 46 sources | Domain E ✅ 48 sources | Domain F ⚠️ 44 sources (4 missing bibliography + 1 URL corruption, 1-2 hours cleanup by June 5)
+   - Updated author onboarding kit with fallback activation procedures
+   - 8-combination scoring confirmed: A+C+D highest rank 4.5/5.0 (88% on-time)
+   - **Files created**: `PHASE_6_AUTHOR_RECRUITMENT_DECISION_CHECKPOINT.md` | `PHASE_6_RESEARCH_COMPLETION_CHECKLIST.md`
+
+**Critical Today (Unchanged from Previous)**: 
+- **13:00–14:00 UTC** (5.5 hours): Domain 39 user email sends (5 organizations, templates copy-paste ready)
 - **14:00–14:30 UTC**: Orchestrator autonomously activates Domain 39 monitoring (scheduled via CronCreate task)
 - **TOMORROW 13:30 UTC**: Stockbot market open with JPM ridge_wf + AMZN lgbm_ho (all pre-flight checks PASS ✅)
 
-**All Systems Status**: Production-ready for tomorrow's market open. Zero blockers. Automatic Domain 39 monitoring activates in 4 hours.
+**All Systems Status**: Production-ready. Zero blockers. All autonomous work pipelines complete.
 
 **Project Status Summary**:
 
@@ -59,12 +71,24 @@
 
 **Items Needing Your Input**:
 
+**PHASE 2 RESEARCH DECISIONS** (NEW — Session 2476):
+1. **Domain 59 Distribution Acceleration** — Approve accelerating from Sept 1 to THIS WEEK? (Senate Finance CTC window open now; contacts ready)
+2. **Domain 51 Immediate Research Activation** — Approve starting Campaign Finance/Dark Money research June 2? (10-12h, DISCLOSE Act deadline June-July)
+3. **Domain 48 Pre-Check** — 15-min read of `domain-54-criminal-justice-civic-exclusion-architecture.md` to verify it covers civic exclusion architecture
+4. **Domain 57 Distribution Prep** — Approve Gist creation + contact prep for Multilateral Withdrawal now? (was August timeline)
+5. **Domains 49-50 July Parallel Authorization** — Confirm July 1 start for Environmental Justice + LGBTQ+ Rights research (August deadlines)?
+6. **Domain 54 November Timeline** — Confirm Youth Civic Power for November post-midterm, or accelerate pre-election?
+
+**IMMEDIATE EXECUTION (TODAY)**:
 1. **Domain 39 Email Send** (TODAY 13:00–14:00 UTC) — Ready to copy-paste. Files: `domain-39-june1-execution-checklist.md`
 2. **Systems-Resilience Author Recruitment** (TODAY through June 3) — Ready to copy-paste. Files: 18 emails in `/phase-6-domain-a-recruitment/personalized_emails/`
-3. **Seedwarden Track B Launch Gates** (TODAY/Tomorrow) — Step-by-step guides ready for: social account setup, Canva Brand Kit, Kit account creation, Drive setup, coupon verification
-4. **Stockbot Market Open Monitoring** (JUNE 2 13:30 UTC) — Automatic, zero manual action. Monitoring will watch 2 sessions (JPM ridge_wf, AMZN lgbm_ho)
-5. **Test Print Execution** (mfg-farm) — Awaiting your physical print with specs in focus notes
-6. **Open-repo Phase 5 Direction** — Choose Candidate 1 (ZimWriter), 2 (OPDS), 3 (A11y) or parallel. Default recommendation: Candidate 1
+3. **Systems-Resilience Phase 6 Domain F Bibliography Cleanup** (by June 5) — 4 missing sources + 1 corrupted URL need fixing (1-2 hours work)
+
+**ONGOING/DEPENDENT**:
+4. **Seedwarden Track B Launch Gates** (TODAY/Tomorrow) — Step-by-step guides ready for: social account setup, Canva Brand Kit, Kit account creation, Drive setup, coupon verification
+5. **Stockbot Market Open Monitoring** (JUNE 2 13:30 UTC) — Automatic, zero manual action. Monitoring will watch 2 sessions (JPM ridge_wf, AMZN lgbm_ho)
+6. **Test Print Execution** (mfg-farm) — Awaiting your physical print with specs in focus notes
+7. **Open-repo Phase 5 Direction** — Choose Candidate 1 (ZimWriter), 2 (OPDS), 3 (A11y) or parallel. Default recommendation: Candidate 1
 
 **System Health**:
 - ✅ All projects staged and production-ready
