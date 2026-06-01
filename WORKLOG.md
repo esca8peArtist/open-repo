@@ -1,5 +1,17 @@
 # Work Log
 
+- Session 2480 (June 1 06:57–07:10 UTC): **EXPLORATION QUEUE ITEM — STOCKBOT JUNE 2 PRE-MARKET SIGNAL QUALITY AUDIT**
+  - **Status**: ✅ Complete, report committed to master (commit 20bb735), 133K tokens
+  - **Deliverable**: `projects/stockbot/JUNE_2_SIGNAL_QUALITY_AUDIT.md` (2,000+ words, production-ready)
+  - **Key findings**: 
+    - JPM ridge_wf: Confidence 92%, GO (6/6 gates pass, OOS Sharpe 4.412, all 3 market regimes profitable)
+    - AMZN lgbm_ho: Confidence 78%, CONDITIONAL GO (5/6 gates, requires HMM activation before June 3)
+    - AAPL lgbm_ho: Confidence 42%, SUSPENDED (position_size_pct=0, Sub-type A zero SELL signals)
+    - AAPL ridge_wf: Confidence 28%, SUSPENDED (position_size_pct=0, 1/6 gates, WF collapse 0.038)
+  - **Portfolio readiness**: 83% confidence (below 90% target; gap closes after AMZN HMM fix + Day 1 trading)
+  - **Action required**: Check AMZN HMM bear-regime logs before June 2 13:00 UTC
+  - **Next**: Monitor Domain 39 activation at 14:00 UTC; confirm AMZN HMM status before market open tomorrow
+
 - Session 2478 (June 1 06:40–07:15 UTC): **EXPLORATION QUEUE ITEMS 52-54 COMPLETION — 3 PARALLEL AGENTS, PHASE 2-4-6 INFRASTRUCTURE STAGED**
   - **Status**: ✅ All 3 items complete and committed, 240K tokens consumed, ~75 min wall-clock (agents ran in parallel)
   - **Exploration Queue Item 52 (mfg-farm Phase 2 Supplier Outreach)** — COMPLETE
