@@ -3,6 +3,57 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2510, 2026-06-01 16:15–16:30 UTC — Systems-Resilience Phase 6 Domain B Infrastructure + Orchestration Handoff)
+
+**Session Status**: ✅ **DOMAIN B INFRASTRUCTURE PRODUCTION-READY + DEPLOYMENT BLACKOUT PROTOCOL ACTIVATED — All 6 Domain B research scaffolding files created and staged; DEPLOY_READY file deferred to post-20:00 UTC per market-hour blackout; all critical-path work verified on track for June 2-5 milestones**
+
+**Work Completed**:
+
+1. **systems-resilience Phase 6 Domain B: Community Economic Resilience — Infrastructure Package Complete (16:15–16:27 UTC)**:
+   - ✅ **Deliverable**: 6-file Domain B research scaffolding package, production-ready for June 5 activation
+   - ✅ **Files created and staged**:
+     1. `domain-b-agent-briefing-prompt.md` (3,200 words, copy-paste ready for research agent)
+     2. `domain-b-economic-resilience-research-outline.md` (10 sections, causal pathways, evidence checkpoints)
+     3. `domain-b-economic-resilience-sources.md` (55 annotated sources, organized by section)
+     4. `domain-b-research-checklist.md` (dataset pre-checks, red flags, success criteria)
+     5. `domain-b-production-timeline.md` (25-day day-by-day production schedule)
+     6. `domain-b-success-criteria.md` (completion metrics, quality gates)
+   - ✅ **Architecture**: Modular research infrastructure, fully self-contained; researcher can begin June 5 without additional context
+   - ✅ **Scope**: Zone 5 Midwest communities (Illinois, Michigan, Iowa, Indiana, Wisconsin), 7,000–8,000 words, 40–60 citations, 200 production hours
+   - ✅ **Cross-references**: All internal links verified; Phase 5 governance documents referenced explicitly to prevent duplication
+   - ✅ **Activation gate**: June 5; if user activates, researcher can begin June 8 for June 30 completion
+   - **Status**: All files staged for commit; awaiting session close to commit with orchestrator state
+
+2. **Deployment Blackout Protocol: DEPLOY_READY File Deferral (16:27–16:30 UTC)**:
+   - 🔒 **Blackout active**: June 1 (Monday), 16:30 UTC is within 13:30–20:00 UTC market-hour window
+   - ⏸️ **DEPLOY_READY file status**: Previously created in Session 2478 (per PROJECTS.md) but does not exist on filesystem; cannot create during blackout
+   - 📋 **Decision**: Defer DEPLOY_READY creation to post-20:00 UTC (3.5 hours from now) if this session extends that long, or note for next session starting after 20:00 UTC
+   - ✅ **Stockbot readiness**: Confirmed GREEN across all pre-flight checks (Session 2508 pre-flight COMPLETE; comprehensive backtesting report + monitoring protocol ready); models (JPM ridge_wf, AMZN lgbm_ho) validated and staged for June 2 13:30 UTC market open
+   - **Status**: Market open will proceed on schedule June 2 13:30 UTC regardless of DEPLOY_READY file status (file triggers immediate post-session deployment automation; not required for trading execution)
+
+**Project Status** (unchanged from Session 2509):
+- **systems-resilience**: ✅ Phase 6 Domain B infrastructure complete (production-ready for June 5 activation); Phase 5 publication June 5 13:00 UTC on track
+- **stockbot**: ✅ Pre-flight verified GREEN; DEPLOY_READY creation deferred to post-20:00 UTC per blackout protocol; market open June 2 13:30 UTC ready
+- **resistance-research**: ✅ Domain 48 COMPLETE, Domain 51 complete, Domain 39/59 ready for distribution
+- **seedwarden**: ✅ Track B infrastructure ready, awaiting user gate completion
+- **open-repo**: ✅ Phase 3 complete, June 12 deployment on track
+
+**Needs Your Input** (unchanged):
+1. **systems-resilience**: Select platform (A/B/C) by June 3 for Phase 6 coordination
+2. **resistance-research**: Execute Domain 59 distribution June 2-3 (user-driven)
+3. **seedwarden**: Complete Track B gates (5 gates, 3.5–4h self-paced)
+4. **stockbot**: June 2 market open monitoring (passive; orchestrator ready)
+5. **cybersecurity-hardening**: VeraCrypt Phase 1 Step 1.3 restart
+6. **mfg-farm**: Test print execution
+
+**Next Session Triggers**:
+- **June 1 20:00 UTC**: DEPLOY_READY file creation window opens (if needed)
+- **June 2 13:30 UTC**: Stockbot market open (MAJOR MILESTONE)
+- **June 3 23:59 UTC**: systems-resilience author recruitment decision gate
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication + Phase 6 platform operational
+
+---
+
 ## Since Last Check-in (Session 2509, 2026-06-01 15:57–16:10 UTC — Systems-Resilience Phase 6 Platform Analysis)
 
 **Session Status**: ✅ **PHASE 6 PLATFORM ANALYSIS COMPLETE — Decision-ready package delivered; June 3 decision gate informed; all projects remain on track**
