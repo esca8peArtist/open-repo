@@ -5,6 +5,43 @@
 
 ---
 
+## Since Last Check-in (Session 2473, 2026-06-01 04:48–~06:00 UTC — Phase 4.3 Live vs Backtest Tracker Complete)
+
+**Session Status**: ✅ **STOCKBOT PHASE 4.3 PRODUCTION-READY** — Live performance tracking infrastructure complete and tested. All June 2-5 market-open operations infrastructure verified ready.
+
+**Critical Work Completed** (this session):
+- ✅ **Stockbot Phase 4.3**: Live vs. Backtest Performance Tracker — 45 comprehensive tests, TradingSession integration, Discord alerts, WORKLOG.md reporting
+  - Test classes: Z-score computation, drift thresholds, table persistence, multiple models, edge cases
+  - Integration: Auto-pause at |Z| > 3.0 (CRITICAL), Discord embeds (MEDIUM/HIGH/CRITICAL)
+  - Monitoring: CLI tool `query_drift_logs.py`, daily drift reporting, red flag thresholds
+  - Models: JPM ridge_wf (mean 0.0905%, std 0.8200%), AMZN lgbm_ho (mean 0.2556%, std 1.5000%)
+  - Timeline: June 9 first Z-score window (5+ trading days), June 16 assessment (15-day checkpoint)
+
+**Status Summary — June 2 Market Open**:
+- ✅ Stockbot Phase 4.1 (backtesting pipeline) — COMPLETE
+- ✅ Stockbot Phase 4.2 (model comparison) — COMPLETE
+- ✅ Stockbot Phase 4.3 (live tracking) — COMPLETE
+- ✅ Models validated: JPM 6/6 gates PASS, AMZN 5/6 gates (HMM active), AAPL suspended
+- ✅ Deployment ready: 2-session config, June 2 13:15 UTC pre-market wake, 13:30 UTC market open
+- ✅ All deliverables committed to master
+
+**Remaining June 2 Actions** (user-triggered):
+- By 13:00 UTC: Execute Domain 39 distribution (5 emails, pre-written)
+- By 14:00 UTC: Orchestrator activates monitoring
+- June 2 13:15 UTC: Stockbot sessions wake for pre-market verification
+- June 2 13:30 UTC: Market opens, trading begins with live drift monitoring active
+
+**Session Duration**: ~1.25 hours (orientation → Phase 4.3 agent → WORKLOG/PROJECTS update → commit)
+**Tokens Used**: 92.6K subagent (Phase 4.3), well within weekly budget
+
+**Next Critical Checkpoints**:
+- June 2 13:30 UTC: Stockbot market open
+- June 3 00:00 UTC: Resistance-research adoption tracking begins
+- June 9 00:00 UTC: First Z-score drift window (5 days live data)
+- June 16 00:00 UTC: Comprehensive 15-day live-vs-backtest assessment
+
+---
+
 ## Since Last Check-in (Session 2472, 2026-06-01 04:19–04:52 UTC — June 2-3 Deployment Infrastructure Ready)
 
 **Session Status**: ✅ **2 PARALLEL AGENTS COMPLETE** — June 2 market-open monitoring framework finalized, June 3 adoption tracking deployment infrastructure complete.
