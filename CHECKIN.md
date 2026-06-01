@@ -5,6 +5,61 @@
 
 ---
 
+## Since Last Check-in (Session 2461, 2026-06-01 00:22–[completion] UTC)
+
+**What was accomplished**:
+- ✅ **SESSION ORIENTATION COMPLETE** (post-May 31 deadline):
+  - All critical-path infrastructure verified production-ready
+  - ORCHESTRATOR_STATE.md current (auto-generated 00:22 UTC)
+  - BLOCKED.md: 2 immutable user-action blocks (cybersecurity-hardening VeraCrypt restart, mfg-farm test print)
+  - INBOX.md: Zero new items — all prior pending items already processed
+  - PROJECTS.md: All focus lines verified current; no stale state
+
+- ✅ **TIME-CRITICAL ITEM VERIFIED**:
+  - **Domain 39 User Execution Window: June 1 13:00–14:00 UTC** (12.5 hours from now)
+    - All 5 Tier 1 email templates verified complete in `execution/domain-39-tier-1-drafts.md`
+    - Gist URL verified (from prior session, HTTP 200)
+    - Contact list verified in `execution/domain-39-contact-list.md`
+    - Execution checklist ready: `domain-39-june1-execution-checklist.md`
+    - **ACTION REQUIRED**: User must execute 5 emails between 13:00–14:00 UTC (80-minute coordination window, pre-written templates, 12-min send intervals)
+
+- ✅ **STOCKBOT PRE-DEPLOYMENT BLOCKER IDENTIFIED**:
+  - **SSH Access to Jetson Unavailable**: ED25519 key not authorized on Jetson (100.120.18.84)
+  - Attempt to verify 4 critical pre-market config items failed: `Permission denied (publickey)`
+  - **Impact**: Cannot autonomously verify pre-deployment checklist (Jetson config, JPM stacker_id load, AMZN HMM gating, position_size_pct reduction)
+  - **Prior Context**: This is a documented historical block — SSH key authorization deadline was May 22 13:30 UTC (missed). See BLOCKED.md Resolved Archive for "SSH deadline missed (May 22 13:30 UTC)"
+  - **Resolution Required**: User must manually verify 4 items before June 2 13:30 UTC market open, OR authorize ED25519 SSH key on Jetson
+
+- ✅ **OPEN-REPO WAVE 2 A11Y AUDIT READINESS VERIFIED**:
+  - Execution runbook exists and is production-ready: `PHASE_5_WAVE_2_A11Y_EXECUTION_RUNBOOK.md`
+  - 6-day execution plan (June 1–6): Environment setup (4h) → manual testing (8h) → documentation and fixes (8–12h)
+  - All prerequisite dependencies documented (Playwright, pytest, dev server, axe-core)
+  - Can be executed autonomously or with user guidance
+  - **Status**: Ready for June 1 activation
+
+**What's in progress**:
+- Awaiting Domain 39 user execution (June 1 13:00–14:00 UTC window is imminent)
+- Awaiting stockbot pre-deployment verification (blocked on SSH access or user manual checks)
+- open-repo Wave 2 A11y audit staged for June 1 execution (can begin immediately or wait for post-Domain-39 window)
+
+**What needs your input**:
+- **URGENT (before 14:00 UTC today)**: Will you execute Domain 39 Tier 1 emails during 13:00–14:00 UTC window? (5 pre-written emails, 80 min total, execution checklist ready)
+- **URGENT (before June 2 13:30 UTC)**: Confirm Jetson configuration for stockbot 2-session deployment:
+  1. Is `active-sessions-2session.json` the active config?
+  2. Is JPM session loading stacker_id `868f378c` (ridge_wf)?
+  3. Is AMZN session set to `hmm_observe_mode: false`?
+  4. Is AMZN `position_size_pct` reduced from 0.15 to 0.10?
+  (Alternatively: authorize ED25519 SSH key on Jetson for autonomous pre-flight verification)
+- **Seedwarden Track B Status**: Was May 30 launch executed? What is current Day 1 status?
+
+**Critical Status**:
+- **Domain 39**: Execution window in ~12.5 hours (TODAY, 13:00–14:00 UTC). HHS rule goes live at 13:00 UTC. Time-critical for movement coordination.
+- **Stockbot**: 2-session deployment evidence-based and WFE-validated. Pre-deployment verification blocked on SSH access or user manual checks. Ready to execute June 2 upon your confirmation.
+- **open-repo**: Wave 2 A11y audit can begin immediately (June 1 start recommended for 6-day timeline)
+- **Budget**: Sonnet 11.3%, all-models 10.7%; reset in ~24h. Healthy.
+
+---
+
 ## Since Last Check-in (Session 2460, 2026-06-01 00:09–[completion] UTC)
 
 **What was accomplished**:
