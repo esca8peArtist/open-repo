@@ -3,6 +3,28 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2482, 2026-06-01 09:15–09:50 UTC — Stockbot Monitoring + Exploration Queue Repopulation)
+
+**Session Status**: ✅ **COMPLETE — STOCKBOT PHASE 4.3 MONITORING READY, EXPLORATION QUEUE REPOPULATED**
+
+**What Happened**:
+- **stockbot Phase 4.3**: Created comprehensive 21-day monitoring protocol (`JUNE_2_23_LIVE_MONITORING_PROTOCOL.md`) covering Z-score drift detection (4 alert levels), failure mode detection (zero signals, correlation spike, position concentration), 3 checkpoint gates (June 9/16/23) with pass/fail decision trees, and Phase 4.4 activation criteria. Automated 3 CronCreate checkpoint jobs (June 9/16/23 at 09:00 UTC).
+- **Exploration Queue**: Added 3 new high-value items for post-Domain-39 phase (Item 16: Domain 39 impact evaluation, Item 17: Stockbot monitoring [completed], Item 18: Seedwarden Track B coordination). Queue repopulated with autonomous work through end of June.
+- **All pre-market prep complete**: Market opens June 2 13:30 UTC with all monitoring infrastructure ready. Sessions sleeping until 13:15 UTC wakeup.
+
+**Critical Timeline (Next 3 Hours 15 Minutes)**:
+- **13:00–13:48 UTC**: Domain 39 user email send window (5 Tier 1 contacts)
+- **14:00–14:30 UTC**: Orchestrator monitoring activation (scheduled per Session 2479 CronCreate)
+- **June 2 13:30 UTC**: Stockbot market open (JPM ridge_wf + AMZN lgbm_ho live trading)
+- **June 9 09:00 UTC**: First checkpoint gate fires (automated, Z-score drift assessment)
+
+**Decision Support Needed**:
+None immediately. All pre-event work staged and ready. User actions (Domain 39 emails, potential Domain 59 acceleration) in next 3 hours will determine Phase 2 activation sequence.
+
+**Token Budget**: Session used ~12K tokens. Budget remaining: ~188K (94% available).
+
+---
+
 ## Since Last Check-in (Session 2481, 2026-06-01 08:51–09:15 UTC — Track B Audit + Phase 2 Review)
 
 **Session Status**: ✅ **EXPLORATION WORK COMPLETE — ALL INFRASTRUCTURE VERIFIED PRODUCTION-READY**
