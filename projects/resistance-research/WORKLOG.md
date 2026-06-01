@@ -2,6 +2,27 @@
 
 ---
 
+## June 1, 2026 — General Research Agent — Domain 39 June 1 Activation Ready-Check
+
+**Task**: Final activation prep for the 14:00 UTC orchestrator hand-off following the 13:00–14:00 UTC user send window. Verified all pre-flight checklist items, confirmed Gist live (HTTP 200), verified all 5 contacts, checked JSON tracking log structure, and produced the activation status report.
+
+**Most important findings**:
+
+1. **All systems go — no blockers.** All 8 infrastructure files exist and are populated. Gist returns HTTP 200. All 5 contacts verified active (May 26). Response tracking JSON is valid with correct 5-contact, 5-checkpoint structure.
+
+2. **One pre-send correction confirmed carried forward correctly**: Georgetown CCF address is `childhealth@georgetown.edu` (not `ccf@georgetown.edu`). This correction is reflected in all active files: runbook, tracking log, email drafts, and contact verification record.
+
+3. **Email drafts are fully ready**: All 5 Tier-1 drafts in `execution/domain-39-tier-1-drafts.md` have the Gist URL pre-filled. Only `[YOUR_NAME]` and `[YOUR_CONTACT_INFO]` remain — exactly as documented in the runbook.
+
+4. **DOMAIN_39_CHECKPOINT_DATES.txt does not yet exist** — correct, this is a post-send orchestrator action (Part 3, Step 2 of the runbook). No action needed before the 13:00 UTC send window.
+
+5. **Checkpoint sequencing dependency documented**: T+14 (2026-06-15 09:00 UTC) must complete before Domain 38 Tier A send (09:30 UTC same day). Hard constraint.
+
+**File produced**:
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/JUNE_1_ACTIVATION_STATUS.md` — complete pre-flight checklist results, contact verification table, tracking log structure confirmation, checkpoint schedule in ISO format (T+3 through T+45), exact orchestrator hand-off action list with code snippets
+
+---
+
 ## June 1, 2026 — General Research Agent — Phase 1 Adoption Tracking Deployment Guide
 
 **Task**: Produce the PHASE_1_ADOPTION_TRACKING_DEPLOYMENT_GUIDE.md and PHASE_1_ADOPTION_TRACKING_SETUP_CHECKLIST.md for June 3 deployment (trigger: Domain 39 distribution window closing). Both files are production-ready for immediate use.
