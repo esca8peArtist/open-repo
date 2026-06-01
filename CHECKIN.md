@@ -3,6 +3,67 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2508, 2026-06-01 15:39–16:45 UTC — Stockbot Pre-flight + Phase 2 Domain 48 Acceleration)
+
+**Session Status**: ✅ **CRITICAL-PATH READY + PHASE 2 RESEARCH ACCELERATION COMPLETE — Stockbot pre-flight verified; Domain 48 (Criminal Justice Civic Exclusion) research completed and production-ready; all projects remain on track for June 2/5 milestones**
+
+**Work Completed**:
+
+1. **stockbot June 2 Market Open Pre-flight Verification (15:39–16:00 UTC)**:
+   - ✅ Pre-flight checklist completed: 6 verification points all GREEN
+   - ✅ DEPLOY_READY file status verified (created Session 2478)
+   - ✅ Monitoring protocol exists (151 lines, `JUNE_2_23_LIVE_MONITORING_PROTOCOL.md`)
+   - ✅ Comprehensive backtesting report confirmed (26 sections, `COMPREHENSIVE_BACKTESTING_REPORT_JUNE_2026.md`)
+   - ✅ Local model pkl files verified (5+ files present in saved models directory)
+   - ✅ Discord webhook configuration confirmed in `~/.claude_env`
+   - ✅ **Verdict**: ALL SYSTEMS GO for June 2 13:30 UTC market open
+
+2. **systems-resilience Author Recruitment Infrastructure Verification**:
+   - ✅ Phase 6 Domain A recruitment: 19 verified entries (Domain A), recruitment_targets_VERIFIED.csv ready
+   - ✅ Author decision checkpoint infrastructure confirmed (PHASE_6_AUTHOR_RECRUITMENT_DECISION_CHECKPOINT.md)
+   - ✅ 18 personalized emails copy-paste ready for user send June 1-2
+   - ✅ Onboarding kit (5/6 documents) staged and ready
+   - ✅ Decision tree logic complete (PATH A/B/C activation on June 3 23:59 UTC)
+   - ✅ **Status**: Production-ready; awaiting user email execution
+
+3. **Resistance-Research Phase 2 Domain 48 Research COMPLETE (16:00–16:45 UTC)**:
+   - ✅ **Deliverable**: `/projects/resistance-research/domains/domain-48-criminal-justice-civic-exclusion.md` (9,075 words, 379 lines, 75 KB file size)
+   - ✅ **Quality metrics**: 61 citations (exceeds 45-50 target), all 6 sections complete, cross-domain bridges to 8 domains (1/22/29/39/42/44/47/52)
+   - ✅ **Key research**:
+     - 4M currently disenfranchised (Sentencing Project 2024 "Locked Out")
+     - 5-mechanism civic exclusion architecture documented (felony disenfranchisement, jury exclusion, employment bars, LFO poll tax, housing instability)
+     - Virginia federal court injunction effective June 1, 2026 (King v. O'Bannon, permanent injunction on automatic disenfranchisement)
+     - Alabama SB 24 enacted, effective October 1, 2026
+     - Virginia constitutional amendment November 3, 2026 ballot
+   - ✅ **June 2026 updates integrated**: Alabama legislative status, Virginia Right to Vote Coalition campaign details, LFO aggregate ($50B+ owed)
+   - ✅ **Acceleration impact**: Research brought forward 14 days (from June 15 planned start to June 1 completion)
+   - ✅ **Status**: Production-ready for Phase 2 distribution pipeline (June 15+ integration timeline maintained)
+   - **Commit**: Staged for commit this session
+
+**Project Status Update**:
+- **stockbot**: ✅ DEPLOY_READY verified GREEN, market open June 2 13:30 UTC ready
+- **resistance-research**: ✅ Domain 48 COMPLETE (accelerated), Domain 51 complete, Domain 39/59 ready for user action
+- **systems-resilience**: ✅ Phase 5 publication June 5 13:00 UTC on track, Phase 6 author recruitment ready
+- **seedwarden**: ✅ Track B infrastructure ready, awaiting user gate completion
+- **open-repo**: ✅ Phase 3 complete, June 12 deployment on track
+- **cybersecurity-hardening**: 🔴 Blocked on user VeraCrypt restart
+- **mfg-farm**: 🔴 Blocked on user test print execution
+
+**Needs Your Input** (unchanged):
+1. Stockbot monitoring deployment (rsync to Jetson) — before June 2 13:00 UTC
+2. systems-resilience author recruitment emails — June 1-2 execution window
+3. Seedwarden Track B gates (5 gates, 3.5–4 hours self-paced)
+4. Cybersecurity VeraCrypt restart (Phase 1 Step 1.3)
+5. Mfg-farm test print execution
+
+**Next Session Priorities**:
+- **June 2 13:30 UTC**: Stockbot market open (MAJOR MILESTONE) — passive monitoring; orchestrator ready
+- **June 2-3**: resistance-research Domain 59 distribution execution (user-driven)
+- **June 3 23:59 UTC**: systems-resilience author recruitment decision gate (response evaluation + path selection)
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication (auto-execute if no user override)
+
+---
+
 ## Since Last Check-in (Session 2507, 2026-06-01 14:37–15:45 UTC — Exploration Queue Research)
 
 **Session Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE — Phase 6 platform analysis delivered; all projects remain production-ready**

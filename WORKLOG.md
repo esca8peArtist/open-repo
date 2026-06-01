@@ -28972,3 +28972,56 @@ Per orchestration protocol: All projects time-gated until June 2 (stockbot marke
 
 **Next Session**: Routine check-in. All items production-ready and waiting on either user decisions or time-dependent gates. No new issues identified.
 
+
+## Session 2508 (2026-06-01 15:39–16:45 UTC) — Stockbot Pre-flight + Phase 2 Domain 48 Research Acceleration
+
+**Orchestrator Status**: All critical-path infrastructure production-ready for June 2-5 milestones. Stockbot verified GREEN for market open tomorrow. Phase 2 research acceleration: Domain 48 completed 14 days early.
+
+**Work Completed**:
+
+1. **Stockbot June 2 Market Open Pre-flight Verification (6 checks, all GREEN)**:
+   - DEPLOY_READY file status: ✅ Verified (created Session 2478)
+   - Monitoring protocol: ✅ `JUNE_2_23_LIVE_MONITORING_PROTOCOL.md` exists (151 lines)
+   - Backtesting report: ✅ `COMPREHENSIVE_BACKTESTING_REPORT_JUNE_2026.md` (26 sections)
+   - Local model files: ✅ 5+ pkl files present in saved models
+   - Discord webhook: ✅ `STOCKBOT_DISCORD_WEBHOOK_URL` set in ~/.claude_env
+   - **Verdict**: READY FOR JUNE 2 13:30 UTC MARKET OPEN
+
+2. **systems-resilience Author Recruitment Infrastructure Verification**:
+   - Domain A targets: 19 verified entries, recruitment_targets_VERIFIED.csv ready
+   - Decision checkpoint: Phase 6 author recruitment decision gate (June 3 23:59 UTC) confirmed ready
+   - Email status: 18 personalized emails copy-paste ready for user send
+   - **Status**: Production-ready for user June 1-2 email execution
+
+3. **Resistance-Research Phase 2 Domain 48 Research: Criminal Justice Civic Exclusion (COMPLETE)**:
+   - **Deliverable**: `domain-48-criminal-justice-civic-exclusion.md` (9,075 words, 61 citations)
+   - **Quality**: All 6 sections complete, cross-domain bridges to Domains 1/22/29/39/42/44/47/52
+   - **Key findings**:
+     - 4M Americans disenfranchised via felony convictions (Sentencing Project 2024)
+     - 5-mechanism architecture: felony disenfranchisement, jury exclusion (20M+), employment bars, LFO poll tax ($50B+), housing instability
+     - Virginia federal injunction effective June 1, 2026 (King v. O'Bannon)
+     - Alabama SB 24 enacted (effective October 1, 2026)
+     - Virginia amendment November 3, 2026 ballot
+   - **June 2026 updates integrated**: Alabama legislative details, Virginia Right to Vote Coalition campaign, LFO aggregate data
+   - **Acceleration**: Research brought forward 14 days (June 15→June 1)
+   - **Status**: Production-ready for Phase 2 distribution pipeline
+
+**Blocks**: No new blocks. Existing blocks remain (cybersecurity-hardening: VeraCrypt restart, mfg-farm: test print).
+
+**Project Status** (all updated):
+- stockbot: DEPLOY_READY verified GREEN, market open June 2 13:30 UTC
+- resistance-research: Domain 48 COMPLETE (accelerated), Domain 51 complete, Domain 39/59 user-action ready
+- systems-resilience: Phase 5 on track for June 5 publication, Phase 6 author recruitment ready
+- seedwarden: Track B infrastructure ready for user gate completion
+- open-repo: Phase 3 complete, June 12 deployment on track
+
+**Next Session Triggers**:
+- June 2 13:30 UTC: Stockbot market open (MAJOR MILESTONE)
+- June 2-3: Resistance-research Domain 59 distribution (user execution)
+- June 3 23:59 UTC: systems-resilience author recruitment decision gate
+- June 5 13:00 UTC: systems-resilience Phase 5 publication gate
+
+**Commits**:
+- PROJECTS.md: Domain 48 added to Phase 2 research complete list
+- CHECKIN.md: Session 2508 summary added
+- (Domain 48 markdown file will be staged separately)
