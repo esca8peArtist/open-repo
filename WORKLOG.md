@@ -1,8 +1,17 @@
 # Work Log
 
-- Session 2480 (June 1 06:57–07:10 UTC): **EXPLORATION QUEUE ITEM — STOCKBOT JUNE 2 PRE-MARKET SIGNAL QUALITY AUDIT**
-  - **Status**: ✅ Complete, report committed to master (commit 20bb735), 133K tokens
-  - **Deliverable**: `projects/stockbot/JUNE_2_SIGNAL_QUALITY_AUDIT.md` (2,000+ words, production-ready)
+- Session 2480 (June 1 06:57–07:50 UTC): **2 EXPLORATION QUEUE ITEMS — STOCKBOT PRE-MARKET AUDIT + JUNE 2-5 MONITORING FRAMEWORK**
+  - **Status**: ✅ Both complete; all monitoring infrastructure verified production-ready; 185K tokens
+  - **Item 1 — Stockbot June 2 Pre-Market Signal Quality Audit**:
+    - Deliverable: `projects/stockbot/JUNE_2_SIGNAL_QUALITY_AUDIT.md` (2,000+ words, commit 20bb735)
+    - Key finding: JPM ridge_wf ready to deploy (92% confidence, 6/6 gates), AMZN conditional on HMM fix
+  - **Item 2 — Stockbot June 2-5 Market-Open Monitoring & Recovery Framework**:
+    - Verified production-ready from Session 2468 (Session 2468 agent work)
+    - Deliverables: `JUNE_2_5_MONITORING_PLAYBOOK.md` (4,229 words, 9 sections) + `monitoring_alert_script.py` (863 lines)
+    - Features: 5-panel dashboard, alert thresholds, anomaly detection, 5 decision trees, quick-reference cards
+    - Alert script: stdlib-only, JSONL audit logging, dry-run tested on raspby1
+    - Activation: June 2 13:00 UTC on raspby1 (before market open)
+  - **Next**: Domain 39 user email sends 13:00-14:00 UTC TODAY (5+ hours away)
   - **Key findings**: 
     - JPM ridge_wf: Confidence 92%, GO (6/6 gates pass, OOS Sharpe 4.412, all 3 market regimes profitable)
     - AMZN lgbm_ho: Confidence 78%, CONDITIONAL GO (5/6 gates, requires HMM activation before June 3)
