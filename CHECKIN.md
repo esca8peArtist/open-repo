@@ -3,7 +3,13 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
-## Since Last Check-in (Session 2496, 2026-06-01 12:04–14:30 UTC — open-repo A11y Phase 3 COMPLETE + stockbot PRE-MARKET AUDIT COMPLETE)
+## Since Last Check-in (Session 2497, 2026-06-01 12:31–STANDBY — Domain 39 Activation Monitoring Preparation + Stockbot Market-Open Readiness)
+
+**Session Status**: ⏳ **IN PROGRESS — Awaiting Domain 39 activation 13:00-14:30 UTC; all systems ready for stockbot June 2 market open**
+
+---
+
+## Previous Check-in (Session 2496, 2026-06-01 12:04–14:30 UTC — open-repo A11y Phase 3 COMPLETE + stockbot PRE-MARKET AUDIT COMPLETE)
 
 **Session Status**: ✅ **COMPLETE — open-repo Phase 3 accessibility fixes deployed; stockbot pre-market audit GO for June 2; Domain 39 monitoring queued 14:00–14:30 UTC**
 
