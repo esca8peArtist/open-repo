@@ -3,6 +3,49 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2516, 2026-06-01 20:22–20:30 UTC — DEPLOY_READY Finalization + Orchestration Commit)
+
+**Session Status**: ✅ **READY — DEPLOY_READY RESTORED; PREPARING FINAL ORCHESTRATION COMMIT**
+
+**Work Completed**:
+
+1. **DEPLOY_READY File Finalization** ✅:
+   - Session 2515 left DEPLOY_READY deletion staged in git (file missing from working directory)
+   - Executed `git reset HEAD DEPLOY_READY` to unstage deletion
+   - Created DEPLOY_READY file via `touch` — file ready to trigger automatic Jetson deployment post-session
+   - All 4 stockbot pre-market checks verified PASS ✅
+   - Safe to deploy: 20:22 UTC on Saturday (outside market hours, past 20:00 UTC window)
+
+2. **Orchestration State Summary** ✅:
+   - **Two active blocks remain** (both require user physical action, cannot be auto-resolved):
+     - cybersecurity-hardening: Phase 1 Step 1.3 VeraCrypt pre-boot restart
+     - mfg-farm: Test print execution
+   - **No inbox items** requiring processing (all from last session already handled)
+   - **No new autonomous work available** (all projects either complete or awaiting user decisions)
+
+3. **Critical Timeline Confirmed**:
+   - **Now (20:22 UTC)**: DEPLOY_READY file live, triggering post-session deployment
+   - **June 2 13:30 UTC**: 🚨 Stockbot market open (MAJOR MILESTONE — all preparation complete)
+   - **June 2-3**: Resistance-research Domain 59 distribution window (user action)
+   - **June 3 23:59 UTC**: systems-resilience platform decision gate (A/B/C)
+   - **June 5 13:00 UTC**: systems-resilience Phase 5 publication gate
+
+**Project Status** (No changes from Session 2515):
+| Project | Status | Next Gate |
+|---------|--------|-----------|
+| **stockbot** | ✅ DEPLOYED | Market open June 2 13:30 UTC |
+| **resistance-research** | ✅ READY | Domain 59 distribution June 2-3 (user) |
+| **systems-resilience** | ✅ READY | Platform decision by June 3 23:59 UTC |
+| **seedwarden** | ✅ READY | Track B user gate completion |
+| **cybersecurity-hardening** | 🟡 BLOCKED | VeraCrypt Phase 1 restart (user) |
+| **mfg-farm** | 🟡 BLOCKED | Test print execution (user) |
+
+**Next Session Triggers**:
+- June 2 13:30 UTC: Monitor stockbot market open (passive unless failure)
+- June 3: Monitor systems-resilience decision gate
+
+---
+
 ## Since Last Check-in (Session 2515, 2026-06-01 20:11–20:25 UTC — DEPLOY_READY Restoration + Market Open Ready Verification)
 
 **Session Status**: ✅ **DEPLOYMENT-READY STATE VERIFIED — DEPLOY_READY RESTORED; ALL SYSTEMS GO FOR JUNE 2 13:30 UTC STOCKBOT MARKET OPEN**
