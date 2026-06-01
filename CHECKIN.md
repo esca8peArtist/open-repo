@@ -5,6 +5,49 @@
 
 ---
 
+## Since Last Check-in (Session 2467, 2026-06-01 03:40–04:15 UTC — June 1 Execution Infrastructure Pre-Staging)
+
+**What was accomplished**:
+
+- ✅ **SYSTEMS-RESILIENCE WAVE 1 PUBLICATION INFRASTRUCTURE — READY FOR JUNE 5 LOCK**
+  - **Key Finding**: Phase 5 Wave 1+2 has ZERO author dependencies (orchestrator-authored, all 5 documents production-ready, zero placeholders)
+  - **Action required**: 4 YAML field updates ("production-draft" → "PRODUCTION-READY") — 10-minute task, no content blockers
+  - **Files created**: 
+    - `WAVE_1_AUTHOR_ONBOARDING_STATUS.md` — Author tracking + co-author fallback decision tree; Phase 6 authors need outreach June 1-2
+    - `WAVE_1_PEER_REVIEWERS_CANDIDATES.md` — 8 candidates identified (academic, mutual aid, community organizers); highest priority: C-2 (veterinary), A-3 (mental health)
+    - `WAVE_1_PUBLICATION_READINESS_CHECKLIST.md` — All 5 Wave 1+2 documents READY; advisory for clinical content (Psychological, Veterinary) — not go/no-go blocker, harm-reduction consideration
+    - `WAVE_1_DAILY_STANDUP_TEMPLATE.md` — June 1-5 daily standup (06:00-09:00 UTC), per-domain author confirmation gate June 3 EOD, final go/no-go June 5 12:00 UTC
+  - **Verdict**: June 5 13:00 UTC publication locked. Wave 1+2 publication is unstoppable absent extraordinary circumstances.
+
+- ✅ **RESISTANCE-RESEARCH DOMAIN 39-58 MONITORING & PHASE 2 INFRASTRUCTURE**
+  - **Domain 39 Response Monitoring**: 5 checkpoints (T+3/7/14/30/45) with weighted scoring; Tier 2 escalation triggers at T+7 = 0 responses
+  - **Phase 2 Activation Decision Tree**: 4 outcome paths (STRONG: 3.0+, MODERATE: 2.0-2.9, WEAK: <2.0, DELIVERY_PROBLEM) with explicit Domain 38/40 timing adjustments per path
+  - **Domain 58 (Tribal Sovereignty) Ruling Trigger**: Same-day rapid-response checklist (0-2hr/2-4hr/4-24hr action blocks); SCOTUS Trump v. Barbara expected June-July 2026
+  - **Wave 2 Execution Timeline**: Master calendar June 1–Nov 3 with 12 explicit trigger points where Domain 39 response data directly adjusts Domains 38/40 sequencing
+  - **Files created**:
+    - `DOMAIN_39_RESPONSE_MONITORING_PLAN.md` — 5 checkpoints with numeric triggers and fill-in logs
+    - `PHASE_2_ACTIVATION_DECISION_TREE.md` — 4-path decision tree with Domain 38/40 timing adjustments
+    - `DOMAIN_58_RULING_TRIGGER_READINESS.md` — Same-day action checklist by hour-blocks
+    - `WAVE_2_EXECUTION_TIMELINE_WITH_TRIGGERS.md` — Master calendar with 12 trigger dependency points
+    - `RESPONSE_MONITORING_DASHBOARD_TEMPLATE.md` — Unified 50-contact tracking table with Google Sheets formulas
+  - **Verdict**: Post-Domain-39 execution, orchestrator can autonomously trigger Phase 2 based on response data. All decision infrastructure pre-staged.
+
+**Critical timeline — TODAY (June 1)**:
+- **13:00–14:00 UTC**: Domain 39 distribution (user action: 5 emails to Georgetown CCF, NHeLP, Black Mamas Matter Alliance, Brennan Center, Institute for Responsive Government)
+- **14:00–18:00 UTC**: Orchestrator activates monitoring infrastructure, begins tracking responses
+- **June 2-3**: Early response assessment (T+1-T+2), Phase 2 readiness confirmation
+- **June 4-5**: Wave 1 final prep (YAML updates only), peer reviewer outreach
+- **June 5 13:00 UTC**: Wave 1+2 publication locks in
+
+**What needs your input TODAY**:
+1. **13:00-14:00 UTC**: Execute Domain 39 distribution (templates pre-written, 2 fields per email: `[YOUR_NAME]`, `[YOUR_CONTACT_INFO]`)
+2. **By June 1 18:00 UTC (optional)**: Confirm Phase 6 domain selection (A+C+D recommended, auto-fallback if you don't decide)
+3. **By June 3**: mfg-farm Phase 2 funding scenario choice (bootstrap/credit-card/sequential)
+
+**Usage**: Sonnet ~12.2% (1,089K tokens), all-models ~10.9%. Session 2467 added ~82K tokens (two parallel agents).
+
+---
+
 ## Since Last Check-in (Session 2467, 2026-06-01 03:03–03:40 UTC — Exploration Queue Phase 2 Execution)
 
 **What was accomplished**:
