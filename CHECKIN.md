@@ -3,6 +3,29 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2493, 2026-06-01 11:25–13:30 UTC — EXPLORATION QUEUE ADVANCEMENT)
+
+**Session Status**: ✅ **IN PROGRESS — Phase 2 decision synthesis completed; awaiting Domain 39 monitoring activation (14:00 UTC)**
+
+**What Accomplished**:
+
+1. **resistance-research Phase 2 Decision Synthesis (Complete)** ✅:
+   - File: `PHASE_2_DECISION_SYNTHESIS_FRAMEWORK.md` (2,400 words, 1h 40min work)
+   - Decision matrix: All 5 Phase 2 domains (51, 48, 49-50, 57, 54) with deadlines, hours, conflict analysis, risk scores
+   - Four execution scenarios: Minimal (51 only), Balanced (51+57+48), Aggressive (51+57+48+49-50), Maximum (all 5 this year)
+   - Recommendation: Scenario B (Balanced) avoids July 4–8 holiday capacity crunch while maintaining deadline margin
+   - User decision checklist: 4 specific approval points (Domain 51 activation, Domain 59 acceleration, Domain 57 timing, Domain 48 pre-check)
+   - Pre-approval readiness: All runbooks, templates, contact lists ready for instant activation once user selects domains
+   - Commit: `d5675417`
+   - **Impact**: Eliminates decision friction when user approves Phase 2 — research can activate within 1 hour of approval
+
+**Critical Next Steps**:
+- **13:00–13:48 UTC** (in 1.5h): User executes Domain 39 + Domain 59 + Phase 6 email campaigns (80 min execution checklist ready)
+- **14:00–14:30 UTC** (automated): Orchestrator Domain 39 monitoring (user email tracking, engagement metrics, response collection)
+- **June 2 onwards**: Phase 2 research activation pending user domain selection (Scenario B timeline: Domain 51 June 2, Domain 57 June 20, Domain 48 June 15)
+
+---
+
 ## Since Last Check-in (Session 2492, 2026-06-01 11:10–12:50 UTC — PARALLEL MULTI-PROJECT EXECUTION)
 
 **Session Status**: ✅ **COMPLETE — Three independent project streams advanced in parallel; Exploration Queue replenished**
