@@ -3,6 +3,76 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2512, 2026-06-01 16:34–18:56 UTC — Phase 2 Domains 49-50 Research + Seedwarden Gate 1 + Systems-Resilience Implementation Guides)
+
+**Session Status**: ✅ **PRODUCTION-READY PHASE 2 EXPANSION + GATE 1 LAUNCH READINESS + PLATFORM IMPLEMENTATION GUIDES — All three autonomous work streams completed; 280k tokens consumed (~17% budget); decision-support materials ready for June 3 user selection gates; DEPLOY_READY file creation queued for 20:00 UTC**
+
+**Work Completed**:
+
+1. **resistance-research: Phase 2 Domains 49-50 Research Scaffolding (16:34–17:47 UTC)**:
+   - ✅ **Deliverables** (4 files committed):
+     1. `PHASE_2_DOMAINS_49_50_RESEARCH_OUTLINES.md` (398 lines) — detailed research briefs, causal pathways, timing windows, cross-domain bridges
+     2. `PHASE_2_DECISION_MEMO_JUNE_2026.md` (186 lines) — six user-decision briefing with specific YES/NO/AUTHORIZE recommendations
+     3. `PHASE_2_CANDIDATE_49_SOURCES.md` (139 lines) — Environmental Justice source staging
+     4. `PHASE_2_CANDIDATE_50_SOURCES.md` (184 lines) — LGBTQ+ Rights source staging
+   - ✅ **Key findings** (Urgency upgrades identified):
+     - Domain 49: EPA Endangerment Finding FINALIZED April 20, 2026 (not proposed); NEPA rescission Jan 8, 2026
+     - Domain 50: 6 anti-trans ballot measures confirmed Nov 2026; 210,800 trans voters lack matching ID in voter ID states; US v. Skrmetti lowered constitutional barriers
+     - Senate Finance CTC markup LIVE NOW — justifies Domain 59 acceleration
+   - ✅ **Six decisions with recommendations**:
+     1. Domain 51 immediate activation? **YES** (CA Fair Elections deadline July 1)
+     2. Domain 59 distribution this week? **YES** (Senate Finance CTC markup)
+     3. Domain 57 Gist+contact prep? **YES** (August 10 UNGA path, 2-3 hrs)
+     4. Domain 48 pre-check? **NO RESEARCH NEEDED** (production-ready)
+     5. Domains 49/50 authorization? **AUTHORIZE** (urgency upgrades)
+     6. Domain 54 timeline? **November post-midterm** (Sept-Oct production, Jan-Feb 2027 youth distribution)
+   - ✅ **Timeline**: Phase 2 complete July 1–Aug 31; August 1 Domain 50 ballot deadline is critical constraint
+   - **Status**: PROJECTS.md updated; recommendations ready for user decision-making
+
+2. **seedwarden: Gate 1 Launch Readiness Verification (17:47–18:20 UTC)**:
+   - ✅ **Deliverables** (3 files):
+     1. `GATE_1_INFRASTRUCTURE_VERIFICATION_CHECKLIST.md` — comprehensive pass/fail audit
+     2. `GATE_1_LAUNCH_SEQUENCE_CHECKLIST.md` — step-by-step execution plan (5 gates in order)
+     3. `GATE_1_SUCCESS_METRICS_AND_MONITORING.md` — Day 1/3/7/14 thresholds + engagement response playbooks
+   - ✅ **Verification results**: ALL PASS
+     - Zone PDFs (8/8) ✅ | Email bodies (5/5) ✅ | Contacts (15+) ✅ | Social drafts (18) ✅ | Runbook (8) ✅
+   - ✅ **Execution readiness**: Zero blockers; 5 user action gates documented; autonomous sequence ready
+   - **Status**: GATE_1_LAUNCH_READY — awaiting user gate completion
+
+3. **systems-resilience: Phase 6 Platform Implementation Guides (18:20–18:55 UTC)**:
+   - ✅ **Deliverables** (4 files committed):
+     1. `PHASE_6_IMPLEMENTATION_GUIDE_OPTION_A_DISCOURSE.md` — DNS critical constraint, Let's Encrypt timing, GitHub Pages integration
+     2. `PHASE_6_IMPLEMENTATION_GUIDE_OPTION_B_MIGHTY_NETWORKS.md` — SaaS fastest (3-4 hrs), API locked to $179/month, non-refundable
+     3. `PHASE_6_IMPLEMENTATION_GUIDE_OPTION_C_NEXTCLOUD_MATRIX.md` — $0/yr on raspby1, Docker Compose configs, Tailscale-only
+     4. `PHASE_6_DECISION_SUPPORT_CHECKLIST.md` — 5-question flowchart, 10-dimension comparison table
+   - ✅ **Key insights**: Option C $0/yr (8.5/10), Option B fastest (3-4 hrs same-day), Option A DNS critical; all operational by June 5 if decided June 3
+   - **Status**: PROJECTS.md updated; decision-support materials complete
+
+**Project Status** (all updated):
+- **resistance-research**: Phase 2 domains 49-50 scaffolding complete ✅; awaiting six user decisions; Domain 59 distribution acceleration justified
+- **seedwarden**: Gate 1 launch-ready ✅; awaiting user gate completion for autonomous 7-step pre-launch sequence
+- **systems-resilience**: Platform analysis + implementation guides complete ✅; user selects A/B/C by June 3 for June 5 operational deadline
+- **stockbot**: Signal audit GREEN ✅; awaiting 20:00 UTC DEPLOY_READY creation per blackout protocol; market open June 2 13:30 UTC confirmed ready
+- **cybersecurity-hardening**: VeraCrypt Phase 1 Step 1.3 restart awaiting user action
+- **mfg-farm**: Test print execution awaiting user action
+
+**Needs Your Input** (updated):
+1. **resistance-research**: Six Phase 2 decisions (see PHASE_2_DECISION_MEMO_JUNE_2026.md for recommendations)
+2. **systems-resilience**: Select platform A/B/C by June 3 EOD for June 5 operational deadline
+3. **seedwarden**: Complete Track B gates (5 gates, 3.5–4h total) for Gate 1 launch-ready state
+4. **stockbot**: June 2 13:30 UTC market open (passive monitoring; all ready)
+5. **cybersecurity-hardening**: VeraCrypt Phase 1 Step 1.3 restart to enable background encryption
+6. **mfg-farm**: Test print execution with ModRun clip prototype
+
+**Next Session Triggers**:
+- **June 1 20:00 UTC**: DEPLOY_READY file creation window (⏰ 3+ hours remaining — within this session)
+- **June 2 13:30 UTC**: Stockbot market open (MAJOR MILESTONE — contingent on DEPLOY_READY flag)
+- **June 2–3**: resistance-research Domain 59 distribution execution (user-driven)
+- **June 3 23:59 UTC**: systems-resilience platform decision gate (A/B/C selection required)
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication + Phase 6 platform operational
+
+---
+
 ## Since Last Check-in (Session 2511, 2026-06-01 16:24–17:20 UTC — Stockbot Signal Quality Audit + DEPLOY_READY Readiness)
 
 **Session Status**: ✅ **JUNE 2 MARKET-OPEN SIGNAL QUALITY AUDIT COMPLETE — GO for 13:30 UTC execution; JPM ridge_wf + AMZN lgbm_ho cleared; AAPL sessions suspended as configured; Portfolio confidence 83%; One minor pre-flight action (AMZN HMM regime check); DEPLOY_READY file creation window opens 20:00 UTC**
