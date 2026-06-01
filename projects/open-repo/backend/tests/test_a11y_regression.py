@@ -1,8 +1,243 @@
-"""Regression tests for accessibility fixes."""
+"""Regression tests for accessibility fixes.
+
+Non-browser tests use httpx ASGI transport for fast, CI-friendly checks.
+Browser-based tests (using playwright fixture) are marked with
+@pytest.mark.playwright and require a running browser.
+
+WCAG issues addressed:
+  - SR1-01 / SR2-01: <html lang="en"> (WCAG 3.1.1) -- fixed 2026-06-02
+  - K-01: <html lang="en"> on /docs and /redoc (WCAG 3.1.1) -- fixed 2026-06-02
+  - K-02: Skip-to-main link on /docs and /redoc (WCAG 2.4.1) -- fixed 2026-06-02
+  - SR1-02: <main> landmark on /docs and /redoc (WCAG 1.3.1) -- fixed 2026-06-02
+"""
 
 import pytest
+import asyncio
+from httpx import AsyncClient, ASGITransport
 
 pytestmark = pytest.mark.accessibility
+
+
+# ---------------------------------------------------------------------------
+# Non-browser regression tests for the P1 fixes applied 2026-06-02
+# These run in CI without a browser.
+# ---------------------------------------------------------------------------
+
+
+def _get_app():
+    """Import and create the FastAPI app (deferred to avoid import-time side effects)."""
+    from app.main import create_app
+    return create_app()
+
+
+def _run(coro):
+    """Run a coroutine synchronously (test helper)."""
+    return asyncio.get_event_loop().run_until_complete(coro)
+
+
+def test_docs_html_lang_attribute():
+    """GET /docs returns HTML with lang='en' on <html> element (WCAG 3.1.1).
+
+    Regression test for fix SR1-01 / K-01 (2026-06-02).
+    Prevents future changes from removing the lang attribute.
+    """
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/docs")
+            assert r.status_code == 200
+            assert 'lang="en"' in r.text, (
+                "/docs HTML missing lang='en' on <html> element (WCAG 3.1.1 failure)"
+            )
+
+    _run(_check())
+
+
+def test_redoc_html_lang_attribute():
+    """GET /redoc returns HTML with lang='en' on <html> element (WCAG 3.1.1).
+
+    Regression test for fix SR2-01 / K-01 (2026-06-02).
+    """
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/redoc")
+            assert r.status_code == 200
+            assert 'lang="en"' in r.text, (
+                "/redoc HTML missing lang='en' on <html> element (WCAG 3.1.1 failure)"
+            )
+
+    _run(_check())
+
+
+def test_docs_html_has_main_landmark():
+    """GET /docs returns HTML with a <main> landmark element (WCAG 1.3.1).
+
+    Regression test for fix SR1-02 (2026-06-02).
+    """
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/docs")
+            assert "<main" in r.text, (
+                "/docs HTML missing <main> landmark (WCAG 1.3.1 failure)"
+            )
+
+    _run(_check())
+
+
+def test_redoc_html_has_main_landmark():
+    """GET /redoc returns HTML with a <main> landmark element (WCAG 1.3.1).
+
+    Regression test for fix SR1-02 (2026-06-02).
+    """
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/redoc")
+            assert "<main" in r.text, (
+                "/redoc HTML missing <main> landmark (WCAG 1.3.1 failure)"
+            )
+
+    _run(_check())
+
+
+def test_docs_html_has_skip_link():
+    """GET /docs returns HTML with a skip-to-main link (WCAG 2.4.1).
+
+    Regression test for fix K-02 (2026-06-02).
+    Skip links allow keyboard users to bypass repetitive nav blocks.
+    """
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/docs")
+            assert "a11y-skip-link" in r.text, (
+                "/docs HTML missing skip-to-main-content link (WCAG 2.4.1 failure)"
+            )
+
+    _run(_check())
+
+
+def test_redoc_html_has_skip_link():
+    """GET /redoc returns HTML with a skip-to-main link (WCAG 2.4.1).
+
+    Regression test for fix K-02 (2026-06-02).
+    """
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/redoc")
+            assert "a11y-skip-link" in r.text, (
+                "/redoc HTML missing skip-to-main-content link (WCAG 2.4.1 failure)"
+            )
+
+    _run(_check())
+
+
+def test_docs_html_has_charset():
+    """GET /docs returns HTML with meta charset declaration (best practice).
+
+    Charset declaration prevents character encoding issues across user agents.
+    """
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/docs")
+            assert 'charset="utf-8"' in r.text, (
+                "/docs HTML missing <meta charset='utf-8'>"
+            )
+
+    _run(_check())
+
+
+def test_redoc_html_has_charset():
+    """GET /redoc returns HTML with meta charset declaration."""
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/redoc")
+            assert 'charset="utf-8"' in r.text, (
+                "/redoc HTML missing <meta charset='utf-8'>"
+            )
+
+    _run(_check())
+
+
+def test_docs_html_has_title():
+    """GET /docs returns HTML with a non-empty <title> element (WCAG 2.4.2).
+
+    Page title allows screen reader users to identify the page before reading content.
+    """
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/docs")
+            assert "<title>" in r.text, "/docs HTML missing <title> element"
+            # Title should not be empty
+            import re
+            match = re.search(r"<title>(.*?)</title>", r.text)
+            assert match and match.group(1).strip(), "/docs <title> is empty"
+
+    _run(_check())
+
+
+def test_redoc_html_has_title():
+    """GET /redoc returns HTML with a non-empty <title> element (WCAG 2.4.2)."""
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/redoc")
+            assert "<title>" in r.text, "/redoc HTML missing <title> element"
+            import re
+            match = re.search(r"<title>(.*?)</title>", r.text)
+            assert match and match.group(1).strip(), "/redoc <title> is empty"
+
+    _run(_check())
+
+
+def test_docs_is_html_not_json():
+    """GET /docs returns text/html content type (not JSON).
+
+    Sanity check: /docs must serve an HTML page, not a JSON redirect.
+    """
+    app = _get_app()
+
+    async def _check():
+        transport = ASGITransport(app=app)
+        async with AsyncClient(transport=transport, base_url="http://test") as client:
+            r = await client.get("/docs")
+            assert "text/html" in r.headers.get("content-type", ""), (
+                "/docs should return text/html, got: " + r.headers.get("content-type", "")
+            )
+
+    _run(_check())
+
+
+# ---------------------------------------------------------------------------
+# Browser-based regression tests (require Playwright — skip in CI by default)
+# Run with: uv run pytest tests/test_a11y_regression.py -m playwright
+# ---------------------------------------------------------------------------
 
 
 @pytest.fixture

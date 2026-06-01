@@ -1,0 +1,33 @@
+{
+  "scan_date": "2026-06-01T01:28:19.911504",
+  "base_url": "http://127.0.0.1:8000",
+  "pages": [
+    {
+      "url": "http://127.0.0.1:8000/",
+      "status": 200,
+      "violations": [],
+      "passes": [],
+      "inapplicable": [],
+      "incomplete": [],
+      "error": "Page.evaluate: SyntaxError: Unexpected token 'return'\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:302:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "timestamp": "2026-06-01T01:28:20.448919"
+    },
+    {
+      "url": "http://127.0.0.1:8000/health",
+      "status": 200,
+      "violations": [],
+      "passes": [],
+      "inapplicable": [],
+      "incomplete": [],
+      "error": "Page.evaluate: SyntaxError: Unexpected token 'return'\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:302:30)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "timestamp": "2026-06-01T01:28:20.970026"
+    }
+  ],
+  "summary": {
+    "total_violations": 0,
+    "critical": 0,
+    "serious": 0,
+    "moderate": 0,
+    "minor": 0
+  }
+}
