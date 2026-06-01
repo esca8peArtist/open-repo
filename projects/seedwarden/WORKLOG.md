@@ -4,6 +4,61 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — Phase 4 Planning Deliverables — June 1, 2026
+
+**Task**: Produce three Phase 4 planning documents covering botanical identification guides, practitioner tier progression, and international traditions sourcing. Phase 3 launches June 22; Phase 4 production window July 14 – August 31; all deliverables are scope-independent (valid for Phase 3 options A/B/C).
+
+**Files produced**:
+
+1. `PHASE_4_BOTANICAL_IDENTIFICATION_GUIDE_ROADMAP.md`
+   - 18 North American native medicinal plant identification guides scoped and prioritized
+   - Wave 1 (9 guides): July 14–31, launch August 1, 2026
+   - Wave 2 (9 guides): August 1–28, launch August 31, 2026
+   - Total research hours estimated: 40.5 hours (22.0 Wave 1; 18.5 Wave 2)
+   - Four pricing/bundle structures: standalone ($5–7), Forager's Field ID Kit ($24), Appalachian Practitioner Field Kit ($30), Full Field Library ($65)
+   - ZIM archive integration: Kiwix-compatible offline distribution; submission target October 2026
+   - Competitor analysis: Peterson Field Guides, AHG Herbal Education Library, iNaturalist, Etsy field
+   - Per-guide: lookalike risk rating, research hours, photo sourcing, UpS conservation status, Phase 3/4 bundle cross-reference
+
+2. `PHASE_4_PRACTITIONER_TIER_PROGRESSION.md`
+   - Three-tier practitioner pathway (Tier 1 Herbalist / Tier 2 Registered Herbalist / Tier 3 Clinical Specialist)
+   - Credential verification: AHG directory lookup, NAHA Level 5, ND state board, CNS, NIMH, NAMACB, PhD institutional
+   - Tier 2 pricing: $18/month or $165/year; Gumroad or Kit Commerce
+   - Tier 3 pricing: $55/month or $550/year; academic rate $35/month
+   - Content differentiation matrix: 17 content types mapped across all three tiers
+   - Revenue projections: $2,725–$4,000/month combined subscription ARR at month 12
+   - Tier 1/2 launch: August 1, 2026; Tier 3 launch: October 1, 2026
+   - Implementation checklist: July 14 – August 1 infrastructure and content tasks
+
+3. `PHASE_4_INTERNATIONAL_TRADITIONS_SOURCING.md`
+   - European traditions: Commission E (copyright analysis + access strategy), ESCOP, EMA HMPC (free EU public documents), British Herbal Pharmacopoeia, French ANSM/EMA pathway
+   - Phase 3 herbs mapped to Commission E monograph status (11 species confirmed coverage)
+   - Ayurvedic tradition: Rasa/Virya/Vipaka/Guna/Dosha/Karma framework; all 10 Phase 3 herbs cross-referenced with Sanskrit names, classical citations, cross-reference type (A/B/C), and explicit "no classical equivalent" statements where applicable
+   - TCM tradition: Four Natures/Five Flavors/Channel Tropism framework; all 10 Phase 3 herbs cross-referenced with Pinyin names, Chinese characters, classical citations
+   - Unified cross-reference system design: 4-column view (Western / European Regulatory / Ayurvedic / TCM) per species
+   - 35 primary sources cited with copyright status and access strategy for each
+   - Attribution and copyright strategy: Mode 1 (direct link), Mode 2 (fair-use summary), Mode 3 (direct license at scale)
+   - Assembly timeline: Tier 2 preview August 1; full Tier 3 library October 1
+
+**Source documents read**:
+- `HERBALIST_NETWORK_ECOSYSTEM_MAPPING.md` (v3.0) — practitioner audience, AHG/NAHA structure, segment sizing
+- `PHASE_3_DECISION_MATRIX_V2.md` — Phase 3 scope decisions; Phase 4 independence confirmed
+- `PHASE_4_BOTANICAL_DIVERSIFICATION_STRATEGY.md` — existing Phase 4 bundle strategy; therapeutic gap analysis
+- `medicinal-herbs-candidate-list.md` — Phase 3 species list, conservation status, sourcing details
+- `PHASE_3_MEDICINAL_HERBS_FINALIZED_SELECTION.md` — locked Phase 3 species for cross-reference mapping
+- `PHASE_4_MARKET_RESEARCH.md` — physical product track; revenue context
+
+**Key decisions and design choices**:
+1. ZIM archive distribution: identifies an open-knowledge channel (Kiwix) beyond Etsy with no production conflict
+2. Identification guide format: 5-section (250–400 words) lighter than Phase 3 bundles — field reference, not clinical monograph
+3. Lookalike risk ratings: safety-critical species (wild ginger, skullcap, bloodroot, mayapple, elderberry) flagged; framing as safety guides creates differentiated value vs. generic forager content
+4. Tier 2 credential verification: manual at launch; automated evaluation threshold set at 200 subscribers per quarter
+5. TCM cross-reference type system (A/B/C): prevents practitioner confusion between direct equivalents, chemistry parallels, and functional analogies — required for clinical safety
+6. European copyright strategy: EMA HMPC (free EU public documents) is the primary European regulatory source; Commission E English translation is ABC-copyrighted but fair-use original summaries are legally clean
+7. Ayurvedic "no classical equivalent" policy: North American species absent from classical texts are explicitly labeled; prevents misrepresentation of traditional authority
+
+---
+
 ## Session — Community Builder Recruitment Framework — May 31, 2026
 
 **Task**: Exploration Queue Item: seedwarden Phase 3 Community Builder Identification Framework.
