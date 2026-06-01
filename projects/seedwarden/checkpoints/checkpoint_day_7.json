@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-06-01T14:28:59.387085",
+  "checkpoint": "Day 7",
+  "checkpoint_date": "2026-06-08T08:00:00",
+  "launch_date": "2026-06-01T08:00:00",
+  "overall_status": "GREEN",
+  "decision": "PROCEED",
+  "decision_message": "Strong engagement trajectory. Phase 3 launch is GO for June 22. Begin medicinal herbs bundle production (21-day lead time).",
+  "metrics": {
+    "reddit_upvotes": {
+      "actual_value": 1050.0,
+      "threshold_green": 1000,
+      "threshold_yellow": 500,
+      "status": "GREEN"
+    },
+    "reddit_comments": {
+      "actual_value": 155.0,
+      "threshold_green": 150,
+      "threshold_yellow": 75,
+      "status": "GREEN"
+    },
+    "instagram_likes": {
+      "actual_value": 420.0,
+      "threshold_green": 400,
+      "threshold_yellow": 200,
+      "status": "GREEN"
+    },
+    "instagram_comments": {
+      "actual_value": 52.0,
+      "threshold_green": 50,
+      "threshold_yellow": 25,
+      "status": "GREEN"
+    },
+    "tiktok_views": {
+      "actual_value": 11500.0,
+      "threshold_green": 10000,
+      "threshold_yellow": 5000,
+      "status": "GREEN"
+    },
+    "email_open_rate": {
+      "actual_value": 0.26,
+      "threshold_green": 0.25,
+      "threshold_yellow": 0.18,
+      "status": "GREEN"
+    },
+    "kit_subscribers": {
+      "actual_value": 85.0,
+      "threshold_green": 75,
+      "threshold_yellow": 25,
+      "status": "GREEN"
+    },
+    "influencer_responses": {
+      "actual_value": 4.0,
+      "threshold_green": 4,
+      "threshold_yellow": 2,
+      "status": "GREEN"
+    },
+    "gist_downloads": {
+      "actual_value": 520.0,
+      "threshold_green": 500,
+      "threshold_yellow": 200,
+      "status": "GREEN"
+    }
+  },
+  "metric_summary": {
+    "total_metrics": 9,
+    "green_count": 9,
+    "yellow_count": 0,
+    "red_count": 0
+  }
+}

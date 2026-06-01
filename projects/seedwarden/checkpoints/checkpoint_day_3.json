@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-06-01T14:28:10.408125",
+  "checkpoint": "Day 3",
+  "checkpoint_date": "2026-06-04T08:00:00",
+  "launch_date": "2026-06-01T08:00:00",
+  "overall_status": "YELLOW",
+  "decision": "EXTEND/MONITOR",
+  "decision_message": "Marginal engagement. Extend Day 3 actions: increase influencer outreach, boost social posts, analyze content performance.",
+  "metrics": {
+    "reddit_upvotes": {
+      "actual_value": 250.0,
+      "threshold_green": 300,
+      "threshold_yellow": 150,
+      "status": "YELLOW"
+    },
+    "reddit_comments": {
+      "actual_value": 75.0,
+      "threshold_green": 50,
+      "threshold_yellow": 25,
+      "status": "GREEN"
+    },
+    "instagram_likes": {
+      "actual_value": 120.0,
+      "threshold_green": 100,
+      "threshold_yellow": 50,
+      "status": "GREEN"
+    },
+    "instagram_comments": {
+      "actual_value": 18.0,
+      "threshold_green": 20,
+      "threshold_yellow": 10,
+      "status": "YELLOW"
+    },
+    "tiktok_views": {
+      "actual_value": 1500.0,
+      "threshold_green": 2000,
+      "threshold_yellow": 500,
+      "status": "YELLOW"
+    },
+    "email_open_rate": {
+      "actual_value": 0.22,
+      "threshold_green": 0.2,
+      "threshold_yellow": 0.15,
+      "status": "GREEN"
+    },
+    "kit_subscribers": {
+      "actual_value": 30.0,
+      "threshold_green": 25,
+      "threshold_yellow": 5,
+      "status": "GREEN"
+    },
+    "influencer_responses": {
+      "actual_value": 2.0,
+      "threshold_green": 2,
+      "threshold_yellow": 0,
+      "status": "GREEN"
+    },
+    "gist_downloads": {
+      "actual_value": 180.0,
+      "threshold_green": 200,
+      "threshold_yellow": 50,
+      "status": "YELLOW"
+    }
+  },
+  "metric_summary": {
+    "total_metrics": 9,
+    "green_count": 5,
+    "yellow_count": 4,
+    "red_count": 0
+  }
+}

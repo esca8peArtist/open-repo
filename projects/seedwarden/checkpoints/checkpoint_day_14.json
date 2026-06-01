@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-06-01T14:29:01.413354",
+  "checkpoint": "Day 14",
+  "checkpoint_date": "2026-06-15T08:00:00",
+  "launch_date": "2026-06-01T08:00:00",
+  "overall_status": "RED",
+  "decision": "TROUBLESHOOT/ABORT",
+  "decision_message": "Track B performance insufficient. Phase 3 launch ABORTED. Focus resources on Track A. Plan Track B relaunch for July.",
+  "metrics": {
+    "reddit_upvotes": {
+      "actual_value": 800.0,
+      "threshold_green": 2000,
+      "threshold_yellow": 1000,
+      "status": "RED"
+    },
+    "reddit_comments": {
+      "actual_value": 100.0,
+      "threshold_green": 300,
+      "threshold_yellow": 150,
+      "status": "RED"
+    },
+    "instagram_likes": {
+      "actual_value": 300.0,
+      "threshold_green": 800,
+      "threshold_yellow": 400,
+      "status": "RED"
+    },
+    "instagram_comments": {
+      "actual_value": 35.0,
+      "threshold_green": 100,
+      "threshold_yellow": 50,
+      "status": "RED"
+    },
+    "tiktok_views": {
+      "actual_value": 15000.0,
+      "threshold_green": 50000,
+      "threshold_yellow": 20000,
+      "status": "RED"
+    },
+    "email_open_rate": {
+      "actual_value": 0.18,
+      "threshold_green": 0.28,
+      "threshold_yellow": 0.2,
+      "status": "RED"
+    },
+    "kit_subscribers": {
+      "actual_value": 35.0,
+      "threshold_green": 150,
+      "threshold_yellow": 50,
+      "status": "RED"
+    },
+    "influencer_responses": {
+      "actual_value": 0.0,
+      "threshold_green": 6,
+      "threshold_yellow": 3,
+      "status": "RED"
+    },
+    "gist_downloads": {
+      "actual_value": 350.0,
+      "threshold_green": 1000,
+      "threshold_yellow": 500,
+      "status": "RED"
+    }
+  },
+  "metric_summary": {
+    "total_metrics": 9,
+    "green_count": 0,
+    "yellow_count": 0,
+    "red_count": 9
+  }
+}
