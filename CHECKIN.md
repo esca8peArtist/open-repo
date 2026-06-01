@@ -3,6 +3,48 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2489, 2026-06-01 10:40–11:05 UTC — PRE-ACTIVATION VERIFICATION + READINESS CONFIRMATION)
+
+**Session Status**: ✅ **COMPLETE — All systems verified ready for 14:00 UTC Domain 39 activation**
+
+**What Accomplished**:
+
+1. **Domain 39 Activation Pre-Flight Verification** ✅:
+   - Verified Gist is live and accessible (HTTP 200)
+   - Verified response tracking JSON exists and is configured
+   - Verified routing framework is production-ready
+   - Verified orchestrator activation checklist is complete and ready for execution
+   - All 5 CronCreate monitoring jobs confirmed scheduled from Session 2488
+
+2. **Phase 5/6 Document Manifest Verification** ✅:
+   - **Wave 1+2 documents confirmed** (5 total, 45,380 words): All 5 documents exist and are accessible for June 1 18:00 UTC merging start
+   - **Phase 6 Domain A recruitment package confirmed** (18 personalized emails ready): All emails staged for user execution June 1-2
+   - No Phase 6 Domain C emails created yet (not urgent — scheduled for June 3+ if needed)
+
+3. **Orchestration Timeline Validation** ✅:
+   - Confirmed next user action required: Domain 39 + Phase 6 emails at 13:00–13:48 UTC (in ~2h 20min)
+   - Confirmed orchestrator activation at 14:00–14:30 UTC (following user email send)
+   - Confirmed Phase 5 work starts 18:00 UTC (following activation)
+   - All timing gates aligned and documented
+
+**Status Going Into Critical Window**:
+- ✅ **Domain 39 ready** for user send + orchestrator activation
+- ✅ **Stockbot ready** for June 2 13:30 UTC market open (monitoring checkpoints auto-scheduled)
+- ✅ **Phase 5 ready** for June 1 18:00 UTC merging start (documents verified + staged)
+- ✅ **Phase 6 ready** for user recruitment email send + fallback autonomous research if needed (June 10)
+- ✅ **All blocks still active but manageable** (cybersecurity-hardening step 1.3 user restart, mfg-farm test print)
+
+**Next Actions (This Session)**:
+- **13:00–13:48 UTC**: Await user email send signal (Domain 39 + Phase 6)
+- **14:00–14:30 UTC**: Execute Domain 39 orchestrator activation (6-step checklist)
+- **18:00 UTC+**: Begin Phase 5 Wave 1+2 document merging
+
+**Critical Gates Locked In**:
+- **June 15 09:00 UTC T+14**: Domain 39 routing decision BEFORE 09:30 Domain 38 send
+- **June 23 09:00 UTC**: Stockbot Phase 4.4 decision (>0% return + Sharpe >1.0 required)
+
+---
+
 ## Since Last Check-in (Session 2488, 2026-06-01 10:30–11:05 UTC — ORCHESTRATOR MONITORING AUTOMATION SETUP)
 
 **Session Status**: ✅ **COMPLETE — Critical Monitoring Infrastructure Deployed (8 CronCreate Checkpoints Automated)**
