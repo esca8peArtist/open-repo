@@ -94,6 +94,10 @@
 
 **Domain 56 Tier 2 distribution ready for May 28** (all 4 templates pre-filled: Volcker Alliance, Democracy Forward, CREW, Government Executive). Contingency playbooks staged in `post-synthesis-contingency-execution-playbooks.md`. **Domains 58, 59, 57 ready** for independent execution on own timelines (June 5-10, May 30, August 8). Phase 2 work proceeds on TOO_EARLY path: Domain 56 + 39 distribution May 28 + June 1; Domain 57/59 pre-production hold until synthesis outcome.
 
+**Phase 2 DOMAINS 49-50 PRODUCTION STATUS CLARIFICATION**:
+  - **Domain 49** (Louisiana v. Callais / VRA Redistricting): 6,071 words, 41 citations — PRODUCTION-READY (expanded June 1 to 6,000+ word threshold). Redistricting cascade analysis, legal defense pathways, 2026 election advocacy windows.
+  - **Domain 50 CANONICAL DESIGNATION**: `domain-50-lgbtq-rights-voting-suppression.md` is the production-canonical document (8,586 words, 86 citations, June 2026 creation). The separate healthcare-democracy file (`domain-50-healthcare-democracy-nexus-obbba-nvra.md`) overlaps with Domain 31 and is retained as reference material. All distribution planning targets the LGBTQ+ rights domain-50 file.
+
 **Phase 2 DOMAINS 56 + 58 RESEARCH COMPLETE**:
   - **Domain 56** (Civil Service Politicization, 47 citations): H.R. 492/S. 134 legislative window June 1-30, DOJ Voting Section collapse (6 attorneys from 30), highest-leverage: Partnership for Public Service + AFGE briefing May 19-23
   - **Domain 58** (Tribal Sovereignty, 60 citations, 9,400 words): Montana SB 490 post-*Callais* voting rights victory (May 11 injunction), BIA reorganization 13% workforce loss, Turtle Mountain v. Howe GVR issued May 19 (remanded post-*Callais*), rapid-response protocol for Trump v. Barbara ruling (birthright citizenship case, June-July expected, tribal citizenship dimension via admin legal theory; see `trump-v-barbara-rapid-response.md` v2 May 21 supplement)
