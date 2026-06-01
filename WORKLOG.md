@@ -1,5 +1,11 @@
 # Work Log
 
+- Session (June 1): **MFG-FARM PHASE 2 PRE-STAGING — SUPPLIER RFQs, PRICING PLAYBOOK, CAPITAL TIMELINE**
+  - Three production-ready files created in projects/mfg-farm/:
+  - `PHASE_2_SUPPLIER_RFQ_TEMPLATES.md` — Copy-paste RFQ emails for MatterHackers, Bambu Lab B2B, Dynamism, Polymaker, eSUN direct, Anycubic, and Prusa contingency. Includes MOQ/lead time/payment terms reference table and a supplier contact log ready to fill as outreach completes.
+  - `PHASE_2_PRICING_NEGOTIATION_PLAYBOOK.md` — Per-unit COGS at 1/2/4/8/10 printer scale; blended filament discount tier analysis (eSUN $8.50–13/kg, Anycubic $10.49/kg, Polymaker $13.50–14.99/kg tiers); lead-time trade-offs; net-30 negotiation path for Polymaker (after 3 prepaid orders) and eSUN direct (after 6 months); purchase vs. lease analysis (purchase wins at 7–17 day payback); Phase 2 and Phase 3 negotiation leverage scripts.
+  - `PHASE_2_CAPITAL_ALLOCATION_TIMELINE.md` — Total capital $2,127 (minimum viable bootstrap) to $4,585 (Combo printers + full pallet + consumables); week-by-week June 1–July 15 deployment calendar; trademark decision (standard $350, file June 1, Brand Registry unlocks Day 0); 4-printer breakeven at 7–17 days; three funding scenarios (bootstrap, credit card bridge, phased sequential); filament rotation strategy for 100–200 kg initial inventory; July 15 operational readiness target confirmed achievable.
+
 - Session 2465 (June 1 ~03:30–06:30 UTC): **STOCKBOT PHASE 3-4.2 INFRASTRUCTURE COMPLETION — GRADUATION CRITERIA + TRAINING + COMPARISON PIPELINE**
   - **Protocol**: Full session orientation from ORCHESTRATOR_STATE.md (all files current, no blocks/INBOX items)
   - **Three parallel agents spawned** for Phase 3, 4.1, and 4.2 work
