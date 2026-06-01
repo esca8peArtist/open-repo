@@ -3,6 +3,19 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2487, 2026-06-01 10:15 UTC — Phase 5/6 AUTO-FALLBACK ACTIVATION IMMEDIATE)
+
+**Session Status**: 🔴 **IN PROGRESS — CRITICAL: Phase 5/6 auto-fallback activation (May 31 deadline passed, executing now)**
+
+**CRITICAL ACTION**: May 31 23:59 UTC Phase 5/6 decision deadline has passed without user decision submission. Auto-fallback activation sequence starting immediately per PHASE_5_6_AUTO_FALLBACK_ACTIVATION_SUMMARY.md (June 1 00:00 UTC trigger). Execution plan:
+- Phase 5 Option A: Staged Wave 1+2 (June 5 publication) + Wave 3 (June 30)
+- Phase 6 Domain A: Economic Resilience (author recruitment June 1-2, research June 10-July 10, publish Aug 30)
+- Phase 6 Domain C: Education & Knowledge (parallel track, author recruitment June 1-2, July-Aug research/draft)
+- Phase 4: Governance workshop June 1 18:00 UTC execution
+- All runbooks production-ready; execution commences immediately
+
+---
+
 ## Since Last Check-in (Session 2486, 2026-06-01 10:15–11:15 UTC — Phase 2 Rapid-Activation Runbooks + Domain 39 Post-Activation Routing)
 
 **Session Status**: ✅ **COMPLETE — Phase 2 Rapid-Activation Runbooks Created + Domain 39 Routing Framework Ready — EXPLORATION QUEUE REPLENISHED**
