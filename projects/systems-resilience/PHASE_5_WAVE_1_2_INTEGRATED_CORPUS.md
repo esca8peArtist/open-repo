@@ -20,11 +20,11 @@ publication_date: June 5, 2026 (scheduled)
 
 ## Table of Contents
 
-1. [Distributed Microgrids as Community Resilience Infrastructure](#section-1-distributed-microgrids)
-2. [Community Implementation Playbook — Tier 3 Coordination](#section-2-community-implementation)
-3. [Conflict Resolution and Governance Framework](#section-3-conflict-resolution)
-4. [Psychological Support and Trauma Recovery](#section-4-psychological-support)
-5. [Veterinary Care in Crisis Contexts](#section-5-veterinary-care)
+1. [Distributed Microgrids as Community Resilience Infrastructure](#section-1-distributed-microgrids-as-community-resilience-infrastructure)
+2. [Community Implementation Playbook — Tier 3 Coordination Framework](#section-2-community-implementation-playbook-tier-3-coordination-framework)
+3. [Conflict Resolution and Governance Framework](#section-3-conflict-resolution-and-governance-framework)
+4. [Psychological Support and Trauma Recovery](#section-4-psychological-support-and-trauma-recovery)
+5. [Veterinary Care in Crisis Contexts](#section-5-veterinary-care-in-crisis-contexts)
 
 ---
 
