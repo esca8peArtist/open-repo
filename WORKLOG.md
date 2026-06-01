@@ -1,5 +1,24 @@
 # Work Log
 
+- Session 2480 (June 1, later): **PHASE 6 AUTHOR RECRUITMENT DECISION INFRASTRUCTURE — systems-resilience**
+  - **Status**: Complete — 3 files created/updated; committed
+  - **Task**: Prepare decision checkpoint infrastructure for June 3 EOD Domain A author recruitment decision gate
+  - **Deliverable 1**: `projects/systems-resilience/PHASE_6_AUTHOR_RECRUITMENT_DECISION_CHECKPOINT.md` (~1,800 words)
+    - Status as of June 1 (18 emails ready, no responses yet, all infrastructure complete)
+    - Decision tree: PATH A (author confirmed) → immediate onboarding; PATH B (24hr extension) → conditions and hard cutoff; PATH C (self-execute fallback) → immediate activation
+    - Full self-execute procedure: Domain A priority, June 10–July 10 sprint, T+14 peer review June 24, July 10 first draft, Aug 30 publication
+    - Timeline rollup showing identical Aug 30 publication date on both paths
+  - **Deliverable 2**: `projects/systems-resilience/phase-6-author-onboarding-kit.md` — updated
+    - Added Section 6: Fallback Activation Procedures (3 scenarios + IP/payment terms)
+    - Kit now has all 6 required documents: scope, format/citation, peer review, timeline, success metrics, fallback procedures
+  - **Deliverable 3**: `projects/systems-resilience/PHASE_6_RESEARCH_COMPLETION_CHECKLIST.md`
+    - Audit finding: Domain B (46 sources, production-ready), Domain E (48 sources, production-ready), Domain F (44/48 claimed — 4 missing + 1 corrupted URL — action required)
+    - 6 specific action items for Domain F resolution by June 5
+    - Domains B and E cleared; Domain F needs 1–2 hours of bibliography completion before author handoff
+    - 8-combination scoring matrix confirmed present (A+C+D = 4.5/5 top-ranked; 88% confidence)
+  - **Key finding**: All infrastructure production-ready except Domain F bibliography (4 sources need adding). June 3 decision can proceed on schedule.
+  - **Next action**: User sends 18 Domain A recruitment emails June 1–2; check responses June 3 AM; decision June 3 23:59 UTC
+
 - Session 2480 (June 1 06:57–07:50 UTC): **2 EXPLORATION QUEUE ITEMS — STOCKBOT PRE-MARKET AUDIT + JUNE 2-5 MONITORING FRAMEWORK**
   - **Status**: ✅ Both complete; all monitoring infrastructure verified production-ready; 185K tokens
   - **Item 1 — Stockbot June 2 Pre-Market Signal Quality Audit**:

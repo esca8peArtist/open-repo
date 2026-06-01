@@ -112,3 +112,27 @@ This project has been running since early 2026. You are joining a project with 6
 **Weekly checkpoint**: Every Friday, send a brief status note (current word count, any blocking issues, any scope questions). The orchestrator will respond by end of week. If you are off-track on word count, flag it Friday — not the week before the deadline.
 
 **Contact for urgent questions**: [Your name/email/contact method]
+
+---
+
+## 6. Fallback Activation Procedures
+
+This section documents what happens if production cannot be completed as planned. Read it once at the start of your engagement; keep it as reference if circumstances change.
+
+**Scenario A: Author withdrawal before production begins (before June 10)**
+
+If you determine before June 10 that you cannot proceed, notify the orchestrator as soon as possible. No payment obligation exists before the agreement is signed; if the agreement is signed but production has not begun, the 20% first milestone payment has already been initiated and is non-refundable. The orchestrator will activate the self-execute fallback (PATH C) effective June 10 with no timeline change. Your contribution to this point — any source review, outline work, or preparatory notes — would be credited as research input.
+
+**Scenario B: Author withdrawal during Production Sprint 1 (June 10–29)**
+
+If circumstances require you to stop mid-sprint, notify the orchestrator by the Wednesday of any week (Tuesday if possible) to allow Sprint 2 to be replanned. Any completed sections (draft quality or better) are usable. Milestone payments are processed only at completed milestones — work completed up to the withdrawal point determines payment. The orchestrator will evaluate whether a contingency author is available; if not, self-execute fills the remaining sections.
+
+**Scenario C: Author withdrawal after Production Sprint 1 (after June 29 draft)**
+
+If you have delivered Sprint 1 draft (20–25K words), a contingency author may be brought in for Sprint 2, or the orchestrator completes Sprint 2 independently. Payments for Sprint 1 completion milestone (30%) are processed before any fallback decision. The July 10 first draft deadline is the hard constraint — whether author-led or self-execute, the July 10 date does not move.
+
+**Quality fallback trigger**: If at the June 29 Sprint 1 review the orchestrator determines the draft does not meet the practitioner voice standard (see Section 3), a remediation conversation occurs first. If remediation is not feasible within two additional review cycles, the orchestrator reserves the right to engage a specialist editor or activate self-execute for the remaining sections. This is a last resort — it has never been triggered in Phases 1–5.
+
+**What you can expect from the orchestrator**: The orchestrator will not initiate fallback without discussion unless you have missed two consecutive weekly checkpoints without contact. A missed checkpoint generates an inquiry within 24 hours; two missed checkpoints with no response initiates contingency assessment.
+
+**Your intellectual property**: All contributed work is licensed CC BY-SA. Co-authorship credit on the final document is specified in the agreement. If fallback is activated, your contribution is credited as a named contributor for the sections you completed, not as co-author of the full document unless your contribution constitutes more than 60% of the final word count.
