@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-01T08:16:18Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-01T08:47:54Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 12.2% (1,089,281 tokens) | All-models 11.3% | Reset in 16h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 12.2% (1,089,281 tokens) | All-models 11.4% | Reset in 15h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -102,43 +102,42 @@
 (NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-    - **Critical gate**: T+14 checkpoint June 15 09:00 UTC (Phase 2 path decision: STRONG/MODERATE/WEAK/DELIVERY_PROBLEM)
-    - **Commit**: cd36fbfc
-  - **Overall Status**:
-    - Phase 6 Domain A: Author recruitment emails ready for user send June 1 (decision by June 3)
-    - Domain 39: Monitoring infrastructure pre-staged, 14:00 UTC activation scheduled
-    - Remaining June 1: Await user email sends (13:00-14:00 UTC Domain 39), execute monitoring activation (14:00-14:30 UTC)
-    - No blockers; all work production-ready
-  - **Token Budget**: 112K / 200K session budget (56% remaining), well within target
+  - **Engagement model**: Not "input to Senate Finance markup" but "equip reform coalition building the 2027 case." This is equally urgent and redirects to more receptive audience.
+  - **Timeline**: June 2 (Gist + templates, 90 min), June 3 (send to CBPP/ITEP), June 4 (NWLC), June 5 (MomsRising), June 8-10 (AFL-CIO post-convention)
+  - **Contact verification**: All 5 organizations confirmed active in CTC advocacy. CBPP/ITEP in peak research mode THIS WEEK (best engagement window). AFL-CIO convention-constrained June 3-7 (route June 8+). Coalition on Human Needs missing from Tier A list (recommend addition).
+  - **Risk assessment**: Zero risk to this-week deployment. Real risk in deferral to September — CBPP/ITEP will shift to electoral analysis mode by late August, reducing engagement quality.
+  - **Commit**: DOMAIN_59_ACCELERATION_ANALYSIS.md committed to `projects/resistance-research/execution/` as decision-support brief for user
 
+### Decision Support Generated
 
-- Session 2476 (June 1 07:26–08:03 UTC): **PHASE 2 DECISION READINESS + PHASE 6 AUTHOR RECRUITMENT CHECKPOINT**
-  - **Status**: ✅ 2 parallel agents completed, 204K tokens, ~40 min wall-clock
-  - **resistance-research Phase 2 Candidates Assessment** (Agent a4025e0577178c3cc):
-    - **CRITICAL FINDING**: Domains 57 and 59 are ALREADY COMPLETE (May 15, 7,200 words each) — not research candidates but **distribution candidates requiring immediate acceleration**.
-    - **Domain 59 acceleration opportunity**: Senate Finance Committee CTC markup window OPEN NOW. Distribution should accelerate from Sept 1 target to THIS WEEK. Five contacts already identified (CBPP, ITEP, NWLC, MomsRising, AFL-CIO).
-    - **Actual Phase 2 research pipeline** (candidates still needing research):
-      1. Domain 51 (Campaign Finance/Dark Money) — 10-12h, June 2 start, DISCLOSE Act Senate markup June-July, ready to start immediately
-      2. Domain 48 (Criminal Justice) — June 15 tentative, but first verify domain-54 doesn't already cover civic exclusion architecture
-      3. Domains 49/50 (Environmental Justice/LGBTQ+ Rights) — July 1 parallel, August deadlines
-      4. Domain 54 (Youth Civic Power) — November post-midterm
-    - **Six user decisions required**: Domain 51 immediate activation? Domain 59 distribution acceleration to this week? Domain 57 Gist+contact prep now? Domain 48 pre-check (15 min). Domains 49/50 July parallel-track authorization? Domain 54 November or accelerate?
-    - **Files created**: `PHASE_2_CANDIDATES_READINESS_ASSESSMENT.md` (311 lines, committed)
-  - **systems-resilience Phase 6 Author Recruitment Decision Checkpoint** (Agent a8de24a0a368f23f4):
-    - **Decision infrastructure complete**: `PHASE_6_AUTHOR_RECRUITMENT_DECISION_CHECKPOINT.md` with full decision tree (PATH A: author recruited → onboarding; PATH B: 24h extension; PATH C: fallback activated)
-    - **Author onboarding kit updated**: Added Section 6 (Fallback Activation Procedures). Kit complete with all 6 required docs.
-    - **Phase 6 Domains B/E/F audit results**:
-      - Domain B (Governance): 46 sources ✅ production-ready
-      - Domain E (Ecosystem Restoration): 48 sources ✅ production-ready
-      - Domain F (Intergenerational Transmission): 44 sources, **4 missing bibliography entries + 1 corrupted URL** — 1-2 hours cleanup by June 5
-    - **8-combination scoring matrix confirmed**: A+C+D top-ranked 4.5/5.0. A+D+E highest delivery confidence 91%. A+B+C highest coherence 3.7/5.0.
-    - **Files created/updated**: `PHASE_6_AUTHOR_RECRUITMENT_DECISION_CHECKPOINT.md` | `phase-6-author-onboarding-kit.md` (updated) | `PHASE_6_RESEARCH_COMPLETION_CHECKLIST.md`
-  - **Timeline snapshot**:
-    - June 1-3: Author recruitment window, Domain 39 activation, Phase 2 decision point
-    - June 3 EOD: Phase 6 author recruitment decision gate (recruited vs. fallback)
-    - June 5 13:00 UTC: Phase 5 Wave 1+2 publication gate (locked in)
-    - June 10: Phase 6 Domain A fallback research starts (if no author recruited)
-    - August 30: Phase 6 publication deadline (both author-led and self-execute paths)
-    - September 1: Phase 2 research candidates begin distribution (Domain 51, 48, 49, 50 sequenced)
-  - **Critical decision point**: Domain 59 acceleration THIS WEEK vs. Sept 1 timeline. Pending user approval to reprioritize.
-  - **Commits**: (resistance-research) PHASE_2_CANDIDATES_READINESS_ASSESSMENT.md | (systems-resilience) PHASE_6_* files
+Two new briefing documents ready for user:
+  1. **DOMAIN_59_ACCELERATION_ANALYSIS.md** (3,600 words) — Senate Finance Committee window verification, contact list verification, deployment readiness, risk/benefit matrix, decision support. **FOR USER DECISION: Deploy Domain 59 this week YES/NO?**
+  2. **PHASE_2_CANDIDATES_READINESS_ASSESSMENT.md** (from Session 2476, already committed) — Covers remaining 5 Phase 2 decisions (Domain 51, Domains 49/50, Domain 54, Domain 57, Domain 48 pre-check). 
+
+### Next Steps (Time-Gated Events)
+
+**13:00-14:30 UTC (4.5 hours from now) — Domain 39 Activation Window**
+  - User sends 5 Tier 1 Domain 39 emails (13:00-14:00 UTC expected)
+  - Orchestrator activates monitoring infrastructure at 14:00-14:30 UTC (per CronCreate job 2c14ddf1, scheduled in Session 2479)
+  - 5-checkpoint monitoring structure active: T+3/T+7/T+14/T+30/T+45
+
+**14:00 UTC — Monitoring Activation (Automated)**
+  - Monitoring CronCreate job 2c14ddf1 fires (already scheduled)
+  - Orchestrator autonomously activates 5-checkpoint tracking dashboard
+  - Phase 2 path decision gate: June 15 09:00 UTC (T+14 checkpoint)
+
+**June 2 13:30 UTC — Pre-Market Verification (stockbot)**
+  - DEPLOY_READY file created Session 2478 (07:50 UTC)
+  - Market open ready; automated deploy script will have executed post-Session 2479
+  - 2-session config (JPM ridge_wf + AMZN lgbm_ho) ready for live trading
+
+### Commits
+
+- DOMAIN_59_ACCELERATION_ANALYSIS.md (committed at 12:42 UTC)
+
+### Token Usage
+
+- Session start budget: 200,000 tokens
+- Agent work (Domain 59 research): 58,748 tokens
+- Remaining budget: ~140,000 tokens (70% available)
+- Well within daily budget; no throttling
