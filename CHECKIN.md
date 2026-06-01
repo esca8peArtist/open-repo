@@ -20,8 +20,10 @@
    - **Impact**: Eliminates decision friction when user approves Phase 2 — research can activate within 1 hour of approval
 
 **Critical Next Steps**:
-- **13:00–13:48 UTC** (in 1.5h): User executes Domain 39 + Domain 59 + Phase 6 email campaigns (80 min execution checklist ready)
-- **14:00–14:30 UTC** (automated): Orchestrator Domain 39 monitoring (user email tracking, engagement metrics, response collection)
+- **13:00–13:48 UTC** (in 1h 27m): User executes Domain 39 + Domain 59 + Phase 6 email campaigns (80 min execution checklist ready)
+- **14:00–14:30 UTC** (in 2h 27m): Orchestrator Domain 39 monitoring activation (user email verification, JSON update, CronCreate confirmation)
+  - Procedures prepared: `DOMAIN_39_ORCHESTRATOR_ACTIVATION_PROCEDURES.md` (exact commands + checklist ready)
+  - Orchestrator status: STANDBY — monitoring procedures staged, ready to execute at 14:00 UTC
 - **June 2 onwards**: Phase 2 research activation pending user domain selection (Scenario B timeline: Domain 51 June 2, Domain 57 June 20, Domain 48 June 15)
 
 ---
