@@ -5,6 +5,45 @@
 
 ---
 
+## Since Last Check-in (Session 2465, 2026-06-01 ~03:30–05:15 UTC — Stockbot Phase 3-4.1 Infrastructure Completion)
+
+**What was accomplished**:
+- ✅ **STOCKBOT: PHASE 3 — MODEL GRADUATION CRITERIA DOCUMENTATION COMPLETE**
+  - File: `projects/stockbot/docs/model-graduation-criteria.md` (updated with comprehensive 6-gate framework)
+  - Deliverables: mandatory summary, current model status table, decision trees (pass/fail/fixable routing), cross-references
+  - Verification: All 6 gates documented and verified ✓
+  - Status: Production-ready for all future model evaluations
+
+- ✅ **STOCKBOT: PHASE 4.1 — AUTOMATED MODEL TRAINING + EVALUATION PIPELINE COMPLETE**
+  - New files: `scripts/train_and_evaluate_model.py` (unified single-model CLI), `scripts/batch_train_models.py` (parallel batch CLI)
+  - Tests: `tests/unit/test_training/test_train_cli.py` (48 comprehensive unit tests, all passing)
+  - Documentation: `docs/MODEL_TRAINING_PIPELINE.md` (user guide + 7 troubleshooting scenarios)
+  - Key features:
+    - Single-model CLI: `uv run python scripts/train_and_evaluate_model.py --ticker MSFT --strategy lgbm_ho --train-start 2022-01-01 --train-end 2026-06-01`
+    - Batch CLI: `uv run python scripts/batch_train_models.py --jobs jobs.csv --max-workers 3`
+    - Exit codes: 0=PASS, 1=FAIL, 2=pipeline-error
+    - Optional webhook notification on 6/6 PASS
+    - Time goal: <30 min wall-clock per model
+  - Tests: 1068 passed, 51 skipped (XGBoost not installed), 0 failed — no regressions
+  - Gate threshold consistency: GATE_THRESHOLDS dict matches docs/model-graduation-criteria.md exactly
+  - Status: Production-ready for Phase 4.2+ (model comparison, live tracking)
+  - Commit: `e99a7c8` on master
+
+**What's in progress**:
+- Stockbot: Phase 4.2 (model comparison framework) and Phase 4.3 (live performance tracking) queued
+- Stockbot: AMZN G5 fix (hmm_observe_mode: false) ready for June 3+ deployment
+- Stockbot: June 2 13:30 UTC market open (JPM + AMZN 2-session config, all systems ready)
+- Domain 39 distribution: Awaiting user execution 13:00–14:00 UTC TODAY
+
+**What needs your input**:
+- **TODAY (13:00–14:00 UTC)**: Execute Domain 39 Tier 1 email distribution (5 pre-written emails, 80-min window)
+- **OPTIONAL (June 3+)**: Approve AMZN G5 fix for post-June 2 market-close deployment
+- **POST-JUNE 2**: Any new models to test? Use new Phase 4.1 pipeline: `train_and_evaluate_model.py --ticker <TICKER> --strategy <STRATEGY>`
+
+**Usage**: Sonnet ~15-16%, all-models ~13-14% (increased from 12% due to Phase 3-4.1 work). Reset in ~21 hours.
+
+---
+
 ## Since Last Check-in (Session 2464, 2026-06-01 03:00–03:30 UTC — AAPL Model Suspension + Phase 5/6 Infrastructure Deployment)
 
 **What was accomplished**:

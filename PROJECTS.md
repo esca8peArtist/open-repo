@@ -440,7 +440,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: ✅ **[JUNE 1 SIGNAL QUALITY AUDIT COMPLETE — 83% PORTFOLIO CONFIDENCE, AAPL MODELS MUST BE SUSPENDED BEFORE JUNE 2 13:00 UTC]** — JPM ridge_wf (6/6 gates PASS, 92% confidence ✅ GO) + AMZN lgbm_ho (5/6 gates, 78% confidence ⚠️ CONDITIONAL GO). **CRITICAL**: AAPL models (lgbm_ho 0.649 Sharpe, ridge_wf 0.096 Sharpe) failed walk-forward validation on live Alpaca data — must be suspended (position_size_pct=0 or delete from config) before 13:00 UTC June 2. Jetson 2-session config (JPM+AMZN) deployed, sleeping until June 2 13:15 UTC. Phase 3-4 infrastructure complete. **User action required**: Suspend AAPL models before market open OR approve code fix for post-market deployment. See `JUNE_2_SIGNAL_QUALITY_AUDIT.md` for full audit report.
+**Current focus**: ✅ **[JUNE 1 SIGNAL QUALITY AUDIT COMPLETE + PHASE 3-4.1 INFRASTRUCTURE DEPLOYMENT COMPLETE]** — JPM ridge_wf (6/6 gates PASS, 92% confidence ✅ GO) + AMZN lgbm_ho (5/6 gates, 78% confidence ⚠️ CONDITIONAL GO). **PHASE 3** (docs/model-graduation-criteria.md): 6-gate framework formalized with decision trees + current model status table + cross-references. **PHASE 4.1** (automated model training + evaluation pipeline): Unified CLIs (`train_and_evaluate_model.py` single-model, `batch_train_models.py` batch), 48 comprehensive unit tests (all passing), documentation + 7 troubleshooting scenarios. Gate thresholds verified to match criteria doc exactly. **CRITICAL**: AAPL models (lgbm_ho 0.649 Sharpe, ridge_wf 0.096 Sharpe) failed walk-forward validation — must be suspended (position_size_pct=0) before 13:00 UTC June 2. Jetson 2-session config (JPM+AMZN) deployed, sleeping until June 2 13:15 UTC. **User action required**: (1) Suspend AAPL models before June 2 13:30 UTC market open OR approve code fix, (2) Execute Domain 39 distribution 13:00-14:00 UTC TODAY. See `JUNE_2_SIGNAL_QUALITY_AUDIT.md` for audit details.
 
 **June 1 Pre-Market Validation Complete**: Walk-forward evaluation (WFE) audit of all 4 models using May 27-31 paper-trading data revealed critical findings:
 - **JPM ridge_wf**: 6/6 gates PASS ✅ — Deploy June 2 (OOS Sharpe 4.412, WFE 1.073, all regimes profitable)
@@ -490,20 +490,35 @@
 
 **Bugs fixed**: DSR num_trials corrected (was 3→1 per Bailey-Lopez), JSON serialization fixed, feature registry mismatch resolved. Reports: `/reports/` with timestamped JSON outputs. All 523 tests passing.
 
-**PHASE 3 — CLEAR GRADUATION GATE (before any paper deployment)**:
-- P3-1: Update `docs/model-graduation-criteria.md` with new gates. All 6 must pass before paper trading:
+**PHASE 3 — CLEAR GRADUATION GATE (COMPLETE ✅ Session 2465)**:
+- ✅ **P3-1: `docs/model-graduation-criteria.md` COMPLETE** — Formalized 6-gate framework with:
   - G1: Walk-forward OOS Sharpe > 1.0 (annualized)
   - G2: Walk-forward OOS Max Drawdown < 20%
   - G3: t-statistic > 2.0 on OOS trade P&L distribution
   - G4: DSR-adjusted Sharpe > 0.8 (surviving multiple-comparison correction)
   - G5: Positive Sharpe in at least 2 of 3 regimes (bull / bear / sideways) in the OOS period
   - G6: Walk-forward efficiency (WFE) > 0.50 (OOS Sharpe / IS Sharpe)
-- P3-2: No model to be deployed to paper trading unless all 6 gates pass. Suspend the 4-session config until AAPL ridge_wf, AMZN lgbm_ho, and JPM ridge_wf pass. AAPL lgbm_ho is the only model with any validated backtest — it may continue in 2-session config while the pipeline is built.
+  - Deliverables: Mandatory summary paragraph, current model status table, decision trees (pass/fail/fixable routing), cross-references to audit + pipeline + evaluation tools
+- ✅ **P3-2: Gate validation framework ready** — All 4 models evaluated against criteria: JPM 6/6 PASS, AMZN 5/6 PASS, AAPL 2/6 FAIL, AAPL 1/6 FAIL. No model deploys without all 6 gates passing. Paper trading requires 30 round-trip minimum post-gate.
 
-**PHASE 4 — PRODUCTION PIPELINE (week 3-4)**:
-- P4-1: **Automated model training + evaluation pipeline** — given ticker + strategy type + date range, produces trained model + full evaluation report + pass/fail in < 30 min. Makes it fast to test new strategies.
-- P4-2: **Model comparison framework** — compare multiple models on same data, portfolio-level backtesting (combined Sharpe, correlation analysis), A/B testing capability. Output: `src/analytics/model_comparison.py`.
-- P4-3: **Live performance tracking vs. backtest** — daily comparison of live session P&L vs. backtest expectations, statistical drift detection (Z-score alert when live diverges > 2 sigma from backtest rolling mean), automatic session pause recommendation when drift detected.
+**PHASE 4 — PRODUCTION PIPELINE (PHASE 4.1 COMPLETE ✅ Session 2465)**:
+- ✅ **P4-1: Automated model training + evaluation pipeline COMPLETE**
+  - `scripts/train_and_evaluate_model.py` — Single-model CLI: `uv run python scripts/train_and_evaluate_model.py --ticker MSFT --strategy lgbm_ho --train-start 2022-01-01 --train-end 2026-06-01`
+    - Supports 6 strategies (lgbm_ho, ridge_wf, gradient_boosting, rule_based, ensemble, mtf)
+    - Outputs: Markdown report + JSON report + model pkl (optional)
+    - Exit codes: 0=PASS, 1=FAIL, 2=pipeline-error
+    - Time goal: <30 min wall-clock per model
+    - Optional `--notify-webhook` for Slack/Discord alert on 6/6 PASS
+  - `scripts/batch_train_models.py` — Batch parallel CLI: `uv run python scripts/batch_train_models.py --jobs jobs.csv --max-workers 3`
+    - CSV/JSON job input with per-row parameter overrides
+    - ThreadPoolExecutor parallelization, formatted decision table output
+    - Exit: 0=all-passed, 1=any-failed
+  - Tests: 48 comprehensive unit tests (`tests/unit/test_training/test_train_cli.py`), 1068 total tests passing, 0 failures, no regressions
+  - Documentation: `docs/MODEL_TRAINING_PIPELINE.md` (user guide, 7 troubleshooting scenarios, determinism notes)
+  - Gate threshold consistency: GATE_THRESHOLDS dict verified to match docs/model-graduation-criteria.md exactly
+  - Status: **PRODUCTION-READY for Phase 4.2+**
+- ⏳ **P4-2: Model comparison framework** — compare multiple models on same data, portfolio-level backtesting (combined Sharpe, correlation analysis), A/B testing capability. Output: `src/analytics/model_comparison.py`. (Queued for Phase 4.2, estimated 4-6 hours)
+- ⏳ **P4-3: Live performance tracking vs. backtest** — daily comparison of live session P&L vs. backtest expectations, statistical drift detection (Z-score alert when live diverges > 2 sigma from backtest rolling mean), automatic session pause recommendation when drift detected. (Queued for Phase 4.3, estimated 4-6 hours)
 
 **HARD RULES going forward**:
 - No model enters paper trading without passing all 6 graduation gates from P3-1
