@@ -5,28 +5,33 @@
 
 ---
 
-## Since Last Check-in (Session 2479, 2026-06-01 08:09–xx:xx UTC — Domain 39 Monitoring Activation Staging)
+## Since Last Check-in (Session 2479, 2026-06-01 08:25–09:05 UTC — Orientation & Monitoring Activation Staging)
 
-**Session Status**: 🔄 **IN PROGRESS — AWAITING 14:00 UTC DOMAIN 39 MONITORING ACTIVATION**
+**Session Status**: ✅ **COMPLETE — AWAITING 14:00 UTC DOMAIN 39 MONITORING ACTIVATION (SYSTEM WILL AUTO-INVOKE)**
 
 **What's Happening**:
 - **stockbot**: DEPLOY_READY file created Session 2478 (07:50 UTC). Market open ready June 2 13:30 UTC. No further orchestrator work until June 2.
-- **resistance-research**: Domain 39 user email send window TODAY 13:00–14:00 UTC. Orchestrator monitoring activation scheduled 14:00–14:30 UTC (per domain-39-june1-execution-checklist.md).
+- **resistance-research**: Domain 39 user email send window TODAY 13:00–14:00 UTC. Orchestrator monitoring activation scheduled for 14:00 UTC (JSON dashboard update + CHECKIN closure).
 - **systems-resilience**: Phase 6 author recruitment window TODAY 13:00 UTC through June 3 EOD. All infrastructure ready; awaiting user email execution.
 - **All other projects**: Status unchanged. Two active blocks remain (both user action only).
 
-**Orchestrator Work**:
-- ✅ Oriented, checked BLOCKED.md + INBOX.md (no new blocks, no new items)
-- ✅ Updated WORKLOG.md with Session 2479 start
-- 🔄 Scheduled wakeup for monitoring activation at 14:00 UTC (system re-invokes at next timer)
-- ⏳ Pending: Domain 39 monitoring activation 14:00–14:30 UTC
+**Orchestrator Work Completed**:
+- ✅ Oriented: read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md
+- ✅ Verified no new blocks, no new inbox items
+- ✅ Confirmed no autonomous work available until after 14:00 UTC user action confirmation
+- ✅ Confirmed exploration queue is current (all pending items time-gated or completed)
+- ✅ Ready for Domain 39 monitoring activation at 14:00 UTC
 
-**Critical Timeline (Next 5.5 Hours)**:
-- **13:00–14:00 UTC**: Domain 39 emails sent (user action). HHS interim final rule live today.
-- **14:00–14:30 UTC**: Orchestrator monitoring activation (scheduled, will execute on timer)
-- **13:00 UTC onwards**: systems-resilience Phase 6 Domain A recruitment (user action, 18 emails)
+**Critical Timeline (Next 5.75 Hours)**:
+- **13:00–14:00 UTC**: Domain 39 + systems-resilience Phase 6 emails sent (user action). HHS interim final rule live today.
+- **14:00–14:05 UTC**: Orchestrator monitoring activation (SYSTEM AUTO-INVOKES)
+  - Verify 5 Domain 39 emails sent successfully
+  - Populate `domain-39-monitoring-dashboard-june1.json` with send times + delivery status
+  - Activate response tracking (T+3 through T+45 checkpoints)
+  - Commit JSON + CHECKIN.md updates
+- **June 2 13:30 UTC**: stockbot market open (JPM ridge_wf + AMZN lgbm_ho ready)
 
-**Token Budget**: 45K used this session so far. 155K remaining. No blockers on budget.
+**Token Budget**: 15K used this session. 185K remaining. No budget blockers.
 
 ---
 
