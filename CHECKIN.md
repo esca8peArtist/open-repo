@@ -30,7 +30,7 @@
   - Commit: `e99a7c8` on master
 
 **What's in progress**:
-- Stockbot: Phase 4.2 (model comparison framework) and Phase 4.3 (live performance tracking) queued
+- Stockbot: Phase 4.3 (live performance tracking) queued for next session
 - Stockbot: AMZN G5 fix (hmm_observe_mode: false) ready for June 3+ deployment
 - Stockbot: June 2 13:30 UTC market open (JPM + AMZN 2-session config, all systems ready)
 - Domain 39 distribution: Awaiting user execution 13:00–14:00 UTC TODAY

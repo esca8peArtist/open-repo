@@ -1,5 +1,37 @@
 # Work Log
 
+- Session 2465 (June 1 ~03:30–06:30 UTC): **STOCKBOT PHASE 3-4.2 INFRASTRUCTURE COMPLETION — GRADUATION CRITERIA + TRAINING + COMPARISON PIPELINE**
+  - **Protocol**: Full session orientation from ORCHESTRATOR_STATE.md (all files current, no blocks/INBOX items)
+  - **Three parallel agents spawned** for Phase 3, 4.1, and 4.2 work
+  
+  - ✅ **PHASE 3: MODEL GRADUATION CRITERIA DOCUMENTATION** (Agent: af054a0f62bdb410b) — SEE SECTION BELOW
+  
+  - ✅ **PHASE 4.1: AUTOMATED MODEL TRAINING + EVALUATION PIPELINE** (Agent: a9c265011e5cba997) — SEE SECTION BELOW
+  
+  - ✅ **PHASE 4.2: MODEL COMPARISON FRAMEWORK** (Agent: ae1e16f92cfb9a9ab)
+    - **File created**: `src/analytics/model_comparison.py` (full rewrite of skeleton)
+    - **Deliverables**:
+      - ✅ `ModelComparison` class with core methods:
+        - `compare_metrics()` — per-model table (Sharpe, MaxDD, WFE, regimes, t-stat) + correlation matrix + ranked model list + JSON audit log
+        - `portfolio_combination(weights)` — validates weights sum to 1.0±0.001, returns combined Sharpe/Sortino/MaxDD/Calmar + diversification ratio
+        - `a_b_test(model_a, model_b)` — Welch t-test (one-tailed) + Cohen's d effect size (pooled std) + recommended winner logic (significant AND non-negligible effect required)
+      - ✅ HTML report (Jinja2) — fully self-contained (no external URLs), seaborn heatmap embedded as base64 PNG, all gate colors, A/B test results, portfolio section
+      - ✅ `GATE_META` single source of truth for all 6 gates (prevents drift from docs/model-graduation-criteria.md)
+      - ✅ CSV + JSON output formats for structured analysis
+      - ✅ Backward compatibility: `portfolio_backtest()` and `ab_test()` remain as working aliases
+    - **CLI integration**: Updated `scripts/batch_train_models.py` with `--compare-output FILE` flag
+      - After training completes, runs comparison automatically
+      - Outputs `.html`, `.json`, `.csv` side-by-side
+    - **Tests**: `tests/unit/test_analytics/test_model_comparison.py` (97 comprehensive tests, all passing)
+      - Coverage: ModelResult/ModelSpec/constructors, compare_metrics(), portfolio_combination() (weight tolerance boundaries), a_b_test() (Cohen's d), edge cases, 3-model pipeline integration, HTML (self-contained), output formats, regression (determinism, backward compat)
+    - **Documentation**: `docs/MODEL_COMPARISON_GUIDE.md` (user guide with 6 code examples, interpretation guide, troubleshooting, API reference)
+    - **Status**: PRODUCTION-READY for Phase 4.3+ and future multi-model strategy development
+    - **Commit**: `ae1e16f92cfb9a9ab` branch work
+  
+  - **Session Summary**: Three parallel agents completed Phase 3-4.2 infrastructure. All 1165 tests passing (97 new in Phase 4.2), 0 failures. Stockbot now has full model development pipeline: train → evaluate (6 gates) → compare (A/B test, portfolio analysis) → deploy. All code production-ready and fully tested.
+  - **Next**: Phase 4.3 (live performance tracking), Phase 5+ (model deployment, live trading)
+  - **Usage**: Sonnet ~18-19%, all-models ~15-16% (increased from 13% due to Phase 3-4.2 agents, ~320k total tokens this session)
+
 - Session 2465 (June 1 ~03:30–05:15 UTC): **STOCKBOT PHASE 3-4.1 INFRASTRUCTURE COMPLETION — GRADUATION CRITERIA + AUTOMATED TRAINING PIPELINE**
   - **Protocol**: Full session orientation from ORCHESTRATOR_STATE.md (all files current, 2 active blocks, no new INBOX items)
   - **Two parallel agents spawned** for Stockbot Phase 3 + Phase 4.1 work (independent, non-blocking)

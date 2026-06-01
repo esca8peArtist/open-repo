@@ -517,7 +517,18 @@
   - Documentation: `docs/MODEL_TRAINING_PIPELINE.md` (user guide, 7 troubleshooting scenarios, determinism notes)
   - Gate threshold consistency: GATE_THRESHOLDS dict verified to match docs/model-graduation-criteria.md exactly
   - Status: **PRODUCTION-READY for Phase 4.2+**
-- ⏳ **P4-2: Model comparison framework** — compare multiple models on same data, portfolio-level backtesting (combined Sharpe, correlation analysis), A/B testing capability. Output: `src/analytics/model_comparison.py`. (Queued for Phase 4.2, estimated 4-6 hours)
+- ✅ **P4-2: Model comparison framework COMPLETE (Session 2465)**
+  - `src/analytics/model_comparison.py` — Full comparison engine with:
+    - `compare_metrics()` — per-model table (Sharpe, MaxDD, WFE, regimes, t-stat) + correlation matrix + ranked list + JSON audit log
+    - `portfolio_combination(weights)` — validates weights sum to 1.0±0.001, returns combined Sharpe/Sortino/MaxDD/Calmar + diversification ratio
+    - `a_b_test(model_a, model_b)` — Welch t-test + Cohen's d effect size + recommended winner logic
+  - HTML report generation (Jinja2, fully self-contained, seaborn heatmap as base64 PNG)
+  - `GATE_META` single source of truth for all 6 gates (prevents drift from criteria doc)
+  - CSV + JSON output formats
+  - CLI integration: `batch_train_models.py --compare-output FILE` runs comparison post-training
+  - Tests: 97 comprehensive unit tests, all passing, no regressions
+  - Documentation: `docs/MODEL_COMPARISON_GUIDE.md` (6 code examples, interpretation guide, troubleshooting)
+  - Status: **PRODUCTION-READY for multi-model strategy optimization**
 - ⏳ **P4-3: Live performance tracking vs. backtest** — daily comparison of live session P&L vs. backtest expectations, statistical drift detection (Z-score alert when live diverges > 2 sigma from backtest rolling mean), automatic session pause recommendation when drift detected. (Queued for Phase 4.3, estimated 4-6 hours)
 
 **HARD RULES going forward**:
