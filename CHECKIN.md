@@ -5,41 +5,46 @@
 
 ---
 
-## Since Last Check-in (Session 2458–2459, 2026-05-31 23:40–[completion] UTC)
+## Since Last Check-in (Session 2460, 2026-06-01 00:09–[completion] UTC)
 
 **What was accomplished**:
-- ✅ **POST-DEADLINE AUTONOMOUS WORK FULLY ACTIVATED AND COMPLETED**:
-  - Deadline passed: May 31 23:59 UTC (no user decisions provided → auto-fallback triggered)
-  - Parallel agents spawned and completed successfully
-  
-- ✅ **RESISTANCE-RESEARCH DOMAIN 58 DISTRIBUTION STAGING: 100% COMPLETE**:
-  - Gist live and verified: https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f
-  - All 5 organization contacts verified (NARF, NCAI, NOA, Brennan, CLC) with staff directories
-  - Trump v. Barbara ruling integration: 4 scenario branches documented, daily monitoring protocol ready
-  - Deliverables: `DOMAIN_58_GIST_URL.md`, `DOMAIN_58_CONTACT_VERIFICATION.md`, `DOMAIN_58_TRUMP_V_BARBARA_INTEGRATION.md`
-  - **Distribution readiness: 100%** — ready for immediate execution upon ruling issuance
-  
-- ✅ **STOCKBOT PHASE 4 PRODUCTION PIPELINE: COMPLETE AND TESTED**:
-  - Component 1: `model_training_pipeline.py` — automated training + 6-gate evaluation (<30 min/model)
-  - Component 2: `model_comparison.py` — side-by-side metrics, A/B testing, portfolio Sharpe/correlation
-  - Component 3: Live drift tracking in `trading_session.py` — daily vs. backtest monitoring, auto-pause at Z > 3.0
-  - Test coverage: 90 tests, 100% passing
-  - All committed to master
+- ✅ **STOCKBOT SIGNAL QUALITY AUDIT: CRITICAL PRE-MARKET VALIDATION COMPLETE**:
+  - All 4 models formally walk-forward evaluated (WFE) against May 27-31 paper-trading data
+  - **KEY FINDING**: Recommended deployment scope is 2 sessions, NOT 4 sessions
+  - Walk-forward evaluation results:
+    - **JPM ridge_wf**: 6/6 gates PASS — Deploy June 2
+    - **AMZN lgbm_ho**: 5/6 gates (G3 borderline) — Deploy June 2 with HMM gating active + reduced position size
+    - **AAPL lgbm_ho**: 2/6 gates FAIL — Do NOT deploy (OOS Sharpe 0.649 vs. claimed 1.491)
+    - **AAPL ridge_wf**: 1/6 gates FAIL — Do NOT deploy (WF efficiency 0.038, severe overfitting)
+  - **Recommendation**: Proceed with scope-corrected 2-session deployment using `active-sessions-2session.json`
+  - Critical pre-market actions required:
+    1. Verify Jetson runs `active-sessions-2session.json` before market open
+    2. Confirm JPM config loads stacker_id `868f378c` (ridge_wf), not `4e7f5806`
+    3. Confirm AMZN has `hmm_observe_mode: false` (gating active)
+    4. Reduce AMZN position_size_pct: 0.15 → 0.10 for first 10 round trips
+  - Deliverable: `JUNE_2_MARKET_OPEN_SIGNAL_QUALITY_AUDIT.md` (4,000+ words, detailed WFE analysis per session, go/no-go matrix)
+
+**What was completed earlier (Sessions 2458-2459)**:
+- ✅ **POST-DEADLINE AUTONOMOUS WORK**: Resistance-research Domain 58 staging (100% complete, gist live, contacts verified), Stockbot Phase 4 pipeline (complete and tested)
 
 **What's in progress**:
-- None — post-deadline autonomous work fully completed
+- None — June 1 autonomous work fully completed
 
 **What needs your input**:
-- **stockbot**: Still awaiting your approval for June 2 market open deployment (Option A: JPM only | B: JPM+AMZN | C: +AAPL retrain)
-- **Domain 39**: User execution window June 1 13:00–14:00 UTC (5 Tier 1 emails, 80-minute coordination, all pre-written)
+- **URGENT (before June 2 13:30 UTC market open)**: Confirm you've reviewed the signal quality audit and are ready to proceed with 2-session deployment. Verify the 4 pre-market action items are completed on the Jetson.
+- **Domain 39**: User execution window June 1 13:00–14:00 UTC (5 Tier 1 emails, 80-minute coordination, all pre-written) — still scheduled for TODAY if desired
 - **Domain 58**: Awaits *Trump v. Barbara* ruling issuance (72-hour emergency distribution protocol ready)
+- **Systems-resilience**: Phase 5/6 auto-fallback still awaiting your Phase 5 timing option (A: June 5-15, B: June 1-30 unified, C: rolling 6-week) and Phase 6 domain selection (A Economic, C Education, D Mechanization)
 
 **Critical Status**:
-- **Infrastructure**: All post-deadline deliverables production-ready and committed
-- **Budget**: Sonnet ~11%, all-models ~10%; reset in ~24h. Healthy.
-- **Next immediate actions**: (1) User approves stockbot deployment option, (2) User executes Domain 39 June 1 13:00–14:00 UTC, (3) Orchestrator monitors *Trump v. Barbara* ruling and triggers Domain 58 distribution on issuance
+- **Stockbot June 2 Readiness**: Now precisely defined. 2-session deployment is evidence-based and WFE-validated. Ready to execute upon your pre-market action confirmation.
+- **Budget**: Sonnet ~15%, all-models ~14%; reset in ~9h. Healthy with room for optional Domain 39 execution today.
+- **Timeline**:
+  - June 1 13:00–14:00 UTC: Domain 39 execution window (optional)
+  - June 2 13:15–13:30 UTC: Pre-market validation checks, then market open at 13:30 UTC
+  - June 2 post-market: Monitoring frameworks activate automatically
 
-**Assessment**: ✅ **AUTONOMOUS POST-DEADLINE WORK COMPLETE** — Both Phase 4 production pipeline and Domain 58 distribution staging fully delivered. All critical infrastructure tested and committed. Standing by for user deployment decisions and external trigger (*Trump v. Barbara* ruling).
+**Assessment**: ✅ **CRITICAL PRE-MARKET VALIDATION COMPLETE** — Stockbot is now scope-corrected and evidence-based for June 2 deployment. The audit revealed that deploying all 4 sessions would expose capital to models without validated edges. The 2-session plan (JPM + AMZN with gating) is the only path supported by formal WFE validation. Ready to proceed upon your pre-market action confirmation.
 
 ---
 

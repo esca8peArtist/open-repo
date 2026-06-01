@@ -1,5 +1,24 @@
 # Work Log
 
+- Session 2460 (June 1 00:09–00:45 UTC): **STOCKBOT SIGNAL QUALITY AUDIT: PRE-MARKET VALIDATION COMPLETE — CRITICAL SCOPE CORRECTION**
+  - **Task**: Validate all 4 active models' signal timing, distribution, and confidence patterns using May 27-31 paper-trading data
+  - **Execution**: Spawned stockbot subagent to perform formal walk-forward evaluation audit against live logs and database
+  - **Results**: Evidence-based WFE validation reveals 4-session deployment plan is unsupported by data; 2-session deployment is only validated path
+  - **Key Findings**:
+    - JPM ridge_wf: 6/6 gates PASS (OOS Sharpe 4.412, WFE 1.073, exceptional consistency across all market regimes)
+    - AMZN lgbm_ho: 5/6 gates (G3 borderline post-HMM-fix, DSR=1.0 real edge, asymmetric risk-return with HMM gating)
+    - AAPL lgbm_ho: 2/6 gates FAIL (OOS Sharpe 0.649 contradicts claimed 1.491; WFE fails on G1, G3, G4, G5)
+    - AAPL ridge_wf: 1/6 gates FAIL (WFE 0.038 indicates severe overfitting, fold variance 3×10^2, negative fold present)
+  - **Critical Pre-Market Actions Identified**:
+    1. Verify Jetson deployment config uses `active-sessions-2session.json`
+    2. Confirm JPM stacker_id is `868f378c` (ridge_wf) not `4e7f5806` (lgbm_ho) — configuration discrepancy found in DB
+    3. Confirm AMZN has `hmm_observe_mode: false` (gating active)
+    4. Reduce AMZN position_size_pct from 0.15 to 0.10 for first 10 round trips (G3 risk mitigation)
+  - **Deliverable**: `JUNE_2_MARKET_OPEN_SIGNAL_QUALITY_AUDIT.md` (4,000+ words, per-session WFE analysis, confidence consistency ranking, correlation analysis, go/no-go decision matrix)
+  - **Assessment**: This audit corrects a critical error in the original 4-session plan. Deploying unvalidated AAPL models would expose capital to statistical noise. The 2-session scope (JPM + AMZN with gating) is the only evidence-based deployment path. Ready for June 2 13:30 UTC market open upon user pre-market action confirmation.
+  - **Budget Impact**: ~2.1% additional Sonnet usage for comprehensive WFE audit. Total usage now ~17% Sonnet, ~16% all-models. Reset in ~9 hours.
+  - **Status**: Cleared for June 2 market open. Awaiting user pre-market action confirmation (config verification on Jetson).
+
 - Session 2459 (June 1 2026): **DOMAIN 58 DISTRIBUTION STAGING COMPLETE — ALL THREE TASKS DELIVERED**
   - **Task 1 (Gist Creation)**: Domain 58 gist confirmed already live at https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f (102 KB, public, esca8peArtist account). Created DOMAIN_58_GIST_URL.md at projects/resistance-research/DOMAIN_58_GIST_URL.md with full context and template integration instructions.
   - **Task 2 (Contact Verification)**: All 5 organizations verified via official websites and public staff directories. Created DOMAIN_58_CONTACT_VERIFICATION.md with: NARF (John Echohawk, ED; tscp@narf.org), NCAI (Larry Wright Jr., ED; Mark Macarro, President; Meghan Bishop, Policy Dir; mbishop@ncai.org), NOA (Judith Le Blanc, ED; info@nativeorganizing.org), Brennan Center (Wendy Weiser, VP Democracy; kennardl@brennan.law.nyu.edu for media), Campaign Legal Center (Danielle Lang, VP Voting Rights; Alice Huling + Anna Baldwin, Directors Voting Rights Litigation). Full 72-hour Trump v. Barbara rapid-response protocol with scenario-specific subject lines and send sequence included.
