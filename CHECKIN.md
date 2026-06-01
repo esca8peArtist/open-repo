@@ -3,6 +3,53 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2500, 2026-06-01 13:06–13:20 UTC — Domain 39 Activation In Progress + All Systems Ready)
+
+**Session Status**: ✅ **MONITORING HOLD — Domain 39 activation in progress (user email window 13:00-14:00 UTC), all projects on schedule, no autonomous work available until time gates clear**
+
+**Session Activities**:
+
+1. **Orchestration Orientation (13:06 UTC)**:
+   - ✅ Verified Domain 39 activation in real-time (currently 6 min into 60-min email send window)
+   - ✅ Confirmed all projects remain in their expected states from Session 2499
+   - ✅ Verified active blocks (cybersecurity-hardening: user restart, mfg-farm: test print) unchanged
+   - ✅ Confirmed Exploration Queue fully replenished (6 items, no new items needed)
+   - ✅ Status: All projects time-gated or blocked on user actions — no autonomous work to execute
+
+2. **Project Status Summary**:
+   - **resistance-research**: Domain 39 user send window 13:00-14:00 UTC (in progress). Domain 59 Wave 1 ready for June 2 execution.
+   - **stockbot**: All pre-market checks PASS. Market open June 2 13:30 UTC (JPM ridge_wf + AMZN lgbm_ho).
+   - **seedwarden**: Track B infrastructure ready. Waiting for user to complete 5 activation gates (3.5-4.5 hours).
+   - **systems-resilience**: Phase 5 production-ready. Publication gate June 5 13:00 UTC (locked).
+   - **open-repo**: Phase 3 complete. June 12 deployment on track.
+   - **cybersecurity-hardening**: Phase 1 paused at step 1.3 (waiting for user VeraCrypt restart).
+   - **mfg-farm**: All pre-print work complete (waiting for user test print execution).
+
+**What Needs Your Input**:
+
+1. **Domain 39 (in progress now, 13:00-14:00 UTC)**:
+   - If not yet sent: Send 5 Tier 1 emails per domain-39-june1-execution-checklist.md
+   - Response monitoring begins June 2-5 (09:00 UTC daily checks)
+
+2. **Seedwarden Track B (ready to start anytime)**:
+   - Complete 5 user action gates (Gate 4 → 1 → 3 → 2 → 5, total 3.5-4.5 hours)
+   - Launch executes autonomously post-gates
+
+3. **Stockbot (June 2)**:
+   - Non-blocking: Orphaned AAPL position (close or leave?) and AMZN HMM verification (2-3h fix if needed)
+
+4. **Cybersecurity-hardening & mfg-farm**:
+   - Restart Windows machine (Phase 1 step 1.3)
+   - Execute single test print (ModRun cable clip, specs in BLOCKED.md)
+
+**Critical Timeline**:
+- ⏳ **13:00-14:00 UTC (NOW)**: Domain 39 user email send (5 messages)
+- 📅 **June 2 13:30 UTC**: Stockbot market open (JPM + AMZN live trading)
+- 📅 **June 2-3**: Domain 59 distribution Wave 1 ready to execute
+- 📅 **June 5 13:00 UTC**: systems-resilience Phase 5 publication gate (locked)
+
+---
+
 ## Since Last Check-in (Session 2499, 2026-06-01 12:54–13:15 UTC — Final Pre-Market Verification + Domain 51 Update + Seedwarden Track B Approved)
 
 **Session Status**: ✅ **COMPLETE — Stockbot pre-market verification PASS (99% confidence), Domain 51 production-ready with June 2026 updates, seedwarden Track B approved for immediate execution**
