@@ -3,9 +3,9 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
-## Since Last Check-in (Session 2501, 2026-06-01 13:15–14:00 UTC — Domain 39 Monitoring Window Preparation + Execution)
+## Since Last Check-in (Session 2501, 2026-06-01 13:15–14:30 UTC — Domain 39 Monitoring Window Preparation + Scheduled Activation)
 
-**Session Status**: ⏳ **MONITORING WINDOW — Domain 39 user sends in progress (13:00-13:48 UTC window), orchestrator monitoring scheduled 14:00-14:30 UTC; no autonomous work available; all projects on schedule**
+**Session Status**: ✅ **MONITORING PREPARED — Domain 39 user sends in progress (13:00-13:48 UTC window), orchestrator monitoring activation scheduled 14:00-14:30 UTC via CronCreate; no autonomous work available; all projects on schedule**
 
 **Session Activities**:
 
@@ -15,14 +15,26 @@
    - ✅ Confirmed monitoring window readiness: WORKLOG.md updated with Session 2501 entry
    - ✅ No autonomous work available (all projects time-gated or user-decision blocked)
 
-2. **Domain 39 Monitoring Window (14:00-14:30 UTC, Scheduled)**:
-   - **Pre-send verification**: Confirm Gist URL accessible, all 5 email templates ready
-   - **Verify sends**: User confirmation of 5 Tier-1 emails sent (Georgetown CCF, NHeLP, Brennan Center, IRG, Black Mamas Matter Alliance)
-   - **Gist baseline**: Record initial view count, fork count, timestamp at 14:00 UTC
-   - **CronCreate follow-ups**: T+1 (June 2, 14:00 UTC), T+3 (June 4, 14:00 UTC), T+7 (June 8, 14:00 UTC)
+2. **Domain 39 Infrastructure Pre-Flight Verification (13:23 UTC)**:
+   - ✅ Gist HTTP 200: https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b accessible
+   - ✅ Response tracking log: domain-39-response-tracking-log.json exists
+   - ✅ Routing framework: domain-39-post-activation-routing.md exists
+   - ✅ Email templates: execution/domain-39-tier-1-drafts.md exists
+   - ✅ Monitoring checkpoints: DOMAIN_39_MONITORING_CHECKPOINTS.md exists
+   - **Status**: All infrastructure production-ready for 14:00 UTC activation
+
+3. **Domain 39 Monitoring Activation Scheduled (13:24 UTC)**:
+   - ✅ CronCreate job ID: dd423645 (one-shot, 14:00 UTC June 1)
+   - **Scheduled tasks** (14:00-14:30 UTC):
+     - Verify user sent all 5 Tier-1 emails (13:00-13:48 UTC window)
+     - Check Gist accessibility and record baseline metrics
+     - Update response tracking JSON with send timestamps
+     - Verify 5 CronCreate checkpoint jobs scheduled
+     - Run infrastructure sanity checks
+     - Log activation to WORKLOG.md and commit
 
 **Next Actions**:
-- ⏳ 14:00-14:30 UTC: Execute Domain 39 activation monitoring (verify sends, record baseline, create follow-up jobs)
+- ⏳ 14:00-14:30 UTC: [AUTOMATED] Domain 39 activation monitoring (CronCreate job dd423645)
 - 📅 June 2 13:15 UTC: Stockbot pre-flight health checks
 - 📅 June 2 13:30 UTC: Stockbot market open (JPM ridge_wf + AMZN lgbm_ho live trading)
 - 📅 June 2-3: Domain 59 Wave 1 distribution (CBPP + ITEP, if user ready)
