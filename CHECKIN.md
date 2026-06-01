@@ -5,6 +5,31 @@
 
 ---
 
+## Since Last Check-in (Session 2479, 2026-06-01 08:09–xx:xx UTC — Domain 39 Monitoring Activation Staging)
+
+**Session Status**: 🔄 **IN PROGRESS — AWAITING 14:00 UTC DOMAIN 39 MONITORING ACTIVATION**
+
+**What's Happening**:
+- **stockbot**: DEPLOY_READY file created Session 2478 (07:50 UTC). Market open ready June 2 13:30 UTC. No further orchestrator work until June 2.
+- **resistance-research**: Domain 39 user email send window TODAY 13:00–14:00 UTC. Orchestrator monitoring activation scheduled 14:00–14:30 UTC (per domain-39-june1-execution-checklist.md).
+- **systems-resilience**: Phase 6 author recruitment window TODAY 13:00 UTC through June 3 EOD. All infrastructure ready; awaiting user email execution.
+- **All other projects**: Status unchanged. Two active blocks remain (both user action only).
+
+**Orchestrator Work**:
+- ✅ Oriented, checked BLOCKED.md + INBOX.md (no new blocks, no new items)
+- ✅ Updated WORKLOG.md with Session 2479 start
+- 🔄 Scheduled wakeup for monitoring activation at 14:00 UTC (system re-invokes at next timer)
+- ⏳ Pending: Domain 39 monitoring activation 14:00–14:30 UTC
+
+**Critical Timeline (Next 5.5 Hours)**:
+- **13:00–14:00 UTC**: Domain 39 emails sent (user action). HHS interim final rule live today.
+- **14:00–14:30 UTC**: Orchestrator monitoring activation (scheduled, will execute on timer)
+- **13:00 UTC onwards**: systems-resilience Phase 6 Domain A recruitment (user action, 18 emails)
+
+**Token Budget**: 45K used this session so far. 155K remaining. No blockers on budget.
+
+---
+
 ## Since Last Check-in (Session 2478, 2026-06-01 07:50–08:30 UTC — Deploy + Citation Verification + Phase 2 Briefing)
 
 **Session Status**: ✅ **STOCKBOT DEPLOY_READY CREATED + PHASE 6 DOMAIN F VERIFIED + PHASE 2 BRIEFING COMPLETE — ALL PRE-ACTIVATION INFRASTRUCTURE READY**
