@@ -5,6 +5,46 @@
 
 ---
 
+## Since Last Check-in (Session 2466, 2026-06-01 02:38–03:20 UTC — Exploration Queue Phase 2 Pre-Staging)
+
+**What was accomplished**:
+
+- ✅ **EXPLORATION QUEUE ITEMS 52–54 — ALL COMPLETE (3 parallel agents, ~25 min, 1.16M tokens)**
+
+- ✅ **ITEM 52 — mfg-farm Phase 2 Supplier Outreach Pre-Staging** (Ready for June 3+ Phase 2 launch):
+  - **PHASE_2_SUPPLIER_RFQ_TEMPLATES.md** — 6 supplier channels with copy-paste RFQ emails (MatterHackers preferred 2-yr warranty, Bambu B2B, Polymaker, eSUN, Anycubic, Prusa contingency)
+  - **PHASE_2_PRICING_NEGOTIATION_PLAYBOOK.md** — **Key finding**: Filament sourcing is largest cost lever (saves $280–540/month via eSUN/Anycubic/Polymaker blending); printer B2B discounts 5–15% are one-time; net-30 Polymaker generates $1K/month float; equipment leasing uneconomical
+  - **PHASE_2_CAPITAL_ALLOCATION_TIMELINE.md** — Minimum viable: $2,127 (trademark $350 standard + filament + 3 P1S units); full Phase 2 $3,231–3,531; USPTO standard track June 1 sufficient (August–October 2027 registration is non-blocker); all 3 funding scenarios (bootstrap, credit card, sequential) achieve July 15 operational readiness
+
+- ✅ **ITEM 53 — seedwarden Phase 4 Botanical ID + Practitioner Tiers** (Ready for July 14–Aug 1 launch):
+  - **PHASE_4_BOTANICAL_IDENTIFICATION_GUIDE_ROADMAP.md** — 18 guides scoped (9 Wave 1 Aug 1, 9 Wave 2 Aug 31); 250–400 words each with lookalike risk rating, ZIM/Kiwix offline archive as free channel; 4 bundle SKUs ($5–65); 40.5 research hours total
+  - **PHASE_4_PRACTITIONER_TIER_PROGRESSION.md** — 3-tier pathway: Tier 1 (Herbalist, auto-qualify 3+ bundles), Tier 2 (RH $18/mo via AHG/NAHA/ND lookups, 2–5 day verify, full bundle + interactions + monographs), Tier 3 (Clinical $55/mo, MD/ND board + PhD email, research + dosing + publishing rights Oct 1 launch); **AHG Annual Symposium Aug 14–16 identified as primary Tier 2 acquisition (Aug discount $125/yr); Month-12 ARR projection $2,725–4,000**
+  - **PHASE_4_INTERNATIONAL_TRADITIONS_SOURCING.md** — 35+ sources: European (Commission E freely accessible EU documents), Ayurvedic (Type A/B/C classification + mandatory disclaimers for unmatched), TCM (Pinyin cross-reference, Nature/Flavor/Channels); Tier 3 library Oct 1; 6 Phase 3 herbs have no classical Ayurvedic equivalent (explicitly labeled)
+
+- ✅ **ITEM 54 — systems-resilience Phase 6 Alternate Domains B, E, F** (Ready for any June 1 user selection):
+  - **PHASE_6_DOMAINS_B_E_F_RESEARCH_OUTLINES.md** — Domain B (Institutional Governance, 45 sources, governance fundamentals + case studies + deliberative tools + federation), E (Ecosystem Restoration, 48 sources, soil/water/native plantings/regenerative), F (Knowledge Transmission, 44 sources, apprenticeship + archiving + curriculum + elder systems); author profiles + integration per domain; 68–78% source readiness
+  - **PHASE_6_ALTERNATE_COMBINATION_SCORING.md** — All 8 possible 3-domain combos scored on 6 dimensions: **A+C+D (staged) 4.5/5 recommended**, A+D+E (alt) 4.3/5 highest confidence 91%, others 3.2–4.0; includes resource contention + risk profiles per combo
+  - **PHASE_6_DOMAIN_SELECTION_CONTINGENCY_ROADMAP.md** — 8 independent activation runbooks (June 1–Aug 31) for any user selection; includes author outreach, source sprints, parallel timelines, cross-domain integration design per combo
+
+**Pre-market Status**:
+- ✅ **Stockbot June 2 market open**: All Phase 3-4.1 infrastructure deployed on Jetson; 2-session config (JPM ridge_wf 6/6 PASS, AMZN lgbm_ho 5/6 gated) sleeping until 13:15 UTC pre-open. No further code changes.
+
+**What's in progress**:
+- User action today: Domain 39 distribution 13:00–14:00 UTC (5 emails, 80-min window)
+- Exploration queue: Items 52–54 now production-ready for June 1+ activation without further research delay
+
+**Critical dates locked**:
+- **Today (June 1) 13:00–14:00 UTC**: Domain 39 distribution window
+- **Tomorrow (June 2) 13:30 UTC**: Stockbot market open (JPM trading, AMZN gated)
+- **June 3+**: Phase 2 supplier outreach (independent of test-print outcome)
+
+**What needs your input**:
+- **TODAY (13:00–14:00 UTC)**: Execute Domain 39 distribution or confirm automation proceeds
+- **TODAY (before market open)**: Confirm AAPL suspension (position_size_pct=0) remains OR approve deployment fix
+- **By June 3**: mfg-farm Phase 2 funding decision (bootstrap/credit-card/sequential)
+
+---
+
 ## Since Last Check-in (Session 2465, 2026-06-01 ~03:30–05:15 UTC — Stockbot Phase 3-4.1 Infrastructure Completion)
 
 **What was accomplished**:
