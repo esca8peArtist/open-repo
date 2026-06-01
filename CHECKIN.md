@@ -5,6 +5,49 @@
 
 ---
 
+## Since Last Check-in (Session 2464, 2026-06-01 03:00–03:30 UTC — AAPL Model Suspension + Phase 5/6 Infrastructure Deployment)
+
+**What was accomplished**:
+- ✅ **STOCKBOT: AAPL MODELS SUSPENDED (critical safety action, June 2 13:00 UTC deadline)**
+  - **Action**: Set `position_size_pct=0` for both AAPL sessions in `active-sessions-4session.json`
+    - AAPL_h10_lgbm_ho (session 33a4afe676cae12a): 0.649 Sharpe → DISABLED
+    - AAPL_h10_ridge_wf (session a1b2c3d4e5f60001): 0.096 Sharpe → DISABLED
+  - **Effect**: BUY signals blocked for AAPL; h+10 time-stop remains active for position exit
+  - **Remaining active**: JPM ridge_wf (6/6 gates PASS, 92% confidence ✅), AMZN lgbm_ho (5/6 gates, 78% conditional ✅)
+  - **Config verified**: Valid JSON syntax, tested and confirmed
+  - **Deadline met**: ~35 hours before June 2 13:00 UTC market open
+  - **Commit**: `0f2ea5fd` on master (`chore(orchestrator): session 2464 — AAPL models suspended`)
+
+- ✅ **SYSTEMS-RESILIENCE: PHASE 5 + PHASE 6 INFRASTRUCTURE DEPLOYMENT COMPLETE**
+  - **Phase 5 Pre-Publication Prep** (June 1-4 timeline):
+    - ✅ Integrated corpus: `PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md` (45,380 words, 114 KB)
+    - ✅ GitHub Release template: v5.0-wave-1-2-production prepared
+    - ✅ Distribution framework: 3-tier stakeholder model with templates
+    - ✅ Publication locked: June 5 13:00 UTC (Wave 1+2), June 30 13:00 UTC (Wave 3)
+    - ✅ Confidence: 95% for June 5 publication
+  - **Phase 6 Author Recruitment Infrastructure** (June 1-3 timeline):
+    - ✅ Author recruitment templates: 3 variants (academic, cooperative practitioners, mutual aid organizers)
+    - ✅ Recruitment tracking system: Spreadsheet structure with timeline and decision points
+    - ✅ Onboarding kit: 6 documents staged for rapid author onboarding
+    - ✅ Decision point: June 3 EOD UTC (author confirmation deadline)
+    - ✅ Self-execute fallback: 85% confidence, fully documented for autonomous Domain A development if no author recruited
+  - **Files created**: 5 markdown files (170 KB total production-ready documentation)
+  - **Commit**: `f06812b3` on master (`chore(orchestrator): session 2464 — systems-resilience Phase 5 + Phase 6 infrastructure`)
+
+**What's in progress**:
+- Systems-resilience Phase 5: Awaiting June 5 13:00 UTC publication gate execution
+- Systems-resilience Phase 6: Author recruitment in progress (June 1-2 emails ready to send); decision point June 3 EOD UTC
+- Stockbot: AAPL models suspended ✅; JPM/AMZN ready for June 2 13:30 UTC market open
+
+**What needs your input**:
+- **IMMINENT (TODAY, 13:00–14:00 UTC)**: Execute Domain 39 Tier 1 email distribution (5 pre-written emails, all infrastructure ready)
+- **Optional**: Systems-resilience Phase 6 author recruitment — recruitment templates ready; may send emails June 1-2 or wait for user guidance
+- **Post-June 2**: AMZN G5 fix (hmm_observe_mode: false) ready for implementation if approval given
+
+**Usage**: Sonnet ~12.8%, all-models ~12.2% (increased from prior session due to parallel agent work for systems-resilience). Reset in ~21 hours.
+
+---
+
 ## Since Last Check-in (Session 2463, 2026-06-01 01:26–02:55 UTC — Parallel Autonomous Execution: Stockbot Pre-Flight + Systems-Resilience Auto-Fallback)
 
 **What was accomplished**:
