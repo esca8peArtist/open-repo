@@ -1,42 +1,118 @@
-{
-  "2dec7fd03b08ab5b41c55d402f44c261": {
-    "date_added": "2026-05-30T22:25:00.578220",
-    "first_views": 0,
-    "history": [
-      {
-        "timestamp": "2026-05-30T22:24:59.953763",
-        "views": 0
+[
+  {
+    "week": 1,
+    "date": "2026-06-01T15:08:21.444203+00:00",
+    "gist_data": {
+      "domain_56_civil_service": {
+        "gist_id": "8f11e868397921a4e6556b41196d1b1f",
+        "error": "401 Client Error: Unauthorized for url: https://api.github.com/gists/8f11e868397921a4e6556b41196d1b1f"
+      },
+      "domain_39_healthcare": {
+        "gist_id": "131e8a94c955b973b87f7fb87d0f594b",
+        "error": "401 Client Error: Unauthorized for url: https://api.github.com/gists/131e8a94c955b973b87f7fb87d0f594b"
+      },
+      "domain_59_economic_precarity": {
+        "gist_id": "70b18a6f26dc879e3399c6d147d882ba",
+        "error": "401 Client Error: Unauthorized for url: https://api.github.com/gists/70b18a6f26dc879e3399c6d147d882ba"
+      },
+      "domain_37_fed_interference": {
+        "gist_id": "1277f5d5bcb0fe46604bbaba8fa37fd0",
+        "error": "401 Client Error: Unauthorized for url: https://api.github.com/gists/1277f5d5bcb0fe46604bbaba8fa37fd0"
+      },
+      "domain_58_tribal_sovereignty": {
+        "gist_id": "0caf4e1ab5661355ea2df5e53d3c169f",
+        "error": "401 Client Error: Unauthorized for url: https://api.github.com/gists/0caf4e1ab5661355ea2df5e53d3c169f"
+      },
+      "full_proposal": {
+        "gist_id": "2dec7fd03b08ab5b41c55d402f44c261",
+        "error": "401 Client Error: Unauthorized for url: https://api.github.com/gists/2dec7fd03b08ab5b41c55d402f44c261"
+      },
+      "executive_summary": {
+        "gist_id": "2869da6eaeb15a47246ade3bbbc4a3f4",
+        "error": "401 Client Error: Unauthorized for url: https://api.github.com/gists/2869da6eaeb15a47246ade3bbbc4a3f4"
+      },
+      "litigation_tracker": {
+        "gist_id": "418d51bda087f15a04d685ab171a5ee0",
+        "error": "401 Client Error: Unauthorized for url: https://api.github.com/gists/418d51bda087f15a04d685ab171a5ee0"
       }
-    ]
+    }
   },
-  "2869da6eaeb15a47246ade3bbbc4a3f4": {
-    "date_added": "2026-05-30T22:25:00.578232",
-    "first_views": 0,
-    "history": [
-      {
-        "timestamp": "2026-05-30T22:25:00.163380",
-        "views": 0
+  {
+    "week": 1,
+    "date": "2026-06-01T15:08:50.544580+00:00",
+    "gist_data": {
+      "domain_56_civil_service": {
+        "gist_id": "8f11e868397921a4e6556b41196d1b1f",
+        "url": "https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f",
+        "comments": 0,
+        "forks": 0,
+        "created_at": "2026-05-22",
+        "updated_at": "2026-05-22",
+        "fetched_at": "2026-06-01T15:08:51.037964+00:00"
+      },
+      "domain_39_healthcare": {
+        "gist_id": "131e8a94c955b973b87f7fb87d0f594b",
+        "url": "https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b",
+        "comments": 0,
+        "forks": 0,
+        "created_at": "2026-05-26",
+        "updated_at": "2026-05-26",
+        "fetched_at": "2026-06-01T15:08:51.510285+00:00"
+      },
+      "domain_59_economic_precarity": {
+        "gist_id": "70b18a6f26dc879e3399c6d147d882ba",
+        "url": "https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba",
+        "comments": 0,
+        "forks": 0,
+        "created_at": "2026-06-01",
+        "updated_at": "2026-06-01",
+        "fetched_at": "2026-06-01T15:08:51.905719+00:00"
+      },
+      "domain_37_fed_interference": {
+        "gist_id": "1277f5d5bcb0fe46604bbaba8fa37fd0",
+        "url": "https://gist.github.com/esca8peArtist/1277f5d5bcb0fe46604bbaba8fa37fd0",
+        "comments": 0,
+        "forks": 0,
+        "created_at": "2026-05-14",
+        "updated_at": "2026-05-14",
+        "fetched_at": "2026-06-01T15:08:52.362852+00:00"
+      },
+      "domain_58_tribal_sovereignty": {
+        "gist_id": "0caf4e1ab5661355ea2df5e53d3c169f",
+        "url": "https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f",
+        "comments": 0,
+        "forks": 0,
+        "created_at": "2026-05-20",
+        "updated_at": "2026-05-20",
+        "fetched_at": "2026-06-01T15:08:52.856005+00:00"
+      },
+      "full_proposal": {
+        "gist_id": "2dec7fd03b08ab5b41c55d402f44c261",
+        "url": "https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261",
+        "comments": 0,
+        "forks": 0,
+        "created_at": "2026-04-30",
+        "updated_at": "2026-04-30",
+        "fetched_at": "2026-06-01T15:08:53.540861+00:00"
+      },
+      "executive_summary": {
+        "gist_id": "2869da6eaeb15a47246ade3bbbc4a3f4",
+        "url": "https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4",
+        "comments": 0,
+        "forks": 0,
+        "created_at": "2026-04-30",
+        "updated_at": "2026-04-30",
+        "fetched_at": "2026-06-01T15:08:53.921404+00:00"
+      },
+      "litigation_tracker": {
+        "gist_id": "418d51bda087f15a04d685ab171a5ee0",
+        "url": "https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0",
+        "comments": 0,
+        "forks": 0,
+        "created_at": "2026-04-30",
+        "updated_at": "2026-04-30",
+        "fetched_at": "2026-06-01T15:08:54.494184+00:00"
       }
-    ]
-  },
-  "418d51bda087f15a04d685ab171a5ee0": {
-    "date_added": "2026-05-30T22:25:00.578236",
-    "first_views": 0,
-    "history": [
-      {
-        "timestamp": "2026-05-30T22:25:00.368228",
-        "views": 0
-      }
-    ]
-  },
-  "10d0a86e386e6c3c11c3830295a6503c": {
-    "date_added": "2026-05-30T22:25:00.578240",
-    "first_views": 0,
-    "history": [
-      {
-        "timestamp": "2026-05-30T22:25:00.578062",
-        "views": 0
-      }
-    ]
+    }
   }
-}
+]

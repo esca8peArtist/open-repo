@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
 """
-Phase 1 Adoption Tracking Automation Script
+Phase 1 Adoption Tracking Automation Script — v2.0 (superseded)
 
-Automates weekly monitoring of:
-1. GitHub Gist view counts (via Gist analytics)
-2. Email replies to outreach account (via Gmail API)
-3. Google Sheets synchronization (Master Contact Log updates)
-4. Leading-indicator alert detection
+IMPORTANT: This file is superseded by the canonical v2.0 deployment at:
+  projects/resistance-research/phase-1-adoption/phase-1-adoption-tracking-script.py
 
-Usage:
-  python3 phase-1-adoption-tracking-script.py [--run-now | --schedule-weekly]
-
-Environment:
-  GITHUB_TOKEN: GitHub personal access token (for Gist analytics)
-  GMAIL_CREDENTIALS_JSON: Path to Gmail OAuth credentials
-  GOOGLE_SHEETS_CREDENTIALS_JSON: Path to Google Sheets OAuth credentials
-  TRACKING_SPREADSHEET_ID: Google Sheets ID for adoption tracking workbook
-
-Deployment:
-  crontab -e
-  # Run every Monday at 08:00 AM (offset from measurement checkpoint)
-  0 8 * * 1 /usr/bin/python3 /path/to/phase-1-adoption-tracking-script.py --run-now
+This stub re-exports the canonical version for backward compatibility.
+Run the canonical version directly for all operations.
 """
+
+import subprocess
+import sys
+from pathlib import Path
+
+CANONICAL = Path(__file__).parent / "phase-1-adoption" / "phase-1-adoption-tracking-script.py"
+
+if __name__ == "__main__":
+    if CANONICAL.exists():
+        result = subprocess.run([sys.executable, str(CANONICAL)] + sys.argv[1:])
+        sys.exit(result.returncode)
+    else:
+        print(f"Canonical script not found: {CANONICAL}")
+        print("Run from: projects/resistance-research/phase-1-adoption/")
+        sys.exit(1)
 
 import os
 import sys

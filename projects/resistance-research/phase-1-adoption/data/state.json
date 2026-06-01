@@ -1,0 +1,23 @@
+{
+  "first_run": "2026-06-01T15:08:21.444203+00:00",
+  "last_run": "2026-06-01T15:08:50.544580+00:00",
+  "week_number": 1,
+  "cumulative_clicks": 0,
+  "gist_baseline": {},
+  "run_history": [
+    {
+      "week": 1,
+      "date": "2026-06-01T15:08:21.444203+00:00",
+      "clicks": 0,
+      "replies": 0,
+      "alerts": 0
+    },
+    {
+      "week": 1,
+      "date": "2026-06-01T15:08:50.544580+00:00",
+      "clicks": 0,
+      "replies": 0,
+      "alerts": 0
+    }
+  ]
+}

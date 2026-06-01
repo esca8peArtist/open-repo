@@ -1,23 +1,30 @@
 {
+  "_comment": "Phase 1 Adoption Tracking Config — v2.0. See phase-1-adoption/README.md for setup.",
   "github_token": "YOUR_GITHUB_PERSONAL_ACCESS_TOKEN",
-  "github_username": "YOUR_GITHUB_USERNAME",
-  "gmail_credentials": "/path/to/gmail-oauth-credentials.json",
-  "sheets_credentials": "/path/to/google-sheets-service-account.json",
-  "spreadsheet_id": "YOUR_GOOGLE_SHEETS_DOCUMENT_ID",
-  "canonical_gists": {
-    "full_proposal": "2dec7fd03b08ab5b41c55d402f44c261",
-    "executive_summary": "2869da6eaeb15a47246ade3bbbc4a3f4",
-    "litigation_tracker": "418d51bda087f15a04d685ab171a5ee0",
-    "first_amendment": "10d0a86e386e6c3c11c3830295a6503c",
-    "environmental_rollbacks": "87e2bdb931b77480e56a08044c567bc4",
-    "police_consent_decrees": "1f5cb28527c98d12526c14302c725731"
+  "github_username": "esca8peArtist",
+  "gmail_enabled": false,
+  "gmail_credentials": "./credentials.json",
+  "gmail_label": "phase-1-responses",
+  "email_lookback_hours": 168,
+  "bitly_enabled": false,
+  "bitly_token": "YOUR_BITLY_GENERIC_ACCESS_TOKEN",
+  "bitly_links": {
+    "domain_56_civil_service": "bit.ly/drp-d56",
+    "domain_39_healthcare": "bit.ly/drp-d39",
+    "domain_59_economic_precarity": "bit.ly/drp-d59",
+    "full_proposal": "bit.ly/drp-2026"
   },
-  "monitoring": {
-    "email_lookback_hours": 168,
-    "citation_log_enabled": true,
-    "google_alerts_enabled": false,
-    "scholar_alerts_enabled": false,
-    "courtlistener_enabled": false,
-    "legiscan_enabled": false
-  }
+  "canonical_gists": {
+    "domain_56_civil_service":      "8f11e868397921a4e6556b41196d1b1f",
+    "domain_39_healthcare":         "131e8a94c955b973b87f7fb87d0f594b",
+    "domain_59_economic_precarity": "70b18a6f26dc879e3399c6d147d882ba",
+    "domain_37_fed_interference":   "1277f5d5bcb0fe46604bbaba8fa37fd0",
+    "domain_58_tribal_sovereignty": "0caf4e1ab5661355ea2df5e53d3c169f",
+    "full_proposal":                "2dec7fd03b08ab5b41c55d402f44c261",
+    "executive_summary":            "2869da6eaeb15a47246ade3bbbc4a3f4",
+    "litigation_tracker":           "418d51bda087f15a04d685ab171a5ee0"
+  },
+  "phase1_start_date": "2026-05-28",
+  "data_dir": "./data",
+  "log_dir": "./logs"
 }
