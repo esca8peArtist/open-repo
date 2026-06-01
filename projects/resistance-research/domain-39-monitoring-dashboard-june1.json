@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "domain": "Domain 39: Healthcare Access as Democratic Infrastructure",
+    "created": "2026-06-01",
+    "purpose": "Monitoring dashboard tracking Domain 39 distribution response data June 1 – July 16, 2026",
+    "activation_time_utc": "2026-06-01T14:05:00Z",
+    "feeds_into": [
+      "PHASE_2_ACTIVATION_DECISION_TREE.md",
+      "WAVE_2_EXECUTION_TIMELINE_WITH_TRIGGERS.md",
+      "RESPONSE_MONITORING_DASHBOARD_TEMPLATE.md"
+    ],
+    "instructions": "Populate send_log section at 14:05 UTC June 1 with actual send times and any immediate bounces. Update checkpoint sections as each date is reached. engagement_score is calculated as (positive_responses / total_sent) * 100."
+  },
+  "send_log": {
+    "date": "2026-06-01",
+    "total_contacts": 5,
+    "total_sent": 0,
+    "send_completed_utc": null,
+    "immediate_bounces": 0,
+    "confirmed_deliveries": 0,
+    "status": "pending — populate at 14:05 UTC after confirmed send",
+    "contacts": [
+      {
+        "contact_id": 1,
+        "org": "Georgetown Center for Children and Families",
+        "email": "ccf@georgetown.edu",
+        "send_time_utc": null,
+        "delivery_status": "pending",
+        "bounce": false
+      },
+      {
+        "contact_id": 2,
+        "org": "National Health Law Program",
+        "email": "nhelpinfo@healthlaw.org",
+        "send_time_utc": null,
+        "delivery_status": "pending",
+        "bounce": false
+      },
+      {
+        "contact_id": 3,
+        "org": "Black Mamas Matter Alliance",
+        "email": "info@blackmamasmatter.org",
+        "send_time_utc": null,
+        "delivery_status": "pending",
+        "bounce": false
+      },
+      {
+        "contact_id": 4,
+        "org": "Brennan Center for Justice",
+        "email": "brennancenter@nyu.edu",
+        "send_time_utc": null,
+        "delivery_status": "pending",
+        "bounce": false
+      },
+      {
+        "contact_id": 5,
+        "org": "Institute for Responsive Government",
+        "email": "responsivegov.org/contact",
+        "send_time_utc": null,
+        "delivery_status": "pending",
+        "bounce": false
+      }
+    ]
+  },
+  "checkpoints": [
+    {
+      "checkpoint": "T+3",
+      "date": "2026-06-04",
+      "label": "Early signal check",
+      "status": "pending",
+      "responses_received": 0,
+      "positive_responses": 0,
+      "neutral_responses": 0,
+      "negative_responses": 0,
+      "bounces": 0,
+      "engagement_score": null,
+      "threshold_strong": "2+ positive responses",
+      "threshold_weak": "0 responses",
+      "actions_taken": [],
+      "decision_output": null,
+      "notes": null
+    },
+    {
+      "checkpoint": "T+7",
+      "date": "2026-06-08",
+      "label": "Follow-up trigger assessment",
+      "status": "pending",
+      "responses_received": 0,
+      "positive_responses": 0,
+      "neutral_responses": 0,
+      "negative_responses": 0,
+      "bounces": 0,
+      "engagement_score": null,
+      "threshold_strong": "3+ positive responses",
+      "threshold_weak": "1 or fewer responses — initiate follow-up per protocol",
+      "follow_up_sent": false,
+      "actions_taken": [],
+      "decision_output": null,
+      "notes": null
+    },
+    {
+      "checkpoint": "T+14",
+      "date": "2026-06-15",
+      "label": "PRIMARY PHASE 2 GATE — Domain 38 Tier A send decision",
+      "status": "pending",
+      "responses_received": 0,
+      "positive_responses": 0,
+      "neutral_responses": 0,
+      "negative_responses": 0,
+      "engagement_score": null,
+      "phase_2_path": null,
+      "path_options": {
+        "Path_A_Strong": "3+ positive → proceed Domain 38 Tier A June 15, accelerate Domain 40",
+        "Path_B_Moderate": "1-2 positive → proceed Domain 38 Tier A June 15, standard Domain 40 timeline",
+        "Path_C_Weak": "0 responses → delay Domain 38 to June 22, review Domain 40, per contingency playbook",
+        "Path_D_Failure": "2+ bounces + 0 response → halt Wave 2, full contingency activation"
+      },
+      "actions_taken": [],
+      "decision_output": null,
+      "notes": null
+    },
+    {
+      "checkpoint": "T+30",
+      "date": "2026-07-01",
+      "label": "Secondary engagement and Domain 40 timing decision",
+      "status": "pending",
+      "responses_received": 0,
+      "positive_responses": 0,
+      "neutral_responses": 0,
+      "negative_responses": 0,
+      "engagement_score": null,
+      "domain_40_timing_decision": null,
+      "actions_taken": [],
+      "decision_output": null,
+      "notes": null
+    },
+    {
+      "checkpoint": "T+45",
+      "date": "2026-07-16",
+      "label": "Final Domain 39 outcome assessment — Phase 2 full evaluation",
+      "status": "pending",
+      "responses_received": 0,
+      "positive_responses": 0,
+      "neutral_responses": 0,
+      "negative_responses": 0,
+      "engagement_score": null,
+      "citations_found": 0,
+      "downstream_amplification": [],
+      "phase_2_full_outcome": null,
+      "actions_taken": [],
+      "decision_output": null,
+      "notes": null
+    }
+  ],
+  "current_status": {
+    "as_of_utc": "2026-06-01T13:00:00Z",
+    "overall_status": "pre-activation — ready for 14:00 UTC send confirmation",
+    "active_checkpoint": null,
+    "next_checkpoint": "T+3 (June 4, 2026)",
+    "phase_2_path_locked": false,
+    "wave_2_status": "pending Domain 39 send confirmation"
+  }
+}

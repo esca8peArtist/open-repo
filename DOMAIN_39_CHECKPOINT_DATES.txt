@@ -1,0 +1,81 @@
+DOMAIN 39 MONITORING CHECKPOINT SCHEDULE
+Healthcare Access as Democratic Infrastructure
+Send Date: June 1, 2026 (13:00–14:00 UTC)
+=========================================
+
+CHECKPOINT 1 — T+3
+Date: Wednesday, June 4, 2026
+Check by: 18:00 UTC
+Action required:
+  - Review inbox for responses from all 5 contacts
+  - Log any responses in domain-39-send-log-template.json
+  - If 2+ positive responses: note "strong early signal" in dashboard
+  - If 0 responses: no action yet (within normal response window)
+  - Update domain-39-monitoring-dashboard-june1.json checkpoint T+3 section
+Threshold: 2+ positive = strong signal | 0 = within normal range
+
+--
+
+CHECKPOINT 2 — T+7
+Date: Sunday, June 8, 2026
+Check by: 18:00 UTC
+Action required:
+  - Count all responses received since send
+  - If 1 or fewer responses: send follow-up per DOMAIN_39_RESPONSE_MONITORING_PLAN.md follow-up protocol
+  - If 3+ positive responses: note "strong outcome track" — Phase 2 Path A likely
+  - Update dashboard checkpoint T+7 section
+  - Set follow_up_sent = true if follow-up triggered
+Threshold: 3+ positive = Path A tracking | ≤1 = trigger follow-up sequence
+
+--
+
+CHECKPOINT 3 — T+14 (PRIMARY GATE)
+Date: Sunday, June 15, 2026
+Check by: 09:00 UTC (before Domain 38 Tier A send window opens)
+Action required:
+  - Count all positive / neutral / negative / no-response
+  - Execute PHASE_2_ACTIVATION_DECISION_TREE.md routing:
+      Path A (Strong):   3+ positive → proceed Domain 38 Tier A June 15
+      Path B (Moderate): 1-2 positive → proceed Domain 38 Tier A June 15, standard timeline
+      Path C (Weak):     0 responses → delay Domain 38 to June 22, review Domain 40
+      Path D (Failure):  2+ bounces + 0 responses → halt Wave 2, full contingency
+  - Lock phase_2_path in dashboard
+  - Notify orchestrator of path decision before 12:00 UTC
+THIS IS THE PRIMARY DECISION GATE. Domain 38 Tier A timing depends on this checkpoint.
+
+--
+
+CHECKPOINT 4 — T+30
+Date: Tuesday, July 1, 2026
+Check by: 18:00 UTC
+Action required:
+  - Assess cumulative engagement across all 5 contacts
+  - Make Domain 40 timing decision (default July 15 Tier A send)
+  - Check for any secondary amplification (citations, shares, coalition mentions)
+  - Update dashboard checkpoint T+30 section
+  - Confirm or adjust Domain 40 send date in WAVE_2_EXECUTION_TIMELINE_WITH_TRIGGERS.md
+Threshold: Guides Domain 40 sequencing and any mid-course corrections
+
+--
+
+CHECKPOINT 5 — T+45 (FINAL ASSESSMENT)
+Date: Thursday, July 16, 2026
+Check by: 18:00 UTC
+Action required:
+  - Full Domain 39 outcome assessment
+  - Document all citations, downstream amplification, partnership inquiries
+  - Calculate final engagement score: (positive_responses / 5) * 100
+  - Write Phase 2 outcome summary feeding into Wave 2 final evaluation
+  - Archive send log and dashboard to DISTRIBUTION_EXECUTION_LOG.md
+  - Begin Domain 39 impact measurement per post-distribution framework
+Threshold: Final record — no further action gates on this checkpoint
+
+=========================================
+CROSS-REFERENCE FILES:
+  - domain-39-send-log-template.json        (populate at 14:05 UTC June 1)
+  - domain-39-monitoring-dashboard-june1.json (update at each checkpoint)
+  - DOMAIN_39_RESPONSE_MONITORING_PLAN.md   (canonical response protocol)
+  - PHASE_2_ACTIVATION_DECISION_TREE.md     (T+14 routing logic)
+  - WAVE_2_EXECUTION_TIMELINE_WITH_TRIGGERS.md (downstream timeline)
+  - DOMAIN_39_ORCHESTRATOR_ACTIVATION_CHECKLIST.md (14-point activation)
+=========================================
