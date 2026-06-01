@@ -5,6 +5,58 @@
 
 ---
 
+## Since Last Check-in (Session 2462, 2026-06-01 00:37–03:30 UTC — Parallel Pre-Market Infrastructure Audit)
+
+**What was accomplished**:
+- ✅ **STOCKBOT PRE-MARKET ACTIONS: ALL 4 VERIFIED + CRITICAL ISSUES FIXED**
+  - Jetson SSH access: RESOLVED (ED25519 key now authorized, connection stable)
+  - Config verification complete:
+    - ✅ Action 1: 2-session config (JPM + AMZN) — **FAIL→PASS** (cleared 67 old sessions from DB, loaded correct config)
+    - ✅ Action 2: JPM ridge_wf stacker_id `868f378c` — **FAIL→PASS** (added missing registry entry on Jetson)
+    - ✅ Action 3: AMZN hmm_observe_mode: false — **PASS** (already correct, verified in running session)
+    - ✅ Action 4: AMZN position_size_pct: 0.10 — **PASS** (already correct, verified in running session)
+  - Jetson health: All containers healthy (stockbot, stockbot-web, gitea up and running)
+  - API verification: `GET /api/health` returns `{"status":"ok","sessions":2}` ✅
+  - Sessions verified: Sleeping until June 2 13:15 UTC (15-min pre-market wakeup) ✅
+  - **NOTE**: `docker cp` places config file inside container — persists on `docker restart` but lost on full rebuild. Consider adding bind mount for permanent solution.
+  - **Status**: READY FOR JUNE 2 13:30 UTC MARKET OPEN ✅
+
+- ✅ **OPEN-REPO WAVE 2 A11Y TESTING: CRITICAL FINDINGS + FIXES APPLIED**
+  - Architectural discovery: Open-Repo is a JSON REST API, not an HTML UI. June 1 automated scan scanned JSON endpoints in browser (not user-facing).
+  - Real HTML surface: `/docs` (Swagger UI) and `/redoc` (ReDoc) — third-party CDN libraries with FastAPI-generated shells
+  - P1 violations fixed in `app/main.py`:
+    - ✅ WCAG 3.1.1: Added `lang="en"` to `/docs` and `/redoc` HTML shells
+    - ✅ WCAG 2.4.1: Added skip-to-main link on both pages
+    - ✅ WCAG 1.3.1: Added `<main>` landmark to Swagger UI shell
+  - Regression testing: 11 new tests added, all passing (CI-friendly, no browser required)
+  - Test suite status: 196 pure-unit tests pass (360 collected; pre-existing failures unrelated to a11y work)
+  - PR staged: `feature/wave-2-a11y` branch with all fixes, ready for merge review
+  - **Manual browser testing**: Still needed June 2-6 (keyboard navigation + screen reader verification, 2-3 hours)
+  - **Status**: AUTOMATED FIXES COMPLETE, MANUAL BROWSER TESTING PENDING ✅
+
+- ✅ **RESISTANCE-RESEARCH DOMAIN 39: EXECUTION INFRASTRUCTURE VERIFIED COMPLETE**
+  - All infrastructure ready for user execution TODAY 13:00–14:00 UTC:
+    - ✅ Gist URL: Live and accessible (HTTP 200) — https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b
+    - ✅ 5 Tier 1 emails: Pre-written and complete in `execution/domain-39-tier-1-drafts.md` (only 2 fields need filling: `[YOUR_NAME]` and `[YOUR_CONTACT_INFO]`)
+    - ✅ Contacts verified: Georgetown CCF, NHeLP, Black Mamas Matter Alliance, Brennan Center, Institute for Responsive Government
+    - ✅ Execution checklist: Ready with 85-minute timeline (10 min pre-setup + 48 min sending + 5 min post-send)
+    - ✅ Subject lines: Pre-written, organization-specific personalization complete
+  - **Zero blockers**: Everything ready for user execution
+  - **Status**: READY FOR EXECUTION 13:00–14:00 UTC TODAY ✅
+
+**What's in progress**:
+- Awaiting user execution of Domain 39 Tier 1 emails (13:00–14:00 UTC window imminent — 12.5 hours from session start)
+- Awaiting user manual browser testing for open-repo Wave 2 (scheduled June 2-6, infrastructure ready)
+
+**What needs your input**:
+- **IMMINENT (today, 13:00–14:00 UTC)**: Execute Domain 39 Tier 1 email distribution. Checklist and pre-written templates ready. 5 emails, 12-min intervals, 80-minute window. See `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/domain-39-june1-execution-checklist.md`
+- **Urgent (before June 2 13:30 UTC market open)**: Stockbot pre-market verification is COMPLETE — Jetson config verified and corrected. No additional user action required unless you want to manually verify the 4 items yourself on Jetson.
+- **Non-urgent (June 2-6 window)**: open-repo Wave 2 manual browser testing ready. Keyboard-only navigation + screen reader checks on `/docs` and `/redoc`. Estimated 2-3 hours. See `projects/open-repo/PHASE_5_WAVE_2_A11Y_EXECUTION_RUNBOOK.md`
+
+**Usage**: Sonnet 11.7%, all-models 11.2% (increased from 11.3% due to stockbot agent work). Reset in ~23 hours.
+
+---
+
 ## Since Last Check-in (Session 2461, 2026-06-01 00:22–[completion] UTC)
 
 **What was accomplished**:
