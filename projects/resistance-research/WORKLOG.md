@@ -2,6 +2,110 @@
 
 ---
 
+## June 1, 2026 — General Research Agent — Phase 1 Adoption Tracking Deployment Guide
+
+**Task**: Produce the PHASE_1_ADOPTION_TRACKING_DEPLOYMENT_GUIDE.md and PHASE_1_ADOPTION_TRACKING_SETUP_CHECKLIST.md for June 3 deployment (trigger: Domain 39 distribution window closing). Both files are production-ready for immediate use.
+
+**Most important findings**:
+
+1. **Script is production-complete but Gist analytics require manual fallback**: The tracking script's GitHub Gist analytics collection attempts an HTML scrape of the authenticated analytics page, which will fail if the user is not logged in as the Gist owner or if GitHub changes the page structure. The guide documents both the script path and a 2-minute manual fallback (log in as esca8peArtist, navigate to Analytics tab, record weekly counts in Gist Views tab).
+
+2. **Day 7 checkpoint June 4 is the binding deadline**: Domain 56 sent May 28, Domain 39 sent June 1. Day 7 is June 4 — only 36 hours after June 3 deployment. The checklist and guide are structured to enable same-day setup and same-day Day 7 checkpoint execution.
+
+3. **Cron target adjusted to 09:00 UTC**: The script's built-in `--schedule-weekly` output targets 08:00 UTC, but the measurement system's synthesis cadence targets Monday 09:00 UTC. The deployment guide specifies 09:00 to align cron with the synthesis window.
+
+4. **Per-constituency latency calibration included**: The Day 7 decision tree includes constituency-specific notes so the user can distinguish genuine underperformance (Law Schools at zero signal at Day 30) from natural cycle behavior (Law Schools at zero signal at Day 7 is completely expected). Black Mamas Matter Alliance and NHeLP are flagged as the highest-probability early responders for Domain 39 given the June 1 HHS rule timing.
+
+5. **Week 1 Example from synthesis template pre-populated as calibration baseline**: The Week 1 example (23 clicks, 4 replies, 1 Score 4 from NILC) from PHASE_1_WEEKLY_SYNTHESIS_TEMPLATE.md is reproduced in Part 2 as a calibration table so the user can see what a moderate-positive first week looks like in concrete numbers.
+
+**Files produced**:
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/PHASE_1_ADOPTION_TRACKING_DEPLOYMENT_GUIDE.md` — full 5-part deployment guide: quick-start (Steps 1–6 with troubleshooting), Day 1–7 expectations, Day 7 decision tree, Weeks 2–4 synthesis templates, operational overhead documentation
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/PHASE_1_ADOPTION_TRACKING_SETUP_CHECKLIST.md` — one-page box-by-box setup checklist for June 3 morning deployment
+
+**Sources consulted**: phase-1-adoption-tracking-script.py, phase-1-adoption-tracking-config.json.template, phase-1-adoption-tracking-requirements.txt, PHASE_1_MEASUREMENT_SYSTEM.md (full), PHASE_1_WEEKLY_SYNTHESIS_TEMPLATE.md (full including Week 1 example), PHASE_1_DECISION_TREES.md, DOMAIN_56_MAY28_JUNE1_SEND_VERIFICATION.md, DOMAIN_39_DISTRIBUTION_STRATEGY.md
+
+---
+
+## June 1, 2026 — General Research Agent — Domain 39 Post-Distribution Monitoring Infrastructure
+
+**Task**: Build 5 production-ready operational files for Domain 39 post-send response monitoring and Phase 2 activation decision infrastructure. Domain 39 emails were sent June 1, 13:00–14:00 UTC to Georgetown CCF, NHeLP, Black Mamas Matter Alliance, Brennan Center, and Institute for Responsive Government.
+
+**Most important findings**:
+
+1. **Existing infrastructure gap**: The DOMAIN_38_40_CONTINGENCY_DECISION_TREE.md (May 30) covered Domain 39 response-to-Domain-38/40 routing at a high level, but no dedicated Domain 39 monitoring plan with specific checkpoint dates, response codes, and weighted score thresholds existed. New files fill this gap with production precision.
+
+2. **Phase 2 path architecture**: Four named paths (STRONG, MODERATE, WEAK, DELIVERY_PROBLEM) are now fully specified with numeric thresholds at T+14. STRONG requires weighted score 3.0+ (3+ substantive engagements); MODERATE requires 2.0–2.9; WEAK is below 2.0. T+14 (June 15) is the binding gate — it directly adjusts Domain 38 Tier B timing, Domain 40 launch date (July 15 default vs. July 1 accelerated vs. August 1 delayed), and Domain 39 Tier 2 activation.
+
+3. **Domain 58 independence**: Trump v. Barbara ruling trigger is fully independent of Domain 39 response outcomes. Pre-staging is complete; same-day distribution can execute within 2 hours of ruling. The single unresolved item is Gist creation (verify in DOMAIN_58_GIST_URL.md before June 15). Ruling expected late June–early July 2026 (~90% probability by June 30).
+
+4. **Cross-domain warm contact tracking**: Brennan Center receives Domain 39 (June 1), Domain 38 (June 17), Domain 40 (July 15), and Domain 58 (post-ruling) — 4 separate sends. Protect Democracy receives Domains 39, 38, and 40. The new dashboard template tracks these cross-domain relationships explicitly so later sends can reference prior engagement rather than cold-outreaching the same organization repeatedly.
+
+5. **Response weighting**: Implemented a 5-code weighted response schema (SE=1.0, BC=1.5, CIT=2.0, FWD=0.75, SMM=0.5) that allows Phase 2 routing to distinguish between a bounce-back and a briefing call request. Minimum viable outcome for Domain 39 is a weighted score of 2.0 (e.g., 2 substantive replies), not simply "2 emails."
+
+**Files produced**:
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/DOMAIN_39_RESPONSE_MONITORING_PLAN.md` — 5 checkpoint framework (T+3, T+7, T+14, T+30, T+45) with targets, thresholds, escalation triggers, log templates, citation search protocol
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/PHASE_2_ACTIVATION_DECISION_TREE.md` — 4 Phase 2 paths (STRONG/MODERATE/WEAK/DELIVERY_PROBLEM) with all branches specified; quick-reference routing table
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/DOMAIN_58_RULING_TRIGGER_READINESS.md` — Trump v. Barbara same-day action checklist; 2-hour/24-hour/72-hour distribution sequence; 5 Tier 1 + 5 Tier 2 + 5 Tier 3 contacts; Scenario A/B/C protocols
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/WAVE_2_EXECUTION_TIMELINE_WITH_TRIGGERS.md` — Master calendar June 1 – November 3 with 12 explicit trigger dependency points where Domain 39 data adjusts Domains 38/40 sequencing
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/RESPONSE_MONITORING_DASHBOARD_TEMPLATE.md` — Unified tracking dashboard for Domains 39/38/40/58; 50 contacts; response code lookup; Google Sheets formula reference; daily update protocol
+
+**Sources consulted**: AUDIT_DOMAIN_56_39_MAY28_JUNE1.md, DOMAIN_39_CONTACT_VERIFICATION.md, DOMAIN_39_DISTRIBUTION_STRATEGY.md, DOMAIN_38_40_RESPONSE_MONITORING_FRAMEWORK.md, DOMAIN_38_40_CONTINGENCY_DECISION_TREE.md, DOMAIN_38_40_EXECUTION_TIMELINE.md, DOMAIN_58_TRUMP_V_BARBARA_RAPID_RESPONSE.md (full analysis + 60+ sources)
+
+---
+
+## June 1, 2026 — General Research Agent — Wave 1 Publication Logistics Infrastructure
+
+**Task**: Build 4 production-ready operational files to unblock Phase 5 Wave 1+2 publication (June 5 13:00 UTC) and Phase 6 Wave 1 author activation (June 1–3).
+
+**Most important findings**:
+
+1. **Phase 5 Wave 1+2 documents are content-complete and publication-ready.** All 5 source documents (45,380 words total) have zero placeholder markers. The only required action before June 5 publication is updating 4 YAML `status` fields from "production-draft" to "PRODUCTION-READY" — a 10-minute task, not a content issue.
+
+2. **No external authors are needed for Phase 5 publication.** The integrated corpus was assembled June 1 by the orchestrator and requires no author involvement. The June 5 deadline depends entirely on orchestrator operational tasks (GitHub Release creation, distribution list population, announcement email send).
+
+3. **Phase 6 author recruitment is the highest-risk June 1–5 item.** Domain A (Economic Resilience) has a primary author in the pipeline (outreach sent May 29) but no confirmation yet. The remaining 5 domains have no named candidates as of June 1. The June 3 EOD confirmation gate is hard — if no authors confirm, self-execute path activates immediately.
+
+4. **Peer review candidate pool is pre-populated but uncontacted.** 8 candidates across academic, mutual aid, and community organizer pools are profiled in `WAVE_1_PEER_REVIEWERS_CANDIDATES.md`. Two documents (Psychological Support, Veterinary Care) contain clinical guidance that carries harm-reduction motivation for external review before June 5 publication — this is advisory, not required.
+
+5. **The Phase 6 Wave 1 standup template is calibrated to the June 3 author confirmation gate.** Every June 1–5 standup has a specific go/no-go question about author status; the June 3 template has a per-domain confirmation table that forces a binary decision on each domain before EOD.
+
+**Files produced**:
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/WAVE_1_AUTHOR_ONBOARDING_STATUS.md` — author roster (Phase 5: orchestrator-authored, no external authors; Phase 6: 6 domains, 0 confirmed as of June 1), kick-off briefing, fallback decision tree, per-author handoff checklist
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/WAVE_1_PEER_REVIEWERS_CANDIDATES.md` — 8 peer reviewer candidates across 3 pools (academic, mutual aid, community organizer); domain fit and acceptance likelihood scores (1–10); generic 150-word peer review request email; allocation table mapping candidates to documents
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/WAVE_1_PUBLICATION_READINESS_CHECKLIST.md` — per-document verification (word counts, placeholder scans, frontmatter status checks); summary table with READY / advisory status per document; go/no-go criteria for June 5
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/WAVE_1_DAILY_STANDUP_TEMPLATE.md` — 5-day standup (June 1–5, 06:00–09:00 UTC); per-day agenda with publication track, author recruitment track, peer review track, content edits track, and blockers; go/no-go assessment for June 5; daily WORKLOG log format
+
+**Sources consulted**: PHASE_5_6_EXECUTION_SUMMARY.md, PHASE_5_6_DELIVERABLES_CHECKLIST.md, PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md (frontmatter + word count check), all 5 Wave 1+2 source documents (placeholder and status checks), PHASE_6_WAVE_1_EXECUTION_CHECKLIST.md, PHASE_5_WAVE_1_CRITICAL_PATH_ANALYSIS.md, PHASE_5_WAVE_1_EXECUTION_TEMPLATES.md, PHASE_5_WAVE_2_AUTHOR_PROFILES.md, AUTHOR_ONBOARDING_TEMPLATE.md, author-outreach-tracking.md, JUNE_1_ACTIVATION_SUMMARY.md.
+
+---
+
+## June 1, 2026 — General Research Agent — systems-resilience Phase 6 Alternate Domain Research (B, E, F) + Combination Scoring
+
+**Task**: Stage comprehensive research on Phase 6 alternate domains B, E, and F so any user domain selection can launch June 1 without re-research delays. Produce three production-ready deliverables for `projects/systems-resilience/`.
+
+**Most important findings**:
+
+1. **All three alternate domains are within the feasibility envelope established by Domains A/C/D.** Domain E (Ecosystem Restoration) has the strongest practitioner-to-academic pipeline; Domain B (Institutional Governance) has the richest academic foundation but weakest crisis/collapse practitioner case study layer; Domain F (Intergenerational Knowledge Transmission) is the most fragmented — indigenous knowledge and situated learning literature is rich, but the crisis-context specific application layer is thin.
+
+2. **Source library readiness by domain**: A (75–80%), D (80–85%), E (72–78%), C (70–75%), B (68–73%), F (68–72%). B and F require 7–9 day source sprints before production; E requires 5–7 days; all three are executable from June 1.
+
+3. **Combination ranking**: A+D+E scores highest on delivery confidence (91%); A+C+D (currently staged) scores highest on weighted average (4.5/5.0). A+B+C has highest strategic coherence. B+E+F has lowest confidence (77%) and is recommended for Phase 6b/6c rather than June 1 Phase 6a.
+
+4. **Author sourcing**: Domain B (governance + practitioner) is the hardest to staff of all six domains; D (mechanical practitioner) is the easiest. Any combination containing B should front-load B author outreach June 1.
+
+5. **Zone 5 ecological coherence**: The A+B+E combination is the strongest match for Zone 5 commons land stewardship (governance of land + restoration of land + exchange of what the land produces). The Midwest Native Seed Network (300+ restoration ecologists, 150 institutions, launched 2024) is the primary current resource for Domain E native seed sourcing.
+
+6. **Critical warning for B+C+D and B+E+F combinations**: If user selects either, Domain A (Economic Resilience) must be Phase 6b — it is the highest-priority Phase 6 domain and cannot be deferred past Phase 6b.
+
+**Files produced**:
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/PHASE_6_DOMAINS_B_E_F_RESEARCH_OUTLINES.md` — 3 deep domain research outlines (B, E, F); 45–52 staged sources per domain; author profiles, integration points, research gap documentation
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/PHASE_6_ALTERNATE_COMBINATION_SCORING.md` — All 8 primary 3-domain combinations scored on 6 dimensions; ranked summary table; head-to-head analysis; Phase 6b/6c sequencing by Phase 6a selection
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/PHASE_6_DOMAIN_SELECTION_CONTINGENCY_ROADMAP.md` — 8 executable activation runbooks for June 1; day-by-day June 1–15 for each combination; author contingency protocols; parallel execution timeline visual
+
+**Sources consulted**: PHASE_6_RESEARCH_OUTLINE.md, PHASE_6_DOMAIN_SELECTION_TOOLKIT.md, PHASE_6_DECISION_FRAMEWORK.md, PHASE_5_WAVE_2_AUTHOR_PROFILES.md, PHASE_4_RESEARCH_OUTLINES_SAMPLE_DOMAINS.md, PHASE_6_AUTHOR_HIRING_AND_ONBOARDING_FRAMEWORK.md; external searches on Mondragon 2025 governance, mycorrhizal network restoration 2025, keyline design field applications, Midwest native seed network 2024, intergenerational knowledge transmission indigenous 2024–2025, deliberative democracy participatory governance 2024–2025, regenerative agriculture Midwest soil carbon 2025.
+
+---
+
 ## June 1, 2026 — Orchestrator Phase 2 Domain 58 Distribution Staging Checklist
 
 **Status**: Domain 58 (Tribal Sovereignty) research production-complete, distribution staging 95% ready.
