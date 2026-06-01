@@ -4,6 +4,43 @@
 > These are exploratory work items that are independent of user action items.
 > Status legend: ✅ (complete) ✍️ (in-progress) ⏳ (queued) ⌛ (deferred)
 
+## Active Items (Session 2482+)
+
+### 16. ⏳ Domain 39 Impact Evaluation & Phase 2 Prioritization
+**Context**: Domain 39 activation June 1 13:00-14:30 UTC. Monitoring infrastructure staged with 5-checkpoint structure (T+3/T+7/T+14/T+30/T+45). After Day 7 checkpoint (June 8), orchestrator needs decision framework for Phase 2 research activation.
+**Scope**: Post-June 8 checkpoint, synthesize engagement data + Phase 2 readiness assessment to determine activation sequence for Domains 51/57/48/49-50/54.
+**Deliverables**:
+  - Domain 39 impact evaluation summary (Day 7 metrics: email open rates, contact engagement, signal log outcomes)
+  - Phase 2 research prioritization decision tree (impact × urgency × feasibility matrix)
+  - Activation timeline for highest-priority Domain 51 (June 2 start vs defer)
+  - Resource reallocation triggers if Phase 2 conflicts with other work
+**Owner**: resistance-research subagent
+**Deadline**: June 9 morning (post-Day-7-checkpoint analysis)
+
+### 17. ⏳ Stockbot June 2-23 Live Trading Monitoring Protocol  
+**Context**: DEPLOY_READY created Session 2478 (07:50 UTC). 2-session config (JPM ridge_wf + AMZN lgbm_ho) sleeping until June 2 13:15 UTC. Phase 4.3 live performance tracking begins June 9 (5+ days live data for Z-score drift detection).
+**Scope**: June 2 market open through June 23 (5-day critical window + 2-week extended tracking). Prepare automated monitoring, alert thresholds, and decision checkpoints.
+**Deliverables**:
+  - Daily P&L comparison dashboard (live vs backtest, Z-score drift detection, auto-pause triggers)
+  - Slack/Discord alert configuration (MEDIUM at 2.0σ, HIGH at 2.5σ, CRITICAL at 3.0σ)
+  - June 9/16/23 checkpoint decision trees (performance assessment, rebalancing triggers, escalation paths)
+  - Failure mode playbooks (zero signals, unexpected correlation spike, position concentration drift)
+**Owner**: stockbot subagent  
+**Deadline**: June 2 09:00 UTC (before market open; validation via test run)
+
+### 18. ⏳ Seedwarden Track B Launch Coordination & Checkpoint Automation
+**Context**: Track B June 1-2 activation checklist complete. All 5 user action gates mapped in `TRACK_B_JUNE_1_2_ACTIVATION_CHECKLIST.md`. Monitoring infrastructure staged with Day 3/7/14 thresholds.
+**Scope**: Prepare automation for Track B Day 3/7/14 checkpoint execution and user action verification.
+**Deliverables**:
+  - `track_b_launch_readiness_verification.py` — Validates all 5 user gates completed (account creation, Kit setup, PDF upload, coupon live, social posts scheduled)
+  - `track_b_checkpoint_verification.py` — Runs Day 3/7/14 checks (Zone PDF access, Kit sales, social engagement metrics) and generates decision summary
+  - Decision framework: Day 3 (green/yellow/red status) determines continuation confidence; Day 7 (pass/extend/abort) determines full-scale; Day 14 (final assessment) gates Phase 2
+  - Integration: CronCreate jobs for automated checkpoint execution + Discord notification at each gate
+**Owner**: seedwarden subagent
+**Deadline**: June 1 after user completion of 5 gates (ready for automation at Day 3)
+
+## Completed Items (Session 2482 added above; prior sections below)
+
 ## Active Items (Session 1452+)
 
 ### 1. ✅ stockbot — Gate 2 Post-Checkpoint Architecture Decision Framework (Session 1451 COMPLETE)
