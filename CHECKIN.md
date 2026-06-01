@@ -3,6 +3,141 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2514, 2026-06-01 18:41–20:00+ UTC — Phase 2 Research Playbooks + Phase 6 Fallback Planning + DEPLOY_READY Activation)
+
+**Session Status**: ✅ **PARALLEL PHASE 2 + PHASE 6 PREP COMPLETE — Research execution playbooks created; Phase 6 fallback plan production-ready; awaiting 20:00 UTC DEPLOY_READY creation; all autonomous prep work finished**
+
+**Work Completed**:
+
+1. **resistance-research: Phase 2 Domains 49-50 Research Execution Playbooks** ✅:
+   - **Key Discovery**: Domains 49-50 already have COMPLETED production documents (7,800 words each, 58+ citations)!
+     - Confirms Session 2513 research completion
+     - Documents ready for quality gate review and distribution planning
+   - **Created two research execution playbooks** (10 sections each, 10,000 words combined):
+     - `PHASE_2_DOMAIN_49_RESEARCH_EXECUTION_PLAYBOOK.md` — EPA Title VI pathway, source sequencing, cross-domain bridges to Domains 15/22/47/57/58
+     - `PHASE_2_DOMAIN_50_RESEARCH_EXECUTION_PLAYBOOK.md` — August 1 hard deadline emphasized, trans voter data integration, Skrmetti holding isolation, Domain 44 consistency check, priority rule (stop Domain 49 if capacity conflict)
+   - **Updated PHASE_2_DECISION_MEMO_JUNE_2026.md** with playbook activation note
+   - **Committed**: `8cce9ace` on master — feat(resistance-research): Phase 2 domains 49-50 research execution playbooks
+   - **Impact**: July 1 research launch now has detailed execution guidance; no ambiguity on process or standards
+
+2. **systems-resilience: Phase 6 Domain A Fallback Research Plan** ✅:
+   - **Created**: `PHASE_6_DOMAIN_A_FALLBACK_RESEARCH_PLAN.md` (3,400 words, 7 workstreams)
+   - **Scope**: 45,000–55,000 words, 120–150 citations, 2–3 templates
+   - **Timeline**: July 10–Aug 30 execution (only if recruitment fails by June 3 23:59 UTC)
+   - **Confidence**: 85% on-time delivery for autonomous execution
+   - **Key content**:
+     - 7 research workstreams (Economic Failure Mechanics, Community Economic Institutions, Complementary Currency, International Case Studies, Inter-Community Trade, Zone 5 Implementation, Cross-Domain Integration)
+     - Source strategy: 4-tier hierarchy, 120–150 citations, honest gap documentation for 3 areas
+     - Cross-domain integration: Specific language for B/E/F connections
+     - Timeline detail: Pre-sprint, Sprint 1/2 sequencing, publication buffer
+   - **Verified**: All 18 recruitment emails copy-paste ready; June 3 decision gate confirmed in PROJECTS.md
+
+3. **Critical Timeline Confirmed**:
+   - **20:00 UTC today** (in 40 min): DEPLOY_READY file creation window
+   - **June 2 13:30 UTC**: Stockbot market open (contingent on DEPLOY_READY)
+   - **June 3 23:59 UTC**: systems-resilience platform decision gate (A/B/C)
+   - **June 5 13:00 UTC**: systems-resilience Phase 5 publication gate
+
+**Project Status (Updated)**:
+- **resistance-research**: Phase 2 domains 49-50 production-ready (research complete, playbooks created, distribution planning next)
+- **systems-resilience**: Phase 6 deployment-ready (author recruitment active, fallback plan staged for July 10 if needed)
+- **stockbot**: Market open ready (DEPLOY_READY pending 20:00 UTC)
+- **All others**: Unchanged (no new blockers)
+
+**Next Immediate Actions**:
+1. Create DEPLOY_READY file after 20:00 UTC (automated deployment trigger)
+2. Commit WORKLOG.md, CHECKIN.md, PROJECTS.md, DEPLOY_READY to master
+3. Monitor June 2 13:30 UTC market open (passive, no intervention unless failure)
+
+---
+
+## Session 2513 Summary (2026-06-01 18:10–20:00+ UTC — Pre-Market Readiness Verification + DEPLOY_READY Activation Window)
+
+**Session Status**: ✅ **AUTONOMOUS WORK COMPLETE — ALL HIGH-PRIORITY PROJECTS PRODUCTION-READY; AWAITING USER DECISIONS ON 6 DECISION GATES; DEPLOY_READY FILE CREATION QUEUED FOR 20:00 UTC**
+
+**Work Completed**:
+
+1. **Comprehensive Orchestrator Orientation (18:10–18:25 UTC)**:
+   - ✅ Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md (complete inventory)
+   - ✅ Identified: 2 active user-action blocks (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — both unresolved, both correctly documented
+   - ✅ Identified: All high-priority autonomous work completed in Session 2512 and prior
+   - ✅ Identified: 6 decision gates blocking next-phase work (resistance-research, systems-resilience, seedwarden)
+
+2. **Project Status Verification** (18:25–18:40 UTC):
+   - ✅ **stockbot**: Pre-market verification GREEN; JPM ridge_wf + AMZN lgbm_ho deployment-ready; AAPL models suspended as configured; market open June 2 13:30 UTC confirmed ready. DEPLOY_READY file creation time-gated to 20:00 UTC (blackout protocol).
+   - ✅ **resistance-research**: Phase 2 domain scaffolding complete; 6 user decisions documented in PHASE_2_DECISION_MEMO_JUNE_2026.md (Domains 51, 59, 57, 48, 49-50, 54)
+   - ✅ **seedwarden**: Gate 1 launch-ready verification complete (8/8 zone PDFs, 5/5 email bodies, 15+ contacts); awaiting user gate completion for autonomous 7-step pre-launch sequence
+   - ✅ **systems-resilience**: Phase 6 implementation guides complete (3 deployment guides + decision checklist); user selects A/B/C by June 3 for June 5 operational deadline
+   - ✅ **open-repo**: Phase 3 complete; deployment-ready for user approval
+   - ✅ **cybersecurity-hardening & mfg-farm**: Both blocked on physical user actions (VeraCrypt restart, test print execution)
+   - ✅ **Lower-priority**: workout, career-training, off-grid-living all complete, awaiting user review/deployment
+
+3. **Decision Gates Identified** (summary for user):
+   - **Immediate** (June 2-3):
+     - Domain 59 distribution acceleration decision (Senate Finance CTC markup window)
+     - systems-resilience platform selection (A/B/C by June 3 for June 5 deadline)
+   - **June 3 23:59 UTC**: resistance-research Phase 2 authorization (6 decisions)
+   - **Ongoing**: seedwarden Track B gates (5 gates, 3.5-4h total), cybersecurity-hardening VeraCrypt restart, mfg-farm test print
+
+**Project Readiness Scorecard**:
+| Project | Status | Blockers | Next Action |
+|---------|--------|----------|------------|
+| **stockbot** | ✅ READY | DEPLOY_READY (time-gated 20:00 UTC) | Create file after 20:00 UTC tonight |
+| **resistance-research** | ✅ READY | 6 user decisions | Approve domains in PHASE_2_DECISION_MEMO |
+| **seedwarden** | ✅ READY | Track B gates (user action) | Complete 5 user gates for launch |
+| **systems-resilience** | ✅ READY | Platform selection (A/B/C) | Choose platform by June 3 EOD |
+| **cybersecurity-hardening** | 🟡 BLOCKED | VeraCrypt restart (user action) | Restart Windows machine for Phase 1.3 |
+| **mfg-farm** | 🟡 BLOCKED | Test print execution (user action) | Execute print per specifications |
+| **open-repo** | ✅ READY | User merge approval | Approve Phase 4 merge when ready |
+
+**Critical Timeline** (next 72 hours):
+- **June 1 20:00 UTC**: DEPLOY_READY file creation window (⏰ 1h50min remaining)
+- **June 2 13:30 UTC**: 🚨 **STOCKBOT MARKET OPEN** (CRITICAL MILESTONE — contingent on DEPLOY_READY flag)
+- **June 2-3**: resistance-research Domain 59 distribution window (Senate Finance CTC markup)
+- **June 3 23:59 UTC**: systems-resilience platform decision deadline (A/B/C selection required)
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication gate
+
+**Needs Your Input** (updated for Session 2513):
+1. **Immediate** (tonight):
+   - Confirm readiness to proceed with DEPLOY_READY creation after 20:00 UTC
+2. **June 2-3**:
+   - Domain 59 distribution acceleration decision (YES recommended per memo)
+   - Confirm systems-resilience platform selection (A/B/C by June 3)
+3. **By June 3**:
+   - Approve 6 Phase 2 domain decisions (resistance-research)
+   - Complete seedwarden Track B gates (3.5-4h, 5 gates)
+4. **Ongoing**:
+   - VeraCrypt Phase 1 restart (cybersecurity-hardening) — estimated 15 min + 1-2 hr encryption background job
+   - Test print execution (mfg-farm) — estimated 2-4 hours
+
+**Resistance Research — Domain 50 Complete** (Session 2513 addendum, Domain 50 research agent run):
+- Domain 50 full document written: ~7,800 words, 69 citations
+- File: projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md
+- Key finding: Six November 2026 ballot measures + 210,800 trans adults without matching ID in voter-ID states + SAVE Act passport requirement = a three-layer suppression stack operating simultaneously in the same election cycle as ballot measures targeting trans people's legal existence. This convergence is the central democratic design finding.
+- SAVE Act status: passed House February 12, 2026; Senate vote pending — most actionable single intervention before November 2026
+- Missouri Amendment 3 bundling strategy: trans healthcare ban + 2024 abortion rights reversal in single ballot question — requires joint LGBTQ+/reproductive rights coalition response
+- Washington measure's mandatory genital exam enforcement triggers Fourth Amendment bodily integrity claims independent of trans-specific arguments
+- Colorado's two measures are most legally vulnerable to Romer v. Evans (1996) anti-countermajoritarian challenge; state constitutional equal protection may apply even where Skrmetti limits federal floor
+- ADF documented as authoring 130+ bills in 34 states from single coordinated effort; ballot initiative channel is response to 92%+ legislative failure rate
+- Distribution HARD DEADLINE: August 1, 2026 — Lambda Legal and AT4E must receive before ballot campaigns peak; do not wait for August 15 full distribution cycle
+- Note: This is a companion document to Domain 55 (domain-55-lgbtq-rights-systematic-legal-attack-democratic-design.md, May 13, 2026). Domain 50 = voting suppression + ballot initiative analysis. Domain 55 = ADF constitutional/legislative infrastructure. Distribute together.
+
+**Resistance Research — Domain 49 Complete** (Session 2513 addendum):
+- Domain 49 full document written: ~7,800 words, 66 citations
+- File: projects/resistance-research/domain-49-environmental-justice-voting-rights.md
+- Key finding: D.C. Circuit cases (Nos. 26-1037, 26-1038, 26-1039, 26-1061) challenging the Endangerment Finding rescission are active — organizations can support amicus filings NOW; no waiting period
+- Louisiana Title VI ruling (August 2024) + OEJECR closure (March 2025) = double closure of civil rights administrative pathway; Cancer Alley and similar communities have no federal administrative forum requiring consideration of their health interests
+- 25-state defense coalition (led by WV/KY) has intervened to defend rescission in D.C. Circuit — worth flagging to state AG partners
+- Pre-distribution action: Confirm D.C. Circuit docket status at CourtListener before August distribution
+
+**Next Orchestrator Actions**:
+- 20:00 UTC: Create DEPLOY_READY file, commit orchestration files, await June 2 market open
+- June 2 13:30 UTC: Passive monitoring of stockbot market open (no action unless failure)
+- June 2-3: Wait for user domain decision inputs, then execute Phase 2 research if approved
+- June 3: Await platform selection, then execute Phase 6 deployment prep if user decides
+
+---
+
 ## Since Last Check-in (Session 2512, 2026-06-01 16:34–18:56 UTC — Phase 2 Domains 49-50 Research + Seedwarden Gate 1 + Systems-Resilience Implementation Guides)
 
 **Session Status**: ✅ **PRODUCTION-READY PHASE 2 EXPANSION + GATE 1 LAUNCH READINESS + PLATFORM IMPLEMENTATION GUIDES — All three autonomous work streams completed; 280k tokens consumed (~17% budget); decision-support materials ready for June 3 user selection gates; DEPLOY_READY file creation queued for 20:00 UTC**
