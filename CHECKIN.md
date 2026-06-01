@@ -3,6 +3,49 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2511, 2026-06-01 16:24–17:20 UTC — Stockbot Signal Quality Audit + DEPLOY_READY Readiness)
+
+**Session Status**: ✅ **JUNE 2 MARKET-OPEN SIGNAL QUALITY AUDIT COMPLETE — GO for 13:30 UTC execution; JPM ridge_wf + AMZN lgbm_ho cleared; AAPL sessions suspended as configured; Portfolio confidence 83%; One minor pre-flight action (AMZN HMM regime check); DEPLOY_READY file creation window opens 20:00 UTC**
+
+**Work Completed**:
+
+1. **stockbot: June 2 Market-Open Pre-Flight Signal Quality Audit (16:30–17:20 UTC)**:
+   - ✅ **Deliverable**: `JUNE_2_SIGNAL_QUALITY_AUDIT.md` (comprehensive 11-section analysis)
+   - ✅ **Audit scope**: Validated all 4 active models' signal patterns, confidence distributions, timing consistency using May 26-31 paper-trading data
+   - ✅ **Key findings**:
+     - JPM ridge_wf: Ready to trade (92% confidence) — walk-forward validation complete, model file integrity verified
+     - AMZN lgbm_ho: Ready to trade (78% confidence) — all 6 base models load correctly; CONDITIONAL GO pending HMM regime check
+     - AAPL lgbm_ho: Suspended (position_size_pct=0 in config) — no execution path; 42% confidence
+     - AAPL ridge_wf: Suspended (position_size_pct=0 in config) — no execution path; 28% confidence
+   - ✅ **Red flags**: None identified. Silence in pre-market window is expected and correct for daily-bar EOD models
+   - ✅ **GO/NO-GO**: **GO for June 2 13:30 UTC market open**. Portfolio confidence: 83%
+   - ✅ **One pending action**: Check AMZN HMM regime log on Jetson before 13:00 UTC June 2 (`docker logs --tail=100 stockbot | grep -iE 'HMM|regime|bear'`). If bear-regime flag present, schedule G5 HMM fix for June 3.
+   - ✅ **Status**: File committed to master; orchestrator ready
+   - **Confidence**: 92% trading readiness for June 2 market open
+
+**Project Status** (updated):
+- **stockbot**: ✅ Signal quality audit COMPLETE + GO for market open; DEPLOY_READY creation window 20:00 UTC+; June 2 13:30 UTC execution confirmed ready
+- **systems-resilience**: ✅ Phase 6 Domain B infrastructure complete; Phase 5 publication June 5 13:00 UTC on track
+- **resistance-research**: ✅ Domain 48 COMPLETE, Domain 51 complete, Domain 39/59 ready for distribution
+- **seedwarden**: ✅ Track B infrastructure ready, awaiting user gate completion
+- **open-repo**: ✅ Phase 3 complete, June 12 deployment on track
+
+**Needs Your Input** (unchanged):
+1. **stockbot**: June 2 13:30 UTC market open (passive monitoring; orchestrator fully ready)
+2. **systems-resilience**: Select platform (A/B/C) by June 3 for Phase 6 coordination
+3. **resistance-research**: Execute Domain 59 distribution June 2-3 (user-driven)
+4. **seedwarden**: Complete Track B gates (5 gates, 3.5–4h self-paced)
+5. **cybersecurity-hardening**: VeraCrypt Phase 1 Step 1.3 restart
+6. **mfg-farm**: Test print execution
+
+**Next Session Triggers**:
+- **June 1 20:00 UTC**: DEPLOY_READY file creation window (⏰ 2.75 hours remaining)
+- **June 2 13:30 UTC**: Stockbot market open (MAJOR MILESTONE)
+- **June 3 23:59 UTC**: systems-resilience author recruitment decision gate
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication + Phase 6 platform operational
+
+---
+
 ## Since Last Check-in (Session 2510, 2026-06-01 16:15–16:30 UTC — Systems-Resilience Phase 6 Domain B Infrastructure + Orchestration Handoff)
 
 **Session Status**: ✅ **DOMAIN B INFRASTRUCTURE PRODUCTION-READY + DEPLOYMENT BLACKOUT PROTOCOL ACTIVATED — All 6 Domain B research scaffolding files created and staged; DEPLOY_READY file deferred to post-20:00 UTC per market-hour blackout; all critical-path work verified on track for June 2-5 milestones**

@@ -1,5 +1,25 @@
 # Work Log
 
+- **Session 2511 (June 1, 16:24–17:20 UTC — STOCKBOT SIGNAL QUALITY AUDIT + DEPLOY_READY READINESS)**:
+  - **Status**: ✅ COMPLETE — Signal quality audit delivered; GO for June 2 market open; DEPLOY_READY creation window 20:00 UTC
+  - **Work**:
+    1. **Orchestration Orientation** ✅: Read ORCHESTRATOR_STATE.md current (June 1 16:23 UTC); identified stockbot signal quality audit as priority queue item (Exploration Queue, line 1113); task marked "Ready for immediate execution" with trigger "Before June 2 13:30 UTC market open"
+    2. **Stockbot: June 2 Market-Open Pre-Flight Signal Quality Audit** ✅: Spawned stockbot subagent to validate all 4 active models' signal patterns using May 26-31 paper-trading data
+       - **Audit findings**: Analyzed 126,256 log lines across trading_20260526.log through trading_20260531.log
+       - **4-model status**:
+         - JPM ridge_wf: 92% confidence GO — walk-forward validation complete on 751 real Alpaca bars, model file integrity verified
+         - AMZN lgbm_ho: 78% confidence CONDITIONAL GO — all 6 base models load correctly; minor flag: AMZN HMM regime monitor required before 13:00 UTC June 2
+         - AAPL lgbm_ho: 42% confidence SUSPENDED — position_size_pct=0 in config (no execution path)
+         - AAPL ridge_wf: 28% confidence SUSPENDED — position_size_pct=0 in config (no execution path)
+       - **Portfolio confidence**: 83% (weighted average across deployed sessions)
+       - **Red flags**: None identified. Pre-market signal silence is expected and correct for daily-bar EOD models
+       - **Verdict**: **GO for June 2 13:30 UTC market open**
+       - **One pending action**: AMZN HMM regime check before 13:00 UTC June 2 (`docker logs --tail=100 stockbot | grep -iE 'HMM|regime|bear'`). If bear-regime flag present, schedule G5 HMM fix for June 3
+       - **Deliverable**: `projects/stockbot/JUNE_2_SIGNAL_QUALITY_AUDIT.md` (11 sections, comprehensive audit report with statistical tables, confidence assessments, cross-model anomaly analysis)
+       - **Confidence**: 92% trading readiness
+  - **Commits**: (a) Subagent agent ab8faf4cad7148314 committed audit file + WORKLOG entry to master; (b) Orchestrator will commit CHECKIN.md + PROJECTS.md in this session
+  - **Next**: (1) DEPLOY_READY file creation after 20:00 UTC per market-hour blackout protocol; (2) Monitor AMZN HMM regime before June 2 13:00 UTC
+
 - **Session 2510 (June 1, 16:15–16:35 UTC — SYSTEMS-RESILIENCE PHASE 6 DOMAIN B INFRASTRUCTURE + DEPLOYMENT BLACKOUT PROTOCOL)**:
   - **Status**: ✅ COMPLETE — Domain B research scaffolding production-ready; deployment blackout acknowledged
   - **Work**:
