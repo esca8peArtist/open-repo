@@ -58,11 +58,11 @@ This checklist documents the gaps found during the June 1 audit of `PHASE_6_DOMA
 
 **Status**: ✅ **PRODUCTION-READY FOR AUTHOR HANDOFF**
 
-**Actions completed June 1**:
+**Actions completed June 1 (initial) + June 1 (citation corrections)**:
 - ✅ Entry 45 added: Steiner, Rudolf. *The Roots of Education*
-- ✅ Entry 46 added: Funes-Monzote, Fernando. "Cuba's Sustainable Agriculture"
-- ✅ Entry 47 added: Lloréns, Hilda. "Making Livable Lives" (Puerto Rico post-Maria case study)
-- ✅ Entry 44 URL corrected: Illinois Homeschooling Alliance URL fixed (removed Cyrillic character corruption)
+- ✅ Entry 46 added and corrected: Altieri & Funes-Monzote. "The Paradox of Cuban Agriculture," *Monthly Review* 63(8): 23–33, 2012 (initial version cited a non-existent "Sustainable Agriculture Research" journal article; corrected to verified Monthly Review publication)
+- ✅ Entry 47 added and corrected: Lloréns, Hilda. "Imaging Disaster: Puerto Rico through the Eye of Hurricane María," *Transforming Anthropology* 26(2): 136–156, 2018 (initial version cited unverified "Making Livable Lives" / *Centro Journal* 30(3) — no such article found; corrected to verified 2018 Lloréns publication on Hurricane Maria)
+- ✅ Entry 44 URL corrected: Illinois Homeschool Association URL corrected to `https://www.ilhsa.org/` (initial correction removed Cyrillic characters but produced non-resolving domain `illinoisshomeschooling.org`; corrected to verified ILHSA domain)
 - ✅ Research gap note updated with UNESCO and UNICEF emergency education resources
 
 **Previously missing sources** (now added):
@@ -72,22 +72,24 @@ The bibliography ends at 44 but the research outline body references several sou
 **1. Steiner, Rudolf. *The Roots of Education*. Anthroposophic Press, 1968.**
 - Referenced in Section 2.4 (Waldorf Education section) as a key source
 - Status: Cited in body text; missing from bibliography
-- Action: Add as entry 45
+- Action: Add as entry 45 ✅
 
-**2. Funes-Monzote, Fernando. "Cuba's Sustainable Agriculture: A Source of Inspiration for the World." *Sustainable Agriculture Research* 1(2): 2012.**
+**2. Altieri, Miguel A., and Fernando R. Funes-Monzote. "The Paradox of Cuban Agriculture." *Monthly Review* 63(8): 23–33, January 2012.**
 - Referenced in Section 4.1 (Cuba post-Soviet education case)
-- Status: Cited in body text; missing from bibliography
-- Action: Add as entry 46
+- Status: Cited in body text (as Funes-Monzote); missing from bibliography
+- Note: No article by Funes-Monzote alone exists in "Sustainable Agriculture Research" journal; the verified 2012 work is this Monthly Review co-authored piece with Altieri
+- Action: Add as entry 46 ✅
 
-**3. Lloréns, Hilda. "Making Livable Lives: Rethinking Social Exclusion and Dispossession."**
+**3. Lloréns, Hilda. "Imaging Disaster: Puerto Rico through the Eye of Hurricane María." *Transforming Anthropology* 26(2): 136–156, 2018.**
 - Referenced in Section 4.2 (Puerto Rico post-Maria education adaptation)
-- Status: Cited in body text; missing from bibliography; publication details incomplete (publisher and year not specified in body citation)
-- Action: Verify full citation details before adding as entry 47. Lloréns published in multiple venues; the Puerto Rico post-Maria case study is likely from a 2018–2020 publication.
+- Status: Cited in body text; missing from bibliography
+- Note: Title "Making Livable Lives" and venue "Centro Journal 30(3)" were unverified; her verified 2018 Puerto Rico disaster article is this Transforming Anthropology piece (DOI: 10.1111/traa.12126)
+- Action: Add as entry 47 ✅
 
 **4. [arXiv: "Automation, AI, and the Intergenerational Transmission of Knowledge" (2025)](https://arxiv.org/pdf/2507.16078)**
 - Referenced in Section 5.2 (Oral History Documentation)
-- Status: Cited in body text with URL; present as cross-reference; missing from numbered bibliography
-- Action: Add as entry 48
+- Status: Was already present as entry 34 in the numbered bibliography
+- Action: No change needed ✅
 
 ### Research Gaps Documented in File
 

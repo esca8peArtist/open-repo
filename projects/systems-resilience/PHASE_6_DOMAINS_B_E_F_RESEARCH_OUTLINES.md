@@ -879,7 +879,7 @@ When formal educational institutions are unavailable (school closure, collapse, 
 - Zone 5 lesson: communities need to identify their "qualified residents" (people with specialized knowledge) before crisis and design transmission programs that deploy their knowledge into the community
 
 Key sources:
-- Funes-Monzote, Fernando. "Cuba's Sustainable Agriculture: A Source of Inspiration for the World." *Sustainable Agriculture Research* 1(2): 2012.
+- Altieri, Miguel A., and Fernando R. Funes-Monzote. "The Paradox of Cuban Agriculture." *Monthly Review* 63(8): 23–33, 2012.
 - Rosset, Peter, and Medea Benjamin, eds. *The Greening of Cuba*. Ocean Press, 1994.
 - Garfield, Richard, and Sarah Santana. "The Impact of the Economic Crisis and the US Embargo on Health in Cuba." *American Journal of Public Health* 87(1): 15–20, 1997.
 
@@ -890,7 +890,7 @@ Key sources:
 - What failed: digital learning resources were useless when internet and power were down; paper-based materials were the only reliable resource
 
 Key sources:
-- Lloréns, Hilda. "Making Livable Lives: Rethinking Social Exclusion and Dispossession." (Puerto Rico case)
+- Lloréns, Hilda. "Imaging Disaster: Puerto Rico through the Eye of Hurricane María." *Transforming Anthropology* 26(2): 136–156, 2018.
 - UNESCO Emergency Education guidelines: https://www.unicef.org/emergencies/education-emergencies
 - ERIC: International Education Studies (2025) — https://files.eric.ed.gov/fulltext/EJ1485136.pdf
 
@@ -979,13 +979,13 @@ Key sources:
 
 ### Domain F Bibliography (47 sources complete — June 1 cleanup)
 
-**Status Update (June 1)**: All 4 missing sources identified and added:
+**Status Update (June 1, corrected June 1)**: All 4 missing sources identified and added; 2 citations corrected after verification:
 1. Entry 45: Steiner, Rudolf. *The Roots of Education* (Waldorf Education)
-2. Entry 46: Funes-Monzote, Fernando. "Cuba's Sustainable Agriculture" (Crisis Education)
-3. Entry 47: Lloréns, Hilda. "Making Livable Lives" (Puerto Rico post-Maria case study)
-4. Entry 34: arXiv 2507.16078 (already in numbered bibliography)
+2. Entry 46: Altieri & Funes-Monzote. "The Paradox of Cuban Agriculture," *Monthly Review* 2012 (corrected from unverified "Sustainable Agriculture Research" journal)
+3. Entry 47: Lloréns, Hilda. "Imaging Disaster: Puerto Rico through the Eye of Hurricane María," *Transforming Anthropology* 2018 (corrected from unverified "Making Livable Lives" / *Centro Journal* citation)
+4. Entry 34: arXiv 2507.16078 — Ide, Enrique. "Automation, AI, and the Intergenerational Transmission of Knowledge" (already in numbered bibliography)
 
-**Bibliography now complete** for author handoff. Illinois Homeschooling Alliance URL (entry 44) corrected. Research gap note updated with specific UNESCO/UNICEF resources.
+**Bibliography now complete** for author handoff. Illinois Homeschool Association URL (entry 44) corrected to `https://www.ilhsa.org/` (previous correction produced non-resolving domain). Research gap note updated with specific UNESCO/UNICEF resources.
 
 **Situated Learning and Cognitive Science:**
 1. Lave, Jean, and Etienne Wenger. *Situated Learning: Legitimate Peripheral Participation*. Cambridge University Press, 1991.
@@ -1049,16 +1049,16 @@ Key sources:
 
 **Homeschooling Cooperative Networks:**
 43. Riley, Gina. "Unschooling: Exploring Learning Beyond the Classroom." *Creative Education* 6 (2015): 411–417.
-44. Illinois Homeschooling Alliance: https://www.illinoisshomeschooling.org
+44. Illinois Homeschool Association (ILHSA): https://www.ilhsa.org/
 
 **Waldorf Education Foundations:**
 45. Steiner, Rudolf. *The Roots of Education*. Anthroposophic Press, 1968.
 
 **Crisis Education Case Studies (Additional):**
-46. Funes-Monzote, Fernando. "Cuba's Sustainable Agriculture: A Source of Inspiration for the World." *Sustainable Agriculture Research* 1(2): 2012.
-47. Lloréns, Hilda. "Making Livable Lives: Rethinking Social Exclusion and Dispossession." *Centro Journal* 30(3): 2018. [Puerto Rico post-Maria education adaptation case study]
+46. Altieri, Miguel A., and Fernando R. Funes-Monzote. "The Paradox of Cuban Agriculture." *Monthly Review* 63(8): 23–33, January 2012. https://monthlyreview.org/articles/the-paradox-of-cuban-agriculture/
+47. Lloréns, Hilda. "Imaging Disaster: Puerto Rico through the Eye of Hurricane María." *Transforming Anthropology* 26(2): 136–156, 2018. https://doi.org/10.1111/traa.12126 [Puerto Rico post-Maria community resilience and knowledge case study]
 
-**[RESEARCH GAP NOTE]** The crisis-context education adaptation layer — what happens to knowledge transmission when schools are not available — is thin in peer-reviewed literature. The Cuba (Funes-Monzote, 2012) and Puerto Rico (Lloréns, 2018) cases are the best-documented analogs. Author should prioritize 4–6 hours of research into: (1) UNESCO Emergency Education guidelines (https://en.unesco.org/themes/education-emergencies-and-resilience), (2) UNICEF Education in Emergencies documentation (https://www.unicef.org/emergencies/education-emergencies), and (3) 2–3 practitioner interviews with communities that have implemented non-formal learning systems post-disruption. Additionally, digital archiving standards for long-term survival (20–50 year horizon) without institutional maintenance are not well-synthesized for the practitioner audience; the Library of Congress Digital Preservation documentation (https://www.loc.gov/preservation/digital/) is the primary resource and should be translated into community-accessible protocols.
+**[RESEARCH GAP NOTE]** The crisis-context education adaptation layer — what happens to knowledge transmission when schools are not available — is thin in peer-reviewed literature. The Cuba (Altieri & Funes-Monzote, 2012) and Puerto Rico (Lloréns, 2018) cases are the best-documented analogs. Author should prioritize 4–6 hours of research into: (1) UNESCO Emergency Education guidelines (https://en.unesco.org/themes/education-emergencies-and-resilience), (2) UNICEF Education in Emergencies documentation (https://www.unicef.org/emergencies/education-emergencies), and (3) 2–3 practitioner interviews with communities that have implemented non-formal learning systems post-disruption. Additionally, digital archiving standards for long-term survival (20–50 year horizon) without institutional maintenance are not well-synthesized for the practitioner audience; the Library of Congress Digital Preservation documentation (https://www.loc.gov/preservation/digital/) is the primary resource and should be translated into community-accessible protocols.
 
 ---
 
