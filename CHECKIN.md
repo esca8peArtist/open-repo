@@ -5,6 +5,53 @@
 
 ---
 
+## Since Last Check-in (Session 2463, 2026-06-01 01:26–02:55 UTC — Parallel Autonomous Execution: Stockbot Pre-Flight + Systems-Resilience Auto-Fallback)
+
+**What was accomplished**:
+- ✅ **STOCKBOT: JUNE 2 PRE-FLIGHT SIGNAL QUALITY AUDIT COMPLETE**
+  - Report: `projects/stockbot/JUNE_2_SIGNAL_QUALITY_AUDIT.md` (production-ready)
+  - **CRITICAL FINDING**: Portfolio confidence at 83% (below 90% threshold) due to AAPL model failures
+  - **Per-session verdict**:
+    - JPM ridge_wf: 6/6 gates PASS, OOS Sharpe 4.412 → 92% confidence ✅ GO
+    - AMZN lgbm_ho: 5/6 gates (G5 fail), OOS Sharpe 3.939 → 78% confidence ⚠️ CONDITIONAL GO (fix G5 after June 2)
+    - AAPL lgbm_ho: 2/6 gates FAIL, Sharpe 0.649, YTD -1.60 → **SUSPENDED (no voluntary exits)**
+    - AAPL ridge_wf: 1/6 gates FAIL, Sharpe 0.096, WF 0.038 → **SUSPENDED (25x IS-to-OOS collapse)**
+  - **CRITICAL ACTION REQUIRED BEFORE 13:00 UTC JUNE 2**: Set AAPL position_size_pct=0 or remove both AAPL sessions from config
+    - Reason: Both AAPL models failed walk-forward validation on live Alpaca data; exit only via time-stop (h+10), not signal-driven
+    - AAPL ridge_wf risks hitting 15% kill-switch within days
+  - **Post-June 2 action**: Implement AMZN G5 fix (hmm_observe_mode: false) — 2-3 hour targeted fix, no retraining needed
+  - **Thermal status**: Jetson 46°C baseline confirmed healthy; no thermal concerns for 6.5h market session
+  - **Next step**: User must manually suspend AAPL models OR orchestrator can push fix after June 2 closes if code change approved
+
+- ✅ **SYSTEMS-RESILIENCE: AUTO-FALLBACK ACTIVATED (May 31 23:59 UTC deadline passed)**
+  - Deadline: May 31 23:59 UTC → **PASSED** (no user decisions provided)
+  - Activation timestamp: June 1 01:26 UTC (23.5 hours past deadline)
+  - Runbooks verified production-ready: Phase 5 Option A + Phase 6 Domain A
+  - PROJECTS.md updated: systems-resilience `Current focus` now shows auto-fallback activation status
+  - Execution clock started:
+    - **Phase 5 Option A**: Wave 1+2 publication June 5–30 (publication 13:00 UTC)
+    - **Phase 6 Domain A**: Author recruitment June 1-2, onboarding June 1-9, first outline June 10, first draft July 10, publish August 30
+    - Self-execute contingency: If no Domain A author confirmed by June 3, proceeds autonomously
+  - Commit: `8fc6d573` on master (`chore: systems-resilience auto-fallback activated`)
+  - **Status**: ACTIVATED ✅ — both phases proceeding per deadline auto-fallback protocol
+
+**What's in progress**:
+- Stockbot pre-market: Awaiting user action to suspend AAPL models before June 2 13:00 UTC market open
+- Systems-resilience Phase 5/6: Auto-fallback proceeding per schedule (Wave 1 June 5, Domain A recruitment June 1-2)
+- Domain 39 distribution: Awaiting user execution 13:00–14:00 UTC TODAY
+
+**What needs your input**:
+- **CRITICAL (before June 2 13:30 UTC market open)**: AAPL models must be suspended. Options:
+  1. Manually update Jetson config (`active-sessions-2session.json`): remove AAPL sessions OR set position_size_pct=0 on both
+  2. Approve code change: set AAPL position_size_pct=0 in code, orchestrator can deploy after June 2 closes
+  - See `projects/stockbot/JUNE_2_SIGNAL_QUALITY_AUDIT.md` for detailed per-session findings
+- **TODAY (13:00–14:00 UTC)**: Execute Domain 39 Tier 1 email distribution (5 pre-written emails, 80-min window)
+- **Optional (June 5+)**: Approve AMZN G5 fix (hmm_observe_mode: false) for June 3+ deployment
+
+**Usage**: Sonnet 12.3%, all-models 11.8% (increased from 11.3% due to parallel agent work). Reset in ~22 hours.
+
+---
+
 ## Since Last Check-in (Session 2462, 2026-06-01 00:37–03:30 UTC — Parallel Pre-Market Infrastructure Audit)
 
 **What was accomplished**:
