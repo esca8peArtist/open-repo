@@ -3,6 +3,62 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2488, 2026-06-01 10:30–11:05 UTC — ORCHESTRATOR MONITORING AUTOMATION SETUP)
+
+**Session Status**: ✅ **COMPLETE — Critical Monitoring Infrastructure Deployed (8 CronCreate Checkpoints Automated)**
+
+**What Accomplished**:
+
+1. **Domain 39 Monitoring Automation (5 CronCreate checkpoints)** ✅:
+   - Created `DOMAIN_39_MONITORING_CHECKPOINTS.md` — comprehensive automation framework with agent prompt templates
+   - Scheduled 5 recurring monitoring jobs:
+     - T+3 (June 4 09:00 UTC, Job 04a817fe): Early signal check (target: 1+ response)
+     - T+7 (June 8 09:00 UTC, Job 482d87a0): Trajectory assessment (target: 2+ responses)
+     - T+14 (June 15 09:00 UTC, Job 5c4d34ab): **CRITICAL routing decision** — Path A/B/C gates Phase 2 activation
+     - T+30 (July 1 09:00 UTC, Job ee4f3469): Delayed response capture
+     - T+45 (July 16 09:00 UTC, Job 8bd8ca6c): Final consolidation & model learnings
+   - **Key**: T+14 checkpoint must complete BEFORE Domain 38 Tier A distribution (09:30 UTC June 15)
+
+2. **Stockbot Live Trading Monitoring (3 CronCreate checkpoints)** ✅:
+   - Scheduled 3 recurring monitoring jobs for June 2-23 live trading:
+     - June 9 09:00 UTC (Job c16eaa31): Z-score drift detection (Green/Yellow/Red/Critical decision tree)
+     - June 16 09:00 UTC (Job c580b064): Mid-window trend validation (is system stabilizing?)
+     - June 23 09:00 UTC (Job dffd738d): **CRITICAL Phase 4.4 decision gate** (>0% return, Sharpe >1.0 = approve expansion)
+
+3. **Orchestrator Activation Checklist (for 14:00-14:30 UTC)**:
+   - Created `ORCHESTRATOR_ACTIVATION_CHECKLIST_JUNE1.md` — step-by-step pre-flight checklist for monitoring activation
+   - 6 activation steps: (1) verify email completion, (2) update JSON, (3) verify CronCreate jobs, (4) log to WORKLOG, (5) commit files, (6) update CHECKIN
+
+**Impact**: 8 critical decision checkpoints across 2 projects now fully automated. No orchestrator intervention needed between now and T+3 (June 4) unless failures occur.
+
+**Timeline (Next 2.5 Hours)**:
+- **NOW–13:00 UTC** (2h 30min): Awaiting user email send (Domain 39 + Phase 6 Domain A/C recruitment emails)
+- **13:00–13:48 UTC**: User sends Domain 39 emails to 5 HHS policy organizations
+- **13:30–20:00 UTC** (parallel): Stockbot live trading session (JPM ridge_wf + AMZN lgbm_ho)
+- **14:00–14:30 UTC**: **ORCHESTRATOR ACTIVATION** — verify email completion, update JSON, confirm CronCreate jobs active
+  - Use `ORCHESTRATOR_ACTIVATION_CHECKLIST_JUNE1.md` as reference
+- **14:30+ UTC**: All monitoring automated; orchestrator can continue with other work or wind down for Day 1 evening
+
+**Critical Gates**:
+- **T+14 June 15 09:00 UTC**: Domain 39 routing decision (Path A/B/C) must complete before 09:30 Domain 38 distribution
+- **June 23 09:00 UTC**: Stockbot Phase 4.4 decision (expand live trading vs. extend Phase 4.3 monitoring)
+
+**Commits**:
+- `feat(resistance-research): Domain 39 monitoring automation setup (5 CronCreate checkpoints, T+3 to T+45)` (7f2015df)
+- `chore(orchestrator): session 2488 — Stockbot + Domain 39 monitoring automation (8 CronCreate checkpoints)` (ae93f336)
+- `feat(resistance-research): Orchestrator activation checklist for Domain 39 monitoring (June 1 14:00-14:30 UTC)` (e1e3b371)
+
+**Items Ready for 14:00+ UTC Execution**:
+- Phase 6 Domain A/C recruitment email sends (if not completed in morning window)
+- Phase 5 Wave 1+2 publication prep (staged for June 5 gate)
+- Stockbot market session monitoring (Z-score drift, thermal, order fills)
+- Phase 4 governance workshop facilitation prep (June 1 18:00 UTC)
+
+**What Blocks Me** (if any):
+- None — all infrastructure staged and ready. Orchestrator will activate monitoring at 14:00 UTC as scheduled.
+
+---
+
 ## Since Last Check-in (Session 2487, 2026-06-01 10:15 UTC — Phase 5/6 AUTO-FALLBACK ACTIVATION IMMEDIATE)
 
 **Session Status**: 🔴 **IN PROGRESS — CRITICAL: Phase 5/6 auto-fallback activation (May 31 deadline passed, executing now)**
