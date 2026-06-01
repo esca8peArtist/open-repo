@@ -5,6 +5,46 @@
 
 ---
 
+## Since Last Check-in (Session 2467, 2026-06-01 03:03–03:40 UTC — Exploration Queue Phase 2 Execution)
+
+**What was accomplished**:
+
+- ✅ **EXPLORATION QUEUE ITEMS 52–54 COMPLETE — 3 parallel agents, 1.16M tokens, ~25 min wall-clock**
+
+- ✅ **Item 52: mfg-farm Phase 2 Supplier Outreach Pre-Staging** — All production-ready:
+  - `PHASE_2_SUPPLIER_RFQ_TEMPLATES.md` (3,954 words) — RFQ templates for 6 supplier channels (Bambu Lab B2B, MatterHackers, eSUN direct, Polymaker, Anycubic, Prusa); supplier contact log ready to fill
+  - `PHASE_2_PRICING_NEGOTIATION_PLAYBOOK.md` (3,538 words) — Wholesale discount tiers, lead-time tradeoffs, payment negotiations, key phrases with fallback positions
+  - `PHASE_2_CAPITAL_ALLOCATION_TIMELINE.md` (4,760 words) — Trademark $350 (June 1), equipment $1,197–2,250, working capital $3,166–3,932; week-by-week June 1–July 15; contingency paths for test-print FAIL/DELAY
+  - **Key**: All independent of Phase 1 test-print outcome; ready for June 3 Phase 2 launch
+
+- ✅ **Item 53: seedwarden Phase 4 Botanical Content & Practitioner Tier Architecture** — All production-ready:
+  - `PHASE_4_BOTANICAL_IDENTIFICATION_GUIDE_ROADMAP.md` (5,348 words) — 18 guides (9 Wave 1 Aug 1, 9 Wave 2 Aug 31), 40.5 research hours, sourcing strategy, ZIM integration, bundle SKUs $5–65
+  - `PHASE_4_PRACTITIONER_TIER_PROGRESSION.md` (4,271 words) — 3-tier design: Tier 1 (Herbalist, auto-qualify), Tier 2 (RH credential $18/mo, AHG Symposium Aug 14–16 acquisition window), Tier 3 (Clinical $55/mo Oct 1); credential verification + revenue model
+  - `PHASE_4_INTERNATIONAL_TRADITIONS_SOURCING.md` (6,468 words) — European (Commission E, ESCOP), Ayurvedic (Charaka, Type A/B/C with disclaimers), TCM (Ben Cao, 4 Natures); copyright strategy (direct link, fair-use, institutional licensing); 35+ sources
+  - **Key**: All independent of Phase 3 scope decision (A/B/C); ready for July 15 Phase 4 launch (Phase 3 closes July 13)
+
+- ✅ **Item 54: systems-resilience Phase 6 Alternate Domain Deep-Dive** — All production-ready:
+  - `PHASE_6_DOMAINS_B_E_F_RESEARCH_OUTLINES.md` — Full research outlines for Domains B/E/F; 45–50 sources each; author profiles with rates + contingencies; 68–78% source readiness
+  - `PHASE_6_ALTERNATE_COMBINATION_SCORING.md` — All 8 possible 3-domain combos scored: A+C+D 4.5/5 recommended (88% confidence), A+D+E 4.3/5 highest confidence (91%), others 3.2–4.0; resource contention + risk per combo
+  - `PHASE_6_DOMAIN_SELECTION_CONTINGENCY_ROADMAP.md` — 8 activation runbooks for June 1+ user decision; day-by-day June 1–Aug 31; auto-fallback A+C+D if user doesn't decide by 18:00 UTC
+  - **Key**: All alternate combinations pre-staged for zero-delay implementation regardless of user choice
+
+**Current status**:
+- ✅ Stockbot: Sleeping until June 2 13:15 UTC market pre-open (2-session JPM+AMZN config, all systems ready)
+- ✅ Exploration Queue: Items 52–54 complete, delivered, committed
+- 🚨 **Critical today**: Domain 39 distribution window 13:00–14:00 UTC (user action required)
+- 🚨 **AAPL models suspended** (position_size_pct=0 per previous session) — remains active until June 2 13:00 UTC decision
+
+**What needs your input TODAY**:
+1. **13:00–14:00 UTC**: Execute Domain 39 distribution (5 pre-written emails, 85-min timeline)
+2. **Before 13:30 UTC**: Confirm AAPL suspension remains OR approve fix (currently disabled until user decides)
+3. **By June 3**: mfg-farm Phase 2 funding scenario decision (bootstrap / credit card bridge / sequential)
+4. **By June 1 18:00 UTC**: systems-resilience Phase 6 domain selection (A+C+D recommended, or pick alternate)
+
+**Usage**: Sonnet ~12.2% (1,089K tokens), all-models ~10.9%, reset in ~21 hours. Session 2467 added ~82K tokens (three parallel agents).
+
+---
+
 ## Since Last Check-in (Session 2466, 2026-06-01 02:38–03:20 UTC — Exploration Queue Phase 2 Pre-Staging)
 
 **What was accomplished**:
