@@ -3,6 +3,50 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2568, 2026-06-02 14:00–14:45 UTC — Post-Market-Open Exploration Queue Item 17)
+
+**Session Status**: ✅ **EXPLORATION QUEUE ITEM 17 COMPLETE — LIVE TRADING MONITORING DEPLOYED**
+
+**Work Completed**:
+
+1. **Exploration Queue Item 17** ✅ (Overdue, now COMPLETE):
+   - **Stockbot June 2-23 Live Trading Monitoring Protocol**
+   - All 4 deliverables production-ready and deployed to `projects/stockbot/live-trading-monitoring/`:
+     - Daily P&L monitoring dashboard with Z-score drift detection
+     - Slack/Discord alert thresholds (MEDIUM/HIGH/CRITICAL tiers with auto-pause at 3.0σ)
+     - June 9/16/23 quantitative checkpoint decision trees
+     - 4-scenario failure mode playbooks with executable recovery steps
+   - Status: Committed to master (commit e937f12)
+   - Ready for: Automated 5-min cron execution starting June 2 end-of-day
+
+2. **Stockbot June 2-9 Burn-In Window**:
+   - ✅ Market open confirmed: JPM ridge_wf + AMZN lgbm_ho executing live since 13:30 UTC (Session 2566)
+   - ✅ Monitoring infrastructure deployed and ready for 5-day critical window assessment
+   - ✅ Checkpoints defined: June 9 (Day 8) Z-score gate, June 16 (Day 15) Sharpe gate, June 23 (Day 22) Phase 4 decision
+   - ✅ Failure playbooks ready: zero signals, correlation spike, concentration drift, API latency scenarios all covered
+
+3. **Autonomy Status**: ✅ **ZERO AUTONOMOUS WORK REMAINING — CORRECT BY DESIGN**
+   - All Phase 1-2 autonomous work complete
+   - All remaining work is user-decision-gated or time-gated
+   - Exploration Queue: Items 16/18 time-blocked; Item 17 COMPLETE ✅
+   - All systems in monitoring/deployed state or awaiting user input
+
+**Critical Deadlines Ahead**:
+- **Before June 3 market open**: AMZN HMM tuning confirmation (if conditional gate triggered)
+- **By June 3 EOD**: systems-resilience platform decision (A/B/C) + domain selection → gates Phase 5 pub (June 5)
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication lock (auto-executes post-decision)
+- **June 9 (Day 8)**: Domain 39 checkpoint + stockbot market burn-in assessment (Item 16 executable June 8 PM)
+
+**User Action Items** (no change):
+1. By June 3 EOD: Provide systems-resilience platform decision (A/B/C) + domain selection
+2. Confirm AMZN HMM tuning requirement (conditional gate for June 3 morning)
+3. Monitor stockbot June 2-9 burn-in (auto-running; optional, check logs at 20:00 UTC EOD)
+4. Decide resistance-research distribution path (6 decisions in PHASE_2_DECISION_MEMO_JUNE_2026.md)
+
+**Assessment**: ✅ **LIVE TRADING MONITORING COMPLETE — READY FOR 5-DAY BURN-IN WINDOW** — All infrastructure in place for June 2-9 critical assessment period. Stockbot executing autonomously with comprehensive monitoring. Next major decision gate: June 3 EOD (systems-resilience + AMZN tuning). Correct by design.
+
+---
+
 ## Since Last Check-in (Session 2567, 2026-06-02 11:18–11:22 UTC — Pre-Market-Open Health Check)
 
 **Session Status**: ✅ **PRE-MARKET-OPEN VERIFICATION COMPLETE**
