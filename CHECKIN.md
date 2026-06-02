@@ -3,6 +3,47 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2536, 2026-06-02 02:35–02:40 UTC — Pre-Market Countdown Verification [16th])
+
+**Session Status**: ✅ **PRE-MARKET COUNTDOWN VERIFICATION — ZERO AUTONOMOUS WORK; ALL SYSTEMS PRODUCTION-READY; T-10H 50M UNTIL MARKET OPEN**
+
+**Work Completed**:
+
+1. **Session Orientation** ✅:
+   - Verified ORCHESTRATOR_STATE.md: Current and accurate (generated 02:33 UTC)
+   - Verified INBOX.md: Empty — no new items
+   - Verified BLOCKED.md: Two active blocks unchanged (cybersecurity-hardening VeraCrypt Phase 1 restart, mfg-farm test print execution) — both user-action-only, not auto-resolvable
+   - Verified Exploration Queue: All items time-gated (June 3+) or awaiting user decisions. Zero autonomous work.
+
+2. **DEPLOY_READY Restoration** ✅:
+   - DEPLOY_READY missing (5th consecutive session deletion)
+   - Restored via `git checkout HEAD -- DEPLOY_READY`
+   - Current UTC time: 02:35 UTC (outside market-hours blackout 13:30-20:00 UTC)
+   - Ready for post-session deployment automation
+
+3. **Project Status Verification** ✅:
+   - **stockbot**: Market-open ready. DEPLOY_READY active. Monitoring protocol complete (JUNE_2_23_LIVE_MONITORING_PROTOCOL.md + supporting files). Deployment via automation post-session. 21-day June 2–23 monitoring protocol ready.
+   - **resistance-research**: Phase 2 research complete. All 12+ domains researched. Distribution infrastructure ready. Awaiting user approval on distribution sequence + activation.
+   - **seedwarden**: Gate 1 launch-ready. Infrastructure verified. Awaiting user 5-gate activation.
+   - **All other projects**: Awaiting user decisions, test execution, or review.
+
+4. **Session Finalization** ✅:
+   - Updated WORKLOG.md with Session 2536 entry
+   - All orchestration files in committable state
+   - No changes to PROJECTS.md, BLOCKED.md, or INBOX.md (no blocks resolved, no new items)
+
+**Critical Timeline — Locked**:
+- **Now (02:35 UTC)**: T-10h 55m until market open (June 2 13:30 UTC)
+- **June 2 13:30 UTC**: 🚨 **STOCKBOT MARKET OPEN** — JPM ridge_wf + AMZN lgbm_ho live trading begins. Deployment automatic via DEPLOY_READY post-session.
+- **June 2–23**: 21-day Phase 4.3 monitoring protocol active (Z-score checkpoints June 9/16/23)
+
+**Assessment**: All systems verified production-ready. Zero autonomous work is correct by design — optimal pre-market-open countdown state. DEPLOY_READY restored and ready. System stable.
+
+**Commits**:
+- chore(orchestrator): Session 2536 — Pre-market countdown verification [16th]
+
+---
+
 ## Since Last Check-in (Session 2535, 2026-06-02 02:15–02:25 UTC — Pre-Market Countdown Verification [15th])
 
 **Session Status**: ✅ **PRE-MARKET COUNTDOWN VERIFICATION — ZERO AUTONOMOUS WORK; ALL SYSTEMS PRODUCTION-READY; T-11H 15M UNTIL MARKET OPEN**

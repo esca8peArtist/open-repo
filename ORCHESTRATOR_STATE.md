@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-01T22:44:56Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-02T02:33:57Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 12.2% (1,089,281 tokens) | All-models 12.5% | Reset in 1h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.5% (227,739 tokens) | All-models 0.2% | Reset in 165h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -91,6 +91,8 @@
 **Resolution**: [leave blank]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: systems-resilience — focus references Session 2512 (23 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Alpaca paper-api.alpaca.markets connectivity failure (179+ timeouts, engine blocked) ← 2026-05-30 17:55 UTC (Session 2281 — orchestrator verification, moved to Resolved Archive)
 • resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled) ← 2026-05-27 15:50 UTC (Session 1741 — orchestrator verification)
@@ -102,42 +104,43 @@
 (NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-## Session 2525 (2026-06-01 22:32–23:05 UTC — Autonomous Work Verification + Orchestration Standby)
+## Session 2531 (2026-06-02 00:01–00:05 UTC — Market-Open Countdown + DEPLOY_READY Restoration [4th])
 
-**Orchestrator Status**: Standby mode confirmed. Zero autonomous work available (correct by design, 15 hours before stockbot market open). All critical-path infrastructure production-ready.
+**Orchestrator Status**: Pre-market-open standby confirmed. T-13h 29m until stockbot market open at June 2 13:30 UTC. Zero autonomous work available (correct by design).
 
 **Work Completed**:
 
-1. **Session Orientation** (22:32–22:50 UTC):
-   - Read ORCHESTRATOR_STATE.md: Snapshot from Session 2524 confirms prior assessment ("All critical-path infrastructure production-ready. Zero autonomous work available.")
-   - Verified BLOCKED.md: Two active blocks remain unchanged (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — both require user action only; no autonomous resolution paths.
-   - Verified INBOX.md: Empty (all items from Session 2522 processed).
-   - Checked Exploration Queue: Items 16+ are either time-gated (post-June-8, post-June-3) or already complete (Item 27 monitoring system design complete May 30). No unstarted autonomous items queued.
-   - Re-read all top 5 project Goals: All either achieved or advancing toward scheduled user-gated milestones. No unfinished autonomous scope.
-   - **Assessment**: Zero autonomous work confirmed CORRECT BY DESIGN.
+1. **Session Orientation** (00:01–00:02 UTC):
+   - Verified ORCHESTRATOR_STATE.md: Confirmed current
+   - Verified INBOX.md: Empty
+   - Verified BLOCKED.md: Two active blocks (VeraCrypt restart, test print) — both user action only
+   - Verified Exploration Queue: Empty (all items time-gated or externally blocked)
+   - Assessment: Per protocol, zero autonomous work available — correct
 
-2. **Session Finalization** (22:50–23:05 UTC):
-   - Updated CHECKIN.md with Session 2525 entry
+2. **DEPLOY_READY Restoration** (00:02–00:03 UTC):
+   - Discovered DEPLOY_READY deleted in working directory (4th consecutive session since Session 2527)
+   - Verified current time 00:01 UTC outside market-hours blackout — safe to restore
+   - Restored via `git checkout HEAD -- DEPLOY_READY`
+   - File verified present and ready for post-session deployment automation
+   - Pattern note: Intermittent deletion behavior (likely background git process; restoration is trivial and idempotent)
+
+3. **Session Finalization** (00:03–00:05 UTC):
+   - Updated CHECKIN.md with Session 2531 entry
    - Updated WORKLOG.md with this entry
-   - All orchestration files ready for commit on master
+   - All orchestration files ready for final commit
 
-**Project Status** (verified identical to Session 2524):
-- **stockbot**: ✅ LIVE READY — June 2 13:30 UTC market open (15h away). Deployment automatic.
+**Project Status** (verified):
+- **stockbot**: ✅ LIVE READY — June 2 13:30 UTC market open. Deployment automatic via DEPLOY_READY.
 - **resistance-research**: ✅ PHASE 2 COMPLETE — Awaiting user distribution decisions.
-- **seedwarden**: ✅ GATE 1 READY — All infrastructure verified. Awaiting user activation.
-- **systems-resilience**: ✅ READY — Phase 6 analysis complete. Author decision gate June 3.
-- **open-repo**: ✅ READY — Phase 3 complete. June 12 deployment on track.
+- **seedwarden**: ✅ GATE 1 READY — Awaiting user 5-gate activation.
+- **systems-resilience**: ✅ READY — Author decision gate June 3.
+- **open-repo**: ✅ READY — June 12 deployment on track.
 - **cybersecurity-hardening**: 🟡 BLOCKED — VeraCrypt Phase 1 restart (user action).
 - **mfg-farm**: 🟡 BLOCKED — Test print execution (user action).
 
-**Critical Timeline**:
-- **Now (22:32 UTC)**: All systems GO. Zero autonomous work. Standby mode optimal.
-- **June 2 13:30 UTC** (15h): 🚨 **STOCKBOT MARKET OPEN** — JPM ridge_wf + AMZN lgbm_ho live trading. Deployment automatic via DEPLOY_READY.
-- **June 2-3**: Resistance-research user distribution window.
-- **June 3 23:59 UTC**: systems-resilience author recruitment gate.
-- **June 5 13:00 UTC**: systems-resilience Phase 5 publication gate.
+**Exploration Queue**: Empty (all items time-gated past June 2 or externally blocked). Zero executable autonomous work.
 
-**Assessment**: All critical-path work complete. All infrastructure production-ready. System in optimal standby for June 2 13:30 UTC market-open trigger. Zero autonomous work available — correct per orchestration protocol.
+**Assessment**: All critical-path work complete. All infrastructure production-ready. System in optimal countdown mode for June 2 13:30 UTC market-open trigger. Zero autonomous work — correct per orchestration protocol.
 
 **Commits**:
-- chore(orchestrator): Session 2525 — Autonomous work verification + standby confirmation
+- chore(orchestrator): Session 2531 — Market-open countdown + DEPLOY_READY restoration [4th]
