@@ -24,15 +24,17 @@ LOCAL_DIR="$(cd "$(dirname "$0")/.." && pwd)/projects/stockbot"
 
 # ── Uncommitted-changes guard ────────────────────────────────────────────────
 # HARD BLOCK: deploying uncommitted changes is how critical fixes get silently
-# overwritten. If src/, scripts/, or config/ has local edits not in git, the
-# next orchestrator session can revert the file and the next deploy nukes Jetson.
+# overwritten. If any deployed file has local edits not in git, the next
+# orchestrator session can revert the file and the next deploy nukes Jetson.
 # Workflow must be: commit → deploy. Never: edit → deploy → maybe commit later.
-_DIRTY=$(git -C "${LOCAL_DIR}" status --porcelain -- src/ scripts/ config/ 2>/dev/null)
+_DIRTY=$(git -C "${LOCAL_DIR}" status --porcelain -- \
+  src/ scripts/ config/ Dockerfile.jetson docker-compose.jetson.yml 2>/dev/null)
 if [ -n "$_DIRTY" ]; then
-  echo "[deploy] ABORT: uncommitted changes in stockbot src/scripts/config/."
+  echo "[deploy] ABORT: uncommitted changes in stockbot deployment files."
   echo "         Commit or stash first, then re-run deploy."
   echo ""
-  git -C "${LOCAL_DIR}" status --short -- src/ scripts/ config/
+  git -C "${LOCAL_DIR}" status --short -- \
+    src/ scripts/ config/ Dockerfile.jetson docker-compose.jetson.yml
   exit 1
 fi
 # ── End uncommitted-changes guard ────────────────────────────────────────────
@@ -55,6 +57,10 @@ rsync -az --delete \
   --exclude='__pycache__/' \
   --exclude='*.pyc' \
   "${LOCAL_DIR}/scripts/" "${JETSON}:${REMOTE_DIR}/scripts/"
+
+echo "[deploy] Syncing Dockerfile and docker-compose to Jetson…"
+rsync -az "${LOCAL_DIR}/Dockerfile.jetson" "${JETSON}:${REMOTE_DIR}/Dockerfile.jetson"
+rsync -az "${LOCAL_DIR}/docker-compose.jetson.yml" "${JETSON}:${REMOTE_DIR}/docker-compose.jetson.yml"
 
 echo "[deploy] Rebuilding and restarting containers…"
 ssh "${JETSON}" "
