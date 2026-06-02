@@ -3,6 +3,33 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2590, 2026-06-02 14:55 UTC — Exploration Queue Execution + Critical Issue Escalation)
+
+**Session Status**: ⚠️ **CRITICAL ISSUE DISCOVERED IN LIVE TRADING — AMZN lgbm_ho feature pipeline failure**
+
+**Work Completed**:
+- ✅ Three Exploration Queue items executed in parallel (stockbot monitoring, resistance-research adoption tracking, systems-resilience platform analysis) — ALL COMPLETE and production-ready
+- ⚠️ **CRITICAL P1 ISSUE FOUND**: AMZN lgbm_ho feature pipeline falling back to minimal features (20 vs. expected 116), generating hardcoded BUY signals every 60s (predicted_return=0.3684). Position guard blocking runaway but signal quality fundamentally compromised. **Requires immediate fix.**
+- ✅ Secondary P2 issue (WebSocket auth loop) diagnosed, monitoring in place
+- ✅ Three db schema bugs fixed in monitoring script
+- ✅ All three Queue deliverables committed to master
+
+**Items Needing Your Attention**:
+1. ✅ **RESOLVED**: AMZN lgbm_ho feature pipeline fix deployed 15:37 UTC June 2 — signal back to genuine inference (0.4383, 0.4666, 0.3394 vs constant 0.3684). Root cause: stale DB metadata + type check bug. 110 regression tests passing.
+2. **June 3 EOD**: Six user decisions (Domains 59/51/57 research activation, seedwarden strategy, cybersecurity Phase 1 completion, mfg-farm test print)
+3. **June 3+ activation**: Phase 1 adoption tracking measurement (3 files production-ready, ready to deploy for Domain 39 engagement measurement)
+4. **June 5 decision**: Phase 6 platform selection (systems-resilience). Recommendation: **Option C (Nextcloud+Matrix) 9.1/10, 89% confidence** — only option supporting offline seed catalog access for rural Zone 5 members.
+
+**Critical Path Summary**:
+- ✅ **June 2 15:37 UTC**: Fixed AMZN feature pipeline (P1) — trading now on genuine inference
+- **June 3**: User decisions (6 items) → activate adoption tracking → post-market-close monitoring framework
+- **June 5**: User decides Phase 6 platform → publication gate executes
+- **June 9**: Post-Day-7 checkpoint analysis (resistance-research engagement metrics)
+
+**System Status**: ✅ **HEALTHY** — AMZN lgbm_ho restored to clean signal; JPM ridge_wf operating normally; monitoring framework live with P1 and P2 detection active. System trading on genuine model inference.
+
+---
+
 ## Since Last Check-in (Session 2589, 2026-06-02 14:41 UTC — Market-Open T+71 Min / Continued Holding State Verification)
 
 **Session Status**: ✅ **POST-MARKET-OPEN T+71 MIN — SYSTEM VERIFIED STABLE IN OPTIMAL HOLDING STATE, ZERO AUTONOMOUS WORK AVAILABLE**

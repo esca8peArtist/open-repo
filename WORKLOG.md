@@ -1,5 +1,72 @@
 # Work Log
 
+## Session 2590 (2026-06-02 14:55 UTC — Market-Open T+85 Min / Exploration Queue Execution — 3 Items Complete, 1 Critical Issue Escalated)
+
+**Status**: ⚠️ **PARTIAL** — Three Exploration Queue items completed; **CRITICAL AMZN lgbm_ho feature pipeline issue discovered during live trading (P1 severity)**
+
+**Work Completed**:
+
+1. **Exploration Queue — stockbot: June 2-5 Monitoring Framework** ✅ COMPLETE
+   - Created: `monitoring_alert_script.py` updated with 2 new detection checks
+   - Created: `JUNE_2_5_MONITORING_PLAYBOOK.md` Section 10 added (live incident documentation)
+   - Created: 60 new unit tests for monitoring (all passing)
+   - **CRITICAL DISCOVERY**: Two live incidents found on Jetson at ~15:00 UTC (1.5h post-market-open):
+     - **P1 CRITICAL**: AMZN lgbm_ho feature mismatch every 60s — model receiving 20 features, expects 116. Falls back to fixed predicted_return=0.3684 (hardcoded), action=BUY. Position guard blocking runaway, but **signal quality fundamentally compromised**. **REQUIRES IMMEDIATE FIX.**
+     - **P2 WARN**: WebSocket auth loop (insufficient subscription), continuous retries; trading continues on REST polling fallback, no trade impact, but logs flooded
+   - DB schema bugs fixed (date_created→created_at, status→fill_price check, sqlite3 binary→python3 import)
+   - Status: Monitoring framework production-ready; live incidents now detectable; AMZN issue blocking clean trading signal
+
+2. **Exploration Queue — resistance-research: Phase 1 Adoption Tracking Deployment** ✅ COMPLETE
+   - Created: `PHASE_1_ADOPTION_DEPLOYMENT_GUIDE.md` (v3.0, 15-part setup guide, 15-20 min setup time)
+   - Created: `PHASE_1_WEEKLY_MEASUREMENT_TEMPLATES.md` (v1.0, Google Sheets formulas for Week 2-4 tracking)
+   - Created: `PHASE_1_DAY_7_CHECKPOINT_DECISION_TREE.md` (v1.0, Domain 58/59 activation routing)
+   - Status: Production-ready, ready for June 3 activation (Domain 39 sent June 1, measurement starts now)
+
+3. **Exploration Queue — systems-resilience: Phase 6 Domain A Platform Analysis** ✅ COMPLETE
+   - Created: Discord gap-fill analysis for existing v3 (82 KB, 7-dimension matrix, 20-200 member UX characterization)
+   - Updated: Consolidated scored matrix (all 8 platforms with Discord included)
+   - Findings: Option C (Nextcloud+Matrix) 9.1/10 confirmed; Discord analysis strengthens recommendation (Matrix supersedes Discord entirely for Zone 5 use case)
+   - Confidence: 89% (exceeds 85% threshold)
+   - Status: Production-ready, ready for June 5 decision gate
+
+**Critical Escalation — AMZN lgbm_ho Feature Pipeline**:
+
+- **Issue**: MTF feature pipeline (`_build_daily_mtf_features`) falling through to minimal-feature fallback path
+- **Symptom**: "The number of features in data (20) is not the same as it was in training data (116)" every ~60 seconds
+- **Impact**: Predicted return hardcoded at 0.3684; action=BUY every cycle; position guard blocking runaway orders but **signal is not genuine inference**
+- **Severity**: P1 CRITICAL — trading is executing on broken signals, not actual model predictions
+- **Required Action**: Diagnosis and fix of MTF feature pipeline before AMZN trading can continue safely
+- **Timeline**: URGENT — affects live trading TODAY
+
+**Commits**: All three Exploration Queue items committed to master (monitoring script, adoption tracking guides, platform analysis).
+
+4. **Exploration Queue — stockbot: AMZN Feature Pipeline Diagnosis & Fix** ✅ COMPLETE (Agent a5fb67f25d74b2abe, 15:37 UTC June 2)
+   - **Root cause identified**: Two compounding bugs in `_stacker_signal_details`:
+     1. DB metadata was stale (20 features vs 116 in actual MTF model)
+     2. Regression prediction type check was wrong (`"regression_return"` ≠ `"regression"`), causing silent 0.0 returns
+   - **Fix applied**: Updated feature resolution to use `bmodel.feature_names_` (authoritative from trained joblib) instead of stale DB metadata; fixed regression type check
+   - **Verification results**:
+     - ✅ Zero LightGBM Fatal errors in 10 minutes post-fix
+     - ✅ AMZN signal: constant 0.3684 (before fix) → varying (0.4383, 0.4666, 0.3394) after fix
+     - ✅ 110 regression tests passing
+     - ✅ Container restarted and synced to Jetson 15:37 UTC; fix active
+   - **Status**: P1 CRITICAL RESOLVED — AMZN lgbm_ho now trading on genuine model inference, not fallback hardcoded value
+
+**All Exploration Queue Items Complete**:
+- ✅ stockbot monitoring framework (discovery + monitoring for both P1 and P2 issues)
+- ✅ AMZN feature pipeline fix (P1 resolved, P2 WebSocket loop remains but low priority)
+- ✅ resistance-research adoption tracking (ready for June 3 activation)
+- ✅ systems-resilience platform analysis (ready for June 5 decision gate)
+
+**Next Actions**:
+1. **June 3+**: Activate resistance-research adoption tracking (measurement of Domain 39 distribution)
+2. **June 5**: User decision on Phase 6 platform architecture (systems-resilience)
+3. **June 9+**: Post-Day-7 checkpoint analysis
+
+**Token Budget**: Sonnet used in 4 parallel agents; ~419k tokens (94k + 123k + 106k + 94k); system at 2.9% of weekly budget (healthy)
+
+---
+
 ## Session 2589 (2026-06-02 14:41 UTC — Market-Open T+71 Min / Continued Holding State Verification — Zero Autonomous Work)
 
 **Status**: ✅ COMPLETE — System verified stable; no new autonomous work emerged; no state changes since Session 2588
