@@ -3,6 +3,57 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2640, 2026-06-02 23:36 UTC — Final Pre-Market Checkpoint: All Autonomous Work Complete, Systems Ready)
+
+**Session Status**: ✅ **CHECKPOINT COMPLETE — AWAITING JUNE 3 CRITICAL EVENTS** — Verified all blocks and exploration queue. No autonomous work remains. All critical infrastructure confirmed ready. Stockbot set for 13:30 UTC market open. User decisions due June 3 EOD on Phase 2 domains, seedwarden activation, and systems-resilience platform.
+
+**Work Completed**:
+- ✅ **Block Assessment**: Two active blocks remain unresolvable autonomously (cybersecurity-hardening VeraCrypt restart, mfg-farm test print — both user actions). Checked mfg-farm test-print-results directory; no results yet. Block status unchanged.
+- ✅ **Exploration Queue Verification**: 6 items active, all blocked on user decisions or SSH auth (Jetson EOD pull). SSH to Jetson failed (no authorized keys). No items can be unblocked autonomously.
+- ✅ **Project Status Scan**: All 7 top projects verified in expected state (ready, blocked, or awaiting external events). No unfinished autonomous scope identified.
+- ✅ **Critical Infrastructure Confirmation**: Stockbot, Resistance-Research, Seedwarden, Systems-Resilience all staged and ready. No degradation detected since Session 2639.
+
+**System Status** (unchanged from Session 2639):
+- 🟢 **Stockbot**: Fully ready for June 3 13:30 UTC market open. Credentials fixed, database initialized, Docker entrypoint deployed, monitoring framework active. Next automatic wake: June 3 13:15 UTC (no manual action required).
+- 🟢 **Resistance-Research**: Domain 59 distribution materials fully ready for user execution (research doc 7,200 words, Gist live, 5 templates ready for name/contact fill, ~30-45 min user work). Phase 2 tracking automation deployed. Awaiting user decisions on other domains by June 3 EOD.
+- 🟡 **Seedwarden**: Gate 1 infrastructure verified production-ready. All checklists documented. Awaiting user activation (user decision required).
+- 🟡 **Systems-Resilience**: Phase 6 complete with 3 platform options analyzed. Decision checklist ready. Awaiting user selection by June 3 EOD.
+- 🔴 **Cybersecurity-Hardening**: Phase 1 blocked on Windows VeraCrypt pre-boot restart (manual user action required). No autonomous path.
+- 🔴 **Mfg-Farm**: All pre-print deliverables complete. Test print execution pending (manual user action required). Verification check: no test-print-results directory exists yet.
+
+**Needs Your Input** (due June 3 EOD):
+
+1. **Domain 59 Distribution** — USER EXECUTION READY
+   - Fill `domain-59-send-templates.md` (2 fields × 5 emails = 10 text replacements, ~5 min)
+   - Send sequence: June 3 morning (CBPP, ITEP) → June 3 afternoon (NWLC) → June 4 morning (MomsRising, AFL-CIO)
+   - Impact: 26M+ US children affected by Senate Finance CTC markup window (open through June 30)
+
+2. **Phase 2 Domain Decisions** — GUIDANCE PROVIDED IN PHASE_2_DECISION_MEMO_JUNE_2026.md
+   - Domain 59: Execute this week (above)
+   - Domain 51: Recommend June 9-12 activation (CA Fair Elections deadline July 1)
+   - Domain 57: August 10 distribution
+   - Domains 48/49-50/54: Guidance for authorization/timing in memo
+
+3. **Seedwarden Gate 1 Activation** — USER GO-AHEAD REQUIRED
+   - All infrastructure verified. 5 user action gates documented.
+   - Timeline: Complete gates (2-3 hrs) → autonomous pre-launch → launch day
+
+4. **Systems-Resilience Platform Selection** — DECISION REQUIRED BY JUNE 3 EOD
+   - Phase 6 complete with 3 options (Nextcloud $0/yr, Discourse $60-829/yr, Mighty Networks $950/yr)
+   - Decision checklist ready in `PHASE_6_DECISION_CHECKLIST.md`
+
+**Assessment**:
+All autonomous pre-work is complete. System is at natural checkpoint before two critical June 3 events: (1) Market open 13:30 UTC (automatic orchestrator wake + monitoring), (2) User decision deadline 23:59 UTC. No further autonomous work available until user decisions or market completion.
+
+**Next Scheduled Work**:
+1. **June 3 13:15 UTC**: Orchestrator auto-wake for stockbot market open monitoring (scheduled via cron)
+2. **June 3 13:30–20:00 UTC**: Market execution with live monitoring available
+3. **June 3 20:00+ UTC**: Post-market analysis (Exploration Queue Item 52)
+4. **June 3 EOD**: User submits Phase 2/seedwarden/systems-resilience decisions
+5. **June 4+**: Execute per user decisions + market results
+
+---
+
 ## Since Last Check-in (Session 2639, 2026-06-02 23:26 UTC — Pre-Market-Open Checkpoint + System Readiness Verification)
 
 **Session Status**: ✅ **SYSTEM READY FOR JUNE 3 MARKET OPEN** — Orchestrator orientation confirmed all critical infrastructure production-ready. Stockbot fully prepared for 13:30 UTC market execution. All 2 active blocks require manual user action (VeraCrypt restart, 3D printer test print). No new autonomous work available (scheduled market open + user-decision gates).
