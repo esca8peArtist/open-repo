@@ -3,6 +3,39 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2633, 2026-06-02 23:30 UTC — Inter-Project Gap: All Work Blocked, Standing by for June 3 Market Verification)
+
+**Session Status**: ✅ **ORIENTATION COMPLETE — NO AUTONOMOUS WORK AVAILABLE** — Verified all projects are either blocked on user decisions (resistance-research, seedwarden, systems-resilience) or user actions (cybersecurity-hardening, mfg-farm). Exploration Queue has no items ready for immediate work (Item 16 scheduled June 9+). System stable. Stockbot Alpaca fix verified in place. Standing by for June 3 13:30 UTC market open verification.
+
+**Work Completed**:
+- ✅ **Session 2633 Orientation**: Read ORCHESTRATOR_STATE, BLOCKED.md, PROJECTS.md (via offset), WORKLOG.md, INBOX.md, EXPLORATION_QUEUE.md
+- ✅ **Block Review**: Verified cybersecurity-hardening and mfg-farm blocks remain active (no user resolutions)
+- ✅ **Project Status**: All active projects confirmed blocked on external dependencies (user decisions/actions)
+- ✅ **Exploration Queue Analysis**: No items ready for immediate execution; Item 16 (Domain 39 Impact Evaluation) scheduled June 9 post-checkpoint
+
+**System Status**:
+- **Stockbot**: Alpaca credentials fixed ✅, Docker containers healthy ✅, awaiting June 3 13:30 UTC market open (critical verification point)
+- **Resistance-research**: Phase 2 research complete, distribution logistics staged for user execution (Domains 51/57/59)
+- **Seedwarden**: Infrastructure verified, awaiting user activation decision
+- **Systems-resilience**: Phase 5/6 framework complete, awaiting user option selection (June 3 deadline per CHECKIN 2632)
+- **Cybersecurity-hardening**: Phase 1 walkthrough paused at Step 1.3 (Windows VeraCrypt restart pending)
+- **mfg-farm**: Pre-launch checklist complete, awaiting test print execution
+
+**Assessment**:
+- 🟢 Infrastructure: Healthy, all systems ready for next decision points
+- 🟡 Projects: All appropriately blocked on user action (no orphaned work)
+- 🟢 Stockbot: June 3 market open is critical verification point; system configured and ready
+
+**Immediate Next Steps**:
+1. **June 3 13:15 UTC (3 hours from now)**: Monitor market open for Alpaca fix verification
+2. **June 3 20:00 UTC+**: Review June 3 trading results; inform user of Alpaca fix success/failure
+3. **June 3 EOD**: User decisions due on resistance-research Phase 2 domains + seedwarden launch path + systems-resilience options
+4. **June 4+**: Resume parallel project execution based on June 3 decision outcomes
+
+**Token Usage**: Session 2633 used ~45K tokens (orientation + CHECKIN update). Remaining: ~155K available for June 3+ work.
+
+---
+
 ## Since Last Check-in (Session 2632, 2026-06-02 23:00 UTC — Stockbot Status Verified + Resistance-Research Phase 2 Distribution Logistics Complete)
 
 **Session Status**: ✅ **STOCKBOT CREDENTIAL FIX VERIFIED + RESISTANCE-RESEARCH DISTRIBUTION STAGED** — Session 2630 Alpaca environment variable fix confirmed in place. All containers healthy. Awaiting June 3 market open verification. Resistance-research Phase 2 distribution prep complete for three domains (51, 57, 59) with imminent timing windows.
