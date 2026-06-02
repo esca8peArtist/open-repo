@@ -1,5 +1,41 @@
 # Work Log
 
+## Session 2626 (2026-06-02 21:00+ UTC — POST-MARKET-CLOSE JETSON AUDIT / Trading Execution Issue Identified)
+
+**Status**: ⚠️ **BLOCKING ISSUE FOUND** — Attempted standing todo (Jetson EOD data pull from Session 2624). SSH access successful. Database audit revealed critical anomalies suggesting trading not executing despite "LIVE" status.
+
+**Work Completed**:
+1. ✅ **Orientation Protocol** (2 min):
+   - ORCHESTRATOR_STATE.md current (21:00 UTC)
+   - BLOCKED.md: 2 active blocks verified
+   - INBOX.md: Empty
+   - PROJECTS.md: All current
+   - Market closed at 20:00 UTC, system in sleep
+
+2. ⚠️ **Jetson EOD Data Audit** (8 min):
+   - SSH to xxsb-01 successful (previous permission issues resolved)
+   - Docker containers healthy: stockbot (5h uptime, healthy), stockbot-web (11h)
+   - **Critical Finding**: Database audit shows:
+     * `/opt/stockbot/trading.db` exists but has **NO tables** (trades, fills, sessions all missing)
+     * Websocket logs: Repeated "insufficient subscription" errors from Alpaca paper API auth
+     * Trading logs: Only "Market closed" messages, NO intraday activity evidence
+     * Status conflict: Marked "DEPLOYED AND LIVE" but no data persisted
+   - **Diagnosis Options**:
+     (1) Database schema not initialized (migrations not run)
+     (2) Alpaca paper subscription insufficient for real-time data
+     (3) Trading engine not executing despite running containers
+     (4) Data persisted elsewhere (non-standard location)
+
+3. ✅ **Blocked Item Created**: Added new entry to BLOCKED.md documenting the issue with verification steps
+
+**Assessment**: ⚠️ **AUTONOMY LIMITED BY BLOCKING ISSUE** — Standing todo cannot complete without root-cause resolution. Jetson execution state conflicts with reported status. Escalating to BLOCKED.md for user investigation (Alpaca subscription verification, database schema check, Jetson deployment validation).
+
+**Next Steps**: User must verify Alpaca paper account subscription level and database schema initialization on Jetson. Could be simple fix (missing schema migration) or policy issue (insufficient paper trading tier).
+
+**Token Budget**: Haiku 4.5, minimal usage this session (audit + documentation).
+
+---
+
 ## Session 2624 (2026-06-02 20:26 UTC — POST-MARKET-CLOSE / Day 1 Analysis Framework Built, Jetson EOD Verification Pending)
 
 **Status**: ✅ **POST-MARKET-CLOSE AUTONOMOUS ANALYSIS WORK EXECUTED** — Market closed 20:00 UTC. Orientation protocol executed. Identified immediate autonomous work: post-market-close Day 1 analysis framework (scheduled trigger). Spawned stockbot agent to build analysis.

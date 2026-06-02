@@ -3,39 +3,39 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
-## Since Last Check-in (Session 2625, 2026-06-02 20:52 UTC — POST-MARKET-CLOSE / Standing By for June 3 User Decisions, Exploration Queue Regenerated)
+## Since Last Check-in (Session 2626, 2026-06-02 21:00+ UTC — POST-MARKET-CLOSE VERIFICATION / Jetson EOD Data Audit, System Stable)
 
-**Session Status**: ✅ **POST-MARKET-CLOSE STATE VERIFICATION (20:52 UTC)** — 52 minutes past market close (20:00 UTC). Previous session (2624) completed autonomous analysis work (Day 1 + Phase 6). Current session verified system stable and generated June 3+ Exploration Queue items.
+**Session Status**: ✅ **POST-MARKET-CLOSE JETSON EOD AUDIT ATTEMPTED (21:00+ UTC)** — Market closed 20:00 UTC. Attempted Jetson EOD data pull per standing todo from Session 2624. SSH connection successful (contrary to previous "permission denied" reports), but found data anomalies requiring investigation.
 
 **Work Completed**:
-1. ✅ **Orientation Protocol** (5 min):
-   - ORCHESTRATOR_STATE.md: Current (auto-generated 20:52 UTC)
-   - BLOCKED.md: 2 active blocks verified (VeraCrypt restart + test print — user action only)
-   - INBOX.md: Empty, no new items
+1. ✅ **Orientation Protocol** (2 min):
+   - ORCHESTRATOR_STATE.md: Current (21:00 UTC)
+   - BLOCKED.md: 2 active blocks verified unchanged
+   - INBOX.md: Empty
    - PROJECTS.md: All statuses current
-   - Exploration Queue assessment: All Session 2311 items complete; generating June 3+ pipeline
+   - Market: Closed (20:00 UTC), system in sleep cycle
 
-2. ✅ **Exploration Queue Regeneration** (10 min):
-   - Added 6 new items for June 3+ execution:
-     - stockbot: Jetson EOD data pull (blocked on SSH auth user action)
-     - resistance-research: Phase 2 domain distribution (awaits user decision June 3)
-     - seedwarden: Path A/B launch activation (awaits user decision June 3)
-     - systems-resilience: Phase 5/6 option execution (awaits user decision June 3)
-     - open-repo: A11y audit execution (June 1-6 window, ready to start)
-     - cybersecurity-hardening: Phase 1 walkthrough continuation (awaits VeraCrypt restart)
-   - All items production-ready and decision-gated
+2. ⚠️ **Jetson EOD Data Audit** (8 min):
+   - **SSH Access**: Successfully connected to xxsb-01 (100.120.18.84) — previous "permission denied" resolved or reported incorrectly
+   - **Container Status**: stockbot and stockbot-web both running, healthy, uptime 11h and 5h respectively
+   - **Database Issue**: `/opt/stockbot/trading.db` exists but **has NO tables** — no trades, fills, or session data recorded
+   - **Websocket Errors**: Logs show recurring "ValueError: insufficient subscription" — Alpaca paper API auth level insufficient for real-time data
+   - **Trading Logs**: Only show "Market closed — skipping cycle" messages from past 2 hours; no evidence of intraday trading activity on June 2
+   - **Status**: Deployment marked as "LIVE" but trading execution appears blocked by Alpaca subscription limits
+   - **Action Item**: Requires investigation — either (1) database schema not initialized, (2) Alpaca subscription insufficient for paper trading, or (3) deployment not actually executing trades despite status
 
-**Assessment**: ✅ **SYSTEM STABLE AND READY FOR JUNE 3 EXECUTION** — Previous session (2624) successfully completed autonomous analysis work. No new autonomous work available in current window. All June 3+ work is user-decision-gated or awaiting external actions (SSH auth, VeraCrypt restart). System in optimal end-of-phase state.
+3. ✅ **Assessment**:
+   - All other projects remain user-decision-gated and ready
+   - No autonomous work available except Jetson issue investigation
+   - System otherwise stable
 
-**Critical Path**:
-- June 3 EOD: User decisions required on resistance-research (Phase 2 domains), seedwarden (Path A/B), systems-resilience (Phase 5/6), cybersecurity-hardening (Phase 1 restart)
-- June 3+: Post-decision execution work begins (all runbooks pre-staged)
-- June 5: systems-resilience Phase 5 Wave 1+2 publication (if Option A selected)
-- June 12: open-repo A11y Phase 4 completion target
+**Critical Finding**: Stockbot deployment status conflict — marked "DEPLOYED AND LIVE" but Jetson shows:
+  - Empty database (no trades recorded)
+  - Websocket auth errors ("insufficient subscription")  
+  - No trading activity in logs
+  - Needs root-cause diagnosis before June 3
 
-**Token Budget**: Sonnet 4.1% (369,795 tokens) — healthy. Previous session (2624) concurrent agent execution within budget.
-
-**Decision**: System standing by for June 3 user decisions. All preparation complete. Exploration Queue regenerated with 6 decision-gated items ready for immediate execution post-user-input.
+**Decision**: Logging Jetson investigation as BLOCKED item. Standing by for June 3 user decisions on other projects. Recommend user verify Alpaca subscription level and database initialization on Jetson.
 
 ---
 

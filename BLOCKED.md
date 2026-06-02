@@ -53,6 +53,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — Jetson trading execution investigation (data anomaly)
+**Date blocked**: 2026-06-02
+**Context**: Session 2626 (21:00 UTC) attempted Jetson EOD data pull per standing todo. SSH connection successful (contrary to Session 2624 reports). However, investigation revealed: (1) Jetson database at `/opt/stockbot/trading.db` exists but has NO tables (no trades, fills, sessions recorded); (2) Websocket logs show repeated "insufficient subscription" auth errors from Alpaca paper API; (3) Container logs show only "Market closed — skipping cycle" messages with no evidence of intraday trading on June 2; (4) Project status marks system as "DEPLOYED AND LIVE" but trading execution appears blocked.
+**What I need**: Root-cause diagnosis of Jetson trading execution. Possibilities: (1) Database schema not initialized (migration not run), (2) Alpaca paper subscription insufficient for real-time data, (3) Trading engine not actually executing despite running containers. Verify: (a) Alpaca account subscription level (paper trading enabled?), (b) Database schema initialization (run migrations), (c) Actual fills from June 2 market hours (check Alpaca account directly).
+**Verify with**: `ssh xxsb-01 'sqlite3 /opt/stockbot/trading.db ".tables"'` should show tables like trades, fills, sessions if database is initialized
+**Resolution**: [leave blank]
+
+---
+
 ## Resolved Archive
 
 ### Usage limits — weekly calibration reminder
