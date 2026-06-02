@@ -22,6 +22,21 @@ JETSON="${JETSON_USER:-awank}@${JETSON_HOST:-100.120.18.84}"
 REMOTE_DIR="/opt/stockbot"
 LOCAL_DIR="$(cd "$(dirname "$0")/.." && pwd)/projects/stockbot"
 
+# ── Uncommitted-changes guard ────────────────────────────────────────────────
+# HARD BLOCK: deploying uncommitted changes is how critical fixes get silently
+# overwritten. If src/, scripts/, or config/ has local edits not in git, the
+# next orchestrator session can revert the file and the next deploy nukes Jetson.
+# Workflow must be: commit → deploy. Never: edit → deploy → maybe commit later.
+_DIRTY=$(git -C "${LOCAL_DIR}" status --porcelain -- src/ scripts/ config/ 2>/dev/null)
+if [ -n "$_DIRTY" ]; then
+  echo "[deploy] ABORT: uncommitted changes in stockbot src/scripts/config/."
+  echo "         Commit or stash first, then re-run deploy."
+  echo ""
+  git -C "${LOCAL_DIR}" status --short -- src/ scripts/ config/
+  exit 1
+fi
+# ── End uncommitted-changes guard ────────────────────────────────────────────
+
 echo "[deploy] Syncing src/ to Jetson…"
 rsync -az --delete \
   --exclude='__pycache__/' \
