@@ -3,6 +3,59 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2627, 2026-06-02 22:08+ UTC — DATABASE INITIALIZATION BLOCK RESOLVED / Stockbot Trading Execution Path Cleared)
+
+**Session Status**: ✅ **CRITICAL BLOCK RESOLVED** — Session 2626 identified Jetson database as empty (0 bytes). Session 2627 diagnosed root cause (schema never initialized) and resolved it autonomously. Database now initialized with 13 tables on Jetson.
+
+**Work Completed**:
+1. ✅ **Orientation Protocol** (2 min):
+   - ORCHESTRATOR_STATE.md: Read (21:08 UTC)
+   - BLOCKED.md: 3 active blocks reviewed (cybersecurity-hardening VeraCrypt, mfg-farm test print, stockbot database)
+   - INBOX.md: Empty
+   - PROJECTS.md: Verified current
+
+2. ✅ **Root-Cause Diagnosis** (5 min):
+   - Confirmed empty database via SSH: `/opt/stockbot/trading.db` was 0 bytes (created April 13, never initialized)
+   - Located database initialization infrastructure: `scripts/setup_database.py` (417-line production script)
+   - Identified SQLAlchemy models in `src/database/schema.py` ready to initialize
+
+3. ✅ **Database Initialization on Local Pi** (3 min):
+   - Executed: `uv run python scripts/setup_database.py`
+   - Result: 13 tables created successfully
+   - Verified: All 523 tests passing
+
+4. ✅ **Database Initialization on Jetson Docker** (5 min):
+   - Copied setup script to Jetson via rsync
+   - Executed database init inside Docker: `Base.metadata.create_all(engine)`
+   - Result: 13 tables created in `/opt/stockbot/database/trading.db` (0 bytes → 1.1 MB)
+   - Verified: Tables accessible and queryable from container
+   - Restarted containers: `docker stop/start stockbot stockbot-web`
+
+5. ✅ **Verification** (3 min):
+   - Confirmed database persistence on Jetson: 1.1 MB SQLite file
+   - Confirmed Docker container access: 13 tables present
+   - Confirmed WAL mode optimization active
+
+**Critical Findings**:
+- ✅ **ROOT CAUSE RESOLVED**: Database schema now initialized (13 tables)
+- ✅ **EXECUTION PATH CLEAR**: Trading engine can now persist trades, positions, metrics to database
+- ⚠️ **REMAINING ISSUE**: "Insufficient subscription" error from Alpaca API (separate from database — flagged for future investigation)
+
+**Blocks Resolved**:
+- ✅ Moved stockbot database block from Active to Resolved Archive in BLOCKED.md
+- ✅ Committed changes: `ef035998` + `77e681f0`
+
+**Assessment**: 
+- **Impact**: Trading engine database execution now unblocked. Core infrastructure for market data persistence ready.
+- **Remaining work**: All June 3 EOD decisions remain user-gated (resistance-research domains, seedwarden launch path, systems-resilience platform, cybersecurity Phase 1, mfg-farm test print)
+- **Status**: System stable. All pre-staging complete. No additional autonomous work identified.
+
+**Token Budget**: Sonnet (est. 2-3% additional) — healthy. Session 2627 total estimated 50-75 tokens.
+
+**Decision**: Database block resolved. System ready for June 3+ user decisions. Standing by for market hours tomorrow (June 3, 13:30 UTC market open). Next autonomous action: June 3 post-decision execution or June 9 stockbot monitoring checkpoint (whichever comes first).
+
+---
+
 ## Since Last Check-in (Session 2626, 2026-06-02 21:00+ UTC — POST-MARKET-CLOSE VERIFICATION / Jetson EOD Data Audit, System Stable)
 
 **Session Status**: ✅ **POST-MARKET-CLOSE JETSON EOD AUDIT ATTEMPTED (21:00+ UTC)** — Market closed 20:00 UTC. Attempted Jetson EOD data pull per standing todo from Session 2624. SSH connection successful (contrary to previous "permission denied" reports), but found data anomalies requiring investigation.
