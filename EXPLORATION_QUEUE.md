@@ -40,6 +40,51 @@
 **Status**: PRODUCTION-READY for user activation + Day 3 automated checkpoint execution
 **Commit**: Merged into PROJECTS.md seedwarden status
 
+### 52. ⏳ stockbot — Post-June-3-Market-Open Analysis Framework
+**Context**: June 3 market open at 13:30 UTC (early morning session work). Alpaca credentials fixed (Session 2630), Docker entrypoint fixed (Session 2631), test suite passing. Two sessions (JPM ridge_wf + AMZN lgbm_ho) executing normal trading signals June 3-5. At June 3 20:00 UTC (market close), orchestrator needs automated analysis framework to evaluate Alpaca fix validation, trading execution success, and contingency triggers.
+**Scope**: Pre-stage analysis infrastructure for June 3 20:00 UTC market-close review:
+  - Result comparison templates (expected fills vs actual, by session)
+  - Alpaca authentication validation checklist (zero "insufficient subscription" errors vs baseline)
+  - Performance benchmarking baseline (latency, fill rate, order queue depth)
+  - Contingency decision tree (if fills are zero → investigate, if errors spike → rollback, if performance degrades → alert)
+  - Synthesis doc template for Session 2638 orchestrator review
+**Deliverables**:
+  - `POST_MARKET_OPEN_ANALYSIS_FRAMEWORK.md` (decision trees, templates, baseline metrics)
+  - `market_results_comparison.py` (query database, compare vs expected, generate summary)
+  - `contingency_activation_triggers.md` (if/then rules for post-market actions)
+**Owner**: stockbot subagent
+**Deadline**: June 3 13:15 UTC (2 hours before market open, ready for 20:00 UTC analysis)
+
+### 53. ⏳ resistance-research — Phase 2 Batch 2 Research Activation Roadmap
+**Context**: Domain 59 distribution executing this week (user action). Day 1-7 monitoring (June 3-9) will measure impact and coalition response. Post-Day-7 checkpoint (June 9 morning), Phase 2 Batch 2 activation begins for Domains 51, 57, 48, and contingency Domain 54.
+**Scope**: Design Phase 2 Batch 2 research and distribution roadmap independent of Domain 39/59 results, ready to execute June 9+:
+  - Domain 51 (CA Fair Elections Act): Research timeline (June 9-12, 60-90 min work); contact list (5 campaign orgs); email template pre-staging; deadline July 1 mark
+  - Domain 57 (UN Multilateral Withdrawal): August 10 distribution anchor; UNGA framing prep; coalition contact refresh; contingency if multilateral treaty advances
+  - Domain 48 (Criminal Justice): Production-ready content; optional activation June 9 or hold for July (user decision); no urgent deadline
+  - Domain 54 (Youth Civic Power): November timeline (post-election research); scoping outline for future researcher
+  - Resource reallocation plan if Phase 2 Batch 2 conflicts with stockbot June 15 expansion or systems-resilience Wave 2 transition
+**Deliverables**:
+  - `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md` (timeline by domain, dependencies, contingency triggers)
+  - `DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md` (June 9-12 task breakdown, 90-min budget allocation)
+  - `RESOURCE_REALLOCATION_SCENARIOS.md` (if stockbot/systems-resilience overlap, how to sequence)
+**Owner**: resistance-research subagent
+**Deadline**: June 8 (ready for execution June 9 post-Day-7 checkpoint)
+
+### 54. ⏳ systems-resilience — Phase 6 Wave 2 Activation & Domain Sequencing Plan
+**Context**: Phase 6 Wave 1 (June 1-15) researches domains 60, 62 (weeks 1-2), then 61, 64 (weeks 3-4), then 63, 65 (week 5). User platform selection deadline June 3 EOD determines operational infrastructure by June 5. Wave 2 transition planning can begin now to ensure smooth author handoff and June 20 Wave 2 start.
+**Scope**: Design Phase 6 Wave 2 activation roadmap for June 15-20 transition period:
+  - Author onboarding from Wave 1 domains to Wave 2 lead roles (which Wave 1 authors become Wave 2 domain leads?)
+  - Wave 2 domain sequencing logic (parallel vs sequential, dependencies, critical path)
+  - Resource contention with Phase 5 publication (June 5), stockbot Phase 2 activation (June 15+), resistance-research Batch 2 (June 9+)
+  - Contingency triggers if Wave 1 domains fall behind schedule or author unavailability
+  - Publication readiness gates for Wave 1 domains before Wave 2 author onboarding
+**Deliverables**:
+  - `PHASE_6_WAVE_2_ACTIVATION_CHECKLIST.md` (June 15-20 transition tasks, author onboarding kit, continuity procedures)
+  - `WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md` (parallel execution scenarios, dependency analysis, critical path)
+  - `RESOURCE_CONTENTION_MITIGATION.md` (June 15-30 resource allocation scenarios, escalation triggers)
+**Owner**: systems-resilience subagent
+**Deadline**: June 14 (ready for June 15 Wave 2 activation immediately post-Wave-1)
+
 ## Completed Items (Session 2482 added above; prior sections below)
 
 ## Active Items (Session 1452+)
