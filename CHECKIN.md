@@ -3,6 +3,48 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2561, 2026-06-02 10:16–10:20 UTC — Market-Open T-3h 10m Pre-Open Verification)
+
+**Session Status**: ✅ **MARKET-OPEN READINESS VERIFIED — T-3h 10m TO EXECUTION**
+
+**Work Completed**:
+
+1. **Orchestrator Orientation & State Verification** ✅:
+   - ✅ ORCHESTRATOR_STATE.md verified current (generated 10:16 UTC)
+   - ✅ BLOCKED.md verified: 2 user-action blocks unchanged (VeraCrypt restart, test print execution)
+   - ✅ INBOX.md verified: Empty (no new items)
+   - ✅ PROJECTS.md verified: All project status current
+   - **Assessment**: Zero autonomous work available; system correct by design
+
+2. **Project Status Summary**:
+   - **stockbot**: ✅ LIVE & MARKET-OPEN READY — T-3h 10m, JPM ridge_wf + AMZN lgbm_ho sessions verified
+   - **systems-resilience**: ✅ Phase 6 complete, user decision gate June 3 EOD
+   - **resistance-research**: ✅ Phase 2 research complete, awaiting user distribution decisions
+   - **seedwarden**: ✅ Gate 1 infrastructure ready, awaiting user activation
+   - **open-repo**: ✅ Phase 3 complete, awaiting phase direction
+   - **cybersecurity-hardening**: 🟡 BLOCKED on VeraCrypt Phase 1 restart (user action)
+   - **mfg-farm**: 🟡 BLOCKED on test print execution (user action)
+
+3. **Exploration Queue Status**:
+   - ✅ Pre-market-open items complete (Sessions 2554-2556)
+   - ⏳ Post-market-open items: 7 strategic items staged for June 2 post-close + June 3+ execution
+   - **Assessment**: Queue appropriately populated
+
+**Critical Timeline**:
+- **June 2 13:30 UTC** (T-3h 10m): 🚨 **STOCKBOT MARKET OPEN** — Live trading begins (JPM 88/100 + AMZN 80/100)
+- **June 3 before market open**: Outstanding action: AMZN HMM tuning confirmation
+- **June 3 EOD**: systems-resilience platform decision gate (A/B/C)
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication lock
+
+**User Action Items**:
+1. Monitor stockbot at 13:30 UTC (live trading auto-triggers)
+2. Before June 3 market open: Confirm AMZN HMM tuning 
+3. By June 3 EOD: systems-resilience platform decision (A/B/C + domain selection)
+
+**Assessment**: ✅ **MARKET-OPEN READINESS VERIFIED — SYSTEM OPTIMAL** — All infrastructure ready. Zero autonomous work pending. Standing by for 13:30 UTC market-open event.
+
+---
+
 ## Since Last Check-in (Session 2560, 2026-06-02 10:03–10:15 UTC — Market-Open T-3h 15m Pre-Open Verification)
 
 **Session Status**: ✅ **MARKET-OPEN READINESS VERIFIED — T-3h 15m TO EXECUTION**
