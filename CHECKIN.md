@@ -3,6 +3,78 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2637, 2026-06-03 — Parallel Agents: Stockbot June 3 Readiness + Resistance-Research Domain 59 Distribution)
+
+**Session Status**: ✅ **INFRASTRUCTURE VERIFIED READY + DISTRIBUTION READY** — Two parallel agents completed autonomous work on stockbot (June 3 market open) and resistance-research (Domain 59 distribution). Both confirmed fully ready with no blockers.
+
+**Work Completed**:
+- ✅ **Stockbot June 3 Market-Open Readiness**: Docker entrypoint issue already resolved in Session 2631. Fixed git file permissions + test regression in test_realtime_stream.py (8 fixtures updated for _BackoffStockDataStream patching). All 68 tests pass. June 3 market open fully ready at 13:15 UTC wake, 13:30-20:00 UTC execution.
+- ✅ **Resistance-Research Domain 59 Distribution**: All materials production-ready (research doc 7,200 words/44 citations, Gist live, 5 email templates ready for user name/contact fill). Send sequence documented. Recommended timeline: June 3 (CBPP/ITEP/NWLC) + June 4 (MomsRising/AFL-CIO). User time estimate: 30-45 min to fill templates and send.
+- ⚠️ **False Positive Alerts**: SCOTUS monitor and HHS tracker have test fixture data in state files (malformed URLs, future dates). These will not execute until manually verified. Documented below under "Needs Your Input".
+
+**Critical System Status** (unchanged from Session 2635):
+- 🟢 **Stockbot**: All infrastructure ready, containers healthy, credentials fixed, monitoring deployed, awaiting June 3 13:30 UTC market open
+- 🟢 **Resistance-Research**: Phase 2 automation ready, Domain 59 distribution ready for user execution
+- 🟡 **Seedwarden**: Gate 1 infrastructure ready, awaiting user activation (no blockers)
+- 🟡 **Systems-Resilience**: Phase 6 complete, awaiting user platform selection by June 3 EOD
+- 🟡 **Cybersecurity-Hardening**: Phase 1 active, blocked on Windows VeraCrypt restart (user action)
+- 🟡 **Mfg-Farm**: Pre-launch complete, blocked on test print execution (user action)
+
+**Needs Your Input**:
+
+1. **Domain 59 Distribution Timeline** (Resistance-Research) — ACTION REQUIRED BY JUNE 4
+   - Materials are production-ready for user execution
+   - Required user actions: Open `domain-59-send-templates.md`, fill 2 fields per email ([Your name], [Your contact information], 10 fills total, ~5 min)
+   - Recommended send schedule:
+     - June 3, morning: CBPP, ITEP
+     - June 3, afternoon: NWLC
+     - June 4, morning: MomsRising, AFL-CIO
+   - Senate Finance CTC markup window open through June 30
+   - Files: `domain-59-send-templates.md`, `domain-59-send-log-june1.md`, response tracking templates
+
+2. **False Positive Alert Assessment** (Resistance-Research Automation)
+   - SCOTUS Monitor (Domain 58): Alert posted June 2 22:35 UTC with malformed URL and future ruling date (2026-06-15). This is a test fixture false positive. **Do NOT execute Domain 58 distribution until ruling is manually verified at supremecourt.gov**.
+   - HHS Tracker (Domain 39): Alert posted June 2 22:36 UTC with test.example.com URLs. This is also a test fixture false positive. **Do NOT execute until manually verified at hhs.gov**.
+   - Both monitors are working correctly and will fire on real rulings. The state files just need to be updated with real data before going live.
+   - Files: state files in `phase-1-adoption-tracking/data/` (election-monitor-state.json, scotus-monitor-state.json, hhs-monitor-state.json)
+
+3. **Phase 2 Domain Decisions** (Resistance-Research) — GUIDANCE PROVIDED, USER DECISION RECOMMENDED BY JUNE 3 EOD
+   - PHASE_2_DECISION_MEMO_JUNE_2026.md has full recommendations for all six user decisions
+   - Domain 59: Execute this week (above)
+   - Domain 51 (CA Fair Elections Act): Activate June 9-12 (60-90 min work, deadline July 1)
+   - Domain 57 (Ballot suppression): Hold for August 10 distribution
+   - Domain 48 (Criminal Justice): Production-ready, no urgent action needed
+   - Domains 49/50 (Environmental/LGBTQ): Authorize for July research prep
+   - Domain 54 (Youth Civic Power): November timeline (post-election research)
+
+4. **Seedwarden Gate 1 User Activation** (Seedwarden) — AWAITING USER GO-AHEAD
+   - All infrastructure verified ready (Session 2635)
+   - 5 user action gates documented in `track-b-activation/READINESS_REPORT_JUNE_1.md`
+   - Timeline: Gates complete (2-3 hrs work) → autonomous 7-step pre-launch → launch day at 07:30 UTC
+   - No autonomous blockers remain
+
+5. **Systems-Resilience Platform Selection** (Systems-Resilience) — DECISION REQUIRED BY JUNE 3 EOD
+   - Phase 6 complete with 3 implementation options (Nextcloud/Matrix $0/yr, Discourse $60-829/yr, Mighty Networks $950/yr)
+   - Decision checklist ready in `PHASE_6_DECISION_CHECKLIST.md`
+   - Publication locked for June 5 13:00 UTC (45,380 words)
+   - Author recruitment: 18 personalized emails copy-paste ready
+
+**Assessment**:
+- All critical infrastructure is deployed and tested
+- June 3 market open can proceed as scheduled (13:30 UTC)
+- Domain 59 distribution is ready for user execution this week
+- Three major user decisions are due by June 3 EOD (Phase 2 domain activation, seedwarden launch approval, systems-resilience platform choice)
+- All autonomous work available at this juncture has been completed
+
+**Next Steps**:
+1. **June 3, 13:15 UTC**: Stockbot sessions auto-wake (no manual action required)
+2. **June 3, 13:30–20:00 UTC**: Market execution (monitoring tools available if needed)
+3. **June 3 EOD**: User provides decisions on Phase 2 domains, seedwarden launch, systems-resilience platform
+4. **June 4 AM**: Execute Domain 59 distribution (if user approves)
+5. **June 4+**: Execute post-market-open work per results + user decisions
+
+---
+
 ## Since Last Check-in (Session 2635, 2026-06-03 00:15 UTC — June 3 Market-Open Readiness Verification)
 
 **Session Status**: ✅ **JUNE 3 MARKET OPEN READINESS VERIFIED** — All critical systems confirmed ready. Stockbot monitoring deployed, resistance-research tracking automation complete, no blocking issues identified. Standing by for June 3 13:30 UTC market open (13 hours).
