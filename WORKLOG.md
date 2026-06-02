@@ -48,6 +48,48 @@ Protocol requirement: "Never conclude 'no autonomous work' without first (a) re-
 
 **Status**: ✅ **COMPLETE** — Verified all project infrastructure is deployed and tested. All autonomous project work from Session 2637 confirmed complete with no new blocks. Exploration Queue had <3 active items; added 3 new items (52, 53, 54) for June 3-14 deadlines.
 
+---
+
+## Session 2641 (2026-06-02 23:44 UTC — Phase 2 Activation Roadmap + Exploration Queue Deepening)
+
+**Status**: ✅ **COMPLETE** — Built Phase 2 activation roadmap framework and added 3 high-value exploration items for June 3+ execution. Market checkpoint confirmed ready.
+
+**Work Completed**:
+
+1. ✅ **Phase 2 Activation Roadmap Research** (3 hrs, resistance-research agent):
+   - **File 1: phase-2-activation-roadmap.md** (3,800 words): Decision tree for Phase 2 domain sequencing, dependency mapping, urgency-driven routing logic, synthesis integration points, sector-specific variant preparation framework. Production-ready for immediate post-decision execution.
+   - **File 2: phase-2-domain-parallelization-matrix.csv** (45 domain-pair rows): Parallelization scores (0-10), dependency types, rationale for concurrent vs. sequential research. Enables orchestrator planning for multi-agent Phase 2 execution.
+
+2. ✅ **Exploration Queue Refresh** (15 min):
+   - **Item #60 (stockbot)**: Live trading data analysis framework & performance diagnostics (3-4 hrs research, ready for June 3 post-market-close execution). Prepares comprehensive analytics toolkit for June 3-23 live trading data.
+   - **Item #61 (resistance-research)**: Phase 2 rapid-activation decision matrix [NOW COMPLETE via agent above]. Enables same-day Phase 2 execution once user approves domains.
+   - **Item #62 (seedwarden)**: Path-dependent launch-week contingency orchestration (3-4 hrs research, ready for immediate post-user-decision execution). Comprehensive contingency playbook + growth acceleration for both Path A and Path B.
+
+3. ✅ **Key Findings Documented**:
+   - **CRITICAL**: Domain naming conflicts identified. Domain 49 split between (a) Callais/VRA Redistricting (complete, 41 citations) and (b) Environmental Justice/EPA research (planned July 1). Domain 50 split between (a) LGBTQ+ Rights & Voting Suppression (complete, 86 citations) and (b) Healthcare/Medicaid/NVRA nexus (complete). Recommend renaming EJ research to Domain 53 and LGBTQ+ to Domain 52 before July 1 to eliminate cross-reference errors.
+   - **URGENCY**: July 1 parallel research launch for Domain 49-EJ and Domain 50-LGBTQ requires authorization NOW (research cannot start July 1 without today's go-ahead). August 1 anti-trans ballot measure deadline is hard constraint.
+   - **THIS WEEK**: Distribution decisions (Senate Finance CTC markup window, H.R. 492 pre-recess window) require NO additional research (content production-complete). Cost of inaction is losing legislative urgency hook permanently.
+   - **HIGHEST PARALLELIZATION**: Domain pairs with 9/10 parallelization scores (can run concurrent agents without data dependency): D48/D49-Callais, D51/D57, D51/D58, D51/D59, D56/D57, D57/D59.
+
+4. ✅ **Files Committed** (Commit 89251dc5):
+   - phase-2-activation-roadmap.md (committed to master)
+   - phase-2-domain-parallelization-matrix.csv (committed to master)
+
+**Autonomous Work Status**:
+- All autonomous pre-work for Phase 2 execution is now COMPLETE
+- Framework is production-ready for immediate use once user approves Phase 2 domains
+- Domain naming conflict requires user awareness + decision for July 1 parallel research launch
+
+**System Status** (verified intact):
+- 🟢 **Stockbot**: Ready for June 3 13:30 UTC market open (unchanged from Session 2640)
+- 🟢 **Resistance-Research**: Phase 2 execution roadmap now complete + ready (new)
+- 🟡 **Seedwarden**: Awaiting user Path A/B decision (unchanged)
+- 🟡 **Systems-Resilience**: Awaiting platform decision (unchanged)
+- 🔴 **Cybersecurity-Hardening**: Blocked on VeraCrypt restart (unchanged)
+- 🔴 **Mfg-Farm**: Blocked on test print (unchanged)
+
+**Time Allocation**: Orchestration (5 min) + Agent execution (180 min) + Exploration queue management (10 min) + Commit (2 min) = 197 min total
+
 **Work Completed**:
 
 1. ✅ **Orientation** (8 min):

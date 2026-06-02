@@ -3,9 +3,9 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
-## Since Last Check-in (Session 2640, 2026-06-02 23:36 UTC — Final Pre-Market Checkpoint: All Autonomous Work Complete, Systems Ready)
+## Since Last Check-in (Session 2641, 2026-06-02 23:44 UTC — Phase 2 Activation Framework Built + Exploration Queue Refreshed)
 
-**Session Status**: ✅ **CHECKPOINT COMPLETE — AWAITING JUNE 3 CRITICAL EVENTS** — Verified all blocks and exploration queue. No autonomous work remains. All critical infrastructure confirmed ready. Stockbot set for 13:30 UTC market open. User decisions due June 3 EOD on Phase 2 domains, seedwarden activation, and systems-resilience platform.
+**Session Status**: ✅ **PHASE 2 FRAMEWORK COMPLETE — READY FOR SAME-DAY EXECUTION** — Built Phase 2 activation roadmap + domain parallelization matrix. All autonomous pre-work for Phase 2 is now complete and production-ready. **CRITICAL FINDING**: Domain naming conflicts require resolution for July 1 parallel research launch (Domains 49 and 50 are split across two research projects each). Stockbot ready for June 3 13:30 UTC market open.
 
 **Work Completed**:
 - ✅ **Block Assessment**: Two active blocks remain unresolvable autonomously (cybersecurity-hardening VeraCrypt restart, mfg-farm test print — both user actions). Checked mfg-farm test-print-results directory; no results yet. Block status unchanged.
@@ -23,22 +23,34 @@
 
 **Needs Your Input** (due June 3 EOD):
 
-1. **Domain 59 Distribution** — USER EXECUTION READY
+1. **🔴 CRITICAL — Domain Naming Conflict Resolution** (Decision needed BEFORE July 1):
+   - **The Problem**: Domain 49 is split across (a) Louisiana v. Callais VRA Redistricting research (COMPLETE, 7,100 words, 41 citations) and (b) Environmental Justice/EPA research (scheduled July 1, parallel with Domain 50). Similarly, Domain 50 is split across (a) LGBTQ+ Rights voting suppression research (COMPLETE, 8,586 words, 86 citations) and (b) Healthcare/Medicaid nexus (COMPLETE).
+   - **The Risk**: Cross-references will break if we launch conflicting research under same domain numbers in July. The EJ and LGBTQ+ research MUST start July 1 (hard deadline: August 1 ballot measure integration for LGBTQ+).
+   - **Recommendation**: Rename the July 1 research to Domain 52 (EJ/EPA) and Domain 53 (LGBTQ+ Rights) before approval. This eliminates downstream errors and clarifies numbering through Phase 2 completion.
+   - **Action Required**: Approve domain renumbering OR provide alternative naming scheme by June 9 (25 days before July 1 launch).
+   - **Files**: `phase-2-activation-roadmap.md` documents the full domain mapping and conflict resolution logic.
+
+2. **Domain 59 Distribution** — USER EXECUTION READY (30-45 min work, June 3-4)
    - Fill `domain-59-send-templates.md` (2 fields × 5 emails = 10 text replacements, ~5 min)
    - Send sequence: June 3 morning (CBPP, ITEP) → June 3 afternoon (NWLC) → June 4 morning (MomsRising, AFL-CIO)
    - Impact: 26M+ US children affected by Senate Finance CTC markup window (open through June 30)
+   - **Note**: No additional research needed. Content is 7,200 words, 44 citations, production-ready.
 
-2. **Phase 2 Domain Decisions** — GUIDANCE PROVIDED IN PHASE_2_DECISION_MEMO_JUNE_2026.md
-   - Domain 59: Execute this week (above)
+3. **Phase 2 Domain Decisions** — GUIDANCE PROVIDED + NEW FRAMEWORK READY
+   - **NEW**: `phase-2-activation-roadmap.md` now provides decision tree + execution checklist for all Phase 2 domain sequences
+   - **NEW**: `phase-2-domain-parallelization-matrix.csv` identifies which domains can research in parallel (highest parallelization: D51/D57, D51/D58, D51/D59, D56/D57, D57/D59 at 9/10 scores)
+   - Domain 59: Execute this week (above) — no research dependency
    - Domain 51: Recommend June 9-12 activation (CA Fair Elections deadline July 1)
-   - Domain 57: August 10 distribution
-   - Domains 48/49-50/54: Guidance for authorization/timing in memo
+   - Domain 56: June activation window (H.R. 492 pre-recess, closes June 30)
+   - Domain 57: August 10 distribution (multilateral withdrawal pre-UNGA)
+   - Domain 48 & 49-Callais: Production-ready for immediate distribution (no research)
+   - **Action**: Approve Phase 2 sequence by June 9; use `phase-2-activation-roadmap.md` decision tree to select which domains activate immediately vs. June 9-12 vs. July 1 parallel batch
 
-3. **Seedwarden Gate 1 Activation** — USER GO-AHEAD REQUIRED
+4. **Seedwarden Gate 1 Activation** — USER GO-AHEAD REQUIRED
    - All infrastructure verified. 5 user action gates documented.
    - Timeline: Complete gates (2-3 hrs) → autonomous pre-launch → launch day
 
-4. **Systems-Resilience Platform Selection** — DECISION REQUIRED BY JUNE 3 EOD
+5. **Systems-Resilience Platform Selection** — DECISION REQUIRED BY JUNE 3 EOD
    - Phase 6 complete with 3 options (Nextcloud $0/yr, Discourse $60-829/yr, Mighty Networks $950/yr)
    - Decision checklist ready in `PHASE_6_DECISION_CHECKLIST.md`
 
