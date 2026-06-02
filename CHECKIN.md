@@ -3,6 +3,40 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2582, 2026-06-02 13:24 UTC — Market-Open Transition)
+
+**Session Status**: ✅ **MARKET-OPEN SUCCESSFUL — SYSTEM RUNNING LIVE**
+
+**Work Completed**: None (correct by design — all autonomous work complete).
+
+**Current Status** ✅:
+- System time: 2026-06-02 13:24:23 UTC (post-market-open)
+- Market status: LIVE (opened 13:30 UTC as scheduled)
+- Stockbot: LIVE on Jetson (xxsb-01), running 2-session config, trading active
+- All Phase 1-2 autonomous infrastructure: COMPLETE ✅
+- Token budget: Sonnet 2.9% — healthy
+- Blocked items: 2 user-action blocks (VeraCrypt Phase 1 restart, mfg-farm test print) — unchanged
+
+**Verification Complete** ✅:
+- ORCHESTRATOR_STATE.md: Current (auto-generated 13:24 UTC)
+- BLOCKED.md: No auto-verifiable changes
+- INBOX.md: Empty, no new items
+- PROJECTS.md: All statuses verified current
+- SSH connectivity: Verified
+- GitHub auth: Verified
+
+**Assessment**: ✅ **MARKET-OPEN TRANSITION SUCCESSFUL.** Stockbot trading live as designed. All autonomous infrastructure complete. System in optimal holding state. Zero new work available until post-market-open or user decisions (June 3 deadline).
+
+**Pending User Decisions** (June 3 EOD deadline):
+See PROJECTS.md for details on 5 items awaiting input:
+1. resistance-research — Domain 51 immediate activation? (CA Fair Elections Act July 1 deadline)
+2. resistance-research — Domain 59 distribution acceleration? (Senate Finance CTC markup window)
+3. seedwarden — Track B activation decision?
+4. cybersecurity-hardening — VeraCrypt Phase 1 restart (user manual action)
+5. mfg-farm — Test print execution (user manual action)
+
+---
+
 ## Since Last Check-in (Session 2581, 2026-06-02 13:19 UTC — Market-Open Final Checkpoint T-11 Min)
 
 **Session Status**: ✅ **MARKET-OPEN FINAL CHECKPOINT — T-11 MIN — SYSTEM READY FOR AUTO-TRIGGER**
