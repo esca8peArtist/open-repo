@@ -3,6 +3,54 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2556, 2026-06-02 07:49–08:15 UTC — Market-Open Pre-Flight Signal Quality Audit)
+
+**Session Status**: ✅ **FINAL PRE-FLIGHT COMPLETE — T-5H 15M TO MARKET OPEN**
+
+**Work Completed**:
+
+1. **Exploration Queue Execution: stockbot June 2 Market-Open Signal Quality Audit** ✅:
+   - **Deliverable**: `SIGNAL_QUALITY_AUDIT_JUNE_2.md` (comprehensive audit report)
+   - **Scope**: All 4 active sessions analyzed across timing, distribution, confidence, cross-session divergence, and risk
+   - **Verdict**: ✅ **GO FOR MARKET OPEN** — Both live-trading sessions robust and ready
+     - **JPM ridge_wf**: 88/100, FULL GO (6/6 gates, +1.83 bear Sharpe, production-ready)
+     - **AMZN lgbm_ho**: 80/100, CONDITIONAL GO (Day 1 adverse -0.57% within tolerance; HMM tuning before June 3 required)
+     - **AAPL sessions**: Both suspended (position_size_pct=0, zero capital at risk)
+   - **No late-stage degradation** — AMZN signal frequency elevation confirmed as regime feature, not drift
+   - **Confidence**: 95% ready to proceed with live trading June 2 13:30 UTC
+   - **Outstanding action**: Set `hmm_observe_mode=false` for AMZN lgbm_ho before June 3 market open
+
+2. **Project Status**:
+   - **stockbot**: ✅ **LIVE & PRE-FLIGHT VERIFIED** — Ready for 13:30 UTC market open
+   - **systems-resilience**: ✅ Phase 6 Domain A analysis complete (awaiting June 3 user decision)
+   - **resistance-research**: ✅ Phase 2 research complete (awaiting user distribution decisions)
+   - **seedwarden**: ✅ Gate 1 ready (awaiting user Path A/B activation)
+   - **open-repo**: ✅ Phase 3 complete (awaiting direction decision)
+   - **mfg-farm**: 🟡 Blocked — Test print pending (user action)
+   - **cybersecurity-hardening**: 🟡 Blocked — VeraCrypt Phase 1 restart pending (user action)
+
+3. **Exploration Queue Status**:
+   - ✅ **stockbot: June 2 Market-Open Signal Quality Audit — COMPLETE** (this session)
+   - ✅ **systems-resilience: Phase 6 Domain A Platform Analysis — COMPLETE** (Session 2555)
+   - ⏳ seedwarden metrics dashboard: Conditional on user Path A/B launch (trigger not fired)
+   - **Assessment**: Queue fully executed. Zero remaining autonomous work available.
+
+**Critical Timeline**:
+- **June 2 13:30 UTC** (T-5h 15m): 🚨 **STOCKBOT MARKET OPEN** — Live trading begins (JPM + AMZN)
+- **June 3 (before market open)**: Conditional action: AMZN `hmm_observe_mode=false` tuning for G5 gate
+- **June 3 EOD UTC**: systems-resilience decision gate (platform choice A/B/C + domain selection)
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication (auto-executes per lock)
+
+**Next Steps for User**:
+1. Optional: Review `SIGNAL_QUALITY_AUDIT_JUNE_2.md` (market confidence details)
+2. Watch for June 2 13:30 UTC market open (live trading begins automatically)
+3. Before June 3 market open: Confirm AMZN HMM tuning will be applied
+4. By June 3 EOD: Respond with systems-resilience platform decision (A/B/C) to enable Phase 5/6 execution
+
+**Assessment**: Final pre-flight audit confirms market-open readiness. All autonomous countdown work complete. System in optimal state for June 2 13:30 UTC live trading launch and subsequent June 3 decision gates.
+
+---
+
 ## Since Last Check-in (Session 2555, 2026-06-02 07:11–08:30 UTC — Exploration Queue Execution: Phase 6 Domain A Analysis)
 
 **Session Status**: ✅ **AUTONOMOUS WORK COMPLETE — T-5H TO MARKET OPEN**
