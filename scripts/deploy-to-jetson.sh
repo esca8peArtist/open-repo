@@ -62,6 +62,9 @@ echo "[deploy] Syncing Dockerfile and docker-compose to Jetson…"
 rsync -az "${LOCAL_DIR}/Dockerfile.jetson" "${JETSON}:${REMOTE_DIR}/Dockerfile.jetson"
 rsync -az "${LOCAL_DIR}/docker-compose.jetson.yml" "${JETSON}:${REMOTE_DIR}/docker-compose.jetson.yml"
 
+echo "[deploy] Syncing session config files to Jetson…"
+rsync -az "${LOCAL_DIR}"/active-sessions*.json "${JETSON}:${REMOTE_DIR}/"
+
 echo "[deploy] Rebuilding and restarting containers…"
 ssh "${JETSON}" "
   cd ${REMOTE_DIR}
