@@ -30,6 +30,44 @@
 
 ---
 
+## Since Last Check-in (Session 2571, 2026-06-02 12:00 UTC — Final Pre-Market-Open Checkpoint)
+
+**Session Status**: ✅ **FINAL PRE-MARKET-OPEN CHECKPOINT COMPLETE — T-90 MIN TO MARKET OPEN**
+
+**Work Completed**:
+
+1. **Orchestrator Session Protocol** ✅:
+   - ✅ Full orientation completed (ORCHESTRATOR_STATE, BLOCKED, INBOX, PROJECTS, Exploration Queue)
+   - ✅ No new blocks, no new inbox items
+   - ✅ All project statuses unchanged
+
+2. **Autonomy Assessment** ✅:
+   - ✅ All Phase 1-2 autonomous work COMPLETE
+   - ✅ All remaining work user-decision-gated (June 3 deadline) or time-gated (post-market-open)
+   - ✅ Exploration Queue reviewed: 5 items, all staged for post-decision execution
+
+**System Status**:
+- **stockbot**: LIVE, both JPM ridge_wf + AMZN lgbm_ho initialized, ready for 13:30 UTC auto-trigger
+- **All other projects**: Awaiting user decisions (June 3) or blocked on user actions (VeraCrypt restart, test print)
+- **Infrastructure**: Optimal, no issues
+
+**Next Critical Events**:
+- **Today 13:30 UTC**: Stockbot market-open (automatic)
+- **June 3 EOD**: systems-resilience platform decision + AMZN HMM tuning confirmation
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication auto-lock
+
+**Needs Your Input** (by June 3):
+1. **systems-resilience**: Platform choice (A: Nextcloud+Matrix $0/yr vs B: Discourse $60-829/yr vs C: Mighty Networks $950/yr)
+2. **systems-resilience**: Domain selection (all 5 or subset?) → affects Phase 5/6 sequencing
+3. **seedwarden**: Track A/B decision (Gate 1 activation path)
+4. **resistance-research**: Phase 1 distribution path decision (Path A / Path A+Domain37 / Path B) if proceeding with distribution
+5. **mfg-farm**: Test print execution (when ready)
+6. **cybersecurity-hardening**: Phase 1 VeraCrypt restart (when ready)
+
+**Assessment**: ✅ **CORRECT BY DESIGN** — System in optimal holding state. All autonomous work complete. Zero new work available until market-open completes or user provides decision inputs on June 3. Standing by.
+
+---
+
 ## Since Last Check-in (Session 2569, 2026-06-02 15:00+ UTC — Post-Market-Open System Verification)
 
 **Session Status**: ✅ **SYSTEM STATE VERIFIED UNCHANGED — ALL INFRASTRUCTURE OPTIMAL FOR DECISION GATES**
