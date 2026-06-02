@@ -4,6 +4,29 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — Track B Social Media Competitive Analysis — June 2, 2026
+
+**Task**: Conduct competitive landscape analysis for Track B (medicinal herbs) social media launch. Research 12 competitor accounts across Instagram, TikTok, and Pinterest. Produce competitive analysis document and influencer collaboration matrix before user invests 6+ hours in account setup.
+
+**Files produced**:
+
+1. `TRACK_B_SOCIAL_MEDIA_COMPETITIVE_ANALYSIS.md` (~2,800 words)
+   - 12 competitor profiles with follower counts, engagement rates, content themes, and competitive posture
+   - Platform breakout: Instagram (carousel vs. Reels data from Buffer 2026 report), TikTok (academic study findings), Pinterest (619M MAU, 85% purchase rate)
+   - 5 confirmed differentiation gaps: Zone 5 growing, safety/contraindications, grow-your-own vs. supplements, indigenous knowledge integration, endangered species angle
+   - Content calendar benchmarks: 7–9 hrs/week launch window; 50% educational / 15% product / 20% behind-the-scenes content mix
+   - Hashtag strategy: 3–5 tags max (Instagram 2026 algorithm), tiered bank by content type, zone-specific hashtags as low-competition high-intent channel
+
+2. `INFLUENCER_COLLABORATION_MATRIX.csv` (12 rows)
+   - Columns: name, platform, handle, follower count, engagement %, credentials, homesteader audience overlap, partnership openness, priority tier, notes
+   - Tier 1 targets: Katie Krejci (679K, Zone 3/4, confirmed seed brand partnerships), Tara Lanich-LaBrie (130K, culinary herbalism), Linda Black Elk (73K, indigenous plants + Zone 4/5)
+   - Tier 2 targets: Deanna Talerico (541K), Carmen Adams (220K), Aviva Romm MD (284K), Tim Clemens/MN Forager (47K)
+   - Non-partnership accounts flagged: Herbal Academy (competitor), Mountain Rose Herbs (structural conflict)
+
+**Key research findings**: Zone 5-specific medicinal herb growing content is uncovered by any account above 100K followers. Safety-forward content (contraindications, drug interactions) is a documented public health gap with high shareability. Pinterest is the highest-leverage conversion platform for Track B — 85% of weekly Pinners purchase based on pins, and wellness searches grew 40% YoY.
+
+---
+
 ## Session — Phase 4 Planning Deliverables — June 1, 2026
 
 **Task**: Produce three Phase 4 planning documents covering botanical identification guides, practitioner tier progression, and international traditions sourcing. Phase 3 launches June 22; Phase 4 production window July 14 – August 31; all deliverables are scope-independent (valid for Phase 3 options A/B/C).

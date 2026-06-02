@@ -2,6 +2,109 @@
 
 ---
 
+## June 2, 2026 — Research Agent — Phase 1 Adoption Tracking Deployment Infrastructure
+
+**Task**: Deploy Phase 1 adoption measurement infrastructure for Domain 39 (Healthcare Access) distributed June 1 to 5 Tier 1 contacts. Scope: quick-start deployment guide, first-week data collection framework, Day 7 checkpoint decision tree for Phase 2 Domain 58/59 activation, and Weeks 2-4 Google Sheets measurement templates.
+
+**Context read**: `phase-1-adoption-tracking-script.py` (stub + canonical v2.0 code), `phase-1-adoption/README.md` (v2.0, Session 2507), `phase-1-adoption/DEPLOYMENT_CHECKLIST.md`, `phase-1-adoption/WEEK_1_DATA_COLLECTION_FRAMEWORK.md`, `phase-1-adoption/DAY_7_CHECKPOINT_DECISION_TREE.md`, `phase-1-adoption/GOOGLE_SHEETS_TEMPLATE_COMPLETE.md`, `PHASE_1_MEASUREMENT_SPREADSHEET_SPEC.md`, `PHASE_1_WEEKLY_SYNTHESIS_TEMPLATE.md`, `PROJECTS.md`, `EXPLORATION_QUEUE.md`.
+
+**Gap identified**: The v2.0 system in `phase-1-adoption/` (Session 2507) is production-ready but distributed across 8 files with no unified user-executable entry point at the parent directory level. The task's three requested output files did not exist. The v1.0 deployment guide (`PHASE_1_ADOPTION_TRACKING_DEPLOYMENT_GUIDE.md`, June 1) was pre-dated and referenced older file paths.
+
+**Work completed**:
+
+1. **`PHASE_1_ADOPTION_DEPLOYMENT_GUIDE.md`** (v3.0, 441 lines) — Master deployment guide integrating the v2.0 system for June 2-3 activation. 15-part copy-paste structure: pre-deployment verification, dependency install, config check, first run, cron schedule, Gmail OAuth2, Bitly, Google Sheets setup, deployment verification checklist, daily operations schedule, reply scoring reference (5-second rule), thresholds reference card, alert levels, overhead summary table, troubleshooting. Supersedes v1.0 June 1 guide.
+
+2. **`PHASE_1_WEEKLY_MEASUREMENT_TEMPLATES.md`** (v1.0, 542 lines) — Google Sheets formula reference for all 7 tabs plus Weeks 2-4 interpretation guidance. Full formula set: Contacts summary block, Gist_Views weekly click tracking with target comparison formulas, Replies auto-fill and constituency summary, Adoptions gate calculations, Constituencies decision-facing formulas, Checkpoints and Synthesis_Log structure. Trend analysis tab with 14 automated formulas. Week 2/3/4 guidance with threshold interpretation tables, Modification 2/3 trigger conditions, Day 14 gate, Day 30 full determination matrix with Phase 2 sequencing per STRONG/MODERATE/WEAK/ASSESS/FAILURE. Expected signal pattern table by week for result calibration.
+
+3. **`PHASE_1_DAY_7_CHECKPOINT_DECISION_TREE.md`** (v1.0, 374 lines) — Consolidated Day 7 decision tree. Part 1: base HOLD/MONITOR/ESCALATE/CONTACT_VERIFY determination using three-number inputs (clicks, replies, bounces). Part 2: Phase 2 Domain 58/59 activation logic with priority overrides for Score 5 and Score 4 cluster, domain-specific constituency thresholds for Domain 58 (Law School + Imm Legal Aid + Civil Rights + Academic) and Domain 59 (Labor + Mutual Aid + Academic). Part 3: Day 14 gate. Part 4: Day 30 full go/no-go matrices for both domains with social proof requirements. Part 5: CHECKIN.md update template (copy-paste). Part 6: constituency-level threshold reference with reply cycle timing guidance.
+
+**Key design decisions**:
+- All three documents are copy-paste executable — no interpretation required to follow them
+- Documents consolidate but do not duplicate v2.0 infrastructure; they reference the canonical files in `phase-1-adoption/`
+- Day 7 checkpoint tree includes both the base determination AND the Phase 2 sequencing in a single document to eliminate the need to cross-reference two files at checkpoint time
+- Overhead estimates consistent with v2.0 system: 15-20 min setup, 5-10 min/day normal, 15-20 min/week, ~40 min checkpoint weeks
+
+**Files created**:
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/PHASE_1_ADOPTION_DEPLOYMENT_GUIDE.md`
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/PHASE_1_WEEKLY_MEASUREMENT_TEMPLATES.md`
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/PHASE_1_DAY_7_CHECKPOINT_DECISION_TREE.md`
+
+---
+
+## June 2, 2026 — General Research Agent — Phase 6 Platform Analysis: Discord Gap-Fill + 20-200 Member UX
+
+**Task**: Scout and analyze community-coordination platforms for Phase 6 Domain A (Community Economic Resilience). Existing `PHASE_6_PLATFORM_ANALYSIS.md` (v3, 821 lines) was production-ready but missing Discord (explicitly scoped). Conducted Discord research and provided full analysis as final response text per system instructions.
+
+**Work Completed**:
+
+1. **Context read**: Full read of `PHASE_6_PLATFORM_ANALYSIS.md` (v3), `PHASE_6_PLATFORM_ANALYSIS_v2.md`, `phase-6-candidate-community-economic-resilience.md`, `JUNE_1_PHASE_6_APPROVAL_CHECKLIST.md`, `community-resource-alliance-founding-document.md`, and `EXPLORATION_QUEUE.md` (Exploration_Queue.md item 3).
+
+2. **Gap identified**: Discord missing from v3. The task scope explicitly listed Discord. All other 7 platforms fully covered.
+
+3. **Discord research conducted**: 6 web searches + 3 WebFetch calls. Verified 2026 pricing, access control (unlimited roles/permissions free), file sharing (10MB limit per file, no collaborative editing, unlimited message history), event coordination (native Scheduled Events + RSVP + third-party bots), moderation (AutoMod + bot ecosystem, no trust levels), off-grid readiness (zero — SaaS only, no offline mode), cost (free core, Nitro $9.99/month per user, Server Boost $9.99/month per server).
+
+4. **20-200 member UX analysis**: Developed explicit UX characterization for the 20, 50, and 200-member milestones across all platforms.
+
+5. **Final output**: Complete Discord analysis section + 20-200 member UX matrix + scoring + recommendation integration delivered as final response text.
+
+**Key findings**:
+- Discord scores 13/35 in the 7-dimension matrix — below Slack (which is also excluded for community use), but above Substack/Lunchclub/Platform.sh
+- Discord's fatal disqualifiers for Zone 5: zero offline capability, 10MB file upload limit (inadequate for seed catalogs/planting guides), no collaborative document editing, no knowledge-base architecture (ephemeral chat)
+- Discord is a legitimate platform for the Phase 6 *engagement* layer (community calls, voice coordination, events) but should never be the primary coordination hub
+- The existing v3 recommendation (Option C: Nextcloud + Matrix, 9.1/10) is strengthened by the Discord analysis: Matrix/Element already provides Discord's chat UX with E2E encryption and offline capability
+- 20-200 member UX: Discourse handles 20→200 scaling seamlessly via trust levels; Mighty Networks degrades at 200+ (Scale plan required); Nextcloud+Matrix adds admin complexity but maintains capability at any size
+
+**Files**: No new files created (per system prompt instruction). Existing `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/PHASE_6_PLATFORM_ANALYSIS.md` (v3) covers 7/8 platforms. Discord analysis delivered as response text.
+
+---
+
+## June 2, 2026 — General Research Agent — Phase 2 Acceleration Analysis + Decision Gate Research
+
+**Task**: Domain 59 acceleration analysis and Phase 2 domain priority/risk matrix for user decision gate.
+
+**Work Completed**:
+
+1. **DOMAIN_59_ACCELERATION_ANALYSIS.md** (~2,100 words):
+   - Senate Finance CTC window verification: no specific June 30 markup confirmed; active CTC advocacy window real (ITEP/CBPP published 2026 analyses, NWLC active CTC campaign). Recommended framing update before sending.
+   - Contact verification: all 5 Tier A contacts confirmed current (Sharon Parrott/CBPP, Steve Wamhoff/ITEP, Emily Martin/NWLC, Kristin Rowe-Finkbeiner/MomsRising, AFL-CIO via feedback@)
+   - Deployment readiness: 100% (Gist live, templates production-ready)
+   - Success metrics: realistic engagement scenarios with probability estimates
+   - Decision matrix: Accelerate vs. defer with confidence levels (80% accelerate is correct)
+   - August fallback checklist if user defers
+
+2. **DOMAIN_59_GIST_STRUCTURE.md**:
+   - Structure reference for the already-live Gist (published June 1)
+   - Update recommendations for Tier 2 distribution wave (August-September)
+
+3. **PHASE_2_DOMAIN_PRIORITY_AND_RISK_MATRIX.md** (~2,500 words):
+   - Per-domain go/no-go for all 6 Phase 2 decisions
+   - Key finding: Domain 48 criminal justice pre-check resolved — research is COMPLETE in domain-54-criminal-justice-civic-exclusion-architecture.md
+   - Key finding: "Domain 54" is two separate complete documents (criminal justice + youth civic power) — naming collision resolved
+   - Time-critical window table by week (June 2-7, June 15-30, July, August)
+   - Contingency scenarios A-D
+   - Dependency analysis
+
+4. **PHASE_2_DECISION_CHECKLIST.md** (~900 words):
+   - 6 decisions with go/no-go recommendation and prerequisites
+   - Send schedule, success criteria, user time estimates per decision
+   - Summary table for rapid review
+
+**Key findings**:
+- Domain 51 (Campaign Finance) is COMPLETE in the architecture file — ready for distribution, not research
+- Domain 54 criminal justice is COMPLETE — ready for distribution, not research
+- Domain 54 youth civic power is COMPLETE (June 1) with IMMINENT crisis window, accelerated to August 1 hard deadline
+- Domains 49/50 are BOTH complete (multiple production files) — all need distribution activation, not research
+- Domain 57 needs Gist creation + Hungary update before August 10 distribution
+- Total: zero new research needed for any Phase 2 domain. All 6 decisions are distribution timing decisions.
+
+**Files created**:
+- `DOMAIN_59_ACCELERATION_ANALYSIS.md`
+- `DOMAIN_59_GIST_STRUCTURE.md`
+- `PHASE_2_DOMAIN_PRIORITY_AND_RISK_MATRIX.md`
+- `PHASE_2_DECISION_CHECKLIST.md`
+
+---
+
 ## June 1, 2026 — General Research Agent — Domain 59 Distribution Execution
 
 **Task**: Execute complete Domain 59 distribution workflow: Gist creation, 5 customized email templates, send log, and documentation.
