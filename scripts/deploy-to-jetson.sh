@@ -21,6 +21,12 @@ rsync -az --delete \
   --exclude='dist/' \
   "${LOCAL_DIR}/web/src/" "${JETSON}:${REMOTE_DIR}/web/src/"
 
+echo "[deploy] Syncing scripts/ to Jetson…"
+rsync -az --delete \
+  --exclude='__pycache__/' \
+  --exclude='*.pyc' \
+  "${LOCAL_DIR}/scripts/" "${JETSON}:${REMOTE_DIR}/scripts/"
+
 echo "[deploy] Rebuilding and restarting containers…"
 ssh "${JETSON}" "
   cd ${REMOTE_DIR}
