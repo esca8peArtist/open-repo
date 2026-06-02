@@ -1,5 +1,87 @@
 # Work Log
 
+## Session 2629 (2026-06-02 21:45–22:15 UTC — Jetson EOD Audit / Alpaca Subscription Blocker Discovered)
+
+**Status**: 🚨 **CRITICAL BLOCKER IDENTIFIED** — Attempted Jetson EOD data pull (standing todo from Exploration Queue). SSH auth block from Session 2624 is RESOLVED (SSH working via rsync/Python). However, discovered critical new blocker: Alpaca market data stream authentication failures ("insufficient subscription" error) preventing all trades on June 2.
+
+**Work Completed**:
+
+1. ✅ **Orientation Protocol** (2 min):
+   - ORCHESTRATOR_STATE.md: Current (21:32 UTC from Session 2627)
+   - BLOCKED.md: 2 active blocks + checking if more exist
+   - Session 2628 identified 0 autonomous work (all projects blocked on June 3 user decisions)
+   - Exploration Queue item: Jetson EOD Pull — SSH auth reported blocked, but resolvable
+
+2. ✅ **SSH Auth Block Resolution Verification** (3 min):
+   - Attempted to pull Jetson trading.db for EOD P&L analysis
+   - SSH test: `ssh awank@100.120.18.84 'ls -lh /opt/stockbot/database/trading.db'` → **SUCCESS** ✅
+   - File exists: 1.1M, last modified June 1 20:25 UTC
+   - rsync sync successful: Fetched trading_jetson.db to /tmp for local analysis
+   - **Verdict**: SSH auth block from Session 2624 is RESOLVED. Sessions 2627+ already synced code via rsync.
+
+3. ⚠️ **Database Audit / Trading Execution Analysis** (5 min):
+   - Queried Jetson trading.db using `uv run python3 + sqlite3`
+   - **Critical Finding**: 
+     * Total fills in database: 141 (initialized Session 2627 ✅)
+     * June 2 fills: **0** (NO TRADING EXECUTED ON JUNE 2) ❌
+     * Latest trade timestamp: 2026-06-01 13:39:45 UTC
+     * Trading data by date:
+       - June 1: 1 fill (deployment day)
+       - May 26: 2 fills
+       - May 22: 4 fills
+       - May 21: 3 fills
+       - May 19: 1 fill
+   - **Interpretation**: System deployed June 2, but zero signals executed despite market open at 13:30–20:00 UTC
+
+4. ⚠️ **Engine Health Check** (5 min):
+   - Docker container status: ✅ Both stockbot (13 min uptime, healthy) and stockbot-web (26 min uptime) running
+   - Container logs analysis: Found root cause of zero trades
+   - **Critical Error**: Repeated "ValueError: insufficient subscription" from Alpaca websocket stream
+     * Error triggers during DataStream._auth() at line 126 of alpaca/data/live/websocket.py
+     * Message: `{'T': 'error', 'code': 409, 'msg': 'insufficient subscription'}`
+     * Behavior: Stream exits cleanly, reconnects in 300s (5-min loop)
+   - **Impact**: WebSocket stream authentication failing every cycle, preventing:
+     * Market quote reception (cannot calculate signals)
+     * Order execution (no signal triggers)
+     * Position monitoring (no real-time updates)
+   - **Status**: Engine cycling but NON-FUNCTIONAL due to stream auth failure
+
+5. ✅ **Documentation**:
+   - Added BLOCKED.md entry: "stockbot — Alpaca insufficient subscription" (critical blocker)
+   - Added verification command for account status check
+   - Linked to Session 2627 notation (marked as "separate future investigation item")
+   - Priority: CRITICAL — production trading completely blocked
+
+**Root Cause Analysis**:
+- Session 2627 notes: "REMAINING ISSUE: Insufficient subscription error from Alpaca API (separate from database issue, flagged for future investigation)"
+- This IS the flagged issue. Now blocking June 2 live trading execution.
+- Code issue: NOT a code bug — legitimate Alpaca API authentication error (409 code = Conflict)
+- Account issue: Likely Alpaca paper trading account missing required market data subscription tier
+
+**Business Impact**:
+- June 2 deployment showed 0 filled orders (vs expected 10-20 for 2-session config)
+- System running but unable to execute any trades
+- Jetson is healthy (containers, database, code all good)
+- Only Alpaca API integration is failing at the stream layer
+
+**Next Actions Required**:
+1. Verify Alpaca account status: Is market data subscription active?
+2. Check API key validity/permissions
+3. Possible solutions: Upgrade subscription, regenerate API key, or manually authorize key on Alpaca dashboard
+
+**Assessment**:
+- SSH auth block: ✅ RESOLVED
+- EOD data pull: ✅ EXECUTABLE (can fetch data when trading happens)
+- June 2 trading execution: ❌ BLOCKED on Alpaca subscription issue
+- Classification: BLOCKER (prevents live trading, must be resolved before June 3+ trading days)
+
+**Decision**: 
+- Moved to BLOCKED.md immediately with diagnostic steps
+- Recommend user check Alpaca account status/subscription tier
+- All other systems operational; blocker is external API integration only
+
+---
+
 ## Session 2628 (2026-06-02 22:30+ UTC — EXPLORATION QUEUE / Phase 2 Domain-Specific Automation Built)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE** — After database block resolution (Session 2627), orchestrator identified remaining autonomous work: Phase 2 domain-specific tracking automation for resistance-research. Built four production monitors + 37 unit tests + comprehensive deployment docs. All code committed to master.

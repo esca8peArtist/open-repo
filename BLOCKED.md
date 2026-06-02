@@ -27,6 +27,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+### stockbot — Alpaca "insufficient subscription" prevents live trading (critical blocker)
+**Date blocked**: 2026-06-02 21:45 UTC
+**Context**: June 2 EOD data pull audit discovered trading system deployed and running, but NO TRADES executed on June 2 despite market open at 13:30 UTC and two active sessions (AMZN lgbm_ho, JPM ridge_wf). Docker containers healthy, database initialized with 141 trades (all from June 1 or earlier, zero from June 2). Root cause: Jetson Docker logs show repeated "ValueError: insufficient subscription" errors from Alpaca websocket stream. Error occurs during stream authentication every 5 minutes. System enters reconnect loop (300s backoff), preventing any signal processing or trades during market hours. This is identical to the "separate networking/subscription issue" noted at end of Session 2627 WORKLOG.
+**What I need**: Diagnose Alpaca account subscription status. Verify: (1) Alpaca API key has proper market data subscription tier (paper trading requires data subscription), (2) Account is not locked/suspended, (3) Credentials in Jetson .env are current/valid. Without market data stream access, the trading engine cannot receive quotes, execute signals, or place orders.
+**Verify with**: `ssh awank@100.120.18.84 "curl -s -H 'APCA-API-KEY-ID: <key>' https://paper-api.alpaca.markets/v2/account | jq '.status'"` — should return "active"; if 403 or "insufficient_subscription" appears in error logs, confirm account subscription status on Alpaca dashboard.
+**Resolution**: [leave blank]
+
+---
+
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
