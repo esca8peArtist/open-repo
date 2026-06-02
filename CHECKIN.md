@@ -3,6 +3,34 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2639, 2026-06-02 23:26 UTC — Pre-Market-Open Checkpoint + System Readiness Verification)
+
+**Session Status**: ✅ **SYSTEM READY FOR JUNE 3 MARKET OPEN** — Orchestrator orientation confirmed all critical infrastructure production-ready. Stockbot fully prepared for 13:30 UTC market execution. All 2 active blocks require manual user action (VeraCrypt restart, 3D printer test print). No new autonomous work available (scheduled market open + user-decision gates).
+
+**Work Completed**:
+- ✅ **Full system orientation**: Verified ORCHESTRATOR_STATE, BLOCKED.md, PROJECTS.md, INBOX.md, WORKLOG.md
+- ✅ **Block assessment**: 2 active blocks confirmed unresolvable autonomously (both require manual user action). No auto-progress possible.
+- ✅ **Autonomous work scan**: All top-priority projects either scheduled for tomorrow (stockbot) or awaiting user decisions (resistance-research, seedwarden, systems-resilience all due June 3 EOD)
+- ✅ **Critical infrastructure verification**: Stockbot Alpaca credentials fixed (Session 2630), database initialized (Session 2627), Docker entrypoint deployed (Session 2631). All gates 1-6 passing for stockbot market execution.
+
+**Critical System Status** (unchanged from Session 2637):
+- 🟢 **Stockbot**: Infrastructure ready. Next autonomous work: June 3 13:15 UTC wake → 13:30-20:00 UTC market execution monitoring
+- 🟢 **Resistance-Research**: Domain 59 distribution materials ready for user execution (30-45 min work). Phase 2 automation deployed and tested.
+- 🟡 **Seedwarden**: Gate 1 launch-ready, all infrastructure verified. Awaiting user activation (5 gates, documented checklists ready).
+- 🟡 **Systems-Resilience**: Phase 6 complete (3 platform options analyzed). Awaiting user selection by June 3 EOD.
+- 🔴 **Cybersecurity-Hardening**: Phase 1 active, blocked on Windows VeraCrypt pre-boot restart (manual user action required)
+- 🔴 **Mfg-Farm**: Pre-launch complete, blocked on 3D printer test print execution (manual user action required)
+
+**Assessment**:
+All autonomous pre-positioning complete. System is at natural checkpoint before June 3 EOD decision deadline and stockbot market open. No further work available until: (1) user makes Phase 2/seedwarden/systems-resilience decisions (due June 3 EOD), (2) stockbot market execution begins (June 3 13:30 UTC), or (3) user acts on blocked items (VeraCrypt, test print).
+
+**Next Autonomous Work Triggers**:
+1. **June 3 13:15 UTC**: Stockbot automated wake and market-open monitoring
+2. **Post-market-close June 3 20:00+ UTC**: EOD data pull + performance analysis (Item 52 from Exploration Queue)
+3. **Post-user-decisions June 3 EOD**: Activate Phase 2 domain research, seedwarden path, or systems-resilience platform setup per selections
+
+---
+
 ## Since Last Check-in (Session 2638, 2026-06-03 00:17 UTC — Orchestrator Autonomous Orientation + Exploration Queue Priming)
 
 **Session Status**: ✅ **ORIENTATION COMPLETE + EXPLORATION ITEMS QUEUED** — Verified all critical infrastructure is deployed and production-ready. No unblocked autonomous project work identified (Session 2637 completed all available work). Added 3 new exploration items (52-54) for June 3-14 deadlines. System ready for market open (13:30 UTC) and awaiting user decisions (due EOD June 3).
