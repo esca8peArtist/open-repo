@@ -25,5 +25,32 @@
   },
   "phase1_start_date": "2026-05-28",
   "data_dir": "./data",
-  "log_dir": "./logs"
+  "log_dir": "./logs",
+  "monitors_enabled": true,
+  "monitors": {
+    "scotus": {
+      "enabled": true,
+      "polling_interval_minutes": 60,
+      "case_number": "25-365",
+      "discord_webhook": "YOUR_DISCORD_WEBHOOK_URL"
+    },
+    "hhs": {
+      "enabled": true,
+      "polling_interval_minutes": 360,
+      "discord_webhook": "YOUR_DISCORD_WEBHOOK_URL",
+      "slack_webhook": "YOUR_SLACK_WEBHOOK_URL"
+    },
+    "election": {
+      "enabled": true,
+      "polling_interval_minutes": 240,
+      "fec_api_key": "",
+      "discord_webhook": "YOUR_DISCORD_WEBHOOK_URL"
+    },
+    "email_router": {
+      "enabled": true,
+      "polling_interval_minutes": 60,
+      "gmail_credentials": "./credentials.json",
+      "email_lookback_hours": 168
+    }
+  }
 }
