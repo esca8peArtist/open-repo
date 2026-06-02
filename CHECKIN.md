@@ -3,6 +3,51 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2629, 2026-06-02 21:45–22:15 UTC — ALPACA SUBSCRIPTION BLOCKER DISCOVERED / EOD Audit Reveals Trading Failure)
+
+**Session Status**: 🚨 **CRITICAL ISSUE DISCOVERED** — Attempted standing todo from Exploration Queue (Jetson EOD data pull). SSH auth block is RESOLVED, but discovered NEW critical blocker: Alpaca "insufficient subscription" error prevents all trading on June 2 (0 trades despite market open 13:30–20:00 UTC).
+
+**Work Summary**:
+- ✅ **SSH Auth Block**: RESOLVED — Session 2627 already synced code via rsync; SSH working fine
+- ⚠️ **Alpaca Subscription Blocker**: NEWLY DISCOVERED — Market data websocket auth failing every 5 minutes
+- ✅ **Database Check**: Initialization successful; 141 total fills (Session 2627 work confirmed)
+- ⚠️ **June 2 Trading**: 0 fills on June 2 (all trading blocked by Alpaca stream error)
+
+**Critical Findings**:
+- Docker containers healthy (stockbot up 13 min, stockbot-web up 26 min)
+- Database initialized with 13 tables ✅
+- Engine running and cycling correctly ✅
+- **But**: Alpaca websocket stream authentication fails with "ValueError: insufficient subscription"
+  - Error code: 409 (Conflict) from `https://data.alpaca.markets` endpoint
+  - Occurs during DataStream._auth() in alpaca/data/live/websocket.py line 126
+  - System enters 300-second reconnect loop, unable to process any signals
+  - Impact: No market quotes received → no signals triggered → no trades executed
+
+**Business Impact**:
+- June 2 deployment showed: System running, but 0 fills (vs expected 10-20 for active sessions)
+- All subsequent days blocked: Without market data subscription, system cannot trade at all
+- Affects: AMZN lgbm_ho + JPM ridge_wf sessions (both waiting on stream data)
+
+**Root Cause**: 
+- Likely: Alpaca paper trading account doesn't have market data subscription active
+- Or: API key missing required data permissions
+- Or: Account locked/suspended
+
+**Recommended Actions**:
+1. Check Alpaca dashboard: Verify market data subscription tier is active
+2. Test API: `curl -H 'APCA-API-KEY-ID: <key>' https://paper-api.alpaca.markets/v2/account | jq '.status'`
+3. If needed: Upgrade subscription or regenerate API key on Alpaca dashboard
+
+**Assessment**: 
+- **Status**: Critical blocker; prevents live trading June 3+
+- **Urgency**: HIGH — affects June 3 market open and all subsequent trading
+- **Resolution**: User action required (Alpaca account settings check/update)
+- **June 3 Deadline**: This must be resolved before market open (13:30 UTC) if you want trading to execute
+
+**Token Usage**: Session 2629 used ~12K tokens (efficient diagnostic work). Remaining: ~78K available.
+
+---
+
 ## Since Last Check-in (Session 2628, 2026-06-02 22:30+ UTC — PHASE 2 AUTOMATION INFRASTRUCTURE COMPLETE / Exploration Queue Item Finished)
 
 **Session Status**: ✅ **EXPLORATION QUEUE DELIVERY COMPLETE** — Database block resolved (Session 2627). All project-level work now blocked on June 3 user decisions. Built Phase 2 domain-specific tracking automation infrastructure to enable rapid-response distribution once user selects domains.
