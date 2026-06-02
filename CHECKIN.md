@@ -3,6 +3,23 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2620, 2026-06-02 19:59 UTC — MARKET CLOSE INSTANT / Final Pre-Close Verification, All State Stable, Stockbot Trading Through Close)
+
+**Session Status**: ✅ **MARKET-CLOSE INSTANT (19:59 UTC)** — Rapid final pre-close verification completed; all state confirmed stable and current; stockbot actively trading (JPM ridge_wf + AMZN lgbm_ho sessions executing through 20:00 UTC close); both active blocks unchanged (VeraCrypt restart, test print execution — user action only); zero autonomous work available; system correct by design in final pre-close state.
+
+**Work Completed**:
+1. ✅ **Final Orientation Protocol** (< 1 min):
+   - ORCHESTRATOR_STATE.md: Current (generated 19:59 UTC)
+   - BLOCKED.md: 2 active blocks verified unchanged since Session 2600
+   - INBOX.md: Empty, no new items
+   - System health: Stockbot executing normal trading cycles through 20:00 UTC close
+
+**Assessment**: ✅ **SYSTEM STABLE AT MARKET CLOSE** — All Phase 1-2 infrastructure COMPLETE. No new autonomous work available (correct by design — all infrastructure production-ready, all remaining work is user-decision-gated for June 3+ execution). Token budget healthy (Sonnet 3.9%).
+
+**Decision**: Transition to POST-MARKET-CLOSE verification (20:00 UTC). Stand by for signal quality check and post-close analysis. All orchestration files commit to master.
+
+---
+
 ## Since Last Check-in (Session 2619, 2026-06-02 19:54 UTC — Post-Market-Open T+6h24m / FINAL MARKET-CLOSE WATCHDOG, Holding State Stable, 6 Minutes to Close)
 
 **Session Status**: ✅ **FINAL MARKET-CLOSE WATCHDOG (6 MIN TO CLOSE)** — Quick orientation completed; all state verified stable; stockbot actively trading through close; both active blocks remain unresolved (VeraCrypt restart, test print execution — user action only); zero autonomous work available; system correct by design in optimal pre-close holding state.
