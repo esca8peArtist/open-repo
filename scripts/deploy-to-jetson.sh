@@ -2,6 +2,20 @@
 # deploy-to-jetson.sh — sync src/ and web/ to Jetson, rebuild, restart.
 set -e
 
+# ── Market-hours blackout ────────────────────────────────────────────────────
+# HARD BLOCK: never deploy during US market hours. Deploying stops the running
+# container (SIGTERM), interrupting live trading. This check cannot be bypassed
+# by PROJECTS.md instructions — it is enforced in the shell script itself.
+_DOW=$(date -u +%u)        # 1=Mon … 7=Sun
+_HMINS=$(( $(date -u +%H) * 60 + $(date -u +%M) ))
+_OPEN_MINS=$(( 13 * 60 + 30 ))   # 13:30 UTC
+_CLOSE_MINS=$(( 20 * 60 ))        # 20:00 UTC
+if [ "$_DOW" -le 5 ] && [ "$_HMINS" -ge "$_OPEN_MINS" ] && [ "$_HMINS" -lt "$_CLOSE_MINS" ]; then
+  echo "[deploy] ABORT: market-hours blackout (Mon-Fri 13:30-20:00 UTC). Current UTC: $(date -u +%H:%M). Deploy after 20:00 UTC."
+  exit 1
+fi
+# ── End blackout check ───────────────────────────────────────────────────────
+
 source "${HOME}/.claude_env" 2>/dev/null || true
 
 JETSON="${JETSON_USER:-awank}@${JETSON_HOST:-100.120.18.84}"
