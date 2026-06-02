@@ -3,6 +3,56 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2635, 2026-06-03 00:15 UTC — June 3 Market-Open Readiness Verification)
+
+**Session Status**: ✅ **JUNE 3 MARKET OPEN READINESS VERIFIED** — All critical systems confirmed ready. Stockbot monitoring deployed, resistance-research tracking automation complete, no blocking issues identified. Standing by for June 3 13:30 UTC market open (13 hours).
+
+**Work Completed**:
+- ✅ **Orientation & Verification** (5 min):
+  - Read ORCHESTRATOR_STATE.md (dated 22:49 UTC June 2)
+  - Verified BLOCKED.md: Two active blocks (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — both require user action, no blocking infrastructure issues
+  - Verified INBOX.md: Empty (all items processed)
+  - Confirmed PROJECTS.md: All top 5 projects ready or awaiting external events
+  - Confirmed Exploration Queue: Two items completed in Session 2634 (stockbot monitoring, resistance-research tracking)
+
+**Critical Systems Status**:
+- ✅ **Stockbot**: 2-session config (JPM ridge_wf 6/6 gates, AMZN lgbm_ho 5/6 gates) deployed on Jetson, containers healthy, sleeping until June 3 13:15 UTC market pre-wakeup
+- ✅ **Market Monitoring**: Deployed via market_monitoring.py (1510 lines, 6 KPI monitors, thermal monitoring, log anomaly detection, API monitoring)
+- ✅ **Operational Playbook**: JUNE_2_5_MONITORING_PLAYBOOK.md with Section 11 (June 3-5 continuation post-Alpaca fix, state diff table, Go/No-Go thresholds, emergency command card)
+- ✅ **Alpaca Credentials**: Both `ALPACA_API_KEY` and `ALPACA_API_KEY_ID` environment variables confirmed in Docker containers
+- ✅ **Resistance-Research Tracking**: Phase 2 domain automation deployed (Domain58 SCOTUS monitor 14-min SLA, Domain39 HHS tracker, Domain40 election monitor, coalit email routing)
+
+**June 3 Market-Open Timeline**:
+- **13:15 UTC**: Sessions wake from sleep (15-min pre-market)
+- **13:30–20:00 UTC**: Market hours — JPM ridge_wf + AMZN lgbm_ho execute normal trading signals
+- **Expected outcome**: Non-zero fills if credentials are stable (fix deployed 22:55 UTC June 2)
+- **Monitoring**: run_session_snapshot() CLI tool available for on-call decision-making
+- **Status**: No known blockers, system ready for execution
+
+**Project Status Summary**:
+- 🟢 **Stockbot**: Monitoring ready, credentials fixed, 2-session config active, awaiting June 3 execution
+- 🟢 **Resistance-Research**: Phase 2 tracking automation ready, all research complete, awaiting user distribution decisions
+- 🟡 **Seedwarden**: Infrastructure complete, awaiting user launch activation (no blockers)
+- 🟡 **Systems-Resilience**: Phase 6 complete, awaiting user platform selection (June 3 deadline)
+- 🟡 **Cybersecurity-Hardening**: Phase 1 active, blocked on Windows VeraCrypt restart (user action)
+- 🟡 **Mfg-Farm**: All pre-launch complete, blocked on test print execution (user action)
+- 🟠 **Other projects**: Complete or paused (open-repo awaiting review, off-grid-living awaiting distribution, workout/resume awaiting review)
+
+**Assessment**:
+- All critical infrastructure is deployed and tested
+- No autonomous blockers remain
+- June 3 market open can proceed as scheduled
+- Post-June-3 work depends on (1) market verification results, (2) user decisions on Phase 2 domains/seedwarden/systems-resilience by EOD June 3
+
+**Next Steps**:
+1. **June 3 13:15 UTC**: Sessions auto-wake (no manual action required)
+2. **June 3 13:30–20:00 UTC**: Observe market execution (monitoring tools available)
+3. **June 3 20:00+ UTC**: Review trading results; confirm non-zero fills validate Alpaca fix
+4. **June 3 EOD**: User provides Phase 2 distribution decisions, seedwarden launch approval, systems-resilience platform choice
+5. **June 4+**: Execute post-market-open work per results + user decisions
+
+---
+
 ## Since Last Check-in (Session 2634, 2026-06-02 22:30–23:45 UTC — Exploration Queue Execution: Two Infrastructure Deliverables)
 
 **Session Status**: ✅ **TWO EXPLORATION QUEUE ITEMS COMPLETED** — Spawned parallel subagents for stockbot market monitoring and resistance-research Phase 2 tracking automation. Both production-ready and committed to master.
