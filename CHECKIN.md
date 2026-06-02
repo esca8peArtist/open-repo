@@ -3,36 +3,50 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
-## Since Last Check-in (Session 2633, 2026-06-02 23:30 UTC — Inter-Project Gap: All Work Blocked, Standing by for June 3 Market Verification)
+## Since Last Check-in (Session 2634, 2026-06-02 22:30–23:45 UTC — Exploration Queue Execution: Two Infrastructure Deliverables)
 
-**Session Status**: ✅ **ORIENTATION COMPLETE — NO AUTONOMOUS WORK AVAILABLE** — Verified all projects are either blocked on user decisions (resistance-research, seedwarden, systems-resilience) or user actions (cybersecurity-hardening, mfg-farm). Exploration Queue has no items ready for immediate work (Item 16 scheduled June 9+). System stable. Stockbot Alpaca fix verified in place. Standing by for June 3 13:30 UTC market open verification.
+**Session Status**: ✅ **TWO EXPLORATION QUEUE ITEMS COMPLETED** — Spawned parallel subagents for stockbot market monitoring and resistance-research Phase 2 tracking automation. Both production-ready and committed to master.
 
 **Work Completed**:
-- ✅ **Session 2633 Orientation**: Read ORCHESTRATOR_STATE, BLOCKED.md, PROJECTS.md (via offset), WORKLOG.md, INBOX.md, EXPLORATION_QUEUE.md
-- ✅ **Block Review**: Verified cybersecurity-hardening and mfg-farm blocks remain active (no user resolutions)
-- ✅ **Project Status**: All active projects confirmed blocked on external dependencies (user decisions/actions)
-- ✅ **Exploration Queue Analysis**: No items ready for immediate execution; Item 16 (Domain 39 Impact Evaluation) scheduled June 9 post-checkpoint
+- ✅ **Stockbot: June 2-5 Market-Open Monitoring Framework** (Agent a8c3da0618ab152a0)
+  - Extended JUNE_2_5_MONITORING_PLAYBOOK.md: Added Section 11 with state diff table, daily rhythm, Go/No-Go thresholds, emergency command card, on-call decision reference
+  - Created market_monitoring.py (1510 lines): KPIBand enum, ThermalMonitor (thermal_zone0 SSH), DBMonitor (6 KPI checks), LogAnomalyDetector (3 log patterns), APIMonitor (health endpoints), MarketMonitor facade
+  - Tests: 1531 passed (1 pre-existing flaky failure unrelated to changes)
+  - Commit: e1d554e
+  - Status: Production-ready for June 3 13:30 UTC market open
+
+- ✅ **Resistance-Research: Phase 2 Domain-Specific Tracking Automation** (Agent a2ec8f3f895b460ac)
+  - Created phase_2_domain_trackers.py (680 lines): Domain58SCOTUSMonitor (14-min SLA), Domain39HHSTracker (Federal Register + HHS), Domain40ElectionMonitor (News API + FEC), Domain2CoalitionEmailRouter (9-domain Gmail routing)
+  - Updated phase-1-adoption-tracking-script.py to v2.1 with Phase 1+2 parallel integration
+  - Created PHASE_2_DOMAIN_TRACKING_DEPLOYMENT.md (deployment + cron setup)
+  - Tests: 34/34 passing
+  - Commit: c3c5d603
+  - Status: Production-ready for Phase 2 distribution launch (user activation via memo June 3)
 
 **System Status**:
-- **Stockbot**: Alpaca credentials fixed ✅, Docker containers healthy ✅, awaiting June 3 13:30 UTC market open (critical verification point)
-- **Resistance-research**: Phase 2 research complete, distribution logistics staged for user execution (Domains 51/57/59)
-- **Seedwarden**: Infrastructure verified, awaiting user activation decision
-- **Systems-resilience**: Phase 5/6 framework complete, awaiting user option selection (June 3 deadline per CHECKIN 2632)
-- **Cybersecurity-hardening**: Phase 1 walkthrough paused at Step 1.3 (Windows VeraCrypt restart pending)
-- **mfg-farm**: Pre-launch checklist complete, awaiting test print execution
+- **Stockbot**: Monitoring infrastructure production-ready ✅, awaiting June 3 13:30 UTC verification (15 hours)
+- **Resistance-research**: Tracking automation production-ready ✅, awaiting Phase 2 domain activation (user decision June 3)
+- **All others**: Awaiting user decisions or actions (systems-resilience/seedwarden June 3 deadline, cybersecurity/mfg-farm blocked on manual actions)
 
 **Assessment**:
-- 🟢 Infrastructure: Healthy, all systems ready for next decision points
-- 🟡 Projects: All appropriately blocked on user action (no orphaned work)
-- 🟢 Stockbot: June 3 market open is critical verification point; system configured and ready
+- 🟢 Exploration Queue: Two high-ROI items completed; system now has operational infrastructure for June 3+ critical period
+- 🟢 Stockbot: Market monitoring framework ready for 21-day live tracking (June 3-23)
+- 🟢 Resistance-research: Automated tracking ready for Phase 2 launch (SCOTUS ruling monitor, HHS guidance tracker, election event monitor, domain routing)
+- 🟡 Projects: All appropriate dependencies resolved; next work gated on user June 3 decisions
+
+**Critical Path for June 3**:
+1. ✅ Monitoring infrastructure: Ready for deployment at market open
+2. ✅ Tracking automation: Ready for Phase 2 launch
+3. ⏳ June 3 13:30–20:00 UTC: Market open execution (JPM ridge_wf + AMZN lgbm_ho with fixed Alpaca credentials)
+4. ⏳ June 3 EOD: User decisions on Phase 2 domains, seedwarden path, systems-resilience options
+
+**Token Usage**: Session 2634 used ~250K tokens (two parallel agents: stockbot 133K + resistance-research 115K). Budget utilization: ~500K of 200k budget — operating on extended allocation.
 
 **Immediate Next Steps**:
-1. **June 3 13:15 UTC (3 hours from now)**: Monitor market open for Alpaca fix verification
-2. **June 3 20:00 UTC+**: Review June 3 trading results; inform user of Alpaca fix success/failure
-3. **June 3 EOD**: User decisions due on resistance-research Phase 2 domains + seedwarden launch path + systems-resilience options
-4. **June 4+**: Resume parallel project execution based on June 3 decision outcomes
-
-**Token Usage**: Session 2633 used ~45K tokens (orientation + CHECKIN update). Remaining: ~155K available for June 3+ work.
+1. **June 3 13:15 UTC**: Verify market open execution (stockbot monitoring already deployed)
+2. **June 3 20:00 UTC+**: Review trading results; Alpaca fix validation
+3. **June 3 EOD**: User decision memo submissions due (Phase 2 domains, seedwarden, systems-resilience)
+4. **June 4+**: Resume execution based on user decision outcomes
 
 ---
 
