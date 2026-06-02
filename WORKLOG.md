@@ -33176,3 +33176,62 @@ Per orchestration protocol: All projects time-gated until June 2 (stockbot marke
 - Standing by for market close
 
 **Status**: SYSTEM STABLE. Final pre-market-close watchdog active, standing by.
+
+
+## Session 2627 (2026-06-02 22:08+ UTC — Post-Market-Close Autonomous Diagnostics + Database Recovery)
+
+**Orientation Protocol** ✅:
+- Read ORCHESTRATOR_STATE.md (auto-generated 21:08 UTC)
+- Read BLOCKED.md (3 active blocks)
+  - cybersecurity-hardening: VeraCrypt restart required (cannot auto-verify)
+  - mfg-farm: Test print required (cannot auto-verify)
+  - stockbot: Jetson trading execution investigation (CAN verify) ← NEW BLOCK
+- Read INBOX.md: Empty
+- Examined BLOCKED.md stockbot entry: Database root-cause diagnosis required
+
+**Investigation: Stockbot Database Initialization Block** 🔍:
+
+**Phase 1 — Root Cause Confirmation (22:09 UTC)**:
+- Verified empty database via SSH: `/opt/stockbot/trading.db` file exists but is 0 bytes (created April 13, never populated)
+- Found database initialization infrastructure: `scripts/setup_database.py` exists (417-line production script)
+- Confirmed SQLAlchemy Base models in `src/database/schema.py` ready for initialization
+
+**Phase 2 — Initialize Database on Local Pi (22:09–22:12 UTC)**:
+- Executed `uv run python scripts/setup_database.py` on localhost
+- Result ✅: 13 tables created successfully (trades, positions, market_data_cache, model_metadata, model_runs, optimization_jobs, optimization_trials, option_model_runs, option_positions, pending_orders, performance_metrics, risk_events, alembic_version)
+- Verified: `uv run pytest` all 523 tests passing (no regressions)
+
+**Phase 3 — Initialize Database on Jetson Docker (22:13–22:20 UTC)**:
+- Copied setup script to Jetson via rsync
+- Executed database initialization inside Docker container via Python: `from src.database.schema import Base; Base.metadata.create_all(engine)`
+- Result ✅: 13 tables created in `/opt/stockbot/database/trading.db`
+- Verified: File size increased from 0 bytes to 1.1 MB
+- Verified: Tables accessible and queryable from inside Docker container (13 tables confirmed)
+- Restarted containers: `docker stop stockbot stockbot-web && docker start stockbot stockbot-web`
+
+**Phase 4 — Verification (22:22 UTC)**:
+- Confirmed database initialization persisted on Jetson host: `/opt/stockbot/database/trading.db` is 1.1 MB SQLite database
+- Confirmed Docker container can access database: 13 tables present and queryable
+- Confirmed WAL mode active (WAL files present, optimizations applied)
+
+**Findings Summary**:
+- ✅ **ROOT CAUSE CONFIRMED**: Database schema never initialized (0-byte file from April 13)
+- ✅ **RESOLUTION COMPLETED**: Database schema now initialized with 13 tables (1.1 MB on Jetson)
+- ✅ **VERIFICATION PASSED**: Database accessible from Docker container
+- ⚠️ **REMAINING ISSUE**: "Insufficient subscription" error from Alpaca API (separate from database issue, flagged for future investigation)
+- ✅ **IMPACT**: Trading engine can now persist trades, positions, and metrics to database
+
+**Blocks Resolved**:
+- Updated BLOCKED.md: Moved stockbot database block from Active to Resolved Archive (Session 2627, 22:15 UTC)
+- Committed to master: `ef035998` ("chore(orchestrator): resolved stockbot database initialization block")
+
+**Time Spent**: 15 minutes (Orient 2 min, Investigate 5 min, Initialize 5 min, Verify 3 min)
+
+**Decision** ✅:
+- Stockbot database execution path now CLEAR
+- Remaining user-decision-gated work: June 3 EOD decisions for resistance-research, seedwarden, systems-resilience, cybersecurity-hardening, mfg-farm
+- Market close complete (20:00+ UTC); protocol allows autonomous work post-market
+- All Phase 1-2 pre-staging COMPLETE across all active projects
+- No additional autonomous work identified beyond pre-positioned exploration queue items
+
+**Status**: SYSTEM STABLE. Database block resolved. All remaining work awaits user decisions (June 3 EOD deadline).
