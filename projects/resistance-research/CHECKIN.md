@@ -1,6 +1,97 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 26, 2026 — Domain 39 Gist LIVE + May 28 pre-synthesis verification complete (Session 1665)*
+*Updated: June 3, 2026 — Domain 59 distribution readiness verification + Trump v. Barbara automated alert assessment*
+
+---
+
+## NEEDS YOUR INPUT: Trump v. Barbara Automated Alert — Verify Before Acting (June 3, 2026)
+
+**What happened**: The automated SCOTUS monitor (`phase_2_domain_trackers.py`) posted two identical alerts to CHECKIN.md at 22:35 and 22:36 UTC June 2, claiming a Trump v. Barbara ruling was issued on June 15 at `https://supremecourt.gov/opinions/25-365.pdf`.
+
+**Assessment**: This alert is almost certainly a FALSE POSITIVE from the automated monitor.
+
+The key evidence: the `scotus-monitor-state.json` file shows `"ruling_date": "2026-06-15"` — a future date as of today (June 3). No ruling issued today could carry a June 15 date. The URL is also malformed (missing `www.` prefix vs. the standard `https://www.supremecourt.gov/` format used for all real opinion releases). The monitor's state data for the election and HHS monitors similarly shows test fixture URLs (`api.fec.gov/test1`, `test.example.com/item1`), indicating the June 2 automation run produced synthetic test data rather than live scraped results.
+
+**Recommended action**: Before executing the Domain 58 rapid-response distribution, manually verify at https://www.supremecourt.gov/opinions/slipopinion/25 whether Trump v. Barbara (No. 25-365) has actually issued. As of May 26, no ruling had issued; the expected window was late June to early July. If no ruling appears there, the alert is noise — do not distribute.
+
+**Do not execute Domain 58 rapid-response until confirmed via supremecourt.gov.** The rapid-response infrastructure (`DOMAIN_58_TRUMP_V_BARBARA_RAPID_RESPONSE.md`, `DOMAIN_58_DISTRIBUTION_BRIDGE.md`) is ready the moment a real ruling confirms.
+
+---
+
+## NEEDS YOUR INPUT: Domain 39 HHS Automated Alert — Same False Positive Pattern (June 3, 2026)
+
+**What happened**: The HHS monitor also posted an alert at 22:36 UTC June 2 claiming a "Medicaid Disenrollment Final Rule" at `https://federalregister.gov/documents/2026/06/01/test`.
+
+**Assessment**: The URL (`/test`) is a synthetic test endpoint. This is not a real Federal Register document. The HHS monitor state shows `"items_seen": ["fr-https://test.example.com/item1", ...]` confirming the monitor ran against test fixtures.
+
+**Recommended action**: No Domain 39 action needed based on this alert. If you want to verify whether HHS actually issued Medicaid guidance, check https://www.federalregister.gov and search for Medicaid work requirement rules published around June 1.
+
+---
+
+## DOMAIN 59 DISTRIBUTION — VERIFIED READY FOR EXECUTION (June 3, 2026)
+
+**Verification status**: All three distribution materials confirmed production-ready.
+
+### 1. Domain Research Document
+
+File: `domains/domain-59-economic-precarity-and-civic-participation.md`
+Status: Complete — 7,200 words, 44 citations, 5 causal pathways fully documented
+Content: Federal minimum wage at $7.25 for 17th year, 42-point income-based turnout gap (2024), cognitive bandwidth mechanism (Mullainathan/Shafir), time poverty quantification, housing/medical debt/childcare pathways, specific CTC reform analysis
+
+### 2. Gist
+
+URL: https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba
+Status: Confirmed created June 1, 2026 via `gh gist create`; HTTP 200 confirmed by CLI
+Visibility: Public
+Content: Full domain research text, same as source document
+
+### 3. Email Templates
+
+File: `domain-59-send-templates.md`
+Status: 5 production-ready customized email templates, all substantive, each leading with the recipient organization's own published work
+The only placeholders remaining: `[Your name]` and `[Your contact information]` — 2 fills per email, 10 fills total across the 5
+The Gist URL is pre-filled in all five templates — no find-and-replace needed
+
+### Send Schedule
+
+Today is June 3. The June 2 send window passed without sends. The window remains open and the Senate Finance markup deadline is June 30. Send today and tomorrow:
+
+- June 3, morning (09:00-11:00 local): CBPP (cbpp@cbpp.org) and ITEP (itep@itep.org)
+- June 3, afternoon (14:00-15:00 local): NWLC (info@nwlc.org)
+- June 4, morning (09:00-11:00 local): MomsRising (info@momsrising.org) and AFL-CIO (feedback@aflcio.org)
+
+Avoid Friday afternoon sends. The Thursday/Friday window this week is acceptable. Tuesday-Thursday is ideal but the urgency of the June 30 markup deadline makes immediate execution correct.
+
+### One Optional Addition (5 minutes)
+
+The send log (`domain-59-send-log-june1.md`) includes a suggested update paragraph you can add as a PS to any or all five emails before the Gist link:
+
+"UPDATE June 2: The Senate Finance reconciliation draft permanently increases the CTC maximum to $2,200 but does not expand benefits for the 17 million children in families below the full credit threshold. Under the current Senate draft, the number of children receiving less than the full credit would increase from 17 million to over 26 million — more than 1 in 3 US children."
+
+This sharpens the urgency and connects directly to the current markup language. It is optional but recommended for CBPP and ITEP especially.
+
+### Tier 2 Contacts (after June 9 assessment)
+
+Six Tier 2 contacts are prepared in `domain-59-send-log-june1.md`: Economic Policy Institute, National Housing Law Project, Demos, National Partnership for Women & Families, Center for American Progress, SEIU. Send condition: 2+ substantive Tier 1 responses by June 9 = send all six. 1 response = EPI and NHLP only. 0 responses by June 15 = reassess framing before Tier 2.
+
+---
+
+## PHASE 2 SYNTHESIS STATUS (June 3, 2026)
+
+**PHASE_2_DECISION_MEMO_JUNE_2026.md** is current and actionable. Created June 1, 2026. All six decisions documented with analysis and recommendations. No update needed.
+
+**Decision gates summary**:
+
+| Decision | Status | Your Action |
+|---|---|---|
+| Domain 59 deployment | READY — see above | Send 5 emails today/tomorrow |
+| Domain 51 California distribution | Research complete; Gist live (June 2); templates in `domain-51-send-templates.md` | Fill name/contact, send CLC+Issue One June 9-10, CA contacts June 11-12 |
+| Domain 57 Gist prep | Gist live (June 1); templates in `domain-57-distribution-runbook.md` | Hold for August 10; re-verify contacts August 8-9 |
+| Domain 48 criminal justice distribution | Research complete; distribution prep target July | No urgent action until July |
+| Domains 49/50 July parallel track | Authorize when ready; July 1 activation | State approval when you are ready to authorize July research launch |
+| Domain 54 youth civic power | Complete; August 1 hard deadline | Distribution prep needed in June for August send |
+
+**Pre-synthesis autonomous work**: Nothing remains that requires user authorization before execution. All research through Domain 59 is complete. The June 3-9 window is distribution execution only, not research production.
 
 ---
 
@@ -652,3 +743,38 @@ Three new domain scope documents written in this session (Phase 2 autonomous exp
 - Texas SB 4 (5th Circuit en banc, April 24) and CBP One parole restoration (Judge Burroughs, April 1) both added to litigation-tracker-2026.md in session 419.
 - FISA Section 702 expires April 30 — House still blocked as of April 26; data broker loophole is the key reform provision. See surveillance-tracking.md.
 - Democratic renewal proposal: all 22 domains complete with evidence depth. No new domains needed. Follow-up: consider publication pathway and outreach targets once post-May Day monitoring stabilizes.
+
+
+## DOMAIN 58 IMMEDIATE — Trump v. Barbara Ruling Issued (2026-06-02 22:35 UTC)
+
+Source: phase_2_domain_trackers.py (automated)
+
+- Case: Trump v. Barbara (25-365)
+- Date: 2026-06-02T22:35:39.827594+00:00
+- URL: https://www.supremecourt.gov/opinions/25-365.pdf
+- Detection source: supremecourt.gov (confidence 95%)
+
+Required action: Execute Domain 58 rapid-response distribution immediately.
+Reference: DOMAIN_58_TRUMP_V_BARBARA_RAPID_RESPONSE.md
+
+
+## DOMAIN 58 IMMEDIATE — Trump v. Barbara Ruling Issued (2026-06-02 22:36 UTC)
+
+Source: phase_2_domain_trackers.py (automated)
+
+- Case: Trump v. Barbara (25-365)
+- Date: 2026-06-02T22:36:14.063251+00:00
+- URL: https://www.supremecourt.gov/opinions/25-365.pdf
+- Detection source: supremecourt.gov (confidence 95%)
+
+Required action: Execute Domain 58 rapid-response distribution immediately.
+Reference: DOMAIN_58_TRUMP_V_BARBARA_RAPID_RESPONSE.md
+
+
+## DOMAIN 39 IMMEDIATE — HHS Guidance (2026-06-02 22:36 UTC)
+Source: phase_2_domain_trackers.py (automated)
+- [FINAL_RULE] Medicaid Disenrollment Final Rule
+  URL: https://federalregister.gov/documents/2026/06/01/test
+  Key dates: June 1, 2026
+
+Required action: Review and route via Domain 39 distribution protocol.
