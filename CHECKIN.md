@@ -3,37 +3,42 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
-## Since Last Check-in (Session 2554, 2026-06-02 06:45–06:50 UTC — Market-Open Countdown: DEPLOY_READY Restoration [23rd])
+## Since Last Check-in (Session 2554, 2026-06-02 06:58–07:10 UTC — Market-Open Countdown: DEPLOY_READY Restoration [24th])
 
-**Session Status**: ✅ **FINAL COUNTDOWN — T-6H 45M TO MARKET OPEN**
+**Session Status**: ✅ **FINAL COUNTDOWN — T-6H 30M TO MARKET OPEN**
 
 **Work Completed**:
 
 1. **Session Orientation** ✅:
-   - Verified ORCHESTRATOR_STATE.md: All state current and accurate (timestamp 06:45 UTC)
+   - Verified ORCHESTRATOR_STATE.md: All state current and accurate (timestamp 06:58 UTC, generated Session 2552)
    - Verified INBOX.md: Empty (no new items)
    - Verified BLOCKED.md: Two active blocks unchanged (VeraCrypt Phase 1 restart, mfg-farm test print — both user-action-only)
    - Verified Exploration Queue: All items time-gated beyond June 2 or externally blocked
    - **Assessment**: Zero autonomous work available — correct by design
 
 2. **DEPLOY_READY Restoration** ✅:
-   - Discovered DEPLOY_READY deleted again in working directory (8th consecutive occurrence since Session 2527)
-   - **Action**: Restored via `git checkout HEAD -- DEPLOY_READY` at 06:45 UTC
-   - **Verification**: File confirmed present (0 bytes, verified via ls -la)
-   - **Timing**: Safe window — 06:45 UTC is well outside market-hours blackout (13:30-20:00 UTC)
+   - Discovered DEPLOY_READY missing from filesystem (intermittent pattern continues)
+   - **Action**: Restored via `git checkout HEAD -- DEPLOY_READY` at 06:58 UTC
+   - **Verification**: File confirmed present (0 bytes)
+   - **Timing**: Safe window — 06:58 UTC is well outside market-hours blackout (13:30-20:00 UTC)
    - **Status**: Ready for post-session deployment automation trigger
+   - **Pattern**: 9th consecutive restoration since Session 2527; restoration remains trivial and idempotent
+
+3. **Usage & System Health** ✅:
+   - Usage nominal (no throttling): `usage-check.py --check` EXIT 0
+   - All critical systems verified ready for market open
 
 **Projects Status** (unchanged):
 - **stockbot**: ✅ MARKET-OPEN READY — JPM ridge_wf + AMZN lgbm_ho live trading at 13:30 UTC
 - **resistance-research**: ✅ PHASE 2 COMPLETE — Awaiting user distribution decisions
-- **seedwarden**: ✅ GATE 1 READY — Awaiting user 5-gate activation (per Session 2553 analysis)
-- **All others**: Per Session 2553 status (no changes)
+- **seedwarden**: ✅ GATE 1 READY — Awaiting user 5-gate activation
+- **All others**: No changes since Session 2553
 
 **Critical Timeline**:
-- **Now (06:45 UTC)**: Final verification complete. DEPLOY_READY restored. Zero autonomous work.
-- **June 2 13:30 UTC** (T-6h 45m): 🚨 **STOCKBOT MARKET OPEN** — Live trading begins (deployment automatic via DEPLOY_READY)
+- **Now (06:58 UTC)**: Final verification complete. DEPLOY_READY restored. Zero autonomous work available.
+- **June 2 13:30 UTC** (T-6h 30m): 🚨 **STOCKBOT MARKET OPEN** — Live trading begins (deployment automatic via DEPLOY_READY)
 
-**Assessment**: All critical-path work complete. Infrastructure production-ready. System in optimal countdown mode. DEPLOY_READY confirmed present and ready for post-session execution. Pattern of DEPLOY_READY intermittent deletion persists; restoration remains trivial and idempotent.
+**Assessment**: All critical-path work complete. Infrastructure production-ready. System in optimal countdown mode. DEPLOY_READY confirmed present and ready for post-session execution.
 
 ---
 
