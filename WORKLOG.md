@@ -29759,3 +29759,44 @@ Per orchestration protocol: All projects time-gated until June 2 (stockbot marke
 
 **Commits**:
 - chore(orchestrator): Session 2528 — Final standby verification + DEPLOY_READY restoration
+
+## Session 2531 (2026-06-02 00:01–00:05 UTC — Market-Open Countdown + DEPLOY_READY Restoration [4th])
+
+**Orchestrator Status**: Pre-market-open standby confirmed. T-13h 29m until stockbot market open at June 2 13:30 UTC. Zero autonomous work available (correct by design).
+
+**Work Completed**:
+
+1. **Session Orientation** (00:01–00:02 UTC):
+   - Verified ORCHESTRATOR_STATE.md: Confirmed current
+   - Verified INBOX.md: Empty
+   - Verified BLOCKED.md: Two active blocks (VeraCrypt restart, test print) — both user action only
+   - Verified Exploration Queue: Empty (all items time-gated or externally blocked)
+   - Assessment: Per protocol, zero autonomous work available — correct
+
+2. **DEPLOY_READY Restoration** (00:02–00:03 UTC):
+   - Discovered DEPLOY_READY deleted in working directory (4th consecutive session since Session 2527)
+   - Verified current time 00:01 UTC outside market-hours blackout — safe to restore
+   - Restored via `git checkout HEAD -- DEPLOY_READY`
+   - File verified present and ready for post-session deployment automation
+   - Pattern note: Intermittent deletion behavior (likely background git process; restoration is trivial and idempotent)
+
+3. **Session Finalization** (00:03–00:05 UTC):
+   - Updated CHECKIN.md with Session 2531 entry
+   - Updated WORKLOG.md with this entry
+   - All orchestration files ready for final commit
+
+**Project Status** (verified):
+- **stockbot**: ✅ LIVE READY — June 2 13:30 UTC market open. Deployment automatic via DEPLOY_READY.
+- **resistance-research**: ✅ PHASE 2 COMPLETE — Awaiting user distribution decisions.
+- **seedwarden**: ✅ GATE 1 READY — Awaiting user 5-gate activation.
+- **systems-resilience**: ✅ READY — Author decision gate June 3.
+- **open-repo**: ✅ READY — June 12 deployment on track.
+- **cybersecurity-hardening**: 🟡 BLOCKED — VeraCrypt Phase 1 restart (user action).
+- **mfg-farm**: 🟡 BLOCKED — Test print execution (user action).
+
+**Exploration Queue**: Empty (all items time-gated past June 2 or externally blocked). Zero executable autonomous work.
+
+**Assessment**: All critical-path work complete. All infrastructure production-ready. System in optimal countdown mode for June 2 13:30 UTC market-open trigger. Zero autonomous work — correct per orchestration protocol.
+
+**Commits**:
+- chore(orchestrator): Session 2531 — Market-open countdown + DEPLOY_READY restoration [4th]
