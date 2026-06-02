@@ -3,6 +3,29 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2580, 2026-06-02 13:12 UTC — Market-Open Countdown T-18 Min)
+
+**Session Status**: ✅ **MARKET-OPEN FINAL CHECKPOINT — T-18 MIN — SYSTEM READY FOR LIVE EXECUTION**
+
+**Work Completed**: None (correct by design — all autonomous work complete).
+
+**Pre-Market Verification** ✅:
+- System time: 2026-06-02 13:12:07 UTC
+- Orchestrator state: All files current (ORCHESTRATOR_STATE.md 13:10 UTC)
+- Stockbot local DB: 1 BUY trade in last 24h (expected), config ready
+- Session assessment: Zero new autonomous work (holding state confirmed)
+- All Phase 1-2 autonomous work COMPLETE ✅
+- No new work available until post-market-open
+
+**Timeline** (T-18 min to market open):
+- **13:12 UTC (NOW)**: T-18 min checkpoint — system nominal, proceeding
+- **13:15 UTC (T-3 min)**: Jetson sessions auto-wake for pre-market
+- **13:30 UTC (OPEN)**: stockbot live trading begins (2-session JPM ridge_wf + AMZN lgbm_ho)
+
+**Assessment**: ✅ **ALL SYSTEMS GO — MARKET OPEN PROCEEDS ON SCHEDULE.** All autonomous infrastructure verified. System executing as designed.
+
+---
+
 ## Since Last Check-in (Session 2579, 2026-06-02 13:03 UTC — Market-Open Countdown T-27 Min)
 
 **Session Status**: ✅ **MARKET-OPEN COUNTDOWN — T-27 MIN — SYSTEM READY FOR AUTO-EXECUTION**
