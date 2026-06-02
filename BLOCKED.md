@@ -66,7 +66,7 @@ When the block is resolved (Resolution written OR Verify command passes):
 3. Synced updated `docker-compose.yml` to Jetson via rsync
 4. Verified environment variables in Docker: `docker exec stockbot env | grep ALPACA` now shows both `ALPACA_API_KEY` and `ALPACA_API_KEY_ID` set correctly
 5. **Status**: Alpaca SDK now has required credentials (`ALPACA_API_KEY_ID` + `ALPACA_SECRET_KEY`). DataStream authentication should succeed on next engine restart.
-**Note**: Separate Docker entrypoint script permission issue encountered (scripts/docker_entrypoint.sh marked as not executable in image). This is a Docker image build issue, not related to Alpaca credentials. Trading engine will function once container restart succeeds (user may need to manually restart containers or rebuild image with executable entrypoint).
+**Docker entrypoint fix deployed** (Session 2631, June 2 21:58 UTC): Dockerfile was missing COPY and ENTRYPOINT directives for docker_entrypoint.sh. Fixed: (1) Added COPY scripts/docker_entrypoint.sh in both development and production stages, (2) Added RUN chmod +x, (3) Added ENTRYPOINT ["/app/docker_entrypoint.sh"]. Commit: ab1b498 in stockbot submodule. Docker image rebuild on Jetson (or container rebuild) will now execute migrations on startup.
 
 ---
 

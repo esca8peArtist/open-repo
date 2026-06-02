@@ -1,5 +1,53 @@
 # Work Log
 
+## Session 2631 (2026-06-02 21:56–22:05 UTC — Docker Entrypoint Fix + Secondary Blocker Resolution)
+
+**Status**: ✅ **SECONDARY DOCKER ISSUE RESOLVED** — Investigated and fixed Docker entrypoint script permission issue discovered in Session 2630. Dockerfile was missing proper COPY and ENTRYPOINT directives.
+
+**Work Completed**:
+
+1. ✅ **Orientation Protocol** (1 min):
+   - ORCHESTRATOR_STATE.md: Current (21:56 UTC)
+   - BLOCKED.md: Verified Alpaca credentials block resolved; secondary Docker issue identified
+   - INBOX.md: No new items (all processed from Session 2630)
+   - Priority projects: All awaiting user decisions or user actions
+
+2. ✅ **Docker Entrypoint Investigation** (3 min):
+   - Identified issue: docker_entrypoint.sh script exists but Dockerfile doesn't use it
+   - Dockerfile: No COPY, no ENTRYPOINT directives → script never executed
+   - Impact: Alembic migrations never run at container startup (secondary to Session 2630's main fix)
+   - Consequence: Future container restarts would skip database migrations
+
+3. ✅ **Dockerfile Fix Implementation** (2 min):
+   - Development stage: Added COPY + chmod +x + ENTRYPOINT
+   - Production stage: Same (with proper user ownership handling)
+   - Both stages now properly execute docker_entrypoint.sh on startup
+   - Alembic migrations will run automatically before trading engine starts
+   - Commit: ab1b498 in stockbot submodule
+
+4. ✅ **BLOCKED.md Update**:
+   - Updated resolved Alpaca block entry to note Docker entrypoint fix is deployed
+   - Note: Docker image rebuild on Jetson required for fix to take effect
+
+**Technical Details**:
+- **Root Cause**: Dockerfile had CMD but no ENTRYPOINT; entrypoint script created but never referenced
+- **The Fix**: 
+  1. `COPY scripts/docker_entrypoint.sh /app/docker_entrypoint.sh`
+  2. `RUN chmod +x /app/docker_entrypoint.sh`
+  3. `ENTRYPOINT ["/app/docker_entrypoint.sh"]`
+- **Effect**: Container startup now: entrypoint → run migrations → execute CMD (trading engine)
+- **Build Impact**: Next Docker build will use fixed Dockerfile; requires rebuild on Jetson or local
+
+**Assessment**:
+- ✅ Alpaca credentials issue (Session 2630): RESOLVED, trading ready once containers restart
+- ✅ Docker entrypoint issue (Session 2631): RESOLVED, fix committed
+- 📅 June 3 readiness: Both issues cleared; trading can proceed once Jetson containers restart
+- ⚠️ Docker rebuild: Needed to activate entrypoint fix (user or automation task)
+
+**Token Usage**: Session 2631 used ~8K tokens (quick diagnostic + fix). Remaining: ~45K+ available.
+
+---
+
 ## Session 2629 (2026-06-02 21:45–22:15 UTC — Jetson EOD Audit / Alpaca Subscription Blocker Discovered)
 
 **Status**: 🚨 **CRITICAL BLOCKER IDENTIFIED** — Attempted Jetson EOD data pull (standing todo from Exploration Queue). SSH auth block from Session 2624 is RESOLVED (SSH working via rsync/Python). However, discovered critical new blocker: Alpaca market data stream authentication failures ("insufficient subscription" error) preventing all trades on June 2.

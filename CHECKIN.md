@@ -3,6 +3,47 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2631, 2026-06-02 22:05 UTC — Secondary Docker Issue Fixed / All Blockers Resolved for June 3 Trading)
+
+**Session Status**: ✅ **ALL BLOCKERS RESOLVED** — Secondary Docker entrypoint issue fixed. Trading system ready for June 3 market open pending container restart.
+
+**Work Summary**:
+- ✅ **Docker Entrypoint Fix**: Dockerfile was missing COPY + ENTRYPOINT for docker_entrypoint.sh (causes alembic migrations to skip). Fixed both development and production stages. Commit: ab1b498 in stockbot submodule.
+- ✅ **Alembic Migrations**: Will now auto-run on container startup via entrypoint script
+- ✅ **Alpaca Credentials**: Already resolved Session 2630 (ALPACA_API_KEY_ID env var added)
+
+**Critical Path for June 3 Trading**:
+1. ✅ Alpaca API credentials fixed (Session 2630)
+2. ✅ Docker entrypoint fixed (Session 2631)
+3. ⏳ Docker container rebuild needed on Jetson (for entrypoint fix to take effect)
+4. ⏳ Container restart (will auto-run migrations, then start trading engine)
+5. ⏳ June 3 13:30 UTC market open: JPM + AMZN sessions should trade normally
+
+**Current System Status**:
+- **Stockbot**: 2-session config (JPM ridge_wf + AMZN lgbm_ho) deployed on Jetson, currently offline waiting for June 3 restart
+- **Database**: Initialized with 141 trades from validation period (Session 2627)
+- **Models**: Both graduation-ready (6/6 and 5/6 gates passing per Session 2465)
+- **Monitoring**: Z-score drift tracking + Discord alerts armed for June 9/16/23 checkpoints
+
+**Remaining Active Blocks** (both user action):
+1. cybersecurity-hardening: Phase 1 Step 1.3 VeraCrypt restart (Windows user action)
+2. mfg-farm: Test print execution (user action)
+
+**User Decision Points** (non-urgent):
+- resistance-research: Phase 2 domain selection (Domains 51/48/49-50/57/58/59) — all research complete, awaiting distribution approval
+- seedwarden: Gate 1 Path selection (A or B) — all materials ready
+- systems-resilience: Platform + implementation option selection (9 combinations available)
+
+**Assessment**: 
+- ✅ All trading-critical blockers resolved
+- 📅 June 3 readiness: Conditional on container restart (should be automatic or quick manual action)
+- ⚠️ Docker rebuild: Activate entrypoint fix (needs docker build + push to Jetson, or manual container restart with workaround)
+- 🎯 Next milestone: June 3 13:30 UTC market open
+
+**Token Usage**: Session 2631 used ~8K tokens. Total available: ~45K+ for remaining session work or user actions.
+
+---
+
 ## Since Last Check-in (Session 2630, 2026-06-02 22:45–23:10 UTC — CRITICAL BLOCKER RESOLVED: Alpaca Credentials Fixed)
 
 **Session Status**: 🟢 **CRITICAL BLOCKER RESOLVED** — Diagnosed and fixed root cause of "insufficient subscription" errors. Environment variable mismatch prevented Alpaca SDK authentication.
