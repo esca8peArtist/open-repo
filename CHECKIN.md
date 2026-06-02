@@ -3,6 +3,35 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2562, 2026-06-02 10:29 UTC — Market-Open T-3h Final Verification)
+
+**Session Status**: ✅ **MARKET-OPEN READINESS CONFIRMED — T-3h FINAL VERIFICATION**
+
+**Work Completed**:
+
+1. **Orchestrator Session Protocol** ✅:
+   - ✅ ORCHESTRATOR_STATE.md verified (current as of 10:29 UTC)
+   - ✅ BLOCKED.md verified: 2 user-action blocks unchanged (VeraCrypt restart, test print execution)
+   - ✅ INBOX.md verified: Empty (no new items since Session 2561)
+   - ✅ PROJECTS.md verified: All project status current
+   - **Conclusion**: Zero autonomous work available — correct by design. Session 2561 (9 min prior) already confirmed this state.
+
+2. **Market-Open System Status** ✅:
+   - **stockbot**: LIVE & READY (JPM ridge_wf 88/100 FULL GO + AMZN lgbm_ho 80/100 CONDITIONAL GO per Session 2556 audit)
+   - **Jetson deployment**: Active, verified healthy at 08:22 UTC (Session 2556)
+   - **Scheduled triggers**: DEPLOY_READY flag active (restored Session 2560), market-open auto-trigger configured for 13:30 UTC
+   - **Thermal baseline**: Idle 46-47°C, well within safe margins for 6.5-hour session
+
+3. **Critical Timeline** (unchanged):
+   - **June 2 13:30 UTC** (T-3h): 🚨 LIVE TRADING AUTO-BEGIN (JPM + AMZN sessions wake on schedule)
+   - **June 3 (before market open)**: AMZN HMM tuning confirmation required
+   - **June 3 EOD**: systems-resilience platform decision gate
+   - **June 5 13:00 UTC**: systems-resilience Phase 5 publication lock
+
+**Assessment**: ✅ **READY FOR MARKET OPEN** — All infrastructure production-ready. No action required by orchestrator. System standing by for 13:30 UTC auto-trigger execution.
+
+---
+
 ## Since Last Check-in (Session 2561, 2026-06-02 10:16–10:20 UTC — Market-Open T-3h 10m Pre-Open Verification)
 
 **Session Status**: ✅ **MARKET-OPEN READINESS VERIFIED — T-3h 10m TO EXECUTION**
