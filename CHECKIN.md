@@ -3,6 +3,39 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2567, 2026-06-02 11:18–11:22 UTC — Pre-Market-Open Health Check)
+
+**Session Status**: ✅ **PRE-MARKET-OPEN VERIFICATION COMPLETE**
+
+**Work Completed**:
+
+1. **Pre-Market Health Check** ✅:
+   - ✅ Jetson health: All containers running (stockbot, stockbot-web, gitea healthy)
+   - ✅ Sessions initialized: JPM ridge_wf_001 + AMZN lgbm_ho_001 ready since 10:24 UTC
+   - ✅ Real-time streams: Both subscribed and active
+   - ✅ Models loaded: All 6/6 ensemble base models per session
+   - ✅ Ready for 13:30 UTC market open (T-2h 12m)
+
+2. **Autonomy Status**: ✅ **ZERO AUTONOMOUS WORK REMAINING — CORRECT BY DESIGN**
+   - All Phase 1-2 autonomous work complete
+   - All remaining work is user-decision-gated or time-gated
+   - Standing by for market-open auto-trigger and June 3 decision gates
+
+**Critical Timeline** (unchanged):
+- **TODAY (June 2) 13:30 UTC**: 🚨 **STOCKBOT MARKET OPEN** (auto-trigger, JPM + AMZN sessions executing)
+- **By June 3 EOD**: systems-resilience platform decision (A/B/C) + AMZN HMM tuning confirmation
+- **June 5 13:00 UTC**: systems-resilience Phase 5 publication lock
+
+**User Action Items** (no change):
+1. Monitor stockbot Day 1 trading (auto-running) — optional, check logs if interested
+2. By June 3 EOD: Provide systems-resilience platform decision (A/B/C) + domain selection
+3. Confirm AMZN HMM tuning before June 3 market open (if needed)
+4. Decide on resistance-research distribution path (6 decisions in PHASE_2_DECISION_MEMO_JUNE_2026.md)
+
+**Assessment**: ✅ **SYSTEM OPTIMAL FOR MARKET OPEN** — All health checks passed. Stockbot ready to begin live trading at 13:30 UTC. Standing by.
+
+---
+
 ## Since Last Check-in (Session 2566, 2026-06-02 13:32–13:42 UTC — Post-Market-Open Exploration Queue Execution)
 
 **Session Status**: ✅ **POST-MARKET-OPEN EXPLORATION QUEUE ITEM 1 COMPLETE**
