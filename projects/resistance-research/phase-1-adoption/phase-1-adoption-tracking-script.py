@@ -42,6 +42,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Optional Google API imports with graceful fallback
 try:
@@ -63,6 +64,9 @@ DATA_DIR = SCRIPT_DIR / "data"
 LOG_DIR = SCRIPT_DIR / "logs"
 # CHECKIN.md lives one level up in projects/resistance-research/
 CHECKIN_PATH = SCRIPT_DIR.parent / "CHECKIN.md"
+
+# Phase 2 domain trackers — imported lazily to avoid hard dependency
+PHASE2_SRC_DIR = SCRIPT_DIR.parent / "src"
 
 # Canonical Gist IDs — Phase 1 live distribution (verified June 1, 2026)
 CANONICAL_GISTS = {
@@ -823,6 +827,71 @@ def generate_day30_report() -> str:
 
 
 # ---------------------------------------------------------------------------
+# Phase 2 domain tracker integration
+# ---------------------------------------------------------------------------
+
+def _import_phase2_trackers():
+    """
+    Lazily import Phase 2 domain trackers from src/phase_2_domain_trackers.py.
+
+    Returns the run_all_monitors_parallel function, or None if the module
+    is not available (e.g., monitors package not installed).
+    """
+    try:
+        import sys as _sys
+        _src = str(PHASE2_SRC_DIR)
+        if _src not in _sys.path:
+            _sys.path.insert(0, _src)
+        from phase_2_domain_trackers import run_all_monitors_parallel
+        return run_all_monitors_parallel
+    except ImportError as exc:
+        logger.warning(f"Phase 2 domain trackers not available: {exc}")
+        logger.warning(f"Expected module at: {PHASE2_SRC_DIR / 'phase_2_domain_trackers.py'}")
+        return None
+
+
+def run_phase2_parallel(config: Dict) -> Dict:
+    """
+    Run all four Phase 2 domain monitors in parallel alongside the Phase 1
+    Gist-polling workflow.
+
+    Invoked from run_collection() when --run-phase2 flag is set, or from
+    --run-all which runs both Phase 1 and Phase 2 together.
+
+    Args:
+        config: Loaded config dict (same one used by Phase 1)
+
+    Returns:
+        Phase 2 summary dict from run_all_monitors_parallel(), or an error dict
+        if the module could not be imported.
+    """
+    runner = _import_phase2_trackers()
+    if runner is None:
+        return {
+            "error": "phase_2_domain_trackers module not importable",
+            "hint": f"Verify {PHASE2_SRC_DIR / 'phase_2_domain_trackers.py'} exists",
+        }
+
+    logger.info("\n[PHASE 2] Launching domain-specific monitors in parallel...")
+    try:
+        result = runner(config=config)
+        logger.info(
+            f"[PHASE 2] Complete: "
+            f"scotus={result.get('domain_58_scotus', {}).get('status', '?')} | "
+            f"hhs={result.get('domain_39_hhs', {}).get('status', '?')} | "
+            f"election={result.get('domain_40_election', {}).get('status', '?')} | "
+            f"email={result.get('coalition_email_router', {}).get('status', '?')} | "
+            f"alerts_sent={result.get('total_alerts_sent', 0)} | "
+            f"urgent={result.get('has_urgent', False)}"
+        )
+        return result
+    except Exception as exc:
+        msg = f"Phase 2 parallel run failed: {exc}"
+        logger.error(msg)
+        return {"error": msg}
+
+
+# ---------------------------------------------------------------------------
 # Main collection workflow
 # ---------------------------------------------------------------------------
 
@@ -974,18 +1043,31 @@ def run_collection(config: Dict) -> Dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Phase 1 Adoption Tracking — v2.0",
+        description="Phase 1 Adoption Tracking — v2.1 (Phase 2 integrated)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Commands:
   --check-config      Validate configuration (run this first)
-  --run-now           Execute weekly collection immediately
-  --schedule-weekly   Print crontab entry for weekly scheduling
+  --run-now           Execute Phase 1 Gist/email weekly collection
+  --run-phase2        Execute Phase 2 domain monitors only (parallel)
+  --run-all           Execute Phase 1 + Phase 2 together (recommended for cron)
+  --schedule-weekly   Print crontab entries for weekly scheduling
   --day7-report       Print Day 7 checkpoint decision template
   --day30-report      Print Day 30 checkpoint decision template
+
+Phase 2 monitors (run via --run-phase2 or --run-all):
+  Domain 58 SCOTUS    Trump v. Barbara ruling (<15 min alert)
+  Domain 39 HHS       Federal Register / HHS healthcare guidance (hourly)
+  Domain 40 Election  FEC + election/deepfake news (4-hourly)
+  Coalition Router    Gmail auto-tag by domain keyword (hourly)
         """,
     )
-    parser.add_argument("--run-now",          action="store_true")
+    parser.add_argument("--run-now",          action="store_true",
+                        help="Phase 1 weekly collection (Gist + email)")
+    parser.add_argument("--run-phase2",       action="store_true",
+                        help="Phase 2 domain monitors only (parallel)")
+    parser.add_argument("--run-all",          action="store_true",
+                        help="Phase 1 + Phase 2 together (recommended)")
     parser.add_argument("--check-config",     action="store_true")
     parser.add_argument("--schedule-weekly",  action="store_true")
     parser.add_argument("--day7-report",      action="store_true")
@@ -999,17 +1081,23 @@ Commands:
 
     if args.schedule_weekly:
         script = Path(__file__).resolve()
-        cron = f"0 9 * * 1 /usr/bin/python3 {script} --run-now --config {CONFIG_PATH}"
+        cron_p1 = f"0 9 * * 1 /usr/bin/python3 {script} --run-now --config {CONFIG_PATH}"
+        cron_p2 = f"*/14 * * * * /usr/bin/python3 {script} --run-phase2 --config {CONFIG_PATH}"
+        cron_all = f"0 9 * * 1 /usr/bin/python3 {script} --run-all --config {CONFIG_PATH}"
         print()
-        print("Crontab entry (Monday 09:00 UTC):")
-        print(f"  {cron}")
+        print("Crontab entries:")
         print()
-        print("Install steps:")
-        print("  crontab -e")
-        print(f"  # Add: {cron}")
+        print("# Phase 1 only — weekly Gist + email collection (Monday 09:00 UTC)")
+        print(f"  {cron_p1}")
         print()
-        print("Verify:")
-        print("  crontab -l | grep adoption-tracking")
+        print("# Phase 2 only — domain monitors every 14 minutes (SCOTUS sub-15min SLA)")
+        print(f"  {cron_p2}")
+        print()
+        print("# Full suite — Phase 1 + Phase 2 every Monday (simpler single cron)")
+        print(f"  {cron_all}")
+        print()
+        print("Install: crontab -e  then add preferred entry above")
+        print("Verify:  crontab -l | grep adoption-tracking")
         return 0
 
     if args.day7_report:
@@ -1023,12 +1111,68 @@ Commands:
     if args.run_now:
         config = load_config()
         result = run_collection(config)
-        print(f"\nResult: week {result['week_number']} | "
+        print(f"\nPhase 1 result: week {result['week_number']} | "
               f"{result['clicks_this_week']} clicks | "
               f"{len(result['replies'])} replies | "
               f"{len(result['alerts'])} alerts | "
               f"{len(result['errors'])} errors")
         return 0
+
+    if args.run_phase2:
+        config = load_config()
+        p2_result = run_phase2_parallel(config)
+        if "error" in p2_result and len(p2_result) == 1:
+            print(f"\nPhase 2 FAILED: {p2_result['error']}")
+            return 1
+        print(json.dumps(p2_result, indent=2, default=str))
+        return 0 if not p2_result.get("errors") else 1
+
+    if args.run_all:
+        config = load_config()
+        errors: list = []
+
+        # Run Phase 1 and Phase 2 concurrently via ThreadPoolExecutor
+        # Phase 1 is IO-bound (GitHub + Gmail API calls); safe for threads
+        with ThreadPoolExecutor(max_workers=2, thread_name_prefix="adoption-suite") as pool:
+            p1_future = pool.submit(run_collection, config)
+            p2_future = pool.submit(run_phase2_parallel, config)
+
+            p1_result: Dict = {}
+            p2_result: Dict = {}
+
+            for future in as_completed([p1_future, p2_future]):
+                if future is p1_future:
+                    try:
+                        p1_result = future.result(timeout=120)
+                    except Exception as exc:
+                        msg = f"Phase 1 collection failed: {exc}"
+                        logger.error(msg)
+                        errors.append(msg)
+                        p1_result = {"week_number": "?", "clicks_this_week": 0,
+                                     "replies": [], "alerts": [], "errors": [msg]}
+                else:
+                    try:
+                        p2_result = future.result(timeout=120)
+                    except Exception as exc:
+                        msg = f"Phase 2 monitors failed: {exc}"
+                        logger.error(msg)
+                        errors.append(msg)
+                        p2_result = {"errors": [msg]}
+
+        print(f"\nPhase 1: week {p1_result.get('week_number', '?')} | "
+              f"{p1_result.get('clicks_this_week', 0)} clicks | "
+              f"{len(p1_result.get('replies', []))} replies | "
+              f"{len(p1_result.get('alerts', []))} alerts | "
+              f"{len(p1_result.get('errors', []))} errors")
+        print(f"Phase 2: "
+              f"scotus={p2_result.get('domain_58_scotus', {}).get('status', '?')} | "
+              f"hhs={p2_result.get('domain_39_hhs', {}).get('status', '?')} | "
+              f"election={p2_result.get('domain_40_election', {}).get('status', '?')} | "
+              f"email={p2_result.get('coalition_email_router', {}).get('status', '?')} | "
+              f"alerts={p2_result.get('total_alerts_sent', 0)} | "
+              f"urgent={p2_result.get('has_urgent', False)}")
+
+        return 0 if not errors else 1
 
     # Default: show help + config check
     parser.print_help()
