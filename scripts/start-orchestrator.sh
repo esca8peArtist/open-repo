@@ -342,6 +342,10 @@ while true; do
   if [ -f "$WORKSPACE/DEPLOY_READY" ]; then
     echo "[$(date)] DEPLOY_READY flag found — deploying to Jetson..." | tee -a "$LOG_FILE"
     rm -f "$WORKSPACE/DEPLOY_READY"
+    # Commit the deletion so Claude sessions don't see "D DEPLOY_READY" in git
+    # status and mistakenly restore the flag, causing a redeploy loop.
+    git -C "$WORKSPACE" add DEPLOY_READY >> "$LOG_FILE" 2>&1 || true
+    git -C "$WORKSPACE" commit -m "chore: consumed DEPLOY_READY — deployment triggered" >> "$LOG_FILE" 2>&1 || true
     bash "$WORKSPACE/scripts/deploy-to-jetson.sh" >> "$LOG_FILE" 2>&1 || true
   fi
 
