@@ -4391,3 +4391,55 @@ None at this time. Domain 39 activation is on schedule (user action required 13:
 - All-models: 11.3% of weekly
 - Status: ✅ Healthy, no throttling, on target
 
+
+---
+
+## Since Last Check-in (Session 2553, May 31-June 1 multi-session)
+
+### Accomplished
+- ✅ **systems-resilience Phase 6 Domain A Platform Analysis** (Session 2553): 589-line production-ready analysis (3 platforms scored, decision checklist created)
+- ✅ **Stockbot pre-deployment verification** (Sessions 2553-2554): 2-session config (JPM ridge_wf + AMZN lgbm_ho) verified live on Jetson, sleeping until June 2 13:15 UTC
+- ✅ **systems-resilience focus line pruned** (Session 2554): Removed 43-session-old historical context, condensed to actionable state
+- ✅ **All Phase 1-2 autonomous work complete**: All major projects awaiting user decisions
+
+### In Progress
+- ⏳ **Stockbot market open**: T-6h 55m to June 2 13:30 UTC (all systems GO, deployment automation ready)
+- ⏳ **systems-resilience Phase 6 decision gate**: User deadline June 3 EOD UTC (platform A/B/C + author recruitment PATH decision)
+- ⏳ **resistance-research Phase 2 execution**: Awaiting user distribution window decisions
+- ⏳ **seedwarden activation**: Gate 1 infrastructure ready, awaiting user Path A/B decision
+
+### Needs User Input
+1. **By June 3 EOD UTC**: systems-resilience Phase 6 — select platform (A: Nextcloud+Matrix $0, B: Discourse $60-829, C: Mighty Networks $950) + author recruitment path (A/B/C)
+2. **Before market close June 2**: resistance-research distribution — select Window 1 domain/timing
+3. **ASAP**: seedwarden activation — decide Path A (all-in early) or Path B (phased distribution)
+4. **By June 3**: open-repo next phase direction
+
+### Critical Timeline
+- **June 2, 13:15 UTC** (T-2h): Optional pre-flight health checks for stockbot (within 2h window)
+- **June 2, 13:30 UTC** (T-0): 🚨 STOCKBOT MARKET OPEN — JPM ridge_wf + AMZN lgbm_ho execution begins (deployment automatic via DEPLOY_READY)
+- **June 3, EOD UTC**: systems-resilience user decisions lock for Phase 5/6 sequencing
+- **June 5, 13:00 UTC**: systems-resilience Phase 5 publication gate (locked, auto-executes)
+
+### Exploration Queue Status
+- ✅ systems-resilience Phase 6 Domain A analysis: COMPLETE
+- ⏳ seedwarden metrics dashboard: Conditional on user Path A/B launch (unstarted)
+- **Assessment**: Queue under-populated; speculative research lower priority until user decision gates resolve
+
+### Project Status Snapshot (June 2, 06:35 UTC)
+- **stockbot**: ✅ LIVE & READY — 2-session config verified, T-6h 55m to market open, all systems GO
+- **systems-resilience**: ✅ READY — Phase 6 infrastructure complete, user decision gate June 3
+- **resistance-research**: ✅ READY — Phase 2 complete, awaiting distribution decisions
+- **seedwarden**: ✅ READY — Gate 1 infrastructure ready, awaiting activation
+- **open-repo**: ✅ READY — Phase 3 complete, awaiting phase direction
+- **cybersecurity-hardening**: 🟡 BLOCKED — VeraCrypt Phase 1 restart (user action)
+- **mfg-farm**: 🟡 BLOCKED — Test print execution (user action)
+
+### Token Budget
+- Sonnet: ~2.5% of weekly (227,739 tokens)
+- All-models: ~0.5%
+- Status: ✅ Healthy, reset in 160 hours
+
+### Assessment
+✅ **All Phase 1-2 autonomous work complete** — system in optimal countdown mode for June 2 market open. Correct per design. Ready for high-stakes execution window.
+
+---
