@@ -7,7 +7,17 @@
 
 ## Current Focus
 
-*Updated: June 1, 2026 (Session 2518) — Domain 54 (Youth Civic Power) Phase 2 research COMPLETE ahead of schedule; ~7,800 words, 46 citations; production-ready for pre-midterm distribution to youth civic organizations*
+*Updated: June 2, 2026 — Phase 2 Distribution Execution: Domains 59, 51, 57 distribution materials complete. Domain 51 Gist created and live. Send logs and templates ready for user execution.*
+
+**PHASE 2 DISTRIBUTION — THREE ACTIVE WINDOWS**
+
+| Domain | Status | User Action | Deadline |
+|--------|--------|-------------|----------|
+| **Domain 59** (Economic Precarity / CTC) | Tier 1 READY TO SEND — templates in `domain-59-send-templates.md`; Tier 2 contacts prepared in `domain-59-send-log-june1.md` | Fill [YOUR_NAME]/[YOUR_CONTACT_INFO] in 5 templates, send per schedule (CBPP+ITEP June 2 AM, NWLC June 2 PM, MomsRising+AFL-CIO June 3 AM) | June 30 (Senate Finance markup) |
+| **Domain 51** (Campaign Finance / Dark Money) | Gist live (created June 2). Templates in `domain-51-send-templates.md`. Contacts: Common Cause CA, LWV CA, Clean Money Action Fund, Campaign Legal Center, Issue One | Fill [YOUR_NAME]/[YOUR_CONTACT_INFO] in 5 templates; send CLC+Issue One June 9-10, CA contacts June 11-12 | July 1 (CA Fair Elections Act) |
+| **Domain 57** (Multilateral Withdrawal) | Gist live (June 1). Send log and contact list in `domain-57-send-log.md`. Templates in `domain-57-distribution-runbook.md` | Hold until August 10; re-verify contacts August 8-9; add UNGA framing paragraph to templates | August 10 (UNGA prep) |
+
+*Previous entry (June 1, 2026 — Session 2518) — Domain 54 (Youth Civic Power) Phase 2 research COMPLETE ahead of schedule; ~7,800 words, 46 citations; production-ready for pre-midterm distribution to youth civic organizations*
 
 **[COMPLETE — Session 2518] Domain 54 Phase 2 Research: Youth Civic Power**
 
