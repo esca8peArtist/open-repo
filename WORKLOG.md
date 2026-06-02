@@ -1,5 +1,18 @@
 # Work Log
 
+## Session 2636 (2026-06-03 — Docker Entrypoint Verification + Stream Test Fix)
+
+**Status**: ✅ **COMPLETE** — Docker entrypoint issue investigated and confirmed already resolved. Fixed a test regression in test_realtime_stream.py introduced by the 429-backoff commit (Session 0ed3ea8).
+
+**Work Completed**:
+1. ✅ Docker entrypoint investigation: `Dockerfile.jetson` already had correct `COPY scripts/`, `chmod +x`, and `ENTRYPOINT` directives. Session 2631 fixed the generic `Dockerfile`; Jetson was already OK from commit 5e518f7. Fix applied: updated git-tracked mode for `scripts/docker_entrypoint.sh` from 100644 to 100755.
+2. ✅ Test regression fix: `test_realtime_stream.py` had 8 fixtures patching `StockDataStream` but Session 0ed3ea8 introduced `_BackoffStockDataStream` as the class actually instantiated. Updated all 8 fixtures to patch `_BackoffStockDataStream`. 68/68 tests pass.
+3. ✅ June 3 market-open status verified: No infrastructure gaps. Both sessions (JPM ridge_wf, AMZN lgbm_ho) active. Alpaca credentials and feature pipeline fixes deployed.
+
+**Commits**: 260746b (stockbot submodule)
+
+---
+
 ## Session 2635 (2026-06-03 00:15–00:30 UTC — June 3 Market-Open Readiness Verification)
 
 **Status**: ✅ **READY FOR MARKET OPEN** — All critical systems verified operational. No blockers remain. Stockbot monitoring deployed, credentials fixed, 2-session config active and sleeping until June 3 13:15 UTC.
