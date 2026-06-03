@@ -3,6 +3,24 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2650, 2026-06-03 03:22 UTC — Orchestrator: Orientation Verification + Market-Ready Confirmation)
+
+**Status**: ✅ **SYSTEM MARKET-READY — Orientation confirmed; no autonomous work available; auto-wake 13:15 UTC in 10 hours**
+
+**Verified in this session**:
+- ✅ ORCHESTRATOR_STATE.md current as of 03:16 UTC
+- ✅ Exploration Queue: 2 high-priority stockbot items already complete (Pre-Market Brief + Post-Market Runbook)
+- ✅ BLOCKED.md: 2 active blocks unchanged (both user-action-required)
+- ✅ INBOX.md: no new items
+- ✅ All autonomous work complete per session 2648 assessment
+- ✅ All decision-support materials accessible and production-ready
+
+**Session duration**: 20 minutes (Orientation 12, Block/Queue verification 8)
+
+**Next**: Market open 13:30 UTC. Orchestrator auto-wake 13:15 UTC. Post-market analysis at 20:00 UTC per JUNE_3_MARKET_ANALYSIS_RUNBOOK.md. User decision deadline 23:59 UTC for resistance-research, seedwarden, systems-resilience selections.
+
+---
+
 ## Since Last Check-in (Session 2649, 2026-06-03 03:10 UTC — Orchestrator: Idle-State Verification + System Staging)
 
 **Status**: ✅ **SYSTEM READY — No autonomous work available; all decision materials prepared; market open in 10.2 hours; user decision deadline EOD today**
