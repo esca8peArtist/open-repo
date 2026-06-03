@@ -1,5 +1,62 @@
 # Check-In Report
 
+## Since Last Check-in (Session 2670 — 2026-06-03 08:28 UTC) — Mid-Day Status Verification; Critical Blocker Confirmed Unresolved; User Decisions Awaited
+
+### Summary
+**Session objective**: Orient to state, verify critical blocker status, assess autonomous work availability. **Result**: (1) Alpaca auth blocker confirmed STILL ACTIVE (2 Docker auth failures, unchanged since Sessions 2665-2669). (2) All projects verified blocked on user decisions (deadline 23:59 UTC TODAY) or user actions. (3) Exploration Queue has 3 active items, all scheduled for June 8-14+ and dependent on prior milestones. (4) NO autonomous work available — all major deliverables complete, all contingencies staged. (5) System in production-ready idle state, standing by for user decisions.
+
+### What Was Accomplished (This Session)
+✅ **Critical Block Status Verification** (3 min):
+   - SSH check: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` returned **2** 
+   - Status: Alpaca auth failure CONFIRMED STILL ACTIVE (6+ hours, unchanged since Session 2652 discovery)
+   - Evidence: Repeated "insufficient subscription" code 409 errors in Docker logs
+   - Root cause: Session 2630 "fix" incomplete — both ALPACA_API_KEY_ID and ALPACA_API_KEY set to same value (should be different)
+   - Impact: Cannot execute trades June 3-4; blocks JPM ridge_wf + AMZN lgbm_ho paper trading during market hours
+   - User action required: Correct credentials on Jetson, restart Docker container
+
+✅ **Autonomous Work Assessment** (10 min):
+   - Re-read ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md, EXPLORATION_QUEUE.md
+   - Verified all project scopes: All Phase 1-6 work complete, all contingencies staged
+   - Verified Exploration Queue: 3 active items (Items 16, 53, 54) all scheduled for June 8-14+ execution
+   - Confirmed: All four user decisions captured correctly (Domain 59, Phase 2 domains, seedwarden path, systems-resilience platform)
+   - Result: **NO additional autonomous work available** — standing by for user input by 23:59 UTC deadline
+
+### Project Status (All Production-Ready, All Awaiting User Decisions)
+- 🔴 **stockbot** (P1): **CRITICAL BLOCKER ACTIVE** — Alpaca credentials incorrect; market trading blocked until user fixes
+- 🟡 **resistance-research** (P2): Phase 1 Coalition Leverage Matrix complete; Domain 59 materials ready; awaiting user decision (send Domain 59, select Phase 2 domains)
+- 🟡 **seedwarden** (P5): Gate 1 infrastructure verified 100%; all materials ready; awaiting user decision (Track A or Track B)
+- 🟡 **systems-resilience** (P7): Phase 6 architecture complete; awaiting user platform selection (Nextcloud+Matrix vs. Discourse)
+- 🔴 **cybersecurity-hardening** (P3): Phase 1 paused at VeraCrypt restart (Windows machine user action required)
+- 🔴 **mfg-farm** (P4): Etsy launch ready; awaiting test print execution (user action)
+- 🟢 **open-repo** (P6): Phase 5 A11y violations resolved; deployment ready (June 12 target)
+- ✅ **off-grid-living** (P8): Complete, published
+
+### Time-Sensitive Items
+- **NOW (08:28 UTC)**: Critical Alpaca blocker unresolved; market hours approaching (13:30 UTC = 5h 2min away)
+- **13:30–20:00 UTC**: Market open (if credentials fixed)
+- **23:59 UTC TODAY**: User decision deadline (15h 31min remaining) for four major items
+
+### Awaiting User Input (Deadline 23:59 UTC TODAY)
+
+**🔴 CRITICAL — Alpaca Credentials Fix**:
+1. SSH to Jetson: `ssh awank@100.120.18.84`
+2. Verify `/opt/stockbot/.env`: Separate ALPACA_API_KEY_ID (key identifier) from ALPACA_API_KEY (secret key)
+3. Current state: Both incorrect (same value)
+4. Fix: Update .env with correct credentials from Alpaca dashboard
+5. Restart: `docker restart stockbot`
+6. Verify: `docker logs stockbot --tail=20 | grep insufficient` should return 0
+
+**Important (15h 31min)** — Four User Decisions:
+1. **Domain 59 Distribution**: Execute this week (30-45 min)? Senate Finance CTC markup deadline June 30 (26M+ children)
+2. **Phase 2 Domain Activation**: Which domains? (51/57/48/49-50/54?) Decision gates research activation
+3. **Seedwarden Path**: Track A (minimal, ready now) or Track B (full June launch, ready now)
+4. **Systems-Resilience Platform**: Nextcloud+Matrix (recommended 9.5/10) vs. Discourse (8.0/10) vs. other?
+
+### Status
+**ORCHESTRATOR IDLE — ALL AUTONOMOUS WORK COMPLETE**. System production-ready. Critical blocker unresolved. Standing by for user decisions by 23:59 UTC deadline. Zero autonomous work available for additional execution today.
+
+---
+
 ## Since Last Check-in (Session 2669 — 2026-06-03 08:20 UTC) — Morning Idle Confirmation + Exploration Queue Assessment
 
 ### Summary
