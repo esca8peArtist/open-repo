@@ -1,453 +1,369 @@
 ---
 title: "Coalition Coordination Protocol — Domain 49 Multi-Organization Sync"
 created: "2026-06-03"
-session: "Session 2707 — Resistance Research Orchestrator"
-status: "production-ready"
-document_type: "Multi-organization coordination framework for Domain 49 distribution"
+status: "production-ready — awaiting user approval"
+domain: 49
+session: "Resistance Research Agent — Exploration Queue Item 55"
+cross_references:
+  - DOMAIN_49_EXECUTION_PREFLIGHT.md
+  - DOMAIN_49_CONTINGENCY_DECISION_TREE.md
+  - domains/domain-49-callais-vra-redistricting-emergency.md
+  - DISTRIBUTION_EXECUTION_LOG.md
 ---
 
 # Coalition Coordination Protocol
-## Multi-Organization Sync Procedures for Domain 49 (Louisiana v. Callais VRA Redistricting)
+## Domain 49 — Louisiana v. Callais VRA Redistricting Emergency
 
-*If Domain 49 distribution creates multi-organization coordination needs, use this protocol to manage requests, avoid duplication, and maintain aligned messaging.*
-
----
-
-## Executive Summary: When This Protocol is Triggered
-
-**This protocol applies when**:
-1. Two or more contacted organizations ask to coordinate messaging or strategy
-2. One organization asks to forward the research to other organizations on their behalf
-3. A coalition (e.g., voting rights alliance, CBC caucus) wants to adopt the research as a shared resource
-4. Decision authority questions arise (who decides on scope changes or messaging adjustments?)
-
-**This protocol is NOT triggered for**:
-- Simple direct outreach to individual organizations (use DOMAIN_49_EXECUTION_PREFLIGHT.md)
-- Contingency responses to individual contacts declining or requesting customization (use DOMAIN_49_CONTINGENCY_DECISION_TREE.md)
+*Multi-organization sync procedures, escalation chain, decision authority, communication templates, and Day 7 assessment data capture.*
 
 ---
 
-## Part 1: Multi-Organization Sync Procedures
+## Part 1: Full Contact List
 
-### When Organizations Want to Coordinate (Trigger: Two Contacts Mention Coalition)
+All contacts below are current as of June 3, 2026. Phone numbers are for backup use (email is primary). Twitter handles are for monitoring organizational response and for public amplification if an org shares the research.
 
-**Scenario**: You send research to Democracy Docket and NAACP LDF independently. Both reply asking: "Are you coordinating this with other organizations? Should we all align on messaging?"
+### Tier 1 — Active Litigation Organizations (First Contact June 4, 08:00–09:00 UTC)
 
-**Response Protocol**:
+| Organization | Full Name / Role | Email | Phone | Twitter | Why First |
+|-------------|-----------------|-------|-------|---------|-----------|
+| **NAACP Legal Defense Fund** | Voting Rights Program (general intake) | info@naacpldf.org | (202) 682-1300 | @NAACP_LDF | Named plaintiff in Robinson v. Landry / Callais; managing Alabama stay proceedings |
+| **Democracy Docket** | General litigation intake | democracy@democracydocket.com | (check democracydocket.com) | @DemocracyDocket | Primary public litigation tracker for Callais cascade; Marc Elias org |
+| **Campaign Legal Center** | Research/litigation intake | info@campaignlegal.org | (202) 736-2200 | @CampaignLegal | Published "Redistricting 101 after Callais"; already engaged; identifies state VRA as primary alternative |
+| **MALDEF** | Communications / Voting Rights | communications@maldef.org | (202) 628-5400 | @MALDEF | Issued same-day statement on ruling; monitoring TX/CA Hispanic-majority districts |
 
-**Step 1: Identify the Coalition Hub** (within 2 hours of receiving the request)
+### Tier 2 — Voting Rights Coalition (Contact June 4, 13:00–15:00 UTC)
 
-Call the organization that raised the coordination request and ask:
+| Organization | Full Name / Role | Email | Phone | Twitter | Notes |
+|-------------|-----------------|-------|-------|---------|-------|
+| **NAACP National** | General intake / Legal Affairs | info@naacp.org | (410) 580-5777 | @NAACP | CBC connections; voter education infrastructure in affected states |
+| **Brennan Center for Justice** | Redistricting Program | redistricting@brennancenter.org | (212) 998-6730 | @BrennanCenter | Published Callais analysis (cited in domain Section 9.3); credible research voice for Hill briefing |
+| **LULAC** | National voting rights / advocacy | info@lulac.org | (202) 833-6130 | @LULAC | Active in Texas redistricting coalition (LULAC + MALDEF + NAACP TX + Fair Maps TX) |
+| **Voto Latino** | Voter education / research | info@votolatino.org | (202) 350-8434 | @VotoLatino | Voter education focus; 342→202 state leg district loss is their community's core concern |
 
-```
-Script: "I appreciate you asking about coordination. Are you interested in being the 
-hub for coalition alignment on this research, or should I identify a neutral coordinator? 
-What coordination would be most useful — shared strategy call, email thread, or just informal updates?"
-```
+### Tier 3 — Policy/Academic Organizations (Contact June 4, 19:00 UTC and June 5, 09:00 UTC)
 
-**Most likely hub organizations** (in order of coordination experience):
+| Organization | Full Name / Role | Email | Phone | Twitter | Notes |
+|-------------|-----------------|-------|-------|---------|-------|
+| **Congressional Black Caucus Foundation** | Research / Policy | info@cbcfinc.org | (202) 263-2800 | @CBCFInc | Foundation supporting CBC members; member briefing resource for seat-at-risk analysis |
+| **Fair Vote** | Research / Fair Representation Act | info@fairvote.org | (301) 270-4616 | @FairVote | Advocates for Fair Representation Act (multi-member districts + RCV); named in domain Section 7.3 |
+| **Issue One** | Research / ReFormers Caucus | info@issueone.org | (202) 543-6287 | @IssueOne | Bipartisan reform framing; ReFormers Caucus cross-party angle |
+| **Harvard Kennedy School** | Electoral Democracy / Ash Center | Via hks.harvard.edu/contact | (617) 495-1100 | @HarvardKennedy | Published Callais analysis (cited in Section 9.3); academic credentialing function |
+| **Voting Rights Alliance** | Coalition coordination | Via votingrightsalliance.org | N/A | @VotingRightsAll | Post-Callais coalition coordination hub; explicit multi-org coordination mission |
 
-| Organization | Hub Likelihood | Why | Contact for Hub Discussion |
-|-------------|-----------------|-----|---------------------------|
-| Democracy Docket | Very High | Full-time litigation coordination; used to leading legal strategy networks | Marc Elias or litigation director |
-| NAACP LDF | High | Designated party in the original Callais case; other orgs defer to their legal lead | Litigation director |
-| Campaign Legal Center | High | National election law expertise; comfortable convening expert networks | Executive director or research team lead |
-| Voting Rights Alliance | High | Explicit multi-org coordination mission (post-Callais voting rights coordination) | Coalition coordinator |
+### Tier 4 — State-Level Contacts (Contact June 5, 15:00 UTC)
 
-**Step 2: Create Coalition Email Thread** (within 4 hours)
-
-If the identified hub agrees to coordinate, send them a list of all contacted organizations and ask them to create a shared email thread or shared document. The shared resource should include:
-
-- **Subject**: "Coalition coordination on Callais research and litigation strategy"
-- **Distribution**: All Tier 1–2 organizations that have expressed interest (at minimum: Democracy Docket, NAACP LDF, Campaign Legal Center, MALDEF, NAACP National, LULAC)
-- **Initial message**: Hub organization sends (you provide the draft):
-
-```
-Subject: Coalition alignment on Louisiana v. Callais research and June litigation strategy
-
-Dear [Coalition Members],
-
-I'm writing to establish a shared coordination space for organizations responding to the Louisiana v. Callais 
-redistricting cascade. Research on the ruling, the state-by-state cascade, and post-Callais litigation strategies 
-has been compiled here: [GIST_URL]
-
-To avoid duplication and ensure aligned messaging, I'd like to establish:
-
-1. A weekly check-in (conference call or email update, June 4–June 30)
-2. A shared document for litigation status updates (which states have filed, what legal theories are being used)
-3. Coordination on media/messaging (so we're not speaking at cross-purposes)
-
-Attached: List of organizations in the coalition, contact info, and timeline.
-
-Logistics for this week (June 4–5): I'm coordinating immediate distribution to legal teams. 
-By June 6, we can hold the first strategy alignment call if you're interested.
-
-Does this work for everyone?
-```
-
-**Step 3: Distribute Coalition Information**
-
-Once the hub agrees, send the hub coordinator this information:
-
-| Element | Content |
-|---------|---------|
-| **Coalition roster** | All organizations contacted (names, contact persons, email, organization) |
-| **Litigation status tracker** | State-by-state status (Alabama, Tennessee, Louisiana, SC, Florida, Mississippi) |
-| **Messaging framework** | Key messages: Callais completes VRA destruction; Section 3 bail-in is available remedy; state VRA expansion is medium-term strategy |
-| **Timeline** | June 4–5 litigation support window → June 6–30 monitoring → July 1+ Phase 2 expansion |
-| **Escalation protocol** | Who decides on scope changes? (see Part 2 below) |
-
-**Step 4: Establish Communication Cadence** (ongoing, June 4–June 30)
-
-| Cadence | Format | Participants | Purpose |
-|---------|--------|-------------|---------|
-| **Daily** | Email updates (optional) | Hub coordinator | Litigation updates (new filings, court actions) |
-| **3x weekly** | Conference call (Tue/Thu/Sat) | Tier 1 litigation orgs only (Democracy Docket, NAACP LDF, Campaign Legal Center) | Litigation strategy alignment |
-| **Weekly** | Shared document update | All coalition members | Status check, litigation filings, organizational use of research |
-| **Bi-weekly** | Full coalition call | All Tier 1–2 orgs + interested Tier 3 | Strategic planning, contingency discussions, Phase 2 planning |
+| Organization | State | Email | Phone | Notes |
+|-------------|-------|-------|-------|-------|
+| **Louisiana NAACP State Conference** | LA | Find via naacp.org/chapter-locator | (check chapter locator) | June 1 map signing; rescheduled primary voter education |
+| **Tennessee NAACP State Conference** | TN | Find via naacp.org/chapter-locator | (check chapter locator) | 9th District elimination; August primary district boundaries |
+| **Alabama NAACP State Conference** | AL | Find via naacp.org/chapter-locator | (check chapter locator) | May 11 SCOTUS stay; ongoing intentional discrimination finding |
+| **South Carolina NAACP** | SC | Find via naacp.org/chapter-locator | (check chapter locator) | Clyburn seat threat; SC House redistricting session |
 
 ---
 
-### When Organizations Ask to Forward to Others
+## Part 2: Communication Sequence — Who Hears What, in What Order
 
-**Scenario**: Democracy Docket replies: "This is really useful. Can I forward to three other voting rights litigators who aren't on your list but are working on Tennessee and South Carolina cases?"
+The contact sequence is structured around three principles: (1) litigation urgency — organizations who can act on the research within 24–48 hours go first; (2) audience relevance — each organization receives the template most aligned with their mission; (3) coalition building — organizations who can amplify to others go before organizations who can only use the research themselves.
 
-**Response Protocol**:
+### Sequence Logic (Why This Order)
 
-**Step 1: Grant Permission with Conditions**
+**Step 1 (08:00–09:00 UTC June 4) — NAACP LDF + Democracy Docket**: These two are the only organizations actively drafting emergency motions on June 4. Research reaching them before the workday begins maximizes the probability of integration into materials being drafted that day.
 
-Reply immediately:
+**Step 2 (09:00 UTC June 4) — Campaign Legal Center + MALDEF**: CLC briefs Congress and advises litigation teams; MALDEF coordinates the multi-ethnic coalition. These are the organizations that translate LDF's Louisiana case into the broader 50-state redistricting response. They go second because they amplify the litigation work rather than doing the litigation themselves.
 
+**Step 3 (13:00–15:00 UTC June 4) — NAACP National, Brennan Center, LULAC, Voto Latino**: These organizations have the voter education, policy research, and Hispanic community infrastructure that the redistricting response needs beyond the emergency litigation window. They go after lunch (East Coast) because they are more likely to be in meetings during the morning hours.
+
+**Step 4 (19:00 UTC June 4) — CBC Foundation, Fair Vote**: These organizations have a legislative and structural reform angle (not emergency litigation). They go in the late afternoon/early evening when litigation teams are less active.
+
+**Step 5 (09:00–15:00 UTC June 5) — Issue One, HKS, Voting Rights Alliance, state NAACP chapters**: Academic, policy, and state-level organizations. Slower response cycles; useful for the medium-term redistricting response that extends through July–August.
+
+---
+
+## Part 3: Escalation Chain
+
+### If a Key Organization Does Not Respond
+
+**48-hour rule**: If a Tier 1 organization (LDF, Democracy Docket, CLC, MALDEF) has not responded within 48 hours of send and no bounce was received, use this escalation chain:
+
+1. **Send follow-up email** (48 hours after original):
 ```
-Absolutely — please forward. I just ask two things:
-1. Let me know who you're forwarding to (so I can add them to my tracking list)
-2. Include a note that they can reach me directly if they have questions or want to customize sections
+Subject: Following up — Callais redistricting research [sent [date]]
 
-Feel free to add this footer to your forward:
-"Research compiled by [You]. For questions or customization requests, reach out to [email]."
-```
+Hi [Name],
 
-**Step 2: Add New Contacts to Coalition Roster**
+I wanted to follow up on the research I shared on [date] — Louisiana v. Callais and the redistricting 
+cascade, with analysis of the Section 3 bail-in remedy and Arlington Heights intentional discrimination 
+framework.
 
-When Democracy Docket (or any organization) forwards the research and provides new contact names:
-- Add them to your tracking spreadsheet with notation "referred by [originating org]"
-- Send them a brief introduction email:
+Given the pace of litigation in Alabama, Tennessee, and Louisiana, I want to make sure the research 
+reached the right person on your team. If there's a specific contact on your voting rights or 
+redistricting team who would find it most useful, please let me know and I'll send directly.
 
-```
-Subject: Callais research — referred by [Org Name]
-
-Hi [New Contact],
-
-[Org Name] forwarded you research on Louisiana v. Callais and the redistricting cascade in response 
-to [litigation they're working on]. I compiled this research for litigation teams working on June 4–5 
-emergency strategy, and [Org] thought it might be helpful for your team.
-
-The full research: [GIST_URL]
-
-If you'd like me to customize sections for your specific litigation (e.g., focusing on the Tennessee 
-9th District case), I'm happy to do that. Just let me know what would be most useful.
+Research link: [GIST_URL]
 
 [Your name]
-[Contact info]
 ```
 
-This accomplishes:
-- Acknowledges the referring organization (builds goodwill)
-- Introduces yourself directly (creates relationship continuity if they need follow-up)
-- Offers customization (increases perceived value)
+2. **Try alternate email** from the contact list in Part 1 above (e.g., if `info@` bounced, try `communications@` or `press@`)
 
-**Step 3: Track Referral Chain**
+3. **Phone call** (72 hours after original, for NAACP LDF or Democracy Docket only):
+Script: "Hi, I'm [name]. I sent research on Louisiana v. Callais and the redistricting cascade three days ago. I want to confirm it reached your litigation or research team. Is there a specific person I should have contacted?"
 
-Keep a note of the referral chain:
-- Democracy Docket → Tennessee voting rights attorney (new)
-- NAACP LDF → South Carolina redistricting litigation team (new)
+4. **Twitter/social outreach** (last resort, only if email fails entirely):
+If the organization is actively posting about Callais redistricting on Twitter, reply to their public post: "I've compiled research on the Section 3 bail-in remedy and Arlington Heights framework that may support your work — would you like the link?" This is public and should be used only if private outreach has failed.
 
-This helps you understand which organizations have the most trust/credibility in specific legal niches.
+### Backup Person for Each Key Organization
 
----
-
-## Part 2: Decision Authority and Escalation
-
-### Primary Decision Authority: User
-
-**The user (orchestrator) has final decision authority** on:
-
-1. **Scope changes** — "Should we expand outreach beyond the original 10 contacts?"
-2. **Messaging changes** — "The coalition wants to reframe the legal argument differently; do you agree?"
-3. **Timeline changes** — "Coalition members are saying June 4–5 is infeasible; should we defer to Phase 2?"
-4. **Resource commitment** — "The litigation teams are asking for customized briefs; should we spend time on that?"
-
-**The coalition hub has input authority** (recommendation, but not final decision) on:
-
-1. **Litigation strategy alignment** — "Based on what we're seeing in court filings, here's what the strategy should be"
-2. **Messaging coordination** — "To avoid speaking at cross-purposes, the coalition recommends we all emphasize Section 3 bail-in"
-3. **Timeline adjustment** — "The coalition consensus is that June 4–5 outreach is premature; we should wait for the Alabama ruling"
-
-**Individual organizations have authority** only over:
-
-1. **How they use the research** — Organizations can reframe, edit, or integrate as they see fit
-2. **Who they forward to** — They can refer to colleagues/related organizations without asking permission
-3. **Whether they participate in coalition** — Organizations can opt out of coordination if it doesn't fit their operations
-
-### Escalation Chain for Scope/Strategy Conflicts
-
-**Scenario 1: Coalition Hub Wants to Change the Core Message**
-
-Example: Democracy Docket calls and says: "The litigation teams think we should de-emphasize the Section 3 bail-in angle because the circuits are moving away from bail-in remedies. Can you rewrite the research to focus on Arlington Heights instead?"
-
-**Your response** (not the hub's decision to make):
-
-1. **Acknowledge** the feedback: "That's valuable information about the litigation landscape."
-2. **Clarify** authority: "The core research direction is a user (orchestrator) decision, not a coalition decision. But I'll pass this to them."
-3. **Escalate** to user:
-
-   **Email to user**:
-   ```
-   DECISION REQUIRED: Coalition request to reframe legal strategy in Domain 49 research
-   
-   SITUATION: Democracy Docket (coalition hub) is requesting that we de-emphasize Section 3 bail-in 
-   remedy and focus instead on Arlington Heights intentional discrimination framework, based on 
-   litigation teams' assessment that bail-in remedies aren't viable in current circuit environment.
-   
-   IMPACT: This is a significant doctrinal reframe (changes the core remedy argument in the research)
-   
-   OPTIONS:
-   1. Rewrite research to de-emphasize bail-in (1.5–2 hours work; impacts litigation strategy signal)
-   2. Keep current research unchanged; acknowledge the circuit feedback in a separate memo (30 min; 
-      avoids reframing existing research)
-   3. Ask the coalition to provide more specific circuit precedent (gather info before deciding)
-   
-   RECOMMENDATION: [Your call]
-   
-   TIMING: Democracy Docket needs an answer by June 6 for their brief-writing.
-   ```
-
-4. **Await user decision**, then:
-   - If user approves reframe: Update research, notify all coalition members of the change with rationale
-   - If user declines reframe: Send polite response to Democracy Docket: "We're keeping the Section 3 analysis as is; it reflects the statutory remedy available under Section 3 even if circuit implementation is uncertain. Your teams can emphasize Arlington Heights if that fits your litigation strategy."
-
-**Scenario 2: Coalition Consensus is That Timeline is Infeasible**
-
-Example: Three organizations (NAACP LDF, Campaign Legal Center, MALDEF) all independently say: "We can't mobilize this fast. Primary deadlines are closing. June 4–5 distribution is premature."
-
-**Your response**:
-
-1. **Recognize consensus**: This is meaningful feedback that suggests the external environment has changed.
-2. **Escalate immediately to user**:
-
-   **Email**:
-   ```
-   CONSENSUS COALITION FEEDBACK: June 4–5 timeline is infeasible
-   
-   SITUATION: Three key Tier 1–2 organizations (NAACP LDF, Campaign Legal Center, MALDEF) have 
-   independently signaled that June 4–5 distribution doesn't match their operational capacity. 
-   Primary deadlines are closing faster than anticipated; organizations can't integrate new materials 
-   in the emergency window.
-   
-   IMPACT: This suggests the original execution window (June 4–5) may need to shift to Phase 2 (July 1+)
-   
-   USER DECISION NEEDED:
-   1. Proceed with abbreviated June 4–5 (Tier 1 litigation orgs only)?
-   2. Defer full distribution to Phase 2 (July 1–10)?
-   3. Some hybrid approach?
-   
-   RECOMMENDATION: Phase 2 deferral. The organizations know their capacity; forcing June 4–5 
-   distribution when they can't absorb it reduces effectiveness.
-   
-   TIMING: Need decision by June 4 morning to adjust execution.
-   ```
-
-3. **Await user decision**, then proceed accordingly (see CONTINGENCY_DECISION_TREE.md, Scenario C)
-
-### Conflicting Organization Positions
-
-**Scenario**: MALDEF wants to emphasize Hispanic/Native American district impacts (Section 9.2). NAACP LDF wants to emphasize Black representation analysis (Sections 1–3). Both are contacting you asking the research to be customized their way.
-
-**Your response**:
-
-1. **Reassure both organizations**: "The research covers both perspectives. You can emphasize your priorities in your own briefing/outreach without needing to change the research."
-2. **Provide customized one-pagers** (not rewriting the core research):
-   - One-pager for MALDEF: "Section 9.2 deep-dive: Hispanic, Native, Asian-American majority-minority district impacts (300 words)"
-   - One-pager for NAACP LDF: "Section 2–3 summary: Arlington Heights framework and Section 3 bail-in remedy (300 words)"
-3. **Escalate to user only if** they demand the core research be rewritten differently for each organization.
+| If this contact is unresponsive... | Try this backup |
+|-------------------------------------|-----------------|
+| NAACP LDF info@naacpldf.org | Call (202) 682-1300; ask for "Voting Rights program" or "Research team" |
+| Democracy Docket | Use website contact form (democracydocket.com/contact); reference "Callais redistricting research" |
+| Campaign Legal Center | Try a named contact from CLC's published redistricting work (find via campaignlegal.org/team) |
+| MALDEF | Try info@maldef.org as alternate; or call (213) 629-2512 (LA office) |
 
 ---
 
-## Part 3: Coalition Governance Rules
+## Part 4: Decision Authority
 
-### Rule 1: Unanimous Consent for Research Edits
+### Who Has Final Call on Tactical Pivots
 
-If the coalition hub asks to make changes to the core research (adding sections, changing arguments, deleting material):
+**User (researcher/orchestrator)**: Final decision authority on ALL of the following.
+- Whether to defer Domain 49 distribution to Phase 2
+- Whether to execute the Domain 49 → Domain 50 swap (see Contingency Decision Tree Scenario F)
+- Whether to commit to supplemental brief production (Scenario B2 in Contingency Decision Tree)
+- Whether to expand the contact list beyond the 17 organizations in this protocol
+- Whether to change the core legal framing of the research (Section 3 bail-in vs. Arlington Heights emphasis)
+- Any commitment of more than 2 hours of agent research time
 
-**Process**:
-1. Coalition hub proposes specific edit (with rationale and text)
-2. You circulate to all Tier 1–2 coalition members for feedback (72-hour comment window)
-3. Edits are approved only if no member objects
-4. Any edit requires user approval before implementation
+**Coalition hub (if formed — likely Democracy Docket or NAACP LDF)**: Input authority on:
+- Tactical litigation strategy alignment ("The circuits are moving away from bail-in remedies")
+- Messaging coordination ("Can everyone emphasize Arlington Heights in public communications?")
+- Timeline adjustment recommendations ("The emergency window is tighter than we thought")
 
-**Rationale**: The research is a resource for the entire coalition; no single organization should be able to unilaterally change it.
+The coalition hub's input is advisory. The user makes the final call.
 
-### Rule 2: Coalition Coordination Does Not Override User Authority
+**Individual organizations**: Authority only over:
+- How they use the research in their own work
+- Who they forward it to
+- Whether they participate in coalition coordination
 
-**User decision authority** on scope, timeline, and resource allocation stands even if the coalition makes consensus recommendations.
+No organization can gate access to the research for other organizations.
 
-**Example**: If the coalition votes unanimously to "expand outreach to 50 organizations," the user still makes the final call.
+### Conflict Resolution Protocol
 
-**Conversely**: If the user decides to defer to Phase 2, but the coalition wants to proceed with June 4–5, the user's decision is binding.
+**Scenario**: NAACP LDF wants the research to emphasize Black representation impacts (Sections 1–3). MALDEF wants it to emphasize Hispanic/Native/Asian-American district losses (Section 9.2). Both want customization.
 
-### Rule 3: Organizations Can Opt Out of Coalition
+**Response**: The research covers both — neither needs the other to be changed. Provide each organization a one-page extract:
+- LDF one-pager: Sections 1–3 summary (Arlington Heights, intentional discrimination, Alabama/Tennessee/Louisiana)
+- MALDEF one-pager: Section 9.2 summary (342→202 district projection, Texas implications, surviving litigation paths)
 
-If an organization wants the research but does not want to participate in the coalition coordination:
+The core research is not modified. Both organizations get a tailored entry point. Production time: 30 minutes total.
 
-- That's fine. They can receive the research and use it independently.
-- They do not need to participate in calls, alignment meetings, or shared documents.
-- Coalition coordination is voluntary, not mandatory.
+**Scenario**: Democracy Docket (coalition hub) recommends a doctrinal reframe that changes the research's emphasis.
 
-### Rule 4: Coalition Hub Cannot Gatekeep Distribution
-
-If the coalition hub (e.g., Democracy Docket) asks to control who receives the research ("Let us vet all new organizations before distribution"), the answer is:
-
-"You can recommend organizations for outreach, but I retain authority to distribute to any organization I think would find it useful. The coalition is a coordination tool, not a gatekeeping mechanism."
-
-**Rationale**: Too much gatekeeping reduces reach; the research's value comes from broad distribution to relevant organizations.
-
----
-
-## Part 4: Messaging Consistency and Variation
-
-### Core Message (Non-Negotiable)
-
-All organizations should understand the core argument:
-
-**"Louisiana v. Callais completes the Supreme Court's dismantling of the Voting Rights Act by raising the evidentiary standard for Section 2 claims, enabling states to eliminate majority-minority districts. The April 29 ruling triggered immediate redistricting cascades in six states. Available remedies include Section 3 bail-in for courts that find intentional discrimination, state voting rights acts, and proportional representation structural reform."**
-
-### Message Variation (Allowed)
-
-Different organizations can emphasize different aspects based on their missions:
-
-| Organization Type | Emphasis | Example Variation |
-|------------------|----------|------------------|
-| **Litigation orgs** | Section 3 bail-in remedy, Arlington Heights framework, immediate litigation strategy | "The opportunity is Section 3 bail-in supervision as a remedy more protective than Section 2 ever was" |
-| **Voter education orgs** | Why district lines changed, what it means for representation, voter education angles | "Here's why your congressional district changed on June 1, and why it matters for your representation" |
-| **State-level policy orgs** | State VRA expansion, state constitutional remedies | "We need state-level voting rights protections because federal VRA is no longer viable" |
-| **Academic/think tanks** | Proportional representation, international comparatives, structural reform | "This ruling demonstrates why proportional representation would eliminate the majority-minority district trap" |
-
-**Rule**: Variation is allowed, but no organization should use the research to argue something it contradicts. For example:
-- ✓ Allowed: Litigation org emphasizing bail-in while voter ed org emphasizes district changes
-- ✗ Not allowed: Using the research to argue "Callais is good for minority representation"
+**Response**: Escalate to user per Contingency Decision Tree Scenario C. Do not implement the reframe without user approval.
 
 ---
 
-## Part 5: Coordination Template for Coalition Meetings
+## Part 5: Discord/Slack Coordination Templates
 
-If a coalition coordination call is convened, use this template:
+If a coalition channel is established (on Signal, Slack, Discord, or email list) for redistricting coordination, use these templates.
 
-### Weekly Coalition Call Template (30 minutes)
-
-**Time**: Tuesdays 14:00 UTC (or organization-specific time)
-
-**Participants**: Democracy Docket, NAACP LDF, Campaign Legal Center (core litigation orgs); rotating guests from Tier 2
-
-**Agenda**:
-1. **Litigation status update** (10 minutes)
-   - New filings in Alabama, Tennessee, Louisiana, South Carolina?
-   - Any new court orders?
-   - Link to any briefs that cite or use the research
-
-2. **Organizational integration update** (10 minutes)
-   - Is research being used in your briefing/advocacy? In what form?
-   - Any customization requests or feedback?
-   - State or local partners using research?
-
-3. **Contingency check** (5 minutes)
-   - Are we still on track for June 4–5 distribution?
-   - Any organizations declining or asking for major changes?
-   - Should we adjust timeline or scope?
-
-4. **Next week's priorities** (5 minutes)
-   - Tier 2 expansion on track for June 6–15?
-   - Any Phase 2 planning needed?
-
-**Recording**: Notes to be shared with coalition (no full recording unless requested)
-
----
-
-## Part 6: When Coalition Coordination Breaks Down
-
-### Scenario: Two Organizations Directly Conflict
-
-Example: NAACP LDF wants to file brief emphasizing Black district representation loss. MALDEF wants to file brief emphasizing Hispanic district impacts. Both want the research to claim their angle is primary.
-
-**Your role**: Neutral; both are right.
-
-**Response**:
+### Initial Coalition Channel Message (Sent by Hub Organization)
 ```
-This is perfect — you both should file. The research supports both analyses. NAACP LDF brief leads 
-with Black representation (which is the bulk of the impact); MALDEF brief leads with Hispanic/Native/API 
-impacts (Section 9.2). Two briefs from different angles strengthen the legal record.
+Welcome to the Callais redistricting coalition coordination channel.
 
-I can provide customized one-pagers for each if that helps with your writing.
+We are coordinating the litigation and advocacy response to Louisiana v. Callais (April 29, 2026) 
+and the redistricting cascade in six states (AL, TN, LA, SC, FL, MS).
+
+Resources:
+- Domain 49 Research Document: [GIST_URL]
+- Domain 49 Litigation Status Tracker: [Link if created]
+- Coalition roster: [Link to this document or shared doc]
+
+Current priority: Emergency preliminary injunction filings before June filing deadlines close.
+
+Please introduce your organization and your primary focus area (litigation / policy / voter education).
 ```
 
-### Scenario: Coalition Hub Becomes Unresponsive
-
-Example: Democracy Docket (coalition hub) stops responding to emails; coordination breaks down.
-
-**Your response**:
-1. **Try to reach them**: Call and check in — they may be in oral arguments or emergency litigation
-2. **Pause coalition coordination**: Don't let an unresponsive hub block the distribution; proceed with individual outreach
-3. **Identify backup hub**: Contact NAACP LDF or Campaign Legal Center: "Can one of you take over coordination if Democracy Docket is too busy?"
-4. **Escalate to user**: "Coalition hub is unresponsive; should we continue coordination or shift to individual org outreach?"
-
-### Scenario: Coalition Becomes Too Large to Coordinate
-
-If more than 15 organizations want to participate in coalition calls:
-
-**Response**:
-1. Propose **tiered participation**:
-   - Tier 1 (core litigation): Democracy Docket, NAACP LDF, Campaign Legal Center — weekly calls
-   - Tier 2 (coalition): MALDEF, NAACP National, LULAC, Brennan Center — bi-weekly calls
-   - Tier 3 (observers): Voter ed and academic orgs — monthly roundup email (not calls)
-
-2. **Use shared document instead of calls**: Create a Google Doc where organizations post updates and feedback (less synchronous, more scalable)
-
-3. **Escalate to user**: "Coalition is getting large; should we transition to asynchronous coordination model?"
-
----
-
-## Appendix: Coalition Contact Template
-
-**To be shared with all coalition members once coalition is formed**:
-
+### Daily Update Template (For Coalition Hub)
 ```
-COALITION COORDINATION — Domain 49 Louisiana v. Callais Research
+CALLAIS REDISTRICTING UPDATE — [Date]
 
-CORE MEMBERS:
-- Democracy Docket: [contact] [email] [phone]
-- NAACP LDF: [contact] [email] [phone]
-- Campaign Legal Center: [contact] [email] [phone]
+LITIGATION STATUS:
+- Alabama: [Status]
+- Tennessee: [Status]
+- Louisiana: [Status]
+- South Carolina: [Status]
+- Florida: [Status]
+- Mississippi: [Status]
 
-SECONDARY MEMBERS:
-- MALDEF: [contact] [email] [phone]
-- NAACP National: [contact] [email] [phone]
-- LULAC: [contact] [email] [phone]
+NEW COURT FILINGS: [List any new motions, orders, stays]
 
-RESEARCH LINK: [GIST_URL]
+RESEARCH INTEGRATION: [Note any organizations citing or using the Domain 49 research]
 
-COORDINATION:
-- Weekly calls: Tuesdays 14:00 UTC (core members + guests)
-- Status updates: Shared Google Doc [LINK]
-- Email coordinator: [Hub org contact]
+NEXT DEADLINES:
+- [State] filing deadline: [Date]
+- [State] primary date: [Date]
 
-MESSAGE CONSISTENCY: Core message is in Section X of research. 
-Variation is allowed by organization mission (litigation/voter ed/policy/academic).
+ACTION ITEMS FOR TOMORROW:
+1. [Item]
+2. [Item]
+```
 
-DECISION AUTHORITY: User [name] retains final authority on scope, 
-timeline, and research edits. Coalition provides input and coordination.
+### Request for Supplemental Analysis (From Any Coalition Member to Researcher)
+```
+RESEARCH REQUEST — [Organization] — [Date]
 
-QUESTIONS? Contact [your email]
+REQUEST: [Brief description of what's needed]
+USE CASE: [How the organization will use it]
+DELIVERY DEADLINE: [When they need it]
+SECTIONS TO BUILD ON: [Which domain document sections are most relevant]
+LENGTH: [One-pager / 500 words / full brief]
+```
+
+### Coalition Member Opt-Out Template
+```
+Subject: Opting out of coalition coordination (keeping research access)
+
+Hi [Hub coordinator],
+
+[Organization] is opting out of the formal coalition coordination process — we have full plates right 
+now and can't commit to calls or updates. But we do want to keep access to the research and receive 
+major updates (new court filings, research additions).
+
+Please keep us on the email list for major updates but remove us from the coordination call schedule.
+
+[Name / Organization]
 ```
 
 ---
 
-*Coalition Coordination Protocol prepared June 3, 2026. Use in conjunction with DOMAIN_49_EXECUTION_PREFLIGHT.md and DOMAIN_49_CONTINGENCY_DECISION_TREE.md. Coordination is voluntary and triggered only if two or more organizations request it. All escalations route to user for decision. Success measured by research integration rate (percentage of organizations that cite or use research in briefs/materials) by July 15, 2026.*
+## Part 6: Post-Action Assessment — Day 7 Data Capture (June 11)
+
+Day 7 (June 11) is the first statistically meaningful checkpoint. The following data points constitute the Domain 49 Day 7 assessment record.
+
+### Data to Capture at Day 7
+
+**1. Contact Engagement Rate**
+```
+Total contacts in Tiers 1–4: ___
+Emails confirmed delivered (no bounce): ___
+Engagement rate: ___ / ___ = ___% 
+(Target: ≥80% delivery)
+```
+
+**2. Response Quality Distribution**
+```
+Score 1 (no reply): ___
+Score 2 (auto-reply / OOO): ___
+Score 3 (short acknowledgment): ___
+Score 4 (substantive engagement — "useful / sharing with team"): ___
+Score 5 (research integration committed — "using in brief / materials"): ___
+
+Total Score 3+ replies: ___ (target: 2+)
+Total Score 4+ replies: ___ (target: 1+)
+```
+
+**3. Gist Engagement**
+```
+Gist total views since creation: ___
+Estimated distinct IP views (if analytics available): ___
+(Target: 5+ distinct IP views by Day 7)
+```
+
+**4. Litigation Integration Evidence**
+```
+Organizations that explicitly stated integration into litigation materials: 
+- ___
+- ___
+
+Court filings or legal briefs known to cite or use research framework: 
+- ___
+- ___
+
+Media coverage citing the research (directly or via an organization): 
+- ___
+```
+
+**5. Coalition Formation Signal**
+```
+Organizations that asked about coordinating with other organizations: ___
+Organizations that forwarded research to additional contacts: ___ (how many additional contacts reached: ___)
+Organizations that asked to participate in coalition calls: ___
+```
+
+**6. Day 7 Classification**
+
+| Classification | Condition | Phase 2 Action |
+|----------------|-----------|----------------|
+| **STRONG** | Score 4+ from 2+ Tier 1 orgs, OR any Score 5 | Proceed with all Phase 2 domains on schedule; extend Domain 49 Tier 4 state sends June 12–15 |
+| **MODERATE** | Score 3+ from 2–3 total contacts, OR Gist views 3–6 | Proceed with Domain 51 June 9–12 as planned; Domain 49 Tier 4 state sends proceed June 12–15 |
+| **WEAK** | Score 3+ from 0–1 contact AND Gist views 0–2 | Delivery diagnostic; consult Contingency Decision Tree before additional Domain 49 sends; Domain 51 proceeds independently (no dependency) |
+
+**Record classification here**: ___
+
+### Day 7 Assessment Output (Write to DISTRIBUTION_EXECUTION_LOG.md)
+
+```
+DOMAIN 49 — DAY 7 ASSESSMENT (June 11, 2026)
+
+Classification: [STRONG / MODERATE / WEAK]
+
+Engagement rate: ___% (___/___  contacts delivered)
+Score 4+ replies: ___
+Total Score 3+ replies: ___
+Gist views: ___
+
+Litigation integration evidence:
+- [org 1]
+- [org 2]
+
+Coalition formation evidence:
+- [number of orgs coordinating]
+- [number of additional contacts reached via referral]
+
+Phase 2 action triggered:
+- Domain 51 send: [On schedule June 9–12 / Deferred / Complete]
+- Domain 49 Tier 4 state sends: [Proceeding June 12–15 / On hold]
+- Domain 50 acceleration: [No / Yes — trigger was: ___]
+
+Notes: [Any other relevant signals]
+```
+
+### Day 30 Assessment (July 11) — Optional
+
+If any Score 4+ engagement occurred at Day 7, the Day 30 checkpoint assesses whether the research produced downstream advocacy impact:
+- Was it cited in a federal court filing?
+- Did any organization publish a report, testimony, or policy brief that incorporates the analysis?
+- Did any organization contact you for Phase 2 collaboration (joint distribution, co-authorship, or testimony support)?
+
+Day 30 assessment does not require a formal process — it is a 30-minute inbox review and Gist analytics check. Record in DISTRIBUTION_EXECUTION_LOG.md.
+
+---
+
+## Part 7: Core Message Consistency
+
+All coalition members should understand the core argument so that their independent communications do not contradict the research framework.
+
+**Core message (non-negotiable)**:
+"Louisiana v. Callais completes the Supreme Court's three-ruling dismantling of the Voting Rights Act by requiring proof of intentional discrimination for vote dilution claims — the same standard Congress explicitly overrode in the 1982 VRA amendments. The ruling triggered immediate redistricting in six states. Available legal remedies include Section 3 bail-in supervision (available when courts find intentional discrimination), state voting rights acts (applicable to sub-congressional redistricting in states with state-law protections), and Arlington Heights circumstantial evidence of intent. The 2026 primary filing deadline window is the outer boundary of emergency legal intervention."
+
+**Variation allowed by audience type**:
+
+| Audience | Emphasis | Domain Document Sections |
+|----------|----------|--------------------------|
+| Litigation teams (LDF, DD, CLC) | Section 3 bail-in; Arlington Heights intentional discrimination framework; Alabama lower court finding that survives May 11 stay | Sections 3.1, 3.4 |
+| Policy organizations (Brennan, Issue One) | Lewis VRA Act as legislative response; state VRA expansion; proportional representation structural reform | Sections 4.1, 3.2, 7.3 |
+| Hispanic/multiracial organizations (MALDEF, LULAC, Voto Latino) | 342→202 state legislative district projection; Texas 2025 map difficulty; surviving litigation paths in CA/WA/NY with state VRAs | Section 9.2, 3.2 |
+| Voter education organizations (NAACP, Rock the Vote, LWV) | Why district lines changed; what voters need to know before the primary; voter education infrastructure needs | Sections 6.2, 2.1–2.5 |
+| Academic/structural reform (HKS, Fair Vote) | Proportional representation as structural alternative; international comparatives (UK, Canada, Germany, Australia) | Sections 5.1–5.3, 7.3 |
+
+**What no coalition member should communicate**:
+- That Callais is beneficial for minority representation
+- That Section 2 litigation is now impossible (it is harder, not impossible — intentional discrimination theory survives)
+- That the domain research takes a partisan position (it documents legal developments and reform pathways; it does not advocate for any party)
+
+---
+
+*Prepared June 3, 2026. Ready for immediate execution upon user approval. All escalations route to user before action is taken. Sources: [NAACP LDF — Robinson v. Landry / Callais case page](https://www.naacpldf.org/case-issue/louisiana-v-callais/); [Democracy Docket — redistricting tracker](https://www.democracydocket.com/analysis/live-redistricting-tracker/); [Campaign Legal Center — Redistricting 101](https://campaignlegal.org/document/redistricting-101-and-fight-fair-representation-after-callais); [MALDEF — Callais statement](https://www.maldef.org/2026/04/maldef-statement-on-supreme-court-decision-in-louisiana-v-callais/); [Brennan Center — Louisiana v. Callais](https://www.brennancenter.org/our-work/research-reports/louisiana-v-callais)*

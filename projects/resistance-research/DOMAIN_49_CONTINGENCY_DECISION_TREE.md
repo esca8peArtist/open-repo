@@ -1,475 +1,370 @@
 ---
-title: "Domain 49 Contingency Decision Tree — Louisiana v. Callais VRA Redistricting Emergency"
+title: "Domain 49 Contingency Decision Tree — Louisiana v. Callais Redistricting Emergency"
 created: "2026-06-03"
-session: "Session 2707 — Resistance Research Orchestrator"
-status: "production-ready"
-document_type: "Decision logic for June 4–5 activation contingencies"
+status: "production-ready — awaiting user approval"
+domain: 49
+session: "Resistance Research Agent — Exploration Queue Item 55"
+cross_references:
+  - DOMAIN_49_EXECUTION_PREFLIGHT.md
+  - COALITION_COORDINATION_PROTOCOL.md
+  - PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md
+  - RESOURCE_REALLOCATION_SCENARIOS.md
 ---
 
 # Domain 49 Contingency Decision Tree
-## Redistricting Cascade Emergency Response Protocols
+## If-Then Logic for June 4–5 Execution Problems
 
-*If outreach does not meet success targets, or if external events change the situation, use this tree to determine the appropriate next action.*
-
----
-
-## Decision Tree Structure
-
-```
-├─ Scenario A: Initial Outreach Success < 50% by EOD June 4
-│  ├─ Extended outreach Friday June 5 (Tier 2 expansion)
-│  ├─ Phone follow-up to key contacts (NAACP LDF, Democracy Docket)
-│  └─ Decision: Proceed June 5 or defer Phase 2?
-│
-├─ Scenario B: Litigation/Injunction Filed; Urgent Legal Motion Support Needed
-│  ├─ Send emergency alert to all Tier 1–2 contacts within 2 hours
-│  ├─ Offer to create legal brief supplement (Section 3 bail-in, Arlington Heights)
-│  └─ Amplify through legal networks immediately
-│
-├─ Scenario C: Coalition Feedback Indicates June 4–5 Timeline Infeasible
-│  ├─ Multiple contacts report: "We can't mobilize this fast" or "Primary deadline already closed"
-│  ├─ Reassess scope: Tier 1 litigation organizations only
-│  └─ Decision: Defer to Phase 2 (July–August) or abbreviate to legal briefing support
-│
-├─ Scenario D: Primary Deadline Passes (State Closes Filing)
-│  ├─ June 5–6: One or more states officially close primary filing deadlines
-│  ├─ Shift strategy: Litigation support + voter education (not emergency prevention)
-│  └─ Maintain outreach but reframe as midterm litigation preparation, not deadline intervention
-│
-├─ Scenario E: SCOTUS Grants Stay / New Emergency Development
-│  ├─ June 4–5: Court issues stay, dismisses motion, grants preliminary injunction
-│  ├─ Immediate: Send emergency alert to all contacts with new development + research link
-│  └─ Continue standard distribution + use development as news hook
-│
-└─ Scenario F: Major Contact Declines or Requests Major Customization
-   ├─ If contacted org says: "Can't use this" or "Need different framing"
-   ├─ If customization request is < 30 minutes: Fulfill immediately
-   ├─ If customization > 30 minutes: Offer to build in Phase 2
-   └─ Decision: Proceed with other contacts or pause for customization
-```
+*Reference this document in real-time during June 4–5 execution. Every scenario has a numeric trigger threshold, an immediate response, and a user decision gate if escalation is required.*
 
 ---
 
-## Scenario A: Initial Outreach Success < 50% by EOD June 4
-
-**Trigger**: Only 3 or fewer of the 7 primary Tier 1–2 contacts (Democracy Docket, NAACP LDF, Campaign Legal Center, Issue One, MALDEF, NAACP National, LULAC) have received working emails by 14:00 UTC June 4. Causes might include:
-- Outdated email addresses (common with nonprofits that rebuild email systems)
-- Emails landing in spam filters
-- Organizations on reduced staffing (holiday, summer, conference)
-
-**Diagnosis** (first 30 minutes after recognizing underperformance):
-- Check spam folders of accounts you sent from (sometimes organizations' mail servers flag mass outreach)
-- Search Google for each organization's contact page to verify email addresses are current
-- Call one primary contact (NAACP LDF at 202-682-1300 or Democracy Docket) to ask: "Did you receive an email this morning about Callais research?" This creates a confirmation and gives you a corrected email if the one you used is defunct.
-
-**Response Path A1: Extended Outreach Friday June 5 (72-hour window option)**
-
-If emails bounced or didn't deliver, re-send immediately to corrected addresses June 5 morning (08:00 UTC) with:
-- Corrected email addresses
-- Slightly modified subject line adding "CORRECTED SEND" so recipients understand this is a retry
-- Same body content (research link, templates)
-
-**Timeline for A1**:
-- 08:00–09:00 UTC June 5: Verify corrected email addresses, send to all 7 contacts again
-- 09:00–14:00 UTC: Monitor for responses
-- 14:00 UTC: Assess engagement; if 5+ of 7 now engaged, success threshold met (71%), proceed to normal schedule
-- If still < 5 engaged: Proceed to Path A2
-
-**Response Path A2: Phone Follow-Up and Direct Contact**
-
-If June 5 email re-send still shows weak response (< 3 replies), initiate phone outreach:
-
-| Organization | Phone | Script |
-|-------------|-------|--------|
-| NAACP LDF | (202) 682-1300 | "Hi, I'm calling to confirm you received research on Louisiana v. Callais and the redistricting cascade. Is there a specific person on your litigation team I should have contacted directly?" |
-| Democracy Docket | (202) [search for number] | "We sent research on Callais-triggered litigation this morning. Can you confirm receipt and let me know if there's anything you need?" |
-| Campaign Legal Center | (202) 736-2200 | "I'm checking on an email sent this morning with Callais research that may be relevant to your redistricting work. Did you get it?" |
-
-**Expected outcome of A2**:
-- Most calls result in either: (a) confirmation they received email + forwarding info to litigation team, OR (b) corrected email address for litigation contact
-- Once you have correct contact, send research again directly to litigation person name (warm contact = higher response)
-
-**Response Path A3: Decision Point — Proceed June 5 or Defer Phase 2?**
-
-By EOD June 5, you will have either:
-
-**Path A3a**: Extended outreach worked. Final engagement rate is ≥ 70% (5+ of 7 contacts engaged). 
-- → Continue to normal timeline. June 5 becomes the primary contact wave; Tier 2 expansion happens June 6+.
-
-**Path A3b**: Even extended outreach shows weak engagement (< 4 of 7 engaged despite corrected addresses and phone follow-up).
-- → This suggests the organizations are not actively monitoring email in early June (possible conference, reduced staffing, etc.)
-- → **User decision required**: 
-  - Option 1: Defer Domain 49 distribution to Phase 2 (July 1–10). Litigation landscape will have clarified; organizations will be back on full staffing; the urgency framing shifts from "emergency prevention before deadline closes" to "litigation support for ongoing cases."
-  - Option 2: Proceed with abbreviated outreach. Contact only the 3–4 organizations that did respond; use them as the coalition hub to amplify to others. Shift messaging from "time-critical redistricting emergency" to "litigation research available for your legal teams."
-  - Option 3: Pause for 2 hours and retry with different email addresses or social media outreach (LinkedIn messages to specific contacts) as a parallel attempt.
-
-**Recommendation if A3b is triggered**: 
-→ **Defer to Phase 2** (July 1–10). Here's why: If established voting rights organizations are not responding to urgent outreach in early June, it means they are in internal meetings/conferences (common in June for nonprofit planning cycles) or understaffed. They will be fully staffed and monitoring email by July 1. A Phase 2 distribution in July will have higher success rates and will still be timely for litigation that will proceed through summer and fall.
-
----
-
-## Scenario B: Litigation/Emergency Development Occurs June 4–5
-
-**Trigger**: During June 4–5, a federal court issues an emergency ruling, preliminary injunction, or stay that relates directly to Callais redistricting. Examples:
-- Federal district court grants preliminary injunction against Alabama's new maps (emergency relief mid-primary)
-- SCOTUS issues a new unsigned order on Alabama, Tennessee, or Louisiana redistricting
-- Three-judge panel fast-tracks oral arguments in South Carolina Clyburn-seat litigation
-- Georgia Governor Kemp (contrary to his May 1 position) calls a special session to redistrict
-
-**Response B1: Immediate Alert to All Contacts (Same-Day)**
-
-Within 2 hours of learning of the development, send an email to all 7 Tier 1–2 contacts:
-
-**Subject**: "URGENT: [Development] — Callais research updated + relevant sections"
-
-**Body**:
-```
-[Contact name],
-
-A [court ruling / new development] occurred today that affects Callais redistricting strategy. 
-The research I sent this morning includes analysis of [Section 3 bail-in / Arlington Heights / legislative response] that may be directly relevant.
-
-Specifically, see [Section X of the domain document] on [topic]. 
-
-If you're coordinating litigation response, I wanted to flag the research as a resource immediately.
-
-[Your name]
-[Contact info]
-```
-
-This email:
-- Does NOT send the whole research again (they should already have the link)
-- DOES create a news hook that gives them a reason to revisit the research
-- Positions you as monitoring the legal landscape and thinking about strategic implications
-- Creates a follow-up touchpoint that increases engagement
-
-**Response B2: Create Emergency Legal Brief Supplement (If Requested)**
-
-If any contacted organization replies asking for a supplemental brief on the new development + how the research applies, prioritize this:
-
-**Scope of supplement**:
-- 500–800 words
-- Use existing domain document + new court development
-- Focus on: "Here's how Section 3 bail-in / Arlington Heights applies to [new ruling]"
-- Completion time: 1.5–2 hours
-
-**Example**:
-If Alabama district court issues preliminary injunction against new maps on June 5, supplemental brief would be:
-"Why the Arlington Heights Intentional Discrimination Finding in Alabama's Original Suit Survives the May 11 Stay and Supports the Preliminary Injunction"
-- Reference the domain's Section 3.1 analysis
-- Connect to Justice Sotomayor's May 11 dissent noting the original intentional discrimination finding
-- 600 words, 3–4 cited sources
-
-**Decision on supplement**: 
-- If request comes before 12:00 UTC June 5: commit to delivery by 18:00 UTC same day
-- If request comes after 18:00 UTC June 5: offer June 6 morning completion, or defer to Phase 2 with shorter timeline
-
-**Response B3: Amplify Through Legal Networks**
-
-If the development is major (preliminary injunction granted, SCOTUS stay reversed), contact the three most responsive organizations from your June 4 outreach and ask:
-
-"Would it be valuable if I forwarded this research to [other voting rights organizations not yet contacted]? I want to make sure key litigation teams have access."
-
-This accomplishes:
-- Legitimizes further outreach (you're acting on request from contacted org)
-- Creates a second distribution wave without appearing like spam
-- Positions the contacted org as a hub in the network (they like this; it makes them feel important)
-
----
-
-## Scenario C: Coalition Feedback Indicates June 4–5 Timeline Infeasible
-
-**Trigger**: One or more organizations explicitly tell you: 
-- "We can't mobilize this fast — our June 4 advocacy is already locked in"
-- "Our board/coalition met June 1-2; we're not reconvening until June 15"
-- "The primary deadline in [state] closes June 7; we don't have time to integrate research by then"
-- "Emergency litigation window is closed by our calculation; we're shifting to longer-term strategy"
-
-**Diagnosis**:
-This is valuable feedback. It means the organizations know their own capacity constraints and are being honest about feasibility. This is NOT failure — it's accurate information about the operating environment.
-
-**Response C1: Scope Reduction to Tier 1 Litigation Organizations Only**
-
-If 2+ organizations in Tier 2 signal infeasibility, refocus outreach to the two organizations that CAN move quickly:
-
-| Organization | Why they're fastest | Expected turnaround |
-|-------------|-------------------|-------------------|
-| Democracy Docket | Full-time litigation org; litigation is their entire operation | Response within 2 hours, research integration within 48 hours |
-| NAACP LDF | Litigation org; Callais is their case; they will be actively briefing June 4–5 | Response within 24 hours; brief integration possible |
-
-**Revised June 5 plan if C1 is triggered**:
-- [ ] Confirm Democracy Docket and NAACP LDF received research and are integrating
-- [ ] Send optional follow-up offering supplemental brief on Section 3 bail-in remedy (their litigation teams may be working on this)
-- [ ] Defer all other Tier 2 contacts to Phase 2 (July 1+) with note: "Shifting to longer-term litigation support per coalition feedback"
-- [ ] Focus June 6+ on monitoring whether these two organizations' June litigation filings cite or integrate the research
-
-**Response C2: Reframe Distribution as Litigation Resource vs. Emergency Prevention**
-
-If the timeline is genuinely infeasible, the distribution doesn't fail — it just shifts scope:
-
-**June 4–5**: Litigation organizations get the research (Success: they use it in filings)
-**July 1–31**: Broader voting rights coalition gets it (Success: integration into mid-summer litigation support, fall voter education)
-
-Send this reframing email to contacts who signaled infeasibility:
-
-```
-Subject: Shifting to Phase 2 outreach — July integration timeline
-
-Thank you for the honest feedback about the June timeline. It's clear the emergency litigation window has compressed faster than anticipated.
-
-I'm focusing June 4–5 outreach on our most nimble litigation organizations (Democracy Docket, NAACP LDF) who can integrate immediately. 
-
-For your organization, I'd like to shift to a July 1–10 Phase 2 distribution, which will be better timed for your coalition cycles and board meetings. The research will be equally relevant then; the litigation landscape will be clearer; and integration will be more feasible.
-
-Is that timing better for you?
-
-[Your name]
-```
-
-This accomplishes:
-- Removes pressure from organizations that flagged infeasibility
-- Demonstrates respect for their actual capacity
-- Keeps them in the pipeline for Phase 2 (no loss of contact)
-- Increases probability of Phase 2 success (they'll be ready by July 1)
-
-**Response C3: Decision — Proceed Abbreviated or Defer to Phase 2?**
-
-**If 1–2 organizations signal infeasibility** (Democracy Docket + NAACP LDF still engaged):
-→ **Proceed with abbreviated Tier 1 focus**. These two will be enough to drive litigation strategy; Phase 2 will amplify to coalition. Total distribution by EOD July is still successful.
-
-**If 3+ organizations signal infeasibility** (including NAACP LDF or Democracy Docket):
-→ **Defer to Phase 2**. This signals that the June emergency window is closing faster than expected. Wait for July 1 when coalition capacity is higher and litigation landscape is clearer.
-
----
-
-## Scenario D: Primary Deadline Passes (State Closes Filing)
-
-**Trigger**: June 5–6, one of the affected states (Louisiana, Tennessee, Alabama, South Carolina, Florida, Mississippi) officially closes its primary filing deadline. Examples:
-- Tennessee's June 6 filing deadline passes; maps cannot be changed before August primary
-- Louisiana closes filing June 7; new map will be operative for June–July primaries
-- State election officials announce no further redistricting changes will be processed
-
-**Strategic Reassessment**:
-
-The original framing was "emergency prevention before deadline closes." Once the deadline closes, the framing must shift to "litigation response + voter education for maps already in place."
-
-This is **not a failure** of the distribution. It's a shift in the strategic window. The research is **still valuable**, but it's now litigation support rather than prevention support.
-
-**Response D1: Reframe Outreach to Litigation + Voter Education**
-
-Update outreach emails to contacts not yet contacted:
-
-**Original framing**: "Callais research for emergency litigation support before June filing deadlines close"
-
-**New framing**: "Callais research for litigation response and voter education as states lock in maps"
-
-Example revised email:
-
-```
-Subject: Callais research — litigation support and voter education as redistricting maps lock in
-
-[State] has now closed its primary filing deadline and the new redistricting maps are locked in for the midterm election. 
-
-I'm sharing research on the Callais ruling and the post-Callais litigation landscape, which may be relevant to:
-- Emergency litigation challenging the new maps (Arlington Heights intentional discrimination theory, Section 3 bail-in remedy)
-- Voter education about district boundary changes in your community
-- State legislative VRA introduction for 2026–2027 legislative sessions
-
-The research includes analysis of [Section X], [Section Y], and international comparative frameworks.
-
-[Your name]
-```
-
-This reframe:
-- Acknowledges the timeline reality
-- Expands the use case from "emergency prevention" to "litigation + voter education"
-- Increases perceived relevance (more organizations do voter education than emergency litigation)
-- Maintains the research's strategic value
-
-**Response D2: Expand to Voter Education Organizations**
-
-Once primary deadlines close, voter education becomes the primary use case. Expand outreach to organizations that were secondary:
-
-- **Voto Latino** (voter education about district changes affecting Latino voters)
-- **League of Women Voters** (voter education on redistricting; local league chapters often run election education programs)
-- **Rock the Vote** (voter registration + education; mobile outreach)
-- State-level voting rights organizations that run civic education
-
-These organizations can use the research to explain to voters: "Your district lines have changed. Here's why. Here's how it affects your representation. Here's what to do."
-
-**Response D3: Timeline Adjustment**
-
-**June 5–7**: Distribute to litigation organizations with "litigation + voter education" framing
-**June 8–15**: Distribute to voter education organizations with focus on voter education sections
-**June 15+**: Begin state-level voter education organization outreach (local NAACP chapters, state LWV, Rock the Vote state coordinators)
-
-Success metrics shift:
-- **Litigation orgs**: "Are you using this in briefs filed June 15+?"
-- **Voter education orgs**: "Are you integrating into community education materials by early July?"
-
----
-
-## Scenario E: SCOTUS or Federal Court Issues New Emergency Ruling
-
-**Trigger**: During June 4–5, a federal court or SCOTUS takes action on Callais-related redistricting. Examples:
-- D.C. Circuit grants expedited review on Callais challenge to Alabama stay
-- SCOTUS issues new unsigned order on Tennessee or Louisiana redistricting
-- Federal district court grants preliminary injunction against South Carolina's Clyburn-seat map
-
-**Response E1: Send Emergency Alert Within 2 Hours**
-
-Immediately email all contacts who received the research:
-
-```
-Subject: URGENT UPDATE — [Court Action] on Callais redistricting
-
-At [time], [court] issued [ruling/order] on [state] redistricting that affects the Callais cascade.
-
-The research I shared this morning includes relevant analysis on [Section 3 bail-in / Arlington Heights / international comparative] that may be directly applicable.
-
-Specifically, see [Section X]. 
-
-Full research: [GIST_URL]
-
-Let me know if you'd like a supplemental brief on how the ruling affects litigation strategy.
-
-[Your name]
-```
-
-This:
-- Creates urgency (URGENT = they will read it immediately)
-- Provides actionable value (points them to relevant research section)
-- Offers escalation path (supplemental brief)
-- Does not require them to re-read the whole research
-
-**Response E2: Decide on Supplemental Brief**
-
-If one or more contacted organizations requests a supplemental brief on the new development:
-
-**Scope**: 500–1,000 words connecting the new ruling to existing research
-**Timeline**: Deliver within 4 hours if before 15:00 UTC; next morning if after
-
-**Content template**:
-1. Summary of new ruling (1–2 paragraphs)
-2. Connection to Callais framework (1 paragraph — how does this advance/complicate the doctrine?)
-3. Strategic implications for ongoing litigation (1–2 paragraphs — what does this mean for teams litigating other Callais cases?)
-4. Reference to existing research section that covers this (1 paragraph — direct them back to the domain document)
-
-**Example**: If SCOTUS vacates a preliminary injunction in Louisiana, supplemental brief would be:
-
-"SCOTUS's Vacation of the Louisiana Preliminary Injunction: What It Means for Section 3 Bail-In Strategies in Other Callais Litigation"
-- Explain the ruling
-- Note: "This is consistent with the [analysis in Section X] of the research, which anticipated this doctrinal path"
-- Suggest: "For Tennessee and South Carolina litigation, this suggests [strategic implication]"
-- Direct to research Section 3.1 on bail-in remedies
-
----
-
-## Scenario F: Major Contact Declines or Requests Major Customization
-
-**Trigger**: A contacted organization either:
-- Explicitly declines: "We can't use this" or "It's not relevant to our work"
-- Requests customization: "Can you reframe the legal argument on Section 3?" or "We need state-by-state legislative recommendations"
-
-**Response F1: Understand the Decline (5-minute call)**
-
-If an organization declines, call them within 1 hour to understand why:
-
-**Script**:
-"Hi [name], I got your email saying the research isn't relevant. I'm curious what I missed — is it the legal framework, the timing, or something else? I want to understand so I can make better decisions about distribution."
-
-**Likely reasons**:
-- Wrong contact person (email went to communications instead of litigation; they can forward or correct)
-- Timing (they're in a conference/meeting; too much incoming information)
-- Scope (they work on different aspects of voting rights; research is relevant to a different team)
-- Framing (they disagreed with the legal theory or political framing)
-
-**If wrong contact person**: Get corrected name; send again with warm introduction ("Jane recommended I reach out to you")
-
-**If timing issue**: Offer to re-send June 15 ("Would July timing be better? I can simplify to a one-page brief")
-
-**If scope issue**: Ask: "Who in your organization works on redistricting/voting rights litigation?" Offer to send to that person instead.
-
-**If framing/legal disagreement**: This is fine. Not every organization will agree with every legal theory. Make note and move on to others.
-
-**Response F2: Customization Request — Evaluate Time Cost**
-
-If organization requests customization:
-
-**Small customization** (< 30 minutes): Examples include:
-- "Can you rewrite Section 3 to emphasize state-level remedies instead of federal?"
-- "Can you add a one-page summary of the Section 3 bail-in concept?"
-- "Can you pull out just the Tennessee/Louisiana sections?"
-
-→ **Fulfill immediately**. Send revised version within 2 hours.
-
-**Large customization** (30+ minutes): Examples include:
-- "Can you rewrite this as a legislative brief with specific bill language recommendations?"
-- "Can you create a different version for different audience (CBC vs. state legislatures vs. voter ed)?"
-- "Can you add state-by-state legislative recommendations and timelines?"
-
-→ **Offer to build in Phase 2**. Email:
-```
-That's a great idea for a more targeted version. I can build that as part of Phase 2 in July, 
-which would give me more time to make sure it's really tailored to your needs. Would a July 10 delivery work?
-```
-
-This accomplishes:
-- Keeps the contact engaged (you're not saying "no")
-- Manages your time (Phase 2 is less time-critical)
-- Creates a follow-on deliverable (deepens the relationship)
-- Allows for better customization with research support
-
-**Response F3: Document and Learn**
-
-Keep notes on all declines and customization requests:
-
-| Organization | Contact | Reason for Decline / Request | Action Taken | Lessons for Phase 2 |
-|-------------|---------|------------------------------|--------------|-------------------|
-| Example | Jane Doe | "We focus on state legislatures, not federal litigation" | Referred to other department | Focus Phase 2 state-level outreach on legislative contacts |
-
-This informs your Phase 2 distribution strategy.
+## How to Use This Document
+
+1. During execution, check the Execution Pre-Flight's success metrics at each gate (12:00 UTC, 18:00 UTC June 4; 08:00 UTC, 12:00 UTC June 5).
+2. If a metric falls below threshold, match the scenario here.
+3. Each scenario has an IMMEDIATE RESPONSE (take this without waiting for user) and a USER DECISION (escalate this before acting).
+4. Most problems are recoverable. Domain 49's core value is litigation support that is urgently needed — even a delayed or partial distribution is valuable.
 
 ---
 
 ## Summary Decision Matrix
 
-| Scenario | Trigger | Primary Response | Escalation to User |
-|----------|---------|------------------|-------------------|
-| **A** | Initial outreach < 50% success by EOD June 4 | Extended outreach Friday + phone follow-up | Proceed June 5 or defer Phase 2? |
-| **B** | Court ruling/emergency development June 4–5 | Send alert to all contacts within 2 hours | Offer supplemental brief support |
-| **C** | Coalition feedback: can't mobilize this fast | Reframe to Tier 1 litigation orgs only | Defer other contacts to Phase 2 |
-| **D** | Primary deadline closes in one or more states | Shift framing to litigation + voter education | Expand to voter education orgs; adjust timeline |
-| **E** | New SCOTUS or federal court ruling | Send emergency alert within 2 hours | Supplemental brief if requested |
-| **F** | Contact declines or requests major customization | Small customization: fulfill immediately; large: defer Phase 2 | If 3+ major customization requests: pause for scope discussion |
+| Scenario | Trigger (Exact Threshold) | Immediate Response | User Decision? |
+|----------|--------------------------|-------------------|----------------|
+| **A — Low delivery** | 3+ hard bounces from Tier 1 by 12:00 UTC June 4 | Alternate contact protocol; phone outreach | Yes if <4/8 delivered by EOD June 4 |
+| **B — Court ruling** | Emergency order on Callais case issued June 4–5 | URGENT alert email to all sent contacts within 2 hrs | No — execute immediately |
+| **C — Coalition pushback** | 2+ Tier 1 orgs say June 4–5 is infeasible | Refocus on litigation orgs only (LDF + DD) | Yes — defer others to Phase 2? |
+| **D — Filing deadline closes** | State closes primary filing window before June 6 | Reframe from "prevention" to "litigation + voter ed" | No — execute reframe immediately |
+| **E — June 5 late start** | User unavailable June 4; executing June 5 only | Compress: Tier 1A + 1B June 5 morning UTC; Tier 2 afternoon | No — pre-staged drafts ready |
+| **F — Domain 49 → 50 swap** | <2 Score 3+ replies by Day 7 (June 11) AND new LGBTQ+ urgency | Domain 49 holds at current send level; Domain 50 activates | Yes — requires user confirmation |
+| **G — Domain 49 deferred entirely** | Confirmed: no litigation org can use research before June 15 | Maintain existing sends; reframe as ongoing litigation support | Yes — user decision on Phase 2 date |
+| **H — Resource overrun** | Domain 49 active correspondence exceeds 3 hrs/day June 4–5 | Compress by pausing Tier 3 state sends | Yes — if >5 hrs total, pause + reassess |
 
 ---
 
-## When to Escalate to User
+## Scenario A: Delivery Failure (Low Contact Rate)
 
-**User decision required** for:
-1. **Scenario A, Path A3**: Weak engagement even after extended outreach. Should we defer to Phase 2?
-2. **Scenario C**: Multiple organizations flagging infeasibility. Should we go abbreviated or defer Phase 2?
-3. **Scenario D**: Deadline closing faster than expected. Should we shift the strategic framing entirely?
-4. **Scenario F**: If 3+ organizations make major customization requests, should we pause and revise the approach?
+**Trigger**: 3 or more hard bounces from any Tier 1–2 contact by 12:00 UTC June 4.
 
-**User escalation template**:
+**Why it happens**: Central `info@` addresses for large nonprofits often have spam filtering. Organizations that have recently changed email systems (common 2024–2026 among advocacy organizations doing IT upgrades) may have outdated addresses in public directories.
+
+### Immediate Response A1: Alternate Delivery
+Within 30 minutes of bounce notification:
+
+| Organization | Primary Email | Alternate Email | Phone Backup |
+|-------------|--------------|-----------------|--------------|
+| NAACP LDF | info@naacpldf.org | naacpldf@naacpldf.org | (202) 682-1300 |
+| Democracy Docket | democracy@democracydocket.com | via democracydocket.com/contact form | (202) [check website] |
+| Campaign Legal Center | info@campaignlegal.org | via campaignlegal.org/contact | (202) 736-2200 |
+| MALDEF | communications@maldef.org | info@maldef.org | (202) 628-5400 |
+| NAACP National | info@naacp.org | press@naacp.org | (410) 580-5777 |
+| Brennan Center | brennancenter@brennancenter.org | redistricting@brennancenter.org | (212) 998-6730 |
+| LULAC | info@lulac.org | advocacy@lulac.org | (202) 833-6130 |
+| Voto Latino | info@votolatino.org | press@votolatino.org | (202) 350-8434 |
+
+**Phone script** (for NAACP LDF or Democracy Docket — use if 2+ email failures):
+"Hi, I'm calling to confirm email delivery to your voting rights team. I sent research on the Louisiana v. Callais redistricting cascade this morning that may be relevant to active litigation. Is there a specific person on your litigation or research team I should have contacted directly?"
+
+### Threshold for User Escalation (A2)
+**Escalate to user if**: Fewer than 5 of 8 Tier 1–2 contacts have confirmed delivery (sent + no bounce) by **18:00 UTC June 4**.
+
+**User decision required**:
+- Option 1: Proceed June 5 with all sends to corrected addresses (extended delivery window)
+- Option 2: Focus June 5 on the confirmed-delivery contacts only; defer non-deliverables to Phase 2 July 1
+- Option 3: Pause to do manual contact verification before June 5 sends
+
+**Recommendation if escalated**: Option 1 (extended delivery to corrected addresses). The redistricting window is narrow but not closed. A June 5 corrected send reaches litigation teams 1 day later — still viable for briefs being drafted the week of June 8.
+
+---
+
+## Scenario B: Emergency Court Action (Accelerant Event)
+
+**Trigger**: Any court issues an order related to Callais redistricting during June 4–5 execution.
+
+Examples:
+- Alabama district court lifts the May 11 SCOTUS stay or issues new preliminary injunction
+- SCOTUS issues a new unsigned order on Tennessee or South Carolina redistricting
+- Federal court grants TRO against Louisiana's June 1 map
+- South Carolina issues expedited briefing schedule in Clyburn seat litigation
+
+### Immediate Response B1: Emergency Alert (No User Decision Required)
+Within 2 hours of learning of the development, send URGENT UPDATE to all contacts who have received the research (do not wait for user approval — this is amplification, not new scope):
+
+**Subject**: "URGENT UPDATE — [Court/State] [Action] on Callais redistricting — relevant research section: [X]"
+
+**Body**:
 ```
-DECISION REQUIRED: [Scenario X] has occurred. 
+[Contact name],
 
-SITUATION: [What happened]
-IMPACT: [Why it matters]
-OPTIONS:
-1. [Option A with rationale]
-2. [Option B with rationale]
+A [brief description of court action] was issued today that directly affects the Callais redistricting 
+situation [in Alabama / Tennessee / Louisiana / nationally].
 
-RECOMMENDATION: [My recommendation]
+The research I sent [today/yesterday] includes [Section X: Section 3 bail-in analysis / Section 3.1: 
+Arlington Heights intentional discrimination theory / Section 2.1: Alabama procedural posture] that 
+may be directly relevant to your team's response.
 
-TIMING: Decision needed by [date/time] to maintain schedule.
+Full research: [GIST_URL]
+
+If you would like a supplemental brief connecting this development to the Section 3 or Arlington Heights 
+framework, I can deliver that within 4–6 hours. Let me know.
+
+[Your name / contact]
+```
+
+This does NOT require rewriting the research. It is a news-hook follow-up that gives organizations a reason to re-engage with materials already sent.
+
+### Response B2: Supplemental Brief (If Requested)
+If a contacted organization replies requesting supplemental analysis connecting the new ruling to the domain document:
+
+- **Under 500 words / 30 minutes work**: Fulfill same day. Deliver by [send time + 4 hours].
+- **500–1,000 words / 60 minutes work**: Fulfill same day if received before 16:00 UTC; next morning if received after.
+- **Over 1,000 words / 2+ hours work**: Offer Phase 2 July 1 delivery, OR escalate to user for go/no-go decision.
+
+**Supplemental brief structure** (for any Callais development):
+1. What was decided / ordered (1–2 paragraphs, plain language)
+2. Connection to Callais framework (1 paragraph: how does this advance or complicate the doctrine the domain document describes?)
+3. Strategic implication for ongoing litigation (1–2 paragraphs: what does this mean for teams litigating in other states?)
+4. Specific domain document sections to read (1 paragraph: direct them to the most relevant 2–3 sections)
+
+---
+
+## Scenario C: Coalition Pushback on Timeline
+
+**Trigger**: 2 or more Tier 1–2 organizations independently signal that June 4–5 is infeasible for integration.
+
+Examples of infeasibility signals:
+- "We can't mobilize this fast — our June 4 advocacy is already locked in"
+- "Our legal team is in oral arguments this week; we can't review new research until June 10"
+- "The emergency litigation window has already closed by our assessment"
+- "Our board does not meet again until June 15"
+
+**Numeric threshold**: 2 or more of {NAACP LDF, Democracy Docket, Campaign Legal Center, MALDEF} signal infeasibility = Scenario C triggered.
+
+### Immediate Response C1: Refocus on Fastest-Moving Organizations
+Regardless of other organizations' capacity, two organizations can almost always move quickly:
+- **Democracy Docket**: Full-time litigation operations; research integration turnaround is 24–48 hours
+- **NAACP LDF**: Callais is their case; they will be actively briefing June 4–5 regardless
+
+Continue sending to these two and any others that have not signaled infeasibility.
+
+For organizations that signaled infeasibility, send this reframe immediately (no user decision required):
+```
+Subject: Shifting to Phase 2 outreach for your organization — July 1 distribution
+
+Thank you for the feedback about the June timeline. Completely understand the capacity constraints.
+
+I'm focusing June 4–5 outreach on litigation organizations that can integrate immediately. 
+
+For your organization, I'd like to shift to a July 1–10 Phase 2 distribution — better aligned with 
+your coalition cycles and board calendar. The research will be equally relevant for ongoing litigation 
+and legislative advocacy; the litigation landscape will be clearer by then.
+
+Would a July 10 delivery work? If so, I'll put you on the Phase 2 send list and follow up then.
 
 [Your name]
 ```
 
+### Threshold for User Escalation (C2)
+**Escalate if**: 3 or more Tier 1 organizations signal infeasibility, including NAACP LDF or Democracy Docket.
+
+**User decision required**:
+- Option A: Proceed with abbreviated Tier 1-only June 4–5 (LDF + DD only); defer all others to Phase 2
+- Option B: Defer all June 4–5 sends to Phase 2 (July 1–10)
+- Option C: Maintain full sends June 4–5 and accept that most will be "background reading" not emergency integration
+
+**Recommendation if escalated**: Option A. LDF and DD are the two organizations that matter most for emergency litigation support. All others can receive the research in Phase 2 when they can integrate it properly.
+
 ---
 
-*Domain 49 Contingency Decision Tree prepared June 3, 2026. Use in conjunction with DOMAIN_49_EXECUTION_PREFLIGHT.md. All decision paths route back to user for escalation; no unilateral scope changes without approval. Tracking via DISTRIBUTION_EXECUTION_LOG.md.*
+## Scenario D: Primary Filing Deadline Closes Mid-Execution
+
+**Trigger**: One or more affected states (LA, TN, AL, SC, FL, MS) officially closes its primary filing deadline during June 4–5.
+
+**Numeric threshold**: 1 state closing = Immediate Response D1. 3+ states closing = reframe is mandatory for all remaining unsent contacts.
+
+### Immediate Response D1: Framing Shift (No User Decision Required)
+The original outreach framing is "emergency support before deadlines close." Once a state closes, the framing shifts to "litigation support + voter education for maps already locked in."
+
+Update any outgoing emails (Tier 2–4 not yet sent) with this modified subject line and first paragraph:
+
+**Modified subject**: "Callais research — litigation support and voter education as [state] maps lock in for November"
+
+**Modified opening paragraph**:
+```
+[State] has now closed its primary filing window and the post-Callais redistricting maps are locked 
+in for the November midterm election. I'm sharing research on the legal architecture of what challenges 
+remain — specifically the Arlington Heights intentional discrimination theory (Section 3.1), Section 3 
+bail-in supervision as a remedy (Section 3.4), and state voting rights act strategies (Section 3.2) — 
+as well as voter education resources for affected communities (Section 6.2).
+```
+
+This reframe:
+- Acknowledges the timeline reality (does not make false urgency claim)
+- Expands the use case from "emergency prevention" to "ongoing litigation + voter education"
+- Increases relevance to a broader set of organizations (voter education orgs can now use the research)
+
+### Response D2: Expand to Voter Education Organizations
+Once primary deadlines close in any state, add voter education organizations to the send list:
+
+| Organization | Email | Focus |
+|-------------|-------|-------|
+| League of Women Voters (national) | info@lwv.org | Voter education on redistricting |
+| Rock the Vote | info@rockthevote.org | Voter registration + education |
+| State LWV chapters (LA, TN, AL, SC) | Find via lwv.org/local-leagues | Local voter education |
+
+These organizations use the domain document to explain to voters: "Your district lines have changed. Here is why and what it means for your representation."
+
+---
+
+## Scenario E: June 5 Late Start (User Unavailable June 4)
+
+**Trigger**: User is unavailable to send June 4 emails and the execution window shifts entirely to June 5.
+
+**Is June 5-only still viable?** Yes, with compression. The redistricting window does not close entirely on June 5 — it is the last day when the emergency framing is maximally effective. A June 5 send still reaches litigation teams before June 8, which is the first date when emergency injunction motions could be filed in response to maps finalized the week of June 1.
+
+### June 5-Only Compressed Timeline (UTC)
+
+| Time UTC | Action |
+|----------|--------|
+| 07:00 | Pre-flight: Gist creation + template fills (25 min) |
+| 08:00 | Tier 1A send: NAACP LDF + Democracy Docket |
+| 09:00 | Tier 1B send: Campaign Legal Center + MALDEF |
+| 11:00 | Tier 2A send: NAACP National + Brennan Center |
+| 13:00 | Tier 2B send: LULAC + Voto Latino |
+| 15:00 | Tier 3A send: CBC Foundation + Fair Vote |
+| 17:00 | EOD assessment |
+
+**What is dropped from a June 5-only execution**: Tier 3B (Issue One + HKS + Voting Rights Alliance) and Tier 4 (state NAACP chapters). These are lower-priority contacts that can follow in Phase 2. The core litigation and coalition sends (Tier 1A through Tier 2B) are preserved.
+
+**Pre-staged drafts**: The email drafts should be staged in the email client the evening of June 3 (after pre-flight) so that on June 5 the only action required is pressing "Send."
+
+---
+
+## Scenario F: Domain 49 Underperforms — Swap to Domain 50?
+
+**Trigger**: By Day 7 (June 11), fewer than 2 Score 3+ replies from any tier AND a new urgency event appears in Domain 50 (LGBTQ+ rights / ballot suppression).
+
+**What is the Domain 49 → Domain 50 swap question?**: This is not "abort Domain 49" — it is "should we accelerate Domain 50's distribution window from July 1 to June 15, given that Domain 49 is showing weak engagement?"
+
+**Numeric threshold for triggering this evaluation**: Day 7 metrics show:
+- Total Score 3+ replies: 0–1 (weak signal)
+- AND one of these Domain 50 triggers occurs: (a) Senate SAVE Act passes committee vote, (b) 2+ new anti-trans ballot measure certifications in new states, (c) Lambda Legal or AT4E issues an emergency action call
+
+### If Threshold Is Met — User Decision Required
+
+**Escalation to user**:
+```
+DECISION REQUIRED: Domain 49 Day 7 engagement is weak; Domain 50 urgency trigger has occurred.
+
+SITUATION: 
+- Domain 49 (VRA redistricting): [X] Score 3+ replies as of June 11. 
+  Weak signal suggests redistricting organizations are not actively integrating new research 
+  in the immediate litigation window.
+- Domain 50 (LGBTQ+ rights / ballot suppression): [specific trigger] occurred [date].
+  Domain 50 is complete (8,586 words, 69 citations) and Gist-ready.
+
+OPTIONS:
+1. Hold Domain 49 at current distribution level (no additional sends); accelerate Domain 50 
+   to June 15 (1 week early). Rationale: redirect user attention to where urgency is higher.
+2. Continue Domain 49 Tier 4 state sends June 12–15 as planned; add Domain 50 Gist creation 
+   as parallel task June 12. Rationale: both can run in parallel; weak Domain 49 signal may 
+   reflect organizational lag, not lack of value.
+3. Defer Domain 50 as originally planned (July 1); continue Domain 49 state-level expansion 
+   regardless of signal. Rationale: respect original sequencing; avoid flooding advocacy orgs.
+
+RECOMMENDATION: Option 2 (parallel). Domain 49 state-level expansion (voter education framing) 
+remains valuable regardless of national org signal. Domain 50 Gist creation is 20 minutes of work 
+and enables the July 1 send with no additional delay.
+
+TIMING: Decision needed by June 12 to stay ahead of Domain 50's July 1 operational window.
+```
+
+---
+
+## Scenario G: Domain 49 Deferred Entirely
+
+**Trigger**: BOTH of these conditions are true simultaneously:
+1. Confirmed feedback from NAACP LDF or Democracy Docket that they cannot integrate research before the primary filing windows close
+2. State filing deadlines in Louisiana, Tennessee, Alabama, and South Carolina have all passed
+
+**What this means**: The "emergency litigation prevention" framing is no longer accurate. The research still has value, but it is background analysis and longer-term litigation support, not emergency brief-writing support.
+
+### Response G1: Reframe as Ongoing Litigation Support
+Do not "cancel" the distribution — maintain the current sends (all emails already sent) and reframe future sends as Phase 2 work.
+
+**Subject line for any remaining unsent contacts**:
+"Callais redistricting research — Section 3 bail-in and Arlington Heights framework for ongoing litigation"
+
+**Body opening**: "As redistricting maps lock in across the affected states, I'm sharing research on the legal architecture available for ongoing post-Callais litigation — specifically the Section 3 bail-in remedy (available when courts find intentional discrimination) and the international comparative models for structural reform."
+
+### Response G2: Phase 2 Distribution Date
+**User decision required**: When should the full coalition distribution (Tier 2–4 contacts not yet sent) go out as Phase 2?
+
+Options:
+- **July 1** (alongside Domain 50 Gist creation — efficient; redistricting litigation will still be active)
+- **July 15** (post-Domain 51 distribution June 9–12; gives 3-week gap before Domain 50 July 1)
+- **August 1** (alongside Domain 54 distribution — consolidates Phase 2 into one month-end push)
+
+**Recommendation**: July 1. Redistricting litigation will still be proceeding in federal courts (challenges to finalized maps take months to litigate); the research's Section 3 bail-in and Arlington Heights analysis remains directly relevant. A July 1 send is well-timed for organizations building litigation strategy for fall hearings.
+
+---
+
+## Scenario H: Resource Overrun
+
+**Trigger**: Domain 49 active correspondence is consuming more than 3 hours of user time per day during June 4–5.
+
+**What causes overrun**: Active replies requesting supplemental briefs, state-specific analysis, or customized one-pagers from multiple organizations simultaneously.
+
+**This is a good problem** — overrun means high engagement. But it can crowd out the scheduled Domain 51 sends (June 9–12) if not managed.
+
+### Immediate Response H1: Triage Correspondence
+Prioritize responses in this order:
+1. **Litigation teams asking for Section 3 bail-in or Arlington Heights analysis** (Score 5 potential): Respond same day.
+2. **Organizations asking to share the research with their networks**: Reply with 2-sentence approval + tracking note. No elaboration needed.
+3. **Organizations asking for customization** (state-specific, brief format, etc.): Acknowledge immediately; promise delivery date. If under 30 minutes: complete today. If over 30 minutes: offer Phase 2 July delivery.
+4. **All other emails**: Batch-respond once per day (not real-time).
+
+### Threshold for User Escalation (H2)
+**Escalate if**: Active correspondence exceeds 5 total hours across June 4–5 (not per day).
+
+**User decision required**:
+- Option A: Pause Tier 3B + Tier 4 sends; focus remaining time on active correspondence from Tier 1–2
+- Option B: Delegate correspondence triage to agent (agent summarizes and drafts replies; user approves and sends)
+- Option C: Proceed with all sends; accept that correspondence quality will be lower (shorter replies)
+
+**Recommendation if escalated**: Option A. Pausing Tier 3B + Tier 4 sends (Issue One, HKS, Voting Rights Alliance, state NAACP chapters) does not lose the window for those contacts — they can receive the research in Phase 2 July 1. Maintaining deep engagement with Tier 1–2 organizations who are actively using the research is more valuable than broad shallow sends.
+
+### Resource Reallocation Impact on Other Projects
+If Domain 49 overruns significantly, check RESOURCE_REALLOCATION_SCENARIOS.md for June 10–15 resource contention analysis. Key interaction: Domain 49 correspondence + Domain 51 sends (June 9–12) are the same user's time. If Domain 49 generates active litigation-team relationships that require June 12–15 follow-up, Domain 51 California contacts (June 11–12) can slip to June 14–15 without missing the July 1 deadline.
+
+---
+
+## When to Escalate to User — Summary
+
+| Condition | Timing | Escalation Template |
+|-----------|--------|---------------------|
+| Fewer than 5/8 Tier 1–2 contacts confirmed delivery by 18:00 UTC June 4 | Within 1 hour of gate | Scenario A2 template |
+| 2+ Tier 1 organizations signal June 4–5 infeasibility | Immediately upon 2nd signal | Scenario C2 template |
+| Domain 49 Day 7 weak + Domain 50 urgency trigger | June 12 | Scenario F template |
+| Domain 49 deferred entirely (both conditions met) | When both conditions confirmed | Scenario G2 template |
+| Active correspondence exceeds 5 hours total June 4–5 | When threshold crossed | Scenario H2 template |
+
+**User escalation template**:
+```
+DECISION REQUIRED: [Scenario label]
+
+SITUATION: [What happened, with metrics]
+IMPACT: [Why it matters for execution]
+OPTIONS:
+1. [Option A with rationale]
+2. [Option B with rationale]
+3. [Option C with rationale if applicable]
+RECOMMENDATION: [Your recommendation]
+TIMING: Decision needed by [date/time UTC] to maintain execution schedule.
+```
+
+---
+
+*Prepared June 3, 2026. Use in conjunction with DOMAIN_49_EXECUTION_PREFLIGHT.md and COALITION_COORDINATION_PROTOCOL.md. All scenarios with "User Decision Required" escalate before execution — no unilateral scope changes. Tracking via DISTRIBUTION_EXECUTION_LOG.md.*
+
+*Sources: [Democracy Docket — Callais litigation tracker](https://www.democracydocket.com/analysis/live-redistricting-tracker/); [NAACP LDF — Redistricting Watch 10.0](https://legaldefensefund.substack.com/p/redistricting-watch-100-continuing); [PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md — Contingency A, B, C, D, E]*

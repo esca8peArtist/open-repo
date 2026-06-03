@@ -1,346 +1,420 @@
 ---
-title: "Domain 49 Execution Preflight — Louisiana v. Callais VRA Redistricting Emergency"
+title: "Domain 49 Execution Pre-Flight — Louisiana VRA Redistricting"
 created: "2026-06-03"
-session: "Session 2707 — Resistance Research Orchestrator"
-status: "production-ready"
-execution_window: "June 4–5, 2026 (if user approves June 3 EOD)"
-hard_deadline: "June 2026 primary filing deadlines"
-document_type: "Pre-flight materials for instant activation"
+status: "production-ready — awaiting user approval"
+domain: 49
+window: "June 4–5, 2026 (hard cutoff: June 5 state filing deadlines)"
+deadline_basis: "Louisiana district court ordered operational redistricting deadline June 1; primary filing windows compress after June 5 in AL/TN/SC/LA"
+session: "Resistance Research Agent — Exploration Queue Item 55"
+cross_references:
+  - domains/domain-49-callais-vra-redistricting-emergency.md
+  - PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md
+  - DOMAIN_49_CONTINGENCY_DECISION_TREE.md
+  - COALITION_COORDINATION_PROTOCOL.md
+  - DISTRIBUTION_GIST_URLS.md
+  - DISTRIBUTION_EXECUTION_LOG.md
 ---
 
-# Domain 49 Execution Preflight
-## Louisiana v. Callais VRA Redistricting Emergency — Hour-by-Hour Timeline for June 4–5 Activation
+# Domain 49 Execution Pre-Flight
+## Louisiana v. Callais / VRA Redistricting Emergency — June 4–5, 2026
 
-*Prepared June 3, 2026 for instant activation if user approves Domain 49 distribution by EOD June 3*
-
----
-
-## Critical Context
-
-**Domain 49 research status**: COMPLETE — 8,100+ words, 40+ sources, June 1 Louisiana map update integrated.
-
-**Execution urgency**: The April 29, 2026 Callais ruling triggered immediate redistricting cascades in six states (Alabama, Tennessee, Louisiana, South Carolina, Florida, Mississippi). Louisiana Governor Landry signed a new map June 1 eliminating one majority-Black congressional district. Primary filing deadlines in affected states are closing **in early–mid June 2026** — this is a hard legal cutoff. Emergency litigation and advocacy must happen **before those deadlines close**. The advocacy window is measured in days, not weeks.
-
-**User decision required**: If user approves Domain 49 distribution by EOD June 3, 2026 UTC, the orchestrator will execute the June 4–5 contact sequence immediately. If approval does not occur by June 3 23:00 UTC, the Callais advocacy window closes operationally — primary filing deadlines will have passed and states will have locked in maps.
+*Resistance Research Agent — June 3, 2026. Ready for immediate execution upon user approval by EOD tonight.*
 
 ---
 
-## June 4–5 Execution Timeline (UTC)
+## Why This Window Is Hard
 
-### **June 4, 2026 — PRIMARY CONTACT WAVE**
+Louisiana Governor Landry signed the new congressional map on approximately June 1, 2026 — eliminating one of the state's two majority-Black congressional districts. NAACP LDF called it "a flagrant effort to consolidate political power in the hands of the white majority." The cascade is ongoing: Alabama's primary is running under maps the Supreme Court retroactively altered (5-4 unsigned stay, May 11) while early voting was already underway. Tennessee's 9th District (Memphis) was eliminated. South Carolina is targeting the Clyburn seat. Filing deadlines in these states close in the June 5–8 window.
 
-**Goal**: 70% initial contact success rate (7 of 10 Tier 1 contacts receive the research, acknowledge receipt, or commit to review)
+**The window is not "the research should go soon" — the window is "litigation teams are drafting emergency preliminary injunction motions right now."** Research arriving at Democracy Docket and NAACP LDF on June 4 may reach brief-writing teams the same day. Research arriving June 12 is background reading for litigation that is already filed.
 
-#### 08:00–08:30 UTC — Pre-send verification (30 minutes)
-
-- [ ] Confirm Gist URL is live and loaded (check DISTRIBUTION_GIST_URLS.md for Domain 49 entry)
-- [ ] Verify Gist contains full June 3 update: Louisiana map signing (June 1), NAACP LDF response, distribution templates, Section 3 bail-in analysis
-- [ ] If Gist does not yet exist, create it immediately using domain-49-callais-vra-redistricting-emergency.md as source
-- [ ] Verify all contact email addresses are current (see Contact List below)
-- [ ] Copy distribution templates into email drafts (modify only [NAME], [GIST_URL], [YOUR_NAME] fields)
-- [ ] Set up tracking spreadsheet: columns for [Organization], [Contact], [Email Sent], [Time], [Response Status]
-
-#### 08:30–09:30 UTC — Wave 1: Primary Litigation Organizations (Democracy Docket, NAACP LDF)
-
-**These two organizations** are the most time-critical. Democracy Docket (Marc Elias's firm) is the primary legal tracking and filing organization for Callais-triggered litigation. NAACP LDF was the named plaintiff in Louisiana v. Callais and is coordinating the Alabama stay response. They need this research **within the first hour** to use in emergency briefings being drafted June 4.
-
-| Contact | Organization | Email | Modality | Priority |
-|---------|--------------|-------|----------|----------|
-| Marc Elias / General | Democracy Docket | democracy@democracydocket.com | Email direct | FIRST |
-| General Intake | NAACP LDF | info@naacpldf.org | Email direct | FIRST |
-
-**Email 1: Democracy Docket** (09:00 UTC, 4:00 AM Eastern)
-- **Subject**: "Research on Callais redistricting cascade — litigation support for emergency pleadings"
-- **Body**: [Use Template 1 from domain-49 document] + emphasis on Section 3 bail-in analysis and Arlington Heights intentional discrimination framework
-- **Expected response time**: Same-day or within 2 hours (litigation organizations respond quickly to research that's time-critical)
-
-**Email 2: NAACP LDF** (09:15 UTC)
-- **Subject**: "Callais cascade research — Louisiana map signed June 1, Texas state leg analysis, bail-in remedy framework"
-- **Body**: [Use Template 1, modified to note LDF's specific role in Louisiana v. Callais and Alabama proceedings]
-- **Expected response time**: Within 24 hours (institutional review)
-
-**Success indicator for this block**: Both emails sent, no technical delivery failures logged
-
-#### 09:30–10:30 UTC — Wave 2: Campaign Finance + Civil Rights Infrastructure (Campaign Legal Center, Issue One)
-
-Campaign Legal Center published "Redistricting 101 and the Fight for Fair Representation After Callais" in May — they are already engaged on this issue. Issue One's bipartisan "ReFormers Caucus" has voting rights reform in its portfolio. Both organizations are warm contacts who recognize the research's relevance immediately.
-
-| Contact | Organization | Email | Modality |
-|---------|--------------|-------|----------|
-| Research team lead | Campaign Legal Center | info@campaignlegal.org | Email direct |
-| Executive | Issue One | info@issueone.org | Email direct |
-
-**Email 3: Campaign Legal Center** (09:45 UTC)
-- **Subject**: "Callais research synthesizing your CFLC redistricting brief framework — pre-filing support"
-- **Body**: Lead with acknowledgment of CLC's existing Callais analysis; position this research as complementary expansion including international comparatives and Section 3 remedies
-- **Personalization hook**: CLC's expertise in disparate impact and intentional discrimination standards makes them key interpreters for Hill briefing
-
-**Email 4: Issue One** (10:15 UTC)
-- **Subject**: "Voting rights + election law reform — Callais cascade research for ReFormers briefing"
-- **Body**: Frame as input to their bipartisan voting rights agenda; Section 3 bail-in is procedurally non-partisan (available to either party depending on jurisdiction)
-
-**Success indicator for this block**: 2 of 2 emails sent; at least 1 same-day acknowledgment
-
-#### 10:30–12:00 UTC — Wave 3: Racial Justice + Voting Rights Coalition (MALDEF, NAACP National, LULAC)
-
-These organizations represent the full scope of the Callais impact: MALDEF issued a same-day statement on the ruling documenting effects on Hispanic/Native/Asian-American districts (not just Black districts). NAACP National has Congressional Black Caucus connections. LULAC is coordinating Texas redistricting response. All three are established voting rights organizations with institutional capacity to immediately integrate research into June advocacy.
-
-| Contact | Organization | Email | Modality |
-|---------|--------------|-------|----------|
-| Communications | MALDEF | communications@maldef.org | Email direct |
-| General | NAACP National | info@naacp.org | Email direct |
-| National Office | LULAC | info@lulac.org | Email direct |
-
-**Email 5: MALDEF** (10:45 UTC)
-- **Subject**: "Callais impact analysis — Hispanic/Native/Asian-American majority-minority districts, Texas state leg analysis"
-- **Body**: [Use Template 2] + note Section 9.2 of domain document (342→202 state legislative district projection) and Texas mid-decade redistricting implications
-- **Timing note**: MALDEF issued press statements within hours of the Callais ruling; they are responsive to voting rights emergencies
-
-**Email 6: NAACP National** (11:15 UTC)
-- **Subject**: "Callais research — CBC connections, 15+ seat elimination aggregate analysis, Lewis VRA Act urgency"
-- **Body**: [Use Template 3] + note your connections to Congressional Black Caucus members if applicable, or request forwarding to NAACP Legal Affairs team
-- **Timing note**: NAACP has the most extensive voter education infrastructure; national office can integrate research into state-level communications
-
-**Email 7: LULAC** (11:45 UTC)
-- **Subject**: "Texas redistricting + Callais impact — state-by-state cascade analysis"
-- **Body**: [Use Template 2, adapted] + note LULAC's documented role in Texas coalition coordination
-- **Timing note**: LULAC meets regularly with MALDEF and state affiliates; they can coordinate distribution within the Texas network rapidly
-
-**Success indicator for this block**: 3 of 3 emails sent; at least 1 response by EOD June 4
-
-#### 12:00–14:00 UTC — EOD June 4 Assessment
-
-**Check and log results**:
-- [ ] Update tracking spreadsheet with send times and any auto-replies
-- [ ] Monitor email for responses and replies (set up filters for all 7 contact addresses)
-- [ ] Document success rate: count emails sent without delivery failures
-
-**Target outcome by EOD June 4 (14:00 UTC)**: 
-- ✓ 7 of 7 emails sent
-- ✓ 2+ same-day responses (Democracy Docket, NAACP LDF, or Campaign Legal Center likely candidates)
-- ✓ 70% "engaged" status (defined as: email sent + bounces = 0, auto-reply received from major organization, or manual reply received)
-
-**If success rate < 70% by EOD June 4**:
-→ Activate Contingency Protocol (see CONTINGENCY_DECISION_TREE.md, Section A)
+The domain document (8,100+ words, 40+ sources, June 3 update integrated) is complete. The four distribution templates are in Section 11 of the domain file. The contact list is in Section 10. This document sequences the sends by hour and tracks the metrics.
 
 ---
 
-### **June 5, 2026 — SECONDARY COALITION WAVE + TIER 2 EXPANSION**
+## Pre-Flight Checklist (Complete Before June 4, 07:00 UTC)
 
-**Goal**: 40% coalition agreement rate (4 of 10 contacts commit to actively using research in litigation/advocacy, OR integrate into materials by EOD June 5)
+This is the only user work required before the June 4 sends begin.
 
-#### 08:00–09:00 UTC — Monitor responses from June 4 wave
+- [ ] **Gist creation** (15 minutes)
+  - Go to https://gist.github.com/new (log in as esca8peArtist)
+  - Filename: `domain-49-louisiana-callais-vra-redistricting-emergency-2026.md`
+  - Paste full content of `domains/domain-49-callais-vra-redistricting-emergency.md`
+  - Set visibility: Public
+  - Click "Create public gist" — copy the resulting URL
 
-- [ ] Check all 7 contact email inboxes for overnight responses (many organizations monitor email across time zones; European-based organizations may have replied 8 PM UTC June 4 = 3 PM US Eastern)
-- [ ] Document which contacts have opened emails (if tracking available via Gist view analytics)
-- [ ] Identify which June 4 contacts have explicitly requested follow-up information or additional materials
+- [ ] **Fill Gist URL into templates** (5 minutes)
+  - The domain document's Section 11 has four templates, each with `[GIST_URL]` placeholder
+  - Replace all four instances with the live Gist URL
+  - Also add entry to `DISTRIBUTION_GIST_URLS.md` — Domain 49 row
 
-#### 09:00–11:00 UTC — Wave 4: Secondary Voting Rights + Academic Contacts (Tier 2)
+- [ ] **Fill sender credentials** (3 minutes)
+  - Each template has `[YOUR_NAME]` and `[YOUR_CONTACT_INFO]` — fill these
+  - 8 total fills across 4 templates (2 per template)
 
-If June 4 wave shows strong engagement (2+ explicit commitments), expand immediately to Tier 2. If June 4 shows moderate engagement (1 commitment), expand only to the three most relevant Tier 2 contacts based on June 4 responses. If June 4 shows weak engagement (0 commitments), see Contingency Protocol.
+- [ ] **Verify Gist loads in incognito window**
+  - Open incognito browser, paste Gist URL, confirm it loads and shows full document
 
-**Tier 2 contacts** (prioritize by relevance to strongest June 4 responses):
+- [ ] **Create tracking log entry** (2 minutes)
+  - Open or create `DISTRIBUTION_EXECUTION_LOG.md`
+  - Add Domain 49 section: table with columns: Contact | Org | Email | Sent Time UTC | Bounce? | Response? | Notes
 
-| Contact | Organization | Email | Rationale |
-|---------|--------------|-------|-----------|
-| Redistricting Program | Brennan Center | redistricting@brennancenter.org | Published Callais analysis; credible academic research voice |
-| Research Director | Voto Latino | info@votolatino.org | Hispanic voter education; impacts June voting rights messaging |
-| Research Contact | Congressional Black Caucus Foundation | info@cbcfinc.org | Direct CBC connection; seat-elimination documentation |
-| Voting Rights Alliance Coordinator | Voting Rights Alliance | Via votingrightsalliance.org | Post-Callais coalition coordination hub |
+- [ ] **Open DOMAIN_49_CONTINGENCY_DECISION_TREE.md** — have it open in a second tab for real-time reference
 
-**Email 8: Brennan Center (Redistricting Program)** (09:15 UTC) — Send only if June 4 showed 2+ responses
-- **Subject**: "Callais research analysis — complementary to Brennan Center redistricting program"
-- **Body**: Acknowledge their existing Callais analysis; position research as specialized deep-dive on Section 3 bail-in remedy, international comparatives, proportional representation pathway
-- **Expected use**: June-July redistricting litigation support materials
-
-**Email 9: Voto Latino** (09:45 UTC) — Send always (voter education angle is independent of litigation response)
-- **Subject**: "Hispanic voter impact of Callais redistricting — research for voter education materials"
-- **Body**: Emphasize Section 9.2 findings on Hispanic, Native, Asian-American district projections (342→202 state leg districts); frame as voter education resource
-- **Expected use**: Voter engagement materials explaining district boundary changes to Latino communities
-
-**Email 10: CBC Foundation** (10:15 UTC) — Send only if NAACP National email from June 4 gets forwarded or CBC members request it
-- **Subject**: "Congressional representation stakes in Callais cascade — 15+ seat analysis for member briefings"
-- **Body**: [Use Template 3]; lead with Brookings analysis; offer to format as one-page member brief or fact sheet
-
-#### 11:00–14:00 UTC — Post-send cleanup and June 5 checkpoint
-
-- [ ] Update tracking spreadsheet with all June 5 sends
-- [ ] Count total contacts engaged: (emails sent June 4 + June 5 with no bounces) / total = engagement rate
-- [ ] Count coalition commitment rate: organizations that explicitly stated they will use research in litigation/advocacy documents
-- [ ] If engagement rate ≥ 70% AND commitment rate ≥ 40%, mark Domain 49 distribution as **SUCCESS — Phase 1 complete**
-- [ ] If engagement rate ≥ 70% but commitment rate < 40%, proceed to Tier 3 academic contacts (see Section below)
-- [ ] If engagement rate < 70%, activate CONTINGENCY_DECISION_TREE.md Contingency A
-
-#### 14:00–16:00 UTC — Optional Tier 3 expansion (if June 4–5 shows strong adoption)
-
-If both engagement and commitment rates are strong (≥70% and ≥40%), send to Tier 3 academic/think tank contacts for longer-term strategic briefing:
-
-| Contact | Organization | Email | Timeline |
-|---------|--------------|-------|----------|
-| Electoral Democracy Program | Harvard Kennedy School | Via hks.harvard.edu | Academic network distribution |
-| Director | Issue One | info@issueone.org | (if not contacted June 4) |
-| Program Director | Fair Vote | info@fairvote.org | Proportional representation pathway advocacy |
-
-**Tier 3 emails** use the research as input to academic/structural reform briefings (6-month timeline), not immediate litigation (so lower priority for June 4–5 execution).
+**Total pre-flight time: 25–30 minutes**
 
 ---
 
-## Contact List — Complete with Email, Modality Notes, and Success Metrics
+## June 4 Hour-by-Hour Timeline
 
-### **Tier 1: Primary Litigation Organizations (MUST contact June 4, 08:30–10:30 UTC)**
+All times UTC. ET = UTC-4. CT = UTC-5. MT = UTC-6. PT = UTC-7.
 
-| Contact | Organization | Email | Phone | Modality | Success Indicator |
-|---------|--------------|-------|-------|----------|-------------------|
-| General Intake | Democracy Docket | democracy@democracydocket.com | N/A | Email preferred | Same-day reply or Gist view within 2 hours |
-| Info | NAACP LDF | info@naacpldf.org | (202) 682-1300 | Email primary, phone backup | Reply within 24 hours or forwarding email received |
-| Info | Campaign Legal Center | info@campaignlegal.org | (202) 736-2200 | Email preferred | Reply within 12 hours |
-| Communications | Issue One | info@issueone.org | (202) 543-6287 | Email preferred | Same-day reply likely |
+### 07:00 UTC | Pre-Launch Verification
+*(3:00 AM ET — do this the night before if on East Coast)*
 
-**Modality notes for Tier 1**:
-- **Email**: All four organizations monitor central inboxes actively during litigation periods. Email is preferred because it creates a timestamped record that can be forwarded internally to litigation/research teams.
-- **Phone backup**: If no reply within 2 hours (12:30 UTC), a follow-up phone call to NAACP LDF at the general line asking for "voting rights research intake or litigation support team" can confirm delivery and get direct contact.
-- **Gist views**: If you have Gist analytics enabled, monitor view counts in real-time. A view from democracy@democracydocket.com IP range within 1 hour of sending indicates engagement.
+Confirm Gist URL loads. Confirm all four templates have Gist URL and your credentials filled. Stage the four email drafts in your email client — do not send yet.
+
+No sends. No contacts. Verification only.
 
 ---
 
-### **Tier 2: Voting Rights Coalition (Contact June 4, 10:30–12:00 UTC if email delivery confirms; MUST contact June 5 if not reached)**
+### 08:00 UTC | Tier 1A — NAACP LDF + Democracy Docket
+*(4:00 AM ET / 1:00 AM PT)*
 
-| Contact | Organization | Email | Phone | Modality | Notes |
-|---------|--------------|-------|-------|----------|-------|
-| Communications | MALDEF | communications@maldef.org | (202) 628-5400 | Email primary | Monitor for forwarding to litigation team |
-| General | NAACP National | info@naacp.org | (410) 580-5777 | Email to general, follow-up to legal if no reply | Large organization; may route to Legal Affairs |
-| National Office | LULAC | info@lulac.org | (202) 833-6130 | Email primary | Monitor for routing to state coordinator |
+These two go first because they are the primary litigation engines for Callais-triggered cases. Emails sent at 08:00 UTC land in inboxes before the East Coast business day opens at approximately 09:00 UTC (5:00 AM ET). Most large advocacy organizations have staff who check email before 9 AM when active litigation is occurring.
 
-**Modality notes for Tier 2**:
-- **MALDEF**: Issued same-day statement on Callais; they are rapid-response on voting rights. Email has high probability of routing to voting rights litigation team automatically.
-- **NAACP National**: Large organization with multiple internal teams. Email goes to general intake; if no response within 12 hours, follow-up email specifically requesting routing to "Legal Affairs and Litigation" can help.
-- **LULAC**: Network-based organization. They meet regularly with state chapters. Email to national office routes to their voting rights coordinator; ask them to forward to Texas, California, and Arizona state coordinators if relevant.
+**Send 1 — NAACP LDF**
+- Email: info@naacpldf.org
+- Template: Template 1 (Voting Rights Litigation Organizations) from Section 11 of domain document
+- Key personalization before sending: Add one sentence at the top acknowledging Robinson v. Landry — "I know your organization has been the named plaintiff through the Robinson v. Landry / Callais litigation cycle; the domain document's Section 3 bail-in analysis is written with precisely that litigation posture in mind."
+- Subject: "Research on Louisiana v. Callais redistricting cascade — Section 3 bail-in and Arlington Heights framework for June advocacy"
 
----
+**Send 2 — Democracy Docket**
+- Email: democracy@democracydocket.com (or via democracydocket.com/contact)
+- Template: Template 1, modified subject line
+- Key personalization: Democracy Docket's own redistricting tracker coverage is cited 4x in the domain document (Sections 2.1, 2.3, 9.1). One sentence: "I've built on your redistricting tracker coverage in the analysis — the consolidated constitutional framing may be useful for your June legal communications and brief-writing."
+- Subject: "Callais redistricting cascade research — builds on Democracy Docket tracker coverage, June litigation support"
 
-### **Tier 3: Secondary Coalition and Research (Contact June 5 or later if June 4 shows strong engagement)**
-
-| Contact | Organization | Email | Phone | Modality | Notes |
-|---------|--------------|-------|-------|----------|-------|
-| Redistricting Program | Brennan Center for Justice | redistricting@brennancenter.org | (212) 998-6730 | Email | Research organization; slower response cycle |
-| General | Voto Latino | info@votolatino.org | (202) 350-8434 | Email | Voter education focus; not litigation-primary |
-| Research | Congressional Black Caucus Foundation | info@cbcfinc.org | (202) 263-2800 | Email | Foundation; forward to CBC members for member briefings |
-| Voting Rights | Voting Rights Alliance | Via votingrightsalliance.org | N/A | Email via website form | Coalition coordination hub; slower administrative response |
+**Time estimate: 20 minutes for both sends**
 
 ---
 
-### **Tier 4: State-Level Contacts (Contact June 6+ if strong national response; hold until June 10 unless contingency triggered)**
+### 09:00 UTC | Tier 1B — Campaign Legal Center + MALDEF
+*(5:00 AM ET)*
 
-Priority states for Tier 4:
+**Send 3 — Campaign Legal Center**
+- Email: info@campaignlegal.org
+- Template: Template 1
+- Key personalization: CLC published "Redistricting 101 and the Fight for Fair Representation After Callais" (cited in domain document). One sentence: "The domain document's Section 3.2 (state VRA pathway) and Section 3.4 (Section 3 bail-in remedy) expand on the framework your organization published post-Callais."
+- Subject: "Research complementing CLC's Callais redistricting analysis — Section 3 bail-in, state VRA, Arlington Heights framing"
 
-1. **Louisiana**: State NAACP chapter (Louisiana NAACP), Shreveport-area NAACP branches, LSU Law School Election Law Clinic
-2. **Tennessee**: Tennessee Voters Alliance, Memphis NAACP, Shelby County Commission voting rights legal team
-3. **South Carolina**: SC NAACP, James Clyburn's office or House Democratic Caucus staff, South Carolina Law School voting rights clinic
-4. **Alabama**: Alabama NAACP state conference, Alabama Voting Rights Project, University of Alabama Law School
+**Send 4 — MALDEF**
+- Email: communications@maldef.org
+- Template: Template 2 (Hispanic and Multiracial Voting Rights Organizations)
+- Key personalization: MALDEF issued a formal statement the day of the ruling. Domain document's Section 9.2 directly documents MALDEF's position and their data on Hispanic/Native/Asian-American district losses. One sentence: "Section 9.2 of the document incorporates your April 29 statement and documents the projected loss of majority-minority state legislative districts (342 to 202 nationally) — the cross-community scope that has received less attention than the Black-district analysis."
+- Subject: "Callais research — Hispanic/Native/Asian-American majority-minority district impacts, Section 9.2 cross-community analysis"
 
-**Decision to expand to Tier 4**: Only if Tier 1–3 outreach shows strong adoption (60%+ engagement) by June 5 EOD. Tier 4 contacts are secondary because they operate at state/local level and do not drive federal litigation strategy.
-
----
-
-## Priority Tiers and Ordering Rationale
-
-### **Why this contact sequence is ordered this way**:
-
-**Tier 1 (June 4, 08:30 UTC)**: Democracy Docket and NAACP LDF are the litigation engines for federal Callais-triggered cases. They are likely drafting emergency briefings, stay motions, and preliminary injunction filings on June 4. Research arriving at 09:00 UTC (4:00 AM Eastern) reaches them before the litigation team starts the workday with fresh materials.
-
-**Campaign Legal Center + Issue One (June 4, 09:30 UTC)**: These organizations are policy/strategy complementary to litigation — they brief Hill staff, media, and provide expert commentary. They have faster decision cycles than litigation teams and can amplify research through their networks within hours.
-
-**Tier 2 Coalition (June 4, 10:30 UTC)**: MALDEF, NAACP National, LULAC represent the full geographic and demographic scope of Callais impact (Hispanic, national Black, Latino-focused). They are slower to respond than litigation teams but more influential for voter education and state-level coordination. Reaching them June 4 allows for state coordinator briefing by June 5.
-
-**Tier 3 Research (June 5 or June 6)**: Academic and research organizations operate on longer decision cycles. They are more valuable for medium-term advocacy (July–August) than immediate litigation support. Include only if June 4–5 shows strong adoption, as contacting too broadly dilutes message focus.
+**Time estimate: 20 minutes for both sends**
 
 ---
 
-## Success Rate Targets and Checkpoint Metrics
+### 10:00 UTC | Buffer — No Sends
+*(6:00 AM ET)*
 
-### **EOD June 4 Target: 70% Initial Contact Success**
+Allow Tier 1 emails to land. Do not send Tier 2 until 13:00 UTC. Check for any immediate hard bounce notifications.
 
-**Definition**: Seven of ten Tier 1–2 contacts have received email with zero delivery failures, and at least one contact has replied or acknowledged.
-
-**Metric calculation**:
-- Count emails sent to: Democracy Docket, NAACP LDF, Campaign Legal Center, Issue One, MALDEF, NAACP National, LULAC = 7 contacts
-- If all 7 emails deliver without bounces: 7/7 = 100% (exceeds 70% target) ✓
-- If 5 emails deliver, 2 bounces due to outdated addresses: 5/7 = 71% (meets 70% target) ✓
-- If 4 emails deliver, 3 bounces: 4/7 = 57% (below 70% threshold) → Activate Contingency A
-
-**Associated success signals**:
-- At least 1 reply from Tier 1 within 12 hours of send (Democracy Docket or NAACP LDF most likely)
-- At least 2 Gist views from distinct IP ranges within 4 hours (indicates research passed through to team)
-- Zero automated rejections for "out of office" or "forwarding address" errors
-
-### **EOD June 5 Target: 40% Coalition Agreement Rate**
-
-**Definition**: Four of ten contacts explicitly commit (via email, call, or in-person confirmation) to using the research in litigation briefs, congressional briefings, or voter education materials by end of 2026.
-
-**Metric calculation**:
-- "Coalition agreement" = quote from contact email like "we will integrate this into our brief" or "thanks for this — very useful for our litigation support" or "forwarding to our litigation team now"
-- Count organizations meeting this standard: if 4+ of [Democracy Docket, NAACP LDF, Campaign Legal Center, MALDEF, NAACP National, LULAC, Brennan Center, Voto Latino, CBC Foundation] have agreed to use = 40%+
-- If only 3 have agreed: 3/10 = 30% (below 40% target) → Proceed to Contingency B (extended outreach)
-- If 5+ have agreed: 5/10 = 50%+ (exceeds 40%, move to Tier 3 expansion)
+**If any hard bounce arrives**: Do not wait — check COALITION_COORDINATION_PROTOCOL.md for alternate contact method. Do not let a bounce delay the overall timeline.
 
 ---
 
-## Post-Distribution Monitoring (June 6–30)
+### 12:00 UTC | Day 1 Midpoint Assessment Gate
+*(8:00 AM ET — business hours fully open)*
 
-Once the June 4–5 outreach is complete:
+Record in tracking log:
 
-### **Week 1 (June 6–12) Monitoring**:
-- [ ] Track litigation filings in Alabama, Tennessee, Louisiana, South Carolina federal courts. Watch for cited use of research or filing materials mentioning Section 3 bail-in, Arlington Heights framework, or national seat-loss analysis.
-- [ ] Monitor NAACP LDF Substack (Redistricting Watch) for updates. Note if any redistricting updates reference materials you sent.
-- [ ] Check media coverage (Democracy Docket blog, NPR Politics, CNN Politics) for mentions of Callais litigation updates. If media is covering June redistricting filings, note if the analysis aligns with research framework.
+| Contact | Sent? | Bounce? | Auto-Reply? | Manual Reply? |
+|---------|-------|---------|-------------|---------------|
+| NAACP LDF | | | | |
+| Democracy Docket | | | | |
+| Campaign Legal Center | | | | |
+| MALDEF | | | | |
 
-### **Week 2–4 (June 13–30) Monitoring**:
-- [ ] Primary filing deadlines in affected states will have closed. Document which states closed (mark on state-by-state timeline in domain document).
-- [ ] Litigation status check: Have emergency preliminary injunction motions been filed in AL, TN, SC, LA? Note filing dates and legal theories used.
-- [ ] Coalition use tracking: Contact the three highest-response organizations (likely Democracy Docket, NAACP LDF, Campaign Legal Center) via email asking if they integrated research into materials. Request they send you any briefs/filings that cite the domain document if public.
-
-### **Report Due July 1**:
-Document:
-- Number of litigation filings using research framework (Arlington Heights, Section 3 bail-in)
-- Any media coverage citing the research (including by proxy through litigation filings)
-- Evidence of voter education integration (Voto Latino, NAACP voter education materials)
-- Any explicit feedback on what was most useful (will inform Domain 50, 51 distribution patterns)
+**Decision at this gate**:
+- 0 bounces and 0 responses = NORMAL. Tier 1 organizations typically respond in 4–24 hours during active litigation periods. Proceed to 13:00 UTC sends.
+- 1+ hard bounce = Activate alternate contact (see COALITION_COORDINATION_PROTOCOL.md). Do not let a bounce delay Tier 2 sends.
+- 2+ hard bounces = Pause. Run CONTINGENCY_DECISION_TREE.md Scenario A.
 
 ---
 
-## Escalation Chain and Decision Authority
+### 13:00 UTC | Tier 2A — NAACP National + Brennan Center
+*(9:00 AM ET)*
 
-**Primary decision authority**: User (the researcher/orchestrator).
+**Send 5 — NAACP National**
+- Email: info@naacp.org
+- Template: Template 3 (Congressional and Policy Contacts)
+- Key personalization: NAACP National has voter education infrastructure and CBC connections. Emphasize the voter education dimension (Section 6.2 of domain document) — rapid voter education about new district boundaries is an immediate actionable intervention. Add: "If your state chapters in Louisiana, Tennessee, Alabama, and South Carolina have voter education operations for the upcoming primaries, the district boundary change documentation in Sections 2.1–2.5 is ready to use."
+- Subject: "Callais cascade research — voter education sections for state chapters, CBC seat-elimination analysis"
 
-**Escalation trigger 1: If outreach shows weak engagement (< 50% by EOD June 4)**
-→ Initiate Contingency A (see CONTINGENCY_DECISION_TREE.md)
-→ User decision required: Proceed with extended outreach Friday June 5, or defer to Phase 2?
+**Send 6 — Brennan Center for Justice**
+- Email: brennancenter@brennancenter.org (or redistricting@brennancenter.org for Redistricting Program specifically)
+- Template: Template 1, modified
+- Key personalization: Brennan Center published its own Callais analysis (cited in Section 9.3 of domain document). Position this as complementary: "The domain document's Section 3 bail-in analysis and the international comparative section (Sections 5.1–5.3) may complement your published analysis — specifically the proportional representation structural reform pathway that goes beyond what the immediate post-Callais analysis typically addresses."
+- Subject: "Research complementing Brennan Center's Callais analysis — international comparatives and PR structural reform pathway"
 
-**Escalation trigger 2: If a major litigation development occurs June 4–5 (e.g., federal court issues preliminary injunction, SCOTUS grants emergency stay)**
-→ Send emergency alert email to all Tier 1 contacts with link to research + notation of new development
-→ No user decision required (this is amplification, not new outreach)
-
-**Escalation trigger 3: If a contacted organization responds asking for customization or additional analysis**
-→ Evaluate within 2 hours; respond same-day if possible
-→ If customization requires >30 minutes of work, user makes decision to provide or defer to Phase 2 follow-up
-
----
-
-## Session 2707 Deliverables Checklist
-
-This preflight document enables these deployment steps:
-
-- [ ] Print or open this document on tablet/computer for June 4 execution
-- [ ] Confirm Gist URL is live (domain-49-callais-vra-redistricting-emergency)
-- [ ] Create email drafts from Templates 1–4 (found in domain document Section 11)
-- [ ] Set up tracking spreadsheet (GSheets, Airtable, or Excel with columns: Contact | Org | Email | Send Time | Response Status | Notes)
-- [ ] Set phone reminders for 08:00 UTC, 09:00 UTC June 4 (so you don't miss early morning send window)
-- [ ] Brief the contact list to colleagues/team who may help with follow-ups (especially state-level Tier 4)
-
-**Total preparation time**: 90 minutes (GSheet setup, email template prep, URL confirmation, contact verification)
-
-**Total execution time June 4–5**: 4 hours (1 hour June 4 morning setup, 2 hours email sends June 4, 1 hour June 5 monitoring/Tier 2 expansion)
+**Time estimate: 20 minutes for both sends**
 
 ---
 
-*Domain 49 Execution Preflight prepared June 3, 2026. Activation contingent on user approval by EOD June 3. If approved, orchestrator executes June 4–5 timeline with goal of 70% initial contact success + 40% coalition agreement by EOD June 5. All contact information current as of June 2026. Tracking via DISTRIBUTION_EXECUTION_LOG.md. Cross-reference contingency decisions with DOMAIN_49_CONTINGENCY_DECISION_TREE.md and COALITION_COORDINATION_PROTOCOL.md.*
+### 15:00 UTC | Tier 2B — LULAC + Voto Latino
+*(11:00 AM ET)*
+
+**Send 7 — LULAC**
+- Email: info@lulac.org
+- Template: Template 2
+- Key personalization: LULAC is active in the Texas redistricting coalition (LULAC + MALDEF + Texas NAACP + Fair Maps Texas). Domain document's Section 9.2 documents the Texas situation: Texas mid-decade redistricting completed in 2025 (before Callais) is now significantly harder to challenge under the new intentional discrimination standard. One sentence: "The Texas section documents why LULAC's redistricting coalition faces a harder legal landscape for the maps drawn in 2025 — and what the surviving Section 2 and state-law challenge paths look like."
+- Subject: "Callais research — Texas redistricting implications, LULAC coalition context, surviving Section 2 theories"
+
+**Send 8 — Voto Latino**
+- Email: info@votolatino.org
+- Template: Template 2, adapted for voter education framing
+- Key personalization: Voto Latino's voter education and registration focus. The 342-to-202 majority-minority state legislative district loss (Section 9.2) is the critical figure for Voto Latino's population — these are the legislatures that pass voter ID laws, set election administration budgets, and control state court redistricting review. One sentence: "The compounding democratic exclusion cycle in Section 9.2 — where Callais changes who sits in state legislatures that then control state voter ID law and election administration — is directly relevant to your voter registration work in affected states."
+- Subject: "Callais impact on Latino voter representation — state legislative district projections, voter education resource"
+
+**Time estimate: 15 minutes for both sends**
+
+---
+
+### 18:00 UTC | Day 1 GO/NO-GO Assessment Gate
+*(2:00 PM ET)*
+
+This is the primary Day 1 evaluation gate. Fill in the full tracking log and apply the success thresholds.
+
+**Complete tracking table at 18:00 UTC**:
+
+| Contact | Sent UTC | Bounce? | Auto-Reply? | Manual Reply? | Reply Score (1-5)* |
+|---------|----------|---------|-------------|---------------|---------------------|
+| NAACP LDF | | | | | |
+| Democracy Docket | | | | | |
+| Campaign Legal Center | | | | | |
+| MALDEF | | | | | |
+| NAACP National | | | | | |
+| Brennan Center | | | | | |
+| LULAC | | | | | |
+| Voto Latino | | | | | |
+
+*Score rubric: 1 = no reply, 2 = auto-reply/OOO, 3 = short acknowledgment, 4 = substantive engagement ("useful/sharing with team"), 5 = research integration committed ("using in brief/materials")
+
+**Success thresholds at 18:00 UTC Day 1**:
+
+| Signal | Threshold | Action |
+|--------|-----------|--------|
+| Tier 1 Score 4+ reply | 1+ (any one of LDF/DD/CLC/MALDEF) | Strong GO — proceed to 19:00 UTC sends |
+| Total contacts sent, 0 bounces | 8/8 | Normal GO — proceed |
+| Hard bounces | 0 | Normal |
+| Hard bounces | 1 | Flag, use alternate contact, proceed |
+| Hard bounces | 2+ | CAUTION — run CONTINGENCY_DECISION_TREE.md Scenario A before 19:00 UTC sends |
+| 0 replies from all 8 contacts AND 0 bounces | Expected — proceed normally | Do not read as failure; 4–24 hour response window is normal |
+
+---
+
+### 19:00 UTC | Tier 3A — Congressional Black Caucus Foundation + Fair Vote
+*(3:00 PM ET)*
+
+**Send 9 — Congressional Black Caucus Foundation**
+- Email: info@cbcfinc.org
+- Template: Template 3 (Congressional and Policy Contacts)
+- Key personalization: Use the Brookings data (74% of Black House members depend on majority-minority districts; 15+ Democratic-held districts at risk per NPR analysis; Brookings projects 12–19 Republican seat additions through redistricting alone). Frame this as a member-briefing resource for CBC members whose seats are at risk. "The domain document's aggregate seat-elimination analysis (Section 2.6) and the John R. Lewis VRA Act urgency framing (Section 4.1) may be directly useful for member-office briefing materials."
+- Subject: "Callais cascade — 15+ Democratic seat risk analysis, Lewis VRA Act framing for CBC member briefings"
+
+**Send 10 — Fair Vote**
+- Email: info@fairvote.org
+- Template: Template 3, modified for structural reform framing
+- Key personalization: Fair Vote's Fair Representation Act (multi-member districts with ranked-choice voting) is specifically named in the domain document as the structural long-term reform (Section 7.3 and Section 5.2). Frame: "The domain document's Section 7.3 positions the Fair Representation Act as the structural alternative that eliminates the majority-minority district trap — providing the redistricting crisis context that makes your Act the most legible reform option. The proportional representation analysis in Section 5.2 may support your June 2026 advocacy messaging."
+- Subject: "Callais redistricting crisis analysis — Fair Representation Act as structural remedy, PR comparative context"
+
+**Time estimate: 15 minutes for both sends**
+
+---
+
+### 21:00 UTC | Day 1 Close
+*(5:00 PM ET)*
+
+Final inbox check for June 4. Update tracking log. Do not send additional contacts after this hour.
+
+**Day 1 completion checklist**:
+- [ ] 10 contacts sent (Tiers 1A, 1B, 2A, 2B, 3A)
+- [ ] Tracking table complete
+- [ ] Response count logged (total Score 3+ replies: ___; total Score 4+ replies: ___)
+- [ ] DISTRIBUTION_EXECUTION_LOG.md updated with Domain 49 section
+- [ ] Any hard bounces have alternate contacts identified for June 5 re-send
+
+---
+
+## June 5 Timeline
+
+### 08:00 UTC | Response Review + June 5 Contact Sequencing Decision
+*(4:00 AM ET)*
+
+Review overnight responses. Apply June 5 contact decision:
+
+**If 2+ Score 4+ replies from Tier 1 by 08:00 UTC June 5**: STRONG — send all six June 5 contacts.
+**If 1 Score 4+ reply**: MODERATE — send Tier 3B (Issue One + HKS + Voting Rights Alliance) and hold Tier 4 for June 6.
+**If 0 substantive replies, 0 bounces**: NORMAL — proceed with all June 5 sends as planned; organizations respond in 1–5 business days.
+**If 3+ hard bounces**: CAUTION — run CONTINGENCY_DECISION_TREE.md Scenario A before proceeding.
+
+---
+
+### 09:00 UTC | Tier 3B — Issue One + Harvard Kennedy School + Voting Rights Alliance
+*(5:00 AM ET)*
+
+**Send 11 — Issue One**
+- Email: info@issueone.org
+- Template: Template 3 with bipartisan reform framing
+- Issue One's ReFormers Caucus has cross-party voting rights reform in its portfolio. The domain document's Section 3 bail-in analysis and proportional representation pathway are relevant. Subject: "Callais research — bipartisan redistricting reform framing, Section 3 bail-in + PR structural pathway"
+
+**Send 12 — Harvard Kennedy School / Electoral Democracy Center**
+- Email: Via hks.harvard.edu contact form (Harvard Kennedy School's Ash Center or Shorenstein Center)
+- Short cover note (not a full template email): "I've compiled research integrating your published Callais analysis and extending it with the state-by-state June 2026 update and the Section 3 bail-in reform pathway. The international comparative section (Sections 5.1–5.3) and the proportional representation structural analysis (Section 7.3) may complement your academic work. Full document: [GIST_URL]"
+- Subject: "Callais analysis — extending your published work with June 2026 update and Section 3 reform pathway"
+
+**Send 13 — Voting Rights Alliance**
+- Email: Via votingrightsalliance.org contact form
+- The Voting Rights Alliance is specifically a post-Callais coalition coordination body. Send the full domain document with a coalition coordination framing. Subject: "Domain 49 Callais research — coalition coordination resource, Section 3 bail-in and state VRA pathway"
+
+**Time estimate: 20 minutes**
+
+---
+
+### 12:00 UTC | June 5 Midpoint Assessment Gate
+*(8:00 AM ET)*
+
+Count all responses received since June 4 08:00 UTC. Apply Day 2 threshold:
+
+| Signal | Threshold | Action |
+|--------|-----------|--------|
+| Total Score 4+ replies from any tier | 3+ | STRONG — activate Tier 4 state contacts immediately |
+| Total Score 3+ replies | 1–2 | MODERATE — send Tier 4 state contacts as planned 15:00 UTC |
+| Total responses (any score), 0 bounces | Any | NORMAL — continue as planned |
+| 0 total responses AND 0 bounces by noon June 5 | — | Normal; response window is 24–72 hours for orgs |
+| 0 total responses AND 2+ bounces | — | CAUTION — run CONTINGENCY_DECISION_TREE.md |
+
+---
+
+### 15:00 UTC | Tier 4 — State-Level Contacts
+*(11:00 AM ET)*
+
+Send in this order. State NAACP chapters, state-level voting rights projects, and in-state law school election clinics.
+
+**Send 14 — Louisiana NAACP State Conference**
+- Find via naacp.org/chapter-locator (Louisiana state conference)
+- Frame: June 1 map signing is documented in detail (Section 9.1); voter education about district boundary changes before the rescheduled primary is urgent.
+
+**Send 15 — Tennessee NAACP State Conference**
+- Find via naacp.org/chapter-locator (Tennessee state conference)
+- Frame: 9th District (Memphis) elimination is documented (Section 2.2); voter education about new district lines urgent before August primaries.
+
+**Send 16 — Alabama NAACP State Conference**
+- Find via naacp.org/chapter-locator
+- Frame: May 11 SCOTUS stay allowed Alabama to revert to pre-Allen v. Milligan maps while early voting was underway (Section 2.1); the lower court's intentional discrimination finding survives and may support further litigation.
+
+**Send 17 — South Carolina NAACP / Clyburn district coalition**
+- Find via naacp.org/chapter-locator (South Carolina state conference)
+- Frame: Clyburn seat threat documented (Section 2.4); voter education and monitoring of SC House redistricting status.
+
+**Time estimate: 30 minutes for four state sends**
+
+---
+
+### 21:00 UTC | Execution Close and EOD Assessment
+
+Final tracking table. Apply overall June 4–5 success metrics.
+
+---
+
+## Success Metrics — Quantitative Thresholds
+
+### Day 1 (June 4 by 21:00 UTC)
+
+| Metric | Strong | Moderate | Caution |
+|--------|--------|----------|---------|
+| Tier 1 contacts sent (LDF, DD, CLC, MALDEF) | 4/4 | 3/4 | <3 |
+| Total contacts sent | 10/10 | 8/10 | <7 |
+| Hard bounces | 0 | 1 | 2+ |
+| Score 4+ replies | 1+ | 0 | 0 + bounces |
+
+### Day 2 (June 5 by 21:00 UTC)
+
+| Metric | Strong | Moderate | Caution |
+|--------|--------|----------|---------|
+| Total Score 3+ replies | 3+ | 1–2 | 0 |
+| Total Score 4+ replies | 2+ | 1 | 0 |
+| Score 5 reply (research cited in their work) | 1 | — | 0 |
+| Tier 4 state contacts sent | 4/4 | 4/4 | <3 |
+
+### Day 7 (June 11 by EOD)
+
+| Metric | Strong | Moderate | Weak |
+|--------|--------|----------|------|
+| Total Score 3+ replies across all tiers | 4+ | 2–3 | 0–1 |
+| Gist views from distinct IPs | 7+ | 3–6 | 0–2 |
+| Litigation team acknowledgment (LDF, DD, or CLC at Score 4+) | 1+ | — | 0 |
+| Score 5 reply | 1+ | — | 0 |
+
+**Strong Day 7 action**: Proceed with Domain 51 distribution June 9–12 as planned; extend Domain 49 to any remaining Tier 3/4 contacts not yet reached.
+**Weak Day 7 action**: Run CONTINGENCY_DECISION_TREE.md Scenario A; reassess messaging before additional sends; Domain 51 distribution proceeds independently (no dependency on Domain 49 signal).
+
+---
+
+## Escalation Triggers
+
+These conditions require immediate action — do not wait for the next scheduled send block.
+
+**Trigger A — Hard bounce from NAACP LDF or Democracy Docket**: Large organizations sometimes have spam filtering on central inboxes. Try alternate: for NAACP LDF call (202) 682-1300 and ask for voting rights litigation intake; for Democracy Docket use their website contact form as backup. Re-send within 2 hours of bounce.
+
+**Trigger B — Court files emergency motion or issues new Callais-related order June 4–5**: Send URGENT UPDATE email to all contacts who have already received the research (reference the domain document's relevant section; do not resend the full document). Template in CONTINGENCY_DECISION_TREE.md Scenario E.
+
+**Trigger C — A contacted organization replies asking for customization** (brief length, state-specific focus, etc.): Respond within 4 hours. Customizations under 30 minutes (one-pager, state-specific extract): complete same day. Customizations over 30 minutes: offer Phase 2 delivery in July with note "I can build that as part of Phase 2 with more time to tailor it."
+
+**Trigger D — Domain 51 sends (June 9–12) conflict with active Domain 49 correspondence**: Domain 51 Wave 1 (Campaign Legal Center + Issue One) can slip to June 10–11 without missing the July 1 hard deadline. Do not let Domain 51 preparation displace Domain 49 active correspondence.
+
+**Trigger E — User unavailable June 4–5**: If the user becomes unavailable before the sends are complete, the pre-staged drafts (filled templates in email drafts) can be sent as-is. The email drafts are already production-ready after pre-flight. No research work is needed — only the sending action.
+
+---
+
+## Total Execution Time Estimate
+
+| Phase | Estimated Time |
+|-------|----------------|
+| Pre-flight (Gist creation + template fills + tracking setup) | 25–30 min |
+| June 4 sends: Tier 1A (08:00 UTC) | 20 min |
+| June 4 sends: Tier 1B (09:00 UTC) | 20 min |
+| June 4 assessment checks (12:00 + 18:00 UTC) | 15 min |
+| June 4 sends: Tier 2A (13:00 UTC) | 20 min |
+| June 4 sends: Tier 2B (15:00 UTC) | 15 min |
+| June 4 sends: Tier 3A (19:00 UTC) | 15 min |
+| June 4 close + log (21:00 UTC) | 10 min |
+| June 5 review (08:00 UTC) | 10 min |
+| June 5 sends: Tier 3B (09:00 UTC) | 20 min |
+| June 5 sends: Tier 4 state contacts (15:00 UTC) | 30 min |
+| June 5 close + log | 10 min |
+| **Total June 4–5 user time** | **3.5–4 hours** |
+
+This is distribution-only work. All research is complete. All templates are ready. No writing is required — only sending, checking, and tracking.
+
+---
+
+## Document Reference Map
+
+| What you need | Where it is |
+|--------------|-------------|
+| Full domain research (8,100+ words, 40+ sources) | `domains/domain-49-callais-vra-redistricting-emergency.md` |
+| 4 email templates (filled with Gist URL after pre-flight) | Same file, Section 11 |
+| Full contact list with org/email/phone | `COALITION_COORDINATION_PROTOCOL.md` Part 1 |
+| If-then contingency logic with numeric thresholds | `DOMAIN_49_CONTINGENCY_DECISION_TREE.md` |
+| Coalition coordination procedures | `COALITION_COORDINATION_PROTOCOL.md` |
+| Send log | `DISTRIBUTION_EXECUTION_LOG.md` (Domain 49 section) |
+| Gist URL (after creation) | `DISTRIBUTION_GIST_URLS.md` — Domain 49 row |
+
+---
+
+*Prepared June 3, 2026. Ready for immediate execution upon user approval. Sources: [Democracy Docket — Louisiana redistricting tracker](https://www.democracydocket.com/cases/louisiana-congressional-redistricting-challenge-callais/); [NAACP LDF — Robinson v. Landry case page](https://www.naacpldf.org/case-issue/louisiana-v-callais/); [Campaign Legal Center — What's next after VRA evisceration](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next); [MALDEF — Statement on Callais](https://www.maldef.org/2026/04/maldef-statement-on-supreme-court-decision-in-louisiana-v-callais/); [NPR — State deadlines for redistricting in time for 2026 midterms](https://www.npr.org/2025/11/18/nx-s1-5582647/supreme-court-louisiana-redistricting-section-2-voting-rights-act); [Democracy Docket — Where the GOP can gerrymander before midterms](https://www.democracydocket.com/news-alerts/with-green-light-from-supreme-court-heres-where-the-gop-can-gerrymander-before-the-midterms/)*

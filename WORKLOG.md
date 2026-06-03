@@ -1,5 +1,59 @@
 # Work Log
 
+## Session 2714 (2026-06-03 20:14–21:15 UTC — Orchestrator: Critical Pre-Flight Runbooks)
+
+**Status**: ✅ COMPLETE
+
+**Work Completed**:
+
+1. **Domain 49 June 4–5 Pre-Flight Package** (20:14–21:00 UTC, resistance-research subagent):
+   - ✅ **DOMAIN_49_EXECUTION_PREFLIGHT.md** — Hour-by-hour UTC timeline for June 4–5 launches, quantitative success thresholds (e.g., "3+ hard bounces = escalate"), 25-min pre-flight checklist (Gist creation, template field population), total execution time 3.5–4 hours
+   - ✅ **DOMAIN_49_CONTINGENCY_DECISION_TREE.md** — 8 named scenarios with exact numeric triggers (delivery failure, emergency court action, coalition pushback, filing deadline closure, late start, Domain 49↔50 swap, full deferral, resource overrun), escalation paths for each
+   - ✅ **COALITION_COORDINATION_PROTOCOL.md** — 17-org contact table (Tier 1 litigation, Tier 2 coalition, Tier 3 policy, Tier 4 state) with email/phone/Twitter, decision authority matrix, Discord templates, Day 7 data capture format
+   - **Files**: projects/resistance-research/{DOMAIN_49_EXECUTION_PREFLIGHT.md, DOMAIN_49_CONTINGENCY_DECISION_TREE.md, COALITION_COORDINATION_PROTOCOL.md}
+   - **Source verification**: All 17 contacts verified against Louisiana v. Callais litigation orgs + NAACP LDF + Democracy Docket primary sources
+   - **Readiness**: Ready for instant activation upon user approval of Domain 49
+
+2. **Alpaca Data Feed Activation Runbooks** (20:14–21:15 UTC, stockbot subagent):
+   - ✅ **ALPACA_IEX_FEED_ACTIVATION_RUNBOOK.md** — 5-step IEX free feed activation (env var, docker restart, verification via correct grep patterns, signal quality audit, rollback), 5 min execution time, Green/Red success criteria
+   - ✅ **ALPACA_SIP_SUBSCRIPTION_UPGRADE_RUNBOOK.md** — 5-step SIP subscription path (account check → auto-upgrade vs manual approval, conditional polling, verification, rollback), 5–20 min execution time
+   - ✅ **DATA_FEED_ACTIVATION_DECISION_TREE.md** — Router for user phrase ("IEX", "SIP", "decide for me") → execution section, includes cost/quality trade-off recommendation, all contingency branches (API timeout, Docker crash, port conflict, OOM) → parseable output
+   - **Files**: projects/stockbot/{ALPACA_IEX_FEED_ACTIVATION_RUNBOOK.md, ALPACA_SIP_SUBSCRIPTION_UPGRADE_RUNBOOK.md, DATA_FEED_ACTIVATION_DECISION_TREE.md}
+   - **Defect fixes**: Corrected 4 critical issues from prior runbook versions:
+     1. Log patterns: verified actual strings in realtime_stream.py (lines 85, 94, 118) — replaced fabricated "WebSocket connected" with `grep -E 'started .* stream|starting .* websocket'`
+     2. API endpoint: removed non-existent `/v2/user/subscriptions` endpoint; replaced with container restart + 409 error detection
+     3. Rollback: changed from interactive `nano` editor to single `sed` one-liner (no-manual-steps compliance)
+     4. Header names: fixed Alpaca API key header to `APCA-API-KEY-ID` / `APCA-API-SECRET-KEY` pair
+   - **Readiness**: Ready for instant activation upon user choice (IEX or SIP) by EOD today
+
+3. **Pre-Flight Status Assessment** (21:00–21:15 UTC):
+   - All 4 user decisions (Domain 49, stockbot Alpaca feed, systems-resilience platform, seedwarden track) now have complete execution runbooks ready
+   - Domain 49 and Alpaca feed runbooks have explicit EOD June 3 deadline (CRITICAL — 3h 45m window at session start)
+   - No additional autonomous work available (correct by design; all work is decision-gated)
+   - All materials are production-ready and require zero additional orchestrator prep upon user approval
+
+**Token Usage**: ~218k tokens (parallel subagent execution: 147k resistance-research + 71k stockbot)
+
+**Critical Blockers Resolved**: NONE (work was pre-flight setup, not blocking anything)
+
+**Next Steps**:
+- **IMMEDIATE (by 23:59 UTC today)**: User provides decisions on 4 items (any order):
+  1. Domain 49: Approve June 4–5 execution or defer
+  2. Alpaca feed: Choose IEX or SIP
+  3. systems-resilience: Choose Nextcloud+Matrix or Discourse
+  4. seedwarden: Choose Track A or B or Both
+- **Upon each decision**: Orchestrator executes corresponding runbook immediately (5 min to 18 hours)
+- **June 4 morning**: If Domain 49 approved, execute DOMAIN_49_EXECUTION_PREFLIGHT.md at 08:00 UTC
+- **June 4 onwards**: If Alpaca decision made, execute DATA_FEED_ACTIVATION_DECISION_TREE.md within 5 minutes
+
+**Notes**:
+- Pre-flight runbooks are self-contained (no user interaction needed beyond initial decision)
+- All execution timelines and contingency paths are fully detailed
+- No additional discovery or prep work remains for any of the 4 decision paths
+- System is correctly positioned for immediate execution upon user input
+
+---
+
 ## Session 2713 (2026-06-03 18:09–18:45 UTC — Orchestrator: Final Orientation & Verification)
 
 **Status**: ✅ COMPLETE
