@@ -20,6 +20,7 @@ from __future__ import annotations
 import logging
 
 from fastapi import APIRouter, Depends, HTTPException, Request
+from starlette.responses import Response
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -85,11 +86,11 @@ async def _get_generator(db: AsyncSession, base_url: str) -> OPDSGenerator:
     return generator
 
 
-@router.get("/root.xml", response_class="text/xml")
+@router.get("/root.xml")
 async def get_root_catalog(
     request: Request,
     db: AsyncSession = Depends(get_db),
-) -> bytes:
+) -> Response:
     """
     GET /opds/v2/root.xml — OPDS root navigation catalog.
 
@@ -110,14 +111,14 @@ async def get_root_catalog(
     if errors:
         logger.error(f"OPDS validation failed: {errors}")
 
-    return xml_bytes
+    return Response(content=xml_bytes, media_type=MIME_OPDS_NAV)
 
 
-@router.get("/entries", response_class="text/xml")
+@router.get("/entries")
 async def get_entries_feed(
     request: Request,
     db: AsyncSession = Depends(get_db),
-) -> bytes:
+) -> Response:
     """
     GET /opds/v2/entries — OPDS acquisition feed listing all ZIM exports.
 
@@ -139,15 +140,15 @@ async def get_entries_feed(
     if errors:
         logger.error(f"OPDS validation failed: {errors}")
 
-    return xml_bytes
+    return Response(content=xml_bytes, media_type=MIME_OPDS_ACQ)
 
 
-@router.get("/entry/{entry_uuid}", response_class="text/xml")
+@router.get("/entry/{entry_uuid}")
 async def get_single_entry(
     entry_uuid: str,
     request: Request,
     db: AsyncSession = Depends(get_db),
-) -> bytes:
+) -> Response:
     """
     GET /opds/v2/entry/{uuid} — Single entry with full version history.
 
@@ -169,14 +170,14 @@ async def get_single_entry(
     if xml_bytes is None:
         raise HTTPException(status_code=404, detail=f"Entry {entry_uuid} not found")
 
-    return xml_bytes
+    return Response(content=xml_bytes, media_type=MIME_OPDS_ACQ)
 
 
-@router.get("/searchdescription.xml", response_class="text/xml")
+@router.get("/searchdescription.xml")
 async def get_search_description(
     request: Request,
     db: AsyncSession = Depends(get_db),
-) -> bytes:
+) -> Response:
     """
     GET /opds/v2/searchdescription.xml — OpenSearch description for catalog search.
 
@@ -190,4 +191,4 @@ async def get_search_description(
     generator = await _get_generator(db, base_url)
     xml_bytes = generator.generate_search_description()
 
-    return xml_bytes
+    return Response(content=xml_bytes, media_type=MIME_OPENSEARCH)
