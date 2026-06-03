@@ -27,19 +27,24 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — CRITICAL: Alpaca WebSocket data feed subscription required (blocks realtime trading signals)
+### stockbot — Alpaca WebSocket data feed subscription choice required
 **Date blocked**: 2026-06-03 05:55 UTC (Session 2652 — orchestrator pre-market discovery)
-**Date verified**: 2026-06-03 07:46 UTC (Session 2665)
-**Date escalated**: 2026-06-03 13:05 UTC (Session 2694 — Jetson unreachable, SSH timeout)
-**Date investigated**: 2026-06-03 13:30 UTC (Session 2696 — Jetson now reachable; root cause identified)
-**Root cause analysis (Session 2696 investigation)**:
-1. **Credential Configuration Issue (RESOLVED)**: The .env file incorrectly had both `ALPACA_API_KEY=PKM03F5PK1LPV8LSBIP0` (duplicating the API key ID) and `ALPACA_SECRET_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`. Fixed by removing the incorrect `ALPACA_API_KEY` line. 
-2. **HTTP API Authentication (VERIFIED WORKING)**: HTTP requests to Alpaca API succeed with correct credentials. Account status shows: ACTIVE, buying_power=$440,477, trading_blocked=false, pattern_day_trader=true.
-3. **WebSocket 409 Error (ROOT CAUSE IDENTIFIED)**: The code 409 "insufficient subscription" error is specifically a **data feed subscription issue**, NOT a credential issue. Current configuration uses `ALPACA_DATA_FEED=sip` (Securities Information Processor), which requires a paid Alpaca subscription tier.
-4. **Trading Impact**: HTTP API works (order execution possible), but realtime WebSocket stream fails (no live price data for signals). Container gracefully reconnects every 10s but cannot establish authenticated stream with SIP data feed.
-**What I need**: User must either (1) Upgrade Alpaca paper trading account to include SIP data feed subscription (requires Alpaca account action), OR (2) Switch to included free data feed by changing ALPACA_DATA_FEED environment variable from "sip" to "iex" or another available feed, then restart container. **Decision needed by EOD today (June 3 23:59 UTC)**.
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=10 2>&1 | grep -i 'insufficient\|websocket\|authenticated'"` — should show successful stream authentication once data feed subscription is resolved
-**Resolution**: [leave blank — Awaiting user decision: upgrade Alpaca subscription OR switch to free data feed]
+**Date credential issue resolved**: 2026-06-03 21:55 UTC (Session 2709 — orchestrator: fixed environment variable naming, env_file loading, Docker rebuild)
+**Root cause analysis & resolution (Session 2696-2709)**:
+1. **Credential Configuration Issue (✅ RESOLVED)**: Variable naming mismatch and missing env_file loading. Fixes applied:
+   - Updated `.env`: renamed `ALPACA_API_KEY` → `ALPACA_API_KEY_ID`
+   - Updated `docker-compose.yml`: (a) added `env_file: .env` directive (CRITICAL), (b) changed ref from `ALPACA_API_KEY` → `ALPACA_API_KEY_ID`
+   - Updated `config/default_config.yaml`: changed reference from `ALPACA_API_KEY` → `ALPACA_API_KEY_ID`
+   - Updated `src/trading/order_executor.py`: added fallback check for `ALPACA_API_KEY_ID` in environment resolution
+   - Synced all files to Jetson; Docker rebuilt; container restarted; **Alpaca broker now initializes successfully** ✅
+2. **HTTP API Authentication (VERIFIED WORKING)**: Account healthy: ACTIVE, buying_power=$440,477, trading_blocked=false, pattern_day_trader=true.
+3. **WebSocket 409 Error (ROOT CAUSE IDENTIFIED — STILL BLOCKING SIGNALS)**: Code 409 "insufficient subscription" is a **data feed subscription issue**, NOT a credential issue. Current config uses `ALPACA_DATA_FEED=sip` (Securities Information Processor), which requires paid Alpaca subscription tier. Docker logs show successful broker initialization; realtime signal stream will fail on SIP subscribe attempt during market hours.
+4. **Trading Impact**: HTTP API works (order execution possible); realtime WebSocket stream will fail unless data feed subscription is resolved.
+**What I need**: User must choose ONE (deadline EOD today, 2026-06-03 23:59 UTC):
+   - **(A) Upgrade**: Pay for Alpaca SIP subscription ($0+ tier, contact sales@alpaca.markets for paper-trading tier options)
+   - **(B) Switch to free IEX**: Set `ALPACA_DATA_FEED=iex` in .env on Jetson (5-min fix: edit file + container restart)
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=20 2>&1 | grep -i 'insufficient\|websocket\|authenticated'"` — will show stream auth success after user choice is implemented
+**Resolution**: [credential issue resolved; awaiting user data-feed decision]
 
 ---
 
