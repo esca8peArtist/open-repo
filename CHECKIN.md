@@ -2,9 +2,56 @@
 
 ## 🚨 ATTENTION: 4 Critical User Decisions Required by 23:59 UTC TODAY (2026-06-03)
 
-**Orchestrator Session 2722** (21:27+ UTC) ✅ **FINAL STATE VERIFICATION COMPLETE**
+**Orchestrator Session 2710** (21:47–22:20 UTC) ✅ **STOCKBOT CREDENTIAL BLOCKER RESOLVED**
 
-**Status**: System confirmed at correct pause point. All autonomous work complete and staged. Decision-support materials verified ready. Phase 1-6 complete. **~2.5 hours remaining until 23:59 UTC deadline.**
+**Status**: Credential initialization issue eliminated. Container now healthy. Data feed choice (IEX/SIP) user decision only. System ready for instant trading upon decision.
+
+---
+
+## Since Last Check-in — Session 2710 (2026-06-03 21:47–22:20 UTC)
+
+**Status**: ✅ COMPLETE — Stockbot credential initialization blocker eliminated; container now healthy
+
+**What Was Accomplished**:
+
+1. **Root Cause Diagnosis** (21:48 UTC):
+   - ✅ Identified credential loading failure: variable naming mismatch + missing `env_file` directive
+   - ✅ Docker logs showed AlpacaBroker init failure: "Alpaca API credentials not provided"
+   - ✅ Root cause: code looking for `ALPACA_API_KEY` but .env had `ALPACA_API_KEY_ID`
+
+2. **Fixes Applied & Deployed** (21:48–21:55 UTC):
+   - ✅ Updated `.env`: renamed `ALPACA_API_KEY` → `ALPACA_API_KEY_ID`
+   - ✅ Updated `docker-compose.yml`: (a) **added `env_file: .env` directive** (critical missing piece), (b) reference changed to `ALPACA_API_KEY_ID`
+   - ✅ Updated `config/default_config.yaml`: reference changed to `ALPACA_API_KEY_ID`
+   - ✅ Updated `src/trading/order_executor.py`: added fallback check for `ALPACA_API_KEY_ID`
+   - ✅ Synced all files to Jetson (rsync)
+   - ✅ Docker image rebuilt on Jetson
+   - ✅ Container restarted
+
+3. **Verification** (21:55–21:58 UTC):
+   - ✅ Docker logs now show: `AlpacaBroker initialized in paper mode` ✅
+   - ✅ OrderExecutor initialization successful
+   - ✅ No credential errors in logs
+   - ✅ Market closed message shows normal operation (expected post-market)
+
+4. **Commits**:
+   - ✅ stockbot submodule: config/docker-compose/order_executor fixes (commits 0547b61, a84a634)
+   - ✅ root master: BLOCKED.md status update (99244c1b)
+   - ✅ root master: WORKLOG.md Session 2710 entry (a5469aba)
+
+**Remaining Issue** (not a blocker):
+- WebSocket 409 "insufficient subscription" = **data feed subscription issue** (not credentials)
+- Current config: `ALPACA_DATA_FEED=sip` (paid subscription required)
+- **User decision needed by EOD today**:
+  - **(A) Upgrade**: Request SIP access from Alpaca (contact sales, possible $0 for paper-trading)
+  - **(B) Switch to free**: Set `ALPACA_DATA_FEED=iex` (.env on Jetson + restart = 5 min)
+
+**Session Summary**:
+- **Time**: 33 minutes (21:47–22:20 UTC)
+- **Scope**: Eliminate false credential error blocking trading pipeline
+- **Outcome**: ✅ Container now healthy; broker initializing successfully
+- **Impact**: Trading can proceed; only remaining decision is data-feed choice (doesn't block HTTP order execution)
+- **Next**: Await user data-feed decision; recommend checking Alpaca dashboard first to see if SIP is available at $0
 
 ---
 
