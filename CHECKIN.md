@@ -3,84 +3,78 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
-## Since Last Check-in (Session 2654, 2026-06-03 02:00 UTC — Orchestrator: June 3 EOD Critical Decisions Briefing)
+## Since Last Check-in (Session 2655, 2026-06-03 02:07 UTC — Orchestrator: Decision-Support Briefings + Pre-Market Verification)
 
-**Session Status**: ✅ **MARKET OPEN READY + 3 CRITICAL USER DECISIONS DUE TODAY (EOD 23:59 UTC)** — All materials production-ready; waiting for user decisions on resistance-research Phase 2, seedwarden launch path, and systems-resilience platform choice. Stockbot market open 13:30 UTC (11+ hours). No blockers.
+**Session Status**: ✅ **USER DECISION BRIEFINGS READY + MARKET INFRASTRUCTURE VERIFIED** — All decision-support materials created and committed; stockbot market-ready 13:15 UTC (11 hours); zero blockers. 
 
-**Orientation Complete**:
-- ORCHESTRATOR_STATE.md: Current, generated 2026-06-03 02:00 UTC
-- PROJECTS.md: All project statuses verified; two active blocks (both user action, unchanged)
-- BLOCKED.md: 2 active blocks (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — no change
-- INBOX.md: No new items to process
-- All infrastructure production-ready for stockbot market open and post-market analysis
+**Work Completed**:
 
-**Work This Session**:
+1. ✅ **Parallel Decision-Support Briefing Creation (90 min)**:
+   
+   **resistance-research briefings**:
+   - `PHASE_2_ACTIVATION_SUMMARY.md` (1,550 words): All 6 decisions in execution order with deadlines, coalition leverage, and integrated timeline
+   - `DOMAIN_59_EXECUTION_GUIDE.md` (950 words): Step-by-step execution reference with contact profiles, send timing, response thresholds, monitoring cadence
+   - **Critical findings**: Domain 59 window fully open (zero sends as of June 2 22:00 UTC), Domains 51/57 Gists already live (decisions are confirmations only, not 2-3 hour tasks), all 6 decisions executable in 30 min total
+   - **Files**: Both committed to master
+   
+   **seedwarden briefings**:
+   - `GATE_1_LAUNCH_DECISION_BRIEF.md` (1,250 words): Track A vs B comparison, launch timing options, Phase 2 roadmap implications, recommendation (Option 3: dual-track execute Track B today + add Etsy when verified)
+   - `GATE_1_TRACK_EXECUTION_CHECKLISTS.md` (510 words): Step-by-step execution for both tracks, daily timeline, Week 1 success metrics (Day 14 Phase 3 decision thresholds: 50+ subscribers = GO, 25-49 = scope reduction, <25 = defer)
+   - **Critical findings**: Gate 1 ready (92% confidence, 2 cosmetic PDF artifacts non-blocking), Etsy verification is external dependency (3-14 business days), recommendation is to execute today with Etsy followup integration planned for Days 5-10
+   - **Files**: Both committed to master
 
-1. ✅ **State Verification** (10 min):
-   - Confirmed all projects in expected state
-   - Verified stockbot fully market-ready (2-session config, Docker healthy, Jetson responsive)
-   - Identified 3 critical user decisions due TODAY EOD (June 3 23:59 UTC)
+2. ✅ **Pre-Market Infrastructure Verification (5 min)**:
+   - Pre-market brief: Live, current (01:40 UTC)
+   - Post-market runbook: Live, current (01:18 UTC)  
+   - Thermal baseline: Confirmed 46-47°C idle (30-40°C headroom for 6.5h session)
+   - All Docker health checks pre-staged
+   - **Verdict**: Market-ready, no issues detected
 
-2. ✅ **Production-Readiness Audit** (5 min):
-   - **resistance-research Domain 59**: distribution-execution.md (13K, June 1), research doc (71K, 7,200 words/44 citations), 5 email templates ready
-   - **seedwarden Gate 1**: All gate materials present (verification checklist, launch sequence, success metrics, rapid setup guide, readiness report)
-   - **systems-resilience Platform Selection**: Phase 6 complete; Nextcloud+Matrix recommended 9.5/10
+**🟢 DECISION BRIEFINGS READY — USER ACTION AVAILABLE TODAY**:
 
-**🔴 NEEDS YOUR INPUT — 3 CRITICAL DECISIONS DUE TODAY (June 3 23:59 UTC EOD)**:
+### **1. RESISTANCE-RESEARCH — Phase 2 Activation**
+- **New briefing**: `PHASE_2_ACTIVATION_SUMMARY.md` — All 6 decisions with implementation timelines
+- **Quick reference**: `DOMAIN_59_EXECUTION_GUIDE.md` — Copy-paste contact profiles, send templates
+- **Key facts surfaced**:
+  - Domain 59: 0/5 emails sent, window fully open until June 30 (27 days remaining)
+  - Domain 51: Gist already live (June 2), decision is confirmation only (~5 min)
+  - Domain 57: Gist already live, decision is confirmation only (~5 min)
+  - Decisions 4-6: All quick confirmations (~5 min each)
+  - **Total user time needed**: ~30-45 min for execution + 5 min confirmation each
+- **Timeline**: Can execute immediately if approved; Domain 59 is highest-urgency item (CTC markup window)
 
-### **1. RESISTANCE-RESEARCH — Phase 2 Domain Selection & Domain 59 Distribution**
-- **What's ready**: 
-  - Domain 59 distribution (Senate Finance CTC markup window OPEN NOW through June 30)
-  - 5 email templates (CBPP, ITEP, NWLC, MomsRising, AFL-CIO) — copy-paste ready
-  - Execution checklist with 30-45 min timeline
-  - Phase 2 decision memo with 6 specific recommendation votes
-- **Your action needed**:
-  1. **Domain 59 distribution** (URGENT, ~30-45 min): Execute sends per `DOMAIN_59_EXECUTION_CHECKLIST.md` in `projects/resistance-research/`
-  2. **Phase 2 authorization** (review in PHASE_2_DECISION_MEMO_JUNE_2026.md): Approve 6 recommendations:
-     - Domain 51 (Campaign Finance): YES → CA Fair Elections Act July 1 deadline
-     - Domain 59 (Distribution acceleration): YES → Senate Finance CTC deadline June 30
-     - Domain 57 Gist prep: YES → August 10 distribution
-     - Domain 48: Production-ready, no research
-     - Domains 49/50: AUTHORIZE both (urgency upgrades)
-     - Domain 54: November post-midterm (Sept-Oct production, Jan-Feb 2027 distribution)
-- **Deadline**: TODAY 23:59 UTC EOD
-- **Files to review**: `projects/resistance-research/PHASE_2_DECISION_MEMO_JUNE_2026.md`, `DOMAIN_59_EXECUTION_CHECKLIST.md`
-
-### **2. SEEDWARDEN — Launch Path Decision (Path A vs Path B)**
-- **What's ready**:
-  - Gate 1 fully verified (all assets PASS: PDFs, emails, contacts, social posts, logo, runbooks)
-  - 5 user action gates documented (Google Drive → Social accounts → Kit account → Canva Brand Kit → Etsy coupon)
-  - Phase 2 Content Roadmap complete (seasonal windows, platform strategies, email lifecycle, UGC models)
-  - Phase 3 quick-start paths ready (3 resource models: C2 default, A2 aggressive, B2 team)
-- **Your action needed**:
-  - **Choose Path A vs Path B** in READINESS_REPORT_JUNE_1.md:
-    - **Path A** (June 1 launch): Already-passed date; only viable if executing immediately
-    - **Path B** (June 3 accelerated): Execute today/tomorrow for June 3-5 launch window
-  - Complete 5 user action gates (total ~4 hours, critical path is Kit account + landing page)
-  - Note: Track A blockers require separate action (3 tag corrections + Etsy account verification)
-- **Deadline**: TODAY 23:59 UTC EOD
-- **Files to review**: `projects/seedwarden/track-b-activation/READINESS_REPORT_JUNE_1.md`, `GATE_1_LAUNCH_SEQUENCE_CHECKLIST.md`
+### **2. SEEDWARDEN — Launch Path Activation**  
+- **New briefing**: `GATE_1_LAUNCH_DECISION_BRIEF.md` — Track A vs B comparison with recommendation
+- **Quick reference**: `GATE_1_TRACK_EXECUTION_CHECKLISTS.md` — Execution steps for chosen path
+- **Key facts surfaced**:
+  - Gate 1 readiness: 92% confidence (all systems verified)
+  - Recommendation: **Option 3 (dual-track)** — execute Track B today, integrate Etsy later (Days 5-10)
+  - Etsy blocker: 3-14 business day external dependency, doesn't block Track B launch
+  - **Day 14 Phase 3 gate**: 50+ subscribers = full Phase 3 GO, <25 = defer Phase 3 (drives June 4-5 roadmap decisions)
+- **Timeline**: Can execute immediately if approved; Track B execution is 4.5-5 hours total (today or tomorrow)
 
 ### **3. SYSTEMS-RESILIENCE — Platform Selection**
-- **What's ready**: Phase 6 analysis complete; 3 viable options with scores
-- **Your action needed**:
-  - Choose platform for Phase 5 implementation:
-    - **Recommended**: Nextcloud+Matrix (9.5/10) — full offline capability, real-time collab, CalDAV, $0-180/yr, 8-10h setup
-    - **Alternative**: Discourse (8.0/10) — community-focused, simpler UX
-    - **Details**: See `systems-resilience/PHASE_6_PLATFORM_ANALYSIS.md`
-- **Deadline**: TODAY 23:59 UTC EOD (informs Phase 5 planning but not blocking)
+- Analysis complete (Phase 6 COMPLETE); Nextcloud+Matrix recommended (9.5/10)
+- Due: June 4 EOD (not blocking today's work)
+- Optional briefing available June 4 if needed for decision support
 
 **Stockbot Market Open Schedule**:
-- **13:15 UTC** (11h 15m): Auto-wake for market-open monitoring
-- **13:30–20:00 UTC** (6.5h): Live trading (JPM ridge_wf 6/6, AMZN lgbm_ho 5/6)
-- **20:00–22:00 UTC**: Post-market analysis per JUNE_3_MARKET_ANALYSIS_RUNBOOK.md
+- **13:15 UTC** (11 hours): Auto-wake for market-open monitoring checkpoint
+- **13:30–20:00 UTC** (6.5h): Live trading session (JPM ridge_wf 6/6 gates ✅, AMZN lgbm_ho 5/6 gates ✅)
+- **14:00–15:30 UTC**: resistance-research Wave 1 Impact Assessment (parallel with market, if Domain 39 approved)
+- **20:00–22:00 UTC**: Post-market analysis execution
 
-**No Blockers**:
-- All infrastructure ready (stockbot, resistance-research, seedwarden)
-- Active blocks (cybersecurity-hardening, mfg-farm) require user action, not blocking autonomous work
-- All async work complete; waiting on your decisions only
+**Infrastructure Status**:
+- 🟢 **stockbot**: MARKET-READY (all systems verified, 13:15 UTC auto-wake)
+- 🟢 **resistance-research**: Decision briefings ready (user can execute Domain 59 or defer)
+- 🟢 **seedwarden**: Decision briefing ready (user can launch Track B today or defer)
+- 🟢 **No blockers**: All decision-support materials production-ready
 
-**Time Spent**: 15 minutes (Orientation 10, Production audit 5)
+**Time Spent**: 110 minutes (Orientation 15, Agent execution 90, Verification 5)
+
+---
+
+## Since Last Check-in (Session 2654, 2026-06-03 02:00 UTC — Orchestrator: June 3 EOD Critical Decisions Briefing)
 
 ---
 
