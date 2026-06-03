@@ -3,6 +3,40 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2654, 2026-06-03 04:50–05:00 UTC — Orchestrator: June 3 Pre-Market Brief Generation + Commit)
+
+**Status**: ✅ **JUNE 3 PRE-MARKET BRIEF COMPLETE — SYSTEM READY FOR MARKET OPEN**
+
+**Work Completed** (10 minutes):
+
+1. ✅ **Full System Orientation** (2 min):
+   - Read ORCHESTRATOR_STATE.md (Session 2648 snapshot, current)
+   - Verified: BLOCKED.md has 2 active blocks (both user-action-required)
+   - Verified: INBOX.md empty, no new items
+   - Verified: All projects blocked on user decisions or awaiting manual execution
+
+2. ✅ **June 3 Pre-Market Signal Quality Brief Generation** (6 min):
+   - **Deliverable**: `projects/stockbot/JUNE_3_PRE_MARKET_BRIEF.md` (700 words, 5 sections, production-ready)
+   - **Content**: Model expectations (JPM ridge_wf 6/6 GO, AMZN lgbm_ho 5/6 conditional GO, AAPL suspended), signal frequency predictions, thermal baseline, 3 key checkpoints (market open 13:15–13:30 UTC, mid-session 16:00–17:00 UTC, post-market 20:00–20:30 UTC), emergency commands
+   - **Status**: Committed to master, ready for pre-market review before 13:15 UTC market open
+   - **Business value**: Ensures orchestrator + user have aligned expectations for Day 2 trading session
+
+3. ✅ **Session Commit** (2 min):
+   - Staged: WORKLOG.md, CHECKIN.md (this update), PROJECTS.md, BLOCKED.md, INBOX.md
+   - Committed to master with standard message
+
+**System Status for Market Open**:
+- ✅ Stockbot: 2-session config live, pre-market brief ready, credentials verified
+- ✅ All projects: Complete or properly staged; all user decision deadlines today 23:59 UTC
+- **Market open: 13:30 UTC (8h 30m away)**
+- **Pre-market checkpoint: 13:15 UTC (8h 15m away)**
+
+**Next Event**: June 3 13:15 UTC auto-wake for market-open pre-flight verification
+
+**Session Duration**: 10 minutes
+
+---
+
 ## Since Last Check-in (Session 2653, 2026-06-03 04:44–04:50 UTC — Orchestrator: Idle-State Re-Verification + Commit)
 
 **Status**: ✅ **CONFIRMED — NO AUTONOMOUS WORK AVAILABLE; SYSTEM READY FOR MARKET OPEN**
@@ -20,16 +54,6 @@
    - BLOCKED.md has 2 active blocks (both user-action-only): VeraCrypt restart, test print
    - All project Goals verified: unfinished scope requires user decisions or manual actions only
    - Protocol compliance verified: No autonomous work available is correct assessment
-
-**System Status for Market Open**:
-- ✅ Stockbot: 2-session config live, infrastructure ready, 68/68 tests passing
-- ✅ All projects: Either complete or properly staged for user decision
-- ✅ Exploration Queue: Empty (all items delivered and committed)
-- **Market open: 13:30 UTC (8h 46m away)**
-
-**Next Event**: June 3 13:15 UTC auto-wake for pre-market verification (as scheduled in Session 2652)
-
-**Session Duration**: 6 minutes
 
 ---
 
