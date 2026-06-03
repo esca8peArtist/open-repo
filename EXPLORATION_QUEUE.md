@@ -87,34 +87,27 @@
 **Owner**: systems-resilience subagent
 **Deadline**: June 14 (ready for June 15 Wave 2 activation immediately post-Wave-1)
 
-### 55. ⏳ resistance-research — Domain 49 June 4-5 Execution Pre-Flight Checklist (Session 2707)
-**Context**: Domain 49 (Louisiana redistricting / VRA voting rights) has critical June 4-5 execution window (primary filing deadlines hard cutoff after June 4-5). User decision required by EOD June 3. If approved, orchestrator must execute June 4-5 with zero delays. Pre-flight checklist preparation NOW enables instant activation upon approval.
-**Scope**: Create detailed day-by-day execution checklist for June 4-5 launch:
-  - Contact sequencing timeline (who to reach when, priority tiers)
-  - Email/phone/in-person mix optimization (based on PHASE_2_BATCH_2_ACTIVATION_ROADMAP analysis)
-  - Coalition coordination (NAACP LDF + Democracy Docket + 12 regional contacts)
-  - Contingency paths if execution delayed (June 5 late start, Domain 49 → Domain 50 swap, resource reallocation)
-  - Monitoring checkpoints (Day 1 contact success rate target, Day 2 coalition engagement target)
-  - Escalation triggers (if initial outreach <50% response by EOD June 4, activate contingency)
-**Deliverables**:
-  - `DOMAIN_49_EXECUTION_PREFLIGHT.md` (hour-by-hour June 4 timeline, contact list ordering, template email variants)
-  - `DOMAIN_49_CONTINGENCY_DECISION_TREE.md` (if-then logic for response rates, delays, coalition feedback)
-  - `COALITION_COORDINATION_PROTOCOL.md` (multi-org sync procedures, escalation chain, decision authority)
-**Owner**: resistance-research subagent
-**Deadline**: June 3 23:00 UTC (ready for immediate execution if user approves by 23:59 UTC)
+### 55. ✅ resistance-research — Domain 49 June 4-5 Execution Pre-Flight Checklist (Session 2711 COMPLETE)
+**Status**: Completed June 3 (Session 2711, 22:15–22:40 UTC). All three deliverables production-ready.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `DOMAIN_49_EXECUTION_PREFLIGHT.md` — Hour-by-hour June 4 timeline, 7 send blocks (08:00-21:00 UTC), contact ordering by tier, quantitative Day 1/2/7 success thresholds, 5 escalation triggers with backup actions, 3.5–4h total execution estimate
+  - ✅ `DOMAIN_49_CONTINGENCY_DECISION_TREE.md` — 8 named scenarios (A-H) with numeric trigger thresholds; Scenario D captures Democracy Docket finding that litigation window likely closed; IMMEDIATE RESPONSE auto-triggered + USER DECISION escalation templates
+  - ✅ `COALITION_COORDINATION_PROTOCOL.md` — Full contact table (17 orgs, email/phone/Twitter), 48-hour escalation chain, Discord/Slack templates, Day 7 assessment data capture framework
+**User pre-flight actions** (25–30 min): Create GitHub Gist, fill template placeholders, stage email drafts
+**Owner**: resistance-research subagent (Session 2711)
+**Status**: ✅ PRODUCTION-READY for June 4 execution upon user approval
+**Deadline**: June 3 ✅ COMPLETE
 
-### 56. ⏳ stockbot — Data Feed Implementation Runbooks (Session 2707)
-**Context**: User must choose between (1) SIP subscription upgrade or (2) IEX free feed by EOD June 3. Both options are viable and require <5 minutes implementation once decision made. Pre-flight runbooks NOW enable instant activation upon decision.
-**Scope**: Create parallel implementation runbooks for both data feed paths:
-  - **IEX Path**: Environment variable change (ALPACA_DATA_FEED=iex), Docker container restart, verification steps (should see WebSocket authenticated messages in logs within 30 seconds)
-  - **SIP Path**: Alpaca account upgrade instructions (if-then logic: if account auto-upgrades, restart Docker; if manual approval required, polling check); restart verification; success criteria
-  - Both paths: Post-activation signal quality audit (sample 10 signal ticks, verify tick timestamps < 100ms old)
-**Deliverables**:
-  - `ALPACA_IEX_FEED_ACTIVATION_RUNBOOK.md` (5-step implementation, verification, rollback)
-  - `ALPACA_SIP_SUBSCRIPTION_UPGRADE_RUNBOOK.md` (account check → upgrade path → Docker restart → signal audit)
-  - `DATA_FEED_ACTIVATION_DECISION_TREE.md` (auto-decision logic based on user input, verification timeouts, escalation)
-**Owner**: stockbot subagent
-**Deadline**: June 3 23:00 UTC (ready for immediate execution if user decides by 23:59 UTC)
+### 56. ✅ stockbot — Data Feed Implementation Runbooks (Session 2711 COMPLETE)
+**Status**: Completed June 3 (Session 2711, 22:15–22:40 UTC). All three runbooks verified against source code and production-ready.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `ALPACA_IEX_FEED_ACTIVATION_RUNBOOK.md` — 5 steps: single-command env var swap, container restart, WebSocket auth verification (log grep <30s), signal audit, rollback. Zero Alpaca changes required. <2 min total.
+  - ✅ `ALPACA_SIP_SUBSCRIPTION_UPGRADE_RUNBOOK.md` — 5 steps: credential check, manual dashboard action (paper SIP free, live SIP $50-99/mo), polling script with auto-restart (60s intervals, 15-min timeout), rollback to IEX. ~10 min total.
+  - ✅ `DATA_FEED_ACTIVATION_DECISION_TREE.md` — Routes user input to correct section (IEX/SIP/auto-decide/diagnostics), outputs GREEN/RED for orchestrator parsing
+**Key verified facts**: IEX is safe fallback (default in source code). Both paths verified against realtime_stream.py. SIP paper trading cost is $0.
+**Owner**: stockbot subagent (Session 2711)
+**Status**: ✅ PRODUCTION-READY for immediate execution upon user decision
+**Deadline**: June 3 ✅ COMPLETE
 
 ### 57. ⏳ resistance-research — Phase 2 Batch 2 Full Activation Roadmap (Post-Decision-Gate)
 **Context**: User decision on Domain 49 timing (approve/defer) expected by EOD June 3. Once decided, full Batch 2 execution roadmap can be locked. Pre-scope now to enable instant activation June 4+.
