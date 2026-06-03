@@ -1,5 +1,45 @@
 # Work Log
 
+## Session 2719 (2026-06-03 20:46–21:15 UTC — Orchestrator: Exploration Queue Research + Decision Support)
+
+**Status**: ✅ COMPLETE — Two critical research items delivered in parallel
+
+**Work Completed**:
+
+1. **stockbot: IEX vs SIP Data Feed Signal Quality Analysis** (20:46–21:05 UTC, general-research subagent):
+   - ✅ **IEX_VS_SIP_SIGNAL_COMPARISON.md** (3,200 words, 17 citations) — Complete empirical analysis
+   - **Key finding**: IEX is viable for paper trading validation of h10 model (daily resolution, AAPL-focused)
+   - **Rationale**: (1) h10 operates on daily OHLCV bars with 10-day holding period → insensitive to intraday coverage gaps, (2) AAPL liquidity → IEX closing prices match consolidated tape, technicals accurate, (3) paper trading validates system integrity not final alpha → IEX real-time sufficient
+   - **SIP upgrade gate**: necessary only for live capital deployment or when expanding to illiquid names / intraday features
+   - **Recommendation**: Use IEX for paper trading ($0 cost); defer SIP subscription to live trading. Defer SIP cost saves $99/month until deployment decision.
+   - **Critical caveat**: must use `feed=iex` consistently for both historical training data and live feed (no train-SIP / live-IEX mismatch)
+   - **Impact**: User can now decide confidently whether to upgrade Alpaca subscription today or defer until live trading
+
+2. **seedwarden: Phase 1→2 Readiness Gap Analysis** (20:46–21:10 UTC, general-research subagent):
+   - ✅ **PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md** (4,200 words, 3 sections) — Complete production timeline & capacity analysis
+   - **Key finding**: Phase 2 can launch June 22 if Phase 1 launches by June 5 AND Day 14 gate shows 25+ subscribers + 15%+ email open rate
+   - **Timeline sensitivity**: Every day of Phase 1 delay shifts all Phase 2 dates by 1 day; Respiratory bundle loses seasonal (cold/flu) timing if uploaded after late July
+   - **Binding constraint**: Writing (36–44 hrs for Option C / 3 bundles); not platform capacity or supply chain
+   - **Platform capacity**: Kit Creator upgrade needed ($25–33/mo) for herbalist automation; no other conflicts
+   - **Decision timeline**: 3 decisions due before June 22 sprint start: (1) Phase 2 scope (default C), (2) Kit Creator upgrade, (3) Etsy verification confirmation
+   - **Impact**: User now has concrete metric thresholds for Phase 2 approval and realistic production timeline
+
+3. **Exploration Queue Updates**:
+   - ✅ Marked "stockbot: IEX vs SIP Data Feed Signal Quality Analysis" COMPLETE
+   - ✅ Marked "seedwarden: Phase 1→2 Readiness Gap Analysis" COMPLETE
+   - Remaining active queue items: 2 pending items (Domain 59 research, stockbot post-deployment); 15+ complete/contingent items
+
+**Session Summary**:
+- **Decision support**: Both research items delivered actionable findings for the EOD user decisions
+- **Token usage**: ~165k (49k stockbot research + 117k seedwarden research)
+- **Outcome**: Removed two pending exploration items; strengthened user's information position for imminent decisions
+
+**Next steps**: Await user decisions (deadline 23:59 UTC). Upon each decision, orchestrator executes pre-staged runbooks (5 min to 4 hours per scope).
+
+**Notes**: Research confirms that both critical decisions have viable paths with clear cost/benefit trade-offs. IEX saves $99/month pending live trading; Phase 2 timeline is achievable with realistic 36–44 hour writing commitment.
+
+---
+
 ## Session 2717 (2026-06-03 20:39–20:50 UTC — Orchestrator: Autonomous Work Assessment & Final State Verification)
 
 **Status**: ✅ COMPLETE — Zero autonomous scope confirmed (expected state). System ready for user decision activation.

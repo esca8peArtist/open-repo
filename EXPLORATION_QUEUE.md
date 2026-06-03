@@ -116,6 +116,50 @@
 **Owner**: stockbot subagent
 **Deadline**: June 3 23:00 UTC (ready for immediate execution if user decides by 23:59 UTC)
 
+### 57. ⏳ resistance-research — Phase 2 Batch 2 Full Activation Roadmap (Post-Decision-Gate)
+**Context**: User decision on Domain 49 timing (approve/defer) expected by EOD June 3. Once decided, full Batch 2 execution roadmap can be locked. Pre-scope now to enable instant activation June 4+.
+**Scope**: Design comprehensive Batch 2 resource allocation and sequencing plan for all 6 domains (49-51, 54, 57, 48):
+  - Timeline contingencies: What if Domain 49 approved (June 4-5 execution)? What if deferred? Parallel execution scenarios with domain blocks
+  - Resource allocation: Estimating research agent hours vs. user action hours (email sends, Gist creation, contact verification)
+  - Contingency activation triggers: If Domain 49 shows strong engagement, accelerate Domain 50-51; if weak, shift to Phase 2 research-first pathway
+  - June 15 checkpoint readiness: What Phase 2 signal data should inform June 15 resource allocation decisions?
+**Deliverables**:
+  - `BATCH_2_RESOURCE_ALLOCATION_MATRIX.md` (hour estimates by domain, parallel execution scenarios, bottleneck analysis)
+  - `BATCH_2_CONTINGENCY_ACTIVATION_SCENARIOS.md` (3-4 scenarios: Approved(fast), Approved(normal), Deferred, Research-first)
+  - `BATCH_2_JUNE_CHECKPOINT_READINESS_PROTOCOL.md` (June 8/15 checkpoint criteria, decision gates, next-phase triggers)
+**Owner**: resistance-research subagent
+**Deadline**: June 4 (ready for June 4+ activation once user decides)
+
+### 58. ⏳ stockbot — Post-Data-Feed-Fix Market Execution Runbook (June 4-10)
+**Context**: User will choose IEX or SIP feed by EOD June 3 (5-10 min implementation June 4). Once data feed is operational, comprehensive market execution plan needed for June 4-10 trading window.
+**Scope**: Design full market execution protocol for the first week post-data-feed-fix:
+  - **Signal quality audit**: Post-activation, sample 10 signal ticks per session; verify timestamp freshness, latency distribution, gap detection
+  - **Risk management**: Position limits, margin utilization targets, per-session/per-day drawdown caps during ramp-up
+  - **Backtest triggers**: Under what signal conditions should we pause trading and run offline backtests? (e.g., if win rate drops below 52%, if fill rate < 70% expected, if Sharpe < 0.8)
+  - **Go/No-Go decision tree**: June 5-6 intermediate checkpoints; Day 7 (June 10) go/no-go for continued expansion
+  - **Contingency escalation**: If data feed fails or authentication drops, what's the fallback? (Revert to paper trading? Switch feeds? Pause sessions?)
+**Deliverables**:
+  - `MARKET_EXECUTION_WEEK_1_RUNBOOK.md` (hour-by-hour guidance June 4-10, decision gates, signal quality audit checklist)
+  - `SIGNAL_QUALITY_AUDIT_FRAMEWORK.md` (latency thresholds, gap detection rules, remediation procedures)
+  - `JUNE_4_10_GO_NO_GO_DECISION_TEMPLATE.md` (metrics dashboard, Day 2/4/7 checkpoints, pass/caution/fail thresholds)
+**Owner**: stockbot subagent
+**Deadline**: June 4 evening (ready for June 5 market open use)
+
+### 59. ⏳ systems-resilience — Platform-Agnostic Phase 5 Publication & Wave 2 Author Onboarding (June 5-15)
+**Context**: User will choose platform (Nextcloud+Matrix or Discourse) by EOD June 3, but author onboarding and publication workflow can be pre-scoped platform-agnostically now. Design executable June 5-15 roadmap regardless of platform choice.
+**Scope**: Design comprehensive June 5-15 execution plan that works for both platform options:
+  - **Phase 5.1 publication readiness**: Final content checks, metadata tagging, asset organization (platform-agnostic steps)
+  - **Wave 2 author recruitment & onboarding**: Communication templates, credential verification, platform-specific orientation (template both platforms)
+  - **Publication workflow**: Pre-publication (asset import, access control setup), publication day (notifications, announcement strategy), post-publication (monitoring, engagement metrics)
+  - **Contingency for platform delays**: If chosen platform setup takes longer than expected (June 5-10), what Phase 5 publication steps can proceed offline or with manual workarounds?
+  - **Wave 1 → Wave 2 transition protocol**: Author feedback loops, publication readiness gates, Wave 2 content refresh requirements
+**Deliverables**:
+  - `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` (platform-agnostic content and technical pre-launch steps)
+  - `WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md` (communication templates, orientation guides for both Nextcloud+Matrix and Discourse)
+  - `JUNE_5_15_PHASE_5_PUBLICATION_AND_WAVE_2_RECRUITMENT_TIMELINE.md` (day-by-day roadmap, platform-specific branches, contingency paths)
+**Owner**: systems-resilience subagent
+**Deadline**: June 5 morning (ready for June 5+ activation once platform decision made)
+
 ## Completed Items (Session 2482 added above; prior sections below)
 
 ## Active Items (Session 1452+)
@@ -800,6 +844,28 @@
 - **Owner**: general-research subagent (Session 2478)
 - **Status**: PRODUCTION-READY for June 1 user domain decision → immediate June 1-2 Phase 6 activation (any combo selected)
 - **Commit**: aa1f4708 (Session 2466, confirmed in 2478)
+
+### 60. ✅ stockbot — IEX vs SIP Data Feed Signal Quality Analysis (Session 2719 COMPLETE)
+**Status**: Completed June 3 (Session 2719, 20:46–21:05 UTC). All research delivered.
+**Deliverable**: `IEX_VS_SIP_SIGNAL_COMPARISON.md` (3,200 words, 17 citations)
+**Key finding**: IEX is viable for paper trading validation of h10 model (daily resolution, AAPL-focused). Paper trading validates system integrity, not final alpha. SIP upgrade only necessary for live capital deployment or when expanding to illiquid names/intraday features.
+**Recommendation**: Use IEX for paper trading ($0 cost); defer SIP subscription ($99/month) to live trading deployment.
+**Critical caveat**: Must use `feed=iex` consistently for both historical training data and live feed (no train-SIP / live-IEX mismatch).
+**Impact**: User can now decide confidently whether to upgrade Alpaca subscription today (user decision deadline EOD June 3).
+**Owner**: general-research subagent
+**Status**: COMPLETE, findings support user decision on Alpaca feed choice by 23:59 UTC June 3.
+
+### 61. ✅ seedwarden — Phase 1→2 Readiness Gap Analysis (Session 2719 COMPLETE)
+**Status**: Completed June 3 (Session 2719, 20:46–21:10 UTC). All research delivered.
+**Deliverable**: `PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md` (4,200 words, comprehensive 3-section analysis)
+**Key finding**: Phase 2 can launch June 22 if Phase 1 launches by June 5 AND Day 14 gate shows 25+ subscribers + 15%+ email open rate.
+**Timeline sensitivity**: Every day of Phase 1 delay shifts all Phase 2 dates by 1 day; Respiratory bundle loses seasonal (cold/flu) timing if uploaded after late July.
+**Binding constraint**: Writing (36–44 hrs for Option C / 3 bundles); platform capacity and supply chain are not constraints.
+**Platform capacity**: Kit Creator upgrade needed ($25–33/mo) for herbalist automation; no other conflicts.
+**Decision timeline**: 3 decisions due before June 22 sprint start: (1) Phase 2 scope (default C), (2) Kit Creator upgrade, (3) Etsy verification confirmation.
+**Impact**: User now has concrete metric thresholds for Phase 2 approval and realistic production timeline.
+**Owner**: general-research subagent
+**Status**: COMPLETE, findings support user decision on Phase 2 viability by 23:59 UTC June 3.
 
 ---
 

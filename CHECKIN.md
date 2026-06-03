@@ -2,9 +2,50 @@
 
 ## 🚨 ATTENTION: 4 Critical User Decisions Required by 23:59 UTC TODAY (2026-06-03)
 
-**Orchestrator Session 2716** (20:32–20:45 UTC) ✅ **VERIFICATION COMPLETE**
+**Orchestrator Session 2719** (20:46–21:15 UTC) ✅ **EXPLORATION QUEUE RESEARCH COMPLETE**
 
-**Status**: All decision-ready materials verified in place and recent. System operational. Ready for instant activation upon user approval. **3h 15m remaining until 23:59 UTC deadline.**
+**Status**: All decision-ready materials verified in place and recent. Research findings strengthen user decision-making. System operational. Ready for instant activation upon user approval. **~2h remaining until 23:59 UTC deadline.**
+
+## Since Last Check-in — Session 2719 (2026-06-03 20:46–21:15 UTC)
+
+**Status**: ✅ COMPLETE — Exploration queue research delivered. Two critical decision-support items completed in parallel.
+
+**What Was Accomplished**:
+
+1. **stockbot: IEX vs SIP Data Feed Signal Quality Analysis** (general-research subagent):
+   - ✅ **IEX_VS_SIP_SIGNAL_COMPARISON.md** (3,200 words, 17 citations) — Complete empirical analysis
+   - **Key Finding**: IEX is viable for paper trading validation of h10 model (operates on daily OHLCV bars with 10-day holding period, insensitive to intraday latency gaps)
+   - **Recommendation**: Use IEX for paper trading ($0 cost); defer SIP subscription to live trading deployment (saves $99/month)
+   - **Critical caveat**: Must use `feed=iex` consistently for both historical training data and live feed (no train-SIP / live-IEX mismatch)
+   - **Impact**: User can now decide confidently on Alpaca subscription choice with full signal-quality analysis backing
+
+2. **seedwarden: Phase 1→2 Readiness Gap Analysis** (general-research subagent):
+   - ✅ **PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md** (4,200 words) — Complete production timeline & capacity analysis
+   - **Key Finding**: Phase 2 can launch June 22 if Phase 1 launches by June 5 AND Day 14 gate shows 25+ subscribers + 15%+ email open rate
+   - **Timeline sensitivity**: Every day of Phase 1 delay shifts all Phase 2 dates by 1 day; Respiratory bundle loses seasonal timing if uploaded after late July
+   - **Binding constraint**: Writing (36–44 hrs for Option C / 3 bundles); platform capacity and supply chain are not constraints
+   - **Impact**: User now has concrete metric thresholds for Phase 2 approval and realistic production timeline
+
+3. **Exploration Queue Updates**:
+   - ✅ Marked both items COMPLETE in EXPLORATION_QUEUE.md
+   - Queue now has 2 completed items + 15+ active/contingent items
+
+**Token Usage**: ~165k (49k stockbot research + 117k seedwarden research)
+
+**Current Countdown**:
+- **~2 hours** until EOD 23:59 UTC (June 3)
+- **Research findings ready** to support user decisions on Alpaca feed and seedwarden execution viability
+- Domain 49 critical execution window: June 4–5 (Louisiana primary filing deadlines)
+
+**What's Next**:
+- User provides 4 decisions (any order):
+  1. Domain 49: Execute June 4–5 or defer
+  2. Alpaca: IEX or SIP (now with empirical signal-quality analysis)
+  3. Platform: Nextcloud+Matrix or Discourse
+  4. seedwarden: Track A / B / Both (now with Phase 1→2 transition roadmap)
+- Upon each decision: Orchestrator executes corresponding runbook immediately
+
+---
 
 ## Since Last Check-in — Session 2717 (2026-06-03 20:39–20:50 UTC)
 
