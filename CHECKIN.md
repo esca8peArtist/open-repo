@@ -1,5 +1,70 @@
 # Check-In Report
 
+## Current Status — Session 2679 (2026-06-03 10:16–10:30 UTC)
+
+**Time Until Key Events**:
+- ⏰ **13:15 UTC** (2h 45m): CRITICAL — Alpaca credential fix deadline before market open
+- ⏰ **13:30 UTC** (3h): Market opens; trading resumes if credentials fixed
+- ⏰ **20:00 UTC** (9h 30m): Post-market analysis (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
+- ⏰ **23:59 UTC** (13h 30m): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
+
+**Status**: 🟢 **STANDING BY** — All autonomous work complete. Pruned stale focus lines. Credential blocker unresolved (still 2 Docker auth failures). All decision-gated work staged for user activation.
+
+**Critical Blocker Status**: 🔴 STILL ACTIVE — Alpaca credentials misconfigured (ALPACA_API_KEY_ID = ALPACA_API_KEY, both `PKM03F5PK1LPV8LSBIP0`). Verification command still returns 2 failures. **Deadline 13:15 UTC for trading window.**
+
+---
+
+## Since Last Check-in (Session 2679 — 2026-06-03 10:16–10:30 UTC) — Stale Focus Pruning, Standby Confirmed
+
+### Summary
+**Session objective**: Morning orientation per protocol; verify critical blocker; assess autonomous work. **Result**: (1) **Critical blocker re-verified STILL ACTIVE** (2 Docker failures, unchanged since Session 2677). (2) **Pruned stale focus lines** for stockbot (Session 2652 ref removed) and systems-resilience (Session 2649 ref removed). (3) **All autonomous Phase 1-6 work confirmed complete** — no additional scope available without user decisions. (4) **All INBOX items processed** — no new items pending. (5) **System status**: STANDBY MODE. All preparation complete; awaiting credential fix or user decisions by 23:59 UTC.
+
+### What Was Accomplished
+
+✅ **Protocol-Compliant Orientation** (3 min):
+   - Verified ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md consistent
+   - Found: No new INBOX items (all processed from Session 2678)
+   - Confirmed: All orchestration files in sync
+
+✅ **Stale Focus Line Pruning** (2 min):
+   - Pruned stockbot focus (Session 2652 reference removed; critical blocker status preserved)
+   - Pruned systems-resilience focus (Session 2649 reference removed; platform decision status current)
+   - Both lines now current and <5 sentences; easier to scan
+
+✅ **Critical Block Verification** (1 min):
+   - Confirmation: Block still ACTIVE (2 Docker auth failures, unchanged)
+   - Deadline: 13:15 UTC (3h 45m remaining from Session 2678; 2h 45m now)
+
+### Autonomous Work Assessment
+**Per protocol** — All Phase 1-6 deliverables CONFIRMED COMPLETE. Remaining scope requires user decisions:
+- ✅ All Phase 1-6 autonomous work: DONE (committed in Sessions 2675-2678)
+- ✅ All exploration queue items: STAGED (6 decision-gated, others time-gated)
+- 🟡 Resistance-Research Phase 2: Awaiting user domain approval
+- 🟡 Seedwarden Phase 2: Awaiting Track A/B decision
+- 🟡 Systems-Resilience Phase 5: Awaiting platform selection
+- 🔴 Stockbot: BLOCKED (credential fix required)
+- 🔴 Cybersecurity-Hardening: BLOCKED (user Windows restart required)
+- 🔴 Mfg-Farm: BLOCKED (user test print required)
+
+**Decision**: STANDBY MODE activated. No new autonomous work available this session. System ready for:
+1. Credential fix → trading resumes at 13:30 UTC
+2. Post-market runbook execution at 20:00 UTC (if trading executed)
+3. User decisions by 23:59 UTC → Phase 2/seedwarden/systems-resilience activation
+
+### Next Steps for User
+
+**URGENT (by 13:15 UTC)**:
+- Fix Alpaca credentials: Update `/opt/stockbot/.env` on Jetson (ALPACA_API_KEY_ID ≠ ALPACA_API_KEY)
+- Restart Docker container after credential update
+
+**IMPORTANT (by 23:59 UTC)**:
+1. Approve Domain 59 Senate Finance dispatch? (Execution-ready, 30–45 min user time)
+2. Choose seedwarden track: Track A (45 min setup) or Track B (3.5–4.5h setup)?
+3. Select Phase 2 domains for resistance-research (Domain 51/48/57/49-50/54)
+4. Pick systems-resilience platform: Nextcloud+Matrix or Discourse?
+
+---
+
 ## Current Status — Session 2678 (2026-06-03 10:30 UTC)
 
 **Time Until Key Events**:
