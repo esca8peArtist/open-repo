@@ -1,5 +1,27 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2692 (2026-06-03 12:37–14:10 UTC)
+
+**What Happened**:
+- ✅ **Exploration Queue Execution Completed** — All 3 parallel research agents completed critical user-decision-support research
+- ✅ **mfg-farm Scaling Strategy COMPLETE** — `PRODUCTION_FARM_SCALING_STRATEGY.md` (48K) with unit economics, laser ROI, facility constraints, 12-month demand-gated sequence
+- ✅ **seedwarden Track B Checklist COMPLETE** — `TRACK_B_EXECUTION_CHECKLIST.md` (26K) with 5-gate execution plan, timeline analysis (June 5 launch preserves 3-day Phase 3 margin)
+- ✅ **systems-resilience Phase 7 Pilot COMPLETE** — `PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md` (36K) with governance pilot design, 80-150 person community sizing, platform decision consequences
+- ✅ **PROJECTS.md Updated** — All 3 project focus lines now include research findings and decision points
+
+**What's Ready** (for user decisions by 23:59 UTC today):
+- **mfg-farm**: Test print execution readiness assessed; launch timeline optimized
+- **seedwarden**: Track A (June 1) vs Track B (June 5) vs BOTH decision framework complete
+- **systems-resilience**: Nextcloud+Matrix (9.5/10) vs Discourse (8.0/10) decision framework complete
+
+**Time-Critical Actions Required**:
+- 🔴 **BY 13:15 UTC (if not passed)**: Fix Alpaca credentials on Jetson (see section below)
+- 🟡 **BY 23:59 UTC (10h 49m from 14:10 UTC)**: User decisions on all three critical paths (mfg-farm/seedwarden/systems-resilience)
+
+**Autonomous Work Status**: ✅ **ZERO AUTONOMOUS WORK REMAINING** — All Phase 1-7 deliverables production-ready. No further work available without: (1) Alpaca credential fix, (2) user decisions on the three critical paths
+
+---
+
 ## Current Status — Session 2690 (2026-06-03 12:17–12:20 UTC) — CRITICAL DEADLINE 58 MINUTES; STANDBY MODE
 
 **Time Until Key Events**:
