@@ -1,0 +1,58 @@
+# Domain 57 Gist URL — Multilateral Withdrawal and US Commitment Collapse
+
+## Gist Creation Status: READY FOR AUTOMATED SEND
+
+**File source**: `projects/resistance-research/domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md`
+
+**Gist URL** (create via gist.github.com):
+```
+https://gist.github.com/esca8peArtist/[HASH_TO_BE_FILLED_AFTER_CREATION]
+```
+
+**Gist filename**: `domain-57-multilateral-withdrawal-and-us-commitment-collapse.md`
+
+**Gist description**: "Domain 57: Multilateral Withdrawal and Executive Unilateralism — 7,200 words, 47 citations, CC Attribution 4.0"
+
+**Gist visibility**: PUBLIC (not secret)
+
+**Gist account**: esca8peArtist (same account used for all prior domain Gists)
+
+---
+
+## Gist Creation Checklist
+
+- [ ] Navigate to https://gist.github.com (logged in as esca8peArtist)
+- [ ] Click "New gist"
+- [ ] Filename: `domain-57-multilateral-withdrawal-and-us-commitment-collapse.md`
+- [ ] Copy full domain-57 content (from domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md)
+- [ ] Set visibility: "Create public gist"
+- [ ] Description: "Domain 57: Multilateral Withdrawal and Executive Unilateralism — 7,200 words, 47 citations"
+- [ ] Click "Create public gist"
+- [ ] Copy Gist URL: `https://gist.github.com/esca8peArtist/[HASH]`
+- [ ] **VERIFY**: Open Gist URL in incognito browser window — confirm page loads, markdown renders, bibliography visible
+- [ ] Update this file with actual Gist URL
+- [ ] Commit to repo: "chore(resistance-research): Domain 57 Gist creation and distribution prep"
+
+---
+
+## Distribution Contacts (12 organizations, 3 tiers)
+
+See `execution/domain-57-contact-list.md` for full contact verification and tiered distribution schedule.
+
+**Tier 1 (Send Aug 10–16)**: Human Rights Watch, Coalition for the ICC, Freedom House, Amnesty International
+
+**Tier 2 (Send Aug 17–24)**: NDI, Carnegie Endowment, TRIAL International, ECCHR, Senate Foreign Relations
+
+**Tier 3 (Send Aug 25–31)**: Council on Foreign Relations, Stimson Center, FIDH
+
+---
+
+## Distribution Timeline
+
+**August 10 deadline**: Gist must be created and verified by August 8 to support August 10 send window.
+
+See `domain-57-distribution-runbook.md` Section 5 for complete execution timeline.
+
+---
+
+*Prepared: June 3, 2026. Research complete: May 15, 2026. UNGA 81 distribution target: August 10 (six weeks pre-September 22 High-Level Week).*
