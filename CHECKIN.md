@@ -1,6 +1,6 @@
 # Check-In Report
 
-## Current Status — Session 2677 (2026-06-03 10:00–10:15 UTC)
+## Current Status — Session 2678 (2026-06-03 10:30 UTC)
 
 **Time Until Key Events**:
 - ⏰ **13:15 UTC** (3h 15m): CRITICAL — User should fix Alpaca credentials before market open
@@ -76,6 +76,70 @@
    - Species guide writing (6–7h autonomous work) unblocked after either choice
 3. **Phase 2 Domain Selection** (awaiting research approval): Which domains (51/48/57/49-50/54)? Estimated 50–90h per domain
 4. **Systems-Resilience Platform** (awaiting review): Nextcloud+Matrix (9.5/10) or Discourse (8.0/10)?
+
+---
+
+## Since Last Check-in (Session 2677–2678 — 2026-06-03 09:36–10:30 UTC) — Autonomy Assessment + Standby Mode Activated
+
+### Summary
+**Session objective**: Morning orientation; verify critical block status; assess remaining autonomous work. **Result**: (1) **Critical blocker re-verified STILL ACTIVE** (2 Docker auth failures; unchanged since Session 2665 07:46 UTC; 3h 45m to deadline). (2) **All Phase 1-6 autonomous deliverables confirmed complete and staged**. (3) **Exploration Queue verified populated with 54 items** (6 decision-gated, all others time-gated or contingency). (4) **No additional autonomous work available** — all remaining scope requires user input (Phase 2 domains, seedwarden Track, systems-resilience platform). (5) **System status**: STANDBY MODE — awaiting credential fix (critical path) or post-market-close analysis execution (20:00 UTC).
+
+### What Was Accomplished
+✅ **Protocol-Compliant Orientation** (10 min):
+   - Verified ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, WORKLOG.md, PROJECTS.md consistent
+   - Confirmed: All 54 exploration queue items populated; 6 decision-gated; no new inbox items
+   - Finding: All autonomous Phase 1-6 work complete from Sessions 2675-2676
+
+✅ **Critical Block Re-Verification** (2 min):
+   - Ran: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` → **2**
+   - **Status**: CONFIRMED STILL ACTIVE (2 failures, unchanged since Session 2665 07:46 UTC)
+   - Root cause: ALPACA_API_KEY_ID and ALPACA_API_KEY both set to `PKM03F5PK1LPV8LSBIP0` (should differ)
+   - **Deadline**: 13:15 UTC (3h 45m remaining; critical path for trading execution)
+
+✅ **Autonomy Assessment per Protocol** (15 min):
+   - Re-read project Goals: All Phase 1-6 deliverables verified complete (per PROJECTS.md, BLOCKED.md resolved items)
+   - Checked Exploration Queue: 54 items confirmed populated (Items 1-54, with 6 actively queued)
+   - Analysis: All remaining work requires external input:
+     - Credential fix (user SSH action, critical path)
+     - Domain 59 dispatch (user authorization + field fills, 30-45 min work)
+     - Phase 2 domain selection (user decision, research work blocked until chosen)
+     - Seedwarden Track A/B (user decision, species writing blocked until chosen)
+     - Systems-resilience platform (user decision, Wave 1/2 architecture blocked until chosen)
+     - Market results monitoring (automated at 13:30 UTC, analysis at 20:00 UTC)
+
+### Immediate Timeline (Next 14 Hours)
+
+| Time | Event | Autonomy |
+|------|-------|----------|
+| **NOW** | Standing by for user actions (credentials, decisions) | Blocked |
+| **13:15 UTC** (3h 45m) | CRITICAL: User must fix credentials or trading today fails | User action |
+| **13:30 UTC** (3h) | Market open; JPM + AMZN sessions auto-wake if credentials fixed | Automated if fixed |
+| **20:00 UTC** (9h 30m) | Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready) | Orchestrator automation |
+| **23:59 UTC** (13h 30m) | User decision deadline for Phase 2 domains, seedwarden Track, platform | User decision |
+
+### Work Available Today (Post-Market, 20:00–23:59 UTC)
+
+1. **Post-Market Analysis** (20:00–22:00 UTC, ~2h):
+   - Execute JUNE_3_MARKET_ANALYSIS_RUNBOOK.md (9 sections, decision tree embedded)
+   - Query Alpaca for June 3 fills, calculate P&L, audit signals
+   - Generate markdown report + JSON metrics
+   - Identify anomalies and next-session contingencies
+   - **Status**: Framework complete, execution-ready
+
+2. **User Decision Support** (22:00–23:59 UTC, ~2h if needed):
+   - Clarify user questions on Phase 2 domains (if indecision exists)
+   - Prepare Domain 59 dispatch execution checklist (if user approves)
+   - Prepare seedwarden species writing outline (if Track chosen)
+   - **Status**: All materials staged, decision-gated
+
+### Critical Path — No Change From Session 2676
+
+🔴 **URGENT — Alpaca Credentials (3h 45m until 13:15 UTC)**:
+- Current: ALPACA_API_KEY_ID = ALPACA_API_KEY = `PKM03F5PK1LPV8LSBIP0` (WRONG)
+- Required: Different values (ALPACA_API_KEY_ID = key ID, ALPACA_API_KEY = secret key)
+- Action: SSH to Jetson, update /opt/stockbot/.env, restart Docker container
+- Verification: `docker logs stockbot | grep insufficient` should return 0
+- Impact: If not fixed by 13:15 UTC → zero trades at 13:30 UTC market open
 
 ---
 
