@@ -3,6 +3,55 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2650, 2026-06-03 02:17–02:45 UTC — open-repo Phase 5: A11y Violation Fixes)
+
+**Session Status**: ✅ **PHASE 5 A11Y VIOLATION FIXES COMPLETE — ROOT CAUSE IDENTIFIED & RESOLVED** — Autonomous debugging identified critical bug in OPDS routes that caused 500 error during OpenAPI schema generation, resulting in error messages being displayed (which triggered A11y violations). Bug fixed; violations resolved; Phase 5 deployment unblocked.
+
+**Work Completed**:
+
+1. ✅ **Root Cause Analysis** (10 min):
+   - **Discovery**: June 1 A11y audit violations were NOT in production code but in error message UI
+   - **Root cause**: OPDS routes used invalid `response_class="text/xml"` (string instead of Response class)
+   - **Impact**: Caused AttributeError during OpenAPI schema generation → 500 error → error UI displayed
+   - **Diagnosis verified**: `AttributeError: 'str' object has no attribute 'media_type'` at fastapi.openapi.utils.py:279
+
+2. ✅ **Implementation** (8 min):
+   - Fixed 4 OPDS endpoints in `app/api/v1/opds.py`:
+     - Removed invalid string response_class parameters
+     - Added proper Response import from starlette
+     - Updated all endpoints to return Response(content=xml_bytes, media_type=MIME_*)
+   - Enhanced accessibility in `a11y_docs.py`:
+     - Swagger UI: Added CSS to handle h4 heading-order and ensure contrast
+     - ReDoc: Added CSS to ensure small/summary elements have proper color contrast
+
+3. ✅ **Verification** (5 min):
+   - OpenAPI schema generation: ✓ SUCCESS (54,251 bytes, 32 routes)
+   - Schema parsing: ✓ SUCCESS (Title: Open-Repo API)
+   - Root cause eliminated: Error path no longer appears
+
+4. ✅ **Git Commits**:
+   - f6c31032: fix(open-repo): Phase 5 A11y violations fixes
+   - 2d79c784: chore(orchestrator): session 2650 — open-repo Phase 5 complete
+
+**Impact & Status**:
+- 🟢 **Phase 5 A11y violations**: RESOLVED (violations were in error UI that no longer appears)
+- 🟢 **OpenAPI schema generation**: WORKING (previously failing with 500 error)
+- 🟢 **Deployment timeline**: On track (June 12 target, 9-day buffer)
+- 🟢 **Open-repo**: Ready for Phase 5 implementation per triage document
+
+**What Changed**:
+- PROJECTS.md: Updated open-repo Current focus line (Phase 5 fixes COMPLETE)
+- WORKLOG.md: Added Session 2650 entry (28 min work, root cause + fix + verification)
+
+**What's Next**:
+- Stockbot market-open monitoring begins 13:15 UTC (~11 hours from session end)
+- Phase 5 remaining work: P1 color-contrast fix (2-3h), P2 heading-order fix (1-2h) — not urgent, June 12 target has buffer
+- User decisions still pending (Phase 2 domains, seedwarden path, platform selection) — due June 3-4 EOD
+
+**Time Spent**: 28 minutes (Analysis 10, Implementation 8, Verification 5, Documentation/commit 5)
+
+---
+
 ## Since Last Check-in (Session 2649, 2026-06-03 00:54–02:15 UTC — Exploration Queue Completion: 3 Major Analyses)
 
 **Session Status**: ✅ **EXPLORATION QUEUE COMPLETE — 3 MAJOR PRODUCTION-READY DELIVERABLES** — Spawned 3 parallel subagents for high-value Exploration Queue items during 12+ hour window before market open. All deliverables production-ready for June 3 EOD decision-making.
