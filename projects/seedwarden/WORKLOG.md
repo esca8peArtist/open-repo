@@ -4,6 +4,98 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 2718 — Phase 2/3 Planning Roadmap (seedwarden-agent) — June 4, 2026
+
+**Task**: Design Phase 2 (July–December 2026) and early Phase 3 (January–March 2027) planning
+independent of Track A/B decision. Covers content map, practitioner tier progression (RH credential
+requirements, content gates, pricing), business model refinement (revenue projections, pricing
+elasticity, affiliate channels, international sequencing), Phase 3 botanical and specialist content,
+and constraint analysis (writing capacity, designer capacity, sourcing timeline).
+
+**Key findings grounded in project docs**:
+- Phase 2 guide count path: 18 (Phase 1) → 36–37 (August 2026, after Wave 2 ID guides) → 40–50
+  (December 2026, after Wave 3 bundles). Three production waves: June 22–July 13 (clinical bundles),
+  July 14–August 31 (18 botanical ID guides), October–November (immunity/digestive/skin bundles).
+- Tier 2 (RH) launch target: August 1, 2026. Credential requirements: AHG RH, NAHA Level 5, Herbal
+  Academy Advanced Certificate, or licensed practitioner with 30+ CE hours in botanical medicine.
+  Recommended pricing: $18/month / $165/year at launch; re-evaluate at 100 subscribers.
+- Tier 3 (Clinical Specialist) launch target: October 1, 2026 (International Traditions library
+  required before launch). Credential: ND, MD/DO (integrative), CNS, PhD, FNIMH/MNIMH.
+- Phase 2 Dec 2026 combined revenue run rate: $2,790–4,700/month (central estimate ~$3,500).
+- Phase 3 March 2027 combined run rate: $6,000–8,000/month subscription + Etsy + affiliate.
+- Total writing through March 2027: 191–264 hours — achievable solo at 1–2 hrs/day without a
+  second writer. Second writer hire threshold: $3,000+/month subscription revenue for 2 months
+  (expected November–December 2026).
+- Commission E abstraction (12 species) must be completed by July 31 for Tier 2 August 1 launch.
+  Sourcing proceeds in parallel with Phase 2 production; does not compete with writing sprint time.
+- International sequencing: Canada and Australia captured by existing infrastructure immediately.
+  Targeted EU outreach is a Phase 3 (January 2027) initiative.
+- ZIM integration: Phase 3 January–March botanical ID guides should be CC BY-SA 4.0, structured
+  for OpenZIM/Kiwix submission. ZIM version identical to Etsy guide; Etsy value-add is PDF format
+  and bundle context.
+- Diminishing returns point: approximately 200 Tier 2 subscribers and 50+ Etsy guides. Phase 4
+  expansion signal is Tier 3 subscriber credential mix (ND-dominant vs. researcher-dominant).
+
+**File produced**: `PHASE_2_PHASE_3_PLANNING_ROADMAP.md` v1.0 (~3,800 words, production-ready).
+
+---
+
+## Session — Phase 1 Launch Path Decision + Phase 2 Gating (research-agent) — June 3, 2026
+
+**Task**: Update PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md (v3.0) addressing Path A vs. Path B
+launch decision with numeric conversion projections, three explicit Phase 2 decision gates
+(subscriber count, engagement quality, revenue signal), Phase 2 content requirements before
+launch (seasonal calendar, Kit expansion, community builder timeline, supply chain),
+capacity assessment table (bandwidth/financial/supply chain at 1x and 2x scale), and
+complete IF/THEN decision matrix for Path A only, Path B only, and BOTH scenarios.
+
+**Key findings grounded in project docs**:
+- Path A central estimate: 15–20 Kit subscribers by Day 7 (YELLOW Phase 2 zone). Heavily
+  dependent on 2–3 of 13 DM contacts sharing publicly.
+- Path B central estimate: 30–40 Kit subscribers by Day 7 (GREEN achievable by Day 14).
+- BOTH path: highest probability of 50+ subscribers at Day 14 with no tradeoff — Path A
+  executes today in 1 hour; Path B gates complete in 24–48 hours.
+- Phase 2 digital supply chain has zero bottleneck at any realistic sales volume. Writing
+  pace is the sole irreversible constraint.
+- Kit Creator upgrade ($25–33/mo) required before June 22 for Phase 2 automation.
+- Etsy verification hold is the one unresolved blocker for Phase 2 uploads — must be
+  confirmed with Etsy support before June 22.
+- Community builder recruitment opens July 1 (30 days post-launch); AHG Symposium
+  outreach readiness requires Mentor named in listings by August 12.
+
+**File updated**: `PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md` v3.0 (supersedes v2.0
+readiness-gap analysis and v1.0 September-15 timeline). ~2,800 words, production-ready.
+
+---
+
+## Session — Phase 1-to-Phase 2 Transition Readiness-Gap Analysis (research-agent) — June 3, 2026
+
+**Task**: Produce PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md — readiness-gap analysis covering
+(1) Phase 1 success metrics and exact Phase 2 gate thresholds, (2) Phase 2 content production
+timeline by content type with effort estimates, (3) platform capacity analysis (Kit, Etsy, social)
+for concurrent Phase 1 + Phase 2 operation, (4) risk scenarios (slow uptake, fast scaling,
+supply chain constraints, timing conflict).
+
+**Findings**:
+- Phase 2 gate conditions fully documented in existing files: Day 14 checkpoint is the primary
+  go/no-go gate (50+ subscribers = GREEN; 25–49 = YELLOW reduced scope; under 25 = DEFER).
+- Phase 2 writing is the sole binding constraint: 36–44 hours for Option C (3-bundle solo).
+  Design, photography, Kit setup, and Etsy listing creation all have 3–14 days float.
+- Kit free tier's single automation slot is the only true platform conflict; Kit Creator upgrade
+  ($25–33/month) resolves it cleanly. Decision needed before June 22.
+- Etsy verification hold (Track A) is the one unresolved platform risk for Phase 2 — needs
+  confirmation that a pending verification does not block new digital download listing uploads.
+- Phase 1 launch date criticality: June 5 is the functional deadline to preserve any buffer
+  between the Day 14 data read and the June 22 sprint start. June 8+ eliminates the buffer entirely.
+- Three open decisions flagged: Phase 2 scope (A/B/C, default C2), Canva Phase 3 palette load
+  (June 21 hard deadline), Kit Creator upgrade (before June 22).
+
+**File produced/updated**:
+`PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md` v2.0 (supersedes v1.0 September-15 timeline,
+which is now obsolete given the June 22 sprint plan)
+
+---
+
 ## Session — Track B Execution Checklist v2 (seedwarden-agent) — June 3, 2026
 
 **Task**: Full research sweep of all Track B gate documentation to produce comprehensive
