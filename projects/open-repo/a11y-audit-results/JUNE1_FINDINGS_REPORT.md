@@ -1,54 +1,35 @@
 # Accessibility Audit Findings Report
 ## June 1, 2026 - Automated Scanning Phase
 
-**Audit Timestamp**: 2026-06-01T12:14:56.590717
+**Audit Timestamp**: 2026-06-03T01:57:42.095482
 **Base URL**: http://localhost:8000
 
 ## Executive Summary
 
-- **Total Violations Found**: 7
+- **Total Violations Found**: 2
 - **Violations by Severity**:
-  - Serious: 3
-  - Moderate: 4
+  - Serious: 1
+  - Moderate: 1
 
 ## Findings by Page
 
 ### Swagger UI (FastAPI /docs)
-**Total violations**: 3
+**Total violations**: 1
 
-#### SERIOUS Violations (1)
+#### MODERATE Violations (1)
 
-**1. html-has-lang**
-- **Description**: Ensure every HTML document has a lang attribute
-- **Impact**: serious
-- **Help**: <html> element must have a lang attribute
-- **WCAG Criteria**: wcag2a, wcag311
-- **Affected Elements**: 1
-  - html
-- **Recommended Fix**: https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=axeAPI
-
-#### MODERATE Violations (2)
-
-**1. landmark-one-main**
-- **Description**: Ensure the document has a main landmark
+**1. heading-order**
+- **Description**: Ensure the order of headings is semantically correct
 - **Impact**: moderate
-- **Help**: Document should have one main landmark
+- **Help**: Heading levels should only increase by one
 - **Affected Elements**: 1
-  - html
-- **Recommended Fix**: https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=axeAPI
-
-**2. page-has-heading-one**
-- **Description**: Ensure that the page, or at least one of its frames contains a level-one heading
-- **Impact**: moderate
-- **Help**: Page should contain a level-one heading
-- **Affected Elements**: 1
-  - html
-- **Recommended Fix**: https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=axeAPI
+  - .title
+- **Recommended Fix**: https://dequeuniversity.com/rules/axe/4.11/heading-order?application=axeAPI
 
 ### ReDoc (API documentation)
-**Total violations**: 4
+**Total violations**: 1
 
-#### SERIOUS Violations (2)
+#### SERIOUS Violations (1)
 
 **1. color-contrast**
 - **Description**: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
@@ -62,42 +43,10 @@
   - ... and 1 more
 - **Recommended Fix**: https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI
 
-**2. html-has-lang**
-- **Description**: Ensure every HTML document has a lang attribute
-- **Impact**: serious
-- **Help**: <html> element must have a lang attribute
-- **WCAG Criteria**: wcag2a, wcag311
-- **Affected Elements**: 1
-  - html
-- **Recommended Fix**: https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=axeAPI
-
-#### MODERATE Violations (2)
-
-**1. landmark-one-main**
-- **Description**: Ensure the document has a main landmark
-- **Impact**: moderate
-- **Help**: Document should have one main landmark
-- **Affected Elements**: 1
-  - html
-- **Recommended Fix**: https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=axeAPI
-
-**2. region**
-- **Description**: Ensure all page content is contained by landmarks
-- **Impact**: moderate
-- **Help**: All page content should be contained by landmarks
-- **Affected Elements**: 4
-  - h1
-  - small:nth-child(2)
-  - small:nth-child(4)
-  - ... and 1 more
-- **Recommended Fix**: https://dequeuniversity.com/rules/axe/4.11/region?application=axeAPI
-
 ## Pass/Fail Metrics by WCAG Criterion
 
 - WCAG143: 1 violations
-- WCAG2A: 2 violations
 - WCAG2AA: 1 violations
-- WCAG311: 2 violations
 
 ## Next Steps
 

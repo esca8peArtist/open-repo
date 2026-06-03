@@ -1,5 +1,30 @@
 # Open-Repo Project Worklog
 
+## Phase 6 Planning Memo — Decision-Ready Scoping (2026-06-03)
+
+**Completion Date**: 2026-06-03
+
+**Agent**: Claude Sonnet 4.6 (General Research Agent)
+
+**Objective**: Review Phases 1–5 arc and produce a decision-ready Phase 6 planning memo for the project owner. Deadline: same session.
+
+### File Produced
+
+- **`PHASE_6_PLANNING_MEMO.md`** (~1,450 words, production-ready)
+  - Reviewed: PHASE_6_ARCHITECTURE_OPTIONS.md, ITEM15_PHASE6_FEDERATION_ROADMAP.md, PHASE_5_ARCHITECTURE.md, phase-1-success-metrics.md, PHASE_3_DESIGN.md, PHASE_4_DESIGN.md, ORCHESTRATOR_STATE.md, a11y-audit-results/JUNE1_FINDINGS_REPORT.md, TRIAGE_CHECKLIST.md
+  - Lead finding: Phase 6 is expansion (not stabilization); SaaS Hosting MVP (Phase 6A) before Federated Network (Phase 6B) is the correct sequencing per both predecessor documents
+  - Scope: Phase 6A = 120 hours (July–October 2026, $100K ARR Year 1 target); Phase 6B = 160 hours (October 2026–March 2027)
+  - Decision deadline for user: June 30, 2026
+
+### Key Findings
+
+- Platform is deployment-ready post-Phase-5: zero P0 a11y violations, OPDS catalog functional, ZIM export operational, ActivityPub federation infrastructure in place
+- Two detailed Phase 6 design documents already existed (`ITEM15_PHASE6_FEDERATION_ROADMAP.md`, `PHASE_6_ARCHITECTURE_OPTIONS.md`) — memo synthesizes and sharpens them into a single decision document
+- Highest-leverage immediate action independent of Phase 6 option selection: Kiwix catalog listing submission (October 1 target; exposes platform to 10M+ Kiwix users at zero cost)
+- Four single-tenant assumptions flagged in Phase 5 codebase must be verified/fixed as first Phase 6A task (2–4 hours; already documented in architecture options analysis)
+
+---
+
 ## Phase 5.3 Federation Architecture Research — Deepening Pass (2026-05-27)
 
 **Completion Date**: 2026-05-27

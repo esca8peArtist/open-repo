@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-01T12:14:56.590717",
+  "timestamp": "2026-06-03T01:57:42.095482",
   "base_url": "http://localhost:8000",
   "scans": {
     "Swagger UI (FastAPI /docs)": {
@@ -8,112 +8,34 @@
       "status": "success",
       "violations": [
         {
-          "id": "html-has-lang",
-          "impact": "serious",
+          "id": "heading-order",
+          "impact": "moderate",
           "tags": [
-            "cat.language",
-            "wcag2a",
-            "wcag311",
-            "TTv5",
-            "TT11.a",
-            "EN-301-549",
-            "EN-9.3.1.1",
-            "ACT",
-            "RGAAv4",
-            "RGAA-8.3.1"
+            "cat.semantics",
+            "best-practice"
           ],
-          "description": "Ensure every HTML document has a lang attribute",
-          "help": "<html> element must have a lang attribute",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=axeAPI",
+          "description": "Ensure the order of headings is semantically correct",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=axeAPI",
           "nodes": [
             {
               "any": [
                 {
-                  "id": "has-lang",
-                  "data": {
-                    "messageKey": "noLang"
-                  },
+                  "id": "heading-order",
+                  "data": null,
                   "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "The <html> element does not have a lang attribute"
+                  "impact": "moderate",
+                  "message": "Heading order invalid"
                 }
               ],
               "all": [],
               "none": [],
-              "impact": "serious",
-              "html": "<html>",
-              "target": [
-                "html"
-              ],
-              "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
-            }
-          ],
-          "page": "Swagger UI (FastAPI /docs)",
-          "url": "http://localhost:8000/docs"
-        },
-        {
-          "id": "landmark-one-main",
-          "impact": "moderate",
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure the document has a main landmark",
-          "help": "Document should have one main landmark",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=axeAPI",
-          "nodes": [
-            {
-              "any": [],
-              "all": [
-                {
-                  "id": "page-has-main",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "moderate",
-                  "message": "Document does not have a main landmark"
-                }
-              ],
-              "none": [],
               "impact": "moderate",
-              "html": "<html>",
+              "html": "<h4 class=\"title\">Failed to load API definition.</h4>",
               "target": [
-                "html"
+                ".title"
               ],
-              "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
-            }
-          ],
-          "page": "Swagger UI (FastAPI /docs)",
-          "url": "http://localhost:8000/docs"
-        },
-        {
-          "id": "page-has-heading-one",
-          "impact": "moderate",
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
-          "help": "Page should contain a level-one heading",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=axeAPI",
-          "nodes": [
-            {
-              "any": [],
-              "all": [
-                {
-                  "id": "page-has-heading-one",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "moderate",
-                  "message": "Page must have a level-one heading"
-                }
-              ],
-              "none": [],
-              "impact": "moderate",
-              "html": "<html>",
-              "target": [
-                "html"
-              ],
-              "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+              "failureSummary": "Fix any of the following:\n  Heading order invalid"
             }
           ],
           "page": "Swagger UI (FastAPI /docs)",
@@ -160,6 +82,236 @@
           ]
         },
         {
+          "id": "button-name",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "ACT",
+            "RGAAv4",
+            "RGAA-11.9.1"
+          ],
+          "description": "Ensure buttons have discernible text",
+          "help": "Buttons must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "button-has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has inner text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button class=\"btn errors__clear-btn\">Hide</button>",
+              "target": [
+                "button"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": null,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "24.0pt (32px)",
+                    "fontWeight": "bold",
+                    "messageKey": null,
+                    "expectedContrastRatio": "3:1",
+                    "shadowColor": null,
+                    "colorParse": null
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h1>API Documentation</h1>",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#3b4151",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 10.18,
+                    "fontSize": "27.0pt (36px)",
+                    "fontWeight": "bold",
+                    "messageKey": null,
+                    "expectedContrastRatio": "3:1",
+                    "shadowColor": null,
+                    "colorParse": null
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 10.18"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4 class=\"title\">Failed to load API definition.</h4>",
+              "target": [
+                ".title"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#3b4151",
+                    "bgColor": "#feecec",
+                    "contrastRatio": 8.93,
+                    "fontSize": "15.0pt (20px)",
+                    "fontWeight": "bold",
+                    "messageKey": null,
+                    "expectedContrastRatio": "3:1",
+                    "shadowColor": null,
+                    "colorParse": null
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 8.93"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4 class=\"errors__title\">Errors</h4>",
+              "target": [
+                ".errors__title"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#3b4151",
+                    "bgColor": "#feecec",
+                    "contrastRatio": 8.93,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "bold",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1",
+                    "shadowColor": null,
+                    "colorParse": null
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 8.93"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button class=\"btn errors__clear-btn\">Hide</button>",
+              "target": [
+                "button"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#3b4151",
+                    "bgColor": "#feecec",
+                    "contrastRatio": 8.93,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1",
+                    "shadowColor": null,
+                    "colorParse": null
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 8.93"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4>Fetch error</h4>",
+              "target": [
+                ".error-wrapper > div > h4"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#3b4151",
+                    "bgColor": "#feecec",
+                    "contrastRatio": 8.93,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1",
+                    "shadowColor": null,
+                    "colorParse": null
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 8.93"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<span class=\"message thrown\">Internal Server Error /openapi.json</span>",
+              "target": [
+                "span"
+              ]
+            }
+          ]
+        },
+        {
           "id": "document-title",
           "impact": null,
           "tags": [
@@ -191,9 +343,402 @@
               "all": [],
               "none": [],
               "impact": null,
-              "html": "<html>",
+              "html": "<html lang=\"en\">",
               "target": [
                 "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "empty-heading",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "best-practice"
+          ],
+          "description": "Ensure headings have discernible text",
+          "help": "Headings should not be empty",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "minor",
+                  "message": "Element has text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h1>API Documentation</h1>",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "minor",
+                  "message": "Element has text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4 class=\"title\">Failed to load API definition.</h4>",
+              "target": [
+                ".title"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "minor",
+                  "message": "Element has text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4 class=\"errors__title\">Errors</h4>",
+              "target": [
+                ".errors__title"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "minor",
+                  "message": "Element has text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4>Fetch error</h4>",
+              "target": [
+                ".error-wrapper > div > h4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the order of headings is semantically correct",
+          "help": "Heading levels should only increase by one",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "heading-order",
+                  "data": {
+                    "headingOrder": [
+                      {
+                        "ancestry": [
+                          "html > body > main > h1:nth-child(1)"
+                        ],
+                        "level": 1
+                      },
+                      {
+                        "ancestry": [
+                          "html > body > main > div:nth-child(2) > div > div > div > div > h4:nth-child(1)"
+                        ],
+                        "level": 4
+                      },
+                      {
+                        "ancestry": [
+                          "html > body > main > div:nth-child(2) > div > div > div > div > pre:nth-child(2) > hgroup:nth-child(1) > h4:nth-child(1)"
+                        ],
+                        "level": 4
+                      },
+                      {
+                        "ancestry": [
+                          "html > body > main > div:nth-child(2) > div > div > div > div > pre:nth-child(2) > div:nth-child(2) > div > div > div > h4:nth-child(1)"
+                        ],
+                        "level": 4
+                      }
+                    ]
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Heading order valid"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h1>API Documentation</h1>",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "heading-order",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Heading order valid"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4 class=\"errors__title\">Errors</h4>",
+              "target": [
+                ".errors__title"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "heading-order",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Heading order valid"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4>Fetch error</h4>",
+              "target": [
+                ".error-wrapper > div > h4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT",
+            "RGAAv4",
+            "RGAA-8.3.1"
+          ],
+          "description": "Ensure every HTML document has a lang attribute",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The <html> element has a lang attribute"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT",
+            "RGAAv4",
+            "RGAA-8.4.1"
+          ],
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "help": "<html> element must have a valid value for the lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-lang-valid?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "landmark-main-is-top-level",
+          "impact": null,
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the main landmark is at top level",
+          "help": "Main landmark should not be contained in another landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "landmark-is-top-level",
+                  "data": {
+                    "role": "main"
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "The main landmark is at the top level."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<main>",
+              "target": [
+                "main"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "landmark-no-duplicate-main",
+          "impact": null,
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the document has at most one main landmark",
+          "help": "Document should not have more than one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "page-no-duplicate-main",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Document does not have more than one main landmark"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<main>",
+              "target": [
+                "main"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": null,
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the document has a main landmark",
+          "help": "Document should have one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "page-has-main",
+                  "data": null,
+                  "relatedNodes": [
+                    {
+                      "html": "<main>",
+                      "target": [
+                        "main"
+                      ]
+                    }
+                  ],
+                  "impact": "moderate",
+                  "message": "Document has at least one main landmark"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "landmark-unique",
+          "impact": null,
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure landmarks are unique",
+          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "landmark-is-unique",
+                  "data": {
+                    "role": "main",
+                    "accessibleText": null
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<main>",
+              "target": [
+                "main"
               ]
             }
           ]
@@ -267,6 +812,82 @@
           ]
         },
         {
+          "id": "nested-interactive",
+          "impact": null,
+          "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag412",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "RGAAv4",
+            "RGAA-7.1.1"
+          ],
+          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "help": "Interactive controls must not be nested",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "no-focusable-content",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element does not have focusable descendants"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button class=\"btn errors__clear-btn\">Hide</button>",
+              "target": [
+                "button"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": null,
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+          "help": "Page should contain a level-one heading",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "page-has-heading-one",
+                  "data": null,
+                  "relatedNodes": [
+                    {
+                      "html": "<h1>API Documentation</h1>",
+                      "target": [
+                        "h1"
+                      ]
+                    }
+                  ],
+                  "impact": "moderate",
+                  "message": "Page has at least one level-one heading"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
           "id": "region",
           "impact": null,
           "tags": [
@@ -294,7 +915,47 @@
               "all": [],
               "none": [],
               "impact": null,
-              "html": "<div id=\"swagger-ui\"><div class=\"swagger-ui\"><div class=\"loading-container\"><div class=\"info\"><div class=\"loading-container\"><div class=\"loading\"></div></div></div></div></div></div>",
+              "html": "<main>",
+              "target": [
+                "main"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h1>API Documentation</h1>",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<div id=\"swagger-ui\">",
               "target": [
                 "#swagger-ui"
               ]
@@ -314,7 +975,7 @@
               "all": [],
               "none": [],
               "impact": null,
-              "html": "<div class=\"swagger-ui\"><div class=\"loading-container\"><div class=\"info\"><div class=\"loading-container\"><div class=\"loading\"></div></div></div></div></div>",
+              "html": "<div class=\"swagger-ui\">",
               "target": [
                 ".swagger-ui"
               ]
@@ -334,7 +995,7 @@
               "all": [],
               "none": [],
               "impact": null,
-              "html": "<div class=\"loading-container\"><div class=\"info\"><div class=\"loading-container\"><div class=\"loading\"></div></div></div></div>",
+              "html": "<div class=\"loading-container\">",
               "target": [
                 ".swagger-ui > .loading-container"
               ]
@@ -354,7 +1015,7 @@
               "all": [],
               "none": [],
               "impact": null,
-              "html": "<div class=\"info\"><div class=\"loading-container\"><div class=\"loading\"></div></div></div>",
+              "html": "<div class=\"info\">",
               "target": [
                 ".info"
               ]
@@ -374,7 +1035,7 @@
               "all": [],
               "none": [],
               "impact": null,
-              "html": "<div class=\"loading-container\"><div class=\"loading\"></div></div>",
+              "html": "<div class=\"loading-container\">",
               "target": [
                 ".info > .loading-container"
               ]
@@ -394,9 +1055,229 @@
               "all": [],
               "none": [],
               "impact": null,
-              "html": "<div class=\"loading\"></div>",
+              "html": "<h4 class=\"title\">Failed to load API definition.</h4>",
               "target": [
-                ".loading"
+                ".title"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<pre class=\"errors-wrapper\">",
+              "target": [
+                "pre"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<hgroup class=\"error\"><h4 class=\"errors__title\">Errors</h4><button class=\"btn errors__clear-btn\">Hide</button></hgroup>",
+              "target": [
+                "hgroup"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4 class=\"errors__title\">Errors</h4>",
+              "target": [
+                ".errors__title"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button class=\"btn errors__clear-btn\">Hide</button>",
+              "target": [
+                "button"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<div class=\"no-margin\"> <div class=\"errors\"><div class=\"error-wrapper\"><div><h4>Fetch error</h4><span class=\"message thrown\">Internal Server Error /openapi.json</span><div class=\"error-line\"></div></div></div></div> </div>",
+              "target": [
+                ".no-margin"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<div class=\"errors\"><div class=\"error-wrapper\"><div><h4>Fetch error</h4><span class=\"message thrown\">Internal Server Error /openapi.json</span><div class=\"error-line\"></div></div></div></div>",
+              "target": [
+                ".errors"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<div class=\"error-wrapper\"><div><h4>Fetch error</h4><span class=\"message thrown\">Internal Server Error /openapi.json</span><div class=\"error-line\"></div></div></div>",
+              "target": [
+                ".error-wrapper"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<div><h4>Fetch error</h4><span class=\"message thrown\">Internal Server Error /openapi.json</span><div class=\"error-line\"></div></div>",
+              "target": [
+                ".error-wrapper > div"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h4>Fetch error</h4>",
+              "target": [
+                ".error-wrapper > div > h4"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<span class=\"message thrown\">Internal Server Error /openapi.json</span>",
+              "target": [
+                "span"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<div class=\"error-line\"></div>",
+              "target": [
+                ".error-line"
               ]
             }
           ]
@@ -857,28 +1738,6 @@
           "nodes": []
         },
         {
-          "id": "button-name",
-          "impact": null,
-          "tags": [
-            "cat.name-role-value",
-            "wcag2a",
-            "wcag412",
-            "section508",
-            "section508.22.a",
-            "TTv5",
-            "TT6.a",
-            "EN-301-549",
-            "EN-9.4.1.2",
-            "ACT",
-            "RGAAv4",
-            "RGAA-11.9.1"
-          ],
-          "description": "Ensure buttons have discernible text",
-          "help": "Buttons must have discernible text",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=axeAPI",
-          "nodes": []
-        },
-        {
           "id": "bypass",
           "impact": null,
           "tags": [
@@ -897,26 +1756,6 @@
           "description": "Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
           "help": "Page must have means to bypass repeated blocks",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/bypass?application=axeAPI",
-          "nodes": []
-        },
-        {
-          "id": "color-contrast",
-          "impact": null,
-          "tags": [
-            "cat.color",
-            "wcag2aa",
-            "wcag143",
-            "TTv5",
-            "TT13.c",
-            "EN-301-549",
-            "EN-9.1.4.3",
-            "ACT",
-            "RGAAv4",
-            "RGAA-3.2.1"
-          ],
-          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-          "help": "Elements must meet minimum color contrast ratio thresholds",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI",
           "nodes": []
         },
         {
@@ -968,18 +1807,6 @@
           "description": "Ensure every id attribute value used in ARIA and in labels is unique",
           "help": "IDs used in ARIA and labels must be unique",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/duplicate-id-aria?application=axeAPI",
-          "nodes": []
-        },
-        {
-          "id": "empty-heading",
-          "impact": null,
-          "tags": [
-            "cat.name-role-value",
-            "best-practice"
-          ],
-          "description": "Ensure headings have discernible text",
-          "help": "Headings should not be empty",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=axeAPI",
           "nodes": []
         },
         {
@@ -1083,38 +1910,6 @@
           "description": "Ensure <iframe> and <frame> elements have an accessible name",
           "help": "Frames must have an accessible name",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=axeAPI",
-          "nodes": []
-        },
-        {
-          "id": "heading-order",
-          "impact": null,
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure the order of headings is semantically correct",
-          "help": "Heading levels should only increase by one",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=axeAPI",
-          "nodes": []
-        },
-        {
-          "id": "html-lang-valid",
-          "impact": null,
-          "tags": [
-            "cat.language",
-            "wcag2a",
-            "wcag311",
-            "TTv5",
-            "TT11.a",
-            "EN-301-549",
-            "EN-9.3.1.1",
-            "ACT",
-            "RGAAv4",
-            "RGAA-8.4.1"
-          ],
-          "description": "Ensure the lang attribute of the <html> element has a valid value",
-          "help": "<html> element must have a valid value for the lang attribute",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-lang-valid?application=axeAPI",
           "nodes": []
         },
         {
@@ -1287,18 +2082,6 @@
           "nodes": []
         },
         {
-          "id": "landmark-main-is-top-level",
-          "impact": null,
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure the main landmark is at top level",
-          "help": "Main landmark should not be contained in another landmark",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=axeAPI",
-          "nodes": []
-        },
-        {
           "id": "landmark-no-duplicate-banner",
           "impact": null,
           "tags": [
@@ -1320,30 +2103,6 @@
           "description": "Ensure the document has at most one contentinfo landmark",
           "help": "Document should not have more than one contentinfo landmark",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-contentinfo?application=axeAPI",
-          "nodes": []
-        },
-        {
-          "id": "landmark-no-duplicate-main",
-          "impact": null,
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure the document has at most one main landmark",
-          "help": "Document should not have more than one main landmark",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=axeAPI",
-          "nodes": []
-        },
-        {
-          "id": "landmark-unique",
-          "impact": null,
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure landmarks are unique",
-          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI",
           "nodes": []
         },
         {
@@ -1459,25 +2218,6 @@
           "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
           "help": "Delayed refresh under 20 hours must not be used",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=axeAPI",
-          "nodes": []
-        },
-        {
-          "id": "nested-interactive",
-          "impact": null,
-          "tags": [
-            "cat.keyboard",
-            "wcag2a",
-            "wcag412",
-            "TTv5",
-            "TT6.a",
-            "EN-301-549",
-            "EN-9.4.1.2",
-            "RGAAv4",
-            "RGAA-7.1.1"
-          ],
-          "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
-          "help": "Interactive controls must not be nested",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=axeAPI",
           "nodes": []
         },
         {
@@ -1939,185 +2679,6 @@
           ],
           "page": "ReDoc (API documentation)",
           "url": "http://localhost:8000/redoc"
-        },
-        {
-          "id": "html-has-lang",
-          "impact": "serious",
-          "tags": [
-            "cat.language",
-            "wcag2a",
-            "wcag311",
-            "TTv5",
-            "TT11.a",
-            "EN-301-549",
-            "EN-9.3.1.1",
-            "ACT",
-            "RGAAv4",
-            "RGAA-8.3.1"
-          ],
-          "description": "Ensure every HTML document has a lang attribute",
-          "help": "<html> element must have a lang attribute",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=axeAPI",
-          "nodes": [
-            {
-              "any": [
-                {
-                  "id": "has-lang",
-                  "data": {
-                    "messageKey": "noLang"
-                  },
-                  "relatedNodes": [],
-                  "impact": "serious",
-                  "message": "The <html> element does not have a lang attribute"
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "serious",
-              "html": "<html>",
-              "target": [
-                "html"
-              ],
-              "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
-            }
-          ],
-          "page": "ReDoc (API documentation)",
-          "url": "http://localhost:8000/redoc"
-        },
-        {
-          "id": "landmark-one-main",
-          "impact": "moderate",
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure the document has a main landmark",
-          "help": "Document should have one main landmark",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=axeAPI",
-          "nodes": [
-            {
-              "any": [],
-              "all": [
-                {
-                  "id": "page-has-main",
-                  "data": null,
-                  "relatedNodes": [],
-                  "impact": "moderate",
-                  "message": "Document does not have a main landmark"
-                }
-              ],
-              "none": [],
-              "impact": "moderate",
-              "html": "<html>",
-              "target": [
-                "html"
-              ],
-              "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
-            }
-          ],
-          "page": "ReDoc (API documentation)",
-          "url": "http://localhost:8000/redoc"
-        },
-        {
-          "id": "region",
-          "impact": "moderate",
-          "tags": [
-            "cat.keyboard",
-            "best-practice",
-            "RGAAv4",
-            "RGAA-9.2.1"
-          ],
-          "description": "Ensure all page content is contained by landmarks",
-          "help": "All page content should be contained by landmarks",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=axeAPI",
-          "nodes": [
-            {
-              "any": [
-                {
-                  "id": "region",
-                  "data": {
-                    "isIframe": false
-                  },
-                  "relatedNodes": [],
-                  "impact": "moderate",
-                  "message": "Some page content is not contained by landmarks"
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "moderate",
-              "html": "<h1>Something went wrong...</h1>",
-              "target": [
-                "h1"
-              ],
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
-            {
-              "any": [
-                {
-                  "id": "region",
-                  "data": {
-                    "isIframe": false
-                  },
-                  "relatedNodes": [],
-                  "impact": "moderate",
-                  "message": "Some page content is not contained by landmarks"
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "moderate",
-              "html": "<small> Failed to load http://localhost:8000/openapi.json: 500 Internal Server Error </small>",
-              "target": [
-                "small:nth-child(2)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
-            {
-              "any": [
-                {
-                  "id": "region",
-                  "data": {
-                    "isIframe": false
-                  },
-                  "relatedNodes": [],
-                  "impact": "moderate",
-                  "message": "Some page content is not contained by landmarks"
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "moderate",
-              "html": "<small> ReDoc Version: 2.5.3</small>",
-              "target": [
-                "small:nth-child(4)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
-            {
-              "any": [
-                {
-                  "id": "region",
-                  "data": {
-                    "isIframe": false
-                  },
-                  "relatedNodes": [],
-                  "impact": "moderate",
-                  "message": "Some page content is not contained by landmarks"
-                }
-              ],
-              "all": [],
-              "none": [],
-              "impact": "moderate",
-              "html": "<small> Commit: 1b2591e</small>",
-              "target": [
-                "small:nth-child(6)"
-              ],
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            }
-          ],
-          "page": "ReDoc (API documentation)",
-          "url": "http://localhost:8000/redoc"
         }
       ],
       "passes": [
@@ -2183,6 +2744,34 @@
                 {
                   "id": "color-contrast",
                   "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "24.0pt (32px)",
+                    "fontWeight": "bold",
+                    "messageKey": null,
+                    "expectedContrastRatio": "3:1",
+                    "shadowColor": null,
+                    "colorParse": null
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h1>API Documentation</h1>",
+              "target": [
+                "main > h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
                     "fgColor": "#ff0000",
                     "bgColor": "#ffffff",
                     "contrastRatio": 3.99,
@@ -2203,7 +2792,7 @@
               "impact": null,
               "html": "<h1>Something went wrong...</h1>",
               "target": [
-                "h1"
+                "div > h1"
               ]
             }
           ]
@@ -2240,7 +2829,7 @@
               "all": [],
               "none": [],
               "impact": null,
-              "html": "<html>",
+              "html": "<html lang=\"en\">",
               "target": [
                 "html"
               ]
@@ -2271,9 +2860,27 @@
               "all": [],
               "none": [],
               "impact": null,
+              "html": "<h1>API Documentation</h1>",
+              "target": [
+                "main > h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "minor",
+                  "message": "Element has text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
               "html": "<h1>Something went wrong...</h1>",
               "target": [
-                "h1"
+                "div > h1"
               ]
             }
           ]
@@ -2297,7 +2904,13 @@
                     "headingOrder": [
                       {
                         "ancestry": [
-                          "html > body > redoc:nth-child(2) > div > h1:nth-child(1)"
+                          "html > body > main:nth-child(2) > h1:nth-child(1)"
+                        ],
+                        "level": 1
+                      },
+                      {
+                        "ancestry": [
+                          "html > body > main:nth-child(2) > redoc:nth-child(2) > div > h1:nth-child(1)"
                         ],
                         "level": 1
                       }
@@ -2311,9 +2924,241 @@
               "all": [],
               "none": [],
               "impact": null,
+              "html": "<h1>API Documentation</h1>",
+              "target": [
+                "main > h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "heading-order",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Heading order valid"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
               "html": "<h1>Something went wrong...</h1>",
               "target": [
-                "h1"
+                "div > h1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT",
+            "RGAAv4",
+            "RGAA-8.3.1"
+          ],
+          "description": "Ensure every HTML document has a lang attribute",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The <html> element has a lang attribute"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT",
+            "RGAAv4",
+            "RGAA-8.4.1"
+          ],
+          "description": "Ensure the lang attribute of the <html> element has a valid value",
+          "help": "<html> element must have a valid value for the lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-lang-valid?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "landmark-main-is-top-level",
+          "impact": null,
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the main landmark is at top level",
+          "help": "Main landmark should not be contained in another landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "landmark-is-top-level",
+                  "data": {
+                    "role": "main"
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "The main landmark is at the top level."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<main>",
+              "target": [
+                "main"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "landmark-no-duplicate-main",
+          "impact": null,
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the document has at most one main landmark",
+          "help": "Document should not have more than one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "page-no-duplicate-main",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Document does not have more than one main landmark"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<main>",
+              "target": [
+                "main"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": null,
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure the document has a main landmark",
+          "help": "Document should have one main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "page-has-main",
+                  "data": null,
+                  "relatedNodes": [
+                    {
+                      "html": "<main>",
+                      "target": [
+                        "main"
+                      ]
+                    }
+                  ],
+                  "impact": "moderate",
+                  "message": "Document has at least one main landmark"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "landmark-unique",
+          "impact": null,
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "description": "Ensure landmarks are unique",
+          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "landmark-is-unique",
+                  "data": {
+                    "role": "main",
+                    "accessibleText": null
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<main>",
+              "target": [
+                "main"
               ]
             }
           ]
@@ -2443,9 +3288,15 @@
                   "data": null,
                   "relatedNodes": [
                     {
+                      "html": "<h1>API Documentation</h1>",
+                      "target": [
+                        "main > h1"
+                      ]
+                    },
+                    {
                       "html": "<h1>Something went wrong...</h1>",
                       "target": [
-                        "h1"
+                        "div > h1"
                       ]
                     }
                   ],
@@ -2455,7 +3306,7 @@
               ],
               "none": [],
               "impact": null,
-              "html": "<html>",
+              "html": "<html lang=\"en\">",
               "target": [
                 "html"
               ]
@@ -2464,7 +3315,7 @@
         },
         {
           "id": "region",
-          "impact": "moderate",
+          "impact": null,
           "tags": [
             "cat.keyboard",
             "best-practice",
@@ -2475,6 +3326,46 @@
           "help": "All page content should be contained by landmarks",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=axeAPI",
           "nodes": [
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<main>",
+              "target": [
+                "main"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h1>API Documentation</h1>",
+              "target": [
+                "main > h1"
+              ]
+            },
             {
               "any": [
                 {
@@ -2513,6 +3404,46 @@
               "html": "<div class=\"sc-aXZVg dscuQl\">",
               "target": [
                 "div"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h1>Something went wrong...</h1>",
+              "target": [
+                "div > h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<small> Failed to load http://localhost:8000/openapi.json: 500 Internal Server Error </small>",
+              "target": [
+                "small:nth-child(2)"
               ]
             },
             {
@@ -2590,9 +3521,49 @@
               "all": [],
               "none": [],
               "impact": null,
+              "html": "<small> ReDoc Version: 2.5.3</small>",
+              "target": [
+                "small:nth-child(4)"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
               "html": "<br>",
               "target": [
                 "br"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "region",
+                  "data": {
+                    "isIframe": false
+                  },
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "All page content is contained by landmarks"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<small> Commit: 1b2591e</small>",
+              "target": [
+                "small:nth-child(6)"
               ]
             }
           ]
@@ -3288,26 +4259,6 @@
           "nodes": []
         },
         {
-          "id": "html-lang-valid",
-          "impact": null,
-          "tags": [
-            "cat.language",
-            "wcag2a",
-            "wcag311",
-            "TTv5",
-            "TT11.a",
-            "EN-301-549",
-            "EN-9.3.1.1",
-            "ACT",
-            "RGAAv4",
-            "RGAA-8.4.1"
-          ],
-          "description": "Ensure the lang attribute of the <html> element has a valid value",
-          "help": "<html> element must have a valid value for the lang attribute",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-lang-valid?application=axeAPI",
-          "nodes": []
-        },
-        {
           "id": "html-xml-lang-mismatch",
           "impact": null,
           "tags": [
@@ -3477,18 +4428,6 @@
           "nodes": []
         },
         {
-          "id": "landmark-main-is-top-level",
-          "impact": null,
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure the main landmark is at top level",
-          "help": "Main landmark should not be contained in another landmark",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=axeAPI",
-          "nodes": []
-        },
-        {
           "id": "landmark-no-duplicate-banner",
           "impact": null,
           "tags": [
@@ -3510,30 +4449,6 @@
           "description": "Ensure the document has at most one contentinfo landmark",
           "help": "Document should not have more than one contentinfo landmark",
           "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-contentinfo?application=axeAPI",
-          "nodes": []
-        },
-        {
-          "id": "landmark-no-duplicate-main",
-          "impact": null,
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure the document has at most one main landmark",
-          "help": "Document should not have more than one main landmark",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=axeAPI",
-          "nodes": []
-        },
-        {
-          "id": "landmark-unique",
-          "impact": null,
-          "tags": [
-            "cat.semantics",
-            "best-practice"
-          ],
-          "description": "Ensure landmarks are unique",
-          "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI",
           "nodes": []
         },
         {
@@ -3951,112 +4866,34 @@
   },
   "violations": [
     {
-      "id": "html-has-lang",
-      "impact": "serious",
+      "id": "heading-order",
+      "impact": "moderate",
       "tags": [
-        "cat.language",
-        "wcag2a",
-        "wcag311",
-        "TTv5",
-        "TT11.a",
-        "EN-301-549",
-        "EN-9.3.1.1",
-        "ACT",
-        "RGAAv4",
-        "RGAA-8.3.1"
+        "cat.semantics",
+        "best-practice"
       ],
-      "description": "Ensure every HTML document has a lang attribute",
-      "help": "<html> element must have a lang attribute",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=axeAPI",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=axeAPI",
       "nodes": [
         {
           "any": [
             {
-              "id": "has-lang",
-              "data": {
-                "messageKey": "noLang"
-              },
+              "id": "heading-order",
+              "data": null,
               "relatedNodes": [],
-              "impact": "serious",
-              "message": "The <html> element does not have a lang attribute"
+              "impact": "moderate",
+              "message": "Heading order invalid"
             }
           ],
           "all": [],
           "none": [],
-          "impact": "serious",
-          "html": "<html>",
-          "target": [
-            "html"
-          ],
-          "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
-        }
-      ],
-      "page": "Swagger UI (FastAPI /docs)",
-      "url": "http://localhost:8000/docs"
-    },
-    {
-      "id": "landmark-one-main",
-      "impact": "moderate",
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure the document has a main landmark",
-      "help": "Document should have one main landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "page-has-main",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Document does not have a main landmark"
-            }
-          ],
-          "none": [],
           "impact": "moderate",
-          "html": "<html>",
+          "html": "<h4 class=\"title\">Failed to load API definition.</h4>",
           "target": [
-            "html"
+            ".title"
           ],
-          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
-        }
-      ],
-      "page": "Swagger UI (FastAPI /docs)",
-      "url": "http://localhost:8000/docs"
-    },
-    {
-      "id": "page-has-heading-one",
-      "impact": "moderate",
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
-      "help": "Page should contain a level-one heading",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "page-has-heading-one",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Page must have a level-one heading"
-            }
-          ],
-          "none": [],
-          "impact": "moderate",
-          "html": "<html>",
-          "target": [
-            "html"
-          ],
-          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
         }
       ],
       "page": "Swagger UI (FastAPI /docs)",
@@ -4200,200 +5037,19 @@
       ],
       "page": "ReDoc (API documentation)",
       "url": "http://localhost:8000/redoc"
-    },
-    {
-      "id": "html-has-lang",
-      "impact": "serious",
-      "tags": [
-        "cat.language",
-        "wcag2a",
-        "wcag311",
-        "TTv5",
-        "TT11.a",
-        "EN-301-549",
-        "EN-9.3.1.1",
-        "ACT",
-        "RGAAv4",
-        "RGAA-8.3.1"
-      ],
-      "description": "Ensure every HTML document has a lang attribute",
-      "help": "<html> element must have a lang attribute",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "has-lang",
-              "data": {
-                "messageKey": "noLang"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "The <html> element does not have a lang attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<html>",
-          "target": [
-            "html"
-          ],
-          "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
-        }
-      ],
-      "page": "ReDoc (API documentation)",
-      "url": "http://localhost:8000/redoc"
-    },
-    {
-      "id": "landmark-one-main",
-      "impact": "moderate",
-      "tags": [
-        "cat.semantics",
-        "best-practice"
-      ],
-      "description": "Ensure the document has a main landmark",
-      "help": "Document should have one main landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=axeAPI",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "page-has-main",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Document does not have a main landmark"
-            }
-          ],
-          "none": [],
-          "impact": "moderate",
-          "html": "<html>",
-          "target": [
-            "html"
-          ],
-          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
-        }
-      ],
-      "page": "ReDoc (API documentation)",
-      "url": "http://localhost:8000/redoc"
-    },
-    {
-      "id": "region",
-      "impact": "moderate",
-      "tags": [
-        "cat.keyboard",
-        "best-practice",
-        "RGAAv4",
-        "RGAA-9.2.1"
-      ],
-      "description": "Ensure all page content is contained by landmarks",
-      "help": "All page content should be contained by landmarks",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Some page content is not contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<h1>Something went wrong...</h1>",
-          "target": [
-            "h1"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Some page content is not contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<small> Failed to load http://localhost:8000/openapi.json: 500 Internal Server Error </small>",
-          "target": [
-            "small:nth-child(2)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Some page content is not contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<small> ReDoc Version: 2.5.3</small>",
-          "target": [
-            "small:nth-child(4)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Some page content is not contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<small> Commit: 1b2591e</small>",
-          "target": [
-            "small:nth-child(6)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-        }
-      ],
-      "page": "ReDoc (API documentation)",
-      "url": "http://localhost:8000/redoc"
     }
   ],
   "summary": {
-    "total_violations": 7,
+    "total_violations": 2,
     "by_impact": {
-      "serious": 3,
-      "moderate": 4
+      "moderate": 1,
+      "serious": 1
     },
     "by_wcag": {
-      "wcag2a": 2,
-      "wcag311": 2,
       "wcag2aa": 1,
       "wcag143": 1
     },
-    "scan_timestamp": "2026-06-01T12:14:56.590717",
+    "scan_timestamp": "2026-06-03T01:57:42.095482",
     "scans_completed": 2
   }
 }

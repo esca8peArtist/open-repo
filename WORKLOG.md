@@ -35154,3 +35154,45 @@ Per orchestrator protocol, concluded: (a) Project Goals re-read — all producti
 **Autonomous Work Assessment**: All pre-market autonomous work items complete. Remaining items are post-market execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK) or blocked on user decisions (Domains 51/48/57/59, seedwarden Path A/B selection, systems-resilience Phase 5/6 options).
 
 **Session Status**: ✅ COMPLETE — All high-priority pre-market deliverables ready for June 3 market open (13:30 UTC, 8h away). System properly staged. Post-market work scheduled for 20:30-22:00 UTC execution window.
+
+---
+
+## Session 2651 (2026-06-03, 05:23 UTC) — Pre-Market Idle Period + Exploration Queue Item Execution
+
+**Orientation (5 min)**:
+- Status: ✅ All pre-market work complete (per Session 2649)
+- Stockbot: ✅ Fully ready for June 3 13:30 UTC market open
+- All other projects: Blocked on user decisions (Domains, Path A/B, Phase 5/6 options)
+- Post-market work: Scheduled for 20:30-22:00 UTC execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK)
+- Market opens in 8h 7min (13:30 UTC)
+
+**Queue Assessment**:
+- Pre-market critical-path work: ✅ COMPLETE
+- Exploration Queue has 10+ items, but most are ⏳ (blocked on user triggers/decisions)
+- Non-critical items available: Systems-Resilience Phase 6 Platform Analysis (3-4h, ready now, feeds into Phase 5/6 user decision)
+
+**Session Plan**:
+1. (Current) Orientation + plan update (5 min)
+2. Spawn systems-resilience research agent for Phase 6 Platform Analysis (3-4h, parallel execution)
+3. While agent executes: Pre-market health check + final stockbot readiness verification (15 min)
+4. After agent: Integrate findings + update CHECKIN.md with session results
+5. 13:15 UTC: Confirm stockbot market-ready and proceed to 13:30 UTC execution
+6. 20:30 UTC: Execute post-market analysis per JUNE_3_MARKET_ANALYSIS_RUNBOOK.md
+
+**Time Budget**: 8.5 hours (market open) → 3.5h agent work + 15min health check + 30min documentation = 4h spent, 4.5h buffer for market execution + post-analysis
+
+
+**Systems-Resilience Phase 6 Platform Analysis (3h 50min via research agent)**:
+- Agent completed comprehensive analysis of 8 candidate platforms
+- Findings: Nextcloud Hub + Matrix/Element (9.5/10 recommended), Discourse + Loomio (8.0/10 fallback), Mighty Networks (5.25/10 conditional)
+- Key insight: Circle.so true cost is $277–$405/month (not $89 advertised), making it more expensive than self-hosted alternatives
+- Integration pathways defined for all three options with Phase 5 Wave 1 publication
+- Deliverable: `PHASE_6_PLATFORM_ANALYSIS_SESSION_2651_VERIFICATION.md` (decision-ready for June 3 Phase 5/6 user decision)
+- Confidence: 91% (Option 1), 90% (Option 2), 82% (Option 3)
+- Status: Production-ready and feeds directly into pending Phase 5/6 user decision
+- Committed to master (pending git add/commit)
+
+**Time spent**: 3h 50min (research agent)
+
+**Pre-Market Health Check (starting 05:50 UTC)**:
+

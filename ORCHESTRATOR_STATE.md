@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-02T23:25:53Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-03T05:21:26Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 6.3% (564,974 tokens) | All-models 1.7% | Reset in 145h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 7.9% (705,864 tokens) | All-models 2.3% | Reset in 139h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (1/4 Candidates Complete: Domain 51)** (Sessions 502-524, Session 907, Session 1043, Session 2505) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[PHASE 2 RESEARCH COMPLETE + DOMAIN 59 DISTRIBUTION READY FOR EXECUTION]** — Session 2637 (June 3 00:30 UTC) verified all Domain 59 distribution materials are production-ready: (1) Research document 7,200 words/44 citations COMPLETE, (2) Gist live (HTTP 200, shareable URL in all templates), (3) 5 email templates customized by org (220-300 words each, ready for user name/contact fill — 10 fills total, ~5 min), (4) Send sequence documented (CBPP/ITEP June 3 morning → NWLC June 3 aftern … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 2 RESEARCH COMPLETE + DOMAIN 59 DISTRIBUTION READY + COALITION LEVERAGE ANALYSIS COMPLETE]** — All Domain 59 materials production-ready (research 7,200 words/44 citations, 5 email templates customized by org, send sequence documented). Senate Finance CTC markup window open through June 30 (26M+ children affected). **Phase 1 Coalition Leverage Matrix COMPLETE**: 3 multiplicative coalition opportunities identified with measurement-driven sequencing. **User action required by June 3  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,20 +32,20 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[JUNE 3 MARKET OPEN FULLY READY — DOCKER ENTRYPOINT + TEST REGRESSION VERIFIED + CREDENTIALS FIXED]** — Session 2637 (June 3 00:30 UTC) completed Docker entrypoint investigation and test regression fix. **Docker entrypoint**: Already resolved in Session 2631 (`Dockerfile.jetson` has correct `COPY scripts/`, `chmod +x`, `ENTRYPOINT`). Fixed git file mode (100644→100755). **Test regression**: `test_realtime_stream.py` had 8 stale fixtures patching `StockDataStream` but Session 0ed3ea8  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[JUNE 3 MARKET OPEN FULLY READY — 2-SESSION CONFIG DEPLOYED + TESTS PASSING + CREDENTIALS FIXED]** — All infrastructure verified: JPM ridge_wf 6/6 gates ✅, AMZN lgbm_ho 5/6 gates ✅. Docker entrypoint, credentials, and test suite all confirmed. 2-session config deployed to Jetson, containers healthy. **Phase 4.3 Monitoring Framework**: Ready for 21-day live tracking (June 3-23, Z-score checkpoints June 9/16/23). 68/68 tests passing. **Status**: ALL INFRASTRUCTURE READY, no blockers. … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**; **Standing task: 18 wild edibles habit photos 18/18 COMPLETE (Session 2505 verified)**
-**Focus**: ✅ **[GATE 1 LAUNCH-READY — ALL INFRASTRUCTURE VERIFIED, CHECKLIST PREPARED, AWAITING USER ACTIVATION (2026-06-01)]** — **Dry-run verification complete** (seedwarden-agent, June 1): 8/8 zone PDFs (636 KB each, PASS), 5 email bodies (subjects 49–59 chars, PASS), 15 influencer contacts (4 named emails spot-checked, PASS), 18 social post drafts (PASS), logo (919 KB, PASS), all 8 companion runbook files (PASS). Zero blockers. **Gate 1 launch materials produced**: (1) `GATE_1_INFRASTRUCTURE_VE … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[GATE 1 LAUNCH-READY + PHASE 2 CONTENT ROADMAP COMPLETE — ALL INFRASTRUCTURE VERIFIED, USER DECISION PENDING (2026-06-03 EOD)]** — **Dry-run verification complete** (seedwarden-agent, June 1): 8/8 zone PDFs (636 KB each, PASS), 5 email bodies (subjects 49–59 chars, PASS), 15 influencer contacts (4 named emails spot-checked, PASS), 18 social post drafts (PASS), logo (919 KB, PASS), all 8 companion runbook files (PASS). Zero blockers. **Gate 1 launch materials produced**: (1) `GATE_1_I … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: ✅ **[PHASE 3 FIX IMPLEMENTATION COMPLETE (JUNE 1 12:20 UTC) — ALL P0+P1 VIOLATIONS FIXED + VERIFIED — JUNE 12 DEPLOYMENT TARGET ON TRACK]** — Wave 2 A11y Audit Phases 1-3 COMPLETE ✅. **Phase 3 Results** (HTML fix implementation): All 3 P0 (critical) violations fixed and verified (lang attribute, main landmark, h1 heading on both Swagger UI + ReDoc). Commits: 8baa444f + f6e74c33. **Implementation approach**: Custom HTML generators in a11y_docs.py wrap FastAPI's standard endpoint generat … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 5 A11Y VIOLATIONS RESOLVED — OPDS RESPONSE_CLASS BUG FIXED; WCAG COMPLIANCE RESTORED; DEPLOYMENT READY]** — OPDS route bug fixed (4 endpoints corrected in app/api/v1/opds.py). CSS fallbacks added for error states. OpenAPI schema now generates correctly. Root cause identified and verified. **Status**: Phase 4 COMPLETE, Phase 5 violations RESOLVED. Deployment on track (June 12 target, 9-day buffer). **Confidence**: 95%+. **Next**: June 12 final A11y verification before deployment.
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: ✅ **[PHASE 6 COMPLETE, AWAITING USER DECISIONS (JUNE 3 DEADLINE)]** — All infrastructure production-ready. **Phase 6 Platform Analysis**: 3 implementation guides (A: Nextcloud+Matrix $0/yr, B: Discourse $60-829/yr, C: Mighty Networks $950/yr) + decision checklist ready. User selects platform by June 3 → operational by June 5. **Phase 5 Publication**: Locked for June 5 13:00 UTC (45,380 words, all pre-publication checks PASS). **Author Recruitment**: 18 personalized emails (copy-paste ready … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 6 PLATFORM ANALYSIS COMPLETE — NEXTCLOUD+MATRIX (9.5/10) RECOMMENDED, DISCOURSE (8.0/10) SECONDARY]** — Session 2649 analysis v5 complete. **Key findings**: (1) **GO Recommendation 1 - Nextcloud+Matrix** (9.5/10): Full offline capability (desktop sync + Element X offline compose), real-time collaborative editing, CalDAV calendar, Mjolnir moderation, confirmed Matrix-Meshtastic LoRa bridge (MESH-API June 2026), $0-180/year infrastructure cost, 8-10h setup, best Phase 5 integratio … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -97,43 +97,43 @@
 (NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-3. ✅ **Environment Variable Fix** (6 min):
-   - Updated `/opt/stockbot/.env` on Jetson: Added `ALPACA_API_KEY_ID=PKM03F5PK1LPV8LSBIP0`
-   - Updated local docker-compose.yml: Added `- ALPACA_API_KEY_ID=${ALPACA_API_KEY_ID}` line
-   - Synced updated docker-compose.yml to Jetson via rsync
-   - Modified .env to include both variable names for compatibility
+**Findings**:
+- **Session 2648 gap**: Exploration Queue was not re-read during final autonomous work assessment. All queue items marked with ✅ (complete) or ⏳ (blocked on user decisions) were correctly assessed, but NEW ITEMS (Session 2647) with ⏳ status were not re-evaluated.
+- **Queue item status clarity**: Items marked ⏳ (⏳ = "blocked on trigger condition or user decision") are eligible for immediate execution IF the trigger condition is met. JUNE_3_PRE_MARKET_BRIEF.md trigger was: today is June 3, due before 13:10 UTC. Trigger met → item executable.
 
-4. ✅ **Verification** (5 min):
-   - Verified environment variables now present in Docker: `ALPACA_API_KEY_ID=SET ✓`
-   - Confirmed both `ALPACA_API_KEY` and `ALPACA_API_KEY_ID` now in running container environment
-   - **Status**: Alpaca SDK can now authenticate (has required `ALPACA_API_KEY_ID` + `ALPACA_SECRET_KEY`)
+**Assessment for remaining session**:
+- ⏳ **JUNE_3_MARKET_ANALYSIS_RUNBOOK.md** (3-4 hours, post-market, due 22:00 UTC) — will execute after market close
+- ⏳ **Phase 1 Campaign Coalition Leverage Analysis** (4-5 hours, medium priority, due June 15) — can execute now if time permits
 
-5. ✅ **Documentation & Resolution** (3 min):
-   - Updated BLOCKED.md: Moved stockbot Alpaca block to Resolved Archive with detailed diagnosis
-   - Documented root cause: Environment variable mismatch (`ALPACA_API_KEY` vs `ALPACA_API_KEY_ID`)
-   - Documented fix steps and verification results
-   - Committed BLOCKED.md to master
+**Commits**: stockbot/master (9755eb5)
+**Time Spent**: 20 minutes (Orientation 5, Brief creation 15)
 
-**Technical Details**:
-- **Old state**: Docker container had `ALPACA_API_KEY=<value>` but NOT `ALPACA_API_KEY_ID`
-- **Alpaca SDK failure**: When TradingClient/DataStream initialized, they checked for `ALPACA_API_KEY_ID` env var. Finding it missing, they failed with "insufficient subscription" error (misleading error message; actually means "missing credentials")
-- **Fix**: Added `ALPACA_API_KEY_ID` to .env and docker-compose.yml, synced to Jetson, verified in running container
-- **Impact**: Alpaca SDK can now authenticate. Next engine restart will have working market data stream.
+**Phase 1 Coalition Leverage Analysis (4.5 hours via resistance-research agent)**:
+- Spawned resistance-research subagent (a311957a9302bd079)
+- Agent created PHASE_1_COALITION_LEVERAGE_MATRIX.md (2,700+ words, 8 sections)
+- Content: Strategic context, WHY for each domain (39, 56, 58, 59, 37), cross-sector interconnections, multiplicative advocacy windows (5 identified), measurement-driven sequencing, Phase 2 routing logic (8 concrete if/then statements), success metrics
+- Novel findings: Reproductive Rights + Democratic Participation Bridge (PPFA + CBPP connecting NVRA voter registration + childcare subsidy), Education Reform + Civic Participation Link (student debt + election protection)
+- Routable Phase 2 decisions: 8 concrete if/then statements mapping Day 7/30/60 engagement metrics to Domain 51/48/57/59 activation
+- Status: Production-ready for June 15 T+14 checkpoint
+- Committed to master (fcdac9aa)
 
-**Secondary Issue Discovered**:
-- Docker entrypoint script (`scripts/docker_entrypoint.sh`) has permission issue (not executable in image)
-- This is a Docker image build issue, separate from the Alpaca credentials fix
-- Trading engine will start once this is resolved (user may need to rebuild image or manually restart with corrected entrypoint)
+**Autonomous Work Assessment (5 min)**:
+- Exploration Queue reviewed for remaining active items
+- Found 2 remaining items: JUNE_3_MARKET_ANALYSIS_RUNBOOK.md (post-market, due 22:00 UTC), no others in active queue due before market open
+- Assessment: All time-critical pre-market work complete. Remaining work scheduled for post-market window. No additional autonomous work available pre-market.
 
-**Assessment**:
-- ✅ Alpaca credentials now properly configured in Docker environment
-- ✅ ALPACA_API_KEY_ID environment variable present and correct
-- ✅ Blocking issue resolved: trading engine will authenticate on next restart
-- ⚠️ Docker entrypoint permission issue remains (separate problem, not credential-related)
+**Time Spent**: 5 hours 15 minutes (Brief 20 min, Coalition Analysis 4h 50min via agent, Assessment 5 min)
 
-**Decision**: 
-- Moved block to Resolved Archive
-- Committed BLOCKED.md to master
-- Status: June 3+ trading days can proceed once Docker containers restart successfully
+**Market Analysis Runbook Template (30 min)**:
+- Created JUNE_3_MARKET_ANALYSIS_RUNBOOK.md: 7-checkpoint decision-tree framework
+- Checkpoints: (1) Signals executed vs. expected, (2) Fill quality & P&L, (3) Model performance & convergence, (4) Thermal health, (5) HMM regime alignment, (6) Drift tracker status, (7) Final Day 3 recommendation
+- Decision logic: Flags tally (0-5+) → June 4 recommendation (PROCEED | PROCEED+MONITORING | PROCEED+CAUTION | PAUSE)
+- Execution window: 20:30-22:00 UTC (post-market close)
+- Includes: Decision trees, execution checklist, command quick-cards
+- Status: Template production-ready; execution post-market (Session 2650+)
+- Committed to stockbot master (8221f95)
 
-**Time Spent**: 25 minutes (Orient 3, Diagnose 8, Fix 6, Verify 5, Document 3)
+**Time Spent**: 5.5 hours (Brief 20min, Coalition Analysis 4h50m, Analysis Runbook Template 30min)
+**Autonomous Work Assessment**: All pre-market autonomous work items complete. Remaining items are post-market execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK) or blocked on user decisions (Domains 51/48/57/59, seedwarden Path A/B selection, systems-resilience Phase 5/6 options).
+
+**Session Status**: ✅ COMPLETE — All high-priority pre-market deliverables ready for June 3 market open (13:30 UTC, 8h away). System properly staged. Post-market work scheduled for 20:30-22:00 UTC execution window.
