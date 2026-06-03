@@ -1,5 +1,35 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2695 (2026-06-03 13:15–13:30 UTC) — Decision Briefing Complete; Critical Deadline 10h 29m
+
+**What Happened**:
+- ✅ **Re-verified Jetson status** — SSH connection still timing out at 13:15 UTC (no recovery yet, 10+ minutes offline)
+- ✅ **Created decision briefing document** — `CRITICAL_DECISIONS_JUNE_3_EOD.md` comprehensive guide with three critical projects, options analysis, timeline impacts, recommendations
+- ✅ **Updated BLOCKED.md** — Documented Session 2695 Jetson verification attempt (13:15 UTC)
+- ✅ **Updated WORKLOG.md** — Logged session findings and decision briefing completion
+
+**What's Blocking Autonomous Work**:
+1. **Jetson unreachable** — SSH timeout at 13:15 UTC. Cannot execute credential fix remotely. User must verify online and correct credentials.
+2. **Three critical user decisions due EOD today (23:59 UTC)**:
+   - **mfg-farm**: Test print execution decision → gates Phase 1 launch sequence
+   - **seedwarden**: Track A vs B vs Both → gates launch execution (Track B June 5 deadline)
+   - **systems-resilience**: Nextcloud+Matrix vs Discourse → gates Phase 5 Wave 1 author recruitment (June 5 deadline)
+
+**Recommendation**:
+- **User reviews `CRITICAL_DECISIONS_JUNE_3_EOD.md`** (newly created guide with all options, pros/cons, timeline impacts)
+- **User confirms three decisions by 18:00 UTC** (allows orchestrator 6 hours to execute follow-ups today)
+- **User verifies Jetson online status** and fixes Alpaca credentials if possible
+
+**Critical Timeline**:
+- ⏰ **Immediate**: Verify Jetson online; fix credentials if reachable
+- ⏰ **By 18:00 UTC (5h 30m)**: User confirms three decisions from CRITICAL_DECISIONS_JUNE_3_EOD.md
+- ⏰ **By 23:59 UTC (10h 29m)**: Mandatory decision deadline for all three projects
+- ⏰ **June 5**: seedwarden Track B launch + systems-resilience Phase 5 Wave 1 recruitment (both gates on decisions)
+
+**Autonomous Work Status**: ✅ **ALL AUTONOMOUS WORK BLOCKED** — All Phase 1-7 deliverables production-ready. No further code/research work until: (1) user decisions made, (2) Jetson comes back online.
+
+---
+
 ## Since Last Check-in — Session 2694 (2026-06-03 13:05–13:15 UTC) — JETSON UNREACHABLE; CRITICAL DEADLINE TODAY
 
 **What Happened**:

@@ -39,9 +39,10 @@ When the block is resolved (Resolution written OR Verify command passes):
 - Alpaca SDK requires valid credentials to authenticate WebSocket; mismatched credentials trigger "insufficient subscription" error (code 409)
 **Verification (Session 2665)**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` returned 2 — block confirmed active.
 **Verification (Session 2694)**: SSH attempt at 13:05 UTC returned "Connection timed out" — **Jetson is unreachable on network**. Cannot verify current block status or run remediation commands.
+**Verification (Session 2695)**: SSH attempt at 13:15 UTC returned "Connection timed out" — **Jetson remains unreachable**, 10+ minutes still no connectivity. Block status unverified.
 **What I need**: (1) Verify that Jetson is online and reachable via SSH (`ssh awank@100.120.18.84` should return prompt or greeting, not timeout). (2) If online, verify that the Alpaca API credentials in /opt/stockbot/.env are correct (ALPACA_API_KEY_ID should be different from ALPACA_API_KEY). (3) If credentials are wrong, obtain correct values and update /opt/stockbot/.env on Jetson. (4) Restart Docker container (`docker restart stockbot`) to pick up new credentials. (5) Verify that WebSocket authentication succeeds in logs (no more 409 errors).
 **Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` — should return 0 (no auth failures) once Jetson is reachable
-**Resolution**: [leave blank — awaiting Jetson connectivity + user action to correct credentials]
+**Resolution**: [leave blank — Jetson still unreachable as of 13:15 UTC. Awaiting network restoration + user action to correct credentials]
 
 ---
 
