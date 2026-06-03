@@ -29,15 +29,17 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ### stockbot — CRITICAL: Alpaca websocket authentication failing (blocks all trading)
 **Date blocked**: 2026-06-03 05:55 UTC (Session 2652 — orchestrator pre-market discovery)
+**Date verified**: 2026-06-03 07:46 UTC (Session 2665 — verification check)
 **Context**: Pre-market diagnostics (06:05-13:30 idle period) discovered that Jetson Docker container has been continuously failing Alpaca paper API websocket authentication for at least 6 hours. Error log shows repeated "insufficient subscription" failures (code 409) from Alpaca SDK auth handler since container startup at ~23:50 UTC June 2. Docker health check reports "healthy" (only checks HTTP 8000 port), but realtime_stream thread is in continuous reconnect loop (300s backoff). No trades have executed since June 1 13:39 UTC (last AMZN BUY). JPM ridge_wf session configured but zero trades in database (never connected). Drift alerts from June 1 ("Z=-3.5, JPM ridge_wf underperforming") appear to be from test simulation, not actual live trading.
 **Root cause analysis**:
 - Session 2630 (June 2 22:55 UTC) claimed to fix issue by adding `ALPACA_API_KEY_ID=PKM03F5PK1LPV8LSBIP0` to environment
 - Current container shows BOTH ALPACA_API_KEY and ALPACA_API_KEY_ID set to SAME value: `PKM03F5PK1LPV8LSBIP0` 
 - This is incorrect: ALPACA_API_KEY_ID should be the key identifier, while ALPACA_API_KEY should be the secret key
 - Alpaca SDK requires valid credentials to authenticate WebSocket; mismatched credentials trigger "insufficient subscription" error (code 409)
+**Verification (Session 2665)**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` returned 2 — **BLOCK STILL ACTIVE**, auth failures ongoing.
 **What I need**: (1) Verify that the Alpaca API credentials in the .env file are correct (ALPACA_API_KEY_ID should be different from ALPACA_API_KEY). (2) If credentials are wrong, obtain correct values and update /opt/stockbot/.env on Jetson. (3) Restart Docker container to pick up new credentials. (4) Verify that WebSocket authentication succeeds in logs (no more 409 errors).
 **Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` — should return 0 (no auth failures)
-**Resolution**: [leave blank]
+**Resolution**: [leave blank — awaiting user action to correct credentials on Jetson]
 
 ---
 

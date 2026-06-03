@@ -35697,3 +35697,48 @@ Given **CRITICAL BLOCKER** (Alpaca auth) status and time constraints:
 - Until market close: 13h 15min
 - **CRITICAL STATUS**: Alpaca auth blocker STILL ACTIVE; zero trading possible at 13:30 UTC without immediate user fix
 
+
+---
+
+## Session 2665 (June 3, 2026 — 07:46 UTC)
+
+**Orientation**: Verified critical Alpaca blocker still active (2 auth failures in Docker logs). All project blockers stand (user action required for stockbot, cybersecurity-hardening, mfg-farm, seedwarden, systems-resilience). Searched for autonomous work across Exploration Queue and active projects.
+
+**Work Completed**:
+
+1. ✅ **Verified Alpaca Authentication Blocker** (2 min):
+   - SSH verification: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` returned 2
+   - **Result**: Block still active; Alpaca credentials need correction on Jetson
+   - **Action**: Updated BLOCKED.md with verification timestamp
+
+2. ✅ **resistance-research: Phase 1 Campaign Coalition Leverage Matrix** (4.2 hours, Agent a4bc54350df40e76c):
+   - **Deliverable**: `projects/resistance-research/PHASE_1_COALITION_LEVERAGE_MATRIX.md` (production-ready, 2,600+ words)
+   - **Content**: 8-section framework mapping 5 Phase 1 domains (39, 56, 59, 58, 37) across 7 constituencies
+   - **Key findings**:
+     - Coalition 1 (Economic Justice: Domains 39+59): June 15 activation, Senate Finance CTC markup closes June 30
+     - Coalition 2 (Democratic Protection: Domains 56+37): June 20 activation, 80% constituency overlap on DOJ voting section
+     - Coalition 3 (Sovereignty & Justice: Domains 58+37): Contingent on Trump v. Barbara SCOTUS ruling (expected late June-July)
+     - Coalition 4 (Reproductive Rights Bridge): June 15 activation, crosses abortion + healthcare constituency networks
+   - **Sequencing**: Coalition 1+4 activate June 15 pre-commitment, Coalition 2 June 20 (post-Phase-1-data), Coalition 3 contingent on ruling
+   - **User effort estimate**: 12-18 hours concentrated June 15-30 window
+   - **Status**: Production-ready, feeds June 15 T+14 checkpoint decisions on Phase 2 sequencing
+
+**Autonomous Work Assessment**:
+
+- **Result**: NO additional autonomous work available
+- **Reason**: All major projects blocked on either:
+  - User decisions (seedwarden Path A/B, systems-resilience Phase 5/6, open-repo A11y start, resistance-research Domain 51/48/49-50 activation)
+  - User actions (stockbot Alpaca credentials, cybersecurity-hardening VeraCrypt restart, mfg-farm test print, orchestrator SSH auth)
+  - External events (SCOTUS ruling, HHS guidance issued, election litigation outcomes)
+- **Exploration Queue**: All pending items either decision-gated or already completed (pre-market brief and post-market runbook from Session 2657)
+
+**Blockers Summary**:
+- stockbot: CRITICAL (Alpaca auth failure) — verified still active
+- cybersecurity-hardening: VeraCrypt pre-boot restart required
+- mfg-farm: Test print execution required
+- All other projects: Awaiting June 3 EOD user decisions on Phase 2 domains, seedwarden path, systems-resilience options
+
+**Session Status**: IDLE pending user decisions. Coalition leverage matrix complete and production-ready. Standing ready for decision-triggered work.
+
+**Next Check-in**: June 3 EOD after user makes Phase 2 domain/platform/launch decisions.
+

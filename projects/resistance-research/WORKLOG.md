@@ -2,6 +2,22 @@
 
 ---
 
+## June 3, 2026 — General Research Agent — Phase 1 Coalition Leverage Matrix
+
+**Task**: Build PHASE_1_COALITION_LEVERAGE_MATRIX.md — 8-section, ~2,600-word framework mapping Phase 1's five domains (39, 56, 59, 58, 37) across 7 constituencies, quantifying coalition leverage multipliers, and providing the June 15 checkpoint team with sequencing logic and escalation protocols.
+
+**Files read**: `PHASE_1_COALITION_LEVERAGE_MATRIX.md` (prior draft), `domain-39-healthcare-access-democratic-infrastructure.md`, `domain-56-civil-service-politicization-governance.md`, `domain-59-economic-precarity-democratic-infrastructure.md`, `DOMAIN_58_TRIBAL_SOVEREIGNTY_OUTLINE.md`, `domain-37-baseline-metrics.md`, `WORKLOG.md`.
+
+**Key findings**:
+- Prior draft existed (~3,200 words, 7 sections) but lacked the 7-constituency x 5-domain grid, quantified constituency overlap %, explicit sequencing rationale by urgency/readiness/multiplier, and user effort estimates.
+- Rewrote to 8-section spec (~2,600 words) grounded in existing domain research.
+- Top coalition finding: Economic Justice Coalition (Domains 39 + 59 + 58) has the hardest deadline (June 30 CTC markup) and should activate first, followed by Reproductive Rights Bridge parallel (June 15), then Democratic Protection (July 1), with Sovereignty and Justice contingent on Trump v. Barbara ruling.
+- Quantified overlaps: Domains 56+37 share ~80% election-protection constituency (strongest single-pitch case); Domains 39+59 share ~65–70% economic justice constituency.
+
+**Output**: `projects/resistance-research/PHASE_1_COALITION_LEVERAGE_MATRIX.md` (production-ready, ~2,600 words, 8 sections)
+
+---
+
 ## June 2, 2026 — Distribution Executor — Phase 2 Domains 59/51/57 Send Preparation
 
 **Task**: Execute distribution logistics for Decisions 1, 2, 3 from PHASE_2_DECISION_MEMO_JUNE_2026.md. All research complete. Work is logistics and send preparation only.
