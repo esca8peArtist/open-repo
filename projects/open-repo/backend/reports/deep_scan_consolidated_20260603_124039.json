@@ -1,0 +1,73 @@
+{
+  "audit_date": "2026-06-03T12:40:39.588160",
+  "audit_phase": "Phase 5 Wave 2 \u2014 Deep Scan",
+  "scanner": "axe-core 4.11.x (locally injected)",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "best-practice"
+  ],
+  "scan_summary": [
+    {
+      "page": "swagger_ui",
+      "url": "http://127.0.0.1:8000/docs",
+      "violations": 1,
+      "passes": 26,
+      "incomplete": 0,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0
+    },
+    {
+      "page": "redoc",
+      "url": "http://127.0.0.1:8000/redoc",
+      "violations": 1,
+      "passes": 46,
+      "incomplete": 1,
+      "critical": 0,
+      "serious": 0,
+      "moderate": 1,
+      "minor": 0
+    }
+  ],
+  "findings": [
+    {
+      "page": "swagger_ui",
+      "url": "http://127.0.0.1:8000/docs",
+      "rule_id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help_url": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=axeAPI",
+      "wcag_tags": [],
+      "affected_count": 1,
+      "elements": [
+        "#operations-tag-default"
+      ]
+    },
+    {
+      "page": "redoc",
+      "url": "http://127.0.0.1:8000/redoc",
+      "rule_id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help_url": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=axeAPI",
+      "wcag_tags": [],
+      "affected_count": 27,
+      "elements": [
+        ".kNjBFu.sc-dcJsrY:nth-child(3) > .sc-kAyceB.XMnSL > .sc-fqkvVR.cEAxIC > div:nth-child(3) > h5",
+        ".kNjBFu.sc-dcJsrY:nth-child(4) > .sc-kAyceB.XMnSL > .sc-fqkvVR.cEAxIC > div:nth-child(3) > h5",
+        ".kNjBFu.sc-dcJsrY:nth-child(5) > .sc-kAyceB.XMnSL > .sc-fqkvVR.cEAxIC > div:nth-child(3) > h5",
+        ".kNjBFu.sc-dcJsrY:nth-child(6) > .sc-kAyceB.XMnSL > .sc-fqkvVR.cEAxIC > div:nth-child(3) > h5",
+        ".kNjBFu.sc-dcJsrY:nth-child(7) > .sc-kAyceB.XMnSL > .sc-fqkvVR.cEAxIC > div:nth-child(3) > h5"
+      ]
+    }
+  ],
+  "totals": {
+    "violations": 2,
+    "critical": 0,
+    "serious": 0
+  }
+}
