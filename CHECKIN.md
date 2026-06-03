@@ -3,6 +3,38 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2653, 2026-06-03 01:51 UTC — Orchestrator: Focus Line Pruning + Market-Open Readiness Checkpoint)
+
+**Session Status**: ✅ **MARKET-OPEN FULLY READY — ALL INFRASTRUCTURE VERIFIED; FOCUS LINES PRUNED**
+
+**Work Completed**:
+
+1. ✅ **Focus Line Pruning (10 min)**:
+   - Removed stale session references from resistance-research, stockbot, open-repo
+   - All focus lines now condensed to current status without historical detail
+   - Commits: b32c6f7e, e59b8423
+
+2. ✅ **Market-Open Readiness Verification (5 min)**:
+   - Pre-market brief: ✅ READY
+   - Post-market runbook: ✅ READY  
+   - Infrastructure: ✅ All systems healthy, thermal baseline confirmed
+   - **Verdict**: FULLY READY for June 3 13:30 UTC market execution
+
+**Status Summary**:
+- 🟢 **stockbot**: Market-open fully ready; next checkpoint 13:15 UTC (11+ hours away)
+- 🟡 **User decisions DUE TODAY (June 3 EOD — 22 hours remaining)**:
+  - resistance-research: Phase 2 domain selection
+  - seedwarden: Path A vs Path B choice
+  - systems-resilience: Platform selection (Nextcloud+Matrix recommended)
+- 🟢 **All infrastructure**: Verified production-ready
+
+**Next Scheduled Work**:
+- June 3 13:15 UTC: Market-open monitoring (auto-wake)
+- June 3 13:30–20:00 UTC: Live trading session
+- June 3 20:00–22:00 UTC: Post-market analysis
+
+---
+
 ## Since Last Check-in (Session 2652, 2026-06-03 01:31–02:50 UTC — Orchestrator: Exploration Queue Work + Seedwarden Phase 2 Content Research)
 
 **Session Status**: ✅ **MARKET-OPEN INFRASTRUCTURE FULLY READY + SEEDWARDEN PHASE 2 CONTENT ROADMAP COMPLETE** — Pre-market brief and post-market runbook verified production-ready; Seedwarden Phase 2 content strategy research completed, providing input for today's EOD user decisions.
