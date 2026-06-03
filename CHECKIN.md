@@ -94,9 +94,36 @@ All top projects blocked on user decisions. Deployed 4 parallel agents to reduce
 - Research inputs now available to improve decision quality
 - No blocking items — system ready for immediate post-decision execution
 
+---
+
+## Since Last Check-in — Session 2712 (2026-06-03 17:56–18:30 UTC — Critical Decision Support Documents)
+
+**Status**: ✅ COMPLETE — Two critical exploration queue items delivered
+
+**What Was Accomplished**:
+
+1. **IEX vs SIP Signal Quality Analysis** (DELIVERED)
+   - **CRITICAL FINDING**: Models already trained on IEX data (hardcoded in `alpaca_provider.py`)
+   - **Impact**: Switching to SIP without retraining creates 30-40x volume feature mismatch
+   - **Recommendation**: **Use IEX immediately** for paper trading ($0 cost, 0-5% signal loss acceptable)
+   - **Safe migration to SIP**: Requires code patch + model retraining (defer to live deployment)
+   - **Cost math**: At $25K capital, SIP ROI negative; justified only at $50K+ deployment
+
+2. **Post-Market June 3 Analysis Runbook** (DELIVERED)
+   - Production-ready guide for 22:00 UTC evening analysis
+   - 5 SQL queries (paste-ready, no manual coding needed)
+   - 6 decision trees covering all outcomes
+   - Phase 3 gates (A: trade count, B: P&L, C: thermal, D: DB integrity)
+   - Executive summary template for rapid user consumption
+
+**What's In Progress**:
+- All 4 user decisions due **EOD TODAY (23:59 UTC, ~5h 30m remaining)**
+- Both decision-support documents now complete and committed
+- System ready for immediate post-decision execution
+
 **Items Needing User Input** (deadline 23:59 UTC today):
 1. **Domain 49 (resistance-research)** — Louisiana redistricting 23-hour window THIS WEEK. Materials: PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md + runbooks
-2. **Alpaca feed (stockbot)** — IEX vs SIP; new analysis completes decision support. Recommendation: IEX now ($0), SIP at live ($99/mo)
+2. **Alpaca feed (stockbot)** — **Now fully informed**: IEX vs SIP analysis complete. Recommendation: IEX now ($0), SIP at live ($99/mo) with code patches + retraining
 3. **Platform (systems-resilience)** — Nextcloud+Matrix deployment playbook production-ready. Recommendation: Nextcloud+Matrix (9.5/10)
 4. **seedwarden Track (A/B/Both)** — Execution materials ready. Recommendation: BOTH (maximizes reach, 92% confidence)
 
