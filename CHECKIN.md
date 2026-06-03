@@ -8,9 +8,51 @@
 - ⏰ **20:00 UTC** (~8h 39m): Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
 - ⏰ **23:59 UTC** (~12h 38m): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
 
-**Status**: 🟢 **PRE-MARKET READY** — Infrastructure health checks completed and verified. All containers healthy, config deployed, system positioned for immediate trading execution. Credential blocker STILL ACTIVE (2 Docker auth failures confirmed at 11:12 UTC). No autonomous work available — system in STANDBY MODE. All Phase 5/6 deployment infrastructure production-ready and staged.
+**Status**: 🔴 **CREDENTIAL DEADLINE CRITICAL (1h 54m)** — Infrastructure health checks completed and verified. All containers healthy, config deployed, system positioned for immediate trading execution upon credential fix. Credential blocker STILL ACTIVE (2 Docker auth failures confirmed at 11:21 UTC). No autonomous work available — system in STANDBY MODE. All Phase 5/6 deployment infrastructure production-ready and staged.
 
-**Critical Blocker Status — REVERIFIED**: 🔴 **STILL ACTIVE** — Alpaca credentials misconfigured. Verification run June 3 11:12 UTC: `docker logs stockbot --tail=50` returned 2 auth failures ("insufficient subscription" errors). Root cause: ALPACA_API_KEY_ID = ALPACA_API_KEY (both `PKM03F5PK1LPV8LSBIP0`, should be different). **DEADLINE 13:15 UTC (2h 3m) — user must fix credentials before 13:30 UTC market open.**
+**NEEDS YOUR ACTION BY 13:15 UTC** (1h 54m from 11:21 UTC):
+1. SSH to Jetson: `ssh awank@100.120.18.84`
+2. Verify/correct `/opt/stockbot/.env`: `ALPACA_API_KEY_ID` must be different from `ALPACA_API_KEY` (currently both are `PKM03F5PK1LPV8LSBIP0`)
+3. Restart Docker: `docker restart stockbot`
+4. Verify credentials worked: `docker logs stockbot --tail=20 | grep -i "auth\|error"` (should show successful auth)
+
+**Critical Blocker Status — REVERIFIED**: 🔴 **STILL ACTIVE** — Alpaca credentials misconfigured. Verification run June 3 11:21 UTC: `docker logs stockbot --tail=50` returned 2 auth failures ("insufficient subscription" errors). Root cause: ALPACA_API_KEY_ID = ALPACA_API_KEY (both `PKM03F5PK1LPV8LSBIP0`, should be different). **DEADLINE 13:15 UTC (1h 54m) — user must fix credentials before 13:30 UTC market open.**
+
+---
+
+## Needs Your Input (by EOD 23:59 UTC today)
+
+### 🔴 CRITICAL (by 13:15 UTC — ~1h 54m):
+1. **Fix Alpaca credentials** on Jetson:
+   - SSH to Jetson
+   - Edit `/opt/stockbot/.env`: Ensure `ALPACA_API_KEY_ID` and `ALPACA_API_KEY` are **different values**
+   - Restart Docker container
+   - Verify: `docker logs stockbot` should show no "insufficient subscription" errors
+
+### 🟡 IMPORTANT (by 23:59 UTC — ~12h 38m):
+1. **Phase 2 domain selection** (resistance-research):
+   - Approve Domain 59 Senate Finance CTC dispatch?
+   - Which Phase 2 candidates to research (Domains 49-50)? (Both authorized, timeline is your choice)
+
+2. **Seedwarden track decision** (Track A vs B):
+   - Track A: 45 min setup, gates-of-entry via Instagram tag
+   - Track B: 3.5–4.5h setup, Gates 1-4 + Phase 2 collaboration infrastructure
+   - Execution window: June 5-8 post-launch
+
+3. **systems-resilience platform selection** (by 23:59 UTC):
+   - **Nextcloud+Matrix** (9.5/10, recommended): Full offline capability, real-time collaborative editing, Matrix-Meshtastic LoRa bridge (June 2026), $0-180/year, 8-10h setup
+   - **Discourse** (8.0/10, fallback): Trust-level self-governance, REST API, GitHub Pages integration, $84-204/year, 3-4h setup (fastest path)
+   - Whichever you choose can go live June 5 — deployment roadmaps ready
+
+---
+
+## Session Roadmap (Rest of Today)
+
+- **~13:15 UTC**: Credential fix deadline
+- **~13:30 UTC**: Market opens; trading resumes (if credentials fixed)
+- **~20:00 UTC**: Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
+- **~22:00 UTC**: Post-market analysis due; decision routing triggered
+- **~23:59 UTC**: User decision deadline (all three decisions above)
 
 **Infrastructure Readiness Summary**:
 - ✅ **stockbot Containers**: Both UP and healthy (11h uptime). Config deployed. DB ready.
