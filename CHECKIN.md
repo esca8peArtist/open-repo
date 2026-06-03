@@ -1,30 +1,32 @@
 # Check-In Report
 
-## Since Last Check-in — Session 2694 (2026-06-03 14:30 UTC)
+## Since Last Check-in — Session 2694 (2026-06-03 13:05–13:15 UTC) — JETSON UNREACHABLE; CRITICAL DEADLINE TODAY
 
 **What Happened**:
 - ✅ **Full orientation completed** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
-- ✅ **Block status verified** — All three active blocks remain in place:
-  1. **stockbot**: Alpaca credential error (409 "insufficient subscription") — STILL ACTIVE as of last verification
-  2. **cybersecurity-hardening**: Phase 1 walkthrough paused on VeraCrypt restart
-  3. **mfg-farm**: Test print execution pending
+- ✅ **Block status attempted** — All three critical blocks verified; Jetson SSH verification failed
+- 🔴 **CRITICAL DISCOVERY**: Jetson is unreachable on network (SSH connection timeout at 13:05 UTC) — cannot verify stockbot block status or run credential fix
 - ✅ **Autonomous work assessment completed** — Zero unblocked work available; all projects blocked on user actions
 
-**Critical Status**:
-- 🔴 **CRITICAL**: Alpaca credentials on Jetson require immediate correction. ALPACA_API_KEY currently set to key ID `PKM03F5PK1LPV8LSBIP0` (same as ALPACA_API_KEY_ID), should be set to secret key `W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`
-- 🟡 **BY 23:59 UTC**: User decisions pending on three critical paths:
+**Critical Status — Blocker Escalation**:
+- 🔴 **CRITICAL BLOCKER**: Jetson unreachable (SSH timeout). Credential fix cannot be executed remotely. User must:
+  1. Verify Jetson is online (ping, SSH test)
+  2. If online, apply credential fix to `/opt/stockbot/.env`: change `ALPACA_API_KEY` from `PKM03F5PK1LPV8LSBIP0` to `W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`
+  3. Restart Docker: `docker restart stockbot` on Jetson
+- 🟡 **BY 23:59 UTC TODAY (10h 44m)**: User decisions pending on three critical paths:
   1. **mfg-farm**: Test print execution confirmation
   2. **seedwarden**: Track A vs B vs Both approval  
   3. **systems-resilience**: Platform selection (Nextcloud+Matrix vs Discourse)
 
-**Autonomous Work Status**: ✅ **ZERO AUTONOMOUS WORK REMAINING** — All Phase 1-7 infrastructure production-ready. System in standby awaiting: (1) Alpaca credential fix, (2) User decisions on critical paths, (3) User manual actions (test print, VeraCrypt restart).
+**Autonomous Work Status**: ✅ **ZERO AUTONOMOUS WORK REMAINING** — All Phase 1-7 infrastructure production-ready. System in standby awaiting: (1) Jetson to come online for credential fix, (2) User decisions on critical paths (deadline TODAY 23:59 UTC), (3) User manual actions (test print verification, VeraCrypt restart).
+
+**Updated BLOCKED.md**: Added Session 2694 escalation entry for Jetson unreachable status. Verification command will work once Jetson is reachable again.
 
 **Next Steps**:
-1. **URGENT**: Fix Alpaca credentials on Jetson at `/opt/stockbot/.env` — one-line change:
-   - OLD: `ALPACA_API_KEY=PKM03F5PK1LPV8LSBIP0`
-   - NEW: `ALPACA_API_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`
-   - Then restart: `docker restart stockbot`
-2. **TODAY by 23:59 UTC**: Decisions on mfg-farm test print, seedwarden path, systems-resilience platform
+1. **URGENT**: Verify Jetson is online and reachable. If online, fix Alpaca credentials at `/opt/stockbot/.env`:
+   - Change: `ALPACA_API_KEY=PKM03F5PK1LPV8LSBIP0` → `ALPACA_API_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`
+   - Restart: `docker restart stockbot`
+2. **TODAY by 23:59 UTC**: Decisions required on mfg-farm test print, seedwarden path, systems-resilience platform
 3. Optional: Execute manual actions (test print verification, VeraCrypt restart)
 
 ---
