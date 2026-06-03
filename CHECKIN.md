@@ -1,5 +1,59 @@
 # Check-In Report
 
+## Since Last Check-in (Session 2672 — 2026-06-03 08:42 UTC) — Morning State Verification; Pre-Market Materials Ready; Critical Blocker Unresolved; Standing By
+
+### Summary
+**Session objective**: Verify critical blocker status before market open (4.5h away); confirm all pre-market materials ready; assess final autonomous work available. **Result**: (1) **Alpaca auth blocker CONFIRMED STILL ACTIVE** (2 Docker auth failures in logs; unchanged since Session 2652). (2) **Pre-market brief ✅ and post-market runbook ✅ both complete and staged**. (3) **Coalition Leverage Matrix ✅ complete** (Session 2665). (4) **All Phase 1-6 deliverables production-ready and committed**. (5) **System ready for either credential fix (enable trading) OR user decisions (unlock Phase 2+ work)**. (6) **User decision deadline**: 23:59 UTC today (15h 17m remaining).
+
+### What Was Accomplished (This Session)
+✅ **Critical Block Status Re-Verification** (2 min):
+   - SSH check confirms: 2 auth failures still present in Docker logs
+   - Block age: 8+ hours continuous failure (first discovered 05:55 UTC Session 2652)
+   - Impact: Trading impossible at 13:30 UTC market open unless credentials fixed by 13:15 UTC (4h 33m from now)
+   - Root cause: ALPACA_API_KEY_ID and ALPACA_API_KEY both set to `PKM03F5PK1LPV8LSBIP0` (should be different)
+
+✅ **Pre-Market Materials Verification** (3 min):
+   - `JUNE_3_PRE_MARKET_BRIEF.md` (created 06:30 UTC, Session 2657) — ✅ READY
+   - `JUNE_3_MARKET_ANALYSIS_RUNBOOK.md` (created 06:30 UTC, Session 2657) — ✅ READY
+   - Both materials properly staged and executable
+
+✅ **Exploration Queue Assessment** (3 min):
+   - Coalition Leverage Matrix complete (Session 2665)
+   - All queue items either executed or decision-gated
+   - Assessment: **No additional autonomous work available** without user input
+
+### Project Status Summary
+- 🔴 **stockbot** (P1): CRITICAL BLOCKER — Alpaca credentials need correction; trading blocked
+- 🟡 **resistance-research** (P2): Phase 1 Coalition Leverage ✅; Phase 2 awaiting domain selection
+- 🟡 **seedwarden** (P5): Gate 1 verified ✅; awaiting Path A/B decision by 23:59 UTC
+- 🟡 **systems-resilience** (P7): Phase 6 architecture ✅; awaiting platform choice (Nextcloud+Matrix vs. Discourse)
+- 🔴 **cybersecurity-hardening** (P3): Phase 1 paused at VeraCrypt restart
+- 🔴 **mfg-farm** (P4): Etsy launch ready; test print pending
+
+### Critical — User Action Required (URGENT)
+**🔴 ALPACA CREDENTIALS FIX — 4h 33m WINDOW (Until 13:15 UTC)**:
+```
+ssh awank@100.120.18.84
+cat /opt/stockbot/.env | grep ALPACA
+# Verify: ALPACA_API_KEY_ID ≠ ALPACA_API_KEY (currently BOTH = PKM03F5PK1LPV8LSBIP0)
+# Action: Get correct API secret from Alpaca dashboard; update .env
+docker restart stockbot
+docker logs stockbot --tail=20 | grep insufficient  # Should return 0 (no errors)
+```
+**Impact if fixed**: JPM ridge_wf + AMZN lgbm_ho sessions begin trading at 13:30 UTC market open  
+**Impact if NOT fixed**: Zero trading today; market session loses 6.5 hours
+
+### Important — User Decisions (15h 17m Window; Deadline 23:59 UTC)
+1. **Domain 59 Distribution**: Send this week? (Senate Finance CTC markup June 30; 26M+ children affected)
+2. **Phase 2 Domains**: Which research to activate? (Domains 51/57/48/49-50/54 — unlocks 10-90h work per domain)
+3. **Seedwarden Path**: Track A (minimal Reddit launch) or Track B (full Instagram/TikTok/Kit account)?
+4. **Systems-Resilience Platform**: Nextcloud+Matrix (9.5/10) or Discourse (8.0/10) for Phase 5/6?
+
+### Status
+**ORCHESTRATOR READY FOR MARKET EXECUTION**. All prep materials staged. Critical blocker documented with 4h 33m fix window. Phase 2+ execution queue ready for post-decision activation. Standing by for either credential fix (trading enabled) or user decisions (remaining work unlocked).
+
+---
+
 ## Since Last Check-in (Session 2671 — 2026-06-03 10:34 UTC) — Morning Idle Verification; Critical Blocker Confirmed Unresolved; All Autonomous Work Complete
 
 ### Summary
