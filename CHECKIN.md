@@ -2,9 +2,42 @@
 
 ## 🚨 ATTENTION: 4 Critical User Decisions Required by 23:59 UTC TODAY (2026-06-03)
 
-**Orchestrator Session 2720** (21:01 UTC) ✅ **ORIENTATION COMPLETE — ZERO ADDITIONAL AUTONOMOUS SCOPE**
+**Orchestrator Session 2721** (21:15–21:45 UTC) ✅ **EXPLORATION QUEUE EXECUTION COMPLETE**
 
-**Status**: All decision-ready materials verified. Phase 1-6 autonomous work complete and staged. System operational. Ready for instant activation upon user approval. **~2h 58m remaining until 23:59 UTC deadline.**
+**Status**: Empirical research delivered for Alpaca data feed decision. Phase 1-6 autonomous work complete and staged. System operational. Ready for instant activation upon user approval. **~2h 15m remaining until 23:59 UTC deadline.**
+
+---
+
+## Since Last Check-in — Session 2721 (2026-06-03 21:15–21:45 UTC)
+
+**Status**: ✅ COMPLETE — Exploration Queue item delivered
+
+**What Was Accomplished**:
+
+1. **stockbot: IEX vs SIP Data Feed Signal Quality Analysis** (21:15–21:45 UTC, general-research subagent):
+   - ✅ **IEX_VS_SIP_SIGNAL_COMPARISON.md** (4,500 words, 5 sections) — Comprehensive empirical analysis with specs, signal impact, cost-benefit
+   - **Key Findings**: 
+     - Large-cap universe: 5-10% signal miss rate (acceptable for validation)
+     - Mid/small-cap universe: 40-60% signal miss rate (SIP essential)
+     - Volume filters systematically fail on IEX (97% deflation)
+     - Breakeven: $99/month SIP costs 2-5 profitable trades
+   - **Recommendation**: Use IEX for paper trading ($0); upgrade SIP before live trading or mid-cap expansion
+   - **Impact**: User now has quantified signal quality gap to inform decision; removes uncertainty about cost vs. performance tradeoff
+
+2. **Exploration Queue Status**:
+   - ✅ Marked top item COMPLETE (IEX vs SIP analysis)
+   - Queue has 5+ remaining items; protocol satisfied (>3 threshold)
+
+**Critical Decisions Pending** (deadline 23:59 UTC today):
+1. **Domain 49** (Louisiana redistricting): Execute June 4–5 or defer — pre-flight package ready
+2. **Alpaca data feed** (stockbot): IEX $0 or SIP $99/month — empirical analysis now available ✅
+3. **Platform choice** (systems-resilience): Nextcloud+Matrix or Discourse — roadmaps ready
+4. **seedwarden Track** (A/B/Both): Phase 1→2 readiness analysis ready ✅
+
+**Next Steps**: 
+- User provides any of 4 decisions (any order, any combination)
+- Upon each decision: Orchestrator executes pre-staged runbook (5 min to 4 hours per scope)
+- All materials production-ready and verified
 
 ---
 
