@@ -1,24 +1,37 @@
 # Check-In Report
 
-## Current Status — Session 2687 (2026-06-03 11:51 UTC) — Verification Complete, Credential Blocker Confirmed Still Active, Standby Mode
+## Current Status — Session 2689 (2026-06-03 12:00–12:05 UTC) — PRECISE CREDENTIAL DIAGNOSTIC COMPLETE; CRITICAL DEADLINE 75 MINUTES
 
 **Time Until Key Events**:
-- ⏰ **13:15 UTC** (~1h 24m): 🔴 **CRITICAL DEADLINE** — Alpaca credential fix must be completed before market open
-- ⏰ **13:30 UTC** (~1h 39m): Market opens; trading resumes if credentials fixed (JPM+AMZN sessions auto-wake)
-- ⏰ **20:00 UTC** (~8h 9m): Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
-- ⏰ **23:59 UTC** (~12h 8m): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
+- ⏰ **13:15 UTC** (~1h 15m): 🔴 **CRITICAL DEADLINE** — Alpaca credential FIX must be complete before market opens
+- ⏰ **13:30 UTC** (~1h 30m): Market opens; JPM+AMZN trading resumes (if credentials fixed)
+- ⏰ **20:00 UTC** (~8h): Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
+- ⏰ **23:59 UTC** (~12h): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
 
-**Status**: 🔴 **CREDENTIAL BLOCKER STILL ACTIVE; SYSTEM IN STANDBY MODE** — Credential verification at 11:51 UTC confirms 2 insufficient subscription errors still present. No new autonomous work available — all Phase 1-6 deliverables complete and staged from prior sessions. System standing by for: (1) Alpaca credential fix (deadline 13:15 UTC, 1h 24m), (2) User decisions on Phase 2/seedwarden/systems-resilience (deadline 23:59 UTC, 12h 8m).
+**Status**: 🔴 **CREDENTIAL BLOCKER CONFIRMED; PRECISE FIX IDENTIFIED** — Deep diagnostic completed (Session 2689). Root cause: ALPACA_API_KEY incorrectly set to key ID (`PKM03F5PK1LPV8LSBIP0`) instead of secret key (`W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`). **Exact fix documented below.** No autonomous work available — system standing by.
+
+**PRECISE CREDENTIAL ISSUE** (verified 12:00 UTC):
+```
+❌ CURRENT (broken):
+ALPACA_API_KEY_ID=PKM03F5PK1LPV8LSBIP0    ✓ correct
+ALPACA_API_KEY=PKM03F5PK1LPV8LSBIP0       ✗ WRONG (key ID, not secret)
+ALPACA_SECRET_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw  ✓ correct
+
+✅ REQUIRED FIX:
+ALPACA_API_KEY_ID=PKM03F5PK1LPV8LSBIP0    (no change)
+ALPACA_API_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw    (set to secret key)
+ALPACA_SECRET_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw (no change)
+```
 
 **Session Work**:
-- ✅ Credential blocker re-verified: `docker logs stockbot --tail=50` returned 2 insufficient subscription errors (unchanged since 08:42 UTC Session 2672)
-- ✅ Assessed autonomous work availability: All Phase 1-6 work complete; all queue items staged; no new work available
-- ✅ Confirmed system readiness: All pre-market and post-market materials staged and ready from prior sessions
-- ✅ Prepared for potential auto-fallback: If user decisions not provided by 23:59 UTC, auto-fallback scenarios are pre-staged in PROJECTS.md
+- ✅ Critical block diagnostic: Verified 2 Docker auth failures ongoing; extracted exact env vars from both .env file and running container
+- ✅ Root cause identified: ALPACA_API_KEY set to key ID instead of secret key — causes 409 "insufficient subscription" error
+- ✅ Autonomous work assessment: Zero unblocked scope; all remaining work gated on credential fix or user decisions
+- ✅ Timeline reconfirmed: Market open in 90 min; credential fix deadline 75 min away
 
 **Critical Blockers Requiring User Action**:
-1. 🔴 **URGENT (1h 24m)**: Alpaca credential fix on Jetson — ALPACA_API_KEY_ID must differ from ALPACA_API_KEY
-2. 🟡 **IMPORTANT (12h 8m)**: Path decisions on Phase 2, seedwarden, systems-resilience — auto-fallback ready if not provided
+1. 🔴 **URGENT (75 min deadline)**: Fix Alpaca credentials on Jetson — see exact fix above
+2. 🟡 **IMPORTANT (12h deadline)**: Path decisions on Phase 2, seedwarden, systems-resilience — auto-fallback ready if not provided
 
 ---
 
@@ -59,12 +72,14 @@
 
 ## Needs Your Input (by EOD 23:59 UTC today)
 
-### 🔴 CRITICAL (by 13:15 UTC — ~1h 54m):
-1. **Fix Alpaca credentials** on Jetson:
-   - SSH to Jetson
-   - Edit `/opt/stockbot/.env`: Ensure `ALPACA_API_KEY_ID` and `ALPACA_API_KEY` are **different values**
-   - Restart Docker container
-   - Verify: `docker logs stockbot` should show no "insufficient subscription" errors
+### 🔴 CRITICAL (by 13:15 UTC — ~75 minutes):
+1. **Fix Alpaca credentials** on Jetson (EXACT STEPS):
+   - SSH to Jetson: `ssh awank@100.120.18.84`
+   - Edit `/opt/stockbot/.env` and change **ONE LINE ONLY**:
+     - **OLD**: `ALPACA_API_KEY=PKM03F5PK1LPV8LSBIP0`
+     - **NEW**: `ALPACA_API_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`
+   - Restart Docker: `docker restart stockbot`
+   - Verify fix: `docker logs stockbot --tail=20 | grep -i "error"` (should have NO "insufficient subscription" errors)
 
 ### 🟡 IMPORTANT (by 23:59 UTC — ~12h 38m):
 1. **Phase 2 domain selection** (resistance-research):
