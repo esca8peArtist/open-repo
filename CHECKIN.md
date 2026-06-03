@@ -1,5 +1,61 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2702 (2026-06-03 15:10–18:00 UTC — Orchestrator: Gate 1 Failure Root Cause Analysis Complete; 4 Critical User Decisions Still Pending by EOD)
+
+**Current Time**: 2026-06-03 18:00 UTC (~5h 59min until EOD decision deadline 23:59 UTC)
+
+**What Happened**:
+1. ✅ **stockbot: Gate 1 Failure Root Cause Analysis COMPLETE** (570 lines, 43 KB)
+   - Four root causes identified: (1) structural long bias in AAPL models (PRIMARY), (2) signal frequency mismatch (2 sessions can't generate 5 rounds), (3) regime-model alignment failure, (4) SSH auth blocking Lever B
+   - Three mandatory gates defined for any Phase 3 AAPL replacement model
+   - **Verdict**: Phase 2 portfolio (AMZN + JPM) correctly deployed; should prioritize accumulating round trips vs AAPL retrain
+   - **Business impact**: Removes ambiguity on Phase 3 strategy; confirms current 4-session config is sound for AMZN/JPM
+
+2. ✅ **Autonomous work status**: All exploration queue items that don't depend on user decisions are now complete
+   - Gate 1 analysis ✅
+   - Phase 2 Batch 2 activation roadmap ✅ (Session 2701)
+   - Phase 2 rapid-activation runbooks ✅ (Session 2486)
+   - Remaining exploration items either (a) scheduled for future dates, or (b) waiting on user decisions
+
+**What's Blocking Progress**:
+🚨 **FOUR CRITICAL USER DECISIONS DUE BY EOD TODAY (23:59 UTC)** — ideally by 18:00 UTC to allow execution window:
+
+1. **stockbot Data Feed**: Switch to IEX free feed (recommended) OR upgrade to SIP paid subscription?
+   - **Recommendation**: IEX sufficient for paper trading validation ($0 cost). Upgrade to SIP at live deployment when needed.
+   - **Time to decide**: <5 min
+   - **Impact**: Unblocks realtime WebSocket stream, enables continuation of Phase 2 trading sessions
+
+2. **resistance-research Domain 49**: Approve dispatch THIS WEEK (June 4-5, primary filing deadline June 9-12) vs defer to July?
+   - **Context**: Louisiana Gov signed congressional map June 1 eliminating majority-Black district. Hard cutoff on primary filings.
+   - **Recommendation**: Approve for THIS WEEK execution (highest leverage, time-critical)
+   - **Time to decide**: <5 min
+   - **Impact**: Gates Phase 2 Batch 2 execution timeline; 8,400+ words of research ready
+
+3. **systems-resilience Platform**: Choose Nextcloud+Matrix (9.5/10 recommended) OR Discourse (8.0/10)?
+   - **Context**: Gates June 5 Wave 1 author recruitment (18 contacts pre-staged, email templates ready)
+   - **Recommendation**: Nextcloud+Matrix ($0-180/yr, full offline + LoRa bridge integration)
+   - **Time to decide**: <5 min (or request parallel deployment playbooks for both)
+   - **Impact**: Determines Phase 5 Wave 1 kickoff June 5 configuration
+
+4. **seedwarden Track**: Execute Path A (Etsy-first, June 1 ready) vs Path B (social-first, June 5 ready) vs BOTH (dual launch)?
+   - **Context**: All execution checklists pre-staged and ready
+   - **Recommendation**: BOTH if capacity allows; Path B has longer horizon (June 5 launch preserves capacity)
+   - **Time to decide**: <5 min
+   - **Impact**: Determines Phase 2 timeline (fixed by June 22 content writing capacity, not Phase 1 performance)
+
+**Orchestrator Recommendation** (by priority of time-sensitivity):
+1. **IMMEDIATE** (next 2h): Decide on stockbot IEX/SIP → unblocks realtime trading
+2. **TODAY** (by 18:00 UTC): Decide resistance-research Domain 49 → enables June 4-5 execution if approved
+3. **TODAY** (by 20:00 UTC): Decide systems-resilience platform → 2.5h deployment playbook work if needed
+4. **TODAY** (by 23:59 UTC): Decide seedwarden Track → determines Phase 2 activation
+
+**Timeframe for Next Orchestrator Session**:
+- If user decides all 4 items TODAY: Multiple autonomous work packages unlock for immediate execution (Domain 49 dispatch, Phase 5 Wave 1 recruitment, Platform deployment)
+- If user decides <3 items: Orchestrator can proceed with partial activation (execute decided items, queue others)
+- If no decisions by 23:59 UTC: Auto-fallback playbooks activate on June 4 (pre-staged in Exploration Queue)
+
+---
+
 ## Since Last Check-in — Session 2701 (2026-06-03 14:57–16:00 UTC) — Exploration Queue Item 53 Verification; Phase 2 Batch 2 Roadmap Production-Ready
 
 **Session Status**: 🟢 **EXPLORATION QUEUE ITEM 53 COMPLETE & VERIFIED** — Phase 2 Batch 2 research roadmap and decision frameworks finalized with corrected research findings.
