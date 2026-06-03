@@ -8,7 +8,55 @@
 
 ---
 
-## Since Last Check-in — Session 2710 (2026-06-03 ORIENTATION-ONLY)
+## Since Last Check-in — Session 2710 (2026-06-03 17:28–17:50 UTC)
+
+**Status**: ✅ COMPLETE — Orchestrator standing by for user decisions
+
+**What Was Accomplished**:
+- Final orchestrator orientation completed (verified ORCHESTRATOR_STATE, BLOCKED, INBOX, PROJECTS, CHECKIN files)
+- Confirmed zero additional autonomous scope available (correct by design per Sessions 2678-2683)
+- All 4 critical user decisions remain production-ready and documented
+- Verified all decision materials staged and committed (runbooks, checklists, roadmaps)
+
+**What's In Progress**:
+- **Awaiting user decisions** (deadline 23:59 UTC today, ~6h remaining):
+  - Domain 49 execution timeline (execute June 4-5 or defer)
+  - Alpaca feed choice (IEX free vs SIP $99/month)
+  - Platform selection (Nextcloud+Matrix vs Discourse)
+  - seedwarden Track path (A only / B only / both)
+
+**Items Needing User Input**:
+1. **Domain 49 (resistance-research)** — URGENT: Louisiana redistricting June 1 creates 23-hour execution window. Deadline THIS WEEK (primary May 28-June 9). **Decision needed**: Execute Domain 49 research June 4-5 (activate NOW to preserve redistricting leverage)?
+   - If YES: Execute `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md` June 4-5 (12-18 hour research sprint)
+   - If NO: Defer to July (loses redistricting window but preserves for ballot-measure advocacy)
+
+2. **Alpaca data feed (stockbot)** — Paper trading currently blocked (409 "insufficient subscription" error). **Decision needed**: 
+   - Option A: Switch to free IEX feed now (set `ALPACA_DATA_FEED=iex` on Jetson, 5-min fix)
+   - Option B: Upgrade to SIP subscription ($99/month, enables unlimited ticker coverage)
+   - Recommendation: Use IEX for paper trading immediately; migrate to SIP at live deployment if needed
+
+3. **Platform choice (systems-resilience)** — Phase 5 Wave 1 author recruitment starts June 5. **Decision needed**: 
+   - Option A: Nextcloud+Matrix (9.5/10, offline-first, $0-180/yr, 8-10h setup)
+   - Option B: Discourse (8.0/10, trust-level governance, $84-204/yr, 4-6h setup)
+   - Recommendation: Nextcloud+Matrix (better LoRa/offline resilience alignment)
+
+4. **seedwarden Track (A/B/Both)** — Ready to launch immediately. **Decision needed**: 
+   - Option A: Track A only (Etsy-first, blocked by 2 tag corrections, March launch)
+   - Option B: Track B only (audience-first, zero blockers, ready now, May launch)
+   - Option C: Both tracks (dual execution, 92% confidence, staggered launches)
+   - Recommendation: BOTH (maximizes reach + validates product-market fit)
+
+**Suggested Priorities for Next Session**:
+1. **Make all 4 decisions by EOD 23:59 UTC TODAY** — execution timelines are tight
+2. **Alpaca feed** (simplest decision, 5-min implementation)
+3. **Domain 49** (next most urgent, closes end of week)
+4. **Platform** and **seedwarden Track** (flexible post-June-4 deadlines)
+
+**System Status**: Production-ready. All Phase 1-6 autonomous work complete. System standing by for user decisions to trigger June 4-5 execution waves.
+
+---
+
+## Since Last Check-in — Session 2710 (2026-06-03 ORIENTATION-ONLY — ARCHIVED)
 
 **Status**: Orchestrator orientation and verification completed. All autonomous work confirmed complete. System standing by for 4 user decisions (due EOD 23:59 UTC today).
 
@@ -33,7 +81,9 @@
 
 ---
 
-## Since Last Check-in — Session 2709 (2026-06-03 17:04–17:35 UTC)
+## History (Previous Sessions)
+
+### Session 2709 (2026-06-03 17:04–17:35 UTC)
 
 **Work Completed**: Exploration Queue Item 1 — IEX vs SIP Data Feed Signal Quality Analysis
 
