@@ -1,12 +1,12 @@
 # Check-In Report
 
-## Current Status — Session 2684 (2026-06-03 11:12–11:35 UTC) — Pre-Market Ready, Standby Confirmed
+## Current Status — Session 2685 (2026-06-03 11:21 UTC) — Credential Deadline Critical (1h 54m), Standby Confirmed
 
 **Time Until Key Events**:
-- ⏰ **13:15 UTC** (~2h 3m): CRITICAL — Alpaca credential fix deadline before market open
-- ⏰ **13:30 UTC** (~2h 18m): Market opens; trading resumes if credentials fixed
-- ⏰ **20:00 UTC** (~8h 48m): Post-market analysis (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
-- ⏰ **23:59 UTC** (~12h 47m): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
+- ⏰ **13:15 UTC** (~1h 54m): 🔴 **CRITICAL DEADLINE** — Alpaca credential fix must be completed before market open
+- ⏰ **13:30 UTC** (~2h 9m): Market opens; trading resumes if credentials fixed (JPM+AMZN sessions auto-wake)
+- ⏰ **20:00 UTC** (~8h 39m): Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
+- ⏰ **23:59 UTC** (~12h 38m): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
 
 **Status**: 🟢 **PRE-MARKET READY** — Infrastructure health checks completed and verified. All containers healthy, config deployed, system positioned for immediate trading execution. Credential blocker STILL ACTIVE (2 Docker auth failures confirmed at 11:12 UTC). No autonomous work available — system in STANDBY MODE. All Phase 5/6 deployment infrastructure production-ready and staged.
 
