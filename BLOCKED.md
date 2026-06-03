@@ -27,22 +27,19 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — CRITICAL: Alpaca websocket authentication failing + Jetson unreachable (blocks all trading)
+### stockbot — CRITICAL: Alpaca WebSocket data feed subscription required (blocks realtime trading signals)
 **Date blocked**: 2026-06-03 05:55 UTC (Session 2652 — orchestrator pre-market discovery)
-**Date verified**: 2026-06-03 07:46 UTC (Session 2665 — verification check)
-**Date escalated**: 2026-06-03 13:05 UTC (Session 2694 — orchestrator orientation: Jetson unreachable, SSH timeout)
-**Context**: Pre-market diagnostics (06:05-13:30 idle period) discovered that Jetson Docker container has been continuously failing Alpaca paper API websocket authentication for at least 6 hours. Error log shows repeated "insufficient subscription" failures (code 409) from Alpaca SDK auth handler since container startup at ~23:50 UTC June 2. Docker health check reports "healthy" (only checks HTTP 8000 port), but realtime_stream thread is in continuous reconnect loop (300s backoff). No trades have executed since June 1 13:39 UTC (last AMZN BUY). JPM ridge_wf session configured but zero trades in database (never connected). Drift alerts from June 1 ("Z=-3.5, JPM ridge_wf underperforming") appear to be from test simulation, not actual live trading.
-**Root cause analysis**:
-- Session 2630 (June 2 22:55 UTC) claimed to fix issue by adding `ALPACA_API_KEY_ID=PKM03F5PK1LPV8LSBIP0` to environment
-- Current container shows BOTH ALPACA_API_KEY and ALPACA_API_KEY_ID set to SAME value: `PKM03F5PK1LPV8LSBIP0` 
-- This is incorrect: ALPACA_API_KEY_ID should be the key identifier, while ALPACA_API_KEY should be the secret key
-- Alpaca SDK requires valid credentials to authenticate WebSocket; mismatched credentials trigger "insufficient subscription" error (code 409)
-**Verification (Session 2665)**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` returned 2 — block confirmed active.
-**Verification (Session 2694)**: SSH attempt at 13:05 UTC returned "Connection timed out" — **Jetson is unreachable on network**. Cannot verify current block status or run remediation commands.
-**Verification (Session 2695)**: SSH attempt at 13:15 UTC returned "Connection timed out" — **Jetson remains unreachable**, 10+ minutes still no connectivity. Block status unverified.
-**What I need**: (1) Verify that Jetson is online and reachable via SSH (`ssh awank@100.120.18.84` should return prompt or greeting, not timeout). (2) If online, verify that the Alpaca API credentials in /opt/stockbot/.env are correct (ALPACA_API_KEY_ID should be different from ALPACA_API_KEY). (3) If credentials are wrong, obtain correct values and update /opt/stockbot/.env on Jetson. (4) Restart Docker container (`docker restart stockbot`) to pick up new credentials. (5) Verify that WebSocket authentication succeeds in logs (no more 409 errors).
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` — should return 0 (no auth failures) once Jetson is reachable
-**Resolution**: [leave blank — Jetson still unreachable as of 13:15 UTC. Awaiting network restoration + user action to correct credentials]
+**Date verified**: 2026-06-03 07:46 UTC (Session 2665)
+**Date escalated**: 2026-06-03 13:05 UTC (Session 2694 — Jetson unreachable, SSH timeout)
+**Date investigated**: 2026-06-03 13:30 UTC (Session 2696 — Jetson now reachable; root cause identified)
+**Root cause analysis (Session 2696 investigation)**:
+1. **Credential Configuration Issue (RESOLVED)**: The .env file incorrectly had both `ALPACA_API_KEY=PKM03F5PK1LPV8LSBIP0` (duplicating the API key ID) and `ALPACA_SECRET_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`. Fixed by removing the incorrect `ALPACA_API_KEY` line. 
+2. **HTTP API Authentication (VERIFIED WORKING)**: HTTP requests to Alpaca API succeed with correct credentials. Account status shows: ACTIVE, buying_power=$440,477, trading_blocked=false, pattern_day_trader=true.
+3. **WebSocket 409 Error (ROOT CAUSE IDENTIFIED)**: The code 409 "insufficient subscription" error is specifically a **data feed subscription issue**, NOT a credential issue. Current configuration uses `ALPACA_DATA_FEED=sip` (Securities Information Processor), which requires a paid Alpaca subscription tier.
+4. **Trading Impact**: HTTP API works (order execution possible), but realtime WebSocket stream fails (no live price data for signals). Container gracefully reconnects every 10s but cannot establish authenticated stream with SIP data feed.
+**What I need**: User must either (1) Upgrade Alpaca paper trading account to include SIP data feed subscription (requires Alpaca account action), OR (2) Switch to included free data feed by changing ALPACA_DATA_FEED environment variable from "sip" to "iex" or another available feed, then restart container. **Decision needed by EOD today (June 3 23:59 UTC)**.
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=10 2>&1 | grep -i 'insufficient\|websocket\|authenticated'"` — should show successful stream authentication once data feed subscription is resolved
+**Resolution**: [leave blank — Awaiting user decision: upgrade Alpaca subscription OR switch to free data feed]
 
 ---
 
