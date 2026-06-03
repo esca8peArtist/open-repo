@@ -1,6 +1,6 @@
 # Work Log
 
-## Session 2696 (2026-06-03 13:30–13:45 UTC — Orchestrator: Stockbot Block Investigation + Queue Refresh)
+## Session 2696 (2026-06-03 13:30–14:35 UTC — Orchestrator: Stockbot Block Investigation + Gate 1 Root Cause Analysis)
 
 **Status**: 🟢 **STOCKBOT BLOCK PARTIALLY RESOLVED; ROOT CAUSE IDENTIFIED; NEW ACTION REQUIRED** — Completed deep investigation of Alpaca authentication failure. Jetson is now reachable. Credential configuration issue fixed. Root cause of 409 error identified as data feed subscription issue (not credentials). All projects remain blocked on user decisions by EOD today.
 
@@ -40,10 +40,30 @@
   - **Path B**: Change `ALPACA_DATA_FEED=sip` → `ALPACA_DATA_FEED=iex` in /opt/stockbot/.env on Jetson, restart Docker (orchestrator can execute if user approves)
 - **If user not available**: Path B (free IEX feed) can be auto-executed by orchestrator now
 
+5. ✅ **Exploration Queue Item 1: Gate 1 Root Cause Analysis** (55 min, Agent afa1954063b5422a5):
+   - **Deliverable**: `GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS.md` (571 lines, production-ready)
+   - **Key findings**:
+     - **Root Cause 1 (PRIMARY, HIGH confidence)**: Structural long bias — AAPL models never generated voluntary SELL signals. WFE validation shows zero voluntary SELLs across 52 lgbm_ho trades and 117 ridge_wf trades. Model predictions: +3% returns (when threshold only allows below -1.82%). Lever A threshold reduction insufficient.
+     - **Root Cause 2 (SECONDARY, HIGH confidence)**: Signal frequency structural insufficiency — 2-session architecture generates 0.17 round trips/month vs. 5 required by Gate 1b. Gate requirement was calibrated for 67 sessions.
+     - **Root Cause 3 (CONFIRMING, HIGH confidence)**: Regime-model alignment failure — AAPL lgbm_ho's 2026 YTD OOS Sharpe is -1.60 vs 0.649 baseline (346% divergence). Model's momentum-dominant features don't adapt to downtrend environment.
+   - **Performance gap quantified**:
+     - AAPL lgbm_ho OOS Sharpe: -1.60 (260% below Gate floor of 1.0)
+     - AAPL ridge_wf OOS Sharpe: 0.096 (90% below floor)
+     - AMZN lgbm_ho OOS Sharpe: +3.48 (248% above floor) ✅
+     - JPM ridge_wf OOS Sharpe: +4.41 (341% above floor) ✅
+   - **Phase 3 Recommendations**:
+     1. AAPL retrain required (not config tuning) — both models need full retrain with 2026 data
+     2. Add mandatory exit signal audit: require ≥20% voluntary exits (not time-stop)
+     3. Continue AMZN + JPM as Phase 2 primary — both have validated 2026 OOS performance
+     4. AAPL retrain should wait until AMZN/JPM accumulate 15+ round trips (better retrain specification)
+     5. Any AAPL replacement must pass Gate 5 with all 3 regimes showing positive Sharpe
+   - **Conclusion**: Gate 1 failed due to model prediction quality (momentum-dominant models in downtrend), not execution quality. Infrastructure performed correctly throughout.
+   - **Status**: Committed to master (embedded in agent result)
+
 **Next Steps**:
 1. User decides stockbot feed strategy (SIP subscription vs IEX free feed) by 23:59 UTC
 2. User makes three major project decisions (mfg-farm, seedwarden, systems-resilience) by EOD
-3. Orchestrator executes one of three exploration queue items while awaiting decisions
+3. Gate 1 root cause analysis informs Phase 3 AAPL retrain decision (defer until AMZN/JPM accumulate 15+ round trips)
 
 ---
 
