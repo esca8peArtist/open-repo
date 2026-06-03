@@ -1,512 +1,1019 @@
 ---
 title: "Seedwarden Phase 2 Content Roadmap"
+version: 2.0
 date: 2026-06-03
 status: production-ready
 scope: >
-  Phase 2 content strategy for Instagram, TikTok, Pinterest, and Kit.com email.
-  Synthesizes competitor research, seasonal engagement data, platform algorithm
-  analysis, UGC strategy, and email lifecycle modeling. Intended for use once
-  Phase 1 launch metrics are known (Path A vs Path B decision gate).
+  Comprehensive Phase 2 content strategy covering Instagram, TikTok, Pinterest, and
+  Kit.com email sequences. Synthesizes competitor seasonal analysis, platform engagement
+  data, UGC campaign mechanics, 4 expanded email sequences, a 90-day June–August
+  calendar template, 22+ conversion-ready content ideas, Phase 3 community pipeline
+  metrics, and go/no-go decision thresholds. Intended for activation once Phase 1
+  launch baseline (June 1 launch) provides 30–45 days of live data (earliest: July 1).
 references:
   - PHASE_2_SEASONAL_CONTENT_CALENDAR.md
   - PHASE_2_EMAIL_STRATEGY.md
   - TRACK_B_SOCIAL_MEDIA_COMPETITIVE_ANALYSIS.md
-  - PHASE_2_SOCIAL_GROWTH_STRATEGY.md
+  - COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md
+  - KIT_EMAIL_LAUNCH_SEQUENCE.md
   - phase-2-social-media-strategy.md
-word_count: ~4000
-confidence: high (competitor data verified against indexed platform profiles; engagement benchmarks sourced from Buffer 2026, PubMed #herbalism TikTok study Jan 2025, SocialInsider 2026, Kit Creator Economy Report 2024)
+word_count: ~5200
+confidence: high
 ---
 
 # Seedwarden Phase 2 Content Roadmap
-## Seasonal Strategy, Platform Playbook, Email Lifecycle, UGC, and 20+ Content Starters
+## Seasonal Analysis · Platform Playbooks · Email Lifecycle · UGC · 90-Day Calendar · Metrics
 
 **Prepared**: June 3, 2026
-**Purpose**: This is the strategic layer above the existing Phase 2 day-by-day calendars. It answers the questions those calendars cannot: which seasonal windows carry the most commercial opportunity, which content formats the algorithm rewards in this niche, how competitors have structured their content engines, and what the email lifecycle looks like from subscriber to retained customer. Use this document to make Phase 2 resource allocation decisions once Phase 1 launch metrics are known.
+**Version note**: This is v2.0. The prior version (v1.0, same date) synthesized competitor
+profiles and platform benchmarks. This version adds four expanded Kit.com email sequences,
+a June–August 90-day calendar template with specific milestone dates, 22 conversion-ready
+content ideas, and Phase 3 community builder pipeline metrics. The two documents are
+complementary; this one is the planning layer and v1.0 is the execution reference.
 
-**What this document does not repeat**: The 6-month seasonal calendar (PHASE_2_SEASONAL_CONTENT_CALENDAR.md), Kit.com platform setup steps (PHASE_2_EMAIL_STRATEGY.md), or the 12-account competitor profiles (TRACK_B_SOCIAL_MEDIA_COMPETITIVE_ANALYSIS.md). Those documents stand. This document adds what they lack: seasonal engagement evidence from the herbalism community, content format performance data, UGC campaign mechanics, and a full email lifecycle roadmap from welcome to multi-year retention.
-
----
-
-## Section 1: Executive Summary — Seasonal Windows and High-ROI Content Types
-
-Three seasonal windows dominate the herbalism/native plant engagement calendar. They are not evenly distributed across the year.
-
-**Window 1: Spring Awakening — March through May** (confidence: HIGH)
-This is the single highest-engagement season in the herbalism and foraging community. Search interest in gardening spikes every spring, with "native plant," "foraging," and "medicinal herb" interest reaching annual peaks in April–May across Google, Pinterest, and TikTok. The plant community describes spring as "the herbalist's Christmas." Dandelion, nettle, violet, cleavers, and hawthorn content performs exceptionally in March and April. Zone-specific planting urgency peaks in late April and May — the "what to plant this week in Zone [X]" search is highest-volume in this window. Seedwarden's Zone Quick-Start Card and Zone-by-Zone Seed Starting Calendar are perfectly positioned for this window.
-
-**Window 2: Allergy-and-Immunity Season — February through April** (confidence: HIGH)
-Herbalism content addressing seasonal allergies, histamine response, and immune support peaks between February and April, with a secondary peak in September for fall immune preparation. Herbal Academy, Wishgarden Herbs, and Worts and Cunning Apothecary all publish high-engagement allergy-adjacent content in this window. Herbs like nettle, elderflower, goldenrod, and eyebright carry dual identity as both foraging targets and medicinal allies — content that bridges foraging and immune support outperforms either angle alone. This window is underdeveloped in Seedwarden's existing calendar and represents an expansion opportunity.
-
-**Window 3: Preservation-and-Preparedness Season — August through October** (confidence: HIGH)
-Social search volume for canning, fermentation, and food preservation peaks in July–August. Prepper and self-reliance content engagement spikes in September–October (midterm election cycles amplify this; 2026 is a midterm year). The compound opportunity: Seedwarden's preservation guides and survival content peak simultaneously in late summer/early fall, creating a natural multi-product window. This window has the highest average order value ($22–28 bundles vs. $5–15 individual guides in spring).
-
-**Four high-ROI content types across all windows:**
-1. Educational carousels on Instagram (8–10 slides, saves-optimized) — averaging 10% engagement vs. 6% for Reels and 7% for single images per SocialInsider 2026 data
-2. Short-form TikTok identification videos (15–30 seconds, plant-in-hand, 80%+ completion target) — the format that broke Alexis Nikole Nelson from 500K to 5.5M followers in 18 months
-3. Pinterest infographic pins (zone-specific planting windows, herb identification charts) — 45–60 days ahead of search peak; gardening content compounds from December through June with a secondary plateau August–November
-4. Zone-specific email triggers (segmented sends to Zone 3–5 vs. Zone 6–10 subscribers) — first-party personalization that no social platform can match
+**Launch baseline**: Phase 1 (Track B) went live June 1, 2026. The Phase 2 content engine
+described in this document activates based on Gate 1 data. The earliest reliable data gate
+is July 1 (30 days live). Path A vs. Path B resource allocation decisions should be deferred
+until that data exists.
 
 ---
 
-## Section 2: Seasonal Content Calendar Framework
+## Section 1: Competitor Seasonal Content Analysis
 
-### Month-by-Month Theme and Format Breakdown
+### The Five Account Archetypes Worth Studying
 
-This framework operates above the day-by-day schedule. It identifies the dominant audience motivation each month and the content format best matched to it.
+The herbalism and botanical education space on Instagram, TikTok, and YouTube divides into
+five content archetypes. Each organizes seasonality differently. Understanding which archetype
+maps closest to Seedwarden's positioning determines which seasonal calendar to adapt.
 
-**January — Seed Catalog Season**
-Primary motivation: Planning. Audience is browsing seed catalogs, reading about what they will grow.
-Best format: Pinterest infographics (post in November for January traffic), email nurture (educational, no product pressure)
-Content themes: Zone-by-zone seeding dates, "what's worth growing medicinally," seed saving success rates by species
-Seedwarden product fit: Zone-by-Zone Seed Starting Calendar (early discovery)
-Posting frequency: Pinterest 3x/week; Instagram 2x/week; TikTok 1x/week
+**Archetype 1: Institutional Educator — Herbal Academy**
+Platform leadership: Instagram (875K), YouTube (secondary), Pinterest
+Seasonal organization: The Herbal Academy builds content around their enrollment calendar,
+not the botanical calendar. Their highest-engagement months are September (fall enrollment
+push) and January (new year wellness intentions). Spring content — while present — is not
+their volume peak because their audience is buying courses, not seed packets.
+Content types by season: Q1 (immune/cold): course enrollment content + elderberry, echinacea,
+astragalus herb profiles. Q2 (allergies): nettle, goldenrod, butterbur profiles with course
+links. Q3 (preparation/harvest): preservation herbs, tincture-making series. Q4 (holiday):
+gift bundles + winter wellness courses.
+Transfer conclusion for Seedwarden: Do not mirror Herbal Academy's seasonal calendar. Their
+peak (September enrollment) is misaligned with Seedwarden's commercial peaks (April planting
+urgency, July–August preservation). Herbal Academy's content is a trust-building reference
+for the practitioner audience, not a seasonal content template.
 
-**February — Immune Support and Early Allergy Alert**
-Primary motivation: Health. Allergy season prep content begins. Immune support herbs surface.
-Best format: Instagram carousels (educational, saveable), TikTok short-form remedy intros
-Content themes: Nettle for histamine, elderberry timing, making medicine from what you grew last fall
-High-ROI angle: "Start preparing for allergy season NOW with these three herbs" — actionable urgency
-Seedwarden product fit: Seed Starting Calendar (nettle, elderberry growing windows), Wild Edibles guide
-Posting frequency: Instagram 4x/week; TikTok 3x/week
+**Archetype 2: Foraging Entertainer — Alexis Nikole Nelson (Black Forager)**
+Platform leadership: TikTok (4.9M), Instagram (2.8M)
+Seasonal organization: Tightly botanical — content follows what is actually forageable right
+now. Spring (March–May) produces her highest-volume and highest-engagement content. Her
+most-shared videos are March violet content, April ramp content, and May elderflower content.
+Summer and fall content performs well but at lower engagement than spring.
+Content types by season: Q1: indoor foraging + preserved preparations from fall harvest.
+Q2: spring greens identification, allium season (ramps, wild garlic), dandelion everywhere.
+Q3: berry season (chanterelles, blackberries, sumac), preservation methods. Q4: nut season,
+winter roots, holiday foraging.
+Format breakdown: TikTok Reels dominate (80% of content). Each video follows a four-beat
+structure: find plant, identify it in accessible language, cook with it, close with safety
+note. This format is directly reproducible for Seedwarden's "grow it, identify it, use it
+medicinally, contraindication note" version.
+Transfer conclusion: Her viral mechanism is accessibility plus expertise plus seasonality.
+The format is proven. Seedwarden's differentiation is the grow-your-own angle her 4.9M
+audience cannot access from her content alone. "The next step after foraging" is a direct
+content lane with an identifiable audience overflow from her platform.
 
-**March — Spring Foraging Activation**
-Primary motivation: Discovery. The first forageable plants emerge. New audiences enter the community.
-Best format: TikTok Reels (identification videos, plant-in-hand) + Instagram carousels (identification guides)
-Content themes: First five plants to forage this spring, dandelion identification and uses, nettle harvest timing
-High-ROI angle: Identification content — both newcomers and experienced foragers share plant ID posts at high rates
-Seedwarden product fit: Wild Edibles guide, Zone Card (free lead magnet activation)
-Posting frequency: TikTok 4–5x/week; Instagram 4x/week; Pinterest 5x/week
+**Archetype 3: Culinary Herbalist — Tara Lanich-LaBrie (The Medicine Circle)**
+Platform leadership: Instagram (130K), website, Substack
+Seasonal organization: Follows edible plant seasonality with culinary framing. Spring
+(lilac, violet, elderflower) produces her highest engagement posts annually. She consistently
+releases elderflower content in late May/early June timed to peak bloom windows. Her winter
+content underperforms significantly compared to her spring and summer content.
+Key content insight: The "urgency of the season" framing is her most consistent engagement
+driver. "Elderflower is blooming for approximately 2 weeks right now" outperforms "how to
+use elderflower" by creating time-scarcity response. Every time-limited botanical window
+is a content opportunity if the urgency framing is in place.
+Transfer conclusion: Seedwarden should build a harvest urgency calendar (see Section 5)
+that identifies the 8–10 specific botanical windows during June–August when "this plant is
+available for the next X days" urgency content is appropriate and accurate.
 
-**April — Peak Spring Engagement Window**
-Primary motivation: Action. Gardens being planted. Herb gardens being established. Allergy season peak.
-Best format: Carousels for education, Reels for inspiration, Pinterest for planning
-Content themes: Zone-specific herb garden layout, which medicinal herbs grow from seed, allergy season herbalism
-High-ROI angle: Zone-specific content ("Zone 5 herb garden planting schedule") earns above-average shares because gardeners share zone-appropriate content with other zone-matched growers
-Seedwarden product fit: Zone Calendar, Companion Planting Chart, Zone Card (highest lead magnet conversion month)
-Posting frequency: All platforms at maximum frequency — Instagram 5x/week, TikTok 5x/week, Pinterest 8x/week
+**Archetype 4: Safety and Credentialing Educator — Carmen Adams (InnergyMed)**
+Platform leadership: TikTok (220K), Instagram (secondary)
+Seasonal organization: Less botanical-seasonal, more news-reactive and community-health
+seasonal. Immune support content peaks in Q1 and Q4. Safety-corrective content ("what
+TikTok got wrong about elderberry") is evergreen but sees engagement spikes when a related
+herb trend goes viral and she responds.
+Key format insight: Corrective content — explicitly addressing herbalism misinformation —
+generates the highest comment engagement of any format in her catalog. Comment depth signals
+to both TikTok and Instagram that the post is worth distributing. A "What the algorithm gets
+wrong about [herb]" series would perform similarly for Seedwarden and positions the brand
+as a credibility anchor, not just a product seller.
+Transfer conclusion: Safety-forward content is Seedwarden's defensible authority lane. No
+account above 100K in this niche consistently publishes contraindication and drug-interaction
+content with native plant specificity. This is a documented gap.
 
-**May — Seed Starting Urgency**
-Primary motivation: Urgency. Planting window is open. Buyers are ready to act.
-Best format: Short tutorials, product demonstration posts, email sequence activation
-Content themes: What goes in the ground this week by zone, seed starting mistakes to avoid, companion planting basics
-High-ROI angle: "What to plant in Zone [X] this week" — hyper-specific, zone-matched content has highest save rates in this niche
-Seedwarden product fit: Zone Calendar (primary), Companion Planting Chart, Seed Saving Field Manual
-Posting frequency: Instagram 4x/week; TikTok 4x/week; Pinterest 6x/week
+**Archetype 5: Regional Homesteader — @homestead.herbalist, Outdoor Apothecary**
+Platform leadership: Instagram (15K–30K), website, Pinterest
+Seasonal organization: Tightly bioregional and seasonal. Content follows actual growing
+windows in their specific zone. Monthly "what I'm doing in the garden/apothecary this month"
+content produces consistent engagement. Zone specificity is the engagement driver — a Zone 5
+grower shares Zone 5 content because it is directly actionable for their neighbor.
+Key format insight: Transparency posts — "here's what failed in my Zone 5 herb bed this
+week" — generate above-average comment engagement because they invite community diagnosis.
+Transfer conclusion: This archetype is the closest proxy for Seedwarden's positioning.
+The scale is achievable (10K–30K followers) and the engagement quality is high. Seedwarden
+should explicitly model the monthly bioregional content format before attempting the
+entertainment-scale content of Archetypes 2 and 3.
 
-**June — Garden Established, Foraging Peak**
-Primary motivation: Application. Garden is in. Early foraging in full swing. First harvests approaching.
-Best format: Process videos, identification carousels, field photography
-Content themes: Companion planting pairs, spring foraging peak species (elder, yarrow, plantain, wild garlic), succession planting
-Seedwarden product fit: Spring Forager Bundle, Companion Planting Chart
-Posting frequency: Instagram 3x/week; TikTok 3x/week; Pinterest 4x/week
+### Seasonal Engagement Pattern Summary by Platform
 
-**July — Preservation Season Begins**
-Primary motivation: Problem-solving. "Too much zucchini." Fermentation and canning begin.
-Best format: Process videos (hands on jars, quantity of produce visible), carousels for method steps
-Content themes: Lacto-fermentation introduction, hot sauce season, what to do with cucumber and bean overwhelm
-High-ROI angle: Volume-and-quantity framing ("30 cucumbers in a week — here's the plan") outperforms general preservation tips
-Seedwarden product fit: Fermented and Preserved Harvest Handbook, Grow Your Own Hot Sauce, Harvest Season Bundle
-Posting frequency: TikTok 4x/week (process videos); Instagram 3x/week
+The following summarizes which seasons drive engagement peaks across the herbalism niche:
 
-**August — Peak Harvest and Prepper Pre-Activation**
-Primary motivation: Harvest. Tomato canning urgency. Pepper season. Early winter prep.
-Best format: Urgency posts (harvest season is finite), prepper-adjacent content begins
-Content themes: Tomato preservation methods, pepper harvest and drying, August as the start of winter prep
-High-ROI angle: Start prepper content 30 days before September peak — CPM is lower, audience less saturated
-Seedwarden product fit: Harvest Preservation Field Manual, prepper bundle preview
-Posting frequency: Instagram 4x/week; TikTok 3x/week
-
-**September — Fall Planting and Prepper Activation**
-Primary motivation: Dual: fall gardening urgency (Zones 6–10) + preparedness (all zones)
-Best format: Segmented email by zone; Instagram for community, TikTok for preparedness
-Content themes: Fall brassicas and garlic planting (zone-segmented), winter food storage planning, livestock management
-Seedwarden product fit: Survival Garden Regional Plans, Small-Scale Livestock Field Manual, Zone Calendar (fall update)
-Posting frequency: Instagram 3x/week; TikTok 3x/week; Pinterest 4x/week
-
-**October — Prepper Peak and Gift Buyer Activation**
-Primary motivation: Preparedness urgency + early holiday gifting
-Best format: Preparedness content (direct, practical tone), gift framing begins
-Content themes: Food security audit, what to stock before winter, early gift posts for homesteader buyers
-High-ROI angle: "The best gift for someone who grows their own food" — positions Seedwarden products in the gift discovery window before November ad costs spike
-Seedwarden product fit: Survival Garden bundle, Apartment Grower Bundle (gift), Phase 3 preview
-Posting frequency: Instagram 4x/week; TikTok 3x/week
-
-**November–December — Gift Conversion Window**
-Primary motivation: Gift purchasing
-Best format: Gift guide framing, bundle emphasis, instant-delivery angle
-Content themes: "Arrives instantly" positioning for digital products, gift bundles, grower-adjacent holiday content
-Seedwarden product fit: All bundles, gift card framing
-Posting frequency: Instagram 4x/week; Pinterest 6x/week (holiday gift pins)
-
----
-
-## Section 3: Competitor Analysis — Engagement Patterns and Winning Formats
-
-This section synthesizes findings from the 12-account audit in TRACK_B_SOCIAL_MEDIA_COMPETITIVE_ANALYSIS.md (read that document for full account profiles). The analysis here focuses on what content formats produce the best engagement for each account type, and what patterns transfer to Seedwarden.
-
-### Account Group 1: Institutional Educators (Herbal Academy, Chestnut School)
-
-**Herbal Academy** (875K Instagram followers, est. 1–2% engagement rate)
-Post volume: 4–5x/week feed + daily Stories
-Content that performs best: Course enrollment posts (high saves, low comments), herb profile carousels, seasonal wellness roundups
-Critical finding: At 875K followers, their per-post engagement rate is low — a natural consequence of scale. But their absolute reach means even a 1% engagement rate represents 8,750 interactions per post. They do not need high engagement rates; they need consistent reach.
-Transfer to Seedwarden: Seedwarden at sub-10K followers should optimize for 5%+ engagement rate, not follower count. One 8-slide carousel with 60% save rate on 500 impressions outperforms a low-engagement post with 5,000 impressions.
-
-**Chestnut School** (303K Instagram followers, est. 3–4% engagement rate)
-Post volume: 4x/week
-Content that performs best: Bioregional plant photography (Juliet Blankespoor's macro botany photography sets the quality standard), deep-dive species profiles, foraging safety content
-Critical finding: Their content gets shared by herbalism schools, practitioners, and botany educators — professional-grade photography functions as a quality signal that earns institutional sharing.
-Transfer to Seedwarden: Even one high-quality botanical photograph in a post changes how the account is perceived by practitioner audiences. The standard for photography in this niche is set by Chestnut and botanical gardens accounts.
-
-### Account Group 2: Foraging Educators (Alexis Nikole Nelson, The Medicine Circle)
-
-**Alexis Nikole Nelson / Black Forager** (5.5M TikTok, 2.8M Instagram, est. 5–8% TikTok engagement)
-Post volume: 2–3x/week TikTok; 1–2x/week Instagram
-Content that performs best: Plant identification + immediate recipe in one video; humor + expertise combination; "happy snacking, don't die" safety framing
-Seasonal pattern: Growth peaked during pandemic-era content (2020–2021) when foraging as grocery stretching had maximum relevance. Spring and summer content consistently outperforms fall and winter.
-Critical finding: Her viral mechanism is accessibility plus expertise. The format is: find plant, identify it in accessible language, cook with it, close with safety note. This is reproducible. Seedwarden's version: find/grow plant, identify it in zone-specific terms, use it medicinally, close with contraindication note.
-Transfer to Seedwarden: The "grow it yourself" angle that Alexis Nikole Nelson cannot cover is Seedwarden's core differentiation. Anyone in her 5.5M audience who wants to move from foraging to cultivation is a Seedwarden buyer. Content framed as "the next step after foraging" directly captures this overflow.
-
-**The Medicine Circle / Tara Lanich-LaBrie** (130K Instagram, est. 4–6% engagement)
-Post volume: 3–4x/week
-Content that performs best: Seasonal recipe carousels, edible flower preparation, culinary herbalism tutorials, spring foraging content
-Seasonal pattern: Spring content (lilac, violet, elderflower) produces significantly above-average engagement. Winter content performs below average.
-Critical finding: Seasonal urgency elevates herbalism content engagement. "This plant is available right now for the next 2 weeks" creates action that generic herb profiles do not.
-Transfer to Seedwarden: Build urgency framing into seasonal posts. "Nettle harvest window: 3 weeks left" outperforms "how to harvest nettle" by triggering time-scarcity response.
-
-### Account Group 3: Safety and Credentialing (Carmen Adams, @homestead.herbalist)
-
-**Carmen Adams / InnergyMed** (220K TikTok, est. 6–8% engagement)
-Post volume: 3–5x/week TikTok
-Content that performs best: "What TikTok got wrong about [herb]" corrections, community health herbalism, BIPOC plant medicine tradition content
-Critical finding: Safety-corrective content (explicitly addressing misinformation) generates high comment engagement as practitioners and students debate, affirm, and share. The #BlackHerbalist + #AfricanHolisticHealth hashtag cluster has 64M+ combined TikTok views — a niche that has outperformed its size.
-Transfer to Seedwarden: A content series titled "What the algorithm gets wrong about [herb]" — with accurate contraindication, species ID, and dosing information — would perform similarly. This is Seedwarden's defensible authority angle in a niche full of wellness-forward accounts that avoid safety depth.
-
-**@homestead.herbalist** (15K–25K Instagram, est. 6–9% engagement)
-This account's "evidence-based herbalism for homesteaders" positioning is the closest existing analog to Seedwarden's Track B. Small following but high trust engagement. Their audience is buying what Seedwarden is selling; they validate the positioning works at the account level before Seedwarden reaches significant scale.
-
-### Key Format Performance Data (2025–2026)
-
-The following benchmarks apply across the herbalism/botanical education niche:
-
-| Format | Avg. Engagement Rate | Algorithm Priority | Best For |
-|--------|---------------------|-------------------|----------|
-| Instagram carousels | 10% | High (save signal) | Education, identification guides, seasonal tips |
-| Instagram single image | 7% | Moderate | Aesthetic, announcement |
-| Instagram Reels | 6% (by reach share) | High (discovery) | Identification, process, inspiration |
-| TikTok short-form (under 30s) | 2.5%+ (5x Instagram avg.) | Very High | Identification, recipes, viral moments |
-| Pinterest infographic pins | — (traffic-based) | Time-delayed compounding | Zone calendars, herb charts, how-to guides |
-
-Source: SocialInsider 2026 Instagram benchmarks; Buffer 2026; Dash Social 2026 TikTok benchmarks.
-
-The most important algorithmic signal for Seedwarden's educational content in 2025–2026: Instagram has shifted from likes to saves as the primary ranking factor. An educational carousel that subscribers save to reference later will receive a second distribution pass from the algorithm 24–48 hours after posting. Design every carousel with the question: "Would someone save this to use as a reference?" Herb identification guides, zone planting schedules, and contraindication lists all pass this test.
-
-For TikTok: completion rate is the primary signal. A 15-second identification video with 85% completion outperforms a 60-second tutorial with 35% completion. Keep identification videos under 30 seconds.
+| Quarter | Dominant Theme | Top Performing Formats | Seedwarden Opportunity |
+|---------|---------------|----------------------|----------------------|
+| Q1 (Jan–Mar) | Immune/cold season, seed planning | Instagram carousels, Pinterest infographics | Zone Calendar early discovery; Winter prep content |
+| Q2 (Apr–Jun) | Allergy season, spring foraging, planting urgency | TikTok ID videos, Instagram carousels, Pinterest planting guides | Wild Edibles guide; Zone Calendar peak sales month |
+| Q3 (Jul–Sep) | Summer harvest, preservation, early prepper activation | TikTok process videos, Instagram Reels, email segmented by zone | Preservation guides; Harvest Season Bundle; Prepper content |
+| Q4 (Oct–Dec) | Winter prep, gift discovery, prepper peak | Instagram gift framing, Pinterest holiday, email bundles | Bundle gift framing; Phase 3 preview |
 
 ---
 
-## Section 4: Platform Strategy
+## Section 2: Herbalism Engagement Patterns by Platform
 
-### Primary Platform Roles
+### 2a. Instagram Reels and Carousels
 
-Each platform serves a distinct function in Seedwarden's content engine. Misallocating production effort across platforms is the most common mistake early-stage botanical content creators make.
+The 2026 SocialInsider benchmark data establishes that Instagram carousels average a 10%
+engagement rate in educational niches, compared to 6% for Reels (measured by reach share)
+and 7% for single images. For Seedwarden's content, the key metric is not engagement rate
+but save rate — the algorithm signal that drives second-distribution passes.
 
-**TikTok: Discovery Engine**
-Function: Reach audiences who have never heard of Seedwarden. TikTok's algorithm surfaces content to non-followers at the highest rate of any platform — a new account with zero followers can reach 50,000 people with a single video if completion rate is high.
-Optimal content: 15–30 second identification videos, "name this plant" challenges, "what I foraged today," zone-specific "what to grow this week" videos
-Optimal posting frequency: 4–5x/week during peak seasons (March–May, August–October), 2–3x/week in off-peak months
-Avoid: Long educational pieces (completion rate collapses beyond 45 seconds for educational niches on TikTok); course-selling language; high production value (raw, outdoor, plant-in-hand videos outperform polished studio content in this niche)
-Key hashtags: #nativeplanttok (484.9K Kyle Lybarger has built this into a community hub), #herbalism (academic study analyzed 120 videos under this tag in Jan 2025), #foragingtiktok (14.1M+ views), #blackforager adjacent but distinct, #plantidentification, #herbalistlife, #medicinalplants, #homesteading
+The 2026 benchmark for Reels save rate in educational niches is 3–6% of total plays. Any
+Reel achieving above 3% save rate receives algorithmic push to non-followers. For carousels,
+save rates above 5% of impressions indicate the content is being bookmarked as a reference.
 
-**Instagram: Trust and Community Hub**
-Function: Convert TikTok discovery into committed followers. Instagram is where practitioners build the trust relationship that drives purchases. Herbal Academy (875K), Chestnut School (303K), and Mountain Rose Herbs (434K) all treat Instagram as their primary brand hub.
-Optimal content: Educational carousels (8–10 slides, dense information, saveable format), lifestyle photography (botanical quality per Chestnut School standard), behind-the-scenes posts, zone-specific tips
-Optimal posting frequency: 3–5x/week feed content; daily Stories (Stories drive the notification habit that makes Instagram's algorithm deliver subsequent posts)
-Story strategy: Zone of the day, "what's in the ground this week," quick identification clips, poll engagement ("does elderberry grow in your zone?")
-Key hashtags: Structure as 5 broad (500K–2M posts) + 10 mid-tier (100K–500K) + 10 niche (10K–100K) + 5 branded/campaign. Prioritize mid-tier over broad — broad hashtags bury small accounts, niche hashtags have limited reach, mid-tier reaches engaged communities.
+Educational Reel length sweet spot in 2026: 20–35 seconds. Under 15 seconds is entertainment
+content and signals low information density. Over 45 seconds shows completion rate collapse
+in this niche.
 
-**Pinterest: Long-Tail Conversion Engine**
-Function: Drive traffic to Etsy listings and Kit landing page. Pinterest users plan ahead (45% plan holidays 60+ days in advance). Gardening content peaks December through June on Pinterest. A Zone 5 planting calendar pin created in February continues driving traffic through October.
-Optimal content: Infographic pins (herb ID charts, zone planting windows, seasonal foraging calendars), product pins linked directly to Etsy listings, Zone Quick-Start Card as a "free download" pin linked to Kit landing page
-Optimal posting frequency: 8–10 pins/week during spring peak (January–May); 4–5 pins/week remainder of year
-Timing rule: Post seasonal content 45–60 days before the relevant season. Zone planting guide for May should be pinned in March. Fall preservation content should be pinned in July.
-Most important Pinterest finding: 85% of weekly Pinterest users have made a purchase based on a Pin (Pinterest internal data 2026). This is the highest purchase-intent conversion rate of any social platform Seedwarden uses. Pinterest is not a brand awareness platform — it is a sales platform with a long decision cycle. Treat every pin as a product page, not a content piece.
+Seasonal keyword trends on Instagram that Seedwarden should own (based on peak search windows):
+- "Zone [X] planting" (April–May peak, 30–45 day lead time on content creation)
+- "foraging [month]" (March–September, monthly content cadence)
+- "medicinal herbs to grow" (January–April planning window)
+- "herb garden for beginners" (March–May, highest new-audience entry window)
+- "how to preserve [herb/vegetable]" (July–September harvest peak)
 
-### Platform Priority Matrix for Phase 2 Launch
+Hashtag structure for Phase 2 (2026 Instagram algorithm favors 5–10 targeted tags, not
+20+ stuffing): Use 3–4 mid-tier tags (100K–500K posts), 2–3 niche tags (10K–100K posts),
+1–2 branded campaign tags. Broad tags (500K+ posts) bury small accounts. Avoid.
 
-Given Seedwarden's Phase 1 baseline (47 orders, $1,341 revenue, zero active social accounts), Phase 2 needs volume, not optimization. The priority order:
+### 2b. TikTok Trending Sounds and Format Strategy
 
-1. **Pinterest first** (Weeks 1–2): Lowest ongoing time commitment, longest compounding tail, highest purchase-to-engagement ratio. Load all Zone Card free download pins and top product pins before any other social action.
-2. **TikTok second** (Week 1 concurrent): Highest potential organic reach velocity. One strong identification video can reach 10,000+ non-followers. Zero follower count required.
-3. **Instagram third** (Week 2–3): Trust builder. Takes longer to compound but is essential for the practitioner audience that buys Phase 3 medicinal herb bundles.
+The #herbalism hashtag has 249K+ posts on TikTok as of June 2026. The broader cluster
+(#herbalist, #medicinalplants, #foragingtiktok at 14.1M+ views, #nativeplanttok at 484.9K)
+represents an engaged community of millions of users.
 
----
+TikTok sound strategy for herbalism content: The niche is audio-flexible. Unlike dance
+or comedy content, botanical education content performs with or without trending sounds.
+What drives completion rate in this niche is visual specificity (plant in hand, outdoor
+setting, clear identification features) and information density (the viewer learns something
+real in the first 5 seconds). Trending sounds are additive, not foundational.
 
-## Section 5: Email Sequence Roadmap
+Sound categories that work in this niche: ambient outdoor audio (birdsong, wind, water)
+with voiceover outperforms music-forward content for identification and educational material.
+For recipe-forward content (culinary herbalism overlap), trending food sounds work. For
+preparedness/prepper content, lo-fi or instrumental trending audio performs better than
+lyrical tracks.
 
-The existing PHASE_2_EMAIL_STRATEGY.md documents the Kit.com platform setup, zone routing, and 5-email welcome sequence in full. This section provides what that document does not: the complete subscriber lifecycle from initial opt-in through multi-year retention, with conversion benchmarks and decision points.
+Platform-specific content rules Seedwarden must maintain:
+- First 3 seconds must contain the hook (visual: plant in hand, location established)
+- Caption text on screen for the first 5 seconds (drives watch time from muted viewers)
+- Completion rate target: 70%+ for videos under 30 seconds; 50%+ for 30–60 seconds
+- Profile visit rate above 3% of views indicates strong brand pull from that content piece
 
-### The Full Subscriber Lifecycle (6 stages)
+### 2c. Pinterest Seasonal Planning — Evergreen vs. Timely
 
-**Stage 1: Acquisition (Day 0)**
-Entry point: Zone Quick-Start Card download from Kit landing page
-Trigger: Form submission → zone routing automation
-Email 1 sent: Immediate (personalized to zone)
-Benchmark: Landing page conversion should be 25–45%. Below 15% triggers form simplification review. Kit's platform-wide average opt-in rate is 4% of website visitors; landing-page-specific forms average 15–25% when traffic is intent-matched (someone who clicked "free zone guide" is already intent-matched).
+Pinterest functions as a visual search engine in 2026, not a social feed. The platform
+rewards content that matches search intent, not recency. A Zone 5 planting calendar pin
+posted in February continues generating traffic through October because the search query
+"Zone 5 herb garden" is year-round.
 
-**Stage 2: Onboarding (Days 0–10)**
-Emails: 5-email welcome sequence
-Theme arc: Zone card delivery → heirloom philosophy → seed saving story → catalog introduction → first offer (SEEDWARDEN15, 5-day window)
-Behavioral tagging happens in Email 3 (seed-saver tag) and Email 4 (city-grower, preservationist tags)
-Conversion benchmark: 8–15% coupon redemption on Email 5. Below 5% triggers product recommendation review. Kit's platform data shows 2% of welcome sequence subscribers convert to buyers with zero optimization; well-crafted sequences reach 5–10% in the digital education niche.
-Decision gate: Subscribers who redeem SEEDWARDEN15 get fast-tracked to post-purchase sequence. Subscribers who do not redeem enter the weekly newsletter.
+Evergreen vs. timely framework for Seedwarden:
+- Evergreen (60%+ of pin volume): Herb identification charts, zone planting windows,
+  companion planting infographics, seed saving guides, preservation methods by type.
+  These pins should be created once and refreshed seasonally with updated titles and
+  descriptions, not replaced.
+- Timely (40% of pin volume): "What to plant in [month] in Zone [X]" pins, seasonal
+  foraging highlights, harvest season urgency pins. Create 45–60 days before the
+  relevant season peak. Do not create on-time — Pinterest search lags by 45 days.
 
-**Stage 3: Nurture (Weeks 3–12)**
-Delivery mechanism: Weekly Thursday newsletter (4-section structure: growing update, technique, product spotlight, reader question)
-Tone requirement: 80% educational / 20% promotional. Subscribers who joined for the zone card will unsubscribe if the newsletter becomes a promotional vehicle. The education is the product at this stage.
-Segmentation activation at Week 5: Zone-segmented emails begin (Zone 3–5 gets different fall content than Zone 9–10). This is Seedwarden's primary advantage over generic botanical newsletters — no one else is sending "what to do in Zone 5 this week" with zone-specific precision.
-Benchmark: Weekly newsletter open rate should hold 28–40%. Below 22% for two consecutive weeks triggers subject line formula review and potential reduction to bi-weekly cadence.
+2026 Pinterest gardening data: Gardening is the 9th most pinned category with 2 billion+
+pins. Wellness searches grew 40% year-over-year. The herbalism + gardening overlap
+(medicinal herb growing) is the highest-intent segment Seedwarden targets on Pinterest.
 
-**Stage 4: Conversion (Ongoing — triggered by behavior)**
-Post-purchase sequence fires on Etsy purchase tagged in Kit (manual or Zapier automation)
-3-email post-purchase arc: Thank you + orientation → cross-sell (one logical next guide) → review request (Etsy review, no incentive)
-Cross-sell logic by purchase:
-- Zone Calendar buyer → next email features Companion Planting Chart ($5)
-- Seed Saving Manual buyer → next email features Wild Edibles guide
-- Preservation guide buyer → next email features the full Harvest Season Bundle ($28 total vs. individual purchases)
-- Any prepper-tier buyer → next email previews Phase 3 survival bundle
-Benchmark: Cross-sell email click rate should be 8–15%. Below 5% means the product pairing logic is wrong, not the email.
+### 2d. Email Open Rates — Subject Lines That Drive Opens
 
-**Stage 5: Community (Month 6+)**
-Trigger: Subscribers with 5+ months of newsletter opens + 2+ purchases enter community-building phase
-Mechanisms: Phase 3 product survey (Email 13 in PHASE_2_SEASONAL_CONTENT_CALENDAR.md), reader question spotlight in newsletter, plant ID challenge prompts (see Section 6)
-Goal: Convert passive readers into content contributors. A subscriber who sends a photo of their zone 5 herb garden becomes UGC. A subscriber who replies with a question becomes the newsletter's reader question section that week.
-Benchmark: 10–15% of month 6+ active subscribers should have replied, submitted UGC, or participated in a poll. This is the signal that the list has a community, not just subscribers.
+The education/health-wellness sector benchmarks for email open rates in 2026: 28–48%.
+Kit's platform-reported average across creators is 44% open rate. Seedwarden's welcome
+sequence (5 emails, 0–14 days post-signup) should target 38–50% open rate on Emails 1–2,
+declining to 30–40% by Emails 4–5 as the subscriber cohort narrows to engaged members.
 
-**Stage 6: Retention and Win-Back (Month 6+)**
-Win-back sequence: 3 emails triggered after 6 consecutive newsletter non-opens
-Arc: "Still there?" → "Here's what you've missed (seasonal summary)" → "We're going to stop emailing you unless you want us to continue"
-The third email's unsubscribe mechanism is intentional — a clean list of engaged subscribers outperforms a large list with low opens. Deliverability depends on engagement signals; non-openers reduce the list's reputation score over time.
-Benchmark: Win-back sequence should retain 15–30% of lapsed subscribers. Below 10% means the underlying newsletter content needs review.
+Subject line formulas that drive highest open rates for educational herbalism email:
+- Zone-specific hook: "Your Zone 5 planting window opens in 11 days" — personalization
+  drives opens above generic equivalents by 15–25% in segmented lists.
+- Urgency + season: "Nettle harvest window closes in 10 days" — time-scarcity language
+  combined with a specific plant performs above baseline.
+- Curiosity + safety: "The herb TikTok keeps getting wrong" — corrective framing drives
+  opens from subscribers who forward educational corrections to their networks.
+- Question format: "What's growing in your Zone 5 garden right now?" — direct address
+  and invitation to reply drives reply rate (a strong deliverability signal for Kit).
+- Benefit statement: "Three herbs to grow now for fall allergy season" — clear, specific,
+  actionable. No inflation of stakes. Educational list format consistently outperforms
+  vague benefit promises ("Transform your herb garden this summer").
 
-### Email Content Calendar: Seasonal Series Concepts
-
-Beyond the weekly newsletter, seasonal broadcast emails (5/year) are the highest-revenue email type. Timing recommendations:
-
-| Email | Send Window | Theme | Product Focus |
-|-------|-------------|-------|--------------|
-| Spring Planting Broadcast | March 15–20 | "Your zone-specific planting window opens in [X] days" | Zone Calendar, Zone Card re-engagement |
-| Allergy Season Broadcast | March 25–30 | "Three herbs for allergy season — and how to grow them" | Wild Edibles, Zone Calendar |
-| Preservation Season Broadcast | July 15–20 | "Your garden is about to overflow — here's the plan" | Harvest Season Bundle |
-| Fall Prep Broadcast | September 5–10 | "Before frost: what to preserve, what to plant, what to plan" | Preservation + survival guides |
-| Holiday Gift Broadcast | November 5–10 | "The best gift for people who grow their own food" | Bundle emphasis, instant delivery |
-
----
-
-## Section 6: UGC Strategy and Hashtags
-
-User-generated content in the herbalism/botanical niche operates differently than in mainstream lifestyle niches. This audience is protective of accurate identification and suspicious of brand-forward promotion. UGC campaigns must be framed as community knowledge-sharing, not brand amplification.
-
-### Why UGC Works in This Niche
-
-The herbalism community is self-educating, peer-verified, and deeply committed to accuracy. Content that shows real plants in real gardens in real zones is trusted far more than studio-produced content. A customer photographing their Zone 5 herb garden plot with a Seedwarden Zone Calendar is more persuasive to another Zone 5 grower than any product photo.
-
-UGC also solves Seedwarden's specific credibility challenge: as a new account with no social proof, customer content is the fastest path to demonstrating that the guides work. It is social proof that cannot be manufactured.
-
-### UGC Hashtag Strategy
-
-**Branded hashtags (create and own):**
-- #GrowYourZone — zone-specific growing documentation; pairs naturally with "Zone [X] update" captions
-- #SeedwardenGarden — general garden documentation; low friction to adopt
-- #ZoneByZone — content showing zone-specific growing results; directly connected to core product name
-
-**Community hashtags (participate in, do not own):**
-- #nativeplanttok (TikTok primary community hub; 484.9K follower leader is Kyle Lybarger @nativeplanttok)
-- #herbalistlife, #herbalism, #medicinalplants (TikTok and Instagram)
-- #foragingtiktok (14.1M+ views TikTok)
-- #homesteadherbalist, #homesteadgarden
-- #plantwitch (crossover audience between herbalism and earth spirituality — high engagement, broad reach)
-
-**Platform-specific hashtag structure:**
-Instagram: 5 broad (500K–2M posts) + 10 mid-tier (100K–500K) + 10 niche (10K–100K) + 5 branded
-TikTok: 3–5 total; algorithm deprioritizes hashtag stuffing; use only the most specific relevant tags
-
-### Three UGC Campaign Frameworks
-
-**Campaign 1: Zone Proof (evergreen)**
-Mechanism: Ask followers to post their zone-specific growing results with #GrowYourZone. Reshare selected posts in Instagram Stories weekly. The reshare reward is the incentive — no prize required.
-Prompt: "Show me your Zone [X] garden this [month]. What's growing, what's struggling, what surprised you? Tag #GrowYourZone."
-Why it works: Zone-specific content has high relevance to other growers in the same zone. A Zone 6 grower sharing their herb bed is more valuable to another Zone 6 grower than to the general herbalism audience. The content self-segments.
-Expected participation rate: 2–5% of followers per prompt in months 1–3; 8–12% after 6+ months of consistent resharing. Analog: Native plant photo contests run by garden-for-wildlife.org saw strong student participation when the submission window was short and resharing was immediate.
-
-**Campaign 2: Plant ID Challenge (seasonal, spring activation)**
-Mechanism: Post a close-up photograph of a native plant or common medicinal herb at a stage that makes identification non-obvious (new growth, winter-dead stalk, seed head). Ask followers to identify it in comments. Post the answer 24 hours later.
-Prompt: "What plant is this? First stage of spring growth. I found it in a Zone 5 garden. Comment your guess — answer tomorrow."
-Why it works: Comment depth is a primary Instagram and TikTok engagement signal. Identification challenges consistently produce above-average comment engagement because they invite participation without requiring purchase. The 24-hour hold creates a reason to return to the post.
-Cadence: 1–2 challenges/week during spring (March–May), 1/week remainder of year
-Integration with email: The weekly newsletter's "reader question" section can incorporate identification challenge winners, creating a cross-channel engagement loop.
-
-**Campaign 3: Recipe-to-Guide Bridge (for foraging/culinary audience)**
-Mechanism: Prompt followers who use foraged or home-grown plants to share what they made, with the plant identified and the guide used if applicable. Reshare with explicit credit.
-Prompt: "Made something from your garden or forage this weekend? Show me the plant + what you made with it. I'll reshare my favorite three this week."
-Why it works: The culinary herbalism audience (Tara Lanich-LaBrie's audience, Alexis Nikole Nelson's overflow audience) creates content naturally — they already photograph their food. A directed prompt with reshare incentive converts that existing behavior into UGC for Seedwarden.
-Product tie-in: Tag the relevant Seedwarden guide in each reshare caption: "Used the Wild Edibles guide? Link in bio."
-
-### UGC Platform Priority
-
-Pinterest rewards UGC least (algorithmic distribution favors original-creator content). Instagram Stories is the highest-ROI UGC reshare surface — Stories feel personal, not promotional, and preserve the community aesthetic. TikTok Duet and Stitch features are high-engagement UGC mechanisms specific to that platform; challenge a follower's plant identification or preservation method video as a Duet to create mutual reach.
+Open rate red flags: Below 28% for two consecutive sends signals deliverability degradation
+or subject line failure. Below 20% for three consecutive sends requires immediate list audit,
+warm-up pause, and subject line formula replacement.
 
 ---
 
-## Section 7: 20+ Content Idea Starters
+## Section 3: User-Generated Content Opportunities
 
-These are specific, ready-to-produce post ideas assigned to their highest-relevance seasonal window. Each includes the content format, hook, and Seedwarden product connection.
+### Why UGC Is Structurally Necessary for Seedwarden
 
-### Spring Window (February–May)
+Seedwarden launched June 1, 2026 with zero social proof. No testimonials, no customer
+photos, no practitioner endorsements. The fastest path to credibility in the herbalism
+community is not polished studio content — it is customers showing their Zone 5 herb beds
+in action, their fermentation results, or their seed-saving harvests. The community trusts
+peer documentation over brand production.
 
-1. **"Five native plants I found in a Zone 5 yard in March"** (TikTok, 20-second ID video) — identifies chickweed, cleavers, bittercress, violet, and dandelion with 10-second plant-in-hand shot per plant. Hook: "All five of these are edible. Most people pull them." Product: Wild Edibles guide.
+UGC also solves the content volume problem. A single content creator producing 4–5 posts
+per week per platform is a full-time job. Ten customers each posting one photo per month
+with a branded hashtag generates forty additional authentic touchpoints with zero production
+cost.
 
-2. **"The allergy herb herbalists have been using for 200 years"** (Instagram Reel) — nettle identification and harvest window. Hook: "Your allergy medicine might be growing in your yard right now." Product: Zone Calendar (nettle planting window), Wild Edibles guide.
+### Campaign 1: #GrowYourZone — Zone Documentation (Evergreen)
 
-3. **"Zone 5 planting schedule: what goes in the ground in April"** (Instagram carousel, 8 slides) — one crop per slide with direct sow vs. transplant date, companions, and spacing. Each slide is individually saveable. Product: Zone-by-Zone Seed Starting Calendar. This is the highest-save format in this niche.
+Mechanism: Ask followers to document their zone-specific growing results and tag
+#GrowYourZone. Reshare selected posts in Instagram Stories every Sunday. The reshare is
+the incentive — no prize required, because the herbalism community values acknowledgment
+from credible accounts.
 
-4. **"Grow your own antihistamine"** (TikTok, under 30 seconds) — nettle, goldenrod, and elderberry as histamine-regulating herbs with brief growing note for each. Hook: "Three plants to grow NOW for fall allergy season." Product: Zone Calendar, Wild Edibles.
+Prompt language (post this as a caption or Story question sticker once per week):
+"Show me your Zone [fill in yours] garden this [month]. What's growing, what's struggling,
+what surprised you? Tag #GrowYourZone — I'll reshare my favorite three this Sunday."
 
-5. **"What I planted in my Zone 5 medicinal herb bed in April (and what failed)"** (Instagram Reel, behind-the-scenes) — transparency about germination rates, spacing failures, and species surprises. Vulnerability content like this drives comment engagement. Product: Seed Saving Field Manual.
+Why it works: Zone-specific content self-segments. A Zone 6 grower shares Zone 6 content
+with other Zone 6 growers. A Zone 4 grower who sees the reshare thinks "that person is
+growing what I can grow." The content has built-in relevance without Seedwarden curating
+for relevance — the zone system does the work.
 
-6. **"Dandelion is not a weed. Here are 12 uses."** (Instagram carousel, 12 slides) — identification, harvest timing, edible parts, medicinal applications, tincture basics, seed saving, zone compatibility. Classic herbalism carousel format. Product: Wild Edibles guide.
+Participation rate benchmarks: 2–5% of followers per prompt in months 1–3 (when follower
+count is low, absolute submissions are small but percentage rate is high). 8–12% after
+6+ consistent months of resharing. Reference point: Native plant photo contests run by
+garden-for-wildlife.org organizations see strong participation when submission windows are
+7 days or shorter and resharing is public and immediate.
 
-7. **"The plant ID mistake that almost ruined our dinner"** (TikTok) — a lookalike mistake story (safe error, not a poisoning — e.g., confusing plants that look similar but are both edible). The "close call" narrative format generates shares. Product: Wild Edibles (safe identification protocols).
+Phase 2 activation: Start #GrowYourZone as soon as Instagram account has 200+ followers
+(approximately Weeks 4–6 of Phase 2, assuming 1–2% follow rate on early content).
 
-8. **"Three companion planting pairs every Zone 5 gardener should know"** (Instagram carousel) — basil/tomato, nasturtium/squash, dill/brassica with pest pressure reasoning. Highly shareable because counterintuitive. Product: Companion Planting Chart.
+### Campaign 2: Plant ID Challenge — Comment Engagement Engine (Seasonal)
 
-### Summer Window (June–August)
+Mechanism: Post a close-up photograph of a native plant or common medicinal herb at an
+ambiguous growth stage (new spring growth, winter stalk, seed head, unfurled leaf).
+Ask followers to identify it in comments. Post the answer 24 hours later in a follow-up
+Story or comment reply.
 
-9. **"We have too many cucumbers. Here's the 20-minute fix."** (TikTok) — hands packing lacto-fermented pickles, real-time, no editing. Hook: "No canning pot. No special equipment. Just salt." Product: Fermented and Preserved Harvest Handbook.
+Prompt: "What plant is this? First stage of spring growth, Zone 5. Comment your guess —
+answer tomorrow."
 
-10. **"Your pepper plants are about to explode. Here's what to do."** (Instagram Reel) — pepper harvest timing, drying vs. fermenting vs. hot sauce options. Hook: "Most people watch their peppers go soft. Don't." Product: Grow Your Own Hot Sauce.
+Algorithm value: Comment depth is the primary Instagram and TikTok engagement signal
+after save rate. Identification challenges consistently produce above-average comment
+volume because they invite participation without requiring purchase, product knowledge,
+or any commitment. The 24-hour hold creates a reason to return to the post (return visits
+improve distribution in both platforms' algorithms).
 
-11. **"What I harvested in July (and how I preserved it all)"** (Instagram carousel, 10 slides) — month-in-review format documenting actual harvests with preservation method for each. This is an authentic content type that builds trust because it shows real-world results. No product hard sell needed — the preservation guide is the natural CTA.
+Cadence: 1–2 identification challenges per week during spring (March–May) and fall (September).
+Weekly during summer (June–August). Monthly in winter. Scale cadence to comment response
+volume — if challenges generate 30+ comments per post, increase frequency.
 
-12. **"The fermented garlic recipe that broke TikTok in 2023 — and why it works medicinally"** (TikTok) — trending recipe + herbalism education = cross-audience reach. Fermented garlic content has among the highest completion rates in food/herbalism TikTok content.
+Cross-channel integration: The weekly newsletter's reader question section can feature the
+identification challenge answer and top comment responses, creating a cross-channel loop
+that rewards email subscribers with insider resolution of the social challenge.
 
-13. **"What your Zone [X] garden should have done in July (but didn't)"** (Instagram Reel) — retrospective framing from the perspective of an experienced grower. "I wish I'd succession-planted every two weeks." Relatable content drives saves. Product: Zone Calendar.
+### Campaign 3: Recipe-to-Guide Bridge — Culinary Herbalism Overlap
 
-### Fall and Prepper Window (August–October)
+Mechanism: Prompt followers who use foraged or home-grown plants to share what they made,
+with plant identified and guide used if applicable. Reshare with explicit credit and
+product tag.
 
-14. **"The honest question: if the grocery store closed tomorrow, how many weeks would you make it?"** (TikTok) — non-paranoid, practical framing. Hook: "Most American households have about 4 days. Here's how to get to 30." Product: Survival Garden Regional Plans.
+Prompt: "Made something from your garden or forage this weekend? Show me the plant and what
+you made with it. Tag #SeedwardenGarden — I'll reshare my three favorites this week with full
+credit."
 
-15. **"October in a Zone 5 garden: what's still producing and what to do with it"** (Instagram carousel) — documenting late-season production (kale, Brussels sprouts, winter squash, root vegetables) with preservation method for each. Authentic, season-specific, saveable. Product: Harvest Preservation Field Manual.
+Why it works: The culinary herbalism audience (the overlap between Alexis Nikole Nelson's
+foraging audience and Tara Lanich-LaBrie's culinary audience) already photographs their food.
+A directed prompt with reshare incentive converts existing behavior into Seedwarden brand
+content. The platform-specific version for TikTok is a Duet or Stitch — Seedwarden duets a
+follower's foraged meal video to add the growing and identification layer that the follower
+lacked.
 
-16. **"Three herbs to grow for winter immune support — start them in August"** (TikTok) — elderberry, echinacea, and ginger with zone-specific timing for each. August is when this content has maximum actionability. Product: Zone Calendar, Wild Edibles.
+Product tie-in: In every reshare caption, tag the relevant guide: "Used our Wild Edibles
+guide? Link in bio." Track UTM clicks from reshare captions to measure direct attribution.
 
-17. **"What 'food sovereignty' means in a Zone 4/5 winter"** (Instagram Reel) — food sovereignty framing with practical homesteader grounding. This vocabulary resonates with Linda Black Elk's audience, the food sovereignty community, and preppers simultaneously. Product: Survival Garden bundle.
+### Incentive Structures That Work in This Niche
 
-### Evergreen Content (year-round)
+The herbalism community is skeptical of overt brand promotion and resistant to giveaways
+that feel transactional. The following incentive structures are community-appropriate:
 
-18. **"The five medicinal herbs I wish I'd grown earlier"** (Instagram carousel) — echinacea, valerian, ashwagandha, tulsi, and motherwort with one-paragraph rationale for each. This is a "top list" format that performs consistently regardless of season and has high Pinterest save rates. Product: Zone Calendar (growing windows for each herb).
+- Public acknowledgment (reshare in Stories, tag with credit) — highest-performing incentive
+  in this niche; costs nothing; builds social capital for the contributor
+- Featured "grower of the month" in the weekly newsletter — provides Kit email list exposure
+  to the contributor's audience if they share the feature
+- Early access to new guide before public Etsy listing — high perceived value, low cost,
+  creates a contributor identity that bonds the person to the brand
+- Discount code (SEEDWARDEN15) mentioned in reshare caption — soft affiliate dynamic;
+  creates micro-conversion opportunity when the contributor's audience clicks through
 
-19. **"What no one tells you about [commonly misused herb]"** (TikTok series) — contraindication and safety content for popular herbs (elderberry dosing, St. John's Wort drug interactions, black cohosh and pregnancy). Carmen Adams' audience proves this content type earns deep trust and high engagement in this niche. Product: none immediately — this is authority-building content that earns practitioner-audience trust.
-
-20. **"Behind the shop: what's actually selling and what isn't"** (Instagram Reel) — monthly transparency post. Seedwarden's PHASE_2_SEASONAL_CONTENT_CALENDAR.md already identifies these as consistently high performers for saves and follows. Authentic shop-owner updates build the human connection that converts followers to buyers and buyers to advocates.
-
-21. **"How I saved seeds from last year's garden to plant this year"** (TikTok, spring) — seed fermentation process for tomato seeds, dry-save method for beans, storage containers. A complete beginner-level education in 30 seconds. Product: Seed Saving Field Manual.
-
-22. **"Zone Quick-Start Card: free for [your zone]"** (Instagram Reel, lead magnet promotion) — the most direct conversion tool in the content stack. Post once per month with the Kit landing page link. Direct, frictionless, high-value for the viewer. Seed-grab rate should be 3–5% of Reel viewers who see the link-in-bio.
+Do not: run cash prize giveaways (attracts non-targeted audience and inflates follower
+count without qualified buyer intent), require follows as contest entry (follow-gating
+violates Instagram terms and attracts low-quality followers), or offer free products in
+exchange for posts without FTC disclosure — the herbalism community will call this out.
 
 ---
 
-## Section 8: Success Metrics and Measurement Plan
+## Section 4: Kit Email Sequence Expansion
 
-### Platform Metrics by Tier
+The existing 5-email welcome sequence (documented in KIT_EMAIL_LAUNCH_SEQUENCE.md) handles
+subscriber onboarding, first product offer, cohort tagging, and Day 14 retention. This
+section designs four additional sequences that address gaps in the current lifecycle:
+subscribers who viewed but did not download, subscribers who need seasonal education,
+subscribers ready for affiliate product recommendations, and lapsed subscribers.
 
-Metrics are organized into three tiers: leading indicators (signal that the strategy is working, check weekly), lagging indicators (signal that the strategy is converting, check monthly), and diagnostic metrics (understand why something is working or failing, check quarterly).
+**Kit platform constraint**: The free tier supports one automation sequence. Sequences 2–4
+below require Kit Creator plan ($25/month billed annually at ~$33/month billed monthly).
+All four sequences are buildable at Creator tier without upgrade to Creator Pro.
 
-**Leading Indicators (weekly check)**
+### Sequence A: Abandoned Guide Sequence (Browse-But-No-Download)
 
-| Metric | Platform | Target Range | Alert Threshold |
-|--------|----------|-------------|-----------------|
-| Save rate on carousels | Instagram | 5–15% of reach | Below 3% |
-| Video completion rate | TikTok | 70–85% | Below 50% |
-| Profile visits per post | TikTok | 3–8% of views | Below 1% |
-| Pin click-through rate | Pinterest | 0.5–2% | Below 0.2% |
-| Email open rate | Kit | 38–50% (welcome seq.) | Below 28% |
+This sequence addresses subscribers or site visitors who viewed a guide landing page but
+did not add to cart or complete the Etsy purchase. Kit does not natively track Etsy
+browse behavior, so this sequence is triggered by a different mechanism: the email link
+click. When a subscriber clicks an Etsy product link in any Seedwarden email but the
+purchase is not recorded in Kit within 48 hours (Zapier automation monitors this), an
+abandoned guide sequence fires.
 
-**Lagging Indicators (monthly check)**
+Sequence length: 3 emails
+Sending cadence: Day 1 after trigger, Day 3, Day 7
 
-| Metric | Target (Month 3) | Target (Month 6) | Alert |
-|--------|-----------------|-----------------|-------|
-| Instagram followers | 200–500 | 500–1,500 | Flat for 6 weeks |
-| TikTok followers | 500–2,000 | 2,000–8,000 | Flat for 4 weeks |
-| Pinterest monthly views | 5,000–15,000 | 25,000–75,000 | Below 2,000 at month 3 |
-| Email subscribers | 80–150 | 200–400 | Below 50 at month 2 |
-| Email-to-Etsy click rate | 3–8% | 5–10% | Below 2% |
-| Etsy social-referral orders | 3–8/month | 10–20/month | 0 at month 2 |
+**Email A1 — Subject**: "Still thinking about [guide name]?"
+Preview text: "Here's the section most people buy it for"
+Tone: Consultative, not pushy. The subscriber showed interest; the email validates that
+interest without creating pressure.
+Body framework: (1) "You clicked through to [guide name] — I wanted to share the part
+that [solves their core problem]." (2) Paste a 3–5 sentence excerpt from the guide that
+demonstrates the core value. (3) "If you want the full guide, it's [price] on Etsy —
+here's the link." (4) "No pressure either way." No coupon in Email A1 — the excerpt
+is the value delivery.
 
-**Diagnostic Metrics (quarterly review)**
+**Email A2 — Subject**: "One thing that's different about the [Zone X] guide"
+Preview text: "Not what you'd find in a generic foraging book"
+Tone: Evidence-based specificity. This email names one concrete difference between
+Seedwarden's guide and generic alternatives (zone specificity, contraindication depth,
+seed saving integration).
+Body framework: (1) Name the specific difference. (2) Show it with a concrete example
+("The Zone 5 Wild Edibles guide identifies elderberry bloom timing as late May in Zone 5,
+early June in Zone 4 — most guides just say 'spring.'") (3) Soft CTA + SEEDWARDEN10
+coupon (smaller than SEEDWARDEN15 to preserve the welcome sequence coupon value).
 
-- Save-to-follow ratio on Instagram: Measures what fraction of saves convert to follows. If save rate is high but follow rate is low, the content is useful but not brand-building — review call-to-action and profile bio.
-- Cost per email subscriber (if running any paid promotion): Target under $2.50 per subscriber. Above $5 means traffic source mismatch.
-- Revenue per email subscriber: Phase 1 baseline extrapolated to email list: target $1.50–3.00 per subscriber over 12 months. Below $0.50 indicates funnel disconnection (email traffic not reaching product pages).
+**Email A3 — Subject**: "Last note on [guide name] — then I'll let it go"
+Preview text: "A question first, then a small offer"
+Tone: Direct and honest. This is the last contact point on this topic.
+Body framework: (1) "I've sent two notes about [guide name] and haven't heard back —
+totally fine." (2) "Quick question: was there something you wanted to know before
+buying? Hit reply and I'll answer it directly." (3) SEEDWARDEN15 coupon with 5-day
+expiration. (4) "If this isn't right for you, no worries — I'll keep sending the
+regular weekly newsletter."
 
-### Phase 1 Data Gate — What to Look For Before Phase 2 Full Activation
+### Sequence B: Seasonal Education Sequence (Biweekly Botanical Lessons)
 
-Phase 2 content strategy should be adjusted based on Phase 1 data once 45–60 days of live sales exist. The three decisions Phase 1 data unlocks:
+This sequence deploys to all confirmed subscribers after they complete the 5-email welcome
+sequence. It is the primary content retention vehicle — the "why subscribers stay on the
+list" even if they have already purchased or are not actively shopping.
 
-**Decision 1: Which product cluster to lead with on TikTok.**
-If Phase 1 shows Seed Saving Field Manual as top seller → TikTok strategy leads with seed saving content.
-If Zone Calendar dominates → TikTok strategy leads with zone-specific planting content.
-If Wild Edibles leads → TikTok strategy leads with identification content.
+Sequence length: 12 emails (6 months of biweekly delivery)
+Sending cadence: Every 14 days, beginning Day 21 post-signup
 
-**Decision 2: Which cohort is converting at highest rate.**
-If homesteader cohort converts at 3%+ → Instagram is the right lead platform (homesteader audience indexes on Instagram).
-If forager cohort dominates → TikTok should receive more production investment.
-If prepper cohort shows unexpected strength → Accelerate the August prepper content activation to July.
+**Email B1 (Day 21) — Subject**: "The plant that's everywhere in your zone right now"
+Preview text: "And what most people don't know about it"
+Tone: Curious, expert. This is not a selling email — it is the email that earns the right
+to sell later. No product CTA in B1 or B2.
+Content framework: One plant. Zone-segmented send: Zone 3–5 receives different plant
+than Zone 6–10. Identification features (3 bullet points), current seasonal relevance
+(why this plant matters in this exact month), one use case (medicinal or culinary), one
+safety note (not a warning label — a natural part of the plant's profile).
 
-**Decision 3: Seasonal content investment level.**
-If Phase 1 shows peak sales in April–May → Double down on spring content production. Budget more time for the March–May window.
-If summer preservation shows unexpectedly high demand → Front-load the July preservation content to June.
+**Email B2 (Day 35) — Subject**: "How to grow [last email's plant] from seed"
+Preview text: "Germination tips that the seed packet doesn't include"
+Tone: Practical and specific. This is the grow-your-own follow-up to the identification
+email. Bridges the foraging introduction to the gardening action.
+Content framework: Germination requirements for the featured plant, zone-specific planting
+window, companion plants, one common mistake and how to avoid it. First soft product
+mention: "If you want the full growing calendar for your zone, here's where to find it [Etsy link]."
 
-### Path A vs Path B Content Resource Allocation
+**Emails B3–B12**: Rotating through 6 plants per growing season (spring, summer, fall,
+winter) with the same identification-then-grow-it pairing structure. Each pair is zone-
+segmented. Subject line formulas: alternating between plant-specific ("Everything you can
+do with black-eyed Susan") and seasonal-urgency ("August is the last month to start this
+herb for fall harvest").
 
-**Path A (measured growth, under 8 hours/week available for content):**
-Prioritize Pinterest (lowest time-per-post, highest compounding return) and one social platform (Instagram or TikTok — not both). Email automation covers retention. Do not attempt daily posting on multiple platforms — post quality degrades.
-Weekly time allocation: Pinterest 2 hours (batch loading), Instagram or TikTok 4 hours, Email 2 hours
+### Sequence C: Affiliate Recommendation Sequence
 
-**Path B (accelerated growth, 12–15 hours/week available):**
-All three social platforms active simultaneously. Weekly batch production: film 3–4 TikToks in one session, batch-design 2 Instagram carousels, load 8–10 Pinterest pins.
-Hire-or-not decision: If weekly content production exceeds 12 hours for 3+ consecutive months with positive metrics, evaluate a part-time social media assistant or VA at this stage.
+This sequence fires after a subscriber has been on the list for 60+ days AND has purchased
+at least one Seedwarden guide (Kit Automation: subscriber has both "60-days-active" tag
+and "etsy-purchaser" tag). The sequence introduces Mountain Rose Herbs and Strictly
+Medicinal Seeds as curated recommendations — not mass affiliate promotion.
+
+Sequence length: 4 emails
+Sending cadence: Day 1, Day 14, Day 28, Day 60
+
+**Email C1 — Subject**: "The seed supplier I actually order from"
+Preview text: "No affiliation here (or, okay, a small one — I'll explain)"
+Tone: Transparent and personal. The FTC-required disclosure is in the email body, framed
+as authenticity rather than obligation.
+Body framework: (1) "You've been growing with the Seedwarden guides for a few months — at
+some point you'll want seeds for the specific medicinal herbs in them." (2) "The supplier
+I use for Zone 5 medicinal herb seed stock is Strictly Medicinal Seeds (Oregon-based, USDA
+Organic certified, seed quality I can verify)." (3) "Disclosure: If you order through my
+link, I receive a small commission — this doesn't change what you pay, and I only recommend
+suppliers I've actually ordered from." (4) Affiliate link with UTM tracking.
+
+**Email C2 — Subject**: "The herb supplier that ships to Zone 4 without killing the plants"
+Preview text: "Roots, not seeds, for the herbs that won't germinate from seed"
+Body framework: Same structure as C1 but for Mountain Rose Herbs' bulk herb and root
+sourcing (echinacea root, valerian root, ashwagandha root for planting). Mountain Rose
+Herbs' affiliate program pays 10% commission with a 24-hour cookie window. This email
+targets the purchase moment when subscribers want live plant starts, not just seeds.
+
+**Email C3 — Subject**: "Building your Zone [X] medicinal herb garden: the sourcing list"
+Preview text: "Everything I buy, what it costs, and where I get it"
+Body framework: A consolidated sourcing reference email — 8–10 commonly-needed medicinal
+herb seeds and plants, with supplier name, approximate price, and affiliate link for each.
+This is the highest-value email in the sequence because it functions as a reference document
+that subscribers save and share.
+
+**Email C4 — Subject**: "New to the herb cabinet: what I've added this month"
+Preview text: "A quick update from the garden (and a shelf in the kitchen)"
+Body framework: Monthly or quarterly personal update format — what Seedwarden is currently
+growing, processing, or using from the medicinal herb catalog. Soft affiliate mentions
+woven naturally into the narrative. This is the "newsletter" style email that maintains
+the relationship established in C1–C3.
+
+### Sequence D: Retention and Win-Back Sequence
+
+This sequence fires when a subscriber has gone 60 days without opening any email (Kit
+identifies non-openers via engagement tag absence). The goal is to retain subscribers who
+have drifted, without compromising list health by carrying long-term non-engagers.
+
+Sequence length: 3 emails
+Sending cadence: Day 1, Day 7, Day 14
+
+**Email D1 — Subject**: "Still growing? A quick check-in"
+Preview text: "It's been a while — here's what's happened in the garden"
+Tone: Warm and non-pressuring. This is not a "we miss you" email — those feel performative.
+It is a genuine check-in with actual content value.
+Body framework: (1) "It's been about two months since we last connected — I wanted to
+send a quick seasonal update." (2) A 150-word seasonal summary: what's happening in Zone
+5 gardens right now, one plant currently at peak. (3) "If you're still growing and want
+to stay on the list, you don't need to do anything — you'll keep getting the weekly
+newsletter." (4) "If things have changed and you'd rather not receive these, the
+unsubscribe link is below."
+
+**Email D2 — Subject**: "Something I built that might actually be useful"
+Preview text: "A free resource, no strings attached"
+Body framework: (1) A genuinely free resource: a seasonal identification quick-reference
+(PDF or inline visual) for the current month. (2) Download link with UTM tracking.
+(3) "If this is useful, I'd love to hear what you're growing this season — just hit reply."
+The reply request is the re-engagement signal in Kit's system. One reply from D2 resets
+the non-opener tag.
+
+**Email D3 — Subject**: "This is the last email unless you'd like to stay"
+Preview text: "Simple question — one click answer"
+Tone: Direct, respectful, final. This email is the list hygiene mechanism.
+Body framework: (1) "I've sent two check-ins recently and haven't heard back — that's okay."
+(2) "If you'd like to keep receiving Zone-specific growing content from Seedwarden, click
+here: [Kit subscription confirmation link]." (3) "If you don't click, I'll remove you from
+the list in 7 days — no hard feelings, and you can always resubscribe at [Kit landing page]."
+(4) "Either way — happy growing."
+
+Non-click after D3: Unsubscribe from list. A clean list of 200 engaged subscribers delivers
+better Etsy referral revenue and higher Kit deliverability scores than 500 subscribers
+with 40% non-engagement.
+
+---
+
+## Section 5: 90-Day Seasonal Content Calendar — June Through August 2026
+
+This template operates at the weekly level. Day-level scheduling is handled in
+PHASE_2_SEASONAL_CONTENT_CALENDAR.md. This document provides the framework, milestone dates,
+hashtag structure, and email send windows. Production volume assumes Path A (under 8 hours
+per week available for content). Path B producers can scale posting frequency 50% above
+these targets.
+
+### Botanical Milestone Dates — June Through August 2026 (Zones 4–6)
+
+The following dates are the "content triggers" — specific botanical events when urgency
+framing is accurate and engagement peaks:
+
+**June:**
+- June 1–10: Elderflower bloom window opens (Zone 5–6). Peak ID and harvest content.
+- June 10–20: Wild bergamot (Monarda fistulosa) bloom. Native bee content overlap.
+- June 15–30: Yarrow peak harvest window. First flower head before secondary flowering.
+- June 20: Summer solstice. Evergreen content: "longest day in the herb garden" format.
+- June 25 – July 5: Black elderberry full bloom fades; berry development begins.
+
+**July:**
+- July 1–15: Chanterelle mushroom season begins (after rain events). First mushroom content.
+- July 5–20: Sumac drupes develop (Rhus glabra, R. typhina). Lemonade/tea content.
+- July 10–25: St. John's Wort (Hypericum perforatum) flowering peak. One of the most-searched
+  medicinal herbs. Drug interaction safety content performs here.
+- July 15–31: Blueberry harvest peak (wild and cultivated). Recipe-bridge UGC prompt.
+- July 20 – August 5: Black raspberry season. Short harvest window = urgency content window.
+- Late July: Preservation season fully active. Lacto-fermentation, hot sauce, drying herbs.
+
+**August:**
+- August 1–15: Goldenrod (Solidago spp.) bloom begins. Allergy myth-busting content
+  (goldenrod is insect-pollinated and not an allergen — ragweed is the culprit). High
+  shareability: "goldenrod doesn't cause your allergies — here's what does."
+- August 5–20: Wild ginger (Asarum canadense) seed collection window. Seed saving content.
+- August 10–25: Late-season chanterelles and chicken-of-the-woods peak.
+- August 15–31: Echinacea root harvest window (3rd-year plants). Root harvest content.
+- August 20 – September 10: Fall garlic planting preparation (Zone 4–5). Pre-planting content.
+- Late August: Mushroom season content ramps up. Mushroom season is the single highest-
+  engagement foraging topic by search volume in late summer.
+
+### Weekly Content Template — June (Weeks 1–4)
+
+**Week 1 (June 1–7): Elderflower Urgency Window**
+Monday: TikTok — elderflower ID video (20 sec, plant in hand). Hook: "This blooms for
+10 days and then it's gone for a year. Here's how to identify it."
+Wednesday: Instagram carousel — elderflower uses (8 slides: ID, harvest, tea, syrup,
+vinegar, tincture, berry timing, safety). Save-optimized. Product: Wild Edibles guide.
+Friday: Pinterest — elderflower infographic pin. Title: "Elderflower harvest window by zone
+(Zone 4–9 guide)." Posted 45 days ago for this week's search traffic — create next pin
+for mid-July search at end of this week.
+Email send: None (Email sequence running automatically; no broadcast this week)
+#GrowYourZone prompt: Post on Sunday Stories.
+
+**Week 2 (June 8–14): Zone-Specific Planting Update**
+Monday: TikTok — "What's going in the Zone 5 garden this week" format. Real-time,
+no editing. Hook: "Mid-June Zone 5 planting: what I wish I'd started earlier."
+Wednesday: Instagram Reel — companion planting pair of the week. Yarrow + brassicas
+(yarrow repels cabbage moths). Save-optimized caption.
+Friday: Pinterest — Yarrow identification and harvest infographic.
+Sunday: #GrowYourZone reshare + Plant ID Challenge post.
+
+**Week 3 (June 15–21): Summer Solstice + Yarrow Peak**
+Monday: TikTok — yarrow harvest technique (20 sec). Hook: "Harvest the first flower
+head before it opens fully — here's why."
+Wednesday: Instagram carousel — native plants blooming in June by zone (Zones 3–9 breakdown,
+one plant per slide). High save potential — zone-segmented content.
+Thursday: Email broadcast (seasonal): "Summer solstice — what's happening in your zone's
+herb garden right now." Zone-segmented send (Zone 3–5 vs. Zone 6–10 versions).
+Friday: Pinterest — summer herb garden by zone infographic.
+
+**Week 4 (June 22–30): UGC Activation + St. John's Wort Preview**
+Monday: TikTok — Plant ID Challenge (close-up of St. John's Wort bud). Answer: Thursday.
+Wednesday: Instagram — UGC reshare carousel (best #GrowYourZone posts from June). Credit
+all contributors. High-trust content.
+Thursday: TikTok answer post for ID Challenge.
+Friday: Pinterest — St. John's Wort infographic (drug interaction safety). Early pin for
+July search traffic.
+Sunday: Email newsletter (weekly Thursday cadence): "June in review: what grew, what failed,
+what's coming in July." First mention of mushroom season preview.
+
+### Weekly Content Template — July (Weeks 5–8)
+
+**Week 5 (July 1–7): Preservation Season Launch**
+Monday: TikTok — lacto-fermentation intro (15 sec). Hook: "No canning pot. No special
+equipment. Just salt and your garden overflow."
+Wednesday: Instagram carousel — 6 preservation methods by ingredient (ferment, dry, freeze,
+infuse in oil, tincture, syrup). Highly saveable. Product: Fermented and Preserved Harvest
+Handbook.
+Friday: Pinterest — preservation method guide infographic.
+Email: Sequence running; no broadcast. Note: If subscriber list reaches 100+ by this week,
+launch Sequence B (seasonal education biweekly) for all subscribers past Day 21.
+
+**Week 6 (July 8–14): St. John's Wort Peak + Safety Content**
+Monday: TikTok — "What TikTok gets wrong about St. John's Wort" (drug interactions).
+Hook: "This herb interacts with more medications than any other common medicinal plant."
+Wednesday: Instagram carousel — St. John's Wort profile (ID, harvest, uses, contraindications
+in detail). The contraindication depth is what makes this shareable to practitioners.
+Thursday: Email newsletter (weekly): "July herb spotlight: St. John's Wort and why the
+drug interaction story matters." Include practitioner-specific section.
+Sunday: #GrowYourZone + Recipe-to-Guide Bridge UGC prompt.
+
+**Week 7 (July 15–21): Berry Season + Preservation Peak**
+Monday: TikTok — "Wild berries to know in [Zone] this week." Black raspberry, wild
+blueberry, and juneberry identification in 25 seconds.
+Wednesday: Instagram Reel — hot sauce recipe process video. Hands-visible, outdoor prep.
+Friday: Pinterest — wild berry identification by region infographic.
+Email broadcast (mid-month seasonal): "Your garden is about to overflow — the preservation
+checklist." Zone-segmented. Product: Harvest Season Bundle. This is the highest-revenue
+email send window of the summer.
+
+**Week 8 (July 22–31): Goldenrod Preview + Allergy Myth Content**
+Monday: TikTok — "Goldenrod does not cause your allergies. Here's proof." Hook sets up the
+myth-bust. Highly shareable — misinformation correction format drives shares.
+Wednesday: Instagram carousel — goldenrod profile (native pollinators, culinary uses,
+medicinal uses, allergy myth correction). Educational and authoritative.
+Friday: Pinterest — goldenrod infographic with "not an allergen" messaging.
+Sunday: Monthly transparency post on Instagram Reel: "What actually sold in July, what
+didn't, and what I'm making for August."
+
+### Weekly Content Template — August (Weeks 9–13)
+
+**Week 9 (Aug 1–7): Echinacea Root Season + Prepper Activation**
+Monday: TikTok — echinacea root harvest (Zone 5). Hook: "Third-year echinacea in the
+ground — harvest time." Process video.
+Wednesday: Instagram carousel — growing echinacea from seed (germination to harvest cycle,
+3-year commitment). Product: Zone Calendar (growing window for echinacea).
+Friday: Pinterest — medicinal herb root harvest calendar infographic.
+Email broadcast: First prepper-adjacent send. Subject: "Before the frost: what to stock,
+what to plant, what to put up." Avoid extreme framing — practical homesteader tone.
+
+**Week 10 (Aug 8–14): Mushroom Season Launch**
+Monday: TikTok — chanterelle identification (forest floor, 20 sec). Hook: "Best foraging
+find of the summer — and how not to confuse it with the false chanterelle."
+Wednesday: Instagram carousel — summer mushroom identification guide (chanterelle, chicken-
+of-the-woods, lion's mane, hen-of-the-woods preview). Save-optimized. Add safety note on
+lookalike species in every slide.
+Thursday: Email newsletter: "Mushroom season is here — field guide to Zone 5 summer fungi."
+Friday: Pinterest — mushroom season foraging calendar by region.
+
+**Week 11 (Aug 15–21): Fall Garden Planning**
+Monday: TikTok — "Fall garlic planting window: when to plant in Zone 4, 5, 6." Direct,
+actionable. Hook: "Plant garlic now. You'll thank yourself in May."
+Wednesday: Instagram carousel — fall garden planting guide by zone (Zones 3–9). Highly
+shareable between zone-matched gardeners.
+Friday: Pinterest — fall planting calendar infographic. Post this now (August) for
+September search traffic.
+Email broadcast: Zone-segmented fall planting window notification. This is Sequence B Email
+B7 for long-term subscribers; write as a broadcast for the full list.
+
+**Weeks 12–13 (Aug 22 – Aug 31): Seed Collection + Phase 3 Preview**
+Monday: TikTok — seed collection process (echinacea, wild bergamot, black-eyed Susan).
+Wednesday: Instagram carousel — seed saving from medicinal herbs (dry storage method,
+viability timeline, storage container guide). Product: Seed Saving Field Manual.
+Thursday: Email newsletter: "What I'm harvesting in seeds right now — and why seed saving
+matters more than I expected." Includes Phase 3 medicinal herb guide preview teaser.
+Friday: Pinterest — seed saving infographic.
+Sunday: Monthly transparency post: "August revenue update and what Phase 3 looks like."
+
+### Hashtag Bank — June Through August
+
+**June hashtags** (rotate 3 per TikTok post; use 8–10 per Instagram post):
+High-volume: #herbalism, #medicinalplants, #foraging
+Mid-tier: #elderflower, #yarrow, #herbgarden, #nativeplants, #foragingtiktok
+Niche: #zonefivegarden, #elderflowerseason, #wildedibles, #nativeplanttok
+Branded: #GrowYourZone, #SeedwardenGarden
+
+**July hashtags:**
+High-volume: #fermentation, #homesteading, #foraging
+Mid-tier: #lactofermentation, #stjohnswort, #mushrooms, #wildberries, #homesteadherbalist
+Niche: #chanterelles, #medicinalherbs, #herbalmedicine, #zone5garden
+Branded: #GrowYourZone, #SeedwardenGarden, #ZoneByZone
+
+**August hashtags:**
+High-volume: #mushroomseason, #herbalgarden, #homesteading
+Mid-tier: #echinacea, #goldenrod, #fallgarden, #seedsaving, #foragingtiktok
+Niche: #medicinalherbs, #zone5, #herbalistlife, #garlicharvest
+Branded: #GrowYourZone, #SeedwardenGarden
+
+### Email Send Calendar — June Through August
+
+| Date | Type | Subject (draft) | Segment |
+|------|------|-----------------|---------|
+| June 15 | Seasonal broadcast | "Summer solstice: what's happening in your zone" | Zone 3–5 / Zone 6–10 versions |
+| June 29 | Weekly newsletter | "June in review + July mushroom preview" | All subscribers |
+| July 13 | Weekly newsletter | "St. John's Wort and why the drug interaction story matters" | All subscribers |
+| July 15 | Seasonal broadcast | "Your garden is about to overflow — the preservation checklist" | All subscribers |
+| July 27 | Weekly newsletter | "Goldenrod does not cause your allergies — and what does" | All subscribers |
+| August 3 | Seasonal broadcast | "Before the frost: what to stock, what to plant" | All subscribers |
+| August 10 | Weekly newsletter | "Mushroom season: Zone 5 field guide to summer fungi" | All subscribers |
+| August 24 | Weekly newsletter | "What I'm harvesting in seeds right now" | All subscribers |
+
+---
+
+## Section 6: High-Conversion Content Ideas
+
+The following 22 content ideas are specific, ready-to-produce, and assigned to their
+highest-relevance seasonal window. Each includes the target platform, expected organic
+reach category, and conversion trigger.
+
+**Spring Window (February–May):**
+
+1. "Five native plants I found in a Zone 5 yard in March" — TikTok, 20-sec ID video.
+Reach: HIGH (spring + identification format = algorithm distribution). Conversion: Wild
+Edibles guide link in bio. Hook: "All five are edible. Most people pull them."
+
+2. "Zone 5 planting schedule: what goes in the ground in April" — Instagram carousel, 8
+slides. Reach: HIGH (zone-specific content gets reshared by zone-matched gardeners).
+Conversion: Zone-by-Zone Seed Starting Calendar. Each slide independently shareable.
+
+3. "Grow your own antihistamine" — TikTok, under 30 seconds. Reach: MEDIUM-HIGH (health
+crossover audience is large). Conversion: Zone Calendar (nettle and goldenrod growing
+windows). Hook: "Three plants to grow NOW for fall allergy season."
+
+4. "The allergy herb herbalists have used for 200 years" — Instagram Reel. Reach: MEDIUM.
+Conversion: Wild Edibles guide, Zone Calendar. Hook: "Your allergy medicine might be
+growing in your yard right now."
+
+5. "Dandelion is not a weed. Here are 12 uses." — Instagram carousel, 12 slides. Reach:
+HIGH (dandelion content consistently outperforms in spring in this niche). Conversion:
+Wild Edibles guide. Format: identification, harvest timing, edible parts, medicinal
+applications, tincture basics, seed saving, zone compatibility.
+
+6. "The plant ID mistake that almost ruined our dinner" — TikTok. Reach: HIGH (narrative
+format drives shares). Conversion: Wild Edibles guide (safe ID protocols). Note: Frame
+as a close call between two edible species to avoid alarming content — do not use
+poisoning scenarios as entertainment.
+
+7. "Three companion planting pairs every Zone 5 gardener should know" — Instagram carousel.
+Reach: MEDIUM. Conversion: Companion Planting Chart. Hook: Counterintuitive pairings drive
+saves better than confirmation of obvious knowledge.
+
+8. "What I planted in my Zone 5 medicinal herb bed in April (and what failed)" — Instagram
+Reel. Reach: MEDIUM. Conversion: Seed Saving Field Manual. Vulnerability framing drives
+comments; failure content builds community faster than success content.
+
+**Summer Window (June–August):**
+
+9. "Elderflower is blooming for 10 days. Here's everything you can do with it." — TikTok,
+25 sec. Reach: HIGH (urgency window + high-interest botanical). Conversion: Wild Edibles
+guide. Time-scarcity drives shares.
+
+10. "We have too many cucumbers. Here's the 20-minute fix." — TikTok. Reach: HIGH (summer
+preservation problem is universal). Conversion: Fermented and Preserved Harvest Handbook.
+Hook: "No canning pot. No special equipment. Just salt."
+
+11. "What TikTok gets wrong about St. John's Wort" — TikTok. Reach: HIGH (corrective
+content in an area of genuine public safety risk generates shares and comments). Conversion:
+none directly — authority-building content. Plant the brand as the safety-accurate source.
+
+12. "The fermented garlic recipe that breaks the internet — and why it works medicinally" —
+TikTok. Reach: HIGH (fermented garlic is among the highest-completion-rate food content on
+TikTok historically). Conversion: Fermented and Preserved Harvest Handbook. Cross-audience
+reach into food content niche.
+
+13. "Goldenrod does not cause your allergies. Here's proof." — TikTok. Reach: HIGH
+(misinformation correction in a commonly misunderstood topic drives significant shares).
+Conversion: Wild Edibles guide (goldenrod profile). Safety content earns practitioner
+reshares.
+
+14. "What I harvested in July (and how I preserved it all)" — Instagram carousel, 10 slides.
+Reach: MEDIUM. Conversion: Harvest Season Bundle. Transparency + real-world result builds
+purchase trust better than product photography.
+
+15. "Chanterelle identification: how not to pick a false chanterelle" — TikTok, 30 sec.
+Reach: HIGH (mushroom identification content has elevated algorithm distribution in late
+summer). Conversion: Wild Edibles guide. Safety framing drives saves.
+
+**Prepper and Fall Window (August–October):**
+
+16. "The honest question: if the grocery store closed tomorrow, how many weeks would you
+make it?" — TikTok. Reach: HIGH (preparedness content with non-extreme framing captures
+broad homesteader + mainstream audience). Conversion: Survival Garden Regional Plans.
+Hook: "Most US households have about 4 days. Here's how to get to 30."
+
+17. "October in a Zone 5 garden: what's still producing and what to do with it" — Instagram
+carousel. Reach: MEDIUM. Conversion: Harvest Preservation Field Manual. Authentic, season-
+specific, saveable.
+
+18. "Three herbs to grow for winter immune support — start them in August" — TikTok. Reach:
+MEDIUM (actionability in August gives this content above-baseline engagement — viewers can
+actually act on it). Conversion: Zone Calendar. Hook: August is the last actionable window.
+
+19. "What 'food sovereignty' means in a Zone 4/5 winter" — Instagram Reel. Reach: MEDIUM
+(food sovereignty vocabulary connects Seedwarden to Linda Black Elk's audience, food justice
+community, and preppers simultaneously — three distinct audiences in one concept). Conversion:
+Survival Garden bundle.
+
+**Evergreen Content (Year-Round):**
+
+20. "The five medicinal herbs I wish I'd grown earlier" — Instagram carousel. Reach: MEDIUM-
+HIGH (top-list format performs consistently regardless of season; high Pinterest save rate).
+Conversion: Zone Calendar (growing windows for each herb). Format: one herb per slide, one
+paragraph rationale.
+
+21. "Behind the shop: what's actually selling and what isn't" — Instagram Reel, monthly.
+Reach: MEDIUM. Conversion: indirect — trust-building content that converts followers to
+buyers and buyers to advocates over time. Seedwarden monthly transparency posts.
+
+22. "Zone Quick-Start Card: free for [your zone]" — Instagram Reel, monthly lead magnet
+post. Reach: LOW-MEDIUM (direct promotional content has lower reach than educational content).
+Conversion: Kit landing page subscriber. Post once per month with clear link-in-bio CTA.
+Seed-grab rate target: 3–5% of Reel viewers who tap the bio link.
+
+---
+
+## Section 7: Community Integration — Phase 2 Content as Phase 3 Pipeline
+
+### How Phase 2 Content Feeds Phase 3 Community Builder Recruitment
+
+Phase 3 launches June 22 – July 13, 2026 with a community builder recruitment target of
+3–5 content creators + 1 practice builder + 1 mentor (per COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md).
+Phase 2 content is the single most efficient sourcing mechanism for Phase 3 recruits —
+every post, newsletter, and UGC reshare is a recruitment signal to potential builders who
+are already engaged with the brand.
+
+The connection between Phase 2 and Phase 3 is not passive. Seedwarden should explicitly
+structure Phase 2 content to surface builder candidates before the July 1 recruitment window.
+The mechanism: high-engagement behavior on Phase 2 content (comment quality, UGC submission,
+email replies, repeat purchases) is a behavioral signal that predicts builder motivation and
+capability.
+
+### Metrics for Identifying Community Builder Candidates
+
+The COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md establishes three builder profiles (Content
+Creator, Practice Builder, Mentor) with credential thresholds. Phase 2 content generates the
+pre-credential behavioral data that identifies who to approach before the formal application
+process.
+
+Track the following signals in Kit and on social platforms to build a community builder
+candidate list:
+
+**Tier 1 indicators (any single indicator = add to watchlist):**
+- Submitted 2+ UGC posts with #GrowYourZone or #SeedwardenGarden
+- Replied to 3+ newsletter emails with substantive content (not unsubscribe or complaint)
+- Left 5+ comments on Instagram or TikTok posts with identification-quality content (named
+  a plant correctly, described a growing experience accurately, corrected a misinformation item)
+- Purchased 3+ guides across different product categories (suggests genuine multi-interest
+  engagement, not one-time buyer behavior)
+
+**Tier 2 indicators (combined with Tier 1 = high-priority outreach):**
+- Has an Instagram or TikTok account with 5K+ followers in a botanical/homesteading niche
+- Has shared a Seedwarden post to their own account (trackable via reshare metrics and
+  @mention monitoring)
+- Used Seedwarden guide content in a post or video (trackable via @mention and hashtag monitoring)
+- Responded positively to the "featured grower" UGC incentive
+
+**Tier 3 indicators (confirmed builder readiness):**
+- Initiated contact asking about collaboration, content creation, or partnership
+- Has self-identified as an herbalist student, RH, or clinical practitioner in email replies
+- Has demonstrated zone-specific content production in their own account (zone-matched
+  content is the primary Phase 3 production requirement)
+
+### Phase 2 Data Architecture for Phase 3 Screening
+
+Kit tagging structure for community builder candidate identification:
+
+Tag: `builder-candidate-watchlist` — applied manually when any Tier 1 indicator is observed.
+Tag: `builder-candidate-priority` — applied when Tier 1 + Tier 2 indicators are both present.
+Tag: `builder-candidate-confirmed` — applied after direct outreach confirms interest.
+
+Instagram monitoring: Set up a weekly review of #GrowYourZone and #SeedwardenGarden to
+collect Tier 1 and Tier 2 signal data. Do not rely on algorithm notification — manually
+search the branded hashtags weekly and log candidates in a tracking document.
+
+Target Phase 3 candidate list size: 15–25 watchlist candidates by July 1 (to recruit 3–5
+confirmed builders). A 15–25% conversion rate from watchlist to confirmed builder is realistic
+based on COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md's assessment of the AHG/NAHA network.
+
+### Should Phase 2 Content Prioritize Builder Candidate List Over Subscriber List?
+
+The answer is no — with one exception. The default Phase 2 content priority is email list
+growth (Kit subscribers) and Etsy revenue generation. Community builder candidates are
+sourced from the engaged fraction of that list and social following. Do not produce builder-
+specific content in Phase 2; produce high-quality educational content at volume, and the
+candidates will emerge from the engagement data naturally.
+
+The one exception: Pinterest is a lower-priority builder sourcing channel (builders self-
+select from engaged community members, not passive Pinterest traffic). Allocate Pinterest
+production effort toward revenue conversion (Zone Card lead magnet pins, product pins) and
+not toward builder sourcing.
+
+---
+
+## Section 8: Success Metrics and Iteration Triggers
+
+### Leading Indicators (Check Weekly — First 90 Days)
+
+These metrics signal whether the Phase 2 strategy is working before revenue data is
+statistically meaningful. Check every Monday for the prior week's data.
+
+| Metric | Platform | Target Range | Alert Threshold | Action If Alert |
+|--------|----------|-------------|-----------------|-----------------|
+| Reel save rate | Instagram | 3–6% of reach | Below 2% for 2 posts | Review carousel format — test longer slides with more specific information density |
+| Video completion rate | TikTok | 70–85% for under-30s | Below 50% for 3+ videos | Review hook formula — test opening with visual plant before voiceover starts |
+| Profile visit rate | TikTok | 3–8% of views | Below 1.5% | Strengthen bio CTA — ensure link-in-bio is current landing page |
+| Pin click-through rate | Pinterest | 0.5–2.0% | Below 0.2% | Test infographic format vs. product pin; review title keyword specificity |
+| Email open rate (welcome seq.) | Kit | 38–50% (Emails 1–2) | Below 28% | Pause sequence; audit deliverability; A/B test Email 1 subject line |
+| Email open rate (newsletter) | Kit | 30–42% | Below 22% for 2 sends | Switch from weekly to biweekly cadence; review subject line formula |
+| Weekly Kit subscriber growth | Kit | 5–20 new/week by Month 2 | Below 3/week at Month 2 | Increase Zone Card lead magnet promotion; add Pinterest pin targeting Kit landing page |
+
+### Lagging Indicators (Check Monthly — Months 1–6)
+
+Revenue and follower data requires 4–6 weeks to produce statistically meaningful signal.
+Check on the 1st of each month for the prior month.
+
+| Metric | Month 2 Target | Month 4 Target | Month 6 Target | Red Flag |
+|--------|---------------|---------------|---------------|----------|
+| Instagram followers | 150–400 | 400–1,000 | 800–2,500 | Flat for 6 consecutive weeks |
+| TikTok followers | 300–1,500 | 1,500–6,000 | 4,000–12,000 | Flat for 4 consecutive weeks |
+| Pinterest monthly views | 3,000–10,000 | 15,000–50,000 | 40,000–100,000 | Below 1,500 at Month 2 |
+| Kit subscribers | 60–120 | 150–300 | 300–600 | Below 40 at Month 2 |
+| Email-to-Etsy click rate | 3–7% | 5–10% | 6–12% | Below 2% at Month 3 |
+| Social-referral Etsy orders | 2–6/month | 8–16/month | 15–30/month | 0 at Month 2 |
+| Affiliate click revenue | N/A | $50–150/month | $150–400/month | 0 clicks at Month 3 |
+
+### Diagnostic Metrics (Check Quarterly)
+
+These metrics reveal the structural health of the content engine — not whether individual
+posts worked but whether the system is working.
+
+- Save-to-follow ratio on Instagram: If save rate is high (5%+) but follow rate is low
+  (under 0.5% of saves), the content is useful as a reference but not brand-building. Audit
+  the profile bio and CTA placement in carousel final slides.
+- Revenue per email subscriber (12-month projection): Target $1.50–3.00 per subscriber.
+  Below $0.50 indicates funnel disconnection — subscribers are not reaching Etsy product
+  pages from email traffic. Check UTM data in Google Analytics 4.
+- UGC submission rate: 2–5% of followers per monthly prompt is healthy. Below 1% at
+  Month 4 signals the community is not forming. Review UGC incentive structure and reshare
+  frequency.
+- Community builder candidate list growth: Target 15–25 candidates by July 1. Below 10 by
+  July 1 triggers Phase 3 outreach expansion to the AHG directory direct-search protocol
+  described in COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md Section 4.
+
+### Phase 2 to Phase 3 Scaling Decision Thresholds
+
+The following thresholds determine whether Phase 2 metrics support Phase 3 scaling vs.
+a Phase 2 optimization period before Phase 3 commitment.
+
+**Green light for Phase 3 scaling (all three required):**
+- Kit subscribers: 200+ confirmed and engaged (defined as 28%+ open rate over 60 days)
+- Etsy social-referral orders: 8+ per month for 2 consecutive months
+- TikTok or Instagram: at least one platform showing 30%+ follower growth month-over-month
+  for the past 6 weeks
+
+**Yellow light (Phase 2 optimization before Phase 3):**
+- Kit subscribers: 100–199 confirmed
+- Etsy social-referral orders: 3–7 per month
+- Social growth: positive but below 15% month-over-month on any platform
+- Action: Extend Phase 2 by 4–6 weeks with increased posting frequency on the highest-
+  performing platform before committing Phase 3 production resources.
+
+**Red light (strategy review before Phase 3):**
+- Kit subscribers: Below 100 at Month 3
+- Etsy social-referral orders: Below 3 per month at Month 3
+- Social growth: flat or declining on all three platforms
+- Action: The product-market fit signal is not strong enough to justify Phase 3 investment.
+  Convene a positioning review: is the zone-specific angle landing? Is the foraging/medicinal
+  herb crossover clear in content? Is the free Zone Quick-Start Card compelling enough as
+  a lead magnet? Phase 3 should not launch into a Phase 2 that has not found its audience.
+
+### TikTok Affiliate Click-Through Target
+
+Mountain Rose Herbs affiliate program (10% commission, 24-hour cookie) is the primary
+affiliate revenue source. Target benchmark: 0.5–2.0% click-through rate on affiliate
+email links (Sequence C emails). Below 0.3% over 3 sends triggers a product pairing review —
+the herb or supplier being recommended does not match subscriber purchase behavior. Above
+2.0% over 3 sends triggers an increase in Sequence C frequency (add Email C5 as a "what
+I'm brewing this month" format that organically references affiliate products).
+
+At Month 6, if the affiliate revenue track is below $50/month with 300+ subscribers, the
+issue is not the email content but the Kit-to-Etsy funnel. Audit UTM attribution to confirm
+that affiliate links are correctly tagged and that Kit subscribers are receiving the Sequence
+C emails as intended.
 
 ---
 
 ## Research Sources
 
-- [#Herbalism on TikTok: PubMed Analysis](https://pubmed.ncbi.nlm.nih.gov/41056388/) — Cross-sectional study of 120 videos, Jan 2025; spiritual health content outperformed personal experience content across all engagement metrics
-- [Herbalism TikTok Analysis (ResearchGate)](https://www.researchgate.net/publication/396316783_Herbalism_on_TikTok_An_Analysis_of_Engagement_Metrics_Content_Themes_and_Influencer_Credibility_in_Digital_Health_Communication)
-- [SocialInsider 2026 Instagram Benchmarks](https://www.socialinsider.io/social-media-benchmarks/instagram) — Carousel engagement 10%, Reels 6% by reach share
-- [Instagram Carousel Engagement Guide 2026](https://carouselli.com/blog/instagram-carousel-engagement) — Save signal as primary ranking factor
-- [Dash Social 2026 TikTok Benchmarks](https://www.dashsocial.com/social-media-benchmarks/tiktok)
-- [TikTok Engagement Rate Benchmarks 2025](https://emplicit.co/tiktok-engagement-rate-benchmarks-2025/)
-- [Kit Creator Economy Email Stats 2024](https://kit.com/resources/blog/email-marketing-stats) — 44% average open rate, 3.7% CTR
-- [Herbal Academy Instagram](https://www.instagram.com/herbalacademy/?hl=en) — 875K followers confirmed
-- [Chestnut School of Herbal Medicine](https://chestnutherbs.com/) — 303K followers, content strategy via job posting analysis
-- [Alexis Nikole Nelson Wikipedia](https://en.wikipedia.org/wiki/Alexis_Nikole_Nelson) — 4.9M TikTok, 2.8M Instagram, growth trajectory data
-- [The Medicine Circle](https://themedicinecircle.com/) — Culinary herbalism seasonal content model
-- [The Outdoor Apothecary](https://www.outdoorapothecary.com/) — Seasonal living framing, bioregional herbalist model
-- [Pinterest Seasonal Content Planning](https://growpinterest.com/how-to-plan-pinterest-content-for-seasonal-growth-in-2025/) — 45–60 day advance posting guideline
-- [Most Popular Pinterest Categories 2026](https://pinhouss.com/2026/01/05/most-popular-pinterest-categories/) — Gardening is 9th largest category, 2 billion pins
-- [Herbalism Spring Allergy Season Content](https://theherbalacademy.com/blog/4-remedies-for-allergy-season/) — Herbal Academy allergy-season content strategy
-- [Native Plants Social Media Promotion](https://abnativeplants.com/blogs/industry-professionals/3-creative-ways-to-promote-native-plants-on-social-media) — Video, contests, problem-solving posts framework
-- [Top TikTok Foraging Accounts](https://impakter.com/the-8-best-tiktok-accounts-about-foraging/) — Account roster and content style analysis
-- [Rise of TikTok Foragers](https://i-d.co/article/tiktok-foraging-foragers/) — #foragingtiktok 14.1M+ views, Alexis Nikole Nelson origin story
-- [Herbalism Through the Seasons: Spring](https://ediblesema.com/foraging/herbalism-through-the-seasons-spring/) — "Spring is the herbalist's Christmas" framing
-- [Foraging Future Trends](https://wildharvester.com/foraging-basics/future-of-foraging/) — Community growth data
-- [UGC Campaigns Guide](https://curator.io/blog/user-generated-content-campaigns) — UGC engagement peaks at 15% in niche communities
-- [Plant Photo Contest Model](https://content.gardenforwildlife.com/learn/college-conservation-how-to-engage-students-in-a-native-plant-photo-contest) — Short submission windows maximize participation
-- [Email Nurture Sequence Best Practices](https://www.mailerlite.com/blog/nurture-email-campaign-sequence) — Nurtured leads make 47% larger purchases
-- [Herbalism Through the Seasons: Marketing for Herbal Products](https://supliful.com/blog/best-marketing-strategies-for-herbal-products) — Educational content as primary trust-building mechanism
-- [@nativeplanttok TikTok](https://www.tiktok.com/@nativeplanttok?lang=en) — Kyle Lybarger, 484.9K followers, 10.9M likes
+- [SocialInsider 2026 Instagram Benchmarks](https://www.socialinsider.io/social-media-benchmarks/instagram) — Carousel 10% engagement, Reels 6% by reach share
+- [Instagram Reels Statistics 2026](https://retensis.com/blog/instagram-reels-statistics-2026) — Save rate 1–3% average; 3%+ indicates high-value educational content
+- [Instagram Engagement Rate by Niche 2026](https://creatorflow.so/blog/instagram-engagement-rate-benchmarks-2026/) — Educational content 3–6% engagement rate
+- [Kit.com Email Sequence Guide](https://kit.com/resources/blog/email-sequence) — Sequence architecture and automation best practices
+- [Kit.com 2026 Review — Email Vendor Selection](https://www.emailvendorselection.com/kit-review/) — Platform automation capabilities; abandoned cart limitation confirmed
+- [Kit.com Features — Automations](https://kit.com/features/automations) — Visual automation builder, trigger types
+- [MailerLite Email Benchmarks 2025](https://www.mailerlite.com/blog/compare-your-email-performance-metrics-industry-benchmarks) — Education sector 28–39% open rate
+- [Email Marketing Benchmarks 2026 — WebFX](https://www.webfx.com/blog/marketing/email-marketing-benchmarks/) — Health and wellness 28–48% open rate ceiling
+- [Mountain Rose Herbs Affiliate Program](https://mountainroseherbs.com/affiliates/) — 10% commission, 24-hour cookie, $50 payout minimum
+- [Mountain Rose Herbs Affiliate Program Details — GetLasso](https://getlasso.co/affiliate/mountain-rose-herbs/) — Commission confirmed 10% per sale
+- [TikTok #herbalism](https://www.tiktok.com/tag/herbalism) — 249.2K posts confirmed June 2026
+- [HeyOrca 2026 Trending Audio for Reels](https://www.heyorca.com/blog/trending-audio-for-reels-tiktok) — Audio strategy for niche educational content
+- [Pinterest 2026 Brand Moments Guide](https://business.pinterest.com/blog/pinterest-brand-moments-guide-2026/) — Seasonal content planning framework
+- [Most Popular Pinterest Categories 2026](https://pinhouss.com/2026/01/05/most-popular-pinterest-categories/) — Gardening 9th largest category, 2B+ pins
+- [Pinterest 2026 Marketing Strategy](https://blog.crescitaly.com/how-to-use-pinterest-2026-social-media-marketing-strategy/) — Evergreen + seasonal combination; 45-day timing rule
+- [Mushroom Foraging Seasonal Calendar 2026](https://www.mushroomtracker.ca/blog/mushroom-foraging-seasonal-calendar.html) — Chanterelle and summer mushroom timing confirmed
+- [What to Forage in July — PunkMed](https://punkmed.com/blog/what-to-forage-in-july/) — July edible window plant list
+- [Midwest Foraging Calendar](https://homesteadingsuburbia.com/foraging-calendar/) — Zone-specific seasonal calendar reference
+- [Late Summer Foraging](https://homesteading.com/late-summer-foraging/) — August window: goldenrod, echinacea, mushrooms confirmed
+- [#Herbalism TikTok PubMed Analysis](https://pubmed.ncbi.nlm.nih.gov/41056388/) — Cross-sectional study Jan 2025; engagement data by content type
+- [Buffer TikTok Trending Songs June 2026](https://buffer.com/resources/trending-songs-tiktok/) — Sound strategy for educational niche
+- [UGC Campaigns Guide](https://curator.io/blog/user-generated-content-campaigns) — UGC participation rates and incentive structure benchmarks
 
 ---
 
-*Prepared June 3, 2026. Cross-references: PHASE_2_SEASONAL_CONTENT_CALENDAR.md (6-month day-level calendar), PHASE_2_EMAIL_STRATEGY.md (Kit.com setup and sequence copy), TRACK_B_SOCIAL_MEDIA_COMPETITIVE_ANALYSIS.md (12-account competitor profiles with full metrics). This document provides the strategic synthesis; those documents provide the execution specifics.*
+*Prepared June 3, 2026. This is v2.0 of the Phase 2 Content Roadmap. Cross-references:
+PHASE_2_SEASONAL_CONTENT_CALENDAR.md (day-level calendar), KIT_EMAIL_LAUNCH_SEQUENCE.md
+(welcome sequence configuration), COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md (Phase 3
+builder recruitment criteria), TRACK_B_SOCIAL_MEDIA_COMPETITIVE_ANALYSIS.md (full 12-account
+competitor profiles with follower counts and engagement data). Activate Phase 2 full content
+engine after 30-day Phase 1 baseline assessment (earliest: July 1, 2026).*

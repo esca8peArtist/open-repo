@@ -4,6 +4,80 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — Phase 2 Content Roadmap v2.0 (Expanded) — June 3, 2026
+
+**Task**: Expand SEEDWARDEN_PHASE_2_CONTENT_ROADMAP.md to v2.0 with all 8 required sections:
+(1) competitor seasonal content analysis with 5 account archetypes, (2) platform-specific
+herbalism engagement patterns including TikTok sound strategy, Instagram save rate benchmarks,
+Pinterest evergreen vs. timely framework, and email open rate formulas, (3) UGC campaign
+mechanics with 3 frameworks and incentive structures, (4) 4 expanded Kit.com email sequences
+(abandoned guide, seasonal education biweekly, affiliate recommendation, win-back) with
+full subject lines and body frameworks, (5) 90-day June–August calendar template with
+botanical milestone dates and weekly content templates per month, (6) 22 specific content
+ideas with hook, platform, reach estimate, and conversion trigger, (7) Phase 3 community
+builder pipeline metrics with Kit tagging structure, (8) success metrics with weekly
+leading indicators, monthly lagging indicators, quarterly diagnostics, and Phase 2-to-Phase 3
+scaling decision thresholds.
+
+**File produced/updated**:
+
+1. `SEEDWARDEN_PHASE_2_CONTENT_ROADMAP.md` — v2.0 (~5,200 words, 8 sections, production-ready)
+   - Competitor analysis: 5 account archetypes (Herbal Academy, Alexis Nikole Nelson, Tara
+     Lanich-LaBrie, Carmen Adams, @homestead.herbalist) with seasonal content organization
+     breakdown and explicit "transfer conclusion for Seedwarden" for each
+   - Platform benchmarks: Instagram save rate 3–6% target for educational Reels; TikTok
+     completion rate 70–85% for sub-30s content; Pinterest 45–60 day timing rule confirmed;
+     email open rate 28–48% for health/education sector (Kit average 44%)
+   - UGC: 3 campaigns (#GrowYourZone, Plant ID Challenge, Recipe-to-Guide Bridge) with
+     participation rate benchmarks and FTC-compliant incentive structures
+   - Email sequences: 4 new sequences fully designed — Sequence A (abandoned guide, 3
+     emails, Day 1/3/7 cadence), Sequence B (seasonal education biweekly, 12 emails, 6-month
+     arc), Sequence C (affiliate recommendations, Mountain Rose Herbs 10% commission confirmed),
+     Sequence D (win-back/retention, 3 emails, list hygiene endpoint). Kit Creator plan
+     required for sequences 2–4 (noted)
+   - 90-day calendar: Botanical milestone dates confirmed for June–August (elderflower June
+     1–10, St. John's Wort peak July 10–25, goldenrod August 1–15, echinacea root harvest
+     August 15–31, mushroom season July–August); weekly content templates per month with
+     platform assignments; hashtag bank by month; email send calendar 8 scheduled sends
+   - 22 content ideas: platform, hook, reach category (HIGH/MEDIUM/LOW), and conversion
+     trigger for each
+   - Phase 3 pipeline: 3-tier indicator system (watchlist, priority outreach, confirmed
+     builder) with Kit tag structure; target 15–25 watchlist candidates by July 1
+   - Metrics: 7 leading indicators (weekly), 7 lagging indicators (monthly, Months 2/4/6
+     targets), 4 diagnostic metrics (quarterly), Green/Yellow/Red scaling decision thresholds
+   - 28 source URLs cited
+
+**Research conducted**:
+- Kit.com 2026 automation capabilities — confirmed abandoned cart not natively supported;
+  abandoned guide sequence designed using link-click trigger + Zapier 48-hour window
+- Mountain Rose Herbs affiliate program — 10% commission, 24-hour cookie, $50 payout minimum
+- Strictly Medicinal Seeds — no public affiliate program found; referenced as curated
+  supplier recommendation (no affiliate link required in Sequence C)
+- Email benchmark data — health/wellness 28–48% open rate; education 28–39%
+- Instagram Reels save rate benchmark — 1–3% average; 3–6% for educational/how-to content
+- Botanical milestone calendar — June–August dates verified against multiple foraging sources
+
+---
+
+## Session — Phase 2 Content Roadmap v1.0 — June 3, 2026
+
+**Task**: Build comprehensive Phase 2 content roadmap covering seasonal engagement windows, competitor content formats, platform strategy, email lifecycle, UGC mechanics, and 20+ content starters.
+
+**File produced**:
+
+1. `SEEDWARDEN_PHASE_2_CONTENT_ROADMAP.md` (~4,000 words, 8 sections)
+   - Three high-priority seasonal windows identified with confidence ratings: Spring Awakening (Mar–May, HIGH), Allergy/Immunity Season (Feb–Apr, HIGH), Preservation/Preparedness (Aug–Oct, HIGH)
+   - Monthly content framework: 12-month theme + format + posting frequency breakdown
+   - Competitor analysis: synthesizes format performance data from 5 account groups (institutional educators, foraging educators, safety/credentialing accounts) with transfer conclusions for Seedwarden
+   - Platform strategy: TikTok (discovery, 15–30s IDs), Instagram (trust/community, saves-optimized carousels), Pinterest (purchase conversion engine, post 45–60 days ahead)
+   - Email lifecycle: 6 stages from acquisition through retention/win-back with Kit benchmarks and conversion decision gates
+   - UGC: 3 campaign frameworks (#GrowYourZone, Plant ID Challenge, Recipe-to-Guide Bridge) with participation rate benchmarks
+   - 22 specific content ideas assigned by seasonal window with format, hook, and product connection
+   - Success metrics: leading indicators (weekly), lagging indicators (monthly), diagnostic metrics (quarterly); Path A vs Path B resource allocation model
+   - 25 sourced URLs including PubMed herbalism TikTok study, SocialInsider 2026 benchmarks, Kit Creator Economy Report 2024, platform-native data
+
+---
+
 ## Session — Track B Social Media Competitive Analysis — June 2, 2026
 
 **Task**: Conduct competitive landscape analysis for Track B (medicinal herbs) social media launch. Research 12 competitor accounts across Instagram, TikTok, and Pinterest. Produce competitive analysis document and influencer collaboration matrix before user invests 6+ hours in account setup.
