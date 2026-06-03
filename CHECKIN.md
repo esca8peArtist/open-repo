@@ -6,6 +6,47 @@
 
 **Status**: All decision-ready materials verified in place and recent. System operational. Ready for instant activation upon user approval. **3h 15m remaining until 23:59 UTC deadline.**
 
+## Since Last Check-in — Session 2717 (2026-06-03 20:39–20:50 UTC)
+
+**Status**: ✅ VERIFIED — System operational and ready. All decision-support materials verified in place. No autonomous work available (expected state).
+
+**What Was Accomplished**:
+
+1. **Orientation & Block Verification**:
+   - ✅ Read ORCHESTRATOR_STATE.md: Confirmed "Phase 1-6 autonomous work complete and staged. Zero additional autonomous scope available (correct by design)"
+   - ✅ Read BLOCKED.md: Three active blocks remain, all awaiting user action:
+     - stockbot — Alpaca data feed subscription (decision needed by 23:59 UTC)
+     - cybersecurity-hardening — Windows restart required (awaiting user action)
+     - mfg-farm — Test print execution (awaiting user action)
+   - ✅ Verified Jetson SSH timeout (expected in current network state)
+   - ✅ Processed INBOX.md: No new items (all prior items processed in Session 2714-2715)
+
+2. **Decision-Support Readiness Validation**:
+   - ✅ Verified `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md` exists and is production-ready
+   - ✅ Verified `DOMAIN_49_EXECUTION_PREFLIGHT.md`, contingency tree, and coalition protocol staged
+   - ✅ Verified `ALPACA_IEX_FEED_ACTIVATION_RUNBOOK.md` and `ALPACA_SIP_SUBSCRIPTION_UPGRADE_RUNBOOK.md` staged
+   - ✅ Confirmed EXPLORATION_QUEUE.md Items 55-59 (decision-gated) are production-ready for instant activation
+
+3. **System Status Summary**:
+   - **Autonomously ready**: All Phase 1-6 core work complete (40 domains + Phase 2 batch 2 research + execution runbooks)
+   - **Awaiting decisions**: 4 user choices by 23:59 UTC (3h 20m remaining from session start)
+   - **Blockers**: 3 active (all user-action-dependent, no orchestrator resolution available)
+   - **Exploration Queue**: 10+ decision-gated items staged, >3 active per protocol
+
+**No Commits This Session** — All state accurate from Session 2714-2716 pre-flight work.
+
+**Next Session Dependencies**:
+- If ANY user decision arrives: Orchestrator executes corresponding runbook immediately
+- If NO decisions by June 4 08:00 UTC: Orchestrator creates UPDATE in CHECKIN.md marking decision window closed, shifts focus to contingency planning
+
+**Critical Timeline Reminder**:
+- Domain 49: June 4–5 execution window is critical (Louisiana primary filing deadlines June 5–8)
+- If approved after June 5 20:00 UTC: Window closes, cannot execute, loses redistricting leverage
+- Systems-resilience: June 5 publication deadline (Phase 5 Wave 1 author onboarding)
+- All other decisions can proceed through June 4 without time-critical loss
+
+---
+
 ## Since Last Check-in — Session 2714 (2026-06-03 20:14–21:15 UTC)
 
 **Status**: ✅ COMPLETE — Critical EOD runbooks production-ready. System ready for instant execution.
