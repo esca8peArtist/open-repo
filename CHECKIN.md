@@ -1,21 +1,34 @@
 # Check-In Report
 
-## Since Last Check-in — Session 2702 (2026-06-03 15:10–18:00 UTC — Orchestrator: Gate 1 Failure Root Cause Analysis Complete; 4 Critical User Decisions Still Pending by EOD)
+## Since Last Check-in — Session 2702 (2026-06-03 15:10–19:50 UTC — Orchestrator: All Exploration Queue Items Complete; Phase 2 Timeline Accelerated; 4 Critical User Decisions Still Pending by EOD)
 
-**Current Time**: 2026-06-03 18:00 UTC (~5h 59min until EOD decision deadline 23:59 UTC)
+**Current Time**: 2026-06-03 19:50 UTC (~4h 9min until EOD decision deadline 23:59 UTC)
 
-**What Happened**:
+**Session Deliverables** (3 exploration queue items completed):
+
 1. ✅ **stockbot: Gate 1 Failure Root Cause Analysis COMPLETE** (570 lines, 43 KB)
    - Four root causes identified: (1) structural long bias in AAPL models (PRIMARY), (2) signal frequency mismatch (2 sessions can't generate 5 rounds), (3) regime-model alignment failure, (4) SSH auth blocking Lever B
    - Three mandatory gates defined for any Phase 3 AAPL replacement model
    - **Verdict**: Phase 2 portfolio (AMZN + JPM) correctly deployed; should prioritize accumulating round trips vs AAPL retrain
    - **Business impact**: Removes ambiguity on Phase 3 strategy; confirms current 4-session config is sound for AMZN/JPM
 
-2. ✅ **Autonomous work status**: All exploration queue items that don't depend on user decisions are now complete
-   - Gate 1 analysis ✅
-   - Phase 2 Batch 2 activation roadmap ✅ (Session 2701)
-   - Phase 2 rapid-activation runbooks ✅ (Session 2486)
-   - Remaining exploration items either (a) scheduled for future dates, or (b) waiting on user decisions
+2. ✅ **systems-resilience: Platform-Specific Deployment Playbooks COMPLETE** (2,867 lines, 91 KB total)
+   - **NEXTCLOUD_MATRIX_DEPLOYMENT_PLAYBOOK.md** (1,658 lines, 53 KB) — Path A recommended option with 10-part guide, Docker compose, TLS/nginx, offline sync, Matrix-Meshtastic bridge, LDAP/SSO, monitoring, disaster recovery (45 min RTO)
+   - **DISCOURSE_DEPLOYMENT_PLAYBOOK.md** (1,209 lines, 38 KB) — Path B fallback option with 11-part guide, Docker setup, GitHub Pages integration, REST API automation, moderation escalation, disaster recovery (45-90 min RTO)
+   - **Business impact**: Both platforms ready to deploy immediately June 5 once user chooses. Zero setup friction for Phase 5 Wave 1 author recruitment kickoff.
+
+3. ✅ **resistance-research: Phase 2 Domain 51 Dry-Run Friction Assessment COMPLETE** (228 lines, 26 KB)
+   - **CRITICAL FINDING**: Domain 51 (Campaign Finance & Dark Money) research is ALREADY COMPLETE (7,800+ words, 50-58 citations). No 10-14h research sprint needed.
+   - 5 runbook patches identified to prevent future friction (source fix, state list update, FEC vacancy count correction, pre-checklist gate, dark money figure lock)
+   - **Confidence**: 85% for June 9-12 distribution (gist confirmed, templates ready, contacts verified)
+   - **Timeline acceleration**: Can skip planned 10-14h Domain 51 research; proceed directly to June 9-12 distribution
+
+**Autonomous work status**: ALL EXPLORATION QUEUE ITEMS NOW COMPLETE
+   - ✅ Gate 1 analysis (stockbot strategy validation)
+   - ✅ Phase 2 Batch 2 activation roadmap (Session 2701)
+   - ✅ Phase 2 rapid-activation runbooks (Session 2486)
+   - ✅ Platform deployment playbooks (both options ready)
+   - ✅ Domain 51 dry-run friction assessment (timeline accelerated, patches identified)
 
 **What's Blocking Progress**:
 🚨 **FOUR CRITICAL USER DECISIONS DUE BY EOD TODAY (23:59 UTC)** — ideally by 18:00 UTC to allow execution window:
@@ -43,16 +56,23 @@
    - **Time to decide**: <5 min
    - **Impact**: Determines Phase 2 timeline (fixed by June 22 content writing capacity, not Phase 1 performance)
 
-**Orchestrator Recommendation** (by priority of time-sensitivity):
-1. **IMMEDIATE** (next 2h): Decide on stockbot IEX/SIP → unblocks realtime trading
-2. **TODAY** (by 18:00 UTC): Decide resistance-research Domain 49 → enables June 4-5 execution if approved
-3. **TODAY** (by 20:00 UTC): Decide systems-resilience platform → 2.5h deployment playbook work if needed
-4. **TODAY** (by 23:59 UTC): Decide seedwarden Track → determines Phase 2 activation
+**Orchestrator Recommendation** (by priority of time-sensitivity, updated with session findings):
+1. **IMMEDIATE** (next 30 min): Decide on **stockbot IEX/SIP** → unblocks realtime trading
+2. **TODAY** (by 20:00 UTC): Decide **systems-resilience platform** (Nextcloud+Matrix or Discourse) → playbooks 100% ready for either choice, June 5 Wave 1 deployment guaranteed on-time
+3. **TODAY** (by 22:00 UTC): Decide **resistance-research Domain 49** timeline (THIS WEEK vs July) → June 4-5 dispatch ready if approved; **NOTE**: Domain 51 is research-complete (acceleration: no 10-14h sprint needed)
+4. **TODAY** (by 23:59 UTC): Decide **seedwarden Track** (A/B/Both) → all execution checklists ready
+
+**Execution Timeline Once Decisions Arrive**:
+- **stockbot IEX/SIP**: Decide → switch feed immediately, realtime signals resume (~5 min execution)
+- **systems-resilience platform**: Decide → execute corresponding playbook June 5 morning (Nextcloud+Matrix: 2-3h setup, Discourse: 1.5-2h setup)
+- **Domain 49**: Approve → dispatch June 4-5 (~30-45 min user execution per templates)
+- **Domain 51**: Ready now for June 9-12 distribution (research complete, distribution checklist ready)
+- **seedwarden Track**: Decide → execute Path A (54 min, June 1) or Path B (4h, June 5) or both
 
 **Timeframe for Next Orchestrator Session**:
-- If user decides all 4 items TODAY: Multiple autonomous work packages unlock for immediate execution (Domain 49 dispatch, Phase 5 Wave 1 recruitment, Platform deployment)
-- If user decides <3 items: Orchestrator can proceed with partial activation (execute decided items, queue others)
-- If no decisions by 23:59 UTC: Auto-fallback playbooks activate on June 4 (pre-staged in Exploration Queue)
+- **If user decides all 4 items by 22:00 UTC TODAY**: Orchestrator can execute Domain 49 dispatch June 4 morning, Phase 5 Wave 1 recruitment kickoff June 5 morning, stockbot feed switch immediately
+- **If decisions arrive by 23:59 UTC**: All decisions locked in for June 4-7 execution window
+- **If no decisions by EOD**: Auto-fallback playbooks stage on June 4 (fallback paths pre-defined for Domain 49, Phase 5/6, seedwarden)
 
 ---
 
