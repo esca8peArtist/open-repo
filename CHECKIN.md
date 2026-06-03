@@ -3,6 +3,41 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2644, 2026-06-03 00:11–01:18 UTC — Exploration Queue Expansion + Post-Market Runbook Complete)
+
+**Session Status**: ✅ **POST-MARKET ANALYSIS RUNBOOK PRODUCTION-READY** — Expanded Exploration Queue with 3 new items (queue was empty). Executed top-priority item: Stockbot Post-Market June 3 Analysis Runbook (48 KB, 1,028 lines, 6,759 words). System fully staged for market open (13:15 UTC) and post-market analysis (20:00 UTC).
+
+**Work Completed**:
+- ✅ **Exploration Queue Expansion** (2 min): Added 3 new items per protocol (queue had 0 active items). Items: (1) resistance-research Phase 1 Coalition Leverage Analysis (4-5h, June 15 checkpoint), (2) **stockbot Post-Market Runbook** (COMPLETED), (3) seedwarden Phase 2 Content Roadmap (6-7h, Phase 2 decision-gated)
+- ✅ **Stockbot Post-Market Analysis Runbook** (1h 7 min, Agent a1dbbc94b453eda9a):
+  - **Deliverable**: `projects/stockbot/JUNE_3_MARKET_ANALYSIS_RUNBOOK.md` (1,028 lines, 6,759 words, 9 sections)
+  - **Scope**: Decision-tree runbook for post-market execution at ~20:00 UTC
+  - **Sections**: Pre-Analysis Checklist → Execution Analysis → PnL Validation → Model Performance → Thermal/Infrastructure → Three Decision Trees (Positive/Flat/Loss scenarios) → Strategic Reset Tracking → Escalation Criteria → Copy-paste Commands
+  - **Key feature**: Correctly scoped to 2 active sessions (AMZN, JPM); handles June 1 AAPL suspension and June 2 AMZN carry position
+  - **Actionable**: All three decision trees include immediate next steps, escalation triggers, and user contact templates
+
+**System Status** (unchanged from Session 2643):
+- 🟢 **Stockbot**: June 3 13:15 UTC auto-wake confirmed. Infrastructure fully ready. Post-market runbook ready for execution at 20:00 UTC.
+- 🟡 **Resistance-Research**: Domain 59 distribution ready (user execution, ~30-45 min). Phase 2 decisions due EOD June 3.
+- 🟡 **Seedwarden**: Gate 1 infrastructure ready, user activation decision due EOD June 3.
+- 🟡 **Systems-Resilience**: Phase 6 complete, platform selection due EOD June 3.
+- 🔴 **Cybersecurity-Hardening**: VeraCrypt pre-boot restart required (user action).
+- 🔴 **Mfg-Farm**: Test print execution required (user action).
+
+**Exploration Queue Status**:
+Active items: 3 new items added
+- ⏳ resistance-research Phase 1 Coalition Leverage Analysis (4-5h, due June 15)
+- ✅ stockbot Post-Market Analysis Runbook (PRODUCTION-READY, execute post-market 20:00 UTC)
+- ⏳ seedwarden Phase 2 Content Roadmap (6-7h, decision-gated)
+
+**Next Scheduled Work**:
+1. **June 3 13:15 UTC**: Orchestrator auto-wake for stockbot market-open monitoring (automatic cron)
+2. **June 3 13:30–20:00 UTC**: Live market session
+3. **June 3 ~20:00 UTC**: Execute JUNE_3_MARKET_ANALYSIS_RUNBOOK.md (decision trees, escalation routing)
+4. **June 3 EOD**: User decision deadline (Phase 2 domains, seedwarden path, systems-resilience platform)
+
+---
+
 ## Since Last Check-in (Session 2643, 2026-06-03 00:04 UTC — Checkpoint Confirmation: All Autonomous Work Complete)
 
 **Session Status**: ✅ **SYSTEM FULLY READY — AWAITING USER DECISIONS + SCHEDULED EVENTS** — Confirmed Sessions 2641-2642 assessment: all autonomous work complete, no new developments in past 4 minutes. System at natural checkpoint before June 3 EOD deadline and stockbot market open (13:15 UTC auto-wake).
