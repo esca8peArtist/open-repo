@@ -3,6 +3,43 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2648, 2026-06-03 00:46–00:58 UTC — Queue Refresh + Post-Market Item Staging)
+
+**Session Status**: ✅ **MARKET-READY + QUEUE REFRESHED** — Orientation confirmed all infrastructure production-ready (unchanged from Sessions 2644-2647). Both active blocks remain manual user actions (VeraCrypt restart, test print execution). Regenerated Exploration Queue with 3 post-market analysis items to support June 3 trading outcome analysis + June 4 user decision briefs. Zero blockers. System ready for market open.
+
+**Work Completed**:
+1. ✅ **Orientation & Block Assessment** (5 min): ORCHESTRATOR_STATE/BLOCKED.md/INBOX.md all consistent; no changes from prior sessions. Both blocks manual-only (no auto-resolution).
+2. ✅ **Project Scope Review** (3 min): All 13 active projects assessed. Verdict: zero autonomous scope (all work complete, awaiting user action/scheduled events).
+3. ✅ **Exploration Queue Refresh** (2 min): Previous session queue items all completed/deferred. Added 3 new high-value post-market analysis items to PROJECTS.md (Session 2648 NEW ITEMS):
+   - **stockbot: June 3 Post-Market Analysis Protocol & Phase 3 Architecture Briefing** (20:00-21:00 UTC, 1.5-2h) — post-market outcome analysis → Phase 3 go/no-go decision
+   - **resistance-research: June 3 Wave 1 Impact Assessment & Phase 2 Activation Protocol** (14:00-15:30 UTC, 1-1.5h) — intra-market engagement analysis → Phase 2 activation trigger
+   - **systems-resilience: June 4 Multi-Project Decision Support & Q2 Strategic Planning** (June 4 00:00-02:00 UTC, 2-3h) — platform selection + seedwarden strategy + resource allocation
+
+**System Status** (fully ready, unchanged from Session 2647):
+- 🟢 **Stockbot**: Auto-wake scheduled 13:15 UTC. 2-session config (JPM 6/6 ✅, AMZN 5/6 ✅). Credentials verified. Thermal headroom 30-40°C. Post-market runbook ready (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md).
+- 🟡 **Resistance-Research**: Domain 59 production-ready (user fill/send ~30-45 min). Phase 2 decisions due June 3 EOD.
+- 🟡 **Seedwarden**: Gate 1 infrastructure ready. User activation decision due June 3 EOD. Track B social strategy decision due June 4.
+- 🟡 **Systems-Resilience**: Phase 6 complete. Platform selection (Nextcloud/Discourse/Mighty Networks) due June 4.
+- 🔴 **Cybersecurity-Hardening**: VeraCrypt restart required (manual user action). Cannot progress autonomously.
+- 🔴 **Mfg-Farm**: Test print execution required (manual user action). Cannot progress autonomously.
+
+**Exploration Queue Status** (3 items):
+- ⏳ **stockbot: June 3 Post-Market Analysis Protocol** (20:00-21:00 UTC, 1.5-2h) — post-market decision support
+- ⏳ **resistance-research: June 3 Wave 1 Impact Assessment** (14:00-15:30 UTC, 1-1.5h) — intra-market engagement signals
+- ⏳ **systems-resilience: June 4 Multi-Project Decision Support** (June 4 00:00-02:00 UTC, 2-3h) — platform + strategy briefs
+
+**Next Scheduled Work**:
+1. **June 3 13:15 UTC**: Auto-wake for market-open monitoring (automatic cron)
+2. **June 3 13:30–20:00 UTC**: Live market session (6.5h monitoring available via JUNE_3_PRE_MARKET_BRIEF.md)
+3. **June 3 14:00–15:30 UTC** (optional): Wave 1 impact assessment if approved (resistance-research queue item)
+4. **June 3 20:00–21:30 UTC**: Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md + new queue items)
+5. **June 4 00:00–02:00 UTC**: Multi-project decision briefs (systems-resilience queue item)
+6. **June 3 EOD & June 4**: Awaiting user decisions (Phase 2 domains, seedwarden social strategy, platform selection, stockbot Phase 3 go/no-go)
+
+**Time Spent**: 10 minutes (Orientation 5, Assessment 3, Queue Refresh 2)
+
+---
+
 ## Since Last Check-in (Session 2647, 2026-06-03 00:38–00:50 UTC — Pre-Market Preparation Complete)
 
 **Session Status**: ✅ **MARKET-OPEN PREPARATION COMPLETE** — System fully staged for June 3 13:15 UTC market auto-wake and live trading session (13:30-20:00 UTC). Pre-market brief created for reference. No autonomous work remains. Awaiting market execution and user decisions.
