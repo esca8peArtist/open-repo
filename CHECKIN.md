@@ -3,6 +3,87 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2654, 2026-06-03 02:00 UTC — Orchestrator: June 3 EOD Critical Decisions Briefing)
+
+**Session Status**: ✅ **MARKET OPEN READY + 3 CRITICAL USER DECISIONS DUE TODAY (EOD 23:59 UTC)** — All materials production-ready; waiting for user decisions on resistance-research Phase 2, seedwarden launch path, and systems-resilience platform choice. Stockbot market open 13:30 UTC (11+ hours). No blockers.
+
+**Orientation Complete**:
+- ORCHESTRATOR_STATE.md: Current, generated 2026-06-03 02:00 UTC
+- PROJECTS.md: All project statuses verified; two active blocks (both user action, unchanged)
+- BLOCKED.md: 2 active blocks (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — no change
+- INBOX.md: No new items to process
+- All infrastructure production-ready for stockbot market open and post-market analysis
+
+**Work This Session**:
+
+1. ✅ **State Verification** (10 min):
+   - Confirmed all projects in expected state
+   - Verified stockbot fully market-ready (2-session config, Docker healthy, Jetson responsive)
+   - Identified 3 critical user decisions due TODAY EOD (June 3 23:59 UTC)
+
+2. ✅ **Production-Readiness Audit** (5 min):
+   - **resistance-research Domain 59**: distribution-execution.md (13K, June 1), research doc (71K, 7,200 words/44 citations), 5 email templates ready
+   - **seedwarden Gate 1**: All gate materials present (verification checklist, launch sequence, success metrics, rapid setup guide, readiness report)
+   - **systems-resilience Platform Selection**: Phase 6 complete; Nextcloud+Matrix recommended 9.5/10
+
+**🔴 NEEDS YOUR INPUT — 3 CRITICAL DECISIONS DUE TODAY (June 3 23:59 UTC EOD)**:
+
+### **1. RESISTANCE-RESEARCH — Phase 2 Domain Selection & Domain 59 Distribution**
+- **What's ready**: 
+  - Domain 59 distribution (Senate Finance CTC markup window OPEN NOW through June 30)
+  - 5 email templates (CBPP, ITEP, NWLC, MomsRising, AFL-CIO) — copy-paste ready
+  - Execution checklist with 30-45 min timeline
+  - Phase 2 decision memo with 6 specific recommendation votes
+- **Your action needed**:
+  1. **Domain 59 distribution** (URGENT, ~30-45 min): Execute sends per `DOMAIN_59_EXECUTION_CHECKLIST.md` in `projects/resistance-research/`
+  2. **Phase 2 authorization** (review in PHASE_2_DECISION_MEMO_JUNE_2026.md): Approve 6 recommendations:
+     - Domain 51 (Campaign Finance): YES → CA Fair Elections Act July 1 deadline
+     - Domain 59 (Distribution acceleration): YES → Senate Finance CTC deadline June 30
+     - Domain 57 Gist prep: YES → August 10 distribution
+     - Domain 48: Production-ready, no research
+     - Domains 49/50: AUTHORIZE both (urgency upgrades)
+     - Domain 54: November post-midterm (Sept-Oct production, Jan-Feb 2027 distribution)
+- **Deadline**: TODAY 23:59 UTC EOD
+- **Files to review**: `projects/resistance-research/PHASE_2_DECISION_MEMO_JUNE_2026.md`, `DOMAIN_59_EXECUTION_CHECKLIST.md`
+
+### **2. SEEDWARDEN — Launch Path Decision (Path A vs Path B)**
+- **What's ready**:
+  - Gate 1 fully verified (all assets PASS: PDFs, emails, contacts, social posts, logo, runbooks)
+  - 5 user action gates documented (Google Drive → Social accounts → Kit account → Canva Brand Kit → Etsy coupon)
+  - Phase 2 Content Roadmap complete (seasonal windows, platform strategies, email lifecycle, UGC models)
+  - Phase 3 quick-start paths ready (3 resource models: C2 default, A2 aggressive, B2 team)
+- **Your action needed**:
+  - **Choose Path A vs Path B** in READINESS_REPORT_JUNE_1.md:
+    - **Path A** (June 1 launch): Already-passed date; only viable if executing immediately
+    - **Path B** (June 3 accelerated): Execute today/tomorrow for June 3-5 launch window
+  - Complete 5 user action gates (total ~4 hours, critical path is Kit account + landing page)
+  - Note: Track A blockers require separate action (3 tag corrections + Etsy account verification)
+- **Deadline**: TODAY 23:59 UTC EOD
+- **Files to review**: `projects/seedwarden/track-b-activation/READINESS_REPORT_JUNE_1.md`, `GATE_1_LAUNCH_SEQUENCE_CHECKLIST.md`
+
+### **3. SYSTEMS-RESILIENCE — Platform Selection**
+- **What's ready**: Phase 6 analysis complete; 3 viable options with scores
+- **Your action needed**:
+  - Choose platform for Phase 5 implementation:
+    - **Recommended**: Nextcloud+Matrix (9.5/10) — full offline capability, real-time collab, CalDAV, $0-180/yr, 8-10h setup
+    - **Alternative**: Discourse (8.0/10) — community-focused, simpler UX
+    - **Details**: See `systems-resilience/PHASE_6_PLATFORM_ANALYSIS.md`
+- **Deadline**: TODAY 23:59 UTC EOD (informs Phase 5 planning but not blocking)
+
+**Stockbot Market Open Schedule**:
+- **13:15 UTC** (11h 15m): Auto-wake for market-open monitoring
+- **13:30–20:00 UTC** (6.5h): Live trading (JPM ridge_wf 6/6, AMZN lgbm_ho 5/6)
+- **20:00–22:00 UTC**: Post-market analysis per JUNE_3_MARKET_ANALYSIS_RUNBOOK.md
+
+**No Blockers**:
+- All infrastructure ready (stockbot, resistance-research, seedwarden)
+- Active blocks (cybersecurity-hardening, mfg-farm) require user action, not blocking autonomous work
+- All async work complete; waiting on your decisions only
+
+**Time Spent**: 15 minutes (Orientation 10, Production audit 5)
+
+---
+
 ## Since Last Check-in (Session 2653, 2026-06-03 01:51 UTC — Orchestrator: Focus Line Pruning + Market-Open Readiness Checkpoint)
 
 **Session Status**: ✅ **MARKET-OPEN FULLY READY — ALL INFRASTRUCTURE VERIFIED; FOCUS LINES PRUNED**
