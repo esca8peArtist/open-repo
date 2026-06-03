@@ -1,5 +1,31 @@
 # Check-In Report
 
+## Since Last Check-in (Session 2668 — 2026-06-03 08:13 UTC) — Morning Verification: Critical Blocker Confirmed Active; All Autonomous Work Complete; 15h Pending User Decisions
+
+### Summary
+**Session objective**: Morning verification of critical blocker status and autonomous work availability. **Result**: Alpaca auth blocker confirmed still active (2 failures in Docker logs). No new autonomous work available since Session 2667 evening analysis. All major projects production-ready. 15 hours 46 minutes remaining until 23:59 UTC decision deadline.
+
+### What Was Accomplished (This Session)
+✅ **Critical Block Status Morning Verification** (1 min) — SSH verification: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` returned **2** (STILL ACTIVE, unchanged since Session 2667 evening). Alpaca auth failure persists. Market trading blocked until credentials fixed.
+
+✅ **Autonomous Work Audit** (5 min) — Comprehensive review of ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, Exploration Queue. Confirmed: Zero new autonomous work available. All items remain blocked on user decisions (by 23:59 UTC today) or external triggers (SCOTUS ruling, HHS guidance, post-checkpoint analysis dates 6/8+). System in correct idle state, all production-ready.
+
+### Current Status Summary
+- 🔴 **CRITICAL**: Alpaca auth blocker unresolved; blocks June 3-4 trading
+- 🟡 **PENDING**: User decisions due 23:59 UTC today (Domain 59 send, Phase 2 domains, seedwarden path, systems-resilience platform)
+- 🟢 **READY**: All infrastructure production-ready; orchestrator standing by for user decisions
+
+### Decision Deadline Countdown
+- **Current time**: 2026-06-03 08:13:43 UTC
+- **Deadline**: 2026-06-03 23:59:59 UTC (15h 46min)
+- **User decisions awaited**: Four binary/multi-choice decisions
+- **Next action**: User provides decisions by deadline; orchestrator activates approved work immediately upon receipt
+
+### Status
+**ORCHESTRATOR OPERATIONAL AND IDLE — ALL AUTONOMOUS WORK COMPLETE**. Critical blocker (Alpaca credentials) unresolved. Standing by for: (1) credential fix for June 4+ trading, (2) Phase 2 domain decisions by 23:59 UTC today.
+
+---
+
 ## Since Last Check-in (Session 2667 — 2026-06-03 [Evening] UTC) — FINAL EVENING VERIFICATION: All Systems Idle, Critical Blocker Unresolved, User Action Required
 
 ### Summary
