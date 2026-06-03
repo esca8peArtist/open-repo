@@ -426,4 +426,130 @@ The SAVE Act has not passed the Senate as of June 2026. Senate advocacy against 
 
 ---
 
-*Research completed: June 1, 2026. Agent: Sonnet 4.6. Companion document to Domain 55 (domain-55-lgbtq-rights-systematic-legal-attack-democratic-design.md, May 13, 2026, 44 citations). Domain 50 is the voting suppression and ballot initiative analysis; Domain 55 is the ADF constitutional and legislative infrastructure analysis. Both should be distributed together to Lambda Legal and AT4E for maximum utility in ballot measure campaign integration. Hard distribution deadline: August 1, 2026.*
+---
+
+## 9. Formal Contact List and Distribution Templates
+
+*Added June 3, 2026 — production-ready for August 1, 2026 distribution deadline*
+
+### Contact List: Priority Distribution
+
+**Priority 1 — August 1–5 (Ballot Measure Campaign Integration Deadline)**
+
+| Organization | Contact | Why First | Focus |
+|-------------|---------|-----------|-------|
+| Lambda Legal | info@lambdalegal.org | Active ballot measure litigation in CO, MO, WA; Romer v. Evans Colorado challenge most likely | Romer anti-countermajoritarian argument; Skrmetti state constitutional alternatives |
+| Advocates for Trans Equality (AT4E) | contact@transequality.org | Merged from NCTE + TLDEF; "Voting While Trans" resource guide; ballot measure advocacy | Trans voter ID suppression data; SAVE Act compound suppression |
+| Ballot Initiative Strategy Center | Via ballot.org | Documented ADF coordination in their March 2026 Hot Sheet; co-distribution potential | ADF coordination section; anti-countermajoritarian analysis |
+| GLBTQ Legal Advocates & Defenders (GLAD) | info@gladlaw.org | Northeast focus; Maine ballot measure challenge; ADF Cass Report misuse analysis | Maine ballot measure legal challenge; trans healthcare denial analysis |
+
+**Priority 2 — August 15–30 (Full Distribution Wave)**
+
+| Organization | Contact | Focus |
+|-------------|---------|-------|
+| ACLU LGBTQ+ Rights Project | Via existing Phase 1 ACLU relationship | Full document; SAVE Act and voter ID analysis for their litigation work |
+| Movement Advancement Project (MAP) | info@lgbtmap.org | Equality Maps state-by-state data; validation and amplification role |
+| Human Rights Campaign | hrc@hrc.org | Broadest reach; secondary distribution; press release potential |
+| National LGBTQ Task Force — Queer the Vote | info@thetaskforce.org | Voter mobilization program; November 2026 election protection focus |
+| GLAAD | info@glaad.org | Media strategy; press coverage of ADF infrastructure analysis |
+| VoteRiders | info@voteriders.org | Trans voter ID assistance; election day support infrastructure |
+
+**Cross-distribution (send simultaneously with LGBTQ+ wave)**
+
+| Organization | Contact | Rationale |
+|-------------|---------|-----------|
+| Reproductive rights coalition (Domain 44 distribution targets) | See Domain 44 contact list | Missouri Amendment 3 bundles trans and abortion; shared ADF infrastructure |
+| Domain 33 ballot initiative protection contacts | See Domain 33 contact list | Anti-countermajoritarian ballot initiative analysis directly supports ballot initiative protection work |
+
+---
+
+### Distribution Templates
+
+#### Template 1: Lambda Legal and GLAD (Litigation-Focused)
+
+**Subject**: Anti-countermajoritarian ballot measure analysis + Skrmetti state court alternatives — for August 2026 campaigns
+
+Dear [NAME],
+
+I'm writing to share research that may support Lambda Legal's ballot measure litigation strategy ahead of the August 1 campaign integration window.
+
+The document — [GIST_URL] — makes two arguments your litigation team may find useful.
+
+First, the constitutional argument against the six 2026 anti-trans ballot measures is rooted in Romer v. Evans (517 U.S. 620, 1996). Colorado specifically — where Romer arose — now has two ballot measures (Measure 1 on trans student athletes, Measure 2 on gender-affirming care funding) that replicate the same mechanism Romer condemned: using ballot initiative architecture to remove the specific legal protections that democratic institutions had provided to a targeted minority group. The document develops this anti-countermajoritarian theory in detail and analyzes its applicability to Missouri's Amendment 3 and Washington's measure as well.
+
+Second, because Skrmetti lowered the federal constitutional floor to rational basis review for trans healthcare challenges, the document analyzes state court alternatives under state constitutional equal protection provisions. Colorado, Washington, and Missouri all have state constitutional provisions that may support broader analysis than the federal floor.
+
+The document also includes the trans voter suppression stack (Williams Institute data, EO 14168 document freeze, SAVE Act) and the ADF coordination infrastructure analysis. At 8,500+ words with 69 citations, it is designed for litigation support and coalition briefing.
+
+I would welcome corrections or additions from your litigation team's perspective on any of the legal framing.
+
+[YOUR_NAME]
+[YOUR_CONTACT_INFO]
+
+---
+
+#### Template 2: AT4E and Voting Rights Organizations
+
+**Subject**: Trans voter ID suppression analysis + SAVE Act compound barrier research — for November 2026 election protection
+
+Dear [NAME],
+
+I'm sharing research that may support Advocates for Trans Equality's election protection work ahead of November 2026.
+
+The document — [GIST_URL] — brings together the three-layer trans voter suppression stack that you know better than anyone:
+- Williams Institute data (210,800 trans adults without matching ID in voter-ID states — the 2024 floor that has grown since EO 14168)
+- EO 14168's document freeze (the active mechanism growing the 210,800 figure with each passing month by preventing ID updates)
+- The SAVE Act (House passed February 12, 2026 — the third suppression layer that, if passed by the Senate, would add passport-based registration requirements on top of an already-suppressed population)
+
+The document frames the convergence argument: the same election cycle in which six anti-trans ballot measures are on the ballot is the cycle in which trans voters face the highest documented barriers to participating in those decisions. This isn't coincidence — it is the operational logic of the suppression architecture.
+
+The Romer v. Evans anti-countermajoritarian analysis (Section 1) may be useful for your ballot measure campaign communications, specifically for framing why the ballot initiative mechanism is being used as a democratic design attack rather than ordinary policymaking.
+
+I'm happy to discuss any of the analysis or provide additional supporting material.
+
+[YOUR_NAME]
+[YOUR_CONTACT_INFO]
+
+---
+
+#### Template 3: Reproductive Rights Cross-Distribution (Missouri Amendment 3 Framing)
+
+**Subject**: Missouri Amendment 3 analysis — trans healthcare + abortion rollback bundle, ADF coordination
+
+Dear [NAME],
+
+I'm writing to share analysis of Missouri Amendment 3 that may be directly relevant to your 2026 ballot campaign work.
+
+Amendment 3 bundles two things: (1) a ban on gender-affirming care for minors, and (2) a repeal of Missouri's 2024 Amendment 3, which established a fundamental right to reproductive freedom. A Cole County court has already ordered modified ballot language following an ACLU challenge to misleading language.
+
+The document I'm sharing — [GIST_URL] — documents the ADF coordination infrastructure behind this bundling strategy and the "ballot candy" mechanism being deployed: attaching a measure that would not pass alone (abortion reversal) to one polling at two-thirds support (trans healthcare restriction for minors), making them inseparable.
+
+The document is primarily focused on LGBTQ+ voting rights and ballot measure suppression, but the Missouri analysis (Section 1.2) is directly relevant to the reproductive rights coalition's campaign against Amendment 3. The ADF infrastructure analysis (Section 1.3) documents the same organizational personnel and funding coordinating both the abortion reversal and the anti-trans campaign in Missouri — which is the argument for treating them as a unified campaign rather than two separate fights.
+
+[YOUR_NAME]
+[YOUR_CONTACT_INFO]
+
+---
+
+#### Template 4: SAVE Act Senate Advocacy (If SAVE Act Advances in Senate)
+
+*This template activates IMMEDIATELY if the SAVE Act passes the Senate. Do not wait for August 1 deadline.*
+
+**Subject**: SAVE Act trans voter disenfranchisement — research for Senate advocacy
+
+Dear [NAME],
+
+With the SAVE Act [advancing in Senate / passing the Senate], I want to share research on the specific compound disenfranchisement it creates for trans voters — which may be useful for Senate advocacy or media framing.
+
+The document — [GIST_URL] — quantifies the problem: 210,800 trans adults already lack matching ID in voter-ID states (Williams Institute 2024 data). EO 14168 froze federal gender marker changes in January 2025, growing that number with each month. The SAVE Act's passport-based registration requirement adds a third suppression layer on top of an already-suppressed population — and does so specifically for the election cycle in which six anti-trans ballot measures are on the ballot.
+
+The Center for American Progress analysis cited in the document concludes the SAVE Act could prevent millions of trans Americans from voting because their layered document inconsistencies cannot be reconciled into a single coherent documentation set. The NWLC analysis estimates the overall SAVE Act disenfranchisement effect at 21.3 million eligible voters.
+
+The democratic design argument — that systematically reducing the voting capacity of the group most directly affected by ballot measures targeting that group is not coincidental but structural — is the framing that moves the analysis from partisan opposition to democratic integrity critique.
+
+[YOUR_NAME]
+[YOUR_CONTACT_INFO]
+
+---
+
+*Research completed: June 1, 2026. Updated contact list and templates added: June 3, 2026. Agent: Sonnet 4.6. Word count: ~9,100 words, 69 citations. Companion document to Domain 55 (domain-55-lgbtq-rights-systematic-legal-attack-democratic-design.md, May 13, 2026, 44 citations). Domain 50 is the voting suppression and ballot initiative analysis; Domain 55 is the ADF constitutional and legislative infrastructure analysis. Both should be distributed together to Lambda Legal and AT4E for maximum utility in ballot measure campaign integration. Hard distribution deadline: August 1, 2026.*

@@ -1,8 +1,8 @@
 # Domain 49: Louisiana v. Callais — VRA Evisceration and the 2026 Redistricting Emergency
 
-**Research completed**: May 13, 2026
-**Crisis window**: ACUTE — multiple states in active special sessions as of May 13, 2026 to eliminate majority-Black congressional districts; Alabama's redistricting stay granted May 11 with primary voting already underway; June 2026 filing deadlines in multiple states; 2026 midterm election maps being drawn NOW
-**Priority designation**: Phase 2 Expansion — Callais is the most consequential voting rights ruling since Shelby County v. Holder (2013); it completes the circuit of VRA destruction: Shelby County eliminated preclearance, Brnovich narrowed vote denial analysis, and Callais now requires proof of intentional discrimination for Section 2 vote dilution claims, effectively restoring the pre-1982 intent test that Congress explicitly rejected
+**Research completed**: May 13, 2026 | **Updated**: June 3, 2026
+**Crisis window**: ACUTE — Louisiana Governor Landry signed a new map (June 1, 2026) eliminating one majority-Black congressional district; NAACP LDF issued a statement calling it "a flagrant effort to consolidate political power in the hands of the white majority"; maps in Tennessee, Alabama, South Carolina, and Florida are now operative under the Callais standard; June 2026 primary filing deadlines are the hard legal cutoff for emergency intervention
+**Priority designation**: Phase 2 Core — Callais is the most consequential voting rights ruling since Shelby County v. Holder (2013); DISTRIBUTE NOW to Democracy Docket, NAACP LDF, Campaign Legal Center, LULAC, MALDEF before June filing deadlines close the emergency injunction window
 **Cross-domain connections**: Domain 1 (Electoral Reform — VRA Section 2 is the foundational framework for anti-dilution redistricting law), Domain 33 (State Legislative Autocratization — mid-decade redistricting as autocratization mechanism), Domain 37 (Federal Executive Interference in 2026 Midterms — redistricting as electoral manipulation), Domain 6 (Judicial Independence — how SCOTUS conservative majority produced this outcome), Domain 35 (SCOTUS 2026 term preview)
 
 ---
@@ -305,3 +305,179 @@ This domain should be read in conjunction with:
 39. [Allen v. Milligan — Wikipedia (background)](https://en.wikipedia.org/wiki/Allen_v._Milligan)
 40. [By a 5-4 Vote, the Supreme Court in Allen v. Milligan — Congress.gov CRS](https://www.congress.gov/crs_external_products/LSB/HTML/LSB11002.html)
 41. [ADM for May 12, 2026: Callais Decision Fallout — WNHN FM](https://www.wnhnfm.org/adm-for-may-12-2026-callais-decision-fallout-as-louisiana-tennessee-alabama-south-carolina-scramble-to-eliminate-black-congressional-districts)
+
+---
+
+## 9. June 2026 Update: Louisiana Signs New Map — Cascade Advances
+
+*Section added June 3, 2026*
+
+### 9.1 Louisiana Governor Signs Revised Map
+
+On approximately June 1, 2026, Louisiana Governor Jeff Landry signed the new congressional map passed by the Republican-controlled legislature. The map eliminates one of Louisiana's two majority-Black congressional districts — the court-ordered 6th District (the Baton Rouge–New Orleans corridor that was the subject of the original Callais challenge) — and draws an additional Republican-leaning district in its place.
+
+The NAACP Legal Defense Fund issued a statement in response to the legislature's passage of the map, calling it "a flagrant effort to consolidate political power in the hands of the white majority and deny communities across the state — especially Black Louisianians — an equal opportunity to participate in the political process." The LDF described the new map as "a product of the same racial discrimination the VRA was meant to prevent" and stated that litigation is expected.
+
+The Callais plaintiffs — the non-Black voters who challenged Louisiana's court-ordered map as an unconstitutional racial gerrymander — have also expressed concerns about aspects of the new map that was drawn in response to the ruling, creating an unusual dynamic in which both civil rights organizations and the original Callais plaintiffs are questioning the legislature's new configuration. The post-Callais Louisiana situation demonstrates the ruling's fundamental paradox: the state that complied with Allen v. Milligan by creating a second majority-Black district, then had that district struck down as unconstitutional, is now drawing a new map that its own challengers question as insufficiently responsive to the ruling.
+
+**Sources**: [Louisiana Legislature Passes Map Gutting Fair Representation and Packing Black Voters into Sole Congressional District — NAACPLDF](https://www.naacpldf.org/press-release/louisiana-legislature-passes-map-gutting-fair-representation-and-packing-black-voters-into-sole-congressional-district); [Louisiana Passes New Congressional Map, Dismantling One Majority-Black District — NBC News](https://www.nbcnews.com/politics/2026-election/louisiana-passes-new-congressional-map-dismantling-one-majority-black-rcna347575); [Louisiana's New Voting Map Drops a Majority-Black District — NPR](https://www.npr.org/2026/05/29/nx-s1-5826956/louisiana-new-congressional-map-redistricting); [Callais Plaintiffs Question Louisiana's New Voting Map — Nola.com](https://www.nola.com/news/politics/louisiana-redistricting-voting-map-callais/article_b8e5c714-bf5d-4c7d-9183-af89e6f78d6a.html); [Louisiana Approves New Congressional Map — ABC News](https://abcnews.com/Politics/louisiana-approves-new-congressional-map-republicans-pick-seat/story?id=133426367)
+
+### 9.2 The Extended Impact: Hispanic, Native, and Asian-American Districts
+
+The Callais ruling's effect on minority representation extends beyond Black voters and Black-majority districts. The American Democracy Minute documented in May 2026 that the ruling affects Hispanic, Native American, and Asian-American majority-minority districts as well.
+
+Analysis of state legislative district maps shows that majority-minority state legislative districts — where Black or Hispanic voters make up a majority — could fall from 342 to 202 nationwide under Callais's new standard: a loss of 140 districts. MALDEF issued a formal statement on the day of the decision stating that the ruling "eroded the chance for Hispanic, Native, Asian and other majority-minority communities to elect the candidate of their choice."
+
+MALDEF's legal posture post-Callais: the organization continues to monitor redistricting in Texas, California, and other states with significant Hispanic-majority districts and has indicated it will evaluate litigation options under both the surviving Section 2 intentional discrimination standard and under state voting rights acts in states where those acts protect majority-minority districts.
+
+LULAC's position is closely aligned with MALDEF's. In Texas, a coalition including LULAC, MALDEF, the Texas NAACP, and Fair Maps Texas Action Committee has been monitoring the redistricting situation. Texas redistricting completed mid-decade in 2025 (before Callais) used the Callais-anticipating strategy of eliminating majority-minority districts pre-litigation; the post-Callais environment now makes those 2025 maps significantly harder to challenge.
+
+The critical downstream impact: if majority-minority state legislative districts fall from 342 to 202, state legislatures that oversee voter ID law enactment, election administration budgets, state court redistricting review, and state voting rights act passage will themselves become less representative of Black, Hispanic, and Indigenous communities — a compounding democratic exclusion cycle that operates at both the federal and state legislative levels simultaneously.
+
+**Sources**: [MALDEF Statement on Supreme Court Decision in Louisiana v. Callais — MALDEF](https://www.maldef.org/2026/04/maldef-statement-on-supreme-court-decision-in-louisiana-v-callais/); [Louisiana v. Callais Didn't Just Affect VRA Section 2 Protections for Black Americans — American Democracy Minute](https://www.americandemocracyminute.org/wethepeople/2026/05/04/louisiana-v-callais-didnt-just-affect-vra-section-2-protections-for-black-americans-hispanic-native-and-asian-american-districts-are-impacted-too); [Redistricting 101 and the Fight for Fair Representation After Callais — Campaign Legal Center](https://campaignlegal.org/document/redistricting-101-and-fight-fair-representation-after-callais); [Voting Rights — MALDEF](https://www.maldef.org/court-cases/voting-rights/)
+
+### 9.3 The State Court Report and Post-Callais Legal Landscape
+
+The State Court Report's analysis "The Aftermath of Callais" (published June 2026) documents the legal landscape across state courts after the ruling. Key findings from that analysis:
+- State courts in states with state VRAs (California, New York, Washington) are not bound by the Callais intentional discrimination standard for state legislative redistricting challenges
+- States applying their own constitutional anti-discrimination provisions (Florida's Fair Districts amendment, Michigan's Voters Not Politicians initiative) have independent grounds for challenges not foreclosed by Callais
+- The Redistricting Watch published by the NAACP LDF Substack is the most current litigation tracker for post-Callais challenges — as of June 2026 they have published through Issue 10.0 tracking ongoing litigation
+
+The Harvard Kennedy School analysis of Callais ("What Louisiana v. Callais Means for the Voting Rights Act") notes that the ruling's most significant long-term consequence may be to create a two-tier system: states with state VRAs and state constitutional anti-discrimination provisions will retain minority representation protections, while states without them — primarily the same Southern states with documented histories of intentional discrimination that the original VRA targeted — will face minimal legal constraints on map-drawing.
+
+**Sources**: [The Aftermath of Callais — State Court Report](https://statecourtreport.org/our-work/analysis-opinion/aftermath-callais); [Redistricting Watch 10.0 — NAACP LDF Substack](https://legaldefensefund.substack.com/p/redistricting-watch-100-continuing); [What Louisiana v. Callais Means for the Voting Rights Act — Harvard Kennedy School](https://www.hks.harvard.edu/faculty-research/policy-topics/fairness-justice/what-louisiana-v-callais-means-voting-rights-act); [Louisiana v. Callais — Brennan Center for Justice](https://www.brennancenter.org/our-work/research-reports/louisiana-v-callais)
+
+### 9.4 The CRS Legal Analysis
+
+The Congressional Research Service published its legal summary "Congressional Redistricting: High Court Narrows Voting Rights Act in Louisiana v. Callais" (LSB11431, May 2026). Key CRS findings:
+- The ruling "significantly narrowed the circumstances under which a racial vote dilution challenge to a redistricting map can be made under Section 2 of the Voting Rights Act"
+- The ruling creates a doctrinal tension with the 1982 VRA amendments that the CRS characterizes as requiring further clarification from either SCOTUS or Congress
+- The "disentanglement" requirement "may be effectively unworkable in many jurisdictions where race and party identification are highly correlated" — the CRS echoes Kagan's dissent
+- Congress retains the authority to enact remedial legislation that would clarify the compelling interest standard for race-conscious redistricting, but no such legislation has been introduced as of CRS publication date
+
+The CRS analysis is the primary resource for Hill staff briefing and is worth distributing to congressional contacts alongside the domain document.
+
+**Sources**: [Congressional Redistricting: High Court Narrows Voting Rights Act in Louisiana v. Callais — Congress.gov/CRS (LSB11431)](https://www.congress.gov/crs-product/LSB11431); [Election Law and the Supreme Court in 2026 — Congress.gov/CRS (LSB11419)](https://www.congress.gov/crs-product/LSB11419)
+
+---
+
+## 10. Distribution Contact List
+
+*Production-ready for June 2026 distribution. These organizations are either actively litigating post-Callais redistricting challenges or have advocacy roles in the redistricting response.*
+
+### Tier 1: Active Litigation Organizations (Send First — June 8–10)
+
+| Organization | Contact | Focus | Send Priority |
+|-------------|---------|-------|---------------|
+| Democracy Docket | Via democracydocket.com contact | Active Callais post-redistricting litigation tracker; Marc Elias's organization | FIRST |
+| NAACP Legal Defense Fund | info@naacpldf.org | Primary litigant in Louisiana v. Callais; active in Alabama stay proceedings | FIRST |
+| Campaign Legal Center | info@campaignlegal.org | Published "Redistricting 101 and the Fight for Fair Representation After Callais" — already engaged on this issue | FIRST |
+| MALDEF | communications@maldef.org | Issued statement day of ruling; monitoring TX/CA Hispanic-majority districts | FIRST |
+| NAACP National | info@naacp.org | National office; CBC connections; voter education infrastructure | SECOND |
+
+### Tier 2: Voting Rights Coalition (Send June 12–15)
+
+| Organization | Contact | Focus |
+|-------------|---------|-------|
+| LULAC (League of United Latin American Citizens) | info@lulac.org | Hispanic voter representation; active in TX redistricting coalitions |
+| Brennan Center for Justice | brennancenter@brennancenter.org | Published Callais analysis; redistricting reform research |
+| Voto Latino | info@votolatino.org | Voter education; Hispanic community affected by state legislative district losses |
+| Congressional Black Caucus Foundation | info@cbcfinc.org | CBC member support; seat-elimination documentation |
+| Voting Rights Alliance | Via votingrightsalliance.org | Coalition coordination post-Callais |
+
+### Tier 3: Academic and Research Contacts (Send June 15–20)
+
+| Organization | Contact | Focus |
+|-------------|---------|-------|
+| Harvard Kennedy School Electoral Democracy Center | Via hks.harvard.edu | Published Callais analysis; election law academic community |
+| Issue One | info@issueone.org | Campaign legal center adjacent; bipartisan reform framing |
+| Brennan Center — Redistricting program | redistricting@brennancenter.org | Specific redistricting program contact (separate from general) |
+| Fair Vote | info@fairvote.org | Fair Representation Act / proportional representation advocacy |
+
+### Tier 4: State-Level Contacts (Send June 20+)
+
+Priority states for state-level contacts: **Alabama** (maps being redrawn with primary in progress), **Tennessee** (9th District elimination), **South Carolina** (Clyburn seat), **Louisiana** (new map signed June 1), **Texas** (2025 mid-decade redistricting now harder to challenge).
+
+State NAACP chapters, state-level voting rights projects, and local election law clinics in law schools (Tennessee Law, LSU Law, South Carolina Law) are secondary distribution contacts after the national organizations.
+
+---
+
+## 11. Distribution Templates
+
+### Template 1: Voting Rights Litigation Organizations (Democracy Docket, NAACP LDF, Campaign Legal Center)
+
+**Subject**: Research on Louisiana v. Callais redistricting cascade — for June advocacy and litigation support
+
+Dear [NAME],
+
+I'm writing to share research on Louisiana v. Callais and the redistricting cascade it has triggered, which may be useful for your June 2026 litigation and advocacy work.
+
+The document — [GIST_URL] — synthesizes the Callais ruling's doctrinal architecture (Alito's "disentanglement" requirement, the Arlington Heights intentional discrimination theory, Section 3 bail-in as a remedy), the state-by-state cascade (Alabama stay, Tennessee 9th District elimination, Louisiana's new map signed June 1, South Carolina's Clyburn seat threat, Florida's pre-Callais acceleration), and the surviving legal theories for post-Callais litigation.
+
+The most time-sensitive section is the Section 3 bail-in analysis: courts that make intentional discrimination findings in current redistricting litigation can impose preclearance-like supervision as a remedy — creating a stronger protective structure than Section 2 ever provided, but only if plaintiffs specifically plead bail-in as relief. Given the speed and overtness of the post-Callais redistricting response in several states, the Arlington Heights circumstantial discrimination showing may be available.
+
+The document also includes the international comparative analysis (UK, Canada, Germany, Australia) and the proportional representation / Fair Representation Act pathway for longer-term structural reform.
+
+I would welcome any corrections or additions from your team's litigation perspective.
+
+[YOUR_NAME]
+[YOUR_CONTACT_INFO]
+
+---
+
+### Template 2: Hispanic and Multiracial Voting Rights Organizations (MALDEF, LULAC, Voto Latino)
+
+**Subject**: Research on Callais's impact on Hispanic, Native, and Asian-American majority-minority districts
+
+Dear [NAME],
+
+I'm sharing research that documents the full scope of Louisiana v. Callais's impact — including its effects on Hispanic, Native American, and Asian-American majority-minority districts, which have received less attention than the ruling's impact on Black-majority districts.
+
+The document — [GIST_URL] — includes analysis of the MALDEF statement, the projected loss of majority-minority state legislative districts (from 342 to 202 nationally), the Texas redistricting situation (mid-decade maps drawn in 2025 before Callais, now harder to challenge), and the state VRA pathway for sub-congressional redistricting challenges in states with state-law protections.
+
+Section 3 bail-in as a remedy is particularly relevant for organizations litigating in states with documented histories of intentional discrimination: if courts find intentional discrimination (the standard Callais now requires), preclearance-like supervision becomes available as a remedy — a stronger protection than Section 2 litigation had ever produced.
+
+The June 2026 primary filing deadline window is the most urgent near-term advocacy constraint. Maps being finalized now will govern November elections.
+
+[YOUR_NAME]
+[YOUR_CONTACT_INFO]
+
+---
+
+### Template 3: Congressional and Policy Contacts (CBC, Congressional Offices, Policy Organizations)
+
+**Subject**: Louisiana v. Callais research — 15+ Democratic seats at risk, Lewis VRA Act urgency framing
+
+Dear [NAME],
+
+I'm writing to share research that documents the electoral stakes of Louisiana v. Callais before the June 2026 primary filing deadlines close the emergency intervention window.
+
+The document — [GIST_URL] — includes the Brookings Institution analysis (35 of 40 Southern representatives of color elected from majority-minority districts; 74% of Black House members and 84% of Hispanic House members nationally depend on majority-minority districts; NPR estimates 15+ currently Democratic-held districts could be redrawn under Callais), the June 1, 2026 Louisiana map signing, and the state-by-state picture.
+
+The document frames the John R. Lewis Voting Rights Advancement Act as the first-priority legislative response if a Democratic House majority is achieved in November 2026 — and explains why Callais makes both that legislative priority more necessary and more difficult to achieve simultaneously (redistricting reduces the Democratic seat pool that would elect the Congress that would pass the Lewis Act).
+
+The CRS analysis (LSB11431) has also been published and provides legal context for Hill briefing.
+
+[YOUR_NAME]
+[YOUR_CONTACT_INFO]
+
+---
+
+### Template 4: Media and Commentary (Democracy-Focused Outlets)
+
+**Subject**: Research on post-Callais redistricting cascade — June 2026 update
+
+Dear [NAME],
+
+Louisiana Governor Landry signed a new congressional map June 1, 2026 eliminating one majority-Black district. Tennessee's 9th District (Memphis) was eliminated in a May special session. Alabama's primary is operating under maps that were in place before the court-ordered remedial maps, after a 5-4 unsigned SCOTUS stay granted while early voting was underway. The maps the 2026 midterms will be decided on are being drawn right now.
+
+I've compiled a research document analyzing the Callais ruling and its cascade: [GIST_URL]. It includes the legal architecture of what challenges remain (Arlington Heights intentional discrimination theory, Section 3 bail-in, state VRAs), the international comparative perspective, and the proportional representation structural reform pathway.
+
+The key figure for election observers: if the full Callais cascade is implemented before November 2026 filing deadlines, Brookings documents that Republicans could add 12–19 seats through redistricting alone, independent of any shift in voter preferences.
+
+[YOUR_NAME]
+[YOUR_CONTACT_INFO]
+
+---
+
+*Domain 49 update prepared: June 3, 2026. Original research: May 13, 2026. Word count: 8,100+ words. Additional sources for the June 2026 update: [Louisiana Legislature Passes Map — NAACPLDF](https://www.naacpldf.org/press-release/louisiana-legislature-passes-map-gutting-fair-representation-and-packing-black-voters-into-sole-congressional-district); [MALDEF Statement — MALDEF](https://www.maldef.org/2026/04/maldef-statement-on-supreme-court-decision-in-louisiana-v-callais/); [CRS LSB11431 — Congress.gov](https://www.congress.gov/crs-product/LSB11431); [Redistricting Watch 10.0 — NAACP LDF](https://legaldefensefund.substack.com/p/redistricting-watch-100-continuing); [Aftermath of Callais — State Court Report](https://statecourtreport.org/our-work/analysis-opinion/aftermath-callais); [Harvard Kennedy School Callais Analysis](https://www.hks.harvard.edu/faculty-research/policy-topics/fairness-justice/what-louisiana-v-callais-means-voting-rights-act)*

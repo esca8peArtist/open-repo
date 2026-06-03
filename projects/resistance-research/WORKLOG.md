@@ -2,6 +2,70 @@
 
 ---
 
+## June 3, 2026 — Resistance Research Agent — Phase 2 Batch 2 Roadmap + Domains 49/50 Acceleration
+
+**Task**: Phase 2 Batch 2 Activation Roadmap (Exploration Queue Item 53, due June 8) + Domain 49 expansion to 8,000+ words + Domain 50 production-readiness verification with contact list and templates.
+
+**Files read**: `PROJECTS.md`, `WORKLOG.md` (prior), `EXPLORATION_QUEUE.md`, `PHASE_2_DOMAINS_49_50_RESEARCH_OUTLINES.md`, `PHASE_2_CANDIDATE_49_SOURCES.md`, `PHASE_2_CANDIDATE_50_SOURCES.md`, `PHASE_2_DECISION_MEMO_JUNE_2026.md`, `DOMAIN_39_MONITORING_AND_PHASE_2_ACTIVATION.md`, `domains/domain-49-callais-vra-redistricting-emergency.md`, `domains/domain-50-lgbtq-rights-voting-suppression.md`.
+
+**Research conducted**: Web searches on Callais redistricting cascade June 2026 updates (Louisiana map signed, NAACP LDF response, MALDEF statement, Hispanic/Native/Asian-American district impact data — 342 to 202 majority-minority state legislative districts); Callais post-ruling legal landscape (State Court Report, Harvard Kennedy School, CRS LSB11431); LULAC/MALDEF active litigation coalitions; Domain 50 ballot measure 2026 status.
+
+**Key findings**:
+- Domain 49 (Louisiana v. Callais) was already complete at 6,071 words (May 13). Louisiana Governor Landry signed the new map June 1, 2026, eliminating one majority-Black district. NAACP LDF called it "a flagrant effort to consolidate political power." MALDEF statement documented impact on Hispanic, Native, Asian-American districts (342 to 202 majority-minority state legislative districts nationally). CRS published LSB11431 confirming "disentanglement" requirement may be "effectively unworkable" in high-correlation jurisdictions.
+- Domain 50 (LGBTQ+ ballot suppression) was already complete and production-ready at 8,586 words, 69 citations. Needed contact list and distribution templates, now added.
+- Domain 51 distribution execution checklist created for June 9–12 window.
+- Resource reallocation scenarios documented.
+- Phase 2 Batch 2 roadmap key finding: Domain 49 distribution window is NOW (June primary filing deadlines), not July. Sequencing inverted from task brief — Domain 49 is most urgent, not Domain 51.
+
+**Output**:
+- `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md` (~2,400 words, 4-part roadmap with dependency matrix, contingency triggers, execution order)
+- `DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md` (~1,200 words, June 9–12 90-min breakdown per contact)
+- `RESOURCE_REALLOCATION_SCENARIOS.md` (~1,500 words, 5 scenarios, standing rules)
+- `domains/domain-49-callais-vra-redistricting-emergency.md` — expanded from 6,071 to 8,100+ words; added June 2026 cascade update (Sections 9.1–9.4), Hispanic voter impact, CRS analysis, MALDEF response, contact list (12 contacts across 4 tiers), 4 distribution templates
+- `domains/domain-50-lgbtq-rights-voting-suppression.md` — verified production-ready (8,586 words + additions); added formal Section 9 with contact list (12 contacts, Priority 1 and 2 waves, cross-distribution) and 4 distribution templates including SAVE Act emergency activation template
+
+---
+
+## June 3, 2026 — General Research Agent — Phase 5 Wave 1 Author Recruitment Runbook
+
+**Task**: Produce `PHASE_5_WAVE_1_AUTHOR_RECRUITMENT_RUNBOOK.md` in `projects/systems-resilience/` — comprehensive 10-section operational guide for recruiting 18 authors across 5 community-scale domains (governance, food systems, information infrastructure, security/defense, scaling pathways) for Phase 5 Wave 1 publication expansion. June 5 send date; June 15 09:00 UTC go/no-go decision.
+
+**Files read**: `README.md` (project overview), `PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md` (corpus scope, 45,380 words), `PHASE_5_PUBLICATION_CHECKLIST.md` (publication status, GO confirmed), `PHASE_5_WAVE_2_AUTHOR_PROFILES.md` (prior author profile framework), `AUTHOR_HIRING_RUNBOOK.md` (Phase 6 process, adapted for Phase 5), `PHASE_6_AUTHOR_RECRUITMENT_TEMPLATES.md` (email template patterns), `PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md` (domain scope context), `phase-3/01-governance-decision-making.md`, `phase-3/05-scaling-pathways-and-thresholds.md`.
+
+**Research conducted**: Web searches on academic email outreach response rates (8.5% baseline; personalization and subject line specificity are decisive); governance/commons scholars (McGinnis/Indiana, Henfrey/Schumacher, Vansintjan/Uneven Earth); food systems researchers (Lofton/UIC, Gwin/Oregon State, Kloppenburg/Wisconsin); information infrastructure practitioners (Byrum/New America, Puttick/Rhizomatica, De Filippi/Harvard); security/resilience researchers (Aldrich/Northeastern); scaling/transition researchers (Henfrey, Miller/Bates, Gorenflo/Shareable).
+
+**Key findings**:
+- 18 authors identified across 5 domains with verified institutional affiliations and publicly available contact formats
+- Email verification procedure (5 min/contact) is mandatory before June 5 send — institutional formats provided are plausible but must be confirmed against live faculty directories
+- Platform choice (Nextcloud+Matrix vs. Discourse) has zero effect on recruitment execution — confirmed and documented in Section 10
+- Academic outreach response rates average 8.5% cold; personalization with specific paper/project reference improves materially; follow-up at Day 5 (not Day 3) is the evidence-based timing
+- Domain 4 (Security/Defense) is the most politically sensitive framing challenge — social capital / social infrastructure framing (Aldrich) is the credible, non-ideological anchor
+- Secondary contingency channels identified for all 5 domains if Day 3 shows zero responses in any domain
+
+**Output**: `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/PHASE_5_WAVE_1_AUTHOR_RECRUITMENT_RUNBOOK.md` (~4,200 words, 10 sections, production-ready for June 5 execution)
+
+---
+
+## June 3, 2026 — General Research Agent — Systems Resilience Phase 7 Pilot Implementation Roadmap
+
+**Task**: Produce `PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md` in `projects/systems-resilience/` — 2,500–3,500-word pilot deployment roadmap to support platform decision (Nextcloud+Matrix vs. Discourse) needed EOD June 3. Prior version of the file existed (339 lines, 3,800 words) but assumed Nextcloud+Matrix was already selected; revised to serve both platform options and add elements missing from the prior draft.
+
+**Files read**: `PHASE_6_PLATFORM_ANALYSIS.md` (v5, June 3), `PHASE_6_DOMAIN_SCREENING.md`, `PHASE_6_IMPLEMENTATION_GUIDE_OPTION_A_DISCOURSE.md`, `PHASE_6_SCOPE_AND_READINESS.md`, `PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md` (prior), `PHASE_7_SCOPING_MEMO.md`, `PROJECTS.md` (resistance-research), `EXPLORATION_QUEUE.md`.
+
+**Key findings**:
+- Prior Phase 7 roadmap was thorough on Nextcloud+Matrix but assumed platform selection was complete. User's platform decision was still pending.
+- Three community size scenarios analyzed: 50–100 (mutual aid, valid fallback), 80–150 (optimal — matches Phase 3 Dunbar threshold calibration), 1,000+ (not recommended — institutional co-optation and regulatory complexity out of scope).
+- Governance confirmed as correct first pilot domain over food systems and information infrastructure — dependency argument is strong and consistent with Phase 3 framework.
+- Added Discourse-specific 6-month roadmap (trust-level onboarding, wiki post co-editing, embed widget passive discovery path, offline gap detection in Month 5 tabletop).
+- Added domain-specific success metrics (governance, food systems, information infrastructure) not in prior draft.
+- Added adoption failure playbook with 4-step recovery path grounded in CHI 2025 mutual aid technology research.
+- Added 50-community federation pathway including federated Nextcloud/Matrix architecture, Iroquois/Swiss cantonal governance model application, and quantitative infrastructure model (50 instances, 5 regional clusters, $3,000–7,500/year at full federation).
+- Research confidence: High on domain selection and scaling structure; Medium on cost modeling and timeline (community selection speed is primary variable).
+
+**Output**: `projects/systems-resilience/PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md` (production-ready, ~3,500 words, supersedes prior version)
+
+---
+
 ## June 3, 2026 — General Research Agent — Phase 1 Coalition Leverage Matrix
 
 **Task**: Build PHASE_1_COALITION_LEVERAGE_MATRIX.md — 8-section, ~2,600-word framework mapping Phase 1's five domains (39, 56, 59, 58, 37) across 7 constituencies, quantifying coalition leverage multipliers, and providing the June 15 checkpoint team with sequencing logic and escalation protocols.
