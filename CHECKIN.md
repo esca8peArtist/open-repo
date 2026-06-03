@@ -1,5 +1,27 @@
 # Check-In Report
 
+## Current Status — Session 2687 (2026-06-03 11:51 UTC) — Verification Complete, Credential Blocker Confirmed Still Active, Standby Mode
+
+**Time Until Key Events**:
+- ⏰ **13:15 UTC** (~1h 24m): 🔴 **CRITICAL DEADLINE** — Alpaca credential fix must be completed before market open
+- ⏰ **13:30 UTC** (~1h 39m): Market opens; trading resumes if credentials fixed (JPM+AMZN sessions auto-wake)
+- ⏰ **20:00 UTC** (~8h 9m): Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
+- ⏰ **23:59 UTC** (~12h 8m): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
+
+**Status**: 🔴 **CREDENTIAL BLOCKER STILL ACTIVE; SYSTEM IN STANDBY MODE** — Credential verification at 11:51 UTC confirms 2 insufficient subscription errors still present. No new autonomous work available — all Phase 1-6 deliverables complete and staged from prior sessions. System standing by for: (1) Alpaca credential fix (deadline 13:15 UTC, 1h 24m), (2) User decisions on Phase 2/seedwarden/systems-resilience (deadline 23:59 UTC, 12h 8m).
+
+**Session Work**:
+- ✅ Credential blocker re-verified: `docker logs stockbot --tail=50` returned 2 insufficient subscription errors (unchanged since 08:42 UTC Session 2672)
+- ✅ Assessed autonomous work availability: All Phase 1-6 work complete; all queue items staged; no new work available
+- ✅ Confirmed system readiness: All pre-market and post-market materials staged and ready from prior sessions
+- ✅ Prepared for potential auto-fallback: If user decisions not provided by 23:59 UTC, auto-fallback scenarios are pre-staged in PROJECTS.md
+
+**Critical Blockers Requiring User Action**:
+1. 🔴 **URGENT (1h 24m)**: Alpaca credential fix on Jetson — ALPACA_API_KEY_ID must differ from ALPACA_API_KEY
+2. 🟡 **IMPORTANT (12h 8m)**: Path decisions on Phase 2, seedwarden, systems-resilience — auto-fallback ready if not provided
+
+---
+
 ## Current Status — Session 2686 (2026-06-03 11:29–12:15 UTC) — Exploration Queue Complete, Credential Deadline Critical (1h 15m)
 
 **Time Until Key Events**:
