@@ -1,0 +1,69 @@
+# Domain 54 Gist URL — Criminal Justice, Civic Exclusion Architecture
+
+## Gist Creation Status: READY FOR AUTONOMOUS SEND
+
+**File source**: `projects/resistance-research/domains/domain-54-criminal-justice-civic-exclusion-architecture.md`
+
+**Status**: Research complete (7,400 words, 46 citations) — ready for distribution prep
+
+**Gist URL** (create via gist.github.com):
+```
+https://gist.github.com/esca8peArtist/[HASH_TO_BE_FILLED_AFTER_CREATION]
+```
+
+**Gist filename**: `domain-54-criminal-justice-civic-exclusion-architecture.md`
+
+**Gist description**: "Domain 54: Criminal Justice, Civic Exclusion Architecture, and the Democratic Participation Crisis — 7,400 words, 46 citations, CC Attribution 4.0"
+
+**Gist visibility**: PUBLIC (not secret)
+
+**Gist account**: esca8peArtist (same account used for all prior domain Gists)
+
+---
+
+## Gist Creation Checklist
+
+- [ ] Navigate to https://gist.github.com (logged in as esca8peArtist)
+- [ ] Click "New gist"
+- [ ] Filename: `domain-54-criminal-justice-civic-exclusion-architecture.md`
+- [ ] Copy full domain-54 content (from domains/domain-54-criminal-justice-civic-exclusion-architecture.md)
+- [ ] Set visibility: "Create public gist"
+- [ ] Description: "Domain 54: Criminal Justice, Civic Exclusion Architecture, and the Democratic Participation Crisis — 7,400 words, 46 citations"
+- [ ] Click "Create public gist"
+- [ ] Copy Gist URL: `https://gist.github.com/esca8peArtist/[HASH]`
+- [ ] **VERIFY**: Open Gist URL in incognito browser window — confirm page loads, markdown renders, bibliography visible
+- [ ] Update this file with actual Gist URL
+- [ ] Commit to repo
+
+---
+
+## Distribution Overview
+
+**Domain 54 research**: Complete. Pre-check verified all three required topics present:
+1. Felony disenfranchisement as structural system ✓
+2. Legal financial obligations (LFOs) as poll tax mechanism ✓
+3. Jury exclusion by state statute ✓
+
+**Primary distribution network**: Network Category A (Criminal Justice and Abolitionist Ecosystem)
+- 27 target organizations identified in DOMAINS_48_51_PRODUCTION_ROADMAP.md Part 3
+- Lead contacts: Movement for Black Lives Policy Table, Sentencing Project, Worth Rises, Brennan Center, NAACP LDF
+
+**Distribution timing**: August 1–15, 2026 (pre-midterm advocacy window; Domain 50 ballot measures August 1)
+
+**Email template**: Use Template D-1 (frontline organizing) variant from DOMAINS_48_51_PRODUCTION_ROADMAP.md Part 3
+
+See `execution/domain-54-contact-list.md` (to be created) for full contact verification and tiered distribution schedule.
+
+---
+
+## Cross-Reference to Domain 48
+
+Domain 48 research runbook included a critical pre-check: "Read domain-54 file FIRST and assess whether all three required topics are present."
+
+**Pre-check result (June 3, 2026)**: YES — all three topics comprehensively covered.
+
+**Consequence**: Domain 48 is now a distribution task, not a research task. Domain 54 IS the standalone research addressing the Domain 48 requirement.
+
+---
+
+*Prepared: June 3, 2026. Research complete: May 13, 2026. Distribution target: August 1–15, 2026.*
