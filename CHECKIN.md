@@ -1,5 +1,48 @@
 # Check-In Report
 
+## Since Last Check-in (Session 2660 — 2026-06-03 07:00–07:15 UTC) — Critical Block Verification + Project Status Assessment
+
+### What Was Accomplished
+
+✅ **Block Verification Complete**: Alpaca auth failure CONFIRMED STILL ACTIVE (2 failures in Docker logs). CHECKIN from Session 2658 has detailed fix instructions ready. NO AUTONOMOUS WORK AVAILABLE — all projects blocked on user actions/decisions with 23:59 UTC deadline today.
+
+### Items Needing User Input
+
+**🔴 CRITICAL (Before 13:30 UTC market open — 6h 30min remaining)**:
+1. **Alpaca Credentials Fix on Jetson** (URGENT)
+   - SSH to Jetson, verify `/opt/stockbot/.env` has different values for ALPACA_API_KEY_ID and ALPACA_API_KEY
+   - Restart: `docker restart stockbot`
+   - Verify fix: `docker logs stockbot --tail=20 | grep insufficient` should return 0 results
+   - **DO NOT TRADE until verified fixed**
+
+**Important (Deadline 23:59 UTC today)**:
+2. **Resistance-Research Phase 2 Decisions** — Choose which domains to activate next:
+   - Domain 59: Senate Finance CTC markup window (OPEN NOW, closes June 30)
+   - Domain 51: Campaign Finance (July 1 CA deadline)
+   - Domains 49-50: Environmental Justice/LGBTQ+ Rights (July-Aug timeline)
+   - Domain 57: Multilateral Withdrawal (Aug timeline)
+   - Decision memo: `PHASE_2_DECISION_MEMO_JUNE_2026.md` has 6 user decisions needed
+
+3. **Seedwarden Track A/B Launch Decision**:
+   - Gate 1 launch-ready (dry-run verified 100% pass rate)
+   - Track A: Needs 2 Etsy/tagging actions (not blocking)
+   - Track B: Zero blockers, ready to launch immediately
+   - Decision: Proceed with Track B launch or wait for Track A actions?
+
+4. **Cybersecurity-Hardening Phase 1 Continuation**:
+   - Waiting on Windows machine restart for VeraCrypt pre-boot test completion
+   - Once complete: Steps 1.4-1.7 ready (Ente Auth, Bitwarden, data broker opt-outs, passcode — ~1.5-2 hrs)
+
+### Project Status Summary
+- 🔴 **stockbot** (P1): CRITICAL BLOCKER — Alpaca auth credentials (user action, 6h 30min)
+- 🟡 **resistance-research** (P2): Phase 1 coalition analysis complete; Domain 59 distribution prepped (user decision, deadline 23:59 UTC today)
+- 🟡 **seedwarden** (P5): Launch ready (user decision, deadline 23:59 UTC today)
+- 🔴 **cybersecurity-hardening** (P3): Phase 1 in progress (user restart action needed)
+- 🔴 **mfg-farm** (P4): All prepped (user test print action needed)
+- 🟢 **systems-resilience** (P7): Platform analysis complete, recommendation available
+
+---
+
 ## Since Last Check-in (Session 2659 — 2026-06-03 06:50–07:30 UTC) — Parallel Research Execution + Pre-Deployment Validation
 
 ### What Was Accomplished
