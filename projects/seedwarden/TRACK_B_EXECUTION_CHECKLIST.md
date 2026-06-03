@@ -1,19 +1,78 @@
 ---
-title: "Track B Execution Checklist — Go/No-Go Decision Brief"
-prepared: 2026-06-03
-prepared_by: research-agent (claude-sonnet-4-6)
-status: DECISION REQUIRED — June 3 EOD
-audience: user (thorn)
+title: "Track B Execution Checklist — Gate 1 Launch Decision"
+date: 2026-06-03
+prepared_by: seedwarden-agent (claude-sonnet-4-6)
+status: DECISION DOCUMENT — user approval required today (June 3 EOD)
+confidence: 92%
 sources:
-  - GATE_1_LAUNCH_DECISION_BRIEF.md (June 3, 2026)
-  - TRACK_B_ACTIVATION_READY.md (June 1, 2026)
-  - SEEDWARDEN_TRACK_B_GATES_RUNBOOK.md (May 26, 2026)
-  - PHASE_3_ASSETS_VERIFICATION.md (May 13, 2026)
-  - PHASE_3_DECISION_GATES_FRAMEWORK.md (May 27, 2026)
-  - ORCHESTRATOR_STATE.md (June 3, 2026)
+  - track-b-activation/ACTIVATION_RUNBOOK.md
+  - track-b-activation/READINESS_REPORT_JUNE_1.md
+  - TRACK_B_ACTIVATION_READY.md
+  - SEEDWARDEN_TRACK_B_ACTIVATION_CHECKLIST_SESSION_2657.md
+  - SEEDWARDEN_TRACK_B_VERIFICATION_SESSION_2657.md
+  - SEEDWARDEN_TRACK_B_GATES_RUNBOOK.md
+  - TRACK_A_BLOCKER_RESOLUTION.md
+  - PHASE_3_JUNE_22_LAUNCH_CHECKLIST.md
+  - concurrent-track-execution-plan.md
 ---
 
-# Track B Execution Checklist — June 3, 2026
+# Track B Execution Checklist
+## Gate 1 Launch Decision — June 3, 2026
+
+**Decision deadline**: Today, June 3, EOD
+**Infrastructure status**: ALL PASS — verified June 1, re-verified June 3
+**Activation confidence**: 92%
+**Total user time required**: 3.5–4.5 hours (gate setup) + 3.5–4.0 hours (launch day)
+
+---
+
+## Track B vs. Track A — High-Level Positioning
+
+Track A is the Etsy-first path: upload 21 digital guides to Etsy, collect organic search traffic, and sell directly through the Etsy platform. It is currently blocked by two user-action items (tag corrections and Etsy account verification) with an uncertain external timeline.
+
+Track B is the audience-first path: build an owned email list before making any product sales. The mechanism is:
+
+1. Social accounts (Instagram, TikTok, Pinterest) drive followers
+2. Bio links direct followers to a free lead magnet (zone-specific quick-start card)
+3. Kit email automation delivers the zone card and runs a 5-email welcome sequence over 10 days
+4. Email 5 (Day 10) introduces the Etsy shop with a 15% coupon
+
+Track B does not depend on Etsy being live to launch. It builds the subscriber list independently, and when Etsy eventually resolves, every active email subscriber is a pre-warmed buyer.
+
+The audience difference: Track A reaches buyers searching Etsy for "companion planting" or "seed saving guide." Track B reaches growers, foragers, and herbalists through social discovery — a different, larger, and less transaction-ready cohort that converts over weeks, not minutes. Track B is the foundation for Phase 3 (medicinal herbs bundles, June 22 sprint) because Phase 3 products require a pre-built audience for launch-day momentum. Track A alone does not provide this.
+
+Track B does not compete with Track A for assets or systems. They share only the user's time. Both can run simultaneously. The only dependency: once Etsy goes live, Email 3 and Email 5 fill-in placeholders (`[Your Etsy Shop URL]`, guide title fields) should be completed before Kit build.
+
+---
+
+## Current Status — May 30 Deadline and What Has Shifted
+
+The May 30 launch target has passed. The June 1 activation deadline referenced in some documents has also passed. Neither of these dates creates a hard block on execution today.
+
+What has changed since May 30:
+
+- The Gate 3 Kit automation must be published (not just built) to allow DNS propagation before launch. The 48-hour propagation window flagged in May documentation is still standard; publishing on June 3 and launching on June 5 satisfies this comfortably.
+- The social post calendar in `TRACK_B_SOCIAL_CALENDAR_MAY28_30.md` uses "May 28–30" as dates in post copy. These are templates, not time-locked. When posting, substitute the actual launch date. All caption content is evergreen.
+- The Kit email sequence delays are all day-relative (Day 0, 2, 5, 7, 10 from subscription date). They do not reference calendar dates and require no edits.
+
+What has NOT changed:
+
+- All 8 zone PDF files are intact on disk at `projects/seedwarden/assets/zone-cards/` (verified June 3, sizes 633–634 KB each, all 8 present)
+- Email automation copy (5 emails) is production-ready at `projects/seedwarden/execution/TRACK_B_EMAIL_COPY_FINAL.md`
+- Logo at expected path and size: `projects/seedwarden/logos/seedwarden_logo_1.png` (919,135 bytes)
+- All 15 influencer contacts are verified and documented
+- All 18 social post drafts are staged and complete
+- All 8 companion runbook files are present on disk
+
+The Phase 3 data window is the only time-sensitive impact of the deadline slip:
+
+| Launch date | Day 14 checkpoint | Buffer before June 22 Phase 3 sprint |
+|-------------|-------------------|--------------------------------------|
+| June 3 | June 17 | 5 days |
+| June 4 | June 18 | 4 days |
+| June 5 | June 19 | 3 days |
+| June 8 | June 22 | Zero — Phase 3 begins same day as Day 14 data arrives |
+| June 10+ | June 24+ | Phase 3 starts before launch data is available |
 
 **Bottom line**: Track B has zero blockers. All infrastructure was verified on June 1. The only
 remaining work is 3.5–4.5 hours of platform setup (5 user action gates). You are reading this
@@ -270,7 +329,106 @@ These are the only things standing between you and launch:
 
 ---
 
-*Prepared: 2026-06-03 by research-agent (claude-sonnet-4-6).*
-*Sources: GATE_1_LAUNCH_DECISION_BRIEF.md, TRACK_B_ACTIVATION_READY.md,*
-*SEEDWARDEN_TRACK_B_GATES_RUNBOOK.md, PHASE_3_ASSETS_VERIFICATION.md,*
-*PHASE_3_DECISION_GATES_FRAMEWORK.md, ORCHESTRATOR_STATE.md.*
+## 7. Phase 3 Assets (June 22 – July 13) — Simultaneous Compatibility with Track B
+
+Phase 3 is the medicinal herbs writing sprint (June 22 – July 13, with Women's Health bundle uploading June 29). Track B and Phase 3 do not compete for systems or assets. They share only the user's time.
+
+**How Track B and Phase 3 interact**:
+
+| Date | Track B Activity | Phase 3 Activity | Conflict level |
+|------|-----------------|-----------------|----------------|
+| June 3–5 | Launch gates (3.5–4 hrs) + Day 1 execution (3.5–4 hrs) | Pre-production tasks (Canva templates, supplier research June 8 deadline) | Low — launch is two compressed sessions, not all-day |
+| June 8 | Day 3 checkpoint (30-min read) | Herb supplier research hard deadline (Tier 1: Goldenseal) | Low — Day 3 check is a read, not a work session |
+| June 15 | Day 7 checkpoint + ongoing content cadence | Canva color palette lock; Phase 3 Gate 1 deadline | Low — palette decision may already be decided via Gate 2 color choice |
+| June 16–19 | Day 14 checkpoint — Phase 3 scope decision data | FTC compliance review (June 20) | None — checkpoint is a metrics read |
+| June 22 | Ongoing social content cadence (1.5–2 hrs/day full pace) | Writing sprint begins: Women's Health (14–16 hrs across 6 days) | High if both at full pace — allocate 3–4 total hrs/day across both |
+| June 29 | Email 4 (Day 7 post-launch if June 22 launch — or earlier cohort) | Women's Health bundle upload | None — different systems |
+| July 13 | Monitoring cadence, influencer follow-up | Phase 3 sprint closes: final bundle uploaded | None |
+
+**The key integration point**: Track B's Day 14 checkpoint provides the subscriber and engagement data that should inform the Phase 3 Sprint Scope decision (Option A: 5 bundles solo; Option B: 5 bundles + writer; Option C: 3 bundles solo). The PHASE_3_JUNE_22_LAUNCH_CHECKLIST.md notes that the three Phase 3 decisions were expected by May 30; they were not logged. Track B data fills the gap:
+
+- 50+ Kit subscribers by Day 14 and 3+ influencer responses committed: Option B or A is justified (demonstrated audience depth)
+- 25–49 subscribers, 1–2 influencer responses: Option C recommended (conservative scope, protect July 15 practitioner-tier unlock)
+- Below 25 subscribers: Review launch execution before committing Phase 3 resources
+
+**Do Phase 3 assets serve both tracks simultaneously?** Yes. The Kit email sequence was designed for forward integration:
+
+- Email 4 (Day 7 in Kit sequence): Guide catalog introduction — guide title and Etsy link placeholders are explicitly left as fill-ins (`[Guide Name]`, `[Etsy listing URL]`) so they update when Phase 3 products become available on Etsy
+- Email 5 (Day 10): SEEDWARDEN15 coupon — already designed to send buyers to Etsy, which will have Phase 3 guides by August at the latest
+- Track B's email list is the pre-built audience for Phase 3 Etsy launch outreach — June and July subscribers who receive Email 4 will be the first to know about medicinal herb bundles
+
+**Resource competition during the writing sprint (June 22 – July 13)**: The sprint at Option C pace requires approximately 2 hours per day (36–44 hours over 22 days). Track B at a sustainable post-launch cadence is approximately 1–1.5 hours per day (Pinterest pins and Instagram captions in batch; TikTok native uploads 2–3 times per week). These coexist at 3–3.5 hours per day total.
+
+Triage rule when time is short: suspend Track B social content output before interrupting Phase 3 writing. A week with no new social posts loses algorithm momentum but does not damage the email list. A week of stalled writing threatens the July 15 practitioner-tier unlock (which requires 3 bundles live). The exception: if Track B shows a viral moment or high-engagement post — respond in real time, then return to writing.
+
+---
+
+## 8. Success Metrics — Track B Gate 1 and Post-Launch Checkpoints
+
+### Gate 1 Success Criteria (Setup, not performance)
+
+Gate 1 is binary — accounts are either live or not. No performance metric applies. Pass if all three accounts are live with business designation, identical logos, and correct bios entered.
+
+### Day 3 Checkpoint (June 8–9, depending on launch date)
+
+| Metric | Below minimum | Marginal | On Track | Strong |
+|--------|--------------|----------|----------|--------|
+| Reddit r/herbalism upvotes | under 10 | 10–29 | 30–80 | 80+ |
+| Reddit comments | under 5 | 5–49 | 50–99 | 100+ |
+| Instagram/TikTok combined engagement | under 25 likes | 25–99 likes | 100–199 likes | 200+ |
+| New Kit subscribers | under 5 | 5–24 | 25–50 | 50+ |
+| Influencer responses (any reply) | 0 | 1–2 | 3–5 | 5+ who commit to sharing |
+
+Day 3 gate decision:
+- On Track or Strong: continue full Track B cadence; Phase 3 scope data is building
+- Marginal: investigate which platform is underperforming; audit Reddit post quality and bio link functionality
+- Below minimum across all metrics: hold; confirm Kit automation is Published (not Draft); confirm PDFs are downloading without "Request access" errors; re-run delivery test before Day 4
+
+### Day 7 Checkpoint (June 12–13)
+
+| Metric | Target | Source |
+|--------|--------|--------|
+| Email list subscribers | 25–75 | Kit Dashboard |
+| Email 1 open rate | 40–50% | Kit Dashboard |
+| Influencer partnerships active (committed to share) | 3–5 | Outreach log |
+| Social follower total (all platforms combined) | 100+ | Platform analytics |
+
+### Day 14 Checkpoint (June 19–20) — Phase 3 Scope Decision Gate
+
+| Metric | Target | Phase 3 Implication |
+|--------|--------|---------------------|
+| Total Kit subscribers | 50–150 | 50+ = Option B or A justified; 25–49 = Option C; below 25 = review before committing |
+| Medicinal-herbs interest tag (from Email 4 survey) | 10+ subscribers | Signals Phase 3 audience depth for practitioner tier |
+| Email 3 click-through to Etsy (if Etsy is live) | 10–20% | Validates purchase intent; strong signal for Phase 3 product demand |
+| Influencer amplification (posts, shares, or reposts) | 2+ | Validates herbalist community reach beyond direct followers |
+
+### Full Track B Key File Reference
+
+| Purpose | File |
+|---------|------|
+| 5-gate complete sequence (gate details + user instructions) | `projects/seedwarden/track-b-activation/READINESS_REPORT_JUNE_1.md` |
+| Gate completion record (fill in as gates clear) | `projects/seedwarden/track-b-activation/ACTIVATION_RUNBOOK.md` Section 1 |
+| Pre-launch autonomous steps | `projects/seedwarden/track-b-activation/ACTIVATION_RUNBOOK.md` Section 2 |
+| Launch day hour-by-hour (07:30–21:00 UTC) | `projects/seedwarden/track-b-activation/ACTIVATION_RUNBOOK.md` Section 3 |
+| Gate 1 rapid setup guide | `projects/seedwarden/GATE_1_RAPID_SETUP_GUIDE.md` |
+| Gate 3 Kit deployment guide | `projects/seedwarden/MAY_27_GATE_3_DEPLOYMENT_SCRIPT.md` |
+| Email automation copy (5 emails, production-ready) | `projects/seedwarden/execution/TRACK_B_EMAIL_COPY_FINAL.md` |
+| Zone PDFs (8 files, verified on disk) | `projects/seedwarden/assets/zone-cards/` |
+| Logo | `projects/seedwarden/logos/seedwarden_logo_1.png` |
+| Social post drafts (18 posts, URL placeholder) | `projects/seedwarden/TRACK_B_SOCIAL_CALENDAR_MAY28_30.md` |
+| Influencer contacts (15) | `projects/seedwarden/HERBALIST_OUTREACH_CONTACT_LIST.md` |
+| Influencer DM templates | `projects/seedwarden/TRACK_B_HERBALIST_OUTREACH_MATRIX.md` |
+| Day 3/7/14 checkpoint thresholds | `projects/seedwarden/TRACK_B_MONITORING_CHECKPOINTS.md` |
+| Common launch issues and decision trees | `projects/seedwarden/TRACK_B_LAUNCH_DAY_COMMON_ISSUES_DECISION_TREES.md` |
+| Rollback procedures | `projects/seedwarden/TRACK_B_LAUNCH_DAY_ROLLBACK_PROCEDURES.md` |
+| Track A blocker status | `projects/seedwarden/TRACK_A_BLOCKER_RESOLUTION.md` |
+| Phase 3 pre-production checklist | `projects/seedwarden/PHASE_3_JUNE_22_LAUNCH_CHECKLIST.md` |
+
+---
+
+*Updated: 2026-06-03 by seedwarden-agent (claude-sonnet-4-6).*
+*Sources: track-b-activation/ACTIVATION_RUNBOOK.md, track-b-activation/READINESS_REPORT_JUNE_1.md,*
+*TRACK_B_ACTIVATION_READY.md, SEEDWARDEN_TRACK_B_ACTIVATION_CHECKLIST_SESSION_2657.md,*
+*SEEDWARDEN_TRACK_B_VERIFICATION_SESSION_2657.md, SEEDWARDEN_TRACK_B_GATES_RUNBOOK.md,*
+*TRACK_A_BLOCKER_RESOLUTION.md, PHASE_3_JUNE_22_LAUNCH_CHECKLIST.md,*
+*concurrent-track-execution-plan.md. All infrastructure verified production-ready.*
