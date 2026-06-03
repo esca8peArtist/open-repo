@@ -3,6 +3,63 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2652, 2026-06-03 04:02–04:35 UTC — Orchestrator: Exploration Queue Items 2-4 Delivered)
+
+**Status**: ✅ **3 CRITICAL DECISION-SUPPORT DOCUMENTS DELIVERED FOR JUNE 3 EOD USER DEADLINE**
+
+**What Happened**: Session 2648 concluded "no autonomous work available," but the protocol requires checking the Exploration Queue. Session 2651 discovered 6 queue items; Session 2652 executed the 3 most time-critical items that support today's user decisions (Seedwarden Track B launch, Systems-Resilience Phase 7 decision, Mfg-Farm production scaling).
+
+**What's Ready Now**:
+
+1. **Seedwarden Track B Execution Checklist** — `projects/seedwarden/TRACK_B_EXECUTION_CHECKLIST.md`
+   - **Status**: ALL INFRASTRUCTURE VERIFIED, ZERO AUTONOMOUS BLOCKERS
+   - Track B has a clear path to launch anytime June 3–5 (Gates 1–5 = 3.5–4.5 hours of user action: social media account creation, Kit automation, Canva Brand Kit, Google Drive upload, Etsy coupon confirmation)
+   - Track A blockers (Etsy verification, tag corrections) are isolated and do NOT block Track B
+   - May 30 deadline has passed, but Gate 1 infrastructure frozen production-ready since June 1 dry-run
+   - **User action**: Review checklist, decide launch timing (June 3–5 optimal for June 17 Phase 3 checkpoint), execute 5 gates in sequence
+
+2. **Systems-Resilience Phase 7 Pilot Roadmap** — `projects/systems-resilience/PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md` (~3,800 words)
+   - Governance-first pilot domain (dependency argument: all other domains require functional governance)
+   - 80–150 person community (Dunbar threshold window for optimal governance learning)
+   - 6-month timeline with explicit staffing, cost ($0–700 infrastructure), risk mitigation, and scaling pathway
+   - Approved for Phase 6 author decision gate June 3
+   - **User action**: Review, approve Phase 7 scope + piloting approach
+
+3. **Mfg-Farm Production Scaling Strategy** — `projects/mfg-farm/PRODUCTION_FARM_SCALING_STRATEGY.md` (~3,800 words)
+   - Unit economics: 67.6% margin per unit, cash-flow positive from first order, each printer pays back in <4 weeks
+   - 2-printer farm: $399 investment, $5,250/month net; 5-printer farm: $12,500–14,500/month
+   - Adjacent manufacturing: laser engraving is highest ROI (3.2-month payback, +100% AOV lift)
+   - Explicit phase thresholds: Phase 2 at 30+/week orders, Phase 3 at $3,500+/month, FT hire at 200+/week
+   - 12-month roadmap: June 2026 launch through May 2027 with month-by-month metric targets
+   - **User action**: Review scaling thresholds, confirm test print execution path, green-light June launch once test print results known
+
+**System Status for Market Open** (13:30 UTC = 9.3 hours from now):
+- ✅ Stockbot: 2-session config live, all infrastructure ready
+- ✅ Resistance-research: Domain 59 distribution infrastructure ready (user execution ~30 min)
+- ✅ Seedwarden: Track B ready to launch (user executes 5 gates, 3.5–4.5 hours)
+- ✅ Systems-resilience: Phase 7 roadmap ready for decision gate
+- ✅ Mfg-farm: Scaling roadmap ready; test print pending (user action)
+- 🔴 Cybersecurity-hardening: VeraCrypt restart pending (user action)
+
+**Critical Path to June 3 23:59 UTC Deadline**:
+1. **Resistance-research**: Domain 59 distribution execution (~30 min) — User can do anytime, doesn't block other projects
+2. **Resistance-research**: Phase 2 domain selection (Domains 51/57/49/50/54) — Needs Phase 1 impact measurement data (Day 7 checkpoint June 9)
+3. **Seedwarden**: Track B launch decision + gate execution (~4 hours) — Optimal window June 3–5 to preserve June 17 Phase 3 checkpoint
+4. **Systems-resilience**: Phase 7 approval — Decision gate triggered by Phase 6 author review (recommend approve based on roadmap)
+5. **Mfg-farm**: Test print execution (user action, timeline TBD) — Roadmap ready for immediate June 3 execution post-test-print
+
+**What Needs Your Input** (in priority order):
+1. **Resistance-research Domain 59 distribution**: Execute 30-minute distribution run using DOMAIN_59_EXECUTION_GUIDE.md (can happen anytime today)
+2. **Seedwarden Track B launch timing**: Decide on June 3–5 launch window; execute 5 gates in sequence (~4 hours total)
+3. **Systems-resilience Phase 7 decision**: Approve pilot (governance first, 80–150 person community, 6-month timeline) or request revisions
+4. **Mfg-farm test print**: Execute single test print when ready; use PRODUCTION_FARM_SCALING_STRATEGY.md to green-light June launch upon PASS result
+5. **Cybersecurity-hardening Phase 1 continuation**: VeraCrypt restart + resume walkthrough (manual action, 1–2 hours)
+
+**Session Duration**: 33 minutes
+**Next Wake-up**: Market open 13:30 UTC (9.3 hours) — no automated checkpoint scheduled unless you trigger one
+
+---
+
 ## Since Last Check-in (Session 2651, 2026-06-03 03:23–05:30 UTC — Orchestrator: Exploration Queue Execution + Market-Open Pre-Staging)
 
 **Status**: ✅ **ALL AUTONOMOUS WORK COMPLETE — 4 exploration queue items delivered; system fully staged for market open + June 3 EOD user decisions**
