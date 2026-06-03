@@ -1,5 +1,55 @@
 # Check-In Report
 
+## Current Status — Session 2682+ (2026-06-03 10:44–10:52 UTC)
+
+**Time Until Key Events**:
+- ⏰ **13:15 UTC** (~2h 30m): CRITICAL — Alpaca credential fix deadline before market open
+- ⏰ **13:30 UTC** (~2h 45m): Market opens; trading resumes if credentials fixed
+- ⏰ **20:00 UTC** (~9h 15m): Post-market analysis (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
+- ⏰ **23:59 UTC** (~13h 15m): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
+
+**Status**: 🟢 **STANDING BY** — All autonomous work complete. No unblocked work available. Credential blocker REVERIFIED ACTIVE (2 Docker auth failures confirmed in latest logs at 10:44 UTC). All decision-gated work staged for user activation.
+
+**Critical Blocker Status — REVERIFIED**: 🔴 **STILL ACTIVE** — Alpaca credentials misconfigured. Verification run June 3 10:44 UTC: `docker logs stockbot --tail=50` returned 2 auth failures ("insufficient subscription" errors). Root cause: ALPACA_API_KEY_ID = ALPACA_API_KEY (both `PKM03F5PK1LPV8LSBIP0`, should be different). **DEADLINE 13:15 UTC (2h 31m) — user must fix credentials or trading blocked at 13:30 UTC market open.**
+
+---
+
+## Since Last Check-in (Session 2682 — 2026-06-03 10:44–10:52 UTC) — Protocol Compliance, Standby Confirmed
+
+### Summary
+**Session objective**: Morning orientation per protocol; verify critical blocker; assess autonomous work availability. **Result**: (1) **All orchestration files verified in sync**. (2) **Critical blocker re-verified ACTIVE** (2 Docker auth failures confirmed). (3) **All autonomous Phase 1-6 work confirmed complete**. (4) **No new INBOX items** (all processed). (5) **Exploration queue confirmed populated** (6+ decision-gated items). (6) **No unblocked autonomous work available** — confirmed correct by design. System in STANDBY MODE awaiting user credential fix (critical path by 13:15 UTC) and user decisions by 23:59 UTC.
+
+### Work Completed
+
+✅ **Protocol-Compliant Orientation** (6 min):
+   - Read and verified: ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md (key sections)
+   - All orchestration files consistent and current (last updated Session 2681)
+   - BLOCKED.md: Confirmed 3 active blocks all unresolved (credentials, VeraCrypt restart, test print)
+   - INBOX.md: Confirmed zero new items pending ("all pending items processed from last session")
+
+✅ **Critical Block Verification** (1 min):
+   - Ran verification command at 10:44 UTC
+   - **Result**: 2 Docker auth failures found in logs (unchanged since Session 2681 verification at 07:46 UTC)
+   - **Status**: Block STILL ACTIVE; credential fix still required by 13:15 UTC
+
+✅ **Autonomous Work Assessment** (2 min):
+   - Per protocol: re-read project Goals and Exploration Queue
+   - Finding: All unblocked work requires explicit user decisions/actions
+   - Exploration Queue: 6+ items, all explicitly marked "decision-gated" or "awaiting user action"
+   - Verdict: No autonomous scope available this session; previous sessions' assessment confirmed correct
+
+### Autonomous Work Status (Unchanged from Session 2681)
+- ✅ stockbot: JPM+AMZN config live; awaiting credential fix
+- ✅ resistance-research: Domain 59 dispatch staged; awaiting user approval
+- ✅ cybersecurity-hardening: Phase 1 ready; awaiting VeraCrypt restart
+- ✅ mfg-farm: Launch sequence complete; awaiting test print
+- ✅ seedwarden: Gate 1 launch-ready; awaiting Track A/B decision
+- ✅ systems-resilience: Phase 6 complete; awaiting platform selection by 23:59 UTC
+
+**Decision**: STANDBY MODE confirmed. System is production-ready and fully staged. Awaiting: (1) Credential fix before 13:15 UTC (critical path), (2) User decisions by 23:59 UTC (Phase 2/seedwarden/systems-resilience).
+
+---
+
 ## Current Status — Session 2681+ (2026-06-03 10:37–10:50+ UTC)
 
 **Time Until Key Events**:
