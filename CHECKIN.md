@@ -1,10 +1,33 @@
 # Check-In Report
 
-## 🚨 ATTENTION: 4 Critical User Decisions Required (Deadline Passed — 2026-06-03 23:59 UTC)
+## 🚨 ATTENTION: 4 Critical User Decisions — Deadline Passed (2026-06-03 23:59 UTC)
 
-**Orchestrator Session 2716** (2026-06-04) ✅ **CONTINUED STANDBY**
+**Orchestrator Session 2717** (2026-06-04) ✅ **CONTINUED STANDBY**
 
-**Status**: All Phase 1-6 research, decision-support documents, and execution runbooks are production-ready. No user decisions received as of 2026-06-04. System in correct standby state. All decision-gated work staged for instant activation upon user approval.
+**Status**: All Phase 1-6 research, decision-support documents, and execution runbooks are production-ready. **Deadline passed; no user decisions received.** System in correct standby state. All decision-gated work staged for instant activation upon user approval.
+
+---
+
+## Since Last Check-in — Session 2717 (2026-06-04 00:XX UTC)
+
+**Status**: ⏳ **STANDING BY FOR USER DECISIONS** — Deadline has passed; maintaining standby state; zero autonomous work available (correct by design)
+
+**What Was Accomplished**:
+
+1. **Orchestrator Orientation** (00:XX UTC):
+   - ✅ Verified ORCHESTRATOR_STATE.md: All Phase 1-6 work complete
+   - ✅ Verified BLOCKED.md: 3 active blocks (all require user action)
+   - ✅ Verified INBOX.md: Empty (no new items)
+   - ✅ Verified PROJECTS.md: All projects blocked on user decisions
+   - ✅ Verified EXPLORATION_QUEUE.md: 4 active items (54, 57-59), all decision-gated
+
+**Critical Items** (DEADLINE PASSED — no decisions received):
+- **Domain 49 Execution** (resistance-research): Still open for June 4-5 execution (23-hour window expires June 5 midnight UTC)
+- **Alpaca Feed Choice** (stockbot): Awaiting decision (IEX $0 / SIP $50-99/mo)
+- **seedwarden Track** (seedwarden): Awaiting decision (Path A / Path B)
+- **Platform Choice** (systems-resilience): Awaiting decision (Nextcloud+Matrix / Discourse)
+
+**Next Action**: Upon ANY user decision, execute corresponding runbook immediately (5-20 min implementation per decision)
 
 ---
 
