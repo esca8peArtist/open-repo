@@ -1,5 +1,21 @@
 # Check-In Report
 
+## 🔴 URGENT — SESSION 2657 CRITICAL ALERT
+
+**TIME-CRITICAL ISSUE**: Stockbot Alpaca auth failure still blocking trading. Market opens **13:30 UTC (7 hours away)**.
+
+**Immediate User Action Required**:
+1. SSH to Jetson: `ssh awank@100.120.18.84`
+2. Check credentials: `cat /opt/stockbot/.env | grep ALPACA`
+3. Verify ALPACA_API_KEY_ID ≠ ALPACA_API_KEY (they should be DIFFERENT values)
+4. If same: Update .env with correct API key ID + secret key (separate values)
+5. Restart: `docker restart stockbot`
+6. Verify: `docker logs stockbot --tail=20 | grep -c insufficient` should return **0**
+
+**If not fixed by 13:30 UTC**: Recommend HALTING market trading until resolved.
+
+---
+
 ## Since Last Check-in (Session 2652 — 2026-06-03 06:10–06:25 UTC) — CRITICAL DISCOVERY
 
 ### What Was Accomplished
