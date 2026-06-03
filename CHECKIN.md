@@ -1,5 +1,58 @@
 # Check-In Report
 
+## Since Last Check-in (Session 2659 — 2026-06-03 06:50–07:30 UTC) — Parallel Research Execution + Pre-Deployment Validation
+
+### What Was Accomplished
+
+**1. Parallel Research Agent Execution** ✅:
+- **resistance-research**: Phase 1 Coalition Leverage Analysis (6,387 words, production-ready)
+  * File: `PHASE_1_COALITION_LEVERAGE_MATRIX.md` in projects/resistance-research/
+  * Key Finding: **June 30 CTC Senate Finance markup is CRITICAL** (highest-urgency leverage point in Phase 1 calendar, closes in 27 days)
+  * Includes: domain-coalition mapping, multiplicative opportunities, measurement-driven sequencing, advocacy calendar, contingency paths, actionable next steps
+  * Status: Ready for June 15 T+14 checkpoint (user review gates July Phase 2 decisions)
+  * Committed to master
+
+- **seedwarden**: Phase 2 Content Roadmap verified complete from prior execution (9,060 words)
+  * File: `SEEDWARDEN_PHASE_2_CONTENT_ROADMAP.md` (commit 738a4782)
+  * Content: 8 production-ready sections covering competitor analysis, platform strategies, UGC campaigns, email sequences, seasonal content calendar
+  * Status: Ready for post-launch activation
+
+**2. Open-Repo Pre-Deployment Checklist (Partial)** ⚠️:
+- ✅ `uv sync`: Completed successfully
+- ✅ `uv pip install libzim`: Installed libzim 3.10.0 successfully
+- ⚠️ `alembic upgrade`: Not applicable (no migrations in project)
+- ⚠️ `pytest verification`: Tests have missing dependencies (cryptography module not resolved by uv sync)
+  * **Issue Identified**: uv.lock may not include all transitive test dependencies
+  * **Action Needed**: Full `uv sync --all-extras` OR dependency audit before June 12 deployment
+  * **Recommendation**: Phase 5 A11y violations already verified complete in Session 2657; deployment-ready assessment can proceed once dependency gap resolved
+
+**3. Block Status Verification**:
+- Alpaca auth blocker: **STILL ACTIVE** (from Session 2658 — `docker logs` returned 2 auth failures)
+- Status: User credential fix required before 13:30 UTC market open
+
+### Items Needing User Input
+
+**CRITICAL (Before 13:30 UTC market open)**:
+1. **Alpaca Credentials Fix on Jetson** (from Session 2658 CHECKIN)
+   - SSH to Jetson, verify ALPACA_API_KEY_ID ≠ ALPACA_API_KEY, restart Docker
+   - See Session 2658 CHECKIN for detailed fix steps
+   - **Recommendation**: DO NOT trade until verified
+
+**Important (Deadline 23:59 UTC)**:
+2. **Resistance-Research Domain 59 Distribution** (fully prepped, materials ready)
+3. **Seedwarden Track A/B Launch Decision** (fully prepped, dry-run complete)
+4. **Systems-Resilience Platform Selection** (analysis complete, recommendation available)
+
+### Project Status Summary
+- 🔴 **stockbot** (P1): BLOCKED — Alpaca auth credentials
+- 🟢 **resistance-research** (P2): RESEARCH COMPLETE — Phase 1 Coalition Analysis ready for June 15 checkpoint
+- 🟢 **seedwarden** (P5): PREP COMPLETE — Phase 2 content roadmap ready for post-launch
+- 🟡 **open-repo** (P6): Phase 5 verified complete; pre-deployment dependency gap identified (not blocking Phase 5, but needs resolution for June 12)
+- ✅ **systems-resilience** (P7): Platform analysis complete, recommendation ready
+- 🔴 Others: Blocked on user actions or decisions
+
+---
+
 ## 🔴 URGENT — SESSION 2658 CRITICAL BLOCKER STATUS
 
 **TIME-CRITICAL ISSUE**: Stockbot Alpaca auth failure **CONFIRMED STILL ACTIVE**. Market opens **13:30 UTC (6h 50min away)**.
