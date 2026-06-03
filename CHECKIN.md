@@ -8,26 +8,33 @@
 
 ---
 
-## Since Last Check-in — Session 2717 (2026-06-04 00:XX UTC)
+## Since Last Check-in — Session 2718 (2026-06-04)
 
-**Status**: ⏳ **STANDING BY FOR USER DECISIONS** — Deadline has passed; maintaining standby state; zero autonomous work available (correct by design)
+**Status**: ⏳ **STANDING BY FOR USER DECISIONS** — Deadline passed June 3; no decisions received; zero autonomous work available (correct by design)
 
 **What Was Accomplished**:
 
-1. **Orchestrator Orientation** (00:XX UTC):
+1. **Orchestrator Orientation** (Session 2718):
    - ✅ Verified ORCHESTRATOR_STATE.md: All Phase 1-6 work complete
    - ✅ Verified BLOCKED.md: 3 active blocks (all require user action)
-   - ✅ Verified INBOX.md: Empty (no new items)
-   - ✅ Verified PROJECTS.md: All projects blocked on user decisions
-   - ✅ Verified EXPLORATION_QUEUE.md: 4 active items (54, 57-59), all decision-gated
+   - ✅ Verified INBOX.md: Empty (no new items to process)
+   - ✅ Verified PROJECTS.md: All projects blocked on user decisions or manual actions
+   - ✅ Confirmed Exploration Queue: 5+ decision-gated items (meets >3 active requirement)
+   - ✅ System Status: Correct standby state (all infrastructure production-ready, zero scope available)
 
-**Critical Items** (DEADLINE PASSED — no decisions received):
-- **Domain 49 Execution** (resistance-research): Still open for June 4-5 execution (23-hour window expires June 5 midnight UTC)
-- **Alpaca Feed Choice** (stockbot): Awaiting decision (IEX $0 / SIP $50-99/mo)
-- **seedwarden Track** (seedwarden): Awaiting decision (Path A / Path B)
-- **Platform Choice** (systems-resilience): Awaiting decision (Nextcloud+Matrix / Discourse)
+**Critical Items Requiring User Action** (DEADLINE: June 3 23:59 UTC — PASSED):
+- **Domain 49 Execution Window** (resistance-research): June 4-5 execution still available (hard cutoff June 5 midnight UTC due to Louisiana primary filing deadlines THIS WEEK)
+- **Alpaca Feed Choice** (stockbot): IEX $0/month vs SIP $50-99/month
+- **seedwarden Track Selection** (seedwarden): Path A (54 min social launch) vs Path B (3.5-4.5 hr full platform) or BOTH
+- **Platform Choice** (systems-resilience): Nextcloud+Matrix (9.5/10 recommended) vs Discourse (8.0/10)
 
-**Next Action**: Upon ANY user decision, execute corresponding runbook immediately (5-20 min implementation per decision)
+**Ready-to-Execute Upon Decision**:
+- Domain 49: 23-hour execution window (June 4-5 per `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md`)
+- Alpaca Feed: 5-20 min fix (modify `.env` on Jetson, container restart)
+- seedwarden Path A: 54 min execution; Path B: 3.5-4.5 hrs; Both: sequential 4+ hours
+- systems-resilience: Phase 5 Wave 1 kickoff June 5 per chosen platform roadmap
+
+**Next Action**: Upon ANY user decision, execute corresponding runbook immediately (all materials production-ready)
 
 ---
 
