@@ -3,6 +3,49 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2648, 2026-06-03 02:55–03:20 UTC — Orchestrator: Idle-State Assessment + Market Monitoring Prep)
+
+**Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE — All projects blocked on user decisions due EOD June 3; market monitoring scheduled 13:15 UTC**
+
+**Work Completed** (idle-state assessment):
+
+1. ✅ **Orientation + Block Assessment** (5 min):
+   - Verified ORCHESTRATOR_STATE.md current (02:55 UTC generation)
+   - Confirmed 2 active blocks unchanged: cybersecurity-hardening (VeraCrypt restart), mfg-farm (test print)
+   - Verified all exploration queue items from Sessions 2646-2647 complete and committed
+
+2. ✅ **Autonomous Work Assessment** (5 min):
+   - All major projects blocked on user decisions due by 23:59 UTC June 3:
+     - **resistance-research**: Domain 59 distribution + Phase 2 domain selection
+     - **seedwarden**: Launch path selection (Track A vs Path B)
+     - **systems-resilience**: Phase 5/6 platform selection
+   - No additional autonomous work identified beyond exploration queue completions
+   - Market monitoring is next scheduled work at 13:15 UTC (10h 35m away)
+
+3. ✅ **Infrastructure Verification** (5 min):
+   - Pre-market brief: ✅ READY (created 01:40 UTC June 3)
+   - Market analysis runbook: ✅ READY (created 01:18 UTC June 3)
+   - Coalition Leverage Matrix: ✅ READY (created Session 2647)
+   - Thermal baseline: 46-47°C idle, 30-40°C headroom for 6.5h session
+   - All decision briefings production-ready for user EOD execution
+
+**🟢 Ready Status — June 3 EOD Execution Window**:
+
+All user decision materials prepared and committed to master:
+- `PHASE_2_ACTIVATION_SUMMARY.md` — 6 decisions with timelines
+- `DOMAIN_59_EXECUTION_GUIDE.md` — Contact profiles + send templates
+- `PHASE_1_COALITION_LEVERAGE_MATRIX.md` — Coalition sequencing logic
+- `GATE_1_LAUNCH_DECISION_BRIEF.md` — seedwarden path comparison
+- `JUNE_3_PRE_MARKET_BRIEF.md` — Market session reference card
+- `JUNE_3_MARKET_ANALYSIS_RUNBOOK.md` — Post-market decision tree
+
+**Next Scheduled Events**:
+- **13:15 UTC** (10h 35m): Auto-wake for market-open monitoring
+- **13:30–20:00 UTC**: Live trading session (JPM ridge_wf + AMZN lgbm_ho)
+- **20:00 UTC**: Post-market analysis execution
+
+---
+
 ## Since Last Check-in (Session 2647, 2026-06-03 02:36–03:15 UTC — Orchestrator: Coalition Analysis + Phase 2 Decision Support)
 
 **Status**: ✅ **PHASE 2 DECISION SUPPORT COMPLETE — All materials ready for user EOD execution**
