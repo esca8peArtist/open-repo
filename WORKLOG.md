@@ -35294,3 +35294,42 @@ Action: review live signals; consider session suspension if trend persists.
 | Session | drift-test-001 |
 
 Action: review live signals; consider session suspension if trend persists.
+
+---
+
+## 2026-06-03 06:10 UTC — Session 2652: CRITICAL DISCOVERY — Alpaca Auth Failure Blocks Trading
+
+**Time**: 06:10–06:25 UTC (15 min elapsed; 8h 5min until market open)
+
+**Task**: Pre-market verification (idle period before 13:30 UTC market open). Investigate drift alerts from June 1 (JPM ridge_wf Z-score -3.5, -0.20%/day vs +0.12%/day expected).
+
+**Critical Finding**: Jetson Docker container has been continuously failing Alpaca WebSocket authentication for **6+ hours** (since ~23:50 UTC June 2 startup). Root cause: "insufficient subscription" error (code 409) from Alpaca SDK auth handler.
+
+**Evidence**:
+- Database query: Zero JPM ridge_wf trades since deployment. Latest trade is AMZN BUY at June 1 13:39 UTC.
+- Jetson database shows only 141 total trades, all from January-June 1 dates. No June 2-3 trades.
+- Docker logs (last 500 lines): Repeated authentication failures every 5 minutes (300s backoff). Example:
+  ```
+  [2026-06-03 05:51:23] ERROR — error during websocket communication: insufficient subscription
+  ValueError: insufficient subscription (code 409)
+  Stream exited cleanly — reconnecting in 300s
+  ```
+- Container health status: "healthy" (only checks HTTP 8000 port availability, not trading functionality).
+
+**Root Cause Analysis**:
+- Session 2630 (June 2 22:55 UTC) attempted fix: Added `ALPACA_API_KEY_ID=PKM03F5PK1LPV8LSBIP0` to environment
+- **Issue**: Both ALPACA_API_KEY and ALPACA_API_KEY_ID are set to SAME VALUE (PKM03F5PK1LPV8LSBIP0)
+- This is incorrect: ALPACA_API_KEY_ID should be the key identifier; ALPACA_API_KEY should be the secret key
+- Alpaca SDK rejects mismatched credentials with "insufficient subscription" error (code 409)
+
+**Impact**:
+- **NO TRADING POSSIBLE** at 13:30 UTC market open
+- "Drift alerts" from June 1 (Z-score -3.5) were likely from test simulation, not actual live trades
+- 2-session config (JPM ridge_wf + AMZN lgbm_ho) deployed but BLOCKED by auth failure
+
+**Recommendation**: 
+- **HALT market trading at 13:30 UTC until credentials fixed**
+- User action required: Verify Alpaca API credentials (.env file), ensure ALPACA_API_KEY_ID ≠ ALPACA_API_KEY
+- Escalated to BLOCKED.md as critical blocker with detailed debugging instructions
+
+**Status**: Blocked pending user action to correct Alpaca credentials

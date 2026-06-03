@@ -1,30 +1,42 @@
 # Check-In Report
 
-## Since Last Check-in (Session 2656 — 2026-06-03 05:43–06:15 UTC)
+## Since Last Check-in (Session 2652 — 2026-06-03 06:10–06:25 UTC) — CRITICAL DISCOVERY
 
 ### What Was Accomplished
 
-**Orchestrator Orientation & Status Verification** ✅:
-- Full orientation of ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, EXPLORATION_QUEUE.md
-- Verified: Zero autonomous work available before market open (13:30 UTC today)
-- Confirmed: All 3 exploration queue items have deadlines June 8+ (post-market-open)
-- Assessment: System correctly idle-staged and production-ready for market execution
-- Findings: Both active blocks (cybersecurity-hardening, mfg-farm) are user-action-required and cannot be auto-verified
+**CRITICAL BLOCKER DISCOVERY — Stockbot Alpaca Auth Failure** 🔴:
+- Pre-market diagnostics discovered Jetson Docker container continuously failing Alpaca WebSocket authentication for 6+ hours
+- Root cause: Session 2630 "fix" was incomplete — both ALPACA_API_KEY_ID and ALPACA_API_KEY set to same value (incorrect)
+- Evidence: Zero trades since June 1 13:39 UTC; Docker logs show repeated auth failures every 5min (code 409 "insufficient subscription")
+- Impact: **NO TRADING POSSIBLE** at 13:30 UTC market open
+- Escalated: Critical blocker entry written to BLOCKED.md with debugging instructions
 
 ### What's In Progress
-- ⏳ **Stockbot Market Execution** (13:30–20:00 UTC June 3): 2-session config (JPM ridge_wf + AMZN lgbm_ho) deployed and verified
-- ⏳ **Post-Market Analysis** (20:30–22:00 UTC June 3): JUNE_3_MARKET_ANALYSIS_RUNBOOK.md execution staged and ready
+- 🔴 **Stockbot**: BLOCKED — Awaiting user action to correct Alpaca credentials in .env file
+- ⏳ **Other projects**: No blocking issues; ready for autonomous work during market hours idle period
 
-### Items Needing User Input
-*No new items; all major decisions pending per previous check-in:*
-- Systems-Resilience Phase 5/6 Platform Decision (due June 3 EOD)
-- Resistance-Research Phase 2 Domain Selection (due June 3 EOD)
-- Seedwarden Track A vs. B Launch Decision (due June 3 EOD)
-- Cybersecurity-Hardening VeraCrypt Restart (user manual action)
-- Mfg-Farm Test Print Execution (user manual action)
+### Items Needing User Input (URGENT)
+
+1. **CRITICAL — Stockbot Alpaca Credentials** (Before 13:30 UTC market open):
+   - Verify `/opt/stockbot/.env` on Jetson: ALPACA_API_KEY_ID and ALPACA_API_KEY should be DIFFERENT values
+   - If both are same, update with correct API key ID (not secret)
+   - Restart Docker container: `docker restart stockbot`
+   - Verify: `docker logs stockbot --tail=20` should show no "insufficient subscription" errors
+
+2. **Market Trading Decision** (13:30 UTC):
+   - **RECOMMENDATION: HALT trading until credentials verified**
+   - If credentials fixed before market open, can proceed with 2-session execution
+   - If not fixed, recommend monitoring-only (no live trading) and debug session offline
+
+3. **Other decisions still pending by June 3 EOD**:
+   - Systems-Resilience Phase 5/6 Platform Decision
+   - Resistance-Research Phase 2 Domain Selection
+   - Seedwarden Track A vs. B Launch Decision
+   - Cybersecurity-Hardening VeraCrypt Restart (user manual action)
+   - Mfg-Farm Test Print Execution (user manual action)
 
 ### Status Summary
-- 🟢 **Stockbot**: June 3 13:30 UTC market open fully ready. 2-session deployed, tests passing, credentials verified.
+- 🔴 **Stockbot**: BLOCKED — Alpaca auth failure. Awaiting credential verification. DO NOT TRADE until fixed.
 - 🟡 **Resistance-research**: Domain 59 distribution ready for execution; Phase 2 selection pending.
 - 🟡 **Seedwarden**: Gate 1 launch-ready; path decision (Track A/B) pending.
 - 🟡 **Systems-resilience**: Phase 6 analysis complete; platform decision pending.
