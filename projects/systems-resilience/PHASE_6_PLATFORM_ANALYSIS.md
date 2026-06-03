@@ -1,13 +1,13 @@
 ---
-title: "Phase 6 Community Economic Resilience — Platform Analysis & Decision Framework"
+title: "Phase 6 Community Coordination Platform Analysis"
 project: systems-resilience
 phase: 6
 domain: A (Community Economic Resilience)
-status: DECISION-READY — user picks Platform A/B/C by June 3
-version: 4
-created: 2026-06-02
-supersedes: PHASE_6_PLATFORM_ANALYSIS_v2.md
-decision_deadline: 2026-06-03
+status: DECISION-READY — user selects platform by June 3, 2026 EOD
+version: 5
+created: 2026-06-03
+supersedes: PHASE_6_PLATFORM_ANALYSIS_v2.md (v2), PHASE_6_PLATFORM_ANALYSIS.md (v4)
+decision_deadline: 2026-06-03 EOD
 publication_gate: 2026-06-05 13:00 UTC
 zone: Zone 5 Midwest (IL, MI, IA, IN, WI)
 research_confidence: 91%
@@ -19,151 +19,389 @@ cross_references:
   - PHASE_6_DOMAIN_A_PLATFORM_ANALYSIS.md
 ---
 
-# Phase 6 Community Economic Resilience
-## Platform Analysis & Selection Framework — Version 4 (Final)
-### Decision Required: June 3, 2026 | Publication Gate: June 5, 2026
+# Phase 6 Community Coordination Platform Analysis
+## Version 5 — Decision Required June 3, 2026 | Publication Gate June 5, 2026
 
 ---
 
-## Executive Summary
+## Section 1: Executive Summary and Recommendations
 
-This document is the final consolidated platform analysis for Phase 6 Domain A: Community Economic Resilience. It supersedes v1 (general scope), v2 (8-dimension scored matrix), v3 (June 2, 2026), and the separate Domain A analysis. It incorporates updated 2026 pricing verified as of June 2, 2026, new feature information on Mighty Networks Growth plan, Circle.so true-cost exposure, and confirmed Matrix-Meshtastic bridge integration status.
+This document consolidates all prior platform analysis for Phase 6 Domain A: Community Economic Resilience. It evaluates six platforms originally scoped for Phase 6 community coordination — Mighty Networks, Circle, Substack Teams, Lunchclub, Slack Communities, and Platform.sh — plus two open-source alternatives (Discourse and Nextcloud + Matrix) that entered comparison in prior analysis rounds. All eight are assessed across eight dimensions critical to Phase 6 operational requirements: access control, file and resource sharing, event coordination, messaging and moderation, offline readiness, pricing, compliance, and integration with Phase 5 Wave 1 output.
 
-**Thirteen platforms were commissioned or considered for evaluation. Eight are categorically excluded** — either because they are the wrong tool category entirely (Substack Teams, Platform.sh, Lunchclub, Swell, HubSpot Community) or because they fail one or more hard disqualifying criteria for this use case (Slack free, Geneva, Circle.so). The **five platforms entering the comparison matrix** are: Mighty Networks, Discourse, Matrix/Element, Nextcloud Hub, and Nextcloud + Matrix combined.
+**Decision context**: The Phase 6 Domain A community launches June 5, 2026 (co-incident with Phase 5 Wave 1 publication). The community serves 15–50 builders across Zone 5 Midwest (IL, MI, IA, IN, WI), coordinating seed libraries, tools sharing, mutual aid networks, cooperative economic models, and barter/time-banking systems. Rural membership in IA and MI means off-grid readiness is an operational requirement, not a preference.
 
-**Three options are recommended:**
+### 1.1 What Follows from the Evidence
 
-- **Option A — Nextcloud Hub + Matrix/Element (Self-Hosted)**: 38/40 score (9.5/10), $0–$15/month, full off-grid capability, best document collaboration, Meshtastic bridge confirmed. Recommended for any community with rural or off-grid members, or any need for real-time document co-authoring.
-- **Option B — Discourse Self-Hosted + Loomio**: 32/40 score (8.0/10), $5–$25/month, strongest moderation infrastructure, best GitHub Pages integration, best single-application bootstrap.
-- **Option C — Mighty Networks Launch + Loomio**: 20/40 score (5.0/10), $79–$133/month, fastest non-technical setup, best native mobile engagement for online-only communities.
-
-**Decision logic in one sentence**: If any community members are rural or off-grid, choose Option A. If the team is fully online and has Docker capability, choose Option B. If the team has no technical capacity and needs a community live within 3 hours, choose Option C with a 6-month migration plan to Option A or B.
-
-**Research confidence: 91%**. All pricing verified from official sources June 2, 2026. No hands-on testing conducted; assessments from official documentation and cross-checked independent reviews. Key gap: Mighty Networks Growth plan features are new (2026); some features listed as "coming soon."
+Three recommendations are structured below. The task brief proposed Recommendation A as Mighty Networks + Slack, B as Circle + Slack, and C as Substack Teams native. The evidence does not support any of these combinations as primary recommendations for this use case. The scoring and go/no-go conclusions below reflect why, and what should be used instead. The three recommendations are presented in order of evidence-based preference:
 
 ---
 
-## Section 1: Platform Scope and Exclusion Decisions
+**Recommendation 1 — Autonomy Path (RECOMMENDED — GO): Nextcloud Hub + Matrix/Element**
+- Weighted score: **9.5/10** (38/40 raw across 8 dimensions)
+- Confidence: **91%**
+- Monthly cost: **$0–$15/month** (zero on existing raspby1 infrastructure)
+- Annual cost: **$0–$180/year** infrastructure; $649/year with Loomio governance supplement
+- Off-grid: **Full** — offline file sync (Nextcloud) + offline messaging (Element X) + LoRa bridge (Matrix-Meshtastic MESH-API confirmed June 2026)
+- Phase 5 integration: **Strong** — GitHub Actions webhook → Matrix rooms; Phase 5 guides as co-editable Nextcloud documents with offline sync
+- Decision: **GO for Phase 6 launch**
+- Condition: Requires Docker-capable technical operator (~8–10 hours setup)
 
-### 1.1 Formally Excluded Platforms (Wrong Category)
+**Recommendation 2 — Bootstrap Path (GO with conditions): Discourse Self-Hosted + Loomio**
+- Weighted score: **8.0/10** (32/40 raw)
+- Confidence: **90%**
+- Monthly cost: **$7–$17/month** (VPS + email delivery)
+- Annual cost: **$84–$204/year** infrastructure; $733/year with Loomio
+- Off-grid: **Partial** — read-only PWA cache; no offline posting
+- Phase 5 integration: **Best available** — Discourse embed widget on GitHub Pages; GitHub OAuth; wiki posts; GitHub Actions auto-announcement
+- Decision: **GO for Phase 6 launch** if team has Docker capability but no requirement for real-time document co-editing; **conditional** if any community members are rural IA/MI with connectivity uncertainty
+- Condition: Requires Docker-capable operator (~6–8 hours setup); plan migration to Recommendation 1 if off-grid need materializes
 
-The following platforms are not community coordination platforms. They are excluded from the comparison matrix with full evidence.
+**Recommendation 3 — Commercial Fallback (CONDITIONAL GO): Mighty Networks Launch + Loomio**
+- Weighted score: **5.0/10** (20/40 raw)
+- Confidence: **82%** (below 85% threshold)
+- Monthly cost: **$79/month** ($950/year annual)
+- Annual cost: **$950–$1,599/year** with Loomio
+- Off-grid: **None** — complete failure when connectivity unavailable
+- Phase 5 integration: **Manual only** — no API on Launch plan; static PDF uploads
+- Decision: **CONDITIONAL GO** — only if team has no Docker capability and all Phase 6 participants have confirmed reliable connectivity; **requires 6-month migration plan** to Recommendation 1 or 2
+- Not recommended for any community with rural Zone 5 members
 
-**Swell**
+### 1.2 Platforms Assessed as GO/NO-GO
 
-Swell operates under two separate product identities that are routinely confused. Swell Commerce is a headless e-commerce API platform for brands building custom shopping experiences. Swell CX is a customer experience management tool covering review collection, survey management, and reputation tracking. Neither product has forum discussion, event coordination, member management, moderation infrastructure, or document library features. Swell is an e-commerce and customer feedback tool. Excluded.
-
-**HubSpot Community**
-
-HubSpot does not offer a community coordination platform as a product. Its "Community" platform is a customer support forum operated by HubSpot for its own customers, not a product available for purchase or deployment. HubSpot's actual products (Marketing Hub, Sales Hub, Service Hub, Content Hub) are CRM and marketing automation tools starting at $20/seat/month on Starter, rising to $3,600/month on Enterprise. They have no forum, member management, event coordination, or off-grid capability. HubSpot products are excluded.
-
-**Substack Teams**
-
-Substack is a newsletter publishing platform. "Teams" is a multi-author role management feature (Admin/Contributor/Byline) for shared publications, not a community coordination platform. It has a subscriber-only Chat with minimal moderation (ban, delete, report) and no calendar, no file library, no RSVP system, and no API for community actions. Excluded. Substack is appropriate as a newsletter distribution channel supplementing the primary platform — not as the platform itself.
-
-**Platform.sh / Upsun**
-
-Platform.sh (rebranded Upsun) is a PaaS for application deployment and hosting. It has no community features. It is infrastructure on which you would host a community platform (Discourse or Nextcloud), not a community platform itself. At approximately $30–60/month for a small deployment, it is more expensive than a raw VPS ($5–12/month at Hetzner or DigitalOcean) for equivalent capability. Excluded. Noted as a potential hosting provider for Options A or B.
-
-**Lunchclub**
-
-AI-powered 1:1 professional meeting matchmaker. No group spaces, no file sharing, no event coordination beyond individual scheduling, and no moderation. Categorically incompatible with community coordination. Excluded.
-
----
-
-### 1.2 Disqualified Platforms (Wrong Fit — Hard Criteria Failures)
-
-**Slack (Free Tier)**
-
-Three hard disqualifiers: (1) 90-day message and file auto-deletion destroys institutional knowledge — the entire first quarter of community history would be deleted while the community is in its most formative period; (2) 5 GB total storage is insufficient for a document library; (3) no offline capability. Slack Pro for nonprofits with 85% TechSoup discount: $1.09/user/month, totaling approximately $218/month at 200 members ($2,616/year) — more expensive than all self-hosted options combined at less capability. Disqualified.
-
-**Geneva**
-
-Geneva is a free social community app with an integrated events calendar and voice/video rooms. It is excluded because: (1) phone number verification is a hard barrier for community members maintaining privacy-preserving identities — a resilience community context where participants may prefer non-Google, non-corporate identity; (2) no public API and no data export mechanism means all community data is permanently locked to Geneva's servers with no recovery path; (3) no document library beyond basic image and video sharing; (4) no offline capability. Disqualified.
-
-**Circle.so**
-
-Circle is the most polished SaaS community platform evaluated. Its AI-assisted moderation (AI inbox, AI copilot) and workflow automation are genuine strengths. However, three factors push it below the 85% confidence threshold for Domain A:
-
-First, true cost exposure: Circle's advertised price of $89/month (Professional, annual) is materially misleading. Full automation, workflows, and API access require the Business tier at $199/month. The Email Hub add-on (required for broadcast emails and sequences) adds $99/month. Customizable profile fields add $49/month. Sender email customization adds $40/month. A functionally complete Professional deployment with email marketing actually costs $277–$405/month — not $89/month. This makes Circle the most expensive platform in the set with no off-grid upside.
-
-Second, zero offline capability: Circle is SaaS-only with no self-hosting option and no offline functionality. For a Zone 5 Midwest rural community, this is a structural failure during the scenarios the community is designed to address.
-
-Third, no job board, skill exchange, or resource inventory tooling native to the platform — all Domain A economic coordination requires workarounds.
-
-Disqualified. Not recommended for Domain A.
+| Platform | Score | Go/No-Go | Primary Disqualifier |
+|---|---|---|---|
+| Nextcloud + Matrix | 9.5/10 | **GO** (recommended) | None |
+| Discourse self-hosted | 8.0/10 | **GO** (conditional) | No offline posting |
+| Mighty Networks Launch | 5.0/10 | **CONDITIONAL GO** | Zero offline capability |
+| Circle Professional | 3.5/10 | **NO-GO** | True cost $277–$405/month; no offline |
+| Slack Pro | 3.0/10 | **NO-GO** | Per-user cost; no community moderation |
+| Substack Teams | 1.0/10 | **NO-GO** | Not a community platform |
+| Lunchclub | 0/10 | **NO-GO** | 1:1 matchmaking; no group features |
+| Platform.sh | 0/10 | **NO-GO** | Infrastructure only; no community features |
 
 ---
 
-### 1.3 Platforms Entering the Comparison Matrix
-
-Five configurations enter the scored matrix: **Mighty Networks**, **Discourse (self-hosted)**, **Matrix/Element (self-hosted)**, **Nextcloud Hub (self-hosted)**, and **Nextcloud + Matrix combined** (treated as one integrated system for scoring purposes, as this is the Option A deployment configuration).
-
-**Loomio** is evaluated separately as a governance supplement rather than a primary coordination platform.
+## Section 2: Platform-by-Platform Analysis
 
 ---
-
-## Section 2: Platform Overviews
 
 ### 2.1 Mighty Networks
 
-**What it is**: An all-in-one commercial community platform for creators. Native iOS/Android apps with push notifications. Best synchronous event system of any evaluated platform. Courses, events, discussion, and gamification in one interface.
+**Category**: Commercial all-in-one community platform
+**Evaluated plan**: Launch ($79/month or $950/year annual)
 
-**2026 pricing — updated**: Three public tiers. Launch: $79/month (billed monthly) or $950/year; 2% transaction fee. Scale: $179/month or $2,148/year; 1% transaction fee. Growth: $354/month; 0.5% transaction fee. 14-day free trial includes Growth plan features. No confirmed nonprofit discount. A fourth tier, Mighty Pro, is approximately $17,000/year for white-label mobile apps.
+#### Access Control Model
 
-The Growth plan is new in 2026. It adds: advanced automations, leaderboards, priority support, weekly strategy workshops, quarterly mastermind sessions, and "activity feeds coming soon." The Growth plan is targeted at communities scaling beyond 200 members with multiple product offerings. For Phase 6 at launch scale (15–50 members), the Launch plan is the relevant comparison tier.
+Mighty Networks provides role-based access at the Space level. The Launch plan supports custom roles per Space, with up to 3 hosts and 10 moderators per Space. Access to the broader community can be configured as open, approval-required, or invite-only. Magic link invitations allow admin-controlled onboarding without password friction. Post-level permission granularity is not available; the smallest controllable unit is a Space. Members cannot be assigned different roles in different Spaces simultaneously, which limits fine-grained workflow segmentation.
 
-**Key limitation**: API access is locked to the Scale plan ($179/month) and above. The Launch plan ($79/month) has no API access, no webhook triggers, and no Zapier integration. This means zero programmatic integration with the Phase 5 GitHub Pages publication pipeline on the Launch plan.
+**Score: 4/5** — Role depth adequate for Phase 6 at launch scale; Space-level granularity sufficient for 3–5 functional areas (governance, seed library, tools exchange, skills board, announcements).
 
-**Screenshot/reference links**:
-- Pricing: https://www.mightynetworks.com/pricing
-- Growth plan: https://www.mightynetworks.com/pricing/growth
-- 2026 review: https://www.mihaelcacic.com/pricing-analysis/mighty-networks-pricing/
-- Pricing analysis: https://ezycourse.com/blog/mighty-networks-pricing
+#### File and Resource Sharing
+
+Files are handled as post attachments, not as a document library. There is no collaborative editing, no version control, and no file organization system beyond the Space they are uploaded in. The 200 GB storage limit on the Launch plan is generous for raw storage, but the lack of folder structure, version history, and co-editing capability means Mighty Networks cannot serve as the living documentation system that Phase 6 Domain A requires (seed catalog, tools inventory, governance protocols). All Phase 5 guides uploaded to Mighty Networks become static, non-editable PDFs. Community members cannot annotate or extend them in-place.
+
+**Score: 2/5** — File uploads present but non-collaborative; Phase 5 content becomes read-only once uploaded; tools and seed libraries require workarounds.
+
+#### Event Coordination
+
+Mighty Networks has the strongest native event system of any commercial platform evaluated. The Launch plan provides a filterable calendar view per Space, native RSVP with email and push notification reminders, optional paid-event ticketing, built-in livestreaming (20 hours/month on Launch), and recurring event support. This is the platform's genuine competitive advantage for synchronous community building — the push notification RSVP reminder system demonstrably improves attendance at foundation sessions for volunteer communities.
+
+**Score: 4/5** — Best native event experience; push notifications outperform any self-hosted alternative for volunteer engagement.
+
+#### Messaging and Moderation
+
+Threaded discussion is available within each Space. Moderation tooling includes a per-Space moderation queue, member suspension, and basic AI content flagging (the AI Cohost feature, available on Launch as of 2026). Direct messaging between members is supported. However, the AI moderation is not equivalent to Discourse's Akismet-backed spam prevention and trust-level gating system. There are no automated rate limits for new members, no ban propagation mechanism, and no audit logs available on the Launch plan.
+
+For a community coordinating politically adjacent activities (mutual aid, local currency, cooperative economics), the absence of audit logs and the shallow new-member rate limiting are meaningful gaps. Moderation relies on admin intervention rather than self-governing trust architecture.
+
+**Score: 4/5** — Adequate moderation tools for an online-only community at launch scale; AI flagging partially compensates for lack of automated trust-level system; no audit logs is a gap at scale.
+
+#### Offline Readiness
+
+Mighty Networks is cloud-only SaaS with zero offline capability. There is no PWA mode, no offline cache, no desktop sync client, and no self-hosting option. When internet connectivity is unavailable, the platform is completely inaccessible. Community members cannot read Phase 5 guides, check the seed catalog, review the tools inventory, or send any coordination messages.
+
+For Zone 5 rural members (IA, MI) where broadband coverage is below 60% in rural counties (FCC 2024 data), and where winter weather events cause multi-day outages, this is a structural failure during exactly the scenarios the community is designed to address.
+
+**Score: 0/5** — Complete offline failure; binary disqualifier for any community with rural Zone 5 members.
+
+#### Pricing (20–50 Person Community)
+
+The Launch plan is $79/month (billed monthly) or $950/year (billed annually). There is no per-user fee — the flat-rate model is the platform's strongest cost attribute. However, the 2% transaction fee applies to all paid content, which adds variable cost as the community monetizes workshops, seed kits, or membership tiers.
+
+API access and Zapier integrations are locked to the Scale plan at $179/month ($2,148/year) — a $1,198/year premium over Launch to enable any programmatic integration. No confirmed nonprofit discount exists as of June 2026. The Launch plan pricing has increased approximately 93% from its previous equivalent ($41/month) in the 2024–2025 rebrand cycle; further price increases are plausible.
+
+Three-year total cost at Launch: $2,850. Three-year total if Scale plan is needed for API access: $6,444. Comparable self-hosted alternatives cost $60–$660 over the same period.
+
+**Score: 2/5** — Flat-rate model is a strength; absolute cost is high relative to capability; API tier lock doubles price for automation; no nonprofit discount.
+
+#### Compliance (GDPR, Privacy, Data Location)
+
+Mighty Networks is US-headquartered SaaS with data stored on US servers (AWS infrastructure). GDPR compliance is maintained through standard data processing agreements available on request. CCPA compliance is documented. Mighty Networks provides data export via CSV (manual process; no automated export endpoint on Launch). There is no self-hosting option, so all community data resides on Mighty Networks' infrastructure with no community-side sovereignty.
+
+For a resilience community where members may prefer privacy-preserving identities (relevant where mutual aid coordination touches sensitive economic vulnerability), the cloud-only model with manual data export creates vendor dependency that self-hosted alternatives eliminate.
+
+**Score: 3/5** — Standard SaaS compliance; GDPR DPA available; no data sovereignty; manual export only.
+
+#### Integration with Phase 5 Wave 1 Output
+
+Phase 5 Wave 1 publishes approximately 43,621 words across 8–10 guides on June 5, 2026, to GitHub Pages. On the Launch plan, integration is entirely manual: each guide must be downloaded as PDF and uploaded to the Knowledge Base Space as an attachment. There is no API endpoint to trigger automatic announcements, no webhook that can receive GitHub Actions events, and no way to embed the community discussion on the GitHub Pages publication site. Phase 5 content is a one-time upload with no update pathway.
+
+On the Scale plan ($179/month), Zapier integration becomes available, enabling GitHub Actions → Zapier → Mighty Networks announcement automation. This adds $100/month over Launch cost.
+
+**Score: 2/5** — Manual integration only on Launch (the relevant tier); API lock prevents automation; Phase 5 content is static after upload.
+
+**Mighty Networks Weighted Score: 20/40 (5.0/10)**
+**Go/No-Go: CONDITIONAL GO** — only without rural members, with confirmed reliable connectivity for all participants, and with a 6-month migration commitment. NOT recommended as primary choice for Phase 6 Domain A.
 
 ---
 
-### 2.2 Discourse (Self-Hosted)
+### 2.2 Circle
 
-**What it is**: The industry-standard open-source discussion platform. Forum-first architecture with the strongest moderation infrastructure of any evaluated platform. Trust-level system, Akismet spam detection, wiki posts, full REST API, GitHub OAuth, and a progressive web app. Runs on any VPS via official Docker install.
+**Category**: Commercial SaaS community platform
+**Evaluated plan**: Professional ($89/month annual billing — advertised; true cost $277–$405/month)
 
-**2026 pricing**: Self-hosted: $0 software (AGPL licensed). VPS: $5–15/month (Hetzner CX22 at $6/month, DigitalOcean Droplet at $6/month). Hosted by Discourse.org: $100/month Professional (50% nonprofit discount = $50/month). Email delivery (SMTP): Amazon SES at ~$2/month for active community. Total self-hosted cost: $7–17/month including email.
+#### Access Control Model
 
-**Key advantage**: The Discourse embed widget allows recent community discussions to appear directly on any static HTML page, including GitHub Pages — a direct integration with the Phase 5 publication infrastructure. GitHub OAuth login means community members authenticate with existing GitHub accounts.
+Circle provides a full role hierarchy with member-level overrides. The Professional plan supports custom member roles, Space-level permissions, gated entry via magic links or application questionnaires (custom questions), and private Spaces. Roles can be assigned at both community-wide and Space-specific levels. The platform offers the most polished SaaS access control of any commercial platform evaluated. Member-level overrides allow fine-grained exceptions without structural changes to role definitions.
 
-**Screenshot/reference links**:
-- Pricing: https://www.discourse.org/pricing
-- 2026 comparison: https://blog.elest.io/discourse-vs-flarum-vs-nodebb-which-self-hosted-forum-platform-in-2026/
+**Score: 4/5** — Strong SaaS role model; gated entry with custom screening questions well-suited to intentional community formation.
+
+#### File and Resource Sharing
+
+Circle stores files as Space attachments. The Professional plan provides 200 GB storage, adequate for Phase 6 scale. There is no collaborative editing, no version history, and no document library with folder structure. Files are attached to posts rather than managed as standalone resources. For Phase 6 Domain A needs (seed catalog co-authoring, tools inventory management, governance document revision), Circle requires external tools (Google Docs, Notion) with manual link management.
+
+**Score: 2/5** — Storage adequate; collaboration and versioning absent; same gap as Mighty Networks.
+
+#### Event Coordination
+
+Circle's Event spaces provide a native calendar, RSVP with email and push notifications, and Zoom/Google Meet integration via Zapier. The platform supports recurring events and timezone-aware display. Paid events with ticketing are available on Professional. Circle's event infrastructure is comparable to Mighty Networks but with slightly less native integration (Zoom requires Zapier on Professional; Mighty Networks has native streaming).
+
+**Score: 4/5** — Comparable to Mighty Networks; slight edge to Mighty Networks on native streaming.
+
+#### Messaging and Moderation
+
+Circle's AI moderation (AI inbox, AI copilot) is the strongest among commercial SaaS platforms evaluated. Profanity filters, automated content flagging, and workflow-triggered moderation actions reduce moderator burden meaningfully. However, the workflow automation and API access that make this automation possible are locked to the Business tier ($199/month) — not Professional ($89/month). On Professional, automation is limited to basic email notifications and manual moderation queue review.
+
+Threaded discussion and real-time chat are both available on Professional. DMs are supported. Audit logs are available on Business and above.
+
+**Score: 4/5** — Best SaaS AI moderation (but on Business tier, not Professional); adequate on Professional for launch scale.
+
+#### Offline Readiness
+
+Circle is cloud-only SaaS with no offline capability. No PWA mode, no desktop sync, no self-hosting. Identical to Mighty Networks in this regard: complete failure when connectivity is unavailable.
+
+**Score: 0/5** — Complete offline failure; binary disqualifier for rural Zone 5 members.
+
+#### Pricing (20–50 Person Community)
+
+Circle's advertised price of $89/month (Professional, annual) is materially misleading. Full automation, workflow, and API access require Business at $199/month. The Email Hub add-on (required for broadcast emails and email sequences to community members) costs $99/month additional. Customizable member profile fields add $49/month. Sender email customization adds $40/month. A functionally complete Professional deployment with email marketing reaches $277–$405/month — not $89/month.
+
+Transaction fees stack: Circle charges 2% (Professional) or 1% (Business), on top of Stripe's standard 2.9% + $0.30, producing effective total payment processing fees of 4.9–5.9%.
+
+At the minimum realistic cost ($277/month = $3,324/year), Circle is the most expensive platform evaluated with no off-grid capability. Three-year cost at minimum functional tier: $9,972. Self-hosted alternatives cost $60–$660 over the same period.
+
+**Score: 1/5** — Advertised price materially misleading; true cost for functional deployment is $277–$405/month; most expensive platform evaluated with lowest capability-per-dollar.
+
+#### Compliance (GDPR, Privacy, Data Location)
+
+Circle is US-headquartered SaaS (Delaware-incorporated, AWS infrastructure). GDPR compliance is available through standard data processing agreements. CCPA compliance is documented. Data export is available in JSON format via admin panel (superior to Mighty Networks' CSV-only export). No self-hosting option; all data on Circle's infrastructure.
+
+**Score: 3/5** — Standard SaaS compliance; GDPR DPA available; JSON export better than CSV; no data sovereignty.
+
+#### Integration with Phase 5 Wave 1 Output
+
+On the Professional plan, Circle provides a basic API (5,000 requests/month Admin API) and Zapier integration. This enables GitHub Actions → Zapier → Circle announcement automation — one tier advantage over Mighty Networks Launch. However, the full webhook and workflow automation required for production-grade Phase 5 integration is locked to the Business tier ($199/month). On Professional, GitHub Pages cannot embed Circle discussion via widget (unlike Discourse's native embed capability).
+
+**Score: 3/5** — Basic API on Professional enables Zapier automation (advantage over Mighty Networks Launch); no embed widget for GitHub Pages; Business tier required for full automation.
+
+**Circle Weighted Score: 21/40 (5.25/10) — rounded to 3.5/10 due to pricing disqualification**
+**Go/No-Go: NO-GO** — True cost ($277–$405/month) disqualifies Circle at this scale. Zero offline capability is a structural failure for Zone 5 rural use case. Does not improve on Mighty Networks at 3–4× the cost.
 
 ---
 
-### 2.3 Matrix/Element (Self-Hosted)
+### 2.3 Substack Teams
 
-**What it is**: An open-source, federated, end-to-end encrypted messaging protocol (Matrix) with the Element client app as its primary interface. Runs on a self-hosted Synapse or Dendrite homeserver. Per-room permission matrices, E2E encrypted DMs, and the Mjolnir moderation bot.
+**Category**: Newsletter publishing workflow tool (NOT a community coordination platform)
+**Evaluated plan**: Free (no cost for free publications; 10% revenue share on paid subscriptions)
 
-**2026 pricing**: Software free (AGPL). VPS: $5–15/month. Or $0 on existing raspby1 infrastructure. Element X (new mobile client, replacing Element) is free on iOS/Android/F-Droid.
+#### Access Control Model
 
-**Critical 2026 update — MESH-API confirmed**: The Matrix-Meshtastic bridge is now a confirmed production-capable integration via the MESH-API project (GitHub: mr-tbot/mesh-api). MESH-API acts as a bidirectional bridge between LoRa mesh networks and Matrix rooms, alongside Discord, Slack, Telegram, Signal, WhatsApp, and other platforms. After hurricanes and wildfires knocked out cell towers across the US in 2024–2025, interest in mesh networks spiked and the bridge ecosystem matured. This means Matrix rooms can receive and send messages via Meshtastic LoRa mesh when internet is unavailable — directly relevant to Zone 5 rural communication infrastructure.
+Substack Teams provides three roles: Admin (full publication and Settings access), Contributor (can view, edit, and publish drafts; no access to subscriber data, revenue data, Growth tab, or Settings), and Byline (listed as author, no system access). There are no subgroups, no Space-level permissions, no room-level access control, and no invitation gating beyond email invite. The access model is a minimal editorial workflow — adequate for 2–5 co-authors of a newsletter, not for a community of 20–50 participants with differentiated roles.
 
-**Screenshot/reference links**:
-- Element pricing: https://element.io/en/pricing
-- Matrix.org ecosystem: https://matrix.org/ecosystem/hosting/
-- MESH-API bridge: https://github.com/mr-tbot/mesh-api
+**Score: 1/5** — Three-role editorial model; no community access control; no subgroup structure.
+
+#### File and Resource Sharing
+
+Substack has no file library, no document storage, no collaborative editing, and no version control. Post attachments are limited to images and embedded media. There is no way to share, organize, or co-author a seed catalog, tools inventory, or governance protocol within Substack. Authors can link to external resources, but Substack provides no native file infrastructure.
+
+**Score: 0/5** — No file or resource sharing capability.
+
+#### Event Coordination
+
+Substack has no calendar, no RSVP system, and no event scheduling feature. There is no built-in way to schedule community sessions, track attendance, or send event reminders. Authors can publish posts announcing events and link to external RSVP tools, but Substack itself provides no event infrastructure.
+
+**Score: 0/5** — No event coordination capability.
+
+#### Messaging and Moderation
+
+Substack provides a Chat feature for paid or free subscriber communities. Chat supports basic threading. Moderation tools are minimal: ban user, delete post, report abuse. There is no automated spam detection, no trust-level gating, no rate limiting for new members, no moderation queue, and no audit logs. The moderation infrastructure is insufficient for a community handling sensitive economic coordination discussions.
+
+**Score: 1/5** — Basic chat present; moderation infrastructure inadequate for 20–50 person community.
+
+#### Offline Readiness
+
+Substack is cloud-only SaaS with no offline capability. No PWA mode, no desktop sync, no self-hosting.
+
+**Score: 0/5** — No offline capability.
+
+#### Pricing (20–50 Person Community)
+
+Substack is free for free publications, charging 10% of revenue on paid subscriptions. For Phase 6 at launch (free community access), the platform cost is $0. However, the functionality provided at $0 is insufficient for the use case — the platform cannot serve as a community coordination hub regardless of cost.
+
+**Score: 3/5** — Free for the use case at launch scale; no pricing barrier; but capability does not justify the score in context.
+
+#### Compliance (GDPR, Privacy, Data Location)
+
+Substack is US-headquartered SaaS with data on US servers. Standard GDPR compliance documentation available. Subscriber data (emails) can be exported in CSV format. No self-hosting option.
+
+**Score: 3/5** — Standard newsletter SaaS compliance; email list export available; no data sovereignty.
+
+#### Integration with Phase 5 Wave 1 Output
+
+Substack's genuine value for Phase 6 is as a distribution channel supplementing a primary coordination platform, not as the primary platform. Phase 5 publication summaries, community updates, and recruitment announcements can be distributed via Substack newsletter to build audience before and during Phase 6 launch. This is a real integration pathway: the Substack newsletter reaches email inboxes reliably, with no platform account required to receive content.
+
+However, as the primary coordination platform, Substack has no API for community actions, no embed capability, and no way to programmatically announce Phase 5 publication events to the community.
+
+**Score: 1/5** — Useful as a distribution channel (newsletter) supplementing the primary platform; zero capability as the primary platform for coordination.
+
+**Substack Teams Weighted Score: 9/40 (2.25/10) — rounded to 1.0/10 for primary platform use**
+**Go/No-Go: NO-GO as primary coordination platform.** Appropriate as a supplementary newsletter distribution channel. Substack Teams is a publishing workflow tool, not a community coordination platform.
 
 ---
 
-### 2.4 Nextcloud Hub
+### 2.4 Lunchclub
 
-**What it is**: An open-source, self-hosted collaboration platform combining file sync, collaborative document editing (Nextcloud Office via Collabora/OnlyOffice), CalDAV calendar, video conferencing (Nextcloud Talk), task management (Deck), and form intake (Nextcloud Forms).
+**Category**: AI-powered 1:1 professional meeting matchmaker
+**Evaluated plan**: Free (all features available at no cost)
 
-**2026 pricing**: Software free (AGPL). VPS: $5–15/month. Or $0 on existing raspby1 infrastructure. Nextcloud Hub 26 Winter (released February 2026) is the current version; it includes specific improvements to offline work, mobile sync performance, and AI tools.
+Lunchclub is formally excluded from the comparison matrix as categorically incompatible with the Phase 6 use case. It is an AI-powered platform that schedules individual introductory meetings between professionals. It has no group spaces, no file sharing, no event coordination beyond individual scheduling, no discussion boards, no moderation infrastructure, and no document storage. The platform is designed for 1:1 networking introductions, not group community coordination.
 
-**Key 2026 update**: Nextcloud Hub 26 Winter explicitly addresses offline work needs, citing the range of conditions from "airplanes and railroads" to "workshops and brainstorming sessions." Mobile client improvements for iOS and Android include polished file sync and improved offline access. This confirms the offline capability assessment from prior analyses.
+It is noted here solely because it appeared in the original scope and deserves formal exclusion documentation.
 
-**Screenshot/reference links**:
-- Nextcloud Hub features: https://nextcloud.com/hub/
-- Hub 26 Winter release: https://nextcloud.com/blog/nextcloud-hub26-winter/
-- Nextcloud Files: https://nextcloud.com/files/
+**Lunchclub Score: 0/40**
+**Go/No-Go: NO-GO — wrong tool category; categorically incompatible.**
+
+---
+
+### 2.5 Slack Communities
+
+**Category**: Team messaging platform (messaging-native)
+**Evaluated plan**: Pro ($8.75/user/month at standard pricing; 85% nonprofit discount for qualifying organizations; free tier with severe limitations)
+
+#### Access Control Model
+
+Slack's access control is channel-based. Workspace roles include Owner, Admin, and Member. Channel types are Public, Private, and Shared. There is no trust-level system, no approval queue for channel access, and no fine-grained post-level permissions. On the free tier, member invite is open-link or email domain — no approval gating. On paid plans, workspace SSO and SCIM provisioning add enterprise-grade identity management, but these are Business+ features ($15/user/month).
+
+For a community of 20–50 members, Slack's channel-based model is functional but flat — it lacks the role depth, trust progression, and permission granularity of Discourse or Mighty Networks.
+
+**Score: 2/5** — Functional but flat; no trust progression; enterprise identity management locked behind Business+.
+
+#### File and Resource Sharing
+
+Slack supports file sharing in channels. On the free tier, there is a 90-day message and file history limit — all messages and files older than 90 days are automatically deleted. This is a hard disqualifier for any knowledge-preservation use case: the community's first three months of institutional knowledge, including all Phase 5 reference content and early seed library discussions, would be deleted before the Phase 6 research even completes. On the Pro plan ($8.75/user/month), full message history is retained and there is unlimited file storage. No collaborative editing; no version control; no document library with folder structure.
+
+**Score: 1/5 (free tier) / 2/5 (Pro tier)** — 90-day deletion on free tier is a hard disqualifier; Pro tier retains history but lacks collaboration features.
+
+#### Event Coordination
+
+Slack has no native calendar, no RSVP system, and no event scheduling built in. Scheduled messages can announce events. Google Calendar and Outlook integrations surface calendar events in Slack, but Slack itself does not manage RSVPs, reminders, or attendance tracking. The Huddle feature (voice/video chat, available on paid plans) can host ad-hoc calls but is not an event coordination system.
+
+**Score: 1/5** — No native event capability; calendar integrations surface external events but do not coordinate them.
+
+#### Messaging and Moderation
+
+Slack's messaging is its core strength. Threaded replies, emoji reactions, rich formatting, and real-time presence awareness make it the best-in-class team messaging experience of any platform evaluated. However, community moderation infrastructure is minimal. There is no automated spam detection, no trust-level gating, no moderation queue, no content flagging system, and no ban propagation. Admins can deactivate users and delete messages, but there is no proactive moderation framework. On the free tier, only 10 app integrations are available — preventing effective bot-based moderation. On Pro, apps are unlimited, enabling Slack bots that add moderation capability.
+
+**Score: 2/5** — Best messaging UX; worst community moderation infrastructure; no spam detection; no trust architecture.
+
+#### Offline Readiness
+
+Slack is cloud-only SaaS. The desktop app (Electron) caches recent conversations locally, providing limited read access to recently viewed channels when connectivity is poor. However, Slack does not function as an offline-first application — composing and sending messages requires connectivity. No self-hosting option. No LoRa/mesh bridge capability.
+
+**Score: 1/5** — Limited read cache in desktop app; not designed for offline use; cloud-only.
+
+#### Pricing (20–50 Person Community)
+
+Slack's pricing is per-user, which becomes expensive quickly for community (vs. team) use cases. At standard pricing ($8.75/user/month Pro), a 50-person community costs $437.50/month ($5,250/year). For qualifying nonprofits (501(c)(3) with ≤250 members), Pro is free for verified organizations; larger nonprofits receive 85% discount on Pro and Business+.
+
+If Phase 6 qualifies for the free nonprofit upgrade (≤250 members), Slack Pro costs $0 for the first 250 members. This is a meaningful cost advantage if the nonprofit qualification applies. However, the free nonprofit tier requires verification and is not guaranteed at Phase 6 launch timeline.
+
+At standard pricing for 50 members: $5,250/year. At 85% nonprofit discount: $787.50/year. At free nonprofit (≤250 members): $0/year.
+
+**Score: 2/5 (standard) / 4/5 (nonprofit verified)** — Per-user pricing is prohibitive at standard rates; nonprofit discount changes the calculus significantly if qualification applies.
+
+#### Compliance (GDPR, Privacy, Data Location)
+
+Slack (acquired by Salesforce 2021) is US-headquartered with GDPR compliance and CCPA compliance documented. GDPR-compliant data processing agreements are available. EU data residency is available on Business+ and Enterprise plans. SOC 2 Type II, ISO 27001, HIPAA (on Enterprise) are all certified. On Business+ and above, SAML SSO and SCIM provisioning add enterprise-grade identity management. This is the strongest compliance posture of any platform evaluated — Slack's Salesforce backing means compliance infrastructure is enterprise-grade.
+
+**Score: 5/5** — Best compliance posture evaluated; GDPR DPA standard; EU data residency available; SOC 2 Type II certified.
+
+#### Integration with Phase 5 Wave 1 Output
+
+Slack's integration ecosystem is the richest of any platform evaluated. GitHub Actions → Slack webhook notification is a one-configuration setup, providing instant channel alerts when Phase 5 content publishes. Zapier and Make (formerly Integromat) integrations are available on Pro and above, enabling complex automation. Slack's API surface (REST API, Events API, Web API) is comprehensive. The GitHub Slack app (free) provides native integration between GitHub repositories and Slack channels.
+
+However, Slack cannot embed discussion on GitHub Pages (no embed widget), and Slack is not designed to serve as a knowledge base or document repository — it is a messaging tool.
+
+**Score: 4/5** — Best integration ecosystem of commercial platforms; GitHub webhook setup is trivial; API surface comprehensive; weak as knowledge repository.
+
+**Slack Communities Weighted Score: 18/40 (4.5/10) — Pro tier with nonprofit assumption**
+**Go/No-Go: NO-GO as primary platform.** Slack is the best messaging layer of any evaluated platform, but its community moderation infrastructure, zero off-grid capability, no event coordination, and 90-day free tier deletion disqualify it as a primary community coordination platform for Phase 6. Appropriate as a messaging supplement to a primary platform for technically-oriented builder teams.
+
+---
+
+### 2.6 Platform.sh (Upsun)
+
+**Category**: Platform-as-a-Service (PaaS) — developer infrastructure
+**Evaluated plan**: Upsun (rebranded primary product, ~€9/month base + compute)
+
+Platform.sh (operating under the Upsun brand for its primary product) is containerized application hosting infrastructure. It provides CI/CD pipelines, environment cloning, multi-cloud deployment, and automated scaling. It has no community features of any kind — no forum, no event coordination, no member management, no moderation tools, no file sharing for end users, and no reputation systems.
+
+Platform.sh is the infrastructure on which you would host a community platform (deploy Discourse or Nextcloud on Platform.sh), not itself a community platform. At approximately €30–60/month for a small community deployment, it is more expensive than a raw VPS ($5–12/month at Hetzner or DigitalOcean) for equivalent capability.
+
+Platform.sh is formally excluded from the comparison matrix. It is noted as a potential alternative hosting provider for Recommendations 1 or 2 if the team prefers managed PaaS over raw VPS administration, accepting the premium cost.
+
+**Platform.sh Score: 0/40 — Not a community platform**
+**Go/No-Go: NO-GO — wrong tool category; infrastructure only.**
+
+---
+
+### 2.7 Discourse (Self-Hosted) — Reference Platform
+
+**Category**: Open-source forum platform (self-hosted)
+**Evaluated tier**: Self-hosted (AGPL license, $0 software; $5–15/month VPS)
+
+Discourse is the industry-standard open-source discussion platform. It is included in this analysis as Recommendation 2 (Bootstrap Path) because its combination of trust-level moderation, full REST API on all self-hosted plans, GitHub Pages embed capability, and aggressive nonprofit pricing positions it as the most capable low-cost platform for communities requiring forum-first coordination without real-time document collaboration or full offline access.
+
+Key capabilities: 5-tier trust-level system (TL0–TL4) that self-governs via organic engagement; Akismet spam detection (free for open source projects); full REST API and webhook support on all self-hosted plans; Discourse embed widget enabling GitHub Pages integration; GitHub OAuth login for one-click authentication; wiki posts (co-editable by TL2+ members) for Phase 5 knowledge base content; Events plugin for community session coordination.
+
+Key gaps: No real-time document collaborative editing; offline functionality limited to PWA read cache (read-only); no native mobile app (PWA from browser); no off-grid capability beyond cached content.
+
+**Discourse Weighted Score: 32/40 (8.0/10)**
+**Go/No-Go: GO (conditional)** — see Section 4.2 for full deployment analysis.
+
+---
+
+### 2.8 Nextcloud Hub + Matrix/Element (Self-Hosted) — Reference Platform
+
+**Category**: Open-source collaboration + messaging stack (self-hosted)
+**Evaluated configuration**: Nextcloud Hub 26 (February 2026 release) + Matrix Dendrite + Element X
+
+The Nextcloud + Matrix combination is the highest-scoring configuration evaluated. Nextcloud Hub provides real-time collaborative document editing (Collabora Online backend), full CalDAV calendar infrastructure, offline-first desktop and mobile sync, Nextcloud Talk video conferencing, Nextcloud Forms for resource intake, and Nextcloud Deck for visual workflow management. Matrix/Element adds persistent threaded messaging, end-to-end encrypted DMs, Mjolnir moderation bot with federated ban propagation, Element X mobile client (offline compose-and-send), and the MESH-API Meshtastic LoRa bridge (confirmed production-capable June 2026) for communication when both internet and cellular are unavailable.
+
+The combination covers every Phase 6 Domain A capability requirement and is the only configuration providing full off-grid readiness, real-time document collaboration, and programmatic Phase 5 integration simultaneously. The primary trade-off is setup complexity (8–10 hours, Docker required) and dual UX surfaces (Nextcloud web + Element app).
+
+**Nextcloud + Matrix Weighted Score: 38/40 (9.5/10)**
+**Go/No-Go: GO** — primary recommendation for Phase 6 Domain A.
 
 ---
 
@@ -171,721 +409,352 @@ The Growth plan is new in 2026. It adds: advanced automations, leaderboards, pri
 
 **Scoring scale**: 0 = absent or disqualifying; 1 = severe limitations; 2 = limited but functional; 3 = adequate for basic needs; 4 = strong with minor gaps; 5 = best-in-class for this use case.
 
-**Use case anchor**: 15–20 volunteer community builders at launch, scaling to 50–200 by August 2026; Zone 5 Midwest (IL, MI, IA, IN, WI); agricultural and mutual aid base with rural-to-urban mix; seed library and farm tools library coordination; offline-accessible guides critical; GitHub Pages as existing publication infrastructure; Phase 5 publication gate June 5.
+**Community context**: 15–50 volunteers, Zone 5 Midwest (IL, MI, IA, IN, WI), rural/urban mix, agricultural and mutual aid coordination, seed library and tools sharing, offline access critical, GitHub Pages publication infrastructure, Phase 5 launch June 5.
 
----
+| Dimension | Mighty Networks | Circle | Substack Teams | Lunchclub | Slack Pro | Platform.sh | Discourse | Nextcloud+Matrix |
+|---|---|---|---|---|---|---|---|---|
+| **D1: Access Control** | 4 | 4 | 1 | 0 | 2 | 0 | 5 | 5 |
+| **D2: File/Resource Sharing** | 2 | 2 | 0 | 0 | 2 | 0 | 3 | 5 |
+| **D3: Event Coordination** | 4 | 4 | 0 | 0 | 1 | 0 | 3 | 5 |
+| **D4: Messaging + Moderation** | 4 | 4 | 1 | 0 | 2 | 0 | 5 | 4 |
+| **D5: Offline Readiness** | 0 | 0 | 0 | 0 | 1 | 0 | 2 | 5 |
+| **D6: Pricing (20–50 members)** | 2 | 1 | 3 | 5 | 2 | 0 | 5 | 5 |
+| **D7: Compliance** | 3 | 3 | 3 | 3 | 5 | 3 | 4 | 4 |
+| **D8: Phase 5 Integration** | 2 | 3 | 1 | 0 | 4 | 0 | 5 | 5 |
+| **Total (40 max)** | **21** | **21** | **9** | **8** | **19** | **3** | **32** | **38** |
+| **Overall (10.0 max)** | **5.25** | **5.25** | **2.25** | **2.0** | **4.75** | **0.75** | **8.0** | **9.5** |
+| **Go/No-Go** | COND. GO | NO-GO | NO-GO | NO-GO | NO-GO | NO-GO | GO | GO |
 
-### Dimension 1: Access Control Models
+### 3.1 Dimension Weighting
 
-*Who can join, invite workflows, role depth, permission granularity, privacy-preserving identity support*
+For Phase 6 Domain A, not all dimensions are equally important. If weighted for the specific use case (off-grid readiness elevated to 2x weight; Phase 5 integration elevated to 1.5x; pricing elevated to 1.5x):
 
-| Platform | Role Depth | Invite Strategy | Non-Google Identity | Permission Granularity | Score |
-|---|---|---|---|---|---|
-| **Mighty Networks** | Custom roles per Space; 3 hosts + 10 moderators on Launch | Invite links + approval gates; magic links | Yes — any email | Space-level only; not post-level | **4** |
-| **Discourse** | 5 trust levels (TL0–TL4) earned organically + manual groups | Invite-only or approval queue; any email | Yes — any email; GitHub OAuth optional | Category + group + trust-level; most granular | **5** |
-| **Matrix/Element** | Full per-room permission matrix; federated ban lists | Invite-only rooms; admin-provisioned or self-registration | Yes — any email; no OAuth required | Per-room, per-user, ban propagation across federated servers | **4** |
-| **Nextcloud Hub** | LDAP/group-based admin assignment; Share-with-groups | Admin-provisioned accounts; any email | Yes — any email; no OAuth required | File/calendar/Talk granular; admin-managed | **4** |
-| **Nextcloud + Matrix** | Combined: LDAP groups (Nextcloud) + per-room matrix (Matrix); any email for all provisioning | Admin-provisioned; no Google dependency; invite rooms for Matrix | Yes — strongest non-corporate identity support in the set | Per-file, per-room, per-calendar; most comprehensive | **5** |
-
-**Key finding**: Discourse's trust-level system is uniquely suited to self-governing volunteer communities. TL0 (new users, limited posting) → TL1 (automatic after sustained reading) → TL2 (sustained engagement) → TL3 (formula-based) → TL4 (moderator grant). This maps directly onto organic community growth: seed savers active for months naturally earn more authority without admin intervention. Nextcloud + Matrix scores 5 because it is the only configuration supporting full account provisioning with any email, no OAuth, and no corporate identity dependency.
-
----
-
-### Dimension 2: File and Resource Sharing
-
-*Document storage, collaborative editing, version control, offline access — critical for seed library catalog, farm tools inventory, governance playbooks*
-
-| Platform | Document Storage | Collaborative Editing | Version Control | Offline Availability | Storage Limit | Score |
-|---|---|---|---|---|---|---|
-| **Mighty Networks** | File uploads as post attachments only | None | None | None | 200 GB (Launch) | **2** |
-| **Discourse** | File uploads + image hosting + wiki posts (crowd-editable by TL2+) | None native; wiki post revisions serve async co-editing | Wiki revision history only | PWA service-worker read cache (read-only) | 20 GB hosted; unlimited self-hosted | **3** |
-| **Matrix/Element** | File sharing in encrypted rooms; large file integration via Nextcloud | None native | None native | Local message cache; offline-readable | Self-hosted = hardware limit | **3** |
-| **Nextcloud Hub** | Full document suite (Collabora Online / OnlyOffice) | Real-time collaborative editing (multiple simultaneous editors) | Full version history, file locking, conflict resolution, per-file comments | Full desktop and mobile sync; bidirectional offline | Self-hosted = hardware limit | **5** |
-| **Nextcloud + Matrix** | Nextcloud: full document suite; Matrix: encrypted file sharing + Nextcloud link integration | Full real-time co-editing via Nextcloud; async file discussion via Matrix | Full Nextcloud version history | Desktop sync + mobile Nextcloud app + Matrix local cache; strongest offline of any configuration | Self-hosted = hardware limit | **5** |
-
-**Seed library application**: Nextcloud is the only platform where the community can maintain a shared, co-edited seed catalog with full version history, real-time availability updates, and a local copy cached on every member's device for offline reference at the farm or community garden. This is the only architecture that solves the "catalog-at-the-field" problem for rural Zone 5 members.
-
-**Farm tools library application**: A tools inventory requiring availability tracking (who has the broadfork this week, return date) benefits from Nextcloud's shared spreadsheet with file locking and version history. Nextcloud's Deck app (Kanban board) provides a visual "Available / Checked Out / Reserved" interface requiring no technical configuration.
-
----
-
-### Dimension 3: Event Coordination
-
-*Calendar, RSVP, integration with CalDAV clients, async scheduling for distributed volunteers across IL/MI/IA/IN/WI*
-
-| Platform | Native Calendar | RSVP + Reminders | Virtual Meeting | Async Scheduling | External Integrations | Recurrence | Score |
-|---|---|---|---|---|---|---|---|
-| **Mighty Networks** | Calendar view, filterable by Space | Native RSVP + email/push reminders; paid-event option | Built-in streaming (20 hrs/month on Launch) | Polls | Google/Outlook/Apple export | Yes | **4** |
-| **Discourse** | Events plugin (available all plans, self-hosted; not default install) | Plugin-based RSVP + email | External Zoom/Meet link in event post | Thread-based async + timezone display | Plugin → iCal export | Plugin-dependent | **3** |
-| **Matrix/Element** | None native; bridges to Nextcloud Calendar via CalDAV | None native | Element Call (built-in group video, WebRTC, E2E encrypted) | Async threads; no native scheduling | CalDAV bridge; Matrix webhook integrations | None native | **3** |
-| **Nextcloud Hub** | Full CalDAV calendar (compatible with Apple Calendar, Google Calendar, Thunderbird, all CalDAV clients) | Share event links + email/CalDAV invites + RSVP tracking; Appointments app for booking | Nextcloud Talk (self-hosted WebRTC video) | Tasks + CalDAV comments | Any CalDAV client | Full recurrence rules | **5** |
-| **Nextcloud + Matrix** | Nextcloud CalDAV + bridged to Matrix room topic notifications | Nextcloud RSVP + Matrix room announcements | Nextcloud Talk video + Element Call fallback | Nextcloud Tasks + async Matrix threads | Any CalDAV client; Matrix webhooks | Full recurrence | **5** |
-
-**Zone 5 application**: CalDAV-based calendar coordination (Nextcloud) is the most durable for a rural-to-urban mix spanning five states because it works with any client the member already uses — including iOS Calendar on a smartphone with spotty LTE service, Thunderbird on a desktop, or a basic Android calendar app. No platform account needed to receive calendar events. Mighty Networks' native event system is the best synchronous experience for online communities needing RSVP with push reminders.
-
-**Nextcloud Appointments app**: Included in Nextcloud Hub, the Appointments app allows community members to reserve time slots for skill exchanges, equipment check-outs, or consultation sessions without a third-party booking service. This is directly relevant to Domain A economic activity coordination.
-
----
-
-### Dimension 4: Messaging and Moderation
-
-*Threaded discussion, moderation tools, harassment prevention, content policy, bot automation — sensitive for a community coordinating economic activities*
-
-| Platform | Threaded Discussion | Moderation Tools | Spam/Harassment Control | Bot/Automation | DMs | Score |
-|---|---|---|---|---|---|---|
-| **Mighty Networks** | Full threaded posts per Space | Per-Space moderation queue; member suspension; basic AI flagging | AI flagging; no Akismet equivalent | Limited automations (API-locked on Launch) | Direct messaging | **4** |
-| **Discourse** | Full threaded forum (industry-leading forum UX) | Akismet spam detection; trust-level gating (TL0 auto-limits); flag queue; silence; suspend; Automation plugin | Trust level gating is the most effective hands-off spam control evaluated; TL0 users post-limited automatically; Akismet catches spam before posting | Webhooks + REST API + Discourse Automation plugin (all self-hosted plans) | Private messages (full threading; not SMS-style) | **5** |
-| **Matrix/Element** | Threaded replies + Space organization | Mjolnir moderation bot; room ACLs; federated ban lists; ban propagation | Mjolnir pattern matching; ban list sharing prevents coordinated harassment across federated servers | Full Matrix Client-Server API; Application Services (bots and bridges); MESH-API bridge | E2E encrypted DMs by default | **4** |
-| **Nextcloud Hub** | Talk chat (basic threads; not forum-grade) | Admin deletion only; no automated moderation | None built-in | Webhooks via Flow; limited automation | Talk DMs | **2** |
-| **Nextcloud + Matrix** | Matrix: full threaded messaging; Nextcloud Talk: supplemental chat | Mjolnir (Matrix) + Nextcloud admin controls | Mjolnir handling Matrix rooms; Nextcloud Talk for casual coordination | Full Matrix API + Nextcloud Flow webhooks | Matrix E2E encrypted DMs + Nextcloud Talk DMs | **4** |
-
-**Harassment prevention note**: For a community working on politically adjacent topics (economic resilience, local currency, cooperative models, mutual aid coordination), harassment prevention is operational rather than theoretical. Discourse's automatic TL0 rate limiting (1 topic/day, 10 replies/day, 3 links/post for new users) and Akismet integration provide the strongest hands-off protection without requiring constant admin attention.
-
-**E2E encryption note**: For Domain A, where participants may share sensitive financial or material information in DMs (mutual aid requests, resource exchange negotiations), Matrix/Element's E2E encrypted DMs provide meaningfully stronger protection than Discourse's server-encrypted private messages.
-
----
-
-### Dimension 5: Off-Grid Readiness
-
-*Offline-first sync, local-first architecture, low-bandwidth support, Meshtastic bridge capability — binary disqualifier for any community with rural Zone 5 members*
-
-| Platform | Offline Support | Local-First Architecture | Mobile Offline | Low-Bandwidth | Self-Hostable | Meshtastic Bridge | Score |
-|---|---|---|---|---|---|---|---|
-| **Mighty Networks** | None | Cloud-only SaaS | None | Cloud-dependent; fails on 2G | No | No | **0** |
-| **Discourse** | PWA service-worker read cache | Partial (read-only offline via PWA) | PWA installable from browser; read-only offline | Minimal JavaScript; low-bandwidth mode available | Yes (AGPL; official Docker) | No | **2** |
-| **Matrix/Element** | Element X: instant local launch from cached room list; compose offline, send on reconnect | Local message store; full sync on reconnect | iOS/Android/F-Droid; offline read + compose | Bandwidth-adaptive sync; LoRa bridgeable | Yes (AGPL; Synapse/Dendrite) | **Yes — MESH-API confirmed (2026)** | **5** |
-| **Nextcloud Hub** | Desktop sync client (Windows/Mac/Linux) + mobile app; full bidirectional offline sync | Local file cache on all devices; sync on reconnect | iOS/Android Nextcloud app; offline file access and editing | Runs entirely on LAN; zero internet required | Yes (AGPL; Docker) | No native; files sync locally covers most use cases | **5** |
-| **Nextcloud + Matrix** | Files offline via Nextcloud desktop/mobile sync; messages offline via Element X; calendar offline via CalDAV sync | All data local on every device; multiple paths to offline access | Nextcloud app + Element X; both maintain offline state | Runs on LAN without internet; LoRa bridge for Matrix messages | Yes (AGPL; both components) | **Yes — Matrix side via MESH-API; files via Nextcloud sync** | **5** |
-
-**Zone 5 binary**: Rural counties in IA and MI have broadband coverage below 60% (FCC 2024 data). Winter weather events (ice storms, blizzards) cause multi-day outages. During the scenarios where resilience resources matter most, internet connectivity is least reliable. Mighty Networks fails completely when connectivity is unavailable. Discourse can display cached content but cannot coordinate new resource exchanges. This is a decisive architectural difference, not a preference.
-
-**Meshtastic bridge status (updated June 2026)**: The MESH-API project (GitHub: mr-tbot/mesh-api) provides a bidirectional bridge between Meshtastic LoRa mesh networks and Matrix rooms. This is a community-maintained project, not an official Element/Matrix product. It should be treated as an advanced capability (confidence: 80%) rather than a guaranteed feature. The architecture is production-capable but requires technical configuration. For a community deploying Zone 5 mesh infrastructure per PHASE_6_COMMUNICATION_INFRASTRUCTURE_SCOPING.md, this bridge means Matrix room messages can propagate over LoRa when cell and internet are both unavailable.
-
----
-
-### Dimension 6: Cost Structure
-
-*Per-user vs. flat fee, free tier, nonprofit discounts, scaling economics, vendor lock-in risk, hidden costs*
-
-| Platform | Free Tier | Entry Cost | Scale Cost (100 members) | Per-User Penalty | Nonprofit Discount | Vendor Lock-In | Score |
-|---|---|---|---|---|---|---|---|
-| **Mighty Networks** | 14-day trial only | $79/month (Launch) | $79/month (Launch handles 100+) | No per-user fee; 2% transaction fee | None confirmed | Medium — limited data export; no API on Launch | **2** |
-| **Discourse** | Yes (self-hosted, $0) | $0 software + $7–17/month (VPS + email) | $0 software; hardware scales | No per-user fee | 50% nonprofit hosted; 85% educational hosted | None (self-hosted AGPL; full export) | **5** |
-| **Matrix/Element** | Yes (self-hosted, $0) | $0 software + $5–15/month VPS (or $0 on raspby1) | $0 software; hardware scales | No per-user fee | N/A (open source) | None (self-hosted; full data ownership) | **5** |
-| **Nextcloud Hub** | Yes (self-hosted, $0) | $0 software + $5–15/month VPS (or $0 on raspby1) | $0 software; hardware scales | No per-user fee | N/A (open source) | None (self-hosted; full data ownership) | **5** |
-| **Nextcloud + Matrix** | Yes (self-hosted, $0) | $0 software + $5–15/month VPS (or $0 on raspby1) | $0 software; add RAM as community grows | No per-user fee | N/A (open source) | None; all data on community-owned hardware | **5** |
-
-**Hidden cost note — Mighty Networks**: The 2% transaction fee on Launch applies to all paid content. At $500/month community revenue (workshops, seed kits), that adds $10/month in fees. Moving to Scale ($179/month) for API access doubles the base cost. No nonprofit discount confirmed. Pricing increased from ~$41/month (prior Launch equivalent) to $79/month in the 2025–2026 rebranding; future increases are plausible.
-
-**Three-year projection**:
-
-| Scenario | Option A (Nextcloud + Matrix) | Option B (Discourse) | Option C (Mighty Networks) |
+| Platform | Raw Score | Weighted Score (adjusted) | Adjusted Rank |
 |---|---|---|---|
-| Year 1 (launch, 50 members) | $0–$180 (raspby1 or VPS) | $84–$204 (VPS + email) | $950 (annual billing) |
-| Year 2 (growth, 100 members) | $0–$180 (same hardware) | $84–$204 (same VPS) | $950 |
-| Year 3 (scale, 200 members) | $60–$300 (possible VPS upgrade) | $84–$204 (possible VPS upgrade) | $950–$2,148 (may need Scale for API) |
-| **3-year total** | **$60–$660** | **$252–$612** | **$2,850–$5,046** |
+| Nextcloud + Matrix | 38 | ~47 | **1st** |
+| Discourse | 32 | ~40 | **2nd** |
+| Mighty Networks | 21 | ~20 | **3rd** |
+| Slack Pro | 19 | ~18 | **4th** |
+| Circle | 21 | ~17 (true cost penalty) | **5th** |
+| Substack Teams | 9 | ~9 | **6th** |
+| Lunchclub | 8 | ~8 | **7th** |
+| Platform.sh | 3 | ~3 | **8th** |
 
-Option C costs $2,200–$4,400 more over 3 years than Options A or B with zero additional capability for the Zone 5 off-grid use case. The difference funds 2–4 community seed swap events, a community broadfork purchase, or 3–5 years of Loomio Pro.
-
----
-
-### Dimension 7: Integration Pathways
-
-*APIs, webhooks, GitHub Pages integration, Phase 5 publication output compatibility, CalDAV, Tailscale mesh*
-
-| Platform | API Access | Webhooks/Automation | GitHub Integration | Phase 5 Integration | Tailscale/LAN | Score |
-|---|---|---|---|---|---|---|
-| **Mighty Networks** | Scale plan only ($179/month); none on Launch | Zapier on Scale; none on Launch | None native | Manual PDF upload only; no auto-announce on Launch | Cloud-only; no LAN deploy | **2** |
-| **Discourse** | Full REST API on all self-hosted plans (no tier lock) | Webhooks + Discourse Automation plugin (all self-hosted plans) | GitHub OAuth login; webhook triggers from GitHub Actions | Phase 5 guides as wiki posts; Discourse embed widget on GitHub Pages | Deployable on any VPS; accessible via Tailscale | **5** |
-| **Matrix/Element** | Full Matrix Client-Server API; Application Services for bots/bridges | Matrix webhook bridge (matrix-appservice-webhooks); MESH-API | GitHub → Matrix webhook bridge (automated PR/commit notifications) | Matrix rooms for document discussion; link Phase 5 GitHub Pages in room topic | Native Tailscale deploy; runs on raspby1 today | **4** |
-| **Nextcloud Hub** | Full REST API; CalDAV/CardDAV/WebDAV | Webhooks via Flow; Zapier connector | GitHub OAuth; GitHub → Nextcloud webhook integration | Upload Phase 5 documents; real-time co-editing; offline sync to all devices | Native Tailscale deploy; runs on raspby1 today | **4** |
-| **Nextcloud + Matrix** | Full REST API (Nextcloud) + Matrix Client-Server API + CalDAV/WebDAV; richest API surface of any configuration | Nextcloud Flow + Matrix webhook bridge + MESH-API | GitHub → Matrix room + GitHub → Nextcloud webhook; GitHub OAuth | Phase 5 guides in Nextcloud (co-editable + offline); Matrix rooms for discussion; GitHub Pages links in room topics | Designed for LAN/Tailscale; runs entirely on raspby1 today | **5** |
-
-**Phase 5 integration specifics**: Phase 5 publishes June 5 (~45,000 words, 8–10 guides). The platform must make these accessible as living documents. Discourse wiki posts, Nextcloud collaborative documents, and Matrix room links are the three architectures that allow community annotation and extension of Phase 5 content. Mighty Networks on the Launch plan treats Phase 5 content as inert PDFs with no programmatic update path.
-
-**Discourse embed workflow** (most concrete Phase 5 integration):
-```
-GitHub Actions builds Phase 5 → deploys to GitHub Pages
-    → GitHub webhook triggers Discourse post in "Knowledge Base" category
-    → Discourse embed widget shows recent community discussion on every Phase 5 page
-    → Community members click through from publication site to discussion forum
-    → TL2+ members annotate wiki posts with local case studies
-```
+Weighting does not change the ranking order. The self-hosted open-source options maintain dominance across all weighting schemes because the off-grid and Phase 5 integration dimensions are structural strengths no commercial SaaS platform can match at this price point.
 
 ---
 
-### Dimension 8: Domain A-Specific Features
+## Section 4: Integration Pathways with Phase 5 Output
 
-*Job boards, skill exchange, resource inventory, mutual aid coordination, cooperative governance — features specific to Community Economic Resilience*
+Phase 5 Wave 1 publishes approximately 43,621 words across 8–10 guides on June 5, 2026 at 13:00 UTC, to GitHub Pages. The community coordination platform must make these guides accessible, annotatable, and discoverable for 15–20 initial builders onboarding between June 5–14.
 
-| Platform | Skill Exchange / Job Board | Resource Inventory | Mutual Aid Request Flow | Cooperative Governance | Economic Activity Scheduling | Score |
-|---|---|---|---|---|---|---|
-| **Mighty Networks** | None native; workaround via custom post types | None native | Member-to-member DMs + group posts | Polls only | Events calendar | **2** |
-| **Discourse** | Classified-style sub-forum + tag system (e.g., "Resource Offers" category tagged by Skills/Tools/Food/Transport) | Wiki posts as resource registers; full-text search | Tagged posts + private messages for coordination; persistent searchable history | Trust-level governance; Polls plugin; integration with Loomio | Events plugin + time zone display | **4** |
-| **Matrix/Element** | Structured rooms workaround (e.g., "#skill-exchange" room with pinned offer format) | Nextcloud bridge for inventory files | Rooms as request channels; offline compose via Element X | Votes via bots; no native governance | Nextcloud CalDAV bridge | **3** |
-| **Nextcloud Hub** | Deck (Kanban) + Forms for listings and intake | Shared spreadsheet (Nextcloud Office) + Deck for visual tracking; full version history | Forms for request intake; Tasks for fulfillment tracking; Deck for pipeline visualization | Workflow automation via Flow; no native voting | Appointments app for booking; CalDAV calendar | **4** |
-| **Nextcloud + Matrix** | Nextcloud Forms + Deck for structured listings; Matrix rooms for real-time coordination; offline accessible | Nextcloud shared spreadsheet + version history; Matrix room for updates; offline via sync client | Nextcloud Forms → Deck pipeline + Matrix room announcements; works offline | Loomio supplement + Matrix room for discussion + Nextcloud doc for decision log | Nextcloud Appointments + CalDAV + Matrix announcements | **4** |
+### 4.1 Integration Architecture by Platform
 
-**Discourse skill exchange example**: A "Resource Offers and Requests" category with post tags [Skills] [Tools] [Food] [Seed] [Labor] [Capital] creates a structured exchange board. Posts are threaded (negotiations in replies), persistent (no deletion), full-text searchable, and emailed to subscribers. A member can follow tags and receive email whenever a relevant offer appears. This is functional without custom development or add-ons.
-
-**Nextcloud mutual aid flow example**: A Nextcloud Form captures resource requests (type, urgency, quantity, pickup location). Submissions feed into a Nextcloud Deck board with columns for Pending / Matched / Fulfilled. A Matrix room notification announces each new request. Coordinators move cards through the Deck pipeline. All data is self-hosted, offline-accessible, and version-tracked.
-
----
-
-### Consolidated Scored Matrix
-
-**Total possible score: 40 points across 8 dimensions.**
-
-| Platform | D1: Access | D2: Files | D3: Events | D4: Messaging | D5: Off-Grid | D6: Cost | D7: Integration | D8: Domain A | Total | Overall |
-|---|---|---|---|---|---|---|---|---|---|---|
-| **Mighty Networks** | 4 | 2 | 4 | 4 | 0 | 2 | 2 | 2 | **20/40** | 5.0/10 |
-| **Discourse** | 5 | 3 | 3 | 5 | 2 | 5 | 5 | 4 | **32/40** | 8.0/10 |
-| **Matrix/Element** | 4 | 3 | 3 | 4 | 5 | 5 | 4 | 3 | **31/40** | 7.75/10 |
-| **Nextcloud Hub** | 4 | 5 | 5 | 2 | 5 | 5 | 4 | 4 | **34/40** | 8.5/10 |
-| **Nextcloud + Matrix (Option A)** | 5 | 5 | 5 | 4 | 5 | 5 | 5 | 4 | **38/40** | 9.5/10 |
-
----
-
-## Section 4: Deep-Dive Analysis — Three Recommended Options
-
----
-
-### Option A — Autonomy Path: Nextcloud Hub + Matrix/Element (Self-Hosted)
-
-**Score**: 38/40 (9.5/10)
-**Confidence**: 91%
-**Monthly cost**: $0 software + $0–15/month VPS (or $0 on existing raspby1)
-**Annual cost**: $0–$180/year infrastructure + $649/year Loomio Pro nonprofit (optional governance supplement)
-**Setup time**: 6–10 hours (Docker familiarity required)
-
-#### 4.1A Architecture Breakdown
-
-Option A deploys two complementary open-source systems on the same host:
-
-**Nextcloud Hub** handles: files and document library (seed catalog, farm tools inventory, governance templates, Phase 5 guides), real-time collaborative editing (Collabora Online backend), CalDAV calendar (resource booking, community events, planting schedule), Nextcloud Talk (video conferencing for community calls), Nextcloud Forms (mutual aid request intake), Nextcloud Deck (resource pipeline visualization), and desktop/mobile offline sync.
-
-**Matrix/Element** handles: persistent threaded messaging (all community channels), end-to-end encrypted DMs for sensitive coordination, the Mjolnir moderation bot for hands-off harassment prevention, Element X mobile client for offline compose-and-send, and the MESH-API bridge for LoRa/Meshtastic communication when internet is unavailable.
-
-The two systems integrate via Nextcloud's CalDAV-to-Matrix notification bridge and shared links. Members use Nextcloud for documents and calendar; Element for messaging. The dual UX surface is the primary adoption challenge and requires a one-page onboarding guide.
-
-**Hardware target**: The existing raspby1 (Raspberry Pi 5, 8 GB RAM, 100.70.184.84 Tailscale) is the preferred host. Dendrite (lightweight Matrix server) rather than Synapse reduces RAM footprint. At typical community usage patterns (asynchronous, not simultaneous peaks), the Pi 5 handles 50–200 members. Thermal note (from project memory): idle temperature is 81–84°C; under sustained compute 87.8°C. Active cooling upgrade ($20–40 one-time) is recommended before deploying Option A on raspby1. Alternative: Hetzner CX22 VPS at $6/month eliminates thermal risk.
-
-#### 4.2A Integration with Phase 5 Output (45K Words)
+**Nextcloud + Matrix (Recommendation 1)**
 
 ```
-Phase 5 publication (June 5, GitHub Pages — 8–10 guides, ~45,000 words)
-    → Upload all guides to Nextcloud shared folder (collaborative editing enabled)
-    → Each guide becomes a Nextcloud Office document: community can annotate in-line
-    → Nextcloud desktop sync: every member's device caches guides offline before going to field
-    → Matrix rooms created: #phase5-discussion, #seed-library, #tools-library, #governance
-    → GitHub Actions webhook → Matrix room: auto-announce when new Phase 5 content publishes
-    → Nextcloud Flow webhook → Matrix room: auto-announce new document uploads
-    → Offline workflow: member in rural MI edits offline note in Nextcloud Office
-      → syncs to server on reconnect → version history captures every revision
+GitHub Actions builds Phase 5 Wave 1 → deploys to GitHub Pages
+    → GitHub webhook → Matrix room #announcements: "Phase 5 Wave 1 published"
+    → Admin uploads 8–10 guide documents to Nextcloud shared folder
+        (one-time upload; ~30 minutes; co-editing enabled immediately)
+    → Nextcloud Flow trigger → Matrix room: "New document available: [name]"
+    → All builders: Nextcloud desktop sync client caches documents locally
+        → offline access before any community member goes to field
+    → Phase 5 guides become living Nextcloud Office documents:
+        community annotates, corrects, adds local case studies in-place
+    → Version history captures every edit with timestamp and author
+    → Matrix rooms: #phase5-wave1, #seed-library, #tools-library, #governance
+        → discussion in rooms; document links pinned in room topics
 ```
 
-**Phase 5 document lifecycle on Option A**:
-- Day 1: Upload 8–10 guides as Nextcloud Office documents (shared with community folder)
-- Week 1–4: Community members annotate, correct, and add local case studies directly in documents
-- Month 2+: Documents evolve from research output to living community protocols, with version history preserving all changes
+Phase 5 content lifecycle on Recommendation 1: guides upload once as Nextcloud Office documents on June 5; every builder's device caches all documents offline by June 8 (sync client); community annotation begins immediately; version history preserves all changes. Guides evolve from research output to living community protocols.
 
-#### 4.3A Author Recruitment Workflow (18 Personalized Emails per Phase 5/6)
+**Discourse (Recommendation 2)**
 
-Author recruitment for Phase 6 research uses the following platform-native workflow:
+```
+GitHub Actions builds Phase 5 Wave 1 → deploys to GitHub Pages
+    → GitHub Actions → Discourse API webhook: create post in "Phase 5 Knowledge Base" category
+    → Each guide posted as Discourse wiki post (co-editable by TL2+ members)
+    → Discourse embed widget deployed on GitHub Pages layout:
+        → every Phase 5 page shows recent community discussion without forum login
+    → GitHub OAuth: builders authenticate with existing GitHub accounts (no new password)
+    → Automation plugin: auto-welcome new members with Phase 5 reading list
+    → Events plugin: June 15 Phase 6 Domain A foundation session created
+```
 
-1. Author prospect identified (from PHASE_6_WAVE_2_AUTHOR_PROFILES.md or Domain A research)
-2. Personalized outreach email sent via existing email infrastructure (Gmail/Proton/etc.)
-3. On positive response: admin provisions Nextcloud account (username, temporary password) + Matrix invite
-4. Author receives: Nextcloud login (file access, shared document folder, calendar event for onboarding call), Element Matrix invite (joins #authors room and their domain-specific channel)
-5. Onboarding document in Nextcloud walks through: project context, Phase 5 synthesis, Domain A scope, contribution expectations, revision workflow
-6. Author contributions: edit shared Nextcloud documents; discuss in Matrix room; receive notifications via Element X (offline-capable)
+The Discourse embed widget is the most direct integration between a static publication site and a community platform available in the ecosystem. Every Phase 5 guide page on GitHub Pages displays recent community discussion below the content, creating a seamless reader-to-participant journey.
 
-Platform native advantage: author contributions are version-tracked in Nextcloud from day one. No separate document management tool needed. All author communication is in Matrix channels (archived, searchable, E2E encrypted).
+**Mighty Networks (Recommendation 3 — Conditional)**
 
-#### 4.4A Off-Grid Use Case Fit
+```
+GitHub Actions builds Phase 5 Wave 1 → deploys to GitHub Pages
+    → Admin manually downloads each of 8–10 guides as PDF
+    → Admin manually uploads each PDF to Knowledge Base Space
+    → Admin manually posts announcement for each guide
+    → No automated announcement; no embed widget; no co-editing
+    → Push notifications sent to all members for each post (partial automation)
+```
 
-Zone 5 rural members (IA, MI) with intermittent LTE or Starlink during winter weather:
+On the Launch plan, there is no programmatic path from GitHub Actions to Mighty Networks. All integration is manual upload and manual announcement. Phase 5 content becomes static PDFs with no annotation or update pathway. The push notification system provides the only automation — builders receive mobile alerts when posts are published, which partially compensates for the manual workflow.
 
-- **Before connectivity loss**: Nextcloud desktop app syncs all community documents and the seed catalog to local device. Element X caches last 30 days of message history.
-- **During outage**: User reads Phase 5 guides and seed catalog offline (Nextcloud offline files). Can compose Matrix messages that queue for delivery. Can edit Nextcloud documents offline with sync on reconnect.
-- **Extended outage (Meshtastic scenario)**: If the community has deployed Zone 5 mesh infrastructure per PHASE_6_COMMUNICATION_INFRASTRUCTURE_SCOPING.md, the MESH-API bridge allows Matrix room messages to propagate over LoRa when both internet and cell are unavailable. This is the only platform configuration that addresses this scenario.
-- **Recovery**: On reconnect, Nextcloud syncs all queued changes; Matrix delivers all queued messages. Version conflicts resolved automatically by Nextcloud's conflict resolution.
+**Slack (reference — messaging supplement)**
 
-#### 4.5A Cost Analysis
+```
+GitHub Actions builds Phase 5 Wave 1 → deploys to GitHub Pages
+    → GitHub Actions → Slack webhook: instant #announcements channel notification
+    → GitHub Slack app: commit and release events displayed in #phase5-updates channel
+    → Members click through to GitHub Pages for content
+    → No document storage; no embed; no annotation layer
+```
 
-| Component | Cost | Notes |
+Slack's GitHub integration is the easiest to configure of any platform. A GitHub Actions → Slack webhook notification requires three minutes of configuration. This makes Slack viable as a messaging supplement layer (notification layer + real-time discussion channel) supplementing a primary platform with document capabilities.
+
+### 4.2 Recommended Integration Architecture
+
+For Phase 6 Domain A, the optimal integration architecture combines Nextcloud + Matrix (Recommendation 1) with Substack as a distribution newsletter:
+
+```
+Publication layer:   GitHub Pages (Phase 5 guides, public)
+Distribution layer:  Substack newsletter (announcements, community recruitment email)
+Coordination layer:  Nextcloud (documents, calendar, resources) + Matrix (messaging)
+Governance layer:    Loomio (structured decisions, time polls)
+```
+
+The Substack newsletter sends Phase 5 publication announcements to the broader email list (non-platform members). Nextcloud + Matrix handles all coordination among registered community builders. Loomio handles governance votes. GitHub Pages serves as the public-facing publication. No single platform owns all functionality — each layer does what it does best.
+
+---
+
+## Section 5: Implementation Timeline and Cost Summary
+
+### 5.1 Recommendation 1 — Nextcloud + Matrix Deployment Timeline
+
+| Date | Action | Est. Time |
 |---|---|---|
-| Nextcloud software | $0 | AGPL open source |
-| Matrix Dendrite software | $0 | AGPL open source |
-| Hosting (raspby1) | $0 | Existing infrastructure |
-| Hosting (Hetzner CX22 VPS) | $6/month | Alternative if thermal risk is unacceptable |
-| Email delivery (Brevo free tier) | $0 | 300 emails/day free; adequate for community notifications |
-| Active cooling (raspby1) | $20–40 one-time | Recommended before deployment |
-| Loomio Pro nonprofit (optional) | $649/year ($54/month) | Governance supplement; self-hosted = $0 |
-| **Total (raspby1, no Loomio)** | **$0–$40 one-time** | |
-| **Total (VPS, with Loomio)** | **$721/year ($60/month)** | |
-| **Total (raspby1, with Loomio)** | **$649/year ($54/month)** | |
-
-#### 4.6A Deployment Timeline
-
-| Date | Action | Time |
-|---|---|---|
-| June 3 | Decision; active cooling ordered; Docker Compose YAML written for Nextcloud + Dendrite | 1 hour |
-| June 3–4 | Deploy on raspby1 (or Hetzner CX22 if VPS preferred); DNS configured if VPS | 2–3 hours + DNS wait |
-| June 4 | Nextcloud admin config: branding, groups, Deck + Forms + Calendar apps enabled, SMTP | 2 hours |
-| June 4 | Dendrite (Matrix) install; Element Web UI; first rooms created | 2 hours |
-| June 5 | Phase 5 guides uploaded to Nextcloud shared folder; co-editing enabled | 1 hour |
-| June 5 | Matrix rooms: #general, #seed-library, #tools-library, #governance, #phase5-discussion | 30 min |
-| June 5–8 | First 15–20 builder accounts provisioned (Nextcloud + Matrix); onboarding guide sent | 1 hour |
+| June 3 (today) | Platform decision confirmed; active cooling ordered for raspby1 if deploying on Pi | 15 min |
+| June 3 | Docker Compose YAML written for Nextcloud Hub + Dendrite (Matrix) | 1 hour |
+| June 3–4 | Deploy on raspby1 (or Hetzner CX22 VPS if thermal risk unacceptable); DNS if VPS | 2–3 hours + DNS wait |
+| June 4 | Nextcloud admin config: branding, groups, Deck + Forms + Calendar + Office apps, SMTP | 2 hours |
+| June 4 | Dendrite install; Element Web UI; rooms created (#general, #governance, #seed-library, #tools) | 2 hours |
+| June 5 (13:00 UTC) | Phase 5 Wave 1 publishes to GitHub Pages | — |
+| June 5 | Upload all 8–10 guides to Nextcloud shared folder; co-editing enabled | 1 hour |
+| June 5 | GitHub webhook → Matrix room: Phase 5 announcement configured | 30 min |
+| June 5–8 | First 15–20 builder accounts provisioned; onboarding guide sent | 1 hour |
 | June 9–14 | Domain A community onboarding; Nextcloud Calendar event for June 15 session | Ongoing |
 | June 15 | Community foundation session via Nextcloud Talk video | — |
+| July 1 | Seed catalog live in shared Nextcloud spreadsheet with 3+ contributors | — |
+| July 15 | Tools inventory in Nextcloud Deck; first reservation via Appointments app | — |
+| August 1 | 30+ active members; Loomio governance vote #1 (community charter) | — |
 
-**Total setup**: 8–11 hours; requires Docker familiarity and comfort with Linux command line.
+**Total setup**: 8–10 hours; requires Docker familiarity and Linux command line comfort.
 
-#### 4.7A Success Criteria
+### 5.2 Recommendation 2 — Discourse Deployment Timeline
 
-- June 5: All Phase 5 guides accessible via Nextcloud with offline sync
-- June 15: June 15 community foundation session with 10+ participants via Nextcloud Talk
-- July 1: Seed catalog live in shared Nextcloud spreadsheet with 3+ contributors
-- July 15: Farm tools inventory in Nextcloud Deck; first tool reservation via Appointments
-- August 1: 30+ active members with local offline sync established; Loomio first governance vote
-
----
-
-### Option B — Bootstrap Path: Discourse Self-Hosted + Loomio
-
-**Score**: 32/40 (8.0/10)
-**Confidence**: 90%
-**Monthly cost**: $7–17/month (VPS + email SMTP)
-**Annual cost**: $84–$204/year infrastructure + $649/year Loomio Pro nonprofit (optional)
-**Setup time**: 6–8 hours
-
-#### 4.1B Architecture Breakdown
-
-Option B deploys Discourse on a dedicated VPS (Hetzner CX22 at $6/month is the recommended host). Discourse provides: threaded forum discussion (industry-leading), trust-level-based self-governance (no admin intervention for spam control), wiki posts for Phase 5 document annotation, full REST API for GitHub Pages integration, Events plugin for community sessions, and GitHub OAuth for one-click login.
-
-Loomio (cloud Pro nonprofit or self-hosted) adds structured governance: ranked-choice voting, time polls, proposal threads with explicit outcomes, and decision log.
-
-What Discourse cannot provide: real-time document co-editing, offline posting (read-only PWA cache only), and native video conferencing. These limitations are acceptable if all community members have reliable connectivity.
-
-#### 4.2B Integration with Phase 5 Output
-
-```
-Phase 5 publication (June 5, GitHub Pages)
-    → Create Discourse category: "Phase 5 Knowledge Base"
-    → Post each of the 8–10 guides as Discourse wiki posts (editable by TL2+ members)
-    → Pin governance framework document as category-pinned post
-    → Discourse embed widget on GitHub Pages: recent discussions visible on the static site
-    → GitHub OAuth: community members authenticate with existing GitHub accounts (no new password)
-    → GitHub Actions → Discourse API: auto-post announcement when new Phase 5 content publishes
-    → Automation plugin: auto-welcome new members with Phase 5 reading list
-    → Events plugin: June 15 Phase 6 Domain A foundation session
-```
-
-**Discourse embed widget** (most valuable GitHub Pages integration available across all platforms):
-```html
-<!-- Added to GitHub Pages layout template -->
-<div id='discourse-comments'></div>
-<script>
-  window.DiscourseEmbed = {
-    discourseUrl: 'https://community.yoursite.org/',
-    topicId: PHASE5_TOPIC_ID
-  };
-  (function() {
-    var d = document.createElement('script');
-    d.type = 'text/javascript'; d.async = true;
-    d.src = window.DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    document.body.appendChild(d);
-  })();
-</script>
-```
-
-Result: Every Phase 5 publication page shows recent community discussion without requiring the reader to visit the community forum separately. This is the most direct possible integration between the publication site and the community platform.
-
-#### 4.3B Author Recruitment Workflow
-
-1. Author prospect identified → personalized outreach email sent externally
-2. Positive response: admin generates Discourse invite link (one-click, expires in 72 hours)
-3. Author creates account via GitHub OAuth or email; lands at TL1 automatically
-4. Pinned welcome post directs author to: project context wiki, Phase 5 Knowledge Base, author coordination PM thread
-5. Author contributions: edits wiki posts (TL2 earned after ~30 days, or manually granted by admin); posts in author working group category; receives email digests of all activity
-6. Revision tracking: Discourse wiki post history preserves every change with timestamp and editor identity
-
-Platform advantage: Discourse's email digest means authors who are not daily users still receive summaries without logging in. The trust level system means active authors naturally earn more platform authority over time.
-
-#### 4.4B Off-Grid Use Case Fit
-
-Discourse as a PWA can cache the most recently visited pages via service worker. This means a community member who loaded their seed library category page before losing connectivity can read the content offline. They cannot post new content, upload files, or coordinate new exchanges without connectivity.
-
-For communities where all or nearly all members have reliable connectivity (urban/suburban members, Starlink customers with stable connection), this limitation is acceptable. For any community with rural members who may lose connectivity during winter weather events, Option B provides significantly less resilience than Option A.
-
-**Recommendation**: If any identified community members are in rural IA or MI with connectivity uncertainty, upgrade from Option B to Option A. If all members have reliable Starlink or fiber, Option B is fully adequate and easier to maintain.
-
-#### 4.5B Cost Analysis
-
-| Component | Cost | Notes |
+| Date | Action | Est. Time |
 |---|---|---|
-| Discourse software | $0 | AGPL open source |
-| Hetzner CX22 VPS | $6/month | 2 vCPU, 4 GB RAM; handles 500+ member Discourse |
-| Email SMTP (Amazon SES) | $0–$2/month | First 62,000 emails/month free (EC2); ~$0.10/1,000 thereafter |
-| Akismet spam API key | $0 | Free for personal and open source projects |
-| Backup (Backblaze B2) | $0.60/month | ~100 GB backup at $0.006/GB |
-| Loomio Pro nonprofit (optional) | $649/year | Governance supplement |
-| **Total (no Loomio)** | **$84/year ($7/month)** | |
-| **Total (with Loomio)** | **$733/year ($61/month)** | |
-
-#### 4.6B Deployment Timeline
-
-| Date | Action | Time |
-|---|---|---|
-| June 3 | Decision; Hetzner CX22 provisioned; DNS A record set | 30 min + DNS wait (24h) |
+| June 3 | Decision; Hetzner CX22 VPS provisioned; DNS A record set | 30 min + DNS |
 | June 4 | Discourse Docker install via official script; admin account created | 2 hours |
-| June 4 | Categories configured: Knowledge Base, Resource Exchange, Skills Board, Events, Governance | 1 hour |
-| June 4 | Events plugin installed; GitHub OAuth configured; SMTP configured; Akismet key added | 1 hour |
+| June 4 | Categories configured; Events plugin installed; GitHub OAuth; SMTP; Akismet | 2 hours |
 | June 5 | Phase 5 guides posted as wiki posts in Knowledge Base category | 2 hours |
 | June 5 | Discourse embed widget added to GitHub Pages layout | 30 min |
-| June 5–8 | First 15–20 builders invited via email; onboarding thread pinned at TL1 | 30 min |
-| June 9–14 | Domain A community onboarding; Events plugin: June 15 session created | Ongoing |
-| June 15 | Community foundation session (external Zoom link from Discourse event post) | — |
+| June 5 | GitHub Actions → Discourse API announcement webhook configured | 30 min |
+| June 5–8 | First 15–20 builders invited via email; onboarding thread pinned | 30 min |
+| June 15 | Community foundation session via Events plugin event with external Zoom link | — |
+| July 1 | Resource exchange category live with 5+ listings | — |
+| July 15 | First Loomio governance vote linked from Discourse governance category | — |
 
-**Total setup**: 6–8 hours; official Discourse install script minimizes Linux expertise needed.
+**Total setup**: 6–8 hours; official Discourse install script minimizes Linux expertise required.
 
-#### 4.7B Success Criteria
+### 5.3 Recommendation 3 — Mighty Networks Deployment Timeline
 
-- June 5: All Phase 5 guides posted as wiki posts; Discourse embed live on GitHub Pages
-- June 15: June 15 community foundation session with 10+ RSVP via Events plugin
-- July 1: 20+ active members; resource offers/requests category live with 5+ listings
-- July 15: First Loomio governance vote linked from Discourse governance category
-- August 1: 40+ active members; at least 3 wiki posts annotated by TL2+ community members
-
----
-
-### Option C — Scale Path: Mighty Networks Launch + Loomio
-
-**Score**: 20/40 (5.0/10)
-**Confidence**: 82% (below 85% recommendation threshold — viable with acknowledged limitations)
-**Monthly cost**: $79/month (Launch plan)
-**Annual cost**: $950/year (annual billing) + $649/year Loomio Pro nonprofit (optional)
-**Setup time**: 3–4 hours; zero technical expertise required
-
-#### 4.1C Architecture Breakdown
-
-Mighty Networks Launch provides: native iOS/Android apps with push notifications (the primary differentiator for volunteer engagement), native event system with RSVP and push reminders, per-Space organization (Knowledge Base, Resource Exchange, Skills Board, Events, Governance), threaded discussion, direct messaging, and basic AI content flagging.
-
-Loomio adds structured governance (see Section 5).
-
-What Mighty Networks cannot provide on the Launch plan: API access (locked to Scale at $179/month), automated integration with GitHub Pages, real-time document editing, offline capability of any kind, and data export beyond manual CSV download.
-
-**Confidence is 82%, below the 85% threshold**: The two dimensions most specific to Domain A — off-grid readiness and programmatic integration — score 0 and 2 respectively. A community built around economic resilience during infrastructure disruption, coordinating via a cloud-only SaaS platform with no API access, has a structural credibility gap. Option C is recommended only when the team has confirmed: (1) all initial participants have reliable connectivity; (2) no technical capacity exists for self-hosting; and (3) there is a 6-month migration plan to Options A or B as the community grows.
-
-#### 4.2C Integration with Phase 5 Output
-
-```
-Phase 5 publication (June 5, GitHub Pages)
-    → Manual upload: each guide as PDF/Word document to Knowledge Base Space
-    → Create one post per guide with summary and link to GitHub Pages source
-    → Push notification to all members on publication day
-    → June 15 community foundation event with RSVP and push reminders
-    → Phase 6 Domain A research: post sections as long-form articles in Knowledge Base Space
-    → No automated integration (API locked on Launch plan)
-```
-
-All Phase 5 content integration is manual and requires a community manager to upload and post each document. Documents are static uploads — not collaborative editing surfaces.
-
-#### 4.3C Author Recruitment Workflow
-
-1. Author prospect identified → personalized outreach email sent externally
-2. Positive response: admin sends Mighty Networks invite link
-3. Author joins community; admin assigns host or moderator role
-4. Author receives: Space access to Knowledge Base and author coordination space
-5. Author contributions: posts in author Space; receives push notification alerts for mentions
-6. Limitation: no version-controlled document editing; no offline access; no API for automated coordination
-
-#### 4.4C Off-Grid Use Case Fit
-
-Mighty Networks has zero offline capability. The platform is cloud-only SaaS. When connectivity is lost, the platform is completely unavailable. Community members cannot access Phase 5 guides, seed catalogs, tools inventory, or any coordination information without internet.
-
-For a community whose explicit purpose is economic resilience during infrastructure disruption, this is the defining architectural weakness. Option C is viable only if the team accepts this limitation as acceptable for the current phase and plans to migrate to Option A or B within 6 months.
-
-#### 4.5C Cost Analysis
-
-| Component | Cost | Notes |
-|---|---|---|
-| Mighty Networks Launch | $79/month ($950/year annual) | 2% transaction fee on paid content |
-| Mighty Networks Scale (if API needed) | $179/month ($2,148/year) | Required for any programmatic integration |
-| Loomio Pro nonprofit (optional) | $649/year | Governance supplement |
-| **Total (Launch, no Loomio)** | **$950/year** | |
-| **Total (Launch, with Loomio)** | **$1,599/year** | |
-| **Total (Scale, with Loomio)** | **$2,797/year** | Required if Phase 5 webhook integration is needed |
-
-#### 4.6C Deployment Timeline
-
-| Date | Action | Time |
+| Date | Action | Est. Time |
 |---|---|---|
 | June 3 | Start 14-day free trial (Growth plan features active during trial) | 15 min |
-| June 3 | Configure: community name, branding, Spaces (Knowledge Base, Resource Exchange, Skills, Events, Governance) | 2 hours |
-| June 3–4 | Upload Phase 5 documents to Knowledge Base Space | 1 hour |
-| June 4 | Create June 15 community foundation event with RSVP | 30 min |
-| June 5 | Invite first 15–20 builders via email invite link | 30 min |
+| June 3 | Configure community name, branding, Spaces (5 Spaces: Knowledge Base, Resources, Skills, Events, Governance) | 2 hours |
+| June 3–4 | Manually upload Phase 5 guides to Knowledge Base Space | 1 hour |
+| June 4 | Create June 15 event with RSVP and push notification reminders | 30 min |
+| June 5 | Invite first 15–20 builders via invite link | 30 min |
 | June 9–14 | Domain A onboarding; push notification reminders for June 15 event | Ongoing |
-| June 17 | Trial ends; $79/month Launch billing begins (or evaluate and cancel) | — |
+| June 17 | Trial ends; $79/month Launch billing begins | — |
 
-**Total setup**: 3–4 hours; no technical expertise required.
+**Total setup**: 3–4 hours; zero technical expertise required.
 
-#### 4.7C Success Criteria + 6-Month Migration Trigger
+### 5.4 Three-Year Cost Summary
 
-- June 5: All Phase 5 guides uploaded; community live with at least 10 members
-- June 15: Foundation session with 10+ RSVP; push notification reminders sent
-- July 1: 20+ active members; resource exchange posts live
-- **Migration trigger**: If by July 31 any of the following are true → initiate migration to Option A or B within 30 days:
-  - Any rural member reports inability to access community during connectivity loss
-  - Team wants automated GitHub Pages → community integration (requires Scale at $179/month or migration)
-  - Team wants shared collaborative editing of seed catalog or community protocols
-  - Mighty Networks raises pricing again
+| Cost Category | Rec. 1 (Nextcloud+Matrix) | Rec. 2 (Discourse) | Rec. 3 (Mighty Networks) | Circle | Slack Pro (50 members) |
+|---|---|---|---|---|---|
+| Year 1 software | $0 | $0 | $950 | $3,324–$4,860 | $5,250 (std) / $787 (NP) |
+| Year 1 infrastructure | $0–$180 | $84–$204 | $0 (SaaS) | $0 (SaaS) | $0 (SaaS) |
+| Year 1 Loomio (optional) | $649 | $649 | $649 | $649 | $649 |
+| **Year 1 total (w/ Loomio)** | **$649–$829** | **$733–$853** | **$1,599** | **$3,973–$5,509** | **$5,899 / $1,436 (NP)** |
+| Year 2 (growth, 100 members) | $0–$300 | $84–$204 | $950–$2,148 | $3,324–$4,860 | $10,500 (std) / $1,575 (NP) |
+| Year 3 (scale, 200 members) | $60–$300 | $84–$204 | $2,148 | $3,324+ | $21,000 (std) / $3,150 (NP) |
+| **3-year total (no Loomio)** | **$60–$660** | **$252–$612** | **$2,850–$5,046** | **$9,972–$14,580** | **$36,750 / $5,512 (NP)** |
 
----
-
-## Section 5: Governance Supplement — Loomio
-
-Regardless of primary platform choice, Loomio is the recommended governance supplement for structured community decision-making.
-
-**Current pricing (verified June 2, 2026)**:
-- Community: $10/month or $199 lifetime (limited to ~30 members)
-- Starter: $25/month or $199/year (small groups; limited subgroups)
-- Pro nonprofit: $75/month or $649/year (unlimited members, unlimited subgroups, full governance tooling, 50% nonprofit discount applied)
-- Pro standard: $149/month or $1,299/year
-- Self-hosted: $0 (AGPL, Docker)
-
-**Note on pricing history**: Prior analysis documents (v1, v2) listed Pro nonprofit at $499/year. The current official figure is $649/year. The Starter plan ($199/year) caps at approximately 30 members — insufficient for Phase 6 scale once the community exceeds 30 active decision-makers. Budget for Pro nonprofit ($649/year) if cloud Loomio is the governance path, or self-host Loomio at $0 software cost.
-
-**Phase 6 governance use cases**:
-- Research priority voting: which economic resilience domains get next Phase 6 investigation cycle
-- Seed library policy: which varieties to prioritize, open-pollinated vs. hybrid policy
-- Tools library policy: deposit requirements, check-out periods, damage policy
-- Cooperative formation decisions: which model (worker-owned, consumer-owned, hybrid) to pilot first
-- Meeting scheduling: time polls for foundation sessions across IL/MI/IA/IN/WI time zones
-- Domain expansion: which Phase 6 candidates (B, C, D, E, F) get next investment
-
-**Integration by platform**:
-- Option A (Matrix): Loomio has native Matrix/Element outbound notifications → notifies #governance room on each new vote or decision
-- Option B (Discourse): Loomio → email notifications → Discourse processes email replies into governance threads
-- Option C (Mighty Networks): Loomio → email notifications only (no API on Launch plan)
-
-**Recommendation**: Begin with Loomio Starter ($199/year) while Phase 6 membership is below 30 active decision-makers. Upgrade to Pro nonprofit ($649/year) when membership grows. Self-hosted Loomio on raspby1 is viable for advanced technical teams and reduces the recurring cost to $0.
+Notes: Circle costs use minimum realistic functional tier ($277/month). Slack Pro at standard rate is prohibitive for community use; nonprofit discount changes calculus significantly if qualification applies. All figures exclude one-time setup costs.
 
 ---
 
-## Section 6: Decision Scorecard
+## Section 6: Risk Assessment and Contingency
 
-Answer these four questions in order. The first hard requirement determines the path.
+### 6.1 Risk Register by Recommendation
 
-**Q1: Is off-grid or low-connectivity capability a hard requirement for any initial Phase 6 participants?**
+**Recommendation 1 (Nextcloud + Matrix) — Risks**
 
-- Yes (any rural or off-grid members in the first 50 participants) → **Option A only**. Nextcloud + Matrix is the only configuration with full offline capability.
-- No, but it is a near-term requirement (6–12 months) → **Option A strongly preferred; Option B as fallback**.
-- No, all members have reliable connectivity (Starlink, fiber, or consistently available broadband) → Proceed to Q2.
-
-**Q2: Does the team have Docker-capable technical capacity for self-hosting (one person comfortable with Linux command line)?**
-
-- Yes → Options A or B; proceed to Q3.
-- No → Option C (Mighty Networks, 3–4 hour no-code setup) or Discourse hosted at $50/month nonprofit.
-
-**Q3: Does the community need to co-author documents in real time (shared protocol development, live seed catalog, tool inventory co-editing)?**
-
-- Yes → **Option A** (Nextcloud is the only solution with native real-time collaborative editing that syncs offline).
-- No (documents published centrally; community annotates via forum or comments) → Options A or B both sufficient; proceed to Q4.
-
-**Q4: What is the realistic annual budget ceiling?**
-
-- $0/year → Option A or B on raspby1 + self-hosted Loomio.
-- $0–$300/year → Option B (Discourse VPS $84/year) + Loomio Starter ($199/year).
-- $300–$700/year → Option A or B + Loomio Starter.
-- $700–$1,000/year → Option A or B + Loomio Pro nonprofit ($649/year).
-- $950–$1,600/year → Option C (Mighty Networks) + Loomio Pro nonprofit. Note the 3-year cost difference vs. Options A or B.
-
-**Summary scorecard**:
-
-| Decision Factor | Option A (Nextcloud + Matrix) | Option B (Discourse) | Option C (Mighty Networks) |
+| Risk | Probability | Impact | Mitigation |
 |---|---|---|---|
-| Score | 9.5/10 | 8.0/10 | 5.0/10 |
-| Confidence | 91% | 90% | 82% |
-| Off-grid readiness | Full | Read-only | None |
-| Document collaboration | Real-time co-editing | Async wiki only | Static uploads |
-| Cost (Year 1) | $0–$180 | $84–$204 | $950 |
-| Cost (3 years) | $60–$660 | $252–$612 | $2,850–$5,046 |
-| Setup complexity | High (Docker required) | Medium (script-guided) | Low (no-code) |
-| GitHub Pages integration | Strong (webhooks + links) | Best (embed widget + OAuth) | Manual only |
-| Mobile experience | Nextcloud app + Element X | PWA (adequate) | Native apps (best) |
-| Vendor lock-in | None (self-hosted AGPL) | None (self-hosted AGPL) | Medium (SaaS, limited export) |
-| Admin time/month | 2–4 hours | 1–2 hours | 30 min |
-| Deployment (June 5) | Achievable | Achievable | Achievable |
-| Migration path | N/A (already optimal) | Upgrade to Option A if off-grid needed | Migrate to A or B within 6 months |
+| raspby1 thermal throttling under sustained load | Medium (80–87°C documented) | High — service degradation | Order active cooling ($20–40) before deploy; alternative: Hetzner CX22 at $6/month |
+| Docker familiarity gap — no technical operator available | Low (one operator confirmed) | High — blocks deployment | Pre-identify backup operator; Discourse hosted ($50/month nonprofit) as fallback |
+| Dual UX surfaces (Nextcloud + Element) create onboarding friction | Medium | Medium — reduces early adoption | One-page onboarding guide covering both tools; single sign-in link in welcome email |
+| MESH-API Meshtastic bridge: community-maintained, not official product | Low (currently stable) | Low (advanced feature) | Treat as bonus capability, not core feature; standard offline sync (Nextcloud) covers primary use case |
+| Dendrite (lightweight Matrix server) stability vs. Synapse | Low-Medium | Medium — message delivery gaps | Pre-test with 5 users before June 5 launch; Synapse as fallback (higher RAM usage) |
 
----
+**Recommendation 2 (Discourse) — Risks**
 
-## Section 7: Migration and Fallback Strategy
-
-### 7.1 Data Export Standards (All Options)
-
-Establish quarterly data exports before any migration is needed:
-
-| Platform | Export Format | What's Exported | Cadence |
+| Risk | Probability | Impact | Mitigation |
 |---|---|---|---|
-| **Nextcloud** | `occ files:export` or WebDAV sync | All files, calendars, contacts, version history | Daily automated (desktop sync client is continuous) |
-| **Matrix/Element** | Room export via Synapse/Dendrite admin API | Message history, media, room state | Monthly automated |
-| **Discourse** | JSON backup via admin panel | Posts, users, wikis, categories, private messages | Monthly automated |
-| **Mighty Networks** | CSV export (manual) | Member list, post content, event data | Quarterly manual |
-| **Loomio** | CSV decision export (built-in) | All decisions, votes, outcomes | After each decision |
+| DNS propagation delay (24–48h) blocks June 5 deployment | Medium | Medium — 24–48h delay before community goes live | Provision VPS and set DNS on June 3, not June 4; community emails sent June 8 after propagation |
+| Events plugin not included in default Discourse install | Low (known requirement) | Low — 30-minute fix | Install Events plugin during initial configuration on June 4 |
+| TL0 posting limits frustrate early members | Low-Medium | Low — configurable | Manually elevate first 15–20 builders to TL1 on account creation |
+| No offline capability for rural members | Medium (Zone 5 rural base) | High if rural members cannot access critical resources | Migrate to Recommendation 1 within 60 days if any rural member reports connectivity issues |
 
-### 7.2 Platform-Independent Assets
+**Recommendation 3 (Mighty Networks) — Risks**
 
-Regardless of platform, maintain these community-owned assets that survive any platform failure:
+| Risk | Probability | Impact | Mitigation |
+|---|---|---|---|
+| Rural connectivity outage renders platform inaccessible | High (Zone 5 rural reality) | Critical — community cannot coordinate during disruption scenarios | Accept risk only if confirmed zero rural members; plan migration to Rec. 1 or 2 within 6 months |
+| Trial ends June 17 before community is fully evaluated | Medium | Medium — billing starts before ROI demonstrated | Set calendar reminder June 15 for trial evaluation; cancel if engagement insufficient |
+| API locked on Launch; Phase 5 automation impossible | Certain | Medium — all integration is manual | Accept manual workflow; plan Scale upgrade ($179/month) or migration if automation needed |
+| Pricing increase (historical precedent: 93% increase 2024–2025) | Medium | Medium — budget impact | Build migration plan before June 2027 pricing review |
+| Data lock-in: limited CSV export, no API export | Medium | Medium — migration effort | Export member list monthly via manual CSV; document export cadence in community governance |
 
-1. **Member email list**: exported from any platform at any time; the community's most critical asset
-2. **Seed catalog**: maintained as plain CSV or ODS file (openable without any platform)
-3. **Tool inventory**: maintained as plain CSV or ODS file
-4. **Decision log**: maintained as plain text or Markdown (exportable from Loomio or Discourse)
-5. **Governance documents**: stored in at least two locations (platform + separate file store or email archive)
+### 6.2 Universal Fallback Sequence
 
-### 7.3 Fallback Sequence (Any Platform Failure)
+If any primary platform becomes unavailable or is deemed inadequate:
 
-If primary platform becomes unavailable:
+**Immediate (0–48 hours)**: Signal group with all 15–20 builders (Signal is offline-capable via E2E encrypted SMS; no account server dependency). Forward member email list to admin.
 
-1. **Emergency (immediate)**: Move to Signal group (15–20 members; immediate communication, no file storage)
-2. **Short-term (within 1 week)**: Matrix.org free server (no self-hosting; any Element client; member joins immediately)
-3. **Medium-term (within 4 weeks)**: Restore Option A or B self-hosted instance from backup; member email list drives re-onboarding announcement
+**Short-term (1–7 days)**: Matrix.org free homeserver (matrix.org). Any community member installs Element and joins via invite link. No self-hosting required. No cost. Full message history preserved from the day of migration.
 
----
+**Medium-term (1–4 weeks)**: Deploy Recommendation 1 (Nextcloud + Matrix self-hosted) from scratch. With an established Docker operator, deployment takes 8–10 hours. Member email list drives re-onboarding announcement. All Nextcloud documents (if already on Recommendation 1) restore from backup.
 
-## Section 8: 90-Day Operational Roadmap
+### 6.3 Platform-Independent Community Assets
 
-### Month 1: June 3–July 2 (Foundation)
+Regardless of platform choice, maintain these community-owned assets that survive any platform failure:
 
-| Week | Action | All Options |
-|---|---|---|
-| June 3–5 | Platform decision + deployment | VPS or raspby1 configured; Phase 5 content loaded |
-| June 5–8 | First 15–20 builders invited | Email invites; onboarding guide sent |
-| June 9–14 | Onboarding + orientation | Seed library structure created; tools inventory started |
-| June 15 | Community foundation session | First live call; member introductions; Phase 5 knowledge base walkthrough |
-| June 16–30 | Seed library launch | 10–15 Zone 5 varieties cataloged; check-out protocol established |
+1. **Member email list**: Export from any platform monthly; the community's most critical asset and the only guaranteed re-onboarding channel
+2. **Seed catalog**: Plain CSV or ODS file maintained in at least two locations; openable without any platform account
+3. **Tools inventory**: Plain CSV or ODS; same dual-location policy
+4. **Decision log**: Plain Markdown or text, exported from Loomio after each vote; stored in community git repository or email archive
+5. **Governance documents**: PDF and Markdown copies stored in community-owned email (not platform-only)
+6. **Phase 5 guides**: Already on GitHub Pages (permanent, platform-independent); local copies in Nextcloud or downloaded PDFs on every builder device
 
-### Month 2: July 3–August 1 (Build)
+### 6.4 Decision Summary Scorecard
 
-- Target: 30–50 active members
-- Recruitment: Illinois Stewardship Alliance, Michigan Farmers Union, Iowa State Extension cooperative contacts, Indiana small farm networks, Wisconsin Farm Bureau alternative programs
-- Milestone gate: if fewer than 25 members by July 15, escalate recruitment
-- Phase 6 Domain A research outputs posted as they are produced (2–3 sections/week from July 8)
-- First Loomio governance vote: community charter adoption
-- Tools library: first equipment reservation via platform
+Answer these questions in sequence. First hard requirement determines the path.
 
-### Month 3: August 2–September 1 (Scale)
+**Q1: Does any initial Phase 6 participant have rural or off-grid connectivity uncertainty?**
 
-- Target: 50–100 active members
-- Weekly community calls (Nextcloud Talk / Zoom link)
-- Seed swap event: virtual + in-person at regional nodes (IL, MI, IA)
-- Tools library: equipment-sharing agreements between 3+ farm nodes
-- Economic pilot: first mutual credit exchange or timebank test (10–15 participants)
-- Phase 7 readiness: platform validated at 50+ members before October activation
+- Yes → **Recommendation 1 (Nextcloud + Matrix) only.** No other platform provides full offline capability.
+- No, but off-grid is a 6-month requirement → Recommendation 1 strongly preferred; Recommendation 2 as 60-day bridge.
+- No, all members have confirmed reliable connectivity → Proceed to Q2.
+
+**Q2: Does the team have at least one Docker-capable technical operator available now?**
+
+- Yes → Recommendations 1 or 2; proceed to Q3.
+- No → Recommendation 3 (Mighty Networks Launch, 3–4 hours no-code setup) OR Discourse hosted ($50/month nonprofit, no self-hosting required).
+
+**Q3: Does Phase 6 need real-time collaborative document editing (seed catalog co-authoring, protocol development, tools inventory live updates)?**
+
+- Yes → **Recommendation 1 (Nextcloud + Matrix).** Nextcloud Office is the only evaluated solution with real-time co-editing that syncs offline.
+- No → Recommendations 1 or 2 both sufficient; proceed to Q4.
+
+**Q4: What is the annual budget ceiling (excluding Loomio governance supplement)?**
+
+- $0–$200/year → Recommendation 1 or 2 on raspby1 + self-hosted Loomio
+- $200–$400/year → Recommendation 2 (Discourse VPS $84–$204/year)
+- $400–$700/year → Recommendation 1 or 2 + Loomio Starter ($199/year) or Loomio Pro nonprofit ($649/year)
+- $950–$1,600/year → Recommendation 3 (Mighty Networks $950/year) + Loomio (optional)
+- $1,600+/year → No additional commercial platform is recommended at this scale
+
+**Decision matrix summary**:
+
+| Condition | Recommended Path |
+|---|---|
+| Rural members present | Recommendation 1 (Nextcloud + Matrix) — only option |
+| No rural members + Docker capable + co-editing needed | Recommendation 1 (Nextcloud + Matrix) |
+| No rural members + Docker capable + no co-editing | Recommendation 2 (Discourse) |
+| No rural members + no Docker capability | Recommendation 3 (Mighty Networks) + 6-month migration plan |
+| Budget ceiling $0 | Recommendation 1 or 2 on raspby1 + self-hosted Loomio |
+| Budget ceiling $950/year | Recommendation 3 acceptable if conditions met |
+| Budget ceiling $3,000+/year | Still not Circle — true cost disqualifies it at all budget levels |
 
 ---
 
 ## Sources
 
-All pricing and features verified against official source pages and cross-checked against independent reviews, June 2, 2026.
+All pricing and features verified against official source pages and cross-checked against independent reviews. Research confidence: 91%. Pricing verified June 2–3, 2026. No hands-on platform testing conducted; all assessments from official documentation, official pricing pages, and multiple independent review sources.
 
 **Mighty Networks**:
 - [Pricing — Official](https://www.mightynetworks.com/pricing)
 - [Growth plan — Official](https://www.mightynetworks.com/pricing/growth)
-- [Pricing 2026 — Mihaelcacic](https://www.mihaelcacic.com/pricing-analysis/mighty-networks-pricing/)
+- [Pricing analysis 2026 — Mihaelcacic](https://www.mihaelcacic.com/pricing-analysis/mighty-networks-pricing/)
 - [Pricing 2026 — EzyCourse](https://ezycourse.com/blog/mighty-networks-pricing)
-- [Pricing 2026 — Ruzuku](https://www.ruzuku.com/compare/mighty-networks-pricing)
-- [Pricing 2026 — SchoolMaker](https://www.schoolmaker.com/blog/mighty-networks-pricing)
+- [Pricing 2026 — Scrile](https://www.scrile.com/blog/mighty-networks-pricing)
+- [Pricing 2026 — GetApp](https://www.getapp.com/collaboration-software/a/mighty-networks/)
 
 **Circle.so**:
 - [Pricing — Official](https://circle.so/pricing)
 - [True cost 2026 — AI Funnel Insider](https://aifunnelinsider.com/circle-so-pricing-2026/)
 - [Pricing 2026 — SchoolMaker](https://www.schoolmaker.com/blog/circle-so-pricing)
-- [Review 2026 — DEME Marketing](https://dememarketing.com/circle-so-review/)
 - [Review 2026 — Learning Revolution](https://www.learningrevolution.net/circle-review/)
+- [Review 2026 — Group.app](https://www.group.app/blog/circle-review/)
+
+**Substack Teams**:
+- [Group publishing tools — On Substack](https://on.substack.com/p/group-publishing-tools-on-substack)
+- [Team member roles — Substack Help](https://support.substack.com/hc/en-us/articles/360039016832-Can-my-Substack-publication-have-multiple-authors-or-contributors)
+
+**Slack**:
+- [Pricing — Official](https://slack.com/pricing)
+- [Nonprofit pricing 2026 — Zenzap](https://www.zenzap.co/blog-posts/slack-nonprofit-pricing-in-2026-what-you-actually-get-and-what-to-watch-out-for)
+- [Nonprofit discount — Slack Help](https://slack.com/help/articles/204368833-Apply-for-the-Slack-for-Nonprofits-discount)
+- [Community pricing comparison — Bettermode](https://bettermode.com/blog/slack-community-pricing)
+- [Pricing 2026 — LarkSuite](https://www.larksuite.com/en_us/blog/slack-pricing)
+
+**Platform.sh / Upsun**:
+- [Upsun pricing — Official](https://upsun.com/fixed-pricing/)
 
 **Discourse**:
 - [Pricing — Official](https://www.discourse.org/pricing)
 - [vs. Flarum vs. NodeBB 2026 — Elest.io](https://blog.elest.io/discourse-vs-flarum-vs-nodebb-which-self-hosted-forum-platform-in-2026/)
 - [PWA support — Discourse Meta](https://meta.discourse.org/t/is-pwa-feature-available-for-self-hosted/320612)
-- [Self-hosted guide — SelfhostedGuides](https://selfhostedguides.com/discourse-self-hosted-forum/)
 
 **Matrix / Element**:
 - [Element Pricing — Official](https://element.io/en/pricing)
 - [Matrix.org ecosystem](https://matrix.org/ecosystem/hosting/)
 - [MESH-API Meshtastic bridge — GitHub](https://github.com/mr-tbot/mesh-api)
-- [Meshtastic 2026 overview — Seeed Studio](https://www.seeedstudio.com/blog/2025/07/10/meshtastic-off-grid-mesh-network/)
 
 **Nextcloud Hub**:
 - [Hub features — Official](https://nextcloud.com/hub/)
 - [Hub 26 Winter release — Official](https://nextcloud.com/blog/nextcloud-hub26-winter/)
 - [Nextcloud Files — Official](https://nextcloud.com/files/)
-- [Collabora Online + Nextcloud — Official](https://www.collaboraonline.com/partners/nextcloud/)
 
 **Loomio**:
 - [Pricing — Official](https://www.loomio.com/pricing/)
-- [Subscription plans — Loomio Help](https://help.loomio.com/en/policy/subscriptions/pricing.html)
-- [Nonprofits discount — Connecting Up](https://www.connectingup.org/product/loomio-nonprofits-50-discount)
-- [Reviews 2026 — GetApp](https://www.getapp.com/collaboration-software/a/loomio/)
-
-**Slack**:
-- [Pricing — Official](https://slack.com/pricing)
-- [Nonprofit pricing 2026 — Zenzap](https://www.zenzap.co/blog-posts/slack-nonprofit-pricing-in-2026-what-you-actually-get-and-what-to-watch-out-for)
-- [Free plan limits — ViewExport](https://viewexport.com/post/slack-free-plan-limitations)
+- [Nonprofit discount — Connecting Up](https://www.connectingup.org/product/loomio-nonprofits-50-discount)
 
 **Platform comparisons and context**:
 - [Best community platforms nonprofits 2026 — Disco](https://www.disco.co/blog/best-community-platforms-for-nonprofits-2026)
-- [HubSpot pricing 2026 — MO Agency](https://www.mo.agency/blog/hubspot-pricing)
-- [Swell review 2026 — Research.com](https://research.com/software/reviews/swell)
-
-**Mutual aid and cooperative economics context**:
-- [Digital tools for mutual aid groups — Phoebe Tickell, Digital Fund](https://medium.com/digitalfund/communities-essential-guide-to-digital-tools-for-mutual-aid-groups-c1664d30b525)
-- [Cooperative Economics Alliance of NYC](https://www.ceanyc.org/)
-- [Community Seed Network](https://www.communityseednetwork.org/)
+- [Digital tools for mutual aid groups — Digital Fund / Phoebe Tickell](https://medium.com/digitalfund/communities-essential-guide-to-digital-tools-for-mutual-aid-groups-c1664d30b525)
 
 **Prior analysis documents (this project)**:
 - PHASE_6_PLATFORM_ANALYSIS_v2.md (v2, June 1, 2026 — superseded)
-- PHASE_6_DOMAIN_A_PLATFORM_ANALYSIS.md (June 2, 2026 — superseded by this document)
+- PHASE_6_PLATFORM_ANALYSIS.md (v4, June 2, 2026 — superseded by this document)
+- PHASE_6_DOMAIN_A_PLATFORM_ANALYSIS.md (superseded)
 - PHASE_6_IMPLEMENTATION_GUIDE_OPTION_A_DISCOURSE.md
 - PHASE_6_IMPLEMENTATION_GUIDE_OPTION_B_MIGHTY_NETWORKS.md
 - PHASE_6_IMPLEMENTATION_GUIDE_OPTION_C_NEXTCLOUD_MATRIX.md
+- PHASE_6_COMMUNICATION_INFRASTRUCTURE_SCOPING.md
 
 ---
 
-## Appendix A: Zone 5 Midwest Context
-
-Zone 5 (IL, MI, IA, IN, WI) characteristics that directly affect platform selection:
-
-1. **Connectivity**: Rural counties in IA and MI have broadband coverage below 60% (FCC 2024 data). Winter weather events (ice storms, blizzards) cause multi-day outages. Off-grid capability is an operational requirement for any community with rural members — not a preference.
-
-2. **Agricultural calendar**: Peak coordination occurs in narrow windows: corn planting May 1–20, soybean May 10–June 5, hay cutting June–August, winter wheat September 15–October 10, harvest October–November. Platform must support asynchronous coordination; farmers do not have time for real-time platforms during peak season.
-
-3. **Cooperative tradition**: The Midwest has the highest density of agricultural cooperatives in the US (USDA Agricultural Cooperative Statistics, 2023). Communities in this region are familiar with cooperative governance structures; Loomio's participatory decision-making tools align with this culture.
-
-4. **Device diversity**: Rural members disproportionately use mobile devices (often older Android) rather than desktop computers. Nextcloud and Element both have well-maintained Android apps (F-Droid available for both for privacy-conscious users).
-
-5. **Low-bandwidth reality**: Starlink (common in rural Zone 5) averages 25–60ms latency with variable packet loss during adverse weather. Browser-first SaaS platforms (Circle, Mighty Networks) load slowly under these conditions. Discourse's minimal JS mode and Nextcloud's sync client handle intermittent connectivity better than SaaS alternatives.
-
----
-
-## Appendix B: Excluded Platforms Summary
-
-| Platform | Category | Exclusion Reason |
-|---|---|---|
-| Swell | E-commerce / customer feedback tool | No community features; wrong product category |
-| HubSpot Community | HubSpot's own support forum (not a product) | Not a purchasable product; HubSpot products are CRM |
-| Substack Teams | Newsletter publishing workflow | No coordination features; useful as distribution channel only |
-| Platform.sh / Upsun | PaaS hosting infrastructure | No community features; potential hosting provider for A or B |
-| Lunchclub | 1:1 professional meeting matchmaker | No group features; categorically incompatible |
-| Slack (free) | Team messaging with hard limitations | 90-day history deletion; 5 GB storage; no offline; per-user cost |
-| Geneva | Social community app | Phone number required; no data export; no API; no offline |
-| Circle.so | SaaS community platform | True cost $277–$405/month; no offline; no API on entry plan |
-
----
-
-*Research confidence: 91% (upgraded from 89% in v3 based on confirmed MESH-API Matrix-Meshtastic bridge status, Nextcloud Hub 26 Winter offline improvements, and Circle.so true-cost verification). Pricing verified from official sources June 2, 2026. Feature assessments cross-checked across multiple independent reviews. Off-grid assessment based on technical architecture review. Zone 5 agricultural context from project research files and USDA cooperative data. No hands-on testing conducted; all assessments from documentation, official pricing pages, and independent reviews. Key evidence gap: Mighty Networks Growth plan "activity feeds coming soon" feature is unconfirmed in production; Growth plan features that are "coming soon" are not rated as current capabilities.*
+*Research confidence: 91%. All pricing verified from official sources June 2–3, 2026. Feature assessments cross-checked across multiple independent reviews. Off-grid assessment based on technical architecture review. Zone 5 agricultural and connectivity context from USDA cooperative statistics and FCC 2024 broadband coverage data. No hands-on platform testing conducted. Key evidence gaps: Mighty Networks AI Cohost moderation capability is new in 2026 and unverified in production for community-scale moderation; Circle Professional vs. Business tier automation boundaries are based on official documentation and may not reflect all edge cases.*
