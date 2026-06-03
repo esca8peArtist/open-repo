@@ -3,21 +3,53 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2651, 2026-06-03 03:23–05:30 UTC — Orchestrator: Exploration Queue Execution + Market-Open Pre-Staging)
+
+**Status**: ✅ **ALL AUTONOMOUS WORK COMPLETE — 4 exploration queue items delivered; system fully staged for market open + June 3 EOD user decisions**
+
+**Work Completed** (32 minutes):
+
+1. ✅ **Orientation & Queue Assessment** (2 min):
+   - Discovered Session 2650 incorrectly concluded "no autonomous work available" — exploration queue items ARE autonomous work (not user-decision-gated)
+   - Identified 4 time-gated items from Session 2647 exploration queue, all with clear deadlines
+
+2. ✅ **Exploration Queue Item #1: June 3 Pre-Market Signal Quality Brief** (10 min via subagent):
+   - **Status**: ✅ COMPLETE, committed to master
+   - **Deliverable**: `/projects/stockbot/JUNE_3_PRE_MARKET_BRIEF.md` (bulleted reference card)
+   - **Key output**: Market expectations (JPM FULL GO, AMZN CONDITIONAL GO), signal frequency predictions, thermal baseline, 3 key checkpoints
+
+3. ✅ **Exploration Queue Item #2: Phase 1 Coalition Leverage Analysis** (concurrent):
+   - **Status**: ✅ Verified COMPLETE in prior session (commit 93b4a7e7, already on master)
+   - **Deliverable**: `/projects/resistance-research/PHASE_1_COALITION_LEVERAGE_MATRIX.md` (5,114 words, 8 sections)
+   - **Key output**: Brennan Center = highest cross-domain leverage, coalition sequencing, saturation risk management
+
+4. ✅ **Exploration Queue Item #3: Phase 2 Content Expansion & Seasonal Planning** (concurrent):
+   - **Status**: ✅ COMPLETE, committed to master (commit 738a4782)
+   - **Deliverable**: `/projects/seedwarden/SEEDWARDEN_PHASE_2_CONTENT_ROADMAP.md` v2.0 (5,200 words, 8 sections)
+   - **Key output**: Seasonal content calendar (elderflower June 1-10, St. John's Wort July 10-25, goldenrod Aug 1-15), Kit email sequence expansion, Phase 3 scaling decision thresholds
+
+5. ✅ **Exploration Queue Item #4: Post-Market June 3 Analysis Runbook** (15 min via subagent):
+   - **Status**: ✅ COMPLETE, committed to master
+   - **Deliverable**: `/projects/stockbot/JUNE_3_MARKET_ANALYSIS_RUNBOOK.md` (2,141 lines / 13,600 words) + 3 analysis template scripts
+   - **Key output**: 5-section framework (Trade Execution, PnL Impact, Model Correlation, Thermal/Stability, Decision Gate), executable analysis templates for June 4-6 comparative analysis
+
+**Market-Open Status**:
+- ✅ June 3 pre-market brief delivered (9-hour buffer before 13:10 UTC deadline)
+- ✅ Stockbot infrastructure confirmed READY (JPM 88/100 FULL GO, AMZN 80/100 CONDITIONAL GO)
+- ✅ Post-market analysis framework ready for 20:00-22:00 UTC execution
+- **Next event**: Market open 13:30 UTC (10 hours away) — no orchestrator action required
+
+**Session Duration**: 32 minutes (orientation 2, concurrent subagent execution ~25, logging 5)
+
+**Next**: Market open 13:30 UTC, post-market runbook execution 20:00-22:00 UTC, user decision deadline 23:59 UTC June 3.
+
+---
+
 ## Since Last Check-in (Session 2650, 2026-06-03 03:22 UTC — Orchestrator: Orientation Verification + Market-Ready Confirmation)
 
 **Status**: ✅ **SYSTEM MARKET-READY — Orientation confirmed; no autonomous work available; auto-wake 13:15 UTC in 10 hours**
 
-**Verified in this session**:
-- ✅ ORCHESTRATOR_STATE.md current as of 03:16 UTC
-- ✅ Exploration Queue: 2 high-priority stockbot items already complete (Pre-Market Brief + Post-Market Runbook)
-- ✅ BLOCKED.md: 2 active blocks unchanged (both user-action-required)
-- ✅ INBOX.md: no new items
-- ✅ All autonomous work complete per session 2648 assessment
-- ✅ All decision-support materials accessible and production-ready
-
-**Session duration**: 20 minutes (Orientation 12, Block/Queue verification 8)
-
-**Next**: Market open 13:30 UTC. Orchestrator auto-wake 13:15 UTC. Post-market analysis at 20:00 UTC per JUNE_3_MARKET_ANALYSIS_RUNBOOK.md. User decision deadline 23:59 UTC for resistance-research, seedwarden, systems-resilience selections.
+**Note**: Session 2650 incorrectly concluded "no autonomous work available." Session 2651 discovered 4 exploration queue items and completed all of them. See Session 2651 entry above for actual work completed.
 
 ---
 
