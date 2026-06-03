@@ -1,28 +1,70 @@
 # Check-In Report
 
-## Since Last Check-in (Session 2663 — 2026-06-03 07:45–08:00 UTC) — Orchestrator Standby Confirmed: Block Verified Active, No Autonomous Work Available
+## Since Last Check-in (Session 2664 — 2026-06-03 07:45–09:00 UTC) — Autonomous Distribution Prep Executed: Domains 57 & 54 Staging-Ready
 
 ### What Was Accomplished
 
-✅ **Block Verification** (2 min): Alpaca auth blocker CONFIRMED STILL ACTIVE (SSH verify returned 2 auth failures in Docker logs). Market opens in ~5h 20min (13:30 UTC). User action required before trading can proceed.
+✅ **Critical Block Status Verified** (3 min): Alpaca auth blocker CONFIRMED STILL ACTIVE (2 Docker auth failures). Market opens in 4h 30min (13:30 UTC). User credential fix required before trading can proceed.
 
-✅ **Autonomy Assessment Reconfirmed**: No autonomous work available today. All projects blocked on external user actions or await same-day decisions (deadline 23:59 UTC). Exploration Queue items 53-54 scheduled June 8-14 (future deadlines).
+✅ **Autonomous Work Identified** (20 min parallel agent assessment):
+- Resistance-research: 7-10 hours distribution prep available for Domains 57, 48/54 (no user decision needed)
+- Seedwarden: Post-gate infrastructure fully specified; no autonomous gaps before user gates
+
+✅ **Resistance-Research Distribution Prep EXECUTED** (40 min):
+- **Domain 57**: Gist checklist + 12-org contact framework created; staging-ready for Aug 10 distribution
+- **Domain 54**: Gist checklist + 27-org contact framework created; staging-ready for Aug 1-15 distribution
+- **Domain 48**: NOT needed (Domain 54 pre-check passed; pre-check verified all required topics present)
+- **Commits**: `a93298ef`, `ad3976ba` (both to master)
 
 ### Status
 
-🔴 **CRITICAL BLOCKER STILL ACTIVE**: Alpaca auth credentials misconfigured on Jetson. Both ALPACA_API_KEY_ID and ALPACA_API_KEY set to same value. Fix required before 13:30 UTC market open.
+🔴 **CRITICAL BLOCKER STILL ACTIVE**: Alpaca auth credentials misconfigured on Jetson (ALPACA_API_KEY_ID == ALPACA_API_KEY). Fix required before 13:30 UTC market open. Impact: zero trading possible without user action.
 
-**NO AUTONOMOUS WORK**: Orchestrator standing by for user input.
+✅ **AUTONOMOUS WORK IN PROGRESS**: Resistance-research Domains 57/54 distribution prep complete; staging-ready for Gist creation + August sends.
 
 ### Items Needing User Input
 
-**🔴 CRITICAL (Before 13:30 UTC market open — ~5h 20min remaining)**:
-1. **Alpaca Credentials Fix** — Verify /opt/stockbot/.env has different values for ALPACA_API_KEY_ID (key ID) and ALPACA_API_KEY (secret). Restart Docker. Verify: `docker logs stockbot --tail=20 | grep insufficient` returns 0.
+**🔴 CRITICAL (Before 13:30 UTC market open — 4h 30min remaining)**:
+1. **Alpaca Credentials Fix on Jetson** — MUST COMPLETE BEFORE MARKET OPEN
+   - SSH to Jetson (100.120.18.84)
+   - Verify `/opt/stockbot/.env`: ALPACA_API_KEY_ID (key identifier) ≠ ALPACA_API_KEY (secret key)
+   - Current state: Both set to same value `PKM03F5PK1LPV8LSBIP0` (WRONG)
+   - **Action**: Update .env with correct key/secret pair from Alpaca dashboard
+   - Restart Docker: `docker restart stockbot`
+   - **Verify**: `docker logs stockbot --tail=20 | grep insufficient` should return 0 (no auth failures)
+   - **Impact if fixed**: Trading resumes at 13:30 UTC; post-market analysis begins 20:00 UTC
+   - **Impact if NOT fixed**: Zero trading all day; session blocked until next EOD attempt
 
-**Important (Deadline 23:59 UTC today — ~16h remaining)**:
-2. **Resistance-Research Domain 59 Distribution** (~30-45 min)
-3. **Seedwarden Track A/B Launch Decision** (~45-60 min)
-4. **Cybersecurity-Hardening Phase 1 Continuation** (Windows restart needed)
+**Important (Deadline 23:59 UTC today — 16h remaining)**:
+
+2. **Resistance-Research Phase 2 Decisions** (2h total, 4 decisions)
+   - **a) Domain 59 Distribution Send** (~30-45 min)
+     - Urgency: HIGHEST — Senate Finance CTC markup window closes June 30 (26 days, 1 in 3 US children affected)
+     - Status: Gist live, 5 email templates ready, send sequence documented
+     - Action: Fill `[Your name]` and `[Your contact information]` in templates; send to CBPP, ITEP, NWLC, MomsRising, AFL-CIO
+     - Timeline: June 2-3 window (recommend today before 18:00 UTC)
+   - **b) Domain 57 Path Decision** (Path A June 20 ICC hook vs. Path B August 10 UNGA)
+     - Status: Orchestrator completed prep (Gist checklist + 12-org contact framework ready)
+     - Action: Choose path; orchestrator will execute Gist creation + sends per schedule
+   - **c) Domain 54/48 Approval** (pre-check passed; approval to activate distribution)
+     - Status: Domain 54 research confirmed complete (7.4K words, 46 cites, all 3 topics present); Domain 48 research NOT needed
+     - Action: Approve Domain 54 distribution activation; orchestrator will execute Gist + 5-tier sends Aug 1-25
+   - **d) Domain 51 + Domains 49/50 Activation** (research activation)
+     - Status: Runbooks complete, sources confirmed, research-ready
+     - Action: Approve activation per timeline; orchestrator will research during July-August windows
+     - Dependency gate: Domain 50 August 1 ballot deadline governs sequencing
+
+3. **Seedwarden Track A/B Launch Decision** (~1.5-4 hrs execution if proceeding)
+   - **Track B** (recommended, no blockers): Gate 1 infrastructure verified; 5 user gates required (20 min – 2 hrs each, total ~3.5-4 hrs to execute)
+   - **Track A** (optional supplement): 3 tag corrections + Etsy verification (~30 min if proceeding)
+   - Status: All infrastructure staging-ready; autonomous pre-launch sequence ready; Phase 2 content roadmap ready
+   - Timeline: User gates + orchestrator execution can begin immediately once approved
+   - Decision: Approve Track B launch? (Track A is optional add-on)
+
+4. **Cybersecurity-Hardening Phase 1 Continuation** (Windows restart + 1.5-2 hrs remaining steps)
+   - Blocker: VeraCrypt pre-boot test needs Windows restart (currently paused mid-Phase-1)
+   - Status: Steps 1.4-1.7 (Ente Auth, Bitwarden, data broker opt-outs, iPhone passcode) ready post-restart
+   - Timeline: Anytime today; 1.5-2 hrs to complete remaining Phase 1 steps
 
 ---
 
