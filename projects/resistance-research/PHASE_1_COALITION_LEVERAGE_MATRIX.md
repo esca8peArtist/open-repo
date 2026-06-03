@@ -1,233 +1,241 @@
 ---
 title: "Phase 1 Campaign Coalition Leverage Matrix"
-subtitle: "Multiplicative Advocacy Windows and Cross-Sector Coordination Opportunities — Five Highest-Leverage Domains"
+subtitle: "Multiplicative Advocacy Windows and Cross-Sector Coordination Framework — Five Highest-Leverage Domains"
 created: "2026-06-03"
 status: "active-planning"
 applicable_domains: [39, 56, 58, 59, 37]
-phase: "Phase 1 Distribution — June-September 2026"
-decision_gate: "Day 7-14 checkpoint (June 8-15) after Domain 39 launch"
-word_count: ~2,500
+phase: "Phase 1 Distribution — June–September 2026"
+decision_gate: "Day 7-14 checkpoint (June 8–15) after Domain 39 launch"
 ---
 
 # Phase 1 Campaign Coalition Leverage Matrix
 
-**Prepared**: June 3, 2026  
-**Purpose**: Identify multiplicative advocacy windows where coalition coordination compounds impact beyond individual domain distribution  
-**Audience**: Campaign orchestration, Phase 1 execution decision-making, Phase 2 sequencing  
+**Prepared**: June 3, 2026
+**Purpose**: Map interconnections between Phase 1's five highest-leverage domains; identify multiplicative advocacy windows where cross-sector coalition coordination compounds impact beyond individual domain distribution
+**Audience**: Campaign orchestration, Phase 1 execution decision-making, Phase 2 sequencing
 **Decision dependency**: Domain 39 Day 7-14 engagement metrics gate Domain 56 sequencing and coalition pre-commitment asks
 
 ---
 
-## Section 1: Executive Summary — Five Coalition Leverage Points
+## Section 1: Domain Interconnection Map
 
-Phase 1's five highest-leverage domains are not five parallel advocacy campaigns. They are a mutually reinforcing system in which each domain's distribution strengthens the reception environment for the others, and in which cross-sector coalition coordination multiplies engagement beyond what any domain achieves independently.
+Phase 1's five domains are not five parallel campaigns. Each domain pair shares specific constituencies, policy levers, and advocacy organizations whose overlap creates coordination leverage greater than either domain reaches independently.
 
-The five leverage points:
+**Domain 39 (Healthcare) ↔ Domain 59 (Economic Precarity)**
+Shared constituencies: AFL-CIO, SEIU, Center on Budget and Policy Priorities, National Women's Law Center, MomsRising. Shared policy lever: the Senate Finance Committee CTC markup window (June 30 deadline), which Domain 39 reaches via Medicaid-voter-registration nexus and Domain 59 reaches via child poverty-civic participation pathway. The Oregon Medicaid RCT (7% turnout increase from coverage) and Domain 59's 42-point income-based turnout gap are not independent findings — they describe the same causal mechanism (economic security as democratic participation infrastructure) from different empirical angles. Organizations receiving both documents arrive at the same coalition infrastructure with compounding persuasion.
 
-**1. Healthcare is the gateway frame.** Domain 39's empirical foundation — the Oregon Medicaid randomized controlled trial showing a 7% turnout increase from healthcare coverage — provides every subsequent domain with causal infrastructure rather than correlation. Organizations receiving Domain 39 first arrive at Domains 56, 59, and 58 already holding the democratic-design framing. The gateway effect is measurable: organizations that engage with a foundational frame document are 30-45% more likely to share subsequent documents from the same research infrastructure.
+**Domain 39 (Healthcare) ↔ Domain 58 (Tribal Sovereignty)**
+Shared constituencies: NCAI, tribal health organizations, IHS advocacy networks. Shared policy lever: IHS trust obligation funding — the same Medicaid-civic participation pathway Domain 39 documents through the Oregon RCT operates through IHS for 574 sovereign democracies. If Trump v. Barbara strips tribal birthright citizenship, IHS eligibility collapses simultaneously with the voting rights argument, making Domain 39's healthcare-democracy infrastructure frame immediately applicable to tribal members. Organizations receiving Domain 39 before Trump v. Barbara can apply its five-pathway argument to tribal healthcare without needing a separate briefing.
 
-**2. Economic precarity and healthcare share the same organizational target list.** Domains 39 and 59 both target labor unions, maternal justice networks, and racial justice organizations. Simultaneous distribution — or Domain 59 distribution within two weeks of Domain 39 — creates a compounding effect in organizational inboxes: two documents from the same research infrastructure, each reinforcing the other's democratic-design argument, produce higher second-document open rates (estimated 40-60% higher engagement on the second document among organizations that opened the first).
+**Domain 56 (Civil Service) ↔ Domain 37 (Executive Power)**
+Shared constituencies: Brennan Center for Justice, Democracy Forward, Partnership for Public Service, AFGE, NTEU. Shared policy lever: the DOJ Voting Section reduction from 30 to 6 career attorneys is simultaneously a civil service politicization fact (Domain 56) and an election protection fact (Domain 37). Voting rights enforcement actions fell from 22 in 2024 to 1 in 2025 — not because the administration changed policy, but because Schedule Policy/Career eliminated the career infrastructure that enforced policy regardless of political direction. Domain 56 distributed to election protection networks converts a labor issue into an election integrity issue: Partnership for Public Service's congressional relationships access committee staff that Brennan Center cannot reach directly; Brennan Center's litigation infrastructure engages federal courts that Partnership for Public Service cannot.
 
-**3. Civil service protection is the operational infrastructure for everything else.** Domain 56 is not a standalone advocacy target. It is the institutional architecture through which every other advocacy effort operates — career DOJ Voting Section attorneys file voting rights cases, career HHS staff implement Medicaid with discretionary choices that affect Domain 39's impact, career BIA staff administer tribal trust obligations that Domain 58 documents. Distributing Domain 56 to election protection networks and voting rights organizations in July, after Domain 39 engagement has established relationship infrastructure, positions those organizations to understand civil service protection as an election integrity concern rather than a labor relations concern.
+**Domain 58 (Tribal Sovereignty) ↔ Domain 37 (Executive Power)**
+Shared constituencies: NAACP LDF, Lawyers' Committee for Civil Rights, Campaign Legal Center. Shared policy lever: the May 18, 2026 GVR in Turtle Mountain Band of Chippewa Indians v. Howe and the companion GVR in Board of Election Commissioners v. NAACP are decided the same day, confirming that post-Callais hostile-intent doctrine is eroding tribal and Black voting rights through the same Fifth and Eighth Circuit cascade. The Montana SB 490 state constitutional model — injunction blocking election-day registration elimination that disproportionately suppressed Native turnout — is directly applicable to non-tribal voting rights contexts facing the same post-Callais federal VRA Section 2 gutting.
 
-**4. Tribal sovereignty is the highest-urgency rapid-response opportunity.** The Trump v. Barbara ruling (expected June-July 2026) creates a forcing event that no other Phase 1 domain has: a Supreme Court decision with a 48-72 hour response window in which organizations with pre-positioned analysis can frame the ruling before the ambient news cycle does. Pre-distributing Domain 58 to tribal sovereignty organizations, voting rights networks, and Native American civil rights infrastructure before the ruling drops is the highest-ROI single action in Phase 1 — the ruling will generate engagement regardless; the question is whether the campaign's framing is in organizational hands before or after the ruling issues.
+**Domain 59 (Economic Precarity) ↔ Domain 37 (Executive Power)**
+Shared constituency: reproductive justice organizations (NWLC, National Network of Abortion Funds, Planned Parenthood Action Fund). Shared policy lever: economic autonomy as democratic autonomy. Domain 59's time-poverty architecture — single mothers managing $1,230/month childcare costs cannot participate civically at the same rate as families without that burden — connects directly to Domain 37's election protection argument: the demographic most systematically excluded from civic participation is also the demographic most targeted by the economic policies Domain 59 documents.
 
-**5. Election protection is the Phase 1 infrastructure, not a domain in isolation.** Domain 37 is the roof that covers all other advocacy. Every other domain's advocacy — healthcare organizing, economic justice mobilization, tribal sovereignty litigation, civil service protection legislation — serves the goal of maintaining the electoral infrastructure through which democratic change operates. Sequencing Domain 37 last, in September, positions it as the culminating argument: after organizations have engaged with healthcare, economic, tribal, and civil service domains, election protection lands as the synthesis rather than the introduction.
-
-**Recommended sequencing**: Domain 39 (June 1, active) → Domain 59 (June 3, parallel) → Domain 58 (pre-position June 15, rapid-response trigger at ruling) → Domain 56 (July 1, dependent on Domain 39 Day 7-14 signal) → Domain 37 (September, pre-election infrastructure frame).
-
----
-
-## Section 2: Domain 39 — Healthcare Access as Democratic Infrastructure
-
-**Primary constituencies**: Healthcare advocacy organizations, reproductive rights networks, maternal justice coalitions, disability rights organizations, community health centers, state health departments, Senate Finance and House Energy and Commerce Committee staff.
-
-**The policy leverage architecture has three windows.**
-
-The June 1, 2026 HHS interim final rule on OBBBA Medicaid work requirement implementation is the immediate window — not a comment period (the OBBBA exempts this rule from APA notice-and-comment) but a framing opportunity. Organizations with Domain 39 before the rule drops can characterize its publication as a democratic participation event — the moment the federal government administratively degraded voter registration infrastructure for 11.8 million projected Medicaid coverage losers — rather than merely a health policy change. The January 1, 2027 work requirement effective date is the medium-term window: the 7-month period between rule issuance and implementation is the state advocacy window, in which states can implement less stringently than federal standards require, and Domain 39's democratic infrastructure argument gives state health commissioners and advocacy organizations the language to argue for maximum discretion on exemptions and enrollment procedures. The Q1 2027 litigation window — APA challenges, NVRA enforcement actions, and Medicaid eligibility lawsuits — is the long-term window in which the democratic participation empirical record (the Oregon Medicaid RCT, the APSR hospital closure study) enters the evidentiary record.
-
-**Coalition bridges with highest multiplier effect:**
-
-Reproductive rights organizations share NVRA enforcement infrastructure with healthcare advocates — Planned Parenthood Federation of America operates federally qualified health centers that are mandatory NVRA voter registration sites under Section 7, and the OBBBA's enrollment cuts mechanically degrade that registration infrastructure at the same locations where reproductive healthcare is delivered. This is not a messaging alignment; it is shared organizational infrastructure. Distributing Domain 39 to PPFA with explicit framing around the NVRA Section 7 implications converts a healthcare organization into a voter registration infrastructure defense organization.
-
-Disability justice organizations — specifically the National Disability Rights Network and Protection and Advocacy programs — share Domain 39's guardianship-based voting rights stripping argument. The PAVA program was zeroed out in the FY2026 presidential budget. Distributing Domain 39 to disability rights networks positions them as election protection stakeholders, not merely healthcare stakeholders.
-
-Labor organizations, specifically the American Federation of Teachers and SEIU Healthcare, bring the healthcare worker organizing angle: hospital closures eliminate both patient access and healthcare worker union jobs, making the rural hospital closure-voter turnout finding (18 closures or conversions in 2025) directly relevant to labor's core organizing targets.
-
-**Recommended distribution partners for initial June 1 wave**: Planned Parenthood Federation of America (NVRA infrastructure angle), National Association of Perinatal Social Workers (NAPSA — maternal mortality pathway), American Federation of Teachers (labor-healthcare intersection), National Disability Rights Network (guardianship and PAVA defunding), state Medicaid directors in non-expansion states (implementation discretion argument).
+**Domain 56 (Civil Service) ↔ Domain 39 (Healthcare)**
+Shared policy lever: NVRA Section 7 compliance at Medicaid enrollment offices. Career HHS staff's discretionary choices on work requirement exemptions are voter registration infrastructure decisions, because Medicaid enrollment offices are mandatory NVRA voter registration sites. Schedule Policy/Career reclassification of career HHS staff is an NVRA compliance risk — a three-domain argument spanning civil service protection, healthcare access, and election protection that no single-domain distribution creates.
 
 ---
 
-## Section 3: Domain 56 — Civil Service Politicization
+## Section 2: Constituency Alignment Matrix
 
-**Primary constituencies**: Federal employee unions (AFGE, NTEU, AFSCME), good-government organizations (Partnership for Public Service, CREW), congressional oversight staff (Senate HSGAC, House Oversight), election protection networks (Brennan Center, Democracy Forward, state AG offices).
+Seven key constituencies and their domain presence. Constituencies present in three or more domains have multiplicative leverage — a single organizational relationship, once activated, generates engagement across multiple distribution tracks.
 
-**The policy leverage architecture has three windows.**
+| Constituency | D39 | D56 | D58 | D59 | D37 | Coverage | Leverage Class |
+|---|---|---|---|---|---|---|---|
+| Law schools / election law clinics | X | X | X | — | X | 4/5 | HIGH MULTIPLIER |
+| Immigration advocates | X | — | — | X | X | 3/5 | MULTIPLIER |
+| Civil rights organizations (NAACP LDF, Lawyers' Committee) | X | — | X | — | X | 3/5 | MULTIPLIER |
+| Academic / research institutions | X | X | X | X | X | 5/5 | HIGHEST MULTIPLIER |
+| Faith-based organizations | X | — | X | X | — | 3/5 | MULTIPLIER |
+| Labor unions (AFGE, AFL-CIO, SEIU, NTEU) | X | X | — | X | — | 4/5 | HIGH MULTIPLIER |
+| Mutual aid / community organizing | X | — | X | X | X | 4/5 | HIGH MULTIPLIER |
 
-The June 1-30, 2026 legislative advocacy window is defined by H.R. 492 / S. 134 (Saving the Civil Service Act), currently in committee during the June work period. Congressional staff need analysis documents before the summer recess pauses committee scheduling — Domain 56's democratic-design argument (merit system as 143-year democratic infrastructure statute, not employee rights framework) is the analytical contribution missing from the AFGE and Partnership for Public Service briefings currently underway. The September-November agency-specific rollout window covers the period when PEER v. Trump (N.D. Cal.) ruling is expected — a June-August ruling on the Schedule Policy/Career rule's validity creates a rapid-response need that organizations with Domain 56 in hand can meet. The March 2027 MSPB appeal backlog crisis (11,000+ pending appeals at lowest staffing in years) creates a medium-term accountability window for civil service protection advocacy.
+**Domain 39 constituency breakdown** (27 organizations across four tiers):
+Tier 1 healthcare advocacy: Georgetown Center for Children and Families (childhealth@georgetown.edu), National Health Law Program (info@healthlaw.org), Center on Budget and Policy Priorities (cbpp@cbpp.org), KFF. Tier 2 democracy organizations: Brennan Center for Justice (brennancenter@nyu.edu), Protect Democracy (protectdemocracy.org/contact), Institute for Responsive Government. Tier 3 reproductive/disability justice: Black Mamas Matter Alliance (blackmamasmatter.org/contact), National Disability Rights Network (ndrn.org/contact), Disability Rights Advocates (dralegal.org/contact). Tier 4: Senate Finance Committee Democratic staff, House Energy and Commerce Democratic staff, state Medicaid directors.
 
-**Coalition bridges with highest multiplier effect:**
+**Domain 56 constituency breakdown** (13 organizations across three tiers):
+Tier 1 (Wave 1, sent May 28): Partnership for Public Service (media@ourpublicservice.org), AFGE (info@afge.org), Government Accountability Project (info@whistleblower.org), NTEU (nteu@nteu.org). Tier 2 (Wave 2, June 15–20): Protect Democracy, National Academy of Public Administration (napawash.org), CREW, Volcker Alliance (volcker@volckeralliance.org), Center for Effective Government. Tier 3 (Wave 3, June 20–30): Federal Workforce Caucus members (via AFGE), Senate HSGAC Democratic staff, House Oversight Democratic staff.
 
-The labor-election protection bridge is Domain 56's unique cross-sector value. AFGE, NTEU, and AFSCME are categorically focused on member employment protection; they have not systematically framed civil service protection as election infrastructure protection. Domain 56's core argument — that the DOJ Voting Section's loss of 70% of career staff (from ~30 attorneys to ~6) directly reduced voting rights enforcement from 22 federal actions in 2024 to 1 in 2025 — converts a labor issue into an election protection issue. Organizations like the Brennan Center for Justice and Democracy Forward, who focus exclusively on election protection, have significant incentive to advocate for civil service protections they currently view as outside their domain once they understand the enforcement dependency.
+**Domain 58 constituency breakdown** (5 primary organizations, verified June 1, 2026):
+NARF (tscp@narf.org / info@narf.org — John Echohawk, Executive Director; Morgan Saunders, DC Managing Attorney), NCAI (policy@ncai.org / mbishop@ncai.org — Larry Wright Jr., Executive Director; Meghan Bishop, Policy Director), Native Organizers Alliance (judith@nativeorganizing.org — Judith Le Blanc, Executive Director), Brennan Center for Justice (Wendy Weiser, VP for Democracy; media contact kennardl@brennan.law.nyu.edu), Campaign Legal Center (campaignlegal.org contact form — Danielle Lang, VP Voting Rights; Alice Huling and Anna Baldwin, Directors of Voting Rights Litigation).
 
-The transparency-accountability bridge: CREW and the Project on Government Oversight (POGO) track Schedule Policy/Career reclassification and MSPB backlog as accountability failures. Domain 56's democratic infrastructure framing converts their accountability work into democratic design advocacy, expanding their natural coalition from good-government audiences to democratic reform audiences.
+**Domain 59 constituency breakdown** (5 primary organizations, sent June 2–3, 2026):
+CBPP (cbpp@cbpp.org), ITEP (itep@itep.org), NWLC (info@nwlc.org), MomsRising (info@momsrising.org), AFL-CIO (feedback@aflcio.org). Gist URL live: https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba
 
-**Cross-domain leverage**: Domain 56 directly supports Domain 37. Career election security professionals at CISA, career Voting Section attorneys at DOJ Civil Rights, and career officials at the Election Assistance Commission are the institutional backbone of federal election protection. Their at-will reclassification under Schedule Policy/Career removes the enforcement capacity that Domain 37's legal victories require to be operationally meaningful. This argument — civil service protection is election protection — is the message that brings election integrity networks into the civil service advocacy coalition.
+**Domain 37 constituency breakdown** (16 organizations across three tiers):
+Tier 1: Brennan Center (Wendy Weiser; brennancenter@nyu.edu), Democracy Docket (Marc Elias; democracydocket.com/contact), Protect Democracy (Ian Bassin), Lawyers' Committee VRP (vrp@lawyerscommittee.org), ACLU Voting Rights (voting@aclu.org), States United Democracy Center (Joanna Lydgate; statesunited.org/contact), Common Cause. Tier 2: State ACLU affiliates in AZ, GA, MI, PA, WI; state LWV chapters; election law clinics at Georgia State, Arizona State, Wayne State, Temple, UNC law schools; DAGA.
 
-**Recommended distribution partners**: Partnership for Public Service (congressional briefing infrastructure), AFGE (member-specific reclassification tracking), Brennan Center (election protection angle), CREW (accountability framing), Senate HSGAC oversight staff (H.R. 492/S. 134 legislative window).
-
----
-
-## Section 4: Domain 59 — Economic Precarity and Civic Participation
-
-**Primary constituencies**: Labor unions (AFL-CIO, SEIU, UAW), economic justice research organizations (Economic Policy Institute, Center on Budget and Policy Priorities, Urban Institute), racial justice organizations (NAACP, UnidosUS), single-parent advocacy networks, housing justice coalitions.
-
-**The policy leverage architecture has two immediate windows.**
-
-The Senate Finance Committee Child Tax Credit markup window is open now, with a June 30 deadline for the current legislative calendar. The OBBBA's CTC now pays zero average to the poorest fifth of families despite a nominal $2,200 maximum — a regressive design that Domain 59's democratic participation framing reframes as an intentional democratic exclusion mechanism: families without CTC resources face higher time poverty, lower civic participation capacity, and higher residential instability (which severs voter registration). The 30+ state legislatures currently considering child credit legislation provide the parallel state-level window: state-level CTC advocacy targeting Democratic-controlled chambers in states where legislative majority exists can deliver immediate economic floor improvements that compound into civic participation improvements.
-
-**Coalition bridges with highest multiplier effect:**
-
-The reproductive justice bridge operates through economic dependency. Reproductive rights organizations' core argument — that bodily autonomy requires economic autonomy — maps directly onto Domain 59's time-poverty architecture: a single mother managing childcare costs averaging $1,230/month and medical debt averages is not making free reproductive choices any more than she is making free civic participation choices. Organizations like the National Network of Abortion Funds and Planned Parenthood Action Fund, who focus on economic barriers to reproductive access, are natural co-distributors for Domain 59's democratic participation framing.
-
-The housing justice bridge is operationally concrete. Domain 59 documents the Slee-Desmond (2023) finding that eviction produces lasting civic penalties — residents who experience or witness eviction view government as a disciplinary force rather than a democratic institution, with behavioral consequences that reduce civic participation over time. The PNAS (2024) housing voucher experiment found induced residential mobility decreased voter participation among low-income Black and Hispanic adults for nearly two decades. Housing justice organizations (National Low Income Housing Coalition, Local Initiatives Support Corporation) have not systematically incorporated these civic participation findings into their advocacy. Domain 59 gives them that infrastructure.
-
-**Joint advocacy opportunity — Economic Autonomy Coalition**: A joint Child Tax Credit + reproductive justice + housing stability campaign, coordinated across CBPP, NWLC, and NLIHC, positions all three as components of a single democratic participation argument: economic autonomy is voting autonomy. Estimated engagement multiplier: 40-60% higher than individual domain campaigns, based on existing coalition co-distribution evidence from the Medicaid expansion state ballot initiative campaigns.
-
-**Recommended distribution partners for June 3 parallel launch**: Economic Policy Institute (CTC markup analysis), Center on Budget and Policy Priorities (state-level CTC legislative window), National Women's Law Center (single-parent economic autonomy angle), National Low Income Housing Coalition (housing-civic participation bridge), AFL-CIO (minimum wage and multi-job worker time poverty).
+**Constituencies in 3+ domains (multiplicative leverage)**:
+- Academic and research institutions: present in all five domains. EPI, CBPP, and Georgetown CCF together cover economic, healthcare, and civil service analysis.
+- Labor unions: present in D39 (AFT, SEIU Healthcare), D56 (AFGE, NTEU), D59 (AFL-CIO). SEIU is the single organization present in both healthcare and labor organizing tracks — SEIU Healthcare's engagement with Domain 39's hospital closure argument and SEIU's labor wing's engagement with Domain 59's wage analysis makes SEIU the highest-leverage single organizational contact in Phase 1.
+- Civil rights organizations: present in D39 (NDRN), D58 (NAACP LDF via companion GVR), D37 (Lawyers' Committee, ACLU). NAACP LDF is explicitly working the same post-Callais doctrine in both tribal (Turtle Mountain GVR) and non-tribal (Board of Election Commissioners v. NAACP Mississippi GVR) contexts — making them the highest-leverage civil rights contact across domains 58 and 37 simultaneously.
+- Brennan Center: appears in D39 (Tier 2), D56 (Tier 2), D58 (primary verified contact), D37 (Tier 1). The single most cross-present organization in Phase 1. Engagement from Brennan Center on any domain creates reception infrastructure for every other domain.
 
 ---
 
-## Section 5: Domain 58 — Tribal Sovereignty
+## Section 3: Policy Window Sequencing
 
-**Primary constituencies**: Tribal nations and their Washington-based offices, National Congress of American Indians (NCAI), Native American Rights Fund (NARF), tribal sovereignty advocates, tribal health organizations, voting rights organizations engaged in post-Callais doctrine-building.
+Time-critical advocacy windows ranked by urgency, with sequencing rationale to prevent advocacy fatigue.
 
-**The policy leverage architecture is ruling-contingent but with a pre-ruling phase.**
+**Window 1 — Domain 39: HHS Rule (June 1, completed)**
+The OBBBA Medicaid work requirement interim final rule dropped June 1 with no public comment period. Domain 39 was distributed June 1 to position organizations for discretionary implementation advocacy, state-level flexibility arguments, and pre-litigation submissions. This window produced the campaign's initial engagement data — the June 8–15 Day 7-14 checkpoint reads this signal.
 
-The Trump v. Barbara ruling (expected June-July 2026, approximately 90% probability before June 30) is the primary forcing event. The Solicitor General's argument — that children of tribal Indians are "not birthright citizens" — reopens a question Congress settled in the Indian Citizenship Act of 1924. A ruling against tribal citizenship would simultaneously: strip voting rights from tribal members who lose citizenship status, eliminate IHS healthcare eligibility (compounding Domain 39's healthcare-civic participation pathway), and convert ISDEAA self-determination compacts from governmental operations to alien-operated programs — each of which independently constitutes a democratic infrastructure crisis. Pre-distribution of Domain 58 to tribal sovereignty organizations, voting rights networks, and congressional oversight staff before the ruling drops positions those organizations to respond in the 48-72 hour framing window. The Montana SB 490 injunction (May 11, 2026 — blocking election-day registration elimination that disproportionately suppressed Native turnout) provides the immediate post-Callais model: state constitutional challenges to voting access barriers survive where federal VRA Section 2 enforcement has been gutted.
+**Window 2 — Domain 59: Senate Finance CTC Markup (June 30 deadline)**
+Senate Finance reconciliation draft text addresses CTC provisions. The OBBBA's $2,200 maximum CTC delivers $0 average to the poorest fifth of families — the amendment window to add bottom-bracket refundability closes when the bill leaves committee. Domain 59 was distributed June 2–3 specifically for this window. Primary contacts CBPP and ITEP have the congressional staff relationships to influence committee text. This window closes June 30 regardless of Domain 39 engagement metrics.
 
-**Coalition bridges with highest multiplier effect:**
+**Window 3 — Domain 56: H.R. 492 / S. 134 Legislative Window (June 1–30, ongoing)**
+The Saving the Civil Service Act (H.R. 492 / S. 134) is in committee during the June work period. Congressional staff need analysis documents before the summer recess (July–August) pauses committee scheduling. Domain 56 Wave 1 launched May 28; Wave 2 targets June 15–20 and Wave 3 targets June 20–30 specifically for the legislative window. This window has a soft close with summer recess but a hard close if PEER v. Trump (N.D. Cal.) rules favorably before the recess.
 
-The voting rights bridge is architecturally significant: the May 18, 2026 GVR in Turtle Mountain Band of Chippewa Indians v. Howe (remanded to the Eighth Circuit under post-Callais hostile-intent standards, worse than cert denial) and the companion GVR in Board of Election Commissioners v. NAACP (Mississippi, same day) confirm a multi-circuit erosion cascade underway simultaneously across the Fifth and Eighth Circuits. Voting rights organizations focused on Black and Latino voters — who are also operating in post-Callais doctrine — have direct parallel interests in the tribal voting rights litigation strategy that the Montana state constitutional model represents.
+**Window 4 — Domain 58: Trump v. Barbara Ruling (June–July expected)**
+The highest-urgency rapid-response window in Phase 1. Pre-distribution to five verified contacts (NARF, NCAI, NOA, Brennan Center, Campaign Legal Center) has been completed. When the ruling drops — estimated 90% probability before June 30 — a 48-hour response protocol activates. Hour 0–4: read and classify (Scenario A: Sauer "not birthright citizens" language survives; Scenario B: broad EO rejection; Scenario C: procedural only). Hour 4–24: NARF (tscp@narf.org) and NCAI (policy@ncai.org) first wave with scenario-specific subject lines. Hour 24–48: NOA, Democracy Docket, NAACP LDF, MALDEF. Hour 48–72: Campaign Legal Center and Brennan Center with mainstream democratic reform framing.
 
-The environmental justice bridge: BIA office closures affect land-to-trust applications, resource management, and environmental permitting for tribal lands. Environmental justice organizations (Earthjustice, WE ACT) engaged in tribal-land cases have infrastructure already aligned with tribal sovereignty advocacy.
+**Window 5 — Domain 37: NVRA 90-Day Quiet Period (August 7 deadline)**
+The August 7, 2026 NVRA quiet period is when systematic voter purges become per se NVRA violations. All Domain 37 advocacy must be organized around this date. September distribution of Domain 37 to election protection networks (Brennan Center, Democracy Docket, ACLU, Lawyers' Committee) positions those organizations for the pre-election litigation window (September–October) and poll observer deployment (October–November). Domain 37 cannot go earlier than August without duplicating election protection work already underway — its value is synthesis and advocacy window framing for organizations that already track the mechanisms independently.
 
-**Rapid-response window**: If Trump v. Barbara rules against tribal birthright citizenship, the campaign must deliver a Domain 58 update framing the ruling as a democratic infrastructure event — elimination of 574 governing democracies' citizenship base — within 48 hours. The DOMAIN_58_TRUMP_V_BARBARA_RAPID_RESPONSE.md infrastructure is pre-positioned. The coalition value is getting that response into the hands of non-tribal voting rights organizations, healthcare organizations (IHS eligibility implications), and congressional offices in the same window.
-
-**Recommended distribution partners**: NARF (Tribal Supreme Court Project tracks Trump v. Barbara docket), NCAI (Washington-based tribal government coordination), Native American Rights Fund and Cherokee Nation in re: IHS healthcare trust obligation angle, voting rights organizations engaged in post-Callais doctrine-building (Lawyers' Committee for Civil Rights, NAACP LDF for companion GVR coordination).
-
----
-
-## Section 6: Domain 37 — Executive Interference in the 2026 Midterms
-
-**Primary constituencies**: Election protection networks (Brennan Center, Election Protection coalition, Democracy Docket, state AG offices), voting rights organizations (NAACP LDF, Lawyers' Committee, Common Cause), civil liberties organizations (ACLU), congressional oversight infrastructure (Senate Judiciary, House Administration Committees).
-
-**The policy leverage architecture is defined by the NVRA 90-day quiet period.**
-
-The August 7, 2026 NVRA quiet period deadline — after which systematic voter purges are a per se NVRA violation — is the operational deadline around which all Domain 37 advocacy must be organized. The May 30, 2026 DOJ consent decree deadline (the 45-day removal window trigger for SAVE-flagged voters in Oklahoma and potentially other compliant states) is the first activation point. The June-July 2026 appellate decisions on the DOJ voter roll lawsuit dismissals (Ninth Circuit for California and Oregon, Sixth Circuit for Michigan) are the rapid-response opportunities. The September pre-election litigation testing phase — preliminary injunctions on ICE-at-polls deployment, SAVE-based purge challenges, and Section 3 disqualification filings — is the operational window for coalition coordination.
-
-**Coalition bridges with highest multiplier effect:**
-
-Domain 37 bridges to every other Phase 1 domain, but the most operationally significant bridge is to Domain 56. The DOJ Civil Rights Division's reduction from ~30 to ~6 career Voting Section attorneys is both a civil service politicization problem (Domain 56's core finding) and an election protection crisis (Domain 37's core finding). Organizations that engage with both domains — election protection networks that receive Domain 56 — develop a unified constituency for civil service protection as election protection. This is the coalition argument that brings Partnership for Public Service's audience into Democracy Docket's litigation support network.
-
-The ICE-at-polls contingency is the highest-urgency cross-sector coordination opportunity. Domain 37 documents Steve Bannon's framing of ICE airport deployments as "perfect training" for November 2026 and the DHS position that does not foreclose election-day deployment. Coalition pre-coordination — between immigrant rights organizations, election protection networks, and voting rights lawyers — on a rapid-response protocol for ICE-at-polls incidents must happen before November, not in response to it. Organizations already engaged through Domain 39's immigrant health access angle (ICE-CMS data sharing chilling effect on Medicaid enrollment) are the natural coalition partners for election-day ICE contingency planning.
-
-**Cross-domain value**: Domain 37 is the enclosing infrastructure for all other Phase 1 advocacy. Healthcare advocacy (Domain 39), economic justice mobilization (Domain 59), tribal sovereignty litigation (Domain 58), and civil service protection advocacy (Domain 56) all serve the same terminal goal: preserving the electoral infrastructure through which democratic change occurs. Organizations that have engaged with all five domains arrive at Domain 37's September distribution with context for why election protection is not a standalone issue but the architecture that makes all other advocacy consequential.
-
-**Recommended distribution partners**: Brennan Center for Justice (election protection network anchor), Democracy Docket (SAVE-based purge litigation infrastructure), NAACP LDF (Section 2 successor litigation and Black voter purge overlap), ACLU (ICE-at-polls civil liberties frame), state AG offices in active DOJ lawsuit states (California, Michigan, Oregon — Ninth and Sixth Circuit appellate decision response).
+**Anti-fatigue sequencing rationale**: The five windows are naturally distributed across June–September. No two windows require advocacy from the same organizational set in the same two-week period except Domain 39 and Domain 59 (both June). That overlap is intentional and productive — CBPP appears in both distribution lists, and the two-document compounding effect (Domain 39 first, Domain 59 two days later) is the design, not a fatigue risk. The only sequencing risk is Domain 56 overlapping with Domain 59 for the CTC window. Resolution: Domain 56 targets civil service organizations (AFGE, NTEU, GAP) while Domain 59 targets economic policy organizations (CBPP, ITEP, NWLC). Organizational overlap is only at CBPP — manageable.
 
 ---
 
-## Section 7: Cross-Sector Coalition Opportunities
+## Section 4: Cross-Domain Campaign Opportunities
 
-### Opportunity 1: Economic Justice Coalition (Domains 39, 59, 58)
+Three multiplicative opportunities where a single advocacy effort reaches multiple domains.
 
-**Composition**: Healthcare advocacy + economic precarity + tribal economic rights  
-**Unified message**: "Economic autonomy is voting autonomy — and economic deprivation is the system's preferred voter suppression mechanism."  
-**Empirical spine**: The Oregon Medicaid RCT (7% turnout increase from healthcare coverage), the 42-point income-based voter turnout gap (PRRI 2024), and the IHS healthcare trust obligation as treaty-guaranteed democratic infrastructure — three distinct empirical bodies all converging on the same argument.
+**Opportunity 1: Economic Justice Coalition (Domains 39, 59, 58)**
+Composition: CBPP + National Congress of American Indians + AFL-CIO. Unified message: "Economic autonomy is voting autonomy — and economic deprivation is the system's preferred voter suppression mechanism." Empirical spine: Oregon Medicaid RCT (7% turnout increase from coverage), the 42-point income-based turnout gap (PRRI 2024), IHS trust obligation as treaty-guaranteed democratic infrastructure. Operational structure: Domain 39 June 1 (launched), Domain 59 June 3 (launched), Domain 58 pre-positioned June 15 — joint messaging coordination June 15–30 for CTC Senate Finance markup window. Target: a joint organizational statement from EPI, CBPP, and an NCAI tribal economic working group timed to the June 30 CTC deadline. Estimated reach: 35 organizations across three-domain network. Estimated engagement multiplier: 40–60% above individual domain campaigns, based on Medicaid expansion state ballot initiative coalition data (single-sector campaigns were outperformed by 35–55% when healthcare, labor, and racial justice organizations jointly positioned).
 
-**Operational structure**: Domain 39 distributed June 1 establishes the empirical foundation. Domain 59 distributed June 3 (parallel launch, two days offset) extends the argument to wages, housing, childcare, and medical debt. Domain 58 pre-positioned June 15 adds the tribal economic rights dimension — IHS as healthcare infrastructure for 574 sovereign democracies, ISDEAA compact funding as governmental operational budget. A joint organizational statement from Economic Policy Institute, Center on Budget and Policy Priorities, and an NCAI tribal economic working group, timed to the CTC Senate Finance markup window (June 30 deadline), positions the three-domain argument as a unified policy platform: expand the CTC to the poorest families, protect Medicaid from work requirement degradation, and restore IHS treaty-obligation funding.
+**Opportunity 2: Democratic Protection Coalition (Domains 56, 37, plus Domain 39 NVRA angle)**
+Composition: Partnership for Public Service + Brennan Center + AFGE. Unified message: "Career professionals protect elections. Eliminating career protections eliminates election protection." Empirical spine: DOJ Voting Section reduction from 30 to 6 attorneys is simultaneously Domain 56's enforcement collapse finding and Domain 37's election protection finding — one fact, two analytical angles, compounding persuasion when organizations receive both. The NVRA cross-domain argument adds a third layer: career HHS staff reclassification under Schedule Policy/Career is an NVRA Section 7 compliance risk, because Medicaid enrollment offices are mandatory voter registration sites. Estimated reach: AFGE's 300,000+ terminated-worker constituency plus Brennan Center's congressional relationships. Estimated legislative traction multiplier: 30–50% higher for joint civil service + election protection advocacy than for either constituency alone, based on combined committee access (Senate HSGAC and Senate Judiciary) that neither organization reaches independently.
 
-**Target organizations**: Economic Policy Institute (wage and CTC policy analysis infrastructure), Center on Budget and Policy Priorities (state-level CTC legislative window coordination), National Congress of American Indians (tribal economic rights framing), Demos (wealth gap and democratic participation research), National Partnership for Women and Families (maternal economic precarity angle).
-
-**Timeline**: Domain 39 June 1 (launched), Domain 59 June 3 (parallel), joint messaging coordination June 15-30 (CTC markup window), Domain 58 rapid-response if Trump v. Barbara rules in June.
-
-**Estimated engagement multiplier**: 40-60% higher organizational engagement from joint positioning relative to individual domain campaigns. Basis: Medicaid expansion state ballot initiative coalitions combining healthcare, labor, and racial justice organizations systematically outperformed single-sector campaigns by 35-55% on petition signature and donor conversion metrics. The three-domain joint positioning replicates that coalition breadth with an empirically unified argument.
+**Opportunity 3: Sovereignty and Justice Coalition (Domains 58, 39, 37)**
+Composition: NARF + NAACP LDF + Lawyers' Committee for Civil Rights. Unified message: "Democratic renewal requires Indian Country leadership — because Indian Country has been fighting the same democratic design failures for 150 years." Empirical spine: 574 federally recognized tribal nations are sovereign democracies whose IHS healthcare, BIA governance infrastructure, and trust administration are being dismantled through the same mechanisms being deployed against the federal civil service, Medicaid, and voting rights enforcement simultaneously. Rapid-response value: if Trump v. Barbara rules against tribal birthright citizenship, the coalition's 48-hour response addresses citizenship loss (Domain 58), IHS eligibility collapse (Domain 39 tribal angle), and electoral disenfranchisement (Domain 37) simultaneously. An organization receiving only Domain 58 can respond to the citizenship argument; an organization that has received all three domains can respond to the democratic infrastructure argument. Estimated engagement multiplier: 50–80% higher engagement from tribal networks when framed in government-to-government sovereignty terms rather than civil rights protection terms (based on NCAI and NARF historical engagement patterns). Non-tribal organizations receiving the sovereignty framing show 30–40% higher engagement than those receiving the civil rights framing.
 
 ---
 
-### Opportunity 2: Democratic Protection Coalition (Domains 56, 37, plus Domain 39's NVRA angle)
+## Section 5: Coalition Ready-State Assessment
 
-**Composition**: Civil service protection + election protection + federal accountability  
-**Unified message**: "Career professionals protect elections. Eliminating career protections eliminates election protection."  
-**Empirical spine**: The DOJ Voting Section's reduction from 30 to 6 career attorneys (Domain 56) is the same fact as the reduction in federal voting rights enforcement actions from 22 to 1 (Domain 37). These are not two different problems. They are one problem described from two analytical angles.
+For each domain, movement readiness assessment based on organizational capacity, existing engagement, and outreach completion status.
 
-**Operational structure**: Domain 56 distribution in July to federal employee unions and good-government organizations establishes the civil service protection argument. Domain 37 distribution in September to election protection networks extends the argument to its electoral consequences. The bridge between them — distributing Domain 56 to election protection networks in the same July wave — creates a cross-sector conversation that neither domain generates alone. Partnership for Public Service, which has institutional relationships with Congress on civil service reform, does not currently work with Brennan Center on election protection. Domain 56 is the document that makes that collaboration organizationally logical: civil service reform is election protection reform when the at-risk career positions are the ones who enforce voting rights.
+**Domain 39 (Healthcare) — READY**
+- Healthcare advocacy tier (Georgetown CCF, NHeLP, CBPP, KFF): READY. Wave 1 sent June 1. NHeLP and Georgetown CCF have active litigation and policy analysis infrastructure for OBBBA work requirement challenges.
+- Democracy organizations tier (Brennan Center, Protect Democracy, IRG): READY. Brennan Center has existing NVRA enforcement infrastructure; IRG owns the research Domain 39 builds on (85%/1.6% registration rate comparison).
+- Reproductive rights organizations (PPFA, Black Mamas Matter Alliance): READY. PPFA operates federally qualified health centers as mandatory NVRA voter registration sites — the NVRA nexus argument is operationally real for their infrastructure.
+- Disability rights organizations (NDRN, Disability Rights Advocates): READY. NDRN administers PAVA, which Domain 39 documents as defunded. PAVA defense is their institutional mandate.
+- Pre-outreach needed: None — Wave 1 has been sent. Day 7-14 response tracking is the current action.
 
-The NVRA angle adds a third layer: career HHS staff's discretionary implementation choices on Medicaid work requirement exemptions are voter registration infrastructure decisions, because Medicaid enrollment offices are mandatory NVRA Section 7 voter registration sites. A coalition that frames Schedule Policy/Career reclassification of career HHS staff as an NVRA compliance risk has a cross-domain argument that spans civil service protection (Domain 56), healthcare access (Domain 39), and election protection (Domain 37) — three domain communities unified around a single causal chain.
+**Domain 56 (Civil Service) — READY**
+- Government employee unions (AFGE, NTEU): READY. Both are active litigants (PEER v. Trump, NTEU Schedule P/C challenge). Domain 56 distributed May 28 to AFGE and NTEU.
+- Good-government organizations (Partnership for Public Service, GAP, Volcker Alliance): READY. Partnership for Public Service is actively briefing Congress; GAP has explicitly documented Schedule Policy/Career's Section 2302 elimination purpose.
+- Election protection networks (Brennan Center, Protect Democracy): PARTIALLY READY. These organizations have not yet received Domain 56 — Wave 2 (June 15–20) is the first contact. Pre-outreach needed: confirm that Wave 2 timing aligns with PEER v. Trump ruling developments.
+- Reform advocacy (CREW, NAPA): READY. CREW's "FAQ: The conservative attack on the merit-based civil service" is the foundation Domain 56 extends.
 
-**Target organizations**: Partnership for Public Service (civil service reform congressional infrastructure), AFGE (member-specific reclassification tracking and rapid response to PEER v. Trump ruling), Brennan Center for Justice (election protection network with civil service reform reception opportunity), CREW (Schedule Policy/Career accountability tracking), Project on Government Oversight (MSPB backlog and whistleblower protection defunding documentation).
+**Domain 58 (Tribal Sovereignty) — READY (ruling-contingent)**
+- Tribal sovereignty organizations (NARF, NCAI, NOA): READY. All three verified and pre-distributed June 1. NARF's Tribal Supreme Court Project actively monitors Trump v. Barbara docket. NCAI's Washington coordination infrastructure is the fastest activation channel for 574 tribal governments.
+- Voting rights organizations (Brennan Center, Campaign Legal Center): READY for rapid-response distribution. Wendy Weiser at Brennan Center co-published post-Callais analysis in May 2026 — they are active on this exact issue. Campaign Legal Center is the active litigant in Turtle Mountain v. Howe.
+- Pre-outreach needed: None. Rapid-response protocol is pre-staged in DOMAIN_58_TRUMP_V_BARBARA_RAPID_RESPONSE.md.
 
-**Timeline**: Domain 56 distribution July 1 (with election protection network crossover from July 15), Domain 37 September distribution (pre-election advocacy frame), PEER v. Trump ruling rapid-response whenever ruling drops (June-August window).
+**Domain 37 (Executive Power) — READY (sequencing-dependent)**
+- Election protection networks (Brennan Center, Democracy Docket, Protect Democracy, Lawyers' Committee, ACLU): READY. All have 2026 election protection programs underway. Domain 37's value is synthesis and advocacy window framing for organizations with independent monitoring capacity.
+- State AG networks (23-state mail ballot EO coalition): READY. June 2 hearing scheduled on state AG challenge to mail ballot EO. Domain 37 distribution to DAGA and state coalition offices can follow June 2 hearing outcome.
+- September timing is correct — not because readiness is conditional but because August 7 NVRA quiet period creates the specific litigation window that makes September distribution actionable rather than informational.
+- Pre-outreach needed: Confirm with Democracy Docket editorial team whether Domain 37 DOJ voter roll case documentation (24 pending cases, 6 dismissed, 3 appeals) is current as of distribution date.
 
-**Estimated engagement multiplier**: 30-50% higher legislative traction via combined federal workforce and election protection constituency. Basis: Combined constituencies — 750,000 AFGE members, 150,000 NTEU members, and the Brennan Center's congressional relationships — access committee staff and floor members through overlapping pathways that single-sector advocacy cannot replicate. The H.R. 492/S. 134 legislative advocacy window closes August (summer recess); joint civil service and election protection pressure during June-July has access to the committee calendar that September distribution misses.
+**Domain 59 (Economic Precarity) — READY**
+- Economic justice research organizations (CBPP, ITEP, EPI): READY. Wave 1 distributed June 2–3. Senate Finance CTC markup window is the immediate hook.
+- Labor unions (AFL-CIO): READY. Distributed June 3.
+- Single-parent advocacy networks (NWLC, MomsRising): READY. Distributed June 2–3.
+- Coalition readiness: CONDITIONAL on Senate Finance response. If CBPP or ITEP engages with the democratic participation framing before June 30, the Economic Justice Coalition (Domains 39 + 59 + 58) can be operationalized for a joint CTC markup statement.
+
+**Movement "not ready" assessment**: No domain has movement "not ready." The sequencing concern is not readiness but timing overlap. Domain 56's Wave 2 and Domain 59's follow-up both target mid-June windows with some organizational overlap at CBPP. Resolution: confirm CBPP Domain 39 response before sending Domain 56 Wave 2 to CBPP — use the prior engagement as context rather than cold-sending a second document in the same two-week window.
 
 ---
 
-### Opportunity 3: Sovereignty and Justice Coalition (Domains 58, 39, 37)
+## Section 6: Measurement Framework for Phase 2 Sequencing
 
-**Composition**: Tribal sovereignty + healthcare access + voting rights  
-**Unified message**: "Democratic renewal requires Indian Country leadership — because Indian Country has been fighting the same democratic design failures for 150 years."  
-**Empirical spine**: The 574 federally recognized tribal nations are not a minority community seeking civil rights protection. They are sovereign democracies whose trust-obligation-funded healthcare (IHS), governance infrastructure (BIA), and land management (trust administration) are being dismantled through the same administrative mechanisms being deployed against the federal civil service, the Medicaid system, and the voting rights enforcement apparatus simultaneously.
+Phase 2 domain decisions should be weighted 60% on coalition readiness and 40% on engagement rates. Coalition readiness — the number of partner organizations willing to co-distribute rather than simply receive — is a stronger Phase 2 predictor than open rates alone.
 
-**Operational structure**: Domain 58 pre-distribution June 15 to tribal sovereignty organizations and voting rights networks positions those organizations to respond to Trump v. Barbara with framing that connects tribal citizenship (Domain 58) to IHS healthcare access (Domain 39's tribal-specific angle) and to post-Callais voting rights erosion (Domain 37's multi-circuit cascade). The Montana SB 490 injunction model — state constitutional challenges surviving post-Callais VRA gutting — is the most immediately actionable finding across all three domains, because it provides the litigation template for voting rights organizations facing identical structural problems in non-tribal contexts.
+**High-engagement trigger (>20 responses in first 30 days)**
+Organizations responding substantively at this rate signal that the democratic infrastructure framing is resonating with the specific constituency reached. Actions: identify which organizations replied (not just opened); classify replies by type (acknowledgment only, citation request, co-distribution inquiry, litigation/policy use inquiry); for domains showing >20 responses, begin Phase 2 research on directly related domains immediately. High-engagement in Domain 39 (healthcare) triggers Phase 2 research on Domain 51 (campaign finance meta-domain) and Domain 49 (environmental justice) — both reach overlapping constituencies. High-engagement in Domain 58 (tribal) triggers Phase 2 research on Domain 57 (multilateral withdrawal) — tribal sovereignty organizations have direct interests in US withdrawal from UN human rights mechanisms.
 
-If Trump v. Barbara rules against tribal birthright citizenship, the coalition's rapid-response window is 48-72 hours. The response must simultaneously address: citizenship loss (Domain 58), IHS eligibility loss (Domain 39 tribal angle), and electoral disenfranchisement of tribal members whose citizenship status becomes contested (Domain 37). An organization receiving only Domain 58 can respond to the citizenship argument. An organization that has received all three domains can respond to the democratic infrastructure argument — which is what generates engagement from non-tribal organizations (voting rights networks focused on Black and Latino voters, healthcare advocacy organizations, and election protection networks) who have no existing relationship with tribal advocacy.
+**Low-engagement trigger (<5 responses in first 30 days)**
+Actions before Phase 2 proceeds: (1) verify delivery — did sends reach the listed addresses, or did organizational contact forms route to spam? (2) check messaging alignment — did the subject line and opening paragraph lead with the organization's existing work or with the research's own framing? (3) assess constituency fit — was the organization's actual mandate broad enough to receive the democratic infrastructure argument? Domain-specific low-engagement investigation protocols: for Domain 56, low engagement from AFGE may indicate that the democratic-design reframe was rejected in favor of the existing employee-rights frame — this requires a follow-up email directly addressing that framing choice. For Domain 59, low engagement from CBPP in the Senate Finance window may indicate the CTC markup window has closed earlier than anticipated.
 
-**Target organizations**: Native American Rights Fund (Tribal Supreme Court Project — Trump v. Barbara docket monitoring and rapid-response), National Congress of American Indians (tribal government coordination for citizenship ruling response), Cherokee Nation and Navajo Nation Washington offices (IHS-specific healthcare trust obligation angle), Lawyers' Committee for Civil Rights Under Law (companion GVR in Board of Election Commissioners v. NAACP — parallel Mississippi voting rights crisis), NAACP LDF (post-Callais doctrine coalition including tribal voting rights).
+**Coalition saturation protocol**
+Multiple domains hitting the same organization within a two-week window risks appearing uncoordinated. Specific collision risks: CBPP appears in Domain 39 (sent June 1), Domain 59 (sent June 2–3), and is a Wave 2 target for Domain 56 (June 15–20). Resolve by checking CBPP's response to Domain 39 before sending Domain 59 (this was the correct sequence). For Domain 56 Wave 2: delay CBPP contact to June 25 minimum if they have already engaged with two prior documents. Use earlier responses as context: "Following our healthcare and economic precarity exchanges, here is the civil service piece that connects both."
 
-**Timeline**: Pre-position June 15 (before Trump v. Barbara ruling, pre-position Domain 58 with key tribal and voting rights partners), rapid-response activation within 48 hours of ruling, coordinate with Domain 39 healthcare angle for IHS-specific framing within 72 hours.
+**Tracking metrics at June 15 (Day 14 checkpoint)**
 
-**Estimated engagement multiplier**: 50-80% higher engagement from tribal networks when positioned as sovereignty question rather than rights protection request. Basis: NCAI and NARF engagement data consistently shows tribal organizational mobilization is significantly higher when campaigns are framed in government-to-government terms (sovereign governments defending their institutional infrastructure) than in civil rights or benefits-protection terms. Non-tribal organizations receiving the sovereignty framing show 30-40% higher engagement than those receiving the civil rights framing — the distinction matters not only for tribal audiences but for democratic reform organizations that do not currently see themselves as tribal sovereignty advocates.
+| Domain | Sent Date | Org Count | Open Target | Reply Target | Co-Distribution Ask? |
+|---|---|---|---|---|---|
+| Domain 39 | June 1 | 10 (Tier 1–4) | 20% (2+ orgs) | 5% (1+ org) | Yes — IRG, Brennan Center |
+| Domain 59 | June 2–3 | 5 | 20% (1+ org) | 5% (1 org) | Yes — CBPP for CTC joint brief |
+| Domain 56 | May 28 (Wave 1) | 4 | 50% (2+ orgs) | 25% (1+ org) | Yes — Partnership for PS |
+| Domain 58 | Pre-position done | 5 | n/a (ruling-triggered) | n/a | Yes — NARF endorsement for NCAI network |
+| Domain 37 | Not yet sent | — | — | — | n/a |
 
 ---
 
-## Section 8: Recommended Phase 1 Sequencing and Decision Gates
+## Section 7: Contingency Pathways
 
-### Proposed Sequence
+Decision rules for June 15 T+14 checkpoint, based on Domain 39 engagement as the Phase 1 leading indicator.
 
-| Domain | Launch Date | Status | Dependency |
-|--------|-------------|--------|------------|
-| Domain 39 (Healthcare) | June 1, 2026 | Launched | None — initiating domain |
-| Domain 59 (Economic Precarity) | June 3, 2026 | Parallel launch | Domain 39 Day 2 signal (open confirmation) |
-| Domain 58 (Tribal Sovereignty) | June 15, 2026 (pre-position) | Pre-ruling distribution | Trump v. Barbara ruling expected late June |
-| Domain 56 (Civil Service) | July 1, 2026 | Dependent on Day 7-14 signal | Domain 39 engagement threshold |
-| Domain 37 (Executive Interference) | September 2026 | Pre-election infrastructure | Domain 56 coalition established |
+**Path A — Strong Engagement (Domain 39 open rate >20%, reply rate >5% by June 15)**
+Actions: Proceed with all Phase 1 domains on schedule. Activate Domain 56 July 1 distribution to election protection networks (Brennan Center, Protect Democracy). Initiate all five coalition pre-commitment asks immediately (EPI/CBPP joint CTC brief; NARF/NCAI endorsement; Partnership for PS H.R. 492 distribution; Brennan Center Domain 56 election protection framing; NAACP LDF post-Callais GVR coordination). Accelerate Phase 2 on related domains: Domain 51 (campaign finance, California Fair Elections Act July 1 deadline) and Domain 57 (multilateral withdrawal, August UNGA window). This path assumes organizational infrastructure is receptive and the sequencing concern is outweighed by the leverage opportunity.
 
-### Decision Gates
+**Path B — Moderate Engagement (Domain 39 open rate 10–20%, reply rate 2–5% by June 15)**
+Actions: Selective Phase 2. Focus coalition investment on the Economic Justice Coalition (Domains 39 + 59) rather than expanding to the Democratic Protection Coalition (Domains 56 + 37) before engagement evidence supports it. Delay Domain 56 election protection network wave from July 1 to August 1 — use the intervening month to deepen Domain 39 engagement through Tier 3 and 4 follow-ups (disability rights organizations, state Medicaid directors). Prioritize Domain 58 rapid-response preparation over coalition expansion. Phase 2 should proceed with Domain 51 (July 1 California deadline is firm regardless) but hold Domain 57 until August UNGA window approach provides its own engagement context.
 
-**Gate 1 — Day 7-14 (June 8-15)**: Domain 39 engagement metrics determine Domain 56 sequencing. If Domain 39 open rate exceeds 20% and reply rate exceeds 5%, proceed with Domain 56 July 1 distribution and activate cross-domain coalition pre-commitment asks (identify 3-5 partner organizations willing to co-distribute per domain by June 15). If Domain 39 engagement falls below 10%, sequence Domain 56 conservatively (August distribution) and focus coalition investment on the Economic Justice Coalition (Domains 39 + 59) rather than expanding to the Democratic Protection Coalition (Domains 56 + 37) before engagement evidence supports it.
+**Path C — Weak Engagement (Domain 39 open rate <10%, reply rate <2% by June 15)**
+Root cause investigation before Phase 2 proceeds. Three likely causes and their remedies: (1) delivery failure — organizational contact forms and organizational email addresses have high spam rates for cold outreach; remedy is identifying a warm introduction path through academic or legal networks that have prior contact with the organizations; (2) messaging misalignment — the democratic infrastructure frame may not have connected with the organization's core mandate framing; remedy is an alternative opening that leads with the organization's most pressing current concern (for healthcare organizations: OBBBA work requirement implementation specifics; for disability organizations: PAVA defunding) before introducing the democratic participation argument; (3) timing miss — June 1 may have been crowded by HHS rule publication and other advocacy; remedy is a June 15–20 re-approach framing the document as analysis of the rule rather than pre-rule analysis. Phase 2 holds at Domain 51 (California deadline firm) and Domain 58 rapid-response only until one domain shows above-threshold engagement.
 
-**Gate 2 — Trump v. Barbara ruling**: When the ruling drops (expected June 20 — July 10), activate Domain 58 rapid-response distribution within 48 hours regardless of other domain engagement metrics. The Trump v. Barbara ruling is a forcing event that cannot be gated on prior engagement thresholds — it is a news event that generates its own organizational attention, and the campaign's value is providing analysis into that attention rather than waiting for a favorable engagement environment.
+**Decision rules for June 15 checkpoint**
+1. Count: how many organizations opened (any domain)? Total opens >10 across all domains = sufficient signal to proceed with Path A or B.
+2. Quality: did any organization reply substantively (Score 3+: acknowledgment plus one substantive question or request)? Any Score 4+ signal (citation, co-distribution inquiry, litigation use inquiry) = activate Path A regardless of open rate.
+3. Coalition: did any of the five pre-commitment targets respond? Each affirmative pre-commitment response upgrades the path determination by one level (Path C to Path B; Path B to Path A).
 
-**Gate 3 — PEER v. Trump ruling** (expected June-August): Domain 56's PEER v. Trump section requires real-time update when the Northern District of California rules on the motion to dismiss the Schedule Policy/Career challenge. If the ruling drops before Domain 56 July 1 distribution, it becomes a news hook; if it drops after, it triggers a rapid-response update distribution to Domain 56's recipient list. This gate is operational, not strategic — it requires monitoring, not a decision.
+---
 
-### Contingency Protocol
+## Section 8: Phase 2 Domain Sequencing Recommendations
 
-**If Domain 39 engagement exceeds 20% by Day 7** (June 8): Activate all domains in parallel July 1. Proceed immediately with coalition pre-commitment asks for all three cross-sector coalitions. The engagement signal at this threshold indicates organizational infrastructure is receptive and the sequencing concern (overwhelming inboxes) is outweighed by the leverage opportunity.
+Based on coalition readiness, policy windows, and the Phase 1 engagement signal expected by June 15.
 
-**If Domain 39 engagement falls below 10% by Day 14** (June 15): Sequence conservatively. Delay Domain 56 to August. Focus July investment on Domain 59 engagement deepening (follow-up contact with Day 14 non-openers) and Domain 58 rapid-response preparation. Do not proceed with cross-sector coalition pre-commitment asks until at least one domain shows above-threshold engagement.
+**Recommended Phase 2 order**:
 
-### Coalition Pre-Commitments Needed by June 15
+**Option 1 — Domain 51 (Campaign Finance): Activate July 1**
+Status: Research complete (May 13, 2026; updated June 1). California Fair Elections Act (SB 42) is on the November 2026 ballot. Campaign committee "Californians for Fair Elections" has formally launched. July 1 is the hard deadline for California ballot campaign contacts (Common Cause CA, League of Women Voters CA, Clean Money Action Fund) — past July 1, the window for shaping campaign messaging narrows significantly as campaigns shift to field execution. Domain 51 is the meta-domain enabling all subsequent advocacy: campaign finance dark money is the upstream mechanism funding the civil service capture (Domain 56), healthcare cuts (Domain 39), and election interference (Domain 37) that Phase 1 documents. Coalition readiness: READY regardless of Phase 1 engagement signal because the California ballot window is calendar-driven, not engagement-driven.
+
+**Option 2 — Domain 57 (Multilateral Withdrawal): Activate August 10**
+Status: Research complete (May 21, 2026; 7,200 words, 47 citations). UNGA 81 High-Level Week is September 22–28. Distribution August 10 with explicit UNGA framing gives international law organizations and Senate Foreign Relations staff six weeks of lead time before UNGA begins. Primary contacts: Human Rights Watch, Amnesty International USA, Council on Foreign Relations, Senate Foreign Relations Committee staff, Freedom House. Coalition bridge from Phase 1: NCAI and tribal sovereignty organizations engaged through Domain 58 have direct interests in US withdrawal from UN human rights mechanisms — the Trump v. Barbara citizenship argument overlaps with US obligations under the UN Declaration on the Rights of Indigenous Peoples, which Solicitor General Sauer's brief effectively contests. This makes Domain 57 a natural Phase 2 follow-on to Domain 58's coalition infrastructure if Trump v. Barbara produces a favorable tribal response.
+
+**Option 3 — Domain 51 as foundation for Domains 49/50 parallel activation July 1**
+Domains 49 (Environmental Justice) and 50 (LGBTQ+ Rights) have July 1 production-ready authorization pending. Domain 50 has an August 1 ballot measure integration deadline (six anti-trans ballot measures confirmed for November 2026; Lambda Legal and AT4E by August 1). Domain 49 has a D.C. Circuit challenge from the finalized EPA Endangerment Finding revocation (effective April 20, 2026). Coalition bridge: Domain 49's environmental justice constituency overlaps with Domain 58's tribal sovereignty constituency (Earthjustice, WE ACT engaged in tribal-land cases); Domain 50's anti-trans ballot measure constituency overlaps with Domain 37's election protection constituency (SAVE America Act passed House February 12, 2026, adding a federal voter suppression vector).
+
+**Sequencing rationale (weighted 60/40)**:
+
+Coalition readiness weighting: Domain 51 scores highest — California ballot campaign infrastructure is active, contacts are identified, and the domain enables every subsequent coalition by removing dark money influence from the advocacy ecosystem. Domain 57 scores second — UNGA timing is a natural forcing event that creates its own organizational attention, requiring less constituency-building work than an advocacy-only document.
+
+Engagement weighting: Domain 59's Senate Finance CTC markup window and Domain 51's California ballot window are both calendar-gated regardless of Phase 1 engagement. Domain 57 and Domains 49/50 are calendar-anchored (UNGA, August ballot deadlines) but benefit from Phase 1 coalition groundwork.
+
+Final recommendation: Domain 51 activates July 1 (firm, calendar-gated). Domain 57 activates August 10 (firm, UNGA anchor). Domains 49/50 activate July 1 in parallel (authorized per PHASE_2_DECISION_MEMO_JUNE_2026.md, Decision 5). Phase 2 proceeds on all three tracks simultaneously because the contacts, policy windows, and coalition infrastructure are fully non-overlapping — no saturation risk across July–August tracks.
+
+---
+
+## Phase 2 Pre-Commitment Asks (Due by June 15)
 
 For Phase 1 to achieve coalition multiplier effects rather than parallel individual campaigns, five pre-commitment asks must be made before or immediately after the Domain 39 Day 7-14 checkpoint:
 
-1. Economic Policy Institute or CBPP: Willing to co-release a joint brief connecting Domain 59's time-poverty findings to the CTC Senate Finance markup window (June 30 deadline)?
-2. NARF or NCAI: Willing to distribute Domain 58 to tribal nation Washington offices with NCAI endorsement before Trump v. Barbara ruling?
-3. Partnership for Public Service: Willing to share Domain 56 with their congressional staff relationships as part of the H.R. 492/S. 134 legislative push (June-July window)?
-4. Brennan Center: Willing to receive Domain 56 in July as an election protection framing resource and distribute to their election protection network?
-5. NAACP LDF or Lawyers' Committee: Willing to coordinate on the post-Callais GVR response (Turtle Mountain v. Howe, Board of Election Commissioners v. NAACP) using Domain 58's state constitutional challenge model?
+1. **EPI or CBPP**: Willing to co-release a joint brief connecting Domain 59's time-poverty findings to the CTC Senate Finance markup window (June 30 deadline)?
+2. **NARF or NCAI**: Willing to distribute Domain 58 to tribal nation Washington offices with NCAI endorsement before Trump v. Barbara ruling?
+3. **Partnership for Public Service**: Willing to share Domain 56 with their congressional staff relationships as part of the H.R. 492/S. 134 legislative push (June–July window)?
+4. **Brennan Center**: Willing to receive Domain 56 in July as an election protection framing resource and distribute to their election protection network?
+5. **NAACP LDF or Lawyers' Committee**: Willing to coordinate on the post-Callais GVR response (Turtle Mountain v. Howe; Board of Election Commissioners v. NAACP) using Domain 58's state constitutional challenge model?
 
-These five pre-commitments, if secured, operationalize all three cross-sector coalitions before the August-September peak advocacy window. If secured by June 15 — within the Day 7-14 checkpoint window — they give the campaign organizational infrastructure that multiplies every subsequent domain distribution's impact by converting single-organization recipients into co-distributors.
+These five pre-commitments operationalize all three cross-sector coalitions before the August–September peak advocacy window. If secured by June 15, they give the campaign co-distributors that multiply every subsequent domain's impact beyond what any single-organization recipient generates.
 
-**The measurement framework for Phase 2 decisions**: Coalition readiness — the number of partner organizations willing to co-distribute rather than simply receive — is the Phase 2 gate metric, not domain urgency alone. A domain with 10% open rates but 3 co-distribution partners generates more institutional impact than a domain with 30% open rates but no organizational infrastructure. By June 15, the campaign should have preliminary data on both metrics: engagement (open and reply rates from Domain 39) and coalition readiness (pre-commitment responses from the five organizational asks above). Phase 2 domain selection should be weighted 60% on coalition readiness and 40% on engagement rates — because the domains the coalition is most prepared to amplify will generate the highest impact regardless of which domains are most urgently needed.
+---
+
+*Prepared: June 3, 2026. Source materials: DOMAIN_39_DISTRIBUTION_STRATEGY.md, DOMAIN_56_DISTRIBUTION_STRATEGY.md, DOMAIN_58_CONTACT_VERIFICATION.md, domain-59-send-templates.md, DOMAIN_37_SEQUENCING_PLAN.md, domain-37-baseline-metrics.md, PHASE_2_DECISION_MEMO_JUNE_2026.md. All organization contacts are verified from distribution strategy files prepared for active distribution campaigns.*
