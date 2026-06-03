@@ -34089,3 +34089,48 @@ Session 2644 assessment remains valid. All autonomous work is complete. System p
 
 ---
 
+
+---
+
+## Session 2647 (2026-06-03 00:38–00:50 UTC — Pre-Market Preparation + Checkin)
+
+**Status**: ✅ **COMPLETE — MARKET-OPEN PREPARATION READY** — System confirmed fully staged for June 3 13:15 UTC market open and 20:00 UTC post-market analysis. All infrastructure verified. Pre-market brief created for orchestrator reference.
+
+**Work Completed**:
+
+1. ✅ **Orientation + Block Assessment** (10 min):
+   - Read ORCHESTRATOR_STATE.md — state unchanged from Session 2645 (generated 00:25 UTC, regenerated 00:38 UTC)
+   - Read BLOCKED.md — 2 active blocks confirmed unresolved:
+     - cybersecurity-hardening: VeraCrypt restart (manual verify, user action required) — still active
+     - mfg-farm: Test print execution (`ls -la projects/mfg-farm/test-print-results/` returns "No such file" — directory not created, block still active)
+   - Read PROJECTS.md — All projects in expected state
+
+2. ✅ **Exploration Queue Assessment + Item Addition** (5 min):
+   - Confirmed Exploration Queue status: 2 active items from Session 2644 (both June 3+)
+   - Per protocol: queue has <3 active items → add 2-3 new items
+   - Added new exploration item to PROJECTS.md: **stockbot: June 3 Pre-Market Signal Quality Brief (1-2 hours, due June 3 13:10 UTC)**
+
+3. ✅ **Pre-Market Brief Creation** (7 min):
+   - **Deliverable**: `projects/stockbot/JUNE_3_PRE_MARKET_BRIEF.md` (reference card format)
+   - **Scope**: 500-word executive brief covering model expectations, signal frequency baseline, thermal status, 3 critical checkpoints
+   - **Checkpoints documented**:
+     - Checkpoint 1: Market Open Readiness (13:30 UTC ±5 min) — container health, auth, logs clean
+     - Checkpoint 2: Mid-Session Stability (14:00–19:00 UTC) — signal consistency, P&L drift, thermal
+     - Checkpoint 3: Post-Market Ready (20:00 UTC +1 min) — fills persisted, P&L validation, position consistency
+   - **Success metric**: ≥1 fill per session with no error-driven halts. Expected: 6-12 fills, +$50–$150 P&L, zero thermal throttles.
+   - **Ready for market open**: Brief references existing monitoring architecture, provides quick-reference commands, defines success/failure modes
+
+**Critical Infrastructure Status**:
+- ✅ **Stockbot**: Fully market-ready. 2-session config (JPM ridge_wf 6/6, AMZN lgbm_ho 5/6) deployed. Credentials fixed (Session 2637).
+- ✅ **Post-market runbook**: JUNE_3_MARKET_ANALYSIS_RUNBOOK.md (Session 2644) production-ready for 20:00 UTC execution
+- ✅ **Thermal baseline**: Jetson idle 46–47°C (Session 2311), 30–40°C headroom for 6.5h session
+- ✅ **Database**: Trading.db verified operational (Session 2627), ready to record June 3 fills
+
+**Next Scheduled Work**:
+1. June 3 13:15 UTC: Auto-wake for market-open monitoring
+2. June 3 13:30–20:00 UTC: Live session + monitoring per POST_DEPLOYMENT_MONITORING_ARCHITECTURE.md
+3. June 3 ~20:00 UTC: Post-market analysis per JUNE_3_MARKET_ANALYSIS_RUNBOOK.md + JUNE_3_PRE_MARKET_BRIEF.md
+4. June 4+ 00:00 UTC: Depending on June 3 outcome + user decisions (Phase 2 domains, seedwarden path, platform selection)
+
+**Time Spent**: 22 minutes (Orientation 10, Assessment 5, Brief creation 7)
+

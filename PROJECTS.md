@@ -1119,7 +1119,9 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 ---
 
-**NEW ITEMS (Session 2644 — 2026-06-03 00:11 UTC — Exploration Queue Regenerated, All Projects at Natural Checkpoint)**:
+**NEW ITEMS (Session 2647 — 2026-06-03 00:38 UTC — Pre-Market Preparation + June 3 Execution)**:
+
+- ⏳ **stockbot: June 3 Pre-Market Signal Quality Brief (1-2 hours)** — **Scope**: Create 500-word executive brief summarizing expected behavior for today's market session given strategic reset context. Framework: (1) Model expectations (JPM ridge_wf 6/6 gates, AMZN lgbm_ho 5/6 gates with G5 fix confirmed, AAPL models suspended), (2) Signal frequency predictions (historical baseline vs. June 3 conditions), (3) Thermal baseline from Session 2311, (4) 3 key checkpoints (market open ready? mid-session monitoring gates? post-market analysis triggers?). Deliverable: `JUNE_3_PRE_MARKET_BRIEF.md` (bulleted reference card format). **Business value**: Ensures orchestrator understands session success criteria before 13:15 UTC wake. **Estimated time**: 1-2 hours (prior work exists). **Priority**: HIGH (due before 13:15 UTC market open). **Due**: June 3 13:10 UTC.
 
 - ⏳ **resistance-research: Phase 1 Campaign Coalition Leverage Analysis** — **Scope**: Create framework document identifying highest-leverage Phase 1 domains (39, 56, 59, 58, 37) for cross-sector coalition coordination. Map interconnections: healthcare advocates ↔ reproductive rights ↔ civil service unions ↔ tribal sovereignty ↔ election protection networks. Identify multiplicative advocacy windows (e.g., joint healthcare+reproductive campaign on Medicaid cuts + abortion restrictions). Deliverable: `PHASE_1_COALITION_LEVERAGE_MATRIX.md` (2,500 words, 8-section framework). **Business value**: Enables Phase 2 decisions based on coalition readiness, not just domain urgency. **Estimated time**: 4-5 hours. **Priority**: Medium (feeds June 15 T+14 checkpoint decisions). **Due**: By June 15 EOD.
 

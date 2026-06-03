@@ -3,6 +3,38 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2647, 2026-06-03 00:38–00:50 UTC — Pre-Market Preparation Complete)
+
+**Session Status**: ✅ **MARKET-OPEN PREPARATION COMPLETE** — System fully staged for June 3 13:15 UTC market auto-wake and live trading session (13:30-20:00 UTC). Pre-market brief created for reference. No autonomous work remains. Awaiting market execution and user decisions.
+
+**Work Completed**:
+1. ✅ **Orientation + Block Assessment** (10 min): Verified BLOCKED.md — both blocks still active (VeraCrypt restart, test print execution), unresolvable autonomously.
+2. ✅ **Exploration Queue Assessment** (5 min): Confirmed 2 active items from Session 2644 (both June 3+). Added new item: **stockbot Pre-Market Brief (1-2h, due 13:10 UTC)**.
+3. ✅ **Pre-Market Brief Creation** (7 min): Deliverable `projects/stockbot/JUNE_3_PRE_MARKET_BRIEF.md` (reference card: model status, signal frequency baseline, thermal status, 3 critical checkpoints, success metric). Ready for market open reference.
+
+**System Status** (fully ready):
+- 🟢 **Stockbot**: 2-session config (JPM 6/6, AMZN 5/6) deployed. Credentials fixed. Thermal headroom 30-40°C. Auto-wake 13:15 UTC scheduled. **June 3 Pre-Market Brief ready for market-open reference.**
+- 🟡 **Resistance-Research**: Domain 59 ready for user execution (~30-45 min). Phase 2 decisions due EOD June 3.
+- 🟡 **Seedwarden**: Gate 1 infrastructure ready. Path A/B activation decision due EOD June 3.
+- 🟡 **Systems-Resilience**: Phase 6 complete. Platform selection due EOD June 3.
+- 🔴 **Cybersecurity-Hardening**: VeraCrypt restart required (user action).
+- 🔴 **Mfg-Farm**: Test print execution required (user action).
+
+**Exploration Queue Status** (3 items):
+- ⏳ **stockbot: June 3 Pre-Market Brief** (1-2h, **CREATED**, due 13:10 UTC) ← due before market open
+- ⏳ **resistance-research: Phase 1 Coalition Leverage Analysis** (4-5h, due June 15)
+- ⏳ **stockbot: Post-Market June 3 Analysis Runbook** (3-4h, due 22:00 UTC) ← execute after market close
+
+**Next Scheduled Work**:
+1. **June 3 13:15 UTC**: Auto-wake for market-open monitoring
+2. **June 3 13:30–20:00 UTC**: Live market session (monitor per POST_DEPLOYMENT_MONITORING_ARCHITECTURE.md)
+3. **June 3 ~20:00 UTC**: Execute JUNE_3_MARKET_ANALYSIS_RUNBOOK.md (decision trees, P&L analysis, escalation routing)
+4. **June 3 EOD**: User decision deadline (Phase 2 domains, seedwarden path, platform selection)
+
+**Time Spent**: 22 minutes (Orientation 10, Assessment 5, Brief creation 7)
+
+---
+
 ## Since Last Check-in (Session 2646, 2026-06-03 00:32–00:33 UTC — Verification: System Status Stable)
 
 **Session Status**: ✅ **SYSTEM FULLY READY — NATURAL CHECKPOINT MAINTAINED** — Session 2645 checkpoint assessment remains valid (verified 1 min after 2645 completion). All autonomous work complete. System positioned correctly for market open (13:15 UTC) and user decision deadline (EOD June 3).
