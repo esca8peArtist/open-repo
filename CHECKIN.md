@@ -1,5 +1,38 @@
 # Check-In Report
 
+## Since Last Check-in (Session 2656 — 2026-06-03 05:43–06:15 UTC)
+
+### What Was Accomplished
+
+**Orchestrator Orientation & Status Verification** ✅:
+- Full orientation of ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, EXPLORATION_QUEUE.md
+- Verified: Zero autonomous work available before market open (13:30 UTC today)
+- Confirmed: All 3 exploration queue items have deadlines June 8+ (post-market-open)
+- Assessment: System correctly idle-staged and production-ready for market execution
+- Findings: Both active blocks (cybersecurity-hardening, mfg-farm) are user-action-required and cannot be auto-verified
+
+### What's In Progress
+- ⏳ **Stockbot Market Execution** (13:30–20:00 UTC June 3): 2-session config (JPM ridge_wf + AMZN lgbm_ho) deployed and verified
+- ⏳ **Post-Market Analysis** (20:30–22:00 UTC June 3): JUNE_3_MARKET_ANALYSIS_RUNBOOK.md execution staged and ready
+
+### Items Needing User Input
+*No new items; all major decisions pending per previous check-in:*
+- Systems-Resilience Phase 5/6 Platform Decision (due June 3 EOD)
+- Resistance-Research Phase 2 Domain Selection (due June 3 EOD)
+- Seedwarden Track A vs. B Launch Decision (due June 3 EOD)
+- Cybersecurity-Hardening VeraCrypt Restart (user manual action)
+- Mfg-Farm Test Print Execution (user manual action)
+
+### Status Summary
+- 🟢 **Stockbot**: June 3 13:30 UTC market open fully ready. 2-session deployed, tests passing, credentials verified.
+- 🟡 **Resistance-research**: Domain 59 distribution ready for execution; Phase 2 selection pending.
+- 🟡 **Seedwarden**: Gate 1 launch-ready; path decision (Track A/B) pending.
+- 🟡 **Systems-resilience**: Phase 6 analysis complete; platform decision pending.
+- 🔴 **Cybersecurity-hardening**: Phase 1 paused on VeraCrypt restart (user action).
+- 🔴 **Mfg-farm**: Pre-launch complete; test print pending.
+
+---
+
 ## Since Last Check-in (Session 2651 — 2026-06-03 05:23–06:00 UTC)
 
 ### What Was Accomplished
