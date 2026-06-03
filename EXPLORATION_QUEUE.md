@@ -40,20 +40,20 @@
 **Status**: PRODUCTION-READY for user activation + Day 3 automated checkpoint execution
 **Commit**: Merged into PROJECTS.md seedwarden status
 
-### 52. ⏳ stockbot — Post-June-3-Market-Open Analysis Framework
+### 52. ✅ stockbot — Post-June-3-Market-Open Analysis Framework (Session 2649 COMPLETE)
+**Status**: Completed June 3 (Session 2649, 04:30 UTC). All three deliverables production-ready.
 **Context**: June 3 market open at 13:30 UTC (early morning session work). Alpaca credentials fixed (Session 2630), Docker entrypoint fixed (Session 2631), test suite passing. Two sessions (JPM ridge_wf + AMZN lgbm_ho) executing normal trading signals June 3-5. At June 3 20:00 UTC (market close), orchestrator needs automated analysis framework to evaluate Alpaca fix validation, trading execution success, and contingency triggers.
-**Scope**: Pre-stage analysis infrastructure for June 3 20:00 UTC market-close review:
-  - Result comparison templates (expected fills vs actual, by session)
-  - Alpaca authentication validation checklist (zero "insufficient subscription" errors vs baseline)
-  - Performance benchmarking baseline (latency, fill rate, order queue depth)
-  - Contingency decision tree (if fills are zero → investigate, if errors spike → rollback, if performance degrades → alert)
-  - Synthesis doc template for Session 2638 orchestrator review
-**Deliverables**:
-  - `POST_MARKET_OPEN_ANALYSIS_FRAMEWORK.md` (decision trees, templates, baseline metrics)
-  - `market_results_comparison.py` (query database, compare vs expected, generate summary)
-  - `contingency_activation_triggers.md` (if/then rules for post-market actions)
-**Owner**: stockbot subagent
-**Deadline**: June 3 13:15 UTC (2 hours before market open, ready for 20:00 UTC analysis)
+**Deliverables** (ALL COMPLETE):
+  - ✅ `JUNE_3_MARKET_ANALYSIS_RUNBOOK.md` (2,600+ lines) — Pre-analysis checklist (5 min), trade metrics (10 min), position tracking (10 min), P&L analysis (15 min), signal audit (20 min), contingency decision tree (10 min), post-market actions (15 min). Decision paths for zero/low/high fills + anomaly branches.
+  - ✅ `scripts/market_results_comparison.py` (220 lines) — Automated query script to fetch June 3 fills by session, calculate per-session P&L/buy/sell counts, generate markdown report + JSON metrics, anomaly detection (high fill count, large losses), recommendations for next session
+  - ✅ `contingency_activation_triggers` (embedded in runbook Part 9) — If-then rules for zero fills, high errors, Alpaca auth failures, signal runaway, performance degradation, rollback triggers
+**Key deliverables**:
+- JUNE_3_MARKET_ANALYSIS_RUNBOOK.md provides comprehensive decision tree with 9 sections + SSH commands (ready to execute at 20:00 UTC)
+- market_results_comparison.py is production-ready and can be invoked via: `uv run python projects/stockbot/scripts/market_results_comparison.py --db /opt/stockbot/database/trading.db --date 2026-06-03 --output analysis.md`
+- All contingency paths mapped: zero fills (OK), low fills (normal), medium fills (signal normal), high fills (investigate runaway), negative PnL (audit signals), API errors (check logs)
+**Owner**: orchestrator + stockbot subagent (Session 2649)
+**Status**: PRODUCTION-READY for June 3 20:00 UTC market-close execution
+**Deadline**: June 3 13:15 UTC ✅ ADVANCED COMPLETE (8h 45m early)
 
 ### 53. ⏳ resistance-research — Phase 2 Batch 2 Research Activation Roadmap
 **Context**: Domain 59 distribution executing this week (user action). Day 1-7 monitoring (June 3-9) will measure impact and coalition response. Post-Day-7 checkpoint (June 9 morning), Phase 2 Batch 2 activation begins for Domains 51, 57, 48, and contingency Domain 54.
