@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-02T22:36:14.345635+00:00",
+  "errors": [
+    "domain_58_scotus: uncaught exception \u2014 Unexpected error in SCOTUS monitor"
+  ],
+  "total_alerts_sent": 0,
+  "has_urgent": false,
+  "domain_39_hhs": {
+    "monitor": "domain_39_hhs",
+    "status": "no_new_items",
+    "alert_sent": false
+  },
+  "domain_40_election": {
+    "monitor": "domain_40_election",
+    "status": "no_new_events",
+    "alert_sent": false
+  },
+  "domain_58_scotus": {
+    "monitor": "domain_58_scotus",
+    "status": "error",
+    "error": "Unexpected error in SCOTUS monitor"
+  },
+  "coalition_email_router": {
+    "monitor": "coalition_email_router",
+    "status": "no_new_emails",
+    "alert_sent": false
+  }
+}

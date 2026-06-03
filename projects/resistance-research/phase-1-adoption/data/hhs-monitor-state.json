@@ -1,0 +1,11 @@
+{
+  "last_check": "2026-06-02T22:36:14.172509+00:00",
+  "items_seen": [
+    "fr-https://test.example.com/item1",
+    "fr-https://test.example.com/item2"
+  ],
+  "alerts_sent": 0,
+  "last_federal_register_check": null,
+  "last_hhs_check": null,
+  "last_cms_check": null
+}

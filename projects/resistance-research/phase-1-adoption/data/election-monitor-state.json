@@ -1,0 +1,10 @@
+{
+  "last_check": "2026-06-02T22:36:14.282790+00:00",
+  "items_seen": [
+    "fec-https://api.fec.gov/test1"
+  ],
+  "alerts_sent": 0,
+  "last_fec_check": null,
+  "last_election_protection_check": null,
+  "last_news_check": null
+}
