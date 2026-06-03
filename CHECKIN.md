@@ -1,5 +1,19 @@
 # Check-In Report
 
+## Current Status — Session 2676 (2026-06-03 09:21 UTC)
+
+**Time Until Key Events**:
+- ⏰ **13:15 UTC** (3h 54m): CRITICAL — User should fix Alpaca credentials before market open
+- ⏰ **13:30 UTC** (4h 9m): Market opens; JPM + AMZN sessions resume (if credentials fixed)
+- ⏰ **20:00 UTC** (10h 39m): Post-market analysis execution (see JUNE_3_EXECUTION_GUIDE.md)
+- ⏰ **23:59 UTC** (14h 38m): User decision deadline for Phase 2 domains, seedwarden path, systems-resilience platform
+
+**Status**: ✅ **MARKET-OPEN READY** — All prep complete; JUNE_3_EXECUTION_GUIDE.md staged for 20:00 UTC execution; standing by for market monitoring and post-market analysis.
+
+**Critical Blocker Still Active**: 🔴 Alpaca credentials (both API_KEY_ID and API_KEY = `PKM03F5PK1LPV8LSBIP0`; should be different). **User action required by 13:15 UTC or trading blocked for Day 1.**
+
+---
+
 ## Since Last Check-in (Session 2675 — 2026-06-03 09:15 UTC) — Autonomous Work Expansion; Domain 59 Dispatch Prepared; Queue Populated
 
 ### Summary
