@@ -1,5 +1,52 @@
 # Check-In Report
 
+## Since Last Check-in (Session 2673 — 2026-06-03 08:50 UTC) — Morning Verification; Critical Blocker Confirmed Unresolved; All Autonomous Work Complete; Standing By
+
+### Summary
+**Session objective**: Verify critical blocker status and confirm autonomous work availability. **Result**: (1) **Alpaca auth blocker CONFIRMED STILL ACTIVE** (2 Docker auth failures in logs; verified 08:50 UTC). (2) **All autonomous work complete** — pre-market materials staged, coalition analysis complete, all deliverables committed. (3) **System in production-ready idle state** awaiting user decisions by 23:59 UTC deadline (15h remaining). (4) **Critical fix window**: User must correct Alpaca credentials before 13:15 UTC (4h 25m) to enable market trading.
+
+### What Was Accomplished
+✅ **Critical Block Re-Verification** (2 min):
+   - SSH check: `docker logs stockbot | grep -c 'insufficient subscription'` → **2** (unchanged)
+   - **Block status**: CONFIRMED UNRESOLVED (8+ hours continuous since Session 2652 05:55 UTC)
+   - Root cause: ALPACA_API_KEY_ID and ALPACA_API_KEY both set to `PKM03F5PK1LPV8LSBIP0` (should be different)
+   - User action window: 4h 25m until market open (13:15 UTC deadline)
+
+✅ **Autonomous Work Assessment** (5 min):
+   - Reviewed project Goals and Exploration Queue per protocol
+   - Confirmed: All Phase 1-6 deliverables production-ready and committed
+   - Pre-market brief ✅, post-market runbook ✅, coalition analysis ✅ all complete
+   - All queue items either executed or awaiting user decisions (domains, seedwarden path, platform selection)
+   - **Conclusion**: No additional autonomous work available without user input
+
+### Critical Path Status
+- 🔴 **stockbot** (P1): CRITICAL BLOCKER — Alpaca credentials; trading blocked until 13:15 UTC fix
+- 🟡 **resistance-research** (P2): Phase 1 Coalition Leverage ✅; Phase 2 domains awaiting selection
+- 🟡 **seedwarden** (P5): Gate 1 launch-ready ✅; Path A/B decision due 23:59 UTC
+- 🟡 **systems-resilience** (P7): Phase 6 platform analysis ✅; Nextcloud+Matrix vs. Discourse decision due 23:59 UTC
+- 🔴 **cybersecurity-hardening** (P3): Phase 1 paused (VeraCrypt restart pending)
+- 🔴 **mfg-farm** (P4): Etsy launch ready (test print execution pending)
+- 🟢 **open-repo** (P6): Phase 5 complete; June 12 deployment on track
+
+### User Actions Required (Priority Order)
+1. **🔴 URGENT — Alpaca Credentials Fix (Until 13:15 UTC, 4h 25m remaining)**:
+   ```bash
+   ssh awank@100.120.18.84
+   cat /opt/stockbot/.env | grep ALPACA  # Should show: ID ≠ API_KEY
+   # Get correct API secret from Alpaca; update both variables
+   docker restart stockbot
+   docker logs stockbot --tail=20 | grep insufficient  # Should return 0
+   ```
+
+2. **Phase 2 Domain Selection (Until 23:59 UTC, 15h remaining)**: Activate Domains 51, 57, 48, 49-50, or 54?
+3. **Seedwarden Path Decision (Until 23:59 UTC)**: Track A (45-min Reddit launch) or Track B (full social + Kit)?
+4. **Systems-Resilience Platform (Until 23:59 UTC)**: Nextcloud+Matrix (9.5/10) or Discourse (8.0/10)?
+
+### Session Conclusion
+System confirmed in correct production-ready state. All autonomous deliverables complete and staged. Critical blocker verified still active with clear 4h 25m fix window before market open. Standing by for user action on Alpaca credentials (critical path) and Phase 2/seedwarden/systems-resilience decisions (15h window).
+
+---
+
 ## Since Last Check-in (Session 2672 — 2026-06-03 08:42 UTC) — Morning State Verification; Pre-Market Materials Ready; Critical Blocker Unresolved; Standing By
 
 ### Summary
