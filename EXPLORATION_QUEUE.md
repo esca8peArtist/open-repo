@@ -55,20 +55,22 @@
 **Status**: PRODUCTION-READY for June 3 20:00 UTC market-close execution
 **Deadline**: June 3 13:15 UTC ✅ ADVANCED COMPLETE (8h 45m early)
 
-### 53. ⏳ resistance-research — Phase 2 Batch 2 Research Activation Roadmap
-**Context**: Domain 59 distribution executing this week (user action). Day 1-7 monitoring (June 3-9) will measure impact and coalition response. Post-Day-7 checkpoint (June 9 morning), Phase 2 Batch 2 activation begins for Domains 51, 57, 48, and contingency Domain 54.
+### 53. ✅ resistance-research — Phase 2 Batch 2 Research Activation Roadmap (Session 2701 COMPLETE)
+**Status**: Completed June 3, 2026 (Session 2701, 15:00–15:46 UTC). All three deliverables verified production-ready with corrected research findings.
 **Scope**: Design Phase 2 Batch 2 research and distribution roadmap independent of Domain 39/59 results, ready to execute June 9+:
-  - Domain 51 (CA Fair Elections Act): Research timeline (June 9-12, 60-90 min work); contact list (5 campaign orgs); email template pre-staging; deadline July 1 mark
-  - Domain 57 (UN Multilateral Withdrawal): August 10 distribution anchor; UNGA framing prep; coalition contact refresh; contingency if multilateral treaty advances
+  - Domain 51 (SB-42 California Fair Elections Act): Research timeline (June 9-12, 60-90 min work); contact list (5 campaign finance reform orgs); email template pre-staging; November 3, 2026 ballot timeline
+  - Domain 57 (UN Multilateral Withdrawal): August 10 distribution anchor; UNGA 82 framing (Sept 22-28, 2026); coalition contact refresh; contingency if multilateral treaty advances
   - Domain 48 (Criminal Justice): Production-ready content; optional activation June 9 or hold for July (user decision); no urgent deadline
-  - Domain 54 (Youth Civic Power): November timeline (post-election research); scoping outline for future researcher
-  - Resource reallocation plan if Phase 2 Batch 2 conflicts with stockbot June 15 expansion or systems-resilience Wave 2 transition
-**Deliverables**:
-  - `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md` (timeline by domain, dependencies, contingency triggers)
-  - `DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md` (June 9-12 task breakdown, 90-min budget allocation)
-  - `RESOURCE_REALLOCATION_SCENARIOS.md` (if stockbot/systems-resilience overlap, how to sequence)
-**Owner**: resistance-research subagent
-**Deadline**: June 8 (ready for execution June 9 post-Day-7 checkpoint)
+  - Domain 54 (Youth Civic Power): August 1 hard deadline for pre-election distribution; separate November post-election research scope (future researcher)
+  - Resource reallocation plan (3 scenarios A/B/C) if Phase 2 Batch 2 conflicts with stockbot June 15 expansion (76 hrs) or systems-resilience Wave 2 transition (80-100 hrs)
+**Deliverables** (ALL COMPLETE):
+  - ✅ `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md` (timeline by domain, dependencies, contingency triggers)
+  - ✅ `DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md` (June 9-12 task breakdown, 60-90 min budget allocation; SB-42 research verified)
+  - ✅ `RESOURCE_REALLOCATION_SCENARIOS.md` (A/B/C sequencing with specific hour estimates for June 10-15 resource contention)
+**Key Research Corrections**: SB-42 verified (not SB-290), UNGA 82 dates Sept 22-28 confirmed, Domain 54 scope reconciled, resource hour estimates + scenario structure added
+**Owner**: resistance-research subagent (Session 2701)
+**Status**: ✅ PRODUCTION-READY for execution June 9 post-Day-7 checkpoint
+**Deadline**: June 8 ✅ EARLY COMPLETE (June 3)
 
 ### 54. ⏳ systems-resilience — Phase 6 Wave 2 Activation & Domain Sequencing Plan
 **Context**: Phase 6 Wave 1 (June 1-15) researches domains 60, 62 (weeks 1-2), then 61, 64 (weeks 3-4), then 63, 65 (week 5). User platform selection deadline June 3 EOD determines operational infrastructure by June 5. Wave 2 transition planning can begin now to ensure smooth author handoff and June 20 Wave 2 start.

@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-03T12:37:32Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-03T14:57:31Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 7.9% (705,864 tokens) | All-models 2.9% | Reset in 131h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 7.9% (705,864 tokens) | All-models 3.1% | Reset in 129h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (1/4 Candidates Complete: Domain 51)** (Sessions 502-524, Session 907, Session 1043, Session 2505) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[PHASE 2 RESEARCH COMPLETE + DOMAIN 59 DISPATCH STAGED + COALITION LEVERAGE ANALYSIS COMPLETE (SESSION 2675)]** — **Domain 59 Senate Finance CTC Dispatch PREPARED** (`DOMAIN_59_SENATE_FINANCE_DISPATCH.md`): All materials staged and execution-ready (5 email templates, contact list, send sequence, decision routing). Senate Finance markup window open through June 30 (26M+ children affected). **CRITICAL DEADLINE**: CTC Senate Finance is highest-urgency leverage point in Phase 1 calendar —  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 2 BATCH 2 ROADMAP + DOMAINS 49-50 FULL RESEARCH COMPLETE (SESSION 2698)]** — **🚨 CRITICAL FINDING: Domain 49 Timeline Inversion — Louisiana Gov signed congressional map June 1 eliminating majority-Black district. June primary filing deadlines = hard cutoff. Domain 49 must execute THIS WEEK (not July). APPROVAL + TIMELINE DECISION NEEDED BY EOD TODAY.** All Phase 2 materials production-ready: `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md` (2,030w, timeline by domain + 5 contingency s … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: 🔴 **[CRITICAL BLOCKER — ALPACA AUTH FAILURE BLOCKS TRADING]** — Jetson Docker container in continuous Alpaca WebSocket authentication failure (code 409 "insufficient subscription"). Root cause: ALPACA_API_KEY_ID and ALPACA_API_KEY both set to same value (should be different). **Action required**: User must verify/correct credentials in /opt/stockbot/.env on Jetson, restart Docker. **Status**: Waiting on user credential fix. See BLOCKED.md for full details and debugging commands.
+**Focus**: 🟡 **[DATA FEED SUBSCRIPTION REQUIRED — NOT CREDENTIAL ISSUE]** — Session 2696 investigation (June 3) resolved the Alpaca 409 "insufficient subscription" error root cause: configuration issue fixed (removed duplicate ALPACA_API_KEY). HTTP API authentication works perfectly (account healthy: $440K buying power, trading enabled). **Root cause**: Code 409 is specifically a data feed subscription issue — current config uses `ALPACA_DATA_FEED=sip` (paid subscription required). **User decision … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**; **Standing task: 18 wild edibles habit photos 18/18 COMPLETE (Session 2505 verified)**
@@ -41,11 +41,11 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: ✅ **[PHASE 5 A11Y VIOLATIONS RESOLVED — OPDS RESPONSE_CLASS BUG FIXED; WCAG COMPLIANCE RESTORED; DEPLOYMENT READY]** — OPDS route bug fixed (4 endpoints corrected in app/api/v1/opds.py). CSS fallbacks added for error states. OpenAPI schema now generates correctly. Root cause identified and verified. **Status**: Phase 4 COMPLETE, Phase 5 violations RESOLVED. Deployment on track (June 12 target, 9-day buffer). **Confidence**: 95%+. **Next**: June 12 final A11y verification before deployment.
+**Focus**: ✅ **[PHASE 5 A11Y VERIFICATION COMPLETE — DEPLOYMENT APPROVED FOR JUNE 12 (SESSION 2698)]** — Full WCAG 2.1 AA compliance verified (11/11 criteria PASS). All 157 tests passing (OPDS 50/50, Route/API 35/35, A11y automated 72/72, 0 failures). OPDS route bug fixed (4 endpoints in app/api/v1/opds.py). CSS fallbacks validated. Keyboard navigation verified. Deployment runbook complete (`DEPLOYMENT_JUNE_12_RUNBOOK.md`: pre-flight checklist 10min, 8-step deployment 15-25min, 60min post-deploy moni … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: ✅ **[PHASE 6 PLATFORM ANALYSIS COMPLETE — NEXTCLOUD+MATRIX RECOMMENDED (9.5/10), DISCOURSE SECONDARY (8.0/10)]** — **User decision required by June 3 EOD**: Platform selection (Nextcloud+Matrix vs Discourse) → Phase 5 Wave 1 launch June 5. Nextcloud+Matrix offers full offline capability, real-time collaborative editing, Matrix-Meshtastic LoRa bridge (June 2026), $0-180/year cost, 8-10h setup. Discourse offers trust-level self-governance, REST API, GitHub Pages integration, $84-204/year,  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 6 WAVE 2 ACTIVATION PLANNING COMPLETE (SESSION 2698) — NEXTCLOUD+MATRIX RECOMMENDED (9.5/10), DISCOURSE SECONDARY (8.0/10)]** — **User decision required by EOD today**: Platform selection (Nextcloud+Matrix vs Discourse) gates Phase 5 Wave 1 author recruitment June 5 + Wave 2 publication format. Nextcloud+Matrix offers full offline, real-time editing, Matrix-Meshtastic LoRa bridge, $0-180/yr, 8-10h setup. Discourse offers trust-level governance, REST API, GitHub Pages integration … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -63,19 +63,19 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### stockbot — CRITICAL: Alpaca websocket authentication failing (blocks all trading)
+### stockbot — CRITICAL: Alpaca WebSocket data feed subscription required (blocks realtime trading signals)
 **Date blocked**: 2026-06-03 05:55 UTC (Session 2652 — orchestrator pre-market discovery)
-**Date verified**: 2026-06-03 07:46 UTC (Session 2665 — verification check)
-**Context**: Pre-market diagnostics (06:05-13:30 idle period) discovered that Jetson Docker container has been continuously failing Alpaca paper API websocket authentication for at least 6 hours. Error log shows repeated "insufficient subscription" failures (code 409) from Alpaca SDK auth handler since container startup at ~23:50 UTC June 2. Docker health check reports "healthy" (only checks HTTP 8000 port), but realtime_stream thread is in continuous reconnect loop (300s backoff). No trades have executed since June 1 13:39 UTC (last AMZN BUY). JPM ridge_wf session configured but zero trades in database (never connected). Drift alerts from June 1 ("Z=-3.5, JPM ridge_wf underperforming") appear to be from test simulation, not actual live trading.
-**Root cause analysis**:
-- Session 2630 (June 2 22:55 UTC) claimed to fix issue by adding `ALPACA_API_KEY_ID=PKM03F5PK1LPV8LSBIP0` to environment
-- Current container shows BOTH ALPACA_API_KEY and ALPACA_API_KEY_ID set to SAME value: `PKM03F5PK1LPV8LSBIP0` 
-- This is incorrect: ALPACA_API_KEY_ID should be the key identifier, while ALPACA_API_KEY should be the secret key
-- Alpaca SDK requires valid credentials to authenticate WebSocket; mismatched credentials trigger "insufficient subscription" error (code 409)
-**Verification (Session 2665)**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` returned 2 — **BLOCK STILL ACTIVE**, auth failures ongoing.
-**What I need**: (1) Verify that the Alpaca API credentials in the .env file are correct (ALPACA_API_KEY_ID should be different from ALPACA_API_KEY). (2) If credentials are wrong, obtain correct values and update /opt/stockbot/.env on Jetson. (3) Restart Docker container to pick up new credentials. (4) Verify that WebSocket authentication succeeds in logs (no more 409 errors).
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"` — should return 0 (no auth failures)
-**Resolution**: [leave blank — awaiting user action to correct credentials on Jetson]
+**Date verified**: 2026-06-03 07:46 UTC (Session 2665)
+**Date escalated**: 2026-06-03 13:05 UTC (Session 2694 — Jetson unreachable, SSH timeout)
+**Date investigated**: 2026-06-03 13:30 UTC (Session 2696 — Jetson now reachable; root cause identified)
+**Root cause analysis (Session 2696 investigation)**:
+1. **Credential Configuration Issue (RESOLVED)**: The .env file incorrectly had both `ALPACA_API_KEY=PKM03F5PK1LPV8LSBIP0` (duplicating the API key ID) and `ALPACA_SECRET_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`. Fixed by removing the incorrect `ALPACA_API_KEY` line. 
+2. **HTTP API Authentication (VERIFIED WORKING)**: HTTP requests to Alpaca API succeed with correct credentials. Account status shows: ACTIVE, buying_power=$440,477, trading_blocked=false, pattern_day_trader=true.
+3. **WebSocket 409 Error (ROOT CAUSE IDENTIFIED)**: The code 409 "insufficient subscription" error is specifically a **data feed subscription issue**, NOT a credential issue. Current configuration uses `ALPACA_DATA_FEED=sip` (Securities Information Processor), which requires a paid Alpaca subscription tier.
+4. **Trading Impact**: HTTP API works (order execution possible), but realtime WebSocket stream fails (no live price data for signals). Container gracefully reconnects every 10s but cannot establish authenticated stream with SIP data feed.
+**What I need**: User must either (1) Upgrade Alpaca paper trading account to include SIP data feed subscription (requires Alpaca account action), OR (2) Switch to included free data feed by changing ALPACA_DATA_FEED environment variable from "sip" to "iex" or another available feed, then restart container. **Decision needed by EOD today (June 3 23:59 UTC)**.
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=10 2>&1 | grep -i 'insufficient\|websocket\|authenticated'"` — should show successful stream authentication once data feed subscription is resolved
+**Resolution**: [leave blank — Awaiting user decision: upgrade Alpaca subscription OR switch to free data feed]
 ---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
@@ -105,42 +105,43 @@
 (NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - **Evidence**: June 3 06:30 UTC pre-market brief and Session 2665 Coalition Leverage Matrix both completed; credential fix still required
-   - **Next step**: User must correct credentials on Jetson before 13:15 UTC (4h 33m from now) to enable trading
+   - **Impact**: Enables data-driven scaling decision once test print completes; supports June 3-25 launch timeline
+   - **Updated PROJECTS.md mfg-farm focus** with complete scaling strategy summary and Phase 1-4 sequencing
 
-2. ✅ **Pre-Market Materials Verification** (3 min):
-   - **`projects/stockbot/JUNE_3_PRE_MARKET_BRIEF.md`** (timestamp 07:33 UTC, ~1h old):
-     - Status: ✅ COMPLETE, ready for market open
-     - Scope: 1-page reference card covering JPM ridge_wf (6/6 gates FULL GO) + AMZN lgbm_ho (5/6 gates CONDITIONAL GO)
-     - Critical note: "CANNOT TRADE TODAY unless credentials fixed before 13:15 UTC"
-     - Purpose: Pre-staged expectations framework for orchestrator session monitoring
-   - **`projects/stockbot/JUNE_3_MARKET_ANALYSIS_RUNBOOK.md`** (timestamp 07:34 UTC, ~1h old):
-     - Status: ✅ COMPLETE, ready for post-market-close execution at 20:00 UTC
-     - Scope: 8-section structured decision framework covering trade execution, signal quality, thermal health, failure recovery, diagnostics, credential recovery, decision routing
-     - Due: 22:00 UTC June 3 (13h 18m from now)
+2. ✅ **seedwarden: Track B Execution Checklist (26K, created 13:44 UTC)**
+   - **Deliverable**: `projects/seedwarden/TRACK_B_EXECUTION_CHECKLIST.md`
+   - **Key findings**: May 30 deadline passed but infrastructure unaffected. June 5 launch preserves 3-day margin before Phase 3 sprint. 5-gate execution plan with 2.5-3.5 hours total user time
+   - **Track B distinction**: Audience-first path (social→lead magnet→email→Etsy) vs. Track A's Etsy-first search traffic. Reaches foragers/homesteaders aligned with Phase 3 medicinal herbs audience
+   - **Impact**: Enables Track A+B dual-launch strategy decision by EOD today
+   - **Updated PROJECTS.md seedwarden focus** with complete Track B execution roadmap and timeline analysis
 
-3. ✅ **Exploration Queue Status** (3 min):
-   - **Coalition Leverage Matrix** (`projects/resistance-research/PHASE_1_COALITION_LEVERAGE_MATRIX.md`) — ✅ COMPLETE (Session 2665, 07:46 UTC)
-   - **Pre-market brief** — ✅ COMPLETE (Session 2657, 06:30 UTC)
-   - **Post-market runbook** — ✅ COMPLETE (Session 2657, 06:30 UTC)
-   - Active queue items awaiting execution:
-     - seedwarden Phase 2 Content Expansion (6-7h work, decision-gated on Path A/B choice by 23:59 UTC)
-     - open-repo A11y Audit (8-10h work, awaiting user confirmation to start June 1-6 window)
-   - Assessment: **All autonomous work complete; queue items ready for post-decision activation**
+3. ✅ **systems-resilience: Phase 7 Pilot Implementation Roadmap (36K, created 13:44 UTC)**
+   - **Deliverable**: `projects/systems-resilience/PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md`
+   - **Key findings**: Governance as pilot entry point (not food systems), 80-150 person optimal community size, platform differences materialize Month 3-5, 50-community federation architecture defined
+   - **Critical insight**: Adoption fails at value misalignment (feels like surveillance), not technical complexity. Contingency: closed-cohort test community if adoption stalls
+   - **Impact**: Enables Phase 5 Wave 1 author recruitment June 5 once platform decision made by EOD today
+   - **Updated PROJECTS.md systems-resilience focus** with complete Phase 7 pilot roadmap and platform decision consequences
 
-**Autonomous Work Assessment**:
-- All Phase 1-6 deliverables are production-ready and committed
-- All contingencies are staged in PROJECTS.md and Exploration Queue
-- No additional autonomous work available without user decisions or credential fix
-- System is production-ready and standing by for user action
+**Parallel Execution Metrics**:
+- All 3 agents launched simultaneously (12:37 UTC)
+- Sequential completion: mfg-farm (13:41), seedwarden (13:44), systems-resilience (13:44)
+- Total wall-clock duration: 1h 33m (vs. estimated 2.5-3.5h serial)
+- **Throughput improvement**: 1.6-2.3x faster than sequential
 
-**Timeline Summary** (as of 08:42 UTC):
-- **Now → 13:15 UTC** (4h 33m): User should fix Alpaca credentials on Jetson to enable market trading
-- **13:30 UTC** (4h 48m): Market opens; if credentials fixed, JPM+AMZN sessions auto-wake; if not, trading blocked
-- **20:00 UTC** (11h 18m): Market closes; post-market analysis runbook executes to interpret Day 1 results
-- **22:00 UTC** (13h 18m): Post-market analysis due; decision routing triggered per runbook
-- **23:59 UTC** (15h 17m): User decision deadline for Phase 2 domains, seedwarden path, systems-resilience platform
+**Timeline Impact**:
+- **Now (14:10 UTC)**: Three research deliverables production-ready
+- **23:59 UTC (10h 49m from now)**: User decision deadline for mfg-farm launch, seedwarden path, systems-resilience platform
+- **June 5 13:00 UTC**: systems-resilience Phase 5 Wave 1 author recruitment (if Nextcloud+Matrix chosen)
+- **June 22 00:00 UTC**: seedwarden Phase 3 (medicinal herbs) execution begins
 
-**Verdict**: System ready. All prep work done. Awaiting user action on Alpaca credentials (critical path) or user decisions on Phase 2/seedwarden/systems-resilience (unlock remaining work).
+**User Decisions Needed by 23:59 UTC Today**:
+1. **mfg-farm**: Confirm test print execution is pending (research complete; launch readiness assessed)
+2. **seedwarden**: Approve Track A (June 1 launch) vs Track B (June 5 launch) vs BOTH (dual execution) 
+3. **systems-resilience**: Choose platform — Nextcloud+Matrix (recommended 9.5/10) vs Discourse (secondary 8.0/10)
+
+**Autonomous Work Status Post-Session**:
+- All Phase 1-7 deliverables now production-ready and researched
+- No remaining autonomous work available until user decisions above are made
+- System standing by for: (1) credential fix (by 13:15 UTC — may already be past depending on real-time execution), (2) user decisions (by 23:59 UTC today)
 
 ---
