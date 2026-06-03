@@ -1,16 +1,16 @@
 # Check-In Report
 
-## Current Status — Session 2681 (2026-06-03 10:37–10:42 UTC)
+## Current Status — Session 2681+ (2026-06-03 10:37–10:50+ UTC)
 
 **Time Until Key Events**:
-- ⏰ **13:15 UTC** (CRITICAL): Alpaca credential fix deadline before market open
-- ⏰ **13:30 UTC**: Market opens; trading resumes if credentials fixed
-- ⏰ **20:00 UTC**: Post-market analysis (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
-- ⏰ **23:59 UTC**: User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
+- ⏰ **13:15 UTC** (~2h 25m): CRITICAL — Alpaca credential fix deadline before market open
+- ⏰ **13:30 UTC** (~2h 40m): Market opens; trading resumes if credentials fixed
+- ⏰ **20:00 UTC** (~9h 20m): Post-market analysis (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
+- ⏰ **23:59 UTC** (~13h 10m): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
 
-**Status**: 🟢 **STANDING BY** — All autonomous work complete. No unblocked work available. Credential blocker unresolved (still 2 Docker auth failures). All decision-gated work staged for user activation.
+**Status**: 🟢 **STANDING BY** — All autonomous work complete. No unblocked work available. Credential blocker REVERIFIED ACTIVE (2 Docker auth failures confirmed in latest logs). All decision-gated work staged for user activation.
 
-**Critical Blocker Status**: 🔴 STILL ACTIVE — Alpaca credentials misconfigured (ALPACA_API_KEY_ID = ALPACA_API_KEY, both `PKM03F5PK1LPV8LSBIP0`). Verification from prior sessions unchanged. **Deadline 13:15 UTC for trading window.**
+**Critical Blocker Status — REVERIFIED**: 🔴 **STILL ACTIVE** — Alpaca credentials misconfigured. Verification run June 3 10:47 UTC: `docker logs stockbot --tail=50` returned 2 auth failures ("insufficient subscription" errors). Root cause: ALPACA_API_KEY_ID = ALPACA_API_KEY (both `PKM03F5PK1LPV8LSBIP0`, should be different). **DEADLINE 13:15 UTC (2h 25m) — user must fix credentials or trading blocked at 13:30 UTC market open.**
 
 ---
 

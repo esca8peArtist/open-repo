@@ -1,35 +1,44 @@
 # Work Log
 
-## Session 2681 (2026-06-03 10:37–10:42 UTC — Orchestrator: Protocol Compliance; Standby Reconfirmed; No Autonomous Work)
+## Session 2681+ (2026-06-03 10:37–10:50+ UTC — Orchestrator: Block Reverification; Standby Reconfirmed; No Autonomous Work)
 
-**Status**: ✅ **STANDBY MODE CONFIRMED** — All Phase 1-6 autonomous work complete and staged. No unblocked work available (confirmed by design, consistent with Sessions 2678-2680). All 3 active blocks unresolved (credentials, VeraCrypt, test print). Exploration queue populated (6+ decision-gated items, exceeds 3-item minimum). Critical blocker still active (2 Docker auth failures). System awaiting user credential fix (deadline 13:15 UTC) and decisions by 23:59 UTC.
+**Status**: ✅ **STANDBY MODE CONFIRMED** — All Phase 1-6 autonomous work complete and staged. No unblocked work available (confirmed by design, consistent with Sessions 2678-2680). Critical blocker STILL ACTIVE (Alpaca auth failures continue, 2 instances in last 50 Docker logs). All 3 active blocks unresolved (credentials, VeraCrypt, test print). Exploration queue populated (6+ decision-gated items, exceeds 3-item minimum). System awaiting user credential fix (deadline 13:15 UTC ~2h 45m from now) and decisions by 23:59 UTC (~13h from now).
 
-**Work Completed** (~5 min):
+**Work Completed** (~12 min):
 
-1. ✅ **Protocol-Compliant Orientation** (3 min):
+1. ✅ **Protocol-Compliant Orientation** (4 min):
    - Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md → all consistent
    - Verified: No new inbox items; all orchestration files current
    - Confirmed: All Phase 1-6 autonomous work staged and production-ready
+   - Found: ORCHESTRATOR_STATE.md generated 10:37:28 UTC (current)
 
-2. ✅ **Active Blocks Verification** (1 min):
-   - BLOCKED.md: Confirmed 3 active blocks all unresolved
-   - Credentials: Still 2 Docker failures (unchanged from Sessions 2677-2680)
-   - VeraCrypt: User action required (Windows restart)
-   - Test print: User action required (3D print execution)
+2. ✅ **Active Block Reverification** (5 min):
+   - **Command executed**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'"`
+   - **Result**: 2 (two auth failures still present in recent logs)
+   - **Verdict**: 🔴 **BLOCK STILL ACTIVE** — Alpaca WebSocket auth failures ongoing
+   - **Root cause unchanged**: ALPACA_API_KEY_ID and ALPACA_API_KEY both set to same value
+   - **Impact**: Trading cannot execute at 13:30 UTC market open unless credentials fixed
+   - **Deadline**: 13:15 UTC (2h 45m to fix before market opens)
+   - **User action required**: SSH to Jetson, verify/correct /opt/stockbot/.env, restart Docker
 
-3. ✅ **Autonomous Work Assessment** (1 min):
+3. ✅ **BLOCKED.md & PROJECTS.md State Check** (2 min):
+   - BLOCKED.md shows 3 active blocks (stockbot, cybersecurity-hardening, mfg-farm)
+   - All 3 unchanged from Sessions 2679-2680
+   - PROJECTS.md focus lines current (Session 2679 pruning complete)
+
+4. ✅ **Autonomous Work Assessment** (1 min):
    - Re-read project Goals per protocol
    - Finding: All unblocked work requires explicit user decisions
-   - Exploration queue: 6+ items, all explicitly gated ("Do NOT begin until tasked")
-   - Verdict: No autonomous scope available; Sessions 2678-2680 assessment confirmed correct
+   - Exploration queue: 6+ items, all decision-gated (resistance-research, seedwarden, systems-resilience, open-repo)
+   - Verdict: No autonomous scope available; Sessions 2678-2680 assessment confirmed CORRECT
 
-**Standing By**:
-- 🔴 **CRITICAL** (deadline 13:15 UTC): Alpaca credential fix before market open
-- 🟢 **Domain 59**: Execution-ready for user approval
-- 🟡 **Phase 2/Seedwarden/Systems-Resilience**: User decisions by 23:59 UTC
-- ⏰ **20:00 UTC**: Post-market analysis execution (if trading occurred)
+**Standing By** (in order of deadline urgency):
+- 🔴 **CRITICAL — 2h 45m until 13:15 UTC**: Alpaca credential fix (BLOCK REVERIFIED ACTIVE)
+- 🟢 **Domain 59**: Execution-ready for user approval (~30–45 min user work)
+- 🟡 **13h until 23:59 UTC**: Phase 2 domains, seedwarden track, systems-resilience platform decisions
+- ⏰ **~9h 23m until 20:00 UTC**: Post-market analysis execution (if trading occurred)
 
-**System Status**: Production-ready. All preparation complete. No autonomous work. Standing by for user actions.
+**System Status**: Production-ready. All preparation complete. No autonomous work. Standing by for user actions on critical path (Alpaca credentials) and decision gates (Phase 2/seedwarden/systems-resilience).
 
 ---
 
