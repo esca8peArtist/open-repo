@@ -70,6 +70,26 @@ ALPACA_SECRET_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw (no change)
 
 ---
 
+## Since Last Check-in — Session 2691 (2026-06-03 12:17–12:31 UTC)
+
+**What Happened**:
+- ✅ **Full re-orientation completed** — Verified ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md status
+- ✅ **Critical blocker re-verified** — Alpaca WebSocket auth failure (code 409) still active; both ALPACA_API_KEY and ALPACA_API_KEY_ID set to `PKM03F5PK1LPV8LSBIP0`; requires immediate user action
+- ✅ **Autonomous work assessment** — No autonomous work available: all projects blocked on user credential fix (stockbot), manual actions (test print, VeraCrypt restart), or user decisions (Phase 2/seedwarden/systems-resilience paths)
+- ✅ **Exploration Queue verified** — 3 future-dated items queued (June 8-14); no immediate autonomous work available
+
+**What's Ready**:
+- 📋 **Market-open readiness**: Pre-market brief + market analysis runbook both production-ready (JUNE_3_PRE_MARKET_BRIEF.md, JUNE_3_MARKET_ANALYSIS_RUNBOOK.md)
+- 📋 **Phase 2 dispatch**: Domain 59 Senate Finance CTC dispatch materials staged and execution-ready (DOMAIN_59_SENATE_FINANCE_DISPATCH.md)
+- 📋 **Exploration queue**: Items 16/53/54 staged for June 8-14 execution (post-checkpoint research)
+- 📋 **Post-market analysis**: Decision routing framework ready for 20:00 UTC execution
+
+**Time-Critical Actions Required**:
+- 🔴 **BY 13:15 UTC (44 min)**: Fix Alpaca credentials on Jetson (see exact steps below)
+- 🟡 **BY 23:59 UTC (12h)**: User decisions on Phase 2 domain dispatch, seedwarden track (A/B), systems-resilience platform (Nextcloud+Matrix vs Discourse)
+
+---
+
 ## Needs Your Input (by EOD 23:59 UTC today)
 
 ### 🔴 CRITICAL (by 13:15 UTC — ~75 minutes):
