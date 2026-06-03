@@ -1,8 +1,3 @@
 WCAG Level,Violation,Element,Severity,Remediation,Status,Page
-A,html-has-lang: Ensure every HTML document has a lang attribute,html,serious,<html> element must have a lang attribute,Open,Swagger UI (FastAPI /docs)
-N/A,landmark-one-main: Ensure the document has a main landmark,html,moderate,Document should have one main landmark,Open,Swagger UI (FastAPI /docs)
-N/A,"page-has-heading-one: Ensure that the page, or at least one of its frames contains a level-one heading",html,moderate,Page should contain a level-one heading,Open,Swagger UI (FastAPI /docs)
+N/A,heading-order: Ensure the order of headings is semantically correct,.title,moderate,Heading levels should only increase by one,Open,Swagger UI (FastAPI /docs)
 A,color-contrast: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds,small:nth-child(2),serious,Elements must meet minimum color contrast ratio thresholds,Open,ReDoc (API documentation)
-A,html-has-lang: Ensure every HTML document has a lang attribute,html,serious,<html> element must have a lang attribute,Open,ReDoc (API documentation)
-N/A,landmark-one-main: Ensure the document has a main landmark,html,moderate,Document should have one main landmark,Open,ReDoc (API documentation)
-N/A,region: Ensure all page content is contained by landmarks,h1,moderate,All page content should be contained by landmarks,Open,ReDoc (API documentation)
