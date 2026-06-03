@@ -8,6 +8,31 @@
 
 ---
 
+## Since Last Check-in — Session 2710 (2026-06-03 ORIENTATION-ONLY)
+
+**Status**: Orchestrator orientation and verification completed. All autonomous work confirmed complete. System standing by for 4 user decisions (due EOD 23:59 UTC today).
+
+**Work Completed**: None (no autonomous scope available)
+
+**Verification**: 
+- ✅ ORCHESTRATOR_STATE.md confirms all Phase 1-6 work complete (Sessions 2680-2683, 2707-2709 verified)
+- ✅ BLOCKED.md: 3 active blocks, all awaiting user action (no resolutions to process)
+- ✅ INBOX.md: No new items to process
+- ✅ PROJECTS.md: All projects properly prioritized; decision materials staged
+- ✅ Exploration Queue: 6+ items queued (all decision-gated); exceeds minimum threshold
+
+**Decision Materials Status**: ALL PRODUCTION-READY AND STAGED
+- Domain 49: `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md`, pre-flight runbooks, contact lists (committed)
+- Alpaca feed: `ALPACA_IEX_FEED_ACTIVATION_RUNBOOK.md`, `ALPACA_SIP_SUBSCRIPTION_UPGRADE_RUNBOOK.md` (committed)
+- Platform choice: Both Nextcloud+Matrix and Discourse v2.0 roadmaps (committed)
+- seedwarden Track: `GATE_1_LAUNCH_SEQUENCE_CHECKLIST.md`, `TRACK_B_EXECUTION_CHECKLIST.md` (committed)
+
+**System Status**: Standing by for user decisions. Next orchestrator action: execute decisions immediately upon user input (June 4+).
+
+**Time Remaining**: 23h 47m until 23:59 UTC deadline.
+
+---
+
 ## Since Last Check-in — Session 2709 (2026-06-03 17:04–17:35 UTC)
 
 **Work Completed**: Exploration Queue Item 1 — IEX vs SIP Data Feed Signal Quality Analysis
