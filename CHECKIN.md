@@ -1,5 +1,40 @@
 # Check-In Report
 
+## Since Last Check-in (Session 2661 — 2026-06-03 07:08–07:20 UTC) — Orchestrator Standby: Block Verified Active, Awaiting User Actions
+
+### What Was Accomplished
+
+✅ **Block Verification Repeated** (Session 2660 already confirmed this): Alpaca auth failure CONFIRMED STILL ACTIVE (2 failures in Docker logs). Market opens in 6h 22min (13:30 UTC). User action required on Jetson credentials before trading can proceed.
+
+✅ **Autonomy Assessment Confirmed**: Revalidated that NO AUTONOMOUS WORK EXISTS:
+- All high-priority project work is either blocked on external user actions (Alpaca creds, VeraCrypt restart, test print execution) or awaiting user decisions with same-day 23:59 UTC deadlines (resistance-research Domain 59 distribution, seedwarden Track A/B launch decision)
+- Phase 2 research work is scheduled for July–August per user timeline, not authorized for June
+- No exploratory work or lower-priority projects have unblocked scope
+
+**Status**: Orchestrator standing by. No autonomous work available. Waiting for:
+1. User Alpaca credential fix (CRITICAL, 6h 22min)
+2. Phase 2 domain decisions (deadline 23:59 UTC today)
+
+### Items Needing User Input
+
+**🔴 CRITICAL (Before 13:30 UTC market open — 6h 22min remaining)**:
+1. **Alpaca Credentials Fix on Jetson** — See Session 2660 CHECKIN for detailed instructions
+
+**Important (Deadline 23:59 UTC today)**:
+2. **Resistance-Research Domain 59 Distribution** — Fully prepared, 30-45 min to execute
+3. **Seedwarden Track A/B Launch Decision** — Fully prepared, 45-60 min to execute
+4. **Cybersecurity-Hardening Phase 1 Continuation** — Awaiting Windows restart
+
+### Project Status Summary
+- 🔴 **stockbot** (P1): CRITICAL BLOCKER — Alpaca auth, trading impossible without fix
+- 🟡 **resistance-research** (P2): Phase 1 analysis complete; Domain 59 distribution prepped, user decision needed
+- 🟡 **seedwarden** (P5): Launch-ready; user decision needed
+- 🔴 **cybersecurity-hardening** (P3): Phase 1 in progress; user restart needed
+- 🔴 **mfg-farm** (P4): All prepped; user test print needed
+- ✅ **All others**: Complete, paused, or awaiting review/deployment
+
+---
+
 ## Since Last Check-in (Session 2660 — 2026-06-03 07:00–07:15 UTC) — Critical Block Verification + Project Status Assessment
 
 ### What Was Accomplished
