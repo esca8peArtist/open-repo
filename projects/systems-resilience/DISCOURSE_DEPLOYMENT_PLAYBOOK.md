@@ -1,1209 +1,753 @@
----
-title: "Discourse Deployment Playbook"
-project: systems-resilience
-phase: 5
-platform: "Path B — Discourse Self-Hosted (Secondary Option)"
-confidence: 8.0/10
-status: READY-TO-EXECUTE — 3-4 hour deployment if Path A is not chosen
-deployment_window: "3–4 hours (June 5, 06:00–10:00 UTC)"
-target_users: 30–50 concurrent authors
-offline_capable: false
-cost_annual: "$84–$204 (Hetzner VPS + email + domain)"
-created: 2026-06-03
-version: 2.0
-extends: PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md
-cross_references:
-  - PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md
-  - PHASE_6_IMPLEMENTATION_GUIDE_OPTION_A_DISCOURSE.md
-  - PHASE_6_PLATFORM_ANALYSIS.md
-tradeoffs:
-  advantage: "Fastest deployment (3-4h vs 6-8h); best community governance UX; GitHub Actions integration"
-  limitation: "No offline mode; requires VPS ($7-10/month); external dependency"
----
-
 # Discourse Deployment Playbook
-## Path B: Production-Ready Copy-Paste Deployment Guide
-### Target: June 5, 2026 — Phase 5 Wave 1 Author Recruitment
+## Phase 5 Platform B — Community Forum Setup Guide
+
+**Status**: Phase 5 Wave 1 platform deployment (author recruitment June 5 13:00 UTC)  
+**Target Environment**: Production (100-150 person community)  
+**Estimated Deployment Time**: 2-3 hours  
+**Success Criteria**: Discourse online + GitHub Pages integration + trust levels configured + test users created
 
 ---
 
-## Preface: When to Use This Playbook
+## Executive Summary
 
-Use this playbook if:
-- Path A (Nextcloud+Matrix) fails to deploy on June 5 by 12:00 UTC
-- User explicitly selects Discourse as the Phase 5 platform
-- A simpler, browser-based author experience is prioritized over offline capability
+**Platform B** provides a traditional forum experience with modern community governance features. Authors can:
+- Create discussion threads organized by category
+- Use trust-level-based self-governance (users earn moderation powers)
+- Export discussions to GitHub Pages for permanent documentation
+- Integrate with GitHub for SSO and contributor recognition
 
-**Key facts**:
-- Discourse deploys in 3–4 hours (versus 6–8 for Nextcloud+Matrix)
-- No offline document editing (browser-only; PWA caching for reading only)
-- Requires a $7–10/month VPS (cannot run well on raspby1 alongside stockbot)
-- Trust-level auto-governance is Discourse's strongest feature
-- GitHub Actions integration enables automated publication announcements
+**Key Advantage**: Lightweight, fast deployments with built-in governance. No separate chat service required (unlike Platform A's Nextcloud + Matrix).
 
-**Decision gate**: If choosing Path B, DNS must be configured by June 4 (24h propagation required for Let's Encrypt). See Part 1, Section 1.2.
+**Why This Configuration**:
+- **Discourse**: Battle-tested forum software with excellent community moderation
+- **PostgreSQL + Redis**: Standard backing services
+- **GitHub Integration**: SSO login, contributor badges, automatic exports
+- **Trust Levels 1-4**: Community-driven governance without staff overhead
 
----
-
-## Part 1: Pre-Deployment Checklist
-
-Complete all items by June 4, 23:59 UTC.
-
-### 1.1 VPS Provisioning
-
-**Recommended: Hetzner Cloud CPX21** (~$7/month)
-- 3 vCPU, 4 GB RAM, 80 GB NVMe SSD
-- Ubuntu 22.04 LTS (Discourse requirement; do not use Ubuntu 24.04 LTS)
-- Sign up at https://www.hetzner.com/cloud
-- Create project → Add Server → CPX21 → Ubuntu 22.04 → SSH key (add your public key)
-- Note the IPv4 address immediately
-
-**Alternatives** (if Hetzner is not available):
-- DigitalOcean Basic Droplet: $12/month, 2 GB RAM (minimum; Discourse recommends 2 GB+)
-- Vultr Cloud Compute: $12/month, similar spec
-
-**Post-provisioning verification**:
-```bash
-# Test SSH access (should work within 60 seconds of VPS creation)
-ssh root@<VPS_IP>
-
-# Confirm OS
-lsb_release -a
-# Must show: Ubuntu 22.04.x LTS
-
-# Confirm disk
-df -h /
-# Must show 60+ GB available (80 GB SSD minus OS)
-
-# Confirm RAM
-free -h
-# Must show 4+ GB total
-```
-
-### 1.2 Domain and DNS (CRITICAL — Do First, Allow 24h Propagation)
-
-**Register a domain**:
-- Namecheap: ~$10/year for `.org`
-- Cloudflare Registrar: ~$8.50/year (also manages DNS, recommended)
-- Google Domains (now Squarespace): ~$12/year
-
-**Recommended domain**: `resilience-hub.org` or `community.resilience-hub.org`
-
-**DNS Configuration** (after registering):
-```
-Type: A
-Name: @  (or "community" for subdomain)
-Value: <VPS_IP>
-TTL: 300 (5 minutes)
-```
-
-**Test propagation**:
-```bash
-# Run from any machine — should resolve to VPS IP
-nslookup resilience-hub.org 8.8.8.8
-# or
-dig resilience-hub.org +short
-
-# Let's Encrypt will fail if DNS is not propagated
-# Wait until nslookup returns the VPS IP before proceeding to Part 2
-```
-
-### 1.3 Email / SMTP
-
-**Required: Discourse will refuse to start without valid SMTP credentials.**
-
-**Mailgun** (recommended for small communities):
-1. Create account at https://www.mailgun.com/
-2. Add your domain under "Sending" → "Domains" → "Add a sending domain"
-3. Add the DNS records Mailgun provides (2 TXT records, 1 CNAME)
-4. Go to "Sending" → "Domain settings" → "SMTP credentials"
-5. Copy SMTP hostname, port (587), username, and password
-
-**Brevo** (alternative, 300 emails/day free):
-1. Sign up at https://app.brevo.com/
-2. Settings → SMTP & API → SMTP tab
-3. Copy SMTP server, port, login, password
-
-**Credentials needed**:
-```
-SMTP_ADDRESS=smtp.mailgun.org
-SMTP_PORT=587
-SMTP_USER_NAME=postmaster@mg.resilience-hub.org
-SMTP_PASSWORD=<your-mailgun-password>
-DISCOURSE_DEVELOPER_EMAILS=admin@youremail.com
-```
-
-### 1.4 GitHub Configuration (for OAuth + GitHub Actions)
-
-**GitHub OAuth App** (enables "Login with GitHub" button):
-1. Go to https://github.com/settings/developers → "OAuth Apps" → "New OAuth App"
-2. Application name: `Resilience Hub`
-3. Homepage URL: `https://resilience-hub.org`
-4. Authorization callback URL: `https://resilience-hub.org/auth/github/callback`
-5. Register application
-6. Note the **Client ID** and generate a **Client Secret**
-
-**GitHub Personal Access Token** (for GitHub Actions automation):
-1. Go to https://github.com/settings/tokens → "Generate new token (classic)"
-2. Note: `repo`, `workflow` scopes
-3. Generate and copy token — store in `.env` or GitHub Secrets
+**Trade-offs vs Platform A**:
+- ✗ No offline document editing (forum posts only)
+- ✓ Faster deployment (2h vs 4h)
+- ✓ Simpler operations (fewer containers)
+- ✓ Lower resource requirements
 
 ---
 
-## Part 2: Step-by-Step Deployment
+## Part 1: Pre-Flight Checklist
 
-**Total time: 3–4 hours** (including DNS wait time if done same-day).
+### Infrastructure Requirements
 
-### Step 1: VPS Initial Setup (15 min — 06:00–06:15 UTC)
+- [ ] **Docker Host**:
+  - OS: Ubuntu 22.04 LTS or CentOS 8+
+  - CPU: 2 cores minimum (4 cores for 150+ users)
+  - RAM: 8 GB minimum (16 GB recommended)
+  - Storage: 100 GB SSD
+  - Network: Public IP address + reliable internet
 
-```bash
-ssh root@<VPS_IP>
+- [ ] **Domains**:
+  - [ ] `forum.example.com` → Docker host IP
+  - [ ] `github.example.com` (optional, for OAuth redirect)
+  - [ ] DNS TTL: 300 (5 minutes)
 
-# System update
-apt update && apt upgrade -y
+- [ ] **TLS Certificates**:
+  - [ ] Email for Let's Encrypt ready
+  - [ ] Ports 80 (HTTP) and 443 (HTTPS) open
 
-# Install Docker (Discourse official installer requires Docker; not docker-compose)
-curl -fsSL https://get.docker.com | bash
+- [ ] **GitHub Integration**:
+  - [ ] GitHub organization created
+  - [ ] GitHub OAuth app registered (see Section 3.3)
+  - [ ] GitHub Personal Access Token generated (for exports)
 
-# Verify Docker
-docker --version
-# Expected: Docker version 24.x.x or higher
+- [ ] **Email Delivery**:
+  - [ ] SMTP server configured (SendGrid, AWS SES, or own)
+  - [ ] Test email address ready
 
-# Install git
-apt install -y git curl
+- [ ] **Backups**:
+  - [ ] S3 bucket or external storage ready
+  - [ ] Daily backup schedule planned
 
-# Create discourse user with Docker access
-adduser --disabled-password --gecos "" discourse
-usermod -aG docker discourse
+---
 
-# Create SSH directory for discourse user
-mkdir -p /home/discourse/.ssh
-cp ~/.ssh/authorized_keys /home/discourse/.ssh/ 2>/dev/null || true
-chown -R discourse:discourse /home/discourse/.ssh
-chmod 700 /home/discourse/.ssh
+## Part 2: Docker Environment Setup
 
-# Switch to discourse user for installation
-su - discourse
-```
-
-### Step 2: Install Discourse Official Launcher (45 min — 06:15–07:00 UTC)
-
-```bash
-# As discourse user
-
-# Clone official Discourse Docker
-git clone https://github.com/discourse/discourse_docker.git ~/discourse
-cd ~/discourse
-
-# Create containers directory (needed by launcher)
-mkdir -p containers
-
-# Copy the standalone app template
-cp samples/standalone.yml containers/app.yml
-```
-
-**Edit `containers/app.yml`** (this is the key configuration file):
+### 2.1 Installation
 
 ```bash
-# Open for editing
-nano containers/app.yml
+# Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+# Add user to docker group
+sudo usermod -aG docker $USER
+newgrp docker
+
+# Verify
+docker --version && docker compose --version
 ```
 
-Required changes in `app.yml`:
+### 2.2 Firewall
+
+```bash
+# Ubuntu/Debian
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw enable
+
+# CentOS/RHEL
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --reload
+```
+
+### 2.3 Directory Structure
+
+```bash
+mkdir -p /home/docker-deploy/discourse
+cd /home/docker-deploy/discourse
+
+mkdir -p data/{postgres,redis,uploads,backups}
+mkdir -p nginx/{conf.d,ssl}
+
+sudo chown -R $USER:$USER /home/docker-deploy/discourse
+chmod 700 data/
+
+# Create .env
+touch .env
+chmod 600 .env
+```
+
+---
+
+## Part 3: Configuration Files
+
+### 3.1 Environment Variables (.env)
+
+```bash
+cat > .env << 'EOF'
+# === Discourse Configuration ===
+DISCOURSE_HOSTNAME=forum.example.com
+DISCOURSE_DEVELOPER_EMAILS=admin@example.com
+DISCOURSE_REDIS_HOST=redis
+DISCOURSE_DB_HOST=postgres
+DISCOURSE_DB_NAME=discourse
+DISCOURSE_DB_USERNAME=discourse_user
+DISCOURSE_DB_PASSWORD=GENERATE_RANDOM_32_CHAR_PASSWORD_HERE
+
+# === GitHub OAuth ===
+GITHUB_CLIENT_ID=YOUR_GITHUB_CLIENT_ID
+GITHUB_CLIENT_SECRET=YOUR_GITHUB_CLIENT_SECRET
+GITHUB_ORGANIZATION=your-org  # For automatic invites
+
+# === Email (SMTP) ===
+DISCOURSE_SMTP_ADDRESS=smtp.sendgrid.net
+DISCOURSE_SMTP_PORT=587
+DISCOURSE_SMTP_USERNAME=apikey
+DISCOURSE_SMTP_PASSWORD=SG.YOUR_SENDGRID_API_KEY
+DISCOURSE_SMTP_ENABLE_START_TLS=true
+DISCOURSE_NOTIFICATION_EMAIL=noreply@example.com
+
+# === Redis ===
+REDIS_PASSWORD=GENERATE_RANDOM_32_CHAR_PASSWORD_HERE
+
+# === PostgreSQL ===
+POSTGRES_PASSWORD=GENERATE_RANDOM_32_CHAR_PASSWORD_HERE
+
+# === Let's Encrypt ===
+LETSENCRYPT_EMAIL=letsencrypt@example.com
+ACME_CA_URI=https://acme-v02.api.letsencrypt.org/directory
+
+# === General ===
+TIMEZONE=UTC
+RAILS_ENV=production
+DISCOURSE_SMTP_AUTHENTICATION=login
+EOF
+
+# Generate secure passwords
+python3 -c "import secrets; print(secrets.token_urlsafe(24))"
+```
+
+### 3.2 docker-compose.yml
 
 ```yaml
-# ── Core Settings ──────────────────────────────────────────────────────────
-env:
-  DISCOURSE_HOSTNAME: 'resilience-hub.org'  # Your domain
-  DISCOURSE_DEVELOPER_EMAILS: 'admin@youremail.com'
+version: '3.9'
 
-  # SMTP settings
-  DISCOURSE_SMTP_ADDRESS: smtp.mailgun.org
-  DISCOURSE_SMTP_PORT: 587
-  DISCOURSE_SMTP_USER_NAME: 'postmaster@mg.resilience-hub.org'
-  DISCOURSE_SMTP_PASSWORD: 'REPLACE_WITH_SMTP_PASSWORD'
-  DISCOURSE_SMTP_ENABLE_START_TLS: true
-  DISCOURSE_SMTP_AUTHENTICATION: login
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: discourse-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: discourse_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: discourse
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8"
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U discourse_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G
 
-  # Let's Encrypt
-  LETSENCRYPT_ACCOUNT_EMAIL: 'admin@youremail.com'
+  redis:
+    image: redis:7-alpine
+    container_name: discourse-redis
+    restart: unless-stopped
+    command: redis-server --requirepass ${REDIS_PASSWORD} --maxmemory 2gb --maxmemory-policy allkeys-lru
+    volumes:
+      - ./data/redis:/data
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G
 
-  # Performance tuning for small VPS (4 GB RAM)
-  UNICORN_WORKERS: 2
-  DISCOURSE_DB_POOL: 5
+  discourse:
+    image: discourse/discourse:latest
+    container_name: discourse-app
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DISCOURSE_HOSTNAME: ${DISCOURSE_HOSTNAME}
+      DISCOURSE_DEVELOPER_EMAILS: ${DISCOURSE_DEVELOPER_EMAILS}
+      DISCOURSE_REDIS_HOST: redis
+      DISCOURSE_REDIS_PASSWORD: ${REDIS_PASSWORD}
+      DISCOURSE_DB_HOST: postgres
+      DISCOURSE_DB_NAME: ${DISCOURSE_DB_NAME}
+      DISCOURSE_DB_USERNAME: ${DISCOURSE_DB_USERNAME}
+      DISCOURSE_DB_PASSWORD: ${DISCOURSE_DB_PASSWORD}
+      DISCOURSE_SMTP_ADDRESS: ${DISCOURSE_SMTP_ADDRESS}
+      DISCOURSE_SMTP_PORT: ${DISCOURSE_SMTP_PORT}
+      DISCOURSE_SMTP_USERNAME: ${DISCOURSE_SMTP_USERNAME}
+      DISCOURSE_SMTP_PASSWORD: ${DISCOURSE_SMTP_PASSWORD}
+      DISCOURSE_SMTP_ENABLE_START_TLS: ${DISCOURSE_SMTP_ENABLE_START_TLS}
+      DISCOURSE_NOTIFICATION_EMAIL: ${DISCOURSE_NOTIFICATION_EMAIL}
+      DISCOURSE_SMTP_AUTHENTICATION: ${DISCOURSE_SMTP_AUTHENTICATION}
+      RAILS_ENV: production
+      UNICORN_WORKERS: 4
+      UNICORN_TIMEOUT: 30
+      LANG: en_US.UTF-8
+    volumes:
+      - ./data/uploads:/var/www/discourse/public/uploads
+      - ./data/backups:/var/www/discourse/public/backups
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+    ports:
+      - "127.0.0.1:3000:3000"
 
-# ── Volumes ────────────────────────────────────────────────────────────────
+  sidekiq:
+    image: discourse/discourse:latest
+    container_name: discourse-sidekiq
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DISCOURSE_REDIS_HOST: redis
+      DISCOURSE_REDIS_PASSWORD: ${REDIS_PASSWORD}
+      DISCOURSE_DB_HOST: postgres
+      DISCOURSE_DB_NAME: ${DISCOURSE_DB_NAME}
+      DISCOURSE_DB_USERNAME: ${DISCOURSE_DB_USERNAME}
+      DISCOURSE_DB_PASSWORD: ${DISCOURSE_DB_PASSWORD}
+      RAILS_ENV: production
+      LANG: en_US.UTF-8
+    volumes:
+      - ./data/uploads:/var/www/discourse/public/uploads
+      - ./data/backups:/var/www/discourse/public/backups
+    networks:
+      - backend
+    command: bundle exec sidekiq -e production -c 4 -r /var/www/discourse
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G
+
+  nginx:
+    image: nginx:latest-alpine
+    container_name: discourse-nginx
+    restart: unless-stopped
+    depends_on:
+      - discourse
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./data/letsencrypt:/etc/letsencrypt
+    ports:
+      - "127.0.0.1:80:80"
+      - "127.0.0.1:443:443"
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+
+  certbot:
+    image: certbot/certbot:latest
+    container_name: discourse-certbot
+    restart: unless-stopped
+    volumes:
+      - ./data/letsencrypt:/etc/letsencrypt
+    entrypoint: /bin/sh -c 'trap exit TERM; while :; do certbot renew --webroot -w /etc/letsencrypt/webroot --quiet; sleep 12h & wait $${!}; done'
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.23.0.0/16
+
 volumes:
-  - volume:
-      host: /var/discourse/shared/standalone
-      guest: /shared
-  - volume:
-      host: /var/discourse/shared/standalone/log/var-log
-      guest: /var/log
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
 ```
 
-**Validate the configuration**:
-```bash
-./launcher check app
-# Should print no errors
-```
-
-**Bootstrap (takes 20–40 minutes)**:
-```bash
-./launcher bootstrap app
-# This builds the Discourse Docker image — takes 20-40 min
-# Expected final line: "Successfully bootstrapped, to start use ./launcher start app"
-```
-
-**Start Discourse**:
-```bash
-./launcher start app
-# Wait 60 seconds, then verify:
-docker ps | grep discourse_app
-# Should show: Up About a minute
-```
-
-### Step 3: Service Verification (20 min — 07:00–07:20 UTC)
-
-```bash
-# Test HTTP/HTTPS from VPS itself
-curl -I http://resilience-hub.org
-# Expected: HTTP/1.1 301 Moved Permanently → to HTTPS
-
-curl -I https://resilience-hub.org
-# Expected: HTTP/2 200 OK (with Let's Encrypt cert)
-
-# View live logs
-docker logs discourse_app --tail 50 | grep -E "INFO|ERROR|WARN"
-
-# If you see "Puma starting" → Discourse is up
-# If you see "Errno::ECONNREFUSED" → wait 30 more seconds
-
-# Test from external machine
-curl -s https://resilience-hub.org | grep -o "<title>.*</title>"
-# Expected: <title>Resilience Hub</title>
-```
-
-### Step 4: Admin Account Creation (15 min — 07:20–07:35 UTC)
-
-```bash
-# Register first admin user (this links to the DISCOURSE_DEVELOPER_EMAILS)
-./launcher exec app discourse email:update
-
-# Open https://resilience-hub.org in browser
-# Click "Sign Up"
-# Use the DISCOURSE_DEVELOPER_EMAILS address
-# A confirmation email will be sent
-
-# OR create admin via rails console (no email required):
-./launcher exec app rake admin:create
-# Enter email, password when prompted
-# Type "Y" to make admin
-```
-
-### Step 5: Core Configuration (30 min — 07:35–08:05 UTC)
-
-All via `/admin/site_settings` in browser:
-
-**Branding**:
-- `title`: Resilience Hub
-- `site_description`: Community coordination for Phase 5 & 6 resilience projects
-- `contact_email`: admin@youremail.com
-- `notification_email`: noreply@resilience-hub.org
-
-**Authentication**:
-- `enable_local_logins`: true (allow username/password)
-- `github_client_id`: (from Part 1, Step 1.4)
-- `github_client_secret`: (from Part 1, Step 1.4)
-- `enable_github_logins`: true
-
-**Posting restrictions** (reduce spam during Phase 5):
-- `min_post_length`: 20
-- `max_topics_per_day`: 10 (for new users)
-- `min_first_post_length`: 100
-
-**Email settings**:
-- `reply_by_email_enabled`: false (keep email simple for now)
-- `email_digests`: true
-- `digest_frequency`: daily
-
-### Step 6: Create Category Structure (20 min — 08:05–08:25 UTC)
-
-Via `/admin/categories` → New Category:
-
-```
-Category 1: Announcements
-- Description: Phase 5 Wave publications, critical updates
-- Color: #0088CC (blue)
-- Permissions: staff (post) + everyone (read)
-
-Category 2: Wave 1 — Community Implementation
-- Description: Feedback thread for Community Implementation Playbook
-- Color: #2CA089 (green)
-- Permissions: author_phase5 group (post) + trust_level_0 (read)
-
-Category 3: Wave 1 — Energy Systems
-- Description: Feedback thread for Microgrids Infrastructure guide
-- Color: #2CA089
-
-Category 4: Wave 1 — Human Systems
-- Description: Psychological support + conflict resolution guides
-- Color: #2CA089
-
-Category 5: Wave 1 — Animal Protocols
-- Description: Veterinary care guide
-- Color: #2CA089
-
-Category 6: Phase 6 Coordination
-- Description: Phase 6 domain planning (editors only)
-- Permissions: staff (full) + trust_level_3 (post)
-
-Category 7: General Discussion
-- Color: #808080 (gray)
-- Permissions: everyone
-
-Category 8: Technical Issues
-- Color: #BB2929 (red)
-```
-
-Create user group for authors:
-- `/admin/groups` → New Group
-- Name: `author_phase5`
-- Automatic membership: invite-only
-- Add members as they are onboarded
-
-### Step 7: GitHub OAuth Verification (10 min — 08:25–08:35 UTC)
-
-```bash
-# Test GitHub OAuth login:
-# 1. Log out of admin account
-# 2. Click "Log In" → "GitHub"
-# 3. Authorize the GitHub OAuth application
-# 4. Should redirect back to Discourse and log in
-
-# If OAuth fails, check:
-# - Authorization callback URL matches exactly: https://resilience-hub.org/auth/github/callback
-# - Client ID and Secret copied without leading/trailing spaces
-# - GitHub OAuth app is not suspended
-```
-
----
-
-## Part 3: Trust-Level Self-Governance Configuration
-
-Discourse's trust level system automates moderation. Configure once; no manual intervention needed.
-
-### Trust Level Settings (`/admin/site_settings` → search "trust_level")
-
-```
-# Level 0 → Level 1 (Basic User) — earned in first session
-trust_level_0_requires_topics_entered: 2
-trust_level_1_requires_days_visited: 1
-trust_level_1_requires_read_posts: 5
-trust_level_1_requires_time_spent_mins: 10
-trust_level_1_requires_topics_replied_to: 0
-
-# Level 1 → Level 2 (Member) — earned after regular participation
-trust_level_2_requires_days_visited: 10
-trust_level_2_requires_read_posts: 50
-trust_level_2_requires_time_spent_mins: 60
-trust_level_2_requires_topics_replied_to: 3
-trust_level_2_requires_likes_received: 0
-
-# Level 2 → Level 3 (Regular) — auto-promoted after sustained engagement
-trust_level_3_requires_days_visited: 50
-trust_level_3_requires_read_posts: 500
-trust_level_3_requires_posts_created: 10
-trust_level_3_requires_topics_replied_to: 10
-
-# Rate limits for Level 0 (new users)
-# These prevent spam before trust is established
-max_new_topics_per_day: 3
-max_topics_in_first_day: 2
-max_replies_in_first_day: 5
-```
-
-### Trust Level Capabilities Reference
-
-| Level | Name | What they can do | Phase 5 meaning |
-|-------|------|-----------------|-----------------|
-| 0 | New | Read, post with approval | Guest readers |
-| 1 | Basic | Post freely, like, use all post types | Active readers |
-| 2 | Member | Invite others, wiki posts, post summaries | Peer reviewers |
-| 3 | Regular | Recategorize, rename, close topics | Trusted authors |
-| 4 | Leader | All moderation actions | Editors |
-
-**For Phase 5 authors**: Manually grant Trust Level 3 to all confirmed authors upon account creation. This gives them full posting capability immediately, bypassing the 50-day accumulation requirement.
-
-```bash
-# Grant trust level 3 to an author via admin panel:
-# /admin/users/username → Trust Level → "Grant Trust Level 3"
-
-# OR via Discourse API (automated):
-curl -X PUT https://resilience-hub.org/admin/users/<user_id>/trust_level \
-  -H "Api-Key: <admin-api-key>" \
-  -H "Api-Username: admin" \
-  -d "level=3"
-```
-
----
-
-## Part 4: REST API Automation Scripts
-
-### 4.1 Generate Admin API Key
-
-```bash
-# Via browser: /admin/api → "Generate New API Key"
-# Scope: Global
-# Username: admin
-
-# Test key works
-DISCOURSE_URL="https://resilience-hub.org"
-API_KEY="<paste-key-here>"
-
-curl -s -H "Api-Key: ${API_KEY}" \
-     -H "Api-Username: admin" \
-     "${DISCOURSE_URL}/admin/users/list.json" | jq '.[0].username'
-```
-
-### 4.2 Bulk Author Account Creation Script
-
-```bash
-cat > create-discourse-authors.sh << 'EOF'
-#!/bin/bash
-# Creates Discourse accounts for all Phase 5 authors via REST API
-# Discourse sends welcome email automatically on account creation
-
-DISCOURSE_URL="https://resilience-hub.org"
-API_KEY="REPLACE_WITH_API_KEY"
-
-# Author list: username "Display Name" email trust_level
-AUTHORS=(
-  "author1_fname_lname \"Author One Name\" author1@email.com 3"
-  "author2_fname_lname \"Author Two Name\" author2@email.com 3"
-  # Add all Wave 1 authors from PHASE_5_WAVE_1_AUTHOR_RECRUITMENT_RUNBOOK.md
-)
-
-create_user() {
-  local username="$1"
-  local name="$2"
-  local email="$3"
-  local trust_level="$4"
-
-  echo "Creating: ${username} (${email})"
-
-  # Create user
-  result=$(curl -s -X POST "${DISCOURSE_URL}/users" \
-    -H "Api-Key: ${API_KEY}" \
-    -H "Api-Username: admin" \
-    -H "Content-Type: application/json" \
-    -d "{
-      \"name\": \"${name}\",
-      \"username\": \"${username}\",
-      \"email\": \"${email}\",
-      \"password\": \"$(openssl rand -base64 16)\",
-      \"active\": true,
-      \"approved\": true
-    }")
-
-  user_id=$(echo "$result" | jq -r '.user.id // .user_id // empty')
-
-  if [ -z "$user_id" ]; then
-    echo "  WARN: Could not create ${username}: $(echo $result | jq .errors)"
-    return
-  fi
-
-  echo "  Created user ID: ${user_id}"
-
-  # Set trust level
-  curl -s -X PUT "${DISCOURSE_URL}/admin/users/${user_id}/trust_level" \
-    -H "Api-Key: ${API_KEY}" \
-    -H "Api-Username: admin" \
-    -d "level=${trust_level}" > /dev/null
-
-  echo "  Trust level set to ${trust_level}"
-
-  # Add to author group
-  curl -s -X PUT "${DISCOURSE_URL}/groups/author_phase5/members.json" \
-    -H "Api-Key: ${API_KEY}" \
-    -H "Api-Username: admin" \
-    -H "Content-Type: application/json" \
-    -d "{\"usernames\": \"${username}\"}" > /dev/null
-
-  echo "  Added to author_phase5 group"
+### 3.3 nginx Configuration (nginx/nginx.conf)
+
+```nginx
+user nginx;
+worker_processes auto;
+error_log /var/log/nginx/error.log warn;
+pid /var/run/nginx.pid;
+
+events {
+    worker_connections 1024;
 }
 
-for entry in "${AUTHORS[@]}"; do
-  eval "create_user $entry"
-done
+http {
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
 
-echo "Done. All authors created."
-EOF
+    log_format main '$remote_addr - $remote_user [$time_local] "$request" '
+                    '$status $body_bytes_sent "$http_referer" '
+                    '"$http_user_agent"';
 
-chmod +x create-discourse-authors.sh
+    access_log /var/log/nginx/access.log main;
+
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    keepalive_timeout 65;
+    types_hash_max_size 2048;
+    client_max_body_size 50M;
+
+    gzip on;
+    gzip_vary on;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_types text/plain text/css text/xml text/javascript 
+               application/json application/javascript application/xml+rss;
+
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+
+    include /etc/nginx/conf.d/*.conf;
+}
 ```
 
-### 4.3 Wave 1 Announcement Script
+### 3.4 nginx Virtual Host (nginx/conf.d/discourse.conf)
 
-```bash
-cat > post-wave1-announcement.sh << 'EOF'
-#!/bin/bash
-# Posts the Wave 1 + 2 launch announcement to Discourse
-DISCOURSE_URL="https://resilience-hub.org"
-API_KEY="REPLACE_WITH_API_KEY"
+```nginx
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    
+    location /.well-known/acme-challenge/ {
+        root /etc/letsencrypt/webroot;
+    }
+    
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
 
-# Get category ID for Announcements
-CATEGORY_ID=$(curl -s "${DISCOURSE_URL}/categories.json" | \
-  jq '.category_list.categories[] | select(.name=="Announcements") | .id')
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name forum.example.com;
 
-echo "Posting to category ID: ${CATEGORY_ID}"
+    ssl_certificate /etc/letsencrypt/live/forum.example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/forum.example.com/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers on;
 
-curl -s -X POST "${DISCOURSE_URL}/posts" \
-  -H "Api-Key: ${API_KEY}" \
-  -H "Api-Username: admin" \
-  -H "Content-Type: application/json" \
-  -d "{
-    \"title\": \"Phase 5 Wave 1 + 2 Publication — Community Guides Available\",
-    \"raw\": \"The Phase 5 Wave 1 + 2 publication is now available for author feedback and community review.\n\n## Documents (43,621 words total)\n\n1. **Community Implementation Playbook** (8,619 words)\n2. **Microgrids Infrastructure** (6,545 words)\n3. **Psychological Support Guide** (9,163 words)\n4. **Conflict Resolution Framework** (8,596 words)\n5. **Veterinary Care Guide** (10,698 words)\n\n## What to do\n- Review the guide in your category\n- Leave feedback in the category thread\n- Authors respond within 24 hours\n\n**Feedback deadline**: June 13, 2026 17:00 UTC\",
-    \"category\": ${CATEGORY_ID},
-    \"pinned_globally\": true,
-    \"tags\": [\"phase-5\", \"announcement\", \"wave-1\"]
-  }" | jq '.post.id'
+    location / {
+        proxy_pass http://discourse:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_buffering off;
+        proxy_request_buffering off;
+    }
 
-echo "Announcement posted."
-EOF
-
-chmod +x post-wave1-announcement.sh
+    client_max_body_size 50M;
+}
 ```
 
-### 4.4 Response Routing Automation (Phase 5 Wave Monitoring)
+---
+
+## Part 4: Deployment Execution
+
+### 4.1 Pre-Deployment Checks
 
 ```bash
-cat > wave-response-monitor.py << 'EOF'
+cd /home/docker-deploy/discourse
+
+# Verify configuration
+grep "GENERATE_RANDOM" .env  # Should return empty
+
+# Test docker-compose syntax
+docker compose config > /dev/null
+
+# Verify directories
+ls -la data/
+```
+
+### 4.2 Generate TLS Certificates
+
+```bash
+docker run -it --rm -p 80:80 -p 443:443 \
+  -v ./data/letsencrypt:/etc/letsencrypt \
+  certbot/certbot certonly \
+  --standalone \
+  --agree-tos \
+  --email letsencrypt@example.com \
+  -d forum.example.com
+
+# Verify
+ls -la ./data/letsencrypt/live/
+```
+
+### 4.3 Launch Services
+
+```bash
+docker compose up -d
+sleep 30
+docker compose ps
+docker compose logs -f --tail=50
+```
+
+### 4.4 Initialize Database & Create Admin
+
+```bash
+docker compose exec discourse rake db:migrate
+docker compose exec discourse rake admin:create
+# Follow prompts for admin email and password
+```
+
+### 4.5 Configure GitHub OAuth
+
+1. Go to GitHub Settings → Developer settings → OAuth Apps
+2. Create new OAuth app with:
+   - Homepage URL: https://forum.example.com
+   - Authorization callback: https://forum.example.com/auth/github/callback
+3. Copy Client ID and Secret
+
+```bash
+docker compose exec discourse bash
+cd /var/www/discourse
+bundle exec rails c
+
+SiteSetting.github_client_id = "YOUR_CLIENT_ID"
+SiteSetting.github_client_secret = "YOUR_CLIENT_SECRET"
+SiteSetting.github_enabled = true
+SiteSetting.github_auto_create_accounts = true
+
+exit
+```
+
+---
+
+## Part 5: GitHub Pages Integration
+
+Export Discourse topics to Jekyll markdown via Python script:
+
+```python
 #!/usr/bin/env python3
-"""
-wave-response-monitor.py
-Monitors Discourse topics for author activity and flags inactive threads.
-
-Usage: python3 wave-response-monitor.py
-       Schedule via cron: 0 9 * * * python3 /path/to/wave-response-monitor.py
-
-Requires: pip install requests
-"""
-
 import requests
 import json
-from datetime import datetime, timedelta, timezone
+import os
+from datetime import datetime
+import yaml
 
-DISCOURSE_URL = "https://resilience-hub.org"
-API_KEY = "REPLACE_WITH_API_KEY"
-ADMIN_USERNAME = "admin"
-INACTIVITY_THRESHOLD_DAYS = 2  # Flag if no response in 2 days
+DISCOURSE_URL = "https://forum.example.com"
+DISCOURSE_API_KEY = "YOUR_DISCOURSE_API_KEY"
 
-HEADERS = {
-    "Api-Key": API_KEY,
-    "Api-Username": ADMIN_USERNAME,
-}
-
-def get_topics_in_category(category_id: int) -> list:
-    r = requests.get(
-        f"{DISCOURSE_URL}/c/{category_id}.json",
-        headers=HEADERS,
-    )
-    r.raise_for_status()
-    return r.json().get("topic_list", {}).get("topics", [])
-
-def check_topics_for_inactivity(topics: list) -> list:
-    """Return list of topics with no activity in threshold period."""
-    now = datetime.now(timezone.utc)
-    threshold = now - timedelta(days=INACTIVITY_THRESHOLD_DAYS)
-    stale = []
-
-    for topic in topics:
-        if topic.get("pinned"):
-            continue  # Skip pinned announcements
-
-        last_posted = topic.get("last_posted_at", "")
-        if not last_posted:
-            continue
-
-        last_post_dt = datetime.fromisoformat(last_posted.replace("Z", "+00:00"))
-        if last_post_dt < threshold:
-            stale.append({
-                "id": topic["id"],
-                "title": topic["title"],
-                "last_posted": last_posted,
-                "reply_count": topic.get("reply_count", 0),
-            })
-
-    return stale
-
-def post_nudge(topic_id: int, message: str) -> None:
-    """Post a nudge message to a stale topic."""
-    requests.post(
-        f"{DISCOURSE_URL}/posts",
-        headers=HEADERS,
-        json={
-            "topic_id": topic_id,
-            "raw": message,
+class DiscourseExporter:
+    def __init__(self, base_url, api_key):
+        self.base_url = base_url
+        self.api_key = api_key
+        self.headers = {
+            'Api-Key': api_key,
+            'Api-Username': 'system'
         }
-    )
+    
+    def get_categories(self):
+        url = f"{self.base_url}/categories.json"
+        response = requests.get(url, headers=self.headers)
+        return response.json()['category_list']['categories']
+    
+    def get_topics(self, category_id, limit=100):
+        url = f"{self.base_url}/c/{category_id}.json?limit={limit}"
+        response = requests.get(url, headers=self.headers)
+        return response.json()['topic_list']['topics']
+    
+    def get_topic_details(self, topic_id):
+        url = f"{self.base_url}/t/{topic_id}.json"
+        response = requests.get(url, headers=self.headers)
+        return response.json()
+    
+    def export_topic_to_markdown(self, topic):
+        details = self.get_topic_details(topic['id'])
+        
+        frontmatter = {
+            'title': topic['title'],
+            'date': topic['created_at'],
+            'category': topic['category_name'],
+            'author': topic['creator_name'],
+            'discourse_url': f"{self.base_url}/t/{topic['slug']}/{topic['id']}",
+            'tags': topic.get('tags', [])
+        }
+        
+        posts_markdown = []
+        for post in details['post_stream']['posts']:
+            posts_markdown.append(f"### {post['username']} ({post['created_at']})\n\n{post['cooked']}\n\n---\n")
+        
+        content = f"""---
+{yaml.dump(frontmatter)}---
+
+# {topic['title']}
+
+**Category**: {topic['category_name']}  
+**Original**: [{topic['slug']}]({self.base_url}/t/{topic['slug']}/{topic['id']})
+
+## Discussion
+
+{''.join(posts_markdown)}
+
+[View on Discourse]({self.base_url}/t/{topic['slug']}/{topic['id']})
+"""
+        return content
+    
+    def export_all_topics(self, output_dir="_posts"):
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        
+        categories = self.get_categories()
+        
+        for category in categories:
+            print(f"Exporting category: {category['name']}")
+            topics = self.get_topics(category['id'])
+            
+            for topic in topics:
+                try:
+                    markdown = self.export_topic_to_markdown(topic)
+                    filename = f"{topic['created_at'][:10]}-{topic['slug'][:50]}.md"
+                    filepath = os.path.join(output_dir, filename)
+                    
+                    with open(filepath, 'w') as f:
+                        f.write(markdown)
+                    
+                    print(f"  ✓ {filename}")
+                except Exception as e:
+                    print(f"  ✗ Error exporting {topic['id']}: {e}")
 
 def main():
-    # Get Wave 1 category IDs
-    categories_r = requests.get(f"{DISCOURSE_URL}/categories.json", headers=HEADERS)
-    categories = categories_r.json()["category_list"]["categories"]
+    exporter = DiscourseExporter(DISCOURSE_URL, DISCOURSE_API_KEY)
+    exporter.export_all_topics()
+    print("\nExport complete.")
 
-    wave1_cats = [c for c in categories if c["name"].startswith("Wave 1")]
-
-    all_stale = []
-    for cat in wave1_cats:
-        topics = get_topics_in_category(cat["id"])
-        stale = check_topics_for_inactivity(topics)
-        all_stale.extend(stale)
-
-    if all_stale:
-        print(f"Found {len(all_stale)} stale topics:")
-        for t in all_stale:
-            print(f"  [{t['id']}] {t['title']} — last post: {t['last_posted']}")
-    else:
-        print("All Wave 1 topics are active.")
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
-EOF
 ```
 
 ---
 
-## Part 5: Community Moderation Playbook
+## Part 6: Trust Levels & Self-Governance
 
-### 5.1 Escalation Tiers
+Configure via Admin → Trust Levels:
 
-| Tier | Trigger | Action | Owner |
-|------|---------|--------|-------|
-| 0 — Auto | Off-topic, spam, low quality | Trust level system auto-flags; Discourse hides post | System |
-| 1 — Soft | Author conflict in a thread | Moderator (TL4) sends private message to both parties | TL4 user |
-| 2 — Hard | Policy violation, harassment | Admin suspends user 24–72h; posts hidden | Admin |
-| 3 — Escalate | Persistent bad actor | User banned; IP blocked via `/admin/logs/screened_ip_addresses` | Admin |
+- **TL 0** (New Users): View topics, create 3 posts/day
+- **TL 1** (Basic): Auto after 1 day + 10 posts, reply + upload
+- **TL 2** (Members): Auto after 15 days + 50 posts, create topics + moderate
+- **TL 3** (Regulars): Auto after 50 days + 200 posts, approve flagged content
+- **TL 4** (Leaders): Manual only, full moderation + category management
 
-### 5.2 Community Health Metrics
+Enable auto-promotion in Admin → Settings → Trust Levels.
 
-Check daily at 09:00 UTC via `/admin/dashboard`:
+---
 
-| Metric | Healthy | Warning | Action |
-|--------|---------|---------|--------|
-| Daily active users | >60% of author count | 40–60% | Send nudge email |
-| New posts/day | 10–50 | <5 | Post conversation starter topic |
-| Flagged posts | 0 | 1–3 | Review within 4h |
-| Users with 0 posts | <20% of total | >30% | Direct onboarding follow-up |
-| Email bounce rate | <5% | >10% | Audit email list |
+## Part 7: REST API Automation
 
-**Quick health check via API**:
-```bash
-DISCOURSE_URL="https://resilience-hub.org"
-API_KEY="REPLACE_WITH_API_KEY"
+### User Import (Ruby)
 
-curl -s -H "Api-Key: ${API_KEY}" -H "Api-Username: admin" \
-  "${DISCOURSE_URL}/admin/dashboard.json" | jq '{
-  users_active_30_days: .global_reports[] | select(.type=="consolidated_page_views"),
-  posts_7_day: .global_reports[] | select(.type=="posts")
-}' 2>/dev/null || \
-curl -s -H "Api-Key: ${API_KEY}" -H "Api-Username: admin" \
-  "${DISCOURSE_URL}/admin/reports.json" | jq '.reports[].title' | head -10
-```
+```ruby
+#!/usr/bin/env ruby
+require 'net/http'
+require 'json'
+require 'csv'
 
-### 5.3 Moderation Actions Quick Reference
+DISCOURSE_URL = "https://forum.example.com"
+API_KEY = ENV['DISCOURSE_API_KEY']
 
-```bash
-# View all flagged posts
-open https://resilience-hub.org/admin/flags
+class DiscourseAPI
+  def initialize(url, api_key)
+    @url = url
+    @api_key = api_key
+  end
+  
+  def create_user(email, username, name, password)
+    uri = URI("#{@url}/users.json")
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = true
+    
+    request = Net::HTTP::Post.new(uri)
+    request['Api-Key'] = @api_key
+    request['Api-Username'] = 'system'
+    request['Content-Type'] = 'application/json'
+    request.body = {
+      email: email,
+      username: username,
+      name: name,
+      password: password,
+      active: true
+    }.to_json
+    
+    response = http.request(request)
+    
+    if response.code == '200'
+      puts "✓ User created: #{username}"
+      return JSON.parse(response.body)['user']['id']
+    else
+      puts "✗ User creation failed: #{username}"
+      return nil
+    end
+  end
+end
 
-# Silence a user (they can read but not post) for 24h
-curl -s -X PUT "https://resilience-hub.org/admin/users/<user_id>/silence" \
-  -H "Api-Key: ${API_KEY}" \
-  -H "Api-Username: admin" \
-  -d "silenced_till=2026-06-06T09:00:00.000Z&reason=Policy violation (first warning)"
-
-# Suspend a user
-curl -s -X PUT "https://resilience-hub.org/admin/users/<user_id>/suspend" \
-  -H "Api-Key: ${API_KEY}" \
-  -H "Api-Username: admin" \
-  -d "suspend_until=2026-06-10T09:00:00.000Z&reason=Repeated policy violations"
-
-# Delete a post
-curl -s -X DELETE "https://resilience-hub.org/posts/<post_id>" \
-  -H "Api-Key: ${API_KEY}" \
-  -H "Api-Username: admin"
+CSV.foreach(ARGV[0], headers: true) do |row|
+  api = DiscourseAPI.new(DISCOURSE_URL, API_KEY)
+  api.create_user(row['email'], row['username'], row['name'], row['password'])
+end
 ```
 
 ---
 
-## Part 6: GitHub Pages Integration
-
-### 6.1 Create GitHub Pages Archive Repository
+## Part 8: Post-Deployment Verification
 
 ```bash
-# Create repository for static archive
-# Via browser: github.com → New repository → "resilience-hub-archive"
-# Settings → Pages → Source: "Deploy from branch" → branch: main, /docs folder
+# Test Discourse API
+curl -s https://forum.example.com/about.json | jq .
+
+# Verify email (Admin → Email → Send Test Email)
+
+# Verify GitHub OAuth works (Login button should appear)
 ```
-
-### 6.2 GitHub Actions Workflow — Auto-Announce and Archive
-
-Create `.github/workflows/discourse-phase5.yml` in the SuperClaude_Framework repo:
-
-```yaml
-name: Phase 5 — Discourse Announce + GitHub Pages Archive
-
-on:
-  push:
-    branches: [master]
-    paths:
-      - 'projects/systems-resilience/phase-5-wave-*.md'
-      - 'projects/systems-resilience/PHASE_5_WAVE_*.md'
-
-jobs:
-  announce-and-archive:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-
-      - name: Identify changed Phase 5 files
-        id: changes
-        run: |
-          CHANGED=$(git diff --name-only HEAD~1..HEAD | grep -E 'phase-5-wave|PHASE_5_WAVE' | head -10)
-          echo "files=${CHANGED}" >> $GITHUB_OUTPUT
-
-          # Build word-count summary
-          SUMMARY=""
-          for f in $CHANGED; do
-            COUNT=$(wc -w < "$f" 2>/dev/null || echo 0)
-            BASENAME=$(basename "$f" .md | tr '_' ' ' | tr '-' ' ')
-            SUMMARY="${SUMMARY}\n- **${BASENAME}**: ${COUNT} words"
-          done
-          echo "summary=${SUMMARY}" >> $GITHUB_OUTPUT
-
-      - name: Post announcement to Discourse
-        if: steps.changes.outputs.files != ''
-        run: |
-          # Build announcement body
-          BODY=$(cat <<BODY
-          New Phase 5 content published — $(date -u '+%B %d, %Y')
-
-          **Updated guides:**
-          ${{ steps.changes.outputs.summary }}
-
-          **View on GitHub**: [$(git log -1 --pretty=%s)](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})
-
-          Review and provide feedback in the relevant category thread.
-          BODY
-          )
-
-          curl -s -X POST "${{ secrets.DISCOURSE_URL }}/posts" \
-            -H "Api-Key: ${{ secrets.DISCOURSE_API_KEY }}" \
-            -H "Api-Username: admin" \
-            -H "Content-Type: application/json" \
-            -d "{\"title\": \"Publication Update: $(date -u '+%b %d')\", \"raw\": \"${BODY}\", \"category\": 1}"
-
-      - name: Convert Markdown to HTML for GitHub Pages
-        if: steps.changes.outputs.files != ''
-        run: |
-          sudo apt-get install -y pandoc
-          mkdir -p docs/phase-5
-
-          # Simple HTML template
-          cat > /tmp/template.html << 'TMPL'
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>$title$ — Resilience Hub</title>
-            <style>
-              body { font-family: Georgia, serif; max-width: 800px; margin: 2rem auto; padding: 1rem; line-height: 1.7; }
-              h1, h2, h3 { font-family: sans-serif; }
-              code { background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
-              pre { background: #f4f4f4; padding: 1rem; overflow-x: auto; }
-            </style>
-          </head>
-          <body>
-          $body$
-          </body>
-          </html>
-          TMPL
-
-          for FILE in projects/systems-resilience/phase-5-wave-*.md; do
-            [ -f "$FILE" ] || continue
-            BASENAME=$(basename "$FILE" .md)
-            pandoc "$FILE" \
-              --from markdown \
-              --to html5 \
-              --template /tmp/template.html \
-              --output "docs/phase-5/${BASENAME}.html"
-            echo "Converted: $BASENAME"
-          done
-
-          # Create index page
-          echo "<html><body><h1>Phase 5 Guides</h1><ul>" > docs/phase-5/index.html
-          for FILE in docs/phase-5/*.html; do
-            NAME=$(basename "$FILE" .html | tr '-' ' ')
-            echo "<li><a href=\"$(basename $FILE)\">$NAME</a></li>"
-          done >> docs/phase-5/index.html
-          echo "</ul></body></html>" >> docs/phase-5/index.html
-
-      - name: Deploy to GitHub Pages
-        if: steps.changes.outputs.files != ''
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          destination_dir: phase-5
-```
-
-**Add GitHub Secrets**:
-1. Repository → Settings → Secrets → New repository secret
-2. `DISCOURSE_URL`: `https://resilience-hub.org`
-3. `DISCOURSE_API_KEY`: (from `/admin/api`)
 
 ---
 
-## Part 7: Backup and Disaster Recovery
-
-### 7.1 Automated Daily Backup
+## Part 9: Backup & Recovery
 
 ```bash
-# On the VPS, as discourse user
-cat > ~/backup-discourse.sh << 'EOF'
 #!/bin/bash
-# Discourse nightly backup — runs via cron at 02:00 UTC
-set -e
+# Daily backup script
 
-BACKUP_DIR=/home/discourse/backups
-mkdir -p "${BACKUP_DIR}"
-DATE=$(date +%Y%m%d)
+BACKUP_DIR="/mnt/backup/discourse-$(date +%Y-%m-%d)"
+mkdir -p "$BACKUP_DIR"
 
-echo "Discourse backup starting at $(date -u)"
+# Create Discourse backup
+docker compose exec discourse rake 'backup:create[skip_uploads]'
 
-# Discourse built-in backup via rails
-cd ~/discourse
-./launcher exec app rake posts:rebake_uncooked_posts 2>/dev/null || true
+# Copy backups
+cp -v /home/docker-deploy/discourse/data/backups/* "$BACKUP_DIR/"
 
-# Database dump
-./launcher exec app pg_dump discourse > "${BACKUP_DIR}/discourse-db-${DATE}.sql"
-gzip "${BACKUP_DIR}/discourse-db-${DATE}.sql"
+# Clean old backups (30 days)
+find /mnt/backup -type f -mtime +30 -delete
 
-# Uploads backup
-rsync -a /var/discourse/shared/standalone/uploads/ "${BACKUP_DIR}/uploads-${DATE}/"
-
-# Retention: 30 days
-find "${BACKUP_DIR}" -name "*.sql.gz" -mtime +30 -delete
-find "${BACKUP_DIR}" -maxdepth 1 -type d -name "uploads-*" -mtime +30 -exec rm -rf {} + 2>/dev/null || true
-
-echo "Backup complete: $(du -sh ${BACKUP_DIR}/${DATE}* 2>/dev/null | head -5)"
-EOF
-
-chmod +x ~/backup-discourse.sh
-
-# Schedule via cron
-(crontab -l 2>/dev/null; echo "0 2 * * * /home/discourse/backup-discourse.sh >> /home/discourse/backup.log 2>&1") | crontab -
-```
-
-### 7.2 Disaster Recovery Procedure
-
-**Full server rebuild from backup** (if VPS fails):
-
-```bash
-# 1. Provision new VPS (same spec)
-# 2. Repeat Steps 1–3 from Part 2 (stop before bootstrap)
-# 3. After new Discourse is installed, restore database:
-
-ssh root@<NEW_VPS_IP>
-
-# Copy backup files from old server or local machine
-rsync -avz /path/to/backups/ root@<NEW_VPS_IP>:/tmp/discourse-backup/
-
-# On new VPS: restore database
-cd ~/discourse
-./launcher enter app
-psql -U discourse discourse < /tmp/discourse-backup/discourse-db-20260605.sql
-exit
-
-# Restore uploads
-rsync -a /tmp/discourse-backup/uploads-20260605/ /var/discourse/shared/standalone/uploads/
-
-# Rebuild application
-./launcher rebuild app
-```
-
-**Estimated recovery time from backup**: 45–90 minutes.
-
-### 7.3 Discourse Built-in Backup
-
-Discourse also has a built-in backup system via admin panel:
-
-```
-/admin/backups → "Backup Now"
-```
-
-This creates a downloadable `.tar.gz` containing database + uploads. Schedule automatic backups:
-- `/admin/site_settings` → "maximum_backups": 7
-- `/admin/site_settings` → "backup_frequency": daily
-
----
-
-## Part 8: Monitoring and Health Checks
-
-### 8.1 Daily Health Check Script
-
-```bash
-cat > ~/check-discourse.sh << 'EOF'
-#!/bin/bash
-DISCOURSE_URL="https://resilience-hub.org"
-API_KEY="REPLACE_WITH_API_KEY"
-
-echo "=== Discourse Health Check — $(date -u) ==="
-
-# Container running
-docker ps | grep discourse_app | grep -q "Up" \
-  && echo "PASS: discourse_app container running" \
-  || echo "FAIL: discourse_app container not running"
-
-# HTTP responding
-curl -s -o /dev/null -w "HTTP %{http_code}" "${DISCOURSE_URL}" | grep -q "200" \
-  && echo "PASS: HTTPS responding" \
-  || echo "FAIL: HTTPS not responding"
-
-# Disk usage
-DISK_PCT=$(df / | tail -1 | awk '{print $5}' | tr -d '%')
-[ "$DISK_PCT" -lt 80 ] \
-  && echo "PASS: Disk ${DISK_PCT}% used" \
-  || echo "WARN: Disk ${DISK_PCT}% used — clean up soon"
-
-# User count
-USER_COUNT=$(curl -s -H "Api-Key: ${API_KEY}" -H "Api-Username: admin" \
-  "${DISCOURSE_URL}/admin/users/list.json?show_emails=false&stats=false" 2>/dev/null | jq '. | length' 2>/dev/null)
-echo "INFO: User count: ${USER_COUNT:-unknown}"
-
-# Active users (last 7 days)
-ACTIVE=$(curl -s -H "Api-Key: ${API_KEY}" -H "Api-Username: admin" \
-  "${DISCOURSE_URL}/admin/reports/dau_by_mau.json?start_date=$(date -u -d '7 days ago' +%Y-%m-%d)&end_date=$(date -u +%Y-%m-%d)" 2>/dev/null | jq '.report.data[-1].y' 2>/dev/null)
-echo "INFO: Active users (7d): ${ACTIVE:-unknown}"
-
-echo "=== Check complete ==="
-EOF
-
-chmod +x ~/check-discourse.sh
-(crontab -l 2>/dev/null; echo "0 9 * * * /home/discourse/check-discourse.sh >> /home/discourse/health.log 2>&1") | crontab -
-```
-
-### 8.2 Performance Metrics Targets
-
-| Metric | Target | Check command |
-|--------|--------|---------------|
-| Page load (Lighthouse) | <2 seconds | https://pagespeed.web.dev |
-| Container uptime | 100% | `docker ps` (RESTARTS column = 0) |
-| Database size | <5 GB | `./launcher exec app rake db:stats` |
-| Disk free | >20 GB | `df -h /` |
-| Email delivery | >95% | `/admin/email` → Sent logs |
-| Backup age | <24h | Check `/admin/backups` |
-
----
-
-## Part 9: Troubleshooting Quick Reference
-
-### T1: Discourse won't start after bootstrap
-
-```bash
-cd ~/discourse
-
-# View startup logs
-docker logs discourse_app 2>&1 | tail -100 | grep -E "ERROR|WARN|Started|Failed"
-
-# Most common: SMTP credentials wrong (Discourse refuses to start)
-# Solution: Edit containers/app.yml SMTP section and rebuild
-nano containers/app.yml   # fix SMTP settings
-./launcher rebuild app    # takes 5-10 min
-
-# If Let's Encrypt fails (DNS not propagated):
-# In app.yml, comment out LETSENCRYPT lines, bootstrap with HTTP only first
-./launcher rebuild app
-# After DNS propagates, re-enable LETSENCRYPT and rebuild again
-```
-
-### T2: "too many redirects" error
-
-```bash
-# Usually caused by DISCOURSE_HOSTNAME not matching actual domain
-docker exec discourse_app grep DISCOURSE_HOSTNAME /etc/discourse/app.yml
-
-# Fix: update DISCOURSE_HOSTNAME in containers/app.yml, rebuild
-./launcher rebuild app
-```
-
-### T3: Email not being sent
-
-```bash
-# Test SMTP from within container
-./launcher exec app rails runner \
-  'TestMailer.send_test("admin@youremail.com").deliver_now rescue puts $!.message'
-
-# Check mail queue
-./launcher exec app rake jobs:run_later &
-
-# View Discourse mail log
-./launcher exec app tail -30 /var/log/nginx/access.log | grep mail
-```
-
-### T4: GitHub OAuth not working
-
-```bash
-# Common causes:
-# 1. Callback URL mismatch — must exactly match setting in GitHub OAuth app
-#    Expected: https://resilience-hub.org/auth/github/callback
-
-# Check current callback URL in Discourse settings
-curl -s -H "Api-Key: ${API_KEY}" -H "Api-Username: admin" \
-  "https://resilience-hub.org/admin/site_settings.json" | \
-  jq '.settings[] | select(.name | test("github")) | {name, value}'
-```
-
-### T5: API key not working
-
-```bash
-# Verify key is not revoked
-curl -s -H "Api-Key: ${API_KEY}" -H "Api-Username: admin" \
-  "https://resilience-hub.org/admin/api/keys.json" | jq '.[0].description'
-
-# If 403 error: key may be scoped to specific endpoints
-# Solution: Create new Global key via /admin/api
-```
-
-### T6: VPS disk full
-
-```bash
-# Identify large files
-du -sh /var/discourse/shared/standalone/* | sort -h | tail -10
-
-# Clean Discourse logs
-./launcher exec app find /var/log -name "*.log" -size +100M -exec truncate -s 50M {} \;
-
-# Remove old Docker images
-docker image prune -f
-docker container prune -f
-
-# Clear Discourse tmp files
-./launcher exec app rake tmp:clear
-```
-
-### Key Log Paths
-
-| Log | Location |
-|-----|---------|
-| Discourse main | `docker logs discourse_app` |
-| Nginx | `/var/discourse/shared/standalone/log/nginx.log` |
-| PostgreSQL | `./launcher exec app tail /shared/log/var-log/postgresql.log` |
-| Email (Postfix) | `./launcher exec app tail /var/log/mail.log` |
-| Rails production | `./launcher exec app tail /shared/log/production.log` |
-
----
-
-## Part 10: Admin Dashboard Orientation
-
-### Key Admin Sections
-
-| URL path | Purpose | Check daily |
-|----------|---------|-------------|
-| `/admin/dashboard` | Usage overview (users, posts, page views) | Yes |
-| `/admin/users` | User list, trust levels, account actions | On-demand |
-| `/admin/flags` | Flagged posts awaiting review | Yes |
-| `/admin/email` | Email delivery log, SMTP status | If bounce suspected |
-| `/admin/logs` | Error log, screened IPs, rate limits | If issues reported |
-| `/admin/backups` | Backup status, download backups | Weekly |
-| `/admin/api` | API key management | On-demand |
-
-### Discourse Admin CLI Reference
-
-```bash
-# Most admin actions done via browser; these are power-user CLI shortcuts
-
-# Force-send all pending emails
-./launcher exec app rake jobs:run_later
-
-# Rebuild search index
-./launcher exec app rake search:reindex
-
-# Regenerate missing thumbnails
-./launcher exec app rake posts:rebake_uncooked_posts
-
-# Check database consistency
-./launcher exec app rake db:check
-
-# List all site settings (search for specific setting)
-./launcher exec app rails runner \
-  'SiteSetting.all_settings.each { |s| puts "#{s[:setting]}: #{s[:value]}" }' | grep -i smtp
+echo "✓ Backup complete: $BACKUP_DIR"
 ```
 
 ---
 
-## Part 11: Rollback to Path A (Nextcloud+Matrix)
+## Part 10: Success Criteria & Go-Live
 
-If Discourse experiences unresolvable issues during Phase 5:
+**Pre-Go-Live**:
+- [ ] Discourse login works
+- [ ] 5+ categories created
+- [ ] GitHub OAuth configured
+- [ ] Email notifications working
+- [ ] 10+ test users created
+- [ ] Backup script runs
 
-1. **Export all Discourse content**:
-   ```bash
-   # Via admin panel: /admin/backups → Backup Now
-   # Download the .tar.gz file
-   ```
-
-2. **Convert Discourse posts to Markdown** (for Nextcloud import):
-   ```python
-   # Discourse API: GET /posts/{id}.json returns raw Markdown content
-   import requests
-   r = requests.get("https://resilience-hub.org/posts.json", 
-       headers={"Api-Key": API_KEY, "Api-Username": "admin"})
-   for post in r.json()["latest_posts"]:
-       filename = f"post_{post['id']}.md"
-       with open(filename, "w") as f:
-           f.write(f"# {post['topic_title']}\n\n{post['raw']}")
-   ```
-
-3. **Deploy Nextcloud+Matrix** using the companion playbook
-4. **Upload exported Markdown files** to Nextcloud
-
-Timeline: 2–4 hours to full migration, assuming Nextcloud stack is healthy.
+**Go-Live Timeline**:
+- June 5, 06:00 UTC: Final validation (15 min)
+- June 5, 12:00 UTC: Publish forum URL
+- June 5, 13:00 UTC: Author recruitment begins
 
 ---
 
-## Deployment Timeline Summary
+## Part 11: Platform Comparison Summary
 
-| Step | Duration | Start (UTC) | Gate |
-|------|----------|-------------|------|
-| VPS provisioned + SSH access | 15 min | June 5 06:00 | SSH works |
-| System update + Docker install | 15 min | 06:15 | Docker version OK |
-| Clone Discourse + configure app.yml | 20 min | 06:30 | Config reviewed |
-| Bootstrap (Docker image build) | 35 min | 06:50 | "Successfully bootstrapped" |
-| Start Discourse + verify HTTPS | 20 min | 07:25 | Browser shows homepage |
-| Admin account creation | 10 min | 07:45 | Admin panel accessible |
-| Core settings + GitHub OAuth | 30 min | 07:55 | OAuth login tested |
-| **Go-live gate** | — | **08:25** | Platform accessible |
-| Category structure | 20 min | 08:25 | 8 categories created |
-| GitHub Actions config | 30 min | 08:45 | Webhook configured |
-| Author account creation | 30 min | 09:15 | All accounts active |
-| Wave 1 announcement post | 15 min | 09:45 | Pinned post visible |
-| Onboarding emails sent | 15 min | 10:00 | Emails in transit |
-| **Operational gate** | — | **10:15** | Authors can log in |
-
-**Total**: 3–4 hours from zero to author-accessible.
+| Feature | Platform A (Nextcloud+Matrix) | Platform B (Discourse) |
+|---------|-------------------------------|----------------------|
+| **Setup Time** | 4-6 hours | 2-3 hours |
+| **Document Editing** | Offline-first | Web-only |
+| **Chat** | Matrix (encrypted) | Thread-based |
+| **File Sync** | WebDAV | Attachments |
+| **Self-Governance** | Manual rooms | Auto trust levels |
+| **RAM Required** | 16 GB | 8 GB |
+| **Scalability** | 100-200 users | 500+ users |
+| **Go-Live Confidence** | 9.5/10 | 8.0/10 |
 
 ---
 
-*Status: READY-TO-EXECUTE | Confidence: 8.0/10 | Offline capability: browser cache only*
-*Use this playbook if Path A (Nextcloud+Matrix) fails by June 5 12:00 UTC, or if user explicitly selects Discourse*
-*Cross-reference: PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md (strategic context), PHASE_6_IMPLEMENTATION_GUIDE_OPTION_A_DISCOURSE.md (Phase 6 integration)*
+**Document Version**: 1.0 (June 3, 2026)  
+**Status**: Ready for Production Deployment
+
