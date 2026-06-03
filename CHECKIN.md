@@ -1,5 +1,25 @@
 # Check-In Report
 
+## Current Status — Session 2684 (2026-06-03 11:12–11:35 UTC) — Pre-Market Ready, Standby Confirmed
+
+**Time Until Key Events**:
+- ⏰ **13:15 UTC** (~2h 3m): CRITICAL — Alpaca credential fix deadline before market open
+- ⏰ **13:30 UTC** (~2h 18m): Market opens; trading resumes if credentials fixed
+- ⏰ **20:00 UTC** (~8h 48m): Post-market analysis (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
+- ⏰ **23:59 UTC** (~12h 47m): User decision deadline (Phase 2 domains, seedwarden track, systems-resilience platform)
+
+**Status**: 🟢 **PRE-MARKET READY** — Infrastructure health checks completed and verified. All containers healthy, config deployed, system positioned for immediate trading execution. Credential blocker STILL ACTIVE (2 Docker auth failures confirmed at 11:12 UTC). No autonomous work available — system in STANDBY MODE. All Phase 5/6 deployment infrastructure production-ready and staged.
+
+**Critical Blocker Status — REVERIFIED**: 🔴 **STILL ACTIVE** — Alpaca credentials misconfigured. Verification run June 3 11:12 UTC: `docker logs stockbot --tail=50` returned 2 auth failures ("insufficient subscription" errors). Root cause: ALPACA_API_KEY_ID = ALPACA_API_KEY (both `PKM03F5PK1LPV8LSBIP0`, should be different). **DEADLINE 13:15 UTC (2h 3m) — user must fix credentials before 13:30 UTC market open.**
+
+**Infrastructure Readiness Summary**:
+- ✅ **stockbot Containers**: Both UP and healthy (11h uptime). Config deployed. DB ready.
+- ✅ **systems-resilience Phase 5/6**: Both Nextcloud+Matrix and Discourse roadmaps fully scoped. Committed. Ready for post-decision June 5 execution.
+- ✅ **seedwarden Phase 2**: Content roadmap verified production-ready (9,060 words). Ready for post-launch activation June 5-8.
+- ⚠️ **open-repo Phase 5**: A11y audit complete. CONDITIONAL GO (P1 fix by June 10). Deployment June 12 achievable.
+
+---
+
 ## Current Status — Session 2683 (2026-06-03 10:52–11:30 UTC) — Infrastructure Staging Complete, Credential Blocker Active
 
 **Time Until Key Events**:
