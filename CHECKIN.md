@@ -112,18 +112,35 @@
    - Evaluation: snap-arm clearance check; pass/fail decision routes to launch sequence Part 4
    - **Impact**: Gates Etsy launch timeline
 
+### What's Ready for User Review (Session 2657)
+
+**Resistance-Research Domain 59** — Ready for 5-minute approval + 1.5h execution:
+- Read `DOMAIN_59_ACTIVATION_READINESS.md` (new, Session 2657)
+- Decision: Activate NOW (catches Senate Finance window through June 30) or defer?
+- If YES: Orchestrator can execute 6-step distribution sequence immediately (1.5h user time over 21 days)
+
+**Seedwarden Phase 2** — Ready for Track A/B decision + 40-min launch:
+- Read `PHASE_2_EXECUTION_STAGING.md` (new, Session 2657) for content readiness overview
+- Read `TRACK_B_CONTINGENCY_EXECUTION_PLAN.md` (new, Session 2657) if selecting Track B
+- Decision: Track A (tag corrections, minimal execution) or Track B (full launch June 1/3, 40 min)?
+- If Track B: 40-min pre-launch sequence ready; full launch can execute same day
+
+**Systems-Resilience Platform Decision** — Ready for comparison:
+- Review `PHASE_6_PLATFORM_ANALYSIS_SESSION_2651_VERIFICATION.md` (from Session 2651)
+- Three options with pricing/capability comparison
+- Recommendation: Nextcloud+Matrix (9.5/10, $0–$180/year, full offline capability)
+
 ### Suggested Priorities for Next Session
 
-1. **Immediate** (before 20:00 UTC): Market monitoring during 13:30–20:00 UTC trading window
-2. **Post-market** (20:30–22:00 UTC): Execute JUNE_3_MARKET_ANALYSIS_RUNBOOK.md analysis framework
-3. **June 3 EOD** (before 23:59 UTC): Act on user decisions (Phase 5/6, Phase 2 domains, Seedwarden path)
-4. **June 4–5**: Deploy Phase 6 platform + Phase 5 Wave 1 integration (per implementation timelines)
+1. **URGENT (ASAP)**: Fix stockbot Alpaca credentials before 13:30 UTC market open
+2. **CRITICAL (by June 3 EOD)**: User decisions on Domain 59, Seedwarden path, and platform selection
+3. **Post-decision execution**: Orchestrator can activate Domain 59, Seedwarden Phase 2, and systems-resilience platform upon approval
 
-### Status Summary
-- 🟢 **Stockbot**: June 3 13:30 UTC fully ready. 2-session config deployed, all tests passing. Ready for live execution.
-- 🟡 **Resistance-research**: Domain 59 distribution ready; Phase 2 domain selection pending by June 3 EOD
-- 🟡 **Seedwarden**: Gate 1 launch-ready; Path A/B selection pending by June 3 EOD
-- 🟡 **Systems-resilience**: Phase 6 platform analysis complete ✅; platform selection pending by June 3 EOD
+### Status Summary (Session 2657 Update)
+- 🔴 **Stockbot**: CRITICAL BLOCKER — Alpaca auth failure still active. Credentials must be fixed BEFORE 13:30 UTC market open. DO NOT TRADE until resolved.
+- 🟡 **Resistance-research**: Domain 59 distribution staging complete; 5-min approval + 1.5h execution ready. Decision needed by June 3 EOD.
+- 🟡 **Seedwarden**: Phase 2 staging complete; 40-min launch sequence ready upon Track B approval. Decision needed by June 3 EOD.
+- 🟡 **Systems-resilience**: Platform analysis complete; decision ready by June 3 EOD.
 - 🔴 **Cybersecurity-hardening**: Phase 1 VeraCrypt restart required (user manual action)
 - 🔴 **Mfg-farm**: Pre-launch complete; test print execution required (user manual action)
 
