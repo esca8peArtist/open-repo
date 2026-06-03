@@ -1,16 +1,21 @@
 # Check-In Report
 
-## Current Status — Session 2677 (2026-06-03 09:40 UTC)
+## Current Status — Session 2677 (2026-06-03 10:00–10:15 UTC)
 
 **Time Until Key Events**:
-- ⏰ **13:15 UTC** (3h 35m): CRITICAL — User should fix Alpaca credentials before market open
-- ⏰ **13:30 UTC** (3h 50m): Market opens; JPM + AMZN sessions resume (if credentials fixed)
-- ⏰ **20:00 UTC** (10h 20m): Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
-- ⏰ **23:59 UTC** (14h 19m): User decision deadline for Phase 2 domains, seedwarden path, systems-resilience platform
+- ⏰ **13:15 UTC** (3h 15m): CRITICAL — User should fix Alpaca credentials before market open
+- ⏰ **13:30 UTC** (3h 30m): Market opens; JPM + AMZN sessions resume (if credentials fixed)
+- ⏰ **20:00 UTC** (10h): Post-market analysis execution (JUNE_3_MARKET_ANALYSIS_RUNBOOK.md ready)
+- ⏰ **23:59 UTC** (13h 45m): User decision deadline for Phase 2 domains, seedwarden path, systems-resilience platform
 
-**Status**: ✅ **MARKET-OPEN READY** — All prep materials staged. Critical blocker verified still active. No additional autonomous work available. Standing by for either (1) credential fix enabling trading, or (2) user decisions unlocking Phase 2+ work. System in production-ready idle state.
+**Status**: ✅ **PARALLEL WORK READY** — Autonomous agents assessed unblocked work. Domain 59 dispatch is **execution-ready today** (user 30–45 min). Seedwarden Phase 2 species writing is **unblocked for autonomous 6–7h work**. All prep materials staged. Standing by for credential fix (critical path) or user approvals.
 
-**Critical Blocker Status** (Session 2677 verification): 🔴 Alpaca credentials still misconfigured. Verification command returned **2** auth failures. Both ALPACA_API_KEY_ID and ALPACA_API_KEY = `PKM03F5PK1LPV8LSBIP0` (should be different). **User action required by 13:15 UTC or zero trading today.**
+**Critical Blocker Status** (Session 2677 re-verification): 🔴 Alpaca credentials still misconfigured. Verification returned **2** auth failures (unchanged since Session 2665). Both ALPACA_API_KEY_ID and ALPACA_API_KEY = `PKM03F5PK1LPV8LSBIP0` (should be different). **User action required by 13:15 UTC or zero trading today.**
+
+**New Findings — Unblocked Parallel Work** (Session 2677 agent assessment):
+- 🟢 **Domain 59 Senate Finance CTC Dispatch**: CONDITIONAL READY — All 5 email templates, contact list, Gist, send sequence staged. User needs to: (1) fill `[Your name]` + `[Your contact information]` in templates (10 fills, 15 min), (2) optionally add urgency update paragraph (5 min), (3) send per schedule today/tomorrow. Can execute independently while awaiting stockbot credential fix. **Recommendation**: Execute today to maximize response window (June 30 deadline).
+- 🟢 **Seedwarden Phase 2 Species Guide Writing**: UNBLOCKED NOW — Gate 1 decision clarified: Track A vs. Track B is launch mechanism, not content bandwidth. Track B ready today (3.5–4.5h setup gates). Tier 1 species guide writing (20 entries from PHASE_2_GUIDE_CONTENT_BLUEPRINT.md) is autonomous 6–7h work, **ready to start immediately after user decides on Track A/B**. All photo sources/sessions identified for 20 species.
+- 🟡 **Seedwarden Gate 1 Clarification**: Path A/B confusion in ORCHESTRATOR_STATE was about content production bandwidth (deferred to July 1), not launch path. Current decision is purely time availability: Track B = 3.5–4.5h gates today. **Recommendation**: User decides Track A or B by EOD; orchestrator can execute either path or start species writing in parallel.
 
 ---
 
@@ -50,18 +55,27 @@
 **Decision**: No additional autonomous work executes this session. All remaining activities require user decisions by 23:59 UTC. System standing by for credential fix (critical path) and Phase 2+ activations.
 
 ### Critical Path — Immediate Actions Required
-**🔴 URGENT — Alpaca Credentials (3h 35m until 13:15 UTC)**:
+
+**🔴 URGENT — Alpaca Credentials (3h 15m until 13:15 UTC)**:
 - Current state: Both ALPACA_API_KEY_ID and ALPACA_API_KEY = `PKM03F5PK1LPV8LSBIP0` (incorrect)
 - Required: ALPACA_API_KEY_ID = key identifier (e.g., `PKM03F5PK1LPV8LSBIP0`), ALPACA_API_KEY = secret key (different value)
 - Action: SSH to Jetson, update `/opt/stockbot/.env` with correct values, restart Docker
 - Verification: `docker logs stockbot | grep insufficient` should return 0 (no failures)
 - Impact: Fixes enables trading at 13:30 UTC; failure = zero trades today
 
-**🟡 Important — User Decisions (14h 19m until 23:59 UTC)**:
-1. **Domain 59 CTC Dispatch**: Approve deployment this week (30-45 min execution)?
-2. **Phase 2 Domain Selection**: Which domains (51/48/57/49-50/54)?
-3. **Seedwarden Path**: A (45 min) or B (4-5h)?
-4. **Systems-Resilience Platform**: Nextcloud+Matrix or Discourse?
+**🟢 ACTIONABLE TODAY (30–45 min) — Domain 59 Senate Finance CTC Dispatch**:
+- **Status**: All materials staged, user authorization needed
+- **Action**: (1) Open `projects/resistance-research/domain-59-send-templates.md`; fill `[Your name]` + `[Your contact information]` in all 5 emails (15 min). (2) Optionally copy urgency update paragraph from `domain-59-send-log-june1.md` lines 24–27 and add as PS to CBPP + ITEP emails (5 min). (3) Send per schedule: CBPP + ITEP now, NWLC this afternoon, MomsRising + AFL-CIO tomorrow.
+- **Impact**: 26M+ children affected by Senate Finance CTC markup (deadline June 30); high-leverage distribution in optimal response window
+- **Independence**: Can execute in parallel while awaiting stockbot credential fix
+
+**🟡 Important — User Decisions by 23:59 UTC (13h 45m)**:
+1. **Domain 59 Dispatch** (CONDITIONAL READY): Approve send today? (Estimated 30–45 min)
+2. **Seedwarden Gate 1** (CLARIFIED): Track A (minimal Reddit, 45 min setup) or Track B (full social + email, 3.5–4.5h setup)?
+   - Both ready for immediate execution with proper user time
+   - Species guide writing (6–7h autonomous work) unblocked after either choice
+3. **Phase 2 Domain Selection** (awaiting research approval): Which domains (51/48/57/49-50/54)? Estimated 50–90h per domain
+4. **Systems-Resilience Platform** (awaiting review): Nextcloud+Matrix (9.5/10) or Discourse (8.0/10)?
 
 ---
 
