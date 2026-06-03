@@ -1,24 +1,30 @@
 # Check-In Report
 
-## Since Last Check-in — Session 2693 (2026-06-03 14:15–14:25 UTC)
+## Since Last Check-in — Session 2694 (2026-06-03 14:30 UTC)
 
 **What Happened**:
-- ✅ **Critical block re-verified** — Alpaca WebSocket authentication failure confirmed still active (2 failures detected in Docker logs)
+- ✅ **Full orientation completed** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
+- ✅ **Block status verified** — All three active blocks remain in place:
+  1. **stockbot**: Alpaca credential error (409 "insufficient subscription") — STILL ACTIVE as of last verification
+  2. **cybersecurity-hardening**: Phase 1 walkthrough paused on VeraCrypt restart
+  3. **mfg-farm**: Test print execution pending
 - ✅ **Autonomous work assessment completed** — Zero unblocked work available; all projects blocked on user actions
-- ✅ **System readiness confirmed** — All Phase 1-7 deliverables production-ready and staged
 
 **Critical Status**:
-- 🔴 **URGENT**: Alpaca credentials on Jetson require immediate correction (ALPACA_API_KEY must be set to secret key, not key ID)
+- 🔴 **CRITICAL**: Alpaca credentials on Jetson require immediate correction. ALPACA_API_KEY currently set to key ID `PKM03F5PK1LPV8LSBIP0` (same as ALPACA_API_KEY_ID), should be set to secret key `W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`
 - 🟡 **BY 23:59 UTC**: User decisions pending on three critical paths:
-  1. **mfg-farm**: Test print execution status
-  2. **seedwarden**: Track A vs B vs Both approval
+  1. **mfg-farm**: Test print execution confirmation
+  2. **seedwarden**: Track A vs B vs Both approval  
   3. **systems-resilience**: Platform selection (Nextcloud+Matrix vs Discourse)
 
-**Autonomous Work Status**: ✅ **ZERO AUTONOMOUS WORK REMAINING** — All infrastructure production-ready. System in standby awaiting: (1) Alpaca credential fix on Jetson, (2) User decisions on three critical paths, (3) User manual actions (test print, VeraCrypt restart).
+**Autonomous Work Status**: ✅ **ZERO AUTONOMOUS WORK REMAINING** — All Phase 1-7 infrastructure production-ready. System in standby awaiting: (1) Alpaca credential fix, (2) User decisions on critical paths, (3) User manual actions (test print, VeraCrypt restart).
 
 **Next Steps**:
-1. **IMMEDIATE**: Fix Alpaca credentials on Jetson at `/opt/stockbot/.env` — set `ALPACA_API_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw` (the secret key, not the key ID)
-2. **TODAY by 23:59 UTC**: Provide decisions on mfg-farm test print, seedwarden launch path, and systems-resilience platform
+1. **URGENT**: Fix Alpaca credentials on Jetson at `/opt/stockbot/.env` — one-line change:
+   - OLD: `ALPACA_API_KEY=PKM03F5PK1LPV8LSBIP0`
+   - NEW: `ALPACA_API_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`
+   - Then restart: `docker restart stockbot`
+2. **TODAY by 23:59 UTC**: Decisions on mfg-farm test print, seedwarden path, systems-resilience platform
 3. Optional: Execute manual actions (test print verification, VeraCrypt restart)
 
 ---
