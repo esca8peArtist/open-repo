@@ -1,5 +1,32 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2696 (2026-06-03 13:30–13:45 UTC) — Jetson Reachable; Stockbot Root Cause Identified
+
+**What Happened**:
+- 🟢 **Jetson is now reachable via SSH** — Successfully established connection; Jetson came back online since Session 2694
+- ✅ **Credential configuration issue identified and fixed** — Removed duplicate `ALPACA_API_KEY` that was duplicating the API_KEY_ID
+- ✅ **Root cause of 409 error diagnosed** — HTTP API authentication works perfectly; issue is specifically SIP data feed subscription (not credentials)
+- ✅ **Account health verified** — Alpaca paper trading account active with $440K buying power, trading enabled, pattern day trader status confirmed
+- ✅ **Exploration queue refreshed** — Added 3 new autonomous work items (stockbot analysis, resistance-research dry-run, systems-resilience playbooks) for June 3-8 execution
+
+**Critical Stockbot Finding**:
+- **The 409 "insufficient subscription" error is NOT a credential problem** — credentials are correct
+- **Root cause**: Current config uses `ALPACA_DATA_FEED=sip` which requires paid SIP subscription on Alpaca
+- **Two solution paths**:
+  - **Path A**: User upgrades Alpaca to SIP subscription tier (account action only, takes 1-2 hours on Alpaca website)
+  - **Path B**: Switch to free IEX feed: change `ALPACA_DATA_FEED=sip` → `ALPACA_DATA_FEED=iex` + restart Docker (can orchestrator-execute if approved)
+- **Impact**: HTTP API works (order execution possible); WebSocket stream fails (no live price data, but container gracefully reconnects every 10s)
+- **Timeline**: User decision needed by EOD today (June 3 23:59 UTC)
+
+**What's Next**:
+1. **User decides stockbot data feed** (SIP upgrade vs IEX switch) by EOD
+2. **User makes three project decisions** (mfg-farm/seedwarden/systems-resilience) by EOD
+3. **Orchestrator ready to execute one exploration queue item** while awaiting decisions (Gate 1 analysis, Phase 2 dry-run, or platform playbooks)
+
+**Autonomous Work Status**: 🟢 **READY TO WORK** — Can now execute one exploration queue item while awaiting user decisions. Stockbot block partially resolved (action now requires user choice, not remote debugging).
+
+---
+
 ## Since Last Check-in — Session 2695 (2026-06-03 13:15–13:30 UTC) — Decision Briefing Complete; Critical Deadline 10h 29m
 
 **What Happened**:

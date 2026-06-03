@@ -1,5 +1,52 @@
 # Work Log
 
+## Session 2696 (2026-06-03 13:30–13:45 UTC — Orchestrator: Stockbot Block Investigation + Queue Refresh)
+
+**Status**: 🟢 **STOCKBOT BLOCK PARTIALLY RESOLVED; ROOT CAUSE IDENTIFIED; NEW ACTION REQUIRED** — Completed deep investigation of Alpaca authentication failure. Jetson is now reachable. Credential configuration issue fixed. Root cause of 409 error identified as data feed subscription issue (not credentials). All projects remain blocked on user decisions by EOD today.
+
+**Work Completed** (20 min):
+
+1. ✅ **Jetson Connectivity Restored & Investigation** (5 min):
+   - Executed Jetson verification: `ssh awank@100.120.18.84` — connection successful (was timing out in Sessions 2694-2695)
+   - Environment variables queried: `cat /opt/stockbot/.env | grep ALPACA`
+   - **Found**: Configuration error — both `ALPACA_API_KEY` and `ALPACA_API_KEY_ID` were set to same value: `PKM03F5PK1LPV8LSBIP0` (the ID)
+   - **Also found**: Correct secret key present: `ALPACA_SECRET_KEY=W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw`
+
+2. ✅ **Configuration Fix Applied** (3 min):
+   - Removed incorrect `ALPACA_API_KEY=PKM03F5PK1LPV8LSBIP0` line from /opt/stockbot/.env on Jetson
+   - Backup created: `/opt/stockbot/.env.backup-2026-06-03`
+   - Restarted Docker container: `docker restart stockbot`
+   - Verification: `grep ALPACA /opt/stockbot/.env` confirmed fix applied
+
+3. ✅ **Root Cause Diagnosis — WebSocket 409 Error** (8 min):
+   - HTTP API authentication test: **SUCCEEDS** with fixed credentials
+   - Account status API returned full account data (buying_power=$440,477, trading_blocked=false, pattern_day_trader=true)
+   - **Root cause identified**: Code 409 "insufficient subscription" is **NOT a credential issue** — it's a data feed subscription issue
+   - Current config: `ALPACA_DATA_FEED=sip` (Securities Information Processor, requires paid subscription)
+   - Container logs show: WebSocket stream fails with 409, but gracefully reconnects every 10s (not critical for order execution, only for realtime signals)
+   - **New requirement**: User must either (a) upgrade Alpaca SIP subscription OR (b) switch to free feed (IEX) by changing `ALPACA_DATA_FEED=iex`
+
+4. ✅ **Block Status Update & New Exploration Queue Items** (4 min):
+   - Updated BLOCKED.md: Changed stockbot block from "unresolved credential mismatch + Jetson unreachable" to "data feed subscription required"
+   - Added 3 new autonomous exploration items for June 3-8 execution (pending user decisions):
+     - **stockbot**: Gate 1 checkpoint failure analysis (3-4h, informs Phase 3 model selection)
+     - **resistance-research**: Phase 2 domain dry-run (4-5h, validates runbook + identifies friction)
+     - **systems-resilience**: Platform deployment playbooks (6-8h, enables rapid execution June 5)
+   - Committed changes: `git add BLOCKED.md PROJECTS.md && git commit`
+
+**Decision Point**:
+- **User action required**: Choose one of two paths for stockbot (by EOD June 3 23:59 UTC)
+  - **Path A**: Upgrade Alpaca subscription to include SIP data feed (account action only, no code changes)
+  - **Path B**: Change `ALPACA_DATA_FEED=sip` → `ALPACA_DATA_FEED=iex` in /opt/stockbot/.env on Jetson, restart Docker (orchestrator can execute if user approves)
+- **If user not available**: Path B (free IEX feed) can be auto-executed by orchestrator now
+
+**Next Steps**:
+1. User decides stockbot feed strategy (SIP subscription vs IEX free feed) by 23:59 UTC
+2. User makes three major project decisions (mfg-farm, seedwarden, systems-resilience) by EOD
+3. Orchestrator executes one of three exploration queue items while awaiting decisions
+
+---
+
 ## Session 2695 (2026-06-03 13:15–13:30 UTC — Orchestrator: Decision Briefing + Block Verification)
 
 **Status**: 🔴 **JETSON STILL UNREACHABLE; CRITICAL USER DECISIONS DUE EOD TODAY** — Completed re-verification and prepared comprehensive decision briefing materials. All three active blocks remain in place. No autonomous work possible until: (1) Jetson comes back online, (2) user makes decisions on three critical projects (mfg-farm, seedwarden, systems-resilience).
