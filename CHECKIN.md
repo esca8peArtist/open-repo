@@ -3,6 +3,38 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2646, 2026-06-03 02:21 UTC — Orchestrator: Exploration Queue Prep + Market Readiness)
+
+**Status**: ✅ **READY FOR MARKET OPEN — All infrastructure verified; decision briefings available; exploration items staged**
+
+**Work Completed** (28 min):
+
+1. ✅ **Exploration Queue Preparation** — Added 2 high-value planning memos for idle-time work:
+   - **systems-resilience Phase 7 Scoping**: Three research candidates identified (Cross-Scale Integration July, Case Studies October, Scenario Playbooks Jan). Recommendation: Start Phase 7a in July (highest practitioner impact).
+   - **open-repo Phase 6 Planning**: Four Phase 6 options analyzed. Recommendation: SaaS MVP first (avoids duplicate infrastructure). Quick win: Kiwix catalog listing application (available now).
+
+2. ✅ **Block Assessment** — No new resolutions. Both active blocks still require user action:
+   - cybersecurity-hardening: VeraCrypt restart (manual)
+   - mfg-farm: Test print execution (physical)
+
+3. ✅ **Market Readiness Confirmation** — All systems verified:
+   - Pre-market brief current (01:40 UTC)
+   - Post-market runbook ready (01:18 UTC)
+   - Thermal baseline confirmed (30-40°C headroom for 6.5h session)
+
+**🟢 Ready Status**:
+- **Market open**: 13:15 UTC (10.5 hours), all infrastructure ready
+- **User decisions**: Due EOD June 3 (~22 hours); decision briefings from Session 2655 available
+- **Exploration items**: Queued and ready if user approves Phase 2 research during/after market
+
+**Next Steps** (automatic unless user intervenes):
+- **13:15 UTC**: Auto-wake, market-open monitoring checkpoint
+- **13:30–20:00 UTC**: Live trading (JPM + AMZN sessions)
+- **14:00–15:30 UTC** (if Domain 39 approved): Wave 1 Impact Assessment execution
+- **20:00 UTC**: Post-market analysis
+
+---
+
 ## Since Last Check-in (Session 2655, 2026-06-03 02:07 UTC — Orchestrator: Decision-Support Briefings + Pre-Market Verification)
 
 **Session Status**: ✅ **USER DECISION BRIEFINGS READY + MARKET INFRASTRUCTURE VERIFIED** — All decision-support materials created and committed; stockbot market-ready 13:15 UTC (11 hours); zero blockers. 
