@@ -1,6 +1,26 @@
 # Check-In Report
 
-## Since Last Check-in (Session 2664 — 2026-06-03 07:45–09:00 UTC) — Autonomous Distribution Prep Executed: Domains 57 & 54 Staging-Ready
+## Since Last Check-in (Session 2665 — 2026-06-03 07:39–07:50 UTC) — Status Verification + System Idle
+
+### Summary
+All autonomous work completed in Sessions 2657-2664. System in production-ready idle state. CRITICAL Alpaca auth blocker verified still active. Awaiting user decisions on: (1) Credential fix before 13:30 UTC market open, (2) Domain 59 distribution activation (deadline 23:59 UTC today), (3) Seedwarden launch path (deadline 23:59 UTC today), (4) Systems-resilience platform selection (deadline 23:59 UTC today).
+
+### What Was Accomplished (This Session)
+✅ **Full System Orientation** — ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md re-read. All state confirmed current.
+
+✅ **Critical Block Verification** — Alpaca auth blocker still active: `docker logs stockbot --tail=50 2>&1 | grep -c 'insufficient subscription'` returned **2** (errors present). Market opens in 5h 45min. User credential fix required ASAP.
+
+✅ **Autonomous Work Assessment** — All previously-queued autonomous work is COMPLETE:
+- stockbot: June 3 Pre-Market Brief ✅ (Session 2657)
+- stockbot: Post-Market Analysis Runbook ✅ (Session 2657)  
+- resistance-research: Coalition Leverage Matrix ✅ (Session 2659)
+- resistance-research: Domains 57 & 54 Distribution Prep ✅ (Session 2664)
+
+**Conclusion**: Zero additional autonomous work available that does not depend on user decisions or the critical Alpaca auth blocker.
+
+---
+
+## Previous Check-in (Session 2664 — 2026-06-03 07:45–09:00 UTC) — Autonomous Distribution Prep Executed: Domains 57 & 54 Staging-Ready
 
 ### What Was Accomplished
 
