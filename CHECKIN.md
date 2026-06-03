@@ -278,3 +278,53 @@
 ### Session 2647 (2026-06-03 00:38 UTC) — Exploration Queue Regeneration: June 3 Execution
 **Status**: Queue items added for June 3 pre-market and post-market work.
 **Items**: JUNE_3_PRE_MARKET_BRIEF.md (1-2h, due 13:10 UTC), JUNE_3_MARKET_ANALYSIS_RUNBOOK.md (3-4h, post-market), Phase 1 Coalition Leverage Analysis (4-5h, due June 15).
+
+---
+
+## Autonomous Work Completed (Session 2657 — 06:30–06:50 UTC)
+
+While awaiting user decisions, orchestrator completed two time-critical autonomous deliverables:
+
+**1. June 3 Pre-Market Brief** ✅:
+- File: `projects/stockbot/JUNE_3_PRE_MARKET_BRIEF.md`
+- Purpose: 1-page executive summary of market session expectations
+- Content: Session status (JPM 6/6 gates GO, AMZN 5/6 gates CONDITIONAL), critical blocker alert, success/warning/failure criteria
+- Status: PRODUCTION-READY for 13:30 UTC reference
+
+**2. June 3 Post-Market Analysis Runbook** ✅:
+- File: `projects/stockbot/JUNE_3_MARKET_ANALYSIS_RUNBOOK.md`
+- Purpose: Structured post-market decision framework (8 analysis sections, 200+ lines)
+- Covers: Trade execution validation, signal quality assessment, thermal health, failure recovery paths, diagnostics procedures
+- Status: PRODUCTION-READY for 20:00 UTC post-market-close execution
+
+**Both deliverables are production-ready and committed.** Orchestrator is prepared for Day 1 market session regardless of Alpaca credential status.
+
+---
+
+## Suggested Next Steps
+
+### IMMEDIATE (by 13:30 UTC):
+
+**CRITICAL**: Fix Alpaca credentials if both ALPACA_API_KEY_ID and ALPACA_API_KEY are identical:
+```bash
+ssh awank@100.120.18.84
+cat /opt/stockbot/.env | grep ALPACA
+# If both lines show same value (PKM03F5PK1LPV8LSBIP0):
+# Edit /opt/stockbot/.env and update with correct API key ID (different from secret key)
+# Then: docker restart stockbot
+# Verify: docker logs stockbot --tail=20 | grep insufficient # should be 0
+```
+
+### TODAY (by 23:59 UTC):
+
+**Three concurrent user decisions**:
+1. **Stockbot**: Assuming credentials fixed — monitor Day 1 trading results; refer to JUNE_3_MARKET_ANALYSIS_RUNBOOK.md at market close (20:00 UTC)
+2. **Resistance-Research**: Approve Domain 59 distribution + Phase 2 domain selection
+3. **Seedwarden**: Approve Track B launch (Gate 1 all systems GO)
+
+### AFTER TODAY:
+
+- If Alpaca fixed and trading successful → Begin Phase 4 monitoring (50+ round trip tracking)
+- If Resistance-Research activated → Phase 2 research sprint begins immediately
+- If Seedwarden launched → Growth metrics dashboard deployment + Phase 2 decision gating
+

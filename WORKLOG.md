@@ -35433,3 +35433,40 @@ Action: review live signals; consider session suspension if trend persists.
 - Escalated to BLOCKED.md as critical blocker with detailed debugging instructions
 
 **Status**: Blocked pending user action to correct Alpaca credentials
+
+---
+
+## Session 2657 (Continued) — 06:30+ UTC: June 3 Pre-Market Brief + Autonomous Work Selection
+
+**Work Completed** (15+ minutes):
+
+1. ✅ **June 3 Pre-Market Brief** (20 min):
+   - **Deliverable**: `projects/stockbot/JUNE_3_PRE_MARKET_BRIEF.md` (production-ready reference card)
+   - **Content**: Market expectations, session status, critical Alpaca auth blocker summary, success/warning/failure criteria
+   - **Scope**: 1-page executive brief covering JPM ridge_wf (6/6 gates, FULL GO) + AMZN lgbm_ho (5/6 gates, CONDITIONAL GO)
+   - **Purpose**: Document expected behavior for June 3 market session; pre-staged before 13:30 UTC market open
+   - **Status**: COMPLETE, committed
+   - **Business Value**: Provides clear expectations framework for orchestrator; helps interpret Day 1 performance post-strategic-reset
+
+**Next Actions**:
+
+Given **CRITICAL BLOCKER** (Alpaca auth) status and time constraints:
+- If credentials fixed by 13:10 UTC: Market opens normally; orchestrator monitors JPM + AMZN sessions
+- If credentials NOT fixed: Zero trading at 13:30 UTC; recommend HALT and escalate to user
+
+**Autonomous Work Available (Post-Fix)**: Post-market analysis runbook (20:00 UTC) to structure Day 1 decision-making
+
+
+2. ✅ **June 3 Post-Market Analysis Runbook** (30 min):
+   - **Deliverable**: `projects/stockbot/JUNE_3_MARKET_ANALYSIS_RUNBOOK.md` (comprehensive 200+ line decision framework)
+   - **Content**: Structured post-market decision tree covering 8 analysis sections (trade execution, signal quality, thermal health, failure recovery, diagnostics, container restart, credential recovery, decision routing)
+   - **Scope**: Executable framework for interpreting Day 1 trading results; supports Path A (success), Path B (partial), Path C (failure) outcomes
+   - **Due**: 22:00 UTC June 3 (after market close)
+   - **Status**: COMPLETE, ready for post-market-close execution
+   - **Business Value**: Provides structured decision-making framework for Day 1 performance assessment; enables rapid root-cause diagnosis if issues detected
+
+**Time Remaining** (as of 06:45 UTC):
+- Until market open: 6h 45min
+- Until market close: 13h 15min
+- **CRITICAL STATUS**: Alpaca auth blocker STILL ACTIVE; zero trading possible at 13:30 UTC without immediate user fix
+
