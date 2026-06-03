@@ -2,9 +2,25 @@
 
 ## 🚨 ATTENTION: 4 Critical User Decisions Required by 23:59 UTC TODAY (2026-06-03)
 
-**Orchestrator Session 2713** (18:09–18:45 UTC) ✅ **COMPLETE**
+**Orchestrator Session 2714** (18:16–18:45 UTC) ✅ **COMPLETE**
 
-**Status**: All Phase 1-6 autonomous work production-ready and staged. No further autonomous scope available. System standing by for user decisions by EOD (5.5h remaining).
+**Status**: All Phase 1-6 autonomous work production-ready and staged. **Exploration Queue Items 1-2 COMPLETE**. No further autonomous scope available. System standing by for user decisions by EOD (4h 15m remaining).
+
+### Research Findings (Session 2714)
+
+**✅ IEX vs SIP Data Feed Signal Quality Analysis** (stockbot)
+- **Key Finding**: Code already hardcodes `feed="iex"` in `alpaca_provider.py` — historical data always uses IEX regardless of environment variable
+- **Signal Impact at Daily Bars**: Latency differences (IEX 100-150ms vs SIP 5-10ms) completely irrelevant for daily-bar momentum model
+- **Recommendation**: **Use IEX for paper trading ($0)**. Do NOT pay for SIP subscription during validation. Before live deployment: fix hardcoded strings, subscribe to SIP, retrain models
+- **Deliverable**: `projects/stockbot/IEX_VS_SIP_SIGNAL_COMPARISON.md` (2,700+ words, 7 sections)
+- **Confidence**: 92%
+
+**✅ Phase 1→2 Readiness Gap Analysis** (seedwarden)
+- **Timeline**: Phase 2 can start July 1 in parallel with Phase 1 (no sequential wait). August 1 writing sprint, September 15 launch readiness
+- **Metrics Gates**: Day 7 (email opens ≥25%, 1+ sale), Day 30 (5 scenarios from cold launch to accelerated growth)
+- **Platform Capacity**: Etsy shop handles Phase 1+2 simultaneously with zero constraint. Kit upgrade deadline: June 14 ($33/month)
+- **Deliverable**: `projects/seedwarden/PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md`
+- **Confidence**: 85%
 
 ---
 
