@@ -1,5 +1,32 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2720 (2026-06-04)
+
+**Status**: ⏳ **STANDING BY FOR USER DECISIONS** — Deadline passed June 3; execution windows remain open for Domain 49 (through June 5 midnight). Discord reminder sent. Zero autonomous work available (correct by design).
+
+**What Was Accomplished**:
+- ✅ Orientation verified: All Phase 1-6 infrastructure production-ready
+- ✅ Verified active blocks: 3 user-action-dependent (no autonomous resolution available)
+- ✅ Verified INBOX: Empty, no new items to process
+- ✅ System status: Correct standby configuration
+- ✅ Discord notification sent: Deadline status + pending decisions reminder
+
+**Critical Items Requiring User Action**:
+- **Domain 49 Execution Window**: June 4-5 (DEADLINE JUNE 5 MIDNIGHT UTC) — Louisiana redistricting hard cutoff
+- **Alpaca Feed Choice**: IEX $0/mo vs SIP $50-99/mo (empirical analysis available from Session 2719)
+- **seedwarden Track Selection**: Path A/B/Both (phase transition metrics documented in Session 2719)
+- **systems-resilience Platform**: Nextcloud+Matrix vs Discourse (gates June 5 Wave 1 author recruitment)
+
+**Execution Windows Still Open**:
+- Domain 49: **23 hours remaining** (closes June 5 00:00 UTC)
+- Alpaca Feed: Open indefinitely (but blocks trading engine)
+- seedwarden: Open indefinitely (all track options ready)
+- systems-resilience: Open indefinitely (gates June 5 Wave 1)
+
+**Next Action Trigger**: User decision on ANY item → Activate corresponding execution runbook immediately (all materials production-ready)
+
+---
+
 ## Since Last Check-in — Session 2719 (2026-06-04)
 
 **Status**: ✅ **AUTONOMOUS RESEARCH COMPLETE** — Executed 2 decision-support research tasks from Exploration Queue while awaiting user decisions. All findings committed and documented.
