@@ -3,6 +3,37 @@
 > Status updates between sessions. User reads this to understand what's been happening and what needs attention.
 > Updated at the end of each session by the orchestrator.
 
+## Since Last Check-in (Session 2649, 2026-06-03 03:10 UTC — Orchestrator: Idle-State Verification + System Staging)
+
+**Status**: ✅ **SYSTEM READY — No autonomous work available; all decision materials prepared; market open in 10.2 hours; user decision deadline EOD today**
+
+**Verified**:
+- ✅ No new blocks resolved since Session 2648 (2 active blocks unchanged)
+- ✅ All projects in correct states (complete or user-decision-blocked)
+- ✅ All decision-support materials committed and accessible
+- ✅ Market infrastructure ready (thermal headroom confirmed, database ready)
+- ✅ Exploration queue assessed: 6 items all require user decisions
+
+**Critical Dates** (Next 24 hours):
+- **13:30 UTC** (10.2 hours): Market open — JPM ridge_wf + AMZN lgbm_ho live trading
+- **20:00 UTC** (16.8 hours): Post-market checkpoint analysis
+- **23:59 UTC** (20.8 hours): User decision deadline for resistance-research (Domain 59 + Phase 2), seedwarden (launch path), systems-resilience (platform), cybersecurity-hardening (VeraCrypt restart)
+
+**User Action Items Due Today**:
+1. **resistance-research**: Domain 59 distribution execution (~30 min) — Guide: `DOMAIN_59_EXECUTION_GUIDE.md`
+2. **resistance-research**: Phase 2 domain selection (51/57/49/50/54) — Framework: `PHASE_2_DECISION_MEMO_JUNE_2026.md` + `PHASE_1_COALITION_LEVERAGE_MATRIX.md`
+3. **seedwarden**: Launch path decision (Track A vs Path B) — Brief: `GATE_1_LAUNCH_DECISION_BRIEF.md`
+4. **systems-resilience**: Phase 5/6 platform selection (Nextcloud+Matrix recommended 9.5/10) — Memo: `PHASE_5_6_CONSOLIDATED_DECISION_MEMO.md`
+5. **cybersecurity-hardening**: VeraCrypt restart + Phase 1 continuation (manual action)
+
+**System Health**:
+- ✅ Stockbot: 2-session config deployed, all credentials verified, thermal baseline 46–47°C
+- ✅ Resistance-Research: All 40 domains production-ready, Phase 2 infrastructure staged
+- ✅ Seedwarden: Gate 1 verified, Phase 2 roadmap complete (90+ days content)
+- ✅ Systems-Resilience: Phase 6 analysis complete, platform recommendation documented
+
+---
+
 ## Since Last Check-in (Session 2648, 2026-06-03 03:02–03:20 UTC — Orchestrator: Final Idle-State Assessment + Market Monitoring Prep)
 
 **Status**: ✅ **ALL AUTONOMOUS WORK COMPLETE — System staged for market open; user decision deadline EOD June 3**
