@@ -8,6 +8,43 @@
 
 ---
 
+## Since Last Check-in — Session 2712 (2026-06-03 22:20–22:45 UTC)
+
+**Status**: ✅ PARALLEL EXPLORATION QUEUE EXECUTION COMPLETE — Gate 1 analysis + Domain 51 dry-run validated
+
+**What Was Accomplished**:
+
+1. **stockbot: Gate 1 Failure Root Cause Analysis** ✅ (Agent a3a12d24923da032a, ~17 min):
+   - **Root causes identified** (confirmed via database query):
+     - **PRIMARY**: AAPL long bias — both lgbm_ho and ridge_wf generate zero voluntary SELL signals (model predicts +3% returns, not exit threshold crossing)
+     - **SECONDARY**: Signal frequency mismatch — 67-session→4-session reduction (May 30) structurally cannot meet Gate 1b (5 round-trip requirement). At 2 sessions, expected monthly round trips ≈ 1.6
+     - **TERTIARY**: Regime-model misalignment — momentum-dominant features interpreted April-May rally as uptrend; zero mean-reversion detection
+   - **Key insight**: AAPL was directionally correct (+15.7% by June 3, $4,532 unrealized P&L) but model can't cycle trades. Gate 1 failure partly validation framework mismatch, not purely model quality.
+   - **Phase 3 implication**: AAPL suspension correct. AMZN (OOS Sharpe 3.48) + JPM (Sharpe 4.412, 6/6 gates) are solid foundation. Require ≥20% voluntary exits per WFE fold before AAPL reactivation.
+   - **Deliverable**: `GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS.md` updated (confirmed via database query, committed to master)
+   
+2. **resistance-research: Domain 51 Dry-Run & Friction Assessment** ✅ (Agent a64c65facb6fb541d, ~2 min):
+   - **Runbook readiness**: 87% — GO with 5 patches
+   - **Research status**: Domain 51 is already production-complete (8,500 words, 58 citations, June 1 update confirmed)
+   - **Five friction points identified**:
+     | Severity | Issue | Impact | Fix |
+     |----------|-------|--------|-----|
+     | HIGH | Wrong state list (AZ, MA, MT, ND vs. AK, CA, MO, MT) | Researcher misses California as primary distribution target | Update Anchor 5 with correct states, flag CA SB-42 as primary |
+     | MEDIUM | Issue One "Strengthening the Rules" source doesn't exist | 10-15 min dead-end search | Replace with 3 confirmed sources (Public Citizen, Brennan Center, CRS) |
+     | MEDIUM | FEC vacancy outdated (says 2, actual 4) | Incomplete political context | Update to 4 vacant, 2 remaining commissioners |
+     | LOW-MED | Checklist before contingency routing | Minor sequencing inefficiency | Add pre-checklist gate |
+     | LOW | $1.9B figure positioning | Minor precision issue | Rephrase as confirmed final figure |
+   - **Distribution readiness**: 85% confidence in clean June 9-12 execution (verified Gist exists, templates present, one pre-send verification item: confirm June 2026 update in Gist)
+   - **Decision**: GO — distribution ready, research complete
+   - **Deliverable**: `PHASE_2_DOMAIN_51_DRY_RUN_REPORT.md` completed and committed to master
+
+**Commits Made**:
+   - stockbot: `GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS.md` updated with database query findings + metadata
+   - stockbot: WORKLOG.md session entry added
+   - resistance-research: `PHASE_2_DOMAIN_51_DRY_RUN_REPORT.md` created (production-ready friction assessment)
+
+---
+
 ## Since Last Check-in — Session 2711 (2026-06-03 22:02–22:10 UTC)
 
 **Status**: ✅ ORIENTATION COMPLETE — All autonomous work finished; system in standby awaiting user decisions

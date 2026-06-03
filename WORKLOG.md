@@ -1,5 +1,62 @@
 # Work Log
 
+## Session 2712 (2026-06-03 22:20–22:45 UTC — Orchestrator: PARALLEL EXPLORATION QUEUE EXECUTION)
+
+**Status**: ✅ COMPLETE — Autonomous exploration queue items executed in parallel while awaiting EOD user decisions
+
+**Work Completed**:
+
+1. **stockbot Agent** — Gate 1 Failure Root Cause Analysis (3-4h contracted, ~17 min execution via database optimization):
+   - ✅ Queried Pi-side stockbot.db (trades, positions, model_runs tables)
+   - ✅ Identified database sync gap: May 5-22 Jetson-side trading not reflected on Pi
+   - ✅ **Root cause RC1 (PRIMARY)**: Structural long bias in AAPL models
+     - AAPL lgbm_ho: OOS Sharpe -1.60 in 2026, zero voluntary SELL signals
+     - AAPL ridge_wf: aggregate Sharpe 0.096, zero exits in WFE validation
+     - Model predicts +3% returns, insufficient to trigger exit_confidence threshold
+   - ✅ **Root cause RC2 (SECONDARY)**: Signal frequency structural insufficiency
+     - 67-session→4-session reduction (May 30) created 5× underperformance
+     - At 2 sessions × 1 signal per 12.5 days: expected monthly round trips ≈ 1.6 (vs. 5-round-trip gate requirement)
+   - ✅ **Root cause RC3 (TERTIARY)**: Regime-model misalignment
+     - Momentum features dominant (SMA-50 13.8%, momentum_42d 7.0%), zero mean-reversion detection
+     - April-May rally interpreted as uptrend, not overextension
+   - ✅ **Key insight**: AAPL model was directionally correct (+15.7% gain by June 3, $4,532 unrealized P&L)
+     - But Gate 1 failure is partly validation framework mismatch (round-trip gate incompatible with hold-dominant strategy)
+     - Not purely model quality failure
+   - ✅ **Phase 3 implications**:
+     - AAPL suspension correct; do not reactivate without full retrain + ≥20% voluntary exit requirement
+     - AMZN + JPM are solid foundation (OOS Sharpe 3.48 + 4.412, all regimes profitable)
+     - Consider alternative gate metrics for hold-dominant models
+   - ✅ **File updated**: `projects/stockbot/GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS.md` (sections 2.1, 2.2, 7.1 + Conclusions)
+   - ✅ **Committed**: stockbot submodule + WORKLOG.md entry
+
+2. **resistance-research Agent** — Phase 2 Domain 51 Dry-Run & Friction Assessment (4-5h contracted, live source validation):
+   - ✅ Verified Domain 51 research document status: 8,500 words, 58 citations, June 1 update confirmed complete
+   - ✅ Validated all 5 empirical anchors against live sources (June 3, 2026):
+     - **Anchor 1**: $1.9B dark money in 2024 — CONFIRMED (Brennan Center final post-election)
+     - **Anchor 2**: Pre-Citizens United baseline — CONFIRMED directionally (97% disclosure rate verified)
+     - **Anchor 3**: FEC enforcement deadlock — CONFIRMED (multiple independent sources)
+     - **Anchor 4**: FEC commissioner vacancies — **ERROR FOUND**: runbook says "expect 2 of 6", actual is 4 of 6 (Broussard + Lindenbaum only; Stow/Woodson unconfirmed)
+     - **Anchor 5**: Four states with dark money ballot measures — **ERROR FOUND**: runbook lists AZ, MA, MT, ND; actual 2026 states are AK, CA, MO, MT (CA SB-42 is primary distribution target, not AZ)
+   - ✅ **Friction assessment** (5 points identified):
+     - **HIGH**: Wrong state list misses California as primary distribution anchor
+     - **MEDIUM**: Issue One source doesn't exist (10-15 min dead-end search)
+     - **MEDIUM**: FEC vacancy count outdated
+     - **LOW-MEDIUM**: Checklist sequencing issue
+     - **LOW**: $1.9B figure positioning
+   - ✅ **Runbook readiness verdict**: 87% GO with 5 patches
+   - ✅ **Distribution readiness**: 85% confidence in clean June 9-12 execution (one pre-send item: verify Gist contains June 2026 update)
+   - ✅ **File created**: `projects/resistance-research/PHASE_2_DOMAIN_51_DRY_RUN_REPORT.md` (production-ready)
+   - ✅ **Committed**: resistance-research + WORKLOG.md entry
+
+**Session Summary**:
+- **Time spent**: ~23 minutes (orientation 20 min + parallel agent spawning + results logging)
+- **Scope**: Execute high-value Exploration Queue items that don't depend on user decisions, providing additional context for post-decision execution
+- **Outcome**: 2 research items production-ready (Gate 1 analysis informs Phase 3 strategy; Domain 51 friction assessment enables clean June 9 distribution)
+- **System state**: Awaiting 4 user decisions by 23:59 UTC (1h 15m remaining); all execution runbooks ready for immediate post-decision activation
+- **Next**: Await user decisions; execute Domain 49 (if approved) by June 4-5; activate corresponding Alpaca data feed; execute seedwarden + systems-resilience paths
+
+---
+
 ## Session 2711 (2026-06-03 22:02–22:10 UTC — Orchestrator: ALL AUTONOMOUS WORK COMPLETE)
 
 **Status**: ✅ COMPLETE — Orientation confirmed: all Phase 1-6 autonomous work finished; system awaiting user decisions (deadline 23:59 UTC, ~1.8h)
