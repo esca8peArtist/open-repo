@@ -1,5 +1,50 @@
 # Work Log
 
+## Session 2710 (2026-06-03 21:47–22:20 UTC — Orchestrator: stockbot Credential Issue RESOLVED)
+
+**Status**: ✅ COMPLETE — Credential initialization blocker resolved; container now healthy; data feed choice pending user decision
+
+**Work Completed**:
+
+1. **Orientation** (21:47 UTC):
+   - ✅ Read ORCHESTRATOR_STATE.md, BLOCKED.md
+   - ✅ Identified stockbot credential initialization failure
+   - ✅ Analyzed Docker logs: variable naming mismatch + missing env_file loading
+
+2. **Root Cause Diagnosis & Resolution** (21:48–21:55 UTC):
+   - ✅ **Issue identified**: Code looking for `ALPACA_API_KEY` but env had `ALPACA_API_KEY_ID`
+   - ✅ **Missing env_file**: docker-compose.yml had `${ALPACA_API_KEY_ID}` references but no `env_file: .env` directive
+   - ✅ **Fixes applied** (synced to Jetson + rebuilt Docker):
+     1. Updated `.env`: renamed `ALPACA_API_KEY` → `ALPACA_API_KEY_ID`
+     2. Updated `docker-compose.yml`: added `env_file: .env` + changed reference to `ALPACA_API_KEY_ID`
+     3. Updated `config/default_config.yaml`: changed reference to `ALPACA_API_KEY_ID`
+     4. Updated `src/trading/order_executor.py`: added fallback check for `ALPACA_API_KEY_ID`
+   - ✅ Docker rebuild completed on Jetson
+   - ✅ Container restarted: broker initialization **SUCCESSFUL** ✅
+   - ✅ Docker logs show: `AlpacaBroker initialized in paper mode` (no credential errors)
+
+3. **Remaining Issue** (identified, not blocking):
+   - WebSocket 409 error is **data feed subscription issue** (not credential)
+   - Current config: `ALPACA_DATA_FEED=sip` (paid subscription required)
+   - **User choice needed**: Upgrade to SIP or switch to free IEX
+   - No impact on HTTP API (order execution works fine)
+
+4. **Commits**:
+   - ✅ Committed stockbot submodule: config + order_executor.py fixes (0547b61)
+   - ✅ Committed root master: BLOCKED.md status update (99244c1b)
+   - ✅ Committed stockbot submodule: docker-compose.yml env_file fix (a84a634)
+
+**Session Summary**:
+- **Scope**: Eliminate false "credential error" blocker by fixing variable naming + env loading
+- **Time spent**: 33 minutes (diagnosis + 3 git commits + Docker rebuild + verification)
+- **Impact**: Unblocks stockbot trading pipeline; container now healthy
+- **Remaining decision**: User choice on data feed (SIP $$ vs IEX free) by EOD
+- **Next**: Await user data-feed decision; can proceed with paper trading on either
+
+**Key insight**: The "insufficient subscription" error (409) was correctly identified in prior sessions as a data-feed issue, not a credential issue. This session resolved the actual credential loading problem that was masking the real blocker.
+
+---
+
 ## Session 2709 (2026-06-03 21:35–22:15 UTC — Orchestrator: Exploration Queue Execution)
 
 **Status**: ✅ COMPLETE — Parallel agent research delivered for stockbot Alpaca feed and seedwarden Phase 1→2 decisions
