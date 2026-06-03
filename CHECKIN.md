@@ -1,5 +1,41 @@
 # Check-In Report
 
+## 🚨 ATTENTION: 4 Critical User Decisions Required by 23:59 UTC TODAY (2026-06-03)
+
+**Orchestrator Session [CURRENT] (16:36 UTC — 6h 23m remaining)**
+
+**Status**: All decision-support materials ready. No autonomous work available until decisions made.
+
+### Decision #1: **Domain 49 Approval + Timeline** ⏰ MOST URGENT (time-critical)
+- **What**: Louisiana redistricting June 1 eliminates majority-Black district (Callais cascade). June primary deadlines = hard cutoff.
+- **Decision**: Execute June 4-5 (THIS WEEK) vs defer to July
+- **Impact**: Coalition leverage 3-4x if executed immediately (NAACP LDF + Democracy Docket actively litigating)
+- **Material**: `domain-49-environmental-justice-voting-suppression.md` (8,406 words, ready)
+
+### Decision #2: **stockbot Alpaca Data Feed Choice**
+- **What**: WebSocket 409 error from SIP subscription requirement (not credentials issue)
+- **Decision**: Upgrade Alpaca to SIP subscription OR switch to free IEX feed
+- **Impact**: Enables real-time trading signals once chosen (<5 min implementation)
+- **Status**: Root cause analysis complete; both options equally viable
+
+### Decision #3: **systems-resilience Platform Choice**
+- **What**: Phase 5 Wave 1 author recruitment June 5 gates on platform selection
+- **Decision**: Nextcloud+Matrix (recommended 9.5/10) OR Discourse (8.0/10)
+- **Impact**: Zero technical friction either way; June 4-5 deployment ready
+- **Material**: Both playbooks v2.0 production-ready (discovered Matrix-Meshtastic bridge v1.3.7)
+
+### Decision #4: **seedwarden Track Launch Strategy**
+- **What**: Two parallel distribution paths both ready for June launch
+- **Decision**: Track A only (Etsy-first) OR Track B only (audience-first) OR BOTH (dual)
+- **Impact**: Track selection determines June 1-15 resource allocation
+- **Status**: Gate 1 infrastructure verified 100% (8/8 zone PDFs, all contacts validated)
+
+### Bonus: **mfg-farm Test Print** (optional today)
+- Test print execution specification ready; all pre-launch research complete
+- Unlocks May 29 Etsy launch decision path if executed today
+
+---
+
 ## Since Last Check-in — Session 2706 (2026-06-03 16:06–16:50 UTC — Orchestrator: 3 Parallel Exploration Queue Items Complete; Phase 3+ Strategic Readiness Finalized)
 
 **Current Time**: 2026-06-03 16:50 UTC (7h 9m until EOD deadline 23:59 UTC)
