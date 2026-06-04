@@ -1,5 +1,54 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2734 (2026-06-04 02:23–02:45 UTC — State Synchronization + Exploration Queue Completion Verification)
+
+**Status**: ✅ **ALL AUTONOMOUS WORK VERIFIED COMPLETE** — Exploration queue items confirmed finished. All state files synchronized. Systems-resilience platform playbooks verified production-ready and committed. Awaiting user decisions on seedwarden Track (A/B/Both) and systems-resilience Platform (Nextcloud+Matrix vs Discourse) to unblock Phase 2+ work.
+
+**Session Work**:
+
+1. ✅ **Orientation Complete**
+   - Read ORCHESTRATOR_STATE.md (auto-generated, current)
+   - Verified BLOCKED.md (2 active blocks, both user-action-dependent)
+   - Verified INBOX.md (empty — all items processed last session)
+   - Cross-checked decision status from ORCHESTRATOR_STATE
+
+2. ✅ **PROJECTS.md State Synchronization**
+   - Updated stockbot focus line: "DATA FEED SUBSCRIPTION CHOICE PENDING" → "IEX FEED DEPLOYED (SESSION 2731)" with accurate 2-session live config status
+   - Updated resistance-research focus line: "Domain 49 must execute THIS WEEK" → "Domain 49 execution window CLOSED" (June 1 redistricting happened; window passed on June 4)
+   - Committed: `15613778` ("chore(orchestrator): session 2734 — update stale focus lines")
+
+3. ✅ **Exploration Queue Verification**
+   - Confirmed: resistance-research Phase 2 Domain Research Dry-Run (Session 2733 COMPLETE, 5 friction points identified + 5 runbook gaps documented)
+   - Confirmed: systems-resilience Platform-Specific Deployment Playbooks (already complete, Session 2698+; agent verified and confirmed):
+     - `NEXTCLOUD_MATRIX_DEPLOYMENT_PLAYBOOK.md` (1,827 lines, v2.0, production-ready)
+     - `DISCOURSE_DEPLOYMENT_PLAYBOOK.md` (1,251 lines, v2.0, production-ready)
+     - `PLATFORM_SELECTION_GUIDE.md` (409 lines, decision framework complete)
+   - **Verdict**: Both exploration queue items verified complete and committed to master
+
+4. ✅ **System Status Assessment**
+   - Token budget: 9.4% Sonnet, 3.9% all-models (ample room, ~150k remaining for next session)
+   - Active projects: 10 projects tracked (2 complete, 2 blocked on user action, 6 awaiting decisions or in deployment)
+   - Autonomous work remaining: ZERO (all phases 1-6 complete and staged)
+
+**Decision Status** (unchanged):
+| Decision | Status | Materials | Action |
+|---|---|---|---|
+| **Domain 49** | 🔴 WINDOW CLOSED | PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md | Defer to Q3 2026 |
+| **Alpaca feed** | ✅ RESOLVED | IEX_VS_SIP_SIGNAL_COMPARISON.md | Complete (IEX deployed Session 2731) |
+| **seedwarden Track** | 🟡 ACTIONABLE | Execution checklists staged | **USER DECISION NEEDED**: A / B / Both |
+| **systems-resilience Platform** | 🟡 ACTIONABLE | Nextcloud+Matrix & Discourse roadmaps ready | **USER DECISION NEEDED**: Platform for June 5+ |
+
+**System Status**:
+- ✅ All autonomous work phases: COMPLETE (correct by design)
+- ✅ Exploration queue items: VERIFIED COMPLETE (resistance-research dry-run Session 2733, systems-resilience playbooks Session 2698+)
+- ✅ State synchronization: COMPLETE (PROJECTS.md updated, committed)
+- 🟡 Pending user decisions: 2 (seedwarden Track, systems-resilience Platform)
+- 🟡 Active blocks: 2 (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — both user-action-dependent
+
+**Next Trigger**: User decision on seedwarden Track or systems-resilience Platform → Orchestrator executes corresponding runbook immediately (all pre-tested, production-ready, staged in PROJECTS.md Exploration Queue).
+
+---
+
 ## Since Last Check-in — Session 2733 (2026-06-04 Current UTC — Exploration Queue Verification + Phase 3 Readiness Assessment)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEMS VERIFIED COMPLETE** — Two high-value autonomous items validated as production-ready. All Phase 1-6 autonomous work confirmed complete and staged. Token budget at capacity. Standing by for user decisions on seedwarden Track and systems-resilience Platform.
