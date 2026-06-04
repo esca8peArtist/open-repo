@@ -1,5 +1,67 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2739 (2026-06-04 04:15–04:45 UTC — Orchestrator: Stockbot Block Verification + Resistance-Research Readiness Confirmation)
+
+**Status**: 🔴 **CRITICAL ALPACA BLOCK PERSISTS** — 4,508+ error occurrences in docker logs (confirmed 04:20 UTC). Requires urgent user action before 13:30 UTC market open. Domain 51 research production-ready and staged for June 9-12 execution.
+
+**Session Work**:
+
+1. 🔴 **CRITICAL BLOCK RE-VERIFICATION**:
+   - Executed SSH verification command: 4,508 error occurrences confirmed (vs 4,842 in Session 2738 — error count fluctuates as container cycles)
+   - HTTP 406 "connection limit exceeded" from Alpaca WebSocket auth still present
+   - **Confirmed**: This is an Alpaca account/IP-level rate limit issue, not local configuration
+   - **Timeline**: Market opens in ~9 hours (13:30 UTC) — **NO autonomous fix available**
+   - Action required: User must check Alpaca account status and contact support ASAP
+   - Next escalation: If Alpaca unresponsive, REST polling fallback API can be implemented (4-6h work)
+
+2. ✅ **Resistance-Research Domain 51 Readiness Confirmed**:
+   - Verified all 5 friction patches applied to runbook:
+     - ✅ Pre-checklist gate (line 28-30)
+     - ✅ FEC vacancy count updated to 4 of 6 (line 36)
+     - ✅ Ballot measure states corrected to AK, CA, MO, MT (line 37)
+     - ✅ Issue One "Strengthening the Rules" gap documented (line 66)
+     - ✅ OpenSecrets HTTP 403 contingency noted (line 132)
+   - Verified execution checklist is production-ready and covers:
+     - Pre-send verification (gist status, templates, contacts)
+     - June 9 Wave 1 (national contacts: CLC, Issue One)
+     - June 11-12 Wave 2 (California contacts: Common Cause CA, LWV CA, Clean Money Action Fund)
+   - **Status**: Domain 51 is READY for June 9-12 distribution execution per DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md
+
+3. 🟢 **Project Status Summary**:
+   - **stockbot**: 🔴 CRITICAL (Alpaca error awaiting user action)
+   - **resistance-research**: ✅ PRODUCTION-READY (Domain 51 friction patches confirmed, execution checklist ready)
+   - **open-repo**: ✅ READY (pre-deployment verified, June 12 deployment approved)
+   - **seedwarden**: ⏳ AWAITING DECISION (Track A/B selection)
+   - **cybersecurity-hardening**: ⏳ AWAITING DECISION (Phase 1 VeraCrypt restart)
+   - **mfg-farm**: ⏳ AWAITING DECISION (test print execution)
+   - **systems-resilience**: ⏳ AWAITING DECISION (platform selection)
+
+**Items Needing Urgent User Input**:
+
+1. 🔴 **CRITICAL (BEFORE 13:30 UTC TODAY — June 4)**:
+   - Check Alpaca account status at broker dashboard
+   - If account is active: Contact Alpaca support to manually clear stale WebSocket connections
+   - If account is restricted: Verify account is in good standing
+   - **DO NOT DEPLOY** DEPLOY_READY flag during market hours (would restart engine mid-session)
+
+2. 🟢 **PARALLEL (ANYTIME)**:
+   - Approve resistance-research Domain 51 June 9-12 distribution (checklist is ready to execute)
+   - Approve systems-resilience platform selection (Nextcloud+Matrix vs Discourse) — gates Wave 1 June 5
+   - Approve seedwarden Track activation (A/B/Both) — gates Phase 2 coordination
+
+**Strategic Outcome**:
+- All technical blockers except Alpaca are resolved
+- Execution infrastructure is ready for parallel deployment across 3+ projects once user decisions made
+- Resistance-research June 9-12 window is fully staged and verified
+- Open-repo June 12 deployment is approved and verified
+
+**Token Budget Status**:
+- Session 2739: ~12k (orientation + verification + file updates)
+- Cumulative: ~9.4% Sonnet used
+- Status: Ample budget remaining
+
+---
+
 ## Since Last Check-in — Session 2738 (2026-06-04 03:31–03:40 UTC — Orchestrator: CRITICAL Block Verification + Exploration Queue Assessment)
 
 **Status**: 🔴 **CRITICAL ISSUE CONFIRMED PRESENT** — Alpaca WebSocket error blocking trading 10 hours before market open. No autonomous fixes available. Positioned for parallel exploration queue work while awaiting urgent user action.
