@@ -87,6 +87,36 @@
 **Owner**: systems-resilience subagent
 **Deadline**: June 14 (ready for June 15 Wave 2 activation immediately post-Wave-1)
 
+### 59. ⏳ seedwarden — Track B Post-Launch Day 3/7/14 Automation Framework
+**Context**: Track B activation scheduled 13:00 UTC June 4 (automatic if no user override). Infrastructure verified operational (8/8 zone PDFs, 5 email bodies, 15 influencer contacts, 18 social posts ready). Post-launch monitoring framework needed for June 4-19 tracking window to measure traction and trigger contingency responses.
+**Scope**: Design comprehensive Day 3/7/14 checkpoint automation for Track B launch:
+  - **Day 3 (June 7) checkpoint**: Email open-rate collection from Campaign Monitor, Gist view count from analytics, influencer activity tracking (Twitter/Instagram mentions), sales/referral attribution, user onboarding funnel (Kit completion %, PDF download %, email subscription rates)
+  - **Day 7 (June 11) checkpoint**: Aggregate metrics summary, engagement signals (Day 3 vs Day 7 trending), cohort analysis (early adopters vs late followers), sales velocity per channel, contingency trigger assessment
+  - **Day 14 (June 18) checkpoint**: Full campaign performance review, decision gate for Phase 2 expansion (expand contact list? add new channels? scaling budget?), archive metrics for post-launch synthesis
+  - **Contingency triggers**: Low open rate (<20%), low Gist views (<50), zero sales, influencer silence (0 mentions in 7 days), high unsubscribe rate (>5%)
+  - **Automation runbooks**: Email query scripts, Gist API polling, sales tracking queries (Etsy/Shopify/PayPal), Twitter mention searches, decision decision-tree for NO-GO conditions
+**Deliverables**:
+  - `TRACK_B_MONITORING_AUTOMATION_FRAMEWORK.md` (Day 3/7/14 scripts, metric collection procedures, thresholds)
+  - `CONTINGENCY_TRIGGER_DECISION_TREE.md` (8-10 named scenarios with numeric thresholds, GO/CAUTION/NO-GO branches)
+  - `POST_LAUNCH_ANALYSIS_TEMPLATE.md` (metric collection sheet, engagement signal log, decision recommendations for Phase 2)
+**Owner**: seedwarden subagent
+**Deadline**: June 6 (ready for Day 3 checkpoint June 7, supports June 11 Day 7 decision)
+
+### 60. ⏳ stockbot — Signal Validation & Feature Interaction Framework (June 4-10)
+**Context**: Strategic reset complete (Session 2750+). Two trading sessions (JPM ridge_wf + AMZN lgbm_ho) running production code post-Alpaca fix. First week of actual market execution provides data to validate signal quality, feature interaction, and HMM regime gating effectiveness under live conditions.
+**Scope**: Design comprehensive signal audit and feature validation framework for June 4-10 trading window:
+  - **Signal latency audit**: Verify Alpaca data freshness (target <1s), timestamp synchronization across sessions, gap detection (missing bars), indicator recalculation timing
+  - **Feature interaction analysis**: MTF feature extraction (5m/15m/1h bars), HMM state transitions during market hours, signal correlation across timeframes, feature selection effectiveness (which features dominate signal quality?)
+  - **Regime gating validation**: HMM regime transitions (bull/bear/neutral), gating effectiveness (does HMM bear filter reduce false signals?), regime persistence (how long in each regime per session?), volatility correlation with regime switches
+  - **Win-rate tracking**: Per-session win rates, per-ticker performance variance, drawdown analysis, Sharpe/sortino trajectory, signal runaway detection
+  - **Backtest vs. live divergence**: Compare June 1-3 backtest predictions vs actual June 4-10 execution, identify structural gaps (slippage, fill rates, latency), recalibration triggers
+**Deliverables**:
+  - `SIGNAL_VALIDATION_AUDIT_FRAMEWORK.md` (hourly/daily audit procedures, latency measurement scripts, gap detection rules)
+  - `FEATURE_INTERACTION_ANALYSIS_TEMPLATE.md` (MTF correlation analysis, HMM state correlation, regime persistence metrics)
+  - `JUNE_4_10_EXECUTION_DASHBOARD.md` (daily signal counts, win rates, regime distribution, anomaly flags, decision checkpoints)
+**Owner**: stockbot subagent
+**Deadline**: June 11 (provides input for post-strategic-reset evaluation)
+
 ### 55. ✅ resistance-research — Domain 49 June 4-5 Execution Pre-Flight Checklist (Session 2711 COMPLETE)
 **Status**: Completed June 3 (Session 2711, 22:15–22:40 UTC). All three deliverables production-ready.
 **Deliverables** (ALL COMPLETE):
