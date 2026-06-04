@@ -1,4 +1,48 @@
-## Since Last Check-in — Session 2750 (2026-06-04 06:35–07:15 UTC — Orchestrator: Exploration Queue Item 58 Completed + Pre-Market Prep)
+## Since Last Check-in — Session 2751 (2026-06-04 06:53–07:00 UTC — Orchestrator: Decision Point Scheduling)
+
+**Status**: 🟡 **MONITORING MODE + DECISION POINT SCHEDULING** — Pre-market operational window open. Seedwarden Track B + Nextcloud+Matrix activations scheduled for 13:00 UTC.
+
+**Session Work**:
+1. ✅ **Orientation Complete** (06:53 UTC)
+   - Reviewed ORCHESTRATOR_STATE.md (current: 06:53 UTC)
+   - Reviewed PROJECTS.md priority order and project statuses
+   - Checked EXPLORATION_QUEUE.md (3 active items; Item 57 complete, Items 54/59 queued)
+   
+2. ✅ **Decision Point Analysis**
+   - **Seedwarden Track Decision**: Deadline 13:00 UTC (6h 7m remaining)
+     * No user input in CHECKIN.md or INBOX.md (confirmed at 06:53 UTC)
+     * Activation script TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md ready
+   - **Systems-resilience Platform Decision**: Deadline EOD June 4 (co-located at 13:00 UTC)
+     * No user input received
+     * Activation script NEXTCLOUD_MATRIX_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md ready
+
+3. ✅ **Scheduled Wakeup for Decision Execution** (06:55 UTC)
+   - **Primary wakeup**: 20-min check interval (08:15 UTC) — monitor for last-minute user input
+   - **At 13:00 UTC deadline**: Execute both prepared activations if no user decision
+   - **Contingency**: If user provides decision by 13:00 UTC, activations will honor user choice instead
+
+**Current Status** (confirmed):
+- **Stockbot**: ✅ OPERATIONAL — Item 58 runbooks delivered (Session 2750); ready for 13:30 UTC market open
+- **Seedwarden**: ✅ INFRASTRUCTURE READY — Track B activation at 13:00 UTC (if no user input)
+- **Systems-resilience**: ✅ INFRASTRUCTURE READY — Nextcloud+Matrix activation at 13:00 UTC (if no user input)
+- **Resistance-research**: Domain 51 execution June 9-12 (all prep complete)
+- **Other projects**: Blocked on user actions (test print, VeraCrypt restart, platform decision)
+
+**Needs Your Input** (by 13:00 UTC today):
+1. **Seedwarden Track A/B/Both decision** — If you have a preference, update PROJECTS.md seedwarden focus or reply in next CHECKIN.md to override Track B default
+2. **Systems-resilience Platform** (Nextcloud+Matrix vs Discourse) — If you prefer Discourse, update PROJECTS.md or reply in CHECKIN.md to override Nextcloud+Matrix default
+
+**Next Steps**:
+1. **08:15–13:00 UTC**: Continuous monitoring for user decisions (20-min wakeup intervals)
+2. **13:00 UTC or earlier if deadline passed**: Execute pending activations (Track B + Nextcloud+Matrix)
+3. **13:15 UTC**: Stockbot pre-market health checks
+4. **13:30 UTC**: Stockbot market open
+
+---
+
+## History
+
+### Session 2750 (2026-06-04 06:35–07:15 UTC — Orchestrator: Exploration Queue Item 58 Completed + Pre-Market Prep)
 
 **Status**: 🟢 **PREPARATION COMPLETE** — Stockbot Market Execution Runbook (Item 58) delivered ahead of schedule. Ready for pre-market health checks at 11:00 UTC.
 
