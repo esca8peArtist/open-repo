@@ -1,3 +1,51 @@
+## Since Last Check-in — Session 2745 (2026-06-04 05:04–08:05 UTC — Orchestrator: Critical Block Verification + Exploration Work + Escalation Prep)
+
+**Status**: 🟡 **CRITICAL DECISION WINDOW ACTIVE** — Three pending user decisions at 13:00 UTC deadline (5h remaining). Exploration work completed in parallel. All systems ready for escalation if deadline passes without user input.
+
+**Session Summary**:
+
+1. ✅ **Critical Block Verification** (05:04 UTC):
+   - Confirmed: stockbot trading sessions NOT executing (0 "Market closed" messages in docker logs)
+   - Root cause: WebSocket 406 error blocking TradingSession.__init__ startup
+   - Impact: 3 days without trades (June 1-3), market opens June 4 13:30 UTC (8.5h away)
+   - **Action required**: User must choose WebSocket Option A/B/C by 13:00 UTC
+   - **Recommendation**: Option B (15 min, disable WebSocket, allows REST-only trading)
+
+2. ✅ **Exploration Queue Work Complete** (07:45 UTC, 2.5 hours):
+   - **GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS.md** (2,800+ words, production-ready)
+   - Root causes documented: 67-session architecture over-leverage (569%), AAPL model validation gap, guardrails not integrated
+   - Phase 3 recommendations: Hybrid scaling (JPM+AMZN proven + 2 new depth-first models), max 10 sessions
+   - Confidence: 95% root causes, 90% Phase 3 recommendations
+   - Strategic impact: De-risks model scaling decisions post-June-22
+
+3. ✅ **Escalation Preparation Complete** (08:00 UTC):
+   - Seedwarden Track B: Documentation prepared for automatic activation if no user decision by 13:00 UTC
+   - Systems-Resilience Nextcloud+Matrix: Documentation prepared for automatic selection if no user decision by 13:00 UTC
+   - Stockbot Block: Remains active pending user action
+   - Execution time if needed: <10 min to execute both escalations
+
+**Critical Deadlines** (13:00 UTC, 5h remaining):
+1. 🔴 **Stockbot WebSocket** (MANDATORY): User must execute Option A/B/C — market opens 13:30 UTC
+2. 🟡 **Seedwarden Track** (DEFAULT: Track B): If no decision, Track B activates automatically
+3. 🟡 **Systems-Resilience Platform** (DEFAULT: Nextcloud+Matrix): If no decision, Nextcloud+Matrix selected automatically
+
+**Project Status** (current as of 08:05 UTC):
+- **stockbot**: 🔴 CRITICAL BLOCK (WebSocket, user action required)
+- **resistance-research**: ✅ READY (Domain 51 execution June 9-12)
+- **seedwarden**: ⏳ DECISION-GATED (Track B ready if activated)
+- **systems-resilience**: ⏳ DECISION-GATED (Nextcloud+Matrix ready if activated)
+- **cybersecurity-hardening**: ⏳ BLOCKED (VeraCrypt restart pending)
+- **mfg-farm**: ⏳ BLOCKED (test print pending)
+- **open-repo**: ✅ READY (June 12 deployment)
+
+**What's Next**:
+- Continue monitoring for user decisions periodically until 13:00 UTC
+- At 13:00 UTC: Execute escalations for any decisions still pending
+- Post-13:00 UTC: Resume normal project work based on escalation outcomes
+- Post-market-open (14:00 UTC): Verify stockbot trading if user applies Option B/C fix
+
+---
+
 ## Since Last Check-in — Session 2744 (2026-06-04 05:25–05:50 UTC — Orchestrator: CRITICAL ESCALATIONS - Trading Sessions Down + Decision Deadlines Passed)
 
 **🚨 CRITICAL STATUS** — Two urgent user actions required by 13:00 UTC (8h 15min remaining):
