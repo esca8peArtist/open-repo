@@ -1,28 +1,56 @@
-## Since Last Check-in — Session 2778 (2026-06-04 13:31 UTC — Orchestrator: Market-Open Health Verification)
+## Since Last Check-in — Session 2779 (2026-06-04 13:37–14:00 UTC — Orchestrator: User-Escalation + Exploration Queue Item 54)
 
-**Status**: ✅ **VERIFICATION COMPLETE** — All systems healthy, market trading live, infrastructure production-ready for June 5+ activations.
+**Status**: ✅ **TWO MAJOR DELIVERABLES COMPLETE** — User-escalated stockbot report synthesized; systems-resilience Phase 6 Wave 2 planning complete. All systems operational, stockbot trading live.
 
 **Session Work**:
-- ✅ Verified git repo, GitHub SSH, all project infrastructure files (6-point health check)
-- ✅ Confirmed stockbot trading live on Jetson (AMZN lgbm_ho processing signals at 13:31 UTC)
-- ✅ Confirmed all Domain 51, seedwarden Track B, systems-resilience Wave 1 files staged and ready
 
-**Finding**: No autonomous orchestration work available. All project work time-gated for future execution (June 5+ activations). Stockbot trading in live market (monitoring via post-market analysis framework). No subagent work to spawn—awaiting user action gates for seedwarden (June 5) and systems-resilience (June 5).
+1. **✅ Stockbot Comprehensive Backtesting Report (User Escalation — May 8)**
+   - **Deliverable**: `projects/stockbot/COMPREHENSIVE_BACKTESTING_REPORT_2026_JUNE.md` (31KB, ~7,000 words)
+   - **Scope**: Phases 1–4 complete synthesis (infrastructure audit, model evaluation, graduation gates, production pipeline, live readiness, expansion path, contingencies)
+   - **Key findings**:
+     - JPM ridge_wf: **6/6 gates PASS** — unconditionally deployment-ready (OOS Sharpe 4.412, WFE 1.073, t-stat 4.37)
+     - AMZN lgbm_ho: **5/6 gates PASS** — conditionally deployment-ready (OOS Sharpe 3.939, G5 bear-regime fixable via config)
+     - AAPL models: **SUSPENDED** — lgbm_ho 0.649 Sharpe (gate 1 fail), ridge_wf 0.096 Sharpe (25x overfitting, WFE 0.038)
+   - **Decision table**: 4 models × 8-column format (G1–G6, verdict)
+   - **All metrics sourced** from AMZN_LGBM_HO_OOS_VALIDATION_RESULTS.md + prior P2 evaluations
+   - **Committed**: `projects/stockbot/COMPREHENSIVE_BACKTESTING_REPORT_2026_JUNE.md` (stockbot submodule)
+
+2. **✅ Exploration Queue Item 54: Systems-Resilience Phase 6 Wave 2 Activation** (due June 14)
+   - **Deliverable 1**: `PHASE_6_WAVE_2_ACTIVATION_CHECKLIST.md` — June 15-20 transition tasks, author stratification (Tier A/B/C), onboarding kit, contingency routing
+   - **Deliverable 2**: `WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md` — 3 parallel author tracks (Governance / Food+Info / Security+Scaling), staggered start (Track 3 +4 days), critical path through July 5 publication
+   - **Deliverable 3**: `RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md` — 3 scenarios (A: full parallel 96h, B: sequential 4-day slip, C: efficiency-gated 20-30h throttle); routing triggers; stockbot CAUTION/ROLLBACK immediate escalation to Scenario B
+   - **Platform context**: All three files keyed to Nextcloud+Matrix (activated June 4 13:00 UTC) with collaborative features emphasized
+   - **Committed**: All three files to `projects/systems-resilience/` on master (commit 931e5f09)
+
+**Stockbot Market Status** (live execution):
+- **13:30 UTC open**: Both sessions (JPM ridge_wf, AMZN lgbm_ho) woke and began trading
+- **Current time 13:37 UTC**: Sessions executing; monitoring via Item 61 (post-market analysis 20:00 UTC)
+- **20:00 UTC checkpoint**: Run `JUNE_4_10_DAILY_MONITORING_CHECKLIST.md` + `JUNE_4_EVENING_POSTMARKET_ANALYSIS_TEMPLATE.md` (15-20 min execution, outputs GO/CAUTION/NO-GO for Day 2)
 
 **Needs Your Input** (by June 5 08:00 UTC):
 1. **Seedwarden Track B Gates** — Complete 5 gates per READINESS_REPORT_JUNE_1.md (Gate 4 priority: upload 8 zone PDFs to Drive, 20 min)
-2. **Systems-Resilience Phase 5 Wave 1** — Run pre-flight checklist June 5 morning, make go/no-go decision at 08:00 UTC for 09:00 UTC recruitment send
+2. **Systems-Resilience Phase 5 Wave 1 Recruitment** — Run pre-flight checklist June 5 morning, go/no-go decision at 08:00 UTC
 
 **Critical Timeline**:
-- **13:30 UTC today**: Stockbot market open (✅ trading live)
-- **20:00 UTC today**: Post-market analysis checkpoint (Item 61 automated monitoring)
-- **June 5 06:00 UTC**: Phase 5 Wave 1 pre-flight verification window opens
-- **June 5 08:00 UTC**: Go/No-Go decision gate for recruitment send
-- **June 9-12**: Domain 51 execution (pre-staging complete)
+- **20:00 UTC today**: Post-market analysis (Item 61) — stockbot Day 1 P&L checkpoint
+- **June 5 06:00–08:00 UTC**: Phase 5 pre-flight window (user action)
+- **June 5 13:00 UTC**: Seedwarden Track B gates close (user action deadline)
+- **June 9-12**: Resistance-research Domain 51 execution window
+- **June 14**: Item 54 completion deadline (all three Wave 2 files ready for June 15 deployment)
+- **June 15**: Phase 6 Wave 2 author onboarding begins (if go decision made at June 5 pre-flight)
 
 **Blocked Items** (2, unchanged):
 - cybersecurity-hardening: VeraCrypt pre-boot restart (user action)
 - mfg-farm: Test print execution (user action)
+
+**What Changed This Session**:
+- User escalation item (backtesting report) synthesized and committed
+- Exploration Queue Item 54 completed 8 days early (due June 14, ready June 4 13:37 UTC)
+- All critical infrastructure for June 5+ execution in place (no additional autonomous work available until post-market analysis)
+
+---
+
+## Since Last Check-in — Session 2778 (2026-06-04 13:31 UTC — Orchestrator: Market-Open Health Verification)
 
 ---
 
