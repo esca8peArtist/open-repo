@@ -1,28 +1,37 @@
-## Since Last Check-in — Session 2748 (2026-06-04 06:16–06:30 UTC — Orchestrator: Exploration Queue Update + Pre-Market Scheduling)
+## Since Last Check-in — Session 2750 (2026-06-04 06:35–07:15 UTC — Orchestrator: Exploration Queue Item 58 Completed + Pre-Market Prep)
 
-**Status**: 🔵 **MONITORING + PREPARATION MODE** — Confirmed Exploration Queue Item 57 (resistance-research Batch 2) is production-ready (completed prior session). Scheduled wake-up for 11:00 UTC to begin stockbot pre-market health checks.
+**Status**: 🟢 **PREPARATION COMPLETE** — Stockbot Market Execution Runbook (Item 58) delivered ahead of schedule. Ready for pre-market health checks at 11:00 UTC.
 
 **Session Work**:
-1. ✅ **Orientation complete** (ORCHESTRATOR_STATE.md reviewed; all active blocks processed)
-2. ✅ **Confirmed Item 57 complete** (BATCH_2_RESOURCE_ALLOCATION_MATRIX.md + CONTINGENCY_ACTIVATION_SCENARIOS.md + CHECKPOINT_READINESS_PROTOCOL.md all production-ready)
-3. ✅ **Updated EXPLORATION_QUEUE.md** Item 57 status marker from `⏳` to `✅`
-4. ✅ **Scheduled wake-up for 11:00 UTC** (pre-market health checks + seedwarden decision point at 13:00 UTC)
+1. ✅ **Orientation complete** (ORCHESTRATOR_STATE.md reviewed; current blockers identified)
+2. ✅ **Spawned stockbot subagent for Item 58** (Post-Data-Feed-Fix Market Execution Runbook)
+   - Deliverable 1: `MARKET_EXECUTION_WEEK_1_RUNBOOK.md` — Hour-by-hour guidance June 4-10, pre-market checks, contingency paths for IEX/SIP/REST-only, 406/409 error handling, position reconciliation
+   - Deliverable 2: `SIGNAL_QUALITY_AUDIT_FRAMEWORK.md` — Latency thresholds (calibrated to daily-bar architecture), gap detection, remediation procedures
+   - Deliverable 3: `JUNE_4_10_GO_NO_GO_DECISION_TEMPLATE.md` — Checkpoints at Day 2 (June 5), Day 4 (June 6), Day 7 (June 10); pass/caution/fail thresholds; escalation paths
+3. ✅ **Updated EXPLORATION_QUEUE.md** Item 58 status marker from `⏳` to `✅ [COMPLETE SESSION 2750]`
+4. All three deliverables production-ready and saved to `projects/stockbot/` (uncommitted pending orchestrator review)
 
-**Current Decision Deadlines** (both still pending):
-- **Seedwarden Track A/B/Both**: Deadline **13:00 UTC** (6h 44m remaining). No user response yet. Orchestrator default: Track B activation at 13:00 UTC.
-- **Systems-resilience Platform** (Nextcloud+Matrix vs Discourse): Due **EOD today** (lower priority than seedwarden).
+**Key Content Delivered**:
+- **Date corrections**: Aligned to actual market calendar (Day 1 = June 4, checkpoints on June 5/6/10)
+- **WebSocket 406 handling**: Included as Contingency 3 (120-second stop/wait/start recovery)
+- **Data feed contingencies**: All three runbooks support IEX, SIP, and REST-only (disable WebSocket) scenarios
+- **AMZN stale DB position**: Identified and included as required pre-open reconciliation step
+- **Phase 3 expansion alignment**: Cross-references GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS.md for Phase 3 options (MSFT/NVDA before AAPL)
 
-**Stockbot Status**: ✅ READY FOR MARKET OPEN
-- Both trading sessions (JPM ridge_wf + AMZN lgbm_ho) verified operational
-- Database fix confirmed (Session 2745)
-- Market open: 13:30 UTC (7h 14m)
-- Pre-market health checks scheduled: 11:00–13:00 UTC
+**Current Status** (unchanged):
+- **Stockbot**: ✅ READY FOR MARKET OPEN — Both trading sessions (JPM ridge_wf + AMZN lgbm_ho) verified operational; Item 58 runbooks now available for June 4-10 execution
+- **Seedwarden**: Infrastructure ready; decision deadline **13:00 UTC** (5h 45m remaining); Track B activation script prepared
+- **Systems-resilience**: Platform decision deadline EOD today (lower priority)
 
 **Next Steps**:
 1. **11:00 UTC**: Begin stockbot pre-market health checks (SSH verification, API health, trading session status)
 2. **13:00 UTC**: Execute seedwarden Track B activation (if no user response by deadline)
 3. **13:15 UTC**: Final market-open readiness verification
-4. **13:30 UTC**: Stockbot market opens; monitor trading session startup
+4. **13:30 UTC**: Stockbot market opens; both sessions begin trading
+
+---
+
+## Since Last Check-in — Session 2748 (2026-06-04 06:16–06:30 UTC — Orchestrator: Exploration Queue Update + Pre-Market Scheduling)
 
 ---
 

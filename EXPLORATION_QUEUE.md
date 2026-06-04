@@ -124,7 +124,7 @@
 **Owner**: resistance-research subagent
 **Deadline**: June 4 (ready for June 4+ activation once user decides)
 
-### 58. ⏳ stockbot — Post-Data-Feed-Fix Market Execution Runbook (June 4-10)
+### 58. ✅ stockbot — Post-Data-Feed-Fix Market Execution Runbook (June 4-10) [COMPLETE SESSION 2750]
 **Context**: User will choose IEX or SIP feed by EOD June 3 (5-10 min implementation June 4). Once data feed is operational, comprehensive market execution plan needed for June 4-10 trading window.
 **Scope**: Design full market execution protocol for the first week post-data-feed-fix:
   - **Signal quality audit**: Post-activation, sample 10 signal ticks per session; verify timestamp freshness, latency distribution, gap detection
