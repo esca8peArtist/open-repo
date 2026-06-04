@@ -41884,3 +41884,44 @@ Given **CRITICAL BLOCKER** (Alpaca auth) status and time constraints:
 **Next Session**: 20:00 UTC — Item 61 post-market analysis execution (JPM + AMZN trading results analysis, GO/CAUTION/NO-GO decision)
 
 ---
+
+## Session 2789 Summary (In Progress)
+
+**Session Duration**: 2026-06-04 17:10 UTC → 20:00 UTC (projected)
+
+**Work Completed**:
+
+1. ✅ **Stockbot: Gate 1 Checkpoint Failure Root Cause Analysis** (2.5 hours, 1 agent)
+   - Comprehensive database analysis of May 12/19/22 checkpoint failures
+   - Root cause identified: Signal infrastructure breakdown (not model degradation)
+   - Entry/exit gate tuning post-April 28 created cascade failure
+   - Signal frequency collapsed 53% (13.3→7.3/day), win rate halved (52.4%→25%)
+   - Deliverable: `GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS.md` (595 lines, 3,400+ words, 5 sections)
+   - Phase 3 recommendations: decouple gates, adaptive thresholds, circuit breakers, per-ticker isolation, progressive scaling
+   - Committed to stockbot submodule (commit 10f6c3f)
+   - Updated PROJECTS.md exploration queue item to COMPLETE
+
+2. ✅ **Stockbot: IEX vs SIP Data Feed Signal Quality Analysis** (3.3 hours, 1 agent)
+   - Comprehensive feed specification comparison (IEX 3.8% coverage vs SIP 100%)
+   - Signal quality impact: JPM ridge_wf 87.5% baseline, AMZN lgbm_ho 75%
+   - Win rate degradation estimates: JPM 2-4pp, AMZN 3-6pp on full execution
+   - Cost-benefit analysis: SIP $99/month ROI breakeven ~$25K deployed capital
+   - Deployment recommendation: Scenario A (maintain IEX June, upgrade SIP July)
+   - Decision framework: June 30 correlation check (target ≥70%) → July upgrade → July 10+ live trading
+   - Deliverable: `IEX_VS_SIP_SIGNAL_COMPARISON.md` (405 lines, 4,488 words)
+   - Committed to stockbot submodule (commits 10f6c3f, 1cf5320)
+   - Updated PROJECTS.md exploration queue item to COMPLETE
+
+3. 🟡 **Pending**: Item 61 execution at 20:00 UTC (post-market analysis)
+
+**Exploration Queue Status**:
+- ✅ GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS — COMPLETE (Session 2789)
+- ⏳ IEX vs SIP Data Feed Analysis — pending
+- ⏳ Seedwarden Phase 1→2 Readiness Gap — pending
+- ⏳ Phase 2 Domain Research Dry-Run — pending
+- ⏳ Systems-Resilience Platform Playbooks — pending
+- Plus 20+ other exploration items across all projects
+
+**Next Action**: Item 61 at 20:00 UTC (market close analysis)
+
+---
