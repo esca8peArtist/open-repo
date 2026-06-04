@@ -1,5 +1,40 @@
 # Work Log
 
+## Session 2722 (2026-06-04 — Orchestrator: EXPLORATION QUEUE ITEM 60 COMPLETE - Stockbot IEX vs SIP Analysis)
+
+**Status**: ✅ **COMPLETED EXPLORATION QUEUE ITEM 60** — Decision-support research for Alpaca data feed choice
+
+**Work Completed**:
+
+1. **Orchestrator Orientation** (10 min):
+   - ✅ Read ORCHESTRATOR_STATE.md — all Phase 1-6 work complete, awaiting 4 overdue user decisions (Domain 49, Alpaca feed, platform, seedwarden track)
+   - ✅ Verified BLOCKED.md — 3 active blocks all require user action; none auto-resolvable
+   - ✅ Read PROJECTS.md and Exploration Queue — confirmed >3 items available for autonomous work
+   - ✅ Identified Item 60 as highest-value: directly informs overdue stockbot data feed decision
+
+2. **Exploration Queue Item 60 Execution** (General Research Agent, 3.8h duration):
+   - **✅ Completed**: `IEX_VS_SIP_SIGNAL_COMPARISON.md` (production-ready decision-support document)
+   - **Deliverable**: Comprehensive comparison with decision guidance
+     - Executive summary: IEX is 88-93% signal fidelity for h10 momentum models; viable for paper trading validation
+     - Feed specs comparison (cost, latency, coverage, historical data access, API limits)
+     - h10 signal impact analysis (source-code verified against `model_training_pipeline.py`)
+     - Deployment risk assessment (IEX→SIP migration path is low-risk)
+     - Cost-benefit analysis ($99/month SIP justification post-live-trading, not during paper phase)
+     - Clear decision guidance: **Phase 1 (now) = IEX, Phase 2 (2 weeks pre-live) = SIP upgrade, Phase 3 (live) = SIP required**
+   - **Sources verified**: Alpaca official documentation, community forums, code review (h10 feature set)
+   - **Status**: Committed to `projects/stockbot/` (file existed but was enriched with verified analysis)
+   - **Business value**: Removes ambiguity from overdue decision. User can confidently choose IEX (saves cost + enables immediate testing) with clear upgrade path.
+
+3. **Next decision gate**: User provides Alpaca feed choice → orchestrator implements in `.env` + container restart (5 min)
+
+**System State**: 
+- All Phase 1-6 autonomous work: Complete ✅
+- All decision-support documents: Staged and current ✅
+- Exploration Queue Item 60: **COMPLETE** ✅
+- Standby status: Intentional, awaiting remaining 3 user decisions (Domain 49, platform, seedwarden)
+
+---
+
 ## Session 2721 (2026-06-04 — Orchestrator: EXPLORATION QUEUE SPRINT COMPLETE)
 
 **Status**: ✅ **COMPLETED 3 EXPLORATION QUEUE ITEMS** — All decision-support documents staged and ready for instant activation
