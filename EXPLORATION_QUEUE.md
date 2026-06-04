@@ -117,34 +117,25 @@
 **Status**: ✅ PRODUCTION-READY for June 4 20:00 UTC post-market-close analysis (hands-off orchestration enabled)
 **Deadline**: June 10 evening ✅ ADVANCED COMPLETE (committed June 4 09:30 UTC, 10.5 hours before market open)
 
-### 62. ⏳ stockbot — June 11-30 Extended Multi-Ticker Readiness Framework (Session 2764)
-**Context**: Week 1 execution (June 4-10) validates 2-session config (JPM ridge_wf + AMZN lgbm_ho) with Item 61 monitoring templates. If Day 7 assessment (June 10) shows GO signal, June 15+ expansion to 4-6 sessions requires pre-staging. Scope 4-session config constraints (risk aggregation, margin utilization, sector concentration), multi-ticker signal correlation analysis, and contingency routing for June 11-30 execution window.
-**Scope**: Design June 11-30 multi-ticker expansion roadmap independent of Day 7 assessment outcome; ready to execute immediately if GO decision reached June 10:
-  - Four-session config readiness: risk parameters (sector concentration <50%, correlation bounds, position-sizing Kelly curves), margin utilization targets (60-75%), drawdown limits per session vs. portfolio level
-  - Signal correlation analysis: JPM vs AMZN feature dominance, regime transition synchronization, false-signal interaction modes
-  - Contingency routing: if any session fails GO criteria, fallback to 3-session (JPM+AMZN+AAPL) or revert to 2-session with MSFT scheduled for June 20
-  - Resource contention check: 4-session expansion vs. Phase 2 research (Domain 51 June 9-12) vs. seedwarden post-launch monitoring (Day 7 June 11)
-**Deliverables**:
-  - `MULTI_TICKER_EXPANSION_JUNE_11_30_FRAMEWORK.md` (timing, risk gating, 4/3/2-session decision paths)
-  - `JUNE_11_30_CONTINGENCY_ROUTING.md` (failure modes by session, remediation paths, rollback triggers)
-  - `SESSION_CORRELATION_ANALYSIS_TEMPLATE.md` (feature interaction matrix, regime sync verification, signal-quality cross-check)
-**Owner**: stockbot subagent
-**Deadline**: June 10 EOD (ready for June 11 immediate activation if GO)
+### 62. ✅ stockbot — June 11-30 Extended Multi-Ticker Readiness Framework (Session 2767 COMPLETE)
+**Status**: Completed June 4 (Session 2767, 10:10–10:35 UTC). All three deliverables production-ready.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `MULTI_TICKER_EXPANSION_JUNE_11_30_FRAMEWORK.md` (4,665 words) — 4-session risk parameters (sector <50%, correlation bounds, margin targets, drawdown cascade), signal correlation analysis, GO/CAUTION/ROLLBACK scenario table, resource contention schedule
+  - ✅ `JUNE_11_30_CONTINGENCY_ROUTING.md` (4,132 words) — 10 failure modes with WARN/CAUTION/ROLLBACK tiers, exact remediation commands, 3-anomaly-flag cascade rule extended from Item 61
+  - ✅ `SESSION_CORRELATION_ANALYSIS_TEMPLATE.md` (4,124 words) — 8-feature interaction matrix, Monday 08:00 UTC correlation measurement script, daily regime log table, cross-session BUY agreement query, monthly audit triggers
+**Key findings**: active-sessions-4session.json is 2-session production config (AAPL removed post-walk-forward failure); AAPL re-validation is hard gate before expansion. All contingency commands executable by orchestrator.
+**Owner**: stockbot subagent (Session 2767)
+**Status**: PRODUCTION-READY for June 11 immediate activation upon June 10 GO decision
 
-### 63. ⏳ resistance-research — Domain 51 June 9-12 Execution Pre-Flight Checklist (Session 2764)
-**Context**: Domain 51 research execution scheduled June 9-12 per PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md. All research architecture documented (SB-42 California Fair Elections Act, 5 contact orgs, 60-90 min production). Pre-stage detailed execution checklist with contact stratification, research timeline blocks, email sequencing, and contingency triggers.
-**Scope**: Design granular day-by-day execution plan for June 9-12:
-  - Research timeline: June 9 (research kickoff, 2-3h); June 10 (drafting, 1.5-2h); June 11 (Gist creation + review cycle, 1h); June 12 (email template finalization, contact verification, 30-45min)
-  - Contact stratification: 5 orgs (CLC, Issue One, Common Cause CA, LWV CA, Clean Money Action Fund) by tier (Tier A likelihood 40-60%, Tier B 20-30%, Tier C 5-10%)
-  - Email sequencing: 3-wave send (Tier A June 12 evening, Tier B June 13, Tier C June 15) with case-by-case timing based on engagement priority
-  - Contingency: if SB-42 research hits wall (sources unavailable, expert contacts unresponsive), switch to SB-290 fallback documented in PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md
-  - Resource contention: June 9 system-resilience Wave 1 author onboarding may overlap; pre-stage parallel execution plan
-**Deliverables**:
-  - `DOMAIN_51_JUNE_9_12_EXECUTION_CHECKLIST.md` (6-section breakdown: research, drafting, Gist, outreach, contingency, success criteria)
-  - `DOMAIN_51_CONTACT_STRATIFICATION_AND_TIMING.md` (full contact list, engagement scoring, send-wave timeline)
-  - `DOMAIN_51_CONTINGENCY_SB_290_FALLBACK.md` (if SB-42 path blocked, SB-290 research plan and 5 alternate contacts)
-**Owner**: resistance-research subagent
-**Deadline**: June 8 EOD (ready for June 9 immediate execution)
+### 63. ✅ resistance-research — Domain 51 June 9-12 Execution Pre-Flight Checklist (Session 2767 COMPLETE)
+**Status**: Completed June 4 (Session 2767, 10:10–10:35 UTC). All three deliverables production-ready.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `DOMAIN_51_JUNE_9_12_EXECUTION_CHECKLIST.md` (6-section: research/drafting/Gist/outreach/contingency/success, hour-by-hour timeline, user budget 2.5–3.9h)
+  - ✅ `DOMAIN_51_CONTACT_STRATIFICATION_AND_TIMING.md` (5-org matrix, engagement scoring, Tier A/B/C stratification, UTC-anchored send windows)
+  - ✅ `DOMAIN_51_CONTINGENCY_SB_299_FALLBACK.md` (corrected from SB-290 to SB-299 Secure Automatic Voter Registration, 10 alternate contacts, activation thresholds)
+**Key findings**: SB-290 in scope was CalWORKs bill (wrong); corrected to SB-299 (Secure Automatic Voter Registration). CLC conflict with Domain 49 resolved (staggered sends June 9 vs June 10). No blocking dependency with systems-resilience Wave 1 onboarding (separate contact pools, parallel feasible).
+**Owner**: resistance-research subagent (Session 2767)
+**Status**: PRODUCTION-READY for June 9 immediate execution
 
 ### 64. ✅ systems-resilience — June 5-15 Platform-Independent Wave 2 Onboarding Template (Session 2764 COMPLETE)
 **Status**: Completed June 4 (Session 2764, 09:35–09:45 UTC). All three deliverables production-ready.
