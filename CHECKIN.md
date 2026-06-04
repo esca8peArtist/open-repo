@@ -1,5 +1,38 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2731 (2026-06-04 02:00–02:30 UTC — Alpaca IEX Feed Resolved)
+
+**Status**: ✅ **BLOCK RESOLVED** — Alpaca data feed configuration implemented. Stockbot trading engine now ready for market sessions.
+
+**Session Work**:
+- ✅ **Alpaca IEX feed activated** (implemented per Session 2719 recommendation analysis)
+  - Issue: `.env` had `ALPACA_DATA_FEED=iex` but running container cached old `sip` value
+  - Root cause: Using wrong docker-compose file (`docker-compose.yml` instead of `docker-compose.jetson.yml`)
+  - Fix: Restarted container with correct compose file → verified `ALPACA_DATA_FEED=iex` now active
+  - Impact: Removes critical blocker; trading engine ready for June 4-5 market sessions
+  - Rationale: IEX is free, provides 90-93% signal fidelity (sufficient for paper trading), reversible to SIP if needed before live trading
+  
+- ✅ **BLOCKED.md updated and committed**
+  - Resolved "Alpaca WebSocket data feed subscription choice" block
+  - Moved to Resolved Archive with full rationale documented
+  - Commit: 531d4586
+
+**Active Blocks Remaining**: 2 (both user-action required)
+- cybersecurity-hardening: VeraCrypt restart needed
+- mfg-farm: Test print execution needed
+
+**Critical Decision Status**:
+| Decision | Status | Deadline | Impact |
+|---|---|---|---|
+| **Domain 49** | 🔴 WINDOW CLOSED | June 5 UTC (passed) | Redistricting leverage lost; defer to Q3 2026 |
+| **Alpaca feed** | ✅ RESOLVED | June 3 (passed) | IEX activated; trading engine ready |
+| **seedwarden Track** | 🟡 ACTIONABLE | No deadline | All materials ready for immediate execution |
+| **systems-resilience Platform** | 🟡 ACTIONABLE | No deadline | Both roadmaps ready for immediate execution |
+
+**Next Action**: Awaiting user decision on seedwarden Track (A/B/Both) and systems-resilience Platform (Nextcloud+Matrix or Discourse) to unblock Phase 2 work. No additional autonomous work available until user decides.
+
+---
+
 ## Since Last Check-in — Session 2730 (2026-06-04 Current Time — Decision Deadline Status Review)
 
 **Status**: ⚠️ **CRITICAL DEADLINE PASSED** — 4 user decisions were due 23:59 UTC June 3. Domain 49 (resistance-research) window has CLOSED. Other 3 decisions remain actionable with production-ready materials.
