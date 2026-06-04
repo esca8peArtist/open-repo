@@ -1,3 +1,72 @@
+## Session 2754 (2026-06-04 07:38–07:38 UTC — Orchestrator: Decision Point Preparation + Item 60 Completion)
+
+**Status**: 🟢 **WORK COMPLETE** — Phase 5 deployment roadmap delivered; decision-point execution ready for 13:00 UTC.
+
+**Actions**:
+
+1. ✅ **Orientation & State Verification** (07:07–07:38 UTC)
+   - Confirmed no new user input in CHECKIN.md or INBOX.md
+   - Verified BLOCKED.md: 2 active blocks remain (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — no resolution progress
+   - Confirmed decision-point activation scripts ready: `TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md` and `NEXTCLOUD_MATRIX_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md`
+
+2. ✅ **Spawned general-research agent for Exploration Queue Item 60** (07:10–07:38 UTC)
+   - Deliverable 1: `PHASE_5_DEPLOYMENT_SCRIPTS_NEXTCLOUD_MATRIX.md` (30 KB) — Pi 5 thermal management, staged timeline 20:00–00:20 UTC with Discourse fallback at 03:00 UTC June 5
+   - Deliverable 2: `PHASE_5_NEXTCLOUD_MATRIX_CONFIGURATION_TEMPLATES.md` (27 KB) — CalDAV/CardDAV coordination, 8 groups, Matrix Space hierarchy, author assignment scripts
+   - Deliverable 3: `PHASE_5_AUTHOR_ONBOARDING_GUIDES_NEXTCLOUD_MATRIX.md` (17 KB) — 5-page user guide, offline workflows, troubleshooting
+   - All files committed to master (043ad7b3)
+
+**Decision Point Status** (13:00 UTC in 5h 22min):
+- **Seedwarden Track B**: Auto-activation ready if no user input. PROJECTS.md update prepared.
+- **Systems-resilience Nextcloud+Matrix**: Auto-activation ready. PROJECTS.md update prepared.
+- **No user overrides received**: Monitoring complete through 13:00 UTC.
+
+**Pre-Execution Staging** (by 13:00 UTC):
+- Activation scripts verified production-ready
+- Phase 5 deployment roadmap provides technical depth for post-decision implementation
+- All orchestration files in committable state
+
+**Next Session** (13:00 UTC): Execute decision-point activations (5 min total) → update PROJECTS.md → commit orchestration file updates → continue to market-open pre-checks at 13:15 UTC.
+
+---
+
+## Session 2753 (2026-06-04 — General Research Agent: Phase 5 Nextcloud+Matrix Deployment Package)
+
+**Status**: ✅ **COMPLETE** — Three Phase 5 deployment and onboarding documents produced for June 4–5 execution window.
+
+**Actions**:
+
+1. ✅ **Context audit**: Read all 4 existing Nextcloud+Matrix documents (NEXTCLOUD_MATRIX_DEPLOYMENT_PLAYBOOK.md v2.0, PHASE_5_NEXTCLOUD_MATRIX_DEPLOYMENT_ROADMAP.md v1.0, NEXTCLOUD_MATRIX_QUICK_START.md, NEXTCLOUD_MATRIX_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md). Identified gaps: Pi 5-specific deployment sequencing, configuration templates for author coordination layer, and user-facing onboarding guide.
+
+2. ✅ **PHASE_5_DEPLOYMENT_SCRIPTS_NEXTCLOUD_MATRIX.md** (~2,800 words):
+   - Pi 5 resource assessment: RAM/CPU/thermal constraints with mem_limit overlay strategy; documented thermal throttling risk from MEMORY.md
+   - Complete staged deployment sequence (Stages 0–8, 20:00–00:20 UTC window with 5h buffer before author recruitment)
+   - TLS certificate strategy for Tailscale-only deployment (3 options: Tailscale cert, self-signed, Let's Encrypt)
+   - Post-deployment verification checklist (10 checks: container health, Nextcloud API, Matrix API, E2E, offline sync, CalDAV, disk space)
+   - Rollback procedure with Discourse fallback timeline (starts 08:00 UTC, makes 13:00 UTC Wave 1 deadline)
+   - Cross-references all existing playbook documents
+
+3. ✅ **PHASE_5_NEXTCLOUD_MATRIX_CONFIGURATION_TEMPLATES.md** (~2,200 words):
+   - CalDAV/CardDAV: shared editorial calendar with 7 pre-populated milestones, shared author contact list, client-specific CalDAV setup instructions
+   - Nextcloud groups (8 groups: authors + 5 domain groups + editors + reviewers), folder hierarchy with WebDAV creation scripts, permissions table (read/write per domain)
+   - Matrix Space hierarchy: 10-room structure (general, coordination, 5 domain rooms, peer-review, technical, admin-only) with creation scripts
+   - Author assignment table (18 authors × domain mapping) + batch assign_authors.sh script
+   - Federation configuration for Wave 1 (internal-only, Tailscale) with Wave 2 public federation upgrade path
+   - Element Web config.json with security hardening (`disable_custom_urls`, `disable_guests`)
+
+4. ✅ **PHASE_5_AUTHOR_ONBOARDING_GUIDES_NEXTCLOUD_MATRIX.md** (~2,400 words):
+   - Page 1: 15-minute quick start (Tailscale install, Nextcloud first login, article template location, Element Web login, confirmation checklist)
+   - Page 2: First 48 hours workflow (Day 1–3 actions, deadline reminder)
+   - Page 3: Platform features (Nextcloud file sync, real-time collab, version history, comments, CalDAV setup, Matrix room guide)
+   - Page 4: Offline working (Nextcloud Desktop sync workflow, mobile offline, Element message queuing, E2E key export/import)
+   - Page 5: Troubleshooting (8 specific issues with step-by-step fixes; contacts table)
+
+**Files written**:
+- `/projects/systems-resilience/PHASE_5_DEPLOYMENT_SCRIPTS_NEXTCLOUD_MATRIX.md`
+- `/projects/systems-resilience/PHASE_5_NEXTCLOUD_MATRIX_CONFIGURATION_TEMPLATES.md`
+- `/projects/systems-resilience/PHASE_5_AUTHOR_ONBOARDING_GUIDES_NEXTCLOUD_MATRIX.md`
+
+---
+
 ## Session 2752 (2026-06-04 07:07–08:05 UTC — Orchestrator: Exploration Queue Item 59 Completion)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEM 59 COMPLETE** — systems-resilience Phase 5 Publication + Wave 2 Author Onboarding three-document suite production-ready for June 5 immediate deployment.
