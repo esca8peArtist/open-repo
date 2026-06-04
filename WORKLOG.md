@@ -1,8 +1,8 @@
 # Work Log
 
-## Session 2740 (2026-06-04 — Orchestrator: Systems-Resilience Platform Playbooks + Exploration Queue Activation)
+## Session 2740 (2026-06-04 — Orchestrator: Decision Support Materials + Exploration Queue Completion)
 
-**Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE** — Platform-Specific Technical Deployment Playbooks produced (4 documents, 154 KB). Systems-resilience platform decision now fully informed and ready for user selection. Critical block persists on stockbot (user action required).
+**Status**: ✅ **EXPLORATION QUEUE COMPLETE + DUAL USER DECISIONS FULLY SUPPORTED** — Produced 8 production-ready decision documents (systems-resilience platform playbooks + seedwarden Track decision brief). Both critical user decisions by EOD June 4 now have full technical context and actionable guidance. Critical block persists on stockbot (user action required).
 
 **Work**:
 
@@ -27,10 +27,32 @@
      - Timeline checklist for June 4-5 execution
    - **Status**: All documents committed and production-ready. User can make platform decision by EOD today with full technical context.
 
-2. ✅ **Exploration Queue Status Update**:
-   - ✅ Systems-resilience: Platform-Specific Deployment Playbooks — COMPLETE
+2. ✅ **Seedwarden Track Decision Brief** (secondary decision support, 12,800+ words):
+   - **Deliverable**: 4 production-ready markdown documents written to `projects/seedwarden/`
+   - `TRACK_DECISION_BRIEF.md` (3,189 words):
+     - Executive summary comparing Track A (Etsy-first, BLOCKED on 45 min unblock) vs Track B (audience-first, CLEAR)
+     - "Both Tracks" case for parallel execution (recommended)
+     - Decision framework and recommendation: **EXECUTE BOTH**
+   - `TRACK_A_UNBLOCK_STEPS.md` (2,975 words):
+     - 4-phase unblock checklist: account verification (25-30 min) + tag corrections (15 min) + Etsy approval (async) + publish (2-3 hrs)
+     - Full troubleshooting guide for common blockers
+   - `TRACK_B_EXECUTION_TIMELINE.md` (3,407 words):
+     - Hour-by-hour June 4-5 execution plan for 5-gate sequence
+     - June 4: Gates 1-2 (1.5-2 hours) + zone card production start
+     - June 5: Zone card completion + Gates 3-5 (3.5-4.5 hours) + launch afternoon
+     - Day 14 success criteria (Phase 3 readiness determinant)
+   - `TRACK_DECISION_MATRIX.md` (3,244 words):
+     - 8-category comparison (audience, resources, timeline, revenue, risk, Phase 3 fit)
+     - Recommendation: BOTH is optimal (3-5x Phase 3 revenue vs single track)
+     - Timeline risk: Track A can run async while Track B launches June 5
+   - **Status**: All documents committed and production-ready. User can make platform decision by EOD today with full technical context.
+
+3. ✅ **Exploration Queue Status Update**:
+   - ✅ Systems-resilience: Platform-Specific Deployment Playbooks — COMPLETE (exploration queue item)
+   - ✅ Seedwarden: Track decision brief + execution guides — COMPLETE (secondary high-impact work)
    - ⏳ Resistance-research: Phase 2 Domain Research Dry-Run — Already completed in Session 2735 (all 5 friction corrections applied)
-   - **Exploration Queue Score**: 2/2 items addressed (1 complete, 1 verified already done)
+   - **Exploration Queue Score**: 2/2 items addressed + 1 bonus decision support work
+   - **Bonus Work**: Seedwarden Track decision support (not queued but high-impact for EOD decision deadline)
 
 ---
 

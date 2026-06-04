@@ -1,19 +1,29 @@
 # Check-In Report
 
-## Since Last Check-in — Session 2740 (2026-06-04 — Orchestrator: Systems-Resilience Platform Playbooks + Exploration Queue Completion)
+## Since Last Check-in — Session 2740 (2026-06-04 — Orchestrator: Decision Support Materials + Exploration Queue Completion)
 
-**Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE** — systems-resilience platform playbooks (4 documents, 154 KB) production-ready. Critical block on stockbot requires urgent user action before 13:30 UTC market open.
+**Status**: ✅ **DUAL USER DECISIONS FULLY SUPPORTED** — 8 production-ready decision documents delivered (systems-resilience platform playbooks + seedwarden Track decision brief). Critical block on stockbot requires urgent user action before 13:30 UTC market open.
 
 **Session Work**:
 
-1. ✅ **Systems-Resilience Platform Decision Support (Exploration Queue)**:
+1. ✅ **Systems-Resilience Platform Decision Support (Exploration Queue Item)**:
    - Created comprehensive deployment playbooks for both platform options:
      - Nextcloud+Matrix: 68 KB, 6,900 words, 4-6h deployment timeline, 8.5/10 go-live confidence
      - Discourse: 35 KB, 4,500 words, 2-3h deployment timeline, 9.2/10 go-live confidence
    - Platform Decision Matrix: 8-category comparison grid + 6-question decision tree
    - Navigation guide: scenario-based reading paths (5 min to 2+ hrs) + June 4-5 timeline checklist
    - **Critical finding**: If user decides after June 4 14:00 UTC, Discourse is the only safe choice (tight Nextcloud timeline)
-   - All documents in `projects/systems-resilience/` — ready for user review and decision
+   - All 4 documents in `projects/systems-resilience/` — ready for user review and decision
+
+2. ✅ **Seedwarden Track Decision Brief (High-Impact Secondary Work)**:
+   - Created comprehensive Track A/B comparison + execution guides (12,800+ words):
+     - Track Decision Brief: executive summary + "both" case + recommendation
+     - Track A Unblock Steps: 4-phase checklist (45-60 min total to unblock)
+     - Track B Execution Timeline: hour-by-hour June 4-5 plan
+     - Track Decision Matrix: 8-category comparison + Phase 3 fit analysis
+   - **Recommendation**: EXECUTE BOTH (3-5x Phase 3 revenue potential vs single track)
+   - **Timeline finding**: Track A blockers (45 min) can run async while Track B launches June 5
+   - All 4 documents in `projects/seedwarden/` — ready for user review and decision
 
 2. 🔴 **Critical Block Status**:
    - Alpaca WebSocket error persists: 4,340+ occurrences in docker logs (confirmed June 4 03:52 UTC)
