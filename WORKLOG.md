@@ -18,10 +18,19 @@
    - **Stockbot Submodule**: Updated parent repo pointer from 592c72b to 1cf5320 (IEX analysis expansion)
    - **Commit**: 7c47ffc1
 
+**Exploration Queue Refill**:
+- Current queue has 2 items (below 3-item minimum). Adding 3 new items:
+  1. **Seedwarden Track B June 5 Readiness Verification** (1-2 hrs) — verify all 5 user action gates are clearly documented; confirm no pre-work can advance gates on June 4
+  2. **Stockbot Phase 2 Expansion Framework** (2-3 hrs) — prepare June 11-30 multi-ticker decision framework (ticker candidates, success metrics, risk guardrails)
+  3. **Resistance-Research Phase 2 Distribution Calendar** (2-3 hrs) — post-Domain-51 distribution strategy for Domains 48, 49, 50, 54 (sequencing, contact lists, timing windows)
+
 **Execution Plan**:
-- **20:00 UTC (2h 24m from now)**: Execute Item 61 post-market analysis via `uv run python scripts/post_market_daily_analysis.py`
+- **20:00 UTC (2h 22m from now)**: Execute Item 61 post-market analysis via `uv run python scripts/post_market_daily_analysis.py`
 - **20:15 UTC**: Verify results (JSON log updated, Discord notification sent, metrics available)
-- **20:30 UTC+**: Start exploration queue items (Phase 2 Domain Research Dry-Run, Systems-Resilience Platform Playbooks)
+- **20:30 UTC+**: Proceed with exploration queue work in priority order:
+  1. Phase 2 Domain Research Dry-Run (4-5 hrs, deferred until now)
+  2. Seedwarden Track B Readiness Verification (1-2 hrs, new)
+  3. Systems-Resilience Platform Playbooks (6-8 hrs, deferred, start if time permits)
 
 **Next checkpoint**: Market close at 20:00 UTC for Item 61 execution.
 
