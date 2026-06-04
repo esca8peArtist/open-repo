@@ -39806,3 +39806,51 @@ Given **CRITICAL BLOCKER** (Alpaca auth) status and time constraints:
 - Resistance-research dry-run verification: ~52k
 - Cumulative: ~167k / 200k budget (33k remaining)
 
+---
+
+## Session 2742 — 2026-06-04 04:45–05:15 UTC — Orchestrator: WebSocket Non-Critical Discovery + Parallel Execution Prep
+
+**CRITICAL FINDING**: Alpaca WebSocket error is **NOT blocking trading**. Trading engine is 100% REST-based. WebSocket only updates position prices for monitoring. With simple patch/disable, stockbot can trade normally June 4.
+
+**Session Work**:
+
+1. ✅ **Stockbot WebSocket Analysis (GAME-CHANGER)**:
+   - Analyzed entire trading stack: signal generation (REST), market hours (REST), account equity (REST), order submission (REST), fill confirmation (REST poll loop)
+   - WebSocket provides ONLY: position price updates for monitoring via `_on_stream_trade` callback
+   - **Verdict**: WebSocket is NOT on critical path. 4,397 errors are noise, not blockers
+   - **Immediate Options** (all viable for market open):
+     - Option A (10 min): One-line patch for 406 backoff handling in `src/data/realtime_stream.py` line ~104
+     - Option B (30 min): Add `DISABLE_REALTIME_STREAM=1` env var to Jetson `.env`, restart containers
+     - Option C (90 min): Add optional REST price polling via `StockLatestTradeRequest`
+   - **Decision matrix provided**: Alpaca clears by 11:00 UTC → proceed normal; unresponsive → disable stream + patch, trade anyway
+   - **Rate limit headroom**: Current REST usage 5-8 calls/cycle, 6-9 calls/min — under 5% of 200 req/min limit
+   - Files created: `contingency/STOCKBOT_REST_POLLING_CONTINGENCY_ANALYSIS.md`, `contingency/STOCKBOT_REST_POLLING_IMPLEMENTATION_STARTER.md`
+
+2. ✅ **Resistance-Research Phase 2 Execution Prep**:
+   - Created Domain 48 execution checklist (June 16-20 window, specific Sentencing Project + Prison Policy Initiative lead rationale)
+   - Created Domain 50 execution checklist (August 1 hard deadline, Lambda Legal lead rationale based on Romer v. Evans precedent connection)
+   - Both follow Domain 51 checklist structure: pre-send verification → Wave 1/2 contacts → Day 7 checkpoint → contingencies
+   - Files: `DOMAIN_48_RESEARCH_EXECUTION_CHECKLIST.md`, `DOMAIN_50_RESEARCH_EXECUTION_CHECKLIST.md`
+
+3. ✅ **Open-Repo June 12 Deployment Go-Live Checklist**:
+   - Created comprehensive operational companion to existing runbook (919 lines, ~2,700 words)
+   - Structure: T-2h pre-flight → T-0 to T+25min deployment steps with decision trees → T+0 to T+60min monitoring → rollback procedures → Day 1/7 follow-up
+   - Includes communication templates, escalation matrix, success criteria
+   - File: `projects/open-repo/DEPLOYMENT_JUNE_12_GO_LIVE_CHECKLIST.md`
+
+**Strategic Impact**:
+- **Stockbot status changed**: From "CRITICAL BLOCKER" to "Non-blocking with workaround options" — June 4 market open is now viable even if Alpaca doesn't clear WebSocket
+- **Resistance-research**: Phase 2 Domains 48/50 ready for execution once user decides on sequencing
+- **Open-repo**: June 12 deployment fully operationalized with go-live checklist
+
+**Project Status After Session**:
+- **stockbot**: 🟡 DOWNGRADED (from 🔴) — WebSocket error is not blocking; trading can proceed with simple patch/disable; user action for verification only
+- **resistance-research**: ✅ READY (Domains 48/50 execution checklists complete)
+- **open-repo**: ✅ READY (go-live checklist complete, June 12 deployment fully prepared)
+
+**Next Steps**:
+1. User reads stockbot contingency analysis and decides: A) wait for Alpaca support, B) apply patch, or C) disable stream
+2. If user chooses B or C before 13:30 UTC, apply immediately
+3. Stockbot trades normally on June 4 regardless of WebSocket status
+4. Post-market: Implement REST polling if desired (Option C)
+

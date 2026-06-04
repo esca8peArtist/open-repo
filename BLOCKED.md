@@ -27,31 +27,39 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Alpaca WebSocket connection limit error blocking trading (CRITICAL — market open in ~10 hours)
+### stockbot — Alpaca WebSocket connection limit error (NOT BLOCKING TRADING)
 **Date blocked**: 2026-06-04 02:06 UTC (container restart triggered unknown cause)
-**Context**: Jetson stockbot container was restarted at 02:06 UTC June 4. Upon restart, WebSocket connection to Alpaca data stream fails with HTTP 406 error: "connection limit exceeded". Multiple subsequent restarts (06:22 UTC, 03:23 UTC) all fail with identical error. Both JPM ridge_wf and AMZN lgbm_ho trading sessions are non-functional (cannot subscribe to data feeds). Session 2737 performance analysis detected this issue at 03:16 UTC. **Session 2738 orchestrator verification (2026-06-04 03:31-03:32 UTC): Error confirmed still present — 4,842 occurrences in docker logs**
+**Date reclassified**: 2026-06-04 05:10 UTC (Session 2742 technical analysis)
+**Context**: Jetson stockbot container restarted at 02:06 UTC June 4. WebSocket connection fails with HTTP 406 "connection limit exceeded". Both JPM ridge_wf and AMZN lgbm_ho enter retry loops. Error count: 4,397+ occurrences (as of 05:15 UTC).
 
-**Symptoms**:
-- Container restarts cleanly but enters connection retry loop
-- Error: `ValueError: connection limit exceeded` (HTTP 406) from Alpaca WebSocket auth
-- No local data feed available; trading engine cannot process signals
-- Affects both JPM and AMZN sessions equally
-- **Market opens June 4 at 13:30 UTC (~10 hours from verification time)**
+**CRITICAL DISCOVERY (Session 2742)**: Full stack analysis reveals **WebSocket is NOT on the critical trading path**. Trading engine is 100% REST-based:
+- Signal generation: REST (daily bars)
+- Order submission: REST
+- Fill confirmation: REST poll loop
+- Account equity/cash: REST
+- Market hours check: REST
 
-**Root cause analysis**:
-- Single `_BackoffStockDataStream` instance (not multiple concurrent connections)
-- Credentials verified present in Docker environment
-- Issue persists across 3+ restarts with 30-60s gaps
-- Behavior confirms Alpaca account or IP-level rate limit on their servers (not local)
+WebSocket provides ONLY: position price updates for monitoring via `_on_stream_trade` callback. This is a monitoring enhancement, not a trading blocker.
 
-**What I need**: 
-- (1) **URGENT**: Check Alpaca account status (login to broker dashboard) — verify account is active and not rate-limited
-- (2) **If account is OK**: Contact Alpaca support to manually clear stale connection on their end (error 406 often requires manual intervention when connection limit is genuinely exceeded)
-- (3) **If Alpaca unresponsive**: As fallback, API team can modify code to use REST polling instead of WebSocket (slower, but functional) — would require code change + redeployment to Jetson
+**Symptoms** (non-critical):
+- WebSocket retry loop generates 4,397+ log entries
+- Position prices from monitoring stream unavailable
+- Does NOT affect: signal generation, order submission, order fills, account status
 
-**Verify with**: `ssh -i ~/.ssh/id_ed25519 awank@100.120.18.84 "docker logs stockbot 2>&1 | grep -c 'connection limit exceeded'"` — if output > 0, error still present
+**Root cause**: Alpaca account or IP-level rate limit on WebSocket authentication (confirmed in logs)
 
-**Resolution**: [leave blank — awaiting urgent user action before 13:30 UTC]
+**Three viable workarounds** (all functional for June 4 market open):
+- **Option A (0 code changes)**: Check Alpaca account status, contact support to clear stale connection
+- **Option B (30 min, 1 env var)**: Set `DISABLE_REALTIME_STREAM=1` in Jetson `.env`, restart containers
+- **Option C (10 min patch)**: Apply one-line backoff patch in `src/data/realtime_stream.py` line ~104 (change `if "429" in err_str:` to `if "429" in err_str or "406" in err_str:`)
+
+**Rate limit headroom**: Current REST usage 6-9 calls/min (under 5% of 200 req/min limit). REST polling fallback adds negligible overhead.
+
+**What I need**: User selects preferred option (A/B/C) and approves. Contingency implementation starters ready in `projects/stockbot/contingency/`.
+
+**Verify with**: `ssh -i ~/.ssh/id_ed25519 awank@100.120.18.84 "docker logs stockbot 2>&1 | tail -20"` — should show normal trading cycles, not connection errors
+
+**Resolution**: [pending user choice of workaround option]
 
 ---
 

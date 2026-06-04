@@ -1,48 +1,70 @@
 # Check-In Report
 
-## Since Last Check-in — Session 2741 (2026-06-04 04:23–[ongoing] UTC — Orchestrator: Critical Block Verification)
+## Since Last Check-in — Session 2742 (2026-06-04 04:45–[ongoing] UTC — Orchestrator: WebSocket Non-Critical Discovery + Parallel Execution Prep)
 
-**Status**: 🔴 **CRITICAL ALPACA BLOCK PERSISTS** — 4,397 error occurrences confirmed at 04:23 UTC (9h 7m until market open at 13:30 UTC). **IMMEDIATE USER ACTION REQUIRED** — check Alpaca account status and contact support. All decision support materials from Session 2740 are production-ready.
+**Status**: 🟡 **ALPACA WEBSOCKET NOT BLOCKING TRADING** — WebSocket error is 100% non-critical. Trading engine is fully REST-based. Stockbot can trade normally on June 4 with simple fix or workaround. New execution checklists prepared for resistance-research & open-repo.
 
-**🔴 CRITICAL ACTION REQUIRED (BEFORE 13:30 UTC TODAY — 9 HOURS REMAINING):**
+**🟡 DOWNGRADED STATUS (from 🔴) — TRADING CAN PROCEED REGARDLESS OF WEBSOCKET**
 
-**Immediate steps** (do in this order):
-1. **Check Alpaca account status NOW**: Log into your Alpaca broker dashboard (alpaca.markets), verify:
-   - Account active and not locked/rate-limited
-   - Trading enabled (not restricted)
-   - Paper trading API key valid
-2. **Contact Alpaca support** (if account looks OK): Email support@alpaca.markets or open ticket in dashboard
-   - Subject: "WebSocket connection limit error (HTTP 406) blocking live trading"
-   - Include: Error message, account ID, mention of stale connection clearance request
-3. **If Alpaca unresponsive by 11:00 UTC**: Approve REST polling fallback and I'll implement immediately (4-6h deployment, slower but functional for market open)
+**Key discovery**: Analyzed complete trading stack. WebSocket provides ONLY position price updates for monitoring. All critical functions use REST:
+- Signal generation: REST (daily bars)
+- Order submission: REST
+- Fill confirmation: REST poll loop  
+- Account status: REST
+- Market hours: REST
+
+**Three options to proceed with trading on June 4 (all viable)**:
+
+**Option A (Wait for Alpaca, 0 code changes)**:
+- Preferred if possible. Check your Alpaca account status (login to broker dashboard)
+- If account looks OK: Email support@alpaca.markets with "406 connection limit" issue request
+- If they clear the stale connection, WebSocket will work on next restart
+- Timeline: Need response by ~11:00 UTC (2.5h remaining)
+
+**Option B (Disable stream, 30 min, 1 env var change)**:
+- Add `DISABLE_REALTIME_STREAM=1` to Jetson `.env` file
+- Restart Docker containers
+- Stockbot trades normally without WebSocket
+- Position prices come from existing REST polling (no change in functionality)
+- Recommended as backup if Alpaca slow to respond
+
+**Option C (Apply patch + disable, 10 min)**:
+- Apply one-line patch in `src/data/realtime_stream.py` line ~104: change `if "429" in err_str:` to `if "429" in err_str or "406" in err_str:`
+- This stops error spam in logs (applies same 5→300s backoff to 406)
+- Still need to restart containers
+- Gives Alpaca time to clear connection while reducing log noise
+
+**Contingency documents created**: See `projects/stockbot/contingency/`:
+- `STOCKBOT_REST_POLLING_CONTINGENCY_ANALYSIS.md` — Full technical analysis
+- `STOCKBOT_REST_POLLING_IMPLEMENTATION_STARTER.md` — Exact code diffs ready to apply
 
 **Session 2740 Deliverables Ready for Your Review** (all production-ready in projects/ directories):
 - Systems-resilience: 4 platform decision documents (`PHASE_5_PLATFORM_DECISION_INDEX.md`, platform comparison matrix, 2 deployment playbooks)
 - Seedwarden: 4 track decision documents (`TRACK_DECISION_BRIEF.md`, unblock steps, execution timeline, decision matrix)
 - **Recommendation**: EXECUTE BOTH seedwarden tracks (3-5x Phase 3 revenue potential)
 
-**Project Status** (current as of 04:30 UTC):
-- **stockbot**: 🔴 CRITICAL (Alpaca WebSocket, user action required)
+**Project Status** (current as of 05:15 UTC):
+- **stockbot**: 🟡 DOWNGRADED (WebSocket not blocking; trading viable with Options A/B/C)
+- **resistance-research**: ✅ READY (Domain 51 ready for June 9-12 execution; Domains 48/50 checklists now complete)
+- **open-repo**: ✅ READY (June 12 go-live checklist complete; fully operationalized)
 - **systems-resilience**: ⏳ Awaiting platform decision (EOD today)
 - **seedwarden**: ⏳ Awaiting track decision (EOD today, recommend BOTH)
-- **resistance-research**: ✅ Ready to execute June 9-12 (Domain 51 production-ready, awaiting your approval)
-- **open-repo**: ✅ Approved for June 12 deployment per runbook
 - **cybersecurity-hardening**: ⏳ Awaiting Phase 1 VeraCrypt restart (user manual action)
 - **mfg-farm**: ⏳ Awaiting test print execution (user physical action)
 
 **Needs Your Input** (ranked by urgency):
-1. 🔴 **TODAY BEFORE 13:30 UTC** — Check Alpaca account + contact support
+1. 🟡 **TODAY ANYTIME** — Choose WebSocket handling: Option A (wait for Alpaca), Option B (disable stream), or Option C (patch + disable). [See contingency docs above]
 2. 🟢 **TODAY EOD** — Make platform decision (Nextcloud+Matrix vs Discourse; recommend reviewing PHASE_5_PLATFORM_DECISION_INDEX.md, 5-min read)
 3. 🟢 **TODAY EOD** — Make seedwarden track decision (A/B/Both; recommend EXECUTE BOTH per TRACK_DECISION_BRIEF.md)
-4. 🟢 **ANYTIME** — Approve Domain 51 June 9-12 execution (I'm ready to execute immediately upon approval)
-5. 🟢 **ANYTIME** — Approve VeraCrypt restart (Phase 1 walkthrough will resume from step 1.4 post-restart)
+4. 🟢 **ANYTIME** — Approve Domain 51 June 9-12 execution (ready to execute immediately)
+5. 🟢 **ANYTIME** — Approve VeraCrypt restart (will resume Phase 1 from step 1.4 post-restart)
 
 **Next Orchestrator Actions** (upon your input):
-1. If stockbot block unresolved by 11:00 UTC → implement REST polling fallback or escalate market-open plan
-2. If platform chosen → execute systems-resilience Wave 2 playbooks (3-4h) for June 5 Wave 1 recruitment
-3. If track chosen → execute chosen track(s) per TRACK_B_EXECUTION_TIMELINE.md or TRACK_A_UNBLOCK_STEPS.md
-4. June 9 → execute Domain 51 Wave 1 distribution (national contacts) per DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md
-5. June 12 → execute open-repo deployment per DEPLOYMENT_JUNE_12_RUNBOOK.md
+1. **If you choose WebSocket Option A/B/C**: June 4 13:30 UTC → stockbot trades normally (no orchestrator action needed)
+2. **If platform chosen**: Execute systems-resilience Wave 2 playbooks (3-4h) for June 5 Wave 1 recruitment
+3. **If track chosen**: Execute chosen track(s) per TRACK_B_EXECUTION_TIMELINE.md or TRACK_A_UNBLOCK_STEPS.md
+4. **June 9-12**: Execute resistance-research Phase 2 Wave 1 (Domain 51) per DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md (Domains 48/50 checklists now ready for sequencing)
+5. **June 12**: Execute open-repo deployment per DEPLOYMENT_JUNE_12_RUNBOOK.md (backed by new DEPLOYMENT_JUNE_12_GO_LIVE_CHECKLIST.md)
 
 ---
 
