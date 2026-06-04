@@ -1,3 +1,32 @@
+## Since Last Check-in — Session 2747 (2026-06-04 06:01+ UTC — Orchestrator: Monitoring + Decision Point Execution)
+
+**Status**: 🔵 **MONITORING MODE ACTIVE** — Awaiting critical decision deadline at **13:00 UTC** (6h 59m remaining). **No user input received yet.**
+
+**Current Situation**:
+- **Seedwarden Track Decision**: Deadline **13:00 UTC June 4** (IMMINENT)
+  - **User Decision NOT received** — No response in CHECKIN.md, INBOX.md, or git commits since June 3
+  - **Orchestrator default**: Track B activation will execute automatically at 13:00 UTC if no user clarification
+  - **Track B readiness**: 100% — zero blockers, infrastructure verified, execution script ready (`TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md`)
+  - **User action once Track B activates**: Complete 5 gates (Gate 4 priority: upload 8 zone PDFs to Google Drive, 20 min critical path)
+
+- **Stockbot Status**: ✅ READY FOR 13:30 UTC MARKET OPEN
+  - Both JPM ridge_wf + AMZN lgbm_ho sessions verified operational
+  - Sessions sleeping until 13:15 UTC pre-market wake
+  - Pre-market health checks scheduled 11:00–13:00 UTC
+
+- **Systems-Resilience Platform Decision**: Due **EOD today** (lower priority than seedwarden; auto-defaults to Nextcloud+Matrix if not specified)
+
+**Decision Timeline**:
+- **06:01–11:00 UTC**: Monitor for user seedwarden Track input
+- **11:00–13:00 UTC**: Execute stockbot pre-market health checks
+- **13:00 UTC**: Decision point — if NO user input, activate Track B automatically
+- **13:15 UTC**: Final market-open readiness verification  
+- **13:30 UTC**: Stockbot market opens; both sessions begin trading
+
+**If Track B Activates at 13:00 UTC**: User will see updated PROJECTS.md (Focus line), CHECKIN.md (decision note), and BLOCKED.md (if applicable). User can then proceed with Track B gate completions per READINESS_REPORT_JUNE_1.md.
+
+---
+
 ## Since Last Check-in — Session 2746 (2026-06-04 05:44–06:20 UTC — Orchestrator: Block Processing + Decision Point Prep)
 
 **Status**: ✅ **ORIENTATION COMPLETE + BLOCK RESOLVED + DECISION POINTS IDENTIFIED** — All active blocks reviewed. Stockbot status confirmed operational. Seedwarden decision deadline confirmed 13:00 UTC (7h 16m). Ready for decision point handling.
