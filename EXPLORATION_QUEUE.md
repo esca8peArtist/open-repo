@@ -117,7 +117,48 @@
 **Status**: ✅ PRODUCTION-READY for June 4 20:00 UTC post-market-close analysis (hands-off orchestration enabled)
 **Deadline**: June 10 evening ✅ ADVANCED COMPLETE (committed June 4 09:30 UTC, 10.5 hours before market open)
 
-### [open slot — Item 62+ for future queue items]
+### 62. ⏳ stockbot — June 11-30 Extended Multi-Ticker Readiness Framework (Session 2764)
+**Context**: Week 1 execution (June 4-10) validates 2-session config (JPM ridge_wf + AMZN lgbm_ho) with Item 61 monitoring templates. If Day 7 assessment (June 10) shows GO signal, June 15+ expansion to 4-6 sessions requires pre-staging. Scope 4-session config constraints (risk aggregation, margin utilization, sector concentration), multi-ticker signal correlation analysis, and contingency routing for June 11-30 execution window.
+**Scope**: Design June 11-30 multi-ticker expansion roadmap independent of Day 7 assessment outcome; ready to execute immediately if GO decision reached June 10:
+  - Four-session config readiness: risk parameters (sector concentration <50%, correlation bounds, position-sizing Kelly curves), margin utilization targets (60-75%), drawdown limits per session vs. portfolio level
+  - Signal correlation analysis: JPM vs AMZN feature dominance, regime transition synchronization, false-signal interaction modes
+  - Contingency routing: if any session fails GO criteria, fallback to 3-session (JPM+AMZN+AAPL) or revert to 2-session with MSFT scheduled for June 20
+  - Resource contention check: 4-session expansion vs. Phase 2 research (Domain 51 June 9-12) vs. seedwarden post-launch monitoring (Day 7 June 11)
+**Deliverables**:
+  - `MULTI_TICKER_EXPANSION_JUNE_11_30_FRAMEWORK.md` (timing, risk gating, 4/3/2-session decision paths)
+  - `JUNE_11_30_CONTINGENCY_ROUTING.md` (failure modes by session, remediation paths, rollback triggers)
+  - `SESSION_CORRELATION_ANALYSIS_TEMPLATE.md` (feature interaction matrix, regime sync verification, signal-quality cross-check)
+**Owner**: stockbot subagent
+**Deadline**: June 10 EOD (ready for June 11 immediate activation if GO)
+
+### 63. ⏳ resistance-research — Domain 51 June 9-12 Execution Pre-Flight Checklist (Session 2764)
+**Context**: Domain 51 research execution scheduled June 9-12 per PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md. All research architecture documented (SB-42 California Fair Elections Act, 5 contact orgs, 60-90 min production). Pre-stage detailed execution checklist with contact stratification, research timeline blocks, email sequencing, and contingency triggers.
+**Scope**: Design granular day-by-day execution plan for June 9-12:
+  - Research timeline: June 9 (research kickoff, 2-3h); June 10 (drafting, 1.5-2h); June 11 (Gist creation + review cycle, 1h); June 12 (email template finalization, contact verification, 30-45min)
+  - Contact stratification: 5 orgs (CLC, Issue One, Common Cause CA, LWV CA, Clean Money Action Fund) by tier (Tier A likelihood 40-60%, Tier B 20-30%, Tier C 5-10%)
+  - Email sequencing: 3-wave send (Tier A June 12 evening, Tier B June 13, Tier C June 15) with case-by-case timing based on engagement priority
+  - Contingency: if SB-42 research hits wall (sources unavailable, expert contacts unresponsive), switch to SB-290 fallback documented in PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md
+  - Resource contention: June 9 system-resilience Wave 1 author onboarding may overlap; pre-stage parallel execution plan
+**Deliverables**:
+  - `DOMAIN_51_JUNE_9_12_EXECUTION_CHECKLIST.md` (6-section breakdown: research, drafting, Gist, outreach, contingency, success criteria)
+  - `DOMAIN_51_CONTACT_STRATIFICATION_AND_TIMING.md` (full contact list, engagement scoring, send-wave timeline)
+  - `DOMAIN_51_CONTINGENCY_SB_290_FALLBACK.md` (if SB-42 path blocked, SB-290 research plan and 5 alternate contacts)
+**Owner**: resistance-research subagent
+**Deadline**: June 8 EOD (ready for June 9 immediate execution)
+
+### 64. ✅ systems-resilience — June 5-15 Platform-Independent Wave 2 Onboarding Template (Session 2764 COMPLETE)
+**Status**: Completed June 4 (Session 2764, 09:35–09:45 UTC). All three deliverables production-ready.
+**Context**: User will choose platform (Nextcloud+Matrix or Discourse) at 13:00 UTC June 4 deadline. Once platform selected, June 5-15 Wave 2 author onboarding begins. Pre-staged platform-agnostic onboarding templates that work for both choices; ready to customize on June 5 upon decision.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `WAVE_2_GENERIC_ONBOARDING_TEMPLATE.md` (3,933 words) — Six-section universal structure with [PLATFORM-SPECIFIC] branch markers for Nextcloud+Matrix vs Discourse. Credential verification (universal), platform overview, setup & access, first-sync protocol, editing workflow, publication checklist. Resource contention windows (June 5-7, June 9-11) explicitly documented. Ready for instant deployment with minimal edits on June 5.
+  - ✅ `AUTHOR_READINESS_INTAKE_FORM.md` (3,216 words) — Self-assessment form (sent June 7-8) with scoring logic: 16-20 = Tier A, 11-15 = Tier B, 4-10 = Tier C. Platform-specific intake sections. Project lead scoring guide with tier-based onboarding adjustments and red-flag table. Binding schedule confirmation required.
+  - ✅ `JUNE_5_15_CONTINGENCY_OFFLINE_ONBOARDING.md` (3,486 words) — Backup plan for platform unavailability on June 10. Google Drive folder structure (ready to deploy 30-60min), timeline slip table, non-negotiable anchors (June 17 T+7 first-draft checkpoint immovable), migration protocols for both platforms, offline-first protocol for limited-connectivity authors.
+**Key findings**: All three files extend WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md v2.0 rather than rebuilding. Templates require zero editing for universal sections; branching sections use [PLATFORM-SPECIFIC] markers for instant customization on June 5.
+**Owner**: general-research subagent (Session 2764)
+**Status**: ✅ PRODUCTION-READY for June 5 immediate deployment upon platform decision (13:00 UTC June 4)
+**Deadline**: June 4 EOD ✅ ADVANCED COMPLETE (committed June 4 09:45 UTC, 3h 15min early)
+
+### [open slot — Item 65+ for future queue items]
 
 ### 55. ✅ resistance-research — Domain 49 June 4-5 Execution Pre-Flight Checklist (Session 2711 COMPLETE)
 **Status**: Completed June 3 (Session 2711, 22:15–22:40 UTC). All three deliverables production-ready.
