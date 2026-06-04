@@ -1,3 +1,39 @@
+## Since Last Check-in — Session 2754 (2026-06-04 07:38 UTC — Orchestrator: Decision Point Preparation Complete)
+
+**Status**: 🟢 **DECISION EXECUTION READY** — No new user input received. Decision-point activation scripts verified and staged. All autonomous work prepared for 13:00 UTC execution.
+
+**Session Work**:
+1. ✅ **Orientation verified** — No new user input in CHECKIN.md/INBOX.md; 2 active blocks unchanged (user action required for both)
+2. ✅ **Exploration Queue Item 60 (systems-resilience Phase 5 Nextcloud+Matrix Integration Roadmap)** — COMPLETE
+   - Spawned general-research agent (07:10–07:38 UTC)
+   - Three production-ready deliverables created: deployment scripts, configuration templates, author onboarding guide
+   - All files (74 KB total) committed to master
+3. ✅ **Decision-point activation scripts verified** — Both scripts ready for 13:00 UTC execution
+
+**Current Status** (confirmed 07:38 UTC):
+- **Seedwarden**: 🟢 READY — Track B auto-activation script verified. All infrastructure confirmed operational.
+- **Systems-resilience**: 🟢 READY — Nextcloud+Matrix auto-activation script verified. Deployment roadmap production-ready.
+- **Stockbot**: 🟢 READY — Sessions sleeping until 13:15 UTC; market open 13:30 UTC confirmed.
+- **Resistance-research**: Domain 51 execution June 9-12 (all prep complete; no new work until then).
+- **Other projects**: Paused or blocked on user actions (test print, VeraCrypt restart).
+
+**Decision Timeline** (unchanged from Session 2752):
+- **Now (07:38 UTC)**: Autonomous work complete. Monitoring mode active.
+- **12:50 UTC**: Final pre-execution verification (read CHECKIN.md/INBOX.md one last time)
+- **13:00 UTC**: Execute decision activations (5 min) → update PROJECTS.md → commit
+- **13:15 UTC**: Stockbot pre-market readiness final check
+- **13:30 UTC**: Stockbot market open; both trading sessions begin trading
+
+**Needs Your Input** (by 13:00 UTC today):
+1. **Seedwarden Track A/B/Both** — If preference differs from Track B, respond now
+2. **Systems-resilience Platform** — If preference differs from Nextcloud+Matrix, respond now
+
+**If No User Response by 13:00 UTC**:
+- ✅ Seedwarden Track B activation will proceed (non-destructive; user can override post-activation)
+- ✅ Systems-resilience Nextcloud+Matrix activation will proceed (non-destructive; Discourse option documented if needed)
+
+---
+
 ## Since Last Check-in — Session 2752 (2026-06-04 07:07–08:05 UTC — Orchestrator: Exploration Queue Item 59 Completion + Market Open Readiness)
 
 **Status**: 🟢 **AUTONOMOUS WORK COMPLETE + DECISION POINT MONITORING ACTIVE** — Exploration Queue Item 59 (systems-resilience Phase 5 publication + Wave 2 author onboarding) delivered ahead of schedule. All critical infrastructure ready for June 4 decisions and market open.
