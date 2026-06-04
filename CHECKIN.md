@@ -4,10 +4,17 @@
 
 **Status**: 🔴 **CRITICAL ALPACA BLOCK PERSISTS** — 4,397 error occurrences confirmed at 04:23 UTC (9h 7m until market open at 13:30 UTC). **IMMEDIATE USER ACTION REQUIRED** — check Alpaca account status and contact support. All decision support materials from Session 2740 are production-ready.
 
-**Critical Action Required (BEFORE 13:30 UTC TODAY)**:
-- 🔴 **Check Alpaca account status**: Login to broker dashboard and verify account is active, not rate-limited, and has trading enabled
-- 🔴 **Contact Alpaca support**: Explain WebSocket connection limit error (HTTP 406) + ask for manual stale connection clearance on their servers
-- 🔴 **Fallback escalation**: If Alpaca unresponsive by 11:00 UTC, I can implement REST polling fallback (4-6h work, slower but functional) — requires approval to deploy
+**🔴 CRITICAL ACTION REQUIRED (BEFORE 13:30 UTC TODAY — 9 HOURS REMAINING):**
+
+**Immediate steps** (do in this order):
+1. **Check Alpaca account status NOW**: Log into your Alpaca broker dashboard (alpaca.markets), verify:
+   - Account active and not locked/rate-limited
+   - Trading enabled (not restricted)
+   - Paper trading API key valid
+2. **Contact Alpaca support** (if account looks OK): Email support@alpaca.markets or open ticket in dashboard
+   - Subject: "WebSocket connection limit error (HTTP 406) blocking live trading"
+   - Include: Error message, account ID, mention of stale connection clearance request
+3. **If Alpaca unresponsive by 11:00 UTC**: Approve REST polling fallback and I'll implement immediately (4-6h deployment, slower but functional for market open)
 
 **Session 2740 Deliverables Ready for Your Review** (all production-ready in projects/ directories):
 - Systems-resilience: 4 platform decision documents (`PHASE_5_PLATFORM_DECISION_INDEX.md`, platform comparison matrix, 2 deployment playbooks)
