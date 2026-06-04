@@ -1,5 +1,41 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2735 (2026-06-04 — Domain 51 Runbook Friction Patches + June 9-12 Distribution Verification)
+
+**Status**: ✅ **DOMAIN 51 PRODUCTION-READY FOR JUNE 9-12 DISTRIBUTION** — All 5 runbook friction patches applied. Execution checklist verified complete. Phase 2 resistance-research distribution path clear and actionable.
+
+**Session Work**:
+
+1. ✅ **Domain 51 Runbook Friction Patches Applied** (45 min)
+   - **PATCH 1**: Pre-checklist gate (read existing domain file first) — prevents redundant research
+   - **PATCH 2**: Replace dead Issue One reference → verified sources (Public Citizen, Brennan Center, CRS R45160)
+   - **PATCH 3**: Update ballot measure states (AZ, MA, ND) → confirmed (AK, CA, MO, MT) with California SB-42 as primary distribution anchor
+   - **PATCH 4**: Update FEC vacancy count (2 → 4 seats)
+   - **PATCH 5**: Confirm $1.9B figure + add precision sub-figures ($1.3B shell company pass-through, billionaire contribution %)
+   - **Outcome**: All empirical anchors now verified with current sources. Runbook conflict-free for field execution.
+
+2. ✅ **June 9-12 Distribution Execution Checklist Verified**
+   - Gist created June 2, 2026 (live)
+   - 5 email templates ready + contact list verified
+   - Daily timeline confirmed:
+     - June 9: CLC + Issue One (national contacts)
+     - June 11: Common Cause CA + LWV CA + Clean Money Action Fund (California ballot campaign contacts)
+     - June 12: Contingency + tracking log
+     - June 16-18: Day 7 checkpoint
+   - Success threshold: 2+ replies OR ballot campaign reference
+
+3. ✅ **Committed to master**: `cdffe87d` — "chore(resistance-research): apply 5 runbook patches for Domain 51 June 9-12 distribution"
+
+**System Status**:
+- ✅ **resistance-research**: Domain 51 runbook production-ready; June 9-12 distribution executable
+- ✅ **Phase 2 path**: California Fair Elections Act window open; Californians for Fair Elections campaign confirmed active
+- 🟡 **Phase 2 decisions pending**: seedwarden Track (A/B/Both), systems-resilience Platform (Nextcloud+Matrix vs Discourse)
+- ⏳ **Token budget**: ~52k this session; ~145k cumulative week; ample room for Phase 2+ work
+
+**Next**: June 9 execution (user approval or orchestrator-autonomous per standing directives). If user approves, Wave 1 contacts (CLC + Issue One) can execute immediately June 9 morning UTC.
+
+---
+
 ## Since Last Check-in — Session 2734 (2026-06-04 02:23–02:45 UTC — State Synchronization + Exploration Queue Completion Verification)
 
 **Status**: ✅ **ALL AUTONOMOUS WORK VERIFIED COMPLETE** — Exploration queue items confirmed finished. All state files synchronized. Systems-resilience platform playbooks verified production-ready and committed. Awaiting user decisions on seedwarden Track (A/B/Both) and systems-resilience Platform (Nextcloud+Matrix vs Discourse) to unblock Phase 2+ work.
