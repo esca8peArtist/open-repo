@@ -191,7 +191,50 @@
 **Deadline**: June 14 ✅ EARLY COMPLETE (committed June 4 14:44 UTC, 10 days early)
 **Commit**: `4bf05835` (systems-resilience submodule)
 
-### [open slot — Item 65+ for future queue items]
+### 68. ⏳ open-repo — Phase 5.2 Implementation Pre-Staging (June 11 ready)
+**Context**: Phase 5.1 A11Y verification complete, deployment approved for June 12. Phase 5.2 candidates already evaluated and ranked (Medical 8.20 / Water 7.90 / Seed 7.80 / Food 7.65 / Botanical 7.55). Pre-stage implementation sequence and sourcing readiness for all 5 candidates.
+**Scope**:
+  - Phase 5.2 implementation roadmap (sequential vs parallel options, resource allocation, critical path)
+  - Medical content sourcing checklist (likely first candidate, highest score + dependency criticality)
+  - ZIM integration validation for all 5 candidates (library compatibility, source data formats, person-hour estimates)
+  - Feature-to-candidate dependency mapping (any infrastructure work needed pre-deployment?)
+  - June 12-30 execution timeline with developer capacity allocation
+**Deliverables**:
+  - `PHASE_5_2_IMPLEMENTATION_ROADMAP.md` (candidate sequencing, dependencies, timeline)
+  - `MEDICAL_CONTENT_SOURCING_CHECKLIST.md` (top-priority candidate, data sources, integration steps)
+  - `PHASE_5_2_ZIM_COMPATIBILITY_MATRIX.md` (all 5 candidates, library reqs, estimate tables)
+**Owner**: open-source-rideshare subagent
+**Deadline**: June 11 (ready for June 12 Phase 5.1 deployment → June 13 Phase 5.2 kickoff)
+
+### 69. ⏳ systems-resilience — Phase 6 Wave 1 Author Recruitment & Tier Assignment Logistics (June 10 ready)
+**Context**: Phase 6 Wave 1 pre-flight complete (Item 67 delivered landscape mapping + domain rubric + brief templates). Next step is author recruitment playbook for June 14-15 author matching session (part of Item 54 Wave 2 checklist). Pre-stage recruitment checklist, tier stratification, outreach templates, timeline.
+**Scope**:
+  - Author recruitment target list (50-100 candidate researchers from Phase 6 landscape sources)
+  - Tier stratification logic (Tier A/B/C assignment, domain difficulty modifiers from Item 67 rubric)
+  - Outreach email templates (domain-specific recruitment, tier-based onboarding variations)
+  - June 14-15 author matching session logistics (scheduling, scoring rubric application, decision tree)
+  - Contingency for incomplete recruitment (fallback authors, split-domain options, schedule slip triggers)
+**Deliverables**:
+  - `PHASE_6_AUTHOR_RECRUITMENT_TARGET_LIST.md` (50+ candidates stratified by tier + domain fit)
+  - `RECRUITMENT_OUTREACH_TEMPLATES.md` (4-5 email variants, domain-specific hooks, tier-based customization)
+  - `JUNE_14_15_AUTHOR_MATCHING_SESSION_RUNBOOK.md` (day-by-day logistics, scoring application, go/no-go gates)
+**Owner**: general-research subagent
+**Deadline**: June 10 (ready for June 14-15 author matching + June 15-20 onboarding decision)
+
+### 70. ⏳ stockbot — June 4 Post-Market Decision Intelligence (Post-Item-61)
+**Context**: Item 61 completes at 20:20 UTC with GO/CAUTION/NO-GO decision for June 5 continuation. Pre-stage immediate contingency execution paths and decision routing logic for automated response.
+**Scope**:
+  - Decision router logic: If GO → what's the June 5 pre-market checklist? If CAUTION → what gates must pass before June 5 resumption? If NO-GO → what's the rollback procedure?
+  - Contingency execution paths: Pre-stage bash scripts/checklists for each outcome (pre-market restart, data validation, position review, hold/resume decision)
+  - Item 66 connection: Map Item 61 decision outcomes to Item 66 (June 11 expansion decision) implications
+  - Resource contention vs June 5 gate dates: If stockbot goes NO-GO, what resources free up for systems-resilience Wave 1 or seedwarden Track B?
+  - Notification template: Output summary for CHECKIN.md with decision rationale and next-48h action items
+**Deliverables**:
+  - `ITEM_61_DECISION_ROUTER_MATRIX.md` (GO/CAUTION/NO-GO → execution paths, prerequisites, timeline)
+  - `CONTINGENCY_EXECUTION_PLAYBOOK.md` (step-by-step procedures for each outcome, rollback safety checks)
+  - `POST_ITEM_61_RESOURCE_REALLOCATION_SCENARIOS.md` (A/B/C paths if stockbot paused vs continued)
+**Owner**: stockbot subagent
+**Deadline**: June 4 evening (20:30 UTC post-Item-61, ready for immediate 20:30-21:00 UTC decision execution)
 
 ### 55. ✅ resistance-research — Domain 49 June 4-5 Execution Pre-Flight Checklist (Session 2711 COMPLETE)
 **Status**: Completed June 3 (Session 2711, 22:15–22:40 UTC). All three deliverables production-ready.
