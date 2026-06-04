@@ -1,4 +1,54 @@
-## Since Last Check-in — Session 2759 (2026-06-04 08:22–08:32 UTC — Orchestrator: Monitoring Mode Continuation + Checkpoint Scheduling)
+## Since Last Check-in — Session 2760 (2026-06-04 08:36–08:45 UTC — Orchestrator: Exploration Queue Maintenance + Decision-Point Readiness Confirmation)
+
+**Status**: 🟢 **MONITORING MODE ACTIVE** — Continuation of monitoring sessions 2758-2759. Exploration Queue maintenance complete; decision-point execution ready for 13:00 UTC.
+
+**Session Work**:
+1. ✅ **Exploration Queue Maintenance** (08:36–08:42 UTC)
+   - Reviewed queue status: Items 59-60 ✅ COMPLETE (Session 2757), Items 16/54 ⏳ queued
+   - Item count analysis: 2 active items (below target 3) → Added Item 61
+   - **New Item 61**: stockbot — June 4-10 Live Execution Analysis & Contingency Routing
+   - **Scope**: Daily monitoring framework for signal validation execution; uses Items 59-60 frameworks for post-market-close analysis; June 4-10 window with June 11 synthesis
+   - **Deadline**: June 10 evening (Day 7 checkpoint synthesis)
+   - Queue status: 3 active items (Items 16, 54, 61) ✅ ABOVE threshold
+
+2. ✅ **Decision-Point Readiness Verification** (08:42–08:45 UTC)
+   - Seedwarden Track B activation: ✅ READY (`TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md` verified)
+   - Decision status: No user input received since June 3 EOD deadline (PASSED)
+   - Systems-resilience platform decision: Due EOD June 4 (default Nextcloud+Matrix staged)
+   - CHECKIN.md + INBOX.md confirmed: No user decision overrides pending
+   - Track B activation script: 5-step execution checklist, 5 min total, ready for 13:00 UTC trigger
+
+3. ✅ **Session Completion** (08:45 UTC)
+   - WORKLOG.md updated: Session 2760 documented
+   - EXPLORATION_QUEUE.md updated: Item 61 added with concrete scope
+   - Committed to master: `git commit -m "chore(orchestrator): session 2760 — exploration queue item 61 added + decision-point readiness confirmed"`
+
+**Current Status** (08:45 UTC):
+- **Monitoring mode**: ACTIVE — No autonomous work available until 13:00 UTC
+- **Queue status**: 3 active items (Items 16, 54, 61) — meets target threshold
+- **Decision-point readiness**: 🟢 CONFIRMED READY
+  - Track B activation script: Ready to execute at 13:00 UTC if no user override
+  - Nextcloud+Matrix platform: Ready to execute at 13:00 UTC if no user override
+- **Stockbot**: Sleeping until 13:15 UTC market-open wake; sessions ready for 13:30 UTC trading
+
+**Timeline Status**:
+- **11:00 UTC** (in 2h 15min): Pre-market health checks (next session window)
+- **13:00 UTC** (in 4h 15min): Decision-point execution (Track B + platform choice)
+- **13:30 UTC** (in 4h 45min): Stockbot market open
+
+**Needs Your Input** (by 13:00 UTC, if different from defaults):
+1. **Seedwarden Track** — Default: Track B activation. Override if you prefer Track A or Both.
+2. **Systems-resilience Platform** — Default: Nextcloud+Matrix. Override if you prefer Discourse.
+
+**Suggested Priorities for Next Session** (11:00 UTC):
+1. Pre-market health checks (stockbot API connectivity, SSH status, session health verification)
+2. Final user input check (CHECKIN.md + INBOX.md) for decision overrides before 13:00 UTC
+3. Execute decision-point activations at 13:00 UTC if no user input received
+4. Monitor stockbot market open at 13:30 UTC (watch for trading execution anomalies)
+
+---
+
+## Previous Check-in — Session 2759 (2026-06-04 08:22–08:32 UTC — Orchestrator: Monitoring Mode Continuation + Checkpoint Scheduling)
 
 **Status**: 🟢 **MONITORING MODE + DECISION POINT READY** — Continuation of Session 2758. No autonomous work available in pre-market window (verified). All decision-point infrastructure staged and ready for 13:00 UTC execution.
 
