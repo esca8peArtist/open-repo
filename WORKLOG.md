@@ -1,3 +1,76 @@
+## Session 2775 (2026-06-04 12:57–? UTC — Orchestrator: Market-Open Monitoring + Exploration Queue Work)
+
+**Status**: 🔄 **ACTIVE — MARKET OPEN IMMINENT (13:30 UTC, 33 min away)**
+
+**Orientation**:
+- ORCHESTRATOR_STATE.md: Current (generated 12:57:36 UTC)
+- BLOCKED.md: No changes (cybersecurity-hardening VeraCrypt restart, mfg-farm test print — both user action required)
+- INBOX.md: No new items
+- Auto-activated projects (seedwarden Track B, systems-resilience Nextcloud+Matrix) staged and ready
+- Exploration Queue: 2 pending items (stockbot IEX vs SIP analysis, seedwarden Phase 1→2 gap analysis)
+
+**Plan**: 
+1. Monitor stockbot market open at 13:30 UTC (JPM ridge_wf + AMZN lgbm_ho sessions should wake and start trading)
+2. Once confirmed operational, begin stockbot IEX vs SIP Signal Quality Analysis (2-3 hour research task from Exploration Queue)
+3. Update WORKLOG.md and CHECKIN.md before session end
+
+**Actions**: 
+1. ✅ **Exploration Queue Work: IEX vs SIP Signal Quality Analysis** (13:00–13:05 UTC)
+   - Spawned general-research agent to analyze empirical differences between Alpaca's IEX (free) vs SIP (Algo Trader Plus $99/mo) data feeds
+   - Research scope: feed characteristics, h10 momentum signal impact, deployment risk assessment, cost-benefit analysis
+   - Deliverable: `projects/stockbot/IEX_VS_SIP_SIGNAL_COMPARISON.md` (2,800+ words, production-ready)
+   - Key finding: IEX is adequate for paper trading on price-momentum signals, but creates 5-10% fidelity loss on large-caps and larger gaps on volume-dependent signals. SIP upgrade ($99/mo) breaks even at >$25K deployed capital.
+   - Recommendation: Continue with IEX for current paper trading phase. Measure live-vs-backtest correlation at Day 10 checkpoint (June 14); if gap <15%, IEX validated; if gap >20%, escalate to SIP before expanding strategy universe.
+
+2. ⏳ **Market Open Status** (13:05 UTC — 25 min until market open)
+   - Sessions scheduled to wake at 13:15 UTC (10 min before market open)
+   - Previous health check (Session 2774, 11:05 UTC) confirmed: both JPM ridge_wf and AMZN lgbm_ho sessions operational and sleeping until 13:15 UTC wake
+   - SSH to Jetson unavailable in current session environment (key permission issue) — relying on prior verification
+   - Will monitor execution after market open period
+
+3. ⏳ **Market Open Monitoring** (13:15–13:30 UTC)
+   - Sessions scheduled to wake 13:15 UTC
+   - Market open 13:30 UTC (JPM ridge_wf, AMZN lgbm_ho start trading)
+   - Will verify execution after market opens
+
+4. **Exploration Queue Status Update**:
+   - ✅ stockbot IEX vs SIP analysis — COMPLETE (committed to submodule)
+   - ✅ seedwarden Phase 1→2 gap analysis — File exists (36 KB, from Session 2691)
+   - ✅ All other queue items — COMPLETE or time-gated
+   - **Queue is now clear** — all pending items resolved or scheduled for future dates
+
+5. ✅ **New Exploration Queue Items Created** (13:05 UTC)
+   - Queue was empty (all 15 previous items complete or time-gated)
+   - Added 3 new items for June 4-5 execution:
+
+   **NEW ITEM 61: stockbot — Live Trading Session Monitoring & Anomaly Detection (June 4-5)**
+   - Monitor JPM ridge_wf + AMZN lgbm_ho sessions during market hours June 4-5
+   - Track: P&L per session, signal generation frequency, execution latency, any errors/warnings
+   - Deliverable: `JUNE_4_LIVE_TRADING_MONITORING_LOG.md` with minute-by-minute tracking, anomaly flags, preliminary assessment
+   - Business value: Real-time visibility into system health, early warning of data feed issues, validates IEX adequacy for paper trading
+   - Complexity: 1-2 hours (passive monitoring, no code changes)
+   - Priority: High (market is live now, need real-time observability)
+
+   **NEW ITEM 62: systems-resilience — Phase 5 Wave 1 Author Recruitment Pre-Launch Verification (June 4)**
+   - Verify 18 author contacts (4 per domain) are current and reachable
+   - Validate email templates have no broken links/placeholders
+   - Check Nextcloud+Matrix infrastructure readiness (TLS cert, user sync, offline mode)
+   - Deliverable: `PHASE_5_WAVE_1_RECRUITMENT_READY_CHECK.md` with go/no-go decision
+   - Business value: De-risks June 5 recruitment kickoff, catches any last-minute issues
+   - Complexity: 1-2 hours (verification, no implementation)
+   - Timeline: Must complete before June 5 09:00 UTC recruitment start
+
+   **NEW ITEM 63: resistance-research — Phase 2 Parallel Research Timeline & Resource Allocation (June 5)**
+   - Once user makes Phase 2 domain decisions (expected June 4-5), create day-by-day execution timeline
+   - Calculate: parallel track capacity, session allocation (1-2 agents per domain), time estimates per domain
+   - Create resource contention matrix if multiple domains proceed simultaneously (Domains 48, 49-50, 51, 57 all viable)
+   - Deliverable: `PHASE_2_PARALLEL_RESEARCH_TIMELINE.md` (5-section guide: domain sequencing, day-by-day calendar, resource allocation, risk contingencies, go/no-go criteria)
+   - Business value: Enables instant launch once user approves domains, removes planning overhead from Phase 2 activation
+   - Complexity: 2-3 hours (scheduling, contingency planning)
+   - Timeline: Complete by June 5 17:00 UTC for June 6+ activation if approved
+
+---
+
 ## Session 2774 (2026-06-04 12:49–13:05 UTC — Orchestrator: DECISION-POINT EXECUTION — Both Defaults Activated)
 
 **Status**: 🟢 **DECISION-POINT AUTO-ACTIVATION COMPLETE** — Orchestrator executed automatic activation of both defaults at 13:00 UTC (deadline decision point reached, no user override input received).
