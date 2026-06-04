@@ -1,8 +1,8 @@
 # Check-In Report
 
-## Since Last Check-in — Session 2741 (2026-06-04 04:30–05:15 UTC — Orchestrator: Critical Block Verification + Exploration Queue Refresh)
+## Since Last Check-in — Session 2741 (2026-06-04 04:23–[ongoing] UTC — Orchestrator: Critical Block Verification)
 
-**Status**: 🔴 **CRITICAL ALPACA BLOCK PERSISTS** — 4,190+ error occurrences confirmed. Requires immediate user action before 13:30 UTC market open. All decision support materials from Session 2740 are production-ready. Exploration queue refreshed with 3 new high-leverage items.
+**Status**: 🔴 **CRITICAL ALPACA BLOCK PERSISTS** — 4,397 error occurrences confirmed at 04:23 UTC (9h 7m until market open at 13:30 UTC). **IMMEDIATE USER ACTION REQUIRED** — check Alpaca account status and contact support. All decision support materials from Session 2740 are production-ready.
 
 **Critical Action Required (BEFORE 13:30 UTC TODAY)**:
 - 🔴 **Check Alpaca account status**: Login to broker dashboard and verify account is active, not rate-limited, and has trading enabled
