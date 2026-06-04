@@ -1,6 +1,50 @@
 # Check-In Report
 
-## Since Last Check-in — Session 2742 (2026-06-04 04:45–[ongoing] UTC — Orchestrator: WebSocket Non-Critical Discovery + Parallel Execution Prep)
+## Since Last Check-in — Session 2743 (2026-06-04 04:45–[completed] UTC — Orchestrator: Resistance-Research Domain 51 Execution Prep Complete)
+
+**Status**: ✅ **RESISTANCE-RESEARCH PHASE 2 BATCH 1 FULLY OPERATIONALIZED** — Domain 51 execution infrastructure complete and ready for June 9-12 distribution window.
+
+**Session Work Summary**:
+
+1. ✅ **Domain 51 Execution Prep Complete**:
+   - Verified all 5 core materials production-ready (research document, 5 email templates, Gist URL, execution log, Phase 2 roadmap)
+   - Created `DOMAIN_51_PRESEND_VERIFICATION_REPORT.md` — comprehensive pre-send checklist (June 6-8 verification tasks identified)
+   - Created `DOMAIN_51_EXECUTION_MONITORING.md` — tracking dashboard with Wave 1-2 execution logs, metrics collection framework, Day 7 checkpoint decision matrix
+   - Updated PROJECTS.md to reflect execution prep complete
+   - Committed all work to master
+
+2. **Domain 51 Execution Timeline Confirmed**:
+   - **June 9** (Wave 1, 90 min): Campaign Legal Center (9:00 AM) → Issue One (10:30 AM)
+   - **June 11** (Wave 2, 90 min): Common Cause California (9:00 AM) → League of Women Voters California (9:30 AM) → Clean Money Action Fund (10:00 AM)
+   - **June 16–18**: Day 7 checkpoint assessment (email reply count, Gist view analytics, campaign mentions) → signal verdict (strong/moderate/weak) → Tier 2 activation decision
+
+3. **Ready for Execution**:
+   - All 5 contacts verified (as of June 4)
+   - June 6–8: Pre-send verification tasks (Anya confirms Gist loads, re-verifies contact emails, finalizes personalization)
+   - June 9: Execution can begin at 9:00 AM with zero blockers
+
+**Other Projects Status**:
+- **Stockbot**: 🟡 WebSocket non-critical (trading active, awaiting user choice A/B/C from Session 2742)
+- **Systems-resilience**: ⏳ Platform decision (documents ready, awaiting EOD choice from Session 2742)
+- **Seedwarden**: ⏳ Track decision (documents ready, awaiting EOD choice from Session 2742)
+- **Open-repo**: ✅ June 12 deployment ready (runbook + go-live checklist complete)
+- **Cybersecurity-hardening**: ⏳ VeraCrypt restart (user action)
+- **mfg-farm**: ⏳ Test print (user action)
+
+**Strategic Impact**:
+- Phase 2 Batch 1 (Domain 51) now fully operationalized
+- Pre-send verification identified for Anya to complete June 6-8
+- Execution can proceed June 9 with full monitoring infrastructure
+- Signal-based decision matrix enables automated Tier 2 activation if strong engagement
+
+**Needs Your Input**:
+1. (Session 2742 items still pending: WebSocket option A/B/C, platform decision, seedwarden track decision)
+2. Anya: Complete Domain 51 pre-send verification June 6-8 (Gist load test, re-verify 3 California contacts, finalize personalization variables)
+3. June 9: Domain 51 execution begins per schedule
+
+---
+
+## Since Last Check-in — Session 2742 (2026-06-04 04:45–[completed] UTC — Orchestrator: WebSocket Non-Critical Discovery + Parallel Execution Prep)
 
 **Status**: 🟡 **ALPACA WEBSOCKET NOT BLOCKING TRADING** — WebSocket error is 100% non-critical. Trading engine is fully REST-based. Stockbot can trade normally on June 4 with simple fix or workaround. New execution checklists prepared for resistance-research & open-repo.
 
