@@ -1,3 +1,39 @@
+## Session 2749 (2026-06-04 06:28–06:40 UTC — Orchestrator: Preparation for Decision Point + Pre-Market Wake-up)
+
+**Status**: 🔵 **MONITORING + PREPARATION MODE** — Continuation of Session 2748. Confirmed zero autonomous work available before 13:00 UTC decision deadline. Prepared activation scripts and scheduled pre-market wake-up for 11:00 UTC.
+
+**Actions**:
+
+1. ✅ **System Status Verification** (06:28–06:30 UTC):
+   - Confirmed ORCHESTRATOR_STATE.md (auto-generated, Session 2748 state)
+   - Verified BLOCKED.md: 2 active blocks (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — both user-action-required
+   - Verified INBOX.md: empty (all items processed)
+   - Checked EXPLORATION_QUEUE.md: Items 54/58/59 queued with June 4-14 deadlines; no work suitable for 6.5-hour window before decision point
+
+2. ✅ **Decision Point Preparation** (06:30–06:35 UTC):
+   - Reviewed TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md — script prepared and ready
+   - Verified activation checklist (CHECKIN.md pre-read, INBOX.md pre-read, time check, market status)
+   - Confirmed Track B infrastructure verified (8/8 zone PDFs, 5 email bodies, 15 influencer contacts, 18 social posts, logo, 8 companion files — all production-ready)
+   - **Seedwarden status**: If no user response by 13:00 UTC, Track B auto-activation will execute
+
+3. ✅ **Pre-Market Wake-up Scheduling** (06:35–06:40 UTC):
+   - Scheduled wake-up for 11:00 UTC (4h 32m from now)
+   - Will execute stockbot pre-market health checks (SSH verification, API health, trading session status)
+   - Market open at 13:30 UTC (7h 2m from now)
+
+**Decision Deadlines Remaining**:
+- **Seedwarden Track A/B/Both**: 13:00 UTC (6h 32m) — No user response yet. Orchestrator will activate Track B if no input.
+- **Systems-resilience Platform** (Nextcloud+Matrix vs Discourse): EOD today (lower priority) — No user response yet. Will default to Nextcloud+Matrix if not specified.
+
+**Stockbot Status**: ✅ READY FOR 13:30 UTC MARKET OPEN
+- Both trading sessions (JPM ridge_wf + AMZN lgbm_ho) verified operational
+- Database fix confirmed (Session 2745)
+- Sessions sleeping until 13:15 UTC pre-market wake
+
+**Next Session**: 11:00 UTC — Pre-market health checks + decision point monitoring
+
+---
+
 ## Session 2747 (2026-06-04 06:09–06:35 UTC — Orchestrator: Orientation + Seedwarden Decision Point Verification)
 
 **Status**: ✅ **ORIENTATION COMPLETE — SEEDWARDEN DECISION DEADLINE CONFIRMED PASSED** — Zero autonomous work before market open. Track B auto-activation confirmed for 13:00 UTC.
