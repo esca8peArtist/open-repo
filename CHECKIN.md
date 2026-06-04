@@ -1,4 +1,39 @@
-## Since Last Check-in — Session 2758 (2026-06-04 08:14–08:30 UTC — Orchestrator: Early-Wake Monitoring + Decision Deadline Confirmation)
+## Since Last Check-in — Session 2759 (2026-06-04 08:22–08:32 UTC — Orchestrator: Monitoring Mode Continuation + Checkpoint Scheduling)
+
+**Status**: 🟢 **MONITORING MODE + DECISION POINT READY** — Continuation of Session 2758. No autonomous work available in pre-market window (verified). All decision-point infrastructure staged and ready for 13:00 UTC execution.
+
+**Session Work**:
+1. ✅ **Full Orientation Complete** (08:22–08:29 UTC)
+   - Reviewed ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md, EXPLORATION_QUEUE.md
+   - Confirmed usage nominal (9.4% Sonnet, no throttling)
+   - Verified no new INBOX items; no resolvable blocks
+   - Confirmed Exploration Queue status: Items 59-60 complete (delivered this morning), Items 16/54 queued for future deadlines
+
+2. ✅ **Status Verification** (08:29–08:32 UTC)
+   - Stockbot: ✅ OPERATIONAL — Sessions sleeping until 13:15 UTC wake-up
+   - Seedwarden: ✅ READY FOR TRACK B ACTIVATION — scheduled 13:00 UTC (if no user override)
+   - Systems-resilience: ✅ READY FOR NEXTCLOUD+MATRIX ACTIVATION — scheduled 13:00 UTC (if no user override)
+   - Resistance-research: Domain 51 execution June 9-12 (prep complete)
+   - All other projects: Time-gated or awaiting user action
+
+3. ✅ **Checkpoint Schedule Confirmed** (08:32 UTC)
+   - **11:00 UTC** (71 min): Pre-market health checks
+   - **13:00 UTC** (251 min): Execute decision-point activations (Track B + platform choice)
+   - **13:30 UTC** (301 min): Stockbot market open
+
+**Needs Your Input** (by 13:00 UTC, if different from defaults):
+1. **Seedwarden Track** — Default: Track B. Override if you prefer Track A or Both.
+2. **Systems-resilience Platform** — Default: Nextcloud+Matrix. Override if you prefer Discourse.
+
+**Suggested Priorities for Next Session** (10:17 UTC):
+1. Final stockbot pre-market readiness checks (API connectivity, SSH status, session health)
+2. Confirm no user decision overrides by 13:00 UTC
+3. Execute decision-point activations at 13:00 UTC if no user input
+4. Monitor stockbot market open at 13:30 UTC
+
+---
+
+## Previous Check-in — Session 2758 (2026-06-04 08:14–08:30 UTC — Orchestrator: Early-Wake Monitoring + Decision Deadline Confirmation)
 
 **Status**: 🟡 **MONITORING MODE + DECISION POINT READY** — Woke up 2h46min early. No autonomous work available pre-market. Decision-point execution infrastructure verified ready for 13:00 UTC activation.
 
