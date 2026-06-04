@@ -24,12 +24,17 @@ prerequisite_file: "DOMAINS_48_51_PRODUCTION_ROADMAP.md (Part 1, Domain 51 spec)
 Copy this list into your session notes. Check each item before beginning the draft phase.
 
 ```
+PRE-CHECKLIST GATE (do this first, before any other item)
+[ ] Read domains/domain-51-campaign-finance-dark-money-architecture.md
+    - If status: complete AND word_count >= 5000: STOP. Go to Section 7 contingency.
+    - If file missing or status: draft: continue with checklist below.
+
 PRE-RESEARCH (Session 1, first 90 minutes)
 [ ] Open opensecrets.org/dark-money — confirm 2024 cycle totals and download summary data
 [ ] Search congress.gov for "DISCLOSE Act 2026" — confirm bill number and cosponsor count
 [ ] Open fec.gov/about/reports-about-fec/annual-reports/ — download 2023 and 2024 annual reports
-[ ] Search fec.gov for commissioner roster — confirm current vacancies (expect 2 of 6 vacant)
-[ ] Confirm four state dark money ballot measure states (AZ, MA, MT, ND) via ballotpedia.org — verify or correct
+[ ] Search fec.gov for commissioner roster — confirm current vacancies. As of May 2026: 4 of 6 seats vacant. Only Broussard (D) and Lindenbaum (D) remain. Trump nominees Stow and Woodson (both R) pending Senate confirmation. This is a 2026-cycle development; the 'expect 2 of 6' framing reflects 2025 conditions.
+[ ] Confirm 2026 campaign finance ballot measures via Ballotpedia and OpenSecrets. Confirmed as of June 2026: Alaska (two measures), California SB-42 (Fair Elections Act — public financing authorization), Missouri Amendment 4 (foreign contribution prohibition), Montana Initiative 194 (corporate contribution prohibition). AZ 2022 Prop 211 already passed — no new AZ measure. MA and ND have no confirmed 2026 measures.
 [ ] Read Citizens United v. FEC (2010) holding paragraph (2 pages max — just the core holding)
 [ ] Read SpeechNow.org v. FEC (D.C. Circuit 2010) holding paragraph
 
@@ -55,10 +60,10 @@ COMPLETION GATES
 **Goal**: Leave Session 1 with a complete outline and 25+ confirmed sources. Do not begin drafting.
 
 Tasks in order:
-1. OpenSecrets dark money database — download the 2024 cycle dark money summary. Confirm the $1.9B figure (or update if 2024 final numbers have been published since May 2026). Record breakdown by vehicle: 501(c)(4) vs. 501(c)(6) vs. LLC pass-through.
+1. OpenSecrets dark money database — download the 2024 cycle dark money summary. Verify $1.9B figure — confirmed as final 2024 cycle figure by Brennan Center 'Dark Money Hit a Record High of $1.9 Billion in 2024 Federal Races' (2025) and OpenSecrets November 2024 post-election analysis. Also record: shell companies and 501(c)(4)s gave $1.3B specifically to super PACs (the pass-through sub-figure); total outside spending $4.5B with more than half from non-disclosing groups. Billionaires accounted for 0.3% of federal election spending pre-Citizens United; by 2024, 300 billionaires contributed $3B (19% of all federal election donations).
 2. Citizens United v. FEC (558 U.S. 310, 2010) — read pp. 1–20 (the holding and core reasoning). The domain does not require full case analysis; it requires the specific holding language on independent expenditures and the First Amendment rationale.
 3. SpeechNow.org v. FEC (599 F.3d 686, D.C. Cir. 2010) — read the holding section (2–3 pages). This is the decision that actually created super PACs; Citizens United is commonly cited but SpeechNow is the operative decision.
-4. FEC annual report — calculate enforcement deadlock rate. Method: count enforcement actions recommended by staff vs. enforcement actions voted to dismiss by deadlocked commission, 2015–2024. Issue One's "Strengthening the Rules" report may have this already calculated — use it if available, verify independently if not.
+4. FEC enforcement deadlock rate — primary source: Public Citizen 'Roiled in Partisan Deadlock' (April 2015) at citizen.org — documents 40% unresolved case rate by 2016. Secondary sources: Brennan Center 'Reform the FEC to Ensure Fair and Vigorous Law Enforcement' at brennancenter.org — synthesizes 2010–2020 deadlock data; CRS R45160 (congress.gov/crs-product/R45160) — authoritative commissioner quorum analysis. Key synthesized figure: FEC deadlocked on 24.1% of requests per year from 2008–2019, up from 4.9% in 1975–2007. Note: No Issue One report by the title "Strengthening the Rules" exists as of June 2026 — do not spend time searching for it.
 5. DISCLOSE Act of 2026 — read Section 2 (findings) and Section 3 (disclosure requirements). Note cosponsor count. This is the primary legislative advocacy hook.
 6. Four state ballot measures — confirm states and measure numbers via Ballotpedia. Record: state, measure number, current polling if available, primary opposition campaign and its funding structure.
 7. Construct outline skeleton — see Section 3 below for recommended structure.
@@ -105,9 +110,9 @@ These five quantitative facts are the spine of the domain. Do not begin drafting
 |---|-------|---------------|---------|
 | 1 | $1.9B in 501(c)(4) dark money in 2024 election cycle | OpenSecrets dark money database | [ ] |
 | 2 | Pre-Citizens United total outside spending ~$400M (2004 cycle) and substantially disclosed | OpenSecrets historical data or Brennan Center | [ ] |
-| 3 | FEC enforcement deadlock rate: X% of staff-recommended actions blocked by tied vote, 2015–2024 | FEC annual reports or Issue One "Strengthening the Rules" | [ ] |
+| 3 | FEC enforcement deadlock rate: X% of staff-recommended actions blocked by tied vote, 2015–2024 | Brennan Center reform FEC report + Public Citizen April 2015 deadlock report + CRS R45160. Note: No Issue One report by this title exists — do not search for it. | [ ] |
 | 4 | Current FEC commissioner vacancies: 2 of 6 seats (or confirm current number) | FEC.gov commissioner roster | [ ] |
-| 5 | Four states with dark money disclosure ballot measures November 2026: [state list] | Ballotpedia confirmed measure numbers | [ ] |
+| 5 | 2026 campaign finance ballot measures confirmed: AK, CA, MO, MT (not AZ, MA, MT, ND as previously hypothesized). California SB-42 is the primary distribution anchor — Californians for Fair Elections campaign launched by Common Cause CA, Clean Money Action Fund, and LWV CA. | Ballotpedia + OpenSecrets confirmed measure numbers | [ ] |
 
 If any of these five figures cannot be confirmed with a primary source, note the gap explicitly in the draft and explain the best available proxy. Do not use unverified figures.
 
@@ -150,9 +155,10 @@ SECTION 4: SECTOR-SPECIFIC CAPTURE CONNECTIONS (~500–700 words)
 - This section is the evidentiary spine for the meta-domain framing
 
 SECTION 5: THE 2026 STATE BALLOT MEASURES (~400–500 words)
-- Four states with confirmed measures
+- Four confirmed states: Alaska (two measures), California SB-42, Missouri Amendment 4, Montana I-194
 - The dark-money-vs-dark-money-disclosure dynamic
 - What adoption would require structurally at the state level
+- California SB-42 (Fair Elections Act) as primary distribution anchor for early-vote window
 
 SECTION 6: INTERNATIONAL COMPARISON (~400–500 words)
 - UK PPERA: disclosure requirements + political advertising transparency
@@ -221,11 +227,14 @@ These sources are known to exist and are accessible. Verify URLs on research day
 
 **Policy organization research**
 - Brennan Center campaign finance reform reports: brennancenter.org/issues/strengthen-our-democracy/money-in-politics
-- Issue One "Strengthening the Rules": issueone.org (search their reports page)
+- Brennan Center "Reform the FEC to Ensure Fair and Vigorous Law Enforcement" — synthesizes 2010–2020 deadlock data
+- Public Citizen "Roiled in Partisan Deadlock" (April 2015) — documents 40% unresolved case rate by 2016
+- CRS R45160 (congress.gov/crs-product/R45160) — authoritative commissioner quorum analysis
 - Campaign Legal Center research: campaignlegal.org/resources
 
 **State ballot measures**
-- Ballotpedia dark money disclosure measures: ballotpedia.org (search "dark money disclosure 2026")
+- Ballotpedia 2026 ballot measures: ballotpedia.org (confirmed: Alaska, California, Missouri, Montana)
+- OpenSecrets 2026 ballot measures analysis: opensecrets.org/news
 
 **International comparison**
 - UK Political Parties, Elections and Referendums Act (PPERA 2000): legislation.gov.uk
