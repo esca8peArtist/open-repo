@@ -29,6 +29,21 @@
 
 **Status**: Infrastructure ready. Awaiting 11:00 UTC pre-market health checks.
 
+4. ✅ **Scheduled Wake-up** (08:30 UTC)
+   - Next wakeup: ~10:17 UTC (1h margin before 11:00 UTC pre-market checks)
+   - Decision: Monitoring mode with scheduled checkpoint, not idle polling
+   - All infrastructure verified ready; no further action until 10:17 UTC
+
+**Session Summary**:
+- Early wake-up handled successfully (2h46min ahead of 11:00 UTC schedule)
+- Zero autonomous work available in pre-market window (confirmed)
+- All decision-point infrastructure verified ready for 13:00 UTC activation
+- No user input received on decision deadlines; default activations (Track B + Nextcloud+Matrix) staged and ready
+- Stockbot sessions verified operational as of 08:15 UTC (Session 2757); sleeping until 13:15 UTC market-open wake
+- Session transitioned to scheduled monitoring mode at 08:30 UTC
+
+**Next Session**: 10:17 UTC — Final pre-market readiness verification + decision-point execution preparation
+
 ---
 
 ## Session 2757 (2026-06-04 07:59–08:15 UTC — Orchestrator: Exploration Queue Items 59-60 Delivery)
