@@ -50,19 +50,24 @@
 
 ## Session 2747 (2026-06-04 05:52–13:00+ UTC — Orchestrator: Decision Point Monitoring + Conditional Activation)
 
-**Current Status**: 🔵 **MONITORING MODE** — Two critical decision points approaching:
-- **13:00 UTC** (7h 8m): Seedwarden Track B activation IF no user response
-- **13:30 UTC** (7h 38m): Stockbot market open — trading session startup verification
+**Status at 06:01 UTC**: 🔵 **MONITORING MODE ACTIVE** — Two critical decision points approaching (6h 59m until seedwarden, 7h 29m until market open). **No user input yet on seedwarden Track decision.**
+
+**Confirmed Operational Status**:
+- ✅ **Stockbot**: Both JPM ridge_wf + AMZN lgbm_ho sessions ready, sleeping until 13:15 UTC
+- ✅ **BLOCKED.md**: Processed and committed (Session 2746)
+- ✅ **INBOX.md**: Empty (no new user items)
+- ⏳ **Seedwarden**: Awaiting Track A/B/Both decision by 13:00 UTC deadline
 
 **Plan**:
-1. **05:52–13:00 UTC**: No autonomous work available. Hold in monitoring mode.
-2. **13:00 UTC**: Check INBOX.md/user input for seedwarden decision.
-   - If user clarified track preference → execute as directed
-   - If no response → activate Track B automatically (DOMAIN_51_EXECUTION_CHECKLIST.md)
-3. **13:15 UTC**: Pre-market verification (Jetson container + database status)
-4. **13:30 UTC**: Market open — monitor both trading sessions (JPM ridge_wf + AMZN lgbm_ho) for first cycle execution
+1. **06:01–11:00 UTC**: Monitor for user input on seedwarden Track decision. No autonomous work started (7h tasks would conflict with decision deadline).
+2. **11:00–13:00 UTC**: Pre-market health checks for stockbot (thermal baseline, Docker status, API connectivity).
+3. **13:00 UTC**: Decision point — check INBOX.md/CHECKIN.md for user response.
+   - If Track A/B/Both specified → execute as user directed
+   - If no response → auto-activate Track B per orchestrator protocol
+4. **13:15 UTC**: Final market-open readiness verification
+5. **13:30 UTC**: Market open — monitor both trading sessions for first cycle execution
 
-**Why this approach**: All major project work is gated by these two decisions. Resistance-research execution is June 9-12 (no prep work). Systems-resilience is gated by platform choice (user EOD decision). No other projects have autonomous work available. The best use of orchestrator bandwidth right now is staying present for these decision points and market monitoring.
+**Why no autonomous work**: All project work is gated by user decisions (seedwarden 13:00, systems-resilience EOD). Exploration queue items (4-8h each) would run through decision deadline. Best use of bandwidth is monitoring readiness and executing decisions decisively when deadline hits.
 
 ## Session 2745 (2026-06-04 05:27–06:15 UTC — Orchestrator: Critical Stockbot Fix + Preparatory Research)
 
