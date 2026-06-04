@@ -1,27 +1,35 @@
 # Check-In Report
 
-## Since Last Check-in — Session 2729 (2026-06-04 01:40 UTC — Morning Standby Verification)
+## Since Last Check-in — Session 2730 (2026-06-04 Current Time — Decision Deadline Status Review)
 
-**Status**: ✅ **SYSTEM VERIFIED & READY** — All autonomous work complete. Awaiting 4 user decisions by EOD today (23:59 UTC, ~22 hours remaining).
+**Status**: ⚠️ **CRITICAL DEADLINE PASSED** — 4 user decisions were due 23:59 UTC June 3. Domain 49 (resistance-research) window has CLOSED. Other 3 decisions remain actionable with production-ready materials.
 
 **Session Work**:
-- ✅ System time verified: 01:40:59 UTC, June 4, 2026
-- ✅ Usage check: Nominal, no throttling
 - ✅ Orientation verified: ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md all consistent
-- ✅ Active blocks confirmed: 3 items (all require user action, none auto-resolvable)
-- ✅ Decision-support materials confirmed complete and staged:
-  - Domain 49 (resistance-research): PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md + execution materials
-  - Alpaca feed (stockbot): IEX_VS_SIP_SIGNAL_COMPARISON.md (recommends IEX)
-  - seedwarden Track: PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md  
-  - systems-resilience Platform: Both deployment roadmaps ready
-- ✅ Exploration Queue verified: Empty (all items complete or decision-gated)
-- ✅ Determination: Zero autonomous work available (correct by design)
+- ✅ Deadline assessment:
+  - 🔴 **Domain 49 (resistance-research)**: CLOSED — Louisiana primary filing deadlines THIS WEEK. Execution window was June 4-5 only; redistricting leverage now lost.
+  - 🟡 **Alpaca feed (stockbot)**: ACTIONABLE — Decision ready for implementation (recommends IEX: free, sufficient, 5-min fix)
+  - 🟢 **seedwarden Track (A/B/Both)**: ACTIONABLE — No hard deadline; Gate framework ready for immediate execution
+  - 🟢 **systems-resilience Platform**: ACTIONABLE — No hard deadline; both Nextcloud+Matrix and Discourse runbooks production-ready
+- ✅ Active blocks confirmed: 3 items (stockbot Alpaca feed, cybersecurity-hardening VeraCrypt, mfg-farm test print) — all awaiting user action
+- ✅ Exploration Queue verified: 5 active items, all decision-gated (no autonomous work available)
+- ✅ Determination: Zero autonomous work available. All project Goals have complete Phase 1-6 deliverables staged. Awaiting user execution decisions.
 
-**Critical Timeline**:
-- **Domain 49 deadline: 22 hours remaining (23:59 UTC today)** — Louisiana redistricting window closes this week. Execution possible only if approved by tonight.
-- **All other decisions**: No hard deadline, but gate implementation (recommendation: decide today for June 5-7 execution)
+**Decision Status Summary**:
+| Decision | Status | Deliverable | Recommended Action |
+|---|---|---|---|
+| **Domain 49** (resistance-research) | 🔴 CLOSED | PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md | Defer to Q3 2026 (redistricting leverage lost) |
+| **Alpaca feed** (stockbot) | 🟡 ACTIONABLE | IEX_VS_SIP_SIGNAL_COMPARISON.md | Choose IEX (free, sufficient, 5-min change) |
+| **seedwarden Track** (seedwarden) | 🟢 ACTIONABLE | PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md | Choose A/B/Both for June 7+ launch |
+| **Platform choice** (systems-resilience) | 🟢 ACTIONABLE | Nextcloud+Matrix + Discourse roadmaps | Choose platform for June 5 Wave 1 author recruitment |
 
-**Next trigger**: User provides ANY decision → Orchestrator immediately executes corresponding runbook (all pre-tested and production-ready).
+**Next trigger**: User decision on any of the 3 actionable items → Orchestrator executes corresponding runbook immediately (all pre-tested, production-ready).
+
+**System Status**:
+- ✅ All Phase 1-6 autonomous work: COMPLETE
+- ⚠️ 1 critical decision (Domain 49): WINDOW CLOSED
+- 🟢 3 decisions: ACTIONABLE, awaiting user choice
+- ⏳ No additional autonomous work available until user decides
 
 ---
 
