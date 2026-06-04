@@ -27,23 +27,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup)
-**Date blocked**: 2026-06-04 02:06 UTC (container restart, WebSocket error began)
-**Date reclassified**: 2026-06-04 05:25 UTC (Session 2744 — CRITICAL discovery: no trades for 3 days)
-**Date resolved**: 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
-**Context**: Container restarted at 02:06 UTC. Jetson stockbot showed WebSocket HTTP 406 "connection limit exceeded" loops with no trading cycle messages. Investigation revealed database directory `/opt/stockbot/database/` did not exist, blocking all table initialization and causing session startup to fail silently. Root cause: volume mount path missing on Jetson filesystem.
-
-**Resolution**: ✅ **FULLY RESOLVED** (Session 2745, 2026-06-04 05:32 UTC)
-- **Action taken**: (1) Created missing directory: `mkdir -p /opt/stockbot/database` on Jetson. (2) Touched empty database file: `touch /opt/stockbot/database/trading.db`. (3) Restarted Docker container: `docker restart stockbot`.
-- **Verification (05:30 UTC)**: Docker logs now show both trading sessions executing correctly:
-  - `[Session amzn_lgbm_ho_001] Market closed — skipping cycle` ✅
-  - `[Session jpm_ridge_wf_001] Market closed — skipping cycle` ✅
-  - Both sessions sleeping until 13:15 UTC (15 min before market open at 13:30 UTC) ✅
-- **Status**: Sessions operational and ready for June 4 market open at 13:30 UTC. WebSocket errors (HTTP 406) remain in logs but are non-critical background noise (confirmed Session 2742: WebSocket not on critical trading path). Trading can proceed with REST-only data.
-- **Market readiness**: With 7.75 hours until market open, both sessions will wake at 13:15 UTC and begin trading normally.
-
----
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -71,6 +54,22 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup)
+**Date blocked**: 2026-06-04 02:06 UTC (container restart, WebSocket error began)
+**Date reclassified**: 2026-06-04 05:25 UTC (Session 2744 — CRITICAL discovery: no trades for 3 days)
+**Date resolved**: 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
+**Context**: Container restarted at 02:06 UTC. Jetson stockbot showed WebSocket HTTP 406 "connection limit exceeded" loops with no trading cycle messages. Investigation revealed database directory `/opt/stockbot/database/` did not exist, blocking all table initialization and causing session startup to fail silently. Root cause: volume mount path missing on Jetson filesystem.
+**Resolution**: ✅ **FULLY RESOLVED** (Session 2745, 2026-06-04 05:32 UTC)
+- **Action taken**: (1) Created missing directory: `mkdir -p /opt/stockbot/database` on Jetson. (2) Touched empty database file: `touch /opt/stockbot/database/trading.db`. (3) Restarted Docker container: `docker restart stockbot`.
+- **Verification (05:30 UTC)**: Docker logs now show both trading sessions executing correctly:
+  - `[Session amzn_lgbm_ho_001] Market closed — skipping cycle` ✅
+  - `[Session jpm_ridge_wf_001] Market closed — skipping cycle` ✅
+  - Both sessions sleeping until 13:15 UTC (15 min before market open at 13:30 UTC) ✅
+- **Status**: Sessions operational and ready for June 4 market open at 13:30 UTC. WebSocket errors (HTTP 406) remain in logs but are non-critical background noise (confirmed Session 2742: WebSocket not on critical trading path). Trading can proceed with REST-only data.
+- **Market readiness**: With 7.75 hours until market open, both sessions will wake at 13:15 UTC and begin trading normally.
+
+---
 
 ### stockbot — Alpaca WebSocket data feed subscription choice required
 **Date blocked**: 2026-06-03 05:55 UTC (Session 2652 — orchestrator pre-market discovery)
