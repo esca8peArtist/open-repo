@@ -1,5 +1,51 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2725 (2026-06-04 — Orientation + EOD Deadline Verification)
+
+**Status**: ✅ **VERIFIED STANDBY STATE** — All Phase 1-6 infrastructure production-ready. System awaiting 4 user decisions with EOD deadline TONIGHT (23:59 UTC).
+
+**Session Work**:
+- ✅ Orchestrator orientation verified: All projects correctly blocked on 4 named external dependencies (user decisions)
+- ✅ BLOCKED.md verified: 3 active blocks (all require user action); no resolutions submitted
+- ✅ INBOX.md verified: No new items; all processed from prior session
+- ✅ Exploration Queue verified: All items decision-gated or complete; no new items needed
+- ✅ Determination: Correct standby state (by design); zero autonomous work available
+
+**Critical Reminder — EOD Deadline TONIGHT (23:59 UTC)**:
+
+Four user decisions remain pending. All materials are production-ready and staged:
+
+1. **Domain 49 Execution** (resistance-research) — HIGHEST URGENCY
+   - Window: Louisiana redistricting primary filing deadline THIS WEEK (June 5-8)
+   - Materials: `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md`, execution checklist, coalition protocol
+   - Recommendation: ✅ APPROVE + EXECUTE June 4-5 (90-min user time)
+
+2. **Alpaca Data Feed Choice** (stockbot)
+   - Options: IEX $0/mo (88-93% fidelity, 5-min fix) OR SIP $99+/mo (100% fidelity, 15-min)
+   - Materials: `IEX_VS_SIP_SIGNAL_COMPARISON.md`, activation runbooks
+   - Recommendation: ✅ IEX now (upgrade SIP 2 weeks pre-live)
+
+3. **seedwarden Track Selection** (seedwarden)
+   - Options: Path A (54-min social launch) / Path B (4-6 hrs full platform) / Both
+   - Materials: Execution checklists for both paths, phase transition roadmap
+   - Recommendation: ✅ Path A first (scale to Path B post-traction)
+
+4. **systems-resilience Platform Choice** (systems-resilience)
+   - Options: Nextcloud+Matrix (9.5/10, offline-first) OR Discourse (8.0/10, governance-first)
+   - Materials: Both deployment roadmaps, author recruitment kits
+   - Recommendation: ✅ Nextcloud+Matrix (offline readiness critical, Meshtastic bridge unique)
+
+**System Status**:
+- All Phase 1-6 work: ✅ Complete and production-ready
+- All decision-support materials: ✅ Staged and current
+- Active blocks: 3 (all require user action)
+- Exploration Queue: >3 active items (decision-gated)
+- Autonomous work available: ❌ None (correct by design)
+
+**Next Trigger**: User decision on ANY item → Orchestrator immediately executes corresponding runbook (all pre-tested and ready).
+
+---
+
 ## Since Last Check-in — Session 2724 (2026-06-04 — State Maintenance + Standby Verification)
 
 **Status**: ✅ **ALL SYSTEMS READY** — System verified in correct standby state awaiting 4 user decisions. No autonomous work available; all 4 decision-support packages fully staged with execution runbooks ready for immediate activation.
