@@ -1,317 +1,490 @@
 ---
-title: "Phase 5 Publication Readiness Checklist"
+title: "Phase 5 Wave 1+2 Publication Readiness Checklist"
 project: systems-resilience
 phase: 5
-purpose: "Platform-agnostic go/no-go gate for June 5 publication of five community-scale domains. Works identically for Nextcloud+Matrix (Option B) and Discourse (Option A)."
-status: READY-FOR-USE — activate June 5 morning after platform decision confirmed
+waves: "1 and 2"
+purpose: "Platform-agnostic go/no-go gate for June 9 publication of five Wave 1+2 production documents. Works identically for Nextcloud+Matrix (Option A) and Discourse (Option B). Run June 5 morning for verification pass; run again June 8 for final go/no-go confirmation."
+status: READY-FOR-USE — run June 5 morning, final run June 8
+publication_target: 2026-06-09 13:00 UTC
+go_no_go_deadline: 2026-06-08 18:00 UTC
 created: 2026-06-04
-decision_deadline: 2026-06-05 12:00 UTC (go/no-go by noon to allow afternoon publication)
+version: 2.0
+replaces: WAVE_1_PUBLICATION_READINESS_CHECKLIST.md (June 1 version)
 cross_references:
+  - JUNE_5_15_PHASE_5_PUBLICATION_AND_WAVE_2_RECRUITMENT_TIMELINE.md
+  - WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md
   - PHASE_5_NEXTCLOUD_MATRIX_DEPLOYMENT_ROADMAP.md
   - PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md
   - PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md
-  - JUNE_5_15_PHASE_5_PUBLICATION_AND_WAVE_2_RECRUITMENT_TIMELINE.md
-  - WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md
+  - WAVE_1_PUBLICATION_READINESS_CHECKLIST.md
 ---
 
-# Phase 5 Publication Readiness Checklist
-## Platform-Agnostic Go / No-Go Gate — June 5, 2026
-
-**Run this checklist the morning of June 5 (or the morning of whichever day publication is scheduled).** It takes approximately 90 minutes to complete all sections. Produce a GO/HOLD/DEFER decision by 12:00 UTC so publication can happen in the afternoon window.
+# Phase 5 Wave 1+2 Publication Readiness Checklist
+## Platform-Agnostic Go / No-Go Gate — June 9, 2026
 
 ---
 
-## Section 1: Content Readiness — Five Community-Scale Domains
+## Executive Summary
 
-The five Wave 1 community-scale domains are the primary publication candidates. All five are sourced from `projects/systems-resilience/phase-3/`. Verify each is present, meets word-count and citation thresholds, and has metadata complete.
+**Three key points:**
+1. Five production-ready documents (45,380 words, zero placeholder markers as of June 1 verification) plus the integrated corpus are cleared for publication. The only remaining pre-publication actions are operational: frontmatter status standardization, frontmatter stripping for platform upload, and PDF export. All are completable in under 2 hours.
+2. This checklist runs twice: a verification pass on June 5 morning (90 minutes) and a final go/no-go confirmation on June 8 (30 minutes). June 9 is publication day.
+3. Platform-specific publication steps are clearly marked [NEXTCLOUD+MATRIX ONLY] and [DISCOURSE ONLY]. All content validation, asset preparation, and quality gates are identical for both platforms.
 
-### 1.1 Domain Inventory
+**Timeline:** June 5 verification pass → June 6-8 platform deployment and asset prep → June 8 go/no-go → June 9 13:00 UTC publication
 
-| Domain | File | Target Words | Actual Words | Target Citations | Actual Citations | Status |
-|--------|------|-------------|-------------|-----------------|-----------------|--------|
-| Governance & Decision-Making | `phase-3/01-governance-decision-making.md` | 5,000+ | ~5,800 | 28+ | 38 | CONFIRMED |
-| Food Systems & Supply Chain | `phase-3/02-food-systems-supply-chain.md` | 5,000+ | ~5,700 | 28+ | 36 | CONFIRMED |
-| Information Infrastructure | `phase-3/03-information-infrastructure.md` | 5,000+ | ~5,700 | 28+ | 36 | CONFIRMED |
-| Security & Mutual Defense | `phase-3/04-security-and-defense.md` | 5,000+ | ~5,800 | 28+ | 32 | CONFIRMED |
-| Scaling Pathways & Thresholds | `phase-3/05-scaling-pathways-and-thresholds.md` | 5,000+ | ~6,000 | 28+ | 28 | CONFIRMED |
+**Owner:** Orchestrator (project lead)
 
-**Verification command** (run from repo root):
+**Success criteria:** All five documents live on chosen platform by June 9 18:00 UTC, announcement email sent, post-publication verification complete by June 9 22:00 UTC.
+
+---
+
+## The Five Publication Candidates
+
+This checklist covers the five Wave 1+2 production documents plus the integrated corpus. These are the actual publication assets — not the phase-3 community-scale domain research files (01-05), which are source material retained in the repo.
+
+| # | Document Title | File Path | Word Count | Citations | June 1 Status |
+|---|----------------|-----------|-----------|-----------|---------------|
+| 1 | Distributed Microgrids as Community Resilience Infrastructure | `phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md` | 8,304 | verified | READY |
+| 2 | Community Implementation Playbook — Tier 3 Coordination Framework | `phase-5-wave-2-community-implementation-playbook.md` | 8,619 | verified | READY |
+| 3 | Conflict Resolution and Governance Framework | `phase-5-wave-2-conflict-resolution-framework.md` | 8,596 | verified | READY |
+| 4 | Psychological Support and Trauma Recovery | `phase-5-wave-2-psychological-support-guide.md` | 9,163 | verified | READY with advisory |
+| 5 | Veterinary Care in Crisis Contexts | `phase-5-wave-2-veterinary-care-guide.md` | 10,698 | verified | READY with advisory |
+| 6 | Integrated Corpus (all five, unified) | `PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md` | 45,380 | unified | READY |
+
+**Prior verification result (June 1, 2026)**: Zero placeholder markers across all five source documents. Four documents have frontmatter `status` field reading "production-draft" (requires update to "PRODUCTION-READY" before publication — see Section 1.3). The microgrids document reads "COMPLETE" — also requires standardization. All content cleared; only frontmatter formatting outstanding.
+
+---
+
+## SECTION 1: Content Readiness
+
+### 1.1 Document Presence Verification
+
+Run from the repository root on June 5 morning:
 
 ```bash
-wc -w projects/systems-resilience/phase-3/*.md
+# Verify all five source documents and the integrated corpus are present
+ls -la projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md
+ls -la projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md
+ls -la projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md
+ls -la projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md
+ls -la projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md
+ls -la projects/systems-resilience/PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md
 ```
 
-All five files confirmed present and committed to `master` as of June 3, 2026. This section requires only a spot-check on June 5 morning to confirm no accidental file deletion or corruption.
-
-### 1.2 Cross-Domain Link Verification
-
-The five domains reference one another. Verify that internal cross-references are not broken (anchors exist in the referenced file at the referenced heading).
-
-**Critical cross-reference pairs to verify manually (5 minutes):**
-
-- [ ] `01-governance-decision-making.md` references `02-food-systems-supply-chain.md` — open both, confirm linked section heading exists
-- [ ] `02-food-systems-supply-chain.md` references `01-governance-decision-making.md` (governance as prerequisite) — confirm heading anchor is valid
-- [ ] `03-information-infrastructure.md` references `04-security-and-defense.md` (communication under threat) — confirm referenced section exists
-- [ ] `05-scaling-pathways-and-thresholds.md` references all four other domains — spot-check two links minimum
-- [ ] `PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md` TOC anchors — confirm five section anchors resolve (open file, click TOC links in a rendered preview)
-
-**Acceptable failure threshold**: 1–2 broken cross-references are a HOLD (fix in 30 minutes), not a DEFER. 3+ broken cross-references are a HOLD only if fixable in under 2 hours.
-
-### 1.3 Author and Source Attribution
-
-Each domain file must have a YAML frontmatter block with the following fields populated. Verify all five.
-
-Required frontmatter fields (check each file):
-
-```yaml
-title:         # Full title string — present in all 5 files
-project:       # "systems-resilience" — present in all 5 files
-phase:         # 3 — present in all 5 files
-domain:        # 1–5 (sequential) — present in all 5 files
-created:       # ISO date — present in all 5 files
-word_count:    # approximate — present in all 5 files
-citation_count: # integer — present in all 5 files
-status:        # "production" — present in all 5 files
+```bash
+# Verify word counts match expected (within 2% is acceptable — wc -w counts differ slightly from manual counts)
+wc -w projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md
+wc -w projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md
+wc -w projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md
+wc -w projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md
+wc -w projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md
+wc -w projects/systems-resilience/PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md
 ```
 
-- [ ] All five files have all 8 frontmatter fields populated
-- [ ] `status: production` confirmed in all five files (not `draft`, `review`, or `planning`)
-- [ ] `created` date is present and not blank
+**Expected word count range per document** (from June 1 verification):
 
-**Note on authorship**: These are research synthesis documents produced by the project orchestrator (no external author byline). If publishing to a platform that displays an author field, use "Systems Resilience Project" or the project lead's name as appropriate. No separate attribution statement is required unless the platform mandates one.
+| Document | Expected (June 1) | Acceptable Range |
+|----------|------------------|------------------|
+| Microgrids | 8,304 | 8,100–8,500 |
+| Community Implementation Playbook | 8,619 | 8,400–8,800 |
+| Conflict Resolution | 8,596 | 8,400–8,800 |
+| Psychological Support | 9,163 | 8,900–9,400 |
+| Veterinary Care | 10,698 | 10,400–11,000 |
+| Integrated Corpus | 45,380 | 44,800–46,000 |
+
+- [ ] All six files confirmed present
+- [ ] Word counts within acceptable range for all five source documents
+- [ ] Integrated corpus word count within acceptable range
+- [ ] If any count is significantly below range: check for accidental file truncation; do not proceed until resolved
+
+### 1.2 Placeholder Marker Scan
+
+The June 1 verification found zero placeholder markers. This is a quick re-confirmation, not a full review.
+
+```bash
+# Scan for common placeholder markers in all five source documents
+grep -rn "\[fill\]\|\[TODO\]\|\[TBD\]\|\[PLACEHOLDER\]\|\[NEEDS\]\|\[IN PROGRESS\]\|\[CITATION NEEDED\]\|FILL_IN\|INSERT_HERE" \
+  projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md \
+  projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md \
+  projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md \
+  projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md \
+  projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md
+```
+
+**Expected result**: No output (zero matches). Any output is a HOLD — identify each instance and either complete the missing content or remove the marker with a note.
+
+- [ ] Placeholder scan returns zero results
+- [ ] If any marker found: document file and line number; resolve before June 8 go/no-go
+
+### 1.3 Frontmatter Status Standardization
+
+All four of these frontmatter updates were identified June 1 and should be completed before the June 5 verification pass. Verify they have been done:
+
+```bash
+# Check frontmatter status field in each document
+grep "^status:" projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md
+grep "^status:" projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md
+grep "^status:" projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md
+grep "^status:" projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md
+grep "^status:" projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md
+grep "^status:" projects/systems-resilience/PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md
+```
+
+**Required values**: All five source documents should show `status: PRODUCTION-READY`. Integrated corpus should show `status: PRODUCTION-READY` or `status: INTEGRATED` (both acceptable).
+
+If any document still shows `status: production-draft`, `status: COMPLETE`, or `status: draft`, update in place:
+
+```bash
+# Example fix for a document still showing production-draft
+sed -i 's/^status: production-draft/status: PRODUCTION-READY/' \
+  projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md
+# Repeat for each affected document; then commit the changes
+git add projects/systems-resilience/phase-5*.md projects/systems-resilience/PHASE_5_WAVE_1_2*.md
+git commit -m "chore(phase5): standardize frontmatter status to PRODUCTION-READY pre-publication"
+```
+
+- [ ] Microgrids: `status: PRODUCTION-READY` confirmed
+- [ ] Community Implementation Playbook: `status: PRODUCTION-READY` confirmed
+- [ ] Conflict Resolution: `status: PRODUCTION-READY` confirmed
+- [ ] Psychological Support: `status: PRODUCTION-READY` confirmed
+- [ ] Veterinary Care: `status: PRODUCTION-READY` confirmed
+- [ ] Integrated Corpus: `status: PRODUCTION-READY` or `status: INTEGRATED` confirmed
+
+### 1.4 Advisory Checks (Non-Blocking)
+
+Two documents carry advisories from the June 1 review. These are not blockers for June 9 publication but should be tracked.
+
+**Psychological Support and Trauma Recovery**: Contains clinical guidance (Psychological First Aid protocols, suicide warning signs, direct inquiry language drawn from SAMHSA Field Guide). Advisory: external peer review by a disaster mental health practitioner or licensed therapist before publication strengthens harm-reduction posture. If no reviewer has been sourced by June 8, publish on schedule and note in the publication announcement that clinical protocols reference SAMHSA and Red Cross guidelines; local practitioners should adapt to jurisdiction-specific standards.
+
+- [ ] External clinical review of Psychological Support completed (if achievable by June 8) — OR —
+- [ ] Publish without external review, include SAMHSA/Red Cross sourcing note in announcement (fallback)
+
+**Veterinary Care in Crisis Contexts**: Contains specific triage protocols and clinical guidance for farm animals. Advisory: veterinary practitioner review (RVT or DVM) before June 9 publication. Same logic applies: publish on schedule if no reviewer available; note in the announcement that protocols reference peer-reviewed veterinary literature and should be adapted to local conditions.
+
+- [ ] External veterinary review of Veterinary Care completed (if achievable by June 8) — OR —
+- [ ] Publish without external review, include professional practice advisory in document (fallback)
 
 ---
 
-## Section 2: Technical Readiness — Platform-Agnostic Checks
-
-These checks apply regardless of whether you chose Nextcloud+Matrix or Discourse.
+## SECTION 2: Technical Readiness — Platform-Agnostic Checks
 
 ### 2.1 Markdown Rendering Validation
 
-The five domain files are GitHub-Flavored Markdown (GFM). Before uploading to either platform, confirm rendering is clean.
+Both platforms render GitHub-Flavored Markdown (GFM). Validate rendering quality before upload.
 
-**Quick validation method** (3 minutes per file):
+**Quick validation method** (5 minutes per document, 25 minutes total):
 
-1. Open each file in a GFM renderer (GitHub.com file preview, VS Code Markdown preview, or `pandoc input.md -o output.html && open output.html`)
-2. Check: all tables render as tables (not raw pipe characters), all headings correct level, no orphaned `---` separators, no code block runaway (opening ``` without closing ```)
-3. Check: no YAML frontmatter visible in rendered output (frontmatter should be hidden by the renderer; if visible as raw text, the platform needs a frontmatter-strip step — see Section 2.3)
+Open each file in a GFM renderer. Accepted options: GitHub.com file preview, VS Code Markdown Preview (Ctrl+Shift+V), or `pandoc input.md -o /tmp/test.html && open /tmp/test.html`. Check for:
+- Tables render as formatted tables (not raw pipe characters)
+- Headings display at the correct level; no orphan `##` without a preceding `#`
+- Code blocks have opening and closing triple-backtick fences; no runaway blocks
+- Numbered and bulleted lists display correctly; no broken nesting
+- No visible YAML frontmatter in the rendered output (frontmatter should be hidden or absent)
 
-- [ ] `01-governance-decision-making.md` renders clean
-- [ ] `02-food-systems-supply-chain.md` renders clean
-- [ ] `03-information-infrastructure.md` renders clean
-- [ ] `04-security-and-defense.md` renders clean
-- [ ] `05-scaling-pathways-and-thresholds.md` renders clean
+- [ ] Microgrids: renders clean
+- [ ] Community Implementation Playbook: renders clean
+- [ ] Conflict Resolution: renders clean
+- [ ] Psychological Support: renders clean
+- [ ] Veterinary Care: renders clean
+- [ ] Integrated Corpus: renders clean (spot-check Table of Contents anchors and first 3 sections minimum)
 
-**Prior validation result**: `PHASE_5_FORMATTING_VALIDATION.md` (June 1) confirmed 43 tables, 127 bullet lists, and 31 numbered lists all properly formatted across the integrated corpus. The five Phase 3 domains share the same formatting conventions and were produced in the same session. Confidence that all five render cleanly: 95%.
+**Known formatting complexity**: The integrated corpus at 45,380 words has a large Table of Contents with section anchors. If TOC anchors fail to resolve in a browser-rendered view, the issue is likely heading text mismatches (e.g., special characters in anchor IDs). Fix before upload by manually verifying each TOC entry links to an existing heading.
 
 ### 2.2 Image and Embedded Media Audit
 
-The five domains are text-only documents produced by research synthesis. No external images were embedded during production.
+All five source documents are text-only research synthesis. No external images should be present.
 
-- [ ] Confirm no `![image]()` syntax in any of the five files (quick grep: `grep -r "!\[" projects/systems-resilience/phase-3/`)
-- [ ] If any images found: verify image file exists at referenced path, OR remove reference if image unavailable
+```bash
+# Scan for image references
+grep -n "!\[" \
+  projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md \
+  projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md \
+  projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md \
+  projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md \
+  projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md
+```
 
-**Expected result**: Zero images found. If an image reference exists (e.g., a diagram included in a later edit), it needs either a local file at the referenced path or removal of the reference before publication.
+**Expected result**: No output. If an image reference is found: verify the image file exists at the referenced path. If the image file is not present, remove the image reference from the document (do not publish broken image links). If the image is present: confirm it has descriptive alt text (not empty `![]()`).
 
-**Alt text requirement**: If any images are present, they must have descriptive alt text in the `![description](path)` syntax for accessibility compliance. Empty alt text `![]()` is a HOLD.
+- [ ] Image scan returns zero results — OR — all found image references have valid paths and descriptive alt text
 
 ### 2.3 Frontmatter Handling by Platform
 
-YAML frontmatter is present in all five files. Platform handling differs:
+YAML frontmatter is present in all five documents. Both Nextcloud and Discourse display raw frontmatter as visible text if not stripped — unacceptable for reader-facing publication.
 
-| Platform | Frontmatter Behavior | Action Required |
-|----------|---------------------|-----------------|
-| **Nextcloud (Markdown files)** | Nextcloud Text editor renders frontmatter as visible YAML block — not ideal for readers. | Strip frontmatter before upload OR use a Nextcloud plugin that hides it (e.g., `metadata` plugin). Alternatively, convert to Nextcloud wiki format. |
-| **Discourse (topic posts)** | Discourse does not recognize YAML frontmatter — it will render as visible raw text at the top of posts. | Strip frontmatter before pasting content into Discourse topic body. Keep frontmatter in repo only. |
-| **GitHub Pages (fallback)** | Jekyll strips frontmatter and renders only body. No action needed. | No action required. |
-
-**Recommended action for both platforms**: Before uploading, strip frontmatter from the version being published. Keep the original files with frontmatter in the repo. Use the following command to produce clean copies:
+Before uploading to either platform, produce frontmatter-stripped copies of all five documents:
 
 ```bash
-# Creates a stripped copy of each file in /tmp/phase3-pub/
-mkdir -p /tmp/phase3-pub
-for f in projects/systems-resilience/phase-3/*.md; do
-  awk '/^---/{if(n++>0)found=1; next} found{print}' "$f" > "/tmp/phase3-pub/$(basename $f)"
+# Creates stripped copies in /tmp/phase5-pub/
+# Preserves originals with frontmatter in the repo
+mkdir -p /tmp/phase5-pub
+
+for f in \
+  "projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md" \
+  "projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md" \
+  "projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md" \
+  "projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md" \
+  "projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md" \
+  "projects/systems-resilience/PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md"; do
+  # Strip YAML frontmatter block (content between first two --- delimiters)
+  awk 'BEGIN{found=0; n=0} /^---/{n++; if(n==2){found=1}; next} found{print}' "$f" \
+    > "/tmp/phase5-pub/$(basename $f)"
 done
 ```
 
-- [ ] Frontmatter-stripped copies produced in `/tmp/phase3-pub/` (or equivalent staging directory)
-- [ ] Each stripped file spot-checked: no frontmatter block at top, title heading visible as first line
+After running, spot-check two files in `/tmp/phase5-pub/`: open in a text editor and confirm the first line is a Markdown heading (`# Title`), not a YAML key. If frontmatter is still visible, the awk script may need adjustment (some files use `---\n` as a section separator inside the document — confirm the pattern strips only the leading block).
 
-### 2.4 Search Indexing Requirements
+**Platform-specific note on frontmatter handling**:
 
-Both platforms have search functionality. Ensure platform search can find domains by title and key terms.
+[NEXTCLOUD+MATRIX ONLY]: Nextcloud Text editor displays frontmatter as a visible block unless the `metadata` plugin is installed. Use stripped copies for upload. Keep originals in the repo.
 
-**Nextcloud+Matrix path**:
-- Nextcloud Full-Text Search (FTS) requires the `fulltextsearch` app enabled with Elasticsearch or Solr backend. Without this, only filenames are searchable.
-- Minimum acceptable: files named with domain title keywords (e.g., `01-governance-decision-making.md` is findable by "governance")
-- Recommended: Enable FTS in Nextcloud admin panel before Wave 2 research begins
+[DISCOURSE ONLY]: Discourse renders frontmatter as raw text at the top of the post body. Always use stripped copies for Discourse topic creation.
 
-**Discourse path**:
-- Discourse search indexes post body content natively within 10 minutes of posting. No additional configuration required.
-- Ensure the topic title matches the document title exactly — this is the primary search surface
+- [ ] Frontmatter-stripped copies produced in `/tmp/phase5-pub/`
+- [ ] Spot-check confirms each stripped file starts with a Markdown heading, not a YAML block
 
-- [ ] Platform search confirmed functional (test: search "governance" or "food systems" and confirm results)
-- [ ] If Nextcloud FTS not installed: document this as a known gap; full-text search will be available after FTS setup (can be post-publication)
+### 2.4 Access Control Pre-Verification
+
+Before uploading content, verify that access permissions on the chosen platform are configured as intended. This step is done June 6-8 during platform deployment, but confirm here before publication day.
+
+**Public read / private write model** (recommended for Phase 5 publication):
+- Anonymous visitors can read all published documents
+- Only registered authors can post or edit content
+- Platform admin can manage user accounts
+
+**Restricted read model** (alternative — appropriate if content is pre-release or for vetted community only):
+- Only registered users can read
+- Invited authors only
+
+Confirm the model chosen and that the platform is configured correctly. Verifying access control prevents the embarrassing failure mode of publishing content that is only visible to the admin.
+
+[NEXTCLOUD+MATRIX ONLY]: In Nextcloud, go to the `Phase5-Wave1-Published` folder → Share → confirm "Share link" is active with "Allow download" enabled. Test in an anonymous browser tab (incognito or different browser): navigate to the share link and confirm all five documents are visible and downloadable without login.
+
+[DISCOURSE ONLY]: Log out of Discourse. Navigate to the "Phase 5 Wave 1 — Published Research" category. Confirm: topics are visible to anonymous visitors (or appropriate trust level), topic body renders correctly, no login wall appears before topic text is shown.
+
+- [ ] Access control model confirmed and documented (public-read or restricted-read)
+- [ ] Anonymous access test passed (or: restricted-read confirmed and invitation list is ready)
+
+### 2.5 Platform Search Functionality
+
+Both platforms have search. Verify search is operational before publication day — a broken search index is not a publication blocker but should be documented.
+
+[NEXTCLOUD+MATRIX ONLY]: Navigate to Nextcloud admin panel → Apps → confirm `fulltextsearch` app status. If disabled: files are still accessible by name; full-text search will not work until FTS is configured. Document this as a known gap. Minimum acceptable: Nextcloud file names include domain keywords (e.g., "conflict-resolution" is findable via filename search even without FTS).
+
+[DISCOURSE ONLY]: Discourse natively indexes post bodies within 10 minutes of posting. Search is functional by default. Test: create a test topic with the word "governance" in the body; search for "governance"; confirm the topic appears. Delete the test topic before publication.
+
+- [ ] Search tested and confirmed functional — OR — search gap documented with workaround noted
 
 ---
 
-## Section 3: Asset Inventory for Publication Day
+## SECTION 3: Asset Inventory
 
-These assets should be prepared before June 5 or can be generated June 5 morning in under 60 minutes.
+### 3.1 PDF Export
 
-### 3.1 PDF Export (Fallback Distribution Format)
-
-PDFs serve as the platform-independent fallback if the chosen platform is unreachable or the deployment runs long.
-
-**Generate PDFs using pandoc** (requires pandoc installed; ~2 minutes per file):
+PDFs serve as the platform-independent fallback distribution format. Generate before June 9.
 
 ```bash
-# From repo root:
-for f in projects/systems-resilience/phase-3/0*.md; do
+# Requires pandoc and weasyprint (or another PDF backend)
+# If weasyprint is not installed: pip install weasyprint OR use wkhtmltopdf as alternative
+
+mkdir -p /tmp/phase5-pub/pdf
+
+for f in /tmp/phase5-pub/*.md; do
   name=$(basename "$f" .md)
   pandoc "$f" \
     --from markdown \
     --to pdf \
     --pdf-engine=weasyprint \
-    -o "/tmp/phase3-pub/${name}.pdf" \
-    --metadata title="$(grep '^title:' $f | sed 's/title: *//')"
+    -o "/tmp/phase5-pub/pdf/${name}.pdf"
+  echo "Generated: ${name}.pdf"
 done
 ```
 
-If pandoc PDF generation fails (weasyprint not installed), use the GitHub rendering approach: push the files to a GitHub repo branch and use the GitHub UI to download as PDF, or use a browser's print-to-PDF on the rendered GitHub file view.
+**If pandoc PDF generation is unavailable** (weasyprint or equivalent not installed):
+- Push stripped copies to a GitHub repository branch
+- Use GitHub UI to render each file
+- Use browser print-to-PDF on the GitHub rendered view
+- This produces acceptable PDFs at approximately 30–50 pages per document
 
-- [ ] PDFs generated for all 5 domains (or confirmed that fallback method is ready if pandoc unavailable)
-- [ ] Each PDF spot-checked: opens, title visible on first page, no formatting catastrophe in tables
+**PDF quality spot-check** (2 minutes per PDF):
+- Opens without error
+- Title is visible on page 1
+- Tables are not broken across pages catastrophically (some wrapping is acceptable)
+- No massive blank sections or truncated content
 
-**PDF size note**: Each domain is approximately 30–45 pages at standard margins. Total PDF bundle: ~175 pages. Compress with `gs` (ghostscript) if bundle size exceeds 20 MB for email distribution.
+**Expected PDF sizes**: Each document approximately 35–55 pages at standard margins. Integrated corpus approximately 175 pages. Total PDF bundle estimated at 350–400 pages.
+
+- [ ] PDFs generated for all 5 source documents
+- [ ] Integrated corpus PDF generated
+- [ ] Spot-check: each PDF opens, title visible, no critical formatting failure
+- [ ] If bundle exceeds 20 MB: compress with `gs -sDEVICE=pdfwrite -dNOPAUSE -dQUIET -dBATCH -r150 input.pdf -sOutputFile=output-compressed.pdf`
 
 ### 3.2 Metadata Sidecar
 
-A metadata sidecar document makes the corpus indexable by external tools (Zotero, institutional repositories, content aggregators). This is a lightweight CSV or JSON file that lists publication metadata for each domain.
+A machine-readable metadata file makes the corpus discoverable by external tools (Zotero, institutional repositories, content aggregators). Prepare before publication.
 
-**Metadata sidecar template** (create as `phase3-metadata.csv`):
+**Create as `/tmp/phase5-pub/phase5-wave1-2-metadata.csv`**:
 
 ```csv
-title,file,phase,domain_number,created,word_count,citation_count,status,tags,uuid
-"Community-Scale Governance & Decision-Making Structures","01-governance-decision-making.md",3,1,"2026-05-18",5800,38,"production","governance;decision-making;community-scale;Zone-5",""
-"Community Food Systems & Supply Chain Resilience","02-food-systems-supply-chain.md",3,2,"2026-05-18",5700,36,"production","food-systems;supply-chain;community-scale;Zone-5",""
-"Community Information Infrastructure & Resilient Communications","03-information-infrastructure.md",3,3,"2026-05-18",5700,36,"production","information;communications;resilience;Zone-5",""
-"Community Security & Mutual Defense Structures","04-security-and-defense.md",3,4,"2026-05-18",5800,32,"production","security;defense;community-scale;Zone-5",""
-"Scaling Pathways & Governance Transitions","05-scaling-pathways-and-thresholds.md",3,5,"2026-05-18",6000,28,"production","scaling;governance;thresholds;Zone-5",""
+title,file,phase,wave,created,word_count,status,domains,advisory
+"Distributed Microgrids as Community Resilience Infrastructure","PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md",5,2,"2026-05-18",8304,"PRODUCTION-READY","energy;infrastructure;community-resilience",""
+"Community Implementation Playbook — Tier 3 Coordination Framework","phase-5-wave-2-community-implementation-playbook.md",5,2,"2026-05-18",8619,"PRODUCTION-READY","governance;coordination;community-scale",""
+"Conflict Resolution and Governance Framework","phase-5-wave-2-conflict-resolution-framework.md",5,2,"2026-05-18",8596,"PRODUCTION-READY","conflict-resolution;governance;facilitation",""
+"Psychological Support and Trauma Recovery","phase-5-wave-2-psychological-support-guide.md",5,2,"2026-05-18",9163,"PRODUCTION-READY","psychological-support;trauma;PFA","Clinical protocols reference SAMHSA Field Guide — local adaptation advised"
+"Veterinary Care in Crisis Contexts","phase-5-wave-2-veterinary-care-guide.md",5,2,"2026-05-18",10698,"PRODUCTION-READY","veterinary;livestock;crisis-medicine","Triage protocols for farm animals — professional veterinary adaptation advised"
+"Integrated Corpus — Phase 5 Wave 1+2","PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md",5,"1+2","2026-06-01",45380,"PRODUCTION-READY","all-domains","Unified publication asset"
 ```
 
-- [ ] Metadata sidecar created and committed (or staged for upload alongside domain files)
-- [ ] UUID column populated (generate with `uuidgen` or leave blank — UUIDs are optional for v1 publication but required for DOI registration later)
-- [ ] DOI registration: not required for v1 publication; add to Phase 7 backlog if institutional distribution is a goal
+- [ ] Metadata sidecar created (or confirmed from prior session)
+- [ ] CSV opens correctly in a spreadsheet application (no encoding errors)
 
-### 3.3 Social Media / Announcement Assets
+### 3.3 Announcement Assets
 
-Minimal set required for June 5 announcement:
+Minimal set required for June 9 publication announcement:
 
-**Email announcement** (see `WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md` for full template): A 250-word email to the founding coalition list announcing publication and linking to the platform. This template is pre-filled and ready to send.
+**Item 1 — Founding coalition announcement email**: Template is in `WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md`, Part 1, coalition announcement template. Fill in the platform URL (generated during June 6-8 deployment) before sending.
 
-**Platform link**: The URL of the published corpus on the chosen platform. This is generated during deployment (Section 4). Leave blank until deployment complete, then populate.
+**Item 2 — Platform URL**: Generated when the chosen platform is deployed (June 6-8). This must be confirmed before June 9 morning. Leave a placeholder here and fill in before the go/no-go call:
 
-**Short description per domain** (for social posts or announcement body):
+```
+Platform URL (fill in after June 6-8 deployment):
+  Nextcloud: https://100.70.184.84/nextcloud/s/[share-link-id]
+  Discourse: https://[discourse-domain]/c/phase-5-published/
+```
 
-| Domain | One-sentence description |
-|--------|--------------------------|
-| Governance | How communities of 100–1,000 people make binding decisions and resolve disputes without external institutional support. |
-| Food Systems | Supply chain mapping, food preservation protocols, and seasonal production coordination at community scale in Zone 5. |
-| Information Infrastructure | Resilient communication architectures — mesh radio, offline-first data, and community broadcast — for low-connectivity environments. |
-| Security & Defense | Mutual defense frameworks, threat assessment, and non-escalation protocols for Zone 5 communities. |
-| Scaling Pathways | The governance and infrastructure transitions required when a community grows from 50 to 500+ people. |
+**Item 3 — One-sentence descriptions for social posts / announcement body**:
 
-- [ ] Email announcement draft reviewed and ready to send (template in WAVE_2_AUTHOR_ONBOARDING_KIT)
-- [ ] Platform URL confirmed (fill in after deployment)
-- [ ] Social post copy drafted (50–100 words per post; use domain descriptions above as base)
+| Document | One-sentence description |
+|----------|--------------------------|
+| Microgrids | How communities of 100–1,000 people can deploy and govern distributed energy infrastructure that continues functioning when the grid fails. |
+| Community Implementation Playbook | A step-by-step coordination framework for building Tier 3 community resilience structures, from initial assessment to full operational capacity. |
+| Conflict Resolution | Decision-making, mediation, and dispute resolution protocols for communities managing shared resources under stress. |
+| Psychological Support | Community-level Psychological First Aid frameworks and trauma recovery protocols for sustained crisis contexts. |
+| Veterinary Care | Triage protocols, preventive care frameworks, and community-scale livestock and small-animal care for contexts without veterinary access. |
+
+- [ ] Announcement email drafted and ready to send (platform URL is the only remaining blank)
+- [ ] One-sentence descriptions confirmed usable for announcement
+- [ ] All announcement assets saved to a staging location accessible on June 9 morning
 
 ---
 
-## Section 4: Platform-Neutral Quality Gates
+## SECTION 4: Content Quality Gates
 
-### 4.1 Spell Check and Grammar
+### 4.1 Spell Check
 
-All five domains were produced in the same research session (May 18, 2026) using the same writing conventions. The integrated corpus editorial review (June 1) confirmed zero blocking grammar errors. The Phase 3 domain files were not part of that editorial review — a targeted check is warranted.
-
-**Quick spell check** (aspell or equivalent):
+The June 1 editorial review confirmed zero blocking grammar or spelling errors. This is a light re-check pass to catch anything introduced in subsequent edits.
 
 ```bash
-for f in projects/systems-resilience/phase-3/0*.md; do
-  echo "=== $f ===" && aspell list < "$f" | sort -u | head -30
+# Run aspell against each source document (pipe through tr to handle markdown)
+for f in \
+  "projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md" \
+  "projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md" \
+  "projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md" \
+  "projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md" \
+  "projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md"; do
+  echo "=== $(basename $f) ==="
+  aspell list --mode=markdown < "$f" | sort -u | head -40
 done
 ```
 
-Review the output for genuine misspellings (not proper nouns, technical terms, or Zone 5-specific vocabulary). Expect 0–5 genuine errors per file.
+Review the output for genuine misspellings (not proper nouns, technical terms, or Zone 5-specific vocabulary). Expect 0–8 genuine errors per document. Common false positives: "LoRa", "WeasyPrint", "Mjolnir", "PFA", "RVT", "DVM", "SAMHSA", "Meshtastic".
 
-- [ ] Spell check run on all 5 files
-- [ ] 0–5 errors per file: fix inline (15 minutes total); proceed
-- [ ] 6+ errors in any single file: review output for systematic issues (e.g., specific terminology consistently misspelled); fix before publication
+- [ ] Spell check run on all 5 source documents
+- [ ] 0–8 genuine errors per document: fix inline (15 minutes total); proceed
+- [ ] 9+ genuine errors in any single file: review output carefully; fix systematic issues before publication
 
-### 4.2 Citation Link Validation
+### 4.2 Citation URL Validation
 
-**Sample method**: Validate 20% of citation URLs (approximately 6–7 per domain, 30–35 total across all five). This takes approximately 30 minutes.
+A 20% sample of citation URLs validated on June 5. This takes approximately 30–40 minutes.
 
-**Procedure**:
+**Method**:
+```bash
+# Extract all URLs from each document
+for f in \
+  "projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md" \
+  "projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md" \
+  "projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md" \
+  "projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md" \
+  "projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md"; do
+  echo "=== $(basename $f) ==="
+  grep -oP 'https?://[^\s)"]+' "$f" | sort -u
+done
+```
 
-1. Extract all URLs from each domain file: `grep -oP 'https?://[^\s)]+' projects/systems-resilience/phase-3/01-governance-decision-making.md`
-2. Pick every 5th URL from each list
-3. Open each in a browser and confirm: HTTP 200 (or 301/302 redirect to valid page), not a paywall-only page (abstract accessible), page title matches citation context
+From each document's URL list, test every 5th URL (20% sample): open in a browser, confirm HTTP 200 or valid redirect, page title matches citation context, content is not paywalled.
 
-**Prior result**: `PHASE_5_SOURCE_URL_VERIFICATION.md` (June 1) tested 10% of integrated corpus URLs with 90% working rate. Phase 3 domains use sources from the same research session. Expected rate: 88–92% working on a 20% sample.
+**Prior context**: `PHASE_5_SOURCE_URL_VERIFICATION.md` (June 1) tested 10% of integrated corpus URLs with 90% working rate. The five Wave 1+2 source documents use the same citation pool. Expected rate on 20% sample: 87–93% working.
 
-**Acceptable thresholds**:
-- 90%+ working: GO — proceed to publication
-- 80–89% working: HOLD — investigate failed URLs; if all failures are the same domain (e.g., one news site with paywall), document and proceed
-- Below 80%: DEFER — systematic citation quality issue; run full verification before publishing
+**Thresholds**:
 
-- [ ] 20% URL sample extracted and tested
-- [ ] Working rate: ___% (fill in)
-- [ ] Failed URLs documented with domain and section
+| Working Rate | Decision |
+|-------------|----------|
+| 90%+ | GO — proceed without action |
+| 80–89% | HOLD — investigate failed URLs; if all failures share a single domain (e.g., one news site with paywall changes), document and proceed |
+| Below 80% | DEFER — systematic citation quality issue; run full verification before publishing |
 
-### 4.3 Accessibility Check
+- [ ] 20% URL sample tested per document
+- [ ] Working rate documented per document: Microgrids ___%, Playbook ___%, Conflict ___%, Psych Support ___%, Vet Care ____%
+- [ ] Any failed URLs documented with document name and section
 
-**Alt text**: Already confirmed no images in the five domain files (Section 2.2). If any images are present, alt text must be non-empty.
+### 4.3 Heading Hierarchy and Accessibility
 
-**Heading hierarchy**: Each domain must have a clear H1 (document title), H2 (major sections), and H3 (subsections) structure with no skipped levels (e.g., no H4 appearing under an H2 without an H3 in between).
+All five documents follow a consistent GFM heading structure. Verify no heading level is skipped (e.g., no H4 under an H2 without an intervening H3).
 
-- [ ] Confirm no skipped heading levels in any file (visual scan of rendered preview is sufficient)
+```bash
+# Extract heading structure from each document
+for f in \
+  "projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md" \
+  "projects/systems-resilience/phase-5-wave-2-community-implementation-playbook.md" \
+  "projects/systems-resilience/phase-5-wave-2-conflict-resolution-framework.md" \
+  "projects/systems-resilience/phase-5-wave-2-psychological-support-guide.md" \
+  "projects/systems-resilience/phase-5-wave-2-veterinary-care-guide.md"; do
+  echo "=== $(basename $f) heading structure ==="
+  grep -n "^#" "$f" | head -30
+done
+```
 
-**Color contrast**: Not applicable to Markdown source files. Platform-rendered versions use the platform's default color scheme. Both Nextcloud and Discourse use WCAG AA-compliant default themes out of the box (confirmed in PHASE_5_FORMATTING_VALIDATION.md).
+Visual scan: confirm H1 exists (document title), H2 sections follow, H3 subsections under H2s, no H4 without H3 parent.
 
-**Screen reader**: The most important accessibility factor for text-heavy research documents is logical heading order and meaningful link text (not "click here"). These were validated in the June 1 formatting review.
+Also check for link text quality (no bare "click here"):
+```bash
+grep -n "click here\|read more\|learn more\|here\](" \
+  projects/systems-resilience/phase-5-wave-2-*.md \
+  projects/systems-resilience/phase-5/wave-2/PHASE_5_WAVE_2_MICROGRIDS_RESEARCH_OUTLINE.md
+```
 
-- [ ] Link text check: confirm no bare "click here" or "read more" link text in any domain (these should be descriptive: "NREL microgrid design guide" not "click here")
+- [ ] Heading hierarchy confirmed clean in all 5 documents (no skipped levels)
+- [ ] No "click here" or empty link text found — OR — any found instances updated to descriptive text
 
 ---
 
-## Section 5: Go / No-Go Decision Framework
+## SECTION 5: Go / No-Go Decision Framework
 
-### Decision Criteria
+### Decision Grid (Complete by June 8 18:00 UTC)
 
-Complete Sections 1–4 before calling Go/No-Go. Use the grid below.
+Work through Sections 1–4 before calling the Go/No-Go. Then apply the grid:
 
 | Condition | Decision | Action |
 |-----------|----------|--------|
-| All 5 domains present, all quality gates PASS, all assets ready | **GO** | Proceed to publication in afternoon window (June 5, 13:00–18:00 UTC) |
-| 1–2 domains need minor edits (broken cross-links, small typos, frontmatter gaps) — total fix time under 2 hours | **HOLD** | Fix by June 5 noon; publish June 5 afternoon or June 6 morning |
-| 1–2 assets missing (PDF not generated, metadata sidecar incomplete) — fix under 1 hour | **HOLD** | Finish assets before publication window; do not delay publication |
-| 3+ domains need revisions OR citation link rate below 80% | **DEFER** | Push publication to June 8 (gives 3 days for targeted fixes); notify Wave 2 recruitment timeline shifts by 3 days |
-| Platform deployment failed or incomplete | **DEFER** | Activate GitHub Pages fallback (documented in PHASE_5_GITHUB_PAGES_STAGING.md); publish to GitHub Pages today, migrate to chosen platform when deployment complete |
+| All sections PASS, all assets ready, platform deployed and accessible | **GO** | Proceed to June 9 publication (13:00–18:00 UTC) |
+| 1–2 minor items outstanding (frontmatter not yet standardized, one broken cross-link, PDFs not generated) — total fix time under 2 hours | **HOLD** | Fix by June 9 09:00 UTC; publish June 9 afternoon window unchanged |
+| Platform deployment incomplete as of June 8 EOD | **HOLD** | Activate GitHub Pages fallback immediately (`PHASE_5_GITHUB_PAGES_STAGING.md`); publish to GitHub Pages June 9; migrate to chosen platform when deployment completes (can be June 10–12 without disrupting Wave 2) |
+| 3+ documents need content revision OR citation link rate below 80% in any document | **DEFER** | Push publication to June 12 (3-day slip); Wave 2 sprint kickoff delayed to June 13 (one week slip tolerable per contingency C in timeline) |
+| Integrated corpus TOC anchors broken and cannot be fixed in under 1 hour | **HOLD** | Publish individual documents first; publish integrated corpus when TOC is repaired (up to June 11 acceptable) |
 
-### Decision Log
-
-Fill in after completing all sections:
+### Decision Log (Fill in June 8)
 
 ```
 Date / Time: ___________
 Checker: ___________
 
-Section 1 (Content Readiness): PASS / HOLD / FAIL — notes: ___________
-Section 2 (Technical Readiness): PASS / HOLD / FAIL — notes: ___________
-Section 3 (Asset Inventory): PASS / HOLD / FAIL — notes: ___________
-Section 4 (Quality Gates): PASS / HOLD / FAIL — notes: ___________
+Section 1 (Content Readiness):       PASS / HOLD / FAIL — notes: ___________
+Section 2 (Technical Readiness):     PASS / HOLD / FAIL — notes: ___________
+Section 3 (Asset Inventory):         PASS / HOLD / FAIL — notes: ___________
+Section 4 (Quality Gates):           PASS / HOLD / FAIL — notes: ___________
+
+Platform deployment status:          DEPLOYED / PARTIAL / NOT STARTED
 
 Overall Decision: GO / HOLD / DEFER
 
@@ -319,29 +492,111 @@ If HOLD: Items to fix before publication:
   1. ___________
   2. ___________
   Estimated fix time: ___________
-  Revised publication window: ___________
+  Revised publication window: June 9 ___:___ UTC (or June 12 if slip required)
 
 If DEFER: Reason: ___________
   New publication date: ___________
-  Wave 2 recruitment adjustment: ___________
+  Wave 2 recruitment adjustment (from timeline contingency C): ___________
 ```
 
 ### Confidence Assessment
 
-Based on prior editorial review (June 1) and formatting validation, the five domains are production-ready with high confidence. Expected outcome on June 5 checklist run: **GO** with minor HOLD items (frontmatter stripping, PDF generation) that add 45–60 minutes before publication but do not block it.
+Based on the June 1 verification (zero placeholder markers, all five documents cleared), the primary publication risks are operational: frontmatter standardization, platform deployment, and asset generation. All three are within normal operational execution range.
 
-**Confidence**: 92% that all five domains publish on June 5 with no DEFER condition triggered.
+**Confidence**: 92% that all five documents publish June 9 with no DEFER condition triggered. 99% confidence that at least three documents publish June 9 (with any delay applying only to the integrated corpus or advisory-flagged documents).
 
 ---
 
-## Section 6: Post-Publication Verification (Run June 5, Evening)
+## SECTION 6: Publication Day Procedures (June 9)
 
-After content is live on the chosen platform, verify these within 4 hours of publication:
+### Morning Block — Final Checks (09:00–11:00 UTC, 2 hours)
 
-- [ ] All 5 domain pages load correctly in a browser (not logged in — anonymous access confirmed)
-- [ ] Platform search returns results for "governance", "food systems", and "scaling" (basic smoke test)
-- [ ] Tables render correctly in at least 2 of the 5 domains (table rendering is the most common failure point in Markdown-to-platform migration)
-- [ ] Announcement email successfully sent (check sent folder, confirm no bounce-back within 1 hour)
-- [ ] At least 1 team member has confirmed they can access the platform and see the content
+1. Re-run document presence verification (5 minutes — confirm no accidental file deletions)
+2. Confirm frontmatter-stripped copies in `/tmp/phase5-pub/` are present and current (5 minutes)
+3. Confirm PDFs generated and accessible (5 minutes — check file sizes are reasonable)
+4. Confirm platform is accessible and deployment is complete (10 minutes — log in, navigate to publication location)
+5. Confirm announcement assets are staged and platform URL is filled in (5 minutes)
+6. Confirm Git repository is clean (no uncommitted changes to corpus files): `git status projects/systems-resilience/phase-5*.md` (2 minutes)
 
-If any of the above fail: do not trigger Wave 2 author invitations until the access issue is resolved. Wave 2 onboarding materials reference the platform URL — authors need to be able to reach it on day one.
+**Total morning check**: approximately 30 minutes. If anything fails, you have 2 hours to fix before the publication window opens.
+
+### Publication Window (13:00–17:00 UTC, 4 hours)
+
+**[NEXTCLOUD+MATRIX ONLY] — Publication steps in order:**
+
+1. Navigate to Nextcloud as admin → `Phase5-Wave1-Published` folder
+2. Upload all five frontmatter-stripped markdown files from `/tmp/phase5-pub/` (drag and drop or WebDAV)
+3. Upload the integrated corpus (`PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md`) in stripped form
+4. Set folder sharing: "Share with link" → read-only → enable "Download" → copy the share URL
+5. Optional: create a `README.md` in the published folder with document list and one-sentence descriptions
+6. Pin the folder share link in Matrix room `#phase5-discussion:resilience-hub` with the message: "Phase 5 Wave 1+2 published. Five research documents + integrated corpus available at [LINK]. Five topics: microgrids, community implementation, conflict resolution, psychological support, veterinary care."
+7. Send the founding coalition announcement email (template from WAVE_2_AUTHOR_ONBOARDING_KIT) with the now-filled platform URL
+8. Note publication timestamp
+
+**[DISCOURSE ONLY] — Publication steps in order:**
+
+1. Log in to Discourse as admin → navigate to "Phase 5 Wave 1 — Published Research" category
+2. Create topics in reverse order (so governance appears first in category view):
+   - Create "Veterinary Care in Crisis Contexts" — paste stripped content → Submit
+   - Create "Psychological Support and Trauma Recovery" — paste stripped content → Submit
+   - Create "Conflict Resolution and Governance Framework" — paste stripped content → Submit
+   - Create "Community Implementation Playbook — Tier 3 Coordination Framework" — paste stripped content → Submit
+   - Create "Distributed Microgrids as Community Resilience Infrastructure" — paste stripped content → Submit
+3. Create announcement topic: "Phase 5 Wave 1+2 Published — Five Community-Scale Resilience Documents" — brief description + links to all five topics → Pin as category announcement
+4. Log out of Discourse. In an anonymous browser tab, navigate to the category and confirm all five topics are visible and readable
+5. Send the founding coalition announcement email with Discourse category URL
+6. Note publication timestamp
+
+### Monitoring Checkpoints (17:00–22:00 UTC)
+
+Run these post-publication checks within 4–5 hours of going live:
+
+**T+1 hour (approximately 14:00 or 17:00 UTC depending on publication start):**
+- [ ] All 5 documents accessible in anonymous browser session (not just admin-view)
+- [ ] Platform search returns results for "governance", "microgrids", and "veterinary"
+- [ ] No error messages on any document page (rendering failures, 404s on images)
+- [ ] Announcement email confirmed sent (check outbox, no bounce-back)
+
+**T+4 hours (approximately 21:00 UTC):**
+- [ ] Check for any access control failures (user reports unable to access, or unexpected anonymous access to restricted content)
+- [ ] Confirm at least one other person (from the founding coalition list or a Wave 2 author candidate) has accessed the content (check access logs or first replies/acknowledgments)
+- [ ] Log publication completion with timestamp in WORKLOG.md
+
+**Critical hold condition**: If anonymous access test fails (content is not visible to non-logged-in users when it should be), do not send the announcement email until access is restored. Send to Wave 2 author candidates first (they will have accounts regardless).
+
+### 24-Hour Post-Launch Review (June 10 09:00–11:00 UTC)
+
+Run this review June 10 morning, approximately 24 hours after publication:
+
+- [ ] Access audit: all five documents still accessible; no accidental permission change overnight
+- [ ] Content integrity: spot-check one table and one numbered list in two documents; confirm they still render correctly
+- [ ] Announcement delivery: count how many announcement emails bounced (check bounce log in email provider); note delivery rate
+- [ ] Engagement baseline: note initial views, downloads, or replies per document (this is the T+1 day baseline for the June 15 engagement assessment)
+- [ ] Wave 2 status: confirm Wave 2 author invitations sent June 5-6 are receiving responses (see timeline document for June 10 sprint kickoff)
+- [ ] Any issues logged: document any unexpected behavior observed in the first 24 hours in a short note appended to this checklist
+
+**Decision from 24-hour review**:
+- If platform functioning normally and content accessible: mark publication complete, proceed with Wave 2 sprint as scheduled
+- If access issue discovered: fix immediately; if fix requires more than 2 hours, send temporary GitHub Pages link to Wave 2 authors so their sprint is not blocked
+- If critical content error discovered (factual error in clinical guidance, broken table structure throughout a document): issue an erratum note in the platform (Nextcloud: a `ERRATUM.md` file in the folder; Discourse: a reply to the affected topic) and schedule a patch publication within 48 hours
+
+---
+
+## Summary: Total Time Budget for This Checklist
+
+| Activity | When | Estimated Time |
+|----------|------|----------------|
+| June 5 morning verification pass (Sections 1–4) | June 5, 06:00–10:00 UTC | 90 minutes |
+| Frontmatter standardization (if not already done) | June 5 | 10 minutes |
+| Asset generation (frontmatter stripping, PDFs, metadata sidecar) | June 5–7 | 60–90 minutes |
+| June 8 go/no-go confirmation (re-run critical checks) | June 8, 16:00–18:00 UTC | 30 minutes |
+| Publication day morning pre-check | June 9, 09:00–11:00 UTC | 30 minutes |
+| Publication window (upload + announcement) | June 9, 13:00–17:00 UTC | 4 hours |
+| Post-publication monitoring checkpoints | June 9, 17:00–22:00 UTC | 60 minutes |
+| 24-hour post-launch review | June 10, 09:00–11:00 UTC | 60 minutes |
+| **Total orchestrator hours for publication** | | **~9–10 hours across June 5–10** |
+
+---
+
+*Version 2.0 — supersedes WAVE_1_PUBLICATION_READINESS_CHECKLIST.md (June 1 version)*
+*Created June 4, 2026 | Publication target June 9, 2026 13:00 UTC*

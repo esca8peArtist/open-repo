@@ -3,9 +3,10 @@ title: "Wave 2 Author Onboarding Kit — Dual Platform Edition"
 project: systems-resilience
 phase: 5
 wave: 2
-purpose: "All communication templates, author selection criteria, credential verification process, and onboarding timeline needed to recruit and onboard Wave 2 authors. Works identically for Nextcloud+Matrix (Option B) and Discourse (Option A). Platform-specific guidance is clearly marked."
+purpose: "All communication templates, author selection criteria, credential verification process, platform-specific setup guides, access provisioning checklists, and onboarding timeline needed to recruit and onboard Wave 2 authors. Works identically for Nextcloud+Matrix (Option A) and Discourse (Option B). Platform-specific guidance is clearly marked."
 status: READY-FOR-USE — activate June 5–6 after publication GO decision confirmed
 created: 2026-06-04
+version: 2.0
 platform_variants: "VARIANT A = Nextcloud+Matrix | VARIANT B = Discourse"
 cross_references:
   - JUNE_5_15_PHASE_5_PUBLICATION_AND_WAVE_2_RECRUITMENT_TIMELINE.md
@@ -16,9 +17,22 @@ cross_references:
 ---
 
 # Wave 2 Author Onboarding Kit — Dual Platform Edition
-## Systems Resilience Phase 5 | June 5–10, 2026
+## Systems Resilience Phase 5 | June 10 – July 10, 2026
 
-**Platform branching**: 95% of this document applies identically to both platform options. Sections that differ between platforms are clearly marked **[VARIANT A: Nextcloud+Matrix]** and **[VARIANT B: Discourse]**. The remaining 5% divergence covers only: how authors access collaborative documents, how they communicate asynchronously, and how they post progress updates.
+---
+
+## Executive Summary
+
+**Three key points:**
+1. Wave 2 recruits 4–6 authors across 5 domains (food preservation, water systems, livestock management, seed saving, equipment repair). All onboarding materials and communication templates are fully prepared. The only platform-specific variation is how authors access collaborative documents and communicate asynchronously — the conceptual onboarding experience is identical on both platforms.
+2. Recruitment launches June 5–6 (same day as publication). Authors are confirmed by June 8, onboarded June 8–9, and sprint begins June 10. The timeline is tight by design: Wave 2 publication targets June 20 for the first documents, July 10 for the full cohort.
+3. This document contains everything needed to onboard an author on either platform: invitation templates, briefing document, first-draft checkpoint protocol, platform-specific setup guides, access provisioning checklists, first-sync and first-publish safety checklists, and contingency handling.
+
+**Timeline:** June 5–6 invitations → June 7–8 screening and confirmations → June 8–9 platform onboarding → June 10 sprint kickoff → June 15 onboarding complete → June 20 first Wave 2 publication
+
+**Owner:** Orchestrator (project lead)
+
+**Success criteria:** All confirmed Wave 2 authors have platform access, have received their domain scope documents, and have acknowledged the first-draft checkpoint protocol by June 15. Zero authors are blocked from starting work on June 10 due to missing credentials or unclear scope.
 
 ---
 
@@ -26,10 +40,9 @@ cross_references:
 
 ### Template 1 — Wave 2 Invitation Email
 
-**Send to**: Top 15 author candidates (see Part 3 — Author Selection Criteria)
-**Send date**: June 5–6, 2026
-**Length**: ~100 words
-**Subject line**: `Invitation: Systems Resilience Phase 5 Wave 2 — Research Contributor`
+**Send to:** Top 15 author candidates (3 per domain — see Part 3 for selection criteria)
+**Send date:** June 5–6, 2026
+**Subject:** `Invitation: Systems Resilience Phase 5 Wave 2 — Research Contributor`
 
 ---
 
@@ -43,6 +56,8 @@ Wave 2 focuses on [DOMAIN AREA: food preservation / water systems / livestock ma
 
 The commitment is 4–6 hours per week from June 10 to July 10, producing one 4,000–6,000 word research document with your byline. Compensation: [RATE — see Part 3 for ranges].
 
+Wave 1 of the project (five community-scale documents, approximately 45,000 words) is published at [PLATFORM URL] if you want to see the work this builds on.
+
 Would you be open to a brief 20-minute call this week?
 
 [YOUR NAME]
@@ -50,20 +65,20 @@ Systems Resilience Project
 
 ---
 
-**Personalization notes**:
+**Personalization guidance:**
 - Replace `[DOMAIN AREA]` with the specific domain you are recruiting this author for (one domain per author)
-- Replace `[SPECIFIC EXPERTISE]` with 1–2 words from the author's background that connect to the domain (e.g., "extension service background", "food systems research", "small-animal veterinary practice")
-- Replace `[RATE]` with the specific hourly rate or flat fee for the assignment (see Part 3 for ranges)
+- Replace `[SPECIFIC EXPERTISE]` with 1–2 words drawn from the candidate's actual background (e.g., "extension service background", "food systems research", "small-animal veterinary practice")
+- Replace `[RATE]` with the specific hourly rate or flat fee for the assignment
+- Replace `[PLATFORM URL]` with the link generated during June 6-8 deployment
 - Do not attach the briefing document at this stage — send it only after the candidate expresses interest
 
 ---
 
 ### Template 2 — Author Briefing Document
 
-**Send to**: Candidates who respond affirmatively to the invitation email
-**Send date**: June 7–8, after acceptances confirmed
-**Length**: ~1,500 words (this section)
-**Format**: Send as a PDF attachment or paste inline depending on platform orientation preference
+**Send to:** Candidates who respond affirmatively to the invitation email
+**Send date:** June 7–8, after acceptances confirmed
+**Format:** Send as a PDF attachment or paste inline; include the platform-specific orientation section (Template 4) as an attachment alongside this document
 
 ---
 
@@ -74,171 +89,241 @@ Systems Resilience Project
 
 The Systems Resilience Project documents the knowledge, governance structures, and infrastructure needed for Midwest Zone 5 communities to function autonomously during prolonged disruptions — grid failure, supply chain collapse, or extended institutional breakdown. The research is practitioner-oriented: it is designed to be read and used by community organizers, households, and local governance bodies, not by academic specialists.
 
-Phase 5 focuses on community-scale resilience (100–1,000 people). It bridges the household-level frameworks in Phases 1–2 and the macro-scale governance analysis in Phases 3–4.
+Phase 5 focuses on community-scale resilience (100–1,000 people). It bridges the household-level frameworks from Phases 1–2 and the macro-scale governance analysis in Phases 3–4.
 
 **Wave 1 Summary: What Was Documented**
 
-Wave 1 (completed May 2026) produced five community-scale domains, totalling approximately 29,000 words across governance, food systems, information infrastructure, security and defense, and scaling pathways. These documents are now published on [PLATFORM URL] and form the anchor corpus that Wave 2 builds on.
+Wave 1+2 (completed May–June 2026) produced five community-scale documents totaling approximately 45,000 words across five topics: distributed microgrids, community implementation playbooks, conflict resolution frameworks, psychological support protocols, and veterinary care in crisis contexts. These are now published on [PLATFORM URL].
 
-Key findings from Wave 1:
-- Community governance structures that function without external institutional support require explicit decision-tiers, not informal consensus. Informal consensus collapses under resource scarcity because there is no mechanism for binding decisions on contested allocations.
-- Food systems resilience at community scale requires redundant supply pathways (local production + preserved stores + regional mutual aid) — any single-pathway strategy fails within 90 days of disruption.
-- Information infrastructure that survives grid failure must be designed for offline-first operation from day one; retrofitting an internet-dependent communication system for offline resilience is much harder than building offline-first from the start.
-- Scaling from 50 to 500+ people is not a linear process — it requires discrete governance transitions at approximately the 50, 150, and 500-person thresholds. Each transition requires deliberate redesign of decision-making structures.
+Key findings from Wave 1+2 that your Wave 2 work should engage with:
+- Community governance structures that function without external institutional support require explicit decision-tiers. Informal consensus collapses under resource scarcity because there is no mechanism for binding decisions on contested allocations.
+- Supply chain resilience at community scale requires redundant pathways (local production + preserved stores + regional mutual aid). Any single-pathway strategy fails within 90 days of disruption.
+- Scaling from 50 to 500+ people requires discrete governance transitions at approximately the 50, 150, and 500-person thresholds — not linear scaling.
+- Psychological and veterinary care in crisis contexts require community-level protocols that do not depend on credentialed professionals for every decision point.
 
 **Wave 2 Scope: What You Will Document**
 
-Wave 2 (June 10 – July 10, 2026) fills four to six operational gaps identified in the Wave 1 research:
+Wave 2 (June 10 – July 10, 2026) fills operational gaps identified in the Wave 1+2 research. The five Wave 2 domains are:
 
-1. Food Preservation & Storage Architecture (root cellaring, fermentation, canning, community-scale seasonal planning, botulism risk mitigation)
-2. Water Systems Management (well and spring maintenance, community water supply, greywater, winterization, contamination detection)
-3. Livestock Management & Pasture Coordination (community pasture rotation, herd management, breed selection, shared infrastructure)
-4. Seed Saving & Plant Propagation (community seed library governance, storage standards, isolation requirements, bulb and tuber propagation)
-5. Equipment Repair & Maintenance Coordination (tool libraries, small-motor repair, preventive maintenance, spare parts stockpiling)
+1. **Food Preservation & Storage Architecture** — root cellaring, fermentation, canning, community-scale seasonal planning, botulism risk mitigation, safe storage protocols for bulk stores
+2. **Water Systems Management** — well and spring maintenance, community water supply, greywater management, winterization, contamination detection, shared infrastructure governance
+3. **Livestock Management & Pasture Coordination** — community pasture rotation, herd management, breed selection for resilience contexts, shared infrastructure governance, inter-household coordination
+4. **Seed Saving & Plant Propagation** — community seed library governance, seed storage standards, isolation requirements, open-pollinated variety selection, bulb and tuber propagation
+5. **Equipment Repair & Maintenance Coordination** — tool libraries, small-engine repair, preventive maintenance, spare parts stockpiling, knowledge documentation protocols
 
-Your specific assignment is **[DOMAIN NAME]**. A full scope document, source roadmap, and annotated bibliography for your domain will be sent to you on June 10 (Day 1 of your sprint).
+Your specific assignment is **[DOMAIN NAME]**. A full scope document, research outline, and annotated bibliography (25–40 pre-vetted sources) will be sent to you on June 10.
 
-**Success Criteria**
+**Success Criteria for Your Document**
 
 A successful Wave 2 document:
 - Is 4,000–6,000 words (not counting frontmatter or references section)
 - Has 25–40 citations, all verified working as of submission date
-- Is written for a lay practitioner audience — assume the reader has Zone 5 farming background but no formal academic training in the subject
+- Is written for a lay practitioner audience — assume Zone 5 farming background but no formal academic training
 - Includes at least one "decision guide" or "how-to" section with numbered or bulleted steps that a practitioner can follow directly
-- Has been reviewed by at least one peer Wave 2 contributor (or by the project lead if no peer reviewer is available)
-- Passes the publication readiness checklist (grammar, formatting, citation verification) before submission
+- Has been reviewed by at least one peer Wave 2 contributor before submission
+- Passes the publication readiness checklist (grammar, formatting, citation verification) before final submission
 
 **Publication Timeline**
 
-- June 10: Domain assignment and sprint kickoff (you receive scope document, source roadmap, annotated bibliography)
-- June 17: First-draft checkpoint (submit 50% draft — section outlines complete, narrative started, citations roughed in)
-- June 24: Peer review deadline (submit completed draft for peer review; receive peer reviewer's draft in return)
-- July 1: Revisions complete and submitted for final editorial review
-- July 10: Document production-ready and cleared for publication
-- July 15: Publication on platform alongside rest of Wave 2 corpus
+| Date | Milestone |
+|------|-----------|
+| June 10 | T+0: Domain assignment, sprint begins |
+| June 17 | T+7: First-draft checkpoint (50% draft due) |
+| June 24 | T+14: Full draft due for peer review |
+| June 24–27 | Peer review window (receive and give review) |
+| July 1 | T+21: Revisions complete |
+| July 5 | T+25: Project lead final review |
+| July 10 | T+30: Production-ready |
+| July 15 | Publication on platform |
 
 **What You Will Receive**
 
 - Domain scope document, research outline, and annotated bibliography (June 10)
-- Access to the project's source library (75+ pre-vetted sources, annotated) via shared folder or Discourse private message
+- Access to the project's source library (75+ pre-vetted sources, annotated) via the shared content platform
 - Peer review pairing with another Wave 2 contributor
-- Direct async communication channel with the project lead for questions (response within 24 hours)
-- Byline on the published document ("Contributing Researcher: [Your Name]") with your preferred short bio
+- Direct async communication with the project lead — response within 24 hours
+- Byline on the published document ("Contributing Researcher: [Your Name]") with your preferred short bio (50–75 words)
 - Compensation: [RATE / FLAT FEE] paid [ON DELIVERY / WEEKLY / HALF-ON-DRAFT, HALF-ON-FINAL]
 
 **Platform Access**
 
-[VARIANT A: Nextcloud+Matrix]
-You will receive a Nextcloud login and Matrix room invitation on June 7. Nextcloud is where all documents are stored and collaboratively edited. Matrix is the async communication channel. Both can be used offline — if you are in a low-connectivity environment, Nextcloud FilesSync caches files locally and syncs when you reconnect.
-
-[VARIANT B: Discourse]
-You will receive a Discourse account invitation on June 7. Discourse is the project's coordination platform — documents are posted in a private "Wave 2 Working Drafts" category, peer review happens in reply threads, and project lead questions go to direct messages. Discourse requires a working internet connection for most functionality.
+You will receive platform credentials on June 7–8. See the enclosed Platform Orientation Guide for access instructions. Both platforms support the same workflow: receive scope, draft in a shared workspace, post draft for peer review, receive feedback, revise, submit for final review.
 
 **One Question to Answer Before June 10**
 
-Review Wave 1's governance document at [PLATFORM URL / path to 01-governance-decision-making.md]. Read the "Decision Tiers" section (Section 3). Your Wave 2 document will need to connect to this framework — identify one specific point where your domain (food preservation / water systems / etc.) depends on a functioning decision-tier structure, and bring that observation to the June 10 kickoff.
+Review Wave 1's published content at [PLATFORM URL]. Identify one specific point where your Wave 2 domain (food preservation / water systems / etc.) depends on a functioning governance or coordination structure that was described in Wave 1. Bring that observation to your June 10 kickoff message — it will help orient your writing to the project's accumulated framework.
 
 ---
 
 ### Template 3 — First-Draft Checkpoint Protocol
 
-**Send this document as part of the June 10 onboarding package (Domain Assignment Day).**
+**Send as part of the June 10 onboarding package (Domain Assignment Day).**
 
 ---
 
 **WAVE 2 FIRST-DRAFT CHECKPOINT PROTOCOL**
 
-**T+0 (June 10)**: Domain assignment received. You have the scope document, annotated bibliography, and platform access. Sprint begins.
+**T+0 (June 10):** Domain assignment received. You have the scope document, annotated bibliography, and platform access. Sprint begins.
 
-**T+3 (June 13)**: Optional 15-minute async check-in. Post a brief status note in your platform workspace:
-- "Section outline complete, starting narrative on Section 1" OR
+**T+3 (June 13):** Optional async status note in your platform workspace:
+- "Section outline complete, starting narrative on Section 1" — OR —
 - "Having trouble finding sources for [subtopic] — need help" (project lead responds within 24 hours)
 
-**T+7 (June 17)**: First-draft checkpoint. Submit your 50% draft by end of day. "50% draft" means:
+**T+7 (June 17):** First-draft checkpoint. Submit your 50% draft by end of day. "50% draft" means:
 - All section headings and subsection headings present (full outline complete)
-- Sections 1 and 2 have full narrative text (not notes, actual sentences)
-- Citations roughed in (even if not yet verified) — show where sources will go
-- A note on the one thing you are most uncertain about
+- Sections 1 and 2 have full narrative text (not notes — actual prose sentences)
+- Citations roughed in for cited sections (even if not yet verified — show where sources will go)
+- A brief note on the one thing you are most uncertain about
 
-The project lead reviews the 50% draft within 2 days and sends back: (a) confirmation that direction is correct, or (b) a 1-paragraph redirect note if the emphasis is off.
+The project lead reviews the 50% draft within 2 days and sends back: (a) confirmation that direction is correct, or (b) a 1-paragraph redirect note if emphasis is off.
 
-**T+14 (June 24)**: Full draft due. 4,000–6,000 words, citations verified. Submit to [PLATFORM WORKSPACE / Discourse private draft post].
+**T+14 (June 24):** Full draft due. 4,000–6,000 words, citations verified and working. Submit to your platform workspace.
 
-**T+14 to T+17**: Peer review window. You review your peer's draft; they review yours. Feedback is: (a) one thing that is genuinely strong, (b) one structural problem if present, (c) one citation or fact that needs verification.
+**T+14 to T+17 (June 24–27):** Peer review window. You review your peer's draft; they review yours. Structured feedback: (a) one thing that is genuinely strong, (b) one structural problem if present, (c) one citation or fact that needs verification.
 
-**T+21 (July 1)**: Revisions due. Address peer review feedback; final citation verification; grammar pass.
+**T+21 (July 1):** Revisions due. Address peer review feedback; final citation verification; grammar pass.
 
-**T+24 (July 5)**: Project lead final review and copy edit.
+**T+25 (July 5):** Project lead final review and copy edit.
 
-**T+30 (July 10)**: Production-ready. Document cleared for publication.
+**T+30 (July 10):** Production-ready. Document cleared for publication.
 
-**Escalation**: If you fall more than 3 days behind schedule at any checkpoint, notify the project lead immediately via direct message. The escalation protocol is: project lead reviews scope and either (a) adjusts scope to match available time, or (b) recruits a second contributor to help complete the section. We do not let documents go dark — early notice allows recovery; late notice does not.
+**Escalation protocol:** If you fall more than 3 days behind schedule at any checkpoint, notify the project lead immediately via direct message. Early notice allows scope adjustment or partial reassignment. Late notice (silence for 5+ days) blocks the peer review chain and may require scope reduction. The escalation script is firm but non-adversarial — there is no penalty for honest early notice.
 
 ---
 
 ### Template 4 — Platform Orientation Guide
 
-This guide has two variants. Send the correct variant based on the platform decision made June 3.
+**Send the correct variant based on the platform decision confirmed June 3. Send alongside Template 2 (Briefing Document) as a separate attachment.**
 
 ---
 
-#### [VARIANT A: Nextcloud+Matrix] — Platform Orientation
+#### [VARIANT A: NEXTCLOUD+MATRIX ONLY] — Platform Orientation
 
 **Welcome to Wave 2 on Nextcloud + Matrix**
 
-You have been sent a Nextcloud account invitation at [EMAIL]. Please accept it before June 10.
+You have been sent a Nextcloud account invitation at [EMAIL]. Please accept it before June 10. Your Matrix room invitation will be sent separately within 24 hours of accepting the Nextcloud invitation.
 
-**Nextcloud (Documents & Files)**
+**Nextcloud — Documents and Files**
 
 Nextcloud is where all Wave 2 documents live. Your workspace is a shared folder called `Phase5-Wave2-[YourDomain]`. This folder contains:
-- `00-SCOPE.md` — your domain assignment and outline
-- `00-SOURCES.md` — annotated bibliography (75+ sources)
-- `DRAFT-[domain-name].md` — your working draft (edit this directly in the browser or via the Nextcloud desktop sync client)
-- `PEER-REVIEW.md` — peer review notes (filled in by your peer reviewer)
+- `00-SCOPE.md` — your domain assignment and section outline
+- `00-SOURCES.md` — annotated bibliography (25–40 sources, green/amber/red quality rating)
+- `DRAFT-[domain-name].md` — your working draft (edit this directly or via desktop sync)
+- `PEER-REVIEW.md` — peer review notes (filled in by your peer reviewer; you fill in theirs)
 
-To edit documents: open Nextcloud in a browser, navigate to your folder, click the document, and edit in the built-in Nextcloud Text editor. If you prefer to work offline, install the Nextcloud desktop client (https://nextcloud.com/install/) — it syncs your folder to a local directory and uploads changes when you reconnect.
+**To edit documents:**
+1. Open Nextcloud in a browser → navigate to your folder → click the document file → it opens in Nextcloud Text (in-browser editor)
+2. To work offline: install the Nextcloud desktop sync client at nextcloud.com/install — it creates a local folder synced to your Nextcloud workspace; edit locally, sync when online
+3. All edits are auto-saved in Nextcloud Text; no manual save is required
 
-**Matrix (Async Communication)**
+**Matrix — Async Communication**
 
-You have been added to the Matrix room `#wave2-[your-domain]:resilience-hub`. Use this room for:
-- Quick questions to the project lead
+You have been added to the Matrix room `#wave2-[your-domain]:resilience-hub` and the general coordination room `#wave2-general:resilience-hub`.
+
+Use your domain room for:
+- Questions to the project lead (tag `@project-lead`)
 - Sharing draft status updates
-- Peer review coordination with your paired contributor
+- Coordinating with your peer reviewer
 
-Matrix client options: Element (web: https://app.element.io), Element X (mobile, supports offline caching), or any Matrix-compatible client. The room is bridged to your Nextcloud notification stream — you can stay in Nextcloud and still see Matrix messages if you enable the integration.
+Use `#wave2-general` for:
+- Announcements affecting all Wave 2 authors
+- Cross-domain questions
 
-**How to submit your 50% draft checkpoint**: Edit `DRAFT-[domain-name].md` in Nextcloud, then post a note in the Matrix room: "50% draft submitted — Section 1 and 2 complete. Main uncertainty: [topic]."
+Matrix client options: Element (web: app.element.io), Element X (mobile — recommended for offline capability), or any Matrix-compatible client.
 
-**How to request help**: Post in the Matrix room with `@project-lead` — response within 24 hours.
+**How to submit your 50% draft checkpoint:**
+1. Edit `DRAFT-[domain-name].md` in Nextcloud until Sections 1 and 2 are complete with full narrative text
+2. Post a status note in your Matrix domain room: "T+7 checkpoint: 50% draft ready in Nextcloud. Sections 1–2 complete. Main uncertainty: [topic]."
+3. The project lead will read the draft in Nextcloud and respond within 2 days
+
+**How to submit your full draft for peer review:**
+1. Edit `DRAFT-[domain-name].md` until complete (all sections, citations verified)
+2. In Nextcloud, share the folder with your peer reviewer (add them as "edit" contributor to your folder)
+3. Post in Matrix: "T+14 full draft ready. @[peer-reviewer-name] your folder is now shared — go ahead and add comments to PEER-REVIEW.md."
+
+**How to request help:**
+Post in your Matrix domain room with `@project-lead` — response within 24 hours. For urgent questions (blocking you from making progress), also send an email to [project lead email] directly.
 
 ---
 
-#### [VARIANT B: Discourse] — Platform Orientation
+#### [VARIANT B: DISCOURSE ONLY] — Platform Orientation
 
 **Welcome to Wave 2 on Discourse**
 
 You have been sent a Discourse account invitation at [EMAIL]. Please accept it before June 10.
 
-**Discourse (Documents, Discussion & Status)**
+**Discourse — Documents, Discussion, and Status**
 
 Discourse is the project's single coordination platform. Your Wave 2 workspace lives in the private category `Phase 5 Wave 2 — Working Drafts`. You will find:
-- A pinned topic: "Wave 2 Onboarding — Read First" (this document)
-- A pinned topic: "[Your Domain] — Scope and Bibliography" (your domain assignment)
-- A working topic: "[Your Domain] — Draft Thread" (this is where you post draft content and receive peer review)
+- A pinned topic: "Wave 2 Onboarding — Read First" (this document, plus setup instructions)
+- A pinned topic: "[Your Domain] — Scope and Bibliography" (your domain assignment, visible only to you and the project lead)
+- A working topic: "[Your Domain] — Draft Thread" (where you post draft content and receive peer review feedback)
 
-**How to work on your draft**: Post your draft content in your "Draft Thread" topic. Use the reply function to add new sections or revisions. The topic serves as your versioned draft history. When you are ready for peer review, add a reply with "[READY FOR PEER REVIEW — T+14]" as the opening line.
+**How to work on your draft:**
+Post your draft content in your "Draft Thread" topic in sections. Use the reply function to add new sections or revisions — each reply becomes a versioned snapshot of your draft at that point. When submitting your 50% checkpoint, add a reply with "[T+7 CHECKPOINT — 50% DRAFT]" as the opening line, followed by the draft content.
 
-**How to communicate with the project lead**: Use Discourse Direct Messages (the envelope icon in the top menu) for private questions. Use `@project-lead` in the Draft Thread if your question is relevant for your peer reviewer to see as well.
+**How to submit your full draft for peer review:**
+Add a reply to your Draft Thread with "[T+14 FULL DRAFT — READY FOR PEER REVIEW]" as the opening line. Your peer reviewer will be given access to your thread and will post their feedback as a reply.
 
-**How to submit checkpoints**: Reply to your Draft Thread topic with your status update. Use the standard format:
+**How to communicate with the project lead:**
+- Private questions: use Discourse Direct Messages (envelope icon in the top menu) → search for `@project-lead` → start a message
+- Public questions (useful for your peer reviewer to see too): post in your Draft Thread with `@project-lead` in the text
+
+**How to submit checkpoints:**
+Reply to your Draft Thread with this format:
 ```
-T+[number] update
+T+[number] checkpoint
 Sections complete: [list]
-Citations roughed in: Y/N
+Citations roughed in: Yes / No
 Main uncertainty: [topic]
+Word count so far: approximately [N]
 ```
 
-**Discourse Trust Level**: You are joining at Trust Level 1 (Basic). You can post in Wave 2 private categories, send direct messages, and reply to any topic. Trust Level 2 (Member) is auto-granted after 15 replies and 60 minutes of read time — this unlocks topic creation and some formatting tools. Both levels are fully functional for Wave 2 research work.
+**Discourse Trust Level:**
+You join at Trust Level 1 (Basic). You can post in Wave 2 private categories, send direct messages, and reply to any topic. Trust Level 2 (Member) is auto-granted after 15 posts and 60 minutes of read time — unlocks topic creation. Both levels are fully functional for Wave 2 work.
+
+**For urgent questions:**
+Post in your Draft Thread with `@project-lead` — response within 24 hours. For truly urgent questions (blocking you from making progress), also send an email to [project lead email].
+
+---
+
+### Template 5 — Founding Coalition Announcement Email
+
+**Send to:** Full founding coalition distribution list / resistance-research contacts
+**Send date:** June 6, after Wave 1 content is confirmed live
+**Subject:** `Phase 5 Wave 1+2 Published — Five Community-Scale Resilience Research Documents`
+
+---
+
+Subject: Phase 5 Wave 1+2 Published — Five Community-Scale Resilience Research Documents
+
+The Systems Resilience Project has published Phase 5 Wave 1+2: five community-scale research documents covering distributed microgrids, community coordination frameworks, conflict resolution and governance, psychological support and trauma recovery, and veterinary care in crisis contexts. Zone 5 Midwest focus. Practitioner-oriented — written for community organizers and households, not academic specialists.
+
+Combined: approximately 45,000 words.
+
+Available at: [PLATFORM URL]
+
+Phase 5 Wave 2 research begins June 10. If you have expertise in food preservation, water systems, livestock management, seed saving, or equipment repair and are interested in contributing, reply to this email by June 8. Wave 2 documents will carry contributor bylines and are published on the same platform.
+
+[YOUR NAME / PROJECT LEAD]
+Systems Resilience Project
+
+---
+
+### Template 6 — Follow-Up Email (June 7, for Non-Responders)
+
+**Send to:** All candidates who did not respond to the June 5–6 invitation
+**Send date:** June 7 morning
+
+---
+
+Subject: Re: Invitation: Systems Resilience Phase 5 Wave 2
+
+[FIRST NAME], following up on my note from June 5. We are finalizing Wave 2 contributors by June 8 and I wanted to make sure this reached you. If you are interested or have questions, a quick reply is all I need — no commitment required at this stage.
+
+Sprint start is June 10. If timing doesn't work this wave, I will keep you in mind for Phase 6 (July–August).
+
+[YOUR NAME]
 
 ---
 
@@ -248,99 +333,348 @@ These criteria apply regardless of platform.
 
 ### Core Requirements (Non-Negotiable)
 
-1. **Subject matter expertise**: Direct research, practice, or study experience in the Wave 2 domain being assigned. For food preservation: food science, homestead practice, or extension service background. For water systems: civil/environmental engineering, water management, or rural water systems practice. For livestock management: agricultural science, livestock husbandry, or Zone 5 farming practice. For seed saving: botany, seed library work, or permaculture design. For equipment repair: small-engine repair, rural mechanical practice, or agricultural engineering background.
+**1. Subject matter expertise:** Direct research, practice, or study experience in the Wave 2 domain being assigned.
+- Food preservation: food science, homestead practice, extension service background, or food safety training
+- Water systems: civil or environmental engineering, water management, rural water systems practice, or well-drilling/maintenance background
+- Livestock management: agricultural science, livestock husbandry, or Zone 5 farming practice
+- Seed saving: botany, seed library work, permaculture design, or plant propagation background
+- Equipment repair: small-engine repair, rural mechanical practice, agricultural engineering, or tool-library management
 
-2. **Long-form writing capability**: Demonstrated ability to produce 4,000+ word research documents for a non-academic audience. Required: at least one writing sample of 4,000+ words on a relevant topic. Accepted sample types: published guides, training materials, practitioner handbooks, blog posts with depth, grant reports, extension publications. Academic papers acceptable only if the writing style is accessible (not jargon-heavy).
+**2. Long-form writing capability:** Demonstrated ability to produce 4,000+ word research documents for a non-academic audience. Required: at least one writing sample of 4,000+ words on a relevant topic. Accepted sample types: published guides, training materials, practitioner handbooks, in-depth blog posts, grant reports, extension publications. Academic papers acceptable only if the writing style is accessible (not jargon-heavy).
 
-3. **Availability**: 4–6 hours per week from June 10 to July 10 (30-day sprint). This means 30–45 total hours across the sprint. Candidates who cannot commit 4 hours per week reliably should be screened out — the checkpoint protocol has hard dates.
+**3. Availability:** 4–6 hours per week from June 10 to July 10 (30-day sprint, approximately 30–45 total hours). Candidates who cannot commit 4 hours per week reliably should be screened out — the checkpoint protocol has hard dates.
 
-4. **Async collaboration fit**: Can work without synchronous meetings. Can respond to feedback within 48 hours. Comfortable with markdown (or willing to learn basic formatting — 30-minute learning curve). Has reliable email and internet access for the duration.
+**4. Async collaboration fit:** Can work without synchronous meetings. Can respond to feedback within 48 hours. Comfortable with markdown (or willing to learn basic formatting — 30-minute learning curve). Has reliable email and internet access for the duration.
 
 ### Preferred Qualifications (Tiebreakers)
 
 - Prior publication in practitioner-oriented media (homesteading, agricultural extension, mutual aid, cooperative management)
-- Familiarity with Zone 5 Midwest context (not required — the scope document provides Zone 5 context — but relevant experience accelerates the work)
+- Familiarity with Zone 5 Midwest context (not required — scope document provides context — but accelerates the work)
 - Experience with peer review (giving or receiving structured written feedback)
 - Prior relationship with the project or project lead (existing trust reduces onboarding friction)
 
 ### Disqualifying Factors
 
 - Only academic writing experience with no practitioner audience writing sample
-- Cannot commit 4 hours/week reliably (declare proactively; do not attempt the sprint on 2 hours/week)
-- Requires synchronous meetings for all coordination (the project runs fully async except for the optional June 9 kickoff call)
+- Cannot commit 4 hours/week reliably
+- Requires synchronous meetings for all coordination
 - Significant conflict of interest in the domain (e.g., employed by a company whose products the document would evaluate)
+
+### Domain Priority for Recruitment
+
+If recruitment is slower than expected, prioritize domains in this order:
+
+| Priority | Domain | Rationale |
+|----------|--------|-----------|
+| 1 | Food Preservation & Storage | Highest reader demand from Wave 1 engagement; broadest author pool |
+| 2 | Water Systems Management | Highest practical gap in Wave 1 corpus; specific credential need |
+| 3 | Livestock Management & Pasture | Strong Zone 5 relevance; author pool concentrated in ag extension networks |
+| 4 | Seed Saving & Plant Propagation | Niche but available; seed library networks are a strong sourcing channel |
+| 5 | Equipment Repair & Maintenance | Broadest skill base; most likely to be self-executed if no author confirms |
 
 ---
 
 ## Part 3: Credential Verification Process
 
-### Step 1: Portfolio Review (Before Invitation)
+### Step 1 — Portfolio Review (Before Invitation, 10–15 minutes per candidate)
 
-Before sending the invitation email (Template 1), verify:
+Before sending the invitation email, verify:
 - At least one 4,000+ word writing sample is publicly available or can be shared on request
 - Professional background matches the domain (LinkedIn, institutional page, or portfolio)
-- No obvious red flags (no writing history, no relevant background, no web presence)
+- No obvious disqualifying factors (no writing history, no relevant background, no web presence)
 
-This step takes 10–15 minutes per candidate. Run it before sending invitations to avoid wasting time on candidates who cannot meet the writing requirement.
+Run this check before sending invitations to avoid wasting time on candidates who cannot meet the writing requirement.
 
-### Step 2: Initial Screening Call (20–30 minutes, after expression of interest)
+### Step 2 — Screening Call (20–30 minutes, after expression of interest)
 
-After a candidate responds affirmatively to the invitation email, schedule a 20–30 minute call. This call has three goals:
+After a candidate responds affirmatively to the invitation email, schedule a 20–30 minute call. Three goals:
 
-1. **Confirm expertise alignment**: Ask them to describe their direct experience with the domain. You are listening for: specific examples (not just general background), awareness of Zone 5 Midwest context or willingness to learn it quickly, and any significant knowledge gaps that would make the assignment difficult.
+**Goal 1 — Confirm expertise alignment:** Ask them to describe their direct experience with the domain. Listen for: specific examples (not just general background), awareness of Zone 5 Midwest context, and any significant knowledge gaps that would make the assignment difficult.
 
-2. **Confirm availability**: Ask directly: "Can you reliably spend 4–6 hours per week from June 10 to July 10? Are there any conflicts I should know about?" Accept conditional yeses ("I have a week off around June 20 — I would need to run heavy the other weeks") but screen out anything that drops below 20 total hours.
+**Goal 2 — Confirm availability:** Ask directly: "Can you reliably spend 4–6 hours per week from June 10 to July 10? Are there any conflicts I should know about?" Accept conditional yeses with specific details. Screen out anything that drops below 20 total hours.
 
-3. **Assess collaboration fit**: Ask: "How do you typically prefer to receive feedback on a draft — in-line comments, a summary note, or a call?" The answer reveals whether they can handle async written feedback. If they say "I really need to talk it through every time," that is a risk flag for a fully async sprint.
+**Goal 3 — Assess collaboration fit:** Ask: "How do you typically prefer to receive feedback on a draft — in-line comments, a summary note, or a call?" If the candidate says they need to talk through every piece of feedback, flag as a risk for a fully async sprint.
 
-**Domain-specific screening question** (ask one of these based on the domain):
-- Food preservation: "What is the most common failure mode in home canning that leads to botulism risk, and how does it differ for community-scale versus household-scale operations?"
-- Water systems: "What is the most common contamination risk in a rural well that was functioning before a community scale-up, and what changes when 20 households share a single water system?"
-- Livestock management: "What is the key difference between rotational grazing for a single farm versus a community-shared pasture, and what governance mechanism do you think matters most for making community grazing work?"
-- Seed saving: "What is the minimum isolation distance for open-pollinated corn to prevent cross-pollination with a neighbor's field, and how does that change the community planning problem?"
-- Equipment repair: "What is the most common reason small-engine repair knowledge gets lost in a community, and how would you document it to prevent that loss?"
+**Domain-specific screening question** (ask one, based on domain):
 
-A strong answer demonstrates genuine practitioner knowledge. A vague answer reveals only superficial familiarity.
+| Domain | Screening question |
+|--------|-------------------|
+| Food preservation | "What is the most common failure mode in home canning that leads to botulism risk, and how does it differ for community-scale operations versus household-scale?" |
+| Water systems | "What is the most common contamination risk in a rural well that was functioning before a community scale-up, and what changes when 20 households share a single water system?" |
+| Livestock management | "What is the key difference between rotational grazing for a single farm versus a community-shared pasture, and what governance mechanism matters most for making community grazing work?" |
+| Seed saving | "What is the minimum isolation distance for open-pollinated corn to prevent cross-pollination with a neighbor's field, and how does that change the community planning problem?" |
+| Equipment repair | "What is the most common reason small-engine repair knowledge gets lost in a community, and how would you document it to prevent that loss?" |
 
-### Step 3: Writing Sample Review (After Call, Before Confirmation)
+A strong answer demonstrates genuine practitioner knowledge. A vague answer reveals superficial familiarity.
+
+### Step 3 — Writing Sample Review (After Call, Before Confirmation)
 
 After the call, request a writing sample (if not already provided). Review for:
 - Clear structure (introduction, body, conclusion — or equivalent practitioner guide format)
-- Accessible language (no unnecessary jargon; technical terms defined when introduced)
-- Source citation (even informal citation, such as "according to [extension guide]" is acceptable)
+- Accessible language (technical terms defined when introduced, no unnecessary jargon)
+- Source citation (even informal citation acceptable)
 - Length (4,000+ words confirmed)
 
-If the sample is strong: confirm the author and send Template 2 (Briefing Document).
-If the sample is weak: note specific gaps and either (a) ask for a second sample if you believe the first was atypical, or (b) screen out and move to the next candidate.
+If the sample is strong: confirm the author and send Templates 2 + 4 + platform invitation.
+If the sample is weak: ask for a second sample if the first was atypical, or screen out and move to next candidate.
 
-### Step 4: IP and Attribution Agreement
+### Step 4 — IP and Attribution Agreement
 
 Before the author begins work, confirm in writing (email is sufficient for Wave 2 v1):
 
-- The document will be published under a Creative Commons Attribution 4.0 (CC-BY 4.0) license unless otherwise agreed
+- The document will be published under Creative Commons Attribution 4.0 (CC-BY 4.0) license unless otherwise agreed
 - The author retains credit ("Contributing Researcher: [Name]") on the published document
 - The project lead retains editorial authority for final publication decisions
-- Compensation terms and payment schedule confirmed in writing
+- Compensation terms and payment schedule confirmed
 
-For Wave 2 v1, a formal contract is optional but recommended for any author receiving more than $500. A simple email confirmation covers contributors receiving flat fees under $500 (e.g., two short contributing sections at a fixed rate).
+A formal contract is recommended for any author receiving more than $500. A simple email confirmation covers contributors receiving flat fees under $500.
 
 ---
 
-## Part 4: Onboarding Timeline
+## Part 4: Access Provisioning Checklist
+
+These steps are performed by the project lead (platform admin) once an author is confirmed. Complete before June 9.
+
+### [NEXTCLOUD+MATRIX ONLY] — Access Provisioning
+
+For each confirmed Wave 2 author:
+
+- [ ] Create a Nextcloud user account: Admin → Users → New User → set username and temporary password
+- [ ] Create the author's domain folder: `Phase5-Wave2-[DomainName]`
+- [ ] Upload scope document (`00-SCOPE.md`) to the folder
+- [ ] Upload annotated bibliography (`00-SOURCES.md`) to the folder
+- [ ] Create empty draft file (`DRAFT-[domain-name].md`) with the section outline pre-populated
+- [ ] Create empty peer review file (`PEER-REVIEW.md`) with the review template pre-populated
+- [ ] Share the folder with the author's Nextcloud account (read+write)
+- [ ] Send the author a Nextcloud account invitation email (auto-generated by Nextcloud when you create the account)
+- [ ] Add the author to the Matrix room `#wave2-[domain]:resilience-hub`
+- [ ] Add the author to the general room `#wave2-general:resilience-hub`
+- [ ] Send the author a Matrix room join link (or invite via the Matrix user ID if known)
+- [ ] Verify the author can log into Nextcloud and see their folder (confirm within 24 hours of account creation)
+- [ ] Verify the author has joined the Matrix room (confirm within 24 hours)
+
+### [DISCOURSE ONLY] — Access Provisioning
+
+For each confirmed Wave 2 author:
+
+- [ ] Send a Discourse account invitation: Admin → Users → Send Invite → enter author email
+- [ ] After the author accepts the invitation and creates an account, add them to the `wave-2-contributors` group (Admin → Groups → wave-2-contributors → Add Members)
+- [ ] Confirm the `wave-2-contributors` group has access to the "Phase 5 Wave 2 — Working Drafts" category (Admin → Categories → edit category → Security → confirm group permissions)
+- [ ] Create the author's scope topic: in the Wave 2 private category, create a topic titled "[Domain Name] — Scope and Bibliography" — visible only to the author and project lead (use the topic group-visibility setting)
+- [ ] Create the author's draft thread topic: "[Domain Name] — Draft Thread" — visible to the author, their peer reviewer, and the project lead
+- [ ] Post the scope document and annotated bibliography as the body of the scope topic
+- [ ] Post the empty draft template and peer review template as the first reply to the draft thread topic
+- [ ] Send the author a direct message confirming their account is active and linking to their scope topic and draft thread
+- [ ] Verify the author can access both topics (confirm within 24 hours of invitation acceptance)
+
+### Tracking Table
+
+Maintain this table as authors are confirmed:
+
+| Author | Domain | Confirmed Date | Account Created | Folder/Topics Created | Scope Sent | Platform Confirmed Accessible |
+|--------|--------|---------------|----------------|----------------------|-----------|-------------------------------|
+| | Food Preservation | | | | | |
+| | Water Systems | | | | | |
+| | Livestock Mgmt | | | | | |
+| | Seed Saving | | | | | |
+| | Equipment Repair | | | | | |
+
+All five "Platform Confirmed Accessible" cells should be checked before the June 9 training session.
+
+---
+
+## Part 5: Platform-Specific Setup Guides
+
+These two- to three-page sections are written for the project lead (admin), not the authors. They cover the operational setup steps in detail.
+
+### [NEXTCLOUD+MATRIX ONLY] — Full Setup Guide
+
+**Prerequisites** (confirm complete before June 7):
+- Nextcloud Hub 9 deployed on raspby1 (100.70.184.84) per `PHASE_5_NEXTCLOUD_MATRIX_DEPLOYMENT_ROADMAP.md`
+- Matrix Synapse deployed and federated (or local-only, depending on configuration chosen)
+- Admin login credentials confirmed and accessible
+- SMTP email delivery configured for Nextcloud account invitations (so invitation emails actually arrive)
+
+**Step 1 — Create Wave 2 workspace structure in Nextcloud** (June 7, ~30 minutes):
+1. Log in to Nextcloud as admin
+2. Create a top-level folder: `Phase5-Wave2`
+3. Inside `Phase5-Wave2`, create subfolders for each Wave 2 domain: `Phase5-Wave2-FoodPreservation`, `Phase5-Wave2-WaterSystems`, `Phase5-Wave2-LivestockManagement`, `Phase5-Wave2-SeedSaving`, `Phase5-Wave2-EquipmentRepair`
+4. Also create: `Phase5-Wave2-Shared-Resources` — this folder contains common reference materials (Zone 5 context briefing, Wave 1+2 corpus link, project style guide)
+5. Inside `Phase5-Wave2-Shared-Resources`: upload the Zone 5 context briefing and a link to the Wave 1+2 published corpus
+
+**Step 2 — Create user accounts** (June 7–8, ~5 minutes per author):
+1. Admin → Users → Add New User
+2. Username: use the author's first name + domain initial (e.g., "sarah.fp" for food preservation)
+3. Initial password: generate a random 16-character password; store it temporarily
+4. Assign to group: create a group `wave2-authors` and add each author to it
+5. Set quota: 500 MB per user is sufficient for Wave 2 (all documents are text files)
+6. Save; Nextcloud sends an invitation email if SMTP is configured
+
+**Step 3 — Populate domain folders** (June 8–9, ~15 minutes per domain):
+1. Upload `00-SCOPE.md` (scope document with section outline) to each domain folder
+2. Upload `00-SOURCES.md` (annotated bibliography) to each domain folder
+3. Create `DRAFT-[domain-name].md` with the pre-populated section outline and H2/H3 heading structure (leave body text blank; author fills in content)
+4. Create `PEER-REVIEW.md` with this template:
+   ```
+   # Peer Review — [Domain Name]
+   Reviewer: [Peer Reviewer Name]
+   Review Date: [Date]
+   
+   ## What is genuinely strong:
+   
+   ## Structural problem (if present):
+   
+   ## Citation or fact requiring verification:
+   
+   ## Other notes:
+   ```
+5. Share each domain folder with the corresponding author account (read+write)
+6. Share each domain folder also with the project lead account (admin already has access, but explicit sharing ensures it shows up in the project lead's "Shared with me" view)
+
+**Step 4 — Set up Matrix rooms** (June 8, ~20 minutes):
+1. Log in to Matrix (Element web or Element X) as admin
+2. Create rooms:
+   - `#wave2-general:resilience-hub` — all Wave 2 authors + project lead
+   - `#wave2-food-preservation:resilience-hub`
+   - `#wave2-water-systems:resilience-hub`
+   - `#wave2-livestock:resilience-hub`
+   - `#wave2-seed-saving:resilience-hub`
+   - `#wave2-equipment-repair:resilience-hub`
+3. Set room settings: private (invite-only), no federation (local only unless authors are off-network)
+4. Add the project lead as admin in all rooms
+5. Generate invite links for each room (Room Settings → Invite → Create link)
+6. Send invite links to authors via the Nextcloud folder message or email
+
+**Step 5 — Verify access** (June 9, before training session):
+1. For each confirmed author: log out of Nextcloud, use a private browser tab, log in as the author's account, confirm they can see their domain folder and the shared resources folder
+2. For Matrix: confirm each author has joined their domain room and the general room
+3. If any author has not joined by June 9 morning: follow up directly by email
+
+### [DISCOURSE ONLY] — Full Setup Guide
+
+**Prerequisites** (confirm complete before June 7):
+- Discourse deployed on VPS per `PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md`
+- Admin login credentials confirmed
+- Email delivery configured (Discourse relies on transactional email for invitations and notifications — verify with a test invite to yourself before June 7)
+- Categories created: "Phase 5 Wave 1 — Published Research" (public or restricted per access model) and "Phase 5 Wave 2 — Working Drafts" (private, wave2-contributors group only)
+
+**Step 1 — Create Wave 2 group and category** (June 6–7, ~20 minutes):
+1. Admin → Groups → New Group → Name: `wave-2-contributors` → Trust Level: at least Trust Level 1 → Save
+2. Admin → Categories → "Phase 5 Wave 2 — Working Drafts" → Security:
+   - Everyone: No permissions
+   - `wave-2-contributors`: Create + Reply + See
+   - `staff` (admin group): Create + Reply + See + Full
+3. Confirm the category is invisible to logged-out users and users outside the group
+
+**Step 2 — Send invitations** (June 7–8):
+1. Admin → Users → Invite Users → enter each author's email address
+2. For each invitation: optional — set the trust level to "Member" to skip the basic trust promotion delay
+3. After authors accept and create accounts: Admin → Groups → wave-2-contributors → Add members by username
+
+**Step 3 — Create author workspaces** (June 8–9, ~10 minutes per author):
+1. In the Wave 2 private category, create a topic for each author:
+   - "[Domain Name] — Scope and Bibliography" — set topic visibility to: the author's account, the project lead account, and admin (use the topic's "Invited Users" feature or post directly if the category permissions are sufficient)
+   - "[Domain Name] — Draft Thread" — visible to the author, their peer reviewer, and the project lead
+2. In the Scope topic, post the scope document and annotated bibliography as the topic body
+3. In the Draft Thread topic, post the empty draft template (section headings, blank body) and the peer review template as the first reply
+4. Confirm both topics appear for the author when they log in and navigate to the Wave 2 category
+
+**Step 4 — Configure notification settings** (June 8, ~10 minutes):
+1. Admin → Settings → Notifications: confirm email notifications are sent for Direct Messages and for Watching topics
+2. Advise authors in the onboarding to "Watch" their Draft Thread topic (Notification settings → bell icon in the topic → "Watching") so they receive email notifications for all new replies
+
+**Step 5 — Verify access** (June 9, before training session):
+1. Log out of Discourse. Log in as a test account or ask an author to confirm: they can see the Wave 2 category, their Scope topic, and their Draft Thread
+2. Confirm they can post a reply (do not let this be their first time testing on publication day)
+3. If any author cannot access the Wave 2 category: check group membership and category security settings
+
+---
+
+## Part 6: First-Sync and First-Publish Safety Checklists
+
+These checklists are for the project lead to run before handing off to authors. They prevent the failure mode of an author trying to start work and finding their workspace is broken.
+
+### First-Sync Safety Checklist (Platform: Nextcloud+Matrix)
+
+Run before June 9 training session, for each confirmed author:
+
+- [ ] Author's Nextcloud account exists and invitation email was sent
+- [ ] Author's domain folder exists with `00-SCOPE.md`, `00-SOURCES.md`, `DRAFT-[domain].md`, `PEER-REVIEW.md` present
+- [ ] Folder is shared with author's account (read+write confirmed)
+- [ ] Test: log in as author's account in a private browser → navigate to folder → confirm all four files are visible
+- [ ] Test: open `DRAFT-[domain].md` in the browser and add one test character → confirm the file saves → delete the test character → confirm deletion saves
+- [ ] Author's Matrix room invitation has been sent
+- [ ] Test: confirm author's Matrix account appears as a member of their domain room (or that the invitation is pending — follow up if not accepted by June 10 morning)
+- [ ] Author's account has been added to `#wave2-general:resilience-hub`
+
+### First-Sync Safety Checklist (Platform: Discourse)
+
+Run before June 9 training session, for each confirmed author:
+
+- [ ] Author's Discourse account exists (invitation accepted and account created)
+- [ ] Author's account is a member of the `wave-2-contributors` group
+- [ ] Author's Scope topic exists in the Wave 2 category and is visible to the author
+- [ ] Author's Draft Thread topic exists and is visible to the author
+- [ ] Test: log in as author or confirm author has logged in and can see both topics
+- [ ] Test: author has posted at least one reply in their Draft Thread (even just "Confirmed access" is sufficient — this verifies posting permissions)
+- [ ] Author's account notification settings: "Watching" their Draft Thread topic
+
+### First-Publish Safety Checklist (Both Platforms)
+
+Run on June 17 (T+7), before the first-draft checkpoint review:
+
+- [ ] Author has submitted their T+7 checkpoint update in the correct format (Nextcloud: file updated + Matrix status note; Discourse: reply in Draft Thread with checkpoint format)
+- [ ] Project lead can access and read the draft (verify file opens in Nextcloud; verify post is readable in Discourse)
+- [ ] Draft shows meaningful progress: section outline complete AND at least one full section of narrative prose
+- [ ] No placeholder markers in the checkpoint draft (`[fill]`, `[TODO]`, etc.)
+- [ ] Author's citation-roughing-in is present (even partial citations show intent)
+- [ ] Project lead sends checkpoint response within 2 days of T+7
+
+---
+
+## Part 7: Onboarding Timeline
 
 This timeline applies to both platforms. Platform-specific steps are marked.
 
 | Date | Action | Platform Note |
 |------|--------|---------------|
 | **June 5–6** | Send Wave 2 invitations (Template 1) to top 15 candidates | Platform-agnostic — all invitations via email |
-| **June 7–8** | Confirm acceptances; schedule screening calls for non-confirmed respondents | Platform-agnostic — all calls via email/phone |
-| **June 7–8** | For confirmed authors: send Template 2 (Briefing Document) + Template 4 (Platform Orientation — correct variant) + platform account invitation | **[A]** Send Nextcloud + Matrix invitation link / **[B]** Send Discourse account invitation |
+| **June 6** | Send founding coalition announcement email (Template 5) after publication confirmed live | Platform-agnostic — email; fill in platform URL |
+| **June 7** | For non-responders: send follow-up (Template 6) | Platform-agnostic |
+| **June 7–8** | Conduct screening calls with interested candidates (20–30 minutes each) | Platform-agnostic |
+| **June 7–8** | For confirmed authors: send Template 2 (Briefing) + Template 4 (Platform Orientation, correct variant) + platform account invitation | [A] Nextcloud invite + Matrix room link / [B] Discourse account invitation |
+| **June 7–9** | Platform admin: complete access provisioning checklist per author (Part 4) | [A] Nextcloud user accounts, folders, Matrix rooms / [B] Discourse accounts, groups, topic workspaces |
 | **June 8** | All acceptance confirmations due end of day | Platform-agnostic |
-| **June 9** | Optional async training session: record a 20-minute platform walkthrough OR hold a live 30-minute Zoom Q&A if all 4–6 authors can join | **[A]** Record Nextcloud document editing + Matrix room walkthrough / **[B]** Record Discourse draft posting + DM workflow walkthrough |
-| **June 9** | Final peer review pairings assigned; announce pairings in platform | **[A]** Post pairings in Matrix `#wave2-coordination` room / **[B]** Post pairings in Discourse "Wave 2 Coordination" topic |
-| **June 10** | T+0: Domain scope documents, annotated bibliographies, and source access distributed to all authors | **[A]** Add scope files to each author's Nextcloud folder / **[B]** Post scope and bibliography in each author's Discourse draft thread |
-| **June 10** | Sprint officially begins; first-draft checkpoint protocol active (Template 3) | Platform-agnostic |
+| **June 8 EOD** | Author status decision: how many confirmed? Which domains? Activate fallback if needed (see contingencies) | Platform-agnostic |
+| **June 9** | Run first-sync safety checklist for all confirmed authors | [A] Nextcloud + Matrix / [B] Discourse |
+| **June 9** | Optional: record 20-minute platform walkthrough video OR hold 30-minute live Q&A if all authors available | [A] Record Nextcloud editing + Matrix room walkthrough / [B] Record Discourse draft posting + DM workflow |
+| **June 9** | Announce peer review pairings to all authors | [A] Post in Matrix `#wave2-general` / [B] Post in Discourse "Wave 2 Coordination" pinned topic |
+| **June 9** | Upload/post domain scope documents and annotated bibliographies | [A] Files in Nextcloud folders / [B] Posts in Discourse scope topics |
+| **June 10** | T+0: Sprint kickoff message to all authors | [A] Matrix direct message or `#wave2-general` announcement / [B] Discourse direct message or category announcement topic |
+| **June 10** | Begin author status tracking table | Platform-agnostic |
+| **June 11–14** | Daily 15-minute check-in routine: scan workspaces for questions, respond within 24 hours, note any 48-hour silence | [A] Nextcloud file timestamps + Matrix activity / [B] Discourse last-active + reply timestamps |
+| **June 15** | Wave 2 onboarding complete; readiness assessment for June 17 T+7 checkpoints | Platform-agnostic |
 
-**Fallback if recruitment slow**: If only 5–8 candidates accept by June 8 (versus target 10–12): contact secondary list on June 9 (prior collaborators, authors from resistance-research corpus, or one-degree referrals from confirmed Wave 2 authors). Do not delay sprint start to wait for a larger cohort — begin with whoever is confirmed by June 10.
+### Author Confirmation Fallback Decision Grid
 
-**Fallback if author drops out mid-sprint**: If an author goes silent for more than 5 days without notice, send a direct contact (email + phone if available). If no response within 2 additional days, escalate to scope reduction for that domain OR reassign the incomplete draft to the project lead for completion. Do not let a single drop-out block the full Wave 2 cohort from their July 10 publication date.
+| Confirmed authors by June 8 EOD | Decision |
+|--------------------------------|----------|
+| 5–6 (all or nearly all domains covered) | Full Wave 2 sprint, June 10 kickoff |
+| 3–4 (majority of domains covered) | Proceed for covered domains; self-execute remaining 1–2 domains (orchestrator) on same July 10 timeline |
+| 1–2 (minority of domains covered) | Self-execute all uncovered domains; use confirmed authors for highest-priority domains (food preservation + water systems first) |
+| 0 confirmed | Self-execute Wave 2 entirely; skip Wave 2 author coordination workflow; orchestrator produces all five documents on July 10 timeline |
+
+### Contingency: Wave 2 Leadership Structure Shift (3 Leads Instead of 4)
+
+If only 3 of the target 4 Wave 1 authors return or confirm for Wave 2, the Wave 2 leadership structure shifts:
+
+**Original 4-lead model:** Food Preservation lead, Water Systems lead, Livestock + Seed Saving co-lead, Equipment Repair lead
+
+**3-lead fallback model:** Medical/Psychological-adjacent lead (repurpose for Water Systems governance), Food Preservation lead (retains full domain), Livestock + Pasture lead (retains full domain). Equipment Repair and Seed Saving are handled by orchestrator self-execution.
+
+**Rationale for prioritization:** Water systems and food preservation have the highest reader demand and the broadest Zone 5 applicability. Equipment repair has the lowest credential requirement and is most amenable to orchestrator self-execution from practitioner literature. Seed saving, while critical, has a narrow author pool — if no author confirms, orchestrator self-execution from extension literature is feasible in 15–20 hours.
+
+---
+
+*Version 2.0 — full dual-platform edition with access provisioning checklists and first-sync/first-publish safety checklists*
+*Created June 4, 2026 | Wave 2 sprint start June 10, 2026 | Publication target July 10–15, 2026*

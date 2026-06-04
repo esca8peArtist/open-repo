@@ -3,9 +3,12 @@ title: "June 5–15 Phase 5 Publication and Wave 2 Recruitment Timeline"
 project: systems-resilience
 phase: 5
 wave: 2
-purpose: "Day-by-day execution roadmap covering Phase 5 Wave 1 publication (June 5–8) and Wave 2 author recruitment and sprint kickoff (June 5–15). Works identically for both platform options. Platform-specific steps clearly marked."
-status: READY-FOR-USE — activate June 5 morning
+purpose: "Day-by-day execution roadmap covering Phase 5 Wave 1+2 publication (June 5–9) and Wave 2 author recruitment and sprint kickoff (June 5–15). Works identically for both platform options. Platform-specific steps clearly marked."
+status: READY-FOR-USE — activate June 5 morning at 08:00 UTC
 created: 2026-06-04
+version: 2.0
+publication_day: 2026-06-09
+wave_2_sprint_start: 2026-06-10
 platform_variants: "VARIANT A = Nextcloud+Matrix | VARIANT B = Discourse"
 cross_references:
   - PHASE_5_PUBLICATION_READINESS_CHECKLIST.md
@@ -13,401 +16,589 @@ cross_references:
   - PHASE_5_NEXTCLOUD_MATRIX_DEPLOYMENT_ROADMAP.md
   - PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md
   - PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md
+  - PHASE_5_GITHUB_PAGES_STAGING.md
 ---
 
 # June 5–15: Phase 5 Publication and Wave 2 Recruitment Timeline
 ## Systems Resilience Project — Execution Roadmap
 
-**This document assumes the platform decision was made by EOD June 3 per BLOCKED.md.** All steps are written for both platforms simultaneously. When you see **[A]** or **[B]**, apply only the variant matching your chosen platform.
+---
 
-**Critical path summary**: Publication GO decision by June 5 noon → content live June 5–8 → author invitations June 5–6 → confirmations June 7–8 → platform onboarding June 8–9 → sprint kickoff June 10.
+## Executive Summary
+
+**Three key points:**
+1. The ten-day window June 5–15 accomplishes two parallel streams: (a) publishing the 45,000-word Phase 5 Wave 1+2 corpus on the chosen platform, and (b) recruiting, screening, credentialing, and onboarding Wave 2 authors so they are productive on June 10. Neither stream blocks the other — publication can slip to June 12 without affecting the Wave 2 sprint.
+2. Every day in this roadmap has [PLATFORM-SPECIFIC] branches clearly marked. The platform decision made by EOD June 4 determines which branch to follow — all other steps are identical for both options.
+3. Three named contingency branches are pre-scoped: (A) platform deployment delays push publication to June 12, Wave 2 unaffected; (B) slow recruitment shifts Wave 2 from 4 leads to 3 leads; (C) incomplete onboarding by June 14 shifts Wave 2 publication to June 25.
+
+**Timeline:** June 5 verification + author invitations → June 6–7 platform deployment + screening calls → June 8 go/no-go + confirmations → June 9 publication day → June 10 Wave 2 sprint kickoff → June 15 onboarding complete
+
+**Owner:** Orchestrator (project lead)
+
+**Success criteria:** (a) Wave 1+2 publication live and monitored by June 9; (b) all Wave 2 authors onboarded by June 15; (c) Wave 2 authoring environment ready June 15 with zero blockers for the June 17 first-draft checkpoint.
 
 ---
 
-## Pre-Execution State (Verified as of June 4 EOD)
+## Pre-Execution State (Verify June 5 Morning Before Starting)
 
-Before June 5 morning, confirm these are true. If any are false, the day-by-day plan below has contingency entries.
+Before beginning the June 5 schedule, confirm these conditions are true. Each false condition has a named contingency entry below.
 
-| Item | Expected State | Confirm |
-|------|---------------|---------|
-| Platform decision made | Option A (Discourse) OR Option B (Nextcloud+Matrix) chosen | [ ] |
-| 5 Wave 1 domains committed to master | `phase-3/01–05` all present and production-ready | [ ] |
-| Platform deployed (or deploying June 5) | Deployment roadmap followed per PHASE_5_NEXTCLOUD_MATRIX_DEPLOYMENT_ROADMAP.md or PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md | [ ] |
-| Author candidate list drafted | 15 candidates across 5 domains (3 per domain) identified | [ ] |
-| Email access functional | Outgoing email working from project address | [ ] |
-
----
-
-## June 5 (Wednesday) — Publication Decision Day + Author Invitation Launch
-
-### Morning Block (06:00–12:00 UTC)
-
-**Priority 1: Run the Publication Readiness Checklist**
-
-Open `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` and work through all six sections. This takes approximately 90 minutes if everything is clean (expected). Log the results in the decision grid at the bottom of that document.
-
-Specific steps:
-1. Verify all 5 domain files present (`wc -w projects/systems-resilience/phase-3/*.md`)
-2. Confirm cross-domain links are not broken (5-minute manual check of the 5 cross-reference pairs)
-3. Strip YAML frontmatter from publication copies and stage in `/tmp/phase3-pub/`
-4. Confirm no images in any domain file (`grep -r "!\[" projects/systems-resilience/phase-3/`)
-5. Run spell check on all 5 files
-6. Test-validate 20% of citation URLs (30 URLs across 5 domains — aim for 6 per domain)
-
-**Decision by 12:00 UTC**: GO, HOLD, or DEFER.
-
-- If GO: proceed to afternoon publication block
-- If HOLD (minor fixes): fix issues in the late morning, shift publication to 14:00–18:00 UTC window
-- If DEFER: activate GitHub Pages fallback (see Contingency section below); continue with author invitations regardless of publication status
-
-**Platform-specific check (run concurrently with readiness checklist)**:
-
-[A — Nextcloud+Matrix]: Confirm the Nextcloud instance is accessible at its Tailscale URL (e.g., `https://100.70.184.84/nextcloud`). Log in as admin. Confirm the `Phase5-Wave1` folder structure is ready to receive uploaded content. Confirm Matrix room `#phase5-discussion:resilience-hub` exists and you are joined.
-
-[B — Discourse]: Confirm the Discourse instance is accessible at its domain. Log in as admin. Confirm the "Phase 5 Wave 1 — Published Research" category has been created with appropriate permissions (public read, registered write, or public read-only — depending on access model). Confirm the API key is available for automated topic creation if you are using the seeding script from PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md.
-
-### Afternoon Block (12:00–18:00 UTC)
-
-**Priority 2: Publish Wave 1 Content**
-
-If GO decision confirmed, publish the five domains to the chosen platform.
-
-**[A — Nextcloud+Matrix]** Publication steps:
-
-1. Upload the 5 frontmatter-stripped markdown files from `/tmp/phase3-pub/` to the `Phase5-Wave1-Published` folder in Nextcloud (drag-and-drop in browser or via WebDAV client)
-2. Set folder sharing: "Share with link" — read-only link for public access (or restricted to registered users, depending on access model)
-3. Copy the public link URL for use in the announcement email
-4. Pin the folder link in the Matrix room `#phase5-discussion:resilience-hub` with a message: "Phase 5 Wave 1 is published. Five community-scale research domains available at [LINK]. Read, comment, and share."
-5. Verify: open the Nextcloud link in an anonymous browser tab and confirm all 5 files are accessible
-
-**[B — Discourse]** Publication steps:
-
-1. In the "Phase 5 Wave 1 — Published Research" category, create one topic per domain. Use the domain title as the topic title. Paste the frontmatter-stripped markdown as the topic body.
-2. Post domains in this order (so the category index shows them cleanly):
-   - `05-scaling-pathways-and-thresholds.md` (post first — it will appear last in reverse-chron)
-   - `04-security-and-defense.md`
-   - `03-information-infrastructure.md`
-   - `02-food-systems-supply-chain.md`
-   - `01-governance-decision-making.md` (post last — it will appear first)
-3. Pin the governance topic as a category announcement
-4. Create an announcement topic: "Phase 5 Wave 1 Published — Five Community-Scale Research Domains" with a brief intro and links to all 5 topics
-5. Verify: log out of Discourse, visit the category URL, confirm all 5 topics visible and readable
-
-**Priority 3: Send Author Invitations (run concurrently with publication if resources allow)**
-
-While publication is happening (or immediately after if solo), send Wave 2 author invitations using Template 1 from `WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md`.
-
-Send to the top 15 candidates (3 per domain, 5 domains). Personalize each email with the candidate's name, their relevant expertise, and their specific domain assignment. Sending 15 emails takes approximately 45 minutes with templates ready.
-
-**Author candidate list** (fill in before sending):
-
-| Domain | Candidate 1 | Candidate 2 | Candidate 3 |
-|--------|------------|------------|------------|
-| Food Preservation & Storage | | | |
-| Water Systems Management | | | |
-| Livestock & Pasture Management | | | |
-| Seed Saving & Plant Propagation | | | |
-| Equipment Repair & Maintenance | | | |
-
-(See `PHASE_5_WAVE_2_AUTHOR_PROFILES.md` for candidate sourcing guidance per domain.)
-
-### Evening Block (18:00–22:00 UTC)
-
-**Post-publication verification** (30 minutes):
-
-- [ ] All 5 domain pages load correctly in an anonymous browser tab
-- [ ] Platform search returns relevant results for "governance" and "food systems"
-- [ ] Tables render correctly in at least 2 domains (spot-check governance and food systems — they have the most tables)
-- [ ] At least 1 announcement email sent to founding coalition (see announcement template in WAVE_2_AUTHOR_ONBOARDING_KIT)
-
-**Invitation tracking** (10 minutes):
-
-- [ ] Log all 15 sent invitations in a tracking spreadsheet (Name, Domain, Email, Sent Date, Response, Status)
-- [ ] Set calendar reminder for June 7 to follow up with non-responders
+| Item | Expected State | Contingency if False |
+|------|---------------|----------------------|
+| Platform decision made | Option A (Nextcloud+Matrix) OR Option B (Discourse) chosen by user | N/A — user must decide before June 5 execution; if not decided by 09:00 UTC June 5, default to Discourse (faster deployment path) |
+| Five Wave 1+2 source documents committed to master | All five phase-5-wave-2-*.md files present and confirmed PRODUCTION-READY status | Run PHASE_5_PUBLICATION_READINESS_CHECKLIST.md Section 1 immediately |
+| Integrated corpus committed to master | PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md present | Check repo; document was produced June 1 and committed |
+| Author candidate list drafted | 15 candidates across 5 domains (3 per domain) identified | Spend June 5 morning sourcing candidates from PHASE_5_WAVE_2_AUTHOR_PROFILES.md before sending invitations |
+| Email access functional | Outgoing email working from project address | Test by sending a message to yourself before sending author invitations |
 
 ---
 
-## June 6 (Thursday) — Invitation Follow-Through + Any Publication Holds Resolved
+## June 5 (Wednesday) — Publication Readiness Verification + Author Invitation Launch
 
-### If HOLD from June 5:
+**Total orchestrator hours today:** 4–5 hours
 
-Complete the fix items from the HOLD log. Publish before noon. Then proceed with author invitation launch (same steps as June 5 afternoon, run June 6 morning).
+### 08:00–12:00 UTC — Publication Readiness Verification (4 hours)
 
-### Standard activities (all scenarios):
+**Block 1: Run the Publication Readiness Checklist** (90 minutes)
 
-**Morning (06:00–12:00 UTC)**:
-- Check invitation responses received overnight (any early acceptances get Template 2 — Briefing Document — sent immediately, do not wait until the full cohort is assembled)
-- Send the founding coalition announcement email if not sent June 5 evening
+Open `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` and work through Sections 1–4. This is the primary verification pass — the June 8 go/no-go will be a 30-minute re-check. Log all results in the decision log template in Section 5.
 
-**Coalition announcement email** (send to the distribution list from resistance-research coalition or direct contacts):
+Critical steps in order:
+1. Verify all five Wave 1+2 source documents present (`ls -la` check)
+2. Run placeholder marker scan (`grep -rn` across all five files)
+3. Check frontmatter `status` fields — standardize to "PRODUCTION-READY" if not already done
+4. Run spell check on all five documents (aspell, 15 minutes)
+5. Validate 20% of citation URLs (30–35 URLs total across five documents, 30 minutes)
+6. Verify heading hierarchy in all five documents (5 minutes)
 
----
+**[PLATFORM-SPECIFIC] — Run concurrently: platform pre-check**
 
-Subject: Phase 5 Wave 1 Published — Five Community-Scale Resilience Research Domains
+[NEXTCLOUD+MATRIX ONLY]: SSH to raspby1 (100.70.184.84). Confirm Docker stack is running: `docker ps | grep nextcloud`. If Nextcloud is already deployed per the pre-deployment steps, navigate to `https://100.70.184.84/nextcloud` in a browser and confirm admin login works. If Nextcloud is not yet deployed: do not start deployment now — today's window is too short. Flag this for the June 6 deployment block.
 
-The Systems Resilience Project has published Phase 5 Wave 1: five community-scale research domains covering governance, food systems, information infrastructure, security and defense, and scaling pathways for Midwest Zone 5 communities.
+[DISCOURSE ONLY]: SSH to the VPS. Confirm Discourse is running: `cd /var/discourse && sudo ./launcher status`. Navigate to the Discourse domain URL and confirm admin login works. If Discourse is not yet deployed: flag for June 6 deployment block.
 
-Combined: approximately 29,000 words with 170 citations. Written for practitioners — community organizers, households, and local governance bodies — not academic specialists.
+**Block 2: Platform Decision Announcement** (30 minutes, run before noon)
 
-Available at: [PLATFORM URL]
+Once you have confirmed the platform decision (or defaulted to Discourse if decision is outstanding), make the platform announcement. This is the operational starting gun for both deployment and author onboarding.
 
-Phase 5 Wave 2 research begins June 10. If you have expertise in food preservation, water systems, livestock management, seed saving, or equipment repair and are interested in contributing, reply to this email by June 8.
+Send a brief note to any collaborators who need to know which platform was chosen. Update the frontmatter `platform_decision` field in this document:
 
-[YOUR NAME / PROJECT LEAD]
+```
+Platform decision: [NEXTCLOUD+MATRIX / DISCOURSE]
+Decision time: ___________
+```
 
----
+If the user is the sole operator: the "announcement" is simply noting the decision in your execution log and proceeding.
 
-**Afternoon (12:00–18:00 UTC)**:
-- Finalize Wave 2 candidate list if not complete (source additional candidates from resistance-research coalition contacts, NAFCM directory, FIC network — see author profiles document for sourcing channels by domain)
-- For any same-day acceptances: send Template 2 (Briefing) + Template 4 (Platform Orientation — correct variant) + platform account invitation
+### 12:00–18:00 UTC — Author Invitation Launch (3 hours)
 
----
+**Priority: Send Wave 2 invitations to top 15 candidates**
 
-## June 7–8 (Friday–Saturday) — Confirmations and Onboarding Package Dispatch
+Using Template 1 from `WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md`:
+- Personalize each email with candidate name, specific expertise, domain assignment, and the platform URL (if publication is live — otherwise link to the GitHub repo or note that the platform is deploying this week)
+- Send to 3 candidates per domain (15 total)
+- Log each invitation in a tracking table immediately after sending
 
-### June 7
+**Author candidate tracking table** (create this spreadsheet or table today):
 
-**Morning**:
-- Review all responses to June 5–6 invitations
-- Conduct screening calls with interested candidates (20–30 minutes each). Target: complete all calls by June 8 noon.
-- If fewer than 8 candidates have responded (yes or no): send follow-up to non-responders
+| Domain | Candidate | Email | Sent Date | Response | Status |
+|--------|-----------|-------|-----------|----------|--------|
+| Food Preservation | | | June 5 | | Pending |
+| Food Preservation | | | June 5 | | Pending |
+| Food Preservation | | | June 5 | | Pending |
+| Water Systems | | | June 5 | | Pending |
+| Water Systems | | | June 5 | | Pending |
+| Water Systems | | | June 5 | | Pending |
+| Livestock Mgmt | | | June 5 | | Pending |
+| Livestock Mgmt | | | June 5 | | Pending |
+| Livestock Mgmt | | | June 5 | | Pending |
+| Seed Saving | | | June 5 | | Pending |
+| Seed Saving | | | June 5 | | Pending |
+| Seed Saving | | | June 5 | | Pending |
+| Equipment Repair | | | June 5 | | Pending |
+| Equipment Repair | | | June 5 | | Pending |
+| Equipment Repair | | | June 5 | | Pending |
 
-Follow-up email (send June 7 if no response to June 5 invitation):
+**Sending 15 personalized emails takes approximately 45–60 minutes with templates ready.** Do not skip personalization — the domain-specific expertise reference increases response rate significantly.
 
----
+### 18:00–22:00 UTC — Evening Block (30–60 minutes)
 
-Subject: Re: Invitation: Systems Resilience Phase 5 Wave 2
+- Check for any same-day invitation responses. If any candidate responds: send Template 2 (Briefing Document) and Template 4 (Platform Orientation) immediately — do not wait for the full cohort.
+- Set a calendar reminder for June 7 morning to follow up with all non-responders.
+- Log June 5 execution status in WORKLOG.md.
 
-[FIRST NAME], following up on my note from June 5. We are finalizing Wave 2 contributors by June 8 and I wanted to make sure this reached you. If you are interested or have questions, a quick reply is all I need — no commitment required at this stage.
-
-[YOUR NAME]
-
----
-
-**Afternoon**:
-- Conduct remaining screening calls
-- For confirmed authors: send full onboarding package (Template 2 + Template 4 + platform account invitation)
-- Begin peer review pairing plan (match authors by domain complementarity where possible — e.g., food preservation paired with seed saving; water systems paired with equipment repair; livestock standalone or paired with food preservation)
-
-### June 8 (Saturday)
-
-**All confirmations due by end of day.**
-
-By June 8 end of day, you should know:
-- Exactly how many Wave 2 authors are confirmed (target: 4–6 for the core domains)
-- Which domains are covered and which need fallback (self-execution by orchestrator if no author confirmed)
-- Peer review pairings finalized
-
-**Author status decision grid**:
-
-| Authors confirmed | Decision |
-|------------------|----------|
-| 5–6 (all or nearly all domains covered) | Proceed to full Wave 2 sprint, June 10 kickoff |
-| 3–4 (majority of domains covered) | Proceed for covered domains; self-execute remaining 1–2 domains (orchestrator) |
-| 1–2 (minority of domains covered) | Self-execute all uncovered domains; use confirmed authors for highest-priority domains |
-| 0 confirmed | Self-execute Wave 2 entirely (orchestrator); skip Wave 2 author coordination; focus orchestrator on July 10 publication date |
-
-**Platform account status**:
-- [ ] All confirmed authors have received platform account invitations
-- [ ] At least 24 hours of lead time before June 9 training session
+**Slip trigger for June 5:** If the publication readiness checklist (Sections 1–4) finds 3+ documents with content issues or a citation rate below 80%, activate **Contingency C** now: flag June 9 publication as at risk; begin scoping which issues can be resolved by June 8.
 
 ---
 
-## June 9 (Sunday) — Onboarding and Training
+## June 6 (Thursday) — Platform Deployment + Publication Preparation
 
-### Morning (09:00–12:00 UTC)
+**Total orchestrator hours today:** 4–6 hours (primarily platform-specific)
 
-**Optional async training session**:
+### 06:00–14:00 UTC — Platform Deployment
 
-If all or most confirmed authors can attend a 30-minute live session: schedule via email, host via Zoom or Jitsi (no platform dependency — a video call outside the project platform). Record the session for those who cannot attend.
+[PLATFORM-SPECIFIC] — This block is primarily platform-specific. Follow the relevant playbook in detail.
 
-If synchronous coordination is not feasible: record a 20-minute walkthrough video covering the platform orientation and upload it to:
+[NEXTCLOUD+MATRIX ONLY]: Execute `PHASE_5_NEXTCLOUD_MATRIX_DEPLOYMENT_ROADMAP.md` Part 1–3 (Docker stack deploy, 6–8 hours from cold start). Key steps:
+1. Verify raspby1 prerequisites met (Docker installed, Tailscale active, domain/IP confirmed)
+2. Deploy Docker stack: `docker compose up -d` in the Nextcloud+Matrix stack directory
+3. Complete initial Nextcloud configuration (admin setup, trusted domains, SMTP)
+4. Deploy Matrix Synapse and verify bridge to Nextcloud notification stream
+5. Create publication folder structure: `Phase5-Wave1-Published` and `Phase5-Wave2` placeholder
+6. Test admin login and file upload with a test document
 
-[A — Nextcloud+Matrix]: Upload recording to Nextcloud shared folder `Wave2-Onboarding-Resources`. Post the link in the Matrix room `#wave2-general`.
+If deployment takes longer than 6 hours: activate **Contingency A** (see below). Publication slides from June 9 to June 12. Wave 2 timeline is unaffected.
 
-[B — Discourse]: Create a pinned topic "Wave 2 Onboarding — Platform Walkthrough (Video)" in the Wave 2 private category. Embed the video link.
+[DISCOURSE ONLY]: Execute `PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md` Part 1–2 (VPS setup + Discourse install, 3–4 hours from cold start). Key steps:
+1. Provision VPS (Hetzner CPX21 or equivalent; confirm IP and domain pointing)
+2. Deploy Discourse via official Docker installer: `cd /var/discourse && sudo ./discourse-setup`
+3. Complete Discourse admin setup (admin account, site settings, email delivery)
+4. Create categories: "Phase 5 Wave 1 — Published Research" (public or community-visible), "Phase 5 Wave 2 — Working Drafts" (private, group-gated)
+5. Create `wave-2-contributors` group with category access
+6. Test admin login, topic creation, and invitation email delivery
 
-**Training session content** (regardless of live or async delivery):
-1. Platform access confirmed (everyone can log in — 5 minutes)
-2. Domain scope document walkthrough — what the sprint is asking for (10 minutes)
-3. First-draft checkpoint protocol review — dates, format, escalation (5 minutes)
-4. Live Q&A or async Q&A thread if recorded (remaining time)
+If deployment takes longer than 4 hours: proceed anyway; publication is June 9 and there is buffer.
 
-### Afternoon (12:00–18:00 UTC)
+### 14:00–18:00 UTC — Publication Preparation (2 hours)
 
-**Finalize domain assignments and peer review pairings**:
+**Produce frontmatter-stripped copies of all five documents and the integrated corpus:**
 
-Announce pairings to all confirmed authors:
+Run the stripping command from `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` Section 2.3. Confirm six clean files appear in `/tmp/phase5-pub/`.
 
-[A — Nextcloud+Matrix]: Post pairings in Matrix room `#wave2-general` as a pinned message.
+**Generate PDFs:**
 
-[B — Discourse]: Post pairings in a new topic "Wave 2 — Domain Assignments and Peer Review Pairings" in the Wave 2 private category. Pin the topic.
+Run the PDF export command from Section 3.1 of the readiness checklist. Spot-check two PDFs.
 
-**Upload domain scope documents and annotated bibliographies** to each author's workspace:
+**Draft announcement email:**
 
-[A — Nextcloud+Matrix]: Add scope file (`00-SCOPE.md`) and bibliography (`00-SOURCES.md`) to each author's dedicated folder (`Phase5-Wave2-[Domain]/`). Notify via Matrix direct message.
+Using Template 5 from `WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md`: draft the founding coalition announcement email. Leave the platform URL blank — fill it in on June 9 after publication is confirmed live.
 
-[B — Discourse]: Create a topic "[[Domain Name]] — Scope and Bibliography" in the Wave 2 private category, visible only to the assigned author and the project lead. Post scope and bibliography content as topic body.
+### 18:00–22:00 UTC — Evening Block
+
+- Check invitation responses from June 5 invitations. For any yes or interested response: send Template 2 + Template 4 + platform account invitation (platform access provisioning may be partial — explain that full access is ready June 7 and credentials will follow)
+- Check deployment status: is the platform accessible? Is admin panel reachable?
 
 ---
 
-## June 10 (Monday) — Sprint Kickoff (T+0)
+## June 7 (Friday) — Author Screening + Platform Validation
 
-**By 12:00 UTC, all Wave 2 authors receive**:
+**Total orchestrator hours today:** 3–4 hours
+
+### 06:00–09:00 UTC — Follow-up and Screening Call Scheduling
+
+**Send follow-up emails (Template 6) to all non-responders from June 5 invitations.**
+
+Target: all 15 candidates have received at least two contact attempts by June 7 EOD.
+
+For any candidates who have responded positively: schedule a 20–30 minute screening call today or June 8. The screening call should happen before you send the full briefing document and before you provision platform access. Sending the briefing document + credentials to an unscreened candidate wastes those assets — keep the access provisioning workflow sequential.
+
+### 09:00–14:00 UTC — Screening Calls and Confirmations
+
+**Conduct up to 5 screening calls today** (20–30 minutes each, maximum 2.5 hours of calls).
+
+Follow the screening protocol in `WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md` Part 3:
+- Confirm expertise alignment (ask the domain-specific screening question)
+- Confirm availability (4–6 hours/week, June 10–July 10)
+- Assess collaboration fit (async-capable, can give and receive written feedback)
+
+For each confirmed author after the call:
+1. Update the tracking table: Status → "Confirmed"
+2. Send Template 2 (Briefing Document) + Template 4 (Platform Orientation, correct variant)
+3. Begin access provisioning (Part 4 checklist in WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md)
+4. Note the peer review pairing plan — start matching authors by domain complementarity
+
+**Draft peer review pairings plan** (do this while you have 3+ confirmations in view):
+- Food preservation + seed saving (complementary food production and preservation cycle)
+- Water systems + equipment repair (infrastructure maintenance connection)
+- Livestock management: pair with whichever of the above has capacity, or with project lead
+
+### 14:00–18:00 UTC — Platform Validation
+
+[NEXTCLOUD+MATRIX ONLY]: If deployment was completed June 6: validate the full Wave 2 workspace setup. Create the `Phase5-Wave2-[Domain]` folders for confirmed authors. Test file upload, file edit, and share link. Validate Matrix room creation.
+
+[DISCOURSE ONLY]: If deployment was completed June 6: create the "Wave 2 — Scope and Bibliography" private topics for confirmed authors. Test account invitation delivery. Confirm the Wave 2 private category is correctly gated.
+
+---
+
+## June 8 (Saturday) — Go/No-Go + Final Confirmations
+
+**Total orchestrator hours today:** 2–3 hours
+
+### 08:00–14:00 UTC — Author Confirmation Deadline
+
+**All author acceptance confirmations due by June 8 EOD.**
+
+By noon June 8, check the tracking table and assess:
+- How many confirmed authors? Which domains?
+- Which domains have no confirmed author?
+- Is the 3-author minimum viable cohort met?
+
+For any candidates still in "interested but not confirmed" status: call them directly today if possible. An email follow-up is acceptable if calling is not feasible.
+
+**Author confirmation decision** (apply the grid from WAVE_2_AUTHOR_ONBOARDING_KIT Part 7):
+- 5–6 confirmed: full Wave 2 sprint, proceed as planned
+- 3–4 confirmed: activate 3-lead fallback model (see Contingency B below); self-execute remaining domains
+- 1–2 confirmed: reassess domain priorities; use confirmed authors for food preservation and water systems; self-execute the rest
+- 0 confirmed: self-execute all five Wave 2 domains on July 10 timeline
+
+### 14:00–18:00 UTC — Go/No-Go Publication Decision
+
+Complete the final go/no-go check from `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` Section 5. This is a 30-minute re-check (not a full re-run of Sections 1–4 — those were done June 5).
+
+**What to verify in 30 minutes:**
+- [ ] All five documents still present in the repo (no accidental deletion)
+- [ ] Frontmatter-stripped copies in `/tmp/phase5-pub/` are present and current
+- [ ] PDFs generated
+- [ ] Platform is accessible (admin login confirmed)
+- [ ] Announcement email is drafted with platform URL filled in
+
+**Go/No-Go call by June 8 18:00 UTC.** Document in the decision log:
+
+```
+June 8 Go/No-Go
+Time: ___________
+Checker: ___________
+Platform deployed and accessible: YES / NO
+Content verification (June 5 result): PASS / HOLD / DEFER
+Assets ready: YES / PARTIAL
+Author confirmations: _____ of target 5–6
+
+Overall Decision: GO / HOLD / DEFER
+
+If HOLD: Items outstanding: ___________  Fix by: June 9 09:00 UTC
+If DEFER: Reason: ___________  New date: ___________  Wave 2 impact: ___________
+```
+
+### 18:00–22:00 UTC — Evening Block
+
+- Begin access provisioning for all confirmed authors (if not already complete)
+- Confirm all author platform accounts have been created and invitations sent
+- Finalize peer review pairings; prepare pairing announcement
+
+---
+
+## June 9 (Sunday) — Publication Day
+
+**Total orchestrator hours today:** 4 hours
+
+**This is the critical day. Two parallel streams run: publication (platform) and author onboarding finalization (pre-sprint).**
+
+### 09:00–11:00 UTC — Final Pre-Publication Check (2 hours)
+
+Run the publication day morning block from `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` Section 6. Confirm:
+
+1. All five documents present, no accidental changes since June 8 go/no-go
+2. Frontmatter-stripped copies in staging directory are current
+3. PDFs accessible
+4. Platform accessible and admin login confirmed
+5. Announcement email filled in and ready to send
+6. Git repository clean (no uncommitted changes to corpus files)
+
+**[PLATFORM-SPECIFIC] Final access check:**
+
+[NEXTCLOUD+MATRIX ONLY]: Log into Nextcloud admin. Navigate to `Phase5-Wave1-Published` folder (or create it now if not yet ready). Confirm share link is generated and the access model (public-read or restricted) is correctly set. Test in anonymous browser tab: the share link should show the folder contents without requiring login.
+
+[DISCOURSE ONLY]: Log into Discourse admin. Navigate to "Phase 5 Wave 1 — Published Research" category. Confirm category exists and permissions are set. Log out, visit the category URL, confirm it is accessible as intended for anonymous visitors.
+
+**If any blocker is found during the morning check:** Apply the go/no-go decision from Section 5 of the readiness checklist. If the issue can be fixed in under 2 hours, fix it before the publication window. If it requires more than 2 hours, activate Contingency A and move publication to June 12.
+
+### 13:00–17:00 UTC — Publication Window (4 hours)
+
+Execute the publication steps from `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` Section 6, Publication Window.
+
+**[NEXTCLOUD+MATRIX ONLY]:**
+1. Upload all five frontmatter-stripped documents and the integrated corpus to `Phase5-Wave1-Published` folder
+2. Set folder sharing: "Share with link" → read-only → enable "Download" → copy share URL
+3. Create optional `README.md` in published folder with document list and one-sentence descriptions
+4. Pin the folder share link in Matrix room `#phase5-discussion:resilience-hub` with announcement text
+5. Send the founding coalition announcement email (Template 5) with the confirmed share URL
+6. Note publication timestamp
+
+**[DISCOURSE ONLY]:**
+1. Create topics in reverse order — scale to governance (post scale last, governance first in display):
+   - "Veterinary Care in Crisis Contexts" — paste stripped content → Submit
+   - "Psychological Support and Trauma Recovery" — paste stripped content → Submit
+   - "Conflict Resolution and Governance Framework" — paste stripped content → Submit
+   - "Community Implementation Playbook — Tier 3 Coordination Framework" — paste stripped content → Submit
+   - "Distributed Microgrids as Community Resilience Infrastructure" — paste stripped content → Submit
+2. Create announcement topic: "Phase 5 Wave 1+2 Published — Five Community-Scale Resilience Documents" → Pin as category announcement
+3. Log out; in anonymous browser, confirm all five topics visible and readable
+4. Send founding coalition announcement email with Discourse category URL
+5. Note publication timestamp
+
+**Author onboarding parallel stream** (run while publication is uploading or immediately after):
+
+- [ ] Finalize domain assignments and peer review pairings (confirmed from June 7–8 screening)
+- [ ] Announce pairings to all confirmed authors via their platform workspace or email
+- [ ] Upload/post domain scope documents and annotated bibliographies to each author's workspace
+- [ ] Post the sprint kickoff note (Template 3 from WAVE_2_AUTHOR_ONBOARDING_KIT) in each author's workspace
+
+### 17:00–22:00 UTC — Post-Publication Monitoring
+
+Run the monitoring checkpoints from `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` Section 6, Monitoring Checkpoints.
+
+T+1 hour check (approximately 14:00 or 17:00 UTC):
+- [ ] All 5 documents accessible in anonymous browser session
+- [ ] Platform search returns results for "microgrids", "psychological support", and "veterinary"
+- [ ] No error messages on any document page
+- [ ] Announcement email confirmed sent
+
+T+4 hour check (approximately 21:00 UTC):
+- [ ] No access control failures reported
+- [ ] At least 1 person other than the project lead has confirmed access
+- [ ] Log publication completion with timestamp in WORKLOG.md
+
+---
+
+## June 10 (Monday) — Wave 2 Sprint Kickoff (T+0)
+
+**Total orchestrator hours today:** 3 hours
+
+### 09:00–12:00 UTC — Sprint Launch
+
+**By 12:00 UTC, all confirmed Wave 2 authors receive:**
 - [ ] Domain scope document (full outline, section structure, depth expectations)
-- [ ] Annotated bibliography (25–40 sources, green/amber/red light quality rating)
-- [ ] Zone 5 context briefing (embedded in scope document or separate if needed)
+- [ ] Annotated bibliography (25–40 sources, green/amber/red quality rating)
+- [ ] Zone 5 context briefing (embedded in scope document)
 - [ ] Peer review partner name and contact
 - [ ] Reminder of first-draft checkpoint date (June 17, T+7)
+- [ ] Sprint kickoff note from project lead
 
-**Project lead posts a sprint kickoff note** to all authors (via their platform workspace):
-
----
-
-Wave 2 sprint is officially open. T+0 today. Your first-draft checkpoint is June 17 (T+7). Between now and then: read your scope document, skim your annotated bibliography, and start your section outline. If anything in the scope document is unclear or seems too broad/narrow, message me today or tomorrow — week 1 is the easiest time to adjust scope.
-
-First checkpoint (T+7): send a 50% draft — section outline complete, first two sections narrative-complete, citations roughed in.
-
-Good luck.
+**Project lead sprint kickoff message** (post to each author's workspace):
 
 ---
 
-**What the project lead does June 10 while authors begin research**:
-- Begin tracking author sprint status in a simple table (name, domain, last check-in date, status)
-- Monitor platform workspace for any same-day questions (respond within 4 hours on Day 1)
-- Log June 5–10 publication and recruitment results in WORKLOG.md
+Wave 2 sprint is officially open. T+0 today. Your first-draft checkpoint is June 17 (T+7). Between now and then: read your scope document, skim your annotated bibliography, and start your section outline. If anything in the scope document is unclear or seems too broad or too narrow, message me today or tomorrow — week 1 is the easiest time to adjust scope.
+
+First checkpoint (T+7, June 17): 50% draft — section outline complete, Sections 1 and 2 narrative-complete, citations roughed in.
 
 ---
 
-## June 11–15 (Tuesday–Saturday) — Wave 2 Active Research + Publication Metrics
+### 12:00–18:00 UTC — Post-Launch Monitoring
 
-### Daily routine (15–30 minutes per day)
+- Monitor author workspaces for same-day questions; respond within 4 hours on Day 1
+- Run the 24-hour post-publication review for Wave 1 content (from PHASE_5_PUBLICATION_READINESS_CHECKLIST.md Section 6)
+- Begin author sprint status tracking table
+- Log June 10 execution status in WORKLOG.md
 
-Each day, June 11–15:
-1. Check author workspaces for any new questions or status updates
+---
+
+## June 11–14 (Tuesday–Friday) — Wave 2 Active Sprint + Publication Engagement Monitoring
+
+**Daily routine: 15–30 minutes per day**
+
+Each day, June 11–14:
+1. Check author workspaces for new questions or status updates
 2. Respond to any messages within 24 hours (target: same business day)
-3. Note any author who has gone completely silent (no activity in workspace for 48+ hours) — this is an early warning signal, not yet an escalation trigger
-4. Scan Wave 1 publication metrics (see below)
+3. Note any author with no workspace activity for 48+ hours (early warning, not yet escalation)
+4. Scan Wave 1 publication engagement metrics (see below)
 
-### Wave 1 Publication Metrics Tracking
+**[PLATFORM-SPECIFIC] Engagement monitoring:**
 
-By June 15, Wave 1 will have been live for 7–10 days. Capture baseline metrics to inform Wave 2 scope and publication strategy.
+[NEXTCLOUD+MATRIX ONLY]: Check Nextcloud file access logs (admin panel → logging, if enabled) for download/view counts per document. Check Matrix `#phase5-discussion` room for any messages from non-Wave-2 members. Note: Nextcloud does not have native analytics; file access counts may require FTS or external logging configuration.
 
-**[A — Nextcloud+Matrix]**: Check Nextcloud file access logs (if enabled in admin panel) for download counts per domain. Check Matrix room for any messages, questions, or reactions from non-Wave 2 members.
+[DISCOURSE ONLY]: Check topic view counts, reply counts, and likes for each of the five published topics. Note which domain has the most views; note which generated discussion.
 
-**[B — Discourse]**: Check Discourse topic view counts, reply counts, and likes for each of the 5 published topics. Note: which domain generated the most discussion? Which had the most views?
+**What engagement data tells you** (informational only — does not change sprint timeline):
 
-**What metrics tell you about Wave 2 scope**:
+| Signal | Implication for Wave 2 |
+|--------|------------------------|
+| Microgrids has most views | Energy infrastructure is high-interest — consider whether Wave 2 water systems document emphasizes energy-water nexus |
+| Conflict Resolution has most discussion | Governance practitioners are engaging — Wave 2 food preservation should connect explicitly to resource allocation governance |
+| Zero discussion by June 12 | Announcement may not have reached target audience — send a personal note to 5–10 specific contacts from the resistance-research coalition; do not adjust Wave 2 scope or timeline |
+| Clinical documents (Psych Support, Vet Care) generate practitioner questions | Consider flagging questions to the advisory-level reviewers identified in the publication readiness checklist |
 
-| Metric signal | Implication |
-|---------------|-------------|
-| Governance domain has most views | Community interest highest in decision-making — Wave 2 should produce a strong governance-adjacent document (conflict resolution or water systems governance) early |
-| Food systems has most replies/discussion | Readers want deeper food content — food preservation as Wave 2 priority |
-| Zero discussion on all 5 domains | Announcement may not have reached the right audience; re-send to broader list; assess whether Wave 2 publication June 15–20 timing needs adjustment |
-| Strong engagement on information infrastructure | Information systems expertise may be harder to recruit — check author pipeline for that domain |
+**Engagement data does not change the Wave 2 sprint timeline.** Wave 2 authors began June 10 regardless. Metrics inform post-publication messaging and Phase 6 scoping, not in-flight research.
 
-**Engagement is informational only** — it does not change the Wave 2 sprint timeline. Wave 2 authors began work June 10 regardless of Wave 1 metrics. Metrics inform post-publication messaging, not in-flight research.
+### Contingency Monitoring (June 11–14)
 
-### Contingency Monitoring (June 11–15)
+**Author silence protocol (escalation trigger: 5 days no activity):**
 
-**Author silence protocol**:
+If an author has no workspace activity by June 15 (5 days after T+0):
+1. Send a direct message: "Checking in — how is the sprint going? Anything blocking you?"
+2. If no response within 2 days: phone or escalation email
+3. If confirmed drop-out: activate scope reduction for that domain OR project lead self-execution
 
-If an author has no activity in their workspace for 5 days (by June 15 = 5 days after T+0):
-1. Send a direct message or email: "Checking in — how is the sprint going? Anything blocking you?"
-2. If no response within 2 days: phone call or escalation email
-3. If confirmed drop-out: activate scope reduction OR project lead self-execution for that domain (decide based on domain priority)
+**Platform instability protocol (trigger: 4+ hours inaccessible):**
 
-**Platform instability protocol**:
+[NEXTCLOUD+MATRIX ONLY]: Check raspby1 server health: SSH to 100.70.184.84, run `docker ps`. If Nextcloud container is down: `docker compose up -d` in the stack directory. If Tailscale is the issue: troubleshoot Tailscale client on raspby1. Fallback: share files via GitHub repo while Nextcloud is restored.
 
-If the chosen platform becomes inaccessible for more than 4 hours during the active sprint (June 11–15):
+[DISCOURSE ONLY]: SSH to VPS, check Discourse status: `cd /var/discourse && sudo ./launcher status`. If down: `sudo ./launcher restart app`. Fallback: coordinate via email while Discourse is restored.
 
-[A — Nextcloud+Matrix]: Check raspby1 server health (`docker ps` on 100.70.184.84). If Docker container is down, restart (`docker compose up -d` in Nextcloud stack directory). If Tailscale connection is the issue, troubleshoot Tailscale client on raspby1. Fallback: share files via GitHub repo (public or private) while Nextcloud is restored.
-
-[B — Discourse]: Check VPS health (SSH to Hetzner/Digital Ocean instance). If Discourse service is down, restart (`./launcher restart app` in `/var/discourse/`). Fallback: coordinate via email direct messages while Discourse is restored.
-
-**If platform is unstable for more than 24 hours**: move coordination temporarily to email. Send all authors a note: "Platform is temporarily down — send draft updates and questions to [email] until restored." This is a degraded-mode fallback, not a platform migration.
+**If platform is unstable for more than 24 hours:** Move coordination temporarily to email. Send all authors: "Platform is temporarily down — send draft updates and questions to [email] until restored." This is a degraded-mode fallback, not a platform migration.
 
 ---
 
-## Platform-Specific Branching Summary
+## June 15 (Saturday) — Wave 2 Onboarding Complete; Readiness Assessment
 
-The table below summarizes every step that differs between the two platforms. The rest of the timeline above is identical.
+**Total orchestrator hours today:** 2–3 hours
 
-| Step | [A] Nextcloud+Matrix | [B] Discourse |
-|------|---------------------|---------------|
-| June 5: Confirm platform access | SSH to raspby1, verify Nextcloud at Tailscale URL, verify Matrix room exists | SSH to VPS, verify Discourse at domain, verify category exists |
-| June 5: Publish Wave 1 domains | Upload stripped .md files to Nextcloud shared folder; pin link in Matrix room | Create one Discourse topic per domain; pin governance topic as category announcement |
-| June 7–8: Send platform invitations | Nextcloud user invite + Matrix room join link | Discourse account invitation email |
-| June 9: Upload scope documents | Add to Nextcloud folders per author | Create private Discourse topics per author |
-| June 9: Post peer review pairings | Pinned message in Matrix `#wave2-general` | Pinned Discourse topic in Wave 2 category |
-| June 10: Author day-1 notification | Matrix direct message | Discourse direct message |
-| June 11–15: Monitor engagement | Nextcloud file access logs + Matrix room activity | Discourse topic views + reply counts |
-| Recovery if platform down | Docker restart on raspby1; fallback to GitHub repo | Discourse launcher restart on VPS; fallback to email |
+### 09:00–12:00 UTC — Onboarding Completion Assessment
 
----
+By June 15, assess: Is Wave 2 fully onboarded and zero-blocked for the June 17 first-draft checkpoint?
 
-## Contingency Triggers and Response Actions
+**Wave 2 readiness checklist (June 15):**
+- [ ] All confirmed Wave 2 authors have platform access (can log in, can see their workspace)
+- [ ] All confirmed authors have received their domain scope documents and annotated bibliographies
+- [ ] All confirmed authors have acknowledged the first-draft checkpoint protocol (T+7, June 17)
+- [ ] Peer review pairings have been announced and each author knows their partner
+- [ ] No author has reported a blocking issue that has not been resolved
+- [ ] Sprint status tracking table is current
+- [ ] Wave 1 publication engagement metrics captured (baseline for June 15)
 
-### Trigger 1: Platform Deployment Takes Longer Than Expected
+**If any item is unchecked:** resolve it today. June 15 is the last day before the T+7 first-draft checkpoint on June 17 becomes the critical path milestone. Any onboarding blocker left unresolved June 15 becomes a sprint blocker June 17.
 
-**Condition**: June 5 morning — platform not fully deployed or inaccessible when readiness checklist is run.
+### 12:00–18:00 UTC — June 20 Readiness Assessment
 
-**Response**:
-1. Do not delay author invitations — send Template 1 (invitations) using email regardless of platform status
-2. Publish Wave 1 domains to GitHub Pages as immediate fallback (documented in `PHASE_5_GITHUB_PAGES_STAGING.md` — this was staged June 1 and is ready to deploy)
-3. Continue platform deployment in parallel; migrate content to chosen platform when deployment completes (can happen June 6–8 without disrupting Wave 2 sprint)
-4. Note in announcement email: "Content is currently accessible at [GitHub Pages URL]. We are migrating to a dedicated platform this week — this link will remain active throughout."
+With Wave 1 publication live and Wave 2 sprint underway, assess readiness for the June 20 first publication target.
 
-**Decision authority**: If platform deployment cannot complete by June 8, confirm GitHub Pages as the permanent publication location for Wave 1. This does not affect Wave 2 — Wave 2 author coordination can happen entirely via email + shared Google Drive or equivalent until platform is stable.
+The June 20 target assumes Wave 2 authors are producing early-domain documents (e.g., food preservation or a partially-drafted domain) ahead of the full July 10 cohort. This is an aspirational date, not the full-cohort target.
 
-### Trigger 2: Author Recruitment Slow (Fewer Than 8 Acceptances by June 9)
+**June 20 publication is achievable only if:**
+- At least one Wave 2 author has strong progress by June 17 T+7 checkpoint (50% draft ready) AND
+- That author's domain is food preservation or water systems (highest reader demand) AND
+- Peer review can happen June 24 and revisions by June 27, meeting a June 28–30 readiness date (not June 20 — the June 20 target is very tight; June 25–30 is more realistic for a first Wave 2 publication)
 
-**Condition**: By end of June 8, fewer than 8 of 15 candidates have accepted (regardless of whether they have confirmed or just expressed interest).
-
-**Response**:
-1. June 9 morning: contact the secondary list (prior collaborators, resistance-research coalition contacts, one-degree referrals from confirmed Wave 2 authors). Target: 5 additional contacts.
-2. Send abbreviated invitation (Template 1 with a note: "We are filling spots quickly for a June 10 start — interest confirmed by June 9 evening gets priority")
-3. Do not delay sprint kickoff for latecomers — confirmed authors begin June 10 regardless
-4. If a secondary-list author confirms June 10–11: onboard them one day late (send scope document June 10, they begin June 11 at T+1)
-
-**Minimum viable cohort**: 3 confirmed authors covering 3 of 5 domains. The project lead self-executes the remaining 2 domains on the same June 10–July 10 timeline.
-
-### Trigger 3: Wave 1 Publication Engagement Very Low (Zero Discussions by June 12)
-
-**Condition**: By June 12 (7 days after publication), zero comments, replies, or engagement on any of the 5 published domains.
-
-**Response**:
-1. Audit the announcement: was the founding coalition email actually sent? Did it reach the intended list? (Check sent folder, confirm no bounce-back)
-2. If announcement was sent but no engagement: expand distribution. Send a personal note to 5–10 specific contacts from the resistance-research coalition who are most likely to engage with the governance or food systems domains.
-3. If announcement was not sent: send it immediately and track engagement over the following 5 days
-4. Do not adjust Wave 2 scope or timeline based on engagement data this early — 7 days is too short for organic discovery
-
-**Zero engagement does not mean low quality**. Research documents distributed to specialized practitioner audiences often have a 2–4 week lag before first engagement. The engagement data at June 12 is an early signal, not a verdict.
-
-### Trigger 4: Author Goes Silent Mid-Sprint
-
-**Condition**: An author has no workspace activity and no response to check-in messages for 7+ days during the sprint (June 10–July 10).
-
-**Response** (already detailed in WAVE_2_AUTHOR_ONBOARDING_KIT, repeated here for the timeline):
-1. Direct email + phone (if available): "We are at the [T+X] checkpoint. Your draft was due [DATE]. Can you give me a status update today?"
-2. If no response within 48 hours: treat as drop-out. Activate scope reduction for that domain (reduce from 4,000–6,000 words to 2,500–3,500 words, which is completable by the project lead in 3–4 hours). OR reassign to a Wave 2 author who has completed their primary domain ahead of schedule.
-3. Update peer review pairing accordingly (the dropped author's peer reviewer is now unpartnered — reassign to project lead for their peer review).
-
-**No-guilt escalation**: The onboarding materials set the expectation that early notice is critical. A drop-out that gives 5+ days notice is manageable; one that gives 0 notice blocks the peer review chain. The escalation script is firm but non-adversarial.
+**Honest assessment:** The June 20 target for Wave 2 first publication is achievable only in the best-case scenario (all authors onboarded by June 10, strong T+7 checkpoints June 17, fast peer review). The operationally realistic first Wave 2 publication date is June 28–30 for the fastest domain. The full-cohort publication target of July 10–15 is solid.
 
 ---
 
-## Status Grid: End of June 15
+## Platform-Specific Branching Summary Table
 
-By June 15 (10 days into the plan), expect this status:
+All steps below are the only platform-diverging actions in this timeline. Everything else is identical.
+
+| Step | [NEXTCLOUD+MATRIX] | [DISCOURSE] |
+|------|-------------------|-------------|
+| June 5: Platform pre-check | SSH raspby1; confirm Docker + Nextcloud at Tailscale URL | SSH VPS; confirm Discourse launcher status |
+| June 6: Platform deployment | Docker stack: 6–8 hours; create folder structure | Discourse installer: 3–4 hours; create categories and group |
+| June 7: Author workspace creation | Create Nextcloud domain folders; upload scope files | Create Discourse scope topics + draft thread topics per author |
+| June 7–8: Author access provisioning | Create user accounts; share folders; create Matrix rooms; send invitations | Send Discourse account invitations; add to wave-2-contributors group |
+| June 9: Publish Wave 1+2 content | Upload stripped .md files to Phase5-Wave1-Published folder; set share link; pin in Matrix room | Create one Discourse topic per document in reverse order; create announcement topic |
+| June 9: Wave 2 scope distribution | Add scope and bibliography files to each author's Nextcloud folder | Post scope and bibliography as Discourse scope topic body |
+| June 9: Peer review pairing announcement | Pinned message in Matrix `#wave2-general` room | Pinned Discourse topic in Wave 2 private category |
+| June 10: Sprint kickoff message | Matrix direct message per author OR announcement in `#wave2-general` | Discourse direct message per author OR new announcement topic in Wave 2 category |
+| June 11–15: Daily engagement check | Nextcloud file access logs + Matrix room activity | Discourse topic views + reply counts |
+| Platform recovery if down | `docker compose up -d` on raspby1; fallback: GitHub repo | `./launcher restart app` on VPS; fallback: email |
+
+---
+
+## Contingency Branches
+
+### Contingency A — Platform Deployment Delay
+
+**Slip trigger:** Platform setup takes more than 6 hours [NEXTCLOUD+MATRIX] or more than 4 hours [DISCOURSE] during the June 6 deployment block, leaving less than 48 hours before June 9 publication day.
+
+**Response:**
+1. Do not delay Wave 2 author invitations — they go out June 5–6 regardless of platform status
+2. Activate GitHub Pages fallback immediately: push frontmatter-stripped copies to a GitHub Pages branch (documented in `PHASE_5_GITHUB_PAGES_STAGING.md`). This is a staged fallback already prepared June 1.
+3. Publish to GitHub Pages as the publication target: link in the June 9 announcement email goes to the GitHub Pages URL, not the chosen platform URL
+4. Continue platform deployment in parallel: migration from GitHub Pages to the chosen platform can happen June 10–12 without disrupting Wave 2 sprint
+5. Note in announcement email: "Content is currently accessible at [GitHub Pages URL]. We are migrating to a dedicated platform this week — this link will remain active."
+
+**Wave 2 impact:** None. Wave 2 author onboarding and the June 10 sprint kickoff are unaffected by platform deployment status. Authors receive scope documents and begin writing regardless of whether the primary platform is up.
+
+**Publication delay:** June 9 → June 12 (3-day slip). This is within the tolerable range noted in the scope.
+
+### Contingency B — Slow Author Recruitment (Fewer Than 4 Authors Confirmed by June 8)
+
+**Slip trigger:** By end of day June 8, fewer than 4 of 15 invited candidates have confirmed participation (regardless of pending or non-responses).
+
+**Response:**
+1. June 9 morning: contact secondary candidate list (prior project collaborators, resistance-research corpus contributors, one-degree referrals from any confirmed Wave 2 authors). Target 5 additional contacts with an abbreviated invitation note: "We are filling the final Wave 2 spots for a June 10 start — if interested, a quick reply by June 9 evening gets priority."
+2. Shift Wave 2 leadership from 4 leads to 3 leads: prioritize medical/food/water domains, self-execute seed saving and equipment repair. Rationale: seed saving and equipment repair are the lowest-credential domains and most amenable to orchestrator self-execution from practitioner literature.
+3. For the 3-lead model:
+   - Lead 1: Food Preservation & Storage (highest reader demand — must have external author if possible)
+   - Lead 2: Water Systems Management (highest operational gap — author with civil/water background strongly preferred)
+   - Lead 3: Livestock Management & Pasture Coordination (concentrated Zone 5 author pool)
+   - Orchestrator self-executes: Seed Saving + Equipment Repair (targeting July 10 alongside the 3-lead cohort)
+4. Do not delay sprint kickoff — June 10 is fixed; late-confirmed authors (confirmed June 10–11) begin at T+1 with a one-day adjusted timeline
+
+**Wave 2 publication impact:** None if 3 leads confirmed. If only 1–2 confirmed by June 10, the July 10 full-cohort target remains achievable via orchestrator self-execution for remaining domains.
+
+### Contingency C — Wave 2 Author Onboarding Incomplete by June 14
+
+**Slip trigger:** By June 14, one or more confirmed Wave 2 authors have not completed access setup, have not acknowledged their scope document, or have not posted a T+0 initial note in their workspace — and the issue cannot be resolved by June 15.
+
+**Response:**
+1. For the unresponsive author: escalate via email and phone before marking as a risk. Give until June 16 to check in. If no contact by June 16: treat as potential drop-out.
+2. If an author confirms they are behind or overwhelmed: offer scope reduction (reduce target from 4,000–6,000 words to 2,500–3,500 words; this is completable in 15 hours of focused work on a 25-day timeline from June 15 to July 10).
+3. If an author confirms drop-out (or is unreachable through June 16): activate project lead self-execution for that domain. A 4,000-word practitioner document can be self-executed in 12–15 orchestrator hours using the same annotated bibliography already prepared.
+4. Adjust the Wave 2 publication target: push from June 20 (aspirational) to June 25 (still achievable if 3 leads are confirmed and making progress). Push the full-cohort publication target from July 10 to July 25 (two-week slip — tolerable per scope parameters).
+
+**July 25 full-cohort target** (vs. original July 10) is only triggered if: more than one author drops out AND scope reduction is not feasible AND orchestrator self-execution is partially blocked. In the base case with 3+ confirmed authors, July 10 stands.
+
+---
+
+## Resource Allocation
+
+**Total orchestrator hours, June 5–15:**
+
+| Date | Activity | Estimated Hours |
+|------|----------|----------------|
+| June 5 | Readiness verification + author invitations | 4–5 hours |
+| June 6 | Platform deployment + publication preparation | 4–6 hours |
+| June 7 | Screening calls + platform validation | 3–4 hours |
+| June 8 | Go/no-go + final confirmations + access provisioning | 2–3 hours |
+| June 9 | Publication day + author onboarding + post-launch monitoring | 4 hours |
+| June 10 | Sprint kickoff + 24-hour publication review | 3 hours |
+| June 11 | Daily monitoring | 0.5 hours |
+| June 12 | Daily monitoring | 0.5 hours |
+| June 13 | Daily monitoring | 0.5 hours |
+| June 14 | Daily monitoring | 0.5 hours |
+| June 15 | Onboarding completion assessment + June 20 readiness assessment | 2–3 hours |
+| **TOTAL** | | **24–30 hours across 11 days** |
+
+**Platform-admin hours (platform-specific, included in totals above):**
+
+| Platform | Deployment | Workspace setup | Monitoring | Total |
+|----------|-----------|-----------------|-----------|-------|
+| [NEXTCLOUD+MATRIX] | 6–8 hours (June 6) | 2–3 hours (June 7–9) | Minimal (June 11–15) | 8–11 hours |
+| [DISCOURSE] | 3–4 hours (June 6) | 1–2 hours (June 7–9) | Minimal (June 11–15) | 4–6 hours |
+
+**Author hours (Wave 2 authors, not orchestrator):** Zero during June 5–9 (recruitment and onboarding). Beginning June 10, authors work 4–6 hours/week independently — no orchestrator time required per author-hour of research work.
+
+**External reviewer hours (advisory):** 2–3 hours per reviewer if clinical peer reviewers for Psychological Support and Veterinary Care documents are engaged before June 9. This is optional (advisory, not blocking).
+
+---
+
+## Success Criteria for June 5–15
+
+Three gates, each independently verifiable:
+
+**Gate A — Wave 1 publication live and monitored by June 9:**
+- All five Wave 1+2 documents accessible on chosen platform (or GitHub Pages fallback)
+- Founding coalition announcement email sent
+- 24-hour post-publication review complete with no unresolved access failures
+- Engagement baseline captured
+
+**Gate B — All Wave 2 authors onboarded by June 15:**
+- All confirmed Wave 2 authors have platform access confirmed (can log in and see their workspace)
+- All confirmed authors have their domain scope documents and annotated bibliographies
+- Peer review pairings announced and acknowledged
+- No author is blocked from starting work due to access or scope issues
+
+**Gate C — Wave 2 authoring environment ready June 15:**
+- Author status tracking table is populated and current
+- T+7 checkpoint dates logged per author (June 17 for all June 10 starters)
+- Sprint communication channel is active (Matrix rooms or Discourse Wave 2 category — tested and accessible)
+- Contingency monitoring protocols are in place (author silence trigger, platform instability recovery)
+
+---
+
+## Status Grid: Target State at June 15 EOD
 
 | Item | Target State |
 |------|-------------|
-| Wave 1 publication | All 5 domains live on chosen platform, announcement sent |
-| Wave 2 authors confirmed | 4–6 authors across 4–5 domains |
-| Sprint status | T+5 (authors 5 days into 30-day sprint; first checkpoint in 2 days) |
-| Engagement tracking | Baseline metrics captured (views, downloads, or discussion count per domain) |
-| Contingencies triggered | 0–1 (expected — minor platform adjustment or one slow-response author) |
+| Wave 1+2 publication | All 5 documents live on chosen platform (or GitHub Pages fallback); announcement sent; 24-hour review complete |
+| Wave 2 authors confirmed | 3–6 authors across 3–5 domains (minimum viable: 3) |
+| Sprint status | T+5: authors 5 days into 30-day sprint; T+7 first checkpoint 2 days away |
+| Engagement baseline | Views, downloads, or reply counts captured per document (T+7 baseline) |
+| Contingencies triggered | Expected: 0–1 minor (slow author response, minor platform adjustment) |
 | Next milestone | June 17 (T+7): first-draft checkpoints due from all Wave 2 authors |
 
-If the actual state on June 15 diverges significantly from the above, the next document to consult is `PHASE_5_WAVE_2_DECISION_FRAMEWORK.md` — it covers scope adjustment and sequencing decisions for the July phase of the sprint.
+If actual state on June 15 diverges significantly from the above, consult `PHASE_5_WAVE_2_DECISION_FRAMEWORK.md` for scope adjustment and sequencing decisions.
+
+---
+
+*Version 2.0 — full dual-platform edition with executive summary, resource allocation, and three named contingency branches*
+*Created June 4, 2026 | Execution starts June 5 08:00 UTC | Publication target June 9 13:00 UTC | Wave 2 sprint start June 10 | Wave 2 onboarding complete June 15*

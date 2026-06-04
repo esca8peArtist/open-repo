@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-04T06:08:22Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-04T07:07:57Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 9.4% (843,620 tokens) | All-models 4.4% | Reset in 114h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 9.4% (843,620 tokens) | All-models 4.5% | Reset in 113h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -97,29 +97,6 @@
 (NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-1. ✅ **Stockbot WebSocket Analysis (GAME-CHANGER)**:
-   - Analyzed entire trading stack: signal generation (REST), market hours (REST), account equity (REST), order submission (REST), fill confirmation (REST poll loop)
-   - WebSocket provides ONLY: position price updates for monitoring via `_on_stream_trade` callback
-   - **Verdict**: WebSocket is NOT on critical path. 4,397 errors are noise, not blockers
-   - **Immediate Options** (all viable for market open):
-     - Option A (10 min): One-line patch for 406 backoff handling in `src/data/realtime_stream.py` line ~104
-     - Option B (30 min): Add `DISABLE_REALTIME_STREAM=1` env var to Jetson `.env`, restart containers
-     - Option C (90 min): Add optional REST price polling via `StockLatestTradeRequest`
-   - **Decision matrix provided**: Alpaca clears by 11:00 UTC → proceed normal; unresponsive → disable stream + patch, trade anyway
-   - **Rate limit headroom**: Current REST usage 5-8 calls/cycle, 6-9 calls/min — under 5% of 200 req/min limit
-   - Files created: `contingency/STOCKBOT_REST_POLLING_CONTINGENCY_ANALYSIS.md`, `contingency/STOCKBOT_REST_POLLING_IMPLEMENTATION_STARTER.md`
-
-2. ✅ **Resistance-Research Phase 2 Execution Prep**:
-   - Created Domain 48 execution checklist (June 16-20 window, specific Sentencing Project + Prison Policy Initiative lead rationale)
-   - Created Domain 50 execution checklist (August 1 hard deadline, Lambda Legal lead rationale based on Romer v. Evans precedent connection)
-   - Both follow Domain 51 checklist structure: pre-send verification → Wave 1/2 contacts → Day 7 checkpoint → contingencies
-   - Files: `DOMAIN_48_RESEARCH_EXECUTION_CHECKLIST.md`, `DOMAIN_50_RESEARCH_EXECUTION_CHECKLIST.md`
-
-3. ✅ **Open-Repo June 12 Deployment Go-Live Checklist**:
-   - Created comprehensive operational companion to existing runbook (919 lines, ~2,700 words)
-   - Structure: T-2h pre-flight → T-0 to T+25min deployment steps with decision trees → T+0 to T+60min monitoring → rollback procedures → Day 1/7 follow-up
-   - Includes communication templates, escalation matrix, success criteria
-   - File: `projects/open-repo/DEPLOYMENT_JUNE_12_GO_LIVE_CHECKLIST.md`
 
 **Strategic Impact**:
 - **Stockbot status changed**: From "CRITICAL BLOCKER" to "Non-blocking with workaround options" — June 4 market open is now viable even if Alpaca doesn't clear WebSocket
@@ -136,3 +113,26 @@
 2. If user chooses B or C before 13:30 UTC, apply immediately
 3. Stockbot trades normally on June 4 regardless of WebSocket status
 4. Post-market: Implement REST polling if desired (Option C)
+
+
+---
+
+## Session 2748 (2026-06-04 06:16–06:30 UTC)
+
+**Orchestrator: Exploration Queue Verification + Pre-Market Scheduling**
+
+**Actions**:
+1. ✅ **Orientation & Block Processing** (ORCHESTRATOR_STATE.md verified; BLOCKED.md reviewed; all active blocks processed; INBOX.md confirmed empty)
+2. ✅ **Verified Exploration Queue Item 57 Complete** — resistance-research Batch 2 Full Activation Roadmap. All three deliverables production-ready (BATCH_2_RESOURCE_ALLOCATION_MATRIX.md, BATCH_2_CONTINGENCY_ACTIVATION_SCENARIOS.md, BATCH_2_JUNE_CHECKPOINT_READINESS_PROTOCOL.md). Updated status marker in EXPLORATION_QUEUE.md.
+3. ✅ **Updated CHECKIN.md** with session summary and confirmed decision deadlines (seedwarden 13:00 UTC, market open 13:30 UTC)
+4. ✅ **Scheduled wake-up for 11:00 UTC** — Begin stockbot pre-market health checks and prepare for seedwarden Track B activation at 13:00 UTC
+
+**Decisions & Status**:
+- **Seedwarden**: No user response received yet. Orchestrator will activate Track B at 13:00 UTC per standing order (TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md ready for execution)
+- **Stockbot**: Trading sessions verified operational; ready for 13:30 UTC market open. Pre-market checks scheduled 11:00–13:00 UTC.
+- **Resistance-research**: No autonomous work available until June 9 (Domain 51 execution prep complete; Domain 51 execution scheduled June 9-12)
+- **Systems-resilience**: Platform decision due EOD (lower priority than seedwarden); Phase 6 Wave 2 planning (Item 54) available but deferred until after 13:30 UTC market open
+
+**No Blockers** — All critical infrastructure verified ready. Awaiting user input on decision deadlines.
+
+**Next Session**: 11:00 UTC — Pre-market health checks + decision point execution
