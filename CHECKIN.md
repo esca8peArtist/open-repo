@@ -48,6 +48,27 @@
 
 **Next Steps**:
 - **Until 13:00 UTC**: Monitor for user decisions on seedwarden Track and systems-resilience platform
+
+---
+
+## Session 2747 (2026-06-04 05:52 UTC — Orchestrator: Decision Point Monitoring Prep)
+
+**Status**: 🔵 **MONITORING MODE** — No autonomous work available. Awaiting two critical user decision deadlines:
+1. **13:00 UTC**: Seedwarden Track decision (auto-activate Track B if no response)
+2. **13:30 UTC**: Stockbot market open (monitor trading session startup)
+
+**Key Points**:
+- Stockbot database and trading sessions verified operational
+- All project status reviewed; only Seedwarden has immediate-term autonomous work (13:00 UTC activation)
+- Resistance-research: Domain 51 execution prep COMPLETE; execution June 9-12
+- Systems-resilience: Platform decision pending (due EOD, but lower priority than Seedwarden)
+- No changes to PROJECTS.md or BLOCKED.md needed at this time
+
+**User Decisions Still Needed**:
+1. **Seedwarden Track** (by 13:00 UTC): A/B/Both — orchestrator will activate Track B at 13:00 UTC if no response
+2. **Systems-Resilience Platform** (by EOD): Nextcloud+Matrix (recommended) or Discourse
+
+**Next Orchestrator Action**: Monitor for responses and execute Seedwarden Track B activation if deadline passes without user input.
 - **At 13:00 UTC**: If no user response, activate Seedwarden Track B (autonomous execution)
 - **11:00 UTC+**: Begin stockbot pre-market health checks
 - **13:15 UTC**: Final market-open readiness verification
