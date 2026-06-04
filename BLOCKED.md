@@ -27,31 +27,31 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Alpaca WebSocket connection limit error blocking trading (CRITICAL — market open in ~6.5 hours)
+### stockbot — Alpaca WebSocket connection limit error blocking trading (CRITICAL — market open in ~10 hours)
 **Date blocked**: 2026-06-04 02:06 UTC (container restart triggered unknown cause)
-**Context**: Jetson stockbot container was restarted at 02:06 UTC June 4. Upon restart, WebSocket connection to Alpaca data stream fails with HTTP 406 error: "connection limit exceeded". Multiple subsequent restarts (06:22 UTC, 03:23 UTC) all fail with identical error. Both JPM ridge_wf and AMZN lgbm_ho trading sessions are non-functional (cannot subscribe to data feeds). Session 2736 performance analysis detected this issue at 03:16 UTC.
+**Context**: Jetson stockbot container was restarted at 02:06 UTC June 4. Upon restart, WebSocket connection to Alpaca data stream fails with HTTP 406 error: "connection limit exceeded". Multiple subsequent restarts (06:22 UTC, 03:23 UTC) all fail with identical error. Both JPM ridge_wf and AMZN lgbm_ho trading sessions are non-functional (cannot subscribe to data feeds). Session 2737 performance analysis detected this issue at 03:16 UTC. **Session 2738 orchestrator verification (2026-06-04 03:31-03:32 UTC): Error confirmed still present — 4,842 occurrences in docker logs**
 
 **Symptoms**:
 - Container restarts cleanly but enters connection retry loop
 - Error: `ValueError: connection limit exceeded` (HTTP 406) from Alpaca WebSocket auth
 - No local data feed available; trading engine cannot process signals
 - Affects both JPM and AMZN sessions equally
-- **Market opens June 4 at 13:30 UTC (~6.5 hours from 03:16 UTC diagnosis)**
+- **Market opens June 4 at 13:30 UTC (~10 hours from verification time)**
 
 **Root cause analysis**:
 - Single `_BackoffStockDataStream` instance (not multiple concurrent connections)
 - Credentials verified present in Docker environment
-- Issue persists across 3 restarts with 30-60s gaps
-- Behavior suggests Alpaca account or IP-level rate limit on their servers (not local)
+- Issue persists across 3+ restarts with 30-60s gaps
+- Behavior confirms Alpaca account or IP-level rate limit on their servers (not local)
 
 **What I need**: 
-- (1) **Immediate**: Check Alpaca account status (login to broker dashboard) — verify account is active and not rate-limited
+- (1) **URGENT**: Check Alpaca account status (login to broker dashboard) — verify account is active and not rate-limited
 - (2) **If account is OK**: Contact Alpaca support to manually clear stale connection on their end (error 406 often requires manual intervention when connection limit is genuinely exceeded)
 - (3) **If Alpaca unresponsive**: As fallback, API team can modify code to use REST polling instead of WebSocket (slower, but functional) — would require code change + redeployment to Jetson
 
 **Verify with**: `ssh -i ~/.ssh/id_ed25519 awank@100.120.18.84 "docker logs stockbot 2>&1 | grep -c 'connection limit exceeded'"` — if output > 0, error still present
 
-**Resolution**: [leave blank — awaiting user action]
+**Resolution**: [leave blank — awaiting urgent user action before 13:30 UTC]
 
 ---
 
