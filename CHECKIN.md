@@ -1,5 +1,39 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2732 (2026-06-04 Current UTC — Decision Deadline Status Final Review)
+
+**Status**: ⚠️ **CRITICAL DECISION WINDOW FOR DOMAIN 49 HAS CLOSED** — The June 4-5 execution window for Domain 49 (Louisiana redistricting leverage) is now passed. Other 3 critical decisions remain open. All production-ready materials in place for immediate user action.
+
+**Session Work**:
+- ✅ **Orientation complete**: All state files (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md) verified consistent
+- ✅ **Critical deadline assessment**:
+  - 🔴 **Domain 49 (resistance-research)**: EXECUTION WINDOW CLOSED — June primary filing deadlines THIS WEEK. Window was June 4-5 only; now passed. Redistricting leverage lost. Materials available for Q3 2026 deferred execution if desired.
+  - ✅ **Alpaca feed (stockbot)**: RESOLVED — Session 2731 implemented IEX feed; trading engine now ready for market sessions
+  - 🟡 **seedwarden Track (A/B/Both)**: ACTIONABLE — Gate 1 launch materials ready; no hard deadline; can execute June 7-10 window
+  - 🟡 **systems-resilience Platform (Nextcloud+Matrix vs Discourse)**: ACTIONABLE — Both deployment roadmaps ready; no hard deadline; impacts June 5 author recruitment wave but doesn't block it
+- ✅ **Active blocks verified**: 2 items remain (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) — both awaiting user action only
+- ✅ **Determination**: All autonomous work phases 1-6 complete and staged. Zero additional autonomous scope available. Awaiting user decisions on seedwarden Track and systems-resilience Platform to unblock Phase 2+ work.
+
+**Decision Summary**:
+
+| Decision | Status | Materials | User Action |
+|---|---|---|---|
+| **Domain 49** (resistance-research) | 🔴 WINDOW CLOSED | PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md ready | Defer to Q3 2026 (redistricting leverage now lost) |
+| **Alpaca feed** (stockbot) | ✅ RESOLVED | IEX_VS_SIP_SIGNAL_COMPARISON.md | Complete: IEX implemented June 4 |
+| **seedwarden Track** | 🟡 ACTIONABLE | PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md | DECIDE: A / B / Both for June 7-10 execution |
+| **systems-resilience Platform** | 🟡 ACTIONABLE | Nextcloud+Matrix & Discourse roadmaps | DECIDE: Nextcloud+Matrix OR Discourse for June 5+ |
+
+**Next Trigger**: User decision on seedwarden Track or systems-resilience Platform → Orchestrator executes corresponding runbook immediately (all pre-tested, production-ready).
+
+**System Status**:
+- ✅ All Phase 1-6 autonomous work: COMPLETE (correct by design)
+- ✅ Alpaca data feed: RESOLVED and deployed
+- 🔴 Domain 49 redistricting leverage: WINDOW CLOSED
+- 🟡 seedwarden & systems-resilience: ACTIONABLE, awaiting user choice
+- ⏳ No additional autonomous work available until user provides decisions
+
+---
+
 ## Since Last Check-in — Session 2731 (2026-06-04 02:00–02:30 UTC — Alpaca IEX Feed Resolved)
 
 **Status**: ✅ **BLOCK RESOLVED** — Alpaca data feed configuration implemented. Stockbot trading engine now ready for market sessions.
