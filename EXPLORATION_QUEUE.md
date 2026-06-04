@@ -106,6 +106,18 @@
 **Owner**: stockbot subagent (Session 2757)
 **Deadline**: June 11 ✅ EARLY COMPLETE (committed June 4, execution window just opened)
 
+### 61. ⏳ stockbot — June 4-10 Live Execution Analysis & Contingency Routing (Session 2758 — Added June 4)
+**Scope**: Items 59-60 provide automation frameworks and signal validation infrastructure. June 4-10 is the first operational execution window post-framework deployment (market opens 13:30 UTC June 4). Orchestrator must execute daily monitoring, signal quality checks, and contingency routing. Pre-stage June 4 evening post-market analysis template + contingency decision tree so 20:00 UTC analysis run is hands-off orchestration (no human intervention needed for daily checkpoint).
+- **Deliverables**: 
+  - June 4-10 daily monitoring checklist (market open, bar quality, signal logs, fill summary, close-of-day analysis)
+  - Post-market-close analysis template (6-point signal quality score per Item 60 framework; threshold gates for Day 2 go/no-go)
+  - Contingency routing matrix (if signal quality <60%, trigger backtest recalibration; if fills <50% expected, escalate; if 3+ gap violations, pause and investigate)
+  - June 11 comprehensive results synthesis (win rate, Sharpe, aggregate performance vs. backtest baseline)
+- **Owner**: orchestrator + stockbot subagent (parallel analysis after 20:00 UTC market close)
+- **Deadline**: June 10 evening (Day 7 checkpoint synthesis ready for June 11 post-market decision)
+
+### [open slot — Item 62+ for future queue items]
+
 ### 55. ✅ resistance-research — Domain 49 June 4-5 Execution Pre-Flight Checklist (Session 2711 COMPLETE)
 **Status**: Completed June 3 (Session 2711, 22:15–22:40 UTC). All three deliverables production-ready.
 **Deliverables** (ALL COMPLETE):
