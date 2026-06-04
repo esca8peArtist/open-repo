@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-04T02:12:09Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-04T02:51:38Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 9.4% (843,620 tokens) | All-models 3.9% | Reset in 118h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 9.4% (843,620 tokens) | All-models 4.0% | Reset in 117h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (1/4 Candidates Complete: Domain 51)** (Sessions 502-524, Session 907, Session 1043, Session 2505) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[PHASE 2 BATCH 2 ROADMAP + DOMAINS 49-50 FULL RESEARCH COMPLETE (SESSION 2698)]** — **🚨 CRITICAL FINDING: Domain 49 Timeline Inversion — Louisiana Gov signed congressional map June 1 eliminating majority-Black district. June primary filing deadlines = hard cutoff. Domain 49 must execute THIS WEEK (not July). APPROVAL + TIMELINE DECISION NEEDED BY EOD TODAY.** All Phase 2 materials production-ready: `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md` (2,030w, timeline by domain + 5 contingency s … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[DOMAIN 51 RUNBOOK PATCHES COMPLETE — JUNE 9-12 DISTRIBUTION READY (SESSION 2735)]** — All 5 friction corrections applied: pre-checklist gate, verified sourcing (Public Citizen/Brennan/CRS), confirmed ballot measures (AK, CA, MO, MT), FEC vacancy update (4 of 6), $1.9B precision data. **Domain 51 production-ready** (8,500w, 58 citations; research complete Session 2505, runbook corrected Session 2735). Execution path: June 9 national contacts (CLC, Issue One) → June 11 California ball … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: 🟡 **[DATA FEED SUBSCRIPTION CHOICE PENDING]** — HTTP API working perfectly (account: $440K buying power, trading enabled). Current config uses `ALPACA_DATA_FEED=sip` (paid subscription required). **Awaiting user decision**: (A) Upgrade Alpaca SIP subscription, OR (B) Switch to free IEX feed. Implementation is 5-min `.env` edit + Docker restart once chosen. **Also complete**: Gate 1 root cause analysis identified structural long bias in AAPL models (zero voluntary SELL signals); Phase 3 plan … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[IEX FEED DEPLOYED (SESSION 2731) + 2-SESSION CONFIG LIVE (JPM+AMZN)]** — HTTP API working perfectly (account: $440K buying power, trading enabled). IEX free feed confirmed running on Jetson. Alpaca data subscription choice resolved: free IEX feed (90-93% signal fidelity, sufficient for current phase). **2-session live config** (JPM ridge_wf + AMZN lgbm_ho): JPM passes all 6 graduation gates (OOS Sharpe 4.412, 6/6 PASS ✅), AMZN near-ready (5/6 PASS, G5 bear-regime exit fixable without  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**; **Standing task: 18 wild edibles habit photos 18/18 COMPLETE (Session 2505 verified)**
@@ -97,43 +97,42 @@
 (NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+   - Database verification (Pi-side): 50 trades, 0 AAPL SELLs, $309.84 current AAPL price (+$4,532 unrealized)
+   - Phase 3 recommendations documented: mandatory voluntary-exit screen (20%+), calibrated gate architecture, extended OOS validation, feature balance requirements, AAPL retrain post-July
+   - **Verdict**: Analysis complete and actionable. No further work needed.
 
-2. ✅ **Comprehensive Decision Summary Document** (10 min):
-   - Created consolidated decision guide for all 4 pending user choices
-   - Format: Clear choice matrix, implications, recommendations, timeline sequencing
-   - Coverage: Domain 49 (resistance-research), Alpaca feed (stockbot), platform (systems-resilience), seedwarden track
-   - Decision impacts mapped to June 4-5 execution timelines
-   - All files listed and confirmed production-ready
+**Decision Status** (current as of this session):
+- 🔴 **Domain 49** (resistance-research): EXECUTION WINDOW CLOSED (redistricting leverage lost)
+- ✅ **Alpaca feed** (stockbot): RESOLVED (IEX feed deployed Session 2731)
+- 🟡 **seedwarden Track** (A/B/Both): ACTIONABLE, no deadline
+- 🟡 **systems-resilience Platform** (Nextcloud+Matrix vs Discourse): ACTIONABLE, no deadline
 
-3. ✅ **CHECKIN.md Update** (2 min):
-   - Added Session 2708 summary with decision assessment
-   - Consolidated all 4 decisions into scannable format
-   - Provided system status and next-steps clarity
+**Active Exploration Queue Items Remaining**:
+- resistance-research: Phase 2 Domain Research Dry-Run & Execution Friction Assessment (4-5h)
+- systems-resilience: Platform-Specific Technical Deployment Playbooks (6-8h)
+- [Next items to queue if needed based on time/budget]
 
-**Standing By** (in order of deadline urgency):
-- 🔴 **CRITICAL — Alpaca WebSocket auth failures ongoing** (block reverified at Sessions 2680-2683)
-  - Status: STILL ACTIVE (2 Docker auth failures in recent logs)
-  - Deadline: Before 13:30 UTC market open (PASSED; no trading June 3)
-  - Recovery: IEX feed ($0, 5 min) vs SIP subscription ($50+/mo, 15 min)
-  
-- 🟢 **Domain 49 Approval** (resistance-research)
-  - Status: CRITICAL TIMING — Louisiana redistricting June 1, primary deadlines THIS WEEK
-  - Deadline: 23:59 UTC today (6h 59m)
-  - Impact: 23-hour execution window; if missed, loses redistricting leverage entirely
-  - Materials: `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md`, pre-flight runbooks, contact lists
-  
-- 🟢 **seedwarden Track Decision** (A/B/Both)
-  - Status: DECISION-READY — Zero blockers on Track B, execution checklists complete
-  - Deadline: 23:59 UTC today
-  - Materials: `GATE_1_LAUNCH_SEQUENCE_CHECKLIST.md`, `TRACK_B_EXECUTION_CHECKLIST.md`
-  
-- 🟢 **systems-resilience Platform Choice** (Nextcloud+Matrix vs Discourse)
-  - Status: DECISION-READY — Both roadmaps v2.0 production-ready
-  - Deadline: 23:59 UTC today
-  - Materials: `PHASE_5_NEXTCLOUD_MATRIX_DEPLOYMENT_ROADMAP.md`, `PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md`
+**Next Action**: Continue with next exploration queue item or standby for user decisions.
 
-**System Status**: Production-ready. All Phase 1-6 autonomous work complete and staged. Zero additional autonomous scope available (correct by design, consistent with Sessions 2678-2683). All exploration queue items decision-gated and documented. Awaiting user decisions by 23:59 UTC for immediate June 4-5 execution.
 
-**Session Token Usage**: ~500 tokens (orientation, decision summary, CHECKIN update)
+2. ✅ **Resistance-Research: Phase 2 Domain 51 Dry-Run Execution Friction Assessment Verification**
+   - Confirmed deliverables exist at:
+     - `projects/resistance-research/PHASE_2_DOMAIN_DRY_RUN_REPORT.md` (June 4)
+     - `projects/resistance-research/PHASE_2_DOMAIN_51_DRY_RUN_REPORT.md` (June 3, targeted patches)
+   - **Critical Finding**: Domain 51 research is ALREADY PRODUCTION-READY (7,709-8,500 words, 58 citations, complete May 13, updated June 1)
+   - **Actionable Result**: Do NOT run Domain 51 research sprint. Instead:
+     1. Apply 5 targeted runbook patches (2-3 hours work)
+     2. Execute June 9-12 distribution via `DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md`
+   - **5 Friction Points Identified (all fixable)**:
+     1. (HIGH) OpenSecrets URLs return 403 → replace with Brennan Center analysis
+     2. (HIGH) Supreme Court/legal URLs return 403 → replace with Cornell Law
+     3. (HIGH) State ballot measure list outdated (AZ/MA/ND wrong) → should be AK/CA/MO/MT
+     4. (MEDIUM) FEC vacancy count outdated (2 of 6) → actually 4 of 6 as of May 2026
+     5. (MEDIUM) "Strengthening the Rules" source doesn't exist → use Issue One advocacy page
+   - **5 Runbook Gaps Documented**: source access contingency table missing, no real-time verification mandate, vehicle type breakdown ambiguity, session time not broken down, no source quality standards
+   - **Confidence**: 78% (domain already complete, contingencies work well, patches are straightforward)
 
----
+**Token Usage This Session**:
+- Stockbot Gate 1 analysis verification: ~115k
+- Resistance-research dry-run verification: ~52k
+- Cumulative: ~167k / 200k budget (33k remaining)
