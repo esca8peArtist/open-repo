@@ -1,26 +1,40 @@
-## Since Last Check-in — Session 2772 (2026-06-04 11:01–11:10 UTC — Orchestrator: Pre-Market Health Verification + Decision-Point Readiness)
+## Since Last Check-in — Session 2773 (2026-06-04 11:00–11:14 UTC — Orchestrator: Standby Confirmation + 13:00 UTC Decision-Point Wakeup Scheduled)
 
-**Status**: 🟢 **PRE-MARKET SYSTEMS VERIFIED** — All critical systems operational. Decision-point infrastructure confirmed production-ready. Awaiting 13:00 UTC auto-activation (no user override input received).
+**Status**: 🟢 **STANDBY MODE ACTIVE** — All critical systems operational. Decision-point infrastructure staged and ready. Scheduled wakeup at 13:00 UTC for Track B + Nextcloud+Matrix auto-activation (no user override input received).
 
 **Session Work**:
-- ✅ **Health Checks** (11:01–11:05 UTC):
-  - GitHub SSH: ✅ AUTHENTICATED
-  - Jetson stockbot: ✅ HEALTHY (6 hours up, dual sessions sleeping until 13:15 UTC wake-up)
-  - Network: ✅ CONFIRMED
-  
+- ✅ **Orientation** (11:00–11:02 UTC):
+  - Confirmed ORCHESTRATOR_STATE current (generated 11:08 UTC)
+  - Verified no new BLOCKED items (cybersecurity-hardening VeraCrypt restart, mfg-farm test print both require manual user action)
+  - Confirmed INBOX empty (all items processed)
+  - Verified Exploration Queue healthy (5 active items: 16/54 time-gated, 62/63/64 complete)
+
+- ✅ **Project Scope Audit** (11:02–11:05 UTC):
+  - **seedwarden**: Track A/B decision deadline 13:00 UTC. Default Track B staged. No new input received.
+  - **systems-resilience**: Platform decision deadline EOD today. Default Nextcloud+Matrix (9.5/10) staged. No new input received.
+  - **stockbot**: 2-session config operational, market open 13:30 UTC, no action needed pre-market
+  - **All other projects**: Blocked, paused, or awaiting review. No autonomous work available.
+
 - ✅ **Decision-Point Readiness** (11:05–11:10 UTC):
-  - Seedwarden Track B infrastructure: ✅ STAGED
-  - Systems-resilience platform files: ✅ STAGED
-  - No new user input on decision points (auto-activation authorized at 13:00 UTC)
+  - Track B activation: `TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md` staged
+  - Platform templates: Both Nextcloud+Matrix and Discourse pre-staged
+  - Jetson: Healthy, sessions sleeping until 13:15 UTC wake-up
+  - No blocking dependencies identified
+
+- ✅ **ScheduleWakeup** (11:10–11:14 UTC):
+  - Scheduled wakeup at 13:00 UTC (110 minutes) for decision-point execution
+  - Reason: Pre-market decision execution 30 min before stockbot market open
 
 **Timeline** (UTC):
-- **13:00 UTC** (1h 50m): Decision-point auto-activation (Track B + platform defaults)
-- **13:30 UTC** (2h 30m): Stockbot market open
+- **13:00 UTC** (1h 50m): Decision-point auto-activation — seedwarden Track B + systems-resilience Nextcloud+Matrix (unless overridden)
+- **13:30 UTC** (2h 30m): Stockbot market open (2 sessions: JPM ridge_wf, AMZN lgbm_ho)
 - **20:00 UTC** (9h): Post-market analysis
 
-**Needs Your Input**: Override decision defaults if different from auto-activation (Track B + Nextcloud+Matrix). Otherwise, defaults activate at 13:00 UTC.
+**Needs Your Input** (by 13:00 UTC, if different from defaults):
+1. **Seedwarden Track** — Default: Track B (fastest, zero blockers). Override to Track A or Both if preferred.
+2. **Systems-resilience Platform** — Default: Nextcloud+Matrix (9.5/10, full offline). Override to Discourse if preferred.
 
-**Next Session**: 13:00 UTC — Decision-point execution (or manual override before then)
+**Next Session**: 13:00 UTC — Decision-point execution (auto-activation of defaults if no user override received)
 
 ---
 
