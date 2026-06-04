@@ -1,3 +1,60 @@
+## Since Last Check-in — Session 2746 (2026-06-04 05:44–06:20 UTC — Orchestrator: Block Processing + Decision Point Prep)
+
+**Status**: ✅ **ORIENTATION COMPLETE + BLOCK RESOLVED + DECISION POINTS IDENTIFIED** — All active blocks reviewed. Stockbot status confirmed operational. Seedwarden decision deadline confirmed 13:00 UTC (7h 16m). Ready for decision point handling.
+
+**Session Summary**:
+
+1. ✅ **Orientation Complete** (05:44–06:00 UTC):
+   - Reviewed ORCHESTRATOR_STATE.md (auto-generated 05:44 UTC)
+   - Scanned all 10 projects in PROJECTS.md for current status
+   - Reviewed 3 active blocks in BLOCKED.md
+   - Confirmed INBOX.md empty (all items processed)
+
+2. ✅ **Processed Active Blocks** (06:00–06:05 UTC):
+   - **Stockbot WebSocket/Database Block**: ✅ RESOLVED (moved to Resolved Archive)
+     * Session 2745 fix was autonomous and successful
+     * Both trading sessions (JPM ridge_wf + AMZN lgbm_ho) executing normally
+     * Sleeping until 13:15 UTC for market open at 13:30 UTC
+     * No user action required
+   - **Cybersecurity-Hardening**: Still active (user restart required for VeraCrypt)
+   - **Mfg-Farm**: Still active (user test print execution required)
+
+3. ✅ **Surveyed Autonomous Work Available** (06:05–06:20 UTC):
+   - **Resistance-research**: Domain 51 execution June 9-12 (all prep work complete, no autonomous work needed now)
+   - **Stockbot**: Phase 3 items identified but blocked on live trading data accumulation
+   - **Systems-resilience**: Phase 5 Wave 1 prep blocked on user platform decision (due EOD today)
+   - **Open-repo**: Phase 5 deployment June 12 (no urgent autonomous work)
+   - **Cybersecurity-hardening**: Phase 1 blocked on user restart
+   - **Mfg-farm**: Phase 2 blocked on test print
+   - **Seedwarden**: Track B activation pending at 13:00 UTC decision point
+
+4. ✅ **Identified Pending User Decisions** (06:10 UTC):
+   - **Seedwarden Track Decision**: Deadline **13:00 UTC TODAY** (7h 16m)
+     * Track B auto-activates if no response
+     * Orchestrator will execute Track B launch at 13:00 UTC unless user provides Track A/Both selection
+   - **Systems-Resilience Platform Choice**: Due **EOD TODAY** 
+     * Nextcloud+Matrix recommended
+     * Will finalize after Seedwarden decision
+
+5. ✅ **Committed BLOCKED.md** (06:05 UTC):
+   - Moved stockbot block from Active to Resolved Archive
+   - Commit: "chore(orchestrator): resolve stockbot database block — session 2745 autonomous fix confirmed"
+
+**Outcome**:
+- All blocks reviewed and processed appropriately
+- Stockbot confirmed market-ready (no intervention needed)
+- Decision deadlines identified and ready for handling
+- No high-priority autonomous work available before 13:00 UTC
+
+**Next Steps**:
+- **Until 13:00 UTC**: Monitor for user decisions on seedwarden Track and systems-resilience platform
+- **At 13:00 UTC**: If no user response, activate Seedwarden Track B (autonomous execution)
+- **11:00 UTC+**: Begin stockbot pre-market health checks
+- **13:15 UTC**: Final market-open readiness verification
+- **13:30 UTC**: Market opens; stockbot trading executes normally
+
+---
+
 ## Since Last Check-in — Session 2745 (2026-06-04 05:27–06:00 UTC — Orchestrator: Critical Stockbot Autonomous Fix + Resolution)
 
 **Status**: ✅ **CRITICAL BLOCK RESOLVED** — Stockbot trading sessions now executing. Market-ready for June 4 13:30 UTC open.
