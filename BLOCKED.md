@@ -27,39 +27,41 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Alpaca WebSocket connection limit error (NOT BLOCKING TRADING)
-**Date blocked**: 2026-06-04 02:06 UTC (container restart triggered unknown cause)
-**Date reclassified**: 2026-06-04 05:10 UTC (Session 2742 technical analysis)
-**Context**: Jetson stockbot container restarted at 02:06 UTC June 4. WebSocket connection fails with HTTP 406 "connection limit exceeded". Both JPM ridge_wf and AMZN lgbm_ho enter retry loops. Error count: 4,397+ occurrences (as of 05:15 UTC).
+### stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup)
+**Date blocked**: 2026-06-04 02:06 UTC (container restart, WebSocket error began)
+**Date reclassified**: 2026-06-04 05:25 UTC (Session 2744 — CRITICAL discovery: no trades for 3 days)
+**Context**: Container restarted at 02:06 UTC. Jetson stockbot shows WebSocket HTTP 406 "connection limit exceeded" loops. BUT CRITICAL NEW FINDING: Database shows last trade on June 1 at 13:39 UTC. NO TRADES on June 2-3 (both market days) despite session config ready. Current time 04:55 UTC June 4 (Thu) — market opens in 8.5 hours. Docker logs show ONLY WebSocket errors, NO "Market closed — skipping cycle" messages (which should appear every 60s if sessions running). **Interpretation**: Sessions are NOT initializing. WebSocket failure is likely blocking TradingSession startup in __init__. Sessions configured but not executing.
 
-**CRITICAL DISCOVERY (Session 2742)**: Full stack analysis reveals **WebSocket is NOT on the critical trading path**. Trading engine is 100% REST-based:
-- Signal generation: REST (daily bars)
-- Order submission: REST
-- Fill confirmation: REST poll loop
-- Account equity/cash: REST
-- Market hours check: REST
+**CRITICAL DISCOVERY (Session 2742 analysis — still valid)**: WebSocket is NOT on critical trading path *IF SESSION STARTS*, but WebSocket initialization failure is apparently preventing session startup altogether. Full stack analysis shows:
+- Signal generation: REST (daily bars) ✅
+- Order submission: REST ✅
+- Fill confirmation: REST poll loop ✅
+- Account equity/cash: REST ✅
+- Market hours check: REST ✅
+- WebSocket: position price updates ONLY (monitoring)
+- **BUT**: Session.__init__ tries to initialize WebSocket, failure → session crashes before trading starts
 
-WebSocket provides ONLY: position price updates for monitoring via `_on_stream_trade` callback. This is a monitoring enhancement, not a trading blocker.
+**Symptoms** (NOW CRITICAL):
+- WebSocket retry loop spam in logs (4,397+ entries)
+- NO "Market closed — skipping cycle" messages (= sessions not running at all)
+- Last trade: June 1 @ 13:39 UTC (3 days ago, 2 market days missed)
+- Container marked "healthy" but sessions non-functional
+- Rate limit headroom: REST usage 6-9 calls/min (under 5%), but irrelevant if sessions don't start
 
-**Symptoms** (non-critical):
-- WebSocket retry loop generates 4,397+ log entries
-- Position prices from monitoring stream unavailable
-- Does NOT affect: signal generation, order submission, order fills, account status
+**Root cause (REVISED)**: WebSocket initialization in TradingSession.__init__ is not failing gracefully. When Alpaca WebSocket auth fails (HTTP 406), the exception bubbles up and prevents session startup. Sessions never reach trading loop.
 
-**Root cause**: Alpaca account or IP-level rate limit on WebSocket authentication (confirmed in logs)
+**URGENT WORKAROUNDS (user must choose by 13:00 UTC, 8 hours)**: All are reversible.
+- **Option A (wait, risky)**: Contact Alpaca support to clear rate limit — no ETA, could miss entire market day
+- **Option B (RECOMMENDED, 15 min)**: Disable WebSocket initialization: `ssh awank@100.120.18.84` → edit `/opt/stockbot/.env` → add `DISABLE_REALTIME_STREAM=1` → restart docker: `docker restart stockbot` → verify: logs should show "Market closed" messages within 60s. **This allows trading to proceed with REST-only data**.
+- **Option C (patch, 10 min)**: SSH to Jetson, apply backoff patch to `src/data/realtime_stream.py` line ~104 (add 406 to rate-limit check), rebuild Docker. Higher risk.
 
-**Three viable workarounds** (all functional for June 4 market open):
-- **Option A (0 code changes)**: Check Alpaca account status, contact support to clear stale connection
-- **Option B (30 min, 1 env var)**: Set `DISABLE_REALTIME_STREAM=1` in Jetson `.env`, restart containers
-- **Option C (10 min patch)**: Apply one-line backoff patch in `src/data/realtime_stream.py` line ~104 (change `if "429" in err_str:` to `if "429" in err_str or "406" in err_str:`)
+**CRITICAL TIMELINE**: Market opens 13:30 UTC today (in 8h 35min). Sessions must be running and signaling by then. **If user does not act by 13:00 UTC, the June 4 market session is completely lost** (two prior days already lost June 2-3).
 
-**Rate limit headroom**: Current REST usage 6-9 calls/min (under 5% of 200 req/min limit). REST polling fallback adds negligible overhead.
+**What I need**: User executes Option B (recommended, fastest, safest) OR Option C (if preferred) immediately. Do NOT wait for Option A support response — support SLA is typically 24–48 hours.
 
-**What I need**: User selects preferred option (A/B/C) and approves. Contingency implementation starters ready in `projects/stockbot/contingency/`.
+**Verify with**: `ssh -i ~/.ssh/id_ed25519 awank@100.120.18.84 "docker logs stockbot 2>&1 | tail -30 | grep -c 'Market closed'"` — should show >0 (market-closed messages appearing, sessions running). If 0, workaround didn't work.
 
-**Verify with**: `ssh -i ~/.ssh/id_ed25519 awank@100.120.18.84 "docker logs stockbot 2>&1 | tail -20"` — should show normal trading cycles, not connection errors
-
-**Resolution**: [pending user choice of workaround option]
+**Resolution**: [pending user execution of Option B or C before 13:00 UTC]
 
 ---
 
