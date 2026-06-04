@@ -175,20 +175,21 @@
 **Owner**: stockbot subagent
 **Deadline**: June 11 morning (ready for 10:00 UTC decision gate) — 9 days of lead time for analysis infrastructure prep
 
-### 67. ⏳ systems-resilience — Phase 6 Wave 1 Research Capability Assessment & Domain Mapping
-**Context**: Phase 6 Wave 1 (June 5-15, assuming go decision) researches 6 new domains (60-65) with 3-person author team. Wave 1 authors come from Phase 5 recruitment (June 5-7). By June 14, author names/expertise must be mapped to domains to create research briefs. This assessment work can start now to prepare domain-specific scaffolding before authors are recruited.
-**Scope**: Phase 6 research capability framework:
-  - Domain 60-65 research landscape assessment (preliminary searches, existing literature maps, expert contact pool): Who are the leading researchers/organizations in each domain? What's the publication landscape?
-  - Tier A/B/C author capability rubric (adapted from Item 64 AUTHOR_READINESS_INTAKE_FORM.md): What expertise is required per domain? What's the gap profile for each domain?
-  - Research brief template suite (6 templates, one per domain, with [DOMAIN-SPECIFIC] placeholders for scope, sources, expert contacts, timeline)
-  - Domain-to-author matching algorithm (if author expertise = (domain 60, domain 61), what's the optimal assignment? Should author be solo-domain or split?)
-  - Preliminary research scaffolding (5-7 key sources per domain, expert contact starter list, cross-domain bridge notes)
-**Deliverables**:
-  - `PHASE_6_DOMAIN_60_65_RESEARCH_LANDSCAPE.md` (literature map, expert pool, knowledge gaps per domain)
-  - `AUTHOR_DOMAIN_MAPPING_RUBRIC.md` (expertise requirements, gap profiles, matching algorithm, Tier A/B/C skill levels)
-  - `RESEARCH_BRIEF_TEMPLATE_SUITE.md` (6 domain-specific briefs with [DOMAIN-SPECIFIC] markers, source stubs, expert contact lists)
-**Owner**: systems-resilience subagent
-**Deadline**: June 14 (ready for June 15 author assignment and research brief customization post-recruitment completion)
+### 67. ✅ systems-resilience — Phase 6 Wave 1 Research Capability Assessment & Domain Mapping (Session 2782 COMPLETE)
+**Status**: Completed June 4 (Session 2782, 14:13–14:44 UTC). All three deliverables production-ready and committed.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `PHASE_6_DOMAIN_60_65_RESEARCH_LANDSCAPE.md` (~3,100 words) — Literature landscape for 6 domains, source readiness assessment (55–80% per domain), leading organizations, practitioner-network entry points, knowledge gaps, expert contact starter list (3–5 per domain)
+  - ✅ `AUTHOR_DOMAIN_MAPPING_RUBRIC.md` (~2,400 words) — 5-dimensional capability rubric (Tier A/B/C 20–25 scale), domain-to-author matching algorithm with difficulty modifiers, capability gap profiles for adjacent-domain pairings, solo vs. split-domain decision logic
+  - ✅ `RESEARCH_BRIEF_TEMPLATE_SUITE.md` (~3,600 words) — 6 domain-specific briefs with scope/research questions/deliverables/timeline/source stubs/cross-domain bridges/publication readiness criteria, [PLACEHOLDER] fields for June 15–18 customization
+**Key findings**: 
+  - Domain 63 (Ecosystem Restoration) highest source readiness (72–80%); Domain 60 (International Coordination) lowest (55–65%)
+  - Domain 65 (Institutional Learning) requires mandatory scope audits Weeks 3/6/9 due to literature expansion risk
+  - Tier A split-domain assignments feasible (Tier A + adjacent pairing + 8+ hrs/week confirmed)
+  - 9-criterion publication readiness matrix from Item 50 integrated into all 6 briefs
+**Owner**: general-research subagent (Session 2782)
+**Status**: ✅ PRODUCTION-READY for June 14 author matching session + June 15 brief population
+**Deadline**: June 14 ✅ EARLY COMPLETE (committed June 4 14:44 UTC, 10 days early)
+**Commit**: `4bf05835` (systems-resilience submodule)
 
 ### [open slot — Item 65+ for future queue items]
 
