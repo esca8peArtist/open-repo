@@ -1,14 +1,18 @@
-## Since Last Check-in — Session 2769 (2026-06-04 10:32–10:42 UTC — Orchestrator: Final Orientation Confirmation + Standby Confirmation)
+## Since Last Check-in — Session 2769 (2026-06-04 10:32–10:42 UTC — Orchestrator: Final Orientation Confirmation + Pre-Market Health Verification)
 
-**Status**: 🟢 **STANDBY MODE OPERATIONAL** — All pre-staging complete. No autonomous work available before 13:00 UTC. All critical systems operational and ready for decision-point execution.
+**Status**: 🟢 **STANDBY MODE OPERATIONAL** — All pre-staging complete. No autonomous work available before 13:00 UTC. All critical systems verified operational and ready for decision-point execution.
 
-**Session Summary**:
+**Session Work**:
 - ✅ **Orientation**: Confirmed no new BLOCKED items, INBOX empty, no new user input
 - ✅ **Project Scope**: All unfinished work time-gated (seedwarden/systems-resilience 13:00 UTC, stockbot market open 13:30 UTC, resistance-research June 9+)
-- ✅ **Infrastructure**: All systems operational (Jetson/stockbot verified, GitHub SSH verified, Exploration Queue healthy)
+- ✅ **Early Pre-Market Health Check** (10:40–10:42 UTC):
+  - GitHub SSH: ✅ AUTHENTICATED
+  - Jetson stockbot: ✅ HEALTHY (container up 5h, status: healthy)
+  - WebSocket logs: HTTP 429 rate-limits + 300s backoffs (EXPECTED, non-critical)
+  - Trading sessions: Sleeping until 13:15 UTC wake-up (correct schedule)
 - ✅ **Decision-Points Ready**: Track B activation + platform templates staged for 13:00 UTC auto-activation if no user override
 
-**Current Time**: 10:42 UTC | **Time to Decision-Point**: 2h 18min
+**Current Time**: 10:41 UTC | **Time to Decision-Point**: 2h 19min | **Time to Market Open**: 2h 49min
 
 **What Changed This Session**: Confirmed continuation of standby mode. No blockers resolved, no new work identified, no changes to prior assessment.
 
