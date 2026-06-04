@@ -2,6 +2,37 @@
 
 ---
 
+## June 4, 2026 — General Research Agent — Domain 54 Youth Civic Power Preliminary Research (Item 65, Exploration Queue)
+
+**Task**: Produce three production-ready preliminary research deliverables for Domain 54 (Youth Civic Power / Youth Voter Engagement and Antidemocratic Targeting) to de-risk the July–August 2026 full research execution window. Election cycle deadline: November 3, 2026.
+
+**Files read**: Existing DOMAIN_54_RESEARCH_OUTLINE.md, DOMAIN_54_PRELIMINARY_FINDINGS.md, DOMAIN_54_SOURCES_AND_CONTACTS.md (in /projects/resistance-research/), DOMAIN_54_GIST_URL.txt, domains/domain-54-youth-civic-power-structural-barriers.md.
+
+**Sources verified via live search (June 4, 2026)**:
+- CIRCLE at Tufts 2026 data confirmed: 49 million eligible youth voters for 2026 midterms; February 2026 survey (5,549 respondents, with When We All Vote); 47% 2024 turnout final figure
+- SAVE Act Senate status updated: passed House 218–213; failed Senate cloture March–April 2026 (60-vote threshold not met; Murkowski voted against, zero Democratic votes); bill stalled as of June 4, not dead
+- NextGen America leadership confirmed: Arianna Jones (Executive Director); Grant Wiles (VP Data, grant.wiles@nextgenamerica.org); Emily Slatkow (Director of Communications, emily.slatkow@nextgenamerica.org)
+- Fair Elections Center / Campus Vote Project staff directory verified: Rebekah Caruthers (President/CEO), Jon Sherman (Litigation Director), Michelle Kanter Cohen (Policy Director), 10 state leads with names
+- Alliance for Youth Action leadership: Dakota Hall (Executive Director), press@allianceforyouthaction.org
+- CIRCLE Director confirmed: Kei Kawashima-Ginsberg
+
+**Key preliminary findings**:
+- 2025–2026 legislative cycle is the most concentrated attack on youth voting access since the 26th Amendment. Five states enacted proof-of-citizenship requirements independently of federal SAVE Act. Nine states ban student IDs as voter ID. North Carolina closed HBCU campus early voting sites (including North Carolina A&T, nation's largest HBCU) in 2026.
+- Mail ballot rejection age gap is the hardest quantified evidence: 9-fold disparity in Florida 2018 (5.4% ages 18-21 vs. 0.6% ages 65+); 65% of rejected Colorado 2020 mail ballots came from under-35 voters.
+- PNAS 2026 study (UW Madison) establishes peer-reviewed evidence that targeted digital suppression messaging decreases turnout in targeted communities — first rigorous evidence linking digital demobilization to measurable turnout effects.
+- Indiana student ID ban (7th Circuit, upheld with stay) affecting 40,000–90,000 students is the most advanced 26th Amendment litigation in the current cycle.
+- 2026 state priority matrix: Georgia, Wisconsin, North Carolina (highest suppression + competitive races); Michigan, Pennsylvania, Ohio, Nevada, Arizona (high priority).
+- Felony disenfranchisement age-cohort data is not publicly disaggregated — direct Sentencing Project researcher contact required in July.
+
+**Files created** (all in `projects/resistance-research/domains/domain-54-youth-civic-power/`):
+1. `DOMAIN_54_RESEARCH_OUTLINE.md` — 4,034 words; 7 research areas with core questions, preliminary findings, information gaps, and cross-domain bridges; 2026 timeline integration; priority research questions for July execution
+2. `DOMAIN_54_SOURCES_AND_CONTACTS.md` — 2,959 words; 28 primary sources with URLs; 18 organizations with verified contacts and priority coding; expert researcher map (7 researchers/practitioners); 5 data repositories for VAP turnout trends; research gaps section
+3. `DOMAIN_54_PRELIMINARY_FINDINGS.md` — 3,084 words; 6 documented suppression mechanisms with quantified evidence; 5 policy reform pathways with evidence base and 2026 timeline; 3 comparative case studies (Georgia TPVRO suppression, NC HBCU campus polling, AI voice-cloning); 6 key uncertainties for July research; November deployment framing
+
+**Confidence levels**: Medium-High on structural suppression mechanics (strong documented evidence); Medium on digital suppression scale (PNAS study establishes direction, not scale); Low on organizational funding capacity (DEI rollback unknown impact on individual orgs requires direct outreach).
+
+---
+
 ## June 4, 2026 — General Research Agent — Phase 5 Publication + Wave 2 Recruitment Planning (Item 59)
 
 **Task**: Create three platform-agnostic deliverables for June 5–15 Phase 5 publication and Wave 2 author recruitment, ready for instant activation June 5 morning regardless of platform choice (Nextcloud+Matrix or Discourse).
