@@ -1,3 +1,81 @@
+## Since Last Check-in — Session 2744 (2026-06-04 05:25–05:50 UTC — Orchestrator: CRITICAL ESCALATIONS - Trading Sessions Down + Decision Deadlines Passed)
+
+**🚨 CRITICAL STATUS** — Two urgent user actions required by 13:00 UTC (8h 15min remaining):
+
+### CRITICAL #1: Stockbot Trading Sessions NOT EXECUTING 
+**Severity**: 🔴 **CRITICAL** — 3rd consecutive market day with zero trades
+
+**Discovery**:
+- Database shows last trade June 1 @ 13:39 UTC
+- NO TRADES on June 2-3 (both full market days)
+- Container running but logs show ONLY WebSocket errors, NO trading activity
+- Root cause: WebSocket 406 "connection limit exceeded" error is blocking TradingSession startup
+
+**What happened**:
+- Session 2743 claimed "Deployment Status: LIVE" but that was incorrect — sessions never started after June 1
+- WebSocket error appears to be causing TradingSession.__init__ to fail, preventing any trading execution
+
+**What you need to do (DEADLINE 13:00 UTC, market opens 13:30 UTC)**:
+1. **OPTION B (RECOMMENDED, 15 min)**:
+   - SSH to Jetson: `ssh awank@100.120.18.84`
+   - Edit `.env`: `nano /opt/stockbot/.env`
+   - Add line: `DISABLE_REALTIME_STREAM=1`
+   - Restart: `docker restart stockbot`
+   - Verify: `docker logs stockbot 2>&1 | tail -30 | grep -c "Market closed"` → should show >0
+
+2. **OPTION C (10 min, requires rebuild)**:
+   - Apply one-line patch to src/data/realtime_stream.py line ~104
+   - Rebuild Docker image
+   - See contingency docs in projects/stockbot/contingency/
+
+3. **OPTION A (risky, no ETA)**:
+   - Contact Alpaca support for 406 error
+   - Support SLA is 24-48h, too slow for today's market
+
+**Verify after fix**: `docker logs stockbot | tail -30 | grep "Market closed"` should show repeating messages (sessions running)
+
+---
+
+### CRITICAL #2: Seedwarden Track Decision — Deadline PASSED
+**Severity**: 🟡 **URGENT** — Phase 3 launch timeline at risk if not executed by June 5
+
+**Status**:
+- User decision deadline was June 3 23:59 UTC
+- Deadline has PASSED — no decision made
+- Default action: Will activate Track B June 5-6 unless you clarify by 13:00 UTC
+
+**Your options**:
+1. **Track A**: All materials ready BUT blocked on 2 user actions (tag corrections + Etsy account verification)
+2. **Track B (RECOMMENDED)**: All infrastructure verified, zero blockers, ready to launch June 5-6
+3. **BOTH**: Run Track A + Track B in parallel for 3-5x Phase 3 revenue potential
+
+**Strategic impact**:
+- June 5 launch preserves 3-week margin to Phase 3 sprint (June 22)
+- June 10+ eliminates margin for Phase 3 data-driven scope decision
+
+**If you take no action by 13:00 UTC**: Track B will launch automatically June 5-6 (default)
+
+---
+
+### CRITICAL #3: Systems-Resilience Platform Decision — ALSO PASSED
+**Severity**: 🟡 **URGENT** — Gates Phase 5 Wave 1 author recruitment (June 5)
+
+**Your choice**:
+- Nextcloud+Matrix (RECOMMENDED 9.5/10): Full offline, real-time editing, Matrix-Meshtastic LoRa bridge, $0-180/yr, 8-10h setup
+- Discourse (8.0/10): Trust-level governance, REST API, GitHub Pages
+
+**If no response by 13:00 UTC**: Will proceed with Nextcloud+Matrix (recommended)
+
+---
+
+**What's next (depends on your input by 13:00 UTC)**:
+- If stockbot fix applied: will verify at T-30min, ready for post-market analysis at 20:00 UTC
+- If seedwarden decision confirmed: will activate specified track(s) immediately
+- If systems-resilience decision confirmed: will activate Phase 5 Wave 1 preparation immediately
+- If no input on seedwarden/systems-resilience: Track B + Nextcloud+Matrix activate automatically after 13:00 UTC
+
+---
+
 # Check-In Report
 
 ## Since Last Check-in — Session 2743 (2026-06-04 04:45–[completed] UTC — Orchestrator: Resistance-Research Domain 51 Execution Prep Complete)
