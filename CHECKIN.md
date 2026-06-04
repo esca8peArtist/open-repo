@@ -1,5 +1,61 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2733 (2026-06-04 Current UTC — Exploration Queue Verification + Phase 3 Readiness Assessment)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEMS VERIFIED COMPLETE** — Two high-value autonomous items validated as production-ready. All Phase 1-6 autonomous work confirmed complete and staged. Token budget at capacity. Standing by for user decisions on seedwarden Track and systems-resilience Platform.
+
+**Session Work**:
+
+1. ✅ **Stockbot: Gate 1 Checkpoint Failure Root Cause Analysis Verified**
+   - Deliverable confirmed: `/projects/stockbot/GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS.md` (642 lines, June 3 session)
+   - **5 Root Causes Identified** (with confidence levels):
+     1. **Structural Long Bias (PRIMARY, HIGH)** — AAPL models generate zero voluntary exits; all exits h+10 time-stop driven
+     2. **Validation Framework Mismatch (PRIMARY, HIGH)** — Gate 1b round-trip metric incompatible with hold-to-time-stop model behavior
+     3. **Gate Architecture Mismatch (SECONDARY, HIGH)** — 5 round-trip gate designed for 67-session config; 2-session achieves only ~1.6/month
+     4. **Regime-Model Misalignment (CONFIRMING, HIGH)** — 2026 YTD decline broke momentum-dominant models trained in bull market
+     5. **Lever B Operational Failure (ENABLING, HIGH)** — SSH deadline missed; Lever B wouldn't solve core problem anyway
+   - **Phase 3 Recommendations**: Mandatory 20%+ voluntary-exit screen, calibrated gate architecture, extended 2026 YTD OOS validation, 15%+ mean-reversion features, AAPL retrain post-July
+   - **Actionable**: Continue Phase 2 without changes; AMZN lgbm_ho (82/100, Sharpe 3.48) and JPM ridge_wf (88/100, Sharpe 4.412) deployment-ready
+
+2. ✅ **Resistance-Research: Phase 2 Domain 51 Dry-Run Friction Assessment Verified**
+   - Deliverables confirmed: 
+     - `PHASE_2_DOMAIN_DRY_RUN_REPORT.md` (June 4, comprehensive)
+     - `PHASE_2_DOMAIN_51_DRY_RUN_REPORT.md` (June 3, targeted patches)
+   - **Critical Finding**: Domain 51 research ALREADY COMPLETE (7,709-8,500 words, 58 citations, May 13 creation + June 1 update)
+   - **5 Friction Points (all fixable)**:
+     1. OpenSecrets URLs blocked → replace with Brennan Center
+     2. Supreme Court URLs blocked → replace with Cornell Law
+     3. State ballot measure list wrong (AZ/MA/ND) → should be AK/CA/MO/MT
+     4. FEC vacancy count outdated (2→4 of 6)
+     5. "Strengthening the Rules" source doesn't exist → use Issue One page
+   - **Actionable**: Apply 5 runbook patches (2-3h), execute June 9-12 distribution via existing checklist (no research sprint needed)
+   - **Confidence**: 78% (domain complete, contingencies work, patches straightforward)
+
+**Decision Status** (unchanged):
+| Decision | Status | Materials | Action |
+|---|---|---|---|
+| Domain 49 | 🔴 CLOSED | PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md | Defer to Q3 2026 |
+| Alpaca feed | ✅ RESOLVED | IEX_VS_SIP_SIGNAL_COMPARISON.md | Complete (IEX deployed) |
+| seedwarden Track | 🟡 ACTIONABLE | PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md | CHOOSE: A / B / Both |
+| systems-resilience Platform | 🟡 ACTIONABLE | Nextcloud+Matrix & Discourse roadmaps | CHOOSE: Platform for June 5+ |
+
+**System Status**:
+- ✅ All Phase 1-6 autonomous work: COMPLETE
+- ✅ Exploration Queue Items 1-2: VERIFIED COMPLETE
+- ✅ Stockbot Phase 3 strategy: CLARITY ACHIEVED (avoid structural long bias; implement mandatory voluntary-exit screen)
+- ✅ Resistance-research Phase 2: DEPLOYMENT READY (Domain 51 runbook needs 5 patches, then June 9-12 distribution executable)
+- 🟡 Token budget: 167k / 200k spent (33k remaining — below threshold for systems-resilience playbooks item)
+- ⏳ Next trigger: User decision on seedwarden Track or systems-resilience Platform → immediate execution
+
+**Recommendations for Next Session**:
+1. If user decides seedwarden Track: execute corresponding launch runbook immediately
+2. If user decides systems-resilience Platform: execute corresponding phase 5 deployment runbook
+3. Apply resistance-research runbook patches (5 items, 2-3h) before June 9-12 distribution
+4. Continue Phase 2 without changes; activate AMZN HMM from observe mode after 60 bars live data
+5. Schedule AAPL retrain post-July once AMZN/JPM accumulate 15+ round trips
+
+---
+
 ## Since Last Check-in — Session 2732 (2026-06-04 Current UTC — Decision Deadline Status Final Review)
 
 **Status**: ⚠️ **CRITICAL DECISION WINDOW FOR DOMAIN 49 HAS CLOSED** — The June 4-5 execution window for Domain 49 (Louisiana redistricting leverage) is now passed. Other 3 critical decisions remain open. All production-ready materials in place for immediate user action.

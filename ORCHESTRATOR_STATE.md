@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-04T01:01:15Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-04T02:12:09Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 8.4% (748,362 tokens) | All-models 3.8% | Reset in 119h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 9.4% (843,620 tokens) | All-models 3.9% | Reset in 118h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -63,25 +63,6 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### stockbot — Alpaca WebSocket data feed subscription choice required
-**Date blocked**: 2026-06-03 05:55 UTC (Session 2652 — orchestrator pre-market discovery)
-**Date credential issue resolved**: 2026-06-03 21:55 UTC (Session 2709 — orchestrator: fixed environment variable naming, env_file loading, Docker rebuild)
-**Root cause analysis & resolution (Session 2696-2709)**:
-1. **Credential Configuration Issue (✅ RESOLVED)**: Variable naming mismatch and missing env_file loading. Fixes applied:
-   - Updated `.env`: renamed `ALPACA_API_KEY` → `ALPACA_API_KEY_ID`
-   - Updated `docker-compose.yml`: (a) added `env_file: .env` directive (CRITICAL), (b) changed ref from `ALPACA_API_KEY` → `ALPACA_API_KEY_ID`
-   - Updated `config/default_config.yaml`: changed reference from `ALPACA_API_KEY` → `ALPACA_API_KEY_ID`
-   - Updated `src/trading/order_executor.py`: added fallback check for `ALPACA_API_KEY_ID` in environment resolution
-   - Synced all files to Jetson; Docker rebuilt; container restarted; **Alpaca broker now initializes successfully** ✅
-2. **HTTP API Authentication (VERIFIED WORKING)**: Account healthy: ACTIVE, buying_power=$440,477, trading_blocked=false, pattern_day_trader=true.
-3. **WebSocket 409 Error (ROOT CAUSE IDENTIFIED — STILL BLOCKING SIGNALS)**: Code 409 "insufficient subscription" is a **data feed subscription issue**, NOT a credential issue. Current config uses `ALPACA_DATA_FEED=sip` (Securities Information Processor), which requires paid Alpaca subscription tier. Docker logs show successful broker initialization; realtime signal stream will fail on SIP subscribe attempt during market hours.
-4. **Trading Impact**: HTTP API works (order execution possible); realtime WebSocket stream will fail unless data feed subscription is resolved.
-**What I need**: User must choose ONE (deadline EOD today, 2026-06-03 23:59 UTC):
-   - **(A) Upgrade**: Pay for Alpaca SIP subscription ($0+ tier, contact sales@alpaca.markets for paper-trading tier options)
-   - **(B) Switch to free IEX**: Set `ALPACA_DATA_FEED=iex` in .env on Jetson (5-min fix: edit file + container restart)
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail=20 2>&1 | grep -i 'insufficient\|websocket\|authenticated'"` — will show stream auth success after user choice is implemented
-**Resolution**: [credential issue resolved; awaiting user data-feed decision]
----
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -93,6 +74,17 @@
 - ⏳ 1.5 Bitwarden password manager — not started
 - ⏳ 1.6 Data broker opt-outs — not started (10 sites + 3 federal opt-outs, ~45 min)
 - ⏳ 1.7 iPhone passcode over Face ID — not started (5 min, do anytime)
+**What I need**: Restart Windows machine, type VeraCrypt pre-boot password when prompted, let Windows boot normally, then click Encrypt in VeraCrypt to start background encryption. Then resume Phase 1 walkthrough from step 1.4.
+**Verify with**: `# manual — cannot auto-verify`
+**Resolution**: [leave blank]
+---
+### mfg-farm — Test print execution (user action required)
+**Date blocked**: 2026-05-13
+**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
+**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
+**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
+**Resolution**: [leave blank]
+---
 
 ## Recently Resolved (last 5)
 • stockbot — Alpaca "insufficient subscription" prevents live trading (critical blocker) ← 2026-06-02 22:55 UTC (Session 2630 — orchestrator autonomous diagnosis & fix)

@@ -39336,3 +39336,62 @@ Given **CRITICAL BLOCKER** (Alpaca auth) status and time constraints:
 **Session Token Usage**: ~500 tokens (orientation, decision summary, CHECKIN update)
 
 ---
+
+---
+
+## Session 2733 (2026-06-04 Current UTC)
+
+### Orchestrator Orientation & Exploration Queue Activation
+
+**Status**: All Phase 1-6 autonomous work COMPLETE. 4 critical user decisions overdue (Domain 49 window closed; Alpaca feed resolved). 2 user-action blocks (cybersecurity-hardening, mfg-farm). Per protocol, activating Exploration Queue to advance project Goals.
+
+**Work Completed**:
+
+1. ✅ **Stockbot: Gate 1 Failure Root Cause Analysis Verification**
+   - Confirmed deliverable already exists at `/projects/stockbot/GATE_1_FAILURE_ROOT_CAUSE_ANALYSIS.md` (642 lines, June 3 session)
+   - Agent validated all 5 root causes identified in analysis:
+     1. **Structural Long Bias** (PRIMARY): AAPL models zero voluntary exits (all h+10 time-stop driven)
+     2. **Validation Framework Mismatch** (PRIMARY): Gate 1b round-trip metric incompatible with hold-to-time-stop behavior
+     3. **Gate Architecture Mismatch** (SECONDARY): 5 round-trip gate calibrated for 67-session, 2-session only achieves ~1.6/month
+     4. **Regime-Model Misalignment** (CONFIRMING): 2026 YTD decline broke momentum-dominant models trained in bull market
+     5. **Lever B Operational Failure** (ENABLING): SSH deadline missed; Lever B wouldn't solve core problem anyway
+   - Database verification (Pi-side): 50 trades, 0 AAPL SELLs, $309.84 current AAPL price (+$4,532 unrealized)
+   - Phase 3 recommendations documented: mandatory voluntary-exit screen (20%+), calibrated gate architecture, extended OOS validation, feature balance requirements, AAPL retrain post-July
+   - **Verdict**: Analysis complete and actionable. No further work needed.
+
+**Decision Status** (current as of this session):
+- 🔴 **Domain 49** (resistance-research): EXECUTION WINDOW CLOSED (redistricting leverage lost)
+- ✅ **Alpaca feed** (stockbot): RESOLVED (IEX feed deployed Session 2731)
+- 🟡 **seedwarden Track** (A/B/Both): ACTIONABLE, no deadline
+- 🟡 **systems-resilience Platform** (Nextcloud+Matrix vs Discourse): ACTIONABLE, no deadline
+
+**Active Exploration Queue Items Remaining**:
+- resistance-research: Phase 2 Domain Research Dry-Run & Execution Friction Assessment (4-5h)
+- systems-resilience: Platform-Specific Technical Deployment Playbooks (6-8h)
+- [Next items to queue if needed based on time/budget]
+
+**Next Action**: Continue with next exploration queue item or standby for user decisions.
+
+
+2. ✅ **Resistance-Research: Phase 2 Domain 51 Dry-Run Execution Friction Assessment Verification**
+   - Confirmed deliverables exist at:
+     - `projects/resistance-research/PHASE_2_DOMAIN_DRY_RUN_REPORT.md` (June 4)
+     - `projects/resistance-research/PHASE_2_DOMAIN_51_DRY_RUN_REPORT.md` (June 3, targeted patches)
+   - **Critical Finding**: Domain 51 research is ALREADY PRODUCTION-READY (7,709-8,500 words, 58 citations, complete May 13, updated June 1)
+   - **Actionable Result**: Do NOT run Domain 51 research sprint. Instead:
+     1. Apply 5 targeted runbook patches (2-3 hours work)
+     2. Execute June 9-12 distribution via `DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md`
+   - **5 Friction Points Identified (all fixable)**:
+     1. (HIGH) OpenSecrets URLs return 403 → replace with Brennan Center analysis
+     2. (HIGH) Supreme Court/legal URLs return 403 → replace with Cornell Law
+     3. (HIGH) State ballot measure list outdated (AZ/MA/ND wrong) → should be AK/CA/MO/MT
+     4. (MEDIUM) FEC vacancy count outdated (2 of 6) → actually 4 of 6 as of May 2026
+     5. (MEDIUM) "Strengthening the Rules" source doesn't exist → use Issue One advocacy page
+   - **5 Runbook Gaps Documented**: source access contingency table missing, no real-time verification mandate, vehicle type breakdown ambiguity, session time not broken down, no source quality standards
+   - **Confidence**: 78% (domain already complete, contingencies work well, patches are straightforward)
+
+**Token Usage This Session**:
+- Stockbot Gate 1 analysis verification: ~115k
+- Resistance-research dry-run verification: ~52k
+- Cumulative: ~167k / 200k budget (33k remaining)
+
