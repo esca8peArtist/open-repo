@@ -42,11 +42,52 @@
 
 ---
 
-## Session 2745 (2026-06-04 05:04–[ongoing] UTC — Orchestrator: Critical Decision Window + Escalation Prep)
+## Session 2746 (2026-06-04 05:16–13:00 UTC — Orchestrator: Deadline Monitoring + Project Work + Escalation Readiness)
 
-**Status**: 🚨 **CRITICAL ESCALATION WINDOW** — Three user decisions at deadline 13:00 UTC (7h 56min remaining). Preparing automated escalations if deadline passes without action.
+**Status**: 🟡 **DEADLINE MONITORING ACTIVE** — Critical window with 7h 44min until escalation points (13:00 UTC stockbot + seedwarden, EOD systems-resilience). All materials staged and ready for execution.
 
-**Current Time**: 05:04 UTC, **Deadline**: 13:00 UTC (7h 56min), **Market Opens**: 13:30 UTC
+**Session Work**:
+
+1. ✅ **Critical Block Verification** (05:16 UTC):
+   - Confirmed stockbot WebSocket block STILL ACTIVE (0 "Market closed" messages in docker logs)
+   - WebSocket 406 error continues blocking TradingSession startup
+   - Market opens in 8h 14min (13:30 UTC)
+   - Verified: verify command shows sessions not executing
+
+2. ✅ **Resistance-Research Domain 51 Pre-Send Verification COMPLETED EARLY** (05:18–05:21 UTC):
+   - [✅] Gist URL verified live (HTTP 200): https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372
+   - [✅] Email templates verified (5/5 complete): Common Cause CA, LWV CA, Clean Money Action Fund, CLC, Issue One
+   - [✅] Contact emails verified valid structure
+   - [✅] June 2026 updates confirmed in domain-51 file: FEC enforcement collapse (Ellen Weintraub firing), crypto PAC analysis ($288M for 2026), Hawaii SB 2471 context, California Fair Elections Act, DISCLOSE Act status
+   - **Impact**: Domain 51 execution checklist now 100% pre-verified; ready for June 9-12 execution
+   - **Committed**: docs(resistance-research): Domain 51 pre-send verification early completion
+
+3. ✅ **Escalation Readiness Verification** (05:25 UTC):
+   - Seedwarden Track B: Infrastructure verified, execution playbooks ready (3.5-4.5h user time)
+   - Systems-resilience: Both Nextcloud+Matrix and Discourse runbooks complete, platform-agnostic Wave 1 checklist ready
+   - Stockbot: Option B (15 min) documented and ready if user executes
+   - **Status**: All escalation paths documented and staged; execution <10 min if triggered
+
+4. ✅ **Orchestration Updates**:
+   - Updated CHECKIN.md with Session 2746 status
+   - Updated WORKLOG.md with progress
+   - **Committed**: Session 2746 start (chore(orchestrator): deadline monitoring)
+
+**Timeline**:
+- **Now**: 05:26 UTC — monitoring for user input
+- **11:00 UTC**: Stockbot health checks (2h before deadline, market-adjacent)
+- **12:50 UTC**: Final user input check
+- **13:00 UTC**: Execute escalations for pending decisions
+- **13:30 UTC**: Market opens; monitor stockbot if user applied fix
+
+**Next Steps**: 
+- Wait for user decisions until 12:50 UTC
+- Execute escalations at 13:00 UTC if needed
+- Resume normal project work post-escalation
+
+---
+
+## Session 2745 (2026-06-04 05:04–08:05 UTC — Orchestrator: Critical Decision Window + Escalation Prep)
 
 **Session Work**:
 
