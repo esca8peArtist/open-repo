@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-04T05:27:23Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-04T06:08:22Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 9.4% (843,620 tokens) | All-models 4.3% | Reset in 114h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 9.4% (843,620 tokens) | All-models 4.4% | Reset in 114h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[IEX FEED DEPLOYED (SESSION 2731) + 2-SESSION CONFIG LIVE (JPM+AMZN) + AMZN G5 FIX (SESSION 2736)]** — HTTP API working perfectly (account: $440K buying power, trading enabled). IEX free feed confirmed running on Jetson. Alpaca data subscription choice resolved: free IEX feed (90-93% signal fidelity, sufficient for current phase). **2-session live config** (JPM ridge_wf + AMZN lgbm_ho): **Both now pass all 6 graduation gates** — JPM ridge_wf (OOS Sharpe 4.412, 6/6 PASS ✅), AMZN lgbm_ … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[TRADING SESSIONS OPERATIONAL (SESSION 2745: CRITICAL DATABASE FIX) — 2-SESSION LIVE CONFIG READY FOR JUNE 4 MARKET OPEN]** — Database directory issue fixed (orchestrator created `/opt/stockbot/database/` on Jetson). Both trading sessions now executing trade cycles normally:
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**; **Standing task: 18 wild edibles habit photos 18/18 COMPLETE (Session 2505 verified)**
@@ -63,43 +63,35 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup)
-**Date blocked**: 2026-06-04 02:06 UTC (container restart, WebSocket error began)
-**Date reclassified**: 2026-06-04 05:25 UTC (Session 2744 — CRITICAL discovery: no trades for 3 days)
-**Context**: Container restarted at 02:06 UTC. Jetson stockbot shows WebSocket HTTP 406 "connection limit exceeded" loops. BUT CRITICAL NEW FINDING: Database shows last trade on June 1 at 13:39 UTC. NO TRADES on June 2-3 (both market days) despite session config ready. Current time 04:55 UTC June 4 (Thu) — market opens in 8.5 hours. Docker logs show ONLY WebSocket errors, NO "Market closed — skipping cycle" messages (which should appear every 60s if sessions running). **Interpretation**: Sessions are NOT initializing. WebSocket failure is likely blocking TradingSession startup in __init__. Sessions configured but not executing.
-**CRITICAL DISCOVERY (Session 2742 analysis — still valid)**: WebSocket is NOT on critical trading path *IF SESSION STARTS*, but WebSocket initialization failure is apparently preventing session startup altogether. Full stack analysis shows:
-- Signal generation: REST (daily bars) ✅
-- Order submission: REST ✅
-- Fill confirmation: REST poll loop ✅
-- Account equity/cash: REST ✅
-- Market hours check: REST ✅
-- WebSocket: position price updates ONLY (monitoring)
-- **BUT**: Session.__init__ tries to initialize WebSocket, failure → session crashes before trading starts
-**Symptoms** (NOW CRITICAL):
-- WebSocket retry loop spam in logs (4,397+ entries)
-- NO "Market closed — skipping cycle" messages (= sessions not running at all)
-- Last trade: June 1 @ 13:39 UTC (3 days ago, 2 market days missed)
-- Container marked "healthy" but sessions non-functional
-- Rate limit headroom: REST usage 6-9 calls/min (under 5%), but irrelevant if sessions don't start
-**Root cause (REVISED)**: WebSocket initialization in TradingSession.__init__ is not failing gracefully. When Alpaca WebSocket auth fails (HTTP 406), the exception bubbles up and prevents session startup. Sessions never reach trading loop.
-**URGENT WORKAROUNDS (user must choose by 13:00 UTC, 8 hours)**: All are reversible.
-- **Option A (wait, risky)**: Contact Alpaca support to clear rate limit — no ETA, could miss entire market day
-- **Option B (RECOMMENDED, 15 min)**: Disable WebSocket initialization: `ssh awank@100.120.18.84` → edit `/opt/stockbot/.env` → add `DISABLE_REALTIME_STREAM=1` → restart docker: `docker restart stockbot` → verify: logs should show "Market closed" messages within 60s. **This allows trading to proceed with REST-only data**.
-- **Option C (patch, 10 min)**: SSH to Jetson, apply backoff patch to `src/data/realtime_stream.py` line ~104 (add 406 to rate-limit check), rebuild Docker. Higher risk.
-**CRITICAL TIMELINE**: Market opens 13:30 UTC today (in 8h 35min). Sessions must be running and signaling by then. **If user does not act by 13:00 UTC, the June 4 market session is completely lost** (two prior days already lost June 2-3).
-**What I need**: User executes Option B (recommended, fastest, safest) OR Option C (if preferred) immediately. Do NOT wait for Option A support response — support SLA is typically 24–48 hours.
-**Verify with**: `ssh -i ~/.ssh/id_ed25519 awank@100.120.18.84 "docker logs stockbot 2>&1 | tail -30 | grep -c 'Market closed'"` — should show >0 (market-closed messages appearing, sessions running). If 0, workaround didn't work.
-**Resolution**: [pending user execution of Option B or C before 13:00 UTC]
----
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
+**Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
+**Progress so far**:
+- ✅ 1.1 Signal — complete (username set, phone number hidden, disappearing messages on)
+- ✅ 1.2 iPhone tracking — steps 1-3 done (tracking off, location audited, personalized ads off). Step 4 (Advanced Data Protection) pending 24-48hr Apple security delay — complete tomorrow
+- 🔄 1.3 VeraCrypt — installed, encryption wizard run, **needs restart to complete pre-boot test**, then click Encrypt to start background encryption
+- ⏳ 1.4 Ente Auth — not started (install from App Store, switch email + financial accounts off SMS 2FA, set carrier SIM PIN)
+- ⏳ 1.5 Bitwarden password manager — not started
+- ⏳ 1.6 Data broker opt-outs — not started (10 sites + 3 federal opt-outs, ~45 min)
+- ⏳ 1.7 iPhone passcode over Face ID — not started (5 min, do anytime)
+**What I need**: Restart Windows machine, type VeraCrypt pre-boot password when prompted, let Windows boot normally, then click Encrypt in VeraCrypt to start background encryption. Then resume Phase 1 walkthrough from step 1.4.
+**Verify with**: `# manual — cannot auto-verify`
+**Resolution**: [leave blank]
+---
+### mfg-farm — Test print execution (user action required)
+**Date blocked**: 2026-05-13
+**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
+**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
+**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
+**Resolution**: [leave blank]
+---
 
 ## Recently Resolved (last 5)
+• stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup) ← 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
 • stockbot — Alpaca "insufficient subscription" prevents live trading (critical blocker) ← 2026-06-02 22:55 UTC (Session 2630 — orchestrator autonomous diagnosis & fix)
 • stockbot — Jetson trading execution investigation (database initialization) ← 2026-06-02 22:15 UTC (Session 2627 — orchestrator autonomous initialization)
 • Usage limits — weekly calibration reminder ← 2026-06-02 (Session 2553 — automated verification)
 • stockbot — Alpaca paper-api.alpaca.markets connectivity failure (179+ timeouts, engine blocked) ← 2026-05-30 17:55 UTC (Session 2281 — orchestrator verification, moved to Resolved Archive)
-• resistance-research — May 21 synthesis did not execute; TOO_EARLY contingency activated (May 28 re-synthesis scheduled) ← 2026-05-27 15:50 UTC (Session 1741 — orchestrator verification)
 
 ## Inbox (unprocessed)
 (NONE — all pending items processed from last session)

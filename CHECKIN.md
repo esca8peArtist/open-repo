@@ -4597,6 +4597,52 @@ While awaiting user decisions, orchestrator completed two time-critical autonomo
 
 ---
 
+## Since Last Check-in (Session 2747 — 2026-06-04 06:09–06:30 UTC)
+
+### What Was Accomplished
+- ✅ **Full System Orientation Complete**: Comprehensive review of ORCHESTRATOR_STATE.md (06:08 UTC generation), BLOCKED.md, INBOX.md, PROJECTS.md. All state files current and consistent.
+- ✅ **Seedwarden Critical Decision Point Identified**: User decision deadline (Track A/B/Both) was June 3 23:59 UTC. **DEADLINE HAS PASSED.** No user response received as of 06:09 UTC June 4.
+  - **Protocol Status**: Per orchestrator protocol in ORCHESTRATOR_STATE.md, Track B auto-activation triggers at 13:00 UTC June 4 if no user response
+  - **Action Scheduled**: Wakeup scheduled for 13:00 UTC (6h 51min) to execute Track B auto-activation
+  - **Impact**: Track B preserves 3-week margin to Phase 3 sprint (June 22) and enables Phase 3 data-driven scope decision
+- ✅ **Active Blocks Verified**: No new resolutions in BLOCKED.md. Both active blocks (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) remain user-action-required.
+- ✅ **Autonomous Work Assessment**: Confirmed zero autonomous work available before market open at 13:30 UTC. All projects blocked on:
+  - User decisions (resistance-research, systems-resilience, seedwarden)
+  - User manual actions (cybersecurity-hardening, mfg-farm)
+  - Market-driven scheduling (stockbot, open-repo)
+
+### What's In Progress
+- ⏳ **Seedwarden Track B Auto-Activation** (scheduled 13:00 UTC June 4): Update PROJECTS.md Focus line, log decision in WORKLOG.md, update CHECKIN.md. Deliverable: Track B execution checklist with 5 user-action gates ready for immediate launch.
+- ⏳ **Stockbot Market Session** (13:30 UTC): JPM ridge_wf (6/6 gates PASS) + AMZN lgbm_ho (5/6 gates, G5 fix confirmed) trading live. Pre-market brief complete and staged.
+
+### Items Needing User Input
+**CRITICAL (by 13:00 UTC June 4)**:
+- **Seedwarden**: Track A/B/Both decision — **DEADLINE PASSED June 3 23:59 UTC**. Auto-activation of Track B proceeds at 13:00 UTC June 4 unless user explicitly objects.
+
+**Other pending decisions** (no urgency until post-market):
+- resistance-research: Domain 59 distribution execution + Phase 2 domain selection
+- systems-resilience: Phase 5/6 platform and domain selection
+
+### Suggested Priorities for Next Session (After Market Close 20:00 UTC)
+1. **If Track B auto-activated (expected)**: Review Track B execution checklist + approve user-action gates
+2. **Post-market analysis**: Execute JUNE_3_MARKET_ANALYSIS_RUNBOOK.md (3-4 hours)
+3. **If time permits**: Phase 1 Campaign Coalition Leverage Analysis (4-5 hours, due June 15)
+
+### Status Summary (Session 2747)
+- 🟢 **Stockbot**: Market open 13:30 UTC ready to trade. JPM 6/6 PASS, AMZN 5/6 PASS. All systems verified and tested.
+- 🟡 **Seedwarden**: CRITICAL DECISION POINT — Auto-activation Track B at 13:00 UTC June 4 (6h 51min). Execution checklist staged.
+- 🟡 **Resistance-research**: Domain 59 distribution ready for immediate user execution.
+- 🟡 **Systems-resilience**: Phase 5/6 analysis ready; awaiting platform selection.
+- 🔴 **Cybersecurity-hardening**: Phase 1 VeraCrypt restart required (user manual action).
+- 🔴 **Mfg-farm**: Test print execution required (user manual action).
+
+---
+
+### Session 2747 (2026-06-04 06:09 UTC) — Orchestrator: Orientation + Seedwarden Decision Point
+**Status**: ✅ Complete. Full system orientation, seedwarden critical decision point identified, wakeup scheduled for Track B auto-activation.
+**Work**: Complete orientation of all state files. Verified that seedwarden user decision deadline (June 3 23:59 UTC) has passed with no response. Scheduled Track B auto-activation at 13:00 UTC June 4. Confirmed zero autonomous work before market open. All orchestration files staged for commit.
+**Time**: 21 minutes
+
 ## Suggested Next Steps
 
 ### IMMEDIATE (by 13:30 UTC):
