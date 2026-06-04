@@ -3,317 +3,212 @@ title: "Phase 6 Wave 2 Activation Checklist"
 project: systems-resilience
 phase: 6
 wave: 2
-status: OPERATIONAL PLANNING — June 15–20 transition framework
-created: 2026-06-03
+status: PRODUCTION-READY — June 15 deployment
+created: 2026-06-04
+revised: 2026-06-04
 activation_date: 2026-06-20
-purpose: "June 15–20 transition planning from Wave 1 domain completion to Wave 2 domain research initiation. Includes author onboarding kit, continuity procedures, pre-Wave-2 publication gates, and kickoff sequence."
+non_negotiable_anchors:
+  - "June 20 Wave 2 start — immovable"
+  - "June 27 T+7 first-draft checkpoint — must be met"
 cross_references:
   - PHASE_6_WAVE_1_EXECUTION_CHECKLIST.md
   - WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md
-  - RESOURCE_CONTENTION_MITIGATION.md
-  - PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md
-word_count: ~3,200
+  - RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md
+  - WAVE_2_GENERIC_ONBOARDING_TEMPLATE.md
+  - AUTHOR_READINESS_INTAKE_FORM.md
+word_count: ~2,400
 ---
 
 # Phase 6 Wave 2 Activation Checklist
 ## June 15–20 Transition: Wave 1 Completion → Wave 2 Initialization
 
-**Prepared**: June 3, 2026 (planning phase)  
-**Activation start**: June 20, 2026  
-**Transition window**: June 15–20 (Wave 1 publication finalization + Wave 2 prep)  
-**Lead**: Orchestrator + Wave 2 authors
+**Prepared**: June 4, 2026 (production deployment)
+**Activation start**: June 20, 2026 (immovable)
+**Transition window**: June 15–20 (Wave 1 publication finalization + Wave 2 prep)
+**T+7 first-draft checkpoint**: June 27 (non-negotiable)
+**Platform**: Nextcloud+Matrix (activated June 4 13:00 UTC)
+**Lead**: Orchestrator + Wave 2 domain leads
 
 ---
 
-## Part 1: Author Onboarding Kit for Wave 2
+## Part 1: June 15–20 Transition Task List
 
-### Who Are Wave 2 Authors?
+### June 15 — Wave 1 Final Review Day
 
-Wave 2 authors are **knowledge practitioners and researchers** recruited to write the four supplementary Phase 6 domains (Ecosystem Restoration, Institutional Learning, and two additional domains from the Phase 6 candidate list). They have similar background profiles to Wave 1 authors: mix of academic researchers, practitioners, and hybrid practitioner-researchers with domain expertise and open-publication willingness.
+- [ ] **Publication gate decision** (09:00 UTC): Are all 5 Phase 5 Wave 1 domains (governance, food, info, security, scaling) peer-reviewed and approved? If yes → proceed. If 3-4 approved → proceed with scope note. If fewer than 3 → activate Trigger 2 below.
+- [ ] **Wave 2 author roster confirmed**: ≥4 authors confirmed with June 20 start date, payment terms signed, communication channel verified in Nextcloud+Matrix. If fewer than 4 → activate Trigger 1 below.
+- [ ] **June 15 go/no-go decision recorded** in ORCHESTRATOR_STATE.md with author count, Wave 1 publication status, and any contingency routes activated.
 
-Wave 2 differs from Wave 1 in two critical ways:
-1. **Timing context**: They begin work June 20, after Wave 1 domains are substantially complete and published/staged for publication. They have visibility into Wave 1 model documents, reader feedback, and domain integration requirements.
-2. **Mentorship support**: Wave 1 authors who have completed their domains serve as **domain peers** for Wave 2 — not as editors, but as practitioners who can answer "how did you structure the section on X?" or "what does reader feedback suggest about this kind of framing?"
+### June 16 — Onboarding Kit Delivery
 
-### Onboarding Timeline
+- [ ] Send Wave 2 onboarding kit (see Part 2 below) to all confirmed authors via email + Matrix DM.
+- [ ] Kit delivery confirmed: each author acknowledges receipt in their Nextcloud+Matrix domain room (`#wave2-[domain]:resilience-hub`).
+- [ ] Pre-staged source library published to each author's Nextcloud domain folder (`Phase6-Wave2-[Domain]/00-SOURCES.md`).
+- [ ] Domain outline committed to `projects/systems-resilience/phase-6/` for each confirmed Wave 2 domain.
 
-| Milestone | Date | Owner | Activity |
-|-----------|------|-------|----------|
-| **Wave 2 author recruitment** | June 5–12 | Orchestrator | Email 8–12 candidate authors (same model as Wave 1) with June 20 start date; target ≥4 confirmed by June 15 |
-| **June 15 go/no-go** | June 15 09:00 UTC | Orchestrator | ≥4 authors confirmed = proceed June 20; <4 authors = defer Wave 2 to July 1 or activate self-execute path |
-| **Onboarding kit delivery** | June 16 | Orchestrator | Send Wave 2 author kit to all confirmed authors (see Section 1B below) |
-| **Author orientation meeting** | June 18 (async or 30-min sync) | Orchestrator + authors | Quick sync on Wave 1 context, domain dependencies, peer-mentor assignments |
-| **Research kit assembly** | June 18–19 | Orchestrator | Verify sources, Phase 5/Wave 1 model documents, domain outlines staged and accessible |
-| **T+0 kickoff** | June 20 06:00 UTC | Orchestrator | Same T+0 kickoff protocol as Wave 1 (author briefing emails, project setup, peer reviewer roster) |
+### June 17 — Cross-Domain Integration Audit
 
----
+- [ ] Terminology audit: key terms (governance, scale, community, resilience, Dunbar threshold) defined consistently across all 5 Phase 5 Wave 1 domains. Flag mismatches → minor: fix before June 18; major: log as "Wave 2 alignment note" and brief authors.
+- [ ] Citation format consistent: URL format, access notation, citation style match across all published domains.
+- [ ] Cross-references verified: if Domain A cites Domain B, Domain B acknowledges the connection.
+- [ ] Tonal consistency: all domains address the same practitioner/policymaker reader.
 
-### 1B: Wave 2 Author Onboarding Kit Contents
+### June 18 — Author Orientation Async Delivery
 
-Each Wave 2 author receives a **unified onboarding document** (adapting the Wave 1 Author Onboarding Kit template) that includes:
+- [ ] Wave 1 context summary (3-page doc) delivered to all Wave 2 authors: major findings across 5 domains, reader feedback themes, integration notes.
+- [ ] Peer-mentor assignments sent: each Wave 1 domain author receives their Wave 2 mentee assignment; introductory Matrix message sent.
+- [ ] Domain dependency map (text or visual, from WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md Part 3) included in orientation materials.
+- [ ] Optional sync orientation offered: 30-min Matrix audio call (if ≥3 authors in overlapping time zones). Record asynchronously if called.
 
-#### **Section 1: Domain Framing & Context (2 pages)**
+### June 19 — R-Gate Final Check (All Gates Must Be Green by EOD)
 
-- **The problem this domain solves**: One-paragraph description of how this domain extends the Phase 5 foundation or addresses a critical gap in the Wave 1 domains
-- **Connection to Wave 1 domains**: Explicit dependency map — which Wave 1 domains does this domain build on? Which sections must be published before Wave 2 can be meaningfully written?
-- **Reader audience**: Who is reading this domain? (Practitioners, policymakers, researchers — same audience as Wave 1)
-- **Tonal model**: Point to the closest Wave 1 domain as a structural/tonal reference. (Example: "Ecosystem Restoration should match the practitioner-facing tone of Wave 1's Infrastructure Interdependencies document, not the academic framing of International Coordination.")
+- [ ] **R-Gate 1**: ≥4 authors confirmed, start date June 20, payment first-milestone terms in writing.
+- [ ] **R-Gate 2**: ≥3 of 5 Wave 1 domains peer-reviewed and approved; publication timeline committed (June 22, June 30, or deferred with impact note).
+- [ ] **R-Gate 3**: Source libraries (25–35 verified URLs per domain), domain outlines, peer-reviewer roster (≥1 per domain) all present in Nextcloud.
+- [ ] **R-Gate 4**: Git directory structure ready (`projects/systems-resilience/phase-6/` with placeholder `.md` files for each Wave 2 domain). ORCHESTRATOR_STATE.md can accept Wave 2 activation entry.
+- [ ] **Resource contention check**: confirm which RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md scenario (A/B/C) is active as of June 19 EOD.
 
-#### **Section 2: Research Scope & Boundaries (2 pages)**
+### June 20 — Wave 2 T+0 Kickoff (06:00 UTC)
 
-- **Scope statement**: One clear paragraph on what IS in scope (detailed outline)
-- **Out-of-scope statement**: One clear paragraph on what is EXPLICITLY NOT covered and why
-- **Section outline**: Replicate the outline from the Phase 6 candidate document (e.g., "PHASE_6_SCOPE_AND_READINESS.md")
-- **Word target**: 5,000–7,000 words, matching Wave 1 range
-- **Citation requirement**: 35–50 citations, same rigor as Wave 1
-
-#### **Section 3: Research Sources & Dependencies (3 pages)**
-
-- **Pre-staged source library**: 25–35 verified, accessible URLs with annotations
-  - Color-coded by section (Section 1 sources, Section 2 sources, etc.)
-  - Include: academic papers, practitioner guides, case studies, policy documents
-  - All links verified for accessibility and durability (no paywalls; use institutional access or open-access mirrors where available)
-- **Wave 1 reference documents**: Links to published/staged Wave 1 domains that are cited models for this domain
-- **Cross-reference checklist**: List of other domains that this domain must align with
-  - Example: Ecosystem Restoration must use the same "community scale" terminology as Wave 1 Governance domain; both must reference the same Dunbar threshold research
-- **Peer-mentor contact**: Name, email, domain expertise of the Wave 1 author (or equivalent expert) who can answer questions about earlier domain research
-
-#### **Section 4: Timeline & Milestones (1 page)**
-
-- **T+0 (June 20)**: Kickoff email, research kit delivery, orientation
-- **T+3 (June 23)**: Outline submission and orchestrator review
-- **T+7 (June 27)**: Section 1 + partial Section 2 draft (40–50% of content)
-- **T+10 (June 30)**: Full first draft submitted for peer review
-- **T+12 (July 2)**: Peer review feedback received
-- **T+14 (July 4)**: Revision complete and submitted for final readiness gate
-- **Publication readiness gate**: July 5 go/no-go (research complete, peer-reviewed, ready for integration into Phase 6 publication)
-
-#### **Section 5: Payment & Logistics (1 page)**
-
-- **Honorarium**: Same as Wave 1 (specific amount TBD by user); first milestone payment on June 22 upon outline approval
-- **Communication channel**: Preferred async (email, Slack, Basecamp) or sync (bi-weekly meetings)
-- **Questions/escalation**: Direct to orchestrator; response time target 4 hours
-- **Deliverable format**: Markdown (.md) in shared folder; structured Git workflow if desired
-
-#### **Section 6: Wave 1 Feedback Summary (2 pages)**
-
-- **Reader feedback themes** (if Wave 1 publication is complete): What feedback did readers give on structure, clarity, tone, missing gaps? How should Wave 2 authors account for this?
-- **Integration learnings**: What did editors learn while integrating Wave 1 domains? Any cross-domain terminology, citation, or structural patterns that Wave 2 should match?
-- **Quality bar**: Peer review criteria used for Wave 1; Wave 2 will use the same framework
+- [ ] Orchestrator pre-flight: read ORCHESTRATOR_STATE.md; confirm all R-gates green; confirm Wave 1 publication status and any blocking conditions.
+- [ ] Kickoff emails sent to all Wave 2 authors (07:00–09:00 UTC): domain framing, research kit link, timeline, peer-mentor contact, payment first-milestone confirmation.
+- [ ] Peer reviewer roster notified: introductory note, review window expectation (T+10 = June 30 to T+12 = July 2).
+- [ ] Project setup (09:00–17:00 UTC): Wave 2 domain `.md` files created with YAML frontmatter (title, author, status: IN-PROGRESS, created: 2026-06-20). Shared source libraries populated. ORCHESTRATOR_STATE.md updated: Phase 6 Wave 2 activated, domain list, author roster.
 
 ---
 
-## Part 2: Continuity Procedures — Wave 1 → Wave 2 Handoff
+## Part 2: Author Readiness Assessment
 
-### Prerequisite: Which Wave 1 Domains Must Be Published Before Wave 2 Starts?
+### Who from Wave 1 Can Lead Wave 2?
 
-**Publishing decision rule**: A Wave 1 domain must be **published or staged for publication** before Wave 2 research begins IF:
+Wave 2 domain leads are drawn from the Wave 1 author pool or from a second recruitment cohort. Wave 1 authors qualify to lead a Wave 2 domain if they meet all three criteria:
 
-1. **Wave 2 domains depend on it for foundational concepts** (e.g., if Institutional Learning relies on governance terminology from Wave 1 Governance domain, the Wave 1 Governance domain must be published first)
-2. **It establishes the tonal/structural model for Wave 2** (e.g., Ecosystem Restoration takes its structural cues from Wave 1's most practitioner-facing domain)
-3. **It provides cross-domain citations that Wave 2 needs** (e.g., if Wave 2 Economic Resilience cites Wave 1's Food Systems domain, Food Systems must be published or at minimum peer-reviewed and finalized)
+1. **Domain expertise match**: Their Wave 1 domain directly informs one or more Wave 2 domains (e.g., a Wave 1 governance author has direct relevance to Wave 2 institutional scaling).
+2. **Writing quality**: Their Wave 1 document met publication standards on first or second peer review pass (not requiring structural overhaul).
+3. **Timeline commitment**: They can commit 4–6 hours/week June 20–July 10 for Wave 2 (not just peer-mentor capacity, but active research authorship if assigned a new domain).
 
-**Recommended pre-Wave-2 publication gates** (all must be satisfied by June 19 EOD):
+Wave 1 authors who cannot commit new authorship hours serve as **peer mentors** only (2–3 questions/week, informal feedback on drafts) — not as domain leads.
 
-- **Required published**: Wave 1 Governance and Decision-Making (foundational to all Wave 2 domains)
-- **Required published OR finalized-draft**: Wave 1 Food Systems and Supply Chain (Ecosystem Restoration and Economic Resilience both cite it)
-- **Can be in publication queue**: Wave 1 Information Infrastructure, Security and Defense, Scaling Pathways (Wave 2 can cite them in draft form if needed)
+### Tier A/B/C Author Stratification
 
-**If any required domain is not ready by June 19**:
-- Activate **contingency publication schedule** (see Section 3 below) — defer publication of dependent Wave 2 domain by 1–2 weeks, or
-- **Reduce Wave 2 scope** for that domain (remove cross-references, plan them as "future work" section)
+All Wave 2 authors are assigned a tier using the AUTHOR_READINESS_INTAKE_FORM.md scoring matrix. Tier determines onboarding path and support level:
 
-### Handoff Procedure: Wave 1 Author → Wave 2 Domain Leads
+**Tier A — Leadership Capacity**
 
-Once a Wave 1 domain is publication-ready (peer review complete, revisions approved):
+- Profile: 5+ years domain expertise; has published practitioner-oriented long-form documents (4,000+ words); comfortable with async work, Markdown, and self-directed research; can identify scope boundaries independently.
+- Intake form indicators: Domain Knowledge rating 4–5; Long-Form Writing rating 4–5; Platform Familiarity rating 3+; explicitly states they do not need check-in calls.
+- Onboarding path: Receive kit; skip orientation call; submit outline T+3 (June 23); first check-in at T+7 (June 27). Minimal orchestrator overhead.
+- Ceiling: Can handle two Wave 2 deliverables if capacity permits (e.g., primary author on Domain A, peer mentor on Domain B simultaneously).
+- Bandwidth: 6–8 hrs/week available during June 20–July 10 sprint.
 
-**Step 1: Knowledge Transfer Session (30 min, async or sync)**
+**Tier B — Technical Depth, Standard Support**
 
-The Wave 1 author and the relevant Wave 2 domain lead (if Wave 2 domain depends on Wave 1 domain) have a brief conversation:
+- Profile: Strong domain expertise (3–4 years applied practice); has produced long documents but primarily for internal or academic audiences; may need editorial scaffolding on structure and practitioner-audience calibration; reliable but not self-directed.
+- Intake form indicators: Domain Knowledge rating 3–4; Long-Form Writing rating 2–3; flags some uncertainty about scope or citation standards.
+- Onboarding path: Complete full onboarding kit; receive one additional check-in at T+3 (June 23, before outline due); orchestrator reviews outline before proceeding. Moderate overhead.
+- Ceiling: One Wave 2 domain as primary author. Can serve as peer reviewer on a second domain.
+- Bandwidth: 4–6 hrs/week available.
 
-- **What surprised me about this domain?**: The Wave 1 author shares unexpected findings, challenging sources, or reader feedback that shaped the final document
-- **What would you do differently?**: If starting over, what would the Wave 1 author do differently? (This is valuable meta-feedback)
-- **Where are the citation gaps?**: Any topics the Wave 1 author wanted to include but ran out of time? These become future-work opportunities for Wave 2
-- **Terminology notes**: Any terms or concepts that other domains need to align on? (Example: "We use 'Dunbar threshold' to mean X; make sure Wave 2 domains use the same definition")
+**Tier C — Emerging Contributor, Extended Support**
 
-**Step 2: Asset Transfer**
-
-Wave 1 author provides Wave 2 leads with:
-- **Full source library**: All 40–50 sources collected during research, annotated with usefulness/relevance to Wave 2 domains
-- **Outline evolution**: Before/after versions of the outline, showing what sections were added/removed and why (useful for Wave 2 domain scoping)
-- **Reader feedback summary**: Aggregated feedback from peer reviewers, early readers, or publication feedback
-- **Revision checklist**: List of changes made during editing cycle; Wave 2 can use the same edit process
-
-**Step 3: Peer Mentor Assignment**
-
-Wave 1 authors become **peer mentors** to the Wave 2 domain that is most dependent on their domain:
-- Wave 1 Governance author → Peer mentor for Wave 2 Institutional Learning
-- Wave 1 Food Systems author → Peer mentor for Wave 2 Ecosystem Restoration
-- Wave 1 Information Infrastructure author → Peer mentor for Wave 2 (and so on)
-
-**Peer mentor responsibilities**:
-- Respond to 2–3 substantive questions per week from Wave 2 author (4-hour response target)
-- Provide informal feedback on Wave 2 draft if requested (not formal peer review, just collegial input)
-- Share publication timeline and distribution plans for Wave 1 domain so Wave 2 author can cite live document if available
+- Profile: Solid domain knowledge but limited long-form publication history; first major practitioner-facing research project; may need scope narrowing consultation and extended timeline.
+- Intake form indicators: Domain Knowledge rating 3; Long-Form Writing rating 1–2; flags uncertainty about structure, citation standards, or time commitment.
+- Onboarding path: Full onboarding kit; scope narrowing consultation June 20–21; first draft target adjusted to 3,000–4,000 words (instead of 5,000–7,000); additional orchestrator check-in at T+5 (June 25) before T+7 deadline; T+7 first-draft checkpoint is a progress check, not a hard gate. Higher orchestrator overhead.
+- Ceiling: One Wave 2 domain, lighter scope. Not assigned peer mentor duties in addition to own authorship.
+- Bandwidth: 4 hrs/week minimum required; confirm before assignment.
 
 ---
 
-## Part 3: Pre-Wave-2 Publication Gates
+## Part 3: Onboarding Kit Components
 
-### Gate 1: Wave 1 Final Draft Submission (June 15, T+14)
+The Wave 2 onboarding kit adapts WAVE_2_GENERIC_ONBOARDING_TEMPLATE.md for the Phase 6 context. Each author receives a customized version with the following components:
 
-All Wave 1 domains have completed peer review and submitted final drafts. **Decision required**:
+**Component 1: Domain Framing Document (2 pages)**
+- The problem this domain solves within Phase 6 community-scale resilience.
+- Explicit connection to Phase 5 Wave 1 domains: which of the 5 community-scale domains (governance, food, info, security, scaling) does this domain build on?
+- Reader audience: practitioners, policymakers, community organizers — same as Wave 1.
+- Tonal model: name the closest Phase 5 Wave 1 document as structural reference.
 
-- [ ] **All 4 Wave 1 domains peer-reviewed and approved** → PROCEED to publication staging (Gate 2)
-- [ ] **3 of 4 domains approved; 1 domain needs revision** → Revise by June 17; defer publication of any Wave 2 domains that depend on it
-- [ ] **2 or fewer domains approved** → Escalation trigger (Section 4 below)
+**Component 2: Research Scope Brief (2 pages)**
+- Scope statement (what IS in scope) and out-of-scope statement (what is NOT covered, why).
+- Section outline (drawn from Phase 6 candidate document or orchestrator-defined).
+- Word target: 5,000–7,000 words (Tier C: 3,000–4,000).
+- Citation requirement: 25–40 citations; green/amber/red quality rating per WAVE_2_GENERIC_ONBOARDING_TEMPLATE.md Section 5.
 
-### Gate 2: Cross-Domain Integration Review (June 16–17)
+**Component 3: Pre-Staged Source Library (in Nextcloud)**
+- 25–35 verified, accessible URLs with annotations (Section, quality rating, relevance note).
+- Wave 1 reference documents: links to the Phase 5 Wave 1 domains in Nextcloud.
+- Cross-reference checklist: terminology alignment requirements (e.g., "use 'Dunbar threshold' as defined in Wave 1 Governance domain").
+- Peer-mentor contact: name, Matrix handle, domain expertise, available hours.
 
-Before Wave 2 begins, conduct **integration audit**: Do the Wave 1 domains align on terminology, citation style, cross-references, and tonal consistency?
+**Component 4: Timeline and Milestone Card (1 page)**
+- T+0 June 20: Kickoff message in Matrix domain room.
+- T+3 June 23: Outline submission (H2/H3 structure + section purpose notes).
+- T+7 June 27: **Non-negotiable first-draft checkpoint** — 50% draft: all headings, Sections 1–2 narrative-complete, citations roughed in.
+- T+10 June 30: Full first draft (all sections, citations verified).
+- T+12 July 2: Peer review feedback received.
+- T+14 July 4: Revision complete, submitted for final readiness gate.
+- Publication readiness gate: July 5 go/no-go.
 
-**Checklist**:
-- [ ] Terminology audit: Key terms (governance, scale, community, resilience) defined consistently across all domains
-- [ ] Citation format consistent: All domains use same citation style, URL format, accessibility notation
-- [ ] Cross-references align: If Domain A cites Domain B, does Domain B acknowledge the connection?
-- [ ] Audience voice consistent: All domains address the same reader (practitioner, researcher, policymaker)?
-- [ ] Structural similarity: Do all domains follow similar outline structure? (This helps readers navigate)
+**Component 5: Platform Access Instructions (Nextcloud+Matrix)**
+- Nextcloud login: server URL, username format, workspace folder structure (00-SCOPE.md, 00-SOURCES.md, DRAFT-[domain].md, PEER-REVIEW.md).
+- Matrix rooms: `#wave2-[domain]:resilience-hub` (primary) and `#wave2-general:resilience-hub` (cross-author coordination).
+- First action: post T+0 kickoff message in domain Matrix room by June 20 noon UTC.
+- Editor test: add/delete test line in DRAFT file to confirm write permissions.
 
-**If integration issues found**:
-- Minor (terminology, citation format): Coordinate fixes before Gate 3 approval
-- Major (contradictory findings, structural mismatch): Log as "future integration work" and proceed; address in Wave 2 coordination
+**Component 6: Wave 1 Feedback Summary (2 pages)**
+- Reader feedback themes from Phase 5 Wave 1 early readers: structure wins, common gaps, framing issues.
+- Integration learnings from editorial pass: cross-domain terminology, citation patterns, tonal notes.
+- Quality bar: peer review criteria from Wave 1; Wave 2 uses identical framework.
 
-### Gate 3: Publication Readiness Sign-Off (June 18)
-
-**Orchestrator signs off**: All Wave 1 domains are publication-ready (complete, peer-reviewed, integrated, no known errors).
-
-**Decision required**:
-- [ ] **Ready to publish immediately** → Publish before Wave 2 starts June 20 (Wave 2 can cite published documents)
-- [ ] **Ready to publish by June 22** → Publish by June 22; Wave 2 authors briefed on imminent publication dates
-- [ ] **Ready to publish by June 30** → Defer to end of June; Wave 2 can cite in-draft form with caveat that final version pending
-
-**If Gate 3 blocked**: Wave 2 start deferred by 1–2 weeks, or Wave 2 scope reduced to domains that don't depend on blocked Wave 1 domain.
-
----
-
-## Part 4: June 20 Wave 2 Kickoff Sequence
-
-### Day 0 (June 20): T+0 Wave 2 Kickoff — 06:00 UTC
-
-**Orchestrator pre-flight** (06:00–07:00 UTC):
-- [ ] Read ORCHESTRATOR_STATE.md — confirm Wave 1 publication status, any blocking conditions
-- [ ] Verify all Wave 2 R-gates (readiness gates below) are green
-- [ ] Confirm Wave 2 author roster: ≥4 authors available, payment terms confirmed, communication channels verified
-- [ ] Review WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md (Section 4 below) — confirm Wave 2 domain sequence and dependency order
-
-**Wave 2 author briefings sent** (07:00–09:00 UTC):
-- [ ] T+0 kickoff email sent to all Wave 2 authors (same format as Wave 1 T+0)
-- [ ] Email includes: domain framing, research kit link, timeline, peer-mentor contact info, payment first-milestone confirmation
-- [ ] Peer reviewer roster emailed: introductory note, review timeline expectation (T+10 to T+12)
-
-**Project setup** (09:00–17:00 UTC):
-- [ ] Create Wave 2 phase-6/ subdirectory files: `domain-ecosystem-restoration.md`, `domain-institutional-learning.md`, etc.
-- [ ] Placeholder commit with YAML frontmatter: title, author, status: IN-PROGRESS, created date
-- [ ] Shared source library folder created and populated for each Wave 2 domain
-- [ ] ORCHESTRATOR_STATE.md updated: Phase 6 Wave 2 activated, domain list, author roster
-
-### Day 1–2 (June 21–22): Author Orientation
-
-**Async orientation materials** (June 21):
-- [ ] Wave 1 context summary: major findings, reader feedback themes, integration learnings (3-page summary doc)
-- [ ] Peer-mentor introductions: Wave 1 author (peer mentor) emails Wave 2 author with brief hello and availability
-- [ ] Domain dependency map: visual or text showing which Wave 2 domains depend on each other (see Section 4 below)
-
-**Optional sync orientation** (June 22, 30 min):
-- Small group call (if ≥3 authors can attend sync-friendly time)
-- Orchestrator frames Wave 2 timeline, answers scope questions, confirms payment logistics
-
-### Day 3 (June 23): First Research Checkpoint
-
-**Outline submission deadline** (June 23 17:00 UTC):
-- [ ] All Wave 2 authors submit outline by this date (same T+3 gate as Wave 1)
-- [ ] Orchestrator reviews outlines same day; feedback provided by June 24 EOD
-- [ ] Any outline revisions resubmitted by June 24 17:00 UTC
-
-### Days 3–5 (June 23–27): Parallel Wave 1 Publication + Wave 2 Research
-
-This is the high-contention window: Wave 1 is being finalized and published, while Wave 2 is ramping research.
-
-- Wave 1 domains: final publication staging, GitHub Pages upload, announcement distribution
-- Wave 2 domains: research production (Section 1 + partial Section 2 drafts)
-- **Orchestrator focus**: Wave 1 publication (Wave 1 authors get priority support)
-- **Wave 2 support**: Peer mentors answer questions; orchestrator available for blocking issues only
+**Component 7: Payment and Logistics (1 page)**
+- Honorarium schedule (first milestone on June 23 upon outline approval; second milestone on July 5 upon publication readiness gate).
+- Communication channel preference (Matrix async primary; email for blocking questions).
+- Escalation path: blocking question → tag @project-lead in Matrix room AND email [PROJECT LEAD EMAIL] with "Wave 2 scope — urgent" subject line.
+- Reduced availability windows: June 20–23 (stockbot expansion peak, see RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md Scenario A); orchestrator response target 6 hours, not 4.
 
 ---
 
-## Part 5: Activation Readiness Gates (Wave 2 Pre-Kickoff)
+## Part 4: Contingency — Author Unavailability
 
-All gates must be **green** by June 19 EOD for June 20 kickoff.
+### Trigger: Fewer Than 4 Authors Confirmed by June 15
 
-### R-Gate 1: Wave 2 Author Roster Confirmed
+**Day 0 (June 15 09:00 UTC)**: Count confirmed authors.
 
-- [ ] ≥4 Wave 2 authors confirmed (minimum 2 author per domain for backfill if one author becomes unavailable)
-- [ ] Each author has: confirmed June 20 start date, preferred communication channel, time zone, payment terms understood
-- [ ] Payment first-milestone amount ($X for outline approval) confirmed in writing
+- **4+ confirmed**: Proceed with full Wave 2 scope (5–7 domains, see WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md). No action required.
+- **3 confirmed**: Proceed with reduced scope (3 domains). Assign one domain per confirmed author from priority list (Ecosystem Restoration, Institutional Learning, Access & Equity in that order). Fourth domain deferred to July 1 Wave 2.5 cohort. Notify confirmed authors of scope reduction.
+- **2 confirmed**: Activate self-execute path for 2 domains (orchestrator authors outline + research brief; external editor completes prose). Recruit 2 additional authors June 16–18 from candidate list. Wave 2 starts June 20 for confirmed authors; deferred domains start July 1.
+- **0–1 confirmed**: Defer full Wave 2 to July 1. All orchestrator capacity June 20–30 redirected to Phase 5 Wave 1 publication completion and stockbot expansion. Wave 2 activation checklist re-runs from Part 1 on July 1.
 
-**If fewer than 4 authors confirmed**: Defer Wave 2 to July 1 OR activate self-execute path for unavailable domains
+### Trigger: Author Drops Out After June 20 (Mid-Sprint)
 
-### R-Gate 2: Wave 1 Publication Status
+**Detection**: Author silent in Matrix domain room for 48+ hours after T+0, OR explicit withdrawal message.
 
-- [ ] ≥3 of 4 Wave 1 domains peer-reviewed and approved for publication (see Gate 1 above)
-- [ ] Publication timeline confirmed: published by June 22, June 30, or deferred with impact documented
-- [ ] Cross-domain integration audit complete (Gate 2 above)
+**Response sequence** (complete within 24 hours of detection):
 
-**If <3 domains approved**: Reduce Wave 2 scope to domains without Wave 1 dependencies, or defer Wave 2 to July 1
+1. Contact author directly (Matrix DM + email) — confirm withdrawal vs. technical issue.
+2. If withdrawn: assess their draft state. If outline (T+3) is complete → reassign to peer mentor or alternate author for continuation. If no outline → defer domain to July 1 or activate orchestrator self-execute for that domain.
+3. If technical issue: troubleshoot Nextcloud+Matrix access within same day. See DEPLOYMENT_PLAYBOOK_NEXTCLOUD_MATRIX.md for access recovery steps.
+4. Notify remaining authors: brief note in `#wave2-general` that one domain is being handled; no disruption to their tracks.
 
-### R-Gate 3: Research Kit Assembly
+### Cross-Training Procedure
 
-- [ ] Pre-staged source library ready for each Wave 2 domain (25–35 verified URLs per domain)
-- [ ] Wave 1 reference documents identified (which Wave 1 documents model structure, tone, scope for each Wave 2 domain)
-- [ ] Domain outlines finalized and committed to master
-- [ ] Peer reviewer roster identified (≥1 reviewer per domain, credentials/contact/timeline confirmed)
-
-### R-Gate 4: Infrastructure & Dependencies
-
-- [ ] Git directory structure ready: `projects/systems-resilience/phase-6/` has placeholders for Wave 2 domains
-- [ ] ORCHESTRATOR_STATE.md can be updated with Wave 2 activation status
-- [ ] WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md reviewed (see Part 4 below) — orchestrator understands parallel vs. sequential sequencing
-- [ ] RESOURCE_CONTENTION_MITIGATION.md reviewed (see Part 5 below) — June 20–25 resource conflicts identified and mitigated
+All Wave 2 domain leads receive a brief cross-domain summary (1-page) of each other's domain scope. Purpose: if one author drops, an adjacent author can pick up the outline within 2–3 days rather than starting cold. Cross-domain summaries delivered with onboarding kit on June 16.
 
 ---
 
-## Part 6: Escalation Triggers & Contingency Routes
+## Part 5: Non-Negotiable Anchors
 
-### Trigger 1: Wave 2 Author Recruitment Stalls (<4 authors by June 15)
+Two dates are immovable regardless of any contingency trigger:
 
-**Response**:
-- Day 1 (June 16): Contact alternate authors on candidate list (3–5 cold outreach)
-- Day 2 (June 17): If 2+ new confirmations, proceed with reduced roster (2–3 domains only)
-- Day 3 (June 18): If still <4, defer Wave 2 to July 1 and activate self-execute path for deferred domains (orchestrator can write outlines/do research, outsource final writing/editing)
+**June 20 — Wave 2 Start Date**
 
-### Trigger 2: Wave 1 Publication Slips (>2 domains not ready by June 19)
+The June 20 start is locked because: (a) it follows the minimum publication preparation window for Wave 1 (June 15–19), (b) it precedes the July 5 publication readiness gate that Phase 7 pilot recruitment depends on, and (c) the June 20–30 stockbot expansion window means that any Wave 2 delay past June 20 will collide with a stockbot CAUTION/ROLLBACK window rather than running parallel to it. If author recruitment stalls, activate the reduced-scope path (Part 4 above) rather than delaying the start date.
 
-**Response**:
-- Assess which Wave 2 domains depend on blocked Wave 1 domains
-- Option A: Defer Wave 2 start to July 1 (gives Wave 1 extra week for publication)
-- Option B: Start Wave 2 with only independent domains (e.g., Ecosystem Restoration), defer dependent domains (e.g., Institutional Learning) to July 1
+**June 27 — T+7 First-Draft Checkpoint**
 
-### Trigger 3: Wave 2 Research Stalls (T+7 outline feedback shows major scope issues)
-
-**Response**:
-- Orchestrator + author sync meeting to realign scope
-- Extended timeline: T+3 outline → T+7 revised outline → T+14 first draft (instead of T+10)
-- Prioritize: fully complete high-priority domains, defer secondary domains if needed
-
-### Trigger 4: Orchestrator Overload (June 20–25 resource contention)
-
-**Response**:
-- Wave 1 authors get priority support (publication is time-critical)
-- Wave 2 authors rely primarily on peer mentors for questions
-- Orchestrator provides blocking-issue support only (≤4 hours response time)
-- If contention persists, defer Wave 2 secondary domains (Institutional Learning, etc.) to July 1
+The June 27 checkpoint is the first real quality signal of the Wave 2 sprint. A 50% draft on June 27 confirms: (a) the author has fully engaged with the source library, (b) the domain scope is workable within the timeline, and (c) the T+14 (July 4) full-draft gate is achievable. If this checkpoint is missed by more than 3 days, the publication readiness gate slips from July 4–5 to July 11–12, compressing the Wave 3 start window and creating Phase 7 pilot timeline risk. If an author cannot meet the June 27 checkpoint, escalate immediately: scope reduction or replacement, not timeline extension.
 
 ---
 
-**Summary**: Wave 2 activation follows the same proven Wave 1 template, with added leverage from Wave 1 models, peer mentors, and publication context. The June 15–20 transition window is intentionally structured to avoid collision with Wave 1 publication finalization. Success depends on author recruitment by June 15 (the critical path item) and Wave 1 publication readiness by June 19.
-
+**Summary**: This checklist governs the June 15–20 transition from Phase 5 Wave 1 publication completion to Phase 6 Wave 2 research initiation. The critical path item is author roster confirmation by June 15. All five R-gates must be green by June 19 EOD. June 20 start and June 27 T+7 checkpoint are immovable. Contingency routes for author shortfall, mid-sprint dropout, and platform access failures are pre-defined and do not require user escalation to execute.

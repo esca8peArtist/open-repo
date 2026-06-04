@@ -3,405 +3,196 @@ title: "Wave 2 Domain Sequencing Framework"
 project: systems-resilience
 phase: 6
 wave: 2
-status: OPERATIONAL PLANNING — execution framework for 12 Phase 6 domains
-created: 2026-06-03
-execution_period: 2026-06-20 to 2026-09-30
-purpose: "Design Wave 2 domain execution strategy: parallel vs. sequential logic, inter-domain dependencies, critical path analysis, and timeline scenarios for all 12 Phase 6 Wave 2+ domains."
+status: PRODUCTION-READY — June 15 deployment
+created: 2026-06-04
+revised: 2026-06-04
+execution_period: 2026-06-20 to 2026-07-25
+scope_assumption: "5–7 domains, 2 domains/week × 3 weeks cadence"
+non_negotiable_anchors:
+  - "June 20 Wave 2 onboarding start"
+  - "June 27 T+7 first-draft checkpoint"
+  - "July 4–5 first publication readiness gate"
 cross_references:
-  - PHASE_6_WAVE_1_EXECUTION_CHECKLIST.md
   - PHASE_6_WAVE_2_ACTIVATION_CHECKLIST.md
-  - RESOURCE_CONTENTION_MITIGATION.md
-  - WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md
-word_count: ~4,000
+  - RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md
+  - PHASE_5_WAVE_1_RECRUITMENT_PREFLIGHT_CHECKLIST.md
+word_count: ~1,800
 ---
 
 # Wave 2 Domain Sequencing Framework
-## Design: Parallel vs. Sequential Execution for 12 Phase 6 Domains
+## Parallel vs. Sequential Execution, Dependency Analysis, and Critical Path
 
-**Prepared**: June 3, 2026 (planning phase)  
-**Execution period**: June 20–September 30, 2026 (12 weeks)  
-**Scope**: All 12 Phase 6 domains (Wave 1 4 domains + Wave 2 4 domains + Future expansion 4 domains)
-
----
-
-## Part 1: The 12 Phase 6 Domains
-
-### Wave 1 (4 domains, June 1–15)
-
-Fast-track domains with independent research foundations:
-
-| Domain | Lead Research Area | Dependency Chain | Publication Target |
-|--------|-------------------|-------------------|-------------------|
-| **Economic Resilience** | Community-scale economics, non-market allocation | Independent | June 15 |
-| **Infrastructure Interdependencies** | Critical infrastructure for 100–500 person communities | Independent | June 15 |
-| **International Coordination** | Cross-community networks, federation models | Depends on: Governance (Wave 1) | June 15 |
-| **Intergenerational Knowledge Transmission** | Oral history, skill transfer, institutional memory | Depends on: Governance (Wave 1) | June 15 |
-
-### Wave 2 (4 domains, June 20–July 4)
-
-Secondary domains that integrate Wave 1 findings and require Wave 1 publication:
-
-| Domain | Lead Research Area | Dependency Chain | Publication Target |
-|--------|-------------------|-------------------|-------------------|
-| **Ecosystem Restoration** | Food production, ecological regeneration, climate-adapted farming | Depends on: Food Systems (Wave 1), Economic Resilience (Wave 1) | July 4–15 |
-| **Institutional Learning** | Governance evolution, conflict learning, constitutional adaptation | Depends on: Governance (Wave 1), Conflict Resolution (Phase 5 Wave 2) | July 4–15 |
-| **Psychological Resilience** (Wave 2 variant) | Recovery period mental health, burnout, post-traumatic growth | Depends on: Psychological Support (Phase 5 Wave 2) | July 4–15 |
-| **Access & Equity** (Phase 6 candidate) | Disability inclusion, multilingual adaptation, participatory accessibility | Depends on: Governance, Food Systems | July 4–15 |
-
-### Wave 3+ (4+ domains, July 5–September 30)
-
-Expansion domains with longer research timelines or lower publication urgency:
-
-| Domain | Lead Research Area | Dependency Chain | Publication Target |
-|--------|-------------------|-------------------|-------------------|
-| **Crisis Communication** | Off-grid messaging, rumor/misinformation management | Depends on: Information Infrastructure (Wave 1) | August 15 |
-| **Supply Chain Redundancy** | Regional food/goods networks, supplier mapping | Depends on: Food Systems, Economic Resilience | August 15 |
-| **Long-Term Infrastructure Maintenance** | Asset lifespan planning, repair networks, skill preservation | Depends on: Infrastructure, Institutional Learning | September 1 |
-| **Justice & Accountability** | Conflict resolution procedures, restorative justice, truth commissions | Depends on: Governance, Conflict Resolution | September 15 |
-
-**Note**: Phase 6 candidate list included: ecosystem restoration, institutional learning, psychological recovery, access and equity, crisis communication, supply chain redundancy, long-term infrastructure maintenance, and justice/accountability. This framework allocates them across waves based on dependency and research feasibility.
+**Prepared**: June 4, 2026 (production deployment)
+**Execution window**: June 20–July 25, 2026
+**Scope**: 5–7 Phase 6 Wave 2 domains (drawn from Phase 3 community-scale production-ready set)
+**Cadence**: 2 domains/week × 3 weeks active research, T+7 first-draft checkpoint, T+14 publication readiness gate
 
 ---
 
-## Part 2: Parallel vs. Sequential Strategy
+## Part 1: Wave 2 Scope Definition
 
-### Principle: Dependency-Driven Batching
+### Domain Pool: Phase 3 Community-Scale Production-Ready
 
-The execution strategy balances **parallelization** (faster completion) against **dependency respect** (publish foundational domains before dependent domains begin).
+Phase 3 completed 5 community-scale domains that are research-ready and scoped for Wave 2 authorship:
 
-### Wave 1 Parallelization (June 1–15)
+| Domain | Research Foundation | Priority | Wave 1 Dependency |
+|--------|--------------------|-----------|--------------------|
+| **Governance and Democratic Coordination** | Phase 3 governance research complete | P1 — Critical (all other domains reference it) | Requires Phase 5 Wave 1 Governance domain published |
+| **Food Systems and Agricultural Continuity** | Phase 3 food systems research complete | P1 — Critical (practical continuity anchor) | Requires Phase 5 Wave 1 Food domain published |
+| **Information Resilience and Off-Grid Communication** | Phase 3 info research complete | P2 — High | Requires Phase 5 Wave 1 Info Infrastructure published |
+| **Community Security and Conflict De-escalation** | Phase 3 security research complete | P2 — High | Requires Phase 5 Wave 1 Security domain published |
+| **Scaling Pathways and Inter-Community Federation** | Phase 3 scaling research complete | P3 — Medium (Phase 7 prep dependency) | Requires Phase 5 Wave 1 Scaling domain published |
 
-**Status**: 4 domains research in **full parallel**.
+Two additional expansion domains may be added if 6–7 author slots fill:
 
-**Rationale**:
-- Economic Resilience and Infrastructure Interdependencies have independent research bases (no Phase 5 or Wave 1 dependencies)
-- International Coordination and Intergenerational Transmission depend only on Governance (which is being published June 15), not on other Wave 1 domains
-- All 4 domains can begin research June 1 without waiting for each other
+| Domain | Research Foundation | Priority | Status |
+|--------|--------------------|-----------|----|
+| **Ecosystem Restoration and Climate Adaptation** | Phase 4b agricultural intensification research | P3 | Add if ≥6 authors confirmed |
+| **Institutional Learning and Constitutional Adaptation** | Phase 5 Wave 2 conflict resolution research | P3 | Add if 7 authors confirmed |
 
-**Resource model**: 4 simultaneous authors, 1 orchestrator coordinating, 4 peer reviewers (one per domain)
-
-**Risk**: Low. If one domain stalls, others continue unaffected.
-
----
-
-### Wave 2 Parallelization (June 20–July 4)
-
-**Status**: 4 domains research in **2 parallel tracks** (contingent on Wave 1 publication).
-
-**Track A — "Publication-Ready" (begins June 20)**:
-- Ecosystem Restoration (depends on Food Systems, Economic Resilience — both published by June 20)
-- Access & Equity (depends on Governance, Food Systems — both published by June 20)
-
-**Rationale**:
-- Both Wave 1 dependencies are published by June 15, so Wave 2 can begin research June 20 with stable references
-- Both domains are high-priority for Phase 7 pilot (ecosystem resilience + accessibility are foundational to community trust)
-
-**Track B — "Delayed Ramp" (begins June 27)**:
-- Institutional Learning (depends on final Governance domain publication + Conflict Resolution from Phase 5 Wave 2)
-- Psychological Resilience (depends on Psychological Support from Phase 5 Wave 2, which publishes ~June 10)
-
-**Rationale**:
-- Institutional Learning specifically needs to integrate Governance finalized publication (not just draft); delaying 1 week ensures stable reference point
-- Psychological Resilience can integrate Phase 5 Wave 2 feedback and early reader reactions before drafting
-
-**Resource model**: 2 + 2 authors staggered by 1 week, shared orchestrator (less loaded than Wave 1 since Wave 1 publication is winding down)
-
-**Risk**: Medium. If Governance publication slips past June 19, Track A stalls. Mitigation: pre-stage Governance draft for Track A to cite, with caveat that final version pending.
+**Default scope**: 5 domains (P1 + P2), matching the 5-author recruitment target. Expansion to 6–7 domains is contingent on author roster size confirmed June 15.
 
 ---
 
-### Wave 3+ Staged Ramp (July 5–September 30)
+## Part 2: Sequencing Logic — Parallel vs. Sequential
 
-**Status**: 4+ domains research in **rolling sequential batches** (1–2 domains per month).
+### Recommended: 3 Parallel Author Tracks (Staggered by Priority)
 
-**Sequencing**:
+Wave 2 runs 3 simultaneous tracks with a dependency-gated start condition:
 
-1. **Batch 1** (July 5–29): Crisis Communication + Supply Chain Redundancy
-   - Both depend on Wave 1 publications (Information Infrastructure, Food Systems, Economic Resilience)
-   - Both have moderate research lift (4–5 weeks per domain)
-   - Begin immediately after Wave 2 publication readiness gate (July 4)
+**Track 1 — Governance** (begins June 20, unconstrained)
 
-2. **Batch 2** (August 1–29): Long-Term Infrastructure Maintenance + one domain TBD
-   - Depends on Institutional Learning (Wave 2) for governance structure context
-   - Can run parallel with Batch 1 if researcher capacity available
+Governance is the highest-priority domain and has the fewest inter-domain dependencies (it establishes the terminology and coordination framework that all other domains reference). Governance starts June 20 regardless of other Track status.
 
-3. **Batch 3** (September 1–30): Justice & Accountability + expansion domains
-   - Last batch before September 30 deadline
-   - Lower priority (relevant to Phase 7 governance, not core Phase 6 publication)
+**Track 2 — Food Systems + Information Resilience** (begins June 20, jointly)
 
-**Resource model**: 1–2 rolling authors per month (less intensive than Waves 1–2)
+Both domains have independent research foundations (Phase 3) and independent Phase 5 Wave 1 dependencies that will be published by June 19. Both can begin in parallel with Track 1. Governance domain does not need to be published before Food or Information research begins — they only cross-reference Governance for terminological alignment, not for foundational content.
 
-**Risk**: Low, contingent on Waves 1–2 completing on time. If Wave 2 slips, Batch 1 ripples.
+**Track 3 — Security + Scaling** (begins June 24, 4-day stagger)
+
+Security and Scaling both depend on Governance and Food domains for framing (e.g., Security conflict de-escalation references Governance coordination structures; Scaling federation models reference Food domain supply network analysis). A 4-day stagger allows Track 1 and Track 2 authors to post their T+3 outlines (June 23), which Track 3 authors read before beginning their own outlines.
+
+**Resource model**: 3–5 simultaneous authors (Track 1: 1 author, Track 2: 2 authors, Track 3: 2 authors), 1 orchestrator coordinating.
 
 ---
 
-## Part 3: Dependency Map & Critical Path
+## Part 3: Dependency Analysis
 
-### Dependency Matrix
+### Does Wave 2 Depend on Wave 1 Publication?
 
-```
-Phase 6 Wave 2 Domains: What must complete first
+**Yes, but gated by domain, not by the entire Wave 1 corpus.**
 
-┌─────────────────────────────────────────────────────────────────────────┐
-│ WAVE 1 (June 1-15, must publish before Wave 2 begins)                   │
-├─────────────────────────────────────────────────────────────────────────┤
-│ ✓ Governance & Decision-Making    (peer review by June 14, publish by June 19)
-│ ✓ Food Systems & Supply Chain     (peer review by June 14, publish by June 19)
-│ ✓ Information Infrastructure      (peer review by June 14, publish by June 15+)
-│ ✓ Economic Resilience            (peer review by June 14, publish by June 15+)
-│
-│ PHASE 5 (already complete/published June 1)
-│ ✓ Psychological Support (Wave 2)  → Psychological Resilience domain depends
-│ ✓ Conflict Resolution (Wave 2)    → Institutional Learning domain depends
-└─────────────────────────────────────────────────────────────────────────┘
+The dependency rule is: Wave 2 research on Domain X can begin once the Phase 5 Wave 1 domain that X directly extends is **peer-reviewed and in final draft** (publication can follow while Wave 2 is in progress). Wave 2 authors can cite a finalized-draft Wave 1 domain as "expected publication [date]" — they do not need to wait for the live URL.
 
-Wave 2 Start Condition: Governance + Food Systems published by June 19 EOD
-If NOT met: Wave 2 Track A deferred to July 1, or scope reduced
+| Wave 2 Domain | Required Wave 1 Status | Start Condition |
+|---------------|----------------------|-----------------|
+| Governance | Phase 5 Wave 1 Governance: final draft | June 19 EOD |
+| Food Systems | Phase 5 Wave 1 Food: final draft | June 19 EOD |
+| Information Resilience | Phase 5 Wave 1 Info Infrastructure: final draft | June 19 EOD |
+| Community Security | Phase 5 Wave 1 Security: final draft | June 19 EOD |
+| Scaling Pathways | Phase 5 Wave 1 Scaling: final draft | June 19 EOD |
 
-┌─────────────────────────────────────────────────────────────────────────┐
-│ WAVE 2 (June 20–July 4, contingent on Wave 1 publication)               │
-├─────────────────────────────────────────────────────────────────────────┤
-│ Track A (begins June 20):                                               │
-│   • Ecosystem Restoration   ← depends on: Food Systems + Economic       │
-│                             ← depends on: Infrastructure Interdependencies
-│   • Access & Equity         ← depends on: Governance + Food Systems     │
-│
-│ Track B (begins June 27):                                               │
-│   • Institutional Learning  ← depends on: Governance final + Conflict   │
-│   • Psychological Resilience ← depends on: Psychological Support final  │
-│
-│ Publication Readiness Gate: July 4 (all 4 domains peer-reviewed)
-└─────────────────────────────────────────────────────────────────────────┘
+If any Wave 1 domain is **not in final draft by June 19**, the corresponding Wave 2 domain start is deferred by up to 5 days (to June 25) while the Wave 1 domain completes review. If the Wave 1 domain is not finalized by June 25, the Wave 2 domain drops to the July 1 deferred cohort.
 
-Wave 3 Start Condition: Wave 2 publication readiness gates met July 4
-If NOT met: Wave 3 deferred to July 15, or deferred to August 1
+### Cross-Domain Dependencies Within Wave 2
 
-┌─────────────────────────────────────────────────────────────────────────┐
-│ WAVE 3+ (July 5+, contingent on Wave 2 publication readiness)           │
-├─────────────────────────────────────────────────────────────────────────┤
-│ Batch 1 (July 5–29):                                                    │
-│   • Crisis Communication        ← depends on: Information Infrastructure│
-│   • Supply Chain Redundancy     ← depends on: Food Systems + Economic   │
-│
-│ Batch 2 (Aug 1–29):                                                     │
-│   • Long-Term Infrastructure    ← depends on: Institutional Learning    │
-│
-│ Batch 3 (Sept 1–30):                                                    │
-│   • Justice & Accountability    ← depends on: Governance + Conflict Res │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+| Domain | Must Read (but not wait for) |
+|--------|------------------------------|
+| Information Resilience | Governance outline (T+3, June 23) for coordination terminology |
+| Community Security | Governance outline (T+3, June 23) + Food outline for supply interdependencies |
+| Scaling Pathways | Governance T+3 outline + Food T+3 outline + Security T+3 outline |
+| Ecosystem Restoration (if added) | Food Systems T+7 draft (June 27) — needs food production framing |
+| Institutional Learning (if added) | Governance T+7 draft (June 27) — needs governance evolution framing |
 
-### Critical Path: June 1 → September 30
-
-**Longest chain** (determines overall project deadline):
-
-1. **June 1–15**: Wave 1 research sprint (14 days)
-   - Critical bottleneck: Governance domain must complete peer review by June 14 to publish by June 19
-   - If Governance slips to June 20+, Wave 2 start deferred by 1+ week
-
-2. **June 15–19**: Wave 1 publication + editorial integration (5 days)
-   - Bottleneck: Editorial review (orchestrator-heavy work)
-   - Parallel with Wave 2 author recruitment (June 5–15)
-
-3. **June 20–27**: Wave 2 Track A research ramp (7 days)
-   - Bottleneck: Ecosystem Restoration and Access & Equity must submit outlines by June 23
-   - No external dependency (all required Wave 1 published by June 20)
-
-4. **June 27–July 4**: Wave 2 Track B ramp + Track A first draft (8 days)
-   - Bottleneck: Institutional Learning and Psychological Resilience must complete outlines by June 30
-   - Track A moves to peer review (T+10 = June 30)
-
-5. **July 4–15**: Wave 2 peer review & revision (11 days)
-   - All 4 Wave 2 domains in peer review; revisions due by July 10; final sign-off July 15
-
-6. **July 15–September 30**: Wave 3 (2+ months)
-   - No critical bottleneck; staged execution at 1–2 domains/month
-   - Risk is low if Waves 1–2 complete on time
-
-**Total critical path**: June 1 → July 15 (6 weeks) for 8 domains (Waves 1–2)
-
-**Slack domains**: Wave 3+ can slip by 4–6 weeks without affecting overall Phase 6 publication goal (September 30)
+**Practical implication**: Track 3 authors (Security + Scaling) read Track 1+2 T+3 outlines before finalizing their own outlines. This is a read-only dependency — Track 3 does not wait for Track 1+2 first drafts, only outlines.
 
 ---
 
-## Part 4: Timeline Scenarios
+## Part 4: Critical Path Analysis
 
-### Scenario A: Wave 1 Finishes On Time (Optimistic)
+### Minimum Timeline: June 20 → Publication
 
-**Assumption**: All Wave 1 domains peer-reviewed and published by June 19.
+The minimum viable timeline for Wave 2 → publication is as follows:
 
-**Timeline**:
+| Milestone | Date | Condition |
+|-----------|------|-----------|
+| T+0 Kickoff | June 20 | All R-gates green (PHASE_6_WAVE_2_ACTIVATION_CHECKLIST.md Part 1) |
+| T+3 Outline submission | June 23 | All 5 authors submit domain outlines |
+| T+4 Orchestrator outline review | June 24 | Orchestrator reviews and approves/revises all outlines |
+| T+7 First-draft checkpoint | June 27 | **Non-negotiable**: 50% draft, Sections 1–2 narrative-complete |
+| T+10 Full first draft | June 30 | All sections complete, citations verified |
+| T+12 Peer review feedback | July 2 | Peer reviewers return structured feedback |
+| T+14 Revision complete | July 4 | Authors submit revised drafts |
+| T+15 Publication readiness gate | July 5 | Orchestrator go/no-go: research complete, peer-reviewed, integration-ready |
+| T+20–35 Publication | July 10–25 | Staged publication (2 domains/week) |
 
-| Date | Milestone | Domains | Owner |
-|------|-----------|---------|-------|
-| June 1–15 | Wave 1 research sprint | Econ, Infra, Intl, Intergen | 4 authors |
-| June 15–19 | Wave 1 publication + editorial | All 4 | Orchestrator |
-| June 20–27 | Wave 2 Track A ramp | Ecosystem, Access | 2 authors |
-| June 27–July 4 | Wave 2 Track B ramp | Institutional, Psych | 2 authors |
-| July 1–15 | Wave 2 peer review & revision | All 4 | 4 peer reviewers |
-| July 15 | Wave 2 publication readiness | All 4 | Orchestrator |
-| July 15–Aug 29 | Wave 3 Batch 1 + 2 | Crisis Comm, Supply Chain, LT Infra | 3 authors |
-| Aug 29–Sept 30 | Wave 3 Batch 3 | Justice & Accountability | 1–2 authors |
-| Sept 30 | Phase 6 completion | 12 domains | — |
+**Total critical path for 5-domain Wave 2**: 20–35 days from June 20 kickoff, depending on publication staging pace.
 
-**Result**: All 12 domains published by September 30. Phase 7 pilot can reference complete corpus.
-
-**Resource load**:
-- June 1–15: High (4 parallel authors, 1 orchestrator, 4 reviewers)
-- June 20–July 15: High (4 parallel authors, shared orchestrator, 4 reviewers)
-- July 15–Sept 30: Moderate (1–2 rolling authors, minimal orchestrator)
-- **Total orchestrator hours**: ~140 hrs (distributed over 4 months = 35 hrs/week in June–July, 10 hrs/week Aug–Sept)
+**Wave 3 start condition**: July 5 publication readiness gate met. If gate met on July 5, Wave 3 can begin July 7–10. If gate slips to July 12, Wave 3 begins July 14–15 (1-week slip, within acceptable range for Phase 7 pilot October 15 deadline).
 
 ---
 
-### Scenario B: Wave 1 Slips 1 Week (Realistic)
+## Part 5: Resource Contention Windows
 
-**Assumption**: One Wave 1 domain (e.g., International Coordination) needs extra peer review time; publishes June 21 instead of June 15.
+### June 9–15: Overlap with Stockbot Expansion + Resistance-Research Batch 2
 
-**Timeline impact**:
+This window is the **pre-Wave 2 preparation period** — Wave 2 recruiting, source library assembly, and onboarding kit finalization. Resource contention is highest here because all three initiatives are active:
 
-| Date | Milestone | Impact |
-|------|-----------|--------|
-| June 1–21 | Wave 1 research + delayed publication | International Coordination slip → Wave 2 start delayed 1 week |
-| June 21–28 | Wave 1 final publication (compressed editorial) | Orchestrator overload |
-| June 27 | Wave 2 Track A ramp (deferred from June 20) | Ecosystem Restoration + Access & Equity delayed start |
-| July 4–11 | Wave 2 Track B ramp + Track A peer review | Compressed timeline; Track A has 1 week less for first draft |
-| July 11–22 | Wave 2 peer review & revision (extended) | Extra 1 week for revisions |
-| July 22 | Wave 2 publication readiness | 1 week later than optimistic scenario |
-| July 22–Sept 30 | Wave 3 (reduced timeline) | 2+ domains deferred to October or dropped from Phase 6 |
+- **Stockbot expansion**: week 1–2 of June 11–30 expansion (76 total hours; peak June 11–18 at ~15 hrs/week orchestrator coordination).
+- **Resistance-research Batch 2**: June 9+ execution, ~60 total hours over 3 weeks, peak June 9–15 (~20 hrs research agent, ~8 hrs orchestrator coordination).
+- **Wave 2 pre-work**: author recruitment follow-up (confirming acceptances, sending onboarding kits), source library assembly, domain outline drafting (~15 hrs total June 9–15).
 
-**Result**: 8 domains (Waves 1–2) published by July 22. Wave 3 either compressed (1–2 domains published Sept 30) or deferred to October.
+**Mitigation**: Source library assembly and domain outline preparation are batchable (can be done in 2–3 focused sessions June 9–12, before stockbot and Batch 2 reach peak demand). Author recruitment follow-up is low-overhead (email/Matrix, 1–2 hrs total). No orchestrator conflict expected beyond June 12 orchestrator load reaching 12–14 hrs/day — see RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md for scenario routing.
 
-**Resource impact**: Orchestrator overload June 21–July 4 (overlaps Wave 1 publication + Wave 2 ramp). Mitigation: defer Wave 2 author recruitment to free up June 20–27 for Wave 1 publication work.
+### June 20–30: Wave 2 First-Draft Window + Stockbot Expansion Peak
 
-**Recovery path**: If Wave 1 slip is detected by June 17, defer Wave 2 start to July 1 (creating 1-week buffer for Wave 1 publication). Wave 2–3 timeline shifts by 1 week; Phase 6 complete by October 7 instead of September 30 (acceptable for Phase 7 pilot if complete by October 15).
+This is the highest-intensity Wave 2 period (T+0 through T+10). It overlaps with:
 
----
+- **Stockbot expansion**: June 20–30 is the validation and live-trading initialization phase (~10 hrs/week orchestrator coordination, lower than June 11–18).
+- **Wave 2 orchestration**: June 20–30 requires ~25–35 hrs orchestrator time (author support, outline reviews, T+7 checkpoint assessment, peer reviewer coordination).
+- **Wave 1 publication finalization**: June 20–25 includes final publication staging and distribution announcements for Phase 5 Wave 1 corpus (~10–15 hrs orchestrator).
 
-### Scenario C: Wave 1 Slips 2+ Weeks (Contingency)
-
-**Assumption**: Multiple Wave 1 domains need revision; peer review extends to June 28.
-
-**Timeline impact**:
-
-| Decision | Path |
-|----------|------|
-| **Path C1: Defer Wave 2** | Delay Wave 2 start to July 15. Wave 1 finishes June 28; 2-week buffer for Wave 1 publication completion. Wave 2 ramp July 15–August 1. Phase 6 complete by October 15. |
-| **Path C2: Compress Wave 2** | Start Wave 2 June 27 with Wave 1 domains still in publication queue (cite draft/staged versions). Higher risk of inconsistency between Wave 2 drafts and Wave 1 final publications. |
-| **Path C3: Reduce Phase 6 scope** | Proceed with 6–8 high-priority domains (Waves 1–2). Defer Wave 3 expansion domains (Crisis Communication, Long-Term Infrastructure, Justice & Accountability) to Phase 6b (November–December or January 2027). |
-
-**Recommendation**: If Wave 1 slip detected by June 14, activate Path C1 (defer Wave 2 to July 15). This protects Wave 2 quality and avoids orchestrator overload.
+**Total June 20–30 estimated orchestrator load**: 45–60 hrs/week. This exceeds sustainable ~35 hrs/week capacity. See RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md for scenario A (full parallel) vs. Scenario C (stockbot-first, Wave 2 throttled) resolution.
 
 ---
 
-## Part 5: Critical Path Decisions & Escalation
+## Part 6: Escalation Triggers
 
-### Decision 1: Sequential vs. Parallel Wave 2?
+### Trigger 1: Wave 1 Falls More Than 1 Week Behind Schedule
 
-**The question**: Should Wave 2 Track A (fast-track) and Track B (delayed) run in parallel (staggered start) or sequential (one finishes before the other begins)?
+**Definition**: Any Phase 5 Wave 1 domain is not in final draft by June 22 (3-day slip) OR not peer-reviewed by June 25 (10-day slip from target June 15).
 
-**Recommendation**: **Parallel with stagger** (as described above).
+**Impact on Wave 2 timeline**:
 
-**Rationale**:
-- Parallel stagger (Track A starts June 20, Track B starts June 27) gives Track A a 1-week head start
-- Both tracks finish peer review simultaneously (July 10), allowing orchestrator to provide equal support
-- If Track B delayed start until July 1 (after Track A outlines), publication readiness gate slips from July 4 to July 11, compressing Wave 3 by 1 week
-- Stagger costs nothing (same authors, same resources) but gains 1 week of schedule buffer
+- 3-day slip (final draft June 22): Wave 2 corresponding domain deferred from June 20 to June 24 start. T+7 checkpoint moves from June 27 to July 1. T+14 full draft moves from July 4 to July 8. Publication readiness gate moves from July 5 to July 9. Net impact: 4-day slip to publication readiness.
 
-**Alternative**: If orchestrator overload detected in June 22–27 window, shift to **pure sequential** (Track A June 20–July 1, Track B July 1–July 22). Costs 1 week of schedule but eases contention.
+- 1-week slip (final draft June 26): Wave 2 corresponding domain deferred to July 1 start. T+7 checkpoint July 8. T+14 full draft July 15. Publication readiness gate July 16. Net impact: 11-day slip to publication readiness.
 
----
+- 2-week slip (final draft July 3): Wave 2 corresponding domain deferred to July 8 start. T+7 checkpoint July 15. T+14 full draft July 22. Publication readiness gate July 23. Net impact: 18-day slip. **Phase 7 pilot recruitment pressure begins** (needs published corpus by July 25).
 
-### Decision 2: Which Wave 1 Domains Are Critical Path?
+**Escalation action** if 2-week slip detected: user decision required on whether to (a) accept Phase 7 pilot delay or (b) reduce Wave 2 scope (publish 3 of 5 domains by July 15, defer 2 domains to August).
 
-**The question**: If a Wave 1 domain cannot be completed by June 15, which ones must be published before Wave 2 starts?
+### Trigger 2: T+7 First-Draft Checkpoint Missed by an Author
 
-**Answer**:
+**Definition**: An author does not submit a 50% draft by June 27 EOD (or July 1 for Track 3 deferred domains).
 
-| Domain | Criticality | Wave 2 Dependency | Mitigation |
-|--------|-----------|---|---|
-| **Governance** | CRITICAL | Institutional Learning, Access & Equity both depend on final Governance text | Must be published or finalized by June 19 |
-| **Food Systems** | CRITICAL | Ecosystem Restoration and Access & Equity both depend on Food Systems | Must be published or finalized by June 19 |
-| **Infrastructure** | MEDIUM | Ecosystem Restoration cites it; crisis communication and supply chain domains cite it | Publish by June 20 or cite draft |
-| **Economic Resilience** | MEDIUM | Ecosystem Restoration and Supply Chain domains cite it | Publish by June 20 or cite draft |
-| **Information Infrastructure** | LOW | Information Infrastructure is primarily foundational to Wave 1; only Crisis Communication (Wave 3) depends on it | Can publish anytime through June 30 |
-| **International Coordination** | LOW | Intergenerational Knowledge Transmission depends on it, but both are Wave 1; no Wave 2 dependency | Can publish anytime through June 30 |
+**Response within 24 hours of detection**:
 
-**Critical path**: Governance + Food Systems must be published by June 19. If either is not ready, Wave 2 start deferred to July 1.
+1. Orchestrator contacts author in Matrix domain room + email. Determine: (a) blocked by a question or scope issue (resolvable same day), (b) behind on research (may catch up with 2-day extension), or (c) overcommitted (cannot meet June 30 full-draft deadline).
+2. If (a) or (b): grant 2-day extension to June 29. Track 3 domains adjust accordingly. No Publication readiness gate impact if full draft arrives June 30 as scheduled.
+3. If (c): scope reduction conversation. Reduce target from 5,000–7,000 words to 3,000–4,000 words (Tier C path). Adjust peer review dates. If author confirms they cannot deliver a 3,000-word first draft by July 2, activate backup assignment (peer mentor takes over outline; orchestrator completes prose pass).
+
+**June 27 checkpoint is non-negotiable as a signal check** — a 0% response by June 27 is a recruitment failure that requires immediate action, not a 1-week extension.
 
 ---
 
-### Decision 3: Should Any Wave 2 Domains Be Deferred to Wave 3?
+## Part 7: Recommendation Summary
 
-**The question**: If Wave 2 author recruitment stalls or Wave 1 slip is detected, should any Wave 2 domains move to Wave 3?
+The Wave 2 sequencing recommendation is **3 parallel tracks with a 4-day stagger for Track 3**, running June 20–July 5 for the research sprint, followed by a 2-domain/week publication staging cadence July 5–25. This approach:
 
-**Recommendation**: **Defer Psychological Resilience to Wave 3 (July 15+)** if recruitment stalls.
+- Respects all Phase 5 Wave 1 publication dependencies without waiting for the full corpus to be published.
+- Maximizes parallelism (3 tracks simultaneously) without exceeding orchestrator coordination capacity (5 authors is the verified ceiling from Phase 5 Wave 1 experience).
+- Achieves the first publication readiness gate July 5 (T+15), enabling Phase 7 pilot recruitment to begin July 7–10.
+- Preserves 1-week of buffer before the July 15 absolute Phase 7 milestone, accommodating a 1-week slip to Wave 2 if needed without downstream cascade.
 
-**Rationale**:
-- Psychological Resilience is the most dependent on Phase 5 Wave 2 publication (Psychological Support), which may itself slip
-- It has the least amount of independent research material (most synthesis of Phase 5 findings)
-- Deferring it buys 3 weeks of schedule and frees one author slot for recovery/contingency work
-- The other 3 Wave 2 domains (Ecosystem, Access, Institutional) are higher-priority for Phase 7 pilot
-
-**Keep on critical path**: Ecosystem Restoration, Access & Equity, Institutional Learning (these three are foundational to Phase 7 community deployment)
-
----
-
-## Part 6: Resource Contention & Parallelization Limits
-
-### Maximum Parallelizable Domains: 4
-
-**Ceiling constraint**: Beyond 4 simultaneous research authors, orchestrator coordination becomes the bottleneck.
-
-**Evidence**:
-- Wave 1: 4 domains in parallel, 1 orchestrator (stretched but feasible)
-- Adding Wave 2 ramp (June 20+) while Wave 1 is in publication phase creates 8-domain coordination load
-- Solution: Stagger Wave 2 Track B start by 1 week, reducing simultaneous domains from 8 to 6 from June 20–27
-
-### Orchestrator Capacity Model
-
-| Period | Simultaneous Domains | Orchestrator Load | Risk Level |
-|--------|---|---|---|
-| June 1–14 (Wave 1 research) | 4 | ~35 hrs/week | Medium (high focus, but 4-domain coordination manageable) |
-| June 15–19 (Wave 1 publication) | 4–6 (Wave 1 + Wave 2 prep) | ~40 hrs/week | High (publication editorial work spikes) |
-| June 20–27 (Track A ramp) | 2 (Wave 2) | ~25 hrs/week | Low (editorial work winding down) |
-| June 27–July 4 (Track B ramp) | 4 (all Wave 2) | ~30 hrs/week | Medium (all Wave 2 tracked) |
-| July 4–15 (Wave 2 peer review) | 4 (all Wave 2 in review) | ~25 hrs/week | Low (authors handling revisions; orchestrator reviews only) |
-| July 15+ (Wave 3) | 1–2 (rolling) | ~15 hrs/week | Low (can be handled with other projects running) |
-
-**Capacity exceeded**: June 15–19 window (publication + Wave 2 prep). Mitigation: batch Wave 2 author recruitment to June 5–12 (before Wave 1 publication crunch), complete all Wave 2 contracts by June 15.
-
----
-
-## Part 7: Recovery Paths for Delays
-
-### If Wave 1 finishes June 21 (1 week late):
-
-- Wave 2 start deferred from June 20 to June 27
-- Wave 2 publication readiness gate deferred from July 4 to July 11
-- Phase 6 completion deferred from September 30 to October 7
-- Wave 3+ affected: 1 less week for rolling research; 1–2 domains may slip to October or Phase 6b
-
-**Recovery cost**: 1 week of schedule, no scope loss. Acceptable for Phase 7 pilot timeline (needs Phase 6 complete by October 15).
-
-### If Wave 1 finishes June 28 (2 weeks late):
-
-- Wave 2 start deferred to July 5
-- Wave 2 publication readiness gate deferred to July 18
-- Phase 6 completion deferred to October 15
-- Wave 3 deferred: Batch 1 pushed to August 1–29, Batch 2 pushed to September 1+
-
-**Recovery cost**: 2 weeks of schedule, no scope loss. Tight for Phase 7 (needs complete corpus by October 20), but feasible.
-
-### If Wave 2 cannot complete by July 15 (mid-publication stall):
-
-- Activate scope reduction: Prioritize Ecosystem Restoration + Institutional Learning (most foundational)
-- Defer Access & Equity + Psychological Resilience to Phase 6b (August–September)
-- Phase 6 core (8 domains) complete by July 31; expansion (4 domains) by October 31
-
-**Recovery cost**: Reduced scope, but core Phase 6 completes by August 1 (well ahead of Phase 7 pilot August 1 target).
-
----
-
-**Summary**: Phase 6 Wave 2+ uses **dependency-driven parallelization** (4 domains max in parallel, staggered when dependencies overlap) to balance speed against quality. Critical path is 6 weeks (June 1–July 15) for 8 core domains (Waves 1–2). Wave 3+ runs at lower intensity over 2+ months. Wave 1 publication status is the primary schedule driver; any slip ripples through Wave 2 timing. Recommended buffer strategy: if Wave 1 slip detected by June 14, defer Wave 2 start to July 1 (1-week delay) to protect Wave 2 quality and ease orchestrator load.
-
+Escalation to Scenario B or C (from RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md) defers Wave 2 Track 3 to July 1 but does not affect Tracks 1 and 2. The non-negotiable anchors — June 20 start and June 27 T+7 checkpoint — hold in all scenarios except a full Wave 2 deferral (which requires explicit user decision).

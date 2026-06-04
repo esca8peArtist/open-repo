@@ -22,6 +22,26 @@
 
 ---
 
+## June 4, 2026 — General Research Agent — Phase 6 Wave 2 Activation Roadmap (Item 54)
+
+**Task**: Design Phase 6 Wave 2 activation roadmap for June 15–20 transition. Produce three production-ready deliverables for June 15 deployment.
+
+**Files read**: PHASE_6_WAVE_2_ACTIVATION_CHECKLIST.md (existing June 3 version), WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md (existing), RESOURCE_CONTENTION_MITIGATION.md (existing), WAVE_2_GENERIC_ONBOARDING_TEMPLATE.md, AUTHOR_READINESS_INTAKE_FORM.md, JUNE_PHASE_6_RESOURCE_ALLOCATION.md.
+
+**Key findings**:
+- All three target files already existed as June 3 planning documents. They were substantially replaced with production-ready versions calibrated to: (a) Nextcloud+Matrix activated June 4 13:00 UTC, (b) Phase 5 Wave 1 45,380-word corpus, (c) stockbot 76h June 11–30 expansion with CAUTION/ROLLBACK trigger routing, (d) resistance-research Batch 2 monitor-only posture June 16+.
+- Existing WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md treated 12 domains across 3 waves (June–September) — replaced with a tighter 5–7 domain, June 20–July 25 scope matching the 2-domains/week cadence specified in the task brief.
+- The Tier A/B/C author stratification framework was new content not present in the June 3 versions; derived from AUTHOR_READINESS_INTAKE_FORM.md scoring logic and WAVE_2_GENERIC_ONBOARDING_TEMPLATE.md tier definitions.
+- Scenario A/B/C in RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md uses exact hour estimates: Stockbot 76h total (32h peak June 16–23, 14h monitor June 24–30), Wave 2 onboarding 20h (June 20–24), Wave 2 first-draft 40–50h (Scenario A) / 20–30h (Scenario C), resistance-research 10h June 9–15 + 4h monitor June 16–30.
+- CAUTION/ROLLBACK trigger routes directly to Scenario B (Wave 2 4-day slip acceptable; stockbot stability non-negotiable) per the recommendation matrix.
+
+**Files updated/created** (all in `projects/systems-resilience/`):
+1. `PHASE_6_WAVE_2_ACTIVATION_CHECKLIST.md` — Complete replacement. June 15–20 daily task list, Tier A/B/C author stratification with intake form scoring criteria, 7-component onboarding kit aligned to Nextcloud+Matrix, author unavailability contingency (0/2/3/4 authors confirmed routing), non-negotiable anchors section (June 20 start, June 27 T+7 checkpoint).
+2. `WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md` — Complete replacement. 5–7 domain scope (Phase 3 production-ready community-scale set), 3 parallel tracks with 4-day Track 3 stagger, dependency matrix (Wave 1 final-draft gate not publication gate), critical path June 20–July 25, resource contention analysis for June 9–15 and June 20–30 windows, escalation triggers for Wave 1 slip and T+7 checkpoint miss.
+3. `RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md` — New file (replaces generic RESOURCE_CONTENTION_MITIGATION.md for this window). Initiative hour profiles (stockbot 76h, Wave 2 onboarding 20h, Wave 2 drafting 40–50h, resistance-research 60h), three allocation scenarios with per-initiative hour breakdown, recommendation matrix, CAUTION/ROLLBACK triggers, daily escalation format.
+
+---
+
 ## June 4, 2026 — General Research Agent — Batch 2 Full Activation Roadmap (Item 57)
 
 **Task**: Create three decision-tree-driven Batch 2 resource and sequencing deliverables covering all 6 domains (49, 50, 51, 54, 57, 48) and all 4 user decision paths for Domain 49 timing.
