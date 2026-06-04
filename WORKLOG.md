@@ -1,3 +1,18 @@
+## Item 67 Completion (2026-06-04 — General Research Agent: Phase 6 Wave 1 Research Capability Assessment)
+
+**Status**: COMPLETE — Three deliverables written and committed to projects/systems-resilience/.
+
+**Deliverables**:
+1. `PHASE_6_DOMAIN_60_65_RESEARCH_LANDSCAPE.md` (~3,100 words) — Literature map for all 6 Phase 6 domains. Leading researchers, publication landscape, knowledge gaps, and 3–5 expert contact organizations per domain. Source readiness estimates: Domain 63 (Ecosystem Restoration) 72–80% highest; Domain 60 (International Coordination) 55–65% lowest.
+2. `AUTHOR_DOMAIN_MAPPING_RUBRIC.md` (~2,400 words) — Five-dimension scoring rubric (Phase 5 16-point intake form expanded with Domain-Specific Practitioner Grounding as Dimension 5, max score 25). Tier A/B/C assignment table. Domain-to-author matching algorithm with domain difficulty modifiers (-2 for Domains 60 and 62; 0 for 63 and 64). Capability gap profiles for 4 common adjacent-domain assignment scenarios. Solo vs. split-domain decision logic.
+3. `RESEARCH_BRIEF_TEMPLATE_SUITE.md` (~3,600 words) — Six domain-specific briefs (one per domain 60–65), each with scope definition, 5–6 primary research questions, deliverable format, 12-week milestone timeline, source stubs, cross-domain bridge notes, and publication readiness criteria adapted from the 9-criterion matrix in PHASE_6_COORDINATION_TEMPLATES.md.
+
+**Key finding**: Domain 60 (International Coordination) and Domain 62 (Infrastructure Interdependencies) have the lowest source readiness and the largest community-scale literature gaps — both require extended source sprint time and will benefit from Tier A author assignment.
+
+**Use by**: June 14 author-domain matching session. Fill [PLACEHOLDER] fields in briefs June 15–18. Send to confirmed authors by June 18.
+
+---
+
 ## Session 2780 (2026-06-04 13:56–14:30 UTC — Orchestrator: Session Completion & Commitment)
 
 **Status**: ✅ **COMPLETE** — Session completed; all systems operational. User-escalation deliverable (backtesting report) ready. All autonomous work gated on market completion and scheduled user actions.
