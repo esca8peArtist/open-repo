@@ -7127,3 +7127,34 @@ Rationale:
 - `projects/seedwarden/scripts/generate_pdfs.py` — confirmed Pillow compression active
 
 ---
+
+## Session 2717 (2026-06-04 01:14–02:45 UTC) — Exploration Queue Completion + Decision Support
+
+**Status**: Standby mode — all autonomous work blocked on 4 user decisions due by 23:59 UTC today (19 hours away).
+
+**Completed work**:
+1. ✅ **stockbot: IEX vs SIP Data Feed Signal Quality Analysis** (Agent execution 5h 7m)
+   - Deliverable: `IEX_VS_SIP_SIGNAL_COMPARISON.md` (6,400+ words, production-ready)
+   - Key findings: IEX sufficient for paper trading (90-93% signal fidelity), SIP required for live trading
+   - Execution path: 5-min `.env` edit today to unblock paper trading; SIP upgrade 2 weeks before live capital deployment
+   - Confidence: 95%+ technical analysis; recommendation ready for user decision
+
+2. ✅ **seedwarden: Phase 1→2 Transition Roadmap** (Agent execution 3h 9m)
+   - Deliverable: `PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md` (8,500+ words, decision-support complete)
+   - Framework: Metric-based gates at Day 7/14/30 with specific go/no-go criteria
+   - Decision scenarios: A (slow uptake), B (fast scaling), C (cohort outperformance)
+   - Phase 2 content menu: 3 options (medicinal herbs, foragers, hybrid) tied to Phase 1 data outcomes
+   - Confidence: 88% (research-based; final validation at Day 7 checkpoint)
+
+**Current decision status** (EOD deadline 23:59 UTC today):
+| Decision | Deliverable ready? | Deliverable path | User choice deadline |
+|---|---|---|---|
+| Domain 49 approval (critical timing) | ✅ YES | projects/resistance-research/ | 23:59 UTC today |
+| Alpaca data feed (IEX/SIP) | ✅ YES | projects/stockbot/IEX_VS_SIP_SIGNAL_COMPARISON.md | 23:59 UTC today |
+| seedwarden Track A/B/Both | ✅ YES | projects/seedwarden/PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md | 23:59 UTC today |
+| systems-resilience platform | ✅ YES | projects/systems-resilience/ | 23:59 UTC today |
+
+**Standing by**: All deliverables production-ready. Zero unblocked autonomous work remains. System will execute immediately upon user decisions.
+
+**Next session**: (1) Process user decisions (execute corresponding work per decision), OR (2) If no decisions by 23:59 UTC, default to conservative paths and proceed with fallback activations.
+
