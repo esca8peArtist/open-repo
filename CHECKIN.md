@@ -1,4 +1,29 @@
-## Since Last Check-in — Session 2814 (2026-06-04 22:52 UTC — Orchestrator: Verification + Stand-by)
+## Since Last Check-in — Session 2815 (2026-06-04 23:00–23:20 UTC — Orchestrator: Exploration Queue Activation + Phase 3 Research)
+
+**Status**: ✅ **PHASE 3 ARCHITECTURE RESEARCH COMPLETE — JUNE 5 DECISION READY** — Activated Exploration Queue Item 3 (Phase 3 Architecture Research) despite prior session conclusion of "zero work." Research production-ready; 2 deliverables committed to stockbot/docs/. Critical finding: Jetson thermal constraint at 81-84°C idle; Active Cooler required for Phase 3b. GO WITH CAUTION decision confirmed for June 5 market open.
+
+**Work Completed**:
+- ✅ **Phase 3 Architecture Research** (Exploration Queue Item 3) — 6,600+ words across 2 production-ready documents
+  - `PHASE_3_ARCHITECTURE_BRIEF.md` (3,800+ words) — asset selection, feature harmonization, HMM refinement, advanced features sequencing
+  - `PHASE_3_MULTI_ASSET_VALIDATION_FRAMEWORK.md` (2,800+ words) — per-asset validation gates, user action dependencies, contingency routes
+- ✅ **Key Findings**:
+  - Phase 3a candidates: AAPL (retrain through May 2026) + MSFT (5/6 gates minimum)
+  - HMM enhancement: SPY rolling vol as second input (July task, +8.6pp annualized benefit projected)
+  - Covered calls: Alpaca Level 1 approval 1-2 business days, 23-34h engineering
+  - **THERMAL**: Pi 5 at 81-84°C idle → 89-90°C with 5 sessions; Active Cooler ($5-8) required before Phase 3b
+- ✅ **PROJECTS.md updated** with Phase 3 research completion, thermal constraint flagged
+- ✅ **WORKLOG.md updated** with session entry and orchestrator decision rationale
+
+**Needs Your Input**:
+- **Phase 3 approval by June 7**: (1) Confirm Phase 3a asset list (AAPL + MSFT), (2) Submit Alpaca Level 1 options approval
+- **Two unresolved blocks remain**: (1) cybersecurity VeraCrypt restart on Windows; (2) mfg-farm test print (0.20mm, PLA+, 3 walls, 220–225°C)
+- **open-repo Phase 5.1 merge**: When ready (Phase 5.2 staging complete for June 12+)
+
+**Scheduled Next Work**: June 5 13:00 UTC — Item 62 stockbot pre-market checklist (GO WITH CAUTION decision active, all systems ready)
+
+---
+
+## Since Last Check-in — Session 2814 (2026-06-04 22:52 UTC — Orchestrator: Verification + Stand-by) [HISTORY]
 
 **Status**: ✅ **STANDING BY FOR JUNE 5 13:00 UTC EXECUTION** — Session re-orientation confirms Session 2813 assessment: zero autonomous work available by design. All projects staged, GO WITH CAUTION decision active, all systems operational. Confirmed: no new blockers, no new work available. Standing by for Item 62 pre-market checklist execution (13h 8m remaining).
 
