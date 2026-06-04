@@ -1,5 +1,44 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2741 (2026-06-04 04:30–05:15 UTC — Orchestrator: Critical Block Verification + Exploration Queue Refresh)
+
+**Status**: 🔴 **CRITICAL ALPACA BLOCK PERSISTS** — 4,190+ error occurrences confirmed. Requires immediate user action before 13:30 UTC market open. All decision support materials from Session 2740 are production-ready. Exploration queue refreshed with 3 new high-leverage items.
+
+**Critical Action Required (BEFORE 13:30 UTC TODAY)**:
+- 🔴 **Check Alpaca account status**: Login to broker dashboard and verify account is active, not rate-limited, and has trading enabled
+- 🔴 **Contact Alpaca support**: Explain WebSocket connection limit error (HTTP 406) + ask for manual stale connection clearance on their servers
+- 🔴 **Fallback escalation**: If Alpaca unresponsive by 11:00 UTC, I can implement REST polling fallback (4-6h work, slower but functional) — requires approval to deploy
+
+**Session 2740 Deliverables Ready for Your Review** (all production-ready in projects/ directories):
+- Systems-resilience: 4 platform decision documents (`PHASE_5_PLATFORM_DECISION_INDEX.md`, platform comparison matrix, 2 deployment playbooks)
+- Seedwarden: 4 track decision documents (`TRACK_DECISION_BRIEF.md`, unblock steps, execution timeline, decision matrix)
+- **Recommendation**: EXECUTE BOTH seedwarden tracks (3-5x Phase 3 revenue potential)
+
+**Project Status** (current as of 04:30 UTC):
+- **stockbot**: 🔴 CRITICAL (Alpaca WebSocket, user action required)
+- **systems-resilience**: ⏳ Awaiting platform decision (EOD today)
+- **seedwarden**: ⏳ Awaiting track decision (EOD today, recommend BOTH)
+- **resistance-research**: ✅ Ready to execute June 9-12 (Domain 51 production-ready, awaiting your approval)
+- **open-repo**: ✅ Approved for June 12 deployment per runbook
+- **cybersecurity-hardening**: ⏳ Awaiting Phase 1 VeraCrypt restart (user manual action)
+- **mfg-farm**: ⏳ Awaiting test print execution (user physical action)
+
+**Needs Your Input** (ranked by urgency):
+1. 🔴 **TODAY BEFORE 13:30 UTC** — Check Alpaca account + contact support
+2. 🟢 **TODAY EOD** — Make platform decision (Nextcloud+Matrix vs Discourse; recommend reviewing PHASE_5_PLATFORM_DECISION_INDEX.md, 5-min read)
+3. 🟢 **TODAY EOD** — Make seedwarden track decision (A/B/Both; recommend EXECUTE BOTH per TRACK_DECISION_BRIEF.md)
+4. 🟢 **ANYTIME** — Approve Domain 51 June 9-12 execution (I'm ready to execute immediately upon approval)
+5. 🟢 **ANYTIME** — Approve VeraCrypt restart (Phase 1 walkthrough will resume from step 1.4 post-restart)
+
+**Next Orchestrator Actions** (upon your input):
+1. If stockbot block unresolved by 11:00 UTC → implement REST polling fallback or escalate market-open plan
+2. If platform chosen → execute systems-resilience Wave 2 playbooks (3-4h) for June 5 Wave 1 recruitment
+3. If track chosen → execute chosen track(s) per TRACK_B_EXECUTION_TIMELINE.md or TRACK_A_UNBLOCK_STEPS.md
+4. June 9 → execute Domain 51 Wave 1 distribution (national contacts) per DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md
+5. June 12 → execute open-repo deployment per DEPLOYMENT_JUNE_12_RUNBOOK.md
+
+---
+
 ## Since Last Check-in — Session 2740 (2026-06-04 — Orchestrator: Decision Support Materials + Exploration Queue Completion)
 
 **Status**: ✅ **DUAL USER DECISIONS FULLY SUPPORTED** — 8 production-ready decision documents delivered (systems-resilience platform playbooks + seedwarden Track decision brief). Critical block on stockbot requires urgent user action before 13:30 UTC market open.

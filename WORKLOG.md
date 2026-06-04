@@ -1,5 +1,60 @@
 # Work Log
 
+## Session 2741 (2026-06-04 04:30–05:15 UTC — Orchestrator: Critical Block Verification + Exploration Queue Refresh)
+
+**Status**: 🔴 **CRITICAL ALPACA BLOCK CONFIRMED STILL ACTIVE** — 4,190 error occurrences verified. Requires urgent user action before 13:30 UTC market open (~8 hours remaining). Added 3 new exploration queue items for post-decision autonomous work.
+
+**Work**:
+
+1. 🔴 **Stockbot Critical Block Re-Verification**:
+   - Executed SSH verification command at 04:30 UTC: confirmed 4,190 occurrences of "connection limit exceeded" error in docker logs
+   - Error persists across multiple container cycles (documented in BLOCKED.md, now 3+ hours old with fluctuating count)
+   - **Root cause**: Alpaca account/IP-level rate limit on their servers (not local configuration issue)
+   - **Timeline**: Market opens June 4 at 13:30 UTC (~8 hours from verification) — NO AUTONOMOUS FIX POSSIBLE
+   - **Action required**: (1) User must check Alpaca account status at broker dashboard ASAP, (2) Contact Alpaca support to manually clear stale WebSocket connections, (3) Fallback if unresponsive: REST polling API implementation (4-6h autonomous work available, but not recommended for live trading)
+   - **Status**: Block documented in BLOCKED.md is accurate and current. No escalation needed; user action only.
+
+2. ✅ **Exploration Queue Refresh & New Item Generation**:
+   - Session 2740 completed all scheduled exploration queue items (items 1-3 from Session 2648)
+   - Queue is now empty (0 active items)
+   - Added 3 new exploration queue items per orchestrator protocol (add 2-3 when queue <3 items):
+     - **systems-resilience: Wave 2 Author Onboarding & Content Continuity Playbooks** (3-4h, executable June 4-5 post-platform-decision, readiness for June 15-20 Wave 2 author transition)
+     - **open-repo: Post-Deployment Monitoring & Incident Response Procedures** (2-3h, executable June 11, readiness for June 12 live deployment monitoring)
+     - **stockbot: Phase 3 Architecture & Multi-Asset Validation Research** (3-4h, executable if Phase 3 approved, provides Day 1 implementation roadmap without planning delays)
+   - All items are high-leverage pre-work that unblocks immediate execution once user decisions/approvals are made
+   - Committed to PROJECTS.md
+
+3. 🟡 **Current Project Status Review**:
+   - **stockbot**: 🔴 CRITICAL BLOCK (user action only)
+   - **systems-resilience**: ⏳ Awaiting platform decision (EOD June 4) — decision support materials ready in Session 2740
+   - **seedwarden**: ⏳ Awaiting track decision (EOD June 4) — decision support materials ready in Session 2740
+   - **resistance-research**: ✅ Domain 51 production-ready, awaiting user approval for June 9-12 execution (execution checklist already prepared)
+   - **open-repo**: ✅ Phase 5 complete, June 12 deployment approved per runbook
+   - **cybersecurity-hardening**: ⏳ Phase 1 VeraCrypt restart pending (user action)
+   - **mfg-farm**: ⏳ Test print execution pending (user action)
+   - **off-grid-living**: ✅ Complete, awaiting user social media distribution
+
+**Decision on Next Autonomous Work**:
+   - All high-priority projects require either: (a) user decisions/approvals, (b) user physical actions, or (c) scheduled for future dates
+   - No immediate blocking work available
+   - Three new exploration queue items available, ranked by immediacy:
+     1. **systems-resilience Wave 2 playbooks** (highest priority: enables June 5 Wave 1 launch post-decision; 3-4h; executable immediately after platform choice)
+     2. **open-repo post-deployment monitoring** (medium priority: June 11 execution; 2-3h; executable next session)
+     3. **stockbot Phase 3 research** (medium priority: depends on Phase 3 kickoff approval; 3-4h)
+
+**Recommended Next Session Action**:
+   1. Check if user has made platform/track decisions (likely YES by morning of June 4)
+   2. If YES: Execute systems-resilience Wave 2 playbooks (3-4h) to unblock June 5 Wave 1 recruitment launch
+   3. Execute open-repo post-deployment monitoring setup (2-3h) for June 12 deployment
+   4. If stockbot block unresolved: decide on REST polling fallback implementation vs. escalation continuation
+   5. Monitor for Domain 51 user approval (execution June 9)
+
+**Time allocation (estimated next session)**:
+- If user decisions made: systems-resilience (3-4h) + open-repo (2-3h) + remaining = 5-6h autonomous work available
+- If user decisions delayed: Continue Wave 2 playbooks as exploratory pre-work or implement stockbot REST polling fallback
+
+---
+
 ## Session 2740 (2026-06-04 — Orchestrator: Decision Support Materials + Exploration Queue Completion)
 
 **Status**: ✅ **EXPLORATION QUEUE COMPLETE + DUAL USER DECISIONS FULLY SUPPORTED** — Produced 8 production-ready decision documents (systems-resilience platform playbooks + seedwarden Track decision brief). Both critical user decisions by EOD June 4 now have full technical context and actionable guidance. Critical block persists on stockbot (user action required).
