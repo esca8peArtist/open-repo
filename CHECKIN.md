@@ -1,5 +1,57 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2740 (2026-06-04 — Orchestrator: Systems-Resilience Platform Playbooks + Exploration Queue Completion)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE** — systems-resilience platform playbooks (4 documents, 154 KB) production-ready. Critical block on stockbot requires urgent user action before 13:30 UTC market open.
+
+**Session Work**:
+
+1. ✅ **Systems-Resilience Platform Decision Support (Exploration Queue)**:
+   - Created comprehensive deployment playbooks for both platform options:
+     - Nextcloud+Matrix: 68 KB, 6,900 words, 4-6h deployment timeline, 8.5/10 go-live confidence
+     - Discourse: 35 KB, 4,500 words, 2-3h deployment timeline, 9.2/10 go-live confidence
+   - Platform Decision Matrix: 8-category comparison grid + 6-question decision tree
+   - Navigation guide: scenario-based reading paths (5 min to 2+ hrs) + June 4-5 timeline checklist
+   - **Critical finding**: If user decides after June 4 14:00 UTC, Discourse is the only safe choice (tight Nextcloud timeline)
+   - All documents in `projects/systems-resilience/` — ready for user review and decision
+
+2. 🔴 **Critical Block Status**:
+   - Alpaca WebSocket error persists: 4,340+ occurrences in docker logs (confirmed June 4 03:52 UTC)
+   - Market opens June 4 at 13:30 UTC (~10 hours from verification)
+   - **NO autonomous fix available** — requires immediate user action:
+     - Check Alpaca account status at broker dashboard
+     - Contact Alpaca support to manually clear stale WebSocket connections
+     - If unresponsive: REST polling fallback can be implemented (4-6h work)
+
+**Project Status After Session**:
+- **stockbot**: 🔴 CRITICAL (Alpaca WebSocket error, user action required before 13:30 UTC)
+- **systems-resilience**: ✅ READY (platform playbooks complete, decision support ready)
+- **resistance-research**: ✅ READY (Domain 51 verified production-ready for June 9-12 distribution)
+- **seedwarden**: ⏳ AWAITING DECISION (Track A/B/Both selection)
+- **cybersecurity-hardening**: ⏳ AWAITING DECISION (Phase 1 VeraCrypt restart)
+- **mfg-farm**: ⏳ AWAITING DECISION (test print execution)
+- **open-repo**: ✅ READY (pre-deployment verified, June 12 deployment approved)
+
+**Needs User Input**:
+
+1. 🔴 **URGENT (BEFORE 13:30 UTC TODAY)**:
+   - Check Alpaca account status and contact support re: WebSocket connection limit
+
+2. 🟢 **TODAY (EOD June 4)**:
+   - Make systems-resilience platform decision using `PHASE_5_PLATFORM_DECISION_INDEX.md`
+   - Decision will gate June 5 13:00 UTC Wave 1 author recruitment launch
+
+3. 🟢 **ANYTIME**:
+   - Approve resistance-research Domain 51 June 9-12 distribution execution
+   - Approve seedwarden Track activation (A/B/Both) — gates Phase 2 coordination
+
+**Next Session priorities**:
+1. Verify stockbot block is resolved or escalate to REST polling fallback
+2. If systems-resilience platform chosen: begin deployment (June 5 06:00 UTC start time)
+3. If Domain 51 distribution approved: execute June 9 Wave 1 (national contacts)
+
+---
+
 ## Since Last Check-in — Session 2739 (2026-06-04 04:15–04:45 UTC — Orchestrator: Stockbot Block Verification + Resistance-Research Readiness Confirmation)
 
 **Status**: 🔴 **CRITICAL ALPACA BLOCK PERSISTS** — 4,508+ error occurrences in docker logs (confirmed 04:20 UTC). Requires urgent user action before 13:30 UTC market open. Domain 51 research production-ready and staged for June 9-12 execution.

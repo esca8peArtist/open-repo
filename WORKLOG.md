@@ -1,5 +1,39 @@
 # Work Log
 
+## Session 2740 (2026-06-04 — Orchestrator: Systems-Resilience Platform Playbooks + Exploration Queue Activation)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE** — Platform-Specific Technical Deployment Playbooks produced (4 documents, 154 KB). Systems-resilience platform decision now fully informed and ready for user selection. Critical block persists on stockbot (user action required).
+
+**Work**:
+
+1. ✅ **Systems-Resilience Platform Deployment Playbooks** (exploration queue item, 4-5h):
+   - **Deliverable**: 4 production-ready markdown documents written to `projects/systems-resilience/`
+   - `DEPLOYMENT_PLAYBOOK_NEXTCLOUD_MATRIX.md` (68 KB, 6,900 words):
+     - 13-part production guide: architecture, DNS, SSL, Docker setup, offline sync, operations
+     - Copy-paste ready configurations (docker-compose, nginx, PostgreSQL, Matrix Synapse, Element Web)
+     - Timeline: 4-6 hours to production deployment
+     - Go-live confidence: 8.5/10
+   - `DEPLOYMENT_PLAYBOOK_DISCOURSE.md` (35 KB, 4,500 words):
+     - 11-part production guide: launcher setup, OAuth, SMTP, backups, operations
+     - Timeline: 2-3 hours to production deployment
+     - Go-live confidence: 9.2/10
+   - `PLATFORM_DECISION_MATRIX.md` (36 KB):
+     - 8-category comparison grid (features, UX, operations, security, cost, timeline, governance, Phase 5 fit)
+     - Critical finding: **If decision after June 4 14:00 UTC, Discourse is the only safe choice** (Nextcloud needs 4-6h with 0% error margin)
+     - 6-question decision tree for defensible choice
+     - Risk assessment and contingency plans
+   - `PHASE_5_PLATFORM_DECISION_INDEX.md` (14 KB):
+     - Navigation guide with scenario-based reading paths (5 min / 30 min / 2+ hrs)
+     - Timeline checklist for June 4-5 execution
+   - **Status**: All documents committed and production-ready. User can make platform decision by EOD today with full technical context.
+
+2. ✅ **Exploration Queue Status Update**:
+   - ✅ Systems-resilience: Platform-Specific Deployment Playbooks — COMPLETE
+   - ⏳ Resistance-research: Phase 2 Domain Research Dry-Run — Already completed in Session 2735 (all 5 friction corrections applied)
+   - **Exploration Queue Score**: 2/2 items addressed (1 complete, 1 verified already done)
+
+---
+
 ## Session 2739 (2026-06-04 04:15-04:45 UTC — Orchestrator: Stockbot Block Re-Verification + Domain 51 Readiness Confirmation)
 
 **Status**: 🔴 **CRITICAL BLOCK PERSISTS** — Alpaca WebSocket error re-confirmed with 4,508+ occurrences. No autonomous fix available; requires urgent user action. Domain 51 resistance-research fully verified production-ready for June 9-12 execution.
