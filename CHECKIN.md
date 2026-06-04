@@ -1,5 +1,51 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2721 (2026-06-04 — EXPLORATION QUEUE RESEARCH SPRINT)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEMS 57-59 COMPLETE** — 3 decision-support documents completed independently of pending user decisions; system remains ready for instant activation upon any user choice.
+
+**What Was Accomplished**:
+
+1. **Exploration Queue Item 57: Batch 2 Full Activation Roadmap** ✅
+   - Deliverable: 3 comprehensive files for Batch 2 resource allocation across all decision paths
+     - `BATCH_2_RESOURCE_ALLOCATION_MATRIX.md` — Hour estimates per domain, bottleneck analysis, Scenario A/B/C/D execution paths
+     - `BATCH_2_CONTINGENCY_ACTIVATION_SCENARIOS.md` — All 4 decision-tree paths pre-planned (Domain 49 approve/fast, approve/normal, defer, research-first)
+     - `BATCH_2_JUNE_CHECKPOINT_READINESS_PROTOCOL.md` — June 8/15 checkpoints with metric gates
+   - Key finding: Domain 51 is invariant (June 9-12 no matter what); Lever B PASS only defers Domain 48
+   - Status: ✅ Committed to projects/resistance-research/
+
+2. **Exploration Queue Item 58: Stockbot Week 1 Market Execution Runbook** ✅
+   - Deliverable: 3 comprehensive execution guides for post-data-feed-fix trading
+     - `MARKET_EXECUTION_WEEK_1_RUNBOOK.md` — Pre-market checklist, hour-by-hour June 5-10 guidance, fill decision tree, 4 contingency branches
+     - `SIGNAL_QUALITY_AUDIT_FRAMEWORK.md` — Baseline metrics from actual WFE reports, 6 alerting thresholds, remediation procedures
+     - `JUNE_4_10_GO_NO_GO_DECISION_TEMPLATE.md` — 3 structured checkpoints (Day 2/4/7) with pass/fail criteria, rollback procedure
+   - Key finding: Zero fills Day 1 is 82% likely and normal (not a problem); AAPL expansion deferred to July 15 minimum
+   - Status: ✅ Committed to projects/stockbot/
+
+3. **Exploration Queue Item 59: Platform-Agnostic Phase 5 Publication & Wave 2 Onboarding** ✅
+   - Deliverable: 3 platform-neutral execution guides (work identically for Nextcloud+Matrix or Discourse)
+     - `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` — Content/technical/asset readiness gates, go/no-go decision
+     - `WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md` — Ready-to-send templates with dual-platform variants (Nextcloud/Matrix VARIANT A, Discourse VARIANT B)
+     - `JUNE_5_15_PHASE_5_PUBLICATION_AND_WAVE_2_RECRUITMENT_TIMELINE.md` — Day-by-day roadmap (June 5-15) with minimal branching
+   - Key finding: Phase 3 community-scale domains (5 files, 45K words) are primary publication candidates
+   - Status: ✅ Committed to projects/systems-resilience/
+
+**Critical Items Still Requiring User Action**:
+- **Domain 49 Execution Window**: June 4-5 (DEADLINE JUNE 5 MIDNIGHT UTC) — Louisiana redistricting hard cutoff
+- **Alpaca Feed Choice**: IEX $0/mo vs SIP $50-99/mo (empirical analysis in Session 2719)
+- **seedwarden Track Selection**: Path A/B/Both (phase transition metrics documented in Session 2719)
+- **systems-resilience Platform**: Nextcloud+Matrix vs Discourse (gates June 5 Wave 1 author recruitment)
+
+**Execution Ready**:
+- Domain 49: 23 hours remaining; all execution runbooks production-ready
+- Alpaca Feed: 5-20 min implementation once chosen
+- seedwarden: 54 min to 4+ hours depending on path
+- systems-resilience: June 5-15 publication + author recruitment (all workflows platform-agnostic)
+
+**Next Action Trigger**: User decision on ANY item → Activate corresponding execution runbook immediately
+
+---
+
 ## Since Last Check-in — Session 2720 (2026-06-04)
 
 **Status**: ⏳ **STANDING BY FOR USER DECISIONS** — Deadline passed June 3; execution windows remain open for Domain 49 (through June 5 midnight). Discord reminder sent. Zero autonomous work available (correct by design).
