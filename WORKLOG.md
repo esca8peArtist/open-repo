@@ -80,6 +80,17 @@
 - **13:00 UTC**: Execute escalations for pending decisions
 - **13:30 UTC**: Market opens; monitor stockbot if user applied fix
 
+5. ✅ **Exploration Queue: IEX vs SIP Analysis Verification** (05:30–05:45 UTC):
+   - **Item Status**: `stockbot: IEX vs SIP Data Feed Signal Quality Analysis`
+   - **Finding**: Deliverable already exists (`IEX_VS_SIP_SIGNAL_COMPARISON.md`, dated 2026-06-04, 90% confidence)
+   - **Content**: Comprehensive analysis covering all four question areas:
+     * IEX vs SIP latency: 100–150ms vs 5–10ms (irrelevant for daily-bar strategy)
+     * Signal quality impact: 90–93% fidelity for h10_lgbm_ho (price features 98–99%, vol_ratio 88–93%)
+     * Deployment risk: IEX sufficient for paper trading, SIP required before live trading
+     * Cost-benefit: $0 for paper trading on IEX, SIP free only for live funded accounts ($99/mo for paper)
+   - **Documentation correction applied**: Fixed ALPACA_SIP_SUBSCRIPTION_UPGRADE_RUNBOOK.md line 247 (SIP cost is $99/mo for paper, $0 for live funded)
+   - **Impact**: Queue item COMPLETE; IEX vs SIP decision clarified for post-checkpoint work
+
 **Next Steps**: 
 - Wait for user decisions until 12:50 UTC
 - Execute escalations at 13:00 UTC if needed
