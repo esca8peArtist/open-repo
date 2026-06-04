@@ -72,20 +72,16 @@
 **Status**: ✅ PRODUCTION-READY for execution June 9 post-Day-7 checkpoint
 **Deadline**: June 8 ✅ EARLY COMPLETE (June 3)
 
-### 54. ⏳ systems-resilience — Phase 6 Wave 2 Activation & Domain Sequencing Plan
-**Context**: Phase 6 Wave 1 (June 1-15) researches domains 60, 62 (weeks 1-2), then 61, 64 (weeks 3-4), then 63, 65 (week 5). User platform selection deadline June 3 EOD determines operational infrastructure by June 5. Wave 2 transition planning can begin now to ensure smooth author handoff and June 20 Wave 2 start.
-**Scope**: Design Phase 6 Wave 2 activation roadmap for June 15-20 transition period:
-  - Author onboarding from Wave 1 domains to Wave 2 lead roles (which Wave 1 authors become Wave 2 domain leads?)
-  - Wave 2 domain sequencing logic (parallel vs sequential, dependencies, critical path)
-  - Resource contention with Phase 5 publication (June 5), stockbot Phase 2 activation (June 15+), resistance-research Batch 2 (June 9+)
-  - Contingency triggers if Wave 1 domains fall behind schedule or author unavailability
-  - Publication readiness gates for Wave 1 domains before Wave 2 author onboarding
-**Deliverables**:
-  - `PHASE_6_WAVE_2_ACTIVATION_CHECKLIST.md` (June 15-20 transition tasks, author onboarding kit, continuity procedures)
-  - `WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md` (parallel execution scenarios, dependency analysis, critical path)
-  - `RESOURCE_CONTENTION_MITIGATION.md` (June 15-30 resource allocation scenarios, escalation triggers)
-**Owner**: systems-resilience subagent
-**Deadline**: June 14 (ready for June 15 Wave 2 activation immediately post-Wave-1)
+### 54. ✅ systems-resilience — Phase 6 Wave 2 Activation & Domain Sequencing Plan (Session 2779 COMPLETE)
+**Status**: Completed June 4 (Session 2779, 13:37–14:00 UTC). All three deliverables production-ready.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `PHASE_6_WAVE_2_ACTIVATION_CHECKLIST.md` — June 15-20 transition tasks, author stratification (Tier A/B/C), onboarding kit, June 15 go/no-go gates
+  - ✅ `WAVE_2_DOMAIN_SEQUENCING_FRAMEWORK.md` — 3 parallel author tracks, staggered start (Track 3 +4 days), critical path through July 5
+  - ✅ `RESOURCE_CONTENTION_MITIGATION_JUNE_15_30.md` — Scenarios A/B/C (full parallel / sequential / efficiency-gated), routing triggers, stockbot escalation flag
+**Key findings**: All three files keyed to Nextcloud+Matrix platform (activated June 4 13:00 UTC). Phase 6 Wave 2 deployment is ready for June 15 immediate activation.
+**Owner**: general-research subagent (Session 2779)
+**Status**: ✅ PRODUCTION-READY for June 15 Wave 2 activation
+**Deadline**: June 14 ✅ EARLY COMPLETE (committed June 4 13:37 UTC)
 
 ### 59. ✅ seedwarden — Track B Post-Launch Day 3/7/14 Automation Framework (Session 2757 COMPLETE)
 **Status**: Completed 2026-06-04 (Session 2757, 07:59–08:15 UTC). All three deliverables production-ready and committed.
@@ -148,6 +144,51 @@
 **Owner**: general-research subagent (Session 2764)
 **Status**: ✅ PRODUCTION-READY for June 5 immediate deployment upon platform decision (13:00 UTC June 4)
 **Deadline**: June 4 EOD ✅ ADVANCED COMPLETE (committed June 4 09:45 UTC, 3h 15min early)
+
+### 65. ⏳ resistance-research — Domain 54 Youth Civic Power Preliminary Research (November Post-Midterm)
+**Context**: Domain 54 (Youth Civic Power / Youth Voter Engagement & Antidemocratic Targeting) is November post-midterm research priority. Election cycle on Nov 3, 2026; research must inform November youth mobilization campaigns. Preliminary research outline and source gathering can begin now (June 4) to support July-August execution once Phase 2 research bandwidth is available post-Domain-51-execution.
+**Scope**: Domain 54 foundational architecture:
+  - Research outline covering 5-7 major research areas (voter registration youth barriers, voting age population turnout trends, targeted suppression mechanics, platform algorithms, civic participation models)
+  - Source gathering and expert contact list (20-30 organizations: youth voting advocacy, student groups, electoral data analysts, platform researchers)
+  - Movement leverage mapping (Who are the youth organizations that can activate this research? What communication channels work?)
+  - Preliminary findings on post-2024 barriers and 2026 data updates
+  - Comparative case studies (2020 youth-focused campaigns, state-level lessons learned)
+**Deliverables**:
+  - `DOMAIN_54_RESEARCH_OUTLINE.md` (5 major sections, preliminary findings, cross-domain bridges)
+  - `DOMAIN_54_SOURCES_AND_CONTACTS.md` (25+ source list, 15+ organization contacts, expert researcher map)
+  - `DOMAIN_54_PRELIMINARY_FINDINGS.md` (1-2 page summary of youth voter suppression mechanisms unique to 2026 + 3-5 policy reform pathways)
+**Owner**: resistance-research subagent
+**Deadline**: June 30 (ready for July-August full research execution post-Phase-2-resource-contention)
+
+### 66. ⏳ stockbot — June 11 Multi-Ticker Expansion GO/NO-GO Decision Framework
+**Context**: June 11 is the formal go/no-go decision gate for multi-ticker expansion (June 15 start). By June 10 EOD, 6 full days of JPM ridge_wf + AMZN lgbm_ho live trading data will be available. Decision requires analysis of live-vs-backtest divergence, signal quality, drawdown behavior, and contingency trigger assessment.
+**Scope**: Build decision framework for June 11 checkpoint:
+  - Live-vs-backtest correlation analysis (Item 60 framework extended with actual June 4-10 data): Do daily Sharpe, cumulative return, win rate match backtest expectations? ±15% is PASS; ±15-25% is CAUTION; >25% is escalation.
+  - Drawdown cascade analysis (cumulative max DD across both sessions): JPM is anchor; if JPM hits >4% DD or AMZN hits >8% DD, what contingencies trigger?
+  - Signal quality deep-dive: Did both models generate expected signal frequency? If signal runaway observed, what's the root cause (IEX feed artifacts, regime shift, overfitting manifestation)?
+  - Multi-ticker readiness checklist: Are active-sessions-4session.json, correlation bounds, margin buffer, sector limits all staged and tested? (Reference Item 62)
+  - GO/CAUTION/NO-GO decision tree with explicit branching for each contingency (e.g., "If JPM +5% but AMZN -8%, DO expand JPM only, hold AMZN")
+**Deliverables**:
+  - `JUNE_11_EXPANSION_DECISION_FRAMEWORK.md` (3,000+ words, decision tree, metrics interpretation, contingency routing)
+  - `JUNE_4_10_LIVE_TRADING_SUMMARY_TEMPLATE.md` (fill-in spreadsheet: daily P&L, signal count, win rate, drawdown, cumulative ledger, anomaly flags)
+  - `EXPANSION_CONTINGENCY_DECISION_TREE.md` (explicit if-then-else for every known failure mode + expansion scenarios A/B/C)
+**Owner**: stockbot subagent
+**Deadline**: June 11 morning (ready for 10:00 UTC decision gate) — 9 days of lead time for analysis infrastructure prep
+
+### 67. ⏳ systems-resilience — Phase 6 Wave 1 Research Capability Assessment & Domain Mapping
+**Context**: Phase 6 Wave 1 (June 5-15, assuming go decision) researches 6 new domains (60-65) with 3-person author team. Wave 1 authors come from Phase 5 recruitment (June 5-7). By June 14, author names/expertise must be mapped to domains to create research briefs. This assessment work can start now to prepare domain-specific scaffolding before authors are recruited.
+**Scope**: Phase 6 research capability framework:
+  - Domain 60-65 research landscape assessment (preliminary searches, existing literature maps, expert contact pool): Who are the leading researchers/organizations in each domain? What's the publication landscape?
+  - Tier A/B/C author capability rubric (adapted from Item 64 AUTHOR_READINESS_INTAKE_FORM.md): What expertise is required per domain? What's the gap profile for each domain?
+  - Research brief template suite (6 templates, one per domain, with [DOMAIN-SPECIFIC] placeholders for scope, sources, expert contacts, timeline)
+  - Domain-to-author matching algorithm (if author expertise = (domain 60, domain 61), what's the optimal assignment? Should author be solo-domain or split?)
+  - Preliminary research scaffolding (5-7 key sources per domain, expert contact starter list, cross-domain bridge notes)
+**Deliverables**:
+  - `PHASE_6_DOMAIN_60_65_RESEARCH_LANDSCAPE.md` (literature map, expert pool, knowledge gaps per domain)
+  - `AUTHOR_DOMAIN_MAPPING_RUBRIC.md` (expertise requirements, gap profiles, matching algorithm, Tier A/B/C skill levels)
+  - `RESEARCH_BRIEF_TEMPLATE_SUITE.md` (6 domain-specific briefs with [DOMAIN-SPECIFIC] markers, source stubs, expert contact lists)
+**Owner**: systems-resilience subagent
+**Deadline**: June 14 (ready for June 15 author assignment and research brief customization post-recruitment completion)
 
 ### [open slot — Item 65+ for future queue items]
 
