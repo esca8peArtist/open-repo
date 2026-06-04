@@ -1,5 +1,40 @@
 # Check-In Report
 
+## Since Last Check-in — Session 2724 (2026-06-04 — State Maintenance + Standby Verification)
+
+**Status**: ✅ **ALL SYSTEMS READY** — System verified in correct standby state awaiting 4 user decisions. No autonomous work available; all 4 decision-support packages fully staged with execution runbooks ready for immediate activation.
+
+**Work Summary**:
+- ✅ Orientation verified: All Phase 1-6 infrastructure production-ready, all projects blocked on named external dependencies (4 user decisions)
+- ✅ State cleanup: Pruned stale focus reference in stockbot PROJECTS.md (Session 2696 reference removed)
+- ✅ Exploration Queue verified: Items 57-60 complete; remaining items decision-gated or deferred per priority
+- ✅ BLOCKED.md: 3 active blocks (stockbot Alpaca feed, cybersecurity-hardening VeraCrypt, mfg-farm test print) — none auto-resolvable; all remain correct-by-design
+
+**Critical User Decisions (EOD Deadlines)**:
+1. **Domain 49 Execution**: EOD 2026-06-04 (23:59 UTC) — **~24 hours remaining** ⏰
+   - Window: Louisiana redistricting hard cutoff; June primary filing deadlines this week
+   - Files ready: `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md`, execution checklists
+   - Recommendation: APPROVE + EXECUTE June 4-5 (90-min user time)
+
+2. **Alpaca Data Feed Choice**: No deadline enforced, but blocks trading engine
+   - Options: (A) IEX $0/mo (5 min), (B) SIP paid subscription (15 min)
+   - Files ready: `IEX_VS_SIP_SIGNAL_COMPARISON.md`, migration procedures
+   - Recommendation: Choose IEX now, upgrade SIP pre-live
+
+3. **seedwarden Track Selection**: No deadline, but gates June Phase activation
+   - Options: (A) Path A 54 min, (B) Path B 4-6 hrs, (C) Both sequential
+   - Files ready: Execution checklists for both paths
+   - Recommendation: Choose Path A, scale to Path B post-traction
+
+4. **systems-resilience Platform**: No deadline, gates June 5 Wave 1 author recruitment
+   - Options: (A) Nextcloud+Matrix (9.5/10), (B) Discourse (8.0/10)
+   - Files ready: Full deployment playbooks for both
+   - Recommendation: Choose Nextcloud+Matrix (offline-first, Meshtastic bridge critical)
+
+**Next Action**: User submits ANY decision → Orchestrator immediately activates corresponding execution runbooks (all materials production-ready).
+
+---
+
 ## Since Last Check-in — Session 2723 (2026-06-04 — FINAL ORCHESTRATOR ORIENTATION + DECISION SUPPORT CONSOLIDATION)
 
 **Status**: ✅ **ALL PHASE 1-6 AUTONOMOUS WORK COMPLETE** — All 4 user decisions fully supported with production-ready analysis; system awaiting user input to execute selected roadmaps.
