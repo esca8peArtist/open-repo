@@ -4,6 +4,20 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 2727 — Phase 1 → Phase 2 Transition Roadmap v5.0 (research-agent) — June 4, 2026
+
+**Task**: Produce a production-ready Phase 1 → Phase 2 transition roadmap at `PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md`.
+
+**Key findings**:
+- v4.0 of the document already existed (June 4, same date); v5.0 is a full rewrite incorporating five additions the prior version lacked: (1) explicit if/then decision gate block in code-fence format, (2) 3D printing / mfg-farm intersection analysis with Phase 3/4 activation criteria, (3) Phase 2 content gap appendix with all 20 new species and 4 topic guides quantified (120–192 hours of production work), (4) operational overlap analysis covering Kit automation bandwidth constraint (single automation slot = Kit Creator required for simultaneous Phase 1/2 sequences), and (5) cleaner executive summary with the photographic window hard constraint surfaced up front.
+- Primary gate: 25 subscribers + 15% Email 1 open rate at Day 14. Override conditions codified.
+- No mfg-farm capacity should be committed to seedwarden in Phase 1 or Phase 2; 3D printing intersection is a Phase 3/4 item (seed display fixtures, plant anatomy models, branded packaging inserts).
+- Phase 2 content production = 24 items total (20 species guides + 4 topic guides). At 5–8 hours each, 120–192 hours of work. Achievable across June 22 sprint + October sprint.
+
+**File written**: `projects/seedwarden/PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md` (v5.0, ~3,200 words)
+
+---
+
 ## Session 2718 — Phase 2/3 Planning Roadmap (seedwarden-agent) — June 4, 2026
 
 **Task**: Design Phase 2 (July–December 2026) and early Phase 3 (January–March 2027) planning

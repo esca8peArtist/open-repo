@@ -1,16 +1,17 @@
 ---
 title: "Phase 1 to Phase 2 Transition Roadmap — Seedwarden Native Plant Guides"
 date: 2026-06-04
-version: 4.0
+version: 5.0
 prepared_by: research-agent (claude-sonnet-4-6)
-status: decision-support — standalone track-agnostic framework
-supersedes: v3.0 (June 3, 2026 — zone-card / medicinal herbs specific framing)
-confidence: 88%
+status: production-ready — decision-support document
+supersedes: v4.0 (June 4, 2026)
+confidence: 90%
 scope: >
-  Track-agnostic gating framework for the Phase 1 → Phase 2 scaling decision.
-  Applies to Track A (Etsy-first), Track B (social-first), or both executing
-  concurrently. Covers gate criteria, content production planning, platform
-  capacity, risk scenarios, supply chain pre-work, and decision logic.
+  Track-agnostic Phase 1 → Phase 2 scaling decision framework. Covers gate metrics,
+  content production planning, platform capacity, Phase 1/2 operational overlap,
+  risk scenarios, data collection checklist, decision logic, supply chain implications
+  (including 3D-printing / mfg-farm intersection), and Phase 2 content gap analysis.
+  Applies to Path A (Etsy-first), Path B (social-first), or both executing concurrently.
 sources:
   - Kit pricing: emailtooltester.com, passivekit.com (2026)
   - Etsy benchmarks: insightagent.app, craftybase.com, printify.com (2026)
@@ -20,417 +21,481 @@ sources:
   - Etsy suspension/policy: cindylouwho2.com, etsy.com/legal (2025-2026)
   - TikTok algorithm: socialync.io, presencenews.org, opus.pro (2026)
   - Print-on-demand: lulu.com, reedsy.com (2025)
+  - 3D printing packaging: 3dinsider.com, all3dp.com (2025-2026)
+  - Phase 2 content scope: PHASE_2_GUIDE_CONTENT_BLUEPRINT.md (May 9, 2026)
 ---
 
 # Phase 1 to Phase 2 Transition Roadmap
 ## Seedwarden — Native Plant Guides Scaling Framework
 
-**Purpose.** This document gives the decision-maker a single reference for evaluating when and how to commit to Phase 2 (scaling to 20-30 guides, expanded channels, and potential physical products). It is independent of the Track A / Track B decision and applies equally to both. All targets are grounded in 2025-2026 benchmark data for content creators selling digital niche products.
+---
+
+## Executive Summary
+
+Phase 2 is defined as: producing 20–30 new plant guides, expanding distribution to additional channels (premium ebooks, potential print-on-demand), and investing in infrastructure (Kit Creator upgrade, content scheduling tools, possible print partnerships). The threshold question is whether Phase 1 performance justifies that investment.
+
+**The core finding**: Phase 2 approval should not wait for perfect Phase 1 data. The binding constraint is the summer 2026 botanical photography window (June 15 – August 15 for Zones 4–6), which cannot be recovered if missed. If Phase 1 launches in early June, the Day 14 gate checkpoint falls approximately June 17–20 — enough runway to greenlight a June 22 Phase 2 writing sprint before the photography window peaks. Waiting for Month 1 data before starting content production squanders the highest-quality field conditions of the year.
+
+**The decision gate is binary**: At Day 14 post-launch, if email subscribers reach 25+ with a 15%+ open rate on Email 1, Phase 2 content production should begin. Everything else — Phase 2 scope (3 bundles vs. 5), Kit upgrade timing, collaborator recruitment — is calibrated against the data that arrives by Day 30. Phase 2 beginning is not the same as Phase 2 fully committing.
+
+**Phase 1 and Phase 2 can and should run in parallel**: Content production does not require Phase 1 to stabilize first. The two operations draw on different time blocks — Phase 1 monitoring takes 5–10 minutes per day; Phase 2 writing takes 4–6 hours in sprint blocks. The conflict point is social media management, which can be addressed by pre-scheduling 2 weeks of Phase 1 posts before the Phase 2 sprint begins.
+
+**Supply chain is not a Phase 2 risk** for a digital product business. Etsy digital delivery is unlimited. The only genuine constraint as scale increases is Kit email tier limits, which are well-defined and low-cost to address. Physical products — if introduced in Phase 3 — introduce the first real supply chain complexity.
 
 ---
 
-## Part 1 — Phase 1 to Phase 2 Gate Criteria
+## Section 1: Phase 1 Success Metrics
 
-Phase 2 is defined as: acquiring or producing 20-30 new plant guides, expanding to additional channels (premium ebook, print, possible merchandise), and investing in infrastructure (Kit upgrade, content scheduling tools, potentially print partnerships). The gate criteria determine whether Phase 1 performance justifies that investment.
+Phase 1 monitoring covers three time windows: Day 7 (early signal), Day 14 (primary gate), and Day 30 (confirmation). Track the following 10 metrics. The gate decision uses G1, G2, and G4 as the three primary indicators; the others provide diagnostic context.
 
-### 1.1 Gate Criteria Table
+### Gate Metric Table
 
-Evaluate at **Day 7**, **Day 14**, and **Day 30** post-launch.
+Evaluate at Day 7, Day 14, and Day 30 post-launch.
 
-| # | Metric | Red (Defer Phase 2) | Yellow (Proceed reduced scope) | Green (Full Phase 2 GO) | Weight |
-|---|---|---|---|---|---|
-| G1 | **Kit email subscribers** (Day 14) | Under 25 | 25–74 | 75+ | High |
-| G2 | **Email 1 open rate** (48-hr settled) | Under 15% | 15–24% | 25%+ | High |
-| G3 | **Email click-through rate** (Email 1) | Under 2% | 2–4% | 5%+ | Medium |
-| G4 | **Etsy listing conversion rate** (views → sales) | Under 1% | 1–3% | 3%+ | High (Track A) |
-| G5 | **Etsy 30-day unit sales** | Under 10 | 10–29 | 30+ | High (Track A) |
-| G6 | **Social reach — cumulative Day 14** (all platforms) | Under 500 | 500–2,000 | 2,000+ | Medium |
-| G7 | **Influencer / community shares** | 0 | 1–2 | 3+ | Medium |
-| G8 | **Average order value trend** (Days 1–30) | Declining | Flat | Stable or rising | Low–Medium |
-| G9 | **Email list 7-day retention** | Under 50% | 50–65% | 65%+ | Medium |
-| G10 | **Revenue trajectory** (30-day annualised) | Under $2,400/yr | $2,400–$6,000/yr | $6,000+/yr | Low |
+| # | Metric | Red — Defer Phase 2 | Yellow — Reduced Scope | Green — Full GO | Weight |
+|---|--------|---------------------|----------------------|-----------------|--------|
+| G1 | Kit email subscribers (Day 14) | Under 25 | 25–74 | 75+ | **Primary** |
+| G2 | Email 1 open rate (48-hr settled) | Under 15% | 15–24% | 25%+ | **Primary** |
+| G3 | Email click-through rate (Email 1) | Under 2% | 2–4% | 5%+ | Secondary |
+| G4 | Etsy listing conversion rate — views to sales (Track A) | Under 1% | 1–3% | 3%+ | **Primary (Track A)** |
+| G5 | Etsy 30-day unit sales | Under 10 | 10–29 | 30+ | Secondary |
+| G6 | Social reach — cumulative Day 14, all platforms | Under 500 | 500–2,000 | 2,000+ | Secondary |
+| G7 | Influencer or community shares | 0 | 1–2 | 3+ | Secondary |
+| G8 | Average order value trend (Days 1–30) | Declining | Flat | Stable or rising | Low |
+| G9 | Email list 7-day retention (no unsubscribes after Email 1) | Under 50% | 50–65% | 65%+ | Secondary |
+| G10 | Revenue trajectory — 30-day annualised | Under $2,400/yr | $2,400–$6,000/yr | $6,000+/yr | Low |
 
-**Decision logic — all three gates must be evaluated together:**
+**Decision logic — all three gates evaluated together:**
 
-- **All G1, G2, G4 GREEN → Full Phase 2 GO.** Begin content production sprint within 14 days of gate read.
-- **Two of three GREEN, none RED → Proceed with reduced Phase 2 scope** (produce 10 guides rather than 20-30; hold physical product investment).
-- **Any G1, G2, or G4 RED → Hold Phase 2 sprint.** Run 2-week rapid-distribution push first. Re-evaluate at Day 30.
-- **G10 RED with all others YELLOW or better → Proceed.** Revenue lags conversion for digital products; early list quality predicts late revenue.
+- All G1, G2, G4 GREEN: Full Phase 2 GO. Begin content production sprint within 14 days of gate read.
+- Two of three GREEN, none RED: Proceed with reduced scope (produce 10 guides rather than 20–30; hold physical product investment).
+- Any G1, G2, or G4 RED: Hold Phase 2 sprint. Run 2-week rapid-distribution push first. Re-evaluate at Day 30.
+- G10 RED with all others YELLOW or better: Proceed. Revenue lags conversion for digital products; early list quality predicts late revenue.
 
-**Override conditions that unlock Phase 2 even in RED scenarios:**
-1. Email 1 open rate exceeds 35% on a list of any size — indicates exceptional audience-product fit; write Phase 2 content.
-2. Three or more influencer/community shares with confirmed clicks → audience exists, conversion infrastructure needs work, not content.
-3. Any individual Etsy listing achieves 5%+ conversion rate → pricing and positioning are correct; scale is the solution.
+**Override conditions** — Phase 2 unlocked even in RED scenarios:
+1. Email 1 open rate exceeds 35% on any list size: exceptional audience-product fit; write Phase 2 content immediately.
+2. Three or more influencer/community shares with confirmed clicks: audience exists; conversion infrastructure needs work, not content.
+3. Any Etsy listing achieves 5%+ conversion rate: pricing and positioning are correct; scale is the solution.
 
-### 1.2 Benchmark Context for Each Gate Metric
+### Benchmark Context
 
-**G1 — Email subscriber count.** Kit's free tier supports up to 10,000 subscribers — there is no platform constraint on list size in Phase 1 or early Phase 2. The gate threshold of 75 subscribers is set low deliberately: a 75-subscriber list with 30% open rates in a tight niche (native plants, permaculture, foraging) outperforms a 5,000-subscriber general list with 10% opens in terms of purchase intent.
+**G1 — Subscriber count.** Kit free tier supports 10,000 subscribers — no platform constraint on list size in Phase 1 or early Phase 2. The 75-subscriber Green threshold is deliberately low: a 75-subscriber niche list with 30% opens outperforms a 5,000-subscriber broad list with 10% opens in purchase intent for a content-led product.
 
-**G2 — Email open rate.** Industry averages for niche content creators in 2025-2026 run 25–43% depending on list quality. A 25%+ rate for a new list indicates subscribers opted in with genuine interest, not passive curiosity. Below 15% signals either spam placement or low-quality acquisition (e.g., Reddit traffic that subscribed but has no persistent interest in the content). Niche interest lists built on a free lead magnet typically open higher than broad commercial lists.
+**G2 — Open rate.** Industry averages for niche content creators in 2025–2026 run 25–43%. A 25%+ rate on a brand-new list signals subscribers opted in with genuine interest. Below 15% suggests spam placement or low-quality acquisition. Niche interest lists built on a free lead magnet typically open higher than broad commercial lists.
 
-**G4 — Etsy conversion rate.** The Etsy-wide average for digital products is 1–3% of views converting to sales; top performers in niche digital products reach 12–20%. A new shop with few reviews should expect 1–2% in the first 30 days, rising to 3–5% as reviews accumulate. A rate above 3% in the first 30 days with fewer than 5 reviews is a strong signal.
+**G4 — Etsy conversion.** Etsy-wide average for digital products: 1–3% of views converting to sales. Top performers in niche digital products reach 12–20%. A new shop should expect 1–2% in first 30 days, rising to 3–5% as reviews accumulate. Above 3% in the first 30 days with fewer than 5 reviews is a strong signal.
 
-**G6 — Social reach.** Instagram accounts under 10K followers typically see 1.5–6% engagement rates in 2026 (vs. 0.3–0.8% for accounts over 100K). Pinterest engagement grew from 3.1% in January 2024 to 5.3% in January 2025 — Pinterest is a search-driven platform with compounding long-tail value that does not register meaningfully in 14-day launch data. TikTok post completion rate must reach 70%+ for wide distribution under the 2026 Oracle-controlled algorithm. Measure reach volume at Day 14; measure engagement rate at Day 30 when there is enough data.
+**G6 — Social reach.** Instagram accounts under 10K followers see 1.5–6% engagement in 2026. Pinterest is search-driven — a pin retains discovery value for 12+ months and does not register meaningfully in 14-day launch data. Measure reach volume at Day 14; measure engagement rate at Day 30.
 
-**G8 — Average order value trend.** For a single-price digital product ($24.99 at launch), "order value" is effectively constant unless a bundle upgrade is offered. If a premium bundle or ebook is introduced before Day 30, track whether buyers choose the base or premium option. If 20%+ choose premium, Phase 2 premium pricing is validated.
+**G8 — Average order value.** For a single-price digital product, order value is effectively constant unless a bundle upgrade is offered. If 20%+ of buyers choose a premium option when offered, Phase 2 premium pricing is validated.
 
----
+### Healthy Conversion Rate Context
 
-## Part 2 — Content Production Timeline for Phase 2
-
-Phase 2 assumes production of 20-30 new plant guides. Current pace is 5-10 hours per guide including illustration/design work. This section maps three scenarios with bottleneck analysis.
-
-### 2.1 Current Production Rate Baseline
-
-From Bundle E production data (May 2026):
-- 5 guides written in approximately 15 hours of net writing time = **3 hours per guide at experienced template pace**
-- With Canva design and photo sourcing: **5-8 hours per guide total**
-- With original photography: estimated **8-12 hours per guide** (longer if field photography requires scheduling around seasonal windows)
-- The 5-10 hour range in the brief aligns with the observed rate including QA and platform upload
-
-**Bottleneck analysis by production phase:**
-
-| Phase | Time share | Primary constraint | Acceleration path |
-|---|---|---|---|
-| Research and outline | 15–20% | Subject-matter depth; plant ID accuracy | Batch research across similar species (same family, similar habitat) |
-| Writing (prose) | 35–45% | Author time — cannot be delegated without quality tradeoff | Template pre-fills (as in Bundle E) reduce blank-page time by ~40% |
-| Illustration / design | 25–35% | **Highest bottleneck** — Canva template time or original art commission | Wikimedia CC images eliminate this bottleneck entirely; original illustration is 3–5× slower |
-| QA (safety audit, completeness) | 10–15% | Cannot be compressed — safety errors create liability | Batch QA checklists per guide type reduce per-guide QA time |
-| Platform upload (Etsy + Kit + social) | 5–10% | Repeatable; scales linearly | Standardised upload SOP reduces time; does not shorten with batch production |
-
-**Conclusion: illustration is the primary bottleneck.** Guides using Wikimedia CC images (as in Bundle E) can be produced at 3-5 hours each. Guides requiring original photography or commissioned illustration cost 8-15 hours each. The 20-30 guide target should be stratified: produce the Wikimedia-eligible guides first (lower activation energy), reserve original photography for high-value anchor species only.
-
-### 2.2 Three Production Scenarios
-
-**Scenario A — Conservative (solo, 2-3 hours per day, original photography for 30% of guides)**
-
-Assumptions: 15 hours per week available; 8 hours average per guide (mix of Wikimedia and original photo); no contractor support; photography constrained to summer 2026 field window.
-
-| Month | Guides produced | Cumulative | Notes |
-|---|---|---|---|
-| July 2026 | 4 | 4 | Medicinal herbs sprint (Wikimedia-sourced) |
-| August 2026 | 4 | 8 | Summer photography window; 2 original-photo guides in batch |
-| September 2026 | 3 | 11 | Post-summer; back-to-school search wave |
-| October 2026 | 3 | 14 | Harvest-season content priority |
-| November 2026 | 2 | 16 | Slowdown; winter prep content less urgent |
-| December 2026 | 2 | 18 | Gift season repurposing; lower new-guide pace |
-
-**Conservative scenario: 18 guides by December 31, 2026.** Does not reach 20-30 target until Q1 2027 without increasing pace or adding a collaborator.
-
-**Scenario B — Baseline (solo, 4-5 hours per day during sprint windows; Wikimedia for 80% of guides)**
-
-Assumptions: Two 3-week writing sprints (July, October); 20 hours per week during sprints; 5 hours average per guide (primarily Wikimedia-sourced); photography batched into two field days.
-
-| Period | Guides produced | Cumulative | Notes |
-|---|---|---|---|
-| June 22–July 13 (Sprint 1) | 7 | 7 | Medicinal herbs bundle; 36-44 hrs; Wikimedia sources |
-| July 14–August 31 | 4 | 11 | Steady state; summer field photography for 3 species |
-| September 1–October 15 | 4 | 15 | Harvest/preservation content |
-| October 16–November 6 (Sprint 2) | 6 | 21 | Fall edibles + winter herbs sprint |
-| November–December | 2 | 23 | Evergreen species to fill catalogue gaps |
-
-**Baseline scenario: 23 guides by December 31, 2026.** Reaches the 20-guide lower bound of Phase 2 by mid-October. Achieves 30 guides by February 2027 at steady-state pace without additional sprints.
-
-**Scenario C — Aggressive (solo + 1-2 collaborators; Wikimedia for 90% of guides; 6+ hours per day during sprints)**
-
-Assumptions: Community builders onboarded July-August (from COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md); 2 Content Creators contributing 2-3 guides each; user produces 8-10 guides in sprints; Wikimedia CC for nearly all guides.
-
-| Period | User | Collaborators | Cumulative | Notes |
-|---|---|---|---|---|
-| June 22–July 13 | 7 | 0 | 7 | Solo sprint |
-| July 14–August 14 | 3 | 2 | 12 | Collaborator onboarding; first submissions |
-| August 15–September 30 | 5 | 4 | 21 | Full collaborator cadence |
-| October | 4 | 4 | 29 | Harvest-season accelerated batch |
-| November | 2 | 2 | 33 | Fills 30-guide target with buffer |
-
-**Aggressive scenario: 30 guides by October 31, 2026.** This is achievable only if collaborator recruitment succeeds (July 1 earliest start per COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md) and guide quality can be maintained across multiple contributors. Collaborator guides require the same QA process as solo-authored guides — budget 1 hour of QA per collaborator guide.
-
-### 2.3 Summer 2026 Photography Window — Hard Constraint
-
-Wild edibles habit photography must be sourced between June 15 and August 15 for most Zone 5-6 species. This window cannot be extended.
-
-**Decision rule:** Any species where Wikimedia CC does not provide adequate habitat photography must be photographed in this window or substituted with Wikimedia images in the Phase 2 guide. Do not block guide completion on photography logistics — use Wikimedia CC as the default and upgrade to original photography opportunistically.
-
-If Phase 2 includes any guides requiring specific seasonal photography (e.g., fall-harvest berry species, spring ephemerals), flag those species before July 1 and schedule field sessions accordingly.
+Etsy digital products: 1–3% average, 3–5% strong, 5%+ top tier. For native plant guides in the homesteading/foraging niche specifically, the closest public analogs (seed catalog digital shops, homesteading plan bundles) cluster around 2–4% once the shop has 10+ reviews. Day 1 conversion at 0.8–1.5% is expected and not a concern. The threshold to investigate is under 0.5% after 200+ views on any single listing — that signals a trust, price, or clarity problem rather than a traffic problem.
 
 ---
 
-## Part 3 — Platform Capacity Assessment
+## Section 2: Phase 2 Timeline and Dependencies
 
-### 3.1 Kit Email Platform
+### If Phase 1 Launches June 3
 
-**Current capacity (free tier):** Up to 10,000 subscribers; 1 automation slot; unlimited broadcast sends; single landing page.
+| Checkpoint | Date | Decision |
+|------------|------|----------|
+| Day 3 | June 6 | First metrics read. 4+ targets met = Phase 2 preparation on schedule. |
+| Day 7 | June 10 | Tier 2 partnership identification. Check G1: if 50+ subscribers, begin pre-sprint infrastructure. |
+| Day 14 | June 17 | Primary gate. Apply G1–G10 table. Full GO / reduced scope / HOLD decision. |
+| Phase 2 sprint start | June 22 | Women's Health bundle writing begins (22-day sprint). |
+| Phase 2 first Etsy upload | ~June 29 | First Phase 2 guide live. |
+| Phase 2 sprint close | July 13 | Final Phase 2 bundle uploaded. |
+| Day 30 | July 3 | Confirm Day 14 decision was correct. Assess revenue trajectory against G10. |
+| Phase 2 autumn sprint | September–October | Second production batch (15–18 more guides). |
+| Phase 2 catalogue target | October 31 | 20+ guides live (baseline scenario), 30+ guides (aggressive with collaborators). |
 
-**Phase 2 requirements trigger:** The free tier is adequate through approximately 2,000-3,000 subscribers given the automation constraints. The binding limit is not subscriber count — it is the single automation slot. Phase 2 requires at minimum a second automation (herbalist welcome sequence alongside the existing zone-card sequence).
+### Does Phase 2 Require New Content?
 
-**Kit Creator tier ($33/month billed annually, or $39/month billed monthly as of 2025-2026):** Unlocks unlimited automations, multiple landing pages, A/B testing for subject lines, RSS campaigns, and 24/7 support. Break-even: approximately 1.5 bundle sales per month at $22/bundle.
+Yes — Phase 2 is primarily a content production sprint. Phase 1 launched with the Zone Quick-Start Card (free lead magnet) and the first guide bundle (Bundle E, 5 species). Phase 2 requires:
 
-**Recommendation:** Upgrade to Kit Creator before the Phase 2 sprint start (June 22). The automation reliability during a 22-day writing sprint is worth $33/month. Manual broadcast workaround adds 15-20 minutes per week of management overhead — a real cost during sprint weeks when every hour is spoken for.
+- 18–25 additional species guides (see Appendix)
+- Revised email sequences for medicinal herb subscribers (separate automation, requires Kit Creator upgrade)
+- 3 new Etsy bundle listings with full tag/SEO optimization
+- 15–20 social post templates for the medicinal herbs content pillar
+- New Pinterest infographics for Phase 2 species (evergreen SEO value)
 
-**Risk flag:** Kit raised Creator plan pricing by 120% in September 2025 (from $15 to $33/month). Further price increases are possible. The free tier's expansion to 10,000 subscribers was a compensating move. Monitor Kit's pricing communications — if another increase is announced, evaluate alternatives (MailerLite, Beehiiv) before committing to annual billing.
+None of this requires creating new infrastructure — it requires filling content into the infrastructure Phase 1 built.
 
-### 3.2 Etsy Platform
+### Does Phase 2 Change the Product?
 
-**Capacity:** Etsy imposes no documented listing count limit for standard sellers. Digital download delivery is fully automated — a 500-order day is operationally identical to a 5-order day. Fee structure for Phase 2:
+Phase 2 adds product lines; it does not change the format. The guide format validated in Phase 1 (zone-specific field guide, PDF, Etsy digital download, $18–$28 price point) applies unchanged to Phase 2. New additions:
 
-| Fee type | Rate | Phase 2 implication |
-|---|---|---|
-| Listing fee | $0.20 per listing | 30 guides = $6 in listing fees — negligible |
-| Transaction fee | 6.5% of sale price | At $22/guide, $1.43 per sale |
-| Payment processing | ~3% + $0.25 | ~$0.91 per sale at $22 |
-| Offsite Ads (optional under $10K) | 15% of attributed sales | Can opt out until $10K annual threshold |
-| Offsite Ads (mandatory over $10K) | 12% permanently | Once crossed, cannot opt out — ever |
+- Premium guide bundle tier at $35–$45 (3 guides bundled at a discount — viable if Phase 1 establishes 2%+ conversion)
+- Potential ebook compilation of 10+ guides at a flat rate ($49–$69) — viable as Phase 2 closes and Phase 3 opens
+- Consultation add-on (email Q&A, 30 min call) — evaluate only if email engagement data shows sustained practitioner audience
 
-**Offsite Ads threshold:** Once cumulative Etsy sales exceed $10,000 in any 365-day window, Offsite Ads participation is mandatory for the lifetime of the shop — even if sales later fall below the threshold. At $22/guide, this threshold is crossed at approximately 455 sales. This is a meaningful Phase 2 milestone: if Phase 2 achieves 15+ sales per day, the $10K threshold is reached in roughly 30 days of active selling. Plan for it.
+### Four-Week Phase 2 Prep Sprint (Once Gate Cleared)
 
-**Suspension risk:** As of fall 2025, Etsy added a formal appeals process for listings removed under Creativity Standards, but appeals for other policy categories (Prohibited Items, safety-related content) remain difficult. The primary suspension risk for plant guides is safety-related flagging — if a foraging guide is flagged as potentially dangerous. Mitigation: include explicit safety disclaimers in every listing description; ensure all safety sections in guides are prominent and specific (as already implemented in Bundle E). Do not use fear-based marketing copy that could trigger policy review.
+If the Day 14 gate clears, this four-week window (June 17 – July 13) is the production sprint:
 
-**[OPEN — unresolved from v3.0]:** Etsy account verification status for the existing shop. Confirm with Etsy support whether any pending verification hold extends to new digital download listings before beginning Phase 2 uploads.
+**Week 1 (June 17–21): Infrastructure prep**
+- Kit Creator upgrade confirmed
+- Phase 2 herbalist automation loaded (8-email sequence, pre-built)
+- Canva Phase 3 palette loaded (hard deadline June 22)
+- All Phase 2 species audited for Wikimedia Commons availability
+- 20 social posts pre-scheduled (covers full sprint period)
 
-### 3.3 Social Media Channels
+**Week 2 (June 22–28): First bundle**
+- Women's Health / Respiratory bundle — 3 species guides written and QA'd
+- Etsy listing drafted (title, description, tags ready for upload)
+- Day 1 of sprint: upload to Etsy and Kit sequence activates for new subscribers
 
-**Instagram (under 10K followers):**
-- Organic reach: 1.5–6% engagement rate, 50–500 impressions per post for new accounts
-- Carousel posts outperform single images in 2026 (0.52% vs. 0.35% engagement rate)
-- Reels provide higher organic reach than feed posts for new accounts
-- No platform capacity limits at Phase 2 scale — the constraint is content production bandwidth
+**Week 3 (June 29 – July 5): Second bundle**
+- Sleep + Nervines bundle — 3 species guides written and QA'd
+- Upload to Etsy
+- Email broadcast to Phase 1 list announcing Phase 2 availability
 
-**TikTok (2026 algorithm):**
-- Completion rate of 70%+ required for wide distribution (up from 50% in 2024)
-- Oracle ownership transition (September 2025) introduced algorithm volatility
-- Accounts that go dormant require months to rebuild reach
-- **Platform risk is highest here.** A US TikTok restriction or algorithm reset could eliminate this channel overnight. Do not build Phase 2 distribution strategy with TikTok as the sole social channel.
-
-**Pinterest:**
-- Search-driven, not feed-driven — a pinned guide retains discovery value for 12+ months
-- Engagement grew to 5.26% median in January 2025 (video pins at 5.75%)
-- Phase 2 should invest in Pinterest more heavily than Phase 1 — the compounding search traffic payoff aligns with a catalogue of 20-30 guides, not a single-product launch
-- No meaningful capacity constraints at Phase 2 scale
-
-**Scheduling tool capacity:** Buffer free tier allows 3 channels and 10 scheduled posts. Phase 2 with 3 platforms and a weekly content cadence will likely require Buffer Essentials ($6/month) or Later's Starter plan (~$18/month). This is a negligible cost — budget it before Phase 2 launch.
-
-**Solo bandwidth ceiling:** Managing 3 social platforms + Kit email + Etsy at the Phase 2 scale requires approximately 1.5-2 hours per day of active management. During writing sprint weeks (22 days), the combined load of 8+ hours of writing plus 1.5-2 hours of social management is at the upper edge of what is sustainable solo. Staged social post templates (already produced for the medicinal herbs sprint) directly address this — pre-scheduling 2 weeks of posts before the sprint start eliminates daily social management overhead during the sprint.
-
----
-
-## Part 4 — Risk Scenarios
-
-### Risk 1 — Phase 1 Uptake Slower Than Projected
-
-**Definition:** Day 14 data shows fewer than 25 email subscribers AND email open rate below 15% AND fewer than 2 influencer shares.
-
-**Probability:** Moderate for Path A solo (Reddit + DMs only). Lower for Path B or BOTH.
-
-**Impact on Phase 2 timing:** 2-4 week delay to the writing sprint start; seasonal penalty for Respiratory Health bundle (July window is the ideal; August is acceptable).
-
-**Mitigation path:**
-1. Do not reduce guide quality or speed in response to slow subscriber growth. The product quality is the long-term asset.
-2. Run a 2-week rapid-distribution push: post zone card as a PNG to r/foraging (750K members), test Gumroad as an alternate free distribution channel, send second outreach wave to non-responding influencer contacts.
-3. Re-evaluate at Day 30. If count reaches 25+ with 15%+ open rate after the distribution push, proceed with Phase 2. If not, defer to August and launch Phase 2 via cold Etsy SEO — this path is documented and viable.
-
-**Alternative decision path — cold Etsy launch:** Phase 2 medicinal herbs bundles have strong SEO potential independent of the Kit list. An Etsy-first Phase 2 (listing 3 bundles with strong tags and SEO copy, then building the email list from Etsy buyers) is viable if the warm list is not yet large enough. It converts more slowly but requires no email list size threshold.
-
-### Risk 2 — Unexpectedly Fast Growth (Phase 2 Acceleration)
-
-**Definition:** Kit subscriber count exceeds 50 before Day 7, or Etsy sales exceed 30 units in the first 14 days.
-
-**Probability:** Low-moderate for Path B or BOTH; low for Path A only.
-
-**Impact:** Phase 2 scope can expand. The Phase 1 list is pre-warmed for a premium offer at Phase 2 launch.
-
-**Acceleration path:**
-- If subscribers exceed 50 before Day 7: begin Phase 2 pre-sprint setup immediately (Canva palette load, Wikimedia Commons sourcing, Kit Creator upgrade) rather than waiting until June 20-21.
-- If Etsy sales exceed 30 units in 14 days: the Etsy channel is the primary driver. Consider listing 1-2 Phase 2 bundles immediately on Etsy as pre-sales (with a stated delivery date 3-4 weeks out), capturing buyer intent before the writing sprint completes. Do not oversell — pre-sale commitments must be deliverable.
-- **Writing quality cannot be accelerated.** The 36-44 hour estimate for Option C is a minimum, not a maximum. Fast Phase 1 growth does not justify producing inferior Phase 2 content. Negative Etsy reviews from rushed Phase 2 bundles compound directly into Phase 3 pricing power and the practitioner tier.
-
-**Supply chain note for fast growth:** Digital delivery is unlimited. Etsy handles 500 downloads as easily as 5. The only genuine constraint at fast-growth scale is Kit email throughput — if the subscriber list grows past 10,000, Kit Creator is required ($39/month). At 10,001 subscribers the automated delivery continues uninterrupted; only the billing tier changes.
-
-### Risk 3 — Technical Failures
-
-**3a. Email delivery issues**
-
-Symptoms: Email 1 open rate below 10% despite confirmed send; bounces above 5%; Kit shows sent but no opens logged.
-
-Causes: Spam folder placement (new sending domain, aggressive subject line, missing SPF/DKIM records); list contamination (bot signups from Reddit or social); Kit platform outage (rare but documented).
-
-Mitigation: Use a custom sending domain connected to Kit before launch; warm the domain with 2-3 broadcasts before the launch send; clean any obvious bot signups (accounts created same day as your post with no activity) before the launch send. If open rate is below 10% at 4 hours post-send, resend with a new subject line to the non-openers only — Kit's broadcast analytics support this without double-sending to openers.
-
-**3b. Etsy shop suspension**
-
-Etsy suspension risk for plant guides is primarily safety-content triggered. Fall 2025 policy changes added a formal appeals process for listings removed under Creativity Standards. Suspensions under other policies remain more difficult to appeal.
-
-Mitigation: Include explicit, prominent safety disclaimers in every listing description (not buried). Ensure no listing copy implies the guides substitute for medical advice (relevant for medicinal herbs bundles). Maintain a backup distribution channel (Gumroad or Payhip) with copies of all guide PDFs — if Etsy suspends the shop, this channel can go live within hours. Gumroad charges 10% per sale (vs. Etsy's 6.5%), but it is operational immediately and not subject to Etsy policy.
-
-**Recovery time from Etsy suspension:** Appeals typically take up to two weeks for account-level suspensions. Listing-level removals can be appealed within 90 days. A shop suspension during Phase 2 launch week would be severe. The backup channel is the only reliable mitigation.
-
-**3c. Social platform algorithm changes**
-
-TikTok's 2026 algorithm change (70% completion rate threshold, follower-first testing) has already reduced reach for many small creators. Oracle's ownership transition introduces ongoing uncertainty. Instagram engagement declined 26% in 2025 across the board.
-
-Mitigation: Do not anchor Phase 2 distribution on any single social platform. Pinterest is the most algorithmically stable platform for evergreen content — a pin from 2026 can drive Etsy traffic in 2028. Invest in Pinterest SEO as a distribution hedge. Email list is the only channel seedwarden fully controls — every Phase 2 content piece should include a call to subscribe, not just a CTA to buy.
-
-### Risk 4 — Seasonal Photography Bottleneck
-
-**Definition:** Phase 2 guides requiring original field photography are blocked because the summer 2026 photography window (June 15 – August 15) passes without the photos being taken.
-
-**Impact:** 3-5 guides dependent on original photography must be delayed, redesigned around Wikimedia CC sources, or deferred to summer 2027.
-
-**Mitigation:** By June 21, audit all Phase 2 species against Wikimedia Commons availability. For any species where Wikimedia does not provide adequate habit images, schedule a specific field photography session before July 15. If a session cannot be scheduled, substitute Wikimedia CC images and document in the guide's attribution log. Do not let photography logistics block a guide's completion — a guide with Wikimedia images published in July 2026 earns revenue; a guide waiting for original photos earns nothing.
-
-### Risk 5 — Fulfillment Overload (If Physical Products Are Introduced)
-
-Phase 2 as currently defined is entirely digital. If Phase 3 introduces premium print guides, ebooks on physical media, or merchandise (seed packets, plant identification tools), the fulfillment model changes entirely.
-
-**Pre-work required before any physical product introduction:**
-- Select and test a print-on-demand partner (Lulu, Blurb, or IngramSpark) with a single test order before listing publicly. Lulu uses a limited printer network for quality consistency; IngramSpark uses a large distributed network (variable quality); Amazon KDP is fast but lowest print quality.
-- For a field guide, Lulu's 6"x9" full-color paperback at approximately $8-12 per copy print cost (varies by page count) yields acceptable margins at $22-28 retail price.
-- Production timeline for print-on-demand: 3-7 days manufacturing, 2-5 days shipping. Total lead time to customer: 7-14 days. This is not compatible with the instant-download expectation set by digital sales — make the distinction explicit in any listing that includes physical components.
-- Inventory management: if ordering physical inventory in bulk (rather than print-on-demand), minimum viable order quantity at offset print pricing is typically 250-500 copies. Storage, quality control, and shipping logistics must be in place before going live. Print-on-demand eliminates this entirely at the cost of per-unit margin.
-
-**Recommendation:** Stay digital-only through the end of Phase 2 (Q4 2026). Evaluate physical products as a Phase 3 initiative once the digital catalogue is complete and Etsy reviews provide social proof. Do not add fulfillment complexity during the content production sprint.
+**Week 4 (July 6–13): Third bundle + review**
+- Third bundle (Digestive Health or Immune Support) — written and uploaded
+- Day 30 data review: is Phase 2 revenue trajectory justifying a September/October sprint?
+- Community builder candidate list assessed for Phase 3 recruitment
 
 ---
 
-## Part 5 — Infrastructure Scaling Checklist
+## Section 3: Operational Overlap Analysis — Can Phase 1 and Phase 2 Run in Parallel?
 
-The following must be completed before Phase 2 launches, regardless of which track was executed in Phase 1.
+The short answer is yes, with one bandwidth constraint that requires deliberate management.
 
-### Pre-Phase 2 Checklist (Target: June 21, 2026)
+### Content Production Bandwidth
+
+Phase 1 monitoring requires approximately 10 minutes per day during the first 14 days. After Day 14, it drops to 5 minutes per day. Phase 2 writing requires 4–6 hours per sprint day. These do not conflict — they occupy different time blocks (morning monitoring vs. afternoon writing).
+
+The one genuine conflict: social media management. Phase 1 requires active social presence (1–2 posts per day during launch week, then 4–5 posts per week). Phase 2 writing during the 22-day sprint requires 6–8 hours per day of focused work that is incompatible with managing live social accounts.
+
+**Resolution**: Pre-schedule 2 weeks of Phase 1 social posts (using Buffer or Later) before the Phase 2 sprint starts. This has already been templated — the TRACK_B_SOCIAL_CALENDAR_MAY28_30.md and Phase 2 social content bank provide ready-to-schedule posts. Pre-scheduling eliminates the daily social management overhead during the sprint.
+
+### Email Marketing: Kit Automation Bandwidth
+
+Phase 1 is running a 5-email welcome sequence (Zone Quick-Start Card onboarding, Days 0–14). Phase 2 requires a separate automation for the medicinal herb subscriber cohort.
+
+**Kit free tier** allows one automation slot. Running Phase 1 and Phase 2 automations simultaneously requires Kit Creator ($33/month billed annually). This is the binding platform constraint — not subscriber count, not storage, not sends. The Creator tier must be in place before Phase 2 automation can run.
+
+The two sequences do not conflict in content (they serve different subscriber cohorts), but they cannot both run on the free tier. The Kit upgrade is a prerequisite for simultaneous Phase 1/2 email operations, not just a Phase 2 nice-to-have.
+
+Phase 1 subscribers who indicate interest in medicinal herbs (via the Day 10 survey or by clicking an herb-related link) are tagged `medicinal-herbs` and routed into the Phase 2 herbalist sequence automatically when it activates. Subscribers who do not click herb-related content remain in the Phase 1 zone-card onboarding track. The two sequences share the same subscriber list but operate on different cohort tags — no conflict, but requires Creator automation capabilities.
+
+### Etsy Shop Focus: Does Phase 2 Dilute Phase 1 Organic Reach?
+
+Adding Phase 2 listings to the Etsy shop does not hurt Phase 1 listing performance. Etsy's search algorithm ranks each listing independently. A shop with 8 listings does not dilute the traffic of a listing with 2 listings. If anything, more listings create more entry points — a customer finding the medicinal herbs guide may navigate to the wild edibles guide through the shop page.
+
+The only risk is shop coherence: if Phase 2 listings are poorly tagged or misaligned with the shop's established category, they could drag down the shop's overall conversion rate metric (which Etsy uses in search ranking). Mitigation: Phase 2 listings use the same tag structure and SEO optimization standards as Phase 1, not a rushed upload.
+
+### Social Media: Does Phase 2 Require More Social?
+
+Path B (social-first launch) adds Instagram, TikTok, and Pinterest to Phase 1. Phase 2 does not add channels — it adds content volume on the same channels. The Phase 2 social content (medicinal herb identification videos, seasonal content, UGC campaigns) flows through the same accounts and scheduling tools established in Phase 1.
+
+The Phase 2 content calendar (documented in SEEDWARDEN_PHASE_2_CONTENT_ROADMAP.md) runs 4–5 posts per week across all three platforms — identical cadence to Phase 1. No additional social management bandwidth is required. The difference is content topic: Phase 1 social focuses on zone cards and wild edibles; Phase 2 shifts emphasis to medicinal herbs and preservation while maintaining the evergreen content rotation.
+
+---
+
+## Section 4: Risk Scenarios
+
+### Slow Growth — Fewer Than 10 Orders in 30 Days
+
+**Definition**: Day 30 data shows fewer than 10 Etsy orders AND email subscriber count under 25 AND no community shares.
+
+**Probability**: Moderate for Path A solo without external promotion. Lower for Path B or dual-track.
+
+**Phase 2 response**: Defer the Phase 2 writing sprint to August. Do not stop Phase 2 work entirely — use the gap period to complete the Wikimedia Commons audit, pre-write guide outlines, and audit photography needs for the August field window. An August sprint still produces 3 bundles by September, ahead of the fall gardening content peak (second-highest Etsy traffic window after April–May).
+
+**Alternative path if Etsy channel remains cold**: Phase 2 medicinal herbs bundles have strong SEO potential independent of a warm email list. A cold Etsy launch (3 bundles with strong tags, no social promotion) converts more slowly but requires no subscriber threshold. If Phase 1 email list is small, the Etsy cold-discovery path for Phase 2 is viable — it just takes 6–8 weeks longer to accumulate reviews.
+
+### Moderate Growth — 20–50 Orders in First 30 Days
+
+**Definition**: 20–50 Etsy orders in Month 1 AND email subscribers in the 25–74 range AND at least 1 community share.
+
+**Probability**: Most likely outcome for Path B or dual-track with consistent social execution.
+
+**Phase 2 response**: Phase 2 greenlit for August content production (not June 22). Use July for:
+- Completing the Wikimedia Commons audit
+- Photographing any species in the summer window that require original photos
+- Outlining all 18+ Phase 2 species guides
+- Building Phase 2 email sequences in Kit
+
+Launch Phase 2 writing sprint August 1–21. Three bundles uploaded by August 31. Etsy reviews from Phase 1 buyers provide social proof for Phase 2 listings at launch.
+
+### Fast Growth — 50+ Orders in First 30 Days
+
+**Definition**: 50+ Etsy orders in Month 1 OR Kit subscribers exceeding 75 before Day 14 OR email open rate above 35%.
+
+**Probability**: Low-moderate for Path B with influencer amplification.
+
+**Phase 2 response**: Accelerate Phase 2 to June 22 writing sprint as planned. If Etsy sales exceed 30 units in the first 14 days, consider listing 1–2 Phase 2 bundles as pre-sales with stated delivery dates 3–4 weeks out. Pre-sale listings capture buyer intent before Phase 2 writing is complete — but only if the stated delivery date is achievable.
+
+**What cannot be accelerated**: Writing quality. The 36–44 hour estimate for the Phase 2 writing sprint is a minimum, not a maximum. Fast Phase 1 growth does not justify inferior Phase 2 content. Negative Etsy reviews from rushed Phase 2 bundles compound directly into Phase 3 pricing power and the practitioner tier.
+
+**Supply chain note for fast growth**: Digital delivery is unlimited. Etsy handles 500 downloads as easily as 5. The only genuine constraint at fast-growth scale is Kit email throughput — if the subscriber list exceeds 10,000, Kit Creator is required ($39/month). At 10,001 subscribers, automated delivery continues uninterrupted; only the billing tier changes.
+
+### Overwhelm Scenario — Phase 1 Succeeds Faster Than Content Production Can Follow
+
+**Definition**: Demand exceeds content supply — Phase 1 buyers exhaust the existing guide catalog before Phase 2 is ready, leading to flat revenue and stalled list growth.
+
+**Probability**: Low in the first 60 days given the Phase 1 catalog size. Risk increases if a viral post drives a traffic spike.
+
+**Response**: List Phase 2 bundles as pre-orders with honest delivery dates. The herbalism community has demonstrated tolerance for advance purchases from credible creators when the content quality is established. A 2–3 week delivery window on a pre-order is acceptable if it is clearly stated and delivered on time. Do not list a pre-order and miss the delivery date.
+
+---
+
+## Section 5: Data Collection Checklist — What to Measure in Phase 1
+
+The following data must be collected during Phase 1 to inform the Phase 2 GO/NO-GO decision. Most is available directly from Etsy Stats and Kit dashboards with no additional tooling.
+
+### Email Data (Kit Dashboard — Daily)
+
+- [ ] Subscriber count (absolute and daily delta)
+- [ ] Email 1 open rate (48-hour settled figure)
+- [ ] Email 1 click-through rate (link clicks / delivered)
+- [ ] Email 3 and Email 4 click-through rates (Etsy product page visits from email)
+- [ ] Unsubscribe rate per email (healthy: under 0.5% per send)
+- [ ] Reply count per email (direct qualitative signal — every reply is recorded manually)
+
+### Etsy Data (Shop Manager — Daily in Week 1, Then Weekly)
+
+- [ ] Views per listing (daily delta)
+- [ ] Conversion rate per listing (orders / views — calculate manually)
+- [ ] Total orders (cumulative)
+- [ ] Revenue (gross, before Etsy fees)
+- [ ] Traffic source breakdown (Etsy search vs. social vs. direct — available in Etsy Stats)
+- [ ] Review count and star rating (monitor after Day 7 when first reviews may arrive)
+
+### Social Data (Platform Insights — Daily in Week 1, Then 3x/Week)
+
+- [ ] Instagram: reach per post, saves per post, profile visits, follower count
+- [ ] TikTok: views per video, completion rate (available in TikTok Analytics), follows from video
+- [ ] Pinterest: impressions, outbound clicks (to Kit landing page or Etsy)
+
+### Qualitative Data (Manual Collection — Record in WORKLOG.md)
+
+- [ ] Influencer responses: name, platform, response content, level of interest
+- [ ] Community shares: platform, account name, estimated reach, content of share
+- [ ] Email replies: subscriber name, content, category (question / praise / feature request)
+- [ ] Comments indicating purchase intent ("where can I buy this?", "is there a guide for Zone 4?")
+- [ ] Comments requesting specific content not yet produced (Phase 2 content gap signals)
+
+### Phase 2 Scope Decision Data (Collect by Day 14)
+
+- [ ] Which species or topics received the most direct requests (in comments, replies, or DMs)?
+- [ ] Which Etsy listing received the most views as a percentage of total shop views?
+- [ ] Which email subject line had the highest open rate?
+- [ ] Did any influencer or community member specifically endorse the medicinal herbs direction vs. the wild edibles direction?
+
+The answers to the scope decision questions determine whether Phase 2 prioritizes medicinal herbs first (high community signal) or expands wild edibles first (high Etsy signal). This data cannot be guessed in advance — it must be collected from the live Phase 1 run.
+
+---
+
+## Decision Framework
+
+**Single-gate decision logic for Phase 2 activation:**
+
+Phase 2 writing sprint is approved when, at Day 14 post-launch:
+
+```
+IF (G1 ≥ 25 subscribers) AND (G2 ≥ 15% open rate)
+    → Phase 2 writing sprint GREENLIT
+    → Kit Creator upgrade: REQUIRED before sprint starts
+    → Sprint start: no later than Day 21 (7 days after gate)
+
+IF (G1 ≥ 75 subscribers) AND (G2 ≥ 25% open rate)
+    → Full Phase 2 scope (5 bundles, collaborator recruitment open)
+    → Sprint start: Day 14 + 7 days
+
+IF (G1 < 25 subscribers) OR (G2 < 15% open rate)
+    → Hold sprint
+    → Run rapid-distribution push for 14 days
+    → Re-evaluate at Day 30 using same thresholds
+    → If Day 30 still below threshold: defer to August sprint
+
+OVERRIDE: Phase 2 greenlit regardless of G1/G2 IF:
+    (a) Email 1 open rate > 35% on any list size, OR
+    (b) 3+ influencer shares with confirmed clicks, OR
+    (c) Any single Etsy listing conversion rate > 5%
+```
+
+**Phase 2 scope calibration (once sprint is approved):**
+
+| Phase 1 Outcome | Phase 2 Scope | Collaborators | Sprint Duration |
+|-----------------|---------------|---------------|-----------------|
+| 25–49 subscribers, 15–24% open | 3 bundles (10 guides) | None | 22 days |
+| 50–99 subscribers, 25%+ open | 5 bundles (18 guides) | None or 1 | 22–28 days |
+| 100+ subscribers, 25%+ open | 5+ bundles (20+ guides) | 1–2 | 28 days |
+| Any override condition | 5 bundles minimum | Evaluate based on revenue | ASAP |
+
+**Phase 2 deferral conditions:**
+
+| Trigger | Meaning | Action |
+|---------|---------|--------|
+| G1 < 25 at Day 30 AND G2 < 15% | List too small and quality too low | Defer to August; run list-building push |
+| Etsy verification hold on new listings | Platform risk active | Activate Gumroad backup; 7-day resolution deadline |
+| Kit delivery rate below 90% | Spam placement risk | Pause list growth; fix sending domain config |
+| TikTok reach drops to near-zero | Platform risk | Shift social to Instagram/Pinterest; do not rebuild TikTok as primary |
+
+---
+
+## Section 6: Supply Chain Impact
+
+### Phase 2 Is Entirely Digital
+
+Phase 2 as currently defined involves no physical product component. Every guide is a PDF digital download delivered automatically by Etsy. Fulfillment overhead per additional order is zero. Phase 2 adding 20–30 new listings does not add fulfillment complexity.
+
+Etsy fee structure at Phase 2 scale:
+
+| Fee | Rate | At 30 guides uploaded |
+|-----|------|----------------------|
+| Listing fee | $0.20/listing | $6.00 total — negligible |
+| Transaction fee | 6.5% of sale price | $1.43 per $22 sale |
+| Payment processing | ~3% + $0.25 | ~$0.91 per $22 sale |
+| Net margin per $22 sale | ~$19.66 | 89% net margin |
+
+**Offsite Ads threshold**: Once cumulative Etsy sales exceed $10,000 in any 365-day window, Offsite Ads participation is mandatory for the lifetime of the shop. At $22/guide, this threshold is crossed at approximately 455 sales. At 15+ sales per day during Phase 2 peak, the $10K threshold can be reached in 30 days. This is a Phase 2 planning milestone, not a risk.
+
+### Phase 3 Physical Products — When Supply Chain Matters
+
+If Phase 3 or Phase 4 introduces physical products (printed guides, seed packets, merchandise), the supply chain model changes entirely. Before any physical product launches:
+
+- Select and test a print-on-demand partner (Lulu, Blurb, or IngramSpark) with a single test order. Lulu's 6×9 full-color paperback: approximately $8–$12 per copy at 200 pages. Retail at $24–$28 yields 50–60% margin after printing.
+- Production lead time to customer: 7–14 days (3–7 manufacturing, 2–5 shipping). Not compatible with the instant-download expectation. State delivery windows explicitly in every physical listing.
+- Inventory risk: print-on-demand eliminates inventory risk entirely at the cost of per-unit margin. Only consider bulk physical printing when monthly order volume exceeds 100 units consistently.
+
+**Recommendation**: Stay digital-only through Phase 2 (Q4 2026). Evaluate physical products as a Phase 3 initiative after the digital catalogue is complete and Etsy reviews provide social proof.
+
+### 3D Printing / mfg-Farm Intersection
+
+The mfg-farm 3D printing operation represents a potential manufacturing resource for Phase 3 physical product development. There are three viable intersection points:
+
+**Intersection 1 — Seed packet display stands and retail fixtures**. If seedwarden expands to wholesale or retail (craft fair, herbalist supply stores), 3D-printed display fixtures — seed packet holders, label stands, guide display racks — have low material cost and high customizability. These are not viable as Phase 2 products because the channel does not yet exist, but they are Phase 3 production-ready if wholesale distribution is pursued.
+
+**Intersection 2 — Plant identification tools and educational props**. 3D-printed plant morphology teaching aids (cross-section models, seed anatomy models) are an underdeveloped product category in the native plant education space. There is no direct Etsy competitor at present. These are slow to produce (2–4 hours per unit print time), not easily scalable, and require significant upfront design work — viable as a premium add-on to a practitioner tier at Phase 4 pricing ($45–$65 per model), not as a Phase 2 product.
+
+**Intersection 3 — Branded packaging for physical seed or herb kit bundles**. If seedwarden eventually sells physical seed kits (curated seed packets for specific growing zones), 3D-printed branded packaging inserts, herb label clips, or seed organizers could differentiate the product from generic seed packet competitors. This is a Phase 4 idea: the economics only work when order volume justifies the print time investment and the brand has established the premium positioning.
+
+**Current assessment**: No mfg-farm production capacity should be committed to seedwarden during Phase 1 or Phase 2. The digital product model has far superior economics (zero variable cost per sale) and the 3D-printed physical product layer adds complexity without improving margins at Phase 2 scale. Document the intersection points now for Phase 3 and Phase 4 planning, and revisit when Phase 2 catalogue is complete and monthly revenue exceeds $2,000.
+
+**Economies of scale potential**: When seedwarden reaches Phase 3 wholesale or Phase 4 physical product stage, the mfg-farm printing infrastructure avoids the minimum order requirements of third-party injection-molded packaging (typically 500–5,000 units per SKU). This is a meaningful capital advantage for a product launch at 50–200 units. The break-even analysis at that point: mfg-farm print cost vs. offshore minimum-order cost vs. print-on-demand supplier margin. Run this analysis before Phase 3 physical product commitment.
+
+---
+
+## Appendix: Phase 2 Content Gap Analysis
+
+### Current Phase 1 Catalogue (Post-Bundle E)
+
+Phase 1 launched with:
+- Zone Quick-Start Card (8 zones, Zones 3–10) — free lead magnet
+- Bundle E: 5 wild edibles species guides (launched June 2026)
+- Companion planting chart
+- Food sovereignty starter guide
+
+**Total paid SKUs at Phase 1 close**: 7 Etsy listings across the catalogue.
+
+### Phase 2 Content Gap — Species Requiring Guides
+
+The following species have been prioritized in PHASE_2_GUIDE_CONTENT_BLUEPRINT.md but not yet produced. Organized by production urgency:
+
+**Tier 1 — Write First (22-day sprint, June 22 – July 13)**
+
+These 8 species have the highest Etsy search demand, the clearest safety content angles, and align with the medicinal herbs bundle structure:
+
+| Species | Common Name | Bundle Target | Key Gap |
+|---------|-------------|--------------|---------|
+| *Urtica dioica* | Stinging Nettle | Respiratory / Allergy | Harvest safety (gloves, timing) not illustrated |
+| *Sambucus canadensis* | American Elderberry | Immune / Respiratory | Berry toxicity vs. flower safety distinction thin |
+| *Hypericum perforatum* | St. John's Wort | Sleep + Mood | Drug interactions are the primary safety content gap |
+| *Matricaria chamomilla* | Chamomile | Sleep + Nervines | Ragweed allergy cross-reactivity not documented in existing guides |
+| *Valeriana officinalis* | Valerian | Sleep + Nervines | No entry in Phase 1; cultivation from root division undocumented |
+| *Echinacea purpurea* | Purple Coneflower | Immune | 3-year grow-from-seed timeline requires illustration |
+| *Achillea millefolium* | Common Yarrow | Wound / Inflammation | Harvest stage (first flower head) requires photo documentation |
+| *Mentha* spp. | Wild Mint complex | Digestive | Species differentiation (spearmint vs. peppermint vs. water mint) requires ID chart |
+
+**Tier 2 — Write July–September (Second Production Sprint)**
+
+These 12 species are summer-peak or fall-peak, with field photography windows that align with the summer 2026 botanical window:
+
+| Species | Common Name | Season | Notes |
+|---------|-------------|--------|-------|
+| *Solidago* spp. | Goldenrod | August | Allergy myth-busting angle is the highest-reach content opportunity |
+| *Monarda fistulosa* | Wild Bergamot | July | Edible + medicinal dual-use; native bee content overlap |
+| *Rubus occidentalis* | Black Raspberry | July | Short harvest window; urgency content |
+| *Crataegus* spp. | Hawthorn | August–September | Berry ID guide; thorns and harvest method |
+| *Asarum canadense* | Wild Ginger | August | Seed collection window; seed saving content |
+| *Actaea racemosa* | Black Cohosh | September | Phase 3 medicinal bridge species |
+| *Verbascum thapsus* | Mullein | July–August | Highly photogenic; respiratory herb with strong search demand |
+| *Symphytum officinale* | Comfrey | July | External use vs. internal use safety distinction critical |
+| *Glycyrrhiza glabra* | Licorice Root | (Cultivation guide) | No wild harvest possible; cultivation guide format |
+| *Hydrastis canadensis* | Goldenseal | September | Threatened status; ethical sourcing guide is the content angle |
+| *Lobelia inflata* | Indian Tobacco | August | Safety-critical; narrow therapeutic window requires detailed dosing note |
+| *Asclepias syriaca* | Common Milkweed | July | Edible stages (shoots, flowers, pods) not documented; monarch context |
+
+**Tier 3 — Phase 3 Integration Species (not new, cross-reference only)**
+
+These medicinal species are covered by the Phase 3 photography and guide pipeline. They require cross-reference links from Phase 2 guides but not new standalone Phase 2 content:
+
+American Ginseng, Bloodroot, False Unicorn, Red Clover, Ramps (medicinal context), Wild Bergamot (medicinal context — shared with Tier 2 above, so write once and cross-reference)
+
+### Topic Gaps Beyond Species Guides
+
+Phase 2 also addresses the following content gaps that are not species-specific:
+
+| Gap | Format | Priority | Notes |
+|-----|--------|----------|-------|
+| Drug interaction reference card | PDF infographic | HIGH | St. John's Wort, Echinacea, Valerian are the three most requested; this is also the most shareable safety content in the herbalism niche |
+| Zone-specific growing calendar (medicinal herbs) | PDF, 8-zone format | HIGH | Parallel to Zone Quick-Start Card; same format, medicinal focus |
+| Seed saving guide (medicinal herbs specific) | Full guide | MEDIUM | Complements existing Seed Saving Field Manual; references Phase 2 species |
+| Harvest and preservation by season | Reference card | MEDIUM | Connects Phase 2 guides to the homesteader preservation audience |
+| "Start here" guide for medicinal herb gardeners | Landing guide | MEDIUM | The lead magnet for the Phase 2 herbalist subscriber track |
+
+### Summary Count
+
+| Tier | Species | Additional topics | Total content items |
+|------|---------|-------------------|---------------------|
+| Phase 2 Tier 1 (sprint) | 8 | 1 (drug interaction card) | 9 |
+| Phase 2 Tier 2 (autumn sprint) | 12 | 3 | 15 |
+| Phase 2 Tier 3 (cross-reference only) | 6 | — | 6 (no new production) |
+| **Phase 2 total new production** | **20** | **4** | **24 content items** |
+
+At 5–8 hours per guide (including Canva design with Wikimedia CC images), the 24-item Phase 2 content backlog represents approximately 120–192 hours of production work. Distributed across the June 22 sprint (22 days) and an October sprint (15 days), this is manageable at 3–5 hours per day in sprint mode. Without sprint windows, at steady-state 2 hours per day, Phase 2 completes by December 31, 2026.
+
+---
+
+## Infrastructure Pre-Phase 2 Checklist
+
+Complete before Phase 2 sprint begins (target: June 21, 2026):
 
 **Email infrastructure**
-- [ ] Kit Creator upgrade confirmed (required if Phase 2 runs a second automation sequence)
-- [ ] Kit Creator billing active; legacy free-tier automation migrated
-- [ ] Phase 2 herbalist welcome sequence loaded into Kit as a new automation (8 emails, staged in phase-3-assets/)
-- [ ] Herbalist tag routing confirmed: Phase 1 subscribers who clicked the Day 10 survey link are tagged `medicinal-herbs` and will enter the Phase 2 sequence automatically
-- [ ] Kit sending domain verified with SPF/DKIM records if not already done
-- [ ] Subscriber list cleaned: remove any accounts created same-day as Reddit post with zero engagement history
+- [ ] Kit Creator upgrade confirmed ($33/month billed annually)
+- [ ] Phase 2 herbalist welcome sequence loaded (8 emails, pre-built)
+- [ ] Herbalist tag routing confirmed (`medicinal-herbs` tag triggers Phase 2 sequence)
+- [ ] Kit sending domain verified with SPF/DKIM
 
 **Etsy**
-- [ ] Etsy account verification status confirmed with Etsy support — does any pending hold extend to new digital download listings?
-- [ ] Payment account confirmed active (bank details on file; no outstanding payment holds)
-- [ ] Phase 2 listing templates drafted (title, description, tags) for all 3 medicinal herbs bundles — ready to activate on upload day
-- [ ] Backup distribution channel (Gumroad or Payhip) account created with at least one test product uploaded — operational backup, not just a plan
-- [ ] Offsite Ads opt-out status confirmed (can opt out if under $10K threshold; decide before Phase 2 launch)
+- [ ] Account verification status confirmed with Etsy support (no pending holds on new digital downloads)
+- [ ] Payment account active (no outstanding payment holds)
+- [ ] Phase 2 listing templates drafted (title, description, tags) for all 3 Phase 2 bundles
+- [ ] Backup distribution channel (Gumroad or Payhip) operational with at least one test product
 
 **Social media**
-- [ ] Social accounts (Instagram, TikTok, Pinterest) active and posting history established — do not launch Phase 2 on a dormant account
-- [ ] 20 Phase 2 social post templates loaded into scheduling tool (Buffer or Later)
-- [ ] 2 weeks of Phase 2 social posts pre-scheduled before the writing sprint starts (June 20-21)
-- [ ] Scheduling tool plan confirmed: Buffer Essentials or Later Starter if free tier is insufficient for Phase 2 cadence
-- [ ] Pinterest boards created for Phase 2 bundle categories (medicinal herbs, respiratory, sleep + nervines); first 5 pins pinned before sprint start
+- [ ] All social accounts (Instagram, TikTok, Pinterest) active and posting history established
+- [ ] 20 social post templates loaded and pre-scheduled through July 13 sprint close
+- [ ] Pinterest boards created for Phase 2 content categories
 
 **Content production**
-- [ ] All Phase 2 species audited against Wikimedia Commons — photography dependency list finalised
-- [ ] Any species requiring original field photography: field session scheduled before July 15
-- [ ] Canva Phase 3 palette loaded before June 22 (hard deadline for cover design consistency)
-- [ ] QA checklist template for Phase 2 guides ready (same structure as BUNDLE_E_QA_CHECKLIST.md, adapted for medicinal herbs safety profile)
-- [ ] FTC compliance review notes prepared for medicinal herb health claims — no unsubstantiated claims in any guide
+- [ ] All 20 Phase 2 species audited against Wikimedia Commons
+- [ ] Species requiring original photography: field session scheduled before July 15
+- [ ] Canva Phase 3 palette loaded (June 22 hard deadline)
+- [ ] QA checklist adapted for medicinal herbs safety profile (drug interactions section required)
 
 **Financial**
-- [ ] Kit Creator cost ($33/month) factored into Phase 2 cash flow — break-even at 1.5 bundle sales/month
-- [ ] Scheduling tool cost budgeted if upgrading from free tier
-- [ ] Phase 2 first revenue projection modelled: if Women's Health bundle uploads June 29 at $22 price point and achieves 3 sales/day, month 1 revenue = ~$660 from that bundle alone
-
----
-
-## Part 6 — Recommended Decision Framework
-
-### Metrics to Watch During Phase 1 (Daily, First 14 Days)
-
-**Daily monitoring (5 minutes):**
-- Kit subscriber count (absolute number and daily delta)
-- Etsy listing views (if Track A)
-- Social reach on any post published that day
-
-**Every 3 days:**
-- Email open rate — compare against the 15% / 25% thresholds
-- Etsy conversion rate (sales ÷ views) — flag if below 1% after Day 5
-- Social engagement rate — flag if consistently below 1% on all platforms (indicates content-audience mismatch)
-
-**At Day 7 — first checkpoint decision:**
-- If Kit subscribers ≥25 AND open rate ≥20%: confirm Phase 2 sprint start June 22; begin pre-sprint infrastructure checklist
-- If Kit subscribers <25 OR open rate <15%: begin rapid-distribution push; hold Phase 2 sprint start pending Day 14 read
-- If Track A Etsy sales ≥10: Phase 2 Etsy launch is validated; confirm platform infrastructure is ready
-
-**At Day 14 — primary gate:**
-- Apply the G1-G10 criteria table from Part 1
-- Make the Phase 2 GO / reduced scope / HOLD decision
-- Communicate decision to any collaborators in the recruitment pipeline
-- Begin Phase 2 pre-sprint infrastructure checklist if GO or reduced scope
-
-**At Day 30 — confirmation read:**
-- Validate that Day 14 decision was correct by checking actual revenue against the Day 30 annualised trajectory
-- Confirm Phase 2 content production is on pace against baseline scenario timeline
-- Assess whether Kit upgrade was the right tier choice (is automation holding? Is list growing into the 1,000+ range that might benefit from Creator Pro?)
-
-### Phase 2 Approval Trigger Points
-
-| Trigger event | What it means | Phase 2 action |
-|---|---|---|
-| Day 7: 50+ Kit subscribers | List is growing faster than projected | Move pre-sprint checklist start to June 17 (2 days earlier) |
-| Day 7: Etsy conversion >3% | Listing quality is strong; cold Etsy traffic will convert | Scale Etsy SEO effort for Phase 2 listings immediately |
-| Day 14: All G1-G4 GREEN | Primary gate cleared | Confirm June 22 sprint start; brief any collaborators |
-| Day 30: Revenue >$600 | Monthly run rate above Kit Creator break-even by 10x | Phase 2 is self-funding; confirm Phase 2 investment level |
-| Any day: 3+ influencer shares | Content is community-validated | Increase Phase 2 scope; accelerate community builder recruitment outreach |
-
-### Phase 2 Deferral Trigger Points
-
-| Trigger event | What it means | Phase 2 action |
-|---|---|---|
-| Day 14: G1 <25 subscribers AND G2 <15% | List quality and size both below minimum viable | Hold sprint; run rapid distribution push for 2 weeks; re-evaluate June 29 |
-| Etsy verification hold extends to new listings | Platform risk materialises | Activate Gumroad backup immediately; file Etsy support inquiry with 7-day response deadline |
-| Kit email delivery rate below 90% | Spam placement risk | Pause list growth; diagnose sending domain configuration before growing further |
-| TikTok account suspended or reach drops to near-zero | Platform risk | Shift social effort to Instagram and Pinterest; do not rebuild TikTok if it represents more than 30% of your daily management time |
-
----
-
-## Part 7 — Phase 1 Success Definition
-
-What does Phase 1 success look like in concrete terms that justify Phase 2 investment (36-44 hours of writing + infrastructure costs + potential collaborator coordination)?
-
-**Minimum viable success (justifies Phase 2 at reduced scope — 10 guides, no collaborators):**
-- 25+ Kit email subscribers with 15%+ Email 1 open rate by Day 14
-- At least 1 community share from a respected voice (AHG member, large herbalism account, permaculture educator)
-- No negative signals (Etsy suspension, email delivery failure, active safety concern in comments)
-
-**Standard success (justifies full Phase 2 at Option C scope — 3 bundles, 22-day sprint):**
-- 50+ Kit subscribers with 20%+ open rate by Day 14
-- Etsy conversion rate of 2%+ if Track A is active
-- 2+ community shares
-- Any revenue from Phase 1 (Etsy sales, affiliate clicks, or ebook pre-orders)
-
-**Strong success (justifies expanded Phase 2 — 5 bundles or accelerated collaborator recruitment):**
-- 100+ Kit subscribers with 25%+ open rate by Day 14
-- Etsy conversion rate of 3%+ on any listing
-- 4+ community shares including at least 1 from an account with 5,000+ followers
-- Monthly revenue trajectory of $500+/month visible by Day 30
-
-**What success at any level does not include:**
-- Perfect execution of every checklist item
-- Zero technical failures
-- Viral social posts
-
-Phase 1 is a system validation. The goal is to confirm that a real audience exists for this content, that the email infrastructure works, and that the Etsy listing converts. Anything above the minimum viable success threshold is confirmation. The content quality is the long-term moat — Phase 2 invests in deepening it.
-
----
-
-## Appendix — Key Benchmark Sources
-
-| Metric | Source | 2026 figure |
-|---|---|---|
-| Email popup conversion rate | Multiple ESP providers | 5–7% with incentive; 1% embedded |
-| Email open rate (niche content) | MailerLite benchmarks 2025 | 43.46% average; niche lists higher |
-| Etsy digital product conversion | insightagent.app, litcommerce.com | 1–3% average; 3–5% strong; 5%+ top tier |
-| Instagram engagement <10K followers | socialinsider.io Q1 2026 | 1.5–6% |
-| Pinterest engagement growth | posteverywhere.ai 2026 | 3.1% Jan 2024 → 5.3% Jan 2025 |
-| Email list annual decay rate | Multiple ESPs | 22.5% per year |
-| Kit Creator pricing | emailtooltester.com 2026 | $33/month annually; $39/month monthly |
-| Etsy Offsite Ads threshold | etsy.com/legal/fees | $10,000 in any 365-day period |
-| TikTok 2026 completion threshold | socialync.io, presencenews.org | 70%+ required for wide distribution |
-| Print-on-demand cost (Lulu, 200-page 6×9 color) | blog.lulu.com | ~$8-12 per copy |
+- [ ] Kit Creator cost ($33/month) included in Phase 2 operating cost projection
+- [ ] Break-even: 1.5 bundle sales per month at $22/bundle covers Kit Creator cost
 
 ---
 
 *Prepared: June 4, 2026 by research-agent (claude-sonnet-4-6)*
-*Version 4.0 — supersedes v3.0 (June 3, 2026 — zone-card/medicinal herbs specific), v2.0, v1.0*
-*Track-agnostic: applies to Track A, Track B, or both executing concurrently*
+*Version 5.0 — supersedes v4.0 (June 4, 2026), v3.0, v2.0, v1.0*
+*Track-agnostic: applies to Path A (Etsy-first), Path B (social-first), or both executing concurrently*
+*Cross-references: SEEDWARDEN_PHASE_2_CONTENT_ROADMAP.md, PHASE_2_GUIDE_CONTENT_BLUEPRINT.md, GATE_1_SUCCESS_METRICS_AND_MONITORING.md, COMMUNITY_BUILDER_RECRUITMENT_FRAMEWORK.md*
