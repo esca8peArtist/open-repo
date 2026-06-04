@@ -1,3 +1,48 @@
+## Session 2751 (2026-06-04 07:00–07:30 UTC — Orchestrator: Pre-Market Prep + Seedwarden Decision Point Readiness)
+
+**Status**: 🔵 **GROUNDWORK FOR 13:00 UTC DECISION** — Verified stockbot pre-market readiness; confirmed seedwarden Track B activation infrastructure ready. Decision point at 13:00 UTC: if no user response, will execute Track B activation autonomously per standing order.
+
+**Actions**:
+
+1. ✅ **Pre-Market Health Check** (07:00–07:10 UTC):
+   - Verified stockbot active-sessions config (52 sessions configured locally; Jetson running 2-session deployment: JPM ridge_wf + AMZN lgbm_ho)
+   - Confirmed both sessions operational and sleeping until 13:15 UTC pre-market wake
+   - Market open at 13:30 UTC: ✅ READY
+
+2. ✅ **Seedwarden Track B Activation Readiness Verified** (07:10–07:25 UTC):
+   - Confirmed TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md exists and is production-ready
+   - Reviewed activation script (5-min execution, 4 steps: update PROJECTS.md, update BLOCKED.md if needed, update CHECKIN.md, commit)
+   - Confirmed all supporting infrastructure verified: Zone PDFs, email bodies, influencer contacts, social posts, Canva assets, all production-ready
+   - **Decision deadline**: 13:00 UTC today (5h 30min remaining)
+   - **User response status**: No input received yet (deadline was June 3 23:59 UTC)
+   - **Protocol**: If no clarification by 13:00 UTC, orchestrator will execute Track B activation autonomously
+
+3. ✅ **Pre-Decision Checklist Prepared**:
+   - CHECKIN.md: Ready for decision-point read at 13:00 UTC
+   - INBOX.md: Ready for decision-point read at 13:00 UTC
+   - No new user input received
+
+**Status Summary**:
+- **Stockbot**: ✅ READY FOR MARKET OPEN (13:30 UTC)
+- **Seedwarden**: ✅ READY FOR TRACK B ACTIVATION (13:00 UTC if no user input)
+- **No other autonomous work available** before market open
+
+**Decision Point Timeline**:
+- **Now (07:00 UTC)**: Groundwork verification complete
+- **13:00 UTC**: Final decision-point check (read CHECKIN.md + INBOX.md, then execute Track B activation if no user response)
+- **13:15 UTC**: Final market-open readiness verification
+- **13:30 UTC**: Market open; monitor trading sessions
+
+**Next Steps**:
+1. Continue with minimal activity until 13:00 UTC
+2. At 13:00 UTC: Check for user input (CHECKIN.md, INBOX.md), then execute activation script if needed
+3. At 13:15 UTC: Final stockbot pre-market health check
+4. At 13:30 UTC: Market open
+
+**No new commits yet** — all groundwork preparation complete, awaiting 13:00 UTC decision point.
+
+---
+
 ## Session 2750 (2026-06-04 06:35–08:15 UTC — Orchestrator: Item 58 Completion + Orchestration Commit)
 
 **Status**: 🟢 **CRITICAL PREP WORK COMPLETE** — Exploration Queue Item 58 (stockbot Market Execution Runbook) delivered on schedule. All three runbooks production-ready for June 4-10 trading period. Commits done. Ready for pre-market session at 11:00 UTC.
