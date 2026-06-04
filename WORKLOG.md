@@ -40295,3 +40295,26 @@ Given **CRITICAL BLOCKER** (Alpaca auth) status and time constraints:
 3. Stockbot trades normally on June 4 regardless of WebSocket status
 4. Post-market: Implement REST polling if desired (Option C)
 
+
+---
+
+## Session 2748 (2026-06-04 06:16–06:30 UTC)
+
+**Orchestrator: Exploration Queue Verification + Pre-Market Scheduling**
+
+**Actions**:
+1. ✅ **Orientation & Block Processing** (ORCHESTRATOR_STATE.md verified; BLOCKED.md reviewed; all active blocks processed; INBOX.md confirmed empty)
+2. ✅ **Verified Exploration Queue Item 57 Complete** — resistance-research Batch 2 Full Activation Roadmap. All three deliverables production-ready (BATCH_2_RESOURCE_ALLOCATION_MATRIX.md, BATCH_2_CONTINGENCY_ACTIVATION_SCENARIOS.md, BATCH_2_JUNE_CHECKPOINT_READINESS_PROTOCOL.md). Updated status marker in EXPLORATION_QUEUE.md.
+3. ✅ **Updated CHECKIN.md** with session summary and confirmed decision deadlines (seedwarden 13:00 UTC, market open 13:30 UTC)
+4. ✅ **Scheduled wake-up for 11:00 UTC** — Begin stockbot pre-market health checks and prepare for seedwarden Track B activation at 13:00 UTC
+
+**Decisions & Status**:
+- **Seedwarden**: No user response received yet. Orchestrator will activate Track B at 13:00 UTC per standing order (TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md ready for execution)
+- **Stockbot**: Trading sessions verified operational; ready for 13:30 UTC market open. Pre-market checks scheduled 11:00–13:00 UTC.
+- **Resistance-research**: No autonomous work available until June 9 (Domain 51 execution prep complete; Domain 51 execution scheduled June 9-12)
+- **Systems-resilience**: Platform decision due EOD (lower priority than seedwarden); Phase 6 Wave 2 planning (Item 54) available but deferred until after 13:30 UTC market open
+
+**No Blockers** — All critical infrastructure verified ready. Awaiting user input on decision deadlines.
+
+**Next Session**: 11:00 UTC — Pre-market health checks + decision point execution
+

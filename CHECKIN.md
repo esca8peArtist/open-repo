@@ -1,3 +1,31 @@
+## Since Last Check-in — Session 2748 (2026-06-04 06:16–06:30 UTC — Orchestrator: Exploration Queue Update + Pre-Market Scheduling)
+
+**Status**: 🔵 **MONITORING + PREPARATION MODE** — Confirmed Exploration Queue Item 57 (resistance-research Batch 2) is production-ready (completed prior session). Scheduled wake-up for 11:00 UTC to begin stockbot pre-market health checks.
+
+**Session Work**:
+1. ✅ **Orientation complete** (ORCHESTRATOR_STATE.md reviewed; all active blocks processed)
+2. ✅ **Confirmed Item 57 complete** (BATCH_2_RESOURCE_ALLOCATION_MATRIX.md + CONTINGENCY_ACTIVATION_SCENARIOS.md + CHECKPOINT_READINESS_PROTOCOL.md all production-ready)
+3. ✅ **Updated EXPLORATION_QUEUE.md** Item 57 status marker from `⏳` to `✅`
+4. ✅ **Scheduled wake-up for 11:00 UTC** (pre-market health checks + seedwarden decision point at 13:00 UTC)
+
+**Current Decision Deadlines** (both still pending):
+- **Seedwarden Track A/B/Both**: Deadline **13:00 UTC** (6h 44m remaining). No user response yet. Orchestrator default: Track B activation at 13:00 UTC.
+- **Systems-resilience Platform** (Nextcloud+Matrix vs Discourse): Due **EOD today** (lower priority than seedwarden).
+
+**Stockbot Status**: ✅ READY FOR MARKET OPEN
+- Both trading sessions (JPM ridge_wf + AMZN lgbm_ho) verified operational
+- Database fix confirmed (Session 2745)
+- Market open: 13:30 UTC (7h 14m)
+- Pre-market health checks scheduled: 11:00–13:00 UTC
+
+**Next Steps**:
+1. **11:00 UTC**: Begin stockbot pre-market health checks (SSH verification, API health, trading session status)
+2. **13:00 UTC**: Execute seedwarden Track B activation (if no user response by deadline)
+3. **13:15 UTC**: Final market-open readiness verification
+4. **13:30 UTC**: Stockbot market opens; monitor trading session startup
+
+---
+
 ## Since Last Check-in — Session 2747 (2026-06-04 06:01+ UTC — Orchestrator: Monitoring + Decision Point Execution)
 
 **Status**: 🔵 **MONITORING MODE ACTIVE** — Awaiting critical decision deadline at **13:00 UTC** (6h 59m remaining). **No user input received yet.**
