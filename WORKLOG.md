@@ -39,6 +39,40 @@
 
 ---
 
+## Session 2788 (2026-06-04 16:57–20:00 UTC — Orchestrator: Item 61 Preparation + Execution at Market Close)
+
+**Status**: 🔄 **ITEM 61 READY — STANDBY FOR 20:00 UTC EXECUTION**
+
+**Work Completed** (16:57–17:00 UTC):
+
+1. ✅ **Database Sync from Jetson to Orchestrator** (2 min)
+   - **Issue**: Local stockbot.db was stale (June 3 20:05 UTC, 356K)
+   - **Action**: SSH verified to Jetson (awank@100.120.18.84), synced `/opt/stockbot/database/trading.db` (1.1M, June 4 00:29 UTC)
+   - **Result**: Local stockbot.db now current, ready for Item 61 analysis
+   - **Trade status**: 141 total trades since May 5; latest: June 1 (0 trades June 2-4 — sessions generating HOLD signals only, no BUY/SELL)
+   - **Engine status**: Both trading sessions (jpm_ridge_wf_001, amzn_lgbm_ho_001) active and running; market hours signals confirmed at 16:51-16:56 UTC
+
+2. ✅ **Item 61 Infrastructure Verification**
+   - Database synced ✅
+   - post_market_daily_analysis.py verified present ✅
+   - Jetson Docker logs confirmed healthy ✅
+   - Ready for 20:00 UTC execution ✅
+
+**Next Action**:
+- **20:00 UTC (3h 3m from now)**: Execute Item 61 post-market analysis at market close
+  - Command: `cd projects/stockbot && uv run python scripts/post_market_daily_analysis.py`
+  - Output: GO/CAUTION/NO-GO decision for Day 2 continuation + Discord notification
+  - Follow-up: Update PROJECTS.md + CHECKIN.md with decision
+
+**Expected Item 61 Output**:
+- Date: 2026-06-04
+- Signals today: ~20 HOLD signals (no BUY/SELL)
+- Fills: 0 (no trades executed)
+- Round trips: 0 (cumulative since May 5 still pending)
+- Gate 1 progress: 0 confirmed round trips, total PnL TBD from accumulated position P&L
+
+---
+
 ## Session 2786 (2026-06-04 16:36–20:00 UTC — Orchestrator: Queue Refill + Item 61 Standby)
 
 **Status**: ✅ **QUEUE REFILLED (3 NEW ITEMS 68-70) — STANDBY FOR ITEM 61 AT 20:00 UTC**
