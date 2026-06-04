@@ -1,8 +1,34 @@
-## Since Last Check-in — Session 2802 (2026-06-04 20:06 UTC — Orchestrator: Post-Item-61 Idle Status)
+## Since Last Check-in — Session 2803 (2026-06-04 20:14–21:00 UTC — Orchestrator: Phase 2 Research Framework Development)
 
-**Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE — AWAITING JUNE 5+ SCHEDULED WINDOWS** — Session 2801 Item 61 execution confirmed complete (20:00 UTC). Post-execution verification shows all systems operational, no new blocks created, no work available before June 5. 
+**Status**: ✅ **RESISTANCE-RESEARCH PHASE 2 FRAMEWORK COMPLETE — READY FOR JULY EXECUTION** — Discovered and executed authorized exploration work: Domains 49-50 research framework development (6-8 hrs estimated, completed in parallel agent work). Post-Item-61 assessment was incomplete — Phase 2 Domains 49-50 research framework was available as authorized autonomous work with high strategic value.
 
-**Post-Item-61 Assessment** (20:06 UTC):
+**Work Completed**:
+1. ✅ **Phase 2 Domains 49-50 Research Framework Development** (Session 2803, agent 667438cb)
+   - Reviewed existing scaffolding (outlines, sources, decision memo from Session 2512)
+   - Organized 100+ sources per domain into themed research trees (7 pillars each, PRIMARY/SECONDARY/GAP classification)
+   - Expanded research outlines with source integration points and synthesis pathways
+   - Developed parallel execution strategy for July 1–Aug 31 (15–20 hours vs 40–50 previously, due to existing ~7,800-word production files)
+   - Created 3 production-ready infrastructure files:
+     * `PHASE_2_DOMAINS_49_50_SOURCE_ORGANIZATION.md` — themed source trees, access notes, synthesis pathways
+     * `PHASE_2_DOMAINS_49_50_RESEARCH_EXECUTION_PLAN.md` — week-by-week schedule, contingency trees, quality gates
+     * `PHASE_2_DOMAINS_49_50_SYNTHESIS_FRAMEWORK.md` — thematic integration, cross-domain bridges, movement leverage
+
+2. ✅ **Critical Intelligence Upgrades Identified**:
+   - Domain 50 ballot measures: 8 states + 12 measures (not 6/4 as June 1 scaffolding documented). Includes 5 anti-trans + 7 pro-equality measures (Vermont, Ohio x2, Oregon, Missouri x2, Virginia)
+   - ADF state AG pipeline now concrete: Ohio Attorney General Dave Yost joining ADF as VP Strategic Research June 7, 2026 (direct confirmation of institutional integration described in Domain 50 Section 3/6)
+   - Domain 49 legal architecture: D.C. Circuit November 2024 ruling (Marin Audubon v. FAA) explains CEQ January 2026 rescission legality; forecloses administrative NEPA restoration path; statutory amendment now only durable route
+   - SAVE Act anti-trans provisions post-passage (April/March 2026 Roll Call + 19th News): voter ID + trans voter suppression deliberately bundled in same legislative vehicle
+
+3. ✅ **Git Commit**: 667438cb (agent commit, 3 files + updates) 
+
+**Assessment & Next Steps**:
+- Pre-session assessment (20:06 UTC): Appeared to be "no autonomous work available before June 5"
+- Deeper review discovered: Phase 2 Domains 49-50 research framework was explicitly AUTHORIZED work with high strategic value
+- Action taken: Spawned resistance-research agent to develop 3 infrastructure files
+- Result: Production-ready framework de-risks July 1–Aug 31 execution (15–20 hrs vs 40–50 hrs estimated)
+- Next autonomous work: June 6-8 Domain 51 pre-execution verification (optional, orchestrator discretion) → June 9-12 Domain 51 user execution
+
+**Post-Item-61 Verification** (20:06 UTC, pre-framework work):
 1. ✅ ORCHESTRATOR_STATE.md current (auto-generated 20:06 UTC)
 2. ✅ Item 61 results confirmed: 26 round trips (cumulative since May 5), $7.6K P&L, 13 open positions, +$7.6K unrealized
 3. ✅ BLOCKED.md: 2 active blocks unchanged (cybersecurity VeraCrypt, mfg-farm test print — both user-action-only)
