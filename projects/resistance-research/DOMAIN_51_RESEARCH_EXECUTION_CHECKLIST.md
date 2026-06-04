@@ -19,6 +19,14 @@ cross_references:
 
 ---
 
+## Bill Reference Note
+
+**Correct bill number**: SB-42 (not SB-290). The California Fair Elections Act is authored by Senators Tom Umberg, Ben Allen, and Sabrina Cervantes, and Assemblymember Alex Lee. Governor Newsom signed SB-42, which placed the measure on the November 3, 2026 ballot. The ballot measure does not impose public financing on any jurisdiction — it removes the state constitutional prohibition that prevents jurisdictions from choosing to establish public campaign financing systems.
+
+**Campaign committee**: "Californians for Fair Elections" is the ballot campaign launched by California Common Cause, Clean Money Action Fund, and League of Women Voters California. This is the primary distribution anchor for June contacts.
+
+---
+
 ## Pre-Send Verification (30 minutes — complete by June 8 EOD)
 
 ### Gist Status

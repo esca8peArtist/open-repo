@@ -2,6 +2,220 @@
 
 ---
 
+## June 4, 2026 — General Research Agent — Phase 5 Publication + Wave 2 Recruitment Planning (Item 59)
+
+**Task**: Create three platform-agnostic deliverables for June 5–15 Phase 5 publication and Wave 2 author recruitment, ready for instant activation June 5 morning regardless of platform choice (Nextcloud+Matrix or Discourse).
+
+**Files read**: PHASE_5_NEXTCLOUD_MATRIX_DEPLOYMENT_ROADMAP.md, PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md, PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md, PHASE_5_6_EXECUTION_SUMMARY.md, PHASE_5_PUBLICATION_CHECKLIST.md, PHASE_5_WAVE_2_AUTHOR_PROFILES.md, PHASE_5_WAVE_2_COMPLETION_AUDIT.md, PHASE_5_WAVE_2_EXECUTION_ROADMAP.md, PHASE_5_WAVE_2_PLANNING.md, phase-3 domain files (01–05, word counts verified), PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md, COALITION_COORDINATION_PROTOCOL.md.
+
+**Key findings**:
+- The five "Wave 1 community-scale domains" referenced in the task brief are the Phase 3 files (`phase-3/01–05`), not the Phase 5 Wave 1+2 integrated corpus. Word counts confirmed: 5,700–6,000 words each, 28–38 citations each. All production-ready, committed to master.
+- The integrated corpus (PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md) is a separate 45,380-word document covering microgrids + 4 implementation guides — this is also publication-ready but is a different artifact from the five Phase 3 community-scale domains.
+- Prior editorial review (June 1) confirmed 90%+ citation link working rate and zero blocking formatting errors. June 5 readiness checklist is expected to produce a GO decision with only minor hold items (frontmatter stripping, PDF generation — 45–60 minutes).
+- Wave 2 author cohort target: 4–6 contributors across 5 domains (food preservation, water systems, livestock, seed saving, equipment repair). Author profiles document confirmed candidate sourcing channels per domain.
+- Both platform variants (Nextcloud+Matrix = Option B, Discourse = Option A) have production-ready deployment roadmaps. The 95% of steps that are platform-agnostic are unified in the three deliverables. The 5% that differs is clearly marked [A] / [B].
+
+**Files created** (all in `projects/systems-resilience/`):
+1. `PHASE_5_PUBLICATION_READINESS_CHECKLIST.md` — Platform-agnostic go/no-go checklist for June 5. Covers content readiness (5 domain inventory), cross-link verification, frontmatter handling per platform, image audit, spell check, 20% citation validation, PDF export instructions, metadata sidecar template, and GO/HOLD/DEFER decision grid. Expected outcome: GO with 45–60 minutes of prep work.
+2. `WAVE_2_AUTHOR_ONBOARDING_KIT_DUAL_PLATFORM.md` — Four communication templates (invitation, briefing, checkpoint protocol, platform orientation with [A]/[B] variants), author selection criteria, credential verification process (portfolio review, screening call, writing sample, IP agreement), and full onboarding timeline June 5–10.
+3. `JUNE_5_15_PHASE_5_PUBLICATION_AND_WAVE_2_RECRUITMENT_TIMELINE.md` — Day-by-day roadmap June 5–15. Covers publication day (June 5), invitation launch, coalition announcement, confirmation and onboarding (June 7–9), sprint kickoff (June 10), active research monitoring (June 11–15), four contingency triggers with response actions, and platform-specific branching summary table.
+
+---
+
+## June 4, 2026 — General Research Agent — Batch 2 Full Activation Roadmap (Item 57)
+
+**Task**: Create three decision-tree-driven Batch 2 resource and sequencing deliverables covering all 6 domains (49, 50, 51, 54, 57, 48) and all 4 user decision paths for Domain 49 timing.
+
+**Files read**: PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md, DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md, RESOURCE_REALLOCATION_SCENARIOS.md, PHASE_1_COALITION_LEVERAGE_MATRIX.md, ORCHESTRATOR_STATE.md, WORKLOG.md (recent entries), PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md (systems-resilience scope check).
+
+**Key findings**:
+- User execution hours (not agent sessions) are the binding constraint for June Batch 2. Peak demand is 2.0 hrs/day for 2–4 days depending on scenario.
+- Systems-resilience 120-hour allocation does NOT conflict with Batch 2 because they operate on different resource dimensions (platform setup vs. distribution-support research vs. user email sends).
+- Stockbot Lever B PASS (if June 15 checkpoint passes) defers only Domain 48's optional June activation — all other Batch 2 domains are unaffected.
+- Domain 51 executes June 9–12 under all 4 scenarios — it is the invariant.
+- June 8 checkpoint governs Domain 50 acceleration (advance Gist creation from July 1 to June 20 if Domain 39 or Domain 49 is Strong); it does not gate Domains 49 or 51.
+- SAVE Act override remains unconditional: if Senate passes SAVE Act, Domain 50 distributes immediately regardless of all checkpoint logic.
+
+**Files created**:
+1. `projects/resistance-research/BATCH_2_RESOURCE_ALLOCATION_MATRIX.md` — Hour estimates per domain (both agent and user), three execution scenarios (A/B/C) with weekly allocation tables, bottleneck analysis for June 9–12 and June 4–5 concentration points, June 10–15 stockbot/systems-resilience contention assessment.
+2. `projects/resistance-research/BATCH_2_CONTINGENCY_ACTIVATION_SCENARIOS.md` — Four decision-agnostic scenarios (A: Immediate, B: Normal, C: Deferred, D: Research-First) with hour-by-hour June 4–15 timelines for Scenario A, decision gates with quantified thresholds, cross-scenario comparison matrix.
+3. `projects/resistance-research/BATCH_2_JUNE_CHECKPOINT_READINESS_PROTOCOL.md` — June 8 and June 15 checkpoint data collection protocols, success metrics per domain (all 6), decision tree from June 8 metrics to June 9 action choices, standing rules for checkpoint logic.
+
+---
+
+## June 4, 2026 — General Research Agent — Stockbot IEX vs SIP Comprehensive Comparison (updated)
+
+**Task**: Write comprehensive IEX vs SIP comparison document (2,000–3,000 words) covering all 5 dimensions: technical specs, h10 signal impact, deployment risk, cost-benefit, industry practice.
+
+**Key corrections from prior analysis**:
+- Prior document `IEX_VS_SIP_SIGNAL_QUALITY_ANALYSIS.md` incorrectly described h10 as "10-hour bars" — source code (`model_training_pipeline.py`) confirms **daily bars** with **10-day forward return label**
+- IEX market share confirmed at 3.2% overall (Q4 2025 IEX data), not 1.8% (2018 figure used in prior doc)
+- SIP free for funded Alpaca brokerage accounts (not always $99/month)
+
+**Key findings**:
+- For daily-bar 10-day momentum model on AAPL: IEX is sufficient for paper trading (88–93% signal fidelity)
+- `vol_ratio20` feature self-normalizes across feeds because both numerator and denominator come from the same IEX feed — the 97% volume gap does not translate to a 97% signal error
+- Regime-shift risk: if institutional flow moves away from IEX during stress events, self-normalization breaks temporarily
+- SIP is required before live trading for accurate conviction sizing
+- Payback period for $99/month SIP: 1–2 months once live trading at $50K+ notional
+
+**Deliverable**: `/home/awank/dev/SuperClaude_Framework/projects/stockbot/IEX_VS_SIP_SIGNAL_COMPARISON.md` — overwrites earlier placeholder with full 2,500-word analysis
+
+---
+
+## June 3, 2026 — General Research Agent — Stockbot IEX vs SIP Signal Quality Comparison
+
+**Task**: Research and produce a signal-quality comparison of free IEX vs paid SIP Alpaca data feeds for the stockbot trading system, to inform whether switching to IEX is viable for paper trading validation of the h10 momentum model.
+
+**Files read**: `projects/stockbot/strategy-evaluation.md`, `projects/stockbot/stockbot-path-model-design-spec.md` to understand h10 model (10-day holding period LightGBM ensemble, daily bars).
+
+**Key findings**:
+- IEX captures ~3% of US equity volume (up from 2% in 2018); SIP consolidates all exchanges (100%)
+- h10 uses daily OHLCV bars — the signal horizon (10 trading days) makes it essentially immune to intraday latency differences
+- IEX daily bar data will differ in volume by ~97% vs SIP but price OHLC converges to within exchange-level noise on liquid names like AAPL
+- IEX is explicitly flagged by Alpaca: "should generally not be used for live trading decisions (it's correct but incomplete)"
+- For paper trading validation of daily-bar momentum on AAPL, IEX is sufficient
+- SIP subscription (Algo Trader Plus) costs $99/month; free with $30k deposit on Alpaca Elite
+- Recommendation: IEX is viable for paper trading validation given the h10 model's daily-bar timeframe and AAPL focus
+
+**Deliverable**: Analysis delivered as inline text response (not a file per agent instructions).
+
+---
+
+## June 3, 2026 — Resistance Research Agent — Domain 49 June 4–5 Execution Pre-Flight (Exploration Queue Item 55)
+
+**Task**: Create three production-ready pre-flight execution documents for Domain 49 (Louisiana redistricting / VRA voting rights) for immediate deployment if user approves by EOD June 3.
+
+**Deadline basis**: Louisiana Governor Landry signed new congressional map June 1, 2026 eliminating one majority-Black congressional district. Primary filing deadlines in AL/TN/LA/SC compress after June 5. Litigation teams are drafting emergency preliminary injunction motions in the June 4–8 window.
+
+**Source material read**: `domains/domain-49-callais-vra-redistricting-emergency.md` (8,100+ words, 40+ sources, June 3 update integrated), `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md`, `DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md`, `PHASE_1_COALITION_LEVERAGE_MATRIX.md`, `CHECKIN.md`
+
+**Files updated** (all three already existed from Session 2707; significantly expanded and improved):
+
+1. `DOMAIN_49_EXECUTION_PREFLIGHT.md` — Complete rewrite with: explicit UTC hour-by-hour timeline for June 4 (7 send blocks: 08:00/09:00/13:00/15:00/19:00/21:00 UTC) and June 5 (09:00/12:00/15:00 UTC); 17 contacts across 4 tiers with specific email personalization per contact; quantitative success thresholds in scannable tables (Strong/Moderate/Caution for Day 1, Day 2, Day 7); pre-flight 6-item checklist; 5 escalation triggers; total execution time estimate (3.5–4 hours).
+
+2. `DOMAIN_49_CONTINGENCY_DECISION_TREE.md` — Complete rewrite with: 8 named scenarios (A: delivery failure, B: emergency court action, C: coalition pushback, D: filing deadline closes, E: June 5 late start, F: Domain 49 → 50 swap, G: full deferral, H: resource overrun); exact numeric trigger thresholds for each scenario; summary decision matrix table; Domain 49 → Domain 50 swap analysis with quantitative trigger (Day 7 <2 Score 3+ replies + Domain 50 urgency trigger); resource reallocation impact on Domain 51 sends.
+
+3. `COALITION_COORDINATION_PROTOCOL.md` — Complete rewrite with: full contact table (17 organizations, phone/email/Twitter per org); communication sequence with rationale for each tier's send order; escalation chain with 48-hour follow-up rule and backup contact per org; decision authority table (user vs. coalition hub vs. individual org); Discord/Slack templates (initial channel message, daily update, research request form, opt-out template); Day 7 data capture format (6 data categories, classification table, DISTRIBUTION_EXECUTION_LOG.md output template); core message consistency rules with variation-by-audience table.
+
+**CHECKIN.md updated**: Added Domain 49 pre-flight approval item with file paths and user action summary.
+
+**Key corrections vs. Session 2707 versions**:
+- Democracy Docket email updated to `democracy@democracydocket.com` (verified against current website)
+- Pre-flight Gist creation step added (Session 2707 versions assumed Gist existed; it does not yet)
+- Numeric thresholds added throughout (Session 2707 had qualitative descriptions, not quantitative triggers)
+- Domain 49 → 50 swap scenario added (was not in Session 2707 Contingency Tree)
+- Post-action Day 7 data capture format added to Coalition Protocol (was missing from Session 2707 version)
+
+**Sources**: [Democracy Docket — Louisiana redistricting tracker](https://www.democracydocket.com/cases/louisiana-congressional-redistricting-challenge-callais/); [NAACP LDF — Robinson v. Landry case page](https://www.naacpldf.org/case-issue/louisiana-v-callais/); [Campaign Legal Center](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next); [MALDEF — Callais statement](https://www.maldef.org/2026/04/maldef-statement-on-supreme-court-decision-in-louisiana-v-callais/)
+
+---
+
+## June 3, 2026 — General Research Agent — IEX vs SIP Signal Comparison (Stockbot)
+
+**Task**: Technical comparison document for the IEX vs SIP Alpaca data feed decision (EOD deadline June 3 23:59 UTC).
+
+**Output file**: `/home/awank/dev/SuperClaude_Framework/IEX_VS_SIP_SIGNAL_COMPARISON.md`
+
+**Key findings**:
+- Codebase has a critical split: `alpaca_provider.py` hardcodes `feed="iex"` for all historical bar fetches (lines 315, 790); `realtime_stream.py` reads `ALPACA_DATA_FEED` env var for the WebSocket. Training always uses IEX regardless of config. This makes IEX the correct immediate choice — training and inference are already consistent on IEX.
+- SIP upgrade without patching `alpaca_provider.py` and retraining creates a silent 30–40x volume feature distribution shift at inference time. This is the primary risk, not the feed quality itself.
+- For h10 daily-bar models (AMZN lgbm_ho Sharpe 3.48, JPM ridge_wf Sharpe 1.83), IEX Close price accuracy exceeds 0.999 correlation with SIP. Signal loss from IEX is estimated at 0–5% for consistent training/inference.
+- SIP at $99/month cannot break even during paper trading at current capital scale. Break-even requires ~10 additional profitable trades/month at $1,000/trade exposure — not achievable with 4 completed trades per 5-month window.
+- Recommendation: IEX now (5 minutes, $0), SIP at live deployment after proper migration (patch code + retrain). Confidence 92%.
+
+**Sources consulted**: Alpaca docs, IEX exchange data, Alpaca community forum, existing stockbot codebase docs.
+
+---
+
+## June 3, 2026 — General Research Agent — Platform Deployment Playbooks v2.0 (Full Rewrite)
+
+**Task**: Full rewrite of both platform deployment playbooks for Phase 5/6 decision (user chooses by June 3 EOD). Previous versions had critical technical errors. v2.0 is production-ready.
+
+**Critical bugs found and fixed**:
+- Nextcloud FPM healthcheck was calling `curl http://localhost/status.php` against a container that speaks FastCGI on port 9000 (not HTTP). Fixed by splitting into `nextcloud` (FPM) + `nginx-nextcloud` (HTTP sidecar) with `volumes_from`-equivalent volume sharing.
+- Nextcloud version was pinned to `29-fpm-alpine`; current stable is `33`. Updated.
+- Discourse playbook used `discourse/discourse:latest` in raw docker-compose — an unsupported method that breaks Discourse's upgrade procedure. Rewrote around the official `launcher bootstrap app` flow with `app.yml`.
+- Both playbooks had nginx `ports` bound to `127.0.0.1:80:80` instead of `0.0.0.0` — this is correct per CLAUDE.md; confirmed retained.
+- Python user import script had hardcoded credential strings. Replaced with `os.environ.get()` pattern throughout.
+
+**Meshtastic bridge research**: `meshtastic-matrix-relay` (jeremiah-k/meshtastic-matrix-relay) is actively maintained — v1.3.7 released May 3, 2026 — with native Docker support. Previous entry said "no active bridge found." Updated with correct deployment instructions.
+
+**New in Nextcloud+Matrix playbook v2.0**:
+- Complete nginx-nextcloud FPM sidecar config (nginx.conf + nextcloud-fpm.conf)
+- Complete per-virtual-host nginx configs (4 files: nextcloud, matrix, element, onlyoffice)
+- Synapse homeserver.yaml with all production sections (listeners, database, redis, media, registration, email)
+- Matrix-Meshtastic bridge deployment steps with mmrelay Docker
+- Staged launch procedure (infrastructure first, then apps, then proxy)
+- Welcome email Python script
+- go-live timeline table (June 4–5)
+
+**New in Discourse playbook v2.0**:
+- Official launcher/app.yml approach replacing unsupported docker-compose
+- Complete app.yml with port binding, SMTP, performance tuning, healthcheck
+- Rails console configuration for GitHub OAuth, trust levels, categories
+- Discourse API key generation via rails console
+- Python bulk user import using urllib only (no third-party deps)
+- GitHub Pages export script with Jekyll frontmatter generation
+- External health check script with TLS expiry monitoring
+- Official upgrade procedure (`./launcher rebuild app`)
+
+**Output files** (systems-resilience project):
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/NEXTCLOUD_MATRIX_DEPLOYMENT_PLAYBOOK.md` — v2.0 (~4,500 words, 12 parts, 7 containers, all config files included)
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/DISCOURSE_DEPLOYMENT_PLAYBOOK.md` — v2.0 (~3,800 words, 14 parts, official launcher method)
+
+---
+
+## June 3, 2026 — General Research Agent — Phase 5 Platform Deployment Playbooks (v1.0, superseded)
+
+**Task**: Produce production-ready deployment playbooks for both Phase 5 platform candidates — Path A (Nextcloud+Matrix) and Path B (Discourse) — enabling same-day deployment on June 5 whichever option is chosen.
+
+**Files read**: `PHASE_5_NEXTCLOUD_MATRIX_DEPLOYMENT_ROADMAP.md`, `PHASE_5_DISCOURSE_DEPLOYMENT_ROADMAP.md`, `WORKLOG.md`.
+
+**Research conducted**: Web searches on (1) Matrix Synapse homeserver.yaml PostgreSQL configuration — confirmed `database.args.dbname` field name and `txn_limit` option; confirmed `registration_shared_secret` approach for admin-created users without open registration; (2) Matrix-Meshtastic bridge availability — no single production package exists as of June 2026; recommended MQTT broker + Python bridge script as practical alternative; (3) Nextcloud CalDAV/CardDAV offline sync — confirmed WebDAV differential sync approach and CalDAV URL format; (4) Discourse official installer 2026 — confirmed launcher bootstrap flow, app.yml structure, trust level settings, REST API endpoints.
+
+**Key additions over existing roadmaps**:
+- Fixed `0.0.0.0` bind in original Synapse config (CLAUDE.md violation — corrected with Docker-network-internal note)
+- Added `redis` service to Nextcloud stack (session cache + file locking; prevents file corruption under concurrent edits)
+- Added `postgres-init.sql` to auto-create Synapse database with correct `LC_COLLATE=C` (required by Matrix, frequently missed)
+- Added `registration_shared_secret` workflow for creating Matrix users without opening public registration
+- Added complete Python MQTT-to-Matrix bridge script for LoRa/Meshtastic Phase 7 path
+- Added Nextcloud PHP-FPM + nginx split (28-fpm-alpine image, more production-appropriate than all-in-one)
+- Added three shell automation scripts: `create-nextcloud-users.sh`, `create-matrix-users.sh`, `create-matrix-rooms.sh`
+- Added health-check.sh and disk-alert.sh with cron scheduling
+- Added full disaster recovery procedures with step-by-step commands and time estimates
+- Discourse playbook: added REST API Python monitoring script (`wave-response-monitor.py`)
+- Discourse playbook: added complete GitHub Actions workflow for auto-announce + GitHub Pages archive
+- Discourse playbook: added community health metrics table and moderation escalation tiers
+- Discourse playbook: added complete backup/DR procedure with database restore commands
+
+**Output**:
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/NEXTCLOUD_MATRIX_DEPLOYMENT_PLAYBOOK.md` — Path A operational playbook (~3,800 words; 10 parts; all scripts self-contained)
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/DISCOURSE_DEPLOYMENT_PLAYBOOK.md` — Path B operational playbook (~2,600 words; 11 parts; all scripts self-contained)
+
+---
+
+## June 3, 2026 — General Research Agent — Phase 2 Batch 2 Roadmap Deepening (Item 53 Completion)
+
+**Task**: Verify, extend, and finalize the three Phase 2 Batch 2 documents produced in the earlier session. Resolve discrepancies between the task brief and existing content; add UNGA 82 specifics; correct Domain 51 bill number (SB-42 not SB-290); reconcile Domain 54 August 1 vs. November framing; add Scenario A/B/C structure with specific hour estimates to RESOURCE_REALLOCATION_SCENARIOS.md.
+
+**Files read**: `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md`, `DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md`, `RESOURCE_REALLOCATION_SCENARIOS.md`, `PROJECTS.md`, `WORKLOG.md` (prior), `domains/domain-51-campaign-finance-dark-money-architecture.md`, `domains/domain-54-youth-civic-power-structural-barriers.md`, `domain-57-multilateral-withdrawal-executive-authority.md`, `domains/domain-48-criminal-justice-civic-exclusion.md`.
+
+**Research conducted**: Web searches on (1) California SB-290 vs. SB-42 (confirmed SB-42 is the correct bill number; SB-290 does not exist in this context; bill authored by Umberg/Allen/Cervantes/Lee, signed by Newsom, places measure on Nov 3, 2026 ballot); (2) UNGA 82 General Debate dates (September 22–28, 2026 — High-Level Week); (3) Trump multilateral withdrawal January 2026 scope (confirmed 66 organizations, WHO exit January 22, 2026, UNFCCC first nation ever to attempt exit).
+
+**Key findings**:
+- Domain 51 brief cited "SB-290" — actual bill is **SB-42**. Existing documents did not include this bill reference. Added to checklist with coalition context (Common Cause CA, Clean Money Action Fund, LWV CA are the "Californians for Fair Elections" campaign coalition).
+- Domain 57 roadmap section lacked UNGA 82 specific dates. UNGA General Debate runs September 22–28, 2026; August 10 send date is exactly 6 weeks before — validated as optimal pre-session timing. Added specific dates, coalition contact list, UNGA framing guidance, and multilateral treaty advance contingency trigger.
+- Domain 54 brief referenced "November post-election research" but completed domain has August 1 hard deadline. Reconciled in roadmap: current document distributes July 15–August 1 (pre-midterm); post-November 2026 is a *separate* future research item (election outcome analysis for 2028 organizing). Added scoping note for future researcher.
+- Resource reallocation document added three-scenario summary table (A: all parallel, ~240+ hrs; B: stockbot deferred June 20, recommended; C: Phase 2 condensed to 51+57 only, not recommended) with specific hour estimates from brief (stockbot 76 hrs, systems-resilience Wave 2 80–100 hrs).
+
+**Output** (updates to existing documents):
+- `DOMAIN_51_RESEARCH_EXECUTION_CHECKLIST.md` — added Bill Reference Note with SB-42 correction, coalition campaign context
+- `PHASE_2_BATCH_2_ACTIVATION_ROADMAP.md` — expanded Domain 57 section (UNGA 82 dates, framing guidance, coalition contacts, multilateral treaty contingency); expanded Domain 54 section (August 1 vs. November reconciliation, future researcher scoping note)
+- `RESOURCE_REALLOCATION_SCENARIOS.md` — added Three-Scenario Summary table (A/B/C) at top; updated Scenario 1 with 76-hr stockbot estimate and A/B/C labels; updated Scenario 2 with 80–100-hr systems-resilience Wave 2 estimate and A/B/C labels
+
+---
+
 ## June 3, 2026 — Resistance Research Agent — Phase 2 Batch 2 Roadmap + Domains 49/50 Acceleration
 
 **Task**: Phase 2 Batch 2 Activation Roadmap (Exploration Queue Item 53, due June 8) + Domain 49 expansion to 8,000+ words + Domain 50 production-readiness verification with contact list and templates.

@@ -142,6 +142,51 @@ Printer hardware payback accelerates at higher volumes because throughput per un
 and per-unit COGS improves slightly with bulk filament pricing. Every printer addition in this
 model pays back in under 4 weeks once added demand absorbs its capacity.
 
+### 2.4 Unit Economics Comparison Table — 1, 2, 5, and 10 Printers
+
+This table captures the key per-unit and per-month metrics across the four benchmark configurations.
+All figures use blended product mix (70% clip bundles at $24.99, 30% rails at $34.99), Bambu P1S at
+$399 each (May 2026 pricing), PLA+ at $12/kg, and 80% uptime on a 320-hour production month.
+Labor rates assume $15/hr for any paid staff; owner time is excluded from COGS in the 1–2 printer
+tiers (solo operation).
+
+| Metric | 1 Printer (Solo) | 2 Printers (Solo + PT) | 5 Printers (FT Tech) | 10 Printers (FT Tech + Packer) |
+|---|---|---|---|---|
+| **Hardware total** | $399 (sunk) | $798 | $1,995 | $3,990 |
+| **Monthly units at 80% uptime** | 160–200 (cap); 20–80 (demand-limited) | 320–400 (cap); 50–200 (demand-limited) | 800–1,000 (cap) | 1,600–2,000 (cap) |
+| **Filament $/kg** | $12.00 | $12.00 | $11.00 (bulk tier) | $10.49 (Anycubic pallet) |
+| **Filament cost/blended unit** | $0.46 | $0.46 | $0.42 | $0.40 |
+| **Labor cost/unit (paid staff)** | $0 (solo) | $0.38 (PT, 8 hr/wk) | $0.90 (FT, 40 hr/wk) | $1.10 (FT + PT packer) |
+| **Equipment depreciation/unit** | $0.28 | $0.22 | $0.10 | $0.08 |
+| **Packaging/unit** | $0.23 | $0.22 | $0.20 | $0.18 |
+| **Etsy + payment fees/unit** | $2.64 | $2.64 | $2.64 | $2.64 |
+| **Shipping/unit (blended)** | $4.37 | $4.37 | $4.37 | $4.20 (bulk label printing savings) |
+| **Total COGS/unit** | $7.98 | $8.29 | $8.63 | $8.60 |
+| **Revenue/unit (blended AOV)** | $27.50 | $27.50 | $27.50 | $27.50 |
+| **Gross profit/unit** | $19.52 | $19.21 | $18.87 | $18.90 |
+| **Gross margin** | **70.9%** | **69.9%** | **68.6%** | **68.7%** |
+| **Monthly gross revenue (at demand trigger)** | $1,500–$2,200 | $3,500–$5,500 | $15,000–$22,000 | $30,000–$44,000 |
+| **Monthly net profit** | $1,000–$1,600 | $2,500–$4,200 | $10,000–$15,000 | $20,000–$30,000 |
+| **Infrastructure overhead/month** | $30 (SimplyPrint-free, filament buffer) | $80 (SimplyPrint $10/mo, extra filament) | $500 (dedicated circuits, dry cabinet, software) | $1,200 (facility contribution or commercial studio) |
+
+**Key observations from this table**:
+
+- Gross margin is remarkably stable (68.6–70.9%) across all four configurations. The margin uplift
+  from bulk filament pricing at 5–10 printers is almost exactly offset by the labor cost introduced at
+  those scales. This is a structural property of the business: margin does not compound with scale
+  the way it does in software. Volume is the lever.
+- The solo operator advantage is real: running 1–2 printers without paid staff produces the highest
+  per-unit margin. The case for adding labor is not margin improvement — it is throughput
+  multiplication and operator time liberation.
+- At 10 printers the filament savings ($0.06/unit vs. 1-printer baseline) are dwarfed by the
+  additional labor load ($1.10/unit). This is why 10-printer economics require demand well above
+  $20,000/month to generate better net profit than 5 printers — the fixed labor cost must be
+  amortized over more units.
+- The correct decision metric is **monthly net profit dollars**, not gross margin percentage.
+  10 printers at $25,000/month net beats 5 printers at $12,000/month net even if margin is
+  identical, because the absolute dollar output per invested hour is higher once the FT tech is
+  fully loaded.
+
 ---
 
 ## Section 3: 2-Printer Operation
@@ -303,7 +348,53 @@ This is the trigger point to evaluate a small commercial studio (300–600 sqft 
 in most US metro areas), which adds laser and resin capabilities alongside expanded printer
 capacity without zoning complications of a residential workspace.
 
-### 4.5 Automation Opportunities
+### 4.5 Printer Density Analysis — How Many Printers Per 1,000 Sq Ft
+
+A common planning error is confusing printer footprint with operational footprint. A P1S occupies
+15.3" × 15.3" of bench surface = 1.6 sq ft of machine footprint. But production operations require
+clearance, workflow lanes, storage, and post-processing zones.
+
+**Practical density by facility type:**
+
+| Facility Type | Total Sq Ft | Printer Zone Allocation | Realistic P1S Density | Notes |
+|---|---|---|---|---|
+| Spare bedroom | 100–130 sq ft | 30–40 sq ft | 2–3 printers | Limited by outlet capacity; no dedicated circuit realistic |
+| 1-car garage bay | 200 sq ft | 60–75 sq ft | 4–6 printers | Single bay with workbench; adequate ventilation with exhaust fan |
+| 2-car garage | 400 sq ft | 100–140 sq ft | 7–10 printers | Comfortable for 8-printer farm + laser/resin zone |
+| Small commercial studio | 500–700 sq ft | 150–220 sq ft | 12–16 printers | Enables dedicated QC room, 3PL shelf area, adjacent manufacturing zone |
+| Commercial light industrial | 1,000 sq ft | 300–400 sq ft | 20–28 printers | Full commercial operation; sub-panel electrical; requires HVAC |
+
+**Printer density formula (production-realistic):**
+
+For FDM farms running Bambu P1S with AMS units and a 50% zone allocation to non-printer uses
+(workflow lanes, benches, storage, QC):
+
+> **Printers per 1,000 sq ft = (1,000 × 0.50) / 12.5 sq ft per printer slot ≈ 40 printers (theoretical)**
+
+The 12.5 sq ft per printer slot accounts for the machine footprint (1.6 sq ft) plus clearance on all
+sides for AMS door access, PTFE tube routing, and operator movement. In practice, the achievable
+density is lower once post-processing benches, filament storage, and packaging zones are included:
+
+**Achievable production density (all zones included): 14–18 printers per 1,000 sq ft.**
+
+This is the industry benchmark for a well-organized FDM farm. At 15 printers/1,000 sq ft:
+- 200 sq ft (1-car garage) → 3 printers practical; 4–5 with tight layout
+- 400 sq ft (2-car garage) → 6 printers practical; 7–8 with tight layout
+- 1,000 sq ft (small commercial) → 15 printers; comfortable for 12 with full workflow zones
+
+**Electrical density ceiling**: The real capacity constraint before space is electrical. A standard
+residential garage has 1–2 circuits (15A or 20A = 1,800–2,400W usable). Two 20A circuits support
+8–9 P1S printers at sustained draw (staggered starts). Beyond 8 printers, a 240V sub-panel
+($1,500–$2,500 installed) is required to avoid running dozens of extension cords across circuits.
+
+**Noise**: 5 P1S printers running simultaneously produce approximately 45–52 dB combined ambient
+noise (each unit at ~40 dB; logarithmic addition). This is quiet enough for a residential garage
+without neighbor complaints during daylight hours. At 10 printers the combined level approaches
+55–58 dB — comparable to a dishwasher. No soundproofing required for garage production below
+8 printers; above that, add 2" acoustic foam panels on the nearest shared wall if operating near
+bedrooms or neighbor property lines.
+
+### 4.7 Automation Opportunities
 
 At 3+ printers, automation ROI becomes real:
 

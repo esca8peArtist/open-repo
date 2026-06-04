@@ -1,0 +1,94 @@
+{
+  "realtime_start": "2026-06-01",
+  "realtime_end": "2026-06-01",
+  "observation_start": "2022-07-01",
+  "observation_end": "2023-07-19",
+  "units": "lin",
+  "output_type": 1,
+  "file_type": "json",
+  "order_by": "observation_date",
+  "sort_order": "asc",
+  "count": 13,
+  "offset": 0,
+  "limit": 100000,
+  "observations": [
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2022-07-01",
+      "value": "1.68"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2022-08-01",
+      "value": "2.33"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2022-09-01",
+      "value": "2.56"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2022-10-01",
+      "value": "3.08"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2022-11-01",
+      "value": "3.78"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2022-12-01",
+      "value": "4.10"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2023-01-01",
+      "value": "4.33"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2023-02-01",
+      "value": "4.57"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2023-03-01",
+      "value": "4.65"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2023-04-01",
+      "value": "4.83"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2023-05-01",
+      "value": "5.06"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2023-06-01",
+      "value": "5.08"
+    },
+    {
+      "realtime_start": "2026-06-01",
+      "realtime_end": "2026-06-01",
+      "date": "2023-07-01",
+      "value": "5.12"
+    }
+  ]
+}

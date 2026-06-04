@@ -40,6 +40,23 @@ and constraint analysis (writing capacity, designer capacity, sourcing timeline)
 
 ---
 
+## Session — Phase 1→2 Transition Roadmap v4.0 (research-agent) — June 4, 2026
+
+**Task**: Comprehensive track-agnostic Phase 1→Phase 2 transition roadmap covering: gate criteria table (G1-G10 with Red/Yellow/Green thresholds), three content production scenarios (conservative 18 guides by Dec 2026, baseline 23 guides, aggressive 30 guides by Oct 2026), platform capacity assessment (Kit, Etsy, social), five risk scenarios with mitigation paths, infrastructure scaling checklist, and decision framework with trigger points.
+
+**Key findings from external benchmarks (2025-2026 data)**:
+- Illustration is the primary production bottleneck: Wikimedia CC guides average 3-5 hrs vs. 8-12 hrs with original photography.
+- Kit Creator at $33/month breaks even at 1.5 bundle sales/month — upgrade is almost always justified before Phase 2.
+- Etsy Offsite Ads become mandatory at $10,000 annual sales — ~455 sales at $22/guide. Plan for it in Phase 2 projections.
+- TikTok 2026 algorithm now requires 70%+ completion rate for wide distribution; Oracle transition introduced algorithm volatility — not a reliable sole channel.
+- Pinterest engagement grew to 5.26% median (Jan 2025) — more stable and compounding than TikTok for evergreen catalogue content.
+- Email list decay rate: 22.5% per year. Lists built on niche lead magnets retain better than broad commercial lists.
+- Phase 2 deferral does not require physical product supply chain — all Phase 2 content is digital. Physical products (print guides) are a Phase 3 initiative requiring print-on-demand partner selection (Lulu at ~$8-12/copy for 200-page color guide) and fulfillment logistics setup.
+
+**File updated**: `PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md` v4.0 (~4,100 words). Supersedes v3.0 (zone-card/medicinal herbs-specific framing). Track-agnostic; applies to Track A, Track B, or both.
+
+---
+
 ## Session — Phase 1 Launch Path Decision + Phase 2 Gating (research-agent) — June 3, 2026
 
 **Task**: Update PHASE_1_TO_PHASE_2_TRANSITION_ROADMAP.md (v3.0) addressing Path A vs. Path B

@@ -85,10 +85,22 @@ The sequencing framework below reflects this urgency inversion from the task bri
 ### Domain 57 — Multilateral Withdrawal / UN Executive Authority
 **Hold until August 10 (UNGA anchor)**
 
-**Context**: Research complete (7,200 words, 47 citations, Gist already live). The timing window is UNGA General Debate (late September 2026), with August 10 as the earliest send date to catch pre-session think tank and legal organization preparation work.
+**Context**: Research complete (7,200 words, 47 citations, Gist already live). The timing window is UNGA 82 General Debate: **September 22–28, 2026** (High-Level Week). Think tanks and international law organizations begin preparing UNGA-period publications approximately 6 weeks in advance. August 10 is the target send date to catch that pre-session preparation window.
+
+**UNGA framing**: The distribution hook is the direct contrast between US multilateral withdrawal (January 2026 mass exit, 66 organizations) and UNGA's September opening. The domain's core democratic argument — that Senate-ratified treaty exit without Senate consent is a constitutional accountability failure, not a foreign policy disagreement — is most legible to law and policy audiences in the pre-UNGA period when multilateralism is an active discussion.
+
+**Key coalition contacts** (refresh August 8):
+- American Society of International Law (ASIL): primary legal organization on treaty law
+- Just Security: real-time legal analysis; strong international law coverage
+- Lawfare: national security / constitutional law; already covers IEEPA and treaty withdrawal
+- Arms Control Association: direct stake in treaty regime stability
+- Council on Foreign Relations: macro institutional frame
+- UN Association of the USA: domestic pro-multilateral coalition
+
+**Contingency if multilateral treaty advances before August**: If NATO formal withdrawal is initiated, or if a second Senate-ratified treaty is exited without Senate consent before August, activate Domain 57 distribution immediately — do not wait for August 10. The domain's Section 1.2 (Youngstown framework applied to Zone 3 presidential action) and Section 3.1 (asymmetric consent problem) are the most time-sensitive advocacy materials for that scenario.
 
 **Timeline**:
-- **August 8–9**: Re-verify contacts; update with any June–August multilateral withdrawal developments
+- **August 8–9**: Re-verify contacts; update with any June–August multilateral withdrawal developments (WHO formal exit completion, UNGA seating challenges, CRS report updates)
 - **August 10**: First wave send (international law scholars, Arms Control Association, UN Association of the USA, Council on Foreign Relations)
 - **August 12**: Media and commentary send (Foreign Policy, Just Security, Lawfare)
 
@@ -106,16 +118,20 @@ Per the PHASE_2_DECISION_MEMO, Route A (the production-ready version) is confirm
 ---
 
 ### Domain 54 — Youth Civic Power
-**Hard August 1 organizational integration deadline**
+**Hard August 1 organizational integration deadline** (Note: task brief referenced "November post-midterm" — reconciliation below)
 
-**Context**: Research complete (7,800 words, 46 citations). The hard deadline is August 1 — distribute to NextGen America, Campus Vote Project, CIRCLE, Rock the Vote before the early-vote period opens.
+**Context**: Research complete (7,800 words, 46 citations). The completed research document (`domains/domain-54-youth-civic-power-structural-barriers.md`, June 1, 2026) documents a crisis that is acute and pre-midterm, not post-midterm: student ID bans in active 7th Circuit litigation (Indiana), campus polling closures at North Carolina HBCUs, the SAVE America Act live in Senate, 6,000+ student visa revocations with chilling effect. The advocacy infrastructure (NextGen America, Campus Vote Project, CIRCLE) needs materials *before* early voting opens — making August 1 the operational integration deadline, not November.
 
-**Timeline**:
+**Reconciling with the "November post-election" frame**: The task brief's November reference is correct as a secondary timeline for a *different scope* of work — post-November 2026 election analysis would document which youth turnout suppression measures affected actual midterm outcomes, producing a post-election accountability report. That work belongs in a separate research item targeting a January–February 2027 distribution window to youth organizations planning 2028 organizing campaigns. It is not the same as the current completed Domain 54 document. The current document must distribute by August 1 to be actionable for the 2026 cycle.
+
+**Future research note** (for post-November 2027 scoping): Post-election Domain 54 research should examine: (1) measured turnout differential in states with active student ID restrictions vs. without; (2) 7th Circuit Indiana ruling outcome; (3) North Carolina campus polling restoration or permanent elimination; (4) SAVE America Act Senate outcome; (5) student visa chilling effect on campus political organizing documentation. Assign to a future researcher session in November–December 2026.
+
+**Current distribution timeline**:
 - **July 15**: Create Gist; fill templates
 - **July 17–20**: Send to NextGen America, Campus Vote Project, CIRCLE
 - **July 22–25**: Send to Rock the Vote, Student PIRGs, Circle K International
 
-**No action needed until mid-July.** Research is complete.
+**No action needed until mid-July.** Research is complete. For the future post-election research scope, no action needed until November 2026.
 
 ---
 
