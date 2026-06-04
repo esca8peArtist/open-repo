@@ -30,11 +30,26 @@
   - If systems-resilience no input: Select Nextcloud+Matrix (runbooks ready)
 - **13:30 UTC**: Market opens; monitor stockbot if user applied fix
 
+**Session 2746 Completion Summary**:
+- ✅ Block verification: Stockbot critical block confirmed active
+- ✅ Project work: Domain 51 verification completed EARLY (June 6-8 tasks done)
+- ✅ Exploration Queue: IEX vs SIP analysis verified complete, documentation corrected
+- ✅ Escalation readiness: Seedwarden Track B, Systems-resilience platforms all staged
+- ⏳ Monitoring active: 7h remaining until critical deadline (13:00 UTC, market 13:30 UTC)
+
+**Commits in this session**:
+1. chore(orchestrator): session 2746 — deadline monitoring (9d8cf853)
+2. docs(resistance-research): Domain 51 verification early completion (a1ef5aed)
+3. chore(worklog): exploration queue verification (3b5512f1)
+
 **What's Next**:
-- Wait for user input/decisions until 13:00 UTC
-- At 12:50 UTC: Check for any new items in INBOX.md or recent git changes
-- At 13:00 UTC: Execute escalations and commit
-- Post-escalation: Resume normal project work
+- **11:00 UTC** (if monitoring): Stockbot health check (2h before market open)
+- **12:50 UTC**: Final user input check before deadline
+- **13:00 UTC**: Execute escalations if needed:
+  - If stockbot no fix: Block remains, market day at risk
+  - If seedwarden no decision: Activate Track B (3.5-4.5h user execution)
+  - If systems-resilience no decision: Activate Nextcloud+Matrix (deployment ready)
+- **13:30 UTC**: Market opens; verify stockbot if user applied fix
 
 ---
 
