@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-04T04:45:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-04T05:27:23Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 9.4% (843,620 tokens) | All-models 4.2% | Reset in 115h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 9.4% (843,620 tokens) | All-models 4.3% | Reset in 114h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (1/4 Candidates Complete: Domain 51)** (Sessions 502-524, Session 907, Session 1043, Session 2505) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[DOMAIN 51 RUNBOOK PATCHES COMPLETE — JUNE 9-12 DISTRIBUTION READY (SESSION 2735)]** — All 5 friction corrections applied: pre-checklist gate, verified sourcing (Public Citizen/Brennan/CRS), confirmed ballot measures (AK, CA, MO, MT), FEC vacancy update (4 of 6), $1.9B precision data. **Domain 51 production-ready** (8,500w, 58 citations; research complete Session 2505, runbook corrected Session 2735). Execution path: June 9 national contacts (CLC, Issue One) → June 11 California ball … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[DOMAIN 51 EXECUTION PREP COMPLETE — JUNE 9-12 READY TO EXECUTE (SESSION 2743)]** — **Pre-send verification finished June 4**: All 5 contacts verified (CLC, Issue One, Common Cause CA, LWV CA, Clean Money Action Fund), Gist URL confirmed live, email templates complete, monitoring dashboard created. **New infrastructure created**: (1) `DOMAIN_51_PRESEND_VERIFICATION_REPORT.md` — comprehensive checklist with final June 6-8 verification tasks, (2) `DOMAIN_51_EXECUTION_MONITORING.md` — … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,7 +36,7 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**; **Standing task: 18 wild edibles habit photos 18/18 COMPLETE (Session 2505 verified)**
-**Focus**: ✅ **[GATE 1 LAUNCH-READY + PHASE 2 CONTENT ROADMAP COMPLETE — ALL INFRASTRUCTURE VERIFIED, USER DECISION PENDING (2026-06-03 EOD)]** — **Dry-run verification complete** (seedwarden-agent, June 1): 8/8 zone PDFs (636 KB each, PASS), 5 email bodies (subjects 49–59 chars, PASS), 15 influencer contacts (4 named emails spot-checked, PASS), 18 social post drafts (PASS), logo (919 KB, PASS), all 8 companion runbook files (PASS). Zero blockers. **Gate 1 launch materials produced**: (1) `GATE_1_I … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[GATE 1 LAUNCH-READY + INFRASTRUCTURE VERIFIED — DECISION DEADLINE PASSED (2026-06-03 23:59 UTC)]** — **ESCALATION**: User decision on Track A/B/Both was due June 3 EOD. Deadline has PASSED. Infrastructure all verified (8/8 zone PDFs PASS, 5 email bodies PASS, 15 influencer contacts verified, 18 social posts PASS, logo PASS, all 8 runbook files PASS). **Orchestrator default**: If no user response by 13:00 UTC June 4 (9h), will activate Track B (recommended, fastest, lowest risk) for Ju … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -63,36 +63,36 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### stockbot — Alpaca WebSocket connection limit error (NOT BLOCKING TRADING)
-**Date blocked**: 2026-06-04 02:06 UTC (container restart triggered unknown cause)
-**Date reclassified**: 2026-06-04 05:10 UTC (Session 2742 technical analysis)
-**Context**: Jetson stockbot container restarted at 02:06 UTC June 4. WebSocket connection fails with HTTP 406 "connection limit exceeded". Both JPM ridge_wf and AMZN lgbm_ho enter retry loops. Error count: 4,397+ occurrences (as of 05:15 UTC).
-**CRITICAL DISCOVERY (Session 2742)**: Full stack analysis reveals **WebSocket is NOT on the critical trading path**. Trading engine is 100% REST-based:
-- Signal generation: REST (daily bars)
-- Order submission: REST
-- Fill confirmation: REST poll loop
-- Account equity/cash: REST
-- Market hours check: REST
-WebSocket provides ONLY: position price updates for monitoring via `_on_stream_trade` callback. This is a monitoring enhancement, not a trading blocker.
-**Symptoms** (non-critical):
-- WebSocket retry loop generates 4,397+ log entries
-- Position prices from monitoring stream unavailable
-- Does NOT affect: signal generation, order submission, order fills, account status
-**Root cause**: Alpaca account or IP-level rate limit on WebSocket authentication (confirmed in logs)
-**Three viable workarounds** (all functional for June 4 market open):
-- **Option A (0 code changes)**: Check Alpaca account status, contact support to clear stale connection
-- **Option B (30 min, 1 env var)**: Set `DISABLE_REALTIME_STREAM=1` in Jetson `.env`, restart containers
-- **Option C (10 min patch)**: Apply one-line backoff patch in `src/data/realtime_stream.py` line ~104 (change `if "429" in err_str:` to `if "429" in err_str or "406" in err_str:`)
-**Rate limit headroom**: Current REST usage 6-9 calls/min (under 5% of 200 req/min limit). REST polling fallback adds negligible overhead.
-**What I need**: User selects preferred option (A/B/C) and approves. Contingency implementation starters ready in `projects/stockbot/contingency/`.
-**Verify with**: `ssh -i ~/.ssh/id_ed25519 awank@100.120.18.84 "docker logs stockbot 2>&1 | tail -20"` — should show normal trading cycles, not connection errors
-**Resolution**: [pending user choice of workaround option]
+### stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup)
+**Date blocked**: 2026-06-04 02:06 UTC (container restart, WebSocket error began)
+**Date reclassified**: 2026-06-04 05:25 UTC (Session 2744 — CRITICAL discovery: no trades for 3 days)
+**Context**: Container restarted at 02:06 UTC. Jetson stockbot shows WebSocket HTTP 406 "connection limit exceeded" loops. BUT CRITICAL NEW FINDING: Database shows last trade on June 1 at 13:39 UTC. NO TRADES on June 2-3 (both market days) despite session config ready. Current time 04:55 UTC June 4 (Thu) — market opens in 8.5 hours. Docker logs show ONLY WebSocket errors, NO "Market closed — skipping cycle" messages (which should appear every 60s if sessions running). **Interpretation**: Sessions are NOT initializing. WebSocket failure is likely blocking TradingSession startup in __init__. Sessions configured but not executing.
+**CRITICAL DISCOVERY (Session 2742 analysis — still valid)**: WebSocket is NOT on critical trading path *IF SESSION STARTS*, but WebSocket initialization failure is apparently preventing session startup altogether. Full stack analysis shows:
+- Signal generation: REST (daily bars) ✅
+- Order submission: REST ✅
+- Fill confirmation: REST poll loop ✅
+- Account equity/cash: REST ✅
+- Market hours check: REST ✅
+- WebSocket: position price updates ONLY (monitoring)
+- **BUT**: Session.__init__ tries to initialize WebSocket, failure → session crashes before trading starts
+**Symptoms** (NOW CRITICAL):
+- WebSocket retry loop spam in logs (4,397+ entries)
+- NO "Market closed — skipping cycle" messages (= sessions not running at all)
+- Last trade: June 1 @ 13:39 UTC (3 days ago, 2 market days missed)
+- Container marked "healthy" but sessions non-functional
+- Rate limit headroom: REST usage 6-9 calls/min (under 5%), but irrelevant if sessions don't start
+**Root cause (REVISED)**: WebSocket initialization in TradingSession.__init__ is not failing gracefully. When Alpaca WebSocket auth fails (HTTP 406), the exception bubbles up and prevents session startup. Sessions never reach trading loop.
+**URGENT WORKAROUNDS (user must choose by 13:00 UTC, 8 hours)**: All are reversible.
+- **Option A (wait, risky)**: Contact Alpaca support to clear rate limit — no ETA, could miss entire market day
+- **Option B (RECOMMENDED, 15 min)**: Disable WebSocket initialization: `ssh awank@100.120.18.84` → edit `/opt/stockbot/.env` → add `DISABLE_REALTIME_STREAM=1` → restart docker: `docker restart stockbot` → verify: logs should show "Market closed" messages within 60s. **This allows trading to proceed with REST-only data**.
+- **Option C (patch, 10 min)**: SSH to Jetson, apply backoff patch to `src/data/realtime_stream.py` line ~104 (add 406 to rate-limit check), rebuild Docker. Higher risk.
+**CRITICAL TIMELINE**: Market opens 13:30 UTC today (in 8h 35min). Sessions must be running and signaling by then. **If user does not act by 13:00 UTC, the June 4 market session is completely lost** (two prior days already lost June 2-3).
+**What I need**: User executes Option B (recommended, fastest, safest) OR Option C (if preferred) immediately. Do NOT wait for Option A support response — support SLA is typically 24–48 hours.
+**Verify with**: `ssh -i ~/.ssh/id_ed25519 awank@100.120.18.84 "docker logs stockbot 2>&1 | tail -30 | grep -c 'Market closed'"` — should show >0 (market-closed messages appearing, sessions running). If 0, workaround didn't work.
+**Resolution**: [pending user execution of Option B or C before 13:00 UTC]
 ---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
-**Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
-**Progress so far**:
-- ✅ 1.1 Signal — complete (username set, phone number hidden, disappearing messages on)
 
 ## Recently Resolved (last 5)
 • stockbot — Alpaca "insufficient subscription" prevents live trading (critical blocker) ← 2026-06-02 22:55 UTC (Session 2630 — orchestrator autonomous diagnosis & fix)
