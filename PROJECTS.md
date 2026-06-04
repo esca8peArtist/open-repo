@@ -461,16 +461,14 @@
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 **COMMIT-BEFORE-DEPLOY RULE**: Always `git commit` all changes in `projects/stockbot/src/`, `scripts/`, `config/`, `Dockerfile.jetson`, and `docker-compose.jetson.yml` before setting `DEPLOY_READY`. The deploy script hard-blocks on uncommitted changes to any of these files. Reason: uncommitted edits can be silently overwritten by future orchestrator sessions, then the next deploy nukes the Jetson fix. Commit = permanent; filesystem edit = temporary.
 
-**Current focus**: ✅ **[TRADING SESSIONS OPERATIONAL (SESSION 2745: CRITICAL DATABASE FIX) — 2-SESSION LIVE CONFIG READY FOR JUNE 4 MARKET OPEN]** — Database directory issue fixed (orchestrator created `/opt/stockbot/database/` on Jetson). Both trading sessions now executing trade cycles normally:
-  - `[Session jpm_ridge_wf_001] Market closed — skipping cycle` ✅ (sleeping until 13:15 UTC June 4)
-  - `[Session amzn_lgbm_ho_001] Market closed — skipping cycle` ✅ (sleeping until 13:15 UTC June 4)
-  - HTTP API: 200 OK, sessions healthy, container verified
-  - IEX free feed: Running, 90-93% signal fidelity confirmed
-  - WebSocket errors (HTTP 406): Non-critical background noise, REST-only trading functional
-  - **Market status**: June 4 13:30 UTC open is SAFE — no user action required, sessions will execute normally
-  - **Previous**: June 1-3 trading halted (3 days, 2 market days missed) due to database initialization blocker
-  - **Next**: Market open at 13:30 UTC (7h 15min), both sessions active for JPM ridge_wf (OOS Sharpe 4.412, 6/6 PASS) + AMZN lgbm_ho (G5 fixed, ready post-HMM gating)
-  - Phase 4.3 monitoring (drift detection) active, telemetry streaming to Discord daily summary
+**Current focus**: ✅ **[ITEM 61 & 70 COMPLETE (SESSION 2807: GO WITH CAUTION FOR JUNE 5) — PRE-MARKET CHECKLIST STAGED]** — Post-market analysis complete: signal quality 95% (EXCELLENT), all systems healthy, 0 fills generated (36 HOLD signals). Infrastructure 100% operational. Decision: **GO WITH CAUTION** for June 5 market open.
+  - **June 4 Results**: Signal quality score 5.7/6.0 (EXCELLENT). JPM ridge_wf + AMZN lgbm_ho both healthy, no trading errors during market hours. MTF feature fallback (safe), WebSocket errors post-market (non-critical).
+  - **Item 61**: JUNE_4_EVENING_POSTMARKET_ANALYSIS_RESULTS.md (2,847 words) — 6-point framework, anomaly assessment, live-vs-backtest comparison
+  - **Item 70**: ITEM_70_DECISION_ROUTING_AND_RESOURCE_ALLOCATION.md (2,564 words) — GO/CAUTION/NO-GO paths, pre-market checklist, resource scenarios A/B/C
+  - **June 5 Critical Actions**: (1) 13:00 UTC run 4-gate pre-market checklist (container health, session status, WebSocket stability, Alpaca API); (2) 13:30 UTC market open with enhanced 2-hour monitoring; (3) 20:00 UTC repeat post-market analysis
+  - **Escalation triggers**: If 2+ pre-market gates FAIL → NO-GO (rollback). If Day 2 score < 4.0 → escalate. If WebSocket errors recur → HOLD.
+  - **Signal generation**: Day 1 all-HOLD is normal/conservative; monitor for BUY convergence Day 2. If Day 2 also all-HOLD, investigate model features.
+  - **Container status**: docker ps shows "Up 3+ hours (healthy)"; both sessions sleeping until 13:15 UTC June 5
 
 **June 1 Pre-Market Validation Complete**: Walk-forward evaluation (WFE) audit of all 4 models using May 27-31 paper-trading data revealed critical findings:
 - **JPM ridge_wf**: 6/6 gates PASS ✅ — Deploy June 2 (OOS Sharpe 4.412, WFE 1.073, all regimes profitable)
