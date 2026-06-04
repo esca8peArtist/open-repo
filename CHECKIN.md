@@ -29,10 +29,18 @@
 - WebSocket errors (HTTP 406) remain in logs but are non-critical background noise (verified Session 2742)
 - REST-only trading path confirmed functional, no impact on trade execution
 
+**Activation Scripts Ready**:
+- Created `projects/seedwarden/TRACK_B_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md` (ready for copy-paste execution)
+- Created `projects/systems-resilience/NEXTCLOUD_MATRIX_ORCHESTRATOR_ACTIVATION_June4_1300UTC.md` (ready for copy-paste execution)
+- Both scripts prepared for 13:00 UTC autonomous execution if no user input received
+
 **Next Steps**:
-- **13:00 UTC**: Check for seedwarden/systems-resilience user decisions
-- **13:15 UTC**: Final market-open readiness check (sessions wake to begin trading)
+- **By 13:00 UTC**: User may provide seedwarden Track A/B/Both decision and systems-resilience platform choice
+  - If decision provided → follow user guidance instead of activation scripts
+  - If no decision → orchestrator executes Track B + Nextcloud+Matrix activations automatically
+- **13:15 UTC**: Final stockbot market-open readiness check (sessions wake to begin trading)
 - **13:30 UTC**: Market opens; stockbot trading proceeds normally
+- **After 13:00 UTC**: Projects proceed with activated paths or user-specified paths
 
 ---
 
