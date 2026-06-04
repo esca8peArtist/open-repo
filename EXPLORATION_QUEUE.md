@@ -145,20 +145,16 @@
 **Status**: ✅ PRODUCTION-READY for June 5 immediate deployment upon platform decision (13:00 UTC June 4)
 **Deadline**: June 4 EOD ✅ ADVANCED COMPLETE (committed June 4 09:45 UTC, 3h 15min early)
 
-### 65. ⏳ resistance-research — Domain 54 Youth Civic Power Preliminary Research (November Post-Midterm)
-**Context**: Domain 54 (Youth Civic Power / Youth Voter Engagement & Antidemocratic Targeting) is November post-midterm research priority. Election cycle on Nov 3, 2026; research must inform November youth mobilization campaigns. Preliminary research outline and source gathering can begin now (June 4) to support July-August execution once Phase 2 research bandwidth is available post-Domain-51-execution.
-**Scope**: Domain 54 foundational architecture:
-  - Research outline covering 5-7 major research areas (voter registration youth barriers, voting age population turnout trends, targeted suppression mechanics, platform algorithms, civic participation models)
-  - Source gathering and expert contact list (20-30 organizations: youth voting advocacy, student groups, electoral data analysts, platform researchers)
-  - Movement leverage mapping (Who are the youth organizations that can activate this research? What communication channels work?)
-  - Preliminary findings on post-2024 barriers and 2026 data updates
-  - Comparative case studies (2020 youth-focused campaigns, state-level lessons learned)
-**Deliverables**:
-  - `DOMAIN_54_RESEARCH_OUTLINE.md` (5 major sections, preliminary findings, cross-domain bridges)
-  - `DOMAIN_54_SOURCES_AND_CONTACTS.md` (25+ source list, 15+ organization contacts, expert researcher map)
-  - `DOMAIN_54_PRELIMINARY_FINDINGS.md` (1-2 page summary of youth voter suppression mechanisms unique to 2026 + 3-5 policy reform pathways)
-**Owner**: resistance-research subagent
-**Deadline**: June 30 (ready for July-August full research execution post-Phase-2-resource-contention)
+### 65. ✅ resistance-research — Domain 54 Youth Civic Power Preliminary Research (November Post-Midterm) [Session 2805 COMPLETE]
+**Status**: Completed 2026-06-04 (Session 2805, 21:15–21:25 UTC). All three deliverables production-ready and committed.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `DOMAIN_54_RESEARCH_OUTLINE.md` (4,034 words; 5 major sections: voter reg barriers, VAP turnout trends, targeted suppression mechanics, platform algorithms, civic participation; preliminary findings + cross-domain bridges)
+  - ✅ `DOMAIN_54_SOURCES_AND_CONTACTS.md` (2,959 words; 25+ sources verified, 15+ org contacts with decision-makers, expert researcher map: CIRCLE at Tufts, Brennan Center, Fair Elections Center)
+  - ✅ `DOMAIN_54_PRELIMINARY_FINDINGS.md` (3,084 words; 2026-specific youth suppression mechanisms: documentation barriers, student ID invalidation, campus polling elimination, mail ballot rejection age gap, residency-based purges, digital demobilization; 3-5 policy reform pathways; 2020→2026 comparative case studies)
+**Key Findings**: Six age-specific suppression mechanisms identified; SAVE Act stalled at Senate (needs 60 votes); young Black/Latino men turnout 25-27% vs white women 58%; 49M eligible young voters for November; November deployment headline ready for campaigns
+**Owner**: resistance-research subagent (Session 2805)
+**Deadline**: June 30 ✅ EARLY COMPLETE (June 4, 26 days early)
+**Commit**: `09538d66`
 
 ### 66. ⏳ stockbot — June 11 Multi-Ticker Expansion GO/NO-GO Decision Framework
 **Context**: June 11 is the formal go/no-go decision gate for multi-ticker expansion (June 15 start). By June 10 EOD, 6 full days of JPM ridge_wf + AMZN lgbm_ho live trading data will be available. Decision requires analysis of live-vs-backtest divergence, signal quality, drawdown behavior, and contingency trigger assessment.
@@ -206,20 +202,32 @@
 **Owner**: open-source-rideshare subagent
 **Deadline**: June 11 (ready for June 12 Phase 5.1 deployment → June 13 Phase 5.2 kickoff)
 
-### 69. ⏳ systems-resilience — Phase 6 Wave 1 Author Recruitment & Tier Assignment Logistics (June 10 ready)
-**Context**: Phase 6 Wave 1 pre-flight complete (Item 67 delivered landscape mapping + domain rubric + brief templates). Next step is author recruitment playbook for June 14-15 author matching session (part of Item 54 Wave 2 checklist). Pre-stage recruitment checklist, tier stratification, outreach templates, timeline.
-**Scope**:
-  - Author recruitment target list (50-100 candidate researchers from Phase 6 landscape sources)
-  - Tier stratification logic (Tier A/B/C assignment, domain difficulty modifiers from Item 67 rubric)
-  - Outreach email templates (domain-specific recruitment, tier-based onboarding variations)
-  - June 14-15 author matching session logistics (scheduling, scoring rubric application, decision tree)
-  - Contingency for incomplete recruitment (fallback authors, split-domain options, schedule slip triggers)
-**Deliverables**:
-  - `PHASE_6_AUTHOR_RECRUITMENT_TARGET_LIST.md` (50+ candidates stratified by tier + domain fit)
-  - `RECRUITMENT_OUTREACH_TEMPLATES.md` (4-5 email variants, domain-specific hooks, tier-based customization)
-  - `JUNE_14_15_AUTHOR_MATCHING_SESSION_RUNBOOK.md` (day-by-day logistics, scoring application, go/no-go gates)
-**Owner**: general-research subagent
-**Deadline**: June 10 (ready for June 14-15 author matching + June 15-20 onboarding decision)
+### 69. ✅ systems-resilience — Phase 6 Wave 1 Author Recruitment & Tier Assignment Logistics [Session 2805 COMPLETE]
+**Status**: Completed 2026-06-04 (Session 2805, 21:30–21:37 UTC, subagent af981d95782d8c313). All three deliverables production-ready and committed.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `PHASE_6_AUTHOR_RECRUITMENT_TARGET_LIST.md` (50+ candidates across 6 domains, tier-stratified Tier A/B/C, domain-fit scores, fallback candidates, go/no-go criteria)
+    * Domain 60 (Int'l Coordination): Philip McMichael (Tier A), Ariel Salleh (Tier A), Borras Jr./Mamonova (Tier B)
+    * Domain 61 (Intergenerational): Wes Jackson (Tier A), Robin Wall Kimmerer (Tier A), Gary Paul Nabhan (A/B boundary)
+    * Domain 62 (Infrastructure): Kathleen Tierney (Tier A), Daniel Aldrich (Tier A), Klinenberg (Tier B)
+    * Domain 63 (Ecosystem Restoration): Gabe Brown (Tier A), Didi Pershouse (Tier A), Rodale Institute (Tier B)
+    * Domain 64 (Economic Resilience): Gar Alperovitz (Tier A), Juliet Schor (Tier A), Shuman (Tier A/B fallback)
+    * Domain 65 (Governance Scaling): Xavier Basurto (Tier A), Trebor Scholz (Tier A), David Bollier (Tier B)
+  - ✅ `RECRUITMENT_OUTREACH_TEMPLATES.md` (4 email variants, zero placeholders, merge-fields only {{DOMAIN}}/{{TIER_BENEFIT}})
+    * Template 1 (Tier A): Leadership framing, co-author publication, autonomous workflow
+    * Template 2 (Tier B): Professional development, structured support, CV credential
+    * Template 3 (Tier C): Practitioner-first, full scaffolding, mentorship pairing
+    * Template 4 (Reminder): One-sentence close-by June 13 reminder
+    * Domain-specific hooks (6 paragraphs) + tier-benefit paragraphs (3 variants)
+  - ✅ `JUNE_14_15_AUTHOR_MATCHING_SESSION_RUNBOOK.md` (hour-by-hour 2-day execution plan)
+    * June 14 AM: Tier A call-back scripts, non-respondent fallback activation, rubric application
+    * June 14 PM: Full matching algorithm, assignment table, mentorship pairings
+    * June 15 AM: Per-domain go/no-go decisions, backup roster, contention check (Domain 51 confirmed no conflict)
+    * June 15 PM: Offer generation, timeline verification, final launch go/no-go decision tree
+    * Contingency plans (recruitment lag, mid-sprint dropout, no-eligible-author scenarios)
+    * AUTHOR_ROSTER_JUNE_15.md template included inline
+**Owner**: general-research subagent (Session 2805)
+**Deadline**: June 10 ✅ EARLY COMPLETE (June 4, 6 days early)
+**Commit**: `61a4fc0f` (systems-resilience submodule)
 
 ### 70. ⏳ stockbot — June 4 Post-Market Decision Intelligence (Post-Item-61)
 **Context**: Item 61 completes at 20:20 UTC with GO/CAUTION/NO-GO decision for June 5 continuation. Pre-stage immediate contingency execution paths and decision routing logic for automated response.

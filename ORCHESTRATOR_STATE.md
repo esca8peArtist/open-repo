@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-04T20:57:26Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-04T21:15:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 10.2% (911,855 tokens) | All-models 5.4% | Reset in 99h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 10.2% (911,855 tokens) | All-models 5.5% | Reset in 99h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[TRADING SESSIONS OPERATIONAL (SESSION 2745: CRITICAL DATABASE FIX) — 2-SESSION LIVE CONFIG READY FOR JUNE 4 MARKET OPEN]** — Database directory issue fixed (orchestrator created `/opt/stockbot/database/` on Jetson). Both trading sessions now executing trade cycles normally:
+**Focus**: ✅ **[ITEM 61 & 70 COMPLETE (SESSION 2807: GO WITH CAUTION FOR JUNE 5) — PRE-MARKET CHECKLIST STAGED]** — Post-market analysis complete: signal quality 95% (EXCELLENT), all systems healthy, 0 fills generated (36 HOLD signals). Infrastructure 100% operational. Decision: **GO WITH CAUTION** for June 5 market open.
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**; **Standing task: 18 wild edibles habit photos 18/18 COMPLETE (Session 2505 verified)**
