@@ -1,4 +1,41 @@
-## Since Last Check-in — Session 2760 (2026-06-04 08:36–08:45 UTC — Orchestrator: Exploration Queue Maintenance + Decision-Point Readiness Confirmation)
+## Since Last Check-in — Session 2761 (2026-06-04 08:45–08:48 UTC — Orchestrator: Monitoring Mode Verification + Pre-Market Standby)
+
+**Status**: 🟢 **MONITORING MODE ACTIVE** — Verification session. No autonomous work available in 08:45–11:00 UTC window. All decision-point infrastructure confirmed ready; stockbot operational and sleeping until 13:15 UTC market wake.
+
+**Session Work**:
+1. ✅ **Orientation & Block Verification** (08:45–08:48 UTC)
+   - Verified no new BLOCKED.md resolutions (cybersecurity-hardening VeraCrypt restart, mfg-farm test print both remain user-action only)
+   - Confirmed INBOX.md empty; no new items
+   - Verified PROJECTS.md status unchanged (all projects time-gated or awaiting decisions)
+   - Verified EXPLORATION_QUEUE.md: 3 active items (Items 16, 54, 61) at target threshold
+
+2. ✅ **Status Confirmation** (08:48 UTC)
+   - **Stockbot**: Sessions operational, sleeping until 13:15 UTC; ready for 13:30 UTC market open
+   - **Seedwarden**: Track B activation infrastructure ready; default activation scheduled 13:00 UTC
+   - **Systems-resilience**: Nextcloud+Matrix activation infrastructure ready; default activation scheduled 13:00 UTC
+   - **Resistance-research**: Domain 51 execution June 9–12 (all prep complete)
+   - **Monitoring mode**: Confirmed active; next checkpoint 11:00 UTC for pre-market health checks
+
+**Timeline Confirmation** (08:48 UTC):
+- **11:00 UTC** (2h 12min): Pre-market health checks + decision-point execution preparation
+- **13:00 UTC** (4h 12min): Execute Seedwarden Track B + Systems-resilience platform activations (if no user override)
+- **13:30 UTC** (4h 42min): Stockbot market open — both JPM ridge_wf + AMZN lgbm_ho sessions begin trading
+
+**Needs Your Input** (by 13:00 UTC, if different from defaults):
+1. **Seedwarden Track** — Default: Track B. Override if you prefer Track A or Both.
+2. **Systems-resilience Platform** — Default: Nextcloud+Matrix. Override if you prefer Discourse.
+
+**Session Summary**:
+- No autonomous work available before 11:00 UTC — monitoring mode confirmed appropriate
+- All decision-point infrastructure verified operational and ready for 13:00 UTC execution
+- Stockbot sessions healthy and standing by for market open
+- Next session: 11:00 UTC for pre-market health checks + decision-point execution
+
+**Next Session**: 11:00 UTC — Pre-market health checks + decision-point execution
+
+---
+
+## Previous Check-in — Session 2760 (2026-06-04 08:36–08:45 UTC — Orchestrator: Exploration Queue Maintenance + Decision-Point Readiness Confirmation)
 
 **Status**: 🟢 **MONITORING MODE ACTIVE** — Continuation of monitoring sessions 2758-2759. Exploration Queue maintenance complete; decision-point execution ready for 13:00 UTC.
 
