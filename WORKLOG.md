@@ -1,3 +1,62 @@
+## Session 2783 (2026-06-04 14:30–15:15 UTC — Orchestrator: Item 66 Pre-Staging + Readiness for Post-Market Analysis)
+
+**Status**: ✅ **ITEM 66 SCAFFOLDING COMPLETE — DECISION FRAMEWORK READY FOR JUNE 4-10 DATA POPULATION**
+
+**Actions**:
+
+1. ✅ **Session Orientation** (14:30–14:35 UTC)
+   - Verified ORCHESTRATOR_STATE.md: All systems operational, market live (44 min in)
+   - Verified BLOCKED.md: 2 active blocks (VeraCrypt, test print) — no changes
+   - Verified INBOX.md: no new items
+   - Verified EXPLORATION_QUEUE.md: Items 65-67 status; Items 61-67 ready/complete
+
+2. ✅ **Exploration Queue Item 66: Stockbot June 11 Expansion GO/NO-GO Decision Framework** (14:35–15:15 UTC)
+   - Spawned stockbot subagent to pre-stage decision framework scaffolding
+   - **Deliverable 1**: `JUNE_4_10_LIVE_TRADING_SUMMARY_TEMPLATE.md` (7-row daily grid June 4-10)
+     - Per-session tables: daily P&L, signal count, HMM regime, fill count, win rate, max DD, SQ score
+     - Thresholds grounded in backtest numbers: JPM max DD ≤4%, AMZN max DD ≤8%, win rate gates (JPM ≥70%, AMZN ≥60%)
+     - Section 1: threshold tables; Section 2: success story (all YES, both +$75–$300); Section 3: escalation story (asymmetric performance)
+     - Section 4: DB query procedures; Section 5: Item 60 SQ checklist
+   - **Deliverable 2**: `JUNE_11_EXPANSION_DECISION_FRAMEWORK.md` (7 sections, production-ready)
+     - Section 1: Divergence analysis (±15% PASS / ±15–25% CAUTION / >25% ESCALATE); AMZN Bear-regime sensitivity noted
+     - Section 2: Drawdown cascade (JPM 5-level, AMZN 6-level thresholds); 4 cascade scenarios (A-D)
+     - Section 3: Signal quality (expected BUY frequency, Item 60 C1–C6 checklist, runaway detection)
+     - Section 4: Multi-ticker readiness (4session.json validation, correlation bounds, margin check, sector concentration, AAPL re-training gate)
+     - Section 5: Decision tree (8 branches: both-strong GO, JPM-only, AMZN-only, both-modest GO-reduced, both-negative HOLD, either-below-5% HOLD-stronger, cascade ROLLBACK, infrastructure HOLD)
+     - Section 6: Success criteria (7 simultaneous conditions for autonomous GO); Section 7: Escalation routing (orchestrator-autonomous vs. user-required)
+   - **Deliverable 3**: `EXPANSION_CONTINGENCY_DECISION_TREE.md` (10 failure modes)
+     - FM-01 (IEX artifacts) → FM-10 (cascade waterfall)
+     - Each with NORMAL/CAUTION/ROLLBACK thresholds + AUTO/ESCALATE routing
+     - Worked examples: win-rate drop by June 8, AMZN DD >8% by June 9 with full decision flow
+     - Routing matrix linking all FMs to JUNE_11 decision framework sections
+   - All three files committed to projects/stockbot/ on master
+   - **Next use**: Item 61 (20:00 UTC) fills summary template with June 4 EOD data → repeat June 5-10 → June 11 execution
+
+3. ✅ **Project Readiness Verification** (15:10–15:15 UTC)
+   - Stockbot: trading live, both sessions executing normally (44 min into market)
+   - Item 61 ready for 20:00 UTC post-market execution (5h 45m away)
+   - All infrastructure in place for 7-day tracking → June 11 decision
+
+**Timeline** (next 24 hours):
+- **20:00 UTC** (5h 45m): Item 61 execution — post-market analysis, populate June 4 summary row, GO/CAUTION/NO-GO for June 5
+- **June 5 06:00 UTC**: Seedwarden Track B gate window opens
+- **June 5 08:00 UTC**: Systems-resilience Phase 5 Wave 1 pre-flight decision
+- **June 9-12**: Resistance-research Domain 51 execution window
+- **June 11 morning**: Execute Item 66 decision framework using June 4-10 populated summary template
+
+**Blocked Items** (unchanged):
+- cybersecurity-hardening: VeraCrypt pre-boot restart (user action)
+- mfg-farm: Test print execution (user action)
+
+**What Changed This Session**:
+- Item 66 scaffolding complete (3 production-ready files)
+- Decision framework ready for data population June 4-10
+- Zero new project work; all ready for post-market analysis at 20:00 UTC
+
+**Next Session**: 20:00 UTC (post-market analysis) — Execute Item 61 (15–20 min), output GO/CAUTION/NO-GO for June 5
+
+---
+
 ## Session 2782 (2026-06-04 14:13–14:45 UTC — Orchestrator: Exploration Queue Item 67 — Phase 6 Domain Mapping)
 
 **Status**: ✅ **COMPLETE** — Exploration Queue Item 67 (Phase 6 Wave 1 Research Capability Assessment) delivered with all three deliverables. System ready for 20:00 UTC post-market analysis (Item 61).
