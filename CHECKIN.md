@@ -1,3 +1,43 @@
+## Since Last Check-in — Session 2746 (2026-06-04 05:16–13:00 UTC — Orchestrator: Deadline Monitoring + Escalation Execution)
+
+**Status**: 🟡 **CRITICAL DEADLINE WINDOW — 7h 45min REMAINING** — Three user decisions at 13:00 UTC. Monitoring for any user input. Ready for escalation execution if deadlines pass.
+
+**Session Summary**:
+
+1. ✅ **Block Verification (05:15 UTC)**:
+   - Stockbot block: CONFIRMED STILL ACTIVE (0 "Market closed" messages in docker logs)
+   - WebSocket 406 error blocking session startup
+   - User action required: Option B (15 min) or Option C (10 min) by 13:00 UTC
+   - Market opens 13:30 UTC (7h 15min)
+
+2. ⏳ **Deadline Monitoring (05:16-13:00 UTC)**:
+   - Stockbot: User must choose Option A/B/C (MANDATORY)
+   - Seedwarden: Orchestrator default Track B activation at 13:00 UTC (UNLESS user clarifies by then)
+   - Systems-resilience: Orchestrator default Nextcloud+Matrix at EOD (unless user decides)
+   - Domain 59 dispatch: Senate Finance CTC window (June 4-5 execution window)
+
+3. ✅ **Domain 51 Resistance-Research Verification**:
+   - Gist URL verified live (HTTP 200)
+   - Email templates verified complete (5/5 templates ready)
+   - Contact emails documented and ready for verification on June 6-8 per checklist
+   - June 6-8 verification tasks: 4 quick checks (15-30 min total)
+   - June 9-12 execution ready per DOMAIN_51_EXECUTION_CHECKLIST.md
+
+**Escalation Timeline**:
+- **12:50 UTC** (10 min before deadline): Final check for user input
+- **13:00 UTC**: Execute escalations for any pending decisions
+  - If seedwarden no input: Activate Track B (Gist URLs + email templates ready)
+  - If systems-resilience no input: Select Nextcloud+Matrix (runbooks ready)
+- **13:30 UTC**: Market opens; monitor stockbot if user applied fix
+
+**What's Next**:
+- Wait for user input/decisions until 13:00 UTC
+- At 12:50 UTC: Check for any new items in INBOX.md or recent git changes
+- At 13:00 UTC: Execute escalations and commit
+- Post-escalation: Resume normal project work
+
+---
+
 ## Since Last Check-in — Session 2745 (2026-06-04 05:04–08:05 UTC — Orchestrator: Critical Block Verification + Exploration Work + Escalation Prep)
 
 **Status**: 🟡 **CRITICAL DECISION WINDOW ACTIVE** — Three pending user decisions at 13:00 UTC deadline (5h remaining). Exploration work completed in parallel. All systems ready for escalation if deadline passes without user input.
