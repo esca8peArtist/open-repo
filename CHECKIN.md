@@ -1,3 +1,64 @@
+## Since Last Check-in — Session 2783 (2026-06-04 14:30–15:15 UTC — Orchestrator: Item 66 Decision Framework Pre-Staging)
+
+**Status**: ✅ **ITEM 66 PRE-STAGING COMPLETE — DECISION FRAMEWORK SCAFFOLDING READY FOR JUNE 4-10 DATA POPULATION** — Exploration Queue Item 66 scaffolding complete (3 production files). Stockbot market trading live. All systems ready for Item 61 post-market analysis at 20:00 UTC.
+
+**Session Work**:
+
+1. **✅ Exploration Queue Item 66: Stockbot June 11 Expansion GO/NO-GO Decision Framework Pre-Staging** (14:35–15:15 UTC)
+   - Spawned stockbot subagent to build decision framework infrastructure (9 days lead time for June 11 execution)
+   - **Deliverable 1**: `JUNE_4_10_LIVE_TRADING_SUMMARY_TEMPLATE.md` — Blank 7-row daily grid (June 4-10) with per-session metrics
+     - Columns: date, daily P&L (JPM/AMZN), signal count, HMM regime, fill count, win rate, max DD, SQ score, anomaly flags
+     - Thresholds grounded in backtest numbers: JPM max DD ≤4%, AMZN max DD ≤8%, win rate gates (JPM ≥70%, AMZN ≥60%)
+     - Success story example: all YES, both +$75–$300 P&L → expand June 15
+     - Escalation story example: JPM +$250, AMZN DD approaching 8% → ambiguous, requires user decision
+     - DB query procedures (Section 4); Item 60 SQ checklist (Section 5)
+   - **Deliverable 2**: `JUNE_11_EXPANSION_DECISION_FRAMEWORK.md` — 7-section production framework
+     - Section 1: Divergence analysis (±15% PASS / CAUTION / ESCALATE bands for JPM and AMZN separately, AMZN Bear-regime sensitivity noted)
+     - Section 2: Drawdown cascade (JPM 5-level, AMZN 6-level thresholds; 4 scenario trees A-D)
+     - Section 3: Signal quality (expected BUY frequency, Item 60 C1–C6 checklist, runaway detection criteria)
+     - Section 4: Multi-ticker readiness (4session.json validation script, correlation bounds verification, margin check, sector concentration, AAPL re-training gate)
+     - Section 5: Decision tree (8 branches: both-strong GO, JPM-only CAUTION, AMZN-only CAUTION, both-modest GO-reduced, both-negative HOLD, either-below-5% HOLD-stronger, cascade ROLLBACK, infrastructure HOLD)
+     - Section 6: Success criteria (7 simultaneous conditions for autonomous GO decision)
+     - Section 7: Escalation routing (orchestrator-autonomous decisions vs. user-required escalations)
+   - **Deliverable 3**: `EXPANSION_CONTINGENCY_DECISION_TREE.md` — 10 failure modes with routing logic
+     - FM-01 (IEX feed artifacts) through FM-10 (cascade waterfall)
+     - Each with NORMAL/CAUTION/ROLLBACK thresholds + AUTO/ESCALATE routing
+     - Worked examples (win-rate drop June 8, AMZN DD >8% June 9) with full decision flow
+     - Routing matrix linking all FMs to JUNE_11 decision framework sections
+   - **Status**: All three files committed to `projects/stockbot/` at commit (subagent-provided)
+   - **Production Use**: Item 61 (20:00 UTC) populates summary template June 4 → repeat June 5-10 → Item 66 executes June 11 morning using completed summary template + contingency routing
+
+2. **✅ Project Status & Timeline Verification** (14:30–14:35 UTC)
+   - Stockbot: trading live (both sessions executing normally, 44 min into market)
+   - Seedwarden: Track B activated June 4 13:00 UTC; awaiting user gate completion by June 5 13:00 UTC
+   - Systems-resilience: Nextcloud+Matrix activated June 4 13:00 UTC; Phase 5 Wave 1 ready for June 5
+   - Resistance-research: Domain 51 execution ready for June 9-12
+   - All autonomous work queued for: (a) Item 61 at 20:00 UTC, (b) user gate completion by June 5, (c) scheduled execution dates June 9+
+
+**Timeline** (critical path, next 48 hours):
+- **20:00 UTC** (5h 45m): Item 61 execution — post-market analysis, populate June 4 summary row, GO/CAUTION/NO-GO for June 5 continuation
+- **June 5 06:00–13:00 UTC**: Seedwarden Track B gate window (user action: 5 gates, 2.5–3.5 hrs total; priority: Gate 4 upload PDFs to Drive)
+- **June 5 08:00 UTC**: Systems-resilience Phase 5 Wave 1 pre-flight decision (user action: Go/No-Go for June 5 recruitment send)
+- **June 9-12**: Resistance-research Domain 51 execution window
+
+**Blocked Items** (2, unchanged):
+- cybersecurity-hardening: VeraCrypt pre-boot restart (user action required)
+- mfg-farm: Test print execution (user action required)
+
+**What Changed This Session**:
+- Item 66 scaffolding complete (3 production-ready files)
+- Decision framework ready for June 4-10 data population via Item 61
+- Stockbot expansion decision infrastructure production-ready 5 days before June 11 execution
+- Zero new blockers; all systems operational
+
+**Needs Your Input** (by June 5 08:00 UTC):
+1. **Seedwarden Track B activation** — Complete 5 gates from READINESS_REPORT_JUNE_1.md (Gate 4 priority: upload 8 zone PDFs to Drive, ~20 min, critical for Email 3)
+2. **Systems-resilience Phase 5 Wave 1 pre-flight decision** — Go/No-Go decision at 08:00 UTC June 5 for recruitment send
+
+**Next Session**: 20:00 UTC June 4 — Execute Item 61 post-market analysis (15–20 min execution, populate June 4 summary row, output GO/CAUTION/NO-GO for Day 2)
+
+---
+
 ## Since Last Check-in — Session 2782 (2026-06-04 14:13–14:45 UTC — Orchestrator: Exploration Queue Item 67)
 
 **Status**: ✅ **SESSION COMPLETE — ITEM 67 DELIVERED, SYSTEM READY FOR MARKET MONITORING** — Exploration Queue Item 67 (systems-resilience Phase 6 domain mapping) completed with 3 deliverables. Stockbot market trading live (44 min elapsed). All major projects on schedule.
