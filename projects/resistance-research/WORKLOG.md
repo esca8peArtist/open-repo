@@ -2,6 +2,57 @@
 
 ---
 
+## June 5, 2026 — General Research Agent — Wave 2 Recruitment Contingency Automation (systems-resilience Item 81)
+
+**Task**: Build three production-ready Wave 2 author recruitment contingency files for the June 14 author matching session (June 13 review deadline). Wave 2 launches June 20 if roster meets minimum viable threshold.
+
+**Files created** (all in `projects/systems-resilience/`):
+1. `RECRUITMENT_RESPONSE_TRACKING_AUTOMATION.md` — Daily email monitoring script (Python, runs 08:00 UTC via cron), response classification rules (8 status codes, decision logic per tier/day), escalation trigger matrix (individual and system-level dark-rate triggers: 25% → project lead alert, 50% → Tier B parallel activation), daily tracking CSV structure with column definitions, and 4 contingency email templates (initial outreach reference, re-engagement, backup activation, CONDITIONAL resolution)
+2. `RECRUITMENT_CONTINGENCY_PLAYBOOKS.md` — Five named scenarios (A: Full Success → PATH A launch; B: 1–2 Dropout → PATH B with named backup activation or domain deferral; C: ≥3 Dropout → Response Path 1 [4-domain launch] or Path 2 [consolidation] or Path C [defer July 15]; D: Slow Responder → Tier B parallel activation June 11, 72 hrs early; E: Platform Unavailability → Google Drive fallback, zero timeline impact). Each scenario includes decision tree, domain reassignment logic, timeline impact table, and copy-paste notification templates (8 templates total). Quality gate integration section confirms no softening of WAVE_2_PEER_REVIEW_PAIRING_PROTOCOL.md standards under any contingency path.
+3. `WAVE_2_GO_NO_GO_DECISION_GATE_JUNE14.md` — Minimum viable roster definition (4 confirmed Tier A/B, domains 60/62/63/64 required, 65/61 deferrable), three launch paths with objective success criteria (Path A: 6 domains, 90% quality gate; Path B: 4–5 domains, 85% quality gate, Day 7 escalation trigger; Path C: defer to July 15), 4-step decision process (count authors, check platform, check no-show rate, route), platform fallback matrix, and full coordinator checklist for June 14 EOD with timestamped actions. Includes PROJECTS.md update templates for each path.
+
+**Cross-references verified**: Item 64 (WAVE_2_GENERIC_ONBOARDING_TEMPLATE.md, Google Drive fallback), Item 69 (PHASE_6_AUTHOR_RECRUITMENT_TRACKING.md, tier A/B/C lists), Item 78 (WAVE_2_PEER_REVIEW_PAIRING_PROTOCOL.md, quality gates), Item 79 (DOMAIN_48_DISTRIBUTION_SEND_LOG_TEMPLATE.md, infrastructure pattern).
+
+**Item 81 status**: COMPLETE. All three files production-ready for June 13 review and June 14 matching session use.
+
+---
+
+## June 5, 2026 — General Research Agent — Domain 48 Distribution Execution Infrastructure (Exploration Queue Item 79)
+
+**Task**: Build complete Domain 48 distribution execution infrastructure — 5 production-ready files covering contacts, email templates, Gist creation steps, send log template, and timing/resource coordination. Domain 48 research is production-complete (6,200+ words, 41 citations, June 1, 2026) but had no distribution infrastructure. Deadline: June 12, 2026 (before Domain 51 checkpoint).
+
+**Research conducted (live web verification, June 5, 2026)**:
+- Sentencing Project staff verified: Kara Gotsch (Executive Director), Nicole D. Porter (Senior Director of Advocacy) — email format confirmed as nporter@sentencingproject.org (org uses first_initial+last@sentencingproject.org, 91.9%)
+- Prison Policy Initiative staff verified: Peter Wagner (Executive Director), Wendy Sawyer (Research Director), Leah Wang (Senior Research Analyst) — contact: info@prisonpolicy.org
+- Brennan Center leadership updated: Myrna Pérez is no longer at Brennan Center (confirmed federal judge on 2nd Circuit since 2021). Current Voting Rights and Elections Program Director: Sean Morales-Doyle. Contact: web inquiry form (brennancenter.org/about/contact)
+- Worth Rises staff verified: Bianca Tylek (Executive Director), Antonya Jeffrey (Director, Policy Campaigns), Peter Mayer (Director, Research) — contact: info@worthrises.org, 168 Canal Street, NY
+- Campaign Legal Center Restore Your Vote: Blair Bowie confirmed as Director, Restore Your Vote — contact: info@campaignlegal.org
+- M4BL contact: info@m4bl.org (policy@m4bl.org may be stale — verify before send)
+- NAACP LDF: Janai Nelson (President and Director-Counsel since March 2022) — info@naacpldf.org
+- ACLU of Virginia: Mary Bauer (Executive Director), Chris Kaiser (Policy Director) — acluva@acluva.org
+- Fines and Fees Justice Center: Joanna Weiss (Co-Executive Director) — info@finesandfeesjusticecenter.org
+- Virginia ballot measure: HJR 2 passed House 65–33 Jan 14 and Senate 21–18 Jan 16, 2026; on November 3, 2026 ballot. King v. O'Bannon permanent injunction effective May 1, 2026 (Readmission Act theory). No successful stay as of June 5.
+- Alabama SB 24: Senate passed Feb 2026; effective October 1, 2026 — requires accessible online restoration instructions but retains LFO debt payment requirement
+- Maryland HB 115: enacted 2026 — integrates voter registration into reentry process
+- Domain 48 vs. Domain 51 contact overlap: ZERO person-level conflicts. Only shared organization is CLC (different programs: Adav Noti/campaign finance for D51 vs. Blair Bowie/Restore Your Vote for D48). 10-day natural stagger (June 9 vs. June 19) eliminates any interference.
+
+**Key findings**:
+- Sequential execution (Domain 48 June 16–20, after Domain 51 June 9–12) is recommended. 29-day buffer to July 15 Virginia coalition integration deadline is sufficient.
+- Parallel execution is feasible if Virginia campaign timeline accelerates — contacts do not conflict. See DOMAIN_48_TIMING_AND_RESOURCE_COORDINATION.md Section 4 for parallel protocol.
+- Myrna Pérez contact information in any prior Domain 48 notes is outdated — she has been a federal judge since 2021. Sean Morales-Doyle is the current Voting Rights and Elections Program Director.
+- M4BL policy team contact should be re-verified on execution date — policy@m4bl.org may not be current; info@m4bl.org is the safer current pathway.
+
+**Files created** (all in `projects/resistance-research/`):
+1. `DOMAIN_48_CONTACT_LIST_AND_STRATIFICATION.md` — Full contact matrix, Tier A/B/C stratification, engagement scoring, Domain 51 conflict matrix; 9 organizations with verified contacts, decision-maker names, advocacy focus, and send-wave assignments
+2. `DOMAIN_48_EMAIL_TEMPLATE_SET.md` — 4 audience-specific email templates (Template A: criminal justice/sentencing reform; Template B: voting rights/democracy; Template C: state/local advocacy; Template D: M4BL/structural justice) with personalization fields and send sequencing
+3. `DOMAIN_48_GIST_CREATION_STEPS.md` — 10-step Gist creation procedure, Zone A/D structure with document verification checklists, troubleshooting, and Zone D partner activation playbook
+4. `DOMAIN_48_DISTRIBUTION_SEND_LOG_TEMPLATE.md` — Pre-send verification table, 6-send tracking log (Wave 1 June 16–17, Wave 2 June 18–19), response tracking, Gist analytics, Day 7 checkpoint criteria (June 23–25), July 15 Virginia coalition deadline
+5. `DOMAIN_48_TIMING_AND_RESOURCE_COORDINATION.md` — Parallel vs. sequential analysis with risk table, Virginia ballot timeline, Domain 48/51 contact conflict matrix (7 orgs × 2 domains), resource load assessment, monitoring protocol
+
+**Advocacy window status**: Infrastructure complete June 5. Gist creation June 13–15. Wave 1 sends June 16–17. Wave 2 sends June 18–19. Day 7 checkpoint June 23–25. Virginia July 15 hard deadline. All windows achievable with June 16 execution start.
+
+---
+
 ## June 4, 2026 — General Research Agent — Domain 54 Youth Civic Power Preliminary Research (Item 65, Exploration Queue)
 
 **Task**: Produce three production-ready preliminary research deliverables for Domain 54 (Youth Civic Power / Youth Voter Engagement and Antidemocratic Targeting) to de-risk the July–August 2026 full research execution window. Election cycle deadline: November 3, 2026.
