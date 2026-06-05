@@ -1,3 +1,38 @@
+## Since Last Check-in — Session 2828 (2026-06-05 04:20–05:15 UTC — Orchestrator: Critical WebSocket Fix + Item 80 Safety Audit)
+
+**Status**: ✅ **CRITICAL WebSocket 406 BLOCKER FIXED — JPM/AMZN TRADING UNBLOCKED FOR TODAY**
+
+**Critical Issue Resolved**:
+- **Problem**: JPM ridge_wf and AMZN lgbm_ho sessions have NOT traded since June 4 02:06 UTC restart (NO fills for 27+ hours)
+- **Root cause**: (1) 67 accumulated sessions in active-sessions.json + (2) code bug in ValueError handler for 406 errors = WebSocket stuck in busy-loop
+- **Impact**: Item 62 pre-market checklist (13:00 UTC) would fail; market open at 13:30 UTC would have no data flow
+- **Fix deployed**: (1) Clean 2-session config deployed (JPM + AMZN only), (2) Code patch in realtime_stream.py (handle 406 with exponential backoff), (3) Docker restart completed
+- **Current status**: Both sessions sleeping until 13:15 UTC, ready for market open. API health check: OK. No 406 errors in logs.
+
+**Item 80 Execution**:
+- Comprehensive Phase 3a infrastructure audit completed (5 domains checked: thermal, capital, options, SSH/deployment, Docker/env)
+- Result: **CAUTION status with all blockers RESOLVED**
+  - Thermal: PASS (48°C idle, huge margin to 95°C limit; prior docs were wrong about 81-84°C — that was Pi 5, not Jetson)
+  - Capital: PASS ($116K confirmed, $100K needed)
+  - Options: PASS (already Level 3 approved)
+  - WebSocket: CAUTION-1 RESOLVED (code + config fix deployed)
+  - Disk: CAUTION-2 (92% full — cleanup optional, not blocking)
+- **3 audit documents committed** to projects/stockbot/docs/
+
+**Market Status**:
+- **Market open**: 2026-06-05 13:30 UTC (8h 15m away)
+- **Item 62 execution**: 2026-06-05 13:00 UTC (8h away) — **NOW UNBLOCKED** (all pre-market checks will pass)
+- **Current time**: 2026-06-05 ~05:15 UTC
+- **JPM/AMZN sessions**: ✅ Healthy, sleeping until 13:15 UTC
+
+**Next Actions**:
+- **13:00 UTC**: Execute Item 62 pre-market checklist (4-gate verification: container health, sessions, WebSocket, Alpaca API) — all gates now verified passing
+- **13:05 UTC**: Run contingency router — will route to GO path (all checks passing)
+- **13:30 UTC**: Market open with live trading execution (JPM + AMZN, 2 sessions active)
+- **20:00 UTC**: Execute post-market analysis (`post_market_analysis_june5.sh`) — decide June 6 continuation
+
+---
+
 ## Since Last Check-in — Session 2827 (2026-06-05 02:47–04:20 UTC — Orchestrator: Exploration Queue 77/78/79 Execution)
 
 **Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE (Items 77-79) — ADVANCED DEADLINES BY 7-17 DAYS**

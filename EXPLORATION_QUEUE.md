@@ -1179,6 +1179,39 @@
 **Owner**: general-research subagent
 **Status**: COMPLETE, findings support user decision on Phase 2 viability by 23:59 UTC June 3.
 
+### 80. ⏳ stockbot — Phase 3a Pre-Deployment Safety Audit & Blocker Detection (Session 2828+)
+**Context**: Phase 3 asset validation complete (Item 71). User approval deadline June 7. Before user decision, orchestrator should audit all infrastructure to surface any blocking issues early: thermal baseline confirmation, Alpaca Level 1 options eligibility verification (required for covered-call overlay path), confirmed capital allocation, and Jetson readiness verification.
+**Scope**: Pre-decision audit of Phase 3a deployment infrastructure:
+  - **Thermal baseline**: Current idle/peak temperatures on Jetson with 2-session active. Verify passive cooling adequate for 87-90°C peak (safety margin to 95°C Jetson limit). Identify any thermal throttling or performance penalties.
+  - **Alpaca Level 1 options eligibility**: Check account status for options approval (questionnaire deadline June 25, but status check NOW informs design decisions on covered-call tier)
+  - **Capital allocation confirmation**: Verify equity ≥$100K confirmed for Phase 3a deployment (required for 4-session scaling: $25K per session margin). Check for any margin constraints post-checkpoint.
+  - **Jetson SSH access and deployment readiness**: Confirm connectivity, verify rsync paths, test model pkl syncing (critical for AAPL retrain June 11)
+  - **Docker and environment verification**: Check Alpaca API credentials (API key/secret stored correctly), ENV loading in compose file, Uvicorn binding (127.0.0.1 not 0.0.0.0)
+  - **Contingency paths if issues found**: Map any discovered blockers to user decisions required before June 7
+**Deliverables**:
+  - `PHASE_3A_SAFETY_AUDIT_RESULTS.md` (decision tree: PASS → proceed June 7, CAUTION → 1-3 items user action required, CRITICAL → escalation to June 7)
+  - `JETSON_THERMAL_BASELINE_REPORT.md` (current temps, margin analysis, cooling adequacy assessment)
+  - `PRE_DEPLOYMENT_BLOCKER_LOG.md` (any issues found + remediation steps or user actions required)
+**Owner**: stockbot subagent
+**Deadline**: June 5 evening (before user is asked to decide June 7) — URGENT to surface blockers early
+**Why HIGH PRIORITY**: Phase 3 decision is June 7; any blockers discovered post-decision would slip deployment. Early detection enables user to approve/defer/contingency by June 7.
+
+### 81. ⏳ systems-resilience — Wave 2 Author Recruitment Contingency Automation (Session 2828+)
+**Context**: Wave 2 author recruitment is June 14-15 (Item 69 target list + outreach templates complete). Recruitment outcome determines Wave 2 launch feasibility June 20. Pre-stage contingency automation for: no-show authors, recruitment lag (slow responders), mid-sprint author dropout, and backup author activation procedures.
+**Scope**: Build contingency infrastructure for author recruitment critical path:
+  - **Recruitment response tracking**: Auto-script to monitor email responses June 7-13 (template email tracking, response classification, no-show flagging)
+  - **Slow-responder escalation**: If Tier A author hasn't responded by June 11, auto-activate Tier B fallback (with notification template and offer boost strategy)
+  - **Mid-sprint dropout recovery**: If recruited author drops out Days 3-7 (June 23-27), backup author activation checklist + content reassignment logic
+  - **Go/No-Go gate logic**: By June 14 EOD, can Wave 2 launch with recruited team? Minimum viable roster identified (core 4 domains always go, optional 2 deferred if recruitment weak)
+  - **Author onboarding contingency**: If Nextcloud+Matrix not ready June 15, fallback to Google Drive onboarding (from Item 64)
+**Deliverables**:
+  - `RECRUITMENT_RESPONSE_TRACKING_AUTOMATION.md` (daily email monitoring script, response classification logic, escalation triggers)
+  - `RECRUITMENT_CONTINGENCY_PLAYBOOKS.md` (5 named scenarios: full success, 1 dropout, 2+ dropouts, slow-responders critical path, zero-recruitment fallback)
+  - `WAVE_2_GO_NO_GO_DECISION_GATE_JUNE14.md` (minimum viable author roster, tiered launch scenarios A/B/C, contingency platform paths)
+**Owner**: general-research subagent
+**Deadline**: June 13 (ready for June 14 author matching session decision, contingency paths active if needed)
+**Why MEDIUM PRIORITY**: Supports June 15 Wave 2 activation; contingency routes prevent 2-week timeline slip if recruitment weakens.
+
 ---
 
 ## Queue Management Rules
