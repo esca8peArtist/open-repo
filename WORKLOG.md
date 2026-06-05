@@ -12,7 +12,14 @@
 1. **20:00 UTC** (59 min) — Item 62 market close → Item 83 post-market analysis execution
 2. **20:30 UTC** (~90 min) — Item 70 decision routing (GO/CAUTION/NO-GO for June 6)
 
-**No New Blocks**: All projects unchanged. Continuing standby protocol.
+**Item 83 Validation Procedure (Next Session)**:
+- Location: `projects/stockbot/docs/JUNE_5_6_LIVE_VALIDATION_PROCEDURE.md` (550 lines, comprehensive)
+- Scope: 6 sections over ~40 min (data collection, fill comparison, signal validation, infrastructure health, drift detection, decision matrix)
+- Deliverable: GO/CAUTION/NO-GO decision for Phase 3a deployment (June 15)
+- Prerequisites: Alpaca paper account API access + Jetson SSH (for temperature monitoring)
+- Note: Procedure requires manual CLI execution post-market (Section 1-6 forms cannot auto-run)
+
+**No New Blocks**: All projects unchanged. Session 2904 complete — standing by for cron invocation at ~20:00 UTC to execute Item 83.
 
 ---
 
