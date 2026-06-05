@@ -1,3 +1,38 @@
+## Since Last Check-in — Session 2822 (2026-06-05 00:33 UTC — Orchestrator: Final Pre-Market Standby)
+
+**Status**: ✅ **STANDBY CONFIRMED — ZERO AUTONOMOUS WORK UNTIL ITEM 62 AT 13:00 UTC** — Final protocol orientation completed. All systems verified production-ready. Item 62 pre-market checklist script ready for 13:00 UTC execution. Market open at 13:30 UTC with GO WITH CAUTION decision active.
+
+**Work Completed**:
+- ✅ **Complete protocol orientation**:
+  - ORCHESTRATOR_STATE.md verified current (generated 2026-06-05 00:32 UTC)
+  - PROJECTS.md verified: All projects blocked on user action or scheduled dates — no new work available
+  - BLOCKED.md verified: 2 active blocks remain (cybersecurity VeraCrypt restart, mfg-farm test print) — both user-action-only
+  - INBOX.md verified: No new items (all processed from prior session)
+  - EXPLORATION_QUEUE.md verified: 3 active items (16, 66, 70)
+- ✅ **Block resolution assessment**: Both blocks remain unresolved; no new resolutions available
+- ✅ **Autonomous work assessment**: Zero new development work available before Item 62; Items 16/66 have future deadlines (June 9/11)
+- ✅ **Pre-market verification**: Item 62 script verified present and executable (`scripts/stockbot_june5_premarket_check.sh`, 4.7K, executable)
+- ✅ **Resistance-research Domain 51**: Early verification (Session 2821) confirmed production-ready; June 6-8 gates will pass; June 9-12 execution on track
+- ✅ **System readiness**: GO WITH CAUTION decision active; all infrastructure staged; trading sessions sleeping until 13:15 UTC
+
+**Key Status**:
+- Current time: 2026-06-05 00:33 UTC
+- Market open: 13:30 UTC (12h 57m away)
+- **Item 62 pre-market checklist: 13:00 UTC (12h 27m away)** — 4-gate verification, outputs GO/CAUTION/NO-GO decision
+- Gate 1: Container health (docker ps)
+- Gate 2: Session status (session count in logs)
+- Gate 3: WebSocket stability (error count check)
+- Gate 4: Alpaca API connectivity (curl test with auth)
+
+**Needs Your Input** (by June 7):
+- **Phase 3 asset approval**: Confirm AAPL lgbm_ho + MSFT ridge_wf, submit Alpaca Level 1 options approval
+- **mfg-farm test print**: Execute at spec (0.20mm layer height, PLA+, 3 walls, 220–225°C)
+- **cybersecurity-hardening**: VeraCrypt restart on Windows (Phase 1.3 completion)
+
+**Next Action**: June 5 13:00 UTC — Execute `scripts/stockbot_june5_premarket_check.sh` for Item 62 pre-market 4-gate verification, record decision to `JUNE_5_PREMARKET_CHECK_RESULTS.md`, proceed with market open or escalate based on result
+
+---
+
 ## Since Last Check-in — Session 2821 (2026-06-05 00:16 UTC — Orchestrator: Pre-Market Standby + Item 62 Automation)
 
 **Status**: ✅ **STANDBY CONFIRMED WITH PRE-STAGING COMPLETE** — Full protocol orientation completed. Early resistance-research verification passed. Item 62 pre-market checklist automation created and ready. All systems ready for June 5 13:30 UTC market open.
