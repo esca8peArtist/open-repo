@@ -1,9 +1,19 @@
-## Since Last Check-in — Session 2829 (2026-06-05 03:20–04:10 UTC — Orchestrator: Item 81 Wave 2 Author Recruitment Contingency Automation)
+## Since Last Check-in — Session 2829 (2026-06-05 03:20–04:35 UTC — Orchestrator: Item 81 + Domain 51 Contact Corrections)
 
 **Status**: ✅ **ITEM 81 COMPLETE — WAVE 2 AUTHOR RECRUITMENT CONTINGENCY INFRASTRUCTURE PRODUCTION-READY**
 
 **Work Completed**:
-- ✅ **Item 81: Wave 2 Author Recruitment Contingency Automation** (general-research subagent)
+
+### ✅ Domain 51 Contact Corrections (resistance-research)
+- **3 verified corrections applied** (Session 2829, 04:10–04:35 UTC):
+  1. **Clean Money Action Fund email**: `info@cleanmoney.org` → `info@CAclean.org` (verified at yesfairelections.org/about — critical for June 11 Wave 2 send)
+  2. **Campaign Legal Center contact title**: Adav Noti "Policy Director" → "Executive Director" (verified at campaignlegal.org/about/staff)
+  3. **LWV California contact**: "Carol Moon Goldberg (President)" → "Jenny Farrell (Executive Director)" (verified at lwvc.org/about/staff)
+- **Impact**: Domain 51 infrastructure now FULLY EXECUTION-READY for June 9-12 (no further corrections needed)
+- **Files updated**: `domain-51-send-templates.md`, `DOMAIN_51_DISTRIBUTION_SEND_LOG.md`, `PROJECTS.md`
+- **Execution timeline**: Wave 1 (June 9, 09:00 UTC) ready to proceed immediately without corrections; Wave 2 (June 11) all corrections completed in advance
+
+### ✅ Item 81: Wave 2 Author Recruitment Contingency Automation (general-research subagent)
   - **Three production-ready files** created and committed (13.4K words total):
     1. `RECRUITMENT_RESPONSE_TRACKING_AUTOMATION.md` (3,200w) — Daily email monitoring via Python script (`recruitment_monitor.py`); 8-status response classification system with Tier A/B decision trees; dark-rate escalation thresholds (25%/50%); 4 contingency email templates
     2. `RECRUITMENT_CONTINGENCY_PLAYBOOKS.md` (6,200w) — Five named scenarios (A: Full Success, B: 1–2 Dropout, C: ≥3 Dropout, D: Slow Responder, E: Platform Unavailable) with deterministic routing, copy-paste notification templates, timeline impact assessment
