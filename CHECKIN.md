@@ -4,6 +4,31 @@
 
 ---
 
+## Since Last Check-in (Session 2832 — June 5 04:12–04:40 UTC)
+
+**Completed Work**:
+- ✅ **Exploration Queue Item 72**: Stockbot Phase 3 Implementation Roadmap (4,000+ words) — MSFT ridge_wf + AAPL lgbm_ho retrain recommended Phase 3a; Pi 5 thermal budget supports 4-session operation; active cooler required for Phase 3b; June 11 AAPL retrain start, Sept 1 Phase 3a activation gate
+- ✅ **Exploration Queue Item 73**: Resistance-Research Phase 2 Sequential Activation Strategy (3,500+ words) — All 7 Phase 2 domains research-production-complete; Path B (urgency-sequenced) recommended; Domain 59 now → 51 → 48 → 49+50 parallel → 57; honors all external deadlines (Senate June 30, CA ballot July 1, measures Aug 1); 19-25 user execution hours total
+- ✅ **Parallel execution pattern**: Both agents spawned simultaneously, completed in ~5.5 minutes, 138.4k tokens total
+- ✅ **PROJECTS.md updated**: stockbot and resistance-research Current focus lines updated to reflect new strategic documents
+
+**Key Findings**:
+1. **Phase 3 readiness**: MSFT ridge_wf (transfer score 85/100, synthetic Sharpe 1.8–3.2) is unambiguous first-choice; thermal overhead for Phase 3b is manageable with July cooler purchase (~$15 ROI breakeven within 3 throttling events)
+2. **Phase 2 strategic shift**: Phase 2 domains are ALL research-complete; execution becomes coalition activation + distribution timing problem, not research problem. 19-25 user hours vs. estimated 50-90+ hours if research required. User choice becomes: sequence urgency or sequential depth (Path B recommended for deadline integrity)
+
+**Status Summary**:
+- All INBOX items processed (none new)
+- All active blocks unchanged (cybersecurity-hardening: VeraCrypt restart; mfg-farm: test print)
+- Token budget: Nominal (138.4k subagent tokens, 11.1% Sonnet usage)
+- Next critical deadline: **Item 62 execution 13:00 UTC June 5** (pre-market checklist, 4-gate GO/NO-GO decision)
+
+**Next Steps**:
+- 13:00 UTC: Execute Item 62 pre-market checklist (container health, sessions, WebSocket, Alpaca API) — decision routing: 4 GREEN = GO, 2+ FAIL = NO-GO
+- 20:00 UTC: Post-market analysis (1-1.5 hours), update CHECKIN.md with trading session results
+- **By June 7 EOD**: User decisions on Phase 3 (asset approval, AAPL retrain timing, Phase 3b expansion order)
+
+---
+
 ## Since Last Check-in (Session 2831 — June 5 03:49–05:42 UTC)
 
 **Completed Work**:
