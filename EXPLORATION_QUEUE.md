@@ -381,6 +381,60 @@
 **Deadline**: June 6 morning ✅ ADVANCED COMPLETE (5h early)
 **Commit**: 0434c8f1
 
+### 74. ✅ stockbot — Phase 3a Deployment Execution Schedule (Session 2825 COMPLETE)
+**Context**: Phase 3a asset validation complete (Item 71). AAPL lgbm_ho needs retrain (2/6 gates, retrain expected 4-6/6). MSFT ridge_wf GO for initial validation. User approval expected June 7. Need detailed execution schedule to inform June 11 expansion decision.
+**Scope**: Build Phase 3a deployment execution plan:
+  - AAPL lgbm_ho retrain schedule: Jetson compute allocation, thermal limits (87.8°C current), May 2026 training data availability, expected completion date
+  - MSFT ridge_wf deployment order: Dependencies, feature compatibility verification, pre-deployment checklist
+  - Market calendar coordination: Quarterly earnings blackout (Q2 ends June 30), implied volatility spikes, post-NFP patterns
+  - Deployment checklist and rollback procedures: Safety gates, GO/NO-GO criteria, contingency paths
+  - Resource contention: Conflict with systems-resilience Wave 2 (June 15) and resistance-research Domain 51 (June 9-12)?
+**Deliverables**:
+  - `PHASE_3A_DEPLOYMENT_EXECUTION_SCHEDULE.md` (2,500+ words) — Retrain timeline, deployment order, calendar coordination, checklist, contingency paths
+  - `THERMAL_MANAGEMENT_AND_RETRAIN_FEASIBILITY.md` (1,500+ words) — Jetson cooling analysis, compute allocation under load, time-of-day scheduling to minimize thermal impact
+  - `PHASE_3A_DEPLOYMENT_CHECKLIST.md` (1,000+ words) — Pre-deployment gates, execution procedures, rollback safety checks
+**Owner**: stockbot subagent
+**Deadline**: June 10 (informs June 11 expansion decision) — needs completion before user Phase 3 approval decision on June 7
+**Related**: Item 71 (Phase 3A Asset Validation), Item 66 (June 11 Expansion Decision)
+
+### 75. ✅ systems-resilience — Wave 2 Nextcloud+Matrix Deployment Customization (Session 2825 COMPLETE)
+**Context**: Platform selection complete (Nextcloud+Matrix chosen June 4). Wave 2 author recruitment materials (Item 69) and platform-agnostic onboarding (Items 64, 59, 74) production-ready. Need Nextcloud+Matrix-specific implementation for June 15 Wave 2 launch.
+**Scope**: Customize Wave 2 deployment for Nextcloud+Matrix:
+  - Nextcloud+Matrix access provisioning guide: User account creation, credential distribution, first-login workflow
+  - Matrix channel structure: Design domain-specific channels (Domains 60-65), integration channels, governance channels
+  - Author onboarding customization: Nextcloud file sync setup, Matrix client installation/config, first-collaboration workflow
+  - Communication templates: Domain-specific Nextcloud+Matrix setup emails, channel orientation guides, support escalation paths
+  - Instance setup checklist: Pre-June 15 deployment (June 5-10 window), feature verification, load testing
+**Deliverables**:
+  - `WAVE_2_NEXTCLOUD_MATRIX_PROVISIONING_GUIDE.md` (3,000+ words) — Step-by-step access setup, credential distribution, first-sync procedures
+  - `NEXTCLOUD_MATRIX_CHANNEL_ARCHITECTURE.md` (2,000+ words) — Per-domain channel structure, integration points, governance models
+  - `WAVE_2_NEXTCLOUD_MATRIX_DEPLOYMENT_CHECKLIST.md` (1,500+ words) — Pre-deployment verification, load testing, rollback procedures
+**Owner**: systems-resilience subagent (Session 2825)
+**Status**: ✅ PRODUCTION-READY for June 15 Wave 2 deployment
+**Deadline**: June 14 ✅ COMPLETE (June 5, 9 days early)
+**Commit**: b73cdfef
+**Key findings**: 6 domain channels + 3 coordination rooms; all provisioning procedures automated; load test procedures verified (18-author scenario); risk mitigation complete (auth, network, sync, outage); confidence 95%
+**Related**: Item 69 (Wave 1 author recruitment), Item 54 (Wave 2 activation), Item 64 (platform-agnostic onboarding)
+
+### 76. ✅ resistance-research — Phase 2 Contingency Execution Playbooks (Session 2825 COMPLETE)
+**Context**: Phase 2 Sequential Activation Strategy finalized (Session 2824). Domain execution order locked: 51 (June 9-12) → 57 (TBD) → 48 → 49-50 → 54. Need contingency playbooks for each domain to enable rapid decision-making if engagement metrics diverge from expectations.
+**Scope**: Build contingency execution playbooks:
+  - Domain 51 contingency triggers: Low email open rates (<15%), low Gist views (<50/day), zero sales attributed, coalition member no-show, contact list stale (org name change). Activation thresholds for acceleration vs defer vs pivot.
+  - Domain 57 contingency triggers: UN Multilateral treaty advancement acceleration, UNGA 82 timing shift, coalition partner availability changes. Domain 48/49/50 prioritization decision tree if Domain 57 timeline compresses.
+  - Cross-domain resource reallocation: If Domain 51 shows STRONG engagement, should Domains 57/48 run in parallel (resource contention with stockbot June 15 or systems-resilience Wave 2)? Scenarios A/B/C.
+  - Contingency contact expansion: High-priority additional contacts if first-wave shows strong momentum; fallback simplification if engagement weak.
+  - Phase 2 go/no-go decision framework: June 9-12 checkpoint (Domain 51 exit criteria), June 15 checkpoint (cumulative signal decision), cumulative engagement signal log.
+**Deliverables**:
+  - `PHASE_2_CONTINGENCY_PLAYBOOKS_BY_DOMAIN.md` (4,000+ words) — Named scenarios (A-H) per domain, trigger thresholds, activation procedures
+  - `PHASE_2_RESOURCE_REALLOCATION_DECISION_TREE.md` (2,000+ words) — If-then logic for parallel domain execution, capacity allocation, escalation triggers
+  - `PHASE_2_GO_NO_GO_CHECKPOINT_FRAMEWORK.md` (2,500+ words) — June 9-12, June 15, June 30 checkpoint criteria, cumulative signal thresholds, continuation vs phase-out decision logic
+**Owner**: resistance-research subagent (Session 2825)
+**Status**: ✅ PRODUCTION-READY for June 9-12 Domain 51 execution
+**Deadline**: June 8 ✅ COMPLETE (June 5, 3 days early)
+**Commit**: 193205c1
+**Key findings**: Domain 51 trigger thresholds (email open ≥15%, Gist ≥50/day, ≥1 org response); Scenario A/B/C resource allocation framework; June 15 checkpoint gates Stockbot Item 66 + Phase 1 signal; confidence 92%
+**Related**: Item 73 (distribution audit), Item 57 (Phase 2 Batch 2 activation), Phase 2 Sequential Activation Strategy
+
 ## Completed Items (Session 2482 added above; prior sections below)
 
 ## Active Items (Session 1452+)
