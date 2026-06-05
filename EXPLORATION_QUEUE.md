@@ -6,6 +6,54 @@
 
 ## Active Items (Session 2482+)
 
+### 87. ⏳ stockbot — Phase 3b Scaling Architecture (5+ Sessions, Thermal, Training Schedules)
+**Context**: Phase 3a (MSFT + AAPL in June 15) is thermally safe at 90-91°C. Phase 3b (GOOGL + NVDA in August) would add 5th and 6th sessions, pushing thermal ceiling above safe limits. Need architecture plan: active cooling hardware, training schedule coordination, session launch sequencing.
+**Scope**:
+  - Thermal management plan for Phase 3b: active cooler selection ($10-30), thermal paste replacement, orientation optimization, Pi placement (passive airflow)
+  - Training schedule coordination: 5+ concurrent sessions means training during market hours is blocked. Build schedule framework (train after 21:00 UTC EOD, coordinate with Phase 3 expansion timeline)
+  - Resource allocation framework: CPU/memory/disk management for 5+ sessions (profiling data from Phase 3a will inform this)
+  - GPU utilization roadmap (if Pi 5 GPU available, plan for inference optimization)
+  - Session launch sequencing: GOOGL and NVDA validation requirements before Phase 3b activation (August 1 target)
+**Deliverables**:
+  - `PHASE_3B_THERMAL_HARDWARE_PLAN.md` (cooler spec, installation SOP, cost/benefit analysis)
+  - `PHASE_3B_TRAINING_SCHEDULE_FRAMEWORK.md` (5+ session training coordination, post-market windows, backtest+retrain cadence)
+  - `PHASE_3B_SESSION_LAUNCH_CHECKLIST.md` (per-session validation gates, GOOGL/NVDA research requirements, August 1 deployment readiness)
+**Owner**: stockbot subagent
+**Deadline**: June 20 (ready for Phase 3a evaluation + Phase 3b architecture decision)
+**Status**: ⏳ QUEUED for June 6-8 (post-Item-62-validation window)
+
+### 88. ⏳ systems-resilience — Phase 6 Wave 2 Author Matching Automation
+**Context**: Wave 2 author recruitment (June 14-15) will match 50+ volunteer authors to 40+ domains (Tier A/B/C stratification). Manual matching is error-prone. Build automated matching system that suggests optimal pairings based on capability rubric (Item 67 framework).
+**Scope**:
+  - Author intake scoring automation: process completed intake forms (Item 64 AUTHOR_READINESS_INTAKE_FORM.md) and auto-score on 20-point rubric
+  - Domain-author pairing engine: match authors to domains using Item 67 capability-rubric algorithm (avoid solo Tier C assignments, optimize split-domain pairings for Tier A)
+  - Tier assignment logic: auto-tier based on intake score + domain difficulty (Item 67 AUTHOR_DOMAIN_MAPPING_RUBRIC.md)
+  - Conflict detection: flag authors with declared unavailability, special constraints, or skills gaps vs. assigned domain
+  - Onboarding prioritization: sequence author onboarding by tier + domain criticality (Phase 6 Wave 2 critical path depends on priority authors starting June 20)
+**Deliverables**:
+  - `AUTHOR_MATCHING_AUTOMATION_SCRIPT.py` (intake JSON → pairing recommendations, conflict detection, tier assignment)
+  - `AUTHOR_TIER_ASSIGNMENT_LOGIC.md` (decision tree, conflict resolution, escalation triggers for manual review)
+  - `WAVE_2_PRIORITIZED_ONBOARDING_SEQUENCE.md` (tier-based launch order, critical path domains first, contingency reassignment paths)
+**Owner**: general-research subagent
+**Deadline**: June 13 morning (ready for June 14 author matching session)
+**Status**: ⏳ QUEUED for June 7-10 (post-June-4-author-deadline window; intakes close June 8-12)
+
+### 89. ⏳ resistance-research — Phase 3 Domain Expansion & Movement Leverage Analysis
+**Context**: Phase 2 domains (48, 49, 50, 51, 57, 58, 59) are research-complete and distribution-scheduled through August 2026. Phase 2 ends Aug 31. Phase 3 should target fall 2026 / winter 2027 for next round of domains. Build roadmap: identify candidate Phase 3 domains (8-10 domains targeting Nov 2026 - March 2027 windows), assess movement leverage + urgency.
+**Scope**:
+  - Phase 3 candidate domain identification: scan resistance-research 40-domain master framework, identify domains with Q4 2026 / Q1 2027 execution windows (election post-mortems, new Congress swearing-in, budget battles)
+  - Movement leverage scoring: which domains enable strongest coalition activation? (e.g., voting access domain enables voter protection post-election)
+  - Urgency matrix: identify time-sensitive domains (Jan 2027 Congress deadlines, spring 2027 budget deadlines, summer 2027 campaign funding laws)
+  - Research effort estimation: Phase 3 should balance breadth (8-10 domains) with available researcher capacity (estimate needed based on Phase 2 actual hours spent)
+  - Contingency: if Phase 2 takes longer than planned (July 15 deadline slips), what Phase 3 domains should be deferred?
+**Deliverables**:
+  - `PHASE_3_DOMAIN_CANDIDATE_SCORECARD.md` (8-10 candidates, urgency/leverage/feasibility matrix, research hour estimates)
+  - `PHASE_3_EXECUTION_TIMELINE.md` (quarterly timeline, critical path domains, parallel tracks)
+  - `PHASE_3_MOVEMENT_LEVERAGE_ARCHITECTURE.md` (cross-domain coalition opportunities, phase-sequencing for maximum impact)
+**Owner**: resistance-research subagent
+**Deadline**: June 25 (ready for post-Phase-2-Wave-1 planning, zero blocking current work)
+**Status**: ⏳ QUEUED for June 10-20 (after Domain 51 Wave 1 execution completes)
+
 ### 80. ✅ resistance-research — Domain 51 Pre-Wave-1 Contact Verification & Email Template Final Review (Session 2884 COMPLETE)
 **Status**: Completed June 5, 2026 (Session 2884, ~13:35 UTC). All three deliverables production-ready.
 **Decision: GO for June 9 Wave 1 execution.** All five contacts verified. Two personnel changes found and corrected (Common Cause CA: Darius Kemp; LWV CA: Jenny Farrell). One direct email upgrade found (CLC: Erin Chlopak). Gist URL confirmed live. Email templates verified production-ready.
