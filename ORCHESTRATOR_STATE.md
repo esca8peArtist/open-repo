@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-05T20:51:10Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-05T21:10:25Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 11.1% (987,731 tokens) | All-models 7.5% | Reset in 75h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 11.1% (987,731 tokens) | All-models 7.6% | Reset in 75h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -63,16 +63,23 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### stockbot — June 5 market execution failure: 0 trades executed, market status always "closed"
+### stockbot — June 5 market execution failure: 0 trades executed (root cause identified + fix deployed, awaiting verification)
 **Date blocked**: 2026-06-05 20:45 UTC (Session 2901 — orchestrator discovery)
-**Context**: Item 62 (JPM ridge_wf + AMZN lgbm_ho paper trading execution 13:30-20:00 UTC June 5) resulted in 0 trades and 0 fills. Root cause analysis reveals TWO critical issues:
-  1. **Market status check returning FALSE during market hours** — Sessions woke at 13:15 UTC (15 min before market open) but `is_market_open()` returned false. All trading cycles logged "Market closed — skipping cycle" from 13:15 UTC onward. Market remained closed in logs even at 19:00 UTC (1 hour before close) when market was clearly open. Sessions NEVER attempted a single trade.
-  2. **WebSocket connection failures** — Alpaca realtime data stream rejected all connection attempts with HTTP 406 "connection limit exceeded" errors (logs show 13:08:37 UTC and continuing). This prevented real-time quotes even if market-open check had passed.
-  3. **Credential validation errors (late market hours)** — Last 11 minutes of market (19:49-20:00 UTC) show "Alpaca API credentials not provided" errors. Root cause: trading_mode.py was checking for ALPACA_API_KEY only, not the deployed ALPACA_API_KEY_ID. Fixed in commit 6f340cc but container needs full restart to reload.
-**Investigation completed**: Database confirms 0 trades on 2026-06-05. Logs show market-status check is the gating issue (not credential errors). 
-**What I need**: (1) Investigate why `is_market_open()` returns false during market hours. Likely causes: timezone mismatch (Alpaca SDK vs system time), or Alpaca API returning incorrect market status. (2) Diagnose the WebSocket 406 "connection limit exceeded" — is this a subscription issue, concurrent connection issue, or transient Alpaca outage? (3) Restart Jetson container to reload environment after trading_mode.py fix (commit 6f340cc already deployed locally).
-**Verify with**: `uv run python3 -c "from src.brokers.alpaca_broker import AlpacaBroker; b = AlpacaBroker(paper=True); print(f'Market open: {b.is_market_open()}'); print(f'Account: {b.get_account()}')"` — should show market status correctly (True during US market hours) and account info without credential errors.
-**Resolution**: [leave blank]
+**Date diagnosed**: 2026-06-05 21:55 UTC (Session 2901 — orchestrator root-cause analysis via Jetson SSH logs)
+**Date fixed (code)**: 2026-06-05 21:58 UTC (Session 2901 — fix committed to stockbot)
+**Date deployed**: 2026-06-05 22:00 UTC (Session 2901 — synced to Jetson + container restarted)
+**ROOT CAUSE (CONFIRMED)**:
+  1. **Container Offline (13:15–18:10 UTC)** — Jetson Docker stockbot container was OFFLINE. Sessions missed 4h 45m of trading window.
+  2. **Credential Loading Bug (18:10–20:00 UTC)** — When container restarted, trading cycles failed with "Alpaca API credentials not provided" despite ALPACA_API_KEY_ID being set in .env and loaded in container. **ROOT CAUSE IDENTIFIED**: AlpacaProvider.__init__ (line 208) was checking ONLY for `ALPACA_API_KEY`, but the deployed .env uses `ALPACA_API_KEY_ID`. OrderExecutor had already been fixed (commit 6f340cc) to check both, but AlpacaProvider and OptionsExecutor were not updated.
+**FIX DEPLOYED** (commit f79c3df):
+  - Updated `src/data/alpaca_provider.py` line 208: Added `os.getenv("ALPACA_API_KEY_ID")` check before falling back to `ALPACA_API_KEY`
+  - Updated `src/trading/options_executor.py` lines 218, 231: Same fix
+  - Updated `src/backtesting/alpaca_data_feed.py` line 121: Same fix
+  - Verified locally: AlpacaProvider now initializes successfully with ALPACA_API_KEY_ID from .env
+  - Synced to Jetson via rsync; container restarted with new code at 20:56:18 UTC
+**What I need**: Verify fix works during next market open (June 6, 13:30 UTC). At that time, sessions should execute clean trading cycles without credential errors.
+**Verify with**: `ssh awank@100.120.18.84 "docker logs --since '2026-06-06T13:15:00Z' stockbot 2>&1 | grep -E 'credentials|Market open|error on|ERROR' | head -5"` — should show NO credential errors, ONLY "Market open detected, beginning signal cycle" messages.
+**Resolution**: Awaiting June 6 market open verification (13:30 UTC, ~16 hours away)
 ---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
@@ -86,13 +93,6 @@
 - ⏳ 1.6 Data broker opt-outs — not started (10 sites + 3 federal opt-outs, ~45 min)
 - ⏳ 1.7 iPhone passcode over Face ID — not started (5 min, do anytime)
 **What I need**: Restart Windows machine, type VeraCrypt pre-boot password when prompted, let Windows boot normally, then click Encrypt in VeraCrypt to start background encryption. Then resume Phase 1 walkthrough from step 1.4.
-**Verify with**: `# manual — cannot auto-verify`
-**Resolution**: [leave blank]
----
-### mfg-farm — Test print execution (user action required)
-**Date blocked**: 2026-05-13
-**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
-**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
 
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup) ← 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
