@@ -4,51 +4,49 @@
 
 ---
 
-## Since Last Check-in (Session 2891 — June 5 14:50–14:55 UTC — ORCHESTRATOR STANDBY STATE, ITEM 62 AUTO-EXECUTING)
+## Since Last Check-in (Session 2892 — June 5 14:58–15:05 UTC — EXPLORATION QUEUE POPULATION, STANDING BY FOR POST-MARKET ANALYSIS)
 
-**Current Time**: 14:50 UTC (Item 62 executing, 1h 20m into market open)
+**Current Time**: 15:05 UTC (Item 62 executing, 1h 35m into market open; 4h 55m until post-market analysis at 20:00 UTC)
 
-**Orchestrator Session Status** (Session 2890):
-✅ **Orientation complete** — Confirmed Item 62 auto-executing (market ongoing), no new blocking issues
-✅ **Item 83 verification executed** — Backtesting pipeline confirmed production-ready (42 tests passing, all deliverables committed)
-✅ **Exploration queue assessment** — Items 80-85 complete; Items 66+ scheduled for June 9+; no other items ready for immediate autonomous execution
-✅ **Decision**: Execute Item 83 verification (queued, unblocked, Phase 3 gating dependency)
+**Orchestrator Session Status** (Session 2892):
+✅ **Orientation complete** — Confirmed Item 62 auto-executing (market ongoing), all orchestration files up-to-date
+✅ **Exploration queue audit** — Found <3 active items (only Item 16 due June 9); per protocol, added 3 new strategic items
+✅ **Decision**: Populate exploration queue, stand by for 20:00 UTC post-market analysis (Item 62 validation)
 
 **Work Completed**:
-1. **Item 83 — Phase 3a Backtesting Pipeline Verification** (stockbot subagent, 72k tokens):
-   - ✅ **Three production deliverables verified**:
-     - `BACKTESTING_HARNESS_SPECIFICATION.md` — 3-stage pipeline architecture (walk-forward → Phase 3a assessment → live comparison), Alpaca IEX data source (policy-compliant), feature replay, fill simulation (next-bar open), 10-metric suite (Sharpe/Sortino/Calmar/MaxDD/t-stat/DSR/regime Sharpe/WFE/win rate/profit factor), SQLite schema, deployment thresholds, all execution commands
-     - `MSFT_AAPL_BACKTEST_RESULTS_2024_2025.md` — Historical walk-forward 2024-2025 with per-year GO/CAUTION decisions. Projections [PROJECTION] format; update protocol documented for June 11-12 post-retrain. Summary: MSFT 2024 GO (Sharpe 2.80), AAPL 2024 CAUTION (marginal gates).
-     - `JUNE_5_6_LIVE_VALIDATION_PROCEDURE.md` — Post-market procedure (after 20:00 UTC) with 9-check validation matrix (Z-score drift, thermal, signal timing, fill quality). Outputs GO/CAUTION/NO-GO for June 7 user decision.
-   - ✅ **Code & tests**: `run_phase3a_backtest_pipeline.py` (CLI runner, projection fallback), `test_phase3a_backtest_pipeline.py` (42 tests, 100% passing)
-   - ✅ **Committed**: b7320ae (initial), 2f98b77 (docs relocation)
-
-**Key Findings**:
-- AAPL lgbm_ho retrain (June 11 21:00 UTC) is hardest gate. Backtesting pipeline enables objective validation independent of user intuition.
-- MSFT ridge_wf confidence 85%+ (transfer-learning from JPM, feature compatibility confirmed)
-- Backtesting infrastructure now enables Phase 3a go/no-go decision framework for June 7 user decision
+1. **Exploration Queue Population** (3 new items added per <3-items protocol):
+   - **Item 87**: stockbot Phase 3b Scaling Architecture (deadline June 20, 2-3h research)
+   - **Item 88**: systems-resilience Wave 2 Author Matching Automation (deadline June 13, 1-2h scripting)
+   - **Item 89**: resistance-research Phase 3 Domain Expansion (deadline June 25, research planning)
+   - Rationale: Strategic items for June 7-25 window; no blocking dependencies; advance project Goals while June 9+ items scheduled
+2. **Orchestration commits**: EXPLORATION_QUEUE.md + WORKLOG.md committed (commit `932b9c39`)
 
 **Current Work Assessment**:
 - ✅ **Items 83-85 complete** — Three foundation items ready: backtesting pipeline, measurement dashboard, checkpoint automation
+- ✅ **Exploration queue populated** — 4 active items (Item 16 + Items 87/88/89)
 - ✅ **Item 62 executing** — Trading session live through 20:00 UTC (JPM ridge_wf + AMZN lgbm_ho)
 - ⏳ **No blocking issues** — All infrastructure verified, production-ready
-- ⏳ **No other autonomous work** — All remaining items scheduled June 9+ or blocked on user actions
+- ⏳ **No unblocked autonomous work** — Next scheduled work is post-market analysis at 20:00 UTC
 
 **Timeline**:
-1. **15:15 UTC** ✅ Session 2890 work complete (Item 83 verified)
-2. **20:00 UTC** (4h 45m) Post-market analysis window (Item 62 data collection + contingency routing)
-3. **20:30 UTC** GO/CAUTION/NO-GO decision for June 6 continuation
-4. **June 6, 13:30 UTC** Next market open (subject to contingency outcome)
+1. **20:00 UTC** (4h 55m) Post-market analysis window — run `JUNE_5_6_LIVE_VALIDATION_PROCEDURE.md`
+   - Retrieve Item 62 live fills (Alpaca API)
+   - Compare backtest assumptions vs. actual execution (slippage, latency)
+   - Generate GO/CAUTION/NO-GO decision for Phase 3a user decision (due June 7)
+   - Route contingencies if Item 62 shows divergence
+2. **June 6, 13:30 UTC** Next market open (Item 62 continues subject to contingency outcome)
+3. **June 7, 09:00 UTC** User decision gate (Phase 3a asset approval: AAPL lgbm_ho, MSFT ridge_wf)
+4. **June 9, morning** Domain 51 Wave 1 execution (user action gates must complete first)
 
-**Status**: Item 83 production-ready and verified complete. Item 62 auto-executing on schedule. Orchestrator standing by for 20:00 UTC post-market analysis.
+**Status**: Exploration queue populated (4 active items). Item 62 auto-executing on schedule. Orchestrator standing by for 20:00 UTC post-market analysis.
 
-**Needs Your Input** (non-urgent, see BLOCKED.md):
-1. **cybersecurity-hardening** — Windows restart + VeraCrypt pre-boot test (when ready)
-2. **mfg-farm** — Test print execution with specifications (when ready)
-3. **seedwarden Track B** — User action gates (5 gates, 3.5–4.5 hours, zero blockers, ready anytime)
-4. **Phase 3a user decision** (June 7, 09:00 UTC) — Asset approval (AAPL lgbm_ho, MSFT ridge_wf), Alpaca options level, capital confirmation
+**Needs Your Input** (prioritized):
+1. **seedwarden Track B** (URGENT—activation-ready zero blockers) — 5 user action gates (Gate 4: PDF upload; Gates 1-3-5: social/email/etc; Gate 2: Canva), 3.5–4.5 hours total, can start anytime
+2. **Phase 3a user decision** (June 7, 09:00 UTC) — Asset approval (AAPL lgbm_ho, MSFT ridge_wf), Alpaca options Level 1 approval status, capital/buying power confirmation
+3. **cybersecurity-hardening** (Phase 1 walkthrough in progress) — Windows restart + VeraCrypt pre-boot test (when ready)
+4. **mfg-farm** (test print ready) — Test print execution with specifications (0.20mm layer, PLA+, 3 walls, 220–225°C) when ready
 
-**Usage Budget**: Sonnet ~11.5% (estimate after this session) | Reset in ~80 hours
+**Usage Budget**: Sonnet ~11.8% (cumulative estimate after Session 2892) | Reset in ~79 hours (Tuesday 00:00 UTC)
 
 ---
 
