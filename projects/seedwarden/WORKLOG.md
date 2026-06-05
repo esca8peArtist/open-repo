@@ -4,6 +4,43 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Exploration Queue Item 77 — Phase 3 Medicinal Herbs Production Sprint Roadmap — June 5, 2026
+
+**Task**: Build a detailed Phase 3 medicinal herbs production sprint roadmap for seedwarden. Three output files: production sprint roadmap, sourcing pre-sprint checklist, writer load model.
+
+**Input documents read**: `phase-3-medicinal-herbs-content-outline.md` (5,800 words, 5 bundles, all species and section complexity), `phase-3-medicinal-herbs-critical-path-analysis.md` (v6.0, 22-day sprint plan, adjusted hours, bottleneck analysis), `phase-3-medicinal-herbs-production-timeline.md` (v5.0, Gantt detail, risk matrix), `phase-3-medicinal-herbs-sourcing-guide.md` (supplier tiers, lead times), `assets/phase-3-medicinal-herbs/PHOTO_ATTRIBUTION_LOG.md` (14 species, photo tracking).
+
+**Files written**:
+
+1. `phase-3-production-sprint-roadmap.md` (~4,800 words)
+   - Per-bundle hour breakdown grounded in content-outline complexity: WH 14–16 hrs, Resp 12–14 hrs, Sleep 11–13 hrs (adjusted), Immunity 10–12 hrs (adjusted), Digestive 9–11 hrs (adjusted)
+   - 6-week production calendar with daily task blocks (June 22 – August 3)
+   - Critical path analysis: Women's Health is the bottleneck (zero float Days 1–3); optimal write order is WH → Resp → Immunity → Sleep → Digestive (maximizes shared-species savings)
+   - Digestive deferral analysis: not recommended (forager cross-sell window is time-sensitive within 60 days of Track B launch)
+   - Timeline slip triggers: June 24 EOD pace gate (Option C activation), July 5 EOD Immunity slip, July 8 EOD Digestive slip
+   - Canva design queue integrated (12.5 hours, parallel to writing, design lock July 3 EOD)
+   - Pre-sprint actions June 5–21, FTC quick reference appendix, upload sequence appendix
+
+2. `phase-3-sourcing-pre-sprint-checklist.md` (~3,600 words)
+   - Ordered sourcing actions by urgency: Immediate (June 8), Tier 1 (June 13), Tier 2 (June 15), Pre-Sprint (June 17–21)
+   - At-risk species resolved: Goldenseal via Eric Hunt CC-BY-SA 4.0 Wikimedia + botanical garden outreach (NC Botanical Garden, Missouri Botanical Garden); Black Cohosh via Wikimedia CC-BY-SA + iNaturalist
+   - Lead time table for all 14 species
+   - Studio photography session plan (June 17–21, Mountain Rose Herbs dried herb order)
+   - June 21 pre-sprint gate verification checklist (image sourcing, photo editing, Canva brand kit, writing source materials)
+
+3. `phase-3-writer-load-model.md` (~3,800 words)
+   - Three models: solo (10–12 hrs/week, $0 cash, 6–7 weeks), contractor (40 hrs/week, $1,350–1,650, 2 weeks writing), hybrid (user 20 + contractor 20 hrs/week, $1,000–1,350, 4–5 weeks)
+   - Section assignment matrix: user retains contraindications, conservation sidebars, traditional use framing, CITES sidebar, forager cross-sell hook; contractor drafts identification, cultivation, constituents, preparation methods
+   - Contractor brief template (ready to send)
+   - Contractor search timeline: June 5–8 post brief, June 8–14 interviews, June 15–17 select; June 17 decision deadline (confirm contractor or default to solo)
+   - Recommendation: hybrid if contractor confirmed by June 17; solo at 12 hrs/week if not
+
+**Design notes**: All hour estimates grounded in content-outline section-by-section complexity and verified against the Phase 3 critical path analysis velocity assumptions (300–350 words/hour). Calendars assume June 22 start; if Phase 2 Day 14 gate slips, all dates slide by slip delta. Contractor brief template is production-ready for immediate use.
+
+**Deadline met**: Item 77 pre-staging complete (June 5). Activate on Phase 2 Day 14 GO decision (June 19). Sprint begins June 22.
+
+---
+
 ## Exploration Queue Item 59 — Track B Post-Launch Monitoring Automation Framework — June 4, 2026
 
 **Task**: Design Day 3/7/14 checkpoint automation for Track B post-launch tracking window (June 4–18, 2026).
