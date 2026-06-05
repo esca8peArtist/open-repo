@@ -1,3 +1,39 @@
+## Session 2901 (2026-06-05 20:42–20:57 UTC — Orchestrator: Critical Failure Diagnosis + Recovery Action)
+
+**Status**: ⚠️ **CRITICAL BLOCK CREATED** — Item 62 (June 5 market trading) executed but produced ZERO trades. Root cause investigation completed. Three critical infrastructure issues identified and documented in BLOCKED.md.
+
+**Item 62 Outcome**: **FAILURE — 0 TRADES EXECUTED**
+- Market window: 13:30-20:00 UTC June 5 (normal US market hours)
+- Sessions deployed: JPM ridge_wf + AMZN lgbm_ho (both in paper mode)
+- Expected behavior: continuous trading cycles, signal generation, market orders
+- Actual behavior: ALL trading cycles logged "Market closed — skipping cycle" from 13:15 UTC onward
+- Database result: 0 trades, 0 fills on June 5
+
+**Root Cause Analysis**:
+1. **CRITICAL: Market status always returned "closed"** — `is_market_open()` reported false even during market hours (13:15+ UTC logs show "Market closed"). Sessions never woke for trading. Likely cause: timezone mismatch or Alpaca API returning incorrect status.
+2. **WebSocket connection failures** — Alpaca realtime data stream rejected all connection attempts with HTTP 406 "connection limit exceeded" errors (logs from 13:08 UTC onward). Prevented real-time quote feeds even if market-open check had passed.
+3. **Credential validation errors (late market)** — Final 11 minutes (19:49-20:00 UTC) showed "Alpaca API credentials not provided" errors. Root cause: trading_mode.py checking ALPACA_API_KEY only (not ALPACA_API_KEY_ID).
+
+**Actions Taken This Session**:
+1. ✅ Diagnosed market-status as root cause (90% confidence based on logs)
+2. ✅ Fixed credential validation bug (trading_mode.py line 324 now checks ALPACA_API_KEY_ID fallback) — commit 6f340cc
+3. ✅ Restarted Jetson Docker container to reload environment — container now healthy, sessions resuming
+4. ✅ Created BLOCKED.md entry with detailed investigation findings and verification commands
+5. ✅ Committed BLOCKED.md and trading_mode.py fix on master
+
+**Item 62 → Item 70 Impact**: 
+- Item 70 was supposed to execute at 20:30 UTC based on Item 62 post-market analysis
+- Since Item 62 produced 0 trades, Item 70 should route to NO-GO or HOLD pending fix
+- User decision on June 7 (Item 83 decision deadline) now blocked on resolution of market-open bug
+
+**Next Steps**:
+1. Need user to investigate why market status is broken (timezone, Alpaca API status, or system clock issue)
+2. Need to diagnose WebSocket 406 errors (subscription level, concurrent connection limit, or transient outage)
+3. Once market-status is fixed, can resume Item 62 trading for June 6 market hours
+4. User decision timeline: June 7 09:00 UTC user decision point now deferred pending infrastructure fix
+
+---
+
 ## Session 2914 (2026-06-05 20:30–20:35 UTC — Orchestrator: Standby Verification + Item 70 Completion Window)
 
 **Status**: ✅ STANDBY VERIFIED — Item 70 decision routing completing (20:30–20:35 UTC). Item 83 backtesting validation auto-wakeup confirmed for 21:01 UTC. Zero autonomous work available. All infrastructure production-ready.

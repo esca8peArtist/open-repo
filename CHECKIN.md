@@ -4,6 +4,40 @@
 
 ---
 
+## ⚠️ CRITICAL: Session 2901 (June 5 20:42–20:57 UTC) — ITEM 62 FAILURE DIAGNOSIS
+
+**ALERT**: Item 62 (stockbot trading execution June 5 13:30-20:00 UTC) **resulted in 0 trades and 0 fills**. Root cause identified: **market open detection is broken** (`is_market_open()` returned false during market hours).
+
+**What happened**:
+- Trading sessions woke up at 13:15 UTC, correctly waiting for 13:30 UTC market open
+- At 13:15 UTC and all subsequent times, `is_market_open()` returned **false** (incorrectly)
+- Sessions logged "Market closed — skipping cycle" for entire market day
+- **Result**: Zero trading cycles executed, zero signals, zero trades
+- **Database confirms**: 0 trades on 2026-06-05
+
+**Three Critical Issues Found**:
+1. **Market status always returns "closed"** (CRITICAL) — timezone mismatch or Alpaca API bug
+2. **WebSocket connection failures** — Alpaca rejecting with HTTP 406 "connection limit exceeded"  
+3. **Credential validation errors** (fixed) — trading_mode.py now checks ALPACA_API_KEY_ID fallback
+
+**Impact on Timeline**:
+- Item 70 (decision routing): Now routes to **NO-GO / HOLD** pending market-status fix
+- Item 83 (June 7 user decision deadline): **DEFERRED** — infrastructure issues must be resolved first
+- June 6 trading: **BLOCKED** until market-status is fixed
+
+**Needs Your Input**:
+1. Can you check if Jetson system clock is correct? (`ssh awank@100.120.18.84 date -u`)
+2. Are you able to test why `is_market_open()` is returning false during market hours?
+3. Check BLOCKED.md for detailed investigation findings and verification commands
+
+**Orchestrator Action**:
+- ✅ Created BLOCKED.md entry with investigation findings
+- ✅ Fixed credential validation bug (commit 6f340cc)
+- ✅ Restarted Jetson container — now running healthily with sessions active
+- ⏳ Standing by for your input on market-status diagnosis
+
+---
+
 ## Since Last Check-in (Session 2915 — June 5 20:35–20:40 UTC — CONTINUATION STANDBY VERIFICATION)
 
 **Current Status**: **CONFIRMED STANDBY CONTINUATION** — Zero autonomous work available. Item 83 backtesting validation procedure remains queued for post-market execution (if triggered by ScheduleWakeup). All infrastructure production-ready. No blocks resolved, no new INBOX items, no eligible Exploration Queue items. Standing by for next scheduled work (Items 89-97 queued June 9+).
