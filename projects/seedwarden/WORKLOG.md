@@ -4,6 +4,48 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 85 — Track B Day 3/7/14 Checkpoint Automation Scripts — June 5, 2026
+
+**Task**: Build production-ready Python automation scripts for Track B Day 3/7/14 monitoring checkpoints, plus cron setup guide and contingency decision implementation doc.
+
+**Input documents read**: `CONTINGENCY_TRIGGER_DECISION_TREE.md` (8-scenario tree, GO/CAUTION/NO-GO thresholds), `TRACK_B_MONITORING_AUTOMATION_FRAMEWORK.md` (Day 3/7/14 metric collection procedures, Campaign Monitor API snippets), `KIT_SETUP_NOTES.md` (Kit platform reference), `DAY_3_AND_7_DECISION_GATES.md` (predecessor thresholds), `TRACK_B_CHECKPOINT_DECISION_FRAMEWORK.md` (existing scripts/output format), `scripts/track_b_checkpoint_verification.py` (existing verification script for structural reference).
+
+**Files written**:
+
+1. `TRACK_B_MONITORING_AUTOMATION_SCRIPTS.py` (2,089 lines)
+   - Module 1: `CampaignMonitorClient` — API key auth, per-template metrics (Email 1–5), open/click/unsub rates, anomaly detection (>30% open-rate drop, >5% unsub)
+   - Module 2: `GistViewPoller` — direct page fetch, regex view count parse (3 pattern fallbacks), baseline comparison, checkpoint-day status classification
+   - Module 3: `EtsySalesExtractor` — Etsy API v3 paginated order fetch, coupon-code segmentation (EMAIL1–EMAIL5), per-template revenue attribution
+   - Module 4: `KitFunnelFetcher` — Kit API v4 subscriber count (created_after paginated), form subscriber count, funnel metrics
+   - Module 5: `ContingencyDecisionEngine` — 8 scenarios (S1–S8), deterministic GO/CAUTION/NO-GO per scenario, multi-failure S8 auto-trigger, recommended action string
+   - Module 6: `CheckpointOrchestrator` — unified entry point, credential validation, 4-module orchestration, decision engine call, idempotent markdown report write to `CHECKPOINT_REPORTS/`
+   - 22 unit tests across 4 test classes; all pass
+   - Exit codes: 0=GO, 1=CAUTION, 2=NO-GO, 3=error
+   - CLI: `--day {3,7,14}`, `--dry-run`, `--env-file`, manual override flags for all metrics, `--test` mode
+
+2. `CHECKPOINT_AUTOMATION_CRON_SETUP.md` (396 lines)
+   - Cron schedule: Day 3 June 7 09:00 UTC, Day 7 June 11 10:00 UTC, Day 14 June 18 11:00 UTC
+   - Environment variable setup table (required vs optional), `.env` file template with all 15 variables
+   - Crontab lines (ready to paste), uv path verification, permissions setup
+   - Error handling: log files in `/tmp/`, Discord webhook notification (optional), exit code reference
+   - Manual hybrid mode example, full manual mode example, pre-launch verification steps
+
+3. `CONTINGENCY_DECISION_IMPLEMENTATION.md` (452 lines)
+   - Python translation of all 8 scenarios (A–H naming with S1–S8 code keys)
+   - Numeric threshold table for all 8 scenarios across Day 3/7/14
+   - Worked example: Day 7 metrics → per-scenario evaluation → CAUTION outcome → Phase 3 defer recommendation
+   - Traceability table: Python method → CONTINGENCY_TRIGGER_DECISION_TREE.md section
+   - Threshold update instructions
+
+**Files created in CHECKPOINT_REPORTS/**:
+- `checkpoint-day3-2026-06-05.md` — dry-run sample report demonstrating output format
+
+**Design notes**: Script is idempotent (same filename per checkpoint day — second run overwrites first). All API calls have 30-second timeout. `requests` is the only non-stdlib dependency. Credentials loaded from `~/.claude_env` (never from hardcoded values). Manual overrides take precedence over API data. The `--dry-run` flag produces a full GO/CAUTION/NO-GO decision using dummy data — useful for testing cron setup without live credentials.
+
+**Deadline met**: June 6, 2026 deadline. Ready for integration once Track B user action gates complete (June 5+). Cron fires automatically on Day 3/7/14 without any Claude session required.
+
+---
+
 ## Exploration Queue Item 77 — Phase 3 Medicinal Herbs Production Sprint Roadmap — June 5, 2026
 
 **Task**: Build a detailed Phase 3 medicinal herbs production sprint roadmap for seedwarden. Three output files: production sprint roadmap, sourcing pre-sprint checklist, writer load model.
