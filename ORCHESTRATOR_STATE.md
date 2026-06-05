@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-05T19:16:30Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-05T20:51:10Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 11.1% (987,731 tokens) | All-models 7.4% | Reset in 77h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 11.1% (987,731 tokens) | All-models 7.5% | Reset in 75h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -63,6 +63,17 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
+### stockbot — June 5 market execution failure: 0 trades executed, market status always "closed"
+**Date blocked**: 2026-06-05 20:45 UTC (Session 2901 — orchestrator discovery)
+**Context**: Item 62 (JPM ridge_wf + AMZN lgbm_ho paper trading execution 13:30-20:00 UTC June 5) resulted in 0 trades and 0 fills. Root cause analysis reveals TWO critical issues:
+  1. **Market status check returning FALSE during market hours** — Sessions woke at 13:15 UTC (15 min before market open) but `is_market_open()` returned false. All trading cycles logged "Market closed — skipping cycle" from 13:15 UTC onward. Market remained closed in logs even at 19:00 UTC (1 hour before close) when market was clearly open. Sessions NEVER attempted a single trade.
+  2. **WebSocket connection failures** — Alpaca realtime data stream rejected all connection attempts with HTTP 406 "connection limit exceeded" errors (logs show 13:08:37 UTC and continuing). This prevented real-time quotes even if market-open check had passed.
+  3. **Credential validation errors (late market hours)** — Last 11 minutes of market (19:49-20:00 UTC) show "Alpaca API credentials not provided" errors. Root cause: trading_mode.py was checking for ALPACA_API_KEY only, not the deployed ALPACA_API_KEY_ID. Fixed in commit 6f340cc but container needs full restart to reload.
+**Investigation completed**: Database confirms 0 trades on 2026-06-05. Logs show market-status check is the gating issue (not credential errors). 
+**What I need**: (1) Investigate why `is_market_open()` returns false during market hours. Likely causes: timezone mismatch (Alpaca SDK vs system time), or Alpaca API returning incorrect market status. (2) Diagnose the WebSocket 406 "connection limit exceeded" — is this a subscription issue, concurrent connection issue, or transient Alpaca outage? (3) Restart Jetson container to reload environment after trading_mode.py fix (commit 6f340cc already deployed locally).
+**Verify with**: `uv run python3 -c "from src.brokers.alpaca_broker import AlpacaBroker; b = AlpacaBroker(paper=True); print(f'Market open: {b.is_market_open()}'); print(f'Account: {b.get_account()}')"` — should show market status correctly (True during US market hours) and account info without credential errors.
+**Resolution**: [leave blank]
+---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -82,9 +93,6 @@
 **Date blocked**: 2026-05-13
 **Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
 **What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
-**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
-**Resolution**: [leave blank]
----
 
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup) ← 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
