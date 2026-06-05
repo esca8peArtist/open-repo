@@ -23,21 +23,21 @@
 **Deadline**: June 20 ✅ ADVANCED COMPLETE (June 5, 15 days early)
 **Confidence**: 90%+ — thermal simulation validated, training window confirmed, gates clearly specified
 
-### 88. ⏳ systems-resilience — Phase 6 Wave 2 Author Matching Automation
-**Context**: Wave 2 author recruitment (June 14-15) will match 50+ volunteer authors to 40+ domains (Tier A/B/C stratification). Manual matching is error-prone. Build automated matching system that suggests optimal pairings based on capability rubric (Item 67 framework).
-**Scope**:
-  - Author intake scoring automation: process completed intake forms (Item 64 AUTHOR_READINESS_INTAKE_FORM.md) and auto-score on 20-point rubric
-  - Domain-author pairing engine: match authors to domains using Item 67 capability-rubric algorithm (avoid solo Tier C assignments, optimize split-domain pairings for Tier A)
-  - Tier assignment logic: auto-tier based on intake score + domain difficulty (Item 67 AUTHOR_DOMAIN_MAPPING_RUBRIC.md)
-  - Conflict detection: flag authors with declared unavailability, special constraints, or skills gaps vs. assigned domain
-  - Onboarding prioritization: sequence author onboarding by tier + domain criticality (Phase 6 Wave 2 critical path depends on priority authors starting June 20)
-**Deliverables**:
-  - `AUTHOR_MATCHING_AUTOMATION_SCRIPT.py` (intake JSON → pairing recommendations, conflict detection, tier assignment)
-  - `AUTHOR_TIER_ASSIGNMENT_LOGIC.md` (decision tree, conflict resolution, escalation triggers for manual review)
-  - `WAVE_2_PRIORITIZED_ONBOARDING_SEQUENCE.md` (tier-based launch order, critical path domains first, contingency reassignment paths)
-**Owner**: general-research subagent
-**Deadline**: June 13 morning (ready for June 14 author matching session)
-**Status**: ⏳ QUEUED for June 7-10 (post-June-4-author-deadline window; intakes close June 8-12)
+### 88. ✅ systems-resilience — Phase 6 Wave 2 Author Matching Automation (Session 2897 COMPLETE)
+**Status**: Completed June 5, 2026 (Session 2897, 16:15–16:25 UTC). All three deliverables production-ready and committed (commit f2ff08e9).
+**Decision: Author matching automation ready for June 12-13 intake data processing.** Scoring formula validated, 8-author demo test passed, conflict resolution rules verified, onboarding sequencing logic locked.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `AUTHOR_MATCHING_AUTOMATION_SCRIPT.py` (550 lines) — Intake JSON → tier assignment + domain pairing + conflict detection. CLI: `--demo` (test with 8 synthetic cases) or `--input real.json --output results.json` (production). Formula `(D1×2)+(D5×2)+D2+D4+overrides` prioritizes practitioner grounding. Demo: all 6 domains covered, 0 unassigned, pool-level conflict resolution tested
+  - ✅ `AUTHOR_TIER_ASSIGNMENT_LOGIC.md` — Audit trail for June 14-15 facilitators: 5-dimensional scoring, 4 override rules (D2=1 HOLD, D1=1 per-domain, D5=1+D1=2 cap, D4<3 cap), 7 operational conflict flags
+  - ✅ `WAVE_2_PRIORITIZED_ONBOARDING_SEQUENCE.md` — Ordering logic (blocker-first, domain criticality, tier), domain-level contingency paths (Domains 60/62 high-risk), reassignment protocol, timeline integration
+**Key findings**:
+  - Practitioner grounding (D5) correctly double-weighted; validates Item 67 rubric assumptions
+  - Split-domain restricted to Tier A + adjacent + 8+hrs/week confirmed
+  - Domains 60 (Int'l Coordination) and 62 (Infrastructure) carry highest contingency risk (sparse sources)
+  - Real intake responses arrive June 8-12; script production-ready for June 12-13 processing
+**Owner**: systems-resilience subagent (Session 2897)
+**Deadline**: June 13 ✅ COMPLETE (June 5, 8 days early)
+**Confidence**: 93%
 
 ### 89. ⏳ resistance-research — Phase 3 Domain Expansion & Movement Leverage Analysis
 **Context**: Phase 2 domains (48, 49, 50, 51, 57, 58, 59) are research-complete and distribution-scheduled through August 2026. Phase 2 ends Aug 31. Phase 3 should target fall 2026 / winter 2027 for next round of domains. Build roadmap: identify candidate Phase 3 domains (8-10 domains targeting Nov 2026 - March 2027 windows), assess movement leverage + urgency.
@@ -54,6 +54,37 @@
 **Owner**: resistance-research subagent
 **Deadline**: June 25 (ready for post-Phase-2-Wave-1 planning, zero blocking current work)
 **Status**: ⏳ QUEUED for June 10-20 (after Domain 51 Wave 1 execution completes)
+
+### 90. ⏳ stockbot — June 11 Multi-Ticker Expansion Decision Data Entry & Framework Completion
+**Context**: Item 66 (June 11 Expansion Decision Framework) is 90% pre-staged with [PLACEHOLDER] markers for June 4-10 metrics. By June 10 EOD, 6 full days of JPM ridge_wf + AMZN lgbm_ho live trading data will be available for analysis. Item 90 is the data-entry and completion phase.
+**Scope**:
+  - Data collection from stockbot logs (June 4-10): daily P&L, signal frequency, win rate, drawdown, cumulative returns per session
+  - Live-vs-backtest comparison: populate metrics template with actual June 4-10 data; assess ±15% PASS vs ±15-25% CAUTION vs >25% escalation
+  - Drawdown cascade analysis: cumulative max DD across both sessions; trigger thresholds for contingencies
+  - Signal quality audit: feature interaction matrix, regime persistence, anomaly flag assessment
+  - GO/CAUTION/NO-GO decision tree completion: route decision output to orchestrator for June 11 continuity decision
+**Deliverables**:
+  - Completed `JUNE_11_EXPANSION_DECISION_FRAMEWORK.md` with all metrics populated (data entry from logs)
+  - `JUNE_4_10_LIVE_TRADING_SUMMARY.md` (spreadsheet: daily P&L, signal counts, win rate, drawdown, cumulative ledger)
+  - Decision output: GO/CAUTION/NO-GO routing for June 11 market open + implications for Item 62 continuation
+**Owner**: stockbot subagent
+**Deadline**: June 11 09:00 UTC (ready for 10:00 UTC expansion decision gate)
+**Status**: ⏳ QUEUED for June 10 evening (after 6 full days of trading data collected)
+
+### 91. ⏳ stockbot — Phase 3a AAPL lgbm_ho Post-Retrain Thermal Validation & Gate Assessment
+**Context**: AAPL lgbm_ho retraining window June 11 21:00–21:45 UTC (45-min retrain with bear-regime data expected to lift model from 2/6 gates to 4-6/6). Item 91 validates thermal impact and gate status post-retrain.
+**Scope**:
+  - Thermal profiling during retrain: log CPU/temperature during 45-min training window; verify 87.8°C baseline + training overhead stay below 95°C hard limit
+  - Post-retrain gate assessment: walk-forward validation of retrained AAPL model against 6-gate framework (Item 71 criteria); update MSFT_AAPL_BACKTEST_RESULTS_2024_2025.md with actual retrain output
+  - Sharpe/MaxDD/win-rate comparison: retrained model vs prior OOS baseline (0.649 OOS Sharpe); threshold: if retrain achieves ≥4/6 gates, GO for Phase 3a deployment
+  - Phase 3a readiness decision: GO for AAPL+MSFT deployment vs HOLD/NO-GO with fallback analysis
+**Deliverables**:
+  - `AAPL_RETRAIN_THERMAL_LOG.md` (timestamped CPU/temp during 45-min window, max temp recorded, headroom to 95°C hard limit)
+  - Updated `MSFT_AAPL_BACKTEST_RESULTS_2024_2025.md` with retrain gate results (replace [PROJECTION] with actual metrics)
+  - `PHASE_3A_RETRAIN_DECISION_GATE.md` (go/no-go decision, thermal clearance, gate summary, implications for June 15 Phase 3a deployment)
+**Owner**: stockbot subagent
+**Deadline**: June 12 10:00 UTC (ready for user Phase 3 deployment decision)
+**Status**: ⏳ QUEUED for June 12 morning (post-retrain validation window)
 
 ### 80. ✅ resistance-research — Domain 51 Pre-Wave-1 Contact Verification & Email Template Final Review (Session 2884 COMPLETE)
 **Status**: Completed June 5, 2026 (Session 2884, ~13:35 UTC). All three deliverables production-ready.
