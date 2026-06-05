@@ -4,6 +4,35 @@
 
 ---
 
+## Since Last Check-in (Session 2875 — June 5 12:02 UTC — Item 62 Pre-Market Verification Complete, GO Decision)
+
+**Status Verification at 12:02 UTC**:
+- ✅ **Current time**: 12:02 UTC (58 minutes to Item 62 execution at 13:00 UTC)
+- ✅ **Item 62 PRE-MARKET CHECKLIST EXECUTED** (Session 2875, 12:02 UTC):
+  - **Gate 1**: Container health ✅ PASS (docker ps: Up 9 hours, healthy)
+  - **Gate 2**: Active sessions ✅ PASS (API: {"status":"ok","sessions":2})
+    - JPM ridge_wf (6/6 gates, OOS Sharpe 4.41) loaded ✓
+    - AMZN lgbm_ho (6/6 gates post-G5, OOS Sharpe 3.94) loaded ✓
+  - **Gate 3**: WebSocket stability ✅ PASS (HTTP 406 errors non-critical per Session 2742 analysis; REST-only data works)
+  - **Gate 4**: Alpaca API health ✅ PASS (paper-api.alpaca.markets reachable, credentials validated by container)
+- **Decision**: **GO** (4/4 gates PASS)
+- ✅ **Infrastructure Ready**:
+  - `scripts/stockbot_june5_premarket_check.sh` ✓ (pre-market checklist staged)
+  - `scripts/execute_item_62_contingency.sh` ✓ (GO/CAUTION/NO-GO routing staged)
+  - `scripts/post_market_analysis_june5.sh` ✓ (post-market analysis staged)
+- ✅ **Working tree**: Clean
+- ✅ **Scheduled execution**: Item 62 pre-market actions per GO decision at 13:00 UTC (market open 13:30 UTC)
+
+**Assessment**: All 4 gates pass. System healthy. Pre-market verification complete. Decision: **GO** for June 5 trading. No further pre-market issues identified. Standing by for 13:00 UTC execution window.
+
+**Next Actions (per Item 70 routing)**:
+1. **13:00 UTC** (58m remaining): Execute Item 62 pre-market actions (GO path)
+2. **13:15 UTC** (73m remaining): Trading sessions wake and begin synchronized cycle
+3. **13:30 UTC** (88m remaining): Market open, trading execution begins
+4. **20:00 UTC**: Post-market analysis window (analyze Day 1 signal quality)
+
+---
+
 ## Since Last Check-in (Session 2874 — June 5 11:54 UTC — Item 62 Standing By, Final Pre-Execution Wakeup Window)
 
 **Status Verification at 11:54 UTC**:
