@@ -4,26 +4,31 @@
 
 ---
 
-## Since Last Check-in (Session 2896 — June 5 15:39–[in progress] UTC — STANDING BY FOR 20:30 UTC ITEM 70 EXECUTION)
+## Since Last Check-in (Session 2896 — June 5 15:39–16:15 UTC — ITEM 87 COMPLETE, STANDING BY FOR 20:00 UTC POST-MARKET ANALYSIS + 20:30 UTC ITEM 70)
 
-**Current Time**: 15:39 UTC (Item 62 executing, ~2h 9m into market open; 4h 21m until Item 62 completes at 20:00 UTC; 4h 51m until Item 70 executes at 20:30 UTC)
+**Current Time**: 16:15 UTC (Item 62 executing, ~2h 45m into market open; 3h 45m until Item 62 completes at 20:00 UTC; 4h 15m until Item 70 executes at 20:30 UTC)
 
 **Orchestrator Session Status** (Session 2896):
-✅ **Orientation protocol executed** — All state files verified, 4th consecutive orientation confirms status stable  
-✅ **Item 70 dependency identified** — Overdue from June 4 (deadline 20:30 UTC post-Item-61); requires Item 62 output  
-✅ **Decision**: Schedule Item 70 for 20:30 UTC execution (post-Item-62 market analysis completion)  
-✅ **Wakeup scheduled**: 20:30 UTC to execute decision routing automation
+✅ **Orientation protocol executed** — All state files verified, confirmed Item 62 auto-executing  
+✅ **Item 87: Phase 3b Scaling Architecture COMPLETE** — Spawned stockbot subagent, 3 planning documents delivered (thermal, training schedule, launch checklist)  
+✅ **Item 70 scheduled for 20:30 UTC** — Post-Item-62 market analysis, decision routing automation  
+✅ **Session time**: 36 minutes elapsed (orientation + Item 87 work completion)
 
 **Work Completed**:
-1. **Orientation Protocol** (3 files verified):
-   - ORCHESTRATOR_STATE.md: Item 62 auto-executing on schedule, Items 80-85 complete, Items 87-89 queued for future
-   - BLOCKED.md: 2 active user-action blocks unchanged (cybersecurity Windows restart, mfg-farm test print)
+1. **Orientation Protocol**:
+   - ORCHESTRATOR_STATE.md: Item 62 auto-executing, all prior items complete
+   - BLOCKED.md: 2 active user-action blocks unchanged
    - INBOX.md: Clear, no new items
-   - PROJECTS.md: No unfinished autonomous scope identified
+   - PROJECTS.md: No unfinished autonomous scope before June 9+
 
-2. **Status Logging**:
-   - WORKLOG.md updated with Session 2893 orientation summary
-   - All files staged and committed
+2. **Item 87: Phase 3b Scaling Architecture COMPLETE** (Exploration Queue Item 87):
+   - ✅ `PHASE_3B_THERMAL_HARDWARE_PLAN.md` — Active cooler selection (SC1148 ~$5-15), 15-min installation, thermal paste reapplication ($8), thermal watchdog thresholds, ROI 2-3 live days
+   - ✅ `PHASE_3B_TRAINING_SCHEDULE_FRAMEWORK.md` — Overnight training window (21:00-12:30 UTC), per-model times (GOOGL 8-12h, NVDA 10-15h), monthly retraining with event triggers
+   - ✅ `PHASE_3B_SESSION_LAUNCH_CHECKLIST.md` — GOOGL 6/6 gates (June 20 decision), NVDA 5/6 with risk-parity (August 1), position caps and fallback strategy
+   - **Committed**: commit `0e416b2` (subagent), commit `c665139c` (orchestration files)
+   - **Decision**: Phase 3b architecture finalized, active cooler mandatory, June 20 deployment plan locked
+
+3. **WORKLOG.md + EXPLORATION_QUEUE.md** updated and committed
 
 **Current Status**:
 - ✅ **Items 80-85 complete** — All foundation work delivered and committed  
