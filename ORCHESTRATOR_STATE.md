@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-05T08:06:35Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-05T08:19:18Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 11.1% (987,731 tokens) | All-models 6.4% | Reset in 88h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 11.1% (987,731 tokens) | All-models 6.5% | Reset in 88h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -87,7 +87,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: systems-resilience — focus references Session 2826 (16 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 2826 (18 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup) ← 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
 • stockbot — Alpaca "insufficient subscription" prevents live trading (critical blocker) ← 2026-06-02 22:55 UTC (Session 2630 — orchestrator autonomous diagnosis & fix)
