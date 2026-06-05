@@ -50,23 +50,40 @@
   - Trump v. Barbara contingency: 48h update window for Domains 49/50/58
   - Confidence: 92%
 
-**System Status**:
-- Current time: 2026-06-05 06:15 UTC
-- Market open: 2026-06-05 13:30 UTC (7h 15m away)
-- **Item 62 execution: 2026-06-05 13:00 UTC (6h 45m away)** — Pre-market 4-gate checklist (fully automated, contingency router ready)
-- Exploration Queue: Items 74-76 now ✅ complete; active items: Item 16 (June 9 deadline), Item 66 (June 11 deadline)
+**System Status** (as of Session 2826):
+- Current time: 2026-06-05 02:45 UTC (Session 2826 complete)
+- Market open: 2026-06-05 13:30 UTC (10h 45m away)
+- **Item 62 execution: 2026-06-05 13:00 UTC (10h 15m away)** — Pre-market 4-gate checklist (fully automated, contingency router ready, Item 72 playbooks staged)
+- Exploration Queue: Items 74-76 ✅ complete; Items 71-73 ✅ complete; active items: Item 16 (June 9), Item 66 (June 11)
+- **Phase 5.1 publication**: ✅ AUDIT COMPLETE (Session 2826), **GO for June 9 deployment** (84% confidence, two blocking metadata issues fixed)
 - Phase 3a infrastructure: Production-ready for June 11 execution (user approval needed by June 7)
-- Wave 2 deployment: Production-ready for June 15 launch (platform selected, Nextcloud+Matrix customization complete)
-- Phase 2 contingency: Production-ready for June 9-12 Domain 51 execution
+- Wave 2 deployment: Production-ready for June 15 launch (Nextcloud+Matrix platform active, Wave 2 customization Item 75 complete)
+- Phase 2 contingency: Production-ready for June 9-12 Domain 51 execution (Item 76 contingency playbooks staged)
 
-**Needs Your Input** (CRITICAL by June 7):
-1. **Phase 3 asset approval**: Approve AAPL lgbm_ho retrain + MSFT ridge_wf initial validation (Item 71, Item 74 documents provide execution schedule and thermal feasibility)
-2. **Alpaca Level 1 options approval**: Submit questionnaire for covered-call capability (deadline-sensitive for June 25 capital structure decision)
-3. **Infrastructure decisions**: Confirm equity ≥$100K at Checkpoint 3 (June 12), decide covered-call capital structure by June 25
+**Next Actions for User** (deadline-driven):
 
-**Blockers** (unchanged):
-- cybersecurity-hardening: Phase 1 VeraCrypt restart required (user action)
-- mfg-farm: Test print execution required (user action)
+**TODAY (June 5):**
+- ❌ No user action required today (Item 62 pre-market checklist is fully automated)
+- ℹ️ Market open 13:30 UTC with two active sessions (JPM ridge_wf + AMZN lgbm_ho)
+
+**CRITICAL by June 7** (Phase 3 decision gate):
+1. **Phase 3 asset approval**: Approve AAPL lgbm_ho retrain + MSFT ridge_wf initial validation (Documents: PHASE_3A_ASSET_VALIDATION_REPORT.md + PHASE_3_EXECUTION_READINESS_CHECKLIST.md, Item 71-74)
+2. **Alpaca Level 1 options approval**: Submit questionnaire for covered-call capability (deadline June 25, June 7 approval gates design decisions)
+3. **Infrastructure confirmation**: Confirm equity ≥$100K at Checkpoint 3 (June 12), covered-call capital structure by June 25
+
+**June 8-9** (Phase 5.1 publication pre-flight):
+- Verify frontmatter-stripped Phase 5.1 files ready for Nextcloud upload (automation ready, 15-min user spot-check recommended)
+- Confirm Nextcloud+Matrix instance is accessible (deploy + load test already verified, just needs activation confirmation)
+
+**June 9-12** (Domain 51 execution):
+- Execute wave-by-wave email sends to 5 organizations (Wave 1: June 9 09:00 UTC, Wave 2: June 11 09:00 UTC) — templates production-ready, copy-paste execution
+
+**June 14-15** (systems-resilience Wave 2 author matching):
+- Author matching session runbook ready for June 14-15 execution (hour-by-hour plan, all infrastructure staged)
+
+**Ongoing Blockers** (user action required):
+- **cybersecurity-hardening**: Phase 1 VeraCrypt restart needed (user restarts Windows machine, completes pre-boot test)
+- **mfg-farm**: Test print execution needed (0.20mm layer height, PLA+, 3 walls, 220–225°C) — 1-2 hours execution + tolerance evaluation
 
 - ✍️ **Item 66 (June 11 Expansion Decision)**: Pre-staging COMPLETE (108.8k tokens, 3 template docs 2,044 lines). Framework 90% ready; June 4-10 metrics will populate [PLACEHOLDER] cells. June 10 21:00 UTC data entry <30 min, June 11 decision execution <20 min. All failure modes mapped to decision branches.
 
