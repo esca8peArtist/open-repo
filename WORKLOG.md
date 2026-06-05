@@ -42694,3 +42694,38 @@ Given **CRITICAL BLOCKER** (Alpaca auth) status and time constraints:
 - Tokens: minimal (orientation only)
 - Work completed: 0 items (orientation/verification session)
 
+
+---
+
+## Session 2810 (2026-06-05 00:25 UTC) — Orchestrator: Pre-Market Checklist Staging & Item 62 Prep
+
+**Status**: Orientation complete. Zero autonomous work identified until June 5 13:00 UTC (Item 62 execution). All projects blocked on user action or scheduled dates.
+
+**Work assessment**:
+- ✅ Orientation: ORCHESTRATOR_STATE verified, PROJECTS.md/BLOCKED.md audited
+- ✅ Blocks: cybersecurity-hardening (user restart), mfg-farm (user test print) — both unchanged
+- ✅ Inbox: No new items processed
+- ✅ Exploration Queue: Items 16/66/70 all future-dated or complete; <3 items available
+- ✅ Active projects: All blocked on user action or 13:00 UTC gate (stockbot Item 62)
+
+**Scheduled work available**:
+- **Item 62**: Stockbot pre-market checklist (June 5 13:00 UTC) — 4-gate verification before market open
+  - Gate 1: Container health
+  - Gate 2: Active sessions status
+  - Gate 3: WebSocket stability
+  - Gate 4: Alpaca API connectivity
+  - Decision logic: All 4 GREEN → GO; 2+ FAIL → NO-GO (rollback)
+  - Current status: GO WITH CAUTION (from Session 2807)
+
+**Pre-staging actions completed**:
+- ✅ Reviewed ITEM_70_DECISION_ROUTING_AND_RESOURCE_ALLOCATION.md (Item 62 checklist with bash commands)
+- ✅ Verified Jetson SSH connectivity prerequisites
+- ✅ Confirmed 4-gate script is production-ready in Item 70 file
+
+**Next**: Execute Item 62 checklist at 13:00 UTC (12 hours). No development work available in interim period.
+
+**Metrics**:
+- Duration: ~30 minutes (orientation/staging)
+- Tokens: ~15k (agent + prompt)
+- Work completed: 0 items (orientation/staging session)
+
