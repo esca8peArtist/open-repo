@@ -390,6 +390,24 @@
 **Owner**: stockbot subagent
 **Deadline**: June 4 evening (ready for June 5 market open use)
 
+### 83. ⏳ stockbot — Backtesting Pipeline Implementation (Foundation for Phase 3a Pre-Deployment Validation)
+**Context**: Phase 3 Implementation Roadmap identifies "Priority #1: build proper backtesting pipeline before deploying any model." MSFT ridge_wf and AAPL lgbm_ho models are production-ready for Phase 3a (June 7+ user decision), but Phase 3a deployment cannot proceed without backtesting validation infrastructure. Backtesting pipeline must be built before June 7 to enable pre-deployment validation.
+**Scope**: Build comprehensive automated backtesting system:
+  - Feature: Backtesting harness for both MSFT ridge_wf and AAPL lgbm_ho across historical data windows (full 2024, 2025, June 1-5 2026)
+  - Signal audit: Replay signal generation logic against historical bars; measure hit rate, false positive rate, latency distribution
+  - P&L simulation: Simulate fills against historical L2 data (or Alpaca IEX historical); calculate per-session Sharpe, win rate, drawdown
+  - Backtest-vs-live correlation: Once June 5-6 Item 62 completes, validate live execution matches backtest assumptions (±15% pass threshold)
+  - Contingency detection: Pre-identify conditions that would trigger Phase 3a rollback before deployment (e.g., win rate <50%, Sharpe <0.6)
+**Deliverables**:
+  - `BACKTESTING_HARNESS_SPECIFICATION.md` — System architecture (data inputs, feature replay, signal audit, P&L calculation), database schema, validation criteria
+  - `MSFT_AAPL_BACKTEST_RESULTS_2024_2025.md` — Historical backtests: win rate, Sharpe, max DD, signal frequency for both models across all years
+  - `JUNE_5_6_LIVE_VALIDATION_PROCEDURE.md` — Protocol to compare Item 62 (June 5-6 live trading data) against backtest assumptions; GO/CAUTION/NO-GO decision logic for Phase 3a deployment
+**Owner**: stockbot subagent
+**Estimated effort**: 3-4 hours (backtesting harness + historical validation + Item 62 comparison)
+**Deadline**: June 7 (ready for Phase 3a deployment decision gate)
+**Confidence**: 90% — Phase 3 roadmap and thermal readiness already complete; backtesting is mechanical integration
+**Status**: ⏳ QUEUED for Session 2888 (Item 62 executing, unblocked autonomously)
+
 ### 59. ✅ systems-resilience — Platform-Agnostic Phase 5 Publication & Wave 2 Author Onboarding (June 5-15) [COMPLETE SESSION 2752]
 **Status**: Completed June 4 (Session 2752, 07:10–08:00 UTC). All three deliverables verified production-ready.
 **Context**: User will choose platform (Nextcloud+Matrix or Discourse) by EOD June 4, but author onboarding and publication workflow can be pre-scoped platform-agnostically now. Design executable June 5-15 roadmap regardless of platform choice.
@@ -1263,6 +1281,42 @@
 **Owner**: general-research subagent (Session 2829)
 **Status**: ✅ PRODUCTION-READY for June 13 finalization → June 14-15 author matching session execution
 **Deadline**: June 13 ✅ ADVANCED COMPLETE (8 days early)
+
+### 84. ⏳ resistance-research — Phase 1 Impact Evaluation Measurement Dashboard (Foundation for Wave 1 Monitoring)
+**Context**: Phase 1 Wave 1 execution is scheduled for June 9 09:00 AM UTC (exactly 4 days away). Phase 1 Impact Evaluation Framework (Item 96, Session 2839) specifies 5-checkpoint measurement infrastructure: T+3/T+7/T+14/T+30/T+45 days. Google Sheets dashboard template must be pre-populated and ready to deploy at Wave 1 execution time. Orchestrator needs automated measurement collection to track Day 7 checkpoint (June 16-18) on schedule.
+**Scope**: Build production-ready Google Sheets template for Phase 1 measurement:
+  - **T+7 checkpoint (June 16-18)**: Email open rates per contact tier, contact engagement (response/non-response), signal log (outcomes: strong/moderate/weak per Phase 1 framework). Decision tree: strong/moderate → approve Phase 2 batch; weak → defer or replan
+  - **T+30 & T+45 checkpoints**: Email click rates, organizational response rates, signal sustainability (did engagement persist or decay?)
+  - **7-sheet structure**: (1) Daily signal log (date, contact, outcome code, notes), (2) Email analytics (org, open rate %, click rate %), (3) Engagement classification (per-contact status: confirmed/considering/pass), (4) Decision checkpoint record (T+7/T+30/T+45 date, strong/moderate/weak assessment, next-phase action), (5) Cumulative summary (total contacts reached, response rate %, signal distribution), (6) Contingency trigger log (alert thresholds, escalation actions), (7) Phase 2 batch readiness matrix (per-domain activation status post-T+7)
+  - **Integration**: Automated daily data entry via Bitly link tracking (campaign URLs per contact), manual signal log fill-in during daily standups
+**Deliverables**:
+  - `PHASE_1_MEASUREMENT_DASHBOARD_TEMPLATE.md` — Google Sheets structure (7-sheet blueprint, data entry procedures, formula explanations)
+  - `DAILY_SIGNAL_LOG_ENTRY_GUIDE.md` — Decision tree for translating Wave 1 contact responses into signal codes (STRONG/MODERATE/WEAK categories, evidence thresholds per category)
+  - `T7_CHECKPOINT_DECISION_AUTOMATION.md` — Automated summing logic for T+7 decision tree; outputs GO/CAUTION/NO-GO for Phase 2 batch activation with specific domain recommendations
+**Owner**: resistance-research subagent
+**Estimated effort**: 1.5-2 hours (Sheets template creation + formula design + entry guide)
+**Deadline**: June 8 (ready to activate June 9 at Wave 1 execution)
+**Confidence**: 95% — Phase 1 Impact Evaluation Framework already complete; dashboard is structured translation to Sheets
+**Status**: ⏳ QUEUED for Session 2888 (unblocked, independent work)
+
+### 85. ⏳ seedwarden — Track B Day 3/7/14 Checkpoint Automation Scripts (Foundation for Post-Launch Monitoring)
+**Context**: Track B user action gates are ready to execute anytime (June 5+). Once gates complete, Track B will enter autonomous execution phase requiring Day 3/7/14 checkpoints to detect blockers. Item 59 (Session 2757) pre-staged monitoring framework with manual procedures (Campaign Monitor API, Gist view polling, Etsy sales tracking). Orchestrator now needs executable Python scripts to automate these checkpoints so human doesn't need to run manual procedures at Day 3/7/14.
+**Scope**: Build production-ready Python automation scripts for Track B monitoring:
+  - **Campaign Monitor API integration**: Authenticate (API key from user environment), fetch email open/click rates by campaign ID (pre-populated from Item 59), compute per-template metrics (email 1-5 performance), detect anomalies (>30% open drop flagging low engagement)
+  - **Gist view count polling**: Direct page fetch (via requests library), regex parse view count from Gist HTML, compare to baseline (set at Day 0) and Day 3/7/14 expectation curve (Item 59 specifies expected growth pattern)
+  - **Etsy sales attribution**: Query Etsy API (shop_id from Item 59), fetch orders by date range, segment by coupon code (email template codes: EMAIL1/EMAIL2 etc), compute revenue attribution by template
+  - **Kit funnel extraction**: Query Kit Creator (OAuth token from user environment), fetch registration → PDF view → email subscription funnel metrics
+  - **Aggregation & decision logic**: Combine all 4 metrics; apply 8 contingency trigger thresholds (Item 59 CONTINGENCY_TRIGGER_DECISION_TREE.md); output GO/CAUTION/NO-GO decision for Day 3/7/14; write results to Markdown checkpoint report
+  - **Cron integration**: Pre-stage cron job definitions for automatic Day 3/7/14 execution (cron schedule template)
+**Deliverables**:
+  - `TRACK_B_MONITORING_AUTOMATION_SCRIPTS.py` (450+ lines) — Four modules: (1) Campaign Monitor API client, (2) Gist view poller, (3) Etsy sales extractor, (4) Kit funnel fetcher; unified orchestrator entry point that runs all 4, aggregates, applies decision logic
+  - `CHECKPOINT_AUTOMATION_CRON_SETUP.md` — Cron schedule definition (Day 3 at 09:00 UTC, Day 7 at 10:00 UTC, Day 14 at 11:00 UTC); environment variable setup (API keys, shop IDs); error handling & notification (output markdown report to Slack webhook or Discord URL from user config)
+  - `CONTINGENCY_DECISION_IMPLEMENTATION.md` — Python translation of Item 59 CONTINGENCY_TRIGGER_DECISION_TREE.md (8 named scenarios A-H with numeric thresholds, deterministic routing to GO/CAUTION/NO-GO)
+**Owner**: seedwarden subagent
+**Estimated effort**: 2.5-3 hours (API integration + aggregation logic + cron setup)
+**Deadline**: June 6 (ready to integrate post-user-action gates, auto-execute on Day 3/7/14)
+**Confidence**: 85% — Item 59 framework complete; script implementation is mechanical API integration
+**Status**: ⏳ QUEUED for Session 2888 (unblocked, independent work)
 
 ---
 
