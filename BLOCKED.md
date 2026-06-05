@@ -27,6 +27,21 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+### stockbot — June 5 market execution failure: 0 trades executed, market status always "closed"
+**Date blocked**: 2026-06-05 20:45 UTC (Session 2901 — orchestrator discovery)
+**Context**: Item 62 (JPM ridge_wf + AMZN lgbm_ho paper trading execution 13:30-20:00 UTC June 5) resulted in 0 trades and 0 fills. Root cause analysis reveals TWO critical issues:
+  1. **Market status check returning FALSE during market hours** — Sessions woke at 13:15 UTC (15 min before market open) but `is_market_open()` returned false. All trading cycles logged "Market closed — skipping cycle" from 13:15 UTC onward. Market remained closed in logs even at 19:00 UTC (1 hour before close) when market was clearly open. Sessions NEVER attempted a single trade.
+  2. **WebSocket connection failures** — Alpaca realtime data stream rejected all connection attempts with HTTP 406 "connection limit exceeded" errors (logs show 13:08:37 UTC and continuing). This prevented real-time quotes even if market-open check had passed.
+  3. **Credential validation errors (late market hours)** — Last 11 minutes of market (19:49-20:00 UTC) show "Alpaca API credentials not provided" errors. Root cause: trading_mode.py was checking for ALPACA_API_KEY only, not the deployed ALPACA_API_KEY_ID. Fixed in commit 6f340cc but container needs full restart to reload.
+
+**Investigation completed**: Database confirms 0 trades on 2026-06-05. Logs show market-status check is the gating issue (not credential errors). 
+
+**What I need**: (1) Investigate why `is_market_open()` returns false during market hours. Likely causes: timezone mismatch (Alpaca SDK vs system time), or Alpaca API returning incorrect market status. (2) Diagnose the WebSocket 406 "connection limit exceeded" — is this a subscription issue, concurrent connection issue, or transient Alpaca outage? (3) Restart Jetson container to reload environment after trading_mode.py fix (commit 6f340cc already deployed locally).
+**Verify with**: `uv run python3 -c "from src.brokers.alpaca_broker import AlpacaBroker; b = AlpacaBroker(paper=True); print(f'Market open: {b.is_market_open()}'); print(f'Account: {b.get_account()}')"` — should show market status correctly (True during US market hours) and account info without credential errors.
+**Resolution**: [leave blank]
+
+---
+
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
