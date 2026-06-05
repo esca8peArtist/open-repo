@@ -17,6 +17,39 @@
 **Owner**: resistance-research subagent
 **Deadline**: June 9 morning (post-Day-7-checkpoint analysis)
 
+### 77. ⏳ seedwarden — Phase 3 Medicinal Herbs Production Sprint Roadmap
+**Context**: Phase 3 (medicinal herbs Etsy expansion) is the next major revenue milestone for seedwarden after Track B launches. The content production is the acknowledged critical path: the `phase-3-medicinal-herbs-content-outline.md` already estimates 64–74 hours of writing across five bundles, but there is no production sprint plan — no hourly breakdown by bundle, no content calendar, no sourcing sequence, and no writer-hours-per-day model. Pre-staging a detailed sprint roadmap means the moment the gate passes (Day 14 checkpoint June 19), execution can begin Day 1 rather than spending a week planning.
+**Scope**: Produce a complete sprint execution roadmap for Phase 3 medicinal herbs content production covering: (1) bundle-by-bundle writing hour estimates, (2) 6-week production calendar, (3) sourcing sequence, (4) writer-load model (solo vs. contractor), (5) Canva design queue, (6) risk mitigation for at-risk species
+**Deliverables**:
+  - `phase-3-production-sprint-roadmap.md` — 6-week calendar with daily task blocks, per-bundle hour breakdown, solo vs. contractor decision gates
+  - `phase-3-sourcing-pre-sprint-checklist.md` — ordered sourcing actions per bundle with lead-time estimates
+  - `phase-3-writer-load-model.md` — sustainable daily hour model comparison across solo/contractor paths
+**Owner**: seedwarden subagent
+**Deadline**: June 22 (Phase 3 sprint start target; roadmap must exist by then)
+**Estimate**: 2.5–3.5 hours autonomous work
+
+### 78. ⏳ systems-resilience — Phase 6 Wave 2 Content Quality Standards & Peer Review Architecture
+**Context**: Phase 6 Wave 2 launches June 20 with 15–20 authors across 6 domains, many Tier B/C with less independent research experience. The existing infrastructure covers recruitment logistics, but there is no unified content quality standard, no peer review pairing protocol, and no checklist for what "publication-ready" means for Wave 2. Without this, Wave 2 risks high word counts with low operational utility. The June 14–15 author matching session is the only low-friction moment to establish quality norms before authors begin drafting June 20.
+**Scope**: Design a Wave 2 content quality and peer review system: (1) publication-ready criteria document with numeric thresholds, (2) peer review pairing protocol with 48-hour SLA, (3) scope creep detection with escalation path, (4) quality gate integration with Phase 6 milestones
+**Deliverables**:
+  - `WAVE_2_CONTENT_QUALITY_STANDARDS.md` — Publication-ready criteria, scored rubric, 3 worked examples
+  - `PEER_REVIEW_PAIRING_PROTOCOL.md` — Assignment algorithm, review checklist, 48-hour turnaround SLA
+  - `WAVE_2_QUALITY_GATE_INTEGRATION.md` — July 5 and August 30 checkpoint criteria with GO/CAUTION/NO-GO thresholds
+**Owner**: general-research subagent
+**Deadline**: June 14 (must exist before author matching session)
+**Estimate**: 3–4 hours autonomous work
+
+### 79. ⏳ resistance-research — Domain 48 Distribution Execution Infrastructure
+**Context**: Domain 48 (Criminal Justice, Civic Exclusion Architecture) is production-complete but has no distribution infrastructure: no Gist, no email templates, no contact list, no send log. The advocacy window is concrete — Virginia November 2026 ballot measure, Maryland/Alabama 2026 legislative sessions. The Day 7 Domain 51 checkpoint (June 16) is the decision gate for what comes next. If Domain 48 infrastructure doesn't exist by June 12, the checkpoint will recommend activation with nowhere to route it — delaying execution by 5–10 days and narrowing the advocacy window.
+**Scope**: Build complete distribution execution infrastructure for Domain 48: (1) verified organizational contacts (Sentencing Project, Movement for Black Lives, Prison Policy Initiative, Brennan Center, others), (2) 3–4 audience-specific email templates, (3) Gist creation procedures, (4) send log and tracking template, (5) timing analysis for parallel vs. sequential execution
+**Deliverables**:
+  - `DOMAIN_48_CONTACT_LIST_AND_STRATIFICATION.md` — Verified contacts with Tier A/B/C stratification
+  - `DOMAIN_48_EMAIL_TEMPLATE_SET.md` — 3–4 audience-specific templates with framing rationale
+  - `DOMAIN_48_DISTRIBUTION_SEND_LOG.md` — Wave structure, response tracking, Day 7 checkpoint criteria
+**Owner**: resistance-research subagent
+**Deadline**: June 12 (enables Domain 48 activation immediately after Domain 51 Day 7 checkpoint)
+**Estimate**: 2.5–3.5 hours autonomous work; requires web research for contact verification
+
 ### 17. ✅ Stockbot June 2-23 Live Trading Monitoring Protocol (Session 2285 COMPLETE)
 **Status**: Completed May 30 (Session 2285, 21:54–23:30 UTC). All 5 deliverables production-ready.
 **Deliverables** (ALL COMPLETE):

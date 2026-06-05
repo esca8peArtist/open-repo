@@ -1,3 +1,33 @@
+## Since Last Check-in — Session 2827 (2026-06-05 02:47–03:15 UTC — Orchestrator: Domain 51 Pre-Exec Audit + Exploration Queue)
+
+**Status**: ✅ **DOMAIN 51 PRE-EXECUTION VERIFICATION COMPLETE (CAUTION-GO) — EXPLORATION QUEUE EXPANDED (Items 77-79)**
+
+**Work Completed**:
+
+- ✅ **Domain 51 Pre-Execution Verification** (resistance-research subagent, 50k tokens) — Comprehensive HTTP/web audit of Gist URL, all 5 email templates, contact list currency
+  - **Findings**: Gist live ✅, templates complete ✅, **3 contact corrections needed** (15 min fix):
+    1. Clean Money Action Fund: info@cleanmoney.org → info@CAclean.org (CRITICAL for Wave 2 June 11)
+    2. Campaign Legal Center: Adav Noti title correction in send log
+    3. LWV California: contact name update in send log
+  - **Determination**: CAUTION-GO — Wave 1 (June 9) executable without corrections; Wave 2 (June 11) needs pre-send address correction
+  - **Deliverable**: `DOMAIN_51_PRE_EXECUTION_VERIFICATION_REPORT.md` (286 lines, comprehensive findings with source citations)
+
+- ✅ **Exploration Queue Expansion** (general-research subagent, 71k tokens) — Added 3 new items to keep queue at 3+ active items
+  - **Item 77**: seedwarden Phase 3 Sprint Roadmap (deadline June 22, 2.5–3.5h work, critical for July-Aug Phase 3 launch)
+  - **Item 78**: systems-resilience Wave 2 Quality Standards (deadline June 14, 3–4h work, ensures author quality enforcement)
+  - **Item 79**: resistance-research Domain 48 Distribution Infrastructure (deadline June 12, 2.5–3.5h work, enables post-Day-7-checkpoint activation)
+  - **Protocol compliance**: Queue expanded from 1 to 4 active items, meeting 3+ minimum
+
+- ✅ **Updated PROJECTS.md resistance-research Current focus** with June 5 verification completion and specific 3-item correction checklist
+
+**System Status** (as of 03:15 UTC):
+- Domain 51 ready: Wave 1 fully ready; Wave 2 requires 1 email correction
+- Correction budget: 15 minutes (to apply June 9-10)
+- Exploration queue: 4 active items with clear deadlines (no idle tokens)
+- Next critical deadline: **June 9 09:00 AM UTC** (Domain 51 Wave 1 execution)
+
+---
+
 ## Since Last Check-in — Session 2826 (2026-06-05 02:07–02:45 UTC — Orchestrator: Phase 5.1 Audit + Fixes)
 
 **Status**: ✅ **PHASE 5.1 PUBLICATION READINESS AUDIT COMPLETE — PUBLICATION GO FOR JUNE 9**
