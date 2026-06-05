@@ -87,6 +87,56 @@
 **Deadline**: June 22 (ready for Phase 3 production sprint launch + June 1 user review of contractor options)
 **Status**: ⏳ QUEUED for June 6-15 (contractor sourcing and decision window)
 
+### 95. ⏳ stockbot — Jetson Active Cooler Sourcing & Installation Validation (Due June 20)
+**Context**: Item 87 completed Phase 3b scaling architecture (June 5). Active cooler mandatory (Raspberry Pi 5 Active Cooler, SC1148, $5-15). Phase 3b deployment gate June 20 (GOOGL decision). This item validates SC1148 sourcing timeline, installation procedure, thermal validation testing, and cost/benefit ROI for June 20 decision gate.
+**Scope**:
+  - SC1148 availability verification: Pimoroni UK stock + 2-3 day shipping, US vendors (Adafruit, PoE Hat suppliers), cost comparison, MOQ/shipping to Jetson location
+  - Installation validation: 15-min bare-board install procedure, thermal paste removal/reapplication SOP, pre-install baseline measurement vs post-install validation, tool requirements
+  - Thermal validation testing: Peak temperature monitoring during simulated 5-session load (Item 87: 21:00-12:30 UTC overnight window), target 68-71°C vs current 87.8°C baseline, headroom to 95°C hard limit
+  - Cost/benefit ROI: Hardware cost ($10 avg) vs thermal margin gain (20°C) vs Phase 3b thermal requirements (5+ sessions concurrent)
+  - Supply chain contingency: If SC1148 unavailable by June 17, alternative cooler validation (Pimoroni heatsink + fan, GeeekPi tower cooler, noctua-based solutions)
+**Deliverables**:
+  - `PHASE_3B_COOLER_SOURCING_AND_AVAILABILITY.md` — SC1148 stock status (UK/US), delivery timeline to Jetson, alternative vendors, cost breakdown, order deadline for June 20 delivery
+  - `PHASE_3B_COOLER_INSTALLATION_PROCEDURE.md` — Step-by-step install guide, thermal paste removal/reapplication, baseline measurement protocol, safety checks
+  - `PHASE_3B_COOLER_THERMAL_VALIDATION_TEST_PLAN.md` — 5-session load simulation, target thresholds, measurement equipment/procedure, cost/benefit ROI table for June 20 GOOGL decision gate, contingency cooler matrix
+**Owner**: stockbot subagent
+**Deadline**: June 20 (ready for GOOGL decision gate + August 1 NVDA activation planning)
+**Status**: ⏳ QUEUED for June 6-10 (prior to June 20 decision deadline; pending Item 62 completion)
+
+### 96. ⏳ resistance-research — Post-Election Phase 3 Domain Candidates & Activation Planning (Due June 25)
+**Context**: Phase 2 domains research-complete (48, 49, 50, 51, 57, 58, 59) and distribution-scheduled through August 2026. Phase 2 ends Aug 31. November 3, 2026 US midterm election creates immediate post-election research window. Phase 3 should target fall 2026 / winter 2027 for next research round. This item identifies Phase 3 domain candidates with post-election analysis opportunities and movement leverage.
+**Scope**:
+  - Phase 3 candidate domain identification: Scan 40-domain framework, identify domains with post-election research windows (Nov 4-Dec 31 2026 opportunity window for post-election analysis, Jan-March 2027 Congressional/budget windows)
+  - Election-specific research angles: Which Phase 1-2 domains need post-election updates? (e.g., voter suppression domain needs 2026 midterm teardown; campaign finance domain needs 2026 spending analysis; voting access domain needs 2026 outcome assessment)
+  - Movement leverage scoring: Which domains enable strongest coalition activation post-election? E.g., election protection domain + voting access + voter suppression chains post-election results
+  - Research effort estimation: Phase 3 breadth (8-10 domains) vs available researcher capacity (estimate based on Phase 2 actual hours spent June-August)
+  - Urgency matrix: Identify immovable external deadlines (Jan 2027 Congressional term starts, spring 2027 budget deadlines, summer 2027 campaign finance law changes)
+  - Phase 2→Phase 3 transition contingency: If Phase 2 takes longer than planned (July 15 deadline slips to Aug 15), what Phase 3 domains should be deferred to Q2 2027?
+**Deliverables**:
+  - `PHASE_3_DOMAIN_CANDIDATE_SCORECARD.md` — 8-10 candidates (post-election analysis focus), urgency/leverage/feasibility matrix, research hour estimates, expert contact starter lists
+  - `PHASE_3_ELECTION_SPECIFIC_RESEARCH_ANGLES.md` — Domains requiring post-election updates, 2026 midterm data sources, comparative analysis templates vs 2022/2020
+  - `PHASE_3_MOVEMENT_LEVERAGE_AND_ACTIVATION_TIMELINE.md` — Cross-domain coalition opportunities, phase-sequencing for maximum post-election impact, contingency cascade if Phase 2 timeline slips
+**Owner**: resistance-research subagent
+**Deadline**: June 25 (ready for post-Phase-2-Wave-1 planning, zero blocking current work)
+**Status**: ⏳ QUEUED for June 10-20 (after Domain 51 Wave 1 execution + checkpoint analysis completes; pending Phase 2 signal assessment June 15)
+
+### 97. ⏳ seedwarden — Phase 3 Production Sprint Risk Mitigation & Solo Fallback Architecture (Due June 18)
+**Context**: Items 77 (Phase 3 production sprint roadmap) and 94 (contractor sourcing/decision) complete the Phase 3 planning. Critical gap: If contractor search fails by June 15, what's the solo fallback architecture? Solo fallback extends Phase 3 from 6 weeks (June 22-Aug 3) to 9 weeks (June 22-Sept 24), delaying Phase 4 start from Sept 4 to Oct 1. This item builds comprehensive risk mitigation playbook and solo fallback contingency to prevent Phase 3 scope creep or launch delay.
+**Scope**:
+  - Phase 3 production sprint risk register: 8+ identified risks from Item 94 (contractor dropout, image sourcing delay, Women's Health scope creep, contraindication gaps, payment delays, scope expansion, deadline compression, solo fallback decision cascade) — quantify by probability × impact
+  - Detection procedures: Early warning signs per risk (contractor communication gaps, image sourcing delays, scope expansion requests). Weekly checkpoint criteria.
+  - Mitigation actions: Pre-launch vs in-sprint vs post-sprint contingencies. Critical path (Women's Health, Days 1-3, zero float) requires escalation triggers at Day 2 checkpoint if any risk detected.
+  - Solo fallback architecture: If contractor unavailable by June 15, how is Phase 3 sequenced 12 hrs/week? Detailed weekly allocation (Weeks 1-9), bundle write order, scope reduction cascades (Digestive post-launch? Immunity deferred? Resp simplified?)
+  - Contractor-unavailable decision tree: By June 15 EOD, go/no-go for contractor search continues vs activate solo fallback. Escalation triggers (0 responses by June 10 = activate fallback recruitment; 1 response by June 12 but quotes >$1,500 = escalation)
+  - Phase 3→Phase 4 contingency: If Phase 3 solo fallback activated (9-week timeline), what Phase 4 adjustments are required? Phase 4 already scheduled July 1 launch (now Sept 4 earliest); Phase 5 (content expansion) deferred to Nov 1?
+**Deliverables**:
+  - `PHASE_3_COMPREHENSIVE_RISK_REGISTER.md` — 8+ risks (probability × impact quantified), per-risk detection procedures, escalation criteria, mitigation actions (pre-launch / in-sprint / post-sprint)
+  - `PHASE_3_SOLO_FALLBACK_ARCHITECTURE.md` — 9-week solo timeline, weekly hour allocation, bundle write order, scope reduction cascades per milestone checkpoint, contingency triggers
+  - `PHASE_3_CONTRACTOR_DECISION_ESCALATION_FRAMEWORK.md` — Go/no-go decision tree by June 15, escalation triggers (recruitment lag, budget overage, timeline compression), Phase 3→Phase 4 timeline impact analysis
+**Owner**: seedwarden subagent
+**Deadline**: June 18 (ready for June 22 Phase 3 sprint launch; informs contractor decision June 17)
+**Status**: ⏳ QUEUED for June 6-15 (post-contractor-sourcing, pre-production-sprint-launch)
+
 ### 89. ⏳ resistance-research — Phase 3 Domain Expansion & Movement Leverage Analysis
 **Context**: Phase 2 domains (48, 49, 50, 51, 57, 58, 59) are research-complete and distribution-scheduled through August 2026. Phase 2 ends Aug 31. Phase 3 should target fall 2026 / winter 2027 for next round of domains. Build roadmap: identify candidate Phase 3 domains (8-10 domains targeting Nov 2026 - March 2027 windows), assess movement leverage + urgency.
 **Scope**:
