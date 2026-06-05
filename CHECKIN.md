@@ -4,6 +4,35 @@
 
 ---
 
+## Since Last Check-in (Session 2872 — June 5 11:42 UTC — Item 62 Standing By, Final Pre-Execution Window)
+
+**Status Verification at 11:42 UTC**:
+- ✅ **Current time**: 11:42:03 UTC (1h 18m to Item 62 execution at 13:00 UTC)
+- ✅ **Item 62 Infrastructure Verified** (continues nominal from Session 2871):
+  - `scripts/stockbot_june5_premarket_check.sh` ✓ (4.7K, executable, 4-gate verification ready)
+  - `scripts/execute_item_62_contingency.sh` ✓ (9.4K, executable, GO/CAUTION/NO-GO routing ready)
+  - `scripts/post_market_analysis_june5.sh` ✓ (6.0K, executable, post-market analysis ready)
+  - All production-ready, no changes since Session 2869
+- ✅ **ORCHESTRATOR_STATE.md**: Current (auto-generated 11:41:39 UTC)
+- ✅ **PROJECTS.md**: Current and consistent — no status changes affecting standing-by protocol
+- ✅ **BLOCKED.md**: 2 active blocks (both user-action only, unresolved)
+  - cybersecurity-hardening: VeraCrypt restart pending
+  - mfg-farm: Test print execution pending (verified: no test-print-results/ directory created)
+- ✅ **INBOX.md**: Empty, all items processed
+- ✅ **Working tree**: Clean
+- ✅ **Final execution window**: Item 62 execution at 13:00 UTC (1h 18m remaining)
+
+**Assessment**: All systems continue nominal. Per Session 2833 standing-by protocol: no autonomous work spawned. Item 62 execution at 13:00 UTC confirmed ready. All infrastructure verified and production-ready.
+
+**Scheduled Actions**:
+1. **12:45 UTC** (~1h 3m): Final pre-execution verification wakeup — confirm Item 62 readiness
+2. **13:00 UTC**: Execute `bash scripts/stockbot_june5_premarket_check.sh` (4-gate: container health, WebSocket, Alpaca API, session status)
+3. **13:05 UTC**: Route decision (GO/CAUTION/NO-GO) via contingency script
+4. **13:30 UTC**: Market open (trading sessions per contingency path)
+5. **20:00 UTC**: Post-market analysis window opens
+
+**Status**: Item 62 standing by. All systems verified ready. Scheduled final verification wakeup at 12:45 UTC. Next critical event: 13:00 UTC Item 62 pre-market checklist execution.
+
 ## Since Last Check-in (Session 2871 — June 5 11:35 UTC — Item 62 Standing By, Final Verification Window)
 
 **Status Verification at 11:35 UTC**:
