@@ -6,6 +6,53 @@
 
 ## Active Items (Session 2482+)
 
+### 80. ⏳ resistance-research — Domain 51 Pre-Wave-1 Contact Verification & Email Template Final Review (Session 2883)
+**Context**: Domain 51 Wave 1 execution scheduled for June 9 09:00 AM UTC (Campaign Legal Center + Issue One, ~90 min). All infrastructure staged (contact list, email templates, Gist procedure, distribution send log). Pre-execution verification needed to confirm all 5 Tier A organizations' contacts are still current and email templates are optimized.
+**Scope**: Lightweight pre-flight validation (1.5–2 hours):
+  - Verify all 5 Tier A contacts (Campaign Legal Center, Issue One, Brennan Center, Common Cause CA, LWV CA) are still reachable (email valid, person still in role)
+  - Final review of email templates for Domain 51 (review copy, check personalization fields, test markdown formatting in Gist)
+  - Confirm Gist creation procedure (10 steps, all zones complete) runs without errors
+  - Update DOMAIN_51_CONTACT_LIST_AND_STRATIFICATION.md with current verification timestamps
+**Deliverables**:
+  - ✅ Updated contact list with verification timestamps (email check, LinkedIn/org website confirmation)
+  - ✅ Email template final review notes (personalization variables, tone, call-to-action clarity)
+  - ✅ Pre-flight summary: GO/HOLD/NO-GO decision for June 9 Wave 1 execution
+**Owner**: resistance-research subagent
+**Deadline**: June 8 (next day before Wave 1 execution)
+**Confidence**: 95%+ (all contacts already verified in Session 2827; this is a refresh to catch any mid-week changes)
+
+### 81. ⏳ stockbot — Phase 3a Thermal & Session Management Pre-Deployment Checklist (Session 2883)
+**Context**: Phase 3 Implementation Roadmap (Session 2832, June 5 04:30 UTC) recommends Phase 3a deployment MSFT ridge_wf + AAPL lgbm_ho retrain. Target window: early July 2026 (user decision June 7). Before Phase 3a sessions deploy to Jetson, orchestrator needs thermal management plan and session coordination procedures to prevent 87.8°C → throttle-activation during extended compute.
+**Scope**: Pre-deployment planning (2–3 hours):
+  - Thermal baseline validation: run existing Item 62 AAPL/AMZN sessions June 5-6, log peak temps, duration, idle cooling time
+  - Phase 3a thermal simulation: model 2×4-hour sessions (MSFT + AAPL retrains, 89–90°C per roadmap) with hourly checkpoint intervals
+  - Session management procedures: sequential vs. parallel launch, inter-session idle time, max-daily-compute gates, escalation triggers (≥87.5°C sustained)
+  - Cooling hardware evaluation: passive heatsink vs. active fan ($5-15), thermal paste reapplication, orientation optimization
+  - Failure modes & recovery: rollback triggers, temp-gating logic in trading_session.py, alert escalation if temps exceed 92°C
+**Deliverables**:
+  - ✅ `PHASE_3A_THERMAL_MANAGEMENT_PLAN.md` (2,000+ words): baseline temps (June 5-6), simulation results, session coordination procedures
+  - ✅ `PHASE_3A_DEPLOYMENT_READINESS_CHECKLIST.md` (500+ words): hardware, software, thermal, monitoring gates
+  - ✅ `SESSION_COORDINATION_PROCEDURES.md` (600+ words): sequential launch logic, inter-session idle, daily compute limits
+**Owner**: stockbot subagent
+**Deadline**: June 7 (ready for user Phase 3a decision + deployment window planning)
+**Confidence**: 85% (thermal data from Item 62 will inform simulation; some unknowns pending actual Phase 3a run)
+
+### 82. ⏳ seedwarden — Track B Gate Validation & Dry-Run Staging (Session 2883)
+**Context**: Track B activated June 4 (Session 2774). Five user action gates (1-5) required before Phase 1 execution: (1) Kit account creation, (2) PDF upload (8 zone guides), (3) Email body finalization, (4) Social post scheduling, (5) Influencer contact activation. Orchestrator has verified infrastructure; user is executing gates. Before June 19 Day 14 checkpoint, orchestrator should validate that all gates are properly staged and can execute without blockers.
+**Scope**: Lightweight gate validation (1–1.5 hours):
+  - Verify all 8 zone guide PDFs are production-ready and properly named (location, filename consistency)
+  - Confirm 5 email body templates are copy-paste ready and tone-consistent
+  - Check social media post 18-post calendar is scheduled correctly (dates, platform tags)
+  - Verify 15 influencer contacts have valid email/Twitter/Instagram handles (no dead links)
+  - Create dry-run execution script: step-by-step procedure to execute all 5 gates (for user reference)
+**Deliverables**:
+  - ✅ `TRACK_B_GATE_VALIDATION_REPORT.md` (800+ words): per-gate status (PDF list, email tone review, social calendar check, influencer contact status)
+  - ✅ `TRACK_B_EXECUTION_DRY_RUN_SCRIPT.md` (1,200+ words): 5-section step-by-step (Gate 1 account creation → Gate 5 influencer activation, with screenshots/UI notes)
+  - ✅ Contingency decision tree: if Gate 2 fails (PDF upload), what's the recovery? (Option A: re-upload; Option B: email to Kit support; Option C: defer 3 days)
+**Owner**: seedwarden subagent
+**Deadline**: June 6-7 (ready before user executes Gate 1)
+**Confidence**: 90%+ (all assets already verified in Session 2518; this is a refresh + dry-run procedure)
+
 ### 16. ⏳ Domain 39 Impact Evaluation & Phase 2 Prioritization
 **Context**: Domain 39 activation June 1 13:00-14:30 UTC. Monitoring infrastructure staged with 5-checkpoint structure (T+3/T+7/T+14/T+30/T+45). After Day 7 checkpoint (June 8), orchestrator needs decision framework for Phase 2 research activation.
 **Scope**: Post-June 8 checkpoint, synthesize engagement data + Phase 2 readiness assessment to determine activation sequence for Domains 51/57/48/49-50/54.
