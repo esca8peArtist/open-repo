@@ -4,6 +4,32 @@
 
 ---
 
+## Since Last Check-in (Session 2837 — June 5 06:08 UTC — Item 62 Pre-Execution Standy)
+
+**Session Status**:
+- ✅ **Item 62 execution verified ready**: 6h 52m until pre-market checklist (13:00 UTC)
+- ✅ **Orientation complete**: ORCHESTRATOR_STATE.md accurate (06:07:41Z generation)
+- ✅ **Infrastructure confirmed**: All three scripts executable and present
+  - `scripts/stockbot_june5_premarket_check.sh` (4.7K, executable)
+  - `scripts/execute_item_62_contingency.sh` (9.4K, executable)
+  - `scripts/post_market_analysis_june5.sh` (6.0K, executable)
+- ✅ **No new autonomous work available**: All projects blocked externally; Exploration Queue sufficient (3 items)
+- ✅ **Jetson infrastructure**: Expected status (verified in Session 2835-2836; no changes since)
+
+**Execution Timeline**:
+1. **12:45 UTC** (6h 37m): Final pre-execution wakeup — verify Item 62 readiness one last time
+2. **13:00 UTC**: Execute pre-market checklist (`bash scripts/stockbot_june5_premarket_check.sh` + `bash scripts/execute_item_62_contingency.sh`)
+3. **13:30 UTC**: Market open — trading sessions active per contingency path decision
+4. **20:00 UTC**: Post-market analysis — Exploration Queue work resumes
+
+**Assessment**:
+- No blocking conditions identified
+- All contingency infrastructure verified and functional
+- Standing ready for Item 62 execution
+- Next orchestrator action: automatic wakeup at 12:45 UTC
+
+---
+
 ## Since Last Check-in (Session 2836 — June 5 06:01 UTC — Item 62 Final Staging)
 
 **Session Status**:
