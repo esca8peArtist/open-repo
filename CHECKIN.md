@@ -4,23 +4,35 @@
 
 ---
 
-## Since Last Check-in (Session 2858 — June 5 09:46 UTC — Item 62 Standing By, Pre-Execution Intermediate Verification)
+## Since Last Check-in (Session 2859 — June 5 09:52 UTC — Item 62 Final Pre-Execution Verification)
 
-**Status Verification at 09:46 UTC**:
-- ✅ **Current time**: 09:46:03 UTC (3h 13m 57s to Item 62 execution at 13:00 UTC)
-- ✅ **Item 62 Scripts Verified**: All three scripts present and executable
-  - `scripts/stockbot_june5_premarket_check.sh` ✓
-  - `scripts/execute_item_62_contingency.sh` ✓
-  - `scripts/post_market_analysis_june5.sh` ✓
+**Status Verification at 09:52 UTC**:
+- ✅ **Current time**: 09:52:35 UTC (3h 7m 25s to Item 62 execution at 13:00 UTC)
+- ✅ **Item 62 Infrastructure Verified**:
+  - `scripts/stockbot_june5_premarket_check.sh` ✓ (4.7K, executable, 4-gate verification system)
+  - `scripts/execute_item_62_contingency.sh` ✓ (9.4K, executable, GO/CAUTION/NO-GO router)
+  - `scripts/post_market_analysis_june5.sh` ✓ (6.0K, executable, post-market analysis)
+- ✅ **Jetson Connectivity & Status** (09:52 UTC):
+  - SSH accessibility: ✓ OK (awank@100.120.18.84)
+  - stockbot Docker container: ✓ UP 7 hours (healthy)
+  - stockbot-web: ✓ UP 2 days
+  - Pre-market Gate 1 (Container Health): PASS
+- ✅ **ORCHESTRATOR_STATE.md**: Current (generated 09:52 UTC)
+- ✅ **INBOX.md**: Empty, no new items
 - ✅ **Active blocks**: 2 blocks remain unresolved, both user-action only
   - cybersecurity-hardening (Windows restart required)
   - mfg-farm (test print execution required)
-- ✅ **INBOX.md**: Empty, no new items
-- ✅ **Working tree**: Clean, no user changes
+- ✅ **Working tree**: Clean, only ORCHESTRATOR_STATE.md auto-generated
 
-**Assessment**: All systems nominal. Continuing standing-by protocol per Session 2833 recommendation. No autonomous work before Item 62. Scheduled final pre-execution verification at 12:45 UTC.
+**Item 62 Execution Timeline** (13:00 UTC):
+1. **13:00 UTC**: Execute `bash scripts/stockbot_june5_premarket_check.sh` (4-gate verification: container health, WebSocket, Alpaca API, session status)
+2. **13:05 UTC**: Route decision (GO/CAUTION/NO-GO) via `bash scripts/execute_item_62_contingency.sh`
+3. **13:30 UTC**: Market open (trading sessions active per contingency path)
+4. **20:00 UTC**: Post-market analysis window — resume Exploration Queue work
 
-**Status**: Item 62 standing by. All infrastructure ready. Next wakeup: 12:45 UTC.
+**Assessment**: All systems nominal. Item 62 infrastructure production-ready. No autonomous work before execution per Session 2833 recommendation. Standing by for 13:00 UTC execution.
+
+**Status**: Item 62 standing by. All systems verified. Execution ready. Next action: automatic execution at 13:00 UTC.
 
 ---
 
