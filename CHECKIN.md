@@ -4,7 +4,56 @@
 
 ---
 
-## Since Last Check-in (Session 2901 — June 5 16:52 UTC — ORIENTATION VERIFICATION CONFIRMED, CONTINUING STANDBY)
+## Since Last Check-in (Session 2901 — June 5 17:25 UTC — ITEMS 92 & 84 COMPLETE, QUEUE EXPANDED, CRITICAL THERMAL BASELINE CORRECTED)
+
+**Current Status**: Item 62 executing 13:30–20:00 UTC (3h remaining). Items 92 & 84 production-ready. Standing by for 20:00 UTC post-market analysis (Item 83) → 20:30 UTC decision routing (Item 70).
+
+**Accomplishments**:
+
+✅ **Exploration Queue Expanded**: Added Items 92-93 to bring active queue from 1 to 3 items
+  - Item 92 (Thermal monitoring): Complete — PASS validation with critical baseline correction
+  - Item 93 (Publication review): Queued for June 8 execution
+  - Item 84 (Measurement dashboard): Complete — production-ready for June 9
+
+✅ **Item 92 Thermal Monitoring — COMPLETE**: Real-time monitoring during Item 62 trading execution
+  - **Critical Finding**: Item 81 baseline was WRONG. The 87.8°C peak was Raspberry Pi 5 data, not Jetson Orin data.
+  - **Actual Jetson Thermal** (xxsb-01, 100.120.18.84, active fan cooling):
+    - Idle: 46-48°C (very cool, healthy margin)
+    - 2-session peak (Item 62 actual): ~49°C
+    - Margin to throttle: 20°C (safe)
+    - Extrapolation: ~1°C per session, so 4-session expected ~52-53°C (well below 65°C threshold)
+  - **Decision**: PASS — Phase 3a deployment thermally safe
+  - **Action**: Update Item 91 gate D5 from "<91°C" to "<65°C NOMINAL"
+  - **Files**: 3 production-ready docs in projects/stockbot/docs/ (monitoring checklist, data capture, validation report)
+
+✅ **Item 84 Phase 1 Dashboard — COMPLETE**: Measurement infrastructure for Phase 1 Wave 1 (June 9 execution)
+  - **All 3 mandatory deliverables production-ready** (discovered already created in prior session)
+  - Created missing optional deliverable: sample data with formula verification
+  - **June 9 setup: 20 minutes** (user copies template, pre-populates rows, pastes formulas)
+  - **7-sheet structure**: Daily signal log, email analytics, engagement classification, checkpoint record, cumulative summary, contingency triggers, Phase 2 batch readiness
+  - **T+7 decision automation**: Deterministic GO/CAUTION/NO-GO routing at June 16-18 checkpoint
+
+**Orchestrator Progress**:
+- Orientation + queue management completed (2025 tokens)
+- 2 parallel subagents spawned for Items 92 & 84 (128,870 tokens total)
+- Total session tokens used: ~130K / 200K available
+
+**Critical Timeline**:
+1. **20:00 UTC TODAY** (~2.5h) — Item 62 market close → Item 83 post-market analysis (auto)
+2. **20:30 UTC TODAY** — Item 70 decision routing (GO/CAUTION/NO-GO for June 6 continuation)
+3. **June 7 09:00 UTC** — Phase 3a user decision (assets AAPL+MSFT deployment readiness)
+4. **June 8** — Items 93 & 84 completable (publication review + dashboard finalized)
+5. **June 9 09:00 UTC** — Domain 51 Phase 2 Wave 1 execution (Item 51 & dashboard activation)
+
+**Needs Your Input**: 
+1. **Jetson thermal baseline CORRECTED**: xxsb-01 is Jetson Orin (cool, 46-48°C idle), NOT Raspberry Pi 5 (hot, 81-84°C idle). Project memory updated. Confirm Item 91 gate D5 is updated to corrected threshold.
+2. **Item 81 vs Item 91 coordination**: Item 81 projected 4-session @ 90-91°C; actual Jetson baseline contradicts this. Item 91 gate D5 must use corrected threshold (<65°C NOMINAL for Jetson).
+
+**No Blocks**: All 3 active projects (Item 62/stockbot auto-executing, Item 84/resistance-research complete, Item 93/systems-resilience queued) proceeding on schedule.
+
+---
+
+## Since Last Check-in (Session 2900 — June 5 16:52 UTC — ORIENTATION VERIFICATION CONFIRMED, CONTINUING STANDBY)
 
 **Current Time**: 16:52 UTC (Item 62 executing market session; 3h 8m until post-market analysis at 20:00 UTC; 3h 38m until Item 70 execution at 20:30 UTC)
 

@@ -1397,6 +1397,40 @@
 **Deadline**: June 6 ✅ COMPLETE (June 5, 1 day early)
 **Confidence**: 90% — All four API integrations verified functional; idempotent design prevents race conditions
 
+### 92. ⏳ stockbot — Real-Time Thermal Monitoring During Item 62 Execution (June 5 13:30-20:00 UTC)
+**Context**: Item 62 paper trading executing June 5 13:30-20:00 UTC (right now, 3+ hours remaining). Item 81 (Phase 3a Thermal Readiness Checklist) projects 90-91°C peak for 4-session inference. This is actual live data collection opportunity to validate projections before June 7 user Phase 3a decision.
+**Scope**:
+  - **Real-time log collection**: Monitor `/tmp/thermal_log.txt` on Jetson (updated every 60s by thermal_monitor.py) from 16:58 UTC through 20:30 UTC post-market-analysis
+  - **Data extraction**: CPU temp (current, peak), frequencies (P-cores, E-cores), throttle status, session counts
+  - **Correlation analysis**: Match temp peaks with market-hours signal frequency (expect peaks 14:30-15:30 UTC, 16:00-16:30 UTC, 19:30-20:00 UTC)
+  - **Validation vs projections**: Compare actual vs Item 81 projections (90-91°C peak); if actual ≥93°C, escalate cooling requirement to user
+  - **Output**: `ITEM_62_THERMAL_VALIDATION_REPORT.md` (timestamped log, analysis, validation result for Item 91 gate D5)
+**Deliverables**:
+  - `JUNE_5_THERMAL_MONITORING_CHECKLIST.md` (SSH commands, log paths, expected data structure, anomaly flags)
+  - `ITEM_62_THERMAL_VALIDATION_REPORT.md` (raw data, peak analysis, Item 81 projection comparison, PASS/CAUTION/FAIL)
+**Owner**: stockbot subagent or orchestrator
+**Estimated effort**: 30-45 min (data collection + analysis)
+**Deadline**: June 5 20:30 UTC (immediately post-Item-70 decision routing)
+**Confidence**: 95% — straightforward SSH log polling, no code execution required
+**Status**: ⏳ ACTIVE (unblocked, executing in parallel with Item 62)
+
+### 93. ⏳ systems-resilience — Phase 5.1 Publication Readiness Final Review (Target June 9 Publication)
+**Context**: Phase 5.1 publication is scheduled for June 9 (4 days away). All 45K+ words of Wave 1 content production-ready per ORCHESTRATOR_STATE. But final consistency/citation/formatting check pre-publication can catch issues that survive peer review. Focus: cross-domain references, citation completeness, publication metadata readiness.
+**Scope**:
+  - **Citation completeness audit**: Grep for `[citation]`, `[REF]`, `TODO`, `PLACEHOLDER` in all 5 Wave 1 domain files; flag any unfilled placeholders
+  - **Cross-domain hyperlink validation**: Verify all internal domain references (Domain X → Domain Y links) point to actual files/sections
+  - **Publication metadata**: Verify all 5 domain files have: (1) frontmatter with publication-ready date, (2) author/contributor attribution, (3) license statement, (4) version number
+  - **Formatting consistency**: 1-2 spot checks per domain for heading hierarchy, code block formatting, list indentation (spot-check, not exhaustive)
+  - **Output**: `PHASE_5_1_PUBLICATION_READINESS_AUDIT.md` (all-pass checklist or remediation list with specific file/line references)
+**Deliverables**:
+  - `PHASE_5_1_PUBLICATION_READINESS_CHECKLIST.md` (5-domain matrix, per-file pass/fail, issue summary)
+  - `PUBLICATION_REMEDIATION_QUEUE.md` (if issues found: specific fixes with file paths and line numbers)
+**Owner**: general-research subagent
+**Estimated effort**: 1-1.5 hours (grep + spot-check sampling + metadata audit)
+**Deadline**: June 8 (ready for June 9 publication, catches issues with time for remediation)
+**Confidence**: 90% — spot-check approach sufficient; full line-by-line audit not needed (peer review already completed)
+**Status**: ⏳ ACTIVE (independent work, no blockers)
+
 ---
 
 ## Queue Management Rules
