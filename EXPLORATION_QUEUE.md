@@ -314,6 +314,54 @@
 **Status**: ✅ PRODUCTION-READY for June 5 immediate deployment upon platform decision
 **Deadline**: June 5 ✅ ADVANCED COMPLETE (submitted June 4 morning, 23h early)
 
+### 71. ⏳ stockbot — Phase 3 Architecture Validation & Asset Gate Readiness (June 5)
+**Context**: Phase 3 architecture brief produced June 4 (3,800+ words). Two Phase 3a candidates proposed: AAPL lgbm_ho + MSFT ridge_wf. No technical walk-forward validation yet performed. User decision pending.
+**Scope**: Validate Phase 3a asset candidates before user approval:
+  - Walk-forward backtest AAPL lgbm_ho (vs May 27-31 live paper-trading baseline) — confirm OOS Sharpe, MaxDD, regime performance
+  - Walk-forward backtest MSFT ridge_wf (transfer-learning from JPM ridge_wf) — confirm feature compatibility, gate thresholds
+  - Compare Phase 3a baseline (AAPL+MSFT) vs current deployed (JPM+AMZN) — correlation, drawdown cascade, sector concentration
+  - Gate readiness assessment: Do both assets pass 6-gate framework from P3-1?
+  - Phase 3b readiness (GOOGL, SPY, NVDA): Pre-validate transfer-learning feasibility without full retrain
+**Deliverables**:
+  - `PHASE_3A_ASSET_VALIDATION_REPORT.md` (walk-forward results, gate assessment, recommendation GO/CAUTION/NO-GO)
+  - `PHASE_3B_TRANSFER_LEARNING_VALIDATION_TEMPLATE.md` (feature engineering compatibility, correlation matrix, retraining estimates)
+  - `PHASE_3_EXECUTION_READINESS_CHECKLIST.md` (user actions by June 7: Alpaca options approval, active cooling deployment)
+**Owner**: stockbot subagent
+**Deadline**: June 6 evening (ready for user decision June 7)
+
+### 72. ⏳ stockbot — Item 62 Contingency Path Automation & Response Playbooks (June 5 13:00 UTC)
+**Context**: Item 62 pre-market checklist script created (Session 2821) and ready for 13:00 UTC execution. Script outputs GO/CAUTION/NO-GO. Three contingency paths (GO, CAUTION, NO-GO) need rapid-response automation.
+**Scope**: Pre-stage automated contingency execution for all Item 62 outcomes:
+  - **GO path**: Market open monitoring checklist, 2-hour active watch protocol, EOD post-market analysis routing
+  - **CAUTION path**: Enhanced health monitoring (every 15 min vs hourly), decision gates at 14:30/17:00/19:00 UTC, escalation triggers (2 anomalies → HOLD/rollback)
+  - **NO-GO path**: Automated rollback checklist (shutdown sessions, revert configs, notify via Discord), contingency contact/escalation chain
+  - **Execution automation**: Pre-stage bash/Python scripts for each path (ready to execute immediately post-Item-62-output)
+  - **Communication routing**: Discord notifications template, CHECKIN.md update template, resource reallocation (if NO-GO, what projects become available)
+**Deliverables**:
+  - `ITEM_62_CONTINGENCY_EXECUTION_PLAYBOOKS.md` (3 complete paths: GO/CAUTION/NO-GO with step-by-step procedures)
+  - `scripts/execute_item_62_contingency_go.sh` (automated market-open setup)
+  - `scripts/execute_item_62_contingency_caution.sh` (enhanced monitoring)
+  - `scripts/execute_item_62_contingency_nogo.sh` (rollback automation)
+  - `ITEM_62_POST_DECISION_RESOURCE_ROUTING.md` (if NO-GO, resource reallocation scenarios A/B/C)
+**Owner**: orchestrator
+**Deadline**: June 5 12:30 UTC (ready for 13:00 UTC execution + immediate contingency response)
+
+### 73. ⏳ resistance-research — Phase 2 Batch 2 Distribution Infrastructure Audit (June 5)
+**Context**: Phase 2 Batch 2 activation roadmap completed (Item 53). All materials supposed production-ready, but no end-to-end validation has been run.
+**Scope**: Audit actual distribution infrastructure for June 9-12 execution:
+  - **Domain 51 Gist URL audit**: Verify https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372 is live (HTTP 200) and content matches `domain-51-send-templates.md`
+  - **Email templates verification**: Load all 5 templates from domain-51-send-templates.md; verify copy-paste readiness (no placeholder errors, correct org names/contact info)
+  - **Contact list currency**: Verify all 5 orgs (Campaign Legal Center, Issue One, Common Cause CA, LWV CA, Clean Money Action Fund) email addresses are current and correct (web lookup)
+  - **Send-log infrastructure**: Verify `DOMAIN_51_DISTRIBUTION_SEND_LOG.md` structure is ready for Wave 1 (June 9) + Wave 2 (June 11) logging
+  - **Contingency contact backup**: Verify 3 backup contacts per org are populated in contingency section
+  - **Gist collaboration workflow**: Test email team@github access for collaborative gist editing if user needs to modify June 8-9
+**Deliverables**:
+  - `PHASE_2_BATCH_2_DISTRIBUTION_AUDIT_RESULTS.md` (checklist results, issues found, remediation steps if needed)
+  - `DOMAIN_51_CORRECTED_TEMPLATES.md` (if any template errors found, corrected versions)
+  - `DOMAIN_51_CONTACT_VERIFICATION_REPORT.md` (email addresses verified, backup contacts confirmed, send-readiness score)
+**Owner**: resistance-research subagent
+**Deadline**: June 6 morning (ready for June 6-8 autonomous pre-execution verification gates)
+
 ## Completed Items (Session 2482 added above; prior sections below)
 
 ## Active Items (Session 1452+)
