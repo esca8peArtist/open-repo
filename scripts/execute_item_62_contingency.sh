@@ -29,8 +29,8 @@ if [ ! -f "$RESULTS_FILE" ]; then
 fi
 
 # Parse results file
-DECISION=$(grep "^**Final Verdict**:" "$RESULTS_FILE" | awk -F': ' '{print $2}' | xargs)
-GATES_PASSED=$(grep "^**Gates Passed**:" "$RESULTS_FILE" | grep -o '[0-9] / [0-9]')
+DECISION=$(grep -F "**Final Verdict**:" "$RESULTS_FILE" | awk -F': ' '{print $2}' | xargs)
+GATES_PASSED=$(grep -F "**Gates Passed**:" "$RESULTS_FILE" | grep -o '[0-9] / [0-9]')
 
 echo "Decision: $DECISION"
 echo "Gates Passed: $GATES_PASSED"
