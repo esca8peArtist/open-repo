@@ -81,7 +81,7 @@ I would be grateful if this reaches your campaign research team before the July 
 
 ## Email 3 — Clean Money Action Fund
 
-**To**: info@cleanmoney.org (verify at cleanmoney.org — confirm this is the correct Clean Money Action Fund contact for California)
+**To**: info@CAclean.org (verified June 5, 2026 at yesfairelections.org/about — cleanmoney.org domain unreachable, using official campaign site contact)
 **Subject**: Dark money research for California Fair Elections Act — 58 citations, CC Attribution 4.0
 
 ---

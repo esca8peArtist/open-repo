@@ -1,9 +1,9 @@
 ---
 title: "Domain 51 Distribution Send Log"
 date_created: "2026-06-04"
-date_updated: "2026-06-04"
+date_updated: "2026-06-05"
 execution_window: "June 9–12, 2026"
-status: "pre-execution — contact verification complete, templates ready"
+status: "pre-execution — 3 contact corrections applied (June 5), templates ready"
 execution_executor: "User (orchestrator)"
 ---
 
@@ -22,7 +22,7 @@ execution_executor: "User (orchestrator)"
 
 | Organization | Contact Email | Primary Contact | Website Verified | Status |
 |---|---|---|---|---|
-| Campaign Legal Center | info@campaignlegal.org | Adav Noti (Policy Director) | campaignlegal.org/team | ✅ VERIFIED |
+| Campaign Legal Center | info@campaignlegal.org | Adav Noti (Executive Director) | campaignlegal.org/team | ✅ VERIFIED |
 | Issue One | info@issueone.org | Nick Penniman (CEO) | issueone.org/about/team | ✅ VERIFIED |
 
 **Verification date**: June 4, 2026  
@@ -34,8 +34,8 @@ execution_executor: "User (orchestrator)"
 | Organization | Contact Email | Primary Contact | Website Verified | Status |
 |---|---|---|---|---|
 | Common Cause California | ca@commoncause.org | Jonathan Mehta Stein (Executive Director) | commoncause.org/california | ✅ VERIFIED |
-| League of Women Voters CA | lwvc@lwvc.org | Carol Moon Goldberg (President) | lwvc.org/about/staff | ✅ VERIFIED |
-| Clean Money Action Fund | info@cleanmoney.org* | Trent Lange (President) | cleanmoney.org/about | ✅ VERIFIED |
+| League of Women Voters CA | lwvc@lwvc.org | Jenny Farrell (Executive Director) | lwvc.org/about/staff | ✅ VERIFIED |
+| Clean Money Action Fund | info@CAclean.org* | Trent Lange (President) | cleanmoney.org/about | ✅ VERIFIED |
 
 **Verification date**: June 4, 2026  
 **Verification method**: Organization website contact pages and staff listings  
@@ -145,7 +145,7 @@ All five templates in `domain-51-send-templates.md` include the following fields
 
 | Field | Status | Details |
 |---|---|---|
-| **Recipient** | [ ] PENDING | info@cleanmoney.org (verify at 08:30 AM) |
+| **Recipient** | [ ] PENDING | info@CAclean.org (verify at 08:30 AM) |
 | **Subject** | [ ] PENDING | Dark money research for California Fair Elections Act — 58 citations, CC Attribution 4.0 |
 | **Template** | [ ] PENDING | Email 3 from domain-51-send-templates.md |
 | **Personalization** | [ ] PENDING | Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] |
