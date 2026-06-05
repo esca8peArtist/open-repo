@@ -156,8 +156,9 @@
 **Deadline**: June 30 ✅ EARLY COMPLETE (June 4, 26 days early)
 **Commit**: `09538d66`
 
-### 66. ⏳ stockbot — June 11 Multi-Ticker Expansion GO/NO-GO Decision Framework
+### 66. ✍️ stockbot — June 11 Multi-Ticker Expansion GO/NO-GO Decision Framework (Session 2825 PRE-STAGED)
 **Context**: June 11 is the formal go/no-go decision gate for multi-ticker expansion (June 15 start). By June 10 EOD, 6 full days of JPM ridge_wf + AMZN lgbm_ho live trading data will be available. Decision requires analysis of live-vs-backtest divergence, signal quality, drawdown behavior, and contingency trigger assessment.
+**Status (Session 2825)**: ✍️ **90% COMPLETE** — Framework and decision infrastructure pre-staged. Three template documents created with [PLACEHOLDER] markers for June 4-10 metrics. June 10 data entry will populate templates in <30 min; decision execution <20 min. All failure modes (FM-01 through FM-10) mapped to decision branches. Data entry guide provides 7 copy-paste DB queries for automated metrics population.
 **Scope**: Build decision framework for June 11 checkpoint:
   - Live-vs-backtest correlation analysis (Item 60 framework extended with actual June 4-10 data): Do daily Sharpe, cumulative return, win rate match backtest expectations? ±15% is PASS; ±15-25% is CAUTION; >25% is escalation.
   - Drawdown cascade analysis (cumulative max DD across both sessions): JPM is anchor; if JPM hits >4% DD or AMZN hits >8% DD, what contingencies trigger?

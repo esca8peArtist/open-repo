@@ -43,14 +43,17 @@
 - cybersecurity-hardening: Phase 1 VeraCrypt restart required (user action)
 - mfg-farm: Test print execution required (user action)
 
+- ✍️ **Item 66 (June 11 Expansion Decision)**: Pre-staging COMPLETE (108.8k tokens, 3 template docs 2,044 lines). Framework 90% ready; June 4-10 metrics will populate [PLACEHOLDER] cells. June 10 21:00 UTC data entry <30 min, June 11 decision execution <20 min. All failure modes mapped to decision branches.
+
 **Next Actions**:
-- **13:00 UTC**: Execute Item 62 pre-market checklist (4-gate verification: container health, sessions, WebSocket, Alpaca API)
+- **13:00 UTC today**: Execute Item 62 pre-market checklist (4-gate verification: container health, sessions, WebSocket, Alpaca API)
 - **13:05 UTC**: Run contingency router (`execute_item_62_contingency.sh`) — routes to GO/CAUTION/NO-GO path
 - **13:30 UTC**: Market open + contingency path execution begins
 - **20:00 UTC**: Execute post-market analysis (`post_market_analysis_june5.sh`) — decide June 6 continuation
 - **June 6-7**: Await Phase 3 asset approval (Item 71/74 documents complete)
-- **June 9-12**: Resistance-Research Domain 51 execution (Item 76 playbooks ready; Item 62 contingency routing ready)
-- **June 11**: Item 66 (multi-ticker expansion decision) — Item 74 deployment schedule + 6 days live data → GO/CAUTION/NO-GO
+- **June 9-12**: Resistance-Research Domain 51 execution (Item 76 playbooks ready; contingency routing ready)
+- **June 10 21:00 UTC**: Populate Item 66 framework with June 4-10 metrics (copy-paste from DB queries, <30 min)
+- **June 11 morning**: Item 66 (multi-ticker expansion decision) execution — finalize GO/CAUTION/NO-GO, route to contingency branches
 - **June 15**: systems-resilience Wave 2 author onboarding launch (Item 75 Nextcloud+Matrix deployment checklist ready)
 
 **Metrics**:

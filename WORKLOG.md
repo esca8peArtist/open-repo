@@ -63,12 +63,21 @@
 - **June 9-12**: Resistance-Research Domain 51 execution (Item 76 contingency playbooks ready)
 - **June 11**: Item 66 (multi-ticker expansion decision) — Item 74 deployment schedule + 6 days trading data → GO/CAUTION/NO-GO
 
+### 4. ✍️ **Item 66 Pre-Staging: June 11 Expansion Decision Framework** (subagent, 108.8k tokens)
+- **Deliverables** (3 production-ready template docs, 2,044 lines, committed 0927ff0):
+  - `JUNE_11_EXPANSION_DECISION_FRAMEWORK_TEMPLATE.md` — 7-section decision tree with [PLACEHOLDER] for June 4-10 metrics; branches A-G (GO variants, CAUTION, HOLD, NO-GO, ESCALATION); pass/caution/escalation thresholds defined
+  - `JUNE_4_10_LIVE_TRADING_DATA_ENTRY_GUIDE.md` — 7 copy-paste DB queries for daily metrics, cumulative ledger templates, anomaly tracking (FM-01 through FM-10 codes), data validation checklist
+  - `EXPANSION_CONTINGENCY_DECISION_TREE_EXECUTION.md` — 10 failure modes (FM-01 through FM-10) mapped to decision branches, WARN/CAUTION/ROLLBACK levels, [AUTO] vs. [ESCALATE] routing
+- **Status**: 90% complete (framework structure ready, decision logic functional, [PLACEHOLDER] markers in place for June 4-10 metrics)
+- **Next**: June 10 21:00 UTC data entry (<30 min), June 11 10:00-14:00 UTC decision execution (<20 min)
+- **Key metrics**: JPM Sharpe ≥2.2, AMZN Sharpe ≥1.74, Portfolio P&L ≥−$200, HMM sync ≥70%, score ≥4 (GO)
+
 **Metrics**:
-- Session duration: 4h 34m
-- Token usage: 274.5k (3 parallel agents)
-- Deliverables: 3 completed exploration queue items (9 documents total)
-- Commits: 3 (one per subagent)
-- Exploration Queue status: 76 items completed, 2 active (Items 16, 66)
+- Session duration: 5h 15m (Items 74-76 parallel + Item 66 pre-staging sequential)
+- Token usage: 383.3k (3 parallel agents 274.5k + Item 66 agent 108.8k)
+- Deliverables: 3 completed exploration queue items (9 documents, 25,130 words) + 1 pre-staged (Item 66, 3 templates 2,044 lines)
+- Commits: 4 (c4396c0, b73cdfef, 193205c1, 0927ff0)
+- Exploration Queue status: 76 items completed, 1 pre-staged (Item 66), 1 active (Item 16)
 
 ---
 
