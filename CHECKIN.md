@@ -43,6 +43,13 @@
 3. **June 9, 09:00 AM UTC** — Domain 51 Wave 1 execution (requires user action gates)
 4. **June 9, morning** — PHASE_2_SEQUENTIAL_ACTIVATION_STRATEGY.md Path B execution launches
 
+**Orchestrator Action Required** (prioritized for next session):
+1. **Item 70 Execution** (20:30 UTC TODAY, ~4h 51m from now) — Decision routing automation post-Item-62
+   - Item 62 (stockbot post-market analysis) auto-executes at 20:00 UTC
+   - Item 70 must execute at 20:30 UTC (30-45 min after Item 62 completes)
+   - Item 70 queries Item 61 output, routes into GO/CAUTION/NO-GO contingency paths
+   - **Deliverables**: Decision router template, contingency execution playbook, routing decisions for June 6
+
 **Needs Your Input** (prioritized for next session):
 1. **Phase 3a user decision** (decision gate June 7) — Asset approval (AAPL + MSFT), Alpaca options Level 1 confirmation, capital/buying power verification
 2. **seedwarden Track B activation** (URGENT—zero blockers, 3.5-4.5 hrs execution) — 5 user action gates (PDF upload, social setup, email, Canva, Etsy)
@@ -51,7 +58,10 @@
 
 **Usage Budget**: Sonnet ~11.8% (estimated) | Reset Tuesday 00:00 UTC (~78h remaining)
 
-**Next Session Focus**: Post-market analysis at 20:00 UTC. If Item 62 GO → stage Item 87 (Phase 3b architecture) for June 6-8 execution. If CAUTION/NO-GO → execute contingency routing per Item 72.
+**Next Session Focus**: 
+1. **IMMEDIATE (20:30 UTC TODAY)**: Execute Item 70 (decision routing) post-Item-62 market analysis
+2. **June 6-8**: Spawn Item 87 (Phase 3b architecture) subagent if Item 62 GO
+3. **June 7**: Phase 3a user decision gate (asset approval feedback)
 
 ---
 
