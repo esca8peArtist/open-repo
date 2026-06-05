@@ -22,6 +22,24 @@
 - Session 2901 completed Items 92 (thermal monitoring) and 84 (Phase 1 dashboard) successfully
 - Files confirmed: `JUNE_5_THERMAL_MONITORING_CHECKLIST.md`, `ITEM_62_THERMAL_DATA_CAPTURE.md`, `ITEM_62_THERMAL_VALIDATION_REPORT.md`, `JUNE_9_SAMPLE_DATA.md`
 
+### Health Check Completed (17:30 UTC)
+- ✅ **SSH access**: Authenticated to Jetson (100.120.18.84)
+- ✅ **Docker containers**: stockbot running healthy (Up 14 hours), stockbot-web running
+- ✅ **Database**: /opt/stockbot/database/trading.db exists (1.1M)
+- ✅ **Live trading**: Docker logs show active signal generation for AMZN lgbm_ho and JPM ridge_wf (17:17 UTC — 13 min ago)
+  - AMZN: generated signal (predicted_return=0.0082, action=HOLD)
+  - JPM: generated signal (predicted_return=-0.0146, action=HOLD)
+- ✅ **Item 83 procedure identified**: post_market_daily_analysis.py exists at projects/stockbot/scripts/
+- ✅ **Validation reference**: MSFT_AAPL_BACKTEST_RESULTS_2024_2025.md ready for comparison
+
+### Item 83 Execution Plan (20:00 UTC)
+At market close (20:00 UTC), execute:
+```bash
+cd /home/awank/dev/SuperClaude_Framework/projects/stockbot
+uv run python scripts/post_market_daily_analysis.py
+```
+This captures: round trips, Sharpe proxy, MDD, Calmar metrics. Results append to logs/post_market_daily.jsonl.
+
 ### Decision Point
 After 20:00 UTC post-market analysis (Item 83) completes:
 - If validation PASS → Item 70 routes to GO decision, June 6 trading continues
