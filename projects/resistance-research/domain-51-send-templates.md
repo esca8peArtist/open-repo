@@ -22,8 +22,9 @@ Gist URL for all emails: https://gist.github.com/esca8peArtist/6dce895c5192e6a3b
 
 ## Email 1 — Common Cause California
 
-**To**: ca@commoncause.org (or current California director — verify at commoncause.org/california)
+**To**: dkemp@commoncause.org (RECOMMENDED — direct to Darius Kemp, Executive Director, appointed June 2025; verified June 5, 2026) OR ca@commoncause.org (general inbox, also valid)
 **CC**: info@commoncause.org (national)
+**Named contact**: Darius Kemp (Executive Director). Jonathan Mehta Stein departed. If sending to dkemp@, change salutation to "Dear Darius," — single-word change.
 **Subject**: Research on Citizens United architecture for California Fair Elections Act campaign — July 1 window
 
 ---
@@ -52,7 +53,8 @@ The July 1 date is our hard window — that is when California ballot campaigns 
 
 ## Email 2 — League of Women Voters California
 
-**To**: lwvc@lwvc.org (or current executive director — verify at lwvc.org/about/staff)
+**To**: lwvc@lwvc.org (verified June 5, 2026 — confirmed active)
+**Named contact**: Jenny Farrell (Executive Director, LWV California) — verified June 5, 2026 at lwvc.org/about/staff. Carol Moon Goldberg no longer listed. Salutation "Dear League of Women Voters California" requires no change; or change to "Dear Jenny," for personalization.
 **Subject**: Dark money architecture research for California Fair Elections Act campaign — July 1 window
 
 ---
@@ -107,7 +109,8 @@ https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372
 
 ## Email 4 — Campaign Legal Center (National — Adav Noti)
 
-**To**: info@campaignlegal.org (or Adav Noti directly if contact is known — verify at campaignlegal.org/team)
+**To**: echlopak@campaignlegalcenter.org (RECOMMENDED — Erin Chlopak, Senior Director, Campaign Finance; email confirmed via ZoomInfo and domain pattern, verified June 5, 2026; direct contact increases routing probability to 65–75% vs 40–60% for info@) OR info@campaignlegal.org (general inbox, also valid)
+**Named contact note**: Adav Noti is Executive Director (not Policy Director — verified June 5, 2026). Salutation "Dear Campaign Legal Center team" requires no change. If sending to Chlopak directly, use "Dear Erin,".
 **Subject**: Constitutional architecture research on Citizens United — Hawaii/Montana model + FEC collapse analysis
 
 ---

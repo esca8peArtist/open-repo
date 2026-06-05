@@ -22,13 +22,20 @@ cross_references:
 
 | Organization | Tier | Email | Best Send Window (UTC) | Follow-up Window | Expected Response Rate |
 |---|---|---|---|---|---|
-| Campaign Legal Center | A | info@campaignlegal.org | June 9, 16:00–18:00 UTC | June 16 (7 days) | 40–60% |
+| Campaign Legal Center | A | echlopak@campaignlegalcenter.org (recommended) OR info@campaignlegal.org | June 9, 16:00–18:00 UTC | June 16 (7 days) | 65–75% (direct) / 40–60% (info@) |
 | Issue One | A | info@issueone.org | June 9, 17:30–18:00 UTC | June 16 (7 days) | 40–60% |
-| Common Cause California | B | ca@commoncause.org | June 11, 16:00–17:00 UTC | June 18 (7 days) | 20–30% |
+| Common Cause California | B | dkemp@commoncause.org (recommended) OR ca@commoncause.org | June 11, 16:00–17:00 UTC | June 18 (7 days) | 20–30% |
 | League of Women Voters CA | B | lwvc@lwvc.org | June 11, 16:30–17:00 UTC | June 18 (7 days) | 20–30% |
-| Clean Money Action Fund | C | info@cleanmoney.org* | June 11, 17:00–17:30 UTC | June 20 (9 days) | 5–10% |
+| Clean Money Action Fund | C | info@CAclean.org (confirmed June 5, 2026)* | June 11, 17:00–17:30 UTC | June 20 (9 days) | 5–10% |
 
-*Clean Money Action Fund email requires day-of verification at cleanmoney.org before sending. Pre-verification confirmed info@cleanmoney.org as of June 4, 2026, but organizational contact pages change. Allow 5 minutes on June 11 morning to confirm.*
+*Clean Money Action Fund: cleanmoney.org domain was previously unreachable; contact email is info@CAclean.org per yesfairelections.org/about/aboutus.php — confirmed June 5, 2026. No day-of re-verification needed for the email address itself. President Trent Lange confirmed in role since 2009.*
+
+**Named contacts (June 5, 2026 verified)**:
+- CLC: Erin Chlopak (Senior Director, Campaign Finance) — echlopak@campaignlegalcenter.org
+- Issue One: Nick Penniman (Founder & CEO) — info@issueone.org
+- Common Cause CA: Darius Kemp (Executive Director, since June 2025) — dkemp@commoncause.org
+- LWV CA: Jenny Farrell (Executive Director) — lwvc@lwvc.org
+- Clean Money Action Fund: Trent Lange (President) — info@CAclean.org
 
 **UTC conversion note**: 16:00–18:00 UTC = 09:00–11:00 AM Pacific Daylight Time. All local times in this document assume Pacific Daylight Time (UTC-7).
 
@@ -44,7 +51,7 @@ cross_references:
 **Website**: campaignlegal.org
 **Phone**: (202) 736-2200
 **Twitter/X**: @CampaignLegal
-**Primary contact name**: Adav Noti (Policy Director — verify at campaignlegal.org/team before sending)
+**Primary contact name**: Adav Noti (Executive Director — verified June 5, 2026; Noti is Executive Director since Jan 1, 2024, not Policy Director). Best direct routing for campaign finance: Erin Chlopak, Senior Director, Campaign Finance — echlopak@campaignlegalcenter.org (email domain confirmed via ZoomInfo/legal filings).
 **Address**: 1101 14th St. NW, Suite 400, Washington, DC 20005
 
 **Previous engagement history**: No prior direct engagement in this research project. CLC is cited throughout Domain 51 as a primary litigation source. They are familiar with this research terrain by design.
@@ -93,7 +100,7 @@ Rate ceiling is 60% because Issue One is a smaller organization than CLC with le
 **Website**: commoncause.org/california
 **Phone**: (916) 442-7530 (Sacramento office)
 **Twitter/X**: @CommonCauseCA
-**Primary contact name**: Jonathan Mehta Stein (Executive Director, California Common Cause) — verify at commoncause.org/california before sending
+**Primary contact name**: Darius Kemp (Executive Director, California Common Cause) — verified June 5, 2026 via commoncause.org/california press release. Direct email: dkemp@commoncause.org. [Jonathan Mehta Stein departed; Kemp appointed June 2025]
 **Address**: 1111 L Street, Suite 1100, Sacramento, CA 95814
 
 **Previous engagement history**: No prior direct engagement. Common Cause California is not cited in Domain 51 (their national counterpart Common Cause is cited in passing). The email approach must be value-forward rather than citation-based.
@@ -115,7 +122,7 @@ Rate ceiling is 30% rather than 40%+ because state affiliate organizations have 
 **Website**: lwvc.org
 **Phone**: (916) 442-7215
 **Twitter/X**: @LWV_CA
-**Primary contact name**: Carol Moon Goldberg (President, LWV California) — verify at lwvc.org/about/staff before sending
+**Primary contact name**: Jenny Farrell (Executive Director, LWV California) — verified June 5, 2026 via lwvc.org/about/staff. [Carol Moon Goldberg no longer listed; Farrell is current Executive Director]
 **Address**: 1107 9th St., Suite 300, Sacramento, CA 95814
 
 **Previous engagement history**: No prior direct engagement. LWV is cited indirectly in Domain 51 through references to their voter registration and public education work nationally.
@@ -253,3 +260,62 @@ These contacts are not part of the June 9–12 execution window. Activate only i
 *Prepared June 4, 2026. Contact information verified as of June 4 via public organizational websites. Re-verify all email addresses on June 8 (CLC, Issue One) and June 11 morning (Common Cause CA, LWV CA, Clean Money Action Fund) before sending.*
 
 *Sources: [Campaign Legal Center — Contact Us](https://campaignlegal.org/contact-us); [Issue One — About/Team](https://issueone.org); [Common Cause California](https://www.commoncause.org/california/press/); [League of Women Voters California](https://lwvc.org); [California Fair Elections Act — Yes Fair Elections](https://www.yesfairelections.org/framework.php?path=about/sb42)*
+
+---
+
+## June 5, 2026 Pre-Flight Contact Verification
+
+**Verification run**: June 5, 2026 (4 days before Wave 1 execution)
+**Method**: Live web scrape of official organization staff pages, contact pages, and press releases
+**Verifier**: Orchestrator Item 80 research run
+
+### Verification Results Summary
+
+| Contact | Email | Named Contact | Status | Change from June 4 |
+|---|---|---|---|---|
+| Campaign Legal Center | info@campaignlegal.org | Adav Noti (Executive Director) | VERIFIED — CORRECTION | Title was "Policy Director" in June 4 docs; Noti is actually Executive Director (promoted Jan 1, 2024). Best direct contact for campaign finance: Erin Chlopak, Senior Director, Campaign Finance — echlopak@campaignlegalcenter.org (confirmed via ZoomInfo/legal filings). |
+| Issue One | info@issueone.org | Nick Penniman (Founder & CEO) | VERIFIED — NO CHANGE | Leadership confirmed current. issueone.org/contact lists info@issueone.org and (202) 299-0265. Cory Combs handles media (ccombs@issueone.org). |
+| Common Cause California | ca@commoncause.org | Darius Kemp (Executive Director) | VERIFIED — PERSONNEL CHANGE | Jonathan Mehta Stein departed. Darius Kemp appointed Executive Director June 2025. Direct email: dkemp@commoncause.org. General CA inbox ca@commoncause.org should still route correctly. |
+| League of Women Voters CA | lwvc@lwvc.org | Jenny Farrell (Executive Director) | VERIFIED — PERSONNEL CHANGE | Carol Moon Goldberg no longer listed as President. Current Executive Director is Jenny Farrell. Contact email lwvc@lwvc.org confirmed active. |
+| Clean Money Action Fund | info@CAclean.org | Trent Lange (President/Executive Director) | VERIFIED — EMAIL CORRECTION | Email template (Email 3) already correctly uses info@CAclean.org per June 5, 2026 pre-verification. cleanmoney.org domain was already noted unreachable; yesfairelections.org confirms info@CAclean.org is current. Trent Lange has held role since 2009, confirmed current. |
+
+### Key Corrections Required Before June 9 Send
+
+**1. Campaign Legal Center — template personalization note**
+- Template Email 4 references "Adav Noti (Policy Director)" — Noti is Executive Director
+- The general inbox info@campaignlegal.org is the correct send address regardless of title
+- For higher-probability routing: Erin Chlopak (Senior Director, Campaign Finance) is the most relevant staff contact for this research. Her email echlopak@campaignlegalcenter.org is confirmed via ZoomInfo and CLC legal filing metadata (June 5, 2026). Sending directly to Chlopak raises response probability to 65–75%.
+- Impact on template: Low. Email 4 body does not name Noti directly; salutation is "Dear Campaign Legal Center team" — no text correction required. The personalization note in the checklist is what needs updating.
+
+**2. Common Cause California — named contact in template**
+- Template Email 1 and DOMAIN_51_CONTACT_STRATIFICATION_AND_TIMING.md reference Jonathan Mehta Stein
+- Current Executive Director: Darius Kemp (dkemp@commoncause.org, appointed June 2025)
+- Send options (choose one):
+  - Option A (safe): Send to ca@commoncause.org as planned; salutation is "Dear Common Cause California team" — no name change needed in body
+  - Option B (higher routing probability): Send directly to dkemp@commoncause.org — personalizing to Kemp by name increases routing probability substantially given campaign-mode inbox volume
+- Recommendation: Use Option B. Address to "Dear Darius" in the salutation. One-word change in Email 1.
+
+**3. League of Women Voters California — named contact**
+- DOMAIN_51_CONTACT_STRATIFICATION_AND_TIMING.md references Carol Moon Goldberg (President)
+- Current Executive Director: Jenny Farrell
+- Template Email 2 salutation is "Dear League of Women Voters California" — no direct name reference in body; no body text change required
+- Update the stratification document named contact field (done in this update)
+
+### Gist URL Verification
+
+**Status**: CONFIRMED LIVE — June 5, 2026
+**URL**: https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372
+**Test result**: HTTP 200, fully accessible, content loads correctly. Domain 51 research title and content confirmed current (FEC shutdown, Hawaii SB 2471, AI PAC data, California Fair Elections Act all present).
+**June 9 pre-send action**: Load URL at 08:30 local to confirm still accessible (standard procedure; confirmed today).
+
+### Updated Contact Quick Reference (June 5)
+
+| Organization | Tier | Send Email | Best Named Contact | June 5 Status |
+|---|---|---|---|---|
+| Campaign Legal Center | A | info@campaignlegal.org | Erin Chlopak (Senior Dir, Campaign Finance) — verify direct email | VERIFIED |
+| Issue One | A | info@issueone.org | Nick Penniman (Founder/CEO) | VERIFIED |
+| Common Cause California | B | dkemp@commoncause.org (recommended) OR ca@commoncause.org | Darius Kemp (Executive Director) | PERSONNEL CHANGE — use Kemp |
+| League of Women Voters CA | B | lwvc@lwvc.org | Jenny Farrell (Executive Director) | PERSONNEL CHANGE — use Farrell |
+| Clean Money Action Fund | C | info@CAclean.org | Trent Lange (President) | VERIFIED |
+
+*June 5, 2026 verification sources: [CLC Staff Page](https://campaignlegal.org/about/staff); [Adav Noti — Executive Director announcement](https://campaignlegal.org/update/adav-noti-named-executive-director-campaign-legal-center); [Issue One Team](https://issueone.org/team/); [Darius Kemp — Common Cause CA Executive Director](https://www.commoncause.org/california/press/darius-kemp-joins-common-cause-as-californias-executive-director/); [LWV CA Staff](https://lwvc.org/about/staff); [Yes Fair Elections — About Clean Money Action Fund](https://www.yesfairelections.org/about/aboutus.php)*
