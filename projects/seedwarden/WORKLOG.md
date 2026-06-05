@@ -4,6 +4,42 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 97 — Phase 3 Production Sprint Risk Mitigation & Solo Fallback Architecture — June 5, 2026
+
+**Task**: Build comprehensive risk mitigation playbook and solo fallback contingency for Phase 3 production sprint. Three production-ready documents covering the contractor decision lifecycle, 9-week solo fallback timeline, and go/no-go escalation framework.
+
+**Input documents read**: `PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md` (search channels, vetting rubric, rate benchmarking, timeline), `PHASE_3_LAUNCH_RISK_REGISTER.md` (v1.0 May 21 — earlier risk inventory), `PHASE_3_PRODUCTION_SPRINT_RISK_REGISTER.md` (8 risks, detection procedures, mitigation actions), `PHASE_3_CONTRACTOR_DECISION_TREE.md` (go/no-go framework, solo fallback schedule, mid-sprint dropout procedure), `PHASE_3_CRITICAL_PATH_ANALYSIS_JUNE22_JULY13.md` (critical path, upload dates, float), `PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md` (per-bundle section word targets, template architecture), `PHASE_4_BOTANICAL_IDENTIFICATION_GUIDE_ROADMAP.md` (Phase 4 production window, launch targets for timeline cascade analysis).
+
+**Files written**:
+
+1. `PHASE_3_COMPREHENSIVE_RISK_REGISTER.md`
+   - 8 risks with numeric probability × impact, covering contractor dropout (P=15%, I=CRITICAL), image sourcing delay (P=20%, HIGH), Women's Health scope creep (P=10%, CRITICAL), contraindication research gaps (P=10%, HIGH), payment delays (P=5%, MEDIUM), scope expansion (P=20%, MEDIUM), deadline compression Week 2–3 (P=15%, HIGH), solo fallback decision cascade (P=20%, HIGH)
+   - Per-risk detection procedures with daily and weekly checkpoint criteria
+   - Day 2 checkpoint escalation (June 23 EOD): Women's Health below 1,200w triggers scope compression before formal pace gate
+   - Critical path escalation map: Women's Health zero-float sequence with branch actions at D1, D2, D3, D8, D14
+   - Register review schedule covering 11 checkpoint dates from June 21 through solo fallback Week 5 (July 26)
+
+2. `PHASE_3_SOLO_FALLBACK_ARCHITECTURE.md`
+   - 9-week solo timeline (June 22 – September 24) at 12 hours/week non-negotiable ceiling
+   - Bundle write order logic: WH→Resp→Immunity→Sleep→Digestive — cross-species savings rationale (Echinacea, Elderberry, Lemon Balm, Lavender, Dandelion cross-references save ~1,650 words + 3–4 hours research)
+   - Per-week detailed hour allocation (9h writing + 2h admin + 1h monitoring weekly ratio), day-level task breakdown for Weeks 1–8, extended Week 9 structure
+   - Three scope reduction cascades: Cascade 1 (D3 pace gate failure → Women's Health compression, 350w saved), Cascade 2 (July 12 below 75% → Immunity simplified, 350–400w saved), Cascade 3 (July 26 below 75% on both Sleep + Immunity → Digestive removed from Phase 3, deferred to Phase 4)
+   - Phase 4 timeline impact: contractor model (Phase 4 July 14 start) vs. solo model (Phase 4 October 1 start, 79-day shift); Phase 5 February 1, 2027 vs. November 1, 2026
+   - Revenue impact quantification: Phase 3 delay ~$195–$864; Phase 4 delay ~$10,514; total ~$10,700–$11,400 in delayed or foregone revenue
+
+3. `PHASE_3_CONTRACTOR_DECISION_ESCALATION_FRAMEWORK.md`
+   - Go/no-go decision tree with 4 outcomes (GO, HOLD, NO-GO, ABORT) and step-by-step condition logic
+   - Three numeric escalation triggers: Trigger 1 (0 responses by June 10 → expand to 30–50 AHG contacts + Toptal + revised Upwork + Herbal Academy referral), Trigger 2 (1 response by June 12 rate $1,501+ → Over-Budget Protocol + simultaneous expanded outreach), Trigger 3 (2+ qualified responses by June 13 → GO signal)
+   - Phase 3→Phase 4 timeline comparison table (all 10 milestone dates, contractor vs. solo delta)
+   - Revenue impact table: Phase 3 delayed bundles (~$195–$864) + Phase 4 foregone revenue (~$10,514) = total ~$10,700–$11,400
+   - Q4 2026 planning cascade: contractor model (Phase 5 Nov 1 2026) vs. solo model (Phase 5 Feb 1 2027)
+   - Decision log template with worked examples (GO outcome June 12, NO-GO outcome June 15)
+   - FAQ: 4 edge cases covering late-start contractor, missing portfolio sample, post-NO-GO unsolicited candidate, Tier B contractor consideration
+
+**Design notes**: All three documents cross-reference each other. The risk register is the daily operational document; the solo fallback architecture is the execution guide if contractor search fails; the escalation framework is the decision-making document. The three together form a complete contingency system for Phase 3.
+
+---
+
 ## Item 85 — Track B Day 3/7/14 Checkpoint Automation Scripts — June 5, 2026
 
 **Task**: Build production-ready Python automation scripts for Track B Day 3/7/14 monitoring checkpoints, plus cron setup guide and contingency decision implementation doc.
@@ -80,6 +116,40 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 **Design notes**: All hour estimates grounded in content-outline section-by-section complexity and verified against the Phase 3 critical path analysis velocity assumptions (300–350 words/hour). Calendars assume June 22 start; if Phase 2 Day 14 gate slips, all dates slide by slip delta. Contractor brief template is production-ready for immediate use.
 
 **Deadline met**: Item 77 pre-staging complete (June 5). Activate on Phase 2 Day 14 GO decision (June 19). Sprint begins June 22.
+
+---
+
+## Item 94 — Phase 3 Production Sprint Contractor and Risk Mitigation — June 5, 2026
+
+**Task**: Validate and finalize three contractor/risk documents for Phase 3 production sprint. Contractor search deadline June 17. Decision window June 6–17.
+
+**Research completed**:
+- AHG directory verified at directory.americanherbalistsguild.com — public, searchable by specialty. RH credential requires 1,200+ hours training + examination. Estimated 30–50 RH members list education/writing as secondary activity.
+- IHA membership directory verified at iherb.org/membership-directory — membership includes herbalists, writers, teachers, photographers, growers. Lower clinical density than AHG; stronger for cultivation-accuracy roles (Respiratory, Digestive bundles).
+- NAMA practitioner directory verified at ayurveda.memberclicks.net/directory-find-a-professional — Ayurvedic focus; relevant for Ashwagandha and adaptogen framing in Immunity bundle.
+- Upwork herbalist writer market: general freelance writers $30–$59/hr; herbalist writers $25–$65/hr depending on credential depth. Kolabtree medical/herbal science writers $50–$100/hr (above ceiling without flat-rate negotiation).
+- Adrian White (Iowa Herbalist): certified herbalist since 2012, author "Herbalism: Plants & Potions That Heal" (Arcturus 2022), 100+ clients, published in Healthline/Guardian/Rodale's. Email: adrian@iowaherbalist.com. Upwork: upwork.com/freelancers/~0182c87035723aaf36.
+- Victoria W. (Upwork): clinical herbalist and herbal content creator. Profile at upwork.com/freelancers/~01ea2ab4b1ac443b56. Rate and job success score require Upwork login.
+- Herbal Content Cottage: agency at herbalcontentcottage.com. FTC-compliant language training confirmed. Agency rate $500/800 words — above budget. Useful as referral source for independent writers.
+- Kolabtree herbal medicine experts reviewed: Dr. Krystal C. (US, ND, $50/hr), Dr. Brice L. (Benin, $50/hr), Dr. Shalini M. (India, $60/hr plant science). All above-ceiling on hourly; flat-rate negotiation required.
+- Women's health herbal contraindications research context confirmed: 27/126 herbal medicines contraindicated in pregnancy in peer-reviewed studies; herb-drug interactions of moderate severity in ~1 in 8 pregnant herb users. Validates CRITICAL impact rating on Risk 3 and Risk 4.
+
+**Files reviewed** (all version 1.0, production-ready from prior session):
+- `PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md` — complete (6 search channels, 100-point vetting rubric, interview checklist, rate benchmarking, outreach templates, tracking log, timeline)
+- `PHASE_3_CONTRACTOR_DECISION_TREE.md` — complete (June 5–17 primary decision tree, over-budget protocol, solo fallback schedule, backup roster triggers, mid-sprint dropout procedure, FAQ)
+- `PHASE_3_PRODUCTION_SPRINT_RISK_REGISTER.md` — complete (8 risks with P/I/composite, detection thresholds, detection procedures, escalation criteria, mitigation actions)
+
+**File updated**:
+- `PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md` — version 1.0 → 1.1. Added Appendix A: Named Contractor Leads with 4 verified contacts (Adrian White, Victoria W., Herbal Content Cottage, Kolabtree expert pool) including contact methods, specialty fit assessment, rate context, and action steps.
+
+**Quality verification**:
+- Sourcing: 6 verified channels (AHG, IHA, NAMA-adjacent, Chestnut, Herbal Academy, Upwork/Toptal) — exceeds 3+ directory minimum
+- Vetting rubric: 100-point scorecard, 6 categories (credential, portfolio, contraindication rigor, deadline commitment, scope consistency, preferred qualifiers), 5 disqualifying conditions — exceeds 5-point minimum
+- Risk register: 8 named risks, each with numeric P%, impact tier, detection trigger, detection procedure, escalation criteria, mitigation actions — meets all quality bars
+- Decision framework: deterministic go/no-go nodes at June 8, 10, 12, 14, 15, 17 with explicit thresholds — meets June 17 decision clarity requirement
+- Named contractor leads: 4 actionable leads with contact information added to Appendix A
+
+**Status**: All three files production-ready. No further work required before June 6 outreach launch.
 
 ---
 

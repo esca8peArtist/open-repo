@@ -1,7 +1,7 @@
 ---
 title: "Phase 3 Contractor Sourcing Strategy — Herbalist Writer Recruitment, Vetting, and Rate Benchmarking"
 date: 2026-06-05
-version: 1.0
+version: 1.1
 status: production-ready
 contractor-search-deadline: June 17, 2026 (5 days pre-launch)
 phase-3-start: June 22, 2026
@@ -343,4 +343,58 @@ Maintain this log in WORKLOG.md from June 5 through contract signing.
 
 ---
 
-*Prepared: June 5, 2026. Cross-references: PHASE_3_SECOND_WRITER_CANDIDATE_PROFILES.md (qualification criteria), PHASE_3_HERBALIST_NETWORK_PRESTAGING.md (credential vetting procedures), PHASE_3_CONTRACTOR_DECISION_TREE.md (go/no-go framework), PHASE_3_PRODUCTION_SPRINT_RISK_REGISTER.md (contractor dropout risk).*
+## Appendix A — Named Contractor Leads (Verified via Research, June 5, 2026)
+
+The following candidates were identified by direct web research and represent the highest-priority first-contact targets across channels. Each entry includes the source URL and the specific action to take within the search window.
+
+### Lead 1: Adrian White — Iowa Herbalist
+
+**Contact**: adrian@iowaherbalist.com  
+**Upwork profile**: upwork.com/freelancers/~0182c87035723aaf36  
+**Contently**: deernationherbs.com/portfolio-resume-cv/  
+**Background**: Certified herbalist since 2012, organic farmer (Jupiter Ridge Farm). Author of "Herbalism: Plants & Potions That Heal" (Arcturus Publishing, 2022). 100+ clients over 10 years. Published in Rodale's Organic Life, Healthline, Good Housekeeping, The Guardian, Civil Eats. Herbal Academy contributor. Recipe in herbalist Tina Sam's book.  
+**Specialty fit**: Agriculture, health, herbalism, sustainability — strong for Respiratory and Digestive bundles. Less documented clinical contraindication depth — administer both screening questions.  
+**Rate**: Not published; email inquiry required. Upwork profile available for platform engagement.  
+**Action**: Email adrian@iowaherbalist.com using the Initial Outreach Email template (Section 5) by June 6. Reference her published monograph as credential signal. Request screening question answers in reply.  
+**Vetting note**: Portfolio depth likely 14–20 pts. Contraindication rigor must be confirmed by screening questions — do not assume depth from general herbalism publishing background.
+
+---
+
+### Lead 2: Victoria W. — Clinical Herbalist and Herbal Content Creator
+
+**Upwork profile**: upwork.com/freelancers/~01ea2ab4b1ac443b56  
+**Background**: Self-identified clinical herbalist with herbal content creation specialty. Profile confirmed on Upwork; rate and job success score require direct Upwork login to view.  
+**Specialty fit**: Clinical herbalist credential is the strongest available filter for this project. If she carries AHG RH or equivalent clinical credential, she is a Tier A candidate immediately.  
+**Rate**: Requires Upwork account review.  
+**Action**: Apply the Upwork screening question procedure (Section 1, Channel 6) by posting the job listing AND by sending a direct message to her Upwork profile immediately after the job is posted. This two-path approach increases response probability.  
+**Vetting note**: The "clinical herbalist" self-description on Upwork is not verified by the platform. Ask for credential documentation (AHG RH certificate or equivalent) in the first message alongside the two screening questions.
+
+---
+
+### Lead 3: Herbal Content Cottage
+
+**Website**: herbalcontentcottage.com  
+**Background**: Boutique herbalism content agency. Founder Hannah has national wellness magazine background. Team is "deeply knowledgeable about herbalism" and trained in compliant health language. Client base includes clinical practitioners and herb schools.  
+**Specialty fit**: Compliant health language training is directly relevant to FTC requirement. Agency model means multiple writers — ask which specific writer would handle the project and vet that individual.  
+**Pricing context**: Agency rates are $500 for 800 words and $650 for 1,200 words — higher than project budget when extrapolated to 11,000 words (~$6,000). Agency pricing does not fit the $1,000–$1,350 budget.  
+**Action**: Contact via herbalcontentcottage.com/services to ask if any of their writers are available for direct freelance engagement (not through the agency). Some writers at boutique agencies accept direct projects during off-peak periods. If yes: vet the individual writer; if no: do not pursue the agency rate.  
+**Vetting note**: Agency pricing is a likely blocker. Use this lead primarily as a referral source — ask if they can recommend a freelancer in their network who works independently.
+
+---
+
+### Lead 4: Kolabtree — Herbal Medicine and Alternative Medicine Experts
+
+**URL**: kolabtree.com/find-an-expert/subject/herbal-medicine  
+**Relevant profiles (from research)**:
+- Dr. Krystal C. (US): $50/hr, Doctorate of Naturopathic Medicine, cosmetic/supplement formulation and medical writing. Rate translates to approximately $1,550–$1,850 for 31–37 hours — above ceiling but negotiable for a flat-rate offer.
+- Dr. Brice L. (Benin): $50/hr, PhD in Life Sciences, Biochemistry/Pharmacology focus. Strong for contraindication depth; geography may affect availability and payment logistics.
+- Dr. Shalini M. (India): $60/hr, PhD in Plant Science, scientific writing. Plant science credential is strong; clinical herbalism depth unknown.
+
+**Specialty fit**: Kolabtree experts carry academic credentials (PhD, ND) rather than clinical herbalist credentials. Academic contraindication depth is often stronger than practitioner depth for drug interaction research; practical guide writing voice requires review.  
+**Rate note**: Kolabtree's standard medical writer rate is $40–$60/hr. At the project scope (31–37 hours), this is $1,240–$2,220 at platform rates before Kolabtree fees. Negotiate a flat rate directly with the expert if possible.  
+**Action**: Post a project brief on Kolabtree at kolabtree.com specifying "herbal medicine educational guide writing, 11,000 words, FTC-compliant, contraindication depth required" with the $1,000–$1,350 budget. Kolabtree experts set their own rates for project bids — the posted budget anchors the bid range. Apply both screening questions to all Kolabtree respondents.  
+**Platform note**: Kolabtree is an academic freelancer platform; use it only if AHG, Chestnut, and Upwork searches produce no Tier A candidates by June 10.
+
+---
+
+*Prepared: June 5, 2026. Appendix A added June 5 with verified leads from web research. Cross-references: PHASE_3_SECOND_WRITER_CANDIDATE_PROFILES.md (qualification criteria), PHASE_3_HERBALIST_NETWORK_PRESTAGING.md (credential vetting procedures), PHASE_3_CONTRACTOR_DECISION_TREE.md (go/no-go framework), PHASE_3_PRODUCTION_SPRINT_RISK_REGISTER.md (contractor dropout risk).*
