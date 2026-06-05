@@ -4,6 +4,28 @@
 
 ---
 
+## Since Last Check-in (Session 2871 — June 5 11:35 UTC — Item 62 Standing By, Final Verification Window)
+
+**Status Verification at 11:35 UTC**:
+- ✅ **Current time**: 11:35:41 UTC (1h 24m to Item 62 execution at 13:00 UTC)
+- ✅ **Item 62 Infrastructure Verified** (continues nominal from Session 2870):
+  - `scripts/stockbot_june5_premarket_check.sh` ✓ (4.7K, executable, 4-gate verification ready)
+  - `scripts/execute_item_62_contingency.sh` ✓ (9.4K, executable, GO/CAUTION/NO-GO routing ready)
+  - `scripts/post_market_analysis_june5.sh` ✓ (6.0K, executable, post-market analysis ready)
+  - All production-ready, no changes since Session 2869
+- ✅ **ORCHESTRATOR_STATE.md**: Current (auto-generated)
+- ✅ **BLOCKED.md**: 2 active blocks (both user-action only, unresolved)
+  - cybersecurity-hardening: VeraCrypt restart pending
+  - mfg-farm: Test print execution pending
+- ✅ **Working tree**: Clean (ORCHESTRATOR_STATE.md auto-modified only)
+- ✅ **Final execution window**: Item 62 execution at 13:00 UTC (1h 24m remaining)
+
+**Assessment**: All systems continue nominal. Per Session 2833 standing-by protocol: no autonomous work spawned. Item 62 execution at 13:00 UTC confirmed ready. Standing by for execution.
+
+**Status**: Item 62 standing by. All systems verified ready. Next critical event: 13:00 UTC Item 62 pre-market checklist execution.
+
+---
+
 ## Since Last Check-in (Session 2870 — June 5 11:28 UTC — Item 62 Standing By, Final Verification Window)
 
 **Status Verification at 11:28 UTC**:
