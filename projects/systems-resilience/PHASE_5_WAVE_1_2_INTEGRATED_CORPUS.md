@@ -5,7 +5,8 @@ phase: 5
 waves: "1 + 2"
 status: INTEGRATED
 scope: "Community Resilience Infrastructure and Governance (Microgrids, Implementation, Conflict Resolution, Psychological Support, Veterinary Care)"
-total_words: 45380
+total_words: 16234
+source_documents_total_words: 45380
 total_documents: 5
 created: 2026-06-01
 publication_date: June 5, 2026 (scheduled)
@@ -1276,7 +1277,7 @@ Sections 2 and 3 provide the governance structures (delegate council, Ostrom com
 
 **Integrated Corpus Status**: PRODUCTION-READY
 **Publication Date**: June 5, 2026, 13:00 UTC
-**Total Word Count**: 45,380
+**Total Word Count**: 16,234 (condensed synthesis; source documents total 45,380 words)
 **Document Count**: 5 Wave 1+2 documents merged into unified corpus
 **Last Updated**: June 1, 2026
 

@@ -248,8 +248,6 @@ If the household has electricity (solar, generator, or normal grid power): 10,00
 
 ### Suicide Risk in Agricultural Zones — High-Risk Seasons and Recovery Infrastructure
 
-### Suicide Risk in Agricultural Zones — High-Risk Seasons and Recovery Infrastructure
-
 Agricultural communities have elevated baseline suicide rates (farmers' suicide rate approximately 36.1 per 100,000 compared to 27.4 per 100,000 in other occupations), but the seasonal pattern requires careful interpretation. [24] National data on farmer suicide from 2014–2021 shows that winter (December–February) accounts for the lowest percentage of suicides — approximately 22.9% of farmer deaths — while spring and summer months (May–July) show elevated rates. [24] This runs counter to the common assumption that "winter darkness" drives winter suicide; the actual pattern in agricultural populations shows higher risk during high-stress seasons (planting in spring, financial uncertainty in summer).
 
 However, Zone 5 household disruption may alter this pattern. A household in sustained winter disruption faces simultaneous risk factors not present in seasonal baseline: social isolation compressed into tight quarters, limited mobility due to extreme cold, resource uncertainty visualized daily through visible depletion, darkness (which affects mood through circadian disruption), and often the loss of primary seasonal work (which provides social structure and identity). The household's lay PFA practitioners should recognize three things:
