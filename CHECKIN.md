@@ -4,6 +4,30 @@
 
 ---
 
+## Since Last Check-in (Session 2838 — June 5 05:30 UTC — Item 62 Standing By, Wakeup Scheduled)
+
+**Session Status**:
+- ✅ **Item 62 execution standing ready**: 7h 30m until pre-market checklist (13:00 UTC)
+- ✅ **Scheduled wakeup confirmed**: Orchestrator will wake at 06:15 UTC (45 min) for intermediate re-verification, then 12:50 UTC for final execution
+- ✅ **No new autonomous work**: Continuing standing-by protocol per explicit Session 2833 recommendation
+- ✅ **All state files current**: ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md in sync
+- ✅ **Jetson infrastructure verified**: SSH accessible, 3 Docker containers healthy (stockbot, stockbot-web, gitea)
+
+**Execution Timeline** (unchanged):
+1. **06:15 UTC** (45 min): Intermediate wakeup — re-verify Item 62 infrastructure, confirm wakeup chain
+2. **12:50 UTC** (7h 20m): Final wakeup — execute Item 62 pre-market checklist
+3. **13:00 UTC**: Item 62 decision routing (bash scripts/execute_item_62_contingency.sh)
+4. **13:30 UTC**: Market open — JPM ridge_wf + AMZN lgbm_ho trading sessions active
+5. **20:00 UTC**: Post-market analysis window — Exploration Queue work resumes
+
+**Assessment**:
+- All contingency infrastructure production-ready
+- No blocking conditions identified
+- Next orchestrator action: automatic wakeup at 06:15 UTC
+- Exploration Queue (Items 16, 66, 70) deferred to post-market window
+
+---
+
 ## Since Last Check-in (Session 2837 — June 5 05:15 UTC — Item 62 Scheduled Wakeup)
 
 **Session Status**:
