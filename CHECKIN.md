@@ -4,14 +4,22 @@
 
 ---
 
-## Since Last Check-in (Session 2837 — June 5 05:15 UTC — Item 62 Final Pre-Execution Checkpoint)
+## Since Last Check-in (Session 2837 — June 5 05:15 UTC — Item 62 Scheduled Wakeup)
 
 **Session Status**:
 - ✅ **Item 62 infrastructure re-verified**: Both `scripts/execute_item_62_contingency.sh` (9.4K, executable) and `scripts/stockbot_june5_premarket_check.sh` (4.7K, executable) confirmed ready
 - ✅ **ORCHESTRATOR_STATE.md regenerated**: Timestamp updated to 05:15 UTC; all other state current
+- ✅ **Scheduled wakeup for Item 62**: Orchestrator will resume at ~06:15 UTC (1h from session start), then reschedule closer wakeup for 12:50 UTC to execute Item 62 at 13:00 UTC
 - ✅ **No new work spawned**: Continuing standing-by protocol per Session 2833 recommendation
 - ✅ **Runtime artifacts normal**: stockbot runtime changes (database, logs) are expected; no code changes required
-- ✅ **Standing by for execution**: 7h 45m until Item 62 pre-market checklist at 13:00 UTC
+
+**Execution Plan**:
+1. **Session resume ~06:15 UTC**: Re-verify Item 62 infrastructure, reschedule closer wakeup
+2. **Session resume ~12:50 UTC**: Execute Item 62 pre-market checklist
+   - `bash scripts/stockbot_june5_premarket_check.sh` (13:00 UTC, 4 gates: container health, session status, WebSocket stability, Alpaca API)
+   - `bash scripts/execute_item_62_contingency.sh` (13:05 UTC, route to GO/CAUTION/NO-GO path)
+3. **13:30 UTC**: Market open — trading sessions active per contingency path
+4. **20:00 UTC**: Post-market analysis window opens
 
 **Status**:
 - Orchestrator standing ready for Item 62 execution at 13:00 UTC
