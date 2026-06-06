@@ -4,6 +4,45 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 99 — Phase 3 Photo Contractor Search Infrastructure — June 6, 2026
+
+**Task**: Build Phase 3 photo contractor search infrastructure for the June 8–17 search window. This covers the botanical flat-lay/lifestyle photographer role — a separate contractor track from the herbalist writer (Item 94). User gates 1–5 execute June 7–8; photo contractor search begins June 8.
+
+**Deliverables produced** (all in projects/seedwarden/):
+
+1. `PHASE_3_CONTRACTOR_SEARCH_ROADMAP.md` (v1.0)
+   - Full 9-day search timeline (June 8–17) with day-by-day actions
+   - Full 9-day onboarding timeline (June 18–July 1) with briefing call, test shoot, prop staging
+   - Production schedule: Respiratory shoot July 1–5, Immunity July 8–12, Digestive July 20–24
+   - Contractor profile: must-have vs. preferred qualifications, disqualifying conditions
+   - Search strategy: 5 primary channels (Instagram hashtag search, Thumbtack, Bark, Facebook groups, warm referral) + 3 secondary channels activated June 10 if primary yield is below threshold
+   - 50-point screening rubric: portfolio match (20), technical output (15), availability (10), commercial license (5)
+   - Onboarding checklist: documentation delivery, briefing call agenda, props staging, test image review, platform setup for Drive delivery folder
+   - 4 contingency paths: A (self-shoot), B (Wikimedia-only Round 1), C (budget escalation), dropout mid-sprint
+   - Success criteria checklist: 7 items to clear by July 1
+
+2. `PHASE_3_CONTRACTOR_PREBID_MATERIALS.md` (v1.0)
+   - Job description: 5-image deliverable per bundle, timeline, compensation, owner-provided vs. contractor-provided breakdown
+   - Equipment and photo spec sheet: resolution (2000px minimum), color space (sRGB), white balance consistency, file format (JPEG 80%+), delivery to Drive folder, naming convention
+   - Proposal submission template: structured bid form covering portfolio, availability per session date, rate, turnaround, commercial license, and one client reference
+   - Contract skeleton: scope, technical specs, compensation and 4-milestone payment schedule, IP assignment, revision policy (1 round included), cancellation terms (72-hour notice), confidentiality hold until listing is live
+   - Q&A template: 8 common contractor questions with pre-drafted answers (plant sources, studio logistics, guide mockup explanation, portfolio rights)
+
+3. `PHASE_3_CONTRACTOR_OUTREACH_SCRIPT.md` (v1.0)
+   - 5 outreach templates: Instagram DM cold, email cold, Thumbtack/Bark platform post, Facebook group post, warm referral ask
+   - Day 1 / Day 3 / final follow-up sequences for Instagram DM and email channels
+   - Post-screening advance and decline templates
+   - 4 pre-vetting questions: availability, flat-lay portfolio, tripod/overhead capability, commercial license — with target answers and flag conditions
+   - Rapid go/no-go screening rubric: 6 signals, hard vs. soft No-Go rules
+   - WORKLOG candidate log format template
+   - 20-minute discovery call guide: opening, 5 structured questions with target answers, close and next-step language
+
+**Separation from writer contractor track**: This infrastructure covers the photo contractor only. The herbalist writer contractor search (PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md, v1.1) is a parallel independent track. The two searches share no evaluation criteria, no timelines (writer contract target June 12; photo contract target June 17), and no budget pools.
+
+**Status**: Production-ready. All three files are copy-paste ready for June 8 outreach start. No user research required before Day 1 outreach — all templates and spec sheets are complete.
+
+---
+
 ## Item 94 — Phase 3 Production Sprint Contractor & Risk Mitigation — June 6, 2026 (session 2926 verification)
 
 **Task**: Produce contractor sourcing strategy, decision framework, and risk register for June 22 Phase 3 launch. Contractor search deadline June 17.
