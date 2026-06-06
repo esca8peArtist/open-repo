@@ -4,6 +4,60 @@
 
 ---
 
+## 🔄 Session 2958 (June 6 20:38–21:15 UTC) — Orchestrator: Phase 3 Pre-Market + Wave 1 Pre-Execution Infrastructure
+
+**Current Status**: ✅ **INFRASTRUCTURE COMPLETE — CRITICAL ISSUES FLAGGED FOR USER REVIEW**
+
+**Work Accomplished**:
+- ✅ Spawned 2 parallel subagents (stockbot + resistance-research) for pre-decision infrastructure
+- ✅ **STOCKBOT**: All 4 pre-market gates PASS; automated validation scripts created; June 8 13:15 UTC ready
+- ✅ **RESISTANCE-RESEARCH**: Wave 1 pre-execution checklist complete; all 5 contacts verified active
+
+**🚨 CRITICAL ISSUES REQUIRING USER INPUT**:
+
+1. **Domain 59 Urgency Frame Error (HIGH PRIORITY)** 
+   - Templates reference "Senate Finance markup window closes June 30" but OBBBA was enacted July 4, 2025
+   - Sending this to expert audiences signals sender is unaware bill was already passed
+   - FIX: 15-minute template edit to reframe as "implementation failure" (CTC benefits still inadequate)
+   - TIMELINE: Must patch before any Domain 59 distribution in Wave 1
+
+2. **Domain 49 Critical Research Update (MEDIUM PRIORITY)**
+   - Louisiana v. Callais decided April 29, 2026 (SCOTUS narrowed VRA Section 2)
+   - Domain was scoped around this litigation — ruling is central, must be documented
+   - FIX: 60-90 min research integration + Tennessee redistricting response
+   - TIMELINE: Before Wave 1 execution if Domain 49 included
+
+3. **Domain K Missing (YELLOW FLAG)**
+   - Federal Judiciary Restructuring domain with January 3, 2027 deadline does not exist yet
+   - Recommended: Begin July-August 2026 with hybrid approach (Sections 1-3 now, Section 4 post-November 4)
+   - TIMELINE: Not blocking Wave 1; Phase 3 decisions at June 17 checkpoint
+
+**Items Needing Your Input** (no change from Session 2956, but now with critical additions):
+
+1. **[URGENT] Domain 59 patch approval** — Do you approve 15-minute rewrite of urgency frame before Wave 1? YES/NO
+2. **[HIGH] Domain 49 research** — Do you approve 60-90 minute Callais integration before Wave 1? YES/NO  
+3. **[MEDIUM] Domain K hybrid start** — Do you approve July-August start for Domain K Phase 3? YES/NO
+4. **[STANDING] stockbot Phase 3 decision (June 7 09:00 UTC)** — Memo ready; confirm GO/CAUTION/NO-GO
+5. **[STANDING] open-repo start time clarification** — 09:00 UTC or 20:00 UTC for June 12 deployment?
+
+**Next Immediate Actions**:
+1. **June 7 morning**: Review critical issues above + decide Domain 59/49/K (user actions, <2 hours total)
+2. **June 7 09:00 UTC**: Review JUNE_7_USER_DECISION_MEMO.md, confirm GO/CAUTION/NO-GO for stockbot
+3. **June 8 13:15 UTC**: Orchestrator runs phase3_daily_monitor.sh --premarket (automation)
+4. **June 10 14:00 UTC**: Wave 1 execution (IF Domain 59/49 patches approved) — 90 min user action
+5. **June 12 pre-deployment**: Confirm deployment start time, execute pre-flight checklist
+
+**Confidence Levels**:
+- **stockbot Phase 3 ready**: 97% (infrastructure automated, gates passing)
+- **resistance-research Wave 1 ready**: 85% (pending Domain 59/49 patches)
+- **Phase 3 planning**: 90% (hybrid Domain K approach viable, contingency routing documented)
+
+**Session Duration**: 18 min agent work + 5 min orchestration
+
+**Commits Staged**: WORKLOG.md + orchestration files pending
+
+---
+
 ## 🔄 Session 2957 (June 6 18:45–19:25 UTC) — Orchestrator: State Verification + Phase 1 Real-Time Tracking Infrastructure
 
 **Current Status**: ✅ **PHASE 1 IMPACT EVALUATION INFRASTRUCTURE PRODUCTION-READY**
