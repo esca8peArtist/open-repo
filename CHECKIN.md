@@ -4,6 +4,30 @@
 
 ---
 
+## 🛑 Session 2964 (June 6 21:15+ UTC) — Pause Acknowledged
+
+**Status**: ✅ **ORCHESTRATOR PAUSED — NO AUTONOMOUS WORK**
+
+**Pause Directive**: Received 2026-06-06 19:33 UTC via Discord. Processed and cleared from INBOX. Orchestrator standing down until user resumes.
+
+**All deliverables remain production-ready**:
+- ✅ stockbot: SLA/contingency/June 9 readiness complete (awaiting Phase 3 decision June 7)
+- ✅ resistance-research: Phase 2 (Wave 1 June 10) + Phase 3 (Domains K, H) ready
+- ✅ mfg-farm: Decision matrix + runbook ready (awaiting test print results)
+- ✅ cybersecurity-hardening: Phase 1.3+ ready (awaiting VeraCrypt restart)
+- ✅ open-repo: Merge-ready; awaiting deployment time confirmation
+
+**Standing blocks** (require user action only):
+1. cybersecurity-hardening: VeraCrypt restart + Phase 1 walkthrough resume
+2. mfg-farm: Test print execution
+3. open-repo: Deployment start time confirmation (09:00 vs 20:00 UTC)
+
+**Next user actions**:
+- When ready: Send `/resume` via Discord to unpause orchestrator
+- Or: Complete any standing block actions (test print, VeraCrypt restart, deployment time decision)
+
+---
+
 ## 🔄 Session 2963 (June 6 19:45–21:15 UTC) — Autonomous Exploration: Stockbot June 9 Readiness + mfg-farm Unblocking
 
 **Status**: ✅ **EXPLORATION QUEUE ADVANCED — 2/3 ITEMS COMPLETE; JUNE 9 + POST-TEST-PRINT PROJECTS HARDENED**
