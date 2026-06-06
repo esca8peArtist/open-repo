@@ -1,7 +1,7 @@
 ---
 title: "Phase 3 Solo Fallback Architecture — 9-Week Timeline, Hour Allocations, and Scope Reduction Cascades"
 date: 2026-06-05
-version: 1.0
+version: 1.1
 status: production-ready
 activation-trigger: June 15, 2026 EOD (no contractor confirmed)
 solo-sprint-window: June 22 – September 24, 2026 (9 weeks)
@@ -400,6 +400,117 @@ When solo fallback is activated (June 12, June 15, or June 17 EOD per the decisi
 
 ---
 
+## Section 6b — Consolidated Checkpoint Criteria
+
+These checkpoints synthesize the per-week detail in Section 3 into a single reference table with explicit pass/fail criteria and escalation actions. Use this section as the weekly review checklist — it is faster to scan than the per-week detail and governs all go/no-go decisions during the sprint.
+
+### Day 2 Checkpoint — June 24 EOD
+
+**What to check**: Women's Health word count.
+
+**Pass threshold**: 2,500+ words in the draft document.
+
+**Fail threshold**: Below 2,500 words.
+
+**If pass**: Standard monitoring continues. Proceed to Week 2 with Respiratory start June 29.
+
+**If fail**: Cascade 1 activates immediately. Log: "D3 pace gate FAILED — Cascade 1 activated. Scope compression: Vitex 600→400w, Red Clover 400→250w. Women's Health upload June 29 preserved." Do not attempt to recover pace by adding hours. Do not move scope compression decisions to the following day. The compression is pre-authorized — execute it immediately, log it, and proceed.
+
+Note: The solo fallback document uses "D3 pace gate" terminology inherited from the contractor sprint (where Day 3 was June 24). In the solo fallback, this is the end of Day 3 of writing — the phrasing and threshold are identical regardless of model.
+
+---
+
+### Day 7 Checkpoint — June 29 EOD
+
+**What to check**: Women's Health uploaded + Respiratory writing started.
+
+**Pass criteria (both must be true)**:
+1. Women's Health Etsy listing published at 9–10am ET on June 29
+2. Respiratory draft has at least 800 words written by end of June 29
+
+**Fail criteria (either)**:
+1. Women's Health not uploaded by June 29 EOD — CRITICAL escalation. This is the only failure that triggers immediate user decision. Cause must be diagnosed same day (export failure, Etsy technical issue, or writing not complete). Recover by June 30 with no exception.
+2. Respiratory below 800 words on June 29 EOD — flag only. Not a cascade trigger. Log the gap; confirm that Week 2 schedule absorbs it.
+
+**If Women's Health upload fails June 29**: Escalate same day. If writing is complete and export failed: re-export immediately; publish June 30 at latest. If writing is not complete: this is a solo fallback failure — activate Cascade 2 review (are Respiratory and Sleep at risk as well?). Log: "D7 CRITICAL — Women's Health not uploaded. Cause: [X]. Recovery: [Y]. Upload target June 30."
+
+**If Respiratory below 800 words June 29**: Log: "D7 — Respiratory at [X] words (target 800). Elevated monitoring in Week 2." No cascade action yet.
+
+---
+
+### Week 2 Checkpoint — July 5 EOD
+
+**What to check**: Respiratory draft progress.
+
+**Pass threshold**: Respiratory at 2,700+ words, self-edit in progress or complete.
+
+**Fail threshold**: Respiratory below 1,800 words (below 67% of target).
+
+**If pass**: Proceed to Week 3 (Respiratory upload July 13). Immunity outline confirmed this week.
+
+**If fail (below 1,800 words)**: Week 3 must complete Respiratory before any Immunity writing starts. Log: "Week 2 checkpoint FAILED — Respiratory at [X] words vs. 2,700 target. Week 3: Respiratory completion priority. Immunity start deferred to Week 4." This does not push the July 13 Respiratory upload — it removes all Week 3 Immunity work to protect it.
+
+**Borderline (1,800–2,499 words)**: Flag elevated risk. Complete Respiratory self-edit pass in the first two days of Week 3 before writing any new content. July 13 Respiratory upload is still achievable.
+
+---
+
+### Week 5 Checkpoint — July 26 EOD
+
+**What to check**: Sleep and Immunity draft progress.
+
+**Pass criteria (both must be true)**:
+1. Immunity at 3,800+ words, self-edited
+2. Sleep complete and PDF export-ready (uploading August 3)
+
+**Fail criteria (either bundle below 75% of target)**:
+- Immunity below 2,850 words (75% of 3,800)
+- Sleep below 2,625 words (75% of 3,500)
+
+**If pass on both**: Proceed to Week 6 (Immunity upload prep, Digestive start). Cascade 3 is not triggered.
+
+**If fail on one bundle**: Apply targeted scope compression to the failing bundle only:
+- If Immunity below threshold: execute Cascade 2 scope reductions (Echinacea 300w → 100w reference; Ashwagandha elaboration → verbatim paste only).
+- If Sleep below threshold: compress Lavender to 150w reference to Women's Health section; compress Cross-Reference section to 100w.
+- Log the compression. Do not trigger Cascade 3 unless both bundles are below threshold.
+
+**If fail on both bundles**: Cascade 3 activates. Digestive is removed from Phase 3 and deferred to Phase 4 (October 2026+). Log: "Week 5 checkpoint — Cascade 3 activated. Both Sleep and Immunity below 75% threshold. Digestive deferred to Phase 4. Phase 3 closes with 4-bundle catalog. Phase 4 start October 1 unchanged." Financial impact of Cascade 3: approximately $200–$400 in delayed Digestive revenue across September–October.
+
+---
+
+### Week 9 Checkpoint — September 21 EOD
+
+**What to check**: Digestive draft status and Phase 3 closure readiness.
+
+**Pass criteria (all three must be true)**:
+1. Digestive draft complete (3,600 words) and self-edited
+2. Digestive PDF export complete and QA-confirmed
+3. Digestive Etsy listing draft ready (SEO title, tags, description)
+
+**Fail criteria**: Digestive not complete or export not QA-confirmed by September 21.
+
+**If pass**: Schedule Digestive upload for September 24. Sprint closes September 24. Phase 4 start confirmed October 1. Log: "Week 9 checkpoint PASS. Digestive upload scheduled September 24. Sprint complete."
+
+**If fail (Digestive not complete by September 21)**: Three days of buffer exist before the September 24 upload date. Diagnose the gap:
+- If Digestive is 80%+ complete: finish by September 23, upload September 24. One-day buffer consumed.
+- If Digestive is 60–79% complete: upload Digestive as a partial bundle (3 species of 4) on September 24; add Ginger or Calendula as a listing update within 2 weeks. This is the same listing-update recovery used for images — Etsy allows content updates without resetting listing age.
+- If Digestive is below 60% complete by September 21: extend Phase 3 to October 5. Phase 4 start adjusts to October 6. Log the extension. This does not cascade to Phase 4 Wave 1 (November 1) — a 5-day Phase 3 extension does not change Wave 1.
+
+**Note**: A September 21 Digestive failure is very unlikely given that Digestive writing completes in Weeks 6–8 and Week 9 is purely administrative. The most likely failure is a PDF export or Etsy listing QA issue, both of which are recoverable in 24–48 hours.
+
+---
+
+### Checkpoint Summary Table
+
+| Checkpoint | Date | Pass Threshold | Fail Threshold | Fail Action | Cascade Triggered |
+|---|---|---|---|---|---|
+| Day 2 / D3 Pace Gate | June 24 EOD | WH 2,500+ words | WH below 2,500 | Scope compression: Vitex 600→400w, Red Clover 400→250w | Cascade 1 |
+| Day 7 | June 29 EOD | WH uploaded + Resp 800w started | WH not uploaded | CRITICAL: recover by June 30; diagnose cause same day | None (Day 7 escalation) |
+| Week 2 | July 5 EOD | Resp 2,700+ words | Resp below 1,800 | Week 3: complete Resp before any Immunity writing | None (schedule adjustment) |
+| Week 5 | July 26 EOD | Immunity 3,800w + Sleep complete | Both below 75% targets | Digestive removed from Phase 3 | Cascade 3 |
+| Week 9 | Sept 21 EOD | Digestive complete + export ready | Digestive below 60% complete | Extend Phase 3 to Oct 5; Phase 4 Oct 6 | None |
+
+---
+
 ## Section 7 — Quick Reference
 
 **Activate cascade 1 when**: Women's Health below 2,500 words at June 24 EOD.
@@ -417,4 +528,4 @@ When solo fallback is activated (June 12, June 15, or June 17 EOD per the decisi
 
 ---
 
-*Prepared: June 5, 2026. Version 1.0. Companion documents: PHASE_3_COMPREHENSIVE_RISK_REGISTER.md (8-risk register with detection procedures), PHASE_3_CONTRACTOR_DECISION_ESCALATION_FRAMEWORK.md (June 15 go/no-go decision tree). Cross-references: PHASE_3_CONTRACTOR_DECISION_TREE.md (solo fallback schedule v1.0), PHASE_3_CRITICAL_PATH_ANALYSIS_JUNE22_JULY13.md (contractor sprint critical path), PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md (per-bundle section word targets).*
+*Prepared: June 5, 2026. Version 1.1 (June 6, 2026 — Section 6b consolidated checkpoint criteria added; Risks 9–13 solo-fallback-specific risks added to companion risk register). Companion documents: PHASE_3_COMPREHENSIVE_RISK_REGISTER.md (13-risk register including solo-fallback risks 9–13), PHASE_3_CONTRACTOR_DECISION_ESCALATION_FRAMEWORK.md (June 15 go/no-go decision tree). Cross-references: PHASE_3_CONTRACTOR_DECISION_TREE.md (solo fallback schedule v1.0), PHASE_3_CRITICAL_PATH_ANALYSIS_JUNE22_JULY13.md (contractor sprint critical path), PHASE_3_BUNDLE_CONTENT_OUTLINE_DETAILED.md (per-bundle section word targets).*
