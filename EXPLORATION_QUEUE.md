@@ -320,6 +320,54 @@
 **Deadline**: June 6-7 ✅ COMPLETE (June 5)
 **Confidence**: 90%+ — all infrastructure verified; zero blockers; ready for immediate user execution
 
+### 103. ⏳ open-repo — Post-Deployment Incident Response Framework (June 12 deployment contingency)
+**Context**: open-repo deployment scheduled June 12 09:00–10:45 UTC (45 min execution + 60 min active monitoring). While DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md and POST_DEPLOYMENT_MONITORING_PLAN.md are production-ready with alert thresholds and basic troubleshooting, we lack a pre-deployment response playbook for cascade failures (multiple simultaneous alerts), data corruption scenarios, and partial deployment states.
+**Scope**:
+  - Cascade failure matrix: if 2+ alert types fire simultaneously (response time + error rate + resource exhaustion), which takes priority?
+  - Data corruption recovery: if Alembic migration partially completes or database constraints violated, what's the rollback procedure?
+  - Partial deployment states: if deployment succeeds but health checks fail on specific endpoints (OPDS vs API vs documentation), what's the scope containment?
+  - Post-incident audit: if incident response is triggered, what investigation steps preserve evidence for root-cause analysis?
+  - Incident communication: templated messages for stakeholder notification (yes/no/partial success scenarios)
+**Deliverables**:
+  - `DEPLOYMENT_INCIDENT_RESPONSE_PLAYBOOK.md` (2-3K words): cascade priority matrix, 5 scenario decision trees, rollback procedures with data integrity preservation
+  - `DEPLOYMENT_POST_INCIDENT_AUDIT_CHECKLIST.md` (1-2K words): log collection, metrics retention, evidence preservation, root-cause investigation template
+  - `INCIDENT_COMMUNICATION_TEMPLATES.md` (500-800 words): stakeholder notifications for success/partial/rollback scenarios
+**Owner**: general-purpose subagent (on-demand during deployment if needed; pre-stage for June 12)
+**Deadline**: June 11 17:00 UTC (pre-deployment read-through)
+**Status**: ⏳ QUEUED for June 11 (1 day before deployment)
+
+### 104. ⏳ resistance-research — Phase 2 Wave 1 Post-Execution Analysis Framework (for June 16-18 checkpoint)
+**Context**: Domain 51 Wave 1 execution June 9 (90 min user action). Day 7 checkpoint runs June 16 (metrics collection 09:00-09:20 UTC, decision routing 09:20-09:25 UTC). Item 102 (DOMAIN_51_JUNE_16_CHECKPOINT_METRICS_TEMPLATE.md) is production-ready for execution. Item 104 provides deeper analysis framework for post-Day-7 synthesis.
+**Scope**:
+  - Contact engagement analysis: disaggregate open rates/clicks by organization tier, compare to Phase 1 baselines, identify which contacts are cold vs engaged
+  - Signal interpretation framework: if Day 7 signal score is MODERATE (5-7), what does that mean for Phase 2 domain prioritization? Sequential vs parallel activation implications?
+  - Domain 51 impact assessment: what specific policy wins or coalition formations have occurred between June 9-16? (FEC announcements, state legislative developments, litigation status)
+  - Contingency trigger assessment: which Phase 2 domains have urgent external deadlines that override Day 7 checkpoint outcome? (e.g., Domain 48 litigation filing deadlines)
+  - Phase 2 batch sequencing options: if STRONG signal, execute Domains 48 + 57 parallel starting June 17. If MODERATE, execute sequential June 16-22. Produce pros/cons for each path.
+**Deliverables**:
+  - `DOMAIN_51_POST_EXECUTION_SYNTHESIS.md` (2-3K words): engagement analytics, signal interpretation, impact assessment
+  - `PHASE_2_CONTINGENCY_TRIGGER_ASSESSMENT.md` (1-2K words): urgency matrix for Domains 48/49/50/57/58/59 external deadlines
+  - `PHASE_2_BATCH_SEQUENCING_DECISION_FRAMEWORK.md` (1-2K words): parallel vs sequential decision tree, resource loading per scenario
+**Owner**: resistance-research subagent (synthesis only, execution user-triggered)
+**Deadline**: June 16 10:00 UTC (ready for post-checkpoint decision)
+**Status**: ⏳ QUEUED for June 15-16 (post-Day-7-checkpoint data available)
+
+### 105. ⏳ stockbot — Phase 3b Cooler Thermal Validation Post-Installation (for June 20 GOOGL gate)
+**Context**: Phase 3b hardware plan identified SC1148 Active Cooler as optimal ($5-15, 15-min install). Critical path: order by June 17 → deliver June 18-19 → install 15 min → validate June 19 (90 min) → GO/NO-GO June 20 GOOGL gate. Item 95 (PHASE_3B_COOLER_THERMAL_VALIDATION_TEST_PLAN.md) documents the procedure. Item 105 adds pre-installation thermal baseline capture and post-installation comparative validation.
+**Scope**:
+  - Pre-install baseline thermal capture: run 2-hour full inference load (current JPM + AMZN config), log CPU/temp every 10 sec, capture max reached, thermal headroom to 95°C
+  - Post-install procedure execution: follow 90-min validation protocol (10-min idle, 30-min 5-session sim, 45-min endurance test)
+  - Comparative analysis: pre-install peak temp vs post-install peak temp, temperature drop achieved, projected headroom for 5-session Phase 3b
+  - GO/NO-GO decision routing: thermal headroom ≥15°C → GO for GOOGL (unlimited position size), <15°C → CONDITIONAL-GO (capped position size), <10°C → NO-GO (defer to active-cooler-v2 or reduce sessions)
+  - Post-validation documentation: update PHASE_3B_THERMAL_VALIDATION_TEST_PLAN.md with actual measurements, archive baseline/post logs for future thermal audits
+**Deliverables**:
+  - `PHASE_3B_PRE_INSTALL_THERMAL_BASELINE.md` (CSV + analysis): timestamped CPU/temp data, peak reached, comparative baseline for post-install assessment
+  - `PHASE_3B_POST_INSTALL_THERMAL_VALIDATION_RESULTS.md` (2K words): validation procedure results, temp drop achieved, headroom assessment, GO/CONDITIONAL/NO-GO decision
+  - Updated `PHASE_3B_COOLER_THERMAL_VALIDATION_TEST_PLAN.md` with actual measurement data and archived logs
+**Owner**: stockbot subagent (execution June 19; analysis June 20 morning)
+**Deadline**: June 20 08:00 UTC (ready for GOOGL gate decision at 13:30 UTC June 20)
+**Status**: ⏳ QUEUED for June 19-20 (post-cooler-install validation window)
+
 ### 16. ⏳ Domain 39 Impact Evaluation & Phase 2 Prioritization
 **Context**: Domain 39 activation June 1 13:00-14:30 UTC. Monitoring infrastructure staged with 5-checkpoint structure (T+3/T+7/T+14/T+30/T+45). After Day 7 checkpoint (June 8), orchestrator needs decision framework for Phase 2 research activation.
 **Scope**: Post-June 8 checkpoint, synthesize engagement data + Phase 2 readiness assessment to determine activation sequence for Domains 51/57/48/49-50/54.
