@@ -90,22 +90,20 @@
 **Deadline**: June 20 ✅ COMPLETE (June 6, 14 days early)
 **Confidence**: 95% — SC1148 sourcing feasible via Amazon, installation SOP verified, ROI >100:1 comprehensive
 
-### 96. ⏳ resistance-research — Post-Election Phase 3 Domain Candidates & Activation Planning (Due June 25)
-**Context**: Phase 2 domains research-complete (48, 49, 50, 51, 57, 58, 59) and distribution-scheduled through August 2026. Phase 2 ends Aug 31. November 3, 2026 US midterm election creates immediate post-election research window. Phase 3 should target fall 2026 / winter 2027 for next research round. This item identifies Phase 3 domain candidates with post-election analysis opportunities and movement leverage.
-**Scope**:
-  - Phase 3 candidate domain identification: Scan 40-domain framework, identify domains with post-election research windows (Nov 4-Dec 31 2026 opportunity window for post-election analysis, Jan-March 2027 Congressional/budget windows)
-  - Election-specific research angles: Which Phase 1-2 domains need post-election updates? (e.g., voter suppression domain needs 2026 midterm teardown; campaign finance domain needs 2026 spending analysis; voting access domain needs 2026 outcome assessment)
-  - Movement leverage scoring: Which domains enable strongest coalition activation post-election? E.g., election protection domain + voting access + voter suppression chains post-election results
-  - Research effort estimation: Phase 3 breadth (8-10 domains) vs available researcher capacity (estimate based on Phase 2 actual hours spent June-August)
-  - Urgency matrix: Identify immovable external deadlines (Jan 2027 Congressional term starts, spring 2027 budget deadlines, summer 2027 campaign finance law changes)
-  - Phase 2→Phase 3 transition contingency: If Phase 2 takes longer than planned (July 15 deadline slips to Aug 15), what Phase 3 domains should be deferred to Q2 2027?
-**Deliverables**:
-  - `PHASE_3_DOMAIN_CANDIDATE_SCORECARD.md` — 8-10 candidates (post-election analysis focus), urgency/leverage/feasibility matrix, research hour estimates, expert contact starter lists
-  - `PHASE_3_ELECTION_SPECIFIC_RESEARCH_ANGLES.md` — Domains requiring post-election updates, 2026 midterm data sources, comparative analysis templates vs 2022/2020
-  - `PHASE_3_MOVEMENT_LEVERAGE_AND_ACTIVATION_TIMELINE.md` — Cross-domain coalition opportunities, phase-sequencing for maximum post-election impact, contingency cascade if Phase 2 timeline slips
-**Owner**: resistance-research subagent
-**Deadline**: June 25 (ready for post-Phase-2-Wave-1 planning, zero blocking current work)
-**Status**: ⏳ QUEUED for June 10-20 (after Domain 51 Wave 1 execution + checkpoint analysis completes; pending Phase 2 signal assessment June 15)
+### 96. ✅ resistance-research — Post-Election Phase 3 Domain Candidates & Activation Planning (Session 2938 COMPLETE)
+**Status**: Completed June 6, 2026 (Session 2938, 07:26–08:08 UTC). All three deliverables production-ready and committed.
+**Decision: Phase 3 execution infrastructure complete.** 8 priority domains identified with hard deadline enforcement: Domains H & K must complete by January 3, 2027 (Congress seating closes lame-duck window). Four activation waves mapped: Nov 4-30 (election defense), Dec 1-31 (data consolidation), Jan 3-Feb 28 (Congress activation), Mar 2027+ (international standards + spring budget). Phase 2→Phase 3 contingency cascade documented for timeline slips.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `PHASE_3_DOMAIN_CANDIDATE_SCORECARD.md` — 8 priority domains (H, K, 49, 51, 37a, 56, I, L), composite scoring with 1.5x urgency weighting, research hour estimates (169-208 hours total, 21-26 hrs/domain), expert contact starter lists per domain
+  - ✅ `PHASE_3_ELECTION_SPECIFIC_RESEARCH_ANGLES.md` — Phase 1-2 domains requiring post-election updates (1, 33, 37, 54), 2026 midterm data source calendar (CIRCLE Nov 10, AP/Ballotpedia Nov 3, FEC Dec 3, MIT/V-Dem Jan 2027), comparative analysis templates (2020/2022/2026) for voter suppression, campaign finance, redistricting, youth civic power
+  - ✅ `PHASE_3_MOVEMENT_LEVERAGE_AND_ACTIVATION_TIMELINE.md` — 6 coalition chains mapped (Election Integrity, Structural Accountability, Economic Democracy, Admin State, Youth/Civic, Tribal Sovereignty), 4-wave activation sequencing, 3-scenario contingency cascade for Phase 2 timeline slips (Sep 30 / Oct 31 / catastrophic)
+**Critical Intelligence**:
+  - **Non-negotiable Hard Deadlines**: (1) Domains H + K in distribution Jan 3 (Congress seating, seven-week lame-duck window closes); (2) Domain 49 by Dec 31 (redistricting litigation filing deadline); (3) Domain 37a by Oct 31 (proactive positioning for certification challenges)
+  - **Capacity Constraint**: November-December most compressed; 40-42 hrs/month required (vs. Phase 2 average 25 hrs/month). November alone requires simultaneous production of 4+ election-dependent domains.
+  - **Coalition Multiplier**: New Congress activation package = H + K + 56 (three-domain unit for Jan 3 distribution)
+**Owner**: resistance-research subagent (Session 2938)
+**Deadline**: June 25 ✅ COMPLETE (June 6, 19 days early)
+**Confidence**: 93% — coalition architecture validated against Phase 2 leverage model, deadline calendar cross-checked against legislative session calendars, contingency scenarios grounded in precedent
 
 ### 98. ✅ mfg-farm — Laser Engraving Market Research & Supplier Sourcing (Session 2917 COMPLETE)
 **Status**: Completed June 6, 2026 (Session 2917, 03:45-03:49 UTC). All three deliverables production-ready and committed (commit 25c31058).
