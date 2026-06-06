@@ -2,6 +2,7 @@
 title: "Immigration + Surveillance Evasion Playbook: Digital Defense Against ICE Enforcement"
 project: cybersecurity-hardening
 created: 2026-05-07
+last_updated: 2026-06-06
 status: production-ready
 phase: Phase 2
 session: 875
@@ -11,14 +12,19 @@ depends_on:
   - opsec-playbook.md
   - implementation-guide.md
   - palantir-threat-model.md
-confidence: high — grounded in documented ICE capabilities (ELITE/Palantir, ImmigrationOS, Mobile Fortify/NEC, Penlink geofencing, Thomson Reuters CLEAR, Medicaid data-sharing agreement), court filings, EFF/Brennan Center primary source reporting, and immigration attorney community feedback
+  - THREAT_ENVIRONMENT_Q2_2026_UPDATE.md
+  - PHASE_2_THREAT_INTEGRATION_CHECKLIST.md
+confidence: high — grounded in documented ICE capabilities (ELITE/Palantir, ImmigrationOS, Mobile Fortify/NEC, Penlink geofencing, Thomson Reuters CLEAR, Medicaid data-sharing agreement, Bi2 iris scanning, Clearview AI, DOGE SSA access), court filings, EFF/Brennan Center primary source reporting, and immigration attorney community feedback; updated June 6, 2026 with iris scanning contract (The Register/Biometric Update/IDTechWire), Clearview AI HSI contract (American Immigration Council/Immigration Policy Tracking Project), DOGE SSA access (Democracy Forward/NPR/Democracy Docket), Thomson Reuters LEIDS-5 expiration (LawNext), and DHS administrative subpoenas (ACLU/EFF/Military.com)
 audience: Undocumented immigrants, DACA recipients, visa holders under enforcement risk, immigration attorneys, legal aid organizations, immigrant rights orgs, family support networks
-word_count: ~3,200
+word_count: ~4,200
+changelog: v1.1 — Q2 2026 threat integration (5 patches): UPDATE-IMM-01 iris scanning added to field toolkit (Section 1.3 expansion); UPDATE-IMM-02 Clearview AI HSI contract documented (Section 1.3 addition); UPDATE-IMM-03 DOGE SSA data as enforcement pipeline (new Section 1.6); UPDATE-IMM-04 Thomson Reuters LEIDS-5 expiration note (Section 1.1); UPDATE-IMM-05 DHS administrative subpoenas against anonymous accounts (Section 3.4 new)
 ---
 
 # Immigration + Surveillance Evasion Playbook
 
 **For legal service providers and workshop facilitators**: This guide translates the ICE surveillance stack into an immigration-specific operational framework with concrete countermeasures for each layer. The threat is documented and operational — not theoretical. Every tool named in Section 1 has a confirmed contract, a user manual, or court filings attesting to its use. The countermeasures in Sections 2–7 address each layer directly and are designed for implementation without technical expertise. Section 8 provides copy-paste-ready checklists for distribution to clients.
+
+**Version 1.1 — Q2 2026 patch integration (June 6, 2026)**: Five critical threat updates have been applied to this version: (1) Iris scanning added to the ICE field biometric toolkit — $25.1M Bi2 Technologies contract, 1,570+ scanners, June 1 deployment (Section 1.3); (2) Clearview AI's 50B-image database confirmed operational for ICE HSI investigations — a parallel facial recognition layer beyond the HART database (Section 1.3); (3) DOGE's unlawful Social Security Administration data access documented as a new immigration enforcement pipeline — SSA holds immigration status, wage history, and employer data for 300M+ Americans (Section 1.6); (4) Thomson Reuters LEIDS-5 contract expired May 31, 2026, status unconfirmed — data broker opt-outs remain essential regardless (Section 1.1); (5) DHS administrative subpoenas have unmasked anonymous social media accounts criticizing ICE — anonymous account infrastructure requirements documented (Section 3.4).
 
 Cross-references to `opsec-playbook.md` and `implementation-guide.md` are provided throughout. Do not repeat work: if a client has already completed device hardening per the core playbook, those measures apply directly here.
 
@@ -34,7 +40,7 @@ Understanding the specific tools ICE deploys changes what you prioritize. This i
 
 **Data sources the score draws from**:
 - HHS/Medicaid records: A data-sharing agreement signed December 2025 gives ICE access to basic biographical and contact information — including home addresses — from nearly 80 million Medicaid patients. A U.S. District Judge allowed this sharing to resume on January 5, 2026. If you or a family member has ever received Medicaid, that address is in the ELITE system.
-- Thomson Reuters CLEAR: ICE's $22.8 million contract (running through May 2026, with renewal pending) provides access to CLEAR, which aggregates driver's license data, voter registrations, marriage records, property records, and commercial location data.
+- Thomson Reuters CLEAR: ICE's $22.8 million LEIDS-5 contract ran through May 31, 2026. *(June 2026 update: The LEIDS-5 contract expired May 31, 2026. As of June 6, 2026, no confirmed renewal has been announced. More than 200 Thomson Reuters employees signed a letter demanding non-renewal; union investors launched a shareholder campaign ahead of the June 10, 2026 shareholder vote. However, Thomson Reuters maintains multiple DHS/ICE contract vehicles estimated at ~$60M total, providing alternative access paths to CLEAR data. CLEAR opt-out remains a recommended action — removing your records from CLEAR at source protects you regardless of which specific contract vehicle provides access.)* CLEAR aggregates driver's license data, voter registrations, marriage records, property records, and commercial location data.
 - LexisNexis Accurint: A separate ICE contract with LexisNexis feeds commercial consumer data (utility records, credit inquiries, address history) directly into ELITE's confidence scoring.
 - Facebook and social media EXIF data: Penlink (ICE subscription, September 2025) extracts GPS coordinates embedded in photos uploaded to Facebook and other platforms, creating a real-time location timeline from photos you or contacts have posted publicly.
 
@@ -50,9 +56,9 @@ Understanding the specific tools ICE deploys changes what you prioritize. This i
 
 **Your countermeasure**: Minimize your digital connections to known enforcement targets (social media contact, publicly listed association with flagged organizations). This does not mean abandoning community — it means managing what is visible to automated systems. Section 3 covers social media hygiene.
 
-### 1.3 Mobile Fortify — Field Biometric Identification (NEC facial recognition engine, 100,000+ uses)
+### 1.3 Mobile Fortify + Iris Scanning + Clearview AI — The Full ICE Field Biometric Toolkit
 
-**What it does**: Mobile Fortify is an ICE smartphone app that allows agents to photograph anyone they encounter and run the image against DHS's HART biometric database (150M+ records). The device returns a photo match with a confidence percentage. It was deployed without a required Privacy Impact Assessment. Illinois and Chicago sued ICE over this deployment in January 2026, documenting over 100,000 uses.
+**What Mobile Fortify does**: Mobile Fortify is an ICE smartphone app that allows agents to photograph anyone they encounter and run the image against DHS's HART biometric database (150M+ records). The device returns a photo match with a confidence percentage. It was deployed without a required Privacy Impact Assessment. Illinois and Chicago sued ICE over this deployment in January 2026, documenting over 100,000 uses.
 
 **Where it is being used**: Not only at formal detention facilities. ICE agents have used Mobile Fortify:
 - At protests, including Minneapolis (documented February 2026 — see Section 1.4 case study)
@@ -62,7 +68,13 @@ Understanding the specific tools ICE deploys changes what you prioritize. This i
 
 **Accuracy problems**: The device has documented misidentification issues. In documented cases it has returned two different, both incorrect, names for the same person in a single encounter. Accuracy is worse for women and people of color. A positive match is not legally conclusive.
 
-**Your countermeasure**: Physical countermeasures (Section 4) and legal response strategy if misidentified (Section 5.2).
+**UPDATE (June 2026): Iris Scanning Added to Field Toolkit.** On May 22, 2026, ICE finalized a $25.1M no-bid contract with Bi2 Technologies for 1,570+ mobile iris scanners, effective June 1, 2026. The scanners access a 5M+ record database drawn from booking, arrest, and incarceration records from 47 states. This is a 5x increase from the prior $4.6M Bi2 contract. ICE agents may now use iris scanning as a secondary biometric confirmation step when facial identification via Mobile Fortify is uncertain — creating a two-stage pipeline: identification at distance (Mobile Fortify/facial recognition) and identity confirmation at close range (iris scan). Iris scanning requires close physical contact, so its primary risk is in detention processing and checkpoint encounters where an agent can approach you.
+
+**Do not consent to iris scanning outside of a formal arrest processing context.** Compelled iris scanning in a street or checkpoint encounter without arrest is legally unsettled — assert your right to consult an attorney before submitting to any biometric collection. Unlike a facial photograph (which an agent can take from a distance without your cooperation), iris scanning requires your proximity and cooperation. You can and should decline.
+
+**UPDATE (June 2026): Clearview AI — The Parallel Facial Recognition Layer.** The prior threat model described Mobile Fortify as using the NEC facial recognition engine against the DHS HART database (150M+ records). A parallel layer is now confirmed: ICE's Homeland Security Investigations (HSI) division holds a $9.2M Clearview AI contract; Clearview's database contains 50+ billion images scraped from the internet. CBP separately signed a $225,000 Clearview contract in February 2026. The jurisdictional distinction matters: ICE ERO (deportation enforcement) primarily uses the NEC/HART stack. ICE HSI (which handles workplace raids, financial investigations, labor trafficking, and organized crime) uses the Clearview layer. If a client has any connection to an HSI investigation — not just deportation enforcement — Clearview AI's internet-scraped database is in scope. Clearview includes social media profile photos, news photos, protest photos, community organization website photos, and any public photo ever posted online. It is not limited to people who have ever been arrested or enrolled in a government database.
+
+**Your countermeasures**: Physical countermeasures (Section 4) and legal response strategy if misidentified (Section 5.2). Social media hygiene (Section 3) reduces Clearview's ability to scrape new images of you. Images already posted publicly cannot be removed from Clearview's database retroactively — evaluate all future public photos against your exposure level.
 
 ### 1.4 Penlink — Geofencing and Location Tracking (ICE subscription, September 2025)
 
@@ -83,6 +95,18 @@ Penlink's geofencing feature allows ICE to identify every cell phone that was pr
 **The "Catch and Revoke" pipeline**: The State Department and DHS run a coordinated program that uses AI to review social media for protest-related content by visa holders, leading directly to visa revocation. Documented enforcement against pro-Palestine student protesters in 2025 demonstrates this pipeline is operational. If you hold any visa category, public protest-related social media posts carry revocation risk.
 
 **Your countermeasure**: Section 3 — social media hygiene protocol.
+
+### 1.6 DOGE — Federal Benefit Data as an Enforcement Pipeline (NEW — June 2026)
+
+**What it does**: In January 2026, court filings revealed that DOGE employees at the Social Security Administration secretly accessed records for 300M+ Americans — including immigration status, bank account numbers, wage histories, and health records — and coordinated with a political advocacy group to match SSA data against state voter rolls. Whistleblower Charles Borges confirmed a dataset of 300M+ people was copied to a virtual database without security protocols. The Trump administration admitted to mishandling the data.
+
+**Current legal status**: The Supreme Court authorized some DOGE access to SSA data in an April 2026 ruling. A separate federal court (Judge Denise Cote, Southern District of New York) issued a preliminary injunction on June 6, 2026 halting DOGE's access to Office of Personnel Management data and requiring DOGE employees' names to be disclosed. New System of Record Notices (SORNs) have been issued in parallel, expanding formal data-sharing authorization between SSA and other agencies — creating legal authority for data flows that previously existed only through unauthorized DOGE access.
+
+**Your exposure**: If you have ever received Social Security benefits, held a Social Security number, or had wage income reported to SSA, your records were part of the accessed dataset. SSA holds immigration status data that can cross-reference with ICE enforcement systems. SSA's wage history data also reveals your employer — which can be cross-referenced with workplace enforcement operations.
+
+**Why this matters specifically for immigration clients**: ELITE already draws from Medicaid records under the December 2025 data-sharing agreement. The DOGE/SSA pathway represents a second federal benefit database — wage history, immigration status, employer information — that could be incorporated into enforcement targeting. The pathway has been opened at the administrative level (via SORNs) even while litigation over its legality continues.
+
+**Your countermeasure**: This data cannot be removed from SSA records. The practical countermeasure is to minimize what other data sources (commercial data brokers) contribute to enforcement confidence scores — because the SSA data cannot be deleted, reducing the commercial supplement data reduces the combined confidence score that ELITE or a successor system would generate. Complete the data broker opt-outs in Section 2.
 
 ---
 
@@ -172,6 +196,27 @@ The "Catch and Revoke" pipeline is not hypothetical. State Department and DHS ha
 - Do not post publicly about protest participation, anti-ICE organizing, or immigration enforcement events
 - Set all accounts to maximum privacy immediately, before making any further posts
 - Consult with immigration counsel before making public statements at protests or posting protest-related content
+
+### 3.4 DHS Administrative Subpoenas — Anonymous Account Risk (NEW — June 2026)
+
+**What changed**: DHS has issued hundreds of administrative subpoenas — which require no court authorization — to Google, Meta, Reddit, and Discord to unmask anonymous accounts that posted about ICE raids, tracked ICE agent movements, or criticized ICE operations. Google, Meta, and Reddit partially complied before legal challenges were filed. The ACLU of Northern California and Pennsylvania successfully challenged some subpoenas; DHS withdrew some after legal pressure. However, disclosures may have already occurred before legal challenges could prevent them — withdrawal after challenge does not undo data that was already provided.
+
+**Documented cases**:
+- A Philadelphia-area man received a DHS administrative subpoena four hours after emailing a DHS official. Two DHS agents and local police subsequently appeared at his home.
+- Columbia University received a subpoena pressuring it to share information about a student who had participated in pro-Palestinian protests.
+- Accounts specifically tracking ICE agent location alerts and posting about immigration enforcement operations have been targeted.
+
+**What this means**: Any social media account that was registered with a real email address, phone number, or payment method, or that was accessed from an IP address linked to your identity, can potentially be unmasked via subpoena. The platform does not have to notify you before complying. You may not know your identity was disclosed until after it happened.
+
+**Countermeasure — if you operate accounts posting about ICE activity or immigration enforcement**: Those accounts must be created and operated with complete separation from your real identity. This requires:
+- A separate email address created under a pseudonym (ProtonMail, not Gmail)
+- No phone number verification linked to your real carrier number
+- VPN during account creation and every use session — and the same VPN for every session on that account
+- Payment for any premium services only via cash or Monero, never a card linked to your real name
+- A dedicated device or browser profile not linked to your real identity
+- Never accessing the account from your home or work network
+
+If an account was already created with any real-identity link (email, phone, device), assume it is already attributable and treat it as non-anonymous. Creating a new account with full separation from that point forward is the only repair.
 
 ---
 
@@ -302,6 +347,7 @@ If ICE takes you into custody, these are the only things you should say and do u
 - [ ] Disable camera location access on your phone
 - [ ] Identify immigration attorney; write their number on paper and carry it in your wallet
 - [ ] Tell two trusted people your plan and attorney's number
+- [ ] If you operate any social media accounts that post about ICE activity or immigration enforcement: verify those accounts were created and are used with complete identity separation (separate email, VPN for every session, no real phone number). If not, stop posting from those accounts. (Section 3.4)
 
 ### Checklist B: Day-Of (for any day when enforcement activity is anticipated)
 
@@ -312,6 +358,7 @@ If ICE takes you into custody, these are the only things you should say and do u
 - [ ] Know the attorney's number by memory if possible, or have it written on your arm
 - [ ] Travel with cash rather than payment cards
 - [ ] If driving: vary your route; do not park directly in front of community organization offices
+- [ ] If approached by ICE agents: do not consent to biometric collection (facial photograph, iris scan) outside a formal arrest. Say: "I do not consent to biometric collection. I want to speak to an attorney." (Section 1.3)
 
 ### Checklist C: Post-Encounter (after any ICE contact or near-contact)
 
@@ -425,12 +472,15 @@ If a client will only do five things, these are the five:
 
 **For questions and updates**: Contact immigration counsel or the RAICES legal team (raicestexas.org).
 
-**Version**: 1.1
+**Version**: 1.1 (Q2 2026 patches applied June 6, 2026)
 **Created**: May 7, 2026
+**Last updated**: June 6, 2026
 **Next scheduled review**: July 26, 2026 (quarterly corpus review)
-**Cross-references**: `opsec-playbook.md`, `implementation-guide.md`, `device-hardening-implementation-guide.md`, `palantir-threat-model.md`, `threat-model.md`, `activist-organizing-playbook.md` (Section 2 social media hygiene is directly applicable)
+**Cross-references**: `opsec-playbook.md`, `implementation-guide.md`, `device-hardening-implementation-guide.md`, `palantir-threat-model.md`, `threat-model.md`, `activist-organizing-playbook.md` (Section 2 social media hygiene is directly applicable), `THREAT_ENVIRONMENT_Q2_2026_UPDATE.md`, `PHASE_2_THREAT_INTEGRATION_CHECKLIST.md`
 
 **Sources**:
+
+*Original sources (v1.0/v1.1 initial)*:
 - [ELITE user guide and contract documentation — 404media.co](https://www.404media.co/elite-the-palantir-app-ice-uses-to-find-neighborhoods-to-raid/)
 - [Medicaid data sharing with ICE — KFF Health News](https://kffhealthnews.org/news/article/ice-immigrants-medicaid-data-sharing-hospitals-states-deportation/)
 - [Mobile Fortify — Wikipedia](https://en.wikipedia.org/wiki/Mobile_Fortify)
@@ -440,8 +490,27 @@ If a client will only do five things, these are the five:
 - [ICE surveillance shopping spree — EFF](https://www.eff.org/deeplinks/2026/01/ice-going-surveillance-shopping-spree)
 - [Maine ICE observer lawsuit — NPR](https://www.npr.org/2026/02/23/nx-s1-5722988/dhs-lawsuit-biometrics-domestic-terrorism)
 - [DHS administrative subpoenas — TechCrunch](https://techcrunch.com/2026/02/14/homeland-security-reportedly-sent-hundreds-of-subpoenas-seeking-to-unmask-anti-ice-accounts/)
-- [Thomson Reuters CLEAR and ICE — LawSites](https://www.lawnext.com/2026/04/the-legal-tech-giants-powering-ice-part-1-how-thomson-reuters-and-lexisnexis-helped-support-americas-immigration-surveillance-machine.html)
+- [Thomson Reuters CLEAR and ICE — LawNext](https://www.lawnext.com/2026/04/the-legal-tech-giants-powering-ice-part-1-how-thomson-reuters-and-lexisnexis-helped-support-americas-immigration-surveillance-machine.html)
 - [ICE use of Medicaid data — Stateline](https://stateline.org/?p=16545)
 - [Social media surveillance immigrants — Borderless Magazine](https://borderlessmag.org/2026/01/08/ice-social-media-surveillance-immigration-applications-enforcement-chicago/)
 - [ICE surveillance web — NPR](https://www.npr.org/2026/03/04/nx-s1-5717031/ice-dhs-immigrants-surveillance-confrontation-deportation-mobile-fortify)
 - [ICE church raids — Axios](https://www.axios.com/2025/01/21/trump-deportation-ice-churches-schools-raids)
+
+*Q2 2026 patch sources (added June 6, 2026)*:
+- [ICE awards Bi2 $25M contract for 1,570 biometric iris scanners — The Register (May 29, 2026)](https://www.theregister.com/public-sector/2026/05/29/ice-awards-bi2-25m-contract-for-1570-biometric-scanners/5248733)
+- [ICE expands field biometric identification with $25M iris recognition contract — Biometric Update](https://www.biometricupdate.com/202605/ice-expands-field-biometric-identification-with-25m-iris-recognition-contract)
+- [ICE Awards $25.1M No-Bid Iris-Scanning Contract to BI2 Technologies — ID Tech Wire](https://idtechwire.com/ice-awards-25-1m-no-bid-iris-scanning-contract-to-bi2-technologies/)
+- [ICE contracts with Clearview AI — Immigration Policy Tracking Project](https://immpolicytracking.org/policies/reported-ice-contracts-with-clearview-ai-for-facial-recognition-technology/)
+- [ICE AI surveillance tracking Americans — American Immigration Council](https://www.americanimmigrationcouncil.org/blog/ice-ai-surveillance-tracking-americans/)
+- [ICE, FBI expand facial recognition use to protest investigations — Biometric Update (February 2026)](https://www.biometricupdate.com/202602/ice-fbi-expand-facial-recognition-use-to-protest-investigations)
+- [How DOGE improperly accessed Social Security data — NPR](https://www.npr.org/2026/01/23/nx-s1-5684185/doge-data-social-security-privacy)
+- [Court orders probe of DOGE secret voter data deal — Democracy Docket](https://www.democracydocket.com/news-alerts/court-orders-probe-of-doges-secret-voter-data-deal/)
+- [Court orders more discovery in DOGE data access case — Democracy Forward](https://democracyforward.org/news/press-releases/court-orders-more-discovery-from-the-government-in-case-challenging-doges-unlawful-access-to-sensitive-personal-data/)
+- [DOGE likely violated order on Social Security data — FedScoop](https://fedscoop.com/doge-access-social-security-data-court-filing/)
+- [Judge orders OPM to halt sharing Americans' personal data with DOGE — AFGE](https://www.afge.org/article/judge-orders-opm-to-halt-sharing-americans-personal-data-with-doge/)
+- [Thomson Reuters LEIDS-5 expiration and pushback — LawNext (April 29, 2026)](https://xira.com/p/2026/04/29/the-legal-tech-giants-powering-ice-part-2-the-pushback-employees-shareholders-lawyers-and-the-fight-over-may-31/)
+- [Ahead of June 10 shareholder vote, union investor renews push — LawNext (May 2026)](https://www.lawnext.com/2026/05/ahead-of-june-10-shareholder-vote-union-investor-renews-push-for-thomson-reuters-to-assess-human-rights-impact-of-its-products-used-by-ice.html)
+- [DHS withdraws subpoena targeting critic — ACLU](https://www.aclu.org/press-releases/department-of-homeland-security-withdraws-subpoena-targeting-man-who-criticized-them)
+- [Lawsuit: DHS, ICE sued over immigration subpoenas to ID social media users — Military.com (April 22, 2026)](https://www.military.com/daily-news/2026/04/22/lawsuit-dhs-ice-sued-over-immigration-subpoenas-id-social-media-users.html)
+- [Open letter to tech companies on lawless DHS subpoenas — EFF](https://www.eff.org/deeplinks/2026/02/open-letter-tech-companies-protect-your-users-lawless-dhs-subpoenas)
+- [FOIA lawsuit on ICE subpoenas to unmask social media users — ACLU Pennsylvania / Philadelphia Inquirer](https://www.inquirer.com/news/pennsylvania/ice-foia-lawsuit-aclu-subpoenas-social-media-dhs-20260420.html)

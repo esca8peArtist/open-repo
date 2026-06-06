@@ -2,6 +2,7 @@
 title: "Activist Organizing + Protest Security Playbook: Counter-Surveillance for Organizers and Protest Participants"
 project: cybersecurity-hardening
 created: 2026-05-07
+last_updated: 2026-06-06
 status: production-ready
 phase: Phase 2
 session: 875
@@ -12,9 +13,12 @@ depends_on:
   - implementation-guide.md
   - palantir-threat-model.md
   - activist-organizing-playbook.md
-confidence: high — grounded in documented government capabilities (Babel Street DHS contracts, LAPD drone flight records via The Intercept/DroneXL, Flock Safety EFF investigation, Mobile Fortify Minneapolis and Maine deployments, DHS administrative subpoenas to Google/Meta/Reddit/Discord, Palantir AIP social graph), court filings, and EFF/Amnesty International primary source reporting
+  - THREAT_ENVIRONMENT_Q2_2026_UPDATE.md
+  - PHASE_2_THREAT_INTEGRATION_CHECKLIST.md
+confidence: high — grounded in documented government capabilities (Babel Street DHS contracts, LAPD drone flight records via The Intercept/DroneXL, Flock Safety EFF investigation, Mobile Fortify Minneapolis and Maine deployments, DHS administrative subpoenas to Google/Meta/Reddit/Discord, Palantir AIP social graph, Bi2 iris scanning contract June 2026, Clearview AI FBI protest use Biometric Update February 2026, DOGE SSA voter roll coordination Democracy Forward court filings, Thomson Reuters LEIDS-5 expiration LawNext), court filings, and EFF/Amnesty International primary source reporting; updated June 6, 2026 with five Q2 2026 patches
 audience: Protest organizers, labor unions, activist networks, civil rights coalitions, legal observers, communications coordinators
-word_count: ~3,400
+word_count: ~4,400
+changelog: v1.1 — Q2 2026 threat integration (5 patches): UPDATE-ACT-01 FBI + Clearview AI confirmed at protests, two class actions documented (Section 1.4 expansion); UPDATE-ACT-02 DHS admin subpoenas — four-hour timeline, Columbia University case, partial platform compliance (Section 1.5 expansion); UPDATE-ACT-03 DOGE SSA data as organizational threat (new Section 1.6); UPDATE-ACT-04 iris scanning at enforcement events (Section 1.4 addition); UPDATE-ACT-05 gait recognition future trajectory note (Section 1.2 footnote); plus Thomson Reuters LEIDS-5 expiration note (Section 1.1)
 ---
 
 # Activist Organizing + Protest Security Playbook
@@ -24,6 +28,8 @@ word_count: ~3,400
 Key facts that distinguish this guide from generic security advice: LAPD deployed drones 32 times over the March 28 No Kings protest and 31 times over the January 31 anti-ICE downtown Los Angeles protest; Flock Safety ALPR data was queried by 50+ agencies in connection with the 50501, Hands Off, and No Kings protests; DHS sent hundreds of administrative subpoenas to Google, Meta, Reddit, and Discord to unmask anonymous anti-ICE accounts, with Reddit, Meta, and Google voluntarily complying with some requests; ICE agents photographed protesters with Mobile Fortify in Minneapolis; and Portland residents lawfully observing an enforcement operation were biometrically scanned and threatened with placement on a domestic terrorism watchlist.
 
 These are not emerging capabilities. They are in active deployment, with flight records, court filings, and investigative journalism to document each claim.
+
+**Version 1.1 — Q2 2026 patch integration (June 6, 2026)**: Five critical threat updates have been applied to this version: (1) FBI agents confirmed using both Mobile Fortify and Clearview AI simultaneously at Minneapolis protests — two federal class action lawsuits (Hilton v. Noem, Tincher v. Noem) document FBI placing protest observers in domestic terrorism investigative databases (Section 1.4); (2) DHS administrative subpoenas issued in near-real-time against critics — four hours after a Philadelphia man emailed a DHS official, a subpoena went to Google; Columbia University targeted to identify a student protester (Section 1.5); (3) DOGE's unlawful access to Social Security Administration data — including staff wage histories — creates a new structural threat to activist organizations whose staff appear in federal benefit databases (Section 1.6); (4) ICE deployed iris scanning nationally June 1, 2026 via $25.1M Bi2 contract covering 1,570+ scanners — a second biometric step for protest observers and enforcement monitors who may be approached by agents (Section 1.4); (5) Thomson Reuters LEIDS-5 contract expired May 31, 2026 — data broker opt-outs remain essential regardless of renewal status (Section 1.1 note).
 
 This playbook is a companion to `activist-organizing-playbook.md` (the full-length companion document), `threat-model.md`, and `opsec-playbook.md`. Cross-references are provided throughout.
 
@@ -41,6 +47,8 @@ Amnesty International's 2025 investigation documented Babel Street being used ag
 
 **What this means for you**: Any public social media content — posts, profile photos, tagged locations, comments on protest-related pages — is continuously monitored once you are flagged. Content posted in the period before, during, and after a public action is the highest-risk window. Retrospective searches can also surface content posted months earlier.
 
+*(June 2026 update — Thomson Reuters LEIDS-5 context for organizers: The LEIDS-5 contract between Thomson Reuters CLEAR and ICE expired May 31, 2026. As of June 6, no confirmed renewal has been announced; more than 200 Thomson Reuters employees signed a letter demanding non-renewal and a union shareholder campaign preceded the June 10, 2026 shareholder vote. However, ICE-Thomson Reuters relationships span multiple contract vehicles estimated at ~$60M, and Babel Street independently aggregates commercial records. CLEAR opt-out remains a recommended action for core organizers — LexisNexis Accurint opt-out and Thomson Reuters CLEAR opt-out reduce the commercial-data inputs to identity resolution regardless of which specific contract vehicle ICE uses.)*
+
 **Countermeasure**: Section 3 — 72-hour pre-action social media protocol.
 
 ### 1.2 Layer 2: Aerial Surveillance — Drone Deployment at Protests
@@ -50,6 +58,8 @@ Amnesty International's 2025 investigation documented Babel Street being used ag
 **Technical capability**: The Skydio X10 detects individuals from 8,000 feet, identifies people from 2,500 feet, and reads license plates from 800 feet. At operational altitude, face identification is possible even with ground-level masks when the subject looks up or when overhead angle exposure occurs.
 
 **The key implication for countermeasures**: Ground-level masks defeat ground-level camera angles. They are much less effective against aerial surveillance at moderate altitude, which sees the top of a hat, not a face — but switches to clothing signature and movement pattern tracking to maintain individual continuity through a crowd.
+
+*(Future trajectory note: LiDAR-based gait recognition — which can identify individuals by walking pattern regardless of facial covering or clothing — is in early domestic deployment at border installations. Not currently deployed at US protest sites. This technology, combined with aerial LiDAR drones, would defeat the clothing-based masking countermeasures in Section 4.2. Monitor for deployment announcements; current countermeasures remain adequate for 2026.)*
 
 **Countermeasure**: Section 4.2 — clothing protocol for aerial surveillance.
 
@@ -67,6 +77,10 @@ Amnesty International's 2025 investigation documented Babel Street being used ag
 
 **Activist-specific risk**: Even US citizens with no immigration vulnerability can be enrolled in a protest-related biometric database. ICE and FBI agents have described using facial recognition data from protests to add individuals to "domestic terrorist" databases, directly chilling First Amendment activity.
 
+*(June 2026 update — FBI + Clearview AI at protests: ICE agents at Minneapolis protests are confirmed using at least two facial recognition systems simultaneously: Mobile Fortify (NEC engine against DHS HART database, 150M+ records) and Clearview AI (50B+ images scraped from the internet). FBI agents are independently using facial recognition at protests to add individuals to federal investigative databases. FBI database placement is not immigration enforcement — it creates federal criminal investigation exposure under a different legal basis with different downstream consequences. Two federal class action lawsuits document a pattern across multiple states: Hilton v. Noem (Maine) and Tincher v. Noem (Minnesota), both filed February 2026, document agents scanning observers' faces, photographing license plates, following people home, and informing them they are in "domestic terrorist databases." DHS officially denies the existence of a domestic terrorist database. Clearview's database is particularly relevant here because it contains protest photos, news photos, and any public image ever posted online — unlike the HART database, it does not require a prior arrest or government enrollment. Any public photo of you at any prior protest may be in Clearview's database.)*
+
+*(June 2026 update — Iris scanning added to field toolkit: ICE deployed iris scanning capability nationally on June 1, 2026 via a $25.1M Bi2 Technologies contract covering 1,570+ handheld scanners. The scanners access a 5M+ record database from booking, arrest, and incarceration records across 47 states. For protest observers and enforcement monitors who may be physically approached by ICE agents, iris scanning is a second biometric identification step beyond photography. Iris scanning requires close physical contact, unlike Mobile Fortify photography. If approached by ICE agents, assert your right not to submit to biometric collection outside a formal arrest processing context and request attorney presence immediately. The legal status of compelled iris scanning in non-arrest encounters is unsettled — do not consent.)*
+
 **Countermeasure**: Section 4.1 — physical countermeasures and Section 6 — legal response if approached.
 
 ### 1.5 Layer 5: Account Unmasking — DHS Administrative Subpoenas
@@ -75,7 +89,19 @@ Amnesty International's 2025 investigation documented Babel Street being used ag
 
 **The critical point**: Administrative subpoenas require no judicial authorization before issuance. They are DHS's own instrument. If your account has ever been linked to your real identity through any data point — registration email, phone verification, IP address, payment method — DHS can reach that link.
 
+*(June 2026 update — scale, timeline, and new cases: The scale of DHS administrative subpoenas has grown to hundreds of known instances. Google, Meta, and Reddit partially complied before legal challenges were mounted. Three documented cases expand the activist threat picture beyond anti-ICE social media accounts: (1) Jon Doe case — a Philadelphia-area man sent a single email to a DHS official criticizing DHS treatment of an asylum seeker; four hours later, DHS issued an administrative subpoena to Google seeking his identity and home address. About two weeks after Google notified him, two DHS agents and a local police officer appeared at his home. The ACLU moved to quash; DHS withdrew the subpoena before a ruling — but only because the man was notified in time and had legal support within the challenge window. (2) Columbia University was targeted with process seeking data on a student protester. (3) The Montco Community Watch case (Section 11) established that Meta notification may provide a 10–14 day challenge window — but that window requires legal representation to be useful. The practical implication: anonymous infrastructure must be established before any sensitive communication occurs. There is no retroactive anonymity. If your account already uses a real email, phone number, or payment method linked to your identity, a successful subpoena returns your identity before any legal challenge is possible.)*
+
 **Countermeasure**: Section 3.3 — account architecture separation.
+
+### 1.6 DOGE — Federal Data as Organizational Threat
+
+**What happened**: In January–March 2026, court filings in the Democracy Forward lawsuit (AFSCME, AFT, and Alliance for Retired Americans v. DOGE) revealed that DOGE employees at the Social Security Administration improperly accessed records for 300M+ Americans — including immigration status, wage histories, bank account numbers, and home addresses. Court filings further revealed that a DOGE team member signed a "Voter Data Agreement" with an outside political advocacy group and sent the executed agreement to that group, coordinating to match federal benefit data against state voter rolls to "find evidence of voter fraud and to overturn election results in certain States." The SSA referred the DOGE employees for Hatch Act violations.
+
+**Why this matters for activist organizations specifically**: This is the first documented case of federal benefit database access being coordinated with outside political organizations against named political adversaries. If your organization has any staff receiving government benefits (ACA/Medicaid enrollment, SSA wage reporting, any federal program), your organization's staff may appear as nodes in DOGE-accessible datasets. The same entity-resolution infrastructure documented in the Palantir threat model has a parallel in DOGE's access to SSA — wage histories, employer names, and home addresses are available across the SSA dataset.
+
+**What you cannot change**: This data cannot be removed from SSA records. Staff cannot be removed from SSA wage history. This is a structural data exposure.
+
+**What you can do**: (1) Financial separation — maintain clear separation between organizational financial identity and personal financial identity for all staff with organizational roles; (2) Minimize what commercial data brokers contribute on top of SSA exposure — data broker opt-outs reduce the ability to enrich SSA records with additional commercial data; (3) If your organization is a named political adversary of the current administration, consult with a privacy attorney about organizational exposure assessment. This threat does not have an operational countermeasure — it has a legal and structural response.
 
 ---
 
@@ -90,7 +116,7 @@ Different participants face different primary threats. This section maps threat 
 | Visa holder / international student | Catch and Revoke pipeline, Babel Street | Visa revocation for public protest content | All social media private; no public protest-related posts |
 | Legal observer | Drone + perimeter surveillance, device seizure | Identification in aerial database, documentary evidence seized | Tier 2 physical measures, upload documentation before returning home |
 | Communications coordinator | DHS subpoenas, Babel Street persistent monitoring | Account identity unmasking | Full account-device separation (see Section 3.3) |
-| Organizational leadership | Palantir AIP social graph, RICO-adjacent legal theories | Network mapping, organizational investigation | Tier 3 + legal consultation on organizational risk |
+| Organizational leadership | Palantir AIP social graph, DOGE/SSA federal data, RICO-adjacent legal theories | Network mapping, organizational investigation, structural staff data exposure | Tier 3 + legal consultation on organizational risk; Section 1.6 |
 
 ---
 
@@ -123,6 +149,8 @@ Your **personal account** (linked to your real identity), your **organizing coor
 **Organizing coordination accounts** (Signal groups, closed Discord servers): Membership limited to vetted participants. New member vetting requires in-person vouching from a known participant; digital vouching alone is insufficient. Enable disappearing messages (24-hour default) in all groups. No operational logistics (times, routes, staging points) in any group that includes unvetted members.
 
 **Public-facing organizational accounts**: Assume everything here is monitored by Babel Street. Ensure the operator of this account has full identity separation from the account: separate email registered through Tor or a VoIP service, separate device that has never been signed into personal accounts, separate VoIP phone number not linked to the operator's carrier account. This defeats passive OSINT correlation; it does not defeat a targeted DHS subpoena, but it substantially raises the bar.
+
+*(June 2026 subpoena update: DHS administrative subpoenas have been issued in response to a single email to a DHS official, within four hours of the communication. There is no grace period to establish anonymity after a communication that draws DHS attention. Anonymous infrastructure — separate email, VoIP phone number, dedicated device, VPN session — must be in place before any communication that could draw scrutiny. If your public-facing account already uses a Gmail address, a real phone number for verification, or has ever been accessed without a VPN from a device linked to your identity, a successful subpoena returns your real identity regardless of what you do afterward. The countermeasure is architectural: establish separation before the account exists, not after it has been flagged.)*
 
 ---
 
@@ -301,9 +329,11 @@ The digital equivalent: an account that appears to be a known organizer but is a
 ### Checklist D: Ongoing Organizational Security
 
 - [ ] Every 90 days: Re-submit LexisNexis data broker opt-outs for core organizers (or subscribe to Incogni for automation)
+- [ ] Every 90 days: Submit Thomson Reuters CLEAR opt-out for core organizers: optout.thomsonreuters.com
 - [ ] Monthly: Review privacy settings on all organizational accounts — platforms reset permissions after updates
 - [ ] Before each action: Re-run the 72-hour pre-action protocol
 - [ ] Quarterly: Review vetting process for new participants in core organizer channels
+- [ ] Annually (or if your organization is named in political targeting): Consult with a privacy attorney regarding DOGE/SSA organizational staff data exposure — Section 1.6
 - [ ] If any surveillance indicator escalates (DHS subpoena received, device seized, law enforcement contact): Activate Level 2 security posture and consult with legal counsel before the next action
 
 ---
@@ -329,7 +359,8 @@ All of Tier 1, plus:
 8. Power off your phone before entering the protest perimeter; store in Faraday bag. Use a dedicated burner device ($25–$50 prepaid, cash-purchased) if you need a phone during the action.
 9. No personal vehicle at protest sites. Use transit, carpool in someone else's vehicle, or rideshare with pickup/dropoff 4–6 blocks away.
 10. Enable disappearing messages (24 hours) in all organizing Signal groups.
-11. Complete LexisNexis Accurint opt-out: https://optout.lexisnexis.com/. California residents: complete DROP platform: https://privacy.ca.gov/drop/.
+11. Complete LexisNexis Accurint opt-out: https://optout.lexisnexis.com/. California residents: complete DROP platform: https://privacy.ca.gov/drop/. Also submit Thomson Reuters CLEAR opt-out: optout.thomsonreuters.com (reduces commercial data available to multiple federal surveillance stacks regardless of which specific ICE contract vehicle is active).
+12. Know your rights regarding biometric requests: If approached by ICE agents at or near enforcement operations, you have the right to decline iris scanning and biometric requests outside formal arrest processing. Say: "I do not consent to biometric collection. I am requesting an attorney." The legal status of compelled iris scanning in non-arrest encounters is unsettled — assert the right and document the interaction.
 
 **Equipment cost**: N95 box ($15–$25), Faraday bag ($20–$80), prepaid burner phone ($25–$50). Total: under $150.
 
@@ -390,11 +421,27 @@ Both were US citizens engaging in constitutionally protected activity. A lawsuit
 
 **Lesson**: The subpoena was withdrawn when challenged — but only because the account holders were notified in time and had legal support available within the challenge window. If Meta had not notified them, or if they had lacked legal support, DHS would have obtained their identity without any legal contest. The countermeasure is full account-device separation so that even a successful subpoena does not return the operator's real identity.
 
-### Case Study 3: No Kings Protest Drone Surveillance (March 28, 2026)
+### Case Study 3: Philadelphia DHS Subpoena — Four-Hour Response Time (February 2026)
 
-LAPD flight data analyzed by The Intercept and DroneXL showed drones deployed 32 times over the March 28 No Kings protest, with some drones orbiting protest sites for up to seven hours. A heat map showed extended coverage over the Metropolitan Detention Center and Little Tokyo — areas with both political significance and high immigrant community presence.
+A Philadelphia-area man, identified in court filings as Jon Doe, read a Washington Post article about a DHS attorney's misleading arguments in an asylum case and sent a short email to that attorney's publicly available DHS email address, urging DHS to "apply principles of common sense and decency." Four hours after sending the email, DHS issued an administrative subpoena to Google seeking his identity, home address, and account records. About two weeks after Google notified him, two DHS agents and a local police officer appeared at his home to interrogate him about the email.
 
-**Lesson**: Seven-hour drone coverage means the aerial surveillance window extends well before and after the protest's formal duration. Clothing change protocol should be applied not just during the protest but before departing the broader area. Checking ADS-B Exchange before approaching the protest area is meaningful — if drones are active before the crowd assembles, aerial surveillance began before you arrived.
+The ACLU moved to quash the subpoena in federal court; DHS withdrew it before a ruling. The case is documented in ACLU v. DHS (Doe v. DHS).
+
+**Lesson**: DHS is monitoring incoming communications in near-real-time and subpoenaing platform records within hours of an interaction that draws attention. The subpoena tool is being used against protected speech by US citizens, not only against anonymous social media accounts. The critical point is that the man was notified by Google and had legal support available in time to challenge. If Google had complied without notification, or if the man had not contacted legal support within the challenge window, DHS would have obtained his identity without any legal contest.
+
+### Case Study 4: Minneapolis Protest — Clearview AI + FBI Database (February 2026)
+
+Photographs and video from Minneapolis protests in early 2026 show federal agents using facial recognition on phones while wearing tactical gear. The Biometric Update confirmed that ICE agents were using both Mobile Fortify and Clearview AI simultaneously. FBI agents were also present and using facial recognition to populate federal investigative databases.
+
+Two class action lawsuits — Hilton v. Noem (filed February 2026, Maine) and Tincher v. Noem (filed February 2026, Minnesota) — document a pattern of agents scanning observers' faces without consent, photographing license plates, following protesters to their vehicles, and informing them they were being added to domestic terrorism databases. DHS officially denies the existence of a domestic terrorist database.
+
+**Lesson**: The threat at protests is not a single tool operated by a single agency. Mobile Fortify (ICE ERO, HART database), Clearview AI (ICE HSI and FBI, 50B+ images), and IMSI catchers are being operated simultaneously by agents from different agencies with different investigative authorities. FBI database placement creates federal criminal investigation exposure that is categorically different from immigration enforcement consequences. The countermeasures in Section 4 address the biometric collection layer; the account architecture countermeasures in Section 3 address what happens after collection when agents attempt to resolve a face to an identity.
+
+### Case Study 5: No Kings Protest Drone Surveillance (March 28, 2026)
+
+LAPD flight data analyzed by The Intercept and DroneXL showed drones deployed 32 times over the March 28 No Kings protest, with some drones orbiting protest sites for up to seven hours. A heat map showed extended coverage over the Metropolitan Detention Center and Little Tokyo — areas with both political significance and high immigrant community presence. CBP separately flew a military-grade MQ-9 Predator drone over Los Angeles protests.
+
+**Lesson**: Seven-hour drone coverage means the aerial surveillance window extends well before and after the protest's formal duration. Clothing change protocol should be applied not just during the protest but before departing the broader area. Checking ADS-B Exchange before approaching the protest area is meaningful — if drones are active before the crowd assembles, aerial surveillance began before you arrived. The Predator drone deployment by CBP adds a federal surveillance layer that operates at higher altitude and with longer endurance than LAPD's Skydio X10 drones.
 
 ---
 
@@ -440,12 +487,16 @@ If a participant will only do five things, these are the five:
 
 **For questions and updates**: Contact your local NLG chapter or EFF digital rights helpline (eff.org/help).
 
-**Version**: 1.1
+**Version**: 1.1 (Q2 2026 patch — June 6, 2026)
 **Created**: May 7, 2026
+**Last updated**: June 6, 2026
 **Next scheduled review**: July 26, 2026 (quarterly corpus review)
-**Cross-references**: `activist-organizing-playbook.md` (extended companion document), `threat-model.md`, `opsec-playbook.md`, `implementation-guide.md`, `palantir-threat-model.md`, `phase-2-immigration-surveillance-evasion-playbook.md` (device hardening Sections 5–6 apply directly)
+**Patch log**: v1.1 applies five Q2 2026 updates (UPDATE-ACT-01 through UPDATE-ACT-05 per PHASE_2_THREAT_INTEGRATION_CHECKLIST.md) plus Thomson Reuters LEIDS-5 expiration note. Source count: 17 (original) + 9 (v1.1 additions) = 26 total.
+**Cross-references**: `activist-organizing-playbook.md` (extended companion document), `threat-model.md`, `opsec-playbook.md`, `implementation-guide.md`, `palantir-threat-model.md`, `phase-2-immigration-surveillance-evasion-playbook.md` (device hardening Sections 5–6 apply directly), `PHASE_2_THREAT_INTEGRATION_CHECKLIST.md` (patch reference document)
 
-**Sources**:
+**Sources** (17 original + 9 Q2 2026 patch additions = 26 total):
+
+*Original sources (v1.0)*:
 - [LAPD drone surveillance No Kings protest — The Intercept](https://theintercept.com/2026/04/20/lapd-skydio-drone-surveillance-no-kings-protest-ice/)
 - [LAPD Skydio drones orbited No Kings for seven hours — DroneXL](https://dronexl.co/2026/04/28/lapd-skydio-drone-surveillance-no-kings-protest/)
 - [EFF — Flock Safety ALPR protest surveillance investigation](https://www.eff.org/deeplinks/2025/11/how-cops-are-using-flock-safetys-alpr-network-surveil-protesters-and-activists/)
@@ -463,3 +514,14 @@ If a participant will only do five things, these are the five:
 - [Facial recognition targets international student protesters](https://www.lawfirm4immigrants.com/facial-recognition-technology-targets-international-student-protesters/)
 - [DHS, ICE sued over immigration subpoenas — Military.com](https://www.military.com/daily-news/2026/04/22/lawsuit-dhs-ice-sued-over-immigration-subpoenas-id-social-media-users.html)
 - [DeFlock.me — EFF-supported Flock Safety camera map](https://deflock.me)
+
+*Added in v1.1 patch (June 6, 2026)*:
+- [ICE awards Bi2 $25M contract for 1,570 biometric scanners — The Register](https://www.theregister.com/public-sector/2026/05/29/ice-awards-bi2-25m-contract-for-1570-biometric-scanners/5248733)
+- [ICE iris scanners expanding arsenal of tech tools — NPR](https://www.npr.org/2026/05/27/nx-s1-5822429/ice-buys-iris-scanners-tech-tools)
+- [ICE, FBI expand facial recognition use to protest investigations — Biometric Update](https://www.biometricupdate.com/202602/ice-fbi-expand-facial-recognition-use-to-protest-investigations)
+- [ICE contracts with Clearview AI — Immigration Policy Tracking Project](https://immpolicytracking.org/policies/reported-ice-contracts-with-clearview-ai-for-facial-recognition-technology/)
+- [ACLU moves to quash DHS subpoena targeting Philadelphia critic — ACLU](https://www.aclu.org/press-releases/aclu-moves-to-quash-abusive-subpoena-aimed-at-tracking-down-man-who-criticized-department-of-homeland-security)
+- [DHS withdraws subpoena targeting man who criticized them — ACLU](https://www.aclu.org/press-releases/department-of-homeland-security-withdraws-subpoena-targeting-man-who-criticized-them)
+- [DOGE SSA data and voter roll coordination — Democracy Forward](https://democracyforward.org/work/legal/stopping-doges-unlawful-seizure-of-americans-social-security-data/)
+- [Trump administration admits DOGE accessed sensitive personal data — NPR](https://www.npr.org/2026/01/23/nx-s1-5684185/doge-data-social-security-privacy)
+- [Thomson Reuters LEIDS-5 contract and employee pressure — LawNext](https://www.lawnext.com/2026/04/the-legal-tech-giants-powering-ice-part-2-the-pushback-employees-shareholders-lawyers-and-the-fight-over-may-31.html)
