@@ -4,6 +4,40 @@
 
 ---
 
+## 🎯 Session 2971 (June 6 23:58–00:05 UTC) — Stale Documentation Update + Standing By
+
+**Status**: ✅ **ADMINISTRATIVE UPDATE COMPLETE — ORCHESTRATOR STANDING BY FOR USER DECISIONS**
+
+**What was accomplished**:
+- ✅ Updated stale open-repo focus line in PROJECTS.md (Session 2953 → Session 2970, shortened from 200+ words to 100 words while preserving all actionable items)
+- ✅ Verified all 4 active blocks require explicit user action (none can be resolved autonomously)
+- ✅ Confirmed exploration queue has 5 queued items all properly date-gated
+
+**Current blocking items needing user action**:
+1. **stockbot June 7 09:00 UTC**: GO/CAUTION/NO-GO decision on Phase 3 deployment (comprehensive backtesting synthesis report ready for review)
+2. **systems-resilience June 8 18:00 UTC**: Platform deployment choice (Nextcloud+Matrix vs Discourse) — all pre-staging docs ready
+3. **open-repo June 12**: Feature branch merge approval + deployment start time clarification (09:00 vs 20:00 UTC) + database credentials
+4. **cybersecurity-hardening**: User must restart Windows + complete VeraCrypt pre-boot test
+5. **mfg-farm**: User must execute test print with specified parameters
+
+**Needs your input**:
+- **June 7 09:00 UTC decision**: Review `COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md` and `JUNE_7_USER_DECISION_MEMO.md` in stockbot project → make GO/CAUTION/NO-GO call
+- **June 8 deadline**: Decide on systems-resilience platform (Nextcloud+Matrix or Discourse) — recommendation in BLOCKED.md favors Discourse for Pi 5 memory constraints
+- **Before June 12**: Clarify open-repo deployment start time (09:00 vs 20:00 UTC) to finalize communication templates and rollback windows
+- **Anytime soon**: Complete cyber VeraCrypt restart + mfg-farm test print to unblock Phases 1 and test execution
+
+**Next steps**:
+- Orchestrator stands by for June 7-8 decision checkpoints
+- Once stockbot decision made → can activate Phase 4 pre-planning if GO (3 deliverables already staged in Exploration Queue)
+- Once systems-resilience platform chosen → can execute platform deployment June 8-9
+- Once seedwarden Track B gates completed (user action, 4-5 hours) → orchestrator executes URL substitution + launch
+
+**Session Duration**: 7 minutes (orientation + focus update + documentation)
+
+**Next activation**: June 7 09:00 UTC (stockbot decision checkpoint) or June 8 (systems-resilience platform deployment)
+
+---
+
 ## 🎯 Session 2970 (June 6 23:50–00:15 UTC) — Exploration Queue Replenishment + Phase 4 Pre-Planning
 
 **Status**: ✅ **PHASE 4 CONTINGENCY PLANNING COMPLETE — ALL AUTONOMOUS WORK DONE FOR THIS CYCLE**
