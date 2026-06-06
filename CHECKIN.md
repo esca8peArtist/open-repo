@@ -4,6 +4,49 @@
 
 ---
 
+## 🔄 Session 2950 (June 6 13:53–15:30 UTC) — Orchestrator: Parallel Agents + Phase 3 Launch + Publication Prep
+
+**Current Status**: **TWO MAJOR PROJECTS ADVANCED**. resistance-research Phase 3 launched with Domain H complete (9,898 words, 75 citations). systems-resilience Phase 5.1 publication prep complete (GO verdict, June 9 ready).
+
+**Work Accomplished**:
+- ✅ **resistance-research: PHASE 3 DOMAIN H COMPLETE** (Commit dc28a1aa)
+  - `domain-H-constitutional-architecture.md` — 9,898 words (exceeds 5,500-7,000 target), 75 citations
+  - All 5 scope sections: structural vulnerabilities (emergency powers, Senate malapportionment, Article V supermajority), case studies (14th Amendment nullification 1873-1883, NSA 1947, Trump v. US, Loper Bright), reform pathways (amendments, statutory reclamation, doctrinal activation), international precedent (Germany, South Korea, Spain, Uruguay), movement leverage + Jan 3 2027 activation window
+  - **Confidence**: Production-ready (Phase 3 hard deadline Jan 3, 2027 — Congress seating closes lame-duck window)
+  - **Next**: Domain K (Judiciary Restructuring) scheduled post-Wave-2 completion (after June 13)
+  
+- ✅ **systems-resilience: PHASE 5.1 PUBLICATION PREP COMPLETE** (Commit e05cac26)
+  - `PHASE_5_1_PUBLICATION_CHECKLIST.md` — All 12 criteria PASS ✅ (61,611 words, 336+ citations verified, 15/15 URLs accessible)
+  - `PHASE_5_1_PUBLICATION_DEPLOYMENT_RUNBOOK.md` — 90-minute SOP for June 9 13:00–15:00 UTC
+  - `WAVE_2_RECRUITMENT_PRE_CHECKLIST.md` — Prerequisites for June 14-15 author matching (54 candidates, intake target 43+, Nextcloud pre-staged)
+  - `PHASE_5_1_PUBLICATION_RISK_ASSESSMENT.md` — Risk vectors with mitigations (98%+ success probability)
+  - **Confidence**: GO FOR JUNE 9 PUBLICATION (98%+), Wave 2 recruitment ready (95%+)
+  - **Timeline**: June 9 publication → June 14-15 author matching → June 20 Wave 2 kickoff
+
+**Blocks Status** (unchanged):
+1. **cybersecurity-hardening** — VeraCrypt restart (user action)
+2. **mfg-farm** — test print execution (user action)
+
+**Project Summary**:
+- **stockbot** (Priority #1): Item 62 analysis COMPLETE (GO WITH CAUTION, 92% confidence). **June 7 09:00 UTC user decision** on Phase 3 scope (Option A/B/C).
+- **resistance-research** (Priority #2): Phase 2 execution ready (Wave 1 June 10 14:00 UTC, user action). Phase 3 Domain H COMPLETE, Domain K next.
+- **systems-resilience**: Phase 5.1 publication GO (June 9). Wave 2 recruitment ready (June 14-15).
+- All others: Awaiting user decisions or scheduled execution dates.
+
+**Critical Dates** (next 2 weeks):
+- **June 7 09:00 UTC**: stockbot user decision (Phase 3 scope)
+- **June 9 13:00 UTC**: systems-resilience Phase 5.1 publication (GO verdict)
+- **June 10 14:00 UTC**: resistance-research Wave 1 execution (user action, 90 min)
+- **June 12-13 14:00 UTC**: resistance-research Wave 2 execution (user action, 90 min)
+- **June 14-15**: systems-resilience Wave 2 author matching (90 min, orchestrator-executable)
+
+**Orchestrator Capacity**:
+- Sonnet usage: 12.9% (healthy, no throttling)
+- Parallel execution: 2 agents completed successfully in this session
+- Phase 3 research pipeline: Domain H complete, Domain K queued (25 hours capacity)
+
+---
+
 ## 🔄 Session 2948 (June 6 12:15–13:15 UTC) — Orchestrator: Phase 3 Roadmap + Wave 2 Matching + Market Verification
 
 **Current Status**: **TWO HIGH-VALUE EXPLORATION ITEMS COMPLETE**. Stockbot market-open credential-fix verification **IN PROGRESS** (12:38 UTC container restarted, sessions initializing, market opens 13:30 UTC). All three active blocks status unchanged.
