@@ -4,6 +4,30 @@
 
 ---
 
+## 🎯 Session 2969 (June 6 21:22–21:45 UTC) — Readiness Verification: June 7 Stockbot Decision Point
+
+**Status**: ✅ **SYSTEM READY FOR JUNE 7 09:00 UTC STOCKBOT DECISION**
+
+**Summary**: Brief orientation confirms all project state from Session 2968. All orchestration infrastructure in place for June 7 decision point (11.5 hours away) and June 8 systems-resilience deadline (20.5 hours away). Stockbot comprehensive backtesting synthesis report is final and ready for user review. No autonomous work available; all projects blocked on user decisions/actions. System standing by for decision points.
+
+**Key Status**:
+- ✅ COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md finalized (39K, June 6 20:17 UTC) — recommends **GO** with week of enhanced monitoring
+- ✅ JPM ridge_wf: 6/6 gates PASS, 100% deployment confidence
+- ✅ AMZN lgbm_ho: 6/6 gates PASS (post-G5 fix), 96% deployment confidence
+- ✅ AAPL models: 2/6 and 1/6 FAIL — not deployable
+- ✅ Infrastructure production-ready (docker restart policy fixed, DNS resolution verified)
+- ⏳ User decision due June 7 09:00 UTC on GO/CAUTION/NO-GO for Phase 3 deployment
+- ⏳ If GO approved: June 8 13:15 UTC pre-market health check + first market day validation
+- ⏳ June 9-13: Daily monitoring per automated checklist
+- ⏳ June 14: Five-day assessment against backtest baseline
+
+**Next Steps** (upon user decision):
+- GO decision → June 8 pre-market validation checklist (4 gates: container health, session status, WebSocket stability, Alpaca API)
+- Enhanced monitoring June 8-14 per PHASE_4_3_MONITORING_DASHBOARD.md
+- June 14 checkpoint: Compare live Sharpe vs backtest baseline, validate Z-score drift tracking
+
+---
+
 ## 🎯 Session 2968 (June 6 21:30–22:30 UTC) — Exploration Queue Advancement: Phase 2 + Phase 4 Planning
 
 **Status**: ✅ **EXPLORATION QUEUE WORK COMPLETE — RESISTANCE-RESEARCH PHASE 2 MONITORING READY + STOCKBOT PHASE 4 PLANNING STAGED**
