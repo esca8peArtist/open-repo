@@ -27,23 +27,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Phase 3 Infrastructure Blockers (Container Restart Policy + Alpaca DNS)
-**Date blocked**: 2026-06-06 16:28 UTC (Session 2953 — Item 62 investigation)
-**Date resolved**: 2026-06-06 17:45 UTC (Session 2953 continuation — autonomous infrastructure fixes)
-**Context**: Item 62 investigation discovered that the Docker container went offline during market hours June 5 (13:30–20:00 UTC) and did not recover until 23:27 UTC. This prevented the stockbot trading sessions from executing any trades despite being configured correctly. Root cause: (1) Container restart policy on Jetson was set to "no" (no auto-recovery), (2) Alpaca DNS resolution failures — Docker's internal resolver forwarded to Jetson's systemd-resolved stub (127.0.0.53) which fails inside the container network namespace.
-**Resolution**: ✅ **FULLY RESOLVED** (Session 2953, 17:45 UTC)
-- **Fix 1 — Container restart policy**: Updated docker run command with `--restart unless-stopped` flag (CLAUDE.md updated with new restart command). Container will now auto-recover from crashes without manual intervention.
-- **Fix 2 — Alpaca DNS resolution**: Added explicit DNS flags `--dns 8.8.8.8 --dns 1.1.1.1` to docker run command. This bypasses Docker's internal resolver stub and resolves paper-api.alpaca.markets correctly (verified: resolves to 35.194.67.18).
-- **Verification completed**: 
-  - Container restart policy: ✅ `RestartPolicy: {'Name': 'unless-stopped'}`
-  - DNS resolution: ✅ `docker exec stockbot python3 -c "import socket; print(socket.gethostbyname('paper-api.alpaca.markets'))"` returns 35.194.67.18
-  - Sessions loaded: ✅ Both jpm_ridge_wf_001 and amzn_lgbm_ho_001 initialized successfully, market clock check succeeds
-  - Error logs: ✅ Zero DNS/NameResolution/401/403 errors in fresh logs
-- **Commits**: f29fadd + e14ded5 (CLAUDE.md + WORKLOG.md)
-- **Status**: **PHASE 3 INFRASTRUCTURE PRODUCTION-READY** — Ready for June 9 market-open validation protocol
-
----
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -71,6 +54,22 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — Phase 3 Infrastructure Blockers (Container Restart Policy + Alpaca DNS)
+**Date blocked**: 2026-06-06 16:28 UTC (Session 2953 — Item 62 investigation)
+**Date resolved**: 2026-06-06 17:45 UTC (Session 2953 continuation — autonomous infrastructure fixes)
+**Resolution**: ✅ **FULLY RESOLVED** (Session 2953, 17:45 UTC)
+- **Fix 1 — Container restart policy**: Updated docker run command with `--restart unless-stopped` flag (CLAUDE.md updated with new restart command). Container will now auto-recover from crashes without manual intervention.
+- **Fix 2 — Alpaca DNS resolution**: Added explicit DNS flags `--dns 8.8.8.8 --dns 1.1.1.1` to docker run command. This bypasses Docker's internal resolver stub and resolves paper-api.alpaca.markets correctly (verified: resolves to 35.194.67.18).
+- **Verification completed**: 
+  - Container restart policy: ✅ `RestartPolicy: {'Name': 'unless-stopped'}`
+  - DNS resolution: ✅ `docker exec stockbot python3 -c "import socket; print(socket.gethostbyname('paper-api.alpaca.markets'))"` returns 35.194.67.18
+  - Sessions loaded: ✅ Both jpm_ridge_wf_001 and amzn_lgbm_ho_001 initialized successfully, market clock check succeeds
+  - Error logs: ✅ Zero DNS/NameResolution/401/403 errors in fresh logs
+- **Commits**: f29fadd + e14ded5 (CLAUDE.md + WORKLOG.md)
+- **Status**: **PHASE 3 INFRASTRUCTURE PRODUCTION-READY** — Ready for June 9 market-open validation protocol
+
+---
 
 ### stockbot — June 5 market execution failure: 0 trades executed (root cause identified + fix deployed, awaiting verification)
 **Date blocked**: 2026-06-05 20:45 UTC (Session 2901 — orchestrator discovery)
