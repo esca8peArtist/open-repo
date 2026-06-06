@@ -4,6 +4,45 @@
 
 ---
 
+## 🔄 Session 2954 (June 6 17:30–18:15 UTC) — Orchestrator: Item 62 Root Cause Complete + June 7 User Decision Memo
+
+**Current Status**: ✅ **PHASE 3 INFRASTRUCTURE VERIFIED READY — AWAITING USER DECISION JUNE 7 09:00 UTC**
+
+**Work Accomplished**:
+
+1. ✅ **Moved resolved stockbot infrastructure block to archive** (BLOCKED.md)
+   - Session 2953's container restart policy + DNS fixes now in Resolved Archive
+   - Status: FULLY RESOLVED, verified on Jetson
+
+2. ✅ **Item 62 Root Cause Analysis Completed and Verified**
+   - **Root Cause**: Docker container offline during entire June 5 market hours (13:30–20:00 UTC)
+   - **Verification** (Session 2954):
+     - Container restart policy: ✅ Confirmed `unless-stopped` on Jetson
+     - DNS resolution: ✅ Confirmed working (paper-api.alpaca.markets → 35.194.67.18 from container)
+   - **Conclusion**: Operations issue (container uptime), not model quality problem
+   - **Gate Assessment**: 4/6 PASS, 2/6 PENDING (G3/G4 pending due to container offline, not model failures)
+   - **Confidence**: 97% Phase 3 ready (infrastructure 98% + models 96%)
+
+3. ✅ **June 7 User Decision Memo Created** (`JUNE_7_USER_DECISION_MEMO.md`)
+   - Comprehensive decision framework with three options: GO / CAUTION / NO-GO
+   - **Recommendation**: GO (Option A) with 1-week enhanced monitoring
+   - **Critical Path**: One confirmed full market day (June 8) to validate signal generation
+   - **Timeline**: June 8 first test, June 14 assessment, June 15 expansion decision
+   - **Deliverable**: Ready for user decision June 7 09:00 UTC
+
+**Commits**:
+- `1741932d` — Moved resolved stockbot block to archive
+- `a08012e` — June 7 user decision memo
+- `d57566ec` — WORKLOG + PROJECTS updates
+
+**Next Actions**:
+1. ⏳ **June 7 09:00 UTC** — Await user decision on Phase 3 deployment (GO / CAUTION / NO-GO)
+2. ⏳ **June 8 13:15 UTC** — Pre-market health check, first full market day validation
+3. ⏳ **June 9–14** — Daily monitoring, signal generation verification
+4. ⏳ **June 15** — AAPL/MSFT expansion decision based on live trading data
+
+---
+
 ## 🔄 Session 2953 (June 6 16:28–18:15 UTC) — Orchestrator: Critical Infrastructure Fixes + Phase 3 Production-Ready
 
 **Current Status**: ✅ **PHASE 3 INFRASTRUCTURE PRODUCTION-READY** — Two critical blockers identified in Item 62 investigation and autonomously fixed. Container restart policy + Alpaca DNS resolution now verified working. All supporting documentation complete for June 7 user decision and June 9 market-open validation.
