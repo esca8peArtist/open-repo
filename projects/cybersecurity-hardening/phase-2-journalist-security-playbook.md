@@ -4,20 +4,24 @@ project: cybersecurity-hardening
 created: 2026-05-07
 status: production-ready
 phase: Phase 2
-version: 1.0
+version: 1.1
 depends_on:
   - threat-model.md
   - opsec-playbook.md
   - implementation-guide.md
   - PHASE_2_SEQUENCING_STRATEGY.md
-confidence: high — grounded in confirmed CBP device search statistics, FISA Section 702 documented FBI abuses, Freedom of the Press Foundation 2026 digital security checklist, SecureDrop 2025 annual review, CPJ 2025-2026 press freedom deterioration reporting, Committee to Protect Journalists border-crossing incidents, and EFF journalist-specific security guidance
+  - THREAT_ENVIRONMENT_Q2_2026_UPDATE.md
+  - OPSEC_PLAYBOOK_Q2_2026_PATCHES.md
+confidence: high — grounded in confirmed CBP device search statistics, FISA Section 702 documented FBI abuses, Freedom of the Press Foundation 2026 digital security checklist, SecureDrop 2025 annual review, CPJ 2025-2026 press freedom deterioration reporting, Committee to Protect Journalists border-crossing incidents, EFF journalist-specific security guidance; updated June 6, 2026 with DOJ guideline rescission (RCFP analysis, FPF, CPJ), FISA 702 Senate June 5 vote (Roll Call, CBS News), Cellebrite Spring 2026 release (Cellebrite.com, Forensic Focus), and Clearview AI field deployment (Biometric Update, contract records)
 audience: Investigative reporters, documentary filmmakers, photojournalists, freelancers with sensitive sources, news organization IT/security teams, journalism school security trainers
-word_count: ~3,600
+word_count: ~4,500
+last_updated: 2026-06-06
+changelog: v1.1 — Q2 2026 threat integration (5 patches): Section 1.4 rewrite (DOJ guideline rescission + rapid escalation protocol); Section 1.2 FISA 702 June 6 Senate failure; Section 2.1 new (Clearview AI field threat); Section 3.3 new (Cellebrite Safeguard Mode); Section 4.3 FISA status correction
 ---
 
 # Journalist Security Playbook
 
-**For journalism educators and newsroom security teams**: This guide addresses the specific threat environment facing journalists and sources in the United States as of May 2026. The threat is qualitatively different from what it was four years ago: CBP device searches at U.S. border crossings have increased, the FBI has conducted documented warrantless backdoor searches of Section 702-acquired communications databases that include journalist queries, and the CPJ's Emergencies team conducted 26 journalist safety training sessions in a single 11-month window — a record pace reflecting a documented deterioration in press freedom conditions.
+**For journalism educators and newsroom security teams**: This guide addresses the specific threat environment facing journalists and sources in the United States as of June 2026. Version 1.1 integrates five Q2 2026 threat patches: DOJ journalist protection guideline rescission (active since April 2025, first activations May–June 2026), FISA 702 legislative crisis (Senate vote failure June 5, 2026), Cellebrite Safeguard Mode (Spring 2026 release), Clearview AI live field identification threat, and FISA Section 4.3 status correction. The threat is qualitatively different from what it was four years ago: CBP device searches at U.S. border crossings have increased, the FBI has conducted documented warrantless backdoor searches of Section 702-acquired communications databases that include journalist queries, and the CPJ's Emergencies team conducted 26 journalist safety training sessions in a single 11-month window — a record pace reflecting a documented deterioration in press freedom conditions.
 
 Three things distinguish this playbook from general security guidance: (1) it maps threats to the specific points in a journalist's workflow where they arise — border crossings, source communication, document receipt, publication, and field reporting; (2) it addresses the absence of a federal shield law and what that concretely means for source protection; and (3) it integrates current operational tools — SecureDrop, Signal, the EFF 2025 journalist security checklist, and CPJ border-crossing protocols — into a workflow rather than an undifferentiated list.
 
@@ -47,7 +51,11 @@ Cross-references to `opsec-playbook.md` and `implementation-guide.md` throughout
 
 **Documented abuse**: The Foreign Intelligence Surveillance Court found "persistent and widespread" abuses of Section 702 query authority, specifically including warrantless searches for U.S. journalists, political commentators, and civil society figures. The RCFP documented that an expansion of Section 702 explicitly references the capability to conduct "press queries" — searches targeting journalists by name or identity. The FBI's documented use of Section 702 to warrantlessly search the communications of journalists violates the spirit of the First Amendment reporter's privilege, even where courts have not yet established a clear legal rule.
 
-**Congressional status as of May 2026**: A two-year extension of Section 702 was signed by President Biden in April 2024. A reform amendment requiring a warrant for "U.S. person queries" (which would protect journalist queries) failed 42 to 50 in the Senate. Congress passed a subsequent 45-day extension in April 2026 without meaningful reforms. As of May 2026, Section 702 warrantless journalist queries are legal.
+**Congressional status as of June 6, 2026**: Section 702 expires June 12. The Senate voted 47-52 on June 5 on a motion to proceed to long-term reauthorization — the measure failed. Seven Republicans joined Democrats in opposition, citing both privacy concerns and objections to Trump's appointment of Bill Pulte as acting director of national intelligence. Senate Majority Leader Thune acknowledged "a few days from now, on June 12, that program goes dark" and suggested leadership would attempt another procedural vote before the deadline. A legislative lapse is possible for the first time in this reauthorization cycle.
+
+A reform amendment requiring a warrant for "U.S. person queries" (which would protect journalist queries in the Section 702 database) did not advance in any form. The Government Surveillance Reform Act of 2026 (S.4082), which would have imposed this requirement, has not been enacted. No warrant protection for journalist communications in Section 702 databases has materialized.
+
+**What a lapse does and does not change for journalists**: Even if Section 702 expires on June 12, the Foreign Intelligence Surveillance Court (FISC) issued an administrative order separately extending operational authority for existing Section 702 certifications through 2027. NSA collection of foreign-targeted communications continues under FISC authority regardless of congressional outcome. FBI query authority for new queries of the existing database is the contested legal question if the statute lapses — but this ambiguity does not protect data that has already been collected. For journalists using Signal: no operational change regardless of the June 12 outcome. Signal has zero stored content for the FBI to query, by design.
 
 **Practical implication**: Any journalist who regularly communicates with sources outside the United States — whistleblowers in foreign governments, human rights defenders, diaspora community sources, or any non-U.S. person abroad — should assume those communications may be collected under Section 702 and that their identity may be queried in the database by FBI analysts.
 
@@ -67,15 +75,47 @@ Cross-references to `opsec-playbook.md` and `implementation-guide.md` throughout
 
 ---
 
-### 1.4 Grand Jury Subpoenas for Source Testimony
+### 1.4 Grand Jury Subpoenas for Source Testimony — DOJ Guidelines Rescinded, Threat Now Active
 
-**The federal shield law gap**: As of May 2026, there is no federal shield law protecting journalist-source confidentiality. The PRESS Act (S.2074), which would have created a federal reporter's privilege barring compelled disclosure of source identities, passed the House unanimously but died in the Senate. State shield laws — 49 states and D.C. have some form — do not apply in federal court. A federal grand jury can subpoena a journalist to testify about their sources, and a federal judge can hold the journalist in civil contempt (up to 18 months) for refusing.
+**CRITICAL UPDATE (June 2026)**: The voluntary DOJ guidelines that constrained journalist subpoenas have been formally rescinded. This threat is no longer theoretical — it is current policy in active use. Read this section as present-tense risk, not contingent risk.
 
-**DOJ guidelines limitation**: Department of Justice guidelines (28 C.F.R. § 50.10) limit when federal prosecutors may subpoena journalists and require Attorney General approval for most journalist subpoenas. These guidelines are voluntary policies — they are not law, they do not bind courts, and they can be changed by the AG at any time without congressional action.
+**The federal shield law gap**: As of June 2026, there is no federal shield law protecting journalist-source confidentiality. The PRESS Act (S.2074), which would have created a federal reporter's privilege barring compelled disclosure of source identities, passed the House unanimously but died in the Senate. State shield laws — 49 states and D.C. have some form — do not apply in federal court. A federal grand jury can subpoena a journalist to testify about their sources, and a federal judge can hold the journalist in civil contempt (up to 18 months) for refusing.
 
-**When the risk is highest**: Grand jury subpoenas for source testimony are most likely when a journalist publishes classified information or information derived from a government leak. The government's theory in such cases is that the journalist possesses direct evidence of a crime (the unauthorized disclosure). Courts have generally held that journalist testimony can be compelled in this context if the information is not available by other means.
+**DOJ guidelines — rescinded April 2025**: Department of Justice guidelines (28 C.F.R. § 50.10) previously limited when federal prosecutors could subpoena journalists and required Attorney General approval. In April 2025, Attorney General Pam Bondi issued a memorandum formally revoking the Biden-era version of those guidelines. The previous prohibition on using subpoenas, court orders, or search warrants against journalists who possess and publish classified information obtained in newsgathering — with the presumption against journalist subpoenas — is no longer DOJ policy. Prosecutors are no longer required to exhaust alternatives before subpoenaing journalist records, and no special AG approval threshold applies.
 
-**Countermeasure**: Section 5 — knowing the boundaries of legal protection; Section 6.1 — legal support resources; limiting what a journalist knows about source identity (need-to-know principle).
+**2026 documented activations — the threat is operational**:
+
+*January 2026 — Washington Post reporter Hannah Natanson*: The FBI executed a search warrant at Natanson's home in connection with a classified information investigation of a government contractor. Agents compelled Face ID unlock of her devices. This is the first documented forced biometric journalist device search under the revised guidelines.
+
+*May 2026 — Wall Street Journal, Iran war coverage*: DOJ issued grand jury subpoenas to WSJ reporters for source records related to reporting on the U.S.-Israel conflict in Iran. President Trump personally directed acting AG Todd Blanche to pursue the investigation, providing a stack of news articles labeled "treason" in a handwritten note. DOJ stated the subpoenas target leakers rather than the journalists themselves — but identifying leakers requires accessing journalist records. The Committee to Protect Journalists condemned the subpoenas on May 26, 2026.
+
+**When the risk is highest**: Grand jury subpoenas for source testimony are most likely when a journalist publishes classified information or information from a government leak. Under the Bondi framework, any leak-adjacent reporting involving national security topics carries active subpoena risk. The government can and does access journalist phone carrier records, email metadata, and anything held by a third party (carrier, ISP, Google, Microsoft) without prior notice to the journalist.
+
+**Rapid escalation protocol — what to do if you receive legal process**:
+
+If you receive a subpoena, search warrant, or any legal process targeting your source communications or device contents:
+
+1. **Do not comply or respond before speaking to counsel.** A subpoena is not a court order requiring immediate compliance. You have time to seek legal advice before any response is due.
+2. **Call RCFP's 24/7 legal hotline immediately**: Reporters Committee for Freedom of the Press — 1-800-336-4243 or rcfp.org. They provide free legal referrals and direct representation in many cases.
+3. **Contact Freedom of the Press Foundation**: freedom.press — they coordinate with media law attorneys and can advise on technical protective measures that remain legally defensible post-subpoena.
+4. **Notify your newsroom's legal counsel before anyone else at your organization.** Do not discuss the subpoena's contents with colleagues until your attorney advises on confidentiality scope.
+5. **Do not delete or alter records.** Once you receive legal process, deletion of potentially responsive records creates obstruction exposure. Consult your attorney before taking any action with devices or accounts referenced in the subpoena.
+6. **Document your devices' current state before any CBP or FBI contact.** Take notes on what is on each device at the time of any encounter — this creates a baseline for challenging claims about what was extracted.
+
+**Legal aid contacts for journalists facing legal process**:
+- Reporters Committee for Freedom of the Press: rcfp.org / 1-800-336-4243 (24/7 hotline)
+- Freedom of the Press Foundation (digital security + legal coordination): freedom.press
+- Committee to Protect Journalists Emergency Line: cpj.org/emergency
+- Media law counsel referral via SPJ: spj.org (Society of Professional Journalists)
+- ACLU First Amendment Project (for First Amendment challenges to compelled testimony): aclu.org
+
+**Metadata minimization during subpoena response**: If you are under active legal scrutiny, metadata minimization becomes legally constrained — consult your attorney before deleting anything. However, for communications that postdate a subpoena, the following practices remain available and legally defensible:
+- Continue using Signal for all new source communications (Signal produces only account creation date and last connection date in response to legal process — message content does not exist on Signal's servers to be produced)
+- Do not initiate new source contacts via phone carrier calls, SMS, or email platforms that retain logs
+- Receive all new source documents via SecureDrop, not email (SecureDrop retains no metadata linking submissions to sources or journalists)
+- For in-person source meetings during active legal proceedings: leave all devices at home or power them off before leaving; do not bring any device that has been near your sources
+
+**Countermeasure**: The most durable source protection is operational, not legal — the "can't testify about what you don't know" principle. A journalist who genuinely does not know their source's identity (because the source used SecureDrop anonymously) cannot be compelled to reveal it. See Section 5 for legal framework; Section 6.1 for legal support resources.
 
 ---
 
@@ -95,7 +135,7 @@ Cross-references to `opsec-playbook.md` and `implementation-guide.md` throughout
 
 **Specific metadata vectors**: Phone carrier call records; Signal account-registration phone numbers (which tie a Signal account to a real phone identity); IP addresses from Signal, email, or SecureDrop connections; location data generated by devices present in the same area as sources; and credit card records showing travel that correlates with source contact events.
 
-**Countermeasure**: Section 4.4 — metadata minimization protocol; Section 3.3 — financial operational security.
+**Countermeasure**: Section 4.4 — metadata minimization protocol; Section 3.4 — financial operational security.
 
 ---
 
@@ -105,10 +145,29 @@ Cross-references to `opsec-playbook.md` and `implementation-guide.md` throughout
 |---|---|---|---|
 | Investigative reporter (government) | NSL metadata disclosure, PRISM email collection | Grand jury subpoena | SecureDrop + VoIP Signal registration + source need-to-know principle |
 | Foreign-focused reporter | FISA Section 702 warrantless queries | NSL carrier records | Signal safety number verification; foreign source communication only on dedicated device |
-| Field reporter / photojournalist | CBP device search (border), Mobile Fortify (protest field reporting) | ALPR if covering enforcement | Clean travel device; Tier 2 physical measures from activist playbook for enforcement event coverage |
+| Field reporter / photojournalist | CBP device search (border), Mobile Fortify (protest field reporting), Clearview AI facial ID from byline photos | ALPR if covering enforcement | Clean travel device; Tier 2 physical measures from activist playbook for enforcement event coverage; see Section 2.1 for Clearview AI countermeasures |
 | Documentary filmmaker | Evidence/footage on device; CBP search; subpoena for interview footage | Grand jury for outtakes | Encrypted external drives not transported with device; footage uploaded before returning to U.S. |
 | Freelancer | All of the above + personal device used for everything | No institutional legal support | Account-device separation; personal and source devices never the same |
 | News organization security team | Organizational email in PRISM pipeline; newsroom network intrusion | Staff device security gaps | Mandate SecureDrop for document receipt; newsroom Signal policy; Tor for all source comms |
+
+### 2.1 Clearview AI — Live Facial Recognition Threat for Field Reporters (Q2 2026)
+
+**New threat as of June 2026**: Clearview AI's facial recognition database — now containing 50+ billion images scraped from the internet — is confirmed operational under active contracts with ICE Homeland Security Investigations ($9.2M), CBP ($225,000, signed February 11, 2026), FBI, and U.S. Marshals. Unlike the DHS HART database (which requires prior government booking or biometric enrollment), Clearview draws from publicly available internet photos. This means a journalist's published byline photo, press conference appearance, conference badge photo, or any public social media image may already be in Clearview's index.
+
+**Why this is qualitatively different for journalists**: Most journalists covering enforcement operations or protests do not expect to be personally identified through government databases. The standard risk model assumed identification required prior arrest or government enrollment. Clearview breaks this assumption. Any journalist with a public digital presence — which is nearly all journalists — has images in Clearview's likely search index.
+
+**The protest and field reporting scenario**: ICE and FBI agents are confirmed using Clearview AI at enforcement operations and protest events (February 2026 Biometric Update reporting, confirmed by current and former DHS officials). A photojournalist or video journalist working enforcement coverage or a protest can be identified through Clearview from partial face images, combined with photo context available from their public internet presence, even while wearing a press credential that does not visibly state their name.
+
+**Countermeasures for field reporters at enforcement events**:
+- Use a different appearance from your published byline photo where feasible — especially hairstyle and glasses/no-glasses, which are low-cost changes that meaningfully affect facial recognition matching
+- Cover distinctive facial features (visible tattoos, distinctive piercings) that appear in your indexed public photos
+- Do not wear press lanyard or credential in enforcement-zone surveillance camera range if you are working a story where your personal identification creates source exposure risk
+- Cover the lower half of your face; Clearview's ear and side-profile training data is less extensive than full-face frontal image data
+- Note that these measures reduce new-match confidence but do not guarantee non-identification from prior indexed images — consider them risk reduction, not elimination
+
+**What cannot be undone**: Images already scraped and indexed by Clearview cannot be removed from its database through any available opt-out mechanism. Future exposure reduction is the only available control: review public social media privacy settings so new photos are not publicly accessible; communicate removal requests to publication photo editors where byline photos can be updated or made less prominent.
+
+**Source**: Biometric Update (February 2026); CBP contract records; ICE HSI contract records; Section 1.3c of THREAT_ENVIRONMENT_Q2_2026_UPDATE.md.
 
 ---
 
@@ -135,7 +194,21 @@ Every journalist crossing an international border should cross with a travel dev
 3. **Document everything.** Note the officer's name and badge number, the time and location, the specific demands made, and whether your device was physically removed from your presence. Report the incident to CPJ (cpj.org/emergency) and your newsroom's legal counsel immediately after clearing customs.
 4. **If your device is seized**: Contact your newsroom's legal counsel immediately. If you are a freelancer without legal support, contact the Reporters Committee for Freedom of the Press (rcfp.org) or CPJ. Device seizures for forensic analysis require additional legal justification and create a paper trail that your counsel can challenge.
 
-### 3.3 Financial Operational Security at Borders
+### 3.3 Cellebrite Safeguard Mode — Why Power Off Is Now More Critical Than a Locked Screen
+
+**Q2 2026 update — new forensic threat**: Cellebrite's Spring 2026 release (April 2026) introduced a capability called "Safeguard Mode" that materially changes the threat profile for journalist devices at border crossings and law enforcement encounters.
+
+**What Safeguard Mode does**: Prior to Safeguard Mode, an iOS device in AFU (After First Unlock) state would automatically reboot after 72 hours of inactivity, returning the device to BFU (Before First Unlock) state — a much more protected state where Cellebrite's extraction capability is substantially limited. Safeguard Mode "mitigates the impact of iOS inactivity reboot timers by preserving access to a device" after it has been physically secured. If an agent gains AFU access to a device (i.e., the device is unlocked or recently unlocked when seized), they can place it in Safeguard Mode and extract it later without losing AFU access to the 72-hour reboot.
+
+**What this means for journalists**: A device that has been unlocked — including one that is merely screen-locked rather than powered off — is in AFU state. A screen lock alone is no longer sufficient protection if a device is seized by law enforcement with access to Cellebrite. An agent can preserve AFU access indefinitely using Safeguard Mode and conduct full extraction later.
+
+**The countermeasure that remains effective**: Power off the device completely before any anticipated seizure event. A fully powered-off device enters BFU (Before First Unlock) state. Cellebrite cannot establish the AFU access that Safeguard Mode requires against a powered-off device. Cellebrite's Spring 2026 release confirmed AFU extraction capability for iOS 26 and iPhone 17 series — but BFU extraction capability for current iOS versions remains substantially more limited.
+
+**Additional iOS 26 coverage confirmed**: Cellebrite's Spring 2026 release achieves full AFU-state extraction for iPhones running iOS 26.4 and earlier, including iPhone 17 series, with keychain export of stored credentials, tokens, and application artifacts.
+
+**Practical rule**: Before any international border crossing, protest coverage, or any encounter where device seizure is possible — power off the device completely, not just lock the screen. The existing clean-device protocol (Section 3.1) addresses what should be on the device; this section addresses the physical state of the device at the moment of any seizure risk.
+
+### 3.4 Financial Operational Security at Borders
 
 Credit card and payment records document travel in detail that can be used to establish source contact patterns. If a journalist travels to meet a source, payment records create evidence of the trip independent of the journalist's testimony. For travel related to sensitive investigations:
 - Pay for travel with cash or a prepaid card where feasible
@@ -175,6 +248,8 @@ Signal is the standard for journalist-source voice and messaging. Its server-sid
 4. **Signal note-sync must be disabled.** Signal has a feature that syncs notes to Signal servers. For journalists, this is a potential collection point. Disable it in Signal Settings > Privacy > Linked Devices.
 
 ### 4.3 Foreign Source Communications — Section 702 Mitigation
+
+**FISA status correction (June 6, 2026)**: Section 702 expires June 12, 2026. The Senate failed to advance reauthorization on June 5 (47-52 vote). Even if Section 702 lapses, the FISC issued an order extending existing certifications through 2027 — NSA collection of foreign-targeted communications continues under FISC authority regardless of congressional outcome. No warrant protection for journalist communications has been enacted. The practical guidance below is unchanged regardless of the June 12 outcome: Signal users face zero surveillance change because Signal has no stored content for the FBI to query.
 
 For sources outside the United States:
 - Signal over a mobile data connection, not WiFi (WiFi IP addresses can be legally associated with a location via ISP records; mobile data uses carrier IP addresses that are more difficult to associate with specific individuals)
@@ -315,10 +390,11 @@ All Level 2 measures, plus: First Amendment media law attorney retained proactiv
 
 ---
 
-**Version**: 1.0
+**Version**: 1.1 (Q2 2026 threat integration)
 **Created**: May 7, 2026
+**Last updated**: June 6, 2026
 **Next scheduled review**: July 26, 2026 (quarterly corpus review)
-**Cross-references**: `opsec-playbook.md`, `implementation-guide.md`, `threat-model.md`, `phase-2-activist-organizing-security-playbook.md` (Sections 4–5 directly applicable for field reporting at protests), `phase-2-whistleblowing-playbook.md` (source-recipient perspective)
+**Cross-references**: `opsec-playbook.md`, `implementation-guide.md`, `threat-model.md`, `phase-2-activist-organizing-security-playbook.md` (Sections 4–5 directly applicable for field reporting at protests), `phase-2-whistleblowing-playbook.md` (source-recipient perspective), `THREAT_ENVIRONMENT_Q2_2026_UPDATE.md` (source for v1.1 patches)
 
 ---
 
@@ -342,3 +418,19 @@ All Level 2 measures, plus: First Amendment media law attorney retained proactiv
 - [SPJ — The PRESS Act: What it is and why it matters](https://www.spj.org/the-press-act-what-it-is-and-why-its-important-to-get-it-passed/)
 - [ACLU — Jailing journalists: why we need a federal reporter's shield bill](https://www.aclu.org/news/free-speech/jailing-journalists-why-we-need-federal-reporters-shield-bill)
 - [PrivacyOn — Privacy Guide for Journalists 2026](https://www.privacyon.com/blog/privacy-guide-for-journalists)
+
+### Q2 2026 Patch Sources (v1.1 additions)
+
+- [RCFP — DOJ rescinds Biden-era protections for press (special analysis)](https://www.rcfp.org/doj-rescinds-news-media-guidelines-analysis/)
+- [Freedom of the Press Foundation — Trump DOJ repeals protections for journalist-source confidentiality](https://freedom.press/issues/trump-doj-repeals-protections-for-journalist-source-confidentiality/)
+- [Washington Post — Justice Dept. subpoenas Wall Street Journal, May 12, 2026](https://www.washingtonpost.com/national-security/2026/05/12/justice-dept-subpoenas-wall-street-journal-escalating-investigations-into-media-leaks/)
+- [CPJ — CPJ condemns Trump's order for DOJ to subpoena journalists](https://cpj.org/2026/05/cpj-condemns-trumps-order-for-doj-to-subpoena-journalists/)
+- [The Hill — DOJ subpoenas Wall Street Journal over Iran war leaks](https://thehill.com/homenews/administration/5873861-wall-street-journal-subpoena/)
+- [Roll Call — FISA reauthorization stalls in early-morning Senate vote, June 5, 2026](https://rollcall.com/2026/06/05/fisa-reauthorization-stalls-in-early-morning-senate-vote/)
+- [CBS News — Senate fails to extend FISA as deadline nears](https://www.cbsnews.com/news/senate-fisa-vote-extension/)
+- [Congress.gov — S.4082 Government Surveillance Reform Act of 2026](https://www.congress.gov/bill/119th-congress/senate-bill/4082)
+- [Cellebrite — Spring 2026 Release: Digital Forensics Updates](https://cellebrite.com/en/products/launches-releases/spring-release-2026/)
+- [Forensic Focus — Inside the Cellebrite Spring 2026 Release](https://www.forensicfocus.com/webinars/inside-the-cellebrite-spring-2026-release/)
+- [Biometric Update — ICE, FBI expand facial recognition use to protest investigations, February 2026](https://www.biometricupdate.com/202602/ice-fbi-expand-facial-recognition-use-to-protest-investigations)
+- [Biometric Update — ICE expands field biometric identification with $25M iris recognition contract](https://www.biometricupdate.com/202605/ice-expands-field-biometric-identification-with-25m-iris-recognition-contract)
+- [Immigration Policy Tracking Project — ICE contracts with Clearview AI](https://immpolicytracking.org/policies/reported-ice-contracts-with-clearview-ai-for-facial-recognition-technology/)
