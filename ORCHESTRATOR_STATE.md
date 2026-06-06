@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-06T08:56:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-06T09:49:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 12.9% (1,151,877 tokens) | All-models 8.7% | Reset in 63h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 12.9% (1,151,877 tokens) | All-models 8.8% | Reset in 62h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -45,7 +45,7 @@
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
-**Focus**: ✅ **[PHASE 5.1 PUBLICATION JUNE 9 — WAVE 2 AUTHOR RECRUITMENT JUNE 14-15 — WAVE 2 DEPLOYMENT JUNE 15-20]** — Phase 5.1 PRODUCTION-READY (45K+ words, 170+ citations); Nextcloud+Matrix platform deployed June 5; Wave 1 author recruitment logistics complete (50+ candidates, 4 email templates, tier-stratified). **Wave 2 MATCHING INFRASTRUCTURE COMPLETE (Session 2926, June 6)**: `WAVE_2_AUTHOR_MATCHING_ALGORITHM.md` (5-dimension scoring + worked examples), `WAVE_2_AUTHOR_PROFILE_CARDS.md` (tem … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 5.1 PUBLICATION JUNE 9 — WAVE 2 AUTHOR RECRUITMENT JUNE 14-15 — WAVE 2 DEPLOYMENT JUNE 15-20]** — Phase 5.1 production-ready (45K+ words, 170+ citations); Nextcloud+Matrix platform deployed June 5; Wave 2 matching infrastructure complete (`WAVE_2_AUTHOR_MATCHING_ALGORITHM.md`, `WAVE_2_AUTHOR_PROFILE_CARDS.md`, `WAVE_2_RECRUITMENT_COMMUNICATION_TEMPLATES.md`); matching session execution 90 min. Execution timeline: June 9 Phase 5.1 publication → June 14-15 author matching →  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -94,8 +94,6 @@
 - ⏳ 1.7 iPhone passcode over Face ID — not started (5 min, do anytime)
 **What I need**: Restart Windows machine, type VeraCrypt pre-boot password when prompted, let Windows boot normally, then click Encrypt in VeraCrypt to start background encryption. Then resume Phase 1 walkthrough from step 1.4.
 
-## State Drift Warnings
-⚠️ STALE FOCUS: systems-resilience — focus references Session 2926 (18 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup) ← 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
 • stockbot — Alpaca "insufficient subscription" prevents live trading (critical blocker) ← 2026-06-02 22:55 UTC (Session 2630 — orchestrator autonomous diagnosis & fix)
