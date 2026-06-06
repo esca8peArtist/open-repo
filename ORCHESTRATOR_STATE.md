@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-06T15:18:52Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-06T17:10:41Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 12.9% (1,151,877 tokens) | All-models 9.2% | Reset in 57h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 12.9% (1,151,877 tokens) | All-models 9.4% | Reset in 55h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,15 +24,15 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (5/7 Core Domains Complete: 51, 48, 59 + 49-50 Framework + 54 Preliminary)** (Sessions 502-524, Session 907, Session 1043, Session 2505, Session 2839) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: ✅ **[PHASE 2 EXECUTION READY + PHASE 3 DOMAIN H RESEARCH COMPLETE (SESSION 2950, JUNE 6 15:30 UTC — 9,898w, 75 citations)]** — **PHASE 2 STATUS**: All 7 domains production-ready (51, 48, 59 complete; 49-50 framework + 54 preliminary ready). Wave 1 user execution **June 10 14:00 UTC** (Campaign Legal Center + Issue One, 90 min) → Wave 2 June 12-13 14:00 UTC (Common Cause CA + LWV CA + Clean Money Action Fund) → Day 7 checkpoint June 16-18 → Phase 2 batch sequencing decision per Path B … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 2 EXECUTION READY + PHASE 3 RESEARCH INFRASTRUCTURE PRODUCTION-READY (SESSION 2950, JUNE 6 17:30 UTC)]** — **PHASE 2 STATUS**: All 7 domains production-ready (51, 48, 59 complete; 49-50 framework + 54 preliminary ready). Wave 1 user execution **June 10 14:00 UTC** (Campaign Legal Center + Issue One, 90 min) → Wave 2 June 12-13 14:00 UTC (Common Cause CA + LWV CA + Clean Money Action Fund) → Day 7 checkpoint June 16-18 → Phase 2 batch sequencing decision per Path B. **PHASE 3 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
-**Focus**: **PHASE 1 IN PROGRESS** — Step 1.3 VeraCrypt restart pending. Steps 1.4–1.7 (Ente Auth, Bitwarden, data broker opt-outs, 1.5–2 hrs) ready post-restart. **PHASE 2 THREAT ENVIRONMENT UPDATE COMPLETE (SESSION 2907, JUNE 6)** — `THREAT_ENVIRONMENT_Q2_2026_UPDATE.md` (government surveillance expansion: DOGE/SSA data weaponization, ICE iris scanning nationwide June 1, DHS smart glasses R&D; data broker intelligence: Thomson Reuters CLEAR, Palantir; technical evolution: Cellebrite Safeguard Mod … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **PHASE 1 IN PROGRESS** — Step 1.3 VeraCrypt restart pending (user action required). Steps 1.4–1.7 (Ente Auth, Bitwarden, data broker opt-outs, 1.5–2 hrs) ready post-restart. **PHASE 2 STATUS (SESSION 2951, JUNE 6)**: ✅ **JOURNALIST PLAYBOOK V1.1 COMPLETE** (all 5 critical patches integrated as of June 6: DOJ guideline rescission, FISA 702 June 5 failure, Clearview AI threat, Cellebrite Safeguard Mode, FISA context clarification). **Immigration + Activist Playbooks (v1.1) NEXT PRIORITY** … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[PHASE 3 BACKTESTING + ITEM 62 VALIDATION COMPLETE (SESSION 2949, JUNE 6 14:45 UTC) — JUNE 7 USER DECISION READY]** — **Infrastructure validated**: Credential fix verified (zero errors June 6 13:41 UTC), thermal excellent (49.031°C), sessions healthy, persistence working. **Item 62 post-market analysis COMPLETE**: `JUNE_5_POSTMARKET_ANALYSIS.md` — Infrastructure validation ✅ EXCELLENT, account equity +$22k (suggests successful June 5 trading), preliminary verdict ✅ **GO WITH CAU … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 3 INFRASTRUCTURE VERIFIED READY + ITEM 62 ROOT CAUSE COMPLETE (SESSION 2954)]** — **ROOT CAUSE FOUND**: June 5 zero trades caused by **container offline during entire market hours** (13:30–20:00 UTC), not model failure. **Session 2953 Fixes Verified**: (1) ✅ Container restart policy = `unless-stopped` (confirmed on Jetson), (2) ✅ DNS resolution to paper-api.alpaca.markets = 35.194.67.18 (confirmed from container). **Item 62 Analysis Complete**: All data sources cross-validat … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**; **Standing task: 18 wild edibles habit photos 18/18 COMPLETE (Session 2505 verified)**
@@ -41,7 +41,7 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
-**Focus**: ✅ **[PHASE 5 A11Y VERIFICATION COMPLETE — DEPLOYMENT RUNBOOK & MONITORING PLAN COMPLETE (SESSION 2907, JUNE 6)]** — Full WCAG 2.1 AA compliance verified (11/11 criteria PASS). All 157 tests passing (OPDS 50/50, Route/API 35/35, A11y automated 72/72, 0 failures). **DEPLOYMENT DOCUMENTATION COMPLETE**: `DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md` (9 sections: deployment schedule 09:00 UTC, environment validation, DB migration verification, 7-step deployment 45 min, health checks, stakeholder com … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 5 ZIMWRITER MERGE-READY (SESSION 2953) — PRE-DEPLOYMENT CHECKLIST PRODUCTION-READY (SESSION 2952)]** — **CRITICAL UPDATE**: ZimWriter feature branch merge conflict audit (Session 2953) found that Session 2952 checklist blockers were **FALSE ALARMS** — both issues (`config_indexing` call + PNG validation tests) are already resolved on feature branch tip. Feature branch is MORE CORRECT than master. All 51 ZIM tests passing. **READY TO MERGE for June 12 deployment**. Deliverable: … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### systems-resilience
 **Status**: Active — **Phase 1 COMPLETE + Phase 2 LAUNCHED + PHASE 3 COMPLETE (May 18, Session 1241)** — All 5 community-scale domains fully researched and documented. Individual-scale COMPLETE: 8 documents (10.3K words, 33 citations). Household-scale COMPLETE: 01-household-coordination-overview.md (7,449 words, 38 citations). **Phase 3 COMPLETE**: All 5 community-scale domains production-ready — `phase-3/01-governance-decision-making.md` (5,800 words, 38 citations), `phase-3/02-food-systems-supply-chain.md` (5,700 words, 36 citations), `phase-3/03-information-infrastructure.md` (5,700 words, 36 citations), `phase-3/04-security-and-defense.md` (5,800 words, 32 citations), `phase-3/05-scaling-pathways-and-thresholds.md` (6,000 words, 28 citations).
@@ -87,11 +87,11 @@
 ---
 
 ## Recently Resolved (last 5)
+• stockbot — Phase 3 Infrastructure Blockers (Container Restart Policy + Alpaca DNS) ← 2026-06-06 17:45 UTC (Session 2953 continuation — autonomous infrastructure fixes)
 • stockbot — June 5 market execution failure: 0 trades executed (root cause identified + fix deployed, awaiting verification) ← 2026-06-06 13:33 UTC (Session 2948 — continuous 20-minute verification monitoring, zero credential errors detected)
 • stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup) ← 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
 • stockbot — Alpaca "insufficient subscription" prevents live trading (critical blocker) ← 2026-06-02 22:55 UTC (Session 2630 — orchestrator autonomous diagnosis & fix)
 • stockbot — Jetson trading execution investigation (database initialization) ← 2026-06-02 22:15 UTC (Session 2627 — orchestrator autonomous initialization)
-• Usage limits — weekly calibration reminder ← 2026-06-02 (Session 2553 — automated verification)
 
 ## Inbox (unprocessed)
 (NONE — all pending items processed from last session)
