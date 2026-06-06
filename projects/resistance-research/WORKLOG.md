@@ -2,6 +2,30 @@
 
 ---
 
+## June 6, 2026 — General Research Agent — Domain G: Press Freedom and Information Ecosystem (Phase 2 Final Domain)
+
+**Task**: Produce production-quality Domain G document — the last remaining Phase 2 domain, required before Phase 3 public launch. Hard deadline June 15, 2026.
+
+**File created**: `projects/resistance-research/domain-g-press-freedom-information-ecosystem.md`
+
+**Scope**: ~7,100 words, 52 citations, 10 sections covering all 8 assigned research zones.
+
+**Key findings**:
+- US ranked 64th on RSF 2026 World Press Freedom Index — historic all-time low, down 47 places since 2002
+- US Press Freedom Tracker documented 170+ journalist assaults in 2025 (nearly double prior year), 32 arrests, 160 attacks by law enforcement
+- DOJ rescinded Biden-era journalist source protections April 25, 2025; FBI executed first-ever journalist home raid January 14, 2026 (Natanson)
+- Nexstar-Tegna $6.2B merger closed March 2026 under FCC 39% cap waiver — combined entity reaches 80% of US households (265 stations)
+- 213 news desert counties as of 2025 (Medill); 50 million Americans lack meaningful local news access; 136 newspaper closures in past year at 2+/week pace
+- FOIA response time now averages 289 days vs 20-day statutory limit; 1,000+ FOIA lawsuits filed Jan-Apr 2026 vs 591 during comparable Biden period
+- PRESS Act (H.R. 7184) passed House unanimously but blocked in Senate by Tom Cotton; no federal shield law exists
+- Nordic model and EU Anti-SLAPP Directive documented as international comparators
+
+**Cross-references verified**: first-amendment-suppression.md, domain-37, domain-25, domain-1, domain-51, domain-56
+
+**Status**: COMPLETE — production-ready for June 15 Phase 2 distribution.
+
+---
+
 ## June 5, 2026 — General Research Agent — Wave 2 Recruitment Contingency Automation (systems-resilience Item 81)
 
 **Task**: Build three production-ready Wave 2 author recruitment contingency files for the June 14 author matching session (June 13 review deadline). Wave 2 launches June 20 if roster meets minimum viable threshold.
