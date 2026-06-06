@@ -36,9 +36,13 @@
 - ⏳ June 9 13:15 UTC — Execute June 9 market-open validation protocol (5-step procedure per JUNE_9_MARKET_OPEN_VALIDATION_PROCEDURE.md)
 - ⏳ June 10 14:00 UTC — resistance-research Wave 1 user execution (Campaign Legal Center + Issue One emails)
 
-**Available Exploration Queue Items** (both can start immediately, 2-3 hrs each):
-1. **open-repo: June 12 Deployment Pre-Flight Verification Checklist** — Addresses HIGH operational blocker (date conflict June 9 vs 12). HIGH priority for resolving user coordination issue.
-2. **resistance-research: Phase 1 Wave 1 Post-Execution Analysis Framework** — For June 17 checkpoint prep. Lower priority (9 days out).
+**Exploration Queue Status After Session**:
+- ✅ **stockbot: June 9 Live Trading Validation Protocol** — COMPLETE (Session 2952, 40 min)
+- ✅ **open-repo: June 12 Deployment Pre-Flight Verification Checklist** — COMPLETE (Session 2952 continuation, 50 min)
+  - **Critical finding**: HIGH blocker date conflict (June 3 docs: 20:00 UTC | June 6 docs: 09:00 UTC)
+  - **User action**: Confirm canonical start time + populate database credentials (DB_HOST, DB_USER, DB_NAME, SQLite path)
+  - 3 documents ready: pre-flight checklist (60 min), risk mitigation (4 failure modes), communication templates (5 ready-to-use)
+- ⏳ **resistance-research: Phase 1 Wave 1 Post-Execution Analysis Framework** — Available (2-3 hrs, June 17 checkpoint prep, lower priority)
 
 ---
 
