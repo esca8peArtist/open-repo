@@ -4,6 +4,106 @@
 
 ---
 
+## ✅ Session 2966 (June 6 20:30-21:25 UTC) — Autonomous Phase 3 Preparation Work
+
+**Status**: ✅ **PHASE 3 FRAMEWORK EXPANSION COMPLETE — RESISTANCE-RESEARCH + SEEDWARDEN PRODUCTION-READY**
+
+**Summary**: All higher-priority projects blocked on user decisions (stockbot Phase 3 decision June 7, resistance-research Wave 1 execution June 9-10, systems-resilience platform choice, open-repo timing clarification, mfg-farm test print, cybersecurity-hardening VeraCrypt restart). Executed parallel autonomous work on two Phase 3 preparation items from Exploration Queue while awaiting user decisions.
+
+### Work Accomplished (2 parallel agents, ~235K tokens)
+
+**1. resistance-research Phase 3 Domains 49-50 Framework Expansion** ✅
+- **Deliverables committed to master**:
+  - `DOMAINS_49_50_EXPANDED_SOURCE_INDEX.md` — 108 sources (Domain 49) + 112 sources (Domain 50), 10 thematic clusters per domain, 15-20 integration points per source
+  - `DOMAINS_49_50_SYNTHESIS_FRAMEWORK.md` — Thematic pillar architecture, cross-domain connections, movement leverage angles
+- **Key findings** (new Phase 3 intelligence):
+  - Marin Audubon v. FAA (Nov 2024 D.C. Circuit): CEQ lacks NEPA rulemaking authority → statutory NEPA amendments are only legally adequate remedy (NOT executive restoration). Domain 49 reform architecture must lead with this.
+  - Pro-equality ballot measures analytically as important as anti-trans measures: 7 pro-equality measures (November 2026) are Romer principle in positive motion. Oregon affirmative bundle (abortion, contraception, IVF, trans healthcare, same-gender marriage) mirrors Missouri Amendment 3's negative bundle structure.
+  - Appalachian intersection is most acute single geography for paired 49-50 distribution: civic health gap + EJ infrastructure loss + LGBTQ+ targeting all converge. Nonprofit Quarterly queer ecological EJ framework should lead.
+  - Eight Phase 2 activation triggers identified (4 for Domain 49, 4 for Domain 50) enabling responsive distribution vs. scheduled-cycle-only approach.
+  - Missouri is single-state convergence point: EJ loss + Amendment 3 anti-trans + trans voter suppression in SAVE Act + EO 14168. Existing abortion-rights coalition already opposing Amendment 3.
+- **Value**: Removes Phase 2 expansion friction; enables instant activation once user approves Domains 49-50 research
+- **Confidence**: 92% (new sources integrated, accessibility verified, synthesis validated)
+- **Tokens**: 167,897
+
+**2. seedwarden Phase 3 Contractor Search Planning** ✅
+- **Deliverables committed to master**:
+  - `PHASE_3_CONTRACTOR_SEARCH_ROADMAP.md` — 9-day search (June 8-17) + 9-day onboarding (June 18-July 1), production schedule aligned to manuscript completion
+  - `PHASE_3_CONTRACTOR_PREBID_MATERIALS.md` — Job description, technical specs, proposal submission form, contract skeleton, Q&A template
+  - `PHASE_3_CONTRACTOR_OUTREACH_SCRIPT.md` — 5 channel-appropriate templates, Day 1/Day 3 follow-ups, pre-vetting questions, 6-signal go/no-go rubric, discovery call guide
+- **Scope**: Photo contractor (botanical flat-lay + lifestyle photographer), independent of writer contractor track (already at v1.1 in PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md)
+- **Design**: All contingency paths explicit with activation triggers (self-shoot, Wikimedia-only Round 1, budget escalation, mid-sprint dropout)
+- **Readiness**: All templates copy-paste ready for June 8 outreach start. No research required before sending Day 1 messages.
+- **Value**: June 17 contractor onboarding fully staged; removes discovery overhead
+- **Confidence**: 93%
+- **Tokens**: 67,414
+
+### Blocking Issues Status (unchanged from Session 2965)
+
+1. **systems-resilience — Platform deployment (CRITICAL, June 8 18:00 UTC deadline)**
+   - Need: User decision on Nextcloud+Matrix vs Discourse + public IP/domain if Discourse
+   - Timeline: 22 hours remaining until June 8 18:00 UTC
+   - Action: Start deployment June 7-8 (4-6 hours)
+
+2. **systems-resilience — PDF regeneration (June 9 morning, 30-45 min)**
+   - Need: Regenerate 6 PDFs using `pandoc`, stage in `/tmp/phase5-pub/`
+   - Timeline: Must complete by 12:30 UTC June 9
+   - Action: Can defer to June 9 morning if needed
+
+3. **open-repo — Deployment start time clarification (June 12 deadline)**
+   - Need: Confirm 09:00 UTC or 20:00 UTC for June 12 deployment
+   - Action: User decision required before June 12
+
+4. **stockbot — Phase 3 GO/CAUTION/NO-GO decision (Due June 7 09:00 UTC)**
+   - Need: User decision on Phase 3 comprehensive backtesting report
+   - Status: Report complete, awaiting decision
+
+5. **seedwarden — Track B user gates (no deadline pressure, June 7-8 preferred)**
+   - Need: User to complete 5 gates (3.5-4.5 hours total)
+   - Status: All infrastructure production-ready, gates pending
+
+6. **cybersecurity-hardening — VeraCrypt restart (manual action)**
+   - Need: User to restart Windows machine and complete pre-boot test
+   - Status: Awaiting user action
+
+7. **mfg-farm — Test print execution (manual action)**
+   - Need: User to run 3D printer test at specified parameters
+   - Status: Awaiting user action
+
+### Items Needing Your Input (PRIORITY ORDER)
+
+1. **[BLOCKING — Due June 8 18:00 UTC]** systems-resilience platform deployment
+   - Choose: Nextcloud+Matrix OR Discourse
+   - If Discourse: provide public IP + domain + SMTP credentials
+   - Start June 7-8 (4-6 hour deployment window)
+
+2. **[DECISION — By June 7 09:00 UTC]** stockbot Phase 3
+   - COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md ready (in projects/stockbot/)
+   - Confirm GO/CAUTION/NO-GO for June 9 market validation
+
+3. **[DECISION — Before June 12]** open-repo deployment start time
+   - Confirm 09:00 UTC or 20:00 UTC for June 12 deployment
+   - Affects communication templates
+
+4. **[ACTION — June 7-8 preferred]** seedwarden Track B gates
+   - 3.5-4.5 hours total for all 5 gates
+   - No technical blockers
+   - Use TRACK_B_EXECUTION_DRY_RUN_SCRIPT.md as companion
+
+### Next Session Suggested Priorities
+
+1. **Resistance-research Wave 1 execution** (June 9-10) — User action, fully staged
+2. **systems-resilience platform deployment** (June 7-8) — User action, fully staged  
+3. **stockbot Phase 3 decision** (June 7 09:00 UTC) — User decision, report complete
+4. **systems-resilience PDF regeneration** (June 9 morning) — Quick task (30-45 min)
+5. **seedwarden Track B gates** (June 7-8 if time permits) — 4 hours, removes margin pressure
+
+**Tokens used this session**: ~235,300 (2 parallel agents)
+
+**Session duration**: ~55 minutes (orientation + 2 agents running in parallel)
+
+---
+
 ## 🔄 Session 2965 (June 6 22:00+ UTC) — Pre-Flight Verifications: 3 Time-Critical Projects
 
 **Status**: ✅ **PRE-FLIGHT VERIFICATIONS COMPLETE — FINDINGS READY FOR USER DECISION**
