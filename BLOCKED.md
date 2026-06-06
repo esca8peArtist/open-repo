@@ -53,6 +53,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### open-repo — Deployment start time conflict (user clarification required)
+**Date blocked**: 2026-06-06
+**Context**: Session 2952 and subsequent deployment pre-flight checklists (Session 2956) have conflicting deployment times. Four newer docs (from Session 2952-2956) specify 09:00 UTC as deployment start time. Two older docs (pre-Session 2952) specify 20:00 UTC. This conflict affects: communication templates, rollback window timing, deployment window precision, and team coordination. Deployment target: June 12, 2026.
+**What I need**: Confirm which deployment start time is correct: 09:00 UTC (business hours) or 20:00 UTC (after-hours). Decision will be used to finalize communication templates and rollback procedures.
+**Verify with**: `grep -r "deployment.*start\|deployment.*time" /home/awank/dev/SuperClaude_Framework/projects/open-repo/docs/ | grep -E "09:00|20:00"` — should show consistent time across all deployment docs
+**Resolution**: [leave blank]
+
+---
+
 ## Resolved Archive
 
 ### stockbot — Phase 3 Infrastructure Blockers (Container Restart Policy + Alpaca DNS)
