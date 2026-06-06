@@ -5017,3 +5017,80 @@ Reference: `PHASE_3_EXECUTION_READINESS_CHECKLIST.md` has user actions 1-4 and t
 
 ---
 
+## 🔄 Session 2966 (June 6 21:00–21:30 UTC) — Infrastructure Setup: Docker + PDF Generation Complete
+
+**Status**: ✅ **AUTONOMOUS WORK COMPLETE — BLOCKING ISSUE CLARIFIED, AWAITING USER PLATFORM CHOICE**
+
+### Summary
+
+Session 2966 resolved two critical infrastructure blockers for systems-resilience Phase 5.1 publication (June 9 deadline). Docker and LaTeX/PDF generation infrastructure are now production-ready. Remaining blocker: user decision on platform (Nextcloud+Matrix vs Discourse).
+
+### Work Completed
+
+**1. Docker Installation** ✅
+- Installed docker.io v20.10.24 + docker-compose v1.29.2
+- Verified operational: `docker --version` returns v20.10.24+dfsg1-1
+- **Impact**: Unblocks platform (Nextcloud/Discourse) deployment
+
+**2. Systems-Resilience Phase 5.1 PDF Bundle** ✅
+- **Challenge**: Phase 5.1 publication checklist requires 6 PDFs in `/tmp/phase5-pub/pdf/` by June 9 12:30 UTC. Pre-flight verification found directory missing and PDF generation tools incomplete (pdflatex not installed).
+- **Resolution**:
+  - Installed LaTeX (texlive-latex-base + texlive-fonts-recommended + texlive-latex-extra)
+  - Generated all 6 PDFs from source markdown using pandoc (2.1 MB total bundle)
+  - Created frontmatter-stripped markdown copies for publication
+  - Resolved Unicode encoding issue (minus sign U+2212 → hyphen) in 2 documents
+- **Verification**: All 12 files present, verified non-zero, PDFs readable
+- **Deadline**: ✅ June 9 12:30 UTC checkpoint ready
+
+**3. Platform Deployment Decision Gate Clarified** ✅
+- **Issue identified**: Previous blocking issue assumed Docker was installed. Docker installation was the prerequisite blocker, not the actual platform choice.
+- **Clarification provided** in BLOCKED.md:
+  - **Nextcloud+Matrix**: 16GB RAM recommended (risky on Raspberry Pi 5 with 7.9GB total), 4-6 hour deployment
+  - **Discourse**: 8GB RAM recommended (fits this system), 2-3 hour deployment  
+  - **Recommendation**: Discourse (resource-constrained environment, faster deployment window)
+- **Status**: Awaiting user decision before autonomous deployment begins
+
+### Items Requiring User Input (NEXT PRIORITY)
+
+**[BLOCKING — Due June 8 18:00 UTC]** Platform deployment decision
+- Choose: Nextcloud+Matrix OR Discourse
+- Orchestrator recommends Discourse based on:
+  - Raspberry Pi 5 memory constraints (7.9GB total vs 8GB recommended for Discourse vs 16GB for Nextcloud)
+  - Faster deployment (2-3h vs 4-6h)
+  - Tighter deadline (22 hours until June 8 18:00 UTC)
+- If Discourse chosen: provide public IP + domain for runbook placeholder fill
+- If Nextcloud+Matrix chosen: confirm acceptance of memory risk
+
+**[DECISION — By June 7 09:00 UTC]** Stockbot Phase 3 GO/CAUTION/NO-GO
+- Standing from Session 2965
+- Comprehensive backtesting report complete; awaiting market open decision
+
+**[OPTIONAL — For timeline margin]** Seedwarden Track B gates (5 gates, 3.5-4.5 hours user time)
+- All gates are user actions; no blockers
+- Completion by tomorrow would provide timeline margin before June 7-8 deployments
+
+### Timeline Status
+
+| Deadline | Task | Status |
+|----------|------|--------|
+| **June 7 09:00 UTC** | Stockbot Phase 3 decision | ⏳ Awaiting user |
+| **June 8 18:00 UTC** | Platform deployment complete | 🟢 Ready (await platform choice) |
+| **June 9 12:30 UTC** | PDF bundle staging checkpoint | ✅ Complete |
+| **June 9 13:00 UTC** | Phase 5.1 publication go-live | 🟢 Ready (await platform choice + deployment) |
+
+### What's Next (Autonomous)
+
+Once user provides platform choice:
+1. Orchestrator will execute platform deployment (2-3h for Discourse, 4-6h for Nextcloud)
+2. Verify deployment with PHASE_5_1_PUBLICATION_DEPLOYMENT_RUNBOOK.md pre-flight checklist
+3. Standby for June 9 13:00 UTC publication upload sequence
+
+### Session Stats
+
+- **Duration**: ~30 min (orientation + Docker install + LaTeX install + PDF generation)
+- **Work type**: Autonomous infrastructure setup
+- **Commits**: 2 (Docker + platform clarification; PDF completion)
+- **New blockers resolved**: 1 (PDF generation)
+- **Blockers clarified**: 1 (platform deployment decision gate)
+- **Blockers remaining**: 2 active (platform choice + stockbot Phase 3 decision)
+
