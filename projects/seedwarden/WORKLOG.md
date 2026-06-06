@@ -4,6 +4,58 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 94 — Phase 3 Production Sprint Contractor & Risk Mitigation — June 6, 2026 (session 2926 verification)
+
+**Task**: Produce contractor sourcing strategy, decision framework, and risk register for June 22 Phase 3 launch. Contractor search deadline June 17.
+
+**Session scope**: Full read of all three deliverable files (sourcing strategy, decision tree, risk register) plus PHASE_3_SOLO_FALLBACK_ARCHITECTURE.md and prior WORKLOG entries. Cross-checked against Item 94 success criteria.
+
+**Finding**: All three deliverables were built in the Item 94 session (June 5, 2026) and verified in the June 6 verification session. No gaps identified this session. Files are production-ready and execution begins today.
+
+**Deliverable status (all files confirmed present and complete)**:
+
+1. `PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md` (v1.1, 401 lines)
+   - 6 search channels with search procedures and expected response rates (AHG 15–25%, IHA 10–20%, Chestnut School via referral, Herbal Academy 10–15% instructor-level, Upwork/Toptal via screening questions)
+   - 100-point vetting rubric: 6 categories, 5 disqualifying conditions, threshold decisions at 75/60/below-60
+   - 45-minute interview checklist: 6 mandatory questions covering capacity (Q1), contraindication rigor (Q2), deadline commitment (Q3), scope expansion pricing (Q4), FTC compliance (Q5), IP terms (Q6)
+   - Rate benchmarking: $1,000–$1,350 flat-rate target, $1,500 ceiling, platform commission analysis (Upwork 5%, Toptal 10–15%), negotiation framing
+   - Production-ready outreach templates: AHG/Chestnut/Herbal Academy direct email + Upwork job posting with CITES and FTC screening questions embedded
+   - Appendix A: 4 named leads — Adrian White (iowa@iowaherbalist.com + Upwork), Victoria W. (Upwork direct), Herbal Content Cottage (referral path), Kolabtree expert pool (3 named candidates)
+   - Contractor tracking log template
+
+2. `PHASE_3_CONTRACTOR_DECISION_TREE.md` (v1.0, 403 lines)
+   - Primary decision tree: deterministic nodes at June 8 (first response check), June 10 (Tier A quality check), June 12 (contract target), June 14 (final candidate window), June 15 (solo fallback threshold), June 17 (hard deadline)
+   - Over-budget protocol: 3 steps (fourth-bundle framing → scope reduction → walk away at $2,001+)
+   - Solo fallback schedule: 9-week table June 22 – Sept 24, revenue impact ~$25–75 per delayed bundle
+   - Backup roster triggers: 4 scenarios (0 Tier A by June 10, 1 response over ceiling, Tier B only, mid-sprint dropout)
+   - Enhanced Oversight Protocol for Tier B contractors
+   - Mid-sprint dropout procedure: 3-day silence detection, recovery cascades, payment forfeiture logic
+   - Milestone payment schedule + rush premium logic + international payment guidance
+   - FAQ: 4 edge cases (over-ceiling June 14, late June 16 candidate, July 1 unsolicited, missing sidebar milestone)
+
+3. `PHASE_3_PRODUCTION_SPRINT_RISK_REGISTER.md` (v1.0, 460 lines)
+   - All 8 Item 94-specified risks: R1 Contractor Dropout (P=15%, CRITICAL), R2 Image Sourcing Delay (P=20%, HIGH), R3 Women's Health Scope Creep (P=10%, CRITICAL), R4 Contraindication Research Gaps (P=10%, HIGH), R5 Payment Delays (P=5%, MEDIUM), R6 Scope Expansion (P=20%, MEDIUM), R7 Deadline Compression Week 2–3 (P=15%, HIGH), R8 Solo Fallback Decision Cascade (P=20%, HIGH)
+   - Per-risk: trigger thresholds, day-level detection procedures, escalation criteria, mitigation actions (pre-sprint + in-sprint), ownership
+   - Register review schedule: 8 checkpoint dates June 21 through July 13
+
+**Success criteria verification (all met)**:
+- Sourcing strategy covers 4+ channels with search queries and vetting rubric: YES (6 channels)
+- Interview checklist enables 30–45 min conversations: YES (45-min structured checklist)
+- Backup roster 3-4 alternates identified: YES (4 named leads in Appendix A)
+- Go/no-go decision framework operational by June 17 with explicit thresholds: YES
+- Risk register: 8 risks, quantified P/I, detection procedures: YES
+- Solo fallback architecture: YES (9-week timeline in decision tree + PHASE_3_SOLO_FALLBACK_ARCHITECTURE.md companion)
+- All deliverables in projects/seedwarden/: YES
+
+**June 6 user actions (execution-only — templates ready)**:
+- Post Upwork job listing (template in Section 5 of PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md)
+- Contact IHA for referrals (iherb.org/members — framework confirmed in Channel 3)
+- Contact Toptal intake if Channels 1–4 produced zero leads by today (toptal.com)
+
+**Status**: Production-ready. No file changes required this session. Contractor search execution is in the user's hands.
+
+---
+
 ## Item 97 — Phase 3 Production Sprint Risk Mitigation & Solo Fallback Architecture — June 5, 2026
 
 **Task**: Build comprehensive risk mitigation playbook and solo fallback contingency for Phase 3 production sprint. Three production-ready documents covering the contractor decision lifecycle, 9-week solo fallback timeline, and go/no-go escalation framework.
