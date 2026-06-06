@@ -8,725 +8,262 @@ created: 2026-06-06
 target_deployment_date: 2026-06-12 (09:00 UTC)
 ---
 
-# Incident Communication Templates
+# Incident Communication Templates — June 12, 2026
 
-**Purpose**: Pre-written communication templates for deployment success, partial success, and rollback scenarios  
-**Audience**: Stakeholders, users, technical teams, management  
-**Usage**: Copy template, fill in specific details, send during incident  
-**Timing**: Send as soon as situation is determined (within 5 minutes of decision)
+**Purpose**: Ready-to-send communication templates for all deployment outcomes. Fill in bracketed fields with actual values at send time. Do not delay communication to polish the message — send the most accurate version available at the trigger time.
 
----
+**Channels**: Slack #deployments (primary), Discord (if applicable), email to stakeholders.
 
-## When to Send Which Template
-
-| Scenario | Template | Send Time | Channels |
-|----------|----------|-----------|----------|
-| Deployment successful, all checks pass | **Success Template** | 09:50 UTC (after health checks) | Slack + Email |
-| Deployment OK, minor alert fires but auto-resolves | **Partial Success Template** | When issue resolves + 5 min | Slack + Email |
-| Critical incident, need to rollback | **Rollback Template** | Immediately when decision made | Slack + Email + Phone |
-| Post-incident summary (24h later) | **Post-Incident Summary** | June 13, 09:00 UTC | Email only |
+**Timing rules**:
+- CRITICAL alert fires → notify immediately (do not wait for root cause)
+- WARN alert fires → notify after 5-minute mitigation attempt, include outcome
+- Rollback decision made → notify immediately on decision, before execution
+- Deployment completes → notify within 5 minutes of all health checks passing
 
 ---
 
-## Template 1: Deployment Success
+## Template 1: Deployment Start Notification
 
-**Scenario**: Deployment completed successfully, all verification checks passed, no incidents, system stable
-
-**Send Time**: Approximately 09:50 UTC (after all health checks complete)  
-**Channels**: Slack #deployments channel + stakeholder email list  
-**Recipients**: 
-- @here or @channel (Slack)
-- ops@company.com, stakeholders@company.com
-
----
-
-### Slack Message
+**When to send**: 09:00 UTC, when deployment steps begin.
+**Channel**: Slack #deployments
 
 ```
-:rocket: DEPLOYMENT SUCCESS: Open-Repo Phase 5 Final
+DEPLOYMENT IN PROGRESS — Open-Repo Phase 5
 
-Deployment completed successfully at 09:47 UTC on June 12, 2026.
+Deployment started at 09:00 UTC.
 
-:white_check_mark: All Systems Nominal
-├─ Health endpoint: 200 OK (:green_heart:)
-├─ OPDS catalog: Operational (:books:)
-├─ Swagger/ReDoc: Available (:page_facing_up:)
-├─ Database: Connected and responsive (:database:)
-└─ Error rate: 0.1% (well below threshold)
+Expected completion: 09:45 UTC (45 minutes)
+Service status: Temporarily offline during deployment (Steps 2–6)
 
-:bar_chart: Deployment Metrics
-├─ Total deployment time: 47 minutes (target: 45 min)
-├─ Service downtime: 25 minutes (expected)
-├─ No incidents detected (:tada:)
-├─ Zero data loss (:lock:)
-└─ System resources: Normal (CPU 15%, Memory 42%, Disk 18%)
+Active monitoring begins at 09:45 UTC. Full status update to follow by 10:00 UTC.
 
-:monitor: Active Monitoring Status
-Ongoing until 10:45 UTC (60 minutes). Current status: HEALTHY
-
-Questions or issues? Reach out to #deployments channel.
-
-Thank you for your patience during the maintenance window. Phase 5 deployment is now live. :confetti_ball:
+Avoid infrastructure changes during this window.
 ```
 
 ---
 
-### Email Message
+## Template 2: Full Deployment Success
+
+**When to send**: Within 5 minutes of all health check steps passing (expected ~09:50 UTC).
+**Channel**: Slack #deployments
+**Trigger condition**: /health, /docs, /redoc, OPDS root, OPDS entries all return HTTP 200 with no CRITICAL alerts.
 
 ```
-Subject: [DEPLOYMENT COMPLETE] Open-Repo Phase 5 — June 12, 2026 09:47 UTC
+DEPLOYMENT COMPLETE — Open-Repo Phase 5
 
-To: Stakeholders
+Deployment completed at [ACTUAL_TIME] UTC.
 
----
+Health check results:
+  /health:                  HTTP 200, [X]ms
+  /docs (Swagger UI):       HTTP 200, [X]ms
+  /redoc:                   HTTP 200, [X]ms
+  /api/v2/opds/root.xml:    HTTP 200, [X]ms
+  /api/v2/opds/entries:     HTTP 200, [X]ms
 
-DEPLOYMENT SUCCESSFUL
+No CRITICAL alerts. No data loss. No rollback.
 
-Deployment Date: June 12, 2026
-Deployment Time: 09:00–09:47 UTC
-Status: COMPLETE ✅
+Service is fully operational. Active monitoring continues until [10:45] UTC.
+```
 
-WHAT HAPPENED
-The Open-Repo Phase 5 A11y (accessibility) enhancement deployment has been completed successfully. All systems are operational and verified through comprehensive health checks.
-
-DEPLOYMENT DETAILS
-• Deployment duration: 47 minutes
-• Service downtime: 25 minutes (within maintenance window)
-• All health checks: PASSED
-• Data integrity: VERIFIED
-• System stability: CONFIRMED
-
-VERIFICATION RESULTS
-✅ Health endpoint responding
-✅ OPDS catalog functioning
-✅ Swagger UI and ReDoc available
-✅ Database connectivity confirmed
-✅ Application logs: No critical errors
-✅ System resources: Within normal ranges
-
-ACCESSIBILITY IMPROVEMENTS
-This deployment includes Phase 5 A11y enhancements:
-• WCAG 2.1 AA compliance improvements
-• Enhanced keyboard navigation
-• Improved screen reader support
-• Better color contrast for visibility
-• Form labeling improvements
-
-MONITORING
-The system is under active monitoring until 10:45 UTC (60 minutes post-deployment). Passive monitoring will continue for 24 hours.
-
-IMPACT
-✓ No user data loss
-✓ No service interruption after deployment window
-✓ All features fully operational
-✓ Performance: baseline, no degradation observed
-
-NEXT STEPS
-1. Service remains in active monitoring until 10:45 UTC
-2. Passive monitoring continues for 24 hours
-3. Standard operational procedures resume after 24-hour verification period
-
-QUESTIONS?
-For technical details or questions, reach out to the engineering team:
-- Slack: #deployments
-- Email: ops@company.com
-
-Thank you for your patience during the maintenance window.
+**Customisation notes**: Replace [ACTUAL_TIME] with the clock time when all five health checks passed. Replace [X]ms with the actual response times from your curl output. If response times are elevated (>500ms) but still below CRITICAL threshold, note this as: "(elevated, monitoring)".
 
 ---
-Deployment Completed Successfully
-Open-Repo Engineering Team
-June 12, 2026
+
+## Template 3: Partial Success — Elevated Response Times
+
+**When to send**: When deployment completes but one or more endpoints show WARN-level response times (500–2000ms) without returning errors.
+**Channel**: Slack #deployments
+**Trigger condition**: All endpoints HTTP 200, but response times above OK threshold. No data loss, no 5XX errors.
+
+```
+DEPLOYMENT COMPLETE (PARTIAL SUCCESS) — Open-Repo Phase 5
+
+Deployment completed at [ACTUAL_TIME] UTC. Service is running.
+
+Health check results:
+  /health:                  HTTP 200, [X]ms — [OK / ELEVATED]
+  /docs (Swagger UI):       HTTP 200, [X]ms — [OK / ELEVATED]
+  /redoc:                   HTTP 200, [X]ms — [OK / ELEVATED]
+  /api/v2/opds/root.xml:    HTTP 200, [X]ms — ELEVATED ([X]ms, threshold 1000ms)
+  /api/v2/opds/entries:     HTTP 200, [X]ms — ELEVATED
+
+No data loss. No rollback. All endpoints responding.
+
+Issue: OPDS endpoint response times are elevated above normal thresholds.
+Likely cause: [database query latency / initial cache warming / high CPU post-startup]
+Action: Active monitoring escalated. Re-checking every 1 minute for next 15 minutes.
+
+If response times do not normalise below threshold by [TIME+15min] UTC, rollback decision will be made.
+
+Next update by: [TIME+20min] UTC
 ```
 
 ---
 
-## Template 2: Partial Success with Auto-Resolved Alert
+## Template 4: WARN Alert — Active Investigation
 
-**Scenario**: Deployment completed, minor alert triggered (e.g., brief response time spike), but auto-resolved within monitoring window, all endpoints remain operational
-
-**Send Time**: When alert fully resolves + 2–3 minutes (e.g., 10:15 UTC)  
-**Channels**: Slack #deployments + optional email notification  
-**Recipients**: 
-- @here or @channel (Slack)
-- ops@company.com (email), stakeholders@company.com (optional)
-
----
-
-### Slack Message
+**When to send**: Immediately when a WARN-level threshold is breached and investigation begins.
+**Channel**: Slack #deployments
+**Trigger condition**: Any single WARN threshold from POST_DEPLOYMENT_MONITORING_PLAN.md Section 2 (e.g., error rate 1–5%, response time 500–2000ms, CPU idle 20–50%).
 
 ```
-:yellow_circle: MINOR ALERT RESOLVED — Open-Repo Deployment
+DEPLOYMENT ALERT — Open-Repo Phase 5
 
-A minor alert was detected during post-deployment monitoring and has been automatically resolved.
+Alert detected at [TIME] UTC.
 
-:timer: Alert Timeline
-├─ Detected: 10:08 UTC
-├─ Type: Response time threshold (temporarily exceeded)
-├─ Duration: 4 minutes
-├─ Resolved: 10:12 UTC (auto-recovered)
-└─ Root cause: Brief database query spike (expected during cache warm-up)
+Alert type:    [e.g., High response time / Elevated error rate / Low memory]
+Current value: [e.g., OPDS response time: 1800ms]
+Threshold:     [e.g., WARN threshold: 1000ms, CRITICAL threshold: 5000ms]
 
-:white_check_mark: Current Status
-✅ Health: OK (200)
-✅ OPDS: OK (200)
-✅ Response time: Back to baseline (<200ms)
-✅ Error rate: <1%
-✅ No service interruption
+Service status: Running. No rollback initiated.
 
-:bar_chart: What Happened
-During the initial post-deployment period, the application executed necessary cache warm-up queries, causing a brief spike in response time (max: 2.8s, threshold: 5s). This is normal and expected after deployment. The system automatically recovered as caches were populated.
+Investigation in progress. Increased monitoring frequency to 1-minute checks.
 
-:monitor: Monitoring Status
-Active monitoring continues. No further issues detected.
-
-Next health check: 10:20 UTC
-
-Thank you for your patience. System is fully operational. :green_heart:
+Next update: [TIME+5min] UTC — will report root cause or escalate to CRITICAL.
 ```
 
 ---
 
-### Email Message (Optional)
+## Template 5: CRITICAL Alert — Immediate Notification
+
+**When to send**: Immediately when a CRITICAL-level threshold is breached. Send before any investigation or action.
+**Channel**: Slack #deployments + direct message to team lead
+**Trigger condition**: Any CRITICAL threshold (error rate >10%, response time >2000ms on /health or >5000ms on OPDS, memory <1GB, etc.)
 
 ```
-Subject: [MINOR ALERT RESOLVED] Open-Repo Deployment — Auto-Recovery Successful
+CRITICAL ALERT — Open-Repo Phase 5
 
-To: ops@company.com
+Critical incident detected at [TIME] UTC.
 
----
+Alert type:    [e.g., Health endpoint timeout / Error rate critical / OPDS failure]
+Current value: [e.g., Error rate: 14%]
+Threshold:     [e.g., CRITICAL at >10%]
 
-MINOR ALERT RESOLVED — AUTO-RECOVERY SUCCESSFUL
+Service impact: [e.g., OPDS endpoints returning HTTP 500 / Response times exceeding thresholds]
 
-Deployment Status: SUCCESSFUL with Minor Alert (Resolved)
-Alert Type: Response Time Threshold
-Alert Duration: 4 minutes
-Resolution: Automatic recovery
+Immediate actions underway:
+  - Checking application logs
+  - Verifying database connectivity
+  - Rollback preparation in progress
 
-WHAT HAPPENED
-During post-deployment monitoring, a minor alert was triggered when response times temporarily exceeded the warning threshold (5 seconds). This occurred during cache warm-up, which is a normal part of post-deployment initialization.
+Decision point by: [TIME+5min] UTC
 
-Alert Timeline:
-• 10:08 UTC: Alert triggered (response time spike detected)
-• 10:10 UTC: Investigation showed cache warm-up in progress
-• 10:12 UTC: Cache warm-up completed, response time returned to baseline
-• 10:14 UTC: Alert auto-resolved
+Next update: [TIME+3min] UTC — will report: fix applied OR rollback initiated.
 
-IMPACT
-✓ No user impact
-✓ No service interruption
-✓ No data loss or corruption
-✓ System fully operational
-
-CURRENT STATUS
-All systems are operating normally:
-• Health: ✅ OK
-• OPDS: ✅ OK
-• Response time: ✅ Baseline (<200ms)
-• Error rate: ✅ <1%
-
-NEXT STEPS
-Active monitoring will continue through 10:45 UTC, then transition to 24-hour passive monitoring.
-
-ROOT CAUSE
-Cache warm-up is a normal process that occurs after deployment. This process causes increased database query load for 5–10 minutes post-deployment, which is expected and monitored.
-
-LESSON LEARNED
-This alert confirms our monitoring thresholds are working correctly and detecting transient issues appropriately. The auto-recovery demonstrates system resilience.
-
-Questions? Contact ops@company.com
-
----
-Open-Repo Deployment Team
+On-call: [name/handle]
 ```
 
 ---
 
-## Template 3: Rollback Notification
+## Template 6: Rollback — Decision Notification
 
-**Scenario**: Critical incident detected, rollback decision made, rollback procedure initiated
-
-**Send Time**: IMMEDIATELY when rollback decision is made (within 2 minutes)  
-**Channels**: Slack #deployments + Email + Phone call to on-call engineer  
-**Recipients**: 
-- @here or @channel (Slack)
-- ops@company.com (email)
-- Incident commander (phone)
-- Team lead (phone)
-- Stakeholders (email notification)
-
----
-
-### Slack Message (Immediate Alert)
+**When to send**: At the moment the rollback decision is made, before executing rollback steps.
+**Channel**: Slack #deployments + direct message to team lead + email if outside working hours
+**Trigger condition**: CRITICAL incident that cannot be resolved within 5-minute window, OR explicit rollback trigger from decision tree.
 
 ```
-:rotating_light: ALERT: Deployment Rollback Initiated
+ROLLBACK INITIATED — Open-Repo Phase 5
 
-A critical issue has been detected during deployment. Rollback is being executed.
+Rollback decision made at [TIME] UTC.
 
-:warning: Incident Details
-├─ Detection time: 09:32 UTC
-├─ Issue type: [Database connectivity failure]
-├─ Impact: OPDS endpoints unreachable
-├─ Decision: ROLLBACK to previous version
-└─ Status: Rollback IN PROGRESS
+Reason for rollback:
+  [One specific sentence. Examples:]
+  - Health endpoint non-responsive for >3 minutes with no recovery
+  - OPDS endpoints returning HTTP 500 due to failed database migration
+  - Error rate at 18% — above 10% CRITICAL threshold with no root cause identified
+  - Multiple CRITICAL alerts (cascade): [list alert types]
 
-:hourglass_flowing_sand: Timeline
-├─ 09:32 UTC: Issue detected (database connection errors)
-├─ 09:33 UTC: Root cause identified
-├─ 09:33 UTC: Rollback decision made
-└─ 09:33 UTC: Rollback procedure initiated
+Pre-rollback state:
+  Service status: [running / failed / degraded]
+  Last healthy state: [time when service was last confirmed healthy]
+  Database backup confirmed: [YES — /opt/db-backups/[filename] / NO — git-only rollback]
 
-:hammer_and_wrench: Rollback Actions
-├─ Application stopping...
-├─ Database backup restoring...
-├─ Previous version deploying...
-├─ Service restarting...
-└─ Health checks running...
+Rollback procedure: Restoring pre-deployment backup and restarting previous version.
+Estimated completion: [TIME+10min] UTC
 
-Expected service restoration: ~10 minutes (by 09:43 UTC)
+User impact: Service temporarily unavailable during rollback (5–10 minutes).
 
-DO NOT DEPLOY or make infrastructure changes during rollback.
-
-Updates will be posted every 2 minutes. #deployments team monitoring.
+Next update: [TIME+12min] UTC — will confirm rollback complete and service restored.
 ```
 
 ---
 
-### Slack Message (Post-Rollback)
+## Template 7: Rollback Complete — Service Restored
+
+**When to send**: Within 5 minutes of rollback completing and health checks passing on the previous version.
+**Channel**: Slack #deployments + all parties who received rollback notification
 
 ```
-:white_check_mark: ROLLBACK COMPLETE — Service Restored
+ROLLBACK COMPLETE — Open-Repo Phase 5
 
-Rollback has been successfully completed. Service is restored to previous version.
+Rollback completed at [TIME] UTC. Service restored to previous version.
 
-:checkered_flag: Rollback Summary
-├─ Rollback start: 09:33 UTC
-├─ Rollback complete: 09:41 UTC
-├─ Duration: 8 minutes
-├─ Result: ✅ Successful
-└─ Service status: ✅ Online and operational
+Post-rollback health checks:
+  /health:               HTTP 200, [X]ms
+  /api/v2/opds/root.xml: HTTP 200, [X]ms
+  Error rate:            [X]% (previous baseline)
 
-:green_heart: Service Status
-✅ Health endpoint: OK
-✅ OPDS catalog: OK
-✅ Database: Connected
-✅ Error rate: 0.2%
+Deployed version: [previous commit hash / "pre-deployment backup"]
+Service impact duration: [START_TIME] – [END_TIME] UTC ([N] minutes)
 
-:detective: What Happened
-[Brief description of incident and root cause]
+Root cause (preliminary): [1–2 sentences if known, or "Under investigation"]
 
-The June 12 deployment encountered a database connectivity issue. We rolled back to the previous version as a safety measure. All systems are now operational on the previous stable release.
+Next steps:
+  - Post-incident audit in progress (see DEPLOYMENT_POST_INCIDENT_AUDIT_CHECKLIST.md)
+  - Root-cause analysis to be completed within 24 hours
+  - Re-deployment will not be attempted until root cause is confirmed and fix is tested
 
-:clipboard: Next Steps
-1. Incident investigation will proceed offline
-2. Root cause analysis: 24 hours
-3. Deployment retry: TBD after root cause fix
-4. Service will remain under active monitoring
-
-:raising_hand: Questions?
-Engineering team is available for questions in #deployments
-
-Thank you for your patience. We prioritized data safety and service stability.
+Full incident report by: [DATE, e.g., June 13, 09:00 UTC]
 ```
 
 ---
 
-### Email Message (Stakeholder Notification)
+## Template 8: All-Clear — End of Active Monitoring
+
+**When to send**: At 10:45 UTC (end of active monitoring window) if deployment was successful or partially successful and stable.
+**Channel**: Slack #deployments
 
 ```
-Subject: [DEPLOYMENT ROLLBACK] Open-Repo June 12, 2026 — Service Restored
+ALL CLEAR — Open-Repo Phase 5 Active Monitoring Complete
 
-To: stakeholders@company.com, ops@company.com
+Active monitoring window closed at 10:45 UTC.
 
----
+Deployment outcome: [FULL SUCCESS / PARTIAL SUCCESS — details below]
+Issues during monitoring: [None / list of WARN events that resolved]
 
-DEPLOYMENT ROLLBACK — SERVICE RESTORED
+Final metrics (09:45–10:45 UTC):
+  Error rate:         [X]% (threshold: <1% OK)
+  Health endpoint:    [X]ms avg (threshold: <200ms OK)
+  OPDS response time: [X]ms avg (threshold: <1000ms OK)
+  CPU idle:           [X]% (threshold: >50% OK)
+  Memory available:   [X]GB (threshold: >2GB OK)
 
-Deployment Date: June 12, 2026
-Rollback Time: 09:33–09:41 UTC
-Status: ROLLBACK COMPLETE ✅
+Transitioning to passive monitoring (24 hours).
+Final sign-off check scheduled: June 13, 09:00 UTC.
 
-WHAT HAPPENED
-During the June 12 deployment of Open-Repo Phase 5, a critical database connectivity issue was detected. As a safety measure, we initiated a rollback to the previous stable version. The service has been restored and is fully operational.
-
-TIMELINE
-09:00 UTC — Deployment started
-09:32 UTC — Issue detected (database connection errors)
-09:33 UTC — Root cause identified
-09:33 UTC — Rollback decision made
-09:33 UTC — Rollback procedure initiated
-09:41 UTC — Service restored to previous version
-09:43 UTC — All health checks passed
-
-CURRENT STATUS
-Service is fully operational on the previous stable release (v5.0.1):
-✓ All endpoints responding normally
-✓ Database fully accessible
-✓ Error rate: <1%
-✓ System resources: Normal
-✓ No data loss or corruption
-
-IMPACT
-✗ Maintenance window extended (full 1-hour window used)
-✓ No permanent service interruption (service online by 09:41 UTC)
-✓ Zero data loss
-✓ All user data preserved
-
-ROOT CAUSE
-[Brief technical description of database issue]
-
-ROOT CAUSE ANALYSIS
-A detailed root cause analysis is underway and will be completed within 24 hours. The engineering team is investigating why database connectivity was lost during deployment.
-
-NEXT DEPLOYMENT
-We will address the underlying issue and attempt redeployment after root cause analysis is complete. A revised deployment schedule will be communicated separately.
-
-LESSONS LEARNED
-This rollback demonstrates:
-✓ Our safety procedures are working correctly
-✓ Database backup and restore procedures are reliable
-✓ Monitoring detected the issue quickly (1 minute)
-✓ Rollback procedure executed successfully
-
-PREVENTION FOR FUTURE
-Based on this incident, we will:
-1. Add pre-deployment database connectivity test
-2. Implement database warm-up during deployment
-3. Enhance monitoring of database connection pool
-4. Document database failover procedures
-
-QUESTIONS?
-For technical details or timeline questions, contact:
-- Email: ops@company.com
-- Slack: #deployments
-
-Thank you for your patience. We prioritized service stability and data integrity.
-
----
-Open-Repo Engineering Team
-June 12, 2026
+No further action required unless new alerts fire.
 ```
 
 ---
 
-## Template 4: Post-Incident Summary (24 Hours After Deployment)
+## Notification Channel Reference
 
-**Scenario**: 24-hour monitoring period complete, final summary being communicated to stakeholders
+| Condition | Channel | Timing |
+|-----------|---------|--------|
+| Deployment start | Slack #deployments | Exactly 09:00 UTC |
+| WARN alert | Slack #deployments | After 5-min investigation attempt |
+| CRITICAL alert | Slack #deployments + team lead DM | Immediately on detection |
+| Rollback decision | Slack #deployments + team lead DM + email | At moment of decision |
+| Rollback complete | All channels that received rollback notice | Within 5 min of service restore |
+| Full success | Slack #deployments | Within 5 min of all health checks passing |
+| Active monitoring end | Slack #deployments | 10:45 UTC |
 
-**Send Time**: June 13, 09:00 UTC (24 hours after deployment start)  
-**Channels**: Email + Slack announcement  
-**Recipients**: 
-- Stakeholders list
-- Engineering team
-- Management
-
----
-
-### Email Message
-
-```
-Subject: [DEPLOYMENT COMPLETE] Open-Repo June 12, 2026 — 24-Hour Summary
-
-To: stakeholders@company.com, management@company.com
+**Team lead contact**: [fill in before June 12]
+**Slack #deployments webhook**: [fill in before June 12]
+**On-call email**: [fill in before June 12]
 
 ---
 
-DEPLOYMENT COMPLETE — 24-HOUR MONITORING SUMMARY
-
-Deployment Period: June 12, 2026 09:00 UTC – June 13, 2026 09:00 UTC
-Status: SUCCESSFUL ✅
-
-DEPLOYMENT OVERVIEW
-The Open-Repo Phase 5 A11y (accessibility) enhancement deployment has completed its 24-hour monitoring period with all success criteria met.
-
-Deployment Version: v5.1.0 (A11y Phase 5)
-Deployed to: Production (100.70.184.84)
-Service: Online and stable
-
-DEPLOYMENT STATISTICS
-├─ Deployment execution time: 47 minutes
-├─ Active monitoring period: 60 minutes
-├─ Passive monitoring period: 24 hours
-├─ Total monitoring time: 24 hours, 60 minutes
-├─ Incident count: [0 / 1] (specify)
-├─ Data loss events: 0
-├─ Service interruptions post-deployment: 0
-└─ Status: ✅ SUCCESSFUL
-
-24-HOUR MONITORING RESULTS
-
-Error Rate Analysis:
-├─ Average error rate: 0.2%
-├─ Peak error rate: 1.1% (at T+45min, auto-resolved)
-├─ Current error rate: 0.1%
-└─ Target: <1% (✅ MET)
-
-Response Time Analysis:
-├─ Average response time: 120ms
-├─ Peak response time: 2.8s (during cache warm-up)
-├─ Current response time: 95ms
-└─ Target: <200ms (✅ MET)
-
-Resource Utilization:
-├─ CPU: Peak 28%, Current 12% (target <50%)
-├─ Memory: Peak 62%, Current 44% (target <85%)
-├─ Disk: Current 18% (target <80%)
-└─ All resources: ✅ NORMAL
-
-System Health:
-├─ Health endpoint uptime: 100%
-├─ Database connectivity: 100%
-├─ OPDS catalog availability: 100%
-├─ Application crashes: 0
-└─ Overall system health: ✅ EXCELLENT
-
-FEATURES DEPLOYED
-This deployment includes Phase 5 A11y improvements:
-✅ WCAG 2.1 AA compliance enhancements
-✅ Improved keyboard navigation
-✅ Enhanced screen reader support
-✅ Better color contrast (meeting WCAG standards)
-✅ Form labeling accessibility improvements
-✅ All endpoints tested for A11y compliance (11/11 tests PASSED)
-
-INCIDENTS ENCOUNTERED
-[If no incidents]
-No incidents were detected during the monitoring period. The deployment proceeded smoothly with all verifications passing.
-
-[If incidents occurred]
-One minor alert was triggered during cache warm-up and auto-resolved. No impact to service availability or data integrity.
-
-ROLLBACK STATUS
-Rollback not executed. Deployment remains live.
-
-LESSONS LEARNED
-1. Cache warm-up period is working correctly
-2. Monitoring thresholds are appropriately calibrated
-3. A11y enhancements integrate seamlessly with existing systems
-4. Deployment procedures are effective and safe
-
-GOING FORWARD
-Starting June 13, 2026 09:00 UTC:
-✓ Service transitions to normal operational monitoring
-✓ A11y Phase 5 enhancements are now part of baseline feature set
-✓ Phase 6 planning can commence
-✓ Standard SLA monitoring resumes
-
-SIGN-OFF
-✅ Deployment successfully completed
-✅ All success criteria met
-✅ 24-hour monitoring period complete
-✅ Service released to production
-
-Next deployment: [Date TBD]
-
-QUESTIONS & FEEDBACK
-For questions about this deployment:
-- Technical details: ops@company.com
-- A11y feature questions: accessibility-team@company.com
-- Management questions: [manager email]
-
-Thank you for your support during the June 12 deployment. Phase 5 A11y enhancements are now live and available to all users.
-
----
-Open-Repo Deployment Team
-June 13, 2026
-```
-
----
-
-### Slack Announcement
-
-```
-:tada: DEPLOYMENT MONITORING COMPLETE — Open-Repo Phase 5
-
-24-hour monitoring period has concluded successfully. Phase 5 A11y deployment is fully certified for production.
-
-:bar_chart: Final Results
-├─ Deployment status: ✅ SUCCESSFUL
-├─ Monitoring period: 24 hours
-├─ Incidents: 0 critical, 0 major
-├─ Error rate: 0.2% (target <1%) ✅
-├─ Uptime: 99.95% ✅
-├─ Data loss: 0 ✅
-└─ Overall result: ✅ EXCELLENT
-
-:rocket: What's New
-✅ Phase 5 A11y improvements now live
-✅ WCAG 2.1 AA compliance enhancements
-✅ Improved accessibility for all users
-✅ 11/11 A11y tests passing
-
-:green_heart: Service Status
-Fully operational, all systems nominal. Service returns to standard SLA monitoring.
-
-Detailed summary emailed to stakeholders.
-
-Questions? Post in #deployments or reach out to ops@company.com
-
-Great work, team! Phase 5 deployment is a success. :confetti_ball:
-```
-
----
-
-## Template 5: Detailed Status Update (During Active Monitoring)
-
-**Scenario**: Providing regular updates during active monitoring (every 15 minutes)
-
-**Send Time**: At T+15min, T+30min, T+45min, T+60min (during active monitoring window)  
-**Channel**: Slack #deployments (pinned message, update in place)  
-**Recipients**: @here (team on-call)
-
----
-
-### Slack Status Update (Template)
-
-```
-:hourglass_flowing_sand: ACTIVE MONITORING STATUS — [09:30 UTC]
-
-Deployment started: 09:00 UTC
-Current time: 09:30 UTC
-Elapsed: 30 minutes
-
-:white_check_mark: Health Checks
-├─ Health endpoint: ✅ 200 OK (response: 45ms)
-├─ OPDS root: ✅ 200 OK (response: 185ms)
-├─ OPDS entries: ✅ 200 OK (response: 210ms)
-├─ Swagger UI: ✅ 200 OK (response: 52ms)
-└─ ReDoc: ✅ 200 OK (response: 58ms)
-
-:bar_chart: Metrics
-├─ Error rate (last 5 min): 0.1%
-├─ Request count (last 5 min): 12 requests
-├─ Average response time: 98ms
-├─ Peak response time: 580ms (OPDS query)
-├─ CPU usage: 16%
-├─ Memory usage: 48%
-└─ Disk free: 25GB
-
-:clipboard: Incidents
-None detected yet. All systems nominal.
-
-:timer: Next Update
-15:45 UTC (next scheduled check)
-
-Questions? Post here or DM on-call engineer.
-
-Still monitoring... :eyes:
-```
-
----
-
-## Template 6: Crisis Communication (Service Down)
-
-**Scenario**: Service goes completely down during monitoring, incident commander needs to communicate quickly
-
-**Send Time**: IMMEDIATELY (within 1 minute of detection)  
-**Channel**: Slack #deployments (urgent alert) + SMS to on-call team  
-**Recipients**: 
-- @here or @everyone (Slack)
-- On-call engineer (phone)
-- Team lead (phone)
-
----
-
-### Slack Message
-
-```
-:red_circle: SERVICE DOWN — INCIDENT RESPONSE INITIATED
-
-Open-Repo service is currently unavailable. Incident commander is investigating.
-
-:warning: Incident Details
-├─ Detection time: 09:52 UTC
-├─ Service: Open-Repo (100.70.184.84:8000)
-├─ Status: DOWN (unreachable)
-├─ Affected endpoints: All
-└─ Incident status: IN PROGRESS
-
-:rotating_light: Actions Underway
-├─ Incident commander: On-site
-├─ Investigating root cause
-├─ Decision: FIXING or ROLLBACK (in progress)
-└─ ETA restoration: 10–15 minutes
-
-:stopwatch: What to Do
-DO NOT attempt manual fixes or restarts. Incident commander is coordinating response.
-
-Updates every 2 minutes in this thread.
-
-:bell: Incident Escalation
-On-call engineer: @[Name]
-Team lead: Notified
-Management: Notified
-
-Will update you shortly...
-```
-
----
-
-## Usage Guidelines
-
-### Before Sending Any Communication
-
-✓ **Verify all facts**
-  - What is the actual service status?
-  - What is the error rate?
-  - Has the issue been fully resolved?
-
-✓ **Get approval** (if CRITICAL or rollback)
-  - Manager/team lead approval before broad communication
-  - Skip approval only if immediate customer notification required
-
-✓ **Fill in specific details**
-  - Replace [brackets] with actual values
-  - Include actual timestamps and metrics
-  - Add incident ID if available
-
-✓ **Use correct channels**
-  - Slack for fast notifications to team
-  - Email for formal documentation to stakeholders
-  - Phone for critical incidents requiring immediate attention
-
-✓ **Keep messages concise**
-  - Use bullet points and structured format
-  - Avoid technical jargon for non-technical stakeholders
-  - Include action items (if any)
-
----
-
-## Tone Guidelines
-
-| Situation | Tone | Example |
-|-----------|------|---------|
-| Successful deployment | Positive, celebratory | "✅ DEPLOYMENT SUCCESS...system is fully operational" |
-| Minor issue auto-resolved | Professional, reassuring | "Minor alert detected...automatically resolved...no impact" |
-| Critical incident/rollback | Calm, professional, action-oriented | "Issue detected...rollback initiated...service restored" |
-| Post-incident summary | Transparent, analytical | "Detailed analysis...lessons learned...prevention measures" |
-
----
-
-## Post-Communication Checklist
-
-After sending any communication:
-
-- [ ] Message sent through all appropriate channels
-- [ ] Timestamp recorded (when message was sent)
-- [ ] Stakeholder acknowledgment noted (if applicable)
-- [ ] Message archived for record
-- [ ] Follow-up communication scheduled (if needed)
-
----
-
-**Communication Templates Version**: 1.0  
-**Created**: June 6, 2026  
-**Valid For**: June 12, 2026 deployment and beyond  
-**Last Updated**: June 6, 2026  
-**Status**: PRODUCTION READY
-
-**Additional Notes**:
-- Customize these templates to match your organization's communication style
-- Include company/team name and branding as appropriate
-- Adjust technical details to match your actual systems
-- Add contact information and escalation procedures specific to your team
+**Templates Version**: 1.0
+**Created**: June 6, 2026
+**Valid For**: June 12, 2026 deployment
