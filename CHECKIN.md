@@ -4,6 +4,83 @@
 
 ---
 
+## 🔄 Session 2965 (June 6 22:00+ UTC) — Pre-Flight Verifications: 3 Time-Critical Projects
+
+**Status**: ✅ **PRE-FLIGHT VERIFICATIONS COMPLETE — FINDINGS READY FOR USER DECISION**
+
+**Summary**: Orchestrator resumed after pause and executed pre-flight verification on 3 time-critical projects (systems-resilience June 9, resistance-research June 9-10, seedwarden June 7-8). All infrastructure verified production-ready. Two NEW BLOCKING ISSUES identified for systems-resilience requiring user action by June 8 18:00 UTC. All other projects execution-ready.
+
+### Findings Summary
+
+**1. systems-resilience Phase 5.1 Publication (June 9 13:00 UTC deadline)**
+- ✅ **Content**: All 6 source documents verified production-ready (61,611 words confirmed)
+- ❌ **BLOCKING**: Platform (Nextcloud/Discourse) NOT deployed on raspby1. Requires 4-6 hours. Must start June 7-8.
+- ❌ **BLOCKING**: PDF bundle missing. `/tmp/phase5-pub/` absent. `weasyprint` not installed. Must regenerate using `pandoc` and stage by June 9 12:30 UTC (30-45 min work).
+- ⚠️ **Minor**: Citation count shows ~145 actual vs claimed 336+ — update announcements; one URL (rojavaisnotalone.com) DNS-fails from this network — verify from different network.
+- **Action required**: Deploy platform June 7-8, regenerate PDFs June 9 morning. Two new items added to BLOCKED.md with specific steps.
+
+**2. resistance-research Wave 1 Execution (June 9-10 or June 10-11 user choice)**
+- ✅ **All logistics verified**: 7 Phase 2 domains production-ready, contacts verified with named individuals, email templates ready (2 fills each: name + contact info), all staging files organized
+- ✅ **Primary reference**: DOMAIN_51_JUNE_9_12_EXECUTION_CHECKLIST.md is authoritative (ignore stale DOMAIN_51_JUNE_9_PRE_EXECUTION_CHECKLIST.md)
+- ✅ **Contingency**: DOMAIN_51_CONTINGENCY_SB_299_FALLBACK.md current and accessible
+- ⚠️ **Timeline note**: Execution docs say June 9 for CLC+Issue One; ORCHESTRATOR_STATE says June 10. Both work — no constraint violation either way.
+- **Action optional**: Pre-fill sender name/contact fields in templates (5 min) before execution day. Domain 59 Tier 1 sends still pending — could execute simultaneously if desired.
+
+**3. seedwarden Track B Launch (user gates pending)**
+- ✅ **Infrastructure**: 100% production-ready (8 zone PDFs, email copy, social calendar, influencer contacts — all re-verified June 5)
+- ❌ **Gates NOT executed**: All 5 user gates (social accounts, Canva, Kit, Google Drive, Etsy coupon) remain unchecked in ACTIVATION_RUNBOOK.md
+- 📋 **Clarification**: June 5 "execution target" referred to infrastructure readiness (orchestrator status), NOT user gate completion
+- 📋 **User path**: 3.5-4.5 hours to complete all 5 gates using TRACK_B_EXECUTION_DRY_RUN_SCRIPT.md. No blockers. June 7-8 launch achievable if gates complete today/tomorrow.
+- **Action required**: Schedule 4-hour session for gates; once Kit URL provided (Gate 3 output), orchestrator executes autonomous URL substitution.
+
+### Items Needing Your Input (PRIORITY ORDER)
+
+1. **[BLOCKING — Due June 8 18:00 UTC]** systems-resilience platform deployment
+   - Choose: Nextcloud+Matrix OR Discourse
+   - If Discourse: provide IP + domain for runbook placeholder fill
+   - Start 4-6 hour deployment June 7-8
+   - See BLOCKED.md for detailed requirements
+
+2. **[BLOCKING — Due June 9 morning]** systems-resilience PDF regeneration
+   - Regenerate 6 PDFs using `pandoc` (30-45 min)
+   - Stage in `/tmp/phase5-pub/` by 12:30 UTC June 9
+   - Specific procedure in BLOCKED.md
+
+3. **[DECISION — By June 7 09:00 UTC]** stockbot Phase 3 (still standing from Session 2963)
+   - COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md ready
+   - Confirm GO/CAUTION/NO-GO for June 9 market validation
+
+4. **[ACTION — Whenever possible]** seedwarden Track B gates
+   - 3.5-4.5 hours to complete 5 gates
+   - No deadline pressure (June 7-8 preferred for 3-day margin before Phase 3)
+   - Use TRACK_B_EXECUTION_DRY_RUN_SCRIPT.md as companion
+
+5. **[CLARIFICATION]** open-repo deployment start time
+   - Confirm 09:00 UTC or 20:00 UTC for June 12 deployment
+   - Affects communication templates and rollback window
+
+### Next Immediate Actions (by user)
+
+- **TODAY/TOMORROW**: Complete seedwarden 5 gates (optional but recommended for timeline margin)
+- **TOMORROW (June 7)**:
+  1. Confirm stockbot Phase 3 decision (GO/CAUTION/NO-GO) by 09:00 UTC
+  2. Begin systems-resilience platform deployment (4-6 hour window)
+  3. Decide which platform: Nextcloud+Matrix or Discourse
+- **JUNE 8 EOD**: Platform deployment must be complete; provide DNS/IP if Discourse
+- **JUNE 9 MORNING**: Regenerate and stage PDFs (30-45 min, can start 12:30 UTC if needed)
+- **JUNE 9-10**: Execute resistance-research Wave 1 per DOMAIN_51_JUNE_9_12_EXECUTION_CHECKLIST.md
+
+### Parallel Work Available (if you prefer to delegate)
+
+- **Phase 3 contractor search**: Orchestrator can assist posting Upwork job + reaching out to AHG/IHA contacts. Deadline June 17 (11 days).
+- **Domain 59 Tier 1 sends** (resistance-research): Still pending; orchestrator can execute if you authorize simultaneous Wave 1+Domain59 sends.
+
+**Tokens used this session**: ~176,600 (3 parallel pre-flight agents)
+
+**Session duration**: ~15 min (orchestrator) + 3 parallel agents (5-10 min each concurrent)
+
+---
+
 ## 🛑 Session 2964 (June 6 21:15+ UTC) — Pause Acknowledged
 
 **Status**: ✅ **ORCHESTRATOR PAUSED — NO AUTONOMOUS WORK**

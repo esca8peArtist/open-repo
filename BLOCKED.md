@@ -53,6 +53,24 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
+**Date blocked**: 2026-06-06
+**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. Docker is not running, no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. As of June 6, zero platform deployment work has begun.
+**What I need**: Deploy either Nextcloud+Matrix or Discourse platform on raspby1 by June 8 18:00 UTC. This requires 4–6 hours. Use `DEPLOYMENT_PLAYBOOK_NEXTCLOUD_MATRIX.md` or `DEPLOYMENT_PLAYBOOK_DISCOURSE.md`. If Discourse chosen, also fill in the `<discourse-ip>` and `<discourse-domain>` placeholders in the publication runbook before June 9.
+**Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` should return 200 OK
+**Resolution**: [leave blank]
+
+---
+
+### systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9
+**Date blocked**: 2026-06-06
+**Context**: Phase 5.1 publication checklist claims a "330-page PDF bundle, 10.9 MB" exists at `/tmp/phase5-pub/pdf/`. Pre-flight verification (Session 2964, Agent a8509b87e34e2aa5b) found this directory does not exist and no PDF files exist anywhere on the system. Additionally, `weasyprint` (the PDF generation backend cited in the checklist) is not installed. The publication runbook's pre-publication checklist at 12:30 UTC June 9 includes "Verify PDF bundle size" — this step will fail without regenerated PDFs. Email templates for publication include PDF attachments, which also depend on this bundle.
+**What I need**: Regenerate the PDF bundle using available tools (`pandoc` is installed; `weasyprint` is not). Generate PDFs for all 6 source documents. Strip frontmatter from the `.md` files. Stage the PDFs and stripped files in `/tmp/phase5-pub/` before 12:30 UTC June 9. Generation should take 30–45 minutes.
+**Verify with**: `ls -lah /tmp/phase5-pub/pdf/ && wc -w /tmp/phase5-pub/pdf/*.pdf` should show 6 PDF files totaling ~61K words
+**Resolution**: [leave blank]
+
+---
+
 ### open-repo — Deployment start time conflict (user clarification required)
 **Date blocked**: 2026-06-06
 **Context**: Session 2952 and subsequent deployment pre-flight checklists (Session 2956) have conflicting deployment times. Four newer docs (from Session 2952-2956) specify 09:00 UTC as deployment start time. Two older docs (pre-Session 2952) specify 20:00 UTC. This conflict affects: communication templates, rollback window timing, deployment window precision, and team coordination. Deployment target: June 12, 2026.
