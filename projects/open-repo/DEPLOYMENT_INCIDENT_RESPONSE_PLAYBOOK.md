@@ -6,941 +6,641 @@ document_type: incident-response-playbook
 status: PRODUCTION READY
 created: 2026-06-06
 target_deployment_date: 2026-06-12 (09:00 UTC)
+deployment_window: "09:00–10:45 UTC"
+references:
+  - DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md
+  - POST_DEPLOYMENT_MONITORING_PLAN.md
 ---
 
-# Deployment Incident Response Playbook
+# Deployment Incident Response Playbook — June 12, 2026
 
-**Deployment Date**: June 12, 2026  
-**Deployment Window**: 09:00–10:45 UTC (105 minutes total: 45 min deployment + 60 min active monitoring)  
-**Purpose**: Define decision procedures for cascade failures, data corruption, and partial deployment states during June 12 deployment  
-**Audience**: On-call engineer, incident commander, database team, operations team
+**Purpose**: This playbook governs incident response during the June 12 deployment window (09:00–10:45 UTC) and the 60-minute active monitoring period that follows. It covers cascade failures, rollback decisions, root-cause starting points, and pre-rollback verification.
 
----
+**Primary audience**: The deployer executing the June 12 runbook. Assumes SSH access to production (100.70.184.84) but no deep code knowledge.
 
-## Overview: When to Use This Playbook
-
-This playbook activates when **ANY** of these conditions occur:
-
-1. **Multiple simultaneous alerts** (cascade failure): 2+ alert types firing at the same time
-2. **Health check failures**: `/health` endpoint returns 500 or timeout
-3. **Critical endpoint failures**: /docs, /redoc, or OPDS endpoints all returning 500+
-4. **Data integrity concerns**: Database errors detected (constraint violations, failed migrations)
-5. **Partial deployment state**: Service starts but some subsystems don't
-6. **Monitoring infrastructure fails**: Cannot observe system status
-
-**Response Time**: Must decide within 5 minutes whether to fix or rollback
+**Threshold source**: All alert thresholds are taken directly from POST_DEPLOYMENT_MONITORING_PLAN.md Section 2. Do not apply different numbers.
 
 ---
 
 ## Section 1: Cascade Failure Priority Matrix
 
-When 2+ alert types fire simultaneously, use this matrix to establish response priority.
+A cascade failure is defined as two or more alert types firing simultaneously. When multiple alerts fire, the sequence below determines which condition to address first. The rationale: higher-tier conditions are either unrecoverable if ignored or invalidate the meaning of lower-tier metrics.
 
-### Alert Type Definitions
+### Priority Tier Order (highest to lowest)
 
-| Alert Type | Triggered When | Severity | Time to Decision |
-|-----------|----------------|----------|------------------|
-| **Response Time Critical** | Any endpoint >5000ms OR timeout | CRITICAL | 2 min |
-| **Error Rate Critical** | >20% requests returning 5XX | CRITICAL | 2 min |
-| **Health Endpoint Failure** | /health returns non-200 or times out | CRITICAL | 2 min |
-| **Database Connectivity** | Database connection errors in logs | CRITICAL | 3 min |
-| **Resource Exhaustion** | CPU idle <20% OR memory <1GB OR disk <5GB | CRITICAL | 3 min |
-| **OPDS-Specific Failure** | Both root.xml and entries endpoints 500+ | CRITICAL | 2 min |
+| Priority | Condition | Tier | Why It Leads |
+|----------|-----------|------|-------------|
+| 1 | Database connectivity lost | CRITICAL | All other metrics are meaningless if the database is down; endpoints will return 500 regardless of code health |
+| 2 | Health endpoint non-200 or timeout | CRITICAL | Confirms application process is dead or hung; no other fixes are viable until the process is confirmed alive |
+| 3 | Error rate >20% | CRITICAL | System-wide failure; any endpoint fix is ineffective at this scale |
+| 4 | OPDS response time >5000ms | CRITICAL | OPDS is the primary user-facing function; sustained 5s+ indicates database query failure or process hang |
+| 5 | CPU idle <20% sustained | CRITICAL | Runaway process is starving the application; endpoint fixes cannot succeed under resource exhaustion |
+| 6 | Memory available <1GB | CRITICAL | OOM killer may terminate the process; any restart will fail again until memory is freed |
+| 7 | Error rate 10–20% | CRITICAL | Widespread but not total failure; investigate while preparing rollback |
+| 8 | Response time >2000ms on /health or /docs | WARN→CRITICAL | Performance degradation; may be temporary or may be precursor to full failure |
+| 9 | Disk available <5GB | CRITICAL | May block log writes and crash the process; but service may remain running momentarily |
+| 10 | Error rate 5–10% | WARN | Significant but not fatal; investigate before preparing rollback |
 
-### Priority Matrix: Response Order When Multiple Alerts Fire
-
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    CASCADE FAILURE PRIORITY MATRIX                       │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
-│  PRIORITY 1 (Handle First):  Health Endpoint Failure                    │
-│  ──────────────────────────────────────────────────────────────────    │
-│  Why: If health check is down, entire system is unreachable             │
-│  Action: Check application process (is it running?)                     │
-│  Timeline: Diagnose within 1 minute, decide within 2 minutes            │
-│  Next: If health check still failing, go to ROLLBACK DECISION          │
-│                                                                           │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
-│  PRIORITY 2 (Handle Second): Database Connectivity                      │
-│  ───────────────────────────────────────────────────────────────────   │
-│  Why: If database is down, all endpoints will fail                      │
-│  Action: Verify database is reachable and responding                    │
-│  Timeline: Diagnose within 2 minutes                                    │
-│  Decision: If DB is down and you can't restart it, ROLLBACK             │
-│           (data corruption risk if you force restart)                    │
-│                                                                           │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
-│  PRIORITY 3 (Handle Third): Error Rate Critical                         │
-│  ───────────────────────────────────────────────────────────────────   │
-│  Why: Indicates widespread failure across endpoints                     │
-│  Action: Identify which endpoint category is failing (OPDS vs. Docs)   │
-│  Timeline: Diagnose within 2 minutes                                    │
-│  Decision: If >20% errors, attempt restart; if persists >3 min,        │
-│           ROLLBACK                                                        │
-│                                                                           │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
-│  PRIORITY 4 (Handle Fourth): Response Time Critical                     │
-│  ──────────────────────────────────────────────────────────────────    │
-│  Why: May indicate database query slowness or resource contention      │
-│  Action: Check system resources AND database query logs                 │
-│  Timeline: Diagnose within 3 minutes                                    │
-│  Decision: If resource-constrained, may need to optimize or rollback   │
-│                                                                           │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
-│  PRIORITY 5 (Handle Fifth): Resource Exhaustion                         │
-│  ───────────────────────────────────────────────────────────────────   │
-│  Why: System running out of CPU/memory/disk affects all operations     │
-│  Action: Identify which resource is exhausted                          │
-│  Timeline: Diagnose within 3 minutes                                    │
-│  Decision: Attempt to free up resource; if cannot, ROLLBACK             │
-│                                                                           │
-└─────────────────────────────────────────────────────────────────────────┘
-```
-
-### Response Order Algorithm
-
-When multiple alerts fire:
-
-```
-1. Sort all firing alerts by priority (Health → DB → Error Rate → Response → Resources)
-2. Handle Priority 1 alerts first (usually 1–2 alerts)
-3. Once Priority 1 handled, move to Priority 2
-4. If any alert in higher priority is not resolved in 2–3 minutes, escalate to ROLLBACK DECISION
-5. If multiple priority 1 alerts firing (health + database), execute ROLLBACK immediately
-   (indicates systemic failure, not localized issue)
-```
-
-**Key Rule**: Do not attempt to fix a lower-priority issue if a higher-priority issue exists. Address in order.
+**Rule**: Address the highest-priority firing condition first. Do not split attention across conditions simultaneously unless you have a second operator available.
 
 ---
 
-## Section 2: Five Critical Scenario Decision Trees
+## Section 2: Scenario Decision Trees
 
-Use these decision trees during deployment to determine: diagnose → decide → act.
+Each decision tree represents a testable scenario with concrete conditions and branching logic. All threshold values match POST_DEPLOYMENT_MONITORING_PLAN.md Section 2.
 
 ---
 
-### Scenario 1: Response Time CRITICAL + Error Rate CRITICAL (Simultaneous)
+### Scenario A: Cascade — Response Time + Error Rate + CPU Exhaustion
 
-**Conditions**: 
-- Response time threshold breached (>5000ms on any endpoint)
-- Error rate threshold breached (>20% of requests returning 5XX)
-- Both detected within 1 minute of each other
+**Trigger conditions firing simultaneously**:
+- Health endpoint response time: 5000ms (threshold: OPDS >5000ms = CRITICAL; /health >2000ms = CRITICAL)
+- Error rate: 15% (threshold: 10–20% = CRITICAL)
+- CPU idle: 5% (threshold: <20% = CRITICAL)
 
-**Decision Tree**:
+**Decision tree**:
 
 ```
-SCENARIO 1 STARTS: Response time CRITICAL + Error rate CRITICAL
-│
-├─ Step 1: Check if application is running
-│  │
-│  ├─ YES, process is running
-│  │  │
-│  │  └─ Step 2: Check application crash logs
-│  │     │
-│  │     ├─ Crashes detected in logs (CRITICAL)
-│  │     │  └─ GO TO: ROLLBACK DECISION (application is broken)
-│  │     │
-│  │     └─ No crashes in logs, but high errors
-│  │        │
-│  │        └─ Step 3: Is it database issue?
-│  │           │
-│  │           ├─ YES (database connection errors in logs)
-│  │           │  └─ GO TO: DATABASE RECOVERY PROCEDURE
-│  │           │
-│  │           └─ NO (application is trying to respond)
-│  │              │
-│  │              └─ Step 4: Attempt graceful restart
-│  │                 │
-│  │                 ├─ Restart succeeds, errors drop below 5%
-│  │                 │  └─ GO TO: CONTINUE MONITORING
-│  │                 │
-│  │                 └─ Restart fails or errors persist >3 min
-│  │                    └─ GO TO: ROLLBACK DECISION
-│  │
-│  └─ NO, application is not running
-│     │
-│     ├─ Step 2: Why is it not running?
-│     │  │
-│     │  ├─ Service exited cleanly (exit code 0)
-│     │  │  └─ GO TO: ROLLBACK DECISION (deployment introduced shutdown bug)
-│     │  │
-│     │  └─ Service crashed (non-zero exit code)
-│     │     └─ Check logs for reason
-│     │        │
-│     │        ├─ Memory/disk error → GO TO: ROLLBACK DECISION
-│     │        ├─ Database error → GO TO: DATABASE RECOVERY PROCEDURE
-│     │        └─ Other → GO TO: ROLLBACK DECISION (code is broken)
-│     │
-│     └─ Step 3: Attempt to restart application
-│        │
-│        ├─ Restart succeeds, errors resolve
-│        │  └─ GO TO: CONTINUE MONITORING
-│        │
-│        └─ Restart fails or errors persist
-│           └─ GO TO: ROLLBACK DECISION
-│
-└─ OUTCOME: Either CONTINUE MONITORING or ROLLBACK DECISION
+STEP 1: Is database reachable?
+  Run: ssh ubuntu@100.70.184.84 'sudo journalctl -u open-repo --since "2 min ago" | grep -i "database\|connect"'
+  │
+  ├─ YES (no database errors in logs)
+  │    STEP 2: Is a runaway process consuming CPU?
+  │      Run: ssh ubuntu@100.70.184.84 'ps aux --sort=-%cpu | head -5'
+  │      │
+  │      ├─ YES (single process >80% CPU)
+  │      │    → Identify the process PID from ps output
+  │      │    → If it is NOT open-repo: kill it, re-check CPU idle, re-test endpoints
+  │      │    → If it IS open-repo: the application has a runaway loop
+  │      │         → Do not attempt restart yet; go to STEP 3
+  │      │
+  │      └─ NO (CPU spread across processes, none >50%)
+  │           → The slow response is not CPU-caused; proceed to STEP 3
+  │
+  └─ NO (database connection errors present)
+       → Priority: Database (Tier 1)
+       → See Scenario D (database failure tree)
+       → Do not investigate response time or error rate until DB is resolved
 
-DECISION TIMELINE: 5 minutes max (2 min diagnose + 3 min attempt fix or decide)
+STEP 3: Has the application process crashed or is it still running?
+  Run: ssh ubuntu@100.70.184.84 'sudo systemctl is-active open-repo'
+  │
+  ├─ active → Process is running but degraded
+  │    STEP 4: Attempt service restart (only if rollback decision clock <3 min remaining)
+  │      Run: ssh ubuntu@100.70.184.84 'sudo systemctl restart open-repo && sleep 5 && sudo systemctl is-active open-repo'
+  │      │
+  │      ├─ Returns "active" → Re-test all endpoints immediately
+  │      │    If endpoints recover: CONTINUE MONITORING, document restart
+  │      │    If endpoints do not recover within 2 min: EXECUTE ROLLBACK
+  │      │
+  │      └─ Returns "failed" → EXECUTE ROLLBACK immediately
+  │
+  └─ inactive / failed → Process is dead
+       → EXECUTE ROLLBACK immediately
+       → Do not attempt restart; the new code has a startup failure
+
+DECISION SUMMARY for this scenario:
+- If CPU runaway from non-app process: kill process → re-test → monitor
+- If database down: go to Scenario D
+- If app process failed: rollback
+- If app running but degraded: one restart attempt → rollback if no recovery in 2 min
 ```
 
-**Diagnosis Commands**:
+---
+
+### Scenario B: OPDS Endpoints Failing + Health Endpoint Healthy
+
+**Trigger conditions firing simultaneously**:
+- Health endpoint: HTTP 200, <200ms (OK)
+- OPDS /api/v2/opds/root.xml: HTTP 500 or response time >5000ms (CRITICAL)
+- Error rate: 12% (CRITICAL)
+
+**Decision tree**:
+
+```
+STEP 1: Confirm health endpoint is actually OK (not a false positive)
+  Run: curl -s -w "HTTP %{http_code} Time: %{time_total}s\n" http://100.70.184.84:8000/health
+  │
+  ├─ HTTP 200, <200ms → Health is genuinely fine; the issue is OPDS-specific
+  │
+  └─ HTTP 200 but >500ms → Degraded; treat as combined response time issue (Scenario A)
+
+STEP 2: What does the 500 error say?
+  Run: ssh ubuntu@100.70.184.84 'sudo journalctl -u open-repo --since "5 min ago" | grep -i "opds\|500\|error" | tail -20'
+  │
+  ├─ "OPDS initialization failed" or "OPDSGenerator error"
+  │    → Database table missing or migration incomplete (likely Alembic issue)
+  │    → Check: ssh ubuntu@100.70.184.84 'cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend && source /opt/venv/open-repo/bin/activate && alembic current'
+  │         If revision ≠ head: migration did not apply → EXECUTE ROLLBACK
+  │         If revision = head: OPDS generator code error, not a migration issue
+  │              → Document for post-incident; decide: is OPDS critical to June 12 deployment purpose?
+  │                   YES → EXECUTE ROLLBACK
+  │                   NO (OPDS is secondary for this release) → continue with PARTIAL SUCCESS state, document
+  │
+  ├─ "database connection failed" or "timeout"
+  │    → Go to Scenario D (database failure tree)
+  │
+  └─ "ZIM export table not found" or "relation does not exist"
+       → Schema mismatch; migration gap
+       → EXECUTE ROLLBACK
+
+DECISION SUMMARY:
+- OPDS 500 with DB errors → Scenario D first
+- OPDS 500 with OPDSGenerator errors → assess criticality → rollback if OPDS is required
+- OPDS 500 with schema errors → rollback
+```
+
+---
+
+### Scenario C: Memory Exhaustion + Degraded Response Times
+
+**Trigger conditions firing simultaneously**:
+- Memory available: 800MB (threshold: <1GB = CRITICAL)
+- Health endpoint response time: 1200ms (threshold: 500–2000ms = WARN toward CRITICAL)
+- Error rate: 3% (threshold: 1–5% = WARN)
+
+**Decision tree**:
+
+```
+STEP 1: Identify what is consuming memory
+  Run: ssh ubuntu@100.70.184.84 'ps aux --sort=-%mem | head -6'
+  │
+  ├─ open-repo process consuming >50% memory
+  │    → Likely memory leak introduced by new code
+  │    → Check how long the service has been running:
+  │         ssh ubuntu@100.70.184.84 'sudo systemctl status open-repo | grep "Active:"'
+  │    ├─ Running <30 min: memory growth rate is high, likely a startup leak
+  │    │    → EXECUTE ROLLBACK; memory will exhaust and crash within active monitoring window
+  │    └─ Running >30 min with stable memory: may be one-time allocation, not a leak
+  │         → Continue monitoring for 10 more minutes; if memory continues dropping, rollback
+  │
+  └─ Other process consuming memory (not open-repo)
+       → Identify process and assess: is it a known background process?
+       ├─ YES (e.g., system update, log rotation): Wait for it to complete; re-check memory
+       └─ NO (unknown process): Kill it, re-test
+
+STEP 2: Is OOM killer risk imminent?
+  Run: ssh ubuntu@100.70.184.84 'free -m | grep Mem'
+  │
+  ├─ Available memory dropping below 500MB → Imminent OOM risk
+  │    → EXECUTE ROLLBACK before OOM killer fires (OOM kill leaves corrupted state)
+  │
+  └─ Memory stable between 800MB–1GB → WARN state; not yet CRITICAL
+       → Monitor every 2 minutes; set 10-minute escalation timer
+       → If does not recover above 1GB in 10 min → EXECUTE ROLLBACK
+
+DECISION SUMMARY:
+- Open-repo memory leak + <1GB available → rollback
+- Unknown process eating memory + open-repo stable → kill process, re-monitor
+- Stable at 800MB–1GB → 10-minute monitoring window before rollback decision
+```
+
+---
+
+### Scenario D: Database Connectivity Loss
+
+**Trigger conditions firing simultaneously**:
+- Database connection errors in logs (any count)
+- OPDS endpoints: HTTP 500
+- Health endpoint: HTTP 500 or degraded
+
+**Decision tree**:
+
+```
+STEP 1: Is the database process running (if local/SQLite)?
+  Run: ssh ubuntu@100.70.184.84 'ls -lah /opt/db-backups/ | head -5'  # Verify backup exists before anything else
+  Run: ssh ubuntu@100.70.184.84 'ls -lah /path/to/database.db'  # SQLite file check
+
+  If PostgreSQL:
+  Run: ssh ubuntu@100.70.184.84 'sudo systemctl is-active postgresql || sudo systemctl is-active postgres'
+  │
+  ├─ Database process not running (PostgreSQL stopped)
+  │    → Attempt restart: ssh ubuntu@100.70.184.84 'sudo systemctl start postgresql'
+  │    → Re-test: ssh ubuntu@100.70.184.84 'sudo systemctl is-active postgresql'
+  │    ├─ Restarts OK: re-test application endpoints; if healthy → CONTINUE MONITORING
+  │    └─ Will not start: EXECUTE ROLLBACK (database-level failure is not fixable in 5-min window)
+  │
+  └─ Database process is running (connection issue is not a stopped process)
+       STEP 2: Is it a migration lock?
+         Run: ssh ubuntu@100.70.184.84 'sudo journalctl -u open-repo --since "5 min ago" | grep -i "lock\|deadlock\|transaction"'
+         │
+         ├─ Lock/deadlock messages present
+         │    → The Alembic migration has locked a table and not released it
+         │    → Do NOT restart the service immediately (restart will not release the lock)
+         │    → Check current migration state: alembic current
+         │    → If migration is in-progress: wait 2 minutes; if not resolving → EXECUTE ROLLBACK
+         │         Rollback will require: alembic downgrade -1 (see Section 4, Step 2)
+         │
+         └─ No lock messages; general connection failure
+              → Network or credentials issue
+              → EXECUTE ROLLBACK (cannot diagnose credentials in deployment window)
+
+DECISION SUMMARY:
+- DB process stopped: attempt restart once → rollback if fails
+- DB lock from migration: wait 2 min → rollback
+- DB connection failure (network/credentials): rollback
+- ALWAYS verify backup exists before any rollback action
+```
+
+---
+
+### Scenario E: Partial Deployment State (New Code Deployed, Migration Not Applied)
+
+**Indicators**:
+- Application starts and /health returns 200
+- OPDS endpoints return 500 with "column does not exist" or "relation does not exist" errors
+- `alembic current` shows old revision, not head
+
+**Decision tree**:
+
+```
+STEP 1: Confirm the diagnosis
+  Run: ssh ubuntu@100.70.184.84 'cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend && source /opt/venv/open-repo/bin/activate && alembic current 2>&1'
+  │
+  ├─ Output shows old revision (not head)
+  │    → Migration was not applied during deployment Step 6
+  │    → Assess: how many migrations are pending?
+  │         alembic history | head -10
+  │    ├─ 1 migration pending, simple schema change (add column, index)
+  │    │    → Attempt forward migration: alembic upgrade head
+  │    │    → Run within 3-minute window; if completes cleanly → re-test endpoints
+  │    │    → If migration fails: EXECUTE ROLLBACK using alembic downgrade -1 first (see Section 4)
+  │    └─ Multiple migrations pending, or migration involves destructive changes (drop column, rename)
+  │         → Do not attempt forward migration during incident window
+  │         → EXECUTE ROLLBACK
+  │
+  └─ Output shows head revision
+       → Migration is current; the 500 error is a code bug, not a schema mismatch
+       → Document the specific error; assess: is it OPDS-only or all endpoints?
+            OPDS-only: see Scenario B
+            All endpoints: EXECUTE ROLLBACK
+
+DECISION SUMMARY:
+- Migration not applied, simple change → attempt upgrade, rollback if fails
+- Migration not applied, complex change → rollback
+- Migration applied but still 500 → code bug → assess impact → likely rollback
+```
+
+---
+
+## Section 3: Rollback Procedures with Data Integrity Preservation
+
+All rollback steps are reversible. No step permanently destroys data. The backup created in deployment Step 3 (at `/opt/backups/open-repo-YYYYMMDD-HHMMSS`) is the recovery target.
+
+### Pre-Rollback Checklist (Run Before Any Rollback Action)
+
+Complete all four checks before executing rollback. If any check fails, note the failure and proceed — do not let a failed check block a necessary rollback, but document it for the post-incident audit.
+
 ```bash
-# 1. Is application running?
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 'sudo systemctl is-active open-repo'
-
-# 2. Check crash logs
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 'sudo journalctl -u open-repo -n 50'
-
-# 3. Check for database errors
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 \
-  'sudo journalctl -u open-repo --since "5 minutes ago" | grep -i "database\|connection" | head -5'
-
-# 4. Attempt restart
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 'sudo systemctl restart open-repo'
-sleep 5
-
-# 5. Re-check error rate
-curl -s http://100.70.184.84:8000/health
-```
-
----
-
-### Scenario 2: Health Check PASS but OPDS Endpoints FAIL
-
-**Conditions**:
-- `/health` endpoint returns 200 OK (application appears healthy)
-- `/api/v2/opds/root.xml` returns 500 or times out
-- `/api/v2/opds/entries` returns 500 or times out
-- Swagger UI (`/docs`) and ReDoc (`/redoc`) return 200 OK
-
-**Interpretation**: Application started fine, but OPDS-specific code has a bug or dependency issue
-
-**Decision Tree**:
-
-```
-SCENARIO 2 STARTS: Health OK but OPDS endpoints failing
-│
-├─ Step 1: Is it a database issue specific to OPDS table?
-│  │
-│  ├─ Check if OPDS tables exist and have data
-│  │  │
-│  │  ├─ Tables missing or empty (CRITICAL)
-│  │  │  └─ GO TO: DATABASE RECOVERY PROCEDURE
-│  │  │  (Database migration failed or data not present)
-│  │  │
-│  │  └─ Tables exist and have data
-│  │     │
-│  │     └─ Step 2: Check OPDS endpoint logs for errors
-│  │        │
-│  │        ├─ Constraint violation errors (CRITICAL)
-│  │        │  └─ GO TO: DATABASE RECOVERY PROCEDURE
-│  │        │
-│  │        └─ Code/import errors in OPDS generator
-│  │           │
-│  │           └─ Step 3: Was OPDS code changed in this deployment?
-│  │              │
-│  │              ├─ YES (OPDS code was modified)
-│  │              │  └─ GO TO: ROLLBACK DECISION (code change broke OPDS)
-│  │              │
-│  │              └─ NO (OPDS code unchanged, only A11y changes)
-│  │                 │
-│  │                 └─ Step 4: Try clearing OPDS cache (if applicable)
-│  │                    │
-│  │                    ├─ Cache clear succeeds, endpoints recover
-│  │                    │  └─ GO TO: CONTINUE MONITORING
-│  │                    │
-│  │                    └─ Cache clear fails or endpoints still fail
-│  │                       └─ GO TO: ROLLBACK DECISION
-│  │                       (Partial deployment state cannot be recovered)
-│  │
-│  └─ If cannot determine database state
-│     └─ GO TO: ROLLBACK DECISION (fail-safe: unknown state)
-│
-└─ OUTCOME: CONTINUE MONITORING or ROLLBACK DECISION
-
-DECISION TIMELINE: 4 minutes max (2 min diagnose + 2 min attempt fix or decide)
-DECISION LOGIC: If OPDS code unchanged, this is likely a data issue → investigate DB first.
-                If OPDS code was changed, this is a code bug → rollback.
-```
-
-**Diagnosis Commands**:
-```bash
-# 1. Check OPDS endpoint error details
-curl -s -H "Accept: application/atom+xml" http://100.70.184.84:8000/api/v2/opds/root.xml 2>&1 | head -20
-
-# 2. Check database tables exist
+# CHECK 1: Confirm backup exists and is readable
 ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
-# For SQLite:
-sqlite3 /path/to/database.db "SELECT name FROM sqlite_master WHERE type='table' AND name LIKE '%opds%' OR name LIKE '%zim%';"
+echo "=== PRE-ROLLBACK CHECK 1: Backup verification ==="
+LATEST_BACKUP=$(ls -t /opt/backups/ | head -1)
+if [ -z "$LATEST_BACKUP" ]; then
+  echo "WARN: No backup found in /opt/backups — rollback will use git revert only"
+else
+  echo "Backup found: /opt/backups/$LATEST_BACKUP"
+  du -sh "/opt/backups/$LATEST_BACKUP"
+fi
 
-# For PostgreSQL:
-psql $DATABASE_URL -c "\dt *opds* OR *zim*"
-EOF
+# CHECK 2: Record current git state
+echo ""
+echo "=== PRE-ROLLBACK CHECK 2: Current git state ==="
+cd /home/awank/dev/SuperClaude_Framework/projects/open-repo
+git log --oneline -3
+echo "Current HEAD: $(git rev-parse HEAD)"
 
-# 3. Check OPDS-specific errors in logs
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 \
-  'sudo journalctl -u open-repo --since "10 minutes ago" | grep -i "opds\|atom\|feed" | tail -10'
+# CHECK 3: Check for active database transactions
+echo ""
+echo "=== PRE-ROLLBACK CHECK 3: Active transactions ==="
+sudo journalctl -u open-repo --since "2 min ago" | grep -i "transaction\|BEGIN\|COMMIT\|ROLLBACK" | tail -5 || echo "No active transaction log entries"
 
-# 4. Check recent code changes (if applicable)
-git log --oneline -5 | grep -i "opds"
-```
-
----
-
-### Scenario 3: Database Migration Succeeds but Constraints Violated
-
-**Conditions**:
-- Deployment Step 6 (Database Migrations) reported success
-- Application starts without errors
-- Endpoints return 200 OK but with partial/incorrect data
-- Database logs show constraint violations or integrity warnings
-
-**Interpretation**: Migration script ran, but resulted in invalid data state
-
-**Decision Tree**:
-
-```
-SCENARIO 3 STARTS: Migration succeeded but constraints violated
-│
-├─ Step 1: Determine severity of constraint violation
-│  │
-│  ├─ Critical (foreign key, unique constraint):
-│  │  │
-│  │  └─ Step 2: Can violation be fixed without data loss?
-│  │     │
-│  │     ├─ YES (simple fix, e.g., update orphaned rows)
-│  │     │  │
-│  │     │  └─ Step 3: Attempt fix
-│  │     │     │
-│  │     │     ├─ Fix succeeds, data is valid
-│  │     │     │  └─ GO TO: CONTINUE MONITORING
-│  │     │     │
-│  │     │     └─ Fix fails or introduces new errors
-│  │     │        └─ GO TO: ROLLBACK DECISION (data state unknown)
-│  │     │
-│  │     └─ NO (cannot fix without manual intervention)
-│  │        └─ GO TO: ROLLBACK DECISION (data is corrupted)
-│  │
-│  └─ Non-critical (check constraint, not null on new column):
-│     │
-│     └─ Step 2: Will this violation cause production errors?
-│        │
-│        ├─ YES (endpoints will fail when accessing affected data)
-│        │  └─ GO TO: ROLLBACK DECISION
-│        │
-│        └─ NO (constraint violation won't affect runtime)
-│           └─ GO TO: CONTINUE MONITORING
-│           (Document constraint violation for post-deployment review)
-│
-└─ OUTCOME: CONTINUE MONITORING or ROLLBACK DECISION
-
-DECISION TIMELINE: 5 minutes max (2 min diagnose + 2 min attempt fix + 1 min decide)
-DECISION LOGIC: Never override constraint violations during deployment window.
-                If data cannot be trusted, rollback is safer than attempting live fixes.
-```
-
-**Diagnosis Commands**:
-```bash
-# 1. Check for constraint violations in logs
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
-sudo journalctl -u open-repo --since "15 minutes ago" | \
-  grep -i "constraint\|integrity\|unique\|foreign key" | head -10
-EOF
-
-# 2. For PostgreSQL: Check violated constraints
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
-psql $DATABASE_URL << 'SQL'
-SELECT constraint_name, table_name, constraint_type 
-FROM information_schema.table_constraints 
-WHERE constraint_type IN ('PRIMARY KEY', 'UNIQUE', 'FOREIGN KEY')
-ORDER BY table_name;
-SQL
-EOF
-
-# 3. For SQLite: Check foreign key status
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
-sqlite3 /path/to/database.db "PRAGMA foreign_key_check;"
-EOF
-
-# 4. Rollback migration (if safe to do so)
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
-cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend
-source /opt/venv/open-repo/bin/activate
-alembic downgrade -1  # Revert one migration version
+# CHECK 4: Confirm database backup (pre-deployment)
+echo ""
+echo "=== PRE-ROLLBACK CHECK 4: Database backup ==="
+ls -lah /opt/db-backups/ 2>/dev/null | head -5 || echo "No database backups found in /opt/db-backups"
 EOF
 ```
 
----
-
-### Scenario 4: Deployment Completes but Traffic Doesn't Flow
-
-**Conditions**:
-- All deployment steps completed successfully
-- Health endpoint returns 200 OK
-- OPDS endpoints return 200 OK with valid data
-- Application logs show normal operation
-- **BUT**: Monitoring from client side shows no traffic, or `/health` unreachable from external networks
-
-**Interpretation**: Application is running locally, but network routing or firewall is blocking access
-
-**Decision Tree**:
-
-```
-SCENARIO 4 STARTS: Application works locally but unreachable from network
-│
-├─ Step 1: Verify application is bound to correct network interface
-│  │
-│  ├─ Bound to 127.0.0.1 (only local access):
-│  │  │
-│  │  └─ Is this expected for this deployment?
-│  │     │
-│  │     ├─ YES (internal-only service)
-│  │     │  └─ GO TO: CONTINUE MONITORING
-│  │     │
-│  │     └─ NO (should be accessible from monitoring network)
-│  │        │
-│  │        └─ Step 2: Change binding to correct interface
-│  │           │
-│  │           └─ Check CLAUDE.md: bind to 100.70.184.84 or specific Tailscale IP
-│  │           (NEVER bind to 0.0.0.0)
-│  │
-│  └─ Bound to correct interface (100.70.184.84 or equivalent):
-│     │
-│     └─ Step 2: Check firewall rules on production host
-│        │
-│        ├─ Firewall blocking port 8000
-│        │  │
-│        │  └─ Allow port 8000: sudo ufw allow 8000/tcp
-│        │  └─ Verify: sudo ufw status | grep 8000
-│        │  └─ Re-test: curl http://100.70.184.84:8000/health
-│        │  └─ If works, GO TO: CONTINUE MONITORING
-│        │
-│        └─ Firewall allows 8000 but still unreachable
-│           │
-│           └─ Step 3: Check network routing
-│              │
-│              ├─ Can monitoring machine ping production host?
-│              │  ping -c 1 100.70.184.84
-│              │  └─ If NO, network is down → GO TO: ROLLBACK DECISION
-│              │
-│              └─ Ping works, but curl fails
-│                 │
-│                 ├─ Check reverse proxy (nginx) if configured
-│                 │  sudo systemctl status nginx
-│                 │  sudo journalctl -u nginx -n 20
-│                 │
-│                 └─ If nginx is down, restart it
-│                    sudo systemctl start nginx
-│                    Re-test access, GO TO: CONTINUE MONITORING
-│
-└─ OUTCOME: CONTINUE MONITORING or ROLLBACK DECISION
-
-DECISION TIMELINE: 3 minutes max (1 min diagnose network + 1 min attempt fix + 1 min verify)
-DECISION LOGIC: This is usually a network/configuration issue, not an application issue.
-                Fix the network/firewall problem, do NOT rollback code.
-                If network is confirmed down, network team must fix (outside deployment scope).
-```
-
-**Diagnosis Commands**:
-```bash
-# 1. Check application binding address
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 \
-  'sudo netstat -tulpn | grep open-repo' || 'sudo lsof -i :8000'
-
-# 2. Test local connectivity on production host
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 \
-  'curl -s http://127.0.0.1:8000/health | jq .'
-
-# 3. Test connectivity from monitoring network
-curl -s http://100.70.184.84:8000/health | jq .
-
-# 4. Check firewall
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 \
-  'sudo ufw status | grep 8000'
-
-# 5. Check nginx (if reverse proxy)
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 \
-  'sudo systemctl status nginx && sudo nginx -t'
-```
+Record the output. If no backup exists, the rollback path is git-only (see Step 2 below, git-only path).
 
 ---
 
-### Scenario 5: Monitoring Infrastructure Fails (Blind Deployment)
+### Step 1: Stop the Current Application
 
-**Conditions**:
-- Deployment proceeds normally
-- Application logs are inaccessible (journalctl unavailable, log file missing)
-- Cannot reach monitoring endpoints (curl commands fail entirely)
-- Cannot SSH to production host reliably
-- **Complete visibility loss for 5+ minutes**
-
-**Interpretation**: Monitoring tools have failed; operating deployment "blind"
-
-**Decision Tree**:
-
-```
-SCENARIO 5 STARTS: Monitoring infrastructure fails, cannot observe system
-│
-├─ Step 1: Is this a local monitoring tool failure or production host is down?
-│  │
-│  ├─ Can ping production host?
-│  │  │
-│  │  ├─ YES (ping succeeds)
-│  │  │  │
-│  │  │  └─ Step 2: Can SSH to host?
-│  │  │     │
-│  │  │     ├─ YES (SSH succeeds)
-│  │  │     │  │
-│  │  │     │  └─ Monitoring tool is broken, but host is up
-│  │  │     │     │
-│  │  │     │     └─ Step 3: Try alternate monitoring method
-│  │  │     │        │
-│  │  │     │        ├─ Restart journalctl/syslog: sudo systemctl restart systemd-journald
-│  │  │     │        ├─ Check if nginx/reverse proxy is blocking: systemctl status nginx
-│  │  │     │        └─ After restart, attempt to access application again
-│  │  │     │           │
-│  │  │     │           ├─ Succeeds → GO TO: CONTINUE MONITORING
-│  │  │     │           └─ Still fails → GO TO: ROLLBACK DECISION (cannot verify state)
-│  │  │     │
-│  │  │     └─ NO (SSH fails)
-│  │  │        │
-│  │  │        └─ Production host is isolated or hung
-│  │  │           │
-│  │  │           └─ Can manual health check recover access?
-│  │  │              │
-│  │  │              └─ Try hard reboot: (contact server admin to force reboot)
-│  │  │              │
-│  │  │              └─ Reboot not available, access not recovering
-│  │  │                 └─ GO TO: ROLLBACK DECISION (cannot verify host state)
-│  │  │
-│  │  └─ NO (ping fails)
-│  │     │
-│  │     └─ Production host is completely unreachable (network down)
-│  │        │
-│  │        └─ This is network team issue, not deployment issue
-│  │           │
-│  │           ├─ If network is expected to be down: Contact ops team
-│  │           └─ If network failure unexpected: Cannot proceed
-│  │              DO NOT ROLLBACK yet; wait for network recovery (max 10 min)
-│  │              After 10 min recovery, execute ROLLBACK DECISION if still down
-│  │
-│  └─ Step 4: Overall decision
-│     │
-│     └─ If any monitoring method recovers and shows application OK
-│        └─ GO TO: CONTINUE MONITORING (increase monitoring frequency to 1 min)
-│     └─ If no monitoring method recovers within 5 minutes
-│        └─ GO TO: ROLLBACK DECISION (fail-safe: cannot verify system state)
-│
-└─ OUTCOME: CONTINUE MONITORING or ROLLBACK DECISION (fail-safe default)
-
-DECISION TIMELINE: 5 minutes max for monitoring recovery attempt
-                   If no recovery, automatic ROLLBACK DECISION after 5 min
-DECISION LOGIC: During active monitoring window, cannot operate blind.
-                Fail-safe: If cannot observe system, rollback to known-good state.
-```
-
-**Recovery Commands**:
 ```bash
-# 1. Test network reachability
-ping -c 2 100.70.184.84
-
-# 2. Test SSH connectivity
-ssh -i ~/.ssh/production_key -o ConnectTimeout=5 ubuntu@100.70.184.84 'echo OK'
-
-# 3. Restart monitoring services (if SSH succeeds)
 ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
-sudo systemctl restart systemd-journald
-sudo systemctl restart rsyslog
-EOF
-
-# 4. Restart reverse proxy if blocking access
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 'sudo systemctl restart nginx'
-
-# 5. Attempt basic connectivity test
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 'systemctl is-active open-repo'
-
-# 6. If all else fails, initiate rollback
-# See ROLLBACK DECISION section below
-```
-
----
-
-## Section 3: Rollback Decision Criteria & Procedures
-
-### When to Rollback: Decision Criteria
-
-Rollback is **MANDATORY** (automatic decision) if ANY of these conditions persist for >5 minutes:
-
-1. **Health check failure**: `/health` returns non-200 or timeout
-2. **Health check cannot be accessed**: Network/firewall preventing access
-3. **Multiple system failures**: Database + Application both showing errors
-4. **Data corruption**: Constraint violations cannot be fixed safely
-5. **Monitoring blind**: Cannot observe system state for 5+ minutes
-6. **Unrecoverable cascade**: 3+ different alert types firing with no fix in sight
-
-Rollback is **RECOMMENDED** if ANY of these conditions:
-
-1. **Error rate >20%** and not improving after 3 minutes
-2. **Response time >5 seconds** on all endpoints
-3. **Database cannot be reached** and database team cannot restore within 5 minutes
-4. **Code crash loop**: Application starts, crashes, restarts repeatedly
-
-### Rollback Procedure (Safe Rollback with Data Integrity)
-
-**Phase 1: Graceful Shutdown (1 minute)**
-
-```bash
-# 1. Stop application gracefully
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'SHUTDOWN'
-echo "=== ROLLBACK: Graceful Shutdown ==="
+echo "=== ROLLBACK STEP 1: Stop application ==="
 sudo systemctl stop open-repo
 sleep 3
-
-# 2. Verify stopped
-if ps aux | grep -E "uvicorn.*open" | grep -v grep > /dev/null; then
-  echo "WARNING: Process still running, force stopping..."
-  sudo pkill -9 -f "uvicorn.*open"
-fi
-echo "✅ Application stopped"
-SHUTDOWN
-
-# 3. Notify monitoring system
-echo "[ROLLBACK] Application stopped at $(date -u +%H:%M:%S UTC)"
+sudo systemctl is-active open-repo && echo "WARN: Still running" || echo "Stopped"
+EOF
 ```
 
-**Phase 2: Database Snapshot Restore (2 minutes)**
+**Expected**: "Stopped". If still running after 3 seconds: `sudo systemctl kill -9 open-repo`
+
+---
+
+### Step 2: Abort Alembic Migration (If Migration Was In-Progress or Partially Applied)
+
+Only run this step if deployment Step 6 ran and the migration may be partially applied. If migration was never attempted, skip to Step 3.
 
 ```bash
-# 1. Identify pre-deployment database backup
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'DB_RESTORE'
-echo "=== ROLLBACK: Database Snapshot Restore ==="
-
-# For SQLite:
-BACKUP_DIR="/opt/db-backups"
-LATEST_BACKUP=$(ls -t "$BACKUP_DIR"/*.db.bak 2>/dev/null | head -1)
-
-if [ -n "$LATEST_BACKUP" ]; then
-  echo "Found backup: $LATEST_BACKUP"
-  
-  # Restore from backup
-  cp "$LATEST_BACKUP" /path/to/database.db
-  chown ubuntu:ubuntu /path/to/database.db
-  chmod 644 /path/to/database.db
-  
-  echo "✅ Database restored from backup"
-else
-  echo "⚠️  No backup found. Database will be restored on next application startup."
-fi
-
-# For PostgreSQL:
-# LATEST_BACKUP=$(ls -t "$BACKUP_DIR"/*.sql.gz 2>/dev/null | head -1)
-# pg_restore --username=postgres --dbname=open-repo < <(gunzip -c "$LATEST_BACKUP")
-
-DB_RESTORE
-```
-
-**Phase 3: Code Rollback (1 minute)**
-
-```bash
-# 1. Revert to previous commit
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'CODE_ROLLBACK'
-echo "=== ROLLBACK: Code Revert ==="
-
-cd /home/awank/dev/SuperClaude_Framework/projects/open-repo
-
-# Get previous commit (before current deployment)
-CURRENT=$(git log --oneline -1)
-PREVIOUS=$(git log --oneline -2 | tail -1)
-
-echo "Current: $CURRENT"
-echo "Reverting to: $PREVIOUS"
-
-# Hard reset to previous commit
-git fetch origin master
-git reset --hard HEAD~1
-
-# Verify
-echo "New HEAD: $(git log --oneline -1)"
-echo "✅ Code reverted"
-
-CODE_ROLLBACK
-```
-
-**Phase 4: Dependency Check (1 minute)**
-
-```bash
-# 1. Verify dependencies are still compatible
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'DEPS'
-echo "=== ROLLBACK: Dependency Verification ==="
-
+ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
+echo "=== ROLLBACK STEP 2: Revert database migration ==="
 cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend
 source /opt/venv/open-repo/bin/activate
 
-# Check critical packages
-pip list | grep -E "fastapi|sqlalchemy|pydantic|uvicorn"
+# Show current state
+echo "Current migration state:"
+alembic current 2>&1
 
-echo "✅ Dependencies verified"
-DEPS
+# Downgrade one step (reverses the most recent migration only)
+echo ""
+echo "Downgrading one migration step..."
+alembic downgrade -1
+
+if [ $? -eq 0 ]; then
+  echo "Migration downgrade successful"
+  echo "Post-downgrade state:"
+  alembic current 2>&1
+else
+  echo "WARN: Migration downgrade failed"
+  echo "Manual intervention may be required"
+  echo "Check: alembic history for what was applied"
+fi
+EOF
 ```
 
-**Phase 5: Application Restart (1 minute)**
+**If downgrade fails**: Do not force it. Proceed to Step 3 (restore from backup). The database backup from pre-deployment will have the correct schema state.
+
+**Data integrity note**: `alembic downgrade -1` is designed to be reversible. It runs the `downgrade()` function defined in the migration script. If the migration added a column, downgrade removes it. Existing row data in other columns is preserved.
+
+---
+
+### Step 3: Restore Previous Code from Backup or Git Revert
+
+**Path A: Restore from filesystem backup** (preferred if backup exists)
 
 ```bash
-# 1. Start application
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'RESTART'
-echo "=== ROLLBACK: Application Restart ==="
+ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
+echo "=== ROLLBACK STEP 3A: Restore from filesystem backup ==="
 
-sudo systemctl start open-repo
-sleep 5
+LATEST_BACKUP=$(ls -t /opt/backups/ | head -1)
+DEPLOY_DIR="/home/awank/dev/SuperClaude_Framework/projects/open-repo"
 
-# 2. Verify started
-if sudo systemctl is-active --quiet open-repo; then
-  echo "✅ Service is active"
-else
-  echo "❌ Service failed to start"
-  sudo journalctl -u open-repo -n 20
+echo "Backup to restore: /opt/backups/$LATEST_BACKUP"
+echo "Deploy directory: $DEPLOY_DIR"
+
+# Rename current (failed) deployment as evidence
+mv "$DEPLOY_DIR" "${DEPLOY_DIR}-failed-$(date +%H%M%S)"
+echo "Moved failed deployment to: ${DEPLOY_DIR}-failed-$(date +%H%M%S)"
+
+# Restore backup
+cp -r "/opt/backups/$LATEST_BACKUP" "$DEPLOY_DIR"
+echo "Restored from backup"
+
+# Verify
+git -C "$DEPLOY_DIR" log --oneline -1
+EOF
+```
+
+**Path B: Revert via git** (use only if no filesystem backup exists)
+
+```bash
+ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
+echo "=== ROLLBACK STEP 3B: Git revert to previous commit ==="
+cd /home/awank/dev/SuperClaude_Framework/projects/open-repo
+
+# Show the commit that was deployed and the one before it
+echo "Currently deployed:"
+git log --oneline -3
+
+PREV_COMMIT=$(git log --oneline -2 | tail -1 | awk '{print $1}')
+echo "Reverting to: $PREV_COMMIT"
+
+# Reset hard to previous commit
+git reset --hard "$PREV_COMMIT"
+
+echo "Post-revert state:"
+git log --oneline -1
+EOF
+```
+
+**Reversibility**: Path A is fully reversible (the failed deployment is preserved with a timestamp suffix). Path B uses `git reset --hard` which does discard local changes, but since all production changes go through the repository, no work is lost.
+
+---
+
+### Step 4: Restore Database Snapshot (If Migration Caused Data Corruption)
+
+Only execute this step if there is evidence of data corruption (e.g., duplicate rows, constraint violations, missing data in application logs). If the migration was a clean schema change with no data manipulation, skip this step.
+
+```bash
+ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
+echo "=== ROLLBACK STEP 4: Restore database snapshot ==="
+
+BACKUP_DIR="/opt/db-backups"
+LATEST_DB_BACKUP=$(ls -t "$BACKUP_DIR"/*.db.bak 2>/dev/null | head -1)
+
+if [ -z "$LATEST_DB_BACKUP" ]; then
+  echo "ERROR: No database backup found. Cannot restore database."
+  echo "If migration caused corruption, manual intervention is required."
   exit 1
 fi
 
-RESTART
+echo "Restoring database from: $LATEST_DB_BACKUP"
+
+# For SQLite: backup current (corrupted) database first, then restore
+cp /path/to/database.db "/path/to/database.db.corrupted-$(date +%H%M%S)"
+cp "$LATEST_DB_BACKUP" /path/to/database.db
+echo "Database restored."
+ls -lah /path/to/database.db
+EOF
 ```
 
-**Phase 6: Post-Rollback Health Check (2 minutes)**
+**PostgreSQL variant** (if using PostgreSQL instead of SQLite):
+```bash
+# Stop app first (done in Step 1)
+# Restore from pg_dump backup:
+LATEST_BACKUP=$(ls -t /opt/db-backups/*.sql.gz | head -1)
+gunzip -c "$LATEST_BACKUP" | psql [connection-string]
+```
+
+---
+
+### Step 5: Restart Application on Previous Version
 
 ```bash
-# 1. Test all endpoints
-echo "=== ROLLBACK: Post-Rollback Verification ==="
+ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 << 'EOF'
+echo "=== ROLLBACK STEP 5: Start previous version ==="
+sudo systemctl start open-repo
+sleep 5
 
-echo "1. Health endpoint:"
-HEALTH=$(curl -s -w "%{http_code}" http://100.70.184.84:8000/health)
-if [[ "$HEALTH" == *"200"* ]]; then
-  echo "✅ Health: OK"
+if sudo systemctl is-active --quiet open-repo; then
+  echo "Service started"
 else
-  echo "❌ Health: FAILED ($(echo $HEALTH | tail -c 4))"
-  echo "ROLLBACK MAY HAVE FAILED. Check logs."
+  echo "ERROR: Service will not start on previous version"
+  sudo journalctl -u open-repo -n 30
+  exit 1
 fi
 
-echo "2. OPDS endpoint:"
-OPDS=$(curl -s -w "%{http_code}" -H "Accept: application/atom+xml" \
-  http://100.70.184.84:8000/api/v2/opds/root.xml)
-if [[ "$OPDS" == *"200"* ]]; then
-  echo "✅ OPDS: OK"
-else
-  echo "❌ OPDS: FAILED ($(echo $OPDS | tail -c 4))"
-fi
+echo "Re-running health check..."
+EOF
 
-echo ""
-echo "Rollback complete. Ready for post-incident review."
-```
-
-**Total Rollback Time**: ~7–10 minutes (target: <10 minutes)
-
----
-
-## Section 4: Data Corruption Recovery Procedures
-
-### When Data Corruption is Suspected
-
-Data corruption is indicated by:
-- Constraint violations that cannot be auto-fixed
-- Orphaned records (foreign key referential integrity broken)
-- Partial migration state (schema changed, but old data not migrated)
-- Database size mismatch (suddenly smaller or larger than expected)
-
-### Recovery Priority
-
-**Priority 1: Preserve Data** (rollback with data snapshot)
-**Priority 2: Restore Service** (rollback application code)
-**Priority 3: Investigate** (post-incident root cause analysis)
-
-### Corruption Recovery Workflow
-
-```
-1. DETECT CORRUPTION
-   ├─ Identify what is corrupted (table, row, constraint)
-   ├─ Determine scope (1 table vs. database-wide)
-   └─ Document: timestamp, error message, affected data
-
-2. DECISION: Can corruption be fixed live?
-   ├─ If YES (e.g., update orphaned rows):
-   │  ├─ Execute fix script
-   │  ├─ Verify data integrity after fix
-   │  └─ If fix succeeds, GO TO: CONTINUE MONITORING
-   │
-   └─ If NO (unknown corruption scope):
-      └─ GO TO: ROLLBACK (safer than attempting live fixes)
-
-3. ROLLBACK (if cannot fix)
-   ├─ Stop application (Phase 1 above)
-   ├─ Restore database backup (Phase 2 above)
-   ├─ Revert code changes (Phase 3 above)
-   ├─ Restart application (Phases 4–5 above)
-   └─ Verify integrity (Phase 6 above)
-
-4. POST-ROLLBACK INVESTIGATION
-   ├─ Compare old database vs. new code
-   ├─ Identify why migration failed
-   ├─ Plan fix for next deployment attempt
-   └─ Create database integrity test for pre-deployment validation
-```
-
-### Data Recovery Examples
-
-**Example 1: Orphaned Foreign Key Records**
-
-```sql
--- Detect orphaned records (if PostgreSQL/MySQL)
-SELECT * FROM opds_entries 
-WHERE catalog_id NOT IN (SELECT id FROM opds_catalogs);
-
--- Fix: either delete orphans or insert missing parent
-DELETE FROM opds_entries 
-WHERE catalog_id NOT IN (SELECT id FROM opds_catalogs);
-
--- Verify fix worked
-SELECT COUNT(*) FROM opds_entries;
-```
-
-**Example 2: Partial Migration (Column Added, Data Not Migrated)**
-
-```sql
--- Issue: New column exists, but data wasn't migrated
--- Symptom: NULL in new required column
-
--- Detect:
-SELECT COUNT(*) FROM opds_entries WHERE new_column IS NULL;
-
--- Fix: Populate with default or computed value
-UPDATE opds_entries 
-SET new_column = 'default_value' 
-WHERE new_column IS NULL;
-
--- Verify:
-SELECT COUNT(*) FROM opds_entries WHERE new_column IS NULL;
--- Should return 0
+# Health check from local machine
+curl -s -w "HTTP %{http_code} Time: %{time_total}s\n" http://100.70.184.84:8000/health
 ```
 
 ---
 
-## Section 5: Partial Deployment State Handling
+### Step 6: Post-Rollback Verification
 
-### Identifying Partial Deployment
-
-Partial deployment occurs when:
-- Some deployment steps completed, but not all
-- Example: Code deployed, database migrated, but service won't start
-- Example: Service running, but OPDS subsystem crashed mid-startup
-
-### Partial State Decision Matrix
-
-| State | Indicator | Decision |
-|-------|-----------|----------|
-| **Code deployed, service not started** | App process missing, logs show startup error | FIX or ROLLBACK (investigate startup error first) |
-| **Service running, OPDS endpoints fail** | Health=OK, /docs=OK, but /api/v2/opds/*=500 | INVESTIGATE (OPDS specific) or ROLLBACK |
-| **Service running, docs endpoints fail** | Health=OK, /api/v2/opds/*=OK, but /docs=500 | INVESTIGATE (docs generation) or ROLLBACK |
-| **Database migrated, application won't connect** | Schema changed, but app fails to connect | ROLLBACK (connection config issue) |
-| **Service partially responsive** | Some endpoints OK, others timeout | INVESTIGATE (isolated failure) or ROLLBACK |
-
-### Recovery Workflow for Partial Deployment
-
-```
-1. IDENTIFY WHICH SUBSYSTEM FAILED
-   ├─ Health endpoint works? → Application core is OK
-   ├─ OPDS endpoints work? → Database and OPDS logic are OK
-   ├─ Docs endpoints work? → FastAPI schema generation is OK
-   └─ Try each endpoint to narrow failure scope
-
-2. ISOLATE THE PROBLEM
-   ├─ If 1 endpoint fails, 2 others work → INVESTIGATE that endpoint
-   ├─ If 2+ endpoints fail → Likely core application issue → ROLLBACK
-   └─ If health works but ALL content endpoints fail → Database issue → INVESTIGATE or ROLLBACK
-
-3. ATTEMPT FIX (max 3 minutes)
-   ├─ For OPDS failures: Check database, verify tables exist
-   ├─ For Docs failures: Restart FastAPI app service
-   ├─ For generic failures: Check logs, identify error
-   └─ Apply targeted fix if obvious (e.g., restart service)
-
-4. DECISION
-   ├─ If fix successful: GO TO: CONTINUE MONITORING
-   ├─ If fix failed or unknown: GO TO: ROLLBACK DECISION
-   └─ Document what subsystem failed for post-incident review
-```
-
----
-
-## Section 6: Post-Incident Audit Procedures
-
-### Immediate Post-Incident (Within 30 minutes of resolution)
-
-1. **Collect Evidence**:
-   - Export all application logs from deployment window
-   - Screenshot system metrics (CPU, memory, disk)
-   - Export monitoring alerts/notifications
-   - Document timeline of events
-
-2. **Preserve Database State**:
-   - Create backup of current database (post-incident state)
-   - Label backup with incident timestamp
-   - Store separately from daily backups
-
-3. **Notify Stakeholders**:
-   - If deployment successful: Send success notification
-   - If rollback executed: Send rollback notification with ETA for retry
-
-### Post-Incident Investigation (Within 24 hours)
-
-See `DEPLOYMENT_POST_INCIDENT_AUDIT_CHECKLIST.md` for detailed procedures.
-
----
-
-## Appendix: Incident Response Command Reference
-
-**Quick Access Commands for Common Scenarios**:
+Run the same health checks as post-deployment verification. All endpoints must return HTTP 200 before declaring rollback complete.
 
 ```bash
-# Get current health status
-curl -s http://100.70.184.84:8000/health | jq .
-
-# Get OPDS status
-curl -s -H "Accept: application/atom+xml" http://100.70.184.84:8000/api/v2/opds/root.xml | head -3
-
-# Get error rate (last 5 min)
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 \
-  'ERRORS=$(sudo journalctl -u open-repo --since "5 min ago" | grep "5[0-9][0-9]" | wc -l); echo "Errors: $ERRORS"'
-
-# Restart application
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 'sudo systemctl restart open-repo'
-
-# Check application status
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 'sudo systemctl status open-repo'
-
-# View recent logs
-ssh -i ~/.ssh/production_key ubuntu@100.70.184.84 'sudo journalctl -u open-repo -n 50'
-
-# Initiate rollback
-# See "ROLLBACK PROCEDURE" section above for full steps
+# Run all endpoint checks
+for ENDPOINT in "/health" "/docs" "/redoc" "/api/v2/opds/root.xml"; do
+  CODE=$(curl -s -o /dev/null -w "%{http_code}" "http://100.70.184.84:8000${ENDPOINT}")
+  echo "$ENDPOINT: HTTP $CODE"
+done
 ```
+
+Expected: all return 200. If any return non-200, escalate to manual intervention — do not attempt another rollback cycle without investigation.
 
 ---
 
-## Document Sign-Off
+## Section 4: Root Cause Investigation Starting Points
 
-**Playbook Version**: 1.0  
-**Created**: June 6, 2026  
-**Valid For**: June 12, 2026 deployment and beyond  
-**Last Updated**: June 6, 2026  
-**Status**: PRODUCTION READY
+Use these in parallel with the decision trees above. Investigation starting points are ordered from most likely to least likely cause for a June 12 Phase 5 A11y deployment.
 
-**Usage Notes**:
-- This playbook is referenced by `POST_DEPLOYMENT_MONITORING_PLAN.md`
-- Incident commander should have this document open during active monitoring window
-- Decision trees are designed to complete within 5 minutes
-- All rollback procedures are designed to complete within 10 minutes
+### Starting Point 1: Docker / Systemd Application Logs
+
+The first 50 lines of recent logs will identify 80% of startup failures.
+
+```bash
+# Immediate: last 50 lines
+ssh ubuntu@100.70.184.84 'sudo journalctl -u open-repo -n 50'
+
+# Filter for errors only
+ssh ubuntu@100.70.184.84 'sudo journalctl -u open-repo --since "09:00" | grep -E "ERROR|CRITICAL|Exception|Traceback" | head -20'
+
+# Full startup sequence (from service start)
+ssh ubuntu@100.70.184.84 'sudo journalctl -u open-repo --since "$(sudo systemctl status open-repo | grep "Active:" | grep -oP "\w{3} \d+ \d+:\d+:\d+")" | head -100'
+```
+
+**Look for**: Python traceback, import errors, database connection refused, port binding errors.
+
+### Starting Point 2: Alembic Migration SQL
+
+If migration Step 6 ran, check what SQL it generated and whether it completed.
+
+```bash
+ssh ubuntu@100.70.184.84 << 'EOF'
+cd /home/awank/dev/SuperClaude_Framework/projects/open-repo/backend
+source /opt/venv/open-repo/bin/activate
+
+# What is the current migration state?
+alembic current 2>&1
+
+# Show migration history
+alembic history 2>&1
+
+# Show the actual SQL that was (or would be) applied — for inspection only, do not run upgrade
+alembic upgrade head --sql 2>&1 | head -50
+EOF
+```
+
+**Look for**: Failed SQL statements, constraint violations, "relation already exists", "column does not exist".
+
+### Starting Point 3: Database Constraints and Schema State
+
+```bash
+# For SQLite — inspect schema directly
+ssh ubuntu@100.70.184.84 'sqlite3 /path/to/database.db ".schema" 2>/dev/null | head -50'
+
+# Check for any constraint violations in logs
+ssh ubuntu@100.70.184.84 'sudo journalctl -u open-repo --since "09:00" | grep -i "constraint\|unique\|foreign key\|integrity" | head -10'
+
+# For PostgreSQL — check what tables exist post-migration
+# ssh ubuntu@100.70.184.84 'PGPASSWORD=$DB_PASS psql -h localhost -U $DB_USER -d $DB_NAME -c "\dt"'
+```
+
+**Look for**: Missing tables the OPDS generator expects, extra tables from partial migration, constraint violation errors.
+
+### Starting Point 4: Health Endpoint Code Path
+
+The `/health` endpoint is the simplest code path. If it returns 500, the failure is at application startup or core initialization, not feature-specific code.
+
+```bash
+# Check if the health endpoint is even registered
+ssh ubuntu@100.70.184.84 'sudo journalctl -u open-repo --since "09:00" | grep -i "health\|startup complete\|application ready" | head -10'
+
+# Check the app startup sequence specifically
+ssh ubuntu@100.70.184.84 'sudo journalctl -u open-repo --since "09:00" | head -30'
+```
+
+**Look for**: "Application startup complete" missing from logs (means startup crashed), "uvicorn running" not appearing (means the process exited immediately).
+
+### Starting Point 5: Resource Exhaustion Root Cause
+
+```bash
+ssh ubuntu@100.70.184.84 << 'EOF'
+# CPU, memory, disk snapshot
+echo "=== Resource Snapshot at $(date -u +%H:%M:%S UTC) ==="
+echo "CPU:"
+top -bn1 | grep "Cpu(s)"
+echo "Memory:"
+free -h
+echo "Disk:"
+df -h /
+echo "Top processes:"
+ps aux --sort=-%cpu | head -8
+echo "OOM killer activity (recent):"
+sudo dmesg | grep -i "oom\|killed" | tail -5 || echo "None"
+EOF
+```
+
+**Look for**: OOM killer events in dmesg (confirms memory exhaustion already caused a kill), disk at 100% (causes log write failures that look like app errors), known background processes (apt-get, systemd-journal vacuum).
+
+---
+
+## Section 5: Escalation — When to Stop and Ask
+
+Do not force a decision if:
+
+1. Rollback appears to be failing (Step 5 service does not start on previous version)
+2. Database snapshot restore fails and corruption is suspected
+3. The same CRITICAL alert fires again within 5 minutes after a restart
+4. Alembic downgrade fails with an error (not just a warning)
+5. You are unsure whether data has been modified in a way that backup restore would lose writes
+
+In any of these cases: stop, preserve the current state (do not run further commands), and document exactly what commands were run and what outputs were received. The post-incident audit (DEPLOYMENT_POST_INCIDENT_AUDIT_CHECKLIST.md) is designed for this handoff.
+
+**Escalation contact**: Team lead / repo owner. Share the output of the pre-rollback check and the most recent 100 log lines.
+
+---
+
+## Section 6: Quick Reference — Incident Severity Classification
+
+| Symptom | Severity | Response Time | Action |
+|---------|----------|---------------|--------|
+| /health returns 200 but slow (200–500ms) | WARN | 5 min | Monitor; check DB latency |
+| /health returns 200 but very slow (500–2000ms) | WARN→CRITICAL | 3 min | Investigate; prepare rollback |
+| /health timeout or non-200 | CRITICAL | 2 min | Service restart → rollback |
+| OPDS 500 error | CRITICAL | 3 min | Check migration → rollback |
+| Error rate 5–10% | WARN | 5 min | Investigate logs |
+| Error rate >10% | CRITICAL | 2 min | Prepare rollback |
+| Error rate >20% | CRITICAL | Immediate | Rollback |
+| CPU idle <20% for >5 min | CRITICAL | 3 min | Find runaway process |
+| Memory available <1GB | CRITICAL | 3 min | Check open-repo memory |
+| Memory available <500MB | CRITICAL | Immediate | Rollback before OOM |
+| Disk available <5GB | CRITICAL | 5 min | Check log growth |
+| Database connection error | CRITICAL | 2 min | Check DB process → rollback |
+| 2+ CRITICAL alerts simultaneously | CASCADE | Immediate | Follow priority matrix (Section 1) |
+
+---
+
+**Playbook Version**: 1.0
+**Created**: June 6, 2026
+**Valid For**: June 12, 2026 deployment window (09:00–10:45 UTC)
+**References**: DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md, POST_DEPLOYMENT_MONITORING_PLAN.md
