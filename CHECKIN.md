@@ -4,6 +4,54 @@
 
 ---
 
+## 🔄 Session 2963 (June 6 19:45–21:15 UTC) — Autonomous Exploration: Stockbot June 9 Readiness + mfg-farm Unblocking
+
+**Status**: ✅ **EXPLORATION QUEUE ADVANCED — 2/3 ITEMS COMPLETE; JUNE 9 + POST-TEST-PRINT PROJECTS HARDENED**
+
+**Work Completed**:
+- ✅ **stockbot: Post-Live-Deployment SLA & Failure Scenario Analysis**
+  - `LIVE_DEPLOYMENT_WORST_CASE_SCENARIOS.md` (3,000+ words, 15 failure modes with recovery procedures)
+  - `LIVE_DEPLOYMENT_SLA_TARGETS.md` (2,500+ words, 10 SLAs calibrated at 60% of OOS performance)
+  - Includes cross-failure matrix, daily scorecard, post-market review procedures
+  - **Value**: June 9 validation protocol fully hardened; user can execute recovery without debugging
+
+- ✅ **mfg-farm: Test Print Outcome Contingency Planning**
+  - `TEST_PRINT_OUTCOME_DECISION_MATRIX.md` (3,500+ words, all 4 outcomes with auto-routing to launch sequence)
+  - `TEST_PRINT_FAILURE_INVESTIGATION_RUNBOOK.md` (2,000+ words, structured investigation + go/no-go gates)
+  - Objective measurement thresholds + confidence-based routing (≥70% iterate, <70% pivot)
+  - **Value**: Instant routing once test print results arrive; eliminates decision discovery time
+
+**Exploration Queue Status**:
+- ✅ 2 of 3 new items COMPLETE (stockbot SLA, mfg-farm contingency)
+- ⏳ 1 item remaining: resistance-research Domains 49-50 framework (4-5h, ready for next session)
+
+**Items Needing Your Input** (unchanged):
+1. **[CRITICAL] open-repo deployment start time** — Confirm 09:00 UTC or 20:00 UTC for June 12
+2. **[URGENT] stockbot Phase 3 decision (June 7 09:00 UTC)** — COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md ready
+3. **[STANDING] resistance-research Wave 1 execution (June 10 14:00 UTC)** — All materials staged
+
+**All Projects Status**:
+- stockbot: Report complete, awaiting June 7 GO/NO-GO decision ← hardened for June 9
+- resistance-research: Phase 2 execution-ready (Wave 1 June 10), Phase 3 research-ready ← Domain H complete
+- cybersecurity-hardening: Blocked on VeraCrypt restart (user action required)
+- mfg-farm: Blocked on test print (user action required) ← contingency planning complete
+- seedwarden: Awaiting user execution of Gates 1-5
+- open-repo: Blocked on deployment time confirmation (user clarification required)
+- All others: Awaiting scheduled execution or paused
+
+**Next Immediate Actions**:
+1. **June 7 09:00 UTC**: Confirm stockbot Phase 3 (GO/CAUTION/NO-GO)
+2. **June 8–9**: If GO confirmed, monitor June 9 13:15–21:00 UTC market validation
+3. **[WHENEVER] test print results arrive**: Use TEST_PRINT_OUTCOME_DECISION_MATRIX.md → instant routing
+4. **[WHENEVER] VeraCrypt restart completes**: Resume cybersecurity-hardening Phase 1 walkthrough
+5. **[WHENEVER] deployment time confirmed**: Execute open-repo pre-flight checklist
+
+**Session Duration**: 90 minutes
+
+**Tokens Used**: ~150K (two parallel subagent sprints)
+
+---
+
 ## 🔄 Session 2962 (June 6 19:01–20:15 UTC) — Stockbot Backtesting Report + Resistance-Research Domain H
 
 **Current Status**: ✅ **TWO MAJOR DELIVERABLES COMPLETE — JUNE 7-10 READY**
