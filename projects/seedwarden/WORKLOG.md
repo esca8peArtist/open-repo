@@ -4,6 +4,52 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 100 — Phase 3 Contractor Search Execution — June 6, 2026
+
+**Task**: Execute Phase 3 contractor search across three specialties: botanical photographers (3–5 targets), nature writers (2–3 targets), and habitat specialists (3–5 targets). Research qualified candidates, verify portfolio quality and licensing terms, draft outreach templates, and produce response tracking template for June 17–30 monitoring window. Commit all deliverables to `/projects/seedwarden/phase-3/`.
+
+**Deliverables produced** (all in projects/seedwarden/phase-3/):
+
+1. `PHASE_3_CONTRACTOR_POOL.md` (v1.0)
+   - 11 candidates across three specialty tracks
+   - Track A (5 photographer candidates): Emma TS Robinson (North London, medicinal herb portfolio, licensing-ready), Kriss MacDonald / Wild About Here (Portugal-based, explicit international licensing practice), PGPA member directory search (100+ members, browse-and-contact procedure documented), Upwork product photography post (US in-person shoot, highest-volume channel), Thumbtack local search (fastest local response channel)
+   - Track B (3 nature writer candidates): Rebecca Lexa (Portland OR, Ten Speed Press author, MA + OMN credentials, dual-track with habitat specialist), Arianna Collins (Western MA, 25 years wild edibles consulting, active freelance practice), Emily Han (LA, Wild Remedies co-author, Certified CA Naturalist)
+   - Track C (3 habitat specialist candidates): Arthur Haines (Maine, Native Plant Trust research botanist, Yale UP author, consulting available), Rebecca Lexa dual-track (PNW region), Conservation Job Board / CNPS / NW-SER referral search (multi-region coverage)
+   - Candidate priority matrix: 11 candidates ranked by success probability (85% to 55%)
+   - Licensing terms reference: commercial use, attribution, exclusivity, IP assignment, derivative works, term
+   - Source URLs verified: emmatsrobinson.co.uk, wildabouthere.com, professionalgardenphotographers.com, rebeccalexa.com, offeringsforcommunitybuilding.com, emilyhan.com, arthurhaines.com, conservationjobboard.com, sercal.org
+
+2. `PHASE_3_OUTREACH_TEMPLATES.md` (v1.0)
+   - Template 1A: Photographer licensing inquiry (use for Emma TS Robinson, Kriss MacDonald, PGPA contacts)
+   - Template 1B: Photographer custom shoot commission (use for Upwork, Thumbtack, local photographers)
+   - Template 2: Nature writer commission (use for Rebecca Lexa, Arianna Collins, Emily Han; calibrated to field identification / natural history scope, explicitly not clinical herbalism)
+   - Template 3: Habitat specialist content contribution (bounded scope: habitat notes + regional plant selection sidebars; calibrated for Arthur Haines, Conservation Board, and CNPS referrals)
+   - Section 4: Follow-up templates for non-responders (7-day follow-up; platform re-post procedure for Upwork/Thumbtack)
+   - Section 5: Upwork job post full text (ready to copy-paste)
+
+3. `PHASE_3_RESPONSE_TRACKING_DASHBOARD.md` (v1.0)
+   - Decision Gate Summary: 8 gates from outreach sent (G1) through contracts signed (G7/G8), each with target date and status field
+   - Track A photographer log: 6 rows (A1–A6), columns for send date, follow-up date, response date, response type, portfolio reviewed, score (/50), decision, notes
+   - Track B writer log: 6 rows (B1–B6), columns include FTC test applicability and vetting score (/100 for clinical track only)
+   - Track C habitat specialist log: 6 rows (C1–C6), columns include region coverage and scope confirmation
+   - Screening rubric quick reference (all three tracks, single-page format)
+   - Final selection decision log: 3 separate tables (photographer, writer, habitat specialist) with full contract and payment fields
+   - Monitoring schedule: day-by-day actions June 17–July 1
+   - WORKLOG entry template for each contract event
+
+**Key research findings logged**:
+- Steven Foster photo library: acquired by American Botanical Council (Austin TX, abc@herbalgram.org) in June 2025. 150,000+ images of 1,700+ medicinal plant species. Contact ABC for commercial licensing of the Foster collection.
+- Emma TS Robinson (emmatsrobinson.co.uk): has existing portfolio images of medicinal herbs and confirmed commercial client work history. UK-based; best used for image licensing, not in-person shoot.
+- Kriss MacDonald / Wild About Here (wildabouthere.com): explicitly advertises international commercial licensing. Best licensing probability in photographer pool.
+- Rebecca Lexa (rebeccalexa.com): "The Everyday Naturalist" published June 2025 by Ten Speed Press. Pacific Northwest region. Dual-track (writer + habitat specialist) engagement opportunity. Contact: rebeccathenaturalist@gmail.com.
+- Arthur Haines (arthurhaines.com): Research botanist, Native Plant Trust, Yale UP author. Personal consulting services available. Northeast region. Highest botanical credential in habitat specialist pool.
+
+**Scope note**: This contractor search covers photographers, nature writers (field identification / natural history / wild edibles), and habitat specialists. It does not replace the clinical herbalist writer track (governed by `PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md`). The two writer tracks are parallel and independent — do not conflate them.
+
+**Status**: Production-ready. All deliverables are in `/projects/seedwarden/phase-3/`. Outreach window opens June 17. Candidates are verified with working URLs and contact methods.
+
+---
+
 ## Item 99 — Phase 3 Photo Contractor Search Infrastructure — June 6, 2026
 
 **Task**: Build Phase 3 photo contractor search infrastructure for the June 8–17 search window. This covers the botanical flat-lay/lifestyle photographer role — a separate contractor track from the herbalist writer (Item 94). User gates 1–5 execute June 7–8; photo contractor search begins June 8.
