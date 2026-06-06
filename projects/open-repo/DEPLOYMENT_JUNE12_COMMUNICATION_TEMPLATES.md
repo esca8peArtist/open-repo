@@ -1,828 +1,387 @@
 ---
-title: "Open-Repo June 12, 2026 Stakeholder Communication Templates"
+title: "Open-Repo June 12, 2026 Deployment Communication Templates"
 project: open-repo
 phase: 5 (final production deployment)
 document_type: communication-templates
-status: READY TO EXECUTE
-created: 2026-06-06
-target_deployment_date: 2026-06-12 (09:00 UTC)
-deployment_window: "09:00–11:00 UTC"
+status: READY TO EXECUTE — populate [BRACKETED] fields before sending
+created: 2026-06-12
+deployment_date: June 12, 2026
+deployment_start_time: "[REQUIRED USER INPUT] — 09:00 UTC or 20:00 UTC (see Date Conflict Notice)"
 ---
 
-# Stakeholder Communication Templates (June 12, 2026)
+# Deployment Communication Templates
+## June 12, 2026
 
-**Purpose**: Copy-paste ready notification templates for all deployment phases. Replace [BRACKETED] placeholders with actual values.
+**Purpose**: Copy-paste ready notification templates for all deployment phases. Replace every `[BRACKETED]` placeholder with actual values before sending. Instructions for each template appear before the template block.
 
-**Distribution**: Slack #deployments channel, email distribution list, Discord orchestrator alerts as needed.
-
----
-
-## Template 1: Pre-Deployment Notification
-
-**Send Time**: 07:00 UTC (2 hours before 09:00 UTC deployment start)
-
-**Recipient**: #deployments Slack channel, stakeholder email list
-
-**Format**: Slack message (formatted for markdown)
+**Distribution channels**: Slack `#deployments` channel, email distribution list, any community forums or GitHub Discussions.
 
 ---
 
-```markdown
-🚀 **DEPLOYMENT ALERT: Open-Repo Phase 5 Production Deployment**
+## Date Conflict Notice — Affects Template Timing
 
-**Deployment Date**: [DATE_FORMATTED] (June 12, 2026)
-**Start Time**: [DEPLOYMENT_START_TIME] (09:00 UTC)
-**Expected Duration**: 45 minutes (maximum 2 hours)
+A confirmed conflict exists between the deployment SOP documents regarding the start time:
 
----
+- **09:00 UTC**: Used in DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md, DEPLOYMENT_JUNE12_PRECHECK_ENVIRONMENT.md, DEPLOYMENT_JUNE12_RISK_MITIGATION.md, and this document (as written)
+- **20:00 UTC**: Used in DEPLOYMENT_JUNE_12_RUNBOOK.md, DEPLOYMENT_JUNE_12_GO_LIVE_CHECKLIST.md, and PHASE_5_COMPLETION_SUMMARY.md
 
-### Expected Impact
-
-- **Service Availability**: May be unavailable during deployment window
-- **Affected Services**: OPDS endpoints, Swagger UI, ReDoc documentation
-- **User-Facing Impact**: Read-only service temporarily offline
-- **Data Safety**: All data is safe; no data loss expected
-- **Content Access**: Will be restored after deployment completes
-
-### Timeline
-
-| Time (UTC) | Activity | Duration |
-|-----------|----------|----------|
-| 09:00 | Deployment starts | — |
-| 09:00–09:10 | Pre-flight checks | 10 min |
-| 09:10–09:35 | Code deployment + migrations | 25 min |
-| 09:35–09:45 | Health verification | 10 min |
-| 09:45 | Expected service restoration | — |
-| 09:45–10:45 | Active monitoring (may see higher latency) | 60 min |
-| 10:45+ | Passive monitoring | 24 hours |
-
-### What's Being Deployed
-
-**Phase 5 Accessibility (A11y) Verification**:
-- WCAG 2.1 AA compliance verified (157 tests passing)
-- 72 automated A11y tests confirmed
-- Enhanced keyboard navigation
-- Improved screen reader support
-- Better contrast ratios
-- Semantic HTML improvements
-
-### Action Required
-
-**For Operations Teams**:
-- [ ] Notify users of maintenance window
-- [ ] Prepare for increased support volume post-deployment
-- [ ] Have rollback procedures ready (if needed)
-- [ ] Monitor error logs during active monitoring window
-
-**For Users**:
-- Please do not deploy code or restart services during this window
-- Plan to access service after 09:45 UTC
-- If urgent access needed during window, contact [CONTACT_NAME]
-
-### Support During Deployment
-
-**Questions or issues?** Contact [DEPLOYER_NAME] on Slack or [EMAIL]
-
-**Real-time updates**: Follow this thread for status updates
+**User action required**: Confirm the canonical start time and update all `[DEPLOYMENT_START_TIME]` and `[DEPLOYMENT_END_TIME]` placeholders across the templates below with the confirmed time. If 20:00 UTC is canonical, all "09:00 UTC" references in this document must be updated to "20:00 UTC" before any template is sent.
 
 ---
 
-**Deployment Decision**: [APPROVED_BY_NAME]  
-**Go/No-Go Decision Time**: [DECISION_TIME] UTC  
-**Confidence Level**: 95%+ (all pre-checks passing)
+## Template Customization Reference
+
+**Placeholders used across all templates**:
+
+```
+[DEPLOYER_NAME]          The person executing the deployment
+[DEPLOYER_SLACK]         Slack handle of the deployer, e.g. @jsmith
+[CONTACT_EMAIL]          Deployer's email address
+[ON_CALL_SLACK]          Slack handle of on-call engineer during monitoring window
+[DEPLOYMENT_START_TIME]  09:00 UTC or 20:00 UTC (confirm before sending)
+[DEPLOYMENT_END_TIME]    09:45 UTC or 20:45 UTC (45 minutes after start)
+[MONITORING_END_TIME]    10:45 UTC or 21:45 UTC (60 minutes after end)
+[STATUS_CHECK_TIME]      20:00 UTC on June 12 (or 06:00 UTC June 13 if 20:00 UTC start)
+[ACTUAL_COMPLETION_TIME] The real clock time when deployment finished
+[ACTUAL_DURATION_MIN]    Actual minutes the deployment took
+[COMMIT_HASH]            Short git commit hash, e.g. abc123d
+[ERROR_DESCRIPTION]      One sentence describing what went wrong
+[FAILURE_STEP]           Which step failed, e.g. "Step 6: Database Migrations"
+[ROLLBACK_ETA]           Estimated UTC time when rollback will complete
+[UPTIME_HOURS]           Hours since deployment completed (should be ~10 by Template 5)
+[ERROR_RATE]             Current error rate, e.g. "0.00%" or "<0.01%"
+[USER_FEEDBACK]          One sentence summarizing any user-reported issues
+```
+
+**How to use these templates**:
+1. Open the template section you need
+2. Copy the entire body between the triple-backtick fences
+3. Paste into Slack / email
+4. Use Find and Replace (Ctrl+H) to substitute every [BRACKETED] value
+5. Verify no placeholder remains before sending
+6. Send to the appropriate channel
 
 ---
 
-*More details: See DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md*
+## Template 1: Pre-Deployment Announcement
+
+**When to send**: June 11 EOD (by 18:00 UTC the day before deployment). This gives stakeholders at least 12 hours of notice before the maintenance window opens.
+
+**Recipient**: `#deployments` Slack channel; email list of all active contributors and any external users of the OPDS catalog.
+
+**Subject** (email): `[SCHEDULED MAINTENANCE] open-repo deployment scheduled June 12, [DEPLOYMENT_START_TIME] UTC`
+
+---
+
+```
+Subject: [SCHEDULED MAINTENANCE] open-repo deployment scheduled June 12, [DEPLOYMENT_START_TIME] UTC
+
+Hello,
+
+We are scheduling a production deployment for the open-repo project.
+
+Deployment details:
+  Date:             June 12, 2026
+  Start time:       [DEPLOYMENT_START_TIME] UTC
+  Expected finish:  [DEPLOYMENT_END_TIME] UTC (45 minutes)
+  Maximum window:   2 hours from start
+
+What is being deployed:
+  - Phase 5 WCAG 2.1 AA accessibility compliance verification
+  - 6 resolved accessibility violations (color contrast, screen reader support)
+  - Enhanced keyboard navigation
+  - No breaking changes to existing OPDS API endpoints
+
+Expected impact during the deployment window:
+  - The OPDS catalog endpoint (/api/v2/opds/*) will be temporarily unavailable
+  - The Swagger UI (/docs) and ReDoc (/redoc) pages will be temporarily unavailable
+  - Existing data is safe — no data loss is expected or planned
+  - Estimated service downtime: 25–35 minutes within the 2-hour window
+
+Rollback plan:
+  If any issue is detected, the previous stable version will be restored within
+  10 minutes. You will be notified immediately if rollback is initiated.
+
+What you should do:
+  - Plan to access the service before [DEPLOYMENT_START_TIME] UTC or after [DEPLOYMENT_END_TIME] UTC
+  - Do not initiate data exports or heavy operations during the window
+  - If you have time-sensitive needs during this window, contact [DEPLOYER_NAME] at [CONTACT_EMAIL]
+
+Questions:
+  Reply to this message or reach out to [DEPLOYER_SLACK] on Slack.
+
+Thank you for your patience.
+
+[DEPLOYER_NAME]
+open-repo project
 ```
 
 ---
 
-## Template 2: Deployment In-Progress Status Update
+## Template 2: Deployment Start Notification
 
-**Send Time**: 09:00 UTC (deployment starts) + every 15 minutes
+**When to send**: At the moment deployment begins — specifically when the pre-flight checklist in DEPLOYMENT_JUNE12_PRECHECK_ENVIRONMENT.md is complete and the deployer is beginning DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md.
 
-**Recipient**: #deployments Slack channel (thread reply)
+**Recipient**: `#deployments` Slack channel.
 
-**Format**: Slack thread update
-
----
-
-### Status Update 1 (09:00 UTC - Deployment Started)
-
-```markdown
-🔄 **DEPLOYMENT IN PROGRESS**
-
-**Status**: Pre-flight checks starting
-**Time**: 09:00 UTC
-**Current Step**: Environment validation
-**Progress**: 0% complete (target 45 minutes)
+**Subject** (email): `[IN PROGRESS] open-repo deployment — [DEPLOYMENT_START_TIME] UTC start`
 
 ---
 
-**Completed**:
-✅ Pre-flight verification initiated
-
-**In Progress**:
-🔄 Environment variable checks
-🔄 Network connectivity tests
-🔄 Database accessibility checks
-
-**Remaining**:
-⏳ Code deployment
-⏳ Dependency installation
-⏳ Health verification
-
-**No issues detected so far**. Will post next update at 09:15 UTC.
 ```
+Subject: [IN PROGRESS] open-repo deployment — [DEPLOYMENT_START_TIME] UTC start
 
----
+Deployment is now in progress.
 
-### Status Update 2 (09:15 UTC - Pre-Flight Complete)
+Start time: [DEPLOYMENT_START_TIME] UTC
+Expected completion: [DEPLOYMENT_END_TIME] UTC
+Current step: Pre-flight environment verification complete. Beginning deployment.
 
-```markdown
-🔄 **DEPLOYMENT IN PROGRESS**
+Pre-flight results (all pass required before proceeding):
+  Environment checks:     PASS
+  Test suite (157/157):   PASS
+  A11y tests (72/72):     PASS
+  Database state:         PASS
+  Backup created:         PASS
 
-**Status**: Pre-flight checks COMPLETE
-**Time**: 09:15 UTC
-**Current Step**: Code deployment
-**Progress**: 20% complete (target completion 09:45 UTC)
+What to expect:
+  The service will be unavailable starting now and through approximately [DEPLOYMENT_END_TIME] UTC.
+  Status updates will be posted to this thread every 15 minutes.
 
----
+If you observe issues after [DEPLOYMENT_END_TIME] UTC:
+  Contact [DEPLOYER_SLACK] immediately on Slack or [ON_CALL_SLACK] for urgent issues.
 
-**Completed** (✅ all passed):
-✅ Environment variables verified
-✅ Network connectivity confirmed
-✅ Database accessible and current
-✅ Python dependencies available
-✅ Pre-deployment tests passing (157/157)
+Next update: [DEPLOYMENT_START_TIME + 15 min] UTC
 
-**In Progress**:
-🔄 Pulling latest code from origin/master
-🔄 Installing updated dependencies
-🔄 Running database migrations
-
-**Remaining**:
-⏳ Health endpoint verification
-⏳ OPDS endpoint testing
-⏳ A11y spot-check validation
-
-**All pre-deployment checks passed**. Proceeding to code deployment.
-```
-
----
-
-### Status Update 3 (09:30 UTC - Deployment Mid-Point)
-
-```markdown
-🔄 **DEPLOYMENT IN PROGRESS**
-
-**Status**: Code deployment IN PROGRESS
-**Time**: 09:30 UTC
-**Current Step**: Dependency installation
-**Progress**: 50% complete (target completion 09:45 UTC)
-
----
-
-**Completed** (✅ all passed):
-✅ Code pulled and deployed
-✅ Latest commit: [COMMIT_HASH] ([COMMIT_MESSAGE])
-✅ Python dependencies installing
-✅ No errors detected in logs
-
-**In Progress**:
-🔄 Finishing dependency installation
-🔄 Database migrations (if needed)
-🔄 Preparing to restart service
-
-**Remaining**:
-⏳ Service restart
-⏳ Health verification
-⏳ Endpoint validation
-
-**Proceeding on schedule**. Still targeting 09:45 UTC completion.
-```
-
----
-
-### Status Update 4 (09:40 UTC - Final Checks)
-
-```markdown
-🔄 **DEPLOYMENT IN PROGRESS**
-
-**Status**: Final verification starting
-**Time**: 09:40 UTC
-**Current Step**: Service startup and health checks
-**Progress**: 85% complete (target completion 09:45 UTC)
-
----
-
-**Completed** (✅ all passed):
-✅ Code deployed (commit: [COMMIT_HASH])
-✅ Dependencies installed
-✅ Database migrations complete
-✅ Service restarted successfully
-✅ Process verified running
-
-**In Progress**:
-🔄 Health endpoint validation
-🔄 OPDS endpoint testing
-🔄 Documentation endpoints check
-🔄 Application logs review
-
-**Remaining**:
-⏳ Final verification sign-off
-
-**Ahead of schedule** — on track for 09:45 UTC completion (or earlier).
+[DEPLOYER_NAME]
 ```
 
 ---
 
 ## Template 3: Deployment Success Notification
 
-**Send Time**: When all verification steps pass (estimated 09:50 UTC)
+**When to send**: Once all post-deployment verification steps in DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md Section 5 have passed and the deployment is confirmed successful. This is expected at approximately [DEPLOYMENT_END_TIME] UTC.
 
-**Recipient**: #deployments Slack channel + leadership email
+**Recipient**: `#deployments` Slack channel; email list (same as Template 1).
 
-**Format**: Slack announcement + detailed summary
-
----
-
-```markdown
-✅ **DEPLOYMENT SUCCESSFUL: Open-Repo Phase 5**
-
-**Deployment Status**: COMPLETE ✅
-**Completion Time**: [ACTUAL_TIME] UTC (target: 09:45 UTC)
-**Total Duration**: [DURATION_MINUTES] minutes (target: 45 min)
-**Issues Encountered**: None
+**Subject** (email): `[COMPLETE] open-repo deployment successful — [ACTUAL_COMPLETION_TIME] UTC`
 
 ---
 
-## Verification Results
+```
+Subject: [COMPLETE] open-repo deployment successful — [ACTUAL_COMPLETION_TIME] UTC
 
-### Pre-Deployment Checks
-✅ 12/12 pre-checks passed
-✅ 157/157 tests passing
-✅ 72 A11y automated tests passing
-✅ 5 manual A11y spot-checks passed
+The June 12 open-repo production deployment has completed successfully.
 
-### Deployment Execution
-✅ Step 1: Code pulled successfully (commit: [COMMIT_HASH])
-✅ Step 2: Service stopped cleanly
-✅ Step 3: Deployment backup created
-✅ Step 4: New code deployed
-✅ Step 5: Dependencies installed
-✅ Step 6: Database migrations complete (or not needed)
-✅ Step 7: Service started successfully
+Completion time:  [ACTUAL_COMPLETION_TIME] UTC
+Duration:         [ACTUAL_DURATION_MIN] minutes (target was 45 minutes)
+Deployed commit:  [COMMIT_HASH]
+Rollback needed:  No
 
-### Post-Deployment Verification
-✅ Health endpoint: 200 OK
-✅ Swagger UI (/docs): 200 OK
-✅ ReDoc (/redoc): 200 OK
-✅ OPDS root endpoint: 200 OK
-✅ OPDS entries endpoint: 200 OK
-✅ Application logs: No critical errors
-✅ System resources: Normal (CPU <50%, memory <70%, disk >5GB free)
+Post-deployment verification results:
+  Health endpoint (/health):              PASS — HTTP 200
+  OPDS root catalog (/api/v2/opds/root.xml): PASS — HTTP 200, valid Atom XML
+  OPDS entries (/api/v2/opds/entries):    PASS — HTTP 200, valid Atom XML
+  Swagger UI (/docs):                     PASS — HTTP 200
+  ReDoc (/redoc):                         PASS — HTTP 200
+  Application error logs:                 PASS — 0 CRITICAL/ERROR entries
+  System resources:                       PASS — within normal range
 
----
+What was deployed:
+  Phase 5 WCAG 2.1 AA accessibility compliance:
+  - All 11 WCAG 2.1 AA criteria now verified passing
+  - 72 automated accessibility tests confirm zero violations
+  - Color contrast fixes on Swagger UI and ReDoc (6 violations resolved)
+  - Keyboard navigation verified across all interactive pages
+  - Screen reader compatibility improved
 
-## What Was Deployed
+The service is fully operational.
 
-**Phase 5 Accessibility (A11y) Verification**:
-- WCAG 2.1 AA compliance verified
-- Enhanced keyboard navigation
-- Improved screen reader support
-- Better color contrast ratios (AA standard)
-- Semantic HTML structure improvements
-- 72 automated A11y tests confirming compliance
+Active monitoring is in progress through [MONITORING_END_TIME] UTC.
+A status report will be sent at [STATUS_CHECK_TIME] UTC (approximately 10 hours post-deployment).
 
----
+If you notice any issues, contact [DEPLOYER_SLACK] or [ON_CALL_SLACK] immediately.
 
-## Service Status
-
-🟢 **OPEN-REPO SERVICE LIVE**
-
-All OPDS endpoints are now available:
-- `GET /health` - Service health check
-- `GET /api/v2/opds/root.xml` - OPDS root catalog
-- `GET /api/v2/opds/entries` - Available entries
-- `GET /docs` - Swagger UI documentation
-- `GET /redoc` - ReDoc documentation
-
-**Performance**: Baseline established at [TIME] UTC
-- Response time: <500ms (p95)
-- Error rate: 0%
-- Success rate: 100%
-
----
-
-## Next Steps
-
-### Active Monitoring (60 minutes)
-- Monitoring through 10:45 UTC
-- Checking error logs every 10 minutes
-- Sampling user requests every 5 minutes
-- Standing by with rollback procedures if needed
-
-### Passive Monitoring (24 hours)
-- Continued monitoring through June 13, 09:00 UTC
-- Automated error alerting enabled
-- Daily health check at 09:00 UTC, 18:00 UTC
-
-### Communication
-- Status updates will continue every hour
-- If any issues detected, immediate notification
-- Incident post-mortem (if needed) scheduled for [DATE]
-
----
-
-## Deployment Sign-Off
-
-**Deployed By**: [DEPLOYER_NAME]  
-**Deployment Time**: [START_TIME] – [END_TIME] UTC  
-**Verified By**: [VERIFIER_NAME]  
-**Verification Time**: [TIME] UTC  
-
-**Approval**: ✅ Production release approved
-
----
-
-## Contact & Support
-
-**Questions?** Reply in thread or ping [DEPLOYER_NAME] on Slack
-
-**Issues during monitoring?** Contact [ON_CALL_ENGINEER] immediately
-
-**Post-mortem/learnings** will be published by [DATE]
-
----
-
-**Thank you for your patience during the maintenance window.**
+[DEPLOYER_NAME]
 ```
 
 ---
 
-## Template 4: Deployment Failure Notification
+## Template 4: Escalation Notification
 
-**Send Time**: Immediately when failure detected (within 1 minute)
+**When to send**: Immediately — within 1 minute of detecting a failure or initiating rollback. Do not wait to investigate before sending the initial notification. Update the thread as the situation evolves.
 
-**Recipient**: #deployments Slack channel + team lead + on-call engineer
+**Recipient**: `#deployments` Slack channel + direct message to team lead + [ON_CALL_SLACK].
 
-**Format**: Slack alert + email to stakeholders
-
----
-
-### Failure Detected Notification
-
-```markdown
-⚠️  **DEPLOYMENT FAILURE DETECTED**
-
-**Status**: FAILED ❌
-**Time Detected**: [TIME] UTC
-**Failed At**: [STEP_NAME] (e.g., "Health Endpoint Verification")
-**Failure Reason**: [BRIEF_DESCRIPTION]
+**Subject** (email): `[ISSUE] open-repo deployment encountered issue — rolling back`
 
 ---
 
-## What Happened
+### 4a: Initial Failure Alert (send within 1 minute of detection)
 
-**Step**: [STEP_NUMBER] - [STEP_NAME]
-**Error**: [ERROR_MESSAGE]
-**Impact**: Service currently [ONLINE/OFFLINE]
+```
+Subject: [ISSUE] open-repo deployment encountered issue — rolling back
 
----
+The open-repo June 12 deployment has encountered an issue.
 
-## Rollback Status
+Detected at: [DETECTED_TIME] UTC
+Failed at:   [FAILURE_STEP]
+Error:       [ERROR_DESCRIPTION]
 
-**Rollback Decision**: INITIATED ✅
-**Rollback Status**: IN PROGRESS
-**Expected Restoration Time**: [TIME] UTC (approximately 10 minutes from now)
+Rollback initiated. The previous stable version is being restored.
+Estimated service restoration: [ROLLBACK_ETA] UTC (7–9 minutes from now)
 
-**Rollback Procedure**:
-1. Stopping current service ✅
-2. Restoring database from backup 🔄
-3. Reverting code to previous version 🔄
-4. Restarting application 🔄
-5. Verification in progress 🔄
+What you should expect:
+  - Service is currently unavailable
+  - The previous version (before today's deployment) will be restored
+  - No data loss is expected — a backup was taken at [BACKUP_TIME] UTC
 
-**Current Time**: [TIME] UTC  
-**Estimated Completion**: [ESTIMATED_TIME] UTC
+I am actively working on restoration. Updates will follow every 2 minutes.
 
----
+Contact [DEPLOYER_SLACK] with urgent questions.
 
-## What We Know
-
-**Root Cause** (preliminary): [DESCRIPTION]
-
-**Affected Services**: [LIST]
-
-**Data Impact**: [ASSESSMENT - "No data loss expected" or specific issue]
-
-**User Impact**: Temporary service unavailability. Expected to restore previous version by [TIME] UTC.
-
----
-
-## Next Steps
-
-1. **Immediate (now)**: Rollback in progress
-2. **5 minutes**: Verify rollback success
-3. **10 minutes**: Post-rollback confirmation
-4. **Post-rollback**: Full incident post-mortem (see below)
-
----
-
-## Incident Post-Mortem
-
-**When**: [DATE/TIME] (within 24 hours)
-
-**Questions to answer**:
-- Why did this fail?
-- What was the duration of the outage?
-- How many users were affected?
-- How can we prevent this in the future?
-
-**Participants**: Deployer, developer, infrastructure team, product
-
-**Post-mortem deliverable**: Updated deployment checklist with new safeguards
-
----
-
-## Real-Time Updates
-
-Status updates will be posted here every 2 minutes during rollback.
-
-*Stand by for rollback completion confirmation...*
+[DEPLOYER_NAME]
 ```
 
 ---
 
-### Rollback In-Progress Update (2 min later)
+### 4b: Rollback Progress Update (send 2 minutes after 4a)
 
-```markdown
-🔄 **ROLLBACK IN PROGRESS**
+```
+Rollback update — [CURRENT_TIME] UTC (2 minutes elapsed)
 
-**Time**: [TIME] UTC  
-**Elapsed**: 2 minutes  
-**ETA**: [TIME] UTC (5–8 more minutes)
+Rollback progress:
+  Step 1 (stop service):         DONE
+  Step 2 (restore database):     IN PROGRESS
+  Step 3 (revert code):          PENDING
+  Step 4 (reinstall deps):       PENDING
+  Step 5 (start service):        PENDING
+  Step 6 (verify endpoints):     PENDING
 
-**Completed**:
-✅ Service stopped
-✅ Database restoration started
+Current status: [BRIEF_STATUS]
+Estimated completion: [ROLLBACK_ETA] UTC
 
-**In Progress**:
-🔄 Database restore: [PERCENTAGE]%
-🔄 Code revert to [COMMIT_HASH]
-
-**Status**: On track for [ETA] UTC completion
+Next update in 5 minutes.
 ```
 
 ---
 
-### Rollback Complete Notification
+### 4c: Rollback Complete Notification (send when service is verified restored)
 
-```markdown
-✅ **ROLLBACK COMPLETE - SERVICE RESTORED**
+```
+Rollback complete — service restored — [RESTORE_TIME] UTC
 
-**Time**: [TIME] UTC  
-**Rollback Duration**: [MINUTES] minutes  
-**Service Status**: ONLINE ✅
+The previous version has been successfully restored.
 
----
+Rollback duration: [ROLLBACK_DURATION_MIN] minutes
+Total service downtime: [TOTAL_DOWNTIME_MIN] minutes
+Data loss: None — backup from [BACKUP_TIME] UTC used
 
-## Verification Results
+Verification:
+  Health endpoint (/health):        PASS — HTTP 200
+  OPDS root (/api/v2/opds/root.xml): PASS — HTTP 200
+  Swagger UI (/docs):               PASS — HTTP 200
 
-✅ Previous version deployed (commit: [COMMIT_HASH])  
-✅ Database restored from backup [TIMESTAMP]  
-✅ Service restarted successfully  
-✅ Health endpoint: 200 OK  
-✅ OPDS endpoints: 200 OK  
-✅ Application logs: No errors in past 5 minutes  
+The service is operational on the previous stable version.
 
----
+Next steps:
+  - Active monitoring continues through [MONITORING_END_TIME] UTC
+  - Root cause investigation underway
+  - Incident post-mortem scheduled for [POSTMORTEM_DATE]
+  - Re-deployment not scheduled until investigation is complete
 
-## Service Status
+Thank you for your patience. I will publish a post-mortem within 24 hours.
 
-🟢 **OPEN-REPO SERVICE NOW LIVE** (previous stable version)
-
-Outage Duration: [MINUTES] minutes  
-Data Loss: None  
-User Impact: Service temporarily unavailable [DURATION]
-
----
-
-## What Happens Now
-
-**Active Monitoring**: Continuing for 60 minutes (through [TIME] UTC)  
-**Monitoring**: Hourly health checks for 24 hours  
-**Post-Mortem**: Scheduled for [DATE/TIME]
-
-**Do NOT attempt re-deployment today.** Incident investigation first.
-
----
-
-## Contact
-
-**For questions**: Reply in thread or ping [DEPLOYER_NAME]  
-**On-call engineer**: [NAME] ([PHONE/SLACK])
-
----
-
-**Thank you for your patience. We apologize for the disruption.**
+[DEPLOYER_NAME]
 ```
 
 ---
 
-## Template 5: Extended Outage Notification (if rollback takes >10 minutes)
+## Template 5: Post-Deployment Status Report
 
-**Send Time**: At 10-minute mark if still ongoing
+**When to send**: Approximately 10 hours after deployment completion — at [STATUS_CHECK_TIME] UTC on June 12 (or June 13 if deployment started at 20:00 UTC). This closes the active monitoring period and gives stakeholders confidence that the deployment is stable.
 
-**Recipient**: #deployments Slack channel + leadership
+**Recipient**: `#deployments` Slack channel; email list (same as Template 1).
 
----
-
-```markdown
-⏱️  **EXTENDED OUTAGE IN PROGRESS**
-
-**Status**: Rollback taking longer than expected
-**Time Elapsed**: 10+ minutes
-**Estimated Time Remaining**: [TIME]
+**Subject** (email): `[POST-DEPLOYMENT] open-repo status report — all metrics nominal`
 
 ---
 
-## What's Happening
+```
+Subject: [POST-DEPLOYMENT] open-repo status report — all metrics nominal
 
-Rollback procedure encountered a delay at: [STEP_NAME]
+10-hour post-deployment status report for the June 12 open-repo deployment.
 
-**Current step**: [DESCRIPTION]  
-**Issue**: [BRIEF_DESCRIPTION]  
-**Impact**: Service continues to be offline
+Deployment completed: [ACTUAL_COMPLETION_TIME] UTC
+This report covers: [ACTUAL_COMPLETION_TIME] UTC to [STATUS_CHECK_TIME] UTC ([UPTIME_HOURS] hours)
 
----
+Service health summary:
+  Uptime since deployment:     100% ([UPTIME_HOURS] hours, 0 interruptions)
+  Health endpoint (/health):   Responding 200 OK, continuous
+  Error rate (HTTP 4xx/5xx):   [ERROR_RATE] (baseline: <0.01%)
+  Average response latency:    within normal range
 
-## Teams Involved
+User feedback:
+  [USER_FEEDBACK]
 
-✅ Deployment engineer working on rollback  
-✅ Infrastructure team investigating bottleneck  
-✅ On-call engineer standing by  
+  (If no issues received: "No user-reported issues in the first 10 hours.")
 
----
+Active monitoring window: CLOSED as of this message
+Passive monitoring: Continues through June 13, [ACTUAL_COMPLETION_TIME] UTC (24 hours total)
 
-## Next Steps
+What was deployed (reminder):
+  Phase 5 WCAG 2.1 AA accessibility compliance — all 11 criteria verified
+  Deployed commit: [COMMIT_HASH]
+  Zero breaking changes to existing API
 
-**If rollback continues past [TIME] UTC**:
-- Escalate to infrastructure team lead
-- Consider alternate recovery path
-- Prepare for extended outage notification (users)
+Next monitoring checkpoint:
+  June 13, [ACTUAL_COMPLETION_TIME] UTC — 24-hour passive monitoring report
+  Contact [ON_CALL_SLACK] if any issue arises before then
 
-**Expected restoration**: [TIME] UTC or earlier
+Thank you to everyone who coordinated during the maintenance window.
 
----
-
-**Next update in 5 minutes.**
+[DEPLOYER_NAME]
 ```
 
 ---
 
-## Template 6: Post-Mortem and Lessons Learned
+## Template Selection Reference
 
-**Send Time**: Within 24 hours of failed deployment
-
-**Recipient**: #deployments Slack channel + engineering team + leadership
-
-**Format**: Detailed summary with action items
-
----
-
-```markdown
-📋 **DEPLOYMENT INCIDENT POST-MORTEM**
-
-**Incident**: Open-Repo Phase 5 Deployment Failure (June 12, 2026)  
-**Date**: June 12, 2026  
-**Time**: 09:XX–09:YY UTC  
-**Duration**: [MINUTES] minutes  
+| Situation | Template | When |
+|-----------|----------|------|
+| Day before — notify stakeholders | Template 1 (Announcement) | June 11 EOD, by 18:00 UTC |
+| Deployment window opens | Template 2 (Start) | Immediately at deployment start |
+| All verification steps pass | Template 3 (Success) | Within 5 min of final verification |
+| Any failure or rollback initiated | Template 4a (Alert) | Within 1 min of detection |
+| Rollback in progress, 2 min update | Template 4b (Progress) | +2 min, then every 5 min |
+| Rollback complete, service live | Template 4c (Restored) | Within 2 min of verification |
+| 10 hours post-deployment | Template 5 (Status Report) | [STATUS_CHECK_TIME] UTC |
 
 ---
 
-## Executive Summary
+## Placeholder Completion Checklist
 
-Deployment of Phase 5 A11y verification failed at [STEP] due to [ROOT_CAUSE]. Rollback executed successfully; service restored to previous stable version by 09:XX UTC.
-
-**Impact**: 
-- Outage duration: [MINUTES] minutes
-- Users affected: [ESTIMATED_NUMBER]
-- Data loss: None
-- Financial impact: [ASSESSMENT]
-
----
-
-## Timeline
-
-| Time (UTC) | Event | Owner |
-|-----------|-------|-------|
-| 09:00 | Deployment started | [NAME] |
-| 09:XX | Failure detected | [NAME] |
-| 09:YY | Rollback initiated | [NAME] |
-| 09:ZZ | Service restored | [NAME] |
-
----
-
-## Root Cause Analysis
-
-**Primary Cause**: [DESCRIPTION]
-
-**Contributing Factors**:
-1. [FACTOR 1]
-2. [FACTOR 2]
-3. [FACTOR 3]
-
-**Why wasn't this caught in pre-checks?**
-[EXPLANATION]
-
----
-
-## What We'll Change
-
-### Immediate Changes (for next deployment)
-- [ ] Add [CHECK/TEST] to pre-deployment checklist
-- [ ] Increase monitoring sensitivity for [METRIC]
-- [ ] Update rollback procedure: [IMPROVEMENT]
-
-### Follow-Up Actions (within 1 week)
-- [ ] [ACTION 1] — Owner: [NAME], Due: [DATE]
-- [ ] [ACTION 2] — Owner: [NAME], Due: [DATE]
-- [ ] [ACTION 3] — Owner: [NAME], Due: [DATE]
-
----
-
-## Lessons Learned
-
-**What Worked Well** ✅:
-- Rollback procedures executed successfully
-- Communication was clear and timely
-- Team responded quickly
-
-**What Could Improve** 📝:
-- [IMPROVEMENT 1]
-- [IMPROVEMENT 2]
-- [IMPROVEMENT 3]
-
----
-
-## Next Deployment Planning
-
-**Deployment Retry Date**: [DATE] (after fixes applied)  
-**Changes Required**: [LIST]  
-**Testing Required**: [LIST]  
-**Estimated Confidence**: [PERCENTAGE]%
-
----
-
-## Attendees
-
-- [NAME] - Deployer
-- [NAME] - Developer
-- [NAME] - Infrastructure
-- [NAME] - Product
-
----
-
-**Post-Mortem Completed By**: [NAME]  
-**Date**: [DATE]  
-**Review Date**: [DATE] (30 days)
-```
-
----
-
-## Discord Orchestrator Alert Format
-
-**For automated/orchestrator alerts** (if using Discord webhooks):
-
-```json
-{
-  "content": null,
-  "embeds": [
-    {
-      "title": "🚀 Deployment Status: Open-Repo Phase 5",
-      "description": "June 12, 2026 Production Deployment",
-      "color": 2071697,
-      "fields": [
-        {
-          "name": "Status",
-          "value": "[SUCCEEDED/FAILED/IN_PROGRESS]",
-          "inline": true
-        },
-        {
-          "name": "Time",
-          "value": "[TIMESTAMP] UTC",
-          "inline": true
-        },
-        {
-          "name": "Duration",
-          "value": "[DURATION_MINUTES] minutes",
-          "inline": true
-        },
-        {
-          "name": "Current Step",
-          "value": "[STEP_NAME]",
-          "inline": true
-        },
-        {
-          "name": "Commit",
-          "value": "[COMMIT_HASH]",
-          "inline": false
-        },
-        {
-          "name": "Details",
-          "value": "[DESCRIPTION/ERROR_MESSAGE]",
-          "inline": false
-        }
-      ],
-      "footer": {
-        "text": "Open-Repo Production Deployment"
-      }
-    }
-  ]
-}
-```
-
----
-
-## Quick Reference: Template Selection
-
-| Scenario | Template | Send Time |
-|----------|----------|-----------|
-| 2 hours before deployment | #1 (Pre-Deployment) | 07:00 UTC |
-| Deployment starts | #2.1 (In-Progress Start) | 09:00 UTC |
-| Every 15 min during deployment | #2.2–2.4 (Status Updates) | Every 15 min |
-| Deployment successful | #3 (Success) | 09:50 UTC |
-| Failure detected | #4.1 (Failure Alert) | Within 1 min |
-| Rollback in progress | #4.2 (Rollback Update) | +2 min, then +5 min |
-| Rollback complete | #4.3 (Rollback Complete) | When restored |
-| Extended outage | #5 (Extended Outage) | At 10-min mark |
-| Post-mortem (24h later) | #6 (Lessons Learned) | Within 24h |
-
----
-
-## Template Customization Guide
-
-### Placeholders to Replace
-
-**[BRACKETED]** placeholders appear in every template. Examples:
+Complete this before the deployment window opens. Record actual values here for reference during deployment.
 
 ```
-[DATE_FORMATTED]           → June 12, 2026 09:00 UTC
-[DEPLOYMENT_START_TIME]    → 09:00
-[DURATION_MINUTES]         → 45
-[DEPLOYER_NAME]            → John Smith
-[CONTACT_NAME]             → Sarah Johnson
-[COMMIT_HASH]              → abc123d7f9e2
-[COMMIT_MESSAGE]           → feat(open-repo): Phase 5 A11y verification
-[STEP_NAME]                → "Health Endpoint Verification"
-[STEP_NUMBER]              → 4
-[ERROR_MESSAGE]            → "ConnectionError: Failed to reach database"
-[BRIEF_DESCRIPTION]        → "Database connection timeout during health check"
-[ESTIMATED_TIME]           → 09:18 UTC
-[TIME]                     → 09:12 UTC
-[PERCENTAGE]               → 75%
-[EMAIL]                    → deployer@company.com
-[ON_CALL_ENGINEER]         → On-Call Engineer (Slack: @oncall)
-[PHONE/SLACK]              → +1-555-0123 or @sarah.johnson
-[ACTUAL_TIME]              → 09:47 UTC
-[REASON]                   → "Health endpoint check failed (500 error)"
-[ASSESSMENT]               → "No data loss expected"
-[MINUTES]                  → 18
-[VERIFIER_NAME]            → Jane Doe
-[METRIC]                   → "error_rate"
-[IMPROVEMENT]              → "Add database connection test to pre-flight"
-[ACTION 1]                 → "Add database failover test to pre-checks"
-[NAME]                     → Engineer name
-[DATE]                     → Date (e.g., June 12, 2026)
+[DEPLOYER_NAME]          = ________________________________
+[DEPLOYER_SLACK]         = ________________________________
+[CONTACT_EMAIL]          = ________________________________
+[ON_CALL_SLACK]          = ________________________________
+[DEPLOYMENT_START_TIME]  = ________________________________ UTC  (resolve date conflict first)
+[DEPLOYMENT_END_TIME]    = ________________________________ UTC
+[MONITORING_END_TIME]    = ________________________________ UTC
+[STATUS_CHECK_TIME]      = ________________________________ UTC
+[BACKUP_TIME]            = ________________________________ UTC  (filled in during pre-flight)
+[POSTMORTEM_DATE]        = ________________________________      (fill in if rollback occurs)
 ```
 
-### Color Coding in Slack
-
-- 🟢 **Green** = Success, healthy, ready
-- 🟡 **Yellow** = Warning, in progress, needs attention
-- 🔴 **Red** = Failure, critical, action required
-- 🔵 **Blue** = Information, status update
-
-### Copy-Paste Instructions
-
-1. Open template section (e.g., Template 1)
-2. Copy entire markdown block
-3. Open Slack or email client
-4. Paste template
-5. Use Find & Replace (Ctrl+H) to replace all [BRACKETED] values
-6. Verify all placeholders replaced
-7. Send to distribution
+**Do not send any template with unfilled [BRACKETED] placeholders.**
 
 ---
 
-## Document Information
-
-**Communication Templates Version**: 1.0  
-**Created**: June 6, 2026  
-**Based On**: DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md  
-**Templates Included**: 6 scenarios + Discord format  
-**Valid For**: June 12, 2026 deployment and beyond  
-**Last Updated**: June 6, 2026
+**Document Version**: 2.0
+**Created**: June 12, 2026
+**Supersedes**: DEPLOYMENT_JUNE12_COMMUNICATION_TEMPLATES.md v1.0 (June 6, 2026)
+**Valid For**: June 12, 2026 deployment
+**Reference Documents**: DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md, DEPLOYMENT_JUNE12_RISK_MITIGATION.md
