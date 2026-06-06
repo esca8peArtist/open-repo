@@ -107,6 +107,64 @@
 **Deadline**: June 25 (ready for post-Phase-2-Wave-1 planning, zero blocking current work)
 **Status**: ⏳ QUEUED for June 10-20 (after Domain 51 Wave 1 execution + checkpoint analysis completes; pending Phase 2 signal assessment June 15)
 
+### 98. ✅ mfg-farm — Laser Engraving Market Research & Supplier Sourcing (Session 2917 COMPLETE)
+**Status**: Completed June 6, 2026 (Session 2917, 03:45-03:49 UTC). All three deliverables production-ready and committed (commit 25c31058).
+**Decision: xTool S1 40W ($1,549-1,899) is optimal Phase 1 machine; break-even at 2-3 months at 60+ orders/month.** Underserved niches identified: cable management, desk nameplates, musician accessories, premium pet accessories.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `LASER_ENGRAVING_MARKET_ANALYSIS.md` (4,100+ words; 5-machine equipment comparison: xTool S1 vs GlowForge Pro vs OMTech 60W vs Thunder Nova Plus 35 vs Ortur Master 3; market growth 6.96-8.2% CAGR; competitor landscape analysis of 15 Etsy sellers; Q4 seasonality 40-55% of annual revenue)
+  - ✅ `LASER_SUPPLIER_SOURCING_MATRIX.md` (3,200+ words; 5 equipment vendors with pricing/delivery/warranty; 3 material suppliers (MakerFlo wholesale, JPPlus, Master Maker Crafts); monthly consumables cost $45-75)
+  - ✅ `LASER_ENGRAVING_PRODUCT_STRATEGY.md` (3,600+ words; 3-tier product strategy (basic/premium/custom); break-even analysis (35-90 units depending on tier); revenue projections at 60/120/200 orders/month; underserved niches identified; pricing model based on 4-to-6 Rule)
+**Key findings**:
+  - **xTool S1 40W optimal for Phase 1**: Class 1 enclosed (no external ventilation mandatory), 40W cutting power, fits home/spare bedroom (24"×36" cutting area)
+  - **Break-even timeline**: 35 units at $130/unit (Tier 3 desk sets) → 64 units at $55/unit (walnut cutting boards) → 90 units at $40/unit (bamboo)
+  - **At 200 orders/month**: $8,000 gross revenue, $5,220 gross profit (59-89% net margin after 10-12% Etsy fees)
+  - **Startup cost**: $2,288 total (machine $1,549 + LightBurn software $60 + rotary attachment $160 + ventilation $300 + initial materials $219)
+  - **Underserved Etsy niches**: Custom cable management (<200 listings), desk nameplates/labels (<1,000 listings), musician accessories (<500 listings), premium pet accessories beyond basic ID tags
+  - **Competitive differentiation**: Speed (1-3 day turnaround), lifestyle photography quality, distinctive illustration style + personalization. Price competition is losing strategy.
+**Owner**: general-research subagent (Session 2917)
+**Deadline**: June 15 ✅ COMPLETE (June 6, 9 days early)
+**Confidence**: 95%+ — all market data sourced from current 2026 reports, competitor analysis from live Etsy listings, supplier pricing from vendor sites
+
+---
+
+### 99. ⏳ cybersecurity-hardening — Phase 2 Threat Environment Update (Q2 2026) (Due June 20)
+**Context**: Phase 1 threat model finalized May 26. Government surveillance expansion continues (DOGE litigation, FBI facial recognition expansion, DHS Mobile Fortify deployment). Phase 2 scenario playbooks (immigration evasion, activist organizing, journalist security) must reflect current threat environment. Update cycle needed before Phase 2 distribution begins (~June-July).
+**Scope**:
+  - June 2026 government surveillance updates: DOGE litigation status, FBI FACE Services expansion, DHS Mobile Fortify nationwide deployment timeline, ICE-at-polls threat development
+  - Data broker intelligence: New Thomson Reuters CLEAR contracts (May 31 contract expiry triggers renewal?), Palantir government deployments, new partnerships (state/local government data sharing)
+  - Technical threat evolution: Cellebrite AFU access capabilities (Apple iOS 17 changes), deepfake technology deployment (election-specific tools), facial recognition accuracy improvements, LiDAR surveillance capability
+  - Legislative/policy changes: June 2026 congressional developments (RESTRICT Act, AI governance), state-level privacy law updates (CA, NY, Illinois enforcement milestones)
+  - Phase 2 playbook implications: Which new threats require scenario updates? (e.g., if DHS Mobile Fortify nationwide, activate biometric countermeasures section early)
+**Deliverables**:
+  - `THREAT_ENVIRONMENT_Q2_2026_UPDATE.md` (government expansion summary, data broker intelligence, technical evolution, legislative milestones)
+  - `PHASE_2_THREAT_INTEGRATION_CHECKLIST.md` (which playbooks need updates, specific threat additions per scenario, implementation priority)
+  - Updated threat model sections in `opsec-playbook.md` (integration patches ready for Phase 2)
+**Owner**: cybersecurity-hardening subagent
+**Deadline**: June 20 (before Phase 2 Tier 2 distribution begins)
+**Status**: ⏳ QUEUED for June 6-15 research window (independent of Phase 1 completion)
+**Confidence**: 85%+ — threat intelligence available via news, policy tracking, government disclosures
+
+---
+
+### 100. ⏳ open-repo — June 12 Deployment Runbook & Post-Deployment Monitoring Plan (Due June 11)
+**Context**: Phase 5 A11y verification complete (May 2026), deployment approved for June 12. Current DEPLOYMENT_JUNE_12_RUNBOOK.md exists but requires completion of step-by-step procedures and post-deployment monitoring framework.
+**Scope**:
+  - Pre-flight checklist: 10-min verification (database schema, GitHub Actions status, test suite pass rate, environment variables)
+  - Deployment procedure: 8-step manual process (code push, Docker build, secret rotation, database migration, service restart, health check, logging verification, rollback procedure)
+  - Post-deployment monitoring: 60-min active monitoring (error logs, response times, endpoint health, feature validation), 24-hour passive monitoring (log aggregation, error rate trending, user interaction patterns)
+  - Rollback procedures: Fast rollback if health checks fail post-deploy (revert commit, restart services, restore previous database snapshot)
+  - Stakeholder communication: Deployment notification template (GitHub, Discord, email), status page updates, incident response protocol
+**Deliverables**:
+  - `DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md` (complete pre-flight, deployment, and rollback steps with commands)
+  - `POST_DEPLOYMENT_MONITORING_PLAN.md` (monitoring checklist, alert thresholds, escalation procedures, incident response playbook)
+  - Deployment schedule calendar (June 12 09:00 UTC, 2-hour deployment window)
+**Owner**: open-repo subagent
+**Deadline**: June 11 23:00 UTC (ready for June 12 deployment execution)
+**Status**: ⏳ QUEUED for June 6-11 preparation (independent of Phase 5 completion)
+**Confidence**: 95%+ — deployment infrastructure complete, requires documentation finalization only
+
+---
+
 ### 97. ✅ seedwarden — Phase 3 Production Sprint Risk Mitigation & Solo Fallback Architecture (Session 2907 VERIFIED)
 **Status**: Completed June 5-6, 2026 (Session 2907 verification). All three deliverables production-ready and committed.
 **Deliverables** (ALL COMPLETE):
