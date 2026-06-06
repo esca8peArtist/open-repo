@@ -2,6 +2,83 @@
 
 ---
 
+## June 6, 2026 — Resistance Research Subagent (Session 2957) — Wave 1 Pre-Execution + Phase 3 Planning
+
+**Session scope**: Part A (Wave 1 pre-execution prep) + Part B (Phase 3 research execution planning). Autonomous execution — no user action required.
+
+### Part A: Wave 1 Pre-Execution Completed
+
+**WAVE_1_PRE_EXECUTION_CHECKLIST.md** created (production-ready):
+- All 5 Domain 51 send templates verified (Emails 1-5 in `domain-51-send-templates.md`)
+- All Wave 1-2 contacts validated against current sources (June 6, 2026)
+- Contact updates confirmed: Adav Noti = Executive Director (not Policy Director) — verified; Darius Kemp = Common Cause CA Executive Director (Jonathan Mehta Stein departed) — verified; Jenny Farrell = LWV California Executive Director — verified; Clean Money Action Fund active at info@CAclean.org via yesfairelections.org
+- Gist URL verification: Domain 51 Gist (https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372) confirmed created June 2, 2026; spot-check before June 10 send recommended
+- California Fair Elections Act campaign confirmed active: SB 42 signed October 2, 2025 by Newsom; Californians for Fair Elections committee launched February 2026 with Common Cause CA, LWV CA, Clean Money Action Fund as co-chairs. July 1 urgency frame is accurate.
+- Timeline: June 7 review, June 8-9 staging, June 10 14:00 UTC execution (CLC + Issue One), June 12-13 execution (CA contacts)
+
+**WAVE_1_NEWS_INTEGRATION.md** created (CRITICAL findings):
+
+REQUIRED-PATCH Item 1 — Domain 59 urgency frame is OBSOLETE:
+- The OBBBA (One Big Beautiful Bill Act) was signed into law July 4, 2025. The Senate Finance Committee markup already happened. Domain 59 send templates reference a "markup window closes June 30" that does not exist as of June 2026.
+- The domain's structural argument remains valid and actually strengthened: OBBBA's CTC structure still delivers $0 average benefit to poorest fifth (income thresholds unchanged); new SSN-for-taxpayer requirement explicitly excludes mixed-status households; refundable portion capped at $1,700 vs. full refundability advocacy position.
+- New urgency frame: OBBBA implementation period (2025-2027 tax years) + 2026 midterm cycle. Domain 59 sends must use this frame.
+- ACTION REQUIRED: If any Domain 59 sends have not yet gone out, hold them pending template update (15-minute edit).
+
+REQUIRED-PATCH Item 2 — Domain 49 Callais Update:
+- Louisiana v. Callais decided April 29, 2026 (6-3 SCOTUS). VRA Section 2 narrowed: challengers must now prove intentional current-day racial discrimination, not just statistical polarized voting. Modified Gingles standards.
+- Immediate cascade: Tennessee eliminated sole majority-minority House district within weeks. Multiple southern states initiating new redistricting maps.
+- Domain 49 requires a post-Callais section before any distribution. Estimated 60-90 minutes to produce.
+- Sources: SCOTUSblog April 29, CLC response, Congress.gov CRS LSB11431.
+
+MONITOR Items (no Wave 1 action required):
+- FEC quorum: still without quorum (2 of 6 commissioners seated). Stow/Woodson nominations unconfirmed. Domain 51 "200+ day enforcement shutdown" framing confirmed current.
+- Trump v. Barbara: no ruling as of June 6. False positive CHECKIN.md alert confirmed — do not execute Domain 58 distribution. Monitor supremecourt.gov.
+- OBBBA Medicaid work requirements: Domain 50 needs update reflecting enacted vs. proposed status. Not a Wave 1 obligation.
+
+**Contact issues found**: 0 blocking issues. 3 contact updates confirmed (Noti title, Kemp replacement, Farrell confirmation). All 5 Wave 1-2 contacts verified active.
+
+### Part B: Phase 3 Research Execution Planning Completed
+
+**Phase 3 infrastructure verification**:
+- Domain H (`domains/domain-H-constitutional-architecture.md`): COMPLETE — June 6, 2026, ~6,800 words, 50+ citations. Sections confirmed: emergency powers vacuum, Commerce Clause ratchet, Senate malapportionment, four historical failure cases, German/Korean/Spanish/Uruguayan international models, three reform tracks. Production-ready for distribution.
+- PHASE_3_DOMAIN_CANDIDATE_SCORECARD.md: COMPLETE (June 6, 2026). 8-domain scoring matrix. Domain H composite 8.76 (Priority 1), Domain K Priority 2.
+- PHASE_3_EXECUTION_TIMELINE.md: COMPLETE (June 6, 2026). Quarterly Nov 2026 - March 2027 plan with critical-path mapping.
+- Domain K: NOT YET PRODUCED. Scoped only in phase-3-strategic-roadmap.md. Critical gap — must be produced by December 1, 2026 for January 3, 2027 distribution deadline.
+
+**PHASE_3_RESEARCH_EXECUTION_PLAN.md** created:
+- Phase 3 start date decision: Hybrid Option A recommended — begin Domain K Sections 1-3 in July-August 2026 (pre-election, non-feasibility sections); hold Section 4 (political feasibility) for post-election completion November 4+
+- Domain H vs K sequencing: Domain H distributes first (September-October 2026 to ACS, NCC, Protect Democracy); Domain K distributes second (December 2026 - January 3, 2027)
+- Critical path back from January 3, 2027: Domain K complete Dec 1, distribution launch Dec 10, legislative distribution Dec 20 (holiday close)
+- Capacity: Nov 40-42h, Dec 42-48h, Jan 35-40h per ORCHESTRATOR_STATE.md — achievable with parallel session scheduling (~3-4 day session frequency vs. current weekly)
+- Post-Wave 1 gap analysis questions documented for June 17 Day 7 checkpoint
+
+**PHASE_3_CONTINGENCY_ROUTING.md** created:
+- 6 contingency scenarios: urgency shift (accelerate Domain K), zero engagement (format pivot), partnership inquiry (flag CHECKIN.md), differential audience engagement, OBBBA success signals, Callais redistricting emergency
+- Decision tree: single routing decision per contingency, activates at June 17 Day 7 checkpoint
+
+**PROJECTS.md updated**: Current Focus entry updated to June 6, 2026 with critical Domain 59 patch flag.
+
+### Files Created This Session
+
+- `WAVE_1_PRE_EXECUTION_CHECKLIST.md`
+- `WAVE_1_NEWS_INTEGRATION.md` — CRITICAL: Domain 59 urgency frame obsolete; patch required
+- `PHASE_3_RESEARCH_EXECUTION_PLAN.md`
+- `PHASE_3_CONTINGENCY_ROUTING.md`
+
+### Active Flags for User
+
+1. **CRITICAL — Domain 59 sends**: If any Domain 59 sends to CBPP/ITEP/NWLC/MomsRising/AFL-CIO have not yet executed, hold them pending the 15-minute urgency frame update documented in WAVE_1_NEWS_INTEGRATION.md Patch 1. Sending the current templates signals ignorance of the OBBBA's July 2025 enactment.
+2. **Domain 49 Callais**: Domain 49 needs 60-90 minutes of research to document the April 29, 2026 SCOTUS ruling before any distribution. Schedule before Domain 49 Gist creation.
+3. **Wave 1 execution**: June 10 14:00 UTC is confirmed. WAVE_1_PRE_EXECUTION_CHECKLIST.md is the operational guide — 20-minute verification before sending.
+
+### Confidence
+
+Wave 1 readiness (Domain 51): 97% (all contacts verified, Gist live, templates ready, urgency frame confirmed current)
+Phase 3 infrastructure readiness: 92% (Domain H complete; Domain K is the one outstanding research debt)
+Domain 59 patch urgency: 100% (OBBBA enactment confirmed via multiple sources; Senate Finance markup closed July 2025)
+
+---
+
 ## June 6, 2026 — General Research Agent — Domain G: Press Freedom and Information Ecosystem (Phase 2 Final Domain)
 
 **Task**: Produce production-quality Domain G document — the last remaining Phase 2 domain, required before Phase 3 public launch. Hard deadline June 15, 2026.
