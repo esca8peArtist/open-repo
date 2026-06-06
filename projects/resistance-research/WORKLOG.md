@@ -2,6 +2,26 @@
 
 ---
 
+## June 7, 2026 — General Research Agent — Phase 3 Domain 57 Pre-Planning Complete
+
+**Session scope**: Phase 3 Domain 57 (Multilateral Withdrawal and Unilateralism) pre-planning research sprint. Three deliverable documents created in `projects/resistance-research/phase-3-research/`.
+
+**Files created**:
+- `phase-3-research/PHASE_3_DOMAIN_57_RESEARCH_OUTLINE.md` (~4,000 words): Four research zones (legislative inventory, constitutional feasibility, international precedent, coalition activation); 16 research questions; 18–22 hour timeline; constitutional/fiscal implications analysis; domain cross-references to K, H, 28.
+- `phase-3-research/PHASE_3_DOMAIN_57_SOURCES_AND_CONTACTS.md` (~3,000 words): 49 primary sources with quality assessments and URLs; 7 expert contacts with email addresses, institutional affiliations, specific outreach angles, and scheduling context; 5 source gaps with researcher action items.
+- `phase-3-research/PHASE_3_DOMAIN_57_PRELIMINARY_FINDINGS.md` (~3,200 words): 8 preliminary findings with confidence assessments; 3 original Phase 3 arguments (non-delegation by exit, First Amendment domestic hook via Smith v. Trump, subnational resistance architecture); production positioning for UNGA 81 window.
+
+**Key findings**:
+- Hungary's May 27, 2026 ICC withdrawal reversal (133-37 parliamentary vote) confirmed as strongest proof-of-concept for reversibility — reversal completed before June 2 Rome Statute exit deadline.
+- Smith v. Trump (D. Maine) preliminary injunction (July 18, 2025) provides domestic First Amendment hook for ICC sanctions advocacy — converts international law frame into civil liberties frame.
+- NDAA Section 1250A (2024) NATO protection is the legislative model for extending treaty withdrawal constraints to non-NATO agreements — Phase 3 maps the constitutional theory for extension.
+- Three peer-reviewed 2025 sources identified (Patberg JIPT, Brill Global Governance, ISQ) that provide academic grounding Phase 2 lacked.
+- Executive contact for all 7 scholars/practitioners identified, with July outreach timing recommendations.
+
+**Production window**: July 15 – August 15, 2026. Distribution target: August 15, 2026 (pre-UNGA 81 High-Level Week, September 22–28).
+
+---
+
 ## June 6, 2026 — Resistance Research Subagent (Session 2957) — Wave 1 Pre-Execution + Phase 3 Planning
 
 **Session scope**: Part A (Wave 1 pre-execution prep) + Part B (Phase 3 research execution planning). Autonomous execution — no user action required.
