@@ -4,6 +4,35 @@
 
 ---
 
+## ✅ Session 2944 (June 6 11:20–12:00 UTC) — Orchestrator: Active Exploration + Market Verification Prep
+
+**Current Status**: **TWO EXPLORATION ITEMS EXECUTED** (Items 104 & 91 complete), **MARKET VERIFICATION SCHEDULED 13:30 UTC**. All three active blocks unchanged. Scheduled automatic wakeup at market open for credential-fix verification.
+
+**Work Accomplished**:
+- ✅ Full protocol orientation: ORCHESTRATOR_STATE.md, BLOCKED.md (3 active blocks verified), PROJECTS.md (resistance-research & stockbot assessed), EXPLORATION_QUEUE.md (identified Items 104 & 91)
+- ✅ **ITEM 104 COMPLETE** — resistance-research Phase 2 Wave 1 Post-Execution Analysis Framework (Session 2944 agent execution)
+  - 3 files: WAVE_1_IMPACT_MEASUREMENT_FRAMEWORK.md (2,300w), WAVE_1_DATA_COLLECTION_TEMPLATE.md (1,050w), WAVE_1_PHASE_2_SEQUENCING_DECISION_MATRIX.md (1,450w)
+  - Committed to master — ready for June 16-18 post-Wave-1 checkpoint execution
+  - Establishes Day 7/30/60 thresholds for organization types + Phase 2 batch sequencing router (STRONG/MODERATE/WEAK paths)
+- ✅ **ITEM 91 COMPLETE** — stockbot Phase 3a AAPL lgbm_ho Post-Retrain Thermal Validation (Session 2944 agent execution)
+  - 3 files: AAPL_RETRAIN_THERMAL_BUDGET_ALLOCATION.md (1,500w), AAPL_RETRAIN_QUALITY_GATES.md (1,200w), AAPL_CONTINGENCY_TREE_IF_RETRAIN_FAILS.md (1,600w)
+  - Committed to master — ready for June 11-12 post-retrain validation
+  - Decision: **SAFE to retrain AAPL alone June 11** (87-92°C peak, 3-8°C margin to shutdown)
+  - SC1148 cooler deadline June 17 remains critical path for both AAPL Path A + GOOGL Phase 3b
+- ✅ **Scheduled market-open credential-fix verification**: ScheduleWakeup set for 13:30 UTC (~90 min from session start)
+  - Command ready: `ssh awank@100.120.18.84 "docker logs --since '2026-06-06T13:15:00Z' stockbot 2>&1 | grep -E 'credentials|Market open|error on|ERROR' | head -5"`
+  - Expected: NO credential errors, ONLY "Market open detected" messages → PASS (auto-resolve block)
+
+**Project Status Summary**:
+- **resistance-research**: Item 104 framework complete, Phase 2 Wave 1 June 9 ready
+- **stockbot**: Items 91 complete, AAPL retrain June 11 ready, market verification 13:30 UTC active
+
+**Session Duration**: ~40 min (orientation + 2 agents in parallel + commit + prep).
+
+**Commits**: 2 agent-written commits (Items 104 & 91 both to master).
+
+---
+
 ## ✅ Session 2943 (June 6 11:13–11:18 UTC) — Orchestrator: Standby Continuation #54, Market Verification Wakeup Scheduled
 
 **Current Status**: **STANDBY CONTINUATION #54** — Zero autonomous work available. Scheduled automatic verification of stockbot credential-fix at 13:15 UTC (market open). All three active blocks unchanged.
