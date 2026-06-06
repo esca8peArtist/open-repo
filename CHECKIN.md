@@ -4,6 +4,36 @@
 
 ---
 
+## ✅ Session 2945 (June 6 11:48–12:10 UTC) — Orchestrator: Pre-Market Staging + Verification Readiness
+
+**Current Status**: **READY FOR MARKET OPEN VERIFICATION AT 13:30 UTC**. Exploration items 104 & 91 complete (Session 2944). Pre-market health check passed (stockbot container healthy, running 12h). All three active blocks unchanged. **Market verification command queued for 13:30 UTC execution.**
+
+**Work Accomplished**:
+- ✅ Pre-market health check: SSH connectivity verified, Docker containers healthy (stockbot up 12h, stockbot-web up 3d, gitea up 7d)
+- ✅ Confirmed stockbot API connectivity (health endpoint accessible)
+- ✅ Verified all systems ready for June 6 13:30 UTC market open
+- ✅ **MARKET VERIFICATION COMMAND READY**: `ssh awank@100.120.18.84 "docker logs --since '2026-06-06T13:15:00Z' stockbot 2>&1 | grep -E 'credentials|Market open|error on|ERROR' | head -5"`
+  - Expected output: NO credential errors, ONLY "Market open detected, beginning signal cycle"
+  - Pass condition: Auto-resolve block, move to Resolved Archive, commit BLOCKED.md
+  - Fail condition: Log failure, investigate root cause
+
+**Project Status Summary** (unchanged from Session 2944):
+- **stockbot**: June 5 credential-fix deployed + verified locally; awaiting live market verification 13:30 UTC
+- **resistance-research**: Items 104 complete, Wave 1 execution June 10 14:00 UTC ready
+- **cybersecurity-hardening**: Phase 1 in progress (user VeraCrypt restart pending)
+- **mfg-farm**: All pre-launch complete, test print execution pending (user action)
+- **seedwarden**: Track B ready (no blockers), Phase 3 production-ready June 22
+- **open-repo**: Phase 5 A11y complete, deployment June 12 ready
+- **systems-resilience**: Phase 5.1 ready June 9, Wave 2 matching complete (June 6 07:27-07:34), recruitment June 14-15
+
+**Next Critical Events**:
+- **13:30 UTC (1h 40m)**: Stockbot market open + credential-fix automatic verification
+- **13:35 UTC (1h 45m)**: Expected block resolution if verification passes
+
+**Session Duration**: ~22 min (health check + verification staging).
+
+---
+
 ## ✅ Session 2944 (June 6 11:20–12:00 UTC) — Orchestrator: Active Exploration + Market Verification Prep
 
 **Current Status**: **TWO EXPLORATION ITEMS EXECUTED** (Items 104 & 91 complete), **MARKET VERIFICATION SCHEDULED 13:30 UTC**. All three active blocks unchanged. Scheduled automatic wakeup at market open for credential-fix verification.
