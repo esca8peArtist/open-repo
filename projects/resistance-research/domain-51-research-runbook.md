@@ -33,7 +33,7 @@ PRE-RESEARCH (Session 1, first 90 minutes)
 [ ] Open opensecrets.org/dark-money — confirm 2024 cycle totals and download summary data
 [ ] Search congress.gov for "DISCLOSE Act 2026" — confirm bill number and cosponsor count
 [ ] Open fec.gov/about/reports-about-fec/annual-reports/ — download 2023 and 2024 annual reports
-[ ] Search fec.gov for commissioner roster — confirm current vacancies. As of May 2026: 4 of 6 seats vacant. Only Broussard (D) and Lindenbaum (D) remain. Trump nominees Stow and Woodson (both R) pending Senate confirmation. This is a 2026-cycle development; the 'expect 2 of 6' framing reflects 2025 conditions.
+[ ] Search fec.gov for commissioner roster — confirm current vacancies. As of May 2026: 4 of 6 seats vacant. Only Broussard (D) and Lindenbaum (D) remain. Trump nominees Stow and Woodson (both R) pending Senate confirmation. This is a 2026-cycle development; the 'expect 2 of 6' framing reflects 2025 conditions. Note: The fec.gov commissioner page lists historical terms and may not clearly display which seats are currently vacant. Cross-check with NOTUS FEC shutdown reporting (search: notus.org "FEC quorum") and the FEC's April 6, 2026 Notice of Lack of Quorum (search fec.gov: "notice of lack of quorum 26-336") for current vacancy confirmation. If Stow and Woodson have been confirmed before research day, see Section 7 contingency for the quorum-restored document update.
 [ ] Confirm 2026 campaign finance ballot measures via Ballotpedia and OpenSecrets. Confirmed as of June 2026: Alaska (two measures), California SB-42 (Fair Elections Act — public financing authorization), Missouri Amendment 4 (foreign contribution prohibition), Montana Initiative 194 (corporate contribution prohibition). AZ 2022 Prop 211 already passed — no new AZ measure. MA and ND have no confirmed 2026 measures.
 [ ] Read Citizens United v. FEC (2010) holding paragraph (2 pages max — just the core holding)
 [ ] Read SpeechNow.org v. FEC (D.C. Circuit 2010) holding paragraph
@@ -60,7 +60,7 @@ COMPLETION GATES
 **Goal**: Leave Session 1 with a complete outline and 25+ confirmed sources. Do not begin drafting.
 
 Tasks in order:
-1. OpenSecrets dark money database — download the 2024 cycle dark money summary. Verify $1.9B figure — confirmed as final 2024 cycle figure by Brennan Center 'Dark Money Hit a Record High of $1.9 Billion in 2024 Federal Races' (2025) and OpenSecrets November 2024 post-election analysis. Also record: shell companies and 501(c)(4)s gave $1.3B specifically to super PACs (the pass-through sub-figure); total outside spending $4.5B with more than half from non-disclosing groups. Billionaires accounted for 0.3% of federal election spending pre-Citizens United; by 2024, 300 billionaires contributed $3B (19% of all federal election donations).
+1. OpenSecrets dark money database — download the 2024 cycle dark money summary. Verify $1.9B figure — confirmed as final 2024 cycle figure by Brennan Center 'Dark Money Hit a Record High of $1.9 Billion in 2024 Federal Races' (2025) and OpenSecrets November 2024 post-election analysis. Also record: shell companies and 501(c)(4)s gave $1.3B specifically to super PACs (the pass-through sub-figure); total outside spending $4.5B with more than half from non-disclosing groups. Billionaires accounted for 0.3% of federal election spending pre-Citizens United; by 2024, 300 billionaires contributed $3B (19% of all federal election donations). Note: The Brennan Center describes $1.9B as a conservative floor estimate because radio, streaming video, influencer payments, and other non-FEC-reported spending cannot be fully tracked. The actual total is higher than $1.9B. For research purposes: use $1.9B as the confirmed measured total. The domain document correctly characterizes this as "at minimum $1.9B." Do not hedge further in the draft — the floor estimate is strong enough as a data anchor.
 2. Citizens United v. FEC (558 U.S. 310, 2010) — read pp. 1–20 (the holding and core reasoning). The domain does not require full case analysis; it requires the specific holding language on independent expenditures and the First Amendment rationale.
 3. SpeechNow.org v. FEC (599 F.3d 686, D.C. Cir. 2010) — read the holding section (2–3 pages). This is the decision that actually created super PACs; Citizens United is commonly cited but SpeechNow is the operative decision.
 4. FEC enforcement deadlock rate — primary source: Public Citizen 'Roiled in Partisan Deadlock' (April 2015) at citizen.org — documents 40% unresolved case rate by 2016. Secondary sources: Brennan Center 'Reform the FEC to Ensure Fair and Vigorous Law Enforcement' at brennancenter.org — synthesizes 2010–2020 deadlock data; CRS R45160 (congress.gov/crs-product/R45160) — authoritative commissioner quorum analysis. Key synthesized figure: FEC deadlocked on 24.1% of requests per year from 2008–2019, up from 4.9% in 1975–2007. Note: No Issue One report by the title "Strengthening the Rules" exists as of June 2026 — do not spend time searching for it.
@@ -214,10 +214,17 @@ SOURCES (40–50 citations, Chicago-style, with URLs)
 
 These sources are known to exist and are accessible. Verify URLs on research day.
 
+> **Source Access Note**: Several URLs below return HTTP 403 Forbidden to automated tools and some direct link fetches. Human browser access works normally for all of them. Known blocked sources and their accessible alternatives:
+> - supreme.justia.com → Use law.cornell.edu/supremecourt/text/ equivalents
+> - opensecrets.org/dark-money → Use Brennan Center analysis for core figures (browser access works normally)
+> - opensecrets.org/news/* → Accessible via web search result snippets; direct page fetch may 403
+> - congress.gov bill text pages → Use GovInfo.gov equivalents
+> - fec.gov/about/reports-about-fec/annual-reports/ → May 404; search fec.gov directly
+
 **Primary quantitative sources**
-- OpenSecrets dark money database: opensecrets.org/dark-money
-- FEC annual reports: fec.gov/about/reports-about-fec/annual-reports/
-- FEC commissioner roster: fec.gov/about/leadership-and-structure/commissioners/
+- OpenSecrets dark money database: opensecrets.org/dark-money (Note: returns HTTP 403 to automated tools; use Brennan Center analysis for core figures. Human browser access works normally.)
+- FEC annual reports: fec.gov/about/reports-about-fec/annual-reports/ (Note: this specific path may return 404; search fec.gov for 'annual report' to find current location. For deadlock rate data, use the Brennan Center and Public Citizen synthesis — FEC annual reports are secondary verification only.)
+- FEC commissioner roster: fec.gov/about/leadership-and-structure/commissioners/ (Note: the page lists historical terms and may not clearly display which seats are currently vacant. Cross-check with NOTUS FEC shutdown reporting and the FEC's April 6, 2026 Notice of Lack of Quorum — search fec.gov: "notice of lack of quorum 26-336".)
 
 **Primary legal sources**
 - Citizens United v. FEC, 558 U.S. 310 (2010): available at supreme.justia.com
@@ -274,6 +281,14 @@ Use the 2024 preliminary figures with explicit notation: "2024 preliminary data,
 
 ### If the DISCLOSE Act has been tabled or withdrawn from consideration
 Check the Senate Judiciary Committee hearing schedule for any successor disclosure bill. If no current legislation is active, pivot the Section 7 reform framing to state-level DISCLOSE equivalents and the SEC political spending disclosure rule. The domain's advocacy argument does not depend on the DISCLOSE Act specifically — it depends on having at least one active reform vehicle with organizational support.
+
+### If FEC quorum is restored before June 9-12 distribution
+
+Check: Has the Senate confirmed Trump nominees Stow and Woodson? (Fastest check: search "FEC quorum restored 2026" or check fec.gov/about/leadership-and-structure/commissioners/)
+
+If NOT confirmed (current status as of June 1, 2026): Document is accurate as written. The FEC enforcement shutdown framing in Section 2 stands.
+
+If CONFIRMED (2-R + 2-D = 4-vote quorum restored): Update Section 2.1 opening paragraph to reflect: "The Federal Election Commission regained a policymaking quorum in [date] with the Senate confirmation of Republican nominees Ashley Stow and Andrew Woodson, creating a 3-2 Republican majority capable of enforcement action. The restoration of quorum does not resolve the structural problem — Republican commissioners have historically deadlocked on enforcement against dark money 501(c)(4) organizations at a rate exceeding 50% since 2012. The FEC is no longer completely paralyzed; it is now selectively enforceable in Republican-favorable directions while remaining structurally deadlocked on dark money disclosure enforcement specifically." The domain's meta-argument (the Citizens United architecture makes enforcement against dark money donors structurally impossible regardless of quorum) survives either scenario — update the specific framing but not the structural argument.
 
 ### If the four state ballot measures are fewer than expected
 If Ballotpedia confirms fewer than three states with active measures, adjust the Section 5 framing to: "state-level disclosure reform momentum" rather than "four parallel ballot campaigns." The meta-irony argument (dark money opposing dark money disclosure) still holds regardless of the exact count.
