@@ -1,7 +1,7 @@
 ---
 title: "Phase 3 Contractor Decision Escalation Framework — Go/No-Go Decision Tree, Timeline Impact Analysis, and Phase 4 Cascade"
-date: 2026-06-05
-version: 1.0
+date: 2026-06-06
+version: 1.1
 status: production-ready
 decision-deadline: June 15, 2026 EOD
 hard-contractor-deadline: June 17, 2026 EOD
@@ -30,7 +30,7 @@ The contractor decision window runs June 5–17. There are five formal decision 
 | Gate | Date | Decision | Threshold | Action if Threshold Not Met |
 |---|---|---|---|---|
 | Gate 1 | June 8 | First response check | 0 replies → escalate; 1+ → score | Expand AHG outreach; activate Toptal; post secondary Upwork listing |
-| Gate 2 | June 10 | Candidate quality check | 0 Tier A → Tier B review; 1+ Tier A → offer | Expand search to NAMA, IHA, Herbal Academy general alumni |
+| Gate 2 | June 10 | Candidate quality check | 4+ qualified responses → GO; 1–3 responses with score ≥75 → proceed to interviews; 0 responses or best score <60 → escalate fallback recruitment | Expand search to NAMA, IHA, Herbal Academy general alumni; activate Toptal; post revised Upwork listing |
 | Gate 3 | June 12 | Contract target | Signed → briefing package; Not signed → final escalation | 48-hour negotiation window; activate backup search simultaneously |
 | Gate 4 | June 15 | Solo fallback threshold | No contract signed EOD → activate solo fallback | Log activation; stop contractor search; update Phase 4 dates |
 | Gate 5 | June 17 | Hard contractor deadline | No contract → solo fallback confirmed; no contractor after this date | Solo fallback confirmed regardless of any subsequent contacts |
@@ -126,6 +126,30 @@ These are the specific numeric thresholds that fire escalation actions, independ
 4. Email Herbal Academy partnerships@theherbalacademy.com: "Request for referral to Advanced + Clinical program instructors with educational writing availability June 22 – August 1."
 
 **Log entry**: "June 10 — Escalation Trigger 1 activated: 0 responses. Expanding AHG to 30–50 contacts; activating Toptal; revised Upwork listing; Herbal Academy referral request."
+
+---
+
+### Gate 2 June 10 — Four-Tier Response Assessment
+
+Gate 2 (June 10, Day 5 of search) is the first hard quality checkpoint. It produces a deterministic outcome in all four response-count scenarios. Unlike Escalation Trigger 1 (which fires only on 0 responses), Gate 2 applies regardless of response count and governs the next 5 days of the search.
+
+**Tier 1 — 4 or more qualified responses by June 10**: GO signal. The candidate pool is sufficient for competitive selection. Score all respondents on the vetting rubric immediately. Schedule interviews with candidates scoring ≥75. Do not wait for additional responses — pipeline risk is resolved. Target: contract signed June 12–14.
+
+**Tier 2 — 1 to 3 responses, best score ≥75**: Proceed to interviews. This is not yet a GO signal because only one vetted candidate is in hand, but the quality threshold is met. Schedule interview within 24 hours of scoring. Make offer if interview passes all 6 mandatory questions. Simultaneously: maintain outreach to remaining channels — if the Tier 1 interview falls through, a second candidate should be in the pipeline.
+
+**Tier 3 — 1 to 3 responses, best score 60–74**: Proceed to conditional interview. The candidate has cleared basic qualification but is below the preferred threshold. Interview using the 45-minute checklist with special attention to Q2 (contraindication rigor) and Q5 (FTC compliance example). If the interview raises the effective score to ≥75 (weighted by Q2 and Q5 performance): make offer. If not: decline and activate Escalation Trigger 1 actions simultaneously.
+
+**Tier 4 — 0 responses or best score below 60**: Escalate fallback recruitment immediately. This is the same action as Escalation Trigger 1. Log: "June 10 — Gate 2 Tier 4: [X] responses, best score [Y]. Escalating fallback recruitment: expanded AHG, Toptal, revised Upwork, Herbal Academy referral." Solo fallback trajectory is now confirmed unless Toptal or expanded AHG produces a Tier 1–2 candidate by June 13.
+
+**Log entry format**:
+```
+GATE 2 ASSESSMENT — June 10 EOD
+Responses received: [X]
+Best vetting score: [Y]
+Tier: [1 / 2 / 3 / 4]
+Decision: [GO / Proceed to interview / Conditional interview / Escalate fallback]
+Next gate: [date]
+```
 
 ---
 
@@ -323,4 +347,4 @@ No. A Tier B contractor who fails the FTC test or cannot explain CITES Appendix 
 
 ---
 
-*Prepared: June 5, 2026. Version 1.0. Companion documents: PHASE_3_SOLO_FALLBACK_ARCHITECTURE.md (9-week solo timeline, Phase 4 impact), PHASE_3_COMPREHENSIVE_RISK_REGISTER.md (8-risk register including Risk 8 solo fallback cascade). Cross-references: PHASE_3_CONTRACTOR_DECISION_TREE.md (primary decision tree with full branching logic), PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md (search channels, vetting rubric, outreach templates).*
+*Prepared: June 5, 2026. Version 1.1 (June 6, 2026 — Gate 2 June 10 four-tier response assessment added to Section 3; escalation timeline table updated with explicit 4+/1–3/score thresholds at Gate 2). Companion documents: PHASE_3_SOLO_FALLBACK_ARCHITECTURE.md (9-week solo timeline, Phase 4 impact), PHASE_3_COMPREHENSIVE_RISK_REGISTER.md (13-risk register including solo-fallback risks 9–13). Cross-references: PHASE_3_CONTRACTOR_DECISION_TREE.md (primary decision tree with full branching logic), PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md (search channels, vetting rubric, outreach templates).*
