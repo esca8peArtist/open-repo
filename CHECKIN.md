@@ -4,6 +4,48 @@
 
 ---
 
+## 🔄 Session 2961 (June 6 19:30–[TBD] UTC) — Orchestrator: Phase 3 Autonomous Research Activation
+
+**Current Status**: 🟢 **MEANINGFUL AUTONOMOUS WORK IDENTIFIED + AGENT SPAWNED**
+
+**Orientation & Analysis**:
+- ✅ **State verified**: ORCHESTRATOR_STATE.md, PROJECTS.md, all blocks, Exploration Queue reviewed
+- ✅ **Block audit**: 3 active blocks all confirmed as user-action-required (VeraCrypt, test print, deployment time)
+- ✅ **INBOX.md**: Empty — no new items to process
+- ✅ **Project capacity analysis**: 
+  - stockbot (Priority #1): Phase 3 ready; awaiting user decision June 7 ✓
+  - resistance-research (Priority #2): **Phase 2 execution-ready** + **Phase 3 infrastructure PRODUCTION-READY** ✓
+  - All other projects: blocked on external dependencies
+
+**Key Finding**: resistance-research Phase 3 research CAN BEGIN NOW
+- Phase 3 infrastructure production-ready (Domain H/K outlines, expert contacts verified, 50+ sources identified)
+- Critical-path work: Domain K research (16-20 hour timeline, 13 research questions, 5 expert contacts, foundational for Domain H)
+- Can run in PARALLEL with Phase 2 execution (June 10 Wave 1 is user-action work, not blocking research)
+- Exploration Queue has minimal active items; Phase 3 advancement IS meaningful project progress
+
+**Decision**: Spawn resistance-research subagent to BEGIN PHASE 3 DOMAIN K RESEARCH
+- **Agent task**: Read Domain K Research Outline, execute Phase 3 research on legislative inventory + constitutional feasibility + international precedent + coalition activation (per outline structure)
+- **Scope**: 16-20 hour research sprint; target completion by June 10 (before Phase 2 execution, enabling faster Phase 2→Phase 3 coordination)
+- **Deliverable**: Detailed Domain K research report integrated with outline structure
+- **Agent type**: resistance-research subagent (full access to project profiles, outlines, source list)
+
+**Items Needing Your Input** (unchanged):
+1. **[CRITICAL] open-repo deployment start time** — Confirm 09:00 UTC or 20:00 UTC for June 12
+2. **[STANDING] stockbot Phase 3 decision (June 7 09:00 UTC)** — JUNE_7_USER_DECISION_MEMO.md ready
+3. **[STANDING] resistance-research Wave 1 execution (June 10 14:00 UTC)** — All materials staged
+
+**Next Immediate Actions**:
+1. **Now**: Spawn resistance-research agent for Phase 3 Domain K research
+2. **June 7 09:00 UTC**: stockbot Phase 3 decision (GO/CAUTION/NO-GO)
+3. **June 9 13:15–21:00 UTC**: Orchestrator auto-executes June 9 market validation protocol
+4. **June 10 14:00 UTC**: Wave 1 execution (90 min) — Domains 51, 48, 59+ distribution
+5. **June 12 pre-deployment**: Confirm start time + execute pre-flight checklist
+6. **June 17 19:00 UTC**: Phase 1 Wave 1 post-execution analysis
+
+**Session Duration**: ~20 min (orientation + analysis + decision)
+
+---
+
 ## 🔄 Session 2960 (June 6 18:23–18:55 UTC) — Orchestrator: State Verification + Idle Standby
 
 **Current Status**: ✅ **ALL AUTONOMOUS WORK COMPLETE — AWAITING USER DECISIONS JUNE 7+**
