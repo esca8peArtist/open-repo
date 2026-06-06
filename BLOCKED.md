@@ -27,6 +27,18 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+### stockbot — Phase 3 Infrastructure Blockers (Container Restart Policy + Alpaca DNS)
+**Date blocked**: 2026-06-06 16:28 UTC (Session 2953 — Item 62 investigation)
+**Context**: Item 62 investigation discovered that the Docker container went offline during market hours June 5 (13:30–20:00 UTC) and did not recover until 23:27 UTC. This prevented the stockbot trading sessions from executing any trades despite being configured correctly. Root cause: (1) Container restart policy on Jetson does not auto-recovery when the container exits or crashes, (2) Alpaca DNS resolution failures documented in logs show networking connectivity issues on Jetson.
+**What I need**: 
+1. **Container restart policy fix**: Configure Jetson Docker container to auto-restart on failure. Implement one of: (a) systemd service with Restart=always, (b) docker-compose restart policy (restart_policy: always), (c) or manual recovery script in cron for market hours
+2. **Alpaca DNS resolution fix**: Investigate and fix the Alpaca API DNS resolution failures (`Failed to resolve 'paper-api.alpaca.markets'`). This may be a Jetson networking issue (DNS resolver config, firewall rule, or network interface problem).
+3. **Verification**: Run a full market day (June 7 or later) with both fixes in place and confirm that (a) container stays up during market hours, (b) no DNS errors in logs, (c) trading sessions execute fills normally
+**Verify with**: (a) Check Jetson Docker container restart policy: `docker inspect stockbot | grep -i restart` should show auto-restart enabled; (b) Run market-hour test: `ssh awank@100.120.18.84 "docker logs stockbot 2>&1 | grep -i 'alpaca\|DNS\|error'" | head -20` should show zero DNS/Alpaca errors; (c) Query June 7+ market day fills: `sqlite3 /opt/stockbot/database/trading.db "SELECT COUNT(*) FROM trades WHERE DATE(timestamp) > DATE('2026-06-06')"` should show >0 trades if market was open
+**Resolution**: [leave blank]
+
+---
+
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
