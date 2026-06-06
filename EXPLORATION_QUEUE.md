@@ -229,6 +229,38 @@
 **Deadline**: June 12 10:00 UTC (ready for user Phase 3 deployment decision)
 **Status**: ⏳ QUEUED for June 12 morning (post-retrain validation window)
 
+### 101. ⏳ seedwarden — Track B Day 3 Checkpoint Automation Framework (pre-staging for June 8)
+**Context**: Track B launched June 5 (pending user activation). Day 3 checkpoint is June 8. The contingency monitoring framework (Item 59) is production-ready, but orchestrator can pre-stage specific metrics templates and decision logic to reduce June 8 checkpoint execution time from 20 min → <10 min.
+**Scope**:
+  - Pre-stage metrics collection templates: email open rates (Campaign Monitor API query), Gist view count (Gist.github.com page read), social media engagement (Twitter influencer mention count), Kit funnel extraction (registration % → PDF % → email %)
+  - Decision logic template: threshold values for GO/CAUTION/NO-GO decision per metric (Item 59 provides general framework; Item 101 pre-fills numeric thresholds based on June 5 baseline)
+  - Contingency trigger checklist: Which specific scenarios (low email open, zero sales, influencer silence) warrant escalation to user vs orchestrator action
+  - Automated email/message template for user if contingency triggers
+**Deliverables**:
+  - `TRACK_B_JUNE_8_CHECKPOINT_METRICS_TEMPLATE.md` (fill-in spreadsheet with pre-populated threshold values)
+  - `TRACK_B_JUNE_8_DECISION_LOGIC_FLOWCHART.md` (if-then decision tree with pre-calculated thresholds from June 5 baseline data)
+  - `TRACK_B_JUNE_8_CONTINGENCY_ESCALATION_PROTOCOL.md` (user notification templates if CAUTION or NO-GO triggered)
+**Owner**: seedwarden subagent
+**Deadline**: June 7 EOD (ready for June 8 checkpoint automation)
+**Status**: ⏳ QUEUED for June 6-7 (pre-staging before June 8 checkpoint)
+**Confidence**: 90% — baseline metrics available June 5-6, threshold calculation straightforward
+
+### 102. ⏳ resistance-research — Phase 2 Wave 1 Day 7 Checkpoint Automation (pre-staging for June 16)
+**Context**: Domain 51 sends June 9-12 (Wave 1 execution). Day 7 checkpoint is June 16. The contingency framework (Item 76) is production-ready, but orchestrator can pre-stage automated metrics collection and email open rate polling to reduce June 16 checkpoint execution time.
+**Scope**:
+  - Automated metrics collection: Gist view count polling (direct page read), email open rates per org (Campaign Monitor API), contact response tracking (Gmail label filters for quick scan), Bitly link click tracking (pre-populate with actual Domain 51 link pool)
+  - Decision logic: Pre-calculate thresholds for email open ≥15% (PASS), <15% (MONITOR), 0% (FAIL) based on Phase 1 baseline data
+  - Contingency trigger automation: If email open <15% AND Gist views <50/day, auto-escalate to user with specific recommendations (increase diversity, test subject line, expand contact pool)
+  - Analysis template: Workbook structure for capturing Day 7 signals, domain-by-domain assessment, Phase 2 batch-sequencing decision routing
+**Deliverables**:
+  - `DOMAIN_51_JUNE_16_CHECKPOINT_METRICS_TEMPLATE.md` (fill-in spreadsheet: org-by-org open rates, Gist daily view counts, contact response log, cumulative win rate assessment)
+  - `DOMAIN_51_JUNE_16_DECISION_LOGIC.md` (thresholds for STRONG/MODERATE/WEAK/ESCALATE based on 7-day signal composite)
+  - `PHASE_2_BATCH_SEQUENCING_POST_DOMAIN_51.md` (routing logic: if STRONG, activate Domains 48 + 57 parallel; if MODERATE, sequential; if WEAK, escalate for user decision)
+**Owner**: resistance-research subagent
+**Deadline**: June 14 EOD (ready for June 16 checkpoint)
+**Status**: ⏳ QUEUED for June 6-7 (pre-staging before June 16 checkpoint)
+**Confidence**: 92% — threshold values derived from Phase 1 precedent data, logic validated against Item 76
+
 ### 80. ✅ resistance-research — Domain 51 Pre-Wave-1 Contact Verification & Email Template Final Review (Session 2884 COMPLETE)
 **Status**: Completed June 5, 2026 (Session 2884, ~13:35 UTC). All three deliverables production-ready.
 **Decision: GO for June 9 Wave 1 execution.** All five contacts verified. Two personnel changes found and corrected (Common Cause CA: Darius Kemp; LWV CA: Jenny Farrell). One direct email upgrade found (CLC: Erin Chlopak). Gist URL confirmed live. Email templates verified production-ready.
