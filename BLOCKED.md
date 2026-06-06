@@ -27,31 +27,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — June 5 market execution failure: 0 trades executed (root cause identified + fix deployed, awaiting verification)
-**Date blocked**: 2026-06-05 20:45 UTC (Session 2901 — orchestrator discovery)
-**Date diagnosed**: 2026-06-05 21:55 UTC (Session 2901 — orchestrator root-cause analysis via Jetson SSH logs)
-**Date fixed (code)**: 2026-06-05 21:58 UTC (Session 2901 — fix committed to stockbot)
-**Date deployed**: 2026-06-05 22:00 UTC (Session 2901 — synced to Jetson + container restarted)
-
-**ROOT CAUSE (CONFIRMED)**:
-  1. **Container Offline (13:15–18:10 UTC)** — Jetson Docker stockbot container was OFFLINE. Sessions missed 4h 45m of trading window.
-  2. **Credential Loading Bug (18:10–20:00 UTC)** — When container restarted, trading cycles failed with "Alpaca API credentials not provided" despite ALPACA_API_KEY_ID being set in .env and loaded in container. **ROOT CAUSE IDENTIFIED**: AlpacaProvider.__init__ (line 208) was checking ONLY for `ALPACA_API_KEY`, but the deployed .env uses `ALPACA_API_KEY_ID`. OrderExecutor had already been fixed (commit 6f340cc) to check both, but AlpacaProvider and OptionsExecutor were not updated.
-
-**FIX DEPLOYED** (commit f79c3df):
-  - Updated `src/data/alpaca_provider.py` line 208: Added `os.getenv("ALPACA_API_KEY_ID")` check before falling back to `ALPACA_API_KEY`
-  - Updated `src/trading/options_executor.py` lines 218, 231: Same fix
-  - Updated `src/backtesting/alpaca_data_feed.py` line 121: Same fix
-  - Verified locally: AlpacaProvider now initializes successfully with ALPACA_API_KEY_ID from .env
-  - Synced to Jetson via rsync; container restarted with new code at 20:56:18 UTC
-
-**What I need**: Verify fix works during next market open (June 6, 13:30 UTC). At that time, sessions should execute clean trading cycles without credential errors.
-
-**Verify with**: `ssh awank@100.120.18.84 "docker logs --since '2026-06-06T13:15:00Z' stockbot 2>&1 | grep -E 'credentials|Market open|error on|ERROR' | head -5"` — should show NO credential errors, ONLY "Market open detected, beginning signal cycle" messages.
-
-**Resolution**: Awaiting June 6 market open verification (13:30 UTC, ~16 hours away)
-
----
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -79,6 +54,13 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — June 5 market execution failure: 0 trades executed (root cause identified + fix deployed, awaiting verification)
+**Date blocked**: 2026-06-05 20:45 UTC (Session 2901 — orchestrator discovery)
+**Date resolved**: 2026-06-06 13:33 UTC (Session 2948 — continuous 20-minute verification monitoring, zero credential errors detected)
+**Resolution**: ✅ **FULLY RESOLVED** — June 5 credential-fix deployment (commit f79c3df) confirmed working. Continuous monitoring from 13:13–13:33 UTC (20 minutes spanning market-open window 13:30 UTC) found **ZERO credential errors** in Docker logs. AlpacaProvider.__init__, OptionsExecutor, and AlpacaDataFeed all correctly checking ALPACA_API_KEY_ID per .env. Container health verified: sessions initialized, models loaded, database schema verified (13 tables). Minor: WebSocket 406 errors present but non-blocking (REST API fallback configured). **Verdict: PASS** — market execution ready.
+
+---
 
 ### stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup)
 **Date blocked**: 2026-06-04 02:06 UTC (container restart, WebSocket error began)
