@@ -287,10 +287,220 @@ Then **check domain-specific minimum thresholds**:
 
 ---
 
+## Secondary Scoring Dimensions (June 14 Tiebreaker Layer)
+
+When two candidates have identical or near-identical (within 1 point) D1–D5 raw fitness scores for the same domain, apply this secondary scoring layer to break the tie. These four dimensions do not change primary eligibility but do differentiate candidates in close matches.
+
+### Dimension S1: Network Reach (0–20 points)
+
+Measures the candidate's ability to amplify the published corpus through their existing networks.
+
+| Score | Criteria |
+|-------|----------|
+| 0–4 | No public platform; limited professional network; no coalition connections |
+| 5–9 | Some professional network; member of 1–2 relevant organizations; occasional online presence |
+| 10–14 | Active in domain communities; coalition or network membership; 500–5,000 online followers or equivalent |
+| 15–19 | Recognized voice in domain community; active speaker or contributor; wide network connections |
+| 20 | High-reach platform (5,000+ followers, podcast, newsletter, or institutional megaphone); national or international network connections |
+
+**Source**: LinkedIn profile, organizational bio, social media presence, coalition membership documented in intake form.
+
+**Example**:
+- A cooperative director with 12,000 Twitter/X followers, board seat on regional cooperative network, and monthly newsletter: **S1 = 18**
+- A graduate researcher with no public platform and 200 LinkedIn connections: **S1 = 4**
+
+---
+
+### Dimension S2: Writing Capacity (0–20 points)
+
+Measures practical availability and throughput for the Wave 2 sprint (July 16 – September 15).
+
+| Score | Criteria |
+|-------|----------|
+| 0–4 | Can confirm fewer than 4 hrs/week; writing speed unknown; revision flexibility low |
+| 5–9 | 4–5 hrs/week; slower writing pace; limited availability for revision windows |
+| 10–14 | 6–7 hrs/week; adequate pace; moderate flexibility for revision turnaround |
+| 15–19 | 8–9 hrs/week; fast writer (has produced 2,000+ words in a working day); responsive to editorial feedback |
+| 20 | 10+ hrs/week confirmed; demonstrated high-throughput writing; explicit flexibility for fast revision cycles |
+
+**Source**: AUTHOR_READINESS_INTAKE_FORM Section 1 (availability confirmation) + writing portfolio cadence.
+
+**Wave 2 requirement**: 8 hrs/week minimum is the base requirement for primary assignment. S2 scores below 15 signal risk — flag for contingency planning.
+
+**Note**: S2 does NOT replace the 8 hrs/week minimum threshold. It differentiates among candidates who all meet the minimum.
+
+---
+
+### Dimension S3: Timezone Alignment (0–15 points)
+
+Measures overlap with the coordination window (primarily UTC+0 to UTC-6, targeting 4–6 authors in UTC+0 to UTC-2 and 2–3 in UTC-8 to UTC-4).
+
+| Score | Criteria |
+|-------|----------|
+| 0–4 | UTC+5 or further east; 4+ hours outside coordination window; requires async-only coordination |
+| 5–9 | UTC+3 to UTC+4; partial overlap; real-time coordination possible morning UTC only |
+| 10–12 | UTC+0 to UTC+2; primary target timezone; full overlap with coordination window |
+| 13–15 | UTC-8 to UTC-4 (US Pacific to US Eastern); secondary target; afternoon overlap with UTC+0 |
+
+**Preferred distribution**: At least 4 authors scoring S3 ≥ 10 (UTC+0 to UTC-6). At most 1–2 authors scoring S3 ≤ 5.
+
+**Example**:
+- Author confirmed in CDT (Central Daylight Time, UTC-5): **S3 = 14**
+- Author confirmed in CET (Central European Time, UTC+2): **S3 = 11**
+- Author confirmed in IST (India Standard Time, UTC+5:30): **S3 = 3**
+
+---
+
+### Dimension S4: Prior Wave Success (0–20 points)
+
+Applies only to authors who participated in Wave 1 (Phase 5 Wave 1 author cohort). For new candidates with no Wave 1 history: **S4 = 10** (neutral, does not penalize new candidates).
+
+| Score | Criteria |
+|-------|----------|
+| 0–4 | Wave 1 participant; delivered late (>7 days past deadline) AND quality below REVISE-AND-RESUBMIT standard |
+| 5–9 | Wave 1 participant; delivered 3–7 days late OR revision required major rewrite |
+| 10 | No Wave 1 history (neutral baseline) |
+| 11–15 | Wave 1 participant; on-time delivery; document reached REVISE-AND-RESUBMIT on first peer review |
+| 16–20 | Wave 1 participant; ahead of schedule OR on-time; document reached PUBLICATION-READY on first peer review; proactive communication |
+
+**Source**: WAVE_1_DAILY_STANDUP_TEMPLATE.md delivery records; peer review outcome from Wave 1 quality gate documentation.
+
+---
+
+### Secondary Score Calculation and Use
+
+```
+Secondary Score = S1 (Network Reach) + S2 (Writing Capacity) + S3 (Timezone) + S4 (Prior Wave)
+Maximum: 75 points
+```
+
+**When to use secondary score**:
+1. Two candidates have raw fitness scores within 1 point for the same domain assignment
+2. Two candidates are tied on D5 (standard first tiebreaker)
+3. Project lead wants to optimize for distribution amplification vs. pure domain fit
+
+**When NOT to use secondary score**:
+- To override a candidate with a superior raw fitness score
+- To assign a candidate below domain eligibility thresholds (D1 ≥ 3, D5 ≥ 3 requirements are not waivable)
+- As a substitute for the primary algorithm
+
+---
+
+## Full Scoring Summary (Combined)
+
+For complete candidate assessment, compute both scores and present side by side:
+
+| Author | D1 | D2 | D3 | D4 | D5 | Primary Score (/25) | S1 | S2 | S3 | S4 | Secondary (/75) | Best Domain |
+|--------|----|----|----|----|-----|---------------------|----|----|----|----|-----------------|-------------|
+| Author A | — | — | — | — | — | — | — | — | — | — | — | — |
+| Author B | — | — | — | — | — | — | — | — | — | — | — | — |
+
+**Decision rule**: Assign by primary score. Use secondary score only for tiebreaking or distribution optimization.
+
+---
+
+## Pseudocode: Full Matching Algorithm
+
+```python
+def compute_primary_score(author, domain):
+    """
+    Compute domain-specific fitness score for primary matching.
+    Returns (score, eligible) tuple.
+    """
+    D1 = author.domain_knowledge[domain]
+    D2 = author.writing_skill
+    D3 = author.markdown_skill
+    D4 = author.research_skill
+    D5 = author.practitioner_grounding[domain]
+    
+    # Check domain-specific thresholds
+    domain_minimums = {60: (3,3), 61: (3,3), 62: (3,3), 63: (4,4), 64: (3,3), 65: (3,3)}
+    d1_min, d5_min = domain_minimums[domain]
+    
+    if D1 < d1_min or D5 < d5_min:
+        return (0, False)  # INELIGIBLE
+    
+    raw_score = D1 + D2 + D3 + D4 + D5
+    
+    # Domain minimum total thresholds
+    total_minimums = {60: 18, 61: 18, 62: 18, 63: 20, 64: 18, 65: 18}
+    if raw_score < total_minimums[domain]:
+        return (raw_score, False)  # BORDERLINE
+    
+    return (raw_score, True)  # ELIGIBLE
+
+def compute_secondary_score(author):
+    """
+    Compute secondary score for tiebreaking.
+    """
+    S1 = author.network_reach           # 0-20
+    S2 = author.writing_capacity        # 0-20
+    S3 = author.timezone_alignment      # 0-15
+    S4 = author.prior_wave_success      # 0-20 (10 if no Wave 1 history)
+    return S1 + S2 + S3 + S4
+
+def match_authors_to_domains(authors, domains):
+    """
+    Greedy assignment: highest primary fitness per domain.
+    Secondary score breaks ties.
+    """
+    # Step 1: Compute all (domain, author, score, eligible) tuples
+    pairings = []
+    for domain in domains:
+        for author in authors:
+            score, eligible = compute_primary_score(author, domain)
+            secondary = compute_secondary_score(author)
+            pairings.append((domain, author, score, secondary, eligible))
+    
+    # Step 2: Filter to eligible only, sort by (primary_score DESC, secondary DESC)
+    eligible_pairings = [p for p in pairings if p[4]]
+    eligible_pairings.sort(key=lambda x: (x[2], x[3]), reverse=True)
+    
+    # Step 3: Greedy assignment — assign top pair, remove author from pool
+    assignments = {}
+    assigned_authors = set()
+    
+    for domain, author, score, secondary, _ in eligible_pairings:
+        if domain not in assignments and author.id not in assigned_authors:
+            assignments[domain] = (author, score)
+            assigned_authors.add(author.id)
+    
+    # Step 4: Handle unassigned domains
+    for domain in domains:
+        if domain not in assignments:
+            assignments[domain] = ("UNASSIGNED — trigger fallback", 0)
+    
+    return assignments
+
+def apply_tiebreaker(candidate_a, candidate_b, domain):
+    """
+    Tiebreaker logic when primary scores are equal.
+    Priority: D5 > secondary total > author preference ranking.
+    """
+    d5_a = candidate_a.practitioner_grounding[domain]
+    d5_b = candidate_b.practitioner_grounding[domain]
+    
+    if d5_a != d5_b:
+        return candidate_a if d5_a > d5_b else candidate_b
+    
+    sec_a = compute_secondary_score(candidate_a)
+    sec_b = compute_secondary_score(candidate_b)
+    
+    if sec_a != sec_b:
+        return candidate_a if sec_a > sec_b else candidate_b
+    
+    # Final tiebreaker: author preference rank for this domain
+    pref_a = candidate_a.domain_preference_rank[domain]
+    pref_b = candidate_b.domain_preference_rank[domain]
+    return candidate_a if pref_a < pref_b else candidate_b
+```
+
+---
+
 ## Implementation
 
 **June 6**: Pre-compute all author scores using AUTHOR_READINESS_INTAKE_FORM responses (completed by June 5)
-**June 10–12**: Final outreach confirming availability; collect any missing intake data
+**June 10–12**: Final outreach confirming availability; collect any missing intake data; score S1/S2/S3/S4 dimensions for confirmed candidates
 **June 13**: Final score verification; generate matching algorithm output (this document + scores matrix)
 **June 14 08:00**: Open matching session with pre-computed matches as starting point (90 minutes vs. 3–4 hours)
 
@@ -302,3 +512,4 @@ Then **check domain-specific minimum thresholds**:
 - `AUTHOR_READINESS_INTAKE_FORM.md` — Data source for D1–D4 scoring
 - `PHASE_6_AUTHOR_RECRUITMENT_TARGET_LIST.md` — Tier A/B candidate contact list
 - `JUNE_14_15_AUTHOR_MATCHING_SESSION_RUNBOOK.md` — Execution procedures for matching session
+- `WAVE_2_AUTHOR_PROFILE_CARDS.md` — Pre-scored candidate profiles for June 14 session
