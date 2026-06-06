@@ -4,6 +4,42 @@
 
 ---
 
+## 🔄 Session 2962 (June 6 19:01–20:15 UTC) — Stockbot Backtesting Report + Resistance-Research Domain H
+
+**Current Status**: ✅ **TWO MAJOR DELIVERABLES COMPLETE — JUNE 7-10 READY**
+
+**Work Completed**:
+- ✅ **stockbot Comprehensive Backtesting Synthesis Report** (5,960 words)
+  - Full synthesis of Phases 1-4 infrastructure (walk-forward engine, metrics, 6-gate criteria, model comparison, drift tracking)
+  - Model verdicts: JPM ridge_wf 6/6 gates (100% confident), AMZN lgbm_ho 6/6 gates post-G5-fix (96% confident), AAPL both undeployable
+  - June 7 recommendation: **GO** (infrastructure fixed, models validated, monitoring executable)
+  - Delivered: `COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md` + `backtesting_synthesis_summary.json`
+
+- ✅ **resistance-research Phase 3 Domain H Constitutional Resilience** (7,500 words, 110 sources)
+  - All 4 research zones complete: Constitutional Vulnerabilities, International Precedent (NEW: Germany Dec 2024 amendment, Israel 2023-2024 judicial crisis, South Africa resilience framework, Democracy 2025 650+ orgs), Amendment Strategy, Movement Infrastructure
+  - Coalition activation plan: 6 expert contacts, 16 organizations, engagement triggers mapped
+  - Cross-referenced to Domain K for legislative sequencing
+  - Delivered: `DOMAIN_H_CONSTITUTIONAL_RESILIENCE_ARCHITECTURE.md`
+
+**Items Needing Your Input**:
+1. **[URGENT] stockbot Phase 3 decision (June 7 09:00 UTC)** — COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md + JUNE_7_USER_DECISION_MEMO.md ready; confirm GO/CAUTION/NO-GO
+2. **[CRITICAL] open-repo deployment start time** — Confirm 09:00 UTC or 20:00 UTC for June 12 deployment
+3. **[STANDING] resistance-research Wave 1 execution (June 10 14:00 UTC)** — All materials staged (updated with Domain H context); confirm ready
+
+**Next Immediate Actions**:
+1. **June 7 09:00 UTC**: Review backtesting report + decision memo, confirm stockbot Phase 3 (GO/CAUTION/NO-GO)
+2. **June 8 13:15 UTC**: Automated pre-market health check (scripts staged)
+3. **June 9 13:15–21:00 UTC**: Orchestrator auto-executes market validation protocol
+4. **June 10 14:00 UTC**: Wave 1 user execution (90 min, comprehensive reports ready for review)
+
+**Session Duration**: 74 minutes (orientation + 2 parallel subagent sprints + commit)
+
+**Tokens Used**: 226,853 (subagents: 82,021 stockbot + 144,832 resistance-research)
+
+**Agents Spawned**: 2 parallel (stockbot + resistance-research subagents, concurrent execution)
+
+---
+
 ## 🔄 Session 2961 (June 6 19:30–20:15 UTC) — Orchestrator: Phase 3 Domain K Research Sprint
 
 **Current Status**: ✅ **PHASE 3 DOMAIN K RESEARCH COMPLETE + COMMITTED TO MASTER**
