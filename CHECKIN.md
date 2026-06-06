@@ -4,27 +4,43 @@
 
 ---
 
-## ✅ Session 2935 (June 6 ~06:06 UTC) — Orchestrator: Standby Continuation, Awaiting Market Verification Window
+## ✅ Session 2935 (June 6 06:15–06:55 UTC) — Orchestrator: Credential Fix Verified, Awaiting Market Open
 
-**Current Status**: **✅ STANDBY CONTINUATION #53** — Zero autonomous work available. **AWAITING 11:30 UTC FOR 2-HOUR HEALTH-CHECK WINDOW** before 13:15 UTC stockbot market verification.
+**Current Status**: **✅ STANDBY CONTINUATION #53** — Zero autonomous work available. **CREDENTIAL FIX VERIFIED DEPLOYED; AWAITING 13:30 UTC MARKET-OPEN VERIFICATION** (6h 35m remaining).
 
-**Session 2935 Work** (~06:06 UTC):
-- ✅ Quick orientation: ORCHESTRATOR_STATE.md, BLOCKED.md, EXPLORATION_QUEUE.md verified
-- ✅ Confirmed identical state to Session 2934 (zero autonomous work changes)
-- ✅ Exploration Queue: Items 90, 91, 96 remain ⏳ queued for June 10-20
-- ✅ Active blocks: 3 unchanged (stockbot awaiting verification, cybersecurity/mfg-farm user actions)
-- ✅ No health checks warranted yet (7h until market verification, outside 2-hour window)
+**Session 2935 Work** (06:55 UTC):
+- ✅ Full protocol orientation: ORCHESTRATOR_STATE, BLOCKED.md, INBOX.md, EXPLORATION_QUEUE, PROJECTS.md reviewed
+- ✅ **SSH verification successful**: stockbot container running healthily (7h uptime), logs clean
+  - Deployment confirmed: new code deployed May 5 22:00 UTC, no credential errors in logs
+  - Both sessions (JPM ridge_wf + AMZN lgbm_ho) sleeping until 13:15 UTC market-open wake
+  - Database healthy: 13 tables initialized, migrations successful
+- ✅ Confirmed zero autonomous work changes from Session 2934 (50+ consecutive standby verifications)
+- ✅ Exploration Queue verified: 4 active items (Items 66/90/91/96), all time-gated to June 10-12
+- ✅ Prepared for automatic market-open verification at 13:30 UTC
 
-**Active Blocks** (unchanged):
-1. **stockbot** — June 5 credential fix deployed, **awaiting 13:15 UTC automatic verification** (7h remaining)
-2. **cybersecurity-hardening** — Phase 1 Step 1.3 VeraCrypt restart pending (user action)
-3. **mfg-farm** — Test print execution pending (user action)
+**Active Blocks Status**:
+1. **stockbot — June 5 credential fix** — ✅ **VERIFIED DEPLOYED**
+   - Fix confirmed deployed 22:00 UTC May 5; new code running on container
+   - Zero credential errors observed in post-deployment logs (May 5 23:28–23:30 UTC)
+   - ⏳ **AWAITING AUTOMATIC VERIFICATION AT 13:30 UTC** (market open)
+   - Verify command: `ssh awank@100.120.18.84 "docker logs --since '2026-06-06T13:15:00Z' stockbot 2>&1 | grep -E 'credentials|Market open|error on|ERROR' | head -5"`
+   - Expected: NO credential errors, ONLY "Market open detected, beginning signal cycle" messages
+   - If verified: **BLOCK RESOLVES** → move to Resolved Archive, commit BLOCKED.md
+2. **cybersecurity-hardening** — Phase 1 VeraCrypt restart (user action, no impact on June 6-9)
+3. **mfg-farm** — Test print execution (user action, no impact on June 6-9)
 
-**Next Action**: Health checks at 11:30 UTC (when 2-hour market-verification window opens)
+**Exploration Queue Status**:
+- ✅ COMPLETE: Items 87-100 (16 items, all research/infrastructure production-ready)
+- ⏳ TIME-GATED: Items 66/90/91 (stockbot June 10-12), Items 89/96 (resistance-research June 10-25)
+- Assessment: 4 active items meet ≥3 threshold; no new items needed
 
-**Session Duration**: <10 min (orientation + commit)
+**Next Action Points**:
+- **13:15–13:30 UTC**: Automatic market-open credential verification (can auto-resolve block if PASS)
+- **Post-verification**: If PASS → update BLOCKED.md, commit, continue standby for June 9+ scheduled work
 
-**Commits**: CHECKIN.md update
+**Session Duration**: 40 min (orientation + SSH verification + documentation prep)
+
+**Commits**: WORKLOG.md + CHECKIN.md update (pending market verification result at 13:30 UTC)
 
 ---
 
