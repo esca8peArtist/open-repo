@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-10T01:42:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-10T01:50:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (5,731 tokens) | All-models 1.2% | Reset in 142h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.2% (18,263 tokens calibrated 2026-06-10) | All-models 1.5% | Reset in 142h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -105,42 +105,42 @@
 (NONE — all pending items processed from last session)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  - Escalation criteria: 5 conditions requiring manual intervention
-  - Quick reference table: severity classification mapping symptoms to action
-  - All thresholds match POST_DEPLOYMENT_MONITORING_PLAN.md exactly
+   - Blocks: Phase 4 model deployment, roadmap clarity, resource allocation
+   - Required: User review of COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md (5-10 min)
+   - Autonomous work status: ZERO until decision made
 
-- ✅ **DEPLOYMENT_POST_INCIDENT_AUDIT_CHECKLIST.md** (2,034 words)
-  - Part 1: Evidence preservation (30-min window) — system state, logs, database state, alerts, metrics
-  - Part 2: Root-cause investigation — timeline reconstruction, Five-Why drill-down, change tracking, remediation tracking
-  - Part 3: Post-24-hour review — stability assessment, outcome classification, archive checklist
-  - All procedures designed for non-expert execution (clear checkpoints, no judgment calls)
+2. **systems-resilience Platform Choice: Discourse OR Nextcloud+Matrix** (due June 8 18:00 UTC, now 31+ hours overdue)
+   - Blocks: June 9 publication deployment (deadline PASSED; new timeline TBD)
+   - Required: Platform selection + credentials (domain/IP/SMTP if Discourse)
+   - Autonomous work status: ZERO (all infrastructure production-ready; deployment cannot proceed)
 
-- ✅ **INCIDENT_COMMUNICATION_TEMPLATES.md** (1,377 words)
-  - 8 templates covering all scenarios: deployment start, full success, partial success/elevated response times, WARN alerts, CRITICAL alerts, rollback decision, rollback complete, all-clear
-  - Notification channels: Slack, team lead DM, email with timing rules
-  - Copy-paste ready with [BRACKETED] customization fields
+3. **open-repo Deployment Time Clarification** (09:00 UTC vs 20:00 UTC June 12)
+   - Blocks: June 12 deployment scheduling + team coordination
+   - Required: 1-minute clarification (conflicting docs exist in project)
+   - Autonomous work status: Code merge-ready but deployment blocked on timing
 
-**Quality Metrics**:
-- All three documents exceed word count targets (+31% to +37%)
-- Decision trees are executable by non-experts (no ambiguous judgment calls)
-- Rollback procedures preserve database consistency (Alembic downgrade, backup restore)
-- Alert prioritization follows risk hierarchy: data integrity > availability > performance
-- All thresholds verified against POST_DEPLOYMENT_MONITORING_PLAN.md
-- Integration: Seamless with existing DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md and POST_DEPLOYMENT_MONITORING_PLAN.md
+**Verification Results**:
+- Docker port 80/443 verify: ❌ Not responding (systems-resilience deployment did not occur)
+- /tmp/phase5-pub/ verify: ❌ Directory empty (PDF bundle staging incomplete)
+- All BLOCKED.md entries remain active (no auto-verify success on available commands)
 
-**Timeline**:
-- **Deadline**: June 11 17:00 UTC ✅ **ADVANCED COMPLETE** (June 6, 5.5 days early)
-- **Pre-deployment review window**: June 11 17:00–June 12 09:00 UTC (12+ hours for team review)
-- **Deployment execution**: June 12 09:00–10:45 UTC with incident response procedures staged
+**Project Autonomy Assessment** (after decision analysis):
+- **stockbot**: Autonomous work blocked ❌
+- **resistance-research**: Wave 1-2 user actions ready; Phase 2 research deferred pending Phase 1 metrics
+- **cybersecurity-hardening**: Blocked on VeraCrypt restart ❌
+- **mfg-farm**: Blocked on test print execution ❌
+- **seedwarden**: Phase 3 contractor prep available IF track B gates approved; Phase 3 outreach June 17
+- **open-repo**: Code ready, deployment blocked on time clarification ❌
+- **systems-resilience**: Infrastructure complete, deployment blocked on platform choice ❌
+- **off-grid-living**: Complete (awaiting user social media execution)
+- **workout**: Awaiting user review
+- **resume**: Paused
+- **open-source-rideshare**: Paused
 
-**Committed**: All three files to `/projects/open-repo/` (commits 528b4752, 8faf3419)
+**Conclusion**: No meaningful autonomous work available while three critical decisions remain overdue. Orchestrator has updated CHECKIN.md with decision escalation and severity assessment. Recommendation: User should review the three decisions immediately (estimated 10-15 min total) to unblock all downstream projects.
 
-**Confidence**: 96% — procedures cover all known failure modes, decision logic verified executable, templates tested against monitoring thresholds, post-incident audit designed for evidence preservation + root-cause methodology
+**Session Duration**: 33 minutes (orientation 12 min + analysis 18 min + CHECKIN update 3 min)
 
-**Value**: June 12 deployment now has systematic incident response for cascade failures, partial states, and post-incident investigation. Team has 12+ hours to familiarize with procedures before execution.
+**Agents spawned**: 0 (analysis phase, no agents required)
 
-**Session Duration**: Orientation (2 min) + Agent Item 103 execution (28 min) + verification (2 min) = ~32 minutes
-
-**Agents spawned**: 1 (general-purpose subagent for Item 103)
-
-**Commits**: 528b4752, 8faf3419 (from Agent 1)
+**Commits pending**: CHECKIN.md updated with decision escalation
