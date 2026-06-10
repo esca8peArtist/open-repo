@@ -2,6 +2,25 @@
 
 ---
 
+## June 10, 2026 — Resistance Research Agent — Domains 49-50 Phase 4 Intersection Deepening
+
+**Files updated**:
+- `/projects/resistance-research/DOMAINS_49_50_EXPANDED_SOURCE_INDEX.md` — Phase 4 expansion: added 24 sources across Themes K-N. Domain 49 now 132 sources; 24 cross-domain intersection sources added for first time. Themes: K (queer-EJ organizational bridges: WE ACT, Earthjustice, LCV, Queer Eco Project, CAP, Cambridge Core), L (housing-environment-LGBTQ+ chain: HUD Equal Access Rule rescission, trans homelessness data, environmental exposure concentration), M (June 2026 litigation: Talbott v. USA D.C. Circuit ruling, Lambda Legal NYU Langone class action, $285M fundraising, SFAF v. Trump DEI EO injunction), N (NEPA-ICE litigation wave: Maryland AG, Salt Lake City, Seven County SCOTUS, CRS LSB11333, NLR NEPA round-up).
+- `/projects/resistance-research/DOMAINS_49_50_SYNTHESIS_FRAMEWORK.md` — Part 9 added: Intersection 7 (housing-environment as connective variable), June 2026 Domain 50 litigation updates (Talbott, NYU Langone, Lambda Legal fundraising), NEPA-ICE litigation wave with three implications for Domain 49 reform architecture, SFAF v. Trump cross-domain legal theory connection, four new organizational leverage additions (Queer Eco Project, Uproar Utah/Refugee Justice League, LCV, NAEH).
+
+**Key findings**:
+- Seven County Infrastructure Coalition v. Eagle County (SCOTUS May 2025, 8-0) explicitly excluded Gulf Coast EJ communities from NEPA EIS scope — strongest single evidence of SCOTUS narrowing harming EJ community participation rights; confirm against existing J2 source entry
+- NEPA-ICE litigation wave (Maryland AG preliminary injunction, Salt Lake City suit, Uproar Utah preparing suit as of June 9) demonstrates that statutory NEPA remains enforceable even after CEQ regulatory rescission — directly supports Domain 49's Tier 2 reform architecture
+- Talbott v. USA (D.C. Circuit June 1, 2026) used Romer "bare desire to harm" language to uphold trans military injunction — most recent federal appellate application of anti-countermajoritarian principle; critical for Domain 50 ballot measure advocacy
+- Lambda Legal NYU Langone class action (June 1, 2026) adds Fourth/Fifth Amendment health records dimension not in prior Domain 50 analysis; Northern District of Texas venue selection is ADF forum-shopping documented in real time
+- SFAF v. Trump (June 9, 2026) blocked EO 14173 DEI provisions as applied to LGBTQ+ nonprofits — same EO used to close OEJECR; creates potential legal theory connecting both domains' administrative law arguments
+- HUD Equal Access Rule proposed rescission (April 28, 2026) + trans homelessness data creates Intersection 7: housing stability as the connective variable between Domain 50 legal targeting and Domain 49 environmental exposure concentration
+- Lambda Legal $285M campaign completed — organizational attrition argument in Domain 50 Pillar 6 requires qualification; legal team growing 42% by end of 2026
+
+**Confidence**: High on June 2026 litigation developments (multiple sources per case). Moderate on housing-environment chain (mechanism is well-documented but specific quantification of LGBTQ+ environmental exposure concentration is less than the trans voter suppression quantification). Queer Eco Project and Cambridge Core academic sources add new organizational and scholarly anchors for the intersection.
+
+---
+
 ## June 10, 2026 — Resistance Research Orchestration Agent — Phase 2 Wave 1 Execution Staging Complete
 
 **Session scope**: Pre-launch state verification and execution staging for Phase 2 Wave 1 distribution (Domains 51, 48, 59). All materials verified. Wave 1 Execution Log created. No user action required until send time.

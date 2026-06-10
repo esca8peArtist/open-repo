@@ -3,11 +3,13 @@ title: "Domains 49–50: Expanded Source Index"
 subtitle: "100+ Sources per Domain, Organized by Theme with Integration Point Matrix"
 domains: [49, 50]
 created: "2026-06-06"
-status: "production-ready — Phase 3 expansion"
-session: "Resistance Research Agent — Phase 3 Framework Expansion"
+updated: "2026-06-10"
+status: "production-ready — Phase 4 expansion"
+session: "Resistance Research Agent — Phase 4 Intersection Deepening"
 source_counts:
-  domain_49: 108
+  domain_49: 132
   domain_50: 112
+  cross_domain_intersection: 24
 purpose: "Full source library with integration points for July research activation and December 2026 distribution synthesis"
 cross_references:
   - domain-49-environmental-justice-voting-rights.md
@@ -1369,4 +1371,207 @@ The following sources were identified in Phase 3 web research that were not in t
 
 ---
 
-*Index prepared: June 6, 2026. Domain 49: 108 sources. Domain 50: 112 sources. All URLs cited were confirmed publicly accessible as of June 2026 web research. Phase 3 new sources noted in Appendix. Next action: Use this index as the master source list for July production sessions; consult PHASE_2_DOMAINS_49_50_RESEARCH_EXECUTION_PLAN.md for the writing cadence and gap-filling schedule.*
+# PART III: CROSS-DOMAIN INTERSECTION SOURCES — DOMAIN 49 AND DOMAIN 50
+
+*Added June 10, 2026. These sources are not domain-exclusive; they belong simultaneously to both domains and constitute the evidentiary basis for the 49-50 intersection analysis in the Synthesis Framework.*
+
+---
+
+## THEME K: Organizational and Advocacy Bridges
+
+**[K1] WE ACT — Pride and Environmental Justice**
+URL: https://weact.org/updates/pride-and-environmental-justice/
+- (T-49) WE ACT documents its own organizational commitment to the queer-EJ intersection, citing 1991 Principles of Environmental Justice as a foundation for LGBTQ+ solidarity
+- (T-50) WE ACT calls queer liberation integral to EJ organizing; distributable to LGBTQ+ organizations as a statement from a primary EJ distribution contact
+- (A-49) Domain 22: racial justice; WE ACT grounds the queer EJ argument in an antiracist framework
+- (A-50) Domain 47: housing security; WE ACT's connection to the Queer Eco Project documents the queer-housing-environment chain
+- (L) Use this source when distributing Domain 49 to organizations with known LGBTQ+ program staff; it establishes that EJ organizations are already naming this intersection
+
+**[K2] Earthjustice — Why Queer Liberation Is an Environmental Justice Issue**
+URL: https://earthjustice.org/article/why-queer-liberation-is-an-environmental-justice-issue
+- (T-49) Earthjustice frames queer liberation as structurally connected to environmental justice: "The fight for queer rights is often interwoven with the fight for justice for the earth and its people"
+- (T-50) Documents how LGBTQ+ individuals face higher rates of chronic illness associated with environmental hazard exposure — respiratory disease, cardiovascular disease, cancer
+- (A-49) Domain 15: environmental rollbacks; Earthjustice's EJ program is the primary litigation vehicle for Domain 49
+- (A-50) Domain 31: healthcare access; environmental health burden compounds healthcare denial
+- (L) Earthjustice is already a primary Domain 49 distribution contact; this source enables a cross-domain introduction to Domain 50 through Earthjustice's own framing of the intersection
+
+**[K3] League of Conservation Voters — Why Climate Justice Must Include LGBTQ+ Justice**
+URL: https://www.lcv.org/blog/why-climate-justice-must-include-lgbtq-justice/
+- (T-49) LCV explicitly connects climate/EJ organizing to LGBTQ+ rights, noting that LGBTQ+ communities face compounded vulnerability from climate disasters
+- (T-50) LCV's endorsement network (2025 first openly trans member of Congress, first openly LGBTQ+ member from Texas) shows the electoral bridge between climate and LGBTQ+ advocacy
+- (A-49) Domain 1: voting rights; LCV's electoral work is the EJ-to-voting bridge
+- (A-50) Domain 1: voter mobilization; LCV Action Fund endorsed LGBTQ+ climate champions
+- (L) LCV is both a potential Domain 49 and Domain 50 distribution contact; use the LCV bridge for paired distribution outreach
+
+**[K4] LCV — Connecting Climate Justice and LGBTQ+ Justice: Three Youth Activists**
+URL: https://www.lcv.org/blog/connecting-climate-justice-and-lgbtq-justice-three-youth-activists-fighting-for-both/
+- (T-49) Youth activists at the intersection of climate and LGBTQ+ justice documented with personal case studies
+- (T-50) Demonstrates that the generation most affected by both anti-trans legislation and climate impacts identifies these as connected struggles
+- (A-49) Domain 1: youth voters; Environmental Voter Project and LCV both work youth turnout programs
+- (L) Distributable as organizing framing to youth-facing organizations in both the EJ and LGBTQ+ networks
+
+**[K5] Center for American Progress — How Environmental and Climate Injustice Affects LGBTQI+ Communities**
+URL: https://www.americanprogress.org/article/how-environmental-and-climate-injustice-affects-the-lgbtqi-community/
+- (T-49) LGBTQ+ people are disproportionately burdened by indoor environmental hazards (lead, asbestos, radon) due to housing instability; LGBTQ+ people "often move to segregated locations to reduce discrimination, but these areas are often the most polluted"
+- (T-50) CAP documents the chain from discrimination to housing insecurity to environmental exposure to health burden — the reverse pathway from Domain 49's vicious cycle (pollution → civic exclusion) to Domain 50's Pillar 6 (civic exclusion → health burden)
+- (A-49) Domain 47: housing security; the segregated location pattern is the housing-environment nexus
+- (A-50) Domain 31: healthcare access; 59% of transgender people report experiencing healthcare discrimination — compounding environmental health burden
+- (L) CAP is a policy distribution contact; use this source when distributing to policy audiences that may not yet recognize the LGBTQ+-environment intersection
+
+**[K6] Queer Ecojustice Project — #Queers4ClimateJustice**
+URL: https://www.queerecoproject.org/queers4climatejustice
+- (T-49) Queer Eco Project builds movement "of queer folks impacted by the climate crisis and environmental injustice" — the organizational embodiment of the 49-50 intersection
+- (T-50) Queer Eco Project centers "multiply-marginalized and attacked trans, queer, and two spirit communities" in climate justice organizing
+- (A-49) Domain 22: racial justice; two-spirit communities are indigenous and face environmental justice impacts at tribal/EJ intersection (also bridges to Domain 58)
+- (A-50) Domain 22: racial justice; trans, queer, and two-spirit communities of color are the convergence population
+- (L) Queer Eco Project is a distribution contact that does not appear elsewhere in the framework; introduce through WE ACT or Earthjustice relationship
+
+**[K7] LGBTQ Nation — Queer Ecologists Spreading Knowledge Amid Climate Crisis**
+URL: https://www.lgbtqnation.com/2025/05/queer-ecologists-are-spreading-knowledge-changing-lives-amid-climate-crisis/
+- (T-49) May 2025; documents queer ecologists as a growing field connecting LGBTQ+ identity and ecological justice
+- (T-50) "Queer ecology is about resilience and how to inhabit a damaged world" — the intersectional framing that connects queer survival strategies to climate adaptation
+- (A-49) Domain 15: environmental organizing
+- (L) LGBTQ Nation is a media distribution contact for Domain 50; use this source to introduce Domain 49 content to LGBTQ+ media audiences
+
+**[K8] Cambridge Core — Framing Queer Climate Justice**
+URL: https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/framing-queer-climate-justice/2A2C5CF7D62ADAA77A0316CD42B2A4FC
+- (T-49) Academic peer-reviewed source examining how queer groups practice climate justice and build political bridges between LGBTQ+ and climate justice movements
+- (T-50) Documents scholarly recognition that "while scholars have established that the climate crisis places LGBTQ+ communities in precarious positions, we know little about how LGBTQ+ activists practice climate justice" — identifies the research gap that the 49-50 paired analysis fills
+- (A-49) Academic distribution contacts; PS: Political Science & Politics is a leading political science journal
+- (L) Academic distribution for both domains; the research gap this paper identifies is the analytical space the 49-50 intersection occupies
+
+---
+
+## THEME L: Housing, Displacement, and Environmental Vulnerability
+
+**[L1] HUD — Equal Access Rule Federal Register Proposed Rescission (April 28, 2026)**
+URL: https://www.federalregister.gov/documents/2026/04/28/2026-08244/equal-access-to-housing-in-hud-programs-revisions
+- (T-50) April 28, 2026 proposed rule would remove requirement that individuals accessing HUD programs be accommodated according to gender identity; enables shelters to house trans people by sex assigned at birth
+- (T-49) Housing insecurity among trans people increases exposure to environmental hazards in low-quality housing and segregated neighborhoods — the housing-to-environment exposure pathway
+- (A-50) Domain 47: housing security; this is the direct housing policy attack on trans people documented in the Federal Register
+- (A-49) Domain 22: racial justice; trans people of color face compounded housing insecurity and environmental exposure
+- (L) AT4E has launched an advocacy campaign at transequality.org/earcomment; this is an active legislative advocacy window
+
+**[L2] Shelterforce — Increased Danger for Unhoused Trans People as HUD Moves to Limit Equal Shelter Access**
+URL: https://shelterforce.org/2025/05/22/increased-danger-for-unhoused-trans-people-as-hud-moves-to-limit-equal-shelter-access/
+- (T-50) May 2025; documents the danger facing unhoused trans people from the proposed Equal Access Rule rescission
+- (T-49) Unhoused LGBTQ+ youth face heightened exposure to climate impacts (extreme weather, flooding) and indoor environmental hazards in precarious housing
+- (A-50) Domain 47: housing security
+- (A-49) Domain 47: the homelessness-environment exposure chain
+
+**[L3] National Alliance to End Homelessness — HUD Equal Access Rule**
+URL: https://endhomelessness.org/resources/policy-information/huds-equal-access-rule/
+- (T-50) Authoritative advocacy summary of what the Equal Access Rule provided and what its rescission would remove
+- (T-49) Documents that LGBTQ+ youth are over 120% more likely to experience homelessness — the homelessness rate creates environmental vulnerability through concentration in lower-quality housing and polluted neighborhoods
+- (L) National Alliance to End Homelessness is a distribution contact that bridges housing, environmental justice, and LGBTQ+ rights
+
+**[L4] Yes Magazine — LGBTQ Organizations Fight for Safe Housing for Trans Americans**
+URL: https://www.yesmagazine.org/economic-power/2025/04/07/housing-insecurity-trans-people
+- (T-50) April 2025; documents 31% increase in homelessness among gender-expansive people from 2022-2023; 35-39% of trans and nonbinary youth have experienced homelessness or housing instability
+- (T-49) Housing instability → segregated low-quality neighborhoods → concentrated environmental exposure; the chain from Domain 50's healthcare denial to Domain 49's environmental burden operates through housing as the intermediate variable
+- (A-50) Domain 47: housing security
+- (L) Yes Magazine is a progressive media distribution contact; distributable across both domain networks
+
+---
+
+## THEME M: June 2026 Litigation Developments (New as of June 10, 2026)
+
+**[M1] Lambda Legal / ACLU / NYCLU — Federal Class Action Against DOJ/NYU Langone (Filed June 1, 2026)**
+URL: https://lambdalegal.org/newsroom/coe_ny_20260602_families-challenge-trump-admin-attack-on-health-care-for-trans-youth/
+- (T-50) Lambda Legal, ACLU, NYCLU filed June 1, 2026 challenging DOJ's grand jury subpoena compelling NYU Langone Hospitals to hand over identities and health records of transgender youth who received gender-affirming care 2020-2026
+- (T-50) Fourth and Fifth Amendment claims: the government is compelling healthcare institutions to conduct searches of private health records and disclose them to federal law enforcement without patient consent
+- (T-50) The subpoena was empaneled in the Northern District of Texas — ADF's home jurisdiction for favorable judges
+- (A-50) Domain 6: judicial independence; the Northern District of Texas as a chosen venue for executive overreach is the Domain 6 forum-shopping story applied to trans health records
+- (A-50) Domain 31: healthcare access; health record subpoenas deter trans people from seeking care — a chilling effect on healthcare access that is not captured in the Skrmetti analysis
+- (L) Lambda Legal and ACLU are both primary Domain 50 distribution contacts; the June 1 filing is the most current Lambda Legal case; cite in outreach as evidence of ongoing aggressive litigation
+
+**[M2] Talbott v. USA — D.C. Circuit Upholds Preliminary Injunction (June 1, 2026)**
+URL: https://law.justia.com/cases/federal/appellate-courts/cadc/25-5087/25-5087-2026-06-01.html
+- (T-50) D.C. Circuit (2-1, Judge Robert Wilkins) upheld preliminary injunction blocking discharge of transgender servicemembers; held that the Trump military trans ban "appears to be driven by the bare desire to harm a politically unpopular group"
+- (T-50) The "bare desire to harm a politically unpopular group" language directly echoes Romer v. Evans — the D.C. Circuit applied Romer's constitutional logic to the military ban, one month before the anti-trans ballot measure season begins
+- (A-50) Domain 6: judicial composition; a 2-1 decision with a Republican-appointed dissent reflects the same judicial composition dynamics that produced Skrmetti
+- (A-50) Domain 33: the Talbott majority's Romer language is the strongest recent articulation of the anti-countermajoritarian principle in the federal courts
+- (L) GLAD Law and NCLR (National Center for LGBTQ Rights) are the litigation contacts; Lambda Legal and AT4E should receive this case analysis as a companion to their ballot measure work
+
+**[M3] Lambda Legal — $285 Million "Unstoppable Future" Campaign Completion**
+URL: https://lambdalegal.org/newsroom/us_20250605_ll-raises-285-million-powering-the-largest-single-campaign-to-fight-threats-to-lgbtq-liberty-in-history/
+- (T-50) Lambda Legal raised $285 million through its "Unstoppable Future" campaign, exceeding the $180 million goal by $105 million; the largest fundraising initiative in LGBTQ+ movement history
+- (T-50) By end of 2026, Lambda Legal's legal team will grow 42% (from 36 to 51 attorneys), expanding case docket capacity by 86% — directly increasing organizational capacity to defend against the 793 bills, six ballot measures, and DOJ health records subpoenas
+- (A-50) Domain 52: civil society suppression; the fundraising response directly counters the organizational attrition documented in Domain 50's Pillar 6
+- (L) The fundraising success is itself a distribution argument: Lambda Legal is better resourced to use Domain 50's analysis than it was in 2025. Cite in outreach materials as evidence of organizational readiness.
+
+**[M4] San Francisco AIDS Foundation v. Trump — Preliminary Injunction Blocking DEI and Gender Ideology EOs**
+URL: https://lambdalegal.org/newsroom/sfaf_us_20250609_federal-court-blocks-trump-anti-equity-and-anti-transgender-executive-orders-targeting-lgbtq-and-hiv-serving-nonprofits/
+- (T-50) June 9, 2026: federal court issued preliminary injunction blocking key provisions of EO 14173 (anti-DEI) and the "gender ideology" EO as applied to LGBTQ+ and HIV-serving nonprofits — prevents defunding of nine plaintiff organizations while litigation proceeds
+- (T-50) Blocked provisions include: removing communications that "promote or inculcate gender ideology"; prohibiting federal funds from being "used to promote gender ideology"; directing agencies to terminate DEI offices and grants
+- (T-49) This injunction connects to Domain 49: EO 14173 is the same administrative authority used to close OEJECR (EPA EJ office) as "DEI" — the A3 and A4 sources in the Domain 49 Theme A section. The court's holding that the EO violates constitutional protections for LGBTQ+ nonprofits may provide a legal theory for challenging OEJECR's closure under the same EO authority.
+- (A-49) Domain 49 Theme A (A3, A4): the legal theory connecting the two EO uses is now judicially tested
+- (A-50) Domain 52: civil society suppression; the injunction is the legal protection for LGBTQ+ civil society organizations
+- (L) This is the most recent and most actionable litigation development; distribute to both LGBTQ+ organizations (Domain 50) and to EJ organizations whose programs were closed under EO 14173 (Domain 49) as a companion analysis
+
+---
+
+## THEME N: NEPA Litigation as EJ Community Tool — June 2026
+
+**[N1] ICE Detention NEPA Litigation — Bloomberg Law Overview**
+URL: https://news.bloomberglaw.com/environment-and-energy/ice-facility-suits-to-test-scope-of-federal-environmental-review
+- (T-49) ICE detention center conversions are generating new NEPA litigation — communities and local governments are using NEPA to challenge DHS's failure to conduct environmental review for massive warehouse conversions
+- (T-49) March 2026 NEPA Round Up documented: challenges to DOI coal mine approvals and ICE detention centers under "energy emergency" executive orders; NEPA remains a live community participation tool even after CEQ regulation rescission
+- (A-49) Domain 38: immigration enforcement and community impact; ICE detention centers are an immigration-EJ intersection
+- (A-49) Domain 58: tribal sovereignty; Indigenous communities near detention sites face treaty-based rights that NEPA review was meant to protect
+- (L) Environmental law organizations currently litigating ICE NEPA cases are a new Domain 49 distribution contact class; distribute Domain 49's NEPA participation rights analysis to ICE-adjacent litigation teams
+
+**[N2] Maryland AG — NEPA Lawsuit Against DHS/ICE**
+URL: https://oag.maryland.gov/News/pages/Attorney-General-Brown-Files-Lawsuit-to-Stop-Construction-of-Unlawful-ICE-Detention-Facility-in-Washington-County.aspx
+- (T-49) Maryland AG Brian Frosh filed NEPA-based lawsuit against DHS for converting a Maryland warehouse into an ICE detention facility without environmental review; court issued preliminary injunction halting construction
+- (T-49) The Maryland AG NEPA challenge demonstrates that state AGs are using the NEPA participation rights framework to protect communities in the post-CEQ-rescission era — the same state AG coalition that filed on the Endangerment Finding is also using NEPA in active state-level litigation
+- (A-49) Domain 38: immigration enforcement; NEPA as a community protection tool in the immigration context
+- (L) Maryland AG's office is a state AG coalition contact; cite this action in Domain 49 outreach to state AG offices as evidence that NEPA tools remain actionable
+
+**[N3] Salt Lake City/County and Uproar Utah — NEPA/APA Lawsuit**
+URL: https://www.kuer.org/politics-government/2026-06-09/a-second-lawsuit-is-coming-for-ices-salt-lake-city-detention-center-plan
+- (T-49) June 9, 2026: A second lawsuit (Uproar Utah / Refugee Justice League) is being prepared against ICE's Salt Lake City warehouse conversion plan, following Salt Lake City and Salt Lake County's existing suit; claims include NEPA violation, APA violation, and Intergovernmental Cooperation Act violation
+- (T-49) The Salt Lake City plan calls for a 13,000-person facility that would use 1-2 million gallons of water per day — a water resource impact that affects communities throughout the Salt Lake region and the already-imperiled Great Salt Lake ecosystem
+- (A-49) Domain 38: immigration enforcement; the largest proposed detention facility in US history is being challenged through NEPA
+- (L) Refugee Justice League and Uproar Utah are new EJ distribution contacts; their use of NEPA arguments makes them direct recipients of Domain 49's participation rights analysis
+
+**[N4] SCOTUS Seven County Infrastructure Coalition v. Eagle County (May 29, 2025)**
+URL: https://www.supremecourt.gov/opinions/24pdf/23-975_m648.pdf
+- (T-49) 8-0 decision (Kavanaugh majority): federal agencies are entitled to "substantial deference" on EIS scope and contents; NEPA is a "procedural cross-check, not a substantive roadblock" — narrows scope of NEPA review available to EJ communities
+- (T-49) The decision excluded from NEPA review the downstream Gulf Coast environmental justice communities ("already overburdened by pollution from refining") who would have faced increased refinery activity from the Uinta Basin Railway; this is the EJ community participation failure directly produced by the SCOTUS ruling
+- (A-49) Domain 6: judicial independence; the 8-0 ruling shows that even justices who sometimes rule with community interests applied substantial deference here
+- (A-49) Domain 15: environmental rollbacks; SCOTUS narrowing NEPA compounds the CEQ regulatory rescission
+- (L) CRS LSB11333 is the best companion for congressional audiences; cite alongside the Earthjustice J2 source (2025 SCOTUS NEPA ruling) — these are the same case, confirming the existing J2 entry
+
+**[N5] CRS — Seven County "Deference Squared" Analysis (LSB11333)**
+URL: https://www.congress.gov/crs-product/LSB11333
+- (T-49) CRS analysis of Seven County: "Deference Squared" because agencies now get deference both on what effects to analyze and on the sufficiency of the analysis conducted
+- (T-49) The compounding effect: CEQ regulatory rescission (January 8, 2026) eliminated procedural NEPA requirements; Seven County (May 2025) eliminated judicial review of whether agencies adequately considered environmental effects; together these remove both the procedural requirement and the judicial check on compliance
+- (A-49) Domain 6: the CRS analysis is the best single source for congressional audiences explaining how judicial decisions compounded with executive action to eliminate EJ community participation rights
+- (L) Congressional staff contacts; CRS is the gold standard
+
+**[N6] National Law Review — NEPA Round Up March 2026**
+URL: https://natlawreview.com/article/nepa-news-march-2026-nepa-round
+- (T-49) March 2026 NEPA round-up documents emerging litigation patterns: DOI energy emergency approvals challenged under NEPA; ICE detention centers challenged under NEPA; demonstrates NEPA's continued relevance despite regulatory rescission and Seven County
+- (T-49) The persistence of NEPA litigation in 2026 despite the regulatory rescission demonstrates that statutory NEPA — as opposed to CEQ regulations — retains force; the statutory reform argument in Domain 49's Tier 2 is supported by this litigation pattern
+- (A-49) Domain 38: immigration NEPA nexus
+- (L) Environmental law practitioners and legal clinics; NLR is widely read by practitioners
+
+---
+
+## Domain 49 Phase 4 Integration Point Matrix (June 2026 Additions)
+
+| Source Cluster | Themes Covered | Adjacent Domains | Movement Leverage |
+|----------------|----------------|-----------------|-------------------|
+| Intersection Bridges (K1-K8) | Queer-EJ nexus, organizational convergence | D22, D47, D58 | WE ACT, Earthjustice, LCV, Queer Eco Project |
+| Housing-Environment Chain (L1-L4) | HUD Equal Access, trans homelessness, EJ exposure | D47, D50, D22 | AT4E, NAEH, LCV |
+| June 2026 Litigation (M1-M4) | DOJ health records, military ban, Lambda fundraising, DEI EO injunction | D6, D31, D52 | Lambda Legal, ACLU, GLAD |
+| NEPA-ICE Litigation (N1-N6) | ICE NEPA challenges, Seven County, deference | D6, D15, D38 | State AGs, Earthjustice, Refugee Justice League |
+
+**Phase 4 source additions: 24 (Themes K through N)**
+
+**Running total: Domain 49: 108 + 24 = 132 sources. Domain 50: 112 sources. Cross-domain intersection: 24 new sources.**
+
+---
+
+*Index updated: June 10, 2026. Phase 4 additions: Themes K (cross-domain intersection organizations), L (housing-environment-LGBTQ+ chain), M (June 2026 litigation developments), N (NEPA-ICE litigation wave and Seven County SCOTUS). These additions deepen the 49-50 intersection analysis and add the post-June-6 litigation record. Next action: July production sessions should lead with Theme M and Theme N sources as the urgency anchors; Theme K provides the organizational bridge contacts for paired distribution.*

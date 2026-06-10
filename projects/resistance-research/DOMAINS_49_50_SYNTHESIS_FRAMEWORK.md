@@ -3,8 +3,9 @@ title: "Domains 49–50: Synthesis Framework"
 subtitle: "Thematic Pillar Architecture, Cross-Domain Connection Points, Movement Leverage Angles, and December 2026 Distribution Narrative"
 domains: [49, 50]
 created: "2026-06-06"
-status: "production-ready — Phase 3 expansion"
-session: "Resistance Research Agent — Phase 3 Framework Expansion"
+updated: "2026-06-10"
+status: "production-ready — Phase 4 expansion"
+session: "Resistance Research Agent — Phase 4 Intersection Deepening"
 supersedes: "PHASE_2_DOMAINS_49_50_SYNTHESIS_FRAMEWORK.md (June 4, 2026 version)"
 cross_references:
   - DOMAINS_49_50_EXPANDED_SOURCE_INDEX.md
@@ -387,4 +388,107 @@ Domains 49 and 50 activate in August 2026 alongside Domains 51 (Campaign Finance
 
 ---
 
-*Synthesis framework prepared: June 6, 2026. Supersedes Phase_2_Domains_49_50_Synthesis_Framework.md (June 4, 2026). Phase 3 additions: Marin Audubon structural reform implication, EJSCREEN information access as sixth D49 pathway, Appalachian fourth case study geography, pro-equality ballot measures as new analytical category, Ohio AG Yost hire as ADF infrastructure anchor evidence, Phase 2 activation triggers, December 2026 synthesis narrative, full coalition leverage matrix for dual environmental-AND-LGBTQ+ organizations.*
+---
+
+## Part 9: June 2026 Developments — Deepened Intersection Analysis
+
+*Added June 10, 2026. This section integrates four new bodies of evidence that materially strengthen the 49-50 intersection analysis and update both pillars with post-June-6 litigation and policy developments.*
+
+### 9.1 The Housing-Environment-LGBTQ+ Chain: A New Causal Pathway
+
+The existing intersection analysis identifies six intersection points, all of which operate through the lens of democratic participation. The June 10 research pass identified a seventh intersection point that operates through a different mechanism: the housing-environment vulnerability chain.
+
+The chain runs as follows:
+
+1. Anti-LGBTQ+ discrimination in employment and healthcare creates economic precarity for LGBTQ+ people.
+2. Economic precarity creates housing instability: LGBTQ+ youth are over 120% more likely to experience homelessness; gender-expansive homelessness increased 31% from 2022-2023 (Trevor Project).
+3. Housing instability concentrates LGBTQ+ people in lower-quality housing and segregated neighborhoods. The CAP analysis documents: "LGBTQ+ people often move to segregated locations to reduce discrimination, but these areas are often the most polluted."
+4. Concentrated environmental exposure compounds the healthcare access crisis documented in Domain 50's Pillar 6: LGBTQ+ people already face healthcare discrimination (59% of trans people); environmental illness burden creates additional healthcare needs.
+
+The HUD Equal Access Rule proposed rescission (April 28, 2026, Federal Register) adds a policy attack on this chain. By rescinding the requirement that HUD shelters accommodate people according to gender identity, the rule increases the risk that trans people will be turned away from emergency shelter, deepening housing instability and compounding environmental exposure.
+
+**Intersection 7: Housing Security as the Connective Variable Between Domain 49 and Domain 50**
+
+Domain 49 documents frontline EJ communities — disproportionately poor communities of color — as those most harmed by the elimination of EJ infrastructure. Domain 50 documents LGBTQ+ people as those most harmed by ADF-coordinated legal attacks. The housing chain reveals that these are not separate populations: LGBTQ+ people of color in frontline communities face compounded EJ exclusion AND legal targeting simultaneously, with housing stability as the hinge variable connecting economic precarity (driven by anti-LGBTQ+ discrimination) to environmental exposure (concentrated in polluted neighborhoods).
+
+This is the mechanism through which the Nonprofit Quarterly queer ecological framework for Appalachia extends beyond Appalachia: wherever LGBTQ+ people face housing instability due to discrimination, they are disproportionately exposed to the environmental burdens that Domain 49 documents as civic suppression tools.
+
+---
+
+### 9.2 New June 2026 Litigation — Domain 50 Updates
+
+Three litigation developments between June 1-10, 2026 materially update Domain 50's Pillar 1 (ADF Infrastructure) and Pillar 5 (Constitutional Standards):
+
+**Talbott v. USA (D.C. Circuit, June 1, 2026)** — The D.C. Circuit upheld a preliminary injunction blocking discharge of transgender servicemembers, holding that the military trans ban "appears to be driven by the bare desire to harm a politically unpopular group." This language is a direct application of Romer v. Evans to an executive action — the most important federal appellate articulation of the anti-countermajoritarian principle in the six months preceding the anti-trans ballot measure season. Lambda Legal and AT4E should receive this case analysis before their ballot measure advocacy outreach.
+
+Caveat: The ruling was 2-1 and applies only to current servicemembers, not prospective enlistees. Class certification hearing scheduled June 30, 2026. The ruling is a preliminary injunction, not a final judgment — it reflects likelihood of success on the merits, not constitutional vindication.
+
+**Lambda Legal / ACLU v. DOJ (NYU Langone, filed June 1, 2026)** — Lambda Legal, ACLU, and NYCLU filed a federal class action challenging DOJ's grand jury subpoena compelling NYU Langone to hand over trans youth health records for patients who received gender-affirming care 2020-2026. The subpoena was empaneled in the Northern District of Texas — demonstrating ADF's home jurisdiction strategy being applied to executive branch enforcement actions. The case adds a Fourth Amendment dimension (unreasonable search and seizure of medical records) and a Fifth Amendment self-incrimination dimension to Domain 50's constitutional framework.
+
+This case is critical for Domain 49 as well: the DOJ subpoena for trans youth health records, combined with EJSCREEN removal (Domain 49), constitutes a pattern of information access attacks — removing community data tools on one end (EJ data) and compelling disclosure of private community data on the other end (health records). The democratic design insight: the same administration that removed EJSCREEN to prevent communities from documenting their pollution burden is now compelling disclosure of private health records to document trans youth for prosecution.
+
+**Lambda Legal $285 Million Fundraising** — Lambda Legal completed its "Unstoppable Future" campaign with $285 million raised, exceeding its $180 million goal by $105 million. By end of 2026, Lambda Legal's legal team will grow 42% to 51 attorneys, expanding case docket capacity by 86%. The organizational attrition argument in Domain 50's Pillar 6 — that ADF's legislative flooding strategy forces LGBTQ+ civil society organizations into permanent defense mode — must now be qualified: Lambda Legal is actively countering that attrition through the largest fundraising campaign in LGBTQ+ movement history. The organizational asymmetry between ADF (funded through dark-money DAF networks) and Lambda Legal (now $285M campaign-funded) is more balanced than the Pillar 6 analysis implies. Update the Pillar 6 analysis to note this development.
+
+---
+
+### 9.3 New Domain 49 Development: NEPA-ICE Litigation Wave
+
+The most significant Domain 49 development since June 6 is the emergence of a wave of NEPA-based litigation against ICE detention center conversions. This development has three implications for the Domain 49 analysis:
+
+**Implication 1: NEPA Statutory Rights Remain Actionable**
+
+Even after the CEQ regulatory rescission (January 8, 2026) and Seven County's "substantial deference" standard (May 29, 2025), state AGs and community organizations are successfully using NEPA claims to halt or delay federal detention facility construction. Maryland's AG obtained a preliminary injunction; Salt Lake City and Salt Lake County filed suit; Uproar Utah (Refugee Justice League) was preparing a second suit as of June 9, 2026. This demonstrates that statutory NEPA — the text of the law, not the CEQ regulations — retains community participation rights that courts are willing to enforce.
+
+This is the single most important development for Domain 49's reform architecture (Pillar 6). The argument that "statutory NEPA amendments are the only reliable reform pathway" is confirmed by the NEPA-ICE litigation wave: the statute, not the regulations, is what communities are successfully using to contest federal decisions in 2026.
+
+**Implication 2: Seven County's EJ Impact Is Documented**
+
+The Seven County Infrastructure Coalition v. Eagle County decision (May 29, 2025, 8-0) excluded downstream Gulf Coast communities "already overburdened by pollution from refining" from the NEPA EIS analysis for the Uinta Basin Railway. This is the most concrete recent example of how SCOTUS NEPA narrowing harms EJ communities: specific communities documented as pollution-burdened were explicitly excluded from the scope of federal environmental review by a unanimous Supreme Court. The D.C. Circuit's citation of these Gulf Coast communities in its initial ruling (which SCOTUS reversed) shows that EJ communities had statutory standing under NEPA that the Supreme Court's decision took away.
+
+Update Domain 49's Pillar 4 (Live Litigation) to include Seven County as the "SCOTUS adverse precedent" that the D.C. Circuit cases must work around.
+
+**Implication 3: ICE Detention-EJ Intersection as New Distribution Angle**
+
+The ICE detention NEPA litigation wave creates a new distribution angle for Domain 49: immigration enforcement and environmental justice are now connected through NEPA. Organizations working on immigration rights and detention advocacy are now using environmental review arguments — and are natural recipients of Domain 49's analysis of NEPA as a community participation tool. Domain 49's existing contact list (Climate Justice Alliance, WE ACT, DSCEJ, IEN) should be extended to include organizations working on ICE detention reform who have filed or are considering NEPA-based challenges.
+
+---
+
+### 9.4 Updated Cross-Domain Integration — SFAF v. Trump (June 9, 2026)
+
+The San Francisco AIDS Foundation v. Trump preliminary injunction (June 9, 2026) creates a new cross-domain connection between Domain 49 and Domain 50 that was not previously mapped.
+
+The factual basis: the court blocked key provisions of EO 14173 (the anti-DEI executive order) as applied to LGBTQ+ and HIV-serving nonprofits. EO 14173 is the same executive order used to close OEJECR (the EPA EJ office) as a "DEI" program (Domain 49, Source A4). The court held that EO 14173's provisions prohibiting federal funds from being used to "promote gender ideology" or requiring DEI office terminations are likely unconstitutional as applied to the nine plaintiff organizations.
+
+This creates a potential legal theory for challenging OEJECR's closure: if the same EO 14173 provision that terminated DEI-framed programs at LGBTQ+ nonprofits is unconstitutional, the argument that OEJECR's closure under the same EO authority is also unconstitutional has new legal support. This does not automatically save OEJECR — the June 9 ruling applies only to the nine plaintiff organizations, not to federal agencies. But it demonstrates that courts are willing to look behind the "DEI" framing and apply constitutional analysis to the content of what was terminated.
+
+This cross-domain development should be documented as a new activation trigger: if the SFAF v. Trump preliminary injunction survives appeal or is expanded on the merits, environmental law organizations should brief the theory that OEJECR's closure under EO 14173 is subject to the same constitutional challenge.
+
+---
+
+### 9.5 Organizational Leverage Map — June 2026 Additions
+
+Four organizations identified in Phase 4 research warrant addition to the coalition leverage map:
+
+**Queer Ecojustice Project**
+Domain 49 connection: Sits at the "intersection of ecological justice and queer liberation"; runs #Queers4ClimateJustice campaign; explicitly works with "multiply-marginalized and attacked trans, queer, and two spirit communities" who face environmental justice impacts.
+Domain 50 connection: Directly at the intersection — their member communities are the convergence population for both domains.
+Distribution strategy: Introduce through Earthjustice (who published "Why Queer Liberation Is an Environmental Justice Issue") or WE ACT (who explicitly supports Queer Eco Project). Send both domains simultaneously; Queer Eco Project does not need to be convinced that the two domains are connected — they already make that argument.
+
+**Uproar Utah / Refugee Justice League**
+Domain 49 connection: Preparing NEPA/APA lawsuit against ICE Salt Lake City detention facility; using statutory NEPA in exactly the community participation rights mode that Domain 49 documents.
+Domain 50 connection: Refugee justice organizations serve communities that include significant LGBTQ+ populations fleeing anti-LGBTQ+ persecution; the immigrant EJ connection bridges both domains.
+Distribution strategy: Domain 49 first (their active NEPA litigation is the immediate connection); Domain 50 as a follow-up noting the LGBTQ+ asylum-seeker dimension.
+
+**League of Conservation Voters**
+Domain 49 connection: Environmental advocacy organization with explicit EJ commitment; 2025-2026 endorsements include first openly trans member of Congress and first LGBTQ+ Latina in Congress.
+Domain 50 connection: LCV explicitly states "climate justice is LGBTQ+ justice" and has worked to elect LGBTQ+ climate champions to Congress.
+Distribution strategy: LCV is the bridge organization that makes the 49-50 paired distribution most natural; their existing organizational framing already makes the connection. Send both domains together; position as research support for their dual-issue advocacy work.
+
+**National Alliance to End Homelessness**
+Domain 49 connection: Homelessness creates environmental vulnerability (exposure to outdoor environmental hazards, climate impacts); NAEH works on intersection of housing and health.
+Domain 50 connection: LGBTQ+ youth represent 40% of homeless youth; the HUD Equal Access Rule rescission directly targets NAEH's constituency.
+Distribution strategy: Domain 50 first (HUD Equal Access Rule is the most urgent immediate issue); Domain 49 with a note on how housing instability concentrates LGBTQ+ people in environmentally burdened neighborhoods.
+
+---
+
+*Synthesis framework updated: June 10, 2026. Phase 4 additions: Intersection 7 (housing-environment-LGBTQ+ chain), Talbott v. USA D.C. Circuit ruling, Lambda Legal NYU Langone class action, Lambda Legal $285M fundraising, SFAF v. Trump DEI EO injunction, NEPA-ICE litigation wave, Seven County EJ impact documentation, four new organizational leverage additions.*
