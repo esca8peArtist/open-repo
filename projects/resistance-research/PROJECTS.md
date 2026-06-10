@@ -7,7 +7,7 @@
 
 ## Current Focus
 
-*Updated: June 6, 2026 (Session 2957) — Wave 1 pre-execution complete. Phase 3 infrastructure verified production-ready. CRITICAL: Domain 59 urgency frame requires patch before any sends (OBBBA enacted July 4, 2025 — Senate Finance markup window obsolete). Domain 51 Wave 1 CLEAR TO SEND June 10 14:00 UTC.*
+*Updated: June 10, 2026 — Wave 1 READY FOR IMMEDIATE USER EXECUTION. Domain 51 clear to send now (CLC + Issue One today, CA contacts June 12-13). Domain 59 HOLD — urgency frame patch required (15 min, see WAVE_1_NEWS_INTEGRATION.md). Domain 48 HOLD — Gist creation required before June 15 (see DOMAIN_48_GIST_CREATION_STEPS.md). Day 7 checkpoint: June 17-18. Execution log: WAVE_1_EXECUTION_LOG.md.*
 
 **PHASE 2 DISTRIBUTION — THREE ACTIVE WINDOWS**
 
