@@ -2,23 +2,35 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3127, June 11 2026-06-11T 23:25 UTC)
+## Since Last Check-in (Session 3128, June 12 2026-06-12T ~00:30 UTC)
 
-**Orchestrator Action**: Standard orientation completed. Pause directive verified **ACTIVE through June 15 00:00 UTC** (3d 0.5h remaining). All 4 blocks re-verified unresolved:
-- ✅ cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart — cannot auto-verify
-- ✅ mfg-farm: `ls -la projects/mfg-farm/test-print-results/` → directory missing; test print execution required (user action)
-- ✅ systems-resilience: `docker ps` → no Docker containers running; platform choice decision still pending (66+ hours overdue since June 8 18:00 UTC deadline)
-- 🚨 **open-repo: deployment timing conflict persists (09:00 UTC vs 20:00 UTC); DEADLINE ~8.5 HOURS AWAY (June 12 09:00 UTC)**
+**Orchestrator Action**: Standard orientation + critical deadline escalation.
 
-**⚠️ CRITICAL URGENCY**: open-repo deadline in ~8.5 hours. User decision on canonical deployment start time (09:00 UTC or 20:00 UTC) is REQUIRED before deployment window opens.
+**🚨 CRITICAL: open-repo deployment timing decision OVERDUE**
+- **Deadline**: June 12 09:00 UTC (TODAY, ~8.5 hours from session start)
+- **Decision needed**: Confirm canonical deployment start time: **09:00 UTC** (business hours) or **20:00 UTC** (after-hours)
+- **Evidence found**:
+  - Newer docs (Session 2952–2956): use **09:00 UTC**
+  - Older docs (pre-Session 2952): use **20:00 UTC**
+  - Both times are documented in active deployment procedures
+  - `DEPLOYMENT_JUNE12_RISK_MITIGATION.md` explicitly notes "user must resolve this before deployment"
+  - SLA implications differ: 95% daily SLA for June 12 if 09:00 (30-min deployment during business hours); 100% if 20:00 (off-hours)
+- **Impact if unresolved at 09:00 UTC deadline**: Pre-flight checklist cannot execute, deployment communication templates cannot finalize, rollback procedures remain ambiguous
 
-**No new INBOX items.** No user decisions provided.
+**Pause directive status**: ✅ **ACTIVE through June 15 00:00 UTC** (confirmed). All 4 blocks re-verified:
+- ✅ cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart
+- ✅ mfg-farm: test print execution pending
+- ✅ systems-resilience: platform choice decision (71+ hours overdue since June 8 18:00 UTC deadline)
+- 🚨 **open-repo: deployment timing decision (CRITICAL DEADLINE IN ~8.5 HOURS)**
 
-**Exploration Queue**: 108 items tracked; all completed items archived; queued items scheduled for June 15-20 post-pause.
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT**. No autonomous work available. Autonomy resumes June 15 00:00 UTC.
 
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT**. All project scope remains user-action-gated. Autonomy resumes June 15 00:00 UTC (session 38+ in pause cycle).
+**Needs Your Input (URGENT)**:
+1. **Confirm open-repo deployment start time**: 09:00 UTC or 20:00 UTC?
+   - Reply here or update BLOCKED.md Resolution field with your decision
+   - Deadline: June 12 09:00 UTC (~8.5 hours)
 
-**Session duration**: ~5 minutes (orientation + block verification + CHECKIN update + commit)
+**Session duration**: ~10 minutes (orientation + block verification + deadline escalation + CHECKIN update)
 
 ---
 
