@@ -2,23 +2,29 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3095, June 10 2026-06-10T ~22:10 UTC)
+## Since Last Check-in (Session 3096, June 10 2026-06-10T ~19:15 UTC)
 
-**What was accomplished**: Standard orientation + full block review completed. Pause directive remains active and correctly enforced through June 15 00:00 UTC (~4 days remaining). No user decisions provided since Session 3094. Block status unchanged — all 4 blocks remain unresolved and require user action only.
+**What was accomplished**: Full orientation completed (ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, EXPLORATION_QUEUE.md). Pause directive verified active through June 15 00:00 UTC (~4 days remaining). No user decisions provided since Session 3094. All 4 blocks remain unresolved and require user action only.
 
-**Orientation summary** (Session 3095):
-- ✅ ORCHESTRATOR_STATE.md: Confirms idle state, pause directive active
-- ✅ BLOCKED.md: 4 active blocks, all require user action only (no changes)
-  - cybersecurity-hardening: VeraCrypt restart pending (26 days, not urgent)
+**Verification results**:
+- ✅ ORCHESTRATOR_STATE.md: Confirms idle state, pause directive active through June 15 00:00 UTC
+- ✅ BLOCKED.md: 4 active blocks, all require user action only (unchanged since 3095)
+  - cybersecurity-hardening: VeraCrypt pre-boot restart pending (26 days, not urgent)
   - mfg-farm: test print execution pending (28 days, not urgent)
-  - systems-resilience: platform choice + SMTP credentials — **OVERDUE 31+ hours** (deadline June 8 18:00 UTC passed; publication June 9 deferred indefinitely)
-  - open-repo: deployment time clarification — due June 12 09:00 UTC (~34 hours remaining)
-- ✅ INBOX.md: Empty (no new items to process)
-- ✅ No auto-verifiable blocks; all remain unresolved (manual/user-action only)
+  - systems-resilience: platform choice (Nextcloud+Matrix vs Discourse) + SMTP credentials — **OVERDUE 31+ hours** (publication deadline June 9 13:00 UTC missed; platform never deployed)
+  - open-repo: deployment start time clarification (09:00 UTC vs 20:00 UTC) — due June 12 09:00 UTC (~34 hours)
+- ✅ PROJECTS.md: 8 projects paused per user directive (May 27 23:15 UTC). All project work appropriately blocked.
+- ✅ EXPLORATION_QUEUE.md: Items 87-108 all ✅ COMPLETE or ⏳ QUEUED for June 15+ execution. No items ready for current session.
+- ✅ INBOX.md: Empty (all items processed)
 
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — No autonomous project work. Three critical user decisions pending (1 overdue, 2 urgent <35h). Awaiting June 15 autonomy resumption (~4 days).**
+**Critical user decisions required** (UNCHANGED):
+1. 🚨 **systems-resilience platform deployment**: Platform choice (recommend Discourse: 8GB vs 16GB requirement, 2-3h vs 4-6h deploy) + public IP/domain + SMTP credentials. Publication indefinitely deferred pending decision.
+2. ⏰ **stockbot Jetson cooler order**: SC1148 Active Cooler must be ordered by June 11 17:00 UTC (16 hours) for June 19-20 thermal validation before GOOGL gate June 20. Item 108 (Phase 3b Pre-Gate Risk Validation) production-ready.
+3. ⏰ **open-repo deployment timing**: Confirm 09:00 UTC (business hours) or 20:00 UTC (after-hours) for June 12 deployment in all communication templates + docs. Decision by June 12 09:00 UTC (~34 hours).
 
-**Session duration**: 3 minutes (orientation + block review)
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — No autonomous project work available. Three critical user decisions pending. Autonomy resumes June 15 00:00 UTC (~4 days).**
+
+**Session duration**: ~8 minutes (full orientation + block verification + CHECKIN update)
 
 ---
 
