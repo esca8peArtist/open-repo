@@ -4,49 +4,51 @@
 
 ---
 
-## 🎯 Session 2977 (June 10 02:45–03:00 UTC – COMPLETE) — Minor Orchestration Patches + Decision Blocking Assessment
+## 🎯 Session 2978 (June 10 01:42–XX:XX UTC) — Orchestration Analysis + Critical Decision Escalation
 
-**Status**: ✅ **AUTONOMOUS PATCHES COMPLETE — RESISTANCE-RESEARCH WAVE 1 READY FOR USER EXECUTION TODAY**
+**Status**: ⚠️ **CRITICAL BLOCKER ASSESSMENT COMPLETE — THREE OVERDUE DECISIONS BLOCKING ALL MAJOR PROJECTS**
 
-**Summary**: Orchestrator executed four minor autonomous tasks to resolve old blocks and prepare Wave 1/2 staging for user execution. No new external dependencies identified; all remaining work blocked on overdue user decisions (stockbot, systems-resilience).
+**Summary**: Orchestrator orientation complete. All three overdue user decisions identified and requiring immediate attention to unblock subsequent work. No additional autonomous work available until decisions are made.
 
-### ✅ Session Deliverables
+### Critical Finding: Three Overdue Decisions
 
-1. **Usage Calibration Block Resolved** (15 min) — Verified calibration within 7-day window (0.0% Sonnet, 0.0% All-models), moved to Resolved Archive in BLOCKED.md
-2. **Domain 59 Date Patch** (3 min) — Updated send_window from stale "June 2-3" to current "June 10-15", markup_deadline June 30 preserved
-3. **Domain 48 Gist Created** (5 min) — GitHub Gist live: https://gist.github.com/esca8peArtist/4f1fc874544f34a55d4320fc786761f0 (7,100 words, 48 citations, production-ready)
-4. **INBOX Processed** (1 min) — Resume directive cleared; no new project directives
+| Decision | Deadline | Overdue | Impact | Required Data |
+|----------|----------|---------|--------|---|
+| **stockbot Phase 3: GO/CAUTION/NO-GO** | June 7 09:00 UTC | 72+ hours | Blocks Phase 4 deployment, roadmap clarity | COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md (review 5-10 min) |
+| **systems-resilience: Platform Choice** | June 8 18:00 UTC | 31+ hours | June 9 deployment deadline PASSED; new timeline blocked | Choose Discourse (2-3h deploy, 8GB RAM OK) OR Nextcloud+Matrix (4-6h, 7.9GB RAM risky); provide IP+domain+SMTP if Discourse |
+| **open-repo: Deployment Time Clarification** | June 6 (ongoing) | — | June 12 deployment timing conflicted in docs | Confirm 09:00 UTC (business hours) OR 20:00 UTC (after-hours) for June 12 deploy |
 
-**Total time**: ~16 minutes (orientation 5 min + patches 11 min)
+### ⏳ All Active Projects Status
 
-### ⏳ Blocked: Three Overdue User Decisions
+| Project | Priority | Status | Blocker | Autonomous Work Available |
+|---------|----------|--------|---------|---|
+| **stockbot** | #1 | Active | GO/CAUTION/NO-GO decision | ❌ None (waiting for user decision) |
+| **resistance-research** | #2 | Active | Wave 1-2 user execution | ⚠️ Phase 2 research work available but deferred pending Phase 1 metrics |
+| **cybersecurity-hardening** | #3 | Active | VeraCrypt restart (user action) | ❌ None (blocked waiting for restart) |
+| **mfg-farm** | #4 | Active | Test print execution (user action) | ❌ None (blocked waiting for print) |
+| **seedwarden** | #5 | Active | Track A: 2 user actions; Phase 3: June 17 contractor outreach | ⚠️ Phase 3 contractor prep available if approved |
+| **open-repo** | #6 | Active | Merge approval + deployment timing | ❌ Code ready but blocked on user decisions |
+| **systems-resilience** | — | Active | Platform choice + new deployment timeline | ❌ Infrastructure complete; deployment blocked on platform decision |
+| **off-grid-living** | — | Complete | Social media execution (user) | ❌ No autonomous work |
+| **workout** | — | Active | User review | ❌ No autonomous work |
+| **open-source-rideshare** | — | Paused | Pause ongoing | ❌ Not being worked on |
 
-| Decision | Deadline | Status | Impact |
-|----------|----------|--------|--------|
-| **stockbot Phase 3 GO/CAUTION/NO-GO** | June 7 09:00 UTC | ⚠️ 72+ hours overdue | Blocks Phase 4 deployment, resource allocation |
-| **systems-resilience Platform Choice** | June 8 18:00 UTC | ⚠️ 31+ hours overdue | June 9 publication timeline (PASSED) — new deadline TBD |
-| **open-repo Deployment Timing** | June 6 (clarification) | ⚠️ Timing still unclear | June 12 09:00 vs 20:00 UTC deployment |
+### Immediate Actions Required
 
-**Recommendation**: User should make three decisions immediately (estimated 10-15 min total):
-1. Review COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md → decide GO/CAUTION/NO-GO for stockbot
-2. Choose Nextcloud+Matrix OR Discourse for systems-resilience (provide IP/domain/SMTP if Discourse)
-3. Clarify open-repo deployment: 09:00 UTC (business hours) or 20:00 UTC (after-hours) June 12
+**CRITICAL (affects all projects downstream):**
+1. **Stockbot GO/CAUTION/NO-GO decision** (5-10 min) — Review `/projects/stockbot/COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md` and decide deployment readiness
+2. **systems-resilience platform choice** (2 min decision; 2-6 hours setup if executing now) — Choose Discourse OR Nextcloud+Matrix, provide credentials if Discourse
+3. **open-repo deployment time** (1 min) — Confirm 09:00 UTC (business hours) or 20:00 UTC (after-hours) for June 12 execution
 
-### Immediate User Actions (Next 48 Hours)
+**Upon decisions above:**
+- **resistance-research Wave 1** (30 min user execution) — June 10 TODAY
+- **resistance-research Wave 2** (30 min user execution) — June 11 (dependent on Wave 1 completion)
+- **open-repo merge + deployment prep** (2-3 hours) — if merge approved
+- **systems-resilience deployment** (2-6 hours) — immediately after platform chosen, if executing June 10-11
+- **seedwarden Phase 3 prep** (varies) — if approved, orchestrator can begin prep work
 
-**TODAY (June 10)**: resistance-research Wave 1 execution (30 min)
-- Open `domain-51-send-templates.md`
-- Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in Emails 4-5
-- Send Email 4 to echlopak@campaignlegalcenter.org (Erin Chlopak, CLC)
-- Send Email 5 to info@issueone.org (Issue One)
-
-**Tomorrow (June 11)**: resistance-research Wave 2 execution (30 min)
-- Open `domain-51-send-templates.md`, fill Emails 1-3
-- Send to CA contacts: Common Cause CA, LWV CA, Clean Money Action Fund
-
-**Optional (if time)**: 
-- Domain 59 sends (emails to CBPP, ITEP, NWLC, MomsRising, AFL-CIO) — ready to execute, no additional work needed
-- Domain 48 sends (emails using new Gist) — ready to execute once templates created
+**Next Autonomous Checkpoint:**
+After three decisions above are made, orchestrator will: (1) Identify remaining unblocked work, (2) Estimate scope and execution time, (3) Execute parallel agents if multiple projects ready, (4) Report progress in next check-in.
 
 ---
 

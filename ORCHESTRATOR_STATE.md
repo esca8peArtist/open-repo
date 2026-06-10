@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-10T01:22:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-10T01:42:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 0.0% | Reset in 143h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (5,731 tokens) | All-models 1.2% | Reset in 142h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -35,9 +35,9 @@
 **Focus**: ✅ **[PHASE 3 COMPREHENSIVE BACKTESTING REPORT COMPLETE + PHASE 4 PREPLAN COMPLETE (SESSION 2972, JUNE 7) — AWAITING JUNE 7 09:00 UTC GO/CAUTION/NO-GO DECISION]** — **PHASE 3 STATUS**: `COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md` (5,960 words) + `JUNE_7_USER_DECISION_MEMO.md` both ready. **Model Verdicts** (definitive): JPM ridge_wf **6/6 gates PASS** (OOS Sharpe 4.412, 100% deployment confidence); AMZN lgbm_ho **6/6 gates PASS** (96% deployment confidence post-G5-fix). Recommendation: * … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
-**Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — launch pending 5 user gates (May 30 target missed, rolling window, no expiry)**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**; **Standing task: 18 wild edibles habit photos 18/18 COMPLETE (Session 2505 verified)**
-**Focus**: ✅ **[TRACK B INFRASTRUCTURE PRODUCTION-READY — 5 USER GATES UNEXECUTED (JUNE 10 VERIFICATION) + PHASE 3 CONTRACTOR SEARCH EXECUTION COMPLETE (SESSION 2967, JUNE 6)]** — May 30 launch target was set in May 13 readiness audit; Track B did not launch May 30 because 5 user gates (social accounts, Canva Brand Kit, Canva zone card production, Kit email platform, Google Drive hosting + Etsy coupon) were never executed. All autonomous pre-launch infrastructure remains 100% production-ready: 8 zone PDFs verified (`assets/zone-cards/`), email copy verified (`execution/TRACK_B_EMAIL_COPY_FINAL.md`), social calendar verified (`TRACK_B_SOCIAL_CALENDAR_MAY28_30.md` — dates stale, framework reusable), influencer contacts verified (`TRACK_B_HERBALIST_OUTREACH_MATRIX.md`). No orchestrator work remains for Track B pre-launch. Phase 3 contractor pool (11 candidates), outreach templates (4 types), and response tracking dashboard all verified present and production-ready (all dated June 6, 2026, in `phase-3/`). Outreach window opens June 17 (7 days). Phase 3 execution timeline: June 22 – July 13. No autonomous pre-work remaining. Next orchestrator action: update response tracking dashboard when contractor responses arrive (June 17+).
-**Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers — launch pending user gate execution only.
+**Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**; **Standing task: 18 wild edibles habit photos 18/18 COMPLETE (Session 2505 verified)**
+**Focus**: ✅ **[TRACK B INFRASTRUCTURE PRODUCTION-READY — GATES NOT YET EXECUTED (SESSION 2964 FORENSIC AUDIT, JUNE 6) + PHASE 3 CONTRACTOR SEARCH EXECUTION COMPLETE (SESSION 2967, JUNE 6)]** — Orchestrator activated Track B on June 4, but June 5 execution target referred to readiness status, not completion. Forensic audit (Agent a9df4d3832becad3f) confirms: all autonomous pre-launch infrastructure 100% production-ready and verified (8 zone PDFs, email copy, social calendar, influencer contacts); all … *(truncated — prune Current focus in PROJECTS.md)*
+**Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 & #2 MERGED** (Session 1246: 2026-05-18, post-merge cleanup complete)
@@ -63,12 +63,6 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### Usage limits — weekly calibration reminder
-**Date blocked**: 2026-06-09 (auto-added each Tuesday by reset-usage-budget.sh)
-**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
-**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
-**Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**:
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -93,13 +87,19 @@
 ---
 ### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
 **Date blocked**: 2026-06-06
+**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. As of June 6 20:05 UTC: Docker was not installed (resolved in Session 2965), no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. Platform choice (Nextcloud+Matrix vs Discourse) is pending user decision from Session 2965 CHECKIN.
+**What I need**: User decision on which platform to deploy (Nextcloud+Matrix or Discourse). Recommendation: Discourse is more suitable for this Raspberry Pi 5 (8GB RAM recommended vs Nextcloud's 16GB) and deploys faster (2-3 hours vs 4-6 hours). If Discourse chosen, provide public IP + domain for platform, and SMTP credentials for email notifications. If Nextcloud+Matrix chosen, confirm acceptance of memory risk (system has 7.9GB total RAM). Once choice is confirmed, orchestrator will execute platform deployment by June 8 18:00 UTC deadline.
+**Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
+**Resolution**: [leave blank]
+---
+### open-repo — Deployment start time conflict (user clarification required)
 
 ## Recently Resolved (last 5)
+• Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
 • stockbot — Phase 3 Infrastructure Blockers (Container Restart Policy + Alpaca DNS) ← 2026-06-06 17:45 UTC (Session 2953 continuation — autonomous infrastructure fixes)
 • stockbot — June 5 market execution failure: 0 trades executed (root cause identified + fix deployed, awaiting verification) ← 2026-06-06 13:33 UTC (Session 2948 — continuous 20-minute verification monitoring, zero credential errors detected)
 • stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup) ← 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
-• stockbot — Alpaca "insufficient subscription" prevents live trading (critical blocker) ← 2026-06-02 22:55 UTC (Session 2630 — orchestrator autonomous diagnosis & fix)
 
 ## Inbox (unprocessed)
 (NONE — all pending items processed from last session)
