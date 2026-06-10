@@ -2,31 +2,43 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3088, June 10 2026-06-10T ~18:30 UTC)
+## Since Last Check-in (Session 3089, June 10 2026-06-10T ~18:47 UTC)
 
-**What was accomplished**: Standard orientation completed. Verified pause directive remains active through June 15 00:00 UTC (autonomy resumption scheduled). All state files synchronized:
-- ORCHESTRATOR_STATE.md: Confirms idle state, pause directive active
-- BLOCKED.md: 4 active blocks (cybersecurity-hardening, mfg-farm, systems-resilience, open-repo) — all require user action only
-- INBOX.md: Empty (no new items to process)
-- PROJECTS.md: 8 paused, 1 active (stockbot) awaiting user decision on critical bugs
+**What was accomplished**: Standard orientation + block verification completed. Pause directive remains active and correctly enforced through June 15 00:00 UTC (~4.5 days remaining).
 
-**Verification summary**:
-- Pause directive correctly enforced (43+ consecutive verification sessions since May 27)
+**Orientation summary**:
+- ✅ ORCHESTRATOR_STATE.md: Confirms idle state, pause directive active through June 15
+- ✅ BLOCKED.md: 4 active blocks, all require user action only
+  - Re-verified block status: `docker ps` (no containers), test-print dir (not found), open-repo docs (conflicting times)
+  - All auto-verify commands failed as expected (blocks unresolved)
+- ✅ INBOX.md: Empty (no new items)
+- ✅ PROJECTS.md: Confirmed 8 projects paused per user directive 2026-06-10
+
+**Verification results**:
+- Pause directive: 44+ consecutive verification sessions since May 27 (CORRECT)
 - No unblocked project work available
-- Exploration Queue: 108 items (87-108 complete/production-ready, queued for post-pause execution)
-- Block status unchanged: all require user input (cannot auto-resolve)
+- Exploration Queue: 108 items total (Items 87-108 complete/production-ready)
 
-**User decisions awaiting**:
-- systems-resilience: platform choice (Nextcloud+Matrix or Discourse) — OVERDUE 38+ hours
-- stockbot: Tier-1 bug fix priority decision
-- open-repo: deployment start time clarification (09:00 or 20:00 UTC)
-- cybersecurity-hardening: Windows VeraCrypt pre-boot restart
+**CRITICAL STATUS — USER DECISIONS REQUIRED**:
+- 🚨 **systems-resilience platform: OVERDUE 29+ HOURS** (deadline June 8 18:00 UTC, publication June 9 13:00 UTC missed)
+  - Need: Platform choice (Nextcloud+Matrix or Discourse) + credentials
+  - Recommendation: Discourse (8GB vs 16GB requirement, 2-3hr deploy vs 4-6hr)
+- ⏰ **stockbot Jetson cooler order: URGENT (18 hours, June 11 17:00 UTC deadline)**
+  - SC1148 required for June 19-20 thermal validation before GOOGL gate June 20
+- ⏰ **open-repo deployment: HIGH PRIORITY (42 hours, June 12 deadline)**
+  - Clarify 09:00 UTC (business hours) vs 20:00 UTC (after-hours) in docs
 
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & SCHEDULED TO EXPIRE JUNE 15 00:00 UTC — SESSION 3088 — NO AUTONOMOUS WORK AVAILABLE**
+**All other blocks remain unresolved** (unchanged):
+- ✗ cybersecurity-hardening Phase 1 (26 days) — Windows VeraCrypt restart needed
+- ✗ mfg-farm test print (28 days) — user execution required
 
-**Session duration**: ~3 minutes (orientation + state verification + CHECKIN update)
+**What's in progress**: No autonomous project work. Pause correctly enforced. Awaiting user input on critical items above.
 
-**Next**: Autonomy resumes automatically at June 15 00:00 UTC per scheduled pause expiration.
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — SESSION 3089 — NO CHANGES, AWAITING JUNE 15 AUTONOMY RESUMPTION**
+
+**Session duration**: ~8 minutes (orientation + block verification + CHECKIN update)
+
+**Next checkpoint**: June 15 00:00 UTC — pause directive expires, autonomous work resumes.
 
 ---
 
