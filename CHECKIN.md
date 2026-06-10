@@ -4,6 +4,81 @@
 
 ---
 
+## 🎯 Session 3000 (June 10 ~09:00 UTC) — CRITICAL BLOCKER CLARIFICATION: Items 106–108 Complete
+
+**Status**: ✅ **THREE CRITICAL BLOCKERS CLARIFIED — USER DECISIONS MAPPED — READY FOR ACTION**
+
+### Summary
+
+Orchestrator executed Items 106–108 (pause-exempt research on critical blockers) to clarify user decision options:
+- ✅ **Item 106**: systems-resilience publication status investigation — **Publication NOT LIVE**; deadline missed because platform decision pending
+- ✅ **Item 107**: stockbot strategic reset assessment — **Clear decision options synthesized**; Session 2980 recommends Tier-1 Bug Sprint
+- ✅ **Item 108**: resistance-research Domain 51 Wave 1 status — **NOT EXECUTED June 9**; overdue; can execute TODAY (June 10) with user action
+
+### CRITICAL FINDINGS & USER ACTION ITEMS
+
+**1. SYSTEMS-RESILIENCE: Publication Blocked on Platform Decision (NOT Deployment)**
+   - **Status**: Phase 5.1 publication is **NOT LIVE** as of June 10
+   - **Root cause**: User platform choice (Nextcloud vs Discourse) due June 8 18:00 UTC was not provided
+   - **What's ready**: Content production-ready (61,611 words, 336+ citations), infrastructure ready (Docker installed, ports available), deployment runbooks complete
+   - **What's needed**: User decision on platform + SMTP credentials if Discourse chosen
+   - **Timeline**: Can republish TODAY (20–30 min deployment once decision made)
+   - **Impact on Wave 2**: Wave 2 recruitment starts June 14 (does NOT require publication to be live on June 9; can proceed with June 10 publication)
+   - **User decision**: **Nextcloud+Matrix or Discourse?** (Recommendation: Discourse is faster and better-sized for 8GB Raspberry Pi 5)
+
+**2. STOCKBOT: Three Clear Decision Options for Tier-1 Priority**
+   - **Session 2980 finding**: Backtesting pipeline has 4 critical bugs (C-1 pooled t-stat, C-3 cash pool reconciliation, C-4 zero-padding, missing transaction costs)
+   - **Option A (Recommended)**: Execute Tier-1 Bug Sprint (3–4 sessions) to fix critical bugs, re-evaluate models with corrected pipeline
+   - **Option B (Faster/Riskier)**: Skip bugs, just fix AMZN G5, proceed to 2-session live (deploys on flawed pipeline)
+   - **Option C (Safest/Slowest)**: Pause all trading, full pipeline repair first (8–12 sessions)
+   - **Session 2980 warning**: "Do not add new strategies or tickers to live paper trading while C-1 and C-3 are unresolved"
+   - **User decision**: **Proceed with Tier-1 Bug Sprint (Option A)?** Or preferred alternative?
+
+**3. RESISTANCE-RESEARCH: Domain 51 Wave 1 Execution Overdue — CAN EXECUTE TODAY**
+   - **Status**: Domain 51 Wave 1 did **NOT** execute on June 9 (scheduled 09:00–10:30 UTC local time)
+   - **Root cause**: User action required for all email sends; no autonomous blocker
+   - **Current state**: ALL INFRASTRUCTURE READY (Gist verified HTTP 200, email templates copy-paste ready, contact list verified)
+   - **Revised timeline**: Wave 1 (June 10), Wave 2 (June 12–13)
+   - **Critical bug found**: DOMAIN_51_JUNE_16_CHECKPOINT_METRICS_TEMPLATE.md has WRONG contacts listed (Yusuf Maluf/Cynthia Terrell/Tiffany Muller). Correct contacts are Erin Chlopak (CLC), Darius Kemp (Common Cause CA), Jenny Farrell (LWV CA). **Must fix before June 16.**
+   - **Checkpoint timeline impact**: If Wave 1 executes today (June 10), Day 7 checkpoint shifts to June 17 (not June 16)
+   - **User action needed**: **Execute Domain 51 Wave 1 email distribution today (90 min)** — all materials ready
+
+**4. OPEN-REPO: Deployment Timing Conflict Remains (09:00 vs 20:00 UTC)**
+   - Status: Unchanged. Requires user clarification on June 12 deployment time.
+
+**5. CYBERSECURITY-HARDENING & MFG-FARM: Unchanged (manual user actions required)**
+   - Status: Unchanged. Require VeraCrypt restart and test print execution.
+
+### Exploration Queue Status
+
+Items 106–108 complete and committed:
+- **Item 106**: `PHASE_5_1_PUBLICATION_STATUS_REPORT.md`, `PHASE_5_1_NEXT_STEPS_AND_USER_DECISIONS.md`, `PLATFORM_DEPLOYMENT_PRIORITY_REASSESSMENT.md`
+- **Item 107**: `SESSION_2980_FINDINGS_SYNTHESIS.md`, `STOCKBOT_DECISION_MATRIX_USER_CHOICES.md`, `STRATEGIC_RESET_RATIONALE_AND_NEXT_STEPS.md`
+- **Item 108**: `DOMAIN_51_WAVE_1_EXECUTION_STATUS_REPORT.md`, `ITEM_104_READINESS_AND_EARLY_START_ASSESSMENT.md`
+
+**Pause directive**: Remains ACTIVE. All items were pause-exempt research (investigation + analysis, no autonomous deployments).
+
+### What's Unblocked Once User Decisions Arrive
+
+Once you provide the 3 critical user decisions above:
+
+1. **systems-resilience**: Orchestrator deploys chosen platform (20–30 min), publishes Phase 5.1, proceeds to Wave 2 recruitment
+2. **stockbot**: Orchestrator writes Tier-1 Bug Sprint specs per AGENT_LOOP_WORKFLOW.md Phase A, awaits your approval, begins implementation
+3. **resistance-research**: Domain 51 Wave 1 executes today (user action); Day 7 checkpoint June 17; Phase 2 Batch sequencing proceeds
+
+### Next Actions
+
+**User provides**:
+1. Platform choice (Nextcloud+Matrix or Discourse) + SMTP credentials if Discourse
+2. Tier-1 priority decision (Option A: Bug Sprint, or preferred alternative)
+3. Domain 51 Wave 1 execution window (today June 10, or defer to June 12?)
+
+Once those arrive → Orchestrator resumes autonomous execution across 3 major projects.
+
+**Session complete**: 2026-06-10 ~09:15 UTC. All findings documented. Ready for user input.
+
+---
+
 ## 🎯 Session 2999 (June 10 ~07:50 UTC) — Exploration Queue Refill Complete: Items 103–105 Finished
 
 **Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE — INFRASTRUCTURE RESEARCH DELIVERED**
