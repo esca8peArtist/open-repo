@@ -182,6 +182,57 @@
 **Deadline**: June 18 ✅ COMPLETE (June 6, 12 days early)
 **Confidence**: 95%+ — all 13 risks identified with quantified P×I, 9-week solo timeline realistic at 12 hrs/week ceiling, decision framework operationalized with explicit gates
 
+### 106. ⏳ seedwarden — Phase 3 Sprint Launch Contingency Triggers & Escalation Framework (Session 3002)
+**Context**: Phase 3 production sprint launches June 22 with 6 bundles (Women's Health, Respiratory, Immunity, Sleep, Digestive, Integrative) — either contractor-led (4-5 weeks, ideal) or solo fallback (9 weeks, June 22-Sept 24). Phase 3 risk register identifies 13 risks (Item 97). This item operationalizes automatic trigger points for contractor no-shows, sourcing delays, scope creep, and content delays — enabling day-to-day decision automation without user interaction.
+**Scope**:
+  - Contractor decision gate (June 17): If zero responses by June 12, activate solo fallback immediately. If 1-2 responses, assess tier; if all <Tier B, activate fallback. Define numeric thresholds.
+  - Sourcing trigger: If botanical garden contact unresponsive by June 15, what's the fallback supplier chain? Pre-validate iNaturalist + stock photo license costs.
+  - Content delay cascade: For each bundle (WH 14-16h, Resp 12-14h, Sleep 11-13h, etc.), if actual write time exceeds budget by >10%, trigger: (1) reduce secondary sections, (2) defer bundle to Phase 4, or (3) request contractor sprint. Decision tree per bundle.
+  - Platform risk: If Kit platform unavailable June 22, what's the backup launch vector? Email only? Shopify? Gumroad?
+  - Image sourcing bottleneck: If Wikimedia/iNaturalist images insufficient for 1+ bundle by June 19, pre-stage stock photo budget and trigger rapid licensing (within 24h).
+**Deliverables**:
+  - `PHASE_3_LAUNCH_DECISION_AUTOMATION_MATRIX.md` (4 dimensions: contractor status, sourcing readiness, content progress, platform availability; 16-cell matrix with GO/CAUTION/NO-GO + auto-escalation triggers)
+  - `PHASE_3_CONTINGENCY_EXECUTION_PLAYBOOKS.md` (5 scenario playbooks: contractor dropout, supplier delay, scope creep, platform outage, image sourcing gap — each with step-by-step resolution + escalation templates)
+  - `PHASE_3_RISK_DAILY_MONITORING_CHECKLIST.md` (June 18-22 pre-launch 5-day countdown, 3 daily checks per day, numeric thresholds, auto-email templates for user notification if escalation triggered)
+**Owner**: seedwarden subagent
+**Deadline**: June 17 (ready for June 22 launch with zero manual decision burden)
+**Status**: ⏳ QUEUED for June 10-17 autonomous research
+**Confidence**: 88% — all risks identified in Item 97; this item operationalizes them into executable decision rules
+
+### 107. ⏳ resistance-research — Phase 2 Contingency Deep-Dive: What Breaks if Timeline Slips (Session 3002)
+**Context**: Phase 2 Wave 1 executes June 9-10 (Domain 51), then Waves 2-3 in June-July. If any wave slips by 4+ weeks, which Phase 2 domains become non-deferrable? Which can shift to Phase 3 Q4/Q1? This item maps hard dependencies and automatic trigger points for Aug 31 Phase 2 deadline.
+**Scope**:
+  - Hard deadline audit: Which Phase 2 domains (48, 49, 50, 54, 57, 58, 59) have immovable external windows? (e.g., Domain 49 redistricting litigation filing deadline May 1 2027 [already passed], Domain 54 youth vote Nov 2026, Domain 58 Turtle Mountain June ruling)
+  - Contingency cascade: If Phase 2 slips June → July → August, which domain sequencing changes? (e.g., if Domain 49 slips, do Domains 50+51 execute in parallel vs sequential?)
+  - Phase 3 impact analysis: If Phase 2 completes Sept 15 (2-week slip), do Phase 3 Domains H+K miss January 3 Congress seating deadline? What's the minimum June completion date to stay on Phase 3 track?
+  - Resource contention matrix: If stockbot June 15 expansion requires 30+ hours June 10-30, what Phase 2 domains must pause? Which can micro-increment?
+  - Trigger point definition: At what slip threshold (2 weeks? 4 weeks?) do we activate contingency Path B (research-first, delayed distribution)?
+**Deliverables**:
+  - `PHASE_2_HARD_DEADLINE_DEPENDENCY_MAP.md` (per-domain deadline audit, immovable windows, prerequisite domain relationships, critical-path analysis)
+  - `PHASE_2_CONTINGENCY_SLIP_SCENARIOS.md` (3 scenarios: 2-week slip, 4-week slip, 8-week slip; per-scenario domain sequencing, Phase 3 impact, user decision points)
+  - `PHASE_2_RESOURCE_CONTENTION_TRIGGERS.md` (If stockbot/seedwarden/systems-resilience demand exceeds [X] hours June 10-30, automatic Domain pausing logic with numeric thresholds)
+**Owner**: resistance-research subagent
+**Deadline**: June 12 (ready for post-Wave-1 Day 7 checkpoint decision, June 16)
+**Status**: ⏳ QUEUED for June 10-12 autonomous research
+**Confidence**: 90% — all deadlines sourced from Item 93/96 Phase 3 planning docs; contingency analysis builds on established Phase 2 resource models
+
+### 108. ⏳ stockbot — Phase 3b GOOGL/NVDA Pre-Gate Risk Validation (Session 3002)
+**Context**: GOOGL gate is June 20; NVDA gate is August 1. Hardware cooler (SC1148, ~$15) must arrive by June 19 for GOOGL validation. Phase 3b thermal, correlation, and margin assumptions were validated in Items 87-95, but this item deep-dives into real-world sourcing delays, thermal variability, and fallback scenarios to build confidence in gate GO/NO-GO decisions.
+**Scope**:
+  - Cooler sourcing risk: SC1148 Amazon Prime delivery June 17 order → June 18-19 delivery is 2-day timeline. What if not available? Pre-validate alternatives (GeeekPi Tower, ICE Tower Mini) with same delivery timeline + cost impact.
+  - Thermal validation GO/NO-GO criteria: Phase 3B_THERMAL_VALIDATION_TEST_PLAN.md specifies 90-min post-install validation. Define numeric headroom thresholds: <10°C clearance = NO-GO, 10-15°C = CONDITIONAL-GO, >15°C = GO. What're the fallback actions for each?
+  - GOOGL correlation risk: NVDA entry is gated on correlation ≤ 0.75 vs GOOGL. Define how to measure this in live trading (60-day rolling correlation on what signal?) and what happens if correlation drifts >0.75 post-GOOGL entry (forced NVDA pause vs. reduced sizing).
+  - Margin stress test: Phase 3b assumes $112K equity with 10% tech position cap. If GOOGL drawdown hits -5%, can we still open NVDA at +2% of equity without exceeding margin buffer? Define numeric cascades (1 session max DD, 2 sessions combined DD, etc.).
+  - Force-liquidation scenario: If both GOOGL + NVDA hit breakeven simultaneously and margin utilization hits 95%, what auto-liquidates first? (Smallest position by P&L? Highest-correlation position? Newest position?)
+**Deliverables**:
+  - `PHASE_3B_SOURCING_AND_DELIVERY_RISK_MATRIX.md` (cooler sourcing alternatives, 5-day delivery windows, fallback cost impact, June 20 gate contingency if cooler delayed)
+  - `PHASE_3B_GO_NO_GO_DECISION_CRITERIA_REFINED.md` (exact numeric thresholds for thermal headroom, correlation bounds, margin utilization, force-liquidation triggers; executable by orchestrator)
+  - `PHASE_3B_SINGLE_FAILURE_MODE_IMPACT_ANALYSIS.md` (7 failure modes: cooler delayed, thermal validation fails, GOOGL win streak pushes tech% >10%, NVDA correlation drift, margin hit, VIX spike, market regime shift; per-mode GO/NO-GO rerouting + fallback actions)
+**Owner**: stockbot subagent
+**Deadline**: June 17 (ready for June 20 GOOGL gate with pre-validated decision criteria and contingency playbooks)
+**Status**: ⏳ QUEUED for June 10-17 autonomous research
+**Confidence**: 85% — all hardware/thermal/margin frameworks from Items 87-95; this operationalizes them into executable decision rules
+
 ### 89. ⏳ resistance-research — Phase 3 Domain Expansion & Movement Leverage Analysis
 **Context**: Phase 2 domains (48, 49, 50, 51, 57, 58, 59) are research-complete and distribution-scheduled through August 2026. Phase 2 ends Aug 31. Phase 3 should target fall 2026 / winter 2027 for next round of domains. Build roadmap: identify candidate Phase 3 domains (8-10 domains targeting Nov 2026 - March 2027 windows), assess movement leverage + urgency.
 **Scope**:
