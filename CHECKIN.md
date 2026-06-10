@@ -31,6 +31,37 @@
 
 ---
 
+## 🎯 Session 3038 (June 10 2026-06-10T ~11:05 UTC) — PAUSE DIRECTIVE CONFIRMED ACTIVE: Idle State Correct, 3 Critical Decisions Overdue
+
+**Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE (13+ CONSECUTIVE SESSIONS) — 3 CRITICAL USER DECISIONS OVERDUE**
+
+### Summary
+
+Session 3038 completed standard orientation and state verification:
+- ✓ Oriented to ORCHESTRATOR_STATE.md (generated 11:03 UTC June 10)
+- ✓ Verified all 4 active blocks remain unresolved:
+  - cybersecurity-hardening: `# manual — cannot auto-verify` (Windows VeraCrypt restart)
+  - mfg-farm: directory test-print-results/ does not exist (test print not executed)
+  - systems-resilience: docker ps shows no nextcloud/discourse containers running (platform not deployed, deadline EXPIRED)
+  - open-repo: grep confirms deployment time conflict unresolved (09:00 vs 20:00 UTC)
+- ✓ Verified pause directive remains ACTIVE (correct by user design — Sessions 3025-3038 confirm)
+- ✓ No new INBOX items
+
+### Key Status
+
+**Idle state enforcement**: ✅ CORRECT (pause directive actively maintained — now 13+ consecutive sessions)
+
+**No autonomous work available**: Pause directive remains active. All project work blocked on user decisions.
+
+### Critical Decisions Still Required (OVERDUE)
+
+All 3 items unchanged since earlier sessions:
+1. **[DEADLINE EXPIRED 22 HOURS AGO]** systems-resilience platform choice (Nextcloud+Matrix or Discourse) — deadline was June 8 18:00 UTC
+2. **[URGENT — 3+ DAYS OVERDUE]** stockbot Tier-1 Bug Sprint approval (Option A: AAPL retrain + MSFT expansion)
+3. **[WINDOW CLOSING]** resistance-research Wave 1 execution timing — June 10 window closed, June 12 option available
+
+---
+
 ## 🎯 Session 3037 (June 10 2026-06-10T ~11:00 UTC) — PAUSE DIRECTIVE CONFIRMED ACTIVE: Idle State Correct, 3 Critical Decisions Still Required
 
 **Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE (13 CONSECUTIVE SESSIONS) — 3 CRITICAL USER DECISIONS OVERDUE**
