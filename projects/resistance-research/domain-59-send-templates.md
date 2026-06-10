@@ -1,10 +1,11 @@
 ---
 title: "Domain 59 — Email Send Templates (5 Organizations)"
 created: "2026-06-01"
+updated: "2026-06-10"
 status: "production-ready"
 gist_url: "https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba"
-send_window: "June 2-3, 2026"
-markup_deadline: "June 30, 2026"
+send_window: "June 10-15, 2026 (20 days before markup_deadline)"
+markup_deadline: "June 30, 2026 (Senate Finance Committee comment period)"
 ---
 
 # Domain 59 Distribution — Email Templates
