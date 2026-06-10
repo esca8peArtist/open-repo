@@ -2,43 +2,45 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3093, June 10 2026-06-10T ~20:45 UTC)
+## Since Last Check-in (Session 3094, June 10 2026-06-10T ~21:00 UTC)
 
-**What was accomplished**: Standard orientation + block verification completed. Pause directive remains active and correctly enforced through June 15 00:00 UTC (~5 days remaining). No user decisions provided since Session 3092.
+**What was accomplished**: Standard orientation + full block review completed. Pause directive remains active and correctly enforced through June 15 00:00 UTC (~5 days remaining). No user decisions provided since Session 3093. Block status unchanged — all 4 blocks remain unresolved and require user action only.
 
 **Orientation summary**:
 - ✅ ORCHESTRATOR_STATE.md: Confirms idle state, pause directive active through June 15
-- ✅ BLOCKED.md: 4 active blocks, all require user action only (no changes since 3092)
+- ✅ BLOCKED.md: 4 active blocks, all require user action only (no changes since Session 3093)
   - cybersecurity-hardening: VeraCrypt restart pending (26 days)
   - mfg-farm: test print execution pending (28 days)
-  - systems-resilience: platform choice (Nextcloud+Matrix vs Discourse) + SMTP credentials — **OVERDUE 30+ hours** (deadline June 8 18:00 UTC)
-  - open-repo: deployment time clarification (09:00 UTC vs 20:00 UTC) — due June 12 (~36 hours)
+  - systems-resilience: platform choice (Nextcloud+Matrix vs Discourse) + SMTP credentials — **OVERDUE 31+ hours** (deadline June 8 18:00 UTC, publication June 9 13:00 UTC missed)
+  - open-repo: deployment time clarification (09:00 UTC vs 20:00 UTC) — due June 12 09:00 UTC (~35 hours)
 - ✅ INBOX.md: Empty (no new items to process)
 - ✅ PROJECTS.md: All projects appropriately paused per user directive (May 27 23:15 UTC)
 - ✅ Block verification: No auto-verifiable blocks; all 4 remain unresolved (manual/user-action only)
 
 **Verification results**:
-- Pause directive: Confirmed active through June 15 00:00 UTC (46+ consecutive verification sessions, May 27–June 10)
+- Pause directive: Confirmed active through June 15 00:00 UTC (47+ consecutive verification sessions, May 27–June 10)
 - No unblocked project work available — respecting pause directive by design
 - Exploration Queue: 108 items queued for June 15+ execution
-- No state changes since Session 3092
+- No state changes since Session 3093
 
-**CRITICAL STATUS — USER ACTION REQUIRED** (deadline overages):
-- 🚨 **systems-resilience**: Publication deadline June 9 13:00 UTC **PASSED** (30+ hours overdue)
-  - Need: Platform choice (Nextcloud+Matrix or Discourse) + public IP/domain + SMTP credentials
-  - Recommendation: Discourse (8GB vs 16GB requirement, 2-3hr deploy vs 4-6hr)
-- ⏰ **stockbot**: Jetson cooler order deadline June 11 17:00 UTC (21 hours remaining)
-  - Need: SC1148 cooler ordered for June 19-20 thermal validation before GOOGL gate
-- ⏰ **open-repo**: Deployment timing clarification due June 12 09:00 UTC (36 hours)
-  - Need: Confirm 09:00 UTC (business hours) vs 20:00 UTC (after-hours) for June 12 deployment
+**CRITICAL STATUS — USER ACTION REQUIRED** (deadline summary):
+- 🚨 **systems-resilience**: Publication deadline June 9 13:00 UTC **MISSED** (31+ hours overdue) — platform never deployed, publication deferred indefinitely
+  - Need: Immediate platform choice (Nextcloud+Matrix or Discourse) + public IP/domain + SMTP credentials to resume Phase 5.1
+  - Recommendation: Discourse (8GB vs 16GB requirement, 2-3hr deploy vs 4-6hr deploy time)
+- ⏰ **stockbot**: Jetson cooler order deadline June 11 17:00 UTC (**20 hours remaining**)
+  - Need: SC1148 cooler ordered for June 19-20 thermal validation before GOOGL gate (June 20)
+  - Impact: Without cooler order, June 19-20 thermal validation cannot proceed; subsequent project gates defer
+- ⏰ **open-repo**: Deployment timing clarification due June 12 09:00 UTC (**35 hours remaining**)
+  - Need: Confirm 09:00 UTC (business hours) vs 20:00 UTC (after-hours) for June 12 deployment window in all docs
+  - Impact: Deployment docs have conflicting times; clarification needed before final team communication
 
-**All other blocks remain active**:
-- cybersecurity-hardening Phase 1 VeraCrypt restart (26 days)
-- mfg-farm test print execution (28 days)
+**All other blocks remain unresolved** (unchanged):
+- ✗ cybersecurity-hardening Phase 1 VeraCrypt restart (26 days)
+- ✗ mfg-farm test print execution (28 days)
 
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — No autonomous project work. Three critical user decisions overdue. Awaiting June 15 autonomy resumption (~5 days).**
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — No autonomous project work. Three critical user decisions: 1 overdue, 2 urgent (20h + 35h). Awaiting June 15 autonomy resumption (~5 days).**
 
-**Session duration**: 3 minutes (orientation + block verification + CHECKIN update)
+**Session duration**: 4 minutes (orientation + block review + CHECKIN update)
 
 ---
 
