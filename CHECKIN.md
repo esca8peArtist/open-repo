@@ -2,24 +2,24 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3107, June 10 2026-06-10T ~20:15 UTC)
+## Since Last Check-in (Session 3108, June 10 2026-06-10T ~20:30 UTC)
 
-**What was accomplished**: Orientation complete. Pause directive verified **still active** through June 15 00:00 UTC (~4 days remaining). All 4 blocks remain unresolved; no new INBOX items. Orchestrator idle state correct by design.
+**What was accomplished**: Full orientation completed. Pause directive verified **active** through June 15 00:00 UTC. Verified all 4 active blocks; no new INBOX items. Orchestrator idle state is correct by design.
 
-**Block status unchanged**:
-- cybersecurity-hardening: VeraCrypt pre-boot restart (manual — cannot auto-verify)
-- mfg-farm: test print execution (user action required)
-- systems-resilience: platform choice (user decision required) — **31+ hours overdue**
-- open-repo: deployment timing clarification (user decision required)
+**Block status** (no changes):
+- cybersecurity-hardening: VeraCrypt pre-boot restart required (manual — cannot auto-verify)
+- mfg-farm: test print execution required (user action)
+- systems-resilience: **platform choice deadline passed 31+ hours ago** (June 8 18:00 UTC); publication window closed (June 9 13:00-15:00 UTC)
+- open-repo: deployment timing conflict (user clarification required)
 
-**Critical user decisions awaiting**:
-1. 🚨 **systems-resilience**: Platform choice + IP/domain + SMTP credentials — **OVERDUE**
-2. ⏰ **stockbot**: Jetson cooler order SC1148 — due June 11 17:00 UTC
-3. ⏰ **open-repo**: Deployment timing (09:00 vs 20:00 UTC) — due June 12 09:00 UTC
+**Critical user decisions still awaiting**:
+1. 🚨 **systems-resilience**: Platform choice (Nextcloud+Matrix vs Discourse) + deployment details — **deadline PASSED**
+2. ⏰ **stockbot**: Jetson cooler decision/order — due ~21 hours
+3. ⏰ **open-repo**: Deployment start time confirmation — due ~35 hours
 
-**Status**: ✅ **Pause directive active through June 15. No autonomous work. Awaiting user decisions on all 4 blocks.**
+**Notes**: Pause directive remains active and correct. No autonomous project work initiated. All work appropriately deferred pending user decisions. Systems-resilience publication deadline (June 9 13:00-15:00 UTC) has passed without platform deployment or publication action.
 
-**Session duration**: ~3 minutes (orientation + verification + CHECKIN update)
+**Session duration**: ~10 minutes (orientation + block verification)
 
 ---
 
