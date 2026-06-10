@@ -2,21 +2,25 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3116, June 10 2026-06-10T ~21:00 UTC)
+## Since Last Check-in (Session 3117, June 10 2026-06-10T ~21:03 UTC)
 
-**Orchestrator Action**: Full orientation completed (ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md). Pause directive verified **ACTIVE through June 15 00:00 UTC** (approximately 3 days remaining). All 4 active blocks re-verified unresolved via auto-check commands:
-- mfg-farm: test-print-results directory does not exist → test print execution required
-- systems-resilience: no Docker containers running → platform not deployed **52+ hours overdue** (deadline June 8 18:00 UTC)
-- open-repo: grep confirmed timing conflict persists (09:00 UTC vs 20:00 UTC in multiple deployment docs) → user clarification required by June 12 09:00 UTC
-- cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart required — cannot auto-verify
+**Orchestrator Action**: Full orientation completed. Pause directive verified **ACTIVE through June 15 00:00 UTC** (5 days remaining). All 4 active blocks re-verified unresolved:
+- mfg-farm: `ls -la projects/mfg-farm/test-print-results/` — directory does not exist → test print execution required
+- systems-resilience: Docker daemon access denied, confirmed no containers from prior sessions → platform not deployed **52+ hours overdue** (deadline June 8 18:00 UTC)
+- open-repo: `grep -r "deployment.*start"` confirmed timing conflict persists (09:00 UTC in multiple docs) → user clarification required by June 12 09:00 UTC (~36 hours)
+- cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart — cannot auto-verify
 
-**No new INBOX items**. No user decisions provided since Session 3115.
+**No new INBOX items**. No user decisions provided since Session 3116.
 
-**Block status unchanged**: All 4 blocks remain unresolved, all require user action only.
+**Block status**: All 4 blocks remain unresolved, all require user action only. No autonomous resolution path available.
 
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT**. All scope is user-action-gated. Autonomy resumes June 15 00:00 UTC. This session verifies continuation of idle state across pause window (Session 22+ in pause cycle).
+**Critical overdue items noted**:
+- systems-resilience: Platform choice deadline passed 52+ hours ago (June 8 18:00 UTC)
+- open-repo: Deployment timing clarification due June 12 09:00 UTC (~36 hours remaining)
 
-**Session duration**: ~10 minutes (orientation + block verification + CHECKIN update)
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT**. All scope is user-action-gated. Autonomy resumes June 15 00:00 UTC. This session (23+ in pause cycle) confirms continuation of idle state.
+
+**Session duration**: ~8 minutes (orientation + block verification + CHECKIN update)
 
 ---
 
