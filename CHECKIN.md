@@ -2,6 +2,32 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3130, June 11 2026)
+
+**Orchestrator Action**: Standard orientation completed. Pause directive verified ACTIVE through June 15 00:00 UTC. All 4 blocks re-verified unresolved (no status changes since Session 3129).
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT through June 15 00:00 UTC**
+- No autonomous project work available
+- All 4 blocks unresolved and awaiting user action
+- 20+ consecutive sessions confirm idle state is correct by design
+
+**Block Status Verification** (commands executed; all still unresolved):
+- ✅ cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart (cannot auto-verify)
+- ✅ mfg-farm: test-print-results directory missing → test print execution required
+- ✅ systems-resilience: no Docker containers running → platform choice decision still pending (~74-75 hours overdue since June 8 18:00 UTC deadline)
+- 🚨 **open-repo: deployment timing conflict persists (09:00 UTC vs 20:00 UTC) → CRITICAL: decision required before June 12 09:00 UTC deadline (~10-24 hours remaining)**
+
+**Needs Your Input (URGENT)**:
+1. **CRITICAL: Confirm open-repo deployment start time**: 09:00 UTC or 20:00 UTC?
+   - Deadline: June 12 09:00 UTC (deadline approaching rapidly)
+   - Reply with decision to unblock pre-flight checklist and communication templates
+2. **systems-resilience platform choice**: Nextcloud+Matrix or Discourse + SMTP credentials?
+   - Deadline: June 8 18:00 UTC (deadline passed; platform deployment now 74+ hours overdue)
+
+**Session duration**: ~3 minutes (orientation + block verification + CHECKIN update)
+
+---
+
 ## Since Last Check-in (Session 3129, June 10 2026-06-10T 23:24 UTC)
 
 **Orchestrator Action**: Standard orientation + block verification completed.
@@ -19,7 +45,7 @@
 **Needs Your Input (URGENT)**:
 1. **Confirm open-repo deployment start time**: 09:00 UTC or 20:00 UTC?
    - Deadline: June 12 09:00 UTC (33.5 hours remaining)
-   - Reply in BLOCKE.md Resolution field or here in CHECKIN.md
+   - Reply in BLOCKED.md Resolution field or here in CHECKIN.md
 2. **systems-resilience platform choice**: Nextcloud+Matrix or Discourse + SMTP credentials?
    - Deadline: June 8 18:00 UTC (73+ hours overdue)
 
