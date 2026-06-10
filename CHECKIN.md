@@ -2,6 +2,27 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3107, June 10 2026-06-10T ~20:15 UTC)
+
+**What was accomplished**: Orientation complete. Pause directive verified **still active** through June 15 00:00 UTC (~4 days remaining). All 4 blocks remain unresolved; no new INBOX items. Orchestrator idle state correct by design.
+
+**Block status unchanged**:
+- cybersecurity-hardening: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+- mfg-farm: test print execution (user action required)
+- systems-resilience: platform choice (user decision required) — **31+ hours overdue**
+- open-repo: deployment timing clarification (user decision required)
+
+**Critical user decisions awaiting**:
+1. 🚨 **systems-resilience**: Platform choice + IP/domain + SMTP credentials — **OVERDUE**
+2. ⏰ **stockbot**: Jetson cooler order SC1148 — due June 11 17:00 UTC
+3. ⏰ **open-repo**: Deployment timing (09:00 vs 20:00 UTC) — due June 12 09:00 UTC
+
+**Status**: ✅ **Pause directive active through June 15. No autonomous work. Awaiting user decisions on all 4 blocks.**
+
+**Session duration**: ~3 minutes (orientation + verification + CHECKIN update)
+
+---
+
 ## Since Last Check-in (Session 3106, June 10 2026-06-10T ~23:55 UTC)
 
 **What was accomplished**: Orientation complete. Pause directive verified **still active** through June 15 00:00 UTC (~3.2 days remaining). All 4 blocks remain unresolved and require user action only. No new items in INBOX. Orchestrator idle state correct by design.
