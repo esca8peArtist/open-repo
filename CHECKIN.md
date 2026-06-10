@@ -2,17 +2,24 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3104, June 10 2026-06-10T ~23:30 UTC)
+## Since Last Check-in (Session 3105, June 10 2026-06-10T ~23:45 UTC)
 
-**What was accomplished**: Full orientation completed. Pause directive verified **still active** through June 15 00:00 UTC (~3.3 days remaining). All 4 blocks re-verified unchanged via auto-check commands. No user decisions provided since Session 3103. Orchestrator continues respecting pause directive — idle state correct by design. No autonomy changes.
+**What was accomplished**: Full orientation completed. Pause directive verified **still active** through June 15 00:00 UTC (~3.25 days remaining). All 4 blocks re-verified unchanged via auto-check commands. No user decisions provided since Session 3104. Orchestrator continues respecting pause directive — idle state correct by design. No state changes.
 
 **Block verification results**:
-- ✅ mfg-farm: test-print-results directory does not exist — block remains unresolved
-- ✅ systems-resilience: no nextcloud/discourse Docker containers running; platform not deployed — block remains unresolved (31+ hours overdue)
-- ✅ open-repo: deployment timing conflict (09:00 vs 20:00 UTC) still present in docs — block remains unresolved
-- ✅ cybersecurity-hardening: manual Windows VeraCrypt restart required — block remains unresolved
+- ✅ mfg-farm: test-print-results directory does not exist → block remains unresolved
+- ✅ systems-resilience: no nextcloud/discourse Docker containers found → platform not deployed — **31+ hours overdue** (deadline June 8 18:00 UTC)
+- ✅ open-repo: deployment timing conflict (09:00 vs 20:00 UTC) confirmed in docs → block remains unresolved (**due June 12 09:00 UTC, ~34 hours**)
+- ✅ cybersecurity-hardening: manual Windows VeraCrypt restart — block remains unresolved (cannot auto-verify)
 
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & VERIFIED — No autonomous project work. All 4 blocks require user action only. Autonomy resumes June 15 00:00 UTC (~3.3 days). Awaiting critical user decisions (systems-resilience overdue, stockbot cooler order due ~17h, open-repo timing due ~34h).**
+**Critical user decisions still awaiting** (UNCHANGED from Session 3104):
+1. 🚨 **systems-resilience**: Platform choice (Nextcloud+Matrix or Discourse) + public IP/domain + SMTP credentials — **31+ hours overdue**
+2. ⏰ **stockbot**: Jetson cooler order SC1148 — due June 11 17:00 UTC (~17 hours)
+3. ⏰ **open-repo**: Deployment timing (09:00 vs 20:00 UTC) — due June 12 09:00 UTC (~34 hours)
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — No autonomous project work available. All 4 blocks require user action only. Autonomy resumes June 15 00:00 UTC (~3.25 days remaining).**
+
+**Session duration**: 2 minutes (orientation + block verification + CHECKIN update)
 
 ---
 
