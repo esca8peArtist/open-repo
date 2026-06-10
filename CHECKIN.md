@@ -2,6 +2,22 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3120, June 10 2026-06-10T ~23:25 UTC)
+
+**Orchestrator Action**: Orientation completed. Pause directive verified **ACTIVE through June 15 00:00 UTC** (4+ days remaining). All 4 active blocks remain unresolved — scope is 100% user-action-gated:
+- ✅ cybersecurity-hardening: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+- ✅ mfg-farm: `ls -la projects/mfg-farm/test-print-results/` → directory does not exist
+- ✅ systems-resilience: `docker ps` → no containers (platform not deployed **54+ hours overdue**, choice pending)
+- ✅ open-repo: timing conflict (09:00 UTC confirmed) — clarification due June 12 09:00 UTC (~31 hours)
+
+**No new INBOX items.** No user decisions provided.
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT**. Autonomy resumes June 15 00:00 UTC (session 26+ in pause cycle).
+
+**Session duration**: ~5 minutes (orientation + CHECKIN update)
+
+---
+
 ## Since Last Check-in (Session 3119, June 10 2026-06-10T ~22:00 UTC)
 
 **Orchestrator Action**: Full orientation completed. Pause directive verified **ACTIVE through June 15 00:00 UTC** (4+ days remaining). All 4 active blocks re-verified unresolved via auto-check commands:
