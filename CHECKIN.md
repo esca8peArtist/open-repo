@@ -31,6 +31,56 @@
 
 ---
 
+## 🎯 Session 3040 (June 10 2026-06-10T 11:22 UTC) — PAUSE DIRECTIVE CONFIRMED ACTIVE: Idle State Correct, 3 Critical Decisions Overdue
+
+**Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE (14 CONSECUTIVE SESSIONS 3025-3040) — 3 CRITICAL USER DECISIONS OVERDUE — NO AUTONOMOUS WORK AVAILABLE**
+
+### Summary
+
+Session 3040 completed standard orientation and state verification:
+- ✓ Oriented to ORCHESTRATOR_STATE.md (generated 11:22 UTC June 10)
+- ✓ Verified all 4 active blocks remain unresolved:
+  - cybersecurity-hardening: `# manual — cannot auto-verify` (Windows VeraCrypt restart required, blocked 25 days)
+  - mfg-farm: directory test-print-results/ does not exist (test print not executed, blocked 28 days)
+  - systems-resilience: docker ps shows no nextcloud/discourse containers running (platform not deployed, **deadline EXPIRED 22+ hours ago June 9 13:00 UTC**)
+  - open-repo: grep confirms deployment time conflict unresolved (09:00 vs 20:00 UTC, blocked 4 days)
+- ✓ Verified pause directive remains ACTIVE (correct by user design — Sessions 3025-3040 consecutive confirmation)
+- ✓ Checked INBOX.md: No new items (all processed from Session 2979)
+- ✓ Checked Exploration Queue: 7 active items; none ready to execute (Items time-gated for June 12+ or blocked by pending decisions)
+- ✓ No usage throttling (0.2% Sonnet, 12.8% All-models, reset in 133h)
+
+### Key Status
+
+**Idle state enforcement**: ✅ CORRECT (pause directive actively maintained — now 14 consecutive sessions)
+
+**No autonomous work available**: Pause directive remains active by design. All project work (stockbot, resistance-research, cybersecurity-hardening, mfg-farm) blocked on explicit user decisions.
+
+### Critical Decisions Still Required (OVERDUE — 14 consecutive sessions without response)
+
+1. **[CRITICAL — DEADLINE EXPIRED 22+ HOURS AGO]** systems-resilience platform choice (Nextcloud+Matrix or Discourse)
+   - Deadline was June 8 18:00 UTC for June 9 13:00-15:00 UTC publication deployment
+   - Publication deferred indefinitely pending platform selection + credentials
+   - **Recommendation**: Discourse (faster 2-3h deploy, fits Pi 5 8GB RAM vs Nextcloud 4-6h, 16GB recommended)
+   - **If approved**: Provide public IP + domain name + SMTP credentials for platform
+
+2. **[URGENT — 3+ DAYS OVERDUE]** stockbot Tier-1 Bug Sprint approval (Option A: AAPL retrain + MSFT expansion)
+   - Deadline was June 7 09:00 UTC
+   - Session 2980 comprehensive backtesting & codebase assessment complete; 4 documents ready for user review
+   - **Critical findings documented**: Walk-forward t-stat broken, OOS features computed 2× per fold, cash pool inflation risk
+   - **Awaiting**: User review of AGENT_LOOP_WORKFLOW.md + CODEBASE_REVIEW_COMPREHENSIVE.md + decision on Tier-1 priorities
+
+3. **[TIME-SENSITIVE — WINDOW CLOSING TODAY AT 24:00 UTC]** resistance-research Wave 1 execution timing
+   - June 10 window closing TODAY (now 11:22 UTC, ~12.5 hours remaining)
+   - June 12 option still available (90 min user action, CLC + Issue One outreach)
+   - Phase 2 execution ready, all logistics verified, contacts named
+   - **Can defer to post-June 13** if conflicting priorities
+
+### Recommendation
+
+**Continue idle state enforcement.** Pause directive is functioning correctly. No autonomous work is available or appropriate while all critical project paths are blocked on explicit user decisions. Sessions should continue daily orientation + state verification until user provides any of the 3 critical decisions above.
+
+---
+
 ## 🎯 Session 3039 (June 10 2026-06-10T ~11:20 UTC) — PAUSE DIRECTIVE CONFIRMED ACTIVE: Idle State Correct, 3 Critical Decisions Overdue
 
 **Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE (14 CONSECUTIVE SESSIONS) — 3 CRITICAL USER DECISIONS OVERDUE**
