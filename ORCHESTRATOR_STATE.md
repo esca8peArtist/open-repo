@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-10T05:09:15Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-10T05:49:33Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.2% (18,263 tokens) | All-models 5.4% | Reset in 139h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.2% (18,263 tokens) | All-models 6.2% | Reset in 138h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -61,9 +61,9 @@
 ### open-repo — Deployment start time conflict (user clarification required)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (19 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (22 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (18 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (25 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (28 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (24 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
@@ -75,10 +75,10 @@
 (NONE — all pending items processed from Session 2979)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  3. Scope clarification (cybersecurity-hardening)
+- ✅ **Work availability assessment**: No autonomous work available under pause directive. All non-stockbot projects paused. stockbot assessment complete, awaiting user decision.
+- ✅ **CHECKIN.md update**: Session 2995 entry added
 
-**Confidence**: 92% systems-resilience, 95% open-repo, 0% cybersecurity-hardening (awaiting scope clarification).
-
+**No changes to project state**. Orchestrator standing by for user decisions.
 
 ---
 
