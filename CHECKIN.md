@@ -2,6 +2,31 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3129, June 10 2026-06-10T 23:24 UTC)
+
+**Orchestrator Action**: Standard orientation + block verification completed.
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT through June 15 00:00 UTC**
+- No autonomous project work available
+- All 4 blocks unresolved and awaiting user action
+
+**Block Status Verification** (all commands executed):
+- ✅ cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart (cannot auto-verify)
+- ✅ mfg-farm: test-print-results directory missing → test print execution required
+- ✅ systems-resilience: no Docker containers running → platform choice decision still pending (73+ hours overdue)
+- 🚨 **open-repo: deployment timing conflict persists (09:00 UTC vs 20:00 UTC) → decision required ~33.5 hours before deadline**
+
+**Needs Your Input (URGENT)**:
+1. **Confirm open-repo deployment start time**: 09:00 UTC or 20:00 UTC?
+   - Deadline: June 12 09:00 UTC (33.5 hours remaining)
+   - Reply in BLOCKE.md Resolution field or here in CHECKIN.md
+2. **systems-resilience platform choice**: Nextcloud+Matrix or Discourse + SMTP credentials?
+   - Deadline: June 8 18:00 UTC (73+ hours overdue)
+
+**Session duration**: ~5 minutes (orientation + block verification + CHECKIN/WORKLOG update + commit)
+
+---
+
 ## Since Last Check-in (Session 3128, June 12 2026-06-12T ~00:30 UTC)
 
 **Orchestrator Action**: Standard orientation + critical deadline escalation.
