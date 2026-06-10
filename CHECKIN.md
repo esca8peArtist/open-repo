@@ -2,6 +2,26 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3125, June 10 2026-06-10T 22:59 UTC)
+
+**Orchestrator Action**: Standard orientation completed. Pause directive verified **ACTIVE through June 15 00:00 UTC** (4d 1h remaining). All 4 blocks re-verified unresolved:
+- ✅ cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart — cannot auto-verify
+- ✅ mfg-farm: `ls -la projects/mfg-farm/test-print-results/` → directory missing; test print execution required (user action)
+- ✅ systems-resilience: `docker ps` → no Docker containers running; platform choice decision still pending (64+ hours overdue since June 8 18:00 UTC deadline)
+- 🚨 **open-repo: deployment timing conflict persists (09:00 UTC vs 20:00 UTC); DEADLINE ~32 HOURS AWAY (June 12 09:00 UTC)**
+
+**⚠️ CRITICAL URGENCY**: open-repo deadline in ~32 hours. User decision on canonical deployment start time (09:00 UTC or 20:00 UTC) is REQUIRED to finalize deployment communication templates, rollback procedures, and SLA terms. systems-resilience platform choice (64+ hours overdue) also remains unresolved.
+
+**No new INBOX items.** No user decisions provided.
+
+**Exploration Queue**: 108 items tracked; all completed items archived; queued items scheduled for June 15-20 post-pause.
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT**. All project scope remains user-action-gated. Autonomy resumes June 15 00:00 UTC (session 36+ in pause cycle).
+
+**Session duration**: ~2 minutes (orientation + block verification + CHECKIN update)
+
+---
+
 ## Since Last Check-in (Session 3124, June 10 2026-06-10T 22:53 UTC)
 
 **Orchestrator Action**: Standard orientation completed. Pause directive verified **ACTIVE through June 15 00:00 UTC** (4d 1h 7m remaining). All 4 blocks remain unresolved and user-action-gated:
