@@ -2,6 +2,33 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3073, June 10 2026-06-10T ~17:45 UTC)
+
+**What was accomplished**: Standard orientation completed. Verified pause directive remains active through June 15 00:00 UTC. Ran verification commands on all 4 active blocks — all FAILED (no resolutions):
+- ✗ mfg-farm test print: `ls projects/mfg-farm/test-print-results/` → directory not found
+- ✗ systems-resilience platform: `docker ps | grep nextcloud|discourse` → zero containers
+- ✗ open-repo timing: conflicting docs still reference both 09:00 UTC and 20:00 UTC
+- ✗ cybersecurity-hardening: manual action only, cannot auto-verify
+
+All state files consistent (BLOCKED.md, INBOX.md, PROJECTS.md, EXPLORATION_QUEUE.md). No new items in INBOX. No changes to project status.
+
+**What's in progress**: No autonomous project work. Pause directive correctly enforced (29 consecutive sessions, 3044-3073). Awaiting June 15 deadline for autonomy resumption (4 days, 6 hours remaining).
+
+**What's blocked** (unchanged — all require user action):
+1. **🚨 CRITICAL — OVERDUE (29+ hours)**: **systems-resilience platform choice** — deadline EXPIRED June 9 13:00 UTC. Choose Nextcloud+Matrix or Discourse + provide credentials.
+2. **⏰ URGENT (~22 hours)**: **stockbot cooler order** (June 11 deadline) — SC1148 or equivalent required for June 19-20 thermal validation + GOOGL gate June 20.
+3. **⏰ HIGH PRIORITY (46 hours)**: **open-repo deployment start time** (June 12) — clarify 09:00 UTC vs 20:00 UTC deployment window.
+4. **ACTIVE BLOCK (26 days)**: cybersecurity-hardening Phase 1 — VeraCrypt pre-boot test requires Windows restart (since May 16).
+5. **ACTIVE BLOCK (29 days)**: mfg-farm test print — 0.20mm layer height, PLA+, 3 walls, 220–225°C (since May 13).
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — SESSION 3073 COMPLETE — NO CHANGES, AWAITING JUNE 15 AUTONOMY RESUMPTION**
+
+**Next autonomous work window**: June 15 at 00:00 UTC — all projects resume when pause directive expires.
+
+**Session duration**: 5 minutes (orientation + block verification + CHECKIN update)
+
+---
+
 ## Since Last Check-in (Session 3072, June 10 2026-06-10T ~17:30 UTC)
 
 **What was accomplished**: Standard orientation completed. Verified pause directive remains active and correct through June 15 00:00 UTC. All state synchronized: ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md consistent. All 4 active blocks remain unresolved — all require user action only. No autonomous work available.
