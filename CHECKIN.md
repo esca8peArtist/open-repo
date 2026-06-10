@@ -2,20 +2,22 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3065, June 10 2026-06-10T 15:08 UTC)
+## Since Last Check-in (Session 3066, June 10 2026-06-10T ~15:30 UTC)
 
-**What was accomplished**: Standard orientation completed. Verified pause directive active (100% correct — all 4 blocks unresolved, no autonomous work available, all projects paused per design). Confirmed consistent state: BLOCKED.md (4 active), INBOX.md (empty), PROJECTS.md (paused), EXPLORATION_QUEUE.md (Items 104-105 time-gated for June 15+). No changes from Session 3064.
+**What was accomplished**: Standard orientation completed. Verified pause directive still active and verified correct (100% — all 5 blocks unresolved, no autonomous work available, all projects paused per design). Confirmed consistent state: BLOCKED.md (5 active), INBOX.md (empty), PROJECTS.md (all paused), EXPLORATION_QUEUE.md (Items 104-105 time-gated for June 15+). No changes from Session 3065.
 
-**What's in progress**: No autonomous work. Pause directive correctly enforced. Awaiting June 15 deadline for autonomy resumption.
+**What's in progress**: No autonomous work. Pause directive correctly enforced. Awaiting June 15 deadline for autonomy resumption (5 days).
 
 **What's blocked** (unchanged — all require user action):
-1. **CRITICAL — OVERDUE** (11+ days): systems-resilience platform choice — deadline expired June 9 13:00 UTC
-2. **HIGH PRIORITY** (≤1 day): stockbot cooler order (June 11 deadline)
-3. **HIGH PRIORITY** (≤2 days): open-repo timing clarification (June 12 deadline)
-4. **ACTIVE BLOCK**: cybersecurity-hardening VeraCrypt restart (since May 16)
-5. **ACTIVE BLOCK**: mfg-farm test print (since May 13)
+1. **🚨 CRITICAL — OVERDUE** (1+ day): systems-resilience platform choice — deadline EXPIRED June 9 13:00 UTC, deployment not executed. Choose Nextcloud+Matrix or Discourse to enable publication platform deployment.
+2. **⏰ URGENT** (≤1 day): stockbot cooler order (June 11 deadline) — required for June 19-20 thermal validation and GOOGL gate June 20
+3. **⏰ HIGH PRIORITY** (≤2 days): open-repo deployment start time (June 12) — clarify 09:00 UTC vs 20:00 UTC to finalize deployment runbook
+4. **ACTIVE BLOCK**: cybersecurity-hardening Phase 1 VeraCrypt restart (since May 16 — 25 days)
+5. **ACTIVE BLOCK**: mfg-farm test print execution (since May 13 — 28 days)
 
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — SESSION 3065 COMPLETE — NO CHANGES, AWAITING JUNE 15 AUTONOMY RESUMPTION**
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — SESSION 3066 COMPLETE — NO CHANGES, AWAITING JUNE 15 AUTONOMY RESUMPTION**
+
+**Next autonomous work window**: June 15 (regardless of blocker status) — all projects resume when pause directive expires
 
 ---
 
