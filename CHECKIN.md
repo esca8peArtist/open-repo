@@ -4,6 +4,47 @@
 
 ---
 
+## 🎯 Session 2981+ (June 10 post-05:25 UTC) — Orchestrator Orientation & Decision Matrix
+
+**Status**: ✅ **DECISION MATRIX COMPLETE — AWAITING USER ACTIONS ON 4 CRITICAL DECISIONS**
+
+### Summary
+
+Orchestrator orientation session verifies: pause directive active (all projects paused except stockbot), exploration queue empty (refilled twice in Sessions 2986-2987, now empty again), INBOX empty. Created consolidated DECISION_MATRIX.md documenting all pending user decisions, deadlines, recommendations, and consequences.
+
+### Work Completed
+
+**✅ DECISION_MATRIX.md** (2,100 words, 4-decision consolidation + summary table)
+- Priority 1: **stockbot** — Bug Sprint vs Feature Implementation (review 4 docs, user decides)
+- Priority 2: **systems-resilience** — Platform choice (⚠️ deadline PASSED June 8 18:00 UTC; clarify if deployed)
+- Priority 3: **open-repo** — Deployment timing 09:00 or 20:00 UTC (June 12, needs stakeholder coordination)
+- Priority 4: **cybersecurity-hardening** — Phase 2 scope clarification (defensive only vs replacement)
+- Lower priority: mfg-farm test print execution, VeraCrypt restart
+
+### Key Finding: systems-resilience Deadline Missed
+
+The systems-resilience platform deployment deadline was June 8 18:00 UTC. Current date is June 10. The block in BLOCKED.md states: "once choice is confirmed, orchestrator will execute platform deployment by June 8 18:00 UTC deadline" — but no decision was made before this deadline passed.
+
+**Questions for user**:
+1. Did platform deployment happen between June 8 and now? (Check status?)
+2. If not, should June 9 publication be rescheduled, or should we expedite platform deployment now?
+3. Should we mark the deadline as missed in BLOCKED.md?
+
+### Waiting On (4 User Decisions)
+
+1. **stockbot**: Review assessment docs → approve Bug Sprint vs Feature Implementation
+2. **systems-resilience**: Clarify deployment status + platform choice (if not done)
+3. **open-repo**: Clarify deployment timing (09:00 UTC or 20:00 UTC on June 12)
+4. **cybersecurity-hardening**: Clarify Phase 2 scope (defensive hardening only? or replacement?)
+
+### Next Actions
+
+1. User makes 4 decisions → provides them (Discord, PROJECTS.md, or next check-in)
+2. Orchestrator queues work accordingly on next session
+3. Consider lifting pause directive if multiple decisions unblock projects, or keep paused until user signals
+
+---
+
 ## 🎯 Session 2980 (June 10 05:25 UTC) — Stockbot Codebase Quality Assessment Complete
 
 **Status**: ✅ **CODEBASE ASSESSMENT COMPLETE — AWAITING USER REVIEW & DECISION ON CRITICAL FIXES**
