@@ -2,24 +2,27 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3108, June 10 2026-06-10T ~20:30 UTC)
+## Since Last Check-in (Session 3109, June 10 2026-06-10T 20:12–20:35 UTC)
 
-**What was accomplished**: Full orientation completed. Pause directive verified **active** through June 15 00:00 UTC. Verified all 4 active blocks; no new INBOX items. Orchestrator idle state is correct by design.
+**What was accomplished**: Full orientation completed. Pause directive verified **still active** through June 15 00:00 UTC (~4 days remaining). Verified all 4 active blocks unchanged; no new INBOX items. Explored project goals and Exploration Queue; confirmed zero autonomous work available. Orchestrator idle state is correct by design.
 
 **Block status** (no changes):
 - cybersecurity-hardening: VeraCrypt pre-boot restart required (manual — cannot auto-verify)
-- mfg-farm: test print execution required (user action)
-- systems-resilience: **platform choice deadline passed 31+ hours ago** (June 8 18:00 UTC); publication window closed (June 9 13:00-15:00 UTC)
-- open-repo: deployment timing conflict (user clarification required)
+- mfg-farm: test print execution required (user action required)
+- systems-resilience: **platform choice decision deadline PASSED 31+ hours ago** (June 8 18:00 UTC); publication window closed (June 9 13:00-15:00 UTC)
+- open-repo: deployment start time conflict (user clarification required; due June 12 09:00 UTC ~33 hours)
 
-**Critical user decisions still awaiting**:
-1. 🚨 **systems-resilience**: Platform choice (Nextcloud+Matrix vs Discourse) + deployment details — **deadline PASSED**
-2. ⏰ **stockbot**: Jetson cooler decision/order — due ~21 hours
-3. ⏰ **open-repo**: Deployment start time confirmation — due ~35 hours
+**Critical user decisions still awaiting** (unchanged):
+1. 🚨 **systems-resilience**: Platform choice (Nextcloud+Matrix or Discourse) + public IP/domain + SMTP credentials — **31+ hours overdue**
+2. ⏰ **open-repo**: Deployment timing confirmation (09:00 or 20:00 UTC) — due June 12 09:00 UTC (~33 hours from now)
+3. ⏰ **stockbot**: Jetson cooler order/decision (user action)
+4. ⏰ **cybersecurity-hardening**: Windows restart for VeraCrypt pre-boot test (user action)
 
-**Notes**: Pause directive remains active and correct. No autonomous project work initiated. All work appropriately deferred pending user decisions. Systems-resilience publication deadline (June 9 13:00-15:00 UTC) has passed without platform deployment or publication action.
+**Exploration Queue status**: 108 items tracked. Items 87–108 all complete or queued for future dates (2 items scheduled June 15–20). Zero new items required — queue is healthy.
 
-**Session duration**: ~10 minutes (orientation + block verification)
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT. No autonomous work available. All 4 blocks require user action only. Autonomy resumes June 15 00:00 UTC (~4 days).**
+
+**Session duration**: ~20 minutes (orientation + block verification + CHECKIN update)
 
 ---
 
