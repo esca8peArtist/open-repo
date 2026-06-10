@@ -4,6 +4,30 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 105 — Phase 3 Contractor Sourcing Channel Pre-Screening Validation — June 10, 2026
+
+**Task**: Validate feasibility of 6 sourcing channels (AHG, IHA, Chestnut School, Herbal Academy, Upwork, Toptal) and identify top pre-screened candidates for the botanical illustration contractor role. Produce four documents for the June 17 decision gate.
+
+**Scope**: 80–120 hours botanical illustration, women's health plant focus, publication-quality line art. Budget $1,000–$1,350. Sprint June 22 – September 24.
+
+**Research conducted**: AHG directory access (public, confirmed), IHA directory access (offline — "Coming Soon" confirmed), Upwork botanical illustration rate benchmarking (median $25/hr; mid-tier $25–$45/hr), Toptal fee structure (30–50% markup above contractor rate; $500 deposit + $79/month), Herbal Academy illustration network (Botanical Drawing for Herbalists course confirmed; Joséphine Klerks identified as Herbal Academy-connected herbalist-illustrator), Anna Farba portfolio (medicinal plant illustration specialist, confirmed women's health adjacent species portfolio), ASBA membership profile (2,000 members, referral channel confirmed). Sources: americanherbalistsguild.com/directory/, iherb.org, chestnutherbs.com, theherbalacademy.com, upwork.com/hire/botanical-illustration-freelancers/, toptal.com/designers/illustration, asba-art.org, annafarba.com, JosephineKlerks.com.
+
+**Findings — IHA directory**: IHA membership directory is non-operational ("Coming Soon"). Do not use as a primary sourcing channel. Use IHA Facebook group for referral posting if Scenario A activates.
+
+**Findings — Toptal**: Markup is 30–50% above contractor rate. At Phase 3 budget ($1,000–$1,350), Toptal is incompatible with the full 80–120 hour scope. Activate only for a premium 5–8 illustration subset if Upwork fails entirely.
+
+**Findings — Channel ranking**: Upwork (rank 1), Herbal Academy (rank 2), Chestnut School (rank 3), AHG directory (rank 4), Toptal (rank 5), IHA (rank 6 / inactive).
+
+**Documents produced**:
+1. `projects/seedwarden/docs/CONTRACTOR_SOURCING_CHANNEL_VALIDATION.md` — 6-channel validation, rankings, access status, backup channels (Reddit, Instagram, ASBA)
+2. `projects/seedwarden/docs/UPWORK_JOB_POSTING_OPTIMIZATION.md` — keyword analysis, copy-paste job description, screening questions, pricing analysis, posting timeline
+3. `projects/seedwarden/docs/TIER_A_CANDIDATE_PRE_SCREEN.md` — 3 named candidates: Anna Farba (a@annafarba.com), Joséphine Klerks (JosephineKlerks.com), Adrian White (adrian@iowaherbalist.com); outreach priority order; pre-screen assessments
+4. `projects/seedwarden/docs/CONTINGENCY_SOURCING_PLAYBOOK.md` — 4 scenarios (channels slow, candidates expensive, June 17 gate fail, sprint dropout); ready-to-send templates per scenario
+
+**Status**: All four documents production-ready. Upwork posting should go live June 10. Tier A outreach emails ready to send. June 17 decision gate supported.
+
+---
+
 ## Item 101 — Track B Infrastructure Verification + Phase 3 Readiness Assessment — June 10, 2026
 
 **Task**: Full diagnostic of Track B production-readiness and Phase 3 contractor search status. Clarify May 30 timeline vs. current state. Identify autonomous work remaining. Source: orchestration agent task (Session 2975+).
