@@ -4,6 +4,52 @@
 
 ---
 
+## 🎯 Session 3017 (June 10 ~2026-06-10T22:45 UTC) — PAUSE DIRECTIVE ACTIVE: Orientation + Block Verification Complete
+
+**Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE — 3 CRITICAL USER DECISIONS REQUIRED**
+
+### Summary
+
+Session 3017 completed full orientation and block verification:
+- ✓ Verified pause directive remains ACTIVE by user design (Sessions 3012-3016 confirmed correct idle state)
+- ✓ Verified ORCHESTRATOR_STATE.md is current as of June 10 08:25 UTC
+- ✓ All 4 blocks remain unresolved (manual user actions or platform decision required)
+- ✓ Exploration Queue: 7+ active items (queue sufficient, no refill needed)
+- ✓ INBOX.md: No new items since Session 2979
+- ✓ All infrastructure remains production-ready; pause directive compliance is correct
+
+**Key Status**:
+- **Pause directive enforcement**: ✅ CORRECT (no autonomous project work available; all projects paused/blocked)
+- **All blocks verified**: ❌ Unresolved (4 items awaiting user action or decisions)
+- **Critical deadline status**: ⚠️ **systems-resilience June 9 publication deadline EXPIRED** (13+ hours past)
+
+### 🚨 3 CRITICAL DECISIONS STILL REQUIRED (Prioritized by Urgency)
+
+1. **[URGENT] systems-resilience** — Platform choice (deadline expired June 9 13:00 UTC)
+   - Decision: Nextcloud+Matrix or Discourse?
+   - If selected, provide: IP/domain (Discourse) or RAM confirmation (Nextcloud+Matrix)
+   - Orchestrator can deploy immediately once decision received
+   - **Remediation needed**: Reschedule Phase 5.1 publication to June 12+ or deploy now for same-day publication
+
+2. **stockbot** — Tier-1 Bug Sprint Option A approval
+   - 4 critical bugs identified (walk-forward t-stat, OOS feature duplication, cash pool inflation)
+   - Context: Session 2980 codebase assessment complete
+   - Orchestrator can draft specs immediately once approval received
+
+3. **resistance-research** — Wave 1 execution timing
+   - Decision: Execute TODAY (June 10) or defer to June 12?
+   - Scope: CLC + Issue One (~90 min)
+   - Orchestrator can execute within 2 hours of approval
+
+### Next Session
+
+Resume upon user input on 3 critical decisions OR wait for future-dated exploration items:
+- Item 90: June 11 (stockbot multi-ticker expansion data entry)
+- Item 91: June 12 (Phase 3a thermal validation)
+- Item 104: June 15-16 (resistance-research Wave 1 post-execution analysis)
+
+---
+
 ## 🎯 Session 3016 (June 10 ~2026-06-10T22:30 UTC) — PAUSE DIRECTIVE ACTIVE: Orientation Complete, Deadline Escalation
 
 **Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE — CRITICAL DEADLINE PASSED: systems-resilience June 9 publication**
