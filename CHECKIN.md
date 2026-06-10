@@ -2,6 +2,43 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3085, June 10 2026-06-10T ~18:30 UTC)
+
+**What was accomplished**: Standard orientation completed. Verified pause directive remains active and correctly enforced through June 15 00:00 UTC (~4.5 days remaining). All state files synchronized:
+- ORCHESTRATOR_STATE.md: Confirms idle state, pause directive active
+- BLOCKED.md: 4 active blocks, all require user action only
+- INBOX.md: Empty (all items processed)
+- PROJECTS.md: 8 paused, 1 active (stockbot, awaiting decision)
+
+Re-ran all block verification commands:
+- ✗ mfg-farm test print: Directory not found (UNRESOLVED — user execution only)
+- ✗ systems-resilience platform: No containers running (UNRESOLVED — awaiting platform choice + credentials)
+- ✗ open-repo timing: Conflicting docs remain (UNRESOLVED — awaiting time clarification)
+- ✗ cybersecurity-hardening: Manual restart required (UNRESOLVED)
+
+No new user decisions provided. All project work appropriately paused per directive.
+
+**Critical status — REQUIRES USER DECISIONS (UNCHANGED)**:
+- 🚨 **systems-resilience platform: OVERDUE 37+ HOURS** — publication deadline June 9 13:00 UTC expired. Block cannot resolve without platform choice (Nextcloud+Matrix or Discourse) + credentials.
+- ⏰ **stockbot Jetson cooler order: URGENT (17.5 hours to June 11 17:00 UTC deadline)** — SC1148 required for June 19-20 thermal validation before GOOGL gate June 20
+- ⏰ **open-repo deployment timing: HIGH PRIORITY (42 hours, June 12 deadline)** — clarify 09:00 UTC vs 20:00 UTC deployment window in docs
+
+All other blocks remain unresolved (unchanged):
+- ✗ cybersecurity-hardening Phase 1 (26 days) — Windows VeraCrypt restart
+- ✗ mfg-farm test print (28 days) — user execution only
+
+**What's in progress**: No autonomous project work. Pause directive correctly enforced for 41 consecutive sessions (3044-3085). Awaiting June 15 00:00 UTC for autonomy resumption (~4.5 days remaining).
+
+**Exploration Queue status**: 108 items total. Items 87-108 all ✅ COMPLETE and production-ready. Queued for post-pause execution per prior sessions.
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — SESSION 3085 COMPLETE — NO CHANGES, AWAITING JUNE 15 AUTONOMY RESUMPTION**
+
+**Next checkpoint**: June 15 00:00 UTC — pause directive expires, autonomous work resumes.
+
+**Session duration**: ~2 minutes (orientation + block verification + CHECKIN update)
+
+---
+
 ## Since Last Check-in (Session 3084, June 10 2026-06-10T ~18:00 UTC)
 
 **What was accomplished**: Standard orientation completed. Verified pause directive remains active and correctly enforced through June 15 00:00 UTC (~5 days remaining). All state files synchronized:
