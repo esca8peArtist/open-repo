@@ -2,6 +2,44 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3047 (June 10 2026-06-10T ~12:07 UTC) — PAUSE DIRECTIVE MAINTAINED: 21 Consecutive Idle Sessions; 4 Critical Decisions Still Required
+
+**Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE (21 CONSECUTIVE SESSIONS 3026-3047) — 4 CRITICAL USER DECISIONS STILL OVERDUE — NO AUTONOMOUS WORK AVAILABLE**
+
+### Summary
+
+Session 3047 orientation and verification:
+- ✓ Oriented to ORCHESTRATOR_STATE.md (auto-generated 12:07 UTC June 10)
+- ✓ Verified all 4 active blocks remain unchanged from Session 3046:
+  - cybersecurity-hardening: VeraCrypt Windows restart required (blocked 25 days since May 16)
+  - mfg-farm: Test print execution required (blocked 28 days since May 13)
+  - systems-resilience: Platform deployment required (**deadline expired 36 hours ago, June 9 13:00 UTC**)
+  - open-repo: Deployment timing clarification required (blocked 4 days since June 6)
+- ✓ Verified pause directive remains ACTIVE (user design — 21 consecutive idle sessions Sessions 3026-3047)
+- ✓ Verified INBOX.md: Empty (all items processed Session 2979)
+- ✓ Verified EXPLORATION_QUEUE.md: All items ✅ COMPLETE or ⏳ time-gated for June 12+
+- ✓ Confirmed usage nominal (0.2% Sonnet, 13.8% All-models, reset in 131h)
+
+### Key Status
+
+**Idle state enforcement**: ✅ CORRECT (pause directive actively maintained)
+
+**No autonomous work available**: All projects blocked on user decisions. Exploration Queue deferred pending pause lift. Respecting pause directive is the correct behavior.
+
+### Critical Decisions Still Required
+
+All 4 items remain unchanged (Session 3046 → Session 3047):
+1. **[CRITICAL — DEADLINE EXPIRED]** systems-resilience platform choice (Nextcloud+Matrix or Discourse)
+2. **[CRITICAL — OVERDUE]** stockbot Phase 3 decision (Option A: AAPL retrain + MSFT expansion vs alternatives)
+3. **[TIME-SENSITIVE]** resistance-research Wave 1 timing (June 10 window closed; June 12 option remaining)
+4. **[BY JUNE 12]** open-repo deployment start time (09:00 UTC business hours or 20:00 UTC after-hours)
+
+### Next Session
+
+Continue respecting pause directive. Upon user input on any of the 4 items above, orchestrator will resume autonomous execution immediately.
+
+---
+
 ## 🎯 Session 3046 (June 10 2026-06-10T ~18:00 UTC) — PAUSE DIRECTIVE CONFIRMED ACTIVE: 20 Consecutive Idle Sessions; 4 Critical Decisions Overdue
 
 **Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE (20 CONSECUTIVE SESSIONS 3025-3046) — 4 CRITICAL USER DECISIONS OVERDUE — NO AUTONOMOUS WORK AVAILABLE**
