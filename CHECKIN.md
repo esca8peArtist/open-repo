@@ -31,6 +31,43 @@
 
 ---
 
+## 🎯 Session 3036 (June 10 2026-06-10T ~10:50 UTC) — PAUSE DIRECTIVE CONFIRMED ACTIVE: Idle State Correct, 3 Critical Decisions Still Required
+
+**Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE (12 CONSECUTIVE SESSIONS) — 3 CRITICAL USER DECISIONS OVERDUE**
+
+### Summary
+
+Session 3036 completed standard orientation and state verification:
+- ✓ Oriented to ORCHESTRATOR_STATE.md (generated 10:50 UTC June 10)
+- ✓ Verified all 4 active blocks remain unresolved (consistent across Sessions 3024-3036)
+  - cybersecurity-hardening: VeraCrypt Windows restart required (blocked since 2026-05-16, 25 days)
+  - mfg-farm: Test print execution required (blocked since 2026-05-13, 28 days)
+  - systems-resilience: Platform deployment required (**deadline EXPIRED June 9 13:00 UTC, 21 hours overdue**)
+  - open-repo: Deployment timing clarification required (blocked since 2026-06-06, 4 days)
+- ✓ Verified pause directive remains ACTIVE (correct by user design — Sessions 3024-3036 all confirm)
+- ✓ Verified INBOX.md: No new items since Session 2979
+- ✓ Verified Exploration Queue: All queued items time-gated or blocked by pending decisions
+- ✓ Verified git log: 12 consecutive sessions maintaining pause, no user decisions provided
+
+### Key Status
+
+**Idle state enforcement**: ✅ CORRECT (pause directive actively maintained — now 12 consecutive sessions)
+
+**No autonomous work available**: Pause directive remains active. All 3 critical project work items blocked on user decisions. No Exploration Queue items ready to execute (all are time-gated for June 12+).
+
+### Critical Decisions Still Required (OVERDUE)
+
+All 3 items remain unchanged from Session 3035:
+1. **[CRITICAL — DEADLINE EXPIRED 21 HOURS AGO]** systems-resilience platform choice (Nextcloud+Matrix or Discourse) — deadline was June 8 18:00 UTC for June 9 13:00 UTC publication. Publication deferred indefinitely pending decision.
+2. **[URGENT — APPROX 2 DAYS OVERDUE]** stockbot Tier-1 Bug Sprint approval (Option A: AAPL retrain + MSFT expansion) — awaiting user review of Session 2980 comprehensive backtesting findings
+3. **[TIME-SENSITIVE — IMMEDIATE WINDOW OPEN]** resistance-research Wave 1 execution timing — June 10 user action window STILL AVAILABLE (90 min); June 12 option also available; can defer to post-June 13
+
+### Recommendation
+
+**Continue idle state enforcement.** Pause directive is functioning correctly. Sessions should continue daily orientation + state verification until user provides any of the 3 critical decisions. No user intervention needed for session execution — orchestrator correctly respecting pause directive design.
+
+---
+
 ## 🎯 Session 3035 (June 10 2026-06-10T ~10:38 UTC) — PAUSE DIRECTIVE CONFIRMED ACTIVE: Idle State Correct, 3 Critical Decisions Still Required
 
 **Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE (11 CONSECUTIVE SESSIONS) — 3 CRITICAL USER DECISIONS OVERDUE**
