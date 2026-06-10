@@ -4,6 +4,63 @@
 
 ---
 
+## 🎯 Session 2979 (June 10 02:30–02:45 UTC) — Wave 1 Readiness Confirmed + User Action Queue
+
+**Status**: ✅ **ALL AUTONOMOUS PREP COMPLETE — WAVE 1 EXECUTION READY TODAY**
+
+### Immediate Action Required TODAY (June 10)
+
+**THREE CRITICAL DECISIONS** (must be made before downstream work proceeds):
+1. **stockbot Phase 3: GO/CAUTION/NO-GO** — Review `COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md` (5-10 min)
+2. **systems-resilience: Platform Choice** — Decide Discourse OR Nextcloud+Matrix (2 min + setup time if executing)
+3. **open-repo: Deployment Timing** — Confirm 09:00 UTC OR 20:00 UTC June 12 (1 min)
+
+**WAVE 1 EXECUTION** (30-60 min, can happen in parallel with decisions):
+- Open: `projects/resistance-research/domain-51-send-templates.md`
+- Fill: `[YOUR_NAME]` and `[YOUR_CONTACT_INFO]` fields in **Emails 4 & 5 only**
+- Send Email 4 to **echlopak@campaignlegalcenter.org** (Erin Chlopak, Campaign Legal Center)
+- Send Email 5 to **info@issueone.org** (Issue One)
+- Log sends in: `projects/resistance-research/WAVE_1_EXECUTION_LOG.md`
+- Verify Gist loads: https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372
+
+### Verification Summary (Orchestrator-Confirmed)
+
+✅ **All autonomous staging for Wave 1 complete**:
+- Send templates production-ready (Emails 4 & 5 with field-fill placeholders)
+- Execution log with exact timing sequence (08:30–10:45 local)
+- Contacts verified June 5-6, 2026 (Erin Chlopak, Nick Penniman)
+- Gist URL live, all 58 citations included
+- No additional research needed — immediate send-ready
+
+✅ **All Wave 2 infrastructure staged** (for June 11-12):
+- California contacts verified (Common Cause CA, LWV CA, Clean Money Action Fund)
+- Emails templated and ready
+- Execution log prepared
+- Scheduled for June 11-12 per domain-51-send-templates.md timeline
+
+### What Happens Next
+
+**If stockbot GO decision made today**:
+- Phase 4 pre-planning activates immediately (all docs from Session 2972)
+- Hardware sourcing checklist executes June 17 deadline
+- GOOGL model deployment June 20 gate
+
+**If systems-resilience platform chosen**:
+- Deployment executes immediately (Discourse ~2-3h, Nextcloud+Matrix ~4-6h)
+- June 9 publication deadline re-scheduled based on platform choice
+- Orchestrator will coordinate deployment and monitoring
+
+**If open-repo timing confirmed**:
+- June 12 deployment sequence activates (code already merge-ready)
+- 105-min deployment window (09:00–10:45 UTC or 20:00–21:45 UTC)
+- Post-deployment monitoring begins immediately after
+
+**June 11 (if Wave 1 completes June 10)**:
+- Wave 2 execution window (90 min, California contacts)
+- Day 7 checkpoint monitoring begins June 17
+
+---
+
 ## 🎯 Session 2978 (June 10 01:50–02:30 UTC) — Final Orientation + Decision Escalation
 
 **Status**: ⚠️ **COMPREHENSIVE ASSESSMENT COMPLETE — THREE CRITICAL DECISIONS 24-72+ HOURS OVERDUE**
