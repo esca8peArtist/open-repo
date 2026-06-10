@@ -2,21 +2,23 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3119, June 10 2026-06-10T 22:35 UTC)
+## Since Last Check-in (Session 3120, June 10 2026-06-10T 22:40 UTC)
 
-**Orchestrator Action**: Standard orientation completed. Pause directive verified **ACTIVE through June 15 00:00 UTC** (~3d remaining). All 4 blocks remain unresolved:
+**Orchestrator Action**: Standard orientation completed. Pause directive verified **ACTIVE through June 15 00:00 UTC** (4d 1h 20m remaining). All 4 blocks remain unresolved and user-action-gated:
 - ✅ cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart — cannot auto-verify
-- ✅ mfg-farm: `ls -la test-print-results/` → directory does not exist; test print execution required (user action)
-- ✅ systems-resilience: `docker ps` → no Docker containers running; platform choice decision still pending (61+ hours overdue)
-- ✅ open-repo: timing conflict persists in deployment docs (09:00 UTC vs 20:00 UTC); clarification due June 12 09:00 UTC (~10 hours)
+- ✅ mfg-farm: `ls -la projects/mfg-farm/test-print-results/` → directory does not exist; test print execution required (user action)
+- ✅ systems-resilience: `docker ps` → no Docker containers running; platform choice decision still pending (62+ hours overdue, deadline June 8 18:00 UTC)
+- ✅ open-repo: timing conflict persists in deployment docs (09:00 UTC vs 20:00 UTC); **clarification due June 12 09:00 UTC (~10.5 hours remaining)**
+
+**⚠️ URGENT**: open-repo deadline is TODAY. User decision on deployment start time (09:00 UTC or 20:00 UTC) needed within next 10 hours to finalize communication templates and rollback procedures.
 
 **No new INBOX items.** No user decisions provided.
 
 **Exploration Queue**: 108 items tracked; all completed, queued for post-pause June 15-20. Zero queue refill needed.
 
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT**. All project scope remains user-action-gated. Autonomy resumes June 15 00:00 UTC (session 35+ in pause cycle).
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT**. All project scope remains user-action-gated. Autonomy resumes June 15 00:00 UTC (session 36 in pause cycle).
 
-**Session duration**: ~2 minutes (orientation + block verification + CHECKIN update)
+**Session duration**: ~3 minutes (orientation + block verification + CHECKIN update)
 
 ---
 
