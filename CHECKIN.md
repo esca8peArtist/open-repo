@@ -2,37 +2,43 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3132, June 11 2026 ~23:45 UTC)
+## Since Last Check-in (Session 3133, June 12 2026 ~00:15 UTC)
 
-**Orchestrator Action**: Standard orientation completed. Pause directive verified ACTIVE through June 15 00:00 UTC. All 4 blocks re-verified unresolved.
+**Orchestrator Action**: Standard orientation completed. Pause directive ACTIVE through June 15 00:00 UTC. All 4 blocks re-verified. **Open-repo conflict verification completed — deadline NOW ~8.5 HOURS AWAY.**
+
+**CRITICAL FINDINGS**:
+- ✅ **Verified deployment timing conflict in docs**: 
+  - Newer docs (Sessions 2952-2956): `DEPLOYMENT_JUNE12_SUCCESS_CRITERIA.md` specifies **09:00 UTC**
+  - Older docs: `DEPLOYMENT_JUNE12_RISK_MITIGATION.md` states "This document uses **09:00 UTC**" but references older docs using **20:00 UTC**
+  - Evidence: `/DEPLOYMENT_JUNE12_RISK_MITIGATION.md` explicitly documents: "The June 3 runbook and go-live checklist use **20:00 UTC**. **The user must resolve this before deployment.**"
+  - SLA implication: 95% daily SLA if 09:00 UTC (30-min deployment during business hours) vs 100% if 20:00 UTC (off-hours deployment)
 
 **Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT through June 15 00:00 UTC**
 - No autonomous project work available
 - All 4 blocks unresolved and awaiting user action
-- 38+ consecutive sessions confirm idle state is correct by design
+- **39+ consecutive sessions** confirm idle state is correct by design
 
-**🚨 IMMINENT DEADLINE — USER ACTION REQUIRED NOW**:
-- **open-repo deployment timing decision**: Due **June 12 09:00 UTC** (~9.25 hours away)
-  - Conflict: docs specify both 09:00 UTC (newer) and 20:00 UTC (older)
-  - Decision needed NOW: Which is the canonical start time?
-  - Impact: All deployment communication templates, rollback procedures, SLA targets, and team coordination depend on this
-  - **Action required**: Reply with decision immediately (before 09:00 UTC June 12)
+**🚨 CRITICAL DEADLINE — USER ACTION REQUIRED IMMEDIATELY**:
+- **Deadline: June 12 09:00 UTC** (~8.5 hours from this session start)
+- **Decision needed: Which deployment start time is correct — 09:00 UTC or 20:00 UTC?**
+- **Impact**: Pre-flight checklist, communication templates, rollback procedures, team coordination, SLA terms ALL depend on this choice
+- **Format**: Update `BLOCKED.md` Resolution field for open-repo block with your decision, or reply in CHECKIN.md "Needs Your Input" section
 
-**Block Status Verification** (commands executed; all still unresolved):
+**Block Status Verification** (all 4 confirmed unresolved):
 - ✅ cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart (cannot auto-verify)
 - ✅ mfg-farm: test-print-results directory missing → test print execution required
-- ✅ systems-resilience: no Docker containers running → platform choice decision pending (~82+ hours overdue since June 8 18:00 UTC)
-- 🚨 **open-repo: deployment timing conflict persists (09:00 UTC vs 20:00 UTC) → DEADLINE IN ~9.25 HOURS**
+- ✅ systems-resilience: no Docker containers running → platform choice decision pending (82+ hours overdue since June 8 18:00 UTC)
+- 🚨 **open-repo: deployment timing conflict VERIFIED → DEADLINE IN 8.5 HOURS**
 
-**Needs Your Input (URGENT — DEADLINE IMMINENT)**:
-1. **🚨 CRITICAL — open-repo deployment start time decision**: **09:00 UTC or 20:00 UTC on June 12?**
-   - **DEADLINE: June 12 09:00 UTC (9 hours 15 minutes from session start)**
-   - This decision is load-bearing: communication templates, SLA terms, and rollback timing all depend on it
-   - **Reply format**: Update BLOCKED.md Resolution field for open-repo block with your decision
+**Needs Your Input (URGENT — DEADLINE IN 8.5 HOURS)**:
+1. **🚨 CRITICAL — open-repo deployment start time**: **09:00 UTC or 20:00 UTC on June 12?**
+   - **DEADLINE: June 12 09:00 UTC (~8.5 hours from this session)**
+   - **Why**: Pre-flight checklist execution, deployment comms, rollback timing, and SLA terms depend on canonical time
+   - **Reply format**: Update `BLOCKED.md` Resolution field for open-repo, or reply here with decision
 2. **systems-resilience platform choice**: Nextcloud+Matrix or Discourse + SMTP credentials?
-   - Deadline: June 8 18:00 UTC (82+ hours overdue)
+   - **Deadline**: June 8 18:00 UTC (82+ hours overdue; platform must deploy by June 8 18:00 UTC for June 9 publication)
 
-**Session duration**: ~3 minutes (orientation + block verification + CHECKIN update)
+**Session duration**: ~4 minutes (orientation + block verification + open-repo conflict verification + CHECKIN update)
 
 ---
 
