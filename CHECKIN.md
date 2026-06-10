@@ -2,29 +2,36 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3130, June 11 2026)
+## Since Last Check-in (Session 3131, June 11 2026 ~23:30 UTC)
 
-**Orchestrator Action**: Standard orientation completed. Pause directive verified ACTIVE through June 15 00:00 UTC. All 4 blocks re-verified unresolved (no status changes since Session 3129).
+**Orchestrator Action**: Standard orientation completed. Pause directive verified ACTIVE through June 15 00:00 UTC. All 4 blocks re-verified unresolved. **ALERT: open-repo deadline now CRITICAL — only ~22 hours remaining.**
 
 **Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT through June 15 00:00 UTC**
 - No autonomous project work available
 - All 4 blocks unresolved and awaiting user action
-- 20+ consecutive sessions confirm idle state is correct by design
+- 35+ consecutive sessions confirm idle state is correct by design
+
+**🚨 CRITICAL DEADLINE ALERT**:
+- **open-repo deployment timing decision**: Due **June 12 09:00 UTC** (~22 hours away)
+  - Conflict: docs specify both 09:00 UTC (newer) and 20:00 UTC (older)
+  - Decision needed: Which is correct?
+  - Impact: All deployment communication templates, rollback procedures, and team coordination hinge on this timing
+  - Action: Reply with decision to `[user-decision-log]` or in BLOCKED.md Resolution field
 
 **Block Status Verification** (commands executed; all still unresolved):
 - ✅ cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart (cannot auto-verify)
 - ✅ mfg-farm: test-print-results directory missing → test print execution required
-- ✅ systems-resilience: no Docker containers running → platform choice decision still pending (~74-75 hours overdue since June 8 18:00 UTC deadline)
-- 🚨 **open-repo: deployment timing conflict persists (09:00 UTC vs 20:00 UTC) → CRITICAL: decision required before June 12 09:00 UTC deadline (~10-24 hours remaining)**
+- ✅ systems-resilience: no Docker containers running → platform choice decision still pending (~79+ hours overdue since June 8 18:00 UTC deadline)
+- 🚨 **open-repo: deployment timing conflict persists (09:00 UTC vs 20:00 UTC) → CRITICAL: decision required within ~22 hours**
 
 **Needs Your Input (URGENT)**:
-1. **CRITICAL: Confirm open-repo deployment start time**: 09:00 UTC or 20:00 UTC?
-   - Deadline: June 12 09:00 UTC (deadline approaching rapidly)
-   - Reply with decision to unblock pre-flight checklist and communication templates
+1. **🚨 CRITICAL — open-repo deployment start time**: 09:00 UTC or 20:00 UTC on June 12?
+   - **DEADLINE: June 12 09:00 UTC (~22 hours from now)**
+   - This is not a preference — it determines communication templates, SLA targets, and rollback timing
 2. **systems-resilience platform choice**: Nextcloud+Matrix or Discourse + SMTP credentials?
-   - Deadline: June 8 18:00 UTC (deadline passed; platform deployment now 74+ hours overdue)
+   - Deadline: June 8 18:00 UTC (deadline passed; platform deployment now 79+ hours overdue)
 
-**Session duration**: ~3 minutes (orientation + block verification + CHECKIN update)
+**Session duration**: ~2 minutes (orientation + block verification + CHECKIN update)
 
 ---
 
