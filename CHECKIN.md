@@ -4,6 +4,46 @@
 
 ---
 
+## 🎯 Session 2980 (June 10 05:25 UTC) — Stockbot Codebase Quality Assessment Complete
+
+**Status**: ✅ **CODEBASE ASSESSMENT COMPLETE — AWAITING USER REVIEW & DECISION ON CRITICAL FIXES**
+
+### Summary
+
+Executed Session 2979 STRATEGIC REFOCUS directive. Stockbot codebase assessment complete: 4 production-ready documents delivered covering agent loop workflow, comprehensive codebase review, model architecture assessment, and implementation ideas. **Three critical bugs identified** requiring immediate attention before further feature development.
+
+### Work Completed
+
+**✅ Stockbot: Comprehensive Codebase Quality Assessment (74 KB, 4 documents)**
+
+Submodule commit `e64fb3b`:
+- `AGENT_LOOP_WORKFLOW.md` (2.1K) — Iterative feature dev cycle (A–E) + decision tree documented
+- `CODEBASE_REVIEW_COMPREHENSIVE.md` (22K) — 30+ findings organized by severity; specific file locations and line numbers
+- `MODEL_ARCHITECTURE_ASSESSMENT.md` (18K) — Gap analysis, streamlining opportunities, pipeline assessment
+- `IMPLEMENTATION_IDEAS.md` (12K) — 12 improvement ideas ranked by impact/effort
+
+**CRITICAL FINDINGS**:
+1. **C-1: Walk-forward t-statistic broken** — `_aggregate_folds()` missing pooled PnL list. Gate G3 spurious. Fix: 10–15 lines.
+2. **C-2: OOS features computed 2× per fold** — Doubles inference time for ensemble models. Fix: return `oos_returns` from fold.
+3. **C-3: Cash pool inflation risk** — Concurrent closes can push pool above real cash. Fix: cap at Alpaca cash field.
+
+**Tier-1 Implementation Priorities** (per agent assessment):
+1. Fix pooled t-stat + add transaction costs (1–1.5 sessions) — Gate results trustworthy
+2. Per-ticker error counter with Discord alert (0.5 sessions) — Surface inference failures
+3. Feature cache for walk-forward (2 sessions) — 50% speedup on ensemble evals
+
+### Waiting On
+
+**User decision**: Approve Tier-1 bug fixes (Phase 1) before feature development, or proceed with feature work as-is?
+
+### Next Actions
+
+- User reviews 4 documents in `projects/stockbot/docs/`
+- User decides: Bug Sprint (fix C-1 + C-2 + C-3) vs Feature Implementation
+- Orchestrator proceeds with user-approved path (will queue as INBOX item or implicit in next session)
+
+---
+
 ## 🎯 Session 2987 (June 10 03:41–05:00 UTC) — Exploration Queue Contingency Planning: 2 Complete, 1 Deferred
 
 **Status**: ✅ **DECISION-SUPPORT DOCUMENTS READY — AWAITING USER ACTIONS ON 3 DECISIONS**
