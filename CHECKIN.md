@@ -4,6 +4,52 @@
 
 ---
 
+## 🎯 Session 2977 (June 10 02:45–03:00 UTC – COMPLETE) — Minor Orchestration Patches + Decision Blocking Assessment
+
+**Status**: ✅ **AUTONOMOUS PATCHES COMPLETE — RESISTANCE-RESEARCH WAVE 1 READY FOR USER EXECUTION TODAY**
+
+**Summary**: Orchestrator executed four minor autonomous tasks to resolve old blocks and prepare Wave 1/2 staging for user execution. No new external dependencies identified; all remaining work blocked on overdue user decisions (stockbot, systems-resilience).
+
+### ✅ Session Deliverables
+
+1. **Usage Calibration Block Resolved** (15 min) — Verified calibration within 7-day window (0.0% Sonnet, 0.0% All-models), moved to Resolved Archive in BLOCKED.md
+2. **Domain 59 Date Patch** (3 min) — Updated send_window from stale "June 2-3" to current "June 10-15", markup_deadline June 30 preserved
+3. **Domain 48 Gist Created** (5 min) — GitHub Gist live: https://gist.github.com/esca8peArtist/4f1fc874544f34a55d4320fc786761f0 (7,100 words, 48 citations, production-ready)
+4. **INBOX Processed** (1 min) — Resume directive cleared; no new project directives
+
+**Total time**: ~16 minutes (orientation 5 min + patches 11 min)
+
+### ⏳ Blocked: Three Overdue User Decisions
+
+| Decision | Deadline | Status | Impact |
+|----------|----------|--------|--------|
+| **stockbot Phase 3 GO/CAUTION/NO-GO** | June 7 09:00 UTC | ⚠️ 72+ hours overdue | Blocks Phase 4 deployment, resource allocation |
+| **systems-resilience Platform Choice** | June 8 18:00 UTC | ⚠️ 31+ hours overdue | June 9 publication timeline (PASSED) — new deadline TBD |
+| **open-repo Deployment Timing** | June 6 (clarification) | ⚠️ Timing still unclear | June 12 09:00 vs 20:00 UTC deployment |
+
+**Recommendation**: User should make three decisions immediately (estimated 10-15 min total):
+1. Review COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md → decide GO/CAUTION/NO-GO for stockbot
+2. Choose Nextcloud+Matrix OR Discourse for systems-resilience (provide IP/domain/SMTP if Discourse)
+3. Clarify open-repo deployment: 09:00 UTC (business hours) or 20:00 UTC (after-hours) June 12
+
+### Immediate User Actions (Next 48 Hours)
+
+**TODAY (June 10)**: resistance-research Wave 1 execution (30 min)
+- Open `domain-51-send-templates.md`
+- Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in Emails 4-5
+- Send Email 4 to echlopak@campaignlegalcenter.org (Erin Chlopak, CLC)
+- Send Email 5 to info@issueone.org (Issue One)
+
+**Tomorrow (June 11)**: resistance-research Wave 2 execution (30 min)
+- Open `domain-51-send-templates.md`, fill Emails 1-3
+- Send to CA contacts: Common Cause CA, LWV CA, Clean Money Action Fund
+
+**Optional (if time)**: 
+- Domain 59 sends (emails to CBPP, ITEP, NWLC, MomsRising, AFL-CIO) — ready to execute, no additional work needed
+- Domain 48 sends (emails using new Gist) — ready to execute once templates created
+
+---
+
 ## 🎯 Session 2976 (June 10 02:22 UTC – COMPLETE) — Parallel Agent Execution: resistance-research Wave 1 Staging + seedwarden Infrastructure Verification
 
 **Status**: ✅ **AUTONOMOUS WORK COMPLETE — TWO MAJOR PROJECTS STAGED FOR USER EXECUTION**
