@@ -8519,3 +8519,77 @@ Or continue with Exploration Queue exempt work on future-dated items (Items 91-1
 
 **Session duration**: ~10 minutes (orientation + status analysis)
 
+---
+
+## 🔄 Session 3028 (June 10 ~17:32 UTC) — PAUSE DIRECTIVE CONFIRMED: Standing By for User Decisions
+
+**Status**: ✅ **ORIENTATION COMPLETE — PAUSE DIRECTIVE ACTIVE AND VERIFIED — AWAITING USER DECISIONS**
+
+### Summary
+
+Session 3028 completed standard orchestrator orientation:
+- ✓ Read ORCHESTRATOR_STATE.md (auto-generated 2026-06-10T15:45:32Z, current)
+- ✓ Verified pause directive remains **ACTIVE** (12+ consecutive sessions maintaining correct idle state)
+- ✓ Re-verified all 4 active blocks unresolved (no auto-verification possible):
+  - cybersecurity-hardening: VeraCrypt pre-boot restart required (manual action — cannot auto-verify)
+  - mfg-farm: Test print execution required (no test-print-results/ directory exists)
+  - systems-resilience: Platform choice decision required (no Nextcloud/Discourse containers found)
+  - open-repo: Deployment timing conflict (09:00 UTC vs 20:00 UTC — still conflicting)
+- ✓ Verified INBOX.md — empty (all items processed)
+- ✓ Verified EXPLORATION_QUEUE.md — 3 active queued items (Items 16, 104, 105 all future-dated; sufficient per protocol)
+- ✓ Checked for auto-resolvable blocks — none found
+
+**Pause directive remains ACTIVE and CORRECT** by user design (per Session 2833+ memory). No autonomous project work initiated. Orchestrator in standing-by state as intended.
+
+### Critical Item Status
+
+**Expired Deadlines (No Action Taken Post-Deadline)**:
+1. ❌ **Stockbot Phase 3 decision** (was June 7 09:00 UTC — now 58 hours overdue)
+2. ❌ **Systems-resilience platform deployment** (was June 8 18:00 UTC — now 47 hours overdue; publication deadline June 9 13:00 UTC was 28+ hours ago)
+3. ⏳ **Resistance-research Wave 1** (flexible window, still actionable June 10-12)
+
+**Awaiting User Decisions** (from Session 3027 CHECKIN):
+1. **systems-resilience**: Did platform deploy? If not, approve Discourse (recommended) + provide domain/IP/SMTP credentials
+2. **stockbot**: Approve Phase 3a Option A, or defer to later date?
+3. **resistance-research Wave 1**: Execute this week (June 10-12), or defer to next phase window?
+
+**Additional Clarification Needed**:
+4. **open-repo**: Confirm deployment start time for June 12 (09:00 UTC business hours vs 20:00 UTC after-hours)?
+
+### Block Status
+
+| Block | Date | Status | Resolution |
+|-------|------|--------|-----------|
+| cybersecurity-hardening | 2026-05-16 | Active | VeraCrypt restart needed (manual) |
+| mfg-farm | 2026-05-13 | Active | Test print needed (manual) |
+| systems-resilience | 2026-06-06 | Active | Platform choice (awaiting user) |
+| open-repo | 2026-06-06 | Active | Timing clarification (awaiting user) |
+
+### Exploration Queue Status
+
+- **Total active items**: 3 (Items 16, 104, 105)
+- **Item 16**: ⏳ Domain 39 Impact Evaluation & Phase 2 Prioritization (pause-exempt if aligned with Phase 2 scope, but appears deferred)
+- **Item 104**: ⏳ resistance-research Phase 2 Wave 1 Post-Execution Analysis Framework (scheduled for June 16-18 checkpoint — future-dated, not actionable now)
+- **Item 105**: ⏳ stockbot Phase 3b Cooler Thermal Validation Post-Installation (scheduled for June 20 GOOGL gate — future-dated, not actionable now)
+- **Queue status**: Meets minimum threshold (3 items). No queue refill required per protocol.
+
+### Decisions for User
+
+The orchestrator can resume autonomous execution immediately upon receiving:
+1. **System-resilience platform decision**: Discourse with domain/IP/SMTP, OR Nextcloud+Matrix with memory-risk confirmation
+2. **Stockbot Phase 3a decision**: Approve Option A (AAPL June 11 retrain), or defer?
+3. **Resistance-research Wave 1**: Execute June 10-12, or defer?
+4. **Open-repo June 12 timing**: 09:00 UTC (business) or 20:00 UTC (off-hours)?
+
+Until these decisions arrive, all main projects remain appropriately blocked, and pause directive is correctly maintained.
+
+### Session Stats
+
+- **Duration**: ~15 minutes (orientation + block verification + status analysis)
+- **Work type**: Orientation and status check
+- **Commits**: 0 (no changes — all state files stable)
+- **Blockers resolved**: 0 (all auto-verification commands failed as expected)
+- **New findings**: None — all state matches Session 3027 summary
+
+**Orchestrator standing ready for user input.** No further autonomous action until one or more of the 4 decisions above are provided.
+
