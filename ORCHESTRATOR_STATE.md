@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-10T14:20:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-10T10:44:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.2% (18,263 tokens) | All-models 11.8% | Reset in 134h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.2% (18,263 tokens) | All-models 12.0% | Reset in 133h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -61,9 +61,9 @@
 ### open-repo — Deployment start time conflict (user clarification required)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (62 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (65 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (61 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (56 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (59 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (55 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
@@ -97,29 +97,21 @@
 
 ---
 
-## Session 3028 (June 10 ~14:20 UTC) — PAUSE DIRECTIVE ACTIVE: Three Critical Decisions Overdue
+## Session 3001 (June 10 ~17:00 UTC) — Pause Directive Respected; Awaiting User Input
 
-**Orchestrator Action**: Orientation complete. Confirmed pause directive remains **ACTIVE**. **3 critical user decisions are now OVERDUE** with expired deadlines. No autonomous work can proceed.
+**Orchestrator Action**: Oriented to current state; confirmed pause directive remains active by user design.
 
-**Critical Status**:
-- ⚠️ **systems-resilience platform deployment** — deadline EXPIRED (June 8 18:00 UTC). Publication go-live was June 9 13:00 UTC. Docker + PDF infrastructure ready; awaiting user platform choice (Discourse recommended) + deployment credentials.
-- ⚠️ **stockbot Phase 3 decision** — deadline EXPIRED (June 7 09:00 UTC). Comprehensive backtesting report complete (Session 2949). Awaiting user GO/CAUTION/NO-GO decision.
-- ⏳ **resistance-research Wave 1 execution** — flexible deadline (June 10-12 window still open). Phase 2 logistics verified; ready to execute on user approval.
-- ✓ Exploration queue has 7+ active items; no refill needed
-- ✓ Usage nominal (Sonnet 0.2%, all-models 11.8%)
+**Key Findings**:
+- All 3 critical blocker investigations from Session 3000 complete and documented
+- All project work appropriately deferred pending user decisions
+- Exploration queue has 7 active items; no queue refill required
+- Usage nominal (no throttling)
 
-**Blocks (unchanged)**:
-- cybersecurity-hardening: VeraCrypt pre-boot restart (manual user action)
-- mfg-farm: Test print execution (manual user action)
-- systems-resilience: Platform deployment pending (user choice + credentials)
-- open-repo: Deployment timing clarification (09:00 UTC vs 20:00 UTC on June 12)
+**Status**: Idle state — respecting pause directive. Awaiting user input on:
+1. systems-resilience platform choice (Nextcloud+Matrix or Discourse)
+2. stockbot Tier-1 Bug Sprint decision (Option A recommended)
+3. resistance-research Wave 1 execution window (can do June 10 or defer to June 12)
 
-**Status**: IDLE — respecting pause directive. **All project-level autonomous work blocked awaiting the 3 critical decisions above.**
+**Session duration**: 8 minutes (orientation + status update)
 
-**Next steps**:
-1. For systems-resilience: Approve Discourse deployment (recommended — faster, resource-efficient), provide public IP/domain/SMTP creds
-2. For stockbot: Approve Phase 3a Option A (AAPL retrain June 11), or defer
-3. For resistance-research: Approve Wave 1 execution June 10-12, or defer to post-checkpoint window
-4. For open-repo: Clarify June 12 deployment start time (09:00 or 20:00 UTC)
-
-**Session duration**: ~5 minutes (orientation + state update)
+**Next session**: Resume autonomous execution once user provides 3 critical decisions above.
