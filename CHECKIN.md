@@ -4,6 +4,33 @@
 
 ---
 
+## 📋 Critical Decisions Required — Session 3028 Summary
+
+**IMPORTANT**: Three critical user decisions are now OVERDUE with expired deadlines. Orchestrator cannot proceed with any autonomous project work until you provide input on these items:
+
+### 1. ⚠️ **Systems-Resilience Platform Deployment** (DEADLINE EXPIRED: June 8 18:00 UTC)
+- **What's needed**: Choose deployment platform (Nextcloud+Matrix or Discourse) + provide credentials
+- **Recommendation**: **Discourse** (faster deployment 2-3h, fits Pi 5 8GB RAM constraint, vs Nextcloud 4-6h, 16GB recommended)
+- **If approved**: Provide public IP + domain name + SMTP credentials for platform
+- **Impact**: Publication go-live was scheduled June 9 13:00 UTC; awaiting platform choice to resume deployment
+
+### 2. 🔴 **Stockbot Phase 3 Decision** (DEADLINE EXPIRED: June 7 09:00 UTC)
+- **What's needed**: Approve Phase 3a Option A (AAPL retrain June 11 + MSFT expansion) or provide alternative direction
+- **Status**: Comprehensive backtesting report complete (Session 2949, June 6)
+- **Confidence**: 92% (infrastructure validated; transaction details pending)
+- **Impact**: Phase 3 deployment fully blocked pending your decision
+
+### 3. ⏳ **Resistance-Research Wave 1 Execution** (WINDOW: June 10-12)
+- **What's needed**: Approve Wave 1 execution (CLC + Issue One outreach, 90 minutes user time) or defer to post-June 13
+- **Status**: Phase 2 execution ready + all logistics verified (contacts named, templates ready)
+- **Flexibility**: June 10 option now closed; June 12 option still available; can defer if conflicting priorities
+
+### 4. 📌 **Open-Repo Deployment Timing** (BY JUNE 12)
+- **What's needed**: Clarify June 12 deployment start time (09:00 UTC business hours or 20:00 UTC after-hours?)
+- **Impact**: Determines communication templates and rollback window coordination
+
+---
+
 ## 🎯 Session 3034 (June 10 2026-06-10T ~10:32 UTC) — PAUSE DIRECTIVE CONFIRMED ACTIVE: Idle State Correct, 3 Critical Decisions Still Required
 
 **Status**: ⚠️ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE (10 CONSECUTIVE SESSIONS) — 3 CRITICAL USER DECISIONS OVERDUE**
