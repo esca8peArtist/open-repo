@@ -4,6 +4,41 @@
 
 ---
 
+## 🎯 Session 3001 (June 10 ~17:00 UTC) — PAUSE DIRECTIVE ACTIVE: Awaiting User Decisions
+
+**Status**: ✅ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE — AWAITING USER INPUT ON 3 CRITICAL ITEMS**
+
+### Summary
+
+Session 3001 oriented to current state. Pause directive remains **ACTIVE** by user design (Session 2998 → Session 3000 analysis complete). All project-level autonomous work correctly deferred pending user decisions documented in Session 3000 CHECKIN.
+
+### User Input Required (Same 3 Items from Session 3000)
+
+**1. systems-resilience → Platform Deployment Choice**
+- Nextcloud+Matrix or Discourse? 
+- If Discourse: provide public IP/domain + SMTP credentials
+- Orchestrator ready to deploy in 20–30 min once decision received
+
+**2. stockbot → Tier-1 Bug Sprint Decision**
+- Proceed with Option A (recommended) or preferred alternative?
+- Session 2980 identified 4 critical backtesting bugs; Tier-1 Bug Sprint (3–4 sessions) vs faster/riskier Option B
+- Orchestrator ready to draft implementation specs once decision received
+
+**3. resistance-research → Domain 51 Wave 1 Execution**
+- Can execute TODAY (June 10)? Or defer to June 12?
+- All infrastructure ready (Gist HTTP 200, email templates verified, contact list confirmed)
+- Critical bug found: DOMAIN_51_JUNE_16_CHECKPOINT_METRICS_TEMPLATE.md has wrong contacts (Yusuf Maluf/Cynthia Terrell/Tiffany Muller). Corrected contacts in Session 2998 docs (Erin Chlopak/Darius Kemp/Jenny Farrell)
+
+### Exploration Queue Status
+
+Active items: 89, 90, 91, 104, 105, 16, 70 (all in queue). Most are time-sensitive or market-dependent. Queue does NOT require refilling.
+
+### Next Session
+
+Once user provides 3 decisions above → Orchestrator resumes autonomous execution on unblocked projects (systems-resilience platform deployment, stockbot Tier-1 specifications, resistance-research Wave 1 checkpoint automation).
+
+---
+
 ## 🎯 Session 3000 (June 10 ~09:00 UTC) — CRITICAL BLOCKER CLARIFICATION: Items 106–108 Complete
 
 **Status**: ✅ **THREE CRITICAL BLOCKERS CLARIFIED — USER DECISIONS MAPPED — READY FOR ACTION**
