@@ -4,6 +4,50 @@
 
 ---
 
+## 🎯 Session 3010 (June 10 ~2026-06-10T21:00 UTC) — PAUSE DIRECTIVE CONFIRMED: All Blocks Verified, Idle State Maintained, User Input Required
+
+**Status**: ✅ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE — AWAITING 3 CRITICAL USER DECISIONS**
+
+### Summary
+
+Session 3010 completed standard orientation and re-verified all active blocks remain unresolved. **Pause directive is ACTIVE by user design** (since Session 2977). All autonomous project work appropriately deferred. All infrastructure remains production-ready. Idle state is correct.
+
+**All 4 active blocks remain unresolved** (verified via auto-check commands):
+- ✓ **cybersecurity-hardening**: VeraCrypt pre-boot restart required (manual action)
+- ✓ **mfg-farm**: Test print execution required (directory does not exist)
+- ✓ **systems-resilience**: Platform choice required (no containers running)
+- ✓ **open-repo**: Deployment timing clarification required (conflicting docs verified)
+
+### **🚨 3 CRITICAL DECISIONS REQUIRED TO RESUME**
+
+1. **systems-resilience** — **URGENT (June 9 deadline passed)**
+   - **Decision**: Nextcloud+Matrix or Discourse?
+   - **If Discourse**: Provide public IP/domain + SMTP credentials
+   - **If Nextcloud+Matrix**: Confirm acceptance of memory constraints (7.9GB total RAM available)
+   - **Orchestrator action**: Can deploy immediately once choice received (~20-30 minutes total setup)
+
+2. **stockbot** — **Tier-1 Bug Sprint**
+   - **Context**: Session 2980 codebase assessment complete with 4 critical bug findings
+   - **Decision**: Approve Option A (recommended) or alternative approach?
+   - **Critical bugs identified**:
+     - C-1: Walk-forward t-stat broken (10–15 lines to fix)
+     - C-2: OOS features computed 2× per fold (inference time doubled)
+     - C-3: Cash pool inflation risk (concurrent close events)
+   - **Orchestrator action**: Draft implementation specs immediately once decision received
+
+3. **resistance-research** — **Wave 1 Execution Timing**
+   - **Context**: All infrastructure ready (contact list ✅ verified, email templates ✅ ready, Gist ✅ HTTP 200)
+   - **Decision**: Execute TODAY (June 10) or defer to June 12?
+   - **Wave 1 scope**: CLC + Issue One (~90 min execution)
+   - **Orchestrator action**: Can execute within 2 hours of approval
+
+### **2 User-Executed Actions** (Blocking Their Respective Projects)
+
+- **mfg-farm**: Test print execution pending (0.20mm layer height, PLA+, 3 walls, 220–225°C)
+- **cybersecurity-hardening**: Windows machine restart + VeraCrypt pre-boot password entry
+
+---
+
 ## 🎯 Session 3009 (June 10 ~2026-06-10T17:00 UTC) — PAUSE DIRECTIVE CONFIRMED: All Blocks Verified, Idle State Maintained
 
 **Status**: ✅ **ORCHESTRATOR IDLE — RESPECTING PAUSE DIRECTIVE — AWAITING USER INPUT**
