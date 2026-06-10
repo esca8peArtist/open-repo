@@ -2,6 +2,26 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3095, June 10 2026-06-10T ~22:10 UTC)
+
+**What was accomplished**: Standard orientation + full block review completed. Pause directive remains active and correctly enforced through June 15 00:00 UTC (~4 days remaining). No user decisions provided since Session 3094. Block status unchanged — all 4 blocks remain unresolved and require user action only.
+
+**Orientation summary** (Session 3095):
+- ✅ ORCHESTRATOR_STATE.md: Confirms idle state, pause directive active
+- ✅ BLOCKED.md: 4 active blocks, all require user action only (no changes)
+  - cybersecurity-hardening: VeraCrypt restart pending (26 days, not urgent)
+  - mfg-farm: test print execution pending (28 days, not urgent)
+  - systems-resilience: platform choice + SMTP credentials — **OVERDUE 31+ hours** (deadline June 8 18:00 UTC passed; publication June 9 deferred indefinitely)
+  - open-repo: deployment time clarification — due June 12 09:00 UTC (~34 hours remaining)
+- ✅ INBOX.md: Empty (no new items to process)
+- ✅ No auto-verifiable blocks; all remain unresolved (manual/user-action only)
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT — No autonomous project work. Three critical user decisions pending (1 overdue, 2 urgent <35h). Awaiting June 15 autonomy resumption (~4 days).**
+
+**Session duration**: 3 minutes (orientation + block review)
+
+---
+
 ## Since Last Check-in (Session 3094, June 10 2026-06-10T ~21:00 UTC)
 
 **What was accomplished**: Standard orientation + full block review completed. Pause directive remains active and correctly enforced through June 15 00:00 UTC (~5 days remaining). No user decisions provided since Session 3093. Block status unchanged — all 4 blocks remain unresolved and require user action only.
