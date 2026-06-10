@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-10T23:23:50Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-10T23:55:59Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.5% (135,501 tokens) | All-models 26.7% | Reset in 121h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.0% (177,666 tokens) | All-models 27.6% | Reset in 120h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -61,9 +61,9 @@
 ### open-repo — Deployment start time conflict (user clarification required)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (156 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (159 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (155 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (161 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (164 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (160 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
