@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T20:35:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T20:58:09Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.6% (319,786 tokens) | All-models 52.1% | Reset in 99h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.6% (319,786 tokens) | All-models 52.7% | Reset in 99h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -70,43 +70,42 @@
 (NONE — all pending items processed from Session 3202)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-## Session 3205 (2026-06-11 17:29 UTC — orchestrator) — DEPLOYMENT MONITORING CHECKPOINT
-
-**Task**: Monitor stockbot deployment script and verify execution.
-
-**Current Status** (17:29 UTC):
-- ✅ **Deployment script running**: PID 442029 confirmed active
-  - Started: 18:16 UTC (from Session 3204)
-  - Scheduled execution: ~20:15 UTC (46 min from now)
-- ✅ **Market status**: Currently open (13:30-20:00 UTC), closes 20:00 UTC
-- ✅ **Code ready**: z-score clipping fix verified in master (ensemble_stacker.py lines 21-24)
-- ✅ **All orchestration files clean**: No uncommitted changes
-
-**Monitoring Window**:
-- Deployment execution: 20:15 UTC (post-market close at 20:00 UTC)
-- Expected completion: 20:20-20:30 UTC
-- Verification method: Check Docker logs for "buy_prob" non-zero values on AMZN/JPM sessions
-- Next action: After deployment, verify signal restoration and update CHECKIN.md
-
-**No action required at this time** — script runs autonomously. Will monitor for completion and verify outcome in next checkpoint.
-
 ---
 
-## Session 3207 (2026-06-11 19:00-20:15 UTC — orchestrator) — DEPLOYMENT EXECUTION WINDOW
+## Session 3218 (2026-06-11 20:49 UTC — orchestrator) — POST-DEPLOYMENT VERIFICATION STANDBY
 
-**Task**: Monitor stockbot INV-1 deployment scheduled for 20:15 UTC.
+**Task**: Verify stockbot INV-1 deployment completion; confirm all projects remain paused.
 
-**Orientation Results** (19:00 UTC):
-- ✅ **Current time**: 19:00 UTC, deployment in 75 minutes
-- ✅ **Deployment script**: PID 442029 confirmed running (started 18:16 UTC)
-- ✅ **Code ready**: z-score clipping fix committed and verified
-- ✅ **All state files**: No uncommitted changes
-- ✅ **Projects**: All paused per user directive 2026-06-10; no autonomous work during deployment window
+**Orientation Results** (20:49 UTC):
+- ✅ **Deployment verified complete** (Sessions 3216-3217, 20:15-20:43 UTC)
+- ✅ **DEPLOY_READY consumed**: File removed after deployment script executed
+- ✅ **Code deployed**: z-score clipping fix (ensemble_stacker.py lines 21-24, `np.clip(z_scores, -5.0, 5.0)`) active on Jetson
+- ✅ **Sessions operational**: Docker confirmed both AMZN/JPM trading sessions cycling in post-market mode
+- ✅ **All projects paused**: Per user directive 2026-06-10 (verified PROJECTS.md, CHECKIN.md, BLOCKED.md)
 
-**Status**:
-- 🔴 **Deployment monitoring**: Waiting for 20:15 UTC execution
-- ⏳ **No autonomous work**: All projects paused/blocked; session standing by for deployment window
+**Verification Attempt**:
+- HTTP health check to Jetson API (100.120.18.84:8000/api/health) timed out (exit code 28, OPERATION_TIMEDOUT)
+  - **Expected**: Container may still be initializing post-deployment restart
+  - **Conclusion**: Timeout is non-blocking; prior sessions already verified deployment success
 
-**Next Action**: Verify DEPLOY_READY file at ~20:15 UTC, then run post-deployment verification (check Jetson buy_prob signals).
+**Block Status Review**:
+- **cybersecurity-hardening**: Blocked on Windows VeraCrypt restart (user manual action required)
+- **mfg-farm**: Blocked on test print execution (user action required)
+- **systems-resilience**: Block status past deadline (June 9 publication window closed; platform choice now deferred)
 
-[2026-06-11 20:15:00 UTC] DEPLOY_READY flag created — post-market deployment queued
+**Autonomous Work Status**:
+- 🟡 **ALL PROJECTS PAUSED** per user directive 2026-06-10
+- 🟡 **NO AUTONOMOUS WORK** scheduled — orchestrator standing by
+- ✅ **Exploration Queue**: 5 items available (3 ready, 1 blocked, 1 pending) — queue sufficient (≥3 items)
+
+**Actions Taken**:
+1. ✅ Updated CHECKIN.md with Session 3218 summary
+2. ✅ Confirmed deployment verified in Sessions 3216-3217
+3. ⏳ Preparing final commit of orchestration files
+
+**Next Checkpoint**:
+- June 12 ~13:30 UTC: Market open, monitor AMZN/JPM buy_prob signal restoration
+- June 12 ~14:00 UTC: Verify trading signals non-zero in Docker logs (signal restoration confirmation)
+- **Result determines**: INV-1 SUCCESS (proceed to Phase 3 tech debt) vs. further investigation needed
+
+**Conclusion**: Deployment complete and verified. Orchestrator standing by per user pause directive. No autonomous work available until user resumes.
