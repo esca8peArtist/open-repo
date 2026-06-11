@@ -2,6 +2,30 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3202, June 11 2026 ~15:55 UTC — orchestrator sprint continuation)
+
+**Orchestrator Action**: Autonomous Sprint 3 continuation — completed H-5 (DB access pattern unification).
+
+**Sprint 3 Item 2 Complete**: **H-5: Unified DB Access Patterns**
+- **Problem Diagnosed**: WalkForwardEngine used raw `sqlite3.connect()` while ModelRegistry + other modules used SQLAlchemy ORM, creating two parallel DB access patterns with risk of divergent database files
+- **Solution Implemented**: 
+  1. **Phase 1 (Schema)**: Added `WalkForwardResults` ORM model + `WalkForwardStatus` enum to `src/database/schema.py`; updated `get_table_names()`
+  2. **Phase 2 (DatabaseManager)**: Added 6 CRUD methods to handle walk-forward results (create, query by ticker/model_type/date range, filter by gates passed)
+  3. **Phase 3 (WalkForwardEngine)**: Refactored `_persist_results()` from raw SQL INSERT to `db.create_walk_forward_results()` ORM call; added deprecation warning for `db_path` parameter
+  4. **Backward Compatibility**: `db_path` parameter still accepted (with warning) but unused; schema handles table creation via Base.metadata
+- **Code Changes**: 310 lines inserted/modified across 3 files (schema.py, db_manager.py, walk_forward_engine.py)
+- **Commit**: f44457a — `feat(stockbot): Sprint 3 Item 2 — H-5 unified DB access patterns`
+- **Status**: Code complete and committed; ready for integration tests (Phase 4)
+
+**Next Steps**:
+1. After market close (20:00 UTC): Deploy Sprint 3 Item 1 (buy_prob fix) to Jetson (user approval required)
+2. After Item 1 deployment verification: Begin Sprint 3 Item 3+ (M-1 through M-10 tech debt items)
+3. Phase 4 testing for H-5 can proceed in parallel with Item 1 deployment
+
+**Session duration**: ~30 minutes (PLAN phase from Agent, IMPLEMENT Phases 1-3, COMMIT)
+
+---
+
 ## Since Last Check-in (Session 3201, June 11 2026 ~16:40 UTC — orchestrator + stockbot-agent)
 
 **Orchestrator Action**: Pause directive cleared; INBOX processed; stockbot Sprint 3 Item 1 completed.

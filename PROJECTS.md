@@ -471,7 +471,10 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 **COMMIT-BEFORE-DEPLOY RULE**: Always `git commit` all changes in `projects/stockbot/src/`, `scripts/`, `config/`, `Dockerfile.jetson`, and `docker-compose.jetson.yml` before setting `DEPLOY_READY`. The deploy script hard-blocks on uncommitted changes to any of these files. Reason: uncommitted edits can be silently overwritten by future orchestrator sessions, then the next deploy nukes the Jetson fix. Commit = permanent; filesystem edit = temporary.
 
-**Current focus**: ✅ **SPRINT 3 ITEM 1 COMPLETE**: buy_prob flatlining fix deployed. Root cause: out-of-distribution z-score normalization in ensemble stacker breaking meta-learner when base models produce neutral (0.5) predictions on new market data. Fix: z-score clipping to [-5, 5] range; 32 tests passing. Ready for Jetson deployment. 🔄 **REMAINING SPRINT 3 ITEMS**: H-5 (DB access pattern unification), M-1-M-10 (tech debt). Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX per item.
+**Current focus**: ✅ **SPRINT 3 ITEMS 1-2 COMPLETE**: 
+  - **Item 1** (buy_prob flatlining fix): OOD z-score normalization issue resolved; z-score clipping to [-5, 5] range deployed. 32 tests passing. Ready for Jetson deployment.
+  - **Item 2** (H-5 DB access unification): Walk-forward results now use unified ORM via DatabaseManager instead of raw sqlite3. Schema (WalkForwardResults), DatabaseManager CRUD methods, and WalkForwardEngine refactor all complete. Backward compatible (db_path parameter deprecated). Commit: f44457a
+  🔄 **REMAINING SPRINT 3 ITEMS**: M-1-M-10 (tech debt). Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX per item.
 
 **Sprint 2 backlog** (ordered by priority per `docs/CODEBASE_REVIEW_COMPREHENSIVE.md`):
 - ✅ **C-1** (CRITICAL): `_aggregate_folds` pooled t-stat dead code — FIXED Session 2982. G3 gate now works on low-trade-count models. Commit: 00310f9
