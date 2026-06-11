@@ -2,6 +2,36 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3222, June 11 2026 22:40 UTC — ALL AUTONOMOUS WORK COMPLETE, AWAITING USER WAVE 1 ACTION)
+
+**Orchestrator Status**: ✅ **ALL AUTONOMOUS UNBLOCKED WORK COMPLETE**. M-7–M-10 tech debt finished (Session 3221). Wave 2 preparation complete. Awaiting user completion of Wave 1 email sends (CLC + Issue One).
+
+## Session 3222 (June 11 2026 22:40 UTC) — Post-Session-3221 Orientation & Commit
+
+**What Happened**:
+- ✅ **Orientation complete**: Verified M-7–M-10 complete, Wave 2 prep ready, no autonomous work remaining
+- ✅ **Project Status Confirmed**: No new blocks; all waiting on user action (Wave 1 emails, June 12 signal verification)
+- ✅ **Exploration Queue Status**: 5 items available, scheduled for June 14+ (post-Wave-2 execution)
+
+**Current Status**:
+- 🟢 **Stockbot M-7–M-10**: COMPLETE (committed 93c94ca)
+- 🟢 **Resistance-Research Wave 2**: PREP COMPLETE, execution checklist ready
+- 🟡 **Resistance-Research Wave 1**: OVERDUE, awaiting user email sends (60-75 min, recoverable until July 1)
+- ⏳ **June 12 Signal Verification**: Checkpoint ready for market open
+
+**Items Needing User Input**:
+1. **Wave 1 Email Sends** — Send to CLC (echlopak@campaignlegalcenter.org) + Issue One (info@issueone.org). Template in `domain-51-send-templates.md`, log to `DISTRIBUTION_EXECUTION_LOG.md`. Window: Today (June 11) is 20 days before hard deadline; slip recoverable.
+2. **Wave 2 Execution** (June 12, 09:00–12:00 UTC) — Follow checklist in `DOMAIN_51_WAVE_2_EXECUTION_CHECKLIST.md` (3 email sends, 90-min stagger)
+3. **Signal Verification** (June 12, 13:30 UTC) — Monitor AMZN/JPM buy_prob at market open (should restore to non-zero)
+
+**Suggested Next Actions**:
+1. Complete Wave 1 email sends today (60-75 min)
+2. Execute Wave 2 tomorrow morning (09:00–12:00 UTC)
+3. Monitor stockbot signal restoration at June 12 market open (13:30 UTC)
+4. Day 7 checkpoint June 17-18 (inbox review, Gist tracking, Tier 2 activation decision)
+
+---
+
 ## Since Last Check-in (Session 3221, June 11 2026 22:20 UTC — M-7–M-10 TECH DEBT COMPLETE, WAVE 2 PREP READY)
 
 **Orchestrator Status**: ✅ **PHASE 3 TECH DEBT COMPLETE (M-7–M-10)** — All four stockbot tech debt items implemented, tested, and committed (commit 93c94ca). **Resistance-Research Wave 2 execution-ready** — All Wave 2 contacts re-verified current, execution checklist created for June 12 user action.
