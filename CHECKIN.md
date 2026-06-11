@@ -41,19 +41,56 @@
 - **Tests**: 3 new tests confirming logger identity, stdlib import removed, loguru interface present (all pass)
 - **Commit**: `ed3586b` in stockbot submodule
 
-**Session 2983 Summary (Updated)**:
-- ✅ **9 of 11 Sprint 2 items complete** (82% done): C-1, C-3, C-4, C-2, H-6, H-3, H-2, H-1, H-7
+**M-5 — sqlite3 Connection Leak in `_load_base_models()`** ✅:
+- **Issue**: Manual sqlite3 close() pattern skipped closure on exception; connections leak
+- **Fix**: Replaced with context manager `with sqlite3.connect() as conn:` to guarantee closure
+- **Impact**: Connection always closes on all exit paths (normal, exception, early return)
+- **Tests**: 4 new tests covering normal exit, missing DB, missing rows, structural guards (all pass)
+
+**M-6 — Stacker Registry Missing Key Validation** ✅:
+- **Issue**: Registry payload accessed with no validation; missing keys cause raw KeyError
+- **Fix**: Added `_validate_stacker_payload()` function validating all 11 required keys; raises informative ValueError if any missing
+- **Impact**: Missing keys caught early with clear error message listing which keys are absent
+- **Tests**: 7 new tests covering valid payload, single/multiple missing keys, empty payload, informative messages (all pass)
+
+**Session 2983 Final Summary**:
+- ✅ **11 of 11 Sprint 2 items complete** (100% DONE): C-1, C-3, C-4, C-2, H-6, H-3, H-2, H-1, H-7, M-5, M-6
 - ✅ **All 4 CRITICAL items done**: G3 gate fix, cash pool capped, signal validation, 50% inference speedup
 - ✅ **All 5 HIGH items done**: Registry path fix, ValueError explicit, horizon-aware exits, regime code single source, logging standardized
-- **Remaining**: M-5, M-6 (MEDIUM) — only 2 items left, can finish in next session
+- ✅ **All 2 MEDIUM items done**: Resource leak fixed, validation explicit
 
 **Overall Impact**:
-- **Safety**: All 4 CRITICAL fixes ensure models can't silently fail or overleverge
+- **Safety**: All 4 CRITICAL fixes ensure models can't silently fail or overleverge; resource leaks fixed
 - **Performance**: 50% inference time reduction (C-2)
 - **Correctness**: Models exit at proper trained horizons (H-2); no more horizon mismatches
 - **Code Quality**: Duplicate code eliminated (H-1); logging standardized (H-7)
 - **Reliability**: All paths explicit; bugs surface immediately; single sources of truth maintained
-- **Maintainability**: Feature logic only defined once; logging configured centrally
+- **Maintainability**: Feature logic only defined once; logging configured centrally; validation explicit
+
+---
+
+## Needs Your Input
+
+**None at this moment** — all immediate work is complete. Pause directive remains ACTIVE for non-stockbot projects until June 15 00:00 UTC.
+
+**Critical external deadlines** (user decisions required by tomorrow):
+- **open-repo**: Deployment timing decision due June 12 09:00 UTC (~9 hours). Choose: 09:00 UTC (business hours) or 20:00 UTC (off-hours). Update BLOCKED.md or reply here.
+- **systems-resilience**: Platform choice decision (Nextcloud+Matrix or Discourse) pending 82+ hours. Public IP/domain + SMTP credentials needed.
+
+**When pause lifts (June 15 00:00 UTC)**:
+- resistance-research Wave 2 activation (user action ready)
+- cybersecurity-hardening Phase 1 completion (VeraCrypt restart pending)
+- mfg-farm Phase 1 execution (test print pending)
+- Other projects resume normal work
+
+---
+
+## Suggested Next Steps
+
+1. **Sprint 2 is complete** — all 11 items delivered with full test coverage
+2. **Verify stockbot deployment readiness** — Sprint 2 focused on code quality; next phase (if any) might focus on integration testing or deployment preparation
+3. **Resolve critical external deadlines** — open-repo and systems-resilience need user decisions tomorrow morning
+4. **Prepare for June 15 pause lift** — other projects will resume; stockbot pause lift was temporary (Session 2981 decision)
 
 ---
 

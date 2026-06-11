@@ -472,7 +472,7 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 **COMMIT-BEFORE-DEPLOY RULE**: Always `git commit` all changes in `projects/stockbot/src/`, `scripts/`, `config/`, `Dockerfile.jetson`, and `docker-compose.jetson.yml` before setting `DEPLOY_READY`. The deploy script hard-blocks on uncommitted changes to any of these files. Reason: uncommitted edits can be silently overwritten by future orchestrator sessions, then the next deploy nukes the Jetson fix. Commit = permanent; filesystem edit = temporary.
 
-**Current focus**: 🔄 **DEV AGENT LOOP ACTIVE — SPRINT 2 (2026-06-11) — 9/11 ITEMS COMPLETE (82%)** — User lifted pause for stockbot. Agent Loop Workflow v2.0 (SPEC→PLAN→IMPLEMENT→REVIEW→FIX) is the mandatory framework. **ALL CRITICAL & HIGH PRIORITY ITEMS DONE**. Progress: C-1, C-3, C-4, C-2 (CRITICAL), H-6, H-3, H-2, H-1, H-7 (HIGH) complete. Remaining: M-5, M-6 (MEDIUM). **Major wins**: 50% inference time reduction (C-2), models exit at trained horizons (H-2), all 4 critical safety fixes (C-1, C-3, C-4, H-6), duplicate code eliminated (H-1), logging standardized (H-7), errors explicit (H-3).
+**Current focus**: ✅ **SPRINT 2 COMPLETE — 11/11 ITEMS DONE (100%)** — User lifted pause for stockbot (Session 2981). Agent Loop Workflow v2.0 (SPEC→PLAN→IMPLEMENT→REVIEW→FIX) executed for all items. **All work done**: C-1, C-3, C-4, C-2 (CRITICAL), H-6, H-3, H-2, H-1, H-7 (HIGH), M-5, M-6 (MEDIUM). **Major impact**: 50% inference time reduction (C-2); models exit at trained horizons (H-2); all 4 critical safety fixes deployed (C-1, C-3, C-4, H-6); duplicate code eliminated (H-1); logging standardized (H-7); errors explicit (H-3); resource leaks fixed (M-5); validation explicit (M-6). **Next**: Sprint 3 items TBD; pause directive remains ACTIVE for other projects until June 15 00:00 UTC.
 
 **Sprint 2 backlog** (ordered by priority per `docs/CODEBASE_REVIEW_COMPREHENSIVE.md`):
 - ✅ **C-1** (CRITICAL): `_aggregate_folds` pooled t-stat dead code — FIXED Session 2982. G3 gate now works on low-trade-count models. Commit: 00310f9
@@ -484,8 +484,8 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 - ✅ **H-2** (HIGH): Hardcoded `_TIME_STOP_BARS=10` ignores model horizon metadata — FIXED Session 2983. Reads `h` from model metadata at session startup. Commit: cbb6da8
 - ✅ **H-1** (HIGH): Duplicate regime detection code in two functions — FIXED Session 2983. `_detect_regimes` now wraps `_classify_regime_labels` as single source of truth. Commit: 4fa7af4
 - ✅ **H-7** (HIGH): Feature pipeline uses `logging.getLogger` instead of project `get_logger()` — FIXED Session 2983. Standardized to use get_logger() in feature_pipeline.py. Commit: ed3586b
-- ⏳ **M-5** (MEDIUM): `_load_base_models` sqlite3 connection leaks on exception. Fix: `with sqlite3.connect(...) as conn`. (`walk_forward_engine.py:113-166`)
-- ⏳ **M-6** (MEDIUM): Stacker registry missing key validation — silent KeyError on malformed registry. Fix: validate required keys after load.
+- ✅ **M-5** (MEDIUM): `_load_base_models` sqlite3 connection leaks on exception — FIXED Session 2983. Replaced manual close() with context manager. Connection guaranteed closed on all paths.
+- ✅ **M-6** (MEDIUM): Stacker registry missing key validation — FIXED Session 2983. Added validation function; missing keys raise informative ValueError instead of raw KeyError.
 
 **Completed (Phase 1)**: Security fail-closed (auth/CORS/JWT), Kelly sizer zero-loss bug, transaction cost model in backtests, Pi/Jetson boundary cleanup, Kelly sizer unit tests (36 tests), DSR `num_trials=1` → investigated, closed as design choice.
 
