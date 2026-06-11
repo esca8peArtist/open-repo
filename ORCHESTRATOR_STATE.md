@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T02:05:45Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T03:50:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.3% (204,084 tokens) | All-models 29.6% | Reset in 118h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.3% (204,084 tokens) | All-models 31.6% | Reset in 116h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -58,17 +58,18 @@
 **Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
 **Resolution**: [leave blank]
 ---
-### open-repo — Deployment start time conflict (user clarification required)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (15 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (18 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (30 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (33 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 2981 (21 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (29 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
+• open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
 • stockbot — Phase 3 Infrastructure Blockers (Container Restart Policy + Alpaca DNS) ← 2026-06-06 17:45 UTC (Session 2953 continuation — autonomous infrastructure fixes)
 • stockbot — June 5 market execution failure: 0 trades executed (root cause identified + fix deployed, awaiting verification) ← 2026-06-06 13:33 UTC (Session 2948 — continuous 20-minute verification monitoring, zero credential errors detected)
-• stockbot — CRITICAL: Trading sessions NOT EXECUTING (WebSocket error blocking startup) ← 2026-06-04 05:32 UTC (Session 2745 — orchestrator autonomous fix)
 
 ## Inbox (unprocessed)
 (NONE — all pending items processed from Session 2979)
