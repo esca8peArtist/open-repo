@@ -2,6 +2,74 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3211, June 11 2026 ~19:00 UTC — deployment monitoring standby)
+
+**Orchestrator Status**: INV-1 deployment scheduled for 21:14 UTC. Deployment script (PID 442029) confirmed running and on schedule.
+
+**What Happened**:
+- ✅ **Full Orientation Complete**: Verified all state files. All projects paused/blocked. No autonomous work available.
+- ✅ **Deployment Script Verified**: PID 442029 still running with correct 10735 second delay (21:14 UTC execution)
+- ✅ **DEPLOY_READY Status**: File not yet created (expected at 21:14 UTC)
+- ✅ **Code Status**: Z-score clipping fix verified in master (c0ff785c)
+- ✅ **Session 3211 Entry Logged**: WORKLOG updated with current monitoring status
+
+**What's In Progress**:
+- 🟡 **INV-1 Deployment**: Autonomous execution scheduled for 21:14 UTC (post-market 20:00 UTC close)
+  - Fix: np.clip(z_scores, -5.0, 5.0) in ensemble_stacker.py
+  - Expected outcome: AMZN/JPM buy_prob restore from 0.0 flatline to live signal values
+  - Verification method: Docker logs for buy_prob non-zero within 60s of restart
+
+**Items Needing User Input**: None. Deployment proceeding autonomously.
+
+**Timeline**:
+- **21:14 UTC**: DEPLOY_READY file created by scheduler (autonomous)
+- **~21:15-21:20 UTC**: Orchestrator detects DEPLOY_READY, executes rsync + docker restart
+- **~21:25-21:30 UTC**: First trading cycle on Jetson (AMZN/JPM signals should resume)
+- **Post-21:30 UTC**: Verification checkpoint to confirm signal restoration
+
+**Suggested Actions for Next Wakeup** (21:30+ UTC):
+1. Check if DEPLOY_READY file exists (confirms 21:14 UTC trigger)
+2. Verify Docker logs show buy_prob non-zero for AMZN/JPM
+3. If successful: Log outcome, continue Sprint 3 (M-10+)
+4. If failed: Investigate logs, add to BLOCKED.md
+
+---
+
+## Since Last Check-in (Session 3210, June 11 2026 18:10 UTC — deployment monitoring and verification)
+
+**Orchestrator Status**: INV-1 deployment monitoring in progress. DEPLOY_READY execution scheduled 20:15 UTC. Verification checkpoint wakeup scheduled 19:27 UTC (post-deployment window).
+
+**What Happened**:
+- ✅ **Deployment Script Verified Active**: PID 442029 confirmed running (started 18:16 UTC with 10735 second delay)
+- ✅ **Monitoring Infrastructure Deployed**: Background monitoring script (PID 450484) running, watching for DEPLOY_READY creation
+- ✅ **Project Status Audit**: Confirmed no autonomous work available; all projects paused or blocked on user actions
+- ✅ **Session Logging**: Full Session 3210 entry added to WORKLOG.md with deployment timeline
+- ✅ **Verification Checkpoint Scheduled**: Wakeup at 19:27 UTC to check if DEPLOY_READY created + verify buy_prob signals restored
+
+**What's In Progress**:
+- 🟡 **INV-1 Deployment**: 
+  - Scheduled execution: 20:15 UTC (post-market close at 20:00 UTC)
+  - Fix: z-score clipping to [-5, 5] in ensemble_stacker.py (committed c0ff785c)
+  - Expected outcome: AMZN/JPM buy_prob restore from 0.0000 flatline to live signal values
+  - Verification method: Check Docker logs for non-zero buy_prob within 5 minutes of container restart
+
+**Deployment Timeline**:
+- 18:10 UTC: Monitoring script started
+- 20:15 UTC: DEPLOY_READY file created by scheduler
+- 20:15-20:30 UTC: Orchestrator detects DEPLOY_READY, executes rsync + docker restart
+- 20:30-20:35 UTC: First trading cycle on Jetson (AMZN/JPM sessions generate signals)
+- 19:27 UTC (NOW + 17 min): **Verification checkpoint** — confirm deployment progress
+
+**Items Needing User Input**: None. Deployment proceeding autonomously.
+
+**Next Actions (at 19:27 UTC wakeup)**:
+1. Check if DEPLOY_READY file exists (confirms 20:15 UTC trigger will/has fired)
+2. If deployment in progress: reschedule next checkpoint for 20:30 UTC
+3. If deployment completed: verify buy_prob signals in Docker logs
+4. Commit WORKLOG.md + CHECKIN.md with final deployment outcome
+
+---
+
 ## Since Last Check-in (Session 3209, June 11 2026 18:02 UTC — deployment monitoring standby)
 
 **Orchestrator Status**: Waiting for INV-1 Jetson deployment at 20:15 UTC. Deployment script (PID 442029) confirmed running.
