@@ -2,6 +2,29 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 2982, June 11 2026 ~00:10 UTC)
+
+**Orchestrator Action**: Initiated stockbot Sprint 2 work immediately after pause lift (Session 2981 00:07 UTC). Spawned stockbot agent for C-1 fix.
+
+**✅ SPRINT 2 C-1 COMPLETE — G3 GATE T-STAT FIX DEPLOYED**:
+- **Fix**: Populated `all_oos_trade_pnls` in fold loop; replaced dead-code stub in `_aggregate_folds()`
+- **Impact**: G3 gate (t-stat > 2.0) now correctly computes pooled t-stat instead of returning 0.0
+- **Tests**: 4 new tests written, 768 existing tests passing, no regressions
+- **Commit**: `00310f9` in stockbot submodule
+
+**Next Sprint 2 Item**: C-3 (cash pool upward-only correction) — ready after this commit merges to main
+
+**🚨 CRITICAL DEADLINE REMINDER**:
+- **open-repo deployment timing MUST be decided by June 12 09:00 UTC** (~9 hours remaining)
+- **Decision**: Is deployment start **09:00 UTC** (business hours) or **20:00 UTC** (after-hours)?
+- See BLOCKED.md "open-repo" block for details and SLA implications
+
+**Block Status**: All 4 blocks unchanged (mfg-farm, systems-resilience, open-repo, cybersecurity-hardening)
+
+**Status**: ✅ Stockbot pause successfully lifted. Sprint 2 C-1 complete. Awaiting user decision on open-repo timing for June 12 deployment.
+
+---
+
 ## Since Last Check-in (Session 3135, June 11 2026 ~23:50 UTC)
 
 **Orchestrator Action**: Standard orientation completed. Pause directive ACTIVE through June 15 00:00 UTC (~3d 2h remaining). All 4 blocks re-verified unresolved.
