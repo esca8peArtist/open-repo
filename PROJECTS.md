@@ -41,10 +41,10 @@ When a project's **Current focus** references `SPRINT.md`:
 2. Pick the FIRST unchecked `- [ ]` item and work on it — do NOT wait for direction
 3. Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX for every item
 4. Check off the item, commit, and continue to the next item in the same session if budget allows
-5. When blocked: add to `BLOCKED.md` AND append `- [ ] [project] <title> — <what you need>` to `NOTIFY_QUEUE.md`
+5. When blocked — including waiting for **deployment approval**, a **user decision**, or **physical verification** — add to `BLOCKED.md` AND append `- [ ] [project] <title> — <what you need>` to `NOTIFY_QUEUE.md`. Writing it only in WORKLOG.md or CHECKIN.md is NOT sufficient; the user will not see it.
 6. When sprint complete: append `- [ ] [project] Sprint complete — all items done. Ready for next sprint.` to `NOTIFY_QUEUE.md`
 
-The loop ends only when: (a) all items are checked, (b) a block requires user input, or (c) usage budget is exhausted for the session.
+The loop ends only when: (a) all items are checked, (b) a genuine block is added to BLOCKED.md, or (c) usage budget is exhausted for the session.
 
 ---
 

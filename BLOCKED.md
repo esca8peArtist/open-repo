@@ -28,6 +28,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 ## Active Blocks
 
 
+### stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required)
+**Date blocked**: 2026-06-11
+**Context**: Sprint 3 Item INV-1 (buy_prob flatline root cause fix) is complete and tested locally. Root cause was z-scores going out-of-distribution on AMZN/JPM features. Fix: z-score clipping to [-5, 5] range. 32 tests passing, committed to master (commit c0ff785c). Deployment to Jetson is held pending user approval per DEPLOY BLACKOUT RULE (no deploys during market hours 13:30–20:00 UTC). Deploy window opens 20:00 UTC tonight.
+**What I need**: Approve Jetson deployment of the buy_prob z-score fix. Reply `!resolve stockbot deploy approved` and the orchestrator will push to Jetson at next post-market window (after 20:00 UTC today).
+**Verify with**: `ssh xxsb-01 "docker logs stockbot --tail 20 2>&1 | grep buy_prob"` — should show non-zero buy_prob values after deploy
+**Resolution**: [leave blank]
+
+---
+
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.

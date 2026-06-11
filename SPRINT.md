@@ -6,14 +6,18 @@
 > When an item is complete, check it off, commit, and start the next one in the same session
 > if usage budget permits. Only stop if you hit a genuine block requiring user input.
 >
-> When blocked: (1) add entry to BLOCKED.md, (2) append `- [ ] [stockbot] <block title> — <what you need>` to NOTIFY_QUEUE.md pending section.
+> **BLOCKED means**: anything where you cannot proceed without user action — including deployment approval,
+> a decision between two implementation approaches, or a test result you need the user to verify physically.
+> "Waiting for approval" is a block. "Needs user decision" is a block. Mentioning it only in WORKLOG is NOT enough.
+>
+> When blocked: (1) add entry to BLOCKED.md with What I need + Verify with fields, (2) append `- [ ] [stockbot] <title> — <what you need>` to NOTIFY_QUEUE.md pending section. Do NOT continue to next sprint item until the block is resolved.
 > When sprint complete: append `- [ ] [stockbot] Sprint 3 complete — all 21 items done. Ready for Sprint 4 direction.` to NOTIFY_QUEUE.md.
 
 ---
 
 ## Phase 0 — Investigation (Do First)
 
-- [ ] **INV-1**: Investigate buy_prob flatline. Both AMZN and JPM sessions have returned `buy_prob=0.0000, action=HOLD` for every cycle since June 1 (10+ days, 0 trades). Determine root cause: is this a model issue (models never trained to produce buy signals on current data), a feature issue (features not correctly computed post-Sprint-2 fixes), a threshold issue, or a data issue? Query the database, inspect session logs, run a manual prediction. Produce a 1-page diagnosis with root cause and fix recommendation.
+- [x] **INV-1**: Investigate buy_prob flatline. Both AMZN and JPM sessions have returned `buy_prob=0.0000, action=HOLD` for every cycle since June 1 (10+ days, 0 trades). Determine root cause: is this a model issue (models never trained to produce buy signals on current data), a feature issue (features not correctly computed post-Sprint-2 fixes), a threshold issue, or a data issue? Query the database, inspect session logs, run a manual prediction. Produce a 1-page diagnosis with root cause and fix recommendation.
 
 - [ ] **INV-2**: Build backtesting pipeline with real Alpaca data (strategic reset top priority). Implement per `docs/COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md`. Goal: be able to run a backtest on AMZN/JPM and see whether the models _should_ be generating buy signals given the last 60 days of price data. This is the diagnostic tool needed to evaluate all future model changes.
 
@@ -23,7 +27,7 @@
 
 - [ ] **H-4**: `EnsembleStackerAdapter._build_features` calls `PipelineIntegrator` with `provider=None`, disabling cross-asset features in all backtests. Fix: pass the real provider. Verify that multi-ticker correlation features are now included in backtest feature sets.
 
-- [ ] **H-5**: `WalkForwardEngine` bypasses `ModelRegistry` with raw `sqlite3`, creating two separate views of model state that can drift. Fix: route all model registry reads through `ModelRegistry`. Verify no direct sqlite3 calls remain in walk_forward_engine.py.
+- [x] **H-5**: `WalkForwardEngine` bypasses `ModelRegistry` with raw `sqlite3`, creating two separate views of model state that can drift. Fix: route all model registry reads through `ModelRegistry`. Verify no direct sqlite3 calls remain in walk_forward_engine.py.
 
 ---
 

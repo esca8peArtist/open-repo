@@ -16,6 +16,8 @@
 
 ## Pending
 
+- [x] [stockbot] Sprint 3 INV-1 fix ready to deploy — z-score clipping fix for buy_prob flatline, 32 tests passing. Needs your approval: `!resolve stockbot deploy approved` to push to Jetson after 20:00 UTC tonight.
+
 - [x] [stockbot] Pause cleared and Sprint 3 started — orchestrator resuming autonomous dev loop. First task: buy_prob flatline investigation + backtesting pipeline. Will notify when blocked or sprint complete.
 
 ---
