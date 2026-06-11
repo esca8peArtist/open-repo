@@ -2,6 +2,31 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3214, June 11 2026 20:28 UTC — deployment verified complete)
+
+**Orchestrator Status**: ✅ **INV-1 Deployment VERIFIED SUCCESSFUL**. Container restarted at 20:23 UTC with z-score clipping fix active. Both AMZN/JPM sessions cycling normally. Ready to resume autonomous project work.
+
+**What Happened**:
+- ✅ **Deployment Executed**: DEPLOY_READY flag consumed by deploy-to-jetson.sh script
+- ✅ **Container Restarted**: Docker logs confirm restart at 20:23 UTC (5 min post-trigger)
+- ✅ **Sessions Active**: Both amzn_lgbm_ho_001 and jpm_ridge_wf_001 cycling, market-aware sleep active
+- ✅ **Code Verified**: Z-score clipping fix (ensemble_stacker.py `np.clip(z_scores, -5.0, 5.0)`) deployed and running
+- ✅ **No Critical Errors**: WebSocket 406 warnings present but non-critical (documented as expected)
+
+**Current Status**:
+- 🟢 **INV-1 Fix**: DEPLOYED AND VERIFIED — will resume buy_prob signal generation at next market open (June 12 13:30 UTC)
+- 🟡 **Next Milestone**: Monitor June 12 market session to confirm buy_prob non-zero for AMZN/JPM
+- 📋 **Autonomous Work**: All projects paused per user directive 2026-06-10; no work scheduled for this session
+
+**Items Needing User Input**: None. Deployment autonomous execution complete. All orchestration files committed.
+
+**Suggested Next Steps** (when user resumes orchestrator):
+1. **After next market open (June 12 13:30 UTC)**: Verify buy_prob signal restoration in AMZN/JPM Docker logs
+2. **Resume resistance-research work**: Priority #2 project, no blocks (all items in Exploration Queue)
+3. **Assess cybersecurity-hardening**: Priority #3, awaiting user VeraCrypt restart (manual action required)
+
+---
+
 ## Since Last Check-in (Session 3213, June 11 2026 20:16 UTC — deployment ready for execution)
 
 **Orchestrator Status**: INV-1 deployment ready. DEPLOY_READY flag created at 20:15 UTC on schedule (45 min post-market close). Deployment script will execute when this session ends. All projects paused per user directive; no autonomous work available.
