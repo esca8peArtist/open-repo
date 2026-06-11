@@ -31,16 +31,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-
-### stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required)
-**Date blocked**: 2026-06-11
-**Context**: Both AMZN and JPM sessions have returned buy_prob=0.0000 and action=HOLD on every cycle since June 1 (10+ days, 0 trades). Root cause identified: after the Sprint 2 feature pipeline fixes, z-scores on live inference features are going out-of-distribution — values like 15, 40, even 100+ standard deviations from training distribution. The model's sigmoid output saturates at 0.0 when feature inputs are that extreme, so it never produces a buy signal regardless of market conditions. Fix: clamp all z-scores to [-5, 5] before model inference. This is a standard ML practice (similar to how most production systems cap input features) and matches how the training data was preprocessed. 32 tests passing, committed to master (commit c0ff785c). Risk: low — clamping prevents extreme inputs but doesn't change model weights or training. Downside scenario: if current market conditions are genuinely extreme outliers, some signal fidelity is lost, but buy_prob=0.0000 forever is worse. Upside: models should start generating signals again within the first trading cycle after deploy.
-**What I need**: Approve or reject Jetson deployment. To approve: `!resolve stockbot deploy approved` — orchestrator will rsync the fix and restart the container after 20:00 UTC. To reject: `!resolve stockbot deploy rejected — <reason>` and describe what you want changed instead.
-**Verify with**: `ssh xxsb-01 "docker logs stockbot --since 5m 2>&1 | grep buy_prob"` — should show non-zero values (e.g. buy_prob=0.23) within one trading cycle (~60s) after deploy
-**Resolution**: [leave blank]
-
----
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -77,6 +67,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required)
+**Date blocked**: 2026-06-11
+**Date resolved**: 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
+**Context**: Both AMZN and JPM sessions have returned buy_prob=0.0000 and action=HOLD on every cycle since June 1 (10+ days, 0 trades). Root cause identified: after the Sprint 2 feature pipeline fixes, z-scores on live inference features are going out-of-distribution — values like 15, 40, even 100+ standard deviations from training distribution. The model's sigmoid output saturates at 0.0 when feature inputs are that extreme, so it never produces a buy signal regardless of market conditions. Fix: clamp all z-scores to [-5, 5] before model inference. This is a standard ML practice (similar to how most production systems cap input features) and matches how the training data was preprocessed. 32 tests passing, committed to master (commit c0ff785c). Risk: low — clamping prevents extreme inputs but doesn't change model weights or training. Downside scenario: if current market conditions are genuinely extreme outliers, some signal fidelity is lost, but buy_prob=0.0000 forever is worse. Upside: models should start generating signals again within the first trading cycle after deploy.
+**Resolution**: ✅ **APPROVED** (Session 3202, 2026-06-11 17:02 UTC) — User approved Jetson deployment via INBOX item. Deployment scheduled for 20:15 UTC (post-market window) via orchestrator. Action: Will execute rsync + docker restart sequence to activate z-score clipping fix on Jetson stockbot container.
+
+---
 
 ### open-repo — Deployment start time conflict (user clarification required)
 **Date blocked**: 2026-06-06

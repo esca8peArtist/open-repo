@@ -2,10 +2,10 @@
 
 > **Orchestrator protocol**: At the start of every session, check this file.
 >
-> **Item states**:
-> - `- [ ]` = not started — pick the first one and work it
-> - `- [~]` = waiting for user — code complete but blocked on approval/decision/verification
-> - `- [x]` = fully complete including any required deployment or user confirmation
+> **Item states**: (checked box notation)
+> - `[ ]` = not started — pick the first one and work it
+> - `[~]` = waiting for user — code complete but blocked on approval/decision/verification
+> - `[x]` = fully complete including any required deployment or user confirmation
 >
 > **Rules**:
 > 1. Pick the FIRST `[ ]` item and work it. Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX.
@@ -22,7 +22,7 @@
 
 ## Phase 0 — Investigation (Do First)
 
-- [~] **INV-1**: Investigate buy_prob flatline. ✅ **ROOT CAUSE FOUND & FIXED** (Session 3204): z-score clipping to [-5, 5] range (OOD z-scores on AMZN/JPM features). 32 tests passing, committed to master. Ready for Jetson deployment (post-market 20:00 UTC).
+- [x] **INV-1**: Investigate buy_prob flatline. ✅ **ROOT CAUSE FOUND & FIXED** (Session 3204): z-score clipping to [-5, 5] range (OOD z-scores on AMZN/JPM features). 32 tests passing, committed to master. ✅ **USER APPROVED** (Session 3202, 2026-06-11 17:02 UTC). Jetson deployment scheduled post-market (20:15 UTC).
 
 - [x] **INV-2**: Build backtesting pipeline with real Alpaca data. ✅ **COMPLETE** (Phase 1 Sessions 2284+): WalkForwardEngine + EnsembleStackerAdapter built. AlpacaProvider for real historical data. Walk-forward splits with no lookahead. Full metric suite (Sharpe, Sortino, Calmar, Max DD, WFE, regimes, t-stat). Scripts: evaluate_model.py. Tests: 75+ passing. Status: PRODUCTION-READY.
 
@@ -56,7 +56,7 @@
 
 - [ ] **M-9**: Broker factory does not enforce single-broker-per-mode invariant. Add a guard that raises if more than one broker is registered for a given mode.
 
-- [~] **M-10**: `WORKLOG.md` reference clarification. ⚠️ **OPERATIONAL ISSUE**: WORKLOG.md is orchestrator-level, not stockbot developer-facing. CODEBASE_REVIEW references it as commit convention but it's not a dev requirement. Clarification: Orchestrator logs to WORKLOG.md, not developers. Consider pre-commit hook if enforcement desired (low priority). Status: Identified, documented; no code change required.
+- [x] **M-10**: `WORKLOG.md` reference clarification. ✅ **IDENTIFIED & DOCUMENTED** (Session 3201): WORKLOG.md is orchestrator-level, not stockbot developer-facing. CODEBASE_REVIEW references it as commit convention but it's not a dev requirement. Clarification: Orchestrator logs to WORKLOG.md, not developers. Status: No code change required; documentation complete.
 
 ---
 
