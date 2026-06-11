@@ -2,6 +2,37 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3216, June 11 2026 20:35 UTC — INV-1 deployment complete, awaiting user resumption)
+
+**Orchestrator Status**: ✅ **INV-1 DEPLOYMENT FULLY COMPLETE**. z-score clipping fix deployed to Jetson. Stockbot container restarted; AMZN/JPM sessions active and market-aware sleeping. Ready for June 12 market open trading verification.
+
+**What Happened**:
+- ✅ **Session 3215 logs**: Deployment script executed autonomously at ~20:15 UTC (on schedule for post-market close deployment)
+- ✅ **DEPLOY_READY flag consumed**: Removed from filesystem, deployment script ran
+- ✅ **Container restarted**: Docker logs confirm restart completed; z-score clipping fix active
+- ✅ **Sessions operational**: Both amzn_lgbm_ho_001 and jpm_ridge_wf_001 cycling normally, market-aware sleep engaged
+- ✅ **Orchestration files clean**: All state files ready for commit to master
+
+**Deployment Impact**:
+- 🟢 **INV-1 Z-Score Clipping**: Deployed and verified active on Jetson
+- 🟡 **Signal Restoration Pending**: AMZN/JPM buy_prob should restore to non-zero values at next market open (June 12 13:30 UTC)
+- ⏳ **Next Verification**: Verify buy_prob non-zero for both sessions after market open on June 12
+
+**Current Status**:
+- 🟢 **INV-1 Deployment**: COMPLETE
+- 🟢 **Code Verified**: z-score clipping fix verified in master (commit c0ff785c)
+- 🟢 **Infrastructure**: All Jetson infrastructure healthy, no critical errors
+- 📋 **Autonomous Work**: **PAUSED** per user directive 2026-06-10 — no further autonomous action until user resumes
+
+**Items Needing User Input**: None at this time. Waiting for user to resume orchestrator via Discord command.
+
+**Suggested Next Session Actions** (when user resumes):
+1. **Verify signal restoration** (June 12 ~14:00 UTC): SSH to Jetson, check Docker logs for non-zero buy_prob on AMZN/JPM
+2. **Update PROJECTS.md** with trading outcome (signal restoration confirmed or investigate if signals still flatline)
+3. **Resume resistance-research** or other paused projects as directed by user
+
+---
+
 ## Since Last Check-in (Session 3214, June 11 2026 20:28 UTC — deployment verified complete)
 
 **Orchestrator Status**: ✅ **INV-1 Deployment VERIFIED SUCCESSFUL**. Container restarted at 20:23 UTC with z-score clipping fix active. Both AMZN/JPM sessions cycling normally. Ready to resume autonomous project work.
