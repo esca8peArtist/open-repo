@@ -2,6 +2,42 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3207, June 11 2026 17:43-17:50 UTC — pre-deployment sprint planning)
+
+**Orchestrator Status**: Deployment on track. Post-market execution imminent at 20:15 UTC. Sprint 3 M-7 and M-9 planned for post-deployment execution.
+
+**What Happened**:
+- ✅ **SPRINT.md Reviewed**: All Phase 0 (INV-1, INV-2) and Phase 1 (H-4, H-5) items complete. Phase 2: M-1 through M-6, M-8, M-10 complete; **M-7 and M-9 unchecked** and ready for execution.
+- ✅ **Code Analysis Complete**: 
+  - M-7 (FeatureStore lazy init): Root cause identified, fix estimated 30 min, low risk
+  - M-9 (Broker factory guard): Design scoped, fix estimated 40 min, medium complexity
+- ✅ **Deployment Monitoring**: Background script (PID 442029) confirmed running, scheduled 20:15 UTC
+- ✅ **All Orchestration Files Updated**: WORKLOG.md and CHECKIN.md current
+
+**What's In Progress**:
+- 🟡 **INV-1 Deployment**: Executing at 20:15 UTC (post-market close 20:00 UTC). Code ready, tests passing, user approved.
+  - Script will rsync z-score clipping fix to Jetson + restart stockbot container
+  - Success metric: Docker logs show non-zero buy_prob within 60s of restart
+
+**Planned Actions (Post-Deployment, 20:30+ UTC)**:
+1. **Verification** (5 min): SSH to Jetson, verify buy_prob signal restoration
+2. **M-7 Implementation** (30 min + 15 min test): Feature_pipeline.py lazy FeatureStore init
+3. **M-9 Implementation** (40 min + 20 min test): Broker_factory.py registry + invariant guard
+4. **Commit & Close**: All changes committed; M-7 and M-9 marked [x] in SPRINT.md
+
+**Items Needing User Input**:
+- None at this moment. Deployment proceeding autonomously.
+
+**Next Checkpoint**: 20:30 UTC (post-market deployment verification)
+
+**Timeline Summary**:
+- Now–20:15 UTC: Monitor deployment
+- 20:15–20:30 UTC: Deployment + verification
+- 20:30–22:45 UTC: M-7 + M-9 implementation (if deployment succeeds)
+- 22:45+ UTC: Commit + CHECKIN.md final update
+
+---
+
 ## Since Last Check-in (Session 3206, June 11 2026 17:36-17:40 UTC — pre-deployment monitoring standby)
 
 **Orchestrator Status**: Deployment on track. Awaiting 20:15 UTC execution.

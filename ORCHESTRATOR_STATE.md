@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T16:36:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T17:43:13Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.3% (298,909 tokens) | All-models 46.0% | Reset in 103h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.6% (319,786 tokens) | All-models 48.5% | Reset in 102h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,7 +19,7 @@
 ## Active Projects
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **SPRINT 3 ITEMS 1-2 COMPLETE** + **M-1 COMPLETE**: 
+**Focus**: [RESOLVED 2026-06-11 17:00 UTC: deploy approved] ✅ **INV-1 DEPLOYMENT READY** — **Code Verification Complete** (Session 3204, 17:10-17:25 UTC): z-score clipping fix verified in ensemble_stacker.py (`np.clip(z_scores, -5.0, 5.0)`). All uncommitted changes reverted. Working tree clean. **Deployment Scheduled for 20:15 UTC** (45 min post-market close). Orchestrator will rsync code + restart stockbot container. Expected outcome: AMZN/JPM trading will resume with non-zero buy_prob signals. **SPRI … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -29,13 +29,6 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required)
-**Date blocked**: 2026-06-11
-**Context**: Sprint 3 Item INV-1 (buy_prob flatline root cause fix) is complete and tested locally. Root cause was z-scores going out-of-distribution on AMZN/JPM features. Fix: z-score clipping to [-5, 5] range. 32 tests passing, committed to master (commit c0ff785c). Deployment to Jetson is held pending user approval per DEPLOY BLACKOUT RULE (no deploys during market hours 13:30–20:00 UTC). Deploy window opens 20:00 UTC tonight.
-**What I need**: Approve Jetson deployment of the buy_prob z-score fix. Reply `!resolve stockbot deploy approved` and the orchestrator will push to Jetson at next post-market window (after 20:00 UTC today).
-**Verify with**: `ssh xxsb-01 "docker logs stockbot --tail 20 2>&1 | grep buy_prob"` — should show non-zero buy_prob values after deploy
-**Resolution**: [leave blank]
----
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -59,55 +52,61 @@
 **Resolution**: [leave blank]
 ---
 ### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
+**Date blocked**: 2026-06-06
+**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. As of June 6 20:05 UTC: Docker was not installed (resolved in Session 2965), no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. Platform choice (Nextcloud+Matrix vs Discourse) is pending user decision from Session 2965 CHECKIN.
+**What I need**: User decision on which platform to deploy (Nextcloud+Matrix or Discourse). Recommendation: Discourse is more suitable for this Raspberry Pi 5 (8GB RAM recommended vs Nextcloud's 16GB) and deploys faster (2-3 hours vs 4-6 hours). If Discourse chosen, provide public IP + domain for platform, and SMTP credentials for email notifications. If Nextcloud+Matrix chosen, confirm acceptance of memory risk (system has 7.9GB total RAM). Once choice is confirmed, orchestrator will execute platform deployment by June 8 18:00 UTC deadline.
+**Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
+**Resolution**: [leave blank]
+---
 
 ## Recently Resolved (last 5)
+• stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
 • open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
 • stockbot — Phase 3 Infrastructure Blockers (Container Restart Policy + Alpaca DNS) ← 2026-06-06 17:45 UTC (Session 2953 continuation — autonomous infrastructure fixes)
-• stockbot — June 5 market execution failure: 0 trades executed (root cause identified + fix deployed, awaiting verification) ← 2026-06-06 13:33 UTC (Session 2948 — continuous 20-minute verification monitoring, zero credential errors detected)
 
 ## Inbox (unprocessed)
-(NONE — all pending items processed from Session 3201)
+(NONE — all pending items processed from Session 3202)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-     - `calculate_max_drawdown_from_returns(returns, initial_equity)` — reconstructs equity curve
-     - `calculate_max_drawdown_from_equity_curve(equity_curve)` — direct equity-curve version
-     - `calculate_calmar_ratio(ann_return, max_drawdown)` — simple wrapper
-  2. Updated walk_forward_engine.py imports (added performance_metrics imports)
-  3. Replaced duplicate function definitions with import aliases (backward compatible)
-  4. All existing call sites now use canonical implementations (no signature changes)
-- Phase 4 (REVIEW): Testing & Verification
-  - Ran unit test suite: **1000+ tests PASSING** (including all metrics/performance tests)
-  - Verified no regressions in walk-forward engine integration tests
-  - Spot-checked metric calculations match previous implementations
-- Commit: fb09dcf (feat: Sprint 3 Item M-1 — Performance metrics consolidation)
 
-✅ **Code metrics**:
-- Performance metrics module: +170 lines (new wrapper functions) 
-- Walk forward engine: -47 lines (removed duplicate definitions, added 4-line alias section)
-- Net change: +123 lines (added 4 functions to canonical module, removed from duplicate)
-- Test coverage: 1000+ unit tests passing (no new test code needed, existing tests validate consolidation)
+## Session 3205 (2026-06-11 17:21 UTC — orchestrator) — DEPLOYMENT MONITORING
 
-**Sprint 3 Status Summary**:
-| Item | Status | Details |
-|------|--------|---------|
-| Item 1: buy_prob fix | ✅ Code complete | z-score clipping [-5,5], 32 tests passing, ready for Jetson deployment |
-| Item 2: H-5 DB unification | ✅ Code complete | ORM integration, backward compatible, committed |
-| M-1: Metrics consolidation | ✅ Code complete | Canonical module, 4 wrapper functions, backward compatible, 1000+ tests passing |
-| M-2 to M-10: Medium tech debt | 🔄 Queued | 10 medium-severity items ready for next session |
+**Task**: Orient to current state and monitor stockbot deployment at 20:15 UTC.
 
-**Remaining Work**:
-1. **Next session**: M-2 (TradingSession.__init__ refactoring — 270+ line constructor reduction)
-2. **Post-market window**: Optional quick-win M items (M-8, M-7, M-4 configuration consolidation)
-3. **Phase 4 integration tests**: Hook up H-5 results to backtest pipeline once all M items complete
+**Orientation Summary**:
+- **All projects**: Either paused (resistance-research), blocked on user action (cybersecurity-hardening, mfg-farm, systems-resilience), or in deployment (stockbot)
+- **No autonomous work available**: All exploration queue items either already complete or require 2-6 hours (can't start during market hours)
+- **Deployment in progress**: Background script PID 442029 running, will create DEPLOY_READY at ~20:15 UTC
+- **Timeline**: Market close 20:00 UTC, deployment execution 20:15 UTC, expected completion 20:20-20:30 UTC
 
-**Session duration**: ~66 minutes (PLAN, IMPLEMENT, REVIEW, COMMIT, DOCUMENT)
+**Actions**:
+1. ✅ Verified deployment script still running (PID 442029)
+2. ⏳ Monitoring for DEPLOY_READY file creation at 20:15 UTC
+3. ⏳ Will verify deployment success via SSH logs post-completion
+4. ⏳ Will update CHECKIN.md with outcome
 
-**Key learnings**:
-- Consolidating duplicate code requires finding the correct abstraction level (match existing call signatures)
-- Walk-forward engine metrics had subtle differences (statistics vs numpy) — unified to statistics (pure Python)
-- Import aliases provide instant backward compatibility (no call-site changes needed)
-- Comprehensive test coverage caught zero regressions (confidence in refactoring)
+**Status**: Standing by for deployment window. All files clean and ready.
 
-**Next**: Stand by for next session or user approval for M-2 refactoring.
+---
+
+## Session 3205 (2026-06-11 17:29 UTC — orchestrator) — DEPLOYMENT MONITORING CHECKPOINT
+
+**Task**: Monitor stockbot deployment script and verify execution.
+
+**Current Status** (17:29 UTC):
+- ✅ **Deployment script running**: PID 442029 confirmed active
+  - Started: 18:16 UTC (from Session 3204)
+  - Scheduled execution: ~20:15 UTC (46 min from now)
+- ✅ **Market status**: Currently open (13:30-20:00 UTC), closes 20:00 UTC
+- ✅ **Code ready**: z-score clipping fix verified in master (ensemble_stacker.py lines 21-24)
+- ✅ **All orchestration files clean**: No uncommitted changes
+
+**Monitoring Window**:
+- Deployment execution: 20:15 UTC (post-market close at 20:00 UTC)
+- Expected completion: 20:20-20:30 UTC
+- Verification method: Check Docker logs for "buy_prob" non-zero values on AMZN/JPM sessions
+- Next action: After deployment, verify signal restoration and update CHECKIN.md
+
+**No action required at this time** — script runs autonomously. Will monitor for completion and verify outcome in next checkpoint.
