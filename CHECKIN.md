@@ -2,6 +2,28 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 2984, June 11 2026 ~01:45 UTC)
+
+**Orchestrator Action**: Standard orientation completed. Pause directive confirmed ACTIVE & CORRECT through June 15 00:00 UTC (~87 hours remaining).
+
+**Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE** — All projects paused or blocked on external dependencies. Stockbot Sprint 2 is 100% complete (delivered in Session 2983). Exploration Queue has 108 items scheduled for post-pause execution (June 15-20).
+
+**Block Verification** (all 4 re-confirmed unresolved):
+- ✅ cybersecurity-hardening: VeraCrypt pre-boot restart required (manual action)
+- ✅ mfg-farm: Test print execution required (manual action)
+- ✅ systems-resilience: Platform deployment blocked on user decision (82+ hours overdue)
+- 🚨 **open-repo: Deployment timing conflict verified** — decision due June 12 09:00 UTC (~31 hours)
+
+**🚨 CRITICAL DEADLINE REMINDER**:
+- **Deployment start time must be decided by June 12 09:00 UTC** (in ~31 hours)
+- **Options**: 09:00 UTC (business hours, 95% SLA) or 20:00 UTC (off-hours, 100% SLA)
+- **Action required**: Update BLOCKED.md Resolution field or reply in CHECKIN "Needs Your Input" section
+- **Docs checked**: Confirmed newer docs specify 09:00 UTC; older docs specify 20:00 UTC; SLA implications documented
+
+**Session duration**: ~4 minutes (orientation + block verification + CHECKIN update)
+
+---
+
 ## Since Last Check-in (Session 2983, June 11 2026 ~01:00 UTC)
 
 **Orchestrator Action**: Continued Sprint 2 work immediately following Session 2982. Spawned stockbot agent for H-3 and H-2 fixes.
