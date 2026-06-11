@@ -6,13 +6,23 @@
 
 **Orchestrator Action**: Initiated stockbot Sprint 2 work immediately after pause lift (Session 2981 00:07 UTC). Spawned stockbot agent for C-1 fix.
 
-**✅ SPRINT 2 C-1 COMPLETE — G3 GATE T-STAT FIX DEPLOYED**:
-- **Fix**: Populated `all_oos_trade_pnls` in fold loop; replaced dead-code stub in `_aggregate_folds()`
-- **Impact**: G3 gate (t-stat > 2.0) now correctly computes pooled t-stat instead of returning 0.0
-- **Tests**: 4 new tests written, 768 existing tests passing, no regressions
+**✅ SPRINT 2 ITEMS C-1 AND C-3 COMPLETE**:
+
+**C-1 — G3 Gate T-Stat Fix** ✅:
+- **Issue**: Pooled t-stat dead code; `all_oos_trade_pnls` never populated, causing G3 gate to fail on low-trade models
+- **Fix**: Populated list in fold loop; replaced dead-code stub in `_aggregate_folds()`
+- **Impact**: G3 now correctly computes t-stat > 2.0 threshold
+- **Tests**: 4 new tests, 768 existing passing, no regressions
 - **Commit**: `00310f9` in stockbot submodule
 
-**Next Sprint 2 Item**: C-3 (cash pool upward-only correction) — ready after this commit merges to main
+**C-3 — Cash Pool Upward-Only Correction** ✅:
+- **Issue**: Concurrent exits could accumulate phantom cash, pushing pool above Alpaca's actual balance (overleveraging risk)
+- **Fix**: Hard-cap cash pool at Alpaca's live cash in `reconcile_cash_pool()` with bidirectional reconciliation
+- **Impact**: Prevents phantom cash accumulation; account cannot become overleveraged
+- **Tests**: 38 cash-pool tests (6 new), no regressions
+- **Commit**: `ad41556` in stockbot submodule
+
+**Next Sprint 2 Item**: C-4 (silent zero-padding on signal length mismatch) — ready to execute
 
 **🚨 CRITICAL DEADLINE REMINDER**:
 - **open-repo deployment timing MUST be decided by June 12 09:00 UTC** (~9 hours remaining)
