@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-10T23:55:59Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T00:02:18Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.0% (177,666 tokens) | All-models 27.6% | Reset in 120h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.0% (180,498 tokens) | All-models 27.8% | Reset in 120h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -18,8 +18,8 @@
 
 ## Active Projects
 ### stockbot
-**Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[SESSION 2980 COMPLETE: CODEBASE QUALITY ASSESSMENT & AGENT LOOP DEFINITION (JUNE 10 05:25 UTC)]** — **DELIVERABLES COMPLETE** (all committed to stockbot submodule e64fb3b):
+**Status**: Active — **DEV AGENT LOOP RUNNING** — User lifted pause 2026-06-11. Pause directive for stockbot **REMOVED**. Other projects (resistance-research, mfg-farm, systems-resilience, cybersecurity-hardening) remain paused until their user-action blocks resolve.
+**Focus**: 🔄 **SPRINT 2 — C-1 first** (pooled t-stat dead code, `walk_forward_engine.py:1516-1521`). Full backlog in PROJECTS.md. Agent Loop Workflow v2.0 is mandatory for all work (SPEC→PLAN→IMPLEMENT→REVIEW→FIX).
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -61,9 +61,9 @@
 ### open-repo — Deployment start time conflict (user clarification required)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (161 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (164 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (160 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (162 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (165 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (161 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC

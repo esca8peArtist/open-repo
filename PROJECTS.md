@@ -472,19 +472,24 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 **COMMIT-BEFORE-DEPLOY RULE**: Always `git commit` all changes in `projects/stockbot/src/`, `scripts/`, `config/`, `Dockerfile.jetson`, and `docker-compose.jetson.yml` before setting `DEPLOY_READY`. The deploy script hard-blocks on uncommitted changes to any of these files. Reason: uncommitted edits can be silently overwritten by future orchestrator sessions, then the next deploy nukes the Jetson fix. Commit = permanent; filesystem edit = temporary.
 
-**Current focus**: ✅ **[SESSION 2980 COMPLETE: CODEBASE QUALITY ASSESSMENT & AGENT LOOP DEFINITION (JUNE 10 05:25 UTC)]** — **DELIVERABLES COMPLETE** (all committed to stockbot submodule e64fb3b):
-1. ✅ **AGENT_LOOP_WORKFLOW.md** — Iterative feature development cycle (A–E) + decision tree documented
-2. ✅ **CODEBASE_REVIEW_COMPREHENSIVE.md** — 30+ findings organized by severity (CRITICAL/HIGH/MEDIUM/LOW)
-3. ✅ **MODEL_ARCHITECTURE_ASSESSMENT.md** — Gap analysis + streamlining opportunities documented
-4. ✅ **IMPLEMENTATION_IDEAS.md** — 12 improvement ideas prioritized by impact/effort
-5. ✅ **Discord Summary** — Top 3 critical bugs + 2 arch issues + 3 Tier-1 priorities ready for user review
+**Current focus**: 🔄 **DEV AGENT LOOP ACTIVE — SPRINT 2 (2026-06-11)** — User lifted pause for stockbot. Agent Loop Workflow v2.0 (SPEC→PLAN→IMPLEMENT→REVIEW→FIX) is the mandatory framework for all work.
 
-**CRITICAL FINDINGS REQUIRING IMMEDIATE ATTENTION**:
-- **C-1: Walk-forward t-stat broken** — `_aggregate_folds` missing pooled PnL list. G3 gate spurious. Fix: 10–15 lines.
-- **C-2: OOS features computed 2× per fold** — Doubles inference time for ensemble models. Fix: return `oos_returns` from fold.
-- **C-3: Cash pool inflation risk** — Concurrent close events can ratchet pool above real cash. Fix: cap at actual Alpaca cash.
+**Sprint 2 backlog** (ordered by priority per `docs/CODEBASE_REVIEW_COMPREHENSIVE.md`):
+- 🔄 **C-1** (CRITICAL): `_aggregate_folds` pooled t-stat dead code — G3 gate spurious on low-trade-count models. Fix: populate `all_oos_trade_pnls` in fold loop. (`walk_forward_engine.py:1516-1521`)
+- ⏳ **C-3** (CRITICAL): Cash pool upward-only correction — concurrent exits can ratchet pool above real Alpaca cash. Fix: hard cap at Alpaca `cash` field. (`trading_session.py:173-225`)
+- ⏳ **C-4** (CRITICAL): Silent zero-padding on signal length mismatch — hides base model bugs. Fix: raise ValueError instead of padding. (`walk_forward_engine.py:917-924`)
+- ⏳ **C-2** (CRITICAL): `_compute_returns` called twice per fold — doubles inference time. Fix: return `oos_returns` from `_evaluate_fold`. (`walk_forward_engine.py:1092-1103,1353-1357`)
+- ⏳ **H-6** (HIGH): Stacker registry path relative to CWD — crashes in tests and on Jetson if CWD differs. Fix: use `Path(__file__).resolve().parent.parent.parent`. (`trading_session.py:1444-1449`)
+- ⏳ **H-3** (HIGH): Ambiguous ValueError catch silently falls to `sma_crossover`. Fix: explicit exception handling for model ID conversion. (`trading_session.py:1408-1421`)
+- ⏳ **H-2** (HIGH): Hardcoded `_TIME_STOP_BARS=10` ignores model horizon metadata. Fix: read `h` from model metadata at session startup. (`trading_session.py:2016`)
+- ⏳ **H-1** (HIGH): Duplicate regime detection code in two functions. Fix: refactor `_detect_regimes` as wrapper around `_classify_regime_labels`. (`walk_forward_engine.py:694-822`)
+- ⏳ **H-7** (HIGH): Feature pipeline uses `logging.getLogger` instead of project `get_logger()`. Fix: replace in `feature_pipeline.py` and `pipeline_integrator.py`.
+- ⏳ **M-5** (MEDIUM): `_load_base_models` sqlite3 connection leaks on exception. Fix: `with sqlite3.connect(...) as conn`. (`walk_forward_engine.py:113-166`)
+- ⏳ **M-6** (MEDIUM): Stacker registry missing key validation — silent KeyError on malformed registry. Fix: validate required keys after load.
 
-**NEXT PHASE** (awaiting user review): User reviews four documents → user decision on Tier-1 priorities (fix critical bugs vs. proceed with feature dev) → orchestrator proceeds with either Bug Sprint or Feature Implementation per user approval.
+**Completed (Phase 1)**: Security fail-closed (auth/CORS/JWT), Kelly sizer zero-loss bug, transaction cost model in backtests, Pi/Jetson boundary cleanup, Kelly sizer unit tests (36 tests), DSR `num_trials=1` → investigated, closed as design choice.
+
+**Agent Loop rule**: Every item must go through SPEC→PLAN→IMPLEMENT→REVIEW→FIX. Orchestrator flags any deviation from this cycle to the user.
 
 **Previous Status (Phase 3/4 paused)**: Phase 3 gate validation complete (JPM 6/6, AMZN 5/6, AAPL FAIL). Phase 4 training/evaluation pipelines production-ready. Codebase assessment now complete — execution path determined by user review of critical findings.
 
