@@ -36,9 +36,22 @@
 - **Tests**: 110/111 tests pass (3 new tests confirm single-computation invariant)
 - **Commit**: `6fa3c4d` in stockbot submodule
 
-**Summary**: 4 CRITICAL items completed (C-1, C-3, C-4, C-2) — all safety & performance critical fixes deployed.
+**H-6 — Stacker Registry Path Fix** ✅:
+- **Issue**: Registry path relative to CWD; breaks when process runs from different directory
+- **Fix**: Changed to absolute path using `Path(__file__).resolve().parent.parent.parent`
+- **Impact**: Registry loading now works on Jetson and in tests regardless of CWD
+- **Tests**: 2 new tests confirm absolute path and CWD-independence
+- **Commit**: `95c3a14` in stockbot submodule
 
-**Next Sprint 2 Item**: C-1 is complete; C-3 (cash pool), C-4 (signal validation), C-2 (perf) all done. Next: H-6 (stacker registry path) or evaluate remaining backlog.
+**Session 2982 Summary**:
+- ✅ **5 of 11 Sprint 2 items complete**: All 4 CRITICAL items (C-1, C-3, C-4, C-2) + 1 HIGH (H-6)
+- ✅ **Safety improvements**: G3 gate now works, cash pool capped, signal validation strict
+- ✅ **Performance improvements**: 50% faster fold evaluation (C-2 eliminates double computation)
+- ✅ **Reliability improvements**: Registry path CWD-independent, signal length errors caught early
+
+**Next Priority**: 6 more HIGH/MEDIUM items ready for future sessions (H-3, H-2, H-1, H-7, M-5, M-6)
+
+**🚨 Reminder**: open-repo timing decision still pending (due June 12 09:00 UTC, ~32 hours remaining). Update BLOCKED.md Resolution or reply in CHECKIN "Needs Your Input" with deployment start time: **09:00 UTC or 20:00 UTC?**
 
 **🚨 CRITICAL DEADLINE REMINDER**:
 - **open-repo deployment timing MUST be decided by June 12 09:00 UTC** (~9 hours remaining)
