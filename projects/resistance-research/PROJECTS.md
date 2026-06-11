@@ -7,7 +7,7 @@
 
 ## Current Focus
 
-*Updated: June 10, 2026 — Wave 1 READY FOR IMMEDIATE USER EXECUTION. Domain 51 clear to send now (CLC + Issue One today, CA contacts June 12-13). Domain 59 HOLD — urgency frame patch required (15 min, see WAVE_1_NEWS_INTEGRATION.md). Domain 48 HOLD — Gist creation required before June 15 (see DOMAIN_48_GIST_CREATION_STEPS.md). Day 7 checkpoint: June 17-18. Execution log: WAVE_1_EXECUTION_LOG.md.*
+*Updated: June 11, 2026 (Session 3220) — Wave 1 OVERDUE (scheduled June 9, not yet executed). All sends remain pending. Domain 51 is clear to send NOW — CLC + Issue One Wave 1, then CA contacts Wave 2 same day or June 12. July 1 hard deadline intact (20 days). Domain 59 HOLD — urgency frame patch required (15 min, WAVE_1_NEWS_INTEGRATION.md). Domain 48 HOLD — Gist creation required before June 15 (DOMAIN_48_GIST_CREATION_STEPS.md). Day 7 checkpoint: June 17-18. Execution log: WAVE_1_EXECUTION_LOG.md. Phase 3 Domains K and H are confirmed production-ready (see WORKLOG Session 3220 for file verification).*
 
 **PHASE 2 DISTRIBUTION — THREE ACTIVE WINDOWS**
 
