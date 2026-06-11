@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T01:45:57Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T02:05:45Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.3% (204,084 tokens) | All-models 29.1% | Reset in 118h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.3% (204,084 tokens) | All-models 29.6% | Reset in 118h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -61,7 +61,8 @@
 ### open-repo — Deployment start time conflict (user clarification required)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (18 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
@@ -73,24 +74,6 @@
 (NONE — all pending items processed from Session 2979)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
-**Orchestrator Action**: Standard orientation completed. Pause directive confirmed **ACTIVE through June 15 00:00 UTC** (~3d 1.5h remaining). All 4 blocks re-verified unresolved.
-
-**Block Status Verification**:
-- ✅ mfg-farm: test-print-results directory missing → block unresolved (user test print action required)
-- ✅ systems-resilience: no Docker containers running → platform not deployed; **61+ hours overdue** (deadline June 8 18:00 UTC)
-- ✅ open-repo: deployment timing conflict persists (09:00 vs 20:00 UTC in docs) → block unresolved; **due June 12 09:00 UTC (~10.5 hours)**
-- ✅ cybersecurity-hardening: Windows VeraCrypt pre-boot restart (manual action) → cannot auto-verify
-
-**Critical User Decisions Awaiting** (unchanged since Session 3112):
-1. 🚨 **systems-resilience**: Platform choice (Nextcloud+Matrix or Discourse) + public IP/domain + SMTP credentials
-2. ⏰ **open-repo**: Deployment timing confirmation (09:00 or 20:00 UTC) — due June 12 09:00 UTC (~10.5h from now)
-3. **mfg-farm**: Test print execution (user action, detailed specs in BLOCKED.md)
-4. **cybersecurity-hardening**: Windows VeraCrypt completion (user action)
-
-**Exploration Queue**: 108 total items tracked. All completed items archived. Queued items scheduled for June 15-20 post-pause. Zero new queue items required.
-
-**INBOX.md**: No new items to process.
 
 **Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT.** No autonomous project work available. All 34+ consecutive sessions confirm idle state is correct by design. Autonomy resumes June 15 00:00 UTC.
 
@@ -113,3 +96,20 @@
 **User action**: Lifted pause directive for stockbot only. Other projects remain paused.
 
 **Next**: Sprint 2 begins with C-1 (pooled t-stat dead code in `_aggregate_folds`). Backlog ordered in PROJECTS.md.
+
+## Session 2987 (June 11 01:59–02:05 UTC)
+
+**Orchestrator Orientation**: Pause directive confirmed ACTIVE through June 15 00:00 UTC. All 4 blocks remain unresolved.
+
+**Critical Deadline Verification**:
+- ✅ Ran verification command for open-repo deployment timing conflict
+- ✅ Confirmed: Newer docs (Session 2952-2956) use 09:00 UTC; older docs use 20:00 UTC
+- ✅ Escalated to CHECKIN.md with CRITICAL label
+
+**Actions Taken**:
+1. Updated CHECKIN.md with prominent alert about June 12 09:00 UTC deadline (~31 hours remaining)
+2. Committed to master with chore message
+
+**Status**: No autonomous work available. Pause directive prevents project work. All 4 blocks awaiting user decisions/actions. Exploration Queue staged for June 15-20 post-pause execution.
+
+**Next**: Await user response on open-repo deployment timing clarification or next checkpoint at June 15 00:00 UTC.

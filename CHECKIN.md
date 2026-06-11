@@ -2,6 +2,27 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 2988, June 11 2026 02:05 UTC)
+
+**Orchestrator Action**: Standard orientation completed. Verified pause directive ACTIVE & CORRECT. All 4 blocks re-verified unresolved. No autonomous work available.
+
+**🚨 CRITICAL DEADLINE — IMMEDIATE USER ACTION REQUIRED** (in ~31 hours):
+- **open-repo deployment timing decision**: Must choose between 09:00 UTC (business hours) or 20:00 UTC (after-hours) by June 12 09:00 UTC. Deployment docs show conflicting times. **Action**: Reply with clarification to BLOCKED.md Resolution field or CHECKIN.md.
+
+**Block Verification** (all 4 remain unresolved):
+- ✅ mfg-farm: Test print not yet executed (user action pending)
+- ✅ systems-resilience: No Docker containers running (user platform choice + IP/domain/SMTP pending)
+- ✅ **open-repo: Deployment timing conflict still present** (CRITICAL — clarification due June 12 09:00 UTC)
+- ✅ cybersecurity-hardening: Windows manual restart pending (cannot auto-verify)
+
+**Stockbot Status**: Sprint 2 COMPLETE (11/11 items, Sessions 2982-2983). Sprint 3 TBD — awaiting next phase direction.
+
+**Overall Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT** (~72 hours remaining until June 15 00:00 UTC). No autonomous work available. Pause prevents project work initiation; all 4 blocks await user decisions.
+
+**Session duration**: ~5 minutes (orientation + block verification + CHECKIN update)
+
+---
+
 ## Since Last Check-in (Session 2987, June 11 2026 01:59 UTC)
 
 **Orchestrator Action**: Orientation completed. Verified pause directive active & correct. Ran block verification — all 4 blocks remain unresolved. **CRITICAL ALERT**: open-repo deployment timing clarification due in ~31 hours (June 12 09:00 UTC).
