@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T21:19:20Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T21:37:29Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.6% (319,786 tokens) | All-models 53.2% | Reset in 99h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.6% (319,786 tokens) | All-models 53.5% | Reset in 98h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,11 +19,11 @@
 ## Active Projects
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
-**Focus**: ✅ **[PHASE 2 WAVE 1 OVERDUE BUT RECOVERABLE TODAY — ALL INFRASTRUCTURE VERIFIED READY (SESSION 3220)]** — **PHASE 2 EXECUTION STATUS**: Wave 1 not executed June 9-10 (scheduled but slipped). All infrastructure production-ready: email templates finalized, contacts verified (CLC: echlopak@campaignlegalcenter.org, Issue One: info@issueone.org), field-fills identified (name + contact). **Wave 1 execution today (June 11): 60-75 min user action required** — send emails to CLC + Issue One, stag … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 2 WAVE 1 OVERDUE BUT RECOVERABLE TODAY — WAVE 2 PREP COMPLETE (SESSION 3221)]** — **PHASE 2 EXECUTION STATUS**: 
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: [RESOLVED 2026-06-11 20:15 UTC: deployment complete] ✅ **INV-1 DEPLOYMENT COMPLETE & VERIFIED (SESSION 3220)** — **Infrastructure Health Verified** (Jetson diagnostic 21:00 UTC): All containers healthy, API responding (status: 2 sessions), database clean (1 fill since June 1 confirms buy_prob flatline root cause), disk 43% (134 GiB free), thermals 47.9°C. **June 12 Signal Restoration Checkpoint**: Verification checklist created, success criteria detailed (buy_prob non-zero at market open =  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: [RESOLVED 2026-06-11 20:15 UTC: deployment complete] ✅ **INV-1 DEPLOYED & M-7–M-10 TECH DEBT COMPLETE (SESSION 3221)** — **Infrastructure Health Verified** (Jetson diagnostic 21:00 UTC): All containers healthy, API responding (status: 2 sessions), database clean (1 fill since June 1 confirms buy_prob flatline root cause), disk 43% (134 GiB free), thermals 47.9°C. **June 12 Signal Restoration Checkpoint**: buy_prob non-zero at market open = PASS. **Phase 3 Tech Debt COMPLETE (Session 3221)
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
