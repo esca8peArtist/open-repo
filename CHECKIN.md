@@ -2,24 +2,24 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3172, June 11 2026 ~12:20 UTC)
+## Since Last Check-in (Session 3173, June 11 2026 — orchestrator)
 
 **Orchestrator Action**: Full orientation + block verification (all 3 unresolved) + pause directive confirmed active & correct.
 
-**Pause Directive**: ✅ **ACTIVE & CORRECT** through June 15 00:00 UTC (~83.6 hours remaining). **No autonomous work available.** All projects paused by design. **79th consecutive idle session confirming correctness.**
+**Pause Directive**: ✅ **ACTIVE & CORRECT** through June 15 00:00 UTC. **No autonomous work available.** All projects paused by design. **80th consecutive idle session confirming correctness.**
 
 **Block Status Verification** (all 3 remain unresolved):
 - ✅ cybersecurity-hardening: Windows VeraCrypt pre-boot restart (manual). Waiting on user.
 - ✅ mfg-farm: Test print results directory absent. Waiting on user (0.20mm, PLA+, 3 walls, 220–225°C).
-- ✅ systems-resilience: No Docker containers running. Waiting on user decision (Nextcloud+Matrix or Discourse?). **CRITICAL: 21+ hours overdue from June 8 18:00 UTC deadline.**
+- ✅ systems-resilience: No Docker containers running. Waiting on user decision (Nextcloud+Matrix or Discourse?). **CRITICAL: 22+ hours overdue from June 8 18:00 UTC deadline.**
 
-**Session duration**: ~2 minutes (orientation + block verification + CHECKIN update + commit)
+**Session duration**: ~3 minutes (orientation + block verification + CHECKIN update + commit)
 
 **Next**: June 15 00:00 UTC pause lift, or user resolution of any blocked item.
 
 ---
 
-## Since Last Check-in (Session 3171, June 11 2026 ~12:22 UTC)
+## Since Last Check-in (Session 3172, June 11 2026 ~12:20 UTC)
 
 **Orchestrator Action**: Full orientation + block verification (all 3 unresolved) + pause directive confirmed active & correct.
 
