@@ -401,6 +401,7 @@ def read_project_detail(project: str) -> str:
         focus_short = focus if len(focus) <= 200 else focus[:197] + '...'
         out.append(f"Context: {focus_short}")
 
+    blocked = fields.get("Blocked on", "").strip()
     if options:
         out.append("\nOptions:")
         for opt in options:
