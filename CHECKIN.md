@@ -2,6 +2,27 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3128, June 11 2026 ~12:30 UTC)
+
+**Orchestrator Action**: Orientation + block verification + Exploration Queue review. Pause directive active & correct.
+
+**Block Status Verification** (all 3 remain unresolved):
+- ✅ cybersecurity-hardening: Windows VeraCrypt pre-boot restart (manual — cannot auto-verify). Waiting on user action.
+- ✅ mfg-farm: Test print execution (`ls projects/mfg-farm/test-print-results/` verified absent). Waiting on user action (0.20mm layer height, PLA+, 3 walls, 220–225°C).
+- ✅ systems-resilience: Platform deployment (no Docker containers running). Waiting on user decision: Nextcloud+Matrix or Discourse? Requires public IP, domain, SMTP credentials. **CRITICAL: 135+ hours overdue from June 8 18:00 UTC deployment deadline.**
+
+**Pause Directive Status**: ✅ **ACTIVE & CORRECT** through June 15 00:00 UTC (~48 hours remaining). All projects paused by design. No autonomous work available. Idle state correct by design.
+
+**Exploration Queue**: 100+ pre-planned contingency items identified (stockbot Phase 4, systems-resilience Wave 2, mfg-farm Phase 2 scaling, resistance-research Phase 3 domains 49-50). All appropriately deferred until autonomy resumes per pause directive.
+
+**Usage Budget**: ✅ Sonnet 2.3% (204,084 tokens), All-models 35.4% (healthy). Reset in ~48 hours.
+
+**Session duration**: ~5 minutes (orientation + block verification + queue review + CHECKIN/WORKLOG update + commit)
+
+**Next autonomous session**: June 15 00:00 UTC when pause lifts automatically, or immediately if user resolves any blocked item.
+
+---
+
 ## Since Last Check-in (Session 3127, June 11 2026 ~08:45 UTC)
 
 **Orchestrator Action**: Minimal orientation. Verify pause & blocks. Maintain state.
