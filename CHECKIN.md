@@ -2,20 +2,20 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 2996, June 11 2026 03:00–03:10 UTC)
+## Since Last Check-in (Session 2997, June 11 2026 03:10+ UTC)
 
-**Orchestrator Action**: Orientation + block verification + CHECKIN/WORKLOG update.
+**Orchestrator Action**: Orientation + block verification + state maintenance.
 
 **Block Status Verification** (all 3 remain unresolved):
 - ✅ cybersecurity-hardening: Windows VeraCrypt pre-boot restart (manual — cannot auto-verify)
-- ✅ mfg-farm: Test print execution (`ls -la projects/mfg-farm/test-print-results/` → directory does not exist; user action pending)
-- ✅ systems-resilience: Platform deployment (`docker ps | grep -E "nextcloud|discourse"` → no containers; user decision + credentials pending, 82+ hours overdue)
+- ✅ mfg-farm: Test print execution (directory `/projects/mfg-farm/test-print-results/` does not exist; user action pending)
+- ✅ systems-resilience: Platform deployment (no Docker containers running; user decision + credentials pending, 82+ hours overdue from June 8 18:00 UTC deadline)
 
-**Pause Directive Status**: ✅ **ACTIVE & CORRECT** through June 15 00:00 UTC (~61 hours remaining). Autonomous project work correctly suspended. Idle state is correct by design.
+**Pause Directive Status**: ✅ **ACTIVE & CORRECT** through June 15 00:00 UTC (~60 hours remaining). Autonomous project work correctly suspended. Idle state is correct by design.
 
-**Session duration**: ~10 minutes (orientation + block verification + CHECKIN/WORKLOG/ORCHESTRATOR_STATE update + commit)
+**Session duration**: ~5 minutes (orientation + block verification + CHECKIN/WORKLOG update + commit)
 
-**Next session**: June 15 00:00 UTC when pause lifts. All 100+ Exploration Queue items staged for post-pause execution.
+**Next autonomous session**: June 15 00:00 UTC when pause lifts. All 100+ Exploration Queue items staged for post-pause execution.
 
 ---
 
