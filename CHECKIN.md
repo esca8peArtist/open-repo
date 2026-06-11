@@ -2,6 +2,42 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3223, June 11 2026 23:00 UTC — NO NEW AUTONOMOUS WORK, STANDING BY FOR USER WAVE 1 ACTION)
+
+**Orchestrator Status**: ✅ **ALL AUTONOMOUS WORK COMPLETE (SESSION 3222)**. M-7–M-10 tech debt finished. Wave 2 preparation complete. Orchestrator standing by for user Wave 1 email sends (CLC + Issue One) and June 12 signal restoration checkpoint.
+
+## Session 3223 (June 11 2026 23:00 UTC) — Orientation & Standby
+
+**What Happened**:
+- ✅ **Orientation complete**: Verified Session 3222 completed all unblocked work
+- ✅ **Project Status Confirmed**: Stockbot waiting for June 12 checkpoint; Resistance-Research waiting for user Wave 1 action
+- ✅ **Exploration Queue Status**: 5 items available (deferred to June 14+ per protocol)
+- ✅ **Committed**: ORCHESTRATOR_STATE.md timestamp update
+
+**Current Status**:
+- 🟢 **Stockbot M-7–M-10**: COMPLETE (committed 93c94ca, session 3221)
+- 🟢 **Resistance-Research Wave 2**: PREP COMPLETE (DOMAIN_51_WAVE_2_EXECUTION_CHECKLIST.md ready)
+- 🟡 **Resistance-Research Wave 1**: AWAITING USER ACTION (60-75 min email sends to CLC + Issue One)
+- ⏳ **June 12 Signal Verification**: Checkpoint ready for market open
+
+**Items Needing User Input**:
+1. **Wave 1 Email Sends (OVERDUE)** — Send to CLC (echlopak@campaignlegalcenter.org) + Issue One (info@issueone.org). Window: 20 days before hard deadline (July 1); slip recoverable.
+2. **Wave 2 Execution** (June 12, 09:00–12:00 UTC) — Three email sends with 90-min stagger
+3. **Signal Verification** (June 12, 13:30 UTC) — Automated checkpoint; user can monitor buy_prob restoration
+
+**Next Session Actions**:
+- **June 12 ~13:30 UTC**: Automated signal restoration checkpoint. Monitor AMZN/JPM buy_prob in Docker logs.
+- **June 12-15**: AAPL lgbm_ho retrain + MSFT ridge_wf first training (if signal restoration = PASS)
+- **June 14+**: Exploration queue work (if user approves)
+- **June 17-18**: Day 7 checkpoint (inbox review, Gist tracking, Tier 2 activation decision)
+
+**Suggested Immediate Actions** (for user):
+1. Complete Wave 1 email sends today (60-75 min)
+2. Execute Wave 2 June 12 morning (09:00–12:00 UTC, 60-75 min, staggered)
+3. Monitor signal restoration June 12 at 13:30 UTC (automated, no user intervention needed)
+
+---
+
 ## Since Last Check-in (Session 3222, June 11 2026 22:40 UTC — ALL AUTONOMOUS WORK COMPLETE, AWAITING USER WAVE 1 ACTION)
 
 **Orchestrator Status**: ✅ **ALL AUTONOMOUS UNBLOCKED WORK COMPLETE**. M-7–M-10 tech debt finished (Session 3221). Wave 2 preparation complete. Awaiting user completion of Wave 1 email sends (CLC + Issue One).
