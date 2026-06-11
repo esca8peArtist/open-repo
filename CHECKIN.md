@@ -2,36 +2,37 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3208, June 11 2026 17:56 UTC — pre-deployment monitoring)
+## Since Last Check-in (Session 3209, June 11 2026 18:02 UTC — deployment monitoring standby)
 
-**Orchestrator Status**: All systems ready for INV-1 Jetson deployment at 20:15 UTC (19 min away).
+**Orchestrator Status**: Waiting for INV-1 Jetson deployment at 20:15 UTC. Deployment script (PID 442029) confirmed running.
 
 **What Happened**:
-- ✅ **Full Orientation Complete**: Read all state files (ORCHESTRATOR_STATE, BLOCKED, INBOX, PROJECTS)
-- ✅ **Deployment Script Verified**: PID 442029 confirmed still running, on schedule for 20:15 UTC execution
-- ✅ **Project Status Confirmed**: All projects either paused or blocked on named user actions
-  - resistance-research: Paused (user directive June 10)
-  - mfg-farm: Paused (user directive June 10)
-  - cybersecurity-hardening: Paused (user directive June 10)
-  - stockbot: Active — INV-1 deployment in final countdown (19 min)
-  - All others: Complete or awaiting user execution
-- ✅ **No Autonomous Work Available**: No exploration queue items ready for immediate work
-- ✅ **Code Ready**: Z-score clipping fix verified in master (c0ff785c), working tree clean
+- ✅ **Full Orientation Complete**: Verified all state files (ORCHESTRATOR_STATE, BLOCKED, INBOX)
+- ✅ **Deployment Script Verified**: PID 442029 confirmed still running (started 18:16 UTC Session 3204)
+- ✅ **Project Status Confirmed**: All projects paused or blocked on user action (no autonomous work available)
+- ✅ **Code Ready**: Z-score clipping fix (ensemble_stacker.py lines 21-24, commit c0ff785c) verified in master
+- ✅ **Wakeup Scheduled**: Monitoring checkpoint scheduled for ~20:25 UTC to verify deployment completion
 
 **What's In Progress**:
-- 🟡 **INV-1 Deployment**: Executing at 20:15 UTC
-  - Root cause: AMZN/JPM buy_prob=0.0000 for 10+ days due to OOD z-scores
-  - Fix: np.clip(z_scores, -5.0, 5.0) in ensemble_stacker.py
-  - Expected outcome: Non-zero buy_prob signals resume within 60s of restart
-  - Verification: Check Docker logs post-deployment
+- 🟡 **INV-1 Deployment**: Executing at 20:15 UTC (post-market close 20:00 UTC)
+  - Root cause: AMZN/JPM buy_prob=0.0000 for 10+ days due to OOD z-score normalization
+  - Fix: np.clip(z_scores, -5.0, 5.0) in ensemble_stacker.py (committed c0ff785c)
+  - Expected outcome: AMZN/JPM buy_prob restore from 0.0 flatline to live signal values
+  - Verification: Check Docker logs for buy_prob non-zero values within 60s of restart
 
-**Items Needing User Input**: None at this time. All systems autonomous until next deployment outcome.
+**Items Needing User Input**: None. Deployment proceeding autonomously.
 
 **Timeline**:
-- 20:00 UTC: Market close
-- 20:15 UTC: Deployment script creates DEPLOY_READY (autonomous)
-- 20:20–20:30 UTC: Orchestrator rsync + docker restart
-- Next session: Verify deployment outcome
+- **18:02 UTC**: Session 3209 orientation complete, wakeup scheduled
+- **20:15 UTC**: Deployment script creates DEPLOY_READY (autonomous)
+- **~20:20-20:30 UTC**: Container restarts, buy_prob signals should resume
+- **~20:25 UTC**: Orchestrator verification checkpoint (wakeup fires)
+
+**Suggested Priorities for Next Wakeup**:
+1. **Verify DEPLOY_READY exists** (indicates 20:15 UTC trigger fired)
+2. **Check Docker logs**: `docker logs stockbot --since 10m | tail -30` — look for buy_prob non-zero
+3. **If successful**: No additional work needed this session; continue Sprint 3 next session
+4. **If failed**: Add to BLOCKED.md, investigate logs, escalate
 
 ---
 
