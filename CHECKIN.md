@@ -2,6 +2,46 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3135, June 11 2026 ~23:50 UTC)
+
+**Orchestrator Action**: Standard orientation completed. Pause directive ACTIVE through June 15 00:00 UTC (~3d 2h remaining). All 4 blocks re-verified unresolved.
+
+**🚨 CRITICAL DEADLINE — IMMEDIATE ACTION REQUIRED**:
+- **open-repo deployment start time decision MUST BE MADE BEFORE JUNE 12 09:00 UTC**
+- **Time remaining**: ~9 hours (as of this session start)
+- **Decision**: Which is correct — **09:00 UTC** or **20:00 UTC** for June 12 deployment?
+- **Evidence of conflict** (verified in session):
+  - ✅ Newer docs (Sessions 2952–2956): `DEPLOYMENT_JUNE12_SUCCESS_CRITERIA.md` specifies **09:00 UTC**
+  - ✅ Older docs (pre-Session 2952): June 3 runbook specifies **20:00 UTC**  
+  - ✅ `DEPLOYMENT_JUNE12_RISK_MITIGATION.md` explicitly documents both times and states "user must resolve this"
+  - ✅ SLA implications: 95% daily SLA if 09:00 (business-hours deployment) vs 100% if 20:00 (off-hours)
+- **Impact if unresolved**:
+  - Pre-flight checklist cannot execute
+  - All time references in deployment runbook shift by ±11 hours depending on final choice
+  - Communication templates ambiguous
+  - Rollback procedures timing undefined
+
+**Block Status** (all 4 confirmed unresolved):
+- ✅ cybersecurity-hardening: manual Windows VeraCrypt pre-boot restart (cannot auto-verify)
+- ✅ mfg-farm: test-print-results directory confirmed missing → test print execution required
+- ✅ systems-resilience: no Docker containers running → platform choice decision pending (82+ hours overdue)
+- 🚨 **open-repo: deployment timing conflict VERIFIED → DEADLINE JUNE 12 09:00 UTC (~9 HOURS)**
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT**
+- No autonomous project work available (correct by design)
+- All 4 blocks unresolved; 3 require user action only
+- Autonomy resumes June 15 00:00 UTC
+
+**Needs Your Input (URGENT — DEADLINE IN ~9 HOURS)**:
+1. **🚨 CRITICAL — Confirm open-repo deployment start time**: 
+   - **09:00 UTC or 20:00 UTC on June 12?**
+   - **Reply format**: Update `BLOCKED.md` Resolution field for open-repo block, or reply here
+   - **Deadline**: June 12 09:00 UTC (~9 hours from this session start)
+
+**Session duration**: ~2 minutes (orientation + block verification + critical escalation + CHECKIN update)
+
+---
+
 ## Since Last Check-in (Session 3134, June 11 2026 ~08:30 UTC)
 
 **Orchestrator Action**: Standard orientation completed. Pause directive ACTIVE through June 15 00:00 UTC (~3d 16h remaining). All 4 blocks re-verified unresolved. **CRITICAL: open-repo deployment timing decision deadline is TOMORROW at 09:00 UTC — decision is MANDATORY.**
