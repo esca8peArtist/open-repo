@@ -50,11 +50,11 @@
 
 - [x] **M-6**: `stacker_registry` is loaded from JSON with no schema validation. ✅ **COMPLETE** (Session 3206): Added _validate_stacker_registry() function that checks required keys (file_path, base_model_ids, feature_names, name, horizon, meta_learner_type, training_approach) and types. Validation called immediately after registry load. Raises ValueError with detailed error message on schema violation. Tests: validation passes with valid registry, correctly rejects missing keys and wrong types. Commit: 6f17bd2.
 
-- [ ] **M-7**: `feature_store.py` is re-initialized on every `FeaturePipeline()` instantiation even when `use_cache=False`. Fix: lazy initialization or flag-gated construction.
+- [x] **M-7**: `feature_store.py` is re-initialized on every `FeaturePipeline()` instantiation even when `use_cache=False`. ✅ **COMPLETE** (Session 3207): Lazy initialize FeatureStore — only create when use_cache=True. Tests: 3/3 passing (test_feature_pipeline_m7_lazy_init.py). Commit: f685656.
 
 - [x] **M-8**: `TRADING_DAYS_PER_YEAR` consolidation. ✅ **COMPLETE**: Extracted to `src/backtesting/constants.py`. Updated imports in: walk_forward_engine.py, walk_forward.py, performance_metrics.py, model_comparison.py, live_vs_backtest_tracker.py. Backward compatibility maintained (re-exported from backtesting.__init__). Tests passing (41/41 performance_metrics tests).
 
-- [ ] **M-9**: Broker factory does not enforce single-broker-per-mode invariant. Add a guard that raises if more than one broker is registered for a given mode.
+- [x] **M-9**: Broker factory does not enforce single-broker-per-mode invariant. ✅ **COMPLETE** (Session 3207): Add guard that raises if more than one broker is registered for a given mode. Added _broker_registry class variable, registry check in create(), and clear_registry() method. Tests: 4/4 passing (test_broker_factory_m9_invariant.py). Commit: f685656.
 
 - [x] **M-10**: `WORKLOG.md` reference clarification. ✅ **IDENTIFIED & DOCUMENTED** (Session 3201): WORKLOG.md is orchestrator-level, not stockbot developer-facing. CODEBASE_REVIEW references it as commit convention but it's not a dev requirement. Clarification: Orchestrator logs to WORKLOG.md, not developers. Status: No code change required; documentation complete.
 
