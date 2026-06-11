@@ -2,6 +2,35 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3207, June 11 2026 19:00-20:15 UTC — deployment execution window monitoring)
+
+**Orchestrator Status**: Deployment monitoring standby. Background deployment script (PID 442029) scheduled to execute at 20:15 UTC. All projects paused per user directive; no autonomous work available. Monitoring window: 19:00-20:15 UTC.
+
+**What Happened**:
+- ✅ **Orientation Complete** (19:00 UTC): Full state verification, all files current
+- ✅ **Deployment Script Confirmed**: PID 442029 running since 18:16 UTC, scheduled 20:15 UTC execution
+- ✅ **Code Ready**: z-score clipping fix (ensemble_stacker.py lines 21-24) verified in master
+- ✅ **Monitoring Scripts Active**: Background monitor (PID 450484) watching for DEPLOY_READY creation
+- ✅ **No Autonomous Work**: All projects paused/blocked; standing by for deployment window
+
+**What's In Progress**:
+- 🔴 **INV-1 Deployment Window**: 20:15 UTC execution (75 min from orientation time 19:00 UTC)
+  - Scheduled trigger: Background script DEPLOY_READY creation post-market close (20:00 UTC)
+  - Deployment action: rsync code + docker restart sequence
+  - Expected outcome: AMZN/JPM buy_prob restore to non-zero signals within 60s of container restart
+
+**Verification Timeline**:
+- **20:15 UTC**: DEPLOY_READY file created (autonomous background scheduler)
+- **20:15-20:30 UTC**: Orchestrator executes deployment (rsync + docker restart)
+- **20:30-20:35 UTC**: First trading cycle executes with restored signals
+- **20:35+ UTC**: Post-market verification complete; log outcome to WORKLOG.md
+
+**Items Needing User Input**: None. Deployment proceeding autonomously.
+
+**Next Checkpoint** (20:25 UTC): Verify DEPLOY_READY created, check Jetson Docker logs for buy_prob non-zero.
+
+---
+
 ## Since Last Check-in (Session 3206, June 11 2026 18:53 UTC — deployment monitoring standby)
 
 **Orchestrator Status**: Full orientation complete, all state verified. Deployment script (PID 442029) confirmed running on schedule. Standing by for autonomous DEPLOY_READY creation at 20:15 UTC (in ~82 minutes).
