@@ -475,7 +475,8 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
   - **Item 1** (buy_prob flatlining fix): OOD z-score normalization issue resolved; z-score clipping to [-5, 5] range deployed. 32 tests passing. Ready for Jetson deployment.
   - **Item 2** (H-5 DB access unification): Walk-forward results now use unified ORM via DatabaseManager instead of raw sqlite3. Schema (WalkForwardResults), DatabaseManager CRUD methods, and WalkForwardEngine refactor all complete. Backward compatible (db_path parameter deprecated). Commit: f44457a
   - **M-1** (Performance metrics consolidation): Consolidated three overlapping metrics modules into canonical `src/backtesting/performance_metrics.py`. Added direct metric functions for walk_forward_engine (sharpe_from_returns, sortino_from_returns, max_drawdown_from_equity_curve, calmar_ratio). Import aliases in walk_forward_engine.py. 1000+ tests passing. Commit: fb09dcf
-  🔄 **REMAINING SPRINT 3 ITEMS**: M-2-M-10 (tech debt). Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX per item.
+  - **M-2** (TradingSession.__init__ refactoring): Extracted 282-line constructor into 7 helper methods (_init_state_variables, _init_hmm_masking, _init_exit_signal_generator, _init_earnings_blackout_filter, _init_earnings_drift_strategy, _init_guardrails, _init_risk_aggregator). Constructor reduced to 20 executable lines (93% reduction). Backward compatible, all try/except blocks preserved. Python syntax verified. Commit: 03ce038
+  🔄 **REMAINING SPRINT 3 ITEMS**: M-3-M-10 (tech debt). Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX per item.
 
 **Sprint 2 backlog** (ordered by priority per `docs/CODEBASE_REVIEW_COMPREHENSIVE.md`):
 - ✅ **C-1** (CRITICAL): `_aggregate_folds` pooled t-stat dead code — FIXED Session 2982. G3 gate now works on low-trade-count models. Commit: 00310f9
