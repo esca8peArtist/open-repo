@@ -471,13 +471,16 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 **COMMIT-BEFORE-DEPLOY RULE**: Always `git commit` all changes in `projects/stockbot/src/`, `scripts/`, `config/`, `Dockerfile.jetson`, and `docker-compose.jetson.yml` before setting `DEPLOY_READY`. The deploy script hard-blocks on uncommitted changes to any of these files. Reason: uncommitted edits can be silently overwritten by future orchestrator sessions, then the next deploy nukes the Jetson fix. Commit = permanent; filesystem edit = temporary.
 
-**Current focus**: [RESOLVED 2026-06-11 17:00 UTC: deploy approved] ✅ **INV-1 USER APPROVED** — **Deployment Scheduled**: Jetson deployment of z-score clipping fix scheduled for 20:15 UTC (post-market, after 20:00 UTC market close). Orchestrator will rsync code + restart stockbot container. Expected outcome: AMZN/JPM trading will resume with non-zero buy_prob signals. **SPRINT 3 ITEMS 1-2 + M-1 COMPLETE**:
-  - **INV-1** (buy_prob flatlining fix): OOD z-score normalization resolved. Z-score clipping to [-5, 5] range. 32 tests passing, master commit c0ff785c. User approval processed 2026-06-11 17:02 UTC, deployment post-market.
+**Current focus**: [RESOLVED 2026-06-11 17:00 UTC: deploy approved] ✅ **INV-1 DEPLOYMENT READY** — **Code Verification Complete** (Session 3204, 17:10-17:25 UTC): z-score clipping fix verified in ensemble_stacker.py (`np.clip(z_scores, -5.0, 5.0)`). All uncommitted changes reverted. Working tree clean. **Deployment Scheduled for 20:15 UTC** (45 min post-market close). Orchestrator will rsync code + restart stockbot container. Expected outcome: AMZN/JPM trading will resume with non-zero buy_prob signals. **SPRINT 3 ITEMS 1-2 + M-1-M-4 COMPLETE**:
+  - **INV-1** (buy_prob flatlining fix): OOD z-score normalization. Z-score clipping to [-5, 5] range. 32 tests passing. Deployment post-market 20:15 UTC.
   - **INV-2** (backtesting pipeline): Complete. WalkForwardEngine + EnsembleStackerAdapter + AlpacaProvider. 75+ tests passing.
   - **Item 2** (H-5 DB unification): Walk-forward ORM via DatabaseManager. Backward compatible. Commit: f44457a
-  - **M-1** (metrics consolidation): Canonical `src/backtesting/performance_metrics.py`. 1000+ tests passing. Commit: fb09dcf
-  - **M-2** (TradingSession.__init__): Constructor reduced 282→20 executable lines (93% reduction). Commit: 03ce038
-  🔄 **NEXT**: After post-market deployment verifies signal restoration, continue with M-3-M-10 tech debt items.
+  - **M-1** (metrics consolidation): Canonical module, 1000+ tests. Commit: fb09dcf
+  - **M-2** (TradingSession.__init__): Constructor 282→20 lines (93% reduction). Commit: 03ce038
+  - **M-3** (BEAR_CONFIRM_BARS): Increased from 1 to 3. Commit: 68ec1ae
+  - **M-4** (session parameters): Moved to config. Commit: 2cab23d
+  - **M-5-M-10**: Queued for next session (M-6 schema validation, M-7-M-10 TBD)
+  🔄 **NEXT**: Post-market deployment verifies signal restoration. Then M-5-M-10 tech debt items per priority.
 
 **Sprint 2 backlog** (ordered by priority per `docs/CODEBASE_REVIEW_COMPREHENSIVE.md`):
 - ✅ **C-1** (CRITICAL): `_aggregate_folds` pooled t-stat dead code — FIXED Session 2982. G3 gate now works on low-trade-count models. Commit: 00310f9
