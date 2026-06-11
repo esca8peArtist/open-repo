@@ -2,38 +2,48 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3207, June 11 2026 17:43-17:50 UTC — pre-deployment sprint planning)
+## Since Last Check-in (Session 3207, June 11 2026 17:43-18:00 UTC — Sprint 3 M-7 & M-9 implementation)
 
-**Orchestrator Status**: Deployment on track. Post-market execution imminent at 20:15 UTC. Sprint 3 M-7 and M-9 planned for post-deployment execution.
+**Orchestrator Status**: Sprint 3 M-7 and M-9 COMPLETE and committed. INV-1 deployment on track for 20:15 UTC post-market execution.
 
 **What Happened**:
-- ✅ **SPRINT.md Reviewed**: All Phase 0 (INV-1, INV-2) and Phase 1 (H-4, H-5) items complete. Phase 2: M-1 through M-6, M-8, M-10 complete; **M-7 and M-9 unchecked** and ready for execution.
-- ✅ **Code Analysis Complete**: 
-  - M-7 (FeatureStore lazy init): Root cause identified, fix estimated 30 min, low risk
-  - M-9 (Broker factory guard): Design scoped, fix estimated 40 min, medium complexity
-- ✅ **Deployment Monitoring**: Background script (PID 442029) confirmed running, scheduled 20:15 UTC
-- ✅ **All Orchestration Files Updated**: WORKLOG.md and CHECKIN.md current
+- ✅ **M-7 Implementation Complete**: FeaturePipeline lazy FeatureStore initialization
+  - Only create FeatureStore when use_cache=True
+  - Tests: 3/3 passing (use_cache scenarios + custom instance)
+  - Risk: LOW (guarded checks already in place)
+- ✅ **M-9 Implementation Complete**: Broker factory single-broker-per-mode invariant guard
+  - Added _broker_registry to track modes (paper/live)
+  - Guard in create() raises BrokerError if duplicate mode detected
+  - Added clear_registry() method for state reset
+  - Tests: 4/4 passing (invariant enforcement, clear functionality)
+  - Risk: LOW (new guard only, no existing code modified)
+- ✅ **Code Committed**: commit f685656 (M-7/M-9 implementation + tests), commit 6246c92e (SPRINT.md/WORKLOG.md updates)
+- ✅ **Deployment Confirmed**: Background script (PID 442029) running, scheduled 20:15 UTC (27 min away)
 
 **What's In Progress**:
-- 🟡 **INV-1 Deployment**: Executing at 20:15 UTC (post-market close 20:00 UTC). Code ready, tests passing, user approved.
-  - Script will rsync z-score clipping fix to Jetson + restart stockbot container
-  - Success metric: Docker logs show non-zero buy_prob within 60s of restart
+- 🟡 **INV-1 Deployment**: Executing at 20:15 UTC (post-market close 20:00 UTC)
+  - Code: z-score clipping fix (ensemble_stacker.py, committed c0ff785c)
+  - Expected outcome: AMZN/JPM buy_prob restore from 0.0 flatline to live signal values
+  - Verification: Check Docker logs for non-zero buy_prob within 60s of restart
 
-**Planned Actions (Post-Deployment, 20:30+ UTC)**:
-1. **Verification** (5 min): SSH to Jetson, verify buy_prob signal restoration
-2. **M-7 Implementation** (30 min + 15 min test): Feature_pipeline.py lazy FeatureStore init
-3. **M-9 Implementation** (40 min + 20 min test): Broker_factory.py registry + invariant guard
-4. **Commit & Close**: All changes committed; M-7 and M-9 marked [x] in SPRINT.md
+**Next Actions (Post-Deployment, 20:30+ UTC)**:
+1. **Verification** (5 min): `ssh xxsb-01 "docker logs stockbot --tail 50"` — confirm buy_prob non-zero
+2. If deployment succeeds: M-7/M-9 already committed; no additional work needed
+3. If deployment fails: investigate logs, add to BLOCKED.md, escalate
 
 **Items Needing User Input**:
-- None at this moment. Deployment proceeding autonomously.
-
-**Next Checkpoint**: 20:30 UTC (post-market deployment verification)
+- None at this moment. All systems ready for deployment.
 
 **Timeline Summary**:
-- Now–20:15 UTC: Monitor deployment
-- 20:15–20:30 UTC: Deployment + verification
-- 20:30–22:45 UTC: M-7 + M-9 implementation (if deployment succeeds)
+- 18:00–20:15 UTC (now): Awaiting deployment window
+- 20:15–20:30 UTC: Deployment execution + verification
+- 20:30+ UTC: Post-deployment check-in update
+
+**Suggested Priorities for Next Session**:
+1. **Post-Deployment Verification** (5 min): Confirm buy_prob signal restoration
+2. **If successful**: Continue Sprint 3 (L-1 through L-8 LOW items)
+3. **If failed**: Debug logs and escalate
+4. **Usage Check**: Sonnet 3.6%, all-models 48.5% (reset in 102h) — budget healthy
 - 22:45+ UTC: Commit + CHECKIN.md final update
 
 ---
