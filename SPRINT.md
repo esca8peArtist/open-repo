@@ -48,7 +48,7 @@
 
 - [x] **M-5**: sqlite3 connection management in `_load_base_models`. ✅ **ALREADY FIXED**: Method uses `with _sqlite3.connect(...) as conn:` context manager (line 167) which automatically closes connection on all paths including exceptions.
 
-- [ ] **M-6**: `stacker_registry` is loaded from JSON with no schema validation. Add schema validation (required keys, type checks) on load and raise a clear error on malformed input.
+- [x] **M-6**: `stacker_registry` is loaded from JSON with no schema validation. ✅ **COMPLETE** (Session 3206): Added _validate_stacker_registry() function that checks required keys (file_path, base_model_ids, feature_names, name, horizon, meta_learner_type, training_approach) and types. Validation called immediately after registry load. Raises ValueError with detailed error message on schema violation. Tests: validation passes with valid registry, correctly rejects missing keys and wrong types. Commit: 6f17bd2.
 
 - [ ] **M-7**: `feature_store.py` is re-initialized on every `FeaturePipeline()` instantiation even when `use_cache=False`. Fix: lazy initialization or flag-gated construction.
 
