@@ -2,6 +2,57 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3220, June 11 2026 21:30 UTC — USER PAUSE LIFTED, PHASE 3 & PHASE 2 WORK RESTARTED)
+
+**Orchestrator Status**: ✅ **PAUSE LIFTED** — User resumed work. Parallel subagents deployed for stockbot Phase 3 post-deployment planning and resistance-research Phase 2 Wave 1 execution. Both projects now active.
+
+## Session 3220 (June 11 2026 21:30 UTC) — Pause Lifted, Parallel Phase 3 & Phase 2 Execution Begins
+
+**What Happened**:
+- ✅ **User Resumed Work** — New directive overrides pause directive 2026-06-10
+- ✅ **Stockbot Subagent Findings**: Jetson all-healthy verification complete. Signal restoration checklist created for June 12 13:30 UTC market open. Phase 3 tech debt (M-7–M-10) identified: 4 items, ~5-6h total, non-deploy standalone work.
+- ✅ **Resistance-Research Subagent Findings**: Wave 1 (CLC + Issue One) not executed June 9-10, recoverable today. All infrastructure verified ready. Wave 1 user execution 60-75 min. Wave 2 ready for June 12-13.
+
+**Key Findings**:
+
+### Stockbot (Priority #1)
+- 🟢 **INV-1 Deployed**: z-score clipping fix active on Jetson
+- 🟢 **Jetson Health**: 47.9°C thermals, 134 GiB free disk, zero container crashes
+- 📋 **June 12 Checkpoint**: Verify buy_prob non-zero at market open (13:30 UTC). Success criteria detailed in signal verification checklist.
+- 📋 **Phase 3a (June 12–15)**: AAPL lgbm_ho retrain + MSFT ridge_wf first training → 4-session deployment if gates pass (5-6/6 minimum)
+- 📋 **Phase 3 Tech Debt**: M-7–M-10 queued (FeatureStore lazy init, TRADING_DAYS de-dup, broker factory optimize, WORKLOG hook). 1-2h per item.
+
+### Resistance-Research (Priority #2)
+- 🟡 **Wave 1 OVERDUE**: CLC + Issue One scheduled June 9-10, not sent. All infrastructure ready. **User action required today: 60-75 min email sends.**
+- 📋 **Wave 1 Instructions**: Email templates in `domain-51-send-templates.md`. Two field-fills per email. CLC first (name + contact), Issue One second (stagger 90 min apart). Log sends in `DISTRIBUTION_EXECUTION_LOG.md`.
+- 📋 **Wave 2 Ready**: June 12-13 (Common Cause CA, LWV CA, Clean Money Action Fund). Same template structure, zero blockers.
+- 🟢 **Phase 3 Domains K & H**: Both production-ready (Federal Judiciary Restructuring, Constitutional Resilience Architecture). Distribution targets identified. Hard deadline January 3, 2027.
+
+**Current Status**:
+- 🟢 **Deployment**: INV-1 production-ready, Jetson healthy
+- 🟡 **Resistance-Research**: Wave 1 overdue, recoverable today with user email sends
+- 📋 **Tech Debt**: M-7–M-10 standalone, ready for autonomous execution after user Wave 1 send
+- ✅ **Projects Resumed**: Stockbot + Resistance-Research now active (pause lifted)
+
+**Items Needing User Input**:
+1. **Wave 1 Email Sends (Resistance-Research)** — TODAY, 60-75 min user action
+   - Send to: CLC (echlopak@campaignlegalcenter.org), Issue One (info@issueone.org)
+   - Template: `domain-51-send-templates.md` Emails 4–5
+   - Log: `DISTRIBUTION_EXECUTION_LOG.md`
+   - Window: Today is 20 days before hard deadline (July 1); slip is recoverable
+2. **Approve M-7–M-10 Tech Debt Execution** — Stockbot standalone items, 5-6h total, no deploy
+3. **Confirm June 12 Signal Verification Plan** — Buy_prob restoration checklist ready to execute at market open
+
+**Suggested Next Actions** (when user completes Wave 1):
+1. **Stockbot M-7–M-10** (5-6h standalone, no deploy needed): FeatureStore lazy init → TRADING_DAYS de-dup → broker singleton → WORKLOG hook
+2. **Resistance-Research Wave 2 + Patch** (June 12, 60-75 min): Common Cause CA + LWV CA + Clean Money. Also apply Domain 59 urgency frame patch (15 min, file edit).
+3. **June 12 Stockbot Verification** (13:30 UTC): Monitor AMZN/JPM buy_prob restoration live, confirm signal revival
+4. **Day 7 Checkpoint** (June 17-18): Resistance-Research inbox review, Gist view count tracking, Tier 2 activation decision
+
+**Queue Status**: 5 exploration queue items available (if both Phase 2 & Phase 3 pause between sprints). Phase 3 research on any queued domain ready to start post-Wave-2.
+
+---
+
 ## Since Last Check-in (Session 3219, June 11 2026 20:59 UTC — Post-deployment standby, all projects paused)
 
 **Orchestrator Status**: ✅ **INV-1 DEPLOYMENT COMPLETE & VERIFIED** (Sessions 3216-3217). z-score clipping fix deployed to Jetson, container restarted, both AMZN/JPM sessions operational. Orchestrator standing by per user pause directive 2026-06-10. No autonomous work available.
