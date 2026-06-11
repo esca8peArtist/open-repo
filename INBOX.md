@@ -10,6 +10,8 @@
 ---
 
 ## New Items
+- [2026-06-11 16:28] stockbot Sprint 3 direction: Resume dev agent loop. First task: define Sprint 3 backlog from remaining HIGH items in CODEBASE_REVIEW_COMPREHENSIVE.md (H-4, H-5 unimplemented) plus all 10 MEDIUM items (M-1 through M-10). Investigate why buy_prob is flatlining at 0.0000 for both AMZN and JPM sessions — no trades since June 1. Build backtesting pipeline per strategic reset goal. Continue SPEC→PLAN→IMPLEMENT→REVIEW→FIX loop.
+- [2026-06-11 16:28] !resume received — user cleared pause via Claude Code session. Autonomy restored immediately.
 
 (NONE — all pending items processed from Session 2979)
 
