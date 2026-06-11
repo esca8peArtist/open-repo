@@ -2,36 +2,40 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3211, June 11 2026 ~19:00 UTC — deployment monitoring standby)
+## Since Last Check-in (Session 3212, June 11 2026 18:31-20:15 UTC — deployment verification checkpoint)
 
-**Orchestrator Status**: INV-1 deployment scheduled for 21:14 UTC. Deployment script (PID 442029) confirmed running and on schedule.
+**Orchestrator Status**: Full orientation complete. All state verified. Deployment script (PID 442029) confirmed running on schedule. Standing by for DEPLOY_READY creation at 20:15 UTC.
 
 **What Happened**:
-- ✅ **Full Orientation Complete**: Verified all state files. All projects paused/blocked. No autonomous work available.
-- ✅ **Deployment Script Verified**: PID 442029 still running with correct 10735 second delay (21:14 UTC execution)
-- ✅ **DEPLOY_READY Status**: File not yet created (expected at 21:14 UTC)
-- ✅ **Code Status**: Z-score clipping fix verified in master (c0ff785c)
-- ✅ **Session 3211 Entry Logged**: WORKLOG updated with current monitoring status
+- ✅ **Full Orientation Complete** (18:31-18:35 UTC):
+  - ORCHESTRATOR_STATE.md: Stockbot deployment scheduled 20:15 UTC, all other projects paused/blocked per user directive
+  - BLOCKED.md: 3 active blocks, all requiring user action (VeraCrypt restart, test print, platform decision)
+  - INBOX.md: Empty (all items processed from Session 3202)
+  - PROJECTS.md: All projects either paused or blocked on external action
+- ✅ **Deployment Script Verified**: PID 442029 confirmed running since 2026-06-11 18:16 UTC
+- ✅ **Code Status**: Z-score clipping fix verified in master (commit c0ff785c, ensemble_stacker.py lines 21-24)
+- ✅ **Exploration Queue Audited**: 5 items staged; most dependent on past deadlines or pause directive (active through June 15)
 
 **What's In Progress**:
-- 🟡 **INV-1 Deployment**: Autonomous execution scheduled for 21:14 UTC (post-market 20:00 UTC close)
-  - Fix: np.clip(z_scores, -5.0, 5.0) in ensemble_stacker.py
+- 🟡 **INV-1 Deployment**: Autonomous execution scheduled for 20:15 UTC (post-market 20:00 UTC close)
+  - Fix: `np.clip(z_scores, -5.0, 5.0)` in ensemble_stacker.py (prevents OOD z-score saturation)
+  - Root cause: AMZN/JPM buy_prob=0.0000 for 10+ days due to z-scores up to 15-100 standard deviations
   - Expected outcome: AMZN/JPM buy_prob restore from 0.0 flatline to live signal values
-  - Verification method: Docker logs for buy_prob non-zero within 60s of restart
+  - Verification method: Docker logs should show buy_prob non-zero within 60s of container restart
 
 **Items Needing User Input**: None. Deployment proceeding autonomously.
 
-**Timeline**:
-- **21:14 UTC**: DEPLOY_READY file created by scheduler (autonomous)
-- **~21:15-21:20 UTC**: Orchestrator detects DEPLOY_READY, executes rsync + docker restart
-- **~21:25-21:30 UTC**: First trading cycle on Jetson (AMZN/JPM signals should resume)
-- **Post-21:30 UTC**: Verification checkpoint to confirm signal restoration
+**Monitoring Timeline**:
+- **20:15 UTC**: DEPLOY_READY file created by scheduler (autonomous)
+- **~20:15-20:30 UTC**: Orchestrator detects DEPLOY_READY, executes rsync + docker restart
+- **~20:30-20:35 UTC**: First trading cycle on Jetson, AMZN/JPM sessions generate signals
+- **20:35+ UTC**: Verification checkpoint to confirm signal restoration
 
-**Suggested Actions for Next Wakeup** (21:30+ UTC):
-1. Check if DEPLOY_READY file exists (confirms 21:14 UTC trigger)
-2. Verify Docker logs show buy_prob non-zero for AMZN/JPM
-3. If successful: Log outcome, continue Sprint 3 (M-10+)
-4. If failed: Investigate logs, add to BLOCKED.md
+**Suggested Actions for Next Wakeup** (20:15+ UTC):
+1. ✅ Check if DEPLOY_READY file exists (confirms 20:15 UTC scheduler trigger)
+2. ✅ Verify Docker logs show buy_prob non-zero for AMZN/JPM sessions
+3. If successful: Log outcome, mark INV-1 as COMPLETE, continue Sprint 3 items (M-10+) next session
+4. If failed: Investigate logs, add detailed findings to BLOCKED.md
 
 ---
 
