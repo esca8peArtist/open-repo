@@ -34,6 +34,20 @@
 
 ---
 
+## Orchestrator Sprint Protocol
+
+When a project's **Current focus** references `SPRINT.md`:
+1. Read `SPRINT.md` at session start
+2. Pick the FIRST unchecked `- [ ]` item and work on it — do NOT wait for direction
+3. Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX for every item
+4. Check off the item, commit, and continue to the next item in the same session if budget allows
+5. When blocked: add to `BLOCKED.md` AND append `- [ ] [project] <title> — <what you need>` to `NOTIFY_QUEUE.md`
+6. When sprint complete: append `- [ ] [project] Sprint complete — all items done. Ready for next sprint.` to `NOTIFY_QUEUE.md`
+
+The loop ends only when: (a) all items are checked, (b) a block requires user input, or (c) usage budget is exhausted for the session.
+
+---
+
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
 2. resistance-research
@@ -457,7 +471,7 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 **COMMIT-BEFORE-DEPLOY RULE**: Always `git commit` all changes in `projects/stockbot/src/`, `scripts/`, `config/`, `Dockerfile.jetson`, and `docker-compose.jetson.yml` before setting `DEPLOY_READY`. The deploy script hard-blocks on uncommitted changes to any of these files. Reason: uncommitted edits can be silently overwritten by future orchestrator sessions, then the next deploy nukes the Jetson fix. Commit = permanent; filesystem edit = temporary.
 
-**Current focus**: ✅ **SPRINT 2 COMPLETE — 11/11 ITEMS DONE (100%)**. Pause directive cleared June 11 16:28 UTC — autonomy restored. **SPRINT 3 IN PROGRESS**: Investigating buy_prob flatlining (0.0000 on AMZN/JPM since June 1). Backlog defined from CODEBASE_REVIEW_COMPREHENSIVE.md: H-4 (cross-asset features train/serve skew), H-5 (unify DB access pattern), M-1-M-10 (tech debt: metrics deduplication, const consolidation, SQLAlchemy migration, connection leaks, registry validation, feature store optimization, broker singleton). Agent Loop Workflow v2.0 (SPEC→PLAN→IMPLEMENT→REVIEW→FIX) continues.
+**Current focus**: 🔄 **SPRINT 3 IN PROGRESS** — see `SPRINT.md` for full task list (21 items). Work through items continuously; do NOT stop between items. Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX per item. When blocked: add to BLOCKED.md + append to NOTIFY_QUEUE.md. When sprint complete: append completion notice to NOTIFY_QUEUE.md.
 
 **Sprint 2 backlog** (ordered by priority per `docs/CODEBASE_REVIEW_COMPREHENSIVE.md`):
 - ✅ **C-1** (CRITICAL): `_aggregate_folds` pooled t-stat dead code — FIXED Session 2982. G3 gate now works on low-trade-count models. Commit: 00310f9

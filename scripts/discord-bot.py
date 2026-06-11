@@ -19,6 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import discord
+from discord.ext import tasks
 
 WORKSPACE = Path(
     os.environ.get("CLAUDE_WORKSPACE", Path.home() / "dev/SuperClaude_Framework")
@@ -28,6 +29,7 @@ WORKLOG = WORKSPACE / "WORKLOG.md"
 CHECKIN = WORKSPACE / "CHECKIN.md"
 BLOCKED = WORKSPACE / "BLOCKED.md"
 PROJECTS = WORKSPACE / "PROJECTS.md"
+NOTIFY_QUEUE = WORKSPACE / "NOTIFY_QUEUE.md"
 SCRIPTS = WORKSPACE / "scripts"
 
 # Add scripts dir to path so we can import usage-check functions
@@ -73,9 +75,39 @@ def read_section(path: Path, section: str, lines: int = 40) -> str:
         stops = [c for c in candidates if c > 0]
         end = min(stops) if stops else -1
         result = chunk[:end].strip() if end > 0 else chunk.strip()
-        return result[:MAX_DISCORD_LENGTH] or "(empty section)"
+        return result or "(empty section)"
     except FileNotFoundError:
         return f"(file not found: {path.name})"
+
+
+def parse_active_blocks() -> list[dict]:
+    """Parse BLOCKED.md active blocks into compact dicts {title, project, what_i_need}."""
+    try:
+        content = BLOCKED.read_text()
+        active_m = re.search(r'## Active Blocks\n(.*?)(?=\n## |\Z)', content, re.DOTALL)
+        if not active_m:
+            return []
+        blocks = []
+        for block_text in re.split(r'\n(?=### )', active_m.group(1)):
+            if not block_text.strip():
+                continue
+            title_m = re.match(r'### (.+)', block_text)
+            if not title_m:
+                continue
+            title = title_m.group(1).strip()
+            project = re.split(r'\s*[—–]\s*', title, 1)[0].strip()
+            res_m = re.search(r'\*\*Resolution\*\*:\s*(.+)', block_text)
+            resolution = res_m.group(1).strip() if res_m else ''
+            if resolution and resolution != '[leave blank]':
+                continue  # already resolved, skip
+            need_m = re.search(r'\*\*What I need\*\*:\s*(.*?)(?=\n\*\*|\Z)', block_text, re.DOTALL)
+            what_i_need = need_m.group(1).strip() if need_m else '(see full detail below)'
+            if len(what_i_need) > 200:
+                what_i_need = what_i_need[:197] + '...'
+            blocks.append({'title': title, 'project': project, 'what_i_need': what_i_need})
+        return blocks
+    except FileNotFoundError:
+        return []
 
 
 def _update_blocked_field(filepath: Path, field_re: str, project: str, new_value: str) -> str | None:
@@ -414,9 +446,41 @@ intents.message_content = True
 client = discord.Client(intents=intents)
 
 
+@tasks.loop(seconds=30)
+async def poll_notify_queue():
+    """Send any pending [ ] items from NOTIFY_QUEUE.md to the Discord channel."""
+    if not NOTIFY_QUEUE.exists():
+        return
+    try:
+        content = NOTIFY_QUEUE.read_text()
+        lines = content.splitlines()
+        pending = [(i, line) for i, line in enumerate(lines) if re.match(r'^- \[ \] ', line)]
+        if not pending:
+            return
+        channel = client.get_channel(CHANNEL_ID)
+        if not channel:
+            return
+        new_lines = lines.copy()
+        for i, line in pending:
+            msg = line[6:].strip()  # strip "- [ ] "
+            await channel.send(f"🔔 **Orchestrator**: {msg}")
+            new_lines[i] = "- [x] " + msg
+        tmp = NOTIFY_QUEUE.with_suffix(".tmp")
+        tmp.write_text("\n".join(new_lines) + "\n")
+        os.replace(tmp, NOTIFY_QUEUE)
+    except Exception as e:
+        print(f"[notify_queue] Error: {e}")
+
+
+@poll_notify_queue.before_loop
+async def before_poll_notify_queue():
+    await client.wait_until_ready()
+
+
 @client.event
 async def on_ready():
     print(f"[{datetime.now()}] Bot online as {client.user}")
+    poll_notify_queue.start()
     channel = client.get_channel(CHANNEL_ID)
     if channel:
         await channel.send(
@@ -518,19 +582,26 @@ async def on_message(message: discord.Message):
             await message.channel.send(chunk)
 
     elif content.lower() == "!blocked":
-        formal = read_section(BLOCKED, "## Active Blocks")
+        blocks = parse_active_blocks()
         project_blocks = read_project_blocks()
 
-        lines = ["**BLOCKED — Formal entries (BLOCKED.md)**", formal]
-        if project_blocks:
-            lines.append("\n**BLOCKED — Project-level user actions needed**")
-            for project, block in project_blocks:
-                lines.append(f"• **{project}**: {block}")
-            lines.append(
-                "\n_To clear a project block: `!resolve <project> <what you did>`_"
-            )
+        lines = []
+        if blocks:
+            lines.append(f"**BLOCKED ({len(blocks)} item{'s' if len(blocks) != 1 else ''})**\n")
+            for i, b in enumerate(blocks, 1):
+                lines.append(f"**{i}. {b['title']}**")
+                lines.append(f"Needs: {b['what_i_need']}")
+                lines.append(f"→ `!resolve {b['project']} <what you did>`\n")
+            lines.append("_Use `!block <project>` for full context on any item._")
         else:
-            lines.append("\n_No project-level user actions pending._")
+            lines.append("**BLOCKED** — No active blocks ✅")
+
+        if project_blocks:
+            lines.append("\n**Project-level actions needed** (ORCHESTRATOR_STATE.md):")
+            for proj, block in project_blocks:
+                block_short = block[:150] + '...' if len(block) > 150 else block
+                lines.append(f"• **{proj}**: {block_short}")
+            lines.append("_Use `!resolve <project> <what you did>` to clear._")
 
         for chunk in chunk_message("\n".join(lines)):
             await message.channel.send(chunk)
