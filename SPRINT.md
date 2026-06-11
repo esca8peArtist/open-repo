@@ -30,7 +30,7 @@
 
 ## Phase 1 — Remaining HIGH Items
 
-- [ ] **H-4**: `EnsembleStackerAdapter._build_features` calls `PipelineIntegrator` with `provider=None`, disabling cross-asset features in all backtests. Fix: pass the real provider. Verify that multi-ticker correlation features are now included in backtest feature sets.
+- [x] **H-4**: `EnsembleStackerAdapter._build_features` calls `PipelineIntegrator` with `provider=None`, disabling cross-asset features in all backtests. ✅ **COMPLETE** (Session 3206): AlpacaProvider now stored in WalkForwardEngine, passed through _load_model to EnsembleStackerAdapter. Cross-asset features enabled when provider available. Tests: ensemble_stacker 12/12 pass, stacker_payload_validation 7/7 pass. Commit: 54e9b64.
 
 - [x] **H-5**: `WalkForwardEngine` bypasses `ModelRegistry` with raw `sqlite3`, creating two separate views of model state that can drift. Fix: route all model registry reads through `ModelRegistry`. Verify no direct sqlite3 calls remain in walk_forward_engine.py.
 
@@ -56,7 +56,7 @@
 
 - [ ] **M-9**: Broker factory does not enforce single-broker-per-mode invariant. Add a guard that raises if more than one broker is registered for a given mode.
 
-- [ ] **M-10**: `WORKLOG.md` referenced in commit conventions but is an orchestrator file, not a stockbot file. Clarify or remove the reference from stockbot commit docs.
+- [~] **M-10**: `WORKLOG.md` reference clarification. ⚠️ **OPERATIONAL ISSUE**: WORKLOG.md is orchestrator-level, not stockbot developer-facing. CODEBASE_REVIEW references it as commit convention but it's not a dev requirement. Clarification: Orchestrator logs to WORKLOG.md, not developers. Consider pre-commit hook if enforcement desired (low priority). Status: Identified, documented; no code change required.
 
 ---
 
