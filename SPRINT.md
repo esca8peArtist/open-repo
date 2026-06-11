@@ -44,7 +44,7 @@
 
 - [x] **M-3**: `BEAR_CONFIRM_BARS` configuration. ✅ **COMPLETE**: Currently set to `BEAR_CONFIRM_BARS = 3` in `src/backtesting/walk_forward_engine.py` line 374, matching design intent ("confirmation window" — avoid transient one-day bear signal overtrading). Comment and code alignment verified. Intent documented.
 
-- [ ] **M-4**: `_TIME_STOP_BARS`, `_FILL_POLL_ATTEMPTS`, `_BARS_RETRY_ATTEMPTS`, `_CYCLE_TIMEOUT`, `_BACKOFF_BASE`, `_BACKOFF_MAX` are module-level constants that belong in config. Move to `config/default_config.yaml` and read via `TradingSession`.
+- [x] **M-4**: `_TIME_STOP_BARS`, `_FILL_POLL_ATTEMPTS`, `_BARS_RETRY_ATTEMPTS`, `_CYCLE_TIMEOUT`, `_BACKOFF_BASE`, `_BACKOFF_MAX` are module-level constants that belong in config. ✅ **COMPLETE** (Session 3206): Moved fill_poll_attempts, bars_retry_attempts, cycle_timeout, backoff_base, backoff_max to config/default_config.yaml under live_trading.session_parameters. Added _load_session_parameters() function that reads from config at module import with fallback to defaults. Environment variable overrides available for each parameter. _TIME_STOP_BARS now reads from model metadata (H-2 fix) so excluded. Prerequisite for L-7. Commit: 2cab23d.
 
 - [x] **M-5**: sqlite3 connection management in `_load_base_models`. ✅ **ALREADY FIXED**: Method uses `with _sqlite3.connect(...) as conn:` context manager (line 167) which automatically closes connection on all paths including exceptions.
 
