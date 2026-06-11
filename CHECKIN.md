@@ -2,17 +2,17 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3235, June 12 2026 — PAUSE DIRECTIVE VERIFIED STABLE, AWAITING MARKET-OPEN CHECKPOINT)
+## Since Last Check-in (Session 3236, June 11 2026 23:45 UTC — PAUSE DIRECTIVE VERIFIED STABLE, 13.5 HOURS TO MARKET-OPEN CHECKPOINT)
 
-**Orchestrator Status**: ✅ **PAUSE DIRECTIVE VERIFIED STABLE** — Through June 15 00:00 UTC. All projects paused per user directive 2026-06-10. No autonomous work available. All three active blocks remain unresolved (requiring user actions). Awaiting June 12 13:30 UTC market-open verification of INV-1 z-score clipping fix (Jetson AMZN/JPM session signal restoration).
+**Orchestrator Status**: ✅ **PAUSE DIRECTIVE VERIFIED STABLE** — Confirmed through June 15 00:00 UTC. All projects paused per user directive 2026-06-10. No autonomous work available. All three active blocks remain unresolved (requiring user actions). Awaiting June 12 13:30 UTC market-open verification of INV-1 z-score clipping fix (Jetson AMZN/JPM session signal restoration).
 
-**Orientation Results** (23:32 UTC):
-- ✓ ORCHESTRATOR_STATE.md reviewed (generated 2026-06-11T23:31:58Z)
+**Orientation Results** (23:45 UTC, June 11):
+- ✓ ORCHESTRATOR_STATE.md reviewed (generated 2026-06-11T23:44:27Z)
 - ✓ BLOCKED.md verified (3 active blocks unchanged, all require user action):
   - **cybersecurity-hardening**: Windows VeraCrypt pre-boot restart + Phase 1 continuation
   - **mfg-farm**: Test print execution (awaiting user completion and evaluation)
   - **systems-resilience**: Platform deployment decision (Discourse vs Nextcloud+Matrix; June 9 deadline passed, deferred)
-- ✓ INBOX.md empty; no new items since Session 3227
+- ✓ INBOX.md empty; no new items since Session 3219
 - ✓ PROJECTS.md verified (all 10 projects paused per directive 2026-06-10)
 - ✓ Pause directive confirmed stable through June 15 00:00 UTC
 
@@ -20,21 +20,21 @@
 - 🟡 **All projects remain paused** per user directive 2026-06-10
 - 🟡 **Zero autonomous work available** — no work warranted until user resumes (Discord resume signal expected June 15+)
 - ✓ **Exploration Queue**: 5 items available (sufficient, ≥3 threshold; no new items needed)
-- ✓ **Next checkpoint**: June 12 13:30 UTC (automated buy_prob signal verification for Jetson AMZN/JPM sessions, confirms INV-1 z-score clipping fix is working)
+- ⏳ **Critical checkpoint**: June 12 13:30 UTC (13.5 hours away) — automated buy_prob signal verification for Jetson AMZN/JPM sessions (confirms INV-1 z-score clipping fix is working). Expected behavior: buy_prob non-zero for at least one session at market open = PASS.
 
 **Items Needing User Input**: 
 1. **cybersecurity-hardening Phase 1.3** — Windows VeraCrypt pre-boot restart + encryption enable (can be done anytime)
 2. **mfg-farm** — Execute test print (0.20mm layer, PLA+, 3 walls, 220–225°C) and report snap-arm clearance evaluation
 3. **systems-resilience platform choice** — Discourse (2-3 hrs deployment) vs Nextcloud+Matrix (4-6 hrs, memory risk)
-4. **resistance-research Wave 2 execution** (June 12, 09:00–12:00 UTC) — 3 email sends with 90-min stagger (Darius Kemp, Jenny Farrell, Clean Money Action Fund); Wave 1 OVERDUE but recoverable until July 1
+4. **resistance-research Wave 2 execution** (June 12, 09:00–12:00 UTC) — 3 email sends with 90-min stagger (Darius Kemp, Jenny Farrell, Clean Money Action Fund); Wave 1 OVERDUE but recoverable through July 1
 
 **Suggested Next Actions** (when user resumes June 15+):
-1. **Resolve active blocks** — VeraCrypt restart, test print execution, platform choice confirmation
-2. **Resume resistance-research** — Wave 1 emails (recoverable until July 1), then Wave 2 (if not yet done)
-3. **Resume stockbot** — Phase P1-P4 items queued in INBOX (Signal monitor, Quick-eval, Model comparison, Shadow session mode)
-4. **Monitor June 12 signal checkpoint** — Buy_prob should restore to non-zero values at 13:30 UTC market open (confirms INV-1 z-score fix)
+1. **Check June 12 signal restoration** — Verify AMZN/JPM buy_prob restored to non-zero at 13:30 UTC (confirms INV-1 z-score clipping fix is working)
+2. **Resolve active blocks** — VeraCrypt restart, test print execution, platform choice confirmation
+3. **Resume resistance-research** — Execute Wave 2 emails if not yet done (recoverable until July 1)
+4. **Resume stockbot** — Phase P1-P4 items queued in INBOX (Signal monitor, Quick-eval, Model comparison, Shadow session mode)
 
-**Conclusion**: Orchestrator stable and idle per user pause directive. All state files verified in sync. No autonomous work warranted. Standing by for user resume signal (June 15 expected) or June 12 market-open signal verification event. Infrastructure fully operational and ready for resumption.
+**Conclusion**: Orchestrator stable and idle per user pause directive. All state files verified in sync. No autonomous work warranted. Standing by for user resume signal (June 15+ expected) or June 12 13:30 UTC market-open signal verification event. Infrastructure fully operational and ready for resumption.
 
 ---
 
