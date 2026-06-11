@@ -2,32 +2,34 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3209, June 11 2026 19:27 UTC — deployment execution window monitoring standby)
+## Since Last Check-in (Session 3211, June 11 2026 19:52 UTC — deployment monitoring standby)
 
-**Orchestrator Status**: Deployment monitoring standby. Background deployment script (PID 442029) scheduled to execute at 20:15 UTC (68 minutes from orientation). All projects paused per user directive; no autonomous work available.
+**Orchestrator Status**: Deployment monitoring standby. Background deployment script (PID 442029) on final countdown to 20:15 UTC DEPLOY_READY execution (23 minutes away). All projects paused per user directive; no autonomous work available.
 
 **What Happened**:
-- ✅ **Orientation Complete** (19:00 UTC): Full state verification, all files current
-- ✅ **Deployment Script Confirmed**: PID 442029 running since 18:16 UTC, scheduled 20:15 UTC execution
-- ✅ **Code Ready**: z-score clipping fix (ensemble_stacker.py lines 21-24) verified in master
-- ✅ **Monitoring Scripts Active**: Background monitor (PID 450484) watching for DEPLOY_READY creation
+- ✅ **Orientation Complete** (19:52 UTC): Confirmed deployment script running on schedule
+- ✅ **Deployment Script Verified**: PID 442029 running since 18:16 UTC, 23 minutes until scheduled 20:15 UTC execution
+- ✅ **Code Ready**: z-score clipping fix (ensemble_stacker.py lines 21-24) verified in master (committed c0ff785c)
+- ✅ **Monitoring Infrastructure**: Background monitor (PID 450484) watching for DEPLOY_READY creation
+- ✅ **Verification Checkpoint Scheduled**: Post-deployment checkpoint wakeup at 21:26 UTC (11 min after scheduled deployment)
 - ✅ **No Autonomous Work**: All projects paused/blocked; standing by for deployment window
 
 **What's In Progress**:
-- 🔴 **INV-1 Deployment Window**: 20:15 UTC execution (75 min from orientation time 19:00 UTC)
-  - Scheduled trigger: Background script DEPLOY_READY creation post-market close (20:00 UTC)
-  - Deployment action: rsync code + docker restart sequence
-  - Expected outcome: AMZN/JPM buy_prob restore to non-zero signals within 60s of container restart
+- 🔴 **INV-1 Deployment**: DEPLOY_READY execution in 23 minutes (20:15 UTC)
+  - **Scheduled trigger**: Background script creates DEPLOY_READY file at 20:15 UTC (45 min post-market close)
+  - **Deployment action**: rsync code + docker restart sequence
+  - **Expected outcome**: AMZN/JPM buy_prob restore from 0.0000 flatline to live signal values within 60s of container restart
+  - **Root cause being fixed**: Z-score clipping to [-5, 5] prevents OOD signal values (15-100 std dev) that caused buy_prob flatline
 
 **Verification Timeline**:
 - **20:15 UTC**: DEPLOY_READY file created (autonomous background scheduler)
-- **20:15-20:30 UTC**: Orchestrator executes deployment (rsync + docker restart)
-- **20:30-20:35 UTC**: First trading cycle executes with restored signals
-- **20:35+ UTC**: Post-market verification complete; log outcome to WORKLOG.md
+- **20:15-20:30 UTC**: Orchestrator detects DEPLOY_READY, executes rsync code + docker restart
+- **20:30-20:35 UTC**: First trading cycle executes on Jetson with restored signals
+- **21:26 UTC**: Verification checkpoint fires — confirm deployment success, check buy_prob non-zero in Docker logs
 
 **Items Needing User Input**: None. Deployment proceeding autonomously.
 
-**Next Checkpoint** (20:25 UTC): Verify DEPLOY_READY created, check Jetson Docker logs for buy_prob non-zero.
+**Next Checkpoint** (21:26 UTC): Verify DEPLOY_READY created at 20:15 UTC, check Jetson Docker logs for buy_prob non-zero for AMZN/JPM sessions, then resume autonomous work (resistance-research or exploration queue).
 
 ---
 
