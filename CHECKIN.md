@@ -2,23 +2,27 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 2985, June 11 2026 01:46 UTC)
+## Since Last Check-in (Session 2986, June 11 2026 01:52 UTC)
 
-**Orchestrator Action**: Orientation + state verification completed. Pause directive confirmed ACTIVE & CORRECT.
+**Orchestrator Action**: Standard orientation completed. Pause directive verified ACTIVE & CORRECT for ~3d 22.5h remaining.
 
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE AND CORRECT.** No autonomous work available. All projects paused except stockbot (pause lifted 2026-06-10, Sprint 2 complete 2026-06-11). Exploration Queue items scheduled for post-pause (June 15-20). Stockbot awaiting next phase direction (Sprint 2 complete, no Phase 3 work specified).
+**Block Verification** (all 4 remain unresolved):
+- ✅ mfg-farm: `ls -la projects/mfg-farm/test-print-results/` → directory does not exist (user test print not yet executed)
+- ✅ systems-resilience: `docker ps | grep -E "nextcloud|discourse"` → no containers running (user platform choice not yet made)
+- ✅ open-repo: `grep -r "deployment.*start\|deployment.*time" projects/open-repo/docs/` → conflicting times (09:00 vs 20:00 UTC) still present in docs
+- ✅ cybersecurity-hardening: manual Windows restart — cannot auto-verify
 
-**Critical User Decisions Pending**:
-1. 🚨 **open-repo — Deployment timing — DUE JUNE 12 09:00 UTC** (~31 hours): Confirm 09:00 UTC (business hours) or 20:00 UTC (off-hours). Conflicting docs exist; decision gates all downstream work.
-2. **systems-resilience — Platform choice + credentials** (61+ hours overdue): Choose Nextcloud+Matrix or Discourse; provide public IP/domain/SMTP credentials.
-3. **mfg-farm — Test print execution** (user action): 0.20mm layer height, PLA+, 3 walls, 220–225°C spec in BLOCKED.md.
-4. **cybersecurity-hardening — Windows VeraCrypt restart** (user action): Manual restart + pre-boot password + encryption activation.
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE AND CORRECT.** No autonomous work available. All projects paused except stockbot (pause lifted 2026-06-10, Sprint 2 complete 2026-06-11). Exploration Queue: 108 items staged for post-pause (June 15+). Stockbot awaiting next phase direction (Sprint 2 complete, no Phase 3 work specified).
 
-**Block Verification**: All 4 blocks re-confirmed unresolved (same as Session 2984).
+**Critical User Decisions Pending** (unchanged from Session 2985):
+1. 🚨 **open-repo — Deployment timing — DUE JUNE 12 09:00 UTC** (~30 hours remaining): Confirm canonical time 09:00 UTC (business hours) or 20:00 UTC (after-hours). Docs currently show mixed times. Update BLOCKED.md Resolution field or reply in CHECKIN.md.
+2. **systems-resilience — Platform choice + credentials** (61+ hours overdue, was due June 8 18:00 UTC): Choose Nextcloud+Matrix or Discourse; provide public IP/domain/SMTP. Deployment runbook staged, blocked only on platform decision.
+3. **mfg-farm — Test print execution** (user action): 0.20mm layer height, PLA+, 3 walls, 220–225°C. Test print required to validate snap-arm tolerance before production scale.
+4. **cybersecurity-hardening — Windows VeraCrypt completion** (user action): Manual restart + pre-boot password + encryption activation, then Phase 1 walkthrough resumes from 1.4.
 
-**Next Autonomous Work**: Resumes June 15 00:00 UTC when pause directive lifts. All 108 Exploration Queue items staged for post-pause.
+**Next Autonomous Work**: Resumes June 15 00:00 UTC when pause directive lifts. All 108 Exploration Queue items queued for June 15-20 post-pause execution.
 
-**Session duration**: ~3 minutes (orientation + state confirmation)
+**Session duration**: ~5 minutes (orientation + block verification + CHECKIN update)
 
 ---
 
