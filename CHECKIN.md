@@ -2,6 +2,35 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3133, June 11 2026 ~08:12 UTC)
+
+**Orchestrator Action**: Full orientation + project status audit + block verification + state confirmation + Exploration Queue validation.
+
+**Project Status Summary** (all 14 projects assessed):
+- ✅ mfg-farm: Paused (user directive 2026-06-10) — Phase 1 launch sequence production-ready; blocked on test print execution (user action)
+- ✅ resistance-research: Paused (user directive 2026-06-10) — Phase 2 execution ready; Phase 3 staged for post-pause (June 15+)
+- ✅ cybersecurity-hardening: Active but blocked (Phase 1 in progress) — blocked on Windows VeraCrypt pre-boot restart (user action)
+- ✅ stockbot: Active but awaiting strategy direction — Sprint 2 COMPLETE (11/11 items, codebase cleanup done); Sprint 3 TBD pending "strategy reassessment" per user directive; Priority #1: build backtesting pipeline
+- ✅ systems-resilience: Blocked on platform deployment decision (Nextcloud+Matrix or Discourse?) — **CRITICAL: 140+ hours overdue from June 8 18:00 UTC deployment deadline**
+- ⏸️ All other projects: Paused (open-source-rideshare, seedwarden, open-repo, off-grid-living, etc.) or complete
+
+**Block Status Verification** (all 3 remain unresolved):
+- ✅ cybersecurity-hardening: Windows VeraCrypt pre-boot restart (manual — cannot auto-verify). Waiting on user action.
+- ✅ mfg-farm: Test print execution (`ls projects/mfg-farm/test-print-results/` verified absent). Waiting on user action (0.20mm layer height, PLA+, 3 walls, 220–225°C).
+- ✅ systems-resilience: Platform deployment (no Docker containers running). Waiting on user decision: Nextcloud+Matrix or Discourse? Requires public IP, domain, SMTP credentials. **CRITICAL: 140+ hours overdue from June 8 18:00 UTC deployment deadline.**
+
+**Pause Directive Status**: ✅ **ACTIVE & CORRECT** through June 15 00:00 UTC (~90 hours remaining). All projects paused by design (except stockbot which was lifted for Sprint 2, now complete). No additional autonomous work available until pause lifts or user provides direction on: (1) stockbot Sprint 3 scope, (2) systems-resilience platform choice, (3) any blocked item resolution.
+
+**Exploration Queue**: 100+ pre-planned contingency items indexed; 87-106 staged for June 15+ post-pause execution. All appropriately deferred until autonomy resumes per pause directive. **Queue validated**: stockbot Phase 4 pre-planning, systems-resilience Wave 2 logistics, mfg-farm Phase 2 scaling roadmaps, resistance-research Phase 3 domain expansions all queued and production-ready.
+
+**Usage Budget**: ✅ Sonnet 2.3% (204,084 tokens), All-models 36.0% (healthy). Reset in 112 hours.
+
+**Session duration**: ~4 minutes (full orientation + project audit + block verification + queue validation + CHECKIN update + commit)
+
+**Next autonomous session**: June 15 00:00 UTC when pause lifts automatically, or immediately if user provides direction on blocked items or stockbot Sprint 3.
+
+---
+
 ## Since Last Check-in (Session 3132, June 11 2026 ~08:50 UTC)
 
 **Orchestrator Action**: Full orientation + project status audit + block verification + state confirmation.
