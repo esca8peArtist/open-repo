@@ -2,9 +2,9 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3234, June 11 2026 23:32 UTC — PAUSE DIRECTIVE VERIFIED STABLE, NO WORK WARRANTED)
+## Since Last Check-in (Session 3235, June 12 2026 — PAUSE DIRECTIVE VERIFIED STABLE, AWAITING MARKET-OPEN CHECKPOINT)
 
-**Orchestrator Status**: ✅ **PAUSE DIRECTIVE VERIFIED STABLE** — Through June 15 00:00 UTC (3.5 hours remaining). All projects paused per user directive 2026-06-10. No autonomous work available. All three active blocks remain unresolved (requiring user actions). Standing by for user resume or June 12 13:30 UTC market-open verification.
+**Orchestrator Status**: ✅ **PAUSE DIRECTIVE VERIFIED STABLE** — Through June 15 00:00 UTC. All projects paused per user directive 2026-06-10. No autonomous work available. All three active blocks remain unresolved (requiring user actions). Awaiting June 12 13:30 UTC market-open verification of INV-1 z-score clipping fix (Jetson AMZN/JPM session signal restoration).
 
 **Orientation Results** (23:32 UTC):
 - ✓ ORCHESTRATOR_STATE.md reviewed (generated 2026-06-11T23:31:58Z)
