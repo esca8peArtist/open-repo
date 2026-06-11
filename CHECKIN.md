@@ -2,6 +2,48 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3204, June 11 2026 17:10-17:30 UTC — orchestrator deployment preparation)
+
+**Orchestrator Action**: Prepare for post-market Jetson deployment of z-score clipping fix (INV-1).
+
+**What Happened**:
+- ✅ **Code Verification Complete**: Z-score clipping fix verified in `src/models/ensemble_stacker.py` (lines 21-24: `np.clip(z_scores, -5.0, 5.0)`)
+- ✅ **Working Tree Clean**: Reverted uncommitted M-8 consolidation work (TRADING_DAYS_PER_YEAR → constants). This work is separate from INV-1 and can proceed next session.
+- ✅ **Deployment Readiness Verified**: 
+  - All code changes committed to master
+  - No uncommitted files in src/, scripts/, config/
+  - Deploy script will execute automatically post-session
+- ✅ **WORKLOG and PROJECTS updated**: Documented deployment preparation and M-3/M-4 completion status
+
+**Deployment Timeline**:
+- **Current**: 17:10-17:30 UTC (during US market hours 13:30-20:00 UTC)
+- **Market Close**: 20:00 UTC
+- **Deployment Window**: 20:15 UTC (45 min post-market, safe for code sync + container restart)
+- **Action**: Will create DEPLOY_READY file after market close (20:15 UTC)
+- **Deploy Script**: Auto-executes after session ends (rsync code to Jetson + restart stockbot container)
+- **Expected Outcome**: AMZN/JPM sessions should resume generating non-zero buy_prob (currently 0.0 for 10+ days)
+
+**What's In Progress**:
+- 🟡 **INV-1 Deployment**: Queued for 20:15 UTC (post-market). Code ready, tests passing, approval complete.
+- 🟡 **M-5 through M-10 Tech Debt**: Queued for next session (M-5 sqlite3 context manager already fixed; M-6 schema validation complete; M-7-M-10 queued)
+
+**Items Needing User Input**:
+- None at this moment. Deployment is proceeding per approved timeline.
+
+**Suggested Priorities for Next Session**:
+1. **Post-Deployment Verification** (immediate): Verify buy_prob signals restored after Jetson restart
+   - Check: `ssh xxsb-01 "docker logs stockbot --since 10m 2>&1 | grep buy_prob"` — expect non-zero values
+   - Verify: First 10 trading cycles show non-zero buy_prob for at least one signal
+2. **M-7 through M-10 Tech Debt** (if time permits): Continue Sprint 3 items
+   - M-7: feature_store.py lazy initialization
+   - M-9: Broker factory invariant guard
+   - M-10: WORKLOG reference clarification
+3. **Phase 4 Integration Tests** (next phase): Hook up H-5 ORM results to backtest pipeline once M items complete
+
+**Usage Status**: Sonnet 3.6% (319,786 tokens from ORCHESTRATOR_STATE.md), reset in 103h. Budget healthy.
+
+---
+
 ## Since Last Check-in (Session 3202, June 11 2026 17:02 UTC — orchestrator block processing + deployment approval)
 
 **Orchestrator Action**: Process user approval for stockbot Sprint 3 INV-1 deployment (z-score clipping fix).
