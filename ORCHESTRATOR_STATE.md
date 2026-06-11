@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T17:55:29Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T20:15:58Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.6% (319,786 tokens) | All-models 49.0% | Reset in 102h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.6% (319,786 tokens) | All-models 51.8% | Reset in 100h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -70,27 +70,6 @@
 (NONE — all pending items processed from Session 3202)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
-## Session 3205 (2026-06-11 17:21 UTC — orchestrator) — DEPLOYMENT MONITORING
-
-**Task**: Orient to current state and monitor stockbot deployment at 20:15 UTC.
-
-**Orientation Summary**:
-- **All projects**: Either paused (resistance-research), blocked on user action (cybersecurity-hardening, mfg-farm, systems-resilience), or in deployment (stockbot)
-- **No autonomous work available**: All exploration queue items either already complete or require 2-6 hours (can't start during market hours)
-- **Deployment in progress**: Background script PID 442029 running, will create DEPLOY_READY at ~20:15 UTC
-- **Timeline**: Market close 20:00 UTC, deployment execution 20:15 UTC, expected completion 20:20-20:30 UTC
-
-**Actions**:
-1. ✅ Verified deployment script still running (PID 442029)
-2. ⏳ Monitoring for DEPLOY_READY file creation at 20:15 UTC
-3. ⏳ Will verify deployment success via SSH logs post-completion
-4. ⏳ Will update CHECKIN.md with outcome
-
-**Status**: Standing by for deployment window. All files clean and ready.
-
----
-
 ## Session 3205 (2026-06-11 17:29 UTC — orchestrator) — DEPLOYMENT MONITORING CHECKPOINT
 
 **Task**: Monitor stockbot deployment script and verify execution.
@@ -110,3 +89,24 @@
 - Next action: After deployment, verify signal restoration and update CHECKIN.md
 
 **No action required at this time** — script runs autonomously. Will monitor for completion and verify outcome in next checkpoint.
+
+---
+
+## Session 3207 (2026-06-11 19:00-20:15 UTC — orchestrator) — DEPLOYMENT EXECUTION WINDOW
+
+**Task**: Monitor stockbot INV-1 deployment scheduled for 20:15 UTC.
+
+**Orientation Results** (19:00 UTC):
+- ✅ **Current time**: 19:00 UTC, deployment in 75 minutes
+- ✅ **Deployment script**: PID 442029 confirmed running (started 18:16 UTC)
+- ✅ **Code ready**: z-score clipping fix committed and verified
+- ✅ **All state files**: No uncommitted changes
+- ✅ **Projects**: All paused per user directive 2026-06-10; no autonomous work during deployment window
+
+**Status**:
+- 🔴 **Deployment monitoring**: Waiting for 20:15 UTC execution
+- ⏳ **No autonomous work**: All projects paused/blocked; session standing by for deployment window
+
+**Next Action**: Verify DEPLOY_READY file at ~20:15 UTC, then run post-deployment verification (check Jetson buy_prob signals).
+
+[2026-06-11 20:15:00 UTC] DEPLOY_READY flag created — post-market deployment queued

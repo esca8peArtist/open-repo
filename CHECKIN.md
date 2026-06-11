@@ -2,34 +2,33 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3211, June 11 2026 19:52 UTC — deployment monitoring standby)
+## Since Last Check-in (Session 3213, June 11 2026 20:16 UTC — deployment ready for execution)
 
-**Orchestrator Status**: Deployment monitoring standby. Background deployment script (PID 442029) on final countdown to 20:15 UTC DEPLOY_READY execution (23 minutes away). All projects paused per user directive; no autonomous work available.
+**Orchestrator Status**: INV-1 deployment ready. DEPLOY_READY flag created at 20:15 UTC on schedule (45 min post-market close). Deployment script will execute when this session ends. All projects paused per user directive; no autonomous work available.
 
 **What Happened**:
-- ✅ **Orientation Complete** (19:52 UTC): Confirmed deployment script running on schedule
-- ✅ **Deployment Script Verified**: PID 442029 running since 18:16 UTC, 23 minutes until scheduled 20:15 UTC execution
-- ✅ **Code Ready**: z-score clipping fix (ensemble_stacker.py lines 21-24) verified in master (committed c0ff785c)
-- ✅ **Monitoring Infrastructure**: Background monitor (PID 450484) watching for DEPLOY_READY creation
-- ✅ **Verification Checkpoint Scheduled**: Post-deployment checkpoint wakeup at 21:26 UTC (11 min after scheduled deployment)
-- ✅ **No Autonomous Work**: All projects paused/blocked; standing by for deployment window
+- ✅ **DEPLOY_READY Created**: Flag created at 20:15 UTC (exactly on schedule for post-market deployment window)
+- ✅ **Deployment Script Verified**: `/scripts/deploy-to-jetson.sh` checked — has market-hours blackout guard and uncommitted-changes guard, will execute rsync + docker rebuild + restart
+- ✅ **Jetson Container Status**: Running normally, AMZN/JPM sessions cycling healthily as of 20:16 UTC
+- ✅ **Code Ready**: z-score clipping fix (ensemble_stacker.py lines 21-24, `np.clip(z_scores, -5.0, 5.0)`) verified in committed master (c0ff785c)
+- ✅ **No Autonomous Work Available**: All projects paused/blocked per user directive 2026-06-10
 
 **What's In Progress**:
-- 🔴 **INV-1 Deployment**: DEPLOY_READY execution in 23 minutes (20:15 UTC)
-  - **Scheduled trigger**: Background script creates DEPLOY_READY file at 20:15 UTC (45 min post-market close)
-  - **Deployment action**: rsync code + docker restart sequence
-  - **Expected outcome**: AMZN/JPM buy_prob restore from 0.0000 flatline to live signal values within 60s of container restart
-  - **Root cause being fixed**: Z-score clipping to [-5, 5] prevents OOD signal values (15-100 std dev) that caused buy_prob flatline
+- 🟡 **INV-1 Deployment** (Z-score clipping fix):
+  - **Status**: DEPLOY_READY flag ready for automatic execution when this session ends
+  - **Deployment action**: rsync src/ scripts/ web/ + docker rebuild + container restart
+  - **Expected outcome**: AMZN/JPM buy_prob signals restore from 0.0000 flatline to live non-zero values within 5 min of container restart
+  - **Root cause being fixed**: Z-scores on live features were 15-100 standard deviations from training distribution, causing sigmoid saturation at 0.0. Clipping to [-5, 5] prevents this.
 
-**Verification Timeline**:
-- **20:15 UTC**: DEPLOY_READY file created (autonomous background scheduler)
-- **20:15-20:30 UTC**: Orchestrator detects DEPLOY_READY, executes rsync code + docker restart
-- **20:30-20:35 UTC**: First trading cycle executes on Jetson with restored signals
-- **21:26 UTC**: Verification checkpoint fires — confirm deployment success, check buy_prob non-zero in Docker logs
+**Deployment Timeline**:
+- **20:15 UTC**: DEPLOY_READY flag created ✅ (confirmed)
+- **~20:30-21:00 UTC**: Orchestrator wrapper script runs deploy-to-jetson.sh (automatic, this session triggers it)
+- **~21:00+ UTC**: Jetson container restart completes, trading sessions resume with z-score clipping active
+- **Next session or monitor**: Verify Docker logs show buy_prob non-zero for AMZN/JPM
 
 **Items Needing User Input**: None. Deployment proceeding autonomously.
 
-**Next Checkpoint** (21:26 UTC): Verify DEPLOY_READY created at 20:15 UTC, check Jetson Docker logs for buy_prob non-zero for AMZN/JPM sessions, then resume autonomous work (resistance-research or exploration queue).
+**Suggested Next Checkpoint** (when deployment completes): Verify buy_prob signal restoration in Jetson Docker logs, then resume autonomous work (resistance-research or other high-priority projects).
 
 ---
 
