@@ -2,6 +2,45 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3221, June 11 2026 22:20 UTC — M-7–M-10 TECH DEBT COMPLETE, WAVE 2 PREP READY)
+
+**Orchestrator Status**: ✅ **PHASE 3 TECH DEBT COMPLETE (M-7–M-10)** — All four stockbot tech debt items implemented, tested, and committed (commit 93c94ca). **Resistance-Research Wave 2 execution-ready** — All Wave 2 contacts re-verified current, execution checklist created for June 12 user action.
+
+## Session 3221 (June 11 2026 22:20 UTC) — M-7–M-10 Tech Debt Execution & Wave 2 Prep
+
+**What Happened**:
+- ✅ **Stockbot M-7–M-10 Execution Complete**:
+  - M-7: FeatureStore lazy init (feature_pipeline.py, property pattern, 3 tests pass, no latency on module load)
+  - M-8: TRADING_DAYS_PER_YEAR de-duplication (new canonical src/backtesting/constants.py, fixed pre-existing ModuleNotFoundError in walk_forward_engine.py)
+  - M-9: Broker factory HTTP optimization (order_executor.py, TTL caches 30/60s, reduces 7+ API calls per 30-second fold cycle to 2)
+  - M-10: WORKLOG pre-commit hook (.git/hooks/pre-commit, 3 non-blocking checks: WORKLOG staged, recent session entry >100 chars, commit message has item reference)
+  - All committed (93c94ca), all tests passing
+- ✅ **Resistance-Research Wave 2 Preparation Complete**:
+  - All 3 Wave 2 contacts re-verified current as of June 11: Darius Kemp (Common Cause CA), Jenny Farrell (LWV CA), Clean Money Action Fund
+  - DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md updated with verification results
+  - DOMAIN_51_WAVE_2_EXECUTION_CHECKLIST.md created (simple user-facing checklist for June 12 sends)
+  - Wave 2 execution ready: 09:00 UTC (Common Cause), 10:30 UTC (LWV), 12:00 UTC (Clean Money)
+
+**Current Status**:
+- 🟢 **Stockbot Phase 3 Tech Debt**: COMPLETE (M-7–M-10 all done)
+- 🟡 **Stockbot Signal Restoration**: June 12 13:30 UTC checkpoint ready (buy_prob non-zero = success)
+- 🟡 **Resistance-Research Wave 1**: Awaiting user action (60-75 min email sends to CLC + Issue One)
+- 🟢 **Resistance-Research Wave 2**: Prep complete, execution checklist ready for June 12 (09:00–12:00 UTC)
+
+**Items Needing User Input**:
+1. **Complete resistance-research Wave 1** (TODAY, June 11, 60-75 min) — Send emails to CLC (echlopak@campaignlegalcenter.org) + Issue One (info@issueone.org). Template: `domain-51-send-templates.md` Emails 4–5. Log: `DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md`.
+2. **Execute resistance-research Wave 2** (June 12, 09:00–12:00 UTC, 60-75 min) — Three email sends with 90-min stagger. Checklist: `DOMAIN_51_WAVE_2_EXECUTION_CHECKLIST.md`.
+3. **June 12 13:30 UTC Stockbot Signal Verification** — Monitor buy_prob at market open. Checklist created in Session 3220. Success = buy_prob non-zero; failure = requires re-investigation.
+
+**Suggested Next Actions**:
+1. Complete Wave 1 email sends today (recoverable slip, July 1 hard deadline has buffer)
+2. Execute Wave 2 June 12 morning (09:00–12:00 UTC, stagger with signal verification checkpoint at 13:30 UTC)
+3. Day 7 checkpoint June 17-18 (Wave 1+2 inbox review, Gist view tracking, Tier 2 activation decision)
+
+**Queue Status**: 5 exploration queue items available. Resistance-Research Phase 3 research (Domains K & H) ready for post-Wave-2 execution (June 14+).
+
+---
+
 ## Since Last Check-in (Session 3220, June 11 2026 21:30 UTC — USER PAUSE LIFTED, PHASE 3 & PHASE 2 WORK RESTARTED)
 
 **Orchestrator Status**: ✅ **PAUSE LIFTED** — User resumed work. Parallel subagents deployed for stockbot Phase 3 post-deployment planning and resistance-research Phase 2 Wave 1 execution. Both projects now active.

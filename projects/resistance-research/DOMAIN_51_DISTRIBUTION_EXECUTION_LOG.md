@@ -58,9 +58,10 @@ wave_2_scheduled: "2026-06-11"
 
 ---
 
-## Wave 2 — June 11 (Tier B & C: California Contacts)
+## Wave 2 — June 11-12 (Tier B & C: California Contacts)
 
-**Status**: SCHEDULED (June 11)
+**Status**: READY TO EXECUTE (June 12, 09:00-12:00 UTC)  
+**Contact verification**: Complete as of June 11, 2026 (all three contacts re-verified)
 
 ### Send 3: Common Cause California
 
@@ -72,14 +73,17 @@ wave_2_scheduled: "2026-06-11"
 
 **Execution Status**:
 - [ ] Filled [YOUR_NAME] and [YOUR_CONTACT_INFO]
-- [ ] Verified email address (see Note 1 below)
+- [x] Verified email address — **CURRENT as of June 11, 2026**
 - [ ] Sent
 - **Send Date/Time**: _______________
 - **Reply Received**: YES / NO / PENDING
   - If YES: Date _____________, Reply Summary: _______________________
 
-**Notes**:
-1. **Email verification (June 11 AM before send)**: Last verified June 5, 2026. Darius Kemp replaced Jonathan Mehta Stein (June 2025). Verify at commoncause.org/california before sending.
+**Verification Notes (June 11, 2026)**:
+- **Status**: CURRENT
+- dkemp@commoncause.org confirmed live on commoncause.org/california/people/darius-kemp/ as of June 11, 2026
+- Darius Kemp confirmed as Executive Director (appointment announcement still current on Common Cause CA press page)
+- Source: commoncause.org/california/people/darius-kemp/
 
 ---
 
@@ -92,35 +96,42 @@ wave_2_scheduled: "2026-06-11"
 
 **Execution Status**:
 - [ ] Filled [YOUR_NAME] and [YOUR_CONTACT_INFO]
-- [ ] Verified email address (see Note 1 below)
+- [x] Verified email address — **CURRENT as of June 11, 2026**
 - [ ] Sent
 - **Send Date/Time**: _______________
 - **Reply Received**: YES / NO / PENDING
   - If YES: Date _____________, Reply Summary: _______________________
 
-**Notes**:
-1. **Email verification (June 11 AM before send)**: Last verified June 5, 2026. Jenny Farrell confirmed as Executive Director; Carol Moon Goldberg no longer listed. Verify at lwvc.org/about/staff before sending.
+**Verification Notes (June 11, 2026)**:
+- **Status**: CURRENT
+- Jenny Farrell confirmed as Executive Director on lwvc.org/about/staff as of June 11, 2026
+- Carol Moon Goldberg not listed (confirmed June 5 and re-confirmed June 11)
+- lwvc@lwvc.org is the general inbox — current and appropriate; no direct email for Farrell listed publicly
+- Source: lwvc.org/about/staff
 
 ---
 
 ### Send 5: Clean Money Action Fund
 
 **Contact**: Clean Money Action Fund (Campaign Operations)  
-**Email**: info@CAclean.org (verified June 5 via yesfairelections.org/about)  
+**Email**: info@CAclean.org (verified June 11 via yesfairelections.org/about)  
 **Subject**: Dark money research for California Fair Elections Act — 58 citations, CC Attribution 4.0  
 **Template**: Email 3 in domain-51-send-templates.md
 
 **Execution Status**:
 - [ ] Filled [YOUR_NAME] and [YOUR_CONTACT_INFO]
-- [ ] Verified email address (see Note 1 below)
+- [x] Verified email address — **CURRENT as of June 11, 2026**
 - [ ] Sent
 - **Send Date/Time**: _______________
 - **Reply Received**: YES / NO / PENDING
   - If YES: Date _____________, Reply Summary: _______________________
 
-**Notes**:
-1. **Email verification (June 11 AM before send)**: cleanmoney.org domain unreachable as of June 5. Use info@CAclean.org (verified via yesfairelections.org/about). Confirm before sending.
-2. **Timing note**: Send 30 minutes after LWV CA (09:30 local) — spacing prevents bulk-send appearance.
+**Verification Notes (June 11, 2026)**:
+- **Status**: CURRENT
+- info@CAclean.org confirmed on yesfairelections.org/about as of June 11, 2026 — listed explicitly as contact email with phone (310) 397-0200
+- cleanmoney.org domain remains unreachable (unchanged from June 5) — yesfairelections.org/about is the authoritative contact source
+- Source: yesfairelections.org/about
+- **Timing note**: Send 90 minutes after LWV CA — spacing prevents bulk-send appearance.
 
 ---
 
@@ -138,10 +149,10 @@ wave_2_scheduled: "2026-06-11"
 ## Key Dates
 
 - **June 9 (OVERDUE)**: Wave 1 sends (CLC + Issue One)
-- **June 10 (TODAY)**: Make-up day for Wave 1 if June 9 not completed; inbox check optional
-- **June 11 (TOMORROW)**: Wave 2 sends (Common Cause CA, LWV CA, Clean Money Action Fund)
-- **June 12 (JUNE 12)**: Status checks + Montana I-194 update
-- **June 16 (June 16)**: Day 7 checkpoint — evaluate minimum success criteria (≥1 reply)
+- **June 10**: Make-up day for Wave 1 if June 9 not completed
+- **June 11 (TODAY)**: Wave 2 contact verification complete (all three confirmed current). User handling Wave 1 sends independently.
+- **June 12 (TOMORROW)**: Wave 2 sends — Common Cause CA (09:00 UTC), LWV CA (10:30 UTC), Clean Money Action Fund (12:00 UTC). Checklist: DOMAIN_51_WAVE_2_EXECUTION_CHECKLIST.md
+- **June 16**: Day 7 checkpoint — evaluate minimum success criteria (≥1 reply)
 
 ---
 
@@ -155,4 +166,4 @@ Refer to `DOMAIN_51_CONTINGENCY_SB_299_FALLBACK.md` if:
 
 ---
 
-**Status as of June 10 01:06 UTC**: All autonomous prep work complete. Gist verified live (HTTP 200). Contact emails verified current (as of June 5). Execution log ready for user completion. **User action required**: Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in Emails 4-5 TODAY for Wave 1 sends (overdue June 9). Prepare Wave 2 emails for June 11 sends.
+**Status as of June 11 UTC**: Wave 2 contact verification complete (all three re-verified June 11). Wave 2 templates confirmed production-ready (no edits required). Execution checklist created: DOMAIN_51_WAVE_2_EXECUTION_CHECKLIST.md. **User action required**: Wave 1 (CLC + Issue One) — user handling independently. Wave 2 — execute June 12 per checklist. Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in each email before sending.
