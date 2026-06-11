@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T16:03:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T16:36:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.1% (275,666 tokens) | All-models 44.7% | Reset in 104h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.3% (298,909 tokens) | All-models 46.0% | Reset in 103h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,7 +19,7 @@
 ## Active Projects
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **SPRINT 3 ITEMS 1-2 COMPLETE**: 
+**Focus**: ✅ **SPRINT 3 ITEMS 1-2 COMPLETE** + **M-1 COMPLETE**: 
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -29,6 +29,13 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
+### stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required)
+**Date blocked**: 2026-06-11
+**Context**: Sprint 3 Item INV-1 (buy_prob flatline root cause fix) is complete and tested locally. Root cause was z-scores going out-of-distribution on AMZN/JPM features. Fix: z-score clipping to [-5, 5] range. 32 tests passing, committed to master (commit c0ff785c). Deployment to Jetson is held pending user approval per DEPLOY BLACKOUT RULE (no deploys during market hours 13:30–20:00 UTC). Deploy window opens 20:00 UTC tonight.
+**What I need**: Approve Jetson deployment of the buy_prob z-score fix. Reply `!resolve stockbot deploy approved` and the orchestrator will push to Jetson at next post-market window (after 20:00 UTC today).
+**Verify with**: `ssh xxsb-01 "docker logs stockbot --tail 20 2>&1 | grep buy_prob"` — should show non-zero buy_prob values after deploy
+**Resolution**: [leave blank]
+---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -52,12 +59,6 @@
 **Resolution**: [leave blank]
 ---
 ### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
-**Date blocked**: 2026-06-06
-**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. As of June 6 20:05 UTC: Docker was not installed (resolved in Session 2965), no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. Platform choice (Nextcloud+Matrix vs Discourse) is pending user decision from Session 2965 CHECKIN.
-**What I need**: User decision on which platform to deploy (Nextcloud+Matrix or Discourse). Recommendation: Discourse is more suitable for this Raspberry Pi 5 (8GB RAM recommended vs Nextcloud's 16GB) and deploys faster (2-3 hours vs 4-6 hours). If Discourse chosen, provide public IP + domain for platform, and SMTP credentials for email notifications. If Nextcloud+Matrix chosen, confirm acceptance of memory risk (system has 7.9GB total RAM). Once choice is confirmed, orchestrator will execute platform deployment by June 8 18:00 UTC deadline.
-**Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
-**Resolution**: [leave blank]
----
 
 ## Recently Resolved (last 5)
 • open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
@@ -70,42 +71,43 @@
 (NONE — all pending items processed from Session 3201)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-**Next**: Await June 15 pause lift or immediate user resolution of any blocked item.
+     - `calculate_max_drawdown_from_returns(returns, initial_equity)` — reconstructs equity curve
+     - `calculate_max_drawdown_from_equity_curve(equity_curve)` — direct equity-curve version
+     - `calculate_calmar_ratio(ann_return, max_drawdown)` — simple wrapper
+  2. Updated walk_forward_engine.py imports (added performance_metrics imports)
+  3. Replaced duplicate function definitions with import aliases (backward compatible)
+  4. All existing call sites now use canonical implementations (no signature changes)
+- Phase 4 (REVIEW): Testing & Verification
+  - Ran unit test suite: **1000+ tests PASSING** (including all metrics/performance tests)
+  - Verified no regressions in walk-forward engine integration tests
+  - Spot-checked metric calculations match previous implementations
+- Commit: fb09dcf (feat: Sprint 3 Item M-1 — Performance metrics consolidation)
 
----
-
-## Session 3202 (June 11 2026 ~15:55-16:10 UTC — orchestrator sprint continuation)
-
-**Task**: Autonomous Sprint 3 continuation after Item 1 (buy_prob fix) completion.
-
-**Actions Taken**:
-✅ **Sprint 3 Item 2 (H-5) COMPLETE** — DB access pattern unification
-- Phase 1: Schema definition (WalkForwardStatus enum, WalkForwardResults ORM model, indexes)
-- Phase 2: DatabaseManager CRUD methods (6 methods: create, query by ticker/model_type/date_range, filter by gates, update)
-- Phase 3: WalkForwardEngine refactor (_persist_results() now uses ORM instead of raw sqlite3)
-- Phase 4: Testing infrastructure (ready for Phase 4 integration tests)
-- Backward compatibility: db_path parameter deprecated with warning
-
-✅ **Code commits**:
-- Stockbot submodule: commit f44457a (feat: Sprint 3 Item 2 — H-5 unified DB access patterns)
-- Main repo: commit ce13c3fe (chore: orchestrator session 3202 — Sprint 3 Item 2 complete)
-
-✅ **Documentation updates**:
-- PROJECTS.md: Updated stockbot current focus to reflect Items 1-2 complete
-- CHECKIN.md: Documented H-5 implementation and next steps
+✅ **Code metrics**:
+- Performance metrics module: +170 lines (new wrapper functions) 
+- Walk forward engine: -47 lines (removed duplicate definitions, added 4-line alias section)
+- Net change: +123 lines (added 4 functions to canonical module, removed from duplicate)
+- Test coverage: 1000+ unit tests passing (no new test code needed, existing tests validate consolidation)
 
 **Sprint 3 Status Summary**:
 | Item | Status | Details |
 |------|--------|---------|
-| Item 1: buy_prob fix | ✅ Code complete | z-score clipping [-5,5], 32 tests passing, ready for Jetson deployment (awaiting user approval) |
-| Item 2: H-5 DB unification | ✅ Code complete | ORM integration, 310 lines implemented across 3 files, backward compatible, committed |
-| Items 3-12: M-1 to M-10 | 🔄 Ready | 10 medium-severity tech debt items queued for next session |
+| Item 1: buy_prob fix | ✅ Code complete | z-score clipping [-5,5], 32 tests passing, ready for Jetson deployment |
+| Item 2: H-5 DB unification | ✅ Code complete | ORM integration, backward compatible, committed |
+| M-1: Metrics consolidation | ✅ Code complete | Canonical module, 4 wrapper functions, backward compatible, 1000+ tests passing |
+| M-2 to M-10: Medium tech debt | 🔄 Queued | 10 medium-severity items ready for next session |
 
 **Remaining Work**:
-1. **Post-market (after 20:00 UTC)**: Deploy Item 1 to Jetson if user approves
-2. **Next session**: Phase 4 integration tests for H-5; begin M-1 through M-10 items per priority
-3. **Optional**: Quick-win M items during idle time (M-8 TRADING_DAYS_PER_YEAR consolidation, M-7 feature_store optimization)
+1. **Next session**: M-2 (TradingSession.__init__ refactoring — 270+ line constructor reduction)
+2. **Post-market window**: Optional quick-win M items (M-8, M-7, M-4 configuration consolidation)
+3. **Phase 4 integration tests**: Hook up H-5 results to backtest pipeline once all M items complete
 
-**Session duration**: ~15 minutes (PLAN agent, IMPLEMENT Phases 1-3, COMMIT, DOCUMENT)
+**Session duration**: ~66 minutes (PLAN, IMPLEMENT, REVIEW, COMMIT, DOCUMENT)
 
-**Next**: Await user approval for Item 1 deployment; stand by for post-market Jetson deployment window.
+**Key learnings**:
+- Consolidating duplicate code requires finding the correct abstraction level (match existing call signatures)
+- Walk-forward engine metrics had subtle differences (statistics vs numpy) — unified to statistics (pure Python)
+- Import aliases provide instant backward compatibility (no call-site changes needed)
+- Comprehensive test coverage caught zero regressions (confidence in refactoring)
+
+**Next**: Stand by for next session or user approval for M-2 refactoring.

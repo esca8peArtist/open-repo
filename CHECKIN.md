@@ -2,6 +2,41 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3205, June 11 2026 ~17:45 UTC — orchestrator sprint continuation)
+
+**Orchestrator Action**: Autonomous Sprint 3 continuation — completed M-3 (BEAR_CONFIRM_BARS configuration).
+
+**Sprint 3 Item M-3 Complete**: **BEAR_CONFIRM_BARS Configuration Fix**
+- **Problem**: Hardcoded to 1 (immediate exit), contradicts design intent in comment
+- **Solution**: Increased to 3 (requires sustained 3-bar bear regime before exit)
+- **File Modified**: `src/backtesting/walk_forward_engine.py` line 374
+- **Rationale**: Prevents cutting short positions on transient one-day bear signals (per design comment)
+- **Verification**: Python syntax validated
+- **Commit**: 68ec1ae (feat: Sprint 3 Item M-3 — BEAR_CONFIRM_BARS 1→3)
+
+**Sprint 3 Status** (Updated):
+| Item | Status | Details |
+|------|--------|---------|
+| Item 1: buy_prob fix | ✅ Complete | z-score clipping, 32 tests passing |
+| Item 2: H-5 DB unification | ✅ Complete | ORM integration, committed |
+| M-1: Metrics consolidation | ✅ Complete | 5 wrappers, 1000+ tests passing |
+| M-2: __init__ refactoring | ✅ Complete | 282→20 lines |
+| M-3: BEAR_CONFIRM_BARS | ✅ Complete | 1→3 bar confirmation window |
+| M-4: Operational tunables → config | 🔄 Queued | Ready for next session |
+| M-5: sqlite3 context manager | ✅ Already fixed | Session 2983 |
+| M-6: Registry key validation | ✅ Already fixed | Session 2983 |
+| M-7-M-10: Other tech debt | 🔄 Queued | ~6 items remaining |
+
+**Next Steps**:
+1. **Next session**: Continue Sprint 3 with M-4 (move hardcoded constants to config/default_config.yaml)
+2. **Optional quick-wins**: M-7 (feature_store optimization), M-8 (TRADING_DAYS_PER_YEAR consolidation)
+3. **After Sprint 3 complete**: Phase 4 integration tests for all M items
+4. **Post-market window**: Deploy INV-1 fix to Jetson (after 20:00 UTC, per blackout rule)
+
+**Session Duration**: ~30 minutes (M-3 fix + log update)
+
+---
+
 ## Since Last Check-in (Session 3204, June 11 2026 ~17:30 UTC — orchestrator sprint continuation)
 
 **Orchestrator Action**: Autonomous Sprint 3 continuation — completed M-2 (TradingSession.__init__ Refactoring).

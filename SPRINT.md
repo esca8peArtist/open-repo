@@ -52,7 +52,7 @@
 
 - [ ] **M-7**: `feature_store.py` is re-initialized on every `FeaturePipeline()` instantiation even when `use_cache=False`. Fix: lazy initialization or flag-gated construction.
 
-- [ ] **M-8**: `TRADING_DAYS_PER_YEAR = 252` defined separately in `walk_forward_engine.py` and `walk_forward.py`. Extract to a shared constants module.
+- [x] **M-8**: `TRADING_DAYS_PER_YEAR` consolidation. ✅ **COMPLETE**: Extracted to `src/backtesting/constants.py`. Updated imports in: walk_forward_engine.py, walk_forward.py, performance_metrics.py, model_comparison.py, live_vs_backtest_tracker.py. Backward compatibility maintained (re-exported from backtesting.__init__). Tests passing (41/41 performance_metrics tests).
 
 - [ ] **M-9**: Broker factory does not enforce single-broker-per-mode invariant. Add a guard that raises if more than one broker is registered for a given mode.
 
