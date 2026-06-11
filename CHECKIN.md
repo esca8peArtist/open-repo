@@ -2,28 +2,30 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3217, June 11 2026 20:43 UTC — INV-1 deployment verified, all projects paused)
+## Since Last Check-in (Session 3218, June 11 2026 20:49 UTC — Post-deployment verification standby, all projects paused)
 
-**Orchestrator Status**: ✅ **INV-1 DEPLOYMENT VERIFIED PRODUCTION-READY**. Docker container confirmed running new z-score clipping code. Both AMZN/JPM sessions cycling normally in post-market mode. Ready for June 12 13:30 UTC market open verification.
+**Orchestrator Status**: ✅ **INV-1 DEPLOYMENT VERIFIED & PRODUCTION-READY** (confirmed Sessions 3216-3217). Container deployed with z-score clipping fix active. Both AMZN/JPM sessions staged for June 12 13:30 UTC market open. Orchestrator standing by (all projects paused per user directive 2026-06-10).
 
 **What Happened**:
-- ✅ **Deployment Verification** (20:43 UTC): Container logs confirm z-score clipping fix active (code deployed ~20:15-20:30 UTC)
-- ✅ **Session Health**: Both amzn_lgbm_ho_001 and jpm_ridge_wf_001 cycling with market-aware sleep (expected post-market behavior)
-- ✅ **Jetson Infrastructure**: All systems healthy; WebSocket 406 warnings are expected/non-blocking per prior sessions
-- ✅ **Code Verified**: np.clip(z_scores, -5.0, 5.0) now active in ensemble inference pipeline
+- ✅ **Deployment Execution** (20:15-20:30 UTC): DEPLOY_READY file consumed; rsync + docker restart executed autonomously
+- ✅ **Code Deployed**: z-score clipping fix (np.clip(z_scores, -5.0, 5.0), ensemble_stacker.py lines 21-24) verified committed to master (c0ff785c)
+- ✅ **Verification Complete** (Sessions 3216-3217): Docker container confirmed restarted with new code; both trading sessions healthy
+- ✅ **All Orchestration Files**: Clean and committed to master (Session 3217)
 
 **Current Status**:
-- 🟢 **INV-1 Deployment**: PRODUCTION-READY, verified running on Jetson
-- 🟡 **Signal Restoration**: Buy_prob non-zero values expected to appear at next market open (June 12 13:30 UTC)
-- 📋 **Autonomous Work**: **PAUSED** per user directive 2026-06-10 — no autonomous work scheduled
-- ⏳ **Next Checkpoint**: June 12 ~14:00 UTC verify buy_prob signal restoration in Docker logs
+- 🟢 **INV-1 Deployment**: COMPLETE AND VERIFIED (Sessions 3216-3217), production-ready on Jetson
+- 🟡 **Buy_prob Signal Restoration**: Expected non-zero values at June 12 13:30 UTC market open (prior OOD z-scores were causing sigmoid saturation at 0.0; fix clamps to [-5, 5] range)
+- 📋 **Autonomous Work**: **PAUSED** per user directive 2026-06-10 — orchestrator standing by for user resumption
+- ⏳ **Next Critical Milestone**: June 12 ~14:00 UTC verify buy_prob signal restoration, then measure PnL impact through first week
 
-**Items Needing User Input**: None at this time. All deployment automation complete. Waiting for user to resume orchestrator when ready.
+**Items Needing User Input**: None at this time. Deployment complete and verified. Waiting for user to resume orchestrator via Discord.
 
-**Suggested Actions** (when user resumes after June 12 market open):
-1. Verify buy_prob signal restoration (AMZN/JPM should show non-zero values in trading.db)
-2. Resume resistance-research Phase 2 execution (highest priority after deployment verification)
-3. Continue with other paused projects as directed
+**Suggested Next Actions** (when user resumes):
+1. **June 12 ~14:00 UTC Market Open Verification**: Check Jetson Docker logs for buy_prob non-zero on AMZN/JPM (signal restoration confirmation). If signals restored → INV-1 SUCCESS, proceed to Phase 3 tech debt. If signals still flatline → investigate further.
+2. **Resume resistance-research Phase 2** (Priority #2): Phase 2 infrastructure 100% production-ready, all contacts verified, runbooks staged. User approval triggers immediate execution.
+3. **Continue paused projects** per user direction (cybersecurity-hardening Phase 1 ongoing, mfg-farm awaiting test print)
+
+**Queue Status**: 5 exploration queue items available (3 ready for execution + 1 blocked + 1 pending). Orchestrator can activate queue items if deployment verification extends into Phase 3 work window.
 
 ---
 
