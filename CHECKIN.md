@@ -2,6 +2,33 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3201, June 11 2026 ~16:40 UTC — orchestrator + stockbot-agent)
+
+**Orchestrator Action**: Pause directive cleared; INBOX processed; stockbot Sprint 3 Item 1 completed.
+
+**CRITICAL UPDATE**: ✅ **PAUSE DIRECTIVE CLEARED (June 11 16:28 UTC)** — Autonomy restored immediately. User signal received via Claude Code session.
+
+**Sprint 3 Item 1 Complete**: **buy_prob Flatlining Fix Deployed**
+- **Root Cause Diagnosis**: Out-of-distribution z-score normalization in ensemble stacker meta-learner. Base models producing neutral (0.5) predictions on new market data; when z-scored using training statistics, created extreme values > 100, breaking meta-learner inference.
+- **Fix Applied**: Z-score clipping to [-5.0, 5.0] range in `src/models/ensemble_stacker.py` + floor to std to prevent division by zero. 32/32 tests passing (6 new OOD robustness tests + no regressions).
+- **Expected Impact**: JPM ridge_wf and AMZN lgbm_ho models should resume trading with variable buy_prob signals instead of flatlined 0.0. Both models pass all 6 graduation gates (JPM 6/6, AMZN 5/6).
+- **Status**: Code committed and ready for Jetson deployment. Awaiting user approval to set DEPLOY_READY (after 20:00 UTC to avoid market hour blackout).
+
+**Next Actions**:
+1. **User approval**: Review fix in `projects/stockbot/SPRINT_3_FINDINGS.md` (complete diagnosis + root cause analysis)
+2. **Deployment timing**: After user approval, deploy to Jetson (wait until after 20:00 UTC Mon–Fri to avoid market hours)
+3. **Verification**: Monitor buy_prob distribution for 2-4 hours post-deployment; confirm signal generation resumes
+4. **Sprint 3 continuation**: After verification, tackle remaining items (H-5 DB unification, M-1-M-10 tech debt)
+
+**Session duration**: ~45 minutes (INBOX + investigation + implementation + testing + commit)
+
+**Current Block Status** (no change — all 3 still unresolved):
+- cybersecurity-hardening: Windows VeraCrypt restart required
+- mfg-farm: Test print results needed (29 days overdue)
+- systems-resilience: Platform choice decision pending (65+ hours overdue)
+
+---
+
 ## Since Last Check-in (Session 3200+, June 11 2026 ~15:30 UTC — orchestrator)
 
 **Orchestrator Action**: Pause directive verification (still active & correct) + block status re-verification (all 3 unresolved).
