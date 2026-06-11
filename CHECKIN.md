@@ -2,6 +2,34 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3206, June 11 2026 17:36-17:40 UTC — pre-deployment monitoring standby)
+
+**Orchestrator Status**: Deployment on track. Awaiting 20:15 UTC execution.
+
+**What Happened**:
+- ✅ **Comprehensive Orientation Complete**: Read ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, EXPLORATION_QUEUE.md
+- ✅ **Deployment Script Verified**: PID 442029 confirmed active, scheduled execution 20:15 UTC (39 min from session start)
+- ✅ **Project Status Audit**: Confirmed all projects paused or blocked on named user actions (no autonomous work available)
+- ✅ **Code State Verified**: Z-score clipping fix (ensemble_stacker.py lines 21-24) committed to master
+- ✅ **WORKLOG Logged**: Session 3206 entry documenting deployment monitoring status
+- ✅ **All Orchestration Files Clean**: No uncommitted critical files
+
+**What's In Progress**:
+- 🟡 **INV-1 Deployment**: Executing at 20:15 UTC (post-market close). Expected completion 20:20-20:30 UTC.
+  - Script will create DEPLOY_READY → orchestrator will rsync code + restart stockbot container
+  - Success metric: Docker logs show buy_prob non-zero for AMZN/JPM within 60s of restart
+
+**Items Needing User Input**:
+- None. Deployment proceeding autonomously.
+
+**Next Session**:
+1. **Post-Deployment Verification** (20:25-20:30 UTC): Confirm signal restoration
+   - Command: `ssh xxsb-01 "docker logs stockbot --since 10m 2>&1 | tail -20"` — look for buy_prob output
+   - If SUCCESS: Continue Sprint 3 (M-7 through M-10 tech debt)
+   - If FAILURE: Investigate Docker logs and add to BLOCKED.md
+
+---
+
 ## Since Last Check-in (Session 3205, June 11 2026 17:21-17:30 UTC — deployment monitoring checkpoint)
 
 **Orchestrator Action**: Verify deployment script status and await post-market deployment of z-score clipping fix at 20:15 UTC.
