@@ -2,11 +2,17 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 2990, June 11 2026 02:20 UTC)
+## Since Last Check-in (Session 2991, June 11 2026 02:26 UTC)
 
-**Orchestrator Action**: Standard orientation + block re-verification. Pause directive confirmed ACTIVE & CORRECT. All 4 blocks remain unresolved. No autonomous work available.
+**Orchestrator Action**: Standard orientation + block re-verification. Pause directive confirmed ACTIVE & CORRECT (~72 hours remaining until June 15 00:00 UTC). All 4 blocks remain unresolved. No autonomous work available.
 
-**🚨 CRITICAL DEADLINE — ~30.8 HOURS TO USER DECISION** (June 12 09:00 UTC):
+**Block Verification Status** (all 4 confirmed unresolved):
+- ✅ mfg-farm: `ls -la projects/mfg-farm/test-print-results/` → directory does not exist (user action pending)
+- ✅ systems-resilience: Docker permission issue on Pi; cannot verify container status (user platform decision + credentials still pending, 82+ hours overdue)
+- ✅ open-repo: Timing conflict re-verified via grep (09:00 vs 20:00 UTC still conflicting in docs) — **CRITICAL deadline June 12 09:00 UTC (~31h remaining)**
+- ✅ cybersecurity-hardening: Manual Windows restart (cannot auto-verify)
+
+**🚨 CRITICAL DEADLINE — ~31 HOURS TO USER DECISION** (June 12 09:00 UTC):
 - **open-repo deployment timing clarification**: Docs show conflicting times: 09:00 UTC in newer June 6 docs (DEPLOYMENT_JUNE12_SUCCESS_CRITERIA.md, risk_mitigation), 20:00 UTC in older June 3 docs (runbook, go-live checklist). Business impact: 09:00 = 25-35 min service downtime during business hours (7% daily uptime budget, SLA drops to 95%); 20:00 = off-hours deployment (SLA stays 100%). **User must confirm canonical time or deployment cannot proceed at scheduled time.** Reply to BLOCKED.md Resolution field or CHECKIN.md.
 
 **Block Verification** (all 4 confirmed unresolved, no changes since Session 2989):
