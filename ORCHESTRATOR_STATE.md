@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T05:41:15Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T05:59:06Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.3% (204,084 tokens) | All-models 33.5% | Reset in 114h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.3% (204,084 tokens) | All-models 33.8% | Reset in 114h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -60,10 +60,10 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (138 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (141 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: stockbot — focus references Session 2981 (129 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (137 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (141 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (144 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 2981 (132 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (140 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
