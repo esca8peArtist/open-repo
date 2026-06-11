@@ -2,6 +2,44 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 2983, June 11 2026 ~01:00 UTC)
+
+**Orchestrator Action**: Continued Sprint 2 work immediately following Session 2982. Spawned stockbot agent for H-3 and H-2 fixes.
+
+**✅ SPRINT 2 ITEMS H-3 AND H-2 COMPLETE** (in addition to C-1, C-3, C-4, C-2, H-6 from Session 2982):
+
+**H-3 — Explicit ValueError Handling for Model ID Conversion** ✅:
+- **Issue**: Broad `except ValueError` caught multiple error types and silently fell back to sma_crossover via string matching; real model bugs masked
+- **Fix**: Separated into two try blocks: (1) int conversion only → immediate return; (2) model loading → explicit `except Exception`; no silent masking
+- **Impact**: Real model-loading bugs now surface; fallback strategy only on intended failures; bugs harder to hide
+- **Tests**: 5 new tests in TestLoadStrategyValueErrorHandling, all passing
+- **Regression**: 25 affected tests → 25/25 pass
+- **Commit**: `73b7cb5` in stockbot submodule
+
+**H-2 — Dynamic Time-Stop Bars from Model Metadata** ✅:
+- **Issue**: `_TIME_STOP_BARS = 10` hardcoded; all models exited at h+10 regardless of trained horizon (h=5 held 2x, h=20 held 50%)
+- **Fix**: New `_get_time_stop_bars()` method reads `model.metadata['hyperparameters']['horizon']` with safe default 10
+- **Impact**: Models now exit at correct trained horizons; h=5 exits at 5, h=20 exits at 20 (correct trading timing)
+- **Finding**: Horizon stored in `hyperparameters['horizon']` (nested JSON), not top-level `h`
+- **Tests**: 6 new tests covering h=5, h=10, h=20, missing metadata default, consistent usage
+- **Fixed**: 2 pre-existing broken regression tests (test_critical_constants.py, test_entry_exit_coordination.py)
+- **Full suite**: 1,042 passed, 12 pre-existing failures (unchanged), 0 new failures
+- **Commit**: `cbb6da8` in stockbot submodule
+
+**Session 2983 Summary**:
+- ✅ **7 of 11 Sprint 2 items complete** (64% done): C-1, C-3, C-4, C-2, H-6, H-3, H-2
+- ✅ **All 4 CRITICAL items done**: G3 gate fix, cash pool capped, signal validation, 50% inference speedup
+- ✅ **3 HIGH items done**: Registry path fix, ValueError handling explicit, horizon-aware exits
+- **Remaining**: H-1, H-7 (HIGH), M-5, M-6 (MEDIUM) — ready for future sessions
+
+**Overall Impact**:
+- **Safety**: 4 CRITICAL fixes ensure models can't silently fail or overleverge
+- **Performance**: 50% inference time reduction (C-2)
+- **Correctness**: Models exit at proper trained horizons (H-2); no more horizon mismatches
+- **Reliability**: All paths explicit; bugs surface immediately instead of masking with fallbacks
+
+---
+
 ## Since Last Check-in (Session 2982, June 11 2026 ~00:10 UTC)
 
 **Orchestrator Action**: Initiated stockbot Sprint 2 work immediately after pause lift (Session 2981 00:07 UTC). Spawned stockbot agent for C-1 fix.
