@@ -1,23 +1,28 @@
 # Stockbot Sprint 3
 
 > **Orchestrator protocol**: At the start of every session, check this file.
-> If any item is unchecked `- [ ]`, work on the FIRST unchecked item immediately — do NOT
-> wait for user direction between items. Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX for each.
-> When an item is complete, check it off, commit, and start the next one in the same session
-> if usage budget permits. Only stop if you hit a genuine block requiring user input.
 >
-> **BLOCKED means**: anything where you cannot proceed without user action — including deployment approval,
-> a decision between two implementation approaches, or a test result you need the user to verify physically.
-> "Waiting for approval" is a block. "Needs user decision" is a block. Mentioning it only in WORKLOG is NOT enough.
+> **Item states**:
+> - `- [ ]` = not started — pick the first one and work it
+> - `- [~]` = waiting for user — code complete but blocked on approval/decision/verification
+> - `- [x]` = fully complete including any required deployment or user confirmation
 >
-> When blocked: (1) add entry to BLOCKED.md with What I need + Verify with fields, (2) append `- [ ] [stockbot] <title> — <what you need>` to NOTIFY_QUEUE.md pending section. Do NOT continue to next sprint item until the block is resolved.
-> When sprint complete: append `- [ ] [stockbot] Sprint 3 complete — all 21 items done. Ready for Sprint 4 direction.` to NOTIFY_QUEUE.md.
+> **Rules**:
+> 1. Pick the FIRST `[ ]` item and work it. Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX.
+> 2. When code is done but needs user action before it's complete (deploy approval, decision, physical test):
+>    mark the item `[~]`, add an entry to BLOCKED.md, and append to NOTIFY_QUEUE.md.
+>    Do NOT mark `[x]` until the user has confirmed. Do NOT start the next item while one is `[~]`.
+> 3. When a `[~]` block is resolved: mark the item `[x]`, remove the BLOCKED.md entry, commit, proceed.
+> 4. When all items are `[x]`: append sprint-complete notice to NOTIFY_QUEUE.md.
+>
+> **A pre-commit hook enforces rule 2**: if any item is `[~]` and no matching active BLOCKED.md entry
+> exists, the commit is rejected. You cannot bypass this by writing it only in WORKLOG or CHECKIN.
 
 ---
 
 ## Phase 0 — Investigation (Do First)
 
-- [x] **INV-1**: Investigate buy_prob flatline. Both AMZN and JPM sessions have returned `buy_prob=0.0000, action=HOLD` for every cycle since June 1 (10+ days, 0 trades). Determine root cause: is this a model issue (models never trained to produce buy signals on current data), a feature issue (features not correctly computed post-Sprint-2 fixes), a threshold issue, or a data issue? Query the database, inspect session logs, run a manual prediction. Produce a 1-page diagnosis with root cause and fix recommendation.
+- [~] **INV-1**: Investigate buy_prob flatline. Both AMZN and JPM sessions have returned `buy_prob=0.0000, action=HOLD` for every cycle since June 1 (10+ days, 0 trades). Determine root cause: is this a model issue (models never trained to produce buy signals on current data), a feature issue (features not correctly computed post-Sprint-2 fixes), a threshold issue, or a data issue? Query the database, inspect session logs, run a manual prediction. Produce a 1-page diagnosis with root cause and fix recommendation.
 
 - [ ] **INV-2**: Build backtesting pipeline with real Alpaca data (strategic reset top priority). Implement per `docs/COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md`. Goal: be able to run a backtest on AMZN/JPM and see whether the models _should_ be generating buy signals given the last 60 days of price data. This is the diagnostic tool needed to evaluate all future model changes.
 
