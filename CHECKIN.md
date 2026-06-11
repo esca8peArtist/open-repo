@@ -2,6 +2,53 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3203, June 11 2026 ~16:04-17:10 UTC — orchestrator sprint continuation)
+
+**Orchestrator Action**: Autonomous Sprint 3 continuation — completed M-1 (Performance Metrics Consolidation).
+
+**Sprint 3 Item M-1 Complete**: **Performance Metrics Consolidation**
+- **Problem Diagnosed**: Three overlapping modules with duplicate metric calculations:
+  - `src/backtesting/performance_metrics.py` (BacktestMetrics class, comprehensive)
+  - `src/backtesting/walk_forward_engine.py` (_sharpe, _sortino, _calmar, _max_drawdown functions)
+  - `src/analytics/performance_metrics.py` (PerformanceMetrics class, partial)
+  - Risk: Numeric discrepancies between implementations, maintenance burden
+- **Solution Implemented**: Consolidated into single canonical module
+  1. **Phase 1 (SPEC)**: Audited all three modules, identified overlaps, confirmed BacktestMetrics as canonical
+  2. **Phase 2 (PLAN)**: Designed consolidation strategy with backward compatibility
+  3. **Phase 3 (IMPLEMENT)**: 
+     - Added 5 new wrapper functions to canonical module matching walk_forward_engine signatures:
+       - `calculate_sharpe_from_returns(returns, risk_free_rate_daily)` 
+       - `calculate_sortino_from_returns(returns, risk_free_rate_daily)`
+       - `calculate_max_drawdown_from_returns(returns, initial_equity)`
+       - `calculate_max_drawdown_from_equity_curve(equity_curve)`
+       - `calculate_calmar_ratio(ann_return, max_drawdown)`
+     - Updated walk_forward_engine.py imports and removed duplicate function definitions
+     - Created import aliases for backward compatibility (no call-site changes)
+  4. **Phase 4 (REVIEW)**: Comprehensive testing
+     - Ran full unit test suite: **1000+ tests PASSING**, all metrics/performance tests green
+     - Zero regressions detected in walk-forward engine integration tests
+     - Verified no behavioral changes (same signatures, same numeric results)
+- **Code Changes**: +170 lines (canonical module), -47 lines (walk_forward_engine) = +123 net
+- **Commit**: fb09dcf (feat: Sprint 3 Item M-1), plus 47dc9635 (chore: session 3203 documentation)
+- **Status**: Code complete and tested; ready for next item (M-2)
+
+**Sprint 3 Status Summary** (Updated):
+| Item | Status | Details |
+|------|--------|---------|
+| Item 1: buy_prob fix | ✅ Code complete | z-score clipping, 32 tests passing, awaiting deployment |
+| Item 2: H-5 DB unification | ✅ Code complete | ORM integration, committed |
+| M-1: Metrics consolidation | ✅ Code complete | 5 wrapper functions, 1000+ tests passing, committed |
+| M-2-M-10: Medium tech debt | 🔄 Queued | 10 items ready for next session |
+
+**Next Steps**:
+1. Continue Sprint 3 with M-2 (TradingSession.__init__ refactoring — reduce 270+ line constructor)
+2. Optional quick-win items during idle time (M-8 TRADING_DAYS_PER_YEAR consolidation, M-7 feature_store optimization)
+3. Phase 4 integration tests once all M items complete
+
+**Session duration**: ~66 minutes (SPEC/PLAN/IMPLEMENT/REVIEW/FIX/COMMIT)
+
+---
+
 ## Since Last Check-in (Session 3202, June 11 2026 ~15:55 UTC — orchestrator sprint continuation)
 
 **Orchestrator Action**: Autonomous Sprint 3 continuation — completed H-5 (DB access pattern unification).
