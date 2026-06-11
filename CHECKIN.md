@@ -2,6 +2,33 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 2999, June 11 2026 ~03:30 UTC)
+
+**Orchestrator Action**: Orientation + block status verification + state confirmation.
+
+**Block Status Verification** (all 3 remain unresolved):
+- ✅ cybersecurity-hardening: Windows VeraCrypt pre-boot restart (manual — cannot auto-verify)
+- ✅ mfg-farm: Test print execution (directory `/projects/mfg-farm/test-print-results/` does not exist; user action pending)
+- ✅ systems-resilience: Platform deployment (no Docker containers running; user decision + credentials pending, 84+ hours overdue from June 8 18:00 UTC deadline)
+
+**Pause Directive Status**: ✅ **ACTIVE & CORRECT** through June 15 00:00 UTC (~58 hours remaining). All projects paused, blocked, or complete. No autonomous work available. Idle state is correct by design.
+
+**Project Status Summary**:
+- **Stockbot**: Sprint 2 complete (11/11 items); Sprint 3 undefined; awaiting user direction post-June 15 pause lift
+- **Resistance-Research**: Phase 2 execution ready; Phase 3 framework ready; paused per user directive
+- **Cybersecurity-Hardening**: Phase 1 in progress (Step 1.3 VeraCrypt pending); Phase 2 complete & ready for deployment
+- **Mfg-Farm**: Phase 2 scaling roadmap complete; test print pending (blocks Phase 1 launch)
+- **Open-Repo**: Phase 5 ZimWriter merge-ready; deployment approval + credentials pending (June 12 09:00 UTC target)
+- **Systems-Resilience**: Phase 5.1 deployment infrastructure complete; platform decision pending (82+ hours overdue)
+- **Seedwarden**: Paused
+- **Off-Grid-Living**: Publication complete; awaiting user social media execution
+
+**Session duration**: ~3 minutes (orientation + block verification + CHECKIN update)
+
+**Next autonomous session**: June 15 00:00 UTC when pause lifts, or on user resolution of any blocked item.
+
+---
+
 ## Since Last Check-in (Session 2998, June 11 2026 ~04:15 UTC)
 
 **Orchestrator Action**: Orientation + block status verification + CHECKIN maintenance.
