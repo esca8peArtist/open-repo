@@ -490,7 +490,7 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
   - **M-3** (BEAR_CONFIRM_BARS): Increased from 1 to 3. Commit: 68ec1ae
   - **M-4** (session parameters): Moved to config. Commit: 2cab23d
   - **M-5-M-10**: Queued for next session (M-6 schema validation, M-7-M-10 TBD)
-  🔄 **NEXT**: Post-market deployment verifies signal restoration. Then M-5-M-10 tech debt items per priority.
+  🔄 **PAUSED (User Directive 2026-06-10)**: Standing by. **Phase P1-P4 QUEUED (Session 3219, June 11 INBOX)**: Signal health monitor (P1), quick-eval mode (P2), model comparison (P3), shadow session mode (P4). All 4 items queued for execution when user resumes work.
 
 **Sprint 2 backlog** (ordered by priority per `docs/CODEBASE_REVIEW_COMPREHENSIVE.md`):
 - ✅ **C-1** (CRITICAL): `_aggregate_folds` pooled t-stat dead code — FIXED Session 2982. G3 gate now works on low-trade-count models. Commit: 00310f9
