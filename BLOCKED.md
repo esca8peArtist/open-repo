@@ -11,8 +11,12 @@
 ```
 ### [Project] — [Short description of block]
 **Date blocked**: YYYY-MM-DD
-**Context**: What was being attempted and why it's blocked
-**What I need**: Specific question or action needed from user
+**Context**: Enough detail for the user to make a yes/no decision without asking follow-up questions.
+             For approval blocks this means: what problem was found, what the fix does, why this approach
+             vs alternatives, test coverage, risk if approved, risk if rejected, what happens next.
+             For decision blocks: what the options are, trade-offs, and recommendation with reasoning.
+             One paragraph minimum. Do not write "see WORKLOG for details" — put the details here.
+**What I need**: Specific action — approve/reject/decide/execute. Include the exact !resolve command.
 **Verify with**: Shell command to confirm resolved (e.g. `ssh -T git@github.com`)
                  For physical/manual actions write: `# manual — cannot auto-verify`
 **Resolution**: [leave blank — user or orchestrator fills this in]
@@ -30,9 +34,9 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ### stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required)
 **Date blocked**: 2026-06-11
-**Context**: Sprint 3 Item INV-1 (buy_prob flatline root cause fix) is complete and tested locally. Root cause was z-scores going out-of-distribution on AMZN/JPM features. Fix: z-score clipping to [-5, 5] range. 32 tests passing, committed to master (commit c0ff785c). Deployment to Jetson is held pending user approval per DEPLOY BLACKOUT RULE (no deploys during market hours 13:30–20:00 UTC). Deploy window opens 20:00 UTC tonight.
-**What I need**: Approve Jetson deployment of the buy_prob z-score fix. Reply `!resolve stockbot deploy approved` and the orchestrator will push to Jetson at next post-market window (after 20:00 UTC today).
-**Verify with**: `ssh xxsb-01 "docker logs stockbot --tail 20 2>&1 | grep buy_prob"` — should show non-zero buy_prob values after deploy
+**Context**: Both AMZN and JPM sessions have returned buy_prob=0.0000 and action=HOLD on every cycle since June 1 (10+ days, 0 trades). Root cause identified: after the Sprint 2 feature pipeline fixes, z-scores on live inference features are going out-of-distribution — values like 15, 40, even 100+ standard deviations from training distribution. The model's sigmoid output saturates at 0.0 when feature inputs are that extreme, so it never produces a buy signal regardless of market conditions. Fix: clamp all z-scores to [-5, 5] before model inference. This is a standard ML practice (similar to how most production systems cap input features) and matches how the training data was preprocessed. 32 tests passing, committed to master (commit c0ff785c). Risk: low — clamping prevents extreme inputs but doesn't change model weights or training. Downside scenario: if current market conditions are genuinely extreme outliers, some signal fidelity is lost, but buy_prob=0.0000 forever is worse. Upside: models should start generating signals again within the first trading cycle after deploy.
+**What I need**: Approve or reject Jetson deployment. To approve: `!resolve stockbot deploy approved` — orchestrator will rsync the fix and restart the container after 20:00 UTC. To reject: `!resolve stockbot deploy rejected — <reason>` and describe what you want changed instead.
+**Verify with**: `ssh xxsb-01 "docker logs stockbot --since 5m 2>&1 | grep buy_prob"` — should show non-zero values (e.g. buy_prob=0.23) within one trading cycle (~60s) after deploy
 **Resolution**: [leave blank]
 
 ---

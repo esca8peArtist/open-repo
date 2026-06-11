@@ -97,8 +97,8 @@ def parse_active_blocks() -> list[dict]:
             title = title_m.group(1).strip()
             project = re.split(r'\s*[—–]\s*', title, 1)[0].strip()
             res_m = re.search(r'\*\*Resolution\*\*:\s*(.+)', block_text)
-            resolution = res_m.group(1).strip() if res_m else ''
-            if resolution and resolution != '[leave blank]':
+            resolution = (res_m.group(1).strip().splitlines()[0].strip()) if res_m else ''
+            if resolution and not resolution.startswith('[leave blank]'):
                 continue  # already resolved, skip
             need_m = re.search(r'\*\*What I need\*\*:\s*(.*?)(?=\n\*\*|\Z)', block_text, re.DOTALL)
             what_i_need = need_m.group(1).strip() if need_m else '(see full detail below)'
@@ -307,6 +307,12 @@ def _extract_project_section(project: str) -> list[str]:
     return []
 
 
+def _extract_block_field(block_text: str, field: str) -> str:
+    """Extract a named **Field**: value from a BLOCKED.md block, spanning until the next field."""
+    m = re.search(r'\*\*' + re.escape(field) + r'\*\*:\s*(.*?)(?=\n\*\*|\Z)', block_text, re.DOTALL)
+    return m.group(1).strip() if m else ''
+
+
 def read_formal_blocks_for_project(project: str) -> list[dict]:
     """Return active BLOCKED.md entries whose ### title starts with the project name."""
     results = []
@@ -324,13 +330,18 @@ def read_formal_blocks_for_project(project: str) -> list[dict]:
             title = title_m.group(1).strip()
             if not re.match(re.escape(project), title, re.IGNORECASE):
                 continue
-            res_m = re.search(r'\*\*Resolution\*\*:\s*(.+)', block_text)
-            resolution = res_m.group(1).strip() if res_m else ''
-            if resolution and resolution != '[leave blank]':
+            resolution = _extract_block_field(block_text, 'Resolution').splitlines()[0].strip()
+            if resolution and not resolution.startswith('[leave blank]'):
                 continue
-            need_m = re.search(r'\*\*What I need\*\*:\s*(.*?)(?=\n\*\*|\Z)', block_text, re.DOTALL)
-            what_i_need = need_m.group(1).strip() if need_m else ''
-            results.append({'title': title, 'what_i_need': what_i_need})
+            proj_key = re.split(r'\s*[—–]\s*', title, 1)[0].strip()
+            results.append({
+                'title': title,
+                'project': proj_key,
+                'context': _extract_block_field(block_text, 'Context'),
+                'progress': _extract_block_field(block_text, 'Progress so far'),
+                'what_i_need': _extract_block_field(block_text, 'What I need'),
+                'verify_with': _extract_block_field(block_text, 'Verify with'),
+            })
     except FileNotFoundError:
         pass
     return results
@@ -367,12 +378,16 @@ def read_project_detail(project: str) -> str:
     formal_blocks = read_formal_blocks_for_project(project)
     if formal_blocks:
         for b in formal_blocks:
-            out.append(f"🔴 BLOCKED (BLOCKED.md): {b['title']}")
+            out.append(f"🔴 **{b['title']}**")
+            if b['context']:
+                out.append(f"\n**Context**: {b['context']}")
+            if b['progress']:
+                out.append(f"\n**Progress so far**:\n{b['progress']}")
             if b['what_i_need']:
-                need_short = b['what_i_need'] if len(b['what_i_need']) <= 300 else b['what_i_need'][:297] + '...'
-                out.append(f"Needs: {need_short}")
-            proj_key = re.split(r'\s*[—–]\s*', b['title'], 1)[0].strip()
-            out.append(f"→ `!resolve {proj_key} <what you did>`")
+                out.append(f"\n**What I need**: {b['what_i_need']}")
+            if b['verify_with']:
+                out.append(f"\n**Verify with**: `{b['verify_with']}`")
+            out.append(f"\n→ `!resolve {b['project']} <what you did>`")
     else:
         blocked = fields.get("Blocked on", "").strip()
         if not blocked or re.match(r'^(—|None|none|-)', blocked):
