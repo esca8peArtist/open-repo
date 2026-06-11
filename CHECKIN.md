@@ -22,7 +22,14 @@
 - **Tests**: 38 cash-pool tests (6 new), no regressions
 - **Commit**: `ad41556` in stockbot submodule
 
-**Next Sprint 2 Item**: C-4 (silent zero-padding on signal length mismatch) — ready to execute
+**C-4 — Signal Length Mismatch Fix** ✅:
+- **Issue**: Silent zero-padding/truncation masked base model bugs (off-by-one, shape errors)
+- **Fix**: Replaced silent padding with clear ValueError including expected/actual lengths and model name
+- **Impact**: Base model bugs now immediately visible; no more hidden misalignments
+- **Tests**: 10 new tests for mismatch detection, all passing
+- **Commit**: `678cec1` in stockbot submodule
+
+**Next Sprint 2 Item**: C-2 (double computation of _compute_returns) — ready to execute
 
 **🚨 CRITICAL DEADLINE REMINDER**:
 - **open-repo deployment timing MUST be decided by June 12 09:00 UTC** (~9 hours remaining)
