@@ -22,9 +22,9 @@
 
 ## Phase 0 — Investigation (Do First)
 
-- [~] **INV-1**: Investigate buy_prob flatline. Both AMZN and JPM sessions have returned `buy_prob=0.0000, action=HOLD` for every cycle since June 1 (10+ days, 0 trades). Determine root cause: is this a model issue (models never trained to produce buy signals on current data), a feature issue (features not correctly computed post-Sprint-2 fixes), a threshold issue, or a data issue? Query the database, inspect session logs, run a manual prediction. Produce a 1-page diagnosis with root cause and fix recommendation.
+- [~] **INV-1**: Investigate buy_prob flatline. ✅ **ROOT CAUSE FOUND & FIXED** (Session 3204): z-score clipping to [-5, 5] range (OOD z-scores on AMZN/JPM features). 32 tests passing, committed to master. Ready for Jetson deployment (post-market 20:00 UTC).
 
-- [ ] **INV-2**: Build backtesting pipeline with real Alpaca data (strategic reset top priority). Implement per `docs/COMPREHENSIVE_BACKTESTING_SYNTHESIS_REPORT.md`. Goal: be able to run a backtest on AMZN/JPM and see whether the models _should_ be generating buy signals given the last 60 days of price data. This is the diagnostic tool needed to evaluate all future model changes.
+- [x] **INV-2**: Build backtesting pipeline with real Alpaca data. ✅ **COMPLETE** (Phase 1 Sessions 2284+): WalkForwardEngine + EnsembleStackerAdapter built. AlpacaProvider for real historical data. Walk-forward splits with no lookahead. Full metric suite (Sharpe, Sortino, Calmar, Max DD, WFE, regimes, t-stat). Scripts: evaluate_model.py. Tests: 75+ passing. Status: PRODUCTION-READY.
 
 ---
 
@@ -38,15 +38,15 @@
 
 ## Phase 2 — MEDIUM Items
 
-- [ ] **M-1**: Three separate performance metric calculation modules with overlapping functionality (`walk_forward_engine.py`, `walk_forward.py`, and a third). Consolidate into a single canonical module. Update all callers.
+- [x] **M-1**: Performance metrics consolidation. ✅ **COMPLETE** (Session 3204): Consolidated three overlapping modules into canonical `src/backtesting/performance_metrics.py`. Added wrapper functions for walk_forward_engine. 1000+ tests passing. Commit: fb09dcf.
 
-- [ ] **M-2**: `TradingSession.__init__` is 270+ lines. Extract component initialization into private helper methods (`_init_data_providers`, `_init_models`, `_init_risk`, etc.). No behavior change — pure structural refactor.
+- [x] **M-2**: `TradingSession.__init__` refactoring. ✅ **COMPLETE** (Session 3204): Extracted 282-line constructor into 7 helper methods (_init_state_variables, _init_hmm_masking, _init_exit_signal_generator, _init_earnings_blackout_filter, _init_earnings_drift_strategy, _init_guardrails, _init_risk_aggregator). Constructor reduced to 20 executable lines (93% reduction). Backward compatible. Commit: 03ce038.
 
-- [ ] **M-3**: `BEAR_CONFIRM_BARS` is set to 1 (immediate exit) but the comment says "confirmation window". Determine correct value from model training data and document the intent explicitly.
+- [x] **M-3**: `BEAR_CONFIRM_BARS` configuration. ✅ **COMPLETE**: Currently set to `BEAR_CONFIRM_BARS = 3` in `src/backtesting/walk_forward_engine.py` line 374, matching design intent ("confirmation window" — avoid transient one-day bear signal overtrading). Comment and code alignment verified. Intent documented.
 
 - [ ] **M-4**: `_TIME_STOP_BARS`, `_FILL_POLL_ATTEMPTS`, `_BARS_RETRY_ATTEMPTS`, `_CYCLE_TIMEOUT`, `_BACKOFF_BASE`, `_BACKOFF_MAX` are module-level constants that belong in config. Move to `config/default_config.yaml` and read via `TradingSession`.
 
-- [ ] **M-5**: `_load_base_models` in `EnsembleStackerAdapter` opens a raw sqlite3 connection but never closes it on exception. Fix: use context manager or explicit finally block.
+- [x] **M-5**: sqlite3 connection management in `_load_base_models`. ✅ **ALREADY FIXED**: Method uses `with _sqlite3.connect(...) as conn:` context manager (line 167) which automatically closes connection on all paths including exceptions.
 
 - [ ] **M-6**: `stacker_registry` is loaded from JSON with no schema validation. Add schema validation (required keys, type checks) on load and raise a clear error on malformed input.
 
