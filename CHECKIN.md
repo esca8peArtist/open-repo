@@ -2,24 +2,24 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 2988, June 11 2026 02:05 UTC)
+## Since Last Check-in (Session 2989, June 11 2026 02:13 UTC)
 
-**Orchestrator Action**: Standard orientation completed. Verified pause directive ACTIVE & CORRECT. All 4 blocks re-verified unresolved. No autonomous work available.
+**Orchestrator Action**: Standard orientation + block re-verification. Pause directive confirmed ACTIVE & CORRECT. All 4 blocks remain unresolved. Exploration Queue reviewed (100+ items staged for June 15 post-pause).
 
-**🚨 CRITICAL DEADLINE — IMMEDIATE USER ACTION REQUIRED** (in ~31 hours):
-- **open-repo deployment timing decision**: Must choose between 09:00 UTC (business hours) or 20:00 UTC (after-hours) by June 12 09:00 UTC. Deployment docs show conflicting times. **Action**: Reply with clarification to BLOCKED.md Resolution field or CHECKIN.md.
+**🚨 CRITICAL DEADLINE — ~30.8 HOURS TO USER DECISION** (June 12 09:00 UTC):
+- **open-repo deployment timing clarification**: Docs show conflicting times: 09:00 UTC in newer June 6 docs (DEPLOYMENT_JUNE_12_FINAL_PROCEDURES.md, risk_mitigation, precheck), 20:00 UTC in older June 3 docs (runbook, go-live checklist). Business impact: 09:00 = 25-35 min service downtime during business hours (7% daily uptime budget, SLA drops to 95%); 20:00 = off-hours deployment (SLA stays 100%). **User must confirm canonical time or deployment cannot proceed at scheduled time.** Reply to BLOCKED.md or CHECKIN.md.
 
-**Block Verification** (all 4 remain unresolved):
-- ✅ mfg-farm: Test print not yet executed (user action pending)
-- ✅ systems-resilience: No Docker containers running (user platform choice + IP/domain/SMTP pending)
-- ✅ **open-repo: Deployment timing conflict still present** (CRITICAL — clarification due June 12 09:00 UTC)
-- ✅ cybersecurity-hardening: Windows manual restart pending (cannot auto-verify)
+**Block Verification** (all 4 confirmed unresolved, no changes since Session 2988):
+- ✅ mfg-farm test-print-results/: directory does not exist (user action pending: 0.20mm layer, PLA+, 3 walls, 220–225°C)
+- ✅ systems-resilience: no Docker containers (docker ps | grep -E "nextcloud|discourse" returned empty; platform choice + credentials pending, 61+ hours overdue)
+- ✅ **open-repo: timing conflict verified via grep** (09:00 vs 20:00 UTC) — **CRITICAL deadline June 12 09:00 UTC**
+- ✅ cybersecurity-hardening: manual Windows restart required (cannot auto-verify)
 
-**Stockbot Status**: Sprint 2 COMPLETE (11/11 items, Sessions 2982-2983). Sprint 3 TBD — awaiting next phase direction.
+**Stockbot Status**: Sprint 2 COMPLETE (100%, Sessions 2982-2983). No Sprint 3 work defined. Awaiting next phase direction from user.
 
-**Overall Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT** (~72 hours remaining until June 15 00:00 UTC). No autonomous work available. Pause prevents project work initiation; all 4 blocks await user decisions.
+**Pause Directive Status**: ✅ **ACTIVE & CORRECT** (~72 hours remaining until June 15 00:00 UTC). All projects paused except stockbot (unpaused but no active work). Exploration Queue verified: 100+ items staged for post-pause execution (Domains 49-50 research, Phase 4 pre-planning, Wave 2 logistics, etc.). Idle state is correct by design.
 
-**Session duration**: ~5 minutes (orientation + block verification + CHECKIN update)
+**Session duration**: ~8 minutes (orientation + deployment docs investigation + block verification + queue review + CHECKIN update)
 
 ---
 
