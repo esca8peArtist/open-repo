@@ -2,6 +2,31 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3217, June 11 2026 20:43 UTC — INV-1 deployment verified, all projects paused)
+
+**Orchestrator Status**: ✅ **INV-1 DEPLOYMENT VERIFIED PRODUCTION-READY**. Docker container confirmed running new z-score clipping code. Both AMZN/JPM sessions cycling normally in post-market mode. Ready for June 12 13:30 UTC market open verification.
+
+**What Happened**:
+- ✅ **Deployment Verification** (20:43 UTC): Container logs confirm z-score clipping fix active (code deployed ~20:15-20:30 UTC)
+- ✅ **Session Health**: Both amzn_lgbm_ho_001 and jpm_ridge_wf_001 cycling with market-aware sleep (expected post-market behavior)
+- ✅ **Jetson Infrastructure**: All systems healthy; WebSocket 406 warnings are expected/non-blocking per prior sessions
+- ✅ **Code Verified**: np.clip(z_scores, -5.0, 5.0) now active in ensemble inference pipeline
+
+**Current Status**:
+- 🟢 **INV-1 Deployment**: PRODUCTION-READY, verified running on Jetson
+- 🟡 **Signal Restoration**: Buy_prob non-zero values expected to appear at next market open (June 12 13:30 UTC)
+- 📋 **Autonomous Work**: **PAUSED** per user directive 2026-06-10 — no autonomous work scheduled
+- ⏳ **Next Checkpoint**: June 12 ~14:00 UTC verify buy_prob signal restoration in Docker logs
+
+**Items Needing User Input**: None at this time. All deployment automation complete. Waiting for user to resume orchestrator when ready.
+
+**Suggested Actions** (when user resumes after June 12 market open):
+1. Verify buy_prob signal restoration (AMZN/JPM should show non-zero values in trading.db)
+2. Resume resistance-research Phase 2 execution (highest priority after deployment verification)
+3. Continue with other paused projects as directed
+
+---
+
 ## Since Last Check-in (Session 3216, June 11 2026 20:35 UTC — INV-1 deployment complete, awaiting user resumption)
 
 **Orchestrator Status**: ✅ **INV-1 DEPLOYMENT FULLY COMPLETE**. z-score clipping fix deployed to Jetson. Stockbot container restarted; AMZN/JPM sessions active and market-aware sleeping. Ready for June 12 market open trading verification.
