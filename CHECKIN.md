@@ -2,35 +2,40 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3205, June 11 2026 17:21-17:30 UTC — deployment monitoring standby)
+## Since Last Check-in (Session 3205, June 11 2026 17:21-17:30 UTC — deployment monitoring checkpoint)
 
-**Orchestrator Action**: Await post-market deployment of z-score clipping fix at 20:15 UTC.
+**Orchestrator Action**: Verify deployment script status and await post-market deployment of z-score clipping fix at 20:15 UTC.
 
 **What Happened**:
-- ✅ **Orientation Complete**: Read ORCHESTRATOR_STATE.md, INBOX.md, BLOCKED.md
-- ✅ **Project Status Verified**: All major projects paused or blocked on user action; no autonomous work available
-- ✅ **Deployment Script Confirmed**: Background process PID 442029 running and scheduled to create DEPLOY_READY at 20:15 UTC
-- ✅ **WORKLOG Updated**: Logged session orientation and monitoring plan
+- ✅ **Orientation Complete**: Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md
+- ✅ **Deployment Script Verified**: PID 442029 confirmed running, scheduled to create DEPLOY_READY at ~20:15 UTC
+  - Script started: 18:16 UTC (Session 3204)
+  - Sleep duration: 2h 58m (until ~20:15 UTC)
+  - Script will verify market closed before creating DEPLOY_READY flag
+- ✅ **Project Status Confirmed**: All major projects paused or blocked on user action; no autonomous work available
+- ✅ **Code State Verified**: Z-score clipping fix confirmed in master (ensemble_stacker.py lines 21-24)
+- ✅ **WORKLOG Updated**: Logged current deployment monitoring status
 
 **What's In Progress**:
-- 🟡 **INV-1 Deployment**: Scheduled for 20:15 UTC (post-market close at 20:00 UTC)
-  - Background script will create DEPLOY_READY flag
-  - Deploy script will auto-execute: rsync code to Jetson + restart stockbot container
-  - Expected outcome: AMZN/JPM sessions resume generating non-zero buy_prob (currently 0.0 for 10+ days due to z-score saturation)
+- 🟡 **INV-1 Deployment**: Running on schedule for 20:15 UTC (post-market close at 20:00 UTC)
+  - Background script will create DEPLOY_READY flag (autonomous, no action needed)
+  - Deploy script will auto-execute: rsync code to Jetson (/opt/stockbot/src) + restart stockbot container
+  - Expected outcome: AMZN/JPM sessions resume generating non-zero buy_prob (currently 0.0 for 10+ days)
+  - Verification: Check Docker logs for "buy_prob" non-zero values within 60 seconds of restart
 
 **Items Needing User Input**:
 - None at this moment. Deployment is proceeding automatically.
 
 **Suggested Priorities for Next Session**:
-1. **Post-Deployment Verification** (immediate): Verify buy_prob signals restored after Jetson restart
-   - Expected completion time: 20:30 UTC (5-10 min verification)
-   - Command: `ssh xxsb-01 "docker logs stockbot --since 10m 2>&1 | grep buy_prob"` — expect non-zero values
-   - Success criteria: First 10 trading cycles show non-zero buy_prob for AMZN and JPM signals
+1. **Post-Deployment Verification** (immediate, ~5 min): Verify buy_prob signals restored
+   - Expected completion: 20:30 UTC (30 min after deployment window opens)
+   - Command: `ssh xxsb-01 "docker logs stockbot --since 10m 2>&1 | grep buy_prob"` 
+   - Success criteria: Non-zero buy_prob for AMZN and JPM within first 10 trading cycles
 2. **M-7 through M-10 Tech Debt** (if deployment successful): Continue Sprint 3 items
    - M-7: feature_store.py lazy initialization
-   - M-9: Broker factory invariant guard
-   - M-10: WORKLOG reference clarification
-3. **Exploration Queue** (after tech debt): Domains 49-50 research framework expansion (4-5 hours, 88% confidence)
+   - M-9: Broker factory invariant guard  
+   - M-10: WORKLOG reference clarification (documentation only)
+3. **Exploration Queue** (after tech debt): Domains 49-50 research framework expansion
 
 **Usage Status**: Sonnet 3.6% (319,786 tokens as of ORCHESTRATOR_STATE), reset in 103h. Budget healthy.
 
