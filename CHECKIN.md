@@ -2,6 +2,39 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3208, June 11 2026 17:56 UTC — pre-deployment monitoring)
+
+**Orchestrator Status**: All systems ready for INV-1 Jetson deployment at 20:15 UTC (19 min away).
+
+**What Happened**:
+- ✅ **Full Orientation Complete**: Read all state files (ORCHESTRATOR_STATE, BLOCKED, INBOX, PROJECTS)
+- ✅ **Deployment Script Verified**: PID 442029 confirmed still running, on schedule for 20:15 UTC execution
+- ✅ **Project Status Confirmed**: All projects either paused or blocked on named user actions
+  - resistance-research: Paused (user directive June 10)
+  - mfg-farm: Paused (user directive June 10)
+  - cybersecurity-hardening: Paused (user directive June 10)
+  - stockbot: Active — INV-1 deployment in final countdown (19 min)
+  - All others: Complete or awaiting user execution
+- ✅ **No Autonomous Work Available**: No exploration queue items ready for immediate work
+- ✅ **Code Ready**: Z-score clipping fix verified in master (c0ff785c), working tree clean
+
+**What's In Progress**:
+- 🟡 **INV-1 Deployment**: Executing at 20:15 UTC
+  - Root cause: AMZN/JPM buy_prob=0.0000 for 10+ days due to OOD z-scores
+  - Fix: np.clip(z_scores, -5.0, 5.0) in ensemble_stacker.py
+  - Expected outcome: Non-zero buy_prob signals resume within 60s of restart
+  - Verification: Check Docker logs post-deployment
+
+**Items Needing User Input**: None at this time. All systems autonomous until next deployment outcome.
+
+**Timeline**:
+- 20:00 UTC: Market close
+- 20:15 UTC: Deployment script creates DEPLOY_READY (autonomous)
+- 20:20–20:30 UTC: Orchestrator rsync + docker restart
+- Next session: Verify deployment outcome
+
+---
+
 ## Since Last Check-in (Session 3207, June 11 2026 17:43-18:00 UTC — Sprint 3 M-7 & M-9 implementation)
 
 **Orchestrator Status**: Sprint 3 M-7 and M-9 COMPLETE and committed. INV-1 deployment on track for 20:15 UTC post-market execution.
