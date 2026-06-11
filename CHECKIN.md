@@ -2,6 +2,34 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3225, June 11 2026 23:15 UTC — ALL AUTONOMOUS WORK COMPLETE, STANDING BY FOR JUNE 12 USER ACTIONS)
+
+**Orchestrator Status**: ✅ **ORIENTATION VERIFIED** — All autonomous work confirmed complete (per Session 3224). All projects paused per user directive. INBOX empty. Exploration queue 5 items (deferred to June 14+ per protocol). Standing by for June 12 user Wave 1/Wave 2 email executions and automated 13:30 UTC signal restoration checkpoint.
+
+## Session 3225 (June 11 2026 23:15 UTC) — Orientation & Standby
+
+**What Happened**:
+- ✅ **Full Orientation**: ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, CHECKIN.md reviewed
+- ✅ **Autonomous Work Audit**: Confirmed Session 3224 findings still valid; no new work added to INBOX
+- ✅ **Exploration Queue Status**: 5 items available; deferred to June 14+ per protocol (Wave 2 execution must complete first)
+- ✅ **Git Status**: ORCHESTRATOR_STATE.md (timestamp/usage update), scripts/discord-bot.py (read_latest_checkin function), projects/stockbot (new commits from Session 3221)
+- ✅ **All Orchestration Files Ready for Commit**
+
+**Key Status** (unchanged from Session 3224):
+- 🟢 **Stockbot M-7–M-10**: COMPLETE & VERIFIED
+- 🟡 **Resistance-Research Wave 1**: OVERDUE (60-75 min, recoverable until July 1)
+- 🟢 **Resistance-Research Wave 2**: PREP COMPLETE, ready for June 12 09:00–12:00 UTC
+- ⏳ **June 12 13:30 UTC Signal Checkpoint**: Automated, monitoring buy_prob restoration
+
+**Items Requiring User Input**:
+1. **Wave 1 Email Sends** (OVERDUE) — CLC + Issue One, 60-75 min
+2. **Wave 2 Execution** (June 12, 09:00–12:00 UTC) — 3 emails with 90-min stagger
+
+**Next Automated Checkpoint**:
+- June 12 ~13:30 UTC: Signal restoration verification (buy_prob non-zero = PASS)
+
+---
+
 ## Since Last Check-in (Session 3224, June 11 2026 23:10 UTC — ALL AUTONOMOUS WORK VERIFIED COMPLETE, AWAITING USER WAVE 1 ACTION)
 
 **Orchestrator Status**: ✅ **PHASE 3 TECH DEBT VERIFIED COMPLETE** (M-7–M-10 all confirmed live, tests passing). **Resistance-Research Wave 2 prep complete** (execution checklist ready). **Orchestrator standing by for user Wave 1 email sends** (CLC + Issue One, 60-75 min, 20 days until July 1 hard deadline). **June 12 13:30 UTC signal verification checkpoint automated and ready**.

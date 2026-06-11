@@ -80,6 +80,65 @@ def read_section(path: Path, section: str, lines: int = 40) -> str:
         return f"(file not found: {path.name})"
 
 
+def read_latest_checkin(path: Path, tail_lines: int = 300) -> str:
+    """Read the most recent session block from CHECKIN.md and return a compact summary."""
+    try:
+        all_lines = path.read_text().splitlines()
+        recent = all_lines[-tail_lines:]
+
+        # Find the last top-level ## heading in the tail
+        last_heading_idx = -1
+        for i, line in enumerate(recent):
+            if line.startswith("## "):
+                last_heading_idx = i
+
+        if last_heading_idx < 0:
+            return "\n".join(recent[-50:])
+
+        section_lines = recent[last_heading_idx:]
+        heading = section_lines[0].lstrip("# ").strip()
+
+        # Extract key fields with simple heuristics
+        status_line = next(
+            (l for l in section_lines[1:20] if "**Status**" in l or l.strip().startswith("**Status")),
+            None,
+        )
+        # Collect bullet/checkbox lines (limit to 12)
+        bullets = [
+            l.strip() for l in section_lines
+            if l.strip().startswith(("- ", "* ", "✓", "✗", "•"))
+        ][:12]
+
+        # Pull table rows if present (block status table)
+        table_rows = [
+            l.strip() for l in section_lines
+            if l.strip().startswith("|") and not l.strip().startswith("|---")
+        ][:6]
+
+        # Stats lines (Duration / Work type / Commits)
+        stat_keys = ("Duration", "Work type", "Commits", "Autonomous", "Blocker")
+        stats = [
+            l.strip().lstrip("- ").strip()
+            for l in section_lines
+            if any(k in l for k in stat_keys)
+        ][:5]
+
+        parts = [f"**{heading}**"]
+        if status_line:
+            parts.append(status_line.strip().lstrip("- ").strip())
+        if bullets:
+            parts.append("\n".join(bullets))
+        if table_rows:
+            parts.append("\n".join(table_rows))
+        if stats:
+            parts.append("**Stats:** " + " | ".join(stats))
+
+        return "\n\n".join(p for p in parts if p)
+
+    except FileNotFoundError:
+        return f"(file not found: {path.name})"
+
+
 def parse_active_blocks() -> list[dict]:
     """Parse BLOCKED.md active blocks into compact dicts {title, project, what_i_need}."""
     try:
@@ -633,8 +692,8 @@ async def on_message(message: discord.Message):
             await message.channel.send(chunk)
 
     elif content.lower() == "!checkin":
-        text = read_section(CHECKIN, "## Since Last Check-in")
-        for chunk in chunk_message(f"**CHECKIN**\n{text}"):
+        text = read_latest_checkin(CHECKIN)
+        for chunk in chunk_message(text):
             await message.channel.send(chunk)
 
     elif content.lower() == "!blocked":
