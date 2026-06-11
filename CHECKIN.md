@@ -26,17 +26,34 @@
 - **Full suite**: 1,042 passed, 12 pre-existing failures (unchanged), 0 new failures
 - **Commit**: `cbb6da8` in stockbot submodule
 
-**Session 2983 Summary**:
-- ✅ **7 of 11 Sprint 2 items complete** (64% done): C-1, C-3, C-4, C-2, H-6, H-3, H-2
+**H-1 — Duplicate Regime Detection Code Refactoring** ✅:
+- **Issue**: Two functions `_detect_regimes()` and `_classify_regime_labels()` implemented identical 45-line rolling-window logic
+- **Fix**: Refactored `_detect_regimes()` as 2-line wrapper around `_classify_regime_labels()`; single source of truth
+- **Impact**: Maintenance burden eliminated; bug fixes only need to happen once
+- **Tests**: 4 new tests covering long/short series, empty input, count preservation (114 applicable tests all pass)
+- **Commit**: `4fa7af4` in stockbot submodule
+
+**H-7 — Feature Pipeline Logging Standardization** ✅:
+- **Issue**: `feature_pipeline.py` used `logging.getLogger(__name__)` (stdlib) instead of project's standard `get_logger()`
+- **Finding**: Other 6 feature modules already use `get_logger()`, only this one didn't
+- **Fix**: Replaced stdlib logging with get_logger() import and usage
+- **Impact**: Consistent logging across all modules; centralized logger configuration
+- **Tests**: 3 new tests confirming logger identity, stdlib import removed, loguru interface present (all pass)
+- **Commit**: `ed3586b` in stockbot submodule
+
+**Session 2983 Summary (Updated)**:
+- ✅ **9 of 11 Sprint 2 items complete** (82% done): C-1, C-3, C-4, C-2, H-6, H-3, H-2, H-1, H-7
 - ✅ **All 4 CRITICAL items done**: G3 gate fix, cash pool capped, signal validation, 50% inference speedup
-- ✅ **3 HIGH items done**: Registry path fix, ValueError handling explicit, horizon-aware exits
-- **Remaining**: H-1, H-7 (HIGH), M-5, M-6 (MEDIUM) — ready for future sessions
+- ✅ **All 5 HIGH items done**: Registry path fix, ValueError explicit, horizon-aware exits, regime code single source, logging standardized
+- **Remaining**: M-5, M-6 (MEDIUM) — only 2 items left, can finish in next session
 
 **Overall Impact**:
-- **Safety**: 4 CRITICAL fixes ensure models can't silently fail or overleverge
+- **Safety**: All 4 CRITICAL fixes ensure models can't silently fail or overleverge
 - **Performance**: 50% inference time reduction (C-2)
 - **Correctness**: Models exit at proper trained horizons (H-2); no more horizon mismatches
-- **Reliability**: All paths explicit; bugs surface immediately instead of masking with fallbacks
+- **Code Quality**: Duplicate code eliminated (H-1); logging standardized (H-7)
+- **Reliability**: All paths explicit; bugs surface immediately; single sources of truth maintained
+- **Maintainability**: Feature logic only defined once; logging configured centrally
 
 ---
 
