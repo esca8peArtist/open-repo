@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T00:02:18Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-11T01:45:57Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.0% (180,498 tokens) | All-models 27.8% | Reset in 120h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.3% (204,084 tokens) | All-models 29.1% | Reset in 118h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -18,8 +18,8 @@
 
 ## Active Projects
 ### stockbot
-**Status**: Active — **DEV AGENT LOOP RUNNING** — User lifted pause 2026-06-11. Pause directive for stockbot **REMOVED**. Other projects (resistance-research, mfg-farm, systems-resilience, cybersecurity-hardening) remain paused until their user-action blocks resolve.
-**Focus**: 🔄 **SPRINT 2 — C-1 first** (pooled t-stat dead code, `walk_forward_engine.py:1516-1521`). Full backlog in PROJECTS.md. Agent Loop Workflow v2.0 is mandatory for all work (SPEC→PLAN→IMPLEMENT→REVIEW→FIX).
+**Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
+**Focus**: ✅ **SPRINT 2 COMPLETE — 11/11 ITEMS DONE (100%)** — User lifted pause for stockbot (Session 2981). Agent Loop Workflow v2.0 (SPEC→PLAN→IMPLEMENT→REVIEW→FIX) executed for all items. **All work done**: C-1, C-3, C-4, C-2 (CRITICAL), H-6, H-3, H-2, H-1, H-7 (HIGH), M-5, M-6 (MEDIUM). **Major impact**: 50% inference time reduction (C-2); models exit at trained horizons (H-2); all 4 critical safety fixes deployed (C-1, C-3, C-4, H-6); duplicate code eliminated (H-1); logging standardize … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -61,9 +61,7 @@
 ### open-repo — Deployment start time conflict (user clarification required)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: mfg-farm — focus references Session 2972 (162 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (165 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 2973 (161 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 2969 (15 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
@@ -75,24 +73,6 @@
 (NONE — all pending items processed from Session 2979)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
-**Critical User Decisions Awaiting** (unchanged since Session 3111):
-1. 🚨 **systems-resilience**: Platform choice (Nextcloud+Matrix or Discourse) + public IP/domain + SMTP credentials
-2. ⏰ **open-repo**: Deployment timing confirmation (09:00 or 20:00 UTC) — due June 12 09:00 UTC (~32h)
-3. **stockbot**: Jetson cooler installation (user action)
-4. **cybersecurity-hardening**: Windows VeraCrypt completion (user action)
-
-**Exploration Queue**: 108 total items tracked. All completed items archived. Queued items scheduled for June 15-20 post-pause. Zero new queue items required.
-
-**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT.** No autonomous project work available. All 19+ consecutive sessions confirm idle state is correct by design. Autonomy resumes June 15 00:00 UTC.
-
-**Session duration**: ~8 minutes (orientation + block verification + CHECKIN update)
-
-**Next session**: Resume autonomous execution once user provides 3 critical decisions above.
-
----
-
-## Session 3118 (June 10 22:18–22:35 UTC) — Pause Directive Verified; Idle State Correct
 
 **Orchestrator Action**: Standard orientation completed. Pause directive confirmed **ACTIVE through June 15 00:00 UTC** (~3d 1.5h remaining). All 4 blocks re-verified unresolved.
 
@@ -115,3 +95,21 @@
 **Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT.** No autonomous project work available. All 34+ consecutive sessions confirm idle state is correct by design. Autonomy resumes June 15 00:00 UTC.
 
 **Session duration**: ~3 minutes (orientation + block verification + CHECKIN/WORKLOG update)
+
+---
+
+## Session 2981 (June 11 ~00:00 UTC) — Phase 1 Complete; Stockbot Pause Lifted
+
+**Phase 1 Sprint complete** (all items from Session 2980 codebase assessment):
+- ✅ Security fail-closed: auth.py, security.py raise RuntimeError on missing/default secrets
+- ✅ Kelly sizer zero-loss bug fixed (`_win_loss_ratio` returns 1.0 on all-positive window)
+- ✅ Transaction cost model added to WalkForwardEngine (2 bps default slippage)
+- ✅ Pi/Jetson boundary violations resolved (35 files changed, sync scripts deleted)
+- ✅ Kelly sizer unit tests (36 tests, `tests/unit/test_ml/test_kelly_sizer.py`)
+- ✅ DSR `num_trials=1` — investigated, closed as correct design choice
+
+**Agent Loop Workflow** (SPEC→PLAN→IMPLEMENT→REVIEW→FIX) active. First use: kelly_sizer_tests cycle (spec + plan + 36 tests + review all committed).
+
+**User action**: Lifted pause directive for stockbot only. Other projects remain paused.
+
+**Next**: Sprint 2 begins with C-1 (pooled t-stat dead code in `_aggregate_folds`). Backlog ordered in PROJECTS.md.

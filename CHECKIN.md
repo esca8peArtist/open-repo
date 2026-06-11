@@ -2,25 +2,23 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 2984, June 11 2026 ~01:45 UTC)
+## Since Last Check-in (Session 2985, June 11 2026 01:46 UTC)
 
-**Orchestrator Action**: Standard orientation completed. Pause directive confirmed ACTIVE & CORRECT through June 15 00:00 UTC (~87 hours remaining).
+**Orchestrator Action**: Orientation + state verification completed. Pause directive confirmed ACTIVE & CORRECT.
 
-**Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE** — All projects paused or blocked on external dependencies. Stockbot Sprint 2 is 100% complete (delivered in Session 2983). Exploration Queue has 108 items scheduled for post-pause execution (June 15-20).
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE AND CORRECT.** No autonomous work available. All projects paused except stockbot (pause lifted 2026-06-10, Sprint 2 complete 2026-06-11). Exploration Queue items scheduled for post-pause (June 15-20). Stockbot awaiting next phase direction (Sprint 2 complete, no Phase 3 work specified).
 
-**Block Verification** (all 4 re-confirmed unresolved):
-- ✅ cybersecurity-hardening: VeraCrypt pre-boot restart required (manual action)
-- ✅ mfg-farm: Test print execution required (manual action)
-- ✅ systems-resilience: Platform deployment blocked on user decision (82+ hours overdue)
-- 🚨 **open-repo: Deployment timing conflict verified** — decision due June 12 09:00 UTC (~31 hours)
+**Critical User Decisions Pending**:
+1. 🚨 **open-repo — Deployment timing — DUE JUNE 12 09:00 UTC** (~31 hours): Confirm 09:00 UTC (business hours) or 20:00 UTC (off-hours). Conflicting docs exist; decision gates all downstream work.
+2. **systems-resilience — Platform choice + credentials** (61+ hours overdue): Choose Nextcloud+Matrix or Discourse; provide public IP/domain/SMTP credentials.
+3. **mfg-farm — Test print execution** (user action): 0.20mm layer height, PLA+, 3 walls, 220–225°C spec in BLOCKED.md.
+4. **cybersecurity-hardening — Windows VeraCrypt restart** (user action): Manual restart + pre-boot password + encryption activation.
 
-**🚨 CRITICAL DEADLINE REMINDER**:
-- **Deployment start time must be decided by June 12 09:00 UTC** (in ~31 hours)
-- **Options**: 09:00 UTC (business hours, 95% SLA) or 20:00 UTC (off-hours, 100% SLA)
-- **Action required**: Update BLOCKED.md Resolution field or reply in CHECKIN "Needs Your Input" section
-- **Docs checked**: Confirmed newer docs specify 09:00 UTC; older docs specify 20:00 UTC; SLA implications documented
+**Block Verification**: All 4 blocks re-confirmed unresolved (same as Session 2984).
 
-**Session duration**: ~4 minutes (orientation + block verification + CHECKIN update)
+**Next Autonomous Work**: Resumes June 15 00:00 UTC when pause directive lifts. All 108 Exploration Queue items staged for post-pause.
+
+**Session duration**: ~3 minutes (orientation + state confirmation)
 
 ---
 
