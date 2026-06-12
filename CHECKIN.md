@@ -2,6 +2,53 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## Since Last Check-in (Session 3237, June 12 2026 00:01 UTC — PAUSE DIRECTIVE STABLE, STANDING BY FOR MARKET-OPEN CHECKPOINT)
+
+**Orchestrator Status**: ✅ **PAUSE DIRECTIVE CONFIRMED STABLE** — Through June 15 00:00 UTC. All projects paused per user directive 2026-06-10. No autonomous work available. All three active blocks remain unresolved (all require user action). **Market-open checkpoint (June 12 13:30 UTC)**: 13 hours 29 minutes remaining. System ready for signal verification event.
+
+**Orientation Results** (00:01 UTC, June 12):
+- ✓ ORCHESTRATOR_STATE.md reviewed (generated 2026-06-12T00:00:47Z)
+- ✓ BLOCKED.md verified (3 active blocks unchanged, all require user action):
+  - **cybersecurity-hardening**: Windows VeraCrypt pre-boot restart + Phase 1 continuation
+  - **mfg-farm**: Test print execution awaiting completion
+  - **systems-resilience**: Platform deployment decision (June 9 deadline passed, deferred)
+- ✓ Verification checks run:
+  - mfg-farm test-print-results: directory does not exist (block unresolved)
+  - systems-resilience Docker containers: no nextcloud/discourse containers (block unresolved)
+- ✓ PROJECTS.md verified (resistance-research marked Active, stockbot marked Active, all others paused per directive)
+- ✓ Pause directive confirmed stable through June 15 00:00 UTC
+
+**Exploration Queue Status**:
+- 5 items available (Phase 3 candidates from resistance-research)
+- Queue sufficient for contingency, but all items part of paused project
+- Per protocol: skip paused projects unless a block just resolved (none resolved)
+
+**Autonomous Work Assessment**: 
+- 🟡 **All projects remain paused** per user directive 2026-06-10 (effective through June 15 00:00 UTC)
+- 🟡 **Zero autonomous work** — resistance-research has Wave 2 user action scheduled June 12 09:00–12:00 UTC (email sending), not autonomous work
+- 🟡 **Stockbot**: INV-1 deployment complete & verified (Session 3216–3218 on June 11); awaiting market-open checkpoint verification at 13:30 UTC
+- ✓ **Standing by** for June 15 user resume or June 12 13:30 UTC signal verification event
+
+**Upcoming Checkpoints**:
+- **June 12 13:30 UTC** (13h 29m remaining): Market open, monitor AMZN/JPM buy_prob signal restoration (Jetson INV-1 z-score clipping fix verification). Expected: buy_prob non-zero = PASS. **This is within monitoring scope (not autonomous work — health check only).**
+- **June 12 09:00–12:00 UTC** (9h remaining): resistance-research Wave 2 user action (3 email sends with 90-min stagger). Autonomous work resumes after Wave 2 completion if user permits.
+- **June 15 00:00 UTC**: Pause directive expires; expect user resume signal
+
+**Items Needing User Input**: 
+1. **cybersecurity-hardening Phase 1.3** — Windows VeraCrypt pre-boot restart + encryption enable (can be done anytime)
+2. **mfg-farm** — Execute test print (0.20mm layer, PLA+, 3 walls, 220–225°C) and report snap-arm clearance evaluation
+3. **systems-resilience platform choice** — Discourse vs Nextcloud+Matrix (deadline passed; deferred)
+4. **resistance-research Wave 2** — Execute June 12 09:00–12:00 UTC (3 email sends to Darius Kemp, Jenny Farrell, Clean Money Action Fund). Wave 1 OVERDUE but recoverable through July 1.
+
+**Suggested Next Actions** (when checkpoint events occur or user resumes):
+1. **June 12 13:30 UTC**: Verify buy_prob signal restoration at market open (auto-check via Docker logs: should show non-zero values on at least one of AMZN/JPM sessions)
+2. **June 12 09:00–12:00 UTC**: resistance-research Wave 2 execution (user action: email sends)
+3. **June 15 00:00 UTC**: Resume from pause if user signals restart
+
+**Conclusion**: Orchestrator stable and idle per pause directive. All state verified in sync. No autonomous work warranted. Standing by for user resume signal (June 15+ expected) or June 12 market-open checkpoint verification event.
+
+---
+
 ## Since Last Check-in (Session 3236, June 12 2026 06:25 UTC — PAUSE CONFIRMED, STANDING BY)
 
 **Orchestrator Status**: ✅ **PAUSE DIRECTIVE CONFIRMED STABLE** — Through June 15 00:00 UTC. All projects paused per user directive 2026-06-10. No autonomous work available. All three active blocks remain unresolved. **Market-open checkpoint (June 12 13:30 UTC)**: 7.25 hours remaining. System ready for signal verification event.
