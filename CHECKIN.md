@@ -2,49 +2,44 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## Since Last Check-in (Session 3247, June 12 2026 01:27 UTC — PAUSE DIRECTIVE RECONFIRMED, AWAITING MARKET-OPEN CHECKPOINT)
+## Since Last Check-in (Session 3248, June 12 2026 01:33 UTC — EXECUTION WINDOWS VERIFIED READY, PAUSE ACTIVE)
 
-**Orchestrator Status**: ✅ **PAUSE DIRECTIVE CONFIRMED STABLE** — Through June 15 00:00 UTC. All projects paused. Zero autonomous work available. All 3 blocks remain unresolved (require user action). Market-open checkpoint 13:30 UTC (~12h away, automatic).
+**Orchestrator Status**: ✅ **PAUSE DIRECTIVE CONFIRMED STABLE** — Through June 15 00:00 UTC. All projects paused. TWO CRITICAL EXECUTION WINDOWS TODAY requiring user attention.
 
-**Work Completed**:
-- ✓ Orientation: ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md verified
-- ✓ Block checks: mfg-farm test-print-results/ missing; systems-resilience no Docker containers; cybersecurity-hardening VeraCrypt restart needed
-- ✓ All state in sync, pause directive confirmed through June 15
+**Orientation & Verification Completed**:
+- ✓ ORCHESTRATOR_STATE.md reviewed (generated 01:32 UTC)
+- ✓ BLOCKED.md verified: 3 active blocks unchanged, all require user manual action
+- ✓ PROJECTS.md confirmed paused per directive 2026-06-10
+- ✓ INBOX.md empty
+- ✓ resistance-research Wave 2 templates verified production-ready
+- ✓ stockbot deployment verified complete and ready for checkpoint
 
-**State Summary** (01:27 UTC):
-- ✓ ORCHESTRATOR_STATE.md valid (generated 01:26 UTC)
-- ✓ BLOCKED.md: 3 active blocks — cybersecurity-hardening (VeraCrypt restart), mfg-farm (test print), systems-resilience (platform choice)
-- ✓ PROJECTS.md: all projects paused per directive 2026-06-10
-- ✓ INBOX.md: empty
-- ✓ Pause directive confirmed stable through June 15 00:00 UTC
+**State Summary** (01:33 UTC):
+- ✓ Pause directive confirmed active through June 15 00:00 UTC (2.9 days remaining)
+- ✓ All orchestration files in sync and committable
+- ✓ All 3 active blocks stable (cyber, mfg-farm, systems-resilience)
+- ✓ Zero autonomous work available (correct per pause directive)
 
-**Autonomous Work Assessment**: Zero. All projects paused. No new work available.
+**CRITICAL: Two User-Action Windows TODAY**:
 
-**Work Completed**:
-- ✓ Orientation completed: ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md all verified valid
-- ✓ Block verification checks run (3 active blocks unchanged, all require user action)
+1. **resistance-research Wave 2 Execution** — TODAY June 12, 09:00–12:00 UTC (7.5 hours away)
+   - **Status**: ✅ All templates production-ready, all contacts re-verified June 11
+   - **Location**: `projects/resistance-research/DOMAIN_51_WAVE_2_EXECUTION_CHECKLIST.md`
+   - **Action Required**: Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in `domain-51-send-templates.md`, then send 3 emails with 90-min stagger (09:00, 10:30, 12:00 UTC)
+   - **Destinations**: Darius Kemp (Common Cause CA), Jenny Farrell (LWV CA), Clean Money Action Fund
+   - **Slip Window**: Can move to June 13 if needed (July 1 deadline has 18-day buffer)
 
-**State Summary** (01:20 UTC):
-- ✓ ORCHESTRATOR_STATE.md valid (generated 01:20 UTC)
-- ✓ BLOCKED.md: 3 active blocks — cybersecurity-hardening (VeraCrypt restart), mfg-farm (test print), systems-resilience (platform choice)
-- ✓ PROJECTS.md: all projects paused per directive 2026-06-10
-- ✓ INBOX.md: empty
-- ✓ Pause directive confirmed stable through June 15 00:00 UTC
-
-**Autonomous Work Assessment**: Zero. All projects paused. No new work available.
-
-**Upcoming Events**:
-- **June 12 13:30 UTC**: Market-open checkpoint (Jetson AMZN/JPM buy_prob signal verification, automatic)
-- **June 12 09:00–12:00 UTC** (pending): resistance-research Wave 2 user action (3 email sends)
-- **June 15 00:00 UTC**: Pause directive expires; expect user resume signal
+2. **stockbot Market-Open Checkpoint** — TODAY June 12, 13:30 UTC (12 hours away)
+   - **Status**: ✅ Deployment verified complete, z-score clipping fix deployed (32 tests passing)
+   - **Action**: Automatic. Jetson will execute buy_prob signal verification (AMZN + JPM sessions should show non-zero values, confirming clipping fix working)
+   - **Monitoring**: Orchestrator will verify checkpoint execution in next session if needed
 
 **Items Needing User Input**:
-1. **cybersecurity-hardening Phase 1.3** — Windows VeraCrypt pre-boot restart + encryption
-2. **mfg-farm** — Execute test print (0.20mm layer, PLA+, 3 walls, 220–225°C)
-3. **systems-resilience** — Discourse or Nextcloud+Matrix platform choice
-4. **resistance-research Wave 2** — June 12 09:00–12:00 UTC (3 email sends)
+- (No new items; Wave 2 execution templates ready)
 
-**Conclusion**: Pause directive confirmed stable. No autonomous work available. Orchestrator idle. Standing by for market-open checkpoint or June 15 user resume signal.
+**Autonomous Work Assessment**: Zero. All projects paused per directive. Orchestrator maintaining idle posture.
+
+**Conclusion**: Pause directive confirmed stable. All execution infrastructure verified ready. Standing by for: (1) June 12 09:00 UTC Wave 2 user action, (2) June 12 13:30 UTC market-open checkpoint, (3) June 15 00:00 UTC pause expiration.
 
 ---
 
