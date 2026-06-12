@@ -476,21 +476,7 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 **COMMIT-BEFORE-DEPLOY RULE**: Always `git commit` all changes in `projects/stockbot/src/`, `scripts/`, `config/`, `Dockerfile.jetson`, and `docker-compose.jetson.yml` before setting `DEPLOY_READY`. The deploy script hard-blocks on uncommitted changes to any of these files. Reason: uncommitted edits can be silently overwritten by future orchestrator sessions, then the next deploy nukes the Jetson fix. Commit = permanent; filesystem edit = temporary.
 
-**Current focus**: [RESOLVED 2026-06-11 20:15 UTC: deployment complete] ✅ **INV-1 DEPLOYED & M-7–M-10 TECH DEBT COMPLETE (SESSION 3221)** — **Infrastructure Health Verified** (Jetson diagnostic 21:00 UTC): All containers healthy, API responding (status: 2 sessions), database clean (1 fill since June 1 confirms buy_prob flatline root cause), disk 43% (134 GiB free), thermals 47.9°C. **June 12 Signal Restoration Checkpoint**: buy_prob non-zero at market open = PASS. **Phase 3 Tech Debt COMPLETE (Session 3221)**:
-  - ✅ M-7: FeatureStore lazy init (feature_pipeline.py property pattern, 3 tests pass)
-  - ✅ M-8: TRADING_DAYS_PER_YEAR de-duplication (new backtesting/constants.py, also fixed pre-existing ModuleNotFoundError)
-  - ✅ M-9: Broker factory HTTP optimization (order_executor.py TTL caches 30/60s, 7+ API calls/fold reduction)
-  - ✅ M-10: WORKLOG pre-commit hook (.git/hooks/pre-commit, 3 non-blocking checks)
-**Critical Path**: June 12 13:30 UTC signal verification → AAPL lgbm_ho retrain + MSFT ridge_wf first training (June 12-15) → 4-session deployment June 15 if gates pass (minimum 5-6/6 gates). HMM activation June 25+, covered calls July+. **SPRINT 3 COMPLETE: ITEMS 1-2 + M-5-M-10 ALL DONE**.
-  - **INV-1** (buy_prob flatlining fix): OOD z-score normalization. Z-score clipping to [-5, 5] range. 32 tests passing. Deployment post-market 20:15 UTC.
-  - **INV-2** (backtesting pipeline): Complete. WalkForwardEngine + EnsembleStackerAdapter + AlpacaProvider. 75+ tests passing.
-  - **Item 2** (H-5 DB unification): Walk-forward ORM via DatabaseManager. Backward compatible. Commit: f44457a
-  - **M-1** (metrics consolidation): Canonical module, 1000+ tests. Commit: fb09dcf
-  - **M-2** (TradingSession.__init__): Constructor 282→20 lines (93% reduction). Commit: 03ce038
-  - **M-3** (BEAR_CONFIRM_BARS): Increased from 1 to 3. Commit: 68ec1ae
-  - **M-4** (session parameters): Moved to config. Commit: 2cab23d
-  - **M-5-M-10**: Queued for next session (M-6 schema validation, M-7-M-10 TBD)
-  🔄 **PAUSED (User Directive 2026-06-10)**: Standing by. **Phase P1-P4 QUEUED (Session 3219, June 11 INBOX)**: Signal health monitor (P1), quick-eval mode (P2), model comparison (P3), shadow session mode (P4). All 4 items queued for execution when user resumes work.
+**Current focus**: [RESOLVED 2026-06-11 20:15 UTC: deployment complete] ✅ **INV-1 DEPLOYED & PHASE 3 COMPLETE** — Paused per user directive through June 15 00:00 UTC. **Awaiting June 12 13:30 UTC market-open checkpoint**: buy_prob signal restoration verification (z-score clipping fix deployed, 32 tests passing). **Phase P1-P4 QUEUED (Session 3219)**: Signal health monitor, quick-eval mode, model comparison, shadow session mode — all queued for execution when user resumes. Jetson infrastructure production-ready (all containers healthy, API responding status: 2 sessions, database clean, disk 43% free, thermals nominal).
 
 **Sprint 2 backlog** (ordered by priority per `docs/CODEBASE_REVIEW_COMPREHENSIVE.md`):
 - ✅ **C-1** (CRITICAL): `_aggregate_folds` pooled t-stat dead code — FIXED Session 2982. G3 gate now works on low-trade-count models. Commit: 00310f9
