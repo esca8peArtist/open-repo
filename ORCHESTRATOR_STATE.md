@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-12T02:53:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-12T03:05:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 4.4% (390,703 tokens) | All-models 60.8% | Reset in 93h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 4.4% (390,703 tokens) | All-models 61.0% | Reset in 93h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -64,7 +64,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: stockbot — focus references Session 3219 (39 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 3219 (41 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
 • open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
