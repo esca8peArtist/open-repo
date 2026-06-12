@@ -2,6 +2,32 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🔄 Session 3361 (June 12 13:05 UTC) — PAUSE DIRECTIVE STABLE, MARKET CHECKPOINT IMMINENT (25 MIN)
+
+**Orchestrator Status**: ✅ **PAUSE DIRECTIVE CONFIRMED ACTIVE & STABLE** — Through June 15 00:00 UTC (~58.0 hours remaining). All projects paused per user directive. **Zero autonomous work spawned.** ⚠️ **resistance-research Wave 2 user action window CLOSED** — Window expired at 12:00 UTC (65 min ago); all 5 Domain 51 email sends remain unexecuted. Stockbot market-open checkpoint IMMINENT at 13:30 UTC (z-score clipping fix deployed, 32 tests passing, automated execution). Verified all 3 active blocks unresolved (cybersecurity-hardening VeraCrypt, mfg-farm test print, systems-resilience platform). INBOX empty, PROJECTS stable, usage 4.4% Sonnet / 70.8% all-models.
+
+### Session Summary
+- ✓ ORCHESTRATOR_STATE.md reviewed (auto-generated 2026-06-12T13:05:37Z)
+- ✓ BLOCKED.md verified — 3 active blocks unresolved, all require user action only:
+  - cybersecurity-hardening: VeraCrypt pre-boot restart + Phase 1.4-1.7 continuation
+  - mfg-farm: Test print execution (0.20mm layer height, PLA+, 3 walls, 220–225°C)
+  - systems-resilience: Platform decision pending (Nextcloud+Matrix vs Discourse)
+- ✓ INBOX.md verified empty
+- ✓ PROJECTS.md verified stable, all paused per directive through June 15 00:00 UTC
+- ✓ Pause directive confirmed stable through June 15 00:00 UTC (68th consecutive verification)
+- ✓ Usage: Sonnet 4.4% (390,703 tokens) | All-models 70.8% | Reset in 83 hours
+
+### Imminent Checkpoint
+**stockbot Market-Open Checkpoint** — 13:30 UTC TODAY (25 min from orientation) — Automated signal verification; no orchestrator action required.
+
+### Needs Your Input
+- **resistance-research**: Wave 1 (June 11, 60-75 min action) and Wave 2 (June 12 09:00-12:00 UTC) user action windows both missed. All 5 Domain 51 email sends remain unexecuted. Recovery options: (1) Execute delayed sends immediately on recovery timeline, (2) Move to contingency distribution timeline (Domain 57 pre-production hold / Domain 59 ready for independent execution), or (3) Adjust plan based on revised timeline. User decision required by June 15 to determine feasibility of July 1 hard deadline.
+
+### Status
+✅ **PAUSE DIRECTIVE ACTIVE & CORRECT.** Orchestrator maintaining idle posture per user directive. All infrastructure production-ready. No autonomous work spawned.
+
+---
+
 ## 🔄 Session 3359 (June 12 12:58 UTC) — PAUSE DIRECTIVE STABLE, MARKET CHECKPOINT IN ~32 MIN
 
 **Orchestrator Status**: ✅ **PAUSE DIRECTIVE CONFIRMED ACTIVE & STABLE** — Through June 15 00:00 UTC (~59.0 hours remaining). All projects paused per user directive. **Zero autonomous work spawned.** ⚠️ **resistance-research Wave 2 user action window MISSED** — Window closed at 12:00 UTC; all 5 Domain 51 email sends remain unexecuted (verified at 12:21 UTC in Session 3343). Stockbot market-open checkpoint automated at 13:30 UTC (z-score clipping fix deployed, 32 tests passing, no orchestrator intervention required). Verified all 3 active blocks unresolved (cybersecurity-hardening VeraCrypt, mfg-farm test print, systems-resilience platform). INBOX empty, PROJECTS stable, usage 4.4% Sonnet / 70.8% all-models.
