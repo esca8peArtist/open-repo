@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-11T23:04:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-12T00:35:32Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 4.4% (390,703 tokens) | All-models 55.8% | Reset in 97h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 4.4% (390,703 tokens) | All-models 58.0% | Reset in 95h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -63,6 +63,8 @@
 **Resolution**: [leave blank]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: stockbot — focus references Session 3221 (18 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
 • open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
@@ -75,42 +77,42 @@
 - ✅ **stockbot Phase P1-P4** (Signal health monitor, Quick-eval mode, Model comparison, Shadow session mode) queued to PROJECTS.md Current focus. All 4 items queued for execution when user resumes work from pause.
 
 ## Recent Log (last 40 lines of WORKLOG.md)
----
-
-## Session 3218 (2026-06-11 20:49 UTC — orchestrator) — POST-DEPLOYMENT VERIFICATION STANDBY
-
-**Task**: Verify stockbot INV-1 deployment completion; confirm all projects remain paused.
-
-**Orientation Results** (20:49 UTC):
-- ✅ **Deployment verified complete** (Sessions 3216-3217, 20:15-20:43 UTC)
-- ✅ **DEPLOY_READY consumed**: File removed after deployment script executed
-- ✅ **Code deployed**: z-score clipping fix (ensemble_stacker.py lines 21-24, `np.clip(z_scores, -5.0, 5.0)`) active on Jetson
-- ✅ **Sessions operational**: Docker confirmed both AMZN/JPM trading sessions cycling in post-market mode
-- ✅ **All projects paused**: Per user directive 2026-06-10 (verified PROJECTS.md, CHECKIN.md, BLOCKED.md)
-
-**Verification Attempt**:
-- HTTP health check to Jetson API (100.120.18.84:8000/api/health) timed out (exit code 28, OPERATION_TIMEDOUT)
-  - **Expected**: Container may still be initializing post-deployment restart
-  - **Conclusion**: Timeout is non-blocking; prior sessions already verified deployment success
-
-**Block Status Review**:
-- **cybersecurity-hardening**: Blocked on Windows VeraCrypt restart (user manual action required)
-- **mfg-farm**: Blocked on test print execution (user action required)
-- **systems-resilience**: Block status past deadline (June 9 publication window closed; platform choice now deferred)
-
-**Autonomous Work Status**:
-- 🟡 **ALL PROJECTS PAUSED** per user directive 2026-06-10
-- 🟡 **NO AUTONOMOUS WORK** scheduled — orchestrator standing by
-- ✅ **Exploration Queue**: 5 items available (3 ready, 1 blocked, 1 pending) — queue sufficient (≥3 items)
-
-**Actions Taken**:
-1. ✅ Updated CHECKIN.md with Session 3218 summary
-2. ✅ Confirmed deployment verified in Sessions 3216-3217
-3. ⏳ Preparing final commit of orchestration files
-
-**Next Checkpoint**:
-- June 12 ~13:30 UTC: Market open, monitor AMZN/JPM buy_prob signal restoration
-- June 12 ~14:00 UTC: Verify trading signals non-zero in Docker logs (signal restoration confirmation)
 - **Result determines**: INV-1 SUCCESS (proceed to Phase 3 tech debt) vs. further investigation needed
 
 **Conclusion**: Deployment complete and verified. Orchestrator standing by per user pause directive. No autonomous work available until user resumes.
+
+---
+
+## Session 3237 (2026-06-12 00:01 UTC — orchestrator) — PAUSE DIRECTIVE STABLE, AWAITING MARKET-OPEN CHECKPOINT
+
+**Task**: Orient to current state and confirm pause directive continues to June 15.
+
+**Orientation Results** (00:01 UTC, June 12):
+- ✓ ORCHESTRATOR_STATE.md reviewed (generated 2026-06-12T00:00:47Z)
+- ✓ BLOCKED.md verified (3 active blocks unchanged, all require user action):
+  - **cybersecurity-hardening**: Windows VeraCrypt pre-boot restart + Phase 1 continuation
+  - **mfg-farm**: Test print execution (directory missing, user action required)
+  - **systems-resilience**: Platform deployment decision (June 9 deadline passed, deferred)
+- ✓ Verification checks performed:
+  - mfg-farm: `ls -la projects/mfg-farm/test-print-results/` → directory does not exist (block unresolved)
+  - systems-resilience: `docker ps | grep -E "nextcloud|discourse"` → no containers (block unresolved)
+- ✓ PROJECTS.md verified (resistance-research/stockbot marked Active, all others paused per directive)
+- ✓ INBOX.md verified (empty, all items processed)
+- ✓ Pause directive confirmed stable through June 15 00:00 UTC
+
+**Autonomous Work Assessment**: 
+- 🟡 **All projects remain paused** per user directive 2026-06-10 (through June 15 00:00 UTC)
+- 🟡 **Zero autonomous work available** — all work blocked on user actions or pause directive
+- ✅ **Exploration Queue**: 5 items available (sufficient ≥3 threshold), but all belong to paused resistance-research
+- ✅ **stockbot**: INV-1 deployment verified complete (Session 3216–3218); awaiting market-open signal verification at 13:30 UTC
+
+**Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT.** No autonomous project work available. Orchestrator standing by.
+
+**Next Checkpoint**:
+- June 12 13:30 UTC: Market open, automated buy_prob signal verification (Jetson AMZN/JPM sessions should show non-zero values, confirming z-score clipping fix working)
+- June 12 09:00–12:00 UTC: resistance-research Wave 2 user action (email sending)
+- June 15 00:00 UTC: Pause directive expires; expect user resume signal
+
+**Session duration**: ~2 minutes (orientation + block verification + CHECKIN update + commit)
+
+**Conclusion**: Orchestrator stable and idle per pause directive. All state verified in sync. No work warranted. Standing by for user resume (June 15+) or market-open signal verification (June 12 13:30 UTC).
