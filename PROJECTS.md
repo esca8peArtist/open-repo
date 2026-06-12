@@ -4,7 +4,7 @@
 > The orchestrator reads this file at the start of every session.
 > Update priorities, status, and current focus as work progresses.
 >
-> **Last updated by**: orchestrator on 2026-05-12 (relevance audit — INBOX Path Model item processed; stale stockbot status refreshed)
+> **Last updated by**: orchestrator on 2026-06-12 (Session 3337 — pause directive verification, all projects stable)
 
 ---
 

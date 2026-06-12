@@ -2,23 +2,27 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## 🔄 Session 3336 (June 12 ~12:00 UTC) — PAUSE DIRECTIVE STABLE, MARKET CHECKPOINT IN 90 MIN
+## 🔄 Session 3337 (June 12 ~12:15 UTC) — PAUSE DIRECTIVE STABLE, MARKET CHECKPOINT IN 75 MIN
 
-**Orchestrator Status**: ✅ **PAUSE DIRECTIVE CONFIRMED ACTIVE & STABLE** — Through June 15 00:00 UTC (~56 hours remaining). All projects paused per user directive. **Zero autonomous work spawned.** resistance-research Wave 2 user action window closed (09:00–12:00 UTC); stockbot market-open checkpoint incoming at 13:30 UTC (automated).
+**Orchestrator Status**: ✅ **PAUSE DIRECTIVE CONFIRMED ACTIVE & STABLE** — Through June 15 00:00 UTC (~55.75 hours remaining). All projects paused per user directive. **Zero autonomous work spawned.** resistance-research Wave 2 user action window closed (09:00–12:00 UTC); stockbot market-open checkpoint incoming at 13:30 UTC (automated, z-score clipping fix deployed).
 
 ### Session Summary
 - ✓ ORCHESTRATOR_STATE.md reviewed (auto-generated 2026-06-12T11:31:49Z, stable)
 - ✓ BLOCKED.md verified — 3 active blocks unchanged, all require user action only:
-  - cybersecurity-hardening: VeraCrypt pre-boot restart + Phase 1.4-1.7
-  - mfg-farm: Test print not executed (directory missing)
-  - systems-resilience: Platform decision not made (no containers running)
+  - cybersecurity-hardening: VeraCrypt pre-boot restart + Phase 1.4-1.7 continuation
+  - mfg-farm: Test print not executed (0.20mm layer, PLA+, 3 walls, 220–225°C required)
+  - systems-resilience: Platform decision pending (Nextcloud+Matrix vs Discourse)
 - ✓ Block auto-verifications: all unresolved (manual user actions required)
-- ✓ INBOX.md verified empty (processed Session 3219)
-- ✓ PROJECTS.md verified stable, all paused per directive
-- ✓ Pause directive confirmed stable through June 15 00:00 UTC (56th consecutive verification)
+- ✓ INBOX.md verified empty (processed Session 3219, June 11 23:31 UTC)
+- ✓ PROJECTS.md verified stable, all paused per directive through June 15 00:00 UTC
+- ✓ Pause directive confirmed stable through June 15 00:00 UTC (57th consecutive verification)
+
+### Imminent Windows
+1. **resistance-research Wave 2** — ❌ **CLOSED** (09:00–12:00 UTC window ended; status pending user report)
+2. **stockbot Market-Open Checkpoint** — ⏳ **13:30 UTC (~75 min remaining)** — Automated signal verification (z-score clipping fix deployed June 11, 32 tests passing, no orchestrator intervention)
 
 ### Status
-✅ **PAUSE DIRECTIVE ACTIVE & CORRECT.** Orchestrator idle. Wave 2 window closed; market checkpoint at 13:30 UTC (automated, no intervention needed).
+✅ **PAUSE DIRECTIVE STABLE & CORRECT.** Orchestrator idle. Wave 2 window closed; market checkpoint pending (fully automated).
 
 ---
 
