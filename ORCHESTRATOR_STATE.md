@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-12T00:41:34Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-12T01:20:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 4.4% (390,703 tokens) | All-models 58.1% | Reset in 95h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 4.4% (390,703 tokens) | All-models 58.9% | Reset in 95h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: [RESOLVED 2026-06-11 20:15 UTC: deployment complete] ✅ **INV-1 DEPLOYED & M-7–M-10 TECH DEBT COMPLETE (SESSION 3221)** — **Infrastructure Health Verified** (Jetson diagnostic 21:00 UTC): All containers healthy, API responding (status: 2 sessions), database clean (1 fill since June 1 confirms buy_prob flatline root cause), disk 43% (134 GiB free), thermals 47.9°C. **June 12 Signal Restoration Checkpoint**: buy_prob non-zero at market open = PASS. **Phase 3 Tech Debt COMPLETE (Session 3221)
+**Focus**: [RESOLVED 2026-06-11 20:15 UTC: deployment complete] ✅ **INV-1 DEPLOYED & PHASE 3 COMPLETE** — Paused per user directive through June 15 00:00 UTC. **Awaiting June 12 13:30 UTC market-open checkpoint**: buy_prob signal restoration verification (z-score clipping fix deployed, 32 tests passing). **Phase P1-P4 QUEUED (Session 3219)**: Signal health monitor, quick-eval mode, model comparison, shadow session mode — all queued for execution when user resumes. Jetson infrastructure production-rea … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -64,7 +64,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: stockbot — focus references Session 3221 (19 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 3219 (26 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
 • open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
