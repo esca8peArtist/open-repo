@@ -14,6 +14,32 @@
 🟢 **PROCESSED (Session 3219, June 11 23:31 UTC)**:
 - ✅ **stockbot Phase P1-P4** (Signal health monitor, Quick-eval mode, Model comparison, Shadow session mode) queued to PROJECTS.md Current focus. All 4 items queued for execution when user resumes work from pause.
 
+---
+
+### [2026-06-13 15:57 UTC] UNPAUSE DIRECTIVE — Immediate resumption
+
+User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
+
+**Stockbot is the priority project.** Execute in this order:
+
+**FIRST — Verify June 12 signal restoration (before anything else)**
+- Check Jetson Docker logs for buy_prob values since the June 11 20:15 UTC deployment of the z-score clipping fix
+- Command: `ssh awank@100.120.18.84 "docker logs stockbot --since 2026-06-11T20:30:00 2>&1 | grep buy_prob | head -40"`
+- Success = buy_prob non-zero on at least one AMZN or JPM session
+- Failure = still 0.0000 → write BLOCKED.md entry and notify user via Discord immediately
+
+**SECOND — Begin P1 (Signal health monitor) + P2 (Quick-eval flag) in parallel**
+- P1 and P2 specs are in PROJECTS.md Current focus (added June 11 from user session)
+- P1 is highest-priority: prevents the 10-day silent flatline from recurring
+- P2 is needed immediately: AAPL lgbm_ho + MSFT ridge_wf retrains are due before June 18 EOD
+
+**THIRD — AAPL lgbm_ho + MSFT ridge_wf walk-forward validation**
+- Run both retrains using the pipeline (use P2 quick-eval for initial screening once P2 is done)
+- Hard deadline: June 18 EOD — expansion decision cannot proceed without these results
+- Thermal note: Pi5 at 47.9°C as of last check — safe for retrains
+
+**Other projects remain paused** (cybersecurity-hardening, mfg-farm, systems-resilience still blocked on user actions — do not work on these autonomously).
+
 ## Item Processing Pending Clarification
 
 - [2026-05-29 19:35] /resume — **RESOLVED** by Session 2284 INBOX item above. Signal was orchestrator unpause. Orchestrator is now active. No further action needed.
