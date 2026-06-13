@@ -16,6 +16,151 @@
 
 ---
 
+### [2026-06-13 16:08 UTC] stockbot — Weekend Batch Pipeline (3 items, build after P1+P2)
+
+**Context**: User wants to train ~20 models in parallel on weekends/off-hours, rank them by gate performance, and automatically queue the top ones for paper trading the following week. The pieces (parallel trainer, comparison engine, session config manager) already exist. What's missing is the glue: a candidate matrix config, a top-level orchestration script, and a promotion script. These depend on P2 (quick-eval flag) being done first.
+
+**Hetzner note**: `src/remote/` already has `hetzner_pipeline.py`, `hetzner_budget.py` (hard $20/month cap), and `remote_runner.py`. Do NOT wire Hetzner into the automated pipeline yet — user wants to test the Pi-local pipeline first. Hetzner is available for manual offload when needed (e.g., training AAPL with large data sets that would take >3 hours on Pi). Reference it in comments but do not add it to the automated flow.
+
+---
+
+#### [WB-1] `candidates.yaml` — Weekly candidate matrix config
+
+**File**: `projects/stockbot/candidates.yaml`
+
+A config file the user edits each week to define the model search space. The orchestrator should never modify this file autonomously — it is user-owned.
+
+```yaml
+# Weekend batch candidate matrix — edit each week before Saturday run
+# Each entry is one (ticker, strategy, optional overrides) combination
+# Up to 20 candidates; more than 20 will be accepted but runtime grows linearly
+
+meta:
+  train_start: "2022-01-01"
+  train_end: "2026-06-13"   # update each week
+  wf_is_years: 3
+  wf_oos_months: 6
+  n_dsr_trials: 1
+  max_workers: 3            # 4 cores on Pi5; leave 1 free. Raise to 4 if thermal OK.
+  quick_screen: true        # run quick-eval first to filter obviously bad candidates
+  quick_screen_min_sharpe: 0.70   # reject candidates below this in quick-eval
+  top_n_promote: 3          # number of passing models to queue for paper trading
+
+candidates:
+  - ticker: AAPL
+    strategy: lgbm_ho
+  - ticker: AAPL
+    strategy: ridge_wf
+  - ticker: MSFT
+    strategy: lgbm_ho
+  - ticker: MSFT
+    strategy: ridge_wf
+  - ticker: NVDA
+    strategy: lgbm_ho
+  - ticker: GOOGL
+    strategy: lgbm_ho
+  - ticker: AMZN
+    strategy: lgbm_ho
+  - ticker: JPM
+    strategy: ridge_wf
+  - ticker: JPM
+    strategy: lgbm_ho
+  - ticker: META
+    strategy: lgbm_ho
+```
+
+Write this file to `projects/stockbot/candidates.yaml`. Keep it simple and well-commented. This is the starting template — the user will add more candidates over time.
+
+---
+
+#### [WB-2] `scripts/weekend_batch.py` — Top-level pipeline orchestrator
+
+**Depends on**: P2 (quick-eval flag) must be done first. Do not implement if P2 is incomplete.
+
+**What it does**:
+1. Reads `candidates.yaml` (or `--candidates path/to/file.yaml`)
+2. **Phase 1 — Quick screen** (if `quick_screen: true`): runs all candidates through quick-eval (`PipelineConfig(quick=True)`), 4 workers in parallel, rejects anything below `quick_screen_min_sharpe`. Logs rejects with reason.
+3. **Phase 2 — Full eval**: runs survivors through full 10-fold eval using `batch_train_models.py` logic (or import `ModelTrainingPipeline` directly), 3 workers in parallel.
+4. **Phase 3 — Rank**: calls `ModelComparison` on all results, generates ranked table (sorted by OOS Sharpe, gates pass/fail shown).
+5. **Phase 4 — Promote**: writes `paper_trading_queue.json` (top N where `all_gates_passed=True`, sorted by Sharpe), or writes `INBOX.md` entry if zero candidates passed all gates.
+6. **Notify**: sends Discord message with summary (N passed, top model, Sharpe, queued for Monday deploy).
+
+**Interface**:
+```bash
+uv run python scripts/weekend_batch.py \
+    [--candidates candidates.yaml] \
+    [--output-dir results/weekend_YYYYMMDD/] \
+    [--max-workers 3] \
+    [--dry-run]        # print job list, skip training
+```
+
+**Output files**:
+- `results/weekend_YYYYMMDD/batch_summary.json` — all results + gate scores
+- `results/weekend_YYYYMMDD/comparison_table.md` — ranked markdown table
+- `paper_trading_queue.json` — top-N models ready for Monday deploy (overwritten each run)
+
+**Exit codes**: 0 = at least one model promoted, 1 = no models passed all gates, 2 = error
+
+**Blackout rule**: Respect `DEPLOY BLACKOUT RULE` — do not set `DEPLOY_READY` during market hours (13:30–20:00 UTC Mon–Fri). The script only generates `paper_trading_queue.json`; actual deploy is done by `promote_to_paper.py` (WB-3).
+
+**Cron entry to add** (to `scripts/setup_cron.sh` or equivalent, runs on Pi):
+```cron
+# Weekend batch — Saturday 00:01 UTC
+1 0 * * 6 cd /home/awank/dev/SuperClaude_Framework/projects/stockbot && uv run python scripts/weekend_batch.py >> logs/weekend_batch.log 2>&1
+```
+
+**Acceptance criteria**:
+- Dry-run prints job list and exits 0
+- Phase 1 quick-screen correctly rejects low-Sharpe candidates
+- Phase 2 runs remaining candidates in parallel (verified by wall-clock timing)
+- `paper_trading_queue.json` written correctly with model paths + session config snippets
+- Discord notification sent via existing bot integration (see `scripts/discord-bot.py` for webhook pattern)
+- All tests pass
+
+---
+
+#### [WB-3] `scripts/promote_to_paper.py` — Paper trading queue deployer
+
+**Depends on**: WB-2 must be done first (reads `paper_trading_queue.json`).
+
+**What it does**: Reads `paper_trading_queue.json`, generates a new `active-sessions-paper.json` using `SessionConfigManager`, and creates `DEPLOY_READY` at the appropriate time. This is the "Monday morning" step.
+
+**Interface**:
+```bash
+uv run python scripts/promote_to_paper.py \
+    [--queue paper_trading_queue.json] \
+    [--max-sessions 3]        # max sessions to add (don't exceed Jetson capacity)
+    [--dry-run]               # print what would change, don't write files
+    [--replace-existing]      # replace current sessions; default is to ADD alongside
+```
+
+**Behavior**:
+1. Read `paper_trading_queue.json`
+2. Load current `active-sessions.json` via `SessionConfigManager`
+3. For each candidate in queue (sorted by Sharpe, up to `--max-sessions`):
+   - Generate session entry using `SessionConfigManager.template_custom()` or equivalent
+   - Add with `position_size_pct: 0.10` (conservative default for new sessions)
+   - Add with `shadow_mode: false` (live paper trading, not shadow — shadow is P4 and separate)
+4. Validate combined session config (call `SessionConfigManager.validate()`)
+5. Write new `active-sessions-paper.json`
+6. Write `DEPLOY_READY` file (only if time is outside 13:30–20:00 UTC Mon–Fri)
+7. Log changes to WORKLOG.md
+
+**Safety rules** (hardcoded, not configurable):
+- Never exceed 6 total sessions (Jetson resource limit)
+- Never set `DEPLOY_READY` during market hours
+- Never promote a model where `all_gates_passed=False`
+- Always commit `active-sessions-paper.json` before setting `DEPLOY_READY`
+
+**Acceptance criteria**:
+- Reads `paper_trading_queue.json` correctly
+- Generates valid `active-sessions-paper.json` (passes `SessionConfigManager.validate()`)
+- Correctly blocks deploy during market hours
+- Dry-run shows diff without writing files
+- Unit tests cover: empty queue, exceeds max-sessions limit, market-hours block, gate-fail rejection
+
+---
+
 ### [2026-06-13 15:57 UTC] UNPAUSE DIRECTIVE — Immediate resumption
 
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
