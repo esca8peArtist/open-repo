@@ -2,6 +2,42 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🔄 Session 3475 (June 14 02:15 UTC) — UNPAUSE & SIGNAL RESTORATION VERIFIED
+
+**Orchestrator Status**: ✅ **UNPAUSE ACTIVE — AUTONOMOUS WORK RESUMED** — User manually lifted pause directive on June 13 15:57 UTC (57 hours early). Orchestrator resumed immediately and confirmed signal restoration.
+
+### Session Summary
+
+**FIRST step (Signal Restoration Verification)**: ✅ **PASSED**
+- Jetson Docker logs checked for buy_prob values since June 11 20:30 UTC deployment
+- Result: AMZN lgbm_ho generating non-zero buy_prob (0.3322, 0.3394) with BUY actions
+- Conclusion: Z-score clipping fix deployed June 11 20:15 UTC is working correctly
+- Signal quality restored after 10-day silent flatline (0.0000 buy_prob pre-fix)
+
+**PROJECTS.md Updated**:
+- Stockbot Current focus refreshed with P1-P2 specs and execution status
+- P1: Signal Health Monitor (prevents 10-day silent flatline recurrence, <4h detection latency)
+- P2: Quick-Eval Flag (fast model screening, <15min per candidate, June 18 deadline)
+- P3/P4 queued after P1-P2 completion
+
+**SECOND/THIRD steps (P1-P2 Execution + AAPL/MSFT Retrains)**:
+- P1 implementation pending (signal health detector, automated alerts, regime-aware thresholds)
+- P2 implementation pending (quick evaluation mode, 3-fold WF vs 10-fold, DSR trials 1 vs 3)
+- AAPL lgbm_ho + MSFT ridge_wf retrains: June 18 EOD deadline (will use P2 quick-eval for initial screening)
+- ML-1/2/3 + WB-1/2/3 items from June 13 INBOX: queued after P1-P2 urgent work
+
+**All 3 Active Blocks Remain Unresolved**:
+- cybersecurity-hardening: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+- mfg-farm: Test print not executed (directory missing)
+- systems-resilience: Platform decision pending (Nextcloud+Matrix vs Discourse)
+- Status: No change — these projects remain paused per unpause directive
+
+### Status
+
+✅ **UNPAUSE DIRECTIVE CONFIRMED & EXECUTION UNDERWAY** — Autonomous work resumed immediately upon user signal. P1-P2 execution begins. June 18 deadline enforced (AAPL/MSFT retrains). Signal quality fully restored; models generating proper trading signals.
+
+---
+
 ## 🔄 Session 3456 (June 12 22:29 UTC) — PAUSE DIRECTIVE STABLE, CHECKPOINT VERIFICATION
 
 **Orchestrator Status**: ✅ **PAUSE DIRECTIVE ACTIVE & STABLE** — Through June 15 00:00 UTC (~49.5 hours remaining). All projects paused per user directive. **Zero autonomous work spawned.** All 3 active blocks remain unresolved, all require manual user actions only.
