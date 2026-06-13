@@ -16,6 +16,126 @@
 
 ---
 
+### [2026-06-13 16:31 UTC] stockbot — ML Pipeline Enhancements (3 items, independent of WB series)
+
+**Context**: Analysis of 12 LLM-for-trading concepts (businessbulls.in) against existing pipeline revealed three high-value gaps not covered by P1-P4 or WB-1/2/3: (1) no probabilistic risk quantification beyond point-estimate max drawdown, (2) no news sentiment signal despite research showing it's the one LLM use case that's genuinely additive to LightGBM, (3) drawdown recovery time not tracked. These are independent of each other and of the weekend batch pipeline — build them in any order, but ML-1 is highest priority as it becomes a G7 gate.
+
+**Agent Loop**: Every item must go through SPEC→PLAN→IMPLEMENT→REVIEW→FIX. No shortcuts.
+
+---
+
+#### [ML-1] `src/analytics/monte_carlo.py` — Monte Carlo gate (G7)
+
+**Priority**: Highest of the three — becomes a new graduation gate
+
+**What it does**:
+1. Takes the per-fold daily return sequences already produced by `WalkForwardEngine` (already in the evaluation JSON)
+2. Bootstraps N=1000 sequences by random sampling with replacement from the fold returns (each sequence = same length as the full OOS period)
+3. Computes from the bootstrap distribution:
+   - `p_loss_6mo`: probability the strategy loses money over a 6-month period
+   - `sharpe_p05` / `sharpe_p95`: 5th and 95th percentile annualized Sharpe
+   - `max_dd_p95`: 95th percentile max drawdown (worst-case)
+   - `is_robust`: boolean — True if `p_loss_6mo < 0.30` AND `sharpe_p05 > 0.50`
+4. Adds a `monte_carlo` block to `EvaluationReport` (alongside existing gate results)
+5. Registers as **Gate G7**: `is_robust=True` required to pass. Models with `p_loss_6mo >= 0.30` fail G7.
+
+**Files to create/modify**:
+- `src/analytics/monte_carlo.py` — new file, `MonteCarloAnalyzer` class
+- `src/model_training_pipeline.py` — integrate into `ModelTrainingPipeline.run()` after full eval; add G7 to `EvaluationReport`
+- `tests/analytics/test_monte_carlo.py` — new test file
+
+**Interface**:
+```python
+from src.analytics.monte_carlo import MonteCarloAnalyzer
+
+mc = MonteCarloAnalyzer(n_simulations=1000, seed=42)
+result = mc.analyze(fold_returns=engine.fold_daily_returns)
+# result.p_loss_6mo, result.sharpe_p05, result.sharpe_p95, result.max_dd_p95, result.is_robust
+```
+
+**Acceptance criteria**:
+- `MonteCarloAnalyzer.analyze()` returns all 5 fields listed above
+- G7 gate wired into `EvaluationReport.gates` list (index 6)
+- `EvaluationReport.all_gates_passed` is False if G7 fails
+- A model with constant-zero returns → `p_loss_6mo` ≈ 0.5 (sanity check)
+- A model with strong positive returns → `p_loss_6mo` ≈ 0.0
+- `n_simulations` and `seed` configurable via `PipelineConfig`
+- All new tests pass; no regressions in existing 32+ tests
+
+---
+
+#### [ML-2] `src/features/news_sentiment.py` — LLM news sentiment feature
+
+**Priority**: Second — additive signal with minimal risk, ~$6-10/year operating cost
+
+**Depends on**: Nothing (standalone feature module)
+
+**What it does**:
+1. Calls Alpaca News API (`alpaca_trade_api.REST.get_news(symbol, start, end, limit=50)`) for the ticker and a lookback window (default: 7 calendar days before the training fold's end date)
+2. For each article: sends headline + summary to Claude Haiku with a structured prompt: "Rate the sentiment of this financial news article about {ticker} on a scale from -1.0 (very bearish) to +1.0 (very bullish). Return only a JSON object with key 'score'."
+3. Aggregates scores: `news_sentiment_7d = mean(scores)`, `news_sentiment_volume = len(articles)`, `news_sentiment_volatility = std(scores)`
+4. Returns a feature dict that the feature pipeline can merge into the training DataFrame
+5. Caches results to `data/news_sentiment_cache.sqlite` (key: ticker+date) to avoid re-fetching across training runs
+
+**Files to create/modify**:
+- `src/features/news_sentiment.py` — new file, `NewsSentimentFeature` class
+- `src/features/feature_pipeline.py` — add optional `include_news_sentiment: bool = False` to `FeatureConfig`; if enabled, call `NewsSentimentFeature.get_features(ticker, date_range)` and merge
+- `tests/features/test_news_sentiment.py` — new test file (mock Alpaca + Haiku calls)
+
+**API key**: Use `ANTHROPIC_API_KEY` from env (same as main Claude API key). Model: `claude-haiku-4-5-20251001`.
+
+**Cost guard**: If estimated cost for a batch exceeds $0.05 per model training run, log a warning and skip (do not fail). Estimate: ~50 articles × ~200 tokens/article × $0.00025/1K tokens (Haiku input) ≈ $0.0025/run — well under guard.
+
+**Acceptance criteria**:
+- `NewsSentimentFeature.get_features(ticker, date_range)` returns dict with 3 keys: `news_sentiment_7d`, `news_sentiment_volume`, `news_sentiment_volatility`
+- Cache hit avoids API call (verified by mock)
+- `FeatureConfig(include_news_sentiment=False)` (default) produces identical output to current pipeline — no regressions
+- If Alpaca News returns 0 articles: all 3 features return 0.0 (not NaN)
+- If Haiku API fails: log warning, return 0.0 for all 3 (graceful degradation)
+- Unit tests use mocked Alpaca + Haiku responses; no live API calls in test suite
+
+---
+
+#### [ML-3] `src/analytics/drawdown_metrics.py` — Recovery time tracking
+
+**Priority**: Third — quick win (~2h), no dependencies
+
+**What it does**:
+1. Takes the OOS daily return sequence from each walk-forward fold
+2. Computes equity curve from cumulative returns
+3. For each drawdown period (peak → trough → recovery):
+   - Records drawdown depth, start date, trough date, recovery date (or None if not recovered by end of data)
+   - Computes `recovery_days = (recovery_date - trough_date).days` (None if unrecovered)
+4. Aggregates across all folds:
+   - `avg_recovery_days`: mean recovery days across all completed drawdown episodes
+   - `max_recovery_days`: longest single recovery (worst case)
+   - `unrecovered_count`: number of drawdowns that never recovered within the OOS window
+5. Adds to `EvaluationReport.drawdown_stats` block (alongside existing `max_drawdown_pct`)
+
+**Files to create/modify**:
+- `src/analytics/drawdown_metrics.py` — new file, `DrawdownAnalyzer` class
+- `src/model_training_pipeline.py` — call `DrawdownAnalyzer` after walk-forward eval, add 3 new fields to `EvaluationReport`
+- `tests/analytics/test_drawdown_metrics.py` — new test file
+
+**Interface**:
+```python
+from src.analytics.drawdown_metrics import DrawdownAnalyzer
+
+da = DrawdownAnalyzer()
+stats = da.analyze(fold_daily_returns=engine.fold_daily_returns)
+# stats.avg_recovery_days, stats.max_recovery_days, stats.unrecovered_count
+```
+
+**Acceptance criteria**:
+- `DrawdownAnalyzer.analyze()` returns all 3 fields
+- `avg_recovery_days` and `max_recovery_days` are integers (ceiling of float); `unrecovered_count` is int
+- Constant-gain equity curve → `avg_recovery_days = 0`, `unrecovered_count = 0`
+- Single drawdown that never recovers → `unrecovered_count = 1`, `avg_recovery_days` excludes it
+- Fields appear in all `EvaluationReport` JSON outputs (backward-compatible: existing reports get `null` for these fields)
+- All new tests pass; no regressions in existing tests
+
+---
+
 ### [2026-06-13 16:08 UTC] stockbot — Weekend Batch Pipeline (3 items, build after P1+P2)
 
 **Context**: User wants to train ~20 models in parallel on weekends/off-hours, rank them by gate performance, and automatically queue the top ones for paper trading the following week. The pieces (parallel trainer, comparison engine, session config manager) already exist. What's missing is the glue: a candidate matrix config, a top-level orchestration script, and a promotion script. These depend on P2 (quick-eval flag) being done first.
