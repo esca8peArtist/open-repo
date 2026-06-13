@@ -283,12 +283,25 @@ while true; do
     RESET_SECS=$(secs_until_reset)
     echo "[$(date)] Usage gate: PAUSED (80% gate). Polling every 5min until unpaused or Tuesday reset (${RESET_SECS}s). $USAGE_CHECK" | tee -a "$LOG_FILE"
     echo "[$(date)] To override: touch $WORKSPACE/USAGE_PAUSE_OVERRIDE" | tee -a "$LOG_FILE"
+    # Notify Discord once when entering pause — sentinel prevents repeated pings each poll cycle
+    PAUSE_NOTIFIED="$WORKSPACE/.pause-discord-notified"
+    if [ ! -f "$PAUSE_NOTIFIED" ] && [ -n "$DISCORD_WEBHOOK_URL" ]; then
+      USAGE_PCT=$(python3 "$WORKSPACE/scripts/usage-check.py" --json 2>/dev/null \
+        | python3 -c "import json,sys; r=json.load(sys.stdin); print(f\"{max(r['pct']['sonnet'],r['pct']['all_models']):.0f}\")" 2>/dev/null || echo "80+")
+      RESET_H=$(( RESET_SECS / 3600 ))
+      curl -s -H "Content-Type: application/json" \
+        -d "{\"content\":\"⏸️ **[Claude] Orchestrator self-paused** — usage at ${USAGE_PCT}% (80% gate). Sessions held until Tuesday reset (~${RESET_H}h) or manual override.\nOverride: \`touch $WORKSPACE/USAGE_PAUSE_OVERRIDE\`\"}" \
+        "$DISCORD_WEBHOOK_URL" > /dev/null 2>&1 || true
+      touch "$PAUSE_NOTIFIED"
+      echo "[$(date)] Sent Discord pause notification." | tee -a "$LOG_FILE"
+    fi
     # Poll every 5 minutes so recalibration or PAUSE_FILE deletion takes effect quickly
     while true; do
       sleep 300
       python3 "$WORKSPACE/scripts/usage-check.py" --check > /dev/null 2>&1
       [ $? -ne 2 ] && break
     done
+    rm -f "$PAUSE_NOTIFIED"  # clear sentinel so next pause triggers a fresh notification
     continue
   else
     RESET_SECS=$(secs_until_reset)
@@ -335,6 +348,26 @@ while true; do
           -d "{\"content\":\"⚠️ [Claude] Session ended but CHECKIN.md was not updated — orchestrator skipped the check-in step.\"}" \
           "$DISCORD_WEBHOOK_URL" > /dev/null 2>&1 || true
       fi
+    fi
+  fi
+
+  # ── Post-session: notify Discord when all unpaused projects are idle ─────────
+  # Fires once when the orchestrator first reports no actionable work remaining.
+  # Clears automatically when the next session produces real commits.
+  if [ "$EXIT_CODE" -ne 124 ]; then
+    LAST_MSG=$(git -C "$WORKSPACE" log -1 --format="%s" 2>/dev/null || echo "")
+    ALL_WORK_NOTIFIED="$WORKSPACE/.all-work-discord-notified"
+    if echo "$LAST_MSG" | grep -qiE "no autonomous work|all autonomous work.*complete|standing by for user|no work available"; then
+      if [ ! -f "$ALL_WORK_NOTIFIED" ] && [ -n "$DISCORD_WEBHOOK_URL" ] && [ ! -f "$WORKSPACE/USAGE_PAUSE" ]; then
+        curl -s -H "Content-Type: application/json" \
+          -d "{\"content\":\"✅ **[Claude] All available work complete** — orchestrator is standing by. No actionable items remain on active projects. Add tasks to INBOX.md or check CHECKIN.md for details.\"}" \
+          "$DISCORD_WEBHOOK_URL" > /dev/null 2>&1 || true
+        touch "$ALL_WORK_NOTIFIED"
+        echo "[$(date)] Sent Discord all-work-complete notification." | tee -a "$LOG_FILE"
+      fi
+    else
+      # Work was done this session — reset sentinel so the next idle period re-notifies
+      rm -f "$ALL_WORK_NOTIFIED"
     fi
   fi
 
