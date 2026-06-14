@@ -1,52 +1,41 @@
 ---
-title: "Phase 1 Coalition Leverage Matrix"
-subtitle: "Domain-Coalition Mapping, Multiplicative Windows, Measurement-Driven Sequencing, and June 15 Checkpoint Guide"
-created: "2026-06-03"
-updated: "2026-06-03"
-status: "production-ready"
+title: "Phase 1 Coalition Leverage Matrix: Cross-Domain Coordination and Phase 2 Sequencing"
+subtitle: "Strategic Framework for Multiplicative Advocacy and Domain Interconnection"
+created: 2026-06-14
+session: 3492
+status: exploration-queue-complete
+phase: 1-2-bridge
+word_count: ~2,700 words
+purpose: "Framework for identifying highest-leverage Phase 1 domains for coalition coordination and Phase 2 sequencing decisions"
+distribution_target: "User decision-making at June 17-18 checkpoint"
+next_action: "Execute Phase 1 checkpoint analysis June 17-18; sequence Phase 2 based on domain priorities identified here"
 applicable_domains: [37, 39, 56, 58, 59]
-phase: "Phase 1 Distribution — June–September 2026"
-decision_gate: "Day 7–14 checkpoint (June 8–15) after Domain 39 launch"
-word_count: "~2,600"
-cross_references:
-  - DOMAIN_39_DISTRIBUTION_STRATEGY.md
-  - DOMAIN_56_DISTRIBUTION_STRATEGY.md
-  - DOMAIN_58_CONTACT_VERIFICATION.md
-  - domain-59-send-templates.md
-  - DOMAIN_37_SEQUENCING_PLAN.md
-  - PHASE_2_DECISION_MEMO_JUNE_2026.md
-  - PHASE_1_MEASUREMENT_DASHBOARD_TEMPLATE.md
 ---
 
-# Phase 1 Coalition Leverage Matrix
+# Phase 1 Coalition Leverage Matrix: Cross-Domain Coordination and Phase 2 Sequencing
 
-**Prepared**: June 3, 2026
-**Purpose**: Map interconnections between Phase 1's five domains; quantify multiplicative advocacy windows; provide measurement-driven Phase 2 routing; give the June 15 checkpoint team actionable sequencing and if/then escalation logic for every engagement scenario.
-**Decision gate**: Domain 39 Day 7–14 engagement metrics (June 8–15) gate Domain 56 election protection wave timing and all coalition pre-commitment asks.
+*Resistance Research — Session 3492 | June 14, 2026*
 
 ---
 
-## Section 1: Constituency Network Map
+## Executive Summary
 
-Seven constituency networks are activated by Phase 1's domain set. Each network has distinct organizational anchors, communication channels, and response timelines that determine how and when coalition coordination requests land.
+This framework identifies the highest-leverage cross-domain coalition bridges within Phase 1 and maps how Phase 1 success in specific domains will gate or accelerate Phase 2 sequencing. The analysis rests on three core findings:
 
-**1. Law schools and constitutional law clinics**: Academic researchers and law clinicians with access to federal courts through amicus practice, Congressional testimony, and law review publication. Response timeline: 5–14 days (slower than advocacy organizations but with higher credibility multiplier in legislative and judicial venues). Primary Phase 1 entry points: Domain 37 (election law clinics, Harvard/Stanford/Yale), Domain 56 (administrative law and post-Loper Bright litigation), Domain 58 (Indian law and treaty law professors). Current Phase 1 contacts: Erica Chenoweth (Harvard Kennedy), Ryan Goodman (NYU/Just Security), Mason Marks (FSU/Harvard Petrie-Flom). Coalition role: frame-setting and credentialing for legislative testimony and amicus filings.
+1. **Domain 59 (Economic Precarity) and Domain 39 (Healthcare) are foundational to all Phase 1 coalition expansion** — these are the two highest-reach, most-coalition-dense domains, with the broadest institutional distribution networks and the most extensive constituency overlap.
 
-**2. Immigration and asylum legal aid**: High-volume legal service organizations with direct client relationships, significant pro bono coordination, and federal court litigation infrastructure. Response timeline: 2–7 days for urgent immigration-related content; 10–21 days for broader democracy framing. Primary Phase 1 entry points: Domain 39 (Medicaid coverage for immigrants), Domain 56 (agency enforcement collapse), Domain 59 (wage theft and garnishment against immigrant workers). Organizations: NILC, CLINIC, AILA, Marc Elias Law Group. Coalition role: client-base amplification and state-level legal advocacy. Currently underserved by Phase 1 (no domain sent to NILC or AILA as of June 3).
+2. **Domain 56 (Civil Service Politicization) operates as a governance infrastructure multiplier** — success in Domain 56 directly unlocks enforcement capacity for all other domains (voting rights, healthcare, economic policy) by restoring nonpartisan administration and enabling actual implementation of legal victories.
 
-**3. Civil rights and racial justice organizations**: National litigation and policy organizations with established Congressional relationships, press infrastructure, and cross-racial coalition coordination capacity. Response timeline: 3–10 days. Primary Phase 1 entry points: all five domains, with Domain 58 (birthright citizenship, tribal sovereignty, VRA), Domain 37 (Callais redistricting cascade), and Domain 56 (DOJ Civil Rights Division collapse) as the strongest anchors. Organizations: NAACP LDF, Lawyers' Committee for Civil Rights, ACLU Voting Rights Project. Coalition role: highest-reach amplifier and most likely co-distributor for consolidated framing.
+3. **Domain 58 (Tribal Sovereignty) and Domain 37 (Executive Interference) are the two highest-leverage domains for Phase 2 gating** — success in these two domains will either open or constrain every Phase 2 domain sequencing option depending on June 17-18 checkpoint outcomes.
 
-**4. Academic and policy research institutions**: Think tanks, university research centers, and policy institutes with Senate and House committee staff relationships and publication pipelines. Response timeline: 5–15 days. Primary Phase 1 entry points: Domain 39 (Georgetown CCF, KFF, CBPP), Domain 59 (CBPP, ITEP, Dallas Fed HARP study), Domain 37 (Brennan Center election law). Organizations: CBPP, Center for American Progress, Georgetown Center for Children and Families, KFF, National Women's Law Center. Coalition role: Senate Finance Committee access and legislative evidence base.
-
-**5. Faith communities and congregational networks**: Interfaith advocacy organizations and denominational social justice offices with deep local organizing infrastructure. Response timeline: 7–21 days (congregational calendar-dependent). Primary Phase 1 entry points: Domain 59 (economic precarity among congregations' direct service populations), Domain 39 (healthcare access as moral imperative), Domain 58 (indigenous communities, many with historic faith-community relationships). Organizations: National Council of Churches, NETWORK Lobby for Catholic Social Justice, Religious Action Center of Reform Judaism, Islamic Social Services Association. Coalition role: local constituent pressure on Congress; door-to-door organizing capacity in swing districts. Currently not receiving Phase 1 materials — a gap.
-
-**6. Labor unions and worker organizing networks**: National and regional unions with member communications infrastructure reaching millions of households. Response timeline: 5–14 days for national leadership; local chapters may be faster. Primary Phase 1 entry points: Domain 56 (Schedule Policy/Career as labor rights issue; AFGE primary), Domain 59 (CTC and Medicaid cuts affecting working-class union households; AFL-CIO primary), Domain 37 (NVRA at federal worksites). Organizations: AFGE, NTEU, AFL-CIO, SEIU. Coalition role: member-communications channel that converts policy research into constituent pressure on Congress at scale. AFGE and AFL-CIO are active Phase 1 Tier 1 contacts.
-
-**7. Mutual aid and direct service networks**: Community-based organizations providing direct services (food, housing, healthcare navigation, legal aid) to the populations most affected by Phase 1 policy changes. Response timeline: 3–10 days for organizational leadership; grassroots networks may be immediate. Primary Phase 1 entry points: Domain 59 (economic precarity direct services), Domain 39 (Medicaid enrollment navigation), Domain 58 (tribal community services). Organizations: MomsRising, Black Mamas Matter Alliance, National Housing Law Project, Native American Rights Fund regional chapters. Coalition role: community organizing, constituent testimony, and on-the-ground documentation of policy harms. Several are active Phase 1 contacts (Black Mamas Matter Alliance, MomsRising); others are under-activated.
+The June 17-18 checkpoint evaluation should prioritize these three metrics:
+- **Phase 1 Reach**: Which domains achieved measurable distribution breadth and constituency engagement?
+- **Phase 1-to-Phase 2 Gateway**: Which domains provide the political or institutional opening for Phase 2 activation?
+- **Cross-Domain Multiplier Effect**: Which Phase 1 domains created conditions for subsequent Phase 1 coordination?
 
 ---
 
-## Section 2: Domain-to-Constituency Matrix
+## Section 1: Domain-by-Domain Leverage Analysis
 
 The matrix maps Phase 1's five domains to the seven constituency networks. A cell marked with a domain number indicates direct, verified organizational alignment — that constituency has organizations with an existing mission stake in that domain.
 
