@@ -2,9 +2,31 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## 🎯 Session 3520 (June 14 12:15 UTC) — EXPLORATION QUEUE REPLENISHED: 3 NEW ITEMS STAGED FOR POST-DECISION EXECUTION
+## 🎯 Session 3520 (June 14 12:15–12:30 UTC) — EXPLORATION QUEUE REPLENISHED: 3 NEW ITEMS STAGED FOR POST-DECISION EXECUTION
 
-**Status**: ✅ **QUEUE REPLENISHED — STANDING BY FOR JUNE 15 USER DECISIONS** — All prior exploration queue items verified complete and committed (Sessions 3508-3514). Added 3 new queue items for post-decision execution (June 16-18 window). All user decision deadlines documented with clear trigger conditions. Orchestrator standing by for June 15 EOD P3 decision + optional Wave 1-2 execution.
+**Status**: ✅ **QUEUE REPLENISHED — STANDING BY FOR JUNE 15 USER DECISIONS** — All prior exploration queue items verified complete and committed (Sessions 3508-3514). Added 3 new queue items for post-decision execution (June 16-19 window). All user decision deadlines documented with clear trigger conditions. Orchestrator standing by for June 15 EOD P3 decision + optional Wave 1-2 execution.
+
+**What Was Done (Session 3520)**:
+1. ✅ **Queue Verification**: Confirmed all 3 exploration items from Session 3508-3514 complete (P3 branching, resistance-research Wave 1-2 staging, open-source-rideshare audit)
+2. ✅ **Queue Replenishment**: Added 3 new exploration queue items for post-decision execution:
+   - **stockbot: Post-Retrain Validation & Phase 4 Go-Live** (June 18-19, 92% confidence, 2-3h)
+   - **resistance-research: Phase 3 Onboarding & Resource Allocation** (post-Wave-2, 88% confidence, 3-4h)
+   - **systems-resilience: Phase 5.1 Final Config & Dry-Run** (post-platform-decision, 85% confidence, 3-4h)
+3. ✅ **Documentation**: Updated CHECKIN.md, PROJECTS.md, WORKLOG.md with session status
+4. ✅ **Commits**: All orchestration changes committed to master
+
+**Currently In Progress**: Standing-by state — waiting for three critical user decisions
+
+**Needs Your Input** (Priority Order, Deadlines):
+1. **P3 Architecture Decision** — **JUNE 15 EOD DEADLINE (~36h remaining)** — Review `feature/p3-staging-both-options` PR decision guide. Choose Option A (7 features, fast 1-2h) or Option B (14 features, thorough 2-4h, RECOMMENDED). Both fully tested, zero regressions, ready to merge immediately.
+2. **Optional: Wave 1-2 Email Execution** — **JUNE 14-15 RECOVERY WINDOW** — Use `PHASE_2_EMAIL_CAMPAIGN_MASTER_CHECKLIST.md` (2.5h total). Optional recovery for June 9-10 slip. Can skip if time-constrained.
+3. **Platform Decision** — **JUNE 14-15 DEADLINE** — Choose Nextcloud+Matrix or Discourse for Phase 5.1 deployment (June 9 deadline). Recommendation: Discourse (8GB RAM OK, 2-3h deploy vs 4-6h).
+
+**Suggested Priorities for Next Session**:
+- **If P3 decided by June 16 00:00 UTC**: Execute AAPL/MSFT retrains immediately (5.5-7h parallel, June 16-18 window), then run Post-Retrain Validation (June 18-19)
+- **If platform decided by June 16 00:00 UTC**: Execute Phase 5.1 Final Config & Dry-Run (June 16-19), deploy June 9 ready
+- **If Wave 1-2 executed by June 17 00:00 UTC**: Execute Phase 3 Research Onboarding (June 17-19), July 1 Phase 3 kickoff ready
+- **If no decisions by June 16 00:00 UTC**: Activate 3 queue items autonomously (can work on any of the 3 items without waiting)
 
 ---
 
