@@ -48,7 +48,68 @@
 - **WB-2** (`scripts/weekend_batch.py`): Top-level pipeline orchestrator (depends on P2 ✅)
 - **WB-3** (`scripts/promote_to_paper.py`): Paper trading queue deployer (depends on WB-2)
 
-**Status**: All ML-1 work committed and passing. Ready to proceed with ML-2, ML-3, or WB items. P3 work blocked until user provides architecture decision.
+**Status**: All ML-1/2/3 work committed and passing. WB-1 (candidates.yaml) template created and committed. Ready to proceed with WB-2/3. P3 work blocked until user provides architecture decision.
+
+### ML-2 & ML-3 Implementation Summary ✅
+
+**ML-2 News Sentiment Feature** ✅:
+- `NewsSentimentFeature` class with Alpaca News API integration
+- Claude Haiku sentiment scoring with structured JSON responses
+- SQLite caching with per-thread connection pooling
+- Cost guard to prevent excessive API spending ($0.05 per training run limit)
+- Feature pipeline integration with optional `include_news_sentiment` flag
+- 74 comprehensive tests (all mocked, zero live API calls), all passing
+- Graceful degradation on all API errors (Alpaca, Anthropic)
+- Commit: WB-2 commit (submodule)
+
+**ML-3 Drawdown Recovery Metrics** ✅:
+- `DrawdownAnalyzer` class with state-machine drawdown detection algorithm
+- Equity curve building from daily returns with proper fold pooling
+- Computes: avg_recovery_days, max_recovery_days, unrecovered_count
+- Backward-compatible integration into `EvaluationReport.drawdown_stats`
+- 53 comprehensive tests covering all edge cases, all passing
+- Zero regressions introduced
+- Commit: WB-3 commit (submodule)
+
+### WB-1 Candidates Template ✅
+
+**Weekend Batch Candidate Matrix Configuration** ✅:
+- `projects/stockbot/candidates.yaml` created as user-editable template
+- 10 starter candidates: AAPL (lgbm_ho + ridge_wf), MSFT (lgbm_ho + ridge_wf), NVDA (lgbm_ho), GOOGL (lgbm_ho), AMZN (lgbm_ho), JPM (ridge_wf + lgbm_ho), META (lgbm_ho)
+- Meta parameters: train_start/end, walk-forward config, quick-screen settings, top-N promotion
+- Well-commented for weekly user edits (especially train_end date)
+- Pi5-friendly defaults: max_workers=3 (leaves 1 core for OS/API)
+- Commit: e3fcd9c (feat: WB-1 candidates.yaml template)
+
+### Queued for Next Session
+
+**WB-2 — `scripts/weekend_batch.py` Pipeline Orchestrator** (estimated 2-3 hours):
+- Phase 1: Quick screen (fast Sharpe filtering on quick-eval)
+- Phase 2: Full eval on survivors
+- Phase 3: Model ranking and comparison
+- Phase 4: Promotion to `paper_trading_queue.json`
+- Discord notification with summary
+- Dry-run support, exit codes, blackout rule enforcement
+
+**WB-3 — `scripts/promote_to_paper.py` Paper Trading Deployer** (estimated 1-2 hours):
+- Reads `paper_trading_queue.json`
+- Generates new `active-sessions-paper.json`
+- Session validation
+- Market hours blackout enforcement
+- Creates `DEPLOY_READY` flag safely
+
+**ML Complete**: All three ML items (ML-1, ML-2, ML-3) fully implemented, tested, and integrated. Total: 178 new tests, zero regressions.
+**ML-1**: Monte Carlo gate G7 (51 tests) — probabilistic risk quantification
+**ML-2**: News sentiment feature (74 tests) — LLM-based financial news analysis  
+**ML-3**: Drawdown recovery metrics (53 tests) — recovery time tracking
+
+**P3 Blocker Status**: Feature architecture decision still pending (Option A vs B). User input required to proceed with AAPL/MSFT retrains (June 18 deadline).
+
+**Session Timeline**: 00:52 UTC orientation → 01:42 UTC ML-1/2/3 parallel execution → 02:10 UTC WB-1 template → Session complete
+
+**All orchestration files committed**: WORKLOG.md, CHECKIN.md (this file), projects/stockbot submodule (ML-1/2/3 + WB-1).
+
+---
 
 ---
 
