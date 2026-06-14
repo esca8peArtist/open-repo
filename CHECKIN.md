@@ -1,3 +1,31 @@
+# Check-in Summary — Session 3584 (June 14 22:05+ UTC)
+
+## Session 3584 — Continuous Standing-By Verification
+
+**Completed**: Full orientation (ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md). Verified all systems remain correctly in standing-by state. No changes since Session 3583.
+
+### Findings (Session 3584)
+
+- **All blocks verified active**: 3 user-action blocks remain (VeraCrypt restart, test print execution, platform decision due June 15 EOD)
+- **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC)
+- **Autonomous work available**: **Zero** — confirmed. All projects blocked on user actions or external triggers (market open June 16 13:30 UTC)
+- **Infrastructure status**: 100% production-ready. All deliverables staged or actively deployed.
+
+**Status**: ✅ **System correctly idle. All autonomous prep complete. Awaiting user decisions and market-open trigger.**
+
+### Critical User Actions Needed (by June 15 EOD)
+1. **systems-resilience platform choice** — Recommendation: **Nextcloud+Matrix** (Discourse has Pi5 IPv6 bug). Provide choice + credentials.
+2. **cybersecurity-hardening VeraCrypt restart** — Windows restart + pre-boot password.
+3. **resistance-research Wave 1-2 execution** — Ready June 14-15 (75 min, copy-paste templates provided).
+
+### Next Automatic Triggers
+- **June 15 EOD**: Critical user decisions (platform, VeraCrypt, Wave 1-2)
+- **June 16 00:00 UTC**: Auto-repause on mfg-farm, seedwarden, open-repo (expires temp unpause)
+- **June 16 13:30 UTC**: stockbot market open (AAPL + MSFT lgbm_ho validation)
+- **June 18 EOD**: Hard deadline (models must validate gates)
+
+---
+
 # Check-in Summary — Session 3583 (June 14 21:59 UTC)
 
 ## Session 3583 — Final Standing-By Verification & Orchestration Commit
