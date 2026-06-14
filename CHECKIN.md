@@ -2,6 +2,43 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3507 (June 14 ~07:49 UTC) — FINAL PRE-DECISION STANDING BY, ALL AUTONOMOUS WORK COMPLETE
+
+**Status**: ✅ **SYSTEM READY FOR USER INPUT — ALL PREPARATION COMPLETE** — Full orientation completed. All 4 active blocks verified unresolved and awaiting explicit user action. All autonomous work from Sessions 3475-3506 verified production-ready (P1/P2/ML-1/2/3/WB-1/2/3 + exploration items = 178+ tests passing). Zero wasted token spend. System standing by.
+
+**Critical Deadlines (UPDATED)**:
+1. **June 15 EOD (TODAY ~7 hours remaining)**: Stockbot P3 feature architecture decision
+   - Both Option A (fast, 1-2h) and Option B (thorough, 2-4h) fully documented and production-ready
+   - Phase 4 contingency planning complete from Session 3506
+   - Ready to execute immediately upon decision
+   
+2. **June 14 (TODAY, recovery window CLOSING)**: Resistance-research Wave 1-2 emails
+   - Recovery window: 60-75 minutes before 23:59 UTC deadline
+   - SOP + templates complete (Session 3494)
+   
+3. **June 17-18**: Resistance-research Day 7 checkpoint
+   - Full infrastructure ready (sessions 3502, 3505, 3506)
+   - 30-minute choreographed execution
+
+**System Readiness**:
+- ✅ Stockbot: P1 (Signal Health Monitor), P2 (Quick-Eval Flag), ML-1/2/3 (178 tests), WB-1/2/3 all complete
+- ✅ P3 decision support: Both Option A and Option B fully documented with execution checklists
+- ✅ P4 contingency planning: M1-M4 module roadmaps, thermal ceiling analysis, capital allocation framework
+- ✅ Resistance-research: Wave 1-2 recovery SOP, Day 7 checkpoint infrastructure, Phase 3 coalition leverage analysis
+- ✅ All other projects: Paused or awaiting user manual actions (VeraCrypt, test print, platform choice)
+- ✅ Usage: Sonnet 1.9% → est. 2.2% post-3506 (within budget)
+- ✅ Git: All changes committed to master, clean state
+
+**Recommended User Actions (Priority Order)**:
+1. **Today before 07:49 UTC June 15**: Decide stockbot P3 feature architecture
+2. **Today before 23:59 UTC June 14**: Execute resistance-research Wave 1-2 emails (recovery window)
+3. **June 17 09:00 UTC**: Execute Day 7 checkpoint
+4. **June 16 overnight (if P3 decided)**: Begin AAPL/MSFT retrains (8-11 hours wall-clock, must complete by June 18 EOD)
+
+**No additional autonomous work available** pending user decisions. All exploration queue items executed. All project Goals have unfinished scope (AAPL/MSFT retrains, Phase 2 execution, etc.) but all require P3 decision first.
+
+---
+
 ## 🎯 Session 3506 (June 14 ~09:00 UTC) — EXPLORATION QUEUE EXECUTION: STOCKBOT PHASE 4 PRE-PLANNING COMPLETE
 
 **Status**: ✅ **AUTONOMOUS WORK EXECUTED — EXPLORATION QUEUE ITEM DELIVERED, PRODUCTION-READY** — All top-priority projects remain blocked on user decisions (stockbot P3 feature architecture due June 15 EOD, resistance-research Wave 1-2 emails overdue, 3 other manual action blocks). Per protocol: continued Exploration Queue work to advance project Goals. Executed Session 2969 item (Phase 4 Pre-Planning Contingency) with 3 comprehensive documents providing contingency planning infrastructure independent of P3 blocker.
