@@ -2,6 +2,38 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3541 (June 14 14:20 UTC) — STOCKBOT DEPLOYMENT EXECUTED: 4-SESSION CONFIG LIVE, BOTH NEW MODELS ACTIVE ON JETSON
+
+**Status**: ✅ **DEPLOYMENT COMPLETE** — Stockbot AAPL + MSFT lgbm_ho models successfully deployed to Jetson paper trading.
+
+**Stockbot Deployment Summary**:
+- ✅ Both model pkl files synced to Jetson `/opt/stockbot/models/`:
+  - AAPL_lgbm_ho_v1_457ef7c9.pkl (261 KB)
+  - MSFT_lgbm_ho_v1_47c2ddcf.pkl (257 KB)
+- ✅ Config updated: `active-sessions.json` deployed (4-session live: JPM ridge_wf + AMZN lgbm_ho + AAPL lgbm_ho + MSFT lgbm_ho)
+- ✅ Docker restarted, health check passes: `{"status":"ok","sessions":4}`
+- ✅ Logs verify: All 4 sessions active with correct stacker IDs (AAPL: 0676c84e, MSFT: 0db9af14)
+- ✅ Known issue: Alpaca WebSocket 406 on 3 sessions (pre-existing; REST trading path unaffected, non-blocking)
+- 📅 **June 15+ market open**: Both models will generate signals + execute trades (assuming market hours) during June 15-18 window
+- 📅 **June 18 EOD deadline**: Validation checkpoint to confirm both models executing paper trading trades
+
+**Commit**: `47d4fdd` — `chore(stockbot): activate AAPL+MSFT lgbm_ho sessions on Jetson — 4-session config live`
+
+**What's Next**:
+- **June 15 (Monday) market open (13:30 UTC)**: Monitor logs for AAPL + MSFT signal generation + trade execution
+- **June 18 EOD**: Verify both models have generated buy/sell signals and executed trades in paper trading
+- **Post-June 18**: P3 decision (Option A or B) gates next phase; P3/P4 work queued after deployment validation
+
+**Blockers (unchanged)**:
+- cybersecurity-hardening: VeraCrypt restart (user action)
+- mfg-farm: Test print execution (user action)
+- systems-resilience: Platform choice (Nextcloud vs Discourse, June 15 EOD decision)
+- resistance-research: Wave 1-2 optional recovery (2.5h user action, June 14-15 window)
+
+**Usage Status**: Sonnet 2.1% (184k tokens) — healthy budget remaining.
+
+---
+
 ## 🎯 Session 3540 (June 14 15:35 UTC) — DEPLOYMENT PREP COMPLETE: STOCKBOT MODELS STAGED, WAVE 1-2 EXECUTION READY
 
 **Status**: ✅ **BOTH PRIMARY PROJECTS ADVANCED TO FINAL STAGING** — Parallel execution completed on highest-priority unblocked work.
