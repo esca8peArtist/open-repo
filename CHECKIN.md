@@ -2,6 +2,38 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3523 (June 14 11:36 UTC) — STANDING-BY CONFIRMED: ALL AUTONOMOUS WORK BLOCKED ON USER DECISIONS
+
+**Status**: ✅ **CORRECT STANDING-BY STATE** — Orchestrator oriented. All autonomous work blocked on 3 critical user decisions with clearly defined triggers and deadlines. No autonomous work available. Exploration queue has 4 items staged for post-decision execution. Standing by for June 15 EOD P3 decision or June 16 00:00 UTC auto-activation.
+
+**Since Last Check-in (Session 3522, June 14 14:30 UTC)**:
+- Oriented to current state: verified ORCHESTRATOR_STATE, BLOCKED.md (4 active blocks), PROJECTS.md (all projects blocked), INBOX.md (no new items)
+- Confirmed standing-by state: all P3 branches staged (Option A + Option B), all email templates ready, all deployment specs staged
+- Verified auto-activation trigger: June 16 00:00 UTC will activate 3 queue items autonomously if no P3/platform/Wave-2 decisions made
+- No code changes, no infrastructure modifications, no new work initiated
+- Next orchestrator action: June 16 00:00 UTC or upon P3 decision notification
+
+**Critical Deadlines Remain Unchanged**:
+- **June 15 EOD (~37h remaining)**: Stockbot P3 decision (Option A: 7 features, 1-2h; Option B: 14 features RECOMMENDED, 2-4h)
+- **June 15 EOD (~37h remaining)**: Systems-resilience platform choice (Discourse RECOMMENDED, 2-3h vs Nextcloud 4-6h)
+- **June 14-15 (optional)**: Resistance-research Wave 1-2 execution (recover June 9-10 slip, 2.5h total)
+- **June 18 EOD**: AAPL/MSFT retrain completion (hard deadline, contingent on P3 decision by June 15)
+
+**Needs Your Input** (Priority Order):
+1. **P3 Architecture Decision** — **JUNE 15 EOD DEADLINE** — Review `feature/p3-staging-both-options` PR. Choose Option A (fast, 7 features) or Option B (thorough, 14 features, RECOMMENDED). Command to merge chosen branch: `git checkout master && git merge feature/p3-option-a-7-feature-reduction` (or option-b)
+2. **Platform Decision** — **JUNE 15 EOD DEADLINE** — Nextcloud+Matrix or Discourse. RECOMMENDED: Discourse (8GB RAM sufficient, 2-3h deploy vs 4-6h)
+3. **Wave 1-2 Execution (Optional)** — **JUNE 14-15 RECOVERY WINDOW** — Execute emails from `PHASE_2_EMAIL_CAMPAIGN_MASTER_CHECKLIST.md` (2.5h total) to recover June 9-10 slip
+
+**Triggered Autonomous Work Awaiting Your Decision**:
+- **Phase 4 Implementation Strategy** — Ready to generate if P3 decided (2-3h, June 16-19)
+- **Post-Retrain Validation** — Ready to generate after AAPL/MSFT retrains complete (2-3h, June 18-19)
+- **Phase 3 Research Onboarding** — Ready to generate after Wave 1-2 execution (3-4h, June 15-19)
+- **Phase 5.1 Deployment Config** — Ready to generate after platform decision (3-4h, June 15-19)
+
+**Auto-Activation Trigger**: If no P3/platform/Wave-2 decisions by June 16 00:00 UTC, orchestrator will autonomously activate 3 queue items (Phase 4 planning, Phase 3 onboarding, deployment config).
+
+---
+
 ## 🎯 Session 3522 (June 14 14:30 UTC) — FINAL CALL FOR P3 DECISION: OPTION A OR B BY EOD TODAY
 
 **Status**: ⏰ **CRITICAL DEADLINE APPROACHING — ALL WORK BLOCKED, AWAITING FINAL USER DECISIONS** — Re-verified all P3 branches (Option A: 41 tests ✅, Option B: 47 tests ✅, both zero regressions). All staged branches confirmed ready for immediate merge. Decision deadline is TODAY June 15 EOD (~20 hours remaining). Both AAPL/MSFT retrain window (June 16-18) and June 18 EOD completion deadline contingent on P3 decision TODAY.
