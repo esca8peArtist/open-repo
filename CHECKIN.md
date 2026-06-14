@@ -2,6 +2,50 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3565 (June 14 21:00 UTC) — ORIENTATION + STANDING-BY CONFIRMATION FOR JUNE 16-18 CHECKPOINTS
+
+**Status**: ✅ **ALL SYSTEMS STANDING-BY** — Orientation complete. All active blocks verified non-resolvable autonomously (cybersecurity-hardening VeraCrypt restart = manual, mfg-farm test print = manual, systems-resilience platform decision = user required by June 15 EOD). Exploration queue production-ready with no autonomous work available until June 16 market open.
+
+**Session Activity**:
+1. ✅ **Full Orientation**: Read ORCHESTRATOR_STATE.md, verified all blocks, checked INBOX (all items PROCESSED), confirmed exploration queue items complete or trigger-gated.
+2. ✅ **Block Verification**: Ran verification commands for all 3 active blocks — all fail as expected (user action still required):
+   - mfg-farm test print: directory does not exist → test print not executed yet
+   - systems-resilience Docker containers: no nextcloud/discourse running → platform not deployed yet
+   - cybersecurity-hardening: requires manual VeraCrypt restart → cannot auto-verify
+3. ✅ **Git Status Check**: ORCHESTRATOR_STATE.md modified (auto-generated), docs/PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md untracked (new from Session 3563). No source code changes pending.
+4. ✅ **Deliverable Verification**: Confirmed JUNE_16_17_VALIDATION_PROTOCOL.md exists and production-ready (51 KB, created June 14 19:26 UTC).
+
+**Current State Summary** (no changes from Session 3563):
+- **stockbot**: AAPL lgbm_ho + MSFT lgbm_ho live on Jetson (4-session config). June 16-17 validation protocol complete. June 18 EOD hard deadline for trade execution. ✅ All systems ready.
+- **resistance-research**: Wave 1-2 email packages staged (75 min execution window). Domain 51/59 rapid-activation runbooks complete. Standing-by for user execution approval. ✅ All systems ready.
+- **cybersecurity-hardening**: Phase 1 completion guides + Phase 2 execution roadmap complete (Session 3557). Blocked on user VeraCrypt restart to clear current Active Block.
+- **mfg-farm**: Phase 2 scaling roadmap + capital raise contingency complete. Blocked on user test print execution.
+- **systems-resilience**: Platform decision documentation complete (Nextcloud+Matrix recommended 8/10 vs Discourse 5/10). **CRITICAL: Decision required by June 15 EOD** to unblock Phase 5.1 deployment.
+
+**Exploration Queue Status**: 9 items total (100% healthy per protocol — < 3 truly active/ungated items):
+- ✅ **Complete**: P3/P4 roadmaps, Wave 1-2 email packages, Phase 1 guides, platform matrix, Phase 4 infrastructure, seedwarden Phase 2 calendar
+- ⏳ **Trigger-gated (June 15+)**: Phase 5.1 final config (post-platform-decision)
+- ⏳ **Trigger-gated (June 16+)**: June 16-17 live signal validation (market open)
+- ⏳ **Trigger-gated (June 18+)**: Post-retrain validation, Phase 3 research onboarding
+- ⏳ **Available anytime**: Cybersecurity Phase 2 (user-triggered)
+
+**Critical User Actions** (unchanged from Session 3563):
+1. **BY JUNE 15 EOD (CRITICAL, OVERDUE)**: Approve platform choice — Nextcloud+Matrix recommended. Provide domain name + SMTP credentials.
+2. **BY JUNE 16 13:30 UTC**: Monitor AAPL lgbm_ho signal generation at market open (optional, runbook staged).
+3. **OPTIONAL**: Execute Wave 1-2 email campaigns (75 min, June 14-15 window).
+
+**Next Orchestrator Checkpoints**:
+1. **June 15 EOD** (CRITICAL, OVERDUE): systems-resilience platform decision
+2. **June 16 13:30 UTC** (~20h): stockbot market open checkpoint
+3. **June 17-18**: resistance-research Day 7 checkpoint
+4. **June 18 EOD**: stockbot trade execution hard deadline
+
+**Assessment**: No autonomous work remains. All top-priority projects correctly blocked on external triggers or user decisions. Standing-by state confirmed through June 16-18 checkpoints. All deliverables production-ready and staged for immediate execution upon user decision.
+
+**Token Usage**: ~15K (orientation + block verification, minimal execution).
+
+---
+
 ## 🎯 Session 3563 (June 14 20:45 UTC) — EXPLORATION QUEUE COMPLETION + PLATFORM DECISION MATRIX FINAL
 
 **Status**: ✅ **ALL EXPLORATION QUEUE ITEMS COMPLETE** — Standing-by confirmed through June 16-18 checkpoints. Platform decision documentation delivered with recommendation: **Nextcloud+Matrix is production-ready with zero Pi5 blockers; Discourse requires workarounds for IPv6 bug.**
