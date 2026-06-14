@@ -1,3 +1,34 @@
+# Check-in Summary — Session 3585 (June 14 22:15+ UTC)
+
+## Session 3585 — Orchestrator Standing-By Continuation
+
+**Completed**: Full orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md verified). No changes since Session 3584.
+
+### Findings (Session 3585)
+
+- **All 3 blocks remain active**: No resolutions since last session
+  - cybersecurity-hardening: VeraCrypt restart (manual — cannot auto-verify)
+  - mfg-farm: Test print directory missing (awaiting user execution)
+  - systems-resilience: Platform decision needed (Nextcloud vs Discourse, due June 15 EOD)
+- **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC)
+- **Autonomous work**: **Zero** — all projects blocked on user actions or market-open trigger (June 16 13:30 UTC)
+
+**Status**: ✅ **System correctly idle. All autonomous prep complete. Standing-by for June 15-16 checkpoints.**
+
+### Timeline Ahead
+
+- **June 15 EOD**: systems-resilience platform decision (critical), VeraCrypt restart, Wave 1-2 execution
+- **June 16 00:00 UTC**: Temporary unpauses expire (auto-repause mfg-farm, seedwarden, open-repo)
+- **June 16 13:00 UTC**: Pre-market validation checklist (stockbot)
+- **June 16 13:30 UTC**: Market open (AAPL + MSFT validation begins)
+- **June 18 EOD**: Hard deadline (both models validate gates)
+
+### Assessment
+
+No action taken. System is correctly standing-by. Ready for user decisions and market-open trigger.
+
+---
+
 # Check-in Summary — Session 3584 (June 14 22:05+ UTC)
 
 ## Session 3584 — Continuous Standing-By Verification
