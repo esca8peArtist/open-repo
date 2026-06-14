@@ -2,6 +2,47 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3501 (June 14 ~12:00 UTC) — ORIENTATION COMPLETE: CONFIRMED STABLE STATE, ZERO AUTONOMOUS WORK AVAILABLE
+
+**Status**: ✅ **SYSTEM STANDING BY FOR CRITICAL USER INPUT** — Second orientation pass confirms state unchanged. All 4 active blocks remain unresolved. All autonomous work from prior sessions verified production-ready (178+ tests, zero regressions). Exploration Queue exceeds 3-item minimum. No new work items available until user decisions made.
+
+**Critical Deadlines (Requires User Action)**:
+1. **June 15 EOD (30h remaining)**: Stockbot P3 feature architecture decision (Option A or B)
+   - Decision support: `projects/stockbot/P3_FEATURE_MISMATCH_DIAGNOSIS.md`
+   - Recommendation: Option B (thorough, low-risk path)
+   - Post-decision: AAPL/MSFT retrains must complete by June 18 EOD
+
+2. **TODAY June 14 (Recovery Window OPEN)**: Resistance-research Wave 1-2 emails
+   - Wave 1: CLC + Issue One (2 emails, 90-min stagger)
+   - Wave 2: Common Cause CA + LWV CA + Clean Money (3 emails, 90-min stagger)
+   - SOP: `projects/resistance-research/WAVE_1_RECOVERY_EXECUTION_SOP.md`
+   - Effort: 60-75 min user action
+   - Day 7 checkpoint (June 17-18) infrastructure ready
+
+3. **June 17-18 (72h away)**: Resistance-research Day 7 checkpoint (autonomous)
+   - Measurement templates staged and ready
+   - Decision routing automated
+   - Next user action: interpret checkpoint results, decide Phase 2 batch sequencing
+
+**Unresolved Blocks (All Require Manual User Action)**:
+- **Cybersecurity-hardening**: Windows VeraCrypt pre-boot restart + completion of Phase 1.3
+- **Mfg-farm**: 3D printer test print (0.20mm, PLA+, 220–225°C, snap-arm tolerance evaluation)
+- **Systems-resilience**: Platform deployment choice (Nextcloud+Matrix vs Discourse; deadline June 8 passed, awaiting choice)
+- **Stockbot**: P3 feature dimension decision (blocker expires June 15 EOD)
+
+**Session 3501 Work (This Session)**:
+- ✅ Orientation complete: Re-verified all project states, block statuses, exploration queue capacity
+- ✅ Confirmed no new INBOX items, no new autonomous work available
+- ✅ Verified git state clean, usage healthy (Sonnet 1.9%, reset ~42h)
+- ✅ Prepared check-in update
+
+**Assessment**: Confirmed correct standing-by state. All core infrastructure production-ready. No wasted token spend. System ready for:
+- User P3 decision execution (June 15-18 window)
+- User Wave 1-2 email recovery (June 14, today)
+- Automated Day 7 checkpoint (June 17-18)
+
+---
+
 ## 🎯 Session 3500 (June 14 ~06:30 UTC) — ORIENTATION COMPLETE: SYSTEM STABLE, AWAITING USER DECISIONS
 
 **Status**: ✅ **SYSTEM STANDING BY FOR CRITICAL USER INPUT** — Orientation confirms state from Sessions 3497-3499. All 4 active blocks unresolved. All autonomous work complete (178+ tests passing). No new INBOX items. No autonomous work available.
