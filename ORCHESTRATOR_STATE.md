@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T23:23:53Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T23:45:02Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.9% (350,492 tokens) | All-models 33.9% | Reset in 25h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.9% (350,492 tokens) | All-models 34.5% | Reset in 24h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -107,43 +107,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- **Temporary unpauses**: Expire June 16 00:00 UTC (mfg-farm, seedwarden, open-repo all blocked on user actions)
-
-**Next Checkpoint**:
-- **June 16 13:00 UTC**: Run pre-market checklist
-- **June 16 13:30 UTC**: Market open, start live monitoring
-- **June 16 20:00 UTC**: Complete post-market analysis
-- **June 18 EOD**: Both models must validate gates OR escalate to user for Phase 4 decision
-
-**Token Usage**: ~2,500 (prepared 3 comprehensive templates + monitoring script). Current usage: 20.1% (182,049 tokens).
-
-**Assessment**: Orchestrator has completed all autonomous preparation work for June 16 validation. Infrastructure, checklists, monitoring, and analysis templates all production-ready. System is standing-by correctly — awaiting market open trigger on June 16.
-
----
-
-## Session 3578 — 2026-06-14 21:11 UTC
-**Orchestrator run type**: Standing-by verification
+**Orchestrator run type**: Standing-by verification (16th consecutive)
 
 **Orientation Complete**:
 - ORCHESTRATOR_STATE.md reviewed
-- Active blocks verified: 3 blocks remain (cybersecurity-hardening VeraCrypt restart, mfg-farm test print, systems-resilience platform decision)
-- Exploration Queue reviewed: 5 pending items all have future triggers (June 15-18)
-- No new autonomous work available
+- BLOCKED.md reviewed: all 3 blocks remain active and unresolved
+- INBOX.md reviewed: 100% processed (no new items since Session 3485)
+- PROJECTS.md reviewed: temporary unpauses expire June 16 00:00 UTC (~1-25 hours)
+- Exploration Queue reviewed: all items complete or trigger-gated to June 16+
 
-**Maintenance**:
-- Pruned stale cybersecurity-hardening focus line in PROJECTS.md (removed Session 3557 reference, clarified block status)
+**Active Blocks Status**:
+1. **cybersecurity-hardening — VeraCrypt restart**: Manual Windows action required (cannot auto-verify)
+2. **mfg-farm — Test print execution**: User action required (test print results directory absent as of June 14)
+3. **systems-resilience — Platform decision**: **CRITICAL EOD DEADLINE** — Nextcloud+Matrix (recommended, 8/10) vs Discourse (5/10 due to Pi5 IPv6 bug). User must provide: (a) platform choice, (b) credentials (IP/domain + SMTP for Nextcloud, or IPv6 workaround acknowledgment for Discourse)
 
-**Project Status Review**:
-- **stockbot**: Standing-by for June 16 13:30 UTC market open. AAPL + MSFT lgbm_ho deployed to Jetson. All prep complete.
-- **resistance-research**: Wave 1-2 email packages ready for user execution (75 min total, June 14-15 window). Phase 3 research infrastructure ready for post-Wave-2 execution.
+**Autonomous Work Assessment**:
+- **Zero autonomous work available** — all projects blocked on user decisions/actions or awaiting June 16 13:30 UTC market-open trigger
+- Standing-by state is correct and sustainable
+- All prep complete for next phase of work
+
+**Project Status**:
+- **stockbot**: Standing-by for June 16 13:30 UTC market open. AAPL + MSFT lgbm_ho deployment verified June 14 15:15 UTC. All tests passing, infrastructure healthy, monitoring scripts staged. AUTOMATIC execution at market open regardless of other project status.
+- **resistance-research**: Phase 2 Wave 1-2 email packages ready for user execution (June 14-15 window, 75 min total)
+- **mfg-farm**: Temporary unpause expires June 16 00:00 UTC. Test print results needed before Phase 1 launch.
+- **seedwarden**: Temporary unpause expires June 16 00:00 UTC. Track B infrastructure 100% production-ready, awaiting user gate decisions.
+- **open-repo**: Temporary unpause expires June 16 00:00 UTC. Feature branch merge-ready, awaiting user approval.
+- **systems-resilience**: Paused, awaiting platform decision (EOD deadline June 15). Phase 5.1 deployment runbooks staged for both Nextcloud+Matrix and Discourse options.
 - **cybersecurity-hardening**: Paused, awaiting VeraCrypt restart. Phase 1-2 deliverables production-ready.
-- **mfg-farm**: Blocked on test print execution. Track B execution checklist ready (5 user gates, 3.5-4.5 hrs). Phase 2 scaling strategy ready post-test-print.
-- **seedwarden**: Temporary unpause (expires June 16 00:00 UTC). Track B infrastructure 100% production-ready, awaiting user to complete 5 gates. Phase 3 contractor search complete.
-- **open-repo**: Temporary unpause (expires June 16 00:00 UTC). Merge-ready on feature branch. Awaiting user merge approval.
-- **systems-resilience**: Platform deployment decision needed by June 15 EOD (Nextcloud vs Discourse). Revised recommendation: Nextcloud+Matrix (Discourse has Pi5 IPv6 bug). Technical specs production-ready.
+- **off-grid-living**: Complete, awaiting user social media execution.
 
-**Assessment**: Orchestrator correctly in standing-by state. All major deliverables complete or blocked on user actions/decisions. Next checkpoints: June 15 EOD (platform decision, VeraCrypt restart), June 16 13:30 UTC (market open), June 16 EOD (test print results).
+**Assessment**:
+✅ **System correctly in standing-by mode. All autonomous preparation complete. Awaiting platform decision (EOD June 15 critical), and then June 16 00:00 UTC auto-repause of temporary-unpause projects, followed by June 16 13:30 UTC market open validation.**
 
-**Next session trigger**: June 16 00:00 UTC (temporary unpause expirations) OR upon user resolution of June 15 EOD decisions.
+**Next checkpoints**:
+- **June 15 EOD** (within hours): Platform decision needed for systems-resilience
+- **June 16 00:00 UTC**: Auto-repause of mfg-farm, seedwarden, open-repo unless user resolves block(s)
+- **June 16 13:30 UTC**: Market open validation (stockbot AAPL + MSFT live trading signal check) — AUTOMATIC
+- **June 18 EOD**: Model validation deadline for Phase 4 activation decision
 
-**Token usage**: ~200 (minimal work — orientation + maintenance only).
+**Token usage**: ~200 (orientation + documentation only). Current budget: 3.9% Sonnet (350,492 tokens).
