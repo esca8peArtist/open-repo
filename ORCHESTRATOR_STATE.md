@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T21:11:01Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T21:25:23Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.9% (350,492 tokens) | All-models 31.1% | Reset in 27h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.9% (350,492 tokens) | All-models 31.4% | Reset in 27h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -77,8 +77,6 @@
 **Resolution**: [leave blank]
 ---
 
-## State Drift Warnings
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 3557 (20 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
@@ -109,35 +107,6 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
-**Success Criteria** (June 18 Phase 4 decision gate):
-- Both sessions generate ≥1 trade during June 16 market hours ✓
-- No catastrophic losses (>10% account drawdown) ✓
-- Signal quality matches backtest expectations (±5% P&L drift) ✓
-- Infrastructure stable (zero auth failures, feature pipeline working) ✓
-
-**Automation Ready**:
-```bash
-# Run pre-market validation manually at 13:00 UTC
-cat JUNE_16_PREMARKET_VALIDATION_CHECKLIST.md
-
-# Start live monitoring at 13:30 UTC
-bash scripts/monitor_june_16_session.sh &
-
-# Complete post-market analysis at 20:00 UTC
-# Fill JUNE_16_POSTMARKET_ANALYSIS_TEMPLATE.md with queries from script
-```
-
-**Infrastructure Notes**:
-- Jetson stockbot container verified operational June 14 15:15 UTC
-- 4-session config active: JPM ridge_wf + AMZN lgbm_ho + AAPL lgbm_ho + MSFT lgbm_ho
-- All tests passing (248/248 across 3 suites as of June 14)
-- P1 signal health monitor deployed and functioning (detects signal dropout, anomalies)
-- P2 quick-eval flag verified (aapl + msft retrains <5 min each)
-
-**Project Status** (post-session):
-- **stockbot**: Standing-by for June 16 market open. All preparation complete, infrastructure validated. No further autonomous work until market opens.
-- **resistance-research**: Wave 1-2 email packages ready for user execution (June 14-15 window, 75 min total)
 - **Temporary unpauses**: Expire June 16 00:00 UTC (mfg-farm, seedwarden, open-repo all blocked on user actions)
 
 **Next Checkpoint**:
@@ -149,3 +118,32 @@ bash scripts/monitor_june_16_session.sh &
 **Token Usage**: ~2,500 (prepared 3 comprehensive templates + monitoring script). Current usage: 20.1% (182,049 tokens).
 
 **Assessment**: Orchestrator has completed all autonomous preparation work for June 16 validation. Infrastructure, checklists, monitoring, and analysis templates all production-ready. System is standing-by correctly — awaiting market open trigger on June 16.
+
+---
+
+## Session 3578 — 2026-06-14 21:11 UTC
+**Orchestrator run type**: Standing-by verification
+
+**Orientation Complete**:
+- ORCHESTRATOR_STATE.md reviewed
+- Active blocks verified: 3 blocks remain (cybersecurity-hardening VeraCrypt restart, mfg-farm test print, systems-resilience platform decision)
+- Exploration Queue reviewed: 5 pending items all have future triggers (June 15-18)
+- No new autonomous work available
+
+**Maintenance**:
+- Pruned stale cybersecurity-hardening focus line in PROJECTS.md (removed Session 3557 reference, clarified block status)
+
+**Project Status Review**:
+- **stockbot**: Standing-by for June 16 13:30 UTC market open. AAPL + MSFT lgbm_ho deployed to Jetson. All prep complete.
+- **resistance-research**: Wave 1-2 email packages ready for user execution (75 min total, June 14-15 window). Phase 3 research infrastructure ready for post-Wave-2 execution.
+- **cybersecurity-hardening**: Paused, awaiting VeraCrypt restart. Phase 1-2 deliverables production-ready.
+- **mfg-farm**: Blocked on test print execution. Track B execution checklist ready (5 user gates, 3.5-4.5 hrs). Phase 2 scaling strategy ready post-test-print.
+- **seedwarden**: Temporary unpause (expires June 16 00:00 UTC). Track B infrastructure 100% production-ready, awaiting user to complete 5 gates. Phase 3 contractor search complete.
+- **open-repo**: Temporary unpause (expires June 16 00:00 UTC). Merge-ready on feature branch. Awaiting user merge approval.
+- **systems-resilience**: Platform deployment decision needed by June 15 EOD (Nextcloud vs Discourse). Revised recommendation: Nextcloud+Matrix (Discourse has Pi5 IPv6 bug). Technical specs production-ready.
+
+**Assessment**: Orchestrator correctly in standing-by state. All major deliverables complete or blocked on user actions/decisions. Next checkpoints: June 15 EOD (platform decision, VeraCrypt restart), June 16 13:30 UTC (market open), June 16 EOD (test print results).
+
+**Next session trigger**: June 16 00:00 UTC (temporary unpause expirations) OR upon user resolution of June 15 EOD decisions.
+
+**Token usage**: ~200 (minimal work — orientation + maintenance only).

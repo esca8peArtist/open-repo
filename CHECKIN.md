@@ -1,3 +1,19 @@
+# Check-in Summary — Session 3580 (June 14 21:25 UTC)
+
+## Session 3580 — Continuous Standing-By Verification
+
+**Completed**: Full orientation, block verification, standing-by confirmation. No changes since 21:20 UTC session.
+
+### Findings
+
+- **Active blocks**: 3 unchanged (cybersecurity-hardening VeraCrypt, mfg-farm test print, systems-resilience platform decision)
+- **INBOX**: No new items since Session 3485 (June 14 02:50 UTC)
+- **Autonomous work**: None available — all projects blocked on user actions or market-open trigger
+
+**Status**: ✅ System correctly idle. All infrastructure ready. Standing-by for June 16 13:30 UTC market-open trigger.
+
+---
+
 # Check-in Summary — Session 3579 (June 14 21:20 UTC)
 
 ## Session 3579 — Standing-By Verification Continuation
