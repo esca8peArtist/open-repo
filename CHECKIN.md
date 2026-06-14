@@ -2,6 +2,35 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3529 (June 14 12:30 UTC) — STANDING-BY RE-VERIFICATION: NO CHANGES SINCE SESSION 3528, ALL SYSTEMS STAGED
+
+**Status**: ✅ **STANDING-BY STATE CONFIRMED** — Re-verified full orchestrator state per protocol. All four active blocks remain unresolved, no new inbox items, all exploration queue items staged. P3 feature branches fully tested and staged. Resistance-research Wave 1-2 infrastructure ready. Systems-resilience technical specs production-ready. **No autonomous work initiated** — waiting for user decisions (due June 15 EOD, ~21 hours remaining). Minimal session token usage (orientation only, no agent work).
+
+**Orientation Checklist**:
+- ✅ Read ORCHESTRATOR_STATE.md — confirmed all state data accurate
+- ✅ Read BLOCKED.md — all 4 active blocks unchanged (cybersecurity-hardening, mfg-farm, systems-resilience, stockbot P3)
+- ✅ Reviewed PROJECTS.md — all projects correctly marked as blocked or paused
+- ✅ Checked INBOX.md — no new items since Session 3485 June 14 02:50 UTC
+- ✅ Verified git status — clean except auto-generated ORCHESTRATOR_STATE.md timestamp update
+- ✅ Confirmed P3 branches exist and are tested: Option A (41 tests ✅), Option B (47 tests ✅)
+- ✅ Verified Wave 1-2 execution checklists staged in projects/resistance-research/
+- ✅ Confirmed all orchestration files on master and committed
+
+**User Actions Required** (Due June 15 EOD):
+1. **Stockbot P3**: Decide Option A or Option B — branches ready to merge immediately
+2. **Systems-Resilience Platform**: Choose Nextcloud or Discourse — deployment scripts ready
+3. **Resistance-Research Wave 1-2** (optional): Execute recovery emails if desired
+
+**Exploration Queue Status**: 4 items ready for conditional post-decision activation June 16:
+- Post-Retrain Phase 4 Validation (triggers: P3 decision + retrains)
+- Phase 3 Research Onboarding (triggers: Wave completion)
+- Phase 5.1 Final Deployment Config (triggers: platform decision)
+- Phase 4 Implementation Strategy (triggers: P3 decision)
+
+**Next Orchestrator Action**: Continue standing-by. If user decisions arrive by June 16 00:00 UTC, execute immediately. If no decisions by June 16 00:00 UTC, auto-activate exploration queue items autonomously.
+
+---
+
 ## 🎯 Session 3528 (June 14 16:00 UTC) — ORIENTATION COMPLETE: ALL AUTONOMOUS WORK VERIFIED STAGED, AWAITING USER DECISIONS JUNE 15 EOD
 
 **Status**: ✅ **STANDING-BY STATE CONFIRMED** — Orchestrator session completed. Verified all active blocks remain unresolved, no new inbox items, all exploration queue items staged, and all major deliverables complete and ready. Current state is correct: P3 feature branches tested and staged, resistance-research execution infrastructure ready, systems-resilience platform decision matrices prepared. **CRITICAL: User decisions due June 15 EOD (~20 hours)** on: (1) stockbot P3 Option A or B, (2) systems-resilience platform Nextcloud vs Discourse.
