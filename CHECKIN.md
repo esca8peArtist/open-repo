@@ -2,7 +2,34 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## ⏸️ Session 3488 (June 14 05:15 UTC) — RESISTANCE-RESEARCH DISTRIBUTION ATTEMPTED; ALL PROJECTS BLOCKED ON USER ACTION
+## ✅ Session 3488 (June 14 03:30 UTC) — P3 FEATURE MISMATCH INVESTIGATION COMPLETE: DIAGNOSTIC DOCUMENT & IMPLEMENTATION OPTIONS READY
+
+**Status**: ✅ **INVESTIGATION COMPLETE, READY FOR USER DECISION** — Diagnosed and documented P3 feature architecture blocker. Root cause confirmed: Training uses 14 features, walk-forward eval builds 7 features, causing StandardScaler dimension mismatch. Two implementation options identified with time estimates, confidence levels, and trade-offs. Diagnostic document production-ready for user review.
+
+**Work Completed**:
+1. ✅ **Reproduced exact error**: "X has 7 features, but GradientBoostingRegressor expecting 14" — confirmed via test run
+2. ✅ **Located root cause**: Training (model_training_pipeline.py:619–687) vs. Eval (walk_forward_engine.py:217–262) use different feature builders
+3. ✅ **Created diagnostic document**: `projects/stockbot/P3_FEATURE_MISMATCH_DIAGNOSIS.md` — full analysis + implementation options
+4. ✅ **Identified two paths**:
+   - **Option A** (Fast): Reduce training to 7 features (1–2 hours, may lose signal quality)
+   - **Option B** (Recommended): Enhance walk-forward to 14 features (2–4 hours, maintains quality, follows ML best practices)
+5. ✅ **Updated BLOCKED.md**: Clear decision point, points to diagnostic document, asks for decision by June 15 EOD
+
+**Timeline**:
+- **June 18 EOD**: Hard deadline for AAPL/MSFT retrains (P3 completion before June 30 Phase 2 cutoff)
+- **June 15 EOD**: User decision window (gives 3 days for either 1–4 hour implementation path)
+- **June 16-18**: Implementation + testing (comfortable buffer before deadline)
+
+**Confidence Levels**:
+- Root cause diagnosis: 95% confident (error message explicitly states feature count mismatch)
+- Option A feasibility: 99% confident (straightforward feature count reduction)
+- Option B feasibility: 85% confident (refactoring is clean but needs validation testing)
+
+**Assessment**: Investigation complete. Ready to implement either option immediately upon user decision. No other autonomous work available (all projects blocked on user actions or decisions).
+
+---
+
+## ⏸️ Session 3487 (June 14 04:30 UTC) — ORIENTATION VERIFIED: ALL AUTONOMOUS WORK COMPLETE, AWAITING USER INPUT
 
 **Status**: ✅ **ORIENTATION + WORK ATTEMPT COMPLETE** — Confirmed all prior sessions' autonomous work (P1/P2/ML-1/2/3/WB-1/2/3) production-ready. Attempted to execute resistance-research Phase 2 Wave 1-2 email distribution (overdue from June 11-12, marked "RECOVERABLE TODAY"). Subagent correctly identified that email sends require user SMTP action — templates production-ready, contacts verified, no technical blocker except user email client.
 
@@ -23,10 +50,28 @@
 
 ### Needs Your Input
 
-**🔴 URGENT (June 18 EOD deadline)**: Stockbot P3 feature architecture decision
-- **Decision**: Option A (reduce training to 7 features, fast) OR Option B (enhance walk-forward to 14 features, recommended)
-- **Reply format**: Just "A" or "B" in your next message
-- **Next step**: Once decided, orchestrator will implement fix (1-2h) + run AAPL/MSFT retrains (10-20 min)
+**🔴 URGENT (June 15 EOD Decision, June 18 EOD Deadline)**: Stockbot P3 feature architecture decision
+
+**Full diagnostic document**: `projects/stockbot/P3_FEATURE_MISMATCH_DIAGNOSIS.md` — read this for complete analysis + implementation plans
+
+**Quick summary**:
+- Training uses 14 features, walk-forward eval builds 7 features → StandardScaler dimension mismatch
+- Result: Models produce HOLD-only signals in eval → 0 trades → all gates fail
+- Status: Investigation complete, root cause 95% confident, ready for immediate implementation on your decision
+
+**Your choice — reply with just "A" or "B"**:
+
+1. **Option A** (Fast): Reduce model training to 7 core features (1–2 hours)
+   - Pros: Quickest implementation
+   - Cons: May lose signal quality
+
+2. **Option B** (Recommended): Enhance walk-forward eval to build all 14 features (2–4 hours)
+   - Pros: Maintains signal quality, follows ML best practices, future-proof
+   - Cons: More complex refactoring
+
+**Timeline**: Decide by June 15 EOD → Implementation June 16-18 (3-day buffer before June 18 deadline)
+
+---
 
 **resistance-research Phase 2 Wave 1-2 emails** (recovery window open, recovery possible through June 30):
 - All templates production-ready in `domain-51-send-templates.md`
