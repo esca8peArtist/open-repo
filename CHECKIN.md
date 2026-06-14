@@ -1,4 +1,23 @@
-# Check-in Summary — Session 3594 (June 15 ~23:59 UTC EOD verification)
+# Check-in Summary — Session 3595 (June 14 23:24 UTC standing-by verification)
+
+## Session 3595 — Orchestrator Standing-By Verification (15th Consecutive) — 37 hours to market open
+
+**Completed**: Full orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, Exploration Queue all verified at 23:24 UTC). Block resolution: all 3 blocks remain **UNRESOLVED** — user action required before temporary unpauses auto-repause at June 16 00:00 UTC (~37 hours). Autonomous work assessment: **Zero confirmed** — all projects blocked on user decisions/actions or awaiting June 16 13:30 UTC market-open trigger.
+
+### Session 3595 Findings
+
+- **All 3 active blocks unchanged** (all user-action blocks, no orchestrator auto-resolution available):
+  - **cybersecurity-hardening**: VeraCrypt restart (manual Windows action required)
+  - **mfg-farm**: Test print execution (user action required; Etsy product launch blocked pending results)
+  - **systems-resilience**: Platform decision (Nextcloud+Matrix vs Discourse; **RECOMMENDED: Nextcloud+Matrix** per Exploration Queue analysis finding Pi5 IPv6 bug in Discourse). Credentials + choice needed within 37 hours.
+- **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC).
+- **Temporary unpauses**: Will auto-repause June 16 00:00 UTC (~37 hours) unless user resolves one or more blocks.
+- **Autonomous work**: **Zero**. All projects blocked on user actions or market-open trigger (June 16 13:30 UTC market open is ~38.5 hours away).
+- **Standing-by verification**: 15 consecutive verification sessions (3581-3595) spanning ~4 hours confirm standing-by state is sustainable and correct.
+- **Exploration Queue**: All items complete or trigger-gated. No unmet immediate-action items.
+- **Usage**: Nominal (~200 tokens for orientation + maintenance). Current budget: 3.9% Sonnet usage.
+
+---
 
 ## Session 3594 — Orchestrator Standing-By Verification (14th Consecutive) — Final EOD Check
 
