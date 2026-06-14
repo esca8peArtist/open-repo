@@ -1,29 +1,36 @@
-# Check-in Summary — Session 3593 (June 15 continuation UTC)
+# Check-in Summary — Session 3594 (June 15 ~23:59 UTC EOD verification)
 
-## Session 3593 — Orchestrator Standing-By Verification (13th Consecutive)
+## Session 3594 — Orchestrator Standing-By Verification (14th Consecutive) — Final EOD Check
 
-**Completed**: Full orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md verified current). Block resolution: all 3 blocks remain active and unresolved. Autonomous work assessment: **Zero confirmed** — all projects blocked on user decisions/actions or awaiting market-open trigger.
+**Completed**: Full orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md verified current at June 15 EOD). Block resolution: all 3 blocks remain **UNRESOLVED** — user action required before temporary unpauses auto-repause at June 16 00:00 UTC. Autonomous work assessment: **Zero confirmed** — all projects blocked on user decisions/actions.
 
-### Findings (Session 3593)
+### Findings (Session 3594 — June 15 EOD Final Check)
 
-- **All 3 active blocks unchanged**:
-  - cybersecurity-hardening: VeraCrypt restart (manual — cannot auto-verify)
-  - mfg-farm: Test print execution (user action required)
-  - systems-resilience: Platform decision (Nextcloud+Matrix recommended vs Discourse, due June 15 EOD)
+- **All 3 active blocks unchanged and overdue**:
+  - **cybersecurity-hardening**: VeraCrypt restart (manual Windows restart required; June 15 EOD deadline passed, no resolution reported)
+  - **mfg-farm**: Test print execution (user action; test print results directory still absent as of June 14)
+  - **systems-resilience**: Platform decision (Nextcloud+Matrix vs Discourse; deadline June 15 EOD, decision pending). **NOTE**: Exploration Queue Item (Session 3563) discovered Discourse has Pi5 IPv6 loopback bug; Nextcloud+Matrix now recommended (8/10 vs 5/10). User must provide final decision + credentials for chosen platform.
 - **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC).
-- **Autonomous work**: **Zero**. All projects blocked on user actions or market-open trigger (June 16 13:30 UTC).
-- **Temporary unpauses**: Expire June 16 00:00 UTC (~12 hours from session start).
-- **Standing-by verification**: 13 consecutive verification sessions (3581-3593) spanning ~3.5 hours confirm standing-by state is correct and sustainable.
-- **Exploration Queue**: All items complete or trigger-gated to June 15-18 events (platform decision, market open, Day 7 checkpoint, gate validation).
+- **Autonomous work**: **Zero**. All projects blocked on user actions or June 16 13:30 UTC market-open trigger.
+- **Temporary unpauses**: Will auto-repause June 16 00:00 UTC (~0.0-1.0 hours from EOD) **unless user resolves one of the three blocks before midnight UTC**.
+- **Standing-by verification**: 14 consecutive verification sessions (3581-3594) spanning ~4 hours confirm standing-by state correct.
+- **Exploration Queue**: All items complete or trigger-gated. June 15 EOD decision items await user input before queue items can activate.
 
-**Status**: ✅ **System correctly in standing-by mode. All autonomous prep complete. Standing-by for June 16 market open. Verified no autonomous work available.**
+**Status**: ✅ **System correctly in standing-by mode. All autonomous prep complete. June 15 EOD user decisions are CRITICAL for June 16 work resumption** — Platform decision, VeraCrypt restart, and/or test print results needed within next hour to prevent auto-repause.
+
+### Critical Notes for User
+
+- **Temporary unpause window closes in ~1 hour** (June 16 00:00 UTC). User actions on any of the 3 blocked items will extend the unpause window and allow orchestrator to resume work June 16.
+- **Platform decision (systems-resilience)** is now STRONGLY recommended to be Nextcloud+Matrix (NOT Discourse) due to Pi5 IPv6 bug discovered in Exploration Queue research. Nextcloud specs + deployment runbook already staged and ready.
+- **June 16 13:30 UTC**: Market open — stockbot AAPL + MSFT live signal validation will proceed automatically.
+- **June 18 EOD**: Hard deadline — both models must validate gates, or Phase 4 activation deferred.
 
 ### Next Checkpoints
 
-- **June 15 EOD**: Platform decision (Nextcloud+Matrix vs Discourse), VeraCrypt restart, test print results needed
-- **June 16 00:00 UTC**: Temporary unpause expirations  
-- **June 16 13:30 UTC**: Market open validation (stockbot AAPL + MSFT live trading)
-- **June 18 EOD**: Hard deadline (both models must validate gates for Phase 4 activation)
+- **June 16 00:00 UTC**: Auto-repause unless user resolves block(s)
+- **June 16 13:30 UTC**: Market open validation (if stockbot unpaused) — AAPL + MSFT live trading signal check
+- **June 18 EOD**: Model validation deadline (if stockbot unpaused)
+- **June 17-18**: Post-Wave-2 Phase 3 research onboarding can begin (if resistance-research Wave 1-2 executed)
 
 ---
 
