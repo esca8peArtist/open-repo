@@ -476,15 +476,26 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 **COMMIT-BEFORE-DEPLOY RULE**: Always `git commit` all changes in `projects/stockbot/src/`, `scripts/`, `config/`, `Dockerfile.jetson`, and `docker-compose.jetson.yml` before setting `DEPLOY_READY`. The deploy script hard-blocks on uncommitted changes to any of these files. Reason: uncommitted edits can be silently overwritten by future orchestrator sessions, then the next deploy nukes the Jetson fix. Commit = permanent; filesystem edit = temporary.
 
-**Current focus**: ✅ **SIGNAL RESTORATION VERIFIED (June 14 02:15 UTC) — P1-P2 EXECUTION ACTIVE** — User manually lifted pause directive June 13 15:57 UTC (57h early). FIRST step: Signal verification PASSED (AMZN lgbm_ho generating buy_prob=0.33+ post-June 11 z-score clipping). SECOND/THIRD steps in progress:
+**Current focus**: ✅ **P1 COMPLETE (Session 3475 agent) — P2 IMPLEMENTATION BEGINS** — User unpause June 13 15:57 UTC. Signal restoration verified June 14 02:15 UTC (AMZN buy_prob=0.33+). 
 
-**[P1] Signal Health Monitor (HIGH PRIORITY)** — Prevent 10-day silent flatline recurrence. Implement continuous signal quality tracking with automated alerts for: (a) signal dropout detection (>2h zero non-HOLD signals), (b) z-score distribution monitoring (detect input extremes recurring), (c) per-session buy_prob trending, (d) regime-aware threshold adjustment. Target: <4h anomaly detection latency. Files: `src/analytics/signal_health.py` (detector + alert system), `tests/analytics/test_signal_health.py`, update `trading_session.py` integration. Timeline: P1 completion before June 18 (prevents regression during AAPL/MSFT retrains).
+**[P1] ✅ COMPLETE (June 14 00:51 UTC)** — Signal Health Monitor deployed & tested (90 unit tests passing):
+- `SignalHealthMonitor` class (575 lines) detects: SIGNAL_DROPOUT (>2h zero BUY/SELL), ZSCORE_ANOMALY (input preprocessing failure), BUY_PROB_COLLAPSE (model confidence failure)
+- Regime-aware alert thresholds (bull=0.30, sideways=0.35, bear=0.40)
+- Wired into `trading_session.py` post-signal-generation hook (read-only observer, zero modification to signal logic)
+- Integration guide (`signal_health_integration_guide.md`) documented
+- All 90 new tests passing + zero regressions to existing 682 analytics tests
+- Would have detected June 1-12 flatline within 2 hours of onset vs. 10 days silent running
+- Commit: f3eb819 (`feat(analytics): implement P1 signal health monitor`)
 
-**[P2] Quick-Eval Flag (URGENT)** — Fast screening for model candidates (WB pipeline dependency). Implement `PipelineConfig(quick=True)` mode: (a) 1 DSR trial (vs 3), (b) 3-fold WF instead of 10-fold, (c) 1-year lookback instead of 4-year, (d) skip regime breakdown. Target: <15min per candidate vs 45min. Files: `src/model_training_pipeline.py` add quick flag, `scripts/train_and_evaluate_model.py --quick`, tests. Hard deadline: June 18 EOD (AAPL lgbm_ho + MSFT ridge_wf retrains use quick eval for initial screening).
+**[P2] Quick-Eval Flag (IN PROGRESS)** — Fast screening for model candidates. Target: <15min per candidate (vs 45min). Hard deadline: June 18 EOD (AAPL lgbm_ho + MSFT ridge_wf retrains). Implement `PipelineConfig(quick=True)` mode: (a) 1 DSR trial, (b) 3-fold WF, (c) 1-year lookback, (d) skip regime breakdown. Files: `src/model_training_pipeline.py`, `scripts/train_and_evaluate_model.py --quick`, tests.
 
-**[P3/P4] Model Comparison + Shadow Session** — Queue for post-P1-P2 when time permits (ML-1/2/3 + WB-1/2/3 have higher June deadline urgency).
+**[P3/P4] Model Comparison + Shadow Session** — Queued post-P2 (lower priority than June 18 deadline work).
 
-**Previous**: INV-1 deployment complete 2026-06-11 20:15 UTC. Z-score clipping fix deployed and verified working June 12 13:37+ (buy_prob now non-zero on signal convergence).
+**[ML-1/2/3] Monte Carlo gate + News sentiment + Drawdown recovery** — Queued post-June 18 (in INBOX, separate priority).
+
+**[WB-1/2/3] Weekend batch pipeline** — Queued post-June 18 (in INBOX, WB-2 depends on P2 completion).
+
+**Previous**: INV-1 deployment 2026-06-11 20:15 UTC. Z-score clipping + P1 monitoring now prevent regression.
 
 **Sprint 2 backlog** (ordered by priority per `docs/CODEBASE_REVIEW_COMPREHENSIVE.md`):
 - ✅ **C-1** (CRITICAL): `_aggregate_folds` pooled t-stat dead code — FIXED Session 2982. G3 gate now works on low-trade-count models. Commit: 00310f9

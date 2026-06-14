@@ -20,11 +20,29 @@
 - P2: Quick-Eval Flag (fast model screening, <15min per candidate, June 18 deadline)
 - P3/P4 queued after P1-P2 completion
 
-**SECOND/THIRD steps (P1-P2 Execution + AAPL/MSFT Retrains)**:
-- P1 implementation pending (signal health detector, automated alerts, regime-aware thresholds)
-- P2 implementation pending (quick evaluation mode, 3-fold WF vs 10-fold, DSR trials 1 vs 3)
-- AAPL lgbm_ho + MSFT ridge_wf retrains: June 18 EOD deadline (will use P2 quick-eval for initial screening)
-- ML-1/2/3 + WB-1/2/3 items from June 13 INBOX: queued after P1-P2 urgent work
+**SECOND step (P1-P2 Parallel Execution)**:
+
+**P1 — ✅ COMPLETE (June 14 01:02 UTC)**: Signal Health Monitor fully implemented & tested
+- 575-line `SignalHealthMonitor` class with 3 detection modes: SIGNAL_DROPOUT, ZSCORE_ANOMALY, BUY_PROB_COLLAPSE
+- Regime-aware thresholds: bull=0.30, sideways=0.35, bear=0.40
+- 90 unit tests created (all passing), zero regressions to existing 682 analytics tests
+- Integrated into `trading_session.py` as read-only observer (post-signal-generation hook)
+- Would have detected June 1-12 flatline within 2 hours vs. 10 days undetected
+- Commit: f3eb819, worklog: e2d9a8b
+
+**P2 — IN PROGRESS**: Quick-Eval Flag for fast model screening
+- Target: <15min per candidate (vs 45min full eval)
+- Deadline: June 18 EOD (needed for AAPL/MSFT retrain screening)
+- Implementation: `PipelineConfig(quick=True)` mode with 1 DSR trial, 3-fold WF, 1-year lookback
+
+**THIRD step (AAPL/MSFT Retrains)**: 
+- Timeline: June 18 EOD hard deadline
+- Will use P2 quick-eval for initial screening once P2 complete
+- AAPL lgbm_ho + MSFT ridge_wf walk-forward validation required before expansion decision
+
+**Future items from June 13 INBOX**:
+- ML-1/2/3 (Monte Carlo gate, news sentiment, drawdown recovery): queued post-June 18
+- WB-1/2/3 (weekend batch pipeline): queued post-June 18, depends on P2 completion
 
 **All 3 Active Blocks Remain Unresolved**:
 - cybersecurity-hardening: VeraCrypt pre-boot restart (manual — cannot auto-verify)
