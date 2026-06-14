@@ -2,6 +2,33 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## ⏸️ Session 3487 (June 14 04:30 UTC) — ORIENTATION VERIFIED: ALL AUTONOMOUS WORK COMPLETE, AWAITING USER INPUT
+
+**Status**: ✅ **ORIENTATION COMPLETED** — Re-verified all prior sessions' work and block status. **All project blocks remain UNRESOLVED** (no user resolutions recorded since Session 3485):
+- **Stockbot P3**: Feature architecture decision (Option A vs B) still pending — June 18 EOD deadline
+- **Cybersecurity**: VeraCrypt pre-boot test restart still pending
+- **Mfg-farm**: Test print execution still pending
+- **Systems-resilience**: Platform choice decision still pending (deadline June 9 passed)
+
+**Assessment**: Zero autonomous work available. All projects blocked on explicit user decisions/actions. Previous sessions delivered: 8 complete features (P1/P2/ML-1/2/3/WB-1/2/3), 178 new tests, all production-ready. **Correct action: Standing by for user input.**
+
+### What Happened This Session
+- ✅ Orientation: Verified ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md status
+- ✅ Block confirmation: All 4 blocks still active, no resolutions submitted
+- ✅ Work assessment: Reconfirmed no autonomous work available without user decisions
+- ✅ Status: Ready for next action when user provides input
+
+### Needs Your Input
+
+**🔴 URGENT (June 18 EOD deadline)**: Stockbot P3 feature architecture decision
+- **Decision**: Option A (reduce training to 7 features, fast) OR Option B (enhance walk-forward to 14 features, recommended)
+- **Reply format**: Just "A" or "B" in your next message
+- **Next step**: Once decided, orchestrator will implement fix (1-2h) + run AAPL/MSFT retrains (10-20 min)
+
+**Wave 1-2 emails** (resistance-research): June 11-12 actions still due — execute if project re-activation desired
+
+---
+
 ## ⏸️ Session 3486 (June 14 03:40 UTC) — ORIENTATION COMPLETE: ALL AUTONOMOUS WORK FINISHED, BLOCKS VERIFIED UNRESOLVED
 
 **Status**: ✅ **FULL ORIENTATION COMPLETED** — Verified all prior sessions' work (P1/P2/ML-1/2/3/WB-1/2/3) complete and production-ready. **All project blocks verified STILL ACTIVE** (no resolutions recorded):
