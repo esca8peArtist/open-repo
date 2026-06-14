@@ -1,3 +1,26 @@
+# Check-in Summary — Session 3597 (June 15 standing-by verification — Continuous)
+
+## Session 3597 — Orchestrator Standing-By Verification (17th Consecutive) — Platform Deadline Status
+
+**Completed**: Full orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, Exploration Queue verified at June 15 EOD). Block resolution: all 3 blocks remain **UNRESOLVED** — platform decision deadline June 15 EOD is now passed. Autonomous work assessment: **Zero confirmed** — all projects blocked on user decisions/actions or awaiting June 16 13:30 UTC market-open trigger.
+
+### Session 3597 Findings
+
+- **All 3 active blocks UNCHANGED**:
+  - **cybersecurity-hardening**: VeraCrypt restart (manual Windows action — no auto-verify possible)
+  - **mfg-farm**: Test print execution (user action required)
+  - **systems-resilience**: Platform decision (Nextcloud+Matrix recommended 8/10 vs Discourse 5/10; **deadline June 15 EOD passed, decision still pending**). User must provide: (1) Final choice, (2) Credentials (IP/domain + SMTP for Nextcloud, or IPv6 workaround acknowledgment for Discourse).
+- **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC).
+- **Temporary unpauses**: Will auto-repause at June 16 00:00 UTC (~9-25 hours from now) unless user resolves one or more blocks immediately.
+- **Autonomous work**: **Zero**. All projects blocked on user actions or June 16 13:30 UTC market-open trigger.
+- **Standing-by continuation**: 17 consecutive verification sessions (3581-3597) spanning ~24+ hours confirm standing-by state is correct and sustainable.
+- **Exploration Queue**: All items complete or trigger-gated. No active executable items pending trigger conditions (June 16 or user decisions).
+- **Usage**: Nominal (~200 tokens for orientation + maintenance). Current budget: 3.9% Sonnet usage.
+
+**Status**: ✅ **System correctly in standing-by mode. All autonomous preparation complete. Standing-by state is sustainable. Awaiting: (1) Platform decision (EOD deadline passed, still needed), (2) June 16 00:00 UTC auto-repause unless block(s) resolved, (3) June 16 13:30 UTC automatic market-open validation (stockbot AAPL + MSFT).**
+
+---
+
 # Check-in Summary — Session 3596 (June 15 standing-by verification — EOD platform deadline)
 
 ## Session 3596 — Orchestrator Standing-By Verification (16th Consecutive) — Platform Decision Deadline EOD
