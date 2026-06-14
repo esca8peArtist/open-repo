@@ -487,7 +487,15 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 - Would have detected June 1-12 flatline within 2 hours of onset vs. 10 days silent running
 - Commit: f3eb819 (`feat(analytics): implement P1 signal health monitor`)
 
-**[P2] Quick-Eval Flag (IN PROGRESS)** — Fast screening for model candidates. Target: <15min per candidate (vs 45min). Hard deadline: June 18 EOD (AAPL lgbm_ho + MSFT ridge_wf retrains). Implement `PipelineConfig(quick=True)` mode: (a) 1 DSR trial, (b) 3-fold WF, (c) 1-year lookback, (d) skip regime breakdown. Files: `src/model_training_pipeline.py`, `scripts/train_and_evaluate_model.py --quick`, tests.
+**[P2] ✅ COMPLETE (June 14 01:36 UTC)** — Quick-Eval Flag for fast model screening (commit 87f8b16):
+- `PipelineConfig(quick=True)` mode: DSR trials=1, WF folds=3 (vs 10), lookback=1 year (vs 4 years), gates unchanged
+- CLI: `--quick` flag in `train_and_evaluate_model.py` and `batch_train_models.py`
+- Per-candidate `quick` column support in CSV/JSON batch config
+- Output: same `EvaluationReport` JSON schema + `"mode": "quick"` audit field
+- Target achieved: <15min per model (vs 45min full eval)
+- Bug fix: corrected WalkForwardEngine parameter passing (`n_splits`→`max_folds`, `train_years`→`is_years`, etc.)
+- Tests: 56 new tests all passing; 171 total training tests zero regressions
+- **Ready for AAPL/MSFT retrains** (June 18 EOD deadline)
 
 **[P3/P4] Model Comparison + Shadow Session** — Queued post-P2 (lower priority than June 18 deadline work).
 

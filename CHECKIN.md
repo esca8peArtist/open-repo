@@ -30,15 +30,19 @@
 - Would have detected June 1-12 flatline within 2 hours vs. 10 days undetected
 - Commit: f3eb819, worklog: e2d9a8b
 
-**P2 — IN PROGRESS**: Quick-Eval Flag for fast model screening
-- Target: <15min per candidate (vs 45min full eval)
-- Deadline: June 18 EOD (needed for AAPL/MSFT retrain screening)
-- Implementation: `PipelineConfig(quick=True)` mode with 1 DSR trial, 3-fold WF, 1-year lookback
+**P2 — ✅ COMPLETE (June 14 01:36 UTC)**: Quick-Eval Flag for fast model screening
+- `PipelineConfig(quick=True)`: DSR=1 trial, WF=3 folds, lookback=1 year, gates unchanged
+- CLI flags: `--quick` in `train_and_evaluate_model.py` and `batch_train_models.py`
+- Pre-existing bug fixed: parameter passing to WalkForwardEngine (n_splits→max_folds, train_years→is_years)
+- Tests: 56 new tests + 171 total training tests, all passing, zero regressions
+- Commit: 87f8b16
+- **Ready for AAPL/MSFT retrains** (can now use quick-eval for initial screening)
 
-**THIRD step (AAPL/MSFT Retrains)**: 
+**THIRD step (AAPL/MSFT Retrains) — READY TO EXECUTE**:
 - Timeline: June 18 EOD hard deadline
-- Will use P2 quick-eval for initial screening once P2 complete
-- AAPL lgbm_ho + MSFT ridge_wf walk-forward validation required before expansion decision
+- AAPL lgbm_ho retrain command: `uv run python scripts/train_and_evaluate_model.py --ticker AAPL --strategy lgbm_ho --train-start 2022-01-01 --train-end 2026-06-14 --quick` (initial screening) → full eval if pass
+- MSFT ridge_wf retrain command: similar, with `--strategy ridge_wf`
+- Both will use P2 quick-eval for initial screening, then full eval if gates approaching pass threshold
 
 **Future items from June 13 INBOX**:
 - ML-1/2/3 (Monte Carlo gate, news sentiment, drawdown recovery): queued post-June 18
