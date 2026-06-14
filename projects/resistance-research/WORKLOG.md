@@ -2,6 +2,21 @@
 
 ---
 
+## June 14, 2026 — Research Agent — Exploration Queue Item 84: Phase 1 Measurement Dashboard Infrastructure
+
+**Task**: Build Phase 1 Impact Evaluation Measurement Dashboard infrastructure for Domain 51 Wave 1. Three deliverables updated to reflect June 14 execution state (emails not yet sent; T+7 checkpoint June 17-18 or June 21-22).
+
+**Files updated**:
+- `PHASE_1_MEASUREMENT_DASHBOARD_TEMPLATE.md` — v2.0. Full 7-sheet Google Sheets blueprint with updated send dates (June 14-15 window), flexible checkpoint references (T+7 = 7 days after actual send), Bitly per-organization campaign URL table, pre-staged SEND rows, all formulas. Replaces the general 45-contact template with a Domain 51-specific 5-contact production version.
+- `DAILY_SIGNAL_LOG_ENTRY_GUIDE.md` — v2.0. Updated waiting periods from June 16/20/24 originals to June 21/23/25 (adjusted for June 14-15 send). Added three realistic signal distribution scenarios (STRONG, MODERATE, WEAK) with completed log rows. Added STRONG evidence threshold clarification. Updated to reflect that MODERATE signals don't count toward T+7 gate.
+- `T7_CHECKPOINT_DECISION_AUTOMATION.md` — v2.0. Updated checkpoint date to June 21-22 as standard T+7 (or June 17-18 as earliest). Added GO/CAUTION/NO-GO summary table. Added aggregated signal formulas section. Clarified per-domain signal implications for Domains 48, 49, 50, 57, 58. All activation timelines adjusted to relative (days-after-send) format to survive the send date slip.
+
+**Key finding**: The existing infrastructure (created June 5) was production-ready but hardcoded to a June 9 send date. The June 14 slip required adjusting no-response waiting periods, T+7 checkpoint windows, and all "send+N" references. The three documents now work correctly for any send date in the June 14-20 window.
+
+**Infrastructure status**: Production-ready. User can send emails, begin logging, and run T+7 assessment using these three documents without additional orchestrator work.
+
+---
+
 ## June 11, 2026 — Resistance Research Agent — Session 3220: Wave 1 Execution Status Check
 
 **Task**: Phase 2 Wave 1 execution status check and path-forward assessment (today is June 11, 2026).

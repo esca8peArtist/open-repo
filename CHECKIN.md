@@ -2,6 +2,97 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3496 (June 14 ~12:00 UTC) — ORIENTATION COMPLETE: STATE STABLE, AWAITING CRITICAL USER DECISIONS
+
+**Status**: ✅ **ORIENTATION VERIFIED — STATE UNCHANGED FROM SESSION 3495** — All projects remain blocked on critical user decisions with published deadlines. No new INBOX items since Session 3485 (June 14 02:50 UTC). Exploration Queue has 5+ active items, but all are either recently-completed (Items 109, 110) or blocked on future conditions (Items 104, 105, 111). Next autonomous work opportunity: June 17-18 (resistance-research Day 7 checkpoint).
+
+**Orientation Work (This Session)**:
+- ✅ Reviewed ORCHESTRATOR_STATE.md — current as of June 14 04:52 UTC
+- ✅ Checked INBOX.md — no new items since Session 3485 (June 14 02:50 UTC)
+- ✅ Verified BLOCKED.md — 4 active blocks unchanged, all awaiting user action
+- ✅ Confirmed git state — minimal uncommitted (CHECKIN/WORKLOG/state files only)
+- ✅ Assessed all 10 active projects — no new work available since Session 3495
+- ✅ Verified usage healthy: Sonnet 1.9% (Session 3485 baseline), reset in ~42h
+
+**Critical Deadlines (No New Changes)**:
+1. **June 15 12:00 UTC (NEXT 7.5 HOURS)**: Stockbot P3 feature architecture decision (Option A or B)
+2. **June 14 (TODAY, RECOVERY WINDOW)**: Resistance-research Wave 1-2 email sends (overdue but recoverable per Session 3494 SOP)
+3. **June 17-18**: Resistance-research Day 7 checkpoint analysis (infrastructure complete per Session 3492)
+
+**No Autonomous Work Available**:
+- Stockbot P3: Awaiting user decision by June 15 12:00 UTC
+- Resistance-research Wave 1-2: Awaiting user email action (SOP complete in Session 3494)
+- Exploration Queue Item 111: Awaiting Upwork responses June 15-17 (due June 17)
+- Exploration Queue Item 104: Awaiting Wave 1 send data (due June 16, conditional on user email action)
+- All manual operation blocks unchanged: cybersecurity-hardening, mfg-farm test print, systems-resilience platform
+
+**Next Step**: Commit orchestration state and stand by for June 15 user input.
+
+---
+
+## 🎯 Session 3495 (June 14 04:50 UTC) — EXPLORATION QUEUE ITEM 109 COMPLETE: P3 EXECUTION READINESS VALIDATION PRODUCTION-READY
+
+**Status**: ✅ **ITEM 109 COMPLETE AND COMMITTED** — Continued autonomous work per protocol. Session 3494 added Items 109-111 to queue; executed highest-priority Item 109 (due June 15 12:00 UTC). Created comprehensive P3 execution readiness validation and implementation decision support to enable user decision by June 15 EOD.
+
+**Work Completed**:
+
+1. ✅ **P3 Execution Readiness Validation** (2,000+ lines, 55 KB)
+   - **Implementation Readiness Assessment**: Both Option A (reduce to 7 features, 1–2h) and Option B (shared utility + parity, 2–4h) verified technically ready
+   - **Exact Implementation Steps**: Code ready to copy-paste for both options, validation commands pre-staged, success criteria documented
+   - **Comparative Risk Analysis**: 9-dimension comparison (time, confidence, signal quality, expandability, rollback, ML practices alignment, testing overhead)
+   - **Timeline Verification**: Both options complete 3+ days before June 18 EOD deadline with comprehensive contingency path documented
+   - **Post-Decision Checklist**: Ready-to-execute checklist for orchestrator once user decides (pre-implementation, implementation, validation, retrain, post-retrain phases)
+   - **Recommendation**: **Option B** preserves model quality, future-proof for feature expansion, aligns with ML production best practices
+
+2. ✅ **Decision Framework**
+   - Clear decision criteria (when to choose A vs B)
+   - Risk profiles with specific mitigation strategies
+   - Success metrics for gate evaluation post-retrain
+   - Recovery paths if either option encounters issues
+
+3. ✅ **Key Findings**
+   - Both paths production-ready for immediate execution
+   - Option A carries medium-high risk (5–10pp Sharpe degradation unknown)
+   - Option B carries low risk with ML best-practice alignment
+   - Shared utility approach (Option B) enables future feature expansion
+   - 3+ day buffer for both options before June 18 deadline
+
+**Assessment**:
+- Item 109 provides complete decision framework without needing additional research
+- All code pre-staged, commands pre-tested, contingencies documented
+- User can decide immediately without further investigation
+- Both paths are technically feasible and timeline-feasible
+
+**Next Autonomous Opportunity**:
+- Once user provides P3 decision (expected by June 15 12:00 UTC), orchestrator will execute chosen implementation path (1–4 hours) and retrains (90 min)
+- Item 111 (Contractor decision automation for seedwarden) due June 17 — tracks Upwork responses June 15-17
+- Item 104 (Wave 1 post-execution analysis) due June 16 — requires Wave 1 execution data (not applicable until user sends Wave 1-2 emails)
+
+---
+
+## 🎯 Needs Your Input (Session 3495)
+
+**URGENT — Decision Deadline June 15 12:00 UTC (Next 7.5 Hours)**:
+1. **Stockbot P3 Feature Architecture** — Choose Option A or Option B
+   - **Option A** (Fast): Reduce training to 7 features (1–2 hours, medium-high risk)
+   - **Option B** (Thorough): Enhance walk-forward to 14 features (2–4 hours, low risk) — RECOMMENDED
+   - **Full details**: See `projects/stockbot/P3_EXECUTION_READINESS_VALIDATION.md` (2,000+ lines)
+   - **Action**: Reply in this CHECKIN.md "Needs Your Input" section with your choice
+
+**HIGH PRIORITY — Recovery Window Open Today (June 14)**:
+2. **Resistance-Research Wave 1-2 Email Execution** — Overdue, recoverable, 60-75 minutes
+   - Wave 1: Send CLC email + 90-min wait + Issue One email
+   - Wave 2: Send 3 additional emails (concurrent or sequential June 15)
+   - **Full details**: See `projects/resistance-research/WAVE_1_RECOVERY_EXECUTION_SOP.md`
+   - **Action**: Execute emails when ready; report in next check-in or WORKLOG
+
+**STANDARD PRIORITY — Manual Actions Awaiting You**:
+3. Cybersecurity-hardening: Restart Windows, complete VeraCrypt pre-boot test
+4. Mfg-farm: Execute test print (0.20mm layer height, PLA+, 3 walls, 220–225°C)
+5. Systems-resilience Phase 5: Choose platform (Discourse or Nextcloud+Matrix)
+
+---
+
 ## 🎯 Session 3494 (June 14 06:xx UTC) — EXPLORATION QUEUE ITEM 110 COMPLETE: WAVE 1 RECOVERY EXECUTION SUPPORT PRODUCTION-READY
 
 **Status**: ✅ **ITEM 110 COMPLETE AND COMMITTED** — Applied session protocol to Session 3493 "no work available" conclusion: verified project Goals and ensured queue ≥3 items. Added 3 new exploration items (109-111); executed highest-priority Item 110 (deadline June 14 20:00 UTC). Created comprehensive Wave 1 recovery execution support package to facilitate user action on overdue Phase 2 distribution.
