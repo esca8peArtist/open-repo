@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T01:56:01Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T02:16:57Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 3.6% | Reset in 46h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 4.2% | Reset in 46h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **P1/P2/ML-1/2/3/WB-1/WB-2/WB-3 COMPLETE (Session 3483) — P3 BLOCKED on feature architecture decision** — User unpause June 13 15:57 UTC. Signal restoration verified June 14 02:15 UTC (AMZN buy_prob=0.33+). **ML pipeline enhancements delivered** (Monte Carlo gate G7, news sentiment feature, drawdown recovery metrics, 178 tests passing). **Weekend batch pipeline COMPLETE**: WB-1 candidates.yaml template, WB-2 orchestrator (Phase 1-4, 11 tests), WB-3 deployer with market hours blocking + 6-session limit (18 tests passing). **THIRD step (AAPL/MSFT retrains, June 18 deadline) BLOCKED** on feature architecture decision: training uses 14 features vs eval 7. User must choose Option A (reduce to 7) or Option B (enhance to 14). See BLOCKED.md details.
+**Focus**: ✅ **P1/P2/ML-1/2/3/WB-1/WB-2/WB-3 COMPLETE (Session 3483) — P3 BLOCKED on feature architecture decision** — User unpause June 13 15:57 UTC. Signal restoration verified June 14 02:15 UTC (AMZN buy_prob=0.33+). **ML pipeline enhancements delivered** (Monte Carlo gate G7, news sentiment feature, drawdown recovery metrics, 178 tests passing). **Weekend batch pipeline complete** (WB-1 candidates.yaml, WB-2 orchestrator Phase 1-4, WB-3 deployer). **WB-3** (promote_to_paper.py) production-ready:  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
