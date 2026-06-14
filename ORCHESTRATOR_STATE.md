@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T14:29:30Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T15:44:44Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.2% (199,967 tokens) | All-models 21.1% | Reset in 34h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.3% (203,964 tokens) | All-models 22.6% | Reset in 32h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,11 +19,11 @@
 ## Active Projects
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
-**Focus**: ✅ **[PHASE 2 WAVE 1-2 EXECUTION READY — ALL STEP-BY-STEP CHECKLISTS STAGED (SESSION 3514)]** — **PHASE 2 EXECUTION STATUS**: 
+**Focus**: ✅ **[PHASE 2 WAVE 1-2 EXECUTION READY — EMAIL PACKAGES + ORCHESTRATION SCRIPT COMPLETE (SESSION 3545)]** — **PHASE 2 EXECUTION STATUS**: 
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[DEPLOYMENT COMPLETE — SESSION 3541] AAPL + MSFT LGBM_HO ACTIVE ON JETSON, 4-SESSION LIVE** — Both models deployed to Jetson paper trading (commit 47d4fdd, Session 3541 14:20 UTC). Config: 4-session active (JPM ridge_wf + AMZN lgbm_ho + AAPL lgbm_ho + MSFT lgbm_ho). Health check: `sessions:4` ✅. Logs verify both AAPL (stacker 0676c84e) and MSFT (stacker 0db9af14) initialized. **Awaiting**: (1) June 15 market open (13:30 UTC) for signal generation validation, (2) P3 architecture decis … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[P3 RESOLVED + MODELS DEPLOYED — SESSION 3539-3541] AAPL + MSFT LGBM_HO JETSON DEPLOYMENT COMPLETE** — (1) **P3 Decision**: User chose Option B on June 14 13:43 UTC. (2) **Retrains Complete (Session 3539)**: AAPL lgbm_ho 6/7 gates ✅ (OOS Sharpe 2.444), MSFT lgbm_ho 6/7 gates ✅ (OOS Sharpe 1.573). Both models deployed to Jetson `/opt/stockbot/models/` June 14 15:15 UTC. (3) **Active Sessions**: 4-session config active (JPM ridge_wf + AMZN lgbm_ho + AAPL lgbm_ho + MSFT lgbm_ho). Cont … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -93,42 +93,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+   - Deployed AAPL_lgbm_ho_v1_457ef7c9.pkl (261K, Session 3539 14:47 UTC) ✅
+   - Deployed MSFT_lgbm_ho_v1_47c2ddcf.pkl (257K, Session 3539 14:49 UTC) ✅
+   - Verified Docker container stockbot running and healthy ✅
+   - Verified 4-session config active in active-sessions.json ✅
 
+2. **Status Synchronization**:
+   - Updated stockbot **Current focus** in PROJECTS.md to reflect:
+     - P3 decision completed (Option B, June 14 13:43 UTC)
+     - AAPL/MSFT retrains completed (Session 3539)
+     - Both models deployed and ready
+     - Next checkpoint: Market open June 16 13:30 UTC (Monday)
 
-**MSFT Strategy Investigation (14:49 UTC)**: Retrained MSFT with lgbm_ho strategy instead of ridge_wf. **RESULT**: 6/7 gates passed! OOS Sharpe=1.573 (vs ridge_wf's -0.086). **ROOT CAUSE IDENTIFIED**: ridge_wf strategy fundamentally unsuitable for MSFT walk-forward. **SOLUTION**: Use MSFT lgbm_ho (same as AAPL). Both models now ready for Jetson deployment.
+**Current State**:
+- **Models**: Both AAPL lgbm_ho and MSFT lgbm_ho deployed to Jetson
+- **Status**: Waiting for market open June 16 for signal validation
+- **Container**: Running, healthy, 4 active sessions
+- **Data**: Weekend — markets closed (Sunday Jun 14), WebSocket warnings expected
+- **Deadline**: June 18 EOD for paper trading validation completion
 
-**Updated Model Status**:
-- AAPL lgbm_ho: ✅ 6/7 gates (Sharpe 2.444, DD 5.4%)
-- MSFT lgbm_ho: ✅ 6/7 gates (Sharpe 1.573, DD 6.54%)
-- Both failing only G7 (Monte Carlo robustness) — acceptable for paper trading validation
+**Next Steps**:
+1. Market open June 16 13:30 UTC — monitor signal generation
+2. Verify both AAPL and MSFT models execute trades
+3. June 18 EOD — confirm paper trading metrics validate 6/7 gate criteria
+4. June 19+ — Phase 4 decision (live trading vs extended paper trading)
 
-**Next Steps**: Deploy both models to Jetson, update active-sessions.json to use MSFT lgbm_ho instead of ridge_wf, test paper trading execution by June 18 EOD.
+**Token Usage**: ~12K this session (verification + documentation).
 
+---
 
-## Session 3539 Final Summary (15:02 UTC)
-
-**P3 Resolution Complete**: User chose Option B on June 14 13:43 UTC. Both AAPL and MSFT models now ready for Jetson deployment:
-- **AAPL lgbm_ho**: 6/7 gates ✅ (OOS Sharpe 2.444, DD 5.4%, Win Rate 77.38%)
-- **MSFT lgbm_ho**: 6/7 gates ✅ (OOS Sharpe 1.573, DD 6.54%, Win Rate 71.71%)
-
-**Critical Finding**: ridge_wf strategy was fundamentally unsuitable for MSFT walk-forward. Solution: switched to lgbm_ho (same as AAPL). Now both pass identical gate criteria.
-
-**Model Files Ready for Deployment**:
-- AAPL: `reports/batch/AAPL_lgbm_ho_v1_457ef7c9.pkl` (260.9 KB)
-- MSFT: `reports/batch/MSFT_lgbm_ho_v1_47c2ddcf.pkl` (256.8 KB)
-
-**Jetson Configuration Status**: active-sessions.json already configured correctly for MSFT lgbm_ho (not ridge_wf). No config changes needed.
-
-**Deployment Next Steps**:
-1. Copy retrained models to Jetson `/opt/stockbot/models/` directory
-2. Update model registry entries if needed
-3. Restart Docker container to reload models
-4. Verify both sessions generate signals and execute trades
-
-**June 18 EOD Deadline**: Both models production-ready. Can execute deployment and paper trading validation by deadline.
-
-**Session Statistics**:
-- Session duration: ~2.5 hours (13:36 UTC start)
-- Commits: 3 (config fix, WORKLOG updates, MSFT fix discovery)
-- Models trained: 3 (AAPL lgbm_ho, MSFT ridge_wf, MSFT lgbm_ho)
-- Breakthrough discovery: ridge_wf unsuitable for MSFT; lgbm_ho is solution
+- [2026-06-14] [research-agent] **systems-resilience Phase 5.1 Platform Deployment Technical Specification audit + gap-fill**
+  - **Task**: Produce/verify three deliverables for June 14-15 platform decision (Nextcloud+Matrix vs Discourse on Pi5 ARM64).
+  - **Finding**: All three primary files already existed and were complete from prior sessions:
+    - `projects/systems-resilience/NEXTCLOUD_DEPLOYMENT_TECHNICAL_SPEC.md` (581 lines) — infrastructure requirements, full docker-compose.yml template, PostgreSQL + Redis configs, Synapse homeserver.yaml, Element config.json, Pi5 RAM analysis, backup/restore procedures, troubleshooting section.
+    - `projects/systems-resilience/DISCOURSE_DEPLOYMENT_TECHNICAL_SPEC.md` (552 lines) — infrastructure requirements, official launcher app.yml template, Bitnami ARM64 fallback docker-compose.yml, ARM64 bootstrap notes (15-25 min compile), SMTP config, backup/restore, troubleshooting.
+    - `projects/systems-resilience/PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md` (was 160 lines, now 219 lines) — side-by-side comparison table, RECOMMENDATION (Discourse), user decision form, next-steps by choice, risk summary.
+  - **Gap filled**: Added Rollback Procedures section to `PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md` covering Discourse and Nextcloud+Matrix rollback at pre-bootstrap, post-bootstrap, and post-go-live stages with time estimates.
+  - **Supporting runbooks** (existing, not created by this session): `DISCOURSE_INSTALLATION_RUNBOOK.md` (619 lines, 8-phase copy-paste ready), `NEXTCLOUD_INSTALLATION_RUNBOOK.md` (631 lines).
+  - **Recommendation confirmed**: Discourse for Pi5 due to 2-3GB RAM usage (vs 4.5-5.5GB Nextcloud+Matrix at 100 users), 2-3h deployment (vs 4-6h), OnlyOffice unavailable on ARM64 eliminating Nextcloud's main advantage, single container vs 6 services.
+  - **User action required**: Provide SMTP credentials + hostname to begin execution.
