@@ -1,3 +1,42 @@
+# Check-in Summary — Session 3596 (June 15 standing-by verification — EOD platform deadline)
+
+## Session 3596 — Orchestrator Standing-By Verification (16th Consecutive) — Platform Decision Deadline EOD
+
+**Completed**: Full orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, Exploration Queue verified at June 15). Block resolution: all 3 blocks remain **UNRESOLVED** — platform decision deadline June 15 EOD (now or passed). Autonomous work assessment: **Zero confirmed** — all projects blocked on user decisions/actions or awaiting June 16 13:30 UTC market-open trigger.
+
+### Session 3596 Findings
+
+- **All 3 active blocks UNCHANGED and DEADLINE CRITICAL**:
+  - **cybersecurity-hardening**: VeraCrypt restart (manual Windows action — no auto-verify possible)
+  - **mfg-farm**: Test print execution (user action required)
+  - **systems-resilience**: Platform decision (Nextcloud+Matrix recommended vs Discourse; **DEADLINE: June 15 EOD** — decision and credentials needed NOW)
+- **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC).
+- **Temporary unpauses**: Will auto-repause at June 16 00:00 UTC in ~1-25 hours unless user resolves one or more blocks immediately.
+- **Autonomous work**: **Zero**. All projects blocked on user actions or June 16 13:30 UTC market-open trigger.
+- **Standing-by verification**: 16 consecutive verification sessions (3581-3596) spanning ~22 hours confirm standing-by state is correct and sustainable.
+- **Exploration Queue**: All items complete or trigger-gated. June 15 EOD decisions await user input before queue items activate.
+- **Usage**: Nominal (~200 tokens per standing-by verification). Current budget: 3.9% Sonnet usage.
+
+### CRITICAL STATUS FOR JUNE 15 EOD
+
+**Platform Decision Required Now**: systems-resilience Phase 5.1 deployment is blocked pending platform choice (Nextcloud+Matrix vs Discourse). Recommendation: **Nextcloud+Matrix** (8/10 vs Discourse 5/10 due to Pi5 IPv6 bug). Technical specs + deployment runbook already staged in `projects/systems-resilience/`. User must provide:
+1. Final platform choice (Nextcloud+Matrix or Discourse)
+2. If Nextcloud: public IP/domain + SMTP credentials
+3. If Discourse: explicit acknowledgment of 3 IPv6 workarounds required
+
+**Auto-repause Timeline**: Without resolution to any of the 3 blocks by June 16 00:00 UTC, the system will automatically repause mfg-farm, seedwarden, and open-repo per their June 16 00:00 UTC temporary unpause expiration (working as designed).
+
+**June 16 Market Open**: Stockbot will proceed automatically at June 16 13:30 UTC unless paused. AAPL + MSFT lgbm_ho validation scheduled, all prep complete.
+
+### Next Checkpoints
+
+- **June 15 EOD (within hours)**: Platform decision (systems-resilience) — decision and credentials needed immediately
+- **June 16 00:00 UTC**: Auto-repause of temporary-unpause projects (mfg-farm, seedwarden, open-repo) unless user resolves block(s)
+- **June 16 13:30 UTC**: Market open validation (stockbot AAPL + MSFT live trading signal check — AUTOMATIC regardless of other project status)
+- **June 18 EOD**: Model validation deadline (both models must validate gates for Phase 4 activation)
+
+---
+
 # Check-in Summary — Session 3595 (June 14 23:24 UTC standing-by verification)
 
 ## Session 3595 — Orchestrator Standing-By Verification (15th Consecutive) — 37 hours to market open
