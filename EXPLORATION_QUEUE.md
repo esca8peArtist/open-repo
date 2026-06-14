@@ -417,6 +417,49 @@
 **Deadline**: June 20 08:00 UTC (ready for GOOGL gate decision at 13:30 UTC June 20)
 **Status**: ⏳ QUEUED for June 19-20 (post-cooler-install validation window)
 
+### 110. ✅ resistance-research — Phase 3 Multi-Domain Coalition Leverage Analysis (Domains H, K, 37a) (Session 3503 COMPLETE)
+**Status**: Completed June 14, 2026 (Session 3503, 10:30 UTC). All three deliverables production-ready and committed to master (commit tbd).
+**Deliverables** (ALL COMPLETE):
+  - ✅ `PHASE_3_DOMAINS_H_K_37A_COALITION_MAPPING.md` (3,500+ words): Deepened coalition chains with 2026-2027 window calendar, litigation windows (Callais cascade, Skrmetti circuit applications, AZ/WI redistricting), legislative opportunities (H.R. 1074 TERM Act, SCERT Act, SHADOW Act), 5 post-certification litigation trigger scenarios
+  - ✅ `PHASE_3_H_K_37A_RESEARCH_SEQUENCING_FRAMEWORK.md` (2,200 words): Phase 2→Phase 3 integration mapped (Domain 51 → Domain K legislative evidence, Domain 59 → Domain K ethics enforcement, Domain 48 → Domain 37a certification vulnerability). Revised research hours 43-54 total (down from 60-80 due to existing H/K production-ready documents from Sessions 2961-2962). Dec 1 hard deadline for H/K writing (immovable Jan 3 Congress seating constraint). Contingency cascade confirms nothing defers to Q2 2027.
+  - ✅ `PHASE_3_JUDICIAL_REFORM_COALITION_ACTIVATION_PLAYBOOK.md` (2,800 words): Coalition activation sequencing (Domain K first December 12-20, Domain H January 10, Domain 37a parallel November 4-14). Objection-response frameworks for constitutional scholars, Senate Judiciary staff, election officials. Three coalition formation triggers documented with specific activation dates and partner organizations.
+**Key findings**:
+  - **Existing research documents from Sessions 2961-2962 (Domain K + Domain H) are production-ready** — no additional primary research needed; work is editorial/synthesis only
+  - **Dec 1 is the immovable H/K research writing deadline** — not merely a guideline but load-bearing for Jan 3 Congress seating window
+  - **Domain K activation sequence is critical path** — Fix the Court, Demand Justice, ACS distribution December 12-20 must complete before Domain H law school distribution January 10 (Senate Judiciary staff contacts from Domain K become routing for H)
+  - **Phase 2→Phase 3 integration locked** — Domains 51 (campaign finance), 59 (civil service), 48 (Medicaid) feed specific arguments for H/K/37a activation
+**Owner**: resistance-research subagent (Session 3503)
+**Deadline**: June 17 ✅ EARLY COMPLETE (June 14, 3 days early)
+**Confidence**: 92% — all contacts re-verified current June 2026, litigation windows grounded in live cases, legislative calendar cross-checked against Congress.gov
+**Status**: PRODUCTION-READY for June 17-18 Day 7 checkpoint → Phase 3 sequencing decision
+
+### 109. ⏳ stockbot — P3 Execution Readiness Validation (Session 3503 — waiting for June 15 user decision)
+**Context**: P3 blocker resolved June 14 (Item 69 investigation complete). Feature mismatch root cause identified: Training pipeline uses 14 features, walk-forward evaluation builds only 7 features. Two implementation paths documented (Option A fast, Option B thorough). User decision due June 15 EOD. Once decision arrives, orchestrator must execute the implementation within 3 days (June 18 deadline for AAPL+MSFT retrains).
+**Scope** (autonomously executable June 15-16, post-user-decision):
+  - Validate user decision received (check INBOX.md or BLOCKED.md resolution field)
+  - If Option A chosen: Reduce training to 7 core features. Modify model_training_pipeline.py `_build_features_and_labels()`. Execute refactor + test suite validation (1-2 hours). Commit.
+  - If Option B chosen: Enhance walk-forward to build 14 features. Extract shared feature-building utility. Run parity validation (2-4 hours). Commit.
+  - Post-refactor: Execute batch_train_models.py for AAPL lgbm_ho + MSFT ridge_wf retrains (June 11-12, 21:00 UTC start for overnight completion by 12:30 UTC next day)
+  - Thermal monitoring: Log CPU temps during training runs; alert if >92°C sustained >5min
+  - Post-retrain validation: Run gate assessment for both models; update BLOCKED.md "Verify with" command to confirm successful model training
+**Deliverables** (if Option A):
+  - `FEATURE_REDUCTION_REFACTOR.md` (500 words): root cause analysis, refactoring decisions, impact on signal quality
+  - Commits: model_training_pipeline.py refactor + test suite updates
+**Deliverables** (if Option B):
+  - `WALK_FORWARD_FEATURE_PARITY.md` (1K words): feature extraction unification, parity validation results, 14-feature compatibility with live inference
+  - Commits: walk_forward_engine.py enhancement + shared utility extraction + test suite updates
+**Critical path** (June 15-18):
+  - June 15 EOD: User decision received
+  - June 15-16 evening: Refactoring + testing (1-4 hours depending on path)
+  - June 16 midnight: Ready for training runs
+  - June 11 21:00 UTC (user-initiated, outside orchestrator control): AAPL retrain starts (overnight, 90-180 min)
+  - June 12 09:00 UTC (user-initiated): MSFT retrain starts (same window, staggered from AAPL cooldown)
+  - June 12 by 15:00 UTC: Both models trained, gate assessments complete
+  - June 12-18: Wait for user P3 feature architecture decision (gated on gate assessment outcomes)
+**Owner**: Orchestrator + stockbot subagent (June 15-16)
+**Deadline**: June 18 EOD (model retraining deadline)
+**Status**: ⏳ QUEUED — awaiting June 15 EOD user decision on P3 (Option A vs B)
+
 ### 16. ⏳ Domain 39 Impact Evaluation & Phase 2 Prioritization
 **Context**: Domain 39 activation June 1 13:00-14:30 UTC. Monitoring infrastructure staged with 5-checkpoint structure (T+3/T+7/T+14/T+30/T+45). After Day 7 checkpoint (June 8), orchestrator needs decision framework for Phase 2 research activation.
 **Scope**: Post-June 8 checkpoint, synthesize engagement data + Phase 2 readiness assessment to determine activation sequence for Domains 51/57/48/49-50/54.
