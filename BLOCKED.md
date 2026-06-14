@@ -66,6 +66,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation
+**Date blocked**: 2026-06-14
+**Context**: AAPL lgbm_ho and MSFT ridge_wf retrains (P3 work, June 18 deadline) are blocked on a feature pipeline inconsistency discovered during walk-forward backtesting evaluation. (1) Root cause identified: Training phase uses 14 features, but walk-forward evaluation provides only 7 features to the model, causing scikit-learn's StandardScaler to fail with "expecting 14 features as input" error. (2) This affects both models — any scikit-learn model trained with the current training pipeline will fail evaluation due to this mismatch. (3) The FeatureExtractor used during training must match the FeatureExtractor used in WalkForwardEngine. Currently they are configured differently. (4) Session 3479 fixed two prior issues: (a) AlpacaProvider API method (get_daily_bars → get_bars), (b) model loading (extract model object from training payload dict). Both fixes working. The feature count mismatch is the next blocker. Fixes attempted but require deeper architecture understanding: need to align FeatureExtractor configuration between src/model_training_pipeline.py (training) and src/backtesting/walk_forward_engine.py (evaluation). Decision required: either (A) unify feature sets to use the same 7 features in both, or (B) modify walk-forward evaluation to build 14 features to match training config.
+**What I need**: User decision on feature architecture: (A) reduce training to 7 core features (fast, may lose signal quality), or (B) enhance walk-forward to build all 14 features (safer, requires feature pipeline debugging). Recommendation: (B) — maintain signal quality. I can then investigate which 7 of the 14 features are missing and restore them in walk-forward evaluation.
+**Verify with**: `uv run python scripts/batch_train_models.py --jobs batch_aapl_msft_retrains.json --max-workers 2` — should complete without "X has N features but StandardScaler expecting M features" errors and produce gate evaluation results.
+**Resolution**: [leave blank]
+
+---
+
 ## Resolved Archive
 
 ### stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required)

@@ -2,6 +2,38 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🔴 Session 3479 (June 14 03:35 UTC) — P3 RETRAINS BLOCKED ON FEATURE ARCHITECTURE
+
+**Orchestrator Status**: ⚠️ **BLOCKED** — AAPL lgbm_ho + MSFT ridge_wf retrains cannot complete due to feature pipeline mismatch between training and walk-forward evaluation.
+
+### Session Summary
+
+**Objective**: Execute THIRD step from unpause directive — run AAPL lgbm_ho + MSFT ridge_wf full walk-forward evaluations (June 18 EOD deadline). P1 + P2 verified complete from Session 3475.
+
+**Work Completed**:
+1. ✅ **Fixed AlpacaProvider API method** (get_daily_bars → get_bars) in model_training_pipeline.py
+2. ✅ **Fixed model extraction** from training payload dict in WalkForwardEngine._load_model() 
+3. ✅ **Created batch config** batch_aapl_msft_retrains.json with both models using full IS/OOS period
+4. ✅ **Fixed pre-commit hook warning** — code properly formatted, all 3 bug fixes committed (fe47734)
+
+**Blocker Identified**: Feature count mismatch during walk-forward evaluation
+- Training pipeline uses **14 features** during model training
+- Walk-forward engine provides only **7 features** to the model during evaluation
+- StandardScaler fails: "X has 7 features, but StandardScaler is expecting 14 features"
+- Affects both models — any sklearn model from current training pipeline will fail evaluation
+- Root cause: FeatureExtractor configuration differs between training (model_training_pipeline.py) and evaluation (walk_forward_engine.py)
+
+**Decision Required**: User choice on feature architecture fix
+- **Option A**: Reduce training to 7 core features (fast fix, may impact signal quality)
+- **Option B**: Enhance walk-forward evaluation to build full 14 features (recommended — maintains signal quality)
+- **Recommendation**: Option B. I can investigate which 7 features are missing in walk-forward and restore them.
+
+**New Block Entry**: Added to BLOCKED.md with decision options and verification command.
+
+**Next Steps**: Once user provides decision, orchestrator can (1) align feature sets, (2) complete both model retrains, (3) evaluate against 6 graduation gates, (4) report findings before June 18 deadline.
+
+---
+
 ## 🔄 Session 3475 (June 14 02:15 UTC) — UNPAUSE & SIGNAL RESTORATION VERIFIED
 
 **Orchestrator Status**: ✅ **UNPAUSE ACTIVE — AUTONOMOUS WORK RESUMED** — User manually lifted pause directive on June 13 15:57 UTC (57 hours early). Orchestrator resumed immediately and confirmed signal restoration.
