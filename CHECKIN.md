@@ -17810,3 +17810,72 @@ Orchestrator maintaining correct idle posture per pause directive through June 1
 Orchestrator maintaining correct idle posture per pause directive through June 15 00:00 UTC. All three active blocks stable and awaiting user actions. All infrastructure production-ready. Pause expires in ~23 hours.
 
 **Orchestrator standing ready.** All systems nominal. Pause active; awaiting June 15 00:00 UTC expiry or user resumption signal.
+
+---
+
+## 🔄 Session 3481 (June 14 02:31–03:00 UTC) — P3 BLOCKER ROOT CAUSE IDENTIFIED; ML-3 FIX DEPLOYED
+
+**Status**: 🟡 **BLOCKED on user feature architecture decision** — ML-1/2/3 complete, WB-1 delivered, P3 retrains diagnostic complete, **user action required for June 18 deadline**
+
+### Orientation Summary
+- ✓ ML-1/2/3 confirmed DELIVERED (Session 3480, 178 tests passing)
+- ✓ WB-1 confirmed DELIVERED (candidates.yaml exists)
+- ✓ P3 AAPL/MSFT retrains: **reproducible issue identified & diagnosed**
+- ✓ stockbot dependencies now complete (scikit-learn, xgboost installed)
+- ✓ CHECKIN.md prior entry stale (Session 3477, 00:37 UTC)
+
+### Work Completed (Session 3481)
+
+**1. ML-3 Integration Bug Fix** ✅ (commit dabb910a)
+   - Fixed DrawdownAnalyzer parameter name: `fold_returns` → `fold_daily_returns`
+   - Error message gone: "unexpected keyword argument 'fold_returns'"
+   - ML-3 now evaluates correctly
+
+**2. P3 Feature Dimension Blocker — Root Cause Identified** 🔴
+   - **Problem**: Training uses 14 features, walk-forward eval uses 7 → StandardScaler dimension mismatch
+   - **Verification**: Reproduced issue with `batch_train_models.py --jobs batch_aapl_msft_retrains.json`
+   - **Result**: Both models train but eval defaults to HOLD signals → 0 trades → 0.0 Sharpe, 1/7 gates
+   - **Root cause**: `_build_features()` in walk_forward_engine.py builds limited feature set vs. training's full set
+   - **Solution paths documented**: Option A (reduce to 7) or Option B (enhance to 14, RECOMMENDED)
+
+**3. Dependency Installation** ✅
+   - scikit-learn 1.9.0 installed
+   - xgboost 2.1.4 installed
+   - All [ml], [dev], [data] extras now available
+
+### Needs Your Input
+
+**CRITICAL — Feature Architecture Decision Required** (impacts June 18 EOD deadline):
+
+Choose one:
+- **Option A** (Faster, riskier): Reduce training feature pipeline to 7 core features
+  - Estimated time: 1-2 hours
+  - Trade-off: May degrade signal quality
+- **Option B** (Thorough, recommended): Enhance walk-forward evaluation to build all 14 features
+  - Estimated time: 2-4 hours
+  - Trade-off: Deeper code investigation, but maintains model quality
+
+**Recommendation**: Option B. I can identify which 7 features are missing in walk-forward and restore them.
+
+Once you decide, orchestrator can implement autonomously without further user input.
+
+### Summary
+
+**Delivered this cycle**:
+- ✅ ML-1/2/3 production-ready (all 178 tests passing)
+- ✅ WB-1 candidate config delivered
+- ✅ ML-3 integration bug fixed (parameter name)
+- ✅ P3 blocker root cause identified and documented
+- ✅ Dependencies complete
+
+**Blocked on**:
+- Feature architecture decision (Option A or B)
+- All other projects blocked on prior user actions (cybersecurity VeraCrypt, mfg-farm test print, systems-resilience platform choice, resistance-research emails)
+
+**Timeline**:
+- June 18 EOD: AAPL/MSFT retrain deadline (4 days remaining)
+- June 15 00:00 UTC: Original pause expiry (was lifted June 13 15:57 UTC)
+- **Today (June 14 02:31 UTC)**: Decision point
+
+**Orchestrator standing by** for feature architecture decision. All technical groundwork complete; only user decision point remains.
+
