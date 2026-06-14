@@ -2,6 +2,19 @@
 
 ---
 
+## June 14, 2026 — General Research Agent — Phase 2 Comprehensive Rapid-Activation Runbooks (Domains 51 and 59)
+
+**Task**: Create three comprehensive Phase 2 rapid-activation runbooks for Domains 51 and 59: a full research sprint scaffold for each domain and a coordination guide for sequential activation. These extend the earlier 30-45 minute checkpoint activation files with 10-14 hour research sprints, 60+ pre-linked sources, 8 expert contacts per domain, gate criteria, and 5+ contingency paths per domain.
+
+**Files created**:
+- `DOMAIN_51_RAPID_ACTIVATION_RUNBOOK.md` — Comprehensive Domain 51 Campaign Finance runbook (5 research zones, 65 pre-linked sources, 8 expert contacts, 10-14 hour timeline, 5 gate criteria, 5 contingency paths). Covers: FEC statute-of-limitations risk cases in Zone 1, AI PAC proliferation (OpenAI, Anthropic template adoption) as novel Zone 2 finding, California/Montana/Hawaii/Missouri ballot measure status in Zone 3, DISCLOSE Act Senate strategy in Zone 4, movement leverage calendar in Zone 5. Expert contacts include Erin Chlopak (echlopak@campaignlegalcenter.org), Brendan Fischer (bfischer@campaignlegal.org — rejoined Oct 2025), Nick Penniman, Craig Holman, Fred Wertheimer, Darius Kemp, Jenny Farrell, Hilary Braseth. Dead contacts flagged: Karen Hobert Flynn (deceased), Sheila Krumholz (departed), Adav Noti "Policy Director" title error corrected.
+- `DOMAIN_59_RAPID_ACTIVATION_RUNBOOK.md` — Comprehensive Domain 59 Economic Precarity runbook with integrated 45-minute Senate Finance CTC express path. The express path (AFL-CIO, CBPP, NWLC) is independently executable from the 10-14 hour research sprint. Five research zones cover causal evidence architecture (Dallas Fed WP 2517), OBBBA distributional analysis, housing instability pathway, gig economy temporal exclusion, and post-OBBBA reform coalition. Senate Finance markup window confirmed ACTIVE (June 16 OBBBA text release, July 4 self-imposed goal). All 14 contacts verified from June 10, 2026 audit. Key personnel change: Chiraag Bains departed Demos 2021; current president is Taifa Smith Butler.
+- `DOMAINS_51_59_SEQUENTIAL_ACTIVATION_TIMING.md` — Coordination guide establishing Domain 59 as the priority domain (Senate Finance window closes before California ballot window), the 2-day stagger plan (Domain 59 express path Day 0, Domain 51 Tier 1 expansion Day 1), resource allocation matrix (zero contact overlap, zero resource competition), 3 cross-domain integration points (FEC collapse as economic exclusion amplifier, OBBBA as campaign finance story, pre-midterm GOTV synthesis), combined checkpoint decision matrix, dual execution success metrics, and 5 failure mode recovery paths.
+
+**Key intelligence synthesized**: Existing contact snapshots, source libraries, send logs, and wave execution packages from 15+ existing Domain 51/59 project files. Senate Finance OBBBA timeline confirmed. Montana I-194 June 19 county deadline noted as contingency trigger. Zero contact pool overlap between domains confirmed across all documentation.
+
+---
+
 ## June 14, 2026 — General Research Agent — Domain 51/59 Rapid-Activation Runbooks
 
 **Task**: Create two contingency runbooks (DOMAIN_51_RAPID_ACTIVATION.md and DOMAIN_59_RAPID_ACTIVATION.md) as decision-support tools for the June 17-18 Day 7 checkpoint. Each runbook enables activation within 30-45 minutes of a "yes" decision, using verified contact lists and ready-to-send templates built from existing project documentation.
