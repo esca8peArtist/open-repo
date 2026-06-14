@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T13:28:11Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T13:44:43Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 19.4% | Reset in 34h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.0% (182,049 tokens) | All-models 20.1% | Reset in 34h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **P1/P2/ML-1/2/3/WB-1/2/3 ALL COMPLETE — P3 DECISION-READY (3 BRANCHES STAGED, USER DECIDES JUNE 15 EOD)** — User unpause June 13 15:57 UTC. Signal restoration verified June 14 02:15 UTC (AMZN buy_prob=0.33+). **Completed**: P1 (Signal Health Monitor, 90 tests), P2 (Quick-eval flag, 56 tests), ML-1/2/3 (142 tests total: Monte Carlo G7 + news sentiment + drawdown metrics), WB-1/2/3 (29 tests total: candidates.yaml + weekend_batch.py + promote_to_paper.py). **P3 STATUS (SESSION 3514)**: Fe … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **P1/P2/ML-1/2/3/WB-1/2/3/P3 ALL COMPLETE — AAPL/MSFT RETRAINS READY TO EXECUTE (JUNE 18 EOD DEADLINE)** — P3 unblocked 2026-06-14 13:42 UTC. User chose Option B (14-feature walk-forward parity). `feature/p3-option-b-14-feature-parity` merged to master (commit 33de9a4). Walk-forward engine now shares `FeatureBuilder` with training pipeline — dimension mismatch eliminated. **Completed**: P1 (Signal Health Monitor, 90 tests), P2 (Quick-eval flag, 56 tests), ML-1/2/3 (142 tests total), WB … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -62,14 +62,13 @@
 **Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
 **Resolution**: [leave blank]
 ---
-### stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation
 
 ## Recently Resolved (last 5)
+• stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
 • open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 • systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
-• stockbot — Phase 3 Infrastructure Blockers (Container Restart Policy + Alpaca DNS) ← 2026-06-06 17:45 UTC (Session 2953 continuation — autonomous infrastructure fixes)
 
 ## Inbox (unprocessed)
 🟢 **PROCESSED (Session 3219, June 11 23:31 UTC)**:
