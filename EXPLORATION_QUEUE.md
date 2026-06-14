@@ -1807,6 +1807,55 @@
 
 ---
 
+### 109. ⏳ stockbot — P3 Implementation Execution Readiness Validation (for June 15 user decision)
+**Context**: Session 3489 created comprehensive P3 decision support (Option A 1-2h fast path, Option B 2-4h thorough path). User decision due June 15 EOD. Once decided, implementation must execute June 16-18 to meet June 18 AAPL/MSFT retrain deadline. Item 109 validates both paths are production-ready for immediate execution.
+**Scope**:
+  - Option A execution readiness: verify 7-feature training pipeline changes are copy-paste ready, model_training_pipeline.py modifications documented, test refactoring complete, integration checklist signed off
+  - Option B execution readiness: verify shared feature utility code is production-ready, both walk_forward_engine.py + model_training_pipeline.py refactoring diffs match source, parity validation tests staged
+  - Execution timeline validation: confirm 1-2h (Option A) or 2-4h (Option B) implementation estimates are realistic given current codebase state
+  - Rollback procedure validation: both Option A and B have rollback SOPs; verify rollback commands are correct and tested
+**Deliverables**:
+  - `P3_OPTION_A_EXECUTION_READINESS_CHECKLIST.md` (pre-flight validation of all code diffs, test changes, integration points; pass/fail gates)
+  - `P3_OPTION_B_EXECUTION_READINESS_CHECKLIST.md` (pre-flight validation of shared utility code, dual-file refactoring, parity test staging; pass/fail gates)
+  - `P3_EXECUTION_TIMELINE_AND_RISK_ASSESSMENT.md` (implementation timeline validation for both options, rollback risk assessment, decision recommendation)
+**Owner**: stockbot subagent
+**Deadline**: June 15 12:00 UTC (ready for user EOD decision, execution can begin immediately June 16)
+**Status**: ⏳ QUEUED for June 14-15 (pre-decision execution readiness validation)
+
+### 110. ✅ resistance-research — Phase 2 Wave 1 Recovery Execution Support (Session 3494 COMPLETE)
+**Status**: Completed June 14, 2026 (Session 3494, 06:xx UTC). All three deliverables production-ready and committed.
+**Context**: Wave 1 execution was due June 9-10, overdue by 4-5 days (current June 14). Recovery window remains open (hard deadline July 1). Session 3488 identified that email sends require user SMTP client action. Item 110 stages the exact execution protocol to minimize friction for user action.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `WAVE_1_RECOVERY_EXECUTION_SOP.md` (2,100+ words) — Step-by-step user action guide: CLC email (echlopak@), 90-min wait, Issue One email (info@issueone.org). SMTP client setup for Gmail/Outlook/Apple Mail. Send verification. Email failure recovery with backup contacts. Gist fallback option. Troubleshooting FAQ.
+  - ✅ `WAVE_1_DELIVERY_CONFIRMATION_CHECKLIST.md` (1,900+ words) — Post-send verification: delivery status confirmation, Gist accessibility check, execution log update, metrics setup for Day 7 checkpoint. Failure mode response procedures. Checkpoint automation trigger validation. Next actions on June 21.
+  - ✅ `WAVE_1_2_REVISED_TIMELINE.md` (2,400+ words) — Revised execution schedule if Wave 1 sent June 14. Wave 2 timing (Option A June 14 evening OR Option B June 15 morning). Day 7 checkpoint shifted from June 16 to June 21. Phase 2 batch activation impact (Domain 48 Virginia deadline still achievable). Resource contention check (LOW). Hard deadline feasibility (✅ ACHIEVABLE with 17 days remaining).
+**Key findings**:
+  - **Execution time**: 90 minutes for Wave 1 (CLC + 90-min wait + Issue One)
+  - **Wave 2 flexibility**: Can send June 14 evening (simultaneous with Wave 1) or June 15 morning (sequential)
+  - **Day 7 checkpoint**: Shifted to June 21 (automated metrics collection), not a blocker
+  - **Virginia deadline**: Domain 48 research June 21-25 still achieves July 15 coalition deadline (20 days remaining, tight but achievable)
+  - **July 1 hard deadline**: 17 days remaining from June 14; all Phase 2 objectives still achievable
+**Owner**: orchestrator (Session 3494)
+**Deadline**: June 14 20:00 UTC ✅ COMPLETE (3 hours before deadline)
+**Confidence**: 95% — All three deliverables provide clear user action pathways, contingency handling, and timeline visibility
+**Commit**: e5faad50 (June 14 06:xx UTC)
+
+### 111. ⏳ seedwarden — Phase 3 Contractor Decision Daily Automation (June 15-17 gate tracking)
+**Context**: Item 94 created contractor sourcing strategy with June 17 decision gate. Item 106 created launch decision matrix with GO/CAUTION/NO-GO automation. Item 111 adds real-time tracking automation for June 15-17 window (Upwork response polling, daily escalation triggers, auto-routing to GO/CAUTION/NO-GO based on response metrics).
+**Scope**:
+  - Daily tracking protocol June 15-17: automated Upwork job polling (responses per Tier A/B/C, new proposal notifications), response scoring against Item 94 vetting rubric, milestone tracking (job posted → applications → screened → interviews → offers)
+  - Automation logic: if [Tier A response count ≥1 AND score ≥80 AND availability ≥20hrs/week], auto-ACCEPT; if [response count <2 by June 16 12:00], escalate Herbal Academy referral requests; if [<1 response by June 17 08:00], activate Toptal fallback channel
+  - Email templates: 5 daily escalation templates (June 15/16/17 12:00 UTC escalation notices), offer/counter-offer response templates, decline templates for non-matching candidates
+  - Dropout mitigation: if contractor confirms June 17 but drops June 18, activate solo fallback (9-week solo schedule per Item 97; Phase 4 start date shifts Oct 1)
+  - Decision routing: ACCEPT (score ≥80 + immediate availability), CONDITIONAL (score 70-79 or availability marginal), ESCALATE (score <70 or no responses by gate)
+**Deliverables**:
+  - `PHASE_3_CONTRACTOR_DAILY_TRACKING_CHECKLIST.md` (June 15-17 daily log: Upwork responses, scores, availability, tier assignment, escalation trigger status)
+  - `UPWORK_RESPONSE_AUTO_ROUTING_RULES.md` (deterministic if-then logic for all response combinations; ACCEPT/CONDITIONAL/ESCALATE thresholds; escalation channel prioritization)
+  - `CONTRACTOR_DROPOUT_CONTINGENCY_ACTIVATION.md` (if hired but drops: 4-hour detection window, solo fallback immediate activation, WORKLOG format, Phase 4 impact: +4 weeks to Oct 1)
+**Owner**: seedwarden subagent (daily automation June 15-17)
+**Deadline**: June 17 23:00 UTC (ready for June 18 Phase 3 launch decision routing)
+**Status**: ⏳ QUEUED for June 15-17 (parallel tracking with user contractor selection process)
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
