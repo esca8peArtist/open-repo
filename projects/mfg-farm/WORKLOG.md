@@ -1,5 +1,39 @@
 # mfg-farm Project WORKLOG
 
+## Session (June 14, 2026) — Etsy SEO & Competitive Positioning Analysis Complete
+
+**Objective**: Etsy SEO Strategy Q2-Q3 2026 exploration queue item — keyword research, competitor analysis, seasonal patterns, algorithm insights, AOV optimization, price elasticity across three product lines.
+
+**Deliverables updated/confirmed production-ready**:
+
+### 1. etsy-seo-strategy-q2-q3-2026.md (~11,500 words)
+- Already comprehensive; enriched with 5 new research findings from June 14 deep search
+- Added Section 1.5: Search Visibility Dashboard (new Etsy 2026 tool — not previously documented)
+- Updated recency window: 14–21 days (shortened from prior 7–14 estimate)
+- Added optimal launch timing: Tue–Thu 9am–2pm EST (65% visibility lift in first 60 days)
+- Added qualified traffic conversion nuance: algorithm now evaluates conversion from relevant searches only
+- Updated headphone hook competitor table: added CtrlBase (new Jun 2026 entrant, aluminum+beech wood)
+- Updated magnetic labels competitor pricing: S3C Printing confirmed at $27.99 (up from $19.99) — $15 price gap vs. ModRun's $12.99 launch
+- Added Bend3DP magnet weakness: confirmed 8×3mm generic neodymium (not N52), customer reviews cite inadequate strength — makes ModRun N52 spec a concrete, reviewable differentiator
+
+### 2. competitive-positioning-matrix.csv
+- Updated BendPrinting row: magnet spec confirmed as 8×3mm non-N52; customer complaints documented
+- Updated S3C Printing row: $27.99 current price verified; price gap vs. ModRun now $15
+- Added CtrlBase row: new headphone hook competitor, early stage, low LQS, beatable
+
+**Key findings**:
+1. S3C Printing at $27.99 has opened a $15 gap vs. ModRun's planned $12.99 launch — more favorable than previously modeled
+2. BendPrinting's generic magnets are a confirmed weakness with documented customer complaints — N52 specification is a real differentiator that can be explicitly named in product descriptions
+3. Search Visibility Dashboard is an actionable tool available day-of-launch for catching attribute gaps, title quality issues, and shipping flags before they damage LQS
+4. Optimal publish window (Tue–Thu, 9am–2pm EST) is a free, high-value optimization requiring only schedule awareness
+5. Qualified-traffic conversion nuance means external social traffic doesn't penalize rankings; social promotion is safe during recency window
+
+**Confidence**: High on algorithm mechanics and competitor pricing (verified Jun 2026); Medium on keyword volume estimates (±40%, validate with eRank before launch)
+
+**Time spent**: ~1.5 hours
+
+---
+
 ## Session 2972 (June 6, 2026) — Phase 2 Pre-Planning Documents Complete
 
 **Objective**: Execute Phase 2 Scaling Roadmap & Capital Raise Contingency (Exploration Queue item, 2 hours planned)

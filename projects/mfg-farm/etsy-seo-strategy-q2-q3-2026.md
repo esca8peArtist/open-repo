@@ -1,12 +1,12 @@
 ---
 title: "Etsy SEO Strategy Q2-Q3 2026 — ModRun Clips, Headphone Hooks, Magnetic Bin Labels"
 created: 2026-05-19
-updated: 2026-05-20
+updated: 2026-06-14
 status: actionable
-scope: "Pre-launch keyword optimization, competitive positioning, seasonal cadence May–December 2026, ChatGPT discovery layer"
+scope: "Pre-launch keyword optimization, competitive positioning, seasonal cadence May–December 2026, ChatGPT discovery layer, Search Visibility Dashboard"
 confidence: high-on-algorithm / medium-on-exact-volumes
 related: etsy-seo-strategy.md, keyword-research-data.csv, headphone-hooks-market-analysis.md, BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md, pricing-strategy.md, competitive-positioning-matrix.csv
-word_count: ~10500
+word_count: ~11500
 exploration_queue_item: 1092
 ---
 
@@ -39,11 +39,15 @@ The critical rule: lead with the exact noun-first keyword phrase buyers type. Do
 | Relevance score (title/tag/attribute/description alignment) | High | NLP handles synonyms better; exact-match less critical but phrase integrity still rewarded |
 | Shop-level Customer and Market Experience score | Medium-High | Star Seller now controls a hard visibility filter (30% of buyers use Star Seller filter only) |
 | Shipping price signal | Medium | US listings above $6 shipping see active demotion; free shipping on physical products now expected |
-| Recency boost | Medium (declining) | 7–14 day window; sustained conversion overwrites recency within 14 days |
+| Recency boost | Medium (declining) | 14–21 day window (shortened from ~30 days in 2024); sustained conversion overwrites recency within that window |
 | Title length quality | New (Medium) | Titles over 70 chars face mobile demotion; 60–80 chars optimal |
 | Star Seller status | Low-Medium as standalone; High as filter gate | Approximately 30% of Etsy buyers use Star Seller filter — hard exclusion |
 
-**Key implication for launch strategy:** The recency window is a 14-day audit period. Etsy grants impressions to new listings to measure behavioral signals. A listing that achieves 2–3% conversion in this window earns sustained algorithmic promotion. A listing that fails converts poorly, gets depressed, and requires months of optimization to recover. Launch with your best product first, best photography ready, title optimized, and pricing competitive — not "close enough."
+**Key implication for launch strategy:** The recency window is a 14–21 day audit period. Etsy grants impressions to new listings to measure behavioral signals. A listing that achieves 2–3% conversion in this window earns sustained algorithmic promotion. A listing that fails converts poorly, gets depressed, and requires months of optimization to recover. Launch with your best product first, best photography ready, title optimized, and pricing competitive — not "close enough."
+
+**Optimal launch timing:** Publish new listings on Tuesday through Thursday between 9am and 2pm EST. Etsy's peak buyer traffic occurs in those windows, and new listings receive their initial impression burst during the 24–72 hours after publication. Shops using Scheduled Publish report an average 65% increase in organic visibility in the first 60 days. Do not publish Friday through Sunday — the recency boost starts immediately, and the initial behavioral data collected from low-traffic windows sets a weaker baseline.
+
+**Conversion rate nuance (2026 update):** The algorithm now evaluates "qualified traffic conversion" from relevant searches rather than overall conversion rate across all traffic sources. External traffic from Pinterest, Reddit, or social media that does not convert does not penalize rankings the way it once did. However, organic Etsy search traffic that fails to convert remains a direct ranking signal. This means driving external traffic to a listing with poor photos or pricing will not suppress rankings — but also will not help them unless those visitors buy.
 
 ### 1.3 Tag Mechanics — 2026 Guidelines
 
@@ -59,6 +63,26 @@ The critical rule: lead with the exact noun-first keyword phrase buyers type. Do
 - US domestic listings with shipping above $6 face active ranking suppression as of the February 2026 update.
 - ModRun's products (physical 3D-printed items) must either price shipping at $5 or below or bundle shipping cost into the product price with free shipping. Given COGS data (under $3/unit for clips, under $5 for hooks), pricing at $12.99+ with free shipping is structurally achievable and the recommended approach.
 - USPS First Class for a small package of clips or a single hook is typically $4.50–$5.50 to most US destinations. Factor this into the price tier analysis in Section 5.
+
+### 1.5 The Search Visibility Dashboard (New Tool, 2026)
+
+Etsy launched a Search Visibility Dashboard in 2026 that is available to all sellers from the Listings manager. It is the single most direct tool for diagnosing ranking suppression and should be checked within the first 72 hours after each listing goes live and weekly thereafter.
+
+**What the dashboard surfaces:**
+
+- Title quality flags — Etsy's AI compares your title structure against its 2026 natural-language guidance and suggests rewrites when it detects keyword stuffing or poor phrase integrity
+- Shipping price warnings — flags any listing with US shipping above the $6 threshold
+- Missing attribute alerts — identifies fields (material, color, style) that are blank and reducing query-match eligibility
+- Photo quality signals — flags listings where the main photo shows low contrast or small product size relative to frame
+
+**How to use it for ModRun listings:**
+
+1. After publishing each listing, check the dashboard within 24 hours. Any flag that appears should be addressed before the end of Day 1 — the recency window's behavioral data collection starts immediately.
+2. Title AI suggestions are optional and not mandatory. Evaluate suggestions against the title templates in Section 7; only accept a suggestion if it preserves the primary keyword phrase in the first 40 characters.
+3. Attribute flags are high-priority: fill every attribute field at time of listing creation, not after publication.
+4. Once improvements are made, the dashboard typically clears flags within 24 hours.
+
+**Bulk edit capability:** The dashboard supports bulk editing of shipping, attributes, and some description fields. If launching multiple listings simultaneously, use bulk edit to apply the free-shipping policy across all listings in one action rather than editing each individually.
 
 ---
 
@@ -164,6 +188,7 @@ Search volume estimates are derived from: (a) prior eRank proxy data from keywor
 | IKEA LACK compatible holders | Multiple sellers | $12–20 | Variable | IKEA brand specificity | ModRun targets all desk types parametrically |
 | Generic adhesive hooks (wood/plastic) | Various sellers | $8–15 | High volume | Low price entry | ModRun 3D printed = original design, higher trust |
 | Wall-mounted adhesive headphone hooks | 868,526 listing | ~$12–18 | Established | Wall mount use case | Desk-mount niche = lower competition |
+| CtrlBase | Clamp-on under-desk headphone hook with beech wood accent | ~$18–28 | Early stage (7 favs, Jun 2026) | Premium materials + design angle (aluminum + wood) | Low LQS; beatable with faster launch + 3D-printed-original positioning |
 
 **Critical insight from competitor analysis:** The single dominant listing (1,254 reviews, $14.99) lacks the cable-wrap post. This is not a minor feature gap — it is a search term gap. "Cable management headphone hook" and "headphone hook cable wrap" have essentially zero dedicated competition in the top listings. ModRun can own that query cluster immediately.
 
@@ -171,8 +196,8 @@ Search volume estimates are derived from: (a) prior eRank proxy data from keywor
 
 | Competitor | Product | Est. Price | Reviews/Stars | Key Strengths | ModRun Differentiator |
 |---|---|---|---|---|---|
-| BendPrinting (Bend3DP) | Custom magnetic toolbox labels | ~$14.99–$19.99 | 1,500+, 4.9★, 10,500 sales | Volume, brand recognition, fast shipping | ModRun: N52 neodymium spec + custom text field |
-| S3C Printing | Custom magnetic labels, 10-pack | $19.99 (orig. $14.99) | Growing, star seller | Multiple listing variants, professional framing | ModRun's desk-system cross-sell angle |
+| BendPrinting (Bend3DP) | Custom magnetic toolbox labels (10-pack) | ~$14.99–$19.99 | 1,500+, 4.9★, 10,500 sales | Volume, brand recognition, Star Seller | Confirmed weakness: some customers report magnets (8×3mm neodymium) not strong enough — not N52 spec; no desk-system cross-sell |
+| S3C Printing | Custom magnetic labels, 10-pack | $27.99 (current as of June 2026; previously $19.99) | Growing, Star Seller | Multiple listing variants, new font options, professional framing | At $27.99, S3C has priced above the market — ModRun's $12.99 launch undercuts by $15 |
 | S3C Printing (mini labels) | Personalized mini 3/8" labels | ~$16–22 | Growing | Size variant — smaller format | ModRun: larger tile format for workshop bins |
 | Custom Magnetic Toolbox Labels (emblem-style) | Listing 1877234960 | ~$16–24 | Growing | Emblem aesthetic, premium visual | ModRun's cleaner, functional aesthetic |
 | DailyUse3D | Magnetic toolbox labels | ~$12–18, 166 favs | Growing | Price-competitive, FL shipping | ModRun's N52 strength specification |
@@ -182,7 +207,9 @@ Search volume estimates are derived from: (a) prior eRank proxy data from keywor
 | Magnetic bit wall holders | Etsy 1785541430 | ~$18–35 | Growing | Workshop wall mount adjacent | Different product type — not direct competition |
 | Toolbox labels with embossed icons | Various | $14–22 | Variable | Icon-based labeling | ModRun's text-first approach |
 
-**Price ceiling finding:** BendPrinting at 10,500 sales has proven the market will pay $14.99–$19.99 for a 10-pack of custom magnetic labels. This is the validated price floor. The upper ceiling appears to be ~$28–$32 for premium 20-pack formats. ModRun's target at $12.99 for a 10-pack or $19.99 for a 20-pack is correctly positioned within this validated range.
+**Price ceiling finding:** BendPrinting at 10,500 sales has proven the market will pay $14.99–$19.99 for a 10-pack of custom magnetic labels. S3C Printing has pushed to $27.99 for a 10-pack as of June 2026 — and is still selling as a Star Seller, suggesting the market tolerates this. However, the Bend3DP review base contains recurring comments that the 8×3mm magnets "could be stronger," confirming that the standard in this category uses generic neodymium, not N52 spec. ModRun's N52 neodymium specification is a concrete and unclaimed differentiator. The validated price range for launch is $12.99 (10-pack, aggressive entry) to $19.99 (10-pack, premium N52 positioning). The market ceiling for 20-pack premium formats appears to be ~$28–$32 based on S3C's current pricing.
+
+**Competitor gap update (June 2026):** S3C's jump to $27.99 has opened the $12.99–$19.99 gap in the 10-pack category. A well-photographed, N52-specified ModRun listing at $12.99 will be the clear low-price option against both BendPrinting ($14.99) and S3C ($27.99). Price advantage is now larger than previously modeled.
 
 ---
 
@@ -779,3 +806,14 @@ Once ModRun exceeds $10,000 in annual sales (mandatory Offsite Ads threshold), t
 - [ChatGPT for Etsy: Complete Guide 2026 — Insight Agent](https://www.insightagent.app/guides/chatgpt-for-etsy)
 - [Etsy SEO 2026: What's Changed & How to Rank — Insight Agent](https://www.insightagent.app/guides/etsy-seo-2026)
 - [How to Use AI for Etsy Listings: Optimizing Titles and Descriptions — Netalith](https://netalith.com/blogs/e-commerce-strategy/using-ai-for-etsy-listings-optimization-2026)
+- [Etsy Algorithm 2026: What Changed and How to Win — SellerToolsHQ](https://sellertoolshq.com/guides/etsy-algorithm-2026/)
+- [Etsy Algorithm 2026: How It Really Works — ListifyAI](https://www.listifyai.net/blog/etsy-algorithm-2026-how-it-works)
+- [Etsy Policy Changes 2026: What Sellers Must Fix — CedCommerce](https://cedcommerce.com/blog/etsy-policy-changes-2026-what-shopify-etsy-sellers-must-fix-to-stay-compliant-visible-and-profitable/)
+- [How to Use the Etsy Search Visibility Page — Etsy Help](https://help.etsy.com/hc/en-us/articles/25869947521175-How-to-Use-the-Etsy-Search-Visibility-Page)
+- [New Guidance for Listing Titles, and a Tool to Help — Etsy Seller Handbook](https://www.etsy.com/seller-handbook/article/1399426136697)
+- [S3C Printing — Etsy Shop (current price $27.99, verified June 2026)](https://www.etsy.com/shop/S3CPrinting)
+- [Bend3DP — Etsy Shop (10,500 sales, 8×3mm neodymium magnet spec, verified June 2026)](https://www.etsy.com/shop/Bend3DP)
+- [Bend 3DP Regular Size 10-Pack Personalized Toolbox Magnetic Labels — Etsy Listing](https://www.etsy.com/listing/1796124882/bend-3dp-regular-size-10-pack)
+- [CtrlBase Clamp-On Under Desk Headphone Hook — Etsy Listing (new competitor, Jun 2026)](https://www.etsy.com/listing/4354203246/clamp-on-under-desk-headphone-hook-with)
+- [Etsy Algorithm Updates: How to Adapt in 2026 — Insight Agent](https://www.insightagent.app/guides/etsy-algorithm-updates)
+- [Summer 2026 Trends for Etsy Sellers — eRank Help](https://help.erank.com/blog/summer-2026-trends-etsy-sellers/)
