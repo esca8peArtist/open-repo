@@ -14,9 +14,9 @@ wave_2_scheduled: "2026-06-11"
 
 ---
 
-## Wave 1 — June 9 (Tier A: National Contacts)
+## Wave 1 — June 14 (Tier A: National Contacts)
 
-**Status**: OVERDUE (scheduled June 9, now June 10 01:06 UTC)
+**Status**: PENDING EXECUTION (originally scheduled June 9; recovered June 14 — 17 days remain before July 1 hard deadline)
 
 ### Send 1: Campaign Legal Center (CLC)
 
@@ -58,9 +58,9 @@ wave_2_scheduled: "2026-06-11"
 
 ---
 
-## Wave 2 — June 11-12 (Tier B & C: California Contacts)
+## Wave 2 — June 14-15 (Tier B & C: California Contacts)
 
-**Status**: READY TO EXECUTE (June 12, 09:00-12:00 UTC)  
+**Status**: PENDING EXECUTION (originally scheduled June 12; recovered June 14-15 — both options are within the viable window)  
 **Contact verification**: Complete as of June 11, 2026 (all three contacts re-verified)
 
 ### Send 3: Common Cause California
@@ -140,19 +140,20 @@ wave_2_scheduled: "2026-06-11"
 | Metric | Target | Current |
 |--------|--------|---------|
 | **Total Sends Scheduled** | 5 | __ |
-| **Sends Completed** | 5 (by June 12) | __ |
-| **Reply Rate (by June 16)** | ≥1 (minimum success) | __ |
-| **Timeline Status** | On schedule (if Wave 1 by June 10) | OVERDUE |
+| **Sends Completed** | 5 (by June 15) | __ |
+| **Reply Rate (T+7)** | ≥1 (minimum success) | __ |
+| **Timeline Status** | Recovered June 14 — 17 days to deadline | PENDING EXECUTION |
 
 ---
 
 ## Key Dates
 
-- **June 9 (OVERDUE)**: Wave 1 sends (CLC + Issue One)
-- **June 10**: Make-up day for Wave 1 if June 9 not completed
-- **June 11 (TODAY)**: Wave 2 contact verification complete (all three confirmed current). User handling Wave 1 sends independently.
-- **June 12 (TOMORROW)**: Wave 2 sends — Common Cause CA (09:00 UTC), LWV CA (10:30 UTC), Clean Money Action Fund (12:00 UTC). Checklist: DOMAIN_51_WAVE_2_EXECUTION_CHECKLIST.md
-- **June 16**: Day 7 checkpoint — evaluate minimum success criteria (≥1 reply)
+- **June 14 (TODAY)**: Execute Wave 1 (CLC + Issue One) — checklist: WAVE_1_EXECUTION_CHECKLIST.md
+- **June 14 or 15**: Execute Wave 2 (Common Cause CA, LWV CA, Clean Money Action Fund) — checklist: WAVE_2_EXECUTION_CHECKLIST.md
+- **June 19**: Secondary urgency date — Montana I-194 county signature deadline; Wave 1 should be sent before this date
+- **June 21-22**: T+7 checkpoint — check inbox for replies from all 5 contacts, assess composite signal
+- **June 23-27**: Avoid sending during pre-July 4 holiday window (low staff attention)
+- **July 1**: Hard deadline — all 5 sends must be complete; California messaging infrastructure lock
 
 ---
 
@@ -166,4 +167,9 @@ Refer to `DOMAIN_51_CONTINGENCY_SB_299_FALLBACK.md` if:
 
 ---
 
-**Status as of June 11 UTC**: Wave 2 contact verification complete (all three re-verified June 11). Wave 2 templates confirmed production-ready (no edits required). Execution checklist created: DOMAIN_51_WAVE_2_EXECUTION_CHECKLIST.md. **User action required**: Wave 1 (CLC + Issue One) — user handling independently. Wave 2 — execute June 12 per checklist. Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in each email before sending.
+**Status as of June 14 UTC**: All 5 email templates production-ready. All contacts verified (Wave 1: June 5; Wave 2: June 11). Three execution files created and ready:
+- Wave 1 step-by-step (with inlined email bodies): WAVE_1_EXECUTION_CHECKLIST.md
+- Wave 2 step-by-step (with inlined email bodies): WAVE_2_EXECUTION_CHECKLIST.md
+- Master overview + risk mitigation: PHASE_2_EMAIL_CAMPAIGN_MASTER_CHECKLIST.md
+
+**User action required**: Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in each email before sending. Execute Wave 1 today, Wave 2 today or tomorrow. Log send times in this file (Send 1 through Send 5).
