@@ -1,3 +1,23 @@
+# Check-in Summary — Session 3587 (June 14 22:26 UTC)
+
+## Session 3587 — Orchestrator Standing-By Continuation (Verified)
+
+**Completed**: Full orientation (ORCHESTRATOR_STATE.md accurate to 22:25 UTC, BLOCKED.md, INBOX.md verified). Block resolution verification: no resolved blocks, all 3 remain active. System in correct standing-by state.
+
+### Findings (Session 3587)
+
+- **All 3 active blocks remain unchanged**: No resolutions since Session 3586
+  - cybersecurity-hardening: VeraCrypt restart (manual — cannot auto-verify)
+  - mfg-farm: Test print directory missing (awaiting user execution)
+  - systems-resilience: Platform decision needed (Nextcloud+Matrix recommended, due June 15 EOD)
+- **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC)
+- **Autonomous work**: **Zero confirmed** — All projects blocked on user actions or market-open trigger (June 16 13:30 UTC)
+- **Temporary unpauses**: Expire June 16 00:00 UTC (~1.5 hours from this session timestamp)
+
+**Status**: ✅ **System correctly idle. All autonomous prep complete. Standing-by for June 15-16 checkpoints. No autonomous work identified.**
+
+---
+
 # Check-in Summary — Session 3586 (June 14 22:25 UTC)
 
 ## Session 3586 — Orchestrator Standing-By Continuation (Verified)
