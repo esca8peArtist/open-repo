@@ -2,6 +2,56 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## ✅ Session 3480 (June 14 00:52 UTC) — ML-1 MONTE CARLO GATE COMPLETE, QUEUE ACTIVATED
+
+**Orchestrator Status**: ✅ **AUTONOMOUS QUEUE WORK ACTIVATED** — P1+P2 complete, P3 blocked on user decision. ML-1 (Monte Carlo gate G7) successfully implemented. ML-2/3 and WB-1/2/3 queued for execution.
+
+### Session Summary
+
+**Orientation**: 
+- All blocked/paused projects verified (cybersecurity, mfg-farm, systems-resilience, resistance-research, seedwarden, open-repo all awaiting user action)
+- P3 blocker documented: Feature mismatch (training uses 14 features, walk-forward eval uses 7)
+  - Recommendation: Option B — enhance walk-forward to build all 14 features (maintains signal quality)
+  - Awaiting user decision to proceed with AAPL/MSFT retrains
+- Discovered autonomous work available: ML-1/2/3 and WB-1/2/3 queued in INBOX.md
+
+**ML-1 Implementation Complete** ✅:
+- `MonteCarloAnalyzer` class created with full interface
+- Bootstraps 1000 sequences from fold daily returns
+- Computes: p_loss_6mo, sharpe_p05, sharpe_p95, max_dd_p95, is_robust
+- Registers as Gate G7 (is_robust=True required to pass)
+- 51 unit tests created, all passing
+- Zero regressions to existing 682+ analytics tests
+- Integrated into EvaluationReport and graduation gates
+- PipelineConfig configurable for n_simulations and seed
+- Commits: 1523283 (feat), 5736b17 (worklog)
+
+**P3 Blocker Details**:
+- Feature count mismatch discovered during Session 3479 walk-forward evaluation
+- Training pipeline builds 14 features, walk-forward eval provides only 7 features
+- StandardScaler fails: "X has 7 features but StandardScaler expecting 14"
+- Affects both AAPL lgbm_ho and MSFT ridge_wf retrains (June 18 EOD deadline)
+- User decision required: 
+  - **Option A**: Reduce training to 7 core features (fast fix, may impact signal quality)
+  - **Option B**: Enhance walk-forward evaluation to build all 14 features (recommended — maintains signal quality)
+- Verification command: `uv run python scripts/batch_train_models.py --jobs batch_aapl_msft_retrains.json --max-workers 2` should complete without feature mismatch errors
+
+**Next Steps**:
+1. **User decision on P3 feature architecture** (Option A vs B) — required to resume AAPL/MSFT retrains
+2. **ML-2/3 queued** (news sentiment, drawdown recovery) — can proceed in parallel
+3. **WB-1/2/3 queued** (weekend batch pipeline) — P2 completion unblocks these; can begin implementation
+
+**Queued Items Ready for Execution**:
+- **ML-2** (`src/features/news_sentiment.py`): LLM-based news sentiment feature, optional in pipeline
+- **ML-3** (`src/analytics/drawdown_metrics.py`): Recovery time tracking for drawdown episodes
+- **WB-1** (`candidates.yaml`): Weekly batch candidate matrix template
+- **WB-2** (`scripts/weekend_batch.py`): Top-level pipeline orchestrator (depends on P2 ✅)
+- **WB-3** (`scripts/promote_to_paper.py`): Paper trading queue deployer (depends on WB-2)
+
+**Status**: All ML-1 work committed and passing. Ready to proceed with ML-2, ML-3, or WB items. P3 work blocked until user provides architecture decision.
+
+---
+
 ## 🔴 Session 3479 (June 14 03:35 UTC) — P3 RETRAINS BLOCKED ON FEATURE ARCHITECTURE
 
 **Orchestrator Status**: ⚠️ **BLOCKED** — AAPL lgbm_ho + MSFT ridge_wf retrains cannot complete due to feature pipeline mismatch between training and walk-forward evaluation.
