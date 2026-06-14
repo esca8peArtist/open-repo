@@ -2,6 +2,45 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3540 (June 14 15:15–15:30 UTC) — JETSON DEPLOYMENT COMPLETE: AAPL + MSFT LGBM_HO ACTIVE
+
+**Status**: ✅ **MODELS DEPLOYED TO JETSON** — Both P3-resolved models deployed successfully. All autonomous work complete. Awaiting external events (market open, user decisions).
+
+**Work Completed**:
+1. **Verified Jetson reachable** (xxsb-01, 100.120.18.84): Docker container stockbot running and healthy ✅
+2. **Deployed AAPL_lgbm_ho_v1_457ef7c9.pkl** (261 KB, Session 3539 14:47 UTC) to `/opt/stockbot/models/` ✅
+3. **Deployed MSFT_lgbm_ho_v1_47c2ddcf.pkl** (257 KB, Session 3539 14:49 UTC) to `/opt/stockbot/models/` ✅
+4. **Verified active-sessions.json configuration** — 4-session config active (JPM ridge_wf, AMZN lgbm_ho, AAPL lgbm_ho, MSFT lgbm_ho) ✅
+5. **Updated PROJECTS.md Current focus** — Synchronized to reflect P3 decision complete (Option B) + deployment complete
+
+**Model Status**:
+- AAPL lgbm_ho: 6/7 gates passed (OOS Sharpe 2.444, Max DD 5.4%, Win Rate 77.38%) ✅
+- MSFT lgbm_ho: 6/7 gates passed (OOS Sharpe 1.573, Max DD 6.54%, Win Rate 71.71%) ✅
+- Both models failing only G7 (Monte Carlo robustness) — acceptable for paper trading validation
+- Container running healthy, no errors in logs
+
+**Current Status**:
+- **Jetson deployment**: ✅ Complete
+- **Active sessions**: 4 live (JPM + AMZN + AAPL + MSFT)
+- **Market status**: Closed (Sunday) — WebSocket warnings expected
+- **Next checkpoint**: June 16 13:30 UTC Monday market open → signal generation validation
+
+**Autonomous Work Remaining**: None. All projects awaiting external events:
+1. stockbot: Market open Monday 13:30 UTC
+2. resistance-research: User Wave 1-2 email execution (staged, user-triggered)
+3. systems-resilience: User platform choice decision (June 15 EOD)
+4. cybersecurity-hardening: User VeraCrypt restart (not critical)
+5. mfg-farm: User test print execution (not critical)
+
+**All Critical Deadlines Confirmed**:
+1. June 15 EOD (~8.5 hours): Platform choice decision required
+2. June 16 13:30 UTC (~22 hours): Market open validation window opens
+3. June 18 EOD: Paper trading checkpoint
+
+**System Health**: ✅ All systems operational. Thermal Pi5 idle ~47-48°C. Usage 2.3% Sonnet.
+
+---
+
 ## 🎯 Session 3544 (June 14 15:24–15:50 UTC) — EXPLORATION QUEUE COMPLETE: TWO ITEMS FINISHED
 
 **Status**: ✅ **AUTONOMOUS WORK COMPLETED — TWO EXPLORATION QUEUE ITEMS FINISHED** — Completed two high-value queue items while all priority projects awaiting external events (stockbot market-open validation June 15, resistance-research user Wave execution). Total deliverables: 5 comprehensive roadmaps (2,044 lines), all committed to master.
