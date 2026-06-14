@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T19:21:40Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T20:11:57Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.3% (203,964 tokens) | All-models 27.1% | Reset in 29h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.1% (275,310 tokens) | All-models 28.9% | Reset in 28h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -17,6 +17,11 @@
 10. open-source-rideshare (Paused)
 
 ## Active Projects
+### mfg-farm
+**Status**: Active — temporary unpause per user directive 2026-06-14 (auto-repause after June 16 00:00 UTC reset)
+**Focus**: ⏸️ **PAUSED — awaiting test print execution (user action)**. Phase 1 launch sequence and Phase 2 scaling strategy production-ready. Block: BLOCKED.md Item 2 — test print directory missing. Next: User completes test print (0.20mm layer height, PLA+, 3 walls, 220–225°C) and reports outcome to unblock Phase 1 launch.
+**Blocked**: Test print (user action required — see focus above)
+
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
 **Focus**: ✅ **[PHASE 2 WAVE 1-2 EXECUTION READY — EMAIL PACKAGES + ORCHESTRATION SCRIPT COMPLETE (SESSION 3545)]** — **PHASE 2 EXECUTION STATUS**: 
@@ -24,6 +29,15 @@
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
 **Focus**: ✅ **[P3 RESOLVED + MODELS DEPLOYED — JUNE 14] AAPL + MSFT LGBM_HO JETSON LIVE** — (1) **Status**: AAPL lgbm_ho (OOS Sharpe 2.444) + MSFT lgbm_ho (OOS Sharpe 1.573) deployed to Jetson June 14 15:15 UTC. 4-session config active (JPM ridge_wf + AMZN lgbm_ho + AAPL lgbm_ho + MSFT lgbm_ho), container healthy ✅. (2) **Next Trigger**: **June 16 13:30 UTC market open** — verify signal generation + trade execution on AAPL/MSFT. (3) **Hard deadline**: June 18 EOD — both models must execute tra … *(truncated — prune Current focus in PROJECTS.md)*
+
+### seedwarden
+**Status**: Active — temporary unpause per user directive 2026-06-14 (auto-repause after June 16 00:00 UTC reset)
+**Focus**: ✅ **[TRACK B INFRASTRUCTURE PRODUCTION-READY — GATES NOT YET EXECUTED (SESSION 2964 FORENSIC AUDIT, JUNE 6) + PHASE 3 CONTRACTOR SEARCH EXECUTION COMPLETE (SESSION 2967, JUNE 6)]** — Orchestrator activated Track B on June 4, but June 5 execution target referred to readiness status, not completion. Forensic audit (Agent a9df4d3832becad3f) confirms: all autonomous pre-launch infrastructure 100% production-ready and verified (8 zone PDFs, email copy, social calendar, influencer contacts); all … *(truncated — prune Current focus in PROJECTS.md)*
+**Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
+
+### open-repo
+**Status**: Active — temporary unpause per user directive 2026-06-14 (auto-repause after June 16 00:00 UTC reset)
+**Focus**: ✅ **[PHASE 5 ZIMWRITER MERGE-READY (SESSION 2970, JUNE 6) — DEPLOYMENT TIMING CONFIRMED 09:00 UTC (SESSION 2995)]** — Code verdict: ✅ MERGE-READY (all 51 ZIM tests passing, feature branch MORE CORRECT than master). **Deployment timing confirmed**: 09:00 UTC (business hours) on June 12, 2026 — all newer authoritative docs (Sessions 2952-2956, June 6+) consistently specify 09:00 UTC. **User actions required**: (1) **Merge approval** on feature/zimwriter-libzim-activation branch, (2) **Po … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
