@@ -2,6 +2,55 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3500 (June 14 06:XX UTC) — ORIENTATION COMPLETE: SYSTEM STABLE, AWAITING USER DECISIONS
+
+**Status**: ✅ **SYSTEM STANDING BY FOR CRITICAL USER INPUT** — Orientation confirms state from Sessions 3497-3499. All 4 active blocks unresolved. All autonomous work complete (178+ tests passing). No new INBOX items. No autonomous work available.
+
+**Critical Deadlines (Requires User Action)**:
+1. **June 15 12:00 UTC (~30 hours remaining)**: **Stockbot P3 feature architecture decision**
+   - Option A (Fast, 1-2h): Reduce training/eval to 7 features. Medium-high risk.
+   - Option B (Thorough, 2-4h, RECOMMENDED): Extract shared feature utility, enhance walk-forward to 14 features. Low risk.
+   - Full decision support ready in `projects/stockbot/P3_EXECUTION_READINESS_VALIDATION.md`
+   - AAPL/MSFT retrains must complete by June 18 EOD
+
+2. **June 14 (TODAY, Recovery Window Open)**: **Resistance-research Phase 2 Wave 1-2 emails**
+   - Wave 1: CLC + Issue One (90-min stagger) ← was due June 11
+   - Wave 2: Common Cause CA + LWV CA + Clean Money (90-min stagger) ← was due June 12
+   - Complete SOP ready in `projects/resistance-research/WAVE_1_RECOVERY_EXECUTION_SOP.md`
+   - 60-75 min user email action required
+   - Recoverable per Session 3494 analysis
+
+3. **June 17-18**: **Resistance-research Day 7 checkpoint**
+   - Measurement infrastructure complete, all formulas staged
+   - Automated decision logic ready for Wave 1-2 signal analysis
+
+**Unresolved Blocks (Manual Actions Required)**:
+- Cybersecurity-hardening: Windows VeraCrypt pre-boot restart
+- Mfg-farm: 3D printer test print execution (0.20mm, PLA+, 220–225°C)
+- Systems-resilience: Platform deployment decision (Nextcloud+Matrix vs Discourse; deadline passed, awaiting choice)
+
+**Autonomous Work Summary (All Complete)**:
+- ✅ P1 (Signal Health Monitor): 90 tests
+- ✅ P2 (Quick-Eval Flag): 56 tests  
+- ✅ ML-1/2/3 (Monte Carlo + News Sentiment + Drawdown): 142 tests
+- ✅ WB-1/2/3 (candidates.yaml + weekend_batch.py + promote_to_paper.py): 29 tests
+- ✅ P3 Execution Readiness Validation: 2,000+ lines
+- ✅ Wave 1-2 Recovery SOP: 6,500+ words
+- ✅ Phase 1 Measurement Infrastructure: 3 components
+- **Total**: 178+ new tests, all passing, zero regressions
+
+**Orientation Work (This Session)**:
+- ✅ Reviewed ORCHESTRATOR_STATE.md (auto-generated, current)
+- ✅ Verified BLOCKED.md entries (4 active blocks, all unresolved)
+- ✅ Processed INBOX.md (no new items since Session 3485)
+- ✅ Assessed all 10 projects for unfinished autonomous scope (none available)
+- ✅ Confirmed git state (clean, master branch)
+- ✅ Verified usage healthy (Sonnet 1.9%, reset in ~42h)
+
+**Assessment**: Correct standing-by state. All autonomous work is production-ready. All remaining work requires explicit user decisions or manual actions. Zero wasted token spend. System is ready for live trading, Day 7 checkpoint analysis, and next autonomous work (June 17-18 checkpoint).
+
+---
+
 ## 🎯 Session 3499 (June 14 06:XX UTC) — ORIENTATION COMPLETE: ALL BLOCKS VERIFIED UNRESOLVED, NO AUTONOMOUS WORK AVAILABLE
 
 **Status**: ✅ **SYSTEM STANDING BY FOR USER DECISIONS** — Complete orientation verified all 4 active blocks remain unresolved. No new INBOX items, no new autonomous work available. All deliverables from Sessions 3475-3495 verified production-ready (178+ tests passing, zero regressions). Critical user decisions pending with published deadlines:
