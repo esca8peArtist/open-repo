@@ -2,6 +2,58 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🔴 Session 3481 (June 14 02:30 UTC) — ALL AUTONOMOUS WORK BLOCKED, AWAITING USER INPUT
+
+**Orchestrator Status**: 🔴 **NO AUTONOMOUS WORK AVAILABLE** — All projects blocked on user decisions or actions. Stockbot P1/P2 complete, P3 blocked on feature architecture decision (Option A vs B, June 18 deadline). Resistance-research paused per unpause directive (stockbot-only priority). All other projects (cybersecurity, mfg-farm, systems-resilience, seedwarden, open-repo) blocked on user actions.
+
+### Session Summary
+
+**Orientation Complete**:
+- **Stockbot**: P1/P2 ✅ complete (Signals health monitor, Quick-eval flag), P3 🔴 **BLOCKED on user feature decision**
+  - Feature mismatch: training uses 14 features, walk-forward eval uses 7
+  - Decision required: Option A (reduce to 7, fast) or Option B (enhance walk-forward to 14, recommended)
+  - June 18 EOD deadline for AAPL lgbm_ho + MSFT ridge_wf retrains
+  - **Verify command**: `uv run python scripts/batch_train_models.py --jobs batch_aapl_msft_retrains.json --max-workers 2`
+- **ML Pipeline**: ML-1/2/3 ✅ complete (Monte Carlo gate, news sentiment, drawdown recovery) — 178 new tests passing
+- **WB-1**: ✅ Delivered (candidates.yaml template ready for user edits)
+- **Resistance-research**: ⏸️ Paused per unpause directive (Wave 1-2 windows expired June 11-12 during pause)
+- **Cybersecurity-hardening**: 🔴 Blocked on VeraCrypt restart (Windows manual action required)
+- **mfg-farm**: 🔴 Blocked on test print execution (user physical action required)
+- **systems-resilience**: 🔴 Blocked on platform deployment decision (Nextcloud+Matrix vs Discourse) — June 9 deadline missed
+- **seedwarden, open-repo**: Status blocked on external actions
+
+**Active Blocks Verified**:
+- ✅ Stockbot P3 feature architecture decision (BLOCKED.md entry exists, awaiting user input)
+- ✅ Cybersecurity VeraCrypt restart (user action required, Windows manual restart)
+- ✅ mfg-farm test print (user physical action required, 0.20mm PLA+ print)
+- ✅ systems-resilience platform decision (user decision required, deployment window passed)
+
+**All Orchestration Files Current**:
+- ORCHESTRATOR_STATE.md: Auto-generated at 2026-06-14T01:38:57Z — all state documented
+- PROJECTS.md: All project statuses current through Session 3480
+- BLOCKED.md: 4 active blocks documented, all awaiting user action
+- INBOX.md: Phase P1-P4 items processed, new inbox items from June 13 unpause processed
+- WORKLOG.md: Latest session logged (3480)
+
+**Work Queue Status**:
+- **Stockbot**: Cannot proceed beyond P3 until user decides feature architecture (Option A vs B)
+- **ML Pipeline**: Complete (ML-1/2/3 delivered, 178 tests passing, all committed)
+- **Weekend Batch**: WB-1 delivered, WB-2/3 remain not started (blocked on P3 completion since ML integration affects batch pipeline)
+- **Resistance-research**: Paused per explicit unpause directive ("Other projects remain paused")
+- **All other projects**: Blocked on specific user actions (VeraCrypt, test print, platform decision, etc.)
+
+**Recommendation for User**:
+To unblock autonomous work, provide decision on ONE of these:
+1. **Stockbot P3** (highest priority, June 18 deadline): Choose Option A or Option B for feature architecture
+2. **systems-resilience**: Choose platform (Nextcloud+Matrix vs Discourse) + provide deployment details (IP, domain, SMTP)
+3. **cybersecurity-hardening**: Restart Windows machine for VeraCrypt pre-boot test
+4. **mfg-farm**: Execute test print and report snap-arm tolerance evaluation
+5. **Resistance-research**: Unpause to execute Wave 1 make-up (domain 51 emails if still relevant) or skip to Wave 2
+
+**Zero Autonomous Work Available**: All work requires explicit user input, decision, or action. Orchestrator standing by for user direction.
+
+---
+
 ## ✅ Session 3480 (June 14 00:52 UTC) — ML-1 MONTE CARLO GATE COMPLETE, QUEUE ACTIVATED
 
 **Orchestrator Status**: ✅ **AUTONOMOUS QUEUE WORK ACTIVATED** — P1+P2 complete, P3 blocked on user decision. ML-1 (Monte Carlo gate G7) successfully implemented. ML-2/3 and WB-1/2/3 queued for execution.
