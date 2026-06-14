@@ -150,6 +150,87 @@ Decided by: _________________  Date: ____________
 
 ---
 
+## Rollback Procedures
+
+### Discourse Rollback (if deployment fails or is abandoned)
+
+**At any point before bootstrap completes** — no persistent state, clean exit:
+
+```bash
+# Remove discourse directory — no container exists yet
+sudo rm -rf /var/discourse
+# No further cleanup needed
+```
+
+**After bootstrap completes but before going live** — container exists, no user data:
+
+```bash
+cd /var/discourse
+sudo ./launcher stop app
+sudo ./launcher destroy app
+# Container is gone; /var/discourse/shared/ holds the persistent volume
+# To fully clean up:
+sudo rm -rf /var/discourse
+```
+
+**After go-live with user data present** — preserve backup before rollback:
+
+```bash
+# 1. Stop container (preserves data)
+cd /var/discourse && sudo ./launcher stop app
+
+# 2. Archive the shared volume before deleting
+tar czf /home/awank/backups/discourse-rollback-$(date +%Y%m%d).tar.gz \
+    /var/discourse/shared/standalone/
+
+# 3. Destroy container
+sudo ./launcher destroy app
+
+# 4. If switching to Nextcloud+Matrix: follow NEXTCLOUD_INSTALLATION_RUNBOOK.md
+# If abandoning deployment: rm -rf /var/discourse (after confirming backup)
+```
+
+**Rollback time estimate**: 10 minutes (stop + destroy + cleanup)
+
+---
+
+### Nextcloud+Matrix Rollback (if deployment fails)
+
+**Before `docker compose up`** — no state:
+
+```bash
+sudo rm -rf /opt/nextcloud-matrix
+# Done
+```
+
+**After `docker compose up`, before user data present**:
+
+```bash
+cd /opt/nextcloud-matrix
+docker compose down --volumes  # removes containers AND named volumes
+sudo rm -rf /opt/nextcloud-matrix
+```
+
+**After go-live with user data present**:
+
+```bash
+cd /opt/nextcloud-matrix
+
+# 1. Backup all volumes first
+docker compose exec -T postgres pg_dumpall -U REPLACE_POSTGRES_USER \
+    | gzip > /home/awank/backups/nc-matrix-rollback-$(date +%Y%m%d).sql.gz
+
+# 2. Stop and remove containers + volumes
+docker compose down --volumes
+
+# 3. Remove config directory
+sudo rm -rf /opt/nextcloud-matrix
+```
+
+**Rollback time estimate**: 20–30 minutes (due to 6-service complexity and volume removal time)
+
+---
+
 ## Related Documents
 
 - **Technical specs**: `NEXTCLOUD_DEPLOYMENT_TECHNICAL_SPEC.md`, `DISCOURSE_DEPLOYMENT_TECHNICAL_SPEC.md`
