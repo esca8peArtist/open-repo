@@ -2,6 +2,42 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3568 (June 14 22:10 UTC) — JUNE 16 PRE-MARKET VALIDATION CHECKLIST PREPARED
+
+**Status**: ✅ **STOCKBOT MARKET OPEN VALIDATION FULLY STAGED** — Created comprehensive pre-market validation checklist (192 lines, 6 health checks, live monitoring steps, success criteria, escalation paths).
+
+**Session Activity**:
+1. ✅ **Created `docs/june-16-premarket-validation-checklist.md`**:
+   - **Section 1 (Pre-Market, 13:00 UTC)**: 6 automated health checks
+     - Jetson connectivity + health endpoint (expects 4 active sessions)
+     - Session config verification (JPM ridge_wf, AMZN lgbm_ho, AAPL lgbm_ho, MSFT lgbm_ho)
+     - Model files present (JPM pkl + AAPL/MSFT/AMZN lgbm joblib files)
+     - Container logs clean (no ERROR/CRITICAL)
+     - Alpaca API reachable (account status ACTIVE)
+     - Market clock verification (is_open=false before 13:30 UTC, showing next_open time)
+   - **Section 2 (Live Trading, 13:30 UTC onward)**: 3 real-time monitoring steps (30-min intervals)
+     - Signal generation verification (AAPL/MSFT buy_prob > 0.30 within first 2 hours)
+     - Trade execution verification (AAPL/MSFT ≥1 trade by 15:30 UTC)
+     - Risk metrics check (P&L within 5% of baseline, container healthy)
+   - **Section 3 (Success Criteria)**: Hard deadline June 18 EOD
+     - AAPL lgbm_ho: ≥1 trade (BUY or SELL) by June 18 20:00 UTC
+     - MSFT lgbm_ho: ≥1 trade (BUY or SELL) by June 18 20:00 UTC
+     - Signal generation: buy_prob > 0.3 on ≥2 distinct market days
+   - **Section 4 (Escalation Path)**: Clear go/no-go routing (1+ pre-market checks fail → HOLD, signal zero at 15:30 → investigate, etc.)
+
+**Staging Status for June 16**:
+- ✅ Pre-market validation checklist: Ready (to run at 13:00 UTC June 16)
+- ✅ Live signal quality validation protocol: Ready (created Session 3562, 51 KB)
+- ✅ Jetson deployment: Healthy (4-session config active, deployed June 14 15:15 UTC)
+- ✅ AAPL lgbm_ho: 6/7 gates pass, OOS Sharpe 2.444, deployment-ready
+- ✅ MSFT lgbm_ho: Live on Jetson, awaiting June 16 validation (3/7 gates, requires post-deadline optimization if underperforms)
+
+**Assessment**: June 16 market open fully staged and documented. All health checks automated, escalation paths clear. Orchestrator ready to execute validation at 13:00 UTC June 16 per JUNE_16_PREMARKET_VALIDATION_CHECKLIST.md.
+
+**Token Usage**: ~2K (checklist creation + commit).
+
+---
+
 ## 🎯 Session 3567 (June 14 20:44–20:48 UTC) — PHASE 2 DAY 7 CHECKPOINT INFRASTRUCTURE STAGED
 
 **Status**: ✅ **EXPLORATION QUEUE REPLENISHMENT COMPLETE — 3 NEW QUEUE ITEMS + 3 DELIVERABLES CREATED** — Replenished Exploration Queue with 2 new strategic items (mfg-farm product ranking, resistance-research post-Wave-2 analysis, stockbot exit model readiness). Created all 3 deliverables for resistance-research Day 7 checkpoint staging.
