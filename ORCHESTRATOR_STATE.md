@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T17:56:34Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T18:13:17Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.3% (203,964 tokens) | All-models 25.4% | Reset in 30h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.3% (203,964 tokens) | All-models 26.0% | Reset in 30h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -93,42 +93,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-4. **User initiation** — resistance-research Phase 2 execution
+**Retrain Results**:
 
-**Session Outcome**: One exploration queue item completed and staged. Seedwarden Phase 2 fully de-risked for June 17 activation. Remaining queue items remain in standby pending external triggers.
+**AAPL lgbm_ho** (latest):
+- Gates: 6/7 PASS ✅ (only G7 Monte Carlo fails, acceptable)
+- OOS Sharpe: 2.4442 (excellent)
+- Max DD: 5.41% (low risk)
+- t-stat: 4.0018 (highly significant)
+- WF Efficiency: 1.0287 (model quality stable out-of-sample)
+- **Verdict**: EXCELLENT — superior to all comparison models
 
-**Token Usage**: ~110K (exploration queue agent execution, 7-level deep research + deliverable production).
+**MSFT ridge_wf** (new):
+- Gates: 3/7 FAIL ❌ (fails G1 Sharpe, G4 DSR, G6 WF Eff, G7 MC)
+- OOS Sharpe: -0.0856 (NEGATIVE — poor model)
+- Max DD: 8.28%
+- t-stat: 2.2671 (marginal)
+- WF Efficiency: -0.1181 (out-of-sample collapse)
+- **Verdict**: POOR — do NOT deploy. Current MSFT lgbm_ho (1.573 Sharpe) vastly superior
 
----
+**Comparison vs Deployed Models** (June 14):
+| Model | Gates | OOS Sharpe | Status |
+|-------|-------|-----------|--------|
+| AAPL lgbm_ho (deployed) | 6/6 | 2.444 | Excellent |
+| AAPL lgbm_ho (retrain) | 6/7 | 2.444 | Stable, hold |
+| MSFT lgbm_ho (deployed) | ? | 1.573 | Good |
+| MSFT ridge_wf (new) | 3/7 | -0.086 | Fail, reject |
 
-## Session 3557 (June 14 17:44 UTC) — EXPLORATION QUEUE EXECUTION: CYBERSECURITY-HARDENING PHASE 1 COMPLETION GUIDES
+**Decision**:
+Current deployed models (AAPL lgbm_ho + MSFT lgbm_ho) should remain unchanged. Retrain confirms AAPL lgbm_ho is stable; MSFT ridge_wf is unsuitable for deployment.
 
-**Status**: ✅ **QUEUE ITEM COMPLETE** — cybersecurity-hardening Phase 1 completion walkthrough + Phase 2 readiness assessment staged and ready for deployment.
+**Next Trigger**:
+**June 16 13:30 UTC market open** — Verify signal generation + trade execution on current deployed models. Use market performance to inform Phase 4 decision (live trading vs extended paper).
 
-**Work Completed**:
-1. ✅ Oriented: Confirmed standing-by state from Session 3556
-2. ✅ Identified executable exploration queue item: cybersecurity-hardening Phase 1 Completion Walkthrough (marked "Executable anytime")
-3. ✅ Spawned research agent to create three comprehensive deliverables
-4. ✅ Updated PROJECTS.md cybersecurity-hardening focus line to reflect completion
+**Assessment**:
+- ✅ User's THIRD priority (retrains) complete
+- ✅ Models evaluated, deployment decisions clear
+- ✅ Infrastructure ready for June 16 validation
+- **Standing-by state**: Maintained. No further autonomous work until June 16 market open trigger.
 
-**Deliverables Created (by subagent)**:
-- ✅ `PHASE_1_COMPLETION_WALKTHROUGH.md` (34 KB): Step-by-step guide for Phase 1 steps 1.3-1.7 (VeraCrypt pre-boot, Ente Auth, Bitwarden, data broker opt-outs, iPhone passcode). 90-120 min execution, common failure modes + recovery procedures for each step.
-- ✅ `PHASE_2_READINESS_CHECKLIST.md` (22 KB): Six-part assessment framework (Phase 1 verification, hardware prerequisites, threat model maturity, financial/time commitment, system prerequisites, readiness decision). Unambiguous Phase 1→2 transition gates.
-- ✅ `PHASE_2_EXECUTION_RUNBOOK.md` (28 KB): Week-by-week execution roadmap (4-8 weeks, 5-7 hours total): Mullvad VPN, ProtonMail, Tor Browser, Windows hardening, Linux encryption, iPhone Lockdown Mode, data broker automation, quarterly maintenance schedule.
-
-**Business Value**: Phase 1 completion fully de-risked. When user restarts VeraCrypt, orchestrator immediately activates Phase 1 walkthrough (steps 1.4-1.7 ready to execute). Phase 2 readiness assessment removes guesswork on prerequisite verification before Phase 2 launch.
-
-**Assessment**: 
-- **Queue item execution**: ✅ COMPLETE — All materials production-ready, committed to `projects/cybersecurity-hardening/` on master (commit 1bc744cb).
-- **Remaining queue items**: 6 items still ⏳, all trigger-gated on external events (P3 decision June 15-17, market open June 16, platform choice June 15, Wave 1-2 completion, VeraCrypt restart)
-- **Standing-by state**: Maintained — one exploration queue item completed; remaining items still awaiting external triggers
-
-**Next Triggers**:
-1. **June 15 EOD** — systems-resilience platform decision (Discourse vs Nextcloud+Matrix)
-2. **June 16 13:30 UTC** — stockbot market open; signal validation + AAPL/MSFT trade execution
-3. **User VeraCrypt restart** — Activate cybersecurity-hardening Phase 1 walkthrough (immediate action upon user system restart)
-4. **User Phase 2 initiation** — resistance-research Wave 1-2 email execution
-
-**Session Outcome**: One exploration queue item completed and staged. Cybersecurity-hardening Phase 1-2 transition fully de-risked. Remaining queue items remain in standby pending external triggers. All code committed to master.
-
-**Token Usage**: ~60K (exploration queue agent execution, 3 comprehensive deliverables).
+**Token Usage**: ~25K (retrain execution + walk-forward backtesting).
