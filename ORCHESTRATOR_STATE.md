@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-12T21:15:33Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T01:27:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 4.4% (390,703 tokens) | All-models 78.9% | Reset in 75h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 2.5% | Reset in 46h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: [RESOLVED 2026-06-11 20:15 UTC: deployment complete] ✅ **INV-1 DEPLOYED & PHASE 3 COMPLETE** — Paused per user directive through June 15 00:00 UTC. Market-open checkpoint at 13:30 UTC (z-score clipping fix deployed, 32 tests passing). Phase P1-P4 (Signal health monitor, quick-eval mode, model comparison, shadow session mode) queued for execution when user resumes.
+**Focus**: ✅ **P1 COMPLETE (Session 3475 agent) — P2 IMPLEMENTATION BEGINS** — User unpause June 13 15:57 UTC. Signal restoration verified June 14 02:15 UTC (AMZN buy_prob=0.33+). 
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -62,6 +62,7 @@
 **Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
 **Resolution**: [leave blank]
 ---
+### stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation
 
 ## Recently Resolved (last 5)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
@@ -73,6 +74,24 @@
 ## Inbox (unprocessed)
 🟢 **PROCESSED (Session 3219, June 11 23:31 UTC)**:
 - ✅ **stockbot Phase P1-P4** (Signal health monitor, Quick-eval mode, Model comparison, Shadow session mode) queued to PROJECTS.md Current focus. All 4 items queued for execution when user resumes work from pause.
+### [2026-06-13 16:31 UTC] stockbot — ML Pipeline Enhancements (3 items, independent of WB series)
+**Context**: Analysis of 12 LLM-for-trading concepts (businessbulls.in) against existing pipeline revealed three high-value gaps not covered by P1-P4 or WB-1/2/3: (1) no probabilistic risk quantification beyond point-estimate max drawdown, (2) no news sentiment signal despite research showing it's the one LLM use case that's genuinely additive to LightGBM, (3) drawdown recovery time not tracked. These are independent of each other and of the weekend batch pipeline — build them in any order, but ML-1 is highest priority as it becomes a G7 gate.
+**Agent Loop**: Every item must go through SPEC→PLAN→IMPLEMENT→REVIEW→FIX. No shortcuts.
+#### [ML-1] `src/analytics/monte_carlo.py` — Monte Carlo gate (G7)
+**Priority**: Highest of the three — becomes a new graduation gate
+**What it does**:
+1. Takes the per-fold daily return sequences already produced by `WalkForwardEngine` (already in the evaluation JSON)
+2. Bootstraps N=1000 sequences by random sampling with replacement from the fold returns (each sequence = same length as the full OOS period)
+3. Computes from the bootstrap distribution:
+   - `p_loss_6mo`: probability the strategy loses money over a 6-month period
+   - `sharpe_p05` / `sharpe_p95`: 5th and 95th percentile annualized Sharpe
+   - `max_dd_p95`: 95th percentile max drawdown (worst-case)
+   - `is_robust`: boolean — True if `p_loss_6mo < 0.30` AND `sharpe_p05 > 0.50`
+4. Adds a `monte_carlo` block to `EvaluationReport` (alongside existing gate results)
+5. Registers as **Gate G7**: `is_robust=True` required to pass. Models with `p_loss_6mo >= 0.30` fail G7.
+**Files to create/modify**:
+- `src/analytics/monte_carlo.py` — new file, `MonteCarloAnalyzer` class
+- `src/model_training_pipeline.py` — integrate into `ModelTrainingPipeline.run()` after full eval; add G7 to `EvaluationReport`
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 **Status**: ✅ **PAUSE DIRECTIVE ACTIVE & CORRECT.** Orchestrator idle per pause directive. Awaiting user actions or June 15 resume signal.
