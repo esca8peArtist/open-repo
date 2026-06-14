@@ -2,6 +2,47 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3540 (June 14 15:35 UTC) — DEPLOYMENT PREP COMPLETE: STOCKBOT MODELS STAGED, WAVE 1-2 EXECUTION READY
+
+**Status**: ✅ **BOTH PRIMARY PROJECTS ADVANCED TO FINAL STAGING** — Parallel execution completed on highest-priority unblocked work.
+
+**Stockbot Deployment (Agent aa7d9390c41b75651)**:
+- ✅ Model files copied to Jetson: `AAPL_lgbm_ho_v1_457ef7c9.pkl` (261 KB) + `MSFT_lgbm_ho_v1_47c2ddcf.pkl` (257 KB) → `/opt/stockbot/models/`
+- ✅ Config `active-sessions.json` verified correct — both sessions already using lgbm_ho strategy (no ridge_wf references)
+- ✅ Model registry updated on Jetson: AAPL (id=304, validation_score=2.4442) + MSFT (id=305, validation_score=1.5729)
+- ⏸️ **Waiting for post-market window**: Docker restart blocked by market hours (13:30–20:00 UTC). Scheduled for 20:00+ UTC today or pre-13:30 UTC June 15.
+- 📅 **June 18 EOD deadline**: On track for deployment + paper trading validation
+
+**Resistance-Research Wave 1-2 (Agent ab14ecc76cc397a56)**:
+- ✅ Wave 1 execution checklist: `WAVE_1_EXECUTION_CHECKLIST.md` (11.1 KB, 2 emails to CLC + Issue One)
+- ✅ Wave 2 execution checklist: `WAVE_2_EXECUTION_CHECKLIST.md` (15.8 KB, 3 emails to Common Cause CA + LWV CA + Clean Money AF)
+- ✅ All 5 email templates: Copy-paste ready (only [YOUR_NAME]/[YOUR_CONTACT_INFO] blank)
+- ✅ Contact list: Verified current (Wave 1: June 5, Wave 2: June 11)
+- ✅ Execution log: Ready for timestamp entry in `DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md`
+- ✅ Total user execution time: 2.5 hours (30 min Wave 1 + 90-min stagger + 45 min Wave 2)
+- 📅 **July 1 hard deadline**: 17-day recovery window available
+
+**Needs Your Input**:
+1. **Post-market (20:00 UTC today or pre-13:30 UTC June 15)**: Create `DEPLOY_READY` file to trigger Jetson Docker restart + model loading + paper trading validation. Command:
+   ```bash
+   touch /home/awank/dev/SuperClaude_Framework/DEPLOY_READY
+   ```
+   (Orchestrator will execute post-market deployment automatically when it detects this file)
+
+2. **Optional (June 14-15)**: Execute Wave 1-2 email sends if you want to recover the June 9-10 slip:
+   - Open `projects/resistance-research/WAVE_1_EXECUTION_CHECKLIST.md`
+   - Follow steps 0-6 (30 min active + 90-min wait between sends)
+   - Then open `WAVE_2_EXECUTION_CHECKLIST.md` and follow steps 1-7 (45 min active + 180-min cumulative wait)
+
+3. **Pending (June 15 EOD)**: Stockbot P3 decision (Option A or B) — this still gates the June 18 retrain work
+
+**Suggested Priority**:
+1. (Critical) Post-market (20:00 UTC): Create DEPLOY_READY to unlock June 18 paper trading validation
+2. (Optional) June 14-15: Wave 1-2 execution if recovery is desired (2.5h user time)
+3. (Critical) By June 15 EOD: P3 architecture decision (triggers June 16-18 retrains)
+
+---
+
 ## 🎯 Session 3538 (June 14 13:36 UTC) — FINAL STANDING-BY VERIFICATION: ALL STATE STABLE, CRITICAL DECISIONS DUE JUNE 15 EOD
 
 **Status**: ✅ **STANDING-BY STATE CONFIRMED STABLE** — Final comprehensive orientation completed per protocol. All four active blocks in BLOCKED.md verified unchanged (no new resolutions). All P3 feature branches confirmed staged and tested (Option A: 41 tests ✅, Option B: 47 tests ✅). Resistance-research Wave 1-2 execution checklists production-ready. Systems-resilience platform deployment specs complete. No new inbox items. Zero autonomous work available—all projects correctly blocked on user decisions or manual actions.
