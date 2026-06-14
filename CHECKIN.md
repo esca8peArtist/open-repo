@@ -2,6 +2,12 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3520 (June 14 12:15 UTC) — EXPLORATION QUEUE REPLENISHED: 3 NEW ITEMS STAGED FOR POST-DECISION EXECUTION
+
+**Status**: ✅ **QUEUE REPLENISHED — STANDING BY FOR JUNE 15 USER DECISIONS** — All prior exploration queue items verified complete and committed (Sessions 3508-3514). Added 3 new queue items for post-decision execution (June 16-18 window). All user decision deadlines documented with clear trigger conditions. Orchestrator standing by for June 15 EOD P3 decision + optional Wave 1-2 execution.
+
+---
+
 ## 🎯 Session 3517 (June 14 11:30 UTC) — STANDING-BY VERIFICATION: ALL AUTONOMOUS WORK COMPLETE, AWAITING USER DECISIONS
 
 **Status**: ✅ **CORRECT STANDING-BY STATE CONFIRMED** — Session 3517 verification: All autonomous work deliverables from Sessions 3509-3516 confirmed committed to master. Stockbot P3 branches fully tested and decision-ready in feature branches. Resistance-research Wave 1-2 execution packages complete and staged. All 4 active blocks remain unresolved (awaiting user manual actions: cybersecurity VeraCrypt, mfg-farm test print, systems-resilience platform choice, stockbot P3 decision). No new autonomous work available. Standing by for three critical user decisions.
