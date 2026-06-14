@@ -2,6 +2,76 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3555 (June 14 17:30 UTC) — CRITICAL ESCALATION + STANDING-BY RECONFIRM
+
+**Status**: ✅ **STANDING-BY CONFIRMED** — All autonomous code work complete. Escalated critical operational blocker (systems-resilience platform decision is 5 days overdue). Updated stale stockbot focus line. No new autonomous work available — all projects blocked on external triggers or user decisions.
+
+**Session Activity**:
+1. ✅ **Orientation**: ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md reviewed
+2. ✅ **Critical Escalation**: Sent Discord alert — **systems-resilience Phase 5.1 platform choice is 5 days overdue (June 9 deadline)**. Immediate user decision required: Nextcloud+Matrix OR Discourse. Provided recommendation: Discourse (2-3h deploy, 8GB RAM vs 16GB, faster setup). Requested: public IP/domain, SMTP credentials, or memory risk confirmation.
+3. ✅ **Stockbot Focus Updated**: Pruned stale focus (referenced Sessions 3539-3545, 15 sessions old). Updated to current state: 4-session live (JPM ridge_wf + AMZN/AAPL/MSFT lgbm_ho), deployed June 14 15:15 UTC, next trigger June 16 13:30 UTC market open.
+4. ✅ **Work Assessment**: All projects correctly blocked or awaiting external triggers. No meaningful autonomous work available.
+
+---
+
+## ⚠️ Needs Your Input (Priority: CRITICAL→HIGH)
+
+### 🚨 CRITICAL — systems-resilience Platform Decision (DUE NOW)
+**Status**: Platform choice 5 days overdue (June 9 deadline missed). Phase 5.1 publication blocked.
+**Action required**: 
+- Decide: Nextcloud+Matrix OR Discourse for Phase 5.1 publication platform
+- **Recommendation**: Discourse (2-3 hour deploy, 8GB RAM optimal vs Nextcloud 16GB, faster setup, suitable for Pi5)
+- **If Discourse chosen**: Provide (1) public IP address or domain name, (2) SMTP server credentials for email notifications
+- **If Nextcloud+Matrix chosen**: Confirm acceptance of memory risk (system has 7.9GB total RAM, Nextcloud wants 16GB)
+- **Timeline**: Provide decision TODAY so deployment can begin June 15 (June 9 deadline already 5 days past)
+
+### HIGH — resistance-research Phase 2 Wave 1-2 Execution (Opportunity Window)
+**Status**: Email campaign packages ready for user execution. Each wave takes 30-45 min and 45-60 min respectively (75 min combined).
+**Action if desired**: 
+- Read `WAVE_1_EMAIL_EXECUTION_PACKAGE.md` and `WAVE_2_EMAIL_EXECUTION_PACKAGE.md` (projects/resistance-research/)
+- Execute 30-45 min (Wave 1: CLC + Issue One tier-1 contacts), log results
+- Execute 45-60 min (Wave 2: clean money coalition expansion), log results
+- User feedback used for June 17 Phase 2 routing decision (Route A/B/C per results)
+- **Timeline**: June 14-15 (opportunity window open; beyond June 18 becomes lower-impact for timing-sensitive domains)
+
+### HIGH — stockbot Market Open Verification (Upcoming Trigger)
+**Status**: Models deployed, 4-session config live, ready for validation.
+**Action required**: 
+- Monitor June 16 13:30 UTC market open (tomorrow)
+- Orchestrator will automatically verify signal generation + trade execution for AAPL/MSFT lgbm_ho models
+- **If all trades execute normally**: June 18 checkpoint proceeds as planned
+- **If no trades execute**: Escalate for investigation (signal quality, model configuration, Alpaca connectivity)
+- **Result feeds into**: Phase 4 architecture decision (live trading vs extended paper trading)
+
+### MEDIUM — seedwarden Phase 1 Day 7 Metrics Check (Upcoming Trigger)
+**Status**: Phase 2 infrastructure fully staged and production-ready (Session 3554). Awaiting Phase 1 metrics decision.
+**Action on June 17 09:00 UTC**:
+- Review Phase 1 metrics (engagement rates, coalition strength, impact per constituency)
+- Decide Route A (STRONG metrics → full Phase 2), Route B (MODERATE → selective), Route C (WEAK → diagnostic + Phase 3)
+- Orchestrator immediately executes selected route (2-4 hour activation)
+- **Infrastructure ready**: Content calendar, influencer pipeline, contingency routing all production-ready per Session 3554
+
+**Critical Decision — URGENT**:
+- **systems-resilience platform choice**: Due NOW (was June 15 EOD, now 5 days overdue). User must decide Nextcloud+Matrix vs Discourse by EOD today. Blocks Phase 5.1 publication (was scheduled June 9).
+
+**Upcoming Triggers**:
+- **June 16 13:30 UTC (~20 hours)**: stockbot market open verification (AAPL/MSFT models live, signal quality check required)
+- **June 17 09:00 UTC (~15.5 hours)**: seedwarden Phase 1 Day 7 metrics checkpoint (Phase 2 routing decision A/B/C; infrastructure now production-ready per Session 3554)
+- **June 18 EOD**: stockbot paper trading checkpoint (both models must execute trades validating 6/7 gate criteria)
+
+**System Status** (all production-ready):
+- ✅ stockbot: 4-session deployed, models live, ready for market verification
+- ✅ resistance-research: Phase 2 Wave 1-2 execution packages ready (CLC + Issue One, 75 min total)
+- ✅ seedwarden: Phase 2 staging complete (content calendar, influencer pipeline, routing logic all staged)
+- ❌ systems-resilience: **CRITICAL BLOCKER — platform decision required**
+- ✅ All infrastructure: Stable, healthy, no code-level issues
+
+**Session Outcome**: Escalated critical operational blocker. Confirmed standing-by state correct. All autonomous work complete; awaiting external triggers and user decisions.
+
+**Token Usage**: ~10K (orientation + escalation + focus update).
+
+---
+
 ## 🎯 Session 3554 (June 14 17:30–19:00 UTC) — EXPLORATION QUEUE EXECUTION: SEEDWARDEN PHASE 2 STAGING COMPLETE
 
 **Status**: ✅ **STANDING-BY + QUEUE EXECUTION CONTINUED** — Orchestrator standing-by with all critical autonomous code work complete. Identified and executed ready exploration queue item (seedwarden Phase 2 staging) to eliminate friction for June 17 Day 7 metrics decision. All three deliverables production-ready and committed to master.
