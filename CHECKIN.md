@@ -20496,3 +20496,37 @@ Orchestrator completed exploration queue item verification and replenishment. Al
 - None required this session (P3 decision already made by user at 13:43 UTC)
 - Watch Jetson deployment success during post-market hours (outside US market hours Mon-Fri 13:30-20:00 UTC)
 
+
+---
+
+## Check-in Summary — Session 3558 (June 14 18:59 UTC)
+
+### What Was Done
+Executed user's explicit THIRD priority from June 13 unpause directive: ran AAPL + MSFT retrains using P2 quick-eval flag. Both models evaluated in <5 minutes with full walk-forward validation.
+
+### Retrain Results & Recommendations
+
+**✅ AAPL lgbm_ho (retrain)** — 6/7 gates PASS
+- OOS Sharpe: 2.444 (same as deployed)
+- Max DD: 5.41%, t-stat: 4.00
+- **Verdict**: Excellent model. Current deployment confirmed stable.
+
+**❌ MSFT ridge_wf (new)** — 3/7 gates FAIL
+- OOS Sharpe: -0.086 (negative!)
+- Model underperforms current MSFT lgbm_ho (1.573 Sharpe)
+- **Verdict**: Do NOT deploy. Keep current MSFT lgbm_ho live.
+
+### Current Deployment Status
+Both deployed models (AAPL lgbm_ho + MSFT lgbm_ho) confirmed superior to alternatives. Infrastructure ready for June 16 market open validation.
+
+### Immediate Next Steps
+1. **June 15 EOD**: systems-resilience platform decision (Discourse vs Nextcloud+Matrix) — user action required
+2. **June 16 13:30 UTC**: Market open. Verify AAPL/MSFT signal generation + trade execution (automatic)
+3. **June 16–18**: Phase 4 architecture decision (live trading vs extended paper) based on June 16 results
+
+### Standing-by State
+Correct and stable. All exploration queue items trigger-gated on external events (market open, user decisions). No further autonomous work until June 16.
+
+### Items Needing User Input
+None at this moment. User decisions queued for June 15 (platform choice) and June 18 (Phase 4 architecture).
+
