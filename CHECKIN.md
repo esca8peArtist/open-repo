@@ -56,7 +56,38 @@
 
 ### Status
 
-✅ **UNPAUSE DIRECTIVE CONFIRMED & EXECUTION UNDERWAY** — Autonomous work resumed immediately upon user signal. P1-P2 execution begins. June 18 deadline enforced (AAPL/MSFT retrains). Signal quality fully restored; models generating proper trading signals.
+✅ **SESSION 3475 COMPLETE — P1+P2 DELIVERED, AAPL/MSFT RETRAINS READY** — User unpause directive (June 13 15:57 UTC) processed successfully. Signal restoration verified. P1 (Signal Health Monitor) and P2 (Quick-Eval Flag) both complete, tested, and committed to master (commits f3eb819 + 87f8b16). All 90+56 new tests passing, zero regressions. AAPL/MSFT retrains ready to execute with P2 quick-eval screening:
+
+**READY FOR IMMEDIATE EXECUTION** (recommended June 15-16):
+```bash
+cd projects/stockbot
+
+# AAPL lgbm_ho — quick-eval first (should complete <15min)
+uv run python scripts/train_and_evaluate_model.py \
+  --ticker AAPL --strategy lgbm_ho \
+  --train-start 2022-01-01 --train-end 2026-06-14 \
+  --quick
+
+# If quick-eval passes gate threshold, run full eval
+uv run python scripts/train_and_evaluate_model.py \
+  --ticker AAPL --strategy lgbm_ho \
+  --train-start 2022-01-01 --train-end 2026-06-14
+
+# MSFT ridge_wf — same pattern
+uv run python scripts/train_and_evaluate_model.py \
+  --ticker MSFT --strategy ridge_wf \
+  --train-start 2022-01-01 --train-end 2026-06-14 \
+  --quick
+
+# Full eval if quick-eval passes
+uv run python scripts/train_and_evaluate_model.py \
+  --ticker MSFT --strategy ridge_wf \
+  --train-start 2022-01-01 --train-end 2026-06-14
+```
+
+**Projected timeline**: Quick-eval ~30min both models, full eval ~90min both if quick passes gates. June 18 EOD deadline: ample headroom.
+
+**Next: FOURTH STEP** (if expansion approved after retrains): P3 (Model comparison), P4 (Shadow session mode). Also queue: ML-1/2/3 (Monte Carlo gate, news sentiment, drawdown recovery) and WB-1/2/3 (weekend batch pipeline).
 
 ---
 
