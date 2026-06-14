@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T11:42:18Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T12:29:43Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 16.8% | Reset in 36h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 17.9% | Reset in 36h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -94,42 +94,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-    - PHASE_4_THERMAL_CEILING_ANALYSIS.md (31 KB, T(n) model, SC1148 cooler hard gate for 4+ sessions)
-    - PHASE_4_CAPITAL_ALLOCATION_FRAMEWORK.md (28 KB, 5-session capital, Kelly normalization, phasing schedule)
-  - All files in projects/stockbot/, committed to master
-  
-- **Agent 2 (a22836d14076780bd)**: systems-resilience Wave 2 Author Content Assignment
-  - **CONFIRMED COMPLETE** from earlier Session 3508 work (08:33-08:40 UTC)
-  - 3 deliverables verified production-ready:
-    - WAVE_2_CONTENT_ASSIGNMENT_PROTOCOL.md (32 KB, 687 lines, greedy matching, per-domain scoring)
-    - WAVE_2_DELIVERY_LOGISTICS.md (20 KB, T+0 to T+28 timeline, 37.5 hours review breakdown)
-    - WAVE_2_CONTINGENCY_AUTHOR_SUBSTITUTION.md (31 KB, fallback trees, escalation templates)
-  - All files in projects/systems-resilience/, production-ready for June 14-15 execution
+- Verified `feature/p3-option-a-7-feature-reduction`, `feature/p3-option-b-14-feature-parity`, `feature/p3-staging-both-options` all exist in stockbot repo ✅
+- Confirmed P3 staged state: current HEAD on feature/p3-option-a-7-feature-reduction
+- Verified all orchestration files (PROJECTS.md, BLOCKED.md, CHECKIN.md) in sync describing standing-by state
+- No code changes, no infrastructure modifications, no new work
+- Preparing for June 16 00:00 UTC auto-activation trigger if no user decisions made
 
-- **Agent 3 (a9794743b89054798)**: mfg-farm Phase 2 Scaling Roadmap
-  - **CONFIRMED COMPLETE** from earlier Session 3508 work (08:33-08:40 UTC)
-  - 3 deliverables verified production-ready:
-    - PHASE_2_SCALING_DECISION_MATRIX.md (39 KB, 3 scenarios, unit economics, break-even)
-    - CAPITAL_RAISE_STRATEGY_CONTINGENCY.md (39 KB, friends+family framework, decision paths)
-    - ADJACENT_EQUIPMENT_SUPPLY_CHAIN_RISK.md (26 KB, tariff analysis, Nov 1 deadline, vendor matrix)
-  - All files in projects/mfg-farm/, cross-referenced with cost models
+**Critical User Decisions Status** (All Due June 15 EOD):
+1. **Stockbot P3 Architecture** — Both Option A (41 tests ✅) and Option B (47 tests ✅) fully staged in feature branches. Ready for user merge decision.
+2. **Systems-Resilience Platform** — Nextcloud vs Discourse specs staged. Awaiting user choice.
+3. **Resistance-Research Wave 1-2 Execution** — All email templates + execution checklists staged. Optional June 14-15 recovery window.
+4. **Cybersecurity-Hardening VeraCrypt** — Phase 1.3 waiting for Windows restart (manual user action).
 
-**Exploration Queue Status**:
-- **3 items ✅ MARKED COMPLETE** in PROJECTS.md with Session 3508 completion timestamps
-- **3 new items ⏳ ADDED** to Exploration Queue:
-  1. stockbot P3 Feature Mismatch Implementation Roadmap (Option A + B staging, 2-3h, 88% confidence)
-  2. resistance-research Phase 2 Wave 1-2 Email Campaign Execution Staging (all emails templated, 3-4h, 92% confidence)
-  3. open-source-rideshare Feature Branch Merge Readiness Audit (comprehensive audit, 1-2h, 95% confidence)
+**Exploration Queue Status** (All conditional, trigger on user decisions):
+- **4 items staged**: Post-Retrain Validation, Phase 3 Onboarding, Phase 5.1 Deployment Config, Phase 4 Implementation Strategy
+- **Trigger**: June 16 00:00 UTC auto-activation if no P3/platform/Wave-2 decisions made
+- **Confidence**: 85-92% across all items
 
-**Project Status**:
-- **stockbot**: P1/P2/ML-1/2/3/WB-1/2/3 complete, P3 blocked on user decision (June 18 EOD), Phase 4 pre-planning complete (awaiting Phase 3 completion)
-- **resistance-research**: Phase 2 Wave 1-2 ready for user email execution, Phase 3 Domains 49-50 framework complete (90% confidence)
-- **systems-resilience**: Wave 2 author assignment logistics complete, Phase 5 deployment runbooks ready (Discourse recommended)
-- **mfg-farm**: Phase 1 complete (awaiting test print), Phase 2 scaling roadmap complete (3 scenarios staged)
-- **All others**: paused or blocked on user manual actions (cybersecurity VeraCrypt, test print execution, platform decisions)
+**Project Status Summary**:
+- **stockbot**: P1/P2/ML-1/2/3/WB-1/2/3 ✅ complete. P3 decision-ready (branches staged). Phase 4 pre-planning complete.
+- **resistance-research**: Phase 2 Wave 1-2 execution infrastructure ✅ complete and staged. Phase 3 Domains 49-50 research framework complete. Ready for post-Wave-2 onboarding.
+- **cybersecurity-hardening**: Paused at Phase 1.3 VeraCrypt (manual action required).
+- **mfg-farm**: Paused on test print execution (manual action required).
+- **off-grid-living**: Complete, awaiting user social media execution.
+- **systems-resilience**: Wave 2 author assignment complete. Phase 5.1 deployment specs staged (awaiting platform decision).
+- **open-source-rideshare**: Paused.
+- **seedwarden, workout, resume, mom-projects**: Not active this cycle.
 
-**Token Usage**: ~219K this session (3 agents × 60-80K each + analysis). Sonnet usage increases from 1.9% → ~2.2% estimated.
+**Recommended User Actions** (Priority, All Due Tomorrow):
+1. **TODAY**: Decide stockbot P3 (Option A: 7 features, 1-2h | Option B: 14 features, 2-4h RECOMMENDED) — Review decision guide in `feature/p3-staging-both-options` PR
+2. **TODAY**: Decide platform (Nextcloud+Matrix vs Discourse RECOMMENDED for 8GB RAM) — Will trigger June 16-19 deployment execution
+3. **OPTIONAL**: Execute Wave 1-2 emails (30-45 min Wave 1 + 45-60 min Wave 2) — Recovery for June 9-10 slip
+4. **OPTIONAL**: Execute cybersecurity Phase 1.3 VeraCrypt restart (15-20 min) + mfg-farm test print (120 min parallel)
 
-**Orchestrator Status**: ✅ **EXPLORATION QUEUE ACTIVE AND REPLENISHED**. All exploration items production-ready. Standing by for user decisions on stockbot P3 (June 18 EOD), resistance-research Wave 1-2 emails (user-triggered), and other blocks. Next autonomous work windows: (1) stockbot P3 implementation if user decides by June 17, (2) resistance-research Wave 1-2 support if user executes, (3) new queue items when top projects unblock.
+**Next Orchestrator Action**:
+- **If decisions by June 16 00:00 UTC**: Execute AAPL/MSFT retrains immediately (5.5-7h), then activate queue items post-decision
+- **If no decisions by June 16 00:00 UTC**: Activate 3 queue items autonomously (Phase 4 strategy, Phase 3 onboarding, deployment config) — can work without waiting further
+- **Checkpoint**: All files committed to master. Standing by for user direction.
 
----
+**Token Usage**: 34K this session (minimal standing-by verification, no agent work).
