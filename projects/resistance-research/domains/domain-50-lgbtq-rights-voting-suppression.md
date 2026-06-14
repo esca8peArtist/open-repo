@@ -4,9 +4,9 @@ subtitle: "How Six November 2026 Ballot Measures, 210,000 Trans Voters Without M
 phase: "Phase 2 Domain Expansion"
 created: "2026-06-01"
 session: "Resistance Research Agent — Domain 50 production"
-status: "complete"
-word_count: ~7800
-citations: 58
+status: "complete — June 14, 2026 expansion"
+word_count: ~11200
+citations: 87
 license: "CC Attribution 4.0"
 cross_references:
   - "Domain 55 (LGBTQ+ Rights — ADF legal infrastructure; this document is the ballot measure and voting suppression companion to Domain 55's legislative and constitutional analysis)"
@@ -423,12 +423,124 @@ The SAVE Act has not passed the Senate as of June 2026. Senate advocacy against 
 67. [Supreme Court Formally Asked to Overturn Landmark Same-Sex Marriage Ruling — ABC News](https://abcnews.com/Politics/supreme-court-formally-asked-overturn-landmark-same-sex/story?id=124465302)
 68. [Movement Advancement Project — Equality Maps](https://lgbtmap.org/equality-maps)
 69. [Republicans Escalate Anti-Trans Push as 2026 Midterms Take Shape — JRL Charts](https://jrlcharts.com/2026/04/08/republicans-escalate-anti-trans-push-as-2026-midterms-take-shape/)
+70. [Kalarchik v. State — Montana Supreme Court (April 14, 2026) — Justia](https://law.justia.com/cases/montana/supreme-court/2026/da-25-0139.html)
+71. [Montana Supreme Court Blocks Law Barring Trans People from Updating Identity Documents — ACLU of Montana](https://www.aclumontana.org/press-releases/montana-supreme-court-blocks-law-barring-transgender-people-from-updating-identity-documents/)
+72. [Kalarchik v. State — State Court Report](https://statecourtreport.org/case-tracker/kalarchik-v-state)
+73. [HRC — Background on Little v. Hecox and West Virginia v. B.P.J.](https://www.hrc.org/press-releases/backgrounder-supreme-court-to-hear-oral-arguments-for-west-virginia-v-bpj-and-little-v-hecox-key-cases-on-the-inclusion-of-transgender-youth-in-sports)
+74. [Little v. Hecox — Wikipedia](https://en.wikipedia.org/wiki/Little_v._Hecox)
+75. [SCOTUSblog — Trans Athlete Cases Oral Argument Live Blog (January 13, 2026)](https://www.scotusblog.com/2026/01/oral-argument-live-blog-for-tuesday-january-13/)
+76. [NWLC — BPJ and Hecox: Two Supreme Court Cases on Transgender Inclusion in Sports](https://nwlc.org/resource/bpj-and-hecox-two-supreme-court-cases-impacting-transgender-student-inclusion-in-sports/)
+77. [ACLU — Supreme Court Allows Trump Administration to Enforce Discriminatory Passport Policy](https://www.aclu.org/press-releases/supreme-court-allows-trump-administration-to-enforce-discriminatory-passport-policy)
+78. [Padilla Leads Effort to Defeat Republican Attempts to Pass Anti-Voter SAVE Act in the Dead of Night](https://www.padilla.senate.gov/newsroom/press-releases/padilla-leads-effort-to-defeat-republican-attempts-to-pass-anti-voter-save-act-in-the-dead-of-night/)
+79. [Senate Rejects Another GOP Push to Revive SAVE America Act — Democracy Docket](https://www.democracydocket.com/news-alerts/senate-rejects-another-gop-push-to-revive-save-america-act/)
+80. [A Federal Appellate Court Just Blocked Trump's Military Ban — National Center for LGBTQ Rights](https://www.nclrights.org/about-us/press-release/a-federal-appellate-court-just-blocked-trumps-military-ban-stopping-the-discharge-of-transgender-service-members/)
+81. [Talbott v. USA — GLAD Law](https://www.gladlaw.org/a-federal-appellate-court-just-blocked-trumps-military-ban-stopping-the-discharge-of-transgender-service-members/)
+82. [Lambda Legal Raises $285 Million — "Unstoppable Future" Campaign](https://lambdalegal.org/newsroom/us_20250605_ll-raises-285-million-powering-the-largest-single-campaign-to-fight-threats-to-lgbtq-liberty-in-history/)
+83. [Virginia Remove Same-Sex Marriage Ban Amendment (2026) — Ballotpedia](https://ballotpedia.org/Virginia_Remove_Constitutional_Same-Sex_Marriage_Ban_Amendment_(2026))
+84. [Ohio Equality of Rights Under the Law Amendment (2026) — Ballotpedia](https://ballotpedia.org/Ohio_Equality_of_Rights_Under_the_Law_Amendment_(2026))
+85. [Ohio Remove Constitutional Same-Sex Marriage Ban Amendment (2026) — Ballotpedia](https://ballotpedia.org/Ohio_Remove_Constitutional_Same-Sex_Marriage_Ban_Amendment_(2026))
+86. [Basic Rights Oregon — Equal Rights for All](https://www.basicrights.org/era)
+87. [Vermont Equal Rights Amendment (2026) — Ballotpedia](https://ballotpedia.org/Vermont_Equal_Rights_Amendment_(2026))
+
+---
+
+## 9. June 2026 Developments — Constitutional Updates and Litigation Surge
+
+*Added June 14, 2026. The five developments in this section materially update the constitutional analysis (Section 3), voter suppression stack (Section 2), and coalition capacity (Section 6.2). They are presented here as an integrated supplement rather than requiring rewrites of the sections they update.*
+
+### 9.1 Montana Supreme Court — State Constitutional Heightened Scrutiny (April 14, 2026)
+
+The Montana Supreme Court issued the most significant state constitutional ruling in the post-Skrmetti landscape. In *Kalarchik v. State* (5-2, April 14, 2026), the court upheld a preliminary injunction blocking enforcement of three interlocking anti-trans identity-document policies: Montana SB 458 (a binary sex definition throughout the Montana Code), a 2022 DPHHS rule restricting birth certificates, and a 2024 Motor Vehicle Division policy barring driver's license updates.
+
+The constitutional holding is decisive: the Montana Supreme Court declared that "transgender discrimination is, by its very nature, sex discrimination" under Montana's Individual Dignity clause (Article II, Section 4), and that trans people constitute a suspect class under the state's equal protection analysis. The court applied strict scrutiny — not Skrmetti's rational basis — requiring the state to demonstrate a compelling interest narrowly tailored to achieve it. That is the standard that anti-trans laws almost never survive.
+
+The significance for Domain 50's reform architecture is direct. This is Lambda Legal's state court alternative strategy (Section 3.2) succeeding in practice, not in theory. Montana is not a liberal state; it has an active legislative anti-trans coalition. If Montana's state constitution applies heightened scrutiny to trans discrimination, then Colorado (whose state constitution's equal protection provision Lambda Legal will analyze for the Romer challenge), Washington, and Missouri may also apply independent state constitutional analysis that exceeds Skrmetti's federal floor.
+
+The voter suppression connection: the injunction specifically blocks the policies restricting driver's license gender marker updates — one of the primary mechanisms through which trans people face ID mismatch under voter ID laws. If the Montana injunction holds on the merits, Montana trans voters will have a judicially confirmed pathway to accurate state-issued ID that Colorado and Washington voters may not have under the anti-trans ballot measures currently on those states' ballots.
+
+**Sources**: [Kalarchik v. State — Justia (DA-25-0139, April 14, 2026)](https://law.justia.com/cases/montana/supreme-court/2026/da-25-0139.html); [Montana Supreme Court Blocks Law Barring Trans People from Updating Identity Documents — ACLU of Montana](https://www.aclumontana.org/press-releases/montana-supreme-court-blocks-law-barring-transgender-people-from-updating-identity-documents/); [Montana Supreme Court Upholds Preliminary Injunction for Trans Identification Lawsuit — Montana Right Now](https://www.montanarightnow.com/montana/montana-supreme-court-upholds-preliminary-injunction-for-transgender-identification-lawsuit/article_97aef65a-93af-42ad-87ac-4791fe37523f.html); [Kalarchik v. State — State Court Report](https://statecourtreport.org/case-tracker/kalarchik-v-state)
+
+### 9.2 SCOTUS Trans Athlete Cases — Decision Imminent (Filed January 13, 2026; Decision Expected by End of June 2026)
+
+The Supreme Court heard oral arguments in *Little v. Hecox* (Idaho Fairness in Women's Sports Act; Lambda Legal/ACLU/Legal Voice) and *West Virginia v. B.P.J.* (West Virginia trans sports ban) on January 13, 2026. As of June 14, 2026, no decision has been issued. The decision is expected before the end of the Court's term — imminent.
+
+The legal questions before the Court: (1) Do trans sports bans violate Title IX's sex discrimination prohibition? (2) Do they violate Equal Protection's 14th Amendment? Oral argument reporting indicates the 6-3 conservative majority appeared likely to uphold bans — applying Skrmetti's rational basis framework to sports exclusion under both statutory and constitutional analysis.
+
+The democratic participation implications of the decision are distinct from its athletic access implications:
+
+- If the Court upholds bans under rational basis, it confirms that the constitutional floor set by Skrmetti now covers sports exclusion. ADF's model sports ban legislation — the Idaho Fairness in Women's Sports Act — will be constitutionally validated, accelerating the six additional states where ADF has pending legislation. This expands the scope of legal targeting that creates the organizational attrition analyzed in Section 6.1.
+
+- If the Court applies Title IX analysis rather than constitutional analysis, it creates a statutory (not constitutional) basis for sports bans that cannot be overturned by administrative rulemaking — removing another layer of the federal administrative pathway for trans protection that the Biden administration had used.
+
+Either outcome requires updating Section 3.1's "What Skrmetti held and did not hold" analysis. The sports ban cases extend Skrmetti's constitutional architecture from healthcare to athletics. The state court alternative (Section 3.2) becomes the primary strategic response: state constitutions may still apply heightened scrutiny that federal courts have removed, as *Kalarchik* demonstrates.
+
+**Distribution urgency trigger**: When decided, distribute Domain 50's constitutional analysis sections (Sections 3 and 9.1) immediately to Lambda Legal, ACLU, and HRC. This ruling will dominate LGBTQ+ news coverage and is the optimal distribution window for the framework's constitutional analysis.
+
+**Sources**: [HRC — Background on Little v. Hecox and West Virginia v. B.P.J.](https://www.hrc.org/press-releases/backgrounder-supreme-court-to-hear-oral-arguments-for-west-virginia-v-bpj-and-little-v-hecox-key-cases-on-the-inclusion-of-transgender-youth-in-sports); [Little v. Hecox — Wikipedia](https://en.wikipedia.org/wiki/Little_v._Hecox); [SCOTUSblog — Trans Athlete Cases Live Blog (January 13, 2026)](https://www.scotusblog.com/2026/01/oral-argument-live-blog-for-tuesday-january-13/); [NWLC — BPJ and Hecox: Two Supreme Court Cases Impacting Transgender Student Inclusion in Sports](https://nwlc.org/resource/bpj-and-hecox-two-supreme-court-cases-impacting-transgender-student-inclusion-in-sports/); [Unpacking the Transgender Athletes' Case at the Supreme Court — Constitution Center](https://constitutioncenter.org/blog/unpacking-the-transgender-athletes-case-at-the-supreme-court)
+
+### 9.3 SCOTUS Allows Trump Trans Passport Policy — ID Mismatch Stack Worsens
+
+The Supreme Court's conservative majority stayed the expanded class-certification injunction that had temporarily covered all trans, nonbinary, and intersex passport applicants. The Trump passport policy — requiring sex assigned at birth, eliminating the X marker — is now enforceable while lower court litigation continues.
+
+The specific consequence for the voter suppression stack (Section 2): the passport stay removes the one federal court protection that had briefly restored an ID pathway for trans voters. Passport is a valid photo ID for SAVE Act registration purposes and for most state voter ID laws. Trans people who had briefly gained passport access through the expanded class injunction now face the same document freeze that has been in effect since EO 14168.
+
+The suppression-suppression paradox (Section 2.4) now has an additional SCOTUS-enabled layer: the same Court that is about to rule on trans athlete bans has already removed federal court protection for trans passport access — during the election cycle in which six anti-trans ballot measures are on the ballot in states where trans voters face documented ID barriers. The constitutional architecture converging in June–July 2026 is the most adverse for trans civil rights since the pre-Obergefell era.
+
+**Source**: [ACLU — Supreme Court Allows Trump Administration to Enforce Discriminatory Passport Policy](https://www.aclu.org/press-releases/supreme-court-allows-trump-administration-to-enforce-discriminatory-passport-policy)
+
+### 9.4 SAVE Act — Senate Has Blocked Multiple Passage Attempts (June 2026 Status)
+
+The SAVE Act has failed in the Senate twice as of early June 2026. Senator Padilla led colleagues in defeating Republican attempts to attach the SAVE Act to immigration funding packages on at least two occasions, including a late-night attempt described by Democracy Docket as a push to "jam through President Trump's partisan election takeover ahead of the midterm elections."
+
+The legislative status as of June 14, 2026: the SAVE Act remains alive as a legislative vehicle that Republicans are attempting to attach to must-pass legislation. The failures in the Senate are not permanent — each new legislative vehicle presents a new opportunity to attach the Act. Senate advocacy against this attachment strategy remains the most consequential single action to prevent addition of the third suppression layer before November 2026.
+
+**Sources**: [Padilla Leads Effort to Defeat Republican Attempts to Pass Anti-Voter SAVE Act in the Dead of Night](https://www.padilla.senate.gov/newsroom/press-releases/padilla-leads-effort-to-defeat-republican-attempts-to-pass-anti-voter-save-act-in-the-dead-of-night/); [Senate Rejects Another GOP Push to Revive SAVE America Act — Democracy Docket](https://www.democracydocket.com/news-alerts/senate-rejects-another-gop-push-to-revive-save-america-act/); [Padilla Leads Charge to Successfully Block Another SAVE America Act Push](https://www.padilla.senate.gov/newsroom/press-releases/watch-padilla-leads-charge-to-successfully-block-another-save-america-act-push/)
+
+### 9.5 Talbott v. USA — D.C. Circuit Blocks Military Trans Ban (June 1, 2026)
+
+The D.C. Circuit upheld a preliminary injunction blocking discharge of transgender servicemembers in *Talbott v. USA* (2-1, June 1, 2026). The district court's finding that the military trans ban "undermines national security and is likely unconstitutional" was affirmed for current servicemembers.
+
+The significance for Domain 50's anti-countermajoritarian analysis: the D.C. Circuit ruling — issued one month before the anti-trans ballot measure campaign season — applies the constitutional logic of *Romer v. Evans* to an executive action, finding the military ban "appears to be driven by the bare desire to harm a politically unpopular group." This is the strongest recent federal appellate articulation of the anti-countermajoritarian principle in the context of trans rights specifically. The language tracks Kennedy's *Romer* majority directly.
+
+Caveats: The ruling was 2-1 with a Republican-appointed dissent, applying only to current servicemembers, not prospective enlistees. A class certification hearing was scheduled for June 30, 2026. The preliminary injunction reflects likelihood of success on the merits, not constitutional vindication.
+
+**Sources**: [A Federal Appellate Court Just Blocked Trump's Military Ban — NCLR](https://www.nclrights.org/about-us/press-release/a-federal-appellate-court-just-blocked-trumps-military-ban-stopping-the-discharge-of-transgender-service-members/); [D.C. Circuit Upholds Preliminary Injunction in Talbott v. USA — GLAD Law](https://www.gladlaw.org/a-federal-appellate-court-just-blocked-trumps-military-ban-stopping-the-discharge-of-transgender-service-members/); [Talbott v. USA (Justia, D.C. Circuit, June 1, 2026)](https://law.justia.com/cases/federal/appellate-courts/cadc/25-5087/25-5087-2026-06-01.html)
+
+### 9.6 Lambda Legal — $285 Million "Unstoppable Future" Campaign Completion
+
+Lambda Legal raised $285 million through its "Unstoppable Future" campaign, exceeding its $180 million goal by $105 million — the largest fundraising campaign in LGBTQ+ movement history. By end of 2026, Lambda Legal's legal team will grow 42% (from 36 to 51 attorneys), expanding case docket capacity by 86%.
+
+The organizational capacity analysis in Section 6.1 noted that ADF's legislative flooding strategy forces LGBTQ+ civil society organizations into permanent defense mode, leaving no capacity for affirmative voter registration and civic mobilization. Lambda Legal's campaign directly counters this attrition: they are the largest and most litigation-intensive LGBTQ+ legal organization, and their capacity expansion means they can simultaneously defend against the 793 bills, litigate Skrmetti's aftermath, prepare ballot measure challenges, and pursue the DOJ health records subpoena case.
+
+This development also affects the distribution strategy: Lambda Legal is better resourced to use Domain 50's analysis than it was in 2025. The $285 million completion is itself a credibility signal for outreach — they can act on research, not merely absorb it.
+
+**Source**: [Lambda Legal Raises $285 Million — Lambda Legal "Unstoppable Future" Campaign](https://lambdalegal.org/newsroom/us_20250605_ll-raises-285-million-powering-the-largest-single-campaign-to-fight-threats-to-lgbtq-liberty-in-history/)
+
+### 9.7 Pro-Equality Ballot Measures — The Democratic Self-Correction Mechanism
+
+Seven pro-equality ballot measures are on the November 2026 ballot alongside the six anti-trans measures. This two-direction analysis is analytically important: the same ballot initiative infrastructure that ADF weaponizes for anti-trans measures is being used constructively for pro-equality protections. The Romer argument applies in positive form — if anti-trans ballot measures unconstitutionally use majority vote to strip minority protections, pro-equality measures use the same channel to restore or establish protections.
+
+**Virginia**: Legislature-certified amendment to remove the constitutional ban on same-sex marriage from the Virginia Constitution.
+[Ballotpedia — Virginia Remove Same-Sex Marriage Ban Amendment (2026)](https://ballotpedia.org/Virginia_Remove_Constitutional_Same-Sex_Marriage_Ban_Amendment_(2026))
+
+**Ohio (2 measures)**: An Equality of Rights Amendment covering sexual orientation, gender identity, and other protected characteristics; plus a separate amendment to remove Ohio's constitutional same-sex marriage ban.
+[Ballotpedia — Ohio Equality of Rights Under the Law Amendment (2026)](https://ballotpedia.org/Ohio_Equality_of_Rights_Under_the_Law_Amendment_(2026)); [Ballotpedia — Ohio Remove Constitutional Same-Sex Marriage Ban Amendment (2026)](https://ballotpedia.org/Ohio_Remove_Constitutional_Same-Sex_Marriage_Ban_Amendment_(2026))
+
+**Oregon**: The most comprehensive pro-equality measure: an Equal Rights for All amendment affirming rights to abortion, contraception, IVF, transgender healthcare, and same-gender marriage in the Oregon Constitution. Oregon's measure is the mirror image of Missouri Amendment 3's negative bundle — an affirmative bundle of reproductive and LGBTQ+ rights.
+[Basic Rights Oregon — Equal Rights for All](https://www.basicrights.org/era)
+
+**Vermont**: Equal rights amendment adding race, ethnicity, sex, religion, disability, sexual orientation, and gender identity to protected characteristics. Vermont must pass the amendment again in the 2026 legislative session before it appears on the ballot.
+[Vermont Equal Rights Amendment (2026) — Ballotpedia](https://ballotpedia.org/Vermont_Equal_Rights_Amendment_(2026))
+
+**Missouri (pro-equality measure)**: A separate abortion rights protection measure distinct from the anti-abortion and anti-trans Amendment 3. The Missouri ballot presents voters with simultaneous affirmative and negative choices on both reproductive rights and LGBTQ+ rights — the clearest illustration of the two-direction ballot initiative landscape in a single state.
+
+Important framing guardrail: pro-equality ballot measures represent democratic mobilization, not constitutional protection. Missouri's 2024 Amendment 3 (abortion rights) is itself being targeted by 2026's Amendment 3 reversal — demonstrating that ballot initiative victories are not self-entrenching. The domain's Tier 2 reform argument (statutory anchors) applies here: constitutional protection requires either SCOTUS precedent or statutory law; ballot initiative victories can be reversed by subsequent ballot initiatives.
 
 ---
 
 ---
 
-## 9. Formal Contact List and Distribution Templates
+## 11. Formal Contact List and Distribution Templates
 
 *Added June 3, 2026 — production-ready for August 1, 2026 distribution deadline*
 
@@ -552,4 +664,4 @@ The democratic design argument — that systematically reducing the voting capac
 
 ---
 
-*Research completed: June 1, 2026. Updated contact list and templates added: June 3, 2026. Agent: Sonnet 4.6. Word count: ~9,100 words, 69 citations. Companion document to Domain 55 (domain-55-lgbtq-rights-systematic-legal-attack-democratic-design.md, May 13, 2026, 44 citations). Domain 50 is the voting suppression and ballot initiative analysis; Domain 55 is the ADF constitutional and legislative infrastructure analysis. Both should be distributed together to Lambda Legal and AT4E for maximum utility in ballot measure campaign integration. Hard distribution deadline: August 1, 2026.*
+*Research completed: June 1, 2026. June 14, 2026: Section 9 (June 2026 Developments) added — Montana Supreme Court Kalarchik ruling (strict scrutiny state constitutional floor); Little v. Hecox / West Virginia v. B.P.J. SCOTUS trans athlete decision imminent (pending as of June 14); SCOTUS passport stay worsening voter suppression stack; SAVE Act Senate blocking victories (two failed votes); Talbott v. USA D.C. Circuit military ban injunction upheld; Lambda Legal $285M fundraising campaign complete; pro-equality ballot measures section. Updated citation count: 87. Updated word count: ~11,200. Companion document to Domain 55 (domain-55-lgbtq-rights-systematic-legal-attack-democratic-design.md, May 13, 2026, 44 citations). Hard distribution deadline: August 1, 2026 for Lambda Legal and AT4E ballot measure campaign integration.*
