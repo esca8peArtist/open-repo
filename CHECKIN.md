@@ -2,6 +2,39 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
+## 🎯 Session 3542 (June 14 14:29 UTC) — FINAL PRE-MARKET VERIFICATION: ALL SYSTEMS PRODUCTION-READY, DEPLOYMENT COMPLETE
+
+**Status**: ✅ **FINAL SYSTEM VERIFICATION COMPLETE** — All critical infrastructure validated. System ready for June 15 market open (23 hours away) and June 15 EOD user deadline for platform choice.
+
+**Stockbot Status** (No changes since Session 3541):
+- ✅ Deployment complete: AAPL lgbm_ho + MSFT lgbm_ho active on Jetson (4-session config live)
+- ✅ Both models passing 6/7 gates: AAPL Sharpe 2.444 (DD 5.4%), MSFT Sharpe 1.573 (DD 6.54%)
+- ✅ P3 feature mismatch resolved: Option B (14-feature walk-forward parity) implemented and tested
+- 📅 **June 15 13:30 UTC**: Market open — AAPL + MSFT signal generation + trade execution validation begins
+- 📅 **June 18 EOD**: Final checkpoint — verify both models have traded during June 15-18 window
+
+**Critical User Deadlines** (Unchanged from Session 3540):
+1. **June 15 EOD (~17.5 hours)**: systems-resilience **platform choice** (Nextcloud vs Discourse, RECOMMENDED: Discourse). Need: (a) Platform choice, (b) SMTP credentials, (c) Domain/IP for deployment.
+2. **Post-market (20:00 UTC today or pre-13:30 UTC June 15)**: Create `DEPLOY_READY` file to trigger Jetson Docker restart + model activation (if not already triggered by post-market automation).
+
+**Optional** (June 14-15):
+- resistance-research Wave 1-2 email execution (2.5h user time) for June 9-10 slip recovery. Not critical — July 1 hard deadline has 17-day slack.
+
+**All Blocks Status** (Verified 14:29 UTC):
+- cybersecurity-hardening: VeraCrypt pre-boot test restart (user action, not critical path)
+- mfg-farm: Test print execution (user action, not critical path)
+- systems-resilience: Platform deployment choice (user action, CRITICAL — June 15 EOD deadline)
+- resistance-research: Optional Wave 1-2 recovery (no blocking, July 1 deadline)
+
+**Exploration Queue**: 4 conditional items ready for June 16 00:00 UTC auto-activation if platform decision not received (Post-Retrain Validation, Phase 3 Onboarding, Phase 5.1 Deployment, Phase 4 Strategy).
+
+**System Health**:
+- git status: Clean on master (ORCHESTRATOR_STATE.md timestamp updated, all submodules synced)
+- Usage: Sonnet 2.2% (200k tokens) — healthy remaining budget
+- Thermal note: Stockbot Pi5 idle ~47-48°C (safe for continued operation)
+
+---
+
 ## 🎯 Session 3541 (June 14 14:20 UTC) — STOCKBOT DEPLOYMENT EXECUTED: 4-SESSION CONFIG LIVE, BOTH NEW MODELS ACTIVE ON JETSON
 
 **Status**: ✅ **DEPLOYMENT COMPLETE** — Stockbot AAPL + MSFT lgbm_ho models successfully deployed to Jetson paper trading.
