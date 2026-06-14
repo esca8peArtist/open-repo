@@ -2,31 +2,51 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## 🎯 Session 3511 (June 14 ~14:00 UTC) — EXPLORATION QUEUE EXECUTION COMPLETE: P3 IMPLEMENTATION ROADMAPS + WAVE 1-2 EXECUTION READY
+## 🎯 Session 3511 (June 14 09:12–10:25 UTC) — P3 IMPLEMENTATION ROADMAPS PRODUCTION-READY
 
-**Status**: ✅ **PRODUCTION-READY DECISION SUPPORT & EXECUTION PACKAGES DELIVERED** — Spawned 2 parallel subagents for Exploration Queue Items 1-2 while awaiting user P3 decision (due June 15 EOD ~22h). Both items completed concurrently.
+**Status**: ✅ **STOCKBOT P3 FEATURE MISMATCH — FULL DECISION SUPPORT DELIVERED** — Executed top Exploration Queue Item (P3 Feature Mismatch Implementation Roadmap). Spawned stockbot subagent (a3c1592945e58f444) for comprehensive implementation staging. All 4 active blocks verified unresolved at session start.
 
-**All New Deliverables** (All Files Committed to Master):
+**Deliverables Completed** (All Files Committed to Master, commit 0911094):
 
-**Stockbot P3 Feature Mismatch (88% confidence work)**:
-- ✅ `IMPLEMENTATION_OPTION_A_ROADMAP.md` — 1-2h fast path (reduce to 7 features)
-- ✅ `IMPLEMENTATION_OPTION_B_ROADMAP.md` — 2.5-4h thorough path (shared utility + 14 features, RECOMMENDED)
-- ✅ `P3_DECISION_PACKAGE.md` — Decision framework + checklist
+**Stockbot P3 Feature Mismatch (88% confidence, 98K tokens)**:
+- ✅ `projects/stockbot/P3_IMPLEMENTATION_OPTION_A.md` (22 KB) — **Fast path: 1h 45m – 2h 15m wall-clock**
+  - Reduce training features to match walk-forward output
+  - Single file change: `src/model_training_pipeline.py` lines 619–687
+  - Exact before/after code diffs, 10-step deployment sequence, rollback command
+- ✅ `projects/stockbot/P3_IMPLEMENTATION_OPTION_B.md` (42 KB) — **Thorough path: 3h 10m – 3h 50m wall-clock (RECOMMENDED)**
+  - Create `src/features/shared_builders.py` with unified 13-feature builder
+  - Refactor training pipeline + walk-forward evaluation to call shared utility
+  - Rewrite `_generate_signals_from_model()` for non-ensemble models
+  - Includes 10-test regression suite + parity smoke test
+  - Preserves model quality + enables future feature expansion
+- ✅ `projects/stockbot/P3_DECISION_GUIDE.md` (6 KB) — **User-facing decision framework**
+  - 12-dimension comparison table (time, risk, signal quality, expandability, etc.)
+  - Timeline analysis showing both options fit before June 18 EOD
+  - Recommendation: Option B for ML best practices + robustness
+  - Decision checklist for user input format
 
-**Resistance-research Wave 1-2 (92% confidence work)**:
-- ✅ `WAVE_1_2_EXECUTION_READINESS_REPORT.md` — Step-by-step user action checklist
-- ✅ `WAVE_1_2_RECOVERY_PLAN.md` — Recovery feasibility + compressed timing option
+**Critical Technical Findings**:
+1. **Root cause confirmed**: `_generate_signals_from_model()` line 879 passes raw Alpaca OHLCV to `model.predict()` without feature engineering
+2. **Feature count**: 13 (not 14) — all 13 features must be engineered for both training + eval
+3. **Bug location**: NOT in `_build_features()` (ensemble-only), but in raw signal generation for lgbm_ho/ridge_wf models
+4. **Timeline**: Both options complete 3+ days before June 18 deadline with buffer for testing + verification
 
-**Critical Findings**:
-1. **P3 Feature Mismatch**: Agent analysis identifies the bug is in `_generate_signals_from_model()` line 879 (raw OHLCV → model.predict()), not in `_build_features()`. Feature count is 13, not 14. Both Option A and B fit within 3+ days before June 18 deadline.
-2. **Wave 1-2 Recovery**: 100% feasible. 5-day slip is recoverable with 17 days to July 1 deadline. All 5 email templates ready (only [YOUR_NAME] + [YOUR_CONTACT_INFO] fills needed). Contacts verified current as of June 5-11.
+**Recommended Next Steps** (Priority Order):
+1. **DECIDE P3 ARCHITECTURE BY JUNE 15 EOD (~22h)** — Use P3_DECISION_GUIDE.md + full option docs
+   - **Recommend**: Option B (preserves signal quality, follows ML best practices)
+   - **If tight on time**: Option A is viable, faster execution
+2. **AAPL + MSFT RETRAINS (June 16 overnight)** — Once decision made, implementation immediate
+   - Run both retrains in parallel: 5.5–7 hours total wall-clock time
+   - Must complete by June 18 EOD (3-day execution window)
+3. **DEPLOYMENT TO JETSON (June 18 ~20:00 UTC)** — Post-market window
+   - Use `scripts/deploy-to-jetson.sh` to sync updated code
+   - Restart Docker container with clean cache
 
-**Recommended User Actions** (Priority Order):
-1. **Before June 15 EOD (~22h)**: Decide P3 feature architecture (both options fully staged with code diffs)
-2. **By June 14 23:59 UTC (TODAY)**: Execute Wave 1-2 emails if recovery desired (60-75 min action)
-3. **June 17-18**: Execute Day 7 checkpoint (30-min infrastructure complete)
-
-**No Further Autonomous Work Available** — All exploration queue items complete. Standing by for user P3 decision or Wave 1-2 email execution.
+**Session Summary**:
+- **Autonomous work**: Complete (Exploration Queue Item 1 finished)
+- **Dependency**: User decision on P3 architecture (due June 15 EOD)
+- **Blocking**: All other projects remain blocked on user manual actions (VeraCrypt restart, test print, platform choice, Wave 1-2 emails)
+- **No further autonomous work available** — Standing by for user P3 decision
 
 ---
 
