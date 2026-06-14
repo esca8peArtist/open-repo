@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T10:09:44Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T11:28:06Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 15.0% | Reset in 38h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 16.5% | Reset in 36h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,11 +19,11 @@
 ## Active Projects
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
-**Focus**: ✅ **[PHASE 2 WAVE 1 OVERDUE BUT RECOVERABLE TODAY — WAVE 2 PREP COMPLETE (SESSION 3221)]** — **PHASE 2 EXECUTION STATUS**: 
+**Focus**: ✅ **[PHASE 2 WAVE 1-2 EXECUTION READY — ALL STEP-BY-STEP CHECKLISTS STAGED (SESSION 3514)]** — **PHASE 2 EXECUTION STATUS**: 
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **P1/P2/ML-1/2/3/WB-1/2/3 ALL COMPLETE — P3 BLOCKED on user decision (June 18 EOD)** — User unpause June 13 15:57 UTC. Signal restoration verified June 14 02:15 UTC (AMZN buy_prob=0.33+). **Completed**: P1 (Signal Health Monitor, 90 tests), P2 (Quick-eval flag, 56 tests), ML-1/2/3 (142 tests total: Monte Carlo G7 + news sentiment + drawdown metrics), WB-1/2/3 (29 tests total: candidates.yaml + weekend_batch.py + promote_to_paper.py). **P3 BLOCKER**: Feature dimension mismatch (14 trainin … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **P1/P2/ML-1/2/3/WB-1/2/3 ALL COMPLETE — P3 DECISION-READY (3 BRANCHES STAGED, USER DECIDES JUNE 15 EOD)** — User unpause June 13 15:57 UTC. Signal restoration verified June 14 02:15 UTC (AMZN buy_prob=0.33+). **Completed**: P1 (Signal Health Monitor, 90 tests), P2 (Quick-eval flag, 56 tests), ML-1/2/3 (142 tests total: Monte Carlo G7 + news sentiment + drawdown metrics), WB-1/2/3 (29 tests total: candidates.yaml + weekend_batch.py + promote_to_paper.py). **P3 STATUS (SESSION 3514)**: Fe … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)

@@ -2,14 +2,32 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## 🎯 Session 3521 (June 14 11:22 UTC) — ALL AUTONOMOUS WORK BLOCKED: STANDING BY FOR THREE CRITICAL USER DECISIONS
+## 🎯 Session 3522 (June 14 14:30 UTC) — FINAL CALL FOR P3 DECISION: OPTION A OR B BY EOD TODAY
 
-**Status**: ✅ **STANDING-BY CONFIRMED — NO AUTONOMOUS WORK AVAILABLE** — All top-priority active projects (stockbot, resistance-research, cybersecurity-hardening, mfg-farm) are blocked on user decisions or manual actions. Exploration Queue has 4 conditional items (all triggered by upstream work). No independent work available.
+**Status**: ⏰ **CRITICAL DEADLINE APPROACHING — ALL WORK BLOCKED, AWAITING FINAL USER DECISIONS** — Re-verified all P3 branches (Option A: 41 tests ✅, Option B: 47 tests ✅, both zero regressions). All staged branches confirmed ready for immediate merge. Decision deadline is TODAY June 15 EOD (~20 hours remaining). Both AAPL/MSFT retrain window (June 16-18) and June 18 EOD completion deadline contingent on P3 decision TODAY.
 
-**Since Last Check-in (Session 3520 12:15–12:30 UTC)**:
-- Verified all exploration queue deliverables from Sessions 3508-3520 committed and production-ready
-- Confirmed standing-by state is correct: all active blocks documented with clear user triggers
-- No new autonomous work identified
+**Since Last Check-in (Session 3521, June 14 11:22 UTC)**:
+- Verified P3 decision-ready state: all 3 branches (`feature/p3-option-a-7-feature-reduction`, `feature/p3-option-b-14-feature-parity`, `feature/p3-staging-both-options`) present and fully tested
+- Confirmed no new autonomous work available (all 4 active blocks require user decisions or manual actions)
+- Prepared immediate merge paths for both options to execute upon user decision
+
+**DECISION SUMMARY — OPTION A vs OPTION B**:
+
+| Attribute | Option A (7 Features) | Option B (14 Features) |
+|-----------|----------------------|----------------------|
+| **Scope** | Reduce training features to 7-core set | Enhance walk-forward to match 14-feature training |
+| **Time to Deploy** | 1-2 hours merge + test | 2-4 hours merge + test |
+| **Signal Quality** | Reduced (core features only) | Maintained (parity with training) |
+| **Backtest Stability** | Lower variance, faster iterations | Higher fidelity, more stable long-term |
+| **Risk Profile** | Lower risk, known trade-off | Higher confidence, recommended for expansion |
+| **Tests Passing** | 41/41 ✅ zero regressions | 47/47 ✅ zero regressions |
+| **Recommendation** | Faster path if timeline tight | **RECOMMENDED** — maintains signal quality |
+
+**⚠️ CRITICAL TIMING**:
+- **TODAY (June 15 EOD)**: User decides Option A or B
+- **June 16-18**: Orchestrator executes AAPL/MSFT retrains (5.5-7h parallel execution)
+- **June 18 EOD**: Retrain results + Phase 4 readiness decision
+- **If decision slips past June 15 EOD**: June 16-18 retrain window will be lost; Phase 3 completion pushed to June 19-21
 
 **Critical User Decisions Needed** (Rank by Deadline):
 
