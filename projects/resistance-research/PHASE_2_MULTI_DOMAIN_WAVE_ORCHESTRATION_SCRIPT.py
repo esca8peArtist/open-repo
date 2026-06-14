@@ -1,23 +1,42 @@
 #!/usr/bin/env python3
 """
 Phase 2 Multi-Domain Wave Orchestration Script
-Domain 51 — Campaign Finance / Dark Money Architecture
+Supports: Domain 51 (Campaign Finance), Domain 59 (Economic Precarity / Senate Finance CTC)
 
-Coordinates Wave 1-2 execution for the orchestrator. Generates domain-specific
-execution guides dynamically, logs send results to WORKLOG.md, and provides
-recovery commands for failures.
+Coordinates Wave 1-2-3 execution across both domains. Generates domain-specific
+execution guides, logs send results to WORKLOG.md, and provides recovery commands
+for failures.
 
 Usage:
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --status
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --execute wave1
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --execute wave2
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --execute all
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --log-send 1 --time "2026-06-14 16:03 UTC"
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --log-bounce 1 --fallback
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --log-reply 2 --signal STRONG --summary "Chlopak replied asking about Hawaii/Montana model"
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --t7-check
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --generate-guide wave1
-    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --generate-guide wave2
+    # Domain selection (required for most commands)
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --status
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --status
+
+    # Execute (prints copy-paste guide + logs intent to WORKLOG)
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --execute wave1
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --execute wave1
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --execute wave2
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --execute wave3
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --execute all
+
+    # Multi-domain status (no --domain needed)
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --all-domains-status
+
+    # Sequencing recommendation (which domain executes first)
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --sequence-check
+
+    # Log results
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --log-send 1 --time "2026-06-17 14:05 UTC"
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --log-bounce 5 --fallback
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --log-reply 2 --signal STRONG --summary "CBPP replied asking about Senate Finance testimony"
+
+    # T+7 checkpoint
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --t7-check
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --t7-check
+
+    # Generate guide (stdout only, no WORKLOG entry)
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --generate-guide wave1
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --generate-guide wave3
 
 Environment variable:
     RESISTANCE_RESEARCH_DIR: path to projects/resistance-research/ (auto-detected if not set)
@@ -28,18 +47,20 @@ import json
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Optional
 
 # ---------------------------------------------------------------------------
-# Configuration
+# Domain 51 Configuration
 # ---------------------------------------------------------------------------
 
-GIST_URL = "https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372"
-HARD_DEADLINE = "2026-07-01"
-BALLOT_CHECK_URL = "https://ballotpedia.org/California_Public_Funding_of_Elections_Measure_(2026)"
+DOMAIN_51_GIST = "https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372"
+DOMAIN_51_DEADLINE = "2026-07-01"
+DOMAIN_51_BALLOT_CHECK = "https://ballotpedia.org/California_Public_Funding_of_Elections_Measure_(2026)"
+DOMAIN_51_TOPIC = "Campaign Finance / Dark Money Architecture / FEC Enforcement Collapse"
+DOMAIN_51_STATE_FILE = "wave_orchestration_state_d51.json"
+DOMAIN_51_LOG_FILE = "DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md"
 
-# All 5 contacts for Phase 2 Wave 1+2
-CONTACTS = {
+DOMAIN_51_CONTACTS = {
+    # Wave 1 — National policy organizations
     1: {
         "wave": 1,
         "org": "Campaign Legal Center",
@@ -54,7 +75,7 @@ CONTACTS = {
         "notes": (
             "Confirmed via ZoomInfo and CLC legal filing metadata. "
             "Domain quirk: campaignlegalcenter.org (confirmed) vs campaignlegal.org (general inbox). "
-            "Do not confuse the two domains."
+            "Adav Noti is Executive Director — Chlopak is the campaign finance program lead."
         ),
     },
     2: {
@@ -71,9 +92,10 @@ CONTACTS = {
         "notes": (
             "Confirmed at issueone.org/contact. "
             "Penniman is high-profile (TIME100); general inbox routes to policy team. "
-            "No confirmed backup address — use issueone.org/contact form as fallback."
+            "Cory Combs (ccombs@issueone.org) handles media routing."
         ),
     },
+    # Wave 2 — California campaign organizations
     3: {
         "wave": 2,
         "org": "Common Cause California",
@@ -87,10 +109,8 @@ CONTACTS = {
         "domain_hook": "California Fair Elections Act ballot campaign / Citizens United workaround",
         "response_probability": "20-30%",
         "notes": (
-            "Confirmed at commoncause.org/california/people/darius-kemp/. "
             "Personnel change: Jonathan Mehta Stein departed; Kemp appointed June 2025. "
-            "dkemp@ is confirmed handle (not first.last format). "
-            "Salutation 'Dear Darius' appropriate during campaign mode."
+            "dkemp@ is confirmed handle. Salutation 'Dear Darius' appropriate."
         ),
     },
     4: {
@@ -105,10 +125,8 @@ CONTACTS = {
         "domain_hook": "Voter education / California Fair Elections Act / dark money disclosure",
         "response_probability": "20-30%",
         "notes": (
-            "Confirmed at lwvc.org/about/staff. "
             "Personnel change: Carol Moon Goldberg no longer listed; Farrell is current ED. "
-            "No direct email for Farrell publicly listed — lwvc@lwvc.org is org inbox. "
-            "No confirmed backup address."
+            "No direct email for Farrell publicly listed — lwvc@lwvc.org is org inbox."
         ),
     },
     5: {
@@ -117,7 +135,7 @@ CONTACTS = {
         "contact_name": "Trent Lange",
         "role": "President & Executive Director (since 2009)",
         "primary_email": "info@CAclean.org",
-        "backup_email": None,
+        "backup_email": "Trent.Lange@CAclean.org",
         "phone_fallback": "(310) 397-0200",
         "verified_date": "2026-06-11",
         "confidence": "HIGH",
@@ -125,9 +143,336 @@ CONTACTS = {
         "response_probability": "5-10%",
         "notes": (
             "CRITICAL: Use info@CAclean.org. Do NOT use cleanmoney.org — unreachable since June 5, 2026. "
-            "Confirmed at yesfairelections.org/about. "
             "Trent.Lange@CAclean.org also documented on org About page as direct contact."
         ),
+    },
+    # Wave 3 — National policy amplifiers (conditional on T+7)
+    6: {
+        "wave": 3,
+        "org": "End Citizens United / Let America Vote",
+        "contact_name": "David Donnelly",
+        "role": "President & Executive Director",
+        "primary_email": "info@endcitizensunited.org",
+        "backup_email": None,
+        "verified_date": "2026-06-11",
+        "confidence": "MEDIUM",
+        "domain_hook": "Citizens United litigation and advocacy / DISCLOSE Act / FEC enforcement",
+        "response_probability": "30-45%",
+        "notes": "ECU and Let America Vote merged operations. Donnelly leads both.",
+    },
+    7: {
+        "wave": 3,
+        "org": "Public Citizen Democracy Program",
+        "contact_name": "Craig Holman",
+        "role": "Policy Advocate, Campaign Finance",
+        "primary_email": "cholman@citizen.org",
+        "backup_email": None,
+        "verified_date": "2026-06-11",
+        "confidence": "HIGH",
+        "domain_hook": "FEC enforcement / SEC disclosure / AI PAC / DISCLOSE Act",
+        "response_probability": "35-50%",
+        "notes": (
+            "CRITICAL EMAIL QUIRK: cholman@citizen.org is confirmed — shortform handle. "
+            "Do NOT use craig.holman@citizen.org."
+        ),
+    },
+    8: {
+        "wave": 3,
+        "org": "Brennan Center for Justice",
+        "contact_name": "Saurav Ghosh",
+        "role": "Program Director, Democracy Program",
+        "primary_email": "ghoshs@brennan.law.nyu.edu",
+        "backup_email": "saurav.ghosh@nyu.edu",
+        "verified_date": "2026-06-11",
+        "confidence": "HIGH",
+        "domain_hook": "Constitutional law / FEC enforcement / Hawaii-Montana charter model / Citizens United",
+        "response_probability": "40-55%",
+        "notes": "Brennan Center uses NYU law domain format. Salutation 'Dear Saurav' appropriate.",
+    },
+    9: {
+        "wave": 3,
+        "org": "Democracy 21",
+        "contact_name": "Fred Wertheimer",
+        "role": "President & Founder",
+        "primary_email": "fwertheimer@democracy21.org",
+        "backup_email": None,
+        "verified_date": "2026-06-11",
+        "confidence": "HIGH",
+        "domain_hook": "DISCLOSE Act / FEC quorum repair / campaign finance reform elder statesman",
+        "response_probability": "50-65%",
+        "notes": (
+            "CRITICAL EMAIL QUIRK: fwertheimer@democracy21.org is confirmed — shortform handle. "
+            "Not first.last format. Wertheimer publishes weekly newsletter. Salutation 'Dear Fred' appropriate."
+        ),
+    },
+    10: {
+        "wave": 3,
+        "org": "OpenSecrets",
+        "contact_name": "Hilary Braseth (ED, since Jan 2024)",
+        "role": "Executive Director",
+        "primary_email": "info@opensecrets.org",
+        "backup_email": None,
+        "verified_date": "2026-06-11",
+        "confidence": "HIGH",
+        "domain_hook": "Dark money database / 501(c)(4) disclosure gap / AI PAC tracking",
+        "response_probability": "30-45%",
+        "notes": (
+            "Personnel change: Sheila Krumholz departed late 2023. Hilary Braseth is ED since Jan 2024. "
+            "info@opensecrets.org still valid."
+        ),
+    },
+}
+
+# ---------------------------------------------------------------------------
+# Domain 59 Configuration
+# ---------------------------------------------------------------------------
+
+DOMAIN_59_GIST = "https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba"
+DOMAIN_59_DEADLINE_PRIMARY = "2026-06-30"  # Senate Finance markup
+DOMAIN_59_DEADLINE_SECONDARY = "2026-08-01"  # pre-midterm GOTV lock
+DOMAIN_59_SENATE_FINANCE_CHECK = "https://www.finance.senate.gov/hearings"
+DOMAIN_59_TOPIC = "Economic Precarity / Senate Finance CTC / Democratic Participation"
+DOMAIN_59_STATE_FILE = "wave_orchestration_state_d59.json"
+DOMAIN_59_SEND_LOG = "domain-59-send-log-june1.md"
+
+DOMAIN_59_CONTACTS = {
+    # Wave 1 — Tier 1, highest-leverage Senate Finance / CTC contacts
+    1: {
+        "wave": 1,
+        "org": "AFL-CIO",
+        "contact_name": "Jody Calemine (Director of Advocacy) via general inbox",
+        "role": "Director of Advocacy / Legislative Affairs",
+        "primary_email": "feedback@aflcio.org",
+        "backup_email": None,
+        "form_fallback": "https://www.aflcio.org/contact",
+        "verified_date": "2026-06-10",
+        "confidence": "MEDIUM",
+        "domain_hook": "Minimum wage / time poverty / CTC and Senate Finance timing",
+        "response_probability": "Moderate",
+        "notes": (
+            "feedback@aflcio.org is standard AFL-CIO general inbox. "
+            "ROUTING: add 'For the Legislative Affairs team / Jody Calemine' as first line of body. "
+            "Form fallback at aflcio.org/contact if feedback@ bounces."
+        ),
+    },
+    2: {
+        "wave": 1,
+        "org": "Center on Budget and Policy Priorities",
+        "contact_name": "Sharon Parrott",
+        "role": "President (since 2021)",
+        "primary_email": "cbpp@cbpp.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "CTC refundability / OBBBA distributional analysis / Senate Finance testimony",
+        "response_probability": "55-70%",
+        "notes": (
+            "CBPP's CTC analysis is the primary citation in Domain 59. "
+            "Research-to-research warm — citing their work increases routing to Economic Security team."
+        ),
+    },
+    3: {
+        "wave": 1,
+        "org": "National Women's Law Center",
+        "contact_name": "Emily Martin",
+        "role": "Chief Program Officer (since Dec 2023)",
+        "primary_email": "info@nwlc.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "Childcare cost as civic exclusion / gendered democratic deficit / CTC expansion",
+        "response_probability": "50-65%",
+        "notes": (
+            "NWLC has active 'Tell the Senate: Pass the expanded CTC' campaign — warm framing. "
+            "Emily Martin confirmed at nwlc.org as CPO since Dec 2023."
+        ),
+    },
+    4: {
+        "wave": 1,
+        "org": "MomsRising",
+        "contact_name": "Kristin Rowe-Finkbeiner",
+        "role": "Executive Director, CEO & Co-Founder",
+        "primary_email": "info@momsrising.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "5M+ member network / childcare as civic exclusion / Senate Finance CTC timing",
+        "response_probability": "45-60%",
+        "notes": (
+            "Rowe-Finkbeiner has testified before Senate on childcare affordability. "
+            "info@momsrising.org confirmed via org contact page."
+        ),
+    },
+    5: {
+        "wave": 1,
+        "org": "Institute on Taxation and Economic Policy",
+        "contact_name": "Steve Wamhoff",
+        "role": "Director of Federal Tax Policy",
+        "primary_email": "itep@itep.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "ITEP '99% of poorest fifth receive $0' stat is primary quantitative claim in Domain 59",
+        "response_probability": "55-70%",
+        "notes": (
+            "Steve Wamhoff confirmed via itep.org/contact. "
+            "Opening line citing ITEP's specific finding signals research-to-research correspondence."
+        ),
+    },
+    # Tier 2 — activate T+6 if 2+ Tier 1 STRONG responses
+    6: {
+        "wave": 2,
+        "org": "Economic Policy Institute",
+        "contact_name": "Heidi Shierholz",
+        "role": "President (since 2021)",
+        "primary_email": "researchdept@epi.org",
+        "backup_email": None,
+        "form_fallback": "https://www.epi.org/about/contact",
+        "verified_date": "2026-06-10",
+        "confidence": "UNCONFIRMED",
+        "domain_hook": "EPI wage/labor data foundational to time-poverty pathway; $30K productivity-pay gap",
+        "response_probability": "30-45%",
+        "notes": (
+            "CRITICAL: researchdept@epi.org is unconfirmed against live contact page. "
+            "EPI uses contact form on website. Verify via epi.org/about/contact before send. "
+            "Use contact form as primary if direct email not confirmed."
+        ),
+    },
+    7: {
+        "wave": 2,
+        "org": "Demos",
+        "contact_name": "Taifa Smith Butler",
+        "role": "President (current — KEY CHANGE from Chiraag Bains who left 2021)",
+        "primary_email": "info@demos.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "Demos mission: 'equal say in democracy + equal chance in economy' — direct overlap",
+        "response_probability": "35-50%",
+        "notes": (
+            "DEAD CONTACT PURGE: Chiraag Bains left Demos in 2021 (Biden White House; now Democracy Fund/Brookings). "
+            "Taifa Smith Butler is current president. info@demos.org is unchanged."
+        ),
+    },
+    8: {
+        "wave": 2,
+        "org": "National Employment Law Project",
+        "contact_name": "Rebecca Dixon",
+        "role": "President & CEO (since 2020)",
+        "primary_email": "info@nelp.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "Gig economy / worker classification / temporal exclusion from civic participation",
+        "response_probability": "35-50%",
+        "notes": "info@nelp.org confirmed via nelp.org. Rebecca Dixon confirmed as President & CEO.",
+    },
+    9: {
+        "wave": 2,
+        "org": "National Housing Law Project",
+        "contact_name": "Policy team",
+        "role": "Policy Director (named contact not confirmed — verify on send day)",
+        "primary_email": "info@nhlp.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "Housing cost-burden pathway; one of five causal pathways in Domain 59",
+        "response_probability": "20-35%",
+        "notes": "Named contact not confirmed — use org inbox. Verify current policy director at nhlp.org on send day.",
+    },
+    # Tier 3 — activate T+15 after Tier 1/2 signal confirmed
+    10: {
+        "wave": 3,
+        "org": "Common Cause National",
+        "contact_name": "Virginia Kase Solomón",
+        "role": "President & CEO (since Dec 2023)",
+        "primary_email": "commoncause@commoncause.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "Voting rights + campaign finance networks; post-League of Women Voters leadership",
+        "response_probability": "25-40%",
+        "notes": (
+            "CRITICAL PERSONNEL CHANGE: Prior docs listed Karen Hobert Flynn. "
+            "Hobert Flynn DIED March 2023. Virginia Kase Solomón is tenth President (appointed Dec 2023). "
+            "kflynn@commoncause.org will hard-bounce. Use commoncause@commoncause.org."
+        ),
+    },
+    11: {
+        "wave": 3,
+        "org": "People For the American Way",
+        "contact_name": "Michael Keegan",
+        "role": "President",
+        "primary_email": "pfaw@pfaw.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "Midterm voter engagement / GOTV infrastructure / democratic participation frame",
+        "response_probability": "25-40%",
+        "notes": "pfaw@pfaw.org confirmed via pfaw.org.",
+    },
+    12: {
+        "wave": 3,
+        "org": "Families USA",
+        "contact_name": "Frederick Isasi",
+        "role": "Executive Director",
+        "primary_email": "info@familiesusa.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "Medicaid work requirements / OBBBA tracking — direct overlap with Domain 59 Medicaid pathway",
+        "response_probability": "25-40%",
+        "notes": "info@familiesusa.org confirmed via familiesusa.org.",
+    },
+    13: {
+        "wave": 3,
+        "org": "Robert Wood Johnson Foundation",
+        "contact_name": "Program Officer (health/democracy — named contact not confirmed)",
+        "role": "Program Officer",
+        "primary_email": "mail@rwjf.org",
+        "backup_email": None,
+        "verified_date": "2026-06-10",
+        "confidence": "HIGH",
+        "domain_hook": "Health equity as civic participation framing; RWJF funding priority",
+        "response_probability": "15-25%",
+        "notes": (
+            "mail@rwjf.org confirmed via rwjf.org. "
+            "Named contact not confirmed — RWJF has program officer rotation. "
+            "Verify specific program officer for democracy/health funding before send."
+        ),
+    },
+}
+
+# ---------------------------------------------------------------------------
+# Domain dispatch table
+# ---------------------------------------------------------------------------
+
+DOMAINS = {
+    51: {
+        "name": "Domain 51",
+        "topic": DOMAIN_51_TOPIC,
+        "gist_url": DOMAIN_51_GIST,
+        "deadline": DOMAIN_51_DEADLINE,
+        "check_url": DOMAIN_51_BALLOT_CHECK,
+        "state_file": DOMAIN_51_STATE_FILE,
+        "log_file": DOMAIN_51_LOG_FILE,
+        "contacts": DOMAIN_51_CONTACTS,
+        "waves": {1: "National policy orgs (CLC, Issue One)", 2: "California campaign orgs", 3: "National amplifiers (conditional on T+7)"},
+        "t7_gate": {"full": 4, "conditional": 2, "weak": 1},
+        "priority_note": "Domain 51 executes AFTER Domain 59 when both approved simultaneously.",
+    },
+    59: {
+        "name": "Domain 59",
+        "topic": DOMAIN_59_TOPIC,
+        "gist_url": DOMAIN_59_GIST,
+        "deadline": DOMAIN_59_DEADLINE_PRIMARY,
+        "check_url": DOMAIN_59_SENATE_FINANCE_CHECK,
+        "state_file": DOMAIN_59_STATE_FILE,
+        "log_file": DOMAIN_59_SEND_LOG,
+        "contacts": DOMAIN_59_CONTACTS,
+        "waves": {1: "Tier 1 — Senate Finance / CTC core (5 contacts)", 2: "Tier 2 — conditional on 2+ Tier 1 STRONG", 3: "Tier 3 — activate T+15 after confirmation"},
+        "t7_gate": {"full": 3, "conditional": 2, "weak": 1},
+        "priority_note": "Domain 59 executes FIRST when both domains approved simultaneously (Senate Finance markup closes June 25-30).",
     },
 }
 
@@ -141,48 +486,53 @@ def get_research_dir() -> Path:
     env_dir = os.environ.get("RESISTANCE_RESEARCH_DIR")
     if env_dir:
         return Path(env_dir)
-    # Auto-detect from script location
     script_dir = Path(__file__).parent
     if script_dir.name == "resistance-research":
         return script_dir
-    # Walk up to find projects/resistance-research/
     for parent in [script_dir] + list(script_dir.parents):
         candidate = parent / "projects" / "resistance-research"
         if candidate.is_dir():
             return candidate
-    return script_dir  # fallback to script directory
+    return script_dir
 
 
 RESEARCH_DIR = get_research_dir()
 WORKLOG_PATH = RESEARCH_DIR / "WORKLOG.md"
-EXECUTION_LOG_PATH = RESEARCH_DIR / "DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md"
-STATE_PATH = RESEARCH_DIR / "phase-1-adoption" / "data" / "wave_orchestration_state.json"
+
+
+def get_state_path(domain_id: int) -> Path:
+    state_file = DOMAINS[domain_id]["state_file"]
+    return RESEARCH_DIR / "phase-1-adoption" / "data" / state_file
+
 
 # ---------------------------------------------------------------------------
 # State management
 # ---------------------------------------------------------------------------
 
-def load_state() -> dict:
-    """Load send state from disk."""
-    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    if STATE_PATH.exists():
+def load_state(domain_id: int) -> dict:
+    """Load send state from disk for a given domain."""
+    state_path = get_state_path(domain_id)
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    if state_path.exists():
         try:
-            with open(STATE_PATH) as f:
+            with open(state_path) as f:
                 return json.load(f)
         except (json.JSONDecodeError, IOError):
             pass
     return {
-        "sends": {},       # send_number -> send record
-        "bounces": {},     # send_number -> bounce record
-        "replies": {},     # send_number -> reply record
+        "domain": domain_id,
+        "sends": {},
+        "bounces": {},
+        "replies": {},
         "created": datetime.now(timezone.utc).isoformat(),
     }
 
 
-def save_state(state: dict) -> None:
-    """Persist state to disk."""
-    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(STATE_PATH, "w") as f:
+def save_state(domain_id: int, state: dict) -> None:
+    """Persist state to disk for a given domain."""
+    state_path = get_state_path(domain_id)
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(state_path, "w") as f:
         json.dump(state, f, indent=2)
 
 
@@ -190,10 +540,10 @@ def save_state(state: dict) -> None:
 # WORKLOG writer
 # ---------------------------------------------------------------------------
 
-def append_worklog(entry: str) -> None:
+def append_worklog(domain_id: int, entry: str) -> None:
     """Append a timestamped entry to WORKLOG.md."""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    block = f"\n---\n\n## {now} — Wave Orchestration\n\n{entry.strip()}\n"
+    block = f"\n---\n\n## {now} — Domain {domain_id} Wave Orchestration\n\n{entry.strip()}\n"
     try:
         with open(WORKLOG_PATH, "a") as f:
             f.write(block)
@@ -206,19 +556,28 @@ def append_worklog(entry: str) -> None:
 # Status display
 # ---------------------------------------------------------------------------
 
-def cmd_status(state: dict) -> None:
-    """Print current execution status for all 5 contacts."""
+def cmd_status(domain_id: int, state: dict) -> None:
+    """Print current execution status for all contacts in a domain."""
+    domain = DOMAINS[domain_id]
+    contacts = domain["contacts"]
     now = datetime.now(timezone.utc)
-    deadline = datetime(2026, 7, 1, tzinfo=timezone.utc)
-    days_remaining = (deadline - now).days
 
-    print("\n=== Phase 2 Wave 1-2 Execution Status ===")
-    print(f"Date: {now.strftime('%Y-%m-%d %H:%M UTC')}")
-    print(f"Hard deadline: {HARD_DEADLINE} ({days_remaining} days remaining)")
-    print(f"Gist URL: {GIST_URL}")
+    try:
+        deadline_dt = datetime.fromisoformat(domain["deadline"]).replace(tzinfo=timezone.utc)
+        days_remaining = (deadline_dt - now).days
+    except ValueError:
+        days_remaining = "?"
+
+    print(f"\n=== {domain['name']} — Wave Execution Status ===")
+    print(f"Topic:    {domain['topic']}")
+    print(f"Date:     {now.strftime('%Y-%m-%d %H:%M UTC')}")
+    print(f"Deadline: {domain['deadline']} ({days_remaining} days remaining)")
+    print(f"Gist URL: {domain['gist_url']}")
+    print(f"Priority: {domain['priority_note']}")
     print()
 
-    for send_num, contact in CONTACTS.items():
+    for send_num in sorted(contacts):
+        contact = contacts[send_num]
         send_record = state["sends"].get(str(send_num), {})
         bounce_record = state["bounces"].get(str(send_num), {})
         reply_record = state["replies"].get(str(send_num), {})
@@ -239,8 +598,9 @@ def cmd_status(state: dict) -> None:
         if replied:
             reply_label = reply_record.get("signal", "LOGGED")
 
+        wave_label = f"Wave {contact['wave']}"
         print(
-            f"  Send {send_num} | Wave {contact['wave']} | {contact['org']}\n"
+            f"  Send {send_num:2d} | {wave_label} | {contact['org']}\n"
             f"           Contact: {contact['contact_name']} <{contact['primary_email']}>\n"
             f"           Status:  {status}\n"
             f"           Reply:   {reply_label}"
@@ -249,254 +609,205 @@ def cmd_status(state: dict) -> None:
             print(f"           Sent at: {send_record.get('timestamp', 'unknown')}")
         print()
 
-    # T+7 summary
+    # T+7 summary from Wave 1 sends
+    wave1_keys = [k for k, c in contacts.items() if c["wave"] == 1]
     sent_timestamps = [
         state["sends"][str(k)]["timestamp"]
-        for k in [1, 2]
+        for k in wave1_keys
         if str(k) in state["sends"]
     ]
     if sent_timestamps:
         earliest = min(sent_timestamps)
-        print(f"Wave 1 first send: {earliest}")
+        print(f"Wave 1 first send:  {earliest}")
         try:
             wave1_dt = datetime.fromisoformat(earliest.replace(" UTC", "+00:00"))
             t7 = wave1_dt + timedelta(days=7)
             t14 = wave1_dt + timedelta(days=14)
-            print(f"T+7 checkpoint:    {t7.strftime('%Y-%m-%d')}")
-            print(f"T+14 checkpoint:   {t14.strftime('%Y-%m-%d')}")
+            print(f"T+7 checkpoint:     {t7.strftime('%Y-%m-%d')}")
+            print(f"T+14 checkpoint:    {t14.strftime('%Y-%m-%d')}")
         except ValueError:
             pass
     print()
 
 
+def cmd_all_domains_status() -> None:
+    """Print summary status for both domains side by side."""
+    print("\n=== Multi-Domain Status Summary ===")
+    print(f"Date: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
+    print()
+    print("SEQUENCING RULE: Domain 59 → Domain 51 (Senate Finance window closes before CA ballot deadline)")
+    print()
+    for domain_id in [59, 51]:
+        state = load_state(domain_id)
+        domain = DOMAINS[domain_id]
+        contacts = domain["contacts"]
+        total = len(contacts)
+        sent = sum(1 for k in contacts if str(k) in state["sends"])
+        strong = sum(1 for r in state["replies"].values() if r.get("signal") == "STRONG")
+        print(f"Domain {domain_id} ({domain['topic'][:50]})")
+        print(f"  Sends completed: {sent}/{total}")
+        print(f"  STRONG replies:  {strong}")
+        print(f"  Deadline:        {domain['deadline']}")
+        print()
+
+
 # ---------------------------------------------------------------------------
-# Execution guide generation
+# Sequence check
 # ---------------------------------------------------------------------------
 
-def generate_wave1_guide() -> str:
-    """Generate a self-contained Wave 1 execution guide for printing or clipboard."""
-    c1 = CONTACTS[1]
-    c2 = CONTACTS[2]
-    lines = [
-        "=== WAVE 1 EXECUTION GUIDE (generated) ===",
-        f"Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}",
-        "",
-        "SEND 1 — Campaign Legal Center",
-        f"  To:      {c1['primary_email']}",
-        f"  Backup:  {c1['backup_email']}",
-        "  Subject: Constitutional architecture research on Citizens United — Hawaii/Montana model + FEC collapse analysis",
-        "",
-        "  Body (copy-paste, fill YOUR_NAME and YOUR_CONTACT_INFO):",
-        "  ---",
-        "  Dear Campaign Legal Center team,",
-        "",
-        "  I am sharing a research document that may be relevant to your current work on campaign finance enforcement and state-level reform:",
-        "",
-        "  Domain 51 documents the Citizens United architecture from a democratic design perspective — specifically the structural consequence of the FEC's 200+ day enforcement quorum collapse and the constitutional theory behind Hawaii SB 2471 (signed May 15, 2026) and Montana I-194 (approximately 1,000 signatures from qualification).",
-        "",
-        "  The sections most relevant to CLC's work:",
-        "",
-        "  - Section 6.3 (Hawaii/Montana Corporate Charter Model): the Center for American Progress theory that CLC's constitutional team will likely be asked to assess — does charter-revocation of corporate political spending authority survive the 'associations of citizens' rationale in Citizens United, or only the state-derived-power rationale?",
-        "  - Section 3 (FEC Structural Failure): 200-day enforcement collapse with specific pending matters — useful documentation for FEC enforcement advocacy",
-        "  - Section 7 (Reform Architecture): DISCLOSE Act of 2026 legislative pathway + state-level equivalents + SEC disclosure rule status",
-        "",
-        f"  The document is at: {GIST_URL}",
-        "",
-        "  58 citations, CC Attribution 4.0. I would welcome any feedback on whether the constitutional analysis of the Hawaii/Montana model accurately represents the current scholarly and litigation consensus.",
-        "",
-        "  [YOUR_NAME]",
-        "  [YOUR_CONTACT_INFO]",
-        "  ---",
-        "",
-        "  After sending Send 1: wait 90 minutes.",
-        "",
-        "SEND 2 — Issue One (90 minutes after Send 1)",
-        f"  To:      {c2['primary_email']}",
-        "  Subject: Dark money architecture research — FEC collapse documentation + state ballot measure analysis",
-        "",
-        "  Body (copy-paste, fill YOUR_NAME and YOUR_CONTACT_INFO):",
-        "  ---",
-        "  Dear Issue One team,",
-        "",
-        "  I am sharing research that complements Issue One's work on FEC reform and dark money disclosure:",
-        "",
-        "  Domain 51 is a structural analysis of the Citizens United architecture with a dedicated section on the FEC enforcement collapse — which Issue One has been documenting through your 'Strengthening the Rules' reporting. The document uses Issue One's enforcement deadlock analysis as a primary source and extends it to the broader democratic accountability argument.",
-        "",
-        "  The most relevant sections:",
-        "",
-        "  - Section 3 (FEC Structural Failure): 200+ day enforcement shutdown with specific pending matters — Issue One's reporting is cited directly; the document extends your analysis to the constitutional design argument",
-        "  - Section 5 (2026 State Ballot Measures): four-state analysis including California, Missouri, Montana, and Hawaii — the landscape your ReFormers Caucus work is operating in",
-        "  - Section 7 (Reform Architecture): DISCLOSE Act pathway + the Hawaii corporate charter workaround as a parallel track that does not require DISCLOSE Act passage",
-        "",
-        "  Issue One is cited as a primary source throughout. The document is designed for distribution to organizations that can use the structural analysis in their own advocacy:",
-        f"  {GIST_URL}",
-        "",
-        "  58 citations, CC Attribution 4.0. I would be grateful if this reaches your research team.",
-        "",
-        "  [YOUR_NAME]",
-        "  [YOUR_CONTACT_INFO]",
-        "  ---",
-        "",
-        "Wave 1 complete after Send 2 is logged.",
-    ]
-    return "\n".join(lines)
+def cmd_sequence_check() -> None:
+    """Print the activation sequence recommendation and rationale."""
+    print("\n=== Phase 2 Activation Sequence Recommendation ===")
+    print()
+    print("EXECUTE IN THIS ORDER when both domains approved at June 17-18 checkpoint:")
+    print()
+    print("  Day 0 (checkpoint day):  Domain 59 Wave 1 — AFL-CIO, CBPP, NWLC, MomsRising, ITEP")
+    print("    Active time:           ~60 minutes | Clock time: ~3.5 hours (45-min stagger)")
+    print("    Rationale:             Senate Finance markup closes June 25-30. This is an immovable deadline.")
+    print()
+    print("  Day 1 (next morning):    Domain 51 Wave 1 — CLC (Chlopak), Issue One")
+    print("    Active time:           ~30-45 minutes | Clock time: ~2 hours (90-min stagger)")
+    print("    Rationale:             California ballot deadline July 1 — 5 days after Domain 59 Senate window.")
+    print()
+    print("  Day 1 (afternoon):       Domain 51 Wave 2 — Common Cause CA, LWV CA, Clean Money")
+    print("    Active time:           ~45-60 minutes | Clock time: ~3 hours (90-min stagger)")
+    print()
+    print("  Day 6 (T+6 after D59):   Domain 59 Tier 2 — IF 2+ STRONG from Tier 1")
+    print("    Contacts:              EPI, Demos, NELP, NHLP")
+    print()
+    print("  Day 7 (T+7 gate):        Assess both domains. Run --t7-check for each.")
+    print()
+    print("Reference: DOMAINS_51_59_SEQUENTIAL_ACTIVATION_TIMING.md")
+    print()
 
 
-def generate_wave2_guide() -> str:
-    """Generate a self-contained Wave 2 execution guide."""
-    c3 = CONTACTS[3]
-    c4 = CONTACTS[4]
-    c5 = CONTACTS[5]
-    lines = [
-        "=== WAVE 2 EXECUTION GUIDE (generated) ===",
-        f"Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}",
-        "",
-        f"PRE-CHECK: Confirm CA Fair Elections Act is still on ballot: {BALLOT_CHECK_URL}",
-        "  If removed: change subject lines from 'California Fair Elections Act campaign' to 'California campaign finance reform analysis'",
-        "",
-        "SEND 3 — Common Cause California",
-        f"  To:      {c3['primary_email']}",
-        f"  CC:      {c3.get('cc_email', 'n/a')}",
-        f"  Backup:  {c3['backup_email']}",
-        "  Subject: Research on Citizens United architecture for California Fair Elections Act campaign — July 1 window",
-        "",
-        "  Body (copy-paste, fill YOUR_NAME and YOUR_CONTACT_INFO):",
-        "  ---",
-        "  Dear Darius,",
-        "",
-        "  I am sharing a research document on the Citizens United dark money architecture that may be directly useful to the California Fair Elections Act campaign ahead of the November 3 ballot.",
-        "",
-        "  Domain 51 documents the structural mechanism through which the Citizens United decision — combined with the SpeechNow.org ruling creating super PACs and the 501(c)(4) vehicle for non-disclosure — has produced $1.9 billion in dark money in the 2024 federal cycle alone. The document includes dedicated sections on the California Fair Elections Act (your current campaign), the Hawaii SB 2471 Citizens United workaround (signed May 15, 2026, relevant to the legal theory arguments your campaign will face), and the Montana Plan ballot initiative operating on the same model.",
-        "",
-        "  The most relevant sections for your campaign work:",
-        "",
-        "  - Section 5 (The 2026 State Ballot Measures): California Fair Elections Act analysis, the FEC enforcement vacuum as a 'why now' urgency frame for voters, and the meta-structure of the four simultaneous state campaigns",
-        "  - Section 6.3 (The Hawaii/Montana Corporate Charter Model): the legal architecture that makes state-level reform viable under Citizens United — directly responsive to the 'unconstitutional' attacks your campaign will receive",
-        "  - Section 3 (FEC Structural Failure): the 200+ day FEC enforcement shutdown as evidence that federal self-regulation has collapsed, making state-level action the only viable near-term reform",
-        "",
-        "  The document is publicly available under Creative Commons Attribution 4.0 — use it, excerpt it, share it with campaign staff and legal team:",
-        f"  {GIST_URL}",
-        "",
-        "  The July 1 date is our hard window — that is when California ballot campaigns typically lock their messaging infrastructure before shifting to field execution. I would welcome any indication the research reaches your campaign team.",
-        "",
-        "  [YOUR_NAME]",
-        "  [YOUR_CONTACT_INFO]",
-        "  ---",
-        "",
-        "  After Send 3: wait 90 minutes.",
-        "",
-        "SEND 4 — League of Women Voters California (90 min after Send 3)",
-        f"  To:      {c4['primary_email']}",
-        "  Subject: Dark money architecture research for California Fair Elections Act campaign — July 1 window",
-        "",
-        "  Body (copy-paste, fill YOUR_NAME and YOUR_CONTACT_INFO):",
-        "  ---",
-        "  Dear League of Women Voters California,",
-        "",
-        "  I am writing to share research that may support your work on the California Fair Elections Act ahead of the November 3 ballot.",
-        "",
-        "  Domain 51 — 'Campaign Finance, Dark Money Architecture, and the Corporate Capture of Democratic Institutions' — documents the structural history of how Citizens United, SpeechNow.org, and FEC enforcement collapse have created the dark money system, and analyzes the four simultaneous 2026 state reform campaigns including California's.",
-        "",
-        "  For LWV California's voter education mission, the most immediately applicable sections:",
-        "",
-        "  - Executive Summary (standalone, 500 words): a non-technical explanation of how the dark money architecture works, suitable for voter guides and public education materials",
-        "  - Section 6 (International Comparison): UK and Canada have robust political speech protections and robust disclosure requirements — directly answering the 'but First Amendment' objection",
-        "  - Section 5 (California Fair Elections Act): specific analysis of the public financing mechanism and what it would structurally change in California campaigns",
-        "",
-        f"  The research is 58 citations, CC Attribution 4.0. It is designed to be used — excerpted in voter guides, cited in public education materials, shared with your member network:\n  {GIST_URL}",
-        "",
-        "  I would be grateful if this reaches your campaign research team before the July 1 messaging infrastructure window.",
-        "",
-        "  [YOUR_NAME]",
-        "  [YOUR_CONTACT_INFO]",
-        "  ---",
-        "",
-        "  After Send 4: wait 90 minutes.",
-        "",
-        "SEND 5 — Clean Money Action Fund (90 min after Send 4)",
-        f"  To:      {c5['primary_email']}",
-        "  NOTE:    Do NOT use cleanmoney.org — that domain is unreachable. Use CAclean.org.",
-        "  Subject: Dark money research for California Fair Elections Act — 58 citations, CC Attribution 4.0",
-        "",
-        "  Body (copy-paste, fill YOUR_NAME and YOUR_CONTACT_INFO):",
-        "  ---",
-        "  Dear Clean Money Action Fund team,",
-        "",
-        "  I am sharing a research document on the Citizens United dark money architecture timed to the California Fair Elections Act campaign window.",
-        "",
-        "  Domain 51 is a 58-citation structural analysis of how dark money works, why state-level reform is the most viable near-term pathway, and what the 2026 state campaigns — including California — mean for the broader reform movement. The document covers:",
-        "",
-        "  - The $1.9B in dark money in the 2024 federal cycle and the structural reason this number keeps growing without FEC enforcement",
-        "  - The California Fair Elections Act's public financing mechanism and the arguments it will face from dark money opposition",
-        "  - Hawaii SB 2471 (signed May 15) as the first Citizens United workaround through corporate charter law — a legal theory your organization should be aware of for the post-November period if the ballot measure passes",
-        "  - The FEC enforcement shutdown (200+ consecutive days without quorum as of June 2026) as a structural frame for why federal reform has stalled and state action is necessary",
-        "",
-        f"  CC Attribution 4.0 — use it, adapt it, share it with your campaign legal team and communications staff:\n  {GIST_URL}",
-        "",
-        "  [YOUR_NAME]",
-        "  [YOUR_CONTACT_INFO]",
-        "  ---",
-        "",
-        "Wave 2 complete after Send 5 is logged.",
-    ]
-    return "\n".join(lines)
+# ---------------------------------------------------------------------------
+# Execution guide generators
+# ---------------------------------------------------------------------------
 
-
-def cmd_generate_guide(wave: str) -> None:
-    """Print a self-contained execution guide to stdout."""
-    if wave == "wave1":
-        print(generate_wave1_guide())
-    elif wave == "wave2":
-        print(generate_wave2_guide())
+def _contact_block(send_num: int, contact: dict, gist_url: str, domain_id: int) -> str:
+    """Generate a compact execution block for a single contact."""
+    fallback_note = ""
+    if contact.get("backup_email"):
+        fallback_note = f"\n  Backup:  {contact['backup_email']}"
+    elif contact.get("form_fallback"):
+        fallback_note = f"\n  Fallback: {contact['form_fallback']} (form)"
+    if contact.get("notes"):
+        note_text = f"\n  NOTE:    {contact['notes'][:200]}"
     else:
-        print(f"[error] Unknown wave: {wave}. Use 'wave1' or 'wave2'.", file=sys.stderr)
+        note_text = ""
+    return (
+        f"SEND {send_num} — {contact['org']}\n"
+        f"  To:      {contact['primary_email']}{fallback_note}\n"
+        f"  Contact: {contact['contact_name']}\n"
+        f"  Hook:    {contact['domain_hook']}\n"
+        f"  P(reply): {contact['response_probability']}{note_text}\n"
+        f"  Gist:    {gist_url}\n"
+    )
+
+
+def generate_wave_guide(domain_id: int, wave: int) -> str:
+    """Generate a self-contained execution guide for a given domain wave."""
+    domain = DOMAINS[domain_id]
+    contacts = domain["contacts"]
+    wave_contacts = {k: v for k, v in contacts.items() if v["wave"] == wave}
+
+    if not wave_contacts:
+        return f"[error] No contacts defined for Domain {domain_id} Wave {wave}."
+
+    wave_label = domain["waves"].get(wave, f"Wave {wave}")
+    stagger = 90 if domain_id == 51 else 45
+
+    lines = [
+        f"=== DOMAIN {domain_id} WAVE {wave} EXECUTION GUIDE (generated) ===",
+        f"Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}",
+        f"Topic:     {domain['topic']}",
+        f"Gist URL:  {domain['gist_url']}",
+        f"Wave:      {wave_label}",
+        f"Stagger:   {stagger} minutes between sends",
+        "",
+        f"PRE-FLIGHT: Confirm Gist resolves: {domain['gist_url']}",
+        f"PRE-FLIGHT: Check {domain['check_url']}",
+        "",
+    ]
+
+    for i, (send_num, contact) in enumerate(sorted(wave_contacts.items())):
+        timing = f"T+0" if i == 0 else f"T+{i * stagger} min"
+        lines.append(f"--- {timing} ---")
+        lines.append(_contact_block(send_num, contact, domain["gist_url"], domain_id))
+        if i < len(wave_contacts) - 1:
+            lines.append(f"[After Send {send_num}]: Wait {stagger} minutes.")
+        else:
+            lines.append(f"[After Send {send_num}]: Wave {wave} complete. Log all sends.")
+        lines.append("")
+
+    lines.append(f"Full execution package: DOMAIN_{domain_id}_WAVE_1_EMAIL_EXECUTION_PACKAGE.md")
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Execute command
+# ---------------------------------------------------------------------------
+
+def cmd_execute(domain_id: int, wave_arg: str, state: dict) -> None:
+    """Print execution guide and log intent to WORKLOG."""
+    domain = DOMAINS[domain_id]
+    contacts = domain["contacts"]
+    waves_to_run = []
+
+    if wave_arg == "all":
+        waves_to_run = sorted(set(c["wave"] for c in contacts.values()))
+    elif wave_arg.startswith("wave"):
+        try:
+            w = int(wave_arg.replace("wave", ""))
+            waves_to_run = [w]
+        except ValueError:
+            print(f"[error] Unknown wave: {wave_arg}", file=sys.stderr)
+            sys.exit(1)
+    else:
+        print(f"[error] Unknown wave argument: {wave_arg}", file=sys.stderr)
         sys.exit(1)
 
-
-# ---------------------------------------------------------------------------
-# Execute command — print guide and log intent
-# ---------------------------------------------------------------------------
-
-def cmd_execute(wave: str, state: dict) -> None:
-    """Print execution guide and log the intent to WORKLOG."""
-    if wave in ("wave1", "all"):
-        print(generate_wave1_guide())
-        worklog_entry = (
-            "**Action**: Wave 1 execution guide generated and printed for user.\n\n"
-            "**Contacts**:\n"
-            "- Send 1: Erin Chlopak / Campaign Legal Center (echlopak@campaignlegalcenter.org)\n"
-            "- Send 2: Issue One general inbox (info@issueone.org)\n\n"
-            "**Next step**: User executes sends with 90-minute stagger. "
-            "Log results with --log-send after each send."
+    for wave in waves_to_run:
+        guide = generate_wave_guide(domain_id, wave)
+        print(guide)
+        wave_contacts = {k: v for k, v in contacts.items() if v["wave"] == wave}
+        contact_lines = "\n".join(
+            f"- Send {k}: {v['contact_name']} / {v['org']} ({v['primary_email']})"
+            for k, v in sorted(wave_contacts.items())
         )
-        append_worklog(worklog_entry)
-        save_state(state)
-
-    if wave in ("wave2", "all"):
-        print()
-        print(generate_wave2_guide())
         worklog_entry = (
-            "**Action**: Wave 2 execution guide generated and printed for user.\n\n"
-            "**Contacts**:\n"
-            "- Send 3: Darius Kemp / Common Cause CA (dkemp@commoncause.org)\n"
-            "- Send 4: LWV California (lwvc@lwvc.org)\n"
-            "- Send 5: Clean Money Action Fund (info@CAclean.org)\n\n"
-            "**Next step**: User executes sends with 90-minute stagger. "
-            "Log results with --log-send after each send."
+            f"**Action**: Domain {domain_id} Wave {wave} execution guide generated.\n\n"
+            f"**Contacts**:\n{contact_lines}\n\n"
+            f"**Next step**: User executes sends with {45 if domain_id == 59 else 90}-minute stagger. "
+            f"Log results with --domain {domain_id} --log-send after each send."
         )
-        append_worklog(worklog_entry)
-        save_state(state)
+        append_worklog(domain_id, worklog_entry)
+
+    save_state(domain_id, state)
+
+
+def cmd_generate_guide(domain_id: int, wave_arg: str) -> None:
+    """Print a self-contained execution guide to stdout (no WORKLOG entry)."""
+    try:
+        wave = int(wave_arg.replace("wave", ""))
+    except (ValueError, AttributeError):
+        print(f"[error] Unknown wave: {wave_arg}. Use 'wave1', 'wave2', 'wave3'.", file=sys.stderr)
+        sys.exit(1)
+    print(generate_wave_guide(domain_id, wave))
 
 
 # ---------------------------------------------------------------------------
 # Log send
 # ---------------------------------------------------------------------------
 
-def cmd_log_send(send_num: int, timestamp: str, state: dict) -> None:
+def cmd_log_send(domain_id: int, send_num: int, timestamp: str, state: dict) -> None:
     """Record that a send was completed at a given timestamp."""
-    contact = CONTACTS.get(send_num)
+    contacts = DOMAINS[domain_id]["contacts"]
+    contact = contacts.get(send_num)
     if not contact:
-        print(f"[error] Unknown send number: {send_num}. Valid: 1-5.", file=sys.stderr)
+        valid = sorted(contacts.keys())
+        print(f"[error] Unknown send number: {send_num}. Valid for Domain {domain_id}: {valid}", file=sys.stderr)
         sys.exit(1)
 
     record = {
@@ -508,7 +819,7 @@ def cmd_log_send(send_num: int, timestamp: str, state: dict) -> None:
         "fallback_sent": False,
     }
     state["sends"][str(send_num)] = record
-    save_state(state)
+    save_state(domain_id, state)
 
     worklog_entry = (
         f"**Send {send_num} logged**: {contact['org']}\n\n"
@@ -517,34 +828,39 @@ def cmd_log_send(send_num: int, timestamp: str, state: dict) -> None:
         f"- Reply status: PENDING\n\n"
         f"Wave {contact['wave']} | Contact: {contact['contact_name']}"
     )
-    append_worklog(worklog_entry)
+    append_worklog(domain_id, worklog_entry)
 
-    print(f"[ok] Send {send_num} logged: {contact['org']} at {timestamp}")
+    print(f"[ok] Domain {domain_id} Send {send_num} logged: {contact['org']} at {timestamp}")
 
     # Advise on next step
+    stagger = 45 if domain_id == 59 else 90
     next_num = send_num + 1
-    if next_num in CONTACTS:
-        next_contact = CONTACTS[next_num]
+    if next_num in contacts:
+        next_contact = contacts[next_num]
         if next_contact["wave"] == contact["wave"]:
-            print(f"[next] Wait 90 minutes, then send Send {next_num}: {next_contact['org']} ({next_contact['primary_email']})")
+            print(f"[next] Wait {stagger} minutes, then send Send {next_num}: {next_contact['org']} ({next_contact['primary_email']})")
         else:
-            print(f"[next] Wave {contact['wave']} complete. Wave 2 can start 90+ minutes after this send, or next morning.")
+            print(f"[next] Wave {contact['wave']} complete. Wave {next_contact['wave']} activates after T+7 gate (2+ STRONG required).")
     else:
-        print("[next] All 5 sends complete. Set T+7 calendar reminder.")
+        print("[next] All sends logged. Set T+7 calendar reminder.")
 
 
 # ---------------------------------------------------------------------------
 # Log bounce
 # ---------------------------------------------------------------------------
 
-def cmd_log_bounce(send_num: int, use_fallback: bool, state: dict) -> None:
+def cmd_log_bounce(domain_id: int, send_num: int, use_fallback: bool, state: dict) -> None:
     """Record a bounce and optionally note fallback was sent."""
-    contact = CONTACTS.get(send_num)
+    contacts = DOMAINS[domain_id]["contacts"]
+    contact = contacts.get(send_num)
     if not contact:
-        print(f"[error] Unknown send number: {send_num}.", file=sys.stderr)
+        print(f"[error] Unknown send number: {send_num} for Domain {domain_id}.", file=sys.stderr)
         sys.exit(1)
 
     fallback = contact.get("backup_email")
+    if not fallback:
+        fallback = contact.get("form_fallback")
+
     bounce_record = {
         "send_num": send_num,
         "org": contact["org"],
@@ -558,7 +874,7 @@ def cmd_log_bounce(send_num: int, use_fallback: bool, state: dict) -> None:
     if str(send_num) in state["sends"]:
         state["sends"][str(send_num)]["fallback_sent"] = bounce_record["fallback_sent"]
 
-    save_state(state)
+    save_state(domain_id, state)
 
     worklog_entry = (
         f"**Send {send_num} BOUNCE**: {contact['org']}\n\n"
@@ -566,37 +882,33 @@ def cmd_log_bounce(send_num: int, use_fallback: bool, state: dict) -> None:
         f"- Fallback: {fallback if fallback else 'none available'}\n"
         f"- Fallback sent: {'YES' if bounce_record['fallback_sent'] else 'NO'}"
     )
-    append_worklog(worklog_entry)
+    append_worklog(domain_id, worklog_entry)
 
     if bounce_record["fallback_sent"]:
-        print(f"[ok] Bounce logged for Send {send_num}. Fallback sent to: {fallback}")
+        print(f"[ok] Bounce logged for Domain {domain_id} Send {send_num}. Fallback sent to: {fallback}")
     elif fallback:
-        print(f"[warn] Bounce logged for Send {send_num}. Fallback address available: {fallback}")
-        print(f"       Resend to {fallback} with the same subject and body, then run: --log-bounce {send_num} --fallback")
+        print(f"[warn] Bounce logged for Domain {domain_id} Send {send_num}. Fallback available: {fallback}")
+        print(f"       Resend to {fallback}, then run: --domain {domain_id} --log-bounce {send_num} --fallback")
     else:
-        print(f"[warn] Bounce logged for Send {send_num}. No backup address available.")
-        print(f"       Contact: {contact['notes']}")
+        print(f"[warn] Bounce logged for Domain {domain_id} Send {send_num}. No backup address available.")
+        print(f"       Notes: {contact.get('notes', 'see contact audit')}")
 
 
 # ---------------------------------------------------------------------------
 # Log reply
 # ---------------------------------------------------------------------------
 
-def cmd_log_reply(
-    send_num: int,
-    signal: str,
-    summary: str,
-    state: dict,
-) -> None:
+def cmd_log_reply(domain_id: int, send_num: int, signal: str, summary: str, state: dict) -> None:
     """Record a reply for a given send number."""
     valid_signals = {"STRONG", "MODERATE", "WEAK", "NONE"}
     if signal not in valid_signals:
         print(f"[error] Signal must be one of: {', '.join(sorted(valid_signals))}", file=sys.stderr)
         sys.exit(1)
 
-    contact = CONTACTS.get(send_num)
+    contacts = DOMAINS[domain_id]["contacts"]
+    contact = contacts.get(send_num)
     if not contact:
-        print(f"[error] Unknown send number: {send_num}.", file=sys.stderr)
+        print(f"[error] Unknown send number: {send_num} for Domain {domain_id}.", file=sys.stderr)
         sys.exit(1)
 
     reply_record = {
@@ -607,17 +919,17 @@ def cmd_log_reply(
         "logged_at": datetime.now(timezone.utc).isoformat(),
     }
     state["replies"][str(send_num)] = reply_record
-    save_state(state)
+    save_state(domain_id, state)
 
     action_guidance = {
         "STRONG": (
             "Reply within 24 hours. "
             "Offer to send a one-page summary for internal distribution. "
-            "This is a Phase 2 gate signal — log in DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md."
+            "This is a Phase 2 gate signal."
         ),
         "MODERATE": (
             "Log in execution log. "
-            "If reply includes a named contact, note them for Wave 3 follow-up."
+            "If reply includes a named contact, note for next-wave follow-up."
         ),
         "WEAK": (
             "Log in execution log. "
@@ -627,84 +939,86 @@ def cmd_log_reply(
     }
 
     worklog_entry = (
-        f"**Reply received — Send {send_num}**: {contact['org']}\n\n"
+        f"**Reply received — Domain {domain_id} Send {send_num}**: {contact['org']}\n\n"
         f"- Signal: {signal}\n"
         f"- Summary: {summary}\n"
         f"- Action: {action_guidance[signal]}"
     )
-    append_worklog(worklog_entry)
+    append_worklog(domain_id, worklog_entry)
 
-    print(f"[ok] Reply logged: Send {send_num} — {signal}")
+    print(f"[ok] Domain {domain_id} Reply logged: Send {send_num} — {signal}")
     print(f"     {action_guidance[signal]}")
 
-    # Phase 2 gate advisory
-    strong_count = sum(
-        1 for r in state["replies"].values() if r.get("signal") == "STRONG"
-    )
-    print(f"\n[gate] Current STRONG reply count across all sends: {strong_count}/5")
-    if strong_count >= 4:
-        print("       Phase 2 gate: FULL ACTIVATION threshold met (4+ STRONG). Activate Domain 48 + Domain 57.")
-    elif strong_count >= 2:
-        print("       Phase 2 gate: MODERATE threshold met (2-3 STRONG). Activate Domain 48; hold Domain 57.")
+    strong_count = sum(1 for r in state["replies"].values() if r.get("signal") == "STRONG")
+    gate = DOMAINS[domain_id]["t7_gate"]
+    total_wave1 = sum(1 for c in contacts.values() if c["wave"] == 1)
+    print(f"\n[gate] Domain {domain_id} STRONG reply count: {strong_count}/{total_wave1}")
+    if strong_count >= gate["full"]:
+        print(f"       FULL ACTIVATION threshold met ({gate['full']}+ STRONG). Activate Tier 2 and 3.")
+    elif strong_count >= gate["conditional"]:
+        print(f"       CONDITIONAL threshold met ({gate['conditional']}+ STRONG). Activate Tier 2; hold Tier 3.")
     else:
-        print("       Phase 2 gate: Below threshold (0-1 STRONG). Continue monitoring to Day 14.")
+        print(f"       Below threshold. Continue monitoring to Day 14.")
 
 
 # ---------------------------------------------------------------------------
 # T+7 checkpoint
 # ---------------------------------------------------------------------------
 
-def cmd_t7_check(state: dict) -> None:
-    """Assess the T+7 checkpoint status across all 5 contacts."""
-    print("\n=== T+7 Checkpoint Assessment ===")
+def cmd_t7_check(domain_id: int, state: dict) -> None:
+    """Assess the T+7 checkpoint status for a domain."""
+    domain = DOMAINS[domain_id]
+    contacts = domain["contacts"]
+    gate = domain["t7_gate"]
+    wave1_contacts = {k: v for k, v in contacts.items() if v["wave"] == 1}
+
+    print(f"\n=== Domain {domain_id} T+7 Checkpoint Assessment ===")
     print(f"Checked: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}\n")
 
     sends_logged = len(state["sends"])
     replies_logged = len(state["replies"])
-    strong_count = sum(
-        1 for r in state["replies"].values() if r.get("signal") == "STRONG"
-    )
+    strong_count = sum(1 for r in state["replies"].values() if r.get("signal") == "STRONG")
     bounce_count = len(state["bounces"])
+    total = len(contacts)
 
-    print(f"Sends logged:     {sends_logged}/5")
+    print(f"Sends logged:     {sends_logged}/{total}")
     print(f"Bounces:          {bounce_count}")
     print(f"Replies logged:   {replies_logged}")
     print(f"STRONG signals:   {strong_count}")
     print()
 
-    if sends_logged < 5:
-        pending = [k for k in range(1, 6) if str(k) not in state["sends"]]
-        print(f"[warn] Not all sends completed. Pending sends: {pending}")
+    wave1_keys = list(wave1_contacts.keys())
+    wave1_sent = sum(1 for k in wave1_keys if str(k) in state["sends"])
+    if wave1_sent < len(wave1_keys):
+        pending = [k for k in wave1_keys if str(k) not in state["sends"]]
+        print(f"[warn] Not all Wave 1 sends completed. Pending: {pending}")
         print(f"       Execute remaining sends before assessing T+7 results.")
         return
 
-    # Phase 2 gate routing
     print("Phase 2 gate decision:")
-    if strong_count >= 4:
-        print("  FULL ACTIVATION — 4+ STRONG signals.")
-        print("  Action: Activate Domain 48 + Domain 57 in parallel (June 21-27 window).")
-    elif strong_count >= 2:
-        print("  CONDITIONAL APPROVAL — 2-3 STRONG signals.")
-        print("  Action: Activate Domain 48 sequentially. Hold Domain 57 for secondary June 28 checkpoint.")
-    elif strong_count >= 1:
-        print("  WEAK THRESHOLD — 1 STRONG signal.")
-        print("  Action: Continue monitoring to Day 14 before activating either domain.")
-        print("          Send Wave 3 follow-up to Common Cause CA only on Day 14 if still at 1 STRONG.")
+    if strong_count >= gate["full"]:
+        print(f"  FULL ACTIVATION — {gate['full']}+ STRONG signals.")
+        print(f"  Action: Activate all remaining waves for Domain {domain_id}.")
+    elif strong_count >= gate["conditional"]:
+        print(f"  CONDITIONAL APPROVAL — {gate['conditional']}+ STRONG signals.")
+        print(f"  Action: Activate Wave 2 contacts sequentially. Hold Wave 3 for secondary checkpoint.")
+    elif strong_count >= gate["weak"]:
+        print(f"  WEAK THRESHOLD — 1 STRONG signal.")
+        print(f"  Action: Continue monitoring to Day 14 before activating next wave.")
     else:
-        print("  BELOW THRESHOLD — 0 STRONG signals.")
-        print("  Action: Hold both domains. User decision required.")
-        print("          On Day 14: send brief follow-up to CLC (Send 1) and Common Cause CA (Send 3).")
+        print(f"  BELOW THRESHOLD — 0 STRONG signals.")
+        print(f"  Action: Hold. User decision required. Consider Day 14 follow-up to highest-probability contacts.")
 
     print()
     worklog_entry = (
-        f"**T+7 checkpoint run**\n\n"
-        f"- Sends logged: {sends_logged}/5\n"
+        f"**T+7 checkpoint run — Domain {domain_id}**\n\n"
+        f"- Sends logged: {sends_logged}/{total}\n"
         f"- Bounces: {bounce_count}\n"
         f"- Replies: {replies_logged}\n"
         f"- STRONG signals: {strong_count}\n\n"
         f"Gate decision: see console output."
     )
-    append_worklog(worklog_entry)
+    append_worklog(domain_id, worklog_entry)
 
 
 # ---------------------------------------------------------------------------
@@ -713,43 +1027,61 @@ def cmd_t7_check(state: dict) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Phase 2 Wave 1-2 Email Campaign Orchestration Script — Domain 51",
+        description="Phase 2 Multi-Domain Wave Orchestration Script (Domain 51 + Domain 59)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
 
     parser.add_argument(
+        "--domain",
+        type=int,
+        choices=[51, 59],
+        help="Domain to operate on (51=Campaign Finance, 59=Economic Precarity/CTC)",
+    )
+    parser.add_argument(
         "--status",
         action="store_true",
-        help="Show current execution status for all 5 sends",
+        help="Show current execution status for all sends in the selected domain",
+    )
+    parser.add_argument(
+        "--all-domains-status",
+        action="store_true",
+        help="Show summary status for both domains without --domain flag",
+    )
+    parser.add_argument(
+        "--sequence-check",
+        action="store_true",
+        help="Print the activation sequence recommendation and rationale (no --domain needed)",
     )
     parser.add_argument(
         "--execute",
-        choices=["wave1", "wave2", "all"],
-        help="Print execution guide for the specified wave(s) and log intent to WORKLOG",
+        type=str,
+        metavar="WAVE",
+        help="Print execution guide and log intent (wave1, wave2, wave3, all)",
     )
     parser.add_argument(
         "--generate-guide",
-        choices=["wave1", "wave2"],
+        type=str,
+        metavar="WAVE",
         help="Print a self-contained execution guide to stdout (no WORKLOG entry)",
     )
     parser.add_argument(
         "--log-send",
         type=int,
         metavar="SEND_NUM",
-        help="Record that a send was completed (1-5)",
+        help="Record that a send was completed",
     )
     parser.add_argument(
         "--time",
         type=str,
         default=None,
-        help='Timestamp for --log-send (e.g., "2026-06-14 16:03 UTC"). Defaults to now.',
+        help='Timestamp for --log-send (e.g., "2026-06-17 14:05 UTC"). Defaults to now.',
     )
     parser.add_argument(
         "--log-bounce",
         type=int,
         metavar="SEND_NUM",
-        help="Record that a send bounced (1-5)",
+        help="Record that a send bounced",
     )
     parser.add_argument(
         "--fallback",
@@ -760,7 +1092,7 @@ def main() -> None:
         "--log-reply",
         type=int,
         metavar="SEND_NUM",
-        help="Record a reply received for a send (1-5)",
+        help="Record a reply received for a send",
     )
     parser.add_argument(
         "--signal",
@@ -781,33 +1113,55 @@ def main() -> None:
 
     args = parser.parse_args()
 
-    # Load state once
-    state = load_state()
+    # Commands that do not require --domain
+    if args.all_domains_status:
+        cmd_all_domains_status()
+        return
+    if args.sequence_check:
+        cmd_sequence_check()
+        return
+
+    # All other commands require --domain
+    if args.domain is None:
+        if any([args.status, args.execute, args.generate_guide, args.log_send is not None,
+                args.log_bounce is not None, args.log_reply is not None, args.t7_check]):
+            print("[error] --domain 51 or --domain 59 is required for this command.", file=sys.stderr)
+            parser.print_help()
+            sys.exit(1)
+        parser.print_help()
+        sys.exit(0)
+
+    domain_id = args.domain
+    if domain_id not in DOMAINS:
+        print(f"[error] Unsupported domain: {domain_id}. Supported: 51, 59.", file=sys.stderr)
+        sys.exit(1)
+
+    state = load_state(domain_id)
 
     if args.status:
-        cmd_status(state)
+        cmd_status(domain_id, state)
 
     elif args.execute:
-        cmd_execute(args.execute, state)
+        cmd_execute(domain_id, args.execute, state)
 
     elif args.generate_guide:
-        cmd_generate_guide(args.generate_guide)
+        cmd_generate_guide(domain_id, args.generate_guide)
 
     elif args.log_send is not None:
         timestamp = args.time or datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-        cmd_log_send(args.log_send, timestamp, state)
+        cmd_log_send(domain_id, args.log_send, timestamp, state)
 
     elif args.log_bounce is not None:
-        cmd_log_bounce(args.log_bounce, args.fallback, state)
+        cmd_log_bounce(domain_id, args.log_bounce, args.fallback, state)
 
     elif args.log_reply is not None:
         if not args.signal:
             print("[error] --log-reply requires --signal (STRONG/MODERATE/WEAK/NONE)", file=sys.stderr)
             sys.exit(1)
-        cmd_log_reply(args.log_reply, args.signal, args.summary, state)
+        cmd_log_reply(domain_id, args.log_reply, args.signal, args.summary, state)
 
     elif args.t7_check:
-        cmd_t7_check(state)
+        cmd_t7_check(domain_id, state)
 
     else:
         parser.print_help()
