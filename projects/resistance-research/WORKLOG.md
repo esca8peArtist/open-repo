@@ -2,6 +2,24 @@
 
 ---
 
+## June 14, 2026 — General Research Agent — Domain 51/59 Rapid-Activation Runbooks
+
+**Task**: Create two contingency runbooks (DOMAIN_51_RAPID_ACTIVATION.md and DOMAIN_59_RAPID_ACTIVATION.md) as decision-support tools for the June 17-18 Day 7 checkpoint. Each runbook enables activation within 30-45 minutes of a "yes" decision, using verified contact lists and ready-to-send templates built from existing project documentation.
+
+**Files created**:
+- `DOMAIN_51_RAPID_ACTIVATION.md` — Domain 51 Campaign Finance rapid activation runbook. Covers: CA Fair Elections Act status verification (confirmed on November 2026 ballot, SB-42 signed October 2, 2025), pre-activation checklist (10 min), 30-minute execution path, three-tier activation sequence, copy-paste email templates for OpenSecrets / Democracy 21 / Public Citizen (Tier 1 expansion contacts not in Waves 1-2), Massachusetts/Montana/Arizona state ballot contact templates, Tier C academic contacts (July 1-15 window), 24-hour monitoring framework with bounce/deliverability tracking, full contingency decision tree for post-July-1 activation.
+- `DOMAIN_59_RAPID_ACTIVATION.md` — Domain 59 Time/Economic Poverty rapid activation runbook. Covers: Senate Finance Committee markup status check (Senate Finance released OBBBA tax legislation June 16 with July 4 self-imposed deadline — markup window is active), pre-activation checklist (12 min), 45-minute execution path with AFL-CIO as lead contact, SEIU supplementary template, four sector templates (labor/women's/anti-poverty/legislative staff), warm intro chain activation protocol (CBPP→EPI, MomsRising→AFL-CIO, NWLC→MomsRising→CLASP), 48-hour monitoring by sector, coalition collaboration opportunity detection, success metrics table, November 2026 ballot integration contingency for post-markup frame pivot.
+
+**Key intelligence synthesized from existing project files**:
+- Domain 51 Gist URL confirmed live: https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372
+- Domain 59 Gist URL confirmed live: https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba
+- CA Fair Elections Act: confirmed on November 2026 ballot (Ballotpedia search confirmed June 14)
+- Senate Finance markup: ACTIVE — June 16 release, July 4 goal (web search confirmed)
+- Critical personnel update for Domain 59: Chiraag Bains departed Demos 2021; current president Taifa Smith Butler
+- Critical personnel update for Domain 51: Karen Hobert Flynn deceased March 2023; Virginia Kase Solomón is current Common Cause president
+
+---
+
 ## June 14, 2026 — General Research Agent — Domain 59 Research Outline (Five-Zone Format)
 
 **Task**: Complete the "Phase 2 Domain 59 Research Outline — Economic Precarity & Civic Participation Crisis" exploration queue item. Produce a 1,200–1,500 word structured outline in the five-zone deliverable format, covering executive summary, five research zones, research questions, sources, expert contacts, and timeline.
