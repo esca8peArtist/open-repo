@@ -4,15 +4,14 @@ project: systems-resilience
 phase: 5/6
 wave: 2
 status: PRODUCTION-READY
-purpose: "Operational guide for June 14-15 author-to-domain assignment and task initiation"
-created: 2026-06-07
-execution_deadline: 2026-06-14 14:00 UTC
-duration: "90 minutes (vs. 3-4 hours without pre-computation)"
-target_audience: "Project lead executing June 14-15 matching session"
+purpose: "Task assignment rules, domain-to-author matching criteria, execution decision framework for Phase 6 Wave 2"
+created: 2026-06-14
+execution_deadline: 2026-06-15
+domains_covered: "60–65 (International, Intergenerational, Infrastructure, Ecosystem, Economic, Governance)"
 ---
 
 # Wave 2 Content Assignment Protocol
-## Phase 6 Domains 60–65 — Operational Guide for June 14–15 Assignment Session
+## Domain-to-Author Matching & Tier Allocation Framework
 
 > **This document operationalizes the author-to-domain matching decisions.** Combined with WAVE_2_AUTHOR_MATCHING_ALGORITHM.md (scoring) and WAVE_2_AUTHOR_PROFILE_CARDS.md (candidate profiles), this protocol guides the complete assignment workflow: matching finalization → domain scope assignment → delivery task creation → timeline confirmation → quality gate configuration.
 

@@ -1,741 +1,673 @@
----
-title: "Wave 2 Contingency Author Substitution"
-project: systems-resilience
-phase: 5/6
-wave: 2
-status: PRODUCTION-READY
-purpose: "Failure mode handling: author no-show, quality rejection, scope collapse, and recovery protocols"
-created: 2026-06-07
-execution_trigger: "On-demand when author escalation occurs (target: avoid >1 contingency per wave)"
-decision_trees: "Clear branches for each failure scenario with timeline recovery options"
----
+# Wave 2 Contingency: Author Substitution & Fallback Activation
+## Systems-Resilience Project | Domains 60–65
 
-# Wave 2 Contingency Author Substitution
-## Phase 6 Domains 60–65 — Failure Mode Handling & Recovery Protocols
-
-> **This document operationalizes failure scenarios that WAVE_2_CONTENT_ASSIGNMENT_PROTOCOL.md Section 5 escalates to.** When an author no-shows, submits work below quality threshold, or declares they cannot continue, this document provides decision trees and activation procedures to recover the domain without losing the publication timeline or cascading delays.
-
-> **Key principle**: Contingency procedures are designed to activate **within 24 hours of failure detection**, preserve maximum recovery time for that domain, and minimize impact on other domains.
+**Document Version**: 1.0  
+**Effective Date**: June 2026  
+**Status**: Production-Ready  
+**Last Updated**: 2026-06-14
 
 ---
 
-## Part 1: Failure Mode Detection
+## 1. Decision Tree: Author No-Show Protocol
 
-### 1.1 Escalation Triggers & Timeline
+### 1.1 Trigger Conditions
 
-**No-show detection** (Author stops communicating):
+An author is classified as **no-show** if:
 
-| Timeline | Trigger | Action | Owner |
-|----------|---------|--------|-------|
-| Day 1 | Author misses scheduled call; no notice sent | Send email + call same day | Project lead |
-| Day 2 | No response to Day 1 outreach | Call backup contact; escalate email | Project lead |
-| Day 3 | Still no response; no submission if draft due | Phone call + email to all known contacts | Project lead + Backup contact |
-| Day 4–5 | No contact after 3+ escalation attempts | **ACTIVATE CONTINGENCY PLAN** | Project lead |
+- **T+3 (72 hours after submission window close)**: No email response from orchestrator's initial outreach
+- **T+7 (7 days after submission window close)**: No draft or partial submission received
+- **T+10 (10 days after submission window close)**: No acknowledgment from author despite two reminders
 
-**Quality rejection detection** (Peer review = REJECTED status):
-
-| Trigger | Timeline | Action | Owner |
-|---------|----------|--------|-------|
-| Peer reviewer submits REJECTED status + detailed feedback | Immediate | Project lead calls author + peer reviewer for 30-min clarification call | Project lead |
-| Call outcome: Issues are fundamental (>major rewrite needed); author agrees work is unfinishable | Within 2 hours | **ACTIVATE CONTINGENCY PLAN** | Project lead |
-| Call outcome: Issues fixable in revision; author commits to revision | Within 2 hours | Proceed with REVISION-NEEDED (see WAVE_2_DELIVERY_LOGISTICS.md Section 3); no contingency yet | Project lead |
-
-**Author self-escalation** (Author proactively declares they cannot continue):
-
-| Scenario | Timeline | Action | Owner |
-|----------|----------|--------|-------|
-| Author emails: "I'm over my head; I can't do this justice" | Within 24 hrs | Offer contingency options (Section 2 below) | Project lead |
-| Author requests extension due to life circumstances (illness, family emergency) | Within 24 hrs | Approve extension +3 to +7 days (no contingency yet); escalate if extension expires without progress | Project lead |
-| Author responds "I'm withdrawing; I can't continue after this week" | Within 2 hours | **ACTIVATE CONTINGENCY PLAN** | Project lead |
-
----
-
-## Part 2: Decision Tree: Which Contingency Path?
-
-### 2.1 Path Selection Logic
-
-When contingency is triggered, follow this decision tree **in order**. Answer each yes/no question top-to-bottom.
+### 1.2 Decision Flow
 
 ```
-CONTINGENCY ACTIVATION DECISION TREE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-START: Author X has triggered escalation for Domain Y
-
-Q1: Is the assigned author willing to continue but needs SUPPORT?
-    └─ YES → Go to SECTION 2.2: Co-Author Pairing (support path)
-    └─ NO  → Continue to Q2
-
-Q2: Are there ALT tier authors available for Domain Y (from WAVE_2_AUTHOR_PROFILE_CARDS.md)?
-    └─ YES, 1–2 available → Go to SECTION 2.3: Fallback Activation (standard contingency)
-    └─ NO ALT available  → Continue to Q3
-
-Q3: Can Domain Y scope be absorbed into adjacent domain assignment?
-    └─ YES (list related domain) → Go to SECTION 2.4: Scope Reduction (load shift)
-    └─ NO, cannot absorb       → Go to SECTION 2.5: Tier 3 Synthesis Role (partial solution)
-
-END: Contingency plan activated; timeline recovery calculated
+┌─────────────────────────────────────┐
+│  Author No-Show Detected (T+3)      │
+│  Trigger: No response to reminder   │
+└────────────┬────────────────────────┘
+             │
+             v
+┌─────────────────────────────────────┐
+│  Step 1: Escalation Attempt (T+3)   │
+│  Send urgent email + Slack ping     │
+│  Set callback expectation: T+5      │
+└────────────┬────────────────────────┘
+             │
+             v
+   ┌─────────────────────────────┐
+   │ Response by T+5?            │
+   └──────┬──────────────────┬───┘
+    YES   │                  │   NO
+          v                  v
+    ┌──────────────┐  ┌─────────────────────────┐
+    │ Accept draft │  │ Step 2: ALT Activation  │
+    │ via extended │  │ (T+5)                   │
+    │ review track │  │ Invite secondary Tier B │
+    └──────────────┘  │ author for domain      │
+                      └────────┬────────────────┘
+                               │
+                               v
+                     ┌─────────────────────────┐
+                     │ ALT accepts offer?      │
+                     └──────┬──────────────┬───┘
+                      YES   │              │   NO
+                            v              v
+                       ┌──────────┐   ┌─────────────────┐
+                       │ Continue │   │ Step 3: EXT Pool│
+                       │ with ALT │   │ Activation (T+7)│
+                       │ T+7 start│   │ Invite EXT-01   │
+                       └──────────┘   │ through EXT-10  │
+                                      └────────┬────────┘
+                                               │
+                                               v
+                                     ┌─────────────────────┐
+                                     │ Any EXT accepts?    │
+                                     └──────┬──────────┬───┘
+                                      YES   │          │   NO
+                                            v          v
+                                       ┌───────┐  ┌──────────────┐
+                                       │EXT    │  │ Step 4: Phase3│
+                                       │starts │  │ Escalation   │
+                                       │T+10  │  │ (T+14)       │
+                                       └───────┘  │ Domain defer-│
+                                                  │ red; reason  │
+                                                  │ documented  │
+                                                  └──────────────┘
 ```
 
 ---
 
-### 2.2 Path A: Co-Author Pairing (Support Path)
+## 2. Per-Domain Contingency Routing
 
-**Scenario**: Author is competent but overwhelmed; needs active support.
+### 2.1 Primary Author → ALT Pool → EXT Pool Hierarchy
 
-**Triggers**:
-- Author says: "I need help" or "Can I have a co-author?" or "I'm behind and need support"
-- Peer reviewer says (during review): "Good bones; author needs editorial support to polish"
-- Project lead assesses: Author is capable; just needs mentoring/co-author to finish
+| Domain | Primary Tier | ALT (Tier B, Secondary) | EXT Fallback | Notes |
+|--------|--------------|------------------------|--------------|-------|
+| **60** International Coordination | [Named Author] | Martha Santos | EXT-02 (David Greenberg) | Crisis response expertise required |
+| **61** Intergenerational Knowledge | [Named Author] | David Greenberg | EXT-09 (James Akomea) | Education/anthropology background |
+| **62** Infrastructure Resilience | [Named Author] | [ALT TBD] | EXT-08 (Patrick Carolan) | Engineering or systems planning |
+| **63** Ecosystem Restoration | [Named Author] | [ALT TBD] | EXT-05 (iFixit) | Ecology or land management focus |
+| **64** Economic Resilience | [Named Author] | Michael Linton | EXT-03 (La Via Campesina) | Alternative economics expertise |
+| **65** Institutional Learning | [Named Author] | [ALT TBD] | EXT-07 (Post Carbon Institute) | Organizational/systems analysis |
 
-**Activation steps** (execute within 24 hours):
+### 2.2 EXT Pool Candidate Index
 
-1. **Identify co-author source** (in priority order):
-   - Wave 1 author from same/adjacent domain (best option; already knows project)
-   - Tier B author from WAVE_2_AUTHOR_PROFILE_CARDS.md in different domain (if available)
-   - External subject matter expert (PhD student, practitioner with writing background)
-   - Community editor already engaged for peer review (pivot them to co-author)
+**EXT-01**: Cooperative Extension System (Land-Grant Universities)
+- Expertise: Agricultural systems, community resilience, local adaptation
+- Contact: Regional extension director (varies by state)
+- Tier commitment: Secondary author, 10–15 hour engagement
 
-2. **Propose co-author to primary author** (same day):
-   ```
-   Email subject: Contingency Support — Co-Author Pairing for Domain [Y]
-   
-   Hi [Author Name],
-   
-   I heard that Domain [Y] is feeling overwhelming. That's OK — this is exactly why 
-   we have support options.
-   
-   I'd like to propose pairing you with [Co-Author Name], who has [relevant expertise/background]. 
-   [Co-Author] would join as a 50/50 co-author, which means:
-   
-   - You split the research/writing load 50/50
-   - Both names appear as authors in final document
-   - You split the payment ($2,340 each instead of $4,680 solo)
-   - [Co-Author] starts immediately; revised deadline still Sept 15
-   
-   Would this help? I can have [Co-Author] call you by [tomorrow at TIME].
-   
-   Let me know.
-   [Project Lead]
-   ```
+**EXT-02**: La Via Campesina (International Peasant Movement)
+- Expertise: Food sovereignty, agroecology, international coordination
+- Contact: regional@viacampesina.org
+- Tier commitment: Secondary author, 12–18 hour engagement
 
-3. **Contact co-author immediately** (same day):
-   ```
-   Email subject: Urgent: Co-Author Opportunity — Domain [Y] — Wave 2
-   
-   Hi [Co-Author Name],
-   
-   I have an urgent request. The primary author for Domain [Y] needs co-author support 
-   to finish their draft by [deadline]. 
-   
-   Would you be willing to step in as a 50/50 co-author? This would mean:
-   - 4–5 weeks of work (not 9 weeks)
-   - You take responsibility for [Section(s) #], [Co-Author] takes [Sections]
-   - Split payment: $2,340 (vs. $4,680 if solo authoring)
-   - Full support + check-in calls
-   
-   Timeline is tight, but doable if you can start this week.
-   
-   Interested? Call me by [TIME today] so I can facilitate a call with [Author Name].
-   
-   [Project Lead]
-   ```
+**EXT-03**: CARE International
+- Expertise: Humanitarian response, household resilience, livelihoods
+- Contact: policy@care.org
+- Tier commitment: Secondary author, 10–12 hour engagement
 
-4. **Three-way call** (within 48 hours):
-   - Primary author + Co-author + Project lead
-   - Agenda:
-     - Divide sections/workload
-     - Confirm complementary skills (e.g., one strong on research; one on writing)
-     - Set internal communication plan (when do they sync?)
-     - Revised deadline: Same as original (no extension for co-authors; they share load)
-   - Outcome: Both authors sign off on division of labor
+**EXT-04**: Post Carbon Institute
+- Expertise: Climate adaptation, systems thinking, institutional change
+- Contact: research@postcarbon.org
+- Tier commitment: Co-author or extended author, 12–15 hour engagement
 
-5. **Update documents**:
-   - WAVE_2_ASSIGNMENT_DECISIONS.md: Add note "Co-authored with [Name]"
-   - YAML front matter: Add `co_author: "[Co-Author Name]"` field
-   - Payment record: Split payment 50/50; both receive milestone payments
-   - WAVE_2_INCIDENT_LOG.md: "Contingency A (Co-author) activated for Domain [Y], Day [X]"
+**EXT-05**: iFixit (Repair Community)
+- Expertise: Infrastructure repair, community resilience, right-to-repair
+- Contact: editorial@ifixit.org
+- Tier commitment: Secondary author, 8–10 hour engagement
 
-6. **Timeline recovery**:
-   - Co-author onboarding: 1 day
-   - Revised work schedule: 4–5 weeks (compressed)
-   - Submission deadline: UNCHANGED (same as original)
-   - Recovery success rate: ~85% (co-authors usually deliver on time if initial author is capable)
+**EXT-06**: Transition Network (UK-based)
+- Expertise: Community transition, localism, social infrastructure
+- Contact: hello@transitionnetwork.org
+- Tier commitment: Contributing author, 10–12 hour engagement
+
+**EXT-07**: Oral History Association
+- Expertise: Intergenerational knowledge capture, documentary methods
+- Contact: info@oralhistory.org
+- Tier commitment: Secondary author, 10–14 hour engagement
+
+**EXT-08**: Patrick Carolan (Agronomist, Rodale Institute)
+- Expertise: Soil science, regenerative agriculture, systems resilience
+- Contact: [Individual via Rodale]
+- Tier commitment: Co-author, 15–20 hour engagement
+
+**EXT-09**: James Akomea (Community Education, Ghana)
+- Expertise: Intergenerational learning, indigenous knowledge, pedagogy
+- Contact: [Individual via UNDP or regional education networks]
+- Tier commitment: Secondary author, 12–18 hour engagement
+
+**EXT-10**: Michael Linton (Community Exchange Systems)
+- Expertise: Local currencies, timebanking, economic alternatives
+- Contact: michael@community-exchange.org
+- Tier commitment: Co-author or contributor, 10–15 hour engagement
 
 ---
 
-### 2.3 Path B: Fallback Author Activation (Standard Contingency)
+## 3. Timeline Impact Analysis
 
-**Scenario**: Assigned author is unresponsive/unreachable OR has quality fundamentally below threshold. Replace with ALT tier author from candidate pool.
+### 3.1 Contingency Activation: Delay Scenarios
 
-**Triggers**:
-- Author unreachable >3 days (no-show escalation, Section 1.1)
-- Peer reviewer = REJECTED; author unavailable or unwilling to revise
-- Author formally withdraws: "I'm done; find someone else"
+#### Scenario A: Author No-Show Detected at T+1 (Immediate)
 
-**Activation steps** (execute within 24 hours of trigger):
+**Action**: Activate ALT tier immediately upon detection
 
-1. **Identify ALT tier author for Domain Y**:
-   - Reference WAVE_2_AUTHOR_PROFILE_CARDS.md for "Alternative candidates" listed under each domain card
-   - Example from profile cards:
-     ```
-     CARD 63-01: Jack Kloppenburg (Assigned: Domain 63)
-     Alternatives (if unavailable): Lauren Gwin (20/25), Saria Lofton (19/25)
-     ```
-   - Call candidates in order of fitness score; **first who answers "yes" = fallback author**
+| Phase | Timeline | Activity | Publication Impact |
+|-------|----------|----------|-------------------|
+| Escalation | T+1 to T+3 | ALT author receives offer; accepts/declines | None if ALT accepts by T+3 |
+| Delivery | T+3 to T+10 | ALT completes draft (compressed 7-day window) | +0 days if on schedule |
+| Review | T+10 to T+21 | Peer review + orchestrator feedback (normal) | +0 days |
+| **Total publication delay** | | | **0 days** (Wave 2 stays T+28) |
 
-2. **Contact ALT author immediately** (phone call + email same day):
-   ```
-   Subject: Urgent: Phase 6 Wave 2 Author Opportunity — Domain [Y]
+**Conditions**: ALT must accept by T+3 and deliver by T+10 (compressed timeline with support escalation).
 
-   Hi [ALT Author Name],
+#### Scenario B: Author No-Show Detected at T+7 (Peer Review Closure)
 
-   I'm reaching out because the primary author for Domain [Y] has had to step back, 
-   and you were our first-choice backup candidate.
+**Action**: Activate ALT tier at T+7; escalate to EXT pool if ALT declines by T+9
 
-   We'd like to offer you Domain [Y] authorship on these terms:
+| Phase | Timeline | Activity | Publication Impact |
+|-------|----------|----------|-------------------|
+| ALT outreach | T+7 to T+9 | ALT receives offer; response deadline T+9 | None if ALT accepts by T+9 |
+| Delivery | T+9 to T+16 | ALT completes draft (compressed 7-day window) | +1 week if ALT accepts late |
+| Peer review | T+16 to T+23 | Compressed peer review (expedited) | +0 days (parallel with orchestrator) |
+| **Total publication delay** | | | **+3 to 7 days** (Wave 2 shifts to T+31–35) |
 
-   ASSIGNMENT OFFER:
-   - Domain: [Y] ([Domain Name])
-   - Start date: [Today or tomorrow]
-   - Submission deadline: [Original domain deadline + 1 week buffer, if available]
-   - Payment: $65/hour, 8 hrs/week estimate; $4,680 total (same as standard assignment)
-   - Support: Weekly check-ins, peer reviewer, access to all Wave 1 materials
+**Conditions**: ALT must respond by T+9 and deliver draft by T+16. EXT activation occurs at T+9 if ALT declines.
 
-   SCOPE BRIEF & MATERIALS:
-   [Attach same scope brief that original author received]
+#### Scenario C: Author & ALT No-Show (T+14, EXT Activation)
 
-   TIME SENSITIVITY:
-   The domain deadline is [DATE — X weeks away]. If you say yes today, you'd start immediately 
-   (likely 5 weeks writing time vs. the usual 9 weeks). This is doable but intense.
+**Action**: Activate EXT pool author at T+14; escalate to Phase 3 if EXT declines by T+18
 
-   DECISION:
-   Can you confirm by [TODAY at 15:00 UTC]? If yes, we'll do a 30-min call to onboard.
-   
-   Looking forward to your response.
+| Phase | Timeline | Activity | Publication Impact |
+|-------|----------|----------|-------------------|
+| EXT outreach | T+14 to T+18 | EXT candidate receives offer; response window 4 days | Large delay expected |
+| Negotiation | T+18 to T+21 | EXT author scope/timeline agreement | Domain-specific |
+| Delivery window | T+21 to T+28 | EXT completes draft (max 7 days; may extend) | **+7 to 14 days** (T+35–42) |
+| **Total publication delay** | | | **+7 to 14 days** (Wave 2 partially deferred) |
 
-   [Project Lead]
-   ```
+**Conditions**: EXT author may request scope reduction (500–800 word limit) or extended timeline. Phase 3 escalation recommended if EXT response is "conditional accept" (requires extra resources).
 
-3. **If ALT author says YES**:
-   - Conduct 30-minute onboarding call (same day or next morning)
-   - Send scope brief + all Wave 1 materials
-   - Update assignment records (WAVE_2_ASSIGNMENT_DECISIONS.md)
-   - Schedule first check-in call for 3 days out
-   - Memo to peer reviewer: "Original author X replaced by author Y; review timeline unchanged"
+#### Scenario D: Complete Cascade Failure (Author + ALT + EXT Decline)
 
-4. **If ALT author says NO**:
-   - Move to next-best alternative from candidate list
-   - Repeat steps 2–3
-   - If no ALT authors available → Go to SECTION 2.4 (Scope Reduction)
+**Action**: Escalate domain to Phase 3 (deferred publication) at T+21
 
-5. **Timeline recovery calculation**:
-   - Days elapsed: 3–5 days (from initial failure to new author start)
-   - Time remaining for new author: [Original deadline] − [Days elapsed]
-   - If remaining time <4 weeks: Adjust deadline +1 week (negotiate with peer review)
-   - If remaining time <2 weeks: Escalate to scope reduction (Section 2.4)
+| Phase | Timeline | Activity | Publication Impact |
+|-------|----------|----------|-------------------|
+| Escalation | T+14 to T+21 | All tiers exhausted; Phase 3 decision gate | **Domain deferred** |
+| Documentation | T+21 | Reason documented in archive; timeline provided for Phase 3 re-engagement | **Entire domain publication deferred** |
+| **Total publication delay** | | | **Indefinite (Phase 3)** |
 
-6. **Documentation**:
-   - WAVE_2_INCIDENT_LOG.md: "Contingency B (Fallback) activated for Domain [Y], Day [X], Original author: [Name], Fallback author: [Name]"
-   - WAVE_2_ASSIGNMENT_DECISIONS.md: Replace original author with fallback; note date + reason
-   - Email notification to stakeholders: "Domain [Y] author change; new author [Name], same deadline"
+**Conditions**: Rare scenario. Typical alternative is "scope reduction + extended EXT author" at T+18.
+
+### 3.2 Summary: Delay Impact by Activation Point
+
+| Activation Point | Delay to Wave 2 | Peer Review Required? | Domain Salvageable? |
+|------------------|-----------------|----------------------|---------------------|
+| **T+0–T+3** (Immediate) | 0 days | Yes (normal) | Yes (ALT on track) |
+| **T+5–T+7** | 0–3 days | Yes (compressed) | Yes (ALT with support) |
+| **T+10–T+14** | 3–7 days | Yes (expedited) | Yes (EXT, scope flexible) |
+| **T+18–T+21** | 7–14 days | Maybe (conditional) | Partial (Phase 3 candidate) |
+| **T+21+** | 14+ days | No (Phase 3) | No (deferred) |
 
 ---
 
-### 2.4 Path C: Scope Reduction (Load Shift Path)
+## 4. No-Show Communication Templates
 
-**Scenario**: No ALT tier authors available, or no-show happened too late to find replacement. Reduce domain scope and distribute missing content to adjacent domain.
+### 4.1 T+3: Escalation Email to Author
 
-**Triggers**:
-- No viable fallback authors available in candidate pool
-- Failure detected <3 weeks before original deadline
-- Two domains already in contingency; cannot afford third failure
-
-**Scope reduction decision matrix** (choose which domain absorbs load):
-
-| Failed Domain | Primary Recipient | Secondary Option | Load Transfer |
-|---------------|-------------------|------------------|----------------|
-| **60** (Intl Coord) | **65** (Governance scaling) | 64 (Economic) | Sections 5 + 1–2 case studies → 65 |
-| **61** (Intergenerational) | **62** (Infrastructure) | 64 | Sections 3 + 5 → 62 |
-| **62** (Infrastructure) | **60** (Intl Coord) | 63 (Ecosystem) | Sections 4 + 5 → 60 |
-| **63** (Ecosystem) | **64** (Economic) | 62 | Sections 3 + 4 → 64 (optional; deep scope) |
-| **64** (Economic) | **61** (Intergenerational) | 65 | Sections 2 + 3 → 61 |
-| **65** (Governance) | **60** (Intl Coord) | 64 | Sections 1 + 5 → 60 |
-
-**Activation steps** (within 24 hours):
-
-1. **Identify receiving author** (use matrix above):
-   - Contact assigned author of recipient domain
-   - Confirm they're on track + have capacity for +2,000–2,500 word expansion
-   - Request commitment: Can you absorb [X] section(s) of the failed domain? Yes/No.
-
-   ```
-   Email subject: Urgent: Scope Expansion Request — Domain [Recipient]
-
-   Hi [Recipient Author Name],
-
-   We have a contingency situation. Domain [Failed] author has stepped back, 
-   and rather than find a replacement, we'd like to offer you a scope expansion.
-
-   EXPANSION REQUEST:
-   - Add Sections [X–Y] from Domain [Failed] to your Domain [Recipient] draft
-   - Estimated addition: 2,000–2,500 words
-   - Estimated effort: +6–8 hours additional work
-   - Payment: +$390–520 (pro-rata increase to your budget)
-   - New deadline: [Original domain deadline + 3 days] (to account for expansion)
-
-   WHY THIS DOMAIN?
-   Domain [Recipient] and Domain [Failed] are naturally adjacent; your existing 
-   frameworks can incorporate the failed domain's content without major restructuring.
-
-   CAN YOU DO THIS?
-   Reply with yes/no by [TODAY at 15:00 UTC]. If yes, we'll send you the failed 
-   domain's research materials + Section [X–Y] outline.
-
-   Let me know.
-   [Project Lead]
-   ```
-
-2. **If receiving author agrees**:
-   - Send failed domain's research materials + section outline (same day)
-   - Confirm revised deadline
-   - Update YAML front matter: `expanded_scope: "includes Section [X–Y] from Domain [Failed]"`
-   - Add note to Section [X–Y]: "This section was originally planned for Domain [Failed] and is included here for continuity"
-   - Schedule brief check-in call (3 days out) to confirm integration strategy
-
-3. **If receiving author declines**:
-   - Try secondary recipient (see matrix)
-   - If all recipients decline → Go to Section 2.5 (Tier 3 Synthesis)
-
-4. **Timeline & quality implications**:
-   - Expanded domain gets longer review window (+3 days peer review)
-   - Final acceptance deadline still Sept 15 (no slip past this date)
-   - Peer reviewer assesses expanded content against same 12-point checklist
-   - Payment adjustment: Transparent, pro-rata; document in payment tracking
-
-5. **Documentation**:
-   - WAVE_2_INCIDENT_LOG.md: "Contingency C (Scope reduction) activated for Domain [Failed], content absorbed by Domain [Recipient]"
-   - WAVE_2_SCOPE_CHANGE_LOG.md: "Domain [Failed] sections [X–Y] transferred to Domain [Recipient]; new word count [XXXX]"
-   - Email stakeholders: "Domain [Failed] deferred to Wave 3; content integrated into Domain [Recipient]. Publication timeline on track."
-
----
-
-### 2.5 Path D: Tier 3 Synthesis Role (Partial Solution)
-
-**Scenario**: All paths A–C exhausted. Cannot find co-author, no fallback authors, adjacent domain cannot absorb scope. Resort to Tier 3 synthesis: hire synthesizer to compile Wave 1 + available sources into partial guide.
-
-**Triggers**:
-- Fallback search exhausted (all ALT authors unavailable)
-- All receiving domains have declined scope expansion
-- Time remaining: <2 weeks before original deadline
-- Decision: Deliver partial (5,000–6,000 word) guide rather than full (8,000–12,000) or nothing
-
-**What is Tier 3 synthesis?**
-- Not a primary author (not 8–12K words, full sections)
-- Synthesizer compiles existing Wave 1 Phase 5 research + provided sources
-- Output: 5,000–6,000 word "condensed practitioner guide" (abbreviated version)
-- Quality: Meets core 12-point checklist but with reduced section depth
-- Payment: $2,000 (vs. $4,680 for full authorship); ~30 hours work
-
-**Activation steps** (execute within 24 hours):
-
-1. **Identify synthesizer source** (in priority order):
-   - Tier B author from different domain (willing to do synthesis instead of full authorship)
-   - Community editor already engaged (pivot them to synthesis)
-   - Graduate student / research assistant with practitioner writing background
-   - Wave 1 author from adjacent domain (paid extra for synthesis work)
-
-2. **Contact synthesizer** (phone + email same day):
-   ```
-   Subject: Urgent: Synthesis Role — Domain [Failed] — Wave 2
-
-   Hi [Synthesizer Name],
-
-   We have an urgent opportunity. The primary author for Domain [Failed] has stepped back, 
-   and we'd like to offer a different kind of contribution:
-
-   ROLE: Tier 3 Synthesis Author for Domain [Failed]
-   - Output: 5,000–6,000 word condensed guide (vs. usual 8,000–12,000)
-   - Timeline: 3 weeks
-   - Input: Phase 5 Wave 1 research + provided sources (you don't research; you synthesize existing work)
-   - Payment: $2,000 flat fee
-   - Deadline: [Original domain deadline]
-
-   WHAT THIS MEANS:
-   - You'll use sections of the original scope brief (1–2 core sections, skip others)
-   - Shorter case study section (2 examples instead of 4)
-   - Abbreviated failure modes + scaling sections
-   - Same citation standard; same quality gate (12-point checklist)
-
-   WHY YOU?
-   Your background in [relevant area] positions you well to synthesize [domain] research 
-   for practitioner audiences.
-
-   INTERESTED?
-   Reply or call by [TODAY at 16:00 UTC] if you'd like to explore.
-
-   [Project Lead]
-   ```
-
-3. **If synthesizer agrees**:
-   - Create abbreviated scope brief (2–3 core sections only)
-   - Send Wave 1 materials + pre-selected sources (reduce bibliography to 8–12 "must-read" sources)
-   - Clarify: "You're synthesizing, not researching. Primary sources already identified."
-   - 30-min onboarding call (next morning)
-   - Revised outline due: 1 week out
-   - Submission deadline: UNCHANGED (original deadline)
-
-4. **Revised 12-point checklist** (for synthesis documents):
-   - Elements 1–5 (Content & Scope): Scaled to 5,000–6,000 words; still 5 sections but 1,000 words each
-   - Elements 6–12: UNCHANGED (same citation standards, same structure, same quality)
-   - Acceptance rule: 11/12 elements OK (1 element can be "scaled but acceptable" due to condensed scope)
-
-5. **Documentation & stakeholder communication**:
-   - WAVE_2_INCIDENT_LOG.md: "Contingency D (Tier 3 Synthesis) activated for Domain [Failed], Synthesizer: [Name]"
-   - Email stakeholders: "Domain [Failed] will be published as condensed synthesis guide (5,000 words, Wave 3 expansion planned). Full-scope version deferred to Wave 3 Wave 2 with original author or new recruit."
-   - Note in published document: "This condensed guide synthesizes Phase 5 Wave 1 research. An expanded full-scope guide is planned for Phase 6 Wave 3."
-
-6. **Wave 3 planning**:
-   - Flag Domain [Failed] for Wave 3 expansion with original author (if they re-engage) or new recruit
-   - Synthesized version serves as foundation; Wave 3 author expands to full 8,000–12,000 words
-   - Cost: Synthesis ($2,000) + Wave 3 expansion (~$2,500–3,000)
-
----
-
-## Part 3: Timeline Recovery & Domain Deadline Adjustments
-
-### 3.1 Deadline Slip Decision Table
-
-**When a contingency is activated, consult this table to determine if deadline must slip.**
-
-| Contingency Path | Days Lost | Remaining Time | New Deadline | Slip Allowed |
-|------------------|-----------|-----------------|--------------|-------------|
-| **A: Co-Author** | 1–2 days | 26–27 days | UNCHANGED | No — co-authors compress schedule |
-| **B: Fallback** | 3–5 days | 22–24 days | UNCHANGED if >21 days; +7 days if 14–21 days | Yes, if triggered <3 weeks before |
-| **C: Scope Reduction** | 2–4 days | 23–25 days | +3 days (absorption + integration) | Yes |
-| **D: Synthesis** | 1–3 days | 24–26 days | UNCHANGED (synthesizer works fast) | No — fixed 3-week timeline |
-
-**Rules**:
-- If remaining time >21 days: No deadline slip; contingency author must meet original date
-- If remaining time 14–21 days: May slip +3 to +7 days (negotiable with peer review)
-- If remaining time <14 days: MUST use Tier 3 synthesis (Paths B/C infeasible); no slip (synthesis timeline is fixed 3 weeks)
-- **Sept 15 hard deadline**: NO contingency domain slips past Sept 15; if impossible, escalate to leadership for Wave 3 deferral decision
-
-### 3.2 Multi-Domain Contingency (If >1 Domain Triggers)
-
-**Scenario**: Two or more domains trigger contingency simultaneously (rare but possible).
-
-**Priority order for contingency activation** (process in this sequence):
-
-1. **Domain 63 (Ecosystem Restoration)** — Highest threshold; most critical; activate first
-2. **Domain 65 (Governance Scaling)** — Foundational; activate second
-3. **Domain 60 (International Coordination)** — Activate third
-4. **Domain 64 (Economic Resilience)** — Activate fourth
-5. **Domain 61 (Intergenerational Knowledge)** — Activate fifth
-6. **Domain 62 (Infrastructure Interdependencies)** — Activate last
-
-**Rationale**: 63 & 65 are highest-threshold domains (require Tier A authors). If they fail, activation must be immediate. Domains 60–62 have lower thresholds; more flexibility for Path B/C solutions.
-
-**Contingency budget** (fallback author pool):
-- TOTAL available ALT tier candidates across all domains: ~15–18 (per WAVE_2_AUTHOR_PROFILE_CARDS.md)
-- Contingency capacity: Can absorb 2–3 simultaneous failures without complete pool depletion
-- Beyond 3 failures: Must resort to Paths C or D for additional domains
-
----
-
-## Part 4: Communication & Stakeholder Notification
-
-### 4.1 Activation Notification (Immediate, <2 hours)
-
-When contingency is triggered, send notifications in this order:
-
-**TO: Project lead's supervisor / Phase lead** (immediate, same day):
+**Subject**: Urgent: Wave 2 Submission – Domain ## [Author Name]
 
 ```
-Subject: URGENT: Contingency Activation — Domain [Y] — Wave 2
+Dear [Author Name],
 
-Hi [Supervisor Name],
+We have not yet received your submission for Domain ## of the Systems-Resilience Wave 2 framework, 
+which was due on [Date T+0].
 
-I'm writing to report that Domain [Y] author has [triggered contingency reason].
+We understand that circumstances can change. Before activating our fallback author roster, 
+we wanted to reach out directly:
 
-ACTIVATION: Contingency [A/B/C/D] ([Path Name])
-CONTINGENCY PLAN: [Brief description of activation steps]
-TIMELINE IMPACT: Deadline [UNCHANGED / +3 days / +7 days] from original [DATE]
-FINANCIAL IMPACT: [If applicable; e.g., "Fallback author requires $4,680 vs. originally budgeted $4,680"; or "Synthesis author $2,000 additional cost"]
-RECOVERY SUCCESS PROBABILITY: [Based on path: A=85%, B=80%, C=70%, D=60%]
+1. Can you confirm receipt of the submission guidelines (attached)?
+2. Can you provide a revised completion timeline (e.g., T+7, T+14, or unable to proceed)?
+3. If unable to proceed, would you recommend a colleague who could co-author or take the lead?
 
-NEXT STEPS:
-- [Step 1: who does what by when]
-- [Step 2: who does what by when]
-- I will update you daily until domain is re-assigned
+We need a response by [Date T+5] to coordinate next steps. Our contingency protocols activate at T+5 
+if we do not hear from you.
 
-Any concerns? I'm available for a call.
+Please respond to this email or contact us via Slack: @orchestrator.
 
-[Project Lead]
+Best regards,
+[Orchestrator Name]
+Systems-Resilience Project Lead
 ```
 
-**TO: Affected author (if relevant)** (within 2 hours):
+### 4.2 T+5: ALT Activation Email
 
-If Path A (co-author): [See Section 2.2 template above]
-If Path B (fallback): Original author is not contacted; fallback author contacted instead
-If Path C (scope reduction): Recipient author contacted; failed author may be notified of transition
-
-**TO: Peer reviewer for affected domain** (within 4 hours):
+**Subject**: Wave 2 Author Invitation – Domain ## [ALT Author Name]
 
 ```
-Subject: Status Update — Domain [Y] Peer Review
+Dear [ALT Name],
 
-Hi [Peer Reviewer Name],
+We are reaching out with an opportunity to author a domain submission for the Systems-Resilience 
+Wave 2 framework. Your expertise in [domain topic] is directly aligned with Domain ##: [Domain Title].
 
-Wanted to update you on Domain [Y]:
+**Overview**:
+- **Domain scope**: [1–2 sentence description of domain prompt]
+- **Word count**: 1000–1500 words (flexible for ALT tier)
+- **Citations**: Minimum 5 authoritative sources
+- **Timeline**: Initial draft due [Date T+10]; revisions completed by [Date T+21]
+- **Tier commitment**: ALT secondary author (Tier B: bi-weekly check-ins, 2–3 revision rounds)
+- **Support**: Orchestrator will provide mentoring, peer review feedback, and editorial guidance
 
-[CONTINGENCY PATH + BRIEF EXPLANATION]
+**Why we're asking you**:
+[Primary author] was originally assigned to this domain, but circumstances have required us to activate 
+our secondary author roster. Based on your background in [specific credentials], we believe you can 
+deliver a compelling, research-backed submission.
 
-IMPACT ON YOUR REVIEW:
-- New author: [Name] (if Path B)
-- OR Expanded deadline: [New date] (if Path C)
-- OR Synthesis role: Document may be condensed (if Path D)
-- OR No change; same timeline (if Path A co-author)
+**Next steps**:
+Please confirm your interest and availability by [Date T+7]. If you accept, we will schedule a 30-minute 
+kickoff call to discuss the domain prompt, scope, and timeline.
 
-I'll send you updated materials / scope brief by [DATE].
-Your review timeline remains: Submission [DATE] → Review [DATE + 7 days].
+If you cannot commit at this time, we would appreciate any recommendations for colleagues who might be suitable.
 
-Thanks for rolling with the change. Questions?
+Please reply to this email or contact: [orchestrator contact]
 
-[Project Lead]
+Best regards,
+[Orchestrator Name]
 ```
 
-### 4.2 Recovery Status Communications
+### 4.3 T+9: EXT Pool Activation Email (If ALT Declines)
 
-**Daily stand-up message** (internal: project lead + supervisor + relevant domain leads):
-
-Send brief (2–3 line) status update each day until domain re-assigned:
+**Subject**: Wave 2 Guest Author Opportunity – Domain ## [EXT Name/Organization]
 
 ```
-CONTINGENCY STATUS — Domain [Y]
+Dear [EXT Author/Organization Contact],
 
-Day 1: Fallback author contacted; awaiting response (4 candidates in sequence)
-Day 2: Candidate #2 confirmed YES; onboarding call scheduled for Day 3
-Day 3: Onboarding complete; materials distributed; work begins
-Day 4: [Normal check-in cadence resumes]
+The Systems-Resilience project is inviting contributions from our extended partner network to complete 
+Wave 2 submissions. We are seeking authors with expertise in [domain topic area] to author Domain ##: 
+[Domain Title].
+
+**This is a one-time, focused engagement**:
+- Estimated time commitment: 12–18 hours over 14 days
+- Word count: 1000–1200 words (flexible; we can negotiate scope)
+- Citations: Minimum 5 sources (we can assist with research if needed)
+- Support: Full editorial and peer review guidance provided
+- Credit: Full author attribution + byline in published Wave 2 collection
+- Timeline: Draft due [Date T+16]; final submission [Date T+21]
+
+**Why we're reaching out**:
+Your organization's work in [specific focus area] directly addresses the systems resilience framework. 
+We believe your perspective would significantly strengthen Wave 2 outcomes.
+
+**Next steps**:
+If interested, please respond with:
+1. Confirmation of availability and time commitment
+2. Any scope modifications needed (e.g., shorter word count, specific sub-topic focus)
+3. One page of background on the author (credentials, relevant publications)
+
+Response deadline: [Date T+12] (48 hours for decision).
+
+We understand this is short notice. If the timeline doesn't work, please suggest an alternative contributor 
+from your network.
+
+Best regards,
+[Orchestrator Name]
 ```
 
-**Final notification** (when contingency resolved):
+### 4.4 T+18: Phase 3 Escalation Notice (If Both Decline)
+
+**Subject**: Domain ## Deferred to Phase 3 – Documentation & Next Steps
 
 ```
-Subject: Contingency Resolved — Domain [Y] — New Author [Name]
+Dear [Project Leadership and Domain Team],
 
-Hi [Supervisor / stakeholders],
+After outreach to our primary author, secondary (ALT) candidate, and extended (EXT) partnership roster, 
+we have been unable to secure an author for Domain ##: [Domain Title] within the Wave 2 timeline.
 
-Domain [Y] contingency has been resolved.
+**Decision**: Domain ## is being deferred to Phase 3 publication (tentative: [Future Quarter/Year]).
 
-NEW ASSIGNMENT:
-- Domain: [Y] ([Domain Name])
-- Author: [Name] (Tier [A/B])
-- Start date: [Date]
-- Submission deadline: [Original date or adjusted date]
-- Payment: [Amount]
-- Peer reviewer: [Name]
+**Documented reasons**:
+1. Primary author [Name]: [Reason for unavailability – e.g., illness, project conflict, declined without response]
+2. ALT candidate Martha Santos: [Reason – e.g., Competing deadline, insufficient domain expertise]
+3. EXT candidates [Names]: [Reasons – e.g., All declined; insufficient capacity]
 
-Recovery Path: [Path A/B/C/D]
-Timeline impact: [NONE / +X days]
+**Implications**:
+- Wave 2 will publish on schedule (T+28) with 5 of 6 domains live
+- Domain ## authorship will be revisited in Phase 3 planning (Q3/Q4 2026 proposal window)
+- This domain remains a priority; we recommend early outreach to potential authors in the Phase 3 planning cycle
 
-We're back on track for Phase 6 publication.
+**Archive documentation**:
+- This decision and supporting communication logs are filed in: `/projects/systems-resilience/wave-2-deferred/Domain_60/`
+- Phase 3 reopening will be triggered by project leadership decision
 
-[Project Lead]
+Best regards,
+[Orchestrator Name]
 ```
 
 ---
 
-## Part 5: Financial & Legal Implications
+## 5. ALT Tier Author Support & Escalation
 
-### 5.1 Payment Adjustments
+### 5.1 Support Protocol: When ALT is Activated as Primary
 
-**Original author (if early withdrawal)**:
-- If author completes 0–25% of work: Forfeit all payment; no compensation
-- If author completes 25–50% of work: Receive 50% of first milestone ($1,170) only; no completion bonus
-- If author completes 50%+ of work: Receive full first milestone ($2,340); completion bonus pro-rated at 50%+ of work = 50%+ of bonus
-- If author is replaced by co-author: Original author receives pro-rata pay for completed sections only
+When an ALT (Tier B) author is activated as primary due to no-show:
 
-**Co-author** (Path A):
-- Split all payment 50/50: each receives $2,340 total ($1,170 per milestone)
+**Tier B baseline**:
+- Bi-weekly check-ins (scheduled, 30-min calls)
+- Moderate autonomy (no pre-approval required for outline)
+- 2–3 revision rounds (normal)
+- Optional mentoring (available but not mandated)
 
-**Fallback author** (Path B):
-- Full payment: $4,680 (same as originally budgeted)
+**ALT-as-Primary escalation** (T+5 to T+21):
+- **Upgrade to Tier A support**: Weekly check-ins (instead of bi-weekly)
+- **Editorial pre-review**: Orchestrator reviews draft outline before full write (optional, available)
+- **Expedited feedback**: Peer review feedback delivered within 3 days (instead of 7)
+- **Contingency peer backup**: Dedicated standby peer reviewer if primary reviewer unavailable
+- **Scope flexibility**: Can reduce word count to 900–1200 if needed (down from 1000–1500)
+- **Citation support**: Librarian or research assistant available for literature review (2–3 hours)
+- **Revision flexibility**: May request additional revision round if editorial feedback is substantial (T+28 deadline may shift to T+35)
 
-**Scope reduction recipient** (Path C):
-- Original payment + expansion bonus: [Original payment] + $390–520 pro-rata
+**Communication cadence**:
+- T+5: Kickoff call (scope confirmation, timeline, support resources review)
+- T+10: Check-in call (draft outline + progress update)
+- T+14: Feedback delivery (peer review compiled + orchestrator notes)
+- T+18: Revision check-in (progress toward T+21 deadline)
+- T+21: Final sign-off call (publication confirmation)
 
-**Synthesizer** (Path D):
-- Fixed fee: $2,000 (non-negotiable; fixed timeline / fixed scope)
+### 5.2 Authorship Split Rules: If Work is Partially Complete
 
-### 5.2 Amendment Documentation
+**Scenario**: Author A delivers 50% of a domain submission (e.g., 2 of 4 major sections); contingency activation occurs at T+14.
 
-When payment changes, document in:
-- **File**: WAVE_2_AUTHOR_CONTRACTS.md (new section for each contingency)
-- **Format**: 
-  ```
-  DOMAIN [Y] — PAYMENT AMENDMENT — [Date]
-  
-  Original author: [Name] | Original contract: [Amount] | Reason for withdrawal: [Reason]
-  New amount owed to original author: [Amount] | Justification: [Completed X% of work]
-  Alternative author/arrangement: [Name/arrangement] | Amount: [Amount]
-  
-  Authorized by: [Project lead] | Date: [Date]
-  ```
+**Options**:
 
+**Option 1: Continuation by Secondary Author**
+- ALT author (B) completes remaining 50% of work
+- Final attribution: "Co-authored by [A] and [B]"
+- Only (B) receives revision feedback for their sections
+- Peer review updated to verify continuity of voice/argument flow
+- Timeline: No delay if (B) delivers by T+21
+
+**Option 2: Full Rewrite by Secondary Author**
+- (B) completes entire submission independently (ignores A's 50% draft)
+- Final attribution: "Authored by [B]; based on initial work by [A]"
+- Preferred if voice/approach significantly mismatched
+- (B) may use A's citations and research notes as source material
+- Timeline: +2–3 days (B needs extra time for full re-conceptualization)
+
+**Option 3: Hybrid (Orchestrator-Edited)**
+- Keep A's strongest sections; have (B) complete gaps and integrate
+- Final attribution: "By [A] and [B]"
+- Orchestrator conducts continuity editing (adds 2–3 hours)
+- Timeline: +3–5 days (orchestrator editorial time)
+
+**Decision logic**:
+- If A's work is >70% complete and >80% aligned with domain prompt → Option 1 (continuation)
+- If A's work is <50% complete or significantly off-topic → Option 2 (full rewrite)
+- If A's work is 50–70% but well-written + solid research → Option 3 (orchestrator hybrid)
+
+### 5.3 Author Credit & Attribution
+
+All contingency publications include a **note on author tier in the YAML front matter and byline**:
+
+```yaml
 ---
-
-## Part 6: Incident Logging & Post-Mortem
-
-### 6.1 Incident Log (Real-Time Documentation)
-
-Create file: `WAVE_2_INCIDENT_LOG.md`
-
-Every contingency activation is logged immediately:
-
-```
-## Contingency Activation #1 — Domain 63
-
-Date: [Date of detection]
-Failure trigger: [No-show / quality rejection / author withdrawal / other]
-Timeline from trigger to activation: [X days]
-Contingency path: [A/B/C/D]
-Contingency author: [Name]
-Days lost: [X]
-Deadline impact: [UNCHANGED / +X days]
-Financial impact: [Amount changes, if any]
-Success probability: [X%]
-Resolution date: [When domain re-assigned]
-
-Notes: [Any qualitative notes about the failure or recovery]
-
+title: "Domain 60: International Coordination in Crisis Response"
+author: "Martha Santos"
+author_tier: "ALT (secondary Tier B, activated due to primary author no-show)"
+author_affiliation: "[Organization]"
+author_credentials: "[...]"
+publication_note: "This domain was authored by secondary candidate due to primary author unavailability on [T+5]. 
+                   Author received Tier A support (weekly check-ins, expedited review) during compressed 16-day timeline."
 ---
-```
-
-### 6.2 Post-Mortem (After Wave Completion)
-
-Once Wave 2 is complete and all contingencies are resolved, conduct a 30-min post-mortem:
-
-**Attendees**: Project lead, any contingency-activated domain authors, peer reviewers (1–2)
-
-**Questions to discuss**:
-1. **What triggered the contingency?** (Was it preventable?)
-2. **Did the activation process work as designed?** (Any bottlenecks?)
-3. **What took longer than expected?** (Fallback search, onboarding, writing)
-4. **What worked well?** (Learning to apply to Wave 3)
-5. **What would you change next time?** (Process improvements)
-
-**Outcome document**: 1-page summary saved to WAVE_2_INCIDENT_LOG.md Section "Lessons Learned"
-
----
-
-## Part 7: Decision Tree Flowchart (Quick Reference)
-
-```
-CONTINGENCY ACTIVATION FLOWCHART
-═══════════════════════════════════════════════════════════════════
-
-Author triggers escalation (no-show, quality rejection, withdrawal)
-  ↓
-Q1: Does author want to continue but needs SUPPORT?
-  ├─ YES → PATH A: Co-Author Pairing (Section 2.2)
-  │         • Find co-author with complementary skills
-  │         • 50/50 split of work + payment
-  │         • Timeline: Activated same day; work begins Day 1
-  │         • Success rate: ~85%
-  │
-  └─ NO: Continue to Q2
-
-Q2: Are ALT tier authors available for this domain?
-  ├─ YES → PATH B: Fallback Activation (Section 2.3)
-  │         • Contact ALT author(s) in order of fitness score
-  │         • First "yes" becomes fallback author
-  │         • Full payment; same scope; original deadline
-  │         • Success rate: ~80%
-  │
-  └─ NO ALT available: Continue to Q3
-
-Q3: Can an adjacent domain absorb the failed domain's scope?
-  ├─ YES → PATH C: Scope Reduction (Section 2.4)
-  │         • Transfer 2–3 sections to adjacent domain
-  │         • Adjacent author gets scope expansion + bonus payment
-  │         • Deadline slip: +3 days for absorption + integration
-  │         • Success rate: ~70%
-  │
-  └─ NO: Continue to Q4
-
-Q4: Can a synthesizer compile Wave 1 + sources into condensed guide?
-  ├─ YES → PATH D: Tier 3 Synthesis (Section 2.5)
-  │         • Hire synthesizer to create 5,000–6,000 word condensed guide
-  │         • Use Wave 1 research + provided sources (no new research)
-  │         • Payment: $2,000 fixed fee
-  │         • Deadline: UNCHANGED (3-week fixed timeline)
-  │         • Success rate: ~60%
-  │         • Note: Full-scope version deferred to Wave 3
-  │
-  └─ NO: ESCALATE to project lead + supervisor
-          All contingency options exhausted
-          Decision: Defer entire domain to Phase 6 Wave 3
-
-═══════════════════════════════════════════════════════════════════
 ```
 
----
-
-## Part 8: Appendix — Contingency Author Contact List
-
-Maintain real-time list of fallback candidates (from WAVE_2_AUTHOR_PROFILE_CARDS.md):
-
-**DOMAIN 60 FALLBACK CANDIDATES** (by fitness score):
-1. Candidate X (19/25) — Contact: [Email] | [Phone] | [Timezone]
-2. Candidate Y (18/25) — Contact: [Email] | [Phone] | [Timezone]
-3. Candidate Z (18/25) — Contact: [Email] | [Phone] | [Timezone]
-
-**DOMAIN 61 FALLBACK CANDIDATES**:
-[Similar structure]
-
-[Repeat for Domains 62–65]
-
-**CO-AUTHOR POOL** (for Path A):
-- Wave 1 authors willing to co-author (and which domains)
-- Graduate students / research assistants with practitioner writing background
-- Community editors (pivot to co-author if needed)
-
-**SYNTHESIZER POOL** (for Path D):
-- Tier B authors willing to synthesize instead of full-author (and which domains)
-- Graduate students / research assistants with synthesis capability
-- Wave 1 authors available for synthesis work (paid extra)
+**Byline example**:
+"By Martha Santos (Systems-Resilience Project, ALT Author Tier, Wave 2 Secondary Candidate)"
 
 ---
 
-## Part 9: Success Criteria & Metrics
+## 6. Fallback Author Tier Assignment & Capacity
 
-**Wave 2 success = all 6 domains published by Sept 15:**
+### 6.1 ALT Author Capacity Table
 
-| Metric | Target | Acceptable | Failure |
-|--------|--------|-----------|---------|
-| **Contingency count** | 0 | 1–2 (max 33% of domains) | ≥3 (>50%) |
-| **Days to contingency activation** | <24 hrs of trigger | <48 hrs | >48 hrs |
-| **Path success rate** | 100% recovery | 80%+ (5–6 domains recovered) | <80% (4 or fewer recovered) |
-| **Deadline slip** | 0 days (original deadline) | 0–7 days | >7 days or past Sept 15 |
-| **Quality of contingency documents** | 12/12 elements | 11/12 elements | <11/12 elements |
+| Domain | Primary Author | ALT (Tier B, Secondary) | Capacity (hrs available) | Mentoring offered? |
+|--------|----------------|------------------------|--------------------------|-------------------|
+| **60** | [Name] | Martha Santos | 18 | Yes |
+| **61** | [Name] | David Greenberg | 16 | Yes (conditional) |
+| **62** | [Name] | [TBD] | [TBD] | [TBD] |
+| **63** | [Name] | [TBD] | [TBD] | [TBD] |
+| **64** | [Name] | Michael Linton | 20 | Yes |
+| **65** | [Name] | [TBD] | [TBD] | [TBD] |
+
+### 6.2 ALT Tier Upgrade (When Activated as Primary)
+
+When ALT author is activated as primary contingency author:
+
+- **Tier B baseline**: 18–19 points, bi-weekly check-ins, moderate autonomy, 2–3 revisions
+- **Temporary upgrade to Tier A equivalent**: 
+  - Weekly check-ins (vs. bi-weekly)
+  - High autonomy (pre-approval NOT required)
+  - Up to 3 revision rounds (vs. 2–3)
+  - Mentoring mandatory (vs. optional)
+  - Editorial support prioritized
+  - Deadline flexibility (T+21 → T+28 possible)
+
+**Upgrade reverts after Wave 2 publication**: ALT author returns to Tier B status for subsequent projects (unless formally promoted).
 
 ---
 
-## Document Status
+## 7. Recovery Protocol: Partial Completion Scenarios
 
-This contingency plan is **PRODUCTION-READY** and available for activation on-demand from June 14 onward.
+### 7.1 Primary Author Delivers <50% by T+14
 
-**Probability of activation**: Historical data suggests 1–2 contingencies per 6-domain wave (15–33% of domains). Prepare for this; do not be surprised if activated.
+**Trigger**: Author provides draft addressing <50% of domain prompts or <600 words
 
-For questions about contingency procedures before execution, contact [Project Lead] by June 13.
+**Actions (orchestrator decision)**:
+1. Send feedback letter noting gaps (T+14)
+2. Set hard deadline: Major revision due T+18 OR contingency activation
+3. Assess author's responsiveness: Can they realistically complete by T+21?
+
+**If author confirms they can recover**:
+- Set focused revision scope (list 3–5 specific gaps to address)
+- Offer extended revision time (T+21 → T+25, if Wave 2 publication can shift)
+- No contingency activation; author stays primary
+
+**If author indicates they cannot complete**:
+- Activate ALT immediately (T+14)
+- ALT takes over primary authorship
+- Original author credited as contributing researcher (if sections are usable)
+
+### 7.2 Primary Author Delivers 50–75% by T+14
+
+**Trigger**: Draft addresses 50–75% of prompts; >600 words but <1000 words; major sections present but gaps remain
+
+**Assessment**:
+- Is the gap conceptual (missing entire topic) or editorial (shallow coverage)?
+- Is the voice/approach aligned with domain prompt?
+- Can a 2–3 day revision cycle close the gap?
+
+**Outcome scenarios**:
+
+**Scenario 1: Gaps are editorial (shallow coverage)**
+- Feedback: "Expand section X and add 2 citations to section Y"
+- Author revises (T+14 to T+18)
+- Continue with peer review (no contingency needed)
+
+**Scenario 2: Gaps are conceptual (missing major section)**
+- Feedback: "Add entirely new section on [topic]"
+- Decision: Can author realistically add 400+ words in 4 days?
+  - YES → Revised deadline T+18, contingency standby
+  - NO → Activate ALT, offer author "co-author" role if work is strong
+
+**Scenario 3: Approach is misaligned with prompt**
+- Example: Author focuses on policy (prompt asks for systems analysis)
+- Decision: Request reframe vs. activate ALT?
+  - Light reframe (fixable in 3 days) → Author continues
+  - Heavy reframe (needs reconceptualization) → Activate ALT immediately
+
+### 7.3 Authorship Preservation When Contingency Activates Late
+
+If contingency is activated **after** primary author has delivered substantial work (T+14+):
+
+**Option A: Co-authorship**
+```yaml
+author: "Martha Santos and [Primary Author Name]"
+author_roles: "Santos: Lead author (sections 1–3, revision rounds); [Primary]: Contributing author (initial research, section 4)"
+publication_note: "This domain was originally authored by [Primary], with substantial revision and completion by Martha Santos (ALT author) 
+                   due to timeline constraints. Both authors contributed to final publication."
+```
+
+**Option B: Attribution in Supplementary Section**
+```markdown
+## Acknowledgments & Author Contributions
+
+This domain was authored by Martha Santos with significant contributions to initial research and 
+outline development by [Primary Author Name]. The final submission represents a collaborative effort 
+to meet Wave 2 publication deadlines.
+```
+
+**When to use each**:
+- **Co-authorship**: Primary author contributed >30% of final text or core research framework; both approved final version
+- **Attribution**: Primary author contributed 15–30% (research, outline, initial draft); ALT author substantially rewrote for publication
+- **Solo attribution (ALT only)**: Primary author contributed <15% or ALT author rewrote >80% of content; original author mentioned in notes only
 
 ---
 
-## Related Documents
+## 8. Phase 3 Escalation: Domain Deferral
 
-- `WAVE_2_CONTENT_ASSIGNMENT_PROTOCOL.md` — Assignment process (Section 5 escalations lead to this plan)
-- `WAVE_2_DELIVERY_LOGISTICS.md` — Quality acceptance criteria (use for synthesized documents)
-- `WAVE_2_AUTHOR_PROFILE_CARDS.md` — Fallback candidate profiles (reference for paths B & D)
-- `WAVE_2_AUTHOR_MATCHING_ALGORITHM.md` — Scoring methodology (understand why certain authors are fallbacks)
+### 8.1 Conditions for Phase 3 Escalation
+
+A domain is escalated to Phase 3 (deferred publication) if:
+
+1. **Primary author no-shows AND ALT author declines AND all EXT candidates decline** (by T+21)
+2. **Partial author delivery + contingency fails**: Author delivers <50% by T+14; ALT declines to take over; EXT candidates insufficient (by T+18)
+3. **Scope mismatch discovered too late**: At T+14, feedback reveals author's work is >50% off-topic; rewrite time exceeds available hours; contingency authors unable to absorb (rare)
+
+### 8.2 Phase 3 Documentation Requirements
+
+Before escalating to Phase 3, orchestrator must document:
+
+```markdown
+---
+Domain: 60
+Title: "International Coordination in Crisis Response"
+Escalation Decision Date: 2026-06-21 (T+21)
+Reason for Deferral: [Select: Author No-Show, ALT/EXT Declined, Scope Reframe Required, Other]
+
+Author Outreach Log:
+- [Date]: Initial author invitation sent
+- [Date]: Reminder sent (no response)
+- [Date]: Escalation attempt (no callback)
+- [Date]: ALT activation (declined reason: [e.g., insufficient capacity])
+- [Date]: EXT-02 contacted (declined reason: [e.g., partner conflict])
+- [Date]: EXT-03 contacted (declined reason: [e.g., no response])
+
+Contingency Options Exhausted:
+- ALT author: [Name] – Declined [reason]
+- EXT-01 through EXT-10: [Summary of responses]
+- Internal reallocation: Not feasible
+
+Recommendation for Phase 3:
+- Suggested author(s) for re-engagement: [Names from different pool or expanded EXT]
+- Estimated timeline for Phase 3 Wave 2 catch-up: Q3 2026 or Q4 2026
+- Priority level: High (critical domain for systems resilience framework)
+
+---
+```
+
+### 8.3 Archive & Phase 3 Reopening
+
+Deferred domains are archived with full communication trail:
+
+**Archive location**: `/projects/systems-resilience/wave-2-deferred/Domain_##/`
+
+**Contents**:
+- Initial domain prompt and acceptance criteria
+- Author invitation and all escalation communication
+- ALT/EXT decision logs
+- Feedback on partial work (if any)
+- Recommendation letter for Phase 3 team
+
+**Phase 3 reopening**:
+- Project leadership reviews deferred domains in Phase 3 planning cycle (Q2 2026 or later)
+- Archive materials inform author selection and timeline adjustments
+- Phase 3 Wave 2 catch-up domains may have extended timelines (T+30 days instead of T+28)
+
+---
+
+## 9. Communication Decision Matrix
+
+### 9.1 Who Notifies Whom
+
+| Event | Orchestrator Notifies | Method | Timing | Template |
+|-------|----------------------|--------|--------|----------|
+| **Author no-show** | Author | Email + Slack | T+3 | Section 4.1 |
+| **ALT activation** | ALT author | Email + phone call | T+5 | Section 4.2 |
+| **ALT declines** | Orchestrator (internal note) | Project lead notification | T+9 | Internal log |
+| **EXT activation** | EXT candidate/organization | Email + phone call | T+9 | Section 4.3 |
+| **Domain deferred** | Project lead + original author | Email + formal memo | T+21 | Section 4.4 |
+| **Publication** | All team + authors | Email announcement | T+28 | Customized |
+
+### 9.2 Escalation Notification Rules
+
+- **Primary author no-show**: Notify project lead at T+5 (before ALT activation)
+- **ALT declines**: Notify project lead at T+9 (before EXT activation, unless EXT already contacted in parallel)
+- **Domain deferred**: Notify executive sponsor + steering committee within 24 hours of T+21 decision
+
+---
+
+## 10. Contingency Author Compensation & Recognition
+
+### 10.1 ALT Tier Compensation (If Activated as Primary)
+
+- **ALT base compensation** (Tier B): [Fee/Recognition as defined in project contract]
+- **Premium for primary activation**: +20–30% above ALT base (acknowledges compressed timeline + Tier A support)
+- **Mentoring bonus** (if provided): +10% above activation premium
+- **Early completion bonus** (if delivered by T+18): +5% above activation premium
+
+### 10.2 EXT Tier Compensation
+
+- **EXT standard honorarium**: [Flat fee or hourly rate, defined per project]
+- **EXT expedited rate**: +25% above standard (compressed 7–10 day timeline)
+- **EXT scope reduction credit**: If author negotiates <1000 word limit, honorarium adjusted proportionally
+- **EXT co-author bonus**: If EXT author contributes as co-author (not solo), +15% recognition premium
+
+### 10.3 Author Attribution & Publication Credit
+
+All Wave 2 submissions (primary, ALT, EXT) receive:
+
+- Full author byline in published document (name, affiliation, credentials)
+- Listed in Wave 2 published credits + author index
+- Social media announcement and project newsletter mention
+- PDF certificate of publication (optional)
+- Invitation to Wave 2 launch event (if virtual or in-person)
+
+---
+
+## 11. Success Metrics: Contingency Protocol Effectiveness
+
+### 11.1 Metrics to Track
+
+| Metric | Target | Success Threshold |
+|--------|--------|------------------|
+| **Activation response time** | ALT responds within 2 days of outreach | 80%+ ALT authors respond by T+7 |
+| **ALT acceptance rate** | Primary contingency activated successfully | ≥75% of ALT outreach results in acceptance |
+| **ALT delivery on-time** | ALT author delivers draft by T+10 (primary no-show) | ≥80% of ALT authors meet compressed deadline |
+| **EXT acceptance rate** | Secondary contingency activated if ALT declines | ≥50% of EXT candidates accept (target: 1 per 3 outreach) |
+| **Publication timeline preservation** | Wave 2 publishes on T+28 (or <+7 days delay) | ≥90% of domains published by T+35 |
+| **Quality of contingency submissions** | ALT/EXT submissions meet acceptance rubric | ≥85% of contingency submissions achieve "Proficient" or higher |
+
+### 11.2 Post-Wave 2 Review
+
+After Wave 2 publication, conduct 30-minute retrospective with orchestrator team:
+
+- How many domains required contingency activation? (Target: <2 of 6)
+- What triggered no-shows? (Insufficient planning, scope confusion, competing commitments, etc.)
+- Did ALT/EXT authors meet quality standards?
+- What improvements to contingency process should inform Wave 3?
+
+---
+
+**Document Status**: Ready for deployment  
+**Version Control**: Tracked in `/projects/systems-resilience/WAVE_2_CONTINGENCY_AUTHOR_SUBSTITUTION.md`  
+**Last Review**: 2026-06-14  
+**Next Review Date**: 2026-07-21 (post-Wave 2 publication; post-implementation retrospective)
