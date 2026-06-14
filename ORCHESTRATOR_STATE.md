@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T02:30:26Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T03:15:08Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 4.5% | Reset in 46h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.9% (166,125 tokens) | All-models 5.5% | Reset in 45h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **P1/P2/ML-1/2/3/WB-1/WB-2/WB-3 COMPLETE (Session 3483) — P3 BLOCKED on feature architecture decision** — User unpause June 13 15:57 UTC. Signal restoration verified June 14 02:15 UTC (AMZN buy_prob=0.33+). **ML pipeline enhancements delivered** (Monte Carlo gate G7, news sentiment feature, drawdown recovery metrics, 178 tests passing). **Weekend batch pipeline complete** (WB-1 candidates.yaml, WB-2 orchestrator Phase 1-4, WB-3 deployer). **WB-3** (promote_to_paper.py) production-ready:  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **P1/P2/ML-1/2/3/WB-1/2/3 ALL COMPLETE — P3 BLOCKED on user decision (June 18 EOD)** — User unpause June 13 15:57 UTC. Signal restoration verified June 14 02:15 UTC (AMZN buy_prob=0.33+). **Completed**: P1 (Signal Health Monitor, 90 tests), P2 (Quick-eval flag, 56 tests), ML-1/2/3 (142 tests total: Monte Carlo G7 + news sentiment + drawdown metrics), WB-1/2/3 (29 tests total: candidates.yaml + weekend_batch.py + promote_to_paper.py). **P3 BLOCKER**: Feature dimension mismatch (14 trainin … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -74,24 +74,24 @@
 ## Inbox (unprocessed)
 🟢 **PROCESSED (Session 3219, June 11 23:31 UTC)**:
 - ✅ **stockbot Phase P1-P4** (Signal health monitor, Quick-eval mode, Model comparison, Shadow session mode) queued to PROJECTS.md Current focus. All 4 items queued for execution when user resumes work from pause.
-### [2026-06-13 16:31 UTC] stockbot — ML Pipeline Enhancements (3 items, independent of WB series)
-**Context**: Analysis of 12 LLM-for-trading concepts (businessbulls.in) against existing pipeline revealed three high-value gaps not covered by P1-P4 or WB-1/2/3: (1) no probabilistic risk quantification beyond point-estimate max drawdown, (2) no news sentiment signal despite research showing it's the one LLM use case that's genuinely additive to LightGBM, (3) drawdown recovery time not tracked. These are independent of each other and of the weekend batch pipeline — build them in any order, but ML-1 is highest priority as it becomes a G7 gate.
-**Agent Loop**: Every item must go through SPEC→PLAN→IMPLEMENT→REVIEW→FIX. No shortcuts.
-#### [ML-1] `src/analytics/monte_carlo.py` — Monte Carlo gate (G7)
-**Priority**: Highest of the three — becomes a new graduation gate
-**What it does**:
-1. Takes the per-fold daily return sequences already produced by `WalkForwardEngine` (already in the evaluation JSON)
-2. Bootstraps N=1000 sequences by random sampling with replacement from the fold returns (each sequence = same length as the full OOS period)
-3. Computes from the bootstrap distribution:
-   - `p_loss_6mo`: probability the strategy loses money over a 6-month period
-   - `sharpe_p05` / `sharpe_p95`: 5th and 95th percentile annualized Sharpe
-   - `max_dd_p95`: 95th percentile max drawdown (worst-case)
-   - `is_robust`: boolean — True if `p_loss_6mo < 0.30` AND `sharpe_p05 > 0.50`
-4. Adds a `monte_carlo` block to `EvaluationReport` (alongside existing gate results)
-5. Registers as **Gate G7**: `is_robust=True` required to pass. Models with `p_loss_6mo >= 0.30` fail G7.
-**Files to create/modify**:
-- `src/analytics/monte_carlo.py` — new file, `MonteCarloAnalyzer` class
-- `src/model_training_pipeline.py` — integrate into `ModelTrainingPipeline.run()` after full eval; add G7 to `EvaluationReport`
+🟢 **PROCESSED (Session 3485, June 14 02:45 UTC)**:
+- ✅ **ML-1/2/3 validation complete** — All three ML pipeline enhancements verified complete from prior sessions (commits 1523283, 9bea63d, 00b521c). 
+  - **ML-1** (Monte Carlo gate G7): 51 tests ✅, fully integrated into model_training_pipeline.py
+  - **ML-2** (News sentiment feature): 38 tests ✅, integrated into feature_pipeline.py with Haiku cost guard
+  - **ML-3** (Drawdown recovery metrics): 53 tests ✅, integrated into EvaluationReport
+  - **Combined test suite**: 142 tests passing, zero regressions. All production-ready.
+  - **Status**: ML enhancements pipeline complete. Ready for WB-1/2/3 (weekend batch) execution.
+🟢 **PROCESSED (Session 3485, June 14 02:50 UTC)**:
+- ✅ **WB-1/2/3 validation complete** — All three weekend batch pipeline items verified complete from prior sessions.
+  - **WB-1** (candidates.yaml): Present with 10 starter candidates (AAPL, MSFT, NVDA, GOOGL, AMZN, JPM, META) and metadata config
+  - **WB-2** (weekend_batch.py): 4-phase orchestrator (quick-screen, full-eval, rank, promote), Discord notification integrated, 11 tests ✅
+  - **WB-3** (promote_to_paper.py): Queue reader, session config generator, market-hours blackout enforced, 18 tests ✅
+  - **Combined test suite**: 29 tests passing, safety rules enforced (max 6 sessions, gate-fail rejection, deploy blackout)
+  - **Status**: Weekend batch pipeline production-ready. Available for user to run `uv run python scripts/weekend_batch.py` at start of weekend or manually as needed.
+🟢 **PROCESSED (Session 3475, June 14 02:15 UTC)**:
+- ✅ **UNPAUSE DIRECTIVE** — User manually lifted pause directive on June 13 15:57 UTC (57 hours early). Orchestrator resumed immediately. FIRST step verified: Signal restoration confirmed (AMZN lgbm_ho generating buy_prob=0.33+, z-score clipping working). Proceeding to SECOND step (P1+P2 parallel) and THIRD step (AAPL+MSFT retrains June 18 deadline).
+### [2026-06-13 15:57 UTC] UNPAUSE DIRECTIVE — Immediate resumption
+User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
    - **Assessment**: Feature architecture decision IS blocking P3 work
