@@ -3,8 +3,8 @@ title: "Domains 49–50: Synthesis Framework"
 subtitle: "Thematic Pillar Architecture, Cross-Domain Connection Points, Movement Leverage Angles, and December 2026 Distribution Narrative"
 domains: [49, 50]
 created: "2026-06-06"
-updated: "2026-06-10"
-status: "production-ready — Phase 4 expansion"
+updated: "2026-06-14"
+status: "production-ready — Phase 5 expansion"
 session: "Resistance Research Agent — Phase 4 Intersection Deepening"
 supersedes: "PHASE_2_DOMAINS_49_50_SYNTHESIS_FRAMEWORK.md (June 4, 2026 version)"
 cross_references:
@@ -491,4 +491,70 @@ Distribution strategy: Domain 50 first (HUD Equal Access Rule is the most urgent
 
 ---
 
-*Synthesis framework updated: June 10, 2026. Phase 4 additions: Intersection 7 (housing-environment-LGBTQ+ chain), Talbott v. USA D.C. Circuit ruling, Lambda Legal NYU Langone class action, Lambda Legal $285M fundraising, SFAF v. Trump DEI EO injunction, NEPA-ICE litigation wave, Seven County EJ impact documentation, four new organizational leverage additions.*
+*Synthesis framework updated: June 10, 2026 (Phase 4). See Part 10 below for June 14, 2026 (Phase 5) additions.*
+
+---
+
+## Part 10: June 14, 2026 Developments — Phase 5 Updates
+
+*Added June 14, 2026. This section integrates five developments from the June 11-14 research window that materially update the pillar architectures and require distribution strategy adjustments.*
+
+### 10.1 SCOTUS Trans Athlete Decisions Imminent — Most Important Near-Term Update
+
+**Little v. Hecox / West Virginia v. BPJ** (oral arguments January 13, 2026; decision expected by end of June 2026)
+
+These two cases are the most consequential LGBTQ+ constitutional decisions pending at the Supreme Court as of June 14, 2026. The 6-3 conservative majority heard oral arguments and court watchers report a consensus that the Court will likely uphold state trans sports bans under rational basis review — extending Skrmetti's constitutional architecture to sports exclusion under both Title IX and Equal Protection.
+
+**Pillar 5 (Constitutional Standards) update required when decided**: The decision will either:
+- (a) Uphold bans under rational basis — confirming that the constitutional floor set by Skrmetti now covers sports exclusion; OR
+- (b) Apply Title IX analysis to ban trans athletes — creating a statutory (not just constitutional) basis for sports bans that cannot be overturned by a future administration without congressional action
+
+Either outcome will require updating Pillar 5's "What Skrmetti held and did not hold" section. The sports ban cases extend Skrmetti's logic from healthcare to athletics — the constitutional standard now covers an additional sphere of trans life.
+
+**Distribution urgency trigger**: When decided, distribute Domain 50 Section A (constitutional framework) immediately to Lambda Legal, ACLU, and HRC. The decision will dominate LGBTQ+ news coverage and is the optimal distribution moment for the domain's constitutional analysis. The state court alternative analysis (A7, I6 Montana) becomes the primary strategic framing for the opposition: state constitutions may still apply heightened scrutiny that the federal courts have removed.
+
+### 10.2 Montana State Court — Proof of Concept for Lambda Legal's Post-Skrmetti Strategy
+
+**Kalarchik v. State** (Montana Supreme Court, April 14, 2026): The Montana Supreme Court upheld an injunction blocking three interlocking anti-trans ID policies, holding that Montana's equal protection clause applies heightened scrutiny to trans discrimination because "Transgender discrimination is, by its very nature, sex discrimination."
+
+This is not a minor state court development. This is Lambda Legal's post-Skrmetti state court strategy (A7, Source Index) succeeding in practice:
+
+- The Montana Supreme Court applied *heightened scrutiny* under state constitutional equal protection — the precise standard that Skrmetti's federal rational basis floor removed from federal courts
+- Montana is not a liberal state; it has an active legislative anti-trans coalition (SB 458, the binary-sex-definition law, was the centerpiece of the challenge)
+- The ruling demonstrates that state constitutions with explicit equal protection or privacy provisions can provide protections that exceed the federal floor
+
+**Pillar 5 update**: Add Kalarchik as the first post-Skrmetti state supreme court ruling demonstrating that the state court alternative is operationally viable, not merely theoretical. Lambda Legal's strategy for post-Hecox/BPJ advocacy should lead with Montana.
+
+**Intersection with Domain 49**: Montana's state constitutional ruling comes from a state with significant tribal sovereignty issues and environmental justice communities in coal country. A Montana state constitution that provides stronger-than-federal protections for trans people may also provide a platform for environmental rights claims — the state constitutional floor concept applies across domains.
+
+### 10.3 SCOTUS Allows Trans Passport Policy — ID Mismatch Stack Worsens
+
+SCOTUS's conservative majority stayed the expanded class-certification injunction covering all trans/nonbinary/intersex passport applicants, allowing the Trump passport policy (sex assigned at birth required, X marker removed) to take effect while lower court litigation continues.
+
+**Pillar 2 (Trans Voter Suppression) update**: This development worsens the ID mismatch stack:
+- Pre-existing 210,800 ID mismatch figure (Williams Institute) was growing due to EO 14168 passport and Social Security freezes
+- The expanded class injunction had briefly offered all trans applicants relief — now that relief is stayed
+- Passport is an explicit valid photo ID for SAVE Act registration purposes
+- The SCOTUS passport stay removes the only federal court protection that had been restored in the document freeze layer
+
+The suppression-suppression paradox now has an additional SCOTUS-enabled layer: the same Court that is about to rule on trans athlete bans (Hecox/BPJ) has already removed the federal court protection for trans passport access while voting in 2026 states with anti-trans ballot measures.
+
+### 10.4 State EJ Laws Winning in Courts — Countermovement to Federal Rollback
+
+**NJ Appellate Division affirming NJDEP EJ Rules** (January 5, 2026): The New Jersey Appellate Division upheld New Jersey's Environmental Justice Rules against industry challenges on all grounds: statutory authority, constitutional vagueness, and arbitrary-and-capricious review. The operative holding — "economic benefits cannot be used to allow new sources of pollution in overburdened communities" — is the strongest judicial endorsement of cumulative impact analysis yet decided by any appellate court.
+
+**Pillar 6 (Reform Architecture) update**: The NJ appellate ruling is the judicial foundation for Domain 49's state-tier reform argument. The three-tier reform architecture (executive → legislative → Aarhus) can now add a judicial sub-tier: state courts are enforcing state EJ laws, and the enforceability precedent is being set in real time.
+
+**Pillar 1 (Infrastructure Elimination) contextual update**: The federal demolition sequence is being partially counteracted at the state level. While the eight-state cumulative impact bills were documented in the prior framework, the NJ ruling is the first appellate court victory affirming those laws' constitutionality in a direct industry challenge. The state-tier EJ infrastructure is now judicially protected in New Jersey and emerging in 12+ additional states.
+
+**Federal-state conflict escalation**: The Center for Progressive Reform documents that Trump's EO directing AG challenges to state EJ laws is now a live threat to the NJ ruling and analogous state laws in Colorado, Connecticut, Minnesota, New York, and Vermont. The NJ Appellate Division ruling will be the primary cited precedent when those federal preemption challenges are filed.
+
+### 10.5 Endangerment Finding DC Circuit — Active Briefing Stage
+
+The four DC Circuit Endangerment Finding cases (APHA v. EPA No. 26-1037; Massachusetts v. EPA No. 26-1061; Venner v. EPA No. 26-1038; Zero Emission Transportation v. EPA No. 26-1039) remain in active briefing. No oral arguments have been scheduled as of June 14, 2026. The EHS Leaders analysis ("Courts Weigh Future of EPA's Endangerment Finding") confirms that courts are actively reviewing briefs, with the case expected to take "months or even years" absent SCOTUS shadow docket intervention.
+
+**Domain 49 Pillar 4 (Live Litigation) status**: No change from Phase 4 analysis — the cases remain in early stages and no activation trigger has been reached. The June 8, 2026 Manhattan Contrarian analysis is the most current neutral-to-hostile source documenting the litigation status from an adversarial perspective; cite to establish that even opponents acknowledge the cases are live.
+
+---
+
+*Synthesis framework updated: June 14, 2026 (Phase 5). Additions: Part 10. Key updates — imminent SCOTUS trans athlete ruling (most urgent pending event); Montana Supreme Court heightened scrutiny state court victory (Lambda Legal state strategy confirmed viable); SCOTUS passport stay (trans voter suppression stack worsened); NJ Appellate EJ ruling (state EJ law judicially confirmed); DC Circuit Endangerment Finding status (no new developments — active briefing). Priority action: When Little v. Hecox / West Virginia v. BPJ issues, distribute Domain 50 constitutional section immediately to Lambda Legal, ACLU, and HRC.*

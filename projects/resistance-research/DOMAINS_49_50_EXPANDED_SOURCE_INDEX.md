@@ -3,8 +3,8 @@ title: "Domains 49–50: Expanded Source Index"
 subtitle: "100+ Sources per Domain, Organized by Theme with Integration Point Matrix"
 domains: [49, 50]
 created: "2026-06-06"
-updated: "2026-06-10"
-status: "production-ready — Phase 4 expansion"
+updated: "2026-06-14"
+status: "production-ready — Phase 5 expansion"
 session: "Resistance Research Agent — Phase 4 Intersection Deepening"
 source_counts:
   domain_49: 132
@@ -587,6 +587,30 @@ URL: https://martenlaw.com/news/state-and-local-climate-laws-draw-federal-scruti
 - (A) Domain 33: state autocratization through federal preemption
 - (L) State AG coalition contacts — critical context for defending state EJ authority
 
+**[H7] Earthjustice — Victory: NJ Appellate Court Affirms NJ Environmental Justice Law (January 2026)**
+URL: https://earthjustice.org/press/2026/victory-nj-appellate-court-affirms-legality-of-environmental-justice-law
+- (T) January 5, 2026: New Jersey Appellate Division upheld NJDEP's Environmental Justice Rules, affirming NJ's 2020 EJ Law against industry challenges claiming the rules exceeded statutory authority, were unconstitutionally vague, and were arbitrary and capricious
+- (T) Key holding: economic benefit claims cannot be used to allow new pollution sources in overburdened communities — the strongest state judicial endorsement of cumulative-impact analysis yet decided
+- (T) This victory comes 10 days before CEQ NEPA regulations were rescinded federally (January 8, 2026): state courts are simultaneously moving pro-EJ as federal law moves anti-EJ
+- (A) Domain 33: state EJ law under industry legal challenge — the state court victory demonstrates that EJ laws survive judicial scrutiny when properly drafted
+- (L) WE ACT, Columbia Sabin Center model bill advocates — the NJ ruling is the strongest judicial endorsement of the model EJ bill framework; cite in state legislative advocacy materials
+- (L) Lowenstein Sandler and Mondaq analyses are companion law firm summaries for corporate and compliance audiences
+
+**[H8] Mondaq — NJ EJ Rules Affirmed: What Regulated Entities Need to Know**
+URL: https://www.mondaq.com/unitedstates/environmental-law/1745312/new-jersey-appellate-division-affirms-njdep-environmental-justice-rules-what-regulated-entities-need-to-know
+- (T) Law firm analysis of NJ Appellate Division ruling; documents the industry challenge arguments and why each failed
+- (T) "Economic benefits cannot be used to allow new sources of pollution in overburdened communities" — the operative holding in accessible form for compliance audiences
+- (A) Domain 15: rollback catalog; the state-level EJ rule being upheld is the direct countermovement to the federal rollback
+- (L) Corporate and regulatory compliance distribution contacts; Mondaq reaches business law audiences
+
+**[H9] Center for Progressive Reform — Federal-State Conflicts Over Environmental Justice**
+URL: https://progressivereform.org/cpr-blog/federal-state-conflicts-over-environmental-justice/
+- (T) Documents the emerging federal-state conflict pattern: Trump administration targeting state EJ laws while states advance independent EJ programs
+- (T) Colorado, Connecticut, Minnesota, New York, Vermont have enacted state EJ laws; 13 more states proposing permitting policies
+- (T) Trump EO directs AG to identify and challenge state EJ laws as unconstitutional, preempted, or unenforceable
+- (A) Domain 33: state autocratization; federal preemption of state EJ laws mirrors federal preemption threats in other policy domains
+- (L) State AG coalition contacts; state advocates defending against federal preemption challenges
+
 **[H6] North Carolina Health News — EJ Gains Fall Before Shifting Federal Priorities**
 URL: https://www.northcarolinahealthnews.org/2026/02/17/epa-endangerment-finding-north-carolina-environmental-justice/
 - (T) North Carolina-specific EJ impact analysis; one of 8 states with cumulative impact bill
@@ -687,7 +711,7 @@ URL: https://digitalcommons.law.villanova.edu/cgi/viewcontent.cgi?article=1440&c
 | Reform Architecture (I1-I4) | Statutory NEPA amendments, cumulative impact bills | D33, D6 | Congressional advocates, state legislatures |
 | Cross-Domain (J1-J6) | Academic and advocacy bridges | D6, D15, D22, D33 | Law school clinics, environmental journalism |
 
-**Total Domain 49 sources: 108** (Themes A through J: 6+11+12+13+10+9+4+6+4+6)
+**Total Domain 49 sources: 111** (Themes A through J: 6+11+12+13+10+9+4+9+4+6; Phase 5 added H7-H9 state EJ law developments)
 
 ---
 
@@ -1286,6 +1310,37 @@ URL: https://cass.independent-review.org.uk/
 
 ---
 
+## THEME I-SUPPLEMENT: Passport and State Court Developments (June 2026)
+
+**[I5] ACLU — Supreme Court Allows Trump Trans Passport Policy Enforcement**
+URL: https://www.aclu.org/press-releases/supreme-court-allows-trump-administration-to-enforce-discriminatory-passport-policy
+- (T) SCOTUS conservative majority stayed the expanded class-certification injunction covering all trans/nonbinary/intersex applicants; allowed Trump passport policy (sex assigned at birth only, no X marker) to take effect while lower court litigation continues
+- (T) Direct connection to Williams Institute E1/E2: the passport policy is one of the three identity-document freeze mechanisms growing the 210,800 ID-mismatch figure — the SCOTUS stay removes the federal court protection that had briefly restored access
+- (T) ACLU framing: "The court's three liberal justices objected" — characterizes this as a 6-3 partisan decision on the shadow docket
+- (A) Domain 6: shadow docket; SCOTUS using emergency stay to enforce executive policy without full merits review is the Domain 6 mechanism applied to trans rights
+- (A) Domain 1: voter suppression; passport is a valid photo ID for SAVE Act purposes — the stay removes a viable ID pathway for trans voters
+- (L) AT4E and VoteRiders — distribute alongside E1-E14 SAVE Act suppression analysis as updated status of the passport ID pathway
+
+**[I6] Kalarchik v. State — Montana Supreme Court (April 2026)**
+URL: https://law.justia.com/cases/montana/supreme-court/2026/da-25-0139.html
+- (T) Montana Supreme Court upheld injunction blocking three interlocking anti-trans identity-document policies: SB 458 (binary sex definition throughout Montana Code), 2022 DPHHS rule restricting birth certificates, 2024 Motor Vehicle Division policy barring driver's license updates
+- (T) Holding: "Transgender discrimination is, by its very nature, sex discrimination" — state constitution's equal protection clause protects trans people's right to accurate identity documents; applies heightened scrutiny
+- (T) This is the Lambda Legal A7/State Court Report strategy in action — a state court applying heightened scrutiny under state constitutional analysis that is not constrained by Skrmetti's federal floor
+- (A) Domain 6: state court constitutional alternative to federal judicial capture; Montana demonstrates the state court pathway is viable
+- (L) Lambda Legal post-Skrmetti state court strategy contacts; document as proof-of-concept for state constitutional equal protection claims independent of Skrmetti
+
+**[I7] SCOTUSblog / Trans Journalists Association — Trans Athletes Cases Pending (Little v. Hecox / West Virginia v. BPJ)**
+URL: https://www.transjournalists.org/trans-rights-supreme-court-2026/ and https://www.scotusblog.com/2026/01/the-transgender-athlete-cases-an-explainer/
+- (T) SCOTUS heard oral arguments January 13, 2026 in two trans athlete cases: Little v. Hecox (Idaho Fairness in Women's Sports Act; Lambda Legal/ACLU/Legal Voice) and West Virginia v. B.P.J. (WV trans sports ban; same counsel); decision expected by end of June 2026
+- (T) Key legal questions: (1) Do trans sports bans violate Title IX's sex discrimination prohibition? (2) Do they violate Equal Protection's 14th Amendment?
+- (T) Oral argument reporting: conservative majority appeared likely to uphold bans; 6-3 court composition (post-Skrmetti) is the precedent-setting context
+- (T) **PENDING STATUS as of June 14, 2026**: Decision has not been issued. Imminent. Expect Pillar 5 (Constitutional Standards) update required when decided.
+- (A) Domain 6: judicial composition is the mechanism — same 6-3 majority that decided Skrmetti will likely decide Little v. Hecox on rational basis grounds
+- (A) Domain 37: 2026 election year; the decision lands during the peak anti-trans ballot measure campaign season
+- (L) Lambda Legal, ACLU, HRC — prepare distribution of Domain 50's constitutional section immediately upon decision; this ruling will be the most-covered LGBTQ+ constitutional case in June 2026
+
+---
+
 ## THEME J: Marriage Equality and Obergefell
 
 **[J1] Minella Law Group — Marriage Equality Threats in 2026**
@@ -1326,7 +1381,7 @@ URL: https://thehill.com/homenews/lgbtq/5369821-obergefell-10th-anniversary-gay-
 | International Comparison (I1-I4) | EU standard, Cass misuse | D57 | International advocacy, healthcare policy |
 | Marriage Equality (J1-J3) | Obergefell threats, civic participation dimensions | D6, D47 | Lambda Legal, HRC |
 
-**Total Domain 50 sources: 112** (Themes A through J: 11+12+6+13+14+6+4+7+4+3)
+**Total Domain 50 sources: 115** (Themes A through J plus I-supplement: 11+12+6+13+14+6+4+7+7+3; Phase 5 added I5-I7 passport, Montana, trans athletes pending)
 
 ---
 
@@ -1570,8 +1625,14 @@ URL: https://natlawreview.com/article/nepa-news-march-2026-nepa-round
 
 **Phase 4 source additions: 24 (Themes K through N)**
 
-**Running total: Domain 49: 108 + 24 = 132 sources. Domain 50: 112 sources. Cross-domain intersection: 24 new sources.**
+**Phase 5 source additions: 6 (Domain 49: H7-H9 state EJ law developments; Domain 50: I5-I7 passport/Montana/trans athletes pending)**
+
+**Running total: Domain 49: 108 + 3 (H7-H9) + 24 = 135 sources. Domain 50: 112 + 3 (I5-I7) = 115 sources. Cross-domain intersection: 24 new sources.**
 
 ---
 
-*Index updated: June 10, 2026. Phase 4 additions: Themes K (cross-domain intersection organizations), L (housing-environment-LGBTQ+ chain), M (June 2026 litigation developments), N (NEPA-ICE litigation wave and Seven County SCOTUS). These additions deepen the 49-50 intersection analysis and add the post-June-6 litigation record. Next action: July production sessions should lead with Theme M and Theme N sources as the urgency anchors; Theme K provides the organizational bridge contacts for paired distribution.*
+*Index updated: June 10, 2026 (Phase 4 additions: Themes K-N) and June 14, 2026 (Phase 5 additions: state EJ law developments H7-H9; trans rights developments I5-I7).*
+
+*Phase 5 summary: Domain 49 additions document the state EJ law countermovement — NJ Appellate Division upholding EJ rules against industry challenge (January 2026), and the Center for Progressive Reform documentation of the federal-state conflict pattern now escalating as Trump EO directs AG to challenge state EJ laws. Domain 50 additions document three critical post-June-10 developments: SCOTUS staying the trans passport class injunction (passport ID pathway removed from trans voters); Montana Supreme Court upholding state constitutional heightened scrutiny for trans ID rights in Kalarchik (proof-of-concept for Lambda Legal's state court strategy); and Little v. Hecox / West Virginia v. BPJ pending SCOTUS rulings on trans athlete bans (expected by end of June 2026, likely upholding bans under 6-3 majority). **URGENT NOTE**: Little v. Hecox / West Virginia v. BPJ ruling expected any day. When issued, update Domain 50 Pillar 5 immediately and distribute to Lambda Legal/ACLU/HRC contacts.*
+
+*Next action: July production sessions should lead with Theme M and Theme N sources as urgency anchors for Domain 49; trans athlete SCOTUS decision will require immediate Pillar 5 update for Domain 50. Montana state court decision (I6) should be cited in all Lambda Legal outreach as confirmation that the state court alternative is already succeeding.*

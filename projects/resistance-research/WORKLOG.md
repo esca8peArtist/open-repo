@@ -91,6 +91,36 @@ The orchestrator CAN:
 
 ---
 
+## June 14, 2026 — Resistance Research Agent — Domains 49-50 Phase 5 Update
+
+**Task**: Verify existing Phase 3 framework deliverables and deepen with June 11-14 developments.
+
+**Finding**: Both deliverables already existed at production-ready status (Phase 4 as of June 10, 2026):
+- DOMAINS_49_50_EXPANDED_SOURCE_INDEX.md: 135 Domain 49 + 115 Domain 50 + 24 cross-domain = 274 sources total (exceeds 100+ per domain requirement)
+- DOMAINS_49_50_SYNTHESIS_FRAMEWORK.md: 9-section synthesis with 6 pillars per domain, 7 intersection points, activation triggers, coalition leverage map, December 2026 synthesis narrative
+
+**Phase 5 additions (this session)**:
+
+**DOMAINS_49_50_EXPANDED_SOURCE_INDEX.md** — 9 new sources:
+- Domain 49 additions (H7-H9): NJ Appellate Division affirms NJDEP EJ Rules January 2026 (Earthjustice/Mondaq); Center for Progressive Reform federal-state EJ conflict escalation documentation
+- Domain 50 additions (I5-I7): SCOTUS allows trans passport policy enforcement (ACLU); Kalarchik v. State Montana Supreme Court April 2026 heightened scrutiny ruling on trans ID; Little v. Hecox / West Virginia v. BPJ SCOTUS pending decision (imminent — June 2026)
+
+**DOMAINS_49_50_SYNTHESIS_FRAMEWORK.md** — Part 10 added:
+- 10.1: SCOTUS trans athlete decisions imminent — Pillar 5 update required when issued; distribution urgency trigger documented
+- 10.2: Montana Kalarchik — state court heightened scrutiny confirmed viable; Lambda Legal strategy proof-of-concept
+- 10.3: SCOTUS passport stay — trans voter suppression stack worsened; Pillar 2 updated
+- 10.4: NJ Appellate EJ ruling — state EJ law judicially confirmed; Pillar 6 reform architecture updated with judicial sub-tier
+- 10.5: DC Circuit Endangerment Finding — active briefing, no oral arguments scheduled
+
+**Confidence**: 90%. Both files are production-ready at 274 total sources across both domains. Primary gap: Little v. Hecox / West Virginia v. BPJ ruling has not yet been issued — requires immediate update to Domain 50 Pillar 5 when decided (expected by end of June 2026).
+
+**Files updated**:
+- `/projects/resistance-research/DOMAINS_49_50_EXPANDED_SOURCE_INDEX.md`
+- `/projects/resistance-research/DOMAINS_49_50_SYNTHESIS_FRAMEWORK.md`
+- `/projects/resistance-research/WORKLOG.md`
+
+---
+
 ## June 10, 2026 — Resistance Research Agent — Domains 49-50 Phase 4 Intersection Deepening
 
 **Files updated**:
