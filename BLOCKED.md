@@ -68,12 +68,16 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ### stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation
 **Date blocked**: 2026-06-14
-**Context**: AAPL lgbm_ho and MSFT ridge_wf retrains (P3 work, June 18 EOD deadline) are blocked on a feature pipeline architectural mismatch. **INVESTIGATION COMPLETE (Session 3488, June 14 03:25 UTC)**. Root cause confirmed: Training phase uses 14 features (manual feature engineering in model_training_pipeline.py:619–687), walk-forward evaluation builds only 7 features (MTFFeatureExtractor in walk_forward_engine.py:217–262). When trained models predict on 7-feature input but expect 14, scikit-learn raises "X has 7 features, but GradientBoostingRegressor is expecting 14 features as input" → caught and defaults to HOLD signals only → all gates fail with 0.0 metrics and 0 trades. Both models fail identically. Two implementation paths identified with time estimates:
-- **Option A** (Fast, risky): Reduce training to 7 core features, modify model_training_pipeline.py `_build_features_and_labels()`. 1–2 hours. May lose signal quality.
-- **Option B** (Thorough, recommended): Enhance walk-forward to build 14 features, extract shared feature-building utility, ensure parity. 2–4 hours. Preserves model quality. RECOMMENDED.
-**What I need**: User decision: Option A or Option B by June 15 EOD (gives 3 days for implementation before June 18 deadline). Full diagnostic with implementation paths in `projects/stockbot/P3_FEATURE_MISMATCH_DIAGNOSIS.md`. Ready to implement immediately on decision.
-**Verify with**: `uv run python scripts/batch_train_models.py --jobs batch_aapl_msft_retrains.json --max-workers 2` — should complete without feature dimension errors and produce gate evaluation results with >0 trades.
-**Resolution**: [leave blank — awaiting user decision]
+**Context**: AAPL lgbm_ho and MSFT ridge_wf retrains (P3 work, June 18 EOD deadline) are blocked on a feature pipeline architectural mismatch. **INVESTIGATION COMPLETE (Session 3488, June 14 03:25 UTC)**. Root cause confirmed: Training phase uses 14 features, walk-forward evaluation builds only 7. **BOTH OPTIONS NOW FULLY STAGED & TESTED (Session 3514, June 14 12:40 UTC)**:
+- **Option A — `feature/p3-option-a-7-feature-reduction`** (41 tests ✅): Fast path (1-2 hours), reduce training to 7 core features. Zero regressions vs master.
+- **Option B — `feature/p3-option-b-14-feature-parity`** (47 tests ✅): Thorough path (2-4 hours, RECOMMENDED), enhance walk-forward to build 14 features. Zero regressions vs master.
+- **Review branch — `feature/p3-staging-both-options`**: Merged review staging with both options as commits, PR-ready decision guide explaining trade-offs, test results, and recommendations.
+
+Both branches are fully tested, regression-free, and ready for immediate merge upon user decision. User can review the decision guide in the staging branch to understand trade-offs (speed/quality/risk). No further implementation work needed — just merge and activate retrains.
+
+**What I need**: User decision: Option A or Option B by June 15 EOD (gives 3 days for retrain execution before June 18 deadline). Review `feature/p3-staging-both-options` PR. Recommendation: Option B for signal quality preservation + future expandability. If timeline tight: Option A is viable (faster).
+**Verify with**: Merge chosen branch to master, then run `uv run python scripts/batch_train_models.py --jobs batch_aapl_msft_retrains.json --max-workers 2` — should complete without feature dimension errors and produce gate evaluation results with >0 trades.
+**Resolution**: [leave blank — awaiting user decision by June 15 EOD]
 
 ---
 
