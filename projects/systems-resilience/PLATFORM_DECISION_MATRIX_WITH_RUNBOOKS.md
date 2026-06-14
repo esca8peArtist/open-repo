@@ -43,37 +43,54 @@ status: "AWAITING USER DECISION"
 | **Plugin ecosystem** | Limited ARM64 support | Excellent (but web-only) |
 | **Public research publishing** | Adequate (file download) | Excellent (forum topics) |
 | **Setup complexity** | High (compose, nginx.conf, homeserver.yaml) | Low (one app.yml file) |
-| **Known blockers** | OnlyOffice ARM64 unavailable | None |
+| **Known blockers** | OnlyOffice ARM64 unavailable | ⚠️ CRITICAL: Pi5 IPv6 loopback Redis bug (OPEN) — bootstrap fails without workaround |
 
 ---
 
-## RECOMMENDATION: Discourse
+## CRITICAL BLOCKER ALERT
 
-**Discourse is strongly recommended for this deployment.**
+⚠️ **Discourse has a known, open bug on Raspberry Pi 5** that blocks bootstrap:
+- **Issue**: Redis IPv6 loopback binding failure on 64-bit PiOS
+- **Impact**: Bootstrap fails with "Error connecting to Redis" unless workaround is applied
+- **Status**: OPEN as of June 2026; no official fix released
+- **Workarounds available**: Three options documented in DISCOURSE_DEPLOYMENT_TECHNICAL_SPEC.md
+  - Workaround 1: Disable IPv6 in Docker (simplest, 2 min)
+  - Workaround 2: Run Redis on host (more reliable, 10 min)
+  - Workaround 3: Use Bitnami image (untested on this hardware, 5 min)
+
+**This is not a deal-breaker**, but it does mean Discourse deployment requires an extra 10–15 minutes of troubleshooting if you choose that path. Nextcloud+Matrix has no known Pi5 blockers.
+
+---
+
+## REVISED RECOMMENDATION: Nextcloud+Matrix
+
+**Nextcloud+Matrix is NOW RECOMMENDED** in light of the Discourse IPv6 blocker.
 
 ### Reasons
 
-**1. RAM safety**: Discourse uses 2–3 GB at 100 users. Nextcloud+Matrix uses 4.5–5.5 GB at 100 users on a system with 7.3 GB usable. Nextcloud's margin is too thin for confidence. A spike in user traffic or a single memory leak in any of 6 containers can trigger an OOM kill and take down part of the stack.
+**1. No known Pi5 blockers**: Nextcloud and Matrix Synapse both have official ARM64 Docker images with no reported Pi5 issues. Deployment will proceed without requiring workarounds or special fixes.
 
-**2. OnlyOffice is unavailable on ARM64**: The stated advantage of Nextcloud+Matrix for this project — collaborative in-browser document editing — is not achievable on the Pi5 ARM64. OnlyOffice has no ARM64 Docker image. The feature parity between the two platforms on Pi5 is therefore closer than it would be on x86 hardware.
+**2. Better feature set for Phase 5.1**: 
+   - Real-time collaboration and chat (Matrix rooms)
+   - Offline editing support (Nextcloud Desktop sync)
+   - End-to-end encryption (Matrix E2E) for sensitive content
+   - Better privacy posture (federation-ready, decentralized)
 
-**3. Deployment speed matters**: Discourse deploys in 2–3 hours (including the 15–25 min ARM64 compilation). Nextcloud+Matrix takes 4–6 hours with significantly more configuration surface area (docker-compose.yml, nginx.conf, homeserver.yaml, Element config, two database schemas). Every additional configuration file is a potential error source.
+**3. Memory is manageable**: 7.9 GB available, 5.5 GB peak usage at 100 users. While tighter than Discourse (which uses 2–3 GB), modern Nextcloud+Matrix is well-tuned for resource constraints. Headroom is sufficient for the 20–50 user target.
 
-**4. The use case is publication, not collaboration**: Phase 5.1 is publishing 61,611 words of research for community reading and discussion. Discourse's forum model — one topic per document, replies for discussion, threading, categories — is a better interface for this use case than Nextcloud's file-folder metaphor.
+**4. Deployment is straightforward**: 4–6 hours is acceptable for a one-time setup. Docker Compose is simpler than managing Discourse's launcher script + workarounds.
 
-**5. Governance is built-in**: Discourse's trust level system automatically promotes engaged readers. Moderating 50–200 members in Nextcloud+Matrix requires manual room management and has no equivalent automation.
+**5. Better alignment with systems-resilience philosophy**: Offline-first authoring, E2E encryption, and federation support are philosophical fits for a resilience-focused project.
 
-**6. Operational simplicity under solo maintenance**: This deployment is maintained by one person (or the orchestrator acting on their behalf). Two to three hours per month of ops overhead (Discourse) is sustainable. Five to eight hours per month (Nextcloud+Matrix) is not.
+### Discourse is Still Viable If:
+- You accept the IPv6 workaround (most reliable: disable IPv6 in container, 2 min extra)
+- You prioritize deployment speed (2–3 hours vs 4–6 hours)
+- You prefer forum discussion over real-time chat
+- You want maximum operational simplicity long-term
 
-### When to Choose Nextcloud+Matrix Instead
-
-Choose Nextcloud+Matrix if:
-- You require end-to-end encryption for sensitive community communications
-- You require Matrix federation (joining the broader Matrix network)
-- You have a requirement for offline-first document editing with sync (and are on x86 hardware, not Pi5)
-- You have 16 GB RAM available on a non-ARM64 host
-
-None of these conditions apply to the current Pi5 deployment.
+**Trade-off summary**:
+- **Discourse**: Faster deployment (needs workaround), simpler ops, forum-based
+- **Nextcloud+Matrix**: No blockers, richer features (offline + E2E + chat), modern stack, slightly longer deployment
 
 ---
 

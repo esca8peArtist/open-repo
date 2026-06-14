@@ -4,11 +4,77 @@ project: systems-resilience
 platform: "Discourse (Official Docker Launcher + Bitnami ARM64 fallback)"
 created: 2026-06-14
 purpose: "Technical specification for June 14-15 platform decision. Covers resource requirements, deployment method, ARM64 architecture notes, backup, and troubleshooting. Companion to NEXTCLOUD_DEPLOYMENT_TECHNICAL_SPEC.md."
-decision_context: "Discourse is the recommended platform for Pi5 (8GB RAM, ARM64). See PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md for the recommendation rationale."
+decision_context: "Discourse was considered optimal for Pi5 (8GB RAM, ARM64), BUT has a known Pi5-specific blocker. See PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md for updated recommendation."
+blocker_status: "CRITICAL BLOCKER: Pi5 IPv6 loopback Redis bug (OPEN, no fix yet). Requires workaround to deploy. Nextcloud+Matrix recommended instead (no known blockers)."
 ---
 
 # Discourse Deployment Technical Specification
 ## Raspberry Pi 5 (8GB RAM, ARM64) — June 14, 2026
+
+---
+
+## ⚠️ CRITICAL BLOCKER: Raspberry Pi 5 IPv6 Loopback Bug
+
+**Status**: OPEN BUG affecting all tested Pi5 units (as of June 2026)
+
+**Symptom**: Discourse bootstrap fails with "Error connecting to Redis" or "Connection refused" on Raspberry Pi 5.
+
+**Root Cause**: PiOS 64-bit has a bug in the Redis service configuration where it binds to IPv6 loopback `[::1]:6379` instead of IPv4 `127.0.0.1:6379`. Discourse 30+ expects IPv4 loopback and cannot reach Redis on the IPv6 address.
+
+**Affected Platforms**:
+- ✅ Discourse on x86 Linux: NOT affected
+- ✅ Discourse on Pi4 (32-bit): NOT affected
+- ❌ **Discourse on Pi5 (64-bit PiOS): AFFECTED** ← This is your hardware
+
+**Official Bug Report**: https://meta.discourse.org/t/bootstrap-failed-with-exit-code-1-on-raspberry-pi-5/296408
+
+**Status as of June 14, 2026**: No official fix released. Workarounds available.
+
+### Available Workarounds
+
+**Workaround 1: Disable IPv6 in Docker** (Recommended — quick, non-invasive)
+```bash
+# In docker-compose or launcher config, add:
+docker run --sysctl net.ipv6.conf.all.disable_ipv6=1 ...
+# OR in app.yml:
+params:
+  docker_args: "--sysctl net.ipv6.conf.all.disable_ipv6=1"
+```
+- Time to implement: 2 minutes
+- Risk: None (IPv6 disabled only inside container)
+- Caveat: If you need IPv6 federation with remote Matrix/Discourse servers, this breaks it
+
+**Workaround 2: Run Redis on host, point Discourse to it** (More complex)
+```bash
+# Install Redis on Pi5 OS:
+sudo apt install redis-server
+# Configure to bind IPv4:
+sudo sed -i 's/^bind.*/bind 127.0.0.1/' /etc/redis/redis.conf
+sudo systemctl restart redis-server
+# In Discourse app.yml, use external Redis:
+DISCOURSE_REDIS_HOST: 127.0.0.1
+DISCOURSE_REDIS_PORT: 6379
+```
+- Time to implement: 10 minutes
+- Risk: Low (separate service, easier to debug)
+- Benefit: Allows IPv6 federation if needed
+
+**Workaround 3: Use Bitnami pre-built image (may skip bug)**
+- Uses `docker.io/bitnami/discourse:3` instead of official launcher
+- Some reports indicate Bitnami's image config avoids the IPv6 bind issue
+- Time to implement: 5 minutes (switch image in docker-compose)
+- Risk: Moderate (image version lag, less official support)
+- Caveat: Not tested thoroughly on this exact Pi5 hardware; workaround 1 or 2 more reliable
+
+### RECOMMENDATION FOR THIS DEPLOYMENT
+
+**Use Workaround 1 (Disable IPv6)** because:
+1. Phase 5.1 is an internal systems-resilience platform (not federated with external Matrix servers)
+2. IPv6 is not needed for internal Raspberry Pi ↔ user communication
+3. Simplest implementation, lowest risk
+4. Can be reverted if requirements change
+
+**Go/No-Go Decision Rule**: If you choose Discourse, you MUST apply one of these three workarounds during bootstrap. The deployment will fail without it.
 
 ---
 
