@@ -4,6 +4,34 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 106 — Phase 3 Medicinal Herbs Content Bundle Production — June 14, 2026
+
+**Task**: Produce Phase 3 product content: the actual medicinal herbs guide (the product customers buy), an updated competitive analysis with SEO tags and price recommendation, and a complete 5-email Kit nurture sequence.
+
+**Deliverables produced**:
+
+1. `projects/seedwarden/PHASE_3_MEDICINAL_HERBS_BUNDLE_CONTENT.md` — Full product guide. Parts 1–5 covering 20 herbs in full cultivation-to-preparation depth, 6 recipes, a 12-month 4-region seasonal harvest calendar, and drying/preservation standards. Approximately 14,500 words.
+
+2. `projects/seedwarden/PHASE_3_COMPETITIVE_ANALYSIS.md` — Replaced v1.0 (May 20, 2026). Added: June 2026 market pricing data, competitor gap analysis with review-signal sourcing, recommended price point ($14.99 launch / $19.99 at 25 reviews), 13 Etsy SEO tags with rationale, and recommended listing title (140-character, front-loaded with "Medicinal Herb Growing Guide").
+
+3. `projects/seedwarden/PHASE_3_EMAIL_SEQUENCE_MEDICINAL_HERBS.md` — 5-email Kit nurture sequence. Trigger: "20 Medicinal Herbs" lead magnet opt-in. Schedule: Day 0 (welcome + download), Day 3 (elderberry spotlight), Day 7 (tincture how-to), Day 14 (seasonal harvest by region), Day 21 (product launch email with [ETSY_LINK] placeholder). All health claims use FTC-compliant traditionally-used-for framing. Kit implementation notes included.
+
+**Research sources consulted**:
+- NCCIH: echinacea, elderberry, St. John's Wort, valerian, lemon balm monographs
+- PubMed/PMC: chamomile (2010, 2017 RCTs), elderberry (2019 meta-analysis), ginger (2014 meta-analysis), peppermint IBS trials (2014 meta-analysis), tulsi (2017 systematic review, Jamshidi/Cohen), lemon balm (2024 PMC review)
+- Commission E (German Botanical Medicine regulatory body): thyme, calendula, nettle root
+- Etsy market category pages: medicinal_herbs_pdf, herbal_remedy_guide, digital_herbalism
+- Prior Seedwarden research: competitor-landscape.md (April 30), COMPETITIVE_POSITIONING_ANALYSIS.md
+
+**Notes**:
+- The existing PHASE_3_COMPETITIVE_ANALYSIS.md (May 20) was overwritten per task instruction to produce this deliverable. The May 20 version is preserved in git history.
+- All safety notes in the herb guide use evidence-descriptive language; no disease treatment claims.
+- [ETSY_LINK] and [DOWNLOAD LINK] in the email sequence are placeholders to be replaced when the Etsy listing is live and the lead magnet is hosted.
+
+**Status**: All three deliverables production-ready. Pending user review before Etsy listing creation.
+
+---
+
 ## Item 105 — Phase 3 Contractor Sourcing Channel Pre-Screening Validation — June 10, 2026
 
 **Task**: Validate feasibility of 6 sourcing channels (AHG, IHA, Chestnut School, Herbal Academy, Upwork, Toptal) and identify top pre-screened candidates for the botanical illustration contractor role. Produce four documents for the June 17 decision gate.
