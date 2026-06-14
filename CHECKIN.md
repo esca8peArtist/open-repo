@@ -1,3 +1,56 @@
+# Check-in Summary — Session 3578 (June 14 21:11 UTC)
+
+## Session 3578 — Standing-By Maintenance & Pruning
+
+**Completed**: Orientation verification, stale focus pruning, maintenance log.
+
+### What I Found
+
+All projects in correct standing-by or blocked state:
+- **stockbot**: Ready for June 16 market open. AAPL + MSFT lgbm_ho deployed to Jetson. 4-session config active.
+- **resistance-research**: Wave 1-2 email packages staged for user execution (75 min, June 14-15 window). Phase 3 research infrastructure ready.
+- **Block 1 (cybersecurity-hardening)**: VeraCrypt restart required — Phase 1-2 deliverables ready.
+- **Block 2 (mfg-farm)**: Test print execution required — Phase 2 scaling roadmap ready post-print.
+- **Block 3 (systems-resilience)**: Platform decision due June 15 EOD (Nextcloud recommended over Discourse due to Pi5 IPv6 bug). Specs production-ready.
+- **seedwarden**: Track B gates await user (5 gates, 3.5-4.5 hrs, expires June 16 00:00 UTC). Orchestrator will auto-execute URL substitution post-Kit-creation.
+- **open-repo**: Merge-ready, awaiting approval (expires June 16 00:00 UTC).
+
+### Exploration Queue Status
+
+5 pending items, all with June 15-18 triggers:
+- stockbot post-retrain validation (triggers June 18-19)
+- resistance-research Phase 3 research onboarding (triggers post-Wave-2)
+- systems-resilience Phase 5.1 deployment (triggers post-platform-decision)
+- stockbot June 16-17 signal validation (ready for execution, pre-staged)
+- mfg-farm product candidate ranking (triggers post-test-print)
+
+Queue is healthy. No new items needed.
+
+### Autonomous Work Available
+
+**None**. All projects blocked on named external dependencies or market hours. Orchestrator correctly idle.
+
+### Critical Items Needing User Input
+
+1. **systems-resilience platform choice** — Due June 15 EOD. Recommendation: **Nextcloud+Matrix** (Discourse has Pi5 IPv6 bug). Provide: choice + IP/domain + SMTP if Nextcloud.
+2. **resistance-research Wave 1-2 execution** — Ready June 14-15 (75 min). Enables Day 7 checkpoint.
+3. **cybersecurity-hardening VeraCrypt restart** — Windows restart + pre-boot password needed. Then Phase 1 walkthrough resumes.
+4. **seedwarden Track B gates** — 4-hour user session needed by June 16 00:00 UTC (auto-repause).
+
+### Assessment
+
+✅ **System standing-by correctly.** All prep complete. Awaiting:
+- **June 15 EOD**: systems-resilience platform decision + VeraCrypt restart
+- **June 16 00:00 UTC**: temporary unpause expirations (all 3 projects) + repause
+- **June 16 13:30 UTC**: stockbot market open validation
+
+**Next session**: June 16 00:00 UTC (unpause expirations) or June 16 13:00 UTC (pre-market checklist).
+
+**Maintenance**:
+- Pruned stale cybersecurity-hardening focus (Session 3557 → current status)
+
+---
+
 # Check-in Summary — Session 3577 (June 14 21:05 UTC)
 
 ## Session 3577 — Full Orientation + Exploration Queue Review
