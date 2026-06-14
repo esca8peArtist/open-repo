@@ -1,3 +1,24 @@
+# Check-in Summary — Session 3575 (June 14 20:30 UTC)
+
+## Session 3575 Orientation — Standing-By Verification
+
+Conducted full orientation of ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md, and EXPLORATION_QUEUE.md.
+
+**State verification results**:
+- ✅ All active blocks confirmed (3 active, all require user action — none resolved)
+- ✅ All INBOX items processed (last processed Session 3485, June 14 02:50 UTC)
+- ✅ June 16 infrastructure validation checklist confirmed complete + production-ready
+- ✅ Stockbot standing-by state confirmed correct (no autonomous work until market open)
+- ✅ Temporary unpause directives expire June 16 00:00 UTC for mfg-farm, seedwarden, open-repo
+- ✅ Exploration queue has 10+ queued items (no need to add new items)
+- ✅ Time to June 16 13:00 UTC pre-market checklist: ~40 hours
+
+**Assessment**: All systems operational. Standing-by for June 16 13:30 UTC market open validation trigger. No autonomous work needed until then.
+
+**Token budget**: ~300 tokens (orientation only, no implementation work)
+
+---
+
 # Check-in Summary — Session 3574 (June 14 20:12 UTC)
 
 ## What Was Done
