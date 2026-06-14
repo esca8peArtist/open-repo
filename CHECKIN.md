@@ -1,3 +1,39 @@
+# Check-in Summary — Session 3581 (June 14 21:39 UTC)
+
+## Session 3581 — Standing-By Verification Continuation
+
+**Completed**: Orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md), block verification, Exploration Queue review, standing-by confirmation.
+
+### Findings
+
+- **Active blocks**: 3 unchanged (cybersecurity-hardening VeraCrypt restart, mfg-farm test print execution, systems-resilience platform decision due June 15 EOD)
+- **INBOX**: All items marked PROCESSED. No new unprocessed items.
+- **Exploration Queue**: 50+ items total; all completed (✅) or trigger-gated to future events (June 15-18)
+- **Autonomous work**: **None available** — all projects blocked on user actions, market events, or physical actions
+
+**Status**: ✅ System correctly standing-by. All infrastructure production-ready. Orchestrator idle.
+
+### Critical Items Needing User Input
+
+1. **systems-resilience platform choice** — **Due June 15 EOD** (HIGH PRIORITY). Recommendation: **Nextcloud+Matrix** (Discourse has Pi5 IPv6 bug). Provide: choice + public IP/domain + SMTP credentials if Nextcloud.
+2. **resistance-research Wave 1-2 execution** — Ready June 14-15 window (75 min total). Two email packages with copy-paste templates and minute-by-minute checklists.
+3. **cybersecurity-hardening VeraCrypt restart** — Windows machine restart + pre-boot password. Then Phase 1 completion walkthrough (90-165 min).
+4. **mfg-farm test print execution** — 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (1.25-1.55mm = PASS).
+
+### Next Scheduled Triggers
+
+- **June 15 EOD**: systems-resilience platform decision (critical path), VeraCrypt restart, Wave 1-2 execution completion
+- **June 16 00:00 UTC**: Temporary unpause expirations (mfg-farm, seedwarden, open-repo auto-repause)
+- **June 16 13:00 UTC**: Pre-market validation checklist execution
+- **June 16 13:30 UTC**: Market open, begin live monitoring (stockbot AAPL + MSFT lgbm_ho validation)
+- **June 16 20:00 UTC**: Post-market analysis + signal verification
+- **June 17-18**: Day 7 checkpoint (resistance-research Wave 1-2 results analysis)
+- **June 18 EOD**: Hard deadline (both models must validate 6/7 gates OR escalate)
+
+**Next session**: June 16 00:00 UTC (auto-repause) or June 16 13:00 UTC (pre-market checklist) depending on user decisions.
+
+---
+
 # Check-in Summary — Session 3580 (June 14 21:25 UTC)
 
 ## Session 3580 — Continuous Standing-By Verification
