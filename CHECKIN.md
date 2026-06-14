@@ -2,18 +2,31 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## 🎯 Session 3516 (June 14 ~11:30 UTC) — VERIFICATION: ALL P3 BRANCHES CONFIRMED READY, STANDING BY
+## 🎯 Session 3517 (June 14 11:30 UTC) — STANDING-BY VERIFICATION: ALL AUTONOMOUS WORK COMPLETE, AWAITING USER DECISIONS
 
-**Status**: ✅ **ALL AUTONOMOUS WORK VERIFIED PRODUCTION-READY** — Verified all P3 branches exist in stockbot submodule (feature/p3-option-a-7-feature-reduction, feature/p3-option-b-14-feature-parity, feature/p3-staging-both-options). All resistance-research Wave 1-2 execution checklists and email templates staged and committed. No new autonomous work available. All 4 active blocks remain unresolved (awaiting user action). Standing by for June 15 EOD P3 decision.
+**Status**: ✅ **CORRECT STANDING-BY STATE CONFIRMED** — Session 3517 verification: All autonomous work deliverables from Sessions 3509-3516 confirmed committed to master. Stockbot P3 branches fully tested and decision-ready in feature branches. Resistance-research Wave 1-2 execution packages complete and staged. All 4 active blocks remain unresolved (awaiting user manual actions: cybersecurity VeraCrypt, mfg-farm test print, systems-resilience platform choice, stockbot P3 decision). No new autonomous work available. Standing by for three critical user decisions.
 
-**Critical Deadlines**:
-1. **June 15 EOD (~13h remaining)**: Stockbot P3 decision (Option A or B) — both branches fully tested and ready to merge
-2. **June 14-15**: Resistance-research Wave 1-2 email execution (optional recovery window, 2.5h action)
-3. **June 18 EOD**: AAPL/MSFT retrain completion (hard deadline after P3 decision)
+**Critical Deadlines** (User Action Required):
+1. **June 15 EOD (< 24h remaining)**: Stockbot P3 decision (Option A or B) — both branches fully tested, ready to merge, detailed decision guide in `feature/p3-staging-both-options` PR
+2. **June 14-15**: Resistance-research Wave 1-2 email execution (optional recovery window, 2.5h total user action) — all templates staged in `PHASE_2_EMAIL_CAMPAIGN_MASTER_CHECKLIST.md`
+3. **June 18 EOD**: AAPL/MSFT retrain completion deadline (contingent on P3 decision by June 15)
 
-**Next Steps**:
-- **If P3 decided by June 16 00:00 UTC**: Orchestrator executes AAPL/MSFT retrains immediately (5.5–7h parallel execution)
-- **If no decision by June 16 00:00 UTC**: Orchestrator auto-activates 3 new exploration queue items (Phase 2 research + platform deployment + Phase 4 planning)
+**Active Blocks Summary**:
+- **stockbot P3 feature mismatch** (BLOCKED.md Item 4): Both Option A (7 features, 1-2h) and Option B (14 features, 2-4h, RECOMMENDED) fully staged and tested. User decision needed by June 15 EOD.
+- **resistance-research Wave 1-2 execution** (not blocked, user-triggered): All email templates and step-by-step checklists ready in `PHASE_2_EMAIL_CAMPAIGN_MASTER_CHECKLIST.md`. Optional recovery window June 14-15 if Wave 1 was missed June 9-13.
+- **systems-resilience platform deployment** (BLOCKED.md Item 3): Nextcloud vs Discourse decision pending. Both deployment specs staged and ready for post-decision execution.
+- **cybersecurity-hardening & mfg-farm** (BLOCKED.md Items 1-2): Awaiting user manual actions (Windows restart + VeraCrypt, 3D printer test). Not autonomous-blockable.
+
+**Recommended Next Actions** (Priority Order):
+1. **DECIDE P3 by June 15 EOD** — Review decision guide in `feature/p3-staging-both-options`. Orchestrator recommendation: **Option B** (14-feature parity). Both options merge-ready immediately upon decision.
+2. **DECIDE PLATFORM (systems-resilience)** — Nextcloud vs Discourse. Orchestrator recommendation: **Discourse** (8GB RAM OK, 2-3h deploy vs 4-6h). Install specs staged, ready for execution post-decision.
+3. **EXECUTE Wave 1-2 if recovery desired** — Optional. Use `PHASE_2_EMAIL_CAMPAIGN_MASTER_CHECKLIST.md`. 2.5 hours total (30-45 min Wave 1 + 45-60 min Wave 2 + email send delays).
+
+**Next Session Trigger**:
+- **If P3 decided by June 16 00:00 UTC**: Orchestrator auto-executes AAPL/MSFT retrains immediately (5.5–7h parallel execution, June 16-18 window)
+- **If platform decided**: Orchestrator executes deployment (2-3h for Discourse, can parallel with retrains)
+- **If Wave 1-2 executed**: Orchestrator monitors responses in `DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md`, Day 7 engagement checkpoint June 21
+- **If no decisions by June 16 00:00 UTC**: Orchestrator activates 3 new exploration queue items autonomously (Phase 2 research + platform deployment + Phase 4 planning)
 
 ---
 
