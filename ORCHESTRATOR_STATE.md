@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-14T20:11:57Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-14T20:28:16Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.1% (275,310 tokens) | All-models 28.9% | Reset in 28h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 3.4% (304,691 tokens) | All-models 29.8% | Reset in 28h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -77,6 +77,8 @@
 **Resolution**: [leave blank]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 3557 (18 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
@@ -108,41 +110,42 @@ User has manually lifted the pause directive early (was scheduled June 15 00:00 
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 
-**Deliverable 2 — Domain 59 (Economic Precarity) Rapid-Activation Runbook** ✅
-- 5 research zones: Dallas Fed causal evidence, OBBBA provision-to-pathway, housing instability/eviction, gig economy temporal exclusion, post-2027 reform coalition framing
-- 50+ pre-linked sources (all verified June 10 contact audit)
-- Express Senate outreach path (45 min, independent of research sprint): AFL-CIO, CBPP, NWLC with copy-paste email templates + send timing
-- 8 expert contacts verified (Chiraag Bains departure from Demos correctly routed to Taifa Smith Butler at Demos)
-- 6 contingency paths (Senate bill passage, AFL-CIO pivot, bounce recovery, CBPP fallback, Senate window closure)
-- File: `projects/resistance-research/DOMAIN_59_RAPID_ACTIVATION_RUNBOOK.md` (production-ready)
+**Success Criteria** (June 18 Phase 4 decision gate):
+- Both sessions generate ≥1 trade during June 16 market hours ✓
+- No catastrophic losses (>10% account drawdown) ✓
+- Signal quality matches backtest expectations (±5% P&L drift) ✓
+- Infrastructure stable (zero auth failures, feature pipeline working) ✓
 
-**Deliverable 3 — Domain 51/59 Sequential Activation Timing Coordination** ✅
-- Core finding: Domain 59 takes priority (Senate Finance CTC window June 25-30 closes before California ballot messaging July 1)
-- 2-day stagger: Domain 59 Day 0 (checkpoint day), Domain 51 Day 1
-- Resource allocation matrix: zero contact overlap, both domains runnable in same 7-day window
-- Minimum viable path (75 min total): 45 min Domain 59 express + 30 min Domain 51 Tier 1
-- 3 cross-domain integration points identified (FEC enforcement as structural amplifier, OBBBA narrative convergence, GOTV synthesis for AFL-CIO/MomsRising/Common Cause)
-- 5 failure mode recovery paths (one domain stalls, both stall, Senate window closes, California ballot removal, bandwidth constraint)
-- File: `projects/resistance-research/DOMAINS_51_59_SEQUENTIAL_ACTIVATION_TIMING.md` (production-ready)
+**Automation Ready**:
+```bash
+# Run pre-market validation manually at 13:00 UTC
+cat JUNE_16_PREMARKET_VALIDATION_CHECKLIST.md
 
-**Quality Metrics**:
-- Confidence: 90%+ (immediately executable, not exploratory)
-- Specificity: Named expert contacts with verification status, exact email addresses, routing corrections applied
-- Contingency depth: 3-5 failure modes per critical step
-- Sources: 65 + 50 pre-linked, all verified against prior resistance-research docs + June 10 contact audit
+# Start live monitoring at 13:30 UTC
+bash scripts/monitor_june_16_session.sh &
 
-**Business Value**:
-When user approves Phase 2 Domains 51/59 on June 17-18 Day 7 checkpoint, execution can begin immediately with zero discovery overhead. This removes decision paralysis and accelerates Phase 2 expansion to full activation timeline.
+# Complete post-market analysis at 20:00 UTC
+# Fill JUNE_16_POSTMARKET_ANALYSIS_TEMPLATE.md with queries from script
+```
 
-**Status**:
-All three files staged for commit. Committed to master with this session.
+**Infrastructure Notes**:
+- Jetson stockbot container verified operational June 14 15:15 UTC
+- 4-session config active: JPM ridge_wf + AMZN lgbm_ho + AAPL lgbm_ho + MSFT lgbm_ho
+- All tests passing (248/248 across 3 suites as of June 14)
+- P1 signal health monitor deployed and functioning (detects signal dropout, anomalies)
+- P2 quick-eval flag verified (aapl + msft retrains <5 min each)
 
-**Next Phase 2 Trigger**:
-- **User execution window**: June 14-15 23:59 UTC (Wave 1-2 email campaigns, ~75 min total)
-- **June 17-18 Day 7 checkpoint**: Coalition leverage analysis + Gist tracking review + activate Domains 51/59 if engagement metrics support (using these runbooks for instant execution)
-- **Hard deadline July 1**: Phase 2 completion by July 1 per user roadmap
+**Project Status** (post-session):
+- **stockbot**: Standing-by for June 16 market open. All preparation complete, infrastructure validated. No further autonomous work until market opens.
+- **resistance-research**: Wave 1-2 email packages ready for user execution (June 14-15 window, 75 min total)
+- **Temporary unpauses**: Expire June 16 00:00 UTC (mfg-farm, seedwarden, open-repo all blocked on user actions)
 
-**Token Usage**: ~124K (agent: general-research, 755s wall-clock for Domain research + synthesis).
+**Next Checkpoint**:
+- **June 16 13:00 UTC**: Run pre-market checklist
+- **June 16 13:30 UTC**: Market open, start live monitoring
+- **June 16 20:00 UTC**: Complete post-market analysis
+- **June 18 EOD**: Both models must validate gates OR escalate to user for Phase 4 decision
 
-**Assessment**:
-Orchestrator fully standing-by. All active work (stockbot, resistance-research) is either awaiting external triggers (June 16 market open, user Wave 1-2 execution) or blocked on user decisions (cybersecurity VeraCrypt restart, mfg-farm test print, systems-resilience platform choice). Exploration Queue item completed. Next autonomous work window: June 16 13:30 UTC market validation + subsequent Phase 2 Day 7 checkpoint routing.
+**Token Usage**: ~2,500 (prepared 3 comprehensive templates + monitoring script). Current usage: 20.1% (182,049 tokens).
+
+**Assessment**: Orchestrator has completed all autonomous preparation work for June 16 validation. Infrastructure, checklists, monitoring, and analysis templates all production-ready. System is standing-by correctly — awaiting market open trigger on June 16.
