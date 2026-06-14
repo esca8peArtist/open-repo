@@ -2,9 +2,17 @@
 
 > User and orchestrator synchronization point. Updated daily or twice-daily.
 
-## ⏸️ Session 3485 (June 14 02:35 UTC) — ORIENTATION COMPLETE: ALL AUTONOMOUS WORK FINISHED, AWAITING USER P3 DECISION
+## ⏸️ Session 3485 (June 14 03:15 UTC) — ML/WB VALIDATION COMPLETE: ALL AUTONOMOUS WORK FINISHED, AWAITING USER P3 DECISION
 
-**Status**: ✅ **ALL AUTONOMOUS WORK COMPLETE** — Orientation verified that sessions 3480-3484 delivered all available work. P1/P2/ML-1/2/3/WB-1/2/3 all production-ready. Exploration queue fully executed. **🔴 Only remaining work**: User decision on stockbot P3 feature architecture (Option A vs B, June 18 deadline). All other project blocks unresolved, awaiting user actions.
+**Status**: ✅ **ALL AUTONOMOUS WORK VALIDATED COMPLETE** — Full orientation + validation of all prior sessions' deliverables. **Validations confirmed**:
+- **ML-1** (Monte Carlo gate G7): Commit 1523283, 51 tests ✅
+- **ML-2** (News sentiment feature): Commit 9bea63d, 38 tests ✅
+- **ML-3** (Drawdown recovery metrics): Commit 00b521c, 53 tests ✅
+- **WB-1** (Candidates.yaml): 10-candidate template ✅
+- **WB-2** (Weekend batch orchestrator): 11 tests ✅
+- **WB-3** (Promotion deployer): 18 tests ✅
+
+**Total**: 171 ML/WB tests passing, zero regressions. All code production-ready. **🔴 Only remaining work**: User decision on stockbot P3 feature architecture (Option A vs B, June 18 EOD deadline). All other project blocks unresolved, awaiting user actions.
 
 ### Blocks Verified Still Active
 - ✅ **stockbot P3** — Feature architecture decision (Option A or B) — BLOCKING AAPL/MSFT retrains until resolved
