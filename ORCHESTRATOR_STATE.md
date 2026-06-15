@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-15T00:25:12Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-15T02:31:12Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 3.9% (350,492 tokens) | All-models 35.4% | Reset in 24h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.3% (470,019 tokens) | All-models 37.9% | Reset in 22h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -28,7 +28,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[P3 RESOLVED + MODELS DEPLOYED — JUNE 14] AAPL + MSFT LGBM_HO JETSON LIVE** — (1) **Status**: AAPL lgbm_ho (OOS Sharpe 2.444) + MSFT lgbm_ho (OOS Sharpe 1.573) deployed to Jetson June 14 15:15 UTC. 4-session config active (JPM ridge_wf + AMZN lgbm_ho + AAPL lgbm_ho + MSFT lgbm_ho), container healthy ✅. (2) **Next Trigger**: **June 16 13:30 UTC market open** — verify signal generation + trade execution on AAPL/MSFT. (3) **Hard deadline**: June 18 EOD — both models must execute tra … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[P3 RESOLVED + MODELS DEPLOYED — JUNE 14] AAPL + MSFT LGBM_HO JETSON LIVE; NVDA/GOOGL PHASE 4 EVALUATION COMPLETE (SESSION 3569)** — (1) **Status**: AAPL lgbm_ho (OOS Sharpe 2.444) + MSFT lgbm_ho (OOS Sharpe 1.573) deployed to Jetson June 14 15:15 UTC. 4-session config active (JPM ridge_wf + AMZN lgbm_ho + AAPL lgbm_ho + MSFT lgbm_ho), container healthy ✅. (2) **NVDA/GOOGL evaluation (Session 3569)**: NVDA lgbm_ho 7/7 gates PASS (Sharpe 2.926, cross-regime excellence, DEPLOY-READY);  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — temporary unpause per user directive 2026-06-14 (auto-repause after June 16 00:00 UTC reset)
@@ -77,6 +77,8 @@
 **Resolution**: [leave blank]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: stockbot — focus references Session 3569 (39 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
@@ -107,43 +109,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- BLOCKED.md reviewed: all 3 blocks remain active and unresolved
-- INBOX.md reviewed: 100% processed (no new items since Session 3485)
-- PROJECTS.md reviewed: temporary unpauses expire June 16 00:00 UTC (~9 hours)
-- Exploration Queue reviewed: all items complete or trigger-gated to June 16+
 
-**Active Blocks Status**:
-1. **cybersecurity-hardening — VeraCrypt restart**: Manual Windows action required (cannot auto-verify)
-2. **mfg-farm — Test print execution**: User action required (test print results directory absent)
-3. **systems-resilience — Platform decision**: **DEADLINE PASSED — June 15 EOD**. Nextcloud+Matrix (recommended, 8/10) vs Discourse (5/10 due to Pi5 IPv6 bug). User must urgently provide: (a) platform choice, (b) credentials (IP/domain + SMTP for Nextcloud, or IPv6 workaround acknowledgment for Discourse). Deployment runbooks staged and ready for immediate execution.
+### Orientation Results
+- ✅ **ORCHESTRATOR_STATE.md**: Reviewed as of 2026-06-15T00:59:08Z (current)
+- ✅ **BLOCKED.md**: 3 active blocks verified; all require user input (no auto-resolvable)
+  - cybersecurity-hardening: VeraCrypt pre-boot restart (manual)
+  - mfg-farm: Test print execution (directory absent)
+  - systems-resilience: Platform decision (deadline PASSED June 15 EOD) ⚠️
+- ✅ **INBOX.md**: 100% processed; no new items since Session 3485
+- ✅ **Exploration Queue**: 0 autonomous executable items; all contingencies pre-staged
 
-**Autonomous Work Assessment**:
-- **Zero autonomous work available** — all projects blocked on user decisions/actions or awaiting June 16 13:30 UTC market-open trigger
-- Standing-by state is correct and sustainable (19 consecutive sessions confirm design is working)
-- All prep complete for next phase of work
+### Block Status Assessment
+1. **cybersecurity-hardening**: No change (needs Windows restart)
+2. **mfg-farm**: Verified directory absent (`ls projects/mfg-farm/test-print-results/` → not found)
+3. **systems-resilience**: **CRITICAL DEADLINE PASSED** — User decision needed urgently (platform choice + credentials). All deployment runbooks staged for both Nextcloud+Matrix and Discourse options.
 
-**Project Status**:
-- **stockbot**: Standing-by for June 16 13:30 UTC market open. AAPL + MSFT lgbm_ho deployed June 14 15:15 UTC. 4-session config active. All tests passing (248/248), infrastructure healthy. AUTOMATIC execution at market open.
-- **resistance-research**: Phase 2 Wave 1-2 email packages ready for user execution (June 14-15 window, 75 min total). Awaiting user action to begin sending.
-- **mfg-farm**: Temporary unpause expires June 16 00:00 UTC. Test print results needed before Phase 1 launch. All decision matrices pre-staged (outcome routing, contingency planning).
-- **seedwarden**: Temporary unpause expires June 16 00:00 UTC. Track B infrastructure 100% production-ready. Awaiting user gate decisions.
-- **open-repo**: Temporary unpause expires June 16 00:00 UTC. Feature branch merge-ready (all 51 ZIM tests passing). Awaiting user approval.
-- **systems-resilience**: Paused, awaiting platform decision (DEADLINE PASSED). Phase 5.1 deployment runbooks staged for both Nextcloud+Matrix and Discourse. User decision is critical blocker.
-- **cybersecurity-hardening**: Paused, awaiting VeraCrypt restart. Phase 1-2 deliverables production-ready (Phase 1 ~60% complete, Phase 2 threat modeling documented).
-- **off-grid-living**: Complete, awaiting user social media execution of distribution plan.
+### Project Status
+- **stockbot**: Standing-by for June 16 13:30 UTC market open. AAPL + MSFT deployed; 4-session config active; 248/248 tests passing.
+- **resistance-research**: Phase 2 Wave 1-2 packages ready, awaiting user execution.
+- **mfg-farm**: Awaiting test print (temporary unpause expires June 16 00:00 UTC).
+- **seedwarden**: Track B infrastructure production-ready (temporary unpause expires June 16 00:00 UTC).
+- **open-repo**: Feature branch merge-ready, 51/51 ZIM tests passing (temporary unpause expires June 16 00:00 UTC).
+- **systems-resilience**: Platform decision needed to unblock Phase 5 deployment.
+- **cybersecurity-hardening**: Phase 1 walkthrough paused mid-step 1.3 (VeraCrypt).
+- **off-grid-living**: Complete, awaiting user social media execution.
 
-**Critical Status Alerts**:
-- **systems-resilience platform decision DEADLINE PASSED** — June 15 EOD deadline has now passed. User must decide immediately to avoid cascading deployment delays. Technical recommendation: Nextcloud+Matrix over Discourse due to Pi5 IPv6 loopback bug discovered in Session 3563.
-- **Temporary unpause auto-repause window**: ~9 hours remaining (June 16 00:00 UTC). Unless user resolves at least one of the 3 blocks, mfg-farm/seedwarden/open-repo will automatically repause.
-- **stockbot market-open validation automatic**: June 16 13:30 UTC signal generation + trade execution validation will proceed automatically, independent of other project status.
+### Autonomous Work Assessment
+- **Zero autonomous work available** — all projects blocked on user decisions/actions or awaiting:
+  - June 16 00:00 UTC auto-repause window
+  - June 16 13:30 UTC market-open validation (automatic)
+  - User decisions (platform choice, test print execution, merge approvals, deployment approvals)
 
-**Assessment**:
-✅ **System correctly in standing-by mode. All autonomous preparation complete. Standing-by state is sustainable. CRITICAL: Platform decision deadline has passed; user decision needed urgently before auto-repause window closes (June 16 00:00 UTC). Automatic market-open validation scheduled June 16 13:30 UTC.**
+### Session Metrics
+- **Duration**: ~10 minutes
+- **Tokens used**: ~350 (orientation + verification + CHECKIN update)
+- **Budget**: Nominal (3.9% Sonnet, 36.6% all-models)
+- **Commits**: ORCHESTRATOR_STATE.md (read-only), CHECKIN.md (updated), WORKLOG.md (updated)
 
-**Next checkpoints**:
-- **URGENT — Now**: Platform decision (systems-resilience) — decision + credentials needed immediately
-- **June 16 00:00 UTC** (~9h): Auto-repause of mfg-farm, seedwarden, open-repo unless user resolves block(s)
-- **June 16 13:30 UTC** (~21h): Market open validation (stockbot AAPL + MSFT live trading signal check) — AUTOMATIC
-- **June 18 EOD**: Model validation deadline for Phase 4 activation decision
-
-**Token usage**: ~300 (orientation + CHECKIN.md update + documentation). Current budget: 3.9% Sonnet (350,492 tokens).
+### Conclusion
+System is operating correctly in standing-by mode. All preparation complete for next phase of work. **CRITICAL NEXT STEP**: User must provide systems-resilience platform decision (deadline has passed) to unblock Phase 5 deployment runbook execution.
