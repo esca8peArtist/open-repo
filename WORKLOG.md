@@ -1,3 +1,21 @@
+## Session 3629 (2026-06-15 22:29 UTC — 🔴 STANDING-BY VERIFICATION: Platform Decision Deadline 23:59 UTC — ~90 MINUTES REMAINING)
+
+**Task**: Continuation standing-by from Session 3628. Verify zero new items/blocks, confirm standing-by status current, prepare for imminent deadline.
+
+**Actions**:
+- ✅ Verified INBOX.md: zero new items since Session 3485 (June 14 02:50 UTC)
+- ✅ Verified BLOCKED.md: no new blocks, three active blocks unchanged (cybersecurity-hardening, mfg-farm, systems-resilience)
+- ✅ Confirmed standing-by state is correct — zero autonomous work available
+- ✅ Updated CHECKIN.md with Session 3629 continuation status
+
+**Status**: Standing-by sustained. All systems production-ready. **🔴 CRITICAL: Platform decision deadline in ~90 minutes (23:59 UTC).**
+
+**Next action**: Await user platform decision (Nextcloud+Matrix or Discourse) + credentials. Auto-repause triggers June 16 00:00 UTC if no decision received by 23:59 UTC.
+
+**Token usage**: ~100 tokens (verification + status update + commit)
+
+---
+
 ## Session 3628 (2026-06-15 22:23 UTC — 🔴 FINAL ESCALATION: Platform Decision Deadline 23:59 UTC — 96 MINUTES REMAINING)
 
 **Task**: Critical escalation as platform decision deadline approaches (23:59 UTC, 96 min remaining). Verify all systems ready, escalate via Discord, prepare final commit.

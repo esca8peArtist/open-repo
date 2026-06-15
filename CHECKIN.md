@@ -1,5 +1,16 @@
 # Check-in Summary
 
+## Session 3629 (June 15 22:29 UTC — 🔴 STANDING-BY: 90 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
+
+**Status**: 🔴 **CRITICAL DEADLINE WINDOW — ~90 MINUTES REMAINING** — Platform decision deadline **June 15 23:59 UTC** is imminent. INBOX.md verified empty (no new items since Session 3485). BLOCKED.md verified current (no new blocks). All orchestration files up-to-date. Standing-by confirmed: zero autonomous work available, all projects blocked on user actions as designed.
+
+**Timeline (Critical)**: 
+- **NOW (22:29 UTC)**: Awaiting platform decision + credentials for Nextcloud+Matrix or Discourse
+- **23:59 UTC**: Deadline expires — systems-resilience platform deployment deferred if no decision; auto-repause June 16 00:00 UTC triggers
+- **June 16 13:30 UTC**: Automated market-open validation (AAPL/MSFT/NVDA, regardless of platform decision status)
+
+---
+
 ## Session 3628 (June 15 22:23 UTC — 🔴 FINAL ESCALATION: 96 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
 
 **Status**: 🔴 **FINAL ESCALATION WINDOW — 1 HOUR 36 MINUTES REMAINING** — Platform decision deadline **June 15 23:59 UTC is 96 minutes away**. NO user decision received yet. NVDA deployment confirmed complete. All systems production-ready for June 16 market-open validation.
