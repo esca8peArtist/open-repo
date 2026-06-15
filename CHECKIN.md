@@ -1,5 +1,24 @@
 # Check-in Summary
 
+## Session 3626 (June 15 22:08 UTC — 🔴 STANDING-BY + CRITICAL DEADLINE ~1h 51m REMAINING)
+
+**Status**: 🔴 **CRITICAL DEADLINE WINDOW — ~1h 51m REMAINING** — NVDA deployment completed (confirmed via git commit cb2c4bda). Platform decision deadline **June 15 23:59 UTC**. Zero autonomous work available until user decision received. All projects appropriately blocked on clearly-defined user actions.
+
+### Session 3626 — Work Performed
+
+**What was accomplished**:
+- ✅ Verified session 3625 NVDA deployment execution (git log: cb2c4bda "NVDA deployment executed")
+- ✅ Confirmed zero new INBOX items since session 3485 (June 14 02:50 UTC)
+- ✅ Verified all projects correctly blocked on user actions (no additional autonomous scope identified)
+- ✅ Confirmed Exploration Queue has 3+ active items queued for June 16-20 (Items 104, 105, 109)
+- ✅ Reconfirmed standing-by state is correct by design
+
+**Status**: Standing-by sustained. NVDA deployment complete. All systems ready for June 16 market-open validation (13:30 UTC). Auto-repause triggers June 16 00:00 UTC unless blocking items resolved.
+
+**Critical action required**: **Platform decision (Nextcloud+Matrix or Discourse) MUST be provided within ~1h 51 minutes** (deadline 23:59 UTC today). This is the only remaining decision blocking any autonomous work.
+
+---
+
 ## Session 3625 (June 15 22:02 UTC — 🔴 DEPLOYMENT VERIFICATION + CRITICAL DEADLINE ~2 HOURS)
 
 **Status**: 🔴 **CRITICAL DEADLINE IMMINENT — ~1h 57m REMAINING** — NVDA deployment completed or executing (DEPLOY_READY file removed). Platform decision deadline **June 15 23:59 UTC**. No user decision received yet. Auto-repause June 16 00:00 UTC unless platform decision provided.
