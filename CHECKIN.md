@@ -1,3 +1,49 @@
+# Check-in Summary — Session 3605 (June 15 01:00 UTC — Standing-By Verification, 25th Consecutive)
+
+## Session 3605 — Orchestrator Standing-By Verification (25th Consecutive)
+
+**Status**: ✅ **STANDING-BY CONFIRMED SUSTAINABLE**. System verified in correct standing-by mode at June 15 01:00 UTC. All three active blocks remain unresolved and require user input; no autonomous work available; exploration queue fully prepped; standing-by state is sustainable and working as designed.
+
+### Orientation Summary This Session
+
+- **All three blocks verified unresolved** (no auto-resolution possible):
+  - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual Windows action only)
+  - **mfg-farm**: Test print execution (test-print-results/ directory absent; user action required)
+  - **systems-resilience**: Platform decision — **⚠️ DEADLINE PASSED at June 15 EOD**. Urgent: User must provide (1) platform choice [Nextcloud+Matrix recommended 8/10 vs Discourse 5/10], (2) credentials [IP/domain + SMTP for Nextcloud, or IPv6 workaround acknowledgment for Discourse]
+
+- **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC).
+
+- **Exploration Queue**: Zero autonomous executable items. All contingencies pre-staged.
+
+- **Project Assessment**:
+  - **stockbot**: Standing-by for June 16 13:30 UTC market open. AAPL + MSFT lgbm_ho deployed June 14 15:15 UTC; 4-session config active; all tests passing (248/248); automatic validation triggered at market open.
+  - **resistance-research**: Phase 2 Wave 1-2 email packages production-ready. Awaiting user execution window June 14-15 (75 min total). No autonomous work.
+  - **mfg-farm**: Awaiting test print execution (user action). Phase 1 launch + Phase 2 strategy production-ready.
+  - **seedwarden**: Temporary unpause expires June 16 00:00 UTC. Track B infrastructure 100% production-ready. Awaiting user gate decisions.
+  - **open-repo**: Temporary unpause expires June 16 00:00 UTC. Feature branch merge-ready (51/51 ZIM tests passing). Awaiting user merge approval.
+  - **systems-resilience**: Paused. Awaiting platform decision (deadline PASSED). Phase 5 deployment runbooks staged for both Nextcloud+Matrix and Discourse.
+  - **cybersecurity-hardening**: Paused. Awaiting VeraCrypt restart. Phase 1 ~60% complete; Phase 2 threat modeling documented.
+
+### Critical Timeline & Next Actions
+
+**IMMEDIATE (NOW)**:
+- ⚠️ **systems-resilience platform decision URGENTLY NEEDED** — deadline has passed June 15 EOD
+  - **Recommend**: Nextcloud+Matrix (8/10: Pi5-friendly, 4-6h deployment, prerequisites staged)
+  - **Action needed**: Platform choice + credentials (see BLOCKED.md Item 3 for details)
+
+**Upcoming Gates** (auto-gated, not blocked):
+- **June 16 00:00 UTC** (~23h): Auto-repause of mfg-farm, seedwarden, open-repo unless user resolves blocking items
+- **June 16 13:30 UTC** (market open, ~20h): Automatic stockbot AAPL + MSFT live-trading signal validation
+- **June 18 EOD**: AAPL + MSFT retrain deadline
+
+### Usage & Budget
+
+- **Current session**: ~350 tokens (orientation + block verification + CHECKIN update)
+- **Weekly budget**: Sonnet 3.9% (350,492 tokens), All-models 36.6%
+- **Status**: Unconstrained. No throttle/pause active.
+
+---
+
 # Check-in Summary — Session 3604 (June 15 00:45 UTC — Standing-By Verification, 24th Consecutive)
 
 ## Session 3604 — Orchestrator Standing-By Verification (24th Consecutive)
