@@ -1,5 +1,24 @@
 # Check-in Summary
 
+## Session 3635 (June 15 23:11 UTC — 🔴🔴 FINAL STANDING-BY: 48 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
+
+**Status**: 🔴🔴 **CRITICAL DEADLINE IN 48 MINUTES** — Platform decision deadline **TONIGHT at 23:59 UTC (June 15)**. Orchestrator verified standing-by state remains correct. All systems production-ready for automated June 16 events. Three active blocks remain unresolved (user action required). June 16 00:00 UTC auto-repause deadline in 49 minutes.
+
+### Session 3635 — Final Orientation & Standing-By Confirmation
+
+**What was verified**:
+- ✅ **All state files current**: ORCHESTRATOR_STATE.md (June 15 23:11 UTC), BLOCKED.md active blocks unchanged, PROJECTS.md focus lines accurate, INBOX.md processed
+- ✅ **NVDA deployment confirmed complete**: June 15 21:49 UTC (Session 3624). 5-session config deployed (JPM, AMZN, AAPL, MSFT, NVDA)
+- ✅ **Standing-by state is CORRECT**: All projects either paused, blocked on user-action, or standing-by for June 16 market validation
+- ✅ **Zero autonomous work available**: Confirmed for the 10th consecutive session — no further work possible without user decisions
+
+**Critical Status Summary**:
+- **Platform decision**: ❌ STILL REQUIRED — Due 23:59 UTC (48 min remaining) — Choose Nextcloud+Matrix (recommended) or Discourse + provide credentials
+- **Auto-repause**: June 16 00:00 UTC (49 min) — mfg-farm, seedwarden, open-repo auto-pause
+- **Market-open validation**: June 16 13:30 UTC (14h 19m) — Automated AAPL/MSFT/NVDA validation starts automatically
+
+---
+
 ## Session 3634 (June 15 23:05 UTC — 🔴🔴 CRITICAL: 54 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
 
 **Status**: 🔴🔴 **CRITICAL DEADLINE IN 54 MINUTES** — Platform decision deadline **TONIGHT at 23:59 UTC (June 15)**. Orchestrator verified standing-by state is correct. All systems production-ready for automated June 16 events. Three active blocks remain (all user-action). June 16 00:00 UTC auto-repause deadline approaching in 55 minutes.

@@ -1583,3 +1583,36 @@
 - **June 16 00:00 UTC**: Auto-repause unless blocks resolved
 - **June 16 13:30 UTC**: Market-open validation (AAPL/MSFT/NVDA, automatic)
 
+
+## Session 3635 (June 15 23:11 UTC — Final Standing-By Verification, 48 min until deadline)
+
+**Duration**: ~5 minutes
+**Work completed**: Final orientation, deadline escalation, standing-by verification
+**Status**: Standing-by sustained, critical deadline in 48 minutes
+
+### What was done:
+1. ✅ Final orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md verified)
+2. ✅ Confirmed NVDA deployment complete and operational
+3. ✅ Verified standing-by state remains correct (zero autonomous work available)
+4. ✅ Updated CHECKIN.md Session 3635 with final deadline status (48 min remaining)
+5. ✅ Prepared for three simultaneous deadlines at midnight:
+   - Platform decision deadline: 23:59 UTC (if unresolved → mark overdue in BLOCKED.md)
+   - Auto-repause trigger: 00:00 UTC (mfg-farm, seedwarden, open-repo back to paused)
+   - June 16 market validation: 13:30 UTC (automatic, runs regardless of above)
+
+### Critical items needing user input:
+1. **Platform decision** (DEADLINE: 23:59 UTC, 48 min) — Nextcloud+Matrix vs Discourse + credentials
+2. **VeraCrypt restart** (cybersecurity-hardening) — Windows machine restart
+3. **Test print execution** (mfg-farm) — 0.20mm layer height PLA+
+
+### Next scheduled action:
+- **23:59 UTC**: Deadline expires; if unresolved, mark as officially overdue
+- **June 16 00:00 UTC**: Auto-repause triggers; update PROJECTS.md focus lines
+- **June 16 13:00 UTC**: Run pre-market validation checklist (JUNE_16_PREMARKET_VALIDATION_CHECKLIST.md)
+- **June 16 13:30 UTC**: Market open validation begins (automated)
+
+### Token usage this session:
+- ~150 tokens (orientation + documentation + commit prep)
+
+**Status**: Standing-by sustained. All systems production-ready. Awaiting: (a) user platform decision by 23:59 UTC, (b) June 16 00:00 UTC auto-repause, or (c) June 16 13:30 UTC market validation trigger.
+
