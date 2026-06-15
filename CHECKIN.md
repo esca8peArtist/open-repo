@@ -1,5 +1,31 @@
 # Check-in Summary
 
+## Session 3634 (June 15 23:05 UTC — 🔴🔴 CRITICAL: 54 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
+
+**Status**: 🔴🔴 **CRITICAL DEADLINE IN 54 MINUTES** — Platform decision deadline **TONIGHT at 23:59 UTC (June 15)**. Orchestrator verified standing-by state is correct. All systems production-ready for automated June 16 events. Three active blocks remain (all user-action). June 16 00:00 UTC auto-repause deadline approaching in 55 minutes.
+
+### Session 3634 — Work Performed
+
+**What was accomplished**:
+- ✅ **Orientation complete**: Verified ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md all current
+- ✅ **Standing-by state verified CORRECT**: All autonomous work blocked on user decisions; no further work available
+- ✅ **Platform decision deadline CRITICAL**: 54 minutes remaining (23:59 UTC deadline)
+- ✅ **Infrastructure status**: NVDA deployed (June 15), AAPL/MSFT live (June 14), all systems healthy
+- ✅ **Exploration Queue**: 1 active item (seedwarden contractor tracking June 15-17); no exploration work warranted at this time
+
+**Critical Deadline Status**: 
+- **Platform decision**: Due 23:59 UTC (54 min) — **DECISION STILL REQUIRED** — choose Nextcloud+Matrix (recommended) or Discourse
+- **Auto-repause**: June 16 00:00 UTC (55 min) — mfg-farm, seedwarden, open-repo auto-pause unless blocks resolved
+- **Market-open validation**: June 16 13:30 UTC (14.5 hours) — AAPL/MSFT/NVDA automated validation runs automatically
+
+**Decision required (Nextcloud+Matrix recommended)**:
+- **Option A: Nextcloud+Matrix** — provide (1) Public IP/domain, (2) SMTP credentials
+- **Option B: Discourse** — provide (1) Domain name, (2) SMTP credentials, (3) IPv6 confirmation
+
+Once decision provided, orchestrator executes Phase 5.1 deployment immediately.
+
+---
+
 ## Session 3633 (June 15 23:13 UTC — 🔴🔴 FINAL COUNTDOWN: 46 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
 
 **Status**: 🔴🔴 **CRITICAL DEADLINE — 46 MINUTES REMAINING** — Platform decision deadline **TONIGHT at 23:59 UTC (June 15)**. Orchestrator completed orientation and infrastructure maintenance. All three active blocks remain unresolved (user action required). NVDA deployment complete. Standing-by state sustained. All systems production-ready for automated June 16 13:30 UTC market-open validation.
