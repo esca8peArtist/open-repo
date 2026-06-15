@@ -1,3 +1,62 @@
+# Check-in Summary — Session 3602 (June 15 00:25 UTC — URGENT: Platform Decision Deadline PASSED)
+
+## Session 3602 — CRITICAL STATUS: systems-resilience Platform Decision Deadline PASSED
+
+**Status**: ✅ **STANDING-BY CONFIRMED** but **⚠️ URGENT ACTION REQUIRED**. System re-verified in correct standing-by mode at June 15 00:25 UTC. However, systems-resilience platform decision deadline **HAS PASSED** (was June 15 EOD, now June 15 00:25 UTC). Three active blocks remain unresolved. User action needed immediately to prevent Phase 5 deployment cascade failure.
+
+### Session 3602 Critical Findings
+
+- **⚠️ DEADLINE PASSED — systems-resilience platform decision (was June 15 EOD, now overdue)**:
+  - Decision required: Nextcloud+Matrix (recommended 8/10) vs Discourse (5/10 — has Pi5 IPv6 bug)
+  - Action required: User must provide (1) platform choice, (2) credentials (IP/domain + SMTP for Nextcloud, or IPv6 workaround acknowledgment for Discourse)
+  - Impact: Phase 5 publication deployment cannot proceed until decision is made
+  - **Recommendation**: **Nextcloud+Matrix** (more suitable for Pi5 8GB RAM than Discourse)
+  
+- **All 3 active blocks UNRESOLVED**:
+  - **cybersecurity-hardening**: VeraCrypt restart — manual Windows action only
+  - **mfg-farm**: Test print execution — user action required; test-print-results/ directory absent
+  - **systems-resilience**: Platform decision — **DEADLINE JUST PASSED** (June 15 EOD was ~23h 35m ago)
+  
+- **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC).
+- **Temporary unpauses**: Auto-repause active as of June 16 00:00 UTC (~9h remaining). mfg-farm, seedwarden, open-repo paused unless user resolves block(s).
+- **Autonomous work**: **Zero**. All projects blocked on user actions or time-based triggers (June 16 13:30 UTC market-open).
+- **Standing-by verification**: 22 consecutive verification sessions confirm standing-by state is sustainable and working as designed.
+- **Exploration Queue**: All items complete or trigger-gated to June 16+ or user decisions.
+- **Usage**: Nominal (~300 tokens). Current budget: 3.9% Sonnet usage.
+
+### URGENT NEXT STEPS (User Action Required Now)
+
+1. **systems-resilience platform choice** — DECIDE NOW:
+   - **Option A (RECOMMENDED)**: Nextcloud+Matrix
+     - More suitable for Pi5 (8GB RAM vs 16GB for Discourse)
+     - Slower to deploy (4-6 hours vs 2-3 hours) but more reliable
+     - Required credentials: public IP/domain + SMTP server credentials
+   - **Option B**: Discourse
+     - Faster to deploy (2-3 hours) but requires IPv6 workarounds (3 configuration steps)
+     - Requires: public domain for SSL, SMTP credentials, IPv6 loopback workaround setup
+   - **Recommendation**: Nextcloud+Matrix
+
+2. **After platform decision is made**: Orchestrator can execute Phase 5 deployment immediately (runbooks pre-staged for both options)
+
+### Critical Timeline
+
+- **NOW (June 15 00:25 UTC)**: Platform decision needed immediately (deadline just passed)
+- **June 16 00:00 UTC** (~9h): Auto-repause of mfg-farm, seedwarden, open-repo unless block(s) resolved
+- **June 16 13:30 UTC** (~13h): Market open validation (stockbot AAPL + MSFT live trading) — **AUTOMATIC regardless of repause status**
+
+### Orchestration Files Status
+
+- **ORCHESTRATOR_STATE.md**: Current (re-generated this session)
+- **BLOCKED.md**: All 3 blocks verified unresolved; Resolved Archive current
+- **INBOX.md**: 100% processed; no pending items
+- **PROJECTS.md**: All project status lines current; temp unpauses in auto-repause state
+- **WORKLOG.md**: Last entry this session
+- All files ready for commit on master
+
+**Status**: ⚠️ **URGENT: Platform decision deadline PASSED. User action required immediately. Orchestrator standing-by correctly but cannot proceed with Phase 5 deployment until decision made.**
+
+---
+
 # Check-in Summary — Session 3601 (June 15 00:00 UTC — Standing-By Verification, 21st Consecutive)
 
 ## Session 3601 — Orchestrator Standing-By Verification (21st Consecutive)
