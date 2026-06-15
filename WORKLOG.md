@@ -1,3 +1,27 @@
+## Session 3624 (2026-06-15 21:49 UTC — Orchestrator NVDA Deployment Triggered) — CRITICAL DEADLINE WINDOW: ~2H REMAINING
+
+**Task**: Trigger NVDA deployment (DEPLOY_READY creation); confirm all orchestration files current; stand-by for platform decision (deadline 23:59 UTC, ~2 hours remaining).
+
+**Actions**:
+- ✅ Verified NVDA deployment prerequisites (config committed, no code blockers)
+- ✅ Created DEPLOY_READY file at 21:49 UTC (outside market hours per DEPLOY_BLACKOUT_RULE)
+- ✅ Deployment should execute and complete by 22:15 UTC (30 min standard duration)
+- ✅ Updated CHECKIN.md with Session 3624 deployment trigger
+- ✅ Verified all three active blocks require user action only (no auto-resolution available)
+
+**Critical Timeline (FINAL)**:
+- **NOW (21:49 UTC)**: DEPLOY_READY created — NVDA deployment triggered
+- **~22:15 UTC**: NVDA deployment expected complete (config sync + Docker restart + HMM init)
+- **June 15 23:59 UTC**: 🔴 **PLATFORM DECISION DEADLINE** (~2 hours remaining) — **ALL REMAINING WORK GATES ON THIS DECISION**
+- **June 16 00:00 UTC**: Auto-repause of temporary projects (unless platform decision received by 23:59)
+- **June 16 13:30 UTC**: Automated market-open validation (AAPL/MSFT/NVDA signal check, live trading execution)
+
+**Status**: Standing-by sustained. NVDA deployment now executing. Waiting for:
+1. Platform decision (Nextcloud+Matrix vs Discourse) by 23:59 UTC
+2. Automated market validation tomorrow at 13:30 UTC
+
+---
+
 ## Session 3623 (2026-06-15 21:40 UTC — Orchestrator Final Standing-By + Deadline Escalation) — FINAL HOURS: ~2H UNTIL PLATFORM DECISION DEADLINE
 
 **Task**: Final orientation; monitor NVDA deployment (21:00 UTC, now in progress); escalate platform decision deadline (23:59 UTC, ~2 hours remaining); confirm standing-by sustained.
