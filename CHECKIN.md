@@ -1,5 +1,66 @@
 # Check-in Summary
 
+## Session 3622 (June 15 04:41 UTC — 🔴 CRITICAL DEADLINE ESCALATION — Platform Decision Overdue, Standing-By Sustained)
+
+**Status**: ⚠️ **STANDING-BY SUSTAINED WITH CRITICAL ESCALATION** — Platform decision deadline is **TODAY EOD (June 15 23:59 UTC, ~19.5 hours remaining)**. No user decision received yet. NVDA deployment staged for 21:00 UTC today. Temporary unpauses auto-repause June 16 00:00 UTC unless user resolves blocking items.
+
+### Session 3622 Orientation & Assessment
+
+**Critical Escalation**:
+- 🔴 **DEADLINE TODAY EOD**: systems-resilience platform decision was due June 8, rescheduled to June 15 EOD — **still unresolved, time-critical**
+- 🔴 **BLOCKING ITEMS**: 3 active blocks unresolved (all require user action):
+  1. **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual Windows action)
+  2. **mfg-farm**: Test print execution (user action required)
+  3. **systems-resilience**: Platform decision (Nextcloud+Matrix vs Discourse) — **DEADLINE TODAY EOD**
+- ⏳ **Auto-repause sequence**: June 16 00:00 UTC (~19.5 hours), unless user resolves one or more blocks by then
+
+**State Verification**:
+- ✅ ORCHESTRATOR_STATE.md: Current (auto-generated 04:41 UTC)
+- ✅ BLOCKED.md: 3 active blocks verified unresolved
+  - All blocks require manual user action (no orchestrator auto-resolution available)
+- ✅ INBOX.md: 100% processed (last new item June 14 02:50 UTC)
+- ✅ PROJECTS.md: All status lines current
+- ✅ Exploration Queue: 15+ items pre-staged, all contingent on June 16+ triggers or user decisions
+- ✅ Usage: Sonnet 5.3%, all-models 41.4%, reset in 19 hours
+
+**Autonomous Work Assessment**:
+- **Zero autonomous work available** — confirmed by:
+  1. All project goals re-read; unfinished scope but all gated on user decisions/external events
+  2. Exploration Queue reviewed; all items either completed or trigger-dependent (Wave 1-2, market open, user decisions)
+  3. No research/analysis work improves standing-by state; all prep complete
+
+### CRITICAL: Items Requiring User Action TODAY
+
+1. **🔴 URGENT — Platform Decision (deadline June 15 EOD, ~19.5 hours remaining)**
+   - **Choose one**:
+     - **Option A: Nextcloud+Matrix** (RECOMMENDED — 8/10 score)
+       - Pi5-friendly (8GB RAM vs 16GB for Discourse)
+       - 4-6 hour deployment
+       - Offline-capable, E2E encryption
+       - Requires: public IP/domain + SMTP credentials
+     - **Option B: Discourse** (5/10 score)
+       - Faster deployment (2-3 hours)
+       - Has Pi5 IPv6 loopback bug (meta.discourse.org #296408)
+       - Requires: domain for SSL + SMTP + IPv6 workaround confirmation
+   
+   - **Action required**: Reply with platform choice + credentials
+   - **Once provided**: Orchestrator executes deployment June 15-16 (4-6h for Nextcloud, 2-3h for Discourse)
+
+### Timeline & Next Actions
+
+**Today (June 15)**:
+- **by 23:59 UTC**: User provides platform decision + credentials (deadline)
+- **21:00 UTC**: NVDA deployment executes automatically (5-session config, no user action needed)
+- **21:30 UTC**: NVDA deployment expected complete, ready for market
+
+**Tomorrow (June 16)**:
+- **00:00 UTC**: Auto-repause of temporary projects (mfg-farm, seedwarden, open-repo) UNLESS user resolves block(s) by then
+- **13:30 UTC**: Market-open validation (AAPL/MSFT/NVDA signal check, automatic regardless of repause status)
+
+**June 18 EOD**: Hard deadline for AAPL/MSFT model validation (both must execute trades validating 6/7 gates)
+
+---
+
 ## Session 3621 (June 15 04:34 UTC — Continuation & Standing-By Confirmation)
 
 **Status**: ✅ **STANDING-BY SUSTAINED — NVDA DEPLOYMENT 16.5 HOURS AWAY** — No autonomous work performed (standing-by correct). Platform decision required TODAY by EOD.
