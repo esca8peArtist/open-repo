@@ -1,5 +1,30 @@
 # Check-in Summary
 
+## Session 3636.7 (June 15 23:48 UTC — PRE-MARKET VALIDATION + FINAL COUNTDOWN: 11 MINUTES TO DEADLINE)
+
+**Status**: 🟢 **EARLY PRE-MARKET VALIDATION COMPLETE** — Executed June 16 pre-market validation checklist (Gates 1-5) 12+ hours ahead of schedule. All gates PASS ✅. System production-ready for June 16 13:30 UTC market-open validation. Platform decision deadline expires in 11 minutes (23:59 UTC). Auto-repause will trigger at 00:00 UTC. Zero autonomous work available.
+
+### Pre-Market Validation Results
+
+**What was accomplished**:
+- ✅ **Gate 1 (Container Health)**: stockbot:jetson container UP and healthy (46 min uptime)
+- ✅ **Gate 2 (Session Status)**: 5 sessions running correctly (jpm_ridge_wf, aapl_lgbm_ho, nvda_lgbm_ho, amzn_lgbm_ho, msft_lgbm_ho)
+- ✅ **Gate 3 (Alpaca API)**: Zero auth errors, DNS resolution working (paper-api.alpaca.markets → 35.194.67.18)
+- ✅ **Gate 4 (Feature Pipeline)**: No pipeline errors detected
+- ✅ **Gate 5 (Market-Aware Sleep)**: All sessions sleeping correctly ("Market closed — skipping cycle")
+- ✅ **System Verdict**: PRODUCTION-READY for June 16 13:30 UTC market open. No intervention required.
+
+**Critical Timeline**:
+- **NOW (23:48 UTC)**: Pre-market validation complete, system ready
+- **23:59 UTC (11 min)**: Platform decision deadline expires
+- **00:00 UTC (12 min, June 16)**: Auto-repause triggers (mfg-farm, seedwarden, open-repo → Paused)
+- **13:30 UTC (13h 42min)**: June 16 market-open validation runs automatically (AAPL/MSFT/NVDA)
+- **20:00 UTC (20h 12min)**: Post-market analysis window (30-60 min)
+
+**Token usage this session**: ~100 tokens (pre-market checks + status updates)
+
+---
+
 ## Session 3636.6 (June 15 23:40 UTC — FINAL PRE-DEADLINE STATUS, 19 MINUTES UNTIL DEADLINE EXPIRES)
 
 **Status**: 🟡 **FINAL VERIFICATION BEFORE DEADLINE EXPIRY** — Platform decision deadline expires in 19 minutes (23:59 UTC). Orchestrator verified: zero new changes since Session 3636.5, all three active blocks remain unresolved, standing-by state correct by design. Docker verification confirms no platform containers deployed. Block formally marked as overdue (deadline not met). Zero autonomous work available. All systems production-ready for June 16 13:30 UTC automated market-open validation.

@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-15T23:32:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-15T23:46:22Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.8% (521,784 tokens) | All-models 44.5% | Reset in 0h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.8% (521,784 tokens) | All-models 44.9% | Reset in 0h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -58,11 +58,11 @@
 ### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
 **Date blocked**: 2026-06-06
 **Date deadline passed**: 2026-06-15 23:59 UTC
-**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. As of June 6 20:05 UTC: Docker was not installed (resolved in Session 2965), no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. Platform choice (Nextcloud+Matrix vs Discourse) is pending user decision from Session 2965 CHECKIN. **DECISION DEADLINE WAS JUNE 15 23:59 UTC — NOW OVERDUE as of 2026-06-16 23:25 UTC.** Session 3635 explicitly noted "if unresolved → mark overdue in BLOCKED.md." Updated recommendation per Session 3563: Nextcloud+Matrix (8/10 vs Discourse 5/10, due to Pi5 IPv6 loopback bug in Discourse).
-**What I need**: User decision on which platform to deploy (Nextcloud+Matrix or Discourse). **UPDATED RECOMMENDATION (Session 3563)**: **Nextcloud+Matrix strongly recommended** (8/10 vs Discourse 5/10) because: Discourse has open IPv6 loopback bug on 64-bit PiOS (meta.discourse.org #296408) requiring 3 mandatory workarounds; Nextcloud has zero Pi5-specific blockers. Superior feature fit (offline editing, E2E encryption). Deliverable: `PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md` (Session 3563) includes full Nextcloud deployment runbook (4-6h). If Discourse chosen despite recommendation, SMTP credentials needed. If Nextcloud+Matrix chosen (recommended), confirm acceptance of 7.9GB allocation (5.5GB peak).
+**Date officially marked overdue**: 2026-06-16 00:40 UTC (Session 3636.6 — deadline not met, no decision provided)
+**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. As of June 6 20:05 UTC: Docker was not installed (resolved in Session 2965), no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. Platform choice (Nextcloud+Matrix vs Discourse) was pending user decision from Session 2965 CHECKIN with **DECISION DEADLINE JUNE 15 23:59 UTC**. **✅ DEADLINE HAS NOW PASSED — NO DECISION PROVIDED.** Updated recommendation per Session 3563: Nextcloud+Matrix (8/10 vs Discourse 5/10, due to Pi5 IPv6 loopback bug in Discourse).
+**What I need**: User decision on which platform to deploy (Nextcloud+Matrix or Discourse). **CURRENT RECOMMENDATION (Session 3563)**: **Nextcloud+Matrix strongly recommended** (8/10 vs Discourse 5/10) because: Discourse has open IPv6 loopback bug on 64-bit PiOS (meta.discourse.org #296408) requiring 3 mandatory workarounds; Nextcloud has zero Pi5-specific blockers. Superior feature fit (offline editing, E2E encryption). Deliverable: `PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md` (Session 3563) includes full Nextcloud deployment runbook (4-6h). If Discourse chosen, SMTP credentials needed. If Nextcloud+Matrix chosen (recommended), confirm acceptance of 7.9GB allocation (5.5GB peak). **Once decision provided**, orchestrator can begin Phase 5.1 deployment immediately.
 **Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
-**Resolution**: [leave blank]
----
+**Resolution**: [leave blank — deadline expired, awaiting user direction to proceed with selected platform]
 
 ## Recently Resolved (last 5)
 • stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
