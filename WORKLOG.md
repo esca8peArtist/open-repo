@@ -1098,3 +1098,31 @@
 
 **Token usage**: ~600 tokens (orientation + CHECKIN update + WORKLOG entry).
 
+
+---
+
+## Session 3616 (2026-06-15 03:33 UTC — orchestrator) — STANDING-BY CONFIRMATION
+
+**Task**: Verify standing-by state remains correct, assess deployment readiness, commit orchestration files.
+
+**Orientation** (03:33 UTC):
+- ✅ ORCHESTRATOR_STATE.md reviewed (auto-generated 03:33 UTC) — state stable, standing-by verified
+- ✅ BLOCKED.md verified: 3 active blocks unchanged (cybersecurity-hardening, mfg-farm, systems-resilience) — all require user action, none resolvable
+- ✅ INBOX.md verified: empty, 100% processed
+- ✅ PROJECTS.md verified: all focus lines current
+- ✅ Exploration Queue: 15+ items pre-staged, all contingent on June 16+ triggers (contingency items, not executable today)
+- ✅ git status: ORCHESTRATOR_STATE.md modified (auto-generated), stockbot submodule tracked
+- ✅ Latest commit: 7e49e4e2 (Session 3614 NVDA prep complete)
+
+**Assessment**: Standing-by state correct and sustainable. NVDA deployment window opens in 17.5 hours (21:00 UTC). All infrastructure production-ready. No further autonomous work until deployment trigger.
+
+**Action Taken**: 
+1. ✅ Verified deployment readiness: 5-session config committed, model files present on Jetson, container healthy
+2. ✅ Updated CHECKIN.md with Session 3616 entry
+3. ✅ Prepared to commit all orchestration files
+
+**Status**: Standing-by confirmed sustainable. Deployment execution scheduled June 15 21:00+ UTC. System ready.
+
+**Next trigger**: June 15 21:00 UTC (orchestrator executes NVDA deployment automatically).
+
+**Token usage**: ~400 tokens (orientation + verification + CHECKIN update + WORKLOG entry + commit prep).

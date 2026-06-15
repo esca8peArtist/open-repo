@@ -1,5 +1,38 @@
 # Check-in Summary
 
+## Session 3616 (June 15 03:33 UTC — Standing-By Confirmation & Deployment Window Ready)
+
+**Status**: ✅ **STANDING-BY CONFIRMED — NVDA DEPLOYMENT WINDOW OPEN IN 17.5 HOURS** — System verified operational and ready. No autonomous work available. All deployment infrastructure staged and verified. Deployment execution scheduled 21:00 UTC.
+
+### Orientation Summary
+
+**State Verification**:
+- ✅ ORCHESTRATOR_STATE.md: Current (auto-generated 03:33 UTC)
+- ✅ BLOCKED.md: 3 active blocks remain (cybersecurity-hardening VeraCrypt, mfg-farm test print, systems-resilience platform decision)
+- ✅ INBOX.md: 100% processed, no new items
+- ✅ PROJECTS.md: All status lines current
+- ✅ Exploration Queue: 15+ items pre-staged, all contingent on June 16+ triggers
+- ✅ git status: ORCHESTRATOR_STATE.md modified (auto-generated, not committed per design), stockbot submodule tracked
+- ✅ Latest commit: 7e49e4e2 (Session 3614 NVDA prep)
+
+### Critical Timeline
+
+**Next 17.5 hours**:
+- **21:00 UTC**: NVDA deployment window opens (post-market, 12+ hours pre-market June 16)
+  - Trigger: Orchestrator executes `bash scripts/deploy-to-jetson.sh` 
+  - Expected completion: 21:20 UTC (config sync + container restart)
+  - HMM fitting: 21:20-21:30 UTC
+  - System ready for market: June 16 13:30 UTC
+
+**June 16 (13:30 UTC)**: Automated market-open validation
+- AAPL/MSFT/NVDA signal generation and execution monitoring
+
+### Autonomous Work Assessment
+
+**Zero autonomous work**: Standing-by state confirmed correct. All preparation complete. No further work until deployment trigger at 21:00 UTC.
+
+---
+
 ## Session 3615 (June 15 03:27 UTC — Standing-By Verification & Deployment Readiness)
 
 **Status**: ✅ **STANDING-BY CONFIRMED — NVDA DEPLOYMENT READY** — System verified in correct standing-by state. No autonomous work available. All pre-deployment infrastructure validated and staged.
