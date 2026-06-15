@@ -1,3 +1,22 @@
+## Session 3619 (2026-06-15 04:15 UTC — Orchestrator) — STANDING-BY SUSTAINED + PLATFORM DECISION ESCALATION
+
+**Task**: Verify orientation; confirm standing-by state; escalate overdue systems-resilience platform decision.
+
+**Results**:
+- ✅ Verified all ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, Exploration Queue
+- ✅ Confirmed: 3 active blocks (all user action), 0 new INBOX items, 15+ exploration items (all June 16+ contingent)
+- ✅ Usage nominal: Sonnet 5.3%, all-models 40.7%
+- ✅ Standing-by confirmed correct: NVDA deployment 21:00 UTC (17h), all autonomous work user-gated
+- ✅ **ESCALATION**: systems-resilience platform decision **OVERDUE** (deadline June 15 EOD = 19 hours remaining)
+  - Runbooks staged (Nextcloud 8/10 recommended vs Discourse 5/10)
+  - Waiting for user: platform choice + credentials (IP/domain + SMTP)
+  - If decision provided today: deployment executes immediately June 16-17
+- ✅ Updated CHECKIN.md with platform decision escalation notice
+
+**Decision**: Stand down until 21:00 UTC; request user decision on systems-resilience platform choice.
+
+---
+
 ## Session 3618 (2026-06-15 04:05 UTC — Orchestrator) — STANDING-BY SUSTAINED
 
 **Task**: Verify orientation; confirm standing-by state is correct; check for new blocks/items; commit orchestration state.

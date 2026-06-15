@@ -1,5 +1,53 @@
 # Check-in Summary
 
+## Session 3619 (June 15 04:15 UTC — Orientation & Escalation — Systems-Resilience Platform Decision OVERDUE)
+
+**Status**: ⚠️ **STANDING-BY SUSTAINED — NVDA DEPLOYMENT 17 HOURS AWAY + PLATFORM DECISION ESCALATION** — One critical user decision remains overdue.
+
+### Critical Action Required TODAY
+
+**systems-resilience — Platform Decision Deadline NOW (June 15 EOD)**
+- **Deadline**: June 15 23:59 UTC (20 hours remaining)
+- **Status**: OVERDUE since June 8-9 (rescheduled to June 15, still unresolved)
+- **What's needed**: Choose ONE:
+  - **Option A**: Nextcloud+Matrix (Recommended by Session 3563) — 8/10 rating, zero Pi5 blockers, 4-6h deployment, offline-capable, E2E encryption
+  - **Option B**: Discourse — 5/10 rating, has IPv6 loopback bug on Pi5 (workarounds documented), 2-3h with workarounds
+- **Required if you choose**:
+  - Public IP address + domain name
+  - SMTP credentials (email for notifications)
+  - Admin username + password
+
+**If you provide the decision in the next message, orchestrator will immediately execute deployment June 16-17 per pre-staged runbooks.**
+
+### State Verification
+
+- ✅ ORCHESTRATOR_STATE.md: Current (04:12 UTC)
+- ✅ BLOCKED.md: 3 active blocks
+  - cybersecurity-hardening: VeraCrypt restart (manual)
+  - mfg-farm: Test print execution (user action)
+  - **systems-resilience: Platform decision (OVERDUE — requires decision TODAY)**
+- ✅ INBOX.md: 100% processed
+- ✅ PROJECTS.md: All status lines current
+- ✅ Usage: Sonnet 5.3%, all-models 40.7% — nominal
+
+### Autonomous Work Assessment
+
+**Standing-by is correct** — All preparation complete. Waiting for:
+1. User platform decision (systems-resilience)
+2. NVDA deployment trigger at 21:00 UTC
+3. June 16+ market validation + exploration queue triggers
+
+No further autonomous work available until these events occur.
+
+### Timeline
+
+- **13:30 UTC (9 hours)**: US market open — AAPL/MSFT trading continues
+- **20:00 UTC (16 hours)**: US market close
+- **21:00 UTC (17 hours)**: 🚀 **NVDA DEPLOYMENT** — Automated
+- **June 16 13:30 UTC**: Market-open validation (automated)
+
+---
+
 ## Session 3618 (June 15 04:05 UTC — Orientation & Standing-By Confirmation)
 
 **Status**: ✅ **STANDING-BY SUSTAINED — NVDA DEPLOYMENT 17 HOURS AWAY** — All autonomous work is user-gated. Deployment infrastructure staged and verified from Session 3617. No new work available.
