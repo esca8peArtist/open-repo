@@ -1,3 +1,50 @@
+## Session 3620 (2026-06-15 04:26 UTC — Orchestrator) — FINAL ORIENTATION & STANDING-BY SUSTAINED
+
+**Task**: Final orientation; confirm standing-by state; prepare for 21:00 UTC NVDA deployment; escalate platform decision.
+
+**Orientation Results**:
+- ✅ ORCHESTRATOR_STATE.md: Auto-generated, current as of 04:26 UTC
+- ✅ BLOCKED.md: 3 active blocks verified (all require user action)
+  - cybersecurity-hardening: VeraCrypt pre-boot restart (manual Windows action)
+  - mfg-farm: Test print execution (3D printer, user action)
+  - systems-resilience: Platform decision **OVERDUE (deadline June 15 EOD, 18h remaining)**
+- ✅ INBOX.md: 100% processed through Session 3485+; no new items
+- ✅ PROJECTS.md: All status lines verified current; no changes needed
+- ✅ Exploration Queue: 15+ items verified; all contingent on June 16+ triggers or user decisions
+- ✅ Usage: Sonnet 5.3% (recovery in 20h), all-models 41.1% — nominal
+- ✅ Git status: Clean master branch, stockbot submodule tracked
+
+**Autonomous Work Assessment** (FINAL):
+- ✅ Zero autonomous work available
+- ✅ All projects blocked on user action/decisions (resistance-research Wave 1-2 emails, seedwarden Track B gates, open-repo merge approval, cybersecurity/mfg-farm/systems-resilience manual actions)
+- ✅ All exploration queue items June 16+ contingent (blocked on user decisions or external triggers)
+- ✅ Health checks NOT warranted (16.5 hours from deployment, exceeds 2-hour threshold)
+- ✅ Standing-by is correct and complete
+
+**Critical Timeline**:
+- **13:30 UTC (9h)**: US market open — AAPL/MSFT live trading continues
+- **20:00 UTC (15h)**: US market close
+- **21:00 UTC (16.5h)**: 🚀 **NVDA DEPLOYMENT** — Automatic orchestrator execution (config sync + Docker restart + HMM init)
+- **21:30 UTC (17h)**: Expected deployment completion
+- **June 16 13:30 UTC**: Automated market-open validation (AAPL/MSFT/NVDA signal check)
+
+**Platform Decision Escalation** (URGENT):
+- **Deadline**: June 15 EOD (23:59 UTC) = 19 hours remaining
+- **Status**: OVERDUE since June 8, rescheduled to June 15 (still unresolved)
+- **Choice needed**: Platform A (Nextcloud+Matrix, 8/10 recommended) or Platform B (Discourse, 5/10, faster deploy)
+- **If decision received**: Orchestrator will execute deployment immediately per staged runbooks (June 16-17)
+
+**Actions Taken**:
+- ✅ Verified all orientation checks from Sessions 3619, 3618, 3617
+- ✅ Confirmed standing-by state is correct and complete
+- ✅ Updated CHECKIN.md with Session 3620 summary
+- ✅ Updated WORKLOG.md with this session entry
+- ✅ Prepared all orchestration files for commit
+
+**Decision**: Stand down until 21:00 UTC NVDA deployment trigger. Platform decision required from user for systems-resilience immediate execution (deadline June 15 EOD).
+
+---
+
 ## Session 3619 (2026-06-15 04:15 UTC — Orchestrator) — STANDING-BY SUSTAINED + PLATFORM DECISION ESCALATION
 
 **Task**: Verify orientation; confirm standing-by state; escalate overdue systems-resilience platform decision.

@@ -1,5 +1,65 @@
 # Check-in Summary
 
+## Session 3620 (June 15 04:26 UTC — Final Orientation & Standing-By Confirmation)
+
+**Status**: ✅ **STANDING-BY SUSTAINED — NVDA DEPLOYMENT 16.5 HOURS AWAY** — Confirmed no new autonomous work available. All systems operational. Awaiting user platform decision (systems-resilience) and scheduled NVDA deployment trigger (21:00 UTC).
+
+### Orientation Verification
+
+**State Validation**:
+- ✅ ORCHESTRATOR_STATE.md: Auto-generated 04:26 UTC (current)
+- ✅ BLOCKED.md: 3 active blocks verified (all require user action)
+  - cybersecurity-hardening: VeraCrypt Windows restart (manual)
+  - mfg-farm: Test print execution (user action)
+  - systems-resilience: Platform decision **OVERDUE since June 8, recoverable if decided TODAY (18 hours remaining)**
+- ✅ INBOX.md: 100% processed through Session 3485+
+- ✅ PROJECTS.md: All project focus lines current
+- ✅ Exploration Queue: 15+ items pre-staged, all June 16+ contingent or user-gated
+- ✅ git: Clean master, stockbot submodule tracked
+- ✅ Usage: Sonnet 5.3%, recovery in 20 hours
+
+### Autonomous Work Assessment (Final)
+
+**Confirmed**: Zero autonomous work available.
+- **Stockbot**: Fully staged for 21:00 UTC NVDA deployment (no prep needed)
+- **Resistance-research**: Wave 1-2 execution packages ready, awaiting user email sends (75 min)
+- **Seedwarden**: Track B infrastructure complete, awaiting user gate execution (4 hours)
+- **Open-repo**: Merge-ready, awaiting user approval + credentials
+- **Exploration Queue**: All 15+ items blocked on June 16+ triggers or user decisions
+
+**Why standing-by is correct**: 
+1. All deployment infrastructure verified in Sessions 3617-3619
+2. All project work user-gated (no autonomous path forward)
+3. All exploration items June 16+ contingent
+4. NVDA deployment at 21:00 UTC is next scheduled event
+5. Health checks not warranted (17 hours from deployment, >2-hour threshold)
+
+### Platform Decision Escalation
+
+⚠️ **URGENT**: systems-resilience platform choice deadline is **TODAY EOD (18 hours)**. Original deadline was June 8, rescheduled to June 15. User decision required:
+- **Option A: Nextcloud+Matrix** (Recommended: 8/10, zero Pi5 blockers, offline-capable)
+- **Option B: Discourse** (5/10, has IPv6 workaround, faster 2-3h deploy)
+
+If decision received: Orchestrator will execute deployment immediately per staged runbooks (June 16-17).
+
+### Timeline to Next Event
+
+- **13:30 UTC (9 hours)**: US market open — AAPL/MSFT trading continues
+- **20:00 UTC (15 hours)**: US market close
+- **21:00 UTC (16.5 hours)**: 🚀 **NVDA DEPLOYMENT** — Automated orchestrator execution
+- **21:30 UTC (17 hours)**: Deployment expected complete (config sync + Docker restart + HMM init)
+- **June 16 13:30 UTC**: Market-open validation (automated signal check)
+
+### Recommendations
+
+1. **User platform decision**: Reply with choice (A/B) + required credentials to unblock systems-resilience
+2. **Standing-by confirmed**: No orchestrator action needed until 21:00 UTC or user input arrives
+3. **Exploration queue ready**: Item 104+ will activate automatically June 16+ when Wave 1 data available
+
+**Next Session**: Post-NVDA deployment validation + June 16 market-open verification (automated 21:30 UTC)
+
+---
+
 ## Session 3619 (June 15 04:15 UTC — Orientation & Escalation — Systems-Resilience Platform Decision OVERDUE)
 
 **Status**: ⚠️ **STANDING-BY SUSTAINED — NVDA DEPLOYMENT 17 HOURS AWAY + PLATFORM DECISION ESCALATION** — One critical user decision remains overdue.
