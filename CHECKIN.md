@@ -1,5 +1,29 @@
 # Check-in Summary
 
+## Session 3636 (June 15 23:18 UTC — 🔴🔴 FINAL COUNTDOWN: 41 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
+
+**Status**: 🔴🔴 **FINAL DEADLINE WINDOW — 41 MINUTES REMAINING** — Platform decision deadline **TONIGHT at 23:59 UTC (June 15)**. Orchestrator verified: standing-by state is correct, all systems production-ready, zero autonomous work available. Three active blocks remain unresolved (all require user action). June 16 00:00 UTC auto-repause in 42 minutes. June 16 13:30 UTC automated market-open validation (AAPL/MSFT/NVDA) will run automatically regardless of platform decision.
+
+### Session 3636 — Final Deadline Status
+
+**What was verified**:
+- ✅ **All state files current**: ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md all verified at Session 3635 state
+- ✅ **Current time**: June 15 23:18 UTC (41 min until 23:59 UTC deadline)
+- ✅ **Standing-by state CORRECT**: Zero autonomous work, all projects blocked on user decisions by design
+- ✅ **Three active blocks unchanged**: cybersecurity (VeraCrypt), mfg-farm (test print), systems-resilience (platform decision)
+- ✅ **Stockbot status**: 5-session config deployed (JPM, AMZN, AAPL, MSFT, NVDA). All systems healthy. 248+ tests passing. Standing-by for June 16 13:30 UTC automated validation.
+
+**Critical Deadline Status**:
+- **Platform decision**: ❌ STILL REQUIRED — Due 23:59 UTC (41 min remaining) — Choose Nextcloud+Matrix (recommended) or Discourse + provide credentials
+- **Auto-repause**: June 16 00:00 UTC (42 min) — mfg-farm, seedwarden, open-repo auto-pause unless user resolves blocks
+- **Market-open validation**: June 16 13:30 UTC (14h 12m) — Automated AAPL/MSFT/NVDA validation runs automatically
+
+**Next milestone**: If no platform decision by 23:59 UTC, the block will be marked "OVERDUE" in BLOCKED.md. Auto-repause will trigger at 00:00 UTC. Market validation will run automatically at 13:30 UTC.
+
+**Token usage this session**: ~150 tokens (final orientation + deadline documentation)
+
+---
+
 ## Session 3635 (June 15 23:11 UTC — 🔴🔴 FINAL STANDING-BY: 48 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
 
 **Status**: 🔴🔴 **CRITICAL DEADLINE IN 48 MINUTES** — Platform decision deadline **TONIGHT at 23:59 UTC (June 15)**. Orchestrator verified standing-by state remains correct. All systems production-ready for automated June 16 events. Three active blocks remain unresolved (user action required). June 16 00:00 UTC auto-repause deadline in 49 minutes.

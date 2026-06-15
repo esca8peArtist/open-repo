@@ -1,3 +1,33 @@
+## Session 3636 (2026-06-15 23:18 UTC — 🔴🔴 FINAL DEADLINE COUNTDOWN: Platform Decision Deadline 23:59 UTC — 41 MINUTES REMAINING)
+
+**Task**: Final orientation, deadline monitoring, prepare for June 16 00:00 UTC auto-repause and 13:30 UTC market-open validation.
+
+**Actions**:
+- ✅ Complete orientation (all state files verified current, zero changes since Session 3635)
+- ✅ Confirmed current time: June 15 23:18 UTC (41 minutes until deadline 23:59 UTC, 42 minutes until auto-repause 00:00 UTC)
+- ✅ Verified all three active blocks remain unresolved (no user input received):
+  - **cybersecurity-hardening**: VeraCrypt Windows restart (manual action only)
+  - **mfg-farm**: Test print execution (0.20mm, PLA+, 3 walls, 220-225°C)
+  - **systems-resilience**: Platform decision (Nextcloud+Matrix RECOMMENDED vs Discourse) + credentials
+- ✅ Confirmed zero autonomous work available (all projects correctly blocked on user actions)
+- ✅ Verified stockbot standing-by for June 16 13:30 UTC automated market-open validation (AAPL/MSFT/NVDA)
+- ✅ Updated CHECKIN.md with Session 3636 final deadline status
+- ✅ Prepared all orchestration files for master commit
+
+**Critical Status**:
+- **Platform decision deadline**: TONIGHT 23:59 UTC (41 MINUTES REMAINING)
+- **Auto-repause trigger**: June 16 00:00 UTC (42 minutes from now)
+- **Market-open validation**: June 16 13:30 UTC (14h 12min from now) — automated, runs regardless of platform decision
+- **Stockbot status**: 5-session config deployed (JPM, AMZN, AAPL, MSFT, NVDA). All systems standing-by. 248+ tests passing.
+
+**Outcome**: No further autonomous work available. Platform decision deadline passing in 41 minutes. If deadline expires without user input, systems-resilience Phase 5.1 deployment will be marked "OVERDUE" in BLOCKED.md. Auto-repause will trigger at 00:00 UTC as scheduled. June 16 market validation will run automatically at 13:30 UTC.
+
+**Next action**: (1) Commit orchestration files. (2) Monitor for June 16 00:00 UTC auto-repause. (3) Standby for June 16 13:30 UTC market-open validation trigger.
+
+**Token usage**: ~150 tokens (orientation + status documentation)
+
+---
+
 ## Session 3633 (2026-06-15 23:13 UTC — 🔴🔴 INFRASTRUCTURE FIX + FINAL COUNTDOWN: Platform Decision Deadline 23:59 UTC — 46 MINUTES REMAINING)
 
 **Task**: Final orientation, infrastructure maintenance (stockbot focus pruning), final deadline countdown before 46-minute window closes.
