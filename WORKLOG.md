@@ -1310,3 +1310,31 @@
 
 **Final Status**: Standing-by sustained. Deployment readiness confirmed. Next autonomous action at 21:00 UTC.
 
+
+## Session 3622 (June 15 04:41 UTC) — Standing-By Orientation & Critical Deadline Escalation
+
+**Duration**: ~7 minutes
+**Work completed**: Orientation verification + check-in update + critical deadline documentation
+**Status**: Standing-by sustained with critical escalation
+
+### What was done:
+1. ✅ Orientation complete (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, CHECKIN.md, PROJECTS.md all verified current)
+2. ✅ Verified zero autonomous work available (all projects user-gated or contingent on June 16+)
+3. ✅ Escalated critical deadline (systems-resilience platform decision due TODAY EOD, June 15 23:59 UTC)
+4. ✅ Updated CHECKIN.md Session 3622 with deadline escalation and timeline
+5. ✅ Committed to master (commit 3f73be37)
+
+### Critical status:
+- **DEADLINE TODAY**: systems-resilience platform decision (Nextcloud+Matrix vs Discourse) due June 15 EOD (~19.5 hours remaining)
+- **BLOCKING ITEMS**: 3 active blocks (all user-action): cybersecurity-hardening VeraCrypt, mfg-farm test print, systems-resilience platform choice
+- **AUTO-REPAUSE**: June 16 00:00 UTC unless user resolves one or more blocks
+- **DEPLOYMENT STAGED**: NVDA (21:00 UTC today), both platform options (Nextcloud+Matrix runbook, Discourse runbook with workarounds)
+
+### Recommendation for user:
+**Platform choice**: Nextcloud+Matrix (8/10 vs Discourse 5/10, more suitable for Pi5 8GB RAM). Once provided with credentials, orchestrator executes 4-6h deployment immediately.
+
+### Next scheduled action:
+- **21:00 UTC today**: NVDA deployment (automatic)
+- **June 16 00:00 UTC**: Auto-repause unless blocks resolved
+- **June 16 13:30 UTC**: Market-open validation (AAPL/MSFT/NVDA, automatic)
+
