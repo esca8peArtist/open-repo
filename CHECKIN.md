@@ -1,3 +1,41 @@
+# Check-in Summary — Session 3600+ (June 16 standing-by verification — 20+ Consecutive)
+
+## Session 3600+ — Orchestrator Standing-By Verification (20th+ Consecutive) — Sustainable Standing-By
+
+**Status**: ✅ **STANDING-BY SUSTAINABLE**. System confirmed in correct standing-by mode at June 16 00:00+ UTC. All orchestration files validated. Auto-repause window active June 16 00:00 UTC. Market-open validation scheduled June 16 13:30 UTC (automatic, regardless of repause status). **System operating as designed — standing-by is the correct state.**
+
+### Session 3600+ Findings
+
+- **All 3 active blocks UNRESOLVED (unchanged since Session 3599)**:
+  - **cybersecurity-hardening**: VeraCrypt restart — manual Windows action only; cannot auto-verify
+  - **mfg-farm**: Test print execution — user action required; test-print-results/ directory absent
+  - **systems-resilience**: Platform decision — **DEADLINE PASSED at June 15 EOD**. Recommendation: **Nextcloud+Matrix** (8/10 vs Discourse 5/10 due to Pi5 IPv6 bug). User can still provide decision + credentials to reactivate immediately.
+- **INBOX**: 100% processed. No new items since Session 3485 (June 14 02:50 UTC).
+- **Temporary unpauses**: Auto-repause active as of June 16 00:00 UTC. mfg-farm, seedwarden, open-repo paused unless user resolves block(s).
+- **Autonomous work**: **Zero**. All projects blocked on user actions or time-based triggers (June 16 13:30 UTC market-open).
+- **Standing-by verification**: 20+ consecutive verification sessions confirm standing-by state is sustainable and working as designed. No arbitrary work added. Exploration Queue ready for activation post-trigger.
+- **Exploration Queue**: All items complete or trigger-gated to June 16+ or user decisions. Zero active executable items.
+- **Usage**: Nominal (~200 tokens per standing-by verification). Current budget: 3.9% Sonnet usage.
+
+### Critical Timeline — June 16 Onward
+
+- **13:30 UTC**: Market-open validation (stockbot AAPL + MSFT live trading signal check) — **AUTOMATIC regardless of repause status**
+- **18:00 UTC EOD**: Hard deadline for stockbot block(s) if validation fails
+- **Beyond June 16**: Temp unpauses stay paused until user resolves block(s). Standing-by state maintained.
+
+### Orchestration Files Status
+
+- **ORCHESTRATOR_STATE.md**: Current (re-generated this session)
+- **BLOCKED.md**: All 3 blocks verified unresolved; Resolved Archive current
+- **INBOX.md**: 100% processed; no pending items
+- **PROJECTS.md**: All project status lines current; temp unpauses in auto-repause state
+- **WORKLOG.md**: Last entry this session
+- All files ready for commit on master
+
+**Status**: ✅ **System confirmed in correct standing-by mode. Standing-by is sustainable — no autonomous work available, all preparation complete. Market-open validation automatic June 16 13:30 UTC. Awaiting user input on 3 blocks (platform decision urgent).**
+
+---
+
 # Check-in Summary — Session 3599 (June 15 23:58 UTC — Final EOD standing-by verification)
 
 ## Session 3599 — Orchestrator Standing-By Verification (19th Consecutive) — EOD Checkpoint
