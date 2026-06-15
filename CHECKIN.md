@@ -1,5 +1,40 @@
 # Check-in Summary
 
+## Session 3610 (June 15 02:39 UTC — Standing-By Orientation, Market-Ready Verification)
+
+**Status**: ✅ **STANDING-BY CONFIRMED**. All critical systems operational and staged for June 16 13:30 UTC market open. Zero executable autonomous work (all projects blocked on user decisions or scheduled events). Exploration Queue: 5 active items pre-staged for trigger conditions.
+
+### Orientation Summary
+
+**Verified State**:
+- ✅ ORCHESTRATOR_STATE.md: Current (June 15 02:38 UTC)
+- ✅ BLOCKED.md: 3 active blocks (all require user action)
+  - cybersecurity-hardening: VeraCrypt pre-boot restart
+  - mfg-farm: Test print execution
+  - systems-resilience: Platform decision (deadline: June 15 EOD)
+- ✅ PROJECTS.md: All projects correctly blocked or paused
+- ✅ Exploration Queue: 5 active ⏳ items + 20+ ✅ completed items (exceeds 3-item minimum)
+- ✅ Usage: Nominal (no throttling needed)
+
+**Project Status**:
+1. **stockbot**: AAPL lgbm_ho (6/6 gates) + MSFT lgbm_ho (6/7 gates) deployed live on Jetson June 14. Ready for market-open validation June 16 13:30 UTC. NVDA (7/7 gates) + GOOGL (6/7 gates) Phase 4 evaluation complete, deployment window June 15 21:00+ UTC (outside market hours).
+2. **resistance-research**: Phase 2 Wave 1-2 execution packages ready (75 min combined), awaiting user execution.
+3. **seedwarden**: Track B infrastructure production-ready, temporary unpause expires June 16 00:00 UTC.
+4. **open-repo**: Feature branch merge-ready, awaiting user approval + database credentials.
+5. **mfg-farm**: Awaiting test print (temporary unpause expires June 16 00:00 UTC).
+6. **systems-resilience**: Platform decision needed (deadline TODAY, June 15 EOD).
+7. **cybersecurity-hardening**: VeraCrypt pre-boot restart needed.
+8. **off-grid-living**: Complete, awaiting user social media execution.
+
+**Exploration Queue Assessment**: 
+- No new items added (5 existing items exceed 3-item minimum)
+- All 5 items pre-staged and ready to execute upon trigger conditions
+- Items trigger on: (a) June 16-18 market validation, (b) Wave 1-2 completion, (c) platform decision, (d) test print completion, (e) future retrain deadlines
+
+**Conclusion**: System correctly in standing-by mode. Next executable tasks: (1) User provides platform decision (systems-resilience, deadline June 15 EOD), (2) June 16 13:30 UTC market open (automatic validation), (3) NVDA/GOOGL deployment June 15 21:00+ UTC (if outside market hours). All preparation complete.
+
+---
+
 ## Session 3609 (June 15 06:31 UTC — Standing-By Verification, Zero Autonomous Work)
 
 **Status**: ✅ **STANDING-BY VERIFIED**. Orchestrator re-verified state post-Session 3608. All autonomous executable work has been completed. No new autonomous work available at this time.
