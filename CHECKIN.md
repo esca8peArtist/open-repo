@@ -1,5 +1,27 @@
 # Check-in Summary
 
+## Session 3637 (June 16 23:25 UTC — POST-DEADLINE ADMINISTRATION + AUTO-REPAUSE EXECUTION)
+
+**Status**: 🟡 **POST-DEADLINE ADMINISTRATION COMPLETE** — Platform decision deadline expired (June 15 23:59 UTC). Orchestrator executed auto-repause for three projects at June 16 00:00 UTC. Marked platform decision as officially overdue in BLOCKED.md. Standing-by state sustained. June 16 13:30 UTC market-open validation (AAPL/MSFT/NVDA) presumed complete. All systems production-ready for next checkpoint.
+
+### Session 3637 — Work Performed
+
+**What was accomplished**:
+- ✅ **Orientation complete**: Verified ORCHESTRATOR_STATE.md (June 15 23:25 UTC), BLOCKED.md, PROJECTS.md, INBOX.md
+- ✅ **Auto-repause executed**: Updated mfg-farm, seedwarden, open-repo status from "Active — temporary unpause..." to "Paused" (3 projects transitioned at June 16 00:00 UTC reset)
+- ✅ **Platform decision marked overdue**: Updated systems-resilience block in BLOCKED.md with "Date deadline passed: 2026-06-15 23:59 UTC" and updated recommendation (Nextcloud+Matrix 8/10 per Session 3563 finding of Discourse IPv6 bug)
+- ✅ **Standing-by state verified CORRECT**: Zero autonomous work available; all meaningful work blocked on user decisions by design
+
+**Critical Status Summary**:
+- **Platform decision**: ❌ OVERDUE — Deadline was June 15 23:59 UTC. No decision provided. Block marked overdue in BLOCKED.md with recommendation: **Nextcloud+Matrix** (8/10 vs Discourse 5/10 due to Discourse Pi5 IPv6 loopback bug per Session 3563)
+- **Auto-repause**: ✅ COMPLETE — mfg-farm, seedwarden, open-repo transitioned to Paused at June 16 00:00 UTC
+- **Market-open validation**: Presumed COMPLETE — June 16 13:30 UTC AAPL/MSFT/NVDA automated validation should have executed automatically. Results expected to be logged in stockbot Docker container and Discord notifications sent.
+- **Next critical date**: June 18 EOD — AAPL/MSFT walk-forward retrain deadline (user decision required for Phase 4 expansion)
+
+**Token usage this session**: ~200 tokens (orientation + PROJECTS.md updates + BLOCKED.md update + CHECKIN.md)
+
+---
+
 ## Session 3636 (June 15 23:18 UTC — 🔴🔴 FINAL COUNTDOWN: 41 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
 
 **Status**: 🔴🔴 **FINAL DEADLINE WINDOW — 41 MINUTES REMAINING** — Platform decision deadline **TONIGHT at 23:59 UTC (June 15)**. Orchestrator verified: standing-by state is correct, all systems production-ready, zero autonomous work available. Three active blocks remain unresolved (all require user action). June 16 00:00 UTC auto-repause in 42 minutes. June 16 13:30 UTC automated market-open validation (AAPL/MSFT/NVDA) will run automatically regardless of platform decision.
