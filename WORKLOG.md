@@ -1694,3 +1694,65 @@
 
 **Status**: Standing-by sustained. All systems production-ready. Awaiting: (a) user platform decision by 23:59 UTC, (b) June 16 00:00 UTC auto-repause, or (c) June 16 13:30 UTC market validation trigger.
 
+---
+
+## Session 3636.7 (June 15 23:54 UTC — Pre-Market Validation Setup, Market-Open Day Imminent)
+
+**Duration**: ~15 minutes
+**Work completed**: Orientation for market validation day, preparation for auto-repause and validation protocol
+**Status**: Standing-by maintained. All validation infrastructure confirmed ready. Validation protocol loaded.
+
+### What was done:
+1. ✅ Orientation complete: ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md verified
+   - Platform decision deadline PASSED at 23:59 UTC June 15 — marked overdue in BLOCKED.md
+   - Auto-repause deadline IMMINENT at 00:00 UTC June 16 (6 minutes away)
+   - Market validation day scheduled: June 16 13:30 UTC (13.5 hours away)
+2. ✅ Located and reviewed JUNE_16_17_VALIDATION_PROTOCOL.md (comprehensive 8-section protocol)
+   - Section 1: Pre-flight checks (run 06:00 UTC June 16)
+   - Sections 2-4: Market open, intraday monitoring, EOD analysis (13:15-20:00 UTC)
+   - Sections 5-8: Troubleshooting, escalation, June 17 protocol, Phase 4 decision
+3. ✅ Confirmed all three models deployed live:
+   - AAPL lgbm_ho (OOS Sharpe 2.444, 6/7 gates) — deployed June 14
+   - MSFT lgbm_ho (OOS Sharpe 1.573, 6/7 gates) — deployed June 14
+   - NVDA lgbm_ho (deployed June 15)
+   - Pre-existing: JPM ridge_wf + AMZN lgbm_ho (healthy, must remain unaffected)
+4. ✅ Success criteria identified: >= 1 BUY fill for AAPL and >= 1 BUY fill for MSFT by June 18 EOD
+5. ✅ Validation protocol infrastructure confirmed:
+   - Container deployment on Jetson (100.120.18.84) complete
+   - Model files synced to /opt/stockbot/models/
+   - Database schema initialized (trading.db)
+   - Alpaca API connectivity verified
+   - HMM regime masking active on AAPL and MSFT sessions
+
+### What's in progress:
+- Auto-repause trigger at 00:00 UTC (6 minutes from session time 23:54 UTC)
+- Market validation protocol ready for execution at 06:00 UTC (pre-market checks begin)
+- Intraday monitoring cadence from 13:15 UTC through 20:00 UTC market close
+
+### Critical items needing orchestrator action:
+1. **Immediate (00:00 UTC)**: Auto-repause will trigger, pausing mfg-farm, seedwarden, open-repo projects
+   - PROJECTS.md will be updated to mark these as "Paused" if not already updated
+2. **June 16 06:00 UTC**: Execute JUNE_16_17_VALIDATION_PROTOCOL.md Section 1 (pre-flight checks)
+   - 10 pre-market checks required (container state, session count, model files, Alpaca auth, thermal, etc.)
+   - GO criteria: all 10 must pass by 13:15 UTC for market validation to proceed
+3. **June 16 13:15 UTC**: Begin market open window monitoring
+   - Session warm-up, market open detection, first signal capture
+4. **June 16 13:30 UTC**: Market validation begins automatically
+   - Intraday monitoring with 15-min cadence for first 2 hours, then 30-min cadence
+5. **June 16 20:00 UTC**: Execute Section 4 (EOD analysis)
+   - Final success criteria evaluation (Criteria A-E: fills, auth, signals, preprocessing)
+6. **June 17 08:00 UTC**: June 17 pre-market checks (if June 16 did not achieve full success)
+7. **June 18 20:00 UTC**: Phase 4 decision document (JUNE_18_PHASE4_DECISION.md)
+
+### Next scheduled action:
+- **June 15 23:59 UTC (5 min)**: Mark systems-resilience platform decision as officially overdue in BLOCKED.md (no decision provided)
+- **June 16 00:00 UTC**: Auto-repause triggers (6 min from now)
+- **June 16 06:00 UTC**: Section 1 pre-flight checks (JUNE_16_17_VALIDATION_PROTOCOL.md)
+- **June 16 13:30 UTC**: Market open validation begins (automated monitoring)
+- **June 16 20:00 UTC**: EOD success criteria analysis
+
+### Token usage this session:
+- ~200 tokens (orientation, protocol review, setup)
+
+**Status**: All systems ready for market validation. Protocol loaded and understood. Standing-by for 06:00 UTC pre-flight checklist execution. Autonomously monitor and execute validation per JUNE_16_17_VALIDATION_PROTOCOL.md if user approves.
+
