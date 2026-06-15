@@ -1,5 +1,23 @@
 # Check-in Summary
 
+## Session 3625 (June 15 22:02 UTC — 🔴 DEPLOYMENT VERIFICATION + CRITICAL DEADLINE ~2 HOURS)
+
+**Status**: 🔴 **CRITICAL DEADLINE IMMINENT — ~1h 57m REMAINING** — NVDA deployment completed or executing (DEPLOY_READY file removed). Platform decision deadline **June 15 23:59 UTC**. No user decision received yet. Auto-repause June 16 00:00 UTC unless platform decision provided.
+
+### Session 3625 — Work Performed
+
+**What was accomplished**:
+- ✅ Verified DEPLOY_READY file removed (deployment executed or in-progress as of 22:02 UTC)
+- ✅ Confirmed NVDA deployment triggered at 21:49 UTC, standard 30min duration → complete by ~22:15 UTC
+- ✅ Verified zero autonomous work available (all projects user-gated, all exploration contingent on platform decision)
+- ✅ Confirmed critical timeline: platform decision deadline 23:59 UTC (~1h 57m remaining)
+
+**Status**: Standing-by sustained. NVDA deployment executing. No autonomous work available until platform decision received.
+
+**Critical action required**: Platform decision (Nextcloud+Matrix or Discourse) + credentials **MUST be provided by 23:59 UTC TODAY** — no extensions possible.
+
+---
+
 ## Session 3624 (June 15 21:49 UTC — 🔴 NVDA DEPLOYMENT TRIGGERED, PLATFORM DECISION DEADLINE IN ~2 HOURS)
 
 **Status**: 🔴 **CRITICAL DEADLINE WINDOW — LAST 2 HOURS** — NVDA deployment triggered (DEPLOY_READY created 21:49 UTC, should complete by 22:15 UTC). Platform decision deadline imminent: **TODAY EOD (June 15 23:59 UTC, ~2 hours 10 minutes remaining)**. No user decision received yet. Temporary unpauses auto-repause June 16 00:00 UTC unless user resolves blocking items.
