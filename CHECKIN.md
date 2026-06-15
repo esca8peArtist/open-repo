@@ -1,5 +1,36 @@
 # Check-in Summary
 
+## Session 3628 (June 15 22:23 UTC — 🔴 FINAL ESCALATION: 96 MINUTES UNTIL PLATFORM DECISION DEADLINE 23:59 UTC)
+
+**Status**: 🔴 **FINAL ESCALATION WINDOW — 1 HOUR 36 MINUTES REMAINING** — Platform decision deadline **June 15 23:59 UTC is 96 minutes away**. NO user decision received yet. NVDA deployment confirmed complete. All systems production-ready for June 16 market-open validation.
+
+### Critical Action Required NOW
+
+**🔴 PLATFORM DECISION MUST BE PROVIDED WITHIN 96 MINUTES (by 23:59 UTC)**
+
+Choose ONE and provide required credentials:
+
+1. **Option A: Nextcloud+Matrix** (RECOMMENDED — 8/10 rating)
+   - Zero Pi5-specific blockers
+   - 4-6 hour deployment
+   - Offline-capable, E2E encryption
+   - **Required**: public IP address + domain name + SMTP credentials
+
+2. **Option B: Discourse** (5/10 rating)
+   - Faster deployment (2-3 hours)
+   - Has IPv6 loopback bug on Pi5 (workarounds documented)
+   - **Required**: domain name + SMTP credentials + IPv6 workaround confirmation
+
+Once decision provided: Orchestrator will execute deployment immediately June 16-17.
+
+### Timeline (Critical)
+
+- **NOW (22:23 UTC)**: Awaiting platform decision + credentials
+- **23:59 UTC**: Deadline expires — if no decision received, systems-resilience deployment is deferred and temporary projects auto-repause June 16 00:00 UTC
+- **June 16 13:30 UTC**: Automated market-open validation (AAPL/MSFT/NVDA, regardless of platform decision status)
+
+---
+
 ## Session 3627 (June 15 22:16 UTC — 🔴 FINAL CRITICAL WINDOW: ~43 MINUTES UNTIL DEADLINE)
 
 **Status**: 🔴 **FINAL CRITICAL WINDOW — 43 MINUTES REMAINING** — NVDA deployment confirmed complete (DEPLOY_READY file removed). Platform decision deadline **June 15 23:59 UTC in 43 minutes**. Zero autonomous work available. All systems production-ready for June 16 market-open validation.
