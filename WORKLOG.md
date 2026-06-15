@@ -1,3 +1,30 @@
+## Session 3633 (2026-06-15 23:13 UTC — 🔴🔴 INFRASTRUCTURE FIX + FINAL COUNTDOWN: Platform Decision Deadline 23:59 UTC — 46 MINUTES REMAINING)
+
+**Task**: Final orientation, infrastructure maintenance (stockbot focus pruning), final deadline countdown before 46-minute window closes.
+
+**Actions**:
+- ✅ Complete orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md all verified current)
+- ✅ Pruned stale stockbot focus line (referenced Session 3614 obsolete; NVDA deployment now complete) — Updated PROJECTS.md focus to reflect current status (P3+P4 COMPLETE, NVDA deployed, market-open validation June 16 13:30 UTC). Committed to master (commit b46a785d).
+- ✅ Confirmed all 3 active blocks remain unresolved (cyber, mfg, systems-resilience) — all require manual user action
+- ✅ Confirmed zero autonomous work available (all projects blocked on user actions by design)
+- ✅ Verified NVDA deployment complete and operational (from Sessions 3624-3627)
+- ✅ Updated CHECKIN.md Session 3633 with final 46-minute countdown and deadline urgency
+- ✅ Updated WORKLOG.md with Session 3633 entry
+
+**Status**: Standing-by sustained with CRITICAL deadline 46 minutes away. **🔴🔴 PLATFORM DECISION DEADLINE: 23:59 UTC TONIGHT (46 MINUTES REMAINING)**. NVDA deployment complete. All systems production-ready for June 16 13:30 UTC automated market-open validation.
+
+**Critical Timeline**:
+- **NOW (23:13 UTC)**: 46 minutes until deadline
+- **23:59 UTC**: Hard deadline — if no platform decision provided, systems-resilience Phase 5 deployment deferred indefinitely
+- **June 16 00:00 UTC**: Auto-repause triggers (mfg-farm, seedwarden, open-repo) unless blocks resolved
+- **June 16 13:30 UTC**: Automated AAPL/MSFT/NVDA market-open validation (runs automatically regardless of platform decision)
+
+**Next action**: Commit all orchestration files to master. Stand-by sustained.
+
+**Token usage**: ~400 tokens (orientation + focus line pruning + deadline countdown + commit prep)
+
+---
+
 ## Session 3632 (2026-06-15 22:50 UTC — 🔴🔴 FINAL VERIFICATION: Platform Decision Deadline 23:59 UTC — 69 MINUTES REMAINING)
 
 **Task**: Final orientation & verification. Confirm all systems ready for June 16 automated validation. Escalate platform decision deadline (69 minutes remaining).
