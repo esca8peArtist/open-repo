@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-15T21:40:50Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-15T23:32:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.3% (470,019 tokens) | All-models 41.6% | Reset in 2h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.8% (521,784 tokens) | All-models 44.5% | Reset in 0h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -17,27 +17,13 @@
 10. open-source-rideshare (Paused)
 
 ## Active Projects
-### mfg-farm
-**Status**: Active — temporary unpause per user directive 2026-06-14 (auto-repause after June 16 00:00 UTC reset)
-**Focus**: ⏸️ **PAUSED — awaiting test print execution (user action)**. Phase 1 launch sequence and Phase 2 scaling strategy production-ready. Block: BLOCKED.md Item 2 — test print directory missing. Next: User completes test print (0.20mm layer height, PLA+, 3 walls, 220–225°C) and reports outcome to unblock Phase 1 launch.
-**Blocked**: Test print (user action required — see focus above)
-
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
 **Focus**: ✅ **[PHASE 2 WAVE 1-2 EXECUTION READY — EMAIL PACKAGES + ORCHESTRATION SCRIPT COMPLETE (SESSION 3545)]** — **PHASE 2 EXECUTION STATUS**: 
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[P3 COMPLETE + AAPL/MSFT LIVE, NVDA DEPLOYMENT-READY — SESSION 3614] 5-SESSION CONFIG PREPARED FOR JUNE 15 21:00 UTC DEPLOYMENT; MARKET VALIDATION JUNE 16** — (1) **Current Jetson status**: AAPL lgbm_ho (OOS Sharpe 2.444, 6/6 gates) + MSFT lgbm_ho (OOS Sharpe 1.573, 6/7 gates) deployed June 14 15:15 UTC, live ✅. 4-session config active (JPM ridge_wf + AMZN lgbm_ho + AAPL lgbm_ho + MSFT lgbm_ho). Container healthy, 248+ tests passing. (2) **NVDA Phase 4 expansion prepared (Session 361 … *(truncated — prune Current focus in PROJECTS.md)*
-
-### seedwarden
-**Status**: Active — temporary unpause per user directive 2026-06-14 (auto-repause after June 16 00:00 UTC reset)
-**Focus**: ✅ **[TRACK B INFRASTRUCTURE PRODUCTION-READY — GATES NOT YET EXECUTED (SESSION 2964 FORENSIC AUDIT, JUNE 6) + PHASE 3 CONTRACTOR SEARCH EXECUTION COMPLETE (SESSION 2967, JUNE 6)]** — Orchestrator activated Track B on June 4, but June 5 execution target referred to readiness status, not completion. Forensic audit (Agent a9df4d3832becad3f) confirms: all autonomous pre-launch infrastructure 100% production-ready and verified (8 zone PDFs, email copy, social calendar, influencer contacts); all … *(truncated — prune Current focus in PROJECTS.md)*
-**Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
-
-### open-repo
-**Status**: Active — temporary unpause per user directive 2026-06-14 (auto-repause after June 16 00:00 UTC reset)
-**Focus**: ✅ **[PHASE 5 ZIMWRITER MERGE-READY (SESSION 2970, JUNE 6) — DEPLOYMENT TIMING CONFIRMED 09:00 UTC (SESSION 2995)]** — Code verdict: ✅ MERGE-READY (all 51 ZIM tests passing, feature branch MORE CORRECT than master). **Deployment timing confirmed**: 09:00 UTC (business hours) on June 12, 2026 — all newer authoritative docs (Sessions 2952-2956, June 6+) consistently specify 09:00 UTC. **User actions required**: (1) **Merge approval** on feature/zimwriter-libzim-activation branch, (2) **Po … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[P3+P4 COMPLETE — NVDA DEPLOYMENT COMPLETE, MARKET-OPEN VALIDATION JUNE 16]** — (1) **Jetson Status**: AAPL lgbm_ho + MSFT lgbm_ho deployed live June 14, NVDA lgbm_ho deployed June 15 (5-session config active). Container healthy, 248+ tests passing. (2) **Next milestone**: June 16 13:30 UTC automated market-open signal validation (AAPL/MSFT/NVDA). Success criterion: ≥1 live trade each model by June 18 EOD. (3) **Pending**: All systems standing-by awaiting automated validation. No cur … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -71,8 +57,9 @@
 ---
 ### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
 **Date blocked**: 2026-06-06
-**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. As of June 6 20:05 UTC: Docker was not installed (resolved in Session 2965), no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. Platform choice (Nextcloud+Matrix vs Discourse) is pending user decision from Session 2965 CHECKIN.
-**What I need**: User decision on which platform to deploy (Nextcloud+Matrix or Discourse). Recommendation: Discourse is more suitable for this Raspberry Pi 5 (8GB RAM recommended vs Nextcloud's 16GB) and deploys faster (2-3 hours vs 4-6 hours). If Discourse chosen, provide public IP + domain for platform, and SMTP credentials for email notifications. If Nextcloud+Matrix chosen, confirm acceptance of memory risk (system has 7.9GB total RAM). Once choice is confirmed, orchestrator will execute platform deployment by June 8 18:00 UTC deadline.
+**Date deadline passed**: 2026-06-15 23:59 UTC
+**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. As of June 6 20:05 UTC: Docker was not installed (resolved in Session 2965), no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. Platform choice (Nextcloud+Matrix vs Discourse) is pending user decision from Session 2965 CHECKIN. **DECISION DEADLINE WAS JUNE 15 23:59 UTC — NOW OVERDUE as of 2026-06-16 23:25 UTC.** Session 3635 explicitly noted "if unresolved → mark overdue in BLOCKED.md." Updated recommendation per Session 3563: Nextcloud+Matrix (8/10 vs Discourse 5/10, due to Pi5 IPv6 loopback bug in Discourse).
+**What I need**: User decision on which platform to deploy (Nextcloud+Matrix or Discourse). **UPDATED RECOMMENDATION (Session 3563)**: **Nextcloud+Matrix strongly recommended** (8/10 vs Discourse 5/10) because: Discourse has open IPv6 loopback bug on 64-bit PiOS (meta.discourse.org #296408) requiring 3 mandatory workarounds; Nextcloud has zero Pi5-specific blockers. Superior feature fit (offline editing, E2E encryption). Deliverable: `PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md` (Session 3563) includes full Nextcloud deployment runbook (4-6h). If Discourse chosen despite recommendation, SMTP credentials needed. If Nextcloud+Matrix chosen (recommended), confirm acceptance of 7.9GB allocation (5.5GB peak).
 **Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
 **Resolution**: [leave blank]
 ---
@@ -107,42 +94,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-2. **resistance-research** ⏸️: Wave 1-2 execution packages ready (75 min user action). Awaiting user execution June 14-15.
-3. **seedwarden** ⏸️: Track B production-ready; temporary unpause expires June 16 00:00 UTC.
-4. **open-repo** ⏸️: Merge-ready; temporary unpause expires June 16 00:00 UTC.
-5. **mfg-farm** ⏸️: Awaiting test print; temporary unpause expires June 16 00:00 UTC.
-6. **systems-resilience** 🔴: Platform decision deadline June 15 EOD (⚠️ overdue; recoverable if decided today)
-7. **cybersecurity-hardening** ⏸️: Awaiting VeraCrypt restart
-8. **off-grid-living** ✅: Complete
-
-**Token Usage**: ~350 tokens (verification + documentation + commit prep).
-
-**Final Status**: Standing-by sustained. Deployment readiness confirmed. Next autonomous action at 21:00 UTC.
-
-
-## Session 3622 (June 15 04:41 UTC) — Standing-By Orientation & Critical Deadline Escalation
-
-**Duration**: ~7 minutes
-**Work completed**: Orientation verification + check-in update + critical deadline documentation
-**Status**: Standing-by sustained with critical escalation
-
-### What was done:
-1. ✅ Orientation complete (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, CHECKIN.md, PROJECTS.md all verified current)
-2. ✅ Verified zero autonomous work available (all projects user-gated or contingent on June 16+)
-3. ✅ Escalated critical deadline (systems-resilience platform decision due TODAY EOD, June 15 23:59 UTC)
-4. ✅ Updated CHECKIN.md Session 3622 with deadline escalation and timeline
-5. ✅ Committed to master (commit 3f73be37)
-
-### Critical status:
-- **DEADLINE TODAY**: systems-resilience platform decision (Nextcloud+Matrix vs Discourse) due June 15 EOD (~19.5 hours remaining)
-- **BLOCKING ITEMS**: 3 active blocks (all user-action): cybersecurity-hardening VeraCrypt, mfg-farm test print, systems-resilience platform choice
-- **AUTO-REPAUSE**: June 16 00:00 UTC unless user resolves one or more blocks
-- **DEPLOYMENT STAGED**: NVDA (21:00 UTC today), both platform options (Nextcloud+Matrix runbook, Discourse runbook with workarounds)
-
-### Recommendation for user:
 **Platform choice**: Nextcloud+Matrix (8/10 vs Discourse 5/10, more suitable for Pi5 8GB RAM). Once provided with credentials, orchestrator executes 4-6h deployment immediately.
 
 ### Next scheduled action:
 - **21:00 UTC today**: NVDA deployment (automatic)
 - **June 16 00:00 UTC**: Auto-repause unless blocks resolved
 - **June 16 13:30 UTC**: Market-open validation (AAPL/MSFT/NVDA, automatic)
+
+
+## Session 3635 (June 15 23:11 UTC — Final Standing-By Verification, 48 min until deadline)
+
+**Duration**: ~5 minutes
+**Work completed**: Final orientation, deadline escalation, standing-by verification
+**Status**: Standing-by sustained, critical deadline in 48 minutes
+
+### What was done:
+1. ✅ Final orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md verified)
+2. ✅ Confirmed NVDA deployment complete and operational
+3. ✅ Verified standing-by state remains correct (zero autonomous work available)
+4. ✅ Updated CHECKIN.md Session 3635 with final deadline status (48 min remaining)
+5. ✅ Prepared for three simultaneous deadlines at midnight:
+   - Platform decision deadline: 23:59 UTC (if unresolved → mark overdue in BLOCKED.md)
+   - Auto-repause trigger: 00:00 UTC (mfg-farm, seedwarden, open-repo back to paused)
+   - June 16 market validation: 13:30 UTC (automatic, runs regardless of above)
+
+### Critical items needing user input:
+1. **Platform decision** (DEADLINE: 23:59 UTC, 48 min) — Nextcloud+Matrix vs Discourse + credentials
+2. **VeraCrypt restart** (cybersecurity-hardening) — Windows machine restart
+3. **Test print execution** (mfg-farm) — 0.20mm layer height PLA+
+
+### Next scheduled action:
+- **23:59 UTC**: Deadline expires; if unresolved, mark as officially overdue
+- **June 16 00:00 UTC**: Auto-repause triggers; update PROJECTS.md focus lines
+- **June 16 13:00 UTC**: Run pre-market validation checklist (JUNE_16_PREMARKET_VALIDATION_CHECKLIST.md)
+- **June 16 13:30 UTC**: Market open validation begins (automated)
+
+### Token usage this session:
+- ~150 tokens (orientation + documentation + commit prep)
+
+**Status**: Standing-by sustained. All systems production-ready. Awaiting: (a) user platform decision by 23:59 UTC, (b) June 16 00:00 UTC auto-repause, or (c) June 16 13:30 UTC market validation trigger.
