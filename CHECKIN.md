@@ -1,5 +1,36 @@
 # Check-in Summary
 
+## Session 3612 (June 15 — Standing-By Verification, Standing-By Reconfirmed)
+
+**Status**: ✅ **STANDING-BY RECONFIRMED**. Orientation complete. Zero executable autonomous work available (all projects blocked on user decisions or scheduled events). All systems operational and ready for June 16 13:30 UTC market open.
+
+### Orientation Summary
+
+**Verified State**:
+- ✅ ORCHESTRATOR_STATE.md: Current as of June 15 02:52 UTC
+- ✅ BLOCKED.md: 3 active blocks (all require user action, no auto-resolvable items)
+  - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual)
+  - **mfg-farm**: Test print execution (directory still absent)
+  - **systems-resilience**: Platform decision (Nextcloud+Matrix or Discourse; deadline June 15 EOD PASSED)
+- ✅ INBOX.md: All items processed; no new items since Session 3485 (June 14)
+- ✅ PROJECTS.md: Spot-check confirms all projects correctly blocked or paused
+- ✅ Exploration Queue: Empty per ORCHESTRATOR_STATE.md
+- ✅ Usage: Nominal (Sonnet 5.3%, all-models 38.4%, reset in 21h)
+
+**Project Status**:
+1. **stockbot**: Standing-by for June 16 13:30 UTC market open. AAPL lgbm_ho (OOS Sharpe 2.444) + MSFT lgbm_ho (OOS Sharpe 1.573) deployed live on Jetson June 14. NVDA lgbm_ho (7/7 gates PASS, Sharpe 2.926, DEPLOY-READY) evaluation complete. GOOGL lgbm_ho (6/7 gates, Sharpe 2.301, CONDITIONAL with bear-regime monitoring). 248/248 tests passing. Deployment windows: NVDA June 15 21:00+ UTC (outside market hours), GOOGL June 19+ (post-AAPL/MSFT validation).
+2. **resistance-research**: Phase 2 Wave 1-2 execution packages ready (WAVE_1_EMAIL_EXECUTION_PACKAGE.md, WAVE_2_EMAIL_EXECUTION_PACKAGE.md; 75 min combined user action). Orchestration script complete. User action required June 14-15.
+3. **seedwarden**: Track B infrastructure production-ready; 5 user gates (2.5-3.5 hrs total) await execution. Temporary unpause expires June 16 00:00 UTC. Phase 3 contractor search complete (11 verified contractors, June 17-30 outreach).
+4. **open-repo**: Phase 5 feature branch merge-ready (all 51 ZIM tests passing). June 12 deployment date passed. Awaiting: merge approval, database credentials, deployment approval.
+5. **mfg-farm**: Awaiting test print execution (0.20mm layer height, PLA+, 3 walls, 220-225°C). Temporary unpause expires June 16 00:00 UTC.
+6. **systems-resilience**: Awaiting platform decision (deadline PASSED June 15 EOD). Deployment runbooks staged for both Nextcloud+Matrix and Discourse options. User must provide: platform choice, credentials (Nextcloud) or domain+SMTP (Discourse).
+7. **cybersecurity-hardening**: Paused awaiting VeraCrypt pre-boot restart and completion of Phase 1 steps 1.4-1.7.
+8. **off-grid-living**: Complete; awaiting user social media execution.
+
+**Conclusion**: All autonomous project work is blocked on user actions or future scheduled events. Exploration Queue is empty. Standing-by is the correct status. **CRITICAL USER ACTION REQUIRED**: systems-resilience platform decision (deadline June 15 EOD — NOW OVERDUE, escalate to user immediately).
+
+---
+
 ## Session 3611 (June 15 02:45 UTC — Standing-By Orientation Verification, All Systems Ready)
 
 **Status**: ✅ **STANDING-BY CONFIRMED**. Orchestrator re-verified all systems ready for June 16 13:30 UTC market open. Zero executable autonomous work (all blocked on user decisions or scheduled events). All critical systems operational. NVDA/GOOGL models evaluated and staged for deployment June 15 21:00+ UTC and June 19+ UTC respectively.
