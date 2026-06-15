@@ -1,3 +1,24 @@
+## Session 3621 (2026-06-15 04:34 UTC — Orchestrator Continuation) — STANDING-BY SUSTAINED + PLATFORM DECISION CRITICAL
+
+**Task**: Continuation orientation; escalate critical platform decision (deadline TODAY); confirm standing-by state sustained.
+
+**Actions**:
+- ✅ Verified orientation complete from Session 3620
+- ✅ Confirmed zero autonomous work available (all projects user-gated, all exploration contingent on June 16+)
+- ✅ Updated CHECKIN.md with critical platform decision escalation (deadline June 15 EOD, ~19 hours)
+- ✅ Prepared commit for orchestration files
+
+**Critical Timeline**:
+- **13:30 UTC (9h)**: US market open — AAPL/MSFT trading continues
+- **20:00 UTC (15h)**: US market close
+- **21:00 UTC (16.5h)**: 🚀 **NVDA DEPLOYMENT** — Automatic orchestrator execution
+- **21:30 UTC (17h)**: Expected deployment completion
+- **June 15 23:59 UTC**: 🔴 **PLATFORM DECISION DEADLINE** (19h remaining)
+
+**Decision**: Continue standing-by. No autonomous work until: (a) platform decision received (immediate deployment), (b) 21:00 UTC NVDA deployment trigger, or (c) June 16 external events.
+
+---
+
 ## Session 3620 (2026-06-15 04:26 UTC — Orchestrator) — FINAL ORIENTATION & STANDING-BY SUSTAINED
 
 **Task**: Final orientation; confirm standing-by state; prepare for 21:00 UTC NVDA deployment; escalate platform decision.

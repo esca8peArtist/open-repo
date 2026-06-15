@@ -1,5 +1,33 @@
 # Check-in Summary
 
+## Session 3621 (June 15 04:34 UTC — Continuation & Standing-By Confirmation)
+
+**Status**: ✅ **STANDING-BY SUSTAINED — NVDA DEPLOYMENT 16.5 HOURS AWAY** — No autonomous work performed (standing-by correct). Platform decision required TODAY by EOD.
+
+### Since Last Check-in (Sessions 3620-3621)
+
+**What was accomplished**:
+- ✅ Verified orientation complete (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md all current)
+- ✅ Confirmed zero autonomous work available (all projects user-gated or June 16+ contingent)
+- ✅ Escalated critical platform decision (deadline June 15 EOD, 19 hours remaining)
+- ✅ Verified NVDA deployment fully staged and ready for 21:00 UTC trigger
+
+**What's in progress**:
+- ⏳ NVDA deployment staging — triggers automatically at 21:00 UTC (no action needed)
+- ⏳ Waiting for systems-resilience platform decision (user action required TODAY)
+- ⏳ Waiting for resistance-research Wave 1-2 execution (75-min user action, staged and ready)
+
+**Items needing user input**:
+1. **🔴 CRITICAL — Platform decision TODAY (June 15 EOD, 19 hours remaining)**
+   - Choose: **Option A (Nextcloud+Matrix)** recommended (8/10, zero Pi5 blockers) OR **Option B (Discourse)** (5/10, IPv6 workaround)
+   - If chosen: Provide public IP + domain + SMTP credentials → orchestrator will execute deployment June 16-17
+   
+2. **Suggested priority for next session**: Post-NVDA deployment validation (automated 21:30 UTC)
+   - June 16 13:30 UTC market-open verification (automated signal check for AAPL/MSFT/NVDA)
+   - Once platform decision received: Execute systems-resilience deployment immediately
+
+---
+
 ## Session 3620 (June 15 04:26 UTC — Final Orientation & Standing-By Confirmation)
 
 **Status**: ✅ **STANDING-BY SUSTAINED — NVDA DEPLOYMENT 16.5 HOURS AWAY** — Confirmed no new autonomous work available. All systems operational. Awaiting user platform decision (systems-resilience) and scheduled NVDA deployment trigger (21:00 UTC).
