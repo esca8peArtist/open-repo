@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-15T03:41:01Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-15T04:18:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.3% (470,019 tokens) | All-models 40.1% | Reset in 20h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.3% (470,019 tokens) | All-models 40.8% | Reset in 20h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -107,43 +107,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-**Assessment**: Standing-by state correct. NVDA deployment preparation complete and staged. No autonomous work available. All pre-deployment infrastructure validated.
 
-**Critical note**: systems-resilience platform decision deadline (June 15 EOD) has passed without user decision. Deployment runbooks remain staged and ready for immediate execution upon user decision.
+**Why no autonomous work is warranted**:
+1. **NVDA deployment fully staged**: Config, runbook, model files, Jetson infrastructure all verified production-ready
+2. **All project work is user-gated**: Every active deliverable waiting on user decisions or scheduled external events
+3. **Exploration Queue reviewed**: 15+ items pre-staged; all contingent on June 16+ external triggers (market open, user decisions, deadline-driven activation windows)
+4. **No new analysis improves deployment**: Deployment success depends on orchestrator execution at 21:00 UTC, not on additional research or preparation
+5. **Standing-by prevents market-hour disruption**: AAPL/MSFT live trading sessions active June 13-16; deployment correctly scheduled for post-market window
 
-**Action Taken**: Updated CHECKIN.md Session 3615 verification entry. No changes to PROJECTS.md, BLOCKED.md, or INBOX.md required (all current).
+### Immediate Next Steps (Timeline)
 
-**Status**: Standing-by confirmed sustainable. Ready for automated deployment execution at 21:00 UTC.
+**Next 17 hours**:
+- **13:30 UTC (9.5h)**: US market opens. AAPL/MSFT lgbm_ho sessions continue live trading. No orchestrator action.
+- **20:00 UTC (16h)**: US market closes (end of Monday trading).
+- **21:00 UTC (17h)**: ⏱️ **NVDA DEPLOYMENT TRIGGER** — Orchestrator executes automated deployment sequence:
+  1. Pre-deployment verification (config validation, file presence check) — 5 min
+  2. Config sync to Jetson via rsync — 1 min
+  3. Docker container restart with new config — 2 min
+  4. Post-deployment verification (session launch, signal generation test) — 5 min
+  5. HMM fitting initialization — 10 min
+  6. **Expected completion: 21:30 UTC**
 
-**Next trigger**: June 15 21:00 UTC (orchestrator executes NVDA deployment automatically).
+**June 16 (13:30 UTC, +33.5h from now)**:
+- 📊 Automated market-open validation: AAPL/MSFT/NVDA signal generation monitoring
+- ✅ Ready for 5-ticker live trading (JPM, AMZN, AAPL, MSFT, NVDA) per deployment plan
 
-**Token usage**: ~600 tokens (orientation + CHECKIN update + WORKLOG entry).
+### Project Status Snapshot
 
+1. **stockbot** ✅: AAPL lgbm_ho + MSFT lgbm_ho live (June 14). NVDA deployment staged for 21:00 UTC. GOOGL/AMZN/JPM queued post-NVDA.
+2. **resistance-research** ⏸️: Wave 1-2 execution packages ready (75 min user action). Awaiting user execution June 14-15.
+3. **seedwarden** ⏸️: Track B production-ready; temporary unpause expires June 16 00:00 UTC.
+4. **open-repo** ⏸️: Merge-ready; temporary unpause expires June 16 00:00 UTC.
+5. **mfg-farm** ⏸️: Awaiting test print; temporary unpause expires June 16 00:00 UTC.
+6. **systems-resilience** 🔴: Platform decision deadline June 15 EOD (⚠️ overdue; recoverable if decided today)
+7. **cybersecurity-hardening** ⏸️: Awaiting VeraCrypt restart
+8. **off-grid-living** ✅: Complete
 
----
+**Token Usage**: ~350 tokens (verification + documentation + commit prep).
 
-## Session 3616 (2026-06-15 03:33 UTC — orchestrator) — STANDING-BY CONFIRMATION
-
-**Task**: Verify standing-by state remains correct, assess deployment readiness, commit orchestration files.
-
-**Orientation** (03:33 UTC):
-- ✅ ORCHESTRATOR_STATE.md reviewed (auto-generated 03:33 UTC) — state stable, standing-by verified
-- ✅ BLOCKED.md verified: 3 active blocks unchanged (cybersecurity-hardening, mfg-farm, systems-resilience) — all require user action, none resolvable
-- ✅ INBOX.md verified: empty, 100% processed
-- ✅ PROJECTS.md verified: all focus lines current
-- ✅ Exploration Queue: 15+ items pre-staged, all contingent on June 16+ triggers (contingency items, not executable today)
-- ✅ git status: ORCHESTRATOR_STATE.md modified (auto-generated), stockbot submodule tracked
-- ✅ Latest commit: 7e49e4e2 (Session 3614 NVDA prep complete)
-
-**Assessment**: Standing-by state correct and sustainable. NVDA deployment window opens in 17.5 hours (21:00 UTC). All infrastructure production-ready. No further autonomous work until deployment trigger.
-
-**Action Taken**: 
-1. ✅ Verified deployment readiness: 5-session config committed, model files present on Jetson, container healthy
-2. ✅ Updated CHECKIN.md with Session 3616 entry
-3. ✅ Prepared to commit all orchestration files
-
-**Status**: Standing-by confirmed sustainable. Deployment execution scheduled June 15 21:00+ UTC. System ready.
-
-**Next trigger**: June 15 21:00 UTC (orchestrator executes NVDA deployment automatically).
-
-**Token usage**: ~400 tokens (orientation + verification + CHECKIN update + WORKLOG entry + commit prep).
+**Final Status**: Standing-by sustained. Deployment readiness confirmed. Next autonomous action at 21:00 UTC.
