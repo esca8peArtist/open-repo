@@ -1,15 +1,18 @@
 ---
 title: "USPTO Trademark Filing Strategy — ModRun"
 created: 2026-05-21
-status: ready-to-file
-scope: "USPTO trademark filing for physical 3D-printed products and digital designs, enabling Amazon Brand Registry and Vine reviews. June 15 target filing for ~March 2027 registration."
+updated: 2026-06-16
+status: OVERDUE — file immediately (June 15 deadline passed)
+scope: "USPTO trademark filing for physical 3D-printed products and digital designs, enabling Amazon Brand Registry and Vine reviews. June 15 original target has passed — file within 7 days of Etsy launch."
 confidence: high
 related: PHASE_2_CAPITAL_DEPLOYMENT_TIMELINE.md, AMAZON_FBA_ALTERNATIVE_3PL_COMPARISON.md
 ---
 
 # USPTO Trademark Filing Strategy — ModRun
 
-**Lead finding:** File a Section 1(a) use-in-commerce application for "MODRUN" as a word mark in International Class 20 (furniture, desk organizers, and non-electric plastic storage accessories) by June 15, 2026. With the 8–10 month examination timeline plus 3-month post-publication registration window, a June 15 filing targets registration by approximately April–May 2027. Amazon accepts pending trademark applications for Brand Registry enrollment from the moment the serial number is assigned — meaning Brand Registry access (and Vine review eligibility) can be obtained within 2–3 days of the trademark being filed, not after registration. This makes June 15 the critical pre-launch deadline, not the 9-month registration arrival date.
+**Updated status (June 16, 2026):** The June 15 filing target has passed. File as soon as the Etsy listing is live (needed for the Section 1(a) specimen — a screenshot of the live listing). If Etsy launches June 24, file no later than June 25. Every day of delay is a day without Amazon Brand Registry access and Vine review enrollment. The filing procedure below is unchanged.
+
+**Original lead finding:** File a Section 1(a) use-in-commerce application for "MODRUN" as a word mark in International Class 20 (furniture, desk organizers, and non-electric plastic storage accessories). With the 8–10 month examination timeline plus 3-month post-publication registration window, a June 25 filing targets registration by approximately May–June 2027. Amazon accepts pending trademark applications for Brand Registry enrollment from the moment the serial number is assigned — meaning Brand Registry access (and Vine review eligibility) can be obtained within 2–3 days of the trademark being filed, not after registration.
 
 ---
 
