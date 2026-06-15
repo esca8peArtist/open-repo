@@ -43,7 +43,7 @@ Keep your headphones off the desk and your headset cable actually organized. Unl
 — Built-in rubber pads protect your desk surface (no scratches, no slipping).
 — Works with desk tops 12mm, 25mm, or 40mm thick (select your size at checkout).
 — 55mm arm reach holds full-size gaming headsets and studio headphones.
-— Printed to order in {{CITY}}, {{STATE}} from PLA+ filament.
+— Printed to order in the USA from PLA+ filament.
 
 HOW IT WORKS
 The C-clamp slides over your desk edge and grips with friction — the rubber pads do the holding work. The hook arm angles slightly upward so your headset stays put. The cable-wrap post keeps your cable coiled neatly when your headset is hanging.
@@ -74,7 +74,7 @@ PART OF THE ModRun DESK ECOSYSTEM
 This hook pairs with the ModRun cable management rail (sold separately). Same aesthetic, same material, designed for the same desk setup. See my shop for the full ModRun system.
 
 PROCESSING & SHIPPING
-Printed to order — processing time {{PROCESSING_DAYS}} business days. Ships via USPS First Class in a padded poly mailer.
+Printed to order — processing time 3–5 business days. Ships via USPS First Class in a padded poly mailer.
 
 Questions? Message me — I'm happy to help you choose the right size.
 ```

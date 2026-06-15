@@ -154,7 +154,7 @@ WHAT YOU GET:
 - Material: PLA+ or PETG (see listing variants)
 - Color: Black (default), White, or Grey (custom colors by request)
 - Installation: Mounts to any flat surface or ModRun rail
-- Dimensions: [INSERT YOUR CLIP DIMENSIONS]
+- Dimensions: Varies by SKU — 3mm cable channel (USB/audio cables), 6mm channel (USB-C/power), 12mm channel (thick power cables). Rail sections: 100mm standard, 200mm extended. Clip body: approximately 22mm wide × 18mm tall × 12mm deep (snap-arm included).
 
 HOW TO INSTALL:
 1. Flush-mount the ModRun clip to your desk, rail, or cable channel using M3 hardware (included for Pro tier)
