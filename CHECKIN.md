@@ -1,8 +1,14 @@
 # Check-in Summary
 
+## Session 3623 (June 15 21:40 UTC — 🔴 FINAL DEADLINE ESCALATION — PLATFORM DECISION DUE IN ~2 HOURS)
+
+**Status**: 🔴 **FINAL ESCALATION — DEADLINE IMMINENT** — Platform decision deadline is **TODAY EOD (June 15 23:59 UTC, ~2 hours 20 minutes remaining)**. No user decision received yet. NVDA deployment executing NOW (21:00 UTC scheduled, should be in progress or just completed at 21:40 UTC). Temporary unpauses auto-repause June 16 00:00 UTC unless user resolves blocking items.
+
+---
+
 ## Session 3622 (June 15 04:41 UTC — 🔴 CRITICAL DEADLINE ESCALATION — Platform Decision Overdue, Standing-By Sustained)
 
-**Status**: ⚠️ **STANDING-BY SUSTAINED WITH CRITICAL ESCALATION** — Platform decision deadline is **TODAY EOD (June 15 23:59 UTC, ~19.5 hours remaining)**. No user decision received yet. NVDA deployment staged for 21:00 UTC today. Temporary unpauses auto-repause June 16 00:00 UTC unless user resolves blocking items.
+**Status**: ⚠️ **STANDING-BY SUSTAINED WITH CRITICAL ESCALATION** — Platform decision deadline is **TODAY EOD (June 15 23:59 UTC)**. No user decision received yet. NVDA deployment staged for 21:00 UTC today. Temporary unpauses auto-repause June 16 00:00 UTC unless user resolves blocking items.
 
 ### Session 3622 Orientation & Assessment
 

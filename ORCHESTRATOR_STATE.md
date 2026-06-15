@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-15T04:41:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-15T21:40:50Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.3% (470,019 tokens) | All-models 41.4% | Reset in 19h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.3% (470,019 tokens) | All-models 41.6% | Reset in 2h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -107,34 +107,6 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
-**Why no autonomous work is warranted**:
-1. **NVDA deployment fully staged**: Config, runbook, model files, Jetson infrastructure all verified production-ready
-2. **All project work is user-gated**: Every active deliverable waiting on user decisions or scheduled external events
-3. **Exploration Queue reviewed**: 15+ items pre-staged; all contingent on June 16+ external triggers (market open, user decisions, deadline-driven activation windows)
-4. **No new analysis improves deployment**: Deployment success depends on orchestrator execution at 21:00 UTC, not on additional research or preparation
-5. **Standing-by prevents market-hour disruption**: AAPL/MSFT live trading sessions active June 13-16; deployment correctly scheduled for post-market window
-
-### Immediate Next Steps (Timeline)
-
-**Next 17 hours**:
-- **13:30 UTC (9.5h)**: US market opens. AAPL/MSFT lgbm_ho sessions continue live trading. No orchestrator action.
-- **20:00 UTC (16h)**: US market closes (end of Monday trading).
-- **21:00 UTC (17h)**: ⏱️ **NVDA DEPLOYMENT TRIGGER** — Orchestrator executes automated deployment sequence:
-  1. Pre-deployment verification (config validation, file presence check) — 5 min
-  2. Config sync to Jetson via rsync — 1 min
-  3. Docker container restart with new config — 2 min
-  4. Post-deployment verification (session launch, signal generation test) — 5 min
-  5. HMM fitting initialization — 10 min
-  6. **Expected completion: 21:30 UTC**
-
-**June 16 (13:30 UTC, +33.5h from now)**:
-- 📊 Automated market-open validation: AAPL/MSFT/NVDA signal generation monitoring
-- ✅ Ready for 5-ticker live trading (JPM, AMZN, AAPL, MSFT, NVDA) per deployment plan
-
-### Project Status Snapshot
-
-1. **stockbot** ✅: AAPL lgbm_ho + MSFT lgbm_ho live (June 14). NVDA deployment staged for 21:00 UTC. GOOGL/AMZN/JPM queued post-NVDA.
 2. **resistance-research** ⏸️: Wave 1-2 execution packages ready (75 min user action). Awaiting user execution June 14-15.
 3. **seedwarden** ⏸️: Track B production-ready; temporary unpause expires June 16 00:00 UTC.
 4. **open-repo** ⏸️: Merge-ready; temporary unpause expires June 16 00:00 UTC.
@@ -146,3 +118,31 @@ User has manually lifted the pause directive early (was scheduled June 15 00:00 
 **Token Usage**: ~350 tokens (verification + documentation + commit prep).
 
 **Final Status**: Standing-by sustained. Deployment readiness confirmed. Next autonomous action at 21:00 UTC.
+
+
+## Session 3622 (June 15 04:41 UTC) — Standing-By Orientation & Critical Deadline Escalation
+
+**Duration**: ~7 minutes
+**Work completed**: Orientation verification + check-in update + critical deadline documentation
+**Status**: Standing-by sustained with critical escalation
+
+### What was done:
+1. ✅ Orientation complete (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, CHECKIN.md, PROJECTS.md all verified current)
+2. ✅ Verified zero autonomous work available (all projects user-gated or contingent on June 16+)
+3. ✅ Escalated critical deadline (systems-resilience platform decision due TODAY EOD, June 15 23:59 UTC)
+4. ✅ Updated CHECKIN.md Session 3622 with deadline escalation and timeline
+5. ✅ Committed to master (commit 3f73be37)
+
+### Critical status:
+- **DEADLINE TODAY**: systems-resilience platform decision (Nextcloud+Matrix vs Discourse) due June 15 EOD (~19.5 hours remaining)
+- **BLOCKING ITEMS**: 3 active blocks (all user-action): cybersecurity-hardening VeraCrypt, mfg-farm test print, systems-resilience platform choice
+- **AUTO-REPAUSE**: June 16 00:00 UTC unless user resolves one or more blocks
+- **DEPLOYMENT STAGED**: NVDA (21:00 UTC today), both platform options (Nextcloud+Matrix runbook, Discourse runbook with workarounds)
+
+### Recommendation for user:
+**Platform choice**: Nextcloud+Matrix (8/10 vs Discourse 5/10, more suitable for Pi5 8GB RAM). Once provided with credentials, orchestrator executes 4-6h deployment immediately.
+
+### Next scheduled action:
+- **21:00 UTC today**: NVDA deployment (automatic)
+- **June 16 00:00 UTC**: Auto-repause unless blocks resolved
+- **June 16 13:30 UTC**: Market-open validation (AAPL/MSFT/NVDA, automatic)

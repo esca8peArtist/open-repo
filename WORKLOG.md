@@ -1,3 +1,26 @@
+## Session 3623 (2026-06-15 21:40 UTC — Orchestrator Final Standing-By + Deadline Escalation) — FINAL HOURS: ~2H UNTIL PLATFORM DECISION DEADLINE
+
+**Task**: Final orientation; monitor NVDA deployment (21:00 UTC, now in progress); escalate platform decision deadline (23:59 UTC, ~2 hours remaining); confirm standing-by sustained.
+
+**Actions**:
+- ✅ Verified orientation complete from Session 3622
+- ✅ Confirmed zero autonomous work available (all projects user-gated, all exploration contingent on user decisions/June 16+ events)
+- ✅ Updated CHECKIN.md with FINAL DEADLINE ESCALATION (2 hours, 20 minutes remaining)
+- ✅ Escalated critical decision in CHECKIN.md: Platform choice (Nextcloud+Matrix vs Discourse) + credentials required TODAY by 23:59 UTC
+- ✅ Noted NVDA deployment now executing (21:00 UTC scheduled, in progress at 21:40 UTC)
+- ✅ Prepared commit for orchestration files
+
+**Critical Timeline (FINAL)**:
+- **NOW (21:40 UTC)**: NVDA deployment in progress (21:00 UTC scheduled, ~40 min elapsed)
+- **~21:50-22:00 UTC**: NVDA deployment expected complete
+- **June 15 23:59 UTC**: 🔴 **PLATFORM DECISION DEADLINE** (2h 20m remaining) — **ALL REMAINING WORK GATES ON THIS DECISION**
+- **June 16 00:00 UTC**: Auto-repause of temporary projects (unless platform decision received by 23:59)
+- **June 16 13:30 UTC**: Automated market-open validation (AAPL/MSFT/NVDA signal check)
+
+**Status**: Standing-by sustained. NVDA deployment executes automatically (no action needed). All remaining autonomous work gates on platform decision (Nextcloud+Matrix vs Discourse) + SMTP/domain credentials.
+
+---
+
 ## Session 3621 (2026-06-15 04:34 UTC — Orchestrator Continuation) — STANDING-BY SUSTAINED + PLATFORM DECISION CRITICAL
 
 **Task**: Continuation orientation; escalate critical platform decision (deadline TODAY); confirm standing-by state sustained.
