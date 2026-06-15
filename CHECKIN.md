@@ -1,3 +1,11 @@
+# Check-in Summary — Session 3606 (June 15 01:37 UTC — Standing-By Verification, 26th Consecutive)
+
+## Session 3606 — Orchestrator Standing-By Verification (26th Consecutive)
+
+**Status**: ✅ **STANDING-BY CONFIRMED SUSTAINABLE**. System verified in correct standing-by mode at June 15 01:37 UTC. All three active blocks remain unresolved and require user input; no autonomous work available; exploration queue fully prepped; standing-by state is sustainable and working as designed. ⚠️ **CRITICAL**: systems-resilience platform decision deadline is TODAY (June 15 EOD). User action required immediately.
+
+---
+
 # Check-in Summary — Session 3605 (June 15 01:00 UTC — Standing-By Verification, 25th Consecutive)
 
 ## Session 3605 — Orchestrator Standing-By Verification (25th Consecutive)
