@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-15T02:31:12Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-15T02:45:21Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.3% (470,019 tokens) | All-models 37.9% | Reset in 22h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.3% (470,019 tokens) | All-models 38.2% | Reset in 21h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -78,7 +78,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: stockbot — focus references Session 3569 (39 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 3569 (41 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
