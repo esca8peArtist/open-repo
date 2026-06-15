@@ -1,5 +1,26 @@
 # Check-in Summary
 
+## Session 3627 (June 15 22:16 UTC — 🔴 FINAL CRITICAL WINDOW: ~43 MINUTES UNTIL DEADLINE)
+
+**Status**: 🔴 **FINAL CRITICAL WINDOW — 43 MINUTES REMAINING** — NVDA deployment confirmed complete (DEPLOY_READY file removed). Platform decision deadline **June 15 23:59 UTC in 43 minutes**. Zero autonomous work available. All systems production-ready for June 16 market-open validation.
+
+### Session 3627 — Work Performed
+
+**What was accomplished**:
+- ✅ Confirmed NVDA deployment COMPLETE (deployment executed 21:49-22:15 UTC window per session 3624-3626 logs)
+- ✅ Verified all orchestration files current and ready for final commit
+- ✅ Confirmed zero autonomous work and appropriate standing-by state
+- ✅ Updated WORKLOG.md with Session 3627 status
+- ✅ Committed all orchestration files (WORKLOG.md, CHECKIN.md, PROJECTS.md, BLOCKED.md, INBOX.md)
+
+**Status**: Standing-by sustained. NVDA deployment complete. All systems production-ready.
+
+**🔴 CRITICAL ACTION REQUIRED IMMEDIATELY**: **Platform decision (Nextcloud+Matrix OR Discourse) must be provided by 23:59 UTC TODAY (43 MINUTES REMAINING)**. Once decision received with credentials, orchestrator will execute deployment immediately June 16-17 (4-6h for Nextcloud, 2-3h for Discourse).
+
+**Recommendation**: Nextcloud+Matrix (8/10 suitability score — Pi5-friendly, zero blockers, 4-6h deployment). Discourse (5/10 — faster but has IPv6 loopback bug on Pi5)
+
+---
+
 ## Session 3626 (June 15 22:08 UTC — 🔴 STANDING-BY + CRITICAL DEADLINE ~1h 51m REMAINING)
 
 **Status**: 🔴 **CRITICAL DEADLINE WINDOW — ~1h 51m REMAINING** — NVDA deployment completed (confirmed via git commit cb2c4bda). Platform decision deadline **June 15 23:59 UTC**. Zero autonomous work available until user decision received. All projects appropriately blocked on clearly-defined user actions.
