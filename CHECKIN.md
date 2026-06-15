@@ -1,5 +1,51 @@
 # Check-in Summary
 
+## Session 3614 (June 15 03:15 UTC — NVDA Deployment Prep Complete)
+
+**Status**: ✅ **STANDING-BY + NVDA DEPLOYMENT READY** — all autonomous executable work completed. NVDA 5-session expansion prepared and ready to deploy at June 15 21:00 UTC (post-market close).
+
+### What Was Accomplished
+
+1. ✅ **NVDA Deployment Preparation Complete**:
+   - 5-session config created and staged: `projects/stockbot/src/active-sessions-june15-5session.json`
+   - Deployment runbook written: `projects/stockbot/docs/NVDA_DEPLOYMENT_RUNBOOK.md`
+   - Pre-deployment verification commands documented
+   - Deployment window: June 15 21:00 UTC (post-market, ≥12h pre-market June 16)
+
+2. ✅ **Verified NVDA Model Status**:
+   - Model file on Jetson: `NVDA_h10_lgbm_ho_70548cc9.pkl` (45KB, confirmed)
+   - Stacker ID: `70548cc9-e204-4f2b-a5bd-6df0494b8d31` (verified)
+   - Gate status: 7/7 gates PASS (OOS Sharpe 2.926, MaxDD 4.1%, Win Rate 78.49%)
+   - Status: DEPLOY-READY
+
+3. ⏳ **Standing-By Status Continues**:
+   - stockbot: Market open validation scheduled June 16 13:30 UTC
+   - resistance-research: Wave 1-2 packages await user execution
+   - seedwarden/open-repo: Temporary unpauses expire June 16 00:00 UTC
+   - mfg-farm/cybersecurity/systems-resilience: All blocked on user actions
+
+### Critical Items Requiring User Action
+
+1. **systems-resilience Platform Decision (⚠️ CRITICAL)**: Deadline June 15 EOD (now overdue). Choose Nextcloud+Matrix or Discourse; provide credentials. Deployment runbooks staged and ready for immediate execution once decision provided.
+
+### Immediate Next Steps (Autonomous)
+
+- **June 15 21:00 UTC** (18 hours from now): Execute NVDA deployment (orchestrator-automated)
+  - Pre-deployment verification (5 min)
+  - Config sync to Jetson (1 min)
+  - Container restart (2 min)
+  - Verification (5 min)
+  - Total: ~15 minutes, completion by 21:20 UTC
+  - HMM fitting: 21:20-21:30 UTC
+  - Ready for market: June 16 13:30 UTC
+
+- **June 16 13:30 UTC**: Market open validation (automatic)
+  - Monitor AAPL/MSFT/NVDA signal generation
+  - Confirm no trading errors
+  - Log results
+
+---
+
 ## Session 3613 (June 15 03:15 UTC — Standing-By Verification & Critical Escalation)
 
 **Status**: ✅ **STANDING-BY CONFIRMED** — all autonomous executable work completed. **⚠️ CRITICAL USER ACTION REQUIRED**: systems-resilience platform decision deadline is June 15 EOD (~20 hours remaining). Deployment runbooks staged and ready for immediate execution once user provides platform choice + credentials.
