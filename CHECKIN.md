@@ -1377,3 +1377,32 @@ Prepared comprehensive June 16 market validation infrastructure in preparation f
 4. **If June 16 market validation fails**: Escalate with root cause analysis + logs
 
 Orchestrator is operational and standing-by. No further autonomous work until external triggers fire (market open June 16, user decisions June 15, email execution June 14-15).
+
+---
+
+## Session 3614 (2026-06-15 03:16 UTC) — NVDA DEPLOYMENT PREPARATION
+
+**What was accomplished**:
+- ✅ NVDA deployment config prepared: added to active-sessions.json (5-session config, position_size_pct=0.08)
+- ✅ Configuration committed to stockbot submodule
+- ✅ PROJECTS.md focus updated (pruned 45-session-old reference, added NVDA deployment timeline)
+- ✅ Standing-by assessment confirmed: zero further autonomous work until June 15 21:00+ UTC or June 16 13:30 UTC triggers
+
+**What's in progress**:
+- NVDA deployment staged for execution at June 15 21:00+ UTC (outside market hours, 17.75h from session start)
+- Systems-resilience platform decision deadline PASSED (June 15 EOD), still awaiting user choice
+- Resistance-research Wave 1-2 execution deadline TODAY (June 15 23:59 UTC), user execution packages ready
+
+**Items needing your input**:
+1. **CRITICAL (DEADLINE PASSED)**: systems-resilience platform decision (Nextcloud+Matrix vs Discourse) — if deferred, reply with revised deadline
+2. **OPTIONAL**: Confirm NVDA deployment should proceed at 21:00+ UTC (config ready, automatic if no user override)
+3. **INFORMATIONAL**: Wave 1-2 execution packages remain ready for user execution June 14-15 window (ends TODAY)
+
+**Suggested priorities for next session**:
+1. If June 15 21:00 UTC deployment confirmed: monitor NVDA container health post-deployment (verify WebSocket connects, signal generation begins)
+2. If June 16 market opens as scheduled: execute automated market validation (JUNE_16_PREMARKET_VALIDATION_CHECKLIST.md), monitor AAPL/MSFT trade execution
+3. Post-June 16 validation: prepare Phase 4 live trading documentation (feature flags, canary deployment, rollback procedures) for Phase 4 execution post-June 18 deadline
+
+**Orchestrator status**: Standing-by correctly. All systems operational. NVDA deployment ready for execution. Next human decision: platform choice (critical, overdue) and deployment confirmation (automatic unless overridden).
+
+---
