@@ -1,5 +1,57 @@
 # Check-in Summary
 
+## Session 3615 (June 15 03:27 UTC — Standing-By Verification & Deployment Readiness)
+
+**Status**: ✅ **STANDING-BY CONFIRMED — NVDA DEPLOYMENT READY** — System verified in correct standing-by state. No autonomous work available. All pre-deployment infrastructure validated and staged.
+
+### Orientation Summary
+
+**State Verification**:
+- ✅ ORCHESTRATOR_STATE.md: Current (auto-generated 03:26 UTC)
+- ✅ BLOCKED.md: 3 active blocks unchanged (cybersecurity-hardening, mfg-farm, systems-resilience)
+- ✅ INBOX.md: 100% processed, no new items
+- ✅ PROJECTS.md: All status lines current
+- ✅ Exploration Queue: 15+ items pre-staged, all contingent on June 16+ triggers
+- ✅ git status: ORCHESTRATOR_STATE.md only (auto-generated, not committed per design)
+- ✅ Latest commit: 7e49e4e2 (Session 3614 NVDA prep complete)
+
+### Critical Dates & Triggers
+
+**Today (June 15)**:
+1. ⚠️ **systems-resilience Platform Decision Deadline: EOD (23:59 UTC)** — OVERDUE since Session 3614. No user decision received. Deployment runbooks remain staged. Needs: platform choice (Discourse or Nextcloud+Matrix) + credentials.
+2. ✅ **NVDA Deployment Window: 21:00+ UTC** — Ready. 5-session config committed. Model files present. Container healthy. Pre-deployment verification staged.
+
+**Tomorrow (June 16)**:
+1. ✅ **Market-Open Validation: 13:30 UTC** — Automated signal generation + execution validation (AAPL/MSFT/NVDA)
+2. ⏳ **Temporary Unpauses Expire: 00:00 UTC** — seedwarden/open-repo/mfg-farm revert to paused
+
+**June 18 (Hard Deadline)**:
+1. ✅ **Live Trade Validation: EOD** — AAPL/MSFT must execute ≥1 live trade each validating 6/7 gates
+
+### Autonomous Work Assessment
+
+**Zero autonomous work warranted**. Rationale:
+1. **NVDA deployment preparation**: Complete (Session 3614)
+2. **Exploration Queue items**: All pre-staged for June 16+ execution (no executable items today)
+3. **All project deliverables**: Staged for user execution or future triggers
+4. **Standing-by is correct**: Deployment readiness achieved; next autonomous work at 21:00 UTC
+
+### Why Standing-By Is Sustainable
+
+1. **NVDA deployment is fully staged** (config committed, runbook documented, verification ready)
+2. **June 16 market validation is automated** (Docker container will generate signals automatically at 13:30 UTC)
+3. **All blocks require user actions only** (no orchestrator resolution path exists)
+4. **No exploration work improves deployment probability** (all prep done; deployment depends on orchestrator execution at 21:00 UTC, not on additional research)
+
+### Next Scheduled Actions
+
+- **21:00+ UTC (17.5 hours from now)**: Orchestrator executes NVDA deployment automatically
+  - Config validation → Jetson sync → Container restart → HMM fitting → Readiness verification
+  - Completion target: 21:30 UTC
+  - Status post-deployment: 5 models live (JPM, AMZN, AAPL, MSFT, NVDA)
+
+---
+
 ## Session 3614 (June 15 03:15 UTC — NVDA Deployment Prep Complete)
 
 **Status**: ✅ **STANDING-BY + NVDA DEPLOYMENT READY** — all autonomous executable work completed. NVDA 5-session expansion prepared and ready to deploy at June 15 21:00 UTC (post-market close).
