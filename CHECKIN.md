@@ -1,5 +1,43 @@
 # Check-in Summary
 
+## Session 3617 (June 15 03:58 UTC — Deployment Readiness Verification & Standing-By Confirmation)
+
+**Status**: ✅ **STANDING-BY CONFIRMED — NVDA DEPLOYMENT 17 HOURS AWAY** — Full deployment readiness verification completed. All infrastructure production-ready. Zero autonomous work available.
+
+### Verification Summary
+
+**Deployment Infrastructure Verified**:
+- ✅ 5-session config: `projects/stockbot/src/active-sessions-june15-5session.json` (5.2 KB)
+- ✅ Deployment runbook: `projects/stockbot/docs/NVDA_DEPLOYMENT_RUNBOOK.md` (4.6 KB)
+- ✅ NVDA model on Jetson: NVDA_h10_lgbm_ho_70548cc9.pkl (45 KB)
+- ✅ Jetson Docker: stockbot container UP 14h (healthy), stockbot-web UP 12d
+- ✅ Jetson connectivity: SSH responsive, trading sessions operational
+- ✅ Market environment: Pre-market window; deployment scheduled post-market 21:00 UTC
+
+**State Verification**:
+- ✅ ORCHESTRATOR_STATE.md: Current (auto-generated 03:48 UTC)
+- ✅ BLOCKED.md: 3 active blocks (all user action)
+- ✅ INBOX.md: 100% processed
+- ✅ PROJECTS.md: All status lines current
+- ✅ Exploration Queue: 15+ items pre-staged; all contingent on June 16+ triggers
+- ✅ Usage: Sonnet 5.3%, all-models 40.2% — nominal
+
+### Why Standing-By Is Correct
+
+1. **NVDA deployment fully staged**: Config, runbook, models, infrastructure all production-ready
+2. **All project work is user-gated**: Every deliverable waiting on user decisions or external events
+3. **Exploration Queue contingent on June 16+**: No executable items available today
+4. **Standing-by prevents market disruption**: AAPL/MSFT live trading June 13-16; deployment correctly scheduled post-market
+
+### Immediate Timeline
+
+- **13:30 UTC (9.5h)**: US market opens — AAPL/MSFT trading continues
+- **20:00 UTC (16h)**: US market closes
+- **21:00 UTC (17h)**: 🚀 **NVDA DEPLOYMENT TRIGGER** — Orchestrator executes automated deployment (config sync + container restart + verification + HMM fitting), completion target 21:30 UTC
+- **June 16 13:30 UTC**: Market-open validation (AAPL/MSFT/NVDA signal check, automated)
+
+---
+
 ## Session 3616 (June 15 03:33 UTC — Standing-By Confirmation & Deployment Window Ready)
 
 **Status**: ✅ **STANDING-BY CONFIRMED — NVDA DEPLOYMENT WINDOW OPEN IN 17.5 HOURS** — System verified operational and ready. No autonomous work available. All deployment infrastructure staged and verified. Deployment execution scheduled 21:00 UTC.

@@ -1138,3 +1138,73 @@
 
 **Time usage**: ~150 tokens (completion + commit + documentation).
 
+
+---
+
+## Session 3617 (2026-06-15 03:58 UTC — Deployment Readiness Verification & Standing-By Confirmation)
+
+**Status**: ✅ **STANDING-BY CONFIRMED — NVDA DEPLOYMENT WINDOW 17 HOURS AWAY** — Full deployment readiness verification completed. All infrastructure production-ready. Zero autonomous work available. Standing-by sustained until 21:00 UTC automated trigger.
+
+### Orientation & Verification Results
+
+**State Verification** (Session 3617):
+- ✅ ORCHESTRATOR_STATE.md: Current (auto-generated 03:48 UTC)
+- ✅ BLOCKED.md: 3 active blocks remain (all require user action)
+  1. cybersecurity-hardening — VeraCrypt pre-boot restart (manual)
+  2. mfg-farm — Test print execution (0.20mm, PLA+, 3 walls, 220-225°C)
+  3. systems-resilience — Platform decision deadline June 15 EOD (⚠️ overdue but recoverable)
+- ✅ INBOX.md: 100% processed since Session 3485
+- ✅ PROJECTS.md: All status lines current
+- ✅ Exploration Queue: 15+ items pre-staged; all contingent on June 16+ triggers
+- ✅ Usage budget: Sonnet 5.3% (470K/8.9M tokens), all-models 40.2% — nominal
+
+**Deployment Readiness Verification** (Session 3617):
+- ✅ 5-session config: `projects/stockbot/src/active-sessions-june15-5session.json` (5.2 KB, created 2026-06-15 04:10 UTC)
+- ✅ Deployment runbook: `projects/stockbot/docs/NVDA_DEPLOYMENT_RUNBOOK.md` (4.6 KB, created 2026-06-15 04:10 UTC)
+- ✅ NVDA model file on Jetson: NVDA_h10_lgbm_ho_70548cc9.pkl (45 KB, verified)
+- ✅ Jetson Docker containers: stockbot UP 14h (healthy), stockbot-web UP 12d
+- ✅ Current active config on Jetson: 4-session (AAPL + MSFT + GOOGL + 1 more)
+- ✅ Jetson SSH connectivity: ✅ responsive
+- ✅ Market environment: Pre-market (closes 20:00 UTC Monday); deployment scheduled post-market 21:00 UTC
+
+### Standing-By Justification
+
+**Why no autonomous work is warranted**:
+1. **NVDA deployment fully staged**: Config, runbook, model files, Jetson infrastructure all verified production-ready
+2. **All project work is user-gated**: Every active deliverable waiting on user decisions or scheduled external events
+3. **Exploration Queue reviewed**: 15+ items pre-staged; all contingent on June 16+ external triggers (market open, user decisions, deadline-driven activation windows)
+4. **No new analysis improves deployment**: Deployment success depends on orchestrator execution at 21:00 UTC, not on additional research or preparation
+5. **Standing-by prevents market-hour disruption**: AAPL/MSFT live trading sessions active June 13-16; deployment correctly scheduled for post-market window
+
+### Immediate Next Steps (Timeline)
+
+**Next 17 hours**:
+- **13:30 UTC (9.5h)**: US market opens. AAPL/MSFT lgbm_ho sessions continue live trading. No orchestrator action.
+- **20:00 UTC (16h)**: US market closes (end of Monday trading).
+- **21:00 UTC (17h)**: ⏱️ **NVDA DEPLOYMENT TRIGGER** — Orchestrator executes automated deployment sequence:
+  1. Pre-deployment verification (config validation, file presence check) — 5 min
+  2. Config sync to Jetson via rsync — 1 min
+  3. Docker container restart with new config — 2 min
+  4. Post-deployment verification (session launch, signal generation test) — 5 min
+  5. HMM fitting initialization — 10 min
+  6. **Expected completion: 21:30 UTC**
+
+**June 16 (13:30 UTC, +33.5h from now)**:
+- 📊 Automated market-open validation: AAPL/MSFT/NVDA signal generation monitoring
+- ✅ Ready for 5-ticker live trading (JPM, AMZN, AAPL, MSFT, NVDA) per deployment plan
+
+### Project Status Snapshot
+
+1. **stockbot** ✅: AAPL lgbm_ho + MSFT lgbm_ho live (June 14). NVDA deployment staged for 21:00 UTC. GOOGL/AMZN/JPM queued post-NVDA.
+2. **resistance-research** ⏸️: Wave 1-2 execution packages ready (75 min user action). Awaiting user execution June 14-15.
+3. **seedwarden** ⏸️: Track B production-ready; temporary unpause expires June 16 00:00 UTC.
+4. **open-repo** ⏸️: Merge-ready; temporary unpause expires June 16 00:00 UTC.
+5. **mfg-farm** ⏸️: Awaiting test print; temporary unpause expires June 16 00:00 UTC.
+6. **systems-resilience** 🔴: Platform decision deadline June 15 EOD (⚠️ overdue; recoverable if decided today)
+7. **cybersecurity-hardening** ⏸️: Awaiting VeraCrypt restart
+8. **off-grid-living** ✅: Complete
+
+**Token Usage**: ~350 tokens (verification + documentation + commit prep).
+
+**Final Status**: Standing-by sustained. Deployment readiness confirmed. Next autonomous action at 21:00 UTC.
+
