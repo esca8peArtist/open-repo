@@ -1,10 +1,10 @@
-# Check-in Summary — Session 3600+ (June 16 standing-by verification — 20+ Consecutive)
+# Check-in Summary — Session 3601 (June 15 00:00 UTC — Standing-By Verification, 21st Consecutive)
 
-## Session 3600+ — Orchestrator Standing-By Verification (20th+ Consecutive) — Sustainable Standing-By
+## Session 3601 — Orchestrator Standing-By Verification (21st Consecutive)
 
-**Status**: ✅ **STANDING-BY SUSTAINABLE**. System confirmed in correct standing-by mode at June 16 00:00+ UTC. All orchestration files validated. Auto-repause window active June 16 00:00 UTC. Market-open validation scheduled June 16 13:30 UTC (automatic, regardless of repause status). **System operating as designed — standing-by is the correct state.**
+**Status**: ✅ **STANDING-BY CONFIRMED SUSTAINABLE**. System re-verified in correct standing-by mode at June 15 00:00 UTC. All orchestration files validated. Auto-repause window already active (June 16 00:00 UTC passed for sessions 3600+). Market-open validation scheduled June 16 13:30 UTC (automatic, regardless of project pause status). **System operating as designed — standing-by is sustainable.**
 
-### Session 3600+ Findings
+### Session 3601 Verification Findings
 
 - **All 3 active blocks UNRESOLVED (unchanged since Session 3599)**:
   - **cybersecurity-hardening**: VeraCrypt restart — manual Windows action only; cannot auto-verify
