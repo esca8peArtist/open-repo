@@ -1,7 +1,7 @@
 ## Session 3639 (June 16 05:20 UTC — 🔴 CRITICAL ESCALATION: systems-resilience DECISION 5H OVERDUE + ITEM 115 EXPLORATION FRAMEWORK COMPLETE)
 
-**Duration**: ~1 hour 10 minutes
-**Work completed**: Full orientation; systems-resilience critical escalation; Item 115 post-market-validation framework complete; ready for 13:15 UTC pre-market checks
+**Duration**: ~1 hour 30 minutes (ongoing)
+**Work completed**: Full orientation; systems-resilience critical escalation; Item 115 post-market-validation framework complete; Item 116 Phase 3 domain expansion research complete; ready for 13:15 UTC pre-market checks
 
 **Status**: 🔴 **CRITICAL USER DECISION NEEDED** — systems-resilience platform decision deadline **EXPIRED June 15 23:59 UTC** (now **5+ hours overdue**). Phase 5.1 deployment SOPs are production-ready (Nextcloud+Matrix recommended 8/10, Discourse not recommended 5/10). Once user decides, deployment can execute in 4-6 hours via copy-paste runbook. Escalated in CHECKIN.md with 1-hour urgency flag.
 
@@ -32,6 +32,21 @@
    - Clarified market validation readiness (automated, no intervention)
    - Reordered user action items by urgency (systems-resilience FIRST, then resistance-research optional, then manual tasks)
    - Added 1-hour urgency flag for platform decision
+
+4. ✅ **Item 116 Completion — Phase 3 Domain Expansion Candidates** (06:27–06:38 UTC, 11 minutes agent-driven research):
+   - **Spawned resistance-research subagent**: Agent a39cbbcbd34952cb1
+   - **Deliverables created** (3 files, 48 KB total):
+     - ✅ `PHASE_3_DOMAIN_CANDIDATES_UPDATE_JUNE_2026.md` (26 KB) — Legislative/litigation/movement landscape audit; 3 new candidates identified (M: Direct Democracy Defense 8.64, N: Whistleblower Protection 7.88, O: Government Procurement 7.02)
+     - ✅ `PHASE_3_CAPACITY_IMPACT_IF_EXPANSION.md` (11 KB) — If adding N+O: Nov-March hours rise from 189-236 to 229-286; Domain I defers 6 weeks, Domain L defers to Q2 2027; critical path (H,K,37a,49) unaffected
+     - ✅ `PHASE_3_EXPANDED_CANDIDATE_PRIORITY_MATRIX.md` (11 KB) — 13-16 domain full matrix; sorted by composite score; load-bearing vs deferrable identification
+   - **Key research findings**:
+     - **Candidate M (Direct Democracy) — URGENT**: Sept 30 deadline for ballot initiative attacks in 15+ states. Should execute as Phase 2 acceleration (July-Aug 2026), not Phase 3, or becomes Week 1 emergency with Domain 37a
+     - **Trump v. Slaughter decision imminent**: Signals SCOTUS will dismantle for-cause protections on independent agencies (NLRB, MSPB, FEC, EEOC, SEC). Domain K research scope expands to Agency Restructuring, not just SCOTUS reform
+     - **V-Dem downgrade March 2026**: US dropped from "liberal democracy" to "electoral democracy" (largest single-year drop in dataset history, 20th→51st place). Domain I urgency upgraded 6/10 → 8/10
+     - **Candidate N bundles with Domain 56**: Federal whistleblower protection (OPM NDA capture, IGG firings, OSC capture). Shares 80% distribution contacts (AFGE/NTEU/GAP), adds only 18-22 hours
+   - **Value**: Clarifies Phase 2→Phase 3 transition; flags Candidate M for immediate user decision; routes Candidates N/O to optional Phase 3 expansion or Q2 2027 deferral
+   - **Grounding**: All legislative data Congress.gov/state sites, litigation from SCOTUSblog/appellate dockets, movement data from FEC/990/media (current as of June 16 2026)
+   - **Status**: PRODUCTION-READY for Phase 2 Day 7 checkpoint (June 17-18) decision-making
 1. ✅ **Session 3639 orientation** (05:20–05:28 UTC):
    - ORCHESTRATOR_STATE.md reviewed (auto-generated 05:20 UTC)
    - BLOCKED.md verified: 3 active blocks (cybersecurity-hardening, mfg-farm, systems-resilience) all require user action; no autonomous resolution possible
