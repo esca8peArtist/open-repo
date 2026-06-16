@@ -1,8 +1,31 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3718 — June 16 23:54 UTC — STANDING BY CONFIRMED; FINAL COUNTDOWN TO DEADLINE)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — FINAL VERIFICATION COMPLETE; DEADLINE IN ~8h 6m**
+
+**Session Actions**:
+1. ✅ **Orientation verified** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md all current
+2. ✅ **Time verification** — Current time: June 16 23:54 UTC (via `date -u`)
+3. ✅ **Decision materials audit** — All three runbooks staged and ready:
+   - OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md (32K, Jun 16 21:11 UTC) ✅
+   - OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md (24K, Jun 16 21:12 UTC) ✅
+   - OPTION_C_INVESTIGATION_ROADMAP.md (26K, Jun 16 21:13 UTC) ✅
+4. ✅ **INBOX verification** — Zero new user decisions since Session 3717 (23:46 UTC)
+5. ✅ **Block status** — All 4 active blocks unchanged:
+   - **stockbot**: Awaiting user A/B/C decision (deadline June 17 08:00 UTC)
+   - **cybersecurity-hardening**: VeraCrypt restart (manual — cannot auto-verify)
+   - **mfg-farm**: Test print execution (manual — cannot auto-verify)
+   - **open-repo/systems-resilience**: Platform/runtime decisions pending
+6. ✅ **Deployment readiness** — All materials staged; orchestrator ready for immediate dispatch upon user decision
+
+**Interpretation**: Standing-by state is **correct by design**. All autonomous work exhausted. Orchestrator is ready and waiting for user direction on stockbot A/B/C within next 8 hours.
+
+---
+
 ## Since Last Check-in (Session 3717 — June 16 23:46 UTC — STANDING BY CONFIRMED; ORCHESTRATOR READY FOR USER DECISION)
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE: JUNE 17 08:00 UTC (~8h 14m REMAINING)**
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE: JUNE 17 08:00 UTC (~8h 6m REMAINING)**
 
 **Session Purpose**: Final pre-deadline confirmation; verify orchestrator standing-by state is correct; document readiness to dispatch upon user decision.
 
