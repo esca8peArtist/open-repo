@@ -1,8 +1,8 @@
-## Session 3675 (June 16 13:42–13:50 UTC — 🚨 CRITICAL: MARKET VALIDATION SIGNAL DROPOUT DETECTED)
+## Session 3675 (June 16 13:42–14:00 UTC — 🚨 CRITICAL: MARKET VALIDATION SIGNAL DROPOUT DETECTED)
 
-**Duration**: ~8 minutes (diagnosis + escalation)
+**Duration**: ~18 minutes (diagnosis + escalation + block verification)
 
-**Status**: ❌ **MARKET VALIDATION HALTED — CRITICAL SIGNAL DROPOUT ACROSS ALL 5 SESSIONS**
+**Status**: ❌ **MARKET VALIDATION HALTED — CRITICAL SIGNAL DROPOUT CONFIRMED PERSISTS. USER DECISION DEADLINE: 14:00 UTC**
 
 **Work completed**:
 
@@ -47,12 +47,20 @@
 **Git Commit (13:50 UTC)**:
 - Committed BLOCKED.md with critical issue entry
 
+### Block Verification (13:55 UTC)
+
+**Verify command executed**:
+- Command: `ssh -T awank@100.120.18.84 "docker logs stockbot --tail 50 2>&1 | grep -c 'buy_prob=0.0000'"`
+- **Result**: 8 (block is CONFIRMED still active)
+- **Interpretation**: Signal dropout persists across multiple cycles; issue was NOT resolved by container restart
+
 ### Assessment
 
-- **Validation Impact**: Only 18 minutes into 6.5-hour window, but validation is effectively halted (zero trades can execute)
-- **Hard Deadline Impact**: June 18 EOD gate validation deadline now at risk
+- **Validation Impact**: 25 minutes into 6.5-hour window, validation is effectively halted (zero trades can execute)
+- **Hard Deadline Impact**: June 18 EOD gate validation deadline now at CRITICAL risk
 - **Root Cause Unknown**: Requires user investigation (feature preprocessing bug, model weights issue, or Alpaca data feed problem)
-- **Next Action**: Await user decision on whether to fix and resume today or defer to June 17
+- **Decision Deadline**: 14:00 UTC (approx 5 minutes from session start) — user must choose Option A (fix & resume) or Option B (cancel & reschedule June 17)
+- **Next Action**: Awaiting user decision. If no decision by 14:00 UTC, recommend Option B (cancel validation, schedule retrain + validation for June 17)
 
 ---
 
