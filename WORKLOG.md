@@ -1,3 +1,30 @@
+## Session 3660 (June 16 10:35 UTC — 🟢 STANDING-BY: MARKET VALIDATION COUNTDOWN T-2:40)
+
+**Duration**: 5 minutes (orientation + continuation)
+
+**Status**: ✅ **ALL SYSTEMS VERIFIED. ORCHESTRATOR STANDING-BY FOR 13:15 UTC PRE-MARKET CHECKLIST.**
+
+**Orientation (5 min)**:
+- ✅ Read ORCHESTRATOR_STATE.md (10:35 UTC), PROJECTS.md, BLOCKED.md, INBOX.md
+- ✅ Verified all 3 active blocks still requiring user action only (VeraCrypt, test print, platform decision)
+- ✅ Confirmed no blocks resolved since Session 3658
+- ✅ Confirmed no new INBOX items since June 14
+- ✅ Confirmed all 5 stockbot sessions healthy and scheduled for 13:15 UTC wake
+- ✅ Confirmed all pre-market infrastructure staged (6 checks ready, monitoring template ready, post-market analysis ready)
+- ✅ Confirmed no autonomous project work available (stockbot in validation phase, all others paused/blocked)
+
+**Decision**: Continuing standing-by state. All autonomous work complete. Scheduled monitoring work begins at 13:15 UTC.
+
+**Timeline to market validation**:
+- **13:15 UTC** (T-1:40): Pre-market checklist (JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md, 6 checks, ~10 min)
+- **13:30 UTC** (T-0:05): Market open; autonomous validation monitoring begins
+- **13:30-20:00 UTC**: Live market validation (5 sessions executing, hourly signal + fill queries)
+- **20:00 UTC** (T+9:25): Post-market analysis & routing decision (7-part tree, ~30-45 min)
+
+**No new work to execute**. All systems production-ready and monitored.
+
+---
+
 ## Session 3659 (June 16 10:20 UTC — 🟢 STANDING-BY CONTINUATION: PRE-MARKET CHECKLIST 13:15 UTC + MARKET VALIDATION 13:30 UTC)
 
 **Duration**: 2 minutes (orientation + status continuation)
