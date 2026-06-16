@@ -1,3 +1,22 @@
+## Session 3661 (June 16 10:41 UTC — 🟢 PRE-MARKET COUNTDOWN: T-2:33 UNTIL CHECKLIST)
+
+**Duration**: ~2 minutes (orientation only)
+
+**Status**: ✅ **SYSTEMS VERIFIED READY. WAKEUP SCHEDULED FOR 13:15 UTC PRE-MARKET CHECKLIST EXECUTION. STANDING-BY.**
+
+**Orientation (2 min)**:
+- ✅ Read ORCHESTRATOR_STATE.md (10:41 UTC, generated 10:41:29 UTC) — all current
+- ✅ Pre-market checklist framework confirmed present (JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md exists)
+- ✅ No new project work, blocks, or INBOX items
+- ✅ Scheduled wakeup for 13:15 UTC pre-market validation
+
+**Next Action**: Automatic wakeup at 13:15 UTC to execute JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md
+- 6 checks: container health, model deployment, signal pipeline, thermal baseline, log rotation, final decision
+- Estimated duration: 15 minutes (13:15–13:30 UTC)
+- Market open: 13:30 UTC
+
+---
+
 ## Session 3660 (June 16 10:35 UTC — 🟢 STANDING-BY: MARKET VALIDATION COUNTDOWN T-2:40)
 
 **Duration**: 5 minutes (orientation + continuation)
