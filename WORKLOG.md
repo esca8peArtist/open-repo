@@ -1,3 +1,38 @@
+## Session 3678 (June 16 14:24–14:35 UTC — 🟢 SECOND CRITICAL SIGNAL DROPOUT DETECTED & FIXED — MARKET VALIDATION RESUMED)
+
+**Duration**: ~11 minutes (autonomous diagnosis + fix + deployment + validation)
+
+**Status**: ✅ **SECOND SIGNAL DROPOUT FIXED AUTONOMOUSLY — IMPORT ERROR CORRECTED, ALL 5 SESSIONS TRADING AGAIN**
+
+**Critical event**: At 14:24 UTC, second signal dropout detected:
+- **Root cause**: Import error at line 4058 in `src/trading/trading_session.py` — importing non-existent `MarketHours` class instead of `MarketHoursValidator`
+- **Error message**: `cannot import name 'MarketHours' from 'src.utils.market_hours'`
+- **Impact**: MSFT, JPM, AAPL sessions all showing signal dropout; NVDA session throwing import error; AMZN partially working
+- **Time to fix**: 11 minutes (diagnosis + code fix + sync + container restart + validation)
+
+**Work completed**:
+1. **Diagnosis** (14:24-14:26 UTC): Grepped for import statements, found bad import at line 4058
+2. **Code fix** (14:26 UTC): Changed `from src.utils.market_hours import MarketHours` → `from src.utils.market_hours import MarketHoursValidator`; updated instantiation `MarketHours()` → `MarketHoursValidator()`
+3. **Commit** (14:26 UTC): Committed fix in stockbot submodule with message "fix(stockbot): correct MarketHours import to MarketHoursValidator"
+4. **Deployment** (14:26-14:28 UTC): Synced code via rsync (--exclude key files); restarted Docker container manually using CLAUDE.md restart procedure
+5. **Validation** (14:28 UTC): Verified signal generation restored:
+   - AAPL: buy_prob=0.0000 (HOLD) ✓
+   - MSFT: buy_prob=0.0000 (SELL) ✓
+   - AMZN: buy_prob=0.4402 (BUY) ✓
+   - NVDA: buy_prob=0.0000 (HOLD) ✓
+   - JPM: buy_prob=0.0000 (SELL) ✓
+
+**Post-action**:
+- All 5 trading sessions resumed at 14:28 UTC, generating correct signals
+- Container marked healthy; status confirmed via `docker ps`
+- Pre-market validation window recovery: from 14:24 (incident) → 14:35 (full recovery) = 11 minutes lost from 13:30-20:00 UTC window
+- Still have 5h 25m remaining in market validation window
+- Standing by for 20:00 UTC post-market analysis per schedule
+
+**Note**: This was a distinct incident from Session 3676 (14:09 UTC threshold cap fix). Two separate bugs in same session indicates code review was incomplete before today's deployment.
+
+---
+
 ## Session 3677 (June 16 14:17 UTC — 🟢 MARKET VALIDATION MONITORING — STANDING BY FOR POST-MARKET ANALYSIS 20:00 UTC)
 
 **Duration**: ~5 hours 43 minutes until post-market analysis (current monitoring window)
