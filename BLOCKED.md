@@ -425,6 +425,31 @@ Phase 2 activation path now clear (no architecture conflicts, all four sessions 
 
 ---
 
+### stockbot — CRITICAL: Market validation FAILED — Signal collapse across all 5 sessions (17:57 UTC market open, regime=None)
+**Date blocked**: 2026-06-16 (Session 3689, 19:13 UTC)
+**Context**: June 16 market validation running 13:30-20:00 UTC with 5 live sessions. At market open (17:57 UTC), all 5 sessions (AAPL lgbm_ho, MSFT lgbm_ho, AMZN lgbm_ho, NVDA lgbm_ho, JPM ridge_wf) began generating CONTINUOUS SIGNAL_DROPOUT and BUY_PROB_COLLAPSE alerts. Timeline: 17:57 UTC market open → immediate failure on all 5. Ongoing for ~2 hours (17:57-19:12 UTC). Models ARE producing predicted_return values (e.g., -0.0181, 0.0117, -0.0056), but those predictions are NOT translating to buy_prob > 0. **Root cause indicator**: ALL sessions report `regime=None` in alerts, suggesting HMM regime detection failure (not just threshold clamping like the 14:09 UTC incident). The 14:09 UTC fix (threshold cap to 2%) was verified working through ~17:40 UTC (Session 3688), but a NEW failure mode has emerged at market open.
+**Symptoms**:
+- All 5 sessions: mean_buy_prob=0.0000 or <0.15 (below 0.35 threshold)
+- All 5 sessions: regime=None (should be Bull/Bear/Sideways)
+- All 5 sessions: n_buy=0, n_sell=0 in last 2 hours
+- Models generating predictions (predicted_return non-zero) but not translating to signals
+- Continuous error alerts every 1-2 minutes since 17:57 UTC
+- Container running continuously (no restart)
+**Differences from 14:09 UTC incident**:
+- 14:09 UTC: affected AMZN/MSFT only, other sessions OK (fixed with threshold cap)
+- 19:13 UTC: affects ALL 5 sessions, regime detection broken globally
+**Verification of infrastructure**:
+- ✅ SSH to Jetson: working
+- ✅ Docker container: running
+- ✅ Checkpoint framework: staged and ready
+- ❌ Market validation: FAILED (all signals suppressed)
+- ❌ Models: generating predictions but regime detection broken
+**What I need**: (1) **CRITICAL**: Do NOT execute 20:00 UTC checkpoint with failing validation. (2) Root cause diagnosis: Is this HMM initialization failure, feature loading issue, or new code regression introduced between 14:09 and 17:57 UTC? (3) If fixable autonomously: orchestrator needs 15-30 min to diagnose + patch + restart container + verify signal restoration before 20:00 UTC. If not: escalate and defer checkpoint to post-fix window. (4) Decision point: Continue market open simulation to completion (collecting bad data) or halt trading to preserve capital?
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail 5 2>&1 | grep -i regime"` should show regime values (Bull/Bear/Sideways/None). If all return None, confirms HMM failure.
+**Resolution**: [leave blank — awaiting diagnosis and fix]
+
+---
+
 ### stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required)
 **Date blocked**: 2026-05-13
 **Date resolved**: 2026-05-13 (Session 993, 15:45 UTC)
