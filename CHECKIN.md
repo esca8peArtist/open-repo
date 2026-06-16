@@ -1,5 +1,31 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3714 — June 17 — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
+
+**Session Purpose**: Orient and verify standing-by state remains correct; prepare for stockbot deadline at June 17 08:00 UTC.
+
+**Work Completed This Session**:
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated June 16 23:26 UTC), BLOCKED.md, INBOX.md, PROJECTS.md
+2. ✅ **Block Audit** — All 5 active blocks verified as unresolved:
+   - **stockbot**: Market validation FAILED June 16 19:31 UTC. Root causes: (1) HMM state not persisted to disk, (2) duplicate order_id guard not working. **User decision A/B/C deadline: June 17 08:00 UTC**
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+   - **mfg-farm**: Test print execution (manual — cannot auto-verify)
+   - **open-repo**: Runtime choice (Docker vs systemd) + platform decision
+   - **systems-resilience**: Platform choice (Nextcloud+Matrix vs Discourse)
+3. ✅ **INBOX Verification** — No new user decisions provided since Session 3713
+
+**Interpretation**: Standing-by state is correct. All autonomous work exhausted. Zero projects have unblocked work available without prior user decisions.
+
+**Awaiting User Input**:
+1. **⚠️ URGENT (Deadline: June 17 08:00 UTC)**: Stockbot Option A/B/C decision
+2. **Secondary** (no deadline): Resistance-research emails, platform/runtime decisions, manual actions
+
+**Next Session**: Process any new user decisions in INBOX.md; dispatch chosen work items or continue standing by.
+
+---
+
 ## Since Last Check-in (Session 3713 — June 17 01:15 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**

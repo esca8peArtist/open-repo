@@ -1,3 +1,29 @@
+## Session 3714 (June 17 — ORIENTATION: STANDING BY CONFIRMED, AWAITING STOCKBOT A/B/C DECISION BY DEADLINE)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; DEADLINE APPROACHING**
+
+**Work This Session**:
+1. ✅ **Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated June 16 23:26 UTC), BLOCKED.md, INBOX.md, PROJECTS.md
+2. ✅ **Block audit** — Verified all 5 active blocks remain unresolved:
+   - **stockbot**: Market validation FAILED June 16 19:31 UTC. Root causes: (1) HMM state not persisted to disk, (2) duplicate order_id guard not working. **User decision A/B/C deadline: June 17 08:00 UTC (deadline approaching)**
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual)
+   - **mfg-farm**: Test print execution (manual)
+   - **open-repo**: Runtime decision (Docker vs systemd)
+   - **systems-resilience**: Platform choice (Nextcloud+Matrix vs Discourse)
+3. ✅ **INBOX Verification** — No new user decisions provided since Session 3713
+4. ✅ **Project scope check** — Confirmed no unfinished autonomous work available
+5. ✅ **Updated CHECKIN.md** — Added Session 3714 entry documenting standing-by state
+
+**Status Summary**:
+- All autonomous work exhausted; orchestrator correctly positioned in standing-by state
+- **CRITICAL**: Stockbot decision deadline June 17 08:00 UTC approaching
+- All support materials (OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md, etc.) staged and ready for immediate dispatch upon user decision
+- No other work items available without prior user decisions
+
+**Next Session**: Check INBOX.md for stockbot A/B/C decision upon deadline arrival. Route to chosen option immediately or continue standing by.
+
+---
+
 ## Session 3706 (June 16 22:40+ UTC — ORIENTATION: CRITICAL BLOCK CONFIRMED ACTIVE, STANDING BY FOR USER A/B/C DECISION)
 
 **Status**: ⚠️ **CRITICAL BLOCK ACTIVE — STOCKBOT HMM WARMUP STUCK, USER DECISION REQUIRED BY JUNE 17 08:00 UTC**
