@@ -1,5 +1,45 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3686 — June 16 18:48 UTC — FINAL CHECKPOINT STANDBY)
+
+**Status**: ✅ **CHECKPOINT IMMINENT** — All frameworks verified ready. Wakeup scheduled for ~20:00 UTC (72 min from now). Orchestrator will execute post-market analysis, extract M1-M5 metrics, route Phase 4 decision tree, trigger June 17 retrains if warranted.
+
+**Work Completed This Session**:
+- ✅ **Full Orientation** — ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md reviewed; all prior checkpoint infrastructure verified production-ready
+- ✅ **Framework Verification** — All 7 upstream/downstream documents confirmed present and ready:
+  - ✅ `POST_MARKET_ROUND_TRIP_ANALYSIS.md`
+  - ✅ `JUNE_16_MARKET_VALIDATION_METRIC_EXTRACTION.md`
+  - ✅ `JUNE_16_VALIDATION_TO_PHASE4_DECISION_TREE.md`
+  - ✅ `JUNE_16_POST_VALIDATION_EXECUTION_CHECKLIST.md`
+  - ✅ `JUNE_17_RETRAIN_EXECUTION_CHECKLIST.md`
+  - ✅ `JUNE_17_18_RETRAIN_QUALITY_ASSESSMENT_FRAMEWORK.md`
+  - ✅ `JUNE_18_PHASE_4_GO_LIVE_DECISION_FRAMEWORK.md`
+- ✅ **Wakeup Scheduled** — 20:00 UTC post-market checkpoint (ScheduleWakeup registered for ~20:00 UTC)
+
+**Stock Market Status (Current)**:
+- Market window: 13:30–20:00 UTC (72 minutes remaining)
+- Sessions active: AAPL/MSFT/NVDA/AMZN lgbm_ho + JPM ridge_wf (5 total, intentional expanded config verified)
+- June 16 incident: Signal dropout 13:40–14:09 UTC — fixed via threshold cap (confirmed in logs)
+- Signal restoration: AMZN buy_prob=0.4402 (BUY), MSFT SELL, JPM/NVDA HOLD — validation resuming
+- Post-checkpoint action: Metrics extraction → Path A/B/C routing → June 17 08:00 UTC retrain trigger
+
+**Checkpoint Execution Plan (20:00 UTC)**:
+1. Pre-analysis checklist (Section 1): confirm market close, container health, log/DB accessibility, 5-session confirmation (~5 min)
+2. Metrics extraction (Section 2): M1-M5 (signal count, fills, Z-scores, regime, PnL) from Docker logs + SQLite (~10 min)
+3. Path routing (Section 3): evaluate Path A/B/C thresholds, trigger June 17 actions if warranted (~5 min)
+4. Log results to WORKLOG.md, update PROJECTS.md with next-day execution state
+5. Estimated checkpoint completion: 20:00–20:30 UTC
+
+**No New Autonomous Work Available**:
+- ✅ stockbot: autonomously validating; framework staged for checkpoint
+- ✅ resistance-research: Phase 2 production-ready; awaiting user Wave 1 execution
+- 🔴 All other projects: blocked on user action or awaiting external dependencies
+- Exploration Queue: all near-term items complete; idle pending checkpoint outcomes
+
+**Needs Your Input**: None at this moment. Checkpoint will proceed autonomously at 20:00 UTC with pre-staged metrics extraction.
+
+---
+
 ## Since Last Check-in (Session 3685 — June 16 18:41 UTC — ORCHESTRATOR STANDING BY FOR 20:00 UTC POST-MARKET CHECKPOINT)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY FOR 20:00 UTC CHECKPOINT** — stockbot market validation running autonomously (5 intentional sessions, expanded config: AAPL/MSFT/NVDA/AMZN lgbm_ho + JPM ridge_wf, verified production-ready). SSH access to Jetson verified. Checkpoint infrastructure ready.
