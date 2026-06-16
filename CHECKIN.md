@@ -1,48 +1,46 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3695 — June 16 20:31 UTC — ORCHESTRATOR STANDBY, ALL INFRASTRUCTURE STAGED)
+## Since Last Check-in (Session 3696 — June 16 20:31-21:05 UTC — RESISTANCE-RESEARCH PHASE 2 EXECUTION STAGING COMPLETE)
 
-**Status**: ✅ **ALL DECISION-SUPPORT INFRASTRUCTURE STAGED — AWAITING USER ACTIONS**
+**Status**: ✅ **RESISTANCE-RESEARCH PHASE 2 FULLY STAGED — AWAITING USER EMAIL EXECUTION**
 
 **Work Completed This Session**:
 1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md
-2. ✅ **Block review** — Verified all 4 active blocks require user action (no auto-resolvable items):
-   - cybersecurity-hardening: VeraCrypt pre-boot restart needed
-   - mfg-farm: Test print execution needed
-   - open-repo: Platform runtime decision (expired June 15, reactivated by Session 3694)
-   - systems-resilience: Platform choice (Nextcloud vs Discourse, expired June 15)
-3. ✅ **INBOX processing** — No new items; all prior items processed
-4. ✅ **Project assessment** — Confirmed all projects blocked on user decisions/actions:
-   - **stockbot**: Awaiting Option A/B/C decision (deadline June 17 08:00 UTC for AAPL/MSFT retrains)
-   - **resistance-research**: Phase 2 Wave 1-2 execution-ready; awaiting user email sends (Domains 51, 48)
-   - **All others**: Blocked on user actions (restarts, test prints, platform decisions)
-5. ✅ **Exploration queue status** — Session 3694 completed 3 decision-support items (9 total production-ready documents, 7,126 lines):
-   - Stockbot decision support (Options A/B/C implementation runbooks)
-   - Systems-resilience disaster recovery (Phase 5.1 backup/recovery procedures)
-   - Resistance-research Phase 3 contingency (funding/researcher/crisis frameworks)
+2. ✅ **Spawned resistance-research agent** — Executed Phase 2 Wave 1-2 infrastructure staging:
+   - **Domain 59** (Economic Precarity): Wave 1 already executed June 9-11 with 40% response rate (2 MODERATE replies, 3 Gist clicks). T+7 assessment June 17-18 → Wave 2 conditional routing.
+   - **Domain 51** (Campaign Finance): Wave 1 fully staged and copy-paste ready. Awaits user sends (2 emails, CLC + Issue One, 30-45 min). July 1 CA deadline (16 days remaining).
+   - **Domain 48** (Criminal Justice): Wave 1 fully staged and copy-paste ready. Awaits user sends (Sentencing Project June 16, Prison Policy Initiative June 17, 45-60 min). July 15 VA deadline (30 days remaining).
+3. ✅ **Execution packages verified**:
+   - All three Gists confirmed HTTP 200 (fully accessible)
+   - Email templates ready with placeholder fills clearly marked (`[YOUR_NAME]`, `[YOUR_CONTACT_INFO]`, org names)
+   - Orchestration script `PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py` ready for tracking/logging
+4. ✅ **All 4 active blocks reviewed** — No auto-resolvable items; all require user action:
+   - cybersecurity-hardening: Windows VeraCrypt restart + Phase 1 continuation
+   - mfg-farm: 3D test print execution with tolerance evaluation
+   - open-repo: Platform runtime decision (Docker vs systemd)
+   - systems-resilience: Platform choice (Nextcloud+Matrix vs Discourse)
 
 **Key Findings**:
-- **No autonomous work available** — All projects genuinely blocked on external dependencies (user decisions/actions)
-- **Decision-support infrastructure complete** — All frameworks staged and ready for user action
-- **Exploration queue satiated** — 3 items staged; no need to add more items
-- **All projects in committable state** — Orchestrator ready to stand by pending user decisions
+- **Resistance-research execution infrastructure is production-ready** — All email templates copy-paste ready, contacts verified, timelines clear
+- **User action required**: Domain 51 & 48 sends are the ONLY user-interaction needed (no orchestrator automation possible for email sends)
+- **Stockbot awaiting decision**: User Option A/B/C required by June 17 08:00 UTC (retrains hard deadline June 18 EOD)
+- **All other projects blocked**: No autonomous work available until platform decisions made or user actions taken
 
 **Next Steps (User Action Required)**:
 1. **URGENT (deadline June 17 08:00 UTC)**: Stockbot Option A/B/C decision:
    - **(A) Retry June 17**: Fix HMM + duplicate order_id (3-4h), validation June 17 13:30-20:00 UTC, checkpoint June 17 20:00 UTC
-   - **(B) Skip to June 18**: Use historical data only for gate decision (defer fixes until later)
+   - **(B) Skip to June 18**: Use historical data only (defer fixes until later)
    - **(C) Halt for investigation**: Pause stockbot, thorough debugging (no time pressure)
-2. **June 16-17**: Execute resistance-research Domain 51 Wave 1 (2 emails, 30-45 min) if time permits
-3. **June 17-20**: Execute resistance-research Domain 48 Wave 1 (2 contacts, 45-60 min)
-4. **June 17-18**: Run Day 7 checkpoint procedure for resistance-research (assess Domain 59 replies, route to Wave 2 if warranted)
+2. **June 16-17** (optional): Execute resistance-research Domain 51 Wave 1 (2 emails, 30-45 min)
+3. **June 16 or June 17**: Send Sentencing Project email (Domain 48 Wave 1, first contact)
+4. **June 17**: Send Prison Policy Initiative email (Domain 48 Wave 1, second contact)
+5. **June 17-18**: Run Day 7 checkpoint procedure for Domain 59 (assess replies, route Wave 2 if MODERATE+ signals)
 
-**No Further Autonomous Work Until User Decision**:
-- All 4 projects awaiting user action (A/B/C choice, email execution, restarts, platform decision)
-- Exploration queue satisfied with 3 staged items
-- No health checks warranted (not within 2h of scheduled event)
-- Standing by for user input before proceeding
+**All infrastructure is ready** — No further orchestrator work until user provides above decisions/actions.
 
-**Commits This Session**: Updated CHECKIN.md with Session 3695 status
+**Commits This Session**: 
+- Agent committed resistance-research Phase 2 staging (commit e2012574)
+- Orchestrator commits: WORKLOG.md + CHECKIN.md + PROJECTS.md (updated focus) + BLOCKED.md + INBOX.md
 
 ---
 
