@@ -1,5 +1,44 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3717 — June 16 23:46 UTC — STANDING BY CONFIRMED; ORCHESTRATOR READY FOR USER DECISION)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE: JUNE 17 08:00 UTC (~8h 14m REMAINING)**
+
+**Session Purpose**: Final pre-deadline confirmation; verify orchestrator standing-by state is correct; document readiness to dispatch upon user decision.
+
+**Work Completed This Session**:
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 23:45 UTC), BLOCKED.md (4 active blocks), INBOX.md (zero new decisions), PROJECTS.md
+2. ✅ **Block Status Audit** — All 4 active blocks verified as user-action dependent:
+   - **stockbot**: Market validation FAILED June 16 19:31 UTC. Root causes: (1) HMM state not persisted to disk (in-memory reset on container restart), (2) duplicate order_id idempotency guard not working. **CRITICAL: User decision A/B/C deadline June 17 08:00 UTC**
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+   - **mfg-farm**: Test print execution (manual — cannot auto-verify)
+   - **open-repo**: Runtime/platform decisions pending
+   - **systems-resilience**: Platform choice pending
+3. ✅ **Decision Materials Verified** — All three recovery paths staged and ready:
+   - OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md (32K, Jun 16 21:11) — HMM warmup fix + duplicate order_id fix + 3-4h implementation
+   - OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md (24K, Jun 16 21:12) — Skip live validation, use historical data
+   - OPTION_C_INVESTIGATION_ROADMAP.md (26K, Jun 16 21:13) — Detailed investigation protocol
+4. ✅ **INBOX Verification** — Zero new user decisions provided since Session 3716
+5. ✅ **Git State** — No uncommitted changes; orchestration files ready to commit
+
+**Interpretation**: Standing-by state is correct and will remain correct until user decision. All materials staged and ready for immediate dispatch. Orchestrator ready to execute chosen option (A/B/C) within 30 min of user decision provision.
+
+**Awaiting User Input**:
+1. **⚠️ URGENT (Deadline: June 17 08:00 UTC — ~8h 14m remaining)**: Stockbot Option A/B/C decision
+   - **Option A**: Fix HMM warmup + duplicate order_id issues (3-4h implementation) → retry validation June 17 13:30-20:00 UTC
+   - **Option B**: Skip live validation, use historical data for gate assessment
+   - **Option C**: Halt for investigation
+2. **Secondary actions** (no deadline):
+   - Resistance-research: Phase 2 Wave 1-2 email execution (75 min, templates ready)
+   - Platform decisions: runtime (Docker vs systemd) + deployment platform (Nextcloud+Matrix vs Discourse)
+   - Manual actions: VeraCrypt restart, test print execution
+
+**Next Session**: 
+- If decision provided by 08:00 UTC → dispatch chosen option immediately
+- If deadline passes without decision → document missed deadline and continue standing by
+
+---
+
 ## Since Last Check-in (Session 3716 — June 17 00:45+ UTC — STANDING BY CONFIRMED; STOCKBOT DEADLINE IMMINENT)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE: JUNE 17 08:00 UTC (~7h REMAINING)**

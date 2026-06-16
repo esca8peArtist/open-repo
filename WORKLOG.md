@@ -1,3 +1,32 @@
+## Session 3717 (June 16 23:46 UTC — FINAL STANDING-BY CONFIRMATION; ORCHESTRATOR READY FOR USER DECISION)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE: JUNE 17 08:00 UTC (~8h 14m REMAINING)**
+
+**Work This Session**:
+1. ✅ **Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 23:45 UTC), BLOCKED.md (4 active blocks verified), INBOX.md (zero new user decisions), PROJECTS.md
+2. ✅ **Block audit** — All 4 active blocks remain user-action dependent:
+   - **stockbot**: June 16 market validation FAILED 19:31 UTC (HMM warmup stuck + duplicate order_id guard broken). **CRITICAL: User decision A/B/C deadline June 17 08:00 UTC (~8h 14m remaining)**
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+   - **mfg-farm**: Test print execution (manual — cannot auto-verify)
+   - **open-repo**: Runtime/platform decisions pending
+   - **systems-resilience**: Platform choice pending
+3. ✅ **Recovery materials verified** — All three options staged and ready:
+   - OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md (32K) — HMM + order_id fixes, 3-4h implementation
+   - OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md (24K) — Skip live validation pathway
+   - OPTION_C_INVESTIGATION_ROADMAP.md (26K) — Detailed investigation protocol
+4. ✅ **INBOX verification** — Zero new user decisions since Session 3716
+5. ✅ **Updated CHECKIN.md** — Added Session 3717 entry documenting final standing-by confirmation
+
+**Status Summary**:
+- All autonomous work exhausted; orchestrator in correct standing-by state (confirmed 5+ consecutive sessions)
+- **CRITICAL DEADLINE**: Stockbot A/B/C decision due June 17 08:00 UTC (8h 14m remaining)
+- All support materials staged and ready for dispatch within 30 min of user decision
+- No other unblocked work items available
+
+**Next Session**: Process any user decision in INBOX.md at/after June 17 08:00 UTC deadline. If decision received → dispatch chosen option immediately (A/B/C). If no decision → document missed deadline and continue standing by per protocol.
+
+---
+
 ## Session 3715 (June 16 23:34 UTC — ORIENTATION: STANDING BY CONFIRMED, STOCKBOT DEADLINE IN ~8.5h)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE IMMINENT**
