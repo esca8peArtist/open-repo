@@ -1,5 +1,36 @@
 # Check-in Summary
 
+## Session 3672 (June 16 12:37 UTC — 🟢 PRE-MARKET CHECKLIST SCHEDULED FOR 13:15 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING-BY FOR 13:15 UTC PRE-MARKET CHECKLIST. WAKEUP SCHEDULED.**
+
+**Orientation Summary (12:37 UTC)**:
+- ✅ All active projects verified: stockbot ready, resistance-research staged, others paused/blocked
+- ✅ All active blocks remain unresolved (no user responses): cybersecurity-hardening (VeraCrypt), mfg-farm (3D print), open-repo (runtime decision), systems-resilience (platform decision)
+- ✅ Auto-verify checks executed: all blocks still real (no changes since last session)
+- ✅ Exploration Queue status: all items queued for future execution; no current autonomous work available
+
+**Work Completed**:
+- ✅ Verified ORCHESTRATOR_STATE.md (auto-generated 12:36 UTC, current)
+- ✅ Verified PROJECTS.md (all 10 projects correctly categorized)
+- ✅ Verified BLOCKED.md (3 active blocks, all require manual user action)
+- ✅ Verified EXPLORATION_QUEUE.md (Items 105, 109 queued for June 19-20; no current active items)
+- ✅ Scheduled wakeup at 13:15 UTC to execute pre-market validation checklist
+- ✅ Updated WORKLOG.md with session summary
+
+**Scheduled Actions**:
+- **13:15 UTC** (38 min): Execute JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md (6 sections: container health, model deployment, signal pipeline, thermal, Alpaca, session status)
+- **13:30 UTC**: Market open; 5 autonomous live trading sessions begin
+- **13:30–20:00 UTC**: Market validation (autonomous, no intervention)
+- **20:00 UTC**: Post-market analysis & Phase 4 routing
+
+**Needs Your Input** (unchanged from Session 3671):
+> User decisions required for TWO BLOCKS:
+> 1. **raspby1 runtime** (affects open-repo + systems-resilience Phase 5.1): Docker or systemd/venv?
+> 2. **systems-resilience platform** (Phase 5.1): Nextcloud+Matrix or Discourse?
+
+---
+
 ## Session 3671 (June 16 12:25 UTC — 🟢 AUDIT COMPLETE: OPEN-REPO DEPLOYMENT STATE CLARIFIED)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETED — open-repo deployment audit delivered to BLOCKED.md & PROJECTS.md. Standing-by for 13:15 UTC pre-market checklist (50 minutes).**
