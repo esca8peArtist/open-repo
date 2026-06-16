@@ -1,20 +1,20 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3715 — June 16 23:34 UTC — STANDING BY CONFIRMED; STOCKBOT DEADLINE IMMINENT)
+## Since Last Check-in (Session 3716 — June 17 00:45+ UTC — STANDING BY CONFIRMED; STOCKBOT DEADLINE IMMINENT)
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE IN ~8.5h**
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE: JUNE 17 08:00 UTC (~7h REMAINING)**
 
 **Session Purpose**: Orient and verify standing-by state remains correct; confirm deadline approaching; prepare for user decision dispatch.
 
 **Work Completed This Session**:
-1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 23:33 UTC), BLOCKED.md, INBOX.md, PROJECTS.md
-2. ✅ **Block Audit** — All 5 active blocks verified as unresolved:
-   - **stockbot**: Market validation FAILED June 16 19:31 UTC. Root causes: (1) HMM state not persisted to disk (in-memory reset on container restart), (2) duplicate order_id guard not working. **User decision A/B/C deadline: June 17 08:00 UTC (8h 26m remaining)**
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 23:39 UTC), BLOCKED.md (4 active blocks), INBOX.md, PROJECTS.md
+2. ✅ **Block Audit** — All 4 active blocks verified as unresolved:
+   - **stockbot**: Market validation FAILED June 16 19:31 UTC. Root causes: (1) HMM state not persisted to disk (in-memory reset on container restart), (2) duplicate order_id guard not working. **User decision A/B/C deadline: June 17 08:00 UTC (~7h remaining)**
    - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual — cannot auto-verify)
    - **mfg-farm**: Test print execution (manual — cannot auto-verify)
    - **open-repo**: Runtime/platform decisions pending
    - **systems-resilience**: Platform choice pending
-3. ✅ **INBOX Verification** — No new user decisions provided since Session 3714
+3. ✅ **INBOX Verification** — No new user decisions provided since Session 3715
 4. ✅ **Decision Materials Confirmed** — All three recovery paths fully staged and ready:
    - OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md (32K, Jun 16 21:11)
    - OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md (24K, Jun 16 21:12)
