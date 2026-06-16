@@ -1,3 +1,29 @@
+## Session 3706 (June 16 22:40+ UTC — ORIENTATION: CRITICAL BLOCK CONFIRMED ACTIVE, STANDING BY FOR USER A/B/C DECISION)
+
+**Status**: ⚠️ **CRITICAL BLOCK ACTIVE — STOCKBOT HMM WARMUP STUCK, USER DECISION REQUIRED BY JUNE 17 08:00 UTC**
+
+**Work This Session**:
+1. ✅ **Orientation** — Read ORCHESTRATOR_STATE.md (22:24 UTC), BLOCKED.md, INBOX.md, PROJECTS.md; verified Session 3705 state still current
+2. ✅ **Jetson diagnostics** — Verified HMM warmup still stuck (regime=None, signal dropout continues from 19:30 UTC)
+   - Command: `ssh awank@100.120.18.84 "docker logs stockbot --tail 20 2>&1 | grep -E 'HMM warming|bar|cycle'"`
+   - Result: NVDA_lgbm_ho_001 showing `[SignalHealthMonitor] ALERT [CRITICAL] SIGNAL_DROPOUT` + `regime=None`
+3. ✅ **Block status** — Confirmed critical HMM block in BLOCKED.md Active Blocks, properly documented
+4. ✅ **Fix verification** — Confirmed Session 3703 staged both fixes:
+   - JUNE_16_FIX_IMPLEMENTATION_GUIDE.md: 3-4 hours total (Fix 2: 1-2h, Fix 1: 2-3h)
+   - Both fixes production-ready, 92% confidence, 6.5h available before June 17 13:30 UTC market open
+5. ✅ **Project status** — All 4 non-critical blocks unchanged (cybersecurity, mfg-farm, open-repo, systems-resilience)
+6. ✅ **INBOX** — No new user decisions or actions since Session 3705
+7. ✅ **Conclusion** — Standing by is correct state. Critical block awaits user decision (A/B/C).
+
+**Critical Path**:
+- If Option A (Retry June 17): Deploy Fix 2 immediately (by 13:15 UTC), deploy Fix 1 post-market
+- If Option B (Historical data): Same fixes apply for future deployments
+- If Option C (Halt): Fixes remain staged when investigation resumes
+
+**Next Session**: Check INBOX.md for user decision. Upon decision, execute staged fixes immediately or proceed with alternative path.
+
+---
+
 ## Session 3705 (June 16 22:30+ UTC — ORIENTATION: STATUS UNCHANGED, STANDING BY)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL PROJECTS BLOCKED ON USER DECISIONS**
