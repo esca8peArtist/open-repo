@@ -1,5 +1,51 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3695 — June 16 20:31 UTC — ORCHESTRATOR STANDBY, ALL INFRASTRUCTURE STAGED)
+
+**Status**: ✅ **ALL DECISION-SUPPORT INFRASTRUCTURE STAGED — AWAITING USER ACTIONS**
+
+**Work Completed This Session**:
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md
+2. ✅ **Block review** — Verified all 4 active blocks require user action (no auto-resolvable items):
+   - cybersecurity-hardening: VeraCrypt pre-boot restart needed
+   - mfg-farm: Test print execution needed
+   - open-repo: Platform runtime decision (expired June 15, reactivated by Session 3694)
+   - systems-resilience: Platform choice (Nextcloud vs Discourse, expired June 15)
+3. ✅ **INBOX processing** — No new items; all prior items processed
+4. ✅ **Project assessment** — Confirmed all projects blocked on user decisions/actions:
+   - **stockbot**: Awaiting Option A/B/C decision (deadline June 17 08:00 UTC for AAPL/MSFT retrains)
+   - **resistance-research**: Phase 2 Wave 1-2 execution-ready; awaiting user email sends (Domains 51, 48)
+   - **All others**: Blocked on user actions (restarts, test prints, platform decisions)
+5. ✅ **Exploration queue status** — Session 3694 completed 3 decision-support items (9 total production-ready documents, 7,126 lines):
+   - Stockbot decision support (Options A/B/C implementation runbooks)
+   - Systems-resilience disaster recovery (Phase 5.1 backup/recovery procedures)
+   - Resistance-research Phase 3 contingency (funding/researcher/crisis frameworks)
+
+**Key Findings**:
+- **No autonomous work available** — All projects genuinely blocked on external dependencies (user decisions/actions)
+- **Decision-support infrastructure complete** — All frameworks staged and ready for user action
+- **Exploration queue satiated** — 3 items staged; no need to add more items
+- **All projects in committable state** — Orchestrator ready to stand by pending user decisions
+
+**Next Steps (User Action Required)**:
+1. **URGENT (deadline June 17 08:00 UTC)**: Stockbot Option A/B/C decision:
+   - **(A) Retry June 17**: Fix HMM + duplicate order_id (3-4h), validation June 17 13:30-20:00 UTC, checkpoint June 17 20:00 UTC
+   - **(B) Skip to June 18**: Use historical data only for gate decision (defer fixes until later)
+   - **(C) Halt for investigation**: Pause stockbot, thorough debugging (no time pressure)
+2. **June 16-17**: Execute resistance-research Domain 51 Wave 1 (2 emails, 30-45 min) if time permits
+3. **June 17-20**: Execute resistance-research Domain 48 Wave 1 (2 contacts, 45-60 min)
+4. **June 17-18**: Run Day 7 checkpoint procedure for resistance-research (assess Domain 59 replies, route to Wave 2 if warranted)
+
+**No Further Autonomous Work Until User Decision**:
+- All 4 projects awaiting user action (A/B/C choice, email execution, restarts, platform decision)
+- Exploration queue satisfied with 3 staged items
+- No health checks warranted (not within 2h of scheduled event)
+- Standing by for user input before proceeding
+
+**Commits This Session**: Updated CHECKIN.md with Session 3695 status
+
+---
+
 ## Since Last Check-in (Session 3693 — June 16 19:48–20:05 UTC — ORCHESTRATOR EXECUTION READINESS REPORT COMPLETE)
 
 **Status**: ✅ **PHASE 2 WAVE 1-2 VERIFIED PRODUCTION-READY FOR EXECUTION**
