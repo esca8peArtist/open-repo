@@ -4772,3 +4772,38 @@ All 5 sessions will:
 
 **Scheduled wakeup**: 20:00 UTC for post-market analysis execution.
 
+
+---
+
+## Session 3692 (June 16 19:43–19:XX UTC — ORCHESTRATOR ACTION: ACKNOWLEDGE CHECKPOINT CANCELLATION, STAND BY FOR USER DECISION)
+
+**Status**: 🛑 **CHECKPOINT CANCELLED** — Acknowledged Session 3691 decision to halt market validation at 19:31 UTC. Market validation unrecoverable (regime=None suppression + duplicate order_id failures). 20:00 UTC post-market analysis checkpoint cancelled.
+
+**Orchestrator Actions**:
+- ✅ Reviewed WORKLOG Session 3691 (19:31 UTC halt decision)
+- ✅ Confirmed checkpoint is CANCELLED (no post-market analysis to run)
+- ✅ Reviewed CHECKIN.md for user decision options (A/B/C)
+- ✅ Standing by for user direction
+
+**Market Validation Final Result**: ❌ **FAILED** — 5h 54m (13:30-19:31 UTC)
+- HMM regime=None throughout window (state lost on 19:14 UTC restart)
+- NVDA signals generated but blocked by duplicate order_id
+- Zero viable trades executed (only bad data collected)
+- Further data collection pointless
+
+**Critical Issues Identified** (per Session 3691):
+1. HMM state not persisted to disk (in-memory reset on container restart)
+2. Duplicate order_id idempotency guard not working
+
+**User Decision Required** (Options A/B/C from CHECKIN.md):
+- **(A)** Retry June 17: Fix both issues (3-4h) + validation June 17 13:30-20:00 UTC
+- **(B)** Skip June 16-17: Use historical data for gate decision (delays but avoids fixes)
+- **(C)** Halt pending investigation: No timeline pressure, thorough debugging
+
+**Awaiting**: User selection of Option A/B/C before proceeding.
+
+**What's Available While Waiting**:
+- Resistance-research: Phase 2 Wave 1-2 production-ready (awaiting your email sends)
+- Exploration Queue: 15+ items available (research candidates, contingency frameworks)
+- Other projects: All blocked on user action (cybersecurity restart, mfg-farm test print, open-repo/systems-resilience platform decisions)
+
