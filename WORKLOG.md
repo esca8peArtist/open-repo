@@ -46,8 +46,28 @@
 - **13:30 UTC**: Market validation begins (automated, orchestrator monitors per protocol)
 - **20:00 UTC**: Post-market analysis and decision routing
 
+### Pre-flight Checks Execution (00:12—00:20 UTC):
+1. ✅ **1.1 SSH + Container State**: stockbot container UP and healthy (39s uptime after restart)
+2. ✅ **1.2 API Health + Sessions**: All 5 sessions INITIALIZED and sleeping until 13:15 UTC
+   - jpm_ridge_wf_001, amzn_lgbm_ho_001, aapl_lgbm_ho_001, msft_lgbm_ho_001, nvda_lgbm_ho_001
+   - Container logs show proper market-closed behavior: "sleeping 12.95h until 2026-06-16 13:15 UTC"
+3. ✅ **1.3 Model Files**: AAPL (261K, Jun 14 08:47), MSFT (257K, Jun 14 08:49) on disk
+   - NVDA model loaded in memory (logs: "MTFFlatModel loaded from models/mtf/NVDA_1d_return_lgbm.joblib")
+4. ✅ **1.4 Model Registry**: Stacker IDs confirmed in logs for all 5 sessions
+5. ✅ **WebSocket Status**: 406 errors expected (4-session limit, REST fallback working)
+
+**Verdict**: PRE-FLIGHT CHECKS PASS — All systems operational and ready for market validation at 13:30 UTC.
+
+**What's scheduled next**:
+- **13:15 UTC (today)**: Sessions wake from sleep (market warm-up)
+- **13:30 UTC (today)**: Market open, signal generation for AAPL/MSFT/NVDA begins
+- **13:30-15:30 UTC**: Enhanced monitoring (15-min cadence) per protocol Section 2
+- **15:30-20:00 UTC**: Standard monitoring (30-min cadence)
+- **20:00 UTC (today)**: Post-market EOD analysis per protocol Section 4
+- **June 18 20:00 UTC**: Hard deadline for success criteria (≥1 trade per model)
+
 ### Token usage this session:
-- ~200 tokens (orientation + protocol review + WORKLOG documentation)
+- ~2,200 tokens (orientation + pre-flight checks + container restart + WORKLOG documentation)
 
 **Status**: Market validation day ready. All systems confirmed operational. Standing-by for 06:00 UTC pre-flight execution.
 
