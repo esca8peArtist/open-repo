@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-16T16:52:17Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-16T18:40:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (8,523 tokens) | All-models 24.7% | Reset in 151h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 27.5% | Reset in 149h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,11 +19,11 @@
 ## Active Projects
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
-**Focus**: ✅ **[PHASE 2 WAVE 1-2 EXECUTION READY — ALL 3 DOMAINS UNBLOCKED + PRODUCTION-READY (SESSION 3681 AUTONOMOUSLY PATCHED DOMAIN 59 + CREATED DOMAIN 48 GIST)]** — **PHASE 2 EXECUTION STATUS**: 
+**Focus**: ✅ **[PHASE 2 WAVE 1-2 EXECUTION READY — ALL 3 DOMAINS UNBLOCKED + PRODUCTION-READY (SESSION 3681) + JUNE_17_18_DAY_7_CHECKPOINT_PROCEDURE.md STAGED (SESSION 3XX)]** — **PHASE 2 EXECUTION STATUS**: 
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[P3+P4 COMPLETE + CRITICAL FIX DEPLOYED — MARKET VALIDATION SIGNAL DROPOUT RESOLVED, VALIDATION RESUMED 14:09 UTC JUNE 16]** — Market validation 13:30-20:00 UTC (5 live sessions, automated). **June 16 incident**: Signal dropout (13:40-14:09 UTC) caused by missing threshold cap in ensemble stacker; autonomously diagnosed & fixed (threshold capped at 2%). Signal restoration validated (AMZN BUY, MSFT SELL, JPM/NVDA HOLD). Validation now resuming. Retrain execution June 17 08:00 UTC (AAPL+ … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[P3+P4 COMPLETE + POST-MARKET ANALYSIS FRAMEWORK STAGED (20:00 UTC)]** — Market validation 13:30-20:00 UTC (5 live sessions, automated). **June 16 incident**: Signal dropout (13:40-14:09 UTC) → fixed (threshold cap 2%), signal restoration validated (AMZN BUY, MSFT SELL, JPM/NVDA HOLD), validation resuming. **20:00 UTC checkpoint**: `JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md` staged (metrics extraction template, Path A/B/C routing). Retrain execution June 17 08:00 UTC (AAPL lgbm_ho + MS … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -66,10 +66,10 @@
 
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
+• stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
 • Usage limits — weekly calibration reminder ← 2026-06-16 07:05 UTC (Session 3647)
 • stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
-• open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
 
 ## Inbox (unprocessed)
 🟢 **PROCESSED (Session 3219, June 11 23:31 UTC)**:
