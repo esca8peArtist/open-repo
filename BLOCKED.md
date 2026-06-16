@@ -37,7 +37,7 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
 **What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
 **Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**:
+**Resolution**: ✅ **RESOLVED** (Session 3647, 2026-06-16 07:05 UTC) — Verification passed. `bash scripts/verify-calibration.sh` returned "OK: limits calibrated 6 days ago (2026-06-10) — within 7-day window." Calibration is current (last update June 10 still within 7-day threshold). No action required.
 <!-- AUTO:CALIBRATION:END -->
 
 
