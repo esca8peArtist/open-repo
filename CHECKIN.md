@@ -1,5 +1,26 @@
 # Check-in Summary
 
+## Session 3637.17 (June 16 02:33 UTC — 🟢 MARKET VALIDATION DAY: STANDING-BY SUSTAINED, NEXT ACTION 13:15 UTC)
+
+**Status**: 🟢 **STANDING-BY SUSTAINED** — Orientation complete. All 3 active blocks unchanged. Zero autonomous work available. Pre-flight checks ✅ PASS (Session 3637.2, 00:12 UTC). Systems production-ready.
+
+**What was accomplished**: Full state audit, standing-by verification, orchestration commit
+
+**What's in progress**: Market validation at 13:30 UTC (10h 37m away). Stockbot 5-session live config standing-by: AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, JPM ridge_wf, AMZN lgbm_ho.
+
+**Items needing user input**:
+- **systems-resilience**: Platform decision — deadline EXPIRED June 15 23:59 UTC (recommendation: Nextcloud+Matrix, 8/10)
+- **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual)
+- **mfg-farm**: Test print execution (manual)
+- **resistance-research**: Wave 1-2 email execution (packages ready; Day 7 checkpoint June 17-18)
+
+**Suggested priorities for next session**: 
+- **13:15 UTC**: Market warm-up monitoring begins per JUNE_16_17_VALIDATION_PROTOCOL.md Section 2
+- **13:30–20:00 UTC**: Market-open validation (automated)
+- Post-validation: Phase 4 work gates on outcome
+
+---
+
 ## Session 3637.16 (June 16 02:20 UTC — 🟢 MARKET VALIDATION DAY: STANDING-BY SUSTAINED, NEXT ACTION 13:15 UTC)
 
 **Status**: 🟢 **STANDING-BY SUSTAINED** — Orientation complete. All 3 active blocks unchanged. Zero autonomous work available (all meaningful scope blocked on external events). Pre-flight checks ✅ PASS (Session 3637.2, 00:12 UTC). Systems production-ready.
