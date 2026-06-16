@@ -55,10 +55,18 @@
 - ❌ Order execution (duplicate client_order_id blocking all BUY/SELL)
 - ❌ Data collection (invalid for gate evaluation)
 
-**Needs Your Input**: 
-1. **Which option (A/B/C)?** Your decision will determine next steps
-2. **If A**: Confirm timeline works for you and authorize fixes
-3. **If A or B**: Should orchestrator start working on other projects (resistance-research email execution, etc.) while stockbot is in maintenance?
+**Other Projects Status While Waiting**:
+- **resistance-research**: Phase 2 Wave 1-2 fully staged and production-ready (Domains 51/59/48 email templates). Awaiting your execution of wave 1-2 sends.
+- **All others**: Blocked on user action (cybersecurity-hardening restart, mfg-farm test print, open-repo/systems-resilience platform decisions)
+- **Exploration Queue**: 5+ research candidates available (AI governance, state-level autocratization, fiscal authority restoration, etc.) but lower priority than current critical block
+
+**Needs Your Input — URGENT**: 
+1. **Which option (A/B/C)?** This determines all next steps
+   - **A** = Fix HMM + duplicate order_id, retry June 17 validation
+   - **B** = Skip June 16-17, proceed to June 18 with historical data only
+   - **C** = Halt stockbot pending thorough investigation
+2. **If A**: Authorize the fixes and confirm timeline works (est. 3-4 hours for fixes + testing + deployment)
+3. **If A or B**: Should orchestrator proceed with other project work (resistance-research prep, exploration queue items) while stockbot is in maintenance, or wait for your full go-ahead?
 
 ---
 
