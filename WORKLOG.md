@@ -4282,3 +4282,85 @@ All 5 sessions will:
 - ✅ Gate validation June 17-18 checkpoint
 - ✅ Resistance-research Day 7 checkpoint June 17-18 (email sends required before this)
 - ✅ Jetson deploy blackout: NEVER during market hours (13:30-20:00 UTC Mon-Fri)
+
+---
+
+## Session 3681 (June 16 15:17 UTC — RESISTANCE-RESEARCH PHASE 2 UNBLOCKING + MARKET VALIDATION MONITORING)
+
+**Duration**: ~30 minutes (orientation + Domain 48/59 unblocking)
+
+**Status**: ✅ **RESISTANCE-RESEARCH PHASE 2 DOMAINS 48-59 FULLY UNBLOCKED — ALL THREE DOMAINS NOW PRODUCTION-READY FOR USER EXECUTION**
+
+**Orientation** (Session 3681 startup at 15:17 UTC):
+- ✅ Read ORCHESTRATOR_STATE.md (auto-generated 15:17 UTC)
+- ✅ Assessed project priorities: stockbot in autonomous market validation (13:30-20:00 UTC), no interruptions needed
+- ✅ Identified resistance-research as having autonomous work available: Domains 48 + 59 blocked on minor infrastructure items
+
+**Work completed**:
+
+### Domain 59 Urgency Frame Patch (Session 3681, 15:17–15:22 UTC)
+
+**Blocker resolved**: Obsolete "Senate Finance Committee markup window closes June 30" urgency frame
+
+**Action taken**:
+- ✅ Edited `/projects/resistance-research/domain-59-send-templates.md`
+- ✅ Replaced all "Senate Finance" references with OBBBA implementation period (2025-2027 tax years) + 2026 midterm cycle framing
+- ✅ Updated all 5 email subject lines and body copy with new urgency frame
+- ✅ Added specific details: OBBBA July 4, 2025 enactment; $2,200 credit maximum; SSN-for-taxpayer requirement excluding mixed-status households; refundable portion capped at $1,700 vs. full-refundability advocacy position
+- ✅ Verified: zero "Senate Finance" references remaining; 23 instances of new urgency frame language present
+
+**Result**: Domain 59 (Economic Precarity/CTC) now fully production-ready for user execution with all 5 templates updated.
+
+### Domain 48 Gist Creation + Template Population (Session 3681, 15:22–15:32 UTC)
+
+**Blocker resolved**: Missing GitHub Gist URL for criminal justice civic exclusion research
+
+**Actions taken**:
+1. ✅ Created public GitHub Gist: https://gist.github.com/esca8peArtist/00c1423e3da7bb4693fa285ec87f18a8
+   - Content: 7,100 words, 48 citations, 6 major sections
+   - Source: `/projects/resistance-research/domain-48-criminal-justice-civic-exclusion.md`
+   - Verified: HTTP 200, public accessibility confirmed
+2. ✅ Updated email templates file: `DOMAIN_48_EMAIL_TEMPLATE_SET.md`
+   - Replaced all 7 instances of `{{DOMAIN_48_GIST_URL}}` placeholder with actual Gist URL
+   - All 4 organizational templates now production-ready (Sentencing Project, Brennan Center, Worth Rises, M4BL)
+3. ✅ Updated documentation: `DOMAIN_48_GIST_CREATION_STEPS.md` marked complete
+
+**Result**: Domain 48 (Criminal Justice Civic Exclusion) now fully production-ready for user execution with Gist and email templates linked.
+
+### Phase 2 Execution Status Update (Session 3681, 15:32–15:35 UTC)
+
+**All three Phase 2 domains now unblocked and ready**:
+- ✅ **Domain 51** (Campaign Finance/Dark Money): READY (unchanged from Session 3545 — already fully staged)
+  - Wave 1 (June 16-17): Campaign Legal Center, Issue One (~30-45 min)
+  - Wave 2 (June 17-18): Common Cause CA, LWV CA, Clean Money Action Fund (~45-60 min)
+  - Gist: https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372
+
+- ✅ **Domain 59** (Economic Precarity/CTC): NOW UNBLOCKED (Session 3681 patch applied)
+  - Urgency frame: OBBBA implementation period + 2026 midterm cycle (not Senate Finance markup — that window closed in 2025)
+  - Contacts: CBPP, ITEP, NWLC, MomsRising, AFL-CIO (5 contacts, 2 waves, ~75 min total)
+  - Gist: https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba
+
+- ✅ **Domain 48** (Criminal Justice Civic Exclusion): NOW UNBLOCKED (Session 3681 Gist created)
+  - Wave 1 (June 16-17): Sentencing Project, Prison Policy Initiative
+  - Wave 2 (June 18-19): Brennan Center, Worth Rises, Campaign Legal Center, M4BL (6 contacts, 2 waves, ~90 min total)
+  - Gist: https://gist.github.com/esca8peArtist/00c1423e3da7bb4693fa285ec87f18a8
+
+**PROJECTS.md updated** (line 86–91): Current focus now documents all three domains as production-ready with Gist URLs and execution timelines.
+
+**Timeline to user execution**:
+- Current status: 2 days overdue (June 14-15 window passed, now June 16 15:30 UTC)
+- Current scenario: Scenario A (SAFE) per WAVE_EXECUTION_STATUS.md — still 15 days to July 1 hard deadline
+- User action required: Execute email sends for Domains 51/48/59 at user's discretion (total ~250 min for all three, or stagger by domain)
+- T+7 checkpoint: June 23-24 (orchestrator will run `PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --t7-check` autonomously once sends are logged)
+
+**Stockbot market validation status** (15:17–15:35 UTC):
+- ✅ Market open 13:30 UTC, validation proceeding autonomously
+- ✅ Signal restoration confirmed (June 16 14:09 UTC fix holding)
+- ⏳ All 5 sessions active (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, JPM ridge_wf, AMZN lgbm_ho)
+- ⏳ Market close 20:00 UTC (4.5 hours remaining)
+- ⏳ Post-market analysis scheduled: 20:00 UTC orchestrator checkpoint execution
+
+**No interruption of market validation** — resistance-research work completed while stockbot runs autonomously.
+
+**Next orchestrator action**: 20:00 UTC post-market analysis checkpoint (metrics extraction, scenario routing, Phase 4 path decision).
+
