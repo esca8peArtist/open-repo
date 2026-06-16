@@ -1,5 +1,41 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3715 — June 16 23:34 UTC — STANDING BY CONFIRMED; STOCKBOT DEADLINE IMMINENT)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE IN ~8.5h**
+
+**Session Purpose**: Orient and verify standing-by state remains correct; confirm deadline approaching; prepare for user decision dispatch.
+
+**Work Completed This Session**:
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 23:33 UTC), BLOCKED.md, INBOX.md, PROJECTS.md
+2. ✅ **Block Audit** — All 5 active blocks verified as unresolved:
+   - **stockbot**: Market validation FAILED June 16 19:31 UTC. Root causes: (1) HMM state not persisted to disk (in-memory reset on container restart), (2) duplicate order_id guard not working. **User decision A/B/C deadline: June 17 08:00 UTC (8h 26m remaining)**
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+   - **mfg-farm**: Test print execution (manual — cannot auto-verify)
+   - **open-repo**: Runtime/platform decisions pending
+   - **systems-resilience**: Platform choice pending
+3. ✅ **INBOX Verification** — No new user decisions provided since Session 3714
+4. ✅ **Decision Materials Confirmed** — All three recovery paths fully staged and ready:
+   - OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md (32K, Jun 16 21:11)
+   - OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md (24K, Jun 16 21:12)
+   - OPTION_C_INVESTIGATION_ROADMAP.md (26K, Jun 16 21:13)
+
+**Interpretation**: Standing-by state is correct. All autonomous work exhausted. Deadline is imminent — user decision expected within 8.5 hours.
+
+**Awaiting User Input**:
+1. **⚠️ URGENT (Deadline: June 17 08:00 UTC)**: Stockbot Option A/B/C decision
+   - **Option A**: Fix HMM warmup + duplicate order_id (3-4h implementation) → retry validation June 17 13:30-20:00 UTC
+   - **Option B**: Skip live validation, use historical data for gate assessment
+   - **Option C**: Halt for investigation
+2. **Secondary actions** (no deadline):
+   - Resistance-research: Phase 2 Wave 1-2 email execution (75 min)
+   - Platform decisions: runtime (Docker vs systemd) + deployment platform (Nextcloud+Matrix vs Discourse)
+   - Manual actions: VeraCrypt restart, test print execution
+
+**Next Session**: Check INBOX.md for stockbot A/B/C decision at/after deadline. If decision provided before 08:00 UTC → dispatch chosen option immediately. If no decision → document deadline missed and continue standing by.
+
+---
+
 ## Since Last Check-in (Session 3714 — June 17 — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**

@@ -1,3 +1,28 @@
+## Session 3715 (June 16 23:34 UTC — ORIENTATION: STANDING BY CONFIRMED, STOCKBOT DEADLINE IN ~8.5h)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DEADLINE IMMINENT**
+
+**Work This Session**:
+1. ✅ **Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 23:33 UTC), BLOCKED.md (5 blocks verified), INBOX.md (zero new decisions), PROJECTS.md
+2. ✅ **Block audit** — All 5 active blocks remain unresolved:
+   - **stockbot**: June 16 market validation FAILED 19:31 UTC. Root causes: (1) HMM state not persisted to disk (in-memory reset on container restart), (2) duplicate order_id guard not working. **User decision A/B/C deadline: June 17 08:00 UTC (8h 26m remaining)**. Support documents staged: OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md, OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md, OPTION_C_INVESTIGATION_ROADMAP.md
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+   - **mfg-farm**: Test print execution (manual — cannot auto-verify)
+   - **open-repo**: Runtime/platform decisions pending (Docker vs systemd, deployment platform choice)
+   - **systems-resilience**: Platform choice pending (Nextcloud+Matrix [recommended 8/10] vs Discourse [5/10])
+3. ✅ **INBOX Verification** — No new user decisions since Session 3714
+4. ✅ **Project scope check** — Confirmed no unfinished autonomous work available without user decisions
+
+**Status Summary**:
+- All autonomous work exhausted; orchestrator in correct standing-by state
+- **DEADLINE IMMINENT**: Stockbot A/B/C decision deadline June 17 08:00 UTC (8h 26m remaining)
+- All three recovery paths fully staged and ready for immediate dispatch
+- No other work items available without prior user input
+
+**Next Session**: Upon June 17 08:00 UTC deadline or user decision in INBOX.md, dispatch chosen option immediately OR document deadline missed and continue standing by.
+
+---
+
 ## Session 3714 (June 17 — ORIENTATION: STANDING BY CONFIRMED, AWAITING STOCKBOT A/B/C DECISION BY DEADLINE)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; DEADLINE APPROACHING**
