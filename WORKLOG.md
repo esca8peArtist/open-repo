@@ -1,3 +1,37 @@
+## Session 3692 (June 16 19:43–19:50 UTC — ORCHESTRATOR STANDING BY FOR USER DECISION A/B/C)
+
+**Status**: 🛑 **AWAITING USER DECISION** — Orchestrator oriented to state. Checkpoint cancelled (market validation halted 19:31 UTC). Standing by for user selection of Option A/B/C before proceeding.
+
+**Orchestrator Actions This Session**:
+1. ✅ Full orientation complete
+   - ORCHESTRATOR_STATE.md: Priority order confirmed (stockbot #1, resistance-research #2, others blocked)
+   - PROJECTS.md: Verified stockbot awaiting A/B/C decision, resistance-research Phase 2 Wave 1-2 production-ready
+   - BLOCKED.md: 4 active blocks requiring user action (cybersecurity-hardening, mfg-farm, open-repo, systems-resilience)
+   - INBOX.md: No new items to process
+2. ✅ Block review: No auto-resolvable items. All require user action.
+3. ✅ Verified resistance-research infrastructure:
+   - DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md (31K, ready)
+   - DOMAIN_51_WAVE_2_EMAIL_EXECUTION_PACKAGE.md (16K, ready)
+   - DOMAIN_59_WAVE_1_EMAIL_EXECUTION_PACKAGE.md (25K, ready, June 16 09:00 UTC)
+   - DOMAIN_48_EMAIL_TEMPLATE_SET.md (20K, ready, June 16 16:20 UTC)
+   - All email templates staged with Gist URLs populated
+4. ✅ Confirmed Exploration Queue availability (15+ items per ORCHESTRATOR_STATE)
+5. ✅ Updated CHECKIN.md with session summary and decision point
+
+**No Autonomous Work Available Until User Decision**:
+- stockbot: Blocked on A/B/C decision
+- resistance-research: Production-ready, awaiting user email execution
+- All others: Blocked on user actions (restarts, test prints, platform decisions)
+
+**Recommended Next User Actions**:
+1. **SELECT STOCKBOT OPTION** (A/B/C) to unblock market validation path
+2. **If Option A**: Authorize both HMM + duplicate order_id fixes; orchestrator can execute in 3-4h
+3. **While deciding**: Optionally, user can execute resistance-research Phase 2 Wave 1-2 emails (Domains 51/59/48 templates ready for sending)
+
+**No Commit This Session** — Awaiting user direction before proceeding. CHECKIN.md updated but not yet committed.
+
+---
+
 ## Session 3691 (June 16 19:31 UTC — ORCHESTRATOR ACTION: HALT MARKET VALIDATION, CHECKPOINT CANCELLED)
 
 **Status**: 🛑 **MARKET VALIDATION HALTED** — Orchestrator stopped trading container and cancelled 20:00 UTC checkpoint due to unrecoverable data corruption. Awaiting user decision (A/B/C options).

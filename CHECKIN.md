@@ -1,8 +1,8 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3691 — June 16 19:31 UTC — ORCHESTRATOR ACTION: HALT MARKET VALIDATION, CHECKPOINT CANCELLED, USER DECISION REQUIRED)
+## Since Last Check-in (Session 3692 — June 16 19:43–19:50 UTC — ORCHESTRATOR STANDING BY, WAITING FOR USER DECISION A/B/C)
 
-**Status**: 🛑 **MARKET VALIDATION HALTED** — Container stopped at 19:31 UTC. June 16 validation window is unrecoverable; checkpoint at 20:00 UTC has been **CANCELLED**. Awaiting user decision on next steps.
+**Status**: 🛑 **CHECKPOINT CANCELLED, MARKET VALIDATION HALTED** — Orchestrator orientation complete. June 16 market validation unrecoverable (halted 19:31 UTC, HMM warmup stuck + duplicate order_id blocking); 20:00 UTC checkpoint cancelled. **STANDING BY FOR USER DECISION** on Options A/B/C to proceed.
 
 **Orchestrator Actions Taken**:
 - ✅ **19:31 UTC**: Verified market validation still broken (Docker logs show regime=None, SIGNAL_DROPOUT ongoing)
@@ -60,13 +60,20 @@
 - **All others**: Blocked on user action (cybersecurity-hardening restart, mfg-farm test print, open-repo/systems-resilience platform decisions)
 - **Exploration Queue**: 5+ research candidates available (AI governance, state-level autocratization, fiscal authority restoration, etc.) but lower priority than current critical block
 
+**Orchestrator Session 3692 Actions Completed**:
+- ✅ Full orientation (ORCHESTRATOR_STATE, PROJECTS, BLOCKED, INBOX)
+- ✅ Block review: no auto-resolvable items (cybersecurity-hardening/mfg-farm/open-repo/systems-resilience all require user action)
+- ✅ INBOX review: no new items to process
+- ✅ Verified resistance-research Phase 2 Wave 1-2 is production-ready (all domain email templates staged, gists populated)
+- ✅ Confirmed Exploration Queue has 15+ available items for autonomous work
+
 **Needs Your Input — URGENT**: 
-1. **Which option (A/B/C)?** This determines all next steps
-   - **A** = Fix HMM + duplicate order_id, retry June 17 validation
-   - **B** = Skip June 16-17, proceed to June 18 with historical data only
-   - **C** = Halt stockbot pending thorough investigation
-2. **If A**: Authorize the fixes and confirm timeline works (est. 3-4 hours for fixes + testing + deployment)
-3. **If A or B**: Should orchestrator proceed with other project work (resistance-research prep, exploration queue items) while stockbot is in maintenance, or wait for your full go-ahead?
+1. **Which option (A/B/C)?** This determines all next steps for stockbot:
+   - **(A) Retry June 17** = Fix HMM + duplicate order_id (3-4h), validation June 17, checkpoint June 17 20:00 UTC
+   - **(B) Skip to June 18** = Use historical data only, checkpoint June 18
+   - **(C) Halt pending investigation** = Pause stockbot, thorough debugging (no time pressure)
+2. **If A**: Confirm timeline works and authorize both fixes
+3. **While waiting for decision**: Orchestrator ready to work on (a) resistance-research Phase 2 Wave 1-2 final prep for your execution, or (b) Exploration Queue items (15+ research candidates available)
 
 ---
 
