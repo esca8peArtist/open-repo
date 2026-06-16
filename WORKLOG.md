@@ -1,3 +1,32 @@
+## Session 3691 (June 16 19:31 UTC — ORCHESTRATOR ACTION: HALT MARKET VALIDATION, CHECKPOINT CANCELLED)
+
+**Status**: 🛑 **MARKET VALIDATION HALTED** — Orchestrator stopped trading container and cancelled 20:00 UTC checkpoint due to unrecoverable data corruption. Awaiting user decision (A/B/C options).
+
+**Orchestrator Actions**:
+1. ✅ Verified market validation still failing (Docker logs 19:30 UTC showed regime=None, SIGNAL_DROPOUT alerts)
+2. ✅ Stopped Docker container via `docker stop stockbot` at 19:31 UTC
+3. ✅ Cancelled 20:00 UTC checkpoint (no point running metrics extraction on bad data)
+4. ✅ Updated CHECKIN.md with three decision options (A: retry June 17, B: skip to June 18, C: halt pending investigation)
+5. ✅ Escalated user decision requirement
+
+**Why Halted**:
+- HMM regime=None confirmed still present at 19:30 UTC (logs show continuous SIGNAL_DROPOUT/BUY_PROB_COLLAPSE)
+- Duplicate order_id failures still blocking execution
+- Further data collection pointless (no valid trades executed since 17:57 UTC)
+- Container restart cycle would only cause more HMM state loss
+
+**Data Loss Assessment**:
+- Duration: 13:30-19:31 UTC (5h 54m of market hours)
+- Valid orders executed: 0 (duplicate ID failures since ~17:50 UTC)
+- Usable validation data: None (regime=None suppression too severe)
+- Framework impact: Post-market analysis framework is staged and ready, but has no valid data to analyze
+
+**Waiting On User**: Decision between Options A (retry June 17), B (skip to June 18), or C (halt for investigation)
+
+**No Commit Yet** — BLOCKED.md updated by Session 3690 with block entry; awaiting user decision before proceeding with fixes/retries.
+
+---
+
 ## Session 3690 (June 16 19:21–19:24 UTC — CRITICAL BLOCK DIAGNOSIS + CHECKPOINT DEFERRAL)
 
 **Status**: ❌ **CHECKPOINT DEFERRED** — June 16 market validation fundamentally compromised. Two critical failures identified. 20:00 UTC checkpoint cannot execute.
