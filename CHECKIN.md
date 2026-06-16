@@ -1,5 +1,30 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3XX, June 16 18:07 UTC — CHECKPOINT EXECUTION SCHEDULED + MARKET VALIDATION MONITORING)
+
+**Status**: ✅ **ORCHESTRATOR PREPARED FOR 20:00 UTC CHECKPOINT** — stockbot market validation running autonomously (1h 52m remaining). Post-market analysis framework staged and ready. Wakeup scheduled for 20:00 UTC.
+
+**Work Completed This Session**:
+- ✅ **Orientation** — Reviewed ORCHESTRATOR_STATE.md (current as of 18:04 UTC). Confirmed: (a) stockbot market validation 13:30-20:00 UTC ongoing with 5 sessions (AAPL/MSFT/NVDA/JPM/AMZN), (b) Signal restoration fix holding (threshold cap 2% deployed 14:09 UTC), (c) All other projects blocked on user action, (d) Next action: 20:00 UTC post-market analysis checkpoint
+- ✅ **Checkpoint Infrastructure Verification** — All systems ready for execution:
+  - SSH access to Jetson (100.120.18.84): ✅ OK
+  - JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md: ✅ Present (staged 18:49 UTC) — 4-section structure with pre-analysis checklist, metrics extraction, routing decision tree, June 17 trigger
+  - All 7 upstream framework documents present and readable (POST_MARKET_ROUND_TRIP_ANALYSIS.md, JUNE_16_MARKET_VALIDATION_METRIC_EXTRACTION.md, etc.)
+  - Execution commands: ✅ Copy-paste ready (no manual discovery needed)
+- ✅ **Wakeup Scheduling** — ScheduleWakeup configured for 20:00 UTC execution (max 1h clamp, will fire at ~20:08 UTC). Orchestrator will immediately execute post-market analysis: (1) pre-analysis checklist (5 commands, ~5 min), (2) metrics extraction from Docker logs + SQLite (8 queries, ~10 min), (3) Route to Path A/B/C using M1-M5 decision thresholds, (4) Log result and trigger June 17 retrain prep if Path A/B approved
+- ✅ **WORKLOG.md + CHECKIN.md Updated** — Documented checkpoint scheduling and infrastructure verification
+
+**Checkpoint Execution Plan** (will execute at 20:08 UTC):
+1. Run pre-analysis checklist (Section 1): confirm market close, container health, log accessibility, DB health, 5-session confirmation
+2. Extract M1-M5 metrics (Section 2): signal count, trade count, Z-scores, win rates, PnL cohesion
+3. Evaluate routing criteria (Section 3): determine if Path A (STRONG), Path B (CAUTION), or Path C (COMPROMISED)
+4. If Path A/B: trigger June 17 08:00 UTC retrain prep (AAPL lgbm_ho + MSFT ridge_wf)
+5. Log decision to WORKLOG.md, update PROJECTS.md focus line with verdict
+
+**No User Action Required This Session** — Market validation autonomous, framework ready, checkpoint scheduled. Orchestrator will execute immediately upon wakeup.
+
+---
+
 ## Since Last Check-in (Session 3687, June 16 17:21 UTC — STANDING BY FOR 20:00 UTC CHECKPOINT + STOCKBOT USER DECISION)
 
 **Status**: 🟡 **ORCHESTRATOR STANDING BY** — stockbot market validation running autonomously until 20:00 UTC (2h 39m remaining). All autonomous work blocked pending: (1) stockbot config user decision (Critical block, Resolution field in BLOCKED.md), (2) post-market checkpoint analysis at 20:00 UTC.

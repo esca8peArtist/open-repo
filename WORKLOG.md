@@ -41,11 +41,22 @@
 5. Document Phase 4 routing and link to JUNE_17_RETRAIN_EXECUTION_CHECKLIST.md + JUNE_17_18_RETRAIN_QUALITY_ASSESSMENT_FRAMEWORK.md
 6. Commit results and decision tree to stockbot submodule + update PROJECTS.md focus line
 
-**Monitoring**: Background wait task (bpkpaoow6) polling until 20:00 UTC. Will receive notification on completion.
+**Monitoring**: ✅ ScheduleWakeup configured for 20:00 UTC checkpoint execution. Orchestrator will wake at 20:08 UTC (max 1h clamp) to execute post-market analysis framework immediately. Market validation autonomous until then (DO NOT INTERRUPT).
+
+**Checkpoint Infrastructure Verified** (Session 3XX, 18:07 UTC):
+- ✅ SSH access to Jetson: OK
+- ✅ All 7 upstream framework documents present and readable
+- ✅ JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md staged with section structure:
+  - Section 1: Pre-analysis checklist (5 commands, ~5 min)
+  - Section 2: Metrics extraction template (8 SQL/bash queries, ~10 min)
+  - Section 3: Scenario routing (deterministic M1-M5 thresholds, Path A/B/C)
+  - Section 4: June 17 retrain decision trigger
+- ✅ Execution commands ready (all copy-paste provided)
+- ✅ Decision tree grounded in SignalHealthMonitor baseline + Z-score thresholds
 
 ---
 
-## SESSION CHECKPOINT STATE (as of 17:59 UTC)
+## SESSION CHECKPOINT STATE (as of 18:07 UTC)
 
 ---
 
