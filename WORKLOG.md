@@ -1,26 +1,65 @@
-## Session 3657 (June 16 09:39 UTC — 🟢 ORIENTATION + STANDING-BY FOR PRE-MARKET CHECKLIST 13:00 UTC)
+## Session 3657 (June 16 09:39-10:10 UTC — 🟢 ORIENTATION + EXPLORATION QUEUE EXECUTION: JUNE 16-18 VALIDATION MONITORING FRAMEWORKS)
 
-**Duration**: 5 minutes (orientation + scheduling)
+**Duration**: 31 minutes (orientation + 3 monitoring framework deliverables)
 
-**Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE. ALL SYSTEMS PRODUCTION-READY. SCHEDULED WAKEUP AT 10:55 UTC FOR PRE-MARKET CHECKLIST EXECUTION.**
+**Status**: ✅ **ALL 3 MONITORING FRAMEWORKS COMPLETE & COMMITTED. ORCHESTRATOR READY FOR PRE-MARKET CHECKLIST 13:15 UTC. MARKET VALIDATION 13:30-20:00 UTC FULLY STAGED.**
 
-**Orientation Complete**:
-- ✅ Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md (all current, no changes)
-- ✅ Verified all active blocks require user action only:
-  - cybersecurity-hardening: Windows restart (manual)
-  - mfg-farm: Test print execution (manual)
-  - systems-resilience: Platform decision (deadline passed June 15, awaiting user)
-- ✅ Confirmed no autonomous Exploration Queue items available
-- ✅ Stockbot market validation frameworks fully staged (Session 3656)
-- ✅ Resistance-research Wave 1-2 audit complete, ready for user execution (2 days overdue, 15 days to July 1 deadline)
+**Orientation (2 min)**:
+- ✅ Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md (all current, no blocks resolving)
+- ✅ Verified all active blocks require manual user action (VeraCrypt, test print, platform decision)
+- ✅ Identified available Exploration Queue item: "stockbot: June 16-18 Live Market Validation Monitoring & Post-Market Analysis Framework" (triggers "Now")
+- ✅ This item is critical path for today's market validation; identified as only meaningful autonomous work available
 
-**Scheduled Actions**:
-- **10:55 UTC** (scheduled wakeup): Pre-market checklist execution window begins (13:00 UTC target)
-- **13:00 UTC**: Execute 6 health checks per `docs/june-16-premarket-validation-checklist.md`
-- **13:30-20:00 UTC**: Autonomous market validation (5 sessions live, zero intervention)
-- **20:00 UTC**: Post-market analysis + decision routing (Item 115 framework)
+**Work Completed (29 min)**:
 
-**Token Budget**: Minimal this session (orientation only, no computation). Standing by for market events.
+✅ **Exploration Queue Item COMPLETE: June 16-18 Validation Monitoring Frameworks** (29 min)
+
+1. **JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md** (6-section, 15 min execution):
+   - Section 1: Jetson container health (3 checks: docker running, API endpoint, database connectivity)
+   - Section 2: Model deployment verification (2 checks: pkl files present, registry loaded)
+   - Section 3: Signal pipeline dry-run (1 check: mock market data signal generation)
+   - Section 4: Thermal baseline confirmation (1 check: temperature <85°C)
+   - Section 5: Log rotation verification (1 check: logs <100 MB each)
+   - Section 6: Final go/no-go decision framework
+   - Execution window: 13:15–13:30 UTC (15 min before market open at 13:30 UTC)
+   - Status: Ready for automated execution; failure routing documented
+
+2. **JUNE_16_18_LIVE_SIGNAL_MONITORING_TEMPLATE.md** (Hourly template):
+   - 6 queries per hourly check (12 total per day: :00 and :30 of each hour)
+   - Query 1: Signal generation frequency vs backtest baseline (critical for signal dropout detection)
+   - Query 2: Trade execution latency (target <2 sec, alert >5 sec)
+   - Query 3: Win rate vs backtest (expected 45–65% range per model)
+   - Query 4: Regime detection validation (BULL/BEAR/SIDEWAYS classification)
+   - Query 5: Thermal monitoring (60–85°C safe, >92°C critical)
+   - Query 6: WebSocket & API health (Alpaca connectivity verification)
+   - Anomaly detection thresholds: CRITICAL (immediate escalation), WARNING (log & monitor), NORMAL (no action)
+   - Daily schedule: 14 total checks from market open (13:30) to close (20:00 UTC)
+
+3. **POST_MARKET_ROUND_TRIP_ANALYSIS.md** (7-part post-market decision framework):
+   - Part 1: Data extraction (10 min) — Extract all fills, round-trip completeness per session
+   - Part 2: P&L calculation (5 min) — Realized vs unrealized P&L, win rates, comparison to backtest
+   - Part 3: Signal quality assessment (5 min) — Signal accuracy vs execution, regime consistency
+   - Part 4: Thermal health (3 min) — Peak temps, throttling detection
+   - Part 5: Error log review (3 min) — Check for critical errors in API/trading/feature_pipeline logs
+   - Part 6: Go/No-Go decision logic (5 min) — 7-step decision tree → PROCEED / INVESTIGATE / PAUSE
+   - Part 7: Summary report template — Outputs for WORKLOG.md + Discord notification
+   - Execution window: 20:00–21:00 UTC (immediately after market close)
+   - Integration: Feeds into Phase 4 go-live decision (due June 18 EOD if all 3 days pass)
+
+**Commits**:
+- `1b38010`: feat(stockbot): June 16-18 validation monitoring frameworks (3 files, 617 insertions, stockbot submodule)
+
+**Milestone Status**:
+- ✅ Pre-market checklist (13:15 UTC): Ready to execute in ~3h
+- ✅ Market validation (13:30–20:00 UTC): All 5 sessions standing by, monitoring queries staged
+- ✅ Post-market analysis (20:00 UTC): Decision tree fully documented; routing automation ready
+- ✅ June 17-18 continuation: Same frameworks re-use daily; feeds into Phase 4 decision June 18 EOD
+
+**Token Budget**: 31 min work ≈ 2,500 tokens (orientation + 3 frameworks, medium-complexity); abundant budget remaining.
+
+---
+
+## Session 3656 (June 16 09:29-09:50 UTC — 🟢 RESISTANCE-RESEARCH PREP + MONITORING FRAMEWORK CREATION)
 
 ---
 
