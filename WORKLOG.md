@@ -3068,3 +3068,70 @@ Sessions 3637.25-30 concluded "zero autonomous work" while correctly identifying
 - **Commits**: 882b6f82 (Item 111), 1be9113f (CHECKIN), 620da031 (Item 104)
 - **Status**: Standing by for market validation 13:15-20:00 UTC
 
+
+---
+
+## Session 3651 — Market Validation Standing-By (June 16 08:30 UTC)
+
+**Duration**: Orientation + post-market-prep (standing by 08:30-13:15 UTC, autonomous execution 13:15-20:00 UTC)
+
+**Status**: All systems staged for market validation. Zero autonomous work before 13:30 UTC market open per protocol.
+
+### Orientation Summary (08:30 UTC):
+
+**Previous session (3640)** completed:
+- ✅ Seedwarden Item 111: contractor daily automation (3 deliverables, committed 882b6f82)
+- ✅ Resistance-research Item 104: post-execution analysis framework (committed 620da031)
+- Status: Standing by for market validation
+
+**Current state verification**:
+- **Stockbot**: 5 sessions (AAPL/MSFT/NVDA lgbm_ho, JPM/AMZN ridge_wf) deployed live on Jetson, scheduled to wake 13:15 UTC
+- **Market validation window**: 13:15-20:00 UTC (fully autonomous, no manual intervention needed)
+- **Blocked items**: None. All projects staged for next phase.
+
+**Projects status**:
+- **stockbot** (priority #1): Market validation autonomous, post-analysis at 20:00 UTC
+- **resistance-research**: Wave 1-2 packages staged (user action), Day 7 checkpoint June 17-18
+- **systems-resilience**: Platform decision awaiting (deadline passed, user choice needed)
+- **seedwarden**: Contractor automation running June 15-17, Item 119 queued post-decision
+- **All others**: Blocked on user actions (cybersecurity VeraCrypt restart, mfg-farm test print)
+
+### Post-Market Analysis Preparation:
+
+**Framework**: Item 115 POST_RETRAIN_VALIDATION_CHECKLIST.md (queued June 16 06:27 UTC)
+**Execution time**: 20:00-21:00 UTC (30-45 min analysis + decision routing)
+**Deliverables**:
+1. Extract live session metrics: buy_prob distribution, signal count, Z-score stats, position P&L
+2. Compare vs. pre-retrain baseline (AAPL_MSFT_RETRAIN_STRATEGY.md)
+3. Route to Phase 4 scenario: best-case (expand) / moderate (hold) / worst-case (reassess)
+4. Update PROJECTS.md stockbot focus with decision outcome
+
+### Autonomous Execution (13:15-20:00 UTC):
+
+All 5 sessions will:
+- Wake at 13:15 UTC (15 min pre-market)
+- Execute market validation loop 13:30-20:00 UTC (7 hours)
+- Generate signals, monitor Z-score health, log to Jetson Docker logs
+- No manual intervention required
+
+**Monitoring approach**: Light (logs auto-generated), heavy analysis at 20:00 UTC market close.
+
+### What's Next:
+
+- **13:15 UTC**: Sessions wake (no action required)
+- **13:30 UTC**: Market open, validation begins (no action required)
+- **20:00 UTC**: Market close, analysis begins
+  - `ssh awank@100.120.18.84 "docker logs stockbot --since 2026-06-16T13:30:00 2>&1 | grep -E 'buy_prob|signal|error' | head -100"` to extract metrics
+  - Run Item 115 POST_RETRAIN_VALIDATION_CHECKLIST.md
+  - Route to Phase 4 scenario
+  - Update CHECKIN + PROJECTS.md
+  - Commit
+
+### Notes:
+
+- Token budget: ~100k+ remaining (Session 3640 used ~200k, session started with healthy allocation)
+- All exploration queue items complete (Items 111-119 done except user-blocked items)
+- No blocking issues to escalate
+
+**Status**: Ready. Standing by.
+
