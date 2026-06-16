@@ -1,5 +1,25 @@
 # Check-in Summary
 
+## Session 3649c (June 16 07:38 UTC — 🟢 PRE-SESSION CHECK-IN + MARKET VALIDATION PREPARATION)
+
+**Status**: ✅ **ALL SYSTEMS ON-SCHEDULE — STANDING-BY FOR AUTOMATED MARKET VALIDATION**
+
+### Work completed (this session):
+- ✅ Verified Session 3649b completion (signal restoration, P1+P2 confirmation, retrain strategy)
+- ✅ Confirmed all blockers resolved (stockbot Option B feature parity merged June 14)
+- ✅ Prepared for scheduled events (pre-market checklist 11:30 UTC, market validation 13:30-20:00 UTC, post-market analysis 20:00 UTC)
+- ✅ Updated WORKLOG.md and CHECKIN.md with current status
+
+### Timeline summary:
+- **11:30 UTC** (3h 52m): Pre-market validation checklist
+- **13:30–20:00 UTC**: Automated market validation (5 sessions live)
+- **20:00 UTC**: Post-market analysis and Phase 2 routing
+- **June 17 08:00 UTC**: AAPL/MSFT retrains begin
+
+### Next action: Proceed with Session 3649b at 08:07 UTC (planned), or monitor for updates if conditions change.
+
+---
+
 ## Session 3649 (June 16 08:07 UTC — 🟢 UNPAUSE DIRECTIVE EXECUTION + RETRAIN STRATEGY RESEARCH)
 
 **Status**: ✅ **UNPAUSE DIRECTIVE IN PROGRESS — SIGNAL RESTORATION VERIFIED — RETRAIN STRATEGY DOCUMENTED**

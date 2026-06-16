@@ -1,4 +1,34 @@
-## Session 3649 (June 16 08:07 UTC — 🟢 UNPAUSE DIRECTIVE EXECUTION + RETRAIN STRATEGY RESEARCH)
+## Session 3649c (June 16 07:38 UTC — 🟢 MARKET VALIDATION PREPARATION + STANDING-BY)
+
+**Duration**: ~2 minutes (orientation + CHECKIN update)
+**Work completed**: Verified all projects on schedule; prepared for automated market validation window
+
+### What was done:
+
+1. ✅ **Session 3649b completion verified**
+   - Signal restoration: ✅ verified (all 5 sessions healthy, scheduled 13:15 UTC wake)
+   - P1+P2 completion: ✅ confirmed (both deployed and integrated June 14)
+   - Retrain strategy: ✅ documented (`AAPL_MSFT_RETRAIN_STRATEGY.md`, execution June 17 08:00 UTC)
+   - Retrain prerequisites: ✅ Option B (14-feature parity) merged to master June 14 13:42 UTC
+
+2. ✅ **Orientation to live state**
+   - ORCHESTRATOR_STATE.md: All current (07:38 UTC generation)
+   - BLOCKED.md: Three active blocks unchanged (cybersecurity-hardening, mfg-farm, systems-resilience) — all awaiting user action
+   - EXPLORATION_QUEUE.md: 110+ items; current status: Items 105/109 queued for post-market (June 19-20); market validation itself is autonomous work
+   - Usage: 0.1% Sonnet, very healthy budget
+
+3. ✅ **Prepared for scheduled events**
+   - **11:30 UTC** (3h 52m): Pre-market validation checklist (30-min, uses Session 3642 templates)
+   - **13:30–20:00 UTC**: Automated market validation (5 sessions live-trading, no orchestrator intervention needed)
+   - **20:00 UTC**: Post-market analysis (20-30 min, Path A/B/C routing documented in Session 3642)
+   - **June 17 08:00 UTC**: AAPL/MSFT retrain execution (overnight training, ~30 min wall-clock)
+
+### Status:
+✅ **All projects on-schedule, zero blockers**. Orchestrator standing-by for automated market validation window. Next action: 11:30 UTC pre-market checklist.
+
+---
+
+## Session 3649b (June 16 08:07 UTC — 🟢 UNPAUSE DIRECTIVE EXECUTION + RETRAIN STRATEGY RESEARCH)
 
 **Duration**: ~1 hour (08:00–09:00 UTC, estimated)
 **Work completed**: Verified signal restoration; researched optimal AAPL/MSFT retrain strategy for June 18 deadline

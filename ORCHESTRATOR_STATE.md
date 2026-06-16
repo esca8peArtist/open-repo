@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-16T06:50:17Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-16T07:38:03Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (8,523 tokens) | All-models 9.6% | Reset in 161h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (8,523 tokens) | All-models 11.1% | Reset in 160h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[P3+P4 COMPLETE — NVDA DEPLOYMENT COMPLETE, MARKET-OPEN VALIDATION JUNE 16]** — (1) **Jetson Status**: AAPL lgbm_ho + MSFT lgbm_ho deployed live June 14, NVDA lgbm_ho deployed June 15 (5-session config active). Container healthy, 248+ tests passing. (2) **Next milestone**: June 16 13:30 UTC automated market-open signal validation (AAPL/MSFT/NVDA). Success criterion: ≥1 live trade each model by June 18 EOD. (3) **Pending**: All systems standing-by awaiting automated validation. No cur … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[P3+P4 COMPLETE — RETRAIN STRATEGY DOCUMENTED, MARKET-OPEN VALIDATION JUNE 16 13:30 UTC]** — (1) **Signal restoration verified** (Session 3649): All 5 sessions healthy, scheduled to wake 13:15 UTC. (2) **Retrain strategy complete** (Session 3649): `AAPL_MSFT_RETRAIN_STRATEGY.md` + `batch_aapl_msft_retrains.json` documented. Decision: full-eval only (2022-2026 data, include June 2-15 live data). Execution: June 17 08:00 UTC. (3) **Next milestone**: June 16 13:30-20:00 UTC automated mark … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -65,11 +65,11 @@
 **Resolution**: [leave blank — deadline expired, awaiting user direction to proceed with selected platform]
 
 ## Recently Resolved (last 5)
+• Usage limits — weekly calibration reminder ← 2026-06-16 07:05 UTC (Session 3647)
 • stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
 • open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
 • Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
-• systems-resilience — Phase 5.1 PDF bundle missing; regeneration required before June 9 ← 2026-06-06 21:15 UTC
 
 ## Inbox (unprocessed)
 🟢 **PROCESSED (Session 3219, June 11 23:31 UTC)**:

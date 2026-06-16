@@ -2077,3 +2077,62 @@
 - **Capacity**: Target 2-3 active items per session
 - **Trigger**: When all projects blocked and queue <3 items, add new items
 - **Assignment**: Pair each item with agent profile; leverage parallel execution
+
+### 120. ⏳ resistance-research — Day 7 Checkpoint Metrics Aggregation & Decision Routing (June 17-18 execution)
+**Context**: Phase 2 Wave 1-2 email execution occurs June 16-17 (user action, 90 min). Day 7 checkpoint (June 17-18) assesses campaign results and sequences Phase 2 domain expansion. Item 102 (PHASE_2_DAY_7_CHECKPOINT_TEMPLATE.md) provides the metrics template. This item builds the automation layer: aggregates Wave results → calculates signal score → executes domain routing decision tree → outputs Phase 2 sequencing recommendation.
+**Scope**:
+  - Metrics aggregation: Parse Wave 1-2 execution logs (email sends, bounces, replies, unsubscribes) from WORKLOG.md and dedicated Wave tracking file
+  - Signal score calculation: T+7 engagement metrics mapped to signal score per Item 102 framework (reply %, open %, engagement velocity)
+  - Domain routing decision tree: Maps signal score (STRONG/MODERATE/WEAK/FAILURE) to Phase 2 domain activation sequence (Domains 48/49/50/57/58/59 permutations per Item 104 logic)
+  - Contingency activation: If signal=WEAK/FAILURE, activate Tier 2 escalation contacts per Item 100 + cost-adjusted sequencing per Item 104
+  - Output: Decision document with 3 sections: (1) Wave 1-2 results summary, (2) Signal score + confidence interval, (3) Phase 2 domain activation sequence + contingency paths
+**Deliverables**:
+  - `DAY_7_METRICS_AGGREGATION_TEMPLATE.py` — Python script to parse Wave logs, calculate signal score, execute routing tree. CLI: `--wave-dir /path/to/logs --output decision.md`
+  - `DAY_7_DECISION_ROUTING_MATRIX.md` — Decision tree: [signal_score] × [resource_availability] → domain activation sequence + escalation routing
+  - `DAY_7_CHECKPOINT_EXECUTION_CHECKLIST.md` — 20-30 min runbook for user to execute at June 17-18 checkpoint: run script, review decision, confirm activation path
+**Value**: Removes manual aggregation work (1.5-2h); lets user see "here are the results, here's Phase 2 sequence" in 30 min
+**Owner**: resistance-research subagent
+**Deadline**: June 17 08:00 UTC (ready for execution at June 17-18 checkpoint)
+**Status**: ⏳ QUEUED for June 17-18 (depends on Wave 1-2 user execution June 16-17)
+**Confidence**: 87% — Item 102 template provides baseline; Items 104/100 provide routing logic; Wave execution logs are readable
+
+---
+
+### 121. ⏳ stockbot — Phase 4 Immediate Actions Staging (post-market-validation June 18-19 execution)
+**Context**: Market validation (June 16 13:30-20:00 UTC) produces 5-session results (AAPL/MSFT/NVDA lgbm_ho + JPM/AMZN ridge_wf). Item 115 routes results to Phase 4 scenario (best/moderate/worst-case). But what does "activate Phase 4" actually mean? This item builds the immediate execution sequence: which stocks deploy live first, in what order, with what position sizing, and what infrastructure changes are needed.
+**Scope**:
+  - Market validation result interpretation: Signal count, trade count, live vs backtest drift thresholds per Item 115 decision tree
+  - Scenario activation path: If Scenario A (best-case), what's the 7-day rollout sequence for GOOGL + NVDA expansion + cooler installation? If Scenario B/C, what's the contingency sequence?
+  - Position sizing + capital allocation: Apply Item 121 capital allocation framework (Kelly normalization, tier-based position sizing) to all 5 sessions post-validation
+  - Infrastructure dependencies: Cooler delivery/installation (June 19, Item 95), thermal validation (90 min, Item 95), Docker restart (5 min), DNS verification (5 min), Alpaca connection health check (5 min)
+  - Live deployment sequence: 1-day stagger between stock additions to monitor signal stability. Day 1: GOOGL or NVDA (highest validation Sharpe). Day 2: remaining expansion stock. Days 3-7: position size ramps per capital framework.
+  - Rollback triggers: If post-deployment Sharpe <80% of validation baseline → immediate kill signal
+**Deliverables**:
+  - `PHASE_4_SCENARIO_TO_EXECUTION_MAPPING.md` (2-3K words) — Decision tree: Scenario A/B/C → immediate actions (GOOGL live June 20, NVDA live July 3, or contingency hold). Timeline, position sizing, infrastructure readiness.
+  - `PHASE_4_IMMEDIATE_ACTIONS_STAGING_CHECKLIST.md` (1.5K words) — 60-90 min runbook for June 18-20 (cooler order verification, thermal validation June 19, final capital allocation, deployment sequencing)
+  - `PHASE_4_LIVE_DEPLOYMENT_SEQUENCE.md` (1K words) — Day-by-day schedule (Day 1 = GOOGL or NVDA live, Day 2 = second expansion, Days 3-7 = ramp). Rollback thresholds. Discord notifications per session.
+**Value**: Eliminates decision friction on Phase 4 activation; user can move from "market validation done" to "3 new stocks live" in 90 min instead of 4-6 hours of planning
+**Owner**: stockbot subagent (execution June 18-20)
+**Deadline**: June 20 08:00 UTC (ready for Day 1 live deployment June 20-21)
+**Status**: ⏳ QUEUED for June 18-20 (depends on Item 115 market validation results + Item 95 cooler delivery)
+**Confidence**: 88% — Item 115 decision tree grounded in 6 validation gates; Item 121 capital framework finalized; cooler installation SOP documented (Item 95)
+
+---
+
+### 122. ⏳ seedwarden — Phase 4 Infrastructure & Launch Post-Mortem (June 22+ execution)
+**Context**: Phase 3 (seedwarden content production sprint) executes June 22–July 13 with contractor + solo + part-time support. Contractor decision closes June 17. Phase 3 launch gate June 21-22. This item creates Phase 4 foundation: infrastructure (product platform, payment system, contractor onboarding), post-launch support playbook, and first 2 weeks contingency routing.
+**Scope**:
+  - Phase 4 infrastructure requirements: Product listing (Shopify vs custom vs Etsy expansion), contractor payment automation (stripe API integration), community support (Slack/Discord channel setup), analytics tracking (sales, customer feedback, churn)
+  - Launch post-mortem template: 48 hours post-launch (June 24), assess (1) content quality feedback, (2) sales velocity vs 12-month forecast baseline, (3) contractor experience + satisfaction, (4) platform stability/scaling needs
+  - First 2 weeks contingency matrix: If contractor quits in week 1, activate solo fallback (Item 111 contingency Scenario B). If sales exceed forecast >200%, scale production? If sales <50% forecast, what pivot options exist (pricing, marketing, discount)?
+  - Phase 4 Phase-out timeline: When does contractor solo out (July 31)? Phase 4 deliverables (10-15 guides) → Phase 5 (community-led iteration)?
+**Deliverables**:
+  - `PHASE_4_INFRASTRUCTURE_ARCHITECTURE.md` (2-3K words) — Product platform choice matrix (Shopify/custom/Etsy), payment system, contractor onboarding automation, analytics framework
+  - `PHASE_3_LAUNCH_POST_MORTEM_TEMPLATE.md` (1K words) — 48-hour feedback template with 4 dimensions (content, sales, contractor, platform), decision triggers for contingency activation
+  - `PHASE_4_CONTINGENCY_ACTIVATION_MATRIX.md` (1.5K words) — 4-cell matrix: contractor status × sales velocity → action (continue, pivot, scale, or kill). All paths pre-approved per Item 106 logic.
+**Value**: De-risks Phase 3 launch success by pre-staging Phase 4 infrastructure + contingency paths; removes "what do we do June 23?" confusion
+**Owner**: seedwarden subagent (execution June 22-24)
+**Deadline**: June 22 12:00 UTC (ready for Phase 3 launch + first 48 hours post-mortem)
+**Status**: ⏳ QUEUED for June 22+ (depends on Phase 3 launch June 22, Item 111 contractor decision June 17)
+**Confidence**: 83% — Item 106 launch decision matrix provides baseline contingencies; Item 111 contractor automation provides daily tracking; infrastructure choices well-researched (Shopify vs custom trade-offs documented)
+
