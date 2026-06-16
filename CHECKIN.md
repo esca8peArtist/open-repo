@@ -1,10 +1,29 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3701 — June 16 21:27 UTC — STATE UNCHANGED; AWAITING USER DECISIONS)
+## Since Last Check-in (Session 3702 — June 16 21:50 UTC — STATE VERIFIED; STANDING BY FOR USER DECISIONS)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL PROJECTS BLOCKED ON USER ACTIONS; ZERO AUTONOMOUS WORK AVAILABLE**
 
 **Work Completed This Session**:
+1. ✅ **Orient** — Read ORCHESTRATOR_STATE.md (auto-generated 21:33 UTC); verified Session 3701 state still current
+2. ✅ **Block verification** — All 4 active blocks remain user-action dependent:
+   - cybersecurity-hardening: VeraCrypt pre-boot restart (manual Windows action)
+   - mfg-farm: Test print execution (manual 3D print action)
+   - open-repo: raspby1 runtime decision (Docker vs systemd — user choice)
+   - systems-resilience: Platform choice (Nextcloud+Matrix vs Discourse — user decision)
+3. ✅ **Project status** — Confirmed all projects either paused, complete, or blocked on user actions:
+   - stockbot: Market validation FAILED June 16 19:31 UTC → awaiting A/B/C decision (deadline June 17 08:00 UTC)
+   - resistance-research: Phase 2 Wave 1-2 infrastructure complete → awaiting user email sends (75 min)
+   - All others: Blocked on named user actions (no autonomous work available)
+4. ✅ **Exploration queue** — Verified queue fully populated with 3 contingency frameworks (Session 3694)
+
+---
+
+## Previous Check-in (Session 3701 — June 16 21:27 UTC — STATE UNCHANGED; AWAITING USER DECISIONS)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL PROJECTS BLOCKED ON USER ACTIONS; ZERO AUTONOMOUS WORK AVAILABLE**
+
+**Work Completed That Session**:
 1. ✅ **State verification** — Confirmed Session 3700 audit still valid; no changes to project statuses
 2. ✅ **Block status** — All 4 active blocks remain user-action dependent (no auto-resolvable progress)
 3. ✅ **User decision tracking** — Updated WORKLOG.md with Session 3701 entry
