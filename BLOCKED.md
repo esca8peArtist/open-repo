@@ -31,6 +31,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+### stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window)
+**Date blocked**: 2026-06-16 (Session 3675, 13:48 UTC)
+**Context**: Pre-market checklist completed at 13:18 UTC with GO decision for 13:30 UTC market validation. All 5 trading sessions (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, JPM ridge_wf, AMZN lgbm_ho) launched successfully. However, at 13:40 UTC (~10 minutes into validation), a systematic **SIGNAL DROPOUT** was discovered: all 5 sessions generating `buy_prob=0.0000` and `action=HOLD` on every cycle (18+ consecutive cycles as of 13:48 UTC). Models ARE producing `predicted_return` values (e.g., AAPL 0.0218, MSFT -0.0339, AMZN 0.0352) but those are not translating to buy_prob > 0. This is identical to the z-score saturation issue from May (when extreme z-scores caused sigmoid outputs to saturate at 0). **Diagnostic attempt**: Restarted Docker container at 13:45 UTC → issue persists across restart, indicating a code/model inference problem (not transient). Current cycle count: 18+ with zero BUY/SELL signals. SignalHealthMonitor flagging CRITICAL alerts every 30 seconds. **Validation window impact**: Only 18 minutes into 6.5-hour validation window (13:30-20:00 UTC). Validation is effectively halted — no trades can execute with zero buy signals. June 17-18 gate validation and June 18 EOD hard deadline are now at risk.
+**What I need**: User to diagnose the model inference issue. Possible causes: (1) Feature preprocessing bug (z-scores out of distribution again), (2) Recent code change to buy_prob calculation logic, (3) Model weights corrupted or misloaded, (4) Alpaca data feed degradation causing unusual feature values. **Decision**: Either (A) identify and fix root cause in next 1-2 hours to resume validation, or (B) cancel June 16 validation and schedule retrain/validation for June 17 with fixes applied. Hard deadline June 18 EOD means any decision must be made by 14:00 UTC (48 minutes from now).
+**Verify with**: `ssh -T awank@100.120.18.84 "docker logs stockbot --tail 50 2>&1 | grep -c 'buy_prob=0.0000'"` — should return 0 if signals are now non-zero
+**Resolution**: [leave blank]
+
+---
+
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
