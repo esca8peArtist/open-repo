@@ -31,6 +31,16 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+<!-- AUTO:CALIBRATION:START -->
+### Usage limits — weekly calibration reminder
+**Date blocked**: 2026-06-16 (auto-added each Tuesday by reset-usage-budget.sh)
+**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
+**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
+**Verify with**: `bash scripts/verify-calibration.sh`
+**Resolution**:
+<!-- AUTO:CALIBRATION:END -->
+
+
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
