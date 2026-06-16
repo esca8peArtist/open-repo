@@ -1,23 +1,56 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3685e, June 16 17:00–17:15 UTC — 🔴 CRITICAL BLOCK VERIFIED + ORCHESTRATOR STANDING BY FOR USER DECISION)
+
+**Status**: 🔴 **CRITICAL BLOCK VERIFIED REAL — AWAITING USER DECISION — All autonomous work halted until stockbot config resolved**
+
+**Critical Issue Verification** (via Docker logs):
+- ✅ Confirmed 5 sessions running (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, AMZN lgbm_ho, JPM ridge_wf) vs. 2 expected (AMZN + JPM only)
+- ✅ Confirmed MSFT/NVDA sessions generating signal_dropout alerts ("No BUY/SELL in last 2h")
+- ✅ Confirmed AAPL/MSFT lgbm_ho are wrong models per PROJECTS.md plan
+- ✅ Confirmed AAPL failed gate validation (2/6 gates per Phase 2 evaluation)
+- **Conclusion**: Block is REAL. Configuration corruption confirmed. Validation data is INVALID.
+
+**Impact Assessment**:
+- **June 17-18 gate decision at risk**: Retraining will use corrupted validation data from wrong models
+- **June 18 EOD hard deadline**: Cannot proceed with Phase 4 decisions without correcting this
+- **Post-market checkpoint BLOCKED**: 20:00 UTC analysis cannot proceed until user clarifies config
+
+**Current Decision Point**:
+🟢 **AWAITING USER CLARIFICATION IN BLOCKED.md (Resolution field)**
+- **Option A** (Expected per Strategic Reset): MSFT/NVDA sessions are NOT intentional → User action: shut down 3 wrong sessions (AAPL/MSFT/NVDA) + restart validation with 2-session config only
+- **Option B**: MSFT/NVDA sessions ARE intentional → User action: provide updated validation plan + updated gate schedule + clarify June 17-18 decision process
+
+**Orchestrator Status**:
+- ✅ Critical block verified and documented
+- ✅ WORKLOG.md updated with verification details
+- ⏳ **STANDING BY for user decision** (BLOCKED.md Resolution field)
+- ⏳ **NO AUTONOMOUS WORK** available until this is resolved (all other projects blocked or paused)
+- ⏳ **20:00 UTC POST-MARKET CHECKPOINT BLOCKED** — cannot execute until config is clarified
+
+**Next Action Sequence**:
+1. **IF (by 20:00 UTC) user provides Resolution in BLOCKED.md**: Execute user's decision immediately, apply corrected config, run checkpoint
+2. **IF (by 20:00 UTC) user has NOT provided clarification**: Log "Checkpoint deferred — awaiting stockbot config decision" to WORKLOG.md, escalate via CHECKIN.md, move forward without checkpoint data
+
+---
+
 ## Since Last Check-in (Session 3685d, June 16 16:53 UTC — 🔴 CRITICAL: VALIDATION WINDOW CONFIGURATION CORRUPTED)
 
-**Status**: 🔴 **CRITICAL BLOCK — Market validation running WRONG sessions; June 18 EOD hard deadline at SEVERE RISK**
+**Status**: 🔴 **CRITICAL BLOCK ADDED — Market validation running WRONG sessions; gate validation data now invalid; June 18 deadline at SEVERE RISK**
 
-**Critical Issue Discovered**:
-- **VALIDATION CONFIGURATION ERROR**: Market validation window (13:30-20:00 UTC) is running 5 sessions (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, AMZN lgbm_ho, JPM ridge_wf) but Strategic Reset specified 2-session config (AMZN + JPM only)
-- **WRONG MODELS FOR GATE VALIDATION**: AAPL lgbm_ho failed gate validation (2/6 gates) and should NOT be running. MSFT lgbm_ho is running but June 17 plan calls for MSFT ridge_wf retrain (completely different model)
-- **MODEL-SPECIFIC SIGNAL FAILURES**: MSFT lgbm_ho and NVDA lgbm_ho showing signal dropout (buy_prob=0.0000) while AMZN works (buy_prob=0.4402), indicating model-specific bugs distinct from June 16 14:09 threshold cap fix
-- **VALIDATION DATA INVALID**: June 16 market validation is collecting training data for wrong models, which compromises June 17 retrains and June 17-18 gate validation
-- **CRITICAL DEADLINE RISK**: June 18 EOD hard deadline for gate decision requires correcting this immediately
+**Critical findings**:
+- ✅ Verified market validation is running at 16:53 UTC (in progress, 13:30-20:00 UTC window)
+- ❌ **CRITICAL ERROR DISCOVERED**: Running 5 sessions (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, AMZN lgbm_ho, JPM ridge_wf) but Strategic Reset specified 2-session config (AMZN + JPM only)
+- ❌ **WRONG MODELS**: AAPL lgbm_ho is running despite failing gate validation (2/6 gates). MSFT lgbm_ho is running but June 17-18 plan calls for MSFT ridge_wf retrain (different model)
+- ❌ **BROKEN SESSIONS**: MSFT lgbm_ho and NVDA lgbm_ho showing signal dropout (buy_prob=0.0000) while AMZN works correctly (buy_prob=0.4402) — suggests model-specific bugs distinct from threshold cap fix
+- ❌ **VALIDATION DATA COMPROMISED**: June 16 validation window is collecting data for wrong models, which invalidates June 17 training data and June 17-18 gate validation
+- 🔴 **JUNE 18 EOD HARD DEADLINE AT RISK**: User decision on session configuration needed IMMEDIATELY to salvage gate validation timeline
 
-**Blocking Decision Required**:
-- User must clarify: Are MSFT/NVDA sessions intentional in June 16 validation window?
-- If NO (expected per Strategic Reset): Shut down wrong sessions immediately and restart validation with 2-session config only
-- If YES: Provide updated validation plan + gate decision schedule
+**Action taken**:
+- ✅ Added CRITICAL block to BLOCKED.md (Item: "stockbot — CRITICAL: June 16 validation window using wrong session configurations (re-regression)")
+- ⏳ Awaiting user clarification: Are MSFT/NVDA sessions intentional? If not, shut down wrong sessions + restart validation with 2-session config only
 
-**Block Status**: Added to BLOCKED.md (CRITICAL) — awaiting user decision
-**Do NOT proceed with 20:00 UTC checkpoint until this is resolved** — checkpoint data will be invalid if wrong models are running
+**Next**: Do NOT execute 20:00 UTC post-market checkpoint until this is resolved. Checkpoint data will be invalid if wrong models are running.
 
 ---
 
