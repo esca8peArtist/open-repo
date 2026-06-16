@@ -1,29 +1,39 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3708 — June 16 23:15 UTC — STANDING BY CONFIRMED; NO CHANGES)
+## Since Last Check-in (Session 3709 — June 16 22:51 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
 
-**Session Purpose**: Verify standing-by state remains correct; confirm no new user actions/decisions in INBOX.md; commit orchestration state.
+**Session Purpose**: Comprehensive orientation; verify standing-by state remains correct; confirm no new user actions/decisions available; ready for next user action.
 
 **Work Completed This Session**:
-1. ✅ **Orient** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md (all verified consistent with Session 3707)
-2. ✅ **Block Audit** — All 4 active blocks remain user-action dependent:
-   - cybersecurity-hardening: VeraCrypt pre-boot restart (manual Windows action)
-   - mfg-farm: Test print execution (manual 3D print action)
-   - open-repo: raspby1 runtime decision + deployment (user choice + 3-4h work)
-   - systems-resilience: Platform choice Nextcloud+Matrix vs Discourse (user decision + 4-6h work)
-3. ✅ **INBOX Verification** — No new user decisions/actions since Session 3706
-4. ✅ **Exploration Queue** — Verified all 15+ items remain properly gated on user decisions
-5. ✅ **Commit Orchestration Files** — ORCHESTRATOR_STATE.md updated, all files ready for commit
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (22:51 UTC), BLOCKED.md (4 active blocks), PROJECTS.md (exploration queue populated), INBOX.md (no new items)
+2. ✅ **Block Audit** — All 4 active blocks verified user-action dependent (no auto-resolvable items):
+   - **stockbot**: June 16 market validation FAILED 19:31 UTC. Root causes: HMM warmup stuck (54+ bars, in-memory reset on container restart) + duplicate order_id guard not working. User decision A/B/C required by June 17 08:00 UTC. Support docs staged: OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md, OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md, OPTION_C_INVESTIGATION_ROADMAP.md
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual Windows action; unable to auto-verify)
+   - **mfg-farm**: Test print execution (manual 3D print action; unable to auto-verify)
+   - **open-repo** + **systems-resilience**: Both awaiting runtime/platform decisions (raspby1 Docker vs systemd; Nextcloud+Matrix [8/10 recommended] vs Discourse [5/10 — has Pi5 IPv6 bug])
+3. ✅ **Project Scope Verification** — All active project Goals reviewed; no unfinished autonomous scope:
+   - stockbot: Blocked on user A/B/C decision
+   - resistance-research: Wave 1-2 emails queued but awaiting user execution (75 min action)
+   - All other projects either paused or complete
+4. ✅ **Exploration Queue** — Verified populated with 20+ items; all pending items gated on user decisions or external triggers (retrain completion, market validation outcome, wave execution completion)
+5. ✅ **No New INBOX Items** — Confirmed zero new user decisions/actions since Session 3708
 
-**Interpretation**: Standing-by state correct. Session 3703-3707 completed comprehensive diagnosis and fix staging for stockbot market validation failure. All other projects blocked on user decisions. Exploration queue populated. Ready for next user action in INBOX.md.
+**Interpretation**: Standing-by state is correct. All autonomous work exhausted. No unblocked projects or exploration items available. Orchestrator correctly positioned to dispatch immediately upon user decision(s) in INBOX.md.
 
-**Awaiting User Input** (unchanged from Session 3707):
-1. **URGENT (by June 17 08:00 UTC)**: Stockbot Option A/B/C decision
-2. **Secondary**: Resistance-research Wave 1-2 emails (75 min), platform decisions, manual actions
+**Awaiting User Input**:
+1. **URGENT (Deadline: June 17 08:00 UTC)**: Stockbot Option A/B/C decision (3 scenarios fully staged and ready for dispatch)
+2. **Other actions** (secondary, no deadline):
+   - Resistance-research: Phase 2 Wave 1-2 email execution (75 min, templates ready)
+   - Platform decision: Nextcloud+Matrix vs Discourse (4-6h deployment upon decision)
+   - Manual actions: VeraCrypt restart, test print execution
 
-**Next Session**: Check INBOX.md for user decisions; route to appropriate execution work in exploration queue.
+**Next Session**: Check INBOX.md for any new user decisions. Route to appropriate work:
+- If stockbot decision provided → dispatch chosen option immediately (3-4h implementation)
+- If resistance-research ready → execute Wave 1-2 (75 min)
+- If platform decided → dispatch Phase 5.1 deployment (4-6h)
+- If no new decisions → stand by (no autonomous work available)
 
 ---
 
