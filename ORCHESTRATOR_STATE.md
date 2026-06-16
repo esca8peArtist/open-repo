@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-16T14:01:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-16T14:46:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (8,523 tokens) | All-models 20.6% | Reset in 154h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (8,523 tokens) | All-models 21.8% | Reset in 153h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[P3+P4 COMPLETE — RETRAIN STRATEGY DOCUMENTED, MARKET-OPEN VALIDATION JUNE 16 13:30 UTC]** — Standing by for 13:15 UTC pre-market checklist. Market validation 13:30-20:00 UTC today (5 live sessions, automated). Retrain execution June 17 08:00 UTC (AAPL+MSFT full-eval, 2022-2026 data). Gate validation June 17-18. Hard deadline: June 18 EOD.
+**Focus**: ✅ **[P3+P4 COMPLETE + CRITICAL FIX DEPLOYED — MARKET VALIDATION SIGNAL DROPOUT RESOLVED, VALIDATION RESUMED 14:09 UTC JUNE 16]** — Market validation 13:30-20:00 UTC (5 live sessions, automated). **June 16 incident**: Signal dropout (13:40-14:09 UTC) caused by missing threshold cap in ensemble stacker; autonomously diagnosed & fixed (threshold capped at 2%). Signal restoration validated (AMZN BUY, MSFT SELL, JPM/NVDA HOLD). Validation now resuming. Retrain execution June 17 08:00 UTC (AAPL+ … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -33,13 +33,6 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window)
-**Date blocked**: 2026-06-16 (Session 3675, 13:48 UTC)
-**Context**: Pre-market checklist completed at 13:18 UTC with GO decision for 13:30 UTC market validation. All 5 trading sessions (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, JPM ridge_wf, AMZN lgbm_ho) launched successfully. However, at 13:40 UTC (~10 minutes into validation), a systematic **SIGNAL DROPOUT** was discovered: all 5 sessions generating `buy_prob=0.0000` and `action=HOLD` on every cycle (18+ consecutive cycles as of 13:48 UTC). Models ARE producing `predicted_return` values (e.g., AAPL 0.0218, MSFT -0.0339, AMZN 0.0352) but those are not translating to buy_prob > 0. This is identical to the z-score saturation issue from May (when extreme z-scores caused sigmoid outputs to saturate at 0). **Diagnostic attempt**: Restarted Docker container at 13:45 UTC → issue persists across restart, indicating a code/model inference problem (not transient). Current cycle count: 18+ with zero BUY/SELL signals. SignalHealthMonitor flagging CRITICAL alerts every 30 seconds. **Validation window impact**: Only 18 minutes into 6.5-hour validation window (13:30-20:00 UTC). Validation is effectively halted — no trades can execute with zero buy signals. June 17-18 gate validation and June 18 EOD hard deadline are now at risk.
-**What I need**: User to diagnose the model inference issue. Possible causes: (1) Feature preprocessing bug (z-scores out of distribution again), (2) Recent code change to buy_prob calculation logic, (3) Model weights corrupted or misloaded, (4) Alpaca data feed degradation causing unusual feature values. **Decision**: Either (A) identify and fix root cause in next 1-2 hours to resume validation, or (B) cancel June 16 validation and schedule retrain/validation for June 17 with fixes applied. Hard deadline June 18 EOD means any decision must be made by 14:00 UTC (48 minutes from now).
-**Verify with**: `ssh -T awank@100.120.18.84 "docker logs stockbot --tail 50 2>&1 | grep -c 'buy_prob=0.0000'"` — should return 0 if signals are now non-zero
-**Resolution**: [leave blank]
----
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -63,13 +56,20 @@
 **Resolution**: [leave blank]
 ---
 ### open-repo — June 12 deployment never executed; infrastructure missing on raspby1
+**Date blocked**: 2026-06-16 (discovered in Session 3671 audit)
+**Original failure date**: 2026-06-12 (deployment date when nothing occurred)
+**Context**: The June 12 deployment was incorrectly marked as "resolved" in Session 2995, which only clarified the start time (09:00 UTC). The actual deployment never executed. Audit (Session 3671, 06:50 UTC June 16) confirmed: raspby1 has zero production infrastructure — no Docker containers, no Nginx, no PostgreSQL, no SSL certificates, nothing on ports 80/443/8000. Three Alembic migrations are authored but unapplied. The published deployment runbook assumes `ubuntu@host` with systemd/pip/venv, but the host is `awank` user with UV (no `requirements.txt`), has no `open-repo` systemd unit, and `awank` is not in the docker group. The deployment is blocked on a **platform/runtime decision** (shared with systems-resilience Phase 5.1) whose deadline expired June 15 23:59 UTC with no user response. All application code is complete and passing 157 tests — the blocker is purely infrastructure/deployment, not code readiness.
+**What I need**: (1) **User decision on raspby1 runtime** — same decision needed for both open-repo and systems-resilience Phase 5.1. Does raspby1 run Docker (recommended, simpler deployment) or traditional systemd/venv? (2) Once runtime decided, orchestrator will either: execute first-time Docker deployment (3-4h) or rebuild runbook for systemd approach (1h) + execute (1h). (3) Post-deployment 48-72h soak test before Phase 5.2 author onboarding.
+**Verify with**: `docker ps 2>&1 | grep -i "open-repo\|api\|postgres"` should show running containers when deployment is done, OR `systemctl status open-repo` should show active service if systemd approach chosen
+**Resolution**: [leave blank — awaiting user decision on raspby1 runtime + platform choice]
+---
 
 ## Recently Resolved (last 5)
+• stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • Usage limits — weekly calibration reminder ← 2026-06-16 07:05 UTC (Session 3647)
 • stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
 • open-repo — Deployment start time conflict (user clarification required) ← 2026-06-11 02:58 UTC (Session 2995 — orchestrator autonomous resolution)
-• Usage limits — weekly calibration reminder ← 2026-06-10 (Session 2977 — automated verification)
 
 ## Inbox (unprocessed)
 🟢 **PROCESSED (Session 3219, June 11 23:31 UTC)**:
