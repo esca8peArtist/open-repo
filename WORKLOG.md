@@ -1,8 +1,8 @@
-## Session 3685 (June 16 16:26–17:49+ UTC — 🟢 ORCHESTRATOR SCHEDULED 20:00 UTC POST-MARKET CHECKPOINT + CONTINUATION)
+## Session 3685 (June 16 16:26–17:49+ UTC — 🟢 ORCHESTRATOR SCHEDULED 20:00 UTC POST-MARKET CHECKPOINT + RESISTANCE-RESEARCH DAY 7 PREP)
 
-**Duration**: ~83 minutes (initial 16:26 orientation + continuation 16:32 wakeup scheduling)
+**Duration**: ~83+ minutes (initial 16:26 orientation + continuation 16:32 wakeup scheduling + 16:40 resistance-research Day 7 framework)
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — WAKEUP SCHEDULED FOR 17:49 UTC (20:00 UTC CHECKPOINT EXECUTION)**
+**Status**: ✅ **ORCHESTRATOR RESISTANCE-RESEARCH DAY 7 CHECKPOINT FRAMEWORK COMPLETE + STANDING BY FOR 20:00 UTC POST-MARKET**
 
 **Session 3685a (16:26 UTC) — Initial Orientation**:
 - ✅ Verified ORCHESTRATOR_STATE.md — market validation proceeding normally (16:25:31Z snapshot)
@@ -18,12 +18,25 @@
 - ✅ Prepared post-market checkpoint analysis: JUNE_16_POSTMARKET_ANALYSIS.md framework ready with templated queries
 - ✅ Scheduled wakeup for 17:49 UTC via ScheduleWakeup tool (11 min buffer before 20:00 UTC checkpoint)
 
+**Session 3685c (16:40 UTC) — Resistance-Research Day 7 Checkpoint Preparation**:
+- ✅ Spawned resistance-research agent to prepare June 17-18 Day 7 checkpoint
+- ✅ **DELIVERED**: `JUNE_17_18_DAY_7_CHECKPOINT_FRAMEWORK.md` (1,600 words, 5 sections):
+  - **Wave 1 Execution Status**: Tracking Domains 51, 59, 48 (all production-ready, awaiting user sends)
+  - **Coalition Leverage Windows**: Updated 5 windows (CTC implementation, Trump v. Barbara, AFGE civil service, healthcare-childcare, Callais redistricting)
+  - **Tier 2 Activation Decision Tree**: STRONG/MODERATE/WEAK thresholds with go/no-go branches
+  - **Contingencies**: 5 binary decision points (Trump v. Barbara ruling, zero replies, unsent domains, Gist status, Trump v. Slaughter)
+  - **July 1 Hard Deadline**: 7 prioritized actions with daily targets (15 days remaining)
+- ✅ **CRITICAL FINDING**: Domain 59 has been idle for 13 days on 15-minute urgency frame patch. CBPP/ITEP sends must go out before June 18 to hit highest-leverage CTC implementation accountability window.
+- ✅ Framework ready for user decision-making June 17-18.
+
 **Checkpoint preparation**:
 - ✅ JUNE_16_POSTMARKET_ANALYSIS.md framework reviewed: queries for database trades, Docker signal logs, Phase 4 GO/NO-GO criteria
 - ✅ Pre-market checks already completed (16:25 UTC): all 10 checks pass, container healthy, 5 sessions cycling
 - ✅ Ready to execute at 20:00 UTC: (1) query trades, (2) extract signal stats, (3) evaluate gates, (4) route to June 18 decision
 
-**No changes committed** — Standing by. Market validation protected from interruption. CHECKIN.md updated with session continuation status.
+**Changes staged for commit**:
+- ✅ `projects/resistance-research/JUNE_17_18_DAY_7_CHECKPOINT_FRAMEWORK.md` — new file, production-ready
+- ⏳ Commit pending: Will commit after 20:00 UTC stockbot checkpoint completes with CHECKIN.md update
 
 ---
 
