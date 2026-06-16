@@ -1,5 +1,28 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3685 Continuation, June 16 16:32 UTC — WAKEUP SCHEDULED FOR 20:00 UTC CHECKPOINT EXECUTION)
+
+**Status**: ✅ **CONTINUING SESSION 3685 — AWAITING 20:00 UTC CHECKPOINT EXECUTION**
+
+**Duration**: ~6 minutes (orientation + wakeup scheduling)
+
+**Action taken**: 
+- ✅ Oriented to state: stockbot market validation running autonomously, 5 sessions trading (AAPL/MSFT/NVDA/JPM/AMZN)
+- ✅ Verified no autonomous work available (all projects blocked on user actions or paused)
+- ✅ Confirmed readiness for 20:00 UTC post-market checkpoint
+- ✅ Scheduled wakeup for 17:49 UTC (11 min before checkpoint) via ScheduleWakeup tool
+- ✅ Prepared for checkpoint execution: JUNE_16_POSTMARKET_ANALYSIS.md framework ready with templated queries
+
+**Next**: Wakeup at 17:49 UTC → execute post-market analysis at 20:00 UTC
+
+**Market validation status** (16:32 UTC):
+- ✅ 5 sessions trading autonomously (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, JPM ridge_wf, AMZN lgbm_ho)
+- ✅ Signal restoration confirmed stable (June 16 14:09 UTC threshold cap fix holding)
+- ✅ Container healthy (47.6°C idle, 126GB disk free)
+- ⏳ 3h 28m remaining in market validation window (13:30-20:00 UTC)
+
+---
+
 ## Since Last Check-in (Session 3685, June 16 16:26 UTC — SCHEDULED 20:00 UTC POST-MARKET CHECKPOINT)
 
 **Status**: ✅ **ORCHESTRATOR SCHEDULED WAKEUP FOR 20:00 UTC CHECKPOINT — MARKET VALIDATION PROCEEDING AUTONOMOUSLY**

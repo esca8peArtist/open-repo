@@ -1,22 +1,29 @@
-## Session 3685 (June 16 16:26 UTC — 🟢 ORCHESTRATOR SCHEDULED 20:00 UTC POST-MARKET CHECKPOINT)
+## Session 3685 (June 16 16:26–17:49+ UTC — 🟢 ORCHESTRATOR SCHEDULED 20:00 UTC POST-MARKET CHECKPOINT + CONTINUATION)
 
-**Duration**: ~2 minutes (orientation + scheduling)
+**Duration**: ~83 minutes (initial 16:26 orientation + continuation 16:32 wakeup scheduling)
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — SCHEDULED WAKEUP FOR 20:00 UTC POST-MARKET ANALYSIS**
+**Status**: ✅ **ORCHESTRATOR STANDING BY — WAKEUP SCHEDULED FOR 17:49 UTC (20:00 UTC CHECKPOINT EXECUTION)**
 
-**Orientation completed**:
+**Session 3685a (16:26 UTC) — Initial Orientation**:
 - ✅ Verified ORCHESTRATOR_STATE.md — market validation proceeding normally (16:25:31Z snapshot)
 - ✅ Confirmed stockbot trading autonomously (13:30-20:00 UTC, all 5 sessions active)
 - ✅ Verified signal restoration stable (June 16 14:09 UTC threshold cap fix holding)
 - ✅ Confirmed June 17-18 frameworks production-ready (Session 3683 deliverables staged)
 - ✅ Verified all projects blocked or awaiting user action — no autonomous work available during market window
 
-**Action taken**:
-- Scheduled wakeup for 20:00 UTC to execute post-market checkpoint analysis
-- Will execute POST_MARKET_ROUND_TRIP_ANALYSIS.md framework at checkpoint time
-- All monitoring templates and decision frameworks ready (created Session 3682)
+**Session 3685b (16:32 UTC) — Full Orchestration Review + Wakeup Scheduling**:
+- ✅ Completed full orientation: read ORCHESTRATOR_STATE.md, CHECKIN.md, PROJECTS.md (resistance-research 35 domains), BLOCKED.md (4 active blocks)
+- ✅ Confirmed market validation running autonomously (do NOT interrupt)
+- ✅ Verified no autonomous work available: stockbot running, all other projects blocked on user action or paused
+- ✅ Prepared post-market checkpoint analysis: JUNE_16_POSTMARKET_ANALYSIS.md framework ready with templated queries
+- ✅ Scheduled wakeup for 17:49 UTC via ScheduleWakeup tool (11 min buffer before 20:00 UTC checkpoint)
 
-**No changes committed** — Standing by, market validation protected from interruption.
+**Checkpoint preparation**:
+- ✅ JUNE_16_POSTMARKET_ANALYSIS.md framework reviewed: queries for database trades, Docker signal logs, Phase 4 GO/NO-GO criteria
+- ✅ Pre-market checks already completed (16:25 UTC): all 10 checks pass, container healthy, 5 sessions cycling
+- ✅ Ready to execute at 20:00 UTC: (1) query trades, (2) extract signal stats, (3) evaluate gates, (4) route to June 18 decision
+
+**No changes committed** — Standing by. Market validation protected from interruption. CHECKIN.md updated with session continuation status.
 
 ---
 
