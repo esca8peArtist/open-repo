@@ -1,3 +1,27 @@
+## Session 3648 (June 16 07:07 UTC — 🟢 BLOCK ARCHIVAL + STANDING-BY)
+
+**Duration**: ~5 minutes (orientation + commit)
+**Work completed**: Archived resolved calibration block; standing-by for market validation
+
+### What was done:
+1. ✅ Oriented to ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md
+2. ✅ Found calibration block (Session 3647) already resolved — archived to Resolved Archive in BLOCKED.md
+3. ✅ Confirmed zero active blocks can be resolved autonomously
+4. ✅ Confirmed exploration queue items (118-119) queued post-market-validation
+5. ✅ Updated CHECKIN.md with session status
+
+### Standing-by state confirmed (by design):
+- All projects blocked on external events (market validation, user actions, user decisions)
+- Exploration queue ready: Items 118-119 activate after market validation at 20:00 UTC
+- Next orchestrator actions: 11:30 UTC pre-market checklist, then market validation monitoring, then 20:00 UTC post-market analysis
+
+### Next event:
+- **11:30 UTC** (4h 23m): Execute pre-market validation checklist (30-min, templates in Session 3642)
+- **13:30–20:00 UTC**: Automated market validation (no intervention needed)
+- **20:00 UTC**: Post-market analysis (20-30 min, Path A/B/C routing)
+
+---
+
 ## Session 3647 (June 16 07:05 UTC — 🟢 ROUTINE CALIBRATION + STANDING-BY CONFIRMED)
 
 **Duration**: ~5 minutes (orientation + commit)

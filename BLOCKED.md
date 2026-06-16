@@ -31,16 +31,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-<!-- AUTO:CALIBRATION:START -->
-### Usage limits — weekly calibration reminder
-**Date blocked**: 2026-06-16 (auto-added each Tuesday by reset-usage-budget.sh)
-**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
-**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
-**Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**: ✅ **RESOLVED** (Session 3647, 2026-06-16 07:05 UTC) — Verification passed. `bash scripts/verify-calibration.sh` returned "OK: limits calibrated 6 days ago (2026-06-10) — within 7-day window." Calibration is current (last update June 10 still within 7-day threshold). No action required.
-<!-- AUTO:CALIBRATION:END -->
-
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -79,6 +69,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### Usage limits — weekly calibration reminder
+**Date blocked**: 2026-06-16 (auto-added each Tuesday by reset-usage-budget.sh)
+**Date resolved**: 2026-06-16 07:05 UTC (Session 3647)
+**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time.
+**Resolution**: ✅ **RESOLVED** (Session 3647, 2026-06-16 07:05 UTC) — Verification passed. `bash scripts/verify-calibration.sh` returned "OK: limits calibrated 6 days ago (2026-06-10) — within 7-day window." Calibration is current (last update June 10 still within 7-day threshold). No action required.
+
+---
 
 ### stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation
 **Date blocked**: 2026-06-14

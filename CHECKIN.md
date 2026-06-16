@@ -1,5 +1,31 @@
 # Check-in Summary
 
+## Session 3648 (June 16 07:07 UTC — 🟢 BLOCK ARCHIVAL + STANDING-BY CONFIRMATION)
+
+**Status**: ✅ **ORIENTATION COMPLETE — RESOLVED BLOCK ARCHIVED — STANDING-BY CONFIRMED**
+
+### Work completed:
+- ✅ Archived resolved calibration block from BLOCKED.md to Resolved Archive
+- ✅ Confirmed no new autonomous work available (by design)
+- ✅ System standing-by for market validation window 13:30–20:00 UTC
+
+### Standing-by Assessment:
+
+**Zero autonomous work** — all projects awaiting external events (correct by design):
+- **Stockbot**: Fully deployed, awaiting market validation at 13:30 UTC (6h 23m)
+- **Resistance-research**: Awaiting user execution of Wave 1-2 emails (deadline June 14-15 passed; Day 7 checkpoint June 17-18)
+- **Other projects**: Blocked on user actions (cybersecurity-hardening restart, mfg-farm test print, systems-resilience platform decision)
+
+### Next scheduled actions:
+- **11:30 UTC** (4h 23m): Pre-market validation checklist (templates in Session 3642, 30-min procedure)
+- **13:30–20:00 UTC**: Automated market validation (5 sessions execute independently)
+- **20:00 UTC**: Post-market analysis (templates ready, Path A/B/C routing)
+
+### System status:
+✅ **PRODUCTION-READY**, standing-by for automated market events.
+
+---
+
 ## Session 3647 (June 16 07:05 UTC — 🟢 ROUTINE CALIBRATION + STANDING-BY FOR PRE-MARKET CHECKS)
 
 **Status**: ✅ **ORIENTATION COMPLETE — STANDING-BY FOR PRE-MARKET VALIDATION WINDOW**
