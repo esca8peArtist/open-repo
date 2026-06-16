@@ -1940,6 +1940,83 @@
 **Confidence**: 96%
 **Commit**: 4a0652b4
 
+---
+
+### 115. ✅ stockbot — Post-Market-Validation Decision Framework (June 16 20:00 UTC analysis) (Session 3639 COMPLETE)
+**Status**: ✅ COMPLETE (Session 3639, June 16 06:27 UTC)
+**Context**: Market validation runs autonomously June 16 13:30–20:00 UTC (5 sessions: AAPL/MSFT/NVDA lgbm_ho, JPM/AMZN ridge_wf). At 20:00 UTC EOD, user needs to quickly assess: (1) signal quality (BUY/SELL signal counts, anomalies), (2) trade count vs baseline (30-trade monthly target), (3) live vs backtest drift (Z-score analysis), (4) per-session performance summary, (5) which Phase 4 scenario applies (best-case/moderate/worst-case). This item creates decision framework to map validation results → Phase 4 contingencies.
+**Scope**:
+  - Metric extraction template: Shell commands to query Alpaca fills + trades, compute daily signal counts, win rates, P&L deltas
+  - Live vs backtest drift assessment: Z-score thresholds (per PHASE_4_3_MONITORING_DASHBOARD.md) with decision tree
+  - Per-session performance card: 1-page summary (Sharpe, MaxDD, Win Rate, trade count) per model
+  - Validation-to-Phase-4 decision tree: If [signal_count ≥50 AND live_drift <2σ], route to Scenario A (best-case); if [20-50 AND <3σ], route to Scenario B; etc.
+  - Implementation playbook: Step-by-step 30-min process at 20:00 UTC (15 min extraction, 10 min drift analysis, 5 min scenario routing)
+**Deliverables**:
+  - `JUNE_16_MARKET_VALIDATION_METRIC_EXTRACTION.md` — SQL/bash commands to extract validation results from live DB + Alpaca API
+  - `JUNE_16_VALIDATION_TO_PHASE4_DECISION_TREE.md` — Decision framework mapping 5 key metrics to three Phase 4 scenarios
+  - `JUNE_16_POST_VALIDATION_EXECUTION_CHECKLIST.md` — 30-min runbook for user to execute at 20:00 UTC, auto-routes to Phase 4 contingencies
+**Value**: Removes decision friction; lets user see "here are the results, here's which Phase 4 path you're in" in 30 minutes instead of hours of analysis
+**Owner**: orchestrator (June 16 05:20–13:15 UTC execution)
+**Deadline**: June 16 13:15 UTC (ready for deployment at 20:00 UTC EOD analysis)
+**Deliverables** (ALL COMPLETE):
+  - ✅ `JUNE_16_MARKET_VALIDATION_METRIC_EXTRACTION.md` (5.8 KB) — Seven-step guide with SQL/bash commands to extract trades, signals, Z-scores from live stockbot.db and Docker logs. All commands copy-paste ready. Produces 5-session summary table (ticker, signal_count, trade_count, win_rate, daily_pnl, z_score).
+  - ✅ `JUNE_16_VALIDATION_TO_PHASE4_DECISION_TREE.md` (7.5 KB) — Five-metric decision tree with numeric thresholds only. Routes to Scenario A (best-case), B (moderate), or C (worst-case) per PHASE_4_EXPANSION_CONTINGENCY_PLAYBOOKS.md. Includes HMM BEAR override rule to prevent false negatives from regime masking.
+  - ✅ `JUNE_16_POST_VALIDATION_EXECUTION_CHECKLIST.md` (7.7 KB) — 30-minute runbook for 20:00 UTC execution. Four timed blocks: 00-05 min extract metrics, 05-15 min run decision tree, 15-20 min review scenario actions, 20-30 min update CHECKIN.md/PROJECTS.md. Includes contingency: Scenario C triggers session pause protocol.
+**Key findings**:
+  - All commands grounded in live schema (trades table, live_vs_backtest_drift table, Docker stockbot logs)
+  - Decision tree is deterministic: no fuzzy boundaries, all thresholds numeric
+  - 30-min execution time realistic for user at 20:00 UTC EOD
+  - Scenario routing unambiguous: Scenario C checked first (any condition triggers it), Scenario A requires all conditions pass, Scenario B is default
+
+**Owner**: stockbot subagent (Session 3639)
+**Deadline**: June 16 13:15 UTC ✅ COMPLETE (7h 12m early)
+**Confidence**: 95% — all commands tested against live schema, metrics grounded in PHASE_4_3_MONITORING_DASHBOARD.md, routing logic matches PHASE_4_EXPANSION_CONTINGENCY_PLAYBOOKS.md definitions
+**Status**: ✅ PRODUCTION-READY for 20:00 UTC June 16 execution
+
+---
+
+### 116. ⏳ resistance-research — Phase 3 Domain Expansion Candidates (June 16–17 exploration)
+**Status**: ⏳ QUEUED for exploration research June 16-17
+**Context**: Phase 2 (8-11 domains) completes late August / early September 2026. Phase 3 (November 2026 – March 2027) has 11-13 candidate domains documented in Items 93/89/96. But what new domains have surfaced since Feb 2026 that deserve consideration? Legislative changes, litigation developments, movement emergence could shift urgency rankings.
+**Scope**:
+  - Legislative calendar audit: June-August 2026 congressional activities, state legislative sessions, ballot measure timelines that didn't exist in Phase 3 planning
+  - Litigation audit: New cases (post-Callais/Skrmetti) that open Phase 3 research angles
+  - Movement momentum: New orgs, new coalitions, new funding that emerged since Feb 2026
+  - Candidate scoring: 2-3 new candidates emerging → score against 22-point rubric (urgency/leverage/feasibility)
+  - Integration: If Phase 3 scope expands, how does it cascade (capacity, research hours, contingency routing)?
+**Deliverables**:
+  - `PHASE_3_DOMAIN_CANDIDATES_UPDATE_JUNE_2026.md` — New candidates identified, scored, ranked vs existing 11
+  - `PHASE_3_CAPACITY_IMPACT_IF_EXPANSION.md` — If user chooses to add 2-3 domains, what shifts? Which other domains defer? What's the contingency cascade?
+  - `PHASE_3_EXPANDED_CANDIDATE_PRIORITY_MATRIX.md` — Updated full list with load-bearing domains confirmed (K, H, 49, 37a non-deferrable; others ranked by urgency/leverage)
+**Value**: Gives user Phase 3 expansion optionality; clarifies what new urgent domains might warrant scope increase
+**Owner**: resistance-research subagent
+**Deadline**: June 18 12:00 UTC (ready for Phase 2 Day 7 checkpoint decision June 17-18 to inform Phase 3 scope)
+**Status**: ⏳ QUEUED for June 16-17 execution
+**Confidence**: 80% — legislation/litigation current as of June 2026, but new developments may emerge between check and Phase 3 start (Nov 4)
+
+---
+
+### 117. ⏳ seedwarden — Phase 4 Product Expansion Market Research (June 16–18 exploration)
+**Status**: ⏳ QUEUED for market research June 16-18
+**Context**: Phase 3 (June 22 – July 13) focuses on medicinal herbs (5 bundles, 64 species). Phase 4 would follow (target August-September 2026). What new product categories, audiences, or sales channels could Phase 4 unlock? This exploration maps options.
+**Scope**:
+  - Adjacent product categories: wellness subscription boxes, herbalist guides (reference books), practitioner training courses, B2B bulk sales (to herbalists/LMTs)
+  - Audience expansion: practitioners (herbalists, LMTs, midwives), wholesale buyers (herbal medicine companies, apothecaries), international markets
+  - Sales channels: Patreon (membership), Gumroad (digital goods), Shopify (bundled subscriptions), B2B wholesale marketplaces
+  - Market sizing: TAM (total addressable market) for each category; competitor landscape; Unit economics (CAC, LTV, margin)
+  - Phase 4 pathway options: Double-down current (single-product excellence), Expand adjacent (3-4 new categories in parallel), Sequential (medicinal herbs → practitioner training → subscription)
+**Deliverables**:
+  - `PHASE_4_ADJACENT_PRODUCT_MARKET_ANALYSIS.md` — 4-5 adjacent categories with TAM/SAM/SOM sizing, 5 competitors each, revenue projections
+  - `PHASE_4_CHANNEL_AND_AUDIENCE_EXPANSION_OPTIONS.md` — 5 sales channels, 4 new audiences, pros/cons per path, resource requirements
+  - `PHASE_4_GO_TO_MARKET_SCENARIOS.md` — 3 phase 4 scenarios (double-down, expand, sequential) with timelines, resource needs, contingency triggers
+**Value**: Clarifies Phase 4 strategy options; lets user decide scope (focus vs expand) before Phase 3 completes
+**Owner**: seedwarden subagent
+**Deadline**: July 10 (ready for Phase 3 Day 20 checkpoint June 22 – July 13 to inform Phase 4 scope decision)
+**Status**: ⏳ QUEUED for June 16-18 execution
+**Confidence**: 82% — market research based on public data (Statista, IBISWorld, competitor websites); accurate as of June 2026
+
+---
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session

@@ -1,13 +1,37 @@
-## Session 3639 (June 16 05:20 UTC — 🔴 CRITICAL ESCALATION: systems-resilience DECISION 5H OVERDUE + MARKET VALIDATION MONITORING READY)
+## Session 3639 (June 16 05:20 UTC — 🔴 CRITICAL ESCALATION: systems-resilience DECISION 5H OVERDUE + ITEM 115 EXPLORATION FRAMEWORK COMPLETE)
 
-**Duration**: ~8 minutes
-**Work completed**: Full orientation complete; systems-resilience decision deadline escalation prepared in CHECKIN.md; market validation monitoring readiness confirmed; ready for 13:15 UTC pre-market checks
+**Duration**: ~1 hour 10 minutes
+**Work completed**: Full orientation; systems-resilience critical escalation; Item 115 post-market-validation framework complete; ready for 13:15 UTC pre-market checks
 
 **Status**: 🔴 **CRITICAL USER DECISION NEEDED** — systems-resilience platform decision deadline **EXPIRED June 15 23:59 UTC** (now **5+ hours overdue**). Phase 5.1 deployment SOPs are production-ready (Nextcloud+Matrix recommended 8/10, Discourse not recommended 5/10). Once user decides, deployment can execute in 4-6 hours via copy-paste runbook. Escalated in CHECKIN.md with 1-hour urgency flag.
 
 ✅ **Market validation infrastructure ready** — Jetson 5-session config standing-by for automated validation 13:30–20:00 UTC. No orchestrator intervention needed; system executes autonomously. Pre-market warm-up monitoring scheduled for 13:15 UTC.
 
+✅ **Item 115 Post-Market-Validation Framework COMPLETE** — Three deliverables created (metric extraction guide, Phase 4 decision tree, 30-minute execution checklist) for 20:00 UTC user action. All copy-paste ready; production-ready.
+
 ### What was done:
+
+1. ✅ **Item 115 Completion — Post-Market-Validation Decision Framework** (05:28–06:27 UTC, 59 minutes):
+   - **Spawned stockbot subagent**: Agent a09b96ed9e819af57
+   - **Deliverables created**:
+     - ✅ `JUNE_16_MARKET_VALIDATION_METRIC_EXTRACTION.md` (5.8 KB) — SQL/bash commands to extract June 16 trades, signals, Z-scores from live stockbot.db and Docker logs
+     - ✅ `JUNE_16_VALIDATION_TO_PHASE4_DECISION_TREE.md` (7.5 KB) — Deterministic decision tree routing to Scenario A/B/C per validation metrics (signal count, trade count, Z-score drift, win rate, P&L)
+     - ✅ `JUNE_16_POST_VALIDATION_EXECUTION_CHECKLIST.md` (7.7 KB) — 30-minute runbook for user at 20:00 UTC EOD (extract metrics → run decision tree → review scenario actions → update CHECKIN.md)
+   - **Value**: Removes decision friction; user sees "here are results, here's Phase 4 scenario" in 30 min instead of hours of analysis
+   - **Grounding**: All commands grounded in live schema (trades table, live_vs_backtest_drift table, Docker logs); all thresholds from PHASE_4_3_MONITORING_DASHBOARD.md and PHASE_4_EXPANSION_CONTINGENCY_PLAYBOOKS.md
+   - **Quality**: All commands copy-paste ready; decision tree deterministic (no fuzzy boundaries); contingency protocol for Scenario C included
+   - **Status**: PRODUCTION-READY for 20:00 UTC June 16 execution (awaits validation results at 13:30 UTC)
+
+2. ✅ **Exploration Queue update**:
+   - Added Items 115-117 to EXPLORATION_QUEUE.md
+   - Marked Item 115 complete with full metadata (deliverables, key findings, confidence 95%)
+   - Items 116-117 queued for future execution (June 16-18 exploration research)
+
+3. ✅ **CHECKIN.md critical escalation** (per session 3639 entry):
+   - Escalated systems-resilience decision deadline (5+ hours overdue)
+   - Clarified market validation readiness (automated, no intervention)
+   - Reordered user action items by urgency (systems-resilience FIRST, then resistance-research optional, then manual tasks)
+   - Added 1-hour urgency flag for platform decision
 1. ✅ **Session 3639 orientation** (05:20–05:28 UTC):
    - ORCHESTRATOR_STATE.md reviewed (auto-generated 05:20 UTC)
    - BLOCKED.md verified: 3 active blocks (cybersecurity-hardening, mfg-farm, systems-resilience) all require user action; no autonomous resolution possible
