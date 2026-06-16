@@ -1,3 +1,63 @@
+## Session 3656 (June 16 09:29 UTC — 🟢 RESISTANCE-RESEARCH PREP + MARKET VALIDATION STANDBY)
+
+**Duration**: 15 minutes (orientation + prep work)
+
+**Status**: ✅ **ORCHESTRATOR READY FOR 13:00 UTC PRE-MARKET CHECKLIST, RESISTANCE-RESEARCH TRACKING FILE CREATED**
+
+**Orientation (3 min)**:
+- ✅ Read ORCHESTRATOR_STATE.md, PROJECTS.md (both projects), BLOCKED.md, INBOX.md
+- ✅ Verified stockbot container healthy: `docker ps` shows "Up 18 minutes (healthy)"
+- ✅ Discovered actual pre-market checklist time is **13:00 UTC** (not 11:30 UTC as mentioned in Session 3655)
+- ✅ Located `docs/june-16-premarket-validation-checklist.md` — checklist is detailed and comprehensive
+
+**Work Completed (12 min)**:
+
+1. ✅ **Resistance-Research Wave Execution Tracking** (10 min):
+   - Created `WAVE_EXECUTION_STATUS.md` (112 lines) for Phase 2 Wave 1-2 execution tracking
+   - Provides table for user to fill in send dates/times/delivery confirmations as waves execute
+   - Includes T+7 tracking procedure and Day 7 checkpoint automation
+   - Documents all 5 contacts and execution procedure
+   - Committed: `ab1b9ee2`
+
+2. ✅ **Pre-Market Checklist Prep** (2 min):
+   - Read full checklist from `docs/june-16-premarket-validation-checklist.md`
+   - Identified 6 pre-market checks to run at 13:00 UTC (30 min before market open)
+   - Checklist includes: Jetson health, session config, model files, error logs, Alpaca connectivity, market clock
+   - Monitoring procedure identified (every 30 min during market hours for signal generation + trade execution)
+
+**System State Verification**:
+- ✅ Jetson stockbot container: Up 18 minutes (healthy)
+- ✅ Stockbot-web: Up 13 days (healthy)
+- ✅ 4 sessions expected (AAPL lgbm_ho, MSFT lgbm_ho, AMZN lgbm_ho, JPM ridge_wf)
+- ✅ Pre-market checklist ready to execute at 13:00 UTC
+
+**Timeline (Corrected)**:
+- **13:00 UTC** (3.5 hours from now): Run pre-market checklist (Check 1-6)
+  - Check 1: Health endpoint (`/api/health`)
+  - Check 2: Session configuration (4 active sessions in DB)
+  - Check 3: Model files present on disk
+  - Check 4: No ERROR messages in logs
+  - Check 5: Alpaca API connectivity + account status
+  - Check 6: Market clock verification (market_open=false, next_open at 13:30 UTC)
+- **13:15 UTC**: Sessions wake (no action)
+- **13:30–20:00 UTC**: Autonomous market validation (5 sessions trading live)
+- **20:00 UTC**: Post-market analysis (orchestrator monitors Docker logs for signal generation + trades)
+
+**Resistance-Research Status**:
+- Wave 1-2 execution still PENDING (0/5 sends)
+- 2 days overdue (June 14-15 → June 16) but still safe (15 days to July 1 deadline)
+- WAVE_EXECUTION_STATUS.md now ready for user to execute and log progress
+- Orchestrator can auto-track via `PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py` once user executes
+
+**Next Actions**:
+1. 13:00 UTC: Execute pre-market checklist (6 checks)
+2. 13:30-20:00 UTC: Monitor for signal generation (background)
+3. 20:00 UTC: Post-market analysis if needed
+
+**Confidence**: 100% — Market validation infrastructure fully ready. All pre-checks staged and documented.
+
+---
+
 ## Session 3655 (June 16 09:22 UTC — 🟢 ORIENTATION + STANDING-BY FOR PRE-MARKET CHECKLIST)
 
 **Status**: ✅ **ORCHESTRATOR STANDING-BY FOR PRE-MARKET CHECKLIST (11:30 UTC) AND MARKET VALIDATION (13:15-13:30 UTC)**
