@@ -425,28 +425,36 @@ Phase 2 activation path now clear (no architecture conflicts, all four sessions 
 
 ---
 
-### stockbot — CRITICAL: Market validation FAILED — Signal collapse across all 5 sessions (17:57 UTC market open, regime=None)
+### stockbot — CRITICAL: June 16 market validation FAILED — HMM warmup stuck + duplicate order IDs blocking execution
 **Date blocked**: 2026-06-16 (Session 3689, 19:13 UTC)
-**Context**: June 16 market validation running 13:30-20:00 UTC with 5 live sessions. At market open (17:57 UTC), all 5 sessions (AAPL lgbm_ho, MSFT lgbm_ho, AMZN lgbm_ho, NVDA lgbm_ho, JPM ridge_wf) began generating CONTINUOUS SIGNAL_DROPOUT and BUY_PROB_COLLAPSE alerts. Timeline: 17:57 UTC market open → immediate failure on all 5. Ongoing for ~2 hours (17:57-19:12 UTC). Models ARE producing predicted_return values (e.g., -0.0181, 0.0117, -0.0056), but those predictions are NOT translating to buy_prob > 0. **Root cause indicator**: ALL sessions report `regime=None` in alerts, suggesting HMM regime detection failure (not just threshold clamping like the 14:09 UTC incident). The 14:09 UTC fix (threshold cap to 2%) was verified working through ~17:40 UTC (Session 3688), but a NEW failure mode has emerged at market open.
-**Symptoms**:
-- All 5 sessions: mean_buy_prob=0.0000 or <0.15 (below 0.35 threshold)
-- All 5 sessions: regime=None (should be Bull/Bear/Sideways)
-- All 5 sessions: n_buy=0, n_sell=0 in last 2 hours
-- Models generating predictions (predicted_return non-zero) but not translating to signals
-- Continuous error alerts every 1-2 minutes since 17:57 UTC
-- Container running continuously (no restart)
-**Differences from 14:09 UTC incident**:
-- 14:09 UTC: affected AMZN/MSFT only, other sessions OK (fixed with threshold cap)
-- 19:13 UTC: affects ALL 5 sessions, regime detection broken globally
-**Verification of infrastructure**:
-- ✅ SSH to Jetson: working
-- ✅ Docker container: running
-- ✅ Checkpoint framework: staged and ready
-- ❌ Market validation: FAILED (all signals suppressed)
-- ❌ Models: generating predictions but regime detection broken
-**What I need**: (1) **CRITICAL**: Do NOT execute 20:00 UTC checkpoint with failing validation. (2) Root cause diagnosis: Is this HMM initialization failure, feature loading issue, or new code regression introduced between 14:09 and 17:57 UTC? (3) If fixable autonomously: orchestrator needs 15-30 min to diagnose + patch + restart container + verify signal restoration before 20:00 UTC. If not: escalate and defer checkpoint to post-fix window. (4) Decision point: Continue market open simulation to completion (collecting bad data) or halt trading to preserve capital?
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail 5 2>&1 | grep -i regime"` should show regime values (Bull/Bear/Sideways/None). If all return None, confirms HMM failure.
-**Resolution**: [leave blank — awaiting diagnosis and fix]
+**Date escalated**: 2026-06-16 19:23 UTC (Session 3690 — root causes diagnosed)
+**Context**: June 16 market validation 13:30-20:00 UTC with 5 live sessions. At market open (17:57 UTC), all 5 sessions began generating SIGNAL_DROPOUT/BUY_PROB_COLLAPSE alerts. Container restarted ~19:14 UTC but issue persists through 19:23 UTC.
+
+**ROOT CAUSES IDENTIFIED** (Session 3690):
+1. **HMM warmup stuck** — Docker logs show `[HMM warming up: 54 bars remaining]` continuously from 19:19-19:22 UTC. HMM should have warmed up at ~14:24 UTC (54 bars at 1-min frequency = 54 min). Still warming up 5+ hours later indicates:
+   - Bar data not loading correctly, OR
+   - HMM state not persisting across trading cycles, OR
+   - Bar frequency mismatch (expecting different timeframe than data provides)
+   - **Result**: `regime=None` on all 5 sessions, suppressing all signals
+
+2. **Duplicate order ID errors** — NVDA sessions generating valid BUY signals (buy_prob=0.6456, 0.2811, etc.) but failing to submit with:
+   ```
+   Market order (NVDA buy) failed with non-retryable error: {"code":40010001,"message":"client_order_id must be unique"}
+   ```
+   Same `client_order_id` submitted multiple times. Idempotency guard not working.
+
+**Diagnostic evidence**:
+- ✅ SSH & Docker: working, container healthy (restarted 19:14 UTC)
+- ✅ Models: generating predictions (e.g., NVDA predicted_return=0.0516, buy_prob=0.6456)
+- ❌ HMM: warmup state not advancing despite 5+ hours elapsed
+- ❌ Order submission: duplicate IDs blocking execution even on valid signals
+- ❌ Overall validation: FAILED (signals generated but not executed/counted)
+
+**What I need**: (1) **DO NOT EXECUTE 20:00 UTC CHECKPOINT** — validation is fundamentally compromised. (2) Root cause fix requires: HMM bar-loading diagnosis (20-30 min) + duplicate order_id investigation (10-15 min) + testing + container restart (~10 min) = 40-55 min total. (3) Decision: (A) Halt market validation now, defer checkpoint to June 17 post-fix, OR (B) Continue collecting bad data until 20:00 UTC, then analyze post-market. (4) User decision required on how to proceed (continue/halt/investigate direction).
+
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail 100 2>&1 | grep 'HMM warming'` should show bars remaining. If >0 and timestamp is recent, HMM warmup is still stuck.
+
+**Resolution**: [leave blank — awaiting user decision on investigation direction and checkpoint deferral]
 
 ---
 
