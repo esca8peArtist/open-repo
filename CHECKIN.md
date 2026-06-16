@@ -1,5 +1,45 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3677, June 16 14:17 UTC)
+
+**Status**: ✅ **MARKET VALIDATION PROCEEDING NORMALLY — ALL SYSTEMS HEALTHY, STANDING BY FOR POST-MARKET ANALYSIS 20:00 UTC**
+
+### Session 3677 — Monitoring & Post-Market Preparation (14:17 UTC)
+
+**What was accomplished**:
+
+✅ **Market validation continues autonomously**:
+- All 5 trading sessions active (AAPL, MSFT, NVDA, JPM, AMZN)
+- Signal generation restored and functioning correctly (AMZN BUY, MSFT SELL, JPM/NVDA HOLD)
+- Threshold cap fix (commit 45969095) deployed and validated
+- No further incidents detected
+
+✅ **Post-market analysis framework verified ready**:
+- JUNE_16_MARKET_VALIDATION_METRIC_EXTRACTION.md (3 metric extraction commands staged)
+- JUNE_16_VALIDATION_TO_PHASE4_DECISION_TREE.md (routing framework A/B/C ready)
+- PHASE_4_EXPANSION_CONTINGENCY_PLAYBOOKS.md (scenario playbooks ready)
+- Post-market checklist: 30-minute execution at 20:00–20:30 UTC
+
+✅ **Project status verified**:
+- stockbot: Active, market validation proceeding, post-market ready
+- resistance-research: Awaiting user action (Wave 1-2 email sends, due June 18 23:59 UTC)
+- All other projects: blocked/paused (no autonomous work available)
+
+**No autonomous work during market hours** — all framework preparation complete, standing by for 20:00 UTC post-market analysis execution.
+
+### Market Validation Timeline
+
+- **13:30–20:00 UTC**: Live market validation (in progress, 39 min elapsed at 14:17 UTC)
+- **20:00–20:30 UTC**: Post-market analysis (metrics extraction → scenario routing → Phase 4 path decision)
+- **June 17 08:00 UTC**: AAPL+MSFT retrain execution (2022-2026 data, full-eval mode)
+- **June 17-18**: Gate validation (hard deadline June 18 EOD)
+
+### Items needing user input
+
+**None** — All critical items resolved or staged. Standing by for scheduled post-market analysis.
+
+---
+
 ## Since Last Check-in (Session 3675–3676, June 16 13:42–14:15 UTC)
 
 **Status**: ✅ **CRITICAL INCIDENT RESOLVED AUTONOMOUSLY — MARKET VALIDATION RESUMED AT 14:09 UTC WITH FULL SIGNAL RESTORATION**
