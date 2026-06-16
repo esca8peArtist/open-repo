@@ -4220,3 +4220,28 @@ All 5 sessions will:
 **Decision**: **GO FOR MARKET OPEN**
 
 **Market validation timeline**: 13:30–20:00 UTC (5 live sessions, autonomous). Post-market analysis 20:00 UTC (orchestrator execution).
+
+---
+
+## Session 3679 (June 16 14:53 UTC — MARKET VALIDATION MONITORING & POST-MARKET ANALYSIS PREPARATION)
+
+**Orientation** (Session 3679 startup at 14:53 UTC):
+- ✅ Read ORCHESTRATOR_STATE.md (auto-generated 14:53:46Z)
+- ✅ Read PROJECTS.md, BLOCKED.md, INBOX.md — all current
+- ✅ Checked for active blocks — all 4 blocks remain unchanged (cybersecurity-hardening, mfg-farm, open-repo, systems-resilience deadline expired)
+- ✅ Verified state: Market validation ongoing (13:30-20:00 UTC)
+  - **June 16 incident**: Signal dropout occurred 13:40-14:09 UTC (5 sessions generating buy_prob=0.0000)
+  - **Root cause**: Missing threshold cap in ensemble stacker (threshold uncapped, excessively high relative to model predictions)
+  - **Autonomous fix**: Session 3676 diagnosed and deployed fix at 14:09 UTC (threshold capped at 2%)
+  - **Signal restoration confirmed**: AMZN=BUY (buy_prob=0.4402), MSFT=SELL, JPM/NVDA=HOLD after fix
+  - **Validation resuming**: All 5 sessions continue trading with signal dropout resolved
+
+**Status**: All autonomous work is complete or blocked. Exploration Queue empty (3 items completed Session 3657). Resistance-research awaiting user action (email sends). No other active projects with available work. Stockbot market validation proceeding autonomously — DO NOT INTERRUPT.
+
+**Action**: Standing by for 20:00 UTC post-market analysis execution. This is the scheduled orchestrator task for this session. Market validation is autonomous; no orchestrator intervention needed until post-market checkpoint at 20:00 UTC.
+
+**Next session context**:
+- ✅ AAPL+MSFT full-eval retrains scheduled June 17 08:00 UTC (hard deadline June 18 EOD)
+- ✅ Gate validation June 17-18 checkpoint
+- ✅ Resistance-research Day 7 checkpoint June 17-18 (email sends required before this)
+- ✅ Jetson deploy blackout: NEVER during market hours (13:30-20:00 UTC Mon-Fri)
