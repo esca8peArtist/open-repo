@@ -1,28 +1,31 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3684, June 16 17:00+ UTC — HOLDING FOR 20:00 UTC CHECKPOINT)
+## Since Last Check-in (Session 3685, June 16 16:26 UTC — SCHEDULED 20:00 UTC POST-MARKET CHECKPOINT)
 
-**Status**: ⏳ **HOLDING FOR POST-MARKET ANALYSIS CHECKPOINT — STOCKBOT MARKET VALIDATION RUNNING AUTONOMOUSLY**
+**Status**: ✅ **ORCHESTRATOR SCHEDULED WAKEUP FOR 20:00 UTC CHECKPOINT — MARKET VALIDATION PROCEEDING AUTONOMOUSLY**
 
-**Duration**: 0 minutes (orientation + scheduling)
+**Duration**: 2 minutes (orientation + wakeup scheduling)
 
-**Current State**:
-- ✅ Market validation running autonomously (13:30-20:00 UTC, ~3 hours to checkpoint)
-- ✅ All 5 sessions trading: AAPL/MSFT/NVDA/JPM/AMZN lgbm_ho & ridge_wf variants
-- ✅ Signal restoration confirmed (June 16 14:09 UTC threshold fix holding)
-- ✅ June 17-18 frameworks staged and production-ready (Session 3683)
-- ⏳ **Next action**: 20:00 UTC post-market analysis checkpoint (metrics extraction, scenario routing, Phase 4 decision)
+**Current State** (16:26 UTC):
+- ✅ Market validation running autonomously (13:30-20:00 UTC, ~3h 34m to checkpoint)
+- ✅ All 5 sessions trading: AAPL/MSFT/NVDA/JPM/AMZN with deployed lgbm_ho & ridge_wf models
+- ✅ Signal restoration confirmed stable (June 16 14:09 UTC threshold cap fix holding)
+- ✅ June 17-18 frameworks staged and production-ready (Session 3683 deliverables)
+- ✅ **Wakeup scheduled for 20:00 UTC** to execute POST_MARKET_ROUND_TRIP_ANALYSIS.md framework
+  - Metrics extraction (signal frequency, win rate, thermal)
+  - Scenario routing (PROCEED/INVESTIGATE/PAUSE logic)
+  - Phase 4 decision tree evaluation
 
-**Exploration Queue Status**:
-- ✅ 4+ items completed in Sessions 3682-3683
-- ⏳ All remaining items blocked on user action or post-market data
+**Autonomous Work Available**:
+- ⏳ All exploration queue items blocked on: user actions (cybersecurity, mfg-farm, open-repo) OR post-market data (stockbot June 18 retrain decision)
+- ⏳ No additional autonomous work until 20:00 UTC checkpoint
 
 **Project Status Summary**:
 - **stockbot**: Active, market validation 13:30-20:00 UTC (autonomous, DO NOT INTERRUPT)
-- **resistance-research**: Active, Phase 2 Domains 51/48/59 production-ready, awaiting user email sends
-- **cybersecurity-hardening**: Paused, blocked on user Windows restart (VeraCrypt pre-boot)
-- **mfg-farm**: Paused, blocked on user test print execution
-- **open-repo**: Blocked on infrastructure restoration decision (Phase A/B/C)
+- **resistance-research**: Active, Phase 2 Domains 51/48/59 production-ready, awaiting user email send execution
+- **cybersecurity-hardening**: Blocked, waiting on user Windows restart (VeraCrypt pre-boot test)
+- **mfg-farm**: Blocked, waiting on user test print execution
+- **open-repo**: Blocked, waiting on user infrastructure decision (Docker vs systemd)
 - **off-grid-living**: Complete, awaiting user social media execution
 - **open-source-rideshare**: Paused
 
