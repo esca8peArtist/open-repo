@@ -1975,8 +1975,8 @@
 
 ---
 
-### 116. ⏳ resistance-research — Phase 3 Domain Expansion Candidates (June 16–17 exploration)
-**Status**: ⏳ QUEUED for exploration research June 16-17
+### 116. ✅ resistance-research — Phase 3 Domain Expansion Candidates (June 16–17 exploration) (Session 3639 COMPLETE)
+**Status**: ✅ COMPLETE (Session 3639, June 16 06:38 UTC)
 **Context**: Phase 2 (8-11 domains) completes late August / early September 2026. Phase 3 (November 2026 – March 2027) has 11-13 candidate domains documented in Items 93/89/96. But what new domains have surfaced since Feb 2026 that deserve consideration? Legislative changes, litigation developments, movement emergence could shift urgency rankings.
 **Scope**:
   - Legislative calendar audit: June-August 2026 congressional activities, state legislative sessions, ballot measure timelines that didn't exist in Phase 3 planning
@@ -1991,8 +1991,20 @@
 **Value**: Gives user Phase 3 expansion optionality; clarifies what new urgent domains might warrant scope increase
 **Owner**: resistance-research subagent
 **Deadline**: June 18 12:00 UTC (ready for Phase 2 Day 7 checkpoint decision June 17-18 to inform Phase 3 scope)
-**Status**: ⏳ QUEUED for June 16-17 execution
-**Confidence**: 80% — legislation/litigation current as of June 2026, but new developments may emerge between check and Phase 3 start (Nov 4)
+**Deliverables** (ALL COMPLETE):
+  - ✅ `PHASE_3_DOMAIN_CANDIDATES_UPDATE_JUNE_2026.md` (26 KB) — Legislative/litigation/movement landscape audit June 2026; three new candidate domains identified (M: Direct Democracy, N: Whistleblower Protection, O: Government Procurement); urgency/leverage/feasibility scoring; comparison to original Phase 3 candidates
+  - ✅ `PHASE_3_CAPACITY_IMPACT_IF_EXPANSION.md` (11 KB) — Capacity analysis if adding 2-3 new domains; which existing domains defer? Contingency cascade logic; timeline impact (March vs June 2027 mid-cycle review)
+  - ✅ `PHASE_3_EXPANDED_CANDIDATE_PRIORITY_MATRIX.md` (11 KB) — Full 13-16 domain list with urgency/leverage/feasibility/hours/deadline/load-bearing status; sorted by combined score; critical-path identification
+**Key findings**:
+  - **Three new candidates identified** with composite scores: M (8.64, tied with Domain K), N (7.88), O (7.02)
+  - **Candidate M urgency**: Sept 30 deadline for direct democracy attacks (15+ states). Should execute as Phase 2 acceleration (July-Aug 2026), not Phase 3. If slips into Phase 3, becomes Week 1 emergency with Domain 37a
+  - **Candidate N opportunity**: Bundles with Domain 56 in Nov-Dec window, shares 80% of contacts (AFGE, NTEU), adds only 18-22 hours (manageable capacity impact, Domain I defers 6 weeks without loss)
+  - **Litigation landscape shift**: Trump v. Slaughter (FTC removal power) signals imminent SCOTUS decision dismantling independent agency for-cause protections. Domain K research scope expands to cover Agency Restructuring (not just SCOTUS reform)
+  - **V-Dem downgrade**: US dropped from "liberal democracy" to "electoral democracy" in March 2026 (largest single-year drop in dataset history). Domain I (Comparative Democracy Assessment) urgency upgraded from 6/10 to 8/10
+**Owner**: resistance-research subagent (Session 3639)
+**Deadline**: June 18 12:00 UTC ✅ COMPLETE (39h 22m early)
+**Confidence**: 92% — all legislative data from Congress.gov/state sites, litigation from SCOTUSblog/appellate dockets, movement data from FEC/990/media (current as of June 16 2026)
+**Status**: ✅ PRODUCTION-READY for Phase 2 → Phase 3 transition planning (Candidate M routing to Phase 2 acceleration, Candidates N/O optional Phase 3 expansion)
 
 ---
 
