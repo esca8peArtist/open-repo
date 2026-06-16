@@ -1,3 +1,46 @@
+## Session 3685e (June 16 17:00–17:15 UTC — 🔴 CRITICAL BLOCK VERIFICATION COMPLETE — AWAITING USER DECISION)
+
+**Status**: 🔴 **CRITICAL BLOCK VERIFIED REAL — Market validation running WRONG sessions; gate validation data now invalid; June 18 deadline at SEVERE RISK**
+
+**Verification completed**:
+- ✅ **Logged session list confirmed**: `docker logs stockbot --since 2026-06-16T16:00:00Z` shows 5 sessions in rotation (16:00–17:00 UTC):
+  - jpm_ridge_wf_001 ✓ (correct)
+  - amzn_lgbm_ho_001 ✓ (correct)
+  - aapl_lgbm_ho_001 ✗ (should NOT be running — failed 2/6 gates)
+  - msft_lgbm_ho_001 ✗ (WRONG model — should be msft_ridge_wf per June 17-18 plan)
+  - nvda_lgbm_ho_001 ✗ (not in approved config)
+- ✅ **Signal patterns confirmed model-specific bugs**:
+  - AMZN lgbm_ho: buy_prob=0.4402 (BUY) — WORKING
+  - JPM ridge_wf: buy_prob=0.0000 (SELL when predicted_return=-0.02) — WORKING
+  - MSFT lgbm_ho: buy_prob=0.0000 (SELL-only) — BROKEN (expected ridge_wf, not lgbm_ho)
+  - NVDA lgbm_ho: buy_prob=0.0000 (SELL-only) — BROKEN (not authorized)
+  - AAPL lgbm_ho: buy_prob=0.3360 (HOLD) — BROKEN (failed validation, should not run)
+- ✅ **All 5 sessions showing SIGNAL_DROPOUT critical alert**: "No BUY/SELL in last 2h" — this is EXPECTED for 4 of them (they're broken), but indicates the validation window is providing INVALID data
+
+**Critical Impact Assessment**:
+- **Validation data compromised**: 60min+ of data collected from wrong models (AAPL, MSFT lgbm_ho, NVDA) means June 17-18 decision is based on invalid signals
+- **June 17 retrain invalidated**: MSFT retraining planned but wrong model is generating data. AAPL validation data is from a failed model
+- **June 18 gate decision timeline at risk**: Post-retrain evaluation will be corrupted. Cannot proceed to Phase 4 go-live with this data
+- **Do NOT proceed with 20:00 UTC checkpoint**: Post-market analysis will inherit invalid data
+
+**Decision Required from User**:
+1. **Are MSFT lgbm_ho and NVDA lgbm_ho sessions intentional in June 16 validation window?**
+   - If NO (expected per Strategic Reset): Immediate action needed to stop these 3 sessions (AAPL/MSFT/NVDA) and restart with 2-session config only
+   - If YES: Provide updated validation plan + explain why gate models changed from plan
+
+**Action taken**:
+- ✅ Verified critical block is REAL (not a documentation error) via Docker logs
+- ✅ Confirmed PROJECTS.md expectations (2-session config only for validation)
+- ✅ Confirmed BLOCKED.md block details (added Session 3685d 16:53 UTC)
+- ⏳ **HOLDING VALIDATION**: Do NOT interrupt running sessions per Session 3684 instruction
+- ⏳ **HOLDING CHECKPOINT**: Do NOT execute 20:00 UTC post-market analysis until user clarifies
+
+**Next action at 20:00 UTC**:
+- IF user has provided Resolution in BLOCKED.md: Apply user's decision (restart validation with corrected config)
+- IF user has NOT provided clarification: Log that checkpoint is BLOCKED, escalate to user, do NOT proceed with retrain/gate decisions
+
+---
+
 ## Session 3685d (June 16 16:53–17:05 UTC — 🔴 CRITICAL: VALIDATION WINDOW CONFIGURATION CORRUPTED)
 
 **Status**: 🔴 **CRITICAL BLOCK ADDED — Market validation running WRONG sessions; gate validation data now invalid; June 18 deadline at SEVERE RISK**
