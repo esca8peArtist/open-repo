@@ -4,6 +4,60 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 111 — Phase 3 Contractor Decision Tracking Automation — June 16, 2026
+
+**Task**: Create 3 automation deliverables for seedwarden Phase 3 contractor decision tracking for the June 15–17 decision window.
+
+**Deliverables produced**:
+
+1. `projects/seedwarden/PHASE_3_CONTRACTOR_DAILY_TRACKING_CHECKLIST.md` — Daily log template for June 15–17. 3 days × 4 sections = 12 log entries. Each day: (1) Upwork response polling with Tier A/B/C breakdown, (2) Response scoring log with 100-point vetting rubric from Item 94, (3) T1–T9 escalation trigger status table with pre-populated thresholds, (4) Daily summary with auto-routing outcome and WORKLOG paste entry. June 17 includes an 08:00 UTC early check for T9a Toptal activation trigger. All numeric thresholds traceable to PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md (Item 94) and PHASE_3_CONTRACTOR_DECISION_ESCALATION_FRAMEWORK.md.
+
+2. `projects/seedwarden/UPWORK_RESPONSE_AUTO_ROUTING_RULES.md` — 27-row deterministic decision matrix covering all combinations of [Tier A count] × [avg score] × [availability ≥20h/week]. ACCEPT-IMMEDIATE path for score ≥80 + avail ≥20h + start ≤June 22. CONDITIONAL evaluation steps (4 interview questions, 30-min call protocol, scoring subtest). ESCALATE sequence: Step 1 (June 16 12:00 UTC Herbal Academy email), Step 2 (June 17 08:00 UTC Toptal activation), Step 3 (June 17 15:00 UTC solo fallback confirmation). 5 copy-paste email templates: ACCEPT-IMMEDIATE offer, CONDITIONAL call request, ESCALATE decline, Over-Budget Protocol negotiation, reduced scope counter-offer. ACCEPT-IMMEDIATE fast-path procedure.
+
+3. `projects/seedwarden/CONTRACTOR_DROPOUT_CONTINGENCY_ACTIVATION.md` — Post-hire dropout detection and activation sequence. 3 detection signals (email silence, explicit message, no briefing confirmation). 4-hour detection window with 14:00 UTC June 18 confirmation deadline. 5-step activation sequence: (0) detection, (1) clarification email (15 min), (2) dropout confirmed at 14:00 UTC, (3) solo fallback activation with Scenario A (dropout before June 22 — delay launch to July 1) vs. Scenario B (dropout after June 22 — continue sprint), (4) WORKLOG documentation, (5) pre-drafted internal notification. Phase 4 cascade impact table: contractor path (Phase 4 July 14, Wave 1 August 1, Phase 5 November 1) vs. solo path (Phase 4 October 1, Wave 1 November 1, Phase 5 February 1 2027). Payment resolution on dropout. Deposit refund request template.
+
+**Cross-references**: All three documents cross-reference Item 94 (PHASE_3_CONTRACTOR_SOURCING_STRATEGY.md — 100-point vetting rubric, Tier definitions, $1,000–$1,350 rate benchmarks) and Item 97 (PHASE_3_SOLO_FALLBACK_ARCHITECTURE.md — 9-week solo schedule, Phase 4 October 1 start, Phase 5 February 1 2027, Women's Health June 29 zero-float node). The UPWORK_RESPONSE_AUTO_ROUTING_RULES.md and PHASE_3_CONTRACTOR_DAILY_TRACKING_CHECKLIST.md are designed to be used together as a daily pair.
+
+**Status**: All three deliverables production-ready. No user action required to use — run the daily checklist at 12:00 UTC, look up matrix row in routing rules, follow the prescribed action.
+
+---
+
+## Item 117 — Phase 4 Product Expansion Market Research — June 16, 2026
+
+**Task**: Research and produce three Phase 4 planning documents covering adjacent product categories,
+channel and audience expansion options, and four go-to-market scenarios with a user decision tree.
+
+**Deliverables produced**:
+
+1. `projects/seedwarden/PHASE_4_ADJACENT_PRODUCT_MARKET_ANALYSIS.md` — Five adjacent category
+   analyses (wellness subscriptions, herbalist guides, practitioner training courses, B2B bulk
+   sales, digital membership/Patreon) with TAM sizing, competitor landscape, revenue scenarios,
+   CAC/LTV estimates, and margin profiles. Summary comparison table in Section 6.
+
+2. `projects/seedwarden/PHASE_4_CHANNEL_AND_AUDIENCE_EXPANSION_OPTIONS.md` — Five channel analyses
+   (Patreon, Gumroad, Shopify, B2B/Faire, YouTube+Patreon funnel) with unit economics and
+   pros/cons. Five audience segments (practitioners, wholesale buyers, international, Gen Z,
+   health coaches) with TAM and outreach strategy. Channel priority matrix per scenario in Section 4.
+
+3. `projects/seedwarden/PHASE_4_GO_TO_MARKET_SCENARIOS.md` — Four mutually exclusive Phase 4
+   scenarios (Double-Down, Expand, Sequential, Platform Play) each with product roadmap, resource
+   requirements, revenue projections (conservative/base/optimistic), timeline to break-even, failure
+   modes, and decision logic. Comparison table and decision tree in Sections 5–6.
+
+**Research sources**:
+- Statista/IBISWorld proxies: US Herbalist Market (IMARC Group), Wellness Subscription Box
+  Market (Business Research Insights, Valuates), Herbal Medicine Market (Fortune Business Insights)
+- Creator economics: Patreon statistics (Skillademia, Backlinko), Gumroad creator earnings (Accio,
+  Medium creator reports), TikTok creator program (InfluenceFlow)
+- Competitor analysis: Chestnut School pricing and enrollment, Herbal Academy course structure,
+  Faire apothecary vendor landscape, Etsy herbalism guide market tiers (from phase-3-medicinal-herbs-strategy.md)
+- Existing Seedwarden docs: PHASE_4_MARKET_RESEARCH.md (physical products, May 21), phase-3-medicinal-herbs-strategy.md,
+  phase-3-financial-projections.md
+
+**Decision deadline for user**: July 10–13, 2026 (before Phase 3 completes)
+
+---
+
 ## Item 106 — Phase 3 Medicinal Herbs Content Bundle Production — June 14, 2026
 
 **Task**: Produce Phase 3 product content: the actual medicinal herbs guide (the product customers buy), an updated competitive analysis with SEO tags and price recommendation, and a complete 5-email Kit nurture sequence.
