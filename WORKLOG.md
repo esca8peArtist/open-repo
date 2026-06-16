@@ -1,8 +1,28 @@
+## Session 3685d (June 16 16:53–17:05 UTC — 🔴 CRITICAL: VALIDATION WINDOW CONFIGURATION CORRUPTED)
+
+**Status**: 🔴 **CRITICAL BLOCK ADDED — Market validation running WRONG sessions; gate validation data now invalid; June 18 deadline at SEVERE RISK**
+
+**Critical findings**:
+- ✅ Verified market validation is running at 16:53 UTC (in progress, 13:30-20:00 UTC window)
+- ❌ **CRITICAL ERROR DISCOVERED**: Running 5 sessions (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, AMZN lgbm_ho, JPM ridge_wf) but Strategic Reset specified 2-session config (AMZN + JPM only)
+- ❌ **WRONG MODELS**: AAPL lgbm_ho is running despite failing gate validation (2/6 gates). MSFT lgbm_ho is running but June 17-18 plan calls for MSFT ridge_wf retrain (different model)
+- ❌ **BROKEN SESSIONS**: MSFT lgbm_ho and NVDA lgbm_ho showing signal dropout (buy_prob=0.0000) while AMZN works correctly (buy_prob=0.4402) — suggests model-specific bugs distinct from threshold cap fix
+- ❌ **VALIDATION DATA COMPROMISED**: June 16 validation window is collecting data for wrong models, which invalidates June 17 training data and June 17-18 gate validation
+- 🔴 **JUNE 18 EOD HARD DEADLINE AT RISK**: User decision on session configuration needed IMMEDIATELY to salvage gate validation timeline
+
+**Action taken**:
+- ✅ Added CRITICAL block to BLOCKED.md (Item: "stockbot — CRITICAL: June 16 validation window using wrong session configurations (re-regression)")
+- ⏳ Awaiting user clarification: Are MSFT/NVDA sessions intentional? If not, shut down wrong sessions + restart validation with 2-session config only
+
+**Next**: Do NOT execute 20:00 UTC post-market checkpoint until this is resolved. Checkpoint data will be invalid if wrong models are running.
+
+---
+
 ## Session 3685 (June 16 16:26–17:49+ UTC — 🟢 ORCHESTRATOR SCHEDULED 20:00 UTC POST-MARKET CHECKPOINT + RESISTANCE-RESEARCH DAY 7 PREP)
 
 **Duration**: ~83+ minutes (initial 16:26 orientation + continuation 16:32 wakeup scheduling + 16:40 resistance-research Day 7 framework)
 
-**Status**: ✅ **ORCHESTRATOR RESISTANCE-RESEARCH DAY 7 CHECKPOINT FRAMEWORK COMPLETE + STANDING BY FOR 20:00 UTC POST-MARKET**
+**Status**: ✅ **ORCHESTRATOR RESISTANCE-RESEARCH DAY 7 CHECKPOINT FRAMEWORK COMPLETE + STANDING BY FOR 20:00 UTC POST-MARKET** [NOTE: Superseded by Session 3685d critical finding]
 
 **Session 3685a (16:26 UTC) — Initial Orientation**:
 - ✅ Verified ORCHESTRATOR_STATE.md — market validation proceeding normally (16:25:31Z snapshot)

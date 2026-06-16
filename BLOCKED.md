@@ -72,6 +72,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — CRITICAL: June 16 validation window using wrong session configurations (re-regression)
+**Date blocked**: 2026-06-16 (Session 3685, 16:53 UTC)
+**Context**: Market validation window (13:30-20:00 UTC June 16) is running 5 sessions, but Strategic Reset specified only 2-session config (AMZN lgbm_ho + JPM ridge_wf). Current running sessions: AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, AMZN lgbm_ho, JPM ridge_wf. **CRITICAL ERROR**: AAPL lgbm_ho and MSFT lgbm_ho are NOT the models scheduled for June 17-18 gate validation. Per PROJECTS.md, June 17 retrains are for AAPL lgbm_ho + MSFT ridge_wf (different MSFT model), not MSFT lgbm_ho. Additionally, AAPL lgbm_ho failed gate validation (2/6 gates) and should NOT be running. NVDA lgbm_ho is not in any approved configuration. This means: (1) Current validation data is for wrong models, (2) June 17-18 gate validation will be based on invalid training, (3) MSFT lgbm_ho that's generating SELL-only signals (no BUY confidence) may be a broken configuration, (4) AAPL is running a model that failed validation. Root cause likely: configuration drift from strategic reset plan. Symptom: MSFT lgbm_ho and NVDA lgbm_ho showing signal dropout (buy_prob=0.0000 despite non-zero predicted_return) while AMZN lgbm_ho works correctly (buy_prob=0.4402). This suggests model-specific issues, not the threshold cap fix (which is present and working for AMZN).
+**What I need**: (1) User clarification: Are MSFT and NVDA sessions supposed to be running in June 16 validation window? (2) If not, shut down wrong sessions immediately (docker exec stockbot rm /opt/stockbot/config/active-sessions.json, restart with 2-session config only). (3) If yes, provide updated validation plan explaining why Strategic Reset plan was modified. (4) Separately: Investigate why MSFT lgbm_ho + NVDA lgbm_ho are generating signals with zero buy_prob — may be distinct bug from threshold cap (which fixed AMZN). This may be a feature pipeline issue specific to those tickers.
+**Verify with**: `ssh awank@100.120.18.84 "docker exec stockbot cat /opt/stockbot/config/active-sessions.json | jq '.sessions | length'"` should return 2 (AMZN + JPM only) if resolved correctly
+**Resolution**: [leave blank]
+
+---
+
 ### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
 **Date blocked**: 2026-06-06
 **Date deadline passed**: 2026-06-15 23:59 UTC

@@ -1,5 +1,26 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3685d, June 16 16:53 UTC — 🔴 CRITICAL: VALIDATION WINDOW CONFIGURATION CORRUPTED)
+
+**Status**: 🔴 **CRITICAL BLOCK — Market validation running WRONG sessions; June 18 EOD hard deadline at SEVERE RISK**
+
+**Critical Issue Discovered**:
+- **VALIDATION CONFIGURATION ERROR**: Market validation window (13:30-20:00 UTC) is running 5 sessions (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, AMZN lgbm_ho, JPM ridge_wf) but Strategic Reset specified 2-session config (AMZN + JPM only)
+- **WRONG MODELS FOR GATE VALIDATION**: AAPL lgbm_ho failed gate validation (2/6 gates) and should NOT be running. MSFT lgbm_ho is running but June 17 plan calls for MSFT ridge_wf retrain (completely different model)
+- **MODEL-SPECIFIC SIGNAL FAILURES**: MSFT lgbm_ho and NVDA lgbm_ho showing signal dropout (buy_prob=0.0000) while AMZN works (buy_prob=0.4402), indicating model-specific bugs distinct from June 16 14:09 threshold cap fix
+- **VALIDATION DATA INVALID**: June 16 market validation is collecting training data for wrong models, which compromises June 17 retrains and June 17-18 gate validation
+- **CRITICAL DEADLINE RISK**: June 18 EOD hard deadline for gate decision requires correcting this immediately
+
+**Blocking Decision Required**:
+- User must clarify: Are MSFT/NVDA sessions intentional in June 16 validation window?
+- If NO (expected per Strategic Reset): Shut down wrong sessions immediately and restart validation with 2-session config only
+- If YES: Provide updated validation plan + gate decision schedule
+
+**Block Status**: Added to BLOCKED.md (CRITICAL) — awaiting user decision
+**Do NOT proceed with 20:00 UTC checkpoint until this is resolved** — checkpoint data will be invalid if wrong models are running
+
+---
+
 ## Since Last Check-in (Session 3685, June 16 16:26–17:49+ UTC — RESISTANCE-RESEARCH DAY 7 PREP + 20:00 UTC POST-MARKET CHECKPOINT STAGED)
 
 **Status**: ✅ **SESSION 3685c COMPLETE — RESISTANCE-RESEARCH DAY 7 CHECKPOINT FRAMEWORK DELIVERED + AWAITING 20:00 UTC STOCKBOT CHECKPOINT**
