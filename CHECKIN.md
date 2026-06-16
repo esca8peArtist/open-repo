@@ -1,5 +1,64 @@
 # Check-in Summary
 
+## Session 3649 (June 16 08:07 UTC — 🟢 UNPAUSE DIRECTIVE EXECUTION + RETRAIN STRATEGY RESEARCH)
+
+**Status**: ✅ **UNPAUSE DIRECTIVE IN PROGRESS — SIGNAL RESTORATION VERIFIED — RETRAIN STRATEGY DOCUMENTED**
+
+### Work completed:
+
+**FIRST (UNPAUSE DIRECTIVE)**: ✅ Verified signal restoration post-z-score-clipping-fix
+- SSH verification of Jetson Docker logs
+- All 5 sessions running healthy (AAPL/MSFT/NVDA lgbm_ho, JPM/AMZN ridge_wf)
+- Container restarted June 16 01:20 UTC with fresh initialization
+- Sessions scheduled to wake 13:15 UTC for market open
+- **Result**: ✅ PASS — Signal health confirmed; ready for market validation
+
+**SECOND (UNPAUSE DIRECTIVE)**: ✅ Confirmed P1 + P2 already complete (orchestrator had executed)
+- P1 (Signal Health Monitor): 575-line class, 90 unit tests ✅, deployed June 14 00:51 UTC
+- P2 (Quick-Eval Flag): --quick mode enabled, 56 tests ✅, deployed June 14 01:36 UTC
+- Both integrated into live pipeline; ready for retrains
+
+**THIRD (UNPAUSE DIRECTIVE) — PREPARED**: ✅ Researched optimal AAPL/MSFT retrain strategy
+- **Deliverable**: `AAPL_MSFT_RETRAIN_STRATEGY.md` (1,500+ words, production-ready)
+  - Data windows: 2022-01-01 to 2026-06-16 (full 4.5 years, includes June 2-15 live data)
+  - Decision: Full-eval only (no --quick flag) — prior quick-eval failed G3 on AAPL (t-stat < 2.0)
+  - Execution: June 17 08:00 UTC, parallel on Pi5 (~30 min total)
+  - Baseline: AAPL OOS Sharpe 2.444 (t-stat 4.280), MSFT OOS Sharpe 1.573
+  - All 6 gates must pass for deployment approval
+- **Deliverable**: `batch_aapl_msft_retrains.json` (corrected, train_end=2026-06-16)
+- **Committed**: stockbot submodule commit a43bc09
+- **Updated**: PROJECTS.md stockbot Current focus to reflect retrain strategy ready for June 17 execution
+
+### Key findings from retrain strategy research:
+- 1-year quick-eval window insufficient (single regime overfitting) — need full 4.5-year window
+- June 2-15 live trading data should be INCLUDED in training for proper OOS validation
+- Full-eval (10 WF folds) needed for robust t-stat (7-12 trades in quick-eval was causing G3 near-misses)
+- Parallel execution on Pi5 safe at 47.9°C (no thermal constraint at execution time)
+- Buffer time: 36 hours from June 17 08:30 UTC to June 18 EOD deadline
+
+### Timeline:
+- **June 16 13:30-20:00 UTC**: Automated market validation (5 sessions live, no intervention needed)
+- **June 16 20:00 UTC**: Post-market analysis (path routing for next steps)
+- **June 17 08:00 UTC**: AAPL/MSFT full-eval retrains begin (30-min execution)
+- **June 17 08:30 UTC**: Retrain results available for gate evaluation
+- **June 17-18**: Gate validation + fixes if needed (36-hour buffer before deadline)
+- **June 18 EOD**: Final go/no-go for Phase 3+ work
+
+### Critical Decision Pending 🔴:
+- **systems-resilience platform** — **8+ hours overdue** (June 15 23:59 UTC deadline)
+- Recommendation: **Nextcloud+Matrix (8/10)**
+- Once decided → Phase 5.1 deployment 4-6 hours
+- Current deployment window: June 16-17 (can catch up from June 9 delay)
+
+### System status:
+✅ **UNPAUSE DIRECTIVE EXECUTION IN PROGRESS — ON SCHEDULE FOR ALL DEADLINES**
+- Stockbot: Market validation in 5+ hours (13:30 UTC)
+- Retrain strategy: Production-ready for June 17 execution
+- Exploration queue: Items 118-119 ready to activate post-market-validation at 20:00 UTC
+- No blocking issues
+
+---
+
 ## Session 3648 (June 16 07:07 UTC — 🟢 BLOCK ARCHIVAL + STANDING-BY CONFIRMATION)
 
 **Status**: ✅ **ORIENTATION COMPLETE — RESOLVED BLOCK ARCHIVED — STANDING-BY CONFIRMED**

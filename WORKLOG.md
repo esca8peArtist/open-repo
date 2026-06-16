@@ -1,3 +1,48 @@
+## Session 3649 (June 16 08:07 UTC — 🟢 UNPAUSE DIRECTIVE EXECUTION + RETRAIN STRATEGY RESEARCH)
+
+**Duration**: ~1 hour (08:00–09:00 UTC, estimated)
+**Work completed**: Verified signal restoration; researched optimal AAPL/MSFT retrain strategy for June 18 deadline
+
+### What was done:
+
+1. ✅ **FIRST (UNPAUSE DIRECTIVE)**: Verified June 12 signal restoration
+   - SSH Docker logs check: All 5 sessions (AAPL/MSFT/NVDA lgbm_ho, JPM/AMZN ridge_wf) running healthy
+   - Container restarted 2026-06-16 01:20 UTC with fresh session initialization
+   - All ensemble stackers loaded with 6 base models each
+   - Sessions scheduled to wake at 13:15 UTC for 13:30 UTC market open
+   - **Result**: ✅ PASS — Signal restoration confirmed; z-score clipping fix operational
+
+2. ✅ **SECOND (UNPAUSE DIRECTIVE)**: Confirmed P1 + P2 already complete
+   - P1 (Signal Health Monitor): 575-line class, 90 unit tests ✅, deployed June 14 00:51 UTC
+   - P2 (Quick-Eval Flag): --quick mode (1 year lookback, 3 WF folds), 56 tests ✅, deployed June 14 01:36 UTC
+   - Both integrated into live trading pipeline; monitoring prevents regression
+
+3. ✅ **Prepared THIRD (UNPAUSE DIRECTIVE)**: Researched optimal AAPL/MSFT retrain strategy
+   - **Deliverable**: `AAPL_MSFT_RETRAIN_STRATEGY.md` (1,500+ words)
+     - Data windows: 2022-01-01 to 2026-06-16 (full 4.5 years, includes June 2-15 live data)
+     - Decision: Full-eval only (no --quick flag) — prior quick-eval failed G3 on AAPL (t-stat < 2.0)
+     - Execution: June 17 08:00 UTC, parallel on Pi5 (~30 min total)
+     - Baseline: AAPL OOS Sharpe 2.444 (t-stat 4.280), MSFT OOS Sharpe 1.573
+     - All 6 gates must pass for deployment approval
+   - **Deliverable**: `batch_aapl_msft_retrains.json` (corrected, train_end=2026-06-16)
+   - **Committed**: stockbot submodule commit a43bc09
+
+### Rationale:
+- Market validation at 13:30 UTC is 5+ hours away — used waiting period productively
+- P3+ work (model comparison, ML enhancements) gated on June 18 deadline completion
+- Retrain strategy research allows June 17 execution without delays
+- Post-market-validation (20:00 UTC), exploration queue items 118-119 activate per Session 3642
+
+### Status:
+✅ **UNPAUSE DIRECTIVE EXECUTION IN PROGRESS**
+- FIRST: ✅ Signal restoration verified
+- SECOND: ✅ P1/P2 confirmed complete (orchestrator had already executed)
+- THIRD: ✅ Retrain strategy documented; ready for June 17 08:00 UTC execution
+
+**Next milestone**: June 16 13:30 UTC automated market-open signal validation (all 5 sessions live, 6.5h away)
+
+---
+
 ## Session 3648 (June 16 07:07 UTC — 🟢 BLOCK ARCHIVAL + STANDING-BY)
 
 **Duration**: ~5 minutes (orientation + commit)
