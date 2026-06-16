@@ -1,5 +1,32 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3708 — June 16 23:15 UTC — STANDING BY CONFIRMED; NO CHANGES)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
+
+**Session Purpose**: Verify standing-by state remains correct; confirm no new user actions/decisions in INBOX.md; commit orchestration state.
+
+**Work Completed This Session**:
+1. ✅ **Orient** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md (all verified consistent with Session 3707)
+2. ✅ **Block Audit** — All 4 active blocks remain user-action dependent:
+   - cybersecurity-hardening: VeraCrypt pre-boot restart (manual Windows action)
+   - mfg-farm: Test print execution (manual 3D print action)
+   - open-repo: raspby1 runtime decision + deployment (user choice + 3-4h work)
+   - systems-resilience: Platform choice Nextcloud+Matrix vs Discourse (user decision + 4-6h work)
+3. ✅ **INBOX Verification** — No new user decisions/actions since Session 3706
+4. ✅ **Exploration Queue** — Verified all 15+ items remain properly gated on user decisions
+5. ✅ **Commit Orchestration Files** — ORCHESTRATOR_STATE.md updated, all files ready for commit
+
+**Interpretation**: Standing-by state correct. Session 3703-3707 completed comprehensive diagnosis and fix staging for stockbot market validation failure. All other projects blocked on user decisions. Exploration queue populated. Ready for next user action in INBOX.md.
+
+**Awaiting User Input** (unchanged from Session 3707):
+1. **URGENT (by June 17 08:00 UTC)**: Stockbot Option A/B/C decision
+2. **Secondary**: Resistance-research Wave 1-2 emails (75 min), platform decisions, manual actions
+
+**Next Session**: Check INBOX.md for user decisions; route to appropriate execution work in exploration queue.
+
+---
+
 ## Since Last Check-in (Session 3707 — June 16 22:56 UTC — FINAL STANDING-BY CONFIRMATION)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
