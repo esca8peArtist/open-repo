@@ -1,5 +1,39 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3711 — June 16 23:06 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
+
+**Session Purpose**: Verify standing-by state remains correct; no new user actions available; confirm readiness for next user decision (stockbot A/B/C deadline: June 17 08:00 UTC, 8h 54m remaining).
+
+**Work Completed This Session**:
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 23:04 UTC), BLOCKED.md, INBOX.md, PROJECTS.md
+2. ✅ **Block Audit** — All 4 active blocks verified as user-action dependent (no changes since Session 3710)
+3. ✅ **INBOX Verification** — Confirmed zero new user decisions since Session 3710
+4. ✅ **Project Scope Verification** — Confirmed no unfinished autonomous work available
+5. ✅ **Time-to-Deadline Verification** — **Deadline June 17 08:00 UTC in 8h 54m**; no escalation yet (deadline not passed)
+
+**Interpretation**: Standing-by state is correct by design. All autonomous work exhausted. No unblocked projects or exploration queue items available without prior user decisions. Awaiting stockbot A/B/C decision by June 17 08:00 UTC.
+
+**Awaiting User Input**:
+1. **URGENT (Deadline: June 17 08:00 UTC — 8h 54m remaining)**: Stockbot Option A/B/C decision
+   - Option A: Fix HMM + order_id issues (3-4h) → retry validation June 17 13:30-20:00 UTC
+   - Option B: Skip live validation, use historical data for gate assessment
+   - Option C: Halt for investigation
+   - Support docs staged: `OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md`, `OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md`, `OPTION_C_INVESTIGATION_ROADMAP.md`
+2. **Other actions** (secondary, no deadline):
+   - Resistance-research: Phase 2 Wave 1-2 email execution (75 min, templates ready)
+   - Platform decisions: runtime choice for open-repo + systems-resilience
+   - Manual actions: VeraCrypt restart, test print execution
+
+**Next Session**: Check INBOX.md at June 17 08:00 UTC for stockbot decision. Route immediately:
+- If A selected: Execute fix + validation runbook (3-4h)
+- If B selected: Execute historical data assessment (1-2h)
+- If C selected: Halt stockbot work, escalate
+- If no decision by 08:00 UTC: Escalate to user with urgent notification
+
+---
+
 ## Since Last Check-in (Session 3710 — June 16 22:58 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
