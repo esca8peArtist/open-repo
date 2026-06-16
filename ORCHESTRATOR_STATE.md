@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-16T12:16:49Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-16T14:01:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (8,523 tokens) | All-models 18.4% | Reset in 156h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (8,523 tokens) | All-models 20.6% | Reset in 154h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -33,6 +33,13 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
+### stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window)
+**Date blocked**: 2026-06-16 (Session 3675, 13:48 UTC)
+**Context**: Pre-market checklist completed at 13:18 UTC with GO decision for 13:30 UTC market validation. All 5 trading sessions (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, JPM ridge_wf, AMZN lgbm_ho) launched successfully. However, at 13:40 UTC (~10 minutes into validation), a systematic **SIGNAL DROPOUT** was discovered: all 5 sessions generating `buy_prob=0.0000` and `action=HOLD` on every cycle (18+ consecutive cycles as of 13:48 UTC). Models ARE producing `predicted_return` values (e.g., AAPL 0.0218, MSFT -0.0339, AMZN 0.0352) but those are not translating to buy_prob > 0. This is identical to the z-score saturation issue from May (when extreme z-scores caused sigmoid outputs to saturate at 0). **Diagnostic attempt**: Restarted Docker container at 13:45 UTC → issue persists across restart, indicating a code/model inference problem (not transient). Current cycle count: 18+ with zero BUY/SELL signals. SignalHealthMonitor flagging CRITICAL alerts every 30 seconds. **Validation window impact**: Only 18 minutes into 6.5-hour validation window (13:30-20:00 UTC). Validation is effectively halted — no trades can execute with zero buy signals. June 17-18 gate validation and June 18 EOD hard deadline are now at risk.
+**What I need**: User to diagnose the model inference issue. Possible causes: (1) Feature preprocessing bug (z-scores out of distribution again), (2) Recent code change to buy_prob calculation logic, (3) Model weights corrupted or misloaded, (4) Alpaca data feed degradation causing unusual feature values. **Decision**: Either (A) identify and fix root cause in next 1-2 hours to resume validation, or (B) cancel June 16 validation and schedule retrain/validation for June 17 with fixes applied. Hard deadline June 18 EOD means any decision must be made by 14:00 UTC (48 minutes from now).
+**Verify with**: `ssh -T awank@100.120.18.84 "docker logs stockbot --tail 50 2>&1 | grep -c 'buy_prob=0.0000'"` — should return 0 if signals are now non-zero
+**Resolution**: [leave blank]
+---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -55,14 +62,7 @@
 **Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
 **Resolution**: [leave blank]
 ---
-### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
-**Date blocked**: 2026-06-06
-**Date deadline passed**: 2026-06-15 23:59 UTC
-**Date officially marked overdue**: 2026-06-16 00:40 UTC (Session 3636.6 — deadline not met, no decision provided)
-**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. As of June 6 20:05 UTC: Docker was not installed (resolved in Session 2965), no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. Platform choice (Nextcloud+Matrix vs Discourse) was pending user decision from Session 2965 CHECKIN with **DECISION DEADLINE JUNE 15 23:59 UTC**. **✅ DEADLINE HAS NOW PASSED — NO DECISION PROVIDED.** Updated recommendation per Session 3563: Nextcloud+Matrix (8/10 vs Discourse 5/10, due to Pi5 IPv6 loopback bug in Discourse).
-**What I need**: User decision on which platform to deploy (Nextcloud+Matrix or Discourse). **CURRENT RECOMMENDATION (Session 3563)**: **Nextcloud+Matrix strongly recommended** (8/10 vs Discourse 5/10) because: Discourse has open IPv6 loopback bug on 64-bit PiOS (meta.discourse.org #296408) requiring 3 mandatory workarounds; Nextcloud has zero Pi5-specific blockers. Superior feature fit (offline editing, E2E encryption). Deliverable: `PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md` (Session 3563) includes full Nextcloud deployment runbook (4-6h). If Discourse chosen, SMTP credentials needed. If Nextcloud+Matrix chosen (recommended), confirm acceptance of 7.9GB allocation (5.5GB peak). **Once decision provided**, orchestrator can begin Phase 5.1 deployment immediately.
-**Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
-**Resolution**: [leave blank — deadline expired, awaiting user direction to proceed with selected platform]
+### open-repo — June 12 deployment never executed; infrastructure missing on raspby1
 
 ## Recently Resolved (last 5)
 • Usage limits — weekly calibration reminder ← 2026-06-16 07:05 UTC (Session 3647)
@@ -94,21 +94,6 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- a77e5afd: Wave 1-2 execution status audit & Day 7 checkpoint framework staging (3 new files, 646 insertions)
-
-**Status**: All three deliverables complete. Wave 1-2 audit work DONE. Day 7 checkpoint ready for June 17-18 execution. Awaiting stockbot market validation (13:30 UTC today).
-
-**Timeline**: 8 minutes work + commit = completed well before 11:30 UTC pre-market checklist. No impact on stockbot autonomous validation schedule.
-
-**Next**: Standing by for 11:30 UTC pre-market checklist. Stockbot market validation 13:30–20:00 UTC (autonomous). Post-market analysis 20:00 UTC.
-
-
----
-
-## Session 3658 (June 16 10:06 UTC — 🟢 ORIENTATION: ALL TOP-PRIORITY WORK COMPLETE, STANDING BY FOR PRE-MARKET CHECKLIST)
-
-**Status**: ✅ **ORCHESTRATOR READY FOR 13:15 UTC PRE-MARKET CHECKLIST. STANDING BY.**
-
 **Orientation**:
 - ✅ Read ORCHESTRATOR_STATE.md (generated 10:06:23Z), PROJECTS.md, BLOCKED.md — all current
 - ✅ Verified state: all 5 stockbot sessions healthy, scheduled to wake 13:15 UTC
@@ -133,3 +118,19 @@ User has manually lifted the pause directive early (was scheduled June 15 00:00 
 - ✅ **L-1 Review**: hashlib import is actually used (MD5 hashing for client_order_id), not unused. Task description appears stale; no action needed.
 
 **Decision**: Standing by for market validation. No autonomous code changes before 13:30 UTC validation begins.
+
+
+## Session 3674 (June 16 13:18 UTC — MARKET VALIDATION EXECUTION)
+
+**Pre-Market Validation Checklist (13:15–13:30 UTC)**:
+- ✅ Container health: running 21 min, port 8000 listening
+- ✅ API port reachable: 100.120.18.84:8000 confirmed
+- ✅ 5 trading sessions active: AAPL, MSFT, NVDA, JPM, AMZN
+- ✅ Models deployed: all 5 tickers in /app/models/ensemble_stackers/
+- ✅ Signal generation: active cycles in container logs
+- ✅ Thermal baseline: 48.9°C (safe, <85°C threshold)
+- ✅ Logs healthy: all <4 MB, total <1 GB
+
+**Decision**: **GO FOR MARKET OPEN**
+
+**Market validation timeline**: 13:30–20:00 UTC (5 live sessions, autonomous). Post-market analysis 20:00 UTC (orchestrator execution).
