@@ -1,9 +1,9 @@
 ---
 title: "Distribution Gist URLs"
 date: 2026-04-30
-updated: 2026-06-02
+updated: 2026-06-16
 status: ready-for-distribution
-context: "Session 678 — All 6 canonical reference Gists created; June 2, 2026 — Domain 51 Gist added (created by distribution executor agent)"
+context: "Session 678 — All 6 canonical reference Gists created; June 2, 2026 — Domain 51 Gist added; June 16, 2026 — Domain 48 Gist created (infrastructure Phase 2)"
 ---
 
 # Distribution Gist URLs — Ready for Template Integration
@@ -12,9 +12,10 @@ Created 2026-04-30 05:50 UTC. Updated 2026-06-02 (Domain 51 Gist created and add
 
 ## Phase 2 Domain Gists (June 2026 Active Distribution)
 
-| Domain | Gist URL | Send Deadline | Status |
-|--------|----------|---------------|--------|
-| Domain 59 (Economic Precarity) | https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba | June 30, 2026 (CTC markup) | TIER 1 READY TO SEND |
+| Domain | Gist URL | Send Window | Status |
+|--------|----------|-------------|--------|
+| Domain 48 (Criminal Justice Civic Exclusion) | https://gist.github.com/esca8peArtist/00c1423e3da7bb4693fa285ec87f18a8 | June 16-20, 2026 (Wave 1 professional distribution) | GIST CREATED 2026-06-16 — TEMPLATES READY |
+| Domain 59 (Economic Precarity) | https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba | June 16-20, 2026 (OBBBA implementation frame) | URGENCY FRAME PATCHED 2026-06-16 — READY TO SEND |
 | Domain 51 (Campaign Finance) | https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372 | July 1, 2026 (CA ballot) | TEMPLATES READY — send June 9-30 |
 | Domain 57 (Multilateral Withdrawal) | https://gist.github.com/esca8peArtist/a94ef436fd4a678f89e867ac8ed3dd61 | August 10, 2026 (UNGA) | SEND LOG READY — hold until Aug 10 |
 
@@ -27,6 +28,7 @@ Created 2026-04-30 05:50 UTC. Updated 2026-06-02 (Domain 51 Gist created and add
 | **Domain 37 — Federal Executive Interference** | https://gist.github.com/esca8peArtist/1277f5d5bcb0fe46604bbaba8fa37fd0 | ~40 KB | 2026-05-14 |
 | **Domain 58 — Tribal Sovereignty, Voting Rights & Constitutional Authority** | https://gist.github.com/esca8peArtist/0caf4e1ab5661355ea2df5e53d3c169f | 102 KB | 2026-05-20 |
 | **Domain 39** (Healthcare Access as Democratic Infrastructure) | https://gist.github.com/esca8peArtist/131e8a94c955b973b87f7fb87d0f594b | ~58 KB | 2026-05-26 |
+| **Domain 48** (Criminal Justice Civic Exclusion Architecture) | https://gist.github.com/esca8peArtist/00c1423e3da7bb4693fa285ec87f18a8 | ~120 KB | 2026-06-16 |
 | **Domain 56** (Civil Service Politicization) | https://gist.github.com/esca8peArtist/8f11e868397921a4e6556b41196d1b1f | ~55 KB | 2026-05-22 |
 | **Domain 59** (Economic Precarity / Civic Participation) | https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba | ~58 KB | 2026-06-01 |
 | **Domain 51** (Campaign Finance / Dark Money Architecture) | https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372 | ~75 KB | 2026-06-02 |

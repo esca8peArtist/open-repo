@@ -146,10 +146,10 @@ Example: `https://gist.github.com/esca8peArtist/a1b2c3d4e5f6...`
 
 ## Step 7 — Record the Domain 48 Gist URL
 
-Paste the Gist URL into the placeholder below (edit this file):
+Gist URL created June 16, 2026:
 
 ```
-DOMAIN 48 GIST URL: _______________________________________________
+DOMAIN 48 GIST URL: https://gist.github.com/esca8peArtist/00c1423e3da7bb4693fa285ec87f18a8
 ```
 
 Then record this URL in all four required locations:
@@ -315,18 +315,18 @@ Send Wave 1 emails with the source document attached as a `.md` file rather than
 
 ## Post-Gist Creation Log
 
-After completing Steps 7–9, record the following:
+Gist creation completed June 16, 2026:
 
 ```
-Domain 48 Gist created: [DATE]
-Gist URL: [URL]
-Gist visibility: [Secret / Public]
-Zone A checklist passed: [Yes / No — list any failures]
-Zone D partner activation materials prepared: [Yes / Pending until after send]
-Email templates pre-filled: [Yes / No]
-DISTRIBUTION_GIST_URLS.md updated: [Yes / No]
-DOMAIN_48_DISTRIBUTION_SEND_LOG_TEMPLATE.md URL field filled: [Yes / No]
-Ready for June 16 Wave 1 send: [Yes / No]
+Domain 48 Gist created: June 16, 2026
+Gist URL: https://gist.github.com/esca8peArtist/00c1423e3da7bb4693fa285ec87f18a8
+Gist visibility: Public
+Zone A checklist passed: Yes
+Zone D partner activation materials prepared: Pending until after send
+Email templates pre-filled: Yes (all 4 templates updated with actual Gist URL)
+DISTRIBUTION_GIST_URLS.md updated: Pending
+DOMAIN_48_DISTRIBUTION_SEND_LOG_TEMPLATE.md URL field filled: Yes
+Ready for June 16 Wave 1 send: Yes
 ```
 
 Record this log in DOMAIN_48_DISTRIBUTION_SEND_LOG_TEMPLATE.md (Pre-Send Verification section).
