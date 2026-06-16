@@ -1,5 +1,35 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3701 — June 16 21:27 UTC — STATE UNCHANGED; AWAITING USER DECISIONS)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL PROJECTS BLOCKED ON USER ACTIONS; ZERO AUTONOMOUS WORK AVAILABLE**
+
+**Work Completed This Session**:
+1. ✅ **State verification** — Confirmed Session 3700 audit still valid; no changes to project statuses
+2. ✅ **Block status** — All 4 active blocks remain user-action dependent (no auto-resolvable progress)
+3. ✅ **User decision tracking** — Updated WORKLOG.md with Session 3701 entry
+
+**Key Decision Points Awaiting User Input**:
+1. **URGENT (Deadline June 17 08:00 UTC)**: Stockbot Option A/B/C decision
+   - Option A: Fix HMM + order_id issues (3-4h work + June 17 13:30-20:00 UTC validation)
+   - Option B: Skip June 16-17, use historical data for gate decision
+   - Option C: Deep investigation (defers time pressure)
+   
+2. **Domain 51 Wave 1 Email Execution** (30-45 min user action):
+   - Send 2 emails to Campaign Legal Center + Issue One
+   - Templates ready in `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md`
+   - Deadline: July 1 CA Fair Elections Act (16 days)
+   
+3. **Other Blocks** (documented in BLOCKED.md):
+   - Cybersecurity-hardening: VeraCrypt pre-boot test restart (manual)
+   - mfg-farm: Test print execution (manual)
+   - open-repo: raspby1 runtime decision (Docker vs systemd) + deployment (3-4h work)
+   - systems-resilience: Platform choice (Nextcloud+Matrix vs Discourse) + deployment (4-6h work)
+
+**Orchestrator Status**: Standing by for user decisions/actions. Will resume autonomous work when user provides directions on any of the above.
+
+---
+
 ## Since Last Check-in (Session 3700 — June 16 21:18-21:45 UTC — ALL PROJECTS BLOCKED; AWAITING USER DECISIONS)
 
 **Status**: ✅ **ORCHESTRATOR AUDIT COMPLETE — ALL AUTONOMOUS WORK FINISHED; STANDING BY FOR USER ACTIONS**
