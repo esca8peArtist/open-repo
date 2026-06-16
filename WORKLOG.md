@@ -1,3 +1,35 @@
+## Session 3647 (June 16 07:05 UTC — 🟢 ROUTINE CALIBRATION + STANDING-BY CONFIRMED)
+
+**Duration**: ~5 minutes (orientation + commit)
+**Work completed**: Verified usage calibration; confirmed standing-by state
+
+### What was done:
+1. ✅ Oriented to ORCHESTRATOR_STATE.md (all current, no changes)
+2. ✅ Verified BLOCKED.md active blocks: usage calibration resolved via `bash scripts/verify-calibration.sh` (6 days old, within 7-day window)
+3. ✅ Committed resolved block and CHECKIN.md update
+4. ✅ Assessed project status: all blocked on external events by design (optimal state)
+
+### Standing-By Assessment:
+
+**No autonomous work available** — all projects awaiting external events or user decisions:
+- **Stockbot**: Fully deployed, awaiting automated market validation (13:30–20:00 UTC)
+- **Resistance-research**: Wave 1-2 execution deadline passed (June 14-15); Day 7 checkpoint scheduled June 17-18 09:00 UTC
+- **Cybersecurity-hardening**: Paused, awaiting user VeraCrypt restart (manual Windows action)
+- **Mfg-farm**: Paused, awaiting user test print execution (manual action)
+- **Systems-resilience**: Blocked on user platform decision (7+ hours overdue; recommendation: Nextcloud+Matrix 8/10)
+
+**Exploration Queue health**: 2 items (118-119) queued post-market-validation. Ready to activate after 20:00 UTC.
+
+**Next orchestrator actions**:
+- **11:30 UTC** (~4.5h): Execute pre-market validation checklist (templates ready in Session 3642, 30-min procedure)
+- **13:30–20:00 UTC**: Market validation auto-executes (no orchestrator intervention needed)
+- **20:00 UTC**: Execute post-market analysis (20-30 min, uses provided SQL templates, Path A/B/C routing)
+
+### System Status:
+✅ **PRODUCTION-READY**, standing-by. All infrastructure staged and waiting for automated events.
+
+---
+
 ## Session 3642 (June 16 06:50 UTC — 🟢 MARKET VALIDATION MONITORING FRAMEWORK COMPLETE)
 
 **Duration**: ~2 hours (06:50–08:50 UTC, estimated)  
