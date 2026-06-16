@@ -4,7 +4,7 @@ domain: 48
 topic: "Criminal Justice, Civic Exclusion Architecture, and the Democratic Participation Crisis"
 created: "2026-06-05"
 status: "production-ready"
-gist_url: "[DOMAIN_48_GIST_URL — insert after Gist creation, before any sends]"
+gist_url: "https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5"
 advocacy_windows:
   - "Virginia November 3, 2026 ballot measure — organizational integration deadline July 15"
   - "Alabama SB 24 effective October 1, 2026"
@@ -25,7 +25,7 @@ cross_references:
 *2. `{{DECISION_MAKER}}` — verified current name from contact list (see DOMAIN_48_CONTACT_LIST_AND_STRATIFICATION.md)*
 *3. `{{YOUR_NAME}}` — sender full name*
 *4. `{{YOUR_CONTACT_INFO}}` — sender email and optional phone*
-*5. `{{DOMAIN_48_GIST_URL}}` — paste Gist URL after creation (see DOMAIN_48_GIST_CREATION_STEPS.md)*
+*5. `https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5` — paste Gist URL after creation (see DOMAIN_48_GIST_CREATION_STEPS.md)*
 
 ---
 
@@ -52,7 +52,7 @@ The most immediately actionable material for 2026:
 
 The document is 6,200+ words, 41 citations, CC Attribution 4.0. It is designed to be used — excerpted, shared with state partners, distributed to coalition networks:
 
-{{DOMAIN_48_GIST_URL}}
+https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5
 
 I would be grateful if this reaches the appropriate team at {{ORG_NAME}}, particularly anyone working on the Virginia or Florida 2026 restoration landscape. The July 15 Virginia coalition integration window is the most time-sensitive element.
 
@@ -93,7 +93,7 @@ Three sections most directly relevant to your work:
 **Section 8 (Reform Architecture)**: Four-tier framework from automatic restoration on sentence completion (current consensus reform) to incarcerated voting rights (Maine/Vermont/international norm) — with {{ORG_NAME}}'s work documented as a primary advocacy instrument in Tier 1.
 
 The document is available at:
-{{DOMAIN_48_GIST_URL}}
+https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5
 
 6,200+ words, 41 citations, CC Attribution 4.0 — designed for distribution to state partner networks.
 
@@ -137,7 +137,7 @@ The material most immediately relevant to {{ORG_NAME}}'s work:
 
 The research is designed for coalition distribution and direct use in voter education materials. CC Attribution 4.0:
 
-{{DOMAIN_48_GIST_URL}}
+https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5
 
 Given {{ORG_NAME}}'s role in the 2026 advocacy landscape, I would welcome any indication this research reaches your voting rights or criminal justice teams. The Virginia July 15 window is the nearest hard deadline.
 
@@ -172,7 +172,7 @@ The most immediately actionable element for M4BL's Virginia network: the Novembe
 For M4BL's state networks in Alabama, Florida, Mississippi, and Georgia — the highest-disenfranchisement states with documented M4BL relationships — the document maps the 2026 legislative terrain and the civic exclusion mechanisms operating in each state.
 
 Available at:
-{{DOMAIN_48_GIST_URL}}
+https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5
 
 6,200+ words, 41 citations, CC Attribution 4.0.
 
@@ -252,7 +252,7 @@ Before any send, confirm these fills are complete — no template should leave w
 | `{{DECISION_MAKER}}` | All templates | Verified name from DOMAIN_48_CONTACT_LIST_AND_STRATIFICATION.md |
 | `{{YOUR_NAME}}` | All templates | Sender full name |
 | `{{YOUR_CONTACT_INFO}}` | All templates | Sender email and/or phone |
-| `{{DOMAIN_48_GIST_URL}}` | All templates | Gist URL from DOMAIN_48_GIST_CREATION_STEPS.md — create before any send |
+| `https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5` | All templates | Gist URL from DOMAIN_48_GIST_CREATION_STEPS.md — create before any send |
 
 Total fills per send: 5 fields. All templates: 6 sends × 5 fields = 30 total field fills across the full execution.
 

@@ -28,15 +28,15 @@ cross_references:
 | Citation count confirmed 41+ | [ ] PASS / [ ] FAIL | |
 | Virginia King v. O'Bannon (May 1 injunction) reflected in document | [ ] PASS / [ ] FAIL | If not present, note in document |
 | Alabama SB 24 (effective Oct 1, 2026) correctly stated | [ ] PASS / [ ] FAIL | |
-| Gist created per DOMAIN_48_GIST_CREATION_STEPS.md | [ ] PASS / [ ] NOT YET | |
-| Gist URL recorded in DISTRIBUTION_GIST_URLS.md | [ ] PASS / [ ] NOT YET | |
-| Gist loads without authentication (incognito test) | [ ] PASS / [ ] FAIL | |
-| Gist URL filled in all 4 email templates | [ ] PASS / [ ] NOT YET | |
+| Gist created per DOMAIN_48_GIST_CREATION_STEPS.md | [x] PASS | Created June 16, 2026 |
+| Gist URL recorded in DISTRIBUTION_GIST_URLS.md | [x] PASS | Recorded and synchronized |
+| Gist loads without authentication (incognito test) | [x] PASS | Verified June 16, 2026 |
+| Gist URL filled in all 4 email templates | [x] PASS | Updated all template instances |
 | Virginia Fourth Circuit appeal status checked | [ ] No appeal filed / [ ] Appeal pending — note details | Check democracydocket.com |
 
 **Gist URL (fill after creation)**:
 ```
-DOMAIN 48 GIST URL: _______________________________________________
+DOMAIN 48 GIST URL: https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5
 ```
 
 **Pre-send verification completed by**: _____________________________ on _____________________________
@@ -236,7 +236,7 @@ If 2+ replies or any Virginia Right to Vote Coalition integration mention:
 If 1 reply (Type A or B) or Sentencing Project newsletter discussion:
 
 - [ ] Follow-up to Sentencing Project only — ask for format preference (one-page policy brief vs. full document)
-  - Follow-up body (3 sentences max): "Dear [Name], Following up on my June 16 message sharing the civic exclusion architecture research. I want to confirm the document reached the right team. If a one-page brief format would be more useful for your network distribution, I am happy to prepare one — or the full document is available at {{DOMAIN_48_GIST_URL}}. [YOUR_NAME]"
+  - Follow-up body (3 sentences max): "Dear [Name], Following up on my June 16 message sharing the civic exclusion architecture research. I want to confirm the document reached the right team. If a one-page brief format would be more useful for your network distribution, I am happy to prepare one — or the full document is available at https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5. [YOUR_NAME]"
   - Send date: ____________
 - [ ] Do NOT follow up with Brennan Center, PPI, or CLC before June 25 — 7 business days is the professional follow-up minimum
 

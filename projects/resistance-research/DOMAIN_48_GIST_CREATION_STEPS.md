@@ -19,7 +19,7 @@ cross_references:
 # Domain 48 — Gist Creation Steps
 ## 10-Step Procedure: Zone A/D Structure
 
-*This procedure follows the same format as Domain 38/40/39 Gist creation. The 10-step mechanics are identical; only the Domain 48 content and metadata differ. Complete this before any email sends — all templates contain a `{{DOMAIN_48_GIST_URL}}` placeholder that must be replaced with the live Gist URL.*
+*This procedure follows the same format as Domain 38/40/39 Gist creation. The 10-step mechanics are identical; only the Domain 48 content and metadata differ. Complete this before any email sends — all templates contain a `https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5` placeholder that must be replaced with the live Gist URL.*
 
 ---
 
@@ -157,7 +157,7 @@ Then record this URL in all four required locations:
 **Location 1 — This file** (above placeholder — fill it in)
 
 **Location 2 — DOMAIN_48_EMAIL_TEMPLATE_SET.md**
-Search for: `{{DOMAIN_48_GIST_URL}}`
+Search for: `https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5`
 Replace with: the URL from Step 6
 There are 4 occurrences (one in each template). Replace all 4.
 
@@ -221,9 +221,9 @@ If any item fails: see Troubleshooting section at end of this document.
 
 ## Step 9 — Pre-Fill Domain 48 Email Templates
 
-This step is complete once Step 7 is done (you replaced all `{{DOMAIN_48_GIST_URL}}` occurrences in DOMAIN_48_EMAIL_TEMPLATE_SET.md). Confirm here as a final check:
+This step is complete once Step 7 is done (you replaced all `https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5` occurrences in DOMAIN_48_EMAIL_TEMPLATE_SET.md). Confirm here as a final check:
 
-**Search in DOMAIN_48_EMAIL_TEMPLATE_SET.md for**: `{{DOMAIN_48_GIST_URL}}`
+**Search in DOMAIN_48_EMAIL_TEMPLATE_SET.md for**: `https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5`
 
 If any instances remain unfilled: replace with the URL from Step 6 now.
 

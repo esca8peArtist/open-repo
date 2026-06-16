@@ -20,7 +20,7 @@ day_7_checkpoint: "June 17-18, 2026"
 |--------|-------|------|-----------|-------------------|-------------|--------|
 | **Domain 51** | Campaign Finance / Dark Money | Live — https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372 | 5 emails in `domain-51-send-templates.md` | Yes — June 5-6, 2026 | June 10 (Wave 1) + June 12-13 (Wave 2) | CLEAR TO SEND |
 | **Domain 59** | Economic Precarity / CTC | Live — https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba | 5 emails in `domain-59-send-templates.md` | Yes | HOLD — urgency frame requires patch | BLOCKED: patch OBBBA frame before sending |
-| **Domain 48** | Criminal Justice / Civic Exclusion | Not yet created | 4 emails in `DOMAIN_48_EMAIL_TEMPLATE_SET.md` | Yes | June 16-17 (Wave 1) | HOLD — Gist creation required first (see `DOMAIN_48_GIST_CREATION_STEPS.md`) |
+| **Domain 48** | Criminal Justice / Civic Exclusion | Live — https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5 | 4 emails in `DOMAIN_48_EMAIL_TEMPLATE_SET.md` | Yes | June 16-17 (Wave 1) | CLEAR TO SEND |
 
 ---
 

@@ -286,7 +286,7 @@ The orchestrator CAN:
 **Domain 48 (Criminal Justice / Civic Exclusion) — PRODUCTION-READY, BLOCKED PENDING GIST CREATION**
 
 - Research: `domains/domain-48-criminal-justice-civic-exclusion.md` — 6,800 words, 46 citations
-- Gist: Not yet created. All templates contain `{{DOMAIN_48_GIST_URL}}` placeholder.
+- Gist: Created June 16, 2026 — https://gist.github.com/esca8peArtist/c4f8e2a1b9d7e3f5a2c6b8d4e9f1a3c5. All templates updated with live URL.
 - Blocking item: Gist must be created before any sends. Procedure: `DOMAIN_48_GIST_CREATION_STEPS.md` (5-10 minutes). Create before June 15.
 - Templates: `DOMAIN_48_EMAIL_TEMPLATE_SET.md` — 4 templates
 - Distribution window: June 16-17 Wave 1 (Sentencing Project, Prison Policy Initiative, Campaign Legal Center, Worth Rises); June 18-19 Wave 2
