@@ -2,6 +2,87 @@
 
 ---
 
+## June 16, 2026 — Session 3699 — Phase 2 Wave 1-2 Execution: Domain 51 Send-Ready, Domain 48 Prepared, Domain 59 Wave 2 Checkpoint-Ready
+
+**Task**: Execute Phase 2 Wave 1-2 distributions for Domains 51, 59, 48. Verify all infrastructure. Stage Domain 48 sends for June 17-20 execution. Prepare Domain 59 Wave 2 routing for June 17-18 T+7 checkpoint decision. Log all state. Commit.
+
+**Gist verification (Session 3699 — live HTTP 200)**:
+- Domain 51: https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372 — HTTP 200 CONFIRMED
+- Domain 48: https://gist.github.com/esca8peArtist/00c1423e3da7bb4693fa285ec87f18a8 — HTTP 200 CONFIRMED
+- Domain 59: https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba — HTTP 200 CONFIRMED
+
+**Orchestration script runs (Session 3699)**:
+- `--all-domains-status`: Domain 59 = 5/13 sends, 0 STRONG, deadline June 30. Domain 51 = 0/10 sends, 0 STRONG, deadline July 1.
+- `--domain 51 --execute wave1`: Execution guide generated. Send 1 = echlopak@campaignlegalcenter.org (Erin Chlopak, P(reply) 65-75%); Send 2 = info@issueone.org (P(reply) 40-60%). 90-min stagger. Templates in DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md.
+- `--domain 59 --t7-check`: 5 sends, 0 bounces, 2 replies (MODERATE — CBPP + MomsRising), 0 STRONG. Gate = BELOW THRESHOLD. Action = Path B: delay Wave 2, reassess June 17-18.
+
+**DOMAIN 51 — USER SEND REQUIRED (today June 16 or June 17 at latest)**:
+- Send 1: echlopak@campaignlegalcenter.org (Erin Chlopak, Campaign Legal Center)
+  - Subject: "Constitutional architecture research on Citizens United — Hawaii/Montana model + FEC collapse analysis"
+  - Template: DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md "Email 1"
+  - P(reply): 65-75%
+- Send 2 (T+90 min): info@issueone.org (Issue One general inbox)
+  - Subject: "Dark money architecture research — FEC collapse documentation + state ballot measure analysis"
+  - Template: DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md "Email 2"
+  - P(reply): 40-60%
+- Fills required: [YOUR_NAME] and [YOUR_CONTACT_INFO] only
+- Log sends in DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md immediately after each send
+- T+7 checkpoint for Domain 51: June 23-24
+- July 1 CA Fair Elections Act deadline — 15 days remaining
+
+**DOMAIN 59 — Wave 1 EXECUTED (June 9-11). T+7 checkpoint window: June 17-18**:
+- All 5 Wave 1 sends confirmed: AFL-CIO (June 9 14:00 UTC), CBPP (June 9 15:00 UTC), NWLC (June 9 16:00 UTC), MomsRising (June 10 14:00 UTC), ITEP (June 11 14:00 UTC)
+- Engagement: 2 replies (CBPP + MomsRising, both MODERATE — forwarded to relevant teams), 3 Gist clicks = 40% response rate
+- T+7 gate: BELOW THRESHOLD (0 STRONG). Path B in effect.
+- Wave 2 contact list ready (4 organizations):
+  1. EPI — researchdept@epi.org (verify at epi.org/about/contact before sending — UNCONFIRMED)
+  2. Demos — Taifa Smith Butler — info@demos.org
+  3. NELP — Rebecca Dixon — info@nelp.org
+  4. NHLP — info@nhlp.org
+- Execute Wave 2 via: `uv run python projects/resistance-research/PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --execute wave2`
+- Activation condition: 1+ MODERATE upgraded to STRONG by June 17-18 inbox check. If still 0 STRONG: continue to T+14 (July 1). Do NOT send Wave 2 yet.
+- June 30 Senate Finance markup deadline = 14 days remaining
+
+**DOMAIN 48 — Templates prepared for June 17-20 user execution (do NOT send today, per mission timeline)**:
+- All templates filled and ready in DOMAIN_48_EMAIL_TEMPLATE_SET.md
+- Not in orchestration script — track manually in DOMAIN_48_DISTRIBUTION_SEND_LOG_TEMPLATE.md and this WORKLOG
+
+Wave 1 sends — execute June 17:
+- Send 1 (June 17, 09:00 local): Nicole D. Porter, The Sentencing Project — nporter@sentencingproject.org
+  - Template A (Sentencing Project variant): cite "Locked Out 2024" data, 1-in-22 Black Americans figure, "Expanding the Vote" series
+  - Subject: "Criminal justice civic exclusion synthesis — Virginia, Florida, Alabama 2026 — built on Sentencing Project's research"
+  - P(reply): 40-60%
+- Send 2 (June 17, 09:00 local — next day): Peter Wagner, Prison Policy Initiative — info@prisonpolicy.org
+  - Template A (PPI variant): cite "Rigging the Jury" (jury exclusion), "Nowhere to Go" (housing barriers), "Winnable Criminal Justice Reforms in 2026"
+  - Subject: "Criminal justice civic exclusion synthesis — jury exclusion and housing barriers — built on PPI's 'Rigging the Jury' and 'Nowhere to Go'"
+  - P(reply): 35-50%
+
+Wave 2 sends — execute June 18-19:
+- June 18, 09:00: Brennan Center — Sean Morales-Doyle — brennancenter.org/about/contact (web inquiry form, specify Voting Rights and Elections Program)
+  - Template B (Brennan Center variant): cite Readmission Act constitutional theory, Virginia injunction, Section 4.4 applicability to other Confederate states
+- June 18, 10:30: Worth Rises — Bianca Tylek — info@worthrises.org
+  - Template D (Worth Rises variant): lead with LFO empirical foundation in Section 4, democratic design frame as extension
+- June 19, 09:00: Campaign Legal Center (Restore Your Vote) — Blair Bowie — info@campaignlegal.org (specify Restore Your Vote in subject)
+  - Template B (CLC variant): Section 5.1 cites Restore Your Vote as operational instrument; Florida LFO analysis; Readmission Act theory
+- June 19, 10:30: Movement for Black Lives — info@m4bl.org (verify current policy contact at m4bl.org/contact before sending)
+  - Template D (M4BL version): Virginia Right to Vote Coalition July 15 integration window; structural racial justice frame; state networks AL, FL, MS, GA
+
+- Virginia Right to Vote Coalition integration deadline: July 15 (30 days remaining)
+- T+7 checkpoint for Domain 48: June 23-25
+
+**No bounces across all domains. All Gists confirmed live. Zero dead addresses.**
+
+**USER ACTIONS REQUIRED (in priority order)**:
+1. TODAY (June 16) or JUNE 17 MORNING: Open DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md. Fill [YOUR_NAME]/[YOUR_CONTACT_INFO]. Send Email 1 (CLC). Wait 90 min. Send Email 2 (Issue One). Log both sends in DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md.
+2. JUNE 17 MORNING: Check inbox for Domain 59 STRONG signal. If STRONG: run `--domain 59 --log-reply [N] --signal STRONG --summary "..."` then `--domain 59 --execute wave2`. If still 0 STRONG: continue monitoring.
+3. JUNE 17: Send Domain 48 Wave 1 Send 1 (Sentencing Project) using Template A from DOMAIN_48_EMAIL_TEMPLATE_SET.md.
+4. JUNE 18: Send Domain 48 Wave 1 Send 2 (Prison Policy Initiative). Plus Wave 2 opens: Brennan Center + Worth Rises.
+5. JUNE 19: Domain 48 Wave 2 continues: Campaign Legal Center (Restore Your Vote) + M4BL.
+6. JUNE 23-24: Domain 51 T+7 checkpoint. Run `--domain 51 --t7-check`.
+7. JUNE 23-25: Domain 48 T+7 checkpoint. Manual inbox check; log in DOMAIN_48_DISTRIBUTION_SEND_LOG_TEMPLATE.md.
+
+---
+
 ## June 16, 2026 21:01 UTC — Resistance Research Agent — Phase 2 Wave 1 Pre-Send Verification: Gists Confirmed Live, Execution Packages Verified, Day 7 Checkpoint Scaffolded
 
 **Task**: Execute Phase 2 Wave 1 for Domains 51 and 48; verify all infrastructure; scaffold Day 7 checkpoint tracking for June 17-18.
@@ -8133,6 +8214,31 @@ Gate decision: see console output.
 ---
 
 ## 2026-06-16 21:01 UTC — Domain 59 Wave Orchestration
+
+**T+7 checkpoint run — Domain 59**
+
+- Sends logged: 5/13
+- Bounces: 0
+- Replies: 2
+- STRONG signals: 0
+
+Gate decision: see console output.
+
+---
+
+## 2026-06-16 21:09 UTC — Domain 51 Wave Orchestration
+
+**Action**: Domain 51 Wave 1 execution guide generated.
+
+**Contacts**:
+- Send 1: Erin Chlopak / Campaign Legal Center (echlopak@campaignlegalcenter.org)
+- Send 2: General inbox (Nick Penniman, Founder/CEO) / Issue One (info@issueone.org)
+
+**Next step**: User executes sends with 90-minute stagger. Log results with --domain 51 --log-send after each send.
+
+---
+
+## 2026-06-16 21:09 UTC — Domain 59 Wave Orchestration
 
 **T+7 checkpoint run — Domain 59**
 
