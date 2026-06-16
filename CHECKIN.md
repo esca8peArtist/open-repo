@@ -1,18 +1,21 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3XXX, June 16 18:26 UTC — ORCHESTRATOR ORIENTATION + CHECKPOINT STANDBY)
+## Since Last Check-in (Session 3XXX, June 16 18:34 UTC — ORCHESTRATOR STANDING BY FOR 20:00 UTC POST-MARKET CHECKPOINT)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY FOR 20:00 UTC CHECKPOINT** — stockbot market validation running autonomously (5 intentional sessions: AAPL/MSFT/NVDA/AMZN lgbm_ho + JPM ridge_wf). Critical block resolved. Checkpoint infrastructure verified and ready.
 
-**Work Completed This Session (18:13–18:26 UTC)**:
-- ✅ **Orientation & Block Resolution Verification** — Confirmed in BLOCKED.md Resolved Archive that critical "5-session config" concern was resolved in Session 3684 with documentation confirming expanded validation is intentional. Signal restoration validated (AMZN BUY, MSFT SELL, JPM/NVDA HOLD). No action required.
-- ✅ **Checkpoint Infrastructure Verification** — All systems ready:
-  - JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md: ✅ Present (550 lines, complete with 5-section structure)
-  - Pre-analysis checklist commands documented (Section 1, ~5 min)
-  - Metrics extraction SQL/bash commands ready (Section 2, ~10 min)
+**Work Completed This Session (18:13–18:34 UTC)**:
+- ✅ **Full Orientation** — Reviewed ORCHESTRATOR_STATE.md, INBOX.md, BLOCKED.md, PROJECTS.md
+  - No new INBOX items pending processing
+  - All active blocks verified (cybersecurity-hardening, mfg-farm, open-repo, systems-resilience — all on user action)
+  - Critical block "5-session config concern" confirmed RESOLVED in Session 3684 (expanded validation intentional and documented)
+- ✅ **Checkpoint Infrastructure Verification** — All systems ready for 20:00 UTC execution:
+  - JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md: ✅ Staged and ready (23.7 KB, updated 18:49 UTC)
+  - Pre-analysis checklist commands documented (Section 1)
+  - Metrics extraction SQL/bash commands ready (Section 2)
   - Scenario routing decision tree verified (Section 3, M1-M5 thresholds)
   - June 17 retrain trigger documented (Section 4)
-- ✅ **SSH Connectivity Check** — Jetson (100.120.18.84) verified reachable; Docker stockbot running
+- ✅ **Committed WORKLOG.md** — Log updated to reflect standing-by status. Commit: 61cea0cd
 
 **Market Validation Status**:
 - Market open window: 13:30–20:00 UTC (June 16)
@@ -23,14 +26,14 @@
 
 **No Autonomous Work Available Until Checkpoint** — All projects either: (a) stockbot autonomously running market validation (do not interrupt), (b) resistance-research production-ready, awaiting user execution of Wave 1 sends (June 16-17), or (c) blocked on user action.
 
-**Next Scheduled Action (20:00 UTC, ~94 minutes)**:
-- Execute JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md sections 1-3:
-  - Section 1: Pre-analysis checklist (5 min) — confirm market close, container health, log/DB accessibility
-  - Section 2: Extract M1-M5 metrics from logs/DB (10 min) — signal count, fill distribution, Z-scores, regime, PnL
-  - Section 3: Route decision (5 min) — evaluate Path A (strong) / B (caution) / C (compromised)
-  - Log results and Phase 4 preliminary flag
-- If Path A/B: prepare June 17 08:00 UTC retrains (AAPL lgbm_ho, MSFT ridge_wf)
-- Estimated completion: 20–30 min; results logged to WORKLOG.md + PROJECTS.md updated
+**Next Scheduled Action — 20:00 UTC (80 minutes)**:
+Orchestrator will execute `JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md` sections 1-3:
+1. **Pre-analysis checklist** (~5 min) — confirm market close, container health, log/DB accessibility
+2. **Extract M1-M5 metrics** (~10 min) — signal count, fill distribution, Z-scores, regime, PnL per session
+3. **Route Path decision** (~5 min) — evaluate Path A (strong) / B (caution) / C (compromised)
+4. Log results to WORKLOG.md + update PROJECTS.md with June 17 execution state
+- **If Path A/B outcome**: Trigger June 17 08:00 UTC retrains (AAPL lgbm_ho + MSFT ridge_wf)
+- **Estimated completion**: 20–30 min; full results logged before checkpoint end
 
 ---
 
