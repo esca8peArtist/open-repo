@@ -1,20 +1,24 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3674, June 16 13:04 UTC)
+## Since Last Check-in (Session 3674, June 16 13:18 UTC)
 
-**Status**: ✅ **STANDING BY FOR MARKET OPEN AT 13:30 UTC. PRE-MARKET VALIDATION COMPLETE (SESSION 3673).**
+**Status**: ✅ **MARKET VALIDATION IN PROGRESS. PRE-MARKET CHECKLIST EXECUTED AT 13:18 UTC — GO FOR MARKET OPEN.**
 
-**What was accomplished** (in prior Session 3673 — 12:58 UTC):
-- ✅ **Pre-Market Validation Checklist executed** (6 sections all PASS): container health verified, models deployed, thermal baseline safe (48.2°C), all 5 trading sessions initialized
-- ✅ **Container recovery executed**: Detected WebSocket connection limit (406) issue; Jetson container cleanly restarted to clear connection queue
-- ✅ **Sessions verified healthy**: All 5 models re-initialized post-restart (AAPL, MSFT, NVDA, JPM, AMZN), sessions correctly sleeping per schedule
-- ✅ **Pre-flight validation complete**: All 5 sessions ready for autonomous 13:30 UTC market open
+**What was accomplished** (Session 3674 — 13:18 UTC):
+- ✅ **Pre-Market Validation Checklist executed** (6 sections all PASS):
+  - Container health: running 21 min, port 8000 listening
+  - Database: trading.db 1.1 MB, 5 sessions active
+  - Models deployed: all 5 tickers (AAPL, MSFT, NVDA, JPM, AMZN) in ensemble_stackers
+  - Signal generation: active cycles in container logs
+  - Thermal baseline: 48.9°C (safe, <85°C threshold)
+  - Logs healthy: all <4 MB, total <1 GB
+- ✅ **GO DECISION**: Market validation proceeds at 13:30 UTC
 
 **What's in progress** (current session, Session 3674):
-- **Immediate**: Orientation complete, all systems verified in GO state, standing by for market validation
-- **13:30 UTC** (26 minutes): Autonomous market validation begins (live trading, 5 sessions, 5 tickers, 6.5-hour market window)
-- **13:30–20:00 UTC**: Automated execution (no orchestrator intervention needed during session hours)
-- **20:00 UTC**: Post-market analysis framework ready for execution post-market close
+- **13:18 UTC**: ✅ Pre-market validation complete, GO decision made
+- **13:30 UTC**: Autonomous market validation begins (live trading, 5 sessions, 5 tickers, 6.5-hour window)
+- **13:30–20:00 UTC**: Automated execution (5 live trading sessions, no orchestrator intervention needed)
+- **20:00 UTC**: Post-market analysis framework ready for execution
 
 **Items needing user input** (unchanged):
 > **Two decisions still needed** (deadline June 15 passed, blocks open-repo + systems-resilience Phase 5.1):
