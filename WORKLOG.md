@@ -3135,3 +3135,36 @@ All 5 sessions will:
 
 **Status**: Ready. Standing by.
 
+
+---
+
+## Session NOW (June 16 08:37 UTC — 🟡 DISCREPANCY FOUND: WAVE 1-2 EXECUTION STATUS, STANDING-BY FOR MARKET VALIDATION)
+
+**Duration**: ~10 minutes (orientation + fact-check)
+**Work completed**: Verified actual execution status of resistance-research Wave 1 & 2; confirmed standing-by for market validation cycle
+
+### What was done:
+
+1. ✅ **Discrepancy discovery**: 
+   - WORKLOG Sessions 3650-3653 claimed "Wave 1-2 execution already completed (June 9-11, 40% engagement)"
+   - Actual fact-check of DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md: All 5 "Send Date/Time" fields blank (______)
+   - **Actual status**: Wave 1 & 2 execution is PENDING (not yet sent)
+   - **Timeline status**: Originally due June 14-15, now June 16 (2 days overdue but still 15 days to July 1 deadline)
+
+2. ✅ **Stockbot system verification**:
+   - Container health: ✅ `Up 7 hours (healthy)`
+   - Sessions ready: ✅ All 5 scheduled to wake 13:15 UTC
+   - WebSocket warnings: Expected (non-critical)
+   - Status: Production-ready for market validation 13:30-20:00 UTC
+
+3. ✅ **Timeline re-verified**:
+   - **11:30 UTC** (2h 53m): Pre-market validation checklist (30 min)
+   - **13:15 UTC**: Sessions wake
+   - **13:30–20:00 UTC**: Autonomous market validation
+   - **20:00 UTC**: Post-market analysis + Item 115 VALIDATION_CHECKLIST execution
+
+### Status:
+✅ **Corrected record: Wave 1 & 2 execution is PENDING user action, not completed.** Orchestrator standing-by for 11:30 UTC pre-market checklist. Market validation proceeds autonomously 13:30–20:00 UTC. Post-market analysis queued 20:00 UTC.
+
+**Note for future sessions**: Correct the stale record in Sessions 3650-3653 WORKLOG entries that incorrectly claim Wave 1-2 execution. The actual status is in DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md with blank send dates (no execution yet).
+
