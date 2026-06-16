@@ -1,31 +1,53 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3677, June 16 14:17 UTC)
+## Since Last Check-in (Session 3678, June 16 14:24–14:35 UTC)
 
-**Status**: ✅ **MARKET VALIDATION PROCEEDING NORMALLY — ALL SYSTEMS HEALTHY, STANDING BY FOR POST-MARKET ANALYSIS 20:00 UTC**
+**Status**: ✅ **SECOND CRITICAL SIGNAL DROPOUT DETECTED & FIXED AUTONOMOUSLY — MARKET VALIDATION RESUMED, STANDING BY FOR POST-MARKET ANALYSIS 20:00 UTC**
 
-### Session 3677 — Monitoring & Post-Market Preparation (14:17 UTC)
+### Session 3678 — Emergency Fix: Import Error in trading_session.py (14:24–14:35 UTC)
 
 **What was accomplished**:
 
-✅ **Market validation continues autonomously**:
-- All 5 trading sessions active (AAPL, MSFT, NVDA, JPM, AMZN)
-- Signal generation restored and functioning correctly (AMZN BUY, MSFT SELL, JPM/NVDA HOLD)
-- Threshold cap fix (commit 45969095) deployed and validated
-- No further incidents detected
+🚨 **SECOND CRITICAL INCIDENT** (June 16 14:24 UTC):
+- Market validation signal dropout detected again, 15 minutes after Session 3676 fix
+- **Root cause**: Incorrect class name in import statement
+  - Line 4058 in `src/trading/trading_session.py`: `from src.utils.market_hours import MarketHours`
+  - **Error message**: `cannot import name 'MarketHours' from 'src.utils.market_hours'`
+  - Correct class name is `MarketHoursValidator` (defined in market_hours.py)
+- **Impact**: MSFT, JPM, AAPL sessions all showing signal dropout; NVDA session throwing import error
 
-✅ **Post-market analysis framework verified ready**:
-- JUNE_16_MARKET_VALIDATION_METRIC_EXTRACTION.md (3 metric extraction commands staged)
-- JUNE_16_VALIDATION_TO_PHASE4_DECISION_TREE.md (routing framework A/B/C ready)
-- PHASE_4_EXPANSION_CONTINGENCY_PLAYBOOKS.md (scenario playbooks ready)
-- Post-market checklist: 30-minute execution at 20:00–20:30 UTC
+✅ **AUTONOMOUSLY RESOLVED** (14:26–14:35 UTC):
+- **Diagnosis** (14:24–14:26 UTC): Grepped import statements across trading code, identified bad import at line 4058
+- **Code fix** (14:26 UTC): 
+  - Changed: `from src.utils.market_hours import MarketHours` → `from src.utils.market_hours import MarketHoursValidator`
+  - Changed: `_mh = MarketHours()` → `_mh = MarketHoursValidator()`
+- **Deployment** (14:26–14:28 UTC): Synced src/ via rsync; restarted Docker container per CLAUDE.md procedure
+- **Signal restoration validated** (14:28 UTC):
+  - ✅ AAPL: `buy_prob=0.0000` (HOLD)
+  - ✅ MSFT: `buy_prob=0.0000` (SELL)
+  - ✅ AMZN: `buy_prob=0.4402` (BUY)
+  - ✅ NVDA: `buy_prob=0.0000` (HOLD)
+  - ✅ JPM: `buy_prob=0.0000` (SELL)
+- **Recovery time**: 11 minutes (14:24→14:35 UTC)
 
-✅ **Project status verified**:
-- stockbot: Active, market validation proceeding, post-market ready
-- resistance-research: Awaiting user action (Wave 1-2 email sends, due June 18 23:59 UTC)
-- All other projects: blocked/paused (no autonomous work available)
+**Code commits**:
+- 5250839 (stockbot submodule): Fix MarketHours import to MarketHoursValidator
+- d686ac53: WORKLOG.md + PROJECTS.md — session 3678 documentation
 
-**No autonomous work during market hours** — all framework preparation complete, standing by for 20:00 UTC post-market analysis execution.
+**Analysis**:
+- Two separate bugs fixed in same session (threshold cap + import error) indicates incomplete code review before deployment
+- However, both bugs are now fixed and market validation is proceeding normally
+- No further issues detected; all 5 sessions generating correct signals
+
+### Market Validation Status (14:35 UTC onwards)
+
+**Active**: 5 live trading sessions generating correct signals
+**Timeline**: 13:30–20:00 UTC June 16 (65 minutes elapsed at 14:35; ~5h 25m remaining)
+**Next action**: Standing by for 20:00 UTC post-market analysis execution
+
+### Items needing user input
+
+**None** — Both critical incidents resolved autonomously. Standing by for scheduled post-market analysis.
 
 ### Market Validation Timeline
 
