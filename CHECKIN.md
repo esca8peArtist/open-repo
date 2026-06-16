@@ -1,5 +1,33 @@
 # Check-in Summary
 
+## Session 3671 (June 16 12:25 UTC — 🟢 AUDIT COMPLETE: OPEN-REPO DEPLOYMENT STATE CLARIFIED)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETED — open-repo deployment audit delivered to BLOCKED.md & PROJECTS.md. Standing-by for 13:15 UTC pre-market checklist (50 minutes).**
+
+**Audit Summary**:
+- **Finding**: June 12 deployment never executed. raspby1 has zero production infrastructure for open-repo (no Docker, Nginx, PostgreSQL, SSL). Deployment was incorrectly marked "resolved" in Session 2995 (which only clarified start time, not execution).
+- **Root cause**: Shared blocker across two projects — **raspby1 runtime decision** (Docker vs systemd/venv) + **systems-resilience platform choice** (Nextcloud+Matrix vs Discourse). User deadline June 15 23:59 UTC passed with no decision.
+- **Status routing**: Code is MERGE-READY (157 tests passing). Infrastructure deployment blocked by user decision. Both open-repo and systems-resilience Phase 5.1 gated on same two decisions.
+- **Deliverables**: 3 markdown files written to projects/open-repo/, documenting audit findings and recovery/deployment options.
+
+**Items Added to BLOCKED.md**:
+- **New Item 1**: "open-repo — June 12 deployment never executed; infrastructure missing on raspby1" — Awaiting user runtime+platform decision
+- **Items 2-3**: Unchanged (cybersecurity-hardening, mfg-farm)
+- **Items 4**: systems-resilience (already active, shared blocker with open-repo)
+
+**Items Updated in PROJECTS.md**:
+- **open-repo Current focus**: Corrected to reflect code-ready status + infrastructure blocker + shared decision gate
+- No other changes
+
+**Needs Your Input**:
+> **User decision required**: Choose raspby1 runtime for BOTH open-repo AND systems-resilience Phase 5.1:
+> 1. **Docker** (simpler deployment, 3-4h for first-time setup) vs **Systemd/venv** (traditional deployment, requires runbook rebuild)
+> 2. **Platform choice for systems-resilience Phase 5.1** (related decision): Nextcloud+Matrix (recommended 8/10) vs Discourse (5/10, has Pi5 IPv6 bug)
+> 
+> Once these two decisions made, orchestrator can immediately execute deployment procedures. Current estimate: 3-4h to production + 48-72h soak before Phase 5.2 author onboarding begins.
+
+---
+
 ## Session 3670 (June 16 12:10 UTC — 🟢 STANDING-BY: PRE-MARKET CHECKLIST AT 13:15 UTC)
 
 **Status**: ✅ **STANDING-BY UNTIL 13:15 UTC PRE-MARKET CHECKLIST (65 MINUTES).**

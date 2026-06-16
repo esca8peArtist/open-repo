@@ -1,3 +1,27 @@
+## Session 3671 (June 16 12:25 UTC — 🟢 EXPLORATION QUEUE: OPEN-REPO DEPLOYMENT AUDIT)
+
+**Duration**: ~55 min total (audit + documentation + orchestration updates)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE — open-repo June 12 deployment audit & recovery routing**
+
+**Work completed**:
+1. ✅ **Exploration Queue Item (Session 3642)**: "open-repo: Post-Deployment June 12 State Audit & Recovery Planning" — Executed comprehensive infrastructure audit on raspby1.
+2. ✅ **Critical finding**: June 12 deployment **never executed**. raspby1 has zero production infrastructure (no Docker containers, no Nginx, no PostgreSQL, no SSL certs). Deployment was incorrectly marked "resolved" in Session 2995 (which only resolved a timing conflict, not the actual deployment).
+3. ✅ **Deliverables written** (3 markdown files to projects/open-repo/):
+   - `DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md` — 6-point infrastructure health check; all 6 points FAIL (0/6 systems operational)
+   - `POST_DEPLOYMENT_ISSUES_ASSESSMENT.md` — Root cause analysis: no deployment ever occurred; blocked on user runtime+platform decision (deadline June 15 expired with no response)
+   - `RECOVERY_OR_NEXT_PHASE_ROUTING.md` — Routing decision: first-time deployment required (not recovery). Options: Docker deployment (3-4h) OR systemd/venv rebuild (2h + deploy). Shared blocker: raspby1 runtime choice + systems-resilience Phase 5.1 platform choice.
+4. ✅ **Updated BLOCKED.md** — Added new Item 1: "open-repo — June 12 deployment never executed; infrastructure missing on raspby1" with full context, decision options, and verification command.
+5. ✅ **Updated PROJECTS.md** — Corrected open-repo **Current focus** line to reflect real status: code is MERGE-READY, but infrastructure deployment is blocked pending user runtime+platform decision.
+
+**Key insight**: State tracking gap — Session 2995 resolved a timing conflict (09:00 vs 20:00 UTC) but marked the entire block as "resolved," advancing the record incorrectly. The deployment itself never occurred because the June 12 date fell inside a pause window (Sessions 3433–3456 June 12). No autonomous action could have prevented this; it's a record-keeping issue requiring correction.
+
+**Blocker detail**: Both open-repo AND systems-resilience Phase 5.1 are gated on the same decision: **raspby1 runtime choice** (Docker vs traditional systemd/venv) + **platform choice** (for systems-resilience: Nextcloud+Matrix vs Discourse). User deadline June 15 23:59 UTC passed with no decision. Both projects are paused pending this decision.
+
+**Next**: Standing by for 13:15 UTC pre-market checklist. Deployment blocks remain active; awaiting user input.
+
+---
+
 ## Session 3670 (June 16 12:10 UTC — 🟢 PRE-MARKET VERIFICATION: ALL SYSTEMS READY, STANDING-BY)
 
 **Duration**: ~2 minutes (brief verification)

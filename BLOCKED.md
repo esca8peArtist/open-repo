@@ -57,6 +57,16 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### open-repo — June 12 deployment never executed; infrastructure missing on raspby1
+**Date blocked**: 2026-06-16 (discovered in Session 3671 audit)
+**Original failure date**: 2026-06-12 (deployment date when nothing occurred)
+**Context**: The June 12 deployment was incorrectly marked as "resolved" in Session 2995, which only clarified the start time (09:00 UTC). The actual deployment never executed. Audit (Session 3671, 06:50 UTC June 16) confirmed: raspby1 has zero production infrastructure — no Docker containers, no Nginx, no PostgreSQL, no SSL certificates, nothing on ports 80/443/8000. Three Alembic migrations are authored but unapplied. The published deployment runbook assumes `ubuntu@host` with systemd/pip/venv, but the host is `awank` user with UV (no `requirements.txt`), has no `open-repo` systemd unit, and `awank` is not in the docker group. The deployment is blocked on a **platform/runtime decision** (shared with systems-resilience Phase 5.1) whose deadline expired June 15 23:59 UTC with no user response. All application code is complete and passing 157 tests — the blocker is purely infrastructure/deployment, not code readiness.
+**What I need**: (1) **User decision on raspby1 runtime** — same decision needed for both open-repo and systems-resilience Phase 5.1. Does raspby1 run Docker (recommended, simpler deployment) or traditional systemd/venv? (2) Once runtime decided, orchestrator will either: execute first-time Docker deployment (3-4h) or rebuild runbook for systemd approach (1h) + execute (1h). (3) Post-deployment 48-72h soak test before Phase 5.2 author onboarding.
+**Verify with**: `docker ps 2>&1 | grep -i "open-repo\|api\|postgres"` should show running containers when deployment is done, OR `systemctl status open-repo` should show active service if systemd approach chosen
+**Resolution**: [leave blank — awaiting user decision on raspby1 runtime + platform choice]
+
+---
+
 ### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
 **Date blocked**: 2026-06-06
 **Date deadline passed**: 2026-06-15 23:59 UTC
