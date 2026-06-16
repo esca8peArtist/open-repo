@@ -1,42 +1,47 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3706 — June 16 22:40+ UTC — CRITICAL STATUS: MARKET VALIDATION FAILED, AWAITING USER A/B/C DECISION)
+## Since Last Check-in (Session 3706 — June 16 22:45 UTC — ORCHESTRATOR STANDING BY)
 
-**Status**: ⚠️ **CRITICAL BLOCK ACTIVE — STOCKBOT MARKET VALIDATION FAILURE, AWAITING USER DECISION A/B/C BY JUNE 17 08:00 UTC**
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
 
-**Critical Issue Discovered**:
-- **Date/Time**: June 16 19:13 UTC (Session 3689) — market validation failure discovered
-- **Root Causes** (Session 3690 diagnosis):
-  1. **HMM state not persisted to disk**: In-memory-only regime state resets on container restart → 54-bar warmup never completes → regime=None → signal masking suppressed for 5+ hours
-  2. **Duplicate order_id idempotency guard failure**: Same client_order_id submitted multiple times → Alpaca rejects with "code 40010001: client_order_id must be unique"
-- **Impact**: Zero viable trades executed (13:30-20:00 UTC validation window failed)
-- **Checkpoint Status**: June 16 20:00 UTC checkpoint CANCELLED
+**Session Purpose**: Final orientation confirmation; verify all autonomous work exhausted; confirm standing-by is correct.
 
 **Work Completed This Session**:
-1. ✅ **Orientation** — Read ORCHESTRATOR_STATE.md (22:24 UTC), BLOCKED.md, INBOX.md, PROJECTS.md
-2. ✅ **Jetson diagnostics** — Verified HMM warmup still stuck: `docker logs stockbot` shows regime=None, BUY_PROB_COLLAPSE alerts from 19:30 UTC onward
-3. ✅ **Block status verification** — Confirmed critical HMM block remains in BLOCKED.md Active Blocks
-4. ✅ **Fix staging verification** — Confirmed Session 3703 staged both fixes (Fix 1: HMM persistence 2-3h, Fix 2: client_order_id tracking 1-2h), JUNE_16_FIX_IMPLEMENTATION_GUIDE.md production-ready
-5. ✅ **Project status verification** — All 4 non-critical blocks unchanged (cybersecurity, mfg-farm, open-repo, systems-resilience)
-6. ✅ **INBOX verification** — Confirmed no new user decisions/actions
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 22:33 UTC), BLOCKED.md, INBOX.md
+2. ✅ **Block Status Audit** — Verified all 6 active blocks remain user-action dependent:
+   - stockbot: User decision A/B/C required (Option A: retry June 17 post-fix; Option B: historical data; Option C: halt investigation)
+   - resistance-research: Phase 2 Wave 1-2 email execution pending (75 min user action)
+   - cybersecurity-hardening: VeraCrypt pre-boot restart (manual Windows action)
+   - mfg-farm: Test print execution (manual 3D print action)
+   - open-repo: Runtime decision (Docker vs systemd) + deployment
+   - systems-resilience: Platform choice (Nextcloud+Matrix vs Discourse)
+3. ✅ **Project Scope Verification** — Confirmed no unfinished autonomous scope:
+   - All project Goals reviewed; no work available without prior user decisions
+   - Exploration queue populated but all items gated on same user decisions
+4. ✅ **INBOX Verification** — Confirmed no new user decisions since Session 3705
+5. ✅ **Git Status** — Committed ORCHESTRATOR_STATE.md update (session 3706 orientation complete)
 
-**Blocking Factors**:
-- **User Decision Required**: Option A (Retry June 17 post-fix: 3-4h fix + test, deploy by 13:15 UTC) vs Option B (Skip to historical data validation) vs Option C (Halt investigation)
-- **Dependency**: HMM persistence + duplicate order_id fixes must be deployed before next market session can proceed
-- **Timeline**: 6.5 hours available before June 17 13:30 UTC market open — sufficient for Fix 1 + Fix 2 deployment and validation
+**Interpretation**: This standing-by state is correct by design.
+- **Session 3703** proactively diagnosed June 16 market validation failures and staged implementation-ready fixes
+- **Session 3704-3705** verified no additional autonomous work available
+- **Session 3706** (this session) confirmed all blocks remain user-action dependent
+- **Next session** will process user decisions when provided in INBOX.md
 
-**Interpretation**: Standing by is correct. Session 3703 completed all autonomous work (diagnosis + fix staging). Session 3705 verified 4 non-critical blocks unchanged. NOW: Critical block awaits user decision on retry vs historical vs halt. Upon decision, orchestrator executes staged fixes immediately.
+**Critical Dependency**: June 16 20:00 UTC market validation FAILED with two root causes diagnosed:
+1. HMM state not persisted to disk (54-bar warmup timeout)
+2. Duplicate order_id idempotency guard failure
+→ **Fixes staged in JUNE_16_FIX_IMPLEMENTATION_GUIDE.md (3-4h effort, 92% confidence)**
 
 **Needs User Input**:
 1. **URGENT (by June 17 08:00 UTC)**: Stockbot Option A/B/C decision
-   - Support docs ready: JUNE_16_FIX_IMPLEMENTATION_GUIDE.md (3-4h effort, 92% confidence)
-   - Fix 2 (client_order_id): 1-2 hours, eliminate duplicate rejections
-   - Fix 1 (HMM persistence): 2-3 hours, fix regime=None issue
-2. **Other user actions** (unchanged from prior sessions):
+   - **Option A**: Retry June 17 (deploy 2 fixes in 3-4h, validate 13:30-20:00 UTC)
+   - **Option B**: Skip to historical data validation (bypass live market dependency)
+   - **Option C**: Halt investigation (pause stockbot)
+2. **Other user actions** (unchanged):
    - resistance-research: Phase 2 Wave 1-2 email execution (75 min)
-   - platform choice for systems-resilience (Nextcloud vs Discourse)
-   - VeraCrypt pre-boot restart for cybersecurity-hardening
-   - test print for mfg-farm
+   - systems-resilience: Platform choice (Nextcloud+Matrix or Discourse)
+   - cybersecurity-hardening: VeraCrypt pre-boot restart
+   - mfg-farm: Test print execution
 
 ---
 
