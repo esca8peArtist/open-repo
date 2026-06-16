@@ -1,5 +1,36 @@
 # Check-in Summary
 
+## Session 3637.4 (June 16 00:50 UTC — 🟢 MARKET VALIDATION DAY: PRE-FLIGHT COMPLETE, STANDING-BY FOR 13:30 UTC MARKET OPEN)
+
+**Status**: 🟢 **PRE-FLIGHT CHECKS VERIFIED COMPLETE (Session 3637.2)** — Orchestrator verified pre-flight validation already executed at 00:12 UTC; all 10 checks ✅ PASS. Stockbot 5-session config confirmed operational and standing-by for market-open validation. Zero autonomous work available; all projects blocked or paused by design. Ready for 13:30 UTC automated market-open validation window.
+
+### Current State
+
+**What was verified**:
+- ✅ **Pre-flight checks**: Session 3637.2 completed at 00:12 UTC — all 10 checks PASS (container health, session count, model files, API auth, HMM masking, thermal baseline, etc.)
+- ✅ **System status**: 5-session Jetson config (jpm_ridge_wf, aapl_lgbm_ho, msft_lgbm_ho, nvda_lgbm_ho, amzn_lgbm_ho) running healthy
+- ✅ **Standing-by state**: Zero autonomous work available; all projects blocked on market validation outcome (occurs 13:30 UTC today)
+- ✅ **No blockers**: All three active blocks (cybersecurity, mfg-farm, systems-resilience) remain unresolved but do not impact stockbot validation
+
+**Critical Timeline** (remaining):
+- **13:15 UTC** (12h 25m): Market warm-up window — sessions wake from sleep
+- **13:30 UTC** (12h 40m): Market open — AAPL/MSFT/NVDA validation begins (automated, no intervention required)
+- **13:30-15:30 UTC**: Enhanced monitoring (15-min cadence)
+- **15:30-20:00 UTC**: Standard monitoring (30-min cadence)
+- **20:00 UTC**: Post-market EOD analysis (30-60 min)
+- **June 18 20:00 UTC**: Hard deadline — validation complete; Phase 4 decision document (success criteria: ≥1 trade per model)
+
+**Active Blocks** (unchanged, no impact on validation):
+- cybersecurity-hardening: VeraCrypt Windows restart needed
+- mfg-farm: Test print execution needed
+- systems-resilience: Platform decision (deadline passed 2026-06-15 23:59 UTC, now marked overdue)
+
+**Next orchestrator action**: 13:15 UTC monitoring per Section 2 of JUNE_16_17_VALIDATION_PROTOCOL.md
+
+**Token usage this session**: ~500 tokens (orientation + pre-flight verification + CHECKIN.md update)
+
+---
+
 ## Session 3637.3 (June 16 00:32 UTC — 🟢 MARKET VALIDATION DAY: MONITORING SCHEDULED FOR 13:15 UTC MARKET WARM-UP)
 
 **Status**: 🟢 **MARKET VALIDATION DAY ACTIVE — PRE-FLIGHT CHECKS COMPLETE** — Session 3637.2 executed pre-flight validation 5h 48m early at 00:12 UTC; all 10 checks ✅ PASS. Stockbot 5-session config confirmed healthy and operational on Jetson. Systems standing-by for market-open validation window (13:15 UTC warm-up → 13:30 UTC market open). Next scheduled orchestrator action: 13:15 UTC market warm-up monitoring (Section 2 of JUNE_16_17_VALIDATION_PROTOCOL.md). Zero autonomous work available; all projects blocked or paused by design.
