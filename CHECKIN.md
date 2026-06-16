@@ -1,5 +1,34 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3687 — June 16 18:56 UTC — ORCHESTRATOR STANDING BY FOR 20:00 UTC CHECKPOINT EXECUTION)
+
+**Status**: ✅ **STANDING BY FOR CHECKPOINT** — Market validation running autonomously. Wakeup for post-market checkpoint execution confirmed at 20:00 UTC (63 minutes from session start). All frameworks verified production-ready.
+
+**Work Completed This Session**:
+- ✅ **Full Orientation** — ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md reviewed
+- ✅ **Block Review** — No auto-resolvable blocks; all blocks require user action
+- ✅ **INBOX Review** — No new items to process (all prior items already marked PROCESSED)
+- ✅ **Project Status Verification** — Confirmed: (a) stockbot autonomously validating until 20:00 UTC, (b) resistance-research production-ready, (c) all other projects blocked on user action
+
+**No Autonomous Work Available Before Checkpoint**:
+- Stockbot validation must complete uninterrupted (do not interrupt autonomous trading)
+- Resistance-research awaiting user Wave 1-2 execution
+- All other projects blocked on user action (cybersecurity-hardening restart, mfg-farm test print, open-repo deployment decision, systems-resilience platform decision)
+- Exploration Queue items are conditional on checkpoint outcomes
+
+**Scheduled Work — 20:00 UTC Checkpoint Execution**:
+Framework: `JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md` (fully staged)
+- Section 1 (Pre-analysis): 5 min — market close confirmation, container health, log/DB checks
+- Section 2 (Metrics extraction): 10 min — M1-M5 extraction (signal count, fills, Z-scores, regime, PnL)
+- Section 3 (Path routing): 5 min — evaluate Path A/B/C thresholds, trigger June 17 actions
+- Post-analysis: WORKLOG + PROJECTS.md updates
+
+**Estimated Checkpoint Completion**: 20:00–20:30 UTC
+
+**Next Orchestrator Action**: 20:00 UTC post-market analysis execution (scheduled via prior wakeup)
+
+---
+
 ## Since Last Check-in (Session 3686 — June 16 18:48 UTC — FINAL CHECKPOINT STANDBY)
 
 **Status**: ✅ **CHECKPOINT IMMINENT** — All frameworks verified ready. Wakeup scheduled for ~20:00 UTC (72 min from now). Orchestrator will execute post-market analysis, extract M1-M5 metrics, route Phase 4 decision tree, trigger June 17 retrains if warranted.
