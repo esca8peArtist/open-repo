@@ -1,30 +1,29 @@
 # Check-in Summary
 
-## Session 3669 (June 16 12:03 UTC — 🟢 SCHEDULED WAKEUP: PRE-MARKET CHECKLIST AT 13:15 UTC)
+## Session 3670 (June 16 12:10 UTC — 🟢 STANDING-BY: PRE-MARKET CHECKLIST AT 13:15 UTC)
 
-**Status**: ✅ **STANDING-BY UNTIL 13:15 UTC PRE-MARKET CHECKLIST (72 MINUTES).**
+**Status**: ✅ **STANDING-BY UNTIL 13:15 UTC PRE-MARKET CHECKLIST (65 MINUTES).**
 
-**Orientation (12:03 UTC)**:
-- ✅ ORCHESTRATOR_STATE.md verified (current as of 12:03:10Z)
-- ✅ PROJECTS.md verified (all projects in correct state)
-- ✅ BLOCKED.md verified (3 active blocks, all user-action required, no changes)
-- ✅ INBOX.md verified (no new items since Session 3475)
+**Orientation (12:10 UTC)**:
+- ✅ ORCHESTRATOR_STATE.md verified (current as of 12:03:10Z, no changes since 12:03)
+- ✅ PROJECTS.md verified (all projects in correct state; stockbot active, others paused/blocked)
+- ✅ BLOCKED.md verified (3 active blocks all require manual user action; no resolutions submitted)
+- ✅ INBOX.md verified (all items processed, no new items since Session 3475)
 - ✅ JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md verified (6 sections ready for execution)
 
-**Schedule**:
-- **13:15 UTC** (in 72 min): Execute JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md
-  - Section 1: Jetson Container Health (3 min)
-  - Section 2: Model Deployment (4 min)
-  - Section 3: Signal Pipeline (4 min)
-  - Section 4: Thermal Baseline (2 min)
-  - Section 5: Log Rotation (2 min)
-  - Section 6: Final Decision (1 min)
-  - **Total: ~15 min**
-- **13:30 UTC**: Market open; 5 autonomous live trading sessions
-- **13:30–20:00 UTC**: Market validation (autonomous)
-- **20:00 UTC**: Post-market analysis & routing decision
+**Assessment**:
+- **Stockbot**: 5 models deployed, ensemble stackers ready (AAPL, MSFT, NVDA, JPM, AMZN)
+- **Resistance-research**: Wave 1-2 email packages complete; waiting for user execution
+- **All others**: Paused or blocked on manual user actions (cybersecurity-hardening, mfg-farm, systems-resilience)
+- **No autonomous work**: All frameworks staged; no code changes available
 
-**Next**: Automatic wakeup ~13:03 UTC (12 min before 13:15 UTC). Execute checklist, log results, update PROJECTS.md, commit all files.
+**Schedule**:
+- **13:15 UTC** (in 65 min): Execute JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md (6 sections, ~15 min)
+- **13:30 UTC**: Market open; 5 autonomous live trading sessions begin validation
+- **13:30–20:00 UTC**: Market validation with 5 sessions (autonomous, no intervention)
+- **20:00 UTC**: Post-market analysis & Phase 4 routing decision
+
+**Next**: Standing-by. Pre-market checklist will execute at 13:15 UTC via ScheduleWakeup.
 
 ---
 
