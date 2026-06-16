@@ -1,5 +1,39 @@
 # Check-in Summary
 
+## Session 3657 (June 16 09:39 UTC — 🟢 ORIENTATION COMPLETE, STANDING-BY FOR PRE-MARKET CHECKLIST 13:00 UTC)
+
+**Status**: ✅ **ALL SYSTEMS PRODUCTION-READY. STANDING-BY UNTIL PRE-MARKET CHECKLIST AT 13:00 UTC.**
+
+### Orientation Complete (09:39 UTC):
+- ✅ ORCHESTRATOR_STATE.md reviewed: all blocks active, none auto-resolvable
+- ✅ BLOCKED.md verified: 3 active blocks all require user action (cybersecurity restart, mfg-farm test print, systems-resilience platform decision)
+- ✅ All Exploration Queue items completed; no autonomous work available
+- ✅ Stockbot monitoring frameworks staged and ready (Session 3656)
+- ✅ Resistance-research Wave 1-2 audit complete, ready for user execution (2 days overdue but safe to July 1 deadline)
+
+### Critical Milestones Today:
+- **13:00 UTC** (3h 20m): Pre-market checklist execution (6 checks, ~15 min)
+  - /api/health endpoint (4 sessions expected)
+  - Session config from DB (4 active sessions)
+  - Model pkl files present + recent
+  - Docker logs clean (no ERROR messages)
+  - Alpaca API + account status (ACTIVE, positive cash)
+  - Market clock check (market_open=false until 13:30)
+- **13:30-20:00 UTC**: Autonomous market validation (5 sessions live trading)
+- **20:00 UTC**: Post-market analysis + decision routing (deterministic, Item 115 framework)
+
+### User Actions Awaiting:
+1. **Wave 1-2 execution** (URGENT, 2 days overdue): Email packages staged (WAVE_1_EMAIL_EXECUTION_PACKAGE.md + WAVE_2_EMAIL_EXECUTION_PACKAGE.md). Total time: 75 minutes (Wave 1: 45 min, Wave 2: 60 min). Deadline: June 18 23:59 UTC (safe, but escalates to Wave 3 if missed).
+2. **Post-market analysis** (TODAY 20:00 UTC): Item 115 validation checklist (30 min, deterministic tree for Phase 4 routing)
+3. **Systems-resilience platform** (OVERDUE June 15): Nextcloud+Matrix (recommended, 8/10) vs Discourse (5/10, IPv6 bug). SOPs ready for immediate deployment once decision made.
+
+### Session Activity:
+- No autonomous work available (all projects either waiting on market validation or user actions)
+- All infrastructure production-ready and staged
+- Proceeding to stand-by until 13:00 UTC pre-market checklist
+
+---
+
 ## Session 3655 (June 16 09:22 UTC — 🟢 STANDING-BY FOR PRE-MARKET CHECKLIST 11:30 UTC + MARKET VALIDATION 13:30 UTC)
 
 **Status**: ✅ **ALL SYSTEMS PRODUCTION-READY. STANDING-BY UNTIL PRE-MARKET CHECKLIST.**
