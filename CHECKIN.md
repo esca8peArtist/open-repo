@@ -1,5 +1,36 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3704 — June 16 22:20+ UTC — FINAL ORIENTATION & STANDING BY CONFIRMATION)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK EXHAUSTED; ALL PROJECTS BLOCKED ON USER DECISIONS**
+
+**Work Completed This Session**:
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 22:10 UTC), BLOCKED.md, INBOX.md, PROJECTS.md
+2. ✅ **Block audit** — Verified all 4 active blocks remain unresolvable:
+   - cybersecurity-hardening: VeraCrypt pre-boot restart (manual Windows action — cannot auto-verify)
+   - mfg-farm: Test print execution (manual 3D print action — cannot auto-verify)
+   - open-repo: raspby1 runtime decision + deployment (user decision required)
+   - systems-resilience: Platform choice Nextcloud+Matrix vs Discourse (user decision required)
+3. ✅ **INBOX verification** — Confirmed no new items since June 14 03:55 UTC (all prior items processed)
+4. ✅ **Exploration queue audit** — Verified queue populated with 15+ items but ALL contingent on user decisions:
+   - Stockbot items require June 17 08:00 UTC decision (A/B/C)
+   - Resistance-research items require Wave 1-2 execution completion
+   - Other items require platform decision, test print result, etc.
+5. ✅ **Project scope verification** — Re-read all project Goals; confirmed no unfinished autonomous scope:
+   - stockbot: Blocked on user decision A/B/C (market validation halt)
+   - resistance-research: Blocked on user email sends (Phase 2 Wave 1-2)
+   - cybersecurity-hardening: Paused, blocked on VeraCrypt restart
+   - mfg-farm: Paused, blocked on test print execution
+   - systems-resilience: Blocked on platform decision
+   - open-repo: Blocked on runtime decision + deployment
+   - All others: Complete or paused
+
+**Interpretation**: This is the correct standing-by state. Session 3703 completed proactive diagnosis and fix staging for stockbot. All other projects await user decisions. Exploration queue is populated but all items are gated on those same decisions. Proceeding without user direction would be inefficient.
+
+**Next Session**: Check INBOX.md for user decisions (A/B/C for stockbot, platform choice for systems-resilience, email execution for resistance-research, physical actions for cybersecurity/mfg-farm). When decisions/actions arrive, route to appropriate execution items in exploration queue.
+
+---
+
 ## Since Last Check-in (Session 3703 — June 16 22:15 UTC — PROACTIVE DIAGNOSIS & FIX STAGING)
 
 **Status**: ✅ **AUTONOMOUS DIAGNOSTIC WORK COMPLETED — FIXES STAGED FOR IMMEDIATE DEPLOYMENT**
