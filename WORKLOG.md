@@ -1,3 +1,46 @@
+## Session 3690 (June 16 19:21–19:24 UTC — CRITICAL BLOCK DIAGNOSIS + CHECKPOINT DEFERRAL)
+
+**Status**: ❌ **CHECKPOINT DEFERRED** — June 16 market validation fundamentally compromised. Two critical failures identified. 20:00 UTC checkpoint cannot execute.
+
+**Critical Issues Diagnosed**:
+
+1. **HMM Warmup Stuck** (Root cause identified)
+   - HMM signal masker requires 60 bars to warm up (configured in hmm_signal_masker.py line 83)
+   - Container restarted ~19:14 UTC, resetting in-memory HMM state to 0 bars
+   - At 19:23:02 UTC, HMM showed "51 bars remaining" → progressing at ~1 bar/sec
+   - Estimated warmup: ~19:24-19:25 UTC (in <5 min from diagnosis time)
+   - Root cause: HMM state not persisted to disk; container restart = state loss
+   - **Impact**: ALL sessions report `regime=None` during warmup, suppressing regime-aware signal decisions
+   
+2. **Duplicate Order ID Failures** (Blocking execution)
+   - NVDA sessions generating valid BUY signals (buy_prob=0.4578+ > 0.35 threshold)
+   - All BUY submission attempts fail with:
+     ```
+     Market order (NVDA buy) failed with non-retryable error: 
+     {"code":40010001,"message":"client_order_id must be unique"}
+     ```
+   - Orders are being resubmitted with identical `client_order_id` → idempotency guard failure
+   - **Impact**: Even valid signals cannot execute; validation window meaningless without order execution
+
+**Validation Window Status**:
+- ✅ Jetson SSH: operational
+- ✅ Docker: container healthy
+- ✅ Models: generating predictions correctly
+- ✅ Signal health monitor: detecting collapse (regime=None + duplicate failures)
+- ❌ Signal execution: blocked (duplicate order IDs)
+- ❌ Regime detection: HMM warming up (should be ~2-5 min from diagnosis)
+
+**Decision**: **DO NOT EXECUTE 20:00 UTC CHECKPOINT** — Validation has been compromised for 2+ hours (17:57-19:24 UTC). Even with HMM warmup completion, duplicate order ID issue will still block order execution. Post-market analysis framework cannot operate on invalid/incomplete data.
+
+**Next Steps Needed** (User decision required):
+1. **Investigation**: Root cause of duplicate order_id failure (idempotency guard not working?)
+2. **HMM Persistence**: Consider persisting HMM state to disk to avoid reset-on-restart
+3. **Deferral Decision**: (A) Continue with June 17 market open once issues fixed? (B) Skip June 16-17 validation entirely and proceed to June 18 decision point?
+
+**Commit**: ee2dea29 (BLOCKED.md escalation entry with root causes)
+
+---
+
 ## Session 3688 (June 16 19:04 UTC — FINAL ORIENTATION BEFORE 20:00 UTC CHECKPOINT)
 
 **Status**: ✅ **STANDING BY FOR CHECKPOINT** — Full orientation completed. No autonomous work available before checkpoint. Market validation running autonomously with all frameworks staged.
