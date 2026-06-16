@@ -28,7 +28,13 @@
 2. **If Option A**: Authorize both HMM + duplicate order_id fixes; orchestrator can execute in 3-4h
 3. **While deciding**: Optionally, user can execute resistance-research Phase 2 Wave 1-2 emails (Domains 51/59/48 templates ready for sending)
 
-**No Commit This Session** — Awaiting user direction before proceeding. CHECKIN.md updated but not yet committed.
+**Commits This Session**:
+1. ✅ chore(orchestrator): session 3692 — standing by for user decision A/B/C (CHECKIN.md + WORKLOG.md)
+2. ✅ refactor: create Wave 1-2 user execution checklist — comprehensive handoff document for resistance-research Phase 2 execution
+
+**Deliverables**:
+- `WAVE_1_2_USER_EXECUTION_CHECKLIST.md` (full step-by-step guide, time estimates, contingencies)
+- Updated CHECKIN.md with decision point documentation
 
 ---
 
