@@ -1,3 +1,43 @@
+## Session 3XX (June 16 17:34–current — BLOCK RESOLUTION + RESISTANCE-RESEARCH CHECKPOINT PREP + STOCKBOT 20:00 UTC CHECKPOINT STAGING)
+
+**Status**: ✅ **IN PROGRESS — Standing by for 20:00 UTC stockbot post-market analysis checkpoint (2h 16m remaining as of 17:44 UTC)**
+
+**Work Completed**:
+- ✅ **BLOCKED.md Block Resolution** — Resolved stockbot "June 16 validation window using wrong session configurations" block
+  - Verification: Confirmed 5 sessions running (jpm_ridge_wf_001, amzn_lgbm_ho_001, aapl_lgbm_ho_001, msft_lgbm_ho_001, nvda_lgbm_ho_001)
+  - Root cause clarification: Session 3684 PROJECTS.md explicitly documents "Market validation 13:30-20:00 UTC (5 live sessions)" and "Signal restoration validated (AMZN BUY, MSFT SELL, JPM/NVDA HOLD)"
+  - Resolution: Expanded 5-session validation is intentional, not regression. Block moved to Resolved Archive. Commit: 950e67c2
+  
+- ✅ **Resistance-Research Day 7 Checkpoint Procedure** — Agent-generated production-ready checkpoint framework
+  - Deliverable: `JUNE_17_18_DAY_7_CHECKPOINT_PROCEDURE.md` (305 lines, 23KB)
+  - Content: Pre-checkpoint checklist, T+7 gate decision framework (linked to PHASE_1_COALITION_LEVERAGE_MATRIX.md), 3-path routing (STRONG/MODERATE/WEAK), contingency playbooks, post-checkpoint next steps
+  - Purpose: Enables user to execute June 17-18 checkpoint with clear decision trees and contingency handling
+  - Grounded in: PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py thresholds, coalition leverage data, existing frameworks
+  - Commit: fca01df2
+  - PROJECTS.md updated to reflect checkpoint procedure ready
+
+- ✅ **Stockbot Post-Market Analysis Framework** — Agent-generated analysis infrastructure for 20:00 UTC checkpoint
+  - Deliverable: `JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md` (production-ready, placeholders for metrics at 20:00 UTC)
+  - Content: Pre-analysis checklist, metrics extraction template (with bash/SQL commands), 3-path routing (Path A/B/C with M1-M5 thresholds), June 17 decision trigger, Phase 4 routing
+  - Thresholds grounded in: SignalHealthMonitor baseline (12.4 cycles/session/day), Z-score bands (GREEN <2.0, YELLOW 2.0-3.0, RED >3.0), existing JUNE_16_VALIDATION_TO_PHASE4_DECISION_TREE.md
+  - Status: Ready for 20:00 UTC execution (fill metrics, route Path A/B/C, trigger June 17 actions)
+  - Commit: (stockbot agent commit TBD)
+
+**Current State** (as of 17:44 UTC):
+- **stockbot**: Market validation running autonomously (13:30-20:00 UTC, 2h 16m remaining). Signal restoration confirmed. 5 sessions active. Framework staged.
+- **resistance-research**: Phase 2 Wave 1 infrastructure + checkpoint procedure production-ready, awaiting user execution of Wave 1 sends (June 16-17)
+- **next scheduled action**: 20:00 UTC post-market analysis checkpoint execution (metrics extraction + Path routing)
+
+**Checkpoint Execution Plan** (20:00 UTC):
+1. Extract metrics from `/app/logs/trading_20260616.log` and SQLite DB (pre-analysis checklist, ~5 min)
+2. Populate metrics extraction template (Signal count, signal quality score, regime, PnL per session, incident recovery, ~10 min)
+3. Route to Path A/B/C based on M1-M5 metrics (signal health, Z-score, win rate, fill timing, fix stability)
+4. If Path A/B: Trigger June 17 08:00 UTC retrain (AAPL lgbm_ho + MSFT ridge_wf). If Path C: Escalate.
+5. Document Phase 4 routing and link to June 18 gate evaluation
+6. Commit results to stockbot submodule
+
+---
+
 ## Session 3686 (June 16 17:09–17:25 UTC — RESISTANCE-RESEARCH PHASE 2 WAVE 1 PREP + STANDING BY FOR STOCKBOT CONFIG DECISION)
 
 **Status**: ✅ **SESSION COMPLETE — ORCHESTRATOR STANDING BY FOR STOCKBOT USER DECISION. 20:00 UTC POST-MARKET CHECKPOINT SCHEDULED (CONDITIONAL ON CONFIG RESOLUTION). RESISTANCE-RESEARCH WAVE 1 EXECUTION PREP DELIVERED.**
