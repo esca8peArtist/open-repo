@@ -1,5 +1,29 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3687, June 16 17:21 UTC — STANDING BY FOR 20:00 UTC CHECKPOINT + STOCKBOT USER DECISION)
+
+**Status**: 🟡 **ORCHESTRATOR STANDING BY** — stockbot market validation running autonomously until 20:00 UTC (2h 39m remaining). All autonomous work blocked pending: (1) stockbot config user decision (Critical block, Resolution field in BLOCKED.md), (2) post-market checkpoint analysis at 20:00 UTC.
+
+**Work Completed This Session**:
+- ✅ **Orientation** — ORCHESTRATOR_STATE.md reviewed; confirmed market validation running autonomously, all projects blocked on user action, critical stockbot config issue unresolved
+- ✅ **Block Status Check** — Verified CRITICAL block from Session 3685e still active: 5 sessions running (AAPL/MSFT/NVDA/AMZN/JPM) vs. 2 expected (AMZN/JPM only). MSFT/NVDA generating zero BUY signals. Block awaiting user clarification.
+- ✅ **Project Analysis** — Confirmed all major projects are either: (a) blocked on user action (cybersecurity-hardening, mfg-farm, open-repo, systems-resilience), (b) awaiting user execution (resistance-research Wave 1-2 ready, off-grid-living ready), or (c) paused (seedwarden, open-source-rideshare)
+- ✅ **Exploration Queue** — Reviewed PROJECTS.md Exploration Queue. Most items complete (✅); pending items depend on user decisions (stockbot retrain results, Wave 1-2 completion, platform decision, test print outcome). Queue replenished June 14 with 2-3h pre-staging work items; agent system currently experiencing 500 errors preventing execution.
+
+**Decision**: Standing by for 20:00 UTC post-market checkpoint per standing instructions ("DO NOT INTERRUPT autonomous market validation"). Orchestrator will execute post-market analysis at 20:00 UTC if user provides stockbot config resolution; if not, will log checkpoint deferral and continue.
+
+**All Other Projects Status**:
+- ✅ **resistance-research**: Phase 2 Wave 1 execution prep COMPLETE, ready for user to execute June 17-18
+- 🔴 **cybersecurity-hardening**: Blocked on user Windows restart (VeraCrypt pre-boot)
+- 🔴 **mfg-farm**: Blocked on user test print execution
+- 🔴 **open-repo**: Blocked on user infrastructure decision (DEADLINE PASSED June 15 23:59 UTC)
+- 🔴 **systems-resilience**: Blocked on user platform decision (DEADLINE PASSED June 15 23:59 UTC)
+- ⏸️ **seedwarden**: Paused
+- ✅ **off-grid-living**: Complete, awaiting user execution
+- ⏸️ **open-source-rideshare**: Paused
+
+---
+
 ## Since Last Check-in (Session 3686, June 16 17:15 UTC — ORCHESTRATOR SESSION COMPLETE + STANDING BY FOR STOCKBOT USER DECISION)
 
 **Status**: ✅ **SESSION COMPLETE — RESISTANCE-RESEARCH PHASE 2 WAVE 1 EXECUTION PREP DELIVERED. Orchestrator standing by for user decision on critical stockbot configuration issue.**
