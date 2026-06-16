@@ -1,5 +1,34 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3693 — June 16 19:48–20:05 UTC — ORCHESTRATOR EXECUTION READINESS REPORT COMPLETE)
+
+**Status**: ✅ **PHASE 2 WAVE 1-2 VERIFIED PRODUCTION-READY FOR EXECUTION**
+
+**Work Completed**:
+1. ✅ Verified all three domains (51, 59, 48) complete and staged for user execution
+2. ✅ Tested all three Gist URLs — HTTP 200 confirmed, fully accessible
+3. ✅ Confirmed Domain 59 Wave 1 already executed (June 9-11) with 40% response rate = MODERATE-to-STRONG engagement
+4. ✅ Verified Domain 51 Wave 1 templates ready (July 1 deadline)
+5. ✅ Verified Domain 48 Wave 1 templates ready (July 15 deadline, June 16-20 execution window open)
+6. ✅ Confirmed orchestration script functional and ready for June 17-18 checkpoint
+7. ✅ Created comprehensive execution readiness report: `ORCHESTRATOR_JUNE16_EXECUTION_READINESS_REPORT.md`
+
+**Key Finding**: Domain 59 Wave 1 already achieved moderate engagement (2 replies, 3 Gist clicks = 40% response rate). No re-execution needed. Focus shifts to logging replies in orchestration script and proceeding to Wave 2 routing on June 17-18.
+
+**Next Steps for Resistance-Research** (User action):
+1. **Immediate** (June 16-17): Execute Domain 51 Wave 1 (2 emails, 30-45 min) — full copy-paste templates in `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md`
+2. **June 17-20**: Execute Domain 48 Wave 1 (2 contacts, 45-60 min) — templates in `DOMAIN_48_EMAIL_TEMPLATE_SET.md`
+3. **June 17-18**: Run Day 7 checkpoint procedure (`JUNE_17_18_DAY_7_CHECKPOINT_PROCEDURE.md`) — log Domain 59 replies, run `--t7-check` commands, route to Wave 2 if signals warrant
+4. **June 18-19** (conditional): Execute Wave 2 for any domain reaching STRONG threshold (2+ replies)
+
+**Stockbot Status**: Still awaiting Option A/B/C decision. No progress possible until user selects path.
+
+**Other Projects**: All blocked on user action (cybersecurity-hardening restart, mfg-farm test print, open-repo platform decision).
+
+**Full Report**: See `projects/resistance-research/ORCHESTRATOR_JUNE16_EXECUTION_READINESS_REPORT.md` for complete status, calendar timeline, contingency plans, and reference guide.
+
+---
+
 ## Since Last Check-in (Session 3692 — June 16 19:43–19:50 UTC — ORCHESTRATOR STANDING BY, WAITING FOR USER DECISION A/B/C)
 
 **Status**: 🛑 **CHECKPOINT CANCELLED, MARKET VALIDATION HALTED** — Orchestrator orientation complete. June 16 market validation unrecoverable (halted 19:31 UTC, HMM warmup stuck + duplicate order_id blocking); 20:00 UTC checkpoint cancelled. **STANDING BY FOR USER DECISION** on Options A/B/C to proceed.
