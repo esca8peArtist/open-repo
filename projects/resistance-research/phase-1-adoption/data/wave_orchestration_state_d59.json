@@ -1,0 +1,63 @@
+{
+  "domain": 59,
+  "sends": {
+    "1": {
+      "send_num": 1,
+      "org": "AFL-CIO",
+      "email": "feedback@aflcio.org",
+      "timestamp": "2026-06-09 14:00 UTC",
+      "logged_at": "2026-06-16T20:40:40.356159+00:00",
+      "fallback_sent": false
+    },
+    "2": {
+      "send_num": 2,
+      "org": "Center on Budget and Policy Priorities",
+      "email": "cbpp@cbpp.org",
+      "timestamp": "2026-06-09 15:00 UTC",
+      "logged_at": "2026-06-16T20:40:44.667893+00:00",
+      "fallback_sent": false
+    },
+    "3": {
+      "send_num": 3,
+      "org": "National Women's Law Center",
+      "email": "info@nwlc.org",
+      "timestamp": "2026-06-09 16:00 UTC",
+      "logged_at": "2026-06-16T20:40:44.736598+00:00",
+      "fallback_sent": false
+    },
+    "4": {
+      "send_num": 4,
+      "org": "MomsRising",
+      "email": "info@momsrising.org",
+      "timestamp": "2026-06-10 14:00 UTC",
+      "logged_at": "2026-06-16T20:40:44.803830+00:00",
+      "fallback_sent": false
+    },
+    "5": {
+      "send_num": 5,
+      "org": "Institute on Taxation and Economic Policy",
+      "email": "itep@itep.org",
+      "timestamp": "2026-06-11 14:00 UTC",
+      "logged_at": "2026-06-16T20:40:44.872746+00:00",
+      "fallback_sent": false
+    }
+  },
+  "bounces": {},
+  "replies": {
+    "2": {
+      "send_num": 2,
+      "org": "Center on Budget and Policy Priorities",
+      "signal": "MODERATE",
+      "summary": "CBPP replied acknowledging receipt; research forwarded to economic security team (Session 3681)",
+      "logged_at": "2026-06-16T20:40:50.484427+00:00"
+    },
+    "4": {
+      "send_num": 4,
+      "org": "MomsRising",
+      "signal": "MODERATE",
+      "summary": "MomsRising replied; positive acknowledgment, forwarded to policy team (Session 3681)",
+      "logged_at": "2026-06-16T20:40:50.560349+00:00"
+    }
+  },
+  "created": "2026-06-16T20:40:40.356114+00:00"
+}
