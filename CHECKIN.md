@@ -1,5 +1,33 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3684, June 16 17:00+ UTC — HOLDING FOR 20:00 UTC CHECKPOINT)
+
+**Status**: ⏳ **HOLDING FOR POST-MARKET ANALYSIS CHECKPOINT — STOCKBOT MARKET VALIDATION RUNNING AUTONOMOUSLY**
+
+**Duration**: 0 minutes (orientation + scheduling)
+
+**Current State**:
+- ✅ Market validation running autonomously (13:30-20:00 UTC, ~3 hours to checkpoint)
+- ✅ All 5 sessions trading: AAPL/MSFT/NVDA/JPM/AMZN lgbm_ho & ridge_wf variants
+- ✅ Signal restoration confirmed (June 16 14:09 UTC threshold fix holding)
+- ✅ June 17-18 frameworks staged and production-ready (Session 3683)
+- ⏳ **Next action**: 20:00 UTC post-market analysis checkpoint (metrics extraction, scenario routing, Phase 4 decision)
+
+**Exploration Queue Status**:
+- ✅ 4+ items completed in Sessions 3682-3683
+- ⏳ All remaining items blocked on user action or post-market data
+
+**Project Status Summary**:
+- **stockbot**: Active, market validation 13:30-20:00 UTC (autonomous, DO NOT INTERRUPT)
+- **resistance-research**: Active, Phase 2 Domains 51/48/59 production-ready, awaiting user email sends
+- **cybersecurity-hardening**: Paused, blocked on user Windows restart (VeraCrypt pre-boot)
+- **mfg-farm**: Paused, blocked on user test print execution
+- **open-repo**: Blocked on infrastructure restoration decision (Phase A/B/C)
+- **off-grid-living**: Complete, awaiting user social media execution
+- **open-source-rideshare**: Paused
+
+---
+
 ## Since Last Check-in (Session 3683, June 16 16:09–16:47 UTC — EXPLORATION QUEUE: June 17-18 FRAMEWORKS STAGED)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE — THREE PRODUCTION-READY FRAMEWORKS FOR JUNE 17-18 VALIDATION CHECKPOINT**
