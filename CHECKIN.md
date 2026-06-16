@@ -1,24 +1,36 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3685, June 16 18:13 UTC — ORIENTATION + CHECKPOINT WAKEUP SCHEDULING)
+## Since Last Check-in (Session 3XXX, June 16 18:26 UTC — ORCHESTRATOR ORIENTATION + CHECKPOINT STANDBY)
 
-**Status**: ✅ **ORCHESTRATOR PREPARED FOR 20:00 UTC CHECKPOINT** — stockbot market validation running autonomously. Wakeup scheduled for 20:08 UTC. All autonomous work complete pending checkpoint execution.
+**Status**: ✅ **ORCHESTRATOR STANDING BY FOR 20:00 UTC CHECKPOINT** — stockbot market validation running autonomously (5 intentional sessions: AAPL/MSFT/NVDA/AMZN lgbm_ho + JPM ridge_wf). Critical block resolved. Checkpoint infrastructure verified and ready.
 
-**Work Completed This Session (18:13–18:15 UTC)**:
-- ✅ **Orientation** — Reviewed ORCHESTRATOR_STATE.md + WORKLOG.md. Confirmed: (a) stockbot market validation 13:30-20:00 UTC ongoing with 5 intentional sessions (documented in Session 3684 PROJECTS.md), (b) Critical stockbot block resolved in Session 3XX (5-session config is intentional, not regression), (c) All other projects blocked on user action or awaiting user execution, (d) Checkpoint framework production-ready
-- ✅ **Checkpoint Infrastructure Verification** — Confirmed ready:
-  - JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md: ✅ Present (24KB, updated 18:49 UTC) with 4-section structure and decision tree
-  - SSH access to Jetson: ✅ Verified working
-  - All upstream frameworks present and readable
-  - Execution commands documented and copy-paste ready
-- ✅ **Wakeup Scheduling** — ScheduleWakeup configured for 20:08 UTC (max 1h clamp). Orchestrator will execute: (1) pre-analysis checklist, (2) M1-M5 metrics extraction from logs/DB, (3) Path A/B/C routing, (4) June 17 trigger if needed
+**Work Completed This Session (18:13–18:26 UTC)**:
+- ✅ **Orientation & Block Resolution Verification** — Confirmed in BLOCKED.md Resolved Archive that critical "5-session config" concern was resolved in Session 3684 with documentation confirming expanded validation is intentional. Signal restoration validated (AMZN BUY, MSFT SELL, JPM/NVDA HOLD). No action required.
+- ✅ **Checkpoint Infrastructure Verification** — All systems ready:
+  - JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md: ✅ Present (550 lines, complete with 5-section structure)
+  - Pre-analysis checklist commands documented (Section 1, ~5 min)
+  - Metrics extraction SQL/bash commands ready (Section 2, ~10 min)
+  - Scenario routing decision tree verified (Section 3, M1-M5 thresholds)
+  - June 17 retrain trigger documented (Section 4)
+- ✅ **SSH Connectivity Check** — Jetson (100.120.18.84) verified reachable; Docker stockbot running
 
-**No Autonomous Work Available** — stockbot running autonomously (do not interrupt), resistance-research awaiting user execution, all other projects blocked on user decisions. Exploration Queue reviewed: all active items complete or queued beyond current session.
+**Market Validation Status**:
+- Market open window: 13:30–20:00 UTC (June 16)
+- Sessions active: 5 (AAPL/MSFT/NVDA/AMZN lgbm_ho, JPM ridge_wf)
+- June 16 incident: Signal dropout 13:40–14:09 UTC (29 min) — RESOLVED via threshold cap fix at 14:09 UTC
+- Signal restoration confirmed: AMZN buy_prob=0.4402 (BUY), MSFT SELL, JPM/NVDA HOLD
+- Validation framework assessment: Ready to execute at 20:00 UTC
 
-**Next Checkpoint (20:08 UTC, ~47 minutes)**:
-- Execute JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md: extract 5-session metrics, route decision, trigger June 17 retrain if Path A/B
-- Will auto-wake and execute immediately upon 20:08 UTC timestamp
-- Estimated completion: 30 min (metrics 15 min + routing 5 min + logging 10 min)
+**No Autonomous Work Available Until Checkpoint** — All projects either: (a) stockbot autonomously running market validation (do not interrupt), (b) resistance-research production-ready, awaiting user execution of Wave 1 sends (June 16-17), or (c) blocked on user action.
+
+**Next Scheduled Action (20:00 UTC, ~94 minutes)**:
+- Execute JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md sections 1-3:
+  - Section 1: Pre-analysis checklist (5 min) — confirm market close, container health, log/DB accessibility
+  - Section 2: Extract M1-M5 metrics from logs/DB (10 min) — signal count, fill distribution, Z-scores, regime, PnL
+  - Section 3: Route decision (5 min) — evaluate Path A (strong) / B (caution) / C (compromised)
+  - Log results and Phase 4 preliminary flag
+- If Path A/B: prepare June 17 08:00 UTC retrains (AAPL lgbm_ho, MSFT ridge_wf)
+- Estimated completion: 20–30 min; results logged to WORKLOG.md + PROJECTS.md updated
 
 ---
 
