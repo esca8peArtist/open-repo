@@ -1,3 +1,18 @@
+## Session 3XXX (June 16 18:26–18:30 UTC — ORIENTATION + CHECKPOINT STANDBY)
+
+**Status**: ✅ **COMPLETE — Orchestrator standing by for 20:00 UTC post-market checkpoint. Wakeup scheduled. All autonomous work blocked pending checkpoint execution.**
+
+**Work Completed**:
+- ✅ Verified critical "5-session config" block was resolved in Session 3684 — expanded validation intentional + documented
+- ✅ Confirmed checkpoint infrastructure production-ready (JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md, all sections verified)
+- ✅ Tested SSH connectivity to Jetson — stockbot container healthy
+- ✅ Committed orchestration state (CHECKIN.md update) to master
+- ✅ Scheduled wakeup for 20:00 UTC checkpoint execution (1h max clamp = wake at ~19:28 UTC)
+
+**Next action**: 20:00 UTC — Execute JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md (sections 1-3, ~20-30 min). Extract M1-M5 metrics, route Path A/B/C decision, trigger June 17 retrains if needed.
+
+---
+
 ## Session 3XX (June 16 17:34–current — BLOCK RESOLUTION + RESISTANCE-RESEARCH CHECKPOINT PREP + STOCKBOT 20:00 UTC CHECKPOINT STAGING)
 
 **Status**: ✅ **IN PROGRESS — Standing by for 20:00 UTC stockbot post-market analysis checkpoint (2h 16m remaining as of 17:44 UTC)**
