@@ -1,5 +1,31 @@
 # Check-in Summary
 
+## Session 3637.22 (June 16 03:20 UTC — 🟢 MARKET VALIDATION DAY: STANDING-BY CONFIRMED, NEXT WAKE-UP 06:00 UTC PRE-MARKET CHECKS)
+
+**Status**: 🟢 **STANDING-BY CONFIRMED** — Full orientation complete. All state files current. Zero autonomous work available. Pre-flight checks ✅ PASS (Session 3637.2). Next action: Section 1 pre-market checklist at 06:00 UTC (2h 40m away).
+
+**What was accomplished this session**:
+- ✅ Orientation: ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md reviewed
+- ✅ Confirmed zero autonomous work available (all projects blocked on external events)
+- ✅ Verified standing-by state correct by design
+- ✅ Staged orchestration files for commit
+
+**What's in progress**: Market validation day (June 16, automated at 13:30 UTC)
+- Section 1 pre-market checklist: due at 06:00 UTC (SSH connectivity, API health, session count)
+- Section 2 market warm-up monitoring: 13:15 UTC
+- Section 3 market-open validation: 13:30–20:00 UTC
+- Hard deadline: June 18 20:00 UTC (both models must execute ≥1 trade)
+
+**Items needing user input**: 
+- **systems-resilience**: Platform decision (overdue, deadline June 15 23:59 UTC)
+- **cybersecurity-hardening**: VeraCrypt restart (manual)
+- **mfg-farm**: Test print execution (manual)
+- **resistance-research**: Wave 1-2 email execution (packages ready, Day 7 checkpoint June 17-18)
+
+**Next orchestrator action**: 06:00 UTC — Execute JUNE_16_17_VALIDATION_PROTOCOL.md Section 1 (pre-market checklist: SSH connectivity, API health, 4-session count verification)
+
+---
+
 ## Session 3637.21 (June 16 03:15 UTC — 🟢 MARKET VALIDATION DAY: STANDING-BY CONFIRMED, NEXT WAKE-UP 13:15 UTC)
 
 **Status**: 🟢 **STANDING-BY CONFIRMED** — Complete state audit confirmed. All 3 active blocks unchanged (cybersecurity-hardening, mfg-farm, systems-resilience). Exploration Queue has 7 items but all blocked on external events. **DECISION: Zero meaningful autonomous work available. Scheduling next orchestrator wake-up for 13:15 UTC (market warm-up monitoring per JUNE_16_17_VALIDATION_PROTOCOL.md Section 2).**
