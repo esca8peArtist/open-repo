@@ -1,3 +1,39 @@
+## Session 3682 (June 16 15:28–15:45 UTC — 🟢 MARKET VALIDATION MONITORING FRAMEWORK STAGED FOR 20:00 UTC CHECKPOINT)
+
+**Duration**: ~17 minutes (orientation + Exploration Queue work + framework development)
+
+**Status**: ✅ **MARKET VALIDATION MONITORING FRAMEWORK PRODUCTION-READY FOR 20:00 UTC CHECKPOINT EXECUTION**
+
+**Orientation completed**:
+- ✅ Read ORCHESTRATOR_STATE.md — market validation proceeding normally, all 5 sessions trading, no new incidents since 14:35 UTC fix
+- ✅ Verified BLOCKED.md — 3 active blocks all require user manual action (no automated resolution possible)
+- ✅ Processed INBOX.md — no new items
+- ✅ Analyzed Exploration Queue — identified top-priority queue item: "stockbot: June 16-18 Live Market Validation Monitoring & Post-Market Analysis Framework" (triggers on: now, independent of other projects)
+
+**Work completed**:
+1. **Spawned stockbot agent** (15:28 UTC) to create comprehensive market validation monitoring framework
+2. **Three deliverables created** and committed to stockbot submodule (commit 822042f):
+   - `JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md` (326 lines): 6-section pre-market procedure (13:15-13:30 UTC) with container health, model pkl verification, thermal baseline, signal pipeline dry-run, failure routing
+   - `JUNE_16_18_LIVE_SIGNAL_MONITORING_TEMPLATE.md` (600 lines): 9-block 30-min cadence monitoring procedure (13:30-20:00 UTC) with signal frequency, win rate, thermal tracking, regime detection, WebSocket health, SQLite3 queries
+   - `POST_MARKET_ROUND_TRIP_ANALYSIS.md` (614 lines): 10-step post-market framework (20:00 UTC execution) with exact queries, success criteria per model, PROCEED/INVESTIGATE/PAUSE routing integrated with Phase 4 gates
+
+3. **Framework specification**:
+   - All shell commands verified against Jetson environment (Docker, SSH)
+   - All SQLite3 queries verified against trading.db schema
+   - Success criteria calibrated to backtest baselines (e.g., NVDA 60% win rate target = 10pp below backtest baseline)
+   - Failure routing fully mapped (7-branch decision tree with special cases for bear regime, thermal spike)
+   - Integrates with PHASE_4_IMPLEMENTATION_ROADMAP.md gating logic
+
+**Current market status** (15:45 UTC):
+- **Timeline**: 13:30–20:00 UTC (4h 15m remaining)
+- **Sessions active**: 5 (AAPL, MSFT, NVDA, JPM, AMZN all trading autonomously)
+- **Signal status**: All correct post-fixes (threshold cap at 2%, MarketHoursValidator import corrected)
+- **No intervention required** until 20:00 UTC post-market analysis checkpoint
+
+**Next action**: 20:00 UTC — Execute POST_MARKET_ROUND_TRIP_ANALYSIS.md framework (metrics extraction → scenario routing → Phase 4 decision)
+
+---
+
 ## Session 3681 (June 16 15:09 UTC — 🟢 ORCHESTRATOR CONTINUING STANDBY FOR 20:00 UTC POST-MARKET ANALYSIS)
 
 **Duration**: ~2 minutes (orientation verification + preparation)

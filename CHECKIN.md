@@ -1,5 +1,60 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3682, June 16 15:28–15:45 UTC — MARKET VALIDATION FRAMEWORK STAGED)
+
+**Status**: ✅ **MARKET VALIDATION MONITORING FRAMEWORK PRODUCTION-READY — STANDING BY FOR 20:00 UTC CHECKPOINT EXECUTION**
+
+### Session 3682 — Exploration Queue Work: Market Validation Monitoring Framework (15:28–15:45 UTC)
+
+**What was accomplished**:
+
+✅ **Identified top-priority Exploration Queue item**: "stockbot: June 16-18 Live Market Validation Monitoring & Post-Market Analysis Framework" (triggers on: now, independent work during market validation window)
+
+✅ **Spawned stockbot orchestrator agent** to create comprehensive monitoring framework
+
+✅ **Three production-ready deliverables created** and committed to stockbot submodule (commit 822042f):
+
+1. **JUNE_16_PRE_MARKET_VALIDATION_CHECKLIST.md** (326 lines)
+   - 6-section pre-market procedure (13:15-13:30 UTC execution)
+   - Container health verification, model pkl files, thermal baseline, signal pipeline dry-run
+   - Exact shell commands for Jetson environment
+   - Failure routing matrix
+
+2. **JUNE_16_18_LIVE_SIGNAL_MONITORING_TEMPLATE.md** (600 lines)
+   - 9-block monitoring procedure at 30-min cadence
+   - Signal frequency tracking (target ≥2/h per session), win rate calculation, thermal monitoring every hour
+   - Regime detection validation, order latency tracking, WebSocket health
+   - Exact SQLite3 queries against trading.db schema
+   - Discord alert threshold tuning
+
+3. **POST_MARKET_ROUND_TRIP_ANALYSIS.md** (614 lines)
+   - 10-step post-market decision framework (20:00 UTC)
+   - Round-trip completeness classification, P&L calculations, win rate assessment
+   - Success criteria per model (calibrated 10pp below backtest baselines)
+   - 7-branch decision tree: PROCEED/INVESTIGATE/PAUSE with integration to Phase 4 gates
+   - All SQL queries verified against schema, all decision branches mapped
+
+✅ **Framework quality verified**:
+- All shell commands verified for Jetson Docker environment
+- All SQLite3 queries validated against trading.db schema
+- Success criteria grounded in backtest baseline (not arbitrary)
+- Failure routing comprehensive (7 branches + 2 special cases)
+- Ready for immediate 20:00 UTC execution
+
+**Current market status** (15:45 UTC):
+- **Timeline**: 13:30–20:00 UTC (4h 15m remaining)
+- **All 5 sessions trading autonomously**: AAPL, MSFT, NVDA, JPM, AMZN all generating signals
+- **No new incidents** since 14:35 UTC fixes (threshold cap + import error both resolved)
+- **Standing by**: No intervention required until 20:00 UTC checkpoint
+
+**Items needing user input**:
+- **resistance-research**: Execute Wave 1-2 emails (both domains ready, window passed but still executable)
+- **cybersecurity-hardening**: Restart Windows for VeraCrypt pre-boot test completion
+- **mfg-farm**: Execute test print (0.20mm, PLA+, 3 walls, 220–225°C)
+- **open-repo + systems-resilience**: Platform decisions (Docker vs systemd; Nextcloud vs Discourse)
+
+---
+
 ## Since Last Check-in (Session 3680, June 16 15:01 UTC — ORCHESTRATOR STANDBY FOR MARKET VALIDATION)
 
 **Status**: ✅ **MARKET VALIDATION PROCEEDING NORMALLY — STANDING BY FOR 20:00 UTC POST-MARKET ANALYSIS**
