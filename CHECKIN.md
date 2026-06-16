@@ -1,36 +1,37 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3711 — June 16 23:06 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
+## Since Last Check-in (Session 3712 — June 17 00:45 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
 
-**Session Purpose**: Verify standing-by state remains correct; no new user actions available; confirm readiness for next user decision (stockbot A/B/C deadline: June 17 08:00 UTC, 8h 54m remaining).
+**Session Purpose**: Orient and verify standing-by state remains correct; confirm no new user actions available since Session 3711; escalate stockbot deadline if needed.
 
 **Work Completed This Session**:
-1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 23:04 UTC), BLOCKED.md, INBOX.md, PROJECTS.md
-2. ✅ **Block Audit** — All 4 active blocks verified as user-action dependent (no changes since Session 3710)
-3. ✅ **INBOX Verification** — Confirmed zero new user decisions since Session 3710
-4. ✅ **Project Scope Verification** — Confirmed no unfinished autonomous work available
-5. ✅ **Time-to-Deadline Verification** — **Deadline June 17 08:00 UTC in 8h 54m**; no escalation yet (deadline not passed)
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md (4 active blocks verified), PROJECTS.md (exploration queue populated), INBOX.md (zero new items since Session 3711)
+2. ✅ **Block Audit** — Verified no auto-resolvable blocks:
+   - mfg-farm: No test-print-results directory yet (test print not executed)
+   - open-repo: No Docker containers for open-repo deployment
+   - systems-resilience: No Docker containers for platform deployment
+   - stockbot: Docker container stopped (logs show June 16 19:30 graceful shutdown after market validation FAILED)
+3. ✅ **Project Scope Verification** — Confirmed all active projects remain blocked or paused; no new autonomous scope available
+4. ✅ **Blockage Deadline Status** — **stockbot A/B/C decision deadline: June 17 08:00 UTC** (7h 15m remaining). User has not yet provided decision via INBOX.md.
 
-**Interpretation**: Standing-by state is correct by design. All autonomous work exhausted. No unblocked projects or exploration queue items available without prior user decisions. Awaiting stockbot A/B/C decision by June 17 08:00 UTC.
+**Interpretation**: Standing-by state is correct by design. All autonomous work exhausted. No action available without prior user decisions. Orchestrator ready to dispatch immediately upon stockbot decision or other user input.
 
 **Awaiting User Input**:
-1. **URGENT (Deadline: June 17 08:00 UTC — 8h 54m remaining)**: Stockbot Option A/B/C decision
+1. **URGENT (Deadline: June 17 08:00 UTC — 7h 15m remaining)**: Stockbot Option A/B/C decision
    - Option A: Fix HMM + order_id issues (3-4h) → retry validation June 17 13:30-20:00 UTC
    - Option B: Skip live validation, use historical data for gate assessment
    - Option C: Halt for investigation
-   - Support docs staged: `OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md`, `OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md`, `OPTION_C_INVESTIGATION_ROADMAP.md`
-2. **Other actions** (secondary, no deadline):
+   - Support docs staged and ready for dispatch
+2. **Secondary actions** (no deadline):
    - Resistance-research: Phase 2 Wave 1-2 email execution (75 min, templates ready)
-   - Platform decisions: runtime choice for open-repo + systems-resilience
+   - Platform decisions: runtime choice (Docker vs systemd) + platform choice (Nextcloud+Matrix vs Discourse)
    - Manual actions: VeraCrypt restart, test print execution
 
-**Next Session**: Check INBOX.md at June 17 08:00 UTC for stockbot decision. Route immediately:
-- If A selected: Execute fix + validation runbook (3-4h)
-- If B selected: Execute historical data assessment (1-2h)
-- If C selected: Halt stockbot work, escalate
-- If no decision by 08:00 UTC: Escalate to user with urgent notification
+**Next Session**: 
+- If stockbot decision provided by 08:00 UTC → dispatch chosen option
+- If no decision by 08:00 UTC → escalate to user with urgent notification
 
 ---
 
