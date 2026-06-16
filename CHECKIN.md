@@ -1,37 +1,36 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3712 — June 17 00:45 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
+## Since Last Check-in (Session 3713 — June 17 01:15 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
 
-**Session Purpose**: Orient and verify standing-by state remains correct; confirm no new user actions available since Session 3711; escalate stockbot deadline if needed.
+**Session Purpose**: Orient and verify standing-by state remains correct; prepare for stockbot deadline escalation at June 17 08:00 UTC.
 
 **Work Completed This Session**:
-1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md (4 active blocks verified), PROJECTS.md (exploration queue populated), INBOX.md (zero new items since Session 3711)
-2. ✅ **Block Audit** — Verified no auto-resolvable blocks:
-   - mfg-farm: No test-print-results directory yet (test print not executed)
-   - open-repo: No Docker containers for open-repo deployment
-   - systems-resilience: No Docker containers for platform deployment
-   - stockbot: Docker container stopped (logs show June 16 19:30 graceful shutdown after market validation FAILED)
-3. ✅ **Project Scope Verification** — Confirmed all active projects remain blocked or paused; no new autonomous scope available
-4. ✅ **Blockage Deadline Status** — **stockbot A/B/C decision deadline: June 17 08:00 UTC** (7h 15m remaining). User has not yet provided decision via INBOX.md.
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md (4 active blocks verified), INBOX.md (zero new items since Session 3712)
+2. ✅ **Block Audit** — No changes since Session 3712:
+   - **stockbot**: June 16 market validation FAILED 19:31 UTC. Root causes identified: HMM warmup stuck + duplicate order_id guard. **User decision A/B/C deadline: June 17 08:00 UTC (6h 45m remaining)**
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual)
+   - **mfg-farm**: Test print execution (manual)
+   - **open-repo + systems-resilience**: Awaiting runtime/platform decisions
+3. ✅ **No New INBOX Items** — Confirmed zero user decisions provided since Session 3712
 
-**Interpretation**: Standing-by state is correct by design. All autonomous work exhausted. No action available without prior user decisions. Orchestrator ready to dispatch immediately upon stockbot decision or other user input.
+**Interpretation**: Standing-by state remains correct. All autonomous work exhausted. Orchestrator ready to execute immediately upon stockbot decision or other user input.
 
 **Awaiting User Input**:
-1. **URGENT (Deadline: June 17 08:00 UTC — 7h 15m remaining)**: Stockbot Option A/B/C decision
-   - Option A: Fix HMM + order_id issues (3-4h) → retry validation June 17 13:30-20:00 UTC
-   - Option B: Skip live validation, use historical data for gate assessment
-   - Option C: Halt for investigation
-   - Support docs staged and ready for dispatch
+1. **⚠️ URGENT — DEADLINE: June 17 08:00 UTC (6h 45m remaining)**: Stockbot Option A/B/C decision required
+   - **Option A**: Fix HMM warmup + duplicate order_id (3-4h implementation) → retry validation June 17 13:30-20:00 UTC
+   - **Option B**: Skip live validation, use historical data for gate assessment
+   - **Option C**: Halt for investigation
+   - Support documents staged and ready (OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md, OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md, OPTION_C_INVESTIGATION_ROADMAP.md)
 2. **Secondary actions** (no deadline):
-   - Resistance-research: Phase 2 Wave 1-2 email execution (75 min, templates ready)
-   - Platform decisions: runtime choice (Docker vs systemd) + platform choice (Nextcloud+Matrix vs Discourse)
+   - Resistance-research: Phase 2 Wave 1-2 email execution (75 min)
+   - Platform decisions: runtime (Docker vs systemd) + deployment platform (Nextcloud+Matrix [recommended] vs Discourse)
    - Manual actions: VeraCrypt restart, test print execution
 
 **Next Session**: 
-- If stockbot decision provided by 08:00 UTC → dispatch chosen option
-- If no decision by 08:00 UTC → escalate to user with urgent notification
+- If stockbot decision provided by 08:00 UTC → dispatch chosen option immediately
+- If no decision by 08:00 UTC → continue standing by (deadline will have passed)
 
 ---
 

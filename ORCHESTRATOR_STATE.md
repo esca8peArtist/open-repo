@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-16T23:04:44Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-16T23:20:25Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 34.4% | Reset in 145h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 34.8% | Reset in 145h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -65,7 +65,7 @@
 - **All application code production-ready** (157 tests passing, Phase 5 complete)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 3671 (39 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 3671 (41 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
@@ -97,41 +97,42 @@ User has manually lifted the pause directive early (was scheduled June 15 00:00 
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 
-
 ---
 
-## Session 3702 (June 16 21:50 UTC — ORCHESTRATOR ORIENTATION: STANDING BY FOR USER DECISIONS)
+## Session 3712 (June 17 00:45 UTC — ORCHESTRATOR ORIENTATION: STANDING BY FOR USER DECISIONS)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETED; ZERO PROJECTS AVAILABLE FOR WORK**
 
 **Orchestrator Actions**:
-- ✅ Read ORCHESTRATOR_STATE.md (auto-generated at 21:33 UTC)
-- ✅ Verified all active blocks remain user-action dependent (4 blocks, none auto-resolvable)
-- ✅ Confirmed all projects blocked on user decisions:
-  - stockbot: User decision A/B/C required by June 17 08:00 UTC (market validation halt)
-  - resistance-research: User email sends pending (Wave 1-2)
-  - cybersecurity-hardening: VeraCrypt pre-boot restart (manual)
-  - mfg-farm: Test print execution (manual)
-  - open-repo: raspby1 runtime decision + deployment (user choice)
-  - systems-resilience: Platform decision + deployment (user choice)
-  - All others: Paused or complete
-- ✅ Verified exploration queue fully populated (Session 3694: 3 contingency frameworks committed)
+- ✅ Full orientation: Read ORCHESTRATOR_STATE.md (auto-generated June 16 23:12 UTC), BLOCKED.md, PROJECTS.md, INBOX.md
+- ✅ Verified all 4 active blocks remain user-action dependent (no auto-resolvable items):
+  - cybersecurity-hardening: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+  - mfg-farm: Test print result directory not yet created (test print not executed)
+  - open-repo: No Docker containers found; deployment has not executed
+  - systems-resilience: No Docker containers found; deployment has not executed
+  - stockbot: Docker container stopped (logs show June 16 19:30 UTC graceful shutdown after market validation FAILED)
+- ✅ Verified no new user decisions in INBOX.md (all recent items marked PROCESSED)
+- ✅ Confirmed exploration queue populated with 20+ conditional items, all gated on user decisions/external triggers
+- ✅ Re-read project Goals and confirmed no unfinished autonomous scope (all in-flight work blocked on decisions)
 
-**Interpretation**: All autonomous work is complete. Orchestrator is in correct standing-by state awaiting user decisions.
+**Interpretation**: Standing-by state is correct by design. All autonomous work exhausted. No unblocked projects or exploration queue items available without prior user decisions.
+
+**URGENT DEADLINE STATUS**:
+- **Stockbot A/B/C decision deadline: June 17 08:00 UTC** (7h 15m remaining as of this session start)
+- User has not provided decision via INBOX.md yet
+- Support materials staged and production-ready for immediate dispatch
 
 **What's Awaiting User Action**:
-1. **URGENT (Deadline June 17 08:00 UTC)**: Stockbot Option A/B/C decision
-   - Support docs staged: OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md, OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md, OPTION_C_INVESTIGATION_ROADMAP.md
-2. **Resistance-research Phase 2 Wave 1-2 executions** (75 min user action total):
-   - Domain 59: 2 emails (CLC, Issue One, 30-45 min)
-   - Domain 51: 2 emails (CLC, Issue One, 30-45 min)
-   - All templates copy-paste ready; contacts verified live
-3. **Other user actions** (per BLOCKED.md):
-   - cybersecurity: VeraCrypt restart (manual Windows action)
-   - mfg-farm: Test print (manual 3D print action)
-   - open-repo: Runtime decision (Docker vs systemd) + 3-4h deployment work
-   - systems-resilience: Platform choice (Nextcloud vs Discourse) + 4-6h deployment work
+1. **URGENT (Deadline June 17 08:00 UTC — 7h 15m remaining)**: Stockbot Option A/B/C decision
+   - Option A: Fix HMM + order_id issues (3-4h implementation) → retry validation June 17 13:30-20:00 UTC
+   - Option B: Skip live validation, use historical data for gate assessment
+   - Option C: Halt for investigation
+   - Support docs: OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md, OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md, OPTION_C_INVESTIGATION_ROADMAP.md
+2. **Secondary actions** (no deadline):
+   - Resistance-research: Phase 2 Wave 1-2 email execution (75 min, templates ready)
+   - Platform decisions: runtime choice (Docker vs systemd) + platform choice (Nextcloud+Matrix vs Discourse)
+   - Manual actions: VeraCrypt restart (cybersecurity), test print execution (mfg-farm)
 
-**Orchestrator Decision**: Standing by. Will not proceed until user provides one of the above decisions or executes one of the manual actions. No autonomous work available at this time.
+**Orchestrator Decision**: Standing by. No autonomous work available. Awaiting user decisions per BLOCKED.md entries.
 
-**Next Session**: Check for user decisions in INBOX.md; if new decisions/actions present, process and proceed accordingly.
+**Next Session**: Check INBOX.md for user decisions. If stockbot A/B/C decision provided by 08:00 UTC, dispatch immediately. Otherwise, continue standing by.
