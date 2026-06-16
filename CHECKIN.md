@@ -1,5 +1,38 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3686, June 16 17:09–17:45 UTC — RESISTANCE-RESEARCH WAVE 1 PREP COMPLETE + STANDING BY FOR STOCKBOT CONFIG DECISION)
+
+**Status**: ✅ **RESISTANCE-RESEARCH WAVE 1 EXECUTION READY — All 6 Wave 1 sends prepared and staged for June 17-18 user execution. Awaiting user decision on stockbot configuration to proceed with 20:00 UTC checkpoint.**
+
+**Work Completed**:
+- ✅ **Phase 2 Wave 1 Execution Prep** — Resistance-research agent completed full outreach preparation
+  - 6 Wave 1 email sends across Domains 51 (Campaign Finance), 59 (Economic Precarity/CTC), 48 (Criminal Justice)
+  - All contact information verified from production Gists
+  - Two-day execution plan: June 17 (CBPP, ITEP, Sentencing Project) + June 18 (Prison Policy Initiative, CLC, Issue One)
+  - **CRITICAL TIMING**: Domain 59 idle 13 days — send CBPP + ITEP first thing June 17 morning
+  - Deliverable: `PHASE_2_WAVE_1_SEND_PREP.md` committed to master (commit 1849baed)
+
+**Stockbot Configuration Block**:
+- 🔴 **CRITICAL BLOCK STILL UNRESOLVED** (created 16:53 UTC by Session 3685d)
+  - Market validation running 5 sessions vs. 2 expected
+  - **Wrong models running**: AAPL lgbm_ho (failed validation), MSFT lgbm_ho (should be ridge_wf), NVDA lgbm_ho (not authorized)
+  - **Impact**: Validation data corrupted, June 17-18 gate decision at severe risk
+  - **User decision needed**: Option A = shut down 3 wrong sessions + restart with 2-session config, OR Option B = provide updated validation plan
+  - **20:00 UTC checkpoint deferred** until user provides Resolution in BLOCKED.md
+
+**Next Action**:
+- ⏳ Standing by until 20:00 UTC for user to provide stockbot config decision
+- IF decision received before 20:00 UTC: Execute immediately + run checkpoint
+- IF no decision by 20:00 UTC: Log checkpoint deferred, continue with other work
+- **Resistance-research ready for user to execute Wave 1 sends** (all prep complete, just needs user email action)
+
+**Suggested Priority for User**:
+1. **URGENT** (before 18:00 UTC June 16): Clarify stockbot config in BLOCKED.md Resolution field
+2. **June 17 morning**: Execute Domain 59 sends (CBPP + ITEP)
+3. **June 17-18**: Continue remaining Wave 1 sends per prep schedule
+
+---
+
 ## Since Last Check-in (Session 3685e, June 16 17:00–17:15 UTC — 🔴 CRITICAL BLOCK VERIFIED + ORCHESTRATOR STANDING BY FOR USER DECISION)
 
 **Status**: 🔴 **CRITICAL BLOCK VERIFIED REAL — AWAITING USER DECISION — All autonomous work halted until stockbot config resolved**
