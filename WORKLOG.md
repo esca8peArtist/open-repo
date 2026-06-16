@@ -1,3 +1,29 @@
+## Session 3657 (June 16 09:39 UTC — 🟢 ORIENTATION + STANDING-BY FOR PRE-MARKET CHECKLIST 13:00 UTC)
+
+**Duration**: 5 minutes (orientation + scheduling)
+
+**Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE. ALL SYSTEMS PRODUCTION-READY. SCHEDULED WAKEUP AT 10:55 UTC FOR PRE-MARKET CHECKLIST EXECUTION.**
+
+**Orientation Complete**:
+- ✅ Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md (all current, no changes)
+- ✅ Verified all active blocks require user action only:
+  - cybersecurity-hardening: Windows restart (manual)
+  - mfg-farm: Test print execution (manual)
+  - systems-resilience: Platform decision (deadline passed June 15, awaiting user)
+- ✅ Confirmed no autonomous Exploration Queue items available
+- ✅ Stockbot market validation frameworks fully staged (Session 3656)
+- ✅ Resistance-research Wave 1-2 audit complete, ready for user execution (2 days overdue, 15 days to July 1 deadline)
+
+**Scheduled Actions**:
+- **10:55 UTC** (scheduled wakeup): Pre-market checklist execution window begins (13:00 UTC target)
+- **13:00 UTC**: Execute 6 health checks per `docs/june-16-premarket-validation-checklist.md`
+- **13:30-20:00 UTC**: Autonomous market validation (5 sessions live, zero intervention)
+- **20:00 UTC**: Post-market analysis + decision routing (Item 115 framework)
+
+**Token Budget**: Minimal this session (orientation only, no computation). Standing by for market events.
+
+---
+
 ## Session 3656 (June 16 09:29-09:50 UTC — 🟢 RESISTANCE-RESEARCH PREP + MONITORING FRAMEWORK CREATION)
 
 **Duration**: 21 minutes (orientation + execution + prep)
