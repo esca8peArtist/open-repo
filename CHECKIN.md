@@ -1,35 +1,56 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3686, June 16 17:09–17:45 UTC — RESISTANCE-RESEARCH WAVE 1 PREP COMPLETE + STANDING BY FOR STOCKBOT CONFIG DECISION)
+## Since Last Check-in (Session 3686, June 16 17:15 UTC — ORCHESTRATOR SESSION COMPLETE + STANDING BY FOR STOCKBOT USER DECISION)
 
-**Status**: ✅ **RESISTANCE-RESEARCH WAVE 1 EXECUTION READY — All 6 Wave 1 sends prepared and staged for June 17-18 user execution. Awaiting user decision on stockbot configuration to proceed with 20:00 UTC checkpoint.**
+**Status**: ✅ **SESSION COMPLETE — RESISTANCE-RESEARCH PHASE 2 WAVE 1 EXECUTION PREP DELIVERED. Orchestrator standing by for user decision on critical stockbot configuration issue.**
 
-**Work Completed**:
-- ✅ **Phase 2 Wave 1 Execution Prep** — Resistance-research agent completed full outreach preparation
-  - 6 Wave 1 email sends across Domains 51 (Campaign Finance), 59 (Economic Precarity/CTC), 48 (Criminal Justice)
-  - All contact information verified from production Gists
-  - Two-day execution plan: June 17 (CBPP, ITEP, Sentencing Project) + June 18 (Prison Policy Initiative, CLC, Issue One)
-  - **CRITICAL TIMING**: Domain 59 idle 13 days — send CBPP + ITEP first thing June 17 morning
-  - Deliverable: `PHASE_2_WAVE_1_SEND_PREP.md` committed to master (commit 1849baed)
+**Work Completed This Session**:
+- ✅ **Phase 2 Wave 1 Execution Prep** (commit 1849baed) — Comprehensive outreach logistics for 6 Wave 1 sends
+  - Domains 51, 59, 48 — all contact information extracted from production Gists and consolidated
+  - Two-day execution schedule: June 17 (CBPP, ITEP, Sentencing Project) + June 18 (Prison Policy Initiative, CLC, Issue One)
+  - **CRITICAL TIMELINE**: Domain 59 has been idle 13 days after urgency patch; should execute CBPP + ITEP sends first thing June 17 morning
+  - Includes: contact emails, template assignments, timing guidance, Day 7 checkpoint integration
+  - **Ready for immediate user execution** — all prep work complete
 
-**Stockbot Configuration Block**:
-- 🔴 **CRITICAL BLOCK STILL UNRESOLVED** (created 16:53 UTC by Session 3685d)
-  - Market validation running 5 sessions vs. 2 expected
-  - **Wrong models running**: AAPL lgbm_ho (failed validation), MSFT lgbm_ho (should be ridge_wf), NVDA lgbm_ho (not authorized)
-  - **Impact**: Validation data corrupted, June 17-18 gate decision at severe risk
-  - **User decision needed**: Option A = shut down 3 wrong sessions + restart with 2-session config, OR Option B = provide updated validation plan
-  - **20:00 UTC checkpoint deferred** until user provides Resolution in BLOCKED.md
+**CRITICAL STOCKBOT ISSUE — USER ACTION REQUIRED**:
+🔴 **Block Created**: Session 3685d at 16:53 UTC (22 minutes ago)  
+🔴 **Status**: UNRESOLVED — Awaiting user decision  
+🔴 **Severity**: CRITICAL — Invalidates June 17-18 gate validation data, threatens June 18 EOD deadline
 
-**Next Action**:
-- ⏳ Standing by until 20:00 UTC for user to provide stockbot config decision
-- IF decision received before 20:00 UTC: Execute immediately + run checkpoint
-- IF no decision by 20:00 UTC: Log checkpoint deferred, continue with other work
-- **Resistance-research ready for user to execute Wave 1 sends** (all prep complete, just needs user email action)
+**The Issue**:
+- Market validation (13:30-20:00 UTC, 2h 44m remaining) is running 5 sessions: AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, AMZN lgbm_ho, JPM ridge_wf
+- **Expected per Strategic Reset**: Only 2 sessions (AMZN lgbm_ho + JPM ridge_wf)
+- **Wrong models running**: 
+  - AAPL lgbm_ho — failed gate validation (2/6 gates), should NOT be trading
+  - MSFT lgbm_ho — not scheduled for June 17-18 (should be MSFT ridge_wf for June 17 retrain)
+  - NVDA lgbm_ho — never authorized for any config
+- **Impact**: Validation data collected from wrong models will corrupt June 17-18 gate validation and phase 4 decision
+- **Symptom**: MSFT and NVDA sessions generating zero BUY signals (buy_prob=0.0000) while AMZN works correctly
 
-**Suggested Priority for User**:
-1. **URGENT** (before 18:00 UTC June 16): Clarify stockbot config in BLOCKED.md Resolution field
-2. **June 17 morning**: Execute Domain 59 sends (CBPP + ITEP)
-3. **June 17-18**: Continue remaining Wave 1 sends per prep schedule
+**User Decision Required**:
+Option A (Expected): MSFT/NVDA sessions NOT intentional
+- Action: Provide "RESOLUTION" in BLOCKED.md stating "User approved Option A"
+- Orchestrator will immediately shut down 3 wrong sessions + restart with 2-session config
+- Validation restarts with correct models
+
+Option B: MSFT/NVDA sessions ARE intentional
+- Action: Provide "RESOLUTION" in BLOCKED.md with updated validation plan explaining why models changed
+- Include: updated June 17-18 gate schedule, clarification on MSFT retrain (ridge_wf vs lgbm_ho)
+
+**Next Steps**:
+- ⏳ **Before 20:00 UTC (2h 44m)**: User provides Resolution in BLOCKED.md
+- IF user provides decision: Orchestrator executes immediately, fixes config, runs 20:00 UTC checkpoint
+- IF no decision by 20:00 UTC: Orchestrator logs "Checkpoint deferred — awaiting stockbot config decision" and continues with other work
+
+**All Other Projects Status**:
+- ✅ **resistance-research**: Phase 2 Wave 1 execution prep COMPLETE, ready for user to execute sends June 17-18
+- 🔴 **cybersecurity-hardening**: Blocked on user Windows restart (VeraCrypt pre-boot test)
+- 🔴 **mfg-farm**: Blocked on user test print execution
+- 🔴 **open-repo**: Blocked on user infrastructure decision (Docker vs systemd) — DEADLINE PASSED June 15 23:59 UTC
+- 🔴 **systems-resilience**: Blocked on user platform decision (Nextcloud vs Discourse) — DEADLINE PASSED June 15 23:59 UTC
+- ⏸️ **seedwarden**: Paused (Track B gates awaiting user completion)
+- ✅ **off-grid-living**: Complete, awaiting user social media execution
+- ⏸️ **open-source-rideshare**: Paused
 
 ---
 
