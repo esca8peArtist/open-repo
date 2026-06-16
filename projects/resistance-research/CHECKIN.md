@@ -1,5 +1,33 @@
 # CHECKIN — Needs Your Input
 
+*Updated: June 16, 2026 — Item 116 Phase 3 domain expansion candidates*
+
+---
+
+## ITEM 116 COMPLETE — THREE DECISIONS NEEDED (June 16, 2026)
+
+Item 116 (Phase 3 Domain Expansion Candidates) is complete. Three files written:
+- `/projects/resistance-research/PHASE_3_DOMAIN_CANDIDATES_UPDATE_JUNE_2026.md` — legislative/litigation/movement research + 3 new candidates
+- `/projects/resistance-research/PHASE_3_CAPACITY_IMPACT_IF_EXPANSION.md` — numeric capacity analysis for adding candidates
+- `/projects/resistance-research/PHASE_3_EXPANDED_CANDIDATE_PRIORITY_MATRIX.md` — full 12-domain priority matrix
+
+**Three decisions the research surfaces:**
+
+**Decision 1 — Candidate M (Direct Democracy Defense): Phase 2 acceleration?**
+The attack on state ballot initiative processes (15+ states, supermajority requirements on November 2026 ballots in Missouri/North Dakota/South Dakota/Utah) is the highest-scoring new candidate at composite 8.64, but it has a September 30, 2026 campaign window — before Phase 3 formally launches. If you want it, it needs to ship as Phase 2 in July-August 2026 alongside Domains 49/50. It does not belong in Phase 3 proper. Doing nothing means these campaigns have no research support from this framework. Estimated 20-25 hours additional Phase 2 load.
+
+**Decision 2 — Candidate N (Whistleblower Protection): Add to Phase 3?**
+Composite 7.88, higher than Domain I (7.68) and Domain L (7.12). OPM's proposed mandatory NDA rule (May 2026, 94% of comments opposed), DOGE whistleblower retaliation (NLRB's Dan Berulis), and the Congressional Whistleblower Protection Act (Blumenthal + 8 cosponsors) create a January 3, 2027 legislative window that matches Domain 56 exactly. Candidate N bundles naturally with Domain 56 — same contacts, same distribution window. Adding N means Domain I defers 6 weeks (January to March). Net capacity impact: manageable. Recommend YES.
+
+**Decision 3 — Candidate O (Government Procurement Corruption): Add to Phase 3?**
+Composite 7.02. Musk/SpaceX $15.4B in contracts while running DOGE (directing cuts that did not touch his firms), the Special Government Employee ethics loophole, and the Preventing OCI in Federal Acquisition Act (S. 3905) create a February-March 2027 research angle. Deferrable to Q2 2027 without loss of primary value. Lower urgency than N. Recommend: hold for Phase 3 mid-cycle review in March 2027 — add to Phase 3 only if capacity permits after Candidates N and O are assessed.
+
+**Also flagged from research:**
+- *Trump v. Slaughter* (FTC removal power) decision expected by June 30, 2026. If decided as signaled (6 conservative justices support absolute removal power), it eliminates "for-cause" protections for all independent agencies — NLRB, MSPB, FEC, EEOC. This is a 5-10 domain cascade. Domain K's research scope may need expansion from "SCOTUS reform" to "independent agency structural reform." Flagging for your awareness — no document change needed until ruling issues.
+- Domain I urgency upgraded from 6/10 to 8/10 in priority matrix: V-Dem downgraded US from "liberal democracy" to "electoral democracy" in March 2026 (largest single-year drop in dataset history, US fell from 20th to 51st place on Liberal Democracy Index). Domain I is now empirical accountability documentation, not merely comparative reform framework.
+
+---
+
 *Updated: June 3, 2026 — Domain 59 distribution readiness verification + Trump v. Barbara automated alert assessment*
 
 ---
