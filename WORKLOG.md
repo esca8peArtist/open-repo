@@ -1,8 +1,8 @@
-## Session 3682 (June 16 15:28–15:45 UTC — 🟢 MARKET VALIDATION MONITORING FRAMEWORK STAGED FOR 20:00 UTC CHECKPOINT)
+## Session 3682 (June 16 15:28–16:45 UTC — 🟢 STOCKBOT MONITORING FRAMEWORK + OPEN-REPO AUDIT COMPLETE)
 
-**Duration**: ~17 minutes (orientation + Exploration Queue work + framework development)
+**Duration**: ~77 minutes (orientation + 2 Exploration Queue items complete + checkpoint prep)
 
-**Status**: ✅ **MARKET VALIDATION MONITORING FRAMEWORK PRODUCTION-READY FOR 20:00 UTC CHECKPOINT EXECUTION**
+**Status**: ✅ **MARKET VALIDATION MONITORING FRAMEWORK PRODUCTION-READY** + ✅ **OPEN-REPO DEPLOYMENT AUDIT COMPLETE**
 
 **Orientation completed**:
 - ✅ Read ORCHESTRATOR_STATE.md — market validation proceeding normally, all 5 sessions trading, no new incidents since 14:35 UTC fix
@@ -31,6 +31,29 @@
 - **No intervention required** until 20:00 UTC post-market analysis checkpoint
 
 **Next action**: 20:00 UTC — Execute POST_MARKET_ROUND_TRIP_ANALYSIS.md framework (metrics extraction → scenario routing → Phase 4 decision)
+
+---
+
+**4. Open-repo deployment audit (15:50–16:45 UTC)**:
+   - Spawned Explore agent to audit June 12 deployment status (blocked Exploration Queue item)
+   - **Key Finding**: Deployment DID NOT EXECUTE on June 12 09:00 UTC
+   - **Verification**: `docker ps` (0 containers), `systemctl` (no open-repo unit), port check (no services on 80/443/8000), SSH to raspby1 (confirmed: zero infrastructure)
+   - **Root cause**: User platform/runtime decision expired June 15 23:59 UTC with no response (shared with systems-resilience Phase 5.1)
+   - **All application code ready**: 157 tests passing, Phase 5 complete — blocker is purely infrastructure, not code
+   - **Three production-ready audit documents created** (all in `/projects/open-repo/`):
+     1. DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines, 99% confidence deployment never executed)
+     2. POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines, 6 prioritized blockers, root cause analysis)
+     3. RECOVERY_OR_NEXT_PHASE_ROUTING.md (122 lines, Phase A/B/C recovery paths, Phase 5.2 eligibility gates)
+   - **Updated BLOCKED.md** with audit verification stamp (Session 3682, verified timestamp, exact findings)
+   - **Decision gate clear**: Once user chooses Docker vs systemd for raspby1, orchestrator can execute deployment immediately
+
+**Current portfolio status** (16:45 UTC):
+- ✅ Stockbot monitoring framework production-ready
+- ✅ Open-repo deployment audit complete + verified + documented
+- ⏳ Market validation running (4h 15m to 20:00 UTC checkpoint)
+- 🔒 All other projects awaiting user decisions/actions
+
+**Next scheduled action**: 20:00 UTC post-market analysis (20 min before checkpoint)
 
 ---
 
