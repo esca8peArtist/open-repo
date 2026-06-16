@@ -1,0 +1,10 @@
+{
+  "AAPL": {
+    "consecutive_underperforming": 0,
+    "consecutive_low_fill_rate": 0,
+    "rolling_daily_pnl_pct": [
+      0.0035
+    ],
+    "last_updated": "2026-06-16"
+  }
+}
