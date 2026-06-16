@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-15T23:46:22Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-16T00:24:17Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.8% (521,784 tokens) | All-models 44.9% | Reset in 0h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 0.5% | Reset in 168h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -94,42 +94,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-**Platform choice**: Nextcloud+Matrix (8/10 vs Discourse 5/10, more suitable for Pi5 8GB RAM). Once provided with credentials, orchestrator executes 4-6h deployment immediately.
+4. ✅ Success criteria identified: >= 1 BUY fill for AAPL and >= 1 BUY fill for MSFT by June 18 EOD
+5. ✅ Validation protocol infrastructure confirmed:
+   - Container deployment on Jetson (100.120.18.84) complete
+   - Model files synced to /opt/stockbot/models/
+   - Database schema initialized (trading.db)
+   - Alpaca API connectivity verified
+   - HMM regime masking active on AAPL and MSFT sessions
+
+### What's in progress:
+- Auto-repause trigger at 00:00 UTC (6 minutes from session time 23:54 UTC)
+- Market validation protocol ready for execution at 06:00 UTC (pre-market checks begin)
+- Intraday monitoring cadence from 13:15 UTC through 20:00 UTC market close
+
+### Critical items needing orchestrator action:
+1. **Immediate (00:00 UTC)**: Auto-repause will trigger, pausing mfg-farm, seedwarden, open-repo projects
+   - PROJECTS.md will be updated to mark these as "Paused" if not already updated
+2. **June 16 06:00 UTC**: Execute JUNE_16_17_VALIDATION_PROTOCOL.md Section 1 (pre-flight checks)
+   - 10 pre-market checks required (container state, session count, model files, Alpaca auth, thermal, etc.)
+   - GO criteria: all 10 must pass by 13:15 UTC for market validation to proceed
+3. **June 16 13:15 UTC**: Begin market open window monitoring
+   - Session warm-up, market open detection, first signal capture
+4. **June 16 13:30 UTC**: Market validation begins automatically
+   - Intraday monitoring with 15-min cadence for first 2 hours, then 30-min cadence
+5. **June 16 20:00 UTC**: Execute Section 4 (EOD analysis)
+   - Final success criteria evaluation (Criteria A-E: fills, auth, signals, preprocessing)
+6. **June 17 08:00 UTC**: June 17 pre-market checks (if June 16 did not achieve full success)
+7. **June 18 20:00 UTC**: Phase 4 decision document (JUNE_18_PHASE4_DECISION.md)
 
 ### Next scheduled action:
-- **21:00 UTC today**: NVDA deployment (automatic)
-- **June 16 00:00 UTC**: Auto-repause unless blocks resolved
-- **June 16 13:30 UTC**: Market-open validation (AAPL/MSFT/NVDA, automatic)
-
-
-## Session 3635 (June 15 23:11 UTC — Final Standing-By Verification, 48 min until deadline)
-
-**Duration**: ~5 minutes
-**Work completed**: Final orientation, deadline escalation, standing-by verification
-**Status**: Standing-by sustained, critical deadline in 48 minutes
-
-### What was done:
-1. ✅ Final orientation (ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md verified)
-2. ✅ Confirmed NVDA deployment complete and operational
-3. ✅ Verified standing-by state remains correct (zero autonomous work available)
-4. ✅ Updated CHECKIN.md Session 3635 with final deadline status (48 min remaining)
-5. ✅ Prepared for three simultaneous deadlines at midnight:
-   - Platform decision deadline: 23:59 UTC (if unresolved → mark overdue in BLOCKED.md)
-   - Auto-repause trigger: 00:00 UTC (mfg-farm, seedwarden, open-repo back to paused)
-   - June 16 market validation: 13:30 UTC (automatic, runs regardless of above)
-
-### Critical items needing user input:
-1. **Platform decision** (DEADLINE: 23:59 UTC, 48 min) — Nextcloud+Matrix vs Discourse + credentials
-2. **VeraCrypt restart** (cybersecurity-hardening) — Windows machine restart
-3. **Test print execution** (mfg-farm) — 0.20mm layer height PLA+
-
-### Next scheduled action:
-- **23:59 UTC**: Deadline expires; if unresolved, mark as officially overdue
-- **June 16 00:00 UTC**: Auto-repause triggers; update PROJECTS.md focus lines
-- **June 16 13:00 UTC**: Run pre-market validation checklist (JUNE_16_PREMARKET_VALIDATION_CHECKLIST.md)
-- **June 16 13:30 UTC**: Market open validation begins (automated)
+- **June 15 23:59 UTC (5 min)**: Mark systems-resilience platform decision as officially overdue in BLOCKED.md (no decision provided)
+- **June 16 00:00 UTC**: Auto-repause triggers (6 min from now)
+- **June 16 06:00 UTC**: Section 1 pre-flight checks (JUNE_16_17_VALIDATION_PROTOCOL.md)
+- **June 16 13:30 UTC**: Market open validation begins (automated monitoring)
+- **June 16 20:00 UTC**: EOD success criteria analysis
 
 ### Token usage this session:
-- ~150 tokens (orientation + documentation + commit prep)
+- ~200 tokens (orientation, protocol review, setup)
 
-**Status**: Standing-by sustained. All systems production-ready. Awaiting: (a) user platform decision by 23:59 UTC, (b) June 16 00:00 UTC auto-repause, or (c) June 16 13:30 UTC market validation trigger.
+**Status**: All systems ready for market validation. Protocol loaded and understood. Standing-by for 06:00 UTC pre-flight checklist execution. Autonomously monitor and execute validation per JUNE_16_17_VALIDATION_PROTOCOL.md if user approves.
