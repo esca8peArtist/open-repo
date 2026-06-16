@@ -1,5 +1,51 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3690 — June 16 19:21–19:24 UTC — CRITICAL: MARKET VALIDATION FAILED, CHECKPOINT DEFERRED)
+
+**Status**: ❌ **CHECKPOINT DEFERRED** — June 16 market validation window fundamentally compromised by two critical failures. Cannot proceed with 20:00 UTC post-market analysis checkpoint.
+
+**Critical Issues Discovered**:
+
+1. **HMM Warmup Loss on Container Restart**
+   - Container restarted ~19:14 UTC, resetting in-memory HMM state
+   - HMM requires 60 bars to warm up; reset means 0 bars at restart
+   - Estimated warmup completion: ~19:24-19:25 UTC (all regime=None until then)
+   - **Root cause**: HMM state not persisted to disk
+   - **Impact**: ALL 5 sessions reporting regime=None; signal health monitor flagging SIGNAL_DROPOUT
+
+2. **Duplicate Order ID Blocking Execution**
+   - NVDA sessions generating valid BUY signals (buy_prob=0.45+ > 0.35 threshold)
+   - Order submission blocked: `{"code":40010001,"message":"client_order_id must be unique"}`
+   - Same `client_order_id` being resubmitted; idempotency guard not working
+   - **Impact**: Zero orders executing despite valid signals; validation data collection impossible
+
+**Market Validation Status**:
+- Duration: 13:30-19:24 UTC (5h 54m)
+- Result: ❌ FAILED (2h+ signal suppression + order execution failures)
+- Data collected: Unreliable (orders not executing, regime detection broken)
+- Framework readiness: ✅ Post-market analysis framework staged but **cannot execute on bad data**
+
+**What Happened**:
+- 13:30 UTC: Market validation started, 5 sessions launched
+- 17:57 UTC: Signal collapse detected (regime=None due to HMM state not advancing)
+- 19:14 UTC: Container restarted in attempt to fix issue
+- 19:23 UTC: Duplicate order ID failure discovered; HMM still warming up
+
+**Decision Required** (User action needed):
+
+(A) **Defer June 17 validation** — Fix HMM state persistence + duplicate order ID issues, retry validation June 17
+(B) **Skip June 16-17** — Proceed directly to June 18 decision point with June 12-15 data only
+(C) **Halt trading** — Stop market validation entirely, pause stockbot pending investigation
+
+**Recommended Next Steps** (for your consideration):
+1. Investigate duplicate order_id issue (idempotency guard bug in order_executor.py)
+2. Implement HMM state disk persistence to survive container restarts
+3. Re-run market validation once both issues fixed
+
+**Needs Your Input**: (1) Which option (A/B/C) for proceeding? (2) If A, timeline for fixes? (3) Should orchestrator continue autonomous work on other projects while stockbot issue is investigated?
+
+---
+
 ## Since Last Check-in (Session 3688 — June 16 19:04 UTC — FINAL ORIENTATION COMPLETE, STANDING BY FOR 20:00 UTC CHECKPOINT)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY FOR 20:00 UTC CHECKPOINT** — Orientation complete. No autonomous work available before checkpoint. Market validation running autonomously (56 minutes until close).
