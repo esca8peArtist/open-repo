@@ -30,11 +30,22 @@
 
 **Checkpoint Execution Plan** (20:00 UTC):
 1. Extract metrics from `/app/logs/trading_20260616.log` and SQLite DB (pre-analysis checklist, ~5 min)
+   - Commands documented in JUNE_16_POST_MARKET_ANALYSIS_FRAMEWORK.md Section 1-2
+   - Query: open orders, container health, log accessibility, DB health, 5-session confirmation
 2. Populate metrics extraction template (Signal count, signal quality score, regime, PnL per session, incident recovery, ~10 min)
+   - Use Section 2 (Metrics Extraction Template) with copy-paste SQL from Section 2.1
+   - Fill all [ PLACEHOLDER: <metric> ] values from live logs/DB queries
 3. Route to Path A/B/C based on M1-M5 metrics (signal health, Z-score, win rate, fill timing, fix stability)
-4. If Path A/B: Trigger June 17 08:00 UTC retrain (AAPL lgbm_ho + MSFT ridge_wf). If Path C: Escalate.
-5. Document Phase 4 routing and link to June 18 gate evaluation
-6. Commit results to stockbot submodule
+   - Use Section 3 (Scenario Routing) with thresholds: Path A signal quality 90%+, Path B 70-89%, Path C <70%
+4. If Path A/B: Trigger June 17 08:00 UTC retrain (AAPL lgbm_ho + MSFT ridge_wf). If Path C: Escalate and hold.
+5. Document Phase 4 routing and link to JUNE_17_RETRAIN_EXECUTION_CHECKLIST.md + JUNE_17_18_RETRAIN_QUALITY_ASSESSMENT_FRAMEWORK.md
+6. Commit results and decision tree to stockbot submodule + update PROJECTS.md focus line
+
+**Monitoring**: Background wait task (bpkpaoow6) polling until 20:00 UTC. Will receive notification on completion.
+
+---
+
+## SESSION CHECKPOINT STATE (as of 17:59 UTC)
 
 ---
 
