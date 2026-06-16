@@ -1,5 +1,36 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3673, June 16 12:58 UTC)
+
+**Status**: ✅ **PRE-MARKET VALIDATION COMPLETE. SYSTEMS GO FOR AUTONOMOUS MARKET VALIDATION 13:30–20:00 UTC.**
+
+**What was accomplished**:
+- ✅ **Pre-Market Validation Checklist executed** (6 sections completed): container health verified, models present, thermal baseline safe (48.2°C), all 5 trading sessions initialized and scheduled for 13:15 UTC wake-up
+- ✅ **Container recovery executed**: Detected WebSocket connection limit (406) issue; cleanly restarted Jetson container to clear connection queue
+- ✅ **Sessions verified healthy**: All 5 models re-initialized post-restart (AAPL, MSFT, NVDA, JPM, AMZN), sessions correctly sleeping until 13:15 UTC per logs
+- ✅ **Exploration Queue verified**: 5 active queued items (Items 118–122 for June 20–22 execution); queue health confirmed
+
+**What's in progress**:
+- **13:15 UTC** (16 minutes): All 5 trading sessions will wake and begin pre-market setup
+- **13:30 UTC** (32 minutes): Autonomous market validation begins (live trading, 5 sessions, 5 tickers)
+- **13:30–20:00 UTC**: Automated market monitoring (no manual intervention needed)
+- **20:00 UTC**: Post-market analysis framework ready for execution
+
+**Items needing user input** (unchanged):
+> **Two decisions still needed** (deadline June 15 passed, blocks open-repo + systems-resilience Phase 5.1):
+> 1. **raspby1 runtime**: Docker (recommended) or systemd/venv?
+> 2. **systems-resilience platform**: Nextcloud+Matrix or Discourse?
+> 
+> Once decided, orchestrator can execute deployment immediately (3-4h to production).
+
+**Suggested priorities for next session** (post-market validation):
+1. **Post-Market Analysis** (20:00 UTC today): Review live trading performance against retrain decision framework
+2. **Phase 4 Immediate Actions** (if market validation passes): Tier-2 funding queries, strategic plan updates
+3. **Retrain Execution** (June 17 08:00 UTC): AAPL+MSFT full-eval, 2022-2026 data (scheduled autonomously if GO decision made)
+4. **User Input Items**: Platform decisions for open-repo + systems-resilience (blocks two projects)
+
+---
+
 ## Session 3672 (June 16 12:37 UTC — 🟢 PRE-MARKET CHECKLIST SCHEDULED FOR 13:15 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING-BY FOR 13:15 UTC PRE-MARKET CHECKLIST. WAKEUP SCHEDULED.**
