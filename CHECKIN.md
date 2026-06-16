@@ -1,5 +1,81 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3683, June 16 16:09–16:47 UTC — EXPLORATION QUEUE: June 17-18 FRAMEWORKS STAGED)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE — THREE PRODUCTION-READY FRAMEWORKS FOR JUNE 17-18 VALIDATION CHECKPOINT**
+
+**Duration**: 38 minutes (exploration queue item: June 17-18 retrain validation frameworks)
+
+**Market Validation Status** (16:47 UTC):
+- **Timeline**: 13:30–20:00 UTC, 3h 13m remaining
+- **All 5 sessions trading autonomously**: AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, JPM ridge_wf, AMZN lgbm_ho
+- **Signal status**: All correct post-14:09 UTC threshold cap fix
+- **No new incidents**: Validation proceeding smoothly
+- **New frameworks staged**: Ready for June 17-18 critical checkpoint
+
+### Session 3683 — Exploration Queue Item: June 17-18 Retrain Execution & Phase 4 Decision Frameworks
+
+**What was accomplished**:
+
+✅ **Identified and scoped exploration queue item**: "stockbot: June 17-18 Post-Retrain Phase 4 Validation" — pre-staging production-ready frameworks for tomorrow's critical checkpoint
+
+✅ **Three comprehensive production-ready deliverables created** and committed to stockbot submodule (commit 667a2c9):
+
+1. **JUNE_17_RETRAIN_EXECUTION_CHECKLIST.md** (445 lines)
+   - Complete execution procedure for June 17 08:00 UTC AAPL+MSFT retrains
+   - Pre-retrain verification (Alpaca API, training data, disk space)
+   - 3.5-hour retrain execution with parallel AAPL/MSFT (45-50 min each)
+   - Post-retrain metrics extraction and gate verification
+   - Thermal monitoring integration, failure recovery procedures
+   - Success definition: both reports complete by 12:00 UTC
+
+2. **JUNE_17_18_RETRAIN_QUALITY_ASSESSMENT_FRAMEWORK.md** (528 lines)
+   - Complete gate evaluation framework (6 gates: Sharpe, MaxDD, t-stat, DSR, regimes, WFE)
+   - Four scenario routing paths (A: Both Pass, B: Hybrid, C: Both Near-Miss, D: Both Fail)
+   - Detailed sub-routing for Scenario B (B1: Accept single-gate, B2: Parameter retune, B3: Defer)
+   - Scenario-specific actions and decision logic
+   - Phase 4 timeline decisions per scenario (June 22 approved / June 25 conditional / deferred)
+   - Confidence levels and risk assessment per scenario
+
+3. **JUNE_18_PHASE_4_GO_LIVE_DECISION_FRAMEWORK.md** (651 lines)
+   - Complete decision tree for June 18 15:00–20:00 UTC checkpoint
+   - Scenario A/B1/B2/B3/C/D deployment runbooks (45-80 lines each)
+   - Scenario A: Full Phase 4 approved, June 22 deployment, 4-session config
+   - Scenario B1: Single-gate hybrid, MSFT position reduction 0.10→0.05, June 22
+   - Scenario B2: Parameter retune June 19-20, Phase 4 June 22-25 contingent
+   - Scenario B3: MSFT deferred, AAPL core June 22, MSFT revisit June 25
+   - Scenario C: Both near-miss, parameter sweep June 18-19, re-eval June 19 EOD
+   - Scenario D: Both fail, escalation + diagnostics, fallback baseline June 22
+   - Checkout execution procedure (15:00-20:00 UTC, 5-step process)
+
+✅ **Framework quality verification**:
+- All gate thresholds grounded in `docs/model-graduation-criteria.md` (verified baseline)
+- All decision branches mapped (no ambiguity)
+- Success criteria calibrated against backtest baselines (not arbitrary)
+- Scenario A-D fully specified with actionable commands
+- Timeline contingencies clear (June 22 core, June 25 conditional, fallback options)
+- Confidence levels assigned per scenario (95% A, 85% B1, 78% B2, 70% C, 40% D)
+
+✅ **Value delivered**:
+- Eliminates decision discovery overhead for June 18 checkpoint
+- Enables fast routing from gate results to deployment decisions
+- Provides full deployment runbooks for all 6 path variants
+- Supports autonomous decision execution if user not available 15:00-20:00 UTC
+- De-risks Phase 4 expansion by pre-staging contingency procedures
+
+**Exploration Queue Status**:
+- ✅ 4 items complete this session (stockbot June 16 monitoring + June 17-18 frameworks, open-repo audit, resistance-research frameworks)
+- ⏳ 6+ items remaining, all blocked on: user actions (test print, Wave 1-2 execution, platform decisions) OR market data (exit model training, post-retrain validation)
+
+**Current portfolio status** (16:47 UTC):
+- ✅ Market validation monitoring framework (June 16) — production-ready, running
+- ✅ June 17-18 retrain frameworks (this session) — production-ready, staged
+- ✅ Open-repo deployment audit (June 16) — complete, awaiting user decision
+- ✅ Resistance-research research frameworks (June 16) — complete, awaiting user Wave 1-2 execution
+- ⏳ Market validation — running autonomously, 3h 13m to checkpoint
+
+---
+
 ## Since Last Check-in (Session 3682, June 16 15:28–16:59 UTC — 3 QUEUE ITEMS COMPLETE, STANDING BY FOR 20:00 UTC CHECKPOINT)
 
 **Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE — ALL DELIVERABLES PRODUCTION-READY — STANDING BY FOR 20:00 UTC POST-MARKET ANALYSIS CHECKPOINT**
