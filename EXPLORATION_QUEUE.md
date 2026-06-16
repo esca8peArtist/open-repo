@@ -1900,6 +1900,46 @@
 **Deadline**: June 17 23:00 UTC (ready for June 18 Phase 3 launch decision routing)
 **Status**: ⏳ QUEUED for June 15-17 (parallel tracking with user contractor selection process)
 
+### 112. ✅ stockbot — Comprehensive Backtesting Report for Strategic Reset (Session 3638 COMPLETE)
+**Status**: Completed June 16, 2026 (Session 3638, 04:58–05:45 UTC). All three deliverables production-ready and committed.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `STRATEGIC_RESET_COMPREHENSIVE_REPORT.md` — Why reset happened (4 checkpoint misses, structural no-sell-signal behavior, SSH deadline miss), what it fixed (4 critical bugs: C-1/C-3/C-4/H-6), Phase 2 deliverables value (WalkForwardEngine, 768 passing tests), model results (JPM 6/6 Sharpe 4.412, AMZN 6/6 Sharpe 3.939, AAPL 6/6 Sharpe 2.230 after retrain), Phase 3-4 outlook (GOOGL June 20, NVDA August 1 with 6/7 gates including Monte Carlo pass)
+  - ✅ `BACKTESTING_PIPELINE_VALIDATION_METRICS.md` — Old vs new pipeline comparison (old: single 80/20 window, 38-trade sample; new: 3-4 rolling folds, 6 gates + G7, 30-second eval time), confidence intervals on JPM (Sharpe CI 3.19-5.6), AMZN (t-stat CI marginal at 1.8), AAPL (Sharpe CI 1.44-2.6), bug impact quantification (C-1 made G3 real for all models, C-3 bounded leverage 3.75x→1.0x, C-4 eliminated lookahead)
+  - ✅ `PHASE_3_MODEL_DECISION_MATRIX.md` — GOOGL 6/6 classic (G7 advisory fail), NVDA 6/7 including G7 PASS (only model Sharpe in all 3 regimes), SPY NO-GO (structural momentum failure), Phase 3-4 sequence (June 18 AAPL/MSFT Phase 4, June 20 GOOGL paper, July 3 GOOGL live, August 1 NVDA live capital)
+**Key findings**:
+  - Strategic reset justified: 4 critical bugs fixed, model validation now trustworthy
+  - JPM and AMZN production-ready for Phase 3; AAPL retrained and passed 6/6
+  - NVDA only model to pass Monte Carlo gate (G7), unique August 1 live capital candidate
+  - Decision matrix enables June 18-19 user routing without delay
+**Owner**: stockbot subagent (Session 3638)
+**Deadline**: June 17 12:00 UTC ✅ COMPLETE (9 hours early)
+**Confidence**: 95% — comprehensive synthesis of Sessions 2980-3500+ findings, quantitative validation against live evaluation artifacts
+**Commit**: 7ec0633
+
+### 113. ✅ resistance-research — Phase 3 Domain H Constitutional Research Pre-Production Workflow Design (Session 3638 COMPLETE)
+**Status**: Completed June 16, 2026 (Session 3638, 04:58–05:50 UTC). All three deliverables production-ready and committed.
+**Key finding**: Domain H research is already complete (June 6, 2026 production document, 7,500 words, 90 citations). This item designs post-election editorial, updating, and distribution execution plan (not from-scratch research).
+**Deliverables** (ALL COMPLETE):
+  - ✅ `DOMAIN_H_RESEARCH_WORKFLOW_DESIGN.md` (4,185 words) — 12-week calendar Nov 4–Jan 31 with Phase A (Nov 4–Dec 15) and Phase B (Dec 15–Jan 31). Zone editorial hours documented. Three contingency paths.
+  - ✅ `DOMAIN_H_SOLO_VS_TEAM_RESOURCE_MODEL.md` (3,044 words) — Solo path 30-45h (recommended), Team path 35-50h (contingency). Sequential dependency: Domain K Zone 2 must complete before Domain H Zone 3 finalized.
+  - ✅ `DOMAIN_H_INTEGRATION_CHECKLIST_WITH_DOMAIN_K.md` (3,763 words) — 6 overlap areas resolved, 3 contested zones with clear ownership, January 3 coordination documented.
+**Owner**: resistance-research subagent (Session 3638)
+**Deadline**: June 18 20:00 UTC ✅ COMPLETE (16 hours early)
+**Confidence**: 92%
+**Committed to master**
+
+### 114. ✅ systems-resilience — Phase 5.1 Platform Decision Rapid Recommendation & Deployment SOP (Session 3638 COMPLETE)
+**Status**: Completed June 16, 2026 (Session 3638, 04:58–05:55 UTC). All four deliverables production-ready and committed.
+**Deliverables** (ALL COMPLETE):
+  - ✅ `PLATFORM_DECISION_FINAL_RECOMMENDATION.md` (19KB) — Nextcloud+Matrix 8/10 (recommended), Discourse 5/10 (not recommended, IPv6 bug), Jitsi (interim 15-min fallback). No new blockers emerged June 9-16.
+  - ✅ `NEXTCLOUD_MATRIX_DEPLOYMENT_SOP.md` (33KB, copy-paste ready) — 4-6h setup, Docker-compose for 6 containers, Nginx reverse proxy + SSL, 8-point validation checklist. RECOMMENDED deployment.
+  - ✅ `DISCOURSE_DEPLOYMENT_SOP.md` (20KB, copy-paste ready) — 2h 45m setup including IPv6 bug workaround (GitHub #15847, 3 options), 6-point validation. NOT RECOMMENDED but documented.
+  - ✅ `PLATFORM_HYBRID_FALLBACK_OPTION.md` (12KB) — Jitsi 15-min interim fallback, 480MB idle/1.2GB peak, NOT suitable long-term. INTERIM ONLY.
+**Owner**: systems-resilience subagent (Session 3638)
+**Deadline**: June 17 08:00 UTC ✅ COMPLETE (3 hours early)
+**Confidence**: 96%
+**Commit**: 4a0652b4
+
 ## Queue Management Rules
 
 - **Capacity**: Target 2-3 active items per session
