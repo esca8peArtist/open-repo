@@ -1928,6 +1928,40 @@
 **Confidence**: 92%
 **Committed to master**
 
+### 118. ⏳ stockbot — June 20 GOOGL Gate GO/NO-GO Decision Framework (cooler delivery + thermal validation)
+**Context**: Item 105 creates cooler thermal validation test plan; Item 108 creates phase 3b go/no-go decision criteria refined. This item synthesizes both into executable June 20 decision framework: pre-install thermal baseline (June 19 evening), post-install validation (June 19 90-min procedure), GO/NO-GO/CONDITIONAL routing with position sizing implications.
+**Scope**:
+  - Pre-install thermal baseline: 2-hour full inference load (current JPM+AMZN config), log CPU/temp every 10 sec, capture peak reached, headroom to 95°C hard limit
+  - Cooler order deadline verification: confirm June 11 order received, June 18-19 delivery window confirmed (7-day buffer per Item 108). If delayed, activate GeeekPi Tower fallback or defer GOOGL to July
+  - Post-install validation execution: 90-min test plan (10-min idle, 30-min 5-session simulation, 45-min endurance test), GO/CONDITIONAL-GO/NO-GO decision routing per Item 108 thresholds
+  - Position sizing decision matrix: thermal headroom >15°C allows 0.15 position size; 10-15°C allows 0.10; <10°C requires NO-GO
+  - Decision document: thermal results + GOOGL gate scorecards (Item 108: 6 gates) + portfolio tech% check + user recommendation (GO/CONDITIONAL/NO-GO) with day-by-day June 18-20 execution timeline
+**Deliverables**:
+  - `JUNE_20_GOOGL_GATE_DECISION_FRAMEWORK.md` (2-3K words): Decision tree, threshold interpretation, position sizing mapping, contingency activation rules
+  - `JUNE_19_THERMAL_VALIDATION_PROTOCOL.md` (1-2K words): Pre-install/post-install procedure checklist, expected results ranges, deviation handling, escalation criteria
+  - Updated `PHASE_3B_GO_NO_GO_DECISION_CRITERIA_REFINED.md` with actual thermal measurements from June 19 validation
+**Owner**: stockbot subagent (execution June 19-20)
+**Deadline**: June 20 08:00 UTC (ready for GOOGL gate decision at 13:30 UTC June 20)
+**Status**: ⏳ QUEUED for June 19-20 (post-cooler-install validation window, depends on Item 105 + cooler delivery June 18-19)
+**Confidence**: 90% — depends on cooler on-time delivery (June 18-19), thermal simulation grounded in May 18 baseline, decision thresholds from Item 108
+
+### 119. ⏳ seedwarden — June 22 Phase 3 Launch Go/No-Go Decision Framework (contractor selection + launch readiness)
+**Context**: Item 106 creates phase 3 launch decision automation matrix (16-cell GO/CAUTION/NO-GO with 9 numeric auto-escalation triggers). Item 111 creates contractor decision daily automation (June 15-17). This item synthesizes both into executable June 21-22 launch decision framework: contractor final status → content progress audit → supplier readiness → launch go/no-go routing.
+**Scope**:
+  - Contractor decision finalization (June 17 gate closure): ACCEPT/CONDITIONAL/ESCALATE outcome from Item 111; if ACCEPT, confirm start date June 22; if ESCALATE, activate Toptal or solo fallback
+  - Content progress audit (June 21): Women's Health bundle time-check (critical path, days 1-3 zero float), Respiratory/Immunity/Sleep/Digestive time estimates vs. schedule; flag any >10% overruns
+  - Supplier readiness verification (June 21): MRH material availability, iNaturalist backup readiness, Wikimedia image staging; flag any sourcing blockers
+  - Launch readiness scorecard: 4 dimensions (contractor status, content progress, sourcing readiness, platform stability) with numeric thresholds per Item 106; route to GO/CAUTION/NO-GO with contingency activation logic
+  - Decision document: Go/no-go recommendation with day-by-day June 22 launch timeline; contingency activation procedures if CAUTION/NO-GO routed
+**Deliverables**:
+  - `JUNE_22_PHASE3_LAUNCH_DECISION_FRAMEWORK.md` (2-3K words): 4-dimension scorecard, decision tree, contingency activation pathways
+  - `JUNE_21_LAUNCH_READINESS_VERIFICATION_CHECKLIST.md` (1-2K words): Contractor status check, content time audit, supplier verification, platform stability check
+  - Synthesis of Items 106+111 outcomes into single executable decision document
+**Owner**: seedwarden subagent (execution June 21-22)
+**Deadline**: June 22 06:00 UTC (ready for Phase 3 launch decision)
+**Status**: ⏳ QUEUED for June 21-22 (depends on Item 111 contractor decision June 15-17, Item 106 launch matrix)
+**Confidence**: 88% — contractor decision June 17 is hard dependency, content time tracking from prior Items 77/94, all contingency paths pre-staged in Item 106
+
 ### 114. ✅ systems-resilience — Phase 5.1 Platform Decision Rapid Recommendation & Deployment SOP (Session 3638 COMPLETE)
 **Status**: Completed June 16, 2026 (Session 3638, 04:58–05:55 UTC). All four deliverables production-ready and committed.
 **Deliverables** (ALL COMPLETE):
