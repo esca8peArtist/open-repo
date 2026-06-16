@@ -1,5 +1,45 @@
 # Check-in Summary
 
+## Session 3639 (June 16 05:20 UTC — 🔴 CRITICAL: systems-resilience DECISION 5H OVERDUE + MARKET VALIDATION MONITORING READY)
+
+**Status**: 🔴 **CRITICAL USER ACTION REQUIRED** — systems-resilience platform decision deadline passed **June 15 23:59 UTC** (now **5+ hours overdue**). Phase 5.1 deployment was scheduled for **June 9 13:00–15:00 UTC** (already passed). Current recommendation: **Nextcloud+Matrix (8/10 vs Discourse 5/10)**. Once user provides decision, orchestrator can deploy platform in 4-6 hours (copy-paste SOP ready in `PLATFORM_DECISION_FINAL_RECOMMENDATION.md`).
+
+**Market Validation Status**: ✅ **READY** — Jetson 5-session config (AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho, JPM ridge_wf, AMZN lgbm_ho) deployed and standing-by for automated validation 13:30–20:00 UTC (8h from now). No orchestrator intervention needed—validation runs autonomously.
+
+**Immediate Action Needed**:
+1. **🔴 URGENT**: Decide platform for systems-resilience Phase 5.1 deployment:
+   - **Option A — RECOMMENDED**: Nextcloud+Matrix (8/10) — zero Pi5-specific blockers, offline editing, E2E encryption, 4-6h deployment
+   - **Option B**: Discourse (5/10) — has IPv6 loopback bug on 64-bit PiOS, requires 3 workarounds, not recommended
+   - **Once decided**: Reply with "Nextcloud" or "Discourse"; orchestrator will begin deployment immediately
+2. **Marketplace validation monitoring** (automated, no user action): 13:30 UTC today, duration 6.5 hours
+3. **Wave 1-2 email execution** (resistance-research): Deadline passed June 14-15; Day 7 checkpoint June 17 will route Phase 2 based on engagement metrics
+
+**Duration**: ~5 minutes
+
+**What's in progress**:
+- **Market validation (June 16 13:30–20:00 UTC)**: Automated, no user intervention
+- **systems-resilience Phase 5.1 deployment**: Staging complete, awaiting platform decision
+- **Resistance-research Day 7 checkpoint**: Staged for June 17-18 post-Wave-1-2 execution
+
+**Items needing user input** (reordered by urgency):
+1. **🔴 systems-resilience (OVERDUE 5+ hours)**: Platform decision deadline **EXPIRED**. Nextcloud+Matrix strongly recommended (8/10). Decision needed within 1 hour to meet June 16-17 deployment window (Phase 5.1 was originally June 9, now can catch up June 16-17).
+2. **resistance-research**: Wave 1-2 email execution (75 min total). Deadline already passed June 14-15; optional catch-up, Day 7 checkpoint (June 17 09:00 UTC) will trigger Phase 2 routing regardless. Emails improve engagement metrics; optional but recommended.
+3. **cybersecurity-hardening**: VeraCrypt pre-boot restart (Windows manual action, Phase 1 step 1.3)
+4. **mfg-farm**: Test print execution (0.20mm layer, PLA+, 3 walls, 220–225°C)
+
+**Next orchestrator action**:
+- **05:20–13:15 UTC** (8 hours): Standing by; no autonomous work until market validation begins
+- **13:15 UTC**: Market warm-up monitoring begins (light infrastructure checks, no intervention)
+- **13:30–20:00 UTC**: Market-open validation executes autonomously (no action needed)
+- **20:00 UTC**: EOD post-market analysis (30-60 min automated processing)
+- **June 17 09:00 UTC**: Resistance-research Day 7 checkpoint execution (if Wave 1-2 executed June 14-15)
+- **June 17-18**: Phase 2 routing per PHASE_2_DAY7_CHECKPOINT_ROUTING_FRAMEWORK.md
+- **June 18 20:00 UTC**: POST_RETRAIN_VALIDATION_CHECKLIST user execution → Phase 4 routing
+
+**Exploration Queue Status**: Items 112-114 complete (comprehensive backtesting report, Phase 3 workflow design, platform decision SOP). Item 111 (contractor daily automation) queued for June 15-17; will execute when user posts Upwork job. No new Exploration Queue items added this session (standing by for market validation).
+
+---
+
 ## Session 3637.32 (June 16 04:51 UTC — 🟢 MARKET VALIDATION DAY: STANDING-BY SUSTAINED, ZERO AUTONOMOUS WORK, 8H 39M UNTIL VALIDATION)
 
 **Status**: ✅ **STANDING-BY SUSTAINED** — Full orientation complete (ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md verified current). Zero autonomous work available—all projects blocked on external events per design: (1) stockbot market validation 13:30 UTC auto-execution (8h 39m), (2) resistance-research Wave 1-2 user email execution (deadline passed June 14-15, Day 7 checkpoint will route Phase 2 June 17-18), (3) systems-resilience platform decision **OVERDUE since June 15 23:59 UTC** (recommendation: **Nextcloud+Matrix 8/10**), (4) cybersecurity-hardening VeraCrypt restart (Windows manual), (5) mfg-farm test print (manual). Session 3637.31 pre-staging work (PHASE_4_EXPANSION_CONTINGENCY_PLAYBOOKS.md, PHASE_2_DAY7_CHECKPOINT_ROUTING_FRAMEWORK.md) verified committed and production-ready. System production-ready.
