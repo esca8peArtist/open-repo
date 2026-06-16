@@ -1,27 +1,41 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3679, June 16 14:53 UTC — ORCHESTRATOR STANDBY)
+## Since Last Check-in (Session 3680, June 16 15:01 UTC — ORCHESTRATOR STANDBY FOR MARKET VALIDATION)
 
-**Status**: ✅ **MARKET VALIDATION PROCEEDING NORMALLY — ALL INCIDENTS RESOLVED (SESSIONS 3675-3678) — STANDING BY FOR 20:00 UTC POST-MARKET ANALYSIS**
+**Status**: ✅ **MARKET VALIDATION PROCEEDING NORMALLY — STANDING BY FOR 20:00 UTC POST-MARKET ANALYSIS**
 
-### Session 3679 — Orientation & Market Validation Monitoring (14:53 UTC)
+### Session 3680 — Orientation & Standing By (15:01 UTC)
 
 **What was accomplished**:
 
-**Orientation complete**:
-- ✅ Verified ORCHESTRATOR_STATE.md (current as of 14:46 UTC)
-- ✅ Verified all 5 trading sessions running with correct signals (post-Session 3678 fixes)
-- ✅ Confirmed no new issues in market validation window
-- ✅ Confirmed all active blocks remain unresolved (awaiting user action):
-  - cybersecurity-hardening: VeraCrypt restart (manual)
-  - mfg-farm: Test print execution (manual)
-  - open-repo: raspby1 runtime platform decision (user)
-  - systems-resilience: Platform choice decision (user)
-- ✅ Confirmed Exploration Queue has 10+ active items but appropriately deferred during market hours
+✅ **Orientation complete**:
+- Verified ORCHESTRATOR_STATE.md (current, auto-generated 15:01 UTC)
+- Verified market validation proceeding normally (13:30-20:00 UTC, 4h 59m remaining)
+- All 5 trading sessions generating correct signals after June 16 14:09 UTC (threshold cap) + 14:35 UTC (import error) fixes
+- No new issues detected; no intervention required during market hours
 
-**Decision**: Remain in standby mode during market validation window (13:30–20:00 UTC). No autonomous code work during active trading. 
+✅ **Block status verified**:
+- 4 active blocks remain, all require user action (not code-related)
+- No blocks can be resolved autonomously
 
-**Next action**: Execute scheduled post-market analysis at 20:00 UTC (metrics extraction, scenario routing, Phase 4 path decision)
+✅ **Work availability confirmed**:
+- No autonomous work available during market validation window (13:30-20:00 UTC)
+- Exploration Queue has 10+ items but deferred per protocol during active trading
+- All other projects blocked on user actions (resistance-research Wave 1-2 emails, cybersecurity Windows restart, mfg-farm test print, open-repo platform decision, systems-resilience platform decision)
+
+**Decision**: Remain in standby mode during market hours. Next action: Execute 20:00 UTC post-market analysis.
+
+### Items needing user input
+- **resistance-research**: Execute Wave 1-2 emails (30-45 min + 45-60 min window, June 14-15 preferred but still executable)
+- **cybersecurity-hardening**: Restart Windows machine to complete VeraCrypt pre-boot test (1.3)
+- **mfg-farm**: Execute test print (0.20mm layer height, PLA+, 3 walls, 220–225°C)
+- **open-repo + systems-resilience**: Choose platform (Docker vs systemd for raspby1; Nextcloud vs Discourse)
+
+---
+
+## Since Last Check-in (Session 3679, June 16 14:53 UTC — ORCHESTRATOR STANDBY)
+
+**Status**: ✅ **MARKET VALIDATION PROCEEDING NORMALLY — ALL INCIDENTS RESOLVED (SESSIONS 3675-3678) — STANDING BY FOR 20:00 UTC POST-MARKET ANALYSIS**
 
 ---
 
