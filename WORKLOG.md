@@ -1,3 +1,61 @@
+## Session 3675 (June 16 13:42–13:50 UTC — 🚨 CRITICAL: MARKET VALIDATION SIGNAL DROPOUT DETECTED)
+
+**Duration**: ~8 minutes (diagnosis + escalation)
+
+**Status**: ❌ **MARKET VALIDATION HALTED — CRITICAL SIGNAL DROPOUT ACROSS ALL 5 SESSIONS**
+
+**Work completed**:
+
+### Market Validation Monitoring
+
+**Discovery (13:42 UTC)**:
+- ✅ Orientation complete: Read ORCHESTRATOR_STATE.md (auto-gen 13:41 UTC), verified market validation running
+- ✅ Health check initiated: SSH + API health check queued to verify systems
+
+**Critical Issue (13:45 UTC)**:
+- 🚨 **SIGNAL DROPOUT detected**: Docker logs show ALL 5 sessions (AAPL, AMZN, JPM, MSFT, NVDA) generating `buy_prob=0.0000` and `action=HOLD` on every cycle for 15+ consecutive cycles (since ~13:30 UTC start of validation)
+- Models ARE producing `predicted_return` values (e.g., AAPL 0.0218, AMZN 0.0352), but these are NOT translating to buy_prob > 0
+- SignalHealthMonitor triggers CRITICAL alerts every 30 seconds: `SIGNAL_DROPOUT: No BUY/SELL in last 2h`, `BUY_PROB_COLLAPSE: mean_buy_prob=0.0000 < threshold=0.35`
+- **Pattern identical to May z-score saturation issue**: Extreme z-scores causing sigmoid output saturation
+
+### Diagnostic Attempts
+
+**Attempt 1 — Container Health Check (13:45 UTC)**:
+- API endpoint timeout (curl took >5 seconds)
+- SSH to Jetson successful
+
+**Attempt 2 — Log Analysis (13:45 UTC)**:
+- Confirmed signal dropout across ALL 5 sessions, not isolated to one
+- No z-score/feature clipping warnings in logs (suggesting different root cause than May issue, or masking the symptom)
+- Cycle count increasing without signal generation
+
+**Attempt 3 — Container Restart (13:45–13:48 UTC)**:
+- Executed `docker restart stockbot` on Jetson
+- **RESULT**: Issue PERSISTS after restart — still generating buy_prob=0.0000 across all sessions
+- Indicates systematic code/model inference issue, not transient
+
+### Escalation
+
+**Blocked Entry Created (13:48 UTC)**:
+- Added new BLOCKED.md entry: "stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window)"
+- Full context documented: timeline, diagnostic attempts, possible root causes
+- Decision deadline: 14:00 UTC (48 minutes) for user to either (A) fix & resume, or (B) cancel & reschedule
+
+**Discord Notification Sent (13:50 UTC)**:
+- Alerted user via Discord about critical signal dropout, diagnostic results, decision deadline
+
+**Git Commit (13:50 UTC)**:
+- Committed BLOCKED.md with critical issue entry
+
+### Assessment
+
+- **Validation Impact**: Only 18 minutes into 6.5-hour window, but validation is effectively halted (zero trades can execute)
+- **Hard Deadline Impact**: June 18 EOD gate validation deadline now at risk
+- **Root Cause Unknown**: Requires user investigation (feature preprocessing bug, model weights issue, or Alpaca data feed problem)
+- **Next Action**: Await user decision on whether to fix and resume today or defer to June 17
+
+---
+
 ## Session 3672 (June 16 12:37 UTC — 🟢 ORIENTATION + PRE-MARKET CHECKLIST SCHEDULING)
 
 **Duration**: ~5 min (orientation + scheduling)

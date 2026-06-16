@@ -1,38 +1,45 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3674, June 16 13:34 UTC)
+## Since Last Check-in (Session 3675, June 16 13:42–13:50 UTC)
 
-**Status**: ✅ **MARKET VALIDATION LIVE. ALL 5 SESSIONS TRADING. ORCHESTRATOR STANDING BY FOR 20:00 UTC POST-MARKET ANALYSIS.**
+**Status**: 🚨 **CRITICAL: MARKET VALIDATION HALTED — SIGNAL DROPOUT ACROSS ALL 5 SESSIONS. DECISION NEEDED BY 14:00 UTC (48 MINUTES).**
 
-**What was accomplished** (Session 3674 — 13:18–13:35 UTC):
-- ✅ **Pre-Market Validation Checklist executed** (6 sections all PASS):
-  - Container health: running 25+ min, port 8000 listening
-  - Database: trading.db 1.1 MB, 5 sessions active
-  - Models deployed: all 5 tickers (AAPL, MSFT, NVDA, JPM, AMZN) in ensemble_stackers
-  - Signal generation: active cycles in container logs
-  - Thermal baseline: 48.9°C (safe, <85°C threshold)
-  - Logs healthy: all <4 MB, total <1 GB
-- ✅ **GO DECISION**: Market validation proceeds
-- ✅ **Monitoring framework verified**: JUNE_16_18_LIVE_SIGNAL_MONITORING_TEMPLATE.md + JUNE_16_POSTMARKET_ANALYSIS_TEMPLATE.md both staged and ready
+**What happened** (Session 3675 — 13:42–13:50 UTC):
+- ✅ **Orientation**: Verified market validation running, all 5 sessions deployed
+- 🚨 **CRITICAL DISCOVERY (13:45 UTC)**: ALL 5 trading sessions (AAPL, AMZN, JPM, MSFT, NVDA) generating `buy_prob=0.0000` and `action=HOLD` on every cycle for 15+ consecutive cycles
+  - Models ARE producing `predicted_return` values (e.g., AAPL 0.0218, AMZN 0.0352), but NOT translating to buy_prob > 0
+  - SignalHealthMonitor flagging CRITICAL alerts: `SIGNAL_DROPOUT: No BUY/SELL in 2h`, `BUY_PROB_COLLAPSE: mean_buy_prob=0.0000`
+  - **Pattern identical to May z-score saturation issue** (extreme z-scores causing sigmoid saturation)
+  - Validation window impact: Only 18 min into 6.5-hour window, but validation effectively halted
 
-**What's in progress** (current session, Session 3674 continuing):
-- **13:18 UTC**: ✅ Pre-market validation complete, GO decision made
-- **13:30 UTC**: ✅ Autonomous market validation commenced (live trading, 5 sessions, 5 tickers)
-- **13:34 UTC**: Market running normally, orchestrator standing by (no intervention needed during 13:30–20:00 UTC autonomous trading)
-- **13:30–20:00 UTC**: Automated execution (5 live trading sessions, monitoring queries scheduled at :00, :30 per hour)
-- **20:00 UTC**: Post-market analysis execution (structured decision tree to route to Phase 4 readiness assessment)
+**Diagnostic attempts completed**:
+1. ✅ API health check initiated
+2. ✅ Docker logs analyzed — confirmed signal dropout across all 5 sessions, not isolated
+3. ✅ Container restart at 13:45 UTC → **ISSUE PERSISTS** (systematic code/model inference problem, not transient)
 
-**Items needing user input** (unchanged):
-> **Two decisions still needed** (deadline June 15 passed, blocks open-repo + systems-resilience Phase 5.1):
-> 1. **raspby1 runtime**: Docker (recommended) or systemd/venv?
-> 2. **systems-resilience platform**: Nextcloud+Matrix or Discourse?
+**Critical block created** (BLOCKED.md entry):
+- "stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window)"
+- Full diagnostic timeline, possible root causes, decision deadline documented
+- Committed to master at 13:50 UTC
+
+**Discord notification sent** (13:50 UTC):
+- Alerted user about critical signal dropout, decision deadline 14:00 UTC
+
+**Items needing user input** (URGENT):
+> **DECISION REQUIRED BY 14:00 UTC (48 MINUTES):**
+> - **Option A**: Investigate & fix root cause, resume validation today (requires diagnosis of feature preprocessing bug, model weights issue, or Alpaca data feed problem)
+> - **Option B**: Cancel June 16 validation, apply fixes, reschedule validation for June 17 with retrains
 > 
-> Once decided, orchestrator can execute deployment immediately (3-4h to production).
+> Hard deadline June 18 EOD means decision must be made NOW. Validation is halted (zero trades can execute).
+> 
+> **Secondary decisions still pending** (unchanged):
+> 1. **raspby1 runtime**: Docker (recommended) or systemd/venv? (blocks open-repo + systems-resilience Phase 5.1)
+> 2. **systems-resilience platform**: Nextcloud+Matrix or Discourse?
 
-**Suggested priorities for next session** (post-market validation):
-1. **Post-Market Analysis** (20:00 UTC today): Review live trading performance against retrain decision framework
-2. **Phase 4 Immediate Actions** (if market validation passes): Tier-2 funding queries, strategic plan updates
-3. **Retrain Execution** (June 17 08:00 UTC): AAPL+MSFT full-eval, 2022-2026 data (scheduled autonomously if GO decision made)
+**Suggested priorities for next session**:
+1. **IMMEDIATE (by 14:00 UTC)**: Respond with Option A or B decision + diagnosis if attempting Option A
+2. **If Option A succeeds**: Resume market validation, proceed to post-market analysis at 20:00 UTC
+3. **If Option A fails or Option B chosen**: Plan retrain + validation retry for June 17 with fixes
 4. **User Input Items**: Platform decisions for open-repo + systems-resilience (blocks two projects)
 
 ---
