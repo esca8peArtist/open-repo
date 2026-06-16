@@ -1,5 +1,27 @@
 # Check-in Summary
 
+## Session 3650 (June 16 07:47 UTC — 🟢 ORIENTATION + SCHEDULED MARKET VALIDATION)
+
+**Status**: ✅ **ALL SYSTEMS ON-SCHEDULE — ZERO AUTONOMOUS WORK BEFORE 11:15 UTC CHECKLIST**
+
+### Work completed:
+- ✅ Full orientation to all active projects, blocks, inbox, exploration queue
+- ✅ Verified stockbot market validation autonomously proceeding at 13:30 UTC
+- ✅ Confirmed resistance-research packages ready, awaiting user to execute emails
+- ✅ Identified zero autonomous work items before pre-market checklist
+- ✅ Scheduled next action: 11:15 UTC wakeup for pre-market validation checklist
+
+### Timeline:
+- **11:15 UTC** (~3h 28m): Wake for pre-market validation checklist (uses Session 3642 templates, 30 min)
+- **13:30–20:00 UTC**: Automated market validation (5 sessions live-trading autonomously)
+- **20:00 UTC**: Post-market analysis and path routing
+- **June 17 08:00 UTC**: AAPL/MSFT retrain execution (scheduled overnight)
+
+### Next action:
+Wake at 11:15 UTC and execute pre-market validation checklist per Session 3642 protocol.
+
+---
+
 ## Session 3649c (June 16 07:38 UTC — 🟢 PRE-SESSION CHECK-IN + MARKET VALIDATION PREPARATION)
 
 **Status**: ✅ **ALL SYSTEMS ON-SCHEDULE — STANDING-BY FOR AUTOMATED MARKET VALIDATION**
