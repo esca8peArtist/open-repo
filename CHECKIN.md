@@ -1,5 +1,33 @@
 # Check-in Summary
 
+## Session 3647 (June 16 07:05 UTC — 🟢 ROUTINE CALIBRATION + STANDING-BY FOR PRE-MARKET CHECKS)
+
+**Status**: ✅ **ORIENTATION COMPLETE — STANDING-BY FOR PRE-MARKET VALIDATION WINDOW**
+
+### Work completed:
+- ✅ Verified usage calibration (6 days old, within 7-day window) — resolved BLOCKED.md item
+- ✅ Confirmed all systems operational and awaiting market validation
+- ✅ Timeline secured: pre-market checks ~11:30 UTC (4.5h), market validation 13:30–20:00 UTC
+
+### Next actions:
+- **11:30 UTC (~4.5 hours)**: Execute pre-market validation checklist (30-min procedure, templates ready in Session 3642)
+- **13:30–20:00 UTC**: Market validation executes autonomously (5-model AAPL/MSFT/NVDA/JPM/AMZN lgbm_ho/ridge_wf)
+- **20:00 UTC**: Post-market analysis (20-30 min)
+- **June 17 09:00 UTC**: Resistance-research Day 7 checkpoint
+
+### Critical Decision Still Pending 🔴:
+- **systems-resilience platform** — **7+ hours overdue** (June 15 23:59 UTC deadline)
+- Recommendation: **Nextcloud+Matrix (8/10)**
+- Once decided → Phase 5.1 deployment 4-6 hours
+
+### System status:
+- All projects blocked on external events (by design) — optimal state
+- Stockbot: fully deployed and standing-by
+- Resistance-research: Day 7 checkpoint ready, Wave 1-2 execution deadline passed (metrics collection at checkpoint will route Phase 2)
+- No autonomous work until after market validation or user platform decision
+
+---
+
 ## Session 3642 (June 16 06:50 UTC — 🟢 MARKET VALIDATION PRE-STAGING COMPLETE + STANDING-BY)
 
 **Status**: ✅ **MARKET VALIDATION INFRASTRUCTURE PRODUCTION-READY — STANDING-BY FOR AUTOMATED WINDOWS**
