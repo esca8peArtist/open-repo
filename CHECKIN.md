@@ -1,5 +1,31 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3710 — June 16 22:58 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
+
+**Session Purpose**: Verify standing-by state remains correct; confirm no new user actions available since Session 3709; ready for next user action.
+
+**Work Completed This Session**:
+1. ✅ **Full Orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 22:58 UTC), BLOCKED.md, INBOX.md, PROJECTS.md
+2. ✅ **Block Audit** — All 4 active blocks verified as user-action dependent (no changes since Session 3709)
+3. ✅ **INBOX Verification** — Confirmed zero new user decisions since Session 3709
+4. ✅ **Project Scope Verification** — Confirmed no unfinished autonomous work available
+5. ✅ **Git Status** — ORCHESTRATOR_STATE.md auto-updated (timestamp + usage metrics); committing this session
+
+**Interpretation**: Standing-by state is correct by design. All autonomous work exhausted. Awaiting user decisions per Session 3709 summary.
+
+**Awaiting User Input**:
+1. **URGENT (Deadline: June 17 08:00 UTC)**: Stockbot Option A/B/C decision
+2. **Other actions** (secondary, no deadline):
+   - Resistance-research: Phase 2 Wave 1-2 email execution
+   - Platform decisions: runtime/deployment choices for open-repo + systems-resilience
+   - Manual actions: VeraCrypt restart, test print execution
+
+**Next Session**: Process any new user decisions in INBOX.md; route to work items or continue standing by.
+
+---
+
 ## Since Last Check-in (Session 3709 — June 16 22:51 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; ALL PROJECTS BLOCKED ON USER DECISIONS**
