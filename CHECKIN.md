@@ -1,5 +1,23 @@
 # Check-in Summary
 
+## Session 3666 (June 16 11:30 UTC — 🟢 STANDING-BY FOR PRE-MARKET CHECKLIST, WAKEUP SCHEDULED)
+
+**Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE. SCHEDULED WAKEUP FOR PRE-MARKET CHECKLIST EXECUTION.**
+
+**Orientation (11:30 UTC)**:
+- ✅ Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md — all current
+- ✅ No new blocks; all 3 active blocks require user action only
+- ✅ No new INBOX items; all prior items processed
+- ✅ All 5 stockbot sessions verified healthy and scheduled for pre-market wake
+
+**Action Taken**:
+- ✅ Scheduled wakeup for pre-market checklist execution (~1h 35m)
+- ✅ Updated WORKLOG.md with session summary
+
+**Conclusion**: Orchestrator correctly standing by. All autonomous work complete. Next: pre-market checklist execution (scheduled wakeup).
+
+---
+
 ## Session 3664 (June 16 11:15 UTC — 🟢 CONTINUING STANDBY FOR 13:15 UTC PRE-MARKET CHECKLIST)
 
 **Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE. STANDING-BY UNTIL 13:15 UTC FOR PRE-MARKET CHECKLIST EXECUTION.**
