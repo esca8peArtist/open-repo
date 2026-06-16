@@ -4634,3 +4634,99 @@ rator standing by for 13:15 UTC market validation window. No manual intervention
 3. June 17-18: Execute Wave 1-2 email sends (resistance-research) — estimated 75 min setup + 150 min execution
 4. June 17-18 17:00 UTC: Resistance-research Day 7 checkpoint routing decision (if Wave 1-2 executed)
 
+
+---
+
+## Session 3694 Check-in (June 16 20:07–20:45 UTC)
+
+**Session focus**: Orchestrator response to market validation halt + exploration queue replenishment
+
+### Since Last Check-in (Session 3692, June 16 19:43 UTC)
+
+**What happened**:
+- ✅ Market validation HALTED at 19:31 UTC (Session 3691 decision)
+- ✅ 20:00 UTC checkpoint CANCELLED
+- ✅ Root causes verified: (1) HMM state not persisted to disk, (2) Duplicate order_id idempotency guard not working
+
+**Completed work**:
+- ✅ **Updated PROJECTS.md stockbot Current focus** to reflect true state (awaiting user decision A/B/C)
+- ✅ **Spawned 3 parallel agents** for exploration queue replenishment:
+  1. Stockbot decision support (Options A/B/C fully documented, 95% confidence)
+  2. Systems-resilience disaster recovery (Phase 5.1 operationalization ready)
+  3. Resistance-research Phase 3 contingency (funding/researcher/crisis frameworks ready)
+- ✅ **All 9 new exploration queue items** production-ready and committed to master
+
+**Deliverables committed**:
+- fc90cd4 (stockbot: 3 decision support files, 2,204 lines)
+- 0500330b (systems-resilience: 3 DR/incident response files, 3,559 lines)
+- 8fa10575 (resistance-research: 3 contingency frameworks, 1,363 lines)
+
+### What's Available for User Action
+
+**Stockbot (URGENT — decision needed by June 17 08:00 UTC)**:
+- Choose Option A: Retry with fixes (3-4h fix + validation, runbook ready) — 95% confidence
+- Choose Option B: Use historical data (2h analysis, runbook ready) — 88% confidence
+- Choose Option C: Halt for investigation (7-21 days, runbook ready)
+- **User deadline**: Before AAPL+MSFT retrains start (June 17 08:00 UTC). Retrains hard deadline: June 18 EOD.
+
+**Resistance-research (user action needed)**:
+- Execute Wave 1-2 email sends (75 min total: 30-45 min Domain 51, 45-60 min Domains 48/59)
+- All email templates production-ready (copy-paste ready, contacts verified current)
+- **User deadline**: June 18 23:59 UTC (currently 2 days overdue, but 15 days to July 1 remain safe per timing analysis)
+
+**Systems-resilience (user decision needed)**:
+- Choose platform: Nextcloud+Matrix (8/10, recommended) OR Discourse (5/10, has Pi5 IPv6 bug)
+- Deployment runbooks available for both
+- Disaster recovery infrastructure already staged (platform-agnostic)
+- **Timeline**: Once platform decided, 4-6h deployment executable
+
+**All other projects**:
+- Cybersecurity-hardening: Awaiting VeraCrypt pre-boot restart (user manual action)
+- Mfg-farm: Awaiting test print execution (user manual action, 0.20mm layer height, PLA+, 3 walls, 220-225°C)
+- Open-repo: Awaiting platform/runtime decision (Docker vs systemd, Nextcloud vs Discourse)
+- Seedwarden: Awaiting Track B gate completion (4h user work)
+
+### Needs Your Input
+
+**Immediate (by June 17 08:00 UTC)**:
+1. **Stockbot market validation halt**: Which option? A (fix+retry), B (historical data), or C (halt investigation)?
+   - Support materials: fc90cd4 commit has all 3 runbooks (Options A/B/C)
+   - Recommendation: Option A if you have 3-4h today (June 16 evening) or June 17 early; Option B if time-constrained and confidence-willing to defer
+
+2. **Resistance-research Wave 1-2 emails** (if executable): Execute 75-min email sends (current deadline June 18 23:59 UTC)
+   - All materials production-ready; no blocker
+
+**By June 17 17:00 UTC**:
+3. **Systems-resilience platform choice**: Nextcloud+Matrix or Discourse?
+   - Infrastructure ready either way
+   - Recommendation: Nextcloud+Matrix (8/10 vs 5/10, no Pi5 IPv6 issues)
+
+**Other**:
+4. **Cybersecurity-hardening VeraCrypt**: Restart Windows, type VeraCrypt pre-boot password, click Encrypt
+5. **Mfg-farm test print**: Execute test print per spec (0.20mm PLA+ 3 walls 220-225°C), report snap-arm tolerance assessment
+
+### Key Metrics
+
+- **Token usage this session**: ~251k (agents + orchestration)
+- **New exploration queue items created**: 9 (all production-ready)
+- **Total new production files**: 9 across 3 projects (7,126 lines)
+- **All projects status**: 1 halted awaiting decision (stockbot), 1 awaiting execution (resistance-research), 3 blocked on user action (cybersecurity/mfg-farm/systems-resilience), others paused/complete
+
+### Confidence + Next Steps
+
+**All autonomous work for June 16 complete.** Exploration queue now provisioned with 3 critical contingency/decision frameworks:
+- Stockbot: User can execute any of 3 options with runbooks ready
+- Systems-resilience: DR fully staged for post-deployment operationalization
+- Resistance-research: Phase 3 launch resilient to funding cuts, researcher unavailability, political crises
+
+**System state**: All projects have either (a) executable user action paths with zero discovery overhead, or (b) contingency frameworks pre-staged for success despite real-world constraints.
+
+**Next session priorities**:
+1. **June 17 08:00 UTC**: If stockbot chooses Option A, execute fix + test
+2. **June 17-18 EOD**: AAPL+MSFT retrains (hard deadline June 18 EOD)
+3. **June 17-18 17:00 UTC**: Resistance-research Day 7 checkpoint (if Wave 1-2 executed)
+4. **June 18 20:00 UTC**: Stockbot post-retrain gate decision (Phase 4 go/no-go)
+5. **By June 17 23:59 UTC**: Systems-resilience platform decision
+
+**Budget remaining**: ~100-150k tokens (session used ~251k for high-value contingency infrastructure)
+
