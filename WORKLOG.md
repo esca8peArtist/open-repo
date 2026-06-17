@@ -14,7 +14,21 @@
      * mfg-farm test print (user action pending)
    - **Exploration Queue**: 4 active items (above 3-item minimum), all production-ready for execution
 
-2. ✅ **COMPLETE: Exploration Queue Item 1 — stockbot Market Microstructure Analysis for NVDA/GOOGL** (Session 3781, 11:33–12:20 UTC, 47 min actual)
+2. ✅ **COMPLETE: Seedwarden Phase 2 Scaling Research — Botanical Knowledge Platform** (Session 3781, research agent)
+   - **Deliverables created** (4 production-ready documents in `/projects/seedwarden/research/`):
+     * `PHASE_2_CONTENT_SCALING_PLATFORM_COMPARISON.md` — Platform matrix (Obsidian vs Notion vs GitBook vs Airtable+frontend vs custom CMS); species field schema; image licensing sources; contributor workflow models
+     * `PHASE_2_AUTOMATION_ARCHITECTURE_BLUEPRINT.md` — Full data pipeline: iNaturalist API v2, USDA PLANTS/Flora API, USA-NPN phenology, Wikidata SPARQL taxonomy sync, Wikimedia image automation; taxonomy synchronization strategy; seasonal update automation
+     * `PHASE_2_MARKET_OPPORTUNITY_ASSESSMENT.md` — Regional gap analysis (6 major US regions, California fully served, all others underserved); target audience ranking (HIGH: nurseries, restoration companies; MEDIUM: education, garden design software, seed libraries, consumers); revenue model comparison; 18 partnership targets
+     * `PHASE_2_IMPLEMENTATION_ROADMAP.md` — 12-month execution plan with parallel Track A (technical) + Track B (commercial validation); risk register; key decisions requiring stakeholder input
+   - **Key findings**:
+     * No existing platform combines bioregional organization + propagation data + real-time phenology + commercial monetization — clear market white space
+     * Recommended architecture: Airtable (species database) + Astro/Next.js (public frontend) + n8n (automation middleware)
+     * Initial 50-species pipeline buildout estimated at 65–103 dev-hours
+     * Month 6 revenue target from platform: $1,200–4,000/month (B2B licensing + affiliate + premium subscription), additive to existing Etsy revenue
+   - **Confidence**: 88% on platform recommendations; 82% on market opportunity sizing; 80% on implementation timeline
+   - **Sources consulted**: 34 (iNaturalist, USDA PLANTS, Flora API, USA-NPN, Wikidata, Darwin Core, Calflora, bplant.org, Mushroom Observer, Flora Incognita, Obsidian, Notion, GitBook, Airtable, n8n, Native Plant Trust, Homegrown National Park, habitat restoration market reports, nursery market reports, garden design software market)
+
+3. ✅ **COMPLETE: Exploration Queue Item 1 — stockbot Market Microstructure Analysis for NVDA/GOOGL** (Session 3781, 11:33–12:20 UTC, 47 min actual)
    - **Deliverables created** (3 production-ready documents, 883 lines, 64K):
      * `NVDA_GOOGL_MARKET_MICROSTRUCTURE_ANALYSIS.md` (233 lines) — order book depth, fill probability, HFT message rates, volatility profiles
      * `TIER_2_TICKER_FEATURE_ENGINEERING_LANDSCAPE.md` (278 lines) — feature transferability, HMM regime stability, data availability verification
