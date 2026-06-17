@@ -1,5 +1,40 @@
 # Check-in Summary
 
+## Session 3835 — Final June 18 Validation Standby Orientation (June 17 23:52 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY FOR JUNE 18 13:30 UTC MARKET VALIDATION WINDOW — ALL SYSTEMS OPERATIONAL**
+
+### Since Last Check-in (Session 3834, 6 minutes ago)
+- ✅ **Full orientation complete**: Read ORCHESTRATOR_STATE.md, verified all active blocks, processed INBOX
+- ✅ **Validation readiness confirmed**: 100% — Option A deployed, all 5 models staged, monitoring checklist verified
+- ✅ **No autonomous work available**: Correctly staged per design (all projects blocked on external dependencies or validation trigger)
+- ⏳ **Time until validation window**: ~13h 37m (June 18 13:30 UTC market open)
+
+### What's Accomplished (Cumulative from Prior Sessions)
+- ✅ **stockbot Option A deployed**: HMM warmup priming (3-layer) + order-ID idempotency persistence (June 17 22:07 UTC)
+- ✅ **All 5 models staged**: AAPL/MSFT/NVDA lgbm_ho, JPM/AMZN ridge_wf — ready for concurrent trading
+- ✅ **AAPL/MSFT retrains**: Complete and verified (6/7 gates each)
+- ✅ **Validation monitoring**: OPTION_A_VALIDATION_CHECKLIST.md (10.4 KB) ready with HMM/orderID/buy_prob watch
+- ✅ **Risk frameworks**: Phase 4 decision trees, capital allocation models, contingency playbooks staged
+- ✅ **Exploration queue**: Post-validation analysis framework ready (Item 5) for 20:15 UTC execution
+
+### Items Needing Your Input
+- **None until post-validation** — All decision frameworks staged, awaiting June 18 results
+- **June 19 post-validation**: Phase 4 expansion decision (if validation PASS)
+
+### Active Blocks (No Changes)
+1. **cybersecurity-hardening**: VeraCrypt Phase 1 restart (manual user action) — blocked 36+ days
+2. **mfg-farm**: Test print execution (manual user action) — blocked 36+ days
+3. **open-repo + systems-resilience**: raspby1 platform decision (decision deadline EXPIRED June 15)
+
+### Suggested Next Session
+- **June 18 20:15 UTC**: Post-validation analysis (Exploration Queue Item 5) — market validation closes at 20:00, orchestrator executes analysis and recommends Phase 4 path within 15 minutes
+
+**Effort**: 4 minutes (orientation + final verification)  
+**Budget**: ~199.5k tokens remaining (0.5k used this session)
+
+---
+
 ## Session 3834 — Continuation of June 18 Validation Standby (June 17 23:46 UTC)
 
 **Status**: ✅ **ORCHESTRATOR CONTINUING STANDBY FOR JUNE 18 13:30 UTC MARKET VALIDATION WINDOW**
