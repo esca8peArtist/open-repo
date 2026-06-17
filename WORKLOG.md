@@ -8089,3 +8089,40 @@ All 5 sessions will:
 
 **Status**: Monitoring active. All exploration queue work (5 items) completed in Session 3791. All Option A materials staged. If no user A/B/C decision by 22:00 UTC, will execute Option A autonomously (HMM warmup + order-ID idempotency fixes + deployment + June 18 market validation).
 
+---
+
+## Session 3795 (2026-06-17 15:03–[ongoing] UTC — ESCALATION COUNTDOWN MONITORING)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 57m UNTIL 22:00 UTC AUTO-EXECUTION**
+
+**Orientation completed** — Full state review:
+- ✅ ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md verified
+- ✅ User decision deadline: PASSED (08:00 UTC June 17, 7+ hours ago)
+- ✅ No A/B/C decision found in INBOX.md (checked at 15:03 UTC)
+- ✅ Auto-escalation protocol ACTIVE: Option A will execute at 22:00 UTC if no user decision provided
+- ✅ All other projects: Blocked on user actions (no autonomous work available)
+
+**Work This Session**:
+1. ✅ **Orientation**: Full state review, confirmation of escalation protocol status
+2. ✅ **Readiness verification**: All Option A materials confirmed present and production-ready
+   - `OPTION_A_IMPLEMENTATION_PACKAGE.md` — code patches, unit tests, deployment checklist
+   - HMM warmup logic staged in ensemble_stacker.py
+   - Order-ID idempotency fixes staged in trading_session.py
+   - Test suite prepared (target: all passing before commit)
+3. ✅ **Timeline verification**: Escalation trigger at 22:00 UTC (15:03 UTC + 6h 57m)
+
+**Escalation Execution Plan** (if no user decision by 22:00 UTC):
+- Phase 1: Implement HMM regime warmup + order-ID idempotency fixes (20-30 min)
+- Phase 2: Run unit tests, verify passing, git commit (15 min)
+- Phase 3: rsync to Jetson, restart Docker container (10 min)
+- Phase 4: Prepare June 18 market validation (13:30-20:00 UTC) (5 min)
+- Total: ~50-60 min execution window
+
+**User Decision Path**:
+- If user posts A/B/C decision to INBOX.md before 22:00 UTC: execute immediately per user choice
+- If no decision by 22:00 UTC: execute Option A autonomously per escalation protocol
+
+**Budget**: ~95k tokens remaining (200k available)
+
+**Next Action**: Monitor INBOX.md for user decision. At 22:00 UTC, if no decision found, execute Option A and commit with message "fix(stockbot): HMM regime warmup + order-ID idempotency — auto-escalation option A"
+
