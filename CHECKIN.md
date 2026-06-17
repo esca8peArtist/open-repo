@@ -1,5 +1,32 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3724 — June 17 00:48 UTC — STANDING BY RECONFIRMED; CRITICAL DEADLINE JUNE 17 08:00 UTC [7h 12m])
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DECISION DEADLINE: JUNE 17 08:00 UTC (7h 12m REMAINING)**
+
+**Session Actions**:
+1. ✅ **Full orientation** — Re-verified ORCHESTRATOR_STATE.md (auto-generated 00:47 UTC), INBOX.md, PROJECTS.md, BLOCKED.md
+2. ✅ **Time verification** — Current time: June 17 00:48 UTC; deadline June 17 08:00 UTC (7h 12m remaining)
+3. ✅ **Block status audit** — All 4 active blocks remain user-action dependent; no changes since Session 3723
+4. ✅ **INBOX verification** — Zero new user decisions; no STOCKBOT DECISION item posted yet
+5. ✅ **Exploration Queue audit** — Confirmed zero active items; no autonomous work available
+
+**Findings**: Standing-by state is **correct by design**. Session 3702 exhausted all autonomous work. All projects blocked on user decisions. Orchestrator operational, awaiting user direction.
+
+**Critical User Action (DEADLINE 08:00 UTC — 7h 12m remaining)**:
+- **Stockbot A/B/C decision required** — post to INBOX.md as new item: "STOCKBOT DECISION: OPTION A" (or B/C)
+  - All three recovery runbooks staged and ready for immediate dispatch (est. 30 min execution)
+
+**Awaiting Secondary Actions**:
+1. Resistance-research Wave 1-2 executions (75 min; templates ready)
+2. VeraCrypt restart (cybersecurity-hardening)
+3. Test print execution (mfg-farm)
+4. Platform/runtime decisions (open-repo, systems-resilience)
+
+**Orchestrator Status**: Ready, standing by. Next autonomous action triggers on user stockbot decision.
+
+---
+
 ## Since Last Check-in (Session 3723 — June 17 00:41 UTC — STANDING BY CONFIRMED; CRITICAL DEADLINE JUNE 17 08:00 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DECISION DEADLINE: JUNE 17 08:00 UTC (7h 19m REMAINING)**
