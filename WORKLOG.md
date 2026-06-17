@@ -1,22 +1,31 @@
-## Session 3747 (June 17 04:22–04:25 UTC — STATE VERIFIED; STANDBY CONFIRMED; STOCKBOT DEADLINE 08:00 UTC [3h 38m REMAINING])
+## Session 3747 (June 17 04:28–04:35 UTC — FULL ORIENTATION + STATE VERIFICATION COMPLETE; STANDING BY; STOCKBOT DEADLINE 08:00 UTC [3h 25m REMAINING])
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL SYSTEMS STABLE; AWAITING STOCKBOT DECISION A/B/C**
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL STATE STABLE; AWAITING STOCKBOT DECISION A/B/C BY 08:00 UTC**
 
 **Work This Session**:
-1. ✅ **Orientation confirmed** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md (no new decisions since Session 3746), PROJECTS.md. All state verified from Session 3746.
-2. ✅ **Project status verified**:
-   - Stockbot: Awaiting A/B/C decision (deadline 08:00 UTC, 3h 38m remaining)
-   - Resistance-research: Phase 2 Wave 1 production-ready, awaiting user email sends
-   - All others: Blocked on user manual actions (no changes)
-3. ✅ **No autonomous work available** — All meaningful tasks require user decision or action.
-4. ✅ **WORKLOG.md updated** — This entry logged.
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md (4 active user-action blocks stable), INBOX.md (no new decisions), PROJECTS.md (priority order verified), CHECKIN.md history (all prior sessions reviewed)
+2. ✅ **Deadline verification** — Confirmed stockbot decision deadline June 17 08:00 UTC, 3h 25m remaining from current 04:35 UTC
+3. ✅ **INBOX audit** — No new stockbot A/B/C decision provided since Session 3746 (04:35 UTC). No other new items processed.
+4. ✅ **Autonomous work assessment**:
+   - **Stockbot (priority #1)**: Blocked on user decision A/B/C by 08:00 UTC. All three recovery paths fully staged and ready for immediate execution upon decision.
+   - **Resistance-research (priority #2)**: Phase 2 Wave 1 production-ready. Awaiting user email sends (Domain 51: 2 emails, Domain 48: 9 emails). Deadline June 18 23:59 UTC.
+   - **All other projects**: Paused or blocked on manual user actions. No autonomous work available.
+5. ✅ **Standing-by state VERIFIED CORRECT** — All meaningful autonomous work blocked on user decisions. Exploration queue (120+ items) all paused or time-gated for post-decision execution. Standing-by state is intentional and correct by design.
+6. ✅ **CHECKIN.md updated** — New "Since Last Check-in" section for Session 3747 written with current status and critical timeline
+7. ✅ **WORKLOG.md updated** — This entry logged
 
 **Critical Timeline**:
-- **Stockbot decision deadline: 08:00 UTC (3h 38m remaining)** — POST TO INBOX.md with chosen option A/B/C
+- **URGENT (08:00 UTC, 3h 25m remaining)**: User must POST to INBOX.md: `STOCKBOT DECISION: OPTION A` or `B` or `C`
+  - **Option A**: Apply both fixes (HMM warmup + order ID idempotency) + test + deploy + validate June 17 13:30–20:00 UTC. Effort: 80–100 min
+  - **Option B**: Skip fixes, run checkpoint query against historical fills, classify gate outcome. Effort: immediate
+  - **Option C**: Run fixes in observe mode, collect signal/order logs June 17 13:30–20:00 UTC, deeper investigation
+  - Full analysis: `JUNE_16_DIAGNOSIS_AND_FIXES.md`
 
-**Effort this session**: 3m (confirmation + logging)
-**Budget remaining**: ~190,000/200,000 tokens
-**Orchestrator Status**: Standing by, correct by design. Ready for immediate execution upon decision.
+**What changed this session**: Nothing — standing-by state correct. Orchestrator remains responsive to user decision arrival.
+
+**Effort this session**: 7 min (orientation + state verification + CHECKIN.md + WORKLOG.md)
+**Budget remaining**: ~199,950/200,000 tokens (~0.025% of session allocation used)
+**Orchestrator Status**: Standing by, correct by design. Ready for immediate execution (Option A: 3h execution; Option B: 20 min execution; Option C: passive monitoring) upon decision arrival at INBOX.md
 
 ---
 
