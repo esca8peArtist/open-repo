@@ -1,5 +1,35 @@
 # Check-in Summary
 
+## Session 3802 — Orchestrator Orientation (June 17 16:42–16:50 UTC)
+
+**Status**: 🔴 **HMM BLOCK STILL ACTIVE — ALL PROJECTS BLOCKED ON USER DECISIONS**
+
+**What was verified**:
+- ✅ **ORCHESTRATOR_STATE.md verified** — current state snapshot accurate
+- ✅ **HMM block still valid** — `docker logs` verify `regime=None` persists at 16:42 UTC (consistent with Session 3801 diagnosis)
+- ✅ **All other projects blocked**: resistance-research (awaiting email execution), cybersecurity-hardening (awaiting Windows restart), mfg-farm (awaiting test print), seedwarden (awaiting contractor decision)
+- ✅ **Exploration Queue reviewed** — 15+ items all blocked on prior user decisions
+- ✅ **No autonomous work available** — all active and queued projects require user action
+
+**Critical blockage chain**:
+1. **stockbot priority #1**: Blocked on HMM regime detection failure (Session 3800 Option A fix did not work)
+   - Option A: Rollback (disable HMM masking, <5 min, recommended for time-sensitive June 18 validation)
+   - Option B: Deep debug (2-3h code audit of regime detection pipeline, risk: validation window expires)
+   - Option C: Skip validation (postpone to next window, lose 5 days data + 2-week delay)
+   - **Verify command confirms block still real**: `docker logs stockbot` shows regime=None consistently at 16:42 UTC
+   
+2. **resistance-research priority #2**: Phase 2 Wave 1-2 production-ready, awaiting user copy-paste of emails (3-4 hours effort, Domains 48/51/59)
+
+3. **All other projects**: Awaiting user actions (Windows restart, test print results, contractor decision, email execution)
+
+**What I need**:
+- **User decision on stockbot HMM issue** — which option (A/B/C)? User can post to INBOX.md or CHECKIN.md
+- **If no decision**: Project remains blocked until June 18 13:30 UTC (validation window start), at which point block may be re-escalated or skipped
+
+**Next action**: Commit ORCHESTRATOR_STATE.md and this CHECKIN.md entry. Session complete — no autonomous work available.
+
+---
+
 ## Session 3801 — Post-Escalation Diagnosis (June 17 17:30–17:45 UTC)
 
 **Status**: 🔴 **CRITICAL: OPTION A FIX DID NOT WORK — HMM REGIME STILL STUCK AT NONE**
