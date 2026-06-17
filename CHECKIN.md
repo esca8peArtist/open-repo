@@ -1,5 +1,26 @@
 # Check-in Summary
 
+## Session 3813 — Orientation & Idle Status (June 17 19:00–19:30 UTC)
+
+**Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE — IDLING UNTIL JUNE 18 MARKET VALIDATION**
+
+**What happened**:
+- ✅ Oriented to ORCHESTRATOR_STATE.md — confirmed Session 3812 (Option A deployment) completed successfully
+- ✅ Verified BLOCKED.md — all 4 active blocks require user action only (VeraCrypt restart, 3D test print, platform decision, runtime decision)
+- ✅ Verified INBOX.md — no new items since Session 3485
+- ✅ Confirmed stockbot deployment completed: Option A fixes (HMM bar priming + order_tracker integration) deployed to Jetson, ready for validation
+
+**Project Status**:
+- **stockbot**: Awaiting June 18 market validation window (13:30-20:00 UTC). Current 2-session config (JPM + AMZN) will verify fixes. No autonomous work available.
+- **resistance-research**: Phase 2 Wave 1-2 materials staged, awaiting user copy-paste email execution.
+- **All other projects**: Blocked on user actions (cybersecurity-hardening, mfg-farm) or complete (off-grid-living, career-training).
+
+**Decision Status**: Auto-escalation protocol from Session 3811 remains active. User decision deadline 22:00 UTC (post-market decision support framework in place). If no decision by 22:00 UTC, Option A execution confirmed.
+
+**Next Session**: June 18 post-market analysis (target 20:15 UTC) — evaluate June 18 market validation results and recommend Phase 4 path.
+
+---
+
 ## Session 3812 — Option A Implementation: Order Tracker Integration (June 17 18:31–19:50 UTC)
 
 **Status**: ✅ **IN PROGRESS — Option A IMPLEMENTATION EXECUTING (HMM Fix Already Done + Order Tracker Integration)**
