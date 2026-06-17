@@ -7897,3 +7897,28 @@ All 5 sessions will:
 **Output**: User now has structured decision support for $7.5K+ recovery decision
 **Next**: Await user approval in INBOX.md, then execute Option A immediately
 
+
+---
+
+## Session 3790 (2026-06-17 13:42–14:30 UTC) — Orchestrator Escalation Protocol Status
+
+**Orientation completed** — All state files reviewed. Stockbot decision block confirmed with auto-escalation protocol in effect (22:00 UTC trigger). No changes to project status since Session 3789.
+
+**Work Summary**:
+- ✅ Orientation: ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md reviewed
+- ✅ Block status verified: stockbot A/B/C decision auto-escalation ACTIVE (22:00 UTC)
+- ✅ Documentation updated:
+  - BLOCKED.md: Added Session 3790 escalation status and auto-execution context
+  - CHECKIN.md: Added Session 3790 summary documenting escalation protocol
+  - WORKLOG.md: This entry
+
+**Next actions**:
+- Monitor INBOX.md for user decision (A/B/C) every 1-2 hours
+- At 22:00 UTC (if no decision): Execute Option A autonomously (HMM + order-ID fixes + deploy)
+- Intermediate work: None assigned (waiting for decision or escalation)
+
+**Status**: Standing by for user decision or auto-escalation trigger. All Option A materials staged and ready for rapid execution.
+
+
+**Option A Implementation Package created** — `projects/stockbot/OPTION_A_IMPLEMENTATION_PACKAGE.md` (production-ready, contains all code patches, unit tests, deployment checklist, and rollback plan). Ready for execution at 22:00 UTC escalation trigger or immediately upon user approval.
+
