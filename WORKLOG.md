@@ -1,3 +1,25 @@
+## Session 3747 (June 17 04:22–04:25 UTC — STATE VERIFIED; STANDBY CONFIRMED; STOCKBOT DEADLINE 08:00 UTC [3h 38m REMAINING])
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL SYSTEMS STABLE; AWAITING STOCKBOT DECISION A/B/C**
+
+**Work This Session**:
+1. ✅ **Orientation confirmed** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md (no new decisions since Session 3746), PROJECTS.md. All state verified from Session 3746.
+2. ✅ **Project status verified**:
+   - Stockbot: Awaiting A/B/C decision (deadline 08:00 UTC, 3h 38m remaining)
+   - Resistance-research: Phase 2 Wave 1 production-ready, awaiting user email sends
+   - All others: Blocked on user manual actions (no changes)
+3. ✅ **No autonomous work available** — All meaningful tasks require user decision or action.
+4. ✅ **WORKLOG.md updated** — This entry logged.
+
+**Critical Timeline**:
+- **Stockbot decision deadline: 08:00 UTC (3h 38m remaining)** — POST TO INBOX.md with chosen option A/B/C
+
+**Effort this session**: 3m (confirmation + logging)
+**Budget remaining**: ~190,000/200,000 tokens
+**Orchestrator Status**: Standing by, correct by design. Ready for immediate execution upon decision.
+
+---
+
 ## Session 3746 (June 17 04:14–04:35 UTC — FULL VERIFICATION COMPLETE; STOCKBOT DEADLINE 08:00 UTC [3h 45m REMAINING])
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — RESISTANCE-RESEARCH PHASE 2 WAVE 1 PRODUCTION-READY CONFIRMED; AWAITING STOCKBOT DECISION**
