@@ -5557,3 +5557,42 @@ All 5 sessions will:
 **Orchestrator Decision**: Standing by. No autonomous work available. Awaiting user decisions per BLOCKED.md entries.
 
 **Next Session**: Check INBOX.md for user decisions. If stockbot A/B/C decision provided by 08:00 UTC, dispatch immediately. Otherwise, continue standing by.
+
+---
+
+## Session 3721 (June 17 00:20 UTC — ORCHESTRATOR ORIENTATION COMPLETE; STANDING BY CONFIRMED)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ORIENTATION COMPLETE; STOCKBOT A/B/C DEADLINE: JUNE 17 08:00 UTC (7h 40m REMAINING)**
+
+**Session Actions**:
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, WORKLOG.md recent sessions
+2. ✅ **Time verification** — Current time: June 17 00:20 UTC (via `date -u`); deadline June 17 08:00 UTC (7h 40m remaining)
+3. ✅ **Block verification** — All 4 active blocks remain user-action dependent; no new blocks added; no auto-resolvable items
+4. ✅ **INBOX verification** — Zero new user decisions since Session 3720 (00:14 UTC); no STOCKBOT DECISION item provided
+5. ✅ **Decision materials audit** — All three recovery options staged and ready in projects/stockbot/:
+   - OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md (32K) — Fix HMM warmup + duplicate order_id, 3-4h
+   - OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md (24K) — Skip live validation, use backtest data
+   - OPTION_C_INVESTIGATION_ROADMAP.md (26K) — Detailed investigation protocol
+6. ✅ **Project status audit** — All projects verified blocked on user decisions/actions:
+   - **stockbot**: Awaiting A/B/C decision (deadline 08:00 UTC) — support materials ready
+   - **resistance-research**: Phase 2 Wave 1-2 templates ready for user email sends
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual)
+   - **mfg-farm**: Test print execution (manual)
+   - **open-repo**: Runtime/platform decisions pending
+   - **systems-resilience**: Platform choice pending (deadline passed June 15)
+   - **All others**: Paused or complete
+
+**Interpretation**: Standing-by state is **correct by design**. All autonomous work is complete (as confirmed in Session 3702). All projects blocked on user decisions with no new decisions provided. Orchestrator ready and waiting for user direction on stockbot A/B/C within 7h 40m.
+
+**What Awaits User Action**:
+1. **URGENT (Deadline June 17 08:00 UTC — 7h 40m remaining)**: Provide stockbot decision A/B/C
+   - Post to INBOX.md as new item: "STOCKBOT DECISION: OPTION A" (or B or C)
+   - Upon receipt, orchestrator will dispatch chosen recovery path immediately (est. 30 min to execution)
+2. **Resistance-research Phase 2 Wave 1-2 executions** — User email sends ready in templates (75 min total)
+3. **Physical/manual actions** — VeraCrypt restart, test print execution
+4. **Infrastructure decisions** — open-repo/systems-resilience runtime/platform choices
+
+**Orchestrator readiness**: All materials staged. No discovery overhead. Capable of immediate execution upon user decision. Standing by.
+
+**Next session**: Check INBOX.md for stockbot A/B/C decision. If provided, execute chosen recovery path immediately. Otherwise, continue standing by and reorient as needed.
+
