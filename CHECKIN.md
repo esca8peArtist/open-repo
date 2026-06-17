@@ -1,5 +1,26 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3761 — June 17 06:41 UTC — FINAL CHECKPOINT WAKEUP SCHEDULED 07:41 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; FINAL WAKEUP SCHEDULED IN ~1 HOUR**
+
+**Session Actions** (3761):
+1. ✅ **State verification** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md read; no new decisions posted
+2. ✅ **Blocks verified stable** — All active blocks unchanged; stockbot A/B/C decision still awaiting user input
+3. ✅ **Work verification** — All projects blocked on external dependencies (stockbot decision, user email execution, test print, etc.) or paused. Exploration Queue empty. No autonomous work available.
+4. ✅ **Final wakeup scheduled** — ScheduleWakeup invoked for ~07:41 UTC (19 min before 08:00 UTC deadline)
+
+**Critical Countdown**:
+- **Current time**: 06:41 UTC
+- **Final checkpoint**: ~07:41 UTC (via scheduled wakeup)
+- **Hard deadline**: 08:00 UTC (1h 19m remaining)
+
+**Standing-by protocol**: Correct. No autonomous work. Awaiting user decision A/B/C per BLOCKED.md entry.
+
+**Effort this session**: 3 min (orientation + state verification + scheduling)
+
+---
+
 ## Since Last Check-in (Session 3760 — June 17 06:35 UTC — FINAL CHECKPOINT WAKEUP SCHEDULED 08:02 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; FINAL WAKEUP SCHEDULED IN ~1.5 HOURS**
