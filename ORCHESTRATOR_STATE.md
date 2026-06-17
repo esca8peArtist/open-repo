@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-17T16:17:17Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-17T16:31:36Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 56.7% | Reset in 128h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 57.2% | Reset in 128h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -65,8 +65,8 @@
 - POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines, Session 3770): Root cause identified — ISSUE-3: raspby1 host platform/runtime decision (Docker vs systemd) with deadline June 15 23:59 UTC expired, no user response. Blocks both open-repo AND systems-resilience Phase 5.1 simultaneously.
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: stockbot — focus references Session 3739 (60 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: open-repo — focus references Session 3671 (128 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 3739 (61 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 3671 (129 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
