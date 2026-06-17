@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Phase 2 Multi-Domain Wave Orchestration Script
-Supports: Domain 51 (Campaign Finance), Domain 59 (Economic Precarity / Senate Finance CTC)
+Supports: Domain 51 (Campaign Finance), Domain 59 (Economic Precarity / Senate Finance CTC),
+          Domain 48 (Criminal Justice / Civic Exclusion Architecture)
 
 Coordinates Wave 1-2-3 execution across both domains. Generates domain-specific
 execution guides, logs send results to WORKLOG.md, and provides recovery commands
@@ -30,9 +31,24 @@ Usage:
     uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --log-bounce 5 --fallback
     uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --log-reply 2 --signal STRONG --summary "CBPP replied asking about Senate Finance testimony"
 
-    # T+7 checkpoint
+    # T+7 checkpoint (per-domain)
     uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 51 --t7-check
     uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --t7-check
+
+    # Day 7 multi-domain checkpoint (all 3 domains — June 17-18 checkpoint execution)
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --t7-checkpoint
+
+    # Routing decision (takes domain IDs + signal strengths, outputs Tier 2 activation sequence)
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py \\
+        --routing-decision 59 51 48 STRONG MODERATE WEAK
+
+    # Activate Tier 2 for a domain with signal strength
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py \\
+        --activate-tier2 59 STRONG
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py \\
+        --activate-tier2 51 MODERATE
+    uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py \\
+        --activate-tier2 48 WEAK
 
     # Generate guide (stdout only, no WORKLOG entry)
     uv run python PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py --domain 59 --generate-guide wave1
@@ -444,10 +460,236 @@ DOMAIN_59_CONTACTS = {
 }
 
 # ---------------------------------------------------------------------------
+# Domain 48 Configuration
+# ---------------------------------------------------------------------------
+
+DOMAIN_48_GIST = "https://gist.github.com/esca8peArtist/00c1423e3da7bb4693fa285ec87f18a8"
+DOMAIN_48_DEADLINE = "2026-07-15"  # Virginia Right to Vote Coalition integration window
+DOMAIN_48_DEADLINE_SECONDARY = "2026-11-03"  # Virginia ballot measure
+DOMAIN_48_TOPIC = "Criminal Justice / Civic Exclusion Architecture / Democratic Participation"
+DOMAIN_48_STATE_FILE = "wave_orchestration_state_d48.json"
+DOMAIN_48_LOG_FILE = "DOMAIN_48_DISTRIBUTION_SEND_LOG_TEMPLATE.md"
+
+DOMAIN_48_CONTACTS = {
+    # Wave 1 — Research infrastructure organizations
+    1: {
+        "wave": 1,
+        "org": "The Sentencing Project",
+        "contact_name": "Nicole D. Porter",
+        "role": "Senior Director of Advocacy",
+        "primary_email": "nporter@sentencingproject.org",
+        "backup_email": None,
+        "form_fallback": "https://www.sentencingproject.org/about/contact-us/",
+        "verified_date": "2026-06-05",
+        "confidence": "HIGH",
+        "domain_hook": (
+            "Primary source: 'Locked Out 2024' data; 1-in-22 Black Americans disenfranchisement; "
+            "Virginia, Florida, Maryland advocacy priority"
+        ),
+        "response_probability": "40-60%",
+        "notes": (
+            "Email format: first_initial + last_name @ sentencingproject.org (91.9% staff format). "
+            "Applied: nporter@sentencingproject.org. "
+            "Backup: sentencingproject.org/about/contact-us/ form. "
+            "HIGHEST PRIORITY — primary data source acknowledgment makes this non-cold outreach."
+        ),
+    },
+    2: {
+        "wave": 1,
+        "org": "Prison Policy Initiative",
+        "contact_name": "Peter Wagner",
+        "role": "Executive Director",
+        "primary_email": "info@prisonpolicy.org",
+        "backup_email": None,
+        "verified_date": "2026-06-05",
+        "confidence": "HIGH",
+        "domain_hook": (
+            "'Rigging the Jury' jury exclusion analysis; 'Nowhere to Go' housing barriers; "
+            "'Winnable Criminal Justice Reforms in 2026' practitioner framework"
+        ),
+        "response_probability": "35-50%",
+        "notes": (
+            "PPI does not publish individual staff emails. info@prisonpolicy.org is verified general inbox. "
+            "Check prisonpolicy.org/about for any direct contact before June 17 send. "
+            "Secondary contacts: Wendy Sawyer (Research Director), Leah Wang (Senior Research Analyst)."
+        ),
+    },
+    # Wave 2 — Advocacy and litigation partners
+    3: {
+        "wave": 2,
+        "org": "Brennan Center for Justice — Voting Rights and Elections Program",
+        "contact_name": "Sean Morales-Doyle",
+        "role": "Director, Voting Rights and Elections Program",
+        "primary_email": None,
+        "backup_email": None,
+        "form_fallback": "https://www.brennancenter.org/about/contact",
+        "verified_date": "2026-06-05",
+        "confidence": "HIGH",
+        "domain_hook": (
+            "Readmission Act constitutional theory (Section 4.4); post-King v. O'Bannon strategy; "
+            "Virginia voting rights restoration; LFO equal protection"
+        ),
+        "response_probability": "25-40%",
+        "notes": (
+            "Brennan Center does NOT publish individual staff emails. "
+            "Contact pathway: brennancenter.org/about/contact (web inquiry form) — specify Voting Rights and Elections Program. "
+            "PERSONNEL NOTE: Myrna Pérez left Oct 2021 (now Second Circuit judge). Sean Morales-Doyle is current director. "
+            "VP supervising: Wendy R. Weiser (wweiser@brennan.law.nyu.edu)."
+        ),
+    },
+    4: {
+        "wave": 2,
+        "org": "Worth Rises",
+        "contact_name": "Bianca Tylek",
+        "role": "Executive Director and Founder",
+        "primary_email": "info@worthrises.org",
+        "backup_email": "press@worthrises.org",
+        "verified_date": "2026-06-05",
+        "confidence": "HIGH",
+        "domain_hook": (
+            "LFO research primary source: 83% of formerly incarcerated carry court debt, avg $13,607; "
+            "Florida Amendment 4 poll tax analysis; prison industrial complex financial flows"
+        ),
+        "response_probability": "40-55%",
+        "notes": (
+            "info@worthrises.org confirmed via worthrises.org. "
+            "Secondary contacts: Antonya Jeffrey (Director of Policy Campaigns), Peter Mayer (Director of Research). "
+            "HIGHEST ALIGNMENT — Domain 48 Section 4 (LFO as poll tax) relies on Worth Rises as primary empirical source."
+        ),
+    },
+    5: {
+        "wave": 2,
+        "org": "Campaign Legal Center — Restore Your Vote",
+        "contact_name": "Blair Bowie",
+        "role": "Director, Restore Your Vote",
+        "primary_email": "info@campaignlegal.org",
+        "backup_email": None,
+        "verified_date": "2026-06-05",
+        "confidence": "HIGH",
+        "domain_hook": (
+            "Restore Your Vote direct services; Florida LFO poll tax litigation; "
+            "Virginia post-King v. O'Bannon implementation; Readmission Act theory"
+        ),
+        "response_probability": "25-40%",
+        "notes": (
+            "Use info@campaignlegal.org — specify 'Restore Your Vote program' in subject line. "
+            "DOMAIN OVERLAP NOTE: Domain 51's CLC contact is Adav Noti (campaign finance). "
+            "Domain 48's CLC contact is Blair Bowie (Restore Your Vote). Different staff, no conflict."
+        ),
+    },
+    6: {
+        "wave": 2,
+        "org": "Movement for Black Lives",
+        "contact_name": "Policy Table",
+        "role": "Policy team (named current contact — verify at m4bl.org/contact before sending)",
+        "primary_email": "info@m4bl.org",
+        "backup_email": None,
+        "form_fallback": "https://m4bl.org/contact",
+        "verified_date": "2026-06-05",
+        "confidence": "MEDIUM",
+        "domain_hook": (
+            "Structural racial justice and abolitionist democracy framework; "
+            "Virginia Right to Vote Coalition network (M4BL Virginia affiliates); "
+            "Alabama, Florida, Mississippi, Georgia high-disenfranchisement state networks"
+        ),
+        "response_probability": "15-30%",
+        "notes": (
+            "policy@m4bl.org may not be current — verify at m4bl.org/contact before sending. "
+            "info@m4bl.org is safer fallback. Decentralized coalition org with variable inbox routing. "
+            "CONTINGENCY: if M4BL unresponsive by July 10, activate ACLU of Virginia (acluva@acluva.org) "
+            "as Virginia Right to Vote Coalition bridge to M4BL Virginia affiliates."
+        ),
+    },
+    # Tier 2 — activate on strong signal from Wave 1-2
+    7: {
+        "wave": 3,
+        "org": "NAACP Legal Defense Fund",
+        "contact_name": "Janai Nelson",
+        "role": "President and Director-Counsel (since March 2022)",
+        "primary_email": "info@naacpldf.org",
+        "backup_email": None,
+        "verified_date": "2026-06-05",
+        "confidence": "HIGH",
+        "domain_hook": (
+            "Felony disenfranchisement litigation; LFO equal protection; Eleventh Circuit SB 7066; "
+            "Readmission Act applicability to other former Confederate states"
+        ),
+        "response_probability": "20-35%",
+        "notes": (
+            "Activate after Day 7 checkpoint ONLY if Tier A/B sends return 2+ STRONG. "
+            "LDF is a relationship organization — warm follow-on framing after Sentencing Project engagement. "
+            "Do not send cold without prior Tier A/B engagement."
+        ),
+    },
+    8: {
+        "wave": 3,
+        "org": "Fines and Fees Justice Center",
+        "contact_name": "Joanna Weiss",
+        "role": "Co-Executive Director",
+        "primary_email": "info@finesandfeesjusticecenter.org",
+        "backup_email": None,
+        "verified_date": "2026-06-05",
+        "confidence": "MEDIUM",
+        "domain_hook": (
+            "LFO/court fees as voter suppression mechanism; Florida Amendment 4 poll tax; "
+            "state legislative campaigns on fines and fees reform"
+        ),
+        "response_probability": "30-45%",
+        "notes": (
+            "jweiss@finesandfeesjusticecenter.org is likely direct address (standard FLast@ format) — "
+            "verify before use. info@finesandfeesjusticecenter.org is confirmed general inbox. "
+            "Can activate with Worth Rises on Wave 2 as co-distribution partner for Section 4 poll tax material."
+        ),
+    },
+    9: {
+        "wave": 3,
+        "org": "ACLU of Virginia",
+        "contact_name": "Mary Bauer",
+        "role": "Executive Director",
+        "primary_email": "acluva@acluva.org",
+        "backup_email": None,
+        "verified_date": "2026-06-05",
+        "confidence": "HIGH",
+        "domain_hook": (
+            "Virginia Right to Vote Coalition member; King v. Youngkin precedent; "
+            "November 3 ballot measure campaign; M4BL Virginia affiliate bridge"
+        ),
+        "response_probability": "30-45%",
+        "notes": (
+            "Contingency path — use if M4BL national contact does not respond by July 10. "
+            "Chris Kaiser (Policy Director) is also a valid contact. "
+            "acluva@acluva.org confirmed via acluva.org. "
+            "ACLU Virginia is confirmed Virginia Right to Vote Coalition member — "
+            "can route materials to M4BL Virginia affiliates and broader coalition."
+        ),
+    },
+}
+
+# ---------------------------------------------------------------------------
 # Domain dispatch table
 # ---------------------------------------------------------------------------
 
 DOMAINS = {
+    48: {
+        "name": "Domain 48",
+        "topic": DOMAIN_48_TOPIC,
+        "gist_url": DOMAIN_48_GIST,
+        "deadline": DOMAIN_48_DEADLINE,
+        "check_url": "https://ballotpedia.org/Virginia_Voting_Rights_Restoration_Amendment_(2026)",
+        "state_file": DOMAIN_48_STATE_FILE,
+        "log_file": DOMAIN_48_LOG_FILE,
+        "contacts": DOMAIN_48_CONTACTS,
+        "waves": {
+            1: "Research infrastructure (Sentencing Project, PPI)",
+            2: "Advocacy and litigation partners (Brennan Center, Worth Rises, CLC/RYV, M4BL)",
+            3: "Tier 2 — conditional on T+7 signal (NAACP LDF, FFJC, ACLU VA)",
+        },
+        "t7_gate": {"full": 2, "conditional": 1, "weak": 0},
+        "priority_note": (
+            "Domain 48 executes after Domain 59 and 51. Virginia Right to Vote Coalition "
+            "integration deadline July 15 — all Tier 2 sends must initiate by June 27."
+        ),
+    },
     51: {
         "name": "Domain 51",
         "topic": DOMAIN_51_TOPIC,
@@ -631,22 +873,27 @@ def cmd_status(domain_id: int, state: dict) -> None:
 
 
 def cmd_all_domains_status() -> None:
-    """Print summary status for both domains side by side."""
+    """Print summary status for all three domains side by side."""
     print("\n=== Multi-Domain Status Summary ===")
     print(f"Date: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
     print()
-    print("SEQUENCING RULE: Domain 59 → Domain 51 (Senate Finance window closes before CA ballot deadline)")
+    print("SEQUENCING RULE: Domain 59 → Domain 51 → Domain 48")
+    print("  D59: Senate Finance markup closes June 25-30 (hardest deadline)")
+    print("  D51: California ballot deadline July 1")
+    print("  D48: Virginia Right to Vote Coalition integration July 15")
     print()
-    for domain_id in [59, 51]:
+    for domain_id in [59, 51, 48]:
         state = load_state(domain_id)
         domain = DOMAINS[domain_id]
         contacts = domain["contacts"]
         total = len(contacts)
         sent = sum(1 for k in contacts if str(k) in state["sends"])
         strong = sum(1 for r in state["replies"].values() if r.get("signal") == "STRONG")
-        print(f"Domain {domain_id} ({domain['topic'][:50]})")
+        moderate = sum(1 for r in state["replies"].values() if r.get("signal") == "MODERATE")
+        print(f"Domain {domain_id} ({domain['topic'][:55]})")
         print(f"  Sends completed: {sent}/{total}")
         print(f"  STRONG replies:  {strong}")
+        print(f"  MODERATE replies:{moderate}")
         print(f"  Deadline:        {domain['deadline']}")
         print()
 
@@ -1022,6 +1269,432 @@ def cmd_t7_check(domain_id: int, state: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
+# T+7 multi-domain checkpoint (--t7-checkpoint)
+# ---------------------------------------------------------------------------
+
+# Threshold tables grounded in PHASE_2_T7_ROUTING_DECISION_TREE.md Section 1.1
+_T7_THRESHOLDS = {
+    # domain_id: (strong_for_strong, strong_for_moderate, notes)
+    59: (2, 1, "FORCED activation if Senate Finance markup still active regardless of signal"),
+    51: (2, 1, "CLC reply (any quality) auto-elevates to MODERATE"),
+    48: (2, 1, "Sentencing Project reply (any quality) auto-elevates to MODERATE"),
+}
+
+_TIER2_CONTACTS = {
+    59: {
+        "STRONG": [
+            ("EPI — Heidi Shierholz", "researchdept@epi.org (UNCONFIRMED — verify via epi.org/about/contact)"),
+            ("Demos — Taifa Smith Butler", "info@demos.org"),
+            ("NELP — Rebecca Dixon", "info@nelp.org"),
+            ("NHLP — Policy team", "info@nhlp.org"),
+        ],
+        "MODERATE": [
+            ("EPI — Heidi Shierholz", "researchdept@epi.org (UNCONFIRMED — verify first)"),
+            ("NELP — Rebecca Dixon", "info@nelp.org"),
+        ],
+        "WEAK": [
+            ("EPI — Heidi Shierholz", "researchdept@epi.org (UNCONFIRMED)"),
+            ("Demos — Taifa Smith Butler", "info@demos.org"),
+            ("NELP — Rebecca Dixon", "info@nelp.org"),
+            ("NOTE: FORCED activation — Senate markup deadline", ""),
+        ],
+    },
+    51: {
+        "STRONG": [
+            ("True North Research — Lisa Graves", "info@truenorthresearch.org"),
+            ("Montana I-194 Campaign", "via ballotpedia.org (verify current contact)"),
+            ("Michigan Clean Elections Coalition", "via michiganadvance.com"),
+            ("+ Secondary 5 after 48h: NM Common Cause, Issue One ReFormers, ACLU VRP, Hasen, Levitt", ""),
+            ("+ Extended 5 after signal: ECU, Public Citizen, Brennan, Democracy 21, OpenSecrets", ""),
+        ],
+        "MODERATE": [
+            ("True North Research — Lisa Graves", "info@truenorthresearch.org"),
+            ("Montana I-194 Campaign", "via ballotpedia.org"),
+            ("Michigan Clean Elections Coalition", "via michiganadvance.com"),
+            ("+ Secondary 5 after 48h (hold extended 5 for Day 14)", ""),
+        ],
+        "WEAK": [
+            ("True North Research — Lisa Graves", "info@truenorthresearch.org"),
+            ("Montana I-194 Campaign", "via ballotpedia.org"),
+            ("Michigan Clean Elections Coalition", "via michiganadvance.com"),
+            ("Hold secondary 5 and extended 5; Day 14 CLC follow-up", ""),
+        ],
+    },
+    48: {
+        "STRONG": [
+            ("NAACP LDF — Janai Nelson", "info@naacpldf.org"),
+            ("Fines and Fees Justice Center — Joanna Weiss", "info@finesandfeesjusticecenter.org"),
+            ("ACLU of Virginia — Mary Bauer (June 27)", "acluva@acluva.org"),
+        ],
+        "MODERATE": [
+            ("Fines and Fees Justice Center — Joanna Weiss", "info@finesandfeesjusticecenter.org"),
+            ("ACLU of Virginia — Mary Bauer (June 27, if M4BL unresponsive)", "acluva@acluva.org"),
+        ],
+        "WEAK": [
+            ("ACLU of Virginia — Mary Bauer (contingency path)", "acluva@acluva.org"),
+            ("Hold NAACP LDF until warm introduction via ACLU VA", ""),
+        ],
+    },
+}
+
+
+def _classify_signal(domain_id: int, state: dict) -> str:
+    """Classify domain signal as STRONG, MODERATE, WEAK, or DIAGNOSTIC.
+
+    Grounded in PHASE_2_T7_ROUTING_DECISION_TREE.md Section 1.1.
+    Delivery rate is calculated against Wave 1 contacts only. At the Day 7 checkpoint,
+    only Wave 1 contacts are expected to have been sent. Wave 2/3 (Tier 2/3) contacts
+    activate based on signal strength — they are not in the delivery rate denominator.
+    """
+    contacts = DOMAINS[domain_id]["contacts"]
+    wave1_contacts = {k: c for k, c in contacts.items() if c["wave"] == 1}
+    wave1_total = len(wave1_contacts)
+    # Only count Wave 1 sends for delivery rate
+    wave1_sent = sum(1 for k in wave1_contacts if str(k) in state["sends"])
+    wave1_bounced = sum(1 for k in wave1_contacts if str(k) in state["bounces"])
+    delivered = max(0, wave1_sent - wave1_bounced)
+    # If no Wave 1 sends logged at all, we cannot assess delivery (not yet sent)
+    # Only flag DIAGNOSTIC if Wave 1 sends exist but delivery rate is low
+    if wave1_sent == 0:
+        delivery_rate = 1.0  # not yet sent — do not flag DIAGNOSTIC
+    else:
+        delivery_rate = (delivered / wave1_total) if wave1_total > 0 else 1.0
+    sent_count = len(state["sends"])
+    bounce_count = len(state["bounces"])
+
+    if delivery_rate < 0.80 and sent_count > 0:
+        return "DIAGNOSTIC"
+
+    strong_count = sum(1 for r in state["replies"].values() if r.get("signal") == "STRONG")
+    moderate_count = sum(1 for r in state["replies"].values() if r.get("signal") == "MODERATE")
+
+    strong_thresh, mod_thresh, _ = _T7_THRESHOLDS.get(domain_id, (2, 1, ""))
+
+    if strong_count >= strong_thresh:
+        return "STRONG"
+
+    # Auto-elevate rules per PHASE_2_T7_ROUTING_DECISION_TREE.md Section 1.1
+    if domain_id == 51:
+        # CLC reply (send 1) at any quality level auto-elevates to MODERATE
+        clc_replied = "1" in state["replies"]
+        if clc_replied or strong_count >= mod_thresh or moderate_count >= 2:
+            return "MODERATE"
+    elif domain_id == 48:
+        # Sentencing Project reply (send 1) at any quality level auto-elevates to MODERATE
+        sp_replied = "1" in state["replies"]
+        if sp_replied or strong_count >= mod_thresh or moderate_count >= 2:
+            return "MODERATE"
+    else:
+        if strong_count >= mod_thresh or moderate_count >= 3:
+            return "MODERATE"
+
+    return "WEAK"
+
+
+def _cross_domain_coalition_check(signals: dict[int, str]) -> list[str]:
+    """Identify cross-domain coalition opportunities per PHASE_2_T7_ROUTING_DECISION_TREE.md Section 4."""
+    opportunities = []
+    d59 = signals.get(59, "WEAK")
+    d51 = signals.get(51, "WEAK")
+    d48 = signals.get(48, "WEAK")
+
+    if d59 == "STRONG" and d51 == "STRONG":
+        opportunities.append(
+            "D59+D51 STRONG: Activate Demos (info@demos.org) and Common Cause National "
+            "(commoncause@commoncause.org) with cross-domain economic-democracy / campaign-finance "
+            "bridge framing. Estimated 2.0-2.5x reach multiplier from bridging both ecosystems."
+        )
+    if d59 in ("STRONG", "MODERATE") and d48 in ("STRONG", "MODERATE"):
+        opportunities.append(
+            "D59+D48 both active: Add Domain 48 criminal-record employment bar context to NELP "
+            "(Domain 59 Tier 2) email. Route NAACP LDF send (Domain 48 Tier 2) with a cross-domain "
+            "note referencing economic precarity findings from Domain 59."
+        )
+    if d51 == "STRONG" and d48 == "STRONG":
+        opportunities.append(
+            "D51+D48 STRONG: Send both documents to Brennan Center on same day — "
+            "Domain 51 to Saurav Ghosh (ghoshs@brennan.law.nyu.edu), "
+            "Domain 48 to Sean Morales-Doyle (brennancenter.org web form). "
+            "Internal routing may surface the campaign-finance + voting-rights overlap."
+        )
+    if d59 == "STRONG" and d51 == "STRONG" and d48 == "STRONG":
+        opportunities.append(
+            "ALL DOMAINS STRONG: Full coalition protocol. Activate all three Tier 2 sequences on "
+            "same day. Cross-domain coordination via Demos + Brennan Center + NAACP LDF. "
+            "See PHASE_2_T7_ROUTING_DECISION_TREE.md Section 2.2."
+        )
+    return opportunities
+
+
+def cmd_t7_checkpoint() -> None:
+    """Run the Day 7 multi-domain checkpoint across Domains 59, 51, and 48.
+
+    Collects state for each domain, classifies signal strength, outputs routing
+    recommendation per PHASE_2_T7_ROUTING_DECISION_TREE.md, and writes summary
+    to WORKLOG.md.
+    """
+    now = datetime.now(timezone.utc)
+    print(f"\n=== Day 7 Multi-Domain Checkpoint ===")
+    print(f"Executed: {now.strftime('%Y-%m-%d %H:%M UTC')}")
+    print(f"Reference: JUNE_17_DAY7_CHECKPOINT_EXECUTION_CHECKLIST.md")
+    print()
+
+    signals: dict[int, str] = {}
+    domain_summaries: list[str] = []
+
+    for domain_id in [59, 51, 48]:
+        domain = DOMAINS[domain_id]
+        state = load_state(domain_id)
+        contacts = domain["contacts"]
+        total = len(contacts)
+        sent = len(state["sends"])
+        bounces = len(state["bounces"])
+        replies = len(state["replies"])
+        strong = sum(1 for r in state["replies"].values() if r.get("signal") == "STRONG")
+        moderate = sum(1 for r in state["replies"].values() if r.get("signal") == "MODERATE")
+
+        signal = _classify_signal(domain_id, state)
+        signals[domain_id] = signal
+
+        try:
+            deadline_dt = datetime.fromisoformat(domain["deadline"]).replace(tzinfo=timezone.utc)
+            days_to_deadline = (deadline_dt - now).days
+        except ValueError:
+            days_to_deadline = "?"
+
+        print(f"--- Domain {domain_id}: {domain['topic'][:55]} ---")
+        print(f"  Sends: {sent}/{total} | Bounces: {bounces} | Replies: {replies}")
+        print(f"  STRONG: {strong} | MODERATE: {moderate}")
+        print(f"  Deadline: {domain['deadline']} ({days_to_deadline} days)")
+        print(f"  Gist: {domain['gist_url']}")
+        print(f"  COMPOSITE SIGNAL: {signal}")
+        print()
+
+        tier2_contacts = _TIER2_CONTACTS.get(domain_id, {}).get(signal, [])
+        if tier2_contacts:
+            print(f"  Tier 2 activation ({signal}):")
+            for org, email in tier2_contacts:
+                if email:
+                    print(f"    - {org} — {email}")
+                else:
+                    print(f"    - {org}")
+        print()
+
+        summary_line = (
+            f"D{domain_id}: {signal} | sent {sent}/{total} | {strong} STRONG | "
+            f"{days_to_deadline}d to deadline"
+        )
+        domain_summaries.append(summary_line)
+
+    # Cross-domain coalition opportunities
+    coalition_opps = _cross_domain_coalition_check(signals)
+    if coalition_opps:
+        print("=== Cross-Domain Coalition Opportunities ===")
+        for opp in coalition_opps:
+            print(f"  * {opp}")
+        print()
+
+    # Escalation check
+    all_weak = all(s == "WEAK" for s in signals.values())
+    any_diagnostic = any(s == "DIAGNOSTIC" for s in signals.values())
+    print("=== Escalation Check ===")
+    if any_diagnostic:
+        print("  DIAGNOSTIC CONDITION: Delivery rate below 80% on at least one domain.")
+        print("  Action: Run delivery diagnostic before Tier 2 activation.")
+        print("  See JUNE_17_DAY7_CHECKPOINT_EXECUTION_CHECKLIST.md Section 1.4")
+    elif all_weak:
+        print("  ALL DOMAINS WEAK at Day 7.")
+        print("  Domain 59: FORCED Tier 2 activation (Senate markup deadline immovable)")
+        print("  Domain 51: Hold to Day 14. Day 14 CLC follow-up is the pivot point.")
+        print("  Domain 48: Hold to Day 14.")
+        print("  If all WEAK at Day 14: flag in CHECKIN.md per Section 8.1 of checklist.")
+    else:
+        print("  No escalation required. Proceed with routing above.")
+    print()
+
+    # Write to WORKLOG
+    worklog_entry = (
+        f"**Day 7 Multi-Domain Checkpoint**\n\n"
+        + "\n".join(f"- {s}" for s in domain_summaries)
+        + f"\n\nSignals: D59={signals.get(59,'?')} | D51={signals.get(51,'?')} | D48={signals.get(48,'?')}"
+        + (f"\n\nCoalition opportunities: {len(coalition_opps)} identified." if coalition_opps else "")
+        + f"\n\nReference: PHASE_2_T7_ROUTING_DECISION_TREE.md for full routing logic."
+    )
+    # Use domain 59 for worklog attribution (primary deadline domain)
+    append_worklog(59, worklog_entry)
+    print("[worklog] Day 7 checkpoint summary written to WORKLOG.md")
+
+
+# ---------------------------------------------------------------------------
+# Routing decision (--routing-decision)
+# ---------------------------------------------------------------------------
+
+def cmd_routing_decision(domain_ids: list[int], signal_strs: list[str]) -> None:
+    """Take domain IDs + signal strengths and output Tier 2 activation sequence.
+
+    Per PHASE_2_T7_ROUTING_DECISION_TREE.md Section 2.
+    """
+    valid_signals = {"STRONG", "MODERATE", "WEAK", "DIAGNOSTIC"}
+    if len(domain_ids) != len(signal_strs):
+        print(
+            f"[error] domain count ({len(domain_ids)}) must match signal count ({len(signal_strs)})",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+    for s in signal_strs:
+        if s not in valid_signals:
+            print(f"[error] Signal '{s}' not valid. Use: {', '.join(sorted(valid_signals))}", file=sys.stderr)
+            sys.exit(1)
+    for d in domain_ids:
+        if d not in DOMAINS:
+            print(f"[error] Domain {d} not in dispatch table. Supported: {sorted(DOMAINS.keys())}", file=sys.stderr)
+            sys.exit(1)
+
+    signals = dict(zip(domain_ids, signal_strs))
+    now = datetime.now(timezone.utc)
+
+    print(f"\n=== Routing Decision Output ===")
+    print(f"Generated: {now.strftime('%Y-%m-%d %H:%M UTC')}")
+    print(f"Input signals: {' | '.join(f'D{d}={s}' for d, s in signals.items())}")
+    print()
+
+    # Per-domain activation sequences
+    for domain_id, signal in signals.items():
+        domain = DOMAINS[domain_id]
+        tier2 = _TIER2_CONTACTS.get(domain_id, {}).get(signal, [])
+        print(f"Domain {domain_id} ({signal}):")
+        if tier2:
+            for org, email in tier2:
+                if email:
+                    print(f"  -> {org}")
+                    print(f"     {email}")
+                else:
+                    print(f"  -> {org}")
+        else:
+            print("  -> No Tier 2 contacts prescribed for this signal level.")
+        print()
+
+    # Cross-domain coalition check
+    coalition_opps = _cross_domain_coalition_check(signals)
+    if coalition_opps:
+        print("=== Cross-Domain Coalition Opportunities ===")
+        for opp in coalition_opps:
+            print(f"  * {opp}")
+        print()
+
+    # Execution order recommendation
+    print("=== Recommended Execution Order ===")
+    # D59 always first (hardest deadline); then D51; then D48
+    ordered = [d for d in [59, 51, 48] if d in signals]
+    for i, d in enumerate(ordered, 1):
+        sig = signals[d]
+        domain = DOMAINS[d]
+        print(f"  {i}. Domain {d} ({sig}) — deadline {domain['deadline']}")
+        if sig == "WEAK" and d == 59:
+            print(f"     NOTE: FORCED activation due to Senate Finance markup deadline.")
+
+    # Write to WORKLOG (domain 59 or first domain in list)
+    primary_domain = domain_ids[0]
+    worklog_entry = (
+        f"**Routing decision executed**\n\n"
+        f"Input: {' | '.join(f'D{d}={s}' for d, s in signals.items())}\n\n"
+        f"Coalition opportunities identified: {len(coalition_opps)}\n\n"
+        f"Reference: PHASE_2_T7_ROUTING_DECISION_TREE.md"
+    )
+    append_worklog(primary_domain, worklog_entry)
+
+
+# ---------------------------------------------------------------------------
+# Activate Tier 2 (--activate-tier2)
+# ---------------------------------------------------------------------------
+
+def cmd_activate_tier2(domain_id: int, signal: str) -> None:
+    """Deploy Tier 2 contacts per PHASE_2_TIER_2_ACTIVATION_PROTOCOLS.md.
+
+    Prints the activation guide, logs to WORKLOG.md, and updates domain state.
+    """
+    valid_signals = {"STRONG", "MODERATE", "WEAK"}
+    if signal not in valid_signals:
+        print(f"[error] Signal must be one of: {', '.join(sorted(valid_signals))}", file=sys.stderr)
+        sys.exit(1)
+    if domain_id not in DOMAINS:
+        print(f"[error] Domain {domain_id} not in dispatch table. Supported: {sorted(DOMAINS.keys())}", file=sys.stderr)
+        sys.exit(1)
+
+    domain = DOMAINS[domain_id]
+    state = load_state(domain_id)
+    tier2_contacts = _TIER2_CONTACTS.get(domain_id, {}).get(signal, [])
+    now = datetime.now(timezone.utc)
+
+    try:
+        deadline_dt = datetime.fromisoformat(domain["deadline"]).replace(tzinfo=timezone.utc)
+        days_to_deadline = (deadline_dt - now).days
+    except ValueError:
+        days_to_deadline = "?"
+
+    print(f"\n=== Domain {domain_id} Tier 2 Activation ({signal}) ===")
+    print(f"Generated: {now.strftime('%Y-%m-%d %H:%M UTC')}")
+    print(f"Deadline: {domain['deadline']} ({days_to_deadline} days remaining)")
+    print(f"Gist URL: {domain['gist_url']}")
+    print()
+
+    if not tier2_contacts:
+        print("[info] No Tier 2 contacts prescribed for this domain + signal combination.")
+        print(f"       See PHASE_2_TIER_2_ACTIVATION_PROTOCOLS.md for Domain {domain_id}.")
+        return
+
+    print("Tier 2 contacts to deploy (in order):")
+    for i, (org, email) in enumerate(tier2_contacts, 1):
+        if email:
+            print(f"  {i}. {org}")
+            print(f"     Email: {email}")
+        else:
+            print(f"  {i}. {org}")
+    print()
+
+    print("Pre-flight checks:")
+    print(f"  [ ] Confirm Gist URL resolves: {domain['gist_url']}")
+    print(f"  [ ] Verify all email addresses on send day (contacts may have changed)")
+    if domain_id == 59:
+        print(f"  [ ] Confirm Senate Finance markup status: {domain['check_url']}")
+        print(f"      If markup closed: pivot to '2027 Reform Coalition' framing")
+    elif domain_id == 51:
+        print(f"  [ ] Confirm California ballot measure status: {domain['check_url']}")
+        print(f"      If CA ballot failed: shift to national-only framing (CLC, Issue One, Democracy 21)")
+    elif domain_id == 48:
+        print(f"  [ ] Confirm Virginia Right to Vote Coalition integration window still active")
+        print(f"      Soft deadline: June 27 for Tier 2 sends before July 15 coalition deadline")
+    print()
+
+    print("Full templates: PHASE_2_TIER_2_ACTIVATION_PROTOCOLS.md")
+    print(f"Sequencing: see PHASE_2_T7_ROUTING_DECISION_TREE.md Section 2 for D{domain_id} {signal} path")
+    print()
+
+    # Log to WORKLOG
+    contact_lines = "\n".join(
+        f"- {org}: {email}" if email else f"- {org}"
+        for org, email in tier2_contacts
+    )
+    worklog_entry = (
+        f"**Domain {domain_id} Tier 2 Activation — {signal}**\n\n"
+        f"Signal at checkpoint: {signal}\n"
+        f"Contacts activated:\n{contact_lines}\n\n"
+        f"Templates: PHASE_2_TIER_2_ACTIVATION_PROTOCOLS.md (Domain {domain_id} section)\n"
+        f"Deadline: {domain['deadline']} ({days_to_deadline} days)"
+    )
+    append_worklog(domain_id, worklog_entry)
+
+    # Record tier2 activation in state
+    state["tier2_activation"] = {
+        "signal": signal,
+        "activated_at": now.isoformat(),
+        "contacts_count": len([c for c in tier2_contacts if c[1]]),
+    }
+    save_state(domain_id, state)
+    print("[worklog] Tier 2 activation logged to WORKLOG.md and state file.")
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
@@ -1035,8 +1708,8 @@ def main() -> None:
     parser.add_argument(
         "--domain",
         type=int,
-        choices=[51, 59],
-        help="Domain to operate on (51=Campaign Finance, 59=Economic Precarity/CTC)",
+        choices=[48, 51, 59],
+        help="Domain to operate on (48=Criminal Justice, 51=Campaign Finance, 59=Economic Precarity/CTC)",
     )
     parser.add_argument(
         "--status",
@@ -1108,7 +1781,35 @@ def main() -> None:
     parser.add_argument(
         "--t7-check",
         action="store_true",
-        help="Run the T+7 checkpoint assessment and print Phase 2 gate recommendation",
+        help="Run the T+7 checkpoint assessment and print Phase 2 gate recommendation (per-domain)",
+    )
+    parser.add_argument(
+        "--t7-checkpoint",
+        action="store_true",
+        help=(
+            "Run the Day 7 multi-domain checkpoint across Domains 59, 51, and 48. "
+            "Collects send/reply state, classifies signal strength per domain, "
+            "outputs routing recommendation, and logs to WORKLOG.md. "
+            "Does not require --domain."
+        ),
+    )
+    parser.add_argument(
+        "--routing-decision",
+        nargs="+",
+        metavar="DOMAIN_OR_SIGNAL",
+        help=(
+            "Takes domain IDs followed by signal strengths and outputs Tier 2 activation sequence. "
+            "Example: --routing-decision 59 51 48 STRONG MODERATE WEAK"
+        ),
+    )
+    parser.add_argument(
+        "--activate-tier2",
+        nargs=2,
+        metavar=("DOMAIN", "SIGNAL"),
+        help=(
+            "Deploy Tier 2 contacts for a domain per PHASE_2_TIER_2_ACTIVATION_PROTOCOLS.md. "
+            "Example: --activate-tier2 59 STRONG"
+        ),
     )
 
     args = parser.parse_args()
@@ -1120,12 +1821,39 @@ def main() -> None:
     if args.sequence_check:
         cmd_sequence_check()
         return
+    if args.t7_checkpoint:
+        cmd_t7_checkpoint()
+        return
+    if args.routing_decision:
+        raw = args.routing_decision
+        valid_signals = {"STRONG", "MODERATE", "WEAK", "DIAGNOSTIC"}
+        domain_ids_raw = [x for x in raw if x.isdigit()]
+        signal_strs_raw = [x.upper() for x in raw if x.upper() in valid_signals]
+        if not domain_ids_raw or not signal_strs_raw:
+            print(
+                "[error] --routing-decision requires domain IDs followed by signal strengths.\n"
+                "        Example: --routing-decision 59 51 48 STRONG MODERATE WEAK",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        domain_ids_parsed = [int(d) for d in domain_ids_raw]
+        cmd_routing_decision(domain_ids_parsed, signal_strs_raw)
+        return
+    if args.activate_tier2:
+        domain_arg, signal_arg = args.activate_tier2
+        try:
+            domain_id_t2 = int(domain_arg)
+        except ValueError:
+            print(f"[error] Domain must be an integer. Got: {domain_arg}", file=sys.stderr)
+            sys.exit(1)
+        cmd_activate_tier2(domain_id_t2, signal_arg.upper())
+        return
 
     # All other commands require --domain
     if args.domain is None:
         if any([args.status, args.execute, args.generate_guide, args.log_send is not None,
                 args.log_bounce is not None, args.log_reply is not None, args.t7_check]):
-            print("[error] --domain 51 or --domain 59 is required for this command.", file=sys.stderr)
+            print("[error] --domain 48, 51, or 59 is required for this command.", file=sys.stderr)
             parser.print_help()
             sys.exit(1)
         parser.print_help()
@@ -1133,7 +1861,7 @@ def main() -> None:
 
     domain_id = args.domain
     if domain_id not in DOMAINS:
-        print(f"[error] Unsupported domain: {domain_id}. Supported: 51, 59.", file=sys.stderr)
+        print(f"[error] Unsupported domain: {domain_id}. Supported: {sorted(DOMAINS.keys())}.", file=sys.stderr)
         sys.exit(1)
 
     state = load_state(domain_id)
