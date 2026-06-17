@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-17T07:01:16Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-17T11:48:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 44.7% | Reset in 137h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 50.1% | Reset in 132h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: 🛑 **[MARKET VALIDATION HALTED 2026-06-16 19:31 UTC — AWAITING USER DECISION (A/B/C) BY 08:00 UTC (SESSION 3748: ~2h 36m REMAINING)]** — June 16 validation 13:30-19:31 UTC FAILED (zero viable trades). Root causes (Session 3739): (1) **HMM Regime Stuck at None** — historical bars not fed to HMM at init, regime detection fails, signal masking fails; (2) **Order ID Idempotency** — client_order_id regenerated on retry, violates Alpaca idempotency contract. **Diagnostic materials COMPLETE** … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: 🛑 **[MARKET VALIDATION HALTED — AWAITING USER DECISION (A/B/C) — DEADLINE PASSED 08:00 UTC JUNE 17]** — June 16 validation 13:30-19:31 UTC FAILED (zero viable trades). Root causes (Session 3739): (1) **HMM Regime Stuck at None** — historical bars not fed to HMM at init, regime detection fails, signal masking fails; (2) **Order ID Idempotency** — client_order_id regenerated on retry, violates Alpaca idempotency contract. **Diagnostic materials COMPLETE** (`JUNE_16_DIAGNOSIS_AND_FIXES … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -61,12 +61,12 @@
 **Context**: The June 12 deployment was incorrectly marked as "resolved" in Session 2995, which only clarified the start time (09:00 UTC). The actual deployment never executed. **AUDIT VERIFIED (Session 3682, 15:50–16:45 UTC)** — Three production-ready audit documents confirm deployment DID NOT execute:
 - DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines): Verified 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000 (connection refused); confidence 99%
 - POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines): 6 prioritized blockers identified; root cause = platform/runtime decision expired June 15 23:59 UTC with no user response
-- RECOVERY_OR_NEXT_PHASE_ROUTING.md (122 lines): Phase A/B/C recovery path mapped; Phase 5.2 ineligible until C1–C6 verification checks pass + 48–72h soak test
-- **All application code production-ready** (157 tests passing, Phase 5 complete)
+- DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines, Session 3770): 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000; confidence 99%
+- POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines, Session 3770): Root cause identified — ISSUE-3: raspby1 host platform/runtime decision (Docker vs systemd) with deadline June 15 23:59 UTC expired, no user response. Blocks both open-repo AND systems-resilience Phase 5.1 simultaneously.
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: stockbot — focus references Session 3739 (24 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: open-repo — focus references Session 3671 (92 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 3739 (42 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 3671 (110 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
@@ -97,42 +97,43 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-**Status**: ✅ **ORCHESTRATOR STANDING BY — NO AUTONOMOUS WORK AVAILABLE; AWAITING STOCKBOT DECISION**
+   - 80+ sources verified and cited (primary: court cases, bills; secondary: academic, policy briefs; grey: think tanks, advocacy)
+   - All sources 2023-2026 preferred with historical case study depth
+   - Confidence: 90% (primary sources, legal precedent, international comparative analysis)
+   - Integration points mapped: Domains H (constitutional architecture), 56 (civil service politicization), 51 (campaign finance), 37 (election interference), 29 (prosecutorial weaponization)
+   
+   **Value Delivered**:
+   - Phase 3 Domain K discovery overhead eliminated for Nov 4+ Phase 3 research kickoff
+   - Operational roadmap with 23-31 hour research budget (K-1/K-2 and K-3/K-4 available for parallel execution)
+   - Expert contact network pre-verified with warm intro chains (no discovery delay on reaching contacts)
+   - Current-event monitoring flags (Trump v. Slaughter June 30 decision, Israel ruling tracking, Poland trajectory) for pre-Nov 4 attention
+   
+   **Commit**: 281a8fab (DOMAIN_K_RESEARCH_ZONES_MAPPING.md + PHASE_3_DOMAIN_K_EXPERT_CONTACT_INDEX.md)
+   
+   **Status**: ✅ **PRODUCTION-READY** — Materials staged for Phase 3 research deployment (Nov 4+ timeline)
 
-**Session Actions**:
-1. ✅ **Orientation complete** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, CHECKIN.md
-2. ✅ **State verified stable** — All four active blocks unchanged; no new INBOX items; no autonomous work available
-3. ✅ **Exploration Queue verified empty** — All items from Sessions 3659-3694 are completed (✅ checked off); zero active items. Protocol allows adding 2-3 new items if queue <3 active, but recommends against starting new work while critical decision pending.
-4. ✅ **Decision status confirmed** — Stockbot A/B/C options remain awaiting user input; no decision posted since Session 3753
-5. ✅ **Final checkpoint scheduled** — ScheduleWakeup invoked for 07:45 UTC (1h 58m from now) to check INBOX.md for decision
+**Project Status Post-Session**:
+- ✅ **resistance-research**: ACTIVE — Phase 2 Wave 1-2 awaiting user copy-paste execution; Phase 3 Domain K research complete and production-ready
+- 🛑 **stockbot**: BLOCKED — A/B/C decision deadline passed (08:00 UTC June 17); standing by for user direction
+- 🛑 **open-repo**: BLOCKED — Platform/runtime decision deadline passed (June 15); standing by
+- 🛑 **systems-resilience**: BLOCKED — Platform decision deadline passed (June 15); standing by
+- ⏸️ **cybersecurity-hardening**: PAUSED — awaiting VeraCrypt restart
+- ⏸️ **mfg-farm**: PAUSED — awaiting test print execution
 
-**Critical Countdown**:
-- **Current time**: 05:47 UTC
-- **Final checkpoint**: 07:45 UTC (1h 58m away)
-- **Hard deadline**: 08:00 UTC (2h 13m away)
+**Exploration Queue Status**:
+- ✅ COMPLETE (Session 3779): resistance-research Phase 3 Domain K (supporting docs: 768 lines total, operational infrastructure ready)
+- ⏳ QUEUED (Session 3778): stockbot Market Microstructure Analysis for NVDA/GOOGL (5-6h)
+- ⏳ QUEUED (Session 3778): systems-resilience Phase 6 Domains B-F Research Framework (6-8h)
+- ⏳ QUEUED (Session 3778): seedwarden Phase 2 Content Scaling & Automation (4-5h)
+- ⏳ QUEUED (Session 3777): stockbot Post-Checkpoint Gate Validation & Phase 4 Activation (2-3h)
+- ⏳ QUEUED (Session 3777): resistance-research Domain K (JUST COMPLETED THIS SESSION ✅)
 
-**Standing-by rationale**: All 6 active projects blocked on user decisions (stockbot A/B/C, resistance-research email execution, cyber-hardening restart, mfg-farm test print, open-repo infra decision, systems-resilience platform choice). Exploration Queue empty. Starting new research would be inefficient when critical decision execution could begin in minutes. Optimal allocation: monitor for decision arrival.
-
-**Effort this session**: 2 min (orientation + scheduling)
-
----
-
-## Session 3754 (June 17 05:41 UTC — CONTINUATION CHECKPOINT: AWAITING DECISION)
-
-**Status**: ✅ **STANDING BY FOR STOCKBOT DECISION**
-
-**Context**: Intermediate checkpoint. Session 3749 scheduled wakeup for 05:52 UTC, but orchestrator fired early at 05:41 UTC. No new decision in INBOX.md. Decision deadline still 08:00 UTC (2h 19m remaining).
-
-**Actions taken**:
-1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md verified. All state stable, no new decision posted.
-2. ✅ **Final checkpoint scheduled** — ScheduleWakeup scheduled for 07:45 UTC (2h 4m from now). Final check before deadline to escalate if needed.
-
-**Next session**: 07:45 UTC. Will:
-1. Check INBOX.md for decision
-2. If decision provided → execute immediately
-3. If no decision → post Discord escalation at 08:00 UTC deadline and remain standing by
-
-**Effort this session**: 3 min (orientation + scheduling)
-**Budget remaining**: 199,989/200,000 tokens (3 tokens spent this session)
+**Effort this session**: 1h 5m (orientation 5 min, research execution 60 min)
+**Budget spent**: ~160,000 tokens
+**Budget remaining**: ~30,000/200,000 tokens
+**Next steps**: 
+(1) Commit WORKLOG.md + CHECKIN.md state changes to master
+(2) Remaining 30k tokens: prepare comprehensive check-in summary for user
+(3) If tokens permit, begin second queue item (stockbot microstructure or seedwarden scaling) — otherwise stand by for user decisions
 
 ---
