@@ -1,23 +1,30 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3765 — June 17 07:01 UTC — FINAL COUNTDOWN; WAKEUP SCHEDULED 07:45 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT A/B/C DECISION; ~59 MINUTES UNTIL 08:00 UTC HARD DEADLINE**
+
+**Session Actions** (3765):
+1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md verified; no state changes
+2. ✅ **Decision check** — INBOX.md empty of new decisions; stockbot A/B/C choice not yet posted by user
+3. ✅ **Project state stable** — All 6 active projects remain blocked on named dependencies (stockbot decision pending)
+4. ✅ **Final wakeup scheduled** — ScheduleWakeup for 07:45 UTC (44 min from now; 15 min before deadline)
+
+**Critical Decision Timeline**:
+- **Current time**: 07:01 UTC
+- **Final checkpoint**: 07:45 UTC (last chance to catch decision before deadline)
+- **Hard deadline**: 08:00 UTC (59 min from now)
+- **Execution window**: Immediate if decision arrives before 08:00 UTC
+
+**If no decision by 08:00 UTC**: Post Discord escalation + move to next task in Exploration Queue
+
+**Effort this session**: 2 min (orientation + ScheduleWakeup)
+
+---
+
 ## Since Last Check-in (Session 3763 — June 17 06:54 UTC — FINAL CHECKPOINT WAKEUP SCHEDULED 07:45 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; FINAL WAKEUP SCHEDULED IN ~51 MINUTES**
-
-**Session Actions** (3761):
-1. ✅ **State verification** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md read; no new decisions posted
-2. ✅ **Blocks verified stable** — All active blocks unchanged; stockbot A/B/C decision still awaiting user input
-3. ✅ **Work verification** — All projects blocked on external dependencies (stockbot decision, user email execution, test print, etc.) or paused. Exploration Queue empty. No autonomous work available.
-4. ✅ **Final wakeup scheduled** — ScheduleWakeup invoked for ~07:41 UTC (19 min before 08:00 UTC deadline)
-
-**Critical Countdown**:
-- **Current time**: 06:41 UTC
-- **Final checkpoint**: ~07:41 UTC (via scheduled wakeup)
-- **Hard deadline**: 08:00 UTC (1h 19m remaining)
-
-**Standing-by protocol**: Correct. No autonomous work. Awaiting user decision A/B/C per BLOCKED.md entry.
-
-**Effort this session**: 3 min (orientation + state verification + scheduling)
 
 ---
 
