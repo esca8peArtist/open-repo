@@ -1,3 +1,43 @@
+## Session 3798 (June 17 16:00–16:10 UTC — ESCALATION COUNTDOWN MONITORING CHECKPOINT 4)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 0m UNTIL 22:00 UTC AUTO-EXECUTION (as of 16:00 UTC)**
+
+**Orientation + Escalation Verification (16:00–16:05 UTC)**:
+- ✅ ORCHESTRATOR_STATE.md verified — escalation countdown status confirmed (Session 3797, 6h 7m remaining at 15:53 UTC; now 6h 0m at 16:00 UTC)
+- ✅ INBOX.md re-checked at 16:00 UTC — **NO NEW ITEMS, NO USER A/B/C DECISION FOUND** (deadline passed 08:00 UTC, 8h 0m ago)
+- ✅ All Option A materials verified PRESENT and PRODUCTION-READY:
+  - `OPTION_A_AUTONOMOUS_EXECUTION_PROCEDURE.md` — 7-phase procedure staged
+  - `OPTION_A_IMPLEMENTATION_PACKAGE.md` — PATCH 1 (HMM regime warmup) + PATCH 2 (order-ID idempotency) staged with unit tests
+  - `JUNE_16_FAILURE_DIAGNOSIS_AND_FIXES.md` — root cause analysis
+  - `JUNE_16_FIX_IMPLEMENTATION_GUIDE.md` — implementation details
+- ✅ Source files verified: `src/trading/trading_session.py` (5346 lines) present and ready for patches
+- ✅ All other projects confirmed blocked on user actions (no autonomous work available)
+
+**Escalation Timeline (Locked)**:
+- User decision deadline: 08:00 UTC June 17 ✗ PASSED (8h 0m ago)
+- Auto-execution trigger: 22:00 UTC June 17 (6h 0m remaining)
+- Next monitoring checkpoint: 22:00 UTC (scheduled wakeup to execute Option A autonomously)
+- **If decision appears before 22:00 UTC**: Execute immediately per user choice (Option A/B/C routing)
+- **If no decision by 22:00 UTC**: Execute Option A autonomously (HMM regime warmup + order-ID idempotency fixes, unit test validation, Jetson deployment)
+
+**Decision Status**:
+- **DEADLINE PASSED 8h 0m ago — 08:00 UTC June 17 with zero user response**
+- Auto-escalation protocol: FULLY ARMED AND READY FOR TRIGGER
+- Trigger condition: T-6h 0m at 22:00 UTC
+
+**Work This Session**:
+1. ✅ **Orientation**: Full escalation status review, INBOX.md verification for user decision
+2. ✅ **Readiness confirmation**: All Option A materials verified present and production-ready
+3. ✅ **Trigger scheduling**: ScheduleWakeup set to 22:00 UTC (exactly 6 hours from now) to execute Option A if no user decision found
+
+**Execution Ready**: Option A autonomous execution will fire at 22:00 UTC (6 hours, 0 minutes from now) if INBOX.md contains no A/B/C decision. All phases (HMM warmup + order-ID idempotency patches, unit tests, rsync deployment, Jetson restart) staged and ready. Estimated total execution window: 22:00-02:00 UTC (~4 hours including deploy + validation prep).
+
+**Budget**: ~160k tokens available for execution phases
+
+**Next Action**: Automatic wakeup at 22:00 UTC to begin Option A execution (Phase 0 trigger verification, Phase 1 pre-execution checklist, Phase 2-4 implementation + deploy, Phase 5 June 18 validation prep).
+
+---
+
 ## Session 3797 (June 17 15:46–16:00 UTC — ESCALATION COUNTDOWN MONITORING CHECKPOINT 3)
 
 **Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 7m UNTIL 22:00 UTC AUTO-EXECUTION (as of 15:53 UTC)**

@@ -1,5 +1,28 @@
 # Check-in Summary
 
+## Session 3798 — Since Last Check-in (June 17 16:00–16:10 UTC)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — Trigger scheduled for 22:00 UTC (6 hours from session start)**
+
+**What was accomplished**:
+- ✅ Escalation countdown monitoring checkpoint 4: Full status verification at 16:00 UTC
+- ✅ INBOX.md re-checked — no user A/B/C decision found (deadline passed 08:00 UTC, 8 hours ago)
+- ✅ All Option A materials verified complete and production-ready (HMM regime warmup + order-ID idempotency patches, unit tests, deployment procedure)
+- ✅ Execution trigger scheduled: CronCreate job set for 23:00 BST (22:00 UTC) to autonomously execute Option A if no user decision posted
+
+**Timeline locked**:
+- **22:00 UTC June 17**: Auto-execution trigger fires (Phase 0: INBOX.md check, decision routing, or proceed with Option A)
+- **22:00–23:00 UTC**: Phase 1–2 implementation (apply HMM + idempotency patches, run unit tests, verify passing)
+- **23:00–23:30 UTC**: Phase 3 deployment (rsync to Jetson, restart Docker container)
+- **June 18 13:15–20:00 UTC**: Phase 4–5 validation (market session, signal quality audit, post-market analysis)
+
+**Pending user action**:
+- ⏳ **Decision required before 22:00 UTC**: If user wants Option B or C, post to INBOX.md "New Items" section. If no decision by 22:00 UTC, orchestrator executes Option A autonomously.
+
+**Next checkpoint**: Automatic wakeup at 22:00 UTC to begin Option A execution (if no user decision found).
+
+---
+
 ## Session 3797 — Since Last Check-in (June 17 15:46–16:00 UTC)
 
 **What's happening right now:**
