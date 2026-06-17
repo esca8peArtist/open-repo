@@ -32,6 +32,30 @@
 
 ---
 
+## Session 3751 (June 17 05:07–05:12 UTC — EARLY WAKEUP; NO DECISION POSTED; SCHEDULING FINAL PRE-DEADLINE CHECK 07:45 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; FINAL CHECK SCHEDULED 07:45 UTC (52 MIN BEFORE DEADLINE)**
+
+**Work This Session**:
+1. ✅ **Orientation** — Read INBOX.md (no new decision posted since Session 3750)
+2. ✅ **State verified stable** — BLOCKED.md, PROJECTS.md, all project blocks remain unchanged
+3. ✅ **Final check scheduled** — ScheduleWakeup invoked for 07:45 UTC (52 min before 08:00 UTC deadline)
+   - If decision appears in INBOX.md by 07:45 UTC → execute immediately (Option A: 80-100 min, Option B: immediate, Option C: observe mode)
+   - If no decision by 07:45 UTC → escalate to Discord at 08:00 UTC deadline with final reminder
+
+**Critical Timeline**:
+- **Current time**: 05:07 UTC
+- **Final pre-deadline check**: 07:45 UTC (1h 38m away)
+- **Hard deadline**: 08:00 UTC (2h 53m away)
+
+**What changed this session**: Nothing substantive — confirming standing-by state remains correct.
+
+**Effort this session**: 5 min (INBOX check + state verification + ScheduleWakeup)
+**Budget remaining**: ~199,975/200,000 tokens (~0.0001% used this session)
+**Orchestrator Status**: Standing by, monitoring for decision. Fully automated wakeup cycle active.
+
+---
+
 ## Session 3748 (June 17 04:41–05:24 UTC — ORIENTATION + RESISTANCE-RESEARCH PHASE 2 VERIFICATION COMPLETE; STOCKBOT DEADLINE 08:00 UTC [~2h 36m REMAINING])
 
 **Status**: ✅ **ORCHESTRATOR ACTIVE — RESISTANCE-RESEARCH PHASE 2 WAVE 1 FULLY VERIFIED & STAGED; AWAITING STOCKBOT USER DECISION BY 08:00 UTC**

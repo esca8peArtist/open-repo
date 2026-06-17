@@ -1,5 +1,23 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3751 — June 17 05:07–05:12 UTC — EARLY WAKEUP; NO DECISION POSTED; WAKEUP SCHEDULED ~06:08 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; FINAL CHECK WAKEUP SCHEDULED**
+
+**Session Actions** (3751):
+1. ✅ **Orientation** — Confirmed INBOX.md: no new decision posted since Session 3750 (still awaiting user A/B/C choice)
+2. ✅ **State verified** — BLOCKED.md, PROJECTS.md, all blocks stable and unchanged
+3. ✅ **Wakeup scheduled** — ScheduleWakeup invoked for ~06:08 UTC (next session will schedule 07:45 UTC final pre-deadline check). Countdown continues to 08:00 UTC deadline.
+
+**Critical Countdown**:
+- **Current time**: 05:07 UTC
+- **Next automatic wakeup**: ~06:08 UTC (from ScheduleWakeup, will refine to 07:45 UTC)
+- **Hard deadline**: 08:00 UTC (2h 53m remaining)
+
+**Standing-by status**: Correct by design. All autonomous work blocked on user decision. Wakeup cycle active.
+
+---
+
 ## Since Last Check-in (Session 3750 — June 17 04:58–05:08 UTC — STANDING BY FOR STOCKBOT DECISION; WAKEUP CYCLE MONITORING)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; CONTINUING COUNTDOWN TO 08:00 UTC**
