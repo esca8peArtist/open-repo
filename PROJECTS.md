@@ -127,6 +127,43 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
   - **Domain 56** (Civil Service Politicization, 47 citations): H.R. 492/S. 134 legislative window June 1-30, DOJ Voting Section collapse (6 attorneys from 30), highest-leverage: Partnership for Public Service + AFGE briefing May 19-23
   - **Domain 58** (Tribal Sovereignty, 60 citations, 9,400 words): Montana SB 490 post-*Callais* voting rights victory (May 11 injunction), BIA reorganization 13% workforce loss, Turtle Mountain v. Howe GVR issued May 19 (remanded post-*Callais*), rapid-response protocol for Trump v. Barbara ruling (birthright citizenship case, June-July expected, tribal citizenship dimension via admin legal theory; see `trump-v-barbara-rapid-response.md` v2 May 21 supplement)
 
+---
+
+## Exploration Queue (Session 3817+)
+
+**Active Items** (awaiting triggering conditions):
+1. **stockbot: Exit Model Data Pipeline & Feature Engineering Pre-Staging** (2-3h)
+   - Trigger condition: 50+ AAPL round trips accumulated (contingent on June 18 validation + Phase 4 execution)
+   - Scope: Prepare training dataset extraction from trades table, feature engineering pipeline, chronological split validation, ΔPnL calculation
+   - Value: Enables rapid exit-model training once Phase 4 stabilizes (July timeline)
+   - Owner: stockbot team
+
+2. **stockbot: Risk Management & Phase 4 Contingency Planning** (2-3h) ← **NEW (Session 3817)**
+   - Trigger condition: June 18 market validation outcome + user Phase 4 decision window
+   - Scope: Deep dive into guardrails configuration (position-size limits, Sharpe targets), Covered Calls infrastructure readiness (Gap 1-5 status), Inverse ETF strategy (PSQ/SH feature compatibility), Earnings Drift strategy (timing, capital allocation), create Phase 4 decision matrix with expected values
+   - Value: Reduces post-validation decision time; enables rapid Phase 4 execution path selection
+   - Deliverables: Phase 4 Options Analysis Framework (5-8 KB), Risk Configuration Playbook (3-5 KB), Capital Allocation Model (2-3 KB)
+   - Owner: stockbot team
+   - Confidence: 85% (all components already researched; synthesis work)
+
+3. **resistance-research: Phase 2 Execution Coordination & Coalition Matrix** (3-4h) ← **NEW (Session 3817)**
+   - Trigger condition: June 18 Day 7 checkpoint results + user Phase 2 resource allocation decision
+   - Scope: Design resource allocation for Domains 51/48/49-50/59 post-Wave-1-2 execution; create contact sequencing matrix with engagement probability models; define fallback paths for each domain; build coalition coordination playbook
+   - Value: Enables immediate Phase 2 activation post-Wave-1-2 execution; 50%+ reduction in activation planning time
+   - Deliverables: Phase 2 Resource Allocation Framework (6-8 KB), Coalition Contact Matrix (5-7 KB), Coordination Playbook (4-6 KB)
+   - Owner: resistance-research team
+   - Confidence: 88% (Phase 1 execution baseline already established)
+
+4. **cybersecurity-hardening: Phase 2 Infrastructure Deep Dive & Threat Model** (4-5h) ← **NEW (Session 3817)**
+   - Trigger condition: User completes Phase 1 VeraCrypt restart (unblocks Phase 2 planning)
+   - Scope: Design full-disk encryption for Linux machine, encrypted backup strategy (off-device + encrypted cloud), network segmentation (DMZ + proxy), VPN + Tor hardening, threat model for personal data assets (vulnerability map + mitigations), infrastructure provisioning runbook
+   - Value: Pre-staging for Phase 2 execution; eliminates planning overhead when user unblocks
+   - Deliverables: Phase 2 Infrastructure Specification (8-10 KB), Threat Model & Mitigation Map (6-8 KB), Provisioning Runbook (5-7 KB)
+   - Owner: cybersecurity-hardening team
+   - Confidence: 82% (security architecture stable; Linux-specific contingencies documented)
+
+---
+
 **REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). **✅ DOMAIN 59 COMPLETE** (Session 2839). Total remaining Phase 2 production estimate: 40-50 hours Q3 2026. Phase 1 path decided (Path A + Domain 37); Phase 2 research execution proceeds immediately or post-Wave-1; Domain 59 distribution activation ready June 5.
 
 **Session 1031 — Phase 2 DOMAINS 38–40 COMPLETE — PRODUCTION FINISHED (May 15, 02:30–04:45 UTC)** ✅:

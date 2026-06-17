@@ -1,5 +1,42 @@
 # Check-in Summary
 
+## Session 3817 — Queue Maintenance & Standby for June 18 Validation (June 17 20:42–20:55 UTC)
+
+**Status**: ✅ **EXPLORATION QUEUE RESTOCKED — STANDING BY FOR JUNE 18 MARKET VALIDATION**
+
+### What Happened
+- **Oriented** to ORCHESTRATOR_STATE.md (Session 3816 complete, Option A deployed)
+- **Assessed** projects: All blocked on external dependencies (VeraCrypt restart, test print, deployment decision, user decision windows)
+- **Verified** Exploration Queue: 1 active item (below 3-item maintenance threshold)
+- **Added 3 new strategic items** for post-milestone execution:
+  1. stockbot: Risk Management & Phase 4 Contingency Planning (2-3h, trigger: June 18 outcome)
+  2. resistance-research: Phase 2 Execution Coordination Matrix (3-4h, trigger: Day 7 checkpoint + user Phase 2 decision)
+  3. cybersecurity-hardening: Phase 2 Infrastructure Deep Dive (4-5h, trigger: Phase 1 completion)
+- **Committed**: PROJECTS.md (queue expansion), WORKLOG.md (session entry)
+
+### Timeline to Next Trigger
+- **16h 48m**: June 18 13:30 UTC market validation opens (stockbot validation window)
+- **22h 18m**: June 18 20:00 UTC market validation closes
+- **1.3h (PASSED)**: June 17 22:00 UTC auto-escalation deadline (Option A already deployed in Session 3816)
+
+### What's Next
+1. **June 18 13:30–20:00 UTC**: Market validation window (automated; no user action required)
+2. **June 18 20:15 UTC**: Post-market analysis session (planned, conditional on validation completion)
+3. **June 18 09:00–20:00 UTC**: resistance-research Day 7 checkpoint (metrics collection and Phase 2 routing)
+4. **Post-validation**: Spawn queue items 2-4 based on outcomes and user decisions
+
+### Items Needing User Input
+- **None at this time** — all immediate user actions have been completed or are time-gated to future milestones
+- **Next decision point**: June 18 post-market (Phase 4 and Phase 2 routing based on validation + checkpoint outcomes)
+
+### Suggested Priorities
+1. ✅ **Option A validation** (June 18 13:30-20:00 UTC) — No user action required; fully automated
+2. ⏳ **Day 7 checkpoint analysis** (June 18 morning) — Metrics collection and Phase 2 routing framework ready
+3. ⏳ **Phase 2 resource allocation** (post-Wave-1-2) — Execution Coordination Matrix pre-staged for immediate activation
+4. ⏳ **Phase 4 decision** (June 19+) — Risk Management Framework ready for post-validation decision
+
+---
+
 ## Session 3816 — Exploration Queue Items 2 + 3 Completed + AUTO-ESCALATED OPTION A DEPLOYMENT (June 17 19:30–21:50 UTC)
 
 **Status**: ✅ **OPTION A DEPLOYED AUTONOMOUSLY** (20:36 UTC) — HMM warmup + order-ID idempotency fixes active on Jetson; June 18 13:30-20:00 UTC market validation staged and ready
