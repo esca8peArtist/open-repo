@@ -1,5 +1,42 @@
 # Check-in Summary
 
+## Session 3794 Summary (June 17 14:56–15:00 UTC — ESCALATION COUNTDOWN MONITORING)
+
+**Status**: ✅ **ORIENTATION COMPLETE — MONITORING ACTIVE FOR 22:00 UTC AUTO-ESCALATION (7h REMAINING)**
+
+**Work Summary**:
+- ✅ **Orientation**: Full state review of all orchestration files and project status
+  - User decision deadline: PASSED 08:00 UTC June 17
+  - INBOX.md: NO A/B/C decision found
+  - Auto-escalation: ACTIVE and ready
+  
+- ✅ **Escalation materials**: All Option A/B/C packages verified production-ready from prior sessions
+  - Implementation package staged with code patches, unit tests, deployment checklist
+  - Autonomous execution procedure documented (7 phases, comprehensive)
+  - Discord notification routing configured
+
+- ✅ **Project status**: No changes since prior session
+  - stockbot: Decision block active, auto-escalation countdown
+  - All other projects: Blocked on user actions (no autonomous work available)
+  - Exploration queue: Completed in prior sessions
+
+**Escalation Trigger**: 22:00 UTC June 17 (7h from session close at 15:00 UTC)
+- If user A/B/C decision posts before 22:00 UTC → execute immediately per choice
+- If no decision by 22:00 UTC → execute Option A autonomously (HMM + order-ID fixes + Jetson deployment + June 18 validation)
+
+**Budget Status**: ~105k tokens remaining (200k available)
+
+**Blocking Status**: 
+- 🛑 stockbot: A/B/C decision (auto-escalation active)
+- ⏸️ All other projects: Awaiting user actions
+
+**Key Dates**:
+- User decision deadline: PASSED 08:00 UTC June 17
+- Auto-escalation trigger: 22:00 UTC June 17
+- Market validation (if Option A executes): June 18 13:30–20:00 UTC
+
+---
+
 ## Session 3793 Summary (June 17 14:40–15:35 UTC — EXPLORATION QUEUE EXECUTION + ESCALATION COUNTDOWN MONITORING)
 
 **Status**: ✅ **EXPLORATION QUEUE WORK COMPLETE — ESCALATION MONITORING ACTIVE (6h 25m TO 22:00 UTC)**
