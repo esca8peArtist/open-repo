@@ -1,5 +1,32 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3731 — June 17 01:40 UTC — STANDING BY RECONFIRMED; CRITICAL DEADLINE JUNE 17 08:00 UTC [6h 20m])
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DECISION DEADLINE: JUNE 17 08:00 UTC (6h 20m REMAINING)**
+
+**Session Actions**:
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 01:40 UTC), INBOX.md (zero new decisions since Session 3730), PROJECTS.md Goals audit (all blocked on user decisions), BLOCKED.md (4 active blocks, all user-action dependent), Exploration Queue (120+ items; 5 active pending items all awaiting external triggers)
+2. ✅ **Time verification** — Current time: June 17 01:40 UTC; deadline June 17 08:00 UTC (6h 20m remaining)
+3. ✅ **Block verification** — All 4 active blocks remain unresolved and user-action dependent: cybersecurity-hardening (VeraCrypt restart), mfg-farm (test print execution), open-repo (runtime/platform decision), systems-resilience (platform decision, deadline expired June 15 23:59 UTC). No new blocks added.
+4. ✅ **Exploration Queue audit** — 120 items total: 110+ completed (✅), 5 pending (⏳) all awaiting external events (test print, Wave 1-2 execution, June 16-18 market validation, platform decisions, post-retrain assessment). No independent work available.
+
+**Findings**: Standing-by state is **correct by design**. Confirmed for 7th consecutive session (3725-3731). All autonomous work exhausted. All projects blocked on named external dependencies (user decisions). No additional work available pending user input.
+
+**Critical User Action (DEADLINE 08:00 UTC — 6h 20m remaining)**:
+- **Stockbot A/B/C decision required** — post to INBOX.md as new item: "STOCKBOT DECISION: OPTION A" (or B or C)
+  - All three recovery runbooks (Options A/B/C) staged and ready for immediate dispatch
+  - Est. 30 min execution upon decision arrival
+
+**Awaiting Secondary Actions**:
+1. Resistance-research Wave 1-2 executions (75 min total; email templates ready in PROJECTS.md)
+2. VeraCrypt restart (cybersecurity-hardening Phase 1, step 1.3; manual Windows action)
+3. Test print execution (mfg-farm; 0.20mm layer height, PLA+, 3 walls, 220-225°C)
+4. Platform/runtime decisions (open-repo: Docker vs systemd; systems-resilience: Nextcloud+Matrix vs Discourse)
+
+**Orchestrator Status**: Ready, standing by. All materials staged. Next autonomous action triggers immediately upon user stockbot decision.
+
+---
+
 ## Since Last Check-in (Session 3730 — June 17 01:34 UTC — STANDING BY RECONFIRMED; CRITICAL DEADLINE JUNE 17 08:00 UTC [6h 26m])
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DECISION DEADLINE: JUNE 17 08:00 UTC (6h 26m REMAINING)**
