@@ -1,3 +1,46 @@
+## Session 3797 (June 17 15:46–ongoing UTC — ESCALATION COUNTDOWN READY FOR TRIGGER)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 14m UNTIL 22:00 UTC AUTO-EXECUTION**
+
+**Orientation + Escalation Verification (15:46 UTC)**:
+- ✅ ORCHESTRATOR_STATE.md reviewed — escalation countdown status confirmed (Session 3795, 6h 47m remaining at 15:11 UTC)
+- ✅ PROJECTS.md stockbot Current focus reviewed — Option A/B/C decision framework documented
+- ✅ OPTION_A_AUTONOMOUS_EXECUTION_PROCEDURE.md loaded — 7-phase procedure, timeline, validation criteria confirmed complete
+- ✅ INBOX.md checked at 15:46 UTC — **NO NEW ITEMS, NO USER A/B/C DECISION FOUND**
+- ✅ CronList checked — no scheduled jobs active (prior session 3795 did not create persistent cron)
+- ✅ All other projects confirmed blocked on user actions (no autonomous work available)
+
+**Escalation Timeline (Locked)**:
+- User decision deadline: 08:00 UTC June 17 ✗ PASSED (7h 46m ago)
+- Auto-execution trigger: 22:00 UTC June 17 (6h 14m remaining)
+- Next critical checkpoint: 21:50 UTC (10 min before trigger for final readiness)
+- Phase 0 decision routing: Execute at 22:00 UTC — INBOX.md check + route to user decision path OR proceed with Option A
+- Execution duration: ~4 hours (22:00–02:00 UTC) for Phases 1–3 (checklist, patches, deploy)
+- Validation window: June 18, 13:15–20:00 UTC
+
+**Decision Status**:
+- **PASSED 7h 46m ago — 08:00 UTC June 17 deadline with zero new items**
+- Auto-escalation protocol: FULLY ARMED AND READY
+- Trigger condition: T-6h 14m
+
+**Option A Readiness Verification**:
+- ✅ OPTION_A_AUTONOMOUS_EXECUTION_PROCEDURE.md (932 lines): 7 phases (trigger verification, pre-checklist, patch application, Jetson deployment, monitoring, validation, success criteria)
+- ✅ OPTION_A_IMPLEMENTATION_PACKAGE.md: Located in projects/stockbot/ (verified exists)
+- ✅ Code patches staged: HMM warmup in trading_session.py + new OrderTracker class + unit tests
+- ✅ Deployment procedure: rsync + docker restart, validated against CLAUDE.md rules
+- ✅ Success criteria: 7 verifiable checkpoints (patches applied, syntax clean, tests pass, container healthy, regime non-None, signals non-zero)
+- ✅ Failure routing: BLOCKED.md + Discord notification procedure documented in Phase 7
+
+**Next Action**:
+1. ScheduleWakeup at 21:50 UTC (6h 4m from now, 350 seconds) with this prompt:
+   - "Execute Phase 0 (INBOX.md check) + proceed with Option A autonomous execution per OPTION_A_AUTONOMOUS_EXECUTION_PROCEDURE.md"
+2. That wakeup will trigger Phase 0, 1, 2, 3 execution in one continuous session
+3. Phase 4–5 validation continues across June 18
+
+**Budget**: ~160k tokens available for execution phases
+
+---
+
 ## Session 3796 (June 17 15:32–16:34 UTC — ESCALATION COUNTDOWN MONITORING CHECKPOINT 1)
 
 **Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 27m UNTIL 22:00 UTC AUTO-EXECUTION**

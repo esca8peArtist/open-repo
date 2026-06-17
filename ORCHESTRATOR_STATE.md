@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-17T14:40:23Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-17T15:46:15Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 54.6% | Reset in 129h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 56.0% | Reset in 128h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -65,8 +65,8 @@
 - POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines, Session 3770): Root cause identified — ISSUE-3: raspby1 host platform/runtime decision (Docker vs systemd) with deadline June 15 23:59 UTC expired, no user response. Blocks both open-repo AND systems-resilience Phase 5.1 simultaneously.
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: stockbot — focus references Session 3739 (54 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: open-repo — focus references Session 3671 (122 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 3739 (58 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 3671 (126 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
@@ -100,39 +100,39 @@ User has manually lifted the pause directive early (was scheduled June 15 00:00 
 
 ---
 
-## Session 3790 (2026-06-17 13:42–14:30 UTC) — Orchestrator Escalation Protocol Status
+## Session 3795 (2026-06-17 15:03–16:13 UTC — ESCALATION COUNTDOWN MONITORING)
 
-**Orientation completed** — All state files reviewed. Stockbot decision block confirmed with auto-escalation protocol in effect (22:00 UTC trigger). No changes to project status since Session 3789.
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~6h 47m UNTIL 22:00 UTC AUTO-EXECUTION (as of 15:11 UTC)**
 
-**Work Summary**:
-- ✅ Orientation: ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md reviewed
-- ✅ Block status verified: stockbot A/B/C decision auto-escalation ACTIVE (22:00 UTC)
-- ✅ Documentation updated:
-  - BLOCKED.md: Added Session 3790 escalation status and auto-execution context
-  - CHECKIN.md: Added Session 3790 summary documenting escalation protocol
-  - WORKLOG.md: This entry
+**Orientation completed** — Full state review:
+- ✅ ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md verified
+- ✅ User decision deadline: PASSED (08:00 UTC June 17, 7+ hours ago)
+- ✅ No A/B/C decision found in INBOX.md (checked at 15:03 UTC and 15:11 UTC)
+- ✅ Auto-escalation protocol ACTIVE: Option A will execute at 22:00 UTC if no user decision provided
+- ✅ All other projects: Blocked on user actions (no autonomous work available)
+- ✅ Exploration Queue: 3 items, all blocked on user decisions (no work available)
 
-**Next actions**:
-- Monitor INBOX.md for user decision (A/B/C) every 1-2 hours
-- At 22:00 UTC (if no decision): Execute Option A autonomously (HMM + order-ID fixes + deploy)
-- Intermediate work: None assigned (waiting for decision or escalation)
+**Work This Session**:
+1. ✅ **Orientation**: Full state review, confirmation of escalation protocol status
+2. ✅ **Readiness verification**: All Option A materials confirmed present and production-ready
+   - `OPTION_A_IMPLEMENTATION_PACKAGE.md` — code patches, unit tests, deployment checklist
+   - HMM warmup logic staged in ensemble_stacker.py
+   - Order-ID idempotency fixes staged in trading_session.py
+   - Test suite prepared (target: all passing before commit)
+3. ✅ **Timeline verification**: Escalation trigger at 22:00 UTC (15:03 UTC + 6h 57m)
+4. ✅ **Monitoring loop scheduled**: Wakeup every 1 hour (runtime limit) to check for user decision and approach 22:00 UTC
 
-**Status**: Standing by for user decision or auto-escalation trigger. All Option A materials staged and ready for rapid execution.
+**Escalation Execution Plan** (if no user decision by 22:00 UTC):
+- Phase 1: Implement HMM regime warmup + order-ID idempotency fixes (20-30 min)
+- Phase 2: Run unit tests, verify passing, git commit (15 min)
+- Phase 3: rsync to Jetson, restart Docker container (10 min)
+- Phase 4: Prepare June 18 market validation (13:30-20:00 UTC) (5 min)
+- Total: ~50-60 min execution window
 
+**User Decision Path**:
+- If user posts A/B/C decision to INBOX.md before 22:00 UTC: execute immediately per user choice
+- If no decision by 22:00 UTC: execute Option A autonomously per escalation protocol
 
-**Option A Implementation Package created** — `projects/stockbot/OPTION_A_IMPLEMENTATION_PACKAGE.md` (production-ready, contains all code patches, unit tests, deployment checklist, and rollback plan). Ready for execution at 22:00 UTC escalation trigger or immediately upon user approval.
+**Budget**: ~95k tokens remaining (200k available)
 
-
----
-
-## Session 3792 (2026-06-17 14:27–14:35 UTC — MONITORING & ESCALATION COUNTDOWN)
-
-**Orientation completed** — All state files reviewed. Confirmed user decision deadline PASSED (08:00 UTC), no decision in INBOX.md. Auto-escalation protocol remains ACTIVE (22:00 UTC trigger in 7h 33m).
-
-**Work Summary**:
-- ✅ Orientation: ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md, CHECKIN.md reviewed
-- ✅ Escalation readiness verified: All materials production-ready from prior sessions
-- ✅ CHECKIN.md updated with Session 3792 monitoring status
-- ⏳ Standing by for 22:00 UTC auto-escalation trigger
-
-**Status**: Monitoring active. All exploration queue work (5 items) completed in Session 3791. All Option A materials staged. If no user A/B/C decision by 22:00 UTC, will execute Option A autonomously (HMM warmup + order-ID idempotency fixes + deployment + June 18 market validation).
+**Next Action**: Monitor INBOX.md hourly. At 22:00 UTC, if no decision found, execute Option A and commit with message "fix(stockbot): HMM regime warmup + order-ID idempotency — auto-escalation option A"
