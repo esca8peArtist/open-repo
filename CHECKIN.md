@@ -1,5 +1,43 @@
 # Check-in Summary
 
+## Session 3784 Summary (June 17 13:45 UTC — ORCHESTRATOR STANDING BY: AWAITING USER DECISIONS)
+
+**Status**: 🛑 **ORCHESTRATOR STANDING BY — State unchanged from Session 3783; all autonomous work blocked on user decisions**
+
+**Orientation Completed**:
+- ✅ Read ORCHESTRATOR_STATE.md (Session 3783 summary confirms state)
+- ✅ Checked BLOCKED.md — verified 5 active blocks remain unresolved
+- ✅ Processed INBOX.md — no new items since Session 3782
+- ✅ Verified project status — all prior assessments remain current
+
+**Current Blocking Status** (unchanged from Session 3783):
+1. 🛑 **stockbot A/B/C decision** — deadline passed 08:00 UTC June 17 (5.5 hours ago)
+   - All three recovery paths fully staged and tested
+   - Decision materials ready in `JUNE_16_DIAGNOSIS_AND_FIXES.md`
+   - Standing by for INBOX.md user directive
+
+2. 🛑 **resistance-research Wave 1-2 execution** — Phase 2 domains staged:
+   - Domain 51 (Campaign Finance): 2 emails ready to send
+   - Domain 48 (Criminal Justice): 4 emails ready to send
+   - Domain 59 (Economic Precarity): Status update on June 20-21 checkpoint
+   - All materials verified production-ready (Session 3748)
+
+3. 🛑 **open-repo + systems-resilience platform decision** — deadline June 15 passed:
+   - Docker vs systemd decision gating both projects simultaneously
+   - Full deployment runbooks prepared; awaiting authorization
+
+4. ⏸️ **cybersecurity-hardening / mfg-farm** — manual user actions required (cannot auto-resolve)
+
+**Decision for This Session**:
+- No new autonomous work available
+- All active projects blocked on user input
+- Exploration queue items either completed or beyond remaining budget
+- Orchestrator standing by per protocol
+
+**Next Trigger**: User posts decision to INBOX.md or BLOCKED.md Resolution field → immediate execution routing
+
+---
+
 ## Session 3783 Summary (June 17 12:15 UTC — ORCHESTRATOR STANDING BY: BUDGET CONSTRAINT + USER DECISIONS)
 
 **Status**: 🛑 **ORCHESTRATOR STANDING BY — All autonomous work blocked; exploration queue items exceed remaining token budget**
