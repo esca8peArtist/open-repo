@@ -1,5 +1,33 @@
 # Check-in Summary
 
+## Session 3792 Summary (June 17 14:27 UTC — ORCHESTRATOR MONITORING & ESCALATION COUNTDOWN)
+
+**Status**: ⏳ **MONITORING ACTIVE FOR 22:00 UTC AUTO-ESCALATION TRIGGER — 7h 33m REMAINING**
+
+**Work This Session**:
+1. ✅ **Orientation Completed** — Full state review (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md)
+   - Confirmed: User decision deadline PASSED (08:00 UTC, 6h 27m ago)
+   - Confirmed: No user A/B/C decision in INBOX.md as of 14:27 UTC
+   - Confirmed: Auto-escalation protocol ACTIVE — Option A will execute autonomously at 22:00 UTC if no decision
+2. ✅ **Escalation Readiness Verified** — All materials production-ready (prior Session 3790-3791):
+   - `JUNE_16_DIAGNOSIS_AND_FIXES.md` — forensic root cause analysis complete
+   - `OPTION_A_IMPLEMENTATION_PACKAGE.md` — code patches staged, ready for deployment
+   - `OPTION_A_AUTONOMOUS_EXECUTION_PROCEDURE.md` — 7-phase orchestration procedure documented
+3. ⏳ **Standing By for 22:00 UTC Trigger** — Will execute Option A autonomously (HMM warmup + order-ID fixes + deployment + June 18 validation 13:30-20:00 UTC)
+
+**Blocking Status** (unchanged from Session 3791):
+- 🛑 **stockbot A/B/C decision** — Auto-escalation countdown: 22:00 UTC (7h 33m)
+- ⏸️ All other projects remain blocked on user actions (resistance-research emails, VeraCrypt restart, test print, platform decision)
+
+**Budget Status**: ~112k tokens remaining (from fresh 200k available)
+
+**Next Steps**:
+- Monitor INBOX.md periodically (1-2h intervals) for user A/B/C decision
+- If user provides decision before 22:00 UTC → immediate execution per user choice
+- If no decision by 22:00 UTC → auto-execution of Option A (HMM + order-ID fixes + deploy + validation)
+
+---
+
 ## Session 3791 Summary (June 17 13:51–14:45 UTC — EXPLORATION QUEUE EXECUTION + ESCALATION PREPARATION)
 
 **Status**: ✅ **FIVE EXPLORATION QUEUE ITEMS COMPLETED IN PARALLEL — ALL PRODUCTION-READY, COMMITTED TO MASTER; OPTION A AUTO-EXECUTION PROCEDURE FULLY PREPARED FOR 22:00 UTC ESCALATION**
