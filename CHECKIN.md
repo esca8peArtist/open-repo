@@ -1,5 +1,58 @@
 # Check-in Summary
 
+## Session 3783 Summary (June 17 12:15 UTC — ORCHESTRATOR STANDING BY: BUDGET CONSTRAINT + USER DECISIONS)
+
+**Status**: 🛑 **ORCHESTRATOR STANDING BY — All autonomous work blocked; exploration queue items exceed remaining token budget**
+
+**Orientation Completed**:
+- ✅ Read ORCHESTRATOR_STATE.md — confirmed 5 critical decision deadlines passed without user response
+- ✅ Checked BLOCKED.md — verified 5 active blocks (cybersecurity-hardening, mfg-farm, open-repo, systems-resilience, stockbot)
+- ✅ Processed INBOX.md — no new items since Session 3782
+- ✅ Attempted mfg-farm block verification — test print results directory not found (block remains active)
+
+**Critical Path Status** (all requiring user action):
+1. 🛑 **stockbot A/B/C decision** — deadline passed 08:00 UTC June 17 (4+ hours ago); OPTIONS staged:
+   - Option A: Fix HMM regime + order ID idempotency (80-100 min code + test + deploy + validate June 17)
+   - Option B: Run checkpoint query against Alpaca directly; classify gate outcome immediately
+   - Option C: Deploy fixes in observe mode; collect logs for diagnostic analysis
+   - Materials: `JUNE_16_DIAGNOSIS_AND_FIXES.md` contains full analysis + decision matrix
+
+2. 🛑 **open-repo + systems-resilience platform/runtime decision** — deadline passed June 15 23:59 UTC:
+   - Decision needed: Docker (recommended: 3-4h deployment, simpler) vs systemd (2-3h, traditional Linux)
+   - Both projects blocked on same decision (raspby1 host platform)
+   - Materials: `PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md` staged with full comparison + implementation runbooks
+
+3. 🛑 **resistance-research Wave 1-2 user execution** — awaiting copy-paste email campaign:
+   - All templates 100% production-ready (Domain 51, Domain 59, Domain 48 emails)
+   - User action: Fill [YOUR_NAME] + [YOUR_CONTACT_INFO] placeholders; send 5 emails total
+   - Effort: 3-4 hours across June 17-21
+   - Materials: `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md`, `DOMAIN_48_EMAIL_TEMPLATE_SET.md`, Gists ready
+
+4. ⏸️ **cybersecurity-hardening VeraCrypt restart** — manual user action (cannot auto-verify)
+5. ⏸️ **mfg-farm test print execution** — manual user action; test-print-results/ directory not found
+
+**Exploration Queue Status** (budget exhausted):
+- ✅ Completed (Session 3782): resistance-research Phase 3 Domain K, seedwarden Q3 market analysis, stockbot thermal analysis
+- ⏳ Queued (5-8h each, cannot fit in 30k remaining tokens):
+  - stockbot Market Microstructure Analysis NVDA/GOOGL (5-6h)
+  - systems-resilience Phase 6 Domains B-F Research (6-8h)
+  - seedwarden Phase 2 Content Scaling & Automation (4-5h)
+
+**Decision**:
+- All 3 queued items exceed remaining budget (30k tokens max); no autonomous work can proceed
+- Orchestrator is standing by for user decisions (INBOX.md items)
+- Upon user decision arrival, will route to appropriate execution path immediately
+
+**Next Steps**:
+1. User posts A/B/C to INBOX.md → orchestrator routes to stockbot recovery execution
+2. User posts platform choice to INBOX.md → orchestrator routes to open-repo/systems-resilience deployment
+3. User posts resistance-research go-ahead → orchestrator routes to email campaign routing script
+4. If no decisions arrive, orchestrator idles until next session
+
+**Budget Status**: ~30k tokens remaining / 200k total (exhausted for exploration queue items; sufficient for 1-2h user-decision routing work if triggered)
+
+---
+
 ## Session 3782 Summary (June 17 11:48 UTC — EXPLORATION QUEUE EXECUTION: SEEDWARDEN PHASE 2)
 
 **Status**: ✅ **PRODUCTIVE SESSION — Phase 2 content scaling research complete; strategic positioning for post-user-decision execution**
