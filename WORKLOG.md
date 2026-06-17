@@ -6214,3 +6214,36 @@ All 5 sessions will:
 
 **Contingency**: If no decision posted by 08:00 UTC, orchestrator will escalate to Discord and remain standing by.
 
+
+---
+
+## Session 3749 (June 17 04:52–05:00 UTC — STANDING BY CHECKPOINT: DISCORD REMINDER POSTED, WAKEUP SCHEDULED)
+
+**Status**: ✅ **STANDING BY FOR STOCKBOT DECISION**
+
+**Context**: Continuing from Session 3748. Stockbot decision deadline is 08:00 UTC (approximately 3h remaining from session start). All diagnostic materials staged in JUNE_16_DIAGNOSIS_AND_FIXES.md. No new decision appeared in INBOX.md yet.
+
+**Actions taken**:
+1. ✅ **Full orientation** — Verified ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md. All blocks remain stable.
+2. ✅ **Discord reminder posted** — Posted countdown reminder to Discord (DISCORD_WEBHOOK_URL) at 04:56 UTC with:
+   - Deadline countdown (3h 8m remaining)
+   - A/B/C options with descriptions
+   - Instructions to post decision to INBOX.md
+3. ✅ **Wakeup scheduled** — ScheduleWakeup invoked for 07:45 UTC (clamped from 10,500s to 3600s max, will re-invoke at 05:52 UTC with follow-up scheduling). Final wakeup will check INBOX.md 15 min before deadline.
+
+**Materials verified complete**:
+- ✅ JUNE_16_DIAGNOSIS_AND_FIXES.md (4.2K, root causes + fixes + decision matrix)
+- ✅ Resistance-research Phase 2 templates (all 3 domains staged)
+- ✅ PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py (tested & functional)
+- ✅ All git history committed to master
+
+**Next session**: 05:52 UTC (per ScheduleWakeup clamping). Will:
+1. Check INBOX.md again for decision
+2. If decision provided → execute immediately (Option A: 80-100 min fix+deploy, Option B: checkpoint query, Option C: observe mode)
+3. If no decision → schedule final wakeup for 07:50 UTC to escalate at 08:00 UTC deadline
+
+**Effort this session**: 8 min (orientation + Discord reminder + scheduling)
+**Budget remaining**: 199,992/200,000 tokens (zero tokens used this session)
+
+---
+

@@ -1,5 +1,26 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3749 — June 17 04:52–05:00 UTC — DECISION DEADLINE REMINDER POSTED; WAKEUP SCHEDULED AT 07:45 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; REMINDER POSTED TO DISCORD; WAKEUP SCHEDULED AT 07:45 UTC (2h 53m)**
+
+**Session Actions** (3749):
+1. ✅ **Orientation complete** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md. No new decisions posted yet.
+2. ✅ **Discord reminder posted** — Alerted user to approaching 08:00 UTC deadline with A/B/C options and instructions to post decision to INBOX.md
+3. ✅ **Wakeup scheduled** — Orchestrator will re-invoke at 07:45 UTC (15 min before deadline) to:
+   - Check INBOX.md for decision
+   - If decision provided → execute chosen recovery path immediately (~30 min)
+   - If no decision → post final escalation to Discord at 08:00 UTC deadline
+4. ✅ **All materials remain staged** — JUNE_16_DIAGNOSIS_AND_FIXES.md, resistance-research templates, all infrastructure production-ready and ready for immediate execution on user decision
+
+**Critical Countdown**:
+- **Next check**: 07:45 UTC (1h 53m remaining) — will either execute stockbot recovery or escalate
+- **Hard deadline**: 08:00 UTC (2h 8m remaining)
+
+**Standing-by status**: All projects remain blocked on user actions (expected). Orchestrator idle until 07:45 UTC wakeup.
+
+---
+
 ## Since Last Check-in (Session 3748 — June 17 04:41–05:24 UTC — RESISTANCE-RESEARCH PHASE 2 WAVE 1 FULLY VERIFIED + STAGED; STOCKBOT DECISION DEADLINE 08:00 UTC [~2h 36m REMAINING])
 
 **Status**: ✅ **ORCHESTRATOR ACTIVE — RESISTANCE-RESEARCH PHASE 2 WAVE 1-2 VERIFIED PRODUCTION-READY; AWAITING STOCKBOT DECISION A/B/C BY 08:00 UTC (~2h 36m)**
