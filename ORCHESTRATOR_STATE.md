@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-17T17:05:40Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-17T17:52:02Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 58.2% | Reset in 127h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 59.3% | Reset in 126h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -65,7 +65,7 @@
 - DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines, Session 3770): 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000; confidence 99%
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 3671 (131 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 3671 (138 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
@@ -96,42 +96,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+    error_str = str(api_err)
+    if "client_order_id must be unique" in error_str or "40010001" in error_str:
+        # Idempotent — order already submitted
+        logger.info(f"[Session {self.session_id}] {ticker}: Duplicate client_order_id (SELL), "
+                   f"order already on Alpaca")
+        if self.order_tracker:
+            self.order_tracker.mark_filled(client_order_id)
+        return (
+            "sell_pending",
+            None,
+            "Duplicate client_order_id — SELL order already submitted",
+            indicators,
+        )
+    else:
+        # Other APIError
+        if self.order_tracker:
+            self.order_tracker.mark_error(client_order_id, error_str)
+        logger.warning(f"[Session {self.session_id}] {ticker}: SELL submission failed ({api_err})")
+        raise
+```
 
----
+**Test Files (should already exist or need creation)**:
+- `tests/unit/test_hmm_warmup.py` (verify HMM regime initialized)
+- `tests/unit/test_order_idempotency.py` (verify order_tracker stability)
+- Run: `uv run pytest tests/unit/test_hmm_warmup.py tests/unit/test_order_idempotency.py -xvs`
 
-## Session 3795 (2026-06-17 15:03–16:13 UTC — ESCALATION COUNTDOWN MONITORING)
+**Deployment**:
+1. Apply all 4 integration points above to `src/trading/trading_session.py`
+2. Run unit tests
+3. Run full test suite: `uv run pytest tests/ --tb=short 2>&1 | tail -20`
+4. Commit: `git add -A && git commit -m "fix: complete order-tracker integration for Option A"`
+5. Deploy: `bash scripts/deploy-to-jetson.sh`
+6. Verify: `ssh awank@100.120.18.84 "docker logs stockbot --tail 50 2>&1 | grep -E 'HMM|order_tracker|regime' | head -20"`
 
-**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~6h 47m UNTIL 22:00 UTC AUTO-EXECUTION (as of 15:11 UTC)**
-
-**Orientation completed** — Full state review:
-- ✅ ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md verified
-- ✅ User decision deadline: PASSED (08:00 UTC June 17, 7+ hours ago)
-- ✅ No A/B/C decision found in INBOX.md (checked at 15:03 UTC and 15:11 UTC)
-- ✅ Auto-escalation protocol ACTIVE: Option A will execute at 22:00 UTC if no user decision provided
-- ✅ All other projects: Blocked on user actions (no autonomous work available)
-- ✅ Exploration Queue: 3 items, all blocked on user decisions (no work available)
-
-**Work This Session**:
-1. ✅ **Orientation**: Full state review, confirmation of escalation protocol status
-2. ✅ **Readiness verification**: All Option A materials confirmed present and production-ready
-   - `OPTION_A_IMPLEMENTATION_PACKAGE.md` — code patches, unit tests, deployment checklist
-   - HMM warmup logic staged in ensemble_stacker.py
-   - Order-ID idempotency fixes staged in trading_session.py
-   - Test suite prepared (target: all passing before commit)
-3. ✅ **Timeline verification**: Escalation trigger at 22:00 UTC (15:03 UTC + 6h 57m)
-4. ✅ **Monitoring loop scheduled**: Wakeup every 1 hour (runtime limit) to check for user decision and approach 22:00 UTC
-
-**Escalation Execution Plan** (if no user decision by 22:00 UTC):
-- Phase 1: Implement HMM regime warmup + order-ID idempotency fixes (20-30 min)
-- Phase 2: Run unit tests, verify passing, git commit (15 min)
-- Phase 3: rsync to Jetson, restart Docker container (10 min)
-- Phase 4: Prepare June 18 market validation (13:30-20:00 UTC) (5 min)
-- Total: ~50-60 min execution window
-
-**User Decision Path**:
-- If user posts A/B/C decision to INBOX.md before 22:00 UTC: execute immediately per user choice
-- If no decision by 22:00 UTC: execute Option A autonomously per escalation protocol
-
-**Budget**: ~95k tokens remaining (200k available)
-
-**Next Action**: Monitor INBOX.md hourly. At 22:00 UTC, if no decision found, execute Option A and commit with message "fix(stockbot): HMM regime warmup + order-ID idempotency — auto-escalation option A"
+**June 18 Validation Success Criteria**:
+- ✅ All sessions initialize with regime != None (HMM warmup working)
+- ✅ ≥1 fill per model during 13:30-20:00 UTC window
+- ✅ Zero "client_order_id must be unique" errors in logs
+- ✅ Order tracker correctly persists and reuses client_order_ids
