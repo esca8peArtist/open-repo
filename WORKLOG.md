@@ -48,6 +48,29 @@
 - **Final pre-deadline check**: 07:45 UTC (1h 38m away)
 - **Hard deadline**: 08:00 UTC (2h 53m away)
 
+---
+
+## Session 3752 (June 17 05:14–05:16 UTC — FINAL WAKEUP CHECKPOINT; NO DECISION POSTED; ESCALATION SCHEDULED 07:50 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; ESCALATION SCHEDULED 07:50 UTC (2h 36m BEFORE DEADLINE)**
+
+**Work This Session**:
+1. ✅ **Orientation complete** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
+   - No new decisions posted in INBOX.md since Session 3751
+   - All active blocks remain unchanged (cybersecurity VeraCrypt, mfg-farm test print, open-repo/systems-resilience infra, stockbot decision)
+   - No autonomous work available (all active projects blocked on user actions)
+2. ✅ **Final escalation checkpoint scheduled** — ScheduleWakeup invoked for 07:50 UTC (10 min before 08:00 UTC deadline)
+   - If decision appears by 07:50 UTC → execute immediately (Option A: 80-100 min fix+deploy, Option B: checkpoint query, Option C: observe mode)
+   - If no decision at 07:50 UTC → post final escalation to Discord and remain standing by
+
+**Critical Timeline**:
+- **Current time**: 05:14 UTC
+- **Escalation check**: 07:50 UTC (2h 36m away)
+- **Hard deadline**: 08:00 UTC (2h 46m away)
+
+**Effort this session**: 2 min (orientation + ScheduleWakeup)
+**Budget remaining**: ~199,988/200,000 tokens (minimal use)
+
 **What changed this session**: Nothing substantive — confirming standing-by state remains correct.
 
 **Effort this session**: 5 min (INBOX check + state verification + ScheduleWakeup)

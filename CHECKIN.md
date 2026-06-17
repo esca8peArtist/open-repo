@@ -1,20 +1,23 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3751 — June 17 05:07–05:12 UTC — EARLY WAKEUP; NO DECISION POSTED; WAKEUP SCHEDULED ~06:08 UTC)
+## Since Last Check-in (Session 3752 — June 17 05:14–05:16 UTC — FINAL WAKEUP CHECKPOINT; NO DECISION POSTED; ESCALATION SCHEDULED 07:50 UTC)
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; FINAL CHECK WAKEUP SCHEDULED**
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; ESCALATION CHECKPOINT ACTIVE (2h 46m TO DEADLINE)**
 
-**Session Actions** (3751):
-1. ✅ **Orientation** — Confirmed INBOX.md: no new decision posted since Session 3750 (still awaiting user A/B/C choice)
-2. ✅ **State verified** — BLOCKED.md, PROJECTS.md, all blocks stable and unchanged
-3. ✅ **Wakeup scheduled** — ScheduleWakeup invoked for ~06:08 UTC (next session will schedule 07:45 UTC final pre-deadline check). Countdown continues to 08:00 UTC deadline.
+**Session Actions** (3752):
+1. ✅ **Orientation complete** — Verified INBOX.md: no new stockbot decision posted since Session 3751 (still awaiting user A/B/C choice)
+2. ✅ **State verified stable** — BLOCKED.md, PROJECTS.md, all four active blocks remain unchanged. No autonomous work available.
+3. ✅ **Escalation checkpoint scheduled** — ScheduleWakeup invoked for 07:50 UTC (10 min before 08:00 UTC deadline) to:
+   - Check INBOX.md for decision arrival
+   - If decision present → execute immediately (Option A: 80-100 min fix+deploy, Option B: checkpoint query, Option C: observe mode)
+   - If decision absent → post final escalation to Discord and remain standing by
 
 **Critical Countdown**:
-- **Current time**: 05:07 UTC
-- **Next automatic wakeup**: ~06:08 UTC (from ScheduleWakeup, will refine to 07:45 UTC)
-- **Hard deadline**: 08:00 UTC (2h 53m remaining)
+- **Current time**: 05:14 UTC
+- **Escalation checkpoint**: 07:50 UTC (2h 36m remaining)
+- **Hard deadline**: 08:00 UTC (2h 46m remaining)
 
-**Standing-by status**: Correct by design. All autonomous work blocked on user decision. Wakeup cycle active.
+**Standing-by status**: Correct by design. All autonomous work blocked on user stockbot decision. Escalation cycle active.
 
 ---
 
