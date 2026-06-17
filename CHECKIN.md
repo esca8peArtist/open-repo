@@ -1,5 +1,46 @@
 # Check-in Summary
 
+## Session 3797 Summary (June 17 15:39–16:47 UTC — ESCALATION COUNTDOWN MONITORING CHECKPOINT 2)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 21m UNTIL 22:00 UTC AUTO-EXECUTION**
+
+**Checkpoint 2 (15:39 UTC)**:
+- ✅ **Continuation of escalation monitoring from Session 3796** — Hourly checkpoint cadence via CronCreate job 045a1479
+  - **INBOX.md verification**: NO A/B/C decision found at 15:39 UTC (continues from sessions 3795-3796)
+  - **User decision deadline**: PASSED at 08:00 UTC (7h 39m ago, now 7.5+ hours overdue)
+  - **Auto-escalation status**: ACTIVE and SCHEDULED for execution at 22:00 UTC
+
+- ✅ **Monitoring infrastructure established**:
+  - CronCreate job 045a1479: fires every hour at :07 minute past the hour (15:07, 16:07, 17:07, ... 21:07, 22:07)
+  - Loop executes: "check INBOX.md for A/B/C decision; if 22:00 UTC or later, execute Option A Phase 0-7"
+  - Job auto-expires after 7 days; can be cancelled with CronDelete if user provides decision earlier
+
+- ✅ **No autonomous work available**
+  - All non-stockbot projects: blocked on user actions
+  - Exploration Queue: deferred to preserve monitoring responsiveness
+  - Decision: Full attention to escalation trigger; zero parallel work
+
+**Escalation Timeline** (Updated):
+- **Current time**: 15:39 UTC
+- **User decision deadline**: 08:00 UTC June 17 ✗ PASSED (7.5+ hours overdue)
+- **Auto-escalation trigger**: 22:00 UTC June 17 (6h 21m remaining)
+- **Next checkpoint**: ~16:07 UTC via CronCreate (hourly at :07 minute)
+- **Final checkpoint before trigger**: ~21:07 UTC
+- **Execution window if triggered**: 22:00-23:00 UTC (50-60 min estimated)
+
+**Execution Path**:
+- **If A/B/C decision posted to INBOX.md before 22:00 UTC**: CronCreate checkpoint detects it, executes immediately per user choice, cancels loop
+- **If no decision by 22:00 UTC**: CronCreate fires at 22:07 UTC checkpoint, Phase 0 trigger verification passes, executes Option A Phase 1-7:
+  - Phase 1 (22:00–22:15): Pre-execution checklist (SSH, DB, source files, implementation package)
+  - Phase 2 (22:15–23:30): Apply HMM warmup + order-ID idempotency patches, run unit tests, commit
+  - Phase 3 (23:30–00:30): rsync to Jetson, restart Docker container, verify startup
+  - Phase 4 (00:30–13:00 UTC June 18): Overnight idle monitoring
+  - Phase 5 (13:00–20:00 UTC June 18): Market validation window
+
+**Budget Status**: ~85k tokens remaining (200k available)
+
+---
+
 ## Session 3796 Summary (June 17 15:32–16:34 UTC — ESCALATION COUNTDOWN MONITORING CHECKPOINT 1)
 
 **Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 27m UNTIL 22:00 UTC AUTO-EXECUTION**
