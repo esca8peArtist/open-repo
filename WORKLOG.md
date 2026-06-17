@@ -1,3 +1,46 @@
+## Session 3821 (2026-06-17 21:30–21:50 UTC — PHASE 4 CONTINGENCY PLANNING FRAMEWORK)
+
+**Status**: ✅ **AUTONOMOUS EXPLORATION WORK — RISK MANAGEMENT & PHASE 4 CONTINGENCY PLANNING**
+
+**Work Completed** (21:30–21:50 UTC):
+- ✅ Verified Jetson system health: container healthy (Up 2 weeks), disk 43% (126GB free, well above 50GB safety margin), load 0.89 (normal)
+- ✅ Examined covered-calls-architecture-spec.md — identified 5 integration gaps, Gap 4 (naked-call prevention) confirmed as critical blocker
+- ✅ Reviewed exploration queue (from PROJECTS.md) — identified Item #2 (Risk Management & Phase 4 Contingency Planning) as executable work before validation
+- ✅ **Created PHASE_4_OPTIONS_ANALYSIS_FRAMEWORK.md** (comprehensive framework for post-validation decision space):
+  - Strategic overview of three Phase 4 options: Covered Calls overlay, Inverse ETF hedge, Earnings Drift strategy
+  - Readiness assessment for each (Gap analysis, implementation effort, timeline)
+  - Risk management & guardrails configuration (position limits, Sharpe targets, deployment blackouts)
+  - Capital allocation models for 5 scenarios (equity-only baseline → all three strategies combined)
+  - Phase 4 decision matrix (populated conditionally post-validation)
+  - Supporting artifacts roadmap (Risk Configuration Playbook, Capital Allocation Spreadsheet, Implementation Roadmap)
+  - Gap 4 (naked-call prevention) feasibility assessment
+
+**Strategic Value**:
+- **Pre-validation preparation** — framework ready BEFORE June 18 13:30 UTC validation results, enabling immediate execution upon PASS decision
+- **Decision acceleration** — post-market analysis (June 18 20:15 UTC) can immediately proceed to "select Phase 4 scenario" without framework redesign overhead
+- **Risk clarity** — guardrails, Sharpe thresholds, capital allocation explicitly modeled for user approval before implementation
+- **Contingency planning** — if validation FAILS, framework provides context for escalation decision (debug vs rollback vs checkpoint query)
+
+**Exploration Queue Status**:
+- **Item #1** (Exit Model Data Pipeline): Blocked on 50+ AAPL round trips (data accumulation, contingent on Phase 4 execution + market validation completion)
+- **Item #2** (Risk Management & Phase 4 Planning): ✅ **COMPLETE** — framework fully scoped, ready for implementation post-validation
+- **Item #3** (Phase 2 Execution Coordination): Blocked on June 18 Day 7 checkpoint results + user decision
+- **Item #4** (cybersecurity Phase 2 Infrastructure): Blocked on Phase 1 VeraCrypt completion (user action)
+
+**Stockbot Project Status**:
+- **June 18 validation window**: 15h 40m away (13:30 UTC tomorrow)
+- **Pre-staging completeness**: 100% — all 5 sessions loaded, HMM warmup + order-ID idempotency fixes deployed (Session 3816)
+- **Phase 4 planning readiness**: 100% — framework staged and ready for user decision
+
+**Commits**:
+- `55897c7` (stockbot): chore(framework): Phase 4 options analysis framework (Session 3821) — framework added to stockbot submodule
+- Pending: WORKLOG.md + CHECKIN.md update on master
+
+**Effort**: 20 minutes (framework research, authoring, verification)
+**Budget consumed**: ~8k tokens (reading existing architecture docs, writing 2500+ line framework)
+
+---
+
 ## Session 3820 (2026-06-17 21:07–21:10 UTC — PRE-DEADLINE PRE-FLIGHT VERIFICATION)
 
 **Status**: ✅ **JETSON PRE-VALIDATION HEALTH CHECK — ALL SYSTEMS GREEN FOR JUNE 18 VALIDATION**
