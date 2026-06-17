@@ -1,5 +1,31 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3750 — June 17 04:58–05:08 UTC — STANDING BY FOR STOCKBOT DECISION; WAKEUP CYCLE MONITORING)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; CONTINUING COUNTDOWN TO 08:00 UTC**
+
+**Session Actions** (3750):
+1. ✅ **Orientation complete** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md. No new decisions posted since Session 3749.
+2. ✅ **Readiness verified** — Confirmed all recovery path materials staged & ready for immediate execution:
+   - `JUNE_16_DIAGNOSIS_AND_FIXES.md`: Root causes identified (HMM regime stuck, order ID idempotency)
+   - Option A (fix + test + deploy): 80-100 min, ready for execution if chosen
+   - Option B (historical checkpoint query): Immediate execution path
+   - Option C (observe mode): Overnight monitoring setup
+3. ✅ **Pre-flight check** — Verified code structure for Option A implementation:
+   - HMMSignalMasker.update_price() method exists ✅
+   - trading_session._get_hmm_regime_masker() located and verified ✅
+   - Code paths for both fixes identified and documented ✅
+4. ✅ **Block status stable** — All four active blocks remain unchanged (cybersecurity VeraCrypt, mfg-farm test print, open-repo/systems-resilience infra decisions). No new resolutions.
+
+**Critical Countdown**:
+- **Current time**: 04:58 UTC
+- **Next automatic wakeup**: 05:52 UTC (per Session 3749 ScheduleWakeup clamping) — will schedule follow-up for 07:45 UTC final check
+- **Hard deadline**: 08:00 UTC (3h 2m remaining)
+
+**Standing-by status**: All projects blocked on user actions (expected). Orchestrator will monitor automatically via scheduled wakeups.
+
+---
+
 ## Since Last Check-in (Session 3749 — June 17 04:52–05:00 UTC — DECISION DEADLINE REMINDER POSTED; WAKEUP SCHEDULED AT 07:45 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; REMINDER POSTED TO DISCORD; WAKEUP SCHEDULED AT 07:45 UTC (2h 53m)**
