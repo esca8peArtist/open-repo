@@ -1,5 +1,35 @@
 # Check-in Summary
 
+## Session 3778 Summary (June 17 11:00+ UTC — STANDUP + BUDGET EXHAUSTION)
+
+**Status**: ⏸️ **ORCHESTRATOR PAUSED — Budget exhausted, all projects blocked on user decisions**
+
+**Work This Session**:
+- ✅ **Orientation**: Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, WORKLOG.md
+- ✅ **Verification**: Confirmed Session 3777 exploration queue deliverables committed to master
+- ✅ **Budget assessment**: ~17k tokens remaining (near limit); insufficient for additional research queue items
+- ✅ **Block status**: All 10 projects blocked on user decisions or manual actions:
+  - 🛑 stockbot: A/B/C decision (deadline passed 08:00 UTC June 17)
+  - 🛑 resistance-research: Wave 1-2 email execution awaiting user copy-paste
+  - 🛑 open-repo & systems-resilience: Platform/runtime decisions (deadline passed June 15)
+  - ⏸️ cybersecurity-hardening: VeraCrypt restart (manual Windows action)
+  - ⏸️ mfg-farm: Test print execution (manual physical action)
+
+**Exploration Queue Status**:
+- ✅ 2 items completed (Session 3777): Domain H research + seedwarden market assessment
+- ⏳ 2 items queued: Domain K research (6-8h, requires user A/B/C decision), stockbot Phase 4 support (2-3h, requires user A/B/C decision)
+- **Assessment**: Remaining items are gated by stockbot decision. No independent research work available within budget.
+
+**Recommendation**:
+- **Pause orchestrator** until user provides input on blocking decisions
+- Upon user A/B/C decision: orchestrator resumes stockbot work + remaining queue items
+- Upon user manual actions (test print, email execution, restart): those projects unblock
+
+**Budget**: 17k tokens remaining → insufficient for additional major work
+**Next Session**: Upon user decision arrival
+
+---
+
 ## Session 3777 Summary (June 17 10:50 UTC — EXPLORATION QUEUE EXECUTION COMPLETE)
 
 **Status**: ✅ **PRODUCTIVE SESSION — 2 major research deliverables completed despite all projects blocked on user decisions**
