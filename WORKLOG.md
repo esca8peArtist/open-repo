@@ -1,3 +1,27 @@
+## Session 3745 (June 17 04:06–04:10 UTC — ORCHESTRATOR STANDING BY; STOCKBOT DEADLINE 08:00 UTC [3h 50m REMAINING])
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT USER DECISION BY 08:00 UTC**
+
+**Work This Session**:
+1. ✅ **Orientation & block verification** — Confirmed from prior sessions that:
+   - Stockbot decision deadline 08:00 UTC (3h 50m remaining)
+   - No new user decisions in INBOX.md yet
+   - All recovery paths (A/B/C) staged in JUNE_16_DIAGNOSIS_AND_FIXES.md + BLOCKED.md
+   - Resistance-research Phase 2 Wave 1 production-ready (awaiting user email sends)
+   - All other projects blocked on manual user actions
+2. ✅ **Exploration Queue review** — 120+ items complete or post-decision. Zero independent autonomous work available.
+3. ✅ **Session decision**: STANDING BY per protocol. Scheduled wakeup at 07:45 UTC to monitor deadline.
+
+**Critical Timeline**:
+- **Stockbot decision deadline: 08:00 UTC (3h 50m remaining)** — POST TO INBOX.md: `STOCKBOT DECISION: OPTION A` or `B` or `C`
+- **Wakeup scheduled**: 07:45 UTC to check for decision + escalate if needed
+
+**Effort this session**: 4m (orientation + verification + CHECKIN/WORKLOG updates + commit)
+**Budget remaining**: ~195,000/200,000 tokens
+**Orchestrator Status**: Standing by. All autonomous work exhausted. Monitoring for decision.
+
+---
+
 ## Session 3744 (June 17 04:00–04:15 UTC — ORCHESTRATOR STANDING BY; STOCKBOT DEADLINE 08:00 UTC [4h REMAINING])
 
 **Status**: ✅ **ORCHESTRATOR READY — AWAITING STOCKBOT USER DECISION BY 08:00 UTC**
