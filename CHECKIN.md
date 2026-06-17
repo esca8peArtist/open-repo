@@ -1,5 +1,42 @@
 # Check-in Summary
 
+## Session 3787 Summary (June 17 13:25–13:40 UTC — STANDING BY FOR ESCALATION)
+
+**Status**: ⏸️ **AUTO-ESCALATION COUNTDOWN CONFIRMED: June 17 22:00 UTC (8h 35m remaining)**
+
+**Orientation Completed**:
+- ✅ All BLOCKED.md blocks verified ACTIVE (no resolutions submitted by user)
+- ✅ INBOX.md checked: ZERO new items since Session 3786
+- ✅ Project goals re-read: No additional scope beyond current deliverables
+- ✅ Exploration queue reviewed: Items too large for remaining budget (~30k tokens)
+- ✅ Infrastructure verification: No new containers deployed (open-repo, systems-resilience blocks remain active)
+
+**Current Blocking Status** (unchanged since Session 3786):
+1. 🛑 **stockbot A/B/C decision** — deadline PASSED 08:00 UTC (5h 25m overdue as of this session)
+   - Decision framework ready: `STOCKBOT_DECISION_A_B_C_ANALYSIS_FRAMEWORK.md`
+   - Recommendation: Option A (88/100 confidence)
+   - Auto-escalation triggers at 22:00 UTC if no user decision
+2. 🛑 **open-repo + systems-resilience platform decision** — deadline PASSED June 15 23:59 UTC
+   - Runbooks staged (Nextcloud+Matrix vs Discourse comparison)
+3. 🛑 **resistance-research Wave 1-2 execution** — templates production-ready
+   - Domains 59, 51, 48 ready for user copy-paste campaign
+4. ⏸️ **cybersecurity-hardening VeraCrypt restart** — manual (Windows user action)
+5. ⏸️ **mfg-farm test print execution** — manual (3D printer user action)
+
+**Autonomous Work Assessment**:
+- All active projects blocked on user decisions with expired deadlines
+- Exploration queue items (5-8h each) exceed available budget
+- **Verdict**: ZERO autonomous work available. Orchestrator standing by per protocol.
+
+**Path Forward**:
+- **Before 22:00 UTC**: If user posts A/B/C decision to INBOX.md, orchestrator will route to execution immediately
+- **At 22:00 UTC**: If no decision, auto-escalation triggers → orchestrator executes Option A autonomously (both HMM + order-ID fixes + deploy + validate)
+- **Secondary blocks**: platform decision and resistance-research execution remain available for concurrent work once primary decisions clarified
+
+**Budget**: ~30k tokens remaining this session; 200k fresh budget next session
+
+---
+
 ## Session 3784 Summary (June 17 13:12–14:30 UTC — EXPLORATION QUEUE EXECUTION COMPLETE: stockbot Phase 4 Audit + seedwarden Phase 2 Roadmap)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEMS COMPLETE — TWO MAJOR DELIVERABLES STAGED FOR IMPLEMENTATION**
