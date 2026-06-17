@@ -1,5 +1,39 @@
 # Check-in Summary
 
+## Session 3833 — Standby Verification, All Systems Ready for June 18 Validation (June 17 23:39–23:45 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY FOR JUNE 18 13:30 UTC MARKET VALIDATION WINDOW**
+
+### Since Last Check-in (Session 3832)
+- ✅ **Standby confirmed**: No new work available; all blocks remain unchanged
+- ✅ **System verification**: Jetson healthy (5 sessions active, container up 2+ hours)
+- ✅ **Validation readiness**: 100% — Option A deployed, all models staged, monitoring checklist ready
+- ⏳ **Next milestone**: June 18 13:30 UTC market validation begins (automated, 13.5 hours away)
+
+### What's Accomplished
+- ✅ **stockbot June 18 validation**: Fully staged with Option A fix (HMM warmup priming + order-ID idempotency)
+- ✅ **AAPL/MSFT retrains**: Complete, 6/7 gates each (ready for Phase 4 expansion post-validation)
+- ✅ **Phase 3b infrastructure**: Exit model pre-staging complete (awaiting 50+ AAPL round trips from validation window)
+- ✅ **Risk analysis**: OPTION_A_VALIDATION_CHECKLIST.md ready with monitoring framework
+- ✅ **Phase 4 framework**: Decision trees and capital allocation models staged for 20:15 UTC analysis
+
+### What's In Progress
+- ⏳ **June 18 13:30–20:00 UTC**: Market validation window (automated trading, no orchestrator action)
+- ⏳ **Pending user actions**: VeraCrypt restart (cybersecurity-hardening), test print (mfg-farm), platform decision (open-repo + systems-resilience)
+
+### Items Needing Your Input
+- **None at this moment** — All user action items remain from prior sessions (VeraCrypt restart, test print, raspby1 decision)
+- **June 19 post-validation**: Will need Phase 4 expansion decision if validation PASS (expansion scope, timeline, capital allocation)
+
+### Suggested Priorities for Next Session
+1. **June 18 20:15 UTC**: Execute post-validation analysis (Exploration Queue Item 5)
+2. **June 19**: Phase 4 expansion decision framework (if validation PASS)
+3. **June 19**: Domain 59 Tier 2 reassessment (resistance-research trigger)
+
+**Budget**: ~7k tokens remaining (session used 6 tokens for orientation + commit prep)
+
+---
+
 ## Session 3832 — Final Pre-Validation Health Check & Standby Confirmation (June 17 23:28–23:40 UTC)
 
 **Status**: ✅ **ALL SYSTEMS OPERATIONAL — READY FOR JUNE 18 13:30 UTC MARKET VALIDATION**
