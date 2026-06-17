@@ -1,5 +1,25 @@
 # Check-in Summary
 
+## Session 3814 — Final Pre-Escalation Verification (June 17 19:00–19:15 UTC)
+
+**Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE — STANDING BY FOR 22:00 UTC AUTO-ESCALATION**
+
+**What happened**:
+- ✅ Oriented to current state — confirmed Session 3813 completed, Option A fully deployed to Jetson
+- ✅ Verified Jetson health: stockbot container UP 18 minutes (healthy), deployment complete
+- ✅ Verified INBOX.md — no new user decision on Option A/B/C choice
+- ✅ Confirmed auto-escalation timeline: 22:00 UTC (2h 45m remaining from session start)
+- ✅ All orchestration state verified correct; no new blocks or changes
+
+**Key Status Summary**:
+- **stockbot**: Option A deployed and ready; validation window June 18 13:30-20:00 UTC
+- **All other projects**: Blocked on user actions (cybersecurity, mfg-farm, platforms)
+- **Auto-escalation**: On track; no user decision required, Option A proceeding as designed
+
+**Next Milestone**: June 18 13:30 UTC market open for validation window (target 20:15 UTC post-market analysis session to evaluate results and recommend Phase 4 path).
+
+---
+
 ## Session 3813 — Orientation & Idle Status (June 17 19:00–19:30 UTC)
 
 **Status**: ✅ **NO AUTONOMOUS WORK AVAILABLE — IDLING UNTIL JUNE 18 MARKET VALIDATION**
