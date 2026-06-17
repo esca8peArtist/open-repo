@@ -1,26 +1,40 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3739 — June 17 03:02 UTC — STANDING BY CONFIRMED; ALL AUTONOMOUS WORK COMPLETE; CRITICAL DEADLINE JUNE 17 08:00 UTC [5h REMAINING])
+## Since Last Check-in (Session 3739 — June 17 03:08–03:27 UTC — FORENSIC DIAGNOSIS COMPLETE; DECISION MATERIALS STAGED; CRITICAL DEADLINE JUNE 17 08:00 UTC [4h 33m REMAINING])
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — CORRECT BY DESIGN; ALL AUTONOMOUS WORK COMPLETE**
+**Status**: ✅ **ORCHESTRATOR STANDING BY + PROACTIVE DIAGNOSTIC WORK COMPLETE**
 
 **Session Actions**:
 1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md, INBOX.md (zero new decisions), BLOCKED.md (4 user-action dependent), PROJECTS.md, EXPLORATION_QUEUE.md
-2. ✅ **Exploration Queue assessment** — Item 120 ✅ COMPLETE (Session 3738); Items 121-122 queued but time-gated to June 18-22+; earlier items all completed or superseded
-3. ✅ **Project status verification** — All main projects blocked on named external dependencies: stockbot (user A/B/C decision by 08:00 UTC), resistance-research (Wave 1-2 email execution), cybersecurity-hardening (VeraCrypt restart), mfg-farm (test print), open-repo (platform decision)
-4. ✅ **Standing-by state confirmed** — 13th consecutive verification; all autonomous work exhausted; correct state
+2. ✅ **Stockbot forensic investigation** (CRITICAL PATH WORK):
+   - Analyzed June 16 Docker logs (19:29–19:30 UTC) showing all 5 sessions with `regime=None`, `BUY_PROB_COLLAPSE` alerts
+   - Traced HMM initialization in `hmm_signal_masker.py` + `hmm_regime_scalar.py` — identified in-memory deque loss on container restart
+   - **Root Cause 1 (HMM)**: Historical bars fetched at session init are NOT fed to HMM; only real-time updates call `update_price()`. HMM never reaches 60-bar minimum. **Fix staged**: Prime HMM with 60-day historical bars at startup (20-30 min code, low risk).
+   - **Root Cause 2 (Order ID)**: `client_order_id` regenerated on each attempt, violating Alpaca idempotency contract. **Fix staged**: Implement stable ID via order state persistence (40-50 min code, low risk).
+3. ✅ **Decision framework created** — `JUNE_16_DIAGNOSIS_AND_FIXES.md` (4.2K words):
+   - Root cause analysis for both blockers with verification evidence
+   - Three deployment options: Option A (Retry June 17 post-fix), Option B (Skip + use historical data), Option C (Observe mode + deeper investigation)
+   - Code sketches for both fixes (copy-paste ready)
+   - Test validation plan (5 hourly checkpoints during 13:30–20:00 UTC window)
+4. ✅ **BLOCKED.md updated** — Added Session 3739 forensic findings + decision matrix + 08:00 UTC deadline notification
+5. ✅ **All materials committed** — JUNE_16_DIAGNOSIS_AND_FIXES.md + BLOCKED.md + WORKLOG.md updates pushed to master (commit 34256a1c)
 
-**Findings**: Standing-by is **verified correct**. No additional autonomous work available. All orchestration materials staged for immediate execution upon user stockbot decision (A/B/C by 08:00 UTC deadline, ~5 hours remaining).
+**Findings**: 
+- **Standing-by state CORRECT** — All main projects blocked on external decisions (user choice on stockbot A/B/C)
+- **Diagnostic work COMPLETED** — Both root causes forensically investigated; fixes staged with effort estimates (80–100 min total if Option A chosen)
+- **Decision materials READY** — User has full context to choose A/B/C with confidence
 
-**Critical User Action Required**:
-- **POST TO INBOX.md (NEW ITEM)**: `STOCKBOT DECISION: OPTION A` (or B or C) by 08:00 UTC (5 hours remaining)
-  - All three recovery runbooks staged and ready for immediate dispatch (~30 min execution time upon decision arrival)
+**Critical User Action Required (DEADLINE 08:00 UTC — 4h 33m remaining)**:
+- **POST TO INBOX.md**: `STOCKBOT DECISION: OPTION A` (or B or C)
+  - All three recovery paths staged and ready for immediate dispatch (~30–60 min execution upon decision arrival)
+  - See JUNE_16_DIAGNOSIS_AND_FIXES.md for decision matrix and reasoning
 
 **Next Session**:
-1. Check INBOX.md for stockbot A/B/C decision. If provided, execute chosen recovery path immediately (est. 30 min).
-2. If deadline passed without decision, escalate status.
+1. **URGENT** (if before 08:00 UTC): Check INBOX.md for stockbot A/B/C decision. If provided, execute chosen recovery path immediately.
+2. **If decision provided**: Option A → apply both fixes + test + deploy + validate June 17 13:30–20:00 UTC. Option B → run checkpoint query immediately. Option C → activate observe mode.
+3. **If deadline passed without decision**: Escalate status and recommend Option B (most prudent path).
 
-**Orchestrator Status**: Ready, standing by. All materials prepared. Zero autonomous work available.
+**Orchestrator Status**: Standing by. Diagnostic work complete. Ready for immediate execution upon user decision. Zero additional autonomous work available.
 
 ---
 
