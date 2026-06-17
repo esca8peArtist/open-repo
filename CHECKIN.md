@@ -1,5 +1,25 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3746 — June 17 04:14–04:35 UTC — FULL ORIENTATION + RESISTANCE-RESEARCH VERIFICATION COMPLETE; STOCKBOT DEADLINE 08:00 UTC [3h 45m REMAINING])
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — RESISTANCE-RESEARCH PHASE 2 WAVE 1 VERIFIED PRODUCTION-READY; AWAITING STOCKBOT DECISION BY 08:00 UTC; ALL BLOCKS STABLE**
+
+**Session Actions** (3746):
+1. ✅ **Complete orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, resistance-research Phase 2 Wave execution status files
+2. ✅ **Resistance-research Phase 2 Wave 1-2 verification** — All materials confirmed production-ready:
+   - **Domain 59** (Economic Precarity): ✅ Wave 1 executed June 9-11 (5 sends, 2 replies = MODERATE), Day 7 checkpoint complete, Path B routing set for June 20-21 reassessment
+   - **Domain 51** (Campaign Finance): ✅ Wave 1 templates production-ready in `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md` (2 emails CLC + Issue One); Wave 2 (3 emails CREW/Democracy Forward/Demos) combined in same file
+   - **Domain 48** (Criminal Justice): ✅ Wave 1 templates production-ready in `DOMAIN_48_EMAIL_TEMPLATE_SET.md` (9 emails to 4 Tier 1 orgs + contingent Wave 2); Gist created and verified HTTP 200
+   - **User action**: Copy [YOUR_NAME] + [YOUR_CONTACT_INFO] into templates, send Domain 48 (4 emails, 40 min) + Domain 51 (5 emails, 60 min) = ~90-120 min total work
+   - **Deadlines**: Domain 48 soft deadline June 20; Domain 51 hard deadline July 1; Domain 59 Wave 2 reassessment June 20-21
+3. ✅ **Stockbot decision status** — No new decision in INBOX.md; deadline 08:00 UTC (3h 45m remaining)
+   - Decision framework: `JUNE_16_DIAGNOSIS_AND_FIXES.md` (root causes + fix sketches + 3 deployment options staged)
+   - All recovery paths ready for immediate execution upon user decision
+4. ✅ **Block status verified** — All four active blocks remain stable (cybersecurity VeraCrypt restart, mfg-farm test print, open-repo/systems-resilience infrastructure decisions all pending user actions)
+5. ✅ **Exploration Queue assessment** — 120+ items remain; all paused or queued for post-decision dates. No independent autonomous work available.
+
+---
+
 ## Since Last Check-in (Session 3745 — June 17 04:06–04:08 UTC — ORCHESTRATOR STANDING BY; STOCKBOT DEADLINE 08:00 UTC [3h 52m REMAINING])
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION BY 08:00 UTC; ALL BLOCKS STABLE**
