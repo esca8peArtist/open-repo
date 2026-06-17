@@ -1,5 +1,23 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3760 — June 17 06:35 UTC — FINAL CHECKPOINT WAKEUP SCHEDULED 08:02 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; FINAL WAKEUP SCHEDULED IN ~1.5 HOURS**
+
+**Session Actions** (3760):
+1. ✅ **State verification** — INBOX.md confirmed: no A/B/C decision posted yet
+2. ✅ **Blocks verified stable** — All active blocks unchanged since Session 3754
+3. ✅ **Wakeup scheduled** — ScheduleWakeup invoked for 08:02 UTC (final check ~2 min before 08:00 UTC deadline)
+
+**Critical Countdown**:
+- **Current time**: 06:35 UTC (approximately)
+- **Final checkpoint**: ~08:02 UTC (via scheduled wakeup)
+- **Hard deadline**: 08:00 UTC (1h 25m)
+
+**Effort this session**: 2 min (state verification + ScheduleWakeup)
+
+---
+
 ## Since Last Check-in (Session 3759 — June 17 06:29 UTC — CONTINUATION CHECKPOINT; STANDING BY; FINAL CHECK SCHEDULED 07:29 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; EXECUTION PATHS FULLY STAGED & READY**
