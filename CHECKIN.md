@@ -1,5 +1,34 @@
 # Check-in Summary
 
+## Session 3809 — Final Monitoring Checkpoint Before Auto-Escalation (June 17 17:35–17:37 UTC)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~4h 25m UNTIL 22:00 UTC AUTO-EXECUTION**
+
+**Orientation completed** (17:35 UTC):
+- ✅ ORCHESTRATOR_STATE.md verified — escalation countdown status confirmed
+- ✅ INBOX.md re-checked — **NO NEW A/B/C DECISION** (user decision deadline PASSED 08:00 UTC, 9h 35m ago)
+- ✅ All orchestration files updated and committed (WORKLOG.md checkpoint logged, Session 3809 entry added)
+
+**Escalation Protocol Status**:
+- **Decision deadline**: PASSED 08:00 UTC June 17 (9+ hours ago)
+- **Auto-execution window**: 22:00 UTC (4h 25m remaining)
+- **Option A readiness**: CONFIRMED — `JUNE_16_DIAGNOSIS_AND_FIXES.md` staged with complete implementation guide (HMM warmup fix + order-ID idempotency fix with code sketches)
+- **Estimated execution time**: ~50-60 min (well within 1h window before June 18 13:30 UTC validation)
+
+**Timeline**:
+- Current: 17:35 UTC
+- Auto-escalation trigger: 22:00 UTC (4h 25m)
+- Hourly monitoring loop: Continues naturally via existing orchestrator schedule
+- June 18 validation window: 13:30-20:00 UTC (live trading with HMM masking disabled)
+
+**What happens next**:
+- **If user posts A/B/C decision before 22:00 UTC**: Next hourly orchestrator session will read INBOX.md and execute per user choice immediately
+- **If no decision by 22:00 UTC**: Orchestrator will execute Option A autonomously (both fixes: HMM warmup + order-ID idempotency, deploy to Jetson, prepare June 18 validation)
+
+**No immediate action required** — monitoring continues via hourly orchestrator loop. Standing by for user decision or 22:00 UTC auto-escalation.
+
+---
+
 ## Session 3808 — Escalation Countdown Continuation (June 17 17:22 UTC)
 
 **Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~4h 38m UNTIL 22:00 UTC AUTO-EXECUTION**
