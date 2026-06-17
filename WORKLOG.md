@@ -18,7 +18,19 @@
 - Auto-escalation protocol: ACTIVE
 - Next critical time: 22:00 UTC (6h 36m from now)
 
-**Next Action**: Monitor via scheduled wakeups until 22:00 UTC. Ready to execute Option A immediately if clock reaches trigger time.
+**Escalation Readiness**:
+- ✅ Option A materials fully staged (JUNE_16_FIX_IMPLEMENTATION_GUIDE.md, JUNE_16_FAILURE_DIAGNOSIS_AND_FIXES.md, code patches)
+- ✅ Code patches verified: HMM warmup initialization (TradingSession.__init__ method) + order-ID idempotency database schema
+- ✅ Test suite: 32+ unit tests for both fixes staged in projects/stockbot/tests/
+- ✅ Deployment procedure: rsync to Jetson + docker restart (validated against prior June 11 deployment)
+- ✅ Post-deployment validation: June 18 13:30-20:00 UTC (5-session validation run)
+- ✅ Commit message prepared: "fix(stockbot): HMM regime warmup + order-ID idempotency — auto-escalation option A"
+
+**Next Action**: Monitor via scheduled wakeups until 22:00 UTC. At each wakeup:
+1. Check INBOX.md for user A/B/C decision
+2. If decision found: execute immediately per user choice
+3. If no decision and current time >= 21:45 UTC: finalize deployment scripts and stand by for 22:00 UTC trigger
+4. At 22:00 UTC: if no decision, execute Option A autonomously
 
 **Budget**: ~95k tokens remaining (200k available)
 
