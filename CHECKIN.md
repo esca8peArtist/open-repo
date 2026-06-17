@@ -1,5 +1,40 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3723 — June 17 00:41 UTC — STANDING BY CONFIRMED; CRITICAL DEADLINE JUNE 17 08:00 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DECISION DEADLINE: JUNE 17 08:00 UTC (7h 19m REMAINING)**
+
+**Session Actions**:
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md, INBOX.md, PROJECTS.md, Exploration Queue
+2. ✅ **Time sync** — Current time: June 17 00:41 UTC; deadline June 17 08:00 UTC (7h 19m remaining)
+3. ✅ **INBOX verification** — Zero new user decisions; no STOCKBOT DECISION item posted yet
+4. ✅ **Block status audit** — All 4 active blocks remain user-action dependent:
+   - **stockbot**: Awaiting A/B/C decision (deadline 08:00 UTC) — all 3 recovery runbooks staged and ready
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual)
+   - **mfg-farm**: Test print execution (manual)
+   - **open-repo**: Platform/runtime decision expired June 15 23:59 UTC (awaiting user guidance)
+5. ✅ **Exploration Queue audit** — Verified all ⏳ pending items are contingent on future events (June 16-18 market validation, test print completion, user platform decisions)
+6. ✅ **No autonomous work available** — All projects blocked on user decisions or awaiting scheduled events
+
+**Interpretation**: Standing-by state is **correct by design**. Session 3702 and prior sessions exhausted all autonomous work. Stockbot A/B/C decision is the sole critical blocker. All supporting materials staged. Orchestrator ready for immediate dispatch (est. 30 min to execution) upon user input.
+
+**Critical User Action — DEADLINE 08:00 UTC (7h 19m)**:
+- **Stockbot decision required**: Post to INBOX.md as new item: "STOCKBOT DECISION: OPTION A" (or B or C)
+  - OPTION A: Fix HMM warmup + duplicate order_id issues, retry June 17 13:30-20:00 UTC validation
+  - OPTION B: Skip live validation, use historical data for model assessment
+  - OPTION C: Launch detailed investigation roadmap
+- Upon receipt, orchestrator will dispatch chosen recovery path immediately
+
+**Awaiting Secondary Actions**:
+1. Resistance-research Wave 1-2 executions (75 min user action; templates ready in PROJECTS.md)
+2. VeraCrypt restart + Phase 1 completion (cybersecurity-hardening)
+3. Test print execution (mfg-farm)
+4. Platform choice decision (open-repo / systems-resilience)
+
+**Orchestrator Status**: Ready, standing by. No further autonomous action until user decision received.
+
+---
+
 ## Since Last Check-in (Session 3722 — June 17 00:28 UTC — ORIENTATION COMPLETE; STANDING BY CONFIRMED; DEADLINE IN ~7h 32m)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ORIENTATION COMPLETE; STOCKBOT A/B/C DEADLINE: JUNE 17 08:00 UTC (7h 32m REMAINING)**
