@@ -1,38 +1,40 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3748 — June 17 04:34–04:38 UTC — FULL VERIFICATION + STOCKBOT DEADLINE MATERIAL CONFIRMED; STANDING BY; 08:00 UTC DEADLINE [3h 26m REMAINING])
+## Since Last Check-in (Session 3748 — June 17 04:41–05:24 UTC — RESISTANCE-RESEARCH PHASE 2 WAVE 1 FULLY VERIFIED + STAGED; STOCKBOT DECISION DEADLINE 08:00 UTC [~2h 36m REMAINING])
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL DIAGNOSTIC MATERIALS VERIFIED + VERIFIED COMPLETE; AWAITING STOCKBOT DECISION A/B/C BY 08:00 UTC**
+**Status**: ✅ **ORCHESTRATOR ACTIVE — RESISTANCE-RESEARCH PHASE 2 WAVE 1-2 VERIFIED PRODUCTION-READY; AWAITING STOCKBOT DECISION A/B/C BY 08:00 UTC (~2h 36m)**
 
 **Session Actions** (3748):
-1. ✅ **Complete orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, CHECKIN.md history
-2. ✅ **Critical deadline reconfirmed** — Stockbot decision deadline 08:00 UTC, 3h 26m remaining (from 04:34 UTC). All previous sessions correct.
-3. ✅ **Diagnostic materials verified** — `JUNE_16_DIAGNOSIS_AND_FIXES.md` (13K, 308 lines) confirmed complete and comprehensive:
-   - ✅ Root Cause 1 analysis (HMM warmup failure) with code sketch and fix
-   - ✅ Root Cause 2 analysis (order ID idempotency) with code sketch and fix
-   - ✅ Deployment Decision Matrix with all three options detailed
-   - ✅ Test validation plan (5 hourly checkpoints June 17 13:30–20:00 UTC)
-   - ✅ File change summary for both fixes
-   - Status: **PRODUCTION-READY for immediate execution upon user decision**
-4. ✅ **INBOX audit** — No new stockbot A/B/C decision provided since Session 3747 completion (no INBOX.md updates)
-5. ✅ **Autonomous work assessment**:
-   - **Stockbot (priority #1)**: Blocked on user A/B/C decision. All recovery paths staged, diagnostic materials verified complete, code sketches copy-paste ready.
-   - **Resistance-research (priority #2)**: Phase 2 Wave 1 execution ready. All 3 domains (51/48/59) have production-ready email templates or Day 7 checkpoint complete. Awaiting user sends.
-   - **All other projects**: Paused or blocked on manual user actions (VeraCrypt restart, 3D printer test, infrastructure decisions).
-6. ✅ **Standing-by status VERIFIED CORRECT** — Zero autonomous work available. All meaningful tasks blocked on user decisions.
+1. ✅ **Complete orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md. No new user decisions since Session 3747.
+2. ✅ **Stockbot diagnostic verification** — `JUNE_16_DIAGNOSIS_AND_FIXES.md` confirmed complete (root causes, fixes, decision matrix A/B/C). Ready for immediate execution upon user decision.
+3. ✅ **Resistance-research Phase 2 Wave 1-2 FULL VERIFICATION** (spawned dedicated agent, agent ID a0ff2f69fcd3500b2):
+   - **Domain 59 (Economic Precarity/CTC)**: ✅ Wave 1 executed June 9-11 (5 sends, 2 MODERATE replies). Day 7 checkpoint **COMPLETE**. Path B routing approved — Wave 2 reassessment June 20-21. Tier 2 activation forced (Senate Finance deadline June 25-30).
+   - **Domain 51 (Campaign Finance)**: ✅ All templates complete & copy-paste ready. Wave 1: 2 sends (CLC, Issue One). Wave 2: 3 sends (Common Cause CA, LWV CA, AMFBF). All contacts verified current. July 1 deadline (13 days remaining).
+   - **Domain 48 (Criminal Justice)**: ✅ All templates complete & copy-paste ready. Wave 1: 2 sends (Sentencing Project, PPI). Wave 2: 4 sends (Brennan, Worth Rises, CLC, M4BL). July 15 deadline (27 days remaining).
+   - **Gist verification**: All three Gists (59/51/48) verified HTTP 200 live, no link rot, no bounces.
+   - **Orchestration script**: `PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py` (818 lines) tested & functional.
+   - **User action needed**: Copy-paste [YOUR_NAME] + [YOUR_CONTACT_INFO] into templates, send emails. Total effort: 3-4 hours across June 17-21.
+   - **Status**: ✅ **FULLY STAGED — ZERO AUTONOMOUS WORK REMAINING**
+4. ✅ **Block status** — All four active blocks stable (cybersecurity VeraCrypt restart, mfg-farm test print, open-repo/systems-resilience infrastructure decisions). No new resolutions.
+5. ✅ **WORKLOG.md + CHECKIN.md updated** — Session 3748 entry logged with full verification results.
 
 **Critical Timeline**:
-- **URGENT (by 08:00 UTC — 3h 26m remaining)**: POST to INBOX.md: `STOCKBOT DECISION: OPTION A` (or B or C)
-  - Option A: Fix both issues (80–100 min), test, deploy, validate June 17 13:30–20:00 UTC
-  - Option B: Skip fixes, run checkpoint query against historical data, classify gate outcome (immediate execution)
-  - Option C: Run fixes in observe mode, collect signal/order logs June 17, deeper investigation
-  - See JUNE_16_DIAGNOSIS_AND_FIXES.md for full analysis and code sketches
+- **URGENT (by 08:00 UTC — ~2h 36m remaining)**: Stockbot decision deadline
+  - **Option A** (RECOMMENDED if >80% confidence): Apply both HMM + order ID fixes, test, deploy, validate June 17 13:30–20:00 UTC (80–100 min effort)
+  - **Option B** (SAFEST): Skip fixes, run checkpoint query on historical fills, classify outcome immediately
+  - **Option C** (INVESTIGATION): Run fixes in observe mode, collect signal/order logs June 17
+  - **See**: JUNE_16_DIAGNOSIS_AND_FIXES.md for full analysis & code sketches
+- **June 18 23:59 UTC** (soft deadline): Resistance-research Domain 48 Wave 1 ideally sent (Sentencing Project + PPI)
+- **June 20-21**: Domain 59 Tier 2 reassessment checkpoint
+- **June 23-25**: All three domains T+7 checkpoints
 
-**Items Needing User Input** (unchanged):
-1. **CRITICAL — Stockbot A/B/C decision** (deadline 08:00 UTC, 3h 26m remaining)
-2. **Resistance-research Wave 1 email sends** (deadline June 18 23:59 UTC) — Domain 51 (2 emails), Domain 48 (9 emails)
+**Items Needing User Input**:
+1. **CRITICAL — Stockbot A/B/C decision** (deadline 08:00 UTC, ~2h 36m remaining)
+2. **Resistance-research Domain 51 + 48 Wave 1 email sends** (deadline June 18 23:59 UTC)
+   - Domain 51: 2 template emails from `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md`
+   - Domain 48: 9 template emails from `DOMAIN_48_EMAIL_TEMPLATE_SET.md`
 
-**Orchestrator Status**: Ready for immediate execution on any of A/B/C paths. All materials verified complete. Standing by, correct by design. Zero autonomous work available.
+**Orchestrator Status**: Active, ready for immediate execution on stockbot decision OR user copy-paste execution of resistance-research emails. All materials verified production-ready. Standing by.
 
 ---
 
