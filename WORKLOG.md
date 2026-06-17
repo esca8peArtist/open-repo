@@ -5717,6 +5717,29 @@ All 5 sessions will:
 
 **Next session**: Check INBOX.md for stockbot A/B/C decision. If provided, execute chosen recovery path immediately. Otherwise, continue standing by and reorient as needed.
 
+---
+
+## Session 3736 (June 17 02:25 UTC — ORCHESTRATOR STANDING BY RECONFIRMED; 5h 35m UNTIL DEADLINE)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DECISION DEADLINE: JUNE 17 08:00 UTC (5h 35m REMAINING)**
+
+**Session Actions**:
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md (auto-generated 02:24 UTC), INBOX.md (zero new decisions), BLOCKED.md (4 active blocks), PROJECTS.md (all blocked on external decisions), Exploration Queue (110+ complete, 5-10 pending contingent on user decisions)
+2. ✅ **Time verification** — Current time: June 17 02:25 UTC; deadline June 17 08:00 UTC (5h 35m remaining)
+3. ✅ **Block status verification** — All 4 active blocks remain unresolved and user-action dependent; no new blocks added
+4. ✅ **Decision status** — No STOCKBOT DECISION item posted to INBOX; standing-by state correct
+5. ✅ **Project audit** — stockbot (A/B/C decision pending), resistance-research (Wave 1-2 email send pending), cybersecurity-hardening (VeraCrypt restart), mfg-farm (test print), open-repo (platform decision), systems-resilience (platform decision)
+
+**Interpretation**: Standing-by state is **correct by design**. Confirmed for 12th consecutive session (3725-3736). All autonomous work exhausted. All projects blocked on named external dependencies (user decisions). No additional work available pending user input.
+
+**Critical User Action (DEADLINE 08:00 UTC — 5h 35m remaining)**:
+- **Stockbot A/B/C decision required** — post to INBOX.md as new item: "STOCKBOT DECISION: OPTION A" (or B or C)
+  - All three recovery runbooks staged and ready for immediate dispatch
+  - Est. 30 min execution upon decision arrival
+
+**Orchestrator readiness**: All materials staged. No discovery overhead. Capable of immediate execution upon user decision. Standing by.
+
+**Next session**: Check INBOX.md for stockbot A/B/C decision. If provided, execute chosen recovery path immediately. Otherwise, continue standing by and reorient as needed.
 
 ---
 
