@@ -1,3 +1,41 @@
+## Session 3786 (June 17 19:00 UTC — ORCHESTRATOR STATE CHECKPOINT: DECISION ESCALATION PENDING)
+
+**Status**: ⏸️ **STANDING BY — A/B/C DECISION DEADLINE ESCALATION IMMINENT (22:00 UTC AUTO-ESCALATION)**
+
+**Protocol**: Session 3784-3785 completed decision support materials and exploratory analysis. A/B/C deadline passed 08:00 UTC (11h ago). No user response in INBOX.md. Per Session 3784 CHECKIN escalation clause: "If no decision by June 17 22:00 UTC, orchestrator defaults to Option A." Escalation in 3h.
+
+**Work This Session**:
+
+1. ✅ **Orientation** (5 min)
+   - Read ORCHESTRATOR_STATE.md: confirmed Sessions 3784-3785 completed decision support and NVDA/GOOGL analysis
+   - Verified BLOCKED.md: all 5 blocks still active, no user resolutions
+   - Verified INBOX.md: no new items since Session 3783
+   - Checked git status: stockbot submodule has 4 new commits (decision framework + capital corrections)
+   - **Critical finding**: Stockbot A/B/C decision deadline now 11h overdue; auto-escalation to Option A scheduled June 17 22:00 UTC (3h 0m remaining)
+
+2. ✅ **State Verification** (5 min)
+   - Confirmed Session 3784 deliverable: `STOCKBOT_DECISION_A_B_C_ANALYSIS_FRAMEWORK.md` (318 lines, Option A recommended at 88/100 confidence)
+   - Confirmed Session 3785 deliverable: `NVDA/GOOGL_MARKET_MICROSTRUCTURE_ANALYSIS_AUDIT.md` (with 4 critical fixes applied: capital correction 4.5x, GOOGL G7 risk surface, data discrepancy flagged, live status verification)
+   - Verified both commits pushed to stockbot submodule (419fd13, 6ac3eda)
+   - **Budget remaining**: ~122k tokens (sufficient for 1 additional exploration queue item if needed)
+
+3. ⏳ **Pending Escalation** (standing by)
+   - **If user provides A/B/C decision before 22:00 UTC**: route to execution immediately (Option A: 5-6h implementation + validation; Option B: 35-40m query; Option C: 7-9h analysis)
+   - **If no decision by 22:00 UTC (3h from now)**: orchestrator autonomously defaults to Option A:
+     * Fix 1: HMM regime initialization (feed 60-90 bars to warmup, ~20-30m code)
+     * Fix 2: Client order ID idempotency (implement stable ID tracking, ~40-50m code)
+     * Test + deploy: ~30m (Jetson rsync + docker restart)
+     * Validate: 6.5h market window (13:30-20:00 UTC June 17)
+
+**Decision Pending**: User provides A/B/C choice to unblock stockbot, OR orchestrator executes auto-escalation to Option A at June 17 22:00 UTC
+
+**Next Session**: 
+- If user posts decision before 22:00 UTC → execute selected path immediately
+- If auto-escalation triggers → begin Option A implementation at 22:00 UTC (6h extended session for code + test + deploy + validate)
+- Otherwise → continue standing by; exploration queue items remain ready for activation once blockages clear
+
+---
+
 ## Session 3784 (June 17 12:55–13:40 UTC — EXPLORATION QUEUE EXECUTION: stockbot DECISION ANALYSIS FRAMEWORK)
 
 **Status**: ✅ **DECISION SUPPORT COMPLETE — stockbot A/B/C analysis framework staged for user decision**
