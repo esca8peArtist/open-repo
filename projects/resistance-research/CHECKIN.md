@@ -1,8 +1,40 @@
 # CHECKIN — Needs Your Input
 
-*Updated: June 16, 2026 — Item 116 Phase 3 domain expansion candidates*
+*Updated: June 17, 2026 — Phase 2 Wave 1 verification complete; three domains ready for user sends*
 
 ---
+
+## PHASE 2 WAVE 1 — VERIFICATION COMPLETE (June 17, 2026 04:43 UTC)
+
+All three Gists confirmed HTTP 200. Orchestration script tested and functional. Three domains awaiting user send action.
+
+### Domain 59 (Economic Precarity / CTC)
+Day 7 checkpoint complete. Wave 1 executed June 9-11 (5 sends). Results: 2 MODERATE replies, 0 STRONG (40% response rate). Decision: Path B — delay Wave 2, reassess June 20-21. Tier 2 FORCED activation recommended by June 20 due to Senate Finance markup closing June 25-30. Contacts: EPI (researchdept@epi.org — verify before use), Demos (info@demos.org), NELP (info@nelp.org). Estimated user time: 30-45 minutes (3 Tier 2 emails, fill [YOUR_NAME] + [YOUR_CONTACT_INFO]).
+
+### Domain 51 (Campaign Finance / Dark Money)
+Wave 1 templates verified complete and copy-paste ready. 2 emails awaiting send: (1) CLC — Erin Chlopak, echlopak@campaignlegalcenter.org; (2) Issue One — info@issueone.org. Send Wave 2 (Common Cause CA, LWV CA, Clean Money AF) same day or next morning. July 1 hard deadline (13 days). T+7 checkpoint June 23-24. Estimated user time: 30-45 minutes Wave 1, 45-60 minutes Wave 2. Fill [YOUR_NAME] + [YOUR_CONTACT_INFO] — all other fields pre-populated.
+
+### Domain 48 (Criminal Justice / Civic Exclusion)
+Wave 1 templates verified complete and copy-paste ready. Templates use placeholder format: {{DECISION_MAKER}}, {{ORG_NAME}}, {{YOUR_NAME}}, {{YOUR_CONTACT_INFO}} — all verified contacts in DOMAIN_48_CONTACT_LIST_AND_STRATIFICATION.md. Wave 1: Sentencing Project (Nicole D. Porter) June 17, Prison Policy Initiative (Peter Wagner) June 18. Wave 2: Brennan Center, Worth Rises, CLC/Restore Your Vote, M4BL June 18-19. July 15 Virginia deadline (27 days). T+7 checkpoint June 23-25. Estimated user time: 90-120 minutes (6 emails across Wave 1-2).
+
+### Gist Status (verified June 17, 04:43 UTC)
+- Domain 59: https://gist.github.com/esca8peArtist/70b18a6f26dc879e3399c6d147d882ba — HTTP 200
+- Domain 51: https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372 — HTTP 200
+- Domain 48: https://gist.github.com/esca8peArtist/00c1423e3da7bb4693fa285ec87f18a8 — HTTP 200
+
+### Orchestration Infrastructure
+PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py (818 lines) tested and functional. --t7-checkpoint and --all-domains-status flags both executed cleanly. Day 7 checkpoint summary written to WORKLOG.md.
+
+### Recommended Next Actions (user)
+1. Domain 48: Send Wave 1 today (June 17) — Sentencing Project first. Highest urgency of the unsent domains.
+2. Domain 51: Send Wave 1 today (June 17) — CLC first, Issue One 90 minutes later. Then Wave 2 same day or June 18.
+3. Domain 59: Reassess Tier 2 by June 20-21 per Path B routing. Forced Tier 2 activation recommended by June 20.
+4. Next checkpoint: June 23-25 for all three domains.
+5. Estimated total user effort: 3-4 hours active execution spread across June 17-21.
+
+---
+
+
 
 ## ITEM 116 COMPLETE — THREE DECISIONS NEEDED (June 16, 2026)
 

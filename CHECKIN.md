@@ -1,8 +1,53 @@
 # Check-in Summary
 
+## Needs Your Input — Immediate Action Required (Session 3770)
+
+**CRITICAL BLOCKS PREVENTING ALL AUTONOMOUS WORK**:
+
+1. **🛑 Stockbot A/B/C Decision** (DEADLINE MISSED 08:00 UTC)
+   - **Status**: June 16 market validation FAILED. Root causes diagnosed (HMM regime stuck, order ID idempotency).
+   - **What you need to decide**: Choose ONE option:
+     - **Option A**: Apply both fixes (~80–100 min) → test → deploy to Jetson → validate June 17 13:30-20:00 UTC
+     - **Option B**: Skip fixes, run checkpoint query against historical data, classify outcome immediately
+     - **Option C**: Observe mode (collect diagnostic logs), validate June 17 with fixes in observe status
+   - **Where to post**: Add to INBOX.md New Items or fill BLOCKED.md Resolution field: `!resolve stockbot-a` or `!resolve stockbot-b` or `!resolve stockbot-c`
+   - **Impact**: Blocks AAPL/MSFT retrains (June 18 EOD deadline), Phase 4 planning, all stockbot work
+
+2. **🛑 Resistance-Research Wave 1-2 Execution** (Email send)
+   - **Status**: All materials production-ready and staged (Domain 51, Domain 48, Domain 59)
+   - **What you need to do**: Copy-paste templates from `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md` + `DOMAIN_48_EMAIL_TEMPLATE_SET.md` + Domain 59 gist, fill `[YOUR_NAME]` + `[YOUR_CONTACT_INFO]` placeholders, send emails
+   - **Effort**: 3-4 hours across June 17-21
+   - **Impact**: Blocks Phase 2 checkpoint (June 23-25), Phase 3 onboarding prep
+
+3. **🛑 Open-Repo & Systems-Resilience Runtime Decision** (Deadline PASSED June 15)
+   - **Status**: Platform/runtime choice needed for both projects
+   - **What you need to decide**: Raspby1 runtime = Docker (recommended) OR traditional systemd/venv?
+   - **Where to post**: Add to INBOX.md or BLOCKED.md Resolution field
+   - **Impact**: Blocks open-repo deployment (Phase 5.1), systems-resilience deployment (Phase 5.1), publication timelines
+
+4. **🛑 Systems-Resilience Platform Choice** (Deadline PASSED June 15)
+   - **Status**: Phase 5.1 publication platform choice (June 9 deadline missed)
+   - **What you need to decide**: Nextcloud+Matrix (RECOMMENDED 8/10) OR Discourse (5/10)?
+   - **Recommendation**: Nextcloud+Matrix — zero Pi5-specific blockers; Discourse has open IPv6 bug on 64-bit PiOS
+   - **If Nextcloud+Matrix**: Requires 7.9GB allocation (5.5GB peak) — confirm acceptable
+   - **If Discourse**: Need SMTP credentials
+   - **Where to post**: Add to INBOX.md or BLOCKED.md Resolution field
+   - **Impact**: Blocks June 9 publication (now missed); Phase 5.1 deployment can execute immediately once decision made
+
+5. **🛑 Cybersecurity-Hardening Phase 1 Restart** (User action required)
+   - **What you need to do**: Restart Windows machine, type VeraCrypt pre-boot password when prompted, let Windows boot, click "Encrypt" button in VeraCrypt to start background encryption
+   - **Then resume**: Phase 1 step 1.4 (Ente Auth installation)
+   - **Impact**: Blocks Phase 1 completion, Phase 2 research, Tier 1 distribution
+
+6. **🛑 Mfg-Farm Test Print Execution** (User action required)
+   - **What you need to do**: Execute single test print: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance vs FDM tolerance. Report PASS/FAIL.
+   - **Impact**: Blocks Phase 1 launch sequence, product candidate ranking, Etsy publication
+
+---
+
 ## Since Last Check-in (Session 3770 — June 17 08:00 UTC — ESCALATION DEADLINE REACHED; NO DECISION PROVIDED)
 
-**Status**: ✅ **ESCALATION EXECUTED — STOCKBOT A/B/C DECISION DEADLINE MISSED; STANDING BY FOR USER DIRECTION**
+**Status**: 🛑 **ESCALATION EXECUTED — STOCKBOT A/B/C DECISION DEADLINE MISSED; ALL PROJECTS BLOCKED; STANDING BY FOR USER DIRECTION**
 
 **Session Actions** (3770):
 1. ✅ **Final deadline checkpoint** — Verified INBOX.md at 08:00 UTC; no A/B/C decision posted
