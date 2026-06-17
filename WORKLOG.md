@@ -8091,16 +8091,17 @@ All 5 sessions will:
 
 ---
 
-## Session 3795 (2026-06-17 15:03–[ongoing] UTC — ESCALATION COUNTDOWN MONITORING)
+## Session 3795 (2026-06-17 15:03–16:13 UTC — ESCALATION COUNTDOWN MONITORING)
 
-**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 57m UNTIL 22:00 UTC AUTO-EXECUTION**
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~6h 47m UNTIL 22:00 UTC AUTO-EXECUTION (as of 15:11 UTC)**
 
 **Orientation completed** — Full state review:
 - ✅ ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md verified
 - ✅ User decision deadline: PASSED (08:00 UTC June 17, 7+ hours ago)
-- ✅ No A/B/C decision found in INBOX.md (checked at 15:03 UTC)
+- ✅ No A/B/C decision found in INBOX.md (checked at 15:03 UTC and 15:11 UTC)
 - ✅ Auto-escalation protocol ACTIVE: Option A will execute at 22:00 UTC if no user decision provided
 - ✅ All other projects: Blocked on user actions (no autonomous work available)
+- ✅ Exploration Queue: 3 items, all blocked on user decisions (no work available)
 
 **Work This Session**:
 1. ✅ **Orientation**: Full state review, confirmation of escalation protocol status
@@ -8110,6 +8111,7 @@ All 5 sessions will:
    - Order-ID idempotency fixes staged in trading_session.py
    - Test suite prepared (target: all passing before commit)
 3. ✅ **Timeline verification**: Escalation trigger at 22:00 UTC (15:03 UTC + 6h 57m)
+4. ✅ **Monitoring loop scheduled**: Wakeup every 1 hour (runtime limit) to check for user decision and approach 22:00 UTC
 
 **Escalation Execution Plan** (if no user decision by 22:00 UTC):
 - Phase 1: Implement HMM regime warmup + order-ID idempotency fixes (20-30 min)
@@ -8124,5 +8126,5 @@ All 5 sessions will:
 
 **Budget**: ~95k tokens remaining (200k available)
 
-**Next Action**: Monitor INBOX.md for user decision. At 22:00 UTC, if no decision found, execute Option A and commit with message "fix(stockbot): HMM regime warmup + order-ID idempotency — auto-escalation option A"
+**Next Action**: Monitor INBOX.md hourly. At 22:00 UTC, if no decision found, execute Option A and commit with message "fix(stockbot): HMM regime warmup + order-ID idempotency — auto-escalation option A"
 
