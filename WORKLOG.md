@@ -8496,3 +8496,58 @@ All 5 sessions will:
 
 **Next Action**: Monitor INBOX.md hourly. At 22:00 UTC, if no decision found, execute Option A and commit with message "fix(stockbot): HMM regime warmup + order-ID idempotency — auto-escalation option A"
 
+
+## Session 3796 (2026-06-17 17:42 UTC — ESCALATION COUNTDOWN EXECUTION PREPARATION)
+
+**Context**: Orchestrator monitoring session. User decision deadline (08:00 UTC) passed 9+ hours ago with no A/B/C decision in INBOX.md. Auto-escalation protocol activated — Option A will execute at 22:00 UTC if no decision appears.
+
+**Orientation Complete**:
+- ✅ ORCHESTRATOR_STATE.md verified: Escalation countdown 4h 18m remaining
+- ✅ BLOCKED.md audit: 4 active blocks, all awaiting manual user actions (no verifiable blocks)
+- ✅ INBOX.md audit: No new A/B/C decision posted
+- ✅ PROJECTS.md audit: All projects blocked on user decisions except stockbot (which is gated by escalation)
+
+**CODE AUDIT (Option A Readiness Assessment)**:
+- ✅ **Fix 1 (HMM Warmup)** — ALREADY IMPLEMENTED
+  - Location: `src/trading/trading_session.py` lines 3260-3289
+  - Status: HMM priming code present, feeds 60-day historical bars to regime detection at session init
+  - Verification: Code contains try-catch for error handling, logs HMM status
+
+- ⚠️ **Fix 2 (Order ID Idempotency)** — PARTIALLY IMPLEMENTED
+  - `src/trading/order_tracker.py` exists (created June 17 17:18 UTC)
+  - `src/trading/trading_session.py` imports OrderTracker (line 39)
+  - `__init__` initializes order_tracker (lines 685-691)
+  - **MISSING INTEGRATION**: Order submission code (lines 2831-2989) NOT using order_tracker yet
+    - Current approach: Uses hashlib-based client_order_id (line 2836, 2983)
+    - Required: Wire order_tracker.get_or_create_order_id() into submission path
+
+**EXECUTION PLAN (22:00 UTC — 4h 18m from now)**:
+1. **22:00-22:20 UTC** (20 min): Wire order_tracker into order submission code
+   - Locate order submission sites (lines 2831-2989 in trading_session.py)
+   - Replace hashlib-based UUID with order_tracker.get_or_create_order_id()
+   - Add error handling for "client_order_id must be unique" → idempotent success path
+
+2. **22:20-22:35 UTC** (15 min): Run unit tests
+   - Tests should already exist (test_hmm_warmup.py, test_order_idempotency.py)
+   - Verify: `uv run pytest tests/unit/test_hmm_warmup.py tests/unit/test_order_idempotency.py -xvs`
+   - Verify full suite: `uv run pytest tests/ --tb=short`
+
+3. **22:35-22:45 UTC** (10 min): Git commit
+   - Commit message: "fix: complete order-id idempotency integration for Option A"
+   - All changes confined to src/trading/trading_session.py (modify order submission logic)
+
+4. **22:45-23:00 UTC** (15 min): Deploy to Jetson
+   - Execute: `bash scripts/deploy-to-jetson.sh`
+   - Verify container health: `ssh awank@100.120.18.84 "docker logs stockbot --tail 20"`
+
+5. **23:00 UTC**: Validation checkpoint
+   - Check for HMM regime initialization logs
+   - Check for order_tracker initialization logs
+   - Report readiness for June 18 13:30 UTC market validation
+
+**Total Execution Time**: ~55-60 min (within budget)
+**Validation Window**: June 18 13:30-20:00 UTC
+**June 18 Success Criteria**: ≥1 fill per model, zero "client_order_id must be unique" errors, regime != None on all sessions
+
+**Next Session Action**: If user decision appears in INBOX.md before 22:00 UTC, execute user's choice immediately instead of Option A.
+
