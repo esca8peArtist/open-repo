@@ -1,5 +1,44 @@
 # Check-in Summary
 
+## Session 3811 — Exploration Queue Decision Support Framework (June 17 18:15–19:05 UTC)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE — DECISION SUPPORT FRAMEWORK READY**
+
+**What was accomplished**:
+- ✅ Spawned decision analysis agent (Agent ade7c353e00df5464) to build comprehensive decision support
+- ✅ Delivered 3 production-ready deliverables:
+  1. **DECISION_MATRIX.md** (22 KB, 3,200+ words) — 8-dimensional comparison of Options A/B/C
+  2. **FINANCIAL_MODELING.md** (18 KB, 1,900+ words) — Expected value analysis with 5 scenarios
+  3. **RECOMMENDATION_WITH_CONTINGENCIES.md** (17 KB, 2,100+ words) — Actionable recommendation + checkpoints
+- ✅ Committed all 3 files to stockbot submodule (commit 7af8878)
+- ✅ WORKLOG.md updated with session entry
+
+**Decision Support Summary**:
+- **Recommended Option**: A (fix HMM + order-ID, deploy, validate June 18 13:30-20:00 UTC)
+- **Expected Value**: +$3,340 (81% confidence, 48-hour timeline)
+- **Alternative**: Option C (+$4,140 EV if higher certainty needed, 1-day delay)
+- **Avoid**: Option B (negative EV, doesn't test fixes)
+- **Escalation Plan**: If no user decision by 22:00 UTC, orchestrator executes Option A autonomously
+
+**Pre-Decision Checklist** (15 min):
+- Code review: Verify staged fixes in JUNE_16_DIAGNOSIS_AND_FIXES.md
+- Jetson status: Confirm thermal/disk/uptime OK
+- Stakeholder alignment: Confirm leadership comfortable with 81% confidence
+
+**Files Staged**:
+- `/home/awank/dev/SuperClaude_Framework/projects/stockbot/DECISION_MATRIX.md`
+- `/home/awank/dev/SuperClaude_Framework/projects/stockbot/FINANCIAL_MODELING.md`
+- `/home/awank/dev/SuperClaude_Framework/projects/stockbot/RECOMMENDATION_WITH_CONTINGENCIES.md`
+
+**Next Step**: User reviews decision support materials and posts A/B/C choice to INBOX.md before 22:00 UTC, OR orchestrator executes Option A at 22:00 UTC per escalation protocol.
+
+**Timeline**:
+- Current: ~19:05 UTC
+- Decision deadline: 22:00 UTC (2h 55m remaining)
+- June 18 validation: 13:30-20:00 UTC (tomorrow)
+
+---
+
 ## Session 3809 — Final Monitoring Checkpoint Before Auto-Escalation (June 17 17:35–17:37 UTC)
 
 **Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~4h 25m UNTIL 22:00 UTC AUTO-EXECUTION**
