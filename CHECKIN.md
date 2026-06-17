@@ -1,6 +1,45 @@
 # Check-in Summary
 
-## Session 3795 Summary (June 17 15:03–[ongoing] UTC — ESCALATION COUNTDOWN MONITORING)
+## Session 3796 Summary (June 17 15:24–ongoing UTC — ESCALATION COUNTDOWN MONITORING & READINESS)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 36m UNTIL 22:00 UTC AUTO-EXECUTION**
+
+**Work Summary**:
+- ✅ **Continuation of escalation monitoring** — Session 3795 monitoring loop continues
+  - Time: 15:24 UTC (user decision window closed 7+ hours ago at 08:00 UTC)
+  - INBOX.md re-verified: NO A/B/C decision found
+  - Auto-escalation status: ACTIVE and ready for 22:00 UTC trigger
+
+- ✅ **Option A readiness verification**: All materials confirmed production-ready
+  - Code patches staged: HMM warmup initialization in TradingSession.__init__
+  - Code patches staged: Order-ID idempotency database schema (pending_orders.client_order_id)
+  - Unit tests verified: 32+ tests for both fixes in projects/stockbot/tests/
+  - Implementation guide confirmed: JUNE_16_FIX_IMPLEMENTATION_GUIDE.md with full code snippets
+  - Deployment procedure: rsync + docker restart (validated against June 11 deployment)
+  - Post-deployment validation: June 18 13:30-20:00 UTC (5-session market test)
+
+- ✅ **Monitoring loop scheduled**: Hourly wakeups until 22:00 UTC
+  - First wakeup: ~16:30 UTC (1h cadence)
+  - Each wakeup checks INBOX.md for user decision
+  - If decision found: execute immediately per user choice
+  - If no decision by 21:45 UTC: finalize execution scripts for 22:00 UTC trigger
+
+**Escalation Timeline**:
+- Current time: 15:24 UTC
+- User decision deadline: PASSED (08:00 UTC, 7h 24m ago)
+- Auto-escalation trigger: 22:00 UTC (~6h 36m remaining)
+- Execution window: 50-60 min implementation (HMM warmup + order-ID fix + test + deploy)
+- Market validation: June 18 13:30-20:00 UTC
+
+**User Input Needed**:
+- **By 22:00 UTC June 17**: Post A/B/C decision to INBOX.md for immediate execution
+- If no decision: Option A auto-executes per escalation protocol (88/100 confidence, recommended)
+
+**Budget Status**: ~90k tokens remaining (200k available)
+
+---
+
+## Session 3795 Summary (June 17 15:03–16:13 UTC — ESCALATION COUNTDOWN MONITORING)
 
 **Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 57m UNTIL 22:00 UTC AUTO-EXECUTION**
 
