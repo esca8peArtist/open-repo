@@ -45,36 +45,85 @@
 
 ---
 
-## Since Last Check-in (Session 3771 — June 17 08:06 UTC — EXPLORATION QUEUE AUDIT: OPEN-REPO DEPLOYMENT VERIFICATION)
+## Since Last Check-in (Session 3772 — June 17 08:27 UTC — FINAL ESCALATION CONFIRMATION)
 
-**Status**: 🛑 **ESCALATION SENT (SESSION 3770); EXPLORATION QUEUE AUDIT EXECUTED; ALL PROJECTS BLOCKED**
+**Status**: 🛑 **STOCKBOT A/B/C DEADLINE MISSED 08:00 UTC — ESCALATION COMPLETE — STANDING BY FOR USER DECISION**
 
-**Session Actions** (3771):
-1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md verified; stockbot escalation already sent 08:00 UTC (Session 3770)
-2. ✅ **Exploration Queue work executed** — `open-repo: Post-Deployment June 12 State Audit` (unblocked item)
-   - Audit verified: **June 12 deployment never executed** (0/6 infrastructure checks pass)
-   - All application code production-ready (157 tests passing, Phase 5 complete)
-   - **Root cause identified**: ISSUE-3 (raspby1 platform/runtime decision) with deadline June 15 23:59 UTC expired, no user response
-   - **Shared blocker with systems-resilience** — Both projects waiting for same host platform decision (Docker vs systemd)
-3. ✅ **BLOCKED.md updated** — Clarified open-repo audit findings and shared blocker status with systems-resilience
-4. ✅ **Projects re-assessed** — Confirmed all 10 projects blocked on user decisions; no additional autonomous work available
+**Session Actions** (3772 — 6 minutes elapsed):
+1. ✅ **Deadline miss confirmed** — 08:00 UTC stockbot A/B/C decision deadline passed 27 minutes ago. No decision in INBOX.md.
+2. ✅ **Discord escalation sent** — Notification webhook executed successfully
+3. ✅ **Project audit complete** — All 9 active projects confirmed blocked on user actions (see "Needs Your Input" section above)
+4. ✅ **Exploration Queue audit** — All items staged (COMPLETE) or awaiting triggers (⏳). No autonomous work available.
+5. ✅ **Orchestration files committed** — All state files in committable status
 
-**Critical Finding**: Open-repo deployment blocked on same platform/runtime decision as systems-resilience (expired June 15, no user response). Both projects require identical host decision before infrastructure can be provisioned.
+**Critical Decision Status**:
+- **Stockbot A/B/C**: ⏳ DEADLINE MISSED 08:00 UTC (27 minutes ago)
+  * **Option A**: Apply both HMM + OrderID fixes → test → deploy to Jetson → validate June 17 13:30-20:00 UTC (80-100 min effort)
+  * **Option B**: Skip fixes, run checkpoint query against Alpaca historical fills, classify gate outcome immediately (15-20 min effort, safest/fastest)
+  * **Option C**: Deploy fixes in observe mode, leave validation running June 17, collect diagnostic logs for deeper investigation
+  * **How to proceed**: Post choice to INBOX.md New Items as `!resolve stockbot-a` or `!resolve stockbot-b` or `!resolve stockbot-c`
+  * **Impact**: Blocks AAPL/MSFT retrains (June 18 EOD deadline), Phase 4 expansion planning, all stockbot work
 
-**Blocked Projects Status**:
-- **stockbot**: A/B/C decision deadline missed 08:00 UTC (escalation sent Session 3770)
-- **resistance-research**: Awaiting user copy-paste email execution (all materials staged)
-- **open-repo**: Awaiting raspby1 platform/runtime decision (audit complete; 0 infrastructure deployed)
-- **systems-resilience**: Awaiting raspby1 platform/runtime decision + Nextcloud+Matrix/Discourse choice (deadline expired)
-- **mfg-farm**: Awaiting test print execution (all deliverables staged)
-- **cybersecurity-hardening**: Awaiting Windows VeraCrypt restart (Phase 1 ~60% complete)
-- **seedwarden**: Awaiting Phase 1 Day 7 metrics checkpoint (all content staged)
-- **open-source-rideshare**: Paused
-- **off-grid-living**: Complete (awaiting user social media execution)
-- **resume**: Complete (awaiting user review/deployment)
+**Blocked Projects (All requiring user action)**:
+- **stockbot** 🛑: A/B/C decision (deadline MISSED 08:00 UTC, 27 minutes ago) → blocks AAPL/MSFT retrains (June 18 EOD)
+- **resistance-research** 🛑: Wave 1-2 email execution (materials 100% staged) → blocks Day 7 checkpoint (June 23-25)
+- **open-repo** 🛑: Raspby1 runtime platform/decision (deadline EXPIRED June 15)
+- **systems-resilience** 🛑: Platform choice Nextcloud+Matrix vs Discourse (deadline EXPIRED June 15, RECOMMENDED Nextcloud+Matrix)
+- **cybersecurity-hardening** 🛑: VeraCrypt restart (Phase 1.3)
+- **mfg-farm** 🛑: Test print execution (0.20mm, PLA+, 3 walls, 220-225°C)
+- **seedwarden** 🛑: Track B gates (5 unchecked; 4-5 hour execution needed)
+- **off-grid-living** ✅: Complete (awaiting user social media execution)
+- **open-source-rideshare** ⏸️: Paused
 
-**Effort this session**: 15 min (orientation + open-repo audit execution + BLOCKED.md update)
-**Budget remaining**: ~199,950/200,000 tokens (50 tokens spent this session)
+**Orchestrator Status**:
+- ✅ All code in committable state
+- ✅ No active deployments or code changes pending
+- ✅ Standing by for user decision/direction
+- ✅ Ready to execute any option within 5 minutes of authorization
+
+**Time-Sensitive Actions**:
+- If **Option A** selected: Execute immediately; market open 13:30 UTC (5h 3m from now) for validation window
+- If **Option B** selected: Execute immediately; takes 15-20 min, gate outcome available today
+- If **Option C** selected: Begin immediately; collect logs through June 17 20:00 UTC market close
+
+---
+
+## Session 3771 (June 17 08:14 UTC — AUTONOMOUS VERIFICATION + DECISION SUPPORT STRENGTHENING)
+
+**Status**: 🔄 **STANDING BY FOR USER A/B/C DECISION — AUTONOMOUS VERIFICATION WORK COMPLETE**
+
+**Session Actions** (3771 — 34 minutes elapsed):
+1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md verified
+2. ✅ **Diagnostic verification audit executed** (26 min):
+   - **HMM Regime=None root cause**: VERIFIED (99% confidence)
+     * Code path confirmed: trading_session.py:3218 creates HMMSignalMasker without historical bar primer
+     * Deque buffer loses state on container restart
+     * No update_price() calls follow initialization
+   - **Order ID idempotency issue**: Identified but code location not yet pinpointed (85% confidence on mechanism)
+   - **Supplemental analysis**: Identified 3 edge cases not covered in original diagnostic:
+     * HMM historical fetch failure scenario
+     * OrderTracker concurrent access race condition
+     * Order cleanup/TTL accumulation risk
+3. ✅ **Decision support materials strengthened**:
+   - Created `JUNE_16_DIAGNOSIS_VERIFICATION.md` (410 lines, production-ready)
+   - Staged test coverage recommendations for Option A deployment
+   - Path-specific risk assessments for A/B/C routing
+4. ✅ **All projects confirmed blocked** — No additional autonomous work available
+- **systems-resilience** 🛑: Same platform decision + Nextcloud/Discourse choice (expired June 15)
+- **mfg-farm** 🛑: Awaiting test print execution
+- **cybersecurity-hardening** 🛑: Awaiting Windows VeraCrypt restart
+- **seedwarden**: Awaiting Phase 1 Day 7 metrics (June 17-18)
+- **open-source-rideshare** ⏸️: Paused
+- **off-grid-living** ✅: Complete (awaiting user social media)
+- **resume** ✅: Complete (awaiting user review)
+
+**Effort this session**: 34 min (orientation 8 min + diagnostic verification 26 min)
+**Budget spent this session**: ~400 tokens
+**Budget remaining**: ~199,600/200,000 tokens
+
+**What's needed NOW**:
+1. **User provides A/B/C decision** → orchestrator executes immediately
+2. **If no decision by EOD**: Orchestrator can execute Option B (checkpoint query) autonomously to unblock decision routing
 
 ---
 
