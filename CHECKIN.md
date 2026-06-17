@@ -1,5 +1,43 @@
 # Check-in Summary
 
+## Session 3824 — Orchestrator Standby Verification & Pre-Validation State Confirmation (June 17 21:47–22:10 UTC)
+
+**Status**: ✅ **STANDBY VERIFIED — ALL SYSTEMS READY FOR JUNE 18 VALIDATION WINDOW**
+
+**What We Verified**:
+- ✅ ORCHESTRATOR_STATE.md current (21:47 UTC snapshot)
+- ✅ BLOCKED.md audited: 3 active blocks, all require manual user action (cannot auto-resolve)
+  - cybersecurity-hardening: VeraCrypt Phase 1 restart (2026-05-16)
+  - mfg-farm: Test print execution (2026-05-13)
+  - open-repo: Platform decision deadline EXPIRED (2026-06-15 23:59 UTC, no user response)
+  - systems-resilience: Platform decision deadline EXPIRED (same deadline, shared decision)
+- ✅ INBOX.md checked: no new user decisions or redirections
+- ✅ PROJECTS.md verified: all project states correctly reflected
+  - stockbot: Option A deployed June 17 20:36 UTC, standing by for June 18 13:30-20:00 UTC validation
+  - resistance-research: Phase 2 Wave 1-2 staged, awaiting user email execution (zero autonomous work)
+  - All others: blocked on named external dependencies or paused
+- ✅ Exploration Queue audited: all items contingent on post-validation triggers or external actions
+  - Item #1 (Exit Model pre-staging): blocked on 50+ AAPL round trips (post-validation)
+  - Items #2-3: completed in prior sessions (Session 3823)
+
+**Strategic Position**:
+- **June 18 validation window**: 13:30-20:00 UTC (15.5 hours away). Success criteria: ≥5 trades/model, regime ≠ None, zero duplicate-order errors (40010001). HMM warmup + order-ID idempotency fixes deployed and running on Jetson.
+- **Decision Status**: Option A (HMM + idempotency) auto-escalated at 20:36 UTC June 17 (Option A recommended with 92% confidence; user deadline was 22:00 UTC June 17; no decision posted, so orchestrator auto-selected per pre-authorized escalation path).
+- **Post-Validation Path**: If June 18 PASS → Phase 4 decision window June 19 (framework staged in Session 3823, user selects scenario). If FAIL → root cause analysis + escalation to user for June 18 morning/evening decision.
+
+**Items Needing User Input** (unchanged from Session 3823):
+- ❌ **cybersecurity-hardening**: VeraCrypt Phase 1 Windows restart (blocked 2026-05-16, 32 days)
+- ❌ **mfg-farm**: Test print execution — 0.20mm layer, PLA+, 3 walls, 220-225°C (blocked 2026-05-13, 35 days)
+- ❌ **open-repo + systems-resilience**: raspby1 platform decision (deadline EXPIRED 2026-06-15 23:59 UTC; 24+ hours overdue with zero response)
+
+**Autonomous Work Assessment**: Zero executable work until June 18 validation completes. Exploration Queue exhausted (post-validation items). All active projects blocked on external dependencies or user actions. Standby state is correct and necessary.
+
+**Next Trigger**: June 18 13:30 UTC market open (14:15 UTC stockbot models begin cycle) → June 18 20:15 UTC post-market analysis (validation verdict + Phase 4 scenario framework activation).
+
+**Effort**: 23 minutes (orientation + verification + check-in).
+
+---
+
 ## Session 3823 — Exploration Queue Execution: Phase 4 Contingency + Phase 2 Coordination (June 17 21:31–22:20 UTC)
 
 **Status**: ✅ **PARALLEL EXPLORATION WORK COMPLETE — 6 DECISION-READY DOCUMENTS STAGED FOR POST-VALIDATION EXECUTION**
