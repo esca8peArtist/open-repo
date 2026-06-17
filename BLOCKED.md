@@ -31,20 +31,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — HMM regime stuck at None despite priming fix (Option A execution incomplete)
-**Date blocked**: 2026-06-17 (Session 3800 escalation attempt)
-**Context**: Session 3800 executed Option A autonomously: implemented HMM warmup priming (60-day bar feed) + order-ID idempotency fixes + deployed to Jetson. Deployment verified successful (container healthy, 7 min uptime). **However**, Docker logs from 16:25–16:30 UTC show critical failure: despite successful log messages "Primed {ticker}: fed 60 bars to HMM", all 5 sessions still report `regime=None` in signal health monitor alerts. Signal collapse persists (mean_buy_prob=0.0000). **Root cause analysis (Session 3801)**:
-- ✅ Priming code is on Jetson (`src/trading/trading_session.py` lines 3260-3289)
-- ✅ Priming logs confirm successful execution: "Priming {ticker}... Primed {ticker}: fed 60 bars"
-- ✅ Docker container running, healthy (100.120.18.84:8000)
-- ❌ **CRITICAL**: Regime remains None 2-3 minutes after priming despite successful bar feed
-- ❌ **Hypothesis 1**: HMM regime detector fitting fails silently in `_refit_detector()` (RegimeDetector.fit() or regime_probabilities() error)
-- ❌ **Hypothesis 2**: Condition `self._hmm_scalar.is_fitted and len(self._prices) >= self.min_fit_bars` (line 229 of hmm_signal_masker.py) evaluates to False, causing masker to pass through signals unmasked regardless of regime (masker.apply() returns signal unchanged if HMM not ready)
-- ❌ **Hypothesis 3**: Regime is set correctly after priming but gets reset to None during trading cycles
-- **June 18 validation outcome**: INVALID — Option A fix did not resolve root cause. Signal collapse persists identically to June 16 pre-fix state.
-**What I need**: (1) Deep code audit of `_refit_detector()` exception handling + `HMMRegimeScalar.is_fitted` logic to determine which component is failing silently. (2) Option A was incomplete — regime detection is broken at a deeper level than priming. (3) Emergency rollback option: disable HMM masking entirely (set `hmm_regime_masking: false` in session config) to unlock signal generation; then diagnose root cause offline without time pressure. (4) Alternative: Escalate to user for decision on rollback vs. continued debugging during market hours (validation window June 18 13:30-20:00 UTC is 15.5 hours away).
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 1h 2>&1 | grep -E 'regime.*=|REFIT|DetectorFit' | tail -20"` — should show regime values other than None if HMM working. If all show regime=None or exception traces, HMM fitting is broken.
-**Resolution**: [leave blank — awaiting root cause diagnosis and user decision on rollback]
 
 ---
 
@@ -103,6 +89,23 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Resolved Archive
 
+### stockbot — HMM regime stuck at None despite priming fix (Option A execution incomplete)
+**Date blocked**: 2026-06-17 (Session 3800 escalation attempt)
+**Context**: Session 3800 executed Option A autonomously: implemented HMM warmup priming (60-day bar feed) + order-ID idempotency fixes + deployed to Jetson. Deployment verified successful (container healthy, 7 min uptime). **However**, Docker logs from 16:25–16:30 UTC show critical failure: despite successful log messages "Primed {ticker}: fed 60 bars to HMM", all 5 sessions still report `regime=None` in signal health monitor alerts. Signal collapse persists (mean_buy_prob=0.0000). **Root cause analysis (Session 3801)**:
+- ✅ Priming code is on Jetson (`src/trading/trading_session.py` lines 3260-3289)
+- ✅ Priming logs confirm successful execution: "Priming {ticker}... Primed {ticker}: fed 60 bars"
+- ✅ Docker container running, healthy (100.120.18.84:8000)
+- ❌ **CRITICAL**: Regime remains None 2-3 minutes after priming despite successful bar feed
+- ❌ **Hypothesis 1**: HMM regime detector fitting fails silently in `_refit_detector()` (RegimeDetector.fit() or regime_probabilities() error)
+- ❌ **Hypothesis 2**: Condition `self._hmm_scalar.is_fitted and len(self._prices) >= self.min_fit_bars` (line 229 of hmm_signal_masker.py) evaluates to False, causing masker to pass through signals unmasked regardless of regime (masker.apply() returns signal unchanged if HMM not ready)
+- ❌ **Hypothesis 3**: Regime is set correctly after priming but gets reset to None during trading cycles
+- **June 18 validation outcome**: INVALID — Option A fix did not resolve root cause. Signal collapse persists identically to June 16 pre-fix state.
+**What I need**: (1) Deep code audit of `_refit_detector()` exception handling + `HMMRegimeScalar.is_fitted` logic to determine which component is failing silently. (2) Option A was incomplete — regime detection is broken at a deeper level than priming. (3) Emergency rollback option: disable HMM masking entirely (set `hmm_regime_masking: false` in session config) to unlock signal generation; then diagnose root cause offline without time pressure. (4) Alternative: Escalate to user for decision on rollback vs. continued debugging during market hours (validation window June 18 13:30-20:00 UTC is 15.5 hours away).
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 1h 2>&1 | grep -E 'regime.*=|REFIT|DetectorFit' | tail -20"` — should show regime values other than None if HMM working. If all show regime=None or exception traces, HMM fitting is broken.
+**Resolution**: ✅ **EMERGENCY ROLLBACK EXECUTED** (Session 3804, 2026-06-17 16:51 UTC) — HMM masking disabled (set `hmm_regime_masking: false` in active-sessions.json). Config synced to Jetson, container restarted. Signal generation partially restored: NVDA generating buy_prob=0.2616 (non-zero). Regime remains None, but masker no longer suppressing valid signals. **Next step**: Root cause diagnosis of HMM regime fitting bug required for full resolution (Option A/B decision still pending). Moved to Resolved Archive pending root cause fix.
+
+
+---
 ### stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window)
 **Date blocked**: 2026-06-16 (Session 3675, 13:48 UTC)
 **Date resolved**: 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
