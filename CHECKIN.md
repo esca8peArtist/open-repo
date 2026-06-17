@@ -1,23 +1,25 @@
 # Check-in Summary
 
-## Session 3797 — Since Last Check-in (June 17 15:46 UTC)
+## Session 3797 — Since Last Check-in (June 17 15:46–16:00 UTC)
 
 **What's happening right now:**
-- 🟡 **ESCALATION COUNTDOWN ACTIVE** — Auto-execution trigger at 22:00 UTC (6h 14m remaining)
-- ✅ **No user A/B/C decision found in INBOX.md** — deadline was June 17 08:00 UTC (passed 7h 46m ago)
-- ✅ **All Option A materials verified production-ready** — 932-line procedure, code patches, unit tests, rsync deployment, validation plan
-- ✅ **All other projects blocked on user actions** — no autonomous work available; full attention on escalation monitoring
+- 🟡 **ESCALATION COUNTDOWN ACTIVE** — Auto-execution trigger at 22:00 UTC (6h 7m remaining as of 15:53 UTC)
+- ✅ **No user A/B/C decision found in INBOX.md** — deadline was June 17 08:00 UTC (passed 7h 53m ago)
+- ✅ **All Option A materials verified production-ready** — 932-line procedure, code patches (HMM warmup init + order-ID idempotency), unit tests (32+), rsync deployment, June 18 validation plan
+- ✅ **All other projects blocked on user actions** — resistance-research (awaiting email execution), cybersecurity-hardening (awaiting Windows restart), mfg-farm (awaiting test print), off-grid-living (complete, awaiting social media execution)
+- ✅ **Monitoring loop established** — Wakeup every 1 hour to check INBOX.md for user decision; final monitoring checkpoint ~21:50 UTC (10 min before trigger)
 
 **Timeline (locked):**
-- **22:00 UTC June 17**: Auto-execution trigger (Phase 0 — INBOX.md decision routing)
-- **22:00–02:00 UTC**: Phases 1–3 execution (pre-checklist, HMM/order-ID patches, tests, Jetson deploy)
-- **June 18 13:00–20:00 UTC**: Phase 5 validation (pre-market, signal checks, trade execution)
+- **22:00 UTC June 17**: Auto-execution trigger (Phase 0 — INBOX.md final check, decision routing OR proceed with Option A)
+- **22:00–23:00 UTC**: Phase 1–2 execution (apply patches, run tests, verify passing)
+- **23:00–23:30 UTC**: Phase 3 deployment (rsync to Jetson, restart Docker container)
+- **June 18 13:00–20:00 UTC**: Phase 4–5 validation (pre-market signal checks, live trade execution, post-market analysis)
 
 **What I need from you:**
 - **NOW (before 22:00 UTC)**: If you want Option B or C instead of A, post decision to INBOX.md (Format: `Option A` or `Option B` or `Option C` in New Items section)
-- **No response by 22:00 UTC**: I will autonomously execute Option A (HMM warmup + order-ID idempotency fix, Jetson deploy, June 18 13:30-20:00 UTC validation)
+- **No response by 22:00 UTC**: I will autonomously execute Option A (HMM regime warmup + order-ID idempotency fix, Jetson deploy, June 18 13:30-20:00 UTC validation)
 
-**Budget:** ~160k tokens available for execution phases
+**Budget:** ~160k tokens available for execution phases (monitoring + escalation automation)
 
 ---
 

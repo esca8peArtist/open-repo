@@ -1,43 +1,47 @@
-## Session 3797 (June 17 15:46–ongoing UTC — ESCALATION COUNTDOWN READY FOR TRIGGER)
+## Session 3797 (June 17 15:46–16:00 UTC — ESCALATION COUNTDOWN MONITORING CHECKPOINT 3)
 
-**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 14m UNTIL 22:00 UTC AUTO-EXECUTION**
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 7m UNTIL 22:00 UTC AUTO-EXECUTION (as of 15:53 UTC)**
 
-**Orientation + Escalation Verification (15:46 UTC)**:
+**Orientation + Escalation Verification (15:46–15:53 UTC)**:
 - ✅ ORCHESTRATOR_STATE.md reviewed — escalation countdown status confirmed (Session 3795, 6h 47m remaining at 15:11 UTC)
 - ✅ PROJECTS.md stockbot Current focus reviewed — Option A/B/C decision framework documented
-- ✅ OPTION_A_AUTONOMOUS_EXECUTION_PROCEDURE.md loaded — 7-phase procedure, timeline, validation criteria confirmed complete
-- ✅ INBOX.md checked at 15:46 UTC — **NO NEW ITEMS, NO USER A/B/C DECISION FOUND**
-- ✅ CronList checked — no scheduled jobs active (prior session 3795 did not create persistent cron)
+- ✅ OPTION_A_AUTONOMOUS_EXECUTION_PROCEDURE.md verified — 7-phase procedure, timeline, validation criteria confirmed complete
+- ✅ INBOX.md re-checked at 15:53 UTC — **NO NEW ITEMS, NO USER A/B/C DECISION FOUND** (deadline passed 08:00 UTC, 7h 53m ago)
 - ✅ All other projects confirmed blocked on user actions (no autonomous work available)
+- ✅ All Option A materials confirmed staged and production-ready (HMM warmup, order-ID idempotency fixes, unit tests, deployment procedure)
 
 **Escalation Timeline (Locked)**:
-- User decision deadline: 08:00 UTC June 17 ✗ PASSED (7h 46m ago)
-- Auto-execution trigger: 22:00 UTC June 17 (6h 14m remaining)
-- Next critical checkpoint: 21:50 UTC (10 min before trigger for final readiness)
-- Phase 0 decision routing: Execute at 22:00 UTC — INBOX.md check + route to user decision path OR proceed with Option A
-- Execution duration: ~4 hours (22:00–02:00 UTC) for Phases 1–3 (checklist, patches, deploy)
-- Validation window: June 18, 13:15–20:00 UTC
+- User decision deadline: 08:00 UTC June 17 ✗ PASSED (7h 53m ago)
+- Auto-execution trigger: 22:00 UTC June 17 (6h 7m remaining)
+- Next monitoring checkpoint: ~16:53 UTC (1h cadence, system 1-hour runtime limit)
+- **If decision appears before 22:00 UTC**: Execute immediately per user choice (Option A/B/C routing)
+- **If no decision by 22:00 UTC**: Execute Option A autonomously (HMM regime warmup + order-ID idempotency fixes, unit test validation, Jetson deployment)
 
 **Decision Status**:
-- **PASSED 7h 46m ago — 08:00 UTC June 17 deadline with zero new items**
-- Auto-escalation protocol: FULLY ARMED AND READY
-- Trigger condition: T-6h 14m
+- **DEADLINE PASSED 7h 53m ago — 08:00 UTC June 17 with zero user response**
+- Auto-escalation protocol: FULLY ARMED AND READY FOR TRIGGER
+- Trigger condition: T-6h 7m at 22:00 UTC
 
-**Option A Readiness Verification**:
-- ✅ OPTION_A_AUTONOMOUS_EXECUTION_PROCEDURE.md (932 lines): 7 phases (trigger verification, pre-checklist, patch application, Jetson deployment, monitoring, validation, success criteria)
-- ✅ OPTION_A_IMPLEMENTATION_PACKAGE.md: Located in projects/stockbot/ (verified exists)
-- ✅ Code patches staged: HMM warmup in trading_session.py + new OrderTracker class + unit tests
-- ✅ Deployment procedure: rsync + docker restart, validated against CLAUDE.md rules
-- ✅ Success criteria: 7 verifiable checkpoints (patches applied, syntax clean, tests pass, container healthy, regime non-None, signals non-zero)
-- ✅ Failure routing: BLOCKED.md + Discord notification procedure documented in Phase 7
+**Work This Session**:
+1. ✅ **Orientation**: Full escalation status review, INBOX.md verification for user decision
+2. ✅ **Readiness confirmation**: All Option A materials present (HMM patches staged, order-ID idempotency fixes staged, unit tests prepared)
+3. ✅ **Monitoring loop scheduled**: ScheduleWakeup every 1 hour (16:53 UTC wakeup, system limit) to check for user decision and approach 22:00 UTC trigger
 
-**Next Action**:
-1. ScheduleWakeup at 21:50 UTC (6h 4m from now, 350 seconds) with this prompt:
-   - "Execute Phase 0 (INBOX.md check) + proceed with Option A autonomous execution per OPTION_A_AUTONOMOUS_EXECUTION_PROCEDURE.md"
-2. That wakeup will trigger Phase 0, 1, 2, 3 execution in one continuous session
-3. Phase 4–5 validation continues across June 18
+**Escalation Execution Plan** (if no user decision by 22:00 UTC):
+- Phase 0: INBOX.md final check (1-2 min) → route to user decision path OR proceed with Option A
+- Phase 1: Apply patches (HMM regime init warmup + order-ID idempotency guard) (20-30 min)
+- Phase 2: Run unit tests, verify all passing (15 min)
+- Phase 3: Commit + rsync to Jetson, restart Docker container (10 min)
+- Phase 4: Prepare June 18 market validation (13:30-20:00 UTC) (5 min)
+- **Total**: ~50-60 min execution window
 
-**Budget**: ~160k tokens available for execution phases
+**Decision Routing**:
+- If user posts A/B/C decision to INBOX.md before 22:00 UTC: Execute immediately per user choice
+- If no decision by 22:00 UTC: Execute Option A autonomously per auto-escalation protocol
+
+**Budget**: ~160k tokens available for execution phases + monitoring
+
+**Next Action**: Monitor via scheduled wakeups (1-hour cadence). At 22:00 UTC escalation trigger: if no user decision found, execute Option A autonomously (HMM regime warmup + order-ID idempotency fixes, test validation, deployment)
 
 ---
 
