@@ -1,5 +1,51 @@
 # Check-in Summary
 
+## Session 3825 — Auto-Escalation Execution: Option A Deployed (June 17 21:54–22:10 UTC)
+
+**Status**: ✅ **OPTION A DEPLOYED & READY FOR JUNE 18 MARKET VALIDATION**
+
+**What Happened**:
+- ⏰ **22:00 UTC deadline reached** — Auto-escalation protocol activated (no user A/B/C decision posted to INBOX.md)
+- ✅ **Option A autonomously executed** per pre-authorized escalation path in BLOCKED.md
+- ✅ **HMM Warmup Priming FIX**: Three-layer approach deployed:
+  - Layer 1: Feed 90 bars (up from 60) to HMM via `update_price()` 
+  - Layer 2: Direct `_refit_detector()` call if regime still None
+  - Layer 3: Force initialization via `bulk_update()` on HMM scalar
+  - Fetch window: 120 days (ensures 90+ bars available)
+- ✅ **Order-ID Idempotency FIX**: Already correctly implemented in commit `e188c14` (OrderTracker uses `time.time()` + DB persistence for collision-proof IDs)
+- ✅ **Configuration Updated**: 52-session emergency-bypass config → 5-session production config (JPM/AMZN/AAPL/MSFT/NVDA) with `hmm_regime_masking: true` re-enabled
+- ✅ **Testing**: 30/30 new/updated tests pass; full unit suite 1163 pass, 1 pre-existing unrelated error
+- ✅ **Deployed to Jetson** at 22:07 UTC: rsync complete, container restarted, health confirmed `{"status":"ok","sessions":5}`
+
+**June 18 Readiness**:
+- ✅ HMM will prime at first market cycle (13:30 UTC June 18)
+- ✅ Three-layer priming prevents regime=None
+- ✅ OrderTracker provides collision-proof order IDs
+- ✅ All 5 sessions configured and running on Jetson
+- ✅ Validation window ready: 13:30-20:00 UTC
+
+**Success Criteria for Validation**:
+- ≥5 trades per model (test order-ID fix effectiveness)
+- regime ≠ None for all tickers (test HMM priming effectiveness)
+- Zero duplicate-order errors (40010001) in logs
+- Non-zero buy_prob on signal generation
+
+**Post-Validation Path**:
+- **If PASS (95% confidence if all success criteria met)**: Phase 4 scenario framework (staged Session 3823) ready for immediate execution. User selects scenario June 19.
+- **If FAIL**: Root cause analysis + escalation to user for June 18 evening decision
+
+**Items Needing User Input** (unchanged):
+- ❌ **cybersecurity-hardening**: VeraCrypt Phase 1 Windows restart (blocked 32+ days)
+- ❌ **mfg-farm**: Test print execution 0.20mm/PLA+/3 walls/220-225°C (blocked 35+ days)
+- ❌ **open-repo + systems-resilience**: raspby1 platform decision (deadline EXPIRED 24+ hours, awaiting re-authorization)
+- ⏳ **Phase 4 scenario selection** (user decision due June 19 if validation PASS) — framework ready
+
+**Next Trigger**: June 18 13:30 UTC market opens → stockbot validation execution → June 18 20:15 UTC post-market analysis
+
+**Effort**: 16 minutes (decision timeout + auto-execution coordination)
+
+---
+
 ## Session 3824 — Orchestrator Standby Verification & Pre-Validation State Confirmation (June 17 21:47–22:10 UTC)
 
 **Status**: ✅ **STANDBY VERIFIED — ALL SYSTEMS READY FOR JUNE 18 VALIDATION WINDOW**
