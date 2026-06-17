@@ -1,19 +1,23 @@
-## Session 3808 (2026-06-17 17:22–17:28 UTC — ESCALATION COUNTDOWN CONTINUATION)
+## Session 3808 (2026-06-17 17:22–17:30 UTC — ESCALATION COUNTDOWN CONTINUATION)
 
-**Status**: 🟡 **MONITORING LOOP ACTIVE — 4h 38m UNTIL 22:00 UTC ESCALATION WINDOW**
+**Status**: 🟡 **MONITORING CHECKPOINT — 4h 30m UNTIL 22:00 UTC ESCALATION WINDOW**
 
 **Orientation completed** (17:22 UTC):
-- ✅ ORCHESTRATOR_STATE.md verified (auto-generated 17:22 UTC, current)
-- ✅ INBOX.md re-checked for new A/B/C user decision — NONE found
+- ✅ ORCHESTRATOR_STATE.md verified (auto-generated 17:29 UTC, current)
+- ✅ INBOX.md re-checked for new A/B/C user decision — NONE found (baseline June 11-14)
 - ✅ User decision deadline PASSED: 08:00 UTC June 17 (9+ hours ago)
 - ✅ Escalation protocol confirmed ACTIVE: Auto-execution at 22:00 UTC if no decision
 - ✅ All other projects blocked on user actions (resistance-research awaiting email, cybersecurity awaiting Windows restart, mfg-farm awaiting test print, seedwarden awaiting contractor)
 - ✅ Exploration Queue fully completed (Session 3791)
 
-**Decision options available**:
-- **Option A (RECOMMENDED)**: Continue with June 18 market validation (HMM masking disabled, monitor signal flow)
-- **Option B**: Historical checkpoint query (immediate, lower confidence)
-- **Option C**: Observe mode with logging (high confidence, no trading)
+**Current time**: 2026-06-17 17:29:39 UTC (verified via `date -u`)
+
+**Session history** (cascading checkpoints):
+- Session 3800 (16:30–17:30 UTC): Option A executed (HMM warmup + order-ID idempotency)
+- Session 3804: Emergency rollback (HMM masking disabled due to regime=None persistence)
+- Session 3805–3806: Monitoring loop with 19:01 UTC wakeup
+- Session 3807 (17:13–17:20 UTC): Post-rollback verification — June 18 validation ready
+- Session 3808 (17:22–17:30 UTC): **Current** — Monitoring checkpoint before 21:30 UTC final wakeup
 
 **Current state**:
 - Emergency rollback (Session 3804) in effect: HMM masking disabled
