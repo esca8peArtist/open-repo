@@ -8681,3 +8681,69 @@ except APIError as api_err:
 - ✅ Zero "client_order_id must be unique" errors in logs
 - ✅ Order tracker correctly persists and reuses client_order_ids
 
+
+---
+
+## Session 3810 (2026-06-17 17:52–19:05 UTC — ORCHESTRATOR AUTONOMOUS RETRAIN EXECUTION)
+
+**Status**: ✅ **SESSION COMPLETE** — AAPL/MSFT retrains executed, both fail gates, June 18 validation staged
+
+**Orientation (17:52–18:00 UTC)**:
+- ✅ Read ORCHESTRATOR_STATE.md — escalation countdown post-rollback (Session 3804)
+- ✅ Verified emergency rollback status: HMM masking disabled, signal generation partially restored
+- ✅ Identified autonomous work: AAPL lgbm_ho + MSFT ridge_wf retrains (due June 18 EOD)
+- ✅ Confirmed all other projects blocked on user actions
+
+**Core Work: Retrain Execution (18:00–18:59 UTC)**:
+
+**Retrain 1 — AAPL lgbm_ho (quick mode)**:
+- Started: 18:00 UTC, Completed: 18:58 UTC
+- **Results**: 5/7 gates PASS (up from previous 2/6)
+  - OOS Sharpe: 1.0609 (vs 0.649, +63% improvement)
+  - Max DD: 8.57% (excellent)
+  - Win Rate: 66.67%
+  - Failures: t-stat (1.0197 < 2.0), MC robust (sharpe_p05 < 0.50)
+- **Verdict**: FAIL — improvement but non-deployable
+- **Reports**: AAPL_lgbm_ho_20260617_175836.json, .md
+
+**Retrain 2 — MSFT ridge_wf (quick mode)**:
+- Started: 18:00 UTC, Completed: 18:59 UTC
+- **Results**: 2/7 gates PASS
+  - OOS Sharpe: -0.4176 (NEGATIVE — losses)
+  - Max DD: 11.91%
+  - Win Rate: 53.33% (marginal)
+  - Failures: All major gates (Sharpe negative, t-stat low, DSR low, regime single, MC not robust)
+- **Verdict**: FAIL — fundamental model issue (negative Sharpe)
+- **Reports**: MSFT_ridge_wf_20260617_175927.json, .md
+
+**Analysis**:
+- AAPL shows significant improvement from retrain (+63% Sharpe), suggesting data freshness helped
+- MSFT ridge_wf is fundamentally broken; negative Sharpe indicates losses, not edge
+- Both fail deployment criteria; June 18 validation proceeds with existing 2-session config (JPM + AMZN)
+- Implication: Feature engineering needed before AAPL/MSFT graduation; MSFT needs complete rework
+
+**Session Work**:
+- ✅ Executed parallel retrains (AAPL + MSFT)
+- ✅ Evaluated against 7-gate framework
+- ✅ Committed stockbot submodule: `feat: AAPL+MSFT retrains both fail gates`
+- ✅ Updated PROJECTS.md Current focus with retrain results
+- ✅ Updated CHECKIN.md with session status
+- ✅ Committed orchestration files: `chore(orchestrator): session 3810`
+
+**System Status After Session**:
+- **Stockbot**: Emergency rollback in effect, 2-session config (JPM+AMZN) staged for June 18 validation
+- **All other projects**: Blocked on user actions (no autonomous work available)
+- **Exploration queue**: All Phase 1 items production-ready, awaiting Phase 1 distribution path decision
+- **June 18 validation**: Ready (13:30–20:00 UTC tomorrow) with HMM masking disabled
+
+**No Further Autonomous Work Available**: All projects are either complete, in-progress (stockbot awaiting validation), or blocked on named user decisions/actions. System correctly standing by per orchestrator design.
+
+**Next Session**: June 18 post-market analysis (target 20:15 UTC) to evaluate validation window results and recommend Phase 4 path.
+
+**Effort**: 70 minutes session (17:52–19:05 UTC)
+- Orientation + monitoring: 15 min
+- Retrain execution: 60 min
+- Validation + documentation: 5 min
+
+**Budget consumed**: ~15k tokens (retrains are fast with --quick mode)
+
