@@ -1,3 +1,29 @@
+## Session 3744 (June 17 04:00–04:15 UTC — ORCHESTRATOR STANDING BY; STOCKBOT DEADLINE 08:00 UTC [4h REMAINING])
+
+**Status**: ✅ **ORCHESTRATOR READY — AWAITING STOCKBOT USER DECISION BY 08:00 UTC**
+
+**Work This Session**:
+1. ✅ **Full orchestrator orientation** — Read ORCHESTRATOR_STATE.md, INBOX.md, BLOCKED.md, PROJECTS.md, EXPLORATION_QUEUE.md
+2. ✅ **Active project assessment**:
+   - **stockbot (PRIORITY #1)**: Decision deadline 08:00 UTC (4h remaining). No INBOX.md decision yet. Three recovery paths staged:
+     - **Option A**: Fix both issues (80-100 min) + test + deploy + validate 13:30-20:00 UTC
+     - **Option B**: Skip validation + run checkpoint query against historical data
+     - **Option C**: Investigate deeper + collect logs
+   - **resistance-research (PRIORITY #2)**: Phase 2 Wave 1 production-ready. Domain 51/48 templates staged, awaiting user copy-paste sends. Domain 59 checkpoint complete (reassess June 20-21).
+   - **All other projects**: Blocked on user manual actions (cybersecurity, mfg-farm, open-repo, systems-resilience)
+3. ✅ **Exploration Queue status** — 110+ items reviewed. All complete or waiting for external triggers. Zero independent autonomous work available.
+4. ✅ **Standing-by assessment**: CORRECT. All work requires user decisions or external actions. Monitoring for stockbot decision until 08:00 UTC deadline.
+
+**Critical Timeline**:
+- **Stockbot decision deadline: 08:00 UTC (4h remaining)** — POST TO INBOX.md: `STOCKBOT DECISION: OPTION A` or `B` or `C`
+- **Immediate execution available**: Upon decision arrival, execute chosen path in ~30-60 minutes
+
+**Effort this session**: 15m (orientation + assessment + WORKLOG update + commit)
+**Budget remaining**: ~194,000/200,000 tokens
+**Orchestrator Status**: Standing by. All autonomous work exhausted. Monitoring for decision.
+
+---
+
 ## Session 3743 (June 17 03:46–04:25 UTC — ORCHESTRATOR STANDING BY; STOCKBOT DEADLINE 08:00 UTC [3h 35m REMAINING])
 
 **Status**: ✅ **ORCHESTRATOR READY — AWAITING STOCKBOT USER DECISION BY 08:00 UTC**

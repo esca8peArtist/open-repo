@@ -1,5 +1,35 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3744 — June 17 04:00–04:15 UTC — ORCHESTRATOR STANDING BY; STOCKBOT DEADLINE 08:00 UTC [4h REMAINING])
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION BY 08:00 UTC; ALL OTHER BLOCKS CONFIRMED ACCURATE**
+
+**Session Actions** (3744):
+1. ✅ **Full orientation & block verification** — Confirmed all blocks from Session 3743 remain accurate (no user decisions in INBOX yet)
+2. ✅ **Exploration Queue comprehensive audit** — 110+ items reviewed; all complete or waiting for external actions (cooler delivery June 19, other items post-decision)
+3. ✅ **Standing-by assessment confirmed CORRECT** — All main projects blocked on user decisions (stockbot A/B/C, resistance-research email sends, other platforms/hardware)
+4. ✅ **Stockbot decision deadline**: 08:00 UTC (4h remaining) — No decision yet in INBOX.md
+
+**Critical Status**:
+- **Stockbot**: Decision A/B/C needed by 08:00 UTC. All recovery paths staged & ready (JUNE_16_DIAGNOSIS_AND_FIXES.md).
+  - Option A: Fix + retry today (80-100 min work + 6.5h validation window)
+  - Option B: Skip + use historical data (immediate execution)
+  - Option C: Observe mode (overnight log collection)
+- **Resistance-research Phase 2 Wave 1**: Templates production-ready. Awaiting user copy-paste sends (Domain 51 = 2 emails, Domain 48 = 9 emails)
+- **All other projects**: Blocked on manual user actions (VeraCrypt restart, 3D printer test, platform/runtime decisions)
+
+**Items Needing User Input** (no changes from Session 3743):
+1. **CRITICAL — Stockbot A/B/C decision** (deadline 08:00 UTC, 4h remaining):
+   - Post to INBOX.md: `STOCKBOT DECISION: OPTION A` or `OPTION B` or `OPTION C`
+   - See JUNE_16_DIAGNOSIS_AND_FIXES.md for full analysis
+2. **Resistance-research Wave 1 email sends** (deadline June 18 23:59 UTC):
+   - Domain 51: Copy 2 emails from DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md
+   - Domain 48: Copy 9 emails from DOMAIN_48_EMAIL_TEMPLATE_SET.md
+
+**Orchestrator Status**: Standing by, correct by design. Zero autonomous work available. Monitoring for stockbot decision.
+
+---
+
 ## Since Last Check-in (Session 3743 — June 17 03:46–03:47 UTC — ORCHESTRATOR STANDING BY; STOCKBOT DEADLINE 08:00 UTC [4h 13m REMAINING])
 
 **Status**: ✅ **RESISTANCE-RESEARCH PHASE 2 WAVE 1 EXECUTION READY + STOCKBOT DECISION DEADLINE ACTIVE**
