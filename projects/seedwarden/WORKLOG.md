@@ -4,6 +4,50 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 118 — Phase 2 Q3 Market Opportunity Assessment — June 17, 2026
+
+**Task**: Conduct comprehensive market research across four domains (native plant guide market,
+seed library software, bioregional plant ID tools, product candidate scoring matrix) to support
+Phase 2 product candidate prioritization and mfg-farm Phase 1 launch sequence.
+
+**Deliverable produced**:
+
+`projects/seedwarden/PHASE_2_Q3_MARKET_OPPORTUNITY_ASSESSMENT.md` — Full assessment document,
+~35 KB. Six sections: executive summary, native plant guide market analysis (competitor landscape
+with confirmed 2026 pricing, TAM/SAM, distribution margins, certification requirements), seed
+library software analysis (platform landscape, adoption barriers, Seedwarden integration path),
+bioregional plant ID tool analysis (FloraQuest confirmed at $19.99 offline bioregional;
+PictureThis $5M/month; iNaturalist free/nonprofit; market gap characterization; $115K–$295K app
+build estimate), product candidate scoring matrix (8 dimensions, 6 candidates, scores A:74/100
+conditional-on-PASS rising to 82, B:85/100, C:66, D:55, E:30, F:55), TAM/SAM summary, strategic
+recommendations, confidence levels, and 50-source index.
+
+**Key findings**:
+- FloraQuest ($19.99 one-time, fully offline, bioregion-specific) is the closest existing model
+  to a Seedwarden-branded plant ID product; covers eastern US only; not commercially marketed
+- No dominant seed library software platform exists; adapted Koha + BiblioCommons used by public
+  libraries; real opportunity is structured native plant seed data content, not SaaS
+- Plant ID app market: $1.8B globally (2025), 13.5% CAGR to $5.6B by 2034; native-specific
+  subset ~$15–30M US; app build requires $115K–$295K minimum investment (Phase 4 not Phase 2)
+- Native plant guide TAM: $140–280M (US); Seedwarden SAM $800K–$2.4M (3-yr horizon)
+- Top recommendation: Execute B (digital zone-series expansion) immediately; activate A (premium
+  print) on mfg-farm PASS; defer C, D, E to Phase 3-4
+
+**Research sources**: 50 sources documented in assessment, including direct Timber Press/Native
+Plant Trust/Hachette catalog data, FloraQuest product pages, iNaturalist user statistics,
+PictureThis Sensor Tower analytics, Seed Library Network documentation, ISBNdb/Amazon pricing.
+
+**Decision triggers documented**:
+- mfg-farm PASS: activate both A and B in parallel
+- mfg-farm FAIL: double-down on B only
+- B reaches $3K/month by Oct 2026: unlock C for Phase 3
+- Revenue $8K+/month: evaluate D (Plant ID app) investment
+
+**Status**: Research complete. No user action required to read — all findings, scores, and
+recommendations are in the assessment document. Decision on A vs. B awaits mfg-farm outcome.
+
+---
+
 ## Item 111 — Phase 3 Contractor Decision Tracking Automation — June 16, 2026
 
 **Task**: Create 3 automation deliverables for seedwarden Phase 3 contractor decision tracking for the June 15–17 decision window.
