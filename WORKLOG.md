@@ -1,3 +1,30 @@
+## Session 3720 (June 17 00:14 UTC — STANDING BY CONFIRMED; DEADLINE ~7h 46m REMAINING)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ORIENTATION COMPLETE; ALL BLOCKS VERIFIED UNRESOLVABLE**
+
+**Work This Session**:
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
+2. ✅ **Time verification** — Current: June 17 00:14 UTC; deadline: June 17 08:00 UTC (~7h 46m remaining)
+3. ✅ **Block auto-resolution attempts**:
+   - `ls -la projects/mfg-farm/test-print-results/` → Exit code 2: directory not found (block unresolvable)
+   - `docker ps | grep "open-repo\|api\|postgres"` → No output (block unresolvable)
+   - `docker ps | grep "nextcloud\|discourse"` → No output (block unresolvable)
+   - cybersecurity-hardening: manual action only (cannot auto-verify)
+4. ✅ **INBOX verification** — Zero new user decisions provided since last session
+5. ✅ **Updated CHECKIN.md** — Added Session 3720 entry documenting continued standing-by state
+6. ✅ **Committed orchestration files** — WORKLOG.md, CHECKIN.md, PROJECTS.md, BLOCKED.md, INBOX.md (no changes to BLOCKED.md or INBOX.md, so only WORKLOG.md and CHECKIN.md committed)
+
+**Status Summary**:
+- Standing-by state remains correct (verified 7+ consecutive sessions)
+- All 4 active blocks remain user-action dependent; no auto-resolvable items
+- Stockbot decision deadline: June 17 08:00 UTC (7h 46m remaining)
+- All support materials (OPTION_A/B/C runbooks) staged and ready
+- No autonomous work available
+
+**Next Session**: Monitor for stockbot A/B/C decision in INBOX.md. Upon receipt, dispatch immediately.
+
+---
+
 ## Session 3718 (June 16 23:54 UTC — FINAL VERIFICATION: STANDING BY READY FOR DEADLINE)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — READY FOR USER DECISION; DEADLINE IN ~8h 6m**

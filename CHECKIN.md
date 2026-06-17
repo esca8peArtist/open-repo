@@ -1,5 +1,29 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3720 — June 17 00:14 UTC — STANDING BY CONFIRMED; DEADLINE IN ~7h 46m)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ORIENTATION COMPLETE; CRITICAL DECISION DEADLINE: JUNE 17 08:00 UTC (7h 46m REMAINING)**
+
+**Session Actions**:
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md
+2. ✅ **Time verification** — Current time: June 17 00:14 UTC (via `date -u`); deadline June 17 08:00 UTC (7h 46m remaining)
+3. ✅ **Block auto-resolution attempts**:
+   - **mfg-farm**: `ls -la projects/mfg-farm/test-print-results/` → directory not found (test print not yet executed)
+   - **open-repo**: `docker ps | grep "open-repo\|api\|postgres"` → no containers (deployment not executed)
+   - **systems-resilience**: `docker ps | grep "nextcloud\|discourse"` → no containers (deployment not executed)
+   - **cybersecurity-hardening**: Manual action only (cannot auto-verify)
+4. ✅ **INBOX verification** — Zero new user decisions since Session 3719 (00:06 UTC)
+5. ✅ **Decision status** — Stockbot A/B/C decision materials staged and ready for dispatch upon user input
+
+**Interpretation**: Standing-by state is **correct by design**. All autonomous work exhausted. All 4 active blocks remain user-action dependent. Orchestrator ready and waiting for user decision on stockbot A/B/C.
+
+**Critical Action Needed**: 
+- **User must provide stockbot decision (A/B/C) by June 17 08:00 UTC** — only 7h 46m remaining
+- Decision should be posted to INBOX.md as a new item (format: "STOCKBOT DECISION: OPTION A/B/C")
+- Upon decision receipt, orchestrator will dispatch chosen recovery path immediately
+
+---
+
 ## Since Last Check-in (Session 3719 — June 17 00:06 UTC — STANDING BY CONFIRMED; DEADLINE IN ~8h)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — FINAL VERIFICATION COMPLETE; CRITICAL DECISION DEADLINE: JUNE 17 08:00 UTC (8h REMAINING)**
