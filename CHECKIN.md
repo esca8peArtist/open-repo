@@ -1,5 +1,33 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3727 — June 17 01:07 UTC — STANDING BY CONFIRMED; CRITICAL DEADLINE JUNE 17 08:00 UTC [6h 53m])
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DECISION DEADLINE: JUNE 17 08:00 UTC (6h 53m REMAINING)**
+
+**Session Actions**:
+1. ✅ **Full orientation** — Re-verified ORCHESTRATOR_STATE.md, INBOX.md (zero new decisions), PROJECTS.md, BLOCKED.md, Exploration Queue
+2. ✅ **Time verification** — Current time: June 17 01:07 UTC; deadline June 17 08:00 UTC (6h 53m remaining)
+3. ✅ **Block status audit** — All 4 active blocks remain user-action dependent; no changes since Session 3726
+4. ✅ **INBOX verification** — Zero new user decisions; no STOCKBOT DECISION item posted
+5. ✅ **Project Goals verification** — All projects blocked on user decisions (stockbot A/B/C, manual actions, infrastructure decisions)
+6. ✅ **Exploration Queue status** — 100+ items queued; all contingent on upstream events; confirmed no autonomous work available
+
+**Findings**: Standing-by state is **correct by design**. All autonomous work exhausted. All projects blocked on user decisions. No actionable work available.
+
+**Critical User Action (DEADLINE 08:00 UTC — 6h 53m remaining)**:
+- **Stockbot A/B/C decision required** — post to INBOX.md as new item: "STOCKBOT DECISION: OPTION A" (or B/C)
+  - All three recovery runbooks staged and ready for immediate dispatch (est. 30 min execution)
+
+**Awaiting Secondary Actions**:
+1. Resistance-research Wave 1-2 executions (75 min; templates ready in PROJECTS.md)
+2. VeraCrypt restart (cybersecurity-hardening)
+3. Test print execution (mfg-farm)
+4. Platform/runtime decisions (open-repo, systems-resilience)
+
+**Orchestrator Status**: Ready, standing by. Next autonomous action triggers on user stockbot decision.
+
+---
+
 ## Since Last Check-in (Session 3726 — June 17 01:01 UTC — STANDING BY CONFIRMED; CRITICAL DEADLINE JUNE 17 08:00 UTC [6h 59m])
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETE; STOCKBOT A/B/C DECISION DEADLINE: JUNE 17 08:00 UTC (6h 59m REMAINING)**
