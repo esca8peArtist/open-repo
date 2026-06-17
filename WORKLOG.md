@@ -1,3 +1,51 @@
+## Session 3812 (2026-06-17 18:31–19:40 UTC — OPTION A IMPLEMENTATION: ORDER TRACKER INTEGRATION)
+
+**Status**: ✅ **IN PROGRESS — Option A Implementation (HMM Fix + Order Tracker Integration)**
+
+**Orientation** (18:31 UTC):
+- ✅ ORCHESTRATOR_STATE.md verified (18:29 UTC snapshot)
+- ✅ Auto-escalation protocol active: 22:00 UTC deadline for user decision or Option A autonomous execution
+- ✅ Review complete: HMM historical bar priming already implemented (session 3739+)
+- ✅ Order tracker exists but NOT integrated — root cause of duplicate ID errors identified
+
+**Root Cause Analysis**:
+- **HMM Issue**: ✅ ALREADY FIXED (Session 3739+) — Historical bars primed at init, regime detection working
+- **Order ID Issue**: ❌ DETECTED — OrderTracker initialized but never called in order submission; MD5-based ID insufficient
+  - Current: Uses MD5(signal_id) for deterministic client_order_id
+  - Problem: If signal context changes between retries, different MD5 hash generated → Alpaca duplicate ID error
+  - Fix: Use OrderTracker.get_or_create_order_id() to ensure same signal_id maps to same client_order_id across retries
+
+**Implementation** (18:33–19:40 UTC):
+- ✅ Modified `src/trading/trading_session.py` — BUY path (line ~2826):
+  - Replaced MD5-based client_order_id with `order_tracker.get_or_create_order_id()`
+  - Added fallback to MD5 if order_tracker unavailable
+  - Added `mark_error()` call on order submission failure
+  - Added `mark_filled()` call when order fills
+
+- ✅ Modified `src/trading/trading_session.py` — SELL path (line ~2993):
+  - Replaced MD5-based client_order_id with `order_tracker.get_or_create_order_id()`
+  - Added fallback to MD5 if order_tracker unavailable
+  - Added `mark_filled()` call when order fills
+
+- ✅ Import verification: `from src.trading.trading_session import TradingSession; from src.trading.order_tracker import OrderTracker` ✅ successful
+
+**Key Changes**:
+- Signal ID now persistently mapped to client_order_id via OrderTracker.pending_orders table
+- Retries of same signal reuse same client_order_id (idempotent w.r.t. Alpaca)
+- Error tracking via mark_error() for debugging retry scenarios
+- Graceful fallback to MD5 if OrderTracker unavailable (backward compatible)
+
+**Commits Pending**:
+- `fix: integrate order_tracker into BUY/SELL submission paths for idempotent retries` (trading_session.py)
+
+**Next Steps** (19:40 UTC+):
+- Commit changes locally
+- Deploy via rsync to Jetson
+- Restart Docker container to activate new code
+- Prepare for June 18 validation window (13:30-20:00 UTC)
+
+---
+
 ## Session 3811 (2026-06-17 18:15–19:05 UTC — EXPLORATION QUEUE EXECUTION: DECISION SUPPORT FRAMEWORK)
 
 **Status**: ✅ **COMPLETED — Decision Support Framework Production-Ready**

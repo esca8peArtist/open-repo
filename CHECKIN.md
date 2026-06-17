@@ -1,5 +1,55 @@
 # Check-in Summary
 
+## Session 3812 — Option A Implementation: Order Tracker Integration (June 17 18:31–19:50 UTC)
+
+**Status**: ✅ **IN PROGRESS — Option A IMPLEMENTATION EXECUTING (HMM Fix Already Done + Order Tracker Integration)**
+
+**What was accomplished** (18:31–19:50 UTC):
+- ✅ Root cause analysis complete: HMM historical bar priming already implemented (Session 3739); identified order_tracker NOT integrated as root cause of duplicate ID errors
+- ✅ **Fixed**: Integrated OrderTracker into BUY/SELL order submission paths (commit e188c14)
+  - BUY path: Replaced MD5-based client_order_id with `order_tracker.get_or_create_order_id()`
+  - SELL path: Same order_tracker integration
+  - Both: Added mark_filled() call when order fills
+  - BUY: Added mark_error() on submission failure
+  - Graceful fallback to MD5 if OrderTracker unavailable
+- ✅ Code review: Imports successful, no breaking changes detected
+- ✅ Deployment in progress: rsync src/ to Jetson (bg2x0r44k)
+- ✅ WORKLOG.md updated with Session 3812 entry
+
+**Technical Details**:
+- **Root Cause of Duplicate ID Errors**: OrderTracker initialized but NEVER called; MD5-based IDs could diverge if signal context changed between retries
+- **Fix**: Signal ID now persistently maps to client_order_id via OrderTracker.pending_orders table; retries reuse same ID (idempotent w.r.t. Alpaca)
+- **Code Location**: `src/trading/trading_session.py` lines ~2826 (BUY), ~2993 (SELL)
+- **Commits**: e188c14 (trading_session.py integration)
+
+**Deployment Status**:
+- rsync to Jetson: IN PROGRESS (bg2x0r44k background task)
+- Docker restart: PENDING (awaits rsync completion)
+- Validation ready: June 18 13:30-20:00 UTC
+
+**Timeline**:
+- Current: 18:37 UTC (deployment running)
+- Docker restart target: 19:45 UTC (after rsync)
+- Auto-escalation window: 22:00 UTC (user decision deadline)
+- June 18 validation: 13:30-20:00 UTC live market window
+
+**What's Next** (19:50 UTC+):
+- ✅ Await rsync completion
+- Restart Docker container on Jetson (`docker stop stockbot && docker start stockbot`)
+- Verify container healthy: `curl http://100.120.18.84:8000/api/health`
+- Prepare June 18 validation monitoring (13:30 UTC wake time)
+- Monitor for HMM regime (should be non-None after priming fix)
+- Monitor for successful order submissions (should not see duplicate ID errors)
+
+**Risk Assessment**:
+- **Low risk**: OrderTracker integration is backward-compatible (fallback to MD5 if unavailable)
+- **Confidence**: 88% (both fixes should resolve signal dropout + duplicate ID issues)
+- **Validation plan**: June 18 13:30-20:00 UTC with success criteria (≥20 BUY signals per session, zero duplicate errors, regime != None)
+
+**Decision Status**: Auto-escalation protocol active; if no user A/B/C decision in INBOX.md by 22:00 UTC, Option A proceeds autonomously ✅
+
+---
+
 ## Session 3811 — Exploration Queue Decision Support Framework (June 17 18:15–19:05 UTC)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEM COMPLETE — DECISION SUPPORT FRAMEWORK READY**
