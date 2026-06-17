@@ -8551,3 +8551,133 @@ All 5 sessions will:
 
 **Next Session Action**: If user decision appears in INBOX.md before 22:00 UTC, execute user's choice immediately instead of Option A.
 
+
+---
+
+### Option A Implementation Details (To Execute at 22:00 UTC)
+
+**Integration Scope**: Wire order_tracker into order submission code (2 locations: BUY path + SELL path)
+
+**Location 1 - BUY Path** (line 2835-2836):
+```python
+# CURRENT (lines 2835-2836):
+idempotent_key = f"{self.session_id}:{ticker}:buy:{_bar_ts}"
+client_order_id = hashlib.md5(idempotent_key.encode()).hexdigest()[:12]
+
+# REPLACE WITH:
+signal_id = f"{self.session_id}_{ticker}_BUY_{_bar_ts}"
+try:
+    client_order_id = self.order_tracker.get_or_create_order_id(
+        signal_id=signal_id, ticker=ticker, action="BUY", qty=float(qty)
+    ) if self.order_tracker else hashlib.md5(idempotent_key.encode()).hexdigest()[:12]
+except Exception as e:
+    logger.warning(f"[Session {self.session_id}] order_tracker failed, falling back: {e}")
+    client_order_id = hashlib.md5(idempotent_key.encode()).hexdigest()[:12]
+```
+
+**Location 2 - BUY Error Handling** (line 2871-2882):
+```python
+# CURRENT: generic exception handler
+except Exception as submit_exc:
+    _release_cash(order_cost)
+    logger.warning(...)
+    return (...)
+
+# ADD SPECIFIC HANDLER FOR IDEMPOTENCY ERROR (before generic handler):
+except APIError as api_err:
+    error_str = str(api_err)
+    if "client_order_id must be unique" in error_str or "40010001" in error_str:
+        # Idempotent retry — order likely already submitted by Alpaca
+        logger.info(f"[Session {self.session_id}] {ticker}: Duplicate client_order_id "
+                   f"(likely already submitted), treating as idempotent success")
+        if self.order_tracker:
+            self.order_tracker.mark_filled(client_order_id)
+        # Don't resubmit, but pretend it succeeded (order already on Alpaca)
+        # Return pending state to let fill polling handle it on next cycle
+        return (
+            "buy_pending",
+            None,
+            f"Duplicate client_order_id — order already submitted, awaiting fill confirmation",
+            indicators,
+        )
+    else:
+        # Other APIError — treat as failure
+        _release_cash(order_cost)
+        if self.order_tracker:
+            self.order_tracker.mark_error(client_order_id, error_str)
+        logger.warning(f"[Session {self.session_id}] {ticker}: BUY submission failed ({api_err})")
+        return (...)
+```
+
+**Location 3 - SELL Path** (line 2982-2983):
+```python
+# CURRENT:
+idempotent_key = f"{self.session_id}:{ticker}:sell:{_bar_ts}"
+client_order_id = hashlib.md5(idempotent_key.encode()).hexdigest()[:12]
+
+# REPLACE WITH:
+signal_id = f"{self.session_id}_{ticker}_SELL_{_bar_ts}"
+try:
+    client_order_id = self.order_tracker.get_or_create_order_id(
+        signal_id=signal_id, ticker=ticker, action="SELL", qty=float(qty)
+    ) if self.order_tracker else hashlib.md5(idempotent_key.encode()).hexdigest()[:12]
+except Exception as e:
+    logger.warning(f"[Session {self.session_id}] order_tracker failed, falling back: {e}")
+    client_order_id = hashlib.md5(idempotent_key.encode()).hexdigest()[:12]
+```
+
+**Location 4 - SELL Error Handling** (wrap submit_order in try-catch):
+```python
+# CURRENT (line 2984-2990): unprotected submit_order call
+order = broker.submit_order(...)
+
+# WRAP WITH TRY-CATCH:
+try:
+    order = broker.submit_order(
+        symbol=ticker,
+        quantity=qty,
+        side=OrderSide.SELL,
+        order_type=OrderType.MARKET,
+        client_order_id=client_order_id,
+    )
+except APIError as api_err:
+    error_str = str(api_err)
+    if "client_order_id must be unique" in error_str or "40010001" in error_str:
+        # Idempotent — order already submitted
+        logger.info(f"[Session {self.session_id}] {ticker}: Duplicate client_order_id (SELL), "
+                   f"order already on Alpaca")
+        if self.order_tracker:
+            self.order_tracker.mark_filled(client_order_id)
+        return (
+            "sell_pending",
+            None,
+            "Duplicate client_order_id — SELL order already submitted",
+            indicators,
+        )
+    else:
+        # Other APIError
+        if self.order_tracker:
+            self.order_tracker.mark_error(client_order_id, error_str)
+        logger.warning(f"[Session {self.session_id}] {ticker}: SELL submission failed ({api_err})")
+        raise
+```
+
+**Test Files (should already exist or need creation)**:
+- `tests/unit/test_hmm_warmup.py` (verify HMM regime initialized)
+- `tests/unit/test_order_idempotency.py` (verify order_tracker stability)
+- Run: `uv run pytest tests/unit/test_hmm_warmup.py tests/unit/test_order_idempotency.py -xvs`
+
+**Deployment**:
+1. Apply all 4 integration points above to `src/trading/trading_session.py`
+2. Run unit tests
+3. Run full test suite: `uv run pytest tests/ --tb=short 2>&1 | tail -20`
+4. Commit: `git add -A && git commit -m "fix: complete order-tracker integration for Option A"`
+5. Deploy: `bash scripts/deploy-to-jetson.sh`
+6. Verify: `ssh awank@100.120.18.84 "docker logs stockbot --tail 50 2>&1 | grep -E 'HMM|order_tracker|regime' | head -20"`
+
+**June 18 Validation Success Criteria**:
+- ✅ All sessions initialize with regime != None (HMM warmup working)
+- ✅ ≥1 fill per model during 13:30-20:00 UTC window
+- ✅ Zero "client_order_id must be unique" errors in logs
+- ✅ Order tracker correctly persists and reuses client_order_ids
+
