@@ -37,6 +37,26 @@
 
 ---
 
+## Session 3780+ (June 17 — General Research Agent — systems-resilience Platform Decision Analysis)
+
+**Task**: Fresh independent cost-benefit analysis for systems-resilience platform decision (Nextcloud+Matrix vs Discourse on Pi5). Decision deadline June 15 23:59 UTC passed. Provide data to break tie and unblock Phase 5.1 deployment immediately.
+
+**Files produced** (all in `projects/systems-resilience/`):
+
+1. `PLATFORM_SELECTION_FINAL_ANALYSIS_JUNE_2026.md` — Full feature grid (30+ features), memory profiles, IPv6 bug quantified, corrected OnlyOffice ARM64 status, reconciled scoring across all prior sessions. Weighted score: Discourse 7.90 vs Nextcloud+Matrix 6.05.
+
+2. `DEPLOYMENT_TIMELINE_COMPARISON_JUNE_2026.md` — Minute-by-minute deployment timelines (Discourse 2.5h, Nextcloud+Matrix 5.5h), same-day go-live windows, operational readiness curves weeks 1-4, risk tables per platform, upgrade path comparison.
+
+3. `DEPLOYMENT_DECISION_SCORECARD.md` — 8-factor weighted scoring matrix with full per-factor justification. Two decision-gate questions that resolve the choice in under 5 minutes. Activation instructions for whichever platform is chosen.
+
+**Key finding**: Discourse is recommended (87% confidence) unless offline authoring OR E2E encryption is a hard requirement. The IPv6 workaround takes 5 minutes (not 3-4 hours as prior sessions overstated). OnlyOffice is unavailable on ARM64, eliminating Nextcloud's primary feature advantage. Without OnlyOffice, neither platform offers real-time co-editing on Pi5.
+
+**Revision from Session 3563**: Session 3563 scored Discourse 5/10 partly on IPv6 instability concern (overstated) and partly on OnlyOffice co-editing advantage for Nextcloud (applies only on x86). With both factors corrected, Discourse wins on deployment speed and operational overhead — the two highest-weight factors.
+
+**Deployment unblocked**: User provides SMTP host, hostname, admin email → orchestrator executes runbook → Discourse live in 2.5 hours.
+
+---
+
 ## Session 3778 (June 17 10:30–11:00 UTC — EXPLORATION QUEUE REPLENISHMENT + PARALLEL EXECUTION: 2 MAJOR RESEARCH PROJECTS)
 
 **Status**: ✅ **PRODUCTIVE EXECUTION — Exploration Queue replenished with 3 new items; 2 independent research items completed**
