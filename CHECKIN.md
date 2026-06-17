@@ -1,5 +1,28 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3770 — June 17 08:00 UTC — ESCALATION DEADLINE REACHED; NO DECISION PROVIDED)
+
+**Status**: ✅ **ESCALATION EXECUTED — STOCKBOT A/B/C DECISION DEADLINE MISSED; STANDING BY FOR USER DIRECTION**
+
+**Session Actions** (3770):
+1. ✅ **Final deadline checkpoint** — Verified INBOX.md at 08:00 UTC; no A/B/C decision posted
+2. ✅ **Discord escalation sent** — Message: "STOCKBOT A/B/C DECISION DEADLINE 08:00 UTC MISSED — standing by for user direction"
+3. ✅ **Project assessment** — All 10 projects confirmed blocked/paused; Exploration Queue items waiting on external dependencies (hardware delivery, user decisions)
+4. ✅ **State locked** — No autonomous work available; orchestrator standing by
+
+**Critical Finding**: No new decision posted in INBOX.md, BLOCKED.md, or any other file as of 08:00 UTC June 17. The hard deadline for stockbot A/B/C selection (Option A: retrain+fix, Option B: checkpoint query, Option C: observe mode) has passed with no user response.
+
+**Next Steps**:
+- Awaiting stockbot A/B/C decision from user (post to INBOX.md or BLOCKED.md Resolution field)
+- Once decision arrives, orchestrator will immediately: (a) route to appropriate implementation path, (b) execute in parallel with any Exploration Queue items that become available
+- All other projects confirmed blocked (cybersecurity-hardening, mfg-farm, open-repo, systems-resilience all await user action)
+- Exploration Queue: Items 105 (thermal validation — hardware delivery dependency) and 109 (P3 readiness — user decision dependency) remain queued
+
+**Effort this session**: 5 min (final orientation + discord escalation + state assessment + CHECKIN update)
+**Budget remaining**: ~199,965/200,000 tokens (35 tokens spent this session)
+
+---
+
 ## Since Last Check-in (Session 3769 — June 17 07:45 UTC — FINAL CHECKPOINT; HARD DEADLINE 08:00 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT A/B/C DECISION; ~15 MINUTES UNTIL 08:00 UTC HARD DEADLINE**
