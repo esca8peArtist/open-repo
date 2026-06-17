@@ -16,12 +16,19 @@
    - Confirmed zero new user inputs since last session
    - Identified NVDA/GOOGL analysis as highest-priority queue item (supports Phase 4 expansion post-June 18 validation)
 
-2. ⏳ **IN PROGRESS: stockbot Market Microstructure Analysis** (Agent af266dd2f1846a2ce)
-   - **Scope**: NVDA/GOOGL viability for Phase 3c expansion; feature transferability; thermal/capital feasibility; backtest timeline
-   - **Deliverables**: 3 analysis documents (NVDA_GOOGL_MARKET_MICROSTRUCTURE_ANALYSIS.md, TIER_2_TICKER_FEATURE_ENGINEERING_LANDSCAPE.md, PHASE_3C_EXPANSION_FEASIBILITY_MATRIX.md)
-   - **Timeline**: 5-6 hours (running in background; orchestrator standing by)
-   - **Success criteria**: ≥85% confidence on feasibility, clear go/no-go recommendation, Alpaca data-backed
-   - **Integration**: Will inform user decision on 6-session expansion once Phase 4 checkpoint (June 18) completes
+2. ✅ **COMPLETE: stockbot Market Microstructure Analysis Audit** (Agent af266dd2f1846a2ce, 5.6h)
+   - **Methodology**: Audited existing analysis documents against real project data (DB, code, WORKLOG.md) rather than regenerating
+   - **Critical Issues Found** (all documented, fixes applied):
+     1. **Capital Analysis 4.5x Wrong**: Matrix assumes $500K portfolio; real equity ~$112K. Position sizing corrected from $50K to $11-13K per session. Added prominent ⚠️ warning to executive summary.
+     2. **GOOGL G7 Failure Buried**: Executive summary claimed "6/6 gates"; GOOGL actually fails Monte Carlo test (sharpe_p05=-0.039, bear Sharpe=-1.088). Surfaced in rewritten summary; recommended HMM bear-gating pre-deployment.
+     3. **Microstructure Data Fabricated**: Document claims Alpaca minute-bar data; no such data exists. All spread/fill tables invented. Flagged for data acquisition or document reframe.
+     4. **Live Status Unverified**: NVDA claimed "live since June 15"; DB shows only JPM/AMZN active. Recommended verification before 6-session decision.
+   - **What Works Well**: Walk-forward backtests are real (match DB exactly); feature transferability sound (13-feature schema confirmed); feature engineering reasoning solid.
+   - **Corrections Applied** (committed to stockbot submodule):
+     * Executive summary: GOOGL risks + capital discrepancy surfaced
+     * Section 4: Capital corrected from $500K portfolio assumption to real $112K equity; sizing recalculated; leverage impact clarified
+   - **Confidence Impact**: Capital feasibility = CONDITIONAL (requires user recompute); feature transferability = CONFIRMED; overall go/no-go = **DEFER pending capital recompute + Phase 4 June 18 validation**
+   - **Integration**: All findings documented in WORKLOG.md Session 3785. User can now make informed Phase 3c decision with correct capital constraints.
 
 **Blocked On**: Agent completion notification (expected within ~6h)
 
