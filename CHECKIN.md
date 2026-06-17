@@ -1,5 +1,25 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3768 — June 17 07:28 UTC — INTERMEDIATE CHECKPOINT; FINAL CHECKPOINT 07:45 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT A/B/C DECISION; ~32 MINUTES UNTIL 08:00 UTC HARD DEADLINE**
+
+**Session Actions** (3768):
+1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md, INBOX.md re-verified; state stable; no changes since 07:14 UTC
+2. ✅ **Decision recheck** — INBOX.md confirmed empty of new stockbot A/B/C decisions
+3. ✅ **Final checkpoint scheduled** — ScheduleWakeup for 07:45 UTC (~17 min away; 15 min before deadline)
+
+**Critical Timeline**:
+- **Current time**: 07:28 UTC
+- **Final checkpoint**: 07:45 UTC (17 min away; last decision window)
+- **Hard deadline**: 08:00 UTC (32 min from now)
+
+**If no decision by 07:45 UTC**: Will escalate to Discord at 08:00 UTC deadline
+
+**Effort this session**: 1 min (orientation + ScheduleWakeup)
+
+---
+
 ## Since Last Check-in (Session 3767 — June 17 07:14 UTC — CONTINUATION CHECKPOINT; FINAL CHECKPOINT 07:45 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT A/B/C DECISION; ~46 MINUTES UNTIL 08:00 UTC HARD DEADLINE**
