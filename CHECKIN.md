@@ -1,5 +1,26 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3767 — June 17 07:14 UTC — CONTINUATION CHECKPOINT; FINAL CHECKPOINT 07:45 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT A/B/C DECISION; ~46 MINUTES UNTIL 08:00 UTC HARD DEADLINE**
+
+**Session Actions** (3767):
+1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md verified; state stable; no changes since 07:07 UTC
+2. ✅ **Decision recheck** — INBOX.md re-verified; zero new items since Session 3765. A/B/C choice still not posted.
+3. ✅ **All projects confirmed blocked** — No autonomous work available; all depend on user action
+4. ✅ **Final checkpoint maintained** — ScheduleWakeup scheduled for 07:45 UTC (31 min away; 15 min before deadline)
+
+**Critical Timeline**:
+- **Current time**: 07:14 UTC
+- **Final checkpoint**: 07:45 UTC (31 min away; last decision window)
+- **Hard deadline**: 08:00 UTC (46 min from now)
+
+**If no decision by 07:45 UTC**: Will post Discord escalation at 08:00 UTC deadline
+
+**Effort this session**: 2 min (orientation + ScheduleWakeup)
+
+---
+
 ## Since Last Check-in (Session 3766 — June 17 07:07 UTC — CONTINUATION CHECKPOINT; FINAL CHECKPOINT 07:45 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT A/B/C DECISION; ~53 MINUTES UNTIL 08:00 UTC HARD DEADLINE**
