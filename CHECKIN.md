@@ -1,22 +1,22 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3768 — June 17 07:28 UTC — INTERMEDIATE CHECKPOINT; FINAL CHECKPOINT 07:45 UTC)
+## Since Last Check-in (Session 3769 — June 17 07:45 UTC — FINAL CHECKPOINT; HARD DEADLINE 08:00 UTC)
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT A/B/C DECISION; ~32 MINUTES UNTIL 08:00 UTC HARD DEADLINE**
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT A/B/C DECISION; ~15 MINUTES UNTIL 08:00 UTC HARD DEADLINE**
 
-**Session Actions** (3768):
-1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md, INBOX.md re-verified; state stable; no changes since 07:14 UTC
-2. ✅ **Decision recheck** — INBOX.md confirmed empty of new stockbot A/B/C decisions
-3. ✅ **Final checkpoint scheduled** — ScheduleWakeup for 07:45 UTC (~17 min away; 15 min before deadline)
+**Session Actions** (3769):
+1. ✅ **Final orientation complete** — ORCHESTRATOR_STATE.md, INBOX.md verified; no new decision posted
+2. ✅ **State stable** — All four active blocks unchanged; no autonomous work available
+3. ✅ **Escalation scheduled** — ScheduleWakeup for 08:00 UTC (15 min from now; final deadline checkpoint)
 
 **Critical Timeline**:
-- **Current time**: 07:28 UTC
-- **Final checkpoint**: 07:45 UTC (17 min away; last decision window)
-- **Hard deadline**: 08:00 UTC (32 min from now)
+- **Current time**: 07:45 UTC (final checkpoint reached)
+- **Hard deadline**: 08:00 UTC (15 min remaining)
+- **Escalation action**: If no decision by 08:00 UTC, send Discord escalation + move to next task
 
-**If no decision by 07:45 UTC**: Will escalate to Discord at 08:00 UTC deadline
+**Decision window closed**: No new decision posted in INBOX.md as of 07:45 UTC
 
-**Effort this session**: 1 min (orientation + ScheduleWakeup)
+**Effort this session**: 3 min (orientation + final escalation scheduling)
 
 ---
 
