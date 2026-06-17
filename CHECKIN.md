@@ -1,5 +1,46 @@
 # Check-in Summary
 
+## Session 3801 — Post-Escalation Diagnosis (June 17 17:30–17:45 UTC)
+
+**Status**: 🔴 **CRITICAL: OPTION A FIX DID NOT WORK — HMM REGIME STILL STUCK AT NONE**
+
+**What was discovered**:
+- ✅ **Session 3800 deployment verified**: Container running (7 min uptime), code synced successfully
+- ✅ **HMM priming executing**: Docker logs show successful bar feeding: "Priming {ticker}... Primed {ticker}: fed 60 bars"
+- ❌ **CRITICAL BUG**: Despite successful priming, regime remains `None` in subsequent signal checks (16:28–16:30 UTC, 2-3 min after priming)
+- ❌ **Signal collapse PERSISTS**: All 5 sessions report `mean_buy_prob=0.0000`, identical to pre-fix June 16 state
+- **Root cause hypothesis**: Regime detector fitting is failing silently (exception in `_refit_detector()` caught but not logged visibly), OR `self._hmm_scalar.is_fitted` is False and masker passes signals through unmasked regardless of priming
+
+**Diagnosis performed**:
+- SSH verification: Confirmed HMM priming code on Jetson at line 3260-3289 of trading_session.py
+- Log analysis: Priming logs show success, but NO follow-up regime values or errors — silent failure
+- Code review: Identified two potential failure points:
+  1. Line 229 of hmm_signal_masker.py: `self._hmm_scalar.is_fitted and len(self._prices) >= self.min_fit_bars` — if `is_fitted` is False, masker doesn't apply regime masking
+  2. Line 395-399 of hmm_signal_masker.py: `_refit_detector()` exception handling — errors logged at WARNING level but may not propagate
+
+**Blockage analysis**:
+- Option A incomplete: HMM regime detection broken at architectural level, not just initialization
+- Priming logic is correct but regime fitting pipeline has a fundamental bug
+- June 18 validation (13:30–20:00 UTC) will proceed but expected to FAIL identically to June 16
+- **Cannot proceed with June 18 without fix or rollback**
+
+**Pending user decisions**:
+1. **ROLLBACK OPTION** (Recommended for time-sensitive June 18): Disable HMM masking entirely (`hmm_regime_masking: false` in session config) to unlock signal generation, preserve June 18 validation window for other model evaluation. Diagnose HMM offline post-June 18.
+2. **DEEP DEBUG OPTION**: Spend 2-3 hours diagnosing `HMMRegimeScalar.is_fitted` logic + `_refit_detector()` exception paths. Risk: validation window may expire while debugging.
+3. **SKIP VALIDATION**: Postpone June 18 validation until HMM fix is complete. Loss: 5 days of market data + 2-week delay to next validation window.
+
+**What I need**: 
+- **User decision required**: Rollback (disable HMM), deep debug (2-3h diagnosis), or skip validation?
+- **If rollback**: Orchestrator can execute in <5 min: set `hmm_regime_masking: false`, redeploy, resume June 18 validation
+- **If debug**: Escalate to local stockbot agent for deep code audit of regime detection pipeline
+- **Recommend**: Rollback for time-sensitive validation, then diagnose offline
+
+**BLOCKED.md entry created**: New block added documenting this issue with diagnostic hypotheses and remediation options.
+
+**No autonomous work available** until user decision. Escalation re-triggered.
+
+---
+
 ## Session 3800 — Since Last Check-in (June 17 16:30–17:30 UTC)
 
 **Status**: ✅ **AUTO-ESCALATION OPTION A EXECUTED SUCCESSFULLY**
