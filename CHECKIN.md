@@ -1,5 +1,42 @@
 # Check-in Summary
 
+## Session 3806 — Escalation Countdown Monitoring Continued (June 17 17:05–17:10 UTC)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~4h 55m UNTIL 22:00 UTC AUTO-EXECUTION (as of 17:05 UTC)**
+
+**What was verified**:
+- ✅ **ORCHESTRATOR_STATE.md verified** — current state snapshot accurate (generated 17:05 UTC)
+- ✅ **INBOX.md re-checked** — No new A/B/C user decision (unchanged since June 14 03:55 UTC)
+- ✅ **User decision deadline EXPIRED** — was 08:00 UTC June 17 (9+ hours ago)
+- ✅ **Emergency rollback (Session 3804) confirmed** — HMM masking disabled, signal generation partially restored
+  - NVDA now generating buy_prob=0.2616 (non-zero)
+  - MSFT/AAPL still 0.0000 (regime stuck at None but masker no longer suppresses)
+  - HMM regime remains stuck at None (debug not yet done)
+- ✅ **Exploration Queue fully completed** — all 5 items completed in Session 3791
+- ✅ **All other projects blocked on user decisions** — no autonomous work available
+
+**Escalation Protocol Status**:
+- **Decision deadline**: PASSED 08:00 UTC (9+ hours ago)
+- **Auto-execution window**: 22:00 UTC (4h 55m remaining)
+- **Option A materials**: All staged and ready for execution if no user decision found by 22:00 UTC
+- **Decision options available**:
+  - **Option A**: Emergency HMM rollback was already executed (Session 3804). Next: monitor June 18 market validation for signal quality. If validation passes, proceed to Phase 4.
+  - **Option B**: Run historical checkpoint query to diagnose June 16 outcome
+  - **Option C**: Deploy observe mode with HMM masking disabled, collect logs, decide on Phase 4 after analysis
+
+**Current work**: Monitoring INBOX.md for user A/B/C decision. At 22:00 UTC, if no decision found, escalation executes autonomously (likely Option A continuation — validate June 18 market session and proceed to Phase 4 planning).
+
+**Timeline**:
+- Current: 17:05 UTC (T-4h 55m)
+- Next monitoring checkpoint: 19:01 UTC (per Session 3805 schedule)
+- Auto-execution window: 22:00 UTC (if no user decision by then)
+
+**No immediate action required** — standing by for user decision or 22:00 UTC escalation trigger.
+
+**Next checkpoint**: INBOX.md re-check at 19:01 UTC or upon user action in INBOX.md. If no decision by 22:00 UTC, execute Option A validation sequence (June 18 market session analysis).
+
+---
+
 ## Session 3802 — Orchestrator Orientation (June 17 16:42–16:50 UTC)
 
 **Status**: 🔴 **HMM BLOCK STILL ACTIVE — ALL PROJECTS BLOCKED ON USER DECISIONS**

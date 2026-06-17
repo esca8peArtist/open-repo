@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-17T16:42:28Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-17T17:05:40Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 57.5% | Reset in 127h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 58.2% | Reset in 127h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: 🔴 **[CRITICAL ESCALATION RE-BLOCKED — OPTION A FIX FAILED — HMM REGIME DETECTION BROKEN]** — **Status**: Option A (HMM priming + order-ID idempotency) executed by Session 3800, deployed to Jetson, container verified healthy. **FAILURE**: HMM regime remains stuck at None despite successful priming logs. Regime detector fitting appears to fail silently in `_refit_detector()`. Signal collapse persists identically to June 16 pre-fix state. **Root cause candidates** (Session 3801 diagnosis): … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: 🟡 **[EMERGENCY ROLLBACK EXECUTED — HMM MASKING DISABLED]** — **Status**: Session 3804 (16:51 UTC) executed emergency rollback: disabled HMM masking (`hmm_regime_masking: false` in active-sessions.json) to unlock signal generation. Config deployed to Jetson, container restarted. **Signal generation partially restored**: NVDA generating buy_prob=0.2616 (non-zero); MSFT/AAPL still 0.0000. HMM regime remains stuck at None, but masker no longer suppresses valid signals. **Next steps**: (1) Con … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -33,20 +33,6 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### stockbot — HMM regime stuck at None despite priming fix (Option A execution incomplete)
-**Date blocked**: 2026-06-17 (Session 3800 escalation attempt)
-**Context**: Session 3800 executed Option A autonomously: implemented HMM warmup priming (60-day bar feed) + order-ID idempotency fixes + deployed to Jetson. Deployment verified successful (container healthy, 7 min uptime). **However**, Docker logs from 16:25–16:30 UTC show critical failure: despite successful log messages "Primed {ticker}: fed 60 bars to HMM", all 5 sessions still report `regime=None` in signal health monitor alerts. Signal collapse persists (mean_buy_prob=0.0000). **Root cause analysis (Session 3801)**:
-- ✅ Priming code is on Jetson (`src/trading/trading_session.py` lines 3260-3289)
-- ✅ Priming logs confirm successful execution: "Priming {ticker}... Primed {ticker}: fed 60 bars"
-- ✅ Docker container running, healthy (100.120.18.84:8000)
-- ❌ **CRITICAL**: Regime remains None 2-3 minutes after priming despite successful bar feed
-- ❌ **Hypothesis 1**: HMM regime detector fitting fails silently in `_refit_detector()` (RegimeDetector.fit() or regime_probabilities() error)
-- ❌ **Hypothesis 2**: Condition `self._hmm_scalar.is_fitted and len(self._prices) >= self.min_fit_bars` (line 229 of hmm_signal_masker.py) evaluates to False, causing masker to pass through signals unmasked regardless of regime (masker.apply() returns signal unchanged if HMM not ready)
-- ❌ **Hypothesis 3**: Regime is set correctly after priming but gets reset to None during trading cycles
-- **June 18 validation outcome**: INVALID — Option A fix did not resolve root cause. Signal collapse persists identically to June 16 pre-fix state.
-**What I need**: (1) Deep code audit of `_refit_detector()` exception handling + `HMMRegimeScalar.is_fitted` logic to determine which component is failing silently. (2) Option A was incomplete — regime detection is broken at a deeper level than priming. (3) Emergency rollback option: disable HMM masking entirely (set `hmm_regime_masking: false` in session config) to unlock signal generation; then diagnose root cause offline without time pressure. (4) Alternative: Escalate to user for decision on rollback vs. continued debugging during market hours (validation window June 18 13:30-20:00 UTC is 15.5 hours away).
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 1h 2>&1 | grep -E 'regime.*=|REFIT|DetectorFit' | tail -20"` — should show regime values other than None if HMM working. If all show regime=None or exception traces, HMM fitting is broken.
-**Resolution**: [leave blank — awaiting root cause diagnosis and user decision on rollback]
 ---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
@@ -63,9 +49,23 @@
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**: [leave blank]
 ---
+### mfg-farm — Test print execution (user action required)
+**Date blocked**: 2026-05-13
+**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
+**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
+**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
+**Resolution**: [leave blank]
+---
+### open-repo — June 12 deployment never executed; infrastructure missing on raspby1
+**Date blocked**: 2026-06-16 (discovered in Session 3671 audit)
+**Original failure date**: 2026-06-12 (deployment date when nothing occurred)
+**Context**: The June 12 deployment was incorrectly marked as "resolved" in Session 2995, which only clarified the start time (09:00 UTC). The actual deployment never executed. **AUDIT VERIFIED (Session 3682, 15:50–16:45 UTC)** — Three production-ready audit documents confirm deployment DID NOT execute:
+- DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines): Verified 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000 (connection refused); confidence 99%
+- POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines): 6 prioritized blockers identified; root cause = platform/runtime decision expired June 15 23:59 UTC with no user response
+- DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines, Session 3770): 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000; confidence 99%
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 3671 (130 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 3671 (131 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
