@@ -1,5 +1,39 @@
 # Check-in Summary
 
+## Session 3807 — Post-Rollback Monitoring Checkpoint (June 17 17:13–17:20 UTC)
+
+**Status**: 🟡 **EMERGENCY ROLLBACK VERIFIED — JUNE 18 VALIDATION READY WITH HMM MASKING DISABLED**
+
+**What was verified**:
+- ✅ **Jetson deployment status**: Docker container healthy (22 min uptime), API endpoint responding
+- ✅ **HMM masking status**: Confirmed `hmm_regime_masking: false` in active-sessions.json
+- ✅ **Emergency rollback (Session 3804)**: In effect — signals flowing without regime gating
+- ✅ **INBOX.md checked**: No new user decisions posted
+- ✅ **Timeline confirmed**: Sessions 3800 (Option A executed) → 3801 (failed) → 3804 (rollback) → 3807 (verification)
+
+**Escalation Status Post-Rollback**:
+- **Option A execution** (Session 3800): ✅ Deployed HMM warmup + order-ID idempotency
+- **Option A diagnosis** (Session 3801): ❌ HMM regime still None despite priming (root cause: deeper architectural bug)
+- **Emergency rollback** (Session 3804): ✅ Disabled HMM masking entirely to unlock signal generation
+- **Current state**: Signals flowing with partial restoration (masking disabled)
+
+**June 18 Validation Plan** (13:30-20:00 UTC, 19h 17m away):
+- Monitor 5 live sessions with HMM masking disabled (baseline: no regime gating)
+- Measure: signal volume, order execution, zero "duplicate order_id" errors
+- Expected outcome: Signal restoration validates order-ID idempotency fix; HMM issue deferred to post-validation deep debug
+- Post-market: Classify PASS/NEAR_MISS/FAR_MISS, unlock Phase 4 decision
+
+**All other projects**: Blocked on user actions (no autonomous work available)
+
+**Timeline**:
+- Current: 17:13 UTC
+- Next monitoring checkpoint: 19:01 UTC (per Session 3805/3806 schedule) OR upon user action in INBOX.md
+- June 18 validation window: 13:30-20:00 UTC tomorrow
+
+**No immediate action required** — standing by for June 18 validation or user decision.
+
+---
+
 ## Session 3806 — Escalation Countdown Monitoring Continued (June 17 17:05–17:10 UTC)
 
 **Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~4h 55m UNTIL 22:00 UTC AUTO-EXECUTION (as of 17:05 UTC)**

@@ -1,3 +1,30 @@
+## Session 3807 (2026-06-17 17:13–17:20 UTC — POST-ROLLBACK MONITORING CHECKPOINT)
+
+**Status**: 🟡 **EMERGENCY ROLLBACK VERIFIED, June 18 VALIDATION READY**
+
+**Verification completed** (17:12–17:20 UTC):
+- ✅ Jetson Docker health verified: `stockbot` container UP 22 minutes (healthy) ✓
+- ✅ API endpoint verified: `curl http://100.120.18.84:8000/api/health` responding ✓
+- ✅ HMM masking status verified: `hmm_regime_masking: false` confirmed in all 5 sessions ✓
+- ✅ Emergency rollback (Session 3804) in effect — signals flowing without regime gating ✓
+- ✅ Git history verified: Sessions 3800→3801→3804 timeline: Option A executed → failed → rolled back ✓
+- ✅ INBOX.md re-checked at 17:13 UTC — NO NEW USER DECISIONS found ✓
+
+**Current state**:
+- HMM masking: DISABLED (emergency rollback active)
+- Signal generation: PARTIALLY RESTORED (no regime masking blocking)
+- June 18 validation: READY with HMM masking off (expected: signals flow through with original 5 sessions)
+- Market validation window: June 18 13:30-20:00 UTC (19h 17m away)
+
+**Next steps**:
+1. **June 18 13:30-20:00 UTC**: Monitor 5 live sessions for signal quality with HMM masking disabled
+2. **Post-market analysis**: Classify outcome (PASS/NEAR_MISS/FAR_MISS) based on signal volume + order execution
+3. **User decision window June 18 EOD**: Decide on Phase 4 (expand, retrain, deploy) or alternative path
+
+**No autonomous work available** — all projects blocked on user actions. Monitoring loop continues.
+
+---
+
 ## Session 3800 (2026-06-17 16:30–17:30 UTC — ESCALATION AUTO-EXECUTION: OPTION A)
 
 **Status**: ✅ **OPTION A AUTONOMOUS EXECUTION COMPLETED SUCCESSFULLY**
