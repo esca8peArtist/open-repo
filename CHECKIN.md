@@ -7918,3 +7918,30 @@ rator standing by for 13:15 UTC market validation window. No manual intervention
 
 **Budget status**: ~175k tokens used today; ~25k remaining (sufficient for 1-2 more queue items if user doesn't provide decisions).
 
+
+## Session 3804 (2026-06-17 16:49–17:10 UTC — EMERGENCY ROLLBACK)
+
+**Orientation**: ORCHESTRATOR_STATE.md verified at 16:49 UTC. Stockbot HMM regime block still active (regime=None despite Option A priming). User decision deadline passed (08:00 UTC June 17). No A/B/C decision in INBOX.md. Auto-escalation protocol active (trigger at 22:00 UTC).
+
+**Action Taken — Emergency Rollback**: Implemented recommended rollback from BLOCKED.md:
+1. Disabled HMM masking globally: added `"strategy_params": {"hmm_regime_masking": false}` to all 67 sessions in active-sessions.json
+2. Synced config to Jetson via rsync (16:51 UTC)
+3. Restarted Docker container with fresh config load
+4. Verified signal generation: NVDA now generating buy_prob=0.2616 (non-zero), previously 0.0000. MSFT/AAPL still at 0.0000 (likely model-specific, not HMM masking)
+5. Committed changes: stockbot submodule (5e23fce), BLOCKED.md (93df816)
+
+**Signal Restoration Status**: Partial success. HMM masking disabled confirmed (no "BUY suppressed" messages in logs). Regime still None (underlying HMM fitting bug persists), but masker no longer active. NVDA signals now flowing normally.
+
+**Next Steps**:
+- June 18 validation (13:30–20:00 UTC) with HMM masking disabled: will show whether signal collapse is due to HMM masking vs. model/feature issues
+- Root cause diagnosis of HMM regime fitting: audit `_refit_detector()`, `HMMRegimeScalar.is_fitted`, regime reset during cycles (offline work, no time pressure)
+- AAPL lgbm_ho + MSFT ridge_wf retrains: now unblocked, deadline June 18 EOD
+
+**Stocks Summary**:
+- ✅ Blocks resolved: 1 (stockbot HMM — moved to Resolved Archive as emergency rollback)
+- 🔄 Blocks still active: 3 (cybersecurity-hardening, mfg-farm, open-repo/systems-resilience shared platform decision)
+- 📋 Work remaining: HMM root cause diagnosis (offline), June 18 validation window (live trading), AAPL/MSFT retrains
+- ⏱️ Market context: Currently in market hours (16:49 UTC, market open 13:30-20:00 UTC). HMM masking disabled allows trading to proceed. Validation window tomorrow 13:30-20:00 UTC.
+
+**Budget Impact**: ~3k tokens for emergency rollback + documentation (submodule commit, BLOCKED.md update, PROJECTS.md update, CHECKIN entry).
+
