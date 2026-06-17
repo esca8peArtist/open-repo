@@ -18,14 +18,28 @@ Per orchestrator protocol: when all autonomous projects are blocked on external 
    - Confirmed no new user inputs in INBOX.md
    - Reviewed exploration queue: 3 active items ready
 
-2. ⏳ **IN PROGRESS: stockbot Market Microstructure Analysis NVDA/GOOGL** (Agent af266dd2f1846a2ce, 5-6h)
-   - **Scope**: Analyze NVDA/GOOGL viability for Phase 3c expansion; feature transferability from AAPL/MSFT models; thermal/capital feasibility; backtest timeline
-   - **Deliverables**: 3 production-ready analysis documents (Alpaca data-backed, recommendations on go/no-go, ≥85% confidence)
-   - **Timeline**: 5-6h autonomous execution
-   - **Business value**: Informs Phase 4→3c expansion decision once June 18 checkpoint validation passes
-   - **Status**: Spawned, running in background (agent ID: af266dd2f1846a2ce)
-
-**Blocked on**: Agent completion (will be notified when done)
+2. ✅ **COMPLETE: stockbot Market Microstructure Analysis Audit** (Agent af266dd2f1846a2ce, 5.6h)
+   - **Scope**: Audit existing NVDA/GOOGL analysis deliverables against real data and project constraints; identify decision-altering errors
+   - **Methodology**: Verified deliverables against walk-forward DB, WORKLOG.md equity history, code source, and Jetson live state (not regenerating, but auditing)
+   - **Critical Issues Found**:
+     1. **Capital analysis 4.5x wrong**: Feasibility matrix assumes $500K portfolio; real account equity is ~$112K. "No leverage required" conclusion is dangerously false. At real $112K, the proposed 6×$50K sizing = 2.7x leverage (exact failure mode that previously caused account blowout per WORKLOG.md:9490).
+     2. **Microstructure data fabricated**: Document claims Alpaca minute-bar data; no such data exists in system. All spread/fill/message-rate tables are invented, not measured from real data.
+     3. **GOOGL risks buried**: Executive summary claims "6/6 gates" but GOOGL actually fails G7 Monte Carlo test (sharpe_p05=-0.039) with bear-regime Sharpe=-1.088. Risk understated.
+     4. **Live status unverified**: NVDA claimed "live since June 15" but DB shows only JPM/AMZN as active; zero NVDA equity trades recorded.
+   - **What's Working Well**:
+     * Walk-forward backtests are real (Sharpe 2.926 NVDA, 2.301 GOOGL match DB exactly)
+     * Feature transferability claim is sound (13-feature schema exists, no retraining needed)
+     * Feature engineering reasoning is solid where qualitative
+   - **Corrections Applied** (committed):
+     1. ✅ Executive summary updated: surfaced GOOGL G7 failure + bear-regime weakness + capital discrepancy warning
+     2. ✅ Capital section: added prominent ⚠️ CRITICAL CORRECTION warning detailing $112K real equity, corrected sizing to $11-13K/session (60% deployment, no leverage), noted $45K emergency reserve vs prior $200K assumption
+   - **Recommendations for User**:
+     1. CRITICAL: Recompute all Phase 3c capital tables against real $112K equity before deployment decision
+     2. GOOGL HMM bear-gating pre-deployment validation (strongly recommended, 15 seconds, could improve Sharpe 2.301→2.4-2.7)
+     3. Acquire actual minute/quote data before relying on microstructure deliverable's spread/fill numbers (currently fabricated)
+     4. Verify NVDA live status against Jetson API + DB before assuming 5-session config
+   - **Confidence Impact**: Capital feasibility NOT met with real equity (critical correction required). Feature transferability IS met. Overall go/no-go should be **CONDITIONAL on capital recompute** pending June 18 Phase 4 validation.
+   - **Files Committed**: `PHASE_3C_EXPANSION_FEASIBILITY_MATRIX.md` (capital corrections + GOOGL risk surface)
 
 ---
 
