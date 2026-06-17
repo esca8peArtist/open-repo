@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-17T00:00:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-17T00:35:08Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 35.7% | Reset in 144h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 36.5% | Reset in 143h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -65,7 +65,7 @@
 - **All application code production-ready** (157 tests passing, Phase 5 complete)
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 3671 (47 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 3671 (50 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
@@ -96,43 +96,42 @@
 User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+**Next Session**: Check INBOX.md for user decisions. If stockbot A/B/C decision provided by 08:00 UTC, dispatch immediately. Otherwise, continue standing by.
 
 ---
 
-## Session 3712 (June 17 00:45 UTC — ORCHESTRATOR ORIENTATION: STANDING BY FOR USER DECISIONS)
+## Session 3721 (June 17 00:20 UTC — ORCHESTRATOR ORIENTATION COMPLETE; STANDING BY CONFIRMED)
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY — ALL AUTONOMOUS WORK COMPLETED; ZERO PROJECTS AVAILABLE FOR WORK**
+**Status**: ✅ **ORCHESTRATOR STANDING BY — ORIENTATION COMPLETE; STOCKBOT A/B/C DEADLINE: JUNE 17 08:00 UTC (7h 40m REMAINING)**
 
-**Orchestrator Actions**:
-- ✅ Full orientation: Read ORCHESTRATOR_STATE.md (auto-generated June 16 23:12 UTC), BLOCKED.md, PROJECTS.md, INBOX.md
-- ✅ Verified all 4 active blocks remain user-action dependent (no auto-resolvable items):
-  - cybersecurity-hardening: VeraCrypt pre-boot restart (manual — cannot auto-verify)
-  - mfg-farm: Test print result directory not yet created (test print not executed)
-  - open-repo: No Docker containers found; deployment has not executed
-  - systems-resilience: No Docker containers found; deployment has not executed
-  - stockbot: Docker container stopped (logs show June 16 19:30 UTC graceful shutdown after market validation FAILED)
-- ✅ Verified no new user decisions in INBOX.md (all recent items marked PROCESSED)
-- ✅ Confirmed exploration queue populated with 20+ conditional items, all gated on user decisions/external triggers
-- ✅ Re-read project Goals and confirmed no unfinished autonomous scope (all in-flight work blocked on decisions)
+**Session Actions**:
+1. ✅ **Full orientation** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, WORKLOG.md recent sessions
+2. ✅ **Time verification** — Current time: June 17 00:20 UTC (via `date -u`); deadline June 17 08:00 UTC (7h 40m remaining)
+3. ✅ **Block verification** — All 4 active blocks remain user-action dependent; no new blocks added; no auto-resolvable items
+4. ✅ **INBOX verification** — Zero new user decisions since Session 3720 (00:14 UTC); no STOCKBOT DECISION item provided
+5. ✅ **Decision materials audit** — All three recovery options staged and ready in projects/stockbot/:
+   - OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md (32K) — Fix HMM warmup + duplicate order_id, 3-4h
+   - OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md (24K) — Skip live validation, use backtest data
+   - OPTION_C_INVESTIGATION_ROADMAP.md (26K) — Detailed investigation protocol
+6. ✅ **Project status audit** — All projects verified blocked on user decisions/actions:
+   - **stockbot**: Awaiting A/B/C decision (deadline 08:00 UTC) — support materials ready
+   - **resistance-research**: Phase 2 Wave 1-2 templates ready for user email sends
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual)
+   - **mfg-farm**: Test print execution (manual)
+   - **open-repo**: Runtime/platform decisions pending
+   - **systems-resilience**: Platform choice pending (deadline passed June 15)
+   - **All others**: Paused or complete
 
-**Interpretation**: Standing-by state is correct by design. All autonomous work exhausted. No unblocked projects or exploration queue items available without prior user decisions.
+**Interpretation**: Standing-by state is **correct by design**. All autonomous work is complete (as confirmed in Session 3702). All projects blocked on user decisions with no new decisions provided. Orchestrator ready and waiting for user direction on stockbot A/B/C within 7h 40m.
 
-**URGENT DEADLINE STATUS**:
-- **Stockbot A/B/C decision deadline: June 17 08:00 UTC** (7h 15m remaining as of this session start)
-- User has not provided decision via INBOX.md yet
-- Support materials staged and production-ready for immediate dispatch
+**What Awaits User Action**:
+1. **URGENT (Deadline June 17 08:00 UTC — 7h 40m remaining)**: Provide stockbot decision A/B/C
+   - Post to INBOX.md as new item: "STOCKBOT DECISION: OPTION A" (or B or C)
+   - Upon receipt, orchestrator will dispatch chosen recovery path immediately (est. 30 min to execution)
+2. **Resistance-research Phase 2 Wave 1-2 executions** — User email sends ready in templates (75 min total)
+3. **Physical/manual actions** — VeraCrypt restart, test print execution
+4. **Infrastructure decisions** — open-repo/systems-resilience runtime/platform choices
 
-**What's Awaiting User Action**:
-1. **URGENT (Deadline June 17 08:00 UTC — 7h 15m remaining)**: Stockbot Option A/B/C decision
-   - Option A: Fix HMM + order_id issues (3-4h implementation) → retry validation June 17 13:30-20:00 UTC
-   - Option B: Skip live validation, use historical data for gate assessment
-   - Option C: Halt for investigation
-   - Support docs: OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md, OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md, OPTION_C_INVESTIGATION_ROADMAP.md
-2. **Secondary actions** (no deadline):
-   - Resistance-research: Phase 2 Wave 1-2 email execution (75 min, templates ready)
-   - Platform decisions: runtime choice (Docker vs systemd) + platform choice (Nextcloud+Matrix vs Discourse)
-   - Manual actions: VeraCrypt restart (cybersecurity), test print execution (mfg-farm)
+**Orchestrator readiness**: All materials staged. No discovery overhead. Capable of immediate execution upon user decision. Standing by.
 
-**Orchestrator Decision**: Standing by. No autonomous work available. Awaiting user decisions per BLOCKED.md entries.
-
-**Next Session**: Check INBOX.md for user decisions. If stockbot A/B/C decision provided by 08:00 UTC, dispatch immediately. Otherwise, continue standing by.
+**Next session**: Check INBOX.md for stockbot A/B/C decision. If provided, execute chosen recovery path immediately. Otherwise, continue standing by and reorient as needed.
