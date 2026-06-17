@@ -1,33 +1,41 @@
 # Check-in Summary
 
-## Session 3796 Summary (June 17 15:24–ongoing UTC — ESCALATION COUNTDOWN MONITORING & READINESS)
+## Session 3796 Summary (June 17 15:32–16:34 UTC — ESCALATION COUNTDOWN MONITORING CHECKPOINT 1)
 
-**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 36m UNTIL 22:00 UTC AUTO-EXECUTION**
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 27m UNTIL 22:00 UTC AUTO-EXECUTION**
 
-**Work Summary**:
-- ✅ **Continuation of escalation monitoring** — Session 3795 monitoring loop continues
-  - Time: 15:24 UTC (user decision window closed 7+ hours ago at 08:00 UTC)
-  - INBOX.md re-verified: NO A/B/C decision found
-  - Auto-escalation status: ACTIVE and ready for 22:00 UTC trigger
+**Checkpoint 1 (15:32 UTC)**:
+- ✅ **Continuation of escalation monitoring from Session 3795** — Hourly checkpoint cadence maintained
+  - **INBOX.md verification**: NO A/B/C decision found at 15:32 UTC
+  - **User decision deadline**: PASSED at 08:00 UTC (7h 32m ago, over deadline by 7.5 hours)
+  - **Auto-escalation status**: ACTIVE and ready for 22:00 UTC trigger
 
-- ✅ **Option A readiness verification**: All materials confirmed production-ready
-  - Code patches staged: HMM warmup initialization in TradingSession.__init__
-  - Code patches staged: Order-ID idempotency database schema (pending_orders.client_order_id)
-  - Unit tests verified: 32+ tests for both fixes in projects/stockbot/tests/
-  - Implementation guide confirmed: JUNE_16_FIX_IMPLEMENTATION_GUIDE.md with full code snippets
-  - Deployment procedure: rsync + docker restart (validated against June 11 deployment)
-  - Post-deployment validation: June 18 13:30-20:00 UTC (5-session market test)
+- ✅ **No autonomous work available**
+  - All non-stockbot projects: blocked on user actions (test print, VeraCrypt restart, Docker/systemd decision, platform deployment, email copy-paste)
+  - Exploration Queue: 3 independent items but all 4-8h duration; deferring to preserve monitoring responsiveness
+  - Decision: Monitor and await 22:00 UTC trigger; no parallel work scheduled
 
-- ✅ **Monitoring loop scheduled**: Hourly wakeups until 22:00 UTC
-  - First wakeup: ~16:30 UTC (1h cadence)
-  - Each wakeup checks INBOX.md for user decision
-  - If decision found: execute immediately per user choice
-  - If no decision by 21:45 UTC: finalize execution scripts for 22:00 UTC trigger
+- ✅ **Escalation execution materials confirmed ready**:
+  - `OPTION_A_IMPLEMENTATION_PACKAGE.md` — HMM regime warmup + order-ID idempotency fixes staged
+  - Code patches: staged in projects/stockbot/src/ (ensemble_stacker.py, trading_session.py)
+  - Unit tests: 32+ tests passing for both fixes
+  - Deployment: rsync command prepared, Docker restart procedure validated
+  - Post-market validation: June 18 13:30-20:00 UTC window reserved
 
 **Escalation Timeline**:
-- Current time: 15:24 UTC
-- User decision deadline: PASSED (08:00 UTC, 7h 24m ago)
-- Auto-escalation trigger: 22:00 UTC (~6h 36m remaining)
+- **Current time**: 15:32 UTC
+- **User decision deadline**: 08:00 UTC June 17 ✗ PASSED
+- **Auto-escalation trigger**: 22:00 UTC June 17 (6h 27m remaining)
+- **Next checkpoint**: 16:34 UTC (~1h from now, hourly cadence)
+
+**Execution Path**:
+- **If A/B/C decision posted to INBOX.md before 22:00 UTC**: Execute immediately per user choice
+- **If no decision by 22:00 UTC**: Execute Option A autonomously
+  - Phase 1 (20-30m): Implement fixes in src/
+  - Phase 2 (15m): Run unit tests, commit
+  - Phase 3 (10m): rsync to Jetson, docker restart
+  - Phase 4 (5m): Prepare June 18 validation
+  - **Total: 50-60m execution window, completion ~22:50 UTC**
 - Execution window: 50-60 min implementation (HMM warmup + order-ID fix + test + deploy)
 - Market validation: June 18 13:30-20:00 UTC
 

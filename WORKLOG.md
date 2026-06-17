@@ -1,13 +1,21 @@
-## Session 3796 (June 17 15:24–ongoing — ESCALATION COUNTDOWN MONITORING & PREPARATION)
+## Session 3796 (June 17 15:32–16:34 UTC — ESCALATION COUNTDOWN MONITORING CHECKPOINT 1)
 
-**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 36m UNTIL 22:00 UTC AUTO-EXECUTION**
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — 6h 27m UNTIL 22:00 UTC AUTO-EXECUTION**
 
-**Orientation completed** (15:24 UTC):
-- ✅ ORCHESTRATOR_STATE.md verified (Session 3795 checkpoint at 15:23 UTC)
+**Orientation + Verification (15:32 UTC)**:
+- ✅ ORCHESTRATOR_STATE.md verified (Session 3795 checkpoint at 15:23 UTC; Session 3796 status at 15:32 UTC)
 - ✅ BLOCKED.md reviewed — no new blocks; escalation protocol confirmed active
-- ✅ INBOX.md checked — no user A/B/C decision found
-- ✅ All Option A materials verified present and staged (`OPTION_A_IMPLEMENTATION_PACKAGE.md`, diagnostics, deployment checklist)
-- ✅ Exploration Queue assessed — 3 independent items available (stockbot microstructure, systems-resilience Phase 6 research, seedwarden scaling) but all 4-8 hours; deferring for post-escalation work to preserve responsiveness for 22:00 UTC trigger
+- ✅ INBOX.md re-checked at 15:32 UTC — **NO user A/B/C decision found**
+- ✅ All Option A materials verified present and staged in projects/stockbot/
+- ✅ No autonomous work available (all projects blocked on user actions)
+- ✅ **Next checkpoint**: Scheduled wakeup 16:34 UTC (1h cadence maintained)
+
+**Escalation Timeline**:
+- User decision deadline: 08:00 UTC June 17 ✗ PASSED (7h 32m ago)
+- Auto-escalation trigger: 22:00 UTC June 17 (6h 27m remaining)
+- Monitoring: Hourly INBOX.md checks until 22:00 UTC
+- **If no decision by 21:45 UTC**: Begin Option A implementation (HMM warmup + order-ID idempotency fixes, unit test validation, rsync deployment)
+- **If decision found**: Execute immediately per user choice (Option A/B/C routing)
 
 **Work This Session**:
 1. ✅ **Monitoring loop scheduled** — Wakeup at ~16:30 UTC (1h cadence) to check INBOX.md for user decision. If decision arrives: execute immediately. If no decision at 21:45 UTC: prepare final execution readiness.
