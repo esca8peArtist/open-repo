@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-17T21:31:31Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-17T22:17:40Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 65.0% | Reset in 122h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (26,017 tokens) | All-models 66.0% | Reset in 122h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[OPTION A AUTO-ESCALATED DEPLOYMENT COMPLETE — STANDING BY FOR JUNE 18 13:30–20:00 UTC MARKET VALIDATION]** — **Session 3816 (June 17 20:24–20:36 UTC)**: Auto-escalation executed (no user decision posted to INBOX by 22:00 UTC deadline). HMM warmup + order-ID idempotency fixes deployed to Jetson via rsync + docker restart. Code basis: both fixes already committed (commit 7ce16a1 + e188c14). All 5 trading sessions (AAPL lgbm_ho, MSFT ridge_wf, NVDA lgbm_ho, JPM ridge_wf, AMZN lgbm_ho … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[OPTION A FULL IMPLEMENTATION DEPLOYED — STANDING BY FOR JUNE 18 13:30–20:00 UTC MARKET VALIDATION]** — **Session 3825 (June 17 22:07 UTC)**: Auto-escalation deadline (22:00 UTC) reached with no user A/B/C decision posted. Orchestrator autonomously executed Option A per pre-authorized protocol. **Implementation completed**: (1) HMM three-layer warmup priming (90-bar feed + direct refit + scalar initialization, 120-day fetch window); (2) Order-ID idempotency verified working correctly … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -65,7 +65,7 @@
 - DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines, Session 3770): 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000; confidence 99%
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: open-repo — focus references Session 3671 (151 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-repo — focus references Session 3671 (154 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
