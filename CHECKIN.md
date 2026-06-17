@@ -1,5 +1,65 @@
 # Check-in Summary
 
+## Session 3780 Summary (June 17 10:56–11:05 UTC — DECISION POINT ANALYSIS)
+
+**Status**: 🛑 **ORCHESTRATOR STANDING BY — All projects blocked on user decisions (5 critical decision points)**
+
+**What Was Accomplished**:
+- Comprehensive orientation on all projects and blocks
+- Identified 5 critical decision points with passed deadlines
+- Confirmed all staged materials production-ready and waiting for user action
+- Verified 4 exploration queue items remain available (above 3-item minimum)
+
+**Current Blocking Decisions** (all awaiting user direction):
+
+### 1. **STOCKBOT (CRITICAL — deadline passed 08:00 UTC June 17)**
+- **Issue**: June 16 market validation failed due to HMM regime stuck at None + order ID idempotency violations
+- **Options staged**:
+  - **Option A**: Apply both fixes (80-100 min), test, deploy to Jetson, run full validation June 17 13:30-20:00 UTC
+  - **Option B**: Skip validation, run checkpoint query against historical fills, classify gate outcome immediately
+  - **Option C**: Deploy fixes in observe mode, leave validation running June 17, collect logs to identify additional blockers
+- **Materials**: `JUNE_16_DIAGNOSIS_AND_FIXES.md` contains full analysis + decision matrix
+- **What I need**: User decision (A/B/C) to proceed with recovery
+
+### 2. **OPEN-REPO (deadline passed June 15 23:59 UTC)**
+- **Issue**: June 12 deployment never executed; infrastructure missing on raspby1
+- **Decision needed**: Platform/runtime model for raspby1 (Docker vs systemd)
+- **Status**: All 157 application tests passing; only infrastructure/host decision blocking
+- **Materials**: Full deployment runbooks staged in PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md
+- **What I need**: User decision on raspby1 runtime model
+
+### 3. **SYSTEMS-RESILIENCE (deadline passed June 15 23:59 UTC)**
+- **Issue**: Phase 5.1 publication blocked on platform deployment decision
+- **Recommendation**: Nextcloud+Matrix strongly recommended (8/10 vs Discourse 5/10)
+- **Status**: 61,611 words of content production-ready; June 9 13:00 UTC publication window passed but materials still valid for Phase 5.2
+- **Materials**: Full deployment runbooks + contingency plans staged
+- **What I need**: User decision on platform choice (Nextcloud+Matrix or Discourse)
+
+### 4. **CYBERSECURITY-HARDENING (user action required)**
+- **Current step**: Phase 1.3 VeraCrypt pre-boot password test (needs Windows restart)
+- **Action required**: Restart Windows, type VeraCrypt password when prompted, boot normally, click Encrypt, resume Phase 1 from step 1.4
+- **What I need**: Windows machine restart + password entry
+
+### 5. **MFG-FARM (user action required)**
+- **Current step**: Test print execution with specifications (0.20mm, PLA+, 3 walls, 220–225°C)
+- **Status**: All pre-print deliverables complete (designs, Etsy copy, cost model)
+- **What I need**: Test print execution + evaluation report
+
+**Exploration Queue Status**:
+- 4 items remaining (minimum 3 maintained)
+- Top item: stockbot Market Microstructure Analysis (5-6h, requires longer session)
+- Will proceed with next exploration item when user decisions unblock autonomous work
+
+**Recommended Next Steps**:
+1. **IMMEDIATE**: Provide stockbot A/B/C decision to unblock highest-priority project
+2. **IMMEDIATE**: Provide open-repo + systems-resilience platform decisions (gates two projects + shared infrastructure)
+3. **WHEN READY**: Windows restart for VeraCrypt, test print execution, then resume cybersecurity + mfg-farm
+4. Once decisions arrive: Orchestrator will route to appropriate execution path from staged materials
+
+**Session Tokens**: ~15k / 200k (remaining budget: 185k)
+
+---
+
 ## Session 3779 Summary (June 17 10:39–11:44 UTC — AUTONOMOUS EXPLORATION QUEUE EXECUTION)
 
 **Status**: ✅ **PRODUCTIVE SESSION — Phase 3 Domain K research infrastructure completed; exploration queue item executed**
