@@ -1,3 +1,30 @@
+## Session 3756 (June 17 06:01 UTC — CONTINUATION CHECKPOINT; STANDING BY; NO DECISION YET; FINAL CHECKPOINT 07:29 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; EXECUTION PATHS REMAIN STAGED**
+
+**Work This Session**:
+1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md verified, INBOX.md re-checked for decision (none posted)
+2. ✅ **State remains stable** — No changes since Session 3755 (05:54 UTC)
+3. ✅ **Final checkpoint scheduled** — Wakeup at ~07:29 UTC (87 min from now; harness cache constraint)
+   - If decision posted → execute immediately
+   - If no decision by 07:29 UTC → post Discord escalation before 08:00 UTC hard deadline
+
+**Critical decision timeline**:
+- **Current time**: 06:01:44 UTC
+- **Final checkpoint**: ~07:29 UTC (hard deadline buffer)
+- **Hard deadline**: 08:00 UTC
+- **Escalation window**: 07:29–08:00 UTC
+
+**All three recovery paths remain fully staged**:
+- **Option A** (fix HMM warmup + idempotency): 80–100 min, ready for immediate execution
+- **Option B** (checkpoint query): <5 min, ready
+- **Option C** (observe mode): ready
+
+**Effort this session**: <1 min (status verification + wakeup scheduling)
+**Budget remaining**: ~199,990/200,000 tokens
+
+---
+
 ## Session 3755 (June 17 05:54 UTC — CONTINUATION CHECKPOINT; STANDING BY; NO DECISION YET; FINAL CHECKPOINT 07:45 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; ALL EXECUTION PATHS STAGED & READY**
