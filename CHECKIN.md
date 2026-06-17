@@ -1,8 +1,30 @@
 # Check-in Summary
 
-## Session 3816 — Day 7 Checkpoint Contingency Framework Completed (June 17 19:30–21:00 UTC)
+## Session 3816 — Exploration Queue Items 2 + 3 Completed (June 17 19:30–21:15 UTC)
 
-**Status**: ✅ **EXPLORATION QUEUE ITEM 3 COMPLETED — RESISTANCE-RESEARCH DAY 7 CHECKPOINT CONTINGENCY FRAMEWORK PRODUCTION-READY**
+**Status**: ✅ **BOTH ITEMS COMPLETED — DECISION SUPPORT FRAMEWORK + CONTINGENCY EXECUTION PLAN READY FOR USER**
+
+### Item 2: ✅ stockbot Validation Failure Root Cause Deep Dive (20:56–21:15 UTC)
+
+**CRITICAL DISCOVERY**: HMM warm-up is a PASS-THROUGH masker — it does NOT cause SIGNAL_DROPOUT. June 16 dropout was caused by MTF frozen-features bug (already fixed Session 3689). HMM regime=None is a **quality issue** (Lever B bear-regime protection unavailable), not a safety blocker.
+
+**Comprehensive validation audit completed** — all findings verified against actual code (not speculation):
+
+1. **HMM Root Cause (VERIFIED)**: Priming code already exists; Option A is robustness improvement (~20 lines). Both HMM state layers fire at bar 60 IF priming succeeds. Silent exception handling could abort priming; HMM would take 30 minutes to warm up during live trading. Fix scope: extend fetch window 90→120 days, use bulk_update for priming, elevate errors to ERROR log, add post-prime assertion. **Effort: 40-45 min**.
+
+2. **Order-ID Idempotency (VERIFIED)**: Within-cycle retries use stable client_order_id (OrderTracker persists DB correctly). **Gap**: SELL path lacks broker-level open-order guard (BUY has it; SELL doesn't). Fix scope: ~15 lines, mirror BUY guard. **Effort: 25-30 min**.
+
+3. **Fix Feasibility**: Total implementation 65-75 minutes (within 80-100 estimate). Risk 2-3/10. Edge cases covered (market gaps, HMM convergence).
+
+4. **June 18 Validation Plan**: Docker log patterns documented. Success criteria: Both sessions log priming + ≥1 non-HOLD signal + zero SIGNAL_DROPOUT. Contingency: If regime=None at 14:30 UTC, fall back to Option B (disable HMM).
+
+5. **Confidence Assessment**: **Option A overall: 78%** (HMM 88%, SELL guard 93%, signal gen 80%). Primary risks: (30%) unknown 3rd cause, (20%) priming fetch fails, (12%) models HOLD all day. vs Option B: 88% but loses Lever B. vs Option C: 60%.
+
+**Critical pre-June-18 check**: Active-sessions.json still has `hmm_regime_masking: true`. Session 3804 did emergency disable at Jetson config level (not repo). **MUST VERIFY** live Jetson config matches intended state before market open.
+
+**Deliverable**: `VALIDATION_FAILURE_DEEP_DIVE_FINDINGS.md` (5,200 words) — comprehensive audit with code references, assumption tables, fix feasibility breakdown, June 18 log patterns, confidence scoring. **Ready for user review before 22:00 UTC decision deadline.**
+
+### Item 3: ✅ resistance-research Day 7 Checkpoint Contingency Framework (20:48–20:56 UTC)
 
 **What Happened**:
 

@@ -2,6 +2,24 @@
 
 ---
 
+## June 17, 2026 — Day 7 Checkpoint Contingency Execution Framework — Three Deliverable Files
+
+**Task**: Stage the Day 7 Checkpoint Contingency Execution Framework for resistance-research Phase 2 Wave 1-2. Produce three production-ready markdown files governing the June 17-18 checkpoint routing decision and Phase 2 activation.
+
+**Files produced**:
+
+- `DAY_7_CHECKPOINT_EXECUTION_DECISION_FRAMEWORK.md` (~2,800 words) — Three-branch decision tree (STRONG ≥3 replies / MODERATE 1-2 replies / WEAK 0 replies) with full Phase 2 activation routing per branch. Includes five key decision points with go/no-go criteria, timeline estimates per branch (STRONG: 15 days / MODERATE: 18 days / WEAK: 28 days to T+14 gate), and contingency procedures for communication failure, Gist 404, SCOTUS rapid-response override, Senate Finance markup closure, and personnel change.
+
+- `PHASE_2_ACTIVATION_ROUTING_MATRIX.md` (~1,900 words) — Maps engagement strength to Phase 2 domain selection for Domains 59, 51, 48 (active) and 49-50, 57 (queued). Per-domain activation tables with exact Tier 2 contact queues, send windows, pre-staged template references, and resource allocation scenarios (full: ~25h / selective: ~14-18h / minimum: ~5-6h).
+
+- `DAY_7_CHECKPOINT_MEASUREMENT_DASHBOARD_TEMPLATE.md` (~1,700 words) — Structured data-collection framework with raw metrics tables per domain, constituency analysis by organizational type (economic policy / women-caregiving / campaign finance / criminal justice), success probability forecasting (Domain 59 P(STRONG by T+14) ≈ 80-85% given 2 MODERATE replies with internal forwarding; Domain 51 P(STRONG at T+7) ≈ 45-55%; Domain 48 ≈ 35-45%), and early-signal failure detection scorecard with escalation protocol.
+
+**Lead finding**: Domain 59 checkpoint is already past (T+8, June 17). Current state: 2 MODERATE replies (CBPP + MomsRising both forwarded internally), 0 STRONG, 0 bounces. Senate Finance override forces Domain 59 Tier 2 activation June 20-21 regardless of STRONG threshold. Domains 51 and 48 have not been sent yet — both Wave 1 packages are staged and awaiting user copy-paste. Their T+7 checkpoints will fall approximately June 24-25 after user sends.
+
+**Key routing output**: All three frameworks are consistent and interlocking. The dashboard feeds the decision framework, the decision framework routes to the activation matrix. No file requires the others to be read first — each stands alone, but the combined system eliminates all discovery delay at the moment engagement metrics arrive.
+
+---
+
 ## June 17, 2026 — Phase 3 Domain K Deep Research — Three Deliverable Files
 
 **Task**: Execute Phase 3 Domain K Judiciary Reform Deep Research for November 4, 2026 Phase 3 launch. Produce three structured markdown deliverables synthesizing existing Domain K research with new deep analysis.
