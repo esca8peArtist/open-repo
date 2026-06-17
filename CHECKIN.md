@@ -1,6 +1,35 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3718 — June 16 23:54 UTC — STANDING BY CONFIRMED; FINAL COUNTDOWN TO DEADLINE)
+## Since Last Check-in (Session 3719 — June 17 00:06 UTC — STANDING BY CONFIRMED; DEADLINE IN ~8h)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — FINAL VERIFICATION COMPLETE; CRITICAL DECISION DEADLINE: JUNE 17 08:00 UTC (8h REMAINING)**
+
+**Session Actions**:
+1. ✅ **Orientation verified** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md all current
+2. ✅ **Time verification** — Current time: June 17 00:06 UTC (via session start); deadline June 17 08:00 UTC (8h 0m remaining)
+3. ✅ **Decision status** — Zero new user decisions in INBOX.md since Session 3718 (23:54 UTC)
+4. ✅ **Decision materials confirmed** — All three runbooks staged and ready:
+   - OPTION_A_RECOVERY_IMPLEMENTATION_RUNBOOK.md (32K, Jun 16 21:11 UTC) — Fix both issues, 3-4h implementation, 13:30-20:00 UTC validation
+   - OPTION_B_HISTORICAL_DATA_GATE_ASSESSMENT.md (24K, Jun 16 21:12 UTC) — Skip live validation, use historical data
+   - OPTION_C_INVESTIGATION_ROADMAP.md (26K, Jun 16 21:13 UTC) — Detailed investigation protocol
+5. ✅ **Block status** — All 5 active blocks unchanged (no new blocks, no resolutions since Session 3718):
+   - **stockbot**: Awaiting user A/B/C decision (deadline June 17 08:00 UTC) — support materials staged
+   - **cybersecurity-hardening**: VeraCrypt pre-boot restart (manual — cannot auto-verify)
+   - **mfg-farm**: Test print execution (manual — cannot auto-verify)
+   - **open-repo**: Awaiting runtime/platform decisions (Docker vs systemd)
+   - **systems-resilience**: Awaiting platform choice (Nextcloud+Matrix vs Discourse; deadline passed June 15 23:59 UTC)
+6. ✅ **Deployment readiness** — All materials staged; orchestrator ready for immediate dispatch (within 30 min) upon user decision
+
+**Interpretation**: Standing-by state is **correct by design**. All autonomous work exhausted. Orchestrator is ready and waiting for user direction on stockbot A/B/C with **~8 hours remaining before deadline**. No other unblocked projects available.
+
+**Critical Action Needed**: 
+- **User must provide stockbot decision (A/B/C) by June 17 08:00 UTC** — only 8 hours remaining
+- Decision should be posted to INBOX.md as a new item (format: "STOCKBOT DECISION: OPTION A" or "OPTION B" or "OPTION C")
+- Upon decision receipt, orchestrator will dispatch chosen recovery path immediately
+
+---
+
+## Session 3718 — June 16 23:54 UTC — STANDING BY CONFIRMED; FINAL COUNTDOWN TO DEADLINE
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — FINAL VERIFICATION COMPLETE; DEADLINE IN ~8h 6m**
 
