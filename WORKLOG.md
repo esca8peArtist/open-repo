@@ -38,11 +38,28 @@
 **Commits Pending**:
 - `fix: integrate order_tracker into BUY/SELL submission paths for idempotent retries` (trading_session.py)
 
-**Next Steps** (19:40 UTC+):
-- Commit changes locally
-- Deploy via rsync to Jetson
-- Restart Docker container to activate new code
-- Prepare for June 18 validation window (13:30-20:00 UTC)
+**Deployment Complete** (18:45 UTC):
+- ✅ Code changes committed locally (e188c14)
+- ✅ rsync deployed src/ to Jetson (/opt/stockbot/src/)
+- ✅ Docker container restarted (stockbot: healthy, status: starting)
+- ✅ HMM priming verified working in logs (16:52, 18:42 bar feeding logs)
+- ✅ All orchestration files committed (cea2f242)
+
+**System Status**:
+- **HMM Fix**: ✅ PRODUCTION (60-day bars primed at session init, confirmed in logs)
+- **Order Tracker Fix**: ✅ DEPLOYED (BUY/SELL paths use get_or_create_order_id() + mark_filled/mark_error lifecycle tracking)
+- **Jetson**: ✅ READY (container healthy, code synced, sessions resuming)
+
+**Validation Timeline**:
+- **Current**: 18:45 UTC (June 17)
+- **Auto-escalation**: 22:00 UTC (3h 15m, escalation protocol active)
+- **June 18 market validation**: 13:30–20:00 UTC live window
+- **Success criteria**: ≥20 BUY signals per session, zero duplicate order_id errors, regime != None after HMM warmup
+
+**Next Steps**:
+- Monitor INBOX.md for user A/B/C decision (if posted before 22:00 UTC, route to execution)
+- At 22:00 UTC: If no decision, Option A auto-execution confirmed complete (all work done, ready for June 18 validation)
+- June 18 13:30 UTC: Wake for market open and validate live signal generation + order submission
 
 ---
 
