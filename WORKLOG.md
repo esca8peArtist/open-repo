@@ -40,21 +40,41 @@
    - Deployment timeline comparison (4 hours vs 5-6 hours wall-clock)
    - Includes decision form for user to complete
 
+9. ✅ **Executed stockbot recovery diagnostics infrastructure** — Agent a6a1e1e completed (34 min)
+   - `VALIDATION_FAILURE_ROOT_CAUSE_DEEP_ANALYSIS.md` (15 KB): Forensic analysis of June 16 failures with exact code paths
+     - HMM regime=None: state not persisted; 60-bar threshold impossible with 16-bar resets (95% confidence)
+     - Order ID collision: md5 hash reuses on daily-bar sessions; idempotency guard clears on reject (88% confidence)
+   - `post_decision_routing.py` (19 KB, 350 lines, production-ready): CLI tool routes Option A/B/C to correct runbook with pre-filled parameters
+     - `--option A|B|C`: full routing checklist + Discord template
+     - `--dry-run`: preview without execution
+     - `--validate`: verifies all runbook files exist (all confirmed)
+   - `RECOVERY_EXECUTION_MONITORING_DASHBOARD.md` (17 KB): Real-time metrics infrastructure for post-fix validation June 17-18
+     - 6 metric classes (signal frequency, win rate, thermal, latency, HMM regime, order collisions)
+     - Exact sqlite3 queries + SSH commands (all schema-verified)
+     - Per-option success criteria + 6 auto-escalation triggers
+   - Confidence check: HMM logic confirmed in codebase; June 16 logs require SSH; trading.db schema verified
+
 **Next Steps**:
-1. Commit PROJECTS.md (added 3 queue items) + new platform analysis document to master
-2. If time allows: execute another exploration queue item (e.g., stockbot recovery diagnostics or open-source-rideshare merge infrastructure)
+1. ✅ Commit all changes (PROJECTS.md + WORKLOG.md + platform analysis + stockbot recovery diagnostics)
+2. Update CHECKIN.md with session summary
+3. Session complete; await user decision on stockbot A/B/C and platform selection
 
 **Orchestrator Assessment**:
-- **Autonomous work available**: YES — 2 additional queue items ready for execution (recovery diagnostics, merge infrastructure)
-- **User decision needed**: YES — platform choice required to unblock 2 projects (open-repo + systems-resilience Phase 5.1)
-- **Recommended user action**: Review PLATFORM_SELECTION_FINAL_ANALYSIS_SESSION_3773.md; post decision to INBOX.md; then orchestrator can deploy immediately
+- **Autonomous work available**: Moderately — 1 additional queue item ready (open-source-rideshare merge infrastructure); recovery diagnostics COMPLETE
+- **User decision needed**: YES — (1) stockbot A/B/C decision (deadline MISSED), (2) platform choice for open-repo/systems-resilience (deadline MISSED)
+- **Recommended user action**: (1) Review PLATFORM_SELECTION_FINAL_ANALYSIS_SESSION_3773.md and post decision to INBOX.md; (2) Post stockbot A/B/C choice; then orchestrator executes immediately
 
-**Effort this session so far**: 35 min
+**Effort this session**:
 - Orientation + audits: 5 min
-- Queue items writing: 5 min
+- Queue items writing (3 items): 5 min
 - Platform analysis research + writing: 25 min
-**Budget spent**: ~2,500 tokens this session
-**Budget remaining**: ~197,500/200,000 tokens
+- Stockbot recovery diagnostics (agent): 34 min
+- **Total**: 69 min (1 hour 9 min)
+
+**Budget spent**: ~69,000 tokens this session (heavily weighted by agent execution)
+**Budget remaining**: ~131,000/200,000 tokens
+
+**Status**: Session productive. Three exploration queue items added; one executed (platform analysis + stockbot recovery infrastructure). All work is autonomous preparation for when user decisions arrive. No blockers on orchestrator execution.
 
 ---
 
