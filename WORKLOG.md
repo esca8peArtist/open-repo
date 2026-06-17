@@ -1,3 +1,32 @@
+## Session 3753 (June 17 05:21–05:22 UTC — STANDING BY; NO DECISION YET; FINAL CHECKPOINT SCHEDULED 07:45 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; NO AUTONOMOUS WORK AVAILABLE**
+
+**Work This Session**:
+1. ✅ **Orientation complete** — Read INBOX.md, ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md. All state stable; no new stockbot decision posted.
+2. ✅ **CHECKIN.md updated** — New session entry with countdown and scheduling status
+3. ✅ **Final checkpoint scheduled** — ScheduleWakeup invoked for 07:45 UTC (15 min before deadline):
+   - If decision (A/B/C) posted by 07:45 UTC → execute immediately
+   - If no decision by 07:45 UTC → schedule final escalation to Discord
+
+**Critical Timeline**:
+- **Current time**: 05:21 UTC
+- **Final checkpoint**: 07:45 UTC (2h 24m away)
+- **Hard deadline**: 08:00 UTC (2h 39m away)
+- **Escalation window**: 07:45-08:00 UTC (if needed)
+
+**Execution readiness**: All three recovery paths fully staged:
+- **Option A** (fix both issues + deploy): Code paths verified, ready for 80–100 min execution
+- **Option B** (checkpoint query): Immediate execution, results in <5 min
+- **Option C** (observe mode): Monitoring setup ready for June 17 trading window
+
+**What changed this session**: Moved forward from Session 3752's 05:14 UTC escalation checkpoint to current 05:21 UTC standing-by state. No substantive changes — confirming automated wakeup cycle is functioning.
+
+**Effort this session**: 1 min (orientation + CHECKIN/WORKLOG updates + ScheduleWakeup)
+**Budget remaining**: ~199,950/200,000 tokens
+
+---
+
 ## Session 3750 (June 17 04:58–05:08 UTC — STANDING BY; OPTION A PRE-FLIGHT CHECK COMPLETE; NEXT WAKEUP AT 05:52 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; ALL RECOVERY PATHS READY FOR IMMEDIATE EXECUTION**

@@ -1,5 +1,26 @@
 # Check-in Summary
 
+## Since Last Check-in (Session 3753 — June 17 05:21–05:22 UTC — STANDING BY; NO DECISION POSTED; FINAL CHECK SCHEDULED 07:45 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; FINAL CHECKPOINT SCHEDULED 07:45 UTC (2h 39m TO DEADLINE)**
+
+**Session Actions** (3753):
+1. ✅ **Orientation** — Verified INBOX.md: no new stockbot decision posted since Session 3752
+2. ✅ **State verified stable** — BLOCKED.md, PROJECTS.md, WORKLOG.md all confirmed (standby state correct)
+3. ✅ **Final checkpoint scheduled** — ScheduleWakeup invoked for 07:45 UTC (15 min before 08:00 UTC deadline) to:
+   - Check INBOX.md for decision (Option A/B/C)
+   - If decision present → execute immediately (Option A: 80–100 min fix+deploy+test, Option B: checkpoint query, Option C: observe mode)
+   - If decision absent → schedule 07:50 UTC escalation to Discord and remain monitoring
+
+**Critical Countdown**:
+- **Current time**: 05:21 UTC
+- **Final checkpoint**: 07:45 UTC (2h 24m away)
+- **Hard deadline**: 08:00 UTC (2h 39m away)
+
+**Standing-by status**: Correct. All autonomous work blocked on stockbot decision. Recovery paths fully staged and ready for immediate execution.
+
+---
+
 ## Since Last Check-in (Session 3752 — June 17 05:14–05:16 UTC — FINAL WAKEUP CHECKPOINT; NO DECISION POSTED; ESCALATION SCHEDULED 07:50 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT DECISION; ESCALATION CHECKPOINT ACTIVE (2h 46m TO DEADLINE)**
