@@ -6188,3 +6188,29 @@ All 5 sessions will:
 
 **Effort this session**: 17 min (forensic investigation + diagnostic report + BLOCKED.md update)  
 **Budget remaining**: 199,983/200,000 tokens (~0.1% of session allocation used)
+
+---
+
+### Session 3748 Final Status (June 17 04:46 UTC)
+
+**⏰ STOCKBOT DECISION DEADLINE: 08:00 UTC (3h 13m remaining)**
+
+**Orchestration State**: ✅ **STANDING BY — READY FOR IMMEDIATE EXECUTION**
+
+**Materials Verified Production-Ready**:
+- ✅ Stockbot diagnostic (`JUNE_16_DIAGNOSIS_AND_FIXES.md`) — root causes identified, fixes staged, code sketches copy-paste ready
+- ✅ Resistance-research Phase 2 Wave 1 — all 3 domains (51/48/59) verified complete, gists live (HTTP 200), templates staged
+- ✅ All git history committed to master
+- ✅ WORKLOG.md, CHECKIN.md, PROJECTS.md all current and synchronized
+
+**Awaiting**: User A/B/C decision (post to INBOX.md with chosen option)
+
+**Next Actions**:
+- **If Option A selected by 08:00 UTC**: Apply both fixes (HMM warmup + order ID idempotency), run tests, deploy to Jetson, validate June 17 13:30-20:00 UTC
+- **If Option B selected by 08:00 UTC**: Run checkpoint query on historical fills, classify gate outcome, determine routing
+- **If Option C selected by 08:00 UTC**: Run fixes in observe mode, monitor signal/order logs June 17
+
+**Execution readiness**: All three paths 100% staged and ready for immediate execution upon decision notification.
+
+**Contingency**: If no decision posted by 08:00 UTC, orchestrator will escalate to Discord and remain standing by.
+
