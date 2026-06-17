@@ -1,3 +1,51 @@
+## Session 3830 (2026-06-17 23:02–23:50 UTC — EXPLORATION QUEUE: EXIT MODEL DATA PIPELINE PRE-STAGING)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM 1 COMPLETE — PHASE 3B TRAINING INFRASTRUCTURE READY**
+
+**Work Completed** (23:02–23:50 UTC):
+- ✅ **Autonomous Work Executed**: Exploration Queue Item 1 (2-3h scope) — "Exit Model Data Pipeline & Feature Engineering Pre-Staging"
+  - **Agent Assignment**: Stockbot agent spawned to design and implement Phase 3b training infrastructure
+  - **Deliverables** (4/4 complete):
+    1. `exit_data_extraction.py`: Extracts AAPL BUY→SELL round trips from trading.db → CSV. Reports readiness (currently 2/50 trades).
+    2. `exit_feature_builder.py`: Builds 13-feature matrix (6 entry + 5 exit + 2 outcome). Chronological split with no-future-leak guarantee.
+    3. `test_exit_feature_pipeline.py`: 29 comprehensive tests (extraction, delta_pnl, split validation, feature builder). All pass.
+    4. `PHASE_3B_EXIT_MODEL_ROADMAP.md`: Design sketch, complete feature table, split algorithm, ΔPnL formula, integration guide.
+
+**Key Implementation Details**:
+- **Exit Data Model**: FIFO pairing within (ticker, strategy_name) groups. Output CSV: [entry_timestamp, entry_price, exit_timestamp, exit_price, pnl_realized, holding_bars, strategy_name, model_id, quantity]
+- **13-Feature Matrix**: Entry features (regime, zscore, atr14_norm, rsi14, vol_ratio20, bb_pos) + Exit features (regime, rsi14, atr14_norm, unrealized_pct, momentum) + Outcome features (holding_bars, delta_pnl_per_bar)
+- **ΔPnL Calculation**: pnl_realized / max(holding_bars, 1) — units are dollars-per-bar, directly measuring exit timing efficiency
+- **Chronological Split**: 80/20 train/val split with strict assertion `assert max(train.exit_ts) < min(val.exit_ts)` — no future-leak possible
+- **Current DB State**: 2 AAPL round trips present (Jan 2026 + Apr 2026). Pipeline reports "NOT READY: 2 found, need 50" and waits for Phase 4 validation to accumulate 48+ more.
+
+**Test Results**:
+- ✅ 29 new tests: 8 extraction + 6 delta_pnl + 7 chronological_split + 8 feature_builder
+- ✅ Full test suite: 299 pass, 1 pre-existing unrelated failure (active sessions config)
+- ✅ No regressions introduced
+
+**Phase 3b Readiness Status**:
+- ✅ Data extraction pipeline operational and tested
+- ✅ Feature engineering complete (13 features, exceeds ≥12 requirement)
+- ✅ Chronological split with no-future-leak guarantee
+- ✅ Documentation complete with activation commands
+- **⏳ Trigger condition**: 50+ AAPL round trips (will accumulate during June 18 13:30-20:00 UTC market validation)
+- **🎯 Post-validation action**: Run `uv run python scripts/exit_feature_builder.py --csv data/aapl_exit_training.csv --validate-split`, then initiate Phase 3b exit-model training
+
+**Protocol Compliance**:
+- ✅ Identified no autonomous work available until June 18 validation window
+- ✅ Checked Exploration Queue — confirmed 3+ items ready (Items 1,5,6,7)
+- ✅ Executed Item 1 (non-contingent pre-staging work that unblocks downstream Phase 3)
+- ✅ All code committed to stockbot submodule
+
+**Next Steps**:
+- ⏳ June 18 13:30-20:00 UTC: Market validation window (will accumulate 50+ AAPL trades)
+- ⏳ June 18 20:15 UTC: Post-market analysis (Exploration Queue Item 5 — Phase 4 decision)
+- 🚀 **Post-validation trigger**: Once 50 AAPL trades present, execute exit-feature extraction and begin Phase 3b training
+
+**Effort**: 48 minutes (stockbot agent execution + orchestration commit)
+
+---
+
 ## Session 3829 (2026-06-17 22:49–23:55 UTC — VALIDATION FAILURE ANALYSIS & RISK MITIGATION)
 
 **Status**: ✅ **OPTION A RISK VALIDATION COMPLETE — READY FOR JUNE 18 MARKET WINDOW**

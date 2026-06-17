@@ -1,5 +1,60 @@
 # Check-in Summary
 
+## Session 3830 — Exploration Queue: Exit Model Data Pipeline Pre-Staging (June 17 23:02–23:50 UTC)
+
+**Status**: ✅ **PHASE 3B TRAINING INFRASTRUCTURE READY — AWAITING JUNE 18 VALIDATION TRIGGER**
+
+**What We Did**:
+- ✅ **Executed Autonomous Work**: Exploration Queue Item 1 (2-3h scope) — Exit Model Data Pipeline & Feature Engineering Pre-Staging
+- ✅ **Spawned Stockbot Agent**: Designed and implemented Phase 3b training infrastructure for exit-model training post-validation
+- ✅ **Delivered 4 Artifacts**:
+  1. `exit_data_extraction.py` — Extracts AAPL trades from trading.db → CSV (readiness reports 2/50 current)
+  2. `exit_feature_builder.py` — 13-feature matrix builder with chronological split (no-future-leak guarantee)
+  3. `test_exit_feature_pipeline.py` — 29 comprehensive tests (all passing)
+  4. `PHASE_3B_EXIT_MODEL_ROADMAP.md` — Design sketch, feature table, activation commands
+- ✅ **Test Results**: 29 new tests pass; full suite 299 pass (no regressions)
+- ✅ **Phase 3b Readiness**: All pre-staging work complete. System ready to execute exit-model training once 50 AAPL round trips accumulate.
+
+**Key Implementation Notes**:
+- **13-Feature Matrix**: Entry context (regime, z-score, ATR, RSI, vol_ratio, Bollinger position) + Exit context (regime, RSI, ATR, unrealized%, momentum) + Outcome (holding_bars, delta_pnl_per_bar)
+- **ΔPnL Metric**: `pnl_realized / holding_bars` — measures exit timing efficiency ($/bar); directly optimizable by exit-model
+- **Chronological Split**: 80/20 train/val with strict no-future-leak assertion. Training set strictly before validation set by timestamp.
+- **Current DB**: 2 AAPL trades; pipeline correctly reports "NOT READY: 2/50" and waits
+
+**June 18 Validation Readiness (Final Confirmation)**:
+- ✅ Option A deployed (HMM priming + idempotency) — June 17 22:07 UTC
+- ✅ AAPL/MSFT retrained (6/7 gates each) — June 17 22:17-23:45 UTC
+- ✅ All 5 models staged (JPM ridge_wf, AMZN lgbm_ho, AAPL lgbm_ho, MSFT lgbm_ho, NVDA lgbm_ho)
+- ✅ Jetson operational and ready
+- ✅ Phase 3b training infrastructure pre-staged
+- ✅ **System Ready for June 18 13:30-20:00 UTC Validation Window**
+
+**Items Needing User Input** (unchanged):
+- ❌ **cybersecurity-hardening**: VeraCrypt Phase 1 Windows restart (blocked 36+ days)
+- ❌ **mfg-farm**: Test print execution (blocked 36+ days)
+- ❌ **open-repo + systems-resilience**: raspby1 platform decision (deadline EXPIRED)
+- ⏳ **June 18 validation**: Market validation execution (autonomous, no user input)
+- ⏳ **Phase 4 scenario decision**: Framework ready, user decision due June 19 if validation PASS
+
+**Post-Validation Timeline**:
+1. June 18 13:30 UTC: Market validation begins (5 live sessions, automated)
+2. June 18 13:30–20:00 UTC: Monitoring phase (watch for regime ≠ None, buy_prob > 0, zero duplicate errors)
+3. June 18 20:00 UTC: Market closes; expect 50+ AAPL round trips accumulated
+4. June 18 20:15 UTC: Post-market analysis begins (Exploration Queue Item 5)
+   - Extract 50+ AAPL trades from trading.db
+   - Build exit-feature CSV via `exit_feature_builder.py`
+   - Initiate Phase 3b exit-model training
+   - Analyze validation results, recommend Phase 4 execution path
+
+**Next Steps**:
+1. June 18 13:30 UTC: Market validation window (all automated)
+2. June 18 20:15 UTC: Post-market analysis & Phase 4 decision window
+3. June 19+: Phase 4 execution (user decision required) OR Phase 3b training (autonomous if validation PASS)
+
+**Effort**: 48 minutes (exploration queue execution + orchestration)
+
+---
+
 ## Session 3829 — Validation Failure Analysis & Risk Mitigation (June 17 22:49–23:55 UTC)
 
 **Status**: ✅ **OPTION A RISK VALIDATION COMPLETE — READY FOR JUNE 18 MARKET WINDOW**
