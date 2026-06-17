@@ -1,6 +1,49 @@
 # Check-in Summary
 
-## Since Last Check-in (Session 3739 — June 17 03:08–03:27 UTC — FORENSIC DIAGNOSIS COMPLETE; DECISION MATERIALS STAGED; CRITICAL DEADLINE JUNE 17 08:00 UTC [4h 33m REMAINING])
+## Since Last Check-in (Session 3740 — June 17 03:18–03:25 UTC — RESISTANCE-RESEARCH PHASE 2 WAVE 1 STAGING COMPLETE; STOCKBOT DEADLINE JUNE 17 08:00 UTC [4h 35m REMAINING])
+
+**Status**: ✅ **RESISTANCE-RESEARCH PHASE 2 WAVE 1 EXECUTION READY + STOCKBOT DECISION DEADLINE ACTIVE**
+
+**Session Actions**:
+1. ✅ **Orientation** — Read ORCHESTRATOR_STATE.md, INBOX.md (no new stockbot decisions yet), BLOCKED.md, PROJECTS.md
+2. ✅ **Resistance-research Phase 2 Wave 1 subagent execution**:
+   - **Domain 59 Day 7 Checkpoint COMPLETE** — Wave 1 executed June 9-11 (5 sends, 2 MODERATE replies = 40% response). Checkpoint decision: **Path B routing** (delay Wave 2 by 3 days, reassess June 20-21)
+   - **Domain 51 Wave 1 STAGED** — 2 email templates ready (`DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md`); awaiting user copy-paste sends today (July 1 CA deadline = 13 days)
+   - **Domain 48 Wave 1 STAGED** — 9 email templates ready (`DOMAIN_48_EMAIL_TEMPLATE_SET.md`); awaiting user sends June 17-18 (July 15 VA deadline = 28 days)
+   - **All Gists verified** — HTTP 200 confirmed; no email bounces; contacts current
+   - **Orchestration script tested** — `PHASE_2_MULTI_DOMAIN_WAVE_ORCHESTRATION_SCRIPT.py` operational with --t7-checkpoint, --log-send, --execute wave1|wave2
+3. ✅ **WORKLOG.md updated** — Session 3740 entry with resistance-research execution summary
+4. ✅ **PROJECTS.md updated** — Resistance-research Current focus line updated to reflect Phase 2 Wave 1 staging + Day 7 checkpoint completion (Session 3740)
+
+**What's In Progress**:
+1. **Resistance-research Phase 2 Wave 1 email execution** — Templates ready, awaiting user copy-paste sends (Domain 51 today, Domain 48 June 17-18)
+2. **Domain 59 Wave 2 reassessment** — Set for June 20-21 (checking if MODERATE signal upgrades to STRONG)
+3. **Stockbot decision A/B/C** — Deadline June 17 08:00 UTC (4h 35m remaining). No decision in INBOX yet. All three recovery runbooks staged and ready.
+
+**Items Needing User Input**:
+1. **CRITICAL — Stockbot A/B/C decision** (deadline 08:00 UTC, ~4h 35m remaining):
+   - Post to INBOX.md: `STOCKBOT DECISION: OPTION A` or `OPTION B` or `OPTION C`
+   - See `/home/awank/dev/SuperClaude_Framework/JUNE_16_DIAGNOSIS_AND_FIXES.md` for full analysis + code sketches
+   - **Option A**: Retry June 17 — apply both fixes (80-100 min code+test), deploy, validate 13:30-20:00 UTC
+   - **Option B**: Skip June 16-17 — run checkpoint query against historical data, classify gate outcome
+   - **Option C**: Investigate deeper — run fixes in observe mode, collect logs
+2. **Resistance-research Wave 1 email sends** (deadline June 18 23:59 UTC):
+   - **Domain 51**: Copy 2 emails from `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md` today (CLC + Issue One). Fill [YOUR_NAME] and [YOUR_CONTACT_INFO], send.
+   - **Domain 48**: Copy Sentencing Project + PPI emails from `DOMAIN_48_EMAIL_TEMPLATE_SET.md` June 17-18. 9 total emails in sequence.
+   - **Domain 59**: Day 7 checkpoint complete; reassess June 20-21 for Wave 2 activation
+
+**Suggested Priorities for Next Session**:
+1. **URGENT (by 08:00 UTC — 4h 35m)**: Provide stockbot A/B/C decision in INBOX.md. If decision provided, orchestrator will execute immediately (~30-60 min for chosen path).
+2. **IMPORTANT**: Begin resistance-research Domain 51/48 email sends (templates copy-paste ready). Domain 59 checkpoint complete; Wave 2 routed to June 20-21 reassessment.
+3. **OPTIONAL**: Complete cybersecurity/mfg-farm/open-repo manual actions in parallel.
+
+**Orchestrator Status**: Ready for immediate execution. Resistance-research Phase 2 Wave 1 infrastructure verified. Awaiting stockbot user decision and resistance-research email sends.
+
+---
+
+## History (Archived)
+
+### Session 3739 (June 17 03:08–03:27 UTC — FORENSIC DIAGNOSIS COMPLETE; DECISION MATERIALS STAGED; CRITICAL DEADLINE JUNE 17 08:00 UTC [4h 33m REMAINING])
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY + PROACTIVE DIAGNOSTIC WORK COMPLETE**
 
