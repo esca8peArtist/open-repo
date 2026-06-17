@@ -46,10 +46,24 @@
 - 🛑 stockbot A/B/C decision — Auto-escalation at 22:00 UTC (8h 9m remaining)
 - ⏸️ resistance-research emails, cybersecurity-hardening VeraCrypt, mfg-farm test print, platform decisions — all awaiting user action
 
-**Session Budget**: ~200k tokens available; ~35k tokens used for three parallel agents; ~165k remaining
+4. ✅ **stockbot: Exit Model Training Data Readiness Assessment** (Complete)
+   - **Deliverables committed**:
+     * `EXIT_MODEL_TRAINING_DATA_READINESS_CHECKLIST.md` — Six-section monitoring framework (SQL queries corrected for actual schema), data quality gates, bias detection
+     * `EXIT_MODEL_IMPLEMENTATION_ROADMAP.md` — Three-stage progression (A: 50 trips GradientBoosting, B: 100+ RandomForest, C: 150+ ensemble), realistic cadence projections
+     * `EXIT_MODEL_BACKTEST_EXECUTION_RUNBOOK.md` — Nine-step procedure, 70/30 chronological split, contingency paths (net-negative ΔPnL, sub-0.50 threshold, emergency live rollback)
+   - **Key findings**:
+     * Stage A projected June 27–30 (at 5-10 trips/day cadence)
+     * Stage B projected July 10–15
+     * Stage C projected July 22–28
+     * July 1 routing: if >= 150 trips compress to fast-path ensemble, if < 50 defer to July 15
+   - **Value**: De-risks Phase 3b pivot decision; data-driven assessment before 40+ hour training investment
+   - **Status**: Production-ready, committed
+
+**Session Budget**: ~200k tokens available; ~88k tokens used for four parallel agents; ~112k remaining
 
 **Next Steps**:
-- **19:00–21:00 UTC**: Monitor for systems-resilience background agent completion
+- **Continue queue execution** (if time permits before 22:00 UTC)
+- **~19:00–21:00 UTC**: Monitor for systems-resilience background agent completion
 - **Before 22:00 UTC**: Periodic INBOX.md checks for user A/B/C decision
 - **At 22:00 UTC**: If no decision, auto-escalation triggers → Option A executes autonomously (HMM + order-ID fixes + deploy)
 
