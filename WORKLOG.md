@@ -28,6 +28,40 @@
 **Effort this session**: 3m (orientation) + 146s (resistance-research agent verification) = 5m total  
 **Budget remaining**: ~199,000/200,000 tokens
 
+---
+
+## Session 3742 (June 17 03:38–03:48 UTC — STOCKBOT DEADLINE 4h 15m REMAINING; RESISTANCE-RESEARCH VERIFIED READY)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — AWAITING STOCKBOT A/B/C DECISION (DEADLINE 08:00 UTC)**
+
+**Work This Session**:
+1. ✅ **Full orientation from ORCHESTRATOR_STATE.md** — Session 3741 checkin confirmed; stockbot decision deadline 08:00 UTC (4h 15m from 03:48 UTC); resistance-research Phase 2 Wave 1 verified ready
+2. ✅ **Resistance-research Phase 2 Wave 1 verification** — Confirmed all materials production-ready:
+   - **Domain 51 Wave 1**: Email 1 (Campaign Legal Center — echlopak@campaignlegalcenter.org) + Email 2 (Issue One — info@issueone.org). Both templates copy-paste ready. Gist: ✅ HTTP 200 accessible.
+   - **Domain 48 Wave 1**: 9-email set (Sentencing Project, PPI, Brennan Center, Worth Rises, CLC, M4BL, NAACP LDF, ACLU VA, Fines & Fees Justice Center). All templates copy-paste ready. Gist: ✅ HTTP 200 accessible.
+   - **User action required**: Fill [YOUR_NAME] and [YOUR_CONTACT_INFO] in each template, send per contact stratification in DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md and DOMAIN_48_EMAIL_TEMPLATE_SET.md
+3. ✅ **Gist URL verification** — Both Gist URLs verified HTTP 200 and accessible (Domain 51: 6dce895c5192e6a3ba2abfed40733372, Domain 48: 00c1423e3da7bb4693fa285ec87f18a8)
+4. ⏳ **Stockbot decision status** — No new INBOX.md entry with A/B/C choice as of 03:48 UTC. Deadline: June 17 08:00 UTC (4h 15m remaining). All recovery runbooks staged and ready for immediate execution upon decision.
+
+**Critical Status**:
+- **Stockbot**: Decision deadline 08:00 UTC (4h 15m remaining). User action required: Post to INBOX.md `STOCKBOT DECISION: OPTION A` (or B/C)
+- **Resistance-research Domain 51**: Send Window = June 14-30 (user can send anytime, today recommended). Hard deadline = July 1 (14 days).
+- **Resistance-research Domain 48**: Send Window = June 16-20 (user can send today/tomorrow). Hard deadline = July 15 (28 days).
+- **Resistance-research Domain 59**: Day 7 checkpoint COMPLETE; Path B routed (delay Wave 2 to June 20-21 reassessment). No action required from user until June 20-21 reassessment window.
+
+**Findings**:
+- All resistance-research Phase 2 Wave 1 templates verified production-ready and copy-paste ready
+- Both Gist URLs verified HTTP 200 and accessible (confirmed June 17 03:47 UTC)
+- Stockbot decision materials all staged; three recovery paths (A/B/C) ready for immediate execution upon user decision
+- No other autonomous work available (all projects blocked on external user actions or decisions)
+
+**Next Step**:
+1. **URGENT (by 08:00 UTC)**: User provides stockbot A/B/C decision in INBOX.md. If provided, orchestrator will execute chosen recovery path immediately (3-4h for Option A, 30-60m for Options B/C).
+2. **IMPORTANT**: User copies and sends Domain 51 + 48 email templates (2-4h total execution, can be done in parallel with stockbot decision deadline).
+
+**Effort this session**: 10m (orientation, template verification, Gist URL checks, WORKLOG update)  
+**Budget remaining**: ~198,500/200,000 tokens
+
 **Next immediate action**: (1) Monitor INBOX for stockbot A/B/C decision. If received by 08:00 UTC, execute immediately. (2) User can begin resistance-research Phase 2 Wave 1 email sends at any time — all templates ready in DOMAIN_51/DOMAIN_48 execution packages (copy-paste [YOUR_NAME] and [YOUR_CONTACT_INFO]).
 
 ---
