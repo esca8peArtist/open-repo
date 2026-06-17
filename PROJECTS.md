@@ -158,6 +158,31 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - Owner: cybersecurity-hardening team
    - Confidence: 82% (security architecture stable; Linux-specific contingencies documented)
 
+5. **stockbot: Post-Validation Analysis & Phase 4 Execution** (2-3h)
+   - Trigger condition: June 18 13:30–20:00 UTC market validation window closes
+   - Scope: Analyze validation results (signal health, model performance, risk metrics), compare to baseline expectations, recommend Phase 4 execution path (immediate expansion vs staged or contingency), document validation audit trail
+   - Value: Enables rapid Phase 4 launch within 1-2 hours of validation closure; prevents post-validation analysis delays
+   - Deliverables: `JUNE_18_VALIDATION_OUTCOME_REPORT.md` (decision summary, metrics, Phase 4 recommendation), `PHASE_4_IMMEDIATE_EXECUTION_PLAN.md` (if PASS verdict)
+   - Owner: stockbot team
+   - Confidence: 92% (validation framework established, decision thresholds documented)
+
+6. **resistance-research: Domain 59 Tier 2 Reassessment & Send Staging** (2h)
+   - Trigger condition: June 19 (48h after Domain 59 Wave 1-2 checkpoint, before June 20-21 reassessment window)
+   - Scope: Review Wave 1-2 contact responses, assess Tier 2 activation readiness, prepare 3 send templates (EPI/Heidi Shierholz, Demos, NELP), coordinate with user for June 20-21 send window
+   - Value: Ensures June 25-30 Senate Finance deadline met without rushed execution; clear handoff for user copy-paste
+   - Deliverables: `DOMAIN_59_TIER_2_REASSESSMENT_SUMMARY.md` (readiness assessment, contact prepping notes), `DOMAIN_59_TIER_2_SEND_TEMPLATES.md` (3 pre-filled templates)
+   - Owner: resistance-research team
+   - Deadline: June 25-30 (Senate Finance CTC markup window)
+   - Confidence: 88% (Domain 59 Wave 1-2 complete; Tier 2 contacts pre-identified in PHASE_2_COALITION_CONTACT_MATRIX.md)
+
+7. **stockbot: June 16-17 Validation Failure Analysis & Option A Verification** (1-2h)
+   - Trigger condition: Post-June 18 validation window (background work during validation monitoring)
+   - Scope: Root cause analysis of June 16 signal dropout failure, document what was fixed in Option A HMM priming (vs what caused June 16 issue), verify all fix assumptions (regime detector state, bar feed completeness, scalar initialization), create validation evidence checklist
+   - Value: Risk mitigation — documents assumptions behind Option A choice, identifies any remaining HMM fragility before Phase 4 expansion
+   - Deliverables: `JUNE_16_VALIDATION_FAILURE_ROOT_CAUSE.md` (timeline, logs, root cause), `OPTION_A_ASSUMPTION_VALIDATION_CHECKLIST.md` (pre-Phase 4 verification)
+   - Owner: stockbot team
+   - Confidence: 78% (June 16 logs available; full root cause requires Docker log analysis)
+
 ---
 
 **REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). **✅ DOMAIN 59 COMPLETE** (Session 2839). Total remaining Phase 2 production estimate: 40-50 hours Q3 2026. Phase 1 path decided (Path A + Domain 37); Phase 2 research execution proceeds immediately or post-Wave-1; Domain 59 distribution activation ready June 5.

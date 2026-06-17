@@ -1,5 +1,46 @@
 # Check-in Summary
 
+## Session 3827 — Orchestrator Orientation & Post-Validation Queue Staging (June 17 23:47–24:00 UTC)
+
+**Status**: ✅ **ALL SYSTEMS READY FOR JUNE 18 VALIDATION — POST-VALIDATION QUEUE STAGED**
+
+**What We Did**:
+- ✅ **Orientation**: Read ORCHESTRATOR_STATE.md (generated 22:26 UTC), confirmed Option A deployed and standing by for market validation
+- ✅ **Block Verification**: Checked BLOCKED.md — 3 active blocks remain unchanged (cybersecurity-hardening VeraCrypt restart, mfg-farm test print, open-repo platform decision). No auto-resolvable blocks identified.
+- ✅ **Process INBOX.md**: No new user items to process (all prior items already distributed to projects)
+- ✅ **Assess Autonomous Work**: Confirmed all active projects blocked on external dependencies or awaiting June 18 validation window
+- ✅ **Exploration Queue Audit**: Items 2-3 complete (Session 3823), Item 1 blocked on trigger (50+ AAPL round trips). Added 3 new queue items for post-validation execution:
+  - Item 5: stockbot Post-Validation Analysis & Phase 4 Execution (trigger: June 18 20:00 UTC)
+  - Item 6: resistance-research Domain 59 Tier 2 Reassessment & Send Staging (trigger: June 19, deadline June 25-30)
+  - Item 7: stockbot June 16-17 Failure Analysis & Option A Verification (background work during validation monitoring)
+
+**June 18 Validation Readiness Final Checklist**:
+- ✅ Option A (HMM priming + order-ID idempotency) deployed 22:07 UTC Session 3825
+- ✅ AAPL model: Retrained 6/7 gates, feature-current
+- ✅ MSFT model: Retrained 6/7 gates, feature-current
+- ✅ All 5 validation models staged (JPM, AMZN, AAPL, MSFT, NVDA)
+- ✅ Jetson health confirmed operational
+- ✅ Validation window: June 18 13:30-20:00 UTC (13.5 hours away)
+- ✅ Success criteria documented: ≥5 trades/model, regime ≠ None, zero duplicate-order errors (40010001)
+
+**Post-Validation Path Readiness**:
+- ✅ Phase 4 scenario framework (3 documents, 62 KB) staged from Session 3823 — ready for immediate user decision if validation PASS
+- ✅ Phase 2 resistance-research infrastructure (3 documents, 53 KB) staged from Session 3823 — ready for June 20-21 user checkpoint decision
+- ✅ Exploration queue expanded with 3 new post-validation items — no decision-making delays expected
+
+**Items Needing User Input** (unchanged):
+- ❌ **cybersecurity-hardening**: VeraCrypt Phase 1 Windows restart (blocked 32+ days)
+- ❌ **mfg-farm**: Test print execution (blocked 35+ days)
+- ❌ **open-repo + systems-resilience**: raspby1 platform decision (deadline EXPIRED 24+ hours)
+- ⏳ **June 18 validation** (autonomous, no user input required) — market validation execution June 18 13:30-20:00 UTC
+- ⏳ **Phase 4 scenario decision** (user choice due June 19 if validation PASS) — framework ready
+
+**Next Trigger**: June 18 13:30 UTC market open → June 18 20:15 UTC post-market analysis & Phase 4 decision window activation
+
+**Effort**: 13 minutes (orientation + block verification + queue staging)
+
+---
+
 ## Session 3826 — AAPL/MSFT Retrain Execution (June 17 22:17–23:45 UTC)
 
 **Status**: ✅ **AAPL & MSFT RETRAINS COMPLETE — BOTH 6/7 GATES PASS, READY FOR JUNE 18 VALIDATION**
