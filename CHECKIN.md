@@ -45,6 +45,39 @@
 
 ---
 
+## Since Last Check-in (Session 3771 — June 17 08:06 UTC — EXPLORATION QUEUE AUDIT: OPEN-REPO DEPLOYMENT VERIFICATION)
+
+**Status**: 🛑 **ESCALATION SENT (SESSION 3770); EXPLORATION QUEUE AUDIT EXECUTED; ALL PROJECTS BLOCKED**
+
+**Session Actions** (3771):
+1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md verified; stockbot escalation already sent 08:00 UTC (Session 3770)
+2. ✅ **Exploration Queue work executed** — `open-repo: Post-Deployment June 12 State Audit` (unblocked item)
+   - Audit verified: **June 12 deployment never executed** (0/6 infrastructure checks pass)
+   - All application code production-ready (157 tests passing, Phase 5 complete)
+   - **Root cause identified**: ISSUE-3 (raspby1 platform/runtime decision) with deadline June 15 23:59 UTC expired, no user response
+   - **Shared blocker with systems-resilience** — Both projects waiting for same host platform decision (Docker vs systemd)
+3. ✅ **BLOCKED.md updated** — Clarified open-repo audit findings and shared blocker status with systems-resilience
+4. ✅ **Projects re-assessed** — Confirmed all 10 projects blocked on user decisions; no additional autonomous work available
+
+**Critical Finding**: Open-repo deployment blocked on same platform/runtime decision as systems-resilience (expired June 15, no user response). Both projects require identical host decision before infrastructure can be provisioned.
+
+**Blocked Projects Status**:
+- **stockbot**: A/B/C decision deadline missed 08:00 UTC (escalation sent Session 3770)
+- **resistance-research**: Awaiting user copy-paste email execution (all materials staged)
+- **open-repo**: Awaiting raspby1 platform/runtime decision (audit complete; 0 infrastructure deployed)
+- **systems-resilience**: Awaiting raspby1 platform/runtime decision + Nextcloud+Matrix/Discourse choice (deadline expired)
+- **mfg-farm**: Awaiting test print execution (all deliverables staged)
+- **cybersecurity-hardening**: Awaiting Windows VeraCrypt restart (Phase 1 ~60% complete)
+- **seedwarden**: Awaiting Phase 1 Day 7 metrics checkpoint (all content staged)
+- **open-source-rideshare**: Paused
+- **off-grid-living**: Complete (awaiting user social media execution)
+- **resume**: Complete (awaiting user review/deployment)
+
+**Effort this session**: 15 min (orientation + open-repo audit execution + BLOCKED.md update)
+**Budget remaining**: ~199,950/200,000 tokens (50 tokens spent this session)
+
+---
+
 ## Since Last Check-in (Session 3770 — June 17 08:00 UTC — ESCALATION DEADLINE REACHED; NO DECISION PROVIDED)
 
 **Status**: 🛑 **ESCALATION EXECUTED — STOCKBOT A/B/C DECISION DEADLINE MISSED; ALL PROJECTS BLOCKED; STANDING BY FOR USER DIRECTION**

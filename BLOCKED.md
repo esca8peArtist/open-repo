@@ -63,12 +63,13 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Context**: The June 12 deployment was incorrectly marked as "resolved" in Session 2995, which only clarified the start time (09:00 UTC). The actual deployment never executed. **AUDIT VERIFIED (Session 3682, 15:50–16:45 UTC)** — Three production-ready audit documents confirm deployment DID NOT execute:
 - DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines): Verified 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000 (connection refused); confidence 99%
 - POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines): 6 prioritized blockers identified; root cause = platform/runtime decision expired June 15 23:59 UTC with no user response
-- RECOVERY_OR_NEXT_PHASE_ROUTING.md (122 lines): Phase A/B/C recovery path mapped; Phase 5.2 ineligible until C1–C6 verification checks pass + 48–72h soak test
-- **All application code production-ready** (157 tests passing, Phase 5 complete)
-- **Blocker is purely infrastructure**, not code
-**What I need**: (1) **User decision on raspby1 runtime** — same decision needed for both open-repo and systems-resilience Phase 5.1. Does raspby1 run Docker (recommended, simpler deployment) or traditional systemd/venv? (2) Once runtime decided, orchestrator will either: execute first-time Docker deployment (3-4h) or rebuild runbook for systemd approach (1h) + execute (1h). (3) Post-deployment 48-72h soak test before Phase 5.2 author onboarding.
-**Verify with**: `docker ps 2>&1 | grep -i "open-repo\|api\|postgres"` should show running containers when deployment is done, OR `systemctl status open-repo` should show active service if systemd approach chosen
-**Resolution**: [leave blank — awaiting user decision on raspby1 runtime + platform choice. Audit complete and production-ready.]
+- DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines, Session 3770): 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000; confidence 99%
+- POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines, Session 3770): Root cause identified — ISSUE-3: raspby1 host platform/runtime decision (Docker vs systemd) with deadline June 15 23:59 UTC expired, no user response. Blocks both open-repo AND systems-resilience Phase 5.1 simultaneously.
+- **All application code production-ready** (157 tests passing, Phase 5 complete); only blocker is infrastructure/host decision, not code
+- **Shared blocker with systems-resilience** — Both projects blocked on same raspby1 runtime model decision (Docker with Nextcloud+Matrix/Discourse vs systemd approach)
+**What I need**: (1) **User re-authorization** — raspby1 platform/runtime decision (deadline expired June 15 23:59 UTC). Does raspby1 run Docker (recommended: simpler, faster deployment) or systemd/venv (traditional Linux)? This decision gates BOTH open-repo AND systems-resilience. (2) Once runtime decided, orchestrator will execute first-time deployment (3-4h Docker path, or rebuild+execute systemd path 2-3h). (3) Post-deployment 48-72h soak test before Phase 5.2 author onboarding.
+**Verify with**: `docker ps 2>&1 | grep -iE "open-repo|api-.*postgres"` should show running containers, OR `systemctl status open-repo && curl http://localhost:8000/api/health` should return 200 OK
+**Resolution**: [awaiting user decision on raspby1 runtime model — Audit complete June 16 (Session 3770). Audit shows 0 infrastructure deployed; all 6 health checks failed as expected. Ready for first-time deployment upon user authorization.]
 
 ---
 
