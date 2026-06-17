@@ -1,5 +1,35 @@
 # Check-in Summary
 
+## Session 3808 — Escalation Countdown Continuation (June 17 17:22 UTC)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~4h 38m UNTIL 22:00 UTC AUTO-EXECUTION**
+
+**Orientation completed** (17:22 UTC):
+- ✅ ORCHESTRATOR_STATE.md verified — escalation status current
+- ✅ INBOX.md re-checked — **NO NEW A/B/C DECISION** (user decision deadline PASSED 08:00 UTC)
+- ✅ BLOCKED.md reviewed — HMM regime issue resolved via emergency rollback (Session 3804)
+- ✅ All other projects blocked on user actions — no autonomous work available
+- ✅ Exploration Queue fully completed (Session 3791)
+
+**Escalation Protocol Confirmation**:
+- **Option A (already executed)**: Emergency rollback of HMM masking (Session 3804) — signals now flowing without regime gating
+- **Current readiness**: June 18 market validation ready to execute 13:30-20:00 UTC with HMM masking disabled
+- **Auto-execution at 22:00 UTC**: If no user A/B/C decision posted to INBOX.md by then, escalation protocol continues (proceed to June 18 validation monitoring)
+
+**Decision Path**:
+- **If user posts A/B/C decision by 22:00 UTC**: Execute immediately per choice
+- **If no decision by 22:00 UTC**: Escalation continues autonomously → June 18 validation monitoring setup
+
+**Timeline**:
+- Current: 17:22 UTC
+- Final monitoring wakeup scheduled: 21:30 UTC (30 min pre-escalation)
+- Auto-execution trigger: 22:00 UTC (if no user decision)
+- June 18 validation window: 13:30-20:00 UTC tomorrow
+
+**No immediate action required** — standing by for user decision or scheduled escalation.
+
+---
+
 ## Session 3807 — Post-Rollback Monitoring Checkpoint (June 17 17:13–17:20 UTC)
 
 **Status**: 🟡 **EMERGENCY ROLLBACK VERIFIED — JUNE 18 VALIDATION READY WITH HMM MASKING DISABLED**

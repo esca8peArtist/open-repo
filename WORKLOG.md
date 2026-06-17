@@ -1,3 +1,33 @@
+## Session 3808 (2026-06-17 17:22–17:28 UTC — ESCALATION COUNTDOWN CONTINUATION)
+
+**Status**: 🟡 **MONITORING LOOP ACTIVE — 4h 38m UNTIL 22:00 UTC ESCALATION WINDOW**
+
+**Orientation completed** (17:22 UTC):
+- ✅ ORCHESTRATOR_STATE.md verified (auto-generated 17:22 UTC, current)
+- ✅ INBOX.md re-checked for new A/B/C user decision — NONE found
+- ✅ User decision deadline PASSED: 08:00 UTC June 17 (9+ hours ago)
+- ✅ Escalation protocol confirmed ACTIVE: Auto-execution at 22:00 UTC if no decision
+- ✅ All other projects blocked on user actions (resistance-research awaiting email, cybersecurity awaiting Windows restart, mfg-farm awaiting test print, seedwarden awaiting contractor)
+- ✅ Exploration Queue fully completed (Session 3791)
+
+**Decision options available**:
+- **Option A (RECOMMENDED)**: Continue with June 18 market validation (HMM masking disabled, monitor signal flow)
+- **Option B**: Historical checkpoint query (immediate, lower confidence)
+- **Option C**: Observe mode with logging (high confidence, no trading)
+
+**Current state**:
+- Emergency rollback (Session 3804) in effect: HMM masking disabled
+- Signal generation: Partially restored (NVDA buy_prob=0.2616, MSFT/AAPL still checking regime=None)
+- June 18 validation readiness: CONFIRMED — 5 sessions ready with masking off
+
+**Next action**:
+- **If user posts A/B/C decision before 22:00 UTC**: Orchestrator will execute immediately (check INBOX.md hourly)
+- **If no decision by 22:00 UTC**: Auto-escalation protocol continues (schedule final wakeup for 21:30 UTC to prepare)
+
+**No autonomous work available** — monitoring loop continues. All projects blocked on user actions.
+
+---
+
 ## Session 3807 (2026-06-17 17:13–17:20 UTC — POST-ROLLBACK MONITORING CHECKPOINT)
 
 **Status**: 🟡 **EMERGENCY ROLLBACK VERIFIED, June 18 VALIDATION READY**
