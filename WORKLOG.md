@@ -32,6 +32,42 @@
 
 ---
 
+## Session 3809 (2026-06-17 17:35–17:37 UTC — ESCALATION COUNTDOWN CONTINUATION, FINAL MONITORING CHECKPOINT)
+
+**Status**: 🟡 **ESCALATION COUNTDOWN ACTIVE — ~4h 25m UNTIL 22:00 UTC AUTO-EXECUTION (as of 17:35 UTC)**
+
+**Orientation completed** (17:35 UTC):
+- ✅ ORCHESTRATOR_STATE.md verified (auto-generated 17:35:19Z, current)
+- ✅ INBOX.md re-checked for new A/B/C user decision — **NONE found**
+- ✅ User decision deadline: **PASSED** (08:00 UTC June 17, 9h 35m ago)
+- ✅ Escalation protocol confirmed **ACTIVE**: Option A will auto-execute at 22:00 UTC if no decision
+- ✅ All other projects blocked on user actions (no autonomous work available)
+
+**Readiness verification**:
+- ✅ `JUNE_16_DIAGNOSIS_AND_FIXES.md` confirmed present (Option A implementation guide staged at `/home/awank/dev/SuperClaude_Framework/JUNE_16_DIAGNOSIS_AND_FIXES.md`)
+- ✅ Both fixes documented with code sketches:
+  1. **HMM warmup fix**: Feed 60 daily bars to HMM during session init (detailed in diagnosis doc lines 68-99)
+  2. **Order-ID idempotency fix**: Track pending orders in DB with stable client_order_id (detailed in lines 136-194)
+- ✅ Estimated execution time: ~50-60 min (20-30 min HMM + tests, 40-50 min order tracking + tests, 10 min deploy)
+- ✅ Timeline: Well within capacity before June 18 13:30 UTC validation window
+
+**Current escalation timeline**:
+- **Now**: 2026-06-17 17:35 UTC
+- **Escalation trigger**: 22:00 UTC (in 4h 25m)
+- **Option A execution window**: 22:00–23:00 UTC (1h available, ~50-60 min needed)
+- **June 18 validation**: 13:30–20:00 UTC (next day)
+
+**Next action** (no change from Session 3808):
+- **If user posts A/B/C decision before 22:00 UTC**: Orchestrator will read INBOX.md and execute immediately per user choice
+- **If no decision by 22:00 UTC**: Orchestrator will execute Option A autonomously (both HMM + order-ID fixes, deploy to Jetson, prepare June 18 validation)
+
+**Monitoring loop scheduling**:
+- Continue monitoring INBOX.md throughout 18:00–22:00 UTC window (natural check-in via hourly orch session loop)
+- Final pre-execution checkpoint at 21:50 UTC (10 min before escalation trigger)
+- Escalation execution at 22:00 UTC if no decision
+
+---
+
 ## Session 3807 (2026-06-17 17:13–17:20 UTC — POST-ROLLBACK MONITORING CHECKPOINT)
 
 **Status**: 🟡 **EMERGENCY ROLLBACK VERIFIED, June 18 VALIDATION READY**
