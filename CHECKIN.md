@@ -1,5 +1,34 @@
 # Check-in Summary
 
+## Session 3860 (2026-06-18 04:35–04:47 UTC) — Pre-Validation Window Final Readiness Audit
+
+**Status**: ✅ **ORCHESTRATOR STANDBY CONFIRMED — VALIDATION WINDOW READY IN 8h 55m**
+
+### Since Last Check-in (Session 3859, 7 min ago)
+- ✅ **Final pre-validation audit complete**: All infrastructure confirmed production-ready (Jetson, containers, monitoring scripts, outcome template)
+- ✅ **Block status**: All 3 active blocks remain unchanged (cybersecurity-hardening VeraCrypt restart, mfg-farm test print, open-repo/systems-resilience raspby1 runtime decision)
+- ✅ **Stockbot validation checklist**: Option A deployed, 5 sessions loaded, monitoring staged, analysis template ready, Phase 4 frameworks committed
+- ✅ **Exploration Queue**: 6 active items (Item 5 post-validation analysis triggered at 20:15 UTC); no thin-queue condition
+- ✅ **No new autonomous work**: All projects either paused, complete, or blocked on external dependencies/time-based triggers
+
+### Assessment
+- **Orchestrator standby confirmed correct** — all autonomous work exhausted (Sessions 3854-3860 all verify same state)
+- **Validation infrastructure 100% production-ready** — no late-breaking issues discovered
+- **Validation window timeline intact**: 13:30 UTC market open (8h 55m away), 20:00 UTC close, 20:15 UTC Item 5 analysis begins
+- **All systems ready for June 18 13:30–20:00 UTC validation execution**
+
+### Orchestrator Execution Plan (June 18, Ongoing)
+1. **Current** (04:35 UTC) — Pre-validation audit ✅ complete
+2. **13:15 UTC** — Optional pre-market health check (within 2h window of market open)
+3. **13:30–20:00 UTC** — Automated validation monitoring via `validate_june_18_window.py`
+4. **20:15 UTC** — Post-validation analysis begins (Exploration Queue Item 5)
+
+**Effort**: 12 minutes (orientation + pre-validation audit + WORKLOG + CHECKIN update)  
+**Budget consumed**: ~6k tokens  
+**Status**: STANDBY — Validation window 8h 55m away (13:30 UTC), next work 20:15 UTC
+
+---
+
 ## Session 3859 (2026-06-18 04:28 UTC) — Standby Reconfirmed, Focus Lines Pruned
 
 **Status**: ✅ **ORCHESTRATOR STANDBY CONFIRMED — STALE FOCUS LINES PRUNED**
