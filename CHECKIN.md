@@ -1,5 +1,39 @@
 # Check-in Summary
 
+## Session 3837 — June 18 Pre-Validation Health Check & Standby (June 18 00:27–00:35 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY FOR JUNE 18 13:30 UTC MARKET VALIDATION — ALL SYSTEMS HEALTHY**
+
+### Since Last Check-in (Session 3836, 7 min ago)
+- ✅ **Jetson pre-validation health check**: All 5 trading sessions operational and cycling correctly; "Market closed — skipping cycle" messages confirming proper sleep behavior; container running stable
+- ✅ **Monitoring infrastructure verified**: `validate_june_18_window.py` (536 lines) staged and ready for 13:30 UTC execution; `JUNE_18_VALIDATION_OUTCOME_REPORT.md` ready for fill-in at 20:15 UTC
+- ✅ **No new blocks**: All 3 active blocks unchanged; no autonomous work available until validation closes
+- ✅ **No new inbox items**: Zero items to process
+- ⏳ **Validation window**: 13h away (June 18 13:30 UTC market open)
+
+### Session Work (3 min)
+- Verified ORCHESTRATOR_STATE.md (pre-generated state snapshot from 00:27 UTC)
+- Checked all 3 active blocks (none resolved)
+- Processed INBOX.md (no new items)
+- Ran pre-validation health checks on Jetson:
+  - ✓ Docker stockbot container running, healthy
+  - ✓ All 5 trading sessions loaded: aapl_lgbm_ho_001, msft_lgbm_ho_001, nvda_lgbm_ho_001, amzn_lgbm_ho_001, jpm_ridge_wf_001
+  - ✓ Sessions cycling with "Market closed" messages (expected off-market behavior)
+  - ✓ WebSocket reconnect loops (non-critical, REST API fallback active)
+- Confirmed monitoring scripts and templates staged from Session 3835
+
+### Items Needing Your Input
+- **None until post-validation** — All decision frameworks staged, awaiting June 18 results
+
+### Suggested Next Session
+- **June 18 13:15 UTC** (optional): Pre-market 5-min checklist (verify sessions wake and begin trading at 13:30 UTC)
+- **June 18 20:15 UTC** (mandatory): Post-validation analysis (Exploration Queue Item 5) — market closes at 20:00, orchestrator analyzes results and recommends Phase 4 path
+
+**Effort**: 3 minutes (pre-validation health check + state confirmation)  
+**Budget consumed**: ~5k tokens this session, ~195k remaining
+
+---
+
 ## Session 3836 — June 18 Validation Standby & Confirmation (June 18 00:20–00:28 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDING BY FOR JUNE 18 13:30 UTC VALIDATION WINDOW**

@@ -9724,3 +9724,41 @@ except APIError as api_err:
 **Effort**: 20 minutes (orientation, block assessment, queue staging)  
 **Budget consumed**: ~3k tokens (reading state files, queue assessment, documentation)
 
+
+## Session 3837 (2026-06-18 00:27–00:35 UTC) — Orchestrator Pre-Validation Health Check & Standby
+
+**Initiated**: 2026-06-18 00:27 UTC (automated, Raspberry Pi orchestrator session)  
+**Duration**: 8 minutes
+
+**Session Work**:
+- ✅ Read ORCHESTRATOR_STATE.md — verified all active blocks and project status
+- ✅ Checked BLOCKED.md — all 3 blocks remain active (cybersecurity-hardening VeraCrypt, mfg-farm test print, open-repo deployment)
+- ✅ Processed INBOX.md — zero new items to process
+- ✅ Ran pre-validation health checks on Jetson (100.120.18.84):
+  - Container stockbot running, healthy
+  - All 5 trading sessions loaded and operational:
+    - aapl_lgbm_ho_001 ✓
+    - msft_lgbm_ho_001 ✓  
+    - nvda_lgbm_ho_001 ✓
+    - amzn_lgbm_ho_001 ✓
+    - jpm_ridge_wf_001 ✓
+  - Sessions cycling correctly with "Market closed — skipping cycle" messages (expected off-market behavior, 13h 2m until market open)
+  - WebSocket reconnection cycling (non-critical background process; REST API operational)
+- ✅ Verified monitoring infrastructure staged from Session 3835:
+  - `projects/stockbot/scripts/validate_june_18_window.py` (536 lines) ready for hourly tracking 13:30–20:00 UTC
+  - `projects/stockbot/JUNE_18_VALIDATION_OUTCOME_REPORT.md` (249 lines) ready for fill-in at 20:15 UTC
+  - Phase 4 decision framework + capital allocation models staged and committed
+
+**Assessment**: 
+- All systems ready for June 18 13:30 UTC market validation window
+- No autonomous work available until validation window closes (per ORCHESTRATOR_STATE.md priority assessment)
+- All 3 active blocks remain user-action-dependent (no auto-resolvable conditions)
+- Standing by for market open in ~13 hours
+
+**No Further Autonomous Work Until**: (1) June 18 13:30–20:00 UTC validation window executes, OR (2) post-market analysis begins 20:15 UTC, OR (3) user provides input on blocked projects
+
+**Next Session Timing**: June 18 20:15 UTC (post-validation analysis, Exploration Queue Item 5), or optional June 18 13:15 UTC (pre-market 5-min checklist)
+
+**Effort**: 8 minutes (orientation + health checks + commit)  
+**Budget consumed**: ~5k tokens
+
