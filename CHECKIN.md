@@ -1,5 +1,40 @@
 # Check-in Summary
 
+## Session 3847 — Validation Infrastructure Readiness Audit (June 18 01:53–01:58 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDBY CONFIRMED — VALIDATION READY**
+
+### Since Last Check-in (Session 3846, 1 min ago)
+- ✅ **Validation infrastructure audit complete**:
+  - Monitoring script `validate_june_18_window.py` verified present (19 KB, current)
+  - Analysis template `JUNE_18_VALIDATION_OUTCOME_REPORT.md` staged and ready for 20:15 UTC fill-in
+  - Phase 4 decision frameworks complete (10 files, June 16-17 timestamps)
+  - All staging from Session 3835 confirmed production-ready
+- ✅ **Project scope verification**: No unfinished autonomous scope available
+- ✅ **Exploration Queue status**: 4 items with future triggers; all conditions remain unmet
+
+### Projects Status (unchanged)
+- **stockbot (P1)**: Validation window 13:30–20:00 UTC today (11h 32m away)
+- **resistance-research (P2)**: Phase 2 fully staged, awaiting user email execution
+- **cybersecurity-hardening (P3)**: Blocked on Windows VeraCrypt restart
+- **mfg-farm (P4)**: Blocked on 3D test print execution
+- **seedwarden (P5)**: Paused
+- **open-repo (P6)**: Blocked on raspby1 platform decision (deadline passed)
+
+### Orchestrator Status
+- **Standby mode**: ✅ CORRECT — validation framework fully staged and ready
+- **Validation window**: June 18 13:30–20:00 UTC (11h 32m away)
+- **Next autonomous work trigger**: June 18 20:00 UTC (Exploration Queue Item 5: post-validation analysis)
+- **Budget remaining**: ~180k tokens (Sonnet 3.6%, All-models 72.8%)
+
+### Items Needing Your Input
+- **None until post-validation** — All infrastructure production-ready for market window
+
+**Effort**: 5 minutes (infrastructure verification + scope audit + CHECKIN update)
+**Work done**: Verification only; all systems ready
+
+---
+
 ## Session 3846 — Orchestrator Standby Confirmation (June 18 01:46–01:52 UTC)
 
 **Status**: ✅ **ORCHESTRATOR STANDBY CONFIRMED — NO AUTONOMOUS WORK AVAILABLE**
