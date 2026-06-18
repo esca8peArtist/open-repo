@@ -1,14 +1,16 @@
 # Check-in Summary
 
-## Session 3835 — Final June 18 Validation Standby Orientation (June 17 23:52 UTC)
+## Session 3835 (Current) — June 18 Validation Monitoring & Analysis Pre-Staging (June 18 00:01–00:13 UTC)
 
-**Status**: ✅ **ORCHESTRATOR STANDING BY FOR JUNE 18 13:30 UTC MARKET VALIDATION WINDOW — ALL SYSTEMS OPERATIONAL**
+**Status**: ✅ **VALIDATION WINDOW PRE-STAGING COMPLETE — ALL MONITORING INFRASTRUCTURE READY**
 
-### Since Last Check-in (Session 3834, 6 minutes ago)
-- ✅ **Full orientation complete**: Read ORCHESTRATOR_STATE.md, verified all active blocks, processed INBOX
-- ✅ **Validation readiness confirmed**: 100% — Option A deployed, all 5 models staged, monitoring checklist verified
-- ✅ **No autonomous work available**: Correctly staged per design (all projects blocked on external dependencies or validation trigger)
-- ⏳ **Time until validation window**: ~13h 37m (June 18 13:30 UTC market open)
+### Since Last Check-in (Session 3835 orientation, 12 minutes ago)
+- ✅ **Jetson health check**: Docker container running, all 5 sessions loaded and sleeping until 13:15 UTC, zero pre-fix blockers
+- ✅ **Validation monitoring script created**: `scripts/validate_june_18_window.py` (hourly tracking, Discord alerts at milestones)
+- ✅ **Post-validation analysis template staged**: `JUNE_18_VALIDATION_OUTCOME_REPORT.md` (fill-in-blank, ready for 20:15 UTC execution)
+- ✅ **Phase 4 decision framework templated**: Per-session PASS/CAUTION/FAIL logic with immediate actions documented
+- ✅ **All deliverables committed**: Master commit `1120f63` — no uncommitted code on Jetson or Pi
+- ⏳ **Time until validation window**: ~13h 30m (June 18 13:30 UTC market open)
 
 ### What's Accomplished (Cumulative from Prior Sessions)
 - ✅ **stockbot Option A deployed**: HMM warmup priming (3-layer) + order-ID idempotency persistence (June 17 22:07 UTC)
