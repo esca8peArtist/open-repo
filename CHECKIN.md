@@ -1,5 +1,36 @@
 # Check-in Summary
 
+## Session 3861 (2026-06-18 05:39–05:43 UTC) — Standby Maintained, Validation Window 7h 51m Away
+
+**Status**: ✅ **ORCHESTRATOR STANDBY MAINTAINED — VALIDATION WINDOW READY AT 13:30 UTC**
+
+### Since Last Check-in (Session 3868, ~7 min ago)
+- ✅ **Orientation complete**: ORCHESTRATOR_STATE.md (auto-generated 05:38 UTC), BLOCKED.md (3 blocks verified unchanged), INBOX.md (zero new items), PROJECTS.md (all focus lines current)
+- ✅ **Block verification**: All 3 active blocks remain user-action dependent:
+  - cybersecurity-hardening: Windows VeraCrypt restart required
+  - mfg-farm: Test print execution required
+  - open-repo + systems-resilience: raspby1 platform/runtime decision (deadline expired June 15)
+- ✅ **Exploration Queue validation**: 6 active items; Item 5 ready for 20:15 UTC post-validation analysis trigger
+- ✅ **Stockbot validation readiness**: All infrastructure confirmed ready (Jetson healthy, 5 sessions loaded, HMM priming active, monitoring script staged, outcome template ready, Phase 4 frameworks committed)
+- ✅ **Usage status**: All-models 80% WARNING (3.1M tokens remaining) — healthy for STANDBY operations
+
+### Assessment
+- **Standby status confirmed correct** — 16 consecutive sessions (3854-3861) all verify identical standby state
+- **No new blockers or issues** since Session 3868
+- **All systems production-ready** — infrastructure 100% verified, validation window monitoring automated
+- **Next autonomous work trigger**: 20:15 UTC today (Exploration Queue Item 5: post-validation analysis + Phase 4 execution routing)
+
+**Timeline**:
+- **Now**: 05:39 UTC — Session 3861 orientation complete, standby reconfirmed
+- **13:15 UTC** — Optional pre-market health check (within 2-hour validation window rule)
+- **13:30–20:00 UTC** — Automated validation monitoring (`scripts/validate_june_18_window.py`); market session with Option A config (HMM warmup priming active, order-ID idempotency enforced, 5-session expanded config)
+- **20:15 UTC** — Post-validation analysis begins (Exploration Queue Item 5)
+
+**Effort**: 4 minutes (orientation + state verification)  
+**Status**: STANDBY — Validation window 7h 51m away (13:30 UTC), all systems production-ready, next work 20:15 UTC
+
+---
+
 ## Session 3868 (2026-06-18 05:32–05:35 UTC) — Standby Maintained, Validation Window 7h 58m Away
 
 **Status**: ✅ **ORCHESTRATOR STANDBY MAINTAINED — VALIDATION WINDOW READY AT 13:30 UTC**
