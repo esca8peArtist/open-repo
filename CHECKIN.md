@@ -1,5 +1,61 @@
 # Check-in Summary
 
+## Session 3857 (2026-06-18 04:13–04:20 UTC) — Final Readiness Verification Before Validation Window
+
+**Status**: ✅ **ORCHESTRATOR STANDBY VERIFIED — ALL SYSTEMS READY FOR JUNE 18 VALIDATION WINDOW**
+
+### Since Last Check-in (Session 3856, 8 min ago)
+- ✅ **Infrastructure verification complete**:
+  - Jetson SSH reachable (100.120.18.84) ✅
+  - stockbot container UP 2+ hours, healthy status ✅
+  - stockbot-web container UP 2 weeks ✅
+  - Database accessible: 49 trades (ready for validation monitoring) ✅
+  - `scripts/validate_june_18_window.py` ready (11.3 KB, executable) ✅
+  - `JUNE_18_VALIDATION_OUTCOME_REPORT.md` ready (7.1 KB, analysis template staged) ✅
+- ✅ **Exploration Queue status**: 4 active items (above 3-item threshold); no new items need to be added
+- ✅ **Blocked status**: All 3 blocks unchanged and user-action dependent (cybersecurity-hardening VeraCrypt, mfg-farm test print, open-repo platform decision)
+- ✅ **INBOX**: Zero new items
+
+### Assessment
+- **All autonomous work correctly exhausted**: Sessions 3854-3857 all confirm infrastructure ready, no work available until post-validation
+- **Jetson infrastructure production-ready**: Both containers healthy, database accessible, monitoring scripts ready
+- **Validation window timeline intact**: 13:30 UTC market open (9h 16m away), 20:00 UTC close, 20:15 UTC Item 5 analysis
+- **No user action needed until post-validation report** (expected ~21:00 UTC)
+
+### Orchestrator Execution Plan for June 18
+1. **13:15 UTC** — Pre-market health check (if within 2-hour window)
+2. **13:30–20:00 UTC** — Automated validation monitoring via `validate_june_18_window.py`
+3. **20:15–21:30 UTC** — Post-validation analysis: fill `JUNE_18_VALIDATION_OUTCOME_REPORT.md` with session metrics, decision matrix (PASS/CAUTION/FAIL), Phase 4 routing
+
+**Effort**: 4 minutes (Jetson verification + script validation + CHECKIN update)  
+**Status**: STANDBY — All systems ready, validation window 9h 16m away (13:30 UTC market open)
+
+---
+
+## Session 3856 (2026-06-18 03:59–04:05 UTC) — Orchestrator Standby Verification
+
+**Status**: ✅ **ORCHESTRATOR STANDBY CONFIRMED — VALIDATION INFRASTRUCTURE 100% READY, 9h 30m UNTIL MARKET OPEN**
+
+### Since Last Check-in (Session 3855, 5 min ago)
+- ✅ **Full orientation complete**: ORCHESTRATOR_STATE.md (auto-generated 03:59 UTC), INBOX.md (zero new items), BLOCKED.md (all 3 blocks unchanged), PROJECTS.md verified current
+- ✅ **State verification**: Stockbot submodule WORKLOG.md staged changes committed (8810df6)
+- ✅ **Exploration Queue status**: 4 items queued; Item 5 (post-validation analysis) active at 20:00 UTC
+- ✅ **Validation window status**: 13:30 UTC market open in 9h 30m; infrastructure staged and ready
+- ✅ **No autonomous work available** (all projects blocked on external dependencies or validation window)
+
+### Assessment
+- **Orchestrator standby confirmed correct** — all autonomous work exhausted
+- **Validation window in 9 hours 30 minutes** (June 18 13:30 UTC market open)
+- **Next autonomous work**: Post-validation analysis 20:15 UTC (Exploration Queue Item 5)
+- **All 3 active blocks remain user-action-dependent; no auto-resolvable conditions**
+
+**Status**: STANDBY — Awaiting June 18 13:30 UTC validation window closure at 20:00 UTC
+
+**Effort**: 6 minutes (orientation + state verification + stockbot commit)  
+**Budget consumed**: ~3k tokens
+
+---
+
 ## Session 3855 (2026-06-18 03:53–03:54 UTC) — Orientation Complete: Standby Reconfirmed
 
 **Status**: ✅ **ORCHESTRATOR STANDBY CONFIRMED — VALIDATION WINDOW 9 HOURS 37 MINUTES TO MARKET OPEN**
