@@ -1,5 +1,26 @@
 # Check-in Summary
 
+## Session 3859 (2026-06-18 04:28 UTC) — Standby Reconfirmed, Focus Lines Pruned
+
+**Status**: ✅ **ORCHESTRATOR STANDBY CONFIRMED — STALE FOCUS LINES PRUNED**
+
+### Since Last Check-in (Session 3858, 4 min ago)
+- ✅ **Stale focus line cleanup**: Removed session references from stockbot (Session 3835) and open-repo (Session 3671)
+  - **stockbot**: Pruned to current status — OPTION A DEPLOYED, validation window staging complete, awaiting 13:30 UTC
+  - **open-repo**: Simplified to current blocked state — awaiting Docker/systemd + platform decision from user
+- ✅ **Block verification**: mfg-farm test-print-results directory still missing (user action required)
+- ✅ **No new autonomous work**: Validation window remains hard blocker until 20:00 UTC
+
+### Assessment
+- **Standby status correct**: No autonomous work available; all focus lines current
+- **Validation window timeline unchanged**: 13:30 UTC market open (9h away), 20:00 UTC close, 20:15 UTC post-validation analysis
+- **Next work trigger**: Exploration Queue Item 5 at 20:15 UTC (post-validation analysis)
+
+**Effort**: 5 minutes (state verification + focus line cleanup + CHECKIN update)  
+**Status**: STANDBY — Validation window 9h away (13:30 UTC), next autonomous work 20:15 UTC
+
+---
+
 ## Session 3858 (2026-06-18 04:24 UTC) — Standby Status Reconfirmed, Validation Window Ready
 
 **Status**: ✅ **ORCHESTRATOR STANDBY CONFIRMED — NO CHANGES FROM SESSION 3857, SYSTEMS READY**
