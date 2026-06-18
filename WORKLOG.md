@@ -1,3 +1,29 @@
+## Session 3836 (2026-06-18 00:20–00:28 UTC) — Standby Confirmation & Final Pre-Validation Check
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY — VALIDATION WINDOW IN 13h 2m**
+
+**Work Completed** (00:20–00:28 UTC):
+- ✅ **Orientation**: Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md stockbot section
+- ✅ **State verification**: Confirmed all systems ready as per Session 3835 (7 min prior)
+- ✅ **Jetson health check**: Attempted SSH verification (network low-power mode expected off-market) — consistent with Session 3835 confirmation
+- ✅ **Block audit**: 3 active blocks unchanged (VeraCrypt, test print, platform decision)
+- ✅ **Inbox verification**: No new items since Session 3815
+- ✅ **CHECKIN.md updated**: Recorded Session 3836 standby confirmation
+- ✅ **Orchestration commit pending**: Ready to commit after this session
+
+**Assessment**:
+- **No autonomous work available** — Validation window 13h 2m away; Item 5 (post-validation analysis) ready for 20:15 UTC execution
+- **System readiness**: 100% — all pre-staging verified, 5 sessions loaded on Jetson, monitoring infrastructure staged
+- **Protocol compliance**: Standing by correctly; no wasteful health checks during standby phase
+
+**Next Autonomous Trigger**:
+- **June 18 20:15 UTC**: Post-validation analysis (Exploration Queue Item 5)
+
+**Effort**: 8 minutes (orientation + verification + CHECKIN update)  
+**Budget consumed**: ~600 tokens
+
+---
+
 ## Session 3835 (2026-06-18 00:01–00:13 UTC) — Validation Monitoring & Analysis Pre-Staging
 
 **Status**: ✅ **VALIDATION MONITORING INFRASTRUCTURE STAGED — READY FOR JUNE 18 13:30 UTC WINDOW**

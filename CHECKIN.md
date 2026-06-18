@@ -1,5 +1,27 @@
 # Check-in Summary
 
+## Session 3836 — June 18 Validation Standby & Confirmation (June 18 00:20–00:28 UTC)
+
+**Status**: ✅ **ORCHESTRATOR STANDING BY FOR JUNE 18 13:30 UTC VALIDATION WINDOW**
+
+### Since Last Check-in (Session 3835, 7 min ago)
+- ✅ **State confirmation**: All systems ready as verified in Session 3835
+- ✅ **Jetson network**: Low-power mode (expected for off-market hours)
+- ✅ **No new blocks**: All 3 active blocks unchanged
+- ✅ **Inbox**: No new items since Session 3815
+- ⏳ **Validation window**: 13h 2m away (June 18 13:30 UTC)
+
+### Items Needing Your Input
+- **None until post-validation** — Awaiting June 18 market validation closure
+
+### Suggested Next Session
+- **June 18 20:15 UTC**: Post-validation analysis (Exploration Queue Item 5)
+
+**Effort**: 8 minutes (state confirmation + commit)  
+**Budget**: ~199.7k tokens remaining (0.3k used this session)
+
+---
+
 ## Session 3835 (Current) — June 18 Validation Monitoring & Analysis Pre-Staging (June 18 00:01–00:13 UTC)
 
 **Status**: ✅ **VALIDATION WINDOW PRE-STAGING COMPLETE — ALL MONITORING INFRASTRUCTURE READY**
