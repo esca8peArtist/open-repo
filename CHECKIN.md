@@ -1,5 +1,32 @@
 # Check-in Summary
 
+## Session 3867 (2026-06-18 05:25–05:30 UTC) — Standby Maintained, Validation Window 8h Away
+
+**Status**: ✅ **ORCHESTRATOR STANDBY MAINTAINED — VALIDATION WINDOW READY AT 13:30 UTC**
+
+### Since Last Check-in (Session 3866, ~7 min ago)
+- ✅ **Orientation complete**: ORCHESTRATOR_STATE.md (auto-generated 05:25 UTC), BLOCKED.md (3 blocks verified unchanged), INBOX.md (zero new items), PROJECTS.md (all focus lines current)
+- ✅ **Block verification**: All 3 active blocks remain user-action dependent (cybersecurity-hardening Windows restart, mfg-farm test print, open-repo raspby1 platform decision)
+- ✅ **Exploration Queue validation**: 6+ active items with clear trigger conditions; Item 5 ready for post-validation execution at 20:15 UTC
+- ✅ **Stockbot validation readiness**: All infrastructure confirmed ready (Jetson healthy, 5 sessions loaded, HMM masking active, monitoring script staged, outcome template ready, Phase 4 decision frameworks committed)
+
+### Assessment
+- **Standby status confirmed correct** — 14 consecutive sessions (3854-3867) all verify identical standby state
+- **No new blockers or issues** since Session 3866
+- **All systems production-ready** — infrastructure 100% verified, validation window monitoring automated
+- **Next autonomous work trigger**: 20:15 UTC today (Exploration Queue Item 5: post-validation analysis + Phase 4 execution routing)
+
+**Timeline**:
+- **Now**: 05:25 UTC — Session 3867 orientation complete, standby reconfirmed
+- **13:15 UTC** — Optional pre-market health check (within 2-hour validation window rule)
+- **13:30–20:00 UTC** — Automated validation monitoring (`scripts/validate_june_18_window.py`); market session with Option A config (HMM warmup priming active, order-ID idempotency enforced, 5-session expanded config)
+- **20:15 UTC** — Post-validation analysis begins (Exploration Queue Item 5)
+
+**Effort**: 5 minutes (orientation + state verification)  
+**Status**: STANDBY — Validation window 8h away (13:30 UTC), all systems production-ready, next work 20:15 UTC
+
+---
+
 ## Session 3866 (2026-06-18 05:19–05:20 UTC) — Standby Maintained, Validation Window 8h 11m Away
 
 **Status**: ✅ **ORCHESTRATOR STANDBY MAINTAINED — VALIDATION WINDOW READY AT 13:30 UTC**
