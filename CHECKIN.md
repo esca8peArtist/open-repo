@@ -9797,3 +9797,51 @@ None at this time. Orchestrator standing by for June 18 validation window.
 
 **Next orchestrator session**: June 18 post-market analysis (target: 20:15 UTC) to evaluate validation window results and recommend Phase 4 path.
 
+---
+
+## Session 3856 Check-in (June 18 03:59–04:05 UTC) — Pre-Market Standby Verification
+
+### Since Last Check-in (Session 3810, June 17 18:00–19:00 UTC)
+
+**What happened**:
+- Stockbot submodule logs from June 17-18 pre-market orchestration captured and committed (logs + validation states)
+- System state verified: all infrastructure staged and ready for validation window
+- No autonomous work executed (correct by design — validation window not yet started)
+
+**Key status**:
+- **Validation window**: 13:30–20:00 UTC today (9h 30m away at session start)
+- **Jetson status**: Ready with 2-session config (JPM + AMZN), HMM masking disabled
+- **Model status**: AAPL lgbm_ho (1.0609 Sharpe, needs t-stat gate), MSFT ridge_wf (negative Sharpe, needs feature fix)
+- **Infrastructure**: Monitoring script + outcome template staged for validation analysis
+
+### What's Available for User Action
+
+**Immediate (during 13:30–20:00 UTC validation window)**:
+1. Monitor JPM + AMZN session signals during market open
+   - Watch for buy_prob non-zero and first fills
+   - Alert if signal dropout recurs (June 16 failure pattern)
+
+**Post-window (by 20:15 UTC)**:
+2. Orchestrator will execute Exploration Queue Item 5 (post-validation analysis)
+   - Analyze validation results against baseline expectations
+   - Recommend Phase 4 path (expand, retrain, or hold)
+
+### Needs Your Input
+
+None at this time. Orchestrator standing by for market open.
+
+### Key Metrics
+
+- **Autonomous work available**: 100% (queued at 20:00 UTC trigger)
+- **Validation infrastructure**: 100% ready (monitoring script + outcome template staged)
+- **System readiness**: Ready for market open
+- **Budget status**: ~197k tokens remaining
+
+### Confidence + Next Steps
+
+**Pre-market standby confirmed.** All infrastructure from Session 3835 verified staged and ready. Jetson health check passed Session 3837. HMM masking disabled per Session 3804 rollback. System ready for June 18 13:30 UTC market open.
+
+**No autonomous work until validation window closes** (correct by design — live market validation in progress).
+
+**Next orchestrator session**: June 18 20:15 UTC (post-market analysis) to process validation window results and execute Phase 4 planning per Exploration Queue Item 5.
+
