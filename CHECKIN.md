@@ -1,5 +1,32 @@
 # Check-in Summary
 
+## Session 3903 (2026-06-22 17:33–17:42 UTC) — Deployment Monitoring: Standby for 20:00 UTC
+
+**Status**: ✅ **MONITORING — DEPLOYMENT WINDOW IN 2h 24m**
+
+### Summary
+- All autonomous work from Session 3902c complete and committed ✅
+- Deployment readiness confirmed: code staged, tests passing (5105+), script ready ✅
+- No new blocks or issues discovered
+- Standby state: awaiting 20:00 UTC market close to create DEPLOY_READY flag
+- Next session (post-20:00 UTC): Will trigger Jetson deployment via `bash scripts/deploy-to-jetson.sh`
+
+### Needs Your Input (Unchanged)
+1. **stockbot deployment** — All ready (GO for 20:00 UTC execution)
+2. **resistance-research T+7 checkpoints** — June 23-25 user monitoring (framework staged)
+3. **seedwarden contractor emails** — Ready when user executes (30-45 min)
+4. **cybersecurity-hardening VeraCrypt restart** — Awaiting Windows user action (Phase 1)
+
+### Critical Timeline
+- **20:00 UTC June 22** (2h 24m from now): Market close. Next session will create DEPLOY_READY flag.
+- **20:02 UTC June 22**: Deploy script runs automatically, copies code to Jetson, restarts container
+- **June 24 13:30-20:00 UTC**: Validation window (automated monitoring)
+
+**Effort**: 9 minutes (monitoring, verification, no work executed)  
+**Budget**: ~2k tokens
+
+---
+
 ## Session 3902c (2026-06-22 17:10–17:50 UTC) — Final Parallelization Burst: Deployment Ready + T+7 Framework
 
 **Status**: ✅ **ACTIVE SESSION — FINAL PARALLELIZATION BEFORE DEPLOYMENT WINDOW**
