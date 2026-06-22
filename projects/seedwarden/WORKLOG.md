@@ -8054,6 +8054,35 @@ Rationale:
 
 ---
 
+## Session: 2026-06-22 — Session 3904 Q3 Sprint Verification: Blog Posts + Kit Emails + Photo Attribution Audit
+
+**Task**: Verify Week 2-3 blog posts and kit emails staged; spot-check photo attribution log; deliver production checklists.
+
+### Findings
+
+**Blog posts** (3 posts in `phase-3/`):
+- `blog-post-week1-evidence-tiers.md` — publish-ready June 23. No fill-ins except Etsy URL.
+- `blog-post-week2-goldenseal-conservation.md` — publish-ready July 1. Two pre-publish actions: add meta description (155 chars); add newsletter signup CTA after closing paragraph. Feature image: goldenseal-habit.jpg (Eric Hunt CC BY-SA 4.0).
+- `blog-post-week3-affiliate-qa-template.md` — template-complete. Partner brief must be sent by June 26 for July 7 publish date. Fallback plan documented in file.
+- Deliverable: `phase-3/WEEK_2_3_BLOG_PUBLISHING_CHECKLIST.md` — publication timeline, per-post action lists, SEO metadata gaps, CTA audit.
+
+**Kit emails** (4 emails in `phase-3/`):
+- Launch day email — send-ready today (June 22). Fill-ins: Etsy URL, sender name, verify EXISTING15 active.
+- Week 2 (June 29) — send-ready. Fill-ins: sender name, Immunity bundle upload date confirm, blog post URL, Etsy URL.
+- Week 3 (July 6) — send-ready pending free download. Fill-ins: Black Cohosh profile download link, practitioner tier URL, sender name, Etsy URL.
+- Week 4 (July 13) — template; live Etsy stats and testimonial permission required July 13 morning.
+- All subject lines 39–66 chars, no spam triggers. Template consistency verified (all have unsubscribe footers, audience correct).
+- Species data accuracy verified against attribution log: all species names, bundles, pricing, and clinical citations consistent.
+- Deliverable: `phase-3/KIT_EMAIL_SEND_SEQUENCE.md` — send dates, audience, per-email fill-ins, subject line assessment, sequencing notes.
+
+**Photo attribution log**: 16 species (including both Echinacea spp.) across 5 bundles verified. Spot-check (5 URLs sampled: Black Cohosh, Goldenseal, Ginger, Calendula, Elderberry) — all return HTTP 200. Licenses present for all confirmed entries: CC BY-SA 4.0, CC BY-SA 3.0, CC BY-SA 2.5, CC BY 3.0, CC BY 2.0, Public Domain. No broken links found. Four pending user verifications noted in log (Lavender habit composition, Lemon Balm habit vs. close-up, Ashwagandha habit vs. close-up, Passionflower flower license). Log status: VERIFIED — no corrective work needed.
+
+**Q3 research items**: No new research items queued beyond current sprint. Priority order confirmed: blog content > kit emails > new species research. No new species research initiated this session (content pipeline fully staged through July 15).
+
+**Status**: Week 2-3 blog posts + kit emails staged and verified. Photo attribution log 16/16 complete. Q3 sprint ready for publication execution.
+
+---
+
 ## Session: 2026-06-22 — Q3 Content Sprint Gap Fill (Week 4 Email, Launch Email, Week 3 Blog Template, July 15 IG Post)
 
 **Context**: Sprint Day 1 (June 22 launch). Prior session (commit 1848d3fb) committed Week 2-3 blog posts and Kit emails. This session identifies and fills remaining Q3 content pipeline gaps.
