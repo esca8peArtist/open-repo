@@ -25,15 +25,40 @@ tags: [seedwarden, phase-3, response-tracking, outreach-log, dashboard]
 
 ---
 
+## June 22 Status Update
+
+**Updated**: June 22, 2026 (orchestrator session — autonomous prep complete)
+
+Gate G1 (send outreach) target was June 17 — now June 22. Outreach window compressed from 13 days (June 17–30) to 8 days (June 22–30). Response evaluation window before June 28 selection gate: 6 days. Status: READY FOR USER EMAIL SEND — all templates pre-filled in `PHASE_3_OUTREACH_TEMPLATES_PREFILLED.md`, scorecard ready in `PHASE_3_CONTRACTOR_SELECTION_SCORECARD.md`, dashboard updated below.
+
+**Compressed timeline adjustments (June 22 baseline)**:
+
+| Gate | Original Target | Adjusted Target | Status |
+|---|---|---|---|
+| G1 — All outreach sent | June 17 | June 22 (TODAY) | READY — user sends |
+| G2 — Portfolio shortlist complete | June 21 | June 26 | Pending G1 |
+| G3 — Discovery calls / licensing inquiries sent | June 24 | June 27 | Pending G2 |
+| G4 — Lead photographer selected | June 28 | June 28 | UNCHANGED — hard date |
+| G5 — Lead nature writer selected | June 28 | June 28 | UNCHANGED — hard date |
+| G6 — Lead habitat specialist confirmed | June 30 | June 30 | UNCHANGED |
+| G7 — All contracts signed; deposits paid | July 5 | July 5 | UNCHANGED |
+| G8 — Contingency path confirmed | July 5 | July 5 | UNCHANGED |
+
+**What changed**: G1, G2, G3 shifted by 5 days due to outreach delay. G4–G8 are unchanged because they are driven by the July 1 first shoot date and the June 22 sprint launch date, not by the outreach start date.
+
+**What this means for response management**: With 6 days between G1 send and G4/G5 selection, the follow-up window is compressed to 3 days (send June 22, follow-up June 27 if no response, select June 28). There is no buffer for a second follow-up. Prioritize Day 1 contacts — Upwork and Thumbtack are the fastest-response channels and must be posted June 22.
+
+---
+
 ## Decision Gate Summary
 
 Use this section as the daily status overview. Update before closing each session.
 
 | Gate | Description | Target Date | Status |
 |---|---|---|---|
-| G1 | All outreach sent (all tracks) | June 17 | Not started |
-| G2 | First responses reviewed; portfolio shortlist complete | June 21 | Not started |
-| G3 | Discovery calls or licensing inquiries sent to shortlisted candidates | June 24 | Not started |
+| G1 | All outreach sent (all tracks) | June 22 (updated) | READY FOR USER SEND |
+| G2 | First responses reviewed; portfolio shortlist complete | June 26 (updated) | Not started |
+| G3 | Discovery calls or licensing inquiries sent to shortlisted candidates | June 27 (updated) | Not started |
 | G4 | Lead photographer selected; contract offered | June 28 | Not started |
 | G5 | Lead nature writer selected; contract offered | June 28 | Not started |
 | G6 | Lead habitat specialist selected or confirmed via writer dual-track | June 30 | Not started |
