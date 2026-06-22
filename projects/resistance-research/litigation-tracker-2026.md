@@ -1,6 +1,6 @@
 # Active Litigation Tracker: Democracy and Immigration Cases — April 2026
 
-*Last updated: May 13, 2026 (Callais cascade tracker maintenance) — for entries added after March 19 see "April 2026 Updates"; for entries added after April 27 see "May 2026 Tracker Refresh" and "May 9, 2026 — Session 929 Monitoring Pass" sections; for Callais 2026 category entries see Category 10 (10.1 main ruling, 10.2 Alabama stay, 10.3 multi-state cascade active litigation map) and the "May 13, 2026 — Callais Cascade Update" section; for FISA Section 702 declassification deadline (June 12-15, 2026) see CHECKIN.md monitoring item*
+*Last updated: June 22, 2026 (Session 3XXX — June update pass) — for entries added after March 19 see "April 2026 Updates"; for entries added after April 27 see "May 2026 Tracker Refresh" and "May 9, 2026 — Session 929 Monitoring Pass" sections; for Callais 2026 category entries see Category 10 (10.1 main ruling, 10.2 Alabama stay, 10.3 multi-state cascade active litigation map, 10.4 Louisiana June 1 map Robinson v. Landry, 10.5 Mississippi/North Dakota GVRs); for Abrego Garcia Tennessee vindictive prosecution dismissal see Category 11; for SAVE Act third Senate blocking see Category 12; for SCOTUS end-of-term pending decisions (Trump v. Slaughter, Little v. Hecox / BPJ, Trump v. Barbara) see Category 13; for V-Dem US reclassification see Category 14*
 
 ---
 
@@ -1375,4 +1375,159 @@ The April 28 hearing before Judge Paula Xinis (D. Md. 8:25-cv-02780) was set to 
 ---
 
 *May 13, 2026 pass completed. Items added: Alabama SCOTUS stay (May 11, 5-4, unsigned), five-state special session status table, preliminary injunction timing windows, intentional discrimination theory per state, Section 3 bail-in litigation goal. Tracker is now current through May 13, 2026.*
-| TBD | Mail Voting EO | Preliminary injunction (Massachusetts) |
+
+---
+
+## June 2026 Tracker Update — Session 3XXX (June 22, 2026)
+
+*Items added this pass: Louisiana June 1 map (Robinson v. Landry); Mississippi/North Dakota GVRs; Abrego Garcia Tennessee charges dismissed as vindictive prosecution (May 22); SAVE Act third Senate blocking (June 4); Trump v. Slaughter SCOTUS pending; Little v. Hecox / BPJ SCOTUS pending; Trump v. Barbara birthright citizenship SCOTUS pending; V-Dem US reclassification to "electoral democracy." Tracker is current through June 22, 2026.*
+
+---
+
+### 10.4 Callais Cascade Update — Louisiana Map Signed June 1, 2026 (Robinson v. Landry)
+
+**Ruling**: Louisiana Governor Jeff Landry signed a new congressional map on June 1, 2026, dismantling one of the two majority-Black districts that the NAACP LDF and Callais litigation had created. The map redraws Rep. Cleo Fields' district (2nd district, Baton Rouge-anchored) and consolidates majority-white geography around the remaining majority-Black district (Rep. Troy Carter's seat).
+
+**NAACP LDF response**: LDF issued a June 1, 2026 statement calling the map "a flagrant effort to consolidate political power in the hands of the white majority and deny communities across the state — especially Black Louisianians — an equal opportunity to participate in the political process." LDF filed Robinson v. Landry challenging the new maps.
+
+**Significance for Arlington Heights litigation**: Louisiana's speed — map signed 33 days after the April 29 Callais ruling — and the legislative record (compressed special session, suspended May 16 primary, partisan statements about the racial composition of targeted districts) provides precisely the circumstantial evidence the Arlington Heights intentional discrimination framework requires. The sequence of events, departures from normal procedure, and legislative history factors are all documentable from the public record.
+
+**Status**: Litigation active — Robinson v. Landry filed. Emergency preliminary injunction motion likely filed within 30-day window from June 1. Monitor Democracy Docket for filing status.
+
+**Sources**: [NBC News — Louisiana passes new congressional map](https://www.nbcnews.com/politics/2026-election/louisiana-passes-new-congressional-map-dismantling-one-majority-black-rcna347575); [NAACP LDF — Robinson v. Landry](https://www.naacpldf.org/case-issue/robinson-v-landry-louisiana-discriminatory-redistricting/); [Ballotpedia — Louisiana redistricting 2026](https://ballotpedia.org/Redistricting_in_Louisiana_ahead_of_the_2026_elections)
+
+---
+
+### 10.5 Callais Cascade Update — Mississippi and North Dakota GVRs (May 18, 2026)
+
+**Order**: On May 18, 2026, the Supreme Court added two redistricting cases from Mississippi and North Dakota that were pending on the SCOTUS docket, issuing GVR (Grant-Vacate-Remand) orders vacating prior lower court rulings and remanding for reconsideration in light of Callais.
+
+**Significance**: GVR orders are not merits decisions — they do not determine whether the Mississippi and North Dakota maps are lawful. They direct the lower courts to re-evaluate under the new Callais standard (intentional discrimination requirement; disentanglement test). This expands the Callais cascade beyond the six states with active special sessions to encompass any redistricting litigation decided under the pre-Callais Section 2 "totality of circumstances" standard — potentially 15-20 additional redistricting challenges nationwide that will be remanded for Callais-standard re-evaluation.
+
+**Status**: Cases remanded to district courts. No timeline for lower court resolution established. Monitor for emergency preliminary injunction motions in both states if state legislatures draw new maps in anticipation of remand outcomes.
+
+**Sources**: [Louisiana v. Callais Wikipedia — GVR orders](https://en.wikipedia.org/wiki/Louisiana_v._Callais)
+
+---
+
+### Category 11: Prosecutorial Weaponization — Abrego Garcia Tennessee Dismissal (May 22, 2026)
+
+### 11.1 United States v. Abrego Garcia (M.D. Tennessee) — Vindictive Prosecution Dismissal
+
+- **Court**: U.S. District Court, Middle District of Tennessee — Judge Waverly Crenshaw
+- **Case**: Human smuggling charges filed against Kilmar Abrego Garcia after the Trump administration returned him to the U.S. from El Salvador to face criminal prosecution
+- **Decision date**: May 22-23, 2026 — charges dismissed
+
+**What happened**: Kilmar Abrego Garcia was wrongly deported to El Salvador in March 2025 despite a 2019 court order barring his removal there. After SCOTUS ordered his return and Judge Paula Xinis (D.Md.) supervised ongoing contempt proceedings against the administration for noncompliance, the DOJ brought Abrego Garcia back to the U.S. in June to face human smuggling charges in Tennessee — based on a November 2022 traffic stop investigation that DOJ had previously closed without prosecution.
+
+**Ruling**: Judge Waverly Crenshaw dismissed the indictment as vindictive prosecution. Key findings: (1) The government's decision to reopen the 2022 investigation and prosecute was triggered by Abrego Garcia's successful civil litigation challenging his deportation — not by new evidence; (2) high-ranking DOJ officials including Associate Deputy Attorney General Aakash Singh designated the case a "top priority" in internal emails, establishing supervisory interest inconsistent with routine prosecutorial discretion; (3) the objective evidence showed that "absent Abrego's successful lawsuit challenging his removal to El Salvador, the government would not have brought this prosecution."
+
+**Why it matters**: This is a documented instance of DOJ using criminal prosecution to retaliate against a civil rights plaintiff who successfully vindicated constitutional rights. The "vindictive prosecution" doctrine — under which courts dismiss charges when prosecution is triggered by a defendant's exercise of a protected right — was applied to hold DOJ accountable for retaliatory charging. Judge Crenshaw's "realistic likelihood of vindictive prosecution" standard provides the doctrinal anchor.
+
+**Connection to Domain 29 (Prosecutorial Weaponization)**: This ruling is the most legally precise validation yet of the prosecutorial weaponization pattern documented in Domain 29. The court did not rule on policy grounds — it applied established vindictive prosecution doctrine to government conduct. The Abrego Garcia dismissal is now documented precedent that DOJ charges can be dismissed when they are shown to be retaliatory responses to civil rights litigation wins.
+
+**Status**: Charges dismissed. Judge Xinis's Maryland contempt proceedings continue — the DOJ's earlier motion to dismiss the Maryland case is pending. Xinis has not yet ruled on contempt.
+
+**Sources**: [NPR — Tennessee charges dismissed](https://www.npr.org/2026/05/23/nx-s1-5831979/tennessee-judge-dismisses-federal-human-smuggling-charges-against-kilmar-abrego-garcia); [Courthouse News — vindictive prosecution ruling](https://www.courthousenews.com/federal-judge-throws-out-criminal-case-against-kilmar-abrego-garcia-as-vindictive-prosecution/); [Tennessee Lookout — Nashville dismissal](https://tennesseelookout.com/2026/05/22/in-nashville-a-federal-judge-dismisses-indictment-against-kilmar-abrego-garcia/)
+
+---
+
+### Category 12: Voting Rights — SAVE Act Third Senate Blocking (June 4, 2026)
+
+### 12.1 SAVE Act (H.R. 22) — Senate Vote, June 4, 2026
+
+- **Vote result**: Failed 48-50 on June 4, 2026
+- **The blocking coalition**: Four Republican senators — Susan Collins (ME), Lisa Murkowski (AK), Mitch McConnell (KY), and Thom Tillis (NC) — joined every Senate Democrat to defeat the amendment. Senator Lindsey Graham offered the SAVE Act as an amendment to an immigration funding package.
+
+**What the SAVE Act would have done**: Required proof of U.S. citizenship (passport or birth certificate) for voter registration; required photo ID to cast a ballot. For the trans voter suppression analysis in Domain 50: the SAVE Act's passport-based registration requirement compounds with EO 14168's document freeze — trans voters whose passports were frozen in January 2025 could not obtain updated documents to register under SAVE Act requirements.
+
+**Status**: The SAVE Act has now failed Senate passage three times. It remains legally alive as an attachment to must-pass legislation. Senate advocacy to prevent future attachment remains the primary action pathway.
+
+**Significance**: The three-vote blocking record now establishes Collins, Murkowski, McConnell, and Tillis as the Senate firewall against SAVE Act passage. Changes in any of these senators' positions — or changes in Senate composition after November 2026 — would reopen the SAVE Act risk. McConnell's health status is a risk variable for his continued opposition.
+
+**Sources**: [NPR — SAVE Act fails Senate](https://www.npr.org/2026/06/04/nx-s1-5751145/save-act-senate-vote-trump); [Democracy Docket — Senate rejection](https://www.democracydocket.com/news-alerts/senate-rejects-another-gop-push-to-revive-save-america-act/)
+
+---
+
+### Category 13: SCOTUS End-of-Term — Decisions Pending as of June 22, 2026
+
+Three major cases are pending and expected by late June or early July 2026. All three have direct implications for this tracker and for current research domains.
+
+### 13.1 Trump v. Slaughter (FTC Removal Power — Humphrey's Executor)
+
+- **Question**: Whether statutory for-cause removal protections for FTC commissioners violate the separation of powers; whether Humphrey's Executor v. United States (1935) should be overruled
+- **Argued**: December 8, 2025
+- **Expected**: Before SCOTUS summer recess (late June or early July 2026)
+- **Post-argument reading**: All six conservative justices signaled during oral argument that a president should have plenary removal power over any agency exercising executive functions. Chief Justice Roberts characterized Humphrey's Executor as "just a dried husk." Post-argument consensus among Court watchers: government likely to prevail.
+
+**Cascade if decided for government (Humphrey's Executor overruled or narrowed)**: The 5-10 domain cascade flagged in CHECKIN.md. Every federal "independent agency" loses its for-cause protection framework:
+- FTC (the case itself)
+- NLRB — labor enforcement; collective bargaining protection
+- MSPB — federal employee removal protections; Schedule Policy/Career litigation (Domain 29-related)
+- FEC — campaign finance enforcement; Domain 51 (Dark Money) direct impact
+- EEOC — employment discrimination enforcement
+- FERC — energy regulation
+- Federal Reserve (partial exposure — chair removal protection status uncertain)
+
+**For Domain 51 (Dark Money / Campaign Finance)**: FEC enforcement has already been effectively shut down (200+ day enforcement gap). Slaughter removing for-cause protection for FEC commissioners would provide structural legal authority for the political appointees that already control FEC to remain in place indefinitely, without even nominal independence protection. The FEC enforcement shutdown becomes a permanent structural feature rather than a temporary political condition.
+
+**Status**: Pending. Decision expected before July 1, 2026.
+
+**Sources**: [Democracy Docket — Slaughter analysis](https://www.democracydocket.com/news-alerts/supreme-court-trump-ftc-slaughter-dismissal-independent-agencies/); [NBC News — SCOTUS likely to expand removal power](https://www.nbcnews.com/politics/supreme-court/trumps-battle-independent-agencies-back-supreme-court-rcna247407); [ABC News — FTC firing expansion](https://abcnews.go.com/Politics/landmark-case-supreme-court-rule-trumps-bid-control/story?id=128073464)
+
+---
+
+### 13.2 Little v. Hecox / West Virginia v. B.P.J. (Trans Athlete Cases)
+
+- **Question**: Whether state laws prohibiting trans women and girls from competing on women's/girls' school sports teams are constitutional under the Equal Protection Clause
+- **Argued**: January 13, 2026
+- **Expected**: Before SCOTUS summer recess (late June or early July 2026)
+- **Post-argument reading**: Majority of Court appeared likely to uphold state trans sports bans; post-argument consensus from SCOTUSblog is that the Court will rule for the states.
+
+**URGENT DISTRIBUTION TRIGGER for Domain 50**: Per DOMAIN_50_EMAIL_TEMPLATE_SET.md — if Little v. Hecox / BPJ is decided before August 1, 2026, distribute Domain 50's constitutional analysis sections (Sections 3, 9.1, 9.2) to Lambda Legal, ACLU, and HRC IMMEDIATELY. Do not wait for the August 1 deadline. The decision is the optimal distribution window.
+
+**Constitutional stakes**: The decision's classification strategy will determine whether the Skrmetti precedent (June 18, 2025 — rational basis for trans healthcare bans) is extended to athletics, or whether the sports context produces a different analysis. Key question: does the Court apply Bostock's sex-discrimination reasoning (which would require heightened scrutiny) or Skrmetti's avoidance strategy (which would apply rational basis by reclassifying the discrimination as "biology-based" rather than sex-based)?
+
+**Status**: Pending as of June 22, 2026. Decision expected within days.
+
+**Sources**: [SCOTUSblog — Little v. Hecox case file](https://www.scotusblog.com/cases/little-v-hecox/); [SCOTUSblog — Court appears likely to uphold bans](https://www.scotusblog.com/2026/01/supreme-court-appears-likely-to-uphold-transgender-athlete-bans/); [Lambda Legal — oral argument statement](https://lambdalegal.org/newsroom/bpj_us_20250113_scotus-concludes-oral-arguments-in-historic-trans-rights-hearing/)
+
+---
+
+### 13.3 Trump v. Barbara (Birthright Citizenship — 14th Amendment)
+
+- **Question**: Whether EO 14160, purporting to deny 14th Amendment citizenship to children born in the U.S. to parents without lawful permanent immigration status, is constitutional
+- **Argued**: April 1, 2026
+- **Expected**: Before SCOTUS summer recess (late June or early July 2026)
+- **Post-argument reading**: Majority of justices appeared to be against the administration — consensus from court watchers is that the Court will strike down EO 14160 as unconstitutional under the 14th Amendment's Citizenship Clause.
+
+**If decided against government**: Represents the clearest judicial check on executive immigration authority this term. Does not end the broader immigration enforcement crisis but establishes that the 14th Amendment's citizenship guarantee cannot be modified by executive order alone.
+
+**If decided for government (low probability)**: Would be the most significant constitutional reinterpretation since the New Deal — effectively nullifying the settled interpretation of "subject to the jurisdiction thereof" that has governed birthright citizenship since United States v. Wong Kim Ark (1898).
+
+**Status**: Pending as of June 22, 2026. Decision expected before July 1, 2026.
+
+**Sources**: [SCOTUSblog — Trump v. Barbara case file](https://www.scotusblog.com/cases/trump-v-barbara/); [CRS — Trump v. Barbara analysis](https://www.congress.gov/crs-product/LSB11423); [NPR — major cases remaining](https://www.npr.org/2026/06/09/nx-s1-5847967/supreme-court-major-cases-left-2026)
+
+---
+
+### Category 14: Democratic Integrity — V-Dem Reclassification of United States
+
+### 14.1 V-Dem Institute 2026 Democracy Report — US Downgraded to "Electoral Democracy"
+
+- **Report**: V-Dem Institute Democracy Report 2026 (covering 2025 developments)
+- **Finding**: The United States has been reclassified from "liberal democracy" to "electoral democracy" for the first time in over 50 years. The US fell from 20th to 51st place on the Liberal Democracy Index.
+
+**What the distinction means**: V-Dem's "liberal democracy" classification requires: free and fair elections (retained), strong checks and balances (lost), individual protections from tyranny of the majority (degraded), and constraints on government overreach (lost). "Electoral democracy" retains elections but lacks the liberal protective architecture. The US now shares classification with countries like Poland (pre-2023) and Hungary (current).
+
+**V-Dem's characterization**: "The speed with which American democracy is currently dismantled is unprecedented in modern history." The Institute identified executive overreach undermining rule of law, suppression and intimidation of media, loss of legislative constraints, and declining civil rights and freedom of expression.
+
+**Why this matters for research**: The V-Dem downgrade is not advocacy — it is the leading global democracy measurement dataset's empirical assessment. The US is now classified as experiencing active democratic backsliding by the most widely cited academic measurement instrument. This provides the empirical foundation for Domain I (International Democratic Standards) research: the US's classification has moved into the same analytical category that justifies international monitoring and solidarity frameworks.
+
+**US global ranking context**: Six of the ten new autocratizing countries identified in the 2026 report are in Europe and North America, including the UK and Italy alongside the US — signaling that democratic erosion is no longer primarily a "Global South" or "Eastern European" phenomenon. The US's acceleration is characterized as faster than Hungary's at the comparable stage of that country's democratic backsliding.
+
+**Sources**: [V-Dem Institute — press release](https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/); [Verfassungsblog — Losing Liberal Democracy](https://verfassungsblog.de/losing-liberal-democracy/); [Democracy Without Borders — V-Dem report analysis](https://www.democracywithoutborders.org/41651/v-dem-report-finds-global-democracy-is-back-at-1978-levels/)
+
+---
+
+*June 22, 2026 update pass completed. Items added: Louisiana June 1 map (Robinson v. Landry, Section 10.4); Mississippi/North Dakota GVRs (Section 10.5); Abrego Garcia Tennessee vindictive prosecution dismissal — May 22 (Section 11.1); SAVE Act third Senate blocking — June 4 (Section 12.1); Trump v. Slaughter pending with cascade analysis (Section 13.1); Little v. Hecox / BPJ pending with Domain 50 distribution trigger (Section 13.2); Trump v. Barbara pending (Section 13.3); V-Dem US reclassification to electoral democracy (Section 14.1). Tracker is now current through June 22, 2026.*

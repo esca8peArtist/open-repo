@@ -156,4 +156,26 @@ I am happy to discuss the analysis or provide an adapted version for your specif
 
 ---
 
-*Templates created: May 22, 2026. Gist URL placeholder (`[DOMAIN_57_GIST_URL]`) must be filled after creating the Gist per `domain-57-gist-creation-steps.md` before any email is sent. Distribution target: August 10, 2026.*
+---
+
+## UNGA 81 Framing Paragraph — Insert into All Four Templates Before Sending (August 8-9 Pre-Send Verification Step)
+
+*Context for use*: Add this paragraph to each template at the location indicated below. The paragraph is optional but strongly recommended for templates sent to international-facing recipients (Templates 1, 2, 4). For Template 3 (Congressional staff), the UNGA timing is already embedded in the body; no separate addition needed.
+
+*Placement*: Insert as the second paragraph of each email — after the opening identification sentence, before the substantive analysis.
+
+---
+
+**UNGA 81 framing paragraph (copy-paste ready):**
+
+> The UNGA 81 High-Level General Debate opens September 22, 2026 — exactly two years after world leaders adopted the Pact for the Future at the Summit of the Future on September 22, 2024. The Pact, which the United States signed, committed member states to "a new beginning to multilateralism" across 56 specific commitments. The January 7, 2026 US withdrawal from 66 international organizations — including the UN Human Rights Council, the IPCC, UNESCO, and the UN Democracy Fund — directly contravenes Pact commitments on democratic governance, climate accountability, and science-technology cooperation. UNGA 81 is the first General Assembly High-Level Week at which other member states will be asked to continue advancing Pact commitments while the country that signed it 24 months earlier has materially abandoned the institutional architecture the Pact depends on. The research document I'm sharing documents this architecture and the reform pathways that remain available.
+
+---
+
+*Framing note*: The Pact for the Future / UNGA 81 framing is the strongest available hook for international and foreign-policy audiences because it: (1) grounds Domain 57's analysis in a specific UN event with concrete timing; (2) identifies the US as a Pact signatory that has violated its commitments — a claim that is legally defensible and factually specific; (3) gives recipient organizations a natural advocacy vehicle (UNGA 81 general debate statements, side events, and working group submissions) for using the Domain 57 research immediately after receiving it.
+
+*August 8-9 pre-send verification*: Before the August 10 send, verify that the Gist URL in all four templates has been filled (`[DOMAIN_57_GIST_URL]` replaced with the live Gist URL from `domain-57-gist-creation-steps.md`). Then add the UNGA framing paragraph to Templates 1, 2, and 4 per the placement instruction above. Re-verify contact emails against live organizational websites — staff turnover since May 2026 may have affected some Tier 1 direct contacts.
+
+---
+
+*Templates created: May 22, 2026. UNGA framing paragraph added: June 22, 2026 (Session 3XXX). Gist URL placeholder (`[DOMAIN_57_GIST_URL]`) must be filled after creating the Gist per `domain-57-gist-creation-steps.md` before any email is sent. Distribution target: August 10, 2026.*

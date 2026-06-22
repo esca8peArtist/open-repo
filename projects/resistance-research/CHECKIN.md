@@ -1,6 +1,61 @@
 # CHECKIN — Needs Your Input
 
-*Updated: June 17, 2026 — Phase 2 Wave 1 verification complete; three domains ready for user sends*
+*Updated: June 22, 2026 — Session 3XXX: Domain 49/50 files committed (8ca10f44); litigation tracker updated through June 22; three SCOTUS decisions imminent (Trump v. Slaughter, Little v. Hecox / BPJ, Trump v. Barbara — all expected within days)*
+
+---
+
+## ACTION REQUIRED: Three SCOTUS Decisions Expected Within Days (June 22, 2026)
+
+The Supreme Court term is in its final days. Three major decisions are pending, each with direct implications for active research domains and distribution timelines.
+
+### Decision 1 — Little v. Hecox / West Virginia v. B.P.J. (Trans Athlete Cases)
+
+**Expected**: Any day before the Court's summer recess. As of June 22, not yet issued.
+
+**IMMEDIATE DISTRIBUTION TRIGGER**: When this decision is released — check supremecourt.gov or SCOTUSblog — execute Domain 50 immediate distribution to Lambda Legal, ACLU, and HRC SAME DAY. Do not wait for August 1.
+
+The distribution trigger is already built into DOMAIN_50_EMAIL_TEMPLATE_SET.md (Template A, "If the Little v. Hecox / BPJ SCOTUS decision has been issued" language). The Gist needs to be created first (DOMAIN_50_GIST_PREP.md — 5-10 minutes). Then send Template A with the decision-referenced variant to:
+1. Lambda Legal — info@lambdalegal.org — "Lambda Legal specifically" variant
+2. ACLU LGBTQ+ Rights Project — aclu.org/contact — standard Template A
+3. HRC — hrc@hrc.org — standard Template A
+
+Post-argument reading: Court likely to uphold trans sports bans. If so, the Kalarchik state constitutional strict scrutiny model (Section 9.1 of Domain 50) becomes the lead strategic alternative — Montana applied strict scrutiny in April 2026, Colorado and Washington constitutions may do the same. Lambda Legal's Colorado ballot measure litigation becomes even more important as a state court vehicle after federal constitutional options narrow.
+
+**Check**: supremecourt.gov/opinions/slipopinion/25 — look for case number 24-38 (Little v. Hecox) or 24-43 (West Virginia v. B.P.J.)
+
+---
+
+### Decision 2 — Trump v. Slaughter (FTC Removal Power — Independent Agency Structure)
+
+**Expected**: Before July 1, 2026. As of June 22, not yet issued.
+
+**No immediate distribution trigger** — but if Humphrey's Executor is overruled or meaningfully narrowed, update Domain 51 (Campaign Finance / Dark Money) with a note on FEC structural implications and flag for Domain K research scope expansion.
+
+Post-argument reading: All six conservative justices signaled support for the administration. Decision will likely overrule or substantially narrow Humphrey's Executor. Cascade agencies: NLRB, MSPB, FEC, EEOC, FERC.
+
+**Check**: supremecourt.gov/opinions/slipopinion/25 — case number 25-332
+
+---
+
+### Decision 3 — Trump v. Barbara (Birthright Citizenship)
+
+**Expected**: Before July 1, 2026. As of June 22, not yet issued.
+
+**If issued against government** (expected outcome): Domain 58 rapid-response distribution is ready (DOMAIN_58_TRUMP_V_BARBARA_RAPID_RESPONSE.md, DOMAIN_58_DISTRIBUTION_BRIDGE.md). Verify at supremecourt.gov BEFORE executing — prior automated alert on June 2 was a false positive. Only execute after confirming the real opinion at supremecourt.gov/opinions/slipopinion/25.
+
+Post-argument reading: Majority appeared likely to strike down EO 14160. A ruling against the administration is the most significant judicial check on executive immigration power this term.
+
+**Check**: supremecourt.gov/opinions/slipopinion/25 — case number 25-365
+
+---
+
+## RESOLVED: Nashville Crenshaw Ruling — "Imminent" Flag from April 2026
+
+This ruling has now issued. Judge Waverly Crenshaw (M.D. Tennessee) dismissed the federal human smuggling charges against Kilmar Abrego Garcia on May 22-23, 2026, finding vindictive prosecution. The dismissal is documented in litigation-tracker-2026.md Category 11.1. The prior "imminent" monitoring flag in CHECKIN.md and PROJECTS.md can be treated as resolved.
+
+---
+
+*Section added June 22, 2026 (Session 3XXX).*
 
 ---
 
