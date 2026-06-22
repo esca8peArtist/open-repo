@@ -1,6 +1,26 @@
 # CHECKIN — Needs Your Input
 
-*Updated: June 22, 2026 — Session 3XXX: Domain 49/50 files committed (8ca10f44); litigation tracker updated through June 22; three SCOTUS decisions imminent (Trump v. Slaughter, Little v. Hecox / BPJ, Trump v. Barbara — all expected within days)*
+*Updated: June 22, 2026 — Session 3913: Domain 57 Gist audit complete; DOMAIN_57_GIST_URL.txt action note added; one user action required before August 8-9 (see below). Three SCOTUS decisions imminent (Trump v. Slaughter, Little v. Hecox / BPJ, Trump v. Barbara — all expected within days).*
+
+---
+
+## ACTION REQUIRED (Before August 8, 2026): Record Domain 57 Gist URL
+
+**What is missing**: The Domain 57 Gist was created June 1, 2026 (confirmed in PROJECTS.md and CHECKIN.md June 3 entry). The full 7,200-word research document exists and is distribution-ready. However, the actual Gist URL hash has never been recorded in `DOMAIN_57_GIST_URL.txt` — the file still contains the placeholder `[HASH_TO_BE_FILLED_AFTER_CREATION]`.
+
+**Why this matters**: The August 10 send to Tier 1 contacts (ASIL, Just Security, Lawfare, Carnegie, PIIE) requires a live Gist URL in the email templates. The August 8-9 re-verification checklist includes confirming the URL resolves HTTP 200. Without the actual URL recorded, the August 10 send cannot be executed.
+
+**How to fix (5 minutes)**:
+1. Log into github.com as esca8peArtist
+2. Go to https://gist.github.com/esca8peArtist — find the Domain 57 gist (description: "Domain 57: Multilateral Withdrawal and Executive Unilateralism — 7,200 words, 47 citations")
+3. Copy the full URL (format: https://gist.github.com/esca8peArtist/[40-char-hash])
+4. Replace the placeholder in `DOMAIN_57_GIST_URL.txt`
+5. Add the URL to `DISTRIBUTION_GIST_URLS.md`
+6. Verify: `curl -sI [URL] | head -1` should return `HTTP/2 200`
+
+**No urgency before July 28** — this can be done at the same time as the July 28 UNGA framing paragraph draft task. But do not let August 8 arrive without completing it.
+
+---
 
 ---
 

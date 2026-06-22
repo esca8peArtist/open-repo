@@ -9,6 +9,17 @@
 https://gist.github.com/esca8peArtist/[HASH_TO_BE_FILLED_AFTER_CREATION]
 ```
 
+**ACTION REQUIRED (user)**: The Gist was created June 1, 2026 (per CHECKIN.md and PROJECTS.md), but the actual URL hash has never been recorded in this file. Before August 8-9 re-verification:
+1. Log into github.com as esca8peArtist
+2. Go to https://gist.github.com/esca8peArtist
+3. Find the gist titled "Domain 57: Multilateral Withdrawal and Executive Unilateralism — 7,200 words, 47 citations, CC Attribution 4.0"
+4. Copy the full URL (format: https://gist.github.com/esca8peArtist/[40-char-hash])
+5. Replace [HASH_TO_BE_FILLED_AFTER_CREATION] in this file with the real hash
+6. Run a quick HTTP 200 check (curl -sI [URL] | head -1) to confirm it resolves
+7. Update DISTRIBUTION_GIST_URLS.md with the Domain 57 URL
+
+This is the last blocking step before the August 10 send window opens. The research document is complete; the Gist exists; only the URL record is missing.
+
 **Gist filename**: `domain-57-multilateral-withdrawal-and-us-commitment-collapse.md`
 
 **Gist description**: "Domain 57: Multilateral Withdrawal and Executive Unilateralism — 7,200 words, 47 citations, CC Attribution 4.0"
