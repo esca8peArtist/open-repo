@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-22T22:52:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-22T23:29:30Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🔴 Usage: Sonnet 19.2% (1,718,758 tokens) | All-models 96.9% | Reset in 1h | check: claude.ai → Settings → Usage & billing
+🔴 Usage: Sonnet 19.2% (1,718,758 tokens) | All-models 97.7% | Reset in 0h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -64,6 +64,11 @@
 - POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines): 6 prioritized blockers identified; root cause = platform/runtime decision expired June 15 23:59 UTC with no user response
 - DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines, Session 3770): 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000; confidence 99%
 
+## State Drift Warnings
+⚠️ STALE FOCUS: resistance-research — focus references Session 3902 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 3902 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 3902 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: seedwarden — focus references Session 3902 (15 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
