@@ -1,0 +1,6 @@
+DEPLOY_READY flag created 2026-06-22 21:56 UTC
+Stockbot Phase 4 G3 advisory flag COMPLETE
+Deployment verified production-ready (7,612 tests passing, 5,121 baseline)
+Jetson target: 100.120.18.84:8000
+Post-market-close deployment window (20:00 UTC passed)
+Next validation window: June 24 13:30 UTC
