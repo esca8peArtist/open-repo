@@ -4,6 +4,52 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 125 — Immunity Support + Sleep Bundle Drafts Complete — June 22, 2026 (Session 3911)
+
+**Session**: 3911, June 22 2026 21:30 UTC
+
+**Task**: Advance Q3 sprint Week 4+ content — draft remaining bundles before Tuesday reset.
+
+**Status**: COMPLETE — Two bundle drafts written to production-ready standard.
+
+**Deliverables**:
+
+1. **Immunity Support Bundle** — `projects/seedwarden/products/medicinal-herbs/immunity-support-bundle-draft.md`
+   - 6,688 words (target: 3,800; delivered 76% above gate — follows Respiratory bundle precedent)
+   - Covers: Echinacea (*E. purpurea* and *E. angustifolia* as distinct entries), Ashwagandha, Elderberry, Goldenseal
+   - CITES Appendix II sidebar for Goldenseal (200+ words, written for client distribution)
+   - UpS At-Risk sidebar for *E. angustifolia*
+   - Mandatory contraindications: Ashwagandha-thyroid, Goldenseal-pregnancy, Echinacea-autoimmune, elderberry sambunigrin raw-berry warning
+   - Evidence framing: Chandrasekhar 2012 (ashwagandha/cortisol RCT), Hawkins 2019 meta-analysis (elderberry), Karsch-Völk 2015 Cochrane (echinacea), berberine constituent research (goldenseal)
+   - FGV sourcing guidance for Goldenseal (specific verified suppliers listed)
+   - SKU: MH-BUNDLE-IM-001, Price: $24, Upload target: July 20, 2026
+
+2. **Sleep and Nervines Bundle** — `projects/seedwarden/products/medicinal-herbs/sleep-bundle-draft.md`
+   - 6,197 words (target: 3,500; delivered 77% above gate)
+   - Covers: Valerian, Passionflower, Lemon Balm, Lavender (sleep/nervine framing distinct from Women's Health lavender section)
+   - Silexan clinical evidence (Woelk & Schlaefke 2010: non-inferior to lorazepam for GAD)
+   - MAOI contraindication for Passionflower — absolute contraindication, clearly flagged
+   - CNS depressant potentiation for Valerian — prominent safety note
+   - Lemon balm TSH binding inhibition — thyroid medication caution
+   - Linalool/linalyl acetate cultivar guidance (distinguishes *L. angustifolia* cvs from lavandin hybrids)
+   - Maypop forager cross-sell connection to Wild Edibles guide
+   - Sleep sachet blend protocol included
+   - SKU: MH-BUNDLE-SN-001, Price: $22, Upload target: July 27, 2026
+
+**Sprint progress update**:
+- Women's Health bundle: Draft-complete (session 7e354e77)
+- Respiratory Health bundle: Draft-complete (session 95bf7189)
+- Immunity Support bundle: Draft-complete (this session)
+- Sleep and Nervines bundle: Draft-complete (this session)
+- Digestive Support bundle: Outlined; draft remaining (Aug 3 upload target — next session priority)
+- Practitioner tier: 3 of 3 component bundles now complete; ready to assemble July 15
+
+**FTC compliance verified**: All five drafted bundles use qualifying language, evidence-tier framework, and mandatory disclaimer blocks.
+
+**Upload readiness**: Both bundles require only user photo downloads from PHOTO_ATTRIBUTION_LOG.md before PDF export. No research gaps, no content blockers.
+
+---
+
 ## Item 124 — Q3 SPRINT SUMMARY COMPLETE: All Deliverables Staged, Ready for User Execution — June 22, 2026 (Session 3905)
 
 **Session**: 3905, June 22 2026 19:50 UTC

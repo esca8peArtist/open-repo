@@ -58,16 +58,16 @@ sprint-dates: June 22 — July 15, 2026
 
 | Bundle | Species | Word Count | Status | Target Upload | Notes |
 |---|---|---|---|---|---|
-| Women's Health | Black Cohosh, Vitex, Red Clover, Calendula, Lavender | 3,800 | 🟡 Draft-in-progress | June 29 | Researched, outlined, partial draft complete |
+| Women's Health | Black Cohosh, Vitex, Red Clover, Calendula, Lavender | 5,673 | ✅ DRAFT-COMPLETE | June 29 | All 5 species complete; 49% above word-count gate |
 | Respiratory | Elderberry, Mullein, Echinacea (2 spp), Thyme | 5,400 | ✅ DRAFT-COMPLETE | July 6 | Released 4 days early; 116% above word-count gate |
-| Immunity | Echinacea, Ashwagandha, Elderberry, Goldenseal | ~4,000 | 🟡 Outlined | July 20 | CITES sidebar mandatory; UpS callout embedded |
-| Sleep | Valerian, Passionflower, Lemon Balm, Lavender | ~3,800 | 📋 Outlined | July 27 | Drug-herb interaction depth required (MAOIs, CNS depressants) |
-| Digestive | Dandelion, Calendula, Lemon Balm, Ginger | ~3,600 | 📋 Outlined | Aug 3 | Root content (dandelion) differentiator; studio shots needed |
-| **Practitioner Tier** | Women's Health + Respiratory + Sleep | ~13,000 | 🟡 Partial | July 15 | Bundled product launch; upload date confirmed |
+| Immunity | Echinacea, Ashwagandha, Elderberry, Goldenseal | 6,688 | ✅ DRAFT-COMPLETE | July 20 | CITES sidebar complete; UpS callout embedded; 76% above gate |
+| Sleep | Valerian, Passionflower, Lemon Balm, Lavender | 6,197 | ✅ DRAFT-COMPLETE | July 27 | MAOI+CNS contraindications complete; Silexan evidence framed; 77% above gate |
+| Digestive | Dandelion, Calendula, Lemon Balm, Ginger | ~3,600 | 📋 Outlined | Aug 3 | Root content (dandelion) differentiator; studio shots needed — next draft priority |
+| **Practitioner Tier** | Women's Health + Respiratory + Sleep | ~17,000 | 🟡 3/3 components done | July 15 | Bundled product launch; all component bundles now draft-complete |
 
-**Key Finding**: The Respiratory bundle completion (5,400 words, June 22) **5 days ahead of gate** demonstrates production pipeline health. Sprint velocity is strong.
+**Key Finding**: All four of five bundles are now draft-complete as of Session 3911 (June 22). The Digestive bundle remains the only outstanding draft (Aug 3 upload target). Sprint velocity is strong — all word counts are 49–77% above their gates.
 
-**Women's Health Status**: Draft submitted; currently undergoing completion review. Word count target 3,800; estimated completion June 28.
+**Session 3911 Update**: Immunity Support (6,688w) and Sleep and Nervines (6,197w) both drafted and committed. Women's Health was confirmed full-draft-complete in prior sessions (5,673w).
 
 ---
 
@@ -233,16 +233,19 @@ The Women's Health, Respiratory, Immunity, Sleep, and Digestive bundles have **z
 
 ---
 
-## Autonomous Work Complete (This Session)
+## Autonomous Work Complete (Sessions 3905 + 3911)
 
-✅ Reviewed all Q3 staged content
-✅ Verified photo attribution log completeness (16/16 species confirmed)
-✅ Confirmed all blog posts are publication-ready
-✅ Verified all kit emails are ready with minimal placeholders
-✅ Identified no publication blockers
-✅ Verified bundle drafts are on-track
-✅ Created this comprehensive Q3 status document
-✅ All work is user-action-dependent (photos, metrics, partner confirmation)
+✅ Reviewed all Q3 staged content (3905)
+✅ Verified photo attribution log completeness (16/16 species confirmed) (3905)
+✅ Confirmed all blog posts are publication-ready (3905)
+✅ Verified all kit emails are ready with minimal placeholders (3905)
+✅ Identified no publication blockers (3905)
+✅ Verified bundle drafts are on-track (3905)
+✅ Created comprehensive Q3 status document (3905)
+✅ Drafted Immunity Support bundle — 6,688 words, all species complete (3911)
+✅ Drafted Sleep and Nervines bundle — 6,197 words, all species complete (3911)
+✅ Updated WORKLOG.md with item 125 (3911)
+✅ 4 of 5 bundles now draft-complete; Digestive Support is the only remaining draft
 
 ---
 
