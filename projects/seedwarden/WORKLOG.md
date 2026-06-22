@@ -4,6 +4,34 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 120 — Women's Health Bundle Draft Complete (D1 Sprint) — June 22, 2026
+
+**Task**: Write Women's Health bundle PDF draft — Sprint Day 1 task per PHASE_3_CRITICAL_PATH_ANALYSIS_JUNE22_JULY13.md. Target: 700 words (Black Cohosh intro + conservation sidebar). Delivered: full bundle draft.
+
+**Deliverable produced**:
+
+`projects/seedwarden/products/medicinal-herbs/womens-health-bundle-draft.md` — Complete Women's Health bundle draft, 5,673 words. All five species written in full: Black Cohosh, Vitex, Red Clover, Calendula, Lavender. Document includes: front matter with FTC disclaimer, introduction section, five full species chapters (identification, cultivation, harvest, medicinal uses with evidence citations, preparation methods, safety notes), contraindication reference table, preparation methods reference appendix, and sources list (11 citations).
+
+**Species chapters delivered**:
+1. Black Cohosh (*Actaea racemosa*) — 700w target hit; includes 150w UpS At-Risk conservation sidebar (mandatory per critical path), identification, cultivation, harvest, evidence review (Cochrane 2012, ACOG), preparation, safety notes including hepatotoxicity signal
+2. Vitex (*Vitex agnus-castus*) — 600w; invasive-watch sidebar for TN/NC, dopaminergic mechanism, PMS RCT evidence (Cochrane 2017), pregnancy contraindication (mandatory)
+3. Red Clover (*Trifolium pratense*) — 400w; isoflavone framing, forager edibility crossover, anticoagulant interaction (warfarin — mandatory)
+4. Calendula (*Calendula officinalis*) — 400w; topical wound healing evidence (Pommier 2009 RCT), internal mucous membrane framing, Asteraceae allergy note
+5. Lavender (*Lavandula angustifolia*) — 400w; Silexan evidence (Woelk 2010, 2014), three cultivar notes (Hidcote, Munstead, Phenomenal), essential oil ingestion caution
+
+**Pace gate status**: D3 pace gate (June 24 EOD: must be 2,500+ words) is cleared three days early. Full bundle word count (5,673w) exceeds the 3,800w production target. Bundle is substantively complete as a first draft — requires self-edit pass (scheduled D6/D7) and PDF export QA before upload.
+
+**FTC compliance**: All health claims are evidence-tied with explicit study citation. No "treats" or "cures" language. Contraindication section is prominent in both individual species sections and the cross-reference table. Disclaimer appears on page 1.
+
+**Next required actions**:
+- D2 (June 23): Begin Respiratory Health bundle — Elderberry (800w) is D4 task per critical path; WH bundle now available for self-edit pass on D6
+- D6/D7: WH self-edit + PDF export QA (file size <5MB, no placeholder text, attribution confirmed)
+- June 29 AM: Upload Women's Health to Etsy at $22 (SKU: MH-BUNDLE-WH-001)
+
+**Outstanding pre-sprint gate (overdue from June 21)**: Photo attribution log (`assets/phase-3-medicinal-herbs/PHOTO_ATTRIBUTION_LOG.md`) — all 16 habit images still show `[fill]` status. Wikimedia CC sources are documented in the log's search URLs; confirmed image selection and download require user action. The bundle draft text does not depend on photos (photos go in the Canva layout, not the .md source), so this does not block the June 29 upload of the PDF itself — but Etsy listing images require at least one cover image and thumbnail.
+
+---
+
 ## Item 119 — Phase 3 Contractor Outreach Prep Complete — June 22, 2026
 
 **Task**: Complete all autonomous preparation work for Phase 3 contractor outreach: contractor selection scorecard, pre-filled email templates for all 11 candidates, response tracking dashboard update, and WORKLOG documentation.
