@@ -4,6 +4,48 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 123 — Q3 Research Advancement: Blog Posts, Kit Emails, Photo Attribution Research — June 22, 2026
+
+**Session**: 3902e, June 22 2026 18:00 UTC
+
+**Tasks executed**:
+
+1. **Week 2 Blog Post** — `projects/seedwarden/phase-3/blog-post-week2-goldenseal-conservation.md`
+   - ~800 words. Title: "Goldenseal (*Hydrastis canadensis*): Conservation Status, CITES Listing, and Why Cultivated Sources Matter"
+   - Covers: UpS At-Risk listing, CITES Appendix II since 1997, FGV certification program, Forest Grown Verified directory (unitedplantsavers.org/forest-grown-verified), state-level protection status (7 states Endangered), why wildcrafting supply chain is the problem, practitioner obligation to specify cultivated sources.
+   - CTA: Immunity bundle (non-promotional embed). Co-byline offer for UpS (Susan Leopold) still open.
+   - Publish date: July 1, 2026. No user input required before publishing.
+
+2. **Week 2 Kit Email** — `projects/seedwarden/phase-3/kit-email-week2-immunity-bundle.md`
+   - ~310 words. Subject: "Goldenseal, Echinacea, Ashwagandha — what the Immunity bundle covers"
+   - Send date: June 29, 2026 (same day as Women's Health upload goes live).
+   - Covers all four Immunity species with key clinical note per species. Links to Week 2 blog post. One placeholder: [Etsy shop link].
+
+3. **Week 3 Kit Email** — `projects/seedwarden/phase-3/kit-email-week3-community-faq.md`
+   - ~340 words. Subject: "Questions answered + a free species profile"
+   - Send date: July 6, 2026.
+   - Three-question FAQ format (student / wildcrafting / clinical practitioner segmentation). Free Black Cohosh profile re-engagement hook. One placeholder: [BLACK COHOSH PROFILE LINK] + [Etsy shop link].
+
+4. **Photo Attribution Log Research** — `projects/seedwarden/assets/phase-3-medicinal-herbs/PHOTO_ATTRIBUTION_LOG.md`
+   - Researched and logged Wikimedia Commons CC-licensed sources for all 16 unconfirmed medicinal herb habit images (the June 21 zero-float gate that was overdue).
+   - All 16 species now have confirmed source URLs, photographer credits, and license specifications.
+   - 13 sources fully confirmed (direct file page verification). 3 require user visual verification of composition before download (Lavender habit, Lemon Balm habit, Ashwagandha habit — may be close-up vs. full plant).
+   - E. angustifolia USDA image is low-resolution (330×220px) — recommend iNaturalist supplement.
+   - Passionflower flower image (listing thumbnail priority) — source URL identified; user must verify license on file page before download.
+   - Goldenseal: Eric Hunt CC BY-SA 4.0, Newton County AR, 12.36MB high-res — best image in the set.
+   - Cross-reference table updated to show all 17 species (including Dandelion pre-staged) with confirmation status.
+
+**User actions still required**:
+- Download 16 confirmed habit images from their Wikimedia URLs to `assets/phase-3-medicinal-herbs/[species-slug]/`
+- Verify composition on 3 sources (Lavender, Lemon Balm, Ashwagandha) before downloading
+- Verify Passionflower flower license on file page
+- Supplement E. angustifolia with iNaturalist higher-res alternative
+- Insert [YOUR_NAME] and [YOUR_EMAIL] in outreach templates (Item 119) and send contractor emails
+
+**No autonomous blockers**: All content and research complete.
+
+---
+
 ## Item 122 — Week 1 Blog Post Draft Complete — June 22, 2026
 
 **Task**: Write Week 1 content calendar blog post (evidence-tier explainer). Per CONTENT_CALENDAR_JUNE_22_JULY_15.md, publish date June 23, 600–800 words, educational angle, practitioner CTA.

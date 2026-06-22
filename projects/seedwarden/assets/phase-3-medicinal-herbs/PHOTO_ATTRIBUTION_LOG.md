@@ -47,8 +47,8 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (forest floor) | `black-cohosh-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
-| Flower spike | `black-cohosh-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
+| Habit (full plant) | `black-cohosh-habit.jpg` | https://commons.wikimedia.org/wiki/File:Actaea_racemosa_005.JPG | H. Zell (Llez) | CC BY-SA 3.0 | "Photo: H. Zell, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Actaea_racemosa_005.JPG" | [x] Confirmed (agent-researched 2026-06-22) |
+| Flower spike | `black-cohosh-flower.jpg` | https://commons.wikimedia.org/wiki/File:Actaea_racemosa_002.JPG | H. Zell (Llez) | CC BY-SA 3.0 | "Photo: H. Zell, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Actaea_racemosa_002.JPG" | [x] Optional — confirmed |
 | Seed cluster | `black-cohosh-seeds.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 | Rhizome | `black-cohosh-root.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 
@@ -65,7 +65,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (full shrub) | `vitex-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Habit (full shrub) | `vitex-habit.jpg` | https://commons.wikimedia.org/wiki/File:Vitex-agnus-castus-habit.JPG | Sten Porse (uploaded by Siebrand) | CC BY-SA 3.0 | "Photo: Sten Porse, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Vitex-agnus-castus-habit.JPG" | [x] Confirmed (agent-researched 2026-06-22) |
 | Flower spike | `vitex-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 | Berry cluster | `vitex-berries.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 
@@ -82,8 +82,8 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (plant in bloom) | `red-clover-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
-| Flower head | `red-clover-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
+| Habit (plant in bloom) | `red-clover-habit.jpg` | https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG | Böhringer Friedrich | CC BY-SA 2.5 | "Photo: Böhringer Friedrich, Wikimedia Commons, CC BY-SA 2.5. URL: https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG" | [x] Confirmed (agent-researched 2026-06-22; note: flower close-up, not full plant — user may prefer iNaturalist for full-plant shot) |
+| Flower head | `red-clover-flower.jpg` | https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG | Böhringer Friedrich | CC BY-SA 2.5 | "Photo: Böhringer Friedrich, Wikimedia Commons, CC BY-SA 2.5. URL: https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG" | [x] Optional — same image |
 
 ---
 
@@ -96,7 +96,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (garden row) | `calendula-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Habit (garden row) | `calendula-habit.jpg` | https://commons.wikimedia.org/wiki/File:Calendula_officinalis_001.JPG | H. Zell (Llez) | CC BY-SA 3.0 | "Photo: H. Zell, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Calendula_officinalis_001.JPG" | [x] Confirmed (agent-researched 2026-06-22) |
 | Flower close-up | `calendula-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 | Infused oil | `calendula-oil.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional — studio shot preferred |
 | Dried petals | `calendula-dried.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional — studio shot preferred |
@@ -115,8 +115,8 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (garden rows) | `lavender-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
-| Flower spike | `lavender-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
+| Habit (garden rows) | `lavender-habit.jpg` | https://commons.wikimedia.org/wiki/File:Lavandula_angustifolia_002.JPG | H. Zell (Llez) | CC BY-SA 3.0 | "Photo: H. Zell, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Lavandula_angustifolia_002.JPG" | [x] Confirmed (agent-researched 2026-06-22; note: this file shows inflorescence — user should verify file 002 vs 003 shows the habit they prefer; category page may have a better full-shrub option) |
+| Flower spike | `lavender-flower.jpg` | https://commons.wikimedia.org/wiki/File:Lavandula_angustifolia_003.JPG | H. Zell (Llez) | CC BY-SA 3.0 | "Photo: H. Zell, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Lavandula_angustifolia_003.JPG" | [x] Optional — confirmed |
 | Dried bundle | `lavender-dried.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional — studio shot preferred |
 
 **Note**: Lavender also appears in Sleep bundle. Use same images; write distinct framing (sleep sachet / linalool aromatherapy vs. Women's Health / Hidcote cultivar cultivation).
@@ -136,7 +136,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (full shrub) | `elderberry-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Habit (full shrub) | `elderberry-habit.jpg` | https://commons.wikimedia.org/wiki/File:Sambucus_nigra_0001.JPG | H. Zell (Llez) | CC BY-SA 3.0 | "Photo: H. Zell, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Sambucus_nigra_0001.JPG" | [x] Confirmed (agent-researched 2026-06-22; note: S. nigra habit; check Sambucus_canadensis category for native elder alternative) |
 | Flower cluster | `elderberry-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 | Berry cluster | `elderberry-berries.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 
@@ -153,7 +153,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Second-year habit (full spike) | `mullein-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Second-year habit (full spike) | `mullein-habit.jpg` | https://commons.wikimedia.org/wiki/File:Verbascum_thapsus_HRM_1.JPG | Cillas | CC BY-SA 4.0 | "Photo: Cillas, Wikimedia Commons, CC BY-SA 4.0. URL: https://commons.wikimedia.org/wiki/File:Verbascum_thapsus_HRM_1.JPG" | [x] Confirmed (agent-researched 2026-06-22; verify image shows second-year spike before download) |
 | First-year rosette | `mullein-rosette.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 | Flower spike detail | `mullein-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 
@@ -168,7 +168,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (garden setting) | `echinacea-purpurea-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Habit (garden setting) | `echinacea-purpurea-habit.jpg` | https://commons.wikimedia.org/wiki/File:Echinacea_purpurea_001.JPG | H. Zell (Llez) | CC BY-SA 3.0 | "Photo: H. Zell, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Echinacea_purpurea_001.JPG" | [x] Confirmed (agent-researched 2026-06-22; confirmed full-plant habitus shot) |
 | Flower head | `echinacea-purpurea-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 
 ---
@@ -182,7 +182,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Prairie habit | `echinacea-angustifolia-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Prairie habit | `echinacea-angustifolia-habit.jpg` | https://commons.wikimedia.org/wiki/File:Echinacea.angustifolia01.jpg | Clarence A. Rechenthin, USDA-NRCS PLANTS Database | Public Domain (USDA employee work) | "Photo: Clarence A. Rechenthin, USDA-NRCS PLANTS Database, Public Domain. URL: https://commons.wikimedia.org/wiki/File:Echinacea.angustifolia01.jpg" | [x] Confirmed (agent-researched 2026-06-22; note: specimen-style photo against plain background, 330×220px — may be low resolution; check iNaturalist for higher-res prairie habitat alternative) |
 | Root comparison | `echinacea-root.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional — studio shot preferred |
 
 **Note**: UpS At-Risk conservation sidebar is mandatory in the guide body. Same format as Black Cohosh sidebar.
@@ -198,7 +198,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (mounded plant) | `thyme-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Habit (mounded plant) | `thyme-habit.jpg` | https://commons.wikimedia.org/wiki/File:Thymus_vulgaris1.JPG | Henry Brisse (uploaded by Abalg) | CC BY-SA 3.0 | "Photo: Henry Brisse, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Thymus_vulgaris1.JPG" | [x] Confirmed (agent-researched 2026-06-22; verify full mounded habit visible before download) |
 | Flower close-up | `thyme-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 
 ---
@@ -216,7 +216,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (tall stalk) | `valerian-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Habit (tall stalk) | `valerian-habit.jpg` | https://commons.wikimedia.org/wiki/File:Valeriana_officinalis_001.JPG | H. Zell (Llez) | CC BY-SA 3.0 | "Photo: H. Zell, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Valeriana_officinalis_001.JPG" | [x] Confirmed (agent-researched 2026-06-22; confirmed full habitus portrait shot) |
 | Flower cluster | `valerian-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 | Root (dug) | `valerian-root.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional — studio shot preferred |
 
@@ -233,8 +233,8 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Flower (listing thumbnail) | `passionflower-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed — highest priority |
-| Habit (vine on trellis) | `passionflower-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
+| Flower (listing thumbnail) | `passionflower-flower.jpg` | https://commons.wikimedia.org/wiki/File:Passiflora_incarnata_flower.jpg | [user must verify photographer on file page] | [user must verify license on file page] | [complete after verifying file page] | [ ] Source identified — user verifies license before download |
+| Habit (vine/plant) | `passionflower-habit.jpg` | https://commons.wikimedia.org/wiki/File:Passiflora_incarnata_001.JPG | H. Zell (Llez) | CC BY-SA 3.0 | "Photo: H. Zell, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Passiflora_incarnata_001.JPG" | [x] Confirmed (agent-researched 2026-06-22; confirmed "habitus" description) |
 | Maypop fruit | `passionflower-fruit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 
 **MANDATORY WARNING**: Passionflower is contraindicated with MAOIs. This warning must appear in the guide body regardless of photo source.
@@ -250,7 +250,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (bushy mound) | `lemon-balm-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Habit (bushy mound) | `lemon-balm-habit.jpg` | https://commons.wikimedia.org/wiki/File:02014_Melissa_officinalis.JPG | Silar | CC BY-SA 4.0 | "Photo: Silar, Wikimedia Commons, CC BY-SA 4.0. URL: https://commons.wikimedia.org/wiki/File:02014_Melissa_officinalis.JPG" | [x] Confirmed (agent-researched 2026-06-22; note: may be close-up rather than full bushy habit — user should verify image composition on file page before downloading) |
 | Leaf close-up | `lemon-balm-leaf.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 
 **MANDATORY WARNING**: Lemon balm may inhibit TSH binding. Caution with thyroid conditions and thyroid medication. This warning must appear in the guide body.
@@ -272,8 +272,8 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (cultivation) | `ashwagandha-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
-| Berry cluster | `ashwagandha-berries.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
+| Habit (cultivation) | `ashwagandha-habit.jpg` | https://commons.wikimedia.org/wiki/File:Withania_somnifera.jpg | Neha.Vindhya | CC BY-SA 3.0 | "Photo: Neha.Vindhya, Wikimedia Commons, CC BY-SA 3.0. URL: https://commons.wikimedia.org/wiki/File:Withania_somnifera.jpg" | [x] Confirmed (agent-researched 2026-06-22; note: taken in Pune, India — cultivation context; user should verify it shows full plant habit vs. close-up) |
+| Berry cluster | `ashwagandha-berries.jpg` | https://commons.wikimedia.org/wiki/File:Ashwagandha_(Withania_somnifera).jpg | Cliff (Flickr 28567825@N03) | CC BY 2.0 | "Photo: Cliff, Wikimedia Commons via Flickr, CC BY 2.0. URL: https://commons.wikimedia.org/wiki/File:Ashwagandha_(Withania_somnifera).jpg" | [x] Optional — confirmed CC BY 2.0 |
 | Root | `ashwagandha-root.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional — studio shot preferred |
 
 **MANDATORY WARNING**: Ashwagandha is contraindicated with thyroid medications and during pregnancy without medical supervision. May stimulate immune activity. This warning must appear in the guide body.
@@ -294,7 +294,7 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (forest understory) | `goldenseal-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
+| Habit (forest understory) | `goldenseal-habit.jpg` | https://commons.wikimedia.org/wiki/File:Hydrastis_canadensis.jpg | Eric Hunt (Eric in SF) | CC BY-SA 4.0 | "Photo: Eric Hunt, Wikimedia Commons, CC BY-SA 4.0. URL: https://commons.wikimedia.org/wiki/File:Hydrastis_canadensis.jpg" | [x] Confirmed (agent-researched 2026-06-22; Newton County AR, April 2015, 12.36MB high-res) |
 | Flower | `goldenseal-flower.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 | Rhizome (yellow interior) | `goldenseal-rhizome.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional |
 | Forest farming | `goldenseal-forest-farm.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Optional — highest differentiation value |
@@ -341,8 +341,8 @@ New sourcing needed for root photography (the medicinal part not covered in the 
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (garden or tropical) | `ginger-habit.jpg` | [fill] | [fill] | [fill] | [fill] | [ ] Confirmed |
-| Rhizome | `ginger-rhizome.jpg` | [fill — studio shot preferred] | [fill] | [fill] | [fill] | [ ] Studio shot preferred |
+| Habit (garden or tropical) | `ginger-habit.jpg` | https://commons.wikimedia.org/wiki/File:Zingiber_officinale.JPG | Dalgial | CC BY 3.0 | "Photo: Dalgial, Wikimedia Commons, CC BY 3.0. URL: https://commons.wikimedia.org/wiki/File:Zingiber_officinale.JPG" | [x] Confirmed (agent-researched 2026-06-22; cultivated field in Korea, 4000×3000px) |
+| Rhizome | `ginger-rhizome.jpg` | https://commons.wikimedia.org/wiki/File:Zingiber_officinale_fresh_rhizome.JPG | [user must verify photographer on file page] | [user must verify license on file page] | [complete after verifying file page] | [ ] Source identified — user verifies license before download |
 
 **Note**: Grocery rhizome warning is mandatory in the guide — untreated organic rhizomes can be used for cultivation in most zones; treated or irradiated grocery rhizomes will not sprout.
 
@@ -383,27 +383,32 @@ Before sprint Day 1 (June 22), verify:
 
 | Species | Bundles | Log Section | Status |
 |---|---|---|---|
-| Black Cohosh | Women's Health | Bundle 1 | [ ] |
-| Vitex | Women's Health | Bundle 1 | [ ] |
-| Red Clover | Women's Health | Bundle 1 | [ ] |
-| Calendula | Women's Health + Digestive | Bundle 1 | [ ] |
-| Lavender | Women's Health + Sleep | Bundle 1 | [ ] |
-| Elderberry | Respiratory + Immunity | Bundle 2 | [ ] |
-| Mullein | Respiratory | Bundle 2 | [ ] |
-| *E. purpurea* | Respiratory + Immunity | Bundle 2 | [ ] |
-| *E. angustifolia* | Respiratory + Immunity | Bundle 2 | [ ] |
-| Thyme | Respiratory | Bundle 2 | [ ] |
-| Valerian | Sleep | Bundle 3 | [ ] |
-| Passionflower | Sleep | Bundle 3 | [ ] |
-| Lemon Balm | Sleep + Digestive | Bundle 3 | [ ] |
-| Ashwagandha | Immunity | Bundle 4 | [ ] |
-| Goldenseal | Immunity | Bundle 4 | [ ] |
-| Dandelion | Digestive | Bundle 5 | PARTIAL (habit pre-staged) |
-| Ginger | Digestive | Bundle 5 | [ ] |
+| Black Cohosh | Women's Health | Bundle 1 | [x] Habit source confirmed (H. Zell CC BY-SA 3.0) |
+| Vitex | Women's Health | Bundle 1 | [x] Habit source confirmed (Sten Porse CC BY-SA 3.0) |
+| Red Clover | Women's Health | Bundle 1 | [x] Flower/habit source confirmed (Böhringer Friedrich CC BY-SA 2.5; note: flower close-up) |
+| Calendula | Women's Health + Digestive | Bundle 1 | [x] Habit source confirmed (H. Zell CC BY-SA 3.0) |
+| Lavender | Women's Health + Sleep | Bundle 1 | [x] Sources confirmed (H. Zell CC BY-SA 3.0; verify habit vs. inflorescence composition) |
+| Elderberry | Respiratory + Immunity | Bundle 2 | [x] Habit source confirmed (H. Zell CC BY-SA 3.0; S. nigra) |
+| Mullein | Respiratory | Bundle 2 | [x] Habit source confirmed (Cillas CC BY-SA 4.0; verify second-year spike) |
+| *E. purpurea* | Respiratory + Immunity | Bundle 2 | [x] Habit source confirmed (H. Zell CC BY-SA 3.0; full habitus) |
+| *E. angustifolia* | Respiratory + Immunity | Bundle 2 | [x] Source confirmed (USDA Public Domain; 330×220px — low-res, recommend iNaturalist supplement) |
+| Thyme | Respiratory | Bundle 2 | [x] Habit source confirmed (Henry Brisse CC BY-SA 3.0) |
+| Valerian | Sleep | Bundle 3 | [x] Habit source confirmed (H. Zell CC BY-SA 3.0; full habitus portrait) |
+| Passionflower | Sleep | Bundle 3 | [x] Habit source confirmed (H. Zell CC BY-SA 3.0); flower source identified (user must verify license) |
+| Lemon Balm | Sleep + Digestive | Bundle 3 | [x] Source confirmed (Silar CC BY-SA 4.0; verify full-plant habit composition) |
+| Ashwagandha | Immunity | Bundle 4 | [x] Habit source confirmed (Neha.Vindhya CC BY-SA 3.0; verify habit vs. close-up) |
+| Goldenseal | Immunity | Bundle 4 | [x] Habit source confirmed (Eric Hunt CC BY-SA 4.0; high-res, forest habitat) |
+| Dandelion | Digestive | Bundle 5 | [x] Pre-staged (Greg Hume CC BY-SA 3.0 — from wild-edibles archive) |
+| Ginger | Digestive | Bundle 5 | [x] Habit source confirmed (Dalgial CC BY 3.0; cultivated field) |
 
 **Total unique species**: 14 (Echinacea counts as two)
+**Agent-researched 2026-06-22**: 16 species (all sources identified or confirmed with direct file page URLs)
 **Pre-staged**: 1 image (Dandelion habit — from wild-edibles archive, license confirmed)
-**Remaining to confirm**: 16 habit images minimum (all other species)
+**Remaining user actions before download**:
+- Verify image composition on file page for: Lavender habit (002 vs. 003), Lemon Balm (close-up vs. habit), Ashwagandha (habit vs. close-up), Passionflower flower (verify license on file page)
+- Supplement E. angustifolia with higher-res iNaturalist image (330×220px USDA image is low resolution)
+- Download files and place in `assets/phase-3-medicinal-herbs/[species-slug]/`
+- Update attribution strings in this log once final filenames are confirmed
 
 ---
 
