@@ -4,6 +4,46 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 122 — Week 1 Blog Post Draft Complete — June 22, 2026
+
+**Task**: Write Week 1 content calendar blog post (evidence-tier explainer). Per CONTENT_CALENDAR_JUNE_22_JULY_15.md, publish date June 23, 600–800 words, educational angle, practitioner CTA.
+
+**Deliverable produced**:
+
+`projects/seedwarden/phase-3/blog-post-week1-evidence-tiers.md` — 760-word blog post titled "Why Evidence Tiers Matter in a Medicinal Herb Guide: Gold, Silver, Bronze Explained." Explains the Gold/Silver/Bronze evidence framework without promotional language. Covers the failure modes of "traditional use only" and "clinical study" overclaiming. Gives concrete examples for each tier using the Phase 3 species (elderberry, black cohosh, valerian, thyme, vitex for Gold; mullein, echinacea, red clover for Silver). Closes with practitioner accountability framing and CTA to practitioner bundle collection. No placeholder text — only the listing URL link needs to be inserted before publishing.
+
+**Status**: Ready for publish June 23. One field needs user input before publishing: the [Link to practitioner bundle collection] CTA at the end (replace with actual Etsy shop or direct listing URL when Women's Health is live June 29).
+
+---
+
+## Item 121 — Respiratory Health Bundle Draft Complete — June 22, 2026
+
+**Task**: Write Respiratory Health bundle PDF draft (D4–D6 critical path, June 25–27). Drafted ahead of schedule on D1 as Women's Health pace gate cleared three days early. Target: 2,500+ words. Delivered: full bundle draft.
+
+**Deliverable produced**:
+
+`projects/seedwarden/products/medicinal-herbs/respiratory-health-bundle-draft.md` — Complete Respiratory Health bundle draft, approximately 5,400 words. Four species chapters written in full: Elderberry, Mullein, Echinacea (two-species treatment: E. purpurea and E. angustifolia), and Thyme. Document includes: front matter with FTC disclaimer, introduction section, four full species chapters (identification, cultivation, harvest, medicinal uses with evidence citations, preparation methods, safety notes), contraindication reference table, preparation methods reference appendix, and sources list (11 citations).
+
+**Species chapters delivered**:
+1. Elderberry (*Sambucus nigra* / *S. canadensis*) — 900w; species note for both elderberry spp., raw berry toxicity (sambunigrin — mandatory full section), elderflower culinary crossover, lookalike cautions (water hemlock, pokeweed), cultivation including cross-pollination and cultivar guidance, cytokine storm concern contextualized for practitioners, RCT evidence (Zakay-Rones 2004, Tiralongo 2016, Hawkins meta-analysis 2019)
+2. Mullein (*Verbascum thapsus*) — 800w; biennial lifecycle (rosette vs. spike — the critical teaching point), roadside forager context, ear oil preparation with clinical note (Sarrell 2001 RCT), weed-status harvesting guidance, mandatory straining instruction for leaf hairs
+3. Echinacea (*E. purpurea* and *E. angustifolia*) — 1,100w; UpS At-Risk sidebar for E. angustifolia (mandatory), species problem in clinical research explained, Cochrane review 2015 (Karsch-Völk), Rauš 2021 (vs. oseltamivir RCT), Asteraceae allergy caution, duration limit (8-week rule)
+4. Thyme (*Thymus vulgaris*) — 700w; thymol and carvacrol framing, Kemmerich RCTs for bronchitis (2006, 2007), pregnancy caution (medicinal dose at first trimester), steam inhalation preparation, essential oil toxicity warning (important safety note)
+
+**Critical path status**: D4–D6 work complete on D1. This frees the June 25–27 writing window for review, self-edit of Women's Health, and Canva cover design (non-critical path parallel tasks).
+
+**Pace gate implication**: Both D3 and D6 pace gates are now pre-cleared. Women's Health (5,673w, D3 gate requires 2,500w) and Respiratory (5,400w, Week 1 milestone requires 2,500w) are both complete before June 23.
+
+**Upload target**: July 6–7, 2026 | Price: $20 | SKU: MH-BUNDLE-RESP-001
+
+**Next required actions**:
+- D6/D7 (June 27–28): Self-edit pass on Respiratory (same schedule as WH self-edit)
+- July 2–5 (D11–D14): Begin Immunity and Sleep bundles (Week 2 writing schedule per critical path)
+- July 3 EOD: Design Lock — Digestive cover must be final (zero float per critical path)
+- July 6 AM: Respiratory upload LIVE at 9–10am ET ($20, SKU: MH-BUNDLE-RESP-001)
+
+---
+
 ## Item 120 — Women's Health Bundle Draft Complete (D1 Sprint) — June 22, 2026
 
 **Task**: Write Women's Health bundle PDF draft — Sprint Day 1 task per PHASE_3_CRITICAL_PATH_ANALYSIS_JUNE22_JULY13.md. Target: 700 words (Black Cohosh intro + conservation sidebar). Delivered: full bundle draft.
