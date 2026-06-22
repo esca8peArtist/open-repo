@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-18T05:45:08Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-22T17:43:17Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 5.6% (498,444 tokens) | All-models 79.6% | Reset in 114h | check: claude.ai → Settings → Usage & billing
+🔴 Usage: Sonnet 19.2% (1,718,758 tokens) | All-models 90.7% | Reset in 6h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,11 +19,11 @@
 ## Active Projects
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
-**Focus**: ✅ **[PHASE 2 WAVE 1-2 FULLY VERIFIED & STAGED (SESSION 3748) — AWAITING USER COPY-PASTE EMAIL EXECUTION]** — **PHASE 2 WAVE 1-2 EXECUTION STATUS (SESSION 3748, June 17 05:24 UTC)**: 
+**Focus**: ✅ **[T+7 CHECKPOINT FRAMEWORK STAGED + DOMAIN 57 GIST OUTLINE READY (SESSION 3902C)]** — **PHASE 2 WAVE 1-2 EXECUTION STATUS (Session 3902c, June 22 17:50 UTC)**: 
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[OPTION A DEPLOYED — AWAITING JUNE 18 VALIDATION WINDOW 13:30 UTC]** — **Infrastructure Ready**: Jetson healthy (5 sessions loaded, HMM masking active, zero blockers). **Monitoring staged**: `scripts/validate_june_18_window.py` ready for hourly tracking during 13:30–20:00 UTC. **Analysis template staged**: `JUNE_18_VALIDATION_OUTCOME_REPORT.md` ready for fill-in post-close (decision matrix: PASS ≥4 sessions, CAUTION 2-3 sessions, FAIL ≤1 session). **Phase 4 framework**: Decision  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[PHASE 4 G3 ADVISORY FLAG COMPLETE — DEPLOYMENT 20:00 UTC JUNE 22 (SESSION 3902C)]** — **Status Summary (June 22 17:50 UTC)**: June 18 validation FAILED (0/5 sessions) due to Alpaca IEX WebSocket 406 connection limit. Root cause: 5 concurrent WebSocket streams exceeded paper account's 1-connection limit. **Fix Implemented**: SharedStreamManager singleton multiplexes all 5 symbols on single WebSocket (52 unit tests ✅ passing, verified June 22). **Phase 4 Work (Session 3902c)**: C-1 G3 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -72,26 +72,26 @@
 • stockbot — Sprint 3 INV-1 fix ready for Jetson deployment (user approval required) ← 2026-06-11 17:02 UTC (Session 3202 — orchestrator processing)
 
 ## Inbox (unprocessed)
+### [2026-06-22] MAXIMUM PARALLELIZATION DIRECTIVE — burn remaining budget before Tuesday reset
+**All usage limits overridden until Tuesday 00:00 UTC reset (~8h from now).** Parallelize every possible task simultaneously. Do not work sequentially — spawn the maximum number of concurrent subagents the projects support.
+**Directive**: Launch ALL of the following in parallel in a single message, every session, until reset:
+1. **stockbot** — continue Phase 4 framework; run any pending model retrains, backtests, or pipeline work
+2. **resistance-research** — advance Domain 49 + Domain 50 distribution (contact lists + email templates staged); execute T+7 checkpoints for any domains pending them; advance Domain 57 research
+3. **cybersecurity-hardening** — execute IMSI catcher detection guide + rights assertion playbook research (files staged as untracked)
+4. **mfg-farm** — commit staged Q3 commodity product library; advance any open research items
+5. **seedwarden** — advance any open Q3 research or species guide work
+6. **open-repo** — unblock deployment OR advance any scope that doesn't require the blocked infrastructure decision
+7. **off-grid-living / systems-resilience / general-research** — pick any open exploration queue items
+**Do not stop to check usage. Do not pace yourself. Spawn all agents simultaneously each session and start the next session immediately after the 5-min inter-session pause.**
+🟢 **PROCESSED (Session 3900, June 22 ~13:00 UTC)**:
+- ✅ **[2026-06-22 12:50] UNPAUSE + FULL PARALLELIZE DIRECTIVE** — All projects unpaused. Usage limits ignored until June 23 00:00 UTC reset. 4 parallel agents launched: (1) stockbot — June 18 validation outcome + Phase 4 continuation; (2) resistance-research — Domain 59 Tier 2 reassessment + Domain 57 research + T+7 checkpoint prep; (3) cybersecurity-hardening — commit staged Q3 scope docs + execute F-01/F-02 P1 research; (4) seedwarden + mfg-farm — commit staged files + execute Q3 research. Maximum throughput until reset.
+🟢 **PROCESSED (Session 3901, June 22 16:10–16:25 UTC)**:
+- ✅ **[2026-06-22 16:13] PARALLELIZATION CONTINUED — 4 agents simultaneously executed**: (1) **resistance-research** — Committed 6 Domain 49/50 distribution files (2 commits: 8ca10f44, 814b780a). Updated litigation tracker + Domain 57 UNGA framing complete. (2) **cybersecurity-hardening** — Committed Phase 2 research files (IMSI catcher + rights assertion). Completed full Phase 2 research audit (22.5-26h autonomous work available across 3 tracks: journalist/whistleblower/financial playbooks). (3) **mfg-farm** — Committed Q3 2026 commodity library (commit 96902cb8). (4) **stockbot** — Validated deployment (52/52 tests passing, deployment checklist staged for 20:00 UTC execution). **Total**: 4 commits, 22.5-26h Phase 2 autonomous work identified, stockbot deployment ready post-market-close. **Speedup**: 2.5-3× via parallel agents vs. sequential execution.
 🟢 **PROCESSED (Session 3219, June 11 23:31 UTC)**:
 - ✅ **stockbot Phase P1-P4** (Signal health monitor, Quick-eval mode, Model comparison, Shadow session mode) queued to PROJECTS.md Current focus. All 4 items queued for execution when user resumes work from pause.
 🟢 **PROCESSED (Session 3485, June 14 02:45 UTC)**:
 - ✅ **ML-1/2/3 validation complete** — All three ML pipeline enhancements verified complete from prior sessions (commits 1523283, 9bea63d, 00b521c). 
   - **ML-1** (Monte Carlo gate G7): 51 tests ✅, fully integrated into model_training_pipeline.py
-  - **ML-2** (News sentiment feature): 38 tests ✅, integrated into feature_pipeline.py with Haiku cost guard
-  - **ML-3** (Drawdown recovery metrics): 53 tests ✅, integrated into EvaluationReport
-  - **Combined test suite**: 142 tests passing, zero regressions. All production-ready.
-  - **Status**: ML enhancements pipeline complete. Ready for WB-1/2/3 (weekend batch) execution.
-🟢 **PROCESSED (Session 3485, June 14 02:50 UTC)**:
-- ✅ **WB-1/2/3 validation complete** — All three weekend batch pipeline items verified complete from prior sessions.
-  - **WB-1** (candidates.yaml): Present with 10 starter candidates (AAPL, MSFT, NVDA, GOOGL, AMZN, JPM, META) and metadata config
-  - **WB-2** (weekend_batch.py): 4-phase orchestrator (quick-screen, full-eval, rank, promote), Discord notification integrated, 11 tests ✅
-  - **WB-3** (promote_to_paper.py): Queue reader, session config generator, market-hours blackout enforced, 18 tests ✅
-  - **Combined test suite**: 29 tests passing, safety rules enforced (max 6 sessions, gate-fail rejection, deploy blackout)
-  - **Status**: Weekend batch pipeline production-ready. Available for user to run `uv run python scripts/weekend_batch.py` at start of weekend or manually as needed.
-🟢 **PROCESSED (Session 3475, June 14 02:15 UTC)**:
-- ✅ **UNPAUSE DIRECTIVE** — User manually lifted pause directive on June 13 15:57 UTC (57 hours early). Orchestrator resumed immediately. FIRST step verified: Signal restoration confirmed (AMZN lgbm_ho generating buy_prob=0.33+, z-score clipping working). Proceeding to SECOND step (P1+P2 parallel) and THIRD step (AAPL+MSFT retrains June 18 deadline).
-### [2026-06-13 15:57 UTC] UNPAUSE DIRECTIVE — Immediate resumption
-User has manually lifted the pause directive early (was scheduled June 15 00:00 UTC). **Resume autonomous work immediately.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 **Effort**: 6 minutes (orientation + state verification + stockbot commit)  

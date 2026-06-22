@@ -472,13 +472,15 @@ if __name__ == "__main__":
         # Exit 1 = over 90% budget (hard stop)
         # Exit 2 = paused at 80% by usage-monitor (soft stop; user can override)
         # Exit 0 = proceed
+        # OVERRIDE_FILE bypasses both the 80% gate and the 90% hard throttle.
+        if OVERRIDE_FILE.exists():
+            pct = max(report["pct"]["sonnet"], report["pct"]["all_models"])
+            print(f"OVERRIDE ACTIVE: usage at {pct:.1f}% — all limits bypassed by override file.")
+            sys.exit(0)
         if report["status"]["over_any"]:
             print(f"THROTTLE: {report['recommendation']}")
             sys.exit(1)
         if PAUSE_FILE.exists():
-            if OVERRIDE_FILE.exists():
-                print(f"OVERRIDE ACTIVE: paused at 80% but override file present — proceeding.")
-                sys.exit(0)
             pct = max(report["pct"]["sonnet"], report["pct"]["all_models"])
             print(f"PAUSED: usage at {pct:.1f}% — orchestrator held at 80% gate. "
                   f"Override: touch {OVERRIDE_FILE}")
