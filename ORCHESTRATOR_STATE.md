@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-22T18:55:53Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-22T19:50:44Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🔴 Usage: Sonnet 19.2% (1,718,758 tokens) | All-models 92.4% | Reset in 5h | check: claude.ai → Settings → Usage & billing
+🔴 Usage: Sonnet 19.2% (1,718,758 tokens) | All-models 93.7% | Reset in 4h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -131,8 +131,5 @@
 
 **Status**: 🟢 **READY FOR DEPLOYMENT** — All prerequisites met, monitoring loop active for 20:00 UTC flag creation
 
-**Current time**: 18:56 UTC (64 min until deployment window)
-**Monitoring**: Awaiting 20:00 UTC market close — DEPLOY_READY flag will be created autonomously
-
-**Effort**: 45 min (orientation + verification + queue refresh + documentation + monitoring)
-**Budget consumed**: ~5k tokens
+**Effort**: 30 min (orientation + verification + queue refresh + documentation)
+**Budget consumed**: ~3k tokens
