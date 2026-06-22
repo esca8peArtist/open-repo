@@ -4,6 +4,47 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 126 — Digestive Support Bundle Draft Complete — June 22, 2026 (Session 3913)
+
+**Session**: 3913, June 22 2026 23:15 UTC
+
+**Task**: Advance Q3 sprint — draft Digestive Support bundle ahead of planned D15-D17 (July 6-8) schedule. All four prior bundles (Women's Health, Respiratory, Immunity, Sleep) were confirmed draft-complete. Digestive was the only remaining draft.
+
+**Status**: COMPLETE — Fifth and final bundle drafted to production-ready standard.
+
+**Deliverable**:
+
+- **Digestive Support Bundle** — `projects/seedwarden/products/medicinal-herbs/digestive-support-bundle-draft.md`
+  - 7,058 words (target: 3,400-3,700; delivered 90% above gate — consistent with collection pattern)
+  - Covers: Dandelion (*T. officinale* s.l.), Calendula (internal mucosal framing), Lemon Balm (carminative framing distinct from Sleep bundle nervine framing), Ginger
+  - Wild Edibles cross-sell note embedded in Dandelion identification section (per brief)
+  - Bitters mechanism explained physiologically (bitter receptor TAS2R activation, bile flow stimulation) — not folk metaphor
+  - German Commission E dandelion monograph cited as primary regulatory reference
+  - Ginger: gingerol-to-shogaol conversion under heat explained — distinguishes fresh vs. dried preparation pharmacology
+  - Ginger nausea evidence: Viljoen 2014 meta-analysis (pregnancy), Ryan 2012 RCT (chemotherapy); ACOG acknowledgment noted
+  - Calendula: internal mucosal application distinguished from topical Women's Health framing; Preethi gastroprotective reference included
+  - Lemon Balm: carminative/gut-brain axis framing; cross-reference to Sleep bundle for TSH inhibition and Kennedy 2004 RCT
+  - Mandatory contraindications: dandelion-gallstone/bile duct, dandelion-lithium/diuretic, calendula-emmenagogue (pregnancy), calendula-Asteraceae allergy, lemon balm-thyroid/TSH, ginger-anticoagulant (most critical drug interaction), ginger-diabetes medication
+  - Digestive bitters tincture blend formula included (dandelion root : lemon balm : ginger : optional calendula)
+  - Cross-reference notes to Women's Health, Sleep, and Wild Edibles bundles (per cross-reference placement rules)
+  - PHOTO_ATTRIBUTION_LOG placeholders for all four species; dandelion pre-staged from Wild Edibles archive confirmed
+  - FGV sourcing note: no at-risk species in this bundle (confirmed per UpS list)
+  - SKU: MH-BUNDLE-DS-001, Price: $20, Upload target: August 3, 2026
+
+**Sprint progress update — COMPLETE**:
+- Women's Health bundle: Draft-complete (session 7e354e77) — 5,673 words
+- Respiratory Health bundle: Draft-complete (session 95bf7189) — 5,400 words
+- Immunity Support bundle: Draft-complete (session 3911) — 6,688 words
+- Sleep and Nervines bundle: Draft-complete (session 3911) — 6,197 words
+- Digestive Support bundle: Draft-complete (this session) — 7,058 words
+- **ALL FIVE BUNDLES NOW DRAFT-COMPLETE** — 3 weeks ahead of final schedule
+
+**FTC compliance verified**: Evidence-tier framing maintained throughout. ACOG ginger reference provides highest-authority validation for the pregnancy nausea claim. Commission E dandelion reference provides regulatory authority. Qualifying language used for all traditional-use claims without Commission E or RCT support.
+
+**Upload readiness**: Bundle requires only user photo downloads (4 species, all sources confirmed in PHOTO_ATTRIBUTION_LOG.md; dandelion pre-staged). No research gaps, no content blockers.
+
+---
+
 ## Item 125 — Immunity Support + Sleep Bundle Drafts Complete — June 22, 2026 (Session 3911)
 
 **Session**: 3911, June 22 2026 21:30 UTC
