@@ -183,6 +183,30 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - Owner: stockbot team
    - Status: **READY FOR JUNE 18 MARKET VALIDATION** — Confidence 78%+ (both fixes validated sound, known fragilities documented)
 
+8. **stockbot: Post-Deployment Monitoring Framework & Live Trading Dashboard** (3-4h)
+   - Trigger condition: stockbot deployment completes (June 22 20:00 UTC post-market close), June 24 13:30 UTC validation window begins
+   - Scope: Design comprehensive monitoring dashboard with real-time tracking of: signal generation rate (target >0 signals/min), position-size dynamics (vs. account equity %), regime detection accuracy (3-regime classification stability), daily P&L drift vs. backtest baseline (Z-score alert at ±2.0σ), max drawdown tracking (hard stop at 10%), trade round-trip metrics (time-in-position, win rate, Sharpe contribution per session)
+   - Value: Enables rapid detection of signal degradation, regime shifts, or live-backtest divergence during trading; foundation for continuous June 24-30 monitoring
+   - Deliverables: `LIVE_TRADING_DASHBOARD_SPEC.md` (KPI definitions + alert thresholds), `MONITORING_ALERT_ROUTING.md` (Discord notification rules), `DAILY_P&L_DRIFT_TRACKING_FRAMEWORK.md` (statistical validation protocol)
+   - Owner: stockbot team
+   - Confidence: 85% (dashboard patterns well-established; metrics derived from Phase 4 validation framework)
+
+9. **resistance-research: Phase 3 Research Infrastructure Pre-Staging (Nov 4 start date)** (4-5h)
+   - Trigger condition: Post-Wave-2 completion (June 24+), before November 4 Phase 3 start date
+   - Scope: Prepare research infrastructure for Domain K (Federal Judiciary Restructuring) + Domain H (Constitutional Resilience): comprehensive source databases (law review indices, GovInfo, Congressional Research Service), expert contact list (30+ scholars, practitioners), preliminary research outline structure, team research timeline (6-week production window Nov 4-Dec 20), division-of-labor framework (solo vs. 2-researcher parallel track scenarios)
+   - Value: Eliminates planning overhead when November 4 arrives; enables immediate Phase 3 research execution without coordination delays
+   - Deliverables: `PHASE_3_RESEARCH_SOURCE_DATABASE.md` (100+ vetted sources per domain), `PHASE_3_EXPERT_CONTACT_FRAMEWORK.md` (30+ contacts with engagement triggers), `PHASE_3_PARALLEL_RESEARCH_RUNWAY.md` (timeline, division of labor, contingency scenarios)
+   - Owner: resistance-research team
+   - Confidence: 88% (Domains K & H outlined in Phase 3 roadmap, contact list partially developed)
+
+10. **open-repo: Architecture Decision Matrix & Deployment Path Selection Framework** (2-3h)
+   - Trigger condition: User authorization for raspby1 platform decision (Docker vs systemd), per BLOCKED.md awaiting user decision
+   - Scope: Document 6-dimension comparison matrix for platform options: resource requirements (peak/idle CPU, memory, disk allocation, startup time), operational complexity (deployment time, rolling updates, scale-down recovery), post-deployment integration (backup strategy, disaster recovery procedure, monitoring hooks), support surface (community size, documentation, troubleshooting depth), cost analysis (licenses, managed services, hosting), risk scoring (deployment risk, operational risk, failure recovery risk). Include recommendation with confidence scoring.
+   - Value: De-risks platform selection; enables rapid first-time deployment once user decides, eliminates deployment planning delays post-decision
+   - Deliverables: `RASPBY1_PLATFORM_DECISION_MATRIX.md` (6 dimensions × 2 options, confidence scores), `DEPLOYMENT_RUNBOOK_SELECTOR.md` (conditional runbooks: if Docker, then X; if systemd, then Y), `ROLLBACK_AND_RECOVERY_PROCEDURES.md` (failure scenarios per platform choice)
+   - Owner: open-repo team
+   - Confidence: 75% (both platform options technically feasible; contingency paths documented in PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md)
+
 ---
 
 **REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). **✅ DOMAIN 59 COMPLETE** (Session 2839). Total remaining Phase 2 production estimate: 40-50 hours Q3 2026. Phase 1 path decided (Path A + Domain 37); Phase 2 research execution proceeds immediately or post-Wave-1; Domain 59 distribution activation ready June 5.
