@@ -10371,49 +10371,53 @@ None at this time. Orchestrator standing by for June 18 validation window.
 
 ---
 
-## Session 3856 Check-in (June 18 03:59–04:05 UTC) — Pre-Market Standby Verification
+## Session 3XXX Check-in (June 22 16:06–~16:30 UTC) — WebSocket Fix Deployment Ready
 
-### Since Last Check-in (Session 3810, June 17 18:00–19:00 UTC)
+### Since Last Check-in (Session 3856, June 18 03:59–04:05 UTC)
 
 **What happened**:
-- Stockbot submodule logs from June 17-18 pre-market orchestration captured and committed (logs + validation states)
-- System state verified: all infrastructure staged and ready for validation window
-- No autonomous work executed (correct by design — validation window not yet started)
+- June 18 validation window executed (13:30–20:00 UTC) — **FAILED** (0/5 sessions)
+  - Root cause: Alpaca IEX WebSocket 406 connection limit — 5 concurrent streams exceeded paper account's 1-connection limit
+  - Result: Sessions 2-5 received no live price data → HMM never primed → regime=None throughout → zero trades
+  - Monitoring system correctly detected failure (5,605 SIGNAL_DROPOUT/BUY_PROB_COLLAPSE alerts)
+  - No 40010001 duplicate-order errors (order layer working; data layer blocked)
+- June 18-22 gap: Container restarted multiple times; same WebSocket issue persists unchanged
+- Session 3900 (June 22 ~13:00 UTC) executed "UNPAUSE + FULL PARALLELIZE DIRECTIVE"
+  - 4 parallel agents launched: stockbot, resistance-research, cybersecurity-hardening, seedwarden+mfg-farm
+  - Stockbot agent: implemented SharedStreamManager singleton fix for WebSocket multiplexing
+- SharedStreamManager implementation complete + fully tested (52 unit tests ✅ all passing)
+- WS_FIX_SPEC.md + WS_FIX_DEPLOY_CHECKLIST.md staged for deployment
 
 **Key status**:
-- **Validation window**: 13:30–20:00 UTC today (9h 30m away at session start)
-- **Jetson status**: Ready with 2-session config (JPM + AMZN), HMM masking disabled
-- **Model status**: AAPL lgbm_ho (1.0609 Sharpe, needs t-stat gate), MSFT ridge_wf (negative Sharpe, needs feature fix)
-- **Infrastructure**: Monitoring script + outcome template staged for validation analysis
+- **June 18 validation outcome**: FAIL (0/5 sessions pass). Root cause identified (WebSocket 406 limit). Fix implemented.
+- **Jetson status**: Running 5-session config with broken WebSocket (same issue persists)
+- **Fix status**: Code-complete, tested, committed. NOT YET DEPLOYED (DEPLOY BLACKOUT RULE: market hours 13:30-20:00 UTC Mon-Fri)
+- **Deployment timeline**: After 20:00 UTC today (in ~4 hours) OR early tomorrow (June 23)
 
 ### What's Available for User Action
 
-**Immediate (during 13:30–20:00 UTC validation window)**:
-1. Monitor JPM + AMZN session signals during market open
-   - Watch for buy_prob non-zero and first fills
-   - Alert if signal dropout recurs (June 16 failure pattern)
+**None at this moment.** All preparation complete. Deployment will execute autonomously after 20:00 UTC.
 
-**Post-window (by 20:15 UTC)**:
-2. Orchestrator will execute Exploration Queue Item 5 (post-validation analysis)
-   - Analyze validation results against baseline expectations
-   - Recommend Phase 4 path (expand, retrain, or hold)
+**If you want to cancel deployment** (e.g., need different approach), inform before 20:00 UTC. Otherwise, deployment proceeds as scheduled.
 
 ### Needs Your Input
 
-None at this time. Orchestrator standing by for market open.
+1. **Deployment timing confirmation** (optional): Deploy tonight after 20:00 UTC, or defer to June 23 morning? Default: deploy tonight ~20:30 UTC.
+2. **Validation window date confirmation** (optional): Target June 24 (Tuesday) 13:30 UTC for next validation window? Default: yes.
 
 ### Key Metrics
 
-- **Autonomous work available**: 100% (queued at 20:00 UTC trigger)
-- **Validation infrastructure**: 100% ready (monitoring script + outcome template staged)
-- **System readiness**: Ready for market open
-- **Budget status**: ~197k tokens remaining
+- **WebSocket fix test coverage**: 52/52 tests passing ✅
+- **Code status**: Implemented + committed (commit 4ac91fc + follow-ups)
+- **Deployment readiness**: 100% (checklist staged, pre-flight checks documented)
+- **Jetson status**: Healthy, ready for code sync
+- **Budget status**: ~150k tokens remaining (usage limit relaxed until June 23 00:00 UTC reset)
 
 ### Confidence + Next Steps
 
-**Pre-market standby confirmed.** All infrastructure from Session 3835 verified staged and ready. Jetson health check passed Session 3837. HMM masking disabled per Session 3804 rollback. System ready for June 18 13:30 UTC market open.
+**WebSocket fix is solid and ready to deploy.** 52 unit tests cover singleton behavior, 5-session routing, reconnection, concurrent startup, and 406-retry backoff. Implementation multiplexes all 5 symbols on single WebSocket connection, eliminating the 1-connection-per-account limit that caused June 18 failure.
 
-**No autonomous work until validation window closes** (correct by design — live market validation in progress).
+**Deployment will execute after market close (20:00 UTC)** per market-hours blackout rule. Target validation window: June 24 13:30 UTC. If fix passes (≥3 sessions non-None regime + ≥1 trade), Phase 4 expansion path opens.
 
-**Next orchestrator session**: June 18 20:15 UTC (post-market analysis) to process validation window results and execute Phase 4 planning per Exploration Queue Item 5.
+**Next orchestrator session**: June 23 morning (post-deployment verification) or June 24 (post-validation-window analysis), depending on deployment timing.
 
