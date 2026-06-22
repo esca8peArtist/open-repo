@@ -1,5 +1,32 @@
 ---
 
+## Session 3905 (2026-06-22 19:42–19:54 UTC) — DEPLOYMENT WINDOW STAGING
+
+**Initiated**: 2026-06-22 19:42 UTC (autonomous, Raspberry Pi orchestrator session)  
+**Duration**: 12 minutes
+
+**Session Work**:
+- ✅ Full orientation: ORCHESTRATOR_STATE.md (auto-generated 19:41 UTC), PROJECTS.md current focus verified, BLOCKED.md status verified
+- ✅ Code cleanup: stockbot submodule runtime artifacts (logs, backups, test files) verified untracked; no blocking uncommitted changes
+- ✅ Deployment readiness: All code committed and ready for 20:00 UTC execution per PROJECTS.md **DEPLOY BLACKOUT RULE**
+- ✅ Exploration queue status: Items 5, 6 (Domain 59 Tier 2) completed in prior sessions (3902-3904); Item 8 (post-deployment monitoring) activates after 20:00 UTC deployment
+- ✅ No autonomous work available: All critical-path items completed in Sessions 3902-3904 (stockbot G3 flag, resistance-research T+7 + Domain 57, cybersecurity Phase 2, seedwarden Q3, mfg-farm Q3 library)
+
+**Status**: 🟢 **DEPLOYMENT STAGING COMPLETE** — Standing by for 20:00 UTC market close (18 min away) to execute `bash scripts/deploy-to-jetson.sh` and create DEPLOY_READY flag
+
+**Timeline**:
+- 19:42 UTC: Session started (current)
+- 20:00 UTC: Market close — Execute deploy-to-jetson.sh (2 min), create DEPLOY_READY flag for post-session auto-deployment
+- 20:02 UTC: Code synced to Jetson, container restarted, WebSocket fix active
+- June 24 13:30 UTC: Validation window begins (SharedStreamManager multiplexing tested live)
+
+**Budget status**: 19.2% Sonnet, 93.4% all-models (reset June 23 00:00 UTC); ~4h 18m remaining in cycle; sufficient budget for post-deployment verification + post-validation analysis
+
+**Effort**: 12 minutes (orientation + code cleanup + readiness staging + WORKLOG update)  
+**Budget consumed**: ~4k tokens
+
+---
+
 ## Session 3904 (2026-06-22 — resistance-research T+7 review + Domain 57 advance)
 
 **Status**: COMPLETE
