@@ -382,6 +382,318 @@ Both Venmo (PayPal) and CashApp (Block, Inc.) are registered money services busi
 
 ---
 
+## Part 9: Scenario-Specific Implementation Checklists
+
+This section provides detailed action checklists for two primary scenarios: organizations (nonprofits, mutual aid networks) and individuals (donors, activists, employees of politically exposed organizations). These checklists are more granular than the summary checklist at the end of this playbook.
+
+### Scenario A: Organizational Financial Hygiene Checklist (Nonprofits, Advocacy Organizations, Mutual Aid Networks)
+
+Use this checklist if your organization handles donations, grants, or operational funds and may face financial surveillance or political targeting.
+
+**Phase 1: Financial Governance Foundation (Complete Before Implementing Any Changes)**
+
+*Board and leadership alignment*:
+- [ ] Schedule board meeting or leadership discussion: agenda item is "financial surveillance risk and organizational response"
+- [ ] Distribute PHASE_2_SEQUENCING_STRATEGY.md Section 1.1 (IRS LCA) to board members
+- [ ] Board acknowledges understanding that organizations can be subject to financial surveillance based on mission, not conduct
+- [ ] Board authorizes finance committee to recommend financial structure changes (do not unilaterally implement without board alignment)
+
+*Qualified financial counsel*:
+- [ ] Identify nonprofit tax attorney or CPA with experience in advocacy organization financial structure
+  - Search: "nonprofit tax counsel [your state]" or ask local ACLU/legal aid organization for referral
+  - Require: experience with controversial causes (immigration, climate, racial justice, labor — organizations known to face IRS scrutiny)
+  - Initial consultation should cover: IRS LCA threat, financial surveillance, legal structure options
+- [ ] Schedule initial counsel consultation: brief description of your programs, mission, and financial scale (annual budget)
+- [ ] Counsel should review this playbook and provide written assessment: "Risk level: [low/medium/high]" and "Recommended structure changes: [X, Y, Z]"
+
+*Current financial audit*:
+- [ ] Meet with finance team: collect all current financial accounts (checking, savings, investment, cryptocurrency if any)
+- [ ] Document account holders: which board members, staff, or representatives have signing authority on each account?
+- [ ] List all financial institutions: which banks, credit unions, payment processors?
+- [ ] Note account history: have any accounts been closed or restricted? If yes, when and why?
+- [ ] Review 12-month transaction history: identify patterns that might trigger SARs (many small disbursements, large cash withdrawals, international transfers)
+
+**Phase 2: Account Structure (Implement With Counsel Guidance)**
+
+*Determine appropriate account structure*:
+- [ ] Counsel recommends: single account vs. multiple accounts based on program risk profile
+- [ ] Low-risk guidance: general-purpose nonprofit account at reputable bank
+- [ ] Medium-risk guidance: separate accounts for politically exposed programs (housing assistance, immigration aid, legal defense)
+- [ ] High-risk guidance: accounts at credit unions or CDFIs rather than national banks (lower de-banking risk); backup account at second institution
+- [ ] Document counsel's recommendation in writing; file with board meeting minutes
+
+*Open new accounts if needed*:
+- [ ] If opening new account: credit union preferred (member-owned, mission-driven, lower retaliation risk than commercial banks)
+- [ ] Provide account name: use organization legal name (not mission-descriptive name that reveals sensitive program areas)
+- [ ] Example: Instead of "Housing Assistance for Undocumented Immigrants Fund," use organization legal name plus generic program designation like "Program Support Account"
+- [ ] Provide documentation: EIN, nonprofit status certificate, board resolution authorizing account opening
+- [ ] Establish signing authority: at least 2 signatories on account to reduce risk of unilateral decisions to freeze account
+
+*Establish backup account*:
+- [ ] Even if not actively used, maintain account at second institution (different bank or credit union)
+- [ ] Fund minimally: $500-$1,000 to keep account active
+- [ ] Review quarterly: confirm account is still active and accessible
+- [ ] Purpose: if primary account is frozen or closed, operational funds are not completely inaccessible
+
+**Phase 3: Transaction Documentation and Bookkeeping**
+
+*Document legitimate purpose for unusual transactions*:
+- [ ] For each major transaction category, create internal memo: "Transaction Pattern and Legitimate Purpose"
+- [ ] Example 1 (mutual aid): "Distributions from mutual aid fund reflect grant recipients identified through [outreach process]. Each distribution documented as individual grant per [granmaking policy]. Distributions average $[X]; highest single distribution $[Y]. Distribution is mission-aligned activity as defined in bylaws Section [Z]."
+- [ ] Example 2 (international transfers): "International wire transfer to [country] represents [specific program purpose]. Recipient is [organization name, legal status]. Transfer is documented in grant agreement dated [date]. This is authorized charitable giving per bylaws Section [Z] and IRS Form 990 reporting."
+- [ ] Store these memos on secure cloud drive (Google Drive, OneDrive, encrypted) with access controlled to finance committee
+- [ ] Update memos annually: this is your documentary evidence if transaction patterns are questioned
+
+*Establish financial transaction log*:
+- [ ] All unusual transactions (cash withdrawals >$5,000, international transfers, large disbursements to individuals, cryptocurrency transfers) logged with: date, amount, recipient, purpose, program code, authorizing staff/board member
+- [ ] Store in encrypted spreadsheet or accounting software with restricted access
+- [ ] Monthly reconciliation: finance committee reviews log to ensure all large transactions are documented and purposeful
+
+**Phase 4: Form 990 and Public Financial Disclosure Strategy**
+
+*Form 990 preparation with counsel*:
+- [ ] Schedule call with nonprofit tax counsel before 990 filing
+- [ ] Counsel reviews 990 narrative sections (Part I, Part VII) for:
+  - Accuracy of program descriptions (do not need to be operationally detailed, but must be truthful)
+  - Sensitivity of program names (e.g., "Emergency Assistance" more neutral than "Bail Fund Support")
+  - Financial disclosure completeness (cannot omit significant transactions, but can group/summarize appropriately)
+- [ ] Counsel confirms Schedule B (donor names, not publicly available) is complete and filed
+- [ ] File 990 by deadline; retain copy; update board that 990 is filed
+
+*Address public perception if organization is high-profile*:
+- [ ] If your organization is named in news as under investigation or facing political pressure:
+  - [ ] Do not modify current 990 filings (this looks retaliatory and can trigger worse scrutiny)
+  - [ ] If next 990 filing is due, counsel advises on whether to proactively explain transaction pattern changes in narrative
+  - [ ] Generally recommended: brief, neutral explanation ("In Year [X], we adopted program-specific accounting to improve financial management and oversight")
+
+**Phase 5: Cash Management and Money Handling**
+
+*Cash donation protocol*:
+- [ ] Establish written policy: "Cash donations of [$ amount or above] trigger this protocol"
+- [ ] Protocol steps:
+  1. Donor provides donation with or without name/address (organization accepts both anonymous and named cash gifts)
+  2. Staff member counts cash, verifies amount, documents in cash log with: date, amount, donor name if provided, program designation
+  3. Cash is deposited within [X days] to bank account; deposit slip retained and matched to log entry
+  4. No separate "cash fund" is maintained; all cash is banked
+- [ ] Retain cash log for minimum 7 years (standard IRS retention period)
+- [ ] Purpose: demonstrates legitimate cash flow and routine banking, not structuring or hidden cash operations
+
+*Money order and petty cash*:
+- [ ] Petty cash float: maximum amount authorized (typical: $200-$500)
+- [ ] Petty cash custodian: designated staff member
+- [ ] Monthly reconciliation: all petty cash expenditures documented with receipt (no exceptions)
+- [ ] Reimbursement: petty cash is replenished monthly from bank account; all reimbursement requests require receipt and program code
+- [ ] For recurring small payments (office supplies, transportation, small grants): use money orders purchased with bank debit card (not cash) for better transaction record
+
+**Phase 6: Donor Privacy Protections**
+
+*Donor communication on privacy*:
+- [ ] Create written donor privacy policy: what personal information is collected, how it is stored, how it is protected
+- [ ] Policy includes: organization does not sell or share donor information; organization retains donor information for tax/audit purposes; organization is subject to donor disclosure law (Schedule B, though not publicly available)
+- [ ] Provide policy to all donors at point of contribution
+- [ ] Document that donor received policy (checkbox on donation form: "I have received the donor privacy policy")
+
+*Anonymous donation acceptance*:
+- [ ] Organization accepts donations without requiring donor name/address
+- [ ] Establish mechanism: cash donations (anonymous accepted); online donations (can use masked email/payment method)
+- [ ] Provide alternate donation channels: [Email for questions about anonymous donation] or [Form to request anonymous donation options]
+
+*Donor-advised fund and fiscal sponsorship evaluation*:
+- [ ] For major donors concerned about privacy: provide information on donor-advised funds
+  - Example: Donor contributes to DAF at community foundation; DAF recommends grants to your organization
+  - Donor's identity is known to foundation, not to recipient organization
+- [ ] For high-risk programs: evaluate fiscal sponsorship through established fiscal sponsor in your field
+  - Example: HIAS (for immigration work), LGBTQ organizations have LGBTQ-focused fiscal sponsors
+  - Fiscal sponsorship provides structural distance between individual donor and controversial program
+- [ ] Provide both options to major donors; allow them to choose based on their privacy preferences
+
+**Phase 7: Cryptocurrency Donation Acceptance (If Applicable)**
+
+*Decision: should your organization accept cryptocurrency?*
+- [ ] Counsel assesses: does accepting cryptocurrency meaningfully reduce surveillance exposure vs. legal/compliance burden?
+- [ ] Most organizations: answer is no. Crypto acceptance adds compliance complexity without proportional benefit.
+- [ ] Organizations where it makes sense: those with significant donor base of crypto-native supporters (Bitcoin/Monero communities) where crypto acceptance is lower-friction than traditional donation methods
+
+*If implementing cryptocurrency acceptance*:
+- [ ] Accept only Monero (not Bitcoin; Bitcoin is traceable on chain)
+- [ ] Set up self-custodied wallet: use official Monero CLI or GUI wallet from getmonero.org
+- [ ] Generate wallet on air-gapped device (device never connected to internet); record seed phrase on paper; store securely
+- [ ] Publish wallet address for donations (address is public; does not reveal donation history or your organization's identity)
+- [ ] Do not use exchange-custodied Monero or hardware wallet that requires exchange withdrawal (adds KYC link)
+- [ ] Monthly: convert received Monero to USD via decentralized exchange (Bisq or Haveno) and deposit to bank account
+  - [ ] Use peer-to-peer cash trade if possible to avoid bank account linkage during exchange process
+  - [ ] If trading to fiat: trade small amounts ($2,000-$5,000) to avoid single large transaction that might trigger SAR
+  - [ ] Document each Monero-to-fiat trade: date, amount converted, trade method, bank deposit date
+- [ ] Tax treatment: value received Monero donations at fair market value on receipt date (not exchange date); include in annual revenue
+- [ ] Consult tax counsel on Form 990 reporting: "cryptocurrency donations" should appear in supplement to gross revenue
+
+**Phase 8: Regular Review and Monitoring**
+
+*Quarterly finance committee meeting*:
+- [ ] Agenda includes: review of transaction logs for unusual patterns, account status update (any de-banking warnings?), donor privacy compliance check
+- [ ] If anything unusual: report to counsel before publicizing or changing structure
+- [ ] Update board annually: "Financial surveillance threat assessment remains current; controls in place"
+
+*Annual counsel check-in*:
+- [ ] Meet with nonprofit tax counsel once per year to review: any changes to law? Any changes to IRS/FinCEN enforcement priorities? Any organizational changes that affect risk profile?
+- [ ] Update written documentation: counsel confirms current structure remains appropriate, or recommends changes
+
+---
+
+### Scenario B: Individual Financial Privacy Checklist (Activists, Donors, Employees of Exposed Organizations)
+
+Use this checklist if you are an individual activist, donor to politically exposed organizations, or employee of advocacy organization, and have reason to believe your personal financial activity may be subject to LCA or related financial surveillance.
+
+**Phase 1: Financial Baseline and Risk Assessment**
+
+*Understand your current financial exposure*:
+- [ ] List all financial accounts: checking, savings, investment, cryptocurrency
+- [ ] List all credit cards and payment platforms: Venmo, CashApp, PayPal, Square
+- [ ] Document institutions: which banks, credit unions, payment processors?
+- [ ] Review account history: over last 12 months, what is the range and pattern of transactions?
+
+*Assess your LCA exposure*:
+- [ ] Do you donate to organizations that are or could be under investigation?
+- [ ] Do you work for an organization under political scrutiny?
+- [ ] Do you purchase from vendors associated with activism (printing companies that print protest materials, activist-aligned bookstores, etc.)?
+- [ ] Do you receive payments from politically-aligned sources (consulting, contract work for advocacy organizations)?
+- [ ] If yes to any: you have moderate to high LCA exposure
+
+*Document your performance/employment baseline*:
+- [ ] If employed: save copy of your most recent performance evaluation
+- [ ] If self-employed or contracting: document your current income level and major clients
+- [ ] If retired: document your income sources
+- [ ] Purpose: if you become subject to investigation or your employment is affected, you have baseline to compare against
+
+**Phase 2: Compartmentalization Strategy (Personal + Activist)**
+
+*Separate personal and activist-related finances*:
+- [ ] Maintain a personal checking account: for routine personal expenses (housing, utilities, food, personal shopping)
+- [ ] Do NOT use personal account for: donations to activist organizations, payments to politically sensitive vendors, activist-related purchases
+- [ ] For activist spending: use dedicated payment method (see Phase 3)
+
+*Personal account best practices*:
+- [ ] Use personal account for: salary deposit, mortgage/rent, utilities, groceries, personal insurance, personal healthcare
+- [ ] Avoid: any transaction that could be characterized as activism-related
+- [ ] Goal: if this account alone is examined, it appears to be routine personal finances unrelated to activism
+
+**Phase 3: Activist-Related Transaction Methods**
+
+*Option A: Secondary personal debit card*:
+- [ ] Open second checking account at same bank or different institution
+- [ ] Use second account exclusively for: donations, activist purchases, payments to politically sensitive vendors
+- [ ] Fund account with: transfers from primary account (documented, legitimate transfer)
+- [ ] Withdrawal method: debit card or check from secondary account only; never use primary card for activist spending
+
+*Option B: Cash-based spending*:
+- [ ] For activist purchases under $1,000: withdraw cash from primary account (documented as "cash withdrawal," normal transaction)
+- [ ] Use cash to purchase: activist materials, donations, payments to politically sensitive vendors
+- [ ] No transaction record at point of sale; no transaction pattern link between your identity and vendor
+
+*Option C: Prepaid debit cards*:
+- [ ] Purchase prepaid debit card with cash (no purchase record)
+- [ ] Load funds onto card with cash or from secondary account
+- [ ] Use prepaid card for online activist-related purchases
+- [ ] Limitation: some prepaid cards require ID at purchase or loading; research which cards have minimal ID requirements
+
+*Option D: Avoid high-surveillance payment methods*:
+- [ ] Do not use for activist spending: Venmo, CashApp, Zelle, PayPal (all create permanent transaction records visible in LCA)
+- [ ] If you use these platforms: use only for transactions with close friends/family where activism link is not apparent
+- [ ] If activist spending with activist-affiliated people: use Signal Pay (if available), in-person cash, or check
+
+**Phase 4: Donation Strategies**
+
+*Direct donations to organizations*:
+- [ ] Donate via cash or money order (address envelope to organization; send via postal mail)
+- [ ] Donate via check from personal account (less private than cash, but still creates partial separation from second-party payment networks)
+- [ ] Donate via organization's website if they accept payment methods other than credit card (some accept cryptocurrency, some accept PayPal, etc.)
+- [ ] If website requires credit card: use secondary account debit card, not primary card
+
+*Donor-advised funds (if you have significant donation capacity)*:
+- [ ] If you donate >$5,000/year to activist organizations:
+  - [ ] Consider opening a donor-advised fund (DAF) through a community foundation or national DAF provider (Fidelity Charitable, Schwab Charitable)
+  - [ ] Donate to your DAF from your primary account (legitimate charitable contribution, tax deductible)
+  - [ ] DAF recommends grants from your DAF to activist organizations (you control where the money goes)
+  - [ ] Advantage: your name is associated with the DAF, not with recipient organizations
+  - [ ] Foundation has record of your donation; recipient organizations do not know your identity directly
+- [ ] Consult with tax advisor: DAF structure can significantly improve privacy for major donors
+
+*Fiscal sponsorship (if donor relationship is ongoing)*:
+- [ ] If you provide regular funding to an activist project:
+  - [ ] Investigate whether a fiscal sponsor exists for that project's program area
+  - [ ] Donate to the fiscal sponsor designated for the project
+  - [ ] Fiscal sponsor has your donation information; the specific project does not
+  - [ ] This adds a layer of organizational separation
+  - [ ] Find sponsors: fiscalsponsordirectory.org, or ask the project which sponsors serve their area
+
+**Phase 5: Employment Financial Tracking**
+
+*If you work for an advocacy organization or politically exposed employer*:
+- [ ] Understand your organization's financial health: is it under financial stress that might lead to account closure?
+- [ ] Follow organization's 990 filing: does the organization file annual Form 990? (Requirement for organizations >$50k annual revenue)
+- [ ] If organization is under investigation or public scrutiny: consider whether continuing employment poses retaliation risk (see cybersecurity-hardening/whistleblower-playbook.md)
+- [ ] Document your employment baseline: recent evaluations, compensation level, benefits
+
+*For contractors or consultants to activist organizations*:
+- [ ] Maintain separate bank account for contractor income vs. personal income
+- [ ] Track all invoices and payments: dates, amounts, payment methods
+- [ ] For major contracts (>$5,000/year): consult tax advisor on whether separate business entity (LLC, sole proprietorship) makes sense
+- [ ] Purpose: if you are subject to investigation, clear documentation of legitimate income is important
+
+**Phase 6: Credit Monitoring and Account Security**
+
+*Personal credit monitoring*:
+- [ ] Establish credit freeze with all three credit bureaus (Equifax, Experian, TransUnion)
+  - [ ] Reason: under LCA investigation, adversary might attempt to open credit accounts in your name to gather intelligence
+  - [ ] Credit freeze requires you to unfreeze to open legitimate credit; minor inconvenience but strong protection
+  - [ ] Process: each bureau has free online freeze option; takes 5 minutes per bureau
+
+*Bank account monitoring*:
+- [ ] Set up alerts on all accounts: email alert for any withdrawal >$500, any check clearance, any unusual transaction
+- [ ] Review account statements monthly: look for unauthorized transactions, unauthorized access, unusual payment patterns
+- [ ] If account is closed or restricted: contact bank immediately; ask why; document reason in writing
+
+*Credit card monitoring*:
+- [ ] Check credit report annually (free at annualcreditreport.com): look for unauthorized accounts, inquiries, collections
+- [ ] Dispute any unauthorized activity immediately
+
+**Phase 7: Cryptocurrency for Personal Privacy (If Applicable)**
+
+*Monero for financial privacy* (only if you have sophisticated technical capability):
+- [ ] Monero provides on-chain privacy for transactions (sender, receiver, amount hidden)
+- [ ] **Only use if**: you understand the exchange vulnerability (any KYC-connected Monero gives away your identity at the entry point)
+- [ ] Appropriate use: receiving non-KYC Monero from activist networks and self-custodying for long-term holding
+
+*How to acquire non-KYC Monero*:
+- [ ] Bisq or Haveno decentralized exchange: trade Bitcoin or cash for Monero
+- [ ] In-person trade: find local Monero community and trade cash for XMR (Bitcoin meetups sometimes include Monero traders)
+- [ ] Accept Monero as payment: if you work for activist organization that receives Monero, self-custody it
+- [ ] Do NOT: buy Monero from regulated exchange (Coinbase, Kraken, Gemini) with your identity; this defeats privacy purpose
+
+*Self-custody for Monero holdings*:
+- [ ] Use official Monero wallet (getmonero.org) or Feather Wallet (featherwallet.org)
+- [ ] Generate wallet on air-gapped device if possible; record seed phrase on paper
+- [ ] Never share private key; never import into hardware wallet connected to internet
+
+*When to consider Monero*: only if you have reason to believe your financial accounts are subject to active investigation or if you are part of activist network that uses Monero as standard financial tool. For most individuals, the complexity and technical risk outweigh the privacy benefit.
+
+**Phase 8: Ongoing Monitoring**
+
+*Monthly self-check*:
+- [ ] Review all account statements: any unexpected transactions?
+- [ ] Check credit alerts: any unusual activity?
+- [ ] Review activist spending patterns: are you maintaining separation between personal and activist finances?
+
+*Quarterly review with trusted advisor*:
+- [ ] Meet with trusted friend or advisor who understands activist finance
+- [ ] Discuss: any changes in circumstances? Any new exposure? Any new financial accounts needed?
+
+*Annual consultation with financial advisor or tax professional*:
+- [ ] Tax advisor can review whether current structure is tax-efficient and appropriate for your situation
+- [ ] If you have significant income or assets: consider whether LLC or trust structure makes sense for privacy reasons
+
+---
+
 ## Resource Directory
 
 ### Legal Counsel and Tax Guidance

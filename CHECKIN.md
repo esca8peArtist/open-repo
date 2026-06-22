@@ -1,5 +1,36 @@
 # Check-in Summary
 
+## Session 3904 (2026-06-22 — resistance-research T+7 + Domain 57 advance)
+
+**Status**: COMPLETE — T+7 framework review done, Domain 57 source document updated
+
+### Work Completed
+
+**T+7 checkpoint review**:
+- T+7 framework (T_PLUS_7_CHECKPOINT_MONITORING_FRAMEWORK.md) is fully operational — no autonomous work remains for the June 23-25 window. The monitoring is user-facing (inbox checks, signal log fills, routing decisions). No new framework documents required.
+- Domains 51 and 48 sends remain OVERDUE (templates ready, user action only). Domain 59 Wave 2 templates ready (EPI/Demos/NELP). No status change from Session 3902e — the bottleneck is user execution.
+- T+7 execution schedule (Sections 5.1-5.3 of the framework) is the canonical June 23-25 reference.
+
+**Domain 57 research advanced**:
+- June 2026 update section appended to `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` (3 updates)
+- UNGA framing paragraph pre-populated in Templates IL and TP in `domain-57-distribution-runbook.md`
+- PROJECTS.md updated to reflect completed items
+
+### Needs Your Input
+
+**Domain 57 — August 8-9 pre-send actions** (unchanged, confirmed):
+- Re-verify all Tier 2 contact emails (2 months have passed since June 2 verification)
+- Update Gist (https://gist.github.com/esca8peArtist/a94ef436fd4a678f89e867ac8ed3dd61) to include the June 2026 update section appended to the source document
+- Verify 5 key citation URLs per pre-send checklist in domain-57-send-log.md
+
+**Domain sends — URGENT (still overdue)**:
+- Domain 51: CLC + Issue One — send immediately (overdue 6+ days). Templates: `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md`
+- Domain 48: Sentencing Project + Prison Policy Initiative — send June 23-25. Templates: `DOMAIN_48_EMAIL_TEMPLATE_SET.md`
+- Domain 59 Wave 2: EPI + Demos by June 24; NELP June 25-30. Templates: `DOMAIN_59_WAVE_2_EMAIL_EXECUTION_PACKAGE.md`
+- T+7 monitoring guide: `T_PLUS_7_CHECKPOINT_MONITORING_FRAMEWORK.md` (read this before inbox check June 23)
+
+---
+
 ## Session 3903 (2026-06-22 19:08–20:XX UTC) — DEPLOYMENT MONITORING + PARALLEL PARALLELIZATION BURST
 
 **Status**: 🟢 **STANDBY FOR 20:00 UTC DEPLOY_READY CREATION** + parallel agents advancing Phase 3 + Q3 sprint

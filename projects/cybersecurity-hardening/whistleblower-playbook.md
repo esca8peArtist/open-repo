@@ -184,7 +184,66 @@ Federal contractors and employees of private-sector companies working on governm
 
 ---
 
-### 2.4 Inspector General Process: What to Expect
+### 2.4 Legal Protection Decision Matrix: Which Channel for Your Situation?
+
+This section provides a decision framework to assess which disclosure channel provides which legal protection level for your specific employment situation. The matrix below is organized by employment category and the nature of the disclosure. **This is not legal advice for your specific situation — it is a general framework.** Use it to inform your conversation with counsel.
+
+#### Matrix 1: Federal Civil Service Employees (Non-Intelligence Community)
+
+| Your Situation | WPA Coverage | Recommended Primary Channel | Legal Protection Level | Why This Channel | Critical Timing |
+|---|---|---|---|---|---|
+| Non-classified misconduct (civil rights, abuse of authority, waste, mismanagement) | **FULL** | Inspector General or OSC | **HIGH** | WPA protects both IG and OSC disclosures; IG is fastest; OSC creates federal agency record | File IG within 30 days of discovery if possible |
+| Non-classified misconduct + you have reason to believe IG is compromised | **FULL** | Office of Special Counsel (OSC) | **HIGH** | OSC is independent federal agency; investigating compromised IG is within OSC scope | No statute of limitations for WPA retaliation; file immediately |
+| Non-classified misconduct + you want Congressional channel | **FULL** | Congressional oversight committee member or staff | **HIGH** | WPA protects Congressional disclosures; creates legislative record; may trigger oversight | Identify specific committee member; secure contact before filing (see 6.3) |
+| Non-classified misconduct you intend to disclose to media | **PARTIAL** | First file IG/OSC, then media (wait 30+ days) | **MEDIUM to HIGH** | Filing protected channel first creates record of protected disclosure; subsequent press disclosure has stronger legal footing | File IG/OSC first; document filing date and what was disclosed; media disclosure 30+ days later |
+| You want to go directly to media without internal channels | **NO WPA PROTECTION** | SecureDrop to journalist | **LOW to MEDIUM** | No WPA protection, but operational security is high; First Amendment protection may apply depending on content and jurisdiction | Consult counsel before proceeding; operational security critical |
+| Immigration misconduct (ICE, CBP, USCIS) or civil rights violations | **FULL** | Government Accountability Project immigration program, then IG or OSC | **HIGH** | GAP specializes in immigration enforcement disclosure; can advise on current IG independence status; DHS CRCL office has dedicated whistleblower program | Contact GAP (whistleblower.org/immigration/) before filing IG; GAP can determine which IGs are operationally independent |
+
+#### Matrix 2: Intelligence Community and Classified Program Employees (CIA, NSA, DIA, NRO, and intelligence functions in FBI/DHS)
+
+| Your Situation | Coverage Statute | Recommended Primary Channel | Legal Protection Level | Why This Channel | Critical Notes |
+|---|---|---|---|---|---|
+| Classified program disclosure | **ICWPA (Intelligence Community Whistleblower Protection Act, 1998)** | Intelligence Community Inspector General (ICIG) | **HIGH (but narrower than WPA)** | ICIG has classified information expertise; ICWPA protects IG disclosures; required first step for classified disclosures | Requires use of ICIG channel; direct press disclosure of classified information is Espionage Act exposure regardless of motive |
+| Classified misconduct or illegality | **ICWPA** | Congressional Intelligence Committee (with proper security protocol) | **HIGH** | ICWPA protects Congressional disclosures about classified programs; Intelligence committees can receive classified disclosures; required parallel to ICIG | Must follow Congressional security protocols; ICIG + Congressional disclosure provides dual channel protection |
+| Non-classified misconduct by intelligence agency | **ICWPA** | Inspector General (agency) + Congressional oversight | **HIGH** | ICWPA provides coverage; can use unclassified disclosure pathway | More flexibility than classified disclosure pathway; still use ICIG if classified implications |
+| You believe ICIG is compromised or not independent | **ICWPA** | Congress (Intelligence or oversight committee) + specialized counsel | **HIGH** | ICWPA protects Congressional disclosures; Intelligence committees have staff with clearances for classified briefings | Congress is the check on ICIG dysfunction; requires cleared contact |
+| Classified disclosure you intend to make public/media | **ICWPA does not protect** | Specialized cleared counsel + consider ICIG+Congress first | **VERY LOW** | Direct media disclosure of classified information is Espionage Act violation; ICWPA requires use of IG/Congressional channels, not media | **Do not proceed without specialized cleared counsel; ICWPA whistleblower protection does NOT apply to media disclosures of classified information** |
+
+#### Matrix 3: Federal Contractors and Private Sector Employees with Government Contract Evidence
+
+| Your Situation | Coverage Statute | Recommended Primary Channel | Legal Protection Level | Why This Channel | Critical Notes |
+|---|---|---|---|---|---|
+| Gross mismanagement, waste, or fraud related to federal contract | **41 U.S.C. § 4712 (federal contractor whistleblower statute)** | Contractor company's internal channels, then IG of contracting agency | **MEDIUM to HIGH** | § 4712 protects both internal and external (IG) disclosures; provides protection against retaliation; may provide financial award if False Claims Act applies | § 4712 covers contractor employees but with narrower scope than WPA (federal employees) |
+| You work for contractor; evidence involves government illegality (not just contractor wrongdoing) | **41 U.S.C. § 4712** | Government agency IG (contracting agency), then OSC | **HIGH** | IG of agency receiving contractor services has jurisdiction; § 4712 protects external disclosures; OSC can investigate retaliation | File with IG of government agency benefiting from the contract (e.g., if you're an Intel contractor, file with DOD IG) |
+| You have evidence of contractor fraud against the government (False Claims Act violation) | **31 U.S.C. § 3730 (False Claims Act qui tam provisions)** | Qui tam attorney (specialized FCA counsel) | **HIGH + financial recovery** | FCA allows whistleblower to file lawsuit on government's behalf; whistleblower receives portion of recovery (15-30% of settlement); provides both legal protection and financial award | Requires specialized FCA counsel; qui tam cases are *qui tam* against the contractor under seal, filed through attorney |
+| Contractor employee in intelligence context (cleared contractor for intelligence work) | **41 U.S.C. § 4712 + ICWPA-equivalent protections pending** | IG of contracting agency + Office of Inspector General of Intelligence Community (if applicable) | **MEDIUM (gaps exist)** | Current law has gaps for contractor employees in intelligence context; Expanding Whistleblower Protections for Contractors Act (pending as of May 2026) would expand coverage | Check current status of S.874 (Expanding Whistleblower Protections for Contractors Act); coverage is more limited than for direct federal employees |
+
+#### Matrix 4: Probationary Employees, Former Employees, and Applicants
+
+| Your Situation | Coverage Status | Recommended Primary Channel | Legal Protection Level | Why This Channel | Critical Notes |
+|---|---|---|---|---|---|
+| You are in first year of federal employment (probationary) | **Covered by WPA but with limitations** | OSC is more protective than IG for probationary employees | **MEDIUM** | WPA covers probationary employees for retaliation, but appeal rights to Merit Systems Protection Board (MSPB) are limited; OSC (not MSPB) has direct authority to investigate and seek remedies | OSC is the safer channel for probationary employees because it does not depend on MSPB appeal rights |
+| You have been separated from federal employment | **Covered (limited)** | OSC or federal circuit court | **LOW to MEDIUM** | WPA covers former employees for some retaliation claims, but statute of limitations and available remedies are narrower | Consult counsel on specific claim; timing of separation relative to disclosure affects protection |
+| You are applying for federal employment and have evidence of misconduct from a prior agency | **Covered** | IG of agency where misconduct occurred | **MEDIUM** | WPA covers applicants; disclosure to IG of original agency creates protected record | Filing creates record that may affect your hiring in the new agency; consult counsel on implications |
+
+#### Matrix 5: Non-Classified vs. Classified Disclosure: The Bright Line
+
+This is the critical distinction that determines which statutes apply and which channels are mandatory:
+
+**Non-classified disclosure** (civil rights violations, abuse of authority, waste, mismanagement, contract fraud):
+- **Covered by**: WPA (federal employees), 41 U.S.C. § 4712 (contractors), 31 U.S.C. § 3730 (FCA)
+- **Available channels**: IG, OSC, Congress, media/SecureDrop
+- **Legal protection for media disclosure**: No WPA protection, but First Amendment and operational security available; consult counsel on specifics
+
+**Classified disclosure** (national security information marked or understood to be classified):
+- **Covered by**: ICWPA only (intelligence community employees)
+- **Available channels**: ICIG and Congressional Intelligence Committees only
+- **Legal protection for media disclosure**: ICWPA does not protect media disclosures; Espionage Act applies; criminal liability risk is substantial
+- **Absolute rule**: Do not disclose classified information to media without cleared counsel; ICWPA protection does not extend to press disclosures regardless of public interest motive
+
+---
+
+### 2.6 Inspector General Process: What to Expect
 
 Each federal agency has an Inspector General established under the Inspector General Act of 1978. IGs conduct independent audits and investigations of their agency's programs. Filing a disclosure with an IG is a protected channel under the WPA.
 
@@ -370,6 +429,173 @@ The documentary record of retaliation is essential for both legal protection und
 
 ---
 
+### 5.2a Retaliation Documentation Protocol: Structured Guidance for Building Your Case
+
+Section 5.2 above provides the conceptual framework for retaliation documentation. This section provides a structured protocol — what specifically to document, how to organize it, and what formats provide the strongest legal protection. Use this protocol as a reference checklist if you suspect post-disclosure retaliation is occurring.
+
+#### Phase 1: Pre-Disclosure Baseline Documentation (Before Any Disclosure)
+
+This phase is critical. A documented baseline of your employment standing before disclosure is the strongest evidence that subsequent adverse actions are retaliatory rather than performance-based.
+
+**1. Performance baseline**:
+- [ ] Print/photograph your most recent performance evaluation (formal evaluation, not email feedback)
+- [ ] Save any written commendations, "excellent performer" designations, awards, or positive feedback from supervisors
+- [ ] If you have been "fully successful" or higher rating on recent evaluations, save that rating
+- [ ] If you have received bonuses, pay raises, or promotions within the 12 months before disclosure, document those
+- [ ] Screenshot any positive LinkedIn recommendations from colleagues or supervisors (with their permission if ongoing relationship is relevant)
+- **Storage**: A secure personal device (not government device) in an encrypted container or password-protected folder; make a USB backup stored outside your home
+
+**2. Relationship baseline**:
+- [ ] Document in a personal journal (dated entries) any positive interactions with supervisors, managers, or leadership that demonstrate collegial working relationship
+- [ ] Save emails from supervisors showing normal work collaboration, approval of your work, or positive direction
+- [ ] Note any non-work social interactions with management (invited to team lunches, departmental social events, etc.) as indicators of normal relationship status
+- [ ] Document any special assignments, high-profile projects, or responsibilities that demonstrate management confidence in your work
+
+**3. Pre-disclosure concern timeline** (if applicable):
+- [ ] Document any comments by management that suggest hostility toward whistleblower activities or the type of disclosure you are considering
+- [ ] Example: "That's not how we do things here," "People who rock the boat don't last," "We have ways of handling internal problems"
+- [ ] Document dates, exact wording (as close as memory allows), context, and witnesses to such comments
+
+**4. Create a baseline summary document** (dated):
+- [ ] A 1-2 page document written as of the date you create it, summarizing your employment standing, recent accomplishments, and relationship quality with management
+- [ ] This is not a legal document; it is a contemporaneous personal statement
+- [ ] Store on encrypted personal device; do not save to government systems
+
+#### Phase 2: Disclosure Event Documentation
+
+**At the moment of disclosure (IG filing, OSC submission, Congressional contact, or SecureDrop access)**:
+- [ ] Date and time of disclosure action
+- [ ] Method of disclosure (oral, written, through what channel)
+- [ ] Name of recipient (IG officer, OSC staff member, Congressional staff member, or SecureDrop submission codename)
+- [ ] Confirmation of receipt: print or screenshot any confirmation of filing, any receipt numbers, any acknowledgment emails
+- [ ] Attach to your baseline summary document: create a "Disclosure Timeline" document dated with the disclosure action
+- [ ] Store original confirmations in encrypted personal device; keep USB backup outside home
+
+**If you filed with IG or OSC**:
+- [ ] Write down the date, time, and name of IG/OSC official who received your disclosure if submitted in person
+- [ ] If submitted by mail, keep the envelope with postmark as proof of mailing date
+- [ ] Retain the tracking number if submitted electronically
+- [ ] Write a summary email to yourself dated the same day: "On [date], I submitted disclosure regarding [subject matter] to [IG/OSC] via [method]. Confirmation received: [what confirmation was provided]."
+
+#### Phase 3: Post-Disclosure Adverse Action Documentation
+
+This phase begins immediately after disclosure and continues for as long as you remain in the employment relationship. Document any change in your employment circumstances, work environment, or treatment by management.
+
+**3a. What constitutes adverse action** (document any of these):
+- Change in job assignment or responsibilities (lateral move, demotion, reassignment to different team)
+- Change in supervisor or reporting relationship
+- Denial of promotion, raise, or bonus that would normally be expected
+- Exclusion from meetings, projects, or assignments you previously participated in
+- Reduction in access credentials, security clearances, or IT permissions
+- Disciplinary action (oral warning, written warning, suspension) — especially if disproportionate to offense
+- Negative performance review that contradicts previous reviews
+- Hostile comments from management, colleagues, or supervisors
+- Social exclusion (excluded from team lunch, removed from group email, etc.)
+- Unusual scrutiny of your work product or behavior (random audits, micro-management)
+- Investigation into your conduct (formal investigation opened, interrogation about job-related activities)
+- Threat of termination, "performance improvement plan" (PIP), or involuntary transfer
+- Actual termination or constructive discharge (forced resignation)
+
+**3b. Documentation template for each adverse action**:
+
+Create a daily log entry for each adverse action using this format:
+
+```
+DATE: [MM/DD/YYYY]
+TIME: [HH:MM]
+ACTION: [Brief description of adverse action]
+DETAIL: [What specifically was said or done]
+WHO WAS INVOLVED: [Names and titles of people involved]
+WITNESSES: [Names of any colleagues who saw/heard this]
+CONTEXT: [What prompted this action, or why you believe it relates to the disclosure]
+MY RESPONSE: [What you said or did in response]
+REFERENCE DOCUMENT: [Any email, memo, or official record that documents this action]
+```
+
+**Example entry**:
+```
+DATE: 06/25/2026
+TIME: 10:30
+ACTION: Exclusion from team meeting
+DETAIL: I was excluded from the weekly team meeting on data quality that I had been attending weekly for 8 months. My manager sent the meeting request to the team but not to me. When I asked why, he said "I didn't think you'd have anything to contribute this week."
+WHO WAS INVOLVED: Manager John Smith (Title: Senior Analyst)
+WITNESSES: Sarah Cohen, Michael Rodriguez (team members)
+CONTEXT: 2 weeks after I filed IG disclosure about data quality concerns. I had raised issues about the data pipeline in the IG filing.
+MY RESPONSE: I asked John if I should still attend. He said attendance was now optional. I did not attend.
+REFERENCE DOCUMENT: Email from John Smith 06/25 14:00 titled "Team meeting 06/27" shows my name was not on cc field. Forwarding rule I received confirmation of.
+```
+
+**3c. Preserve communications**:
+- [ ] Do not delete any emails, Slack messages, or communications from management, supervisors, or HR
+- [ ] Forward important emails to your personal email account (if your IT security permits) or print/screenshot them
+- [ ] If management explicitly orders you to delete communications, document that order: date, time, who gave the order, what communications were ordered deleted
+- [ ] If you are told to delete materials related to your disclosure, this is destruction of evidence and document it specifically
+
+**3d. Preserve access to performance reviews**:
+- [ ] If your agency uses an electronic performance management system, download and print/save your record at regular intervals (monthly after disclosure)
+- [ ] If you have access to your personnel file, request and retain a copy periodically
+- [ ] If performance comments are added to your file, obtain copies immediately; do not wait until formal review
+
+#### Phase 4: Timeline and Evidence Organization
+
+As adverse actions accumulate, create an organized summary:
+
+**4a. Master timeline document**:
+- [ ] A single document (spreadsheet or text file) with entries for: disclosure date, each subsequent adverse action date, brief description, and reference to supporting documents
+- [ ] Format: Date | Adverse Action | Reference Document | Timing Since Disclosure
+
+**Example**:
+```
+06/11/2026 | IG Disclosure filed | IG receipt email | [Baseline date]
+06/25/2026 | Excluded from team meeting | Email from mgr 06/25 | 14 days after disclosure
+07/02/2026 | Negative feedback in 1-on-1 | Personal journal entry | 21 days after disclosure
+07/15/2026 | Performance Improvement Plan initiated | Official PIP memo | 34 days after disclosure
+```
+
+This timeline is the visual evidence of the temporal connection between disclosure and adverse actions. The closer the timing, the stronger the inference of retaliation.
+
+**4b. Adverse action folder** (physical or digital):
+- [ ] Create a dedicated folder on encrypted personal device: "Retaliation Documentation"
+- [ ] Organize by date: file all evidence (emails, PDFs, photos of printed documents) by date
+- [ ] Include the official documents (performance reviews, PIP notice, termination letter) as well as your supporting notes
+- [ ] Cross-reference each document in your master timeline
+
+**4c. Causation narrative** (monthly):
+- [ ] Once per month after an adverse action, write a brief narrative (1-2 paragraphs) connecting the adverse action to the disclosure
+- [ ] Example: "The IG disclosure I filed on 06/11 identified [specific issue]. On 06/25, my manager excluded me from the team meeting where [specific issue] is discussed. Before the disclosure, I had attended this meeting every week for 8 months. This temporal proximity suggests retaliation for the disclosure."
+- [ ] Keep these narratives in the same folder; they provide contemporaneous analysis that is stronger evidence than reconstructed narrative later
+
+#### Phase 5: Engagement with GAP or OSC
+
+**When to contact**:
+- After first adverse action that you believe is retaliatory, contact GAP or OSC
+- Do not wait to accumulate multiple adverse actions — demonstrate intent to use protected channels
+
+**What to bring to your consultation**:
+- [ ] Your baseline summary document
+- [ ] Disclosure confirmation (receipt, email, etc.)
+- [ ] Master timeline
+- [ ] 3-5 key adverse action documents (performance reviews, termination letter, PIP, etc.)
+- [ ] Notes on witnesses (names and contact info of people who observed adverse actions)
+- [ ] Your written causation narratives
+
+**What GAP or OSC will evaluate**:
+- Whether timing between disclosure and adverse action supports retaliation inference
+- Whether the adverse action is incongruent with your established performance baseline
+- Whether the action was disproportionate to any legitimate justification offered
+- Whether management's stated reason for the action is credible or pretextual
+
+#### Phase 6: Long-Term Documentation if Case Proceeds
+
+If GAP accepts representation or OSC initiates investigation:
+- [ ] Continue the daily log of any subsequent adverse actions with same format
+- [ ] Provide regular updates to your attorney with new adverse actions and supporting documents
+- [ ] Preserve all communications about the retaliation claim itself (emails to/from GAP, OSC, management about the claim)
+- [ ] Do not communicate with management about the retaliation claim without counsel guidance
+- [ ] If management confronts you about the GAP/OSC filing, document that confrontation immediately
+
+---
+
 ### 5.3 The Parallel Construction Defensive Documentation Strategy
 
 Because parallel construction conceals the intelligence predicate of an investigation, you may not know if and when an investigation began. The defensive documentation strategy is to create a contemporaneous paper trail that limits the government's ability to use parallel construction effectively:
@@ -544,6 +770,265 @@ Possibly. The first thing to do is consult with legal counsel immediately — be
 **Q: What is the single most important thing I can do right now?**
 
 Call the Government Accountability Project. 202-457-0034. The consultation is free. The legal landscape for whistleblowers — including what is protected, what isn't, which IGs are currently functional, and which congressional offices are actively receiving disclosures — changes faster than any written guide can track. GAP works these cases in real time and can give you current, situation-specific guidance that this playbook cannot.
+
+---
+
+## Part 9: Scenario-Specific Implementation Checklists
+
+This section provides action checklists for specific whistleblower scenarios. Use the checklist that matches your employment category and the nature of your disclosure.
+
+### Scenario A: Federal Civil Service Employee (Non-Intelligence Community) with Non-Classified Misconduct
+
+**Use this checklist if**: You work for a federal agency (not intelligence community), have evidence of civil rights violations, abuse of authority, waste, or mismanagement, and the evidence does not involve classified information.
+
+**Target channels**: Inspector General → Office of Special Counsel (if needed) → Media/SecureDrop (if IG/OSC insufficient)
+
+**Week 1: Pre-Disclosure Preparation**
+- [ ] Call Government Accountability Project: 202-457-0034. Book initial consultation (free). Estimated time: 30 min call + 1 hour prep.
+- [ ] Print/save your most recent performance evaluation (at least 2 prior years if available)
+- [ ] Save any written commendations, awards, positive emails from supervisors
+- [ ] In a personal journal, write baseline summary: your job title, duties, recent accomplishments, supervisor name, employment tenure
+- [ ] Identify the appropriate agency Inspector General: search "[Agency name] inspector general office" + get mailing address or secure submission portal
+- [ ] Read Part 2.4 (Legal Protection Decision Matrix) and identify your specific scenario row
+- [ ] Verify which disclosure channel your counsel recommends (likely IG or OSC based on your agency IG independence status)
+
+**Week 2: Disclosure Preparation**
+- [ ] Draft your disclosure in writing on a personal device (not government device)
+  - Include: What misconduct did you observe? When? Where? Names and positions of people involved? Documents that support your claim? Why do you believe this is illegal/unethical?
+  - Keep it factual; avoid emotional language; stick to what you personally observed
+  - Length: 2-5 pages typical for IG disclosure
+- [ ] Review your draft with GAP counsel via phone or encrypted communication (Signal with verified phone number)
+- [ ] Counsel feedback: revise as needed
+- [ ] Create a personal copy of your final disclosure; store on personal encrypted device
+- [ ] Prepare final version for IG filing
+
+**Week 3: Disclosure Filing**
+- [ ] If submitting to IG:
+  - [ ] Check if IG accepts electronic submissions via secure portal (preferable, creates timestamped record)
+  - [ ] If mail submission: Use certified mail with return receipt from post office (not FedEx/UPS), to confirm receipt date
+  - [ ] If in-person: Request written receipt from IG office staff; get name and date stamp of IG officer who receives disclosure
+- [ ] File your disclosure using the method that creates the best record (electronic with timestamp preferred)
+- [ ] Save receipt: email confirmation, certified mail receipt, or written IG receipt
+- [ ] Photograph/screenshot receipt and store with encrypted copies on personal device
+- [ ] Document in your personal journal: filing date, recipient name/title, confirmation method, confirmation number/date
+
+**Week 4: Establish Secure Counsel Communication**
+- [ ] If you will continue working with counsel (GAP or your private attorney):
+  - [ ] Set up encrypted communication channel: Signal on a VoIP number (MySudo, Google Voice, not your carrier number)
+  - [ ] Do initial safety number verification: in-person meeting preferred, or video call where both can see QR codes
+  - [ ] Document counsel's Signal number in your personal journal (encrypted)
+- [ ] Establish a check-in schedule with counsel (monthly calls typical during investigation phase)
+
+**Weeks 5+: Post-Disclosure Monitoring and Documentation**
+- [ ] Begin daily retaliation documentation using protocol in Part 5.2a:
+  - [ ] Create retaliation log file with template entries (date, action, context, witnesses, reference doc)
+  - [ ] Store on encrypted personal device; back up to USB external drive monthly
+  - [ ] Note any changes in: work assignments, supervisor interactions, meeting exclusions, performance comments, access changes
+- [ ] No special action required unless adverse action occurs
+- [ ] Respond to any IG investigation requests promptly (provide requested documents, attend interviews if required)
+- [ ] Do not discuss the IG disclosure with colleagues; do not mention it to management
+- [ ] If management asks directly about IG disclosure, respond: "I'm not able to discuss that" and immediately contact counsel
+
+**If Adverse Action Occurs**
+- [ ] Within 24 hours: Contact GAP or your counsel with details
+- [ ] Document the action in your retaliation log per Part 5.2a protocol
+- [ ] Follow retaliation timeline: if action occurs within 30-90 days of disclosure, this strongly suggests retaliation
+- [ ] Do not resign, even if circumstances feel intolerable, without legal counsel guidance (resignation can weaken retaliation claim)
+- [ ] If termination is threatened, request GAP assistance with filing OSC emergency stay request
+
+**If IG Investigation Stalls or You Believe IG is Compromised**
+- [ ] Contact OSC: osc.gov or 1-800-872-9855
+- [ ] Explain that IG disclosure was made, investigation has stalled, and you are experiencing adverse actions
+- [ ] OSC can investigate retaliation claims independently
+- [ ] This does not invalidate your IG disclosure; OSC recognizes prior IG filings
+
+---
+
+### Scenario B: Immigration Enforcement Employee (ICE, CBP, USCIS) with Evidence of Civil Rights Violation
+
+**Use this checklist if**: You work for ICE, CBP, USCIS, or immigration enforcement unit of DHS and have evidence of civil rights violations, illegal detention, abuse, or procedural violations.
+
+**Key difference from Scenario A**: You need Government Accountability Project's immigration-specific program as your primary counsel resource.
+
+**Target channels**: Government Accountability Project Immigration Program → DHS CRCL (if applicable) → IG (with GAP guidance)
+
+**Week 1: Pre-Disclosure Preparation**
+- [ ] Call Government Accountability Project Immigration Program: whistleblower.org/immigration/ or 202-457-0034
+  - Ask specifically for immigration enforcement whistleblower program (do not accept general whistleblower referral)
+  - Explain: I work in [agency], I have evidence of [type of violation: civil rights, abuse, illegal detention, etc.]
+  - Request immigration-program-specific attorney
+- [ ] Provide initial background to GAP:
+  - Your job title and position
+  - Type of evidence (you personally witnessed violations, have documentation, aware of policy violations)
+  - Whether you have already reported internally (if yes, to whom and when)
+  - Whether you fear retaliation (be honest; immigration agencies have documented retaliation)
+- [ ] Complete same pre-disclosure documentation as Scenario A:
+  - Performance baseline (evaluations, commendations)
+  - Baseline employment summary journal entry
+  - Any pre-disclosure hostility from management toward civil rights concerns
+
+**Week 2: IG Independence Assessment (GAP's Responsibility, But Ask These Questions)**
+- [ ] When GAP attorney calls back, ask:
+  - "Is the DHS Office of Inspector General currently independent and operationally functional?"
+  - "Are there known concerns about IG investigation of immigration enforcement?"
+  - GAP maintains current assessment of IG independence; use their judgment
+- [ ] If GAP advises that IG is not trustworthy: file with OSC instead (federal agency, not part of DHS)
+- [ ] If GAP advises IG is functional: proceed with IG filing per Scenario A process, but use GAP as your counsel throughout
+
+**Week 3: Disclosure Preparation (With Immigration-Specific Counsel)**
+- [ ] Work with GAP immigration attorney to draft disclosure:
+  - Immigration context requires specific framing: cite legal standards for detention, treatment, civil rights protections
+  - GAP will advise on which specific violations to emphasize
+  - Include any documentary evidence: photographs, video, policy manuals, training materials showing agency's own standards were violated
+- [ ] GAP will advise on whether to include classified immigration enforcement procedures; do NOT include without GAP guidance
+
+**Week 4: Strategic Choice Between Channels**
+- [ ] GAP will recommend: DHS CRCL (civil rights office) OR IG OR OSC
+  - DHS CRCL advantage: housed within DHS, internal access to agency leadership, may trigger faster response
+  - DHS CRCL risk: DHS agency is also your employer; may have retaliation risk
+  - IG advantage: independent, WPA protected, thorough investigation
+  - OSC advantage: federal agency, not part of DHS, maximum independence
+- [ ] GAP will guide this choice; follow their recommendation based on current agency assessment
+- [ ] File disclosure using chosen channel
+
+**Week 5+: Immigration-Specific Retaliation Monitoring**
+- [ ] In immigration enforcement, retaliation may include:
+  - [ ] Reassignment to politically unfavorable positions
+  - [ ] Exclusion from high-profile cases
+  - [ ] Negative performance reviews focusing on new criteria you weren't previously evaluated on
+  - [ ] Referral for polygraph or psychological evaluation (can be retaliatory if previously not required)
+  - [ ] Clearance review or suspension (if you have security clearance)
+- [ ] Document all of these using Part 5.2a protocol
+- [ ] Maintain monthly contact with GAP; update on any adverse actions immediately
+- [ ] If threatened with termination: GAP can request emergency stay; you have right to remain employed while retaliation claim is investigated
+
+**If You Become Aware of Ongoing Violations During Investigation**
+- [ ] Continue to report through same channel you chose (DHS CRCL, IG, or OSC)
+- [ ] Do not go to media without GAP consultation (can strengthen or weaken your legal position depending on timing)
+- [ ] If violations affect immediate safety (imminent harm to detainee), report to DHS CRCL immediately in addition to ongoing IG/OSC investigation
+
+---
+
+### Scenario C: Federal Contractor Employee (Defense Contractor, Tech Company, Data Analytics Firm) with Government Contract Evidence
+
+**Use this checklist if**: You work for a company with federal contracts (defense contractor, tech company, data analytics, etc.) and have evidence of contractor fraud, government illegality, or contract violations.
+
+**Key difference**: Different legal statute (41 U.S.C. § 4712) and different resolution mechanisms (may include False Claims Act qui tam).
+
+**Target channels**: Contractor company internal compliance officer → Contracting agency IG → Qui tam attorney (if FCA violation)
+
+**Week 1: Pre-Disclosure Preparation**
+- [ ] Determine type of violation:
+  - Contractor fraud against government (overbilling, false certifications): False Claims Act (FCA) qui tam avenue
+  - Government illegality using contractor services (government employee misconduct at contractor facility): 41 U.S.C. § 4712
+  - Contractor policy violations: company internal compliance
+- [ ] Call whistleblower attorney who specializes in contractor whistleblowers (not just general whistleblower counsel):
+  - If FCA violation likely: qui tam attorney experienced in qui tam cases
+  - If government illegality: attorney experienced with 41 U.S.C. § 4712
+  - Examples: National Whistleblower Center (whistleblowers.org) can provide referrals
+- [ ] Gather documentation:
+  - Contracts you worked on (unclassified portions)
+  - Government specifications or requirements your company was supposed to meet
+  - Evidence showing deviation from requirements or false statements
+  - Emails, memos, or internal communications showing knowledge of the problem
+
+**Week 2: Consult Counsel on Channel Strategy**
+- [ ] Contractor whistleblower attorney will advise:
+  - If FCA qui tam: file under seal with federal court (not through agency first; attorney handles filing)
+  - If 41 U.S.C. § 4712: file with company first, then IG of contracting agency (IG for the government agency, not contractor company)
+  - If both: may file both qui tam and 4712 disclosure; counsel will coordinate
+- [ ] For FCA qui tam: attorney will prepare the qui tam complaint in secret; you should not tell your company
+- [ ] For 41 U.S.C. § 4712: file with company's internal compliance or IG first (creates 30-day protection period before external disclosure)
+
+**Week 3: Pre-Disclosure Documentation (Contractor-Specific)**
+- [ ] Compile your performance record (same as Scenario A)
+- [ ] Compile evidence: contracts, government specifications, communications showing problem, your work product
+- [ ] Store all evidence on personal device (do NOT take contractor company documents off-site; make digital copies of portions you need as evidence)
+- [ ] Create timeline of when you learned of the problem, when you reported it internally (if you did), and when you observed it continuing
+
+**Week 4-5: Filing (Follows Counsel's Strategy)**
+- [ ] If qui tam: attorney files under seal in federal court; your identity may be sealed; government will be notified and may decide to intervene
+- [ ] If 4712: file written disclosure with contractor compliance officer or IG office; get written confirmation of receipt
+- [ ] Do not discuss the disclosure with colleagues or supervisors unless your attorney advises otherwise
+- [ ] Attorney will advise on timing of any external disclosure (may be months/years depending on qui tam investigation)
+
+**Weeks 6+: Retaliation Protection During Confidentiality Period**
+- [ ] FCA qui tam cases can remain sealed and confidential for years while government investigates
+- [ ] You may experience retaliation during this period without ability to disclose why you're protected
+- [ ] Document any adverse actions using Part 5.2a protocol
+- [ ] Report any adverse actions to your attorney immediately
+- [ ] Attorney will communicate with contracting agency to indicate retaliation notice (without breaching seal)
+- [ ] If overt retaliation: attorney may request court to unseal case early to demonstrate retaliation link
+
+**If Contractor Company Suspects Your Disclosure**
+- [ ] Do not admit to any disclosure
+- [ ] If questioned about qui tam or IG filing: say nothing; immediately contact attorney
+- [ ] If signed NDA or secrecy agreement: attorney will advise how it applies to whistleblower disclosures (whistleblower disclosures often protected from NDA restrictions under federal law)
+- [ ] Continue to work normally; do not resign unless retaliation is severe (attorney will advise)
+
+---
+
+### Scenario D: Intelligence Community Employee with Classified Program Concern
+
+**IMPORTANT WARNING**: This scenario is out of scope for this playbook in many respects. Classified program whistleblowing has specific legal requirements and significant criminal exposure if handled incorrectly. **If you are an intelligence community employee with concern about a classified program, your first call should be to cleared counsel, not to a journalist or public whistleblower organization.**
+
+**Use this checklist if**: You work in intelligence community (CIA, NSA, DIA, NRO) or intelligence function within FBI/DHS, and have evidence of illegal classified program activity.
+
+**Key difference**: You are governed by Intelligence Community Whistleblower Protection Act (ICWPA), not WPA. Classified disclosure to media is a federal crime (Espionage Act) regardless of motive or public interest. You must use IG and Congressional channels only.
+
+**Target channels**: Intelligence Community Inspector General (ICIG) → Congressional Intelligence Committee (if needed) → ONLY with cleared counsel
+
+**Week 1: Locate Cleared Counsel IMMEDIATELY**
+- [ ] Search for attorney specializing in intelligence community whistleblower representation:
+  - Mark Zaid (Zaid Law Group) is the most well-known counsel for IC whistleblowers (represented E.E. Snowden initially)
+  - National Whistleblower Center can provide referrals for cleared counsel
+  - American Civil Liberties Union (ACLU) National Security Project provides referrals
+- [ ] You should assume your employer is monitoring your communications; use secure communication channel from the start:
+  - [ ] Call attorney from a non-government phone; do not use government device
+  - [ ] Use Signal with verified safety number for ongoing communication
+  - [ ] Consider in-person meetings for sensitive consultations
+- [ ] First consultation should be attorney only; you and counsel only; nothing written initially
+
+**Week 2: Initial Assessment (Attorney Conducts, You Provide Information)**
+- [ ] Describe to counsel (confidentially, attorney-client privilege protects this):
+  - What is the classified program or activity?
+  - What makes you believe it is illegal (cite statute/constitutional provision)?
+  - What documentary evidence do you have?
+  - Can the evidence be described in unclassified terms?
+- [ ] Attorney will advise whether the disclosure involves classified information that makes Espionage Act exposure real
+- [ ] Attorney will advise on use of ICIG vs. Congressional channels
+- [ ] **Absolute rule**: Do not contact journalists, do not mention this to colleagues, do not collect additional classified information beyond what you've already observed
+
+**Week 3: Pre-Disclosure Preparation (Under Attorney Guidance)**
+- [ ] Collect documentary evidence (following attorney's guidance on handling classified information)
+- [ ] Prepare unclassified summary of the concern if possible (attorney will advise)
+- [ ] Do NOT access additional classified information specifically to document the concern
+- [ ] Do NOT copy, photograph, or exfiltrate classified documents
+- [ ] Prepare to file disclosure using ICIG channel with attorney
+
+**Week 4: ICIG Filing (Attorney-Guided)**
+- [ ] Attorney files disclosure with Intelligence Community Inspector General on your behalf
+- [ ] Disclosure identifies you as source (ICIG process protects your identity from the classified program's management, but ICIG knows who you are)
+- [ ] ICIG begins classified investigation into the program
+- [ ] You return to normal work; do not discuss the disclosure with anyone
+
+**Ongoing (Months to Years): ICIG Investigation Period**
+- [ ] ICIG investigation is slow; expect 6 months to 2+ years
+- [ ] You may face investigation into your conduct during this period (counterintelligence review of your actions, polygraph, etc.)
+- [ ] This is normal procedure, not necessarily retaliation; attorney will advise on what is normal vs. retaliatory
+- [ ] Document any adverse actions per Part 5.2a protocol
+- [ ] If ICIG investigation is stalled or you believe ICIG is compromised: attorney will advise on Congressional escalation
+
+**If Investigation Reveals Ongoing Illegal Activity**
+- [ ] Only disclose to Congress if attorney advises
+- [ ] Congressional Intelligence Committee has classified briefing facilities; attorney can assist secure Congressional contact
+- [ ] Do not go to media; this creates criminal liability
+
+**If You Later Decide Media Disclosure is Necessary**
+- [ ] Consult with cleared counsel immediately
+- [ ] Understand that ICWPA does not protect media disclosures; Espionage Act may apply
+- [ ] Attorney will advise on whether you have any legal defenses (unlikely)
+- [ ] This is serious criminal exposure; only proceed with full understanding of personal legal risk
 
 ---
 

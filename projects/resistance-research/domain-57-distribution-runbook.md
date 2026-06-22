@@ -264,9 +264,11 @@ Sharing a research document that frames US multilateral withdrawal as a democrat
 
 The core argument: international treaty obligations, ratified with Senate consent, function as constraints on executive discretion. When the executive unilaterally withdraws from them, it simultaneously expands presidential power and removes three specific accountability structures: benchmarking data civil society uses to hold government accountable, treaty compliance obligations that courts and Congress can enforce, and the reputational peer pressure that raises the cost of extreme norm violations.
 
-The ICC sanctions case study (any US person providing material support to ICC investigations now faces up to 20 years in prison) documents the sharpest domestic consequence: US civil society's capacity to invoke international accountability mechanisms against domestic abuses has been severed.
+The ICC sanctions case study (any US person providing material support to ICC investigations now faces up to 20 years in prison) documents the sharpest domestic consequence: US civil society's capacity to invoke international accountability mechanisms against domestic abuses has been severed. This is now a live federal constitutional question: the DC Circuit is currently reviewing the constitutional validity of the sanctions regime following a district court ruling in May 2026 that found the due process challenge sufficiently serious to warrant temporary injunctive relief.
 
-The document is at [Gist URL] — 7,200 words, 47 citations, CC Attribution 4.0 (use it, excerpt it, share it). The UNGA 81 High-Level Week provides the timing hook for August distribution; the constitutional design argument is the substance.
+The document is at [Gist URL] — 7,200 words, 47 citations, CC Attribution 4.0 (use it, excerpt it, share it).
+
+With UNGA 81's High-Level Week beginning September 22, the multilateral institutional accountability question is directly on the agenda for international law and democracy organizations. This document is designed to be distributable within your own networks as the September session approaches — it provides the constitutional and democratic accountability framing that complements foreign policy analyses of US withdrawal, addressing the domestic consequences for civil society, litigation, and legislative oversight that international law organizations can amplify to US audiences.
 
 I would welcome any feedback on whether the legal framing accurately represents [organization's] current analysis, and would be grateful if the document reaches your research or policy program teams.
 
@@ -286,7 +288,9 @@ Sharing a research document that may be useful for [organization]'s work on [rel
 
 Domain 57 documents how US withdrawal from 66 international organizations by executive memorandum — with no Senate role — expands presidential discretion by eliminating treaty constraints that the Senate's ratification consent was designed to establish. The argument is structural: this is a constitutional design failure, not a foreign policy disagreement.
 
-The most actionable sections for policy use: Section 3 (the three domestic accountability pathways removed by withdrawal: benchmarking, treaty compliance, reputational cost) and Section 6 (reform pathways: Treaty Withdrawal Notification Act, Multilateral Commitment Protection Act, ICC Sanctions Repeal, all with current legislative text).
+The most actionable sections for policy use: Section 2.5 (the constitutional asymmetry — Senate consent required to enter, zero Senate role to exit — and the CRS R48868 February 2026 framework analysis); Section 2.1 (the ICC sanctions and their domestic civil society chilling effects, now subject to pending DC Circuit constitutional review); and Section 7 (reform pathways: Treaty Withdrawal Notification Act, Multilateral Commitment Protection Act, ICC Sanctions Repeal, all with current legislative text).
+
+With UNGA 81's High-Level Week beginning September 22, the multilateral institutional accountability question is directly on the agenda for international law and democracy organizations. This document is designed to be distributable within your own networks as the September session approaches — it provides the constitutional and democratic accountability framing that complements foreign policy analyses of US withdrawal, addressing the domestic consequences for civil society, litigation, and legislative oversight that international law organizations can amplify to US audiences.
 
 Available at [Gist URL]. 7,200 words, 47 citations, CC Attribution 4.0. No affiliation, no ask for endorsement, no downstream obligation.
 

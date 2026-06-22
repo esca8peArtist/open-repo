@@ -455,6 +455,70 @@ Domain 57 occupies a structural position in the framework that no existing domai
 
 49. G.J. Ikenberry, "Liberal Leviathan: The Origins, Crisis, and Transformation of the American World Order" (Princeton University Press, 2011): https://press.princeton.edu/books/paperback/9780691156170/liberal-leviathan
 
+50. Al Jazeera — US returns Palestinian rights expert Francesca Albanese to sanctions list (May 28, 2026): https://www.aljazeera.com/news/2026/5/28/us-returns-palestinian-rights-expert-francesca-albanese-to-sanctions-list
+
+51. Global Sanctions — US re-lists Francesca Albanese after DC Circuit stays district court injunction (May 2026): https://globalsanctions.com/2026/05/us-adds-francesca-albanese-back-onto-icc-sanctions-list/
+
+52. CIVICUS LENS — USA: sanctions weaponised against human rights (2026): https://lens.civicus.org/usa-sanctions-weaponised-against-human-rights/
+
+53. OHCHR — UN expert demands ICC sanctions withdrawal, calls for repeal of executive order (January 2026): https://www.ohchr.org/en/press-releases/2026/01/usa-un-expert-demands-withdrawal-sanctions-against-icc-judges-and-prosecutors
+
 ---
+
+## Update: June 2026 — Post-Research Developments
+
+*Added June 22, 2026 (Session 3904). Research base completed May 21, 2026. This section captures material developments since research completion that are directly relevant to distribution strategy and the document's core arguments.*
+
+---
+
+### Update 1: Albanese Sanctions Litigation — First Federal Court Constitutional Engagement (May–June 2026)
+
+The most significant post-May-21 development for Domain 57's ICC sanctions analysis is the Albanese federal litigation. On May 13, 2026, Federal District Court Judge Richard Leon (DC District) ruled in favor of UN Special Rapporteur Francesca Albanese, issuing a temporary injunction that paused her ICC-related sanctions designation. Judge Leon's reasoning engaged directly with the constitutional question Domain 57 identifies as underexamined: he found that foreign nationals located abroad may possess constitutional due process rights if they demonstrate "substantial connections" to the United States. Albanese's ownership of US property and her US-citizen daughter constituted such connections.
+
+This ruling was the first federal court engagement with the constitutional validity of the ICC sanctions regime. It did not hold the sanctions unconstitutional on their merits — it found only that the due process question was sufficiently serious to warrant temporary injunctive relief during litigation.
+
+On May 23–27, 2026, a three-judge panel of the DC Circuit Court of Appeals issued an administrative stay, reinstating the sanctions while the merits are briefed. The appeals court authorized the executive branch to "implement and enforce" the sanctions pending further filings in early June 2026 and a merits determination.
+
+**Implications for Domain 57's Section 7.3 (ICC Sanctions Repeal)**:
+
+The Albanese litigation establishes that the constitutional validity of the ICC sanctions regime is now a live federal question — not merely a legislative or political advocacy position. The DC Circuit's administrative stay does not reflect a merits ruling on constitutionality; it is a procedural hold. The litigation is ongoing as of June 22, 2026.
+
+The litigation strengthens the ICC Sanctions Repeal advocacy argument in two specific ways: (1) it establishes that federal courts will engage with constitutional challenges to the sanctions, undermining the executive's implicit claim that the regime is unreviewable; and (2) the due process theory — that US-connected persons, including US civil society organizations, have rights that the sanctions may violate — is now recognized as plausible by at least one federal district court.
+
+**Distribution implication**: For August 10 distribution, the Albanese litigation is a live news hook for the Coalition for the ICC and Human Rights First. Both organizations are tracking this litigation closely. Reference to "the pending DC Circuit constitutional review" in the Template IL emails provides an "ongoing" urgency frame that complements the UNGA anchor.
+
+Sources: Al Jazeera (May 28, 2026); Global Sanctions (May 2026); CIVICUS LENS (2026). See citations 50–52 above.
+
+---
+
+### Update 2: UNGA 81 High-Level Week — Confirmed September 22–28, 2026
+
+UNGA 81's High-Level Week is confirmed for September 22–28, 2026. The session opened September 8, 2026. The High-Level General Debate runs September 22–26 and concludes September 28. UN Secretary-General Guterres's address on September 23 is expected to foreground multilateral institutional resilience, given the scale of US withdrawal from UN entities documented in Domain 57.
+
+The August 10 distribution window (6 weeks before the High-Level Week) is the optimal recipient attention window. International law organizations, think-tanks, and foreign policy analysts will be preparing UNGA position papers and advocacy materials throughout August. Domain 57's framing — US multilateral withdrawal as a domestic democratic design failure, not merely a foreign policy shift — fills a specific gap in UNGA-week advocacy, which typically focuses on the geopolitical consequences rather than the domestic accountability mechanism.
+
+**Pre-UNGA framing paragraph (pre-populated for Templates IL and TP; add verbatim on August 10 send date)**:
+
+> "With UNGA 81's High-Level Week beginning September 22, the multilateral institutional accountability question is directly on the agenda for international law and democracy organizations. This document is designed to be distributable within your own networks as the September session approaches — it provides the constitutional and democratic accountability framing that complements foreign policy analyses of US withdrawal, addressing the domestic consequences for civil society, litigation, and legislative oversight that international law organizations can amplify to US audiences."
+
+This paragraph is pre-populated in `domain-57-distribution-runbook.md` Templates IL and TP per the Path B August 10 distribution schedule. It supersedes the shorter version in Section 5 Path B of the runbook.
+
+Sources: UNGA 81 session schedule confirmed via climate-diplomacy.org, UN-Habitat, IISD SDG Knowledge Hub.
+
+---
+
+### Update 3: ICC Sanctions Total — 11 Officials Sanctioned as of December 2025
+
+The December 18, 2025 round of designations brought the total number of sanctioned ICC prosecutors and judges to 11, including nine judges and the chief prosecutor. This is a material escalation from the initial sanctions targeting Prosecutor Karim Khan alone.
+
+The pattern of designation waves — February 2025 (Karim Khan), August 2025 (Judges Prost and Guillou, two prosecutors), December 2025 (Judges Lordkipanidze and Damdin) — documents a systematic expansion of the sanctions regime beyond its initial scope. Each wave has broadened the categories of ICC officials and associated persons subject to sanction, consistent with the "total institutional coercion" logic Domain 57 identifies in Section 2.1.
+
+The December 2025 designations prompted the Coalition for the ICC to publish its "Sanctions aimed at silencing judges" statement, describing the regime as systematically designed to prevent ICC judicial function. This is the most recent CICC public statement and should be referenced in Template IL alongside the "Criminalising Accountability" report for August distribution.
+
+Source: Coalition for the ICC, sanctions statements December 2025 and ongoing: https://www.coalitionfortheicc.org/news/sanctions-aimed-silencing-judges-endanger-victims-access-justice
+
+---
+
+*These updates are appended to the production document rather than integrated into the body, consistent with Domain 57's update protocol (Section 7.4 of the runbook). For Gist update before August 10 send: add this section verbatim to the end of the Gist, preceding the bibliography. The Gist URL (https://gist.github.com/esca8peArtist/a94ef436fd4a678f89e867ac8ed3dd61) should be updated to include this section no later than August 8, 2026.*
 
 *Domain 57 research completed May 15, 2026. All sources confirmed publicly accessible. Distribution target: August 10, 2026 (six weeks before UNGA 81 High-Level Week, September 22–28, 2026). Primary advocacy channels: Senate Foreign Relations Committee, House Foreign Affairs Committee, Coalition for the International Criminal Court, Human Rights Watch, Freedom House. Secondary distribution: pre-midterm democracy reform audiences via Brennan Center, Protect Democracy networks. Reform legislation targets: Treaty Withdrawal Notification Act, Multilateral Commitment Protection Act, ICC Sanctions Repeal.*

@@ -1,5 +1,44 @@
 ---
 
+## Session 3904 (2026-06-22 — resistance-research T+7 review + Domain 57 advance)
+
+**Status**: COMPLETE
+
+**Scope**: T+7 checkpoint execution review + Domain 57 research advancement
+
+**Work completed**:
+
+**1. T+7 Checkpoint Framework Review**
+- Reviewed T_PLUS_7_CHECKPOINT_MONITORING_FRAMEWORK.md (created Session 3902c/3902d): fully operational, no gaps
+- Confirmed all three domain monitoring tables, signal scoring rubric, and routing decision trees are in place for June 23-25 user execution
+- No new autonomous T+7 infrastructure needed — the framework is complete; bottleneck is user inbox checks and email sends
+
+**2. Domain 57 — June 2026 Update Section**
+- Appended 3-update "Update: June 2026" section to `domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md`:
+  - Update 1: Albanese sanctions litigation (May 2026) — first federal constitutional engagement with ICC sanctions regime; DC Circuit administrative stay pending merits review; strengthens ICC Sanctions Repeal advocacy argument and provides live news hook for August distribution
+  - Update 2: UNGA 81 confirmed September 22-28, 2026; distribution strategy confirmed; pre-populated UNGA framing paragraph for Templates IL + TP
+  - Update 3: ICC sanctions total now 11 officials as of December 2025; December 2025 CICC statement is latest public position for reference in Template IL
+- Added 4 new citations (50-53) to the bibliography
+
+**3. Domain 57 Distribution Runbook — Templates Updated**
+- Pre-populated the UNGA framing paragraph directly into Templates IL and TP in `domain-57-distribution-runbook.md` (was previously only in Path B Section 5, not in template body)
+- Template IL: added Albanese DC Circuit live constitutional challenge as additional urgency hook
+- Template TP: added CRS R48868 specific section reference and DC Circuit litigation reference
+
+**4. PROJECTS.md + CHECKIN.md updated**
+- Domain 57 row updated: "UNGA framing paragraph PRE-POPULATED," June 2026 updates documented
+- CHECKIN.md Session 3904 entry added
+
+**Outstanding user actions** (not agent-executable):
+- Domain 51 CLC + Issue One send: OVERDUE (templates ready)
+- Domain 48 Sentencing Project + Prison Policy send: OVERDUE (templates ready)
+- Domain 59 Wave 2 EPI + Demos: due June 24 (templates ready)
+- Domain 57 Gist update: due August 8 (update section written, user must paste into Gist)
+
+**Effort**: ~1.5h (research + document edits)
+
+---
+
 ## Session 3903 (2026-06-22 19:08–20:XX UTC) — DEPLOYMENT MONITORING + PARALLEL SPRINT ADVANCEMENT
 
 **Status**: 🟢 **STANDBY FOR 20:00 UTC DEPLOYMENT FLAG** + parallel agents advancing Phase 3 + Q3 sprint work
