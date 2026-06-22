@@ -7996,3 +7996,68 @@ Rationale:
 
 **Next session**: (1) Process user decisions (execute corresponding work per decision), OR (2) If no decisions by 23:59 UTC, default to conservative paths and proceed with fallback activations.
 
+---
+
+## Session: 2026-06-22 — Q3 Content Sprint Gap Fill (Week 4 Email, Launch Email, Week 3 Blog Template, July 15 IG Post)
+
+**Context**: Sprint Day 1 (June 22 launch). Prior session (commit 1848d3fb) committed Week 2-3 blog posts and Kit emails. This session identifies and fills remaining Q3 content pipeline gaps.
+
+### Gap Analysis
+
+Existing in `phase-3/` at session start:
+- `blog-post-week1-evidence-tiers.md` — DONE (June 23 publish)
+- `blog-post-week2-goldenseal-conservation.md` — DONE (July 1 publish)
+- `kit-email-week2-immunity-bundle.md` — DONE (June 29 send)
+- `kit-email-week3-community-faq.md` — DONE (July 6 send)
+
+Missing from `phase-3/` at session start:
+1. Launch-day email as a standalone send-ready file (was embedded in PRE_LAUNCH_EMAIL_SEQUENCES.md as A4 only)
+2. Week 3 blog post (July 7) — affiliate Q&A; cannot be fully written without partner content
+3. Week 4 retrospective email (July 13) — no partner input required; data fill-ins only
+4. July 15 Instagram post #10 copy — no partner input required; data fill-ins only
+
+### Files Created This Session
+
+**`projects/seedwarden/phase-3/kit-email-launch-day-june22.md`**
+Standalone send-ready extraction of Sequence A4 from PRE_LAUNCH_EMAIL_SEQUENCES.md. Clean send format: subject, preview text, body (~200 words), Kit setup checklist. Code EXISTING15, expires June 28. Replaces having to excavate A4 from the longer sequences file on launch morning.
+
+**`projects/seedwarden/phase-3/kit-email-week4-retrospective.md`**
+Week 4 retrospective email for July 13 send. ~260-word body with bracketed fill-ins for: sales number (pull from Etsy July 13 morning), practitioner testimonial (written permission required by July 12), Phase 4 teaser (confirm scope), optional price adjustment note. Pre-send checklist included.
+
+**`projects/seedwarden/phase-3/blog-post-week3-affiliate-qa-template.md`**
+Template for the July 7 affiliate Q&A guest post. Five prepared interview questions covering: clinical practice context, what guides provide that others don't, most useful bundle, evidence-tier framing with clients, student reference library advice. Partner brief (copy-paste email text), editing guidance, and fallback plan if no partner responds by July 1 (in-house composite FAQ post, instructions included). Send questions to partner by June 26 to hit July 3 answer deadline.
+
+**`projects/seedwarden/phase-3/instagram-post10-july15-retrospective.md`**
+Copy for Instagram Post #10 (July 15 retrospective milestone). Two options: Option A single image (sales number is shareable), Option B 2-slide carousel (sales number is modest). Both include full caption with hashtags, Phase 4 teaser placeholder, and companion Stories plan (dashboard screenshot, question box for Phase 4 research). Pre-publish checklist with Canva asset instructions.
+
+### Q3 Content Pipeline Status After This Session
+
+| Item | File | Status | Date | Fill-Ins Needed |
+|------|------|--------|------|-----------------|
+| Launch email | `kit-email-launch-day-june22.md` | Send-ready | June 22 | Etsy URL, sender name |
+| Week 1 blog | `blog-post-week1-evidence-tiers.md` | Publish-ready | June 23 | None |
+| Week 2 email | `kit-email-week2-immunity-bundle.md` | Send-ready | June 29 | Bundle upload date, Etsy URL |
+| Week 2 blog | `blog-post-week2-goldenseal-conservation.md` | Publish-ready | July 1 | None |
+| Week 3 email | `kit-email-week3-community-faq.md` | Send-ready | July 6 | Practitioner tier URL, free download link |
+| Week 3 blog | `blog-post-week3-affiliate-qa-template.md` | Template-complete | July 7 | Partner answers by July 3 |
+| Week 4 email | `kit-email-week4-retrospective.md` | Template-complete | July 13 | Sales number, testimonial, Phase 4 teaser |
+| Post #10 IG | `instagram-post10-july15-retrospective.md` | Copy-complete | July 15 | Sales number, Phase 4 teaser, Canva asset |
+
+### Next Q3 Sprint Items (Handoff)
+
+Ordered by urgency:
+
+1. **TODAY (June 22)**: Send launch email (Kit A4 / `kit-email-launch-day-june22.md`). Activate EXISTING15 code in Etsy.
+2. **By June 26**: Send partner brief from `blog-post-week3-affiliate-qa-template.md` to selected affiliate partner. Target: RH with confirmed affiliate code.
+3. **By July 1**: Confirm Phase 4 scope (one sentence) for use in Week 4 email and Post #10 caption.
+4. **By July 3**: Receive partner Q&A answers. Assemble and send draft for partner approval.
+5. **By July 12**: Secure written testimonial permission from a practitioner for Week 4 email.
+6. **July 13 morning**: Pull Etsy stats, fill in sales number, send Week 4 email.
+7. **July 15 morning**: Design Canva asset (Option A or B), publish Post #10, publish companion Stories.
+
+Blocking dependency: Week 3 blog post depends on affiliate partner response. If no response by July 1, use the in-house fallback plan in the template file.
+
+### Photo Attribution Log Status
+
+16/16 species habit sources confirmed in `assets/phase-3-medicinal-herbs/PHOTO_ATTRIBUTION_LOG.md` (agent-researched 2026-06-22). User verification still needed before download for: Lavender habit composition (file 002 vs. 003), Lemon Balm (close-up vs. full habit), Ashwagandha (habit vs. close-up), Passionflower flower license (verify on file page). E. angustifolia supplement recommended (330×220px USDA image is low-res; iNaturalist alternative preferred).
+
