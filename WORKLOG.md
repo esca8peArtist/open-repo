@@ -1,3 +1,38 @@
+## Session 4087 (2026-06-23 19:16–[wakeup@20:01] UTC) — ORCHESTRATOR — **HMM BUG FIX DEPLOYMENT GATE**
+
+**Status**: All autonomous project work complete or blocked. Scheduled deployment of critical HMM bug fix at 20:00 UTC post-market.
+
+**Work Completed**:
+
+1. **Orientation** (19:16–19:20 UTC):
+   - ✅ Read ORCHESTRATOR_STATE.md (auto-generated at 19:16:25 UTC)
+   - ✅ Reviewed all active blocks: 4 active (stockbot HMM pending 20:00 UTC, usage calibration awaiting user, 2 on user physical actions)
+   - ✅ Checked INBOX.md: No new items
+   - ✅ Assessed PROJECTS.md: All projects blocked or terminal
+   - ✅ Assessed autonomous work: ZERO (all remaining work blocked on user decisions or time gates)
+
+2. **Project Status Assessment**:
+   - **stockbot**: Live deployment (June 22 23:06 UTC) with critical HMM bug. Fix already committed (9194e6b). Deployment blocked until 20:00 UTC (market hours blackout). June 24 validation window (13:30 UTC) requires live fix.
+   - **resistance-research**: Phase 2 autonomous = ZERO. Awaiting user signal classification (June 23-25) + Domain 59 Tier 2 sends.
+   - **cybersecurity-hardening**: Blocked on Phase 1 step 1.3 (user Windows restart for VeraCrypt pre-boot test).
+   - **mfg-farm**: Blocked on Phase 1 test print execution (user physical action).
+   - **open-repo**: Blocked on raspby1 runtime platform decision (Docker vs systemd).
+   - All other projects: Paused or completed.
+
+3. **Deployment Scheduling** (19:20–19:25 UTC):
+   - ✅ Called ScheduleWakeup for 2700 seconds (45 minutes) → wake-up scheduled for ~20:01 UTC
+   - ✅ Reason: Post-market deployment of HMM timestamp bug fix (9194e6b) to Jetson
+   - Next actions at 20:01 UTC: Deploy + verify + resolve block + commit
+
+4. **Check-in Update** (19:25–19:28 UTC):
+   - ✅ Updated CHECKIN.md with Session 4087 entry
+
+**Confidence**: 99% (HMM fix already coded + tested, deployment script ready, verification command prepared, timing clear)
+
+**Current Status**: Standing by for 20:01 UTC wake-up to deploy post-market. No further autonomous work until deployment verification complete.
+
+---
+
 ## Session 4086 (2026-06-23 18:41 UTC) — ORCHESTRATOR — **POST-DEADLINE LESSONS LEARNED + PLATFORM ANALYSIS (Items 20-21)**
 
 **Initiated**: 2026-06-23 18:41 UTC (post-SCOTUS deadline, autonomously identified Exploration Queue Items 20 & 21)

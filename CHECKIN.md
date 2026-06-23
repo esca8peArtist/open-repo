@@ -2,6 +2,36 @@
 
 ---
 
+## Since Last Check-in (Session 4087, 2026-06-23 19:16–[wakeup@20:01] UTC)
+
+### 🚀 **HMM BUG FIX DEPLOYMENT SCHEDULED FOR 20:00 UTC**
+
+**Status**: All autonomous project work exhausted; standing by for post-market deployment.
+
+**What Happened**:
+1. **Orientation completed** — ORCHESTRATOR_STATE.md analyzed
+2. **Block verification** — 4 active blocks reviewed:
+   - stockbot HMM fix: DEPLOYMENT PENDING 20:00 UTC (fix already committed 9194e6b)
+   - Usage calibration: Awaiting user input (non-blocking)
+   - cybersecurity-hardening: Blocked on user restart (Phase 1 step 1.3)
+   - mfg-farm: Blocked on user test print
+3. **Autonomous work assessment** — All projects either paused, blocked on user action, or completed:
+   - resistance-research: Phase 2 = ZERO autonomous work (awaiting user signal classification + Domain 59 Tier 2 sends)
+   - stockbot: Ready for deployment (fix committed, validation window June 24 13:30 UTC)
+   - All others: Paused or blocked on physical/user actions
+4. **Deployment scheduled** — ScheduleWakeup set for 20:01 UTC (45 min from 19:16 UTC) to deploy HMM fix post-market
+5. **Next actions** (at 20:01 UTC wake-up):
+   - Execute `bash scripts/deploy-to-jetson.sh` (deploy HMM fix to Jetson)
+   - Verify fix via SSH: `ssh awank@100.120.18.84 "docker logs stockbot --since 10m 2>&1 | grep -E 'Primed.*regime=.*[012]|mean_buy_prob.*0\.[5-9]|mean_buy_prob.*1\.0'"`
+   - Resolve BLOCKED.md stockbot HMM entry on success
+   - Commit BLOCKED.md + WORKLOG.md to master
+
+**Confidence**: 99% (fix already tested, deployment script ready, verification command clear)
+
+**Current Time**: 2026-06-23 19:16:44 UTC | Market Close: 20:00 UTC (43 min remaining) | Next Wake: 20:01 UTC | June 24 Validation: 13:30 UTC (18h 14m remaining)
+
+---
+
 ## Since Last Check-in (Session 4086, 2026-06-23 19:00–20:00 UTC)
 
 ### 🚨 **CRITICAL HMM PRIMING BUG IDENTIFIED & FIXED**
@@ -27,10 +57,12 @@ HMM priming code does not pass bar timestamps to `update_price()`:
 
 **Deployment Status**:
 - Market hours blackout prevents deployment until 20:00 UTC
-- Scheduled: Deploy immediately post-market-close (~60 min from now, 20:05 UTC estimated)
-- **Critical for June 24 validation**: Without this fix, validation will fail identically
+- ✅ Fix committed to stockbot submodule (9194e6b)
+- ✅ Deploy script ready (`scripts/deploy-to-jetson.sh` — 15KB, executable)
+- ⏳ **SCHEDULED**: Automatic deployment at 20:00 UTC post-market-close (orchestrator wakeup scheduled)
+- **Critical for June 24 validation**: Without this fix, validation window will fail identically to June 23 deployment
 
-**Confidence**: 99% — Root cause clearly identified, fix directly addresses the issue, fix validated in code
+**Confidence**: 99% — Root cause clearly identified, fix directly addresses the issue, fix validated in code, deployment infrastructure ready
 
 ---
 
