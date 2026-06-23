@@ -1,3 +1,44 @@
+## Session 4007 (2026-06-23 03:52–04:08 UTC) — DOMAIN 50 GIST HELPER SCRIPT + DOMAIN 59 WAVE 2 PREFLIGHT
+
+**Initiated**: 2026-06-23 03:52 UTC (autonomous orchestrator — CRITICAL DEADLINE RESPONSE)
+
+**Actions Taken**:
+1. ✅ **Created Domain 50 Gist Helper Script**: `projects/resistance-research/fill-domain-50-gist-url.py`
+   - Python script to auto-fill all 17 `[INSERT GIST URL HERE]` placeholders
+   - Usage: `python fill-domain-50-gist-url.py "https://gist.github.com/esca8peArtist/..."`
+   - Validates Gist URL format, replaces placeholders in all files, commits to master
+   - Error handling: validates 5 required template files exist + Gist URL format
+2. ✅ **Updated CHECKIN.md**: Corrected helper script instructions
+   - Changed from shell script reference to Python script
+   - Updated placeholder count from 11 to 17 (accurate count across all files)
+   - Added clear execution command with path
+3. ✅ **Created Domain 59 Wave 2 Pre-Flight Checklist**: `DOMAIN_59_WAVE2_JUNE24_PREFLIGHT.md`
+   - 15-minute pre-flight verification (Gist health, EPI/Demos/NELP contact verification, Wave 1 reply check)
+   - 30-minute execution checklist (Email 1 EPI, Email 2 Demos + 90min spacing, Email 3 NELP)
+   - Post-send monitoring and troubleshooting guide
+   - Ensures user is ready for June 24 Wave 2 execution
+4. ✅ **Verified Domain 59 Wave 2 infrastructure**: Package is production-ready from Session 3902e
+   - All three email templates personalized (EPI/Demos/NELP)
+   - Signal classification framework complete
+   - Day 14 decision logic documented
+5. ✅ **Committed to master**: Helper script + checklist (commits 30c536de, f2ea11e3)
+
+**Critical Timeline**:
+- **SCOTUS opinion decision**: 2026-06-23 14:00 UTC (≈10 hours remaining)
+- **Domain 50 Gist**: User must create Gist, then run helper script (5-10 min total)
+- **Domain 59 Wave 2**: User should verify pre-flight checklist morning of June 24, then execute 3 sends (30 min total)
+- **June 24 stockbot validation**: Begins 13:30 UTC (24h away)
+
+**Status Summary**:
+- ✅ All priority projects have user-ready execution checklists staged
+- ✅ Helper infrastructure automated (Domain 50 Gist URL filling + Domain 59 pre-flight)
+- ✅ Zero autonomous work remaining — all blocks are user-action-dependent
+- ✅ All orchestration infrastructure current and committed
+
+**Session Outcome**: Critical deadline infrastructure created and automated. User now has clear 5-step process for Domain 50 Gist creation + helper script, and pre-flight checklist for Domain 59 Wave 2. Next autonomous trigger: June 24 13:30 UTC (stockbot validation window).
+
+---
+
 ## Session 4006 (2026-06-23 03:26–03:48 UTC) — SCOTUS DEADLINE PREP + HELPER SCRIPT CREATION
 
 **Initiated**: 2026-06-23 03:26 UTC (autonomous orchestrator — CRITICAL DEADLINE RESPONSE)

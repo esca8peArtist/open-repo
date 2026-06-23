@@ -2,7 +2,13 @@
 
 ---
 
-## 🚨 SCOTUS DECISION TODAY — DOMAIN 50 GIST REQUIRED BY 14:00 UTC (11 HOURS)
+## 🚨 SCOTUS DECISION TODAY — DOMAIN 50 GIST REQUIRED BY 14:00 UTC (~10 HOURS)
+
+**Session 4007 Update (06:08 UTC)**: Helper infrastructure created. Python script ready to auto-fill Gist URLs. Pre-flight checklist created for Domain 59 Wave 2.
+
+---
+
+## CRITICAL ACTIONS TODAY (≤10 HOURS)
 
 **Critical Action**: Create GitHub Gist from Domain 50 document and fill placeholder URLs.
 
