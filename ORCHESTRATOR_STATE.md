@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-23T12:44:07Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-23T13:00:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 16.4% | Reset in 155h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 16.8% | Reset in 155h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -33,6 +33,12 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
+### Usage limits — weekly calibration reminder
+**Date blocked**: 2026-06-23 (auto-added each Tuesday by reset-usage-budget.sh)
+**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
+**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
+**Verify with**: `bash scripts/verify-calibration.sh`
+**Resolution**:
 ---
 ### resistance-research — Domain 50 Gist not created (SCOTUS execution blocked, 12h deadline)
 **Date blocked**: 2026-06-23 01:50 UTC
@@ -57,12 +63,6 @@
 **Resolution**: [leave blank]
 ---
 ### mfg-farm — Test print execution (user action required)
-**Date blocked**: 2026-05-13
-**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
-**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
-**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
-**Resolution**: [leave blank]
----
 
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
