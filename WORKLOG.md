@@ -1,3 +1,34 @@
+## Session 4006 (2026-06-23 03:26–03:48 UTC) — SCOTUS DEADLINE PREP + HELPER SCRIPT CREATION
+
+**Initiated**: 2026-06-23 03:26 UTC (autonomous orchestrator — CRITICAL DEADLINE RESPONSE)
+
+**Actions Taken**:
+1. ✅ **Verified BLOCKED.md Block #1 Status**: Confirmed 11 instances of `[INSERT GIST URL HERE]` placeholders remain in 3 files
+   - `SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md` (5 instances)
+   - `SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md` (4 instances)
+   - `SCOTUS_DECISION_RAPID_RESPONSE_FLOWCHART.md` (2 instances)
+2. ✅ **Created Helper Script**: `projects/resistance-research/scripts/fill_domain50_gist_urls.sh`
+   - Automated URL replacement tool for once user creates Gist
+   - Usage: `bash fill_domain50_gist_urls.sh "https://gist.github.com/..."`
+   - Replaces all 11 placeholders + auto-commits changes
+3. ✅ **Updated CHECKIN.md**: Added urgent banner with clear 5-step instructions for user
+   - Gist creation link + prep doc reference
+   - Helper script usage instructions
+   - Placeholder file locations (11 total instances in 3 files)
+4. ✅ **Committed to master**: All changes staged + committed (094b64af)
+
+**Critical Timeline**:
+- **Current time**: 2026-06-23 03:48 UTC
+- **SCOTUS opinion decision**: 2026-06-23 10:00 AM ET = 14:00 UTC (≈10 hours remaining)
+- **User action needed**: Create Gist + run helper script (5-10 min total)
+- **Rapid-response window**: Immediate deployment if Little v. Hecox/BPJ is decided
+
+**Zero Autonomous Work Remaining**: All infrastructure is production-ready. User action is the critical path.
+
+**Session Outcome**: Helper infrastructure created; urgent instructions provided. Waiting for user to execute Gist creation and fill URLs.
+
+---
+
 ## Session 4005b (2026-06-23 03:16–03:25 UTC) — BLOCK VERIFICATION + COMMITMENT
 
 **Initiated**: 2026-06-23 03:16 UTC (autonomous orchestrator continuation)
