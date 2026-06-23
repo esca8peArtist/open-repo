@@ -1,6 +1,37 @@
 ---
 
-## Session 4004b (2026-06-23 02:31–[ongoing] UTC) — CRITICAL DEADLINE VERIFICATION + ORCHESTRATION COMPLETION
+## Session 4004c (2026-06-23 02:39–02:50 UTC) — STOCKBOT DRIFT TRACKING FIX + FINAL ORCHESTRATION
+
+**Initiated**: 2026-06-23 02:39 UTC (autonomous orchestrator continuation — exploration queue item 8 execution)
+
+**Critical Gap Found and Fixed**:
+- **Issue**: `build_deployed_trackers()` in `live_vs_backtest_tracker.py` had only JPM ridge_wf + AMZN lgbm_ho hardcoded
+- **Impact**: 5-session config (AAPL/MSFT/NVDA added June 15) would have silently produced incomplete drift monitoring during June 24 validation window
+- **Fix**: Extended function with locked baselines for all 5 sessions:
+  - AAPL lgbm_ho: Sharpe 2.230, daily_std 1.50%
+  - MSFT lgbm_ho: Sharpe 1.573, daily_std 1.50%
+  - NVDA lgbm_ho: Sharpe 2.926, daily_std 2.10% (elevated for high-beta tech)
+  - JPM ridge_wf, AMZN lgbm_ho: Values now explicit
+- **Tests updated**: 13 new tests in test_live_vs_backtest_tracker.py assert all 5 keys and per-session Sharpe values
+- **Commit**: d657d11 (fix: extend drift tracker with all 5 deployed sessions)
+- **Tests**: All 52 tracker unit tests + 175 analytics-layer tests pass
+
+**Exploration Queue Status**:
+- ✅ **Item 8** (Post-Deployment Monitoring Framework) — COMPLETED (critical gap fixed, drift monitoring now ready for June 24)
+- ⏭️ **Items 1-7** remain triggered/active as per PROJECTS.md queue
+
+**Orchestration Status — Ready for Commit**:
+- ✅ WORKLOG.md: Session 4004c logged
+- ✅ CHECKIN.md: Already updated in Session 4004b with SCOTUS urgency
+- ✅ PROJECTS.md: Current (no changes needed)
+- ✅ BLOCKED.md: Current (Domain 50 Gist block active as expected)
+- ✅ INBOX.md: Empty and current
+
+**Session Complete**: Exploration queue work done. All 5-session drift tracking validated. Ready for June 24 13:30 UTC validation window.
+
+---
+
+## Session 4004b (2026-06-23 02:31–02:39 UTC) — CRITICAL DEADLINE VERIFICATION + ORCHESTRATION COMPLETION
 
 **Initiated**: 2026-06-23 02:31 UTC (autonomous orchestrator session, final state verification before close)
 
