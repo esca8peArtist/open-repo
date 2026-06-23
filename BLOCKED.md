@@ -43,16 +43,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### resistance-research — Domain 50 Gist deadline passed; Little v. Hecox decision issued (14:00 UTC June 23)
-**Date blocked**: 2026-06-23 01:50 UTC
-**Date deadline passed**: 2026-06-23 14:00:25 UTC (Session 4060)
-**Status (Session 4068, 15:43 UTC)**: SCOTUS Little v. Hecox / B.P.J. opinion released 14:00 UTC — **DECISION OUTCOME NOT YET VERIFIED BY USER**. Domain 50 Gist still not created (19 `[INSERT GIST URL HERE]` placeholders remain). Rapid-response infrastructure 100% production-ready: all 4 orchestration files staged with copy-paste email templates (Templates A/B/C/D), contact lists, and send sequence. **Critical path** (IF decision favorable): (0) User verifies decision outcome on supremecourt.gov (1 min), (1) User creates Gist (~5 min), (2) User fills URL placeholders in 3 action guides (~3 min), (3) Execute Tier 1 rapid-response sends to Lambda Legal + AT4E + NCTE (~10 min), (4) Execute Tier 2 batch to 12 organizations (~15-20 min). **⚠️ EXECUTION WINDOW CLOSING: ~2h 17m remaining (18:00 UTC)**
-**What I need**: (0) **URGENT — User verifies SCOTUS decision outcome** (1 min): Visit supremecourt.gov/opinions, search "Little v. Hecox", read first 2 pages. Determine: **FOR plaintiff** (trans rights upheld, strict scrutiny) OR **AGAINST plaintiff** (status quo upheld) OR **REMAND** (vacated/remanded). Post outcome to INBOX.md or reply here. (1) **IF outcome = FOR or REMAND, create Domain 50 Gist** (5-10 min): Log into github.com as esca8peArtist → gist.github.com → create secret gist with `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md` contents (11,200 words, 86 citations), filename `domain-50-lgbtq-rights-voting-suppression.md`, description "Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure — Research Brief, June 2026". Copy Gist URL. (2) **Fill Gist URL into 3 action guides** (3 min): Replace all 19 `[INSERT GIST URL HERE]` instances in SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md + SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md + SCOTUS_CONTACT_ACTIVATION_ORDER.md. (3) **Execute rapid-response** (25-35 min): Use pre-filled templates to email Tier 1 (3 orgs, 10 min) + optionally Tier 2 (12 orgs, 15-20 min). **IF outcome = AGAINST**: No action needed; log outcome in SCOTUS_DECISION_LOG.md and proceed with August 1 timeline. **Support files**: SCOTUS_DECISION_OUTCOME_CHECKLIST.md (verification steps), SCOTUS_DECISION_RAPID_RESPONSE_FLOWCHART.md (decision logic), SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md (templates A/B/C/D).
-**Verify with**: `grep -r "INSERT GIST URL" /home/awank/dev/SuperClaude_Framework/projects/resistance-research/ | wc -l` should return 0 when Gist URL filled in; outcome verification via `cat SCOTUS_DECISION_LOG.md` showing FOR/AGAINST/REMAND.
-**Resolution**: ⏳ **DECISION ISSUED BUT OUTCOME UNVERIFIED — EXECUTION WINDOW CRITICAL (2h 17m remaining until 18:00 UTC)** — Little v. Hecox decision now public (issued 14:00 UTC, ~1h 43m ago). **CRITICAL BLOCKERS**: (1) User must verify decision outcome (1 min), (2) User must create Gist (5-10 min IF favorable). All infrastructure production-ready. Orchestrator standing by for outcome verification and ready to execute rapid-response immediately upon user confirmation of favorable outcome.
-
----
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -107,6 +97,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### resistance-research — SCOTUS Little v. Hecox deadline passed 18:00 UTC; outcome unverified
+**Date blocked**: 2026-06-23 01:50 UTC
+**Date deadline passed**: 2026-06-23 18:00 UTC
+**Date resolved**: 2026-06-23 18:05 UTC (Session 4084+)
+**Context**: SCOTUS Little v. Hecox / B.P.J. opinion issued 14:00 UTC June 23. Execution window was 14:00–18:00 UTC (4 hours). Domain 50 rapid-response infrastructure 100% staged and ready: 4 orchestration files, 3 contact lists, A/B/C/D email templates, 19 Gist URL placeholders. User never visited supremecourt.gov to verify outcome; no decision posted to INBOX.md. Deadline 18:00 UTC hard-closed at 18:01+ UTC June 23.
+**Resolution**: ✅ **RESOLVED — EXECUTION WINDOW CLOSED** (Session 4084+, 18:05 UTC) — Deadline passed without user outcome verification. All Domain 50 rapid-response infrastructure remains production-ready for retroactive execution if user posts outcome to INBOX.md post-deadline (e.g., "SCOTUS Little v. Hecox — FOR" or "AGAINST"). No loss of technical capability from window closure; only loss of time-critical urgency factor. August 1 timeline serves as default next checkpoint if no post-deadline user action taken.
+
+---
 
 ### stockbot — HMM regime stuck at None despite priming fix (Option A execution incomplete)
 **Date blocked**: 2026-06-17 (Session 3800 escalation attempt)
