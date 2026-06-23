@@ -2,6 +2,23 @@
 
 ---
 
+## Since Last Check-in (Session 4064 — 2026-06-23 14:58 UTC) — CRITICAL EXECUTION WINDOW ACTIVE
+
+### ⏰ **URGENT ACTION REQUIRED** — Execution Window: 14:58–18:00 UTC (~3h2m remaining)
+
+**See**: `SCOTUS_DECISION_OUTCOME_CHECKLIST.md` (created Session 4064 14:58 UTC) — **READ THIS IMMEDIATELY**
+
+**What's Needed RIGHT NOW** (1–50 min total):
+1. **Check SCOTUS decision outcome** (1 min) — Go to supremecourt.gov/opinions, find Little v. Hecox decision
+2. **IF favorable FOR trans athlete plaintiffs** (35–50 min):
+   - Create Domain 50 Gist (5–10 min)
+   - Fill Gist URL in action guides (3 min)
+   - Execute Tier 1 rapid-response: Lambda Legal, AT4E, NCTE (10 min)
+   - Execute Tier 2: 12 organizations (15–20 min, optional but recommended)
+3. **IF unfavorable AGAINST plaintiffs**: No action needed — proceed with August 1 timeline
+
+---
+
 ## Since Last Check-in (Session 4064 — 2026-06-23 14:47 UTC)
 
 **⏰ SCOTUS DECISION LIVE — RAPID-RESPONSE WINDOW ACTIVE (~3h15m remaining)**
