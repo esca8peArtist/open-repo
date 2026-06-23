@@ -31,6 +31,16 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+<!-- AUTO:CALIBRATION:START -->
+### Usage limits — weekly calibration reminder
+**Date blocked**: 2026-06-23 (auto-added each Tuesday by reset-usage-budget.sh)
+**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
+**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
+**Verify with**: `bash scripts/verify-calibration.sh`
+**Resolution**:
+<!-- AUTO:CALIBRATION:END -->
+
+
 ---
 
 ### resistance-research — Domain 50 Gist not created (SCOTUS execution blocked, 12h deadline)
