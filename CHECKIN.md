@@ -2,6 +2,45 @@
 
 ---
 
+## Since Last Check-in (Session 4031)
+
+**SESSION COMPLETED**: 2026-06-23 09:34–10:26 UTC (52 min)
+
+**Work Completed**:
+- ✅ **Phase 6 Research Framework (Exploration Queue Item 12)** — COMPLETE
+  - Deliverable 1: `PHASE_6_RESEARCH_ZONES_MAPPING.md` (63 KB, 661 lines) — 27 research zones across 5 domains (B/C/D/E/F), 5 research questions per zone, sourcing strategy, expert contact categories, timeline 226-292 hours base case
+  - Deliverable 2: `PHASE_6_PRELIMINARY_SOURCE_INDEX.md` (65 KB, 1,223 lines) — 241+ sources total (B=55, C=52, D=47, E=45, F=42), all with citation + type + relevance + confidence + access tier. 83% freely accessible. V-Dem 2026, World Inequality Report 2026, Rau/Stokes PNAS 2025 as anchors
+  - Deliverable 3: `PHASE_6_EXECUTION_READINESS_CHECKLIST.md` (32 KB, 381 lines) — Specific researcher expertise requirements, success criteria per domain, 15+ contingency scenarios, critical path analysis (D→C→B→E→F), 4-person parallel execution ≈4.5 weeks
+  - **Value**: Enables Nov 15 Phase 6 launch with zero discovery overhead. All Phase 3 findings (Domains K & H) explicitly integrated. Committed: `9a2e7b47`
+
+**Blocks Status** (all unchanged):
+1. **Domain 50 Gist** (resistance-research) — Deadline **14:00 UTC TODAY (~3h 30m remaining)** — User must create GitHub Gist and fill URL placeholders in SCOTUS templates (20 min total)
+2. **cybersecurity-hardening** — VeraCrypt restart (user action)
+3. **mfg-farm** — Test print execution (user action)
+4. **open-repo/systems-resilience** — raspby1 platform decision (deadline expired, awaiting user re-authorization)
+
+**Critical Timeline**:
+- **NOW**: 2026-06-23 10:26 UTC
+- **Domain 50 deadline**: 14:00 UTC (3h 34m) — SCOTUS Little v. Hecox opinion expected 10:00 AM ET (14:00 UTC)
+- **Stockbot validation window**: June 24 13:30 UTC (27h 4m) — Monitoring framework staged, deployment live since June 22 23:06 UTC
+
+**What's Working**:
+- All Phase 6 research infrastructure staged; domain sequencing determined
+- SCOTUS rapid-response framework fully operational, templates staged
+- Stockbot engine stable, validation checklist ready
+- Sprint 3 complete, all guardrails passing
+
+**What Needs User Action**:
+1. **TODAY 14:00 UTC**: (1) Create Domain 50 GitHub Gist (5-10 min) with contents from `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md`; (2) Copy Gist URL and fill `[INSERT GIST URL HERE]` placeholders in SCOTUS templates (~5 min). Detailed instructions in `projects/resistance-research/DOMAIN_50_GIST_PREP.md`
+2. **Tomorrow 13:30 UTC**: Monitor stockbot validation window (read-only execution; all scripts ready)
+
+**Suggested Priorities for Next Session**:
+- If Domain 50 Gist created by 14:00 UTC: SCOTUS rapid-response templates ready to send same-day
+- If not created by 18:00 UTC: SCOTUS decision window closes (can defer to next opportunity)
+- June 24 13:30 UTC: Automated stockbot validation window (monitoring framework ready, no user intervention needed unless alert triggers)
+
+---
+
 ## Since Last Check-in (Session 4036 continuation)
 
 **Current Status (2026-06-23 09:35 UTC)**:
