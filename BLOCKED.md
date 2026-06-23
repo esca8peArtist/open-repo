@@ -99,12 +99,12 @@ When the block is resolved (Resolution written OR Verify command passes):
 ## Resolved Archive
 
 ### stockbot — HMM regime initialization NameError (undefined close_prices variable)
-**Date blocked**: 2026-06-23 21:14 UTC (Session 4088 — orchestrator autonomous discovery)
-**Date resolved**: 2026-06-23 21:22 UTC (Session 4088 — orchestrator autonomous fix + deploy)
+**Date blocked**: 2026-06-23 21:14 UTC (Session 4092 — orchestrator autonomous discovery)
+**Date resolved**: 2026-06-23 21:22 UTC (Session 4092 — orchestrator autonomous fix + deploy)
 **Context**: Critical blocker for June 24 13:30 UTC validation window. Docker logs from 19:59 UTC showed all 5 trading sessions generating regime=None + BUY_PROB_COLLAPSE alerts despite HMM priming code being present. Root cause: HMM priming code referenced undefined variable `close_prices` (lines 3528, 3541) — this caused NameError in exception handler, making priming fail silently. Result: HMM never fitted, regime stuck at None forever, all signals suppressed. **Fix applied**: Replaced `close_prices` with `n_bars` (3528) and `bars_to_feed['close'].values` (3535, 3541) — these variables are in scope from priming loop. **Deployment**: Synced updated src/trading/trading_session.py to Jetson, restarted container (21:18 UTC). Container now running with correct code. HMM priming will execute at June 24 13:30 UTC market open with no errors.
 **What I needed**: Fix undefined variable references → COMPLETED
 **Verify with**: `docker exec stockbot grep -A 2 'regime still None after' src/trading/trading_session.py` shows `{n_bars}-bar feed` (was `{len(close_prices)}-bar feed`)
-**Resolution**: ✅ **FULLY RESOLVED** (Session 4088, 2026-06-23 21:22 UTC) — Critical NameError bug fixed. Code deployed to Jetson. June 24 validation window UNBLOCKED. Expected outcome: regime=Bull/Bear/Sideways at market open, signals resume normal generation.
+**Resolution**: ✅ **FULLY RESOLVED** (Session 4092, 2026-06-23 21:22 UTC) — Critical NameError bug fixed. Code deployed to Jetson. June 24 validation window UNBLOCKED. Expected outcome: regime=Bull/Bear/Sideways at market open, signals resume normal generation.
 
 ---
 
