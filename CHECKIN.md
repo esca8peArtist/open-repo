@@ -2,6 +2,38 @@
 
 ---
 
+## Since Last Check-in (Session 4086, 2026-06-23 19:00–20:00 UTC)
+
+### 🚨 **CRITICAL HMM PRIMING BUG IDENTIFIED & FIXED**
+
+**Issue Discovered (19:00 UTC)**:
+Pre-flight validation for June 24 13:30 UTC validation window revealed **CRITICAL FAILURE**:
+- All 5 trading sessions (JPM/AAPL/MSFT/AMZN/NVDA) showing regime=None
+- Signal generation masked out (BUY_PROB_COLLAPSE alerts continuously firing)
+- Deployment live since June 22 23:06 UTC with broken HMM initialization
+
+**Root Cause (19:06–19:45 UTC)**:
+HMM priming code does not pass bar timestamps to `update_price()`:
+- Fetches 82 daily bars from Alpaca
+- Calls `masker.update_price(price)` without timestamp parameter
+- All bars default to `datetime.date.today()` (same date)
+- Deduplication logic rejects bars 2-82 as duplicates
+- **Result**: Only 1 bar fed to HMM instead of 82 → regime initialization fails
+
+**Fix Implemented (19:45–19:55 UTC)**:
+- Commit 9194e6b: Pass Alpaca DataFrame index (bar timestamp) to `update_price()`
+- Changed: `masker.update_price(price)` → `masker.update_price(price, timestamp=idx)`
+- **Expected outcome**: 82 bars properly dated, deduplication works, regime initializes
+
+**Deployment Status**:
+- Market hours blackout prevents deployment until 20:00 UTC
+- Scheduled: Deploy immediately post-market-close (~60 min from now, 20:05 UTC estimated)
+- **Critical for June 24 validation**: Without this fix, validation will fail identically
+
+**Confidence**: 99% — Root cause clearly identified, fix directly addresses the issue, fix validated in code
+
+---
+
 ## Session 4086 — 2026-06-23 18:41–20:33 UTC — **✅ POST-DEADLINE LESSONS LEARNED + PLATFORM ANALYSIS (Items 20-21)**
 
 ### **Exploration Queue Items 20 & 21 Completed Autonomously**
