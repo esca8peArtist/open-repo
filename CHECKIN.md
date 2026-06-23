@@ -2,6 +2,50 @@
 
 ---
 
+## Since Last Check-in (Session 4037 — 2026-06-23)
+
+**SESSION**: 2026-06-23 09:59–10:15 UTC (orientation only, 15 min)
+
+**⏰ CRITICAL ALERT — DOMAIN 50 GIST DEADLINE 14:00 UTC TODAY (≈4 HOURS REMAINING)**
+
+**Current Status (as of 2026-06-23 10:15 UTC)**:
+- ✅ **Orientation complete**: All state files verified current and consistent
+- ✅ **Phase 6 research**: Completed in Session 4031 (3 files, 160 KB, 2,265 lines)
+- ✅ **All main projects**: Complete or paused (awaiting user actions)
+- ⏰ **CRITICAL**: Domain 50 Gist not created yet (19 placeholders remain)
+
+**What Needs to Happen — 14:00 UTC TODAY**:
+1. **Create Domain 50 GitHub Gist** (5-10 min): Log into github.com as esca8peArtist → gist.github.com → new secret gist
+   - File: contents of `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md` (11,200 words)
+   - Filename: `domain-50-lgbtq-rights-voting-suppression.md`
+   - Description: "Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure — Research Brief, June 2026"
+2. **Fill URL placeholders** (5 min): Copy Gist URL and paste into `[INSERT GIST URL HERE]` fields in:
+   - `projects/resistance-research/SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md`
+   - Other SCOTUS template files
+   - Detailed instructions: `projects/resistance-research/DOMAIN_50_GIST_PREP.md`
+
+**If Gist Created by 14:00 UTC + SCOTUS Decides FOR Plaintiff**:
+- SCOTUS rapid-response framework executes same-day
+- Tier 1 sends (5 min): Lambda Legal, AT4E, NCTE copy-paste templates
+- Tier 2 sends (60 min): 12 organization batch framework
+- Full orchestration framework ready in `projects/resistance-research/SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md`
+
+**What's Working**:
+- All SCOTUS rapid-response templates staged and copy-paste ready
+- Stockbot engine stable, live 47+ hours
+- June 24 13:30 UTC monitoring frameworks fully staged
+- No blocking issues
+
+**What Needs Your Action** (TODAY):
+1. **14:00 UTC**: Domain 50 Gist creation (15 min total) — otherwise SCOTUS opportunity lost until next decision
+2. **June 24 13:30 UTC**: Monitor stockbot validation window (read-only, all frameworks ready)
+
+**Suggested Next Steps**:
+- **Immediate** (within 1 hour): Create Domain 50 Gist to be ready for 14:00 UTC SCOTUS decision
+- **June 24**: Automated monitoring of stockbot validation window (no intervention needed unless alert triggers)
+
+---
+
 ## Since Last Check-in (Session 4031)
 
 **SESSION COMPLETED**: 2026-06-23 09:34–10:26 UTC (52 min)
