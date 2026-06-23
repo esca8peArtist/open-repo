@@ -220,6 +220,34 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - Value: Operationalizes monitoring framework; enables real-time decision-making during June 24 13:30–20:00 UTC validation window
    - Status: **USER/ORCHESTRATOR EXECUTION READY** — All 3 files production-ready. June 24 pre-market: execute Phase 0 checklist (6 health gates). Phase 1-4 during market hours. Daily updates June 25-30. Monitoring framework fully operationalized.
 
+14. **seedwarden: Q4 Product Line Research — Winter/Holiday Medicinal Products & Market Strategy** (2-3h) ← **✅ COMPLETE (SESSION 4009)**
+   - ✅ Completed June 23 04:10 UTC (seedwarden agent executed)
+   - Deliverables: `Q4_WINTER_PRODUCT_STRATEGY.md` (5 bundle concepts: Winter Immunity Defender, Holiday Gift Collection, Seasonal Stress Relief, Apothecary Winter, Corporate Wellness), `SEASONAL_PRICING_AND_PROMOTION_MODEL.md` (Nov-Dec promotion calendar, pricing table, Kit email sequences), `Q4_MARKET_RESEARCH_SUMMARY.md` (competitor analysis, seasonal demand signals, holiday buyer persona)
+   - Key findings: Q4-D Gift-Giver's Collection is highest-priority (3-4h Canva work, zero content dependency); Q4-A Winter Immunity Defender lowest-risk Oct launch (repackage Immunity bundle with seasonal framing). No contractor conflict except Q4-E (5 new species)
+   - Revenue forecast base case: $7,610 Oct-Dec (conservative: $4,740, optimistic: $12,300)
+   - Committed: seedwarden Q4 files
+   - Status: **USER REVIEW READY** — All research complete. User can approve bundle concepts and launch timeline (recommend Oct 8 for Q4-A, Nov 1 for Q4-D gift positioning)
+   
+   - Trigger condition (original): Immediate (no blocker, staggered after Q3 launch June 29+)
+   - Scope: Research winter medicinal bundles (immune boosters for cold/flu season, seasonal affective, winter stress), holiday gift products (couples wellness, family health), overlap and cross-sell with Q3 bundles. Include market research: seasonal trends, competitor positioning, price testing for gift positioning, Kit email series for seasonal promotions (Nov-Dec revenue peak). Deliverables: `Q4_WINTER_PRODUCT_STRATEGY.md` (1,500-2,000 words, 3-5 bundle concepts), `SEASONAL_PRICING_AND_PROMOTION_MODEL.md` (gift pricing, Nov-Dec sales forecast, email sequence design).
+   - Value: Extends Q3 success into Q4 (seasonal opportunity, builds on established medicinal herbs positioning), generates revenue during peak e-commerce season, validates market appetite for seasonal variation
+   - Owner: seedwarden team
+   - Confidence: 78% (Q3 bundles production-ready; seasonal marketing best practices established; medicinal herbs market has clear seasonal demand signals)
+
+15. **resistance-research: Phase 3 Domain K Research Source Staging & Expert Contact Validation** (3-4h) ← **✅ COMPLETE (SESSION 4009)**
+   - ✅ Completed June 23 04:50 UTC (resistance-research agent executed)
+   - Deliverables: `DOMAIN_K_SOURCE_MASTER_DATABASE.md` (100+ sources with confidence scores, access notes, 22-item anchor source set), `DOMAIN_K_EXPERT_CONTACT_FRAMEWORK.md` (33 contacts with engagement triggers, September 1 outreach timing, contingency fallbacks), `DOMAIN_K_RESEARCH_RUNBOOK.md` (6-week Nov 4-Dec 20 timeline, weekly milestones, division-of-labor options, risk mitigation)
+   - Key findings: September 1 outreach to primary experts is critical (not October) to secure fall academic calendar slots. Five pre-Phase 3 monitoring items identified (Trump v. Slaughter ruling, Kansas vote, Israel ruling, V-Dem verification, GMF Poland update) for July-October. 22-source anchor set sufficient for minimal viable research execution.
+   - Confidence: 84% (sources verified, timeline calibrated to Phase 2 actuals, expert contacts use public directories)
+   - Committed: commit `43e97ef1` (feat: Phase 3 Domain K research source staging)
+   - Status: **NOVEMBER 4 PHASE 3 LAUNCH READY** — All infrastructure staged. Phase 3 researchers can begin immediately without planning overhead.
+   
+   - Trigger condition (original): Immediate (no blocker, staggered before Phase 3 November 4 start)
+   - Scope: Validate and organize 100+ sources for Domain K (Federal Judiciary Restructuring, covering legislative inventory, constitutional feasibility, international precedent, coalition activation). Build comprehensive source database from PHASE_3_RESEARCH_SOURCE_DATABASE.md outline. Verify 30+ expert contacts (Roth, Bannon, Fallon, Whitehouse staff, Chemerinsky, Scheppele, etc.), create contact engagement triggers and timing windows. Build collaboration framework for potential multi-researcher execution (solo vs 2-person parallel track options). Deliverables: `DOMAIN_K_SOURCE_MASTER_DATABASE.md` (annotated sources with confidence scores, relevance tags, access URLs), `DOMAIN_K_EXPERT_CONTACT_FRAMEWORK.md` (30+ contacts, engagement approach, timing windows per contact), `DOMAIN_K_RESEARCH_RUNBOOK.md` (6-week timeline, division of labor, checkpoint milestones).
+   - Value: Eliminates planning overhead when Phase 3 begins; enables immediate research execution without coordination delays; validates expert availability before commitment
+   - Owner: resistance-research team
+   - Confidence: 82% (Phase 3 roadmap complete, Domain K outline finalized, 70% of contacts already identified in prior work)
+
 ---
 
 **REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). **✅ DOMAIN 59 COMPLETE** (Session 2839). Total remaining Phase 2 production estimate: 40-50 hours Q3 2026. Phase 1 path decided (Path A + Domain 37); Phase 2 research execution proceeds immediately or post-Wave-1; Domain 59 distribution activation ready June 5.
