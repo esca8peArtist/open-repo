@@ -1,5 +1,50 @@
 # Check-in Summary
 
+## Session 3920 Orchestrator Status (2026-06-23 00:00–00:40 UTC) — POST-RESET ORIENTATION + MONITORING FRAMEWORK
+
+**Status**: ✅ **FRESH TOKEN BUDGET, EXPLORATION QUEUE ITEM 8 COMPLETE**
+
+### Post-Reset Progress
+- ✅ **Fresh 15.1M token budget** (Tuesday 00:00:51 UTC reset completed)
+- ✅ **Deployment verified LIVE**: Jetson stockbot running continuously since June 22 23:06 UTC
+- ✅ **Exploration Queue Item 8 COMPLETE**: Post-Deployment Monitoring Framework designed and committed
+  - 3 specification files (661 insertions) created: LIVE_TRADING_DASHBOARD_SPEC.md, MONITORING_ALERT_ROUTING.md, DAILY_PNL_DRIFT_TRACKING_FRAMEWORK.md
+  - All operationalize existing infrastructure code (Session 2473)
+  - Ready for June 24-30 validation window monitoring
+- ✅ **Blocks verified**: 3 remain active, all user-action-dependent (no change)
+
+### What's Accomplished This Session
+1. **Monitoring Framework Design** (Exploration Queue Item 8)
+   - LIVE_TRADING_DASHBOARD_SPEC.md: KPI definitions, alert thresholds, integration
+   - MONITORING_ALERT_ROUTING.md: Discord rules, severity mapping, routing logic
+   - DAILY_PNL_DRIFT_TRACKING_FRAMEWORK.md: Z-score protocol, 5-step validation
+   - Baselines locked to PROJECTS.md values (JPM 0.0905% daily mean, AMZN 0.2556%)
+
+### Status Summary
+- **Stockbot**: Deployment LIVE, validation window June 24 13:30 UTC, monitoring specifications ready
+- **Resistance-research**: Zero autonomous work remaining, all distribution templates staged
+- **All other projects**: Paused or blocked on user actions (unchanged)
+- **Blocks**: Unchanged (VeraCrypt restart, test print, raspby1 platform decision)
+- **Usage**: Fresh reset, now at 0% (78,223 subagent tokens used this session)
+
+### Next Autonomous Work
+- **June 24 13:30-20:00 UTC**: Stockbot validation window monitoring (user-facing + automated alerts)
+- **Post-June 24**: June 24 Post-Validation Analysis (Exploration Queue Item 5)
+- **Awaiting user T+7 checkpoints**: Resistance-research June 23-25 (user-facing monitoring framework)
+
+### What's Needed from User
+1. **Immediate (this week)**:
+   - June 23-25: Execute T+7 checkpoints for resistance-research (monitoring framework + contact lists ready)
+   - June 24-30: Monitor stockbot validation + domain 59 Tier 2 distribution (email templates staged)
+   - June 28: Seedwarden/mfg-farm contractor decisions (if applicable)
+
+2. **Blocked items** (no autonomous progress until resolved):
+   - cybersecurity-hardening: VeraCrypt Phase 1 restart (Windows machine)
+   - mfg-farm: Test print execution (0.20mm layer height, PLA+, 3 walls)
+   - open-repo: Raspby1 platform/runtime decision (Docker vs systemd)
+
+---
+
 ## Session 3920 Orchestrator Status (2026-06-22 23:54–23:59 UTC) — PRE-RESET FINAL CHECKPOINT
 
 **Status**: ✅ **DEPLOYMENT LIVE, ZERO REMAINING AUTONOMOUS WORK**

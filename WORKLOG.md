@@ -1,5 +1,41 @@
 ---
 
+## Session 3920 (2026-06-23 00:00–00:40 UTC) — POST-RESET ORIENTATION + MONITORING FRAMEWORK DESIGN
+
+**Initiated**: 2026-06-23 00:00:51 UTC (autonomous, Raspberry Pi orchestrator session, post-reset with fresh 15.1M token budget)
+
+**Orientation & Analysis**:
+- ✅ ORCHESTRATOR_STATE.md reviewed (auto-generated at 00:00:51 UTC)
+- ✅ All projects reviewed: stockbot (deployment LIVE), resistance-research (zero autonomous work), cybersecurity-hardening/mfg-farm/seedwarden (paused), open-repo (blocked), off-grid-living (complete)
+- ✅ BLOCKED.md verified: 3 active blocks all require user action only (VeraCrypt restart, test print, raspby1 platform decision)
+- ✅ Exploration Queue reviewed: identified Item 8 (Post-Deployment Monitoring Framework) with satisfied trigger condition (June 22 deployment complete)
+
+**Work Completed**:
+- ✅ Spawned stockbot agent to design Post-Deployment Monitoring Framework (Exploration Queue Item 8)
+- ✅ Agent verified existing infrastructure complete: live_vs_backtest_tracker.py (724 lines), discord.py, alerts.py, PHASE_4_3_MONITORING_DASHBOARD.md all production-ready (Session 2473)
+- ✅ Agent created 3 specification files (661 insertions):
+  1. **LIVE_TRADING_DASHBOARD_SPEC.md** (8.9 KB): 6 KPIs with SQL queries, Alpaca API integration, alert thresholds
+  2. **MONITORING_ALERT_ROUTING.md** (7.2 KB): 6 alert rules (R-01–R-06), Discord routing, false-positive suppression
+  3. **DAILY_PNL_DRIFT_TRACKING_FRAMEWORK.md** (9.7 KB): Z-score statistical protocol, 5-step validation, weekly checklist
+- ✅ All three files committed to stockbot submodule (commit fc17abf)
+- ✅ Submodule reference updated on master
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM 8 COMPLETE — MONITORING READY FOR JUNE 24-30 VALIDATION WINDOW**
+
+**Timeline**:
+- 00:00 UTC (this session): Post-reset orientation
+- 00:40 UTC: Monitoring framework design complete
+- June 24 13:30 UTC: Stockbot validation window begins (monitoring specifications operationally ready)
+- June 24-30: Live monitoring using LIVE_TRADING_DASHBOARD_SPEC + MONITORING_ALERT_ROUTING + DAILY_PNL_DRIFT_TRACKING_FRAMEWORK
+
+**Impact**:
+- Removed Item 8 from active Exploration Queue (completed)
+- Provided operational readiness for June 24-30 monitoring window
+- Monitoring infrastructure operationalizes existing code (zero new dependencies)
+- Baselines locked to PROJECTS.md values (JPM 0.0905% daily mean, AMZN 0.2556% daily mean)
+
+---
+
 ## Session 3917 (2026-06-22 23:22–23:25 UTC) — FINAL ORCHESTRATION + DEPLOYMENT VERIFICATION
 
 **Initiated**: 2026-06-22 23:22 UTC (autonomous, Raspberry Pi orchestrator session)
