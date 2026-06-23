@@ -4,6 +4,86 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 127 — Phase 3 Contractor Selection Execution Framework Complete — June 22, 2026 (Session 4001 Continuation)
+
+**Session**: 4001 continuation, June 22, 2026 20:30 UTC
+
+**Task**: Create Phase 3 Contractor Selection EXECUTION CHECKLIST — a 3-step user-execution framework for contractor hiring (photographers, writers, habitat specialists) that removes friction and ensures on-time completion by June 28 hard deadline.
+
+**Status**: ✅ COMPLETE — All three execution files verified, production-ready, and staged for immediate user action.
+
+**Deliverables**:
+
+1. **PHASE_3_CONTRACTOR_OUTREACH_EXECUTION_CHECKLIST.md** (19 KB)
+   - 3-step framework: (1) Verify 11 emails ready, (2) Send all 11 emails, (3) Log sends
+   - Time estimate: 40 minutes total (5+30+5 min breakdown)
+   - Includes: email-by-email sending instructions for all 11 contractors (Photographers A1–A5, Writers B1–B3, Habitat Specialists C1–C3)
+   - Includes: copy-paste technique, Gmail/Outlook tips, send schedule recommendation (Day 1: A1–A5+B1–B2; Day 2: C1–C3+B3)
+   - Includes: troubleshooting (email bounces, "no" responses, scope questions, client issues)
+   - Fill-in guide: [YOUR_NAME] and [YOUR_EMAIL] placeholders only; all other fields pre-filled in PHASE_3_OUTREACH_TEMPLATES_PREFILLED.md
+   - Handoff checklist confirms readiness for Step 3 response tracking
+   - Status: Ready for user execution TODAY (June 22) if user chooses to execute
+
+2. **CONTRACTOR_SELECTION_TIMELINE.md** (17 KB)
+   - Master timeline: June 22 (outreach) → June 28 EOD (hard selection deadline)
+   - Gate G1 (Send): June 22–23 target (outreach phase); emails must go out ASAP for full 6-day response window
+   - Gate G2 (Monitor): June 24–26 "warm window" — expect 50–70% of responses (highest quality); detailed response type handling (enthusiastic, clarification needed, neutral, no response)
+   - Gate G3 (Cool window): June 27 — late responders + backup activation trigger points
+   - Gate G4 (Decision): June 28 EOD — hard deadline for offer letters (non-negotiable for July 1 production start)
+   - Gate G5 (Onboard): June 28–July 1 — concurrent with Phase 3 content sprint July 1–Aug 3
+   - Includes: daily checkpoint dates, response type breakdown with actions, backup activation rules (trigger conditions + backup list location), scoring reminders (3 scoring points: June 25 EOD, June 27 6pm, June 28 8am–11am)
+   - Includes: 4 contingency scenarios (Scenario 1: All top 5 decline by June 26; Scenario 2: Slow responses June 24–25; Scenario 3: All scores below 5.5; Scenario 4: Top candidate asks for higher rate)
+   - Includes: "What If" decision trees with specific actions for each scenario
+   - Status: Ready for daily reference June 22–28
+
+3. **RESPONSE_TRACKING_TEMPLATE.md** (23 KB)
+   - Google Sheets structure with 14 columns: Track, Organization, Contact, Role, Email, Send Date, Response Date, Response Status, Fit Score (1–5), Budget Fit (1–5), Availability Confirmed (Y/N), Overall Weighted Score, Rank, Selection Status, Notes
+   - Scoring formula: (Fit × 0.35) + (Budget × 0.20) + (Availability × 0.30) + (Success Prob × 0.15)
+   - Detailed column definitions for all 14 fields with examples and scoring guidance
+   - Instructions: Copy Google Sheets template structure, pre-fill all 11 contractors, update daily June 24–28
+   - Includes: Markdown fallback format if Google Sheets unavailable
+   - Status: Ready for user to create Google Sheet and pre-fill on June 22 evening or June 23 morning
+
+4. **PHASE_3_CONTRACTOR_SELECTION_EXECUTION_INDEX.md** (12 KB) — Bonus navigation file
+   - Quick-reference index tying all 3 files together
+   - Execution sequence (Day 1: read index, execute checklist 40+20 min; Days 2–5: track responses 10 min daily; Day 8: final decision 2 hours)
+   - Reference table: All 11 contractors (A1–A5 photographers, B1–B3 writers, C1–C3 habitat)
+   - Success metrics checklist (all 11 emails sent, send log complete, Google Sheet created, 5–7 responses by June 26, 3–5 contractors selected by June 28)
+   - External reference documents (PHASE_3_OUTREACH_TEMPLATES_PREFILLED.md, PHASE_3_CONTRACTOR_POOL.md, PHASE_3_CONTRACTOR_SELECTION_SCORECARD.md, etc.)
+   - FAQs covering 7 common questions (do I have to send all 11 on June 22, what if contractor doesn't respond, can I modify scoring formula, what if falling behind, timezone issues, etc.)
+
+**Key features**:
+- User-facing execution checklist (not orchestrator-facing): step-by-step instructions minimize decision friction
+- Emphasize compressed timeline (6 days, down from original 13) and June 28 hard deadline: all decision gates anchored to dates/times
+- All 11 fill-in fields + send order from prefilled templates integrated: users copy directly from PHASE_3_OUTREACH_TEMPLATES_PREFILLED.md
+- References existing scorecard and templates without re-creating: links to PHASE_3_CONTRACTOR_SELECTION_SCORECARD.md, PHASE_3_CONTRACTOR_POOL.md backup list, PHASE_3_COMMUNICATION_TEMPLATES.md, PHASE_3_CONTRACTOR_DROPOUT_CONTINGENCY_ACTIVATION.md
+- Timeline is executable TODAY (June 22) if user chooses: no dependencies, all emails pre-filled, all contractor info confirmed in PHASE_3_CONTRACTOR_POOL.md
+
+**Integration with existing infrastructure**:
+- Builds on 11-candidate PHASE_3_CONTRACTOR_SELECTION_SCORECARD.md (ranked, scored, ready-to-contact)
+- Integrates with 12 pre-filled emails in PHASE_3_OUTREACH_TEMPLATES_PREFILLED.md (zero-effort copy-paste)
+- References backup candidate list in PHASE_3_CONTRACTOR_POOL.md (fallback if responses insufficient)
+- Cross-references 4 contingency scenarios to PHASE_3_CONTRACTOR_DROPOUT_CONTINGENCY_ACTIVATION.md (if Scenario 1 triggered)
+
+**Success criteria — all met**:
+- ✓ User can execute all 3 steps without orchestrator help (Step 1: 5 min verification, Step 2: 30 min sending, Step 3: 5 min logging; + 20 min Google Sheet setup)
+- ✓ Timeline is clear (dates, gates, contingencies): 6-day window (June 22–28) with daily milestones, 4 gate phases, 4 contingency scenarios
+- ✓ All deliverables created and committed to master (3 files + index, all in projects/seedwarden/)
+- ✓ Ready to hand off to user TODAY for immediate execution (no pending work, no research gaps, no content blockers)
+
+**Compressed timeline rationale**:
+- Original outreach window was June 17–30 (13 days). Due to orchestrator queue prioritization, outreach slipped to June 22 start.
+- Current window: June 22 (send) → June 28 EOD (select) = 6 calendar days (5 business days)
+- G1 (Send) moved from June 17 target to June 22 target; all other gates compressed proportionally to maintain 5-day response evaluation window (June 24–28 effective, vs. original June 24–July 1)
+- Day 1 outreach (June 22) is critical: all 8 highest-priority candidates (A1–A5 photographers, B1–B2 writers) must be contacted same day
+- June 27 backup activation point is NOW (instead of June 30 in original plan), ensuring June 28 EOD selections are firm, not provisional
+
+**File location**: `/projects/seedwarden/PHASE_3_CONTRACTOR_OUTREACH_EXECUTION_CHECKLIST.md`, `/projects/seedwarden/CONTRACTOR_SELECTION_TIMELINE.md`, `/projects/seedwarden/RESPONSE_TRACKING_TEMPLATE.md`, `/projects/seedwarden/PHASE_3_CONTRACTOR_SELECTION_EXECUTION_INDEX.md`
+
+**Status**: ✅ PRODUCTION-READY — All three execution files verified against quality standards. Zero autonomous work remains. User can execute immediately or defer until ready (June 22–23 send window closes June 24 EOD; response tracking begins June 24 morning regardless of when emails were sent).
+
+---
+
 ## Item 126 — Digestive Support Bundle Draft Complete — June 22, 2026 (Session 3913)
 
 **Session**: 3913, June 22 2026 23:15 UTC
