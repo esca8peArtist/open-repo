@@ -11,22 +11,11 @@
 
 ## New Items
 
-### [2026-06-22] MAXIMUM PARALLELIZATION DIRECTIVE — burn remaining budget before Tuesday reset
-
-**All usage limits overridden until Tuesday 00:00 UTC reset (~8h from now).** Parallelize every possible task simultaneously. Do not work sequentially — spawn the maximum number of concurrent subagents the projects support.
-
-**Directive**: Launch ALL of the following in parallel in a single message, every session, until reset:
-1. **stockbot** — continue Phase 4 framework; run any pending model retrains, backtests, or pipeline work
-2. **resistance-research** — advance Domain 49 + Domain 50 distribution (contact lists + email templates staged); execute T+7 checkpoints for any domains pending them; advance Domain 57 research
-3. **cybersecurity-hardening** — execute IMSI catcher detection guide + rights assertion playbook research (files staged as untracked)
-4. **mfg-farm** — commit staged Q3 commodity product library; advance any open research items
-5. **seedwarden** — advance any open Q3 research or species guide work
-6. **open-repo** — unblock deployment OR advance any scope that doesn't require the blocked infrastructure decision
-7. **off-grid-living / systems-resilience / general-research** — pick any open exploration queue items
-
-**Do not stop to check usage. Do not pace yourself. Spawn all agents simultaneously each session and start the next session immediately after the 5-min inter-session pause.**
+(none currently)
 
 ---
+
+## June 22 Parallelization Directive — Processing History
 
 🟢 **PROCESSED (Session 3900, June 22 ~13:00 UTC)**:
 - ✅ **[2026-06-22 12:50] UNPAUSE + FULL PARALLELIZE DIRECTIVE** — All projects unpaused. Usage limits ignored until June 23 00:00 UTC reset. 4 parallel agents launched: (1) stockbot — June 18 validation outcome + Phase 4 continuation; (2) resistance-research — Domain 59 Tier 2 reassessment + Domain 57 research + T+7 checkpoint prep; (3) cybersecurity-hardening — commit staged Q3 scope docs + execute F-01/F-02 P1 research; (4) seedwarden + mfg-farm — commit staged files + execute Q3 research. Maximum throughput until reset.
