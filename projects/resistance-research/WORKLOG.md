@@ -2,6 +2,29 @@
 
 ---
 
+## June 23, 2026 (General Research Agent) — Phase 6 Research Framework: Domains B–F Pre-Production Infrastructure — COMPLETE
+
+**Task**: Exploration Queue Item 12 — Phase 6 Domains B–F Preliminary Research Framework. Build foundational research infrastructure for Phase 6 launch (November 15, 2026) covering 5 domains: B (Economic Foundations), C (Political Governance), D (Judicial Independence), E (Multilateral Coordination), F (Implementation Feasibility).
+
+**Files created** (directory: `projects/resistance-research/phase-6-research-framework/`):
+
+1. **PHASE_6_RESEARCH_ZONES_MAPPING.md** — 5 domains × 5–6 zones each = 27 research zones total. Per zone: 5 research questions, sourcing strategy (P/A/Pr/H categories), expert contact categories, time estimates (226–292 hours aggregate). Integration notes connecting each domain to Phase 3 baseline (Domains K and H). Aggregate timeline summary and parallelization guidance.
+
+2. **PHASE_6_PRELIMINARY_SOURCE_INDEX.md** — 241+ sources across 5 domains, organized by domain → zone. Per source: full citation, type category, relevance, confidence level (High/Medium), access tier ([Free]/[Inst]/[Gov/Free]/[Purch]). Gap analysis at each domain header specifying what Phase 3 covered vs. what is genuinely new. 73% of sources freely accessible. Domain counts: B=55, C=52, D=47, E=45, F=42.
+
+3. **PHASE_6_EXECUTION_READINESS_CHECKLIST.md** — Per-domain researcher expertise requirements, data dependencies (with specific dependency items), success criteria (specific and measurable), contingency routing for each major dependency failure. Critical path analysis identifying 4 critical path items (Trump v. Slaughter, Kansas referendum, WTO MC14, Domains B–E completion gate for Domain F). Timeline ranges: 193 hrs optimistic / 264 hrs base / 356 hrs pessimistic. Recommended parallel execution structure (B/C/D/E in parallel, F sequential).
+
+**Key findings from research**:
+- World Inequality Report 2026 and PNAS 2025 (Rau-Stokes) establish the causal mechanism linking inequality to democratic erosion — this is the Domain B lead finding
+- V-Dem Democracy Report 2026: US falls from "liberal democracy" to "electoral democracy," 20th → 51st on Liberal Democracy Index — anchors Domain D and F quantitative cost-benefit analysis
+- ICC Arbitration Rules 2026 (in force June 1, 2026) and WTO MC14 (March 2026) are both confirmed as recent developments that Domain E must address
+- Trump v. Slaughter (expected June 30, 2026) is a critical path dependency for Domains C-2 and D-1 — conditional analysis structure specified in checklist
+- 83% of all pre-identified sources are freely accessible (no institutional paywall or purchase required)
+
+**Phase 3 deconfliction**: Integration notes in all three documents specify exactly what Phase 3 Domains K and H already cover (Germany December 2024, Bill C-9, Israel selection law, SCERT Act, six reform pathways) so Phase 6 researchers extend rather than duplicate.
+
+---
+
 ## June 22, 2026 (Session 4002) — SCOTUS Trigger Monitoring & Rapid-Response Execution Framework — VERIFICATION & STAGING COMPLETE
 
 **Task**: Verify SCOTUS Trigger Monitoring & Rapid-Response Execution Framework (Exploration Queue Item 12, Session 4001) — all four user-facing action guides production-ready for June 23 14:00 UTC decision drop. Confirm contact names/emails match PHASE_2_COALITION_CONTACT_MATRIX.md, template names match domain-50-lgbtq-rights-voting-suppression.md, all decision branches covered.
