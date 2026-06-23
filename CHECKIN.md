@@ -1,17 +1,42 @@
 # Check-in Summary
 
+---
+
+## 🚨 SCOTUS DECISION TODAY — DOMAIN 50 GIST REQUIRED BY 14:00 UTC (11 HOURS)
+
+**Critical Action**: Create GitHub Gist from Domain 50 document and fill placeholder URLs.
+
+**Quick Steps**:
+1. Go to https://gist.github.com (log in as esca8peArtist)
+2. Follow 10-step guide in `projects/resistance-research/DOMAIN_50_GIST_PREP.md` (5-10 min)
+3. Copy the resulting Gist URL (format: `https://gist.github.com/esca8peArtist/abc123...`)
+4. Run: `bash projects/resistance-research/scripts/fill_domain50_gist_urls.sh "https://gist.github.com/..."`
+5. Review changes and commit
+
+**What happens after**:
+- If Little v. Hecox/BPJ decision is announced at 14:00 UTC, the rapid-response templates are ready to send immediately
+- If decision is on a different case, the Gist is staged for August 1 launch window
+
+**Files with placeholders** (11 total):
+- `SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md` (5 instances)
+- `SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md` (4 instances)
+- `SCOTUS_DECISION_RAPID_RESPONSE_FLOWCHART.md` (2 instances)
+
+---
+
 ## Session 4005b Orchestrator Status (2026-06-23 03:16–03:25 UTC) — BLOCK VERIFICATION + COMMIT
 
 **Status**: ✅ **ZERO AUTONOMOUS WORK — ALL SYSTEMS READY FOR USER ACTION**
 
 **Verification Completed**:
 - ✅ Domain 50 Gist block remains ACTIVE (11 placeholder URLs unfilled)
-- ✅ SCOTUS deadline: TODAY 14:00 UTC (~10.5 hours)
+- ✅ SCOTUS deadline: TODAY 14:00 UTC (~11 hours remaining)
+- ✅ Helper script created: `projects/resistance-research/scripts/fill_domain50_gist_urls.sh`
 - ✅ All orchestration infrastructure stable and ready
 - ✅ Committing state on master
 
 **Critical Path**:
-1. **User action (≤10.5h)**: Create Domain 50 Gist + fill 4 template URLs
+1. **User action (≤11h)**: Create Domain 50 Gist + use helper script to fill 11 placeholder URLs (5-10 min total)
 2. **June 24 13:30 UTC**: Stockbot validation window begins (next autonomous trigger)
 
 ---
