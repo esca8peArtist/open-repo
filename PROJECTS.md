@@ -281,6 +281,22 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - **Value**: Phase 2 pre-staging eliminates planning delays; user can execute deployment runbook immediately upon Phase 1 completion
    - **Owner**: Claude Code Orchestrator (autonomous execution, Session 4027)
 
+20. **open-repo: Detailed Platform Decision Analysis & Deployment Runbook Preparation** (2-3h)
+   - Trigger condition: Immediate (user authorization for raspby1 Docker vs systemd decision pending; can prepare detailed analysis autonomous­ly)
+   - Scope: Create comprehensive 6-dimension comparison matrix (resource requirements, operational complexity, post-deployment integration, support surface, cost analysis, risk scoring) with detailed sub-dimension analysis, cost modeling, deployment runbooks for both Docker and systemd paths, rollback/recovery procedures, implementation timelines, success criteria metrics
+   - Value: Eliminates analysis delays when user decides; provides decision-maker with complete information to choose between options; enables rapid first-time deployment post-decision without planning overhead
+   - Deliverables: `RASPBY1_DETAILED_PLATFORM_ANALYSIS.md` (8-10 KB, full comparison with confidence scoring), `DOCKER_DEPLOYMENT_RUNBOOK.md` (6-8 KB, step-by-step), `SYSTEMD_DEPLOYMENT_RUNBOOK.md` (6-8 KB, step-by-step), `DEPLOYMENT_SUCCESS_CRITERIA_AND_VALIDATION.md` (3-4 KB, metrics per platform)
+   - Owner: open-repo team
+   - Confidence: 80% (both platform options technically feasible, documented in prior work, requires detailed cost/operational analysis)
+
+21. **resistance-research: SCOTUS Decision Rapid-Response Infrastructure Lessons Learned & Post-Deadline Execution Framework** (1.5-2h)
+   - Trigger condition: Immediate (SCOTUS deadline just closed; lessons-learned analysis autonomous and valuable for future decisions)
+   - Scope: Document what worked / what to improve in rapid-response infrastructure, analysis of execution failure modes (why user didn't verify outcome), framework for post-deadline retroactive execution (if user posts outcome 1-7 days late), updated runbooks for future SCOTUS-like decisions, process improvements for next urgent distribution event
+   - Value: Improves future rapid-response execution; documents infrastructure durability for retroactive execution; validates Domain 50 sends remain executable indefinitely (no time decay); captures lessons for Domain 51/48 Wave 1 sends (also overdue) and Domain 59 Tier 2 send cadence
+   - Deliverables: `SCOTUS_DECISION_LESSONS_LEARNED.md` (3-4 KB, what worked, what to improve), `RETROACTIVE_EXECUTION_FRAMEWORK.md` (2-3 KB, post-deadline send procedures), `FUTURE_URGENT_DISTRIBUTION_RUNBOOK.md` (2-3 KB, process improvements for next event)
+   - Owner: resistance-research team
+   - Confidence: 88% (decision analysis autonomous, retroactive execution validated as feasible, lessons-learned from 10h escalation escalation sequence)
+
 19. **resistance-research: Phase 3 Domain H Research Source Staging & Expert Contact Validation** (3-4h) ← **✅ COMPLETE (Session 4085, June 23 18:30 UTC)**
    - ✅ Executed 18:15–18:30 UTC June 23 (resistance-research agent autonomous execution)
    - Deliverables completed: `DOMAIN_H_SOURCE_MASTER_DATABASE.md` (110 sources, 20 anchor sources, K-bridge deduplication), `DOMAIN_H_EXPERT_CONTACT_FRAMEWORK.md` (32 expert contacts with 4-tier engagement strategy), `DOMAIN_H_RESEARCH_RUNBOOK.md` (6-week Nov 4-Dec 20 timeline with electoral scenario variants)
