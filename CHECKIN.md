@@ -1,5 +1,66 @@
 # Check-in Summary
 
+## Session 4004 Orchestrator Status (2026-06-23 01:58 UTC) — EXIT MODEL PRE-STAGING COMPLETE
+
+**Status**: ✅ **EXIT MODEL FRAMEWORK PRE-STAGED; SCOTUS GIST CRITICAL TODAY 14:00 UTC**
+
+### What Was Accomplished (Session 4004)
+
+**Stockbot Exit Model Framework Pre-Staging**:
+- ✅ **Exploration Queue Item 1**: Pre-staged exit model training data extraction pipeline
+  - `scripts/exit_model_prep.py` implemented (30 tests, all passing)
+  - Two core functions: `prepare_training_data_from_trades()` and `validate_chronological_split()`
+  - Extracts AAPL round trips from database, builds 13-feature DataFrame, enforces chronological split
+  - Commits: b6a22e7 + e7f3cc7
+  - **Ready for activation**: Once 50+ AAPL round trips accumulate post-validation (expected June 24-26)
+  - **Value**: Enables immediate exit model training once validation window produces sufficient data
+
+### What Needs User Action
+
+**CRITICAL — SCOTUS Gist (TODAY before 14:00 UTC)**:
+- Domain 50 GitHub Gist must be created from `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md`
+- Copy resulting Gist URL into 13 placeholder locations in SCOTUS framework templates
+  - See `projects/resistance-research/DOMAIN_50_GIST_PREP.md` for detailed instructions
+- **Why critical**: Little v. Hecox / BPJ SCOTUS opinion drops at 10:00 AM ET (14:00 UTC). Rapid-response framework is production-ready but non-executable without Gist URLs filled in.
+- **Time required**: 5-10 min to create Gist + fill URLs
+
+**Ready for immediate execution**:
+- Seedwarden contractor selection framework (40-min action to send 11 emails)
+- Stockbot June 24 validation monitoring checklist (Phase 0 at 13:15 UTC)
+
+### Critical Timeline
+
+**TODAY (June 23)**:
+1. **Before 14:00 UTC**: Create Domain 50 Gist + fill URLs (SCOTUS critical)
+2. **14:00 UTC**: SCOTUS opinion decision (Little v. Hecox / BPJ)
+3. **If decision drops**: Execute SCOTUS rapid-response (5-60 min depending on ruling)
+
+**TOMORROW (June 24)**:
+1. **13:15 UTC**: Stockbot Phase 0 pre-market health gates (user monitoring)
+2. **13:30 UTC**: Validation window opens (fully automated, user monitors via checklist)
+3. **20:00 UTC**: Post-validation analysis (orchestrator autonomously triggers)
+
+**This week**:
+1. **June 28 EOD**: Seedwarden contractor selection decision deadline (responses expected June 24-26)
+
+### Blocked Items Summary
+
+**Active Blocks (4 total)**:
+1. **resistance-research** — Domain 50 Gist not created (CRITICAL, 12h deadline)
+2. **cybersecurity-hardening** — Phase 1 VeraCrypt restart (manual Windows task)
+3. **mfg-farm** — Test print execution (manual 3D printer task)
+4. **open-repo / systems-resilience** — raspby1 platform decision (shared blocker)
+
+### Session Summary
+
+✅ **Autonomous work executed**: Exit model framework pre-staged (30 tests passing, 2 commits). Exploration Queue Item 1 complete and ready to activate June 24-26.
+
+⚠️ **Critical user action TODAY**: Create Domain 50 Gist before SCOTUS decision at 14:00 UTC (5-10 min task).
+
+**Next autonomous work trigger**: June 24 20:00 UTC post-validation analysis (once validation window completes)
+
+---
+
 ## Session 4003 Orchestrator Status (2026-06-23 01:50 UTC) — VERIFICATION + BLOCKING DEPENDENCY IDENTIFIED
 
 **Status**: ✅ **ALL AUTONOMOUS INFRASTRUCTURE COMPLETE; SCOTUS GIST BLOCKING EXECUTION**
