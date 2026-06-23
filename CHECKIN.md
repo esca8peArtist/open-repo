@@ -10,8 +10,12 @@
 1. Go to https://gist.github.com (log in as esca8peArtist)
 2. Follow 10-step guide in `projects/resistance-research/DOMAIN_50_GIST_PREP.md` (5-10 min)
 3. Copy the resulting Gist URL (format: `https://gist.github.com/esca8peArtist/abc123...`)
-4. Run: `bash projects/resistance-research/scripts/fill_domain50_gist_urls.sh "https://gist.github.com/..."`
-5. Review changes and commit
+4. **Run helper script** (created Session 4006):
+   ```bash
+   bash projects/resistance-research/scripts/fill_domain50_gist_urls.sh "https://gist.github.com/esca8peArtist/YOUR_GIST_ID"
+   ```
+   This will automatically replace all 11 placeholders and show you what changed.
+5. Review suggested changes and commit
 
 **What happens after**:
 - If Little v. Hecox/BPJ decision is announced at 14:00 UTC, the rapid-response templates are ready to send immediately
