@@ -177,13 +177,14 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - Owner: stockbot team
    - Status: **READY FOR JUNE 18 MARKET VALIDATION** — Confidence 78%+ (both fixes validated sound, known fragilities documented)
 
-8. **stockbot: Post-Deployment Monitoring Framework & Live Trading Dashboard** (3-4h)
-   - Trigger condition: stockbot deployment completes (June 22 20:00 UTC post-market close), June 24 13:30 UTC validation window begins
-   - Scope: Design comprehensive monitoring dashboard with real-time tracking of: signal generation rate (target >0 signals/min), position-size dynamics (vs. account equity %), regime detection accuracy (3-regime classification stability), daily P&L drift vs. backtest baseline (Z-score alert at ±2.0σ), max drawdown tracking (hard stop at 10%), trade round-trip metrics (time-in-position, win rate, Sharpe contribution per session)
+8. **stockbot: Post-Deployment Monitoring Framework & Live Trading Dashboard** (3-4h) ← **✅ COMPLETE (Session 4043, June 23 10:55 UTC)**
+   - ✅ Executed 10:55 UTC June 23 (orchestrator subagent execution)
+   - Deliverables: `LIVE_TRADING_DASHBOARD_SPEC.md` (8.9 KB, 6 KPIs with targets/thresholds), `MONITORING_ALERT_ROUTING.md` (7.2 KB, 6 alert rules + Discord routing), `DAILY_PNL_DRIFT_TRACKING_FRAMEWORK.md` (9.7 KB, Z-score validation + baselines locked June 1)
+   - Committed: All 3 files on master (already staged from June 22, verified committed in Session 4043)
    - Value: Enables rapid detection of signal degradation, regime shifts, or live-backtest divergence during trading; foundation for continuous June 24-30 monitoring
-   - Deliverables: `LIVE_TRADING_DASHBOARD_SPEC.md` (KPI definitions + alert thresholds), `MONITORING_ALERT_ROUTING.md` (Discord notification rules), `DAILY_P&L_DRIFT_TRACKING_FRAMEWORK.md` (statistical validation protocol)
-   - Owner: stockbot team
-   - Confidence: 85% (dashboard patterns well-established; metrics derived from Phase 4 validation framework)
+   - KPIs included: signal generation rate (>0 signals/min), position-size dynamics (5-25% equity, critical >25%), regime stability (3-regime classification), P&L drift Z-score (GREEN <2.0σ, YELLOW 2.0-3.0σ, RED >3.0σ auto-pause), max drawdown (8% session, 10% portfolio), trade round-trip metrics
+   - Configuration: 5-session deployment (JPM ridge_wf, AMZN/AAPL/MSFT/NVDA lgbm_ho)
+   - Status: **READY FOR JUNE 24 VALIDATION WINDOW** — All SQL queries, Discord templates, and Z-score formulas production-ready, copy-paste verified
 
 9. **resistance-research: Phase 3 Research Infrastructure Pre-Staging (Nov 4 start date)** (4-5h)
    - Trigger condition: Post-Wave-2 completion (June 24+), before November 4 Phase 3 start date
