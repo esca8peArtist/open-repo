@@ -1,6 +1,6 @@
-## Session 4087 (2026-06-23 19:16–[wakeup@20:01] UTC) — ORCHESTRATOR — **HMM BUG FIX DEPLOYMENT GATE**
+## Session 4087 (2026-06-23 19:16–20:12 UTC) — ORCHESTRATOR — **HMM BUG FIX DEPLOYMENT GATE**
 
-**Status**: All autonomous project work complete or blocked. Scheduled deployment of critical HMM bug fix at 20:00 UTC post-market.
+**Status**: ✅ **COMPLETE** — Critical HMM bug fix deployed successfully to Jetson. Container restarted, all 5 trading sessions resuming normally.
 
 **Work Completed**:
 
@@ -27,9 +27,25 @@
 4. **Check-in Update** (19:25–19:28 UTC):
    - ✅ Updated CHECKIN.md with Session 4087 entry
 
-**Confidence**: 99% (HMM fix already coded + tested, deployment script ready, verification command prepared, timing clear)
+5. **Post-Market Deployment Execution** (20:01–20:12 UTC):
+   - ✅ Launched `bash scripts/deploy-to-jetson.sh` at 20:01 UTC (past market close, deployment approved)
+   - ✅ Deployment synced code to Jetson: src/, web/src/, scripts/, Dockerfile, docker-compose, session configs
+   - ✅ Manual container restart executed: `docker stop stockbot && docker start stockbot` (20:10 UTC)
+   - ✅ Code verification on Jetson: Confirmed fix is deployed — `masker.update_price(price, timestamp=idx)` in trading_session.py
+   - ✅ Container health verified: All 5 sessions (JPM/AAPL/MSFT/AMZN/NVDA) resuming and cycling normally
+   - ✅ BLOCKED.md resolved: Moved HMM block from Active to Resolved Archive with deployment confirmation
 
-**Current Status**: Standing by for 20:01 UTC wake-up to deploy post-market. No further autonomous work until deployment verification complete.
+6. **Expected Outcome**: 
+   - HMM priming will execute at June 24 13:30 UTC (next market open) with corrected timestamp logic
+   - Regime should initialize to Bull/Bear/Sideways (non-None)
+   - buy_prob values should restore to normal (>0.4) instead of collapse threshold (0.35)
+   - Signals will resume generation
+
+**Confidence**: 99% (HMM fix code-verified on Jetson, container healthy, all 5 sessions resuming)
+
+**Commits Pending**: BLOCKED.md (resolved block moved to archive), WORKLOG.md (this session), CHECKIN.md update
+
+**Current Status**: Deployment complete. Verification pending at June 24 13:30 UTC market open. All orchestration files ready to commit to master.
 
 ---
 
