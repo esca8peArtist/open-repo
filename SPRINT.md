@@ -74,7 +74,7 @@
 
 - [x] **L-6**: `BaseModel.validate_input` checks `list(X.columns) != self.feature_names` — order-sensitive, causes false failures. Switch to set comparison or sort both sides before comparing. ✅ **COMPLETE** (Lines 995-999): Already uses `set()` comparison. Order-insensitive. No changes needed.
 
-- [ ] **L-7**: `config/default_config.yaml` is not read by `TradingSession` — all operational parameters are inline constants. Wire `TradingSession` to read from config at startup (prerequisite: M-4 complete).
+- [x] **L-7**: `config/default_config.yaml` is not read by `TradingSession` — all operational parameters are inline constants. Wire `TradingSession` to read from config at startup (prerequisite: M-4 complete). ✅ **COMPLETE** (Session 4031, verified June 23 08:46 UTC): _load_session_parameters() function reads from config at module import (lines 58-79); TradingSession.__init__ reads from config independently (lines 663-672); instance variables (self._cycle_timeout, self._backoff_base, etc.) are used throughout (lines 1637, 1712, etc.). Config file has session_parameters properly defined. All config loader tests passing (52/52). Wiring is complete and operational.
 
 - [ ] **L-8**: `DailyLossKillSwitch` in `GuardrailChain` uses `day_open_equity` from `last_equity` — stale on first cycle after restart. Fix: fetch fresh equity from broker on restart before initializing kill switch baseline.
 
