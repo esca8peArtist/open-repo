@@ -4,6 +4,45 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 128 — Q4 Winter Product Strategy Research Complete — June 22, 2026 (Session 4009)
+
+**Session**: 4009, June 22, 2026
+**Task**: Exploration Queue Item 14 — Q4 Winter/Holiday Medicinal Products Research. Research and draft three deliverable documents for November–December product line planning.
+
+**Status**: COMPLETE — 3 files committed, production-ready for user review.
+
+**Deliverables**:
+
+1. **Q4_WINTER_PRODUCT_STRATEGY.md** (~2,000w)
+   - 5 Q4 bundle concepts (Q4-A through Q4-E), prioritized by Phase 3 resource dependency
+   - Cross-sell strategy with all 5 Q3 bundles (seasonal stacking matrix)
+   - Revenue forecast: conservative $4,740 / base $7,610 / optimistic $12,300 for Oct 15–Dec 15
+   - Phase 3 conflict assessment — Q4-A through Q4-D cleared; Q4-E conditional on Phase 3 contractor availability
+   - Q4 pricing rationale: $26–38 range vs. Q3's $20–22 (gift market premium + seasonal urgency)
+
+2. **SEASONAL_PRICING_AND_PROMOTION_MODEL.md** (~1,100w)
+   - Q3 vs. Q4 pricing table with net/sale figures at Etsy fee structure
+   - Full promotion calendar: September pre-season setup through December 15 season close
+   - 6 Kit email templates (placeholder requirements, send dates, targeting logic)
+   - Etsy shop seasonal positioning: banner rotation, featured collections, SEO keyword strategy
+   - November–December revenue targets: base $5,710 over 8 weeks
+
+3. **Q4_MARKET_RESEARCH_SUMMARY.md** (~650w)
+   - Competitor analysis: physical kit sellers, digital repackage sellers, practitioner protocol gap
+   - Demand signals: elderberry/echinacea Oct–Nov peak; ashwagandha double-peak; valerian Oct–Nov; digestive herbs December
+   - Gift market: $12.74B US herbal supplement market; 18–22% of Nov–Dec purchases are gifts; digital guide gift market underdeveloped
+   - Holiday vs. Q3 buyer persona comparison table (motivation, price sensitivity, discovery channel, cross-sell openness)
+
+**Research sources**: Etsy Seller Handbook Fall/Winter 2025, VitaQuest Winter Supplement Trends 2025–2026, Future Market Insights immune health data, Grand View Research herbal supplements market, eRank Q4 holiday guide, Seedwarden internal competitor-landscape.md and pricing strategy.
+
+**Key findings**:
+- Q4-D Gift-Giver's Collection is the single highest-priority Q4 product: 3–4 hours of Canva work, zero new content, converts existing catalog into gift vehicle
+- Q4-A Winter Immunity Defender should launch October 8 (before Oct 15 demand window) to capture pre-season elderberry/echinacea search traffic
+- No current Etsy competitor appears to have executed deliberate seasonal bundle strategy at Seedwarden's content depth
+- $500 ad spend in Promoted Listings generates estimated 4–5x ROAS in the Q4 window based on seasonal lift differential
+
+---
+
 ## Item 127 — Phase 3 Contractor Selection Execution Framework Complete — June 22, 2026 (Session 4001 Continuation)
 
 **Session**: 4001 continuation, June 22, 2026 20:30 UTC
