@@ -12,19 +12,22 @@
 3. Copy the resulting Gist URL (format: `https://gist.github.com/esca8peArtist/abc123...`)
 4. **Run helper script** (created Session 4006):
    ```bash
-   bash projects/resistance-research/scripts/fill_domain50_gist_urls.sh "https://gist.github.com/esca8peArtist/YOUR_GIST_ID"
+   cd /home/awank/dev/SuperClaude_Framework
+   python projects/resistance-research/fill-domain-50-gist-url.py "https://gist.github.com/esca8peArtist/YOUR_GIST_ID"
    ```
-   This will automatically replace all 11 placeholders and show you what changed.
-5. Review suggested changes and commit
+   This will automatically replace all 17 placeholders across 5 files and commit to master.
+5. Done! The helper script handles everything.
 
 **What happens after**:
 - If Little v. Hecox/BPJ decision is announced at 14:00 UTC, the rapid-response templates are ready to send immediately
 - If decision is on a different case, the Gist is staged for August 1 launch window
 
-**Files with placeholders** (11 total):
-- `SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md` (5 instances)
-- `SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md` (4 instances)
-- `SCOTUS_DECISION_RAPID_RESPONSE_FLOWCHART.md` (2 instances)
+**Files with placeholders** (17 total):
+- `SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md` (4 instances)
+- `SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md` (multiple instances)
+- `DOMAIN_50_EMAIL_TEMPLATE_SET.md` (4 instances in email templates)
+- `DOMAIN_50_GIST_PREP.md` (1 instance)
+- `DISTRIBUTION_GIST_URLS.md` (auto-filled by script)
 
 ---
 
