@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-23T19:16:25Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-23T21:41:30Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 25.3% | Reset in 149h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 28.2% | Reset in 146h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,7 +19,7 @@
 ## Active Projects
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
-**Focus**: ✅ **[RESOLVED] PHASE 2 WAVE 1-2 + PHASE 3 SOURCE STAGING COMPLETE (JUNE 23 18:30 UTC)** — **PHASE 2 STATUS**: SCOTUS execution window hard-closed 18:00 UTC (user never verified outcome); all Phase 2 rapid-response infrastructure remains production-ready for retroactive execution if user posts outcome post-deadline. **Autonomous Phase 2 work**: ZERO. User action pending: (1) T+7 inbox monitoring + signal classification (June 23-25), (2) Domain 59 Tier 2 sends (EPI/Demos/NELP), (3) Domains 51/ … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED] PHASE 2 WAVE 1-2 + PHASE 3 SOURCE STAGING COMPLETE (JUNE 23 18:30 UTC)** — **PHASE 2 STATUS**: SCOTUS execution window hard-closed 18:00 UTC (user never verified outcome); all Phase 2 rapid-response infrastructure remains production-ready for retroactive execution if user posts outcome post-deadline. **Autonomous Phase 2 work**: ZERO. **User action ready**: (1) T+7 inbox monitoring + signal classification (June 23-25), (2) Domain 59 Tier 2 sends (EPI/Demos/NELP, June 25-30), ( … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
@@ -33,13 +33,6 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
-### stockbot — HMM priming timestamp bug fix ready for deployment (20:00 UTC post-market)
-**Date blocked**: 2026-06-23 19:02 UTC (Session 4086)
-**Context**: Critical HMM regime initialization failure detected in live deployment. Root cause: priming code does not pass bar timestamps to update_price(), causing all 82 historical bars to be deduplicated as the same date. Result: only 1 price fed to HMM instead of 82, regime stays None forever, signal generation suppressed. All 5 sessions affected (JPM/AAPL/MSFT/AMZN/NVDA showing regime=None + BUY_PROB_COLLAPSE alerts since June 22 13:30 UTC). Fix implemented and committed (9194e6b): pass Alpaca bar timestamp (idx from DataFrame index) to update_price() call. Deployment blocked until 20:00 UTC (market hours blackout). June 24 validation window (13:30 UTC) requires this fix to be live.
-**What I need**: Automatic deployment at 20:00 UTC (after market close Monday). Container restart will trigger session reinitialization on next cycle, HMM warmup will properly feed 82 dated bars, regime will initialize to Bull/Bear/Sideways, signals will restore to normal.
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 10m 2>&1 | grep -E 'Primed.*regime=.*[012]|mean_buy_prob.*0\.[5-9]|mean_buy_prob.*1\.0'" ` — should show regime initialized to non-None value and buy_prob > 0.4 (not collapse threshold 0.35)
-**Resolution**: [awaiting 20:00 UTC market close for deployment]
----
 ### Usage limits — weekly calibration reminder
 **Date blocked**: 2026-06-23 (auto-added each Tuesday by reset-usage-budget.sh)
 **Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
@@ -63,54 +56,62 @@
 **Resolution**: [leave blank]
 ---
 ### mfg-farm — Test print execution (user action required)
+**Date blocked**: 2026-05-13
+**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
+**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
+**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
+**Resolution**: [leave blank]
+---
+### open-repo — June 12 deployment never executed; infrastructure missing on raspby1
 
 ## Recently Resolved (last 5)
+• stockbot — HMM regime initialization NameError (undefined close_prices variable) ← 2026-06-23 21:22 UTC (Session 4092 — orchestrator autonomous fix + deploy)
 • resistance-research — SCOTUS Little v. Hecox deadline passed 18:00 UTC; outcome unverified ← 2026-06-23 18:05 UTC (Session 4084+)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
 • stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
 • Usage limits — weekly calibration reminder ← 2026-06-16 07:05 UTC (Session 3647)
-• stockbot — AAPL lgbm_ho + MSFT ridge_wf feature mismatch during walk-forward evaluation ← 2026-06-14 13:42 UTC (user decision, session 3538)
 
 ## Inbox (unprocessed)
 (none currently)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-### Root Cause Analysis (19:06–19:45 UTC)
-Investigation revealed **fatal bug in HMM priming code**:
-1. Priming fetches 82 daily bars from Alpaca (June 22 deployment)
-2. Calls `masker.update_price(price)` for each bar **WITHOUT passing timestamp**
-3. All 82 bars default to `datetime.date.today()` (same date)
-4. Deduplication logic rejects bars 2-82 as duplicates (same date as bar 1)
-5. Result: **only 1 bar fed to HMM**, not 82
-6. HMM regime detector fails silently (needs 60 bars minimum)
-7. Regime remains None forever → signals suppressed
+- Fix validation time: ~2 min
+- **Total session time**: 11 minutes (within budget)
 
-Evidence:
-- Logs show "Primed JPM: fed 82 bars, regime=None" (priming thought 82 bars were fed)
-- Logs show `len(masker._prices)` = 1 (actually only 1 bar in the detector)
-- All 5 sessions showing regime=None warnings + BUY_PROB_COLLAPSE alerts
+## Session 4094 — June 23 21:38–21:42 UTC
 
-### Fix Implemented (19:45–19:55 UTC)
-**Commit 9194e6b**: Pass Alpaca DataFrame index (bar timestamp) to `update_price()`:
-- Changed: `masker.update_price(price)` 
-- To: `masker.update_price(price, timestamp=idx)` where idx is from `bars_to_feed.iterrows()`
-- Result: Each of 82 bars retains its original date, deduplication works correctly, regime initializes properly
+**Orchestrator**: Autonomous session (no user present)
+**Duration**: ~4 minutes
 
-### Deployment Status
-- Fix committed locally ✅
-- Market hours blackout prevents deployment until 20:00 UTC (58 min wait, currently 19:02 UTC)
-- Scheduled: Deploy immediately at 20:00 UTC (after market close)
-- Validation: Container restart triggers session reinitialization, HMM warmup feeds 82 dated bars, regime initializes to Bull/Bear/Sideways, signals restore
+### Summary
+Orientation and work assessment complete. All autonomous work verified staged and ready. Orchestrator maintains standing-by posture for June 24 13:30 UTC validation window (16 hours away).
 
-### Impact Assessment
-- **Critical for June 24 validation**: Without this fix, validation window will show same regime=None + signal collapse
-- **Fix urgency**: High (58 min to deploy before market close, validated and committed)
-- **Risk**: None (only affects HMM initialization, non-blocking change)
-- **Confidence**: 99% (root cause clearly identified, fix directly addresses the issue)
+### Work Completed
+1. **Orientation** (21:38 UTC):
+   - Reviewed ORCHESTRATOR_STATE.md: HMM fix deployed, June 24 validation unblocked
+   - Checked BLOCKED.md: 5 active blocks, all require user action (mfg-farm test print, cybersecurity-hardening VeraCrypt, open-repo platform decision expired, systems-resilience platform decision expired, usage calibration)
+   - Verified INBOX.md: Empty (no new items)
+   - Verified PROJECTS.md: All projects staged appropriately
+   - Reviewed Exploration Queue: 24 items, all complete or time-gated on future events
 
-### Next Steps
-1. 20:00 UTC: Deploy fix via `bash scripts/deploy-to-jetson.sh`
-2. Container restarts, sessions reinitialize
-3. HMM warmup runs with corrected timestamps
-4. June 24 13:30 UTC validation window: regime=Bull/Bear/Sideways, signals generated normally
-5. Commit BLOCKED.md + WORKLOG.md to master
+2. **Autonomous work assessment**:
+   - **stockbot**: DEPLOYMENT LIVE, June 24 validation ready. No autonomous work (16h until validation window).
+   - **resistance-research**: Phase 2 complete. Domains 51/48 Wave 1 ready for user execution (17 min). No autonomous work.
+   - **All other projects**: Paused, blocked on user actions, or complete. No autonomous work.
+   - **Exploration Queue**: Items 1, 4, 9, 10 all blocked on future triggers. No unmet trigger conditions available.
+   - **Conclusion**: Zero autonomously-resolvable work remaining. All infrastructure verified staged and ready.
+
+3. **Status updates**:
+   - ✅ Updated CHECKIN.md with Session 4094 orientation results
+   - ✅ Verified usage nominal (usage-check.py --check returned OK)
+   - ✅ Confirmed no resolvable blocks and no new INBOX items
+   - ✅ Confirmed orchestrator posture correct (STANDING BY)
+
+### Metrics
+- Orientation time: 3 min
+- Assessment time: 1 min
+- **Total session time**: 4 minutes
+- **Autonomous work available**: ZERO (correct by design)
+
+### Orchestrator Posture
+✅ **STANDING BY** for June 24 13:30 UTC validation window. Next trigger: market open or post-market Phase 4 execution or June 25 daily check-in.
