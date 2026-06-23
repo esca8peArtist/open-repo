@@ -2,9 +2,22 @@
 
 ---
 
-## 🚨 SCOTUS DECISION TODAY — DOMAIN 50 GIST REQUIRED BY 14:00 UTC (~10 HOURS)
+## 🚨 SCOTUS DECISION TODAY — DOMAIN 50 GIST REQUIRED BY 14:00 UTC (~9 HOURS REMAINING)
 
-**Session 4007 Update (06:08 UTC)**: Helper infrastructure created. Python script ready to auto-fill Gist URLs. Pre-flight checklist created for Domain 59 Wave 2.
+**Session 4008 Orchestrator Status (2026-06-23 03:41–04:10 UTC) — DOMAIN 59 TIER 2 PREPARED, ALL SYSTEMS READY FOR CRITICAL DEADLINE**
+
+**Work Completed**:
+- ✅ Domain 59 Tier 2 Reassessment executed (agent a4fa20919d7c6a23d)
+- ✅ Wave 1-2 engagement analysis complete (2/5 MODERATE signals, CBPP forwarded to research team)
+- ✅ Tier 2 GO decision finalized (EPI/Demos/NELP cleared for June 24-25 sends)
+- ✅ DOMAIN_59_TIER2_REASSESSMENT_SUMMARY.md created (engagement breakdown + activation rationale)
+- ✅ DOMAIN_59_TIER2_SEND_TEMPLATES.md created (3 copy-paste templates, pre-filled Gist URLs, timing notes)
+- ✅ Committed: edf2c445
+
+**June 24-25 User Send Timeline** (now ready):
+1. **June 24 morning** — Verify EPI contact email (https://www.epi.org/about/contact/)
+2. **June 24** — Execute Template A (EPI), Template B (Demos, 90min after A)
+3. **June 25-30** — Execute Template C (NELP) per Senate Finance CTC deadline
 
 ---
 
