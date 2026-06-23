@@ -62,17 +62,17 @@
 
 ## Phase 3 — LOW Items
 
-- [ ] **L-1**: `trading_session.py` imports `hashlib` but only uses it for session stagger with no actual hashing. Remove unused import.
+- [x] **L-1**: `trading_session.py` imports `hashlib` but only uses it for session stagger with no actual hashing. Remove unused import. ✅ **STATUS: VERIFIED NEEDED** (Session 4031): Code uses `hashlib.md5()` for MD5 hashing (lines 2996, 3162). Legitimate fallback for OrderTracker failures. Keep import.
 
-- [ ] **L-2**: `PredictionType` has deprecated aliases that shadow enum values. Remove deprecated aliases; update all call sites.
+- [x] **L-2**: `PredictionType` has deprecated aliases that shadow enum values. Remove deprecated aliases; update all call sites. ✅ **COMPLETE** (Session 4031): Replaced all 9 usages of `PredictionType.SIGNAL` with `PredictionType.CLASSIFICATION` across 3 files (sklearn_models.py, base_model.py, deep_learning_models.py). Removed deprecated aliases (SIGNAL, PRICE, RETURN) from enum definition. Updated test assertions in test_base_model.py. All 53 model tests passing.
 
-- [ ] **L-3**: `create_target_from_returns` in `BaseModel` has `threshold=0.0` default — generates all signals as BUY/SELL with no HOLD band. Set a sensible default (e.g. 0.001) and document the intent.
+- [x] **L-3**: `create_target_from_returns` in `BaseModel` has `threshold=0.0` default — generates all signals as BUY/SELL with no HOLD band. Set a sensible default (e.g. 0.001) and document the intent. ✅ **COMPLETE** (Commit e2f50e8, June 21): Changed default from 0.0 to 0.005 (0.5%). Comprehensive documentation added explaining rationale and deployment impact.
 
-- [ ] **L-4**: `walk_forward_engine.py` uses both `import json` and `import json as _json` in same scope. Remove the duplicate.
+- [x] **L-4**: `walk_forward_engine.py` uses both `import json` and `import json as _json` in same scope. Remove the duplicate. ✅ **NOT APPLICABLE** (Session 4031): Audited all Python files — no duplicate json imports found. Codebase is clean.
 
-- [ ] **L-5**: Scattered root-level `.py` scripts with no clear ownership. Audit and move each to appropriate `scripts/` subdirectory or delete.
+- [x] **L-5**: Scattered root-level `.py` scripts with no clear ownership. Audit and move each to appropriate `scripts/` subdirectory or delete. ✅ **NOT NEEDED** (Session 4031): Only root-level .py files are stockbot.py (main launcher) and setup.py (standard package). Both legitimate. Codebase is clean.
 
-- [ ] **L-6**: `BaseModel.validate_input` checks `list(X.columns) != self.feature_names` — order-sensitive, causes false failures. Switch to set comparison or sort both sides before comparing.
+- [x] **L-6**: `BaseModel.validate_input` checks `list(X.columns) != self.feature_names` — order-sensitive, causes false failures. Switch to set comparison or sort both sides before comparing. ✅ **COMPLETE** (Lines 995-999): Already uses `set()` comparison. Order-insensitive. No changes needed.
 
 - [ ] **L-7**: `config/default_config.yaml` is not read by `TradingSession` — all operational parameters are inline constants. Wire `TradingSession` to read from config at startup (prerequisite: M-4 complete).
 
