@@ -2,6 +2,44 @@
 
 ---
 
+## Since Last Check-in (Session 4090, 2026-06-23 20:35 UTC)
+
+### ✅ **JUNE 24 DEPLOYMENT HEALTH VERIFIED — ALL SYSTEMS GO FOR VALIDATION WINDOW**
+
+**Status**: Post-deployment health verification complete. Stockbot container healthy, all 5 trading sessions cycling normally, HMM fix confirmed deployed. June 24 13:30 UTC validation window is 100% ready to execute.
+
+**What Was Done**:
+1. **Deployment health verification** (20:35 UTC):
+   - ✅ SSH to Jetson confirmed reachable: `docker ps` shows stockbot container UP 30 min (healthy)
+   - ✅ All 5 trading sessions initialized and cycling:
+     - aapl_lgbm_ho_001, msft_lgbm_ho_001, amzn_lgbm_ho_001, jpm_ridge_wf_001, nvda_lgbm_ho_001
+   - ✅ Docker logs confirm clean "Market closed — skipping cycle" messages (no initialization errors)
+   - ✅ HMM priming confirmed deployed: `masker.update_price(price, timestamp=idx)` code verified on Jetson
+   - ✅ Container restart clean at ~20:10 UTC (HMM fix deployment success)
+
+2. **June 24 pre-market readiness confirmation**:
+   - ✅ JUNE24_VALIDATION_MONITORING_CHECKLIST.md (23KB, staged June 22 20:20)
+   - ✅ JUNE24_VALIDATION_QUICK_START.md (11KB, staged June 22 20:26)
+   - ✅ VALIDATION_DAILY_SUMMARY_TEMPLATE.md (20KB, ready for 6-day logging)
+   - ✅ POST_DEPLOYMENT_MONITORING_ARCHITECTURE.md (36KB, June 22 14:44)
+   - ✅ Exploration Queue Item 5 templates verified: JUNE_24_VALIDATION_OUTCOME_REPORT.md, PHASE_4_IMMEDIATE_EXECUTION_PLAN.md, VALIDATION_SUCCESS_METRICS_CHECKLIST.md
+
+3. **Assessment**: All autonomous work complete for June 24. Only user actions remain:
+   - Pre-market (11:45 UTC June 24): Run 6 pre-market gates from checklist
+   - Market hours (13:30-20:00 UTC): Monitor per daily template, log outcomes
+   - Post-market (20:00-20:30 UTC June 24): Fill VALIDATION_OUTCOME_REPORT, execute Phase 4 decision tree
+
+**Projects Status**:
+- **stockbot**: ✅ DEPLOYMENT LIVE + HEALTHY | VALIDATION READY (13.5h away)
+- **resistance-research**: ✅ PHASE 2 COMPLETE | TIER 2 SENDS READY (June 25-30, 25-30 min user time)
+- **All others**: Paused or blocked on user actions (no change)
+
+**Confidence**: 99% (all deployment health checks passed, sessions healthy, monitoring staged, orchestrator correctly positioned)
+
+**Orchestrator Posture**: STANDING BY for June 24 13:30 UTC validation window. Zero autonomous work remaining. All infrastructure verified ready. Awaiting June 24 validation outcomes to determine Phase 4 path (Covered Calls / Inverse ETF / Earnings Drift).
+
+---
+
 ## Since Last Check-in (Session 4088, 2026-06-23 20:18–21:15 UTC)
 
 ### ✅ **EXPLORATION QUEUE ITEMS 5 & 6 COMPLETE — JUNE 24 VALIDATION & JUNE 25-30 SENDS READY**
