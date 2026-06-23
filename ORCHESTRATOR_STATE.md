@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-23T14:25:35Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-23T14:40:36Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 18.7% | Reset in 154h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 19.3% | Reset in 153h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -40,13 +40,13 @@
 **Verify with**: `bash scripts/verify-calibration.sh`
 **Resolution**: ⏳ **AWAITING USER ACTION** — Calibration last updated 2026-06-10 (13 days ago, beyond 7-day drift window). Need actual Sonnet % and All-models % from claude.ai Settings UI. Script ready to execute once percentages provided.
 ---
-### resistance-research — Domain 50 Gist deadline passed without creation (14:00 UTC June 23)
+### resistance-research — Domain 50 Gist deadline passed; Little v. Hecox decision issued (14:00 UTC June 23)
 **Date blocked**: 2026-06-23 01:50 UTC
 **Date deadline passed**: 2026-06-23 14:00:25 UTC (Session 4060)
-**Context**: SCOTUS opinion session occurred June 23, 2026 at 10:00 AM ET (14:00 UTC). Domain 50 Gist was NOT created by deadline (verified 14:00:25 UTC Session 4060 — 19 unfilled `[INSERT GIST URL HERE]` placeholders remain). Rapid-response framework is complete and staged (4 files: SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md, etc.), but cannot execute without Domain 50 Gist URL. SCOTUS decision outcome is being posted now; if favorable for plaintiffs, rapid-response sends could still execute same-day if Gist is created within next 4-6 hours (14:00-20:00 UTC window still open).
-**What I need**: (1) **User creates Domain 50 Gist** (5-10 min): Log into github.com as esca8peArtist, go to gist.github.com, create new secret gist with `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md` contents (11,200 words, 87 citations), filename `domain-50-lgbtq-rights-voting-suppression.md`, description "Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure — Research Brief, June 2026". (2) **User fills Gist URL** into SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md + SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md + SCOTUS_CONTACT_ACTIVATION_ORDER.md (replace 19 `[INSERT GIST URL HERE]` placeholders). (3) **User executes rapid-response** if SCOTUS decision is favorable (before 18:00 UTC opinion session closes). Detailed instructions in `DOMAIN_50_GIST_PREP.md`.
-**Verify with**: `grep -r "INSERT GIST URL" /home/awank/dev/SuperClaude_Framework/projects/resistance-research/ | wc -l` should return 0 (no placeholders remaining)
-**Resolution**: ⏳ **DEADLINE PASSED — STILL ACTIONABLE** — Domain 50 Gist deadline missed, but rapid-response window remains open (14:00-18:00 UTC, 4h remaining). If user creates Gist + SCOTUS decision favorable, rapid-response can execute immediately. Orchestrator monitoring for SCOTUS decision outcome + potential same-day Gist creation.
+**Status (Session 4062, 14:32 UTC)**: SCOTUS Little v. Hecox / B.P.J. opinion released 14:00 UTC. Decision now public. Domain 50 Gist still not created (19 `[INSERT GIST URL HERE]` placeholders remain). Rapid-response infrastructure production-ready: all 4 orchestration files staged with copy-paste email templates, contact lists, and send sequence. **Critical path**: (1) User creates Gist (~5 min), (2) User fills URL placeholders in 3 action guides (~3 min), (3) If decision favorable for plaintiffs, execute Tier 1 rapid-response sends to Lambda Legal + AT4E + NCTE (~10 min), then Tier 2 batch to 12 organizations (~15-20 min). **Window open until ~18:00 UTC (3.5 hours remaining).**
+**What I need**: (1) **URGENT — User creates Domain 50 Gist** (5-10 min): Log into github.com as esca8peArtist → gist.github.com → create secret gist with `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md` contents (11,200 words, 86 citations), filename `domain-50-lgbtq-rights-voting-suppression.md`, description "Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure — Research Brief, June 2026". (2) **User fills Gist URL** into SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md + SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md + SCOTUS_CONTACT_ACTIVATION_ORDER.md (replace all 19 `[INSERT GIST URL HERE]` placeholders with actual Gist URL). (3) **If SCOTUS decision is favorable for trans athlete plaintiffs**: Execute rapid-response immediately using pre-filled copy-paste templates. **Detailed instructions**: DOMAIN_50_GIST_PREP.md (2-step guide); SCOTUS_DECISION_RAPID_RESPONSE_FLOWCHART.md (decision→action logic).
+**Verify with**: `grep -r "INSERT GIST URL" /home/awank/dev/SuperClaude_Framework/projects/resistance-research/ | wc -l` should return 0
+**Resolution**: ⏳ **DECISION ISSUED — RAPID-RESPONSE EXECUTION WINDOW ACTIVE (3.5h remaining)** — Little v. Hecox decision now public (issued 14:00 UTC). Domain 50 Gist deadline missed but execution window remains open until ~18:00 UTC. All rapid-response infrastructure production-ready. Orchestrator standing by for user Gist creation + outcome verification.
 ---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
