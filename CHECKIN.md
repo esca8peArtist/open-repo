@@ -2,6 +2,37 @@
 
 ---
 
+## ✅ Session 4033 (2026-06-23 09:05–09:40 UTC) — SPRINT 3 PHASE 3 ALL ITEMS COMPLETE (L-8 IMPLEMENTED)
+
+**STATUS**: ✅ **SPRINT 3 PHASE 3 COMPLETE** — All 8 LOW items done, all 39 total Sprint items done — **🚨 CRITICAL: Domain 50 Gist deadline 14:00 UTC (≈4h 45m remaining)**
+
+**This Session Summary**:
+- ✅ **Sprint 3 Phase 3 L-8 IMPLEMENTATION**: DailyLossKillSwitch baseline now initialized with fresh broker equity on startup/restart
+  - **Problem**: Kill switch could use stale equity on first order validation after container restart
+  - **Solution**: Added `_init_daily_loss_baseline()` that fetches current equity from broker at __init__ time
+  - **Fallback**: If broker unreachable at init, continues gracefully (baseline re-captured on first cycle)
+  - **Test Control**: Strategy_params flag `skip_baseline_init=True` allows tests to bypass auto-init
+- ✅ **Test Results**: All 125 relevant tests passing
+  - 93 guardrails tests passing (full suite)
+  - 32 trading session tests passing (full suite)
+  - 6 baseline refresh tests passing (includes restart scenario)
+  - 5 kill switch baseline tests passing
+- ✅ **SPRINT.md Updated**: Marked L-8 as [x] complete
+- ✅ **Committed**: commit 9669048d (L-8 implementation complete)
+
+**Next Autonomous Windows**:
+- **14:00 UTC TODAY** — Domain 50 Gist deadline (user creates Gist + fills template URLs, 15 min); if SCOTUS Little v. Hecox decides FOR plaintiff, rapid-response templates auto-execute
+- **June 24 13:30 UTC** — stockbot validation monitoring window (monitoring only, no autonomous work)
+
+**Session Outcome**:
+- ✅ L-8 fully implemented and tested
+- ✅ Sprint 3 Phase 3 100% complete (8/8 LOW items done)
+- ✅ Overall Sprint 3 100% complete (39/39 items done)
+- ✅ WORKLOG and SPRINT files updated
+- ✅ Session time: ~35 minutes
+
+---
+
 ## ✅ Session 4032 (2026-06-23 08:46–09:05 UTC) — SPRINT 3 PHASE 3 L-7 VERIFIED COMPLETE, STANDING BY FOR DOMAIN 50 DEADLINE
 
 **STATUS**: ✅ **SPRINT 3 PHASE 3 L-7 VERIFIED COMPLETE** — Config wiring fully operational — **🚨 CRITICAL: Domain 50 Gist deadline 14:00 UTC (≈5h remaining)**
