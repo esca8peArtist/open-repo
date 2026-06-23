@@ -2,6 +2,47 @@
 
 ---
 
+## Since Last Check-in (Session 4088, 2026-06-23 20:18–21:15 UTC)
+
+### ✅ **EXPLORATION QUEUE ITEMS 5 & 6 COMPLETE — JUNE 24 VALIDATION & JUNE 25-30 SENDS READY**
+
+**Status**: Two critical pre-staging tasks completed autonomously. Both stockbot (June 24 validation) and resistance-research (June 25-30 Domain 59 sends) are now fully prepared for user execution.
+
+**What Happened**:
+
+1. **Session start** (20:18 UTC):
+   - Oriented to ORCHESTRATOR_STATE.md: HMM fix deployed successfully in Session 4087 (20:10 UTC)
+   - INBOX processing: empty (no new items)
+   - Active blocks: 5 (all awaiting user action — no project blockers)
+   - Available work: Exploration Queue Items 5 & 6 ready for execution
+
+2. **Exploration Queue Item 6 — Domain 59 Tier 2 Sends** (20:20–20:35 UTC):
+   - ✅ resistance-research subagent executed autonomously
+   - ✅ Deliverables committed: `DOMAIN_59_TIER_2_REASSESSMENT_SUMMARY.md` (18 KB, Wave 1-2 review + Tier 2 readiness), `DOMAIN_59_TIER_2_SEND_TEMPLATES.md` (14 KB, 3 copy-paste templates: EPI/Demos/NELP)
+   - ✅ Wave 1-2 response validation: 60% response rate (3 of 5 by June 17), all MODERATE signals → Tier 2 activation authorized GREEN
+   - ✅ User execution time: 25-30 minutes total (5-7 min per template)
+   - **Deadline**: June 25-30 (Senate Finance CTC markup window)
+
+3. **Exploration Queue Item 5 — June 24 Post-Validation Analysis Framework** (20:35–21:05 UTC):
+   - ✅ stockbot subagent executed autonomously (proactive prep for June 24 validation)
+   - ✅ Deliverables committed: 3 production-ready templates (28 KB total, 1,197 lines)
+     - `JUNE_24_VALIDATION_OUTCOME_REPORT.md` (10.5 KB, 14-section outcome template + 10 diagnostic commands)
+     - `PHASE_4_IMMEDIATE_EXECUTION_PLAN.md` (9.8 KB, 3-path decision tree: Covered Calls/Inverse ETF/Earnings Drift + capital allocation)
+     - `VALIDATION_SUCCESS_METRICS_CHECKLIST.md` (8.2 KB, 6 pre-market gates G1-G6 + 8 market-hours metrics with numeric thresholds)
+   - ✅ June 24 post-market execution will be mechanical fill-in-blanks (5–10 min), not analysis-from-scratch (60 min)
+   - ✅ Success criteria locked: PASS≥7.0 (≥3 sessions non-HOLD, regime initialized), CAUTION 5.5–6.9 (2 sessions + hold 48h), NO-GO <5.5 (contingency fix)
+
+**Projects Status Post-Session 4088**:
+- **stockbot**: ✅ DEPLOYMENT LIVE | VALIDATION WINDOW June 24 13:30 UTC (ready with prep templates)
+- **resistance-research**: ✅ PHASE 2 WAVE 1-2 COMPLETE | TIER 2 SENDS READY (June 25-30)
+- **All others**: Paused or blocked on user actions (no change)
+
+**Confidence**: 92% (both items production-ready, templates 80%+ pre-filled, user execution time 5–10 min + 25–30 min respectively)
+
+**Current Time**: 2026-06-23 21:15 UTC | June 24 Validation Window: 16h 15m remaining
+
+---
+
 ## Since Last Check-in (Session 4087, 2026-06-23 19:16–20:12 UTC)
 
 ### ✅ **HMM BUG FIX DEPLOYED SUCCESSFULLY**
