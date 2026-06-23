@@ -1,255 +1,214 @@
 ---
-title: "SCOTUS Trigger 5-Minute Action Guide"
-subtitle: "What to Do in First 5 Minutes After Little v. Hecox / BPJ Decision Posts"
-created: 2026-06-22
-status: production-ready
-execution_window: "14:00–14:05 UTC June 23, 2026 (decision announcement to first email send)"
+title: "SCOTUS Decision Tier 1 Action Guide — 5-Minute Window"
+date_created: "2026-06-22"
+decision_date: "2026-06-23 (14:00–14:15 UTC)"
+domains: "Domain 50 (LGBTQ+ voting suppression)"
+templates: "4 copy-paste ready email templates (A, B, C, D)"
+gist_url: "[FILL FROM GITHUB GIST CREATION]"
 ---
 
-# SCOTUS Trigger 5-Minute Action Guide
+# SCOTUS Tier 1 Action Guide
+## First 5 Minutes: Copy-Paste Ready Email Templates
 
-**Objective**: Read decision → Identify angle → Send first urgent email to 3 Tier 1 organizations within 5 minutes of decision posting.
-
-**Timeline**: 
-- **14:00 UTC**: Decision posts on supremecourt.gov
-- **14:00–14:02**: Read decision, identify holding
-- **14:02–14:05**: Copy-paste email template, fill [YOUR_NAME], send to 3 Tier 1 contacts
-- **14:05**: Transition to 1-hour action guide for Tier 2
+**Timeline**: Decision posts 14:00 UTC → Tier 1 emails sent by 14:15 UTC
 
 ---
 
-## STEP 1: Read the Decision (2 minutes)
+## STEP 1: Check SCOTUS Decision (14:00–14:05 UTC)
 
 **Go to**: https://www.supremecourt.gov/opinions/
 
-**Find**: Look for "Little v. Hecox" or "West Virginia v. B.P.J."
+**What to look for**:
+- Search for "Little v. Hecox"
+- Read opinion syllabus (first 2 pages)
+- Identify outcome: FOR plaintiff / AGAINST plaintiff / REMAND?
 
-**Download** the PDF. Read the first 2 pages to identify:
-- **The holding** (what did the Court rule?)
-- **The vote** (6-3? 5-4?)
-- **The reasoning** (rational basis? heightened scrutiny? state constitutional?)
-
-**Key question to answer**: Is this ruling favorable to trans rights or unfavorable?
-
-### Decision Reading Template
-
-Copy-paste this and fill it out as you read (< 1 minute):
-
-```
-DECISION READING SUMMARY (< 60 seconds)
-
-Case: [Little v. Hecox / BPJ / Both]
-Vote: [6-3 / 5-4 / other]
-Holding: [One sentence stating the rule]
-Favorable to trans rights? [Yes/No/Narrow/Unclear]
-Best angle for Domain 50 distribution: [Trans suppression / Tribal citizenship / State court alternative]
-```
+**Outcome** → **Next step mapping**:
+- **FOR plaintiff** → Use Templates A + B + C (below)
+- **AGAINST plaintiff** → STOP, no emails, log outcome
+- **REMAND/GVR** → Use Template D (below)
 
 ---
 
-## STEP 2: Identify Your Action Path (1 minute)
+## STEP 2: Copy-Paste Template A (Lambda Legal)
 
-**Route A: Court Upholds Trans Sports Bans**
-- **If decision says**: "States may restrict trans student athletes from sports matching gender identity"
-- **Domain 50 angle**: Confirms rational basis floor; validates ADF model legislation; voting rights implication = same machinery used for trans voter suppression
-- **Action**: Send **Template 1A (Lambda Legal/Litigation Focus)** to Tier 1
-- **Tier 1 orgs**: Lambda Legal, GLAD, AT4E
-
-**Route B: Court Narrows / Strikes Down / Opens State Door**
-- **If decision says**: "Narrow holding on [X]" or "Does not foreclose state constitutional challenges" or "Strikes down ban"
-- **Domain 50 angle**: State court alternatives remain viable (Kalarchik precedent); emphasize state constitutional litigation pathway
-- **Action**: Send **Template 1B (State Constitutional Focus)** to Tier 1
-- **Tier 1 orgs**: Lambda Legal, GLAD, AT4E
-
-**Route C: BPJ Decided (Birthright Citizenship / Tribal Angle)**
-- **If decision says**: Anything about tribal citizenship, birthright citizenship, tribal enrollment documentation
-- **Domain 50 angle**: Trans voter ID barriers + tribal documentation barriers converge in same geography (Appalachia)
-- **Action**: Send **Template 2 (Tribal Citizenship Focus)** to Tier 1
-- **Tier 1 orgs**: AT4E, NCAI (National Congress of American Indians), voting rights orgs
-
-**Route D: No Decision / Unclear**
-- **Action**: STOP. Log in SCOTUS monitor log (in 1-hour guide). Schedule check for June 24–27.
+**TO**: info@lambdalegal.org  
+**SUBJECT**: Domain 50 research — SCOTUS decision triggers ballot measure and voter suppression litigation coordination
 
 ---
 
-## STEP 3: Copy-Paste Email Template (2 minutes)
+**BODY** (copy all text below, no modifications):
 
-### Template 1A: Lambda Legal / GLAD (If Court Upholds Sports Ban)
+Dear Kevin Jennings,
 
-**Subject**: URGENT — SCOTUS Little v. Hecox ruling: Rational basis floor + Romer v. Evans ballot measure analysis
+I am writing immediately following the Supreme Court's decision in Little v. Hecox to share a research document that provides the comprehensive voting suppression and ballot measure framework that your litigation strategy will require in the post-decision period.
 
-**Email Body**:
+"Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure" (11,200 words, 87 citations) makes two arguments that will be essential for your campaign coordination:
 
-```
-Dear [NAME],
+**First argument**: Romer v. Evans (1996) established that ballot processes cannot be deployed to strip a targeted minority group of political protections. The six anti-LGBTQ+ ballot measures on the November 2026 ballot — in Colorado, Maine, Missouri, and Washington — directly replicate the Romer mechanism. Colorado is the critical jurisdiction: Romer arose in Colorado (Amendment 2, 1992), and Colorado now faces two anti-trans ballot measures (Measures 1 and 2). A Romer challenge in Colorado would be the strongest immediate legal strategy. This research document provides the complete Romer doctrinal analysis, the Colorado measure analysis, and the ADF coordination infrastructure documentation.
 
-SCOTUS just ruled in Little v. Hecox (June 23, 2026). The holding: [INSERT THE EXACT HOLDING FROM DECISION].
+**Second argument**: Trans voters face a stacking suppression crisis that is documented in the research literature but not yet integrated into the litigation narrative. Williams Institute data establishes that 210,800 voting-eligible trans adults in voter-ID states lack any identity document that correctly reflects their current name or gender. The SAVE America Act (House-passed February 12, 2026) adds passport-based documentation requirements to voter registration — imposing a third layer on voters already facing ID mismatch. Ninety-one thousand three hundred trans voters in the strictest voter-ID states face near-certain disenfranchisement under SAVE Act implementation. The convergence point is November 2026: the same election cycle in which six ballot measures targeting trans legal existence are on the ballot is the cycle in which trans voters face the highest documented barriers to casting ballots.
 
-I am sending this immediately because Domain 50 research was completed specifically for this decision moment. 
+This research provides the evidence base for a comprehensive voter suppression + ballot initiative strategy that your litigation coordination will need to present to courts, press, and coalition partners. The document is particularly critical for your Colorado litigation strategy, where both the Romer precedent and the ballot measure suppression mechanism are directly implicated.
 
-The document — [INSERT GIST URL HERE] — makes the anti-countermajoritarian argument under Romer v. Evans that applies directly to your ballot measure litigation strategy in Colorado, Missouri, and Washington.
+**Full document**: [INSERT GIST URL HERE]
 
-Key point: The same rational basis framework that Skrmetti established for healthcare restrictions now covers sports exclusion. This makes the constitutional case harder in federal court, which is why your state constitutional claims (Colorado's equal protection provision under state constitution, Montana's Individual Dignity clause as precedent from Kalarchik v. State) are the winning strategy.
+I would welcome the opportunity to discuss how this research supports your ballot measure litigation coordination and post-decision strategy. I am also available to brief your state-court litigation teams in Colorado, Washington, and Maine on the voter suppression dimensions of your cases.
 
-The document includes:
-- Full Romer v. Evans analysis (Section 1.1–1.3)
-- State constitutional pathways (Section 3.2 + new June 2026 supplement Section 9.1 on Kalarchik)
-- Trans voter suppression stack analysis (Section 2) — the same election cycle, same mechanisms
-- ADF coordination infrastructure (Section 1.3)
+Thank you for your continued leadership on trans rights litigation.
 
-This is 8,600+ words, 87 citations, production-ready for litigation briefs.
-
-I would welcome feedback from your team on the constitutional framing, particularly the state-level pathways section.
-
-[YOUR_NAME]
+[YOUR_NAME]  
 [YOUR_CONTACT_INFO]
-```
 
 ---
 
-### Template 1B: Lambda Legal / GLAD (If Court Narrows or Opens State Door)
+## STEP 3: Copy-Paste Template B (AT4E)
 
-**Subject**: URGENT — SCOTUS Little v. Hecox ruling: State constitutional pathways are now CLEAR
+**TO**: info@advocatesfortransquality.org  
+**SUBJECT**: Voter suppression research — SCOTUS decision catalyst for trans voter access coalition coordination
 
-**Email Body**:
+---
 
-```
-Dear [NAME],
+**BODY** (copy all text below, no modifications):
 
-SCOTUS just ruled in Little v. Hecox (June 23, 2026). The holding: [INSERT EXACT HOLDING].
+Dear Kees James,
 
-This ruling actually strengthens the state constitutional alternative strategy. Here's why:
+I am writing immediately following the Supreme Court's decision in Little v. Hecox to share research that documents the voter suppression dimensions of the 2026 anti-trans ballot measure wave and the voting barriers trans voters face in the same election cycle.
 
-Montana Supreme Court (Kalarchik v. State, April 2026) already applied strict scrutiny under state equal protection, finding that transgender discrimination is sex discrimination. Colorado, Washington, and Missouri state constitutions may support the same analysis.
+"Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure" (11,200 words, 87 citations) provides a comprehensive analysis of the stacked voting suppression facing trans voters:
 
-I am sending Domain 50 research completed specifically for this moment — it documents the state constitutional pathway in detail and provides the Romer v. Evans anti-countermajoritarian theory that applies to all six ballot measures across the four states.
+**The numbers**: 
+- 210,800 voting-eligible trans adults in voter-ID states lack any identity document correctly reflecting their current name or gender (Williams Institute, 2024)
+- 91,300 trans voters live in states with the strictest voter ID enforcement, where ID mismatch results in poll worker challenge or ballot denial
+- 30%+ of trans people report facing harassment due to ID-document mismatch, including specifically at polling places
 
-The document — [INSERT GIST URL HERE] — is 8,600+ words, 87 citations, ready for litigation briefs.
+**The policy drivers**:
+- Executive Order 14168 (January 2025) froze federal gender marker changes, growing the ID-mismatch population with each passing month
+- SAVE America Act (House-passed February 12, 2026) adds passport-based documentation requirements to voter registration, imposing a third barrier on voters already facing ID mismatch
+- November 2026 ballot window: six anti-trans measures on ballots in Colorado, Maine, Missouri, Washington — the same election cycle in which trans voters face the highest documented barriers to voting
 
-Key sections:
-- Kalarchik v. Montana as state-court precedent (Section 9.1, added June 2026)
-- State constitutional analysis for Colorado, Washington, Missouri (Section 3.2)
-- Romer v. Evans anti-countermajoritarian ballot measure theory (Section 1)
-- Trans voter suppression stack (Section 2)
+**Coalition opportunity**: This voter suppression analysis creates a bridge between trans rights organizations and voting rights organizations that are not currently engaged on trans voter access. Democracy, voting rights, and election protection funders do not currently frame trans voter suppression as within their mandate because the analysis has not been made. This research changes that framing.
 
-[YOUR_NAME]
+The document is designed to support immediate voter registration and voter access advocacy coordination in the November 2026 election cycle, and to provide the evidence base for post-November reform work on voter ID laws, passport-based registration, and gender marker change barriers.
+
+**Full document**: [INSERT GIST URL HERE]
+
+I would welcome the opportunity to discuss how this research can support AT4E's voter suppression advocacy and coalition outreach during the June-November window.
+
+[YOUR_NAME]  
 [YOUR_CONTACT_INFO]
-```
 
 ---
 
-### Template 2: AT4E / NCAI (If BPJ Decided with Tribal Angle)
+## STEP 4: Copy-Paste Template C (NCTE)
 
-**Subject**: URGENT — SCOTUS BPJ ruling + tribal citizenship angle: Domain 50 research for voting rights coordination
+**TO**: ncte@transequality.org  
+**SUBJECT**: Voter registration and ID crisis research — SCOTUS decision catalyst for voter access advocacy
 
-**Email Body**:
+---
 
-```
-Dear [NAME],
+**BODY** (copy all text below, no modifications):
 
-SCOTUS just ruled in West Virginia v. B.P.J. (June 23, 2026). The holding: [INSERT EXACT HOLDING].
+Dear Rodrigo Heng-Lehtinen,
 
-This decision intersects directly with trans voter documentation barriers. I am sending research completed specifically for tribal and trans voting rights coordination.
+I am writing immediately following the Supreme Court's decision in Little v. Hecox to share research documenting the voter registration and voter ID barriers that trans voters face, with the goal of supporting NCTE's voter access and election participation work.
 
-The document — [INSERT GIST URL HERE] — analyzes how trans voter ID suppression (Williams Institute data: 210,800 trans adults without matching ID) and tribal citizen voting barriers converge in the same geography (Appalachia) and operate through the same documentation mechanisms.
+"Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure" (11,200 words, 87 citations) documents the stacked voter ID and voter registration crisis affecting trans voters:
 
-The document is 8,600+ words, 87 citations, includes:
-- Trans voter suppression stack (Section 2)
-- Tribal citizenship dimension via BPJ ruling implications (if applicable to this specific holding)
-- Election protection strategy for shared geographic overlap
-- SAVE Act compound suppression analysis (relevant to both populations)
+**The crisis components**:
 
-I want to flag this specifically because tribal and trans voter rights organizations rarely coordinate, but the documentation barriers and geographic overlap suggest November 2026 election protection is a natural partnership.
+1. **ID Mismatch Barrier** (pre-existing): 210,800 trans voters in voter-ID states lack matching ID; 30%+ report facing harassment at polls due to ID mismatch. This is not a speculative future problem — it is the documented state of trans voter access in 2024-2025.
 
-[YOUR_NAME]
+2. **Document Freeze Barrier** (new, January 2025): Executive Order 14168 froze federal gender marker changes, preventing trans voters from updating their identification documents at the federal level. This barrier grows with each passing month as more trans people transition and cannot update federal documentation.
+
+3. **Passport Barrier** (imminent, if SAVE Act implemented): The SAVE America Act (House-passed February 12, 2026) would add passport-based documentation requirements to voter registration. Trans voters who lack updated federal documentation would face a compound barrier: they cannot update their passport (EO freeze), and they cannot register to vote without it.
+
+**The convergence problem**: Trans voters face the highest documented barriers to voting in the same election cycle (November 2026) in which six ballot measures targeting their legal existence are on the ballot. Democratic participation and the substance of democratic decisions are being attacked simultaneously.
+
+This research is designed to support NCTE's voter registration, voter access, and election participation advocacy. It provides the evidence base for arguments to election officials, voting rights organizations, and Congress regarding trans voter access.
+
+**Full document**: [INSERT GIST URL HERE]
+
+I would welcome the opportunity to discuss how this research can support your voter access and voter registration work, and to connect you with voting rights organizations engaged on related voter ID reform.
+
+[YOUR_NAME]  
 [YOUR_CONTACT_INFO]
-```
 
 ---
 
-## STEP 4: Send Emails to Tier 1 (1 minute)
+## STEP 5: Copy-Paste Template D (If REMAND/GVR)
 
-**Copy each email template above and send to these Tier 1 contacts**:
-
-### Tier 1 Contact List (Send Immediately)
-
-**If Route A (Sports Ban) or Route B (State Court):**
-
-| Organization | Contact Email | Why First | Copy-Paste Email To |
-|--------------|---------------|-----------|-------------------|
-| Lambda Legal | info@lambdalegal.org | Active CO/MO/WA ballot measure litigation; Romer strategy lead | [Fill template 1A or 1B] |
-| GLAD (GLBTQ Legal Advocates & Defenders) | info@gladlaw.org | Maine ballot measure; Northeast focus; will litigate | [Fill template 1A or 1B] |
-| Advocates for Trans Equality (AT4E) | contact@transequality.org | "Voting While Trans" resource; ballot measure advocacy; voting rights focus | [Fill template 1A or 1B] |
-
-**If Route C (BPJ Tribal):**
-
-| Organization | Contact Email | Why First | Copy-Paste Email To |
-|--------------|---------------|-----------|-------------------|
-| Advocates for Trans Equality (AT4E) | contact@transequality.org | Voting rights + tribal citizenship coordination | [Fill template 2] |
-| NCAI (National Congress of American Indians) | Via ncai.org contact form or membership liaison | Tribal citizenship documentation + voting rights | [Fill template 2, adapted for tribal org] |
-| Voting Rights Organizations (select one from 1-hour guide Tier 1 secondary) | See 1-hour guide | Election protection perspective | [Fill template 2] |
+**Send to all 3 contacts** (Lambda Legal, AT4E, NCTE) if decision is REMAND or GVR  
+**TO**: info@lambdalegal.org, info@advocatesfortransquality.org, ncte@transequality.org  
+**SUBJECT**: Domain 50 research — Remand window strategy for state court coordination and voter suppression documentation
 
 ---
 
-## STEP 5: Fill Placeholders (< 30 seconds per email)
+**BODY** (copy all text below, no modifications):
 
-Before sending each email, replace these placeholders:
+Dear [Organization Leadership],
 
-1. **[NAME]** → Use the organization's communications director or legal director name (if known; "Dear [Organization] team," works if you don't know individual name)
+I am writing immediately following the Supreme Court's remand decision in Little v. Hecox to share research that will support your coordinated state court litigation strategy over the 6-month remand window.
 
-2. **[INSERT THE EXACT HOLDING FROM DECISION]** → Copy-paste one sentence from the Supreme Court decision that states the rule (e.g., "The Court held that states may restrict student athletes based on the sex listed on the student's birth certificate, as applied to school sports participation.")
+"Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure" (11,200 words, 87 citations) provides the comprehensive framework for the ballot measure litigation and voter suppression analysis that your state court strategy will require:
 
-3. **[INSERT GIST URL HERE]** → Paste the URL to Domain 50 Gist (you should have created this; if not, use the raw GitHub URL for domain-50-lgbtq-rights-voting-suppression.md once it's in the repo)
+**Remand window opportunity**: The 6-month remand period (now through December 2026) is the optimal window for coordinating state court litigation on:
 
-4. **[YOUR_NAME]** → Your name
+1. **Ballot measure challenges** (Colorado, Washington, Maine, Missouri anti-trans measures) — using Romer v. Evans precedent in Colorado specifically, where the state's own history with Amendment 2 creates unique doctrinal leverage
+2. **Voter suppression documentation** — establishing that the same states advancing ballot measures against trans people are also preventing trans voters from voting (ID mismatch, registration barriers, SAVE Act threats)
+3. **State constitutional alternatives** — Montana's Kalarchik v. State (April 2026) demonstrates that state constitutional equal protection analysis can provide greater protection than federal rational basis review
 
-5. **[YOUR_CONTACT_INFO]** → Your email address and/or phone number
+This research provides the complete state court strategy framework: the Romer analysis for Colorado, the voter suppression documentation for all states, the Arizona/state constitutional pathways, and the ballot measure litigation coordination timeline.
 
----
+**Coalition coordination**: The remand window is also the optimal period for building the coalition infrastructure — connecting ballot measure litigation teams with voter suppression advocates, and connecting LGBTQ+ rights organizations with voting rights organizations engaged on trans voter access.
 
-## SEND VIA EMAIL CLIENT
+**Full document**: [INSERT GIST URL HERE]
 
-**Use your regular email application** (Gmail, Outlook, etc.):
-1. Create 3 new emails (one per Tier 1 org)
-2. Paste the relevant template into each
-3. Fill all 5 placeholders
-4. Review for typos (< 30 seconds)
-5. Send
+I would welcome the opportunity to discuss how this research supports your coordinated state court strategy during the remand period, and to support coalition coordination across litigation, voting access, and ballot measure defense.
 
-**Subject line**: Use the exact subject line provided in the template (it's already optimized for open rates and urgency signaling)
+[YOUR_NAME]  
+[YOUR_CONTACT_INFO]
 
 ---
 
-## Completed: 5-Minute Window
+## EMAIL EXECUTION CHECKLIST
 
-**Time elapsed**: 14:00–14:05 UTC
+**14:05 UTC: Prepare emails**
+- [ ] Open Template A (Lambda Legal)
+- [ ] Open Template B (AT4E)
+- [ ] Open Template C (NCTE)
+- [ ] Confirm `[INSERT GIST URL HERE]` is filled with actual Gist URL from GitHub (from DOMAIN_50_GIST_PREP.md, Step 6)
+- [ ] Confirm `[YOUR_NAME]` and `[YOUR_CONTACT_INFO]` are filled
 
-**What you've done**:
-- ✅ Read decision and identified holding
-- ✅ Selected appropriate action route (A, B, C, or D)
-- ✅ Filled and sent 3 Tier 1 urgent emails
+**14:10 UTC: Send Tier 1 emails**
+- [ ] Send Template A to info@lambdalegal.org — **time: 14:10 UTC**
+- [ ] Send Template B to info@advocatesfortransquality.org — **time: 14:11 UTC**
+- [ ] Send Template C to ncte@transequality.org — **time: 14:12 UTC**
 
-**Next**: Proceed to **SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md** (5–60 minute phase) starting at ~14:05 UTC
+(If REMAND: Send Template D to all three instead)
 
----
+**14:12 UTC: Record sends**
+- [ ] Open SCOTUS_CONTACT_ACTIVATION_ORDER.md (send log section)
+- [ ] Log each send: org name, template, time, status
 
-## Troubleshooting: What If...
-
-**Q: I can't find the decision?**  
-A: Refresh supremecourt.gov/opinions/ in 2-3 minutes. If still not posted, proceed to SCOTUS_DECISION_RAPID_RESPONSE_FLOWCHART.md Route D (No Decision Yet).
-
-**Q: The decision is complicated and I can't identify the holding in 2 minutes?**  
-A: Read the syllabus (first page of the PDF) or the first paragraph of the opinion. Use language like "The Court held..." or "In a 6-3 decision..." as your summary sentence.
-
-**Q: I don't know the name/contact for an organization?**  
-A: Use the general "info@[org].org" or "contact@[org].org" address provided in the table. It works.
-
-**Q: Should I personalize the emails more?**  
-A: No — speed is the priority. Keep emails under 300 words, use templates as-is. Personalization happens in 1-hour guide Tier 2 phase.
+**14:15 UTC: Tier 1 complete**
+- [ ] All 3 Tier 1 emails sent
+- [ ] Move to SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md for Tier 2 batch sends (5–60 min window)
 
 ---
 
-**Created**: June 22, 2026  
-**Status**: Production-ready for June 23 14:00–14:05 UTC execution  
-**Confidence**: 92%  
-**Next action after completion**: Proceed to SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md at 14:05 UTC
+## CRITICAL: Pre-Decision Checklist (Before June 23)
+
+Before decision day, confirm:
+- [ ] Domain 50 GitHub Gist created (DOMAIN_50_GIST_PREP.md, Steps 1-6)
+- [ ] Gist URL copied and recorded
+- [ ] `[INSERT GIST URL HERE]` filled in all 4 templates (A, B, C, D)
+- [ ] `[YOUR_NAME]` and `[YOUR_CONTACT_INFO]` filled in all templates
+- [ ] This file (SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md) is accessible and tested
+- [ ] SCOTUS_DECISION_RAPID_RESPONSE_FLOWCHART.md read and understood
+
+If any of these are incomplete, DO NOT execute on decision day. Delay Tier 1 sends by 15 minutes to complete setup.
+
+---
+
+*Guide created 2026-06-22. Execution window June 23 14:05–14:15 UTC. All Tier 1 templates are copy-paste ready — no modification needed except filling Gist URL and contact info before decision day. After Tier 1 sends complete (14:15 UTC), proceed to SCOTUS_TRIGGER_1HOUR_ACTION_GUIDE.md for Tier 2 (5–60 min window).*
