@@ -1,5 +1,46 @@
 # Check-in Summary
 
+## 🚨 CRITICAL — SCOTUS Gist Deadline TODAY 14:00 UTC
+
+**Current time**: 2026-06-23 02:24 UTC  
+**SCOTUS decision time**: 2026-06-23 10:00 AM ET = 14:00 UTC (11.5 hours remaining)
+
+**URGENT ACTION REQUIRED**:
+Create Domain 50 GitHub Gist from `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md` and fill the 4 `[INSERT GIST URL HERE]` placeholders in the SCOTUS action guide templates.
+
+**Why it matters**: The Little v. Hecox / BPJ SCOTUS opinion drops at 14:00 UTC. All rapid-response email templates are staged and ready to send, but they contain placeholder URLs. Without the Gist URL, the templates cannot be executed to advocacy organizations.
+
+**Time required**: 5-10 minutes (create Gist + fill 4 URLs)
+
+**Instructions**: See `projects/resistance-research/DOMAIN_50_GIST_PREP.md` for detailed step-by-step guide (verified complete and ready)
+
+---
+
+## Session 4004a Orchestrator Status (2026-06-23 02:24 UTC) — STATE VERIFICATION + DEADLINE CONFIRMATION
+
+**Status**: ✅ **ALL AUTONOMOUS WORK COMPLETE; USER ACTION CRITICAL TODAY**
+
+**What Happened**:
+- Verified Domain 50 Gist block is still ACTIVE (11 placeholder instances remain)
+- Confirmed SCOTUS deadline is TODAY at 14:00 UTC (Little v. Hecox decision)
+- Verified all orchestration infrastructure is production-ready and staged
+- Confirmed stockbot validation window is TOMORROW (June 24 13:15 UTC)
+
+**Zero Autonomous Work Available**:
+- All infrastructure for all 3 active projects (resistance-research, stockbot, seedwarden) is complete
+- All remaining work requires user actions or time-gated events
+- No code work, no script deployments, no testing available
+
+**What Needs Immediate User Action**:
+1. **TODAY before 14:00 UTC** — Create Domain 50 Gist + fill template URLs (5-10 min, CRITICAL)
+2. **Tomorrow 13:15 UTC** — Stockbot validation window pre-market checklist (user monitoring, 15 min)
+3. **This week** — Seedwarden contractor selection emails (5-10 min, then await responses June 24-26)
+
+**Next Autonomous Trigger**:
+- June 24 20:00 UTC: Post-stockbot-validation analysis (if validation completes successfully)
+
+---
+
 ## Session 4004 Orchestrator Status (2026-06-23 02:11 UTC) — EXPLORATION QUEUE ITEMS 11-13 COMPLETION
 
 **Status**: ✅ **SCOTUS RAPID-RESPONSE ORCHESTRATION COMPLETE; GIST CREATION CRITICAL TODAY 14:00 UTC**
