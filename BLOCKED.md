@@ -31,6 +31,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+### stockbot — HMM priming timestamp bug fix ready for deployment (20:00 UTC post-market)
+**Date blocked**: 2026-06-23 19:02 UTC (Session 4086)
+**Context**: Critical HMM regime initialization failure detected in live deployment. Root cause: priming code does not pass bar timestamps to update_price(), causing all 82 historical bars to be deduplicated as the same date. Result: only 1 price fed to HMM instead of 82, regime stays None forever, signal generation suppressed. All 5 sessions affected (JPM/AAPL/MSFT/AMZN/NVDA showing regime=None + BUY_PROB_COLLAPSE alerts since June 22 13:30 UTC). Fix implemented and committed (9194e6b): pass Alpaca bar timestamp (idx from DataFrame index) to update_price() call. Deployment blocked until 20:00 UTC (market hours blackout). June 24 validation window (13:30 UTC) requires this fix to be live.
+**What I need**: Automatic deployment at 20:00 UTC (after market close Monday). Container restart will trigger session reinitialization on next cycle, HMM warmup will properly feed 82 dated bars, regime will initialize to Bull/Bear/Sideways, signals will restore to normal.
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 10m 2>&1 | grep -E 'Primed.*regime=.*[012]|mean_buy_prob.*0\.[5-9]|mean_buy_prob.*1\.0'" ` — should show regime initialized to non-None value and buy_prob > 0.4 (not collapse threshold 0.35)
+**Resolution**: [awaiting 20:00 UTC market close for deployment]
+
+---
+
 <!-- AUTO:CALIBRATION:START -->
 ### Usage limits — weekly calibration reminder
 **Date blocked**: 2026-06-23 (auto-added each Tuesday by reset-usage-budget.sh)
