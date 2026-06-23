@@ -248,6 +248,32 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - Owner: resistance-research team
    - Confidence: 82% (Phase 3 roadmap complete, Domain K outline finalized, 70% of contacts already identified in prior work)
 
+16. **resistance-research: Domain K Technical Validation Audit** (3-4h) ← **✅ COMPLETE (Session 4022, June 23 06:25 UTC)**
+   - ✅ Executed 06:10–06:25 UTC June 23 (resistance-research agent validation audit)
+   - Deliverables completed: `DOMAIN_K_VALIDATION_AUDIT_REPORT.md` (19 KB, 20 claims audited), `DOMAIN_K_MECHANICAL_VERIFICATION_CHECKLIST.md` (24 KB, 7 reform pathways verified), `DOMAIN_K_AUDIT_INDEX.md` (12 KB, stakeholder navigation guide), `DOMAIN_K_AUDIT_COMPLETION_SUMMARY.txt` (5 KB, executive summary)
+   - Key findings: 75% accuracy (15/20 claims verified), 92/100 mechanical soundness score, 3 specific corrections required (all identified with exact locations). 78% overall confidence (will be 85%+ after corrections applied). All 7 reform pathways mechanically sound and constitutionally grounded.
+   - Corrections needed: (1) Presidential Commission attribution (Medium severity), (2) State judicial tenure count (High severity — 6 states → 1 state), (3) Supreme Court approval polling (High severity — needs proper sourcing/attribution)
+   - Status: **APPROVED FOR PHASE 3 LAUNCH** with corrections. Pre-distribution checklist provided. Ready for user correction application (1-2 days) before November 4 Phase 3 start.
+   - Value: Phase 3 distribution now has independent credibility validation; reduces risk of distribution errors; Domain K can proceed to stakeholder distribution with confidence
+   - Owner: resistance-research team (audit completed)
+   - Confidence: 78% (with corrections applied: 85%+)
+
+17. **mfg-farm: Q3-Q4 SKU Line Expansion Analysis** (2-3h) ← **READY TO START NOW**
+   - Trigger condition: None — can start immediately while Phase 1 test print executes
+   - Scope: Using existing market research + supplier database, identify 10-15 new SKUs for Phase 2 expansion targeting Q3-Q4 2026 launch. Evaluate materials (PLA+, ABS, PETG, resin), complexity profile (simple clips vs complex assemblies), margin targets (30-40% gross margin), and supplier capacity. Cross-reference against competitor pricing and customer demand signals from Q2 market research.
+   - Value: Eliminates Phase 2 planning overhead once test print completes; enables immediate SKU decision-making without research delays
+   - Deliverables: `Q3_Q4_SKU_EXPANSION_MATRIX.md` (15 candidate SKUs with margin modeling, supplier recommendations, risk assessment), `PHASE_2_PRODUCT_SEQUENCING_PLAN.md` (launch timeline, material sourcing schedule, inventory model)
+   - Owner: mfg-farm team
+   - Confidence: 80% (Q2 market research complete; supplier relationships established; competitor analysis available)
+
+18. **cybersecurity-hardening: Linux Full-Disk Encryption & Key Management Architecture** (2-3h) ← **PRE-STAGING FOR PHASE 2**
+   - Trigger condition: None — can sketch architecture immediately as pre-work for Phase 2 (unblocks execution once Phase 1 VeraCrypt completes)
+   - Scope: Design FDE strategy for Linux machine at home: LUKS2 implementation (vs alternatives), TPM2 integration for automatic unlock, recovery key escrow (hardware + cloud backup), password manager integration, encrypted swap/temp management, backup encryption strategy (off-site + encrypted cloud). Include threat model for local data at rest (stolen laptop, physical device theft, forensic extraction). Design runbook for Phase 2 deployment.
+   - Value: Pre-stages Phase 2 infrastructure; eliminates planning delays when Phase 1 VeraCrypt restart completes; enables immediate Phase 2 execution
+   - Deliverables: `LINUX_FULL_DISK_ENCRYPTION_ARCHITECTURE.md` (LUKS2 design, TPM integration, key management), `THREAT_MODEL_DATA_AT_REST.md` (asset inventory, threat scenarios, mitigations), `PHASE_2_ENCRYPTION_DEPLOYMENT_RUNBOOK.md` (step-by-step Linux FDE implementation)
+   - Owner: cybersecurity-hardening team
+   - Confidence: 82% (Linux FDE patterns well-established; threat model straightforward; runbook templates available)
+
 ---
 
 **REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). **✅ DOMAIN 59 COMPLETE** (Session 2839). Total remaining Phase 2 production estimate: 40-50 hours Q3 2026. Phase 1 path decided (Path A + Domain 37); Phase 2 research execution proceeds immediately or post-Wave-1; Domain 59 distribution activation ready June 5.
