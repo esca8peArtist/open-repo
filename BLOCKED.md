@@ -37,18 +37,19 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
 **What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
 **Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**:
+**Resolution**: ⏳ **AWAITING USER ACTION** — Calibration last updated 2026-06-10 (13 days ago, beyond 7-day drift window). Need actual Sonnet % and All-models % from claude.ai Settings UI. Script ready to execute once percentages provided.
 <!-- AUTO:CALIBRATION:END -->
 
 
 ---
 
-### resistance-research — Domain 50 Gist not created (SCOTUS execution blocked, 12h deadline)
+### resistance-research — Domain 50 Gist not created (SCOTUS execution blocked, IMMINENT DEADLINE)
 **Date blocked**: 2026-06-23 01:50 UTC
-**Context**: SCOTUS opinion session is TODAY June 23, 2026 at 10:00 AM ET (14:00 UTC, ~12 hours from now). Little v. Hecox / BPJ decision expected. The SCOTUS rapid-response framework is complete and committed (Session 4002, commit `6669e431`). All email templates are staged and ready to send. However, every template contains `[INSERT GIST URL HERE]` as a placeholder. Without creating the Domain 50 GitHub Gist and filling in the URL, the templates cannot be executed.
-**What I need**: (1) User to create Domain 50 Gist on GitHub (5-10 min): Log into github.com as esca8peArtist, go to gist.github.com, create a new secret gist with the contents of `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md` (11,200 words, 87 citations), set filename to `domain-50-lgbtq-rights-voting-suppression.md`, description to "Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure — Research Brief, June 2026". (2) Copy the resulting Gist URL and paste it into the `[INSERT GIST URL HERE]` placeholders in `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md` and related template files. (3) Commit the filled-in templates to master. Detailed instructions in `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/DOMAIN_50_GIST_PREP.md`.
+**CRITICAL**: **SCOTUS decision in 22 MINUTES (14:00 UTC 2026-06-23)**. Gist NOT YET CREATED (19 unfilled placeholders verified Session 4057, 13:38 UTC).
+**Context**: SCOTUS opinion session is TODAY June 23, 2026 at 10:00 AM ET (14:00 UTC). Little v. Hecox / BPJ decision expected. The SCOTUS rapid-response framework is complete and committed (Session 4002, commit `6669e431`). All email templates are staged and ready to send. However, every template contains `[INSERT GIST URL HERE]` as a placeholder. Without creating the Domain 50 GitHub Gist and filling in the URL, the templates cannot be executed.
+**What I need**: **IMMEDIATE (next 22 minutes)**: (1) User to create Domain 50 Gist on GitHub (5-10 min): Log into github.com as esca8peArtist, go to gist.github.com, create a new secret gist with the contents of `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md` (11,200 words, 87 citations), set filename to `domain-50-lgbtq-rights-voting-suppression.md`, description to "Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure — Research Brief, June 2026". (2) Copy the resulting Gist URL and paste it into the `[INSERT GIST URL HERE]` placeholders in `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md` and related template files. (3) Commit the filled-in templates to master. Detailed instructions in `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/DOMAIN_50_GIST_PREP.md`.
 **Verify with**: `grep -r "INSERT GIST URL" /home/awank/dev/SuperClaude_Framework/projects/resistance-research/ | wc -l` should return 0 (no placeholders remaining)
-**Resolution**: [leave blank]
+**Resolution**: [leave blank — CRITICAL DEADLINE IMMINENT]
 
 ---
 
