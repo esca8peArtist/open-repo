@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-23T13:20:59Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-23T13:59:44Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 17.1% | Reset in 155h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 17.9% | Reset in 154h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -38,14 +38,15 @@
 **Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
 **What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
 **Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**:
+**Resolution**: ⏳ **AWAITING USER ACTION** — Calibration last updated 2026-06-10 (13 days ago, beyond 7-day drift window). Need actual Sonnet % and All-models % from claude.ai Settings UI. Script ready to execute once percentages provided.
 ---
-### resistance-research — Domain 50 Gist not created (SCOTUS execution blocked, 12h deadline)
+### resistance-research — Domain 50 Gist not created (SCOTUS execution blocked, IMMINENT DEADLINE)
 **Date blocked**: 2026-06-23 01:50 UTC
-**Context**: SCOTUS opinion session is TODAY June 23, 2026 at 10:00 AM ET (14:00 UTC, ~12 hours from now). Little v. Hecox / BPJ decision expected. The SCOTUS rapid-response framework is complete and committed (Session 4002, commit `6669e431`). All email templates are staged and ready to send. However, every template contains `[INSERT GIST URL HERE]` as a placeholder. Without creating the Domain 50 GitHub Gist and filling in the URL, the templates cannot be executed.
-**What I need**: (1) User to create Domain 50 Gist on GitHub (5-10 min): Log into github.com as esca8peArtist, go to gist.github.com, create a new secret gist with the contents of `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md` (11,200 words, 87 citations), set filename to `domain-50-lgbtq-rights-voting-suppression.md`, description to "Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure — Research Brief, June 2026". (2) Copy the resulting Gist URL and paste it into the `[INSERT GIST URL HERE]` placeholders in `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md` and related template files. (3) Commit the filled-in templates to master. Detailed instructions in `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/DOMAIN_50_GIST_PREP.md`.
+**CRITICAL**: **SCOTUS decision in 22 MINUTES (14:00 UTC 2026-06-23)**. Gist NOT YET CREATED (19 unfilled placeholders verified Session 4057, 13:38 UTC).
+**Context**: SCOTUS opinion session is TODAY June 23, 2026 at 10:00 AM ET (14:00 UTC). Little v. Hecox / BPJ decision expected. The SCOTUS rapid-response framework is complete and committed (Session 4002, commit `6669e431`). All email templates are staged and ready to send. However, every template contains `[INSERT GIST URL HERE]` as a placeholder. Without creating the Domain 50 GitHub Gist and filling in the URL, the templates cannot be executed.
+**What I need**: **IMMEDIATE (next 22 minutes)**: (1) User to create Domain 50 Gist on GitHub (5-10 min): Log into github.com as esca8peArtist, go to gist.github.com, create a new secret gist with the contents of `projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md` (11,200 words, 87 citations), set filename to `domain-50-lgbtq-rights-voting-suppression.md`, description to "Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure — Research Brief, June 2026". (2) Copy the resulting Gist URL and paste it into the `[INSERT GIST URL HERE]` placeholders in `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md` and related template files. (3) Commit the filled-in templates to master. Detailed instructions in `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/DOMAIN_50_GIST_PREP.md`.
 **Verify with**: `grep -r "INSERT GIST URL" /home/awank/dev/SuperClaude_Framework/projects/resistance-research/ | wc -l` should return 0 (no placeholders remaining)
-**Resolution**: [leave blank]
+**Resolution**: [leave blank — CRITICAL DEADLINE IMMINENT]
 ---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
@@ -62,7 +63,6 @@
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**: [leave blank]
 ---
-### mfg-farm — Test print execution (user action required)
 
 ## Recently Resolved (last 5)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
@@ -75,31 +75,6 @@
 (none currently)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
----
-
-## Session 4053 — June 23 13:00 UTC
-
-**Orientation**:
-- ✅ ORCHESTRATOR_STATE.md verified (current as of 13:00 UTC)
-- ✅ BLOCKED.md reviewed: 5 active blocks, all user-action (Domain 50 Gist CRITICAL deadline 14:00 UTC today)
-- ✅ INBOX.md empty (no new items)
-- ✅ Exploration Queue: All items 1-18 complete or awaiting trigger conditions
-- ✅ All main projects at terminal state (complete, deployed, or blocked on external actions)
-
-**Key Status**:
-- **CRITICAL DEADLINE**: Domain 50 Gist creation (14:00 UTC, 60m remaining)
-- **SCOTUS decision**: Expected 14:00 UTC today (Little v. Hecox / BPJ opinion)
-- **Rapid-response framework**: 4 files staged, copy-paste templates ready for execution upon favorable decision
-- **Stockbot deployment**: Stable 41+ hours, monitoring framework ready for June 24 13:30 UTC validation window
-
-**Action Taken**:
-- Updated CHECKIN.md with Session 4053 standing-by status
-- Verified usage calibration block requires manual input (Claude UI percentages)
-- Confirmed zero autonomous work available (all projects at terminal state or user-blocked)
-
-**Orchestrator Posture**: STANDING BY for 14:00 UTC deadline. If Domain 50 Gist created AND SCOTUS decision favorable, rapid-response templates ready for immediate execution.
-
 **Confidence**: 99% — Infrastructure production-ready, orchestrator correctly positioned for activation.
 
 
@@ -114,3 +89,29 @@
 **Status**: STANDING BY for 14:00 UTC deadline. If user creates Gist + SCOTUS decision favorable, execute Tier 1 rapid-response sends immediately. If deadline passes without Gist creation, stand by for June 24 13:30 UTC stockbot validation window.
 
 **Autonomous work available**: Zero (all projects at terminal state or user-blocked).
+
+
+## Session 4055 — June 23 13:20 UTC — Critical Countdown (40 min to SCOTUS Decision)
+
+**Orientation**:
+- ✅ ORCHESTRATOR_STATE.md verified (current as of 13:20 UTC)
+- ✅ BLOCKED.md reviewed: 5 active blocks, all requiring user action
+- ✅ PROJECTS.md reviewed: all projects at terminal state or user-blocked
+- ✅ INBOX.md: empty (no new items)
+- ✅ Exploration Queue: all 18 items complete or awaiting triggers
+- ✅ CHECKIN.md updated with critical countdown status
+
+**Key Status**:
+- **CRITICAL DEADLINE**: Domain 50 Gist creation (14:00 UTC, 40m remaining)
+- **SCOTUS decision**: Expected 14:00 UTC today (Little v. Hecox / BPJ opinion)
+- **Rapid-response framework**: 4 files staged (SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md, etc.), copy-paste templates ready
+- **Stockbot deployment**: Stable 42+ hours, monitoring framework ready for June 24 13:30 UTC validation window
+- **Autonomous work**: ZERO — all projects at terminal state or blocked on external actions
+
+**Action Taken**:
+- Verified Domain 50 Gist still not created (19 unfilled `[INSERT GIST URL HERE]` placeholders)
+- Updated CHECKIN.md with Session 4055 status
+
+**Orchestrator Posture**: STANDING BY for 14:00 UTC SCOTUS decision and user Domain 50 Gist creation. Rapid-response infrastructure production-ready. Zero autonomous work available. Next autonomous trigger: June 24 13:30 UTC stockbot validation window.
+
+**Confidence**: 99% — Infrastructure production-ready, orchestrator correctly positioned.
