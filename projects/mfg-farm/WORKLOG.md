@@ -1,5 +1,39 @@
 # mfg-farm Project WORKLOG
 
+## Session 4100 (June 23, 2026) — Phase 2 Supply Chain Diversification Research (Item 25)
+
+**Objective**: Execute Exploration Queue Item 25 — complete supply chain diversification research across 5 vendor categories. Produce 3 staged documents for Phase 2 planning.
+
+**Deliverables completed**:
+
+### 1. PHASE_2_SUPPLY_CHAIN_DIVERSIFICATION_RESEARCH.md ✅
+- 5-category vendor analysis matrices with pricing, lead times, MOQs, quality data, risk scores
+- **New coverage (not in prior sessions)**: Carbon fiber / advanced materials (ePLA-CF, PLA-GF, PA12-CF), packaging cost-per-unit at 10–100 unit order sizes, payment processor architecture (Etsy Payments mandatory; Stripe/Square for non-Etsy channels only)
+- **Key finding**: Etsy Payments is non-substitutable on Etsy; Stripe is the correct processor for Shopify direct (Phase 3). CF materials command 3–4× price premium; Phase 3+ activation only.
+- Source count: 27 verified public URLs
+
+### 2. SUPPLIER_CONTACT_DATABASE.md ✅
+- 34 vendors across 5 categories with website, phone, email, priority rank, current status
+- Priority A (immediate): 7 vendors; Priority B (Month 1–2): 10 vendors; Priority C (Phase 3+): 17 vendors
+- Action queue organized by outreach sequence; communication log template included
+- Total estimated outreach time for Priority A: ~2 hours
+
+### 3. SUPPLY_CHAIN_RISK_MITIGATION_PLAN.md ✅
+- Dual-source architecture (minimum 2 validated vendors for all Critical materials)
+- Safety stock levels by phase (Phase 1 through Phase 4 / 8-printer farm)
+- 5 contingency scenarios: supplier failure, lead-time extension, price spike, Etsy disruption, packaging OOS
+- Supplier scorecard template (monthly + annual review)
+- Full risk register: 10 risks × probability/impact scoring
+
+**Research gaps in prior documentation now closed**:
+- CF/GF advanced materials: zero prior coverage → now 6-vendor CF matrix, 3-vendor GF matrix, performance comparison table
+- Packaging cost at 10–100 unit volumes: prior docs lacked per-unit pricing at small batch → now complete for poly mailers, mailer boxes, tissue paper, insert cards
+- Payment processors: zero prior coverage → Etsy Payments architecture, Stripe/Square/PayPal fee structure, payout speed, chargeback fee comparison
+
+**Confidence**: 88% — all pricing from verified public sources June 2026; CF bulk pricing requires quote for exact volumes
+
+---
+
 ## Session 3904 (June 22, 2026) — Phase 2 Track 1 Execution + Decision Framework
 
 **Objective**: Execute Phase 2 Track 1 (Supply Chain Diversification) research. Create test print decision flow mapping. Stage Phase 2 research activation upon test print completion.
