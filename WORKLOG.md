@@ -1,3 +1,44 @@
+## Session 4031 (2026-06-23 09:34–TBD UTC) — PHASE 6 RESEARCH FRAMEWORK EXECUTION
+
+**Initiated**: 2026-06-23 09:34 UTC (autonomous orchestrator)
+
+**Orientation Complete**:
+- ✅ ORCHESTRATOR_STATE.md verified
+- ✅ BLOCKED.md: 4 active user-action blocks (Domain 50 Gist deadline 14:00 UTC today, cybersecurity VeraCrypt restart, mfg-farm test print, open-repo platform decision)
+- ✅ INBOX.md: No new items
+- ✅ PROJECTS.md: All consistent
+
+**Status Summary**:
+- **Domain 50 Gist deadline**: ~4h 25m remaining (14:00 UTC)
+- **Stockbot validation window**: June 24 13:30 UTC (28h away), deployment LIVE since June 22
+- **Main project blocks**: All user-action-dependent
+
+**Task Selection**:
+- **Exploration Queue Item 12**: systems-resilience Phase 6 Domains B-F Preliminary Research Framework
+- **Rationale**: Session 4030 attempted this 6-8h foundational work but hit token limits. It's legitimate autonomous work that enables Phase 6 launch (Nov 15+) with zero discovery overhead. No blockers, executable now.
+- **Scope**: Research architecture for Phase 6 domains (Economic Foundations, Political Governance, Judicial Independence, Multilateral Coordination, Implementation Feasibility)
+- **Deliverables**: (1) PHASE_6_RESEARCH_ZONES_MAPPING.md, (2) PHASE_6_PRELIMINARY_SOURCE_INDEX.md, (3) PHASE_6_EXECUTION_READINESS_CHECKLIST.md
+
+**Work Completed**: ✅ **PHASE 6 RESEARCH FRAMEWORK EXECUTION COMPLETE**
+
+**Deliverables created** (3 files, 160 KB total):
+1. **PHASE_6_RESEARCH_ZONES_MAPPING.md** (63 KB, 661 lines) — 27 research zones across 5 domains (B: Economic Foundations, C: Political Governance, D: Judicial Independence, E: Multilateral Coordination, F: Implementation Feasibility). Per-zone: research questions (5/zone), sourcing strategy, expert contacts, timeline estimate. Aggregate: 226–292 hours base case. Domain D (Judicial Independence) → C → B → E → F execution order. Integration notes linking to Phase 3 Domains K & H.
+2. **PHASE_6_PRELIMINARY_SOURCE_INDEX.md** (65 KB, 1,223 lines) — 241+ sources total (B=55, C=52, D=47, E=45, F=42). All sources: citation, type (policy/academic/practitioner/historical), relevance (zones), confidence, access tier. 83% freely accessible. Anchors: V-Dem 2026, World Inequality Report 2026, Rau/Stokes PNAS 2025. Gap analysis vs Phase 3 material.
+3. **PHASE_6_EXECUTION_READINESS_CHECKLIST.md** (32 KB, 381 lines) — Specific researcher expertise requirements (PhD + domain years OR practitioner backgrounds), per-domain success criteria, 15+ contingency failure scenarios, critical path analysis. Timeline: 193h optimistic / 264h base / 356h pessimistic. 4-person parallel execution: ~4.5 weeks to completion.
+
+**Value Delivered**:
+- ✅ Enables Phase 6 launch (Nov 15, 2026) with zero discovery overhead
+- ✅ 241+ vetted sources ready for researcher access
+- ✅ Clear domain sequencing (D→C→B→E→F) and researcher expertise requirements
+- ✅ All Phase 3 findings (Domains K & H) explicitly integrated into Phase 6 architecture
+
+**Commits**: Pending (will commit after PROJECTS.md update)
+
+**Agent**: general-research agent (a9192b48aac4b25d0), 112k tokens, 16 min execution
+**Status**: Ready for user review and Phase 6 launch preparation
+
+---
+
 ## Session 4034 (2026-06-23 09:13–09:15 UTC) — ORIENTATION ONLY, STANDING BY FOR DOMAIN 50 + JUNE 24 EVENTS
 
 **Initiated**: 2026-06-23 09:13 UTC (autonomous orchestrator, brief orientation)
