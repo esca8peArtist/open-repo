@@ -280,6 +280,30 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - **Value**: Phase 2 pre-staging eliminates planning delays; user can execute deployment runbook immediately upon Phase 1 completion
    - **Owner**: Claude Code Orchestrator (autonomous execution, Session 4027)
 
+22. **stockbot: Phase 4 Comparative Decision Analysis — Covered Calls vs Inverse ETF vs Earnings Drift** (2-3h)
+   - Trigger condition: June 24 validation outcomes (available after 20:00 UTC June 24)
+   - Scope: Comparative risk/reward analysis of all 3 Phase 4 paths; financial modeling for each path with June 24 validation baseline; decision matrix with go/no-go thresholds for each path; specific implementation roadmap for highest-confidence path (1-2 weeks deployment timeline)
+   - Value: June 24 post-market decision window (20:00-20:30 UTC) is compressed. Pre-building comparative analysis + thresholds = mechanical fill-in-blanks execution instead of analysis-from-scratch.
+   - Deliverables: `PHASE_4_COMPARATIVE_ANALYSIS.md` (financial modeling, decision matrix, confidence scoring), `PHASE_4_SELECTED_PATH_IMPLEMENTATION_ROADMAP.md` (7-14 day deployment plan for winning path)
+   - Owner: stockbot team
+   - Confidence: 85% (Phase 4 framework structure known, validation baseline will be provided by June 24 20:00 UTC)
+
+23. **resistance-research: Domains 51/48 Wave 2 Send Staging & Tier 2 Contact Matrix** (2-3h)
+   - Trigger condition: Domains 51/48 Wave 1 sends execute (expected June 23-27, ~17 min user time)
+   - Scope: Monitor Wave 1 response rates June 23-July 7; prepare Wave 2 send sequence and email templates for 5-10 additional Tier 2 contacts per domain; create contact engagement tracking matrix; success metric baselines from Wave 1 (to evaluate Wave 2 improvements)
+   - Value: Wave 1 sends are currently ready for immediate user execution. Wave 2 requires pre-staging to maintain momentum. Enables frictionless Wave 2 execution once Wave 1 responses stabilize.
+   - Deliverables: `domain-51-wave-2-send-templates.md` (5-10 email templates, Tier 2 contacts), `domain-48-wave-2-send-templates.md` (5-10 email templates), `domains-51-48-wave-1-response-tracking-template.md` (monitoring checklist, success baselines, Wave 2 trigger conditions)
+   - Owner: resistance-research team
+   - Confidence: 78% (Wave 1 materials just completed; Wave 2 sourcing requires response monitoring data)
+
+24. **Seedwarden: Phase 3 Contractor Execution Roadmap & Outreach Staging** (1.5-2h)
+   - Trigger condition: User approval of Phase 3 contractor selection framework (Item 11 COMPLETE, awaiting user execution June 24-26)
+   - Scope: Upon user executing Phase 3 contractor outreach (11 prefilled emails per PHASE_3_OUTREACH_TEMPLATES_PREFILLED.md), transition to Phase 3 execution support: contractor response tracking, negotiation support materials, project timeline & milestones, dependency map for Q3 2026 bundle production (Week 2-3 launch), Phase 3 success metrics (contractor productivity, bundle quality, revenue impact)
+   - Value: Phase 3 contractor selection (June 24-28 responses) is time-critical. Pre-staging execution roadmap = immediate activation upon contractor selections, no planning delays between "contractor hired" and "project begun".
+   - Deliverables: `PHASE_3_CONTRACTOR_RESPONSE_TRACKING_TEMPLATE.md` (decision matrix, negotiation support), `Q3_2026_BUNDLE_PRODUCTION_TIMELINE.md` (contractor task breakdown, dependency map), `PHASE_3_SUCCESS_METRICS_AND_MONITORING.md` (KPIs for Phase 3 execution)
+   - Owner: seedwarden team
+   - Confidence: 75% (Phase 3 contractor framework exists; execution roadmap requires contractor hire event + timeline anchoring)
+
 20. **open-repo: Detailed Platform Decision Analysis & Deployment Runbook Preparation** (2-3h) ← **✅ COMPLETE (Session 4086, June 23 20:33 UTC)**
    - ✅ Executed 18:42–20:33 UTC June 23 (general-research agent autonomous execution)
    - Deliverables completed: `RASPBY1_DETAILED_PLATFORM_ANALYSIS.md` (422 lines, 11 KB, 6-dimension matrix), `DOCKER_DEPLOYMENT_RUNBOOK.md` (669 lines, 8.5 KB, 7-phase procedure), `SYSTEMD_DEPLOYMENT_RUNBOOK.md` (763 lines, 10 KB, 11-phase procedure), `DEPLOYMENT_SUCCESS_CRITERIA_AND_VALIDATION.md` (706 lines, 7 KB, 7 metrics + 7 tests)
