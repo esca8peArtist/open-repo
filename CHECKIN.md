@@ -2,6 +2,66 @@
 
 ---
 
+## 🚨 CRITICAL — Session 4016 (2026-06-23 05:03 UTC) — DOMAIN 50 GIST DEADLINE 14:00 UTC TODAY (≈9 HOURS)
+
+**STATUS**: ✅ ZERO AUTONOMOUS WORK AVAILABLE — ALL INFRASTRUCTURE READY — **CRITICAL USER ACTION TODAY**
+
+### ⏰ TODAY'S DEADLINE: Domain 50 GitHub Gist (14:00 UTC = 10 AM ET)
+
+**The Situation**:
+- SCOTUS Little v. Hecox decision drops TODAY at 10:00 AM ET (14:00 UTC)
+- Rapid-response framework 100% complete and staged
+- All email templates ready to execute
+- **Blocker**: 19 instances of `[INSERT GIST URL HERE]` placeholders in templates
+
+**Your 3-Step Action Plan** (takes ~15 minutes):
+
+1. **Create GitHub Gist** (5-10 min):
+   - Go to https://gist.github.com
+   - Log in as `esca8peArtist`
+   - Click "New Gist"
+   - Copy entire contents of: `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/domains/domain-50-lgbtq-rights-voting-suppression.md`
+   - Paste into Gist editor
+   - Set filename to: `domain-50-lgbtq-rights-voting-suppression.md`
+   - Set description to: `Domain 50: The Ballot Initiative Weapon — Anti-LGBTQ+ Measures as Voting Suppression Infrastructure — Research Brief, June 2026`
+   - Click "Create secret gist"
+   - **Copy the resulting URL** (e.g., `https://gist.github.com/esca8peArtist/abc123def456`)
+
+2. **Run Helper Script** (2-3 min):
+   ```bash
+   cd /home/awank/dev/SuperClaude_Framework/projects/resistance-research
+   python fill-domain-50-gist-url.py "https://gist.github.com/esca8peArtist/abc123def456"
+   ```
+   - Script auto-fills all 19 placeholders
+   - Script auto-commits to master
+
+3. **Verify** (30 seconds):
+   ```bash
+   grep -r "INSERT GIST URL" /home/awank/dev/SuperClaude_Framework/projects/resistance-research/ | wc -l
+   ```
+   - Should return **0** (all placeholders filled)
+
+### If SCOTUS Decision is FOR Plaintiff (likely):
+Once placeholders filled, execute same-day rapid-response:
+```bash
+cat /home/awank/dev/SuperClaude_Framework/projects/resistance-research/SCOTUS_TRIGGER_5MIN_ACTION_GUIDE.md
+```
+All 4 templates pre-filled + contact list ready. Copy-paste execution.
+
+---
+
+### Autonomous Status:
+- ✅ Stockbot: Deployment LIVE (June 22), monitoring framework ready for June 24 13:30 UTC validation window
+- ✅ Resistance-research: Phase 2 Wave 1-2 infrastructure 100% staged (Domains 49-50, email templates, Gist framework)
+- ✅ Seedwarden: Q4 product strategy complete, user review ready
+- ✅ Exploration Queue: Items 14-15 complete, remaining blocked on triggers/decisions
+- ✅ **ZERO autonomous work available** — all projects complete or user-dependent
+
+### Next Autonomous Window:
+- **June 24 13:30 UTC** — stockbot validation monitoring opens (5-session config running live)
+
+---
+
 ## Session 4015 Orchestrator Status (2026-06-23 04:56–05:10 UTC) — FINAL VERIFICATION BEFORE IDLE
 
 **Status**: ✅ **ZERO AUTONOMOUS WORK AVAILABLE — CRITICAL DEADLINE 14:00 UTC TODAY**
