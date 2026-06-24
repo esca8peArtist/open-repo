@@ -5,9 +5,11 @@ created: "2026-06-22"
 status: "Pre-production — Phase 3 November 4, 2026 launch"
 parent_documents:
   - "PHASE_3_DOMAIN_K_EXPERT_CONTACT_INDEX.md (25 contacts, Domain K full index with verified contact details)"
+  - "DOMAIN_K_EXPERT_CONTACT_FRAMEWORK.md (33 Domain K-specific contacts with tiered activation — Session 4009, June 23 2026)"
   - "PHASE_3_DOMAIN_K_SOURCES_AND_CONTACTS.md (12 priority contacts with activation timeline)"
   - "PHASE_3_DOMAINS_H_K_37A_COALITION_MAPPING.md (Tier 1 contacts for both domains)"
   - "DOMAIN_H_CONSTITUTIONAL_RESILIENCE_ARCHITECTURE.md (expert contacts embedded in Zone 4)"
+  - "DOMAIN_H_EXPERT_CONTACT_FRAMEWORK.md (Domain H-specific contacts with engagement triggers — Session 4085, June 23 2026)"
 ---
 
 # Phase 3 Expert Contact Framework

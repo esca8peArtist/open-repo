@@ -5,10 +5,12 @@ created: "2026-06-22"
 status: "Pre-production — Phase 3 November 4, 2026 launch"
 parent_documents:
   - "PHASE_3_DOMAIN_K_SOURCES_AND_CONTACTS.md (67 sources, Domain K full index)"
+  - "DOMAIN_K_SOURCE_MASTER_DATABASE.md (110 sources, confidence-scored, anchor-flagged — Session 4009, June 23 2026)"
   - "DOMAIN_H_CONSTITUTIONAL_RESILIENCE_ARCHITECTURE.md (90+ citations, Domain H production document)"
+  - "DOMAIN_H_SOURCE_MASTER_DATABASE.md (110 sources, confidence-scored, anchor-flagged — Session 4085, June 23 2026)"
   - "PHASE_3_DOMAIN_H_PRELIMINARY_RESEARCH.md (supplementary analysis, all four zones)"
   - "PHASE_3_EXECUTION_TIMELINE.md (sequencing)"
-scope: "Comprehensive cross-domain source reference. Do not duplicate source-hunting already done in the above documents. Use this file to find gaps and identify new sources for November research updates."
+scope: "Comprehensive cross-domain source reference combining gap items and monitoring sources not in the domain-specific databases. For per-source confidence scores, access notes, and anchor-source identification, use DOMAIN_K_SOURCE_MASTER_DATABASE.md and DOMAIN_H_SOURCE_MASTER_DATABASE.md. This file identifies new source categories and monitoring items for the November research update pass."
 ---
 
 # Phase 3 Research Source Database

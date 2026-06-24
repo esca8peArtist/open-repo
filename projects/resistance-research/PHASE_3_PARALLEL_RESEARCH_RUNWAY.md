@@ -7,7 +7,9 @@ parent_documents:
   - "PHASE_3_EXECUTION_TIMELINE.md (quarterly plan Nov 2026 – March 2027)"
   - "DOMAIN_H_CONSTITUTIONAL_RESILIENCE_ARCHITECTURE.md (production-complete, 22-32h remaining work)"
   - "DOMAIN_H_RESEARCH_WORKFLOW_DESIGN.md (12-week sprint calendar; 30-45h estimate)"
+  - "DOMAIN_H_SOLO_VS_TEAM_RESOURCE_MODEL.md (solo vs. team capacity analysis)"
   - "PHASE_3_DOMAIN_K_PRELIMINARY_RESEARCH.md (production-complete, 8-10h remaining work)"
+  - "DOMAIN_K_RESEARCH_RUNBOOK.md (Domain K step-by-step execution guide — Session 4009, June 23 2026)"
 capacity_target_nov: "40-42 hours"
 capacity_target_dec: "42-48 hours"
 ---
@@ -46,10 +48,10 @@ Before planning execution, establish what has already been completed. The prior 
 - Remaining: Post-election updating of Zone 3 (4-5h), pending development resolution — Trump v. Slaughter, Article V count, Michigan convention (2-3h), Domain K integration bridge text (3-4h), Gist creation (3-4h), combined brief (2-3h)
 - **Estimated remaining work: 14-19 hours (within the DOMAIN_H_RESEARCH_WORKFLOW_DESIGN.md 22-32h adjusted estimate)**
 
-**Phase 3 Pre-staging (new — this session):**
-- PHASE_3_RESEARCH_SOURCE_DATABASE.md — 110+ sources, update checklist
-- PHASE_3_EXPERT_CONTACT_FRAMEWORK.md — 35 contacts, activation sequence
-- PHASE_3_PARALLEL_RESEARCH_RUNWAY.md — this document
+**Phase 3 Pre-staging (complete as of June 23, 2026):**
+- PHASE_3_RESEARCH_SOURCE_DATABASE.md — 110+ sources across 14 research zones, pre-November update checklist; see also DOMAIN_K_SOURCE_MASTER_DATABASE.md and DOMAIN_H_SOURCE_MASTER_DATABASE.md for per-source confidence scores and anchor-source identification (Session 4009/4085, June 23 2026)
+- PHASE_3_EXPERT_CONTACT_FRAMEWORK.md — 35 combined K+H contacts with activation sequence and warm intro chains; see also DOMAIN_K_EXPERT_CONTACT_FRAMEWORK.md (33 K-specific) and DOMAIN_H_EXPERT_CONTACT_FRAMEWORK.md for domain-specific contact detail (Session 4009/4085, June 23 2026)
+- PHASE_3_PARALLEL_RESEARCH_RUNWAY.md — this document; execution reference: DOMAIN_K_RESEARCH_RUNBOOK.md (Session 4009, June 23 2026)
 
 **Combined remaining work estimate: 22-32 hours** (Domain K: 8-13h + Domain H: 14-19h). This is within the DOMAIN_H_RESEARCH_WORKFLOW_DESIGN.md adjusted estimate range for production-complete documents requiring post-election updating.
 
