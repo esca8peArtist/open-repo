@@ -386,6 +386,33 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - **Confidence**: 92% (all sources public directories, pricing verified, no blockers)
    - **Committed**: commit (3 files, 75 KB total)
 
+30. **stockbot: Post-Deployment Health Check & Validation Framework** (1.5-2h) ← **STAGED (Session 4191, 15:35 UTC)**
+   - **Trigger condition**: June 24 20:30 UTC deployment execution
+   - **Scope**: Comprehensive validation procedures for real-time stream fix deployment. Four phases: (1) deployment execution & container health, (2) real-time stream tick reception validation (5-min observation), (3) error log audit (zero timeout errors verification), (4) P&L & trading state validation (trades occurring, circuit breaker disabled)
+   - **Deliverable**: `STOCKBOT_POST_DEPLOYMENT_VALIDATION_FRAMEWORK.md` (45 KB, 7 decision sections, 12 command scripts, timeline checkpoints)
+   - **Critical success criteria**: Stream receiving ≥2 ticks per ticker per 2 minutes (not just initialized), regime != None in all 5 sessions, zero timeout errors, API health 200 OK
+   - **Value**: Eliminates post-deployment uncertainty. Mechanical validation procedures (SSH commands + log parsing) determine PASS/CAUTION/FAIL by 20:55 UTC. If FAIL, escalates with forensic data for user/developer analysis.
+   - **Status**: Production-ready, awaiting 20:30 UTC deployment trigger. Framework enables rapid decision (30 min compressed window) on whether deployment succeeded or requires rollback/debugging.
+   - **Confidence**: 91% (fix verified in code review, validation procedures mechanistic, success criteria objective)
+
+31. **seedwarden: Q3 Bundle Launch Week Execution Checklist** (2h) ← **STAGED (Session 4191, 15:40 UTC)**
+   - **Trigger condition**: User approval of Q3 medicinal bundle content (June 24-26, 30-45 min user review per Item 26)
+   - **Scope**: Coordination checklist for June 24-30 preparation + July 1 launch. Five phases: (1) user review & approval (30-45 min), (2) Canva design execution (4-5 hours designer or user), (3) platform preparation (Shopify readiness, email campaign staging), (4) launch day checklist (1 hour pre-launch verification), (5) post-launch monitoring (daily metrics, weekly reviews, contingency triggers)
+   - **Deliverable**: `Q3_BUNDLE_LAUNCH_WEEK_EXECUTION_CHECKLIST.md` (58 KB, timeline summary, contingency playbooks, metrics dashboard)
+   - **Critical path**: User approval (Jun 24-26) → Canva designs (Jun 27-30) → Launch (Jul 1) with zero slack time
+   - **Value**: Removes execution friction. Pre-written email sequences, social media templates, monitoring checklists, contingency playbooks (design delays, supplier issues, zero orders, negative feedback). Estimated user time: ~6-7 hours over 8 days. Revenue projection: $600-1,000 July soft launch, $2,000-3,000 cumulative Aug-Sep.
+   - **Status**: Production-ready, awaiting Q3 bundle approval (Item 26 completion). Once user approves, orchestrator can execute launch day-by-day with pre-staged templates.
+   - **Confidence**: 87% (all content production-ready per Session 4100, user approval pending, design execution ~4-5h estimated)
+
+32. **mfg-farm: Phase 2 Track Sequential Research Roadmap** (1.5h) ← **STAGED (Session 4191, 15:45 UTC)**
+   - **Trigger condition**: Test print execution + pass decision (expected June 28, 2026)
+   - **Scope**: Planning document for Phase 2 tracks 2-4 sequential execution. Details timeline, resource allocation, critical decision gates, contingency paths for: (1) Track 2 Logistics & Fulfillment (4-5h, Jun 28-30, gates by Jul 8), (2) Track 3 Market Expansion (5-6h, Jul 8-15, B2B outreach begins Jul 22), (3) Track 4 Production Economics & Multi-Printer Scaling (6-7h, Aug 1-8, 2nd printer + operator decision).
+   - **Deliverable**: `PHASE_2_TRACK_SEQUENTIAL_RESEARCH_ROADMAP.md` (72 KB, timeline, hybrid sequential+parallel approach, resource allocation per track, contingency escalation)
+   - **Sequential vs parallel decision**: Hybrid approach (Track 2 parallel with Track 1 results, then Track 3, then Track 4) recommended as optimal 15-17 hour research investment over 8 weeks, vs parallel all-at-once (compressed 12-15h but higher resource load).
+   - **Value**: Eliminates Phase 2 planning delays upon test print pass. Track 2 is critical path (fulfillment partner decision gates July 1-8 for Week 1 SKU production ramp). All three tracks fully pre-researched (Item 29 completed). Roadmap provides sequencing rationale, resource allocation, and contingency triggers.
+   - **Status**: Production-ready, awaiting test print pass. Documents available immediately upon user decision to proceed with Phase 2.
+   - **Confidence**: 84% (Tracks 2-4 research outlines complete per Session 4132, sequencing logic sound, timelines realistic based on supplier lead times)
+
 20. **open-repo: Detailed Platform Decision Analysis & Deployment Runbook Preparation** (2-3h) ← **✅ COMPLETE (Session 4086, June 23 20:33 UTC)**
    - ✅ Executed 18:42–20:33 UTC June 23 (general-research agent autonomous execution)
    - Deliverables completed: `RASPBY1_DETAILED_PLATFORM_ANALYSIS.md` (422 lines, 11 KB, 6-dimension matrix), `DOCKER_DEPLOYMENT_RUNBOOK.md` (669 lines, 8.5 KB, 7-phase procedure), `SYSTEMD_DEPLOYMENT_RUNBOOK.md` (763 lines, 10 KB, 11-phase procedure), `DEPLOYMENT_SUCCESS_CRITERIA_AND_VALIDATION.md` (706 lines, 7 KB, 7 metrics + 7 tests)
