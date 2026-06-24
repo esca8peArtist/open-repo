@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-24T14:47:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-24T15:16:22Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.7% (148,444 tokens) | All-models 52.5% | Reset in 129h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.7% (148,444 tokens) | All-models 53.5% | Reset in 129h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -75,42 +75,42 @@
 (none currently)
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+**Deployment Script Status**: ✅ READY
+- Script: `/home/awank/dev/SuperClaude_Framework/scripts/deploy-realtime-stream-fix.sh`
+- Automated steps: Code sync, fix verification, container restart, health check
+- Success criteria: API health returns 200 OK, no timeout-related logs
 
-**Initiated**: 2026-06-24 12:48 UTC (validation window standby to live monitoring transition)
+**Deployment Commands (ready to execute at 20:30 UTC)**:
+```bash
+cd /home/awank/dev/SuperClaude_Framework
+bash scripts/deploy-realtime-stream-fix.sh
+```
 
-**Status**: ✅ **READY FOR PHASE 0 EXECUTION — ALL SYSTEMS VERIFIED OPERATIONAL**
+### Risk Assessment
 
-**Work Completed**:
+- **Risk level**: LOW
+- **Why safe**:
+  - All 72 tests pass (comprehensive coverage)
+  - Fix is narrowly scoped: remove one timeout wrapper
+  - Stream's exception handlers unchanged (catch real problems)
+  - `_run_forever()` is standard asyncio pattern (indefinite coroutine)
+  - Rollback time: <5 minutes (just restart container with old image)
 
-1. **System Orientation & Verification** (12:48 UTC):
-   - ✅ Read ORCHESTRATOR_STATE.md: stockbot deployment live, 5-session config running (JPM ridge_wf + AMZN/AAPL/MSFT/NVDA lgbm_ho)
-   - ✅ Read BLOCKED.md: 5 active blocks all user-action-dependent (no auto-resolvable items)
-   - ✅ Read INBOX.md: empty (no new items)
-   - ✅ Read PROJECTS.md: resistance-research Phase 2 complete, all other projects appropriate state
-   - ✅ Verified Jetson connectivity: SSH OK, Docker container healthy (3+ hours uptime), all 5 sessions initialized
-   - ✅ Reviewed Docker logs: All sessions sleeping until 13:15 UTC, ready for pre-market checks. WebSocket reconnect cycles are normal background noise (expected pre-market).
+- **Failure modes**:
+  - If stream still times out: logs will show it (unexpected timeout handler)
+  - If API unreachable: deployment script verifies health endpoint
+  - If code sync fails: rsync error will be logged, no container restart
 
-2. **Validation Window Protocol Readiness**:
-   - ✅ Read JUNE24_VALIDATION_QUICK_START.md: Full monitoring protocol understood
-   - ✅ Read JUNE24_VALIDATION_MONITORING_CHECKLIST.md: All Phase 0→3 commands staged and copy-paste ready
-   - ✅ Decision rules memorized: GO if all Phase 0 gates + regime != None; NO-GO if any gate fails
-   - ✅ Hard stops identified: regime=None >10min, signal dropout >30min, P&L < -$5,631, DD > 20%, auth errors >5min
+### Metrics
 
-3. **Orchestrator Standing-By Status**:
-   - **Phase 0 (13:15–13:30 UTC)**: Ready to execute 6 pre-market gates via SSH (Docker/API/sessions/clock/auth/HMM)
-   - **Phase 1 (13:30–13:35 UTC)**: Ready to verify regime ≠ None + signal emergence (buy_prob > 0.1)
-   - **Phase 2 (13:30–20:00 UTC)**: Ready to execute Z-drift checks every 30 min + P&L every 60 min
-   - **Phase 3 (20:00–20:30 UTC)**: Ready to execute post-market summary + phase 4 outcome classification
-   - **Daily June 25-30**: Same cadence repeats
+- Code fix application: 2 min
+- Test suite: 13 sec (72 tests, all pass)
+- Submodule commit: 1 min
+- **Total preparation time**: 16 minutes
+- **Confidence**: 99% (tests verify correctness, timeline intact)
 
-**Timeline Locked**:
-- **T-27m (13:15 UTC)**: Phase 0 execution begins
-- **T-42m (13:30 UTC)**: Market open + Phase 1 checks
-- **T+7h 12m (20:00 UTC)**: Phase 3 post-market checks
-- **T+7h 42m (20:30 UTC)**: Daily summary logged to VALIDATION_DAILY_SUMMARY_TEMPLATE.md
+### Orchestrator Posture
 
-**Next Action**: ScheduleWakeup at 13:15 UTC to begin Phase 0 pre-market gate execution.
+✅ **STANDING BY FOR 20:30 UTC DEPLOYMENT** — Fix applied and verified. Code synced to main repo. Deployment script ready. Container currently Exited from 13:52 UTC (expected — validation paused per Option B). Will restart container at 20:30 UTC with fixed code. June 25 13:15 UTC Phase 0 pre-market gates unblocked.
 
-**Autonomous work this session**: ZERO (validation window standby — correct by design)
-
-**Confidence**: 98% (all infrastructure verified, no code changes since June 22 23:06 UTC deployment, all gates confirmed operational)
+**Next Action**: Execute deployment at 20:30 UTC (6h 40m from now). Monitor market hours; no further autonomous work until deployment window opens.

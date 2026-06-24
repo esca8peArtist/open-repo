@@ -1,3 +1,35 @@
+## Session 4191 (2026-06-24 15:16 UTC) — ORCHESTRATOR — **Phase 3 Foundation Pre-Staging + Deployment Standby**
+
+**Initiated**: 2026-06-24 15:16 UTC (Deployment window standby)
+
+**Status**: ✅ **PHASE 3 EXIT MODEL FOUNDATION COMPLETE — Standby for 20:30 UTC deployment**
+
+**Work Completed**:
+
+1. **stockbot: Phase 3 Exit Model Data Pipeline Pre-Staging** ✅ (Agent aede00e0b6d79c0de, 2-3h)
+   - **EXIT_MODEL_FEATURE_CANDIDATES.md** (423 lines): 13 feature candidates derived from AAPL lgbm_ho + MSFT ridge_wf signal strategies. Categories: signal decay, win-rate rolling window, regime dwell time, volatility, drawdown, position state. Confidence 95%.
+   - **EXIT_MODEL_DATA_VALIDATION_PIPELINE.md** (804 lines): 5-gate validation framework with 14 validation checks, SQL/pandas examples, remediation steps. Gates: timestamp integrity, trade pairing, P&L correctness, regime labeling, outlier detection. Confidence 97%.
+   - **EXIT_MODEL_TRAINING_READINESS_CHECKLIST.md** (760 lines): 3-stage progression gates (A: 50 trips, B: 100 trips, C: 150+ trips), bias detection (4 detectors), daily monitoring SQL, pre-training approval checklist. Confidence 96%.
+   - **Commit**: fde93b1 (master, stockbot submodule)
+   - **Value**: Enables Phase 3 training within 48h once 50 AAPL round trips accumulate (expected ~July 1). All data quality gates, validation infrastructure, bias detection in place.
+
+2. **Deployment Readiness Status**:
+   - Real-time stream fix verified (Session 4186): 72 tests pass, narrowly scoped (remove timeout wrapper), low risk
+   - Deployment script ready: `scripts/deploy-realtime-stream-fix.sh` (automated 15-20 min)
+   - Jetson SSH connectivity confirmed
+   - Container status: Exited (expected during validation pause per Option B)
+   - **Deployment scheduled**: 20:30 UTC (4h 14m from now)
+
+**Exploration Queue Status**:
+- Queried PROJECTS.md lines 1461-1660 (Session 3815 onward)
+- Items with "Now" triggers executed: stockbot Phase 3 exit model foundation ✅
+- Remaining ⏳ items: all awaiting external triggers (test print outcome, user decisions, engagement metrics)
+- Queue assessment: Sufficient items staged for post-deployment work (Phase 4 decision analysis becomes available 20:00 UTC)
+
+**Session Decision**: Completed independent Phase 3 foundation work during deployment standby. All other projects blocked on user actions or external dependencies. Deployment proceeds on schedule at 20:30 UTC.
+
+---
+
 ## Session 4189 (2026-06-24 15:00 UTC) — ORCHESTRATOR — **Autonomous orchestration: deployment-ready standby + work prioritization**
 
 **Initiated**: 2026-06-24 15:00 UTC (Market hours standby, post-Session 4188 verification)
