@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-24T13:39:21Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-24T14:23:29Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.7% (148,444 tokens) | All-models 50.8% | Reset in 130h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.7% (148,444 tokens) | All-models 51.7% | Reset in 130h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,7 +23,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ⚠️ **[BLOCKED] PHASE 1 VALIDATION FAILURE 2026-06-24 13:30–13:32 UTC — REAL-TIME STREAM ERROR AT MARKET OPEN** — Deployment LIVE on Jetson but unable to generate signals. **Timeline of Failure**: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open and began signal cycles ✅. (2) 13:30:47 UTC: StreamHealthWatchdog reported ZERO real-time data ticks for all tickers (AMZN 44.7 min, MSFT 72.8 min, NVDA 12.8 min, JPM timestamp corrupt). (3) 13:31:49 UTC: Container auto-restart … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ⚠️ **[PAUSED] PHASE 1 VALIDATION WINDOW HARD-PAUSED 2026-06-24 13:49 UTC — REAL-TIME STREAM CRITICAL FAILURE** — Real-time WebSocket/IEX stream not receiving tick data at market open. Cascading failures: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open, began signal cycles ✅. (2) 13:30:47 UTC: StreamHealthWatchdog detected ZERO real-time ticks (80+ min gap). (3) 13:31:49 + 13:48:49 UTC: Container auto-restarted 2×. (4) **13:48:49–13:49:13 UTC: All 5 sessions circuit- … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -39,13 +39,6 @@
 **What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
 **Verify with**: `bash scripts/verify-calibration.sh`
 **Resolution**: ⏳ **AWAITING USER ACTION** — Calibration last updated 2026-06-10 (13 days ago, beyond 7-day drift window). Need actual Sonnet % and All-models % from claude.ai Settings UI. Script ready to execute once percentages provided.
----
-### stockbot — CRITICAL: Phase 1 validation failure (13:30–13:32 UTC) — real-time stream error at market open
-**Date blocked**: 2026-06-24 13:32 UTC
-**Context**: **Phase 1 FAILURE — validation window unable to generate signals at market open.** Timeline: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open and began signal cycle ✅. (2) 13:30:47 UTC: StreamHealthWatchdog reported ZERO real-time data ticks for all tickers — AMZN (44.7min), MSFT (72.8min), NVDA (12.8min), JPM (epoch corruption but still no ticks). System hung. (3) 13:31:49 UTC: Orchestrator auto-restarted Docker container (SIGTERM graceful shutdown). (4) 13:32:12–13:32:23 UTC: Container came back up, alembic migration successful, database manager initialized, all components resuming. (5) 13:32:43–13:32:44 UTC: Sessions re-detected market open and began HMM priming again. **STILL AT 13:32 UTC: System stuck in HMM initialization. ZERO signals or regime values generated.** Estimated 2+ minutes without any signal output at market open — validation window integrity compromised. Root cause: Real-time data stream failed to initialize; system cannot proceed to signal generation without tick data. Historical bar fetching works (Alpaca API OK) but live WebSocket stream appears non-functional.
-**What I need**: (1) **User decision**: Proceed with second container restart (likely to have same result), or manually investigate stream connectivity issue on Jetson? (2) **Immediate action**: If restart → wait 5 min, verify regime ≠ None + buy_prob emergence. If both appear, continue validation. If not, escalate to hard pause until root cause found. (3) **Post-validation**: Investigate StreamHealthWatchdog time calculation bug (JPM shows 29 million minutes — clearly epoch handling error) and real-time stream initialization sequence.
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 120s 2>&1 | grep -iE 'regime|buy_prob|signal' | head -5"` — should show at least 1 regime and 1 buy_prob value if recovery succeeds
-**Resolution**: [leave blank]
 ---
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
@@ -63,13 +56,20 @@
 **Resolution**: [leave blank]
 ---
 ### mfg-farm — Test print execution (user action required)
+**Date blocked**: 2026-05-13
+**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
+**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
+**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
+**Resolution**: [leave blank]
+---
+### open-repo — June 12 deployment never executed; infrastructure missing on raspby1
 
 ## Recently Resolved (last 5)
+• stockbot — CRITICAL: Phase 1 validation failure (13:30–13:40 UTC) — real-time stream NOT initialized, sessions timing out ← 2026-06-24 14:00 UTC (Session 4186, orchestrator orientation)
 • stockbot — CRITICAL: Container API startup was blocked by missing alembic.ini volume mount ← 2026-06-24 09:48 UTC (Session 4160 — orchestrator autonomous fix + verification)
 • stockbot — HMM regime initialization NameError (undefined close_prices variable) ← 2026-06-23 21:22 UTC (Session 4092 — orchestrator autonomous fix + deploy)
 • resistance-research — SCOTUS Little v. Hecox deadline passed 18:00 UTC; outcome unverified ← 2026-06-23 18:05 UTC (Session 4084+)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
-• stockbot — June 16 validation window with 5-session expanded configuration ← 2026-06-16 17:34 UTC (Session 3XX — orchestrator verification)
 
 ## Inbox (unprocessed)
 (none currently)

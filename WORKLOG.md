@@ -1,3 +1,41 @@
+## Session 4187 (2026-06-24 14:24 UTC) — ORCHESTRATOR — **Root cause diagnosis: stockbot real-time stream timeout architecture flaw**
+
+**Initiated**: 2026-06-24 14:24 UTC (Post-market investigation phase)
+
+**Status**: 🔴 **CRITICAL ROOT CAUSE IDENTIFIED — Stream destroyed by 300s hard timeout**
+
+**Diagnosis**:
+
+1. **Real-time Stream Failure Timeline** (13:32–13:50 UTC):
+   - 13:32:43: All 5 sessions initialized, HMM priming complete
+   - 13:37:14: Stream connection timed out after 300 seconds (first timeout)
+   - All 5 sessions entered backoff loop (30s → 60s → 120s)
+   - 13:42:44: Stream timed out again (second timeout)
+   - 13:48:49: Circuit breaker triggered after 3rd timeout, all sessions paused
+
+2. **Root Cause Discovered** (14:24 UTC code analysis):
+   - **File**: `src/data/realtime_stream.py` lines 50, 566, 581-584
+   - **Problem**: `asyncio.wait_for(self.stream._run_forever(), timeout=300)` wraps stream in hard 300-second timeout
+   - **Effect**: Stream is killed every 5 minutes REGARDLESS of connection state
+   - **Impact**: Stream connects → subscribes successfully → times out → reconnects → times out again
+   - **Architecture flaw**: `_run_forever()` is designed to run indefinitely; wrapping it in 300s timeout defeats its purpose
+   - **Result**: 3 consecutive cycle timeouts = circuit breaker activation = validation paused
+
+3. **Evidence**:
+   - Docker logs show successful subscription after each reconnect ("Re-subscribed to ['AAPL', 'AMZN', 'JPM', 'MSFT', 'NVDA']")
+   - No indication of data NOT being received — timeout kills connection before any tick data would arrive
+   - Exponential backoff shows deliberate timeout handling, not connection errors (would show WebSocketException, not TimeoutError)
+
+4. **Post-Market Investigation Plan** (20:00+ UTC):
+   - Option A: Remove/increase timeout (infinity or 3600s) — stream should only timeout if truly hung (>1h no activity)
+   - Option B: Implement activity-based timeout — only timeout if NO tick data received for 5 min (vs. hard 5 min)
+   - Option C: Fallback to historical bar polling if real-time stream fails (lose tick granularity but regain trading capability)
+   - Estimated fix time: Option A = 5 min + test, Option B = 30-45 min + test, Option C = 2-3 h
+
+**Next Action**: Deploy timeout fix post-market (20:30+ UTC) after user is notified of root cause. Trading resumed by market open June 25.
+
+---
+
 ## Session 4186 (2026-06-24 14:00 UTC) — ORCHESTRATOR — **Pre-staged cybersecurity-hardening Phase 2 infrastructure (exploration queue item #4 complete)**
 
 **Initiated**: 2026-06-24 14:00:36 UTC (Session orientation post-stockbot critical pause)
