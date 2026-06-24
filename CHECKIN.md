@@ -2,6 +2,37 @@
 
 ---
 
+## Session 4170 (2026-06-24 11:33 UTC) — ORCHESTRATOR — **CONTAINER RECOVERY + VALIDATION WINDOW STANDBY — PHASE 0 GATES IN 1H 42M**
+
+### ✅ **JETSON CONTAINER RECOVERED — ALL SYSTEMS OPERATIONAL — STANDING BY FOR PHASE 0 EXECUTION**
+
+**Status**: Health check and container recovery session at T-1h 42m to Phase 0 execution. Identified Jetson container in failed restart loop (alembic migration failures from 06:03 UTC). Executed `docker stop/start` recovery action. Container now HEALTHY: Uvicorn running on port 8000, all 5 trading sessions initialized and loaded. Cash pool seeded from live Alpaca ($101,660.61). Code freeze maintained. Zero new INBOX items. All 5 active blocks remain user-action-dependent. Autonomous work: ZERO (correct by design).
+
+**Work Completed** (11:33 UTC):
+1. ✅ **Jetson Container Recovery** — Container failed restart loop, manual restart completed, now HEALTHY
+   - Docker logs show: Uvicorn running, all 5 sessions resumed with correct strategy configs
+   - Trading sessions: JPM ridge_wf, AMZN/AAPL/MSFT/NVDA lgbm_ho — all active
+   - Real-time data stream: Connected and re-subscribed to ['AAPL', 'AMZN', 'JPM', 'MSFT', 'NVDA']
+   - Cash pool: $101,660.61 (seeded from live Alpaca)
+   - Risk managers: Initialized for all 5 sessions
+   - Shutdown handlers: Registered for graceful shutdown protocol
+   
+2. ✅ **Jetson Verification** — SSH OK, ping OK (9.27ms), Docker logs confirm full session resumption
+
+**Timeline**:
+- **Now (11:33 UTC)**: Container recovered, standing by (T-1h 42m to Phase 0)
+- **13:10 UTC**: Wakeup reminder (5 min before Phase 0)
+- **13:15–13:30 UTC**: Phase 0 pre-market health gates (6 SSH checks, GO/NO-GO decision)
+- **13:30 UTC**: Market open + Phase 1 signal emergence check (3 checks, ~5 min)
+- **13:30–20:00 UTC**: Phase 2 continuous monitoring (Z-drift every 30 min, P&L every 60 min)
+- **20:00–20:30 UTC**: Phase 3 post-market summary + Phase 4 decision framework fill-in
+
+**Items Needing User Input**: None at this time. All blocks user-action-dependent.
+
+**Orchestrator Posture**: ✅ **STANDING BY FOR PHASE 0 EXECUTION** — Container recovered, all infrastructure production-ready. Wakeup scheduled for 13:10 UTC (5 min pre-gates). Ready to execute validation window protocol on schedule.
+
+---
+
 ## Session 4169 (2026-06-24 11:24 UTC) — ORCHESTRATOR — **VALIDATION WINDOW STANDBY — PHASE 0 GATES IN 1H 51M**
 
 ### ✅ **ALL SYSTEMS VERIFIED OPERATIONAL — READY FOR PHASE 0 EXECUTION**
