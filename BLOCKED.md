@@ -42,6 +42,19 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — CRITICAL: Phase 1 validation failure (13:30–13:32 UTC) — real-time stream error at market open
+
+**Date blocked**: 2026-06-24 13:32 UTC
+**Context**: **Phase 1 FAILURE — validation window unable to generate signals at market open.** Timeline: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open and began signal cycle ✅. (2) 13:30:47 UTC: StreamHealthWatchdog reported ZERO real-time data ticks for all tickers — AMZN (44.7min), MSFT (72.8min), NVDA (12.8min), JPM (epoch corruption but still no ticks). System hung. (3) 13:31:49 UTC: Orchestrator auto-restarted Docker container (SIGTERM graceful shutdown). (4) 13:32:12–13:32:23 UTC: Container came back up, alembic migration successful, database manager initialized, all components resuming. (5) 13:32:43–13:32:44 UTC: Sessions re-detected market open and began HMM priming again. **STILL AT 13:32 UTC: System stuck in HMM initialization. ZERO signals or regime values generated.** Estimated 2+ minutes without any signal output at market open — validation window integrity compromised. Root cause: Real-time data stream failed to initialize; system cannot proceed to signal generation without tick data. Historical bar fetching works (Alpaca API OK) but live WebSocket stream appears non-functional.
+
+**What I need**: (1) **User decision**: Proceed with second container restart (likely to have same result), or manually investigate stream connectivity issue on Jetson? (2) **Immediate action**: If restart → wait 5 min, verify regime ≠ None + buy_prob emergence. If both appear, continue validation. If not, escalate to hard pause until root cause found. (3) **Post-validation**: Investigate StreamHealthWatchdog time calculation bug (JPM shows 29 million minutes — clearly epoch handling error) and real-time stream initialization sequence.
+
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 120s 2>&1 | grep -iE 'regime|buy_prob|signal' | head -5"` — should show at least 1 regime and 1 buy_prob value if recovery succeeds
+
+**Resolution**: [leave blank]
+
+---
+
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
