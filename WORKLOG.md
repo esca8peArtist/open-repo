@@ -17644,3 +17644,23 @@ Orchestrator orientation + state verification. All systems confirmed production-
 
 ### Orchestrator Posture
 ✅ **STANDING BY FOR VALIDATION WINDOW** (13.25 hours, 13:15–20:00 UTC June 24). All infrastructure verified. Experimental code discarded. Ready for pre-market checklist execution.
+
+### Validation Window Phase 0 Execution Summary (10:05 UTC)
+
+**Pre-market gates ready** (execute at exactly 13:15 UTC):
+1. SSH Access & Docker Container Running — `docker ps | grep stockbot`
+2. API Health Endpoint — `curl -s http://100.120.18.84:8000/api/health`
+3. All 5 Sessions Initialized — `curl -s http://100.120.18.84:8000/api/sessions/status`
+4. Market Clock Synchronized — `curl -s http://100.120.18.84:8000/api/market/clock`
+5. Alpaca API Connectivity — Check logs for 401/403 errors
+6. HMM Regime Initialization — Check logs for regime != None on all 5 sessions
+
+**Success criteria**: All 6 gates PASS → GO decision for Phase 1-3 validation
+**Failure criteria**: Any gate FAIL → NO-GO, escalate to user immediately
+
+**Phase 1** (13:30 UTC): Signal emergence check (3 checks, ~10 min)
+**Phase 2** (13:30–20:00 UTC): Continuous monitoring (Z-drift every 30 min, P&L every 60 min)
+**Phase 3** (20:00 UTC): Post-market summary (4 final checks, ~30 min)
+
+**Orchestrator Standing By**: Ready to execute Phase 0 at 13:15 UTC UTC. All commands copy-paste ready from JUNE24_VALIDATION_MONITORING_CHECKLIST.md.
+
