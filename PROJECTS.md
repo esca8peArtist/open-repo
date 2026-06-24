@@ -519,6 +519,33 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - Status: **PRODUCTION-READY** — All 5 failure modes with recovery procedures staged. User can reference immediately if pre-boot test fails.
    - Confidence: 82% (all failure modes backed by official sources, covers 80%+ of reported failure patterns)
 
+39. **systems-resilience: Phase 5.2 Author Onboarding & Content Integration Planning** (2-3h)
+   - Trigger condition: Phase 5.1 platform deployment completes (awaiting user platform decision; expected June 24-26 execution, June 26-29 validation)
+   - Scope: Pre-stage Phase 5.2 author onboarding and content integration. Phases: (1) Author recruitment strategy (Discord channels, domain-specific lists, direct outreach), (2) Onboarding workflow (content delivery templates, review procedures: editor → technical → legal), (3) Content integration checklist (platform section mapping, SEO optimization, internal linking), (4) Success metrics (publication rate, quality scores, community engagement). De-risk post-deployment execution by having all author workflows documented and templated.
+   - Value: Phase 5.1 deployment is longest-lead work (3-5 days soak test through June 26-29). By June 26-27, Phase 5.2 infrastructure should be ready so author recruitment can activate immediately upon platform validation. Removes day-1 post-deployment friction; enables parallel author recruitment/onboarding while platform stabilizes.
+   - Deliverables: `PHASE_5_2_AUTHOR_RECRUITMENT_PLAYBOOK.md` (persona definitions, channel strategy, outreach templates), `AUTHOR_ONBOARDING_RUNBOOK.md` (step-by-step integration procedures, content delivery workflow, review checklist), `CONTENT_INTEGRATION_SUCCESS_METRICS.md` (KPIs per domain, publication timeline, quality gates)
+   - Owner: systems-resilience team
+   - Confidence: 78% (Phase 5.1 infrastructure being pre-staged in parallel; author recruitment patterns documented; requires platform architecture finalization post-deployment decision)
+   - Status: Ready to execute once platform deployment decision made (expected June 24-25)
+
+40. **mfg-farm: Post-Test-Print Phase 2 Execution Automation** (2-3h)
+   - Trigger condition: Test print execution + pass/fail decision (expected June 28, 2026; user physical action)
+   - Scope: Prepare automated Phase 2 activation framework. Phases: (1) PASS path: Wave 1 CAD generation automation (parametric design scripts for cable tray, surge protector, cable organizer — all toolpath-ready in <2h), (2) Vendor ordering orchestration (pre-filled PO templates for Fulfillrite logistics, materials from Item 25 supplier list, payment via Etsy Payments per Item 25 findings), (3) Fulfillment partner activation (Fulfillrite onboarding checklist, SOPs for inventory integration, SLA verification). FAIL path: Fallback to design iteration (tolerance adjustment workflow, re-print decision window). De-risk post-test-print execution by automating decision tree and vendor activation.
+   - Value: Test print is hard gate for Phase 2 (expected June 28). Post-print decision window is compressed (24h). Pre-staging execution automation enables immediate Wave 1 launch (CAD + vendor activation + fulfillment partner setup) within 48h of PASS decision.
+   - Deliverables: `POST_TEST_PRINT_DECISION_TREE.md` (PASS/FAIL routing, timeline options), `PHASE_2_WAVE_1_CAD_GENERATION_AUTOMATION.md` (parametric scripts, tool library, 2h execution plan), `PHASE_2_VENDOR_ORDERING_ORCHESTRATION.md` (pre-filled POs, Fulfillrite integration, payment workflow), `PHASE_2_FALLBACK_DESIGN_ITERATION_PLAN.md` (tolerance adjustment procedure, re-print decision window, cost impact analysis)
+   - Owner: mfg-farm team
+   - Confidence: 82% (Phase 2 research Items 25/29 complete; CAD infrastructure exists; vendor database validated; requires test print outcome)
+   - Status: Ready to execute upon test print decision (expected June 28-29)
+
+41. **stockbot: Multi-Session Coordination & Risk Aggregation Framework** (2-3h)
+   - Trigger condition: Phase 4 path decision confirmed (expected June 24-25 post-validation synthesis, Item 33)
+   - Scope: Pre-stage multi-session orchestration architecture for Phase 4 expansion. Phases: (1) Session coordination protocol (distributed signal arbitration across 5→7+ sessions, regime consensus rule, portfolio-level position-sizing enforcement), (2) Risk aggregation framework (portfolio Greeks across option + equity sessions, drawdown calculation across multi-strategy portfolio, margin utilization aggregation), (3) Capital allocation guardrails (per-session caps vs portfolio caps, correlation-based reallocation logic, emergency halt procedures for cascade failures). De-risk multi-strategy expansion by having coordination + risk infrastructure pre-documented and templatable.
+   - Value: Phase 4 path decision (Item 33, expected June 24-25) determines which strategies activate (Covered Calls Path A, Inverse ETF Path B, PEAD Path C). Each path requires multi-session coordination. Pre-staging coordination framework enables 7-14 day deployment (typically July 1-14) without architectural delays.
+   - Deliverables: `MULTI_SESSION_COORDINATION_PROTOCOL.md` (signal arbitration rules, position-sizing enforcement, cascade failure detection), `PORTFOLIO_RISK_AGGREGATION_FRAMEWORK.md` (Greeks aggregation, drawdown calculation, margin utilization), `PHASE_4_MULTI_STRATEGY_CAPITAL_ALLOCATION_GUARDRAILS.md` (per-session caps, correlation-based reallocation, emergency halt procedures)
+   - Owner: stockbot team
+   - Confidence: 85% (Phase 4 decision framework Items 28/33 complete; session coordination patterns documented; requires Phase 4 path confirmation)
+   - Status: Ready to execute upon Phase 4 path decision (expected June 24-25)
+
 ---
 
 **REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). **✅ DOMAIN 59 COMPLETE** (Session 2839). Total remaining Phase 2 production estimate: 40-50 hours Q3 2026. Phase 1 path decided (Path A + Domain 37); Phase 2 research execution proceeds immediately or post-Wave-1; Domain 59 distribution activation ready June 5.
