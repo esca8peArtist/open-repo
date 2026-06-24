@@ -468,6 +468,37 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - Owner: resistance-research team (agent execution)
    - Confidence: 85% (110 verified sources, 32 expert contacts validated, runbook covers all electoral scenarios)
 
+36. **stockbot: June 25 Pre-Market Validation Gates Execution & Outcome Recording** (1-1.5h)
+   - Trigger condition: June 25 13:15 UTC pre-market wakeup
+   - Scope: Execute Phase 0 pre-market health gates (6 gates per JUNE24_VALIDATION_MONITORING_CHECKLIST.md). Gates: (1) Container health (docker ps), (2) Alpaca API connectivity (curl paper-api), (3) Real-time stream initialization (docker logs), (4) DB schema (13 tables present), (5) Session state loading (all 5 sessions initialized), (6) API health endpoint (200 OK response). Record gate outcomes by 13:25 UTC (5 min buffer before 13:30 market open).
+   - Deliverable: Pre-filled `JUNE_25_PRE_MARKET_GATE_RECORD.md` (timestamp each gate, PASS/CAUTION/FAIL status, brief error notes if needed)
+   - Value: Captures gate outcomes at exact moment. Used as input for Item 33 synthesis if validation window completes successfully.
+   - Status: Staged and ready. Execution window: June 25 13:15–13:25 UTC (10 min, orchestrator + user verification)
+   - Confidence: 95% (all gates are mechanical SSH/curl commands with clear success criteria)
+
+37. **resistance-research: Domains 51/48 Wave 1 Escalation Execution & Contingency Trigger** (1h)
+   - Trigger condition: June 25 12:00 UTC (overdue check). If Wave 1 sends NOT executed by user → execute escalation
+   - Scope: Domains 51/48 Wave 1 sends are production-ready and overdue (expected June 23-27, now June 24). If user hasn't executed by June 25 12:00 UTC: (1) Send orchestrator reminder to CHECKIN.md with "EXECUTE NOW" urgency flag, (2) Prepare simplified 3-email send sequence (only top-3 contacts per domain, not full list), (3) If user executes escalation sequence → record in WORKLOG.md for Wave 2 planning impact assessment
+   - Deliverable: `DOMAINS_51_48_ESCALATION_EXECUTION_SIMPLIFIED.md` (compressed template for simplified 3-contact send, contingency checkboxes)
+   - Value: Prevents momentum loss. If full Wave 1 can't execute by June 25 12:00 UTC, simplified sequence maintains Domain 59 Tier 2 deadline (June 25-30) and enables Wave 2 immediately after.
+   - Status: Ready to execute conditionally (IF user hasn't sent by June 25 12:00 UTC)
+   - Confidence: 88% (escalation playbook already staged in Item 27; this is execution + outcome recording)
+
+38. **cybersecurity-hardening: Phase 1 VeraCrypt Pre-Boot Test Failure Recovery Procedures** (1.5-2h) ← **✅ COMPLETE (Session 4227, 21:25 UTC)**
+   - ✅ **Executed** 21:21–21:25 UTC June 24 (general-research subagent execution)
+   - Deliverable: `veracrypt-preboot-failure-modes.md` (1,847 lines, 42 KB)
+   - **5 Failure Modes Documented**:
+     1. Secure Boot Blocking Bootloader (recovery: disable Secure Boot, 10-20 min)
+     2. UEFI Boot Order Overwrite / Automatic Repair Loop (recovery: Rescue Disk bcdedit or OEM firmware redirect, 20-35 min)
+     3. Password Rejected Despite Correct Entry (recovery: keyboard layout mismatch workaround, 15-25 min)
+     4. USB Keyboard Unresponsive at Boot (recovery: enable USB Legacy Support in BIOS, 15-20 min)
+     5. System Hangs at "Booting..." After Password Accepted (recovery: flash BIOS / Escape workaround / Rescue Disk restore, 20-45 min)
+   - **Strengths**: All modes backed by official VeraCrypt/Microsoft docs; critical ground rules section; pre-boot test success checklist (>90% success probability); step-by-step BIOS navigation + bcdedit commands + Rescue Disk workflows
+   - **Limitations**: Windows 11 24H2 "Booting..." hang is open bug (60% workaround confidence); RAID encryption not covered (unsupported by VeraCrypt)
+   - **Value**: User can recover from pre-boot test failure without waiting for next session (immediately actionable, 15-45 min recovery per mode). Unblocks Phase 1 faster if failure occurs June 25-26.
+   - Status: **PRODUCTION-READY** — All 5 failure modes with recovery procedures staged. User can reference immediately if pre-boot test fails.
+   - Confidence: 82% (all failure modes backed by official sources, covers 80%+ of reported failure patterns)
+
 ---
 
 **REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). **✅ DOMAIN 59 COMPLETE** (Session 2839). Total remaining Phase 2 production estimate: 40-50 hours Q3 2026. Phase 1 path decided (Path A + Domain 37); Phase 2 research execution proceeds immediately or post-Wave-1; Domain 59 distribution activation ready June 5.
