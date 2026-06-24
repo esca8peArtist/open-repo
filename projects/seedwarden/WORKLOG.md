@@ -4,6 +4,49 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 129 — Rare & Endangered Native Plant Research & Market Positioning — June 24, 2026 (Exploration Queue Item 14)
+
+**Session**: June 24, 2026  
+**Task**: Exploration Queue Item 14 — Rare & Endangered Native Plant Research & Market Positioning (3-4h scope)
+
+**Status**: COMPLETE — 3 files committed, production-ready.
+
+**Deliverables**:
+
+1. **RARE_PLANTS_MARKET_RESEARCH.md**
+   - 25-species portfolio ranked by Seedwarden viability score (10 Tier 1–2; 15 Tier 3 regional specialists)
+   - Full margin analysis: $18,000–$34,000/year revenue potential at conservative 50 sales/listing velocity
+   - 3 regional clusters (Appalachian Medicinals, Eastern Woodland Ephemerals, Western/Prairie) with batch-sourcing efficiency analysis
+   - Pricing architecture: single-species guides $22–32; bundles $38–52; institutional $60–90
+   - Production priority sequence: Phase A (Appalachian 4-bundle), Phase B (Woodland Ephemerals), Phase C (Western)
+   - Propagation pathway by species: tissue culture, seed, rhizome division, mycorrhizal-dependency flags
+
+2. **IENATURALIST_INTEGRATION_PLAYBOOK.md**
+   - Data quality framework: Research Grade criteria, geographic coverage assessment, phenology completeness thresholds
+   - Per-species observation count table for all 20 priority species (CC-BY/CC0 commercial-use observation counts)
+   - 5-step species assessment protocol with Species Data Sheet template
+   - Contributor outreach protocol (template, timeline, attribution standard) for CC-BY-NC to commercial permission conversion
+   - Phenology data extraction workflow; GBIF integration for range maps and trend monitoring
+   - Complete sourcing decision tree from assessment through guide production
+
+3. **BOTANICAL_GARDEN_PARTNERSHIP_OUTREACH.md**
+   - 14 contact opportunities: 6 Tier 1 (NCBG, USBG, MoBG, ABG, Native Plant Trust, CPC) + 8 Tier 2 regional specialists
+   - Value exchange model: photo licensing + content review for revenue-share donation + co-marketing
+   - 3 ready-to-send proposal templates (photo licensing, conservation org partnership, nursery photography)
+   - 8-week outreach sequencing schedule by tier
+   - Response tracking template + escalation playbook (3 fallbacks if Tier 1 contacts decline)
+
+**Research sources**: United Plant Savers At-Risk List; Penn State Extension goldenseal monograph; Wild Ozark Ginseng 2023-2024 price reports; American Ginseng Alliance 2024 harvest report; iNaturalist/GBIF dataset documentation; PMC study PMC10703310 (2023 data quality); CPC 2025 National Meeting records; MoBG image use policy; NCBG Plant Conservation program; existing Seedwarden internal research (endangered-species-candidate-list.md, endangered-species-market-analysis.md).
+
+**Key findings**:
+- Rare plant guides command 3–5× standard Seedwarden margin — validated against $700–950/lb wild ginseng pricing psychology and $13.23B herbal supplement market
+- NC Botanical Garden is the single highest-priority outreach target (covers 6+ priority Appalachian species in one partnership)
+- Missouri Botanical Garden's existing image policy may already authorize commercial photography at no charge — fastest win
+- United Plant Savers partnership (revenue share + At-Risk acknowledgment) is highest conservation-credibility signal available and directly targets Seedwarden's buyer demographic
+- iNaturalist CC-BY/CC0 observations sufficient for 8 of 20 priority species without outreach; contributor outreach protocol resolves 9 more; botanical garden photography needed for 3 (false unicorn, osha, lady's slipper)
+
+---
+
 ## Item 128 — Q4 Winter Product Strategy Research Complete — June 22, 2026 (Session 4009)
 
 **Session**: 4009, June 22, 2026
