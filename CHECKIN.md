@@ -2,6 +2,45 @@
 
 ---
 
+## Session 4155 (2026-06-24 08:28–08:31 UTC) — ORCHESTRATOR — **FULL ORIENTATION + STANDING-BY CONFIRMATION (4H 47M TO VALIDATION GATES)**
+
+### ✅ **ALL SYSTEMS PRODUCTION-READY — VALIDATION WINDOW IMMINENT**
+
+**Status**: Orchestrator orientation session at T-4h 47m to validation gates (13:15 UTC). Full orientation protocol completed: ORCHESTRATOR_STATE.md reviewed (deployment LIVE, all 5 sessions healthy, HMM fix stable), BLOCKED.md audited (5 active blocks all user-action-dependent, 0 auto-resolvable), PROJECTS.md verified (10 projects accounted for, all staged or waiting on user actions), INBOX.md empty (no new items), Exploration Queue verified (4 items with external triggers). Protocol compliance: standing-by posture correct by design. Code freeze maintained. All pre-market health gates ready to execute (copy-paste templates in JUNE24_VALIDATION_MONITORING_CHECKLIST.md).
+
+**Work Completed**:
+1. **Full Orientation Protocol** (08:28–08:31 UTC):
+   - ✅ ORCHESTRATOR_STATE.md: Reviewed — Deployment LIVE since June 22 23:06:20 UTC, 5-session config (JPM ridge_wf + AMZN/AAPL/MSFT/NVDA lgbm_ho), all healthy, sleeping until 13:15 UTC
+   - ✅ BLOCKED.md: Audited 5 active blocks (usage calibration, cybersecurity-hardening Phase 1 VeraCrypt, mfg-farm test print, open-repo platform decision, systems-resilience platform decision) — all require named user actions, 0 auto-resolvable
+   - ✅ PROJECTS.md: Verified project status — stockbot (validation-ready), resistance-research (Wave 2 staging complete), others blocked on user actions
+   - ✅ INBOX.md: Confirmed empty (no new items to process)
+   - ✅ Exploration Queue: 4 active items verified (all with external triggers: validation outcomes, user completions)
+
+2. **Standing-By Posture Confirmation**:
+   - ✅ Code freeze: Maintained (no changes to stockbot since Session 4088 validation staging)
+   - ✅ Deployment health: Jetson stockbot confirmed live and healthy (Docker containers UP, market-closed backoff in WebSocket normal)
+   - ✅ Pre-market gates: All 6 health checks staged and ready to execute (copy-paste from JUNE24_VALIDATION_MONITORING_CHECKLIST.md)
+   - ✅ Post-market framework: Templates staged for 20:00 UTC decision synthesis (KPI dashboard + routing matrix + capital allocation guardrails)
+
+**Autonomous Work Available**: **ZERO** (correct by design — all current-focus items complete or blocked on user actions, Exploration Queue items all trigger-dependent)
+
+**Key Metrics**:
+- Session duration: 3 minutes
+- Time to validation window: 4h 47m (13:15–20:00 UTC June 24)
+- Active blocks: 5 (all user-action-dependent)
+- Exploration Queue items: 4 (all external-trigger-dependent)
+- System health: ✅ All GREEN
+- Code freeze status: ✅ Maintained
+
+**Next Critical Event**: **13:15 UTC June 24** (~4h 47m away) — Pre-market validation gates Phase 0 (6 SSH health checks, ~15 min total, all copy-paste from JUNE24_VALIDATION_MONITORING_CHECKLIST.md, executable from Pi via SSH)
+
+**Needs Your Input**:
+1. **Validation window execution** (13:15 UTC, in ~4h 47m): Ready to execute 6 pre-market health gates. Checklist available at `projects/stockbot/JUNE24_VALIDATION_MONITORING_CHECKLIST.md` (all copy-paste commands, ~15 min execution)
+2. **Usage calibration** (BLOCKED.md): Provide actual Sonnet % and All-models % from claude.ai → Settings → Usage & billing, then run `bash scripts/verify-calibration.sh <pct> <pct>`
+3. **Validation monitoring** (13:15–20:00 UTC): KPI templates pre-staged for market-hours monitoring and post-market decision synthesis at 20:00 UTC
+
+---
+
 ## Session 4154 (2026-06-24 08:21–08:25 UTC) — ORCHESTRATOR — **FINAL PRE-MARKET STANDING-BY CONFIRMATION (4H 54M TO GATES)**
 
 ### ✅ **VALIDATION WINDOW SYSTEMS CONFIRMED PRODUCTION-READY — AWAITING USER EXECUTION**
