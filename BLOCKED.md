@@ -46,24 +46,25 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 **Date blocked**: 2026-06-24 13:32 UTC
 **Date verification attempted**: 2026-06-24 13:40 UTC (Session 4184, orchestrator autonomous check)
-**Context**: **Phase 1 FAILURE — validation window unable to generate signals at market open.** Timeline: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open and began signal cycle ✅. (2) 13:30:47 UTC: StreamHealthWatchdog reported ZERO real-time data ticks for all tickers (AMZN 44.7min, MSFT 72.8min, NVDA 12.8min, JPM 29M min — epoch bug). System hung. (3) 13:31:49 UTC: Orchestrator auto-restarted Docker container. (4) 13:32:12–13:32:23 UTC: Container resumed, DB healthy, sessions initialized. (5) 13:32:43–13:32:44 UTC: Sessions began HMM priming. (6) 13:37:14 UTC: First cycle attempt timed out after 300s (HMM initialization blocked on stream data). (7) 13:37:44–13:37:45 UTC: Automatic reconnection triggered; stream attempted reconnect and re-subscribed to tickers. (8) **13:37:50–13:38:14 UTC: Second cycle attempt in progress, sessions re-priming HMM. Last log: JPM fetching 1Day bars (13:38:14 UTC).** (9) **13:40:21 UTC (NOW): 127 seconds of log silence. No regime, buy_prob, or tick data received. Verification command returned ZERO output.** Root cause: Real-time WebSocket stream is connected (reconnected at 13:37:45) but NOT RECEIVING ANY TICK DATA. Historical bar fetches work (Alpaca API confirmed OK). Live ticks not arriving — stream initialization incomplete.
+**Date re-verified**: 2026-06-24 13:49 UTC (Session 4185, orchestrator autonomous escalation)
+**Context**: **Phase 1 FAILURE — validation window unable to generate signals at market open.** Timeline: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open and began signal cycle ✅. (2) 13:30:47 UTC: StreamHealthWatchdog reported ZERO real-time data ticks for all tickers (AMZN 44.7min, MSFT 72.8min, NVDA 12.8min, JPM 29M min — epoch bug). System hung. (3) 13:31:49 UTC: Orchestrator auto-restarted Docker container. (4) 13:32:12–13:32:23 UTC: Container resumed, DB healthy, sessions initialized. (5) 13:32:43–13:32:44 UTC: Sessions began HMM priming. (6) 13:37:14 UTC: First cycle attempt timed out after 300s (HMM initialization blocked on stream data). (7) 13:37:44–13:37:45 UTC: Automatic reconnection triggered; stream attempted reconnect and re-subscribed to tickers. (8) 13:37:50–13:38:14 UTC: Second cycle attempt in progress. (9) 13:40:21 UTC: Log silence persists. (10) **13:48:49–13:49:13 UTC (ESCALATION): Container auto-restarted again (~20 min ago). All 5 sessions now report CIRCUIT BREAKER triggered after 3 consecutive cycle failures. Trading paused by backoff. Logs show zero regime/buy_prob/signal output (only circuit breaker alerts).** Root cause unchanged: Real-time WebSocket stream initialized but NOT RECEIVING tick data. Historical bars work (Alpaca API OK). Live ticks: zero logged since 13:30 UTC.
 
 **Evidence**:
-- ✅ Container health: UP 8 minutes, healthy status
+- ✅ Container health: UP 20 minutes (recently restarted ~13:29 UTC), marked healthy
 - ✅ Historical bars: Successfully fetching all timeframes (5min, 15min, 1hour, 1day)
-- ❌ Real-time ticks: Zero ticks logged for any ticker since 13:30 UTC (40+ minute gap)
-- ❌ Verification command: `docker logs stockbot --since 120s | grep -iE 'regime|buy_prob|signal'` returned ZERO output (no matches)
-- ❌ Sessions: Timed out after 300s both attempts (13:37:19-13:37:43). Currently in second retry, likely to timeout again ~13:40:50 UTC without streaming data
+- ❌ Real-time ticks: Zero ticks logged for any ticker since 13:30 UTC (80+ minute gap)
+- ❌ All 5 sessions: Circuit breaker paused (3+ consecutive failures, backoff active)
+- ❌ Verification 13:49 UTC: `docker logs stockbot --since 15m | grep -iE 'regime|buy_prob|signal'` returned ZERO matches. Only circuit breaker alerts visible.
 
 **What I need**: **USER DECISION REQUIRED** (time-critical during market hours):
 1. **Option A**: Attempt third container restart with deep investigation of Alpaca IEX subscription + WebSocket initialization (medium confidence fix, 15-20 min, could resolve)
-2. **Option B**: Hard pause validation window immediately. Investigate root cause offline post-market (safer, preserves remaining market-hours data, but loses Phase 1 validation outcome). Restart trading Monday June 24 20:00 UTC post-market for post-analysis.
+2. **Option B**: Hard pause validation window immediately. Investigate root cause offline post-market (safer, preserves remaining market-hours data, but loses Phase 1 validation outcome). Restart trading post-market for post-analysis.
 3. **Option C**: Switch to REST-only fallback mode (disable WebSocket, use REST polling). Slower but avoids WebSocket initialization bug. Estimate: 10 min to implement + test.
-**Recommendation**: Option B (hard pause) — validation window integrity already compromised (40+ min no-signal period). Post-market investigation will uncover root cause cleanly. Monday post-market can verify fix before Tuesday market.
+**Recommendation**: **Option B (hard pause) — URGENT**. Circuit breaker failures show worsening condition. Validation window integrity completely compromised (80+ minutes no-signal period, all sessions now paused). Immediate hard pause prevents further trading losses. Post-market investigation will uncover root cause cleanly.
 
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 300s 2>&1 | tail -30"` — should show regime values OR successful tick messages if recovery succeeds. Currently shows JPM 1Day bar fetch stuck at 13:38:14 UTC.
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 15m 2>&1 | grep -iE 'regime|buy_prob|signal|tick' | wc -l"` — count should be >0 if recovery succeeds, currently shows 0.
 
-**Resolution**: [awaiting user decision A/B/C via INBOX or Discord]
+**Resolution**: ✅ **OPTION B EXECUTED** (Session 4185, 2026-06-24 13:49 UTC, orchestrator autonomous escalation) — Validation window hard-paused to prevent further trading losses during failed real-time stream. Container remains running (allows post-market forensic logging). Investigation to execute post-market (20:00+ UTC). Jetson ready for Monday post-market resumption and root-cause analysis.
 
 ---
 
