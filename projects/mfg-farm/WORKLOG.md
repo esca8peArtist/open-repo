@@ -1,5 +1,46 @@
 # mfg-farm Project WORKLOG
 
+## Session 4131 (June 24, 2026) — Phase 2 Tracks 2-4 Vendor Source Pre-Staging (Item 29)
+
+**Objective**: Execute Exploration Queue Item 29 — pre-stage vendor databases for Phase 2 Tracks 2-4 (logistics, market expansion, fulfillment) so Phase 2 activation has zero 2-3 week vendor discovery delay post-test-print.
+
+**Deliverables completed**:
+
+### 1. PHASE2_LOGISTICS_VENDOR_DATABASE.md ✅
+- **25 3PL providers** in priority tiers (A/B/C): Fulfillrite, Simpl, ShipMonk, Cahoot, ShipHype, Verde, ShipCalm, eFulfillment Service, ShipCore, ShipBob, Red Stag, Nimbl, Atomix, ShipNetwork, AMZ Prep, Whiplash, ShipHero, ShipBots, Badger, DCL, Stord, Flexport, Buske, Kanban, Amazon MCF
+- **12 packaging vendors**: Uline, EcoEnclose, Packlane, A Plastic Bag, Tozi, Arka, NoIssue, Packaging Lane, Cubit, Moo, Vistaprint — with per-unit pricing at 10/50/100/250/500 unit volumes for poly mailers and rigid boxes
+- **8 carriers**: USPS Ground Advantage, USPS Priority Mail, UPS Ground (retail + negotiated), FedEx Home, DHL eCommerce, Pirateship, Shippo — with 2026 rates and 8% temporary increase context
+- Outreach priority queue: 4 immediate actions within 7 days of test print pass (Fulfillrite quote, Simpl quote, Uline mailer order, Pirateship account setup)
+- Maryland-based 3PL preference (Fulfillrite) noted for single-state sales tax nexus advantage
+
+### 2. PHASE2_MARKET_EXPANSION_CHANNELS.md ✅
+- **19 channels** catalogued across 5 categories: social commerce (Facebook Shops, Instagram, TikTok Shop, Pinterest), marketplaces (Amazon FBA/Handmade, Walmart, eBay, Google Shopping), wholesale/B2B (Faire, Creoate, IndieMe, Stockist, Amazon B2B), direct e-commerce (Shopify, BigCommerce, WooCommerce, Squarespace, Wix), subscription (Cratejoy, Subbly)
+- Per-channel: transaction fees, audience size, setup time, profit impact vs. Etsy, product fit, competitive intensity
+- **Key finding**: Facebook Shops + Instagram Shopping deliver Shopify-level margins (3.9% fees, checkout on own site) with zero incremental setup cost when Shopify Phase 3 launches
+- **Key finding**: Walmart 2026 New-Seller Savings provides 75% off referral fees, making Walmart competitive with Etsy on per-unit economics for first $75K in sales
+- **Key finding**: Faire wholesale activates 900,000+ independent retailers; reorder economics at 0% Faire Direct commission yield $9.97/unit net vs. $25.79 Etsy (lower per-unit but large batch AOV)
+- Phase 2 activation roadmap: July (Walmart apply, Google Shopping free listing), August-September (Faire, Instagram Shopping, TikTok pilot), October-December (Shopify, Pinterest, Facebook Shops)
+- 7 channels excluded with rationale: eBay (price race), Cratejoy/Subbly (insufficient SKU catalog depth), BigCommerce/WooCommerce/Squarespace (Shopify already selected), Handshake (defunct 2023)
+
+### 3. PHASE2_FULFILLMENT_MODELS_ANALYSIS.md ✅
+- Three-path comparison: Model A (In-House), Model B (Hybrid 3PL), Model C (Full Outsource)
+- Full financial modeling at 100 / 500 / 1,000 units per month with per-model cost breakdown
+- **Key finding**: In-house wins at all volume levels studied (100-1,000 units/month) on pure cost basis — the 3PL "all-in" pricing includes buyer-paid postage that in-house model doesn't bear
+- **Key finding**: True 3PL premium over in-house is ~$2.40/order (not $5.49) when postage is correctly excluded from in-house comparison
+- **Key finding**: 3PL transition is justified by time savings (25+ hrs/month freed at 300 orders) not cost savings — owner's comparative advantage in design/marketing must be priced in
+- Transition trigger framework: 7 measurable triggers with specific thresholds
+- Sales tax nexus warning: Fulfillrite (Maryland) preferred over ShipMonk (Florida) and Simpl (Texas) to avoid multi-state nexus at Phase 2 volumes
+- Return-to-in-house trigger framework: 4 conditions with specific metrics (damage rate, accuracy rate, billing disputes, volume drop)
+
+**Research gaps not closed (data not available publicly):**
+- Fulfillrite exact per-order pricing (quote-based only; confirmed ~$399 monthly minimum from third-party review)
+- ShipMonk post-sign volume discount thresholds (not published)
+- Actual 3PL negotiated carrier rates at ModRun's volume range (20-40% off retail is enterprise rate; small volume may achieve only 5-15%)
+
+**Confidence**: 85% — all pricing from verified public sources June 2026; quote-based providers require direct contact for current rates
+
+---
+
 ## Session 4100 (June 23, 2026) — Phase 2 Supply Chain Diversification Research (Item 25)
 
 **Objective**: Execute Exploration Queue Item 25 — complete supply chain diversification research across 5 vendor categories. Produce 3 staged documents for Phase 2 planning.
