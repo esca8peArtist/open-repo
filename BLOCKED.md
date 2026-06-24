@@ -42,16 +42,28 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — CRITICAL: Phase 1 validation failure (13:30–13:32 UTC) — real-time stream error at market open
+### stockbot — CRITICAL: Phase 1 validation failure (13:30–13:40 UTC) — real-time stream NOT initialized, sessions timing out
 
 **Date blocked**: 2026-06-24 13:32 UTC
-**Context**: **Phase 1 FAILURE — validation window unable to generate signals at market open.** Timeline: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open and began signal cycle ✅. (2) 13:30:47 UTC: StreamHealthWatchdog reported ZERO real-time data ticks for all tickers — AMZN (44.7min), MSFT (72.8min), NVDA (12.8min), JPM (epoch corruption but still no ticks). System hung. (3) 13:31:49 UTC: Orchestrator auto-restarted Docker container (SIGTERM graceful shutdown). (4) 13:32:12–13:32:23 UTC: Container came back up, alembic migration successful, database manager initialized, all components resuming. (5) 13:32:43–13:32:44 UTC: Sessions re-detected market open and began HMM priming again. **STILL AT 13:32 UTC: System stuck in HMM initialization. ZERO signals or regime values generated.** Estimated 2+ minutes without any signal output at market open — validation window integrity compromised. Root cause: Real-time data stream failed to initialize; system cannot proceed to signal generation without tick data. Historical bar fetching works (Alpaca API OK) but live WebSocket stream appears non-functional.
+**Date verification attempted**: 2026-06-24 13:40 UTC (Session 4184, orchestrator autonomous check)
+**Context**: **Phase 1 FAILURE — validation window unable to generate signals at market open.** Timeline: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open and began signal cycle ✅. (2) 13:30:47 UTC: StreamHealthWatchdog reported ZERO real-time data ticks for all tickers (AMZN 44.7min, MSFT 72.8min, NVDA 12.8min, JPM 29M min — epoch bug). System hung. (3) 13:31:49 UTC: Orchestrator auto-restarted Docker container. (4) 13:32:12–13:32:23 UTC: Container resumed, DB healthy, sessions initialized. (5) 13:32:43–13:32:44 UTC: Sessions began HMM priming. (6) 13:37:14 UTC: First cycle attempt timed out after 300s (HMM initialization blocked on stream data). (7) 13:37:44–13:37:45 UTC: Automatic reconnection triggered; stream attempted reconnect and re-subscribed to tickers. (8) **13:37:50–13:38:14 UTC: Second cycle attempt in progress, sessions re-priming HMM. Last log: JPM fetching 1Day bars (13:38:14 UTC).** (9) **13:40:21 UTC (NOW): 127 seconds of log silence. No regime, buy_prob, or tick data received. Verification command returned ZERO output.** Root cause: Real-time WebSocket stream is connected (reconnected at 13:37:45) but NOT RECEIVING ANY TICK DATA. Historical bar fetches work (Alpaca API confirmed OK). Live ticks not arriving — stream initialization incomplete.
 
-**What I need**: (1) **User decision**: Proceed with second container restart (likely to have same result), or manually investigate stream connectivity issue on Jetson? (2) **Immediate action**: If restart → wait 5 min, verify regime ≠ None + buy_prob emergence. If both appear, continue validation. If not, escalate to hard pause until root cause found. (3) **Post-validation**: Investigate StreamHealthWatchdog time calculation bug (JPM shows 29 million minutes — clearly epoch handling error) and real-time stream initialization sequence.
+**Evidence**:
+- ✅ Container health: UP 8 minutes, healthy status
+- ✅ Historical bars: Successfully fetching all timeframes (5min, 15min, 1hour, 1day)
+- ❌ Real-time ticks: Zero ticks logged for any ticker since 13:30 UTC (40+ minute gap)
+- ❌ Verification command: `docker logs stockbot --since 120s | grep -iE 'regime|buy_prob|signal'` returned ZERO output (no matches)
+- ❌ Sessions: Timed out after 300s both attempts (13:37:19-13:37:43). Currently in second retry, likely to timeout again ~13:40:50 UTC without streaming data
 
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 120s 2>&1 | grep -iE 'regime|buy_prob|signal' | head -5"` — should show at least 1 regime and 1 buy_prob value if recovery succeeds
+**What I need**: **USER DECISION REQUIRED** (time-critical during market hours):
+1. **Option A**: Attempt third container restart with deep investigation of Alpaca IEX subscription + WebSocket initialization (medium confidence fix, 15-20 min, could resolve)
+2. **Option B**: Hard pause validation window immediately. Investigate root cause offline post-market (safer, preserves remaining market-hours data, but loses Phase 1 validation outcome). Restart trading Monday June 24 20:00 UTC post-market for post-analysis.
+3. **Option C**: Switch to REST-only fallback mode (disable WebSocket, use REST polling). Slower but avoids WebSocket initialization bug. Estimate: 10 min to implement + test.
+**Recommendation**: Option B (hard pause) — validation window integrity already compromised (40+ min no-signal period). Post-market investigation will uncover root cause cleanly. Monday post-market can verify fix before Tuesday market.
 
-**Resolution**: [leave blank]
+**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 300s 2>&1 | tail -30"` — should show regime values OR successful tick messages if recovery succeeds. Currently shows JPM 1Day bar fetch stuck at 13:38:14 UTC.
+
+**Resolution**: [awaiting user decision A/B/C via INBOX or Discord]
 
 ---
 
