@@ -222,6 +222,27 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - ✅ Framework already complete from Session 4001 (verified June 23 02:15 UTC)
    - Deliverables confirmed: `PHASE_3_CONTRACTOR_OUTREACH_EXECUTION_CHECKLIST.md`, `CONTRACTOR_SELECTION_TIMELINE.md`, `RESPONSE_TRACKING_TEMPLATE.md`
    - Value: Removes execution friction; ensures Phase 3 contractor selection completes on-time for summer sprint execution (July-Aug bundles)
+
+12. **stockbot: June 25 Validation Outcome Routing & Phase 4-5 Decision Framework** (3-4h)
+   - Trigger condition: June 25 13:30 UTC market validation results
+   - Scope: Create comprehensive outcome-to-execution routing framework: (1) PASS path → Phase 4 activation (exit model training timeline, multi-timeframe expansion, position-sizing refinement), (2) CAUTION path → monitoring intensification + gradual expansion with gates, (3) NO-GO path → rollback procedures + root cause deep dive. Include decision trees per outcome signal (sustained regime detection, signal stability, trade quality metrics). Deliverables: `JUNE_25_VALIDATION_OUTCOME_REPORT_TEMPLATE.md` (user fill-in outcomes), `PHASE_4_EXECUTION_ROUTING_TREE.md` (automated path selection), `PHASE_4_IMMEDIATE_ACTIONS_CHECKLIST.md` (mechanical execution steps).
+   - Value: Enables June 25-26 mechanical execution without analysis delays. Expected wall-clock time: 5-10 min to fill outcomes, then execute corresponding path.
+   - Owner: stockbot team
+   - Status: Ready for June 25 execution immediately after market close (20:00 UTC)
+
+13. **resistance-research: Phase 3 Contingency & Risk Mitigation Framework** (3-4h)
+   - Trigger condition: Needed before November 4 Phase 3 launch
+   - Scope: Research and document contingency scenarios for 6-week parallel research window (Domain K + H): researcher availability bottlenecks (sole-researcher fallback, external researcher acceleration budget), expert contact fallbacks (secondary tier contacts, university-based alternatives), data source alternatives (if primary source fails, secondary access paths), publication pipeline risks (distribution channel blockages, format conversion failures), time-box overrun scenarios (accelerated research path, reduced scope scenarios). Deliverables: `PHASE_3_CONTINGENCY_MATRIX.md` (5+ scenarios × 5 risk categories), `PHASE_3_RAPID_RESPONSE_PLAYBOOKS.md` (step-by-step activation procedures), `PHASE_3_RESOURCE_REALLOCATION_FRAMEWORK.md` (budget scenarios A/B/C).
+   - Value: De-risks 6-month investment by identifying failure modes and pre-authorizing responses. Enables rapid pivot if problems emerge during Nov 4–Jan execution window.
+   - Owner: resistance-research team
+   - Status: Ready for execution once all 9 completed exploration queue items are cross-verified (October planning window)
+
+14. **seedwarden: Rare & Endangered Native Plant Research & Market Positioning** (3-4h)
+   - Trigger condition: None (available now)
+   - Scope: Research rare and endangered native plant species (state/regional endangered species lists from all 50 states), create iNaturalist data quality assessment (observation count per species, geographic coverage, phenology data completeness), identify botanical garden partnership opportunities (rare-plant exchange programs, conservation propagation). Organize findings by: (1) high-margin species (rarity + market demand premium), (2) propagation difficulty (tissue culture vs seed), (3) regional clustering (batch-sourcing efficiency). Deliverables: `RARE_PLANTS_MARKET_RESEARCH.md` (top 25 species + margin analysis), `IENATURALIST_INTEGRATION_PLAYBOOK.md` (data quality metrics + sourcing workflow), `BOTANICAL_GARDEN_PARTNERSHIP_OUTREACH.md` (10+ contact opportunities + proposal templates).
+   - Value: Opens new revenue angle for seedwarden (rare plants command 3-5× normal margins). Builds sustainable supply chain before production scaling.
+   - Owner: seedwarden team
+   - Status: Ready for execution in parallel with Phase 1-2 operations (no resource conflict)
    - Status: **USER EXECUTION READY** — User can immediately open `PHASE_3_OUTREACH_TEMPLATES_PREFILLED.md`, replace `[YOUR_NAME]`/`[YOUR_EMAIL]`, and send all 11 emails. Response window: June 24-26. Decision deadline: June 28 09:00 UTC
 
 12. **resistance-research: SCOTUS Trigger Monitoring & Rapid-Response Execution Framework** (1.5-2h) ← **✅ COMPLETE (Session 4004)**
