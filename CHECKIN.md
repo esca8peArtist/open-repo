@@ -2,6 +2,68 @@
 
 ---
 
+## Session 4184 (2026-06-24 13:40 UTC) — ORCHESTRATOR — 🔴 **CRITICAL ESCALATION: Stream verification FAILED, user decision required**
+
+### 🔴 **PHASE 1 BLOCKED — CRITICAL REAL-TIME STREAM DEAD — AWAITING USER A/B/C DECISION**
+
+**Status**: Verification of first auto-restart (13:37:44–13:37:45 UTC) completed. Result: **FAILURE**. Real-time stream reconnected but still NOT RECEIVING TICK DATA. All sessions timing out waiting for stream initialization. No regime values, no signals, no progress since 13:30:47 UTC (10+ minute failure window).
+
+**Critical Findings**:
+- ✅ Container health: UP 8 minutes, status healthy
+- ✅ Historical bars: Successfully fetching via REST API (AAPL/MSFT/NVDA/JPM/AMZN all working)
+- ❌ Real-time ticks: **ZERO ticks received in 13:30–13:40 UTC window** (despite reconnection at 13:37:45)
+- ❌ Verification command: `docker logs stockbot --since 120s | grep -iE 'regime|buy_prob|signal'` → **NO OUTPUT** (no regime/buy_prob values found)
+- ❌ Sessions: Timeout errors at 13:37:19, 13:37:21, 13:37:22, 13:37:43. Currently in second retry, likely to fail again.
+
+**Timeline of failures**:
+- 13:30:47 UTC: First stream failure detected
+- 13:31:49 UTC: Auto-restart triggered
+- 13:37:14 UTC: First retry timed out after 300s
+- 13:37:44–13:37:45 UTC: Automatic reconnection attempted
+- 13:38:14 UTC: Last log entry (HMM priming stuck fetching bars)
+- 13:40:21 UTC: **127 seconds of silence. No new logs. No regime/buy_prob output.**
+
+**Root Cause**: WebSocket/IEX real-time data stream is connected but NOT INITIALIZING DATA FLOW. Sessions can fetch historical bars (REST API works) but cannot receive live ticks (stream broken). HMM priming blocked waiting for stream data.
+
+**User Decision Required** (pick A, B, or C):
+1. **Option A: Third Restart + Deep Investigation** (confidence: 60%)
+   - Restart container + investigate Alpaca IEX subscription + WebSocket auth
+   - Time: 15–20 min investigation + test
+   - Risk: May timeout again during market hours
+   - Benefit: Could resolve root cause and resume validation
+
+2. **Option B: Hard Pause (RECOMMENDED)** (confidence: 95%)
+   - Stop validation window immediately
+   - Preserve all market data collected so far
+   - Investigate root cause offline post-market (20:00 UTC onwards)
+   - Resume Phase 1 validation Monday June 24 20:00 UTC for fresh market session
+   - Risk: Lose today's Phase 1 outcome classification
+   - Benefit: Clean investigation window, no further corruption of market-hours data
+
+3. **Option C: REST-Only Fallback** (confidence: 45%)
+   - Switch to REST polling mode (disable WebSocket)
+   - Slower but avoids WebSocket initialization bug
+   - Time: 10 min implementation + test
+   - Risk: Response latency may cause missed signals or delayed execution
+   - Benefit: Could recover trading capability today
+
+**Action Needed NOW**:
+- Post **A, B, or C** to INBOX.md (New Items section) with brief rationale
+- Or reply via Discord with choice
+- **Deadline**: 14:00 UTC (T+30min from market open). Auto-pause triggers if no response.
+
+**Orchestration Status**:
+- ✅ BLOCKED.md: Updated with evidence + three recovery paths
+- ✅ WORKLOG.md: Session 4184 escalation logged
+- ✅ Discord: Critical escalation notification sent
+- ✅ Wakeup scheduled: 15-minute check (14:00 UTC) for auto-pause if no user decision
+
+**Autonomous work this session**: VERIFICATION + ESCALATION ONLY (no further restarts until user approves)
+
+**Recommendation**: **Option B (Hard Pause)** — Validation window integrity already compromised (10+ min with zero signals). Clean post-market investigation will identify root cause faster than repeated restarts during market hours. Monday 20:00 UTC provides fresh market window for retry.
+
+---
+
 ## Session 4183 (2026-06-24 13:32 UTC) — ORCHESTRATOR — ⚠️ **CRITICAL: PHASE 1 VALIDATION FAILURE — REAL-TIME STREAM ERROR**
 
 ### ⚠️ **PHASE 1 FAILED — VALIDATION WINDOW BLOCKED AT MARKET OPEN**
