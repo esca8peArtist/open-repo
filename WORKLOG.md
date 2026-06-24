@@ -45,7 +45,23 @@
 3. June 25 13:30 UTC: Market open — stream should now run indefinitely without timeouts
 4. **Expected outcome**: Real-time ticks received, signals generated, trading resumes
 
-**Next Action**: Deploy timeout fix to Jetson post-market (20:30+ UTC). Trading resumed by market open June 25.
+**Deployment Preparation** (14:28 UTC):
+- ✅ **Created automated deployment script**: `scripts/deploy-realtime-stream-fix.sh` (pre-flight checks, code sync, fix verification, container restart, health checks)
+- ✅ **Created deployment checklist**: `DEPLOYMENT_JUNE24_REALTIME_STREAM_FIX.md` (step-by-step guide, success criteria, rollback plan)
+- ✅ **All deployable artifacts ready**: Fix committed (d4b675ba), tested, documented
+
+**Session Summary** (14:28 UTC):
+- **Work Completed**: Root cause diagnosis, fix implementation, testing, deployment prep
+- **Commits**: 4 total (fix, WORKLOG, deployment checklist, deploy script)
+- **Confidence**: 98% (72/72 tests pass, root cause clear, fix addresses architectural flaw, deployment automated)
+- **Next Action**: Execute `bash scripts/deploy-realtime-stream-fix.sh` at 20:30 UTC (post-market window)
+
+**Deployment Timeline**:
+- **20:00 UTC**: Market close (trading halts)
+- **20:30 UTC**: Begin post-market deployment
+- **20:50 UTC**: Deployment complete, health verified
+- **June 25 13:15 UTC**: Begin Phase 0 pre-market gates
+- **June 25 13:30 UTC**: Market open — validation window resumes (stream should NOT timeout)
 
 ---
 
