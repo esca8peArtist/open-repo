@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-23T22:00:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-24T04:36:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.7% (148,444 tokens) | All-models 38.7% | Reset in 140h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.7% (148,444 tokens) | All-models 39.0% | Reset in 139h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -65,9 +65,8 @@
 ### open-repo — June 12 deployment never executed; infrastructure missing on raspby1
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: seedwarden — focus references Session 4100 (28 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: seedwarden — focus references Session 4100 (29 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
-• stockbot — Exploration Queue Item 28 complete: Phase 4 post-market decision synthesis framework (3 documents, 1,094 lines) ← 2026-06-23 (Session 4128)
 • stockbot — HMM regime initialization NameError (undefined close_prices variable) ← 2026-06-23 21:22 UTC (Session 4092 — orchestrator autonomous fix + deploy)
 • resistance-research — SCOTUS Little v. Hecox deadline passed 18:00 UTC; outcome unverified ← 2026-06-23 18:05 UTC (Session 4084+)
 • stockbot — CRITICAL: June 16 market validation FAILED (signal dropout, 13:30-20:00 UTC validation window) ← 2026-06-16 14:09 UTC (Session 3676 — orchestrator autonomous fix + test)
