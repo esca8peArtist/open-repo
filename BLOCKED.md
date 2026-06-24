@@ -42,17 +42,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — CRITICAL: Container API startup was blocked by missing alembic.ini volume mount (RESOLVED)
-**Date blocked**: 2026-06-24 09:40 UTC (Session 4160 — pre-validation health gate failure)
-**Date resolved**: 2026-06-24 09:48 UTC (Session 4160 — orchestrator autonomous fix + verification)
-**Context**: Docker container was crashing on startup with "FATAL: alembic or alembic.ini not found" errors. Root cause: alembic.ini and alembic/ directory were on the Jetson host (`/opt/stockbot/alembic.ini`) but NOT mounted into the container. The entrypoint script required these for database migrations before API startup.
-**What I fixed**: (1) Added volume mounts for alembic: `-v /opt/stockbot/alembic.ini:/app/alembic.ini:ro` and `-v /opt/stockbot/alembic:/app/alembic:ro`. (2) Restarted container with corrected docker run command. (3) Verified alembic migrations ran successfully: `[entrypoint] Migration complete.` (4) Verified API startup: `INFO: Application startup complete.` (5) Verified Docker healthcheck passing: `container health_status: healthy` at 09:46:19 UTC.
-**Verification**: Docker health check passed successfully with `python -c "import urllib.request, sys; r=urllib.request.urlopen('http://127.0.0.1:8000/api/health/trading', timeout=8); sys.exit(0 if r.status == 200 else 1)"` (exit code 0 = success). API is operational inside container.
-**Remaining items**: API is operational and container is healthy. Port mapping from Jetson Tailscale IP (100.120.18.84:8000) to container may require verification from Pi if Tailscale routing needs attention, but core API functionality is confirmed working.
-**Resolution**: ✅ **FULLY RESOLVED** (Session 4160, 09:48 UTC) — Container alembic migration completed, API started successfully, Docker healthcheck passing. System ready for June 24 13:15 UTC validation window.
-
----
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -107,6 +96,17 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — CRITICAL: Container API startup was blocked by missing alembic.ini volume mount
+**Date blocked**: 2026-06-24 09:40 UTC (Session 4160 — pre-validation health gate failure)
+**Date resolved**: 2026-06-24 09:48 UTC (Session 4160 — orchestrator autonomous fix + verification)
+**Context**: Docker container was crashing on startup with "FATAL: alembic or alembic.ini not found" errors. Root cause: alembic.ini and alembic/ directory were on the Jetson host (`/opt/stockbot/alembic.ini`) but NOT mounted into the container. The entrypoint script required these for database migrations before API startup.
+**What I fixed**: (1) Added volume mounts for alembic: `-v /opt/stockbot/alembic.ini:/app/alembic.ini:ro` and `-v /opt/stockbot/alembic:/app/alembic:ro`. (2) Restarted container with corrected docker run command. (3) Verified alembic migrations ran successfully: `[entrypoint] Migration complete.` (4) Verified API startup: `INFO: Application startup complete.` (5) Verified Docker healthcheck passing: `container health_status: healthy` at 09:46:19 UTC.
+**Verification**: Docker health check passed successfully with `python -c "import urllib.request, sys; r=urllib.request.urlopen('http://127.0.0.1:8000/api/health/trading', timeout=8); sys.exit(0 if r.status == 200 else 1)"` (exit code 0 = success). API is operational inside container.
+**Remaining items**: API is operational and container is healthy. Port mapping from Jetson Tailscale IP (100.120.18.84:8000) to container may require verification from Pi if Tailscale routing needs attention, but core API functionality is confirmed working.
+**Resolution**: ✅ **FULLY RESOLVED** (Session 4160, 09:48 UTC) — Container alembic migration completed, API started successfully, Docker healthcheck passing. System ready for June 24 13:15 UTC validation window.
+
+---
 
 ### stockbot — HMM regime initialization NameError (undefined close_prices variable)
 **Date blocked**: 2026-06-23 21:14 UTC (Session 4092 — orchestrator autonomous discovery)
