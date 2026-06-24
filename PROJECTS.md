@@ -551,6 +551,32 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - Confidence: 85% (Phase 4 decision framework Items 28/33 complete; session coordination patterns documented; requires Phase 4 path confirmation)
    - Status: Ready to execute upon Phase 4 path decision (expected June 24-25)
 
+42. **stockbot: June 25 Contingency Root-Cause Analysis Framework** (2-3h)
+   - Trigger condition: June 25 validation returns CAUTION (5.5-6.9 composite score) or NO-GO (<5.5)
+   - Scope: If validation outcomes show CAUTION or NO-GO, pre-stage rapid-response root-cause analysis procedures. Distinguish between: (1) fix failure (HMM priming, real-time stream, or order-ID idempotency still broken), (2) edge-case market condition (regime initialization delayed by unusual volatility, signal rate suppressed by earnings blackout, position-sizing capped by cash constraint), (3) monitoring artifact (KPI calculation error, false alert from noisy Z-score baseline). Deliverables: `CONTINGENCY_DEBUGGING_DECISION_TREE.md` (10 decision branches per symptom), `FORENSIC_LOG_EXTRACTION_PROCEDURES.md` (SSH commands + grep patterns to isolate root cause), `RAPID_REMEDIATION_DECISION_MATRIX.md` (Path B/C contingency activation thresholds vs debugging effort estimates).
+   - Value: If validation shows CAUTION/NO-GO, eliminates decision analysis delays. Mechanical diagnostic procedures (SSH logs, grepping, threshold checks) determine whether to (A) rollback + debug locally, (B) activate contingency Path B, or (C) continue monitoring with tighter gates.
+   - Owner: stockbot team
+   - Status: Staged for conditional activation (only if June 25 validation returns CAUTION/NO-GO)
+   - Confidence: 78% (contingency decision framework from Item 28 provides foundation; requires June 25 outcome data)
+
+43. **seedwarden: Phase 3 Contractor Contingency Sourcing & Backup Timeline** (2-3h)
+   - Trigger condition: June 28-July 2 contractor response window (Phase 3 Contractor Execution Roadmap, Item 24)
+   - Scope: As contractor responses arrive (June 28+), risk-assess backfill strategy if primary contractors decline or negotiate unfavorable terms. Phases: (1) Contingency sourcing (secondary contractor lists, freelancer platforms, university partnerships), (2) Timeline impact analysis (if primary declines → what's the schedule compression cost?), (3) Scope negotiation framework (which Phase 3 bundles can shift to secondary contractors vs which require primary expertise?), (4) Financial reallocation (if primary is more expensive than budgeted, what bundles get shifted to in-house production vs outsourced?).
+   - Value: Phase 3 contractor selection is time-critical (responses arrive June 28, decisions due June 30). Backup sourcing plan removes decision friction if negotiations stall or primary contractor declines.
+   - Deliverables: `PHASE_3_BACKUP_CONTRACTOR_DATABASE.md` (secondary contractor list + rates + turnaround), `CONTRACTOR_DECLINE_CONTINGENCY_TREE.md` (15-item decision matrix per contractor decline scenario), `TIMELINE_AND_BUDGET_REALLOCATION_FRAMEWORK.md` (schedule compression options + financial impact per path)
+   - Owner: seedwarden team
+   - Status: Staged for execution upon contractor response window opening (June 28)
+   - Confidence: 82% (Phase 3 framework stable, contractor backup list exists in prior research, financial model complete)
+
+44. **resistance-research: Phase 4 Publication & Movement Integration Planning** (3-4h)
+   - Trigger condition: November 1, 2026 (post-Phase-3 research completion, pre-distribution execution)
+   - Scope: Phase 3 (Nov 4-Jan 3) produces Domain K (judiciary) and Domain H (constitutional resilience). Phase 4 begins Nov 1 planning: how do we package 35-domain framework for publication + movement distribution? Phases: (1) Publication strategy (law review articles vs law school distribution vs policy brief series), (2) Movement integration framework (how do Domains K/H connect to Senate Judiciary staff, constitutional scholars, movement legal infrastructure?), (3) Media outreach preparation (pre-briefing messaging for law school tours, movement spokesperson training), (4) Long-term leverage planning (post-January 3 Congress, how do the 35 domains feed into 2026-2028 legislative/litigation landscape?).
+   - Value: Phase 3 is high-effort research (Nov-Dec, 40-50h/researcher). Phase 4 planning 4-6 weeks before completion ensures: (a) publication strategy is locked before research finishes (researcher can optimize writing for format), (b) movement partners are pre-briefed and ready for January rollout, (c) legislative windows are identified and pre-socialized.
+   - Deliverables: `PHASE_4_PUBLICATION_STRATEGY.md` (format options with pros/cons), `PHASE_4_MOVEMENT_PARTNER_BRIEFING_FRAMEWORK.md` (outreach timeline, talking points, legislative window calendar), `PHASE_4_MEDIA_AND_STAKEHOLDER_ROADMAP.md` (press strategy, podcast schedule, institutional visits)
+   - Owner: resistance-research team
+   - Status: Staged for execution November 1 (on-time for Phase 3 completion Dec 12-27)
+   - Confidence: 80% (Phase 3 research roadmap complete, movement infrastructure documented, publication precedent from Phase 2 exists)
+
 ---
 
 **REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). **✅ DOMAIN 59 COMPLETE** (Session 2839). Total remaining Phase 2 production estimate: 40-50 hours Q3 2026. Phase 1 path decided (Path A + Domain 37); Phase 2 research execution proceeds immediately or post-Wave-1; Domain 59 distribution activation ready June 5.
