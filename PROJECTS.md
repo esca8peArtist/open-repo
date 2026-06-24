@@ -413,6 +413,30 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - **Status**: Production-ready, awaiting test print pass. Documents available immediately upon user decision to proceed with Phase 2.
    - **Confidence**: 84% (Tracks 2-4 research outlines complete per Session 4132, sequencing logic sound, timelines realistic based on supplier lead times)
 
+33. **stockbot: June 24 Post-Market Outcome Synthesis & Phase 4 Path Execution** (1-1.5h) ← **STAGED (Session 4191, 15:50 UTC)**
+   - **Trigger condition**: June 24 20:30 UTC real-time stream fix deployment + 20:00 UTC validation outcomes
+   - **Scope**: Execute post-market synthesis at 20:00–20:30 UTC June 24. Input: validation KPIs (signal rate, P&L, regime stability, position-size, drawdown, round-trip). Output: Phase 4 path decision (Covered Calls Path A vs Inverse ETF Path B vs PEAD Path C). Execute `PHASE_4_SYNTHESIS_KPI_DASHBOARD.md` (6 SSH query templates), route through `PHASE_4_PATH_DECISION_RUBRIC.md` (mechanical routing: PASS≥7.0→A+C, CAUTION 5.5-6.9→B+C, NO-GO<4.0→monitoring), verify capital allocation guardrails in `PHASE_4_CAPITAL_ALLOCATION_GUARDRAILS.md`.
+   - **Deliverable**: `PHASE_4_EXECUTION_DECISION_SUMMARY.md` — path decision with confidence scoring, capital allocation approval, 7-14 day deployment timeline
+   - **Value**: June 24 post-market window (30 min compressed): 10 min KPI dash → 15 min routing → 5 min approval. All templates pre-staged (Item 28 complete); execution is pure data entry + mechanical routing.
+   - **Status**: Ready to execute at 20:00 UTC. All decision frameworks staged, no planning overhead.
+   - **Confidence**: 90% (Phase 4 framework stable, decision thresholds locked, Item 28 provides complete routing logic)
+
+34. **resistance-research: Domains 51/48 Wave 1 Response Monitoring & Wave 2 Preparation** (2-3h) ← **STAGED (Session 4191, 15:55 UTC)**
+   - **Trigger condition**: User executes Domains 51/48 Wave 1 sends (expected June 23-27, ~17 min user time)
+   - **Scope**: Monitor responses June 24-July 7 (7-day window post-Wave-1-send). Input: Wave 1 open rates, reply rates, signal classification (Favorable/Neutral/Unfavorable per domain). Output: Wave 2 send sequence + email templates for 5-10 Tier 2 contacts per domain, contact engagement tracking matrix, success baselines from Wave 1 for Wave 2 comparison.
+   - **Deliverables**: (1) `domains-51-48-wave-1-response-tracking-template.md` (monitoring checklist + success baselines), (2) `domain-51-wave-2-send-templates.md` (5-10 copy-paste email templates), (3) `domain-48-wave-2-send-templates.md` (5-10 copy-paste email templates), (4) `WAVE_1_TO_WAVE_2_CONTINUATION_CHECKLIST.md` (timing, trigger conditions, escalation thresholds)
+   - **Value**: Wave 1 production-ready (user can execute any day). Wave 2 staging removes momentum loss; enables frictionless user execution upon Wave 1 completion. Maintains 7-day response window for Domain 59 Tier 2 hard deadline (June 25-30).
+   - **Status**: Production-ready upon Wave 1 send trigger. No planning delays between Waves.
+   - **Confidence**: 80% (Wave 1 complete, Wave 2 sourcing requires response monitoring data; contingency framework in Item 27 provides escalation triggers)
+
+35. **seedwarden: Q3 Bundle Launch Day Execution Support & Post-Launch Monitoring** (2-3h) ← **STAGED (Session 4191, 16:00 UTC)**
+   - **Trigger condition**: User approves Q3 medicinal bundle content (Item 26, expected June 24-26) + Canva designs complete (June 27-30)
+   - **Scope**: Execute July 1 Q3 bundle soft launch (Women's Health + Respiratory + Immunity + Sleep + Digestive bundles). Coordinate: (1) Platform staging (Shopify product setup, email campaign pre-write), (2) Launch day checklist (1h pre-launch verification — inventory, pricing, email delivery, social media scheduling), (3) First-week monitoring (daily metrics dashboard, weekly reviews through July 8), (4) Contingency triggers (zero orders by July 3 → escalate; negative feedback pattern → respond protocol; supplier issues → fulfillment pivot).
+   - **Deliverables**: (1) `Q3_LAUNCH_DAY_EXECUTION_CHECKLIST.md` (1h pre-launch, copy-paste verifications, go/no-go gates), (2) `FIRST_WEEK_MONITORING_DASHBOARD.md` (daily KPIs: orders, ROAS, engagement, SOV, customer feedback), (3) `Q3_CONTINGENCY_INCIDENT_PLAYBOOKS.md` (5 scenarios: zero demand, negative feedback, supplier delay, fulfillment error, email delivery failure)
+   - **Value**: Removes launch-day execution friction. Pre-written checklists, monitoring templates, incident playbooks. Estimated user time: 1h pre-launch (June 30 evening) + 30 min/day monitoring (July 1-8).
+   - **Status**: Ready to execute upon Q3 content approval. All templates pre-staged, monitored by Item 31 (Q3 bundle launch week) preparation.
+   - **Confidence**: 88% (Q3 content production-ready per Item 26, monitoring templates derived from prior launches, contingency patterns documented)
+
 20. **open-repo: Detailed Platform Decision Analysis & Deployment Runbook Preparation** (2-3h) ← **✅ COMPLETE (Session 4086, June 23 20:33 UTC)**
    - ✅ Executed 18:42–20:33 UTC June 23 (general-research agent autonomous execution)
    - Deliverables completed: `RASPBY1_DETAILED_PLATFORM_ANALYSIS.md` (422 lines, 11 KB, 6-dimension matrix), `DOCKER_DEPLOYMENT_RUNBOOK.md` (669 lines, 8.5 KB, 7-phase procedure), `SYSTEMD_DEPLOYMENT_RUNBOOK.md` (763 lines, 10 KB, 11-phase procedure), `DEPLOYMENT_SUCCESS_CRITERIA_AND_VALIDATION.md` (706 lines, 7 KB, 7 metrics + 7 tests)
