@@ -353,11 +353,17 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - **Value**: De-risks critical Phase 2 execution. Domain 59 Tier 2 (Item 6) has hard deadline June 25-30. Wave 1 send slip could cascade into Tier 2 timing risk. Pre-staging contingencies now ensures Phase 2 recovers gracefully.
    - **Confidence**: 85% (Wave 1 infrastructure complete; contingencies are operational procedures, not code/research)
 
-28. **stockbot: Post-Market Synthesis Templates & Phase 4 Decision Framework** (2-3h)
-   - **Trigger condition**: Immediate (pre-work for Item 22, enables faster June 24 post-market decision window)
-   - **Scope**: Pre-build Phase 4 decision synthesis framework and templates to accelerate June 24 20:00 UTC post-market analysis. Deliverables: (1) daily synthesis template (signal generation rate, P&L tracking, regime stability, KPI dashboard with numeric thresholds), (2) Phase 4 path decision rubric (Covered Calls vs Inverse ETF vs Earnings Drift with go/no-go thresholds), (3) risk-adjusted capital allocation model for each path with position-sizing guardrails. Design with fill-in-the-blanks structure so June 24 20:00-20:30 window is mechanical data entry, not analysis from scratch.
-   - **Value**: June 24 post-market window (20:00-20:30 UTC) is compressed for decision-making. Pre-building analysis templates reduces execution time from 60 min to 15-20 min. Enables faster user decision + orchestrator Phase 4 activation.
-   - **Confidence**: 90% (Phase 4 decision framework already staged; this is mechanization of fill-in-blanks design)
+28. **stockbot: Post-Market Synthesis Templates & Phase 4 Decision Framework** (2-3h) ← **✅ COMPLETE (Session 4129, 04:30–04:50 UTC)**
+   - ✅ **Executed** 04:30–04:50 UTC June 24 (stockbot subagent execution)
+   - **Deliverables completed**: 
+     1. `PHASE_4_SYNTHESIS_KPI_DASHBOARD.md` (321 lines) — 6 SSH query templates, 11 KPIs (signal rate, P&L, regime, position-size, drawdown, round-trip), GREEN/YELLOW/RED/CRITICAL thresholds, weighted composite score (0–10)
+     2. `PHASE_4_PATH_DECISION_RUBRIC.md` (287 lines) — mechanical routing (PASS ≥7.0 → A+C, CAUTION 5.5-6.9 → B+C, NO-GO <4.0 → monitoring), 5 override rules, per-path confidence scoring
+     3. `PHASE_4_CAPITAL_ALLOCATION_GUARDRAILS.md` (457 lines) — position-sizing guardrails (Path B inverse $10,600, Path C PEAD $3,180/event), drawdown-triggered reduction table (7% → 50% reduction, 10% → halt), leverage ceiling verification
+   - **Total**: 1,065 lines across 3 files, all templates fill-in-the-blanks design
+   - **Value**: June 24 20:00 UTC post-market window (30 min compressed): 10 min KPI dashboard → 15 min routing decision → 5 min sign-off. All analysis pre-staged; execution is pure data entry.
+   - **Confidence**: 90% (Phase 4 framework already staged; this is mechanization of known decision paths)
+   - **Status**: **POST-MARKET DECISION WINDOW READY** — All KPI templates, routing logic, and capital allocation guardrails staged for mechanical June 24 post-market decision execution
+   - **Committed**: commit `1ac9953`
 
 29. **mfg-farm: Phase 2 Tracks 2-4 Vendor Source Pre-Staging** (3-4h)
    - **Trigger condition**: Immediate (independent of test print execution; parallel work)
