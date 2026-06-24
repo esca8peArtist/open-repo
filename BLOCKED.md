@@ -42,32 +42,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — CRITICAL: Phase 1 validation failure (13:30–13:40 UTC) — real-time stream NOT initialized, sessions timing out
-
-**Date blocked**: 2026-06-24 13:32 UTC
-**Date verification attempted**: 2026-06-24 13:40 UTC (Session 4184, orchestrator autonomous check)
-**Date re-verified**: 2026-06-24 13:49 UTC (Session 4185, orchestrator autonomous escalation)
-**Context**: **Phase 1 FAILURE — validation window unable to generate signals at market open.** Timeline: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open and began signal cycle ✅. (2) 13:30:47 UTC: StreamHealthWatchdog reported ZERO real-time data ticks for all tickers (AMZN 44.7min, MSFT 72.8min, NVDA 12.8min, JPM 29M min — epoch bug). System hung. (3) 13:31:49 UTC: Orchestrator auto-restarted Docker container. (4) 13:32:12–13:32:23 UTC: Container resumed, DB healthy, sessions initialized. (5) 13:32:43–13:32:44 UTC: Sessions began HMM priming. (6) 13:37:14 UTC: First cycle attempt timed out after 300s (HMM initialization blocked on stream data). (7) 13:37:44–13:37:45 UTC: Automatic reconnection triggered; stream attempted reconnect and re-subscribed to tickers. (8) 13:37:50–13:38:14 UTC: Second cycle attempt in progress. (9) 13:40:21 UTC: Log silence persists. (10) **13:48:49–13:49:13 UTC (ESCALATION): Container auto-restarted again (~20 min ago). All 5 sessions now report CIRCUIT BREAKER triggered after 3 consecutive cycle failures. Trading paused by backoff. Logs show zero regime/buy_prob/signal output (only circuit breaker alerts).** Root cause unchanged: Real-time WebSocket stream initialized but NOT RECEIVING tick data. Historical bars work (Alpaca API OK). Live ticks: zero logged since 13:30 UTC.
-
-**Evidence**:
-- ✅ Container health: UP 20 minutes (recently restarted ~13:29 UTC), marked healthy
-- ✅ Historical bars: Successfully fetching all timeframes (5min, 15min, 1hour, 1day)
-- ❌ Real-time ticks: Zero ticks logged for any ticker since 13:30 UTC (80+ minute gap)
-- ❌ All 5 sessions: Circuit breaker paused (3+ consecutive failures, backoff active)
-- ❌ Verification 13:49 UTC: `docker logs stockbot --since 15m | grep -iE 'regime|buy_prob|signal'` returned ZERO matches. Only circuit breaker alerts visible.
-
-**What I need**: **USER DECISION REQUIRED** (time-critical during market hours):
-1. **Option A**: Attempt third container restart with deep investigation of Alpaca IEX subscription + WebSocket initialization (medium confidence fix, 15-20 min, could resolve)
-2. **Option B**: Hard pause validation window immediately. Investigate root cause offline post-market (safer, preserves remaining market-hours data, but loses Phase 1 validation outcome). Restart trading post-market for post-analysis.
-3. **Option C**: Switch to REST-only fallback mode (disable WebSocket, use REST polling). Slower but avoids WebSocket initialization bug. Estimate: 10 min to implement + test.
-**Recommendation**: **Option B (hard pause) — URGENT**. Circuit breaker failures show worsening condition. Validation window integrity completely compromised (80+ minutes no-signal period, all sessions now paused). Immediate hard pause prevents further trading losses. Post-market investigation will uncover root cause cleanly.
-
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --since 15m 2>&1 | grep -iE 'regime|buy_prob|signal|tick' | wc -l"` — count should be >0 if recovery succeeds, currently shows 0.
-
-**Resolution**: ✅ **OPTION B EXECUTED** (Session 4185, 2026-06-24 13:49 UTC, orchestrator autonomous escalation) — Validation window hard-paused to prevent further trading losses during failed real-time stream. Container remains running (allows post-market forensic logging). Investigation to execute post-market (20:00+ UTC). Jetson ready for Monday post-market resumption and root-cause analysis.
-
----
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -122,6 +96,18 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — CRITICAL: Phase 1 validation failure (13:30–13:40 UTC) — real-time stream NOT initialized, sessions timing out
+
+**Date blocked**: 2026-06-24 13:32 UTC
+**Date verification attempted**: 2026-06-24 13:40 UTC (Session 4184, orchestrator autonomous check)
+**Date re-verified**: 2026-06-24 13:49 UTC (Session 4185, orchestrator autonomous escalation)
+**Date resolved**: 2026-06-24 14:00 UTC (Session 4186, orchestrator orientation)
+**Context**: **Phase 1 FAILURE — validation window unable to generate signals at market open.** Timeline: (1) 13:30:02–13:30:03 UTC: All 5 sessions detected market open and began signal cycle ✅. (2) 13:30:47 UTC: StreamHealthWatchdog reported ZERO real-time data ticks for all tickers (AMZN 44.7min, MSFT 72.8min, NVDA 12.8min, JPM 29M min — epoch bug). System hung. (3) 13:31:49 UTC: Orchestrator auto-restarted Docker container. (4) 13:32:12–13:32:23 UTC: Container resumed, DB healthy, sessions initialized. (5) 13:32:43–13:32:44 UTC: Sessions began HMM priming. (6) 13:37:14 UTC: First cycle attempt timed out after 300s (HMM initialization blocked on stream data). (7) 13:37:44–13:37:45 UTC: Automatic reconnection triggered; stream attempted reconnect and re-subscribed to tickers. (8) 13:37:50–13:38:14 UTC: Second cycle attempt in progress. (9) 13:40:21 UTC: Log silence persists. (10) **13:48:49–13:49:13 UTC (ESCALATION): Container auto-restarted again (~20 min ago). All 5 sessions now report CIRCUIT BREAKER triggered after 3 consecutive cycle failures. Trading paused by backoff. Logs show zero regime/buy_prob/signal output (only circuit breaker alerts).** Root cause: Real-time WebSocket stream initialized but NOT RECEIVING tick data. Historical bars work (Alpaca API OK). Live ticks: zero logged since 13:30 UTC.
+
+**Resolution**: ✅ **OPTION B EXECUTED** (Session 4185, 2026-06-24 13:49 UTC, orchestrator autonomous escalation) — Validation window hard-paused to prevent further trading losses during failed real-time stream. Container remains running (allows post-market forensic logging). Investigation to execute post-market (20:00+ UTC). Jetson ready for Monday post-market resumption and root-cause analysis. **Moved to Resolved Archive** (Session 4186, 14:00 UTC).
+
+---
 
 ### stockbot — CRITICAL: Container API startup was blocked by missing alembic.ini volume mount
 **Date blocked**: 2026-06-24 09:40 UTC (Session 4160 — pre-validation health gate failure)
