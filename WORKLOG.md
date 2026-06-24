@@ -32,7 +32,20 @@
    - Option C: Fallback to historical bar polling if real-time stream fails (lose tick granularity but regain trading capability)
    - Estimated fix time: Option A = 5 min + test, Option B = 30-45 min + test, Option C = 2-3 h
 
-**Next Action**: Deploy timeout fix post-market (20:30+ UTC) after user is notified of root cause. Trading resumed by market open June 25.
+**Fix Implemented** (14:30 UTC):
+- ✅ **Removed asyncio.wait_for() timeout wrapper** on line 581-584 of realtime_stream.py
+- ✅ Let `_run_forever()` run indefinitely (as designed) with only exception-handler stops
+- ✅ Updated TimeoutError handler to log unexpected timeout (handler now treated as safety net)
+- ✅ **All 72 realtime_stream tests pass** (no regressions)
+- ✅ **Commit**: d4b675ba "fix: remove aggressive 300s timeout on realtime stream"
+
+**Deployment Plan**:
+1. Post-market (20:30+ UTC): SSH to Jetson, rsync code, restart container
+2. June 25 13:15 UTC: Phase 0 pre-market gates begin (same validation protocol)
+3. June 25 13:30 UTC: Market open — stream should now run indefinitely without timeouts
+4. **Expected outcome**: Real-time ticks received, signals generated, trading resumes
+
+**Next Action**: Deploy timeout fix to Jetson post-market (20:30+ UTC). Trading resumed by market open June 25.
 
 ---
 
