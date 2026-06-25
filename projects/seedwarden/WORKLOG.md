@@ -4,6 +4,29 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 130 — Rare Native Plants Premium Bundle Research — June 24, 2026 (Q3 2026 positioning)
+
+**Session**: June 24, 2026  
+**Task**: Q3 premium bundle positioning — identify 10 high-scarcity, underrepresented North American native plant candidates with medicinal/wellness value, propagation difficulty, and commercial scarcity for premium bundle differentiation
+
+**Status**: COMPLETE — research document written to RARE_NATIVE_PLANTS_PREMIUM_BUNDLE_RESEARCH.md
+
+**Deliverables**:
+1. **RARE_NATIVE_PLANTS_PREMIUM_BUNDLE_RESEARCH.md** — 10 fully documented species not covered in prior research, each with native range, medicinal properties, scarcity rating (1–5), propagation timeline, commercial suppliers, growing difficulty, wellness theme alignment, and FTC/safety notes. Extends RARE_PLANTS_MARKET_RESEARCH.md into underrepresented territory.
+
+**Top 5 findings by priority**:
+- Hepatica acutiloba: scarcity 5/5, propagation difficulty 5/5 — 3–5 years to first bloom from seed; essentially unavailable in quantity; Japanese collector parallel gives premium positioning proof
+- Mertensia virginica (Virginia Bluebells): propagation difficulty 5/5 — seed viability window measured in days; near-impossible to source in quantity; strongest "why 90% of growers fail" content hook
+- Dioscorea villosa (Wild Yam): dioecious reproduction means commercial seed is essentially non-existent; UpS At-Risk; dominates women's health supplement market with zero cultivation guide coverage on Etsy
+- Aralia racemosa (Spikenard): UpS At-Risk; fresh-seed propagation only; near-zero Etsy guide competition; Appalachian medicinal tradition deep
+- Collinsonia canadensis (Stoneroot): root harvest kills plant; endangered in Wisconsin; American Eclectic physicians' premier digestive/vascular herb; near-zero Etsy coverage
+
+**Bundle recommendations**: 3 bundles staged for Q3–Q4 2026: (1) Woodland Apothecary (Spikenard + Stoneroot + Hepatica + Angelica); (2) Women's Roots (Wild Yam + Angelica + American Burnet + Black Cohosh); (3) Prairie Immunity (Rattlesnake Master + Boneset + Echinacea angustifolia)
+
+**Research sources**: USDA PLANTS Database; United Plant Savers monographs; Prairie Moon Nursery, Strictly Medicinal Seeds, Vermont Wildflower Farm, Everwilde Farms, Toadshade Wildflower Farm catalogs; Plants for a Future (PFAF); Go Botany / Native Plant Trust; Missouri Botanical Garden PlantFinder; Lady Bird Johnson Wildflower Center; NatureServe; NC State Extension; US Forest Service Wildflowers of the Week; Wikipedia botanical articles; multiple specialty native nursery product pages (all sources linked in document).
+
+---
+
 ## Item 129 — Rare & Endangered Native Plant Research & Market Positioning — June 24, 2026 (Exploration Queue Item 14)
 
 **Session**: June 24, 2026  
