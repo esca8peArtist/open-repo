@@ -1700,6 +1700,35 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - ⏳ **stockbot: Post-Retrain Phase 4 Validation & Go-Live Readiness Assessment** — Scope: Immediate post-retrain validation (June 18-19, contingent on AAPL/MSFT retrains completing June 16-18). Validates that retrain quality meets graduation gates and determines Phase 4 multi-ticker expansion feasibility. Deliverables: (1) `POST_RETRAIN_VALIDATION_CHECKLIST.md` (6-section checklist: retrain artifacts present, gate metrics extracted, G1-G6 pass/fail assessment, signal quality audit vs. backtest baseline, thermal budget impact for 4-session config, go/no-go decision routing); (2) `PHASE_4_GO_LIVE_READINESS_REPORT.md` (3-4 page executive summary: retrain results summary, gate pass rates, risk flags, recommended Phase 4 start date [June 19 shadow, June 22 parallel test, June 26 go-live], deployment contingencies). Timeline: 2-3h orchestrator work June 18-19. Value: Eliminates decision paralysis post-retrain; provides clear green/yellow/red signal for Phase 4 startup. Confidence: 92% (retrain infrastructure proven, gate validation automated). **Triggers on**: P3 decision by June 15 EOD + retrains completed June 16-18.
 
+---
+
+**NEW ITEMS (Session 4299 — 2026-06-25 08:25 UTC — Pre-Market Validation Prep Queue)**:
+
+- ⏳ **stockbot: Item 36 Pre-Market Health Check & Readiness Validation** (30-45 min, execute 13:05-13:15 UTC June 25)
+  - **Scope**: Execute system readiness verification 10 minutes before market open to prevent preventable Item 36 failures
+  - **Deliverable**: `ITEM_36_PREMARKET_HEALTHCHECK_SCRIPT.sh` (automated checks: Docker container health, API responsiveness, WebSocket subscription status, all 5 sessions initialized, regime detection capability, signal generation pipeline)
+  - **Actions**: (1) Verify container running + healthy status; (2) Test API health endpoint; (3) Validate WebSocket connection + Alpaca bar feed status; (4) Check HMM regime state (not None); (5) Verify all 5 session signal channels active; (6) Generate pre-market test signal (one tick sequence); (7) Document any failures with immediate remediation
+  - **Value**: Reduces Item 36 validation failure risk from Docker issues, stream disconnects, or initialization glitches. 10-min pre-market window allows manual intervention if needed.
+  - **Trigger**: Execute at 13:05 UTC (10 min before market open, within 2-hour pre-event window)
+  - **Confidence**: 95% (all checks are read-only, no modification risk)
+  - **Timeline**: Session 4302+ (auto-schedule for 13:00-13:05 UTC execution)
+
+- ⏳ **stockbot: Phase 4 Activation Decision Routing & Execution Bridge** (1-2h, execute 20:15-20:45 UTC June 25, after Item 12)
+  - **Scope**: Prepare Phase 4 activation framework to enable immediate execution upon Item 12 outcome (PASS/CAUTION/NO-GO)
+  - **Deliverables**: (1) `PHASE_4_DECISION_ROUTING_MATRIX.md` — 3-path decision tree (PASS → immediate Phase 4a entry prep; CAUTION → investigation + monitoring gate; NO-GO → diagnostics + fixes before retry); (2) `PHASE_4_IMMEDIATE_EXECUTION_TASKS.md` — checklist for each path: pre-market infrastructure changes, session config updates, code edits, deployment steps, contingency rollback; (3) `PHASE_4_CONTINGENCY_RESPONSE_RUNBOOK.md` — If CAUTION or NO-GO, specific root-cause investigation steps and remediation options
+  - **Value**: Collapses Phase 4 activation from multi-hour discovery + decision cycle to 30-min mechanical execution using pre-computed decision logic
+  - **Trigger**: Execute after Item 12 outcome (20:00-20:15 UTC post-market synthesis)
+  - **Confidence**: 92% (framework reuses PHASE_4_IMPLEMENTATION_CRITICAL_PATH.md structure, all decision paths pre-validated)
+  - **Timeline**: Session 4303 after 20:00 UTC Item 12 completion
+
+- ⏳ **resistance-research: June 25-30 Tier 2 Response Monitoring & Escalation Framework** (1-1.5h)
+  - **Scope**: Prepare response tracking and escalation logic for Domain 59 Tier 2 sends (June 25-30) to enable rapid Tier 2 activation based on Wave 1-2 signal quality
+  - **Deliverables**: (1) `DOMAIN_59_TIER_2_RESPONSE_TRACKING_DASHBOARD.md` — 7-day monitoring template (Wave 1-2 response rates by send, reply sentiment, engagement signals, contingency triggers); (2) `TIER_2_ACTIVATION_DECISION_TREE.md` — scoring framework to route based on responses: Strong signals → proceed Tier 2 (EPI/Demos/NELP June 25-27); Weak signals → escalate/investigate; Negative responses → contingency path; (3) `CONTINGENCY_ROUTING_IF_SEND_FAILS.md` — if any Wave 1-2 sends bounce or receive rejections, immediate retry + contact verification + alternative outreach paths
+  - **Value**: User can monitor responses in real-time June 25-30 and make Tier 2 routing decisions with zero discovery overhead. Prevents decision delays from manual response classification.
+  - **Trigger**: Executable now (feeds into June 25-30 user-driven Tier 2 send execution)
+  - **Confidence**: 90% (Wave 1-2 response patterns available from June 17+ data, escalation triggers based on prior Phase 2 patterns)
+  - **Timeline**: Session 4299 (complete now, ready for user Tier 2 sends June 25-30)
+
 **NEW ITEMS (Session 4166 — 2026-06-24 10:53 UTC — Validation Window Pre-Staging Queue Replenishment)**:
 
 - ✅ **stockbot: Phase 4 Decision Framework Pre-Staging — Comparative Analysis Template Ready Before 20:00 UTC** (1.5-2h) ← **COMPLETE (Session 4166, 2026-06-24 10:53-11:45 UTC)**
