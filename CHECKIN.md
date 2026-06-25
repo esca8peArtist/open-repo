@@ -2,6 +2,35 @@
 
 ---
 
+## Session 4313 (2026-06-25 09:43 UTC) — ORCHESTRATOR — ✅ **STANDBY MAINTAINED; CRITICAL MARKET WINDOW (2h 23m TO EVENT 37, 3h 47m TO MARKET OPEN)**
+
+### **Since Last Session (Session 4312, 3 min prior)**
+
+**Work completed** (9 min):
+- ✅ **Full state re-verification** — ORCHESTRATOR_STATE.md (verified at 09:43 UTC), BLOCKED.md (4 blocks all user-action-dependent, mfg-farm test print not executed, no changes), INBOX.md (empty), PROJECTS.md (comprehensive review of all projects: stockbot Goals, resistance-research Goals, all others blocked or time-gated)
+- ✅ **Project Goal assessment** — 
+  - **stockbot** (Priority 1): Real-time stream fix deployed June 24; market validation June 25 13:30 UTC is primary focus. Item 36 (13:15 pre-market gates) and Item 33 (20:00 post-market synthesis) both staged and mechanical.
+  - **resistance-research** (Priority 2): Phase 2 production-ready; Phase 3 infrastructure staged. Item 37 (12:00 UTC) is contingency escalation check IF user hasn't executed Wave 1 sends by then.
+  - **All other projects**: Blocked on named external dependencies (user VeraCrypt restart, user test print, user platform decision, scheduled future events)
+- ✅ **Autonomy re-confirmation** — Zero autonomous work available in any unblocked project. All Goals either complete, blocked, or time-gated. Exploration Queue healthy (47+ items). Standby is correct.
+
+**Status**: ✅ **Continuous standby maintained.** All autonomous work verified complete. All 4 blocks verified user-action-dependent (no auto-resolvable conditions). Critical market window beginning in ~4 hours (stockbot validation 13:30 UTC is the primary focus today).
+
+**Critical timeline** (today 2026-06-25):
+1. **12:00 UTC** (2h 23m away) — Item 37: Domains 51/48 Wave 1 escalation check (conditional, 5-10 min if execution needed)
+2. **13:15 UTC** (3h 32m away) — Item 36: Stockbot pre-market validation gates (6 mechanical health checks, 10 min)
+3. **13:30 UTC** (3h 47m away) — Stockbot market open, validation window begins (Phase 1)
+4. **20:00 UTC** (10h 17m away) — Item 33: Stockbot post-market synthesis (validation outcome routing, 15-30 min)
+
+**Needs Your Input**: None currently. All decision points are either:
+- Waiting on market results (stockbot validation June 25 13:30 UTC, Item 36/33)
+- Waiting on user execution (Wave 1 sends completed or not by 12:00 UTC, Item 37)
+- Waiting on user physical actions (test print, VeraCrypt restart, platform decision)
+
+**Token budget**: 77.7% usage (Session 4312); healthy margin through June 26 daily reset.
+
+---
+
 ## Session 4311 (2026-06-25 09:29 UTC) — ORCHESTRATOR — ✅ **STANDBY MAINTAINED; DUAL-EVENT WINDOW ACTIVE (12:00 + 13:15 UTC)**
 
 ### **Since Last Session (Session 4310, 13 min prior)**

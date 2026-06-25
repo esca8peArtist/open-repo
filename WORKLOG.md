@@ -1,3 +1,30 @@
+## Session 4313 (2026-06-25 09:43–09:52 UTC) — ORCHESTRATOR — ✅ **STANDBY MAINTAINED; PRE-MARKET EVENT WINDOW (2h 23m)**
+
+**Status**: ✅ **CONTINUOUS STANDBY CONFIRMED** — Full orientation completed. State verified unchanged since Session 4312 (3 min prior). All conditions for standby maintained:
+- All autonomous work complete (confirmed via PROJECTS.md full Goal review, stockbot/resistance-research/all others reviewed)
+- All 4 blocks user-action-dependent (VeraCrypt restart, test print execution, platform decision x2) — no new resolutions
+- INBOX empty, no new requests
+- Exploration Queue healthy (47+ items; next triggers: Item 37 @ 12:00 UTC, Item 36 @ 13:15 UTC, Item 33 @ 20:00 UTC)
+- No unfinished project scope in any unblocked project
+
+**Work Completed** (9 min):
+- ✅ **Full orientation** — ORCHESTRATOR_STATE.md (latest state 09:43 UTC), BLOCKED.md (4 blocks active, all user-dependent), INBOX.md (empty), PROJECTS.md (lines 966-1064 stockbot review + lines 80-120 resistance-research review + all project Goals assessed)
+- ✅ **Block re-verification** — mfg-farm test print still not executed (dir does not exist). All other blocks unchanged.
+- ✅ **Project Goal review** — stockbot (real-time validation June 25 13:30 UTC, Item 36/33 pending), resistance-research (Phase 2 production-ready, Phase 3 staged, Phase 2 execution user-dependent), all others blocked on named external dependencies
+- ✅ **Autonomy re-confirmation** — Zero autonomous work available. All unblocked projects have time-gated items or awaiting user outcome. Correct to maintain standby.
+
+**Scheduled Events** (verified ready):
+1. **12:00 UTC** (2h 23m from now) — Item 37: Domains 51/48 Wave 1 escalation check (IF Wave 1 sends NOT executed by user → prepare simplified sequence; ELSE record baseline for Wave 2)
+2. **13:15 UTC** (3h 32m) — Item 36: Stockbot pre-market validation gates (6 mechanical health gates)
+3. **13:30 UTC** (3h 47m) — Stockbot market open validation window (Phase 1)
+4. **20:00 UTC** (10h 17m) — Item 33: Stockbot post-market synthesis (validation outcome routing to Phase 4)
+
+**Timeline Context**: Dual-event critical window active. Market validation is primary focus. Wave 1 escalation (Item 37) is contingency check (if no user sends by 12:00, prepare fallback). Both events staged and ready for mechanical execution.
+
+**Autonomy Assessment**: ✅ **Correct posture = standby.** No autonomous work available. All blocks verified user-dependent. All scheduled items staged and mechanical. Token budget healthy (77.7% per Session 4312). Maintain standby until 12:00 UTC Item 37 trigger.
+
+---
+
 ## Session 4311 (2026-06-25 09:29–09:34 UTC) — ORCHESTRATOR — ✅ **CONTINUOUS STANDBY MAINTAINED; DUAL-EVENT WINDOW ACTIVE**
 
 **Status**: ✅ **CONTINUOUS STANDBY** — Verified state remains unchanged since Session 4310. All conditions for standby maintained:
