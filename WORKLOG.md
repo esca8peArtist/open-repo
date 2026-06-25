@@ -1,3 +1,29 @@
+## Session 4317 (2026-06-25 10:22–10:25 UTC) — ORCHESTRATOR — ✅ **STANDBY MAINTAINED; CRITICAL MARKET WINDOW (1h 38m TO ITEM 37)**
+
+**Status**: ✅ **CONTINUOUS STANDBY CONFIRMED** — Full state verification at session start. No changes since Session 4316 (6 min prior). All conditions for standby maintained:
+- All autonomous work complete (zero new tasks available in any project)
+- All 4 blocks user-action-dependent (VeraCrypt, test print, platform decision x2)
+- INBOX empty, no new items
+- Exploration Queue healthy (47 items, 15+ staged)
+- Critical market window activating in 3h 8m
+
+**Work Completed** (3 min):
+- ✅ **State re-verification** — ORCHESTRATOR_STATE.md (verified 10:22 UTC), BLOCKED.md (4 blocks all user-dependent, no resolutions filed), INBOX.md (empty), PROJECTS.md (all Goals verified)
+- ✅ **Block audit** — Confirmed: all 4 active blocks remain legitimate and user-action-dependent. No auto-resolvable conditions.
+- ✅ **Updated CHECKIN.md** with Session 4317 summary
+
+**Critical Timeline** (today 2026-06-25):
+1. **12:00 UTC** (1h 38m) — Item 37: Wave 1 escalation check
+2. **13:15 UTC** (2h 53m) — Item 36: Pre-market gates
+3. **13:30 UTC** (3h 8m) — Stockbot market validation window
+4. **20:00 UTC** (9h 38m) — Item 33: Post-market synthesis
+
+**Token Budget**: 79.1% usage; healthy through June 26 reset.
+
+**Autonomy Assessment**: ✅ **Correct posture = standby.** No autonomous work available. Maintaining continuous standby until Item 37 trigger at 12:00 UTC.
+
+---
+
 ## Session 4316 (2026-06-25 10:16–10:18 UTC) — ORCHESTRATOR — ✅ **STANDBY MAINTAINED; CRITICAL MARKET WINDOW (1h 44m TO ITEM 37)**
 
 **Status**: ✅ **CONTINUOUS STANDBY CONFIRMED** — State re-verified at session start. No changes since Session 4315 (7 min prior). All conditions for standby maintained:
