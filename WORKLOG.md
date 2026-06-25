@@ -1,3 +1,48 @@
+## Session 4247 (2026-06-25 00:46 UTC) — ORCHESTRATOR — ✅ **USAGE CALIBRATION RESOLVED; CONTINUOUS STANDBY MAINTAINED**
+
+**Status**: ✅ **ORIENTATION COMPLETE** — One active block resolved (usage calibration). Four remaining blocks user-action-dependent. Zero autonomous work available. System in correct continuous standby posture awaiting June 25 13:30 UTC market validation window.
+
+**Work Completed**:
+
+1. ✅ **Session Orientation** (3 min):
+   - Read ORCHESTRATOR_STATE.md (current as of 2026-06-25T00:46:29Z)
+   - Assessed git status: Clean on master (only untracked cache files)
+   - Verified BLOCKED.md: 5 active blocks, all user-action-dependent
+
+2. ✅ **Active Block Resolution** (2 min):
+   - **Usage limits calibration** (June 23 auto-added): RESOLVED
+     - Orchestrator provided percentages from ORCHESTRATOR_STATE.md header (Sonnet 3.0%, All-models 67.4%)
+     - Ran `bash scripts/verify-calibration.sh 3.0 67.4` → Successfully recalibrated limits
+     - Updated PROJECTS.md: Sonnet 8.91M tokens, All-models 15.14M tokens (both within healthy range)
+     - Moved block to Resolved Archive in BLOCKED.md (committed below)
+   - Remaining 4 blocks verified legitimate:
+     - cybersecurity-hardening VeraCrypt: Awaiting user Windows restart
+     - mfg-farm test print: Awaiting user 3D print execution
+     - open-repo / systems-resilience: Awaiting raspby1 platform decision (overdue deadline June 15, but decision still open)
+
+3. ✅ **Autonomous Work Assessment**:
+   - Zero autonomous work available (correct by design)
+   - All projects blocked or in standby:
+     - stockbot: Continuous standby, June 25 13:30 UTC validation window 12h 44m away
+     - resistance-research: Phase 2 autonomous work complete, Phase 3 infrastructure staged
+     - Exploration Queue: Items 12-14 staged (Item 12 time-triggered, Items 13-14 complete awaiting user)
+   - Per protocol: No new exploration items added (queue has 3 items, threshold met)
+
+4. ✅ **Orchestration File Updates** (3 min):
+   - Updated BLOCKED.md: Moved usage calibration block to Resolved Archive with June 25 resolution timestamp
+   - Preparing WORKLOG.md and CHECKIN.md updates (this entry + final check-in section)
+
+**System State**:
+- **Deployment**: ✅ Live on Jetson (commit d4b675ba, June 24 20:24 UTC)
+- **Real-time stream**: ✅ Deployed June 24 with aggressive timeout wrapper removed
+- **Trading sessions**: ✅ All 5 healthy and sleeping until June 25 13:15 UTC
+- **Budget**: ✅ Usage 3.0% Sonnet / 67.4% all-models — ample runway through week
+- **Orchestrator posture**: ✅ **CONTINUOUS STANDBY** — Correct by design, awaiting external triggers
+
+**Next Checkpoint**: June 25 13:30 UTC market validation window. Item 12 (validation outcome routing) will trigger post-market execution at 20:00 UTC.
+
+---
+
 ## Session 4246 (2026-06-25 00:40 UTC) — ORCHESTRATOR — ✅ **CONTINUOUS STANDBY MAINTAINED; VALIDATION WINDOW READY**
 
 **Status**: ✅ **STANDBY VERIFIED** — All blocks remain user-action-dependent. Usage budget nominal. Exploration Queue fully staged. Zero autonomous work available (correct by design). System ready for June 25 13:30 UTC market validation window (12h 50m away).

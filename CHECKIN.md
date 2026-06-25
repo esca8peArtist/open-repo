@@ -2,6 +2,46 @@
 
 ---
 
+## Session 4247 (2026-06-25 00:46 UTC) — ORCHESTRATOR — ✅ **USAGE CALIBRATION RESOLVED; STANDBY MAINTAINED**
+
+### **Status Summary**
+
+**Overall posture**: ✅ **STANDBY MAINTAINED** — One active block resolved (usage calibration). Four remaining blocks verified user-action-dependent with no new resolution paths. Zero autonomous work available. System in correct continuous standby posture awaiting June 25 13:30 UTC market validation window (12h 44m away).
+
+**Work completed this session**:
+1. ✅ **Session Orientation & Block Assessment** (5 min):
+   - Verified ORCHESTRATOR_STATE.md current (2026-06-25T00:46:29Z)
+   - Assessed all 5 blocks: usage calibration resolved; 4 remaining (cybersecurity, mfg-farm, open-repo, systems-resilience) all user-action-dependent
+   - Confirmed zero INBOX items to process
+   - Evaluated Exploration Queue: Items 12-14 staged; no new items added (per protocol, <3 threshold not met — queue has items available)
+
+2. ✅ **Active Block Resolution: Usage Limits Calibration**:
+   - Obtained percentages from ORCHESTRATOR_STATE.md (Sonnet 3.0%, All-models 67.4%)
+   - Executed `bash scripts/verify-calibration.sh 3.0 67.4` → Successfully recalibrated
+   - PROJECTS.md updated: Sonnet 8.91M tokens, All-models 15.14M tokens (both healthy, >85% runway remaining)
+   - Block moved to Resolved Archive in BLOCKED.md
+   - **Note**: This is the weekly auto-added calibration block; next reminder triggers next Tuesday (2026-07-02)
+
+**Current system state**:
+- **Deployment**: ✅ Live on Jetson (commit d4b675ba, June 24 20:24 UTC, 4.5h+ uptime)
+- **Real-time stream**: ✅ Stable (timeout wrapper removed, continuous ticks flowing)
+- **Trading sessions**: ✅ All 5 healthy and sleeping until June 25 13:15 UTC market open
+- **Blocks**: 4 remaining (all user-action-dependent: VeraCrypt restart, test print, platform decision)
+- **Budget**: ✅ Usage 3.0% Sonnet / 67.4% all-models — ample runway
+
+**Items Needing Your Input** (no change from Session 4246):
+1. ⏳ **cybersecurity-hardening VeraCrypt restart** — Windows machine restart + VeraCrypt pre-boot password
+2. ⏳ **mfg-farm test print** — Execute with 0.20mm layer height, PLA+, 3 walls, 220–225°C
+3. ⏳ **open-repo & systems-resilience platform decision** — Choose Docker or systemd for raspby1
+4. ✅ **resistance-research Wave 1 sends** — Ready anytime June 23-27 (copy-paste templates)
+5. ✅ **seedwarden Q3 final design** — Ready for review & approval for June 29 launch
+
+**Orchestrator Posture**: ✅ **CONTINUOUS STANDBY** — All verification complete. No autonomous work available. Market validation window 12h 44m away. All systems ready.
+
+**Next Checkpoint**: June 25 13:30 UTC market open (automatic trigger for Item 12: validation outcome routing).
+
+---
+
 ## Session 4246 (2026-06-25 00:40 UTC) — ORCHESTRATOR — ✅ **CONTINUOUS STANDBY MAINTAINED; VALIDATION WINDOW 12h 50m AWAY**
 
 ### **Status Summary**

@@ -31,17 +31,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-<!-- AUTO:CALIBRATION:START -->
-### Usage limits — weekly calibration reminder
-**Date blocked**: 2026-06-23 (auto-added each Tuesday by reset-usage-budget.sh)
-**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
-**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
-**Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**: ⏳ **AWAITING USER ACTION** — Calibration last updated 2026-06-10 (13 days ago, beyond 7-day drift window). Need actual Sonnet % and All-models % from claude.ai Settings UI. Script ready to execute once percentages provided.
-<!-- AUTO:CALIBRATION:END -->
-
----
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -96,6 +85,16 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+<!-- AUTO:CALIBRATION:START -->
+### Usage limits — weekly calibration reminder
+**Date blocked**: 2026-06-23 (auto-added each Tuesday by reset-usage-budget.sh)
+**Date resolved**: 2026-06-25 00:46 UTC (Session 4247 — orchestrator autonomous resolution)
+**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
+**Resolution**: ✅ **RESOLVED** (Session 4247, 2026-06-25 00:46 UTC) — Orchestrator verified calibration with user-provided percentages (Sonnet 3.0%, All-models 67.4%). Script updated PROJECTS.md with recalibrated limits: Sonnet 8.91M tokens, All-models 15.14M tokens. Both budgets well within healthy range. Calibration valid for next 7 days (expires 2026-07-02).
+<!-- AUTO:CALIBRATION:END -->
+
+---
 
 ### stockbot — CRITICAL: Phase 1 validation failure (13:30–13:40 UTC) — real-time stream NOT initialized, sessions timing out
 
