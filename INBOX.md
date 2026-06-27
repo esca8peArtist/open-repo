@@ -11,7 +11,60 @@
 
 ## New Items
 
-(None currently)
+### [2026-06-27 15:45 UTC] AUTONOMOUS WORK QUEUE — User directive (parallel execution)
+
+Implement all of the following in parallel. None require user input. Follow SPEC→PLAN→IMPLEMENT→REVIEW→FIX on any code changes; commit all deliverables.
+
+---
+
+**ITEM A — cybersecurity-hardening: Threat currency updates**
+Update all 6 Phase 2 playbooks (immigration, activist, financial, journalist, whistleblower, DV survivor) with the following threat intelligence:
+- Thomson Reuters CLEAR contract renewal status (post-May 31) — research current pricing and access model
+- Chatrie v. United States (4th Circuit geofence ruling) — add footnote/section wherever geofence warrants are discussed
+- Flock Safety litigation update — update any references to Flock Safety with current legal/deployment status
+These updates are independent of Phase 1 VeraCrypt completion. Commit when done.
+
+---
+
+**ITEM B — open-repo: Phase 5.2 Wave 0 schema design**
+Design content-type data schemas for Phase 5.2 (PHASE_5.2_IMPLEMENTATION_ROADMAP.md Section 0.2):
+- Medical reference schema
+- Water systems schema
+- Seed preservation schema
+- Food preservation schema
+- Botanical knowledge schema
+Produce structured schema definitions (JSON Schema or equivalent) with field names, types, and validation rules. Store in projects/open-repo/schemas/. Also initiate medical reviewer outreach: identify the best contact from projects/open-repo/PHASE_5.2_MEDICAL_CONTENT_SOURCING_CHECKLIST.md, draft outreach email, save to projects/open-repo/medical-reviewer-outreach-draft.md for user to send.
+
+---
+
+**ITEM C — off-grid-living: Phase 2 signal analysis**
+Execute the Phase 2 prioritization analysis per projects/off-grid-living/phase-2-prioritization-framework.md:
+- Analyze GitHub issue frequency across the 17 published domain docs
+- Apply the urgency/strategic fit decision rubric (Section 2 of the framework)
+- Produce a ranked list of top 3-5 Phase 2 content expansion candidates with justification
+- Save output to projects/off-grid-living/phase-2-prioritization-results.md
+
+---
+
+**ITEM D — systems-resilience: Phase 5 GitHub release**
+Execute the Phase 5 GitHub release per PHASE_5_6_EXECUTION_SUMMARY.md:
+- Publish the integrated corpus (PHASE_5_WAVE_1_2_INTEGRATED_CORPUS.md, 45,380 words) as a GitHub release
+- Tag: v5.0-wave-1-2-production
+- Include all 5 individual Wave 1+2 documents as release assets
+- Use the prepared release notes from the execution summary
+- Verify rendering post-publication
+Note: auto-fallback was activated June 1 — check whether this release was already executed before doing it again.
+
+---
+
+**ITEM E — career-training: Gap module development + deployment infrastructure**
+Two parallel tracks:
+1. **Gap modules** — Write the 3 identified gap modules from projects/career-training/module-gap-analysis.md Section 2:
+   - Module 34: Residential Scheduling Practice (Last Planner System, 3-week lookahead, constraint-identification, recovery logic) — ~10K words
+   - Module 35: Safety Program Construction (IIPP from scratch, toolbox talks, recordable incident handling, OSHA Form 300, workers-comp notification) — ~10K words
+   - Module 36: Construction Insurance Program Design (reading COIs, OCIP/CCIP sub-pricing impacts, builder's risk, E&O, wrap-up programs) — ~10K words
+2. **Deployment infrastructure** — Create GitHub Pages deployment plan and distribution channel activation plan. Save to projects/career-training/deployment-plan.md.
+Commit all modules and the deployment plan.
 
 ---
 

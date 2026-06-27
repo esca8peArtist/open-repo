@@ -84,6 +84,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### systems-resilience — Phase 5 GitHub release requires maintainer push permissions
+**Date blocked**: 2026-06-27
+**Context**: Phase 5 Wave 1+2 integrated corpus (45,380 words, 6 files) was prepared for GitHub release publication as v5.0-wave-1-2-production. June 1 auto-fallback prepared all release content (integrated corpus, 5 individual Wave docs, comprehensive release notes) but did not execute the final GitHub publish action. Investigation (Session 4327, orchestrator INBOX Item D) confirmed: all release artifacts are production-ready and staged, but the GitHub account currently in use (esca8peArtist) lacks push permissions to the SuperClaude-Org/SuperClaude_Framework repository. The maintainer account with write access must execute the final GitHub tag + release creation steps. All content verified ready (integrated corpus 45,380 words, 6 release files, comprehensive release notes with Phase 6 roadmap).
+**What I need**: Maintainer account to execute: (1) `git tag v5.0-wave-1-2-production`, (2) `git push origin v5.0-wave-1-2-production`, (3) `gh release create v5.0-wave-1-2-production` with the prepared release notes and asset files (command template + asset paths available in `/tmp/PHASE_5_RELEASE_EXECUTION_SUMMARY.md`).
+**Verify with**: `gh release view v5.0-wave-1-2-production` — should return release title "Systems Resilience Phase 5 Waves 1+2 — Community Resilience Framework" + 6 asset files (integrated corpus + 5 Wave docs)
+**Resolution**: [awaiting user maintainer action to execute GitHub release push — all content production-ready, no code dependencies]
+
+---
+
 ## Resolved Archive
 
 <!-- AUTO:CALIBRATION:START -->
