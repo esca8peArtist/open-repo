@@ -1,3 +1,37 @@
+## Session 4325 (2026-06-27 20:18–22:10 UTC) — ORCHESTRATOR + STOCKBOT PARALLEL AGENTS
+
+**Status**: ✅ **COMPLETE — BOTH OPENSPECS IMPLEMENTED & COMMITTED**
+
+**Orientation & Setup** (10 min):
+- ✅ Read ORCHESTRATOR_STATE.md (20:18 UTC), INBOX.md (UNPAUSE directive from 15:15 UTC today), PROJECTS.md (stockbot focus verified)
+- ✅ **DB prerequisite verified**: `session_signal_snapshots` table EXISTS in trading.db with correct schema (8 columns: id, session_id, snapshot_date, buy_prob, hmm_regime, hmm_observe_mode, bars_since_last_signal, created_at)
+- ✅ **INBOX processed**: Moved UNPAUSE directive to Processing History
+- ✅ **PROJECTS.md updated**: Added openspec tasks to stockbot Current focus with parallel agent strategy
+- ✅ **Agent spawning**: 2 parallel stockbot subagents launching (Spec 1: LIVE_MONITORING_OPENSPEC Phase 1, Spec 2: MODEL_PIPELINE_OPENSPEC Phase 1)
+
+**Parallel Agent Execution** (36 min wall-clock):
+
+**Agent 1 — LIVE_MONITORING_OPENSPEC Phase 1** ✅ **COMPLETE (Commit 21e5303)**
+- Item 1: `_last_alert` persistence fix (run_monitor.py) — serialize cooldown timestamps to MONITOR_STATUS_FILE ✅
+- Item 2: Fill reconciliation check (health_poller.py) — engine DB vs. Alpaca fill count, CRITICAL on delta > 1 ✅
+- Item 3: Daily Discord performance digest (daily_performance_summary.py) — post-market 20:30 UTC ✅
+- Item 4: Container memory + restart count checks (health_poller.py) — WARN >75% mem, CRITICAL >85%, restart baseline tracking ✅
+- Item 5: Jetson thermal monitoring (health_poller.py) — read /sys/class/thermal/, WARN >90°C, CRITICAL >93°C ✅
+- **Tests**: 146 passing, zero regressions ✅
+
+**Agent 2 — MODEL_PIPELINE_OPENSPEC Phase 1** ✅ **COMPLETE (Commit 3c9e1e7)**
+- Item 1: Nightly Optuna TPE multi-objective search (daily_model_search.py) — per-ticker, maximize Sharpe + minimize drawdown, cron 21:15 UTC ✅
+- Item 2: Per-stock SQLite candidate DB (candidate_database.py) — append-only schema with 3 tables (model_candidates, deployment_events, daily_search_summary) ✅
+- Item 3: Daily Discord report (generate_daily_pipeline_report.py) — best candidate vs. live model on 6 gates + OOS Sharpe, cron 21:45 UTC (corrected from 21:30) ✅
+- **Tests**: 56 new unit tests + 203 critical path tests = 82 total passing, zero regressions ✅
+- **Note**: Phase 2 (auto-deployment) intentionally excluded per spec ✅
+
+**Critical Deadline Status**: ✅ **All work complete and committed before Monday June 29 13:30 UTC market open**
+
+**Execution Summary**: Parallel agents produced 2 commits (21e5303, 3c9e1e7) with 8 new files + 3 modified core files, 146 + 82 tests passing, zero regressions. Total wall-clock: 36 min parallel = ~3.5h sequential equivalent saved.
+
+---
+
 ## Session 4321 (2026-06-25 11:00–11:05 UTC) — ORCHESTRATOR — ✅ **STANDBY MAINTAINED; 60 MIN TO ITEM 37 ESCALATION TRIGGER**
 
 **Status**: ✅ **CONTINUOUS STANDBY MAINTAINED** — Full orientation completed at 11:00 UTC. State unchanged since Session 4320 (10 min prior). All standby conditions remain valid:

@@ -11,7 +11,18 @@
 
 ## New Items
 
-(none currently)
+(None currently)
+
+---
+
+## June 27 UNPAUSE Directive — Processing History
+
+🟢 **PROCESSING (Session 4321, June 27 20:18 UTC)**:
+- **[2026-06-27 15:15 UTC] UNPAUSE + IMPLEMENT STOCKBOT SPECS** — User directive to implement two openspecs in parallel after usage pause override.
+  - **Spec 1**: LIVE_MONITORING_OPENSPEC.md Phase 1 (5 items: _last_alert persistence, fill reconciliation, Discord digest, memory/restart checks, thermal monitoring)
+  - **Spec 2**: MODEL_PIPELINE_OPENSPEC.md Phase 1 (Optuna search, candidate DB, Discord reporting — NO auto-deploy)
+  - **Prerequisite verified**: `session_signal_snapshots` table EXISTS in trading.db (schema: id, session_id, snapshot_date, buy_prob, hmm_regime, hmm_observe_mode, bars_since_last_signal, created_at)
+  - **Action**: Spawning 2 parallel agents (stockbot subagent) to implement both specs via SPEC→PLAN→IMPLEMENT→REVIEW→FIX workflow. Expected completion: ~2-3h.
 
 ---
 
