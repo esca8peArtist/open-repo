@@ -2,6 +2,34 @@
 
 ---
 
+## Session 4326 (2026-06-27 21:04–21:10 UTC) — ORCHESTRATOR — ✅ **OPTUNA SEARCH + DISCORD REPORT CRON CONFIGURED**
+
+### **Cron Setup for Model Pipeline Monitoring (June 27 21:15 & 21:45 UTC)**
+
+**Work completed** (5 min):
+- ✅ **Gap identification** — Session 4325 deployed scripts but cron entries were not configured
+- ✅ **Cron setup** — Added two entries to user crontab:
+  - `15 21 * * 1-5` → daily_model_search.py (Optuna: max Sharpe + min drawdown, all 5 tickers JPM/AMZN/AAPL/MSFT/NVDA)
+  - `45 21 * * 1-5` → generate_daily_pipeline_report.py (Discord summary: best candidate vs. live model on 6 gates)
+- ✅ **Manifest verified** — Both scripts already registered in test_smoke_script_coverage.py (lines 116-122) with importability tests
+- ✅ **Baseline checked** — Existing report (20:55 UTC) shows dry-run on AAPL only, 0 candidates found
+
+**Critical Timeline**:
+- **21:15 UTC** (starting now) — Optuna search execution begins (expected 10-30 min duration)
+- **21:45 UTC** (in 35 min) — Discord report generation
+- **~21:23 UTC** — Scheduled wakeup to verify execution and document outcomes
+
+**Next Actions**:
+1. Monitor logs/daily_search.log for Optuna execution
+2. Verify candidate database populated (database/model_search/*.db files)
+3. Check Discord report at 21:45 UTC
+4. Document results and create Item 12 validation outcome routing framework (PASS/CAUTION/NO-GO decision paths for Phase 4-5)
+5. Determine Monday deploy readiness
+
+**Status**: ✅ Monitoring in progress. All prerequisites configured. Awaiting execution results.
+
+---
+
 ## Session 4325 (2026-06-27 20:18–22:10 UTC) — ORCHESTRATOR + 2 STOCKBOT AGENTS — ✅ **OPENSPECS PHASE 1 COMPLETE + COMMITTED**
 
 ### **UNPAUSE Directive Executed (June 27 15:15 UTC)**
