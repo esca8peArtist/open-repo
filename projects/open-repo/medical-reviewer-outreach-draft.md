@@ -14,8 +14,11 @@ Based on the Phase 5.2 Medical Content Sourcing Checklist, the ideal medical rev
 - **Availability**: Can commit to review by June 20, 2026
 - **Contacts to approach**:
   1. **Primary**: Wilderness Medical Society (wms.org) — request referral to practice guideline authors or board members
+     - Contact: guidelines@wms.org
   2. **Secondary**: Médecins Sans Frontières (MSF) Clinical Guidelines team — they maintain open-access field medicine protocols
+     - Contact: medicalguidelines@msf.org
   3. **Tertiary**: ICRC (International Committee of the Red Cross) First Aid program leads — already coordinating for content permissions
+     - Contact: assist@icrc.org
 
 ---
 
