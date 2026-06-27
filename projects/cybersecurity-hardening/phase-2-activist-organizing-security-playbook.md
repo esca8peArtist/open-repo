@@ -53,7 +53,7 @@ Amnesty International's 2025 investigation documented Babel Street being used ag
 
 ### 1.2 Layer 2: Aerial Surveillance — Drone Deployment at Protests
 
-**Documented scale**: LAPD deployed Skydio X10 drones 31 times over a single anti-ICE protest in downtown Los Angeles on January 31, 2026, and 32 times over the March 28 No Kings protest, with drones lingering for up to seven hours over key protest sites. NYPD conducted 6,546 drone flights in the first half of 2025, a 3,200% increase since 2022. CBP flew a military-grade MQ-9 Predator drone over Los Angeles protests.
+**Documented scale**: LAPD deployed Skydio X10 drones 31 times over a single anti-ICE protest in downtown Los Angeles on January 31, 2026, and 32 times over the March 28 No Kings protest, with drones lingering for up to seven hours over key protest sites. NYPD conducted 6,546 drone flights in the first half of 2025, a 3,200% increase since 2022. CBP flew a military-grade MQ-9 Predator drone over Los Angeles protests. *(June 2026 update — LAPD citywide expansion: LAPD announced in February 2026 its intention to deploy a citywide drone fleet, expanding beyond the current tactical deployments at specific enforcement events. This shift from event-specific drone surveillance to routine citywide aerial surveillance establishes Los Angeles as a precedent-setting surveillance environment, not merely an outlier.)*
 
 **Technical capability**: The Skydio X10 detects individuals from 8,000 feet, identifies people from 2,500 feet, and reads license plates from 800 feet. At operational altitude, face identification is possible even with ground-level masks when the subject looks up or when overhead angle exposure occurs.
 
