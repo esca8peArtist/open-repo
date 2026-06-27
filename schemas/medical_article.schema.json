@@ -1,0 +1,302 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Medical Article Schema",
+  "description": "Content schema for medical reference articles including drug monographs, procedure guides, and first aid protocols for offline medical reference in austere environments",
+  "type": "object",
+  "required": [
+    "title",
+    "article_type",
+    "content",
+    "disclaimer",
+    "source_citation"
+  ],
+  "properties": {
+    "article_id": {
+      "type": "string",
+      "pattern": "^med_[a-z0-9_]+$",
+      "description": "Unique identifier for the article, prefixed with 'med_'"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "description": "Article title (condition name, drug INN, or procedure name)"
+    },
+    "article_type": {
+      "type": "string",
+      "enum": [
+        "drug_monograph",
+        "condition_guide",
+        "procedure",
+        "first_aid"
+      ],
+      "description": "Type of medical article"
+    },
+    "content": {
+      "type": "object",
+      "required": ["body"],
+      "properties": {
+        "body": {
+          "type": "string",
+          "minLength": 50,
+          "description": "Main article content as formatted text or HTML"
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "Brief summary for search/preview (optional)"
+        }
+      }
+    },
+    "indication": {
+      "type": "string",
+      "description": "For drug monographs: what condition/symptom this drug treats"
+    },
+    "symptom_list": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "For condition guides: key symptoms that indicate this condition"
+    },
+    "dosing": {
+      "type": "object",
+      "description": "Dosing information with stratification by age/weight",
+      "properties": {
+        "adult_dose": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "mg",
+                "g",
+                "mL",
+                "IU",
+                "mcg",
+                "meq"
+              ]
+            },
+            "frequency": {
+              "type": "string",
+              "description": "e.g., 'every 4-6 hours', 'once daily', 'as needed'"
+            },
+            "route": {
+              "type": "string",
+              "enum": [
+                "oral",
+                "IV",
+                "IM",
+                "SC",
+                "topical",
+                "inhaled",
+                "rectal"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "frequency",
+            "route"
+          ]
+        },
+        "pediatric_dose": {
+          "type": "object",
+          "properties": {
+            "weight_based": {
+              "type": "boolean",
+              "description": "True if dosing is weight-based (mg/kg)"
+            },
+            "value_per_kg": {
+              "type": "number",
+              "description": "Dose per kilogram of body weight"
+            },
+            "minimum_dose": {
+              "type": "number",
+              "description": "Minimum absolute dose regardless of weight"
+            },
+            "unit": {
+              "type": "string"
+            },
+            "frequency": {
+              "type": "string"
+            },
+            "age_range": {
+              "type": "object",
+              "properties": {
+                "min_years": {
+                  "type": "number"
+                },
+                "max_years": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "maximum_daily_dose": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "contraindications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Conditions/states where this drug is contraindicated"
+    },
+    "drug_interactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "interacting_drug": {
+            "type": "string",
+            "description": "Drug name (INN) that interacts"
+          },
+          "interaction_type": {
+            "type": "string",
+            "enum": [
+              "increases_effect",
+              "decreases_effect",
+              "major_adverse_event",
+              "moderate_concern"
+            ]
+          },
+          "clinical_consequence": {
+            "type": "string",
+            "description": "What happens when drugs are combined"
+          },
+          "management": {
+            "type": "string",
+            "description": "How to manage or avoid this interaction"
+          }
+        },
+        "required": [
+          "interacting_drug",
+          "interaction_type",
+          "clinical_consequence"
+        ]
+      },
+      "description": "Clinically significant drug interactions only"
+    },
+    "supply_quantity": {
+      "type": "object",
+      "description": "Recommended supply quantity for 1-year stock",
+      "properties": {
+        "quantity": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "description": "tablets, vials, packages, etc."
+        },
+        "rationale": {
+          "type": "string",
+          "description": "Explanation for quantity (e.g., average use rate + buffer)"
+        }
+      }
+    },
+    "evacuation_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Conditions that indicate need for evacuation/professional medical care"
+    },
+    "disclaimer": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Non-negotiable disclaimer text. Must include caution about austere environment use and directive to consult medical professional when available. Cannot be null or empty."
+    },
+    "source_citation": {
+      "type": "object",
+      "required": [
+        "source_document",
+        "edition_year",
+        "section_reference"
+      ],
+      "properties": {
+        "source_document": {
+          "type": "string",
+          "description": "Name of source (e.g., 'WHO Model Formulary', 'MSF Clinical Guidelines')"
+        },
+        "edition_year": {
+          "type": "integer",
+          "minimum": 2000,
+          "description": "Edition or publication year"
+        },
+        "section_reference": {
+          "type": "string",
+          "description": "Chapter, section, or page reference in source"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to source document if available online"
+        }
+      }
+    },
+    "medical_reviewer": {
+      "type": "object",
+      "description": "Information about medical accuracy review",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "credentials": {
+          "type": "string",
+          "description": "e.g., 'MD', 'PharmD', 'FAWM', 'Emergency Medicine Physician'"
+        },
+        "review_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "unreviewed",
+            "draft",
+            "pending_review",
+            "reviewed_approved",
+            "reviewed_with_changes"
+          ]
+        }
+      }
+    },
+    "evidence_level": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "description": "A=clinical trial, B=standard clinical practice, C=case report/anecdotal"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Search keywords for discovery"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last update"
+    }
+  }
+}
