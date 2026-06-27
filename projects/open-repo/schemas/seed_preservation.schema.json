@@ -1,0 +1,383 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Seed Preservation and Species Data Schema",
+  "description": "Content schema for seed species preservation data, viability storage parameters, and germination information from GRIN and internal seedwarden sources",
+  "type": "object",
+  "required": [
+    "species_id",
+    "common_name",
+    "latin_binomial",
+    "family",
+    "storage_conditions",
+    "viability_data"
+  ],
+  "properties": {
+    "species_id": {
+      "type": "string",
+      "pattern": "^seed_[a-z0-9_]+$",
+      "description": "Unique identifier for seed species record, prefixed with 'seed_'"
+    },
+    "common_name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100,
+      "description": "Common name(s) for the plant, may include regional variants"
+    },
+    "latin_binomial": {
+      "type": "string",
+      "pattern": "^[A-Z][a-z]+ [a-z]+$",
+      "description": "Scientific binomial name (Genus species), following Linnaean nomenclature"
+    },
+    "family": {
+      "type": "string",
+      "description": "Plant family classification (e.g., Solanaceae, Brassicaceae)"
+    },
+    "grin_accession_number": {
+      "type": "string",
+      "pattern": "^[A-Z]{1,3}\\d+$",
+      "description": "USDA GRIN germplasm accession identifier if available"
+    },
+    "storage_conditions": {
+      "type": "object",
+      "required": [
+        "optimal_temperature_f",
+        "optimal_humidity_percent"
+      ],
+      "properties": {
+        "optimal_temperature_f": {
+          "type": "object",
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "value": {
+              "type": "number",
+              "minimum": -40,
+              "maximum": 120,
+              "description": "Optimal storage temperature in Fahrenheit"
+            },
+            "range": {
+              "type": "string",
+              "description": "Acceptable range, e.g., '35-45°F'"
+            }
+          }
+        },
+        "optimal_humidity_percent": {
+          "type": "object",
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "Optimal relative humidity percentage"
+            },
+            "range": {
+              "type": "string",
+              "description": "Acceptable range, e.g., '30-40%'"
+            }
+          }
+        },
+        "light_conditions": {
+          "type": "string",
+          "enum": [
+            "dark",
+            "dim_light",
+            "indirect_light",
+            "not_critical"
+          ],
+          "description": "Light requirements during storage"
+        },
+        "storage_container_type": {
+          "type": "string",
+          "enum": [
+            "sealed_jar",
+            "paper_envelope",
+            "cloth_bag",
+            "silica_gel_packet",
+            "vacuum_sealed"
+          ],
+          "description": "Recommended container type for storage"
+        },
+        "additional_notes": {
+          "type": "string",
+          "description": "Special storage considerations (e.g., 'sensitive to freezing', 'requires cold stratification')"
+        }
+      }
+    },
+    "viability_data": {
+      "type": "object",
+      "required": [
+        "expected_viability_years",
+        "viability_reference_conditions"
+      ],
+      "properties": {
+        "expected_viability_years": {
+          "type": "object",
+          "properties": {
+            "optimal_conditions": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Years of viability at optimal temperature/humidity"
+            },
+            "room_temperature": {
+              "type": "integer",
+              "description": "Years at typical room temperature (70°F, 50% RH)"
+            },
+            "poor_conditions": {
+              "type": "integer",
+              "description": "Years if stored improperly (warm, humid)"
+            }
+          }
+        },
+        "viability_reference_conditions": {
+          "type": "string",
+          "description": "Source conditions for viability data (e.g., '40°F, 40% RH per GRIN')"
+        },
+        "viability_percentage_at_year": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "year": {
+                "type": "integer"
+              },
+              "viability_percent": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100,
+                "description": "Estimated germination rate at this year"
+              }
+            }
+          },
+          "description": "Year-by-year viability decline curve"
+        }
+      }
+    },
+    "germination_data": {
+      "type": "object",
+      "description": "Seed germination requirements and rates",
+      "properties": {
+        "germination_rate_percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Expected germination percentage under ideal conditions"
+        },
+        "days_to_germination": {
+          "type": "object",
+          "properties": {
+            "minimum": {
+              "type": "integer"
+            },
+            "maximum": {
+              "type": "integer"
+            }
+          },
+          "description": "Range of days from planting to germination"
+        },
+        "temperature_requirements_f": {
+          "type": "object",
+          "properties": {
+            "optimal_day": {
+              "type": "number"
+            },
+            "optimal_night": {
+              "type": "number"
+            },
+            "minimum": {
+              "type": "number"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        },
+        "light_requirement": {
+          "type": "string",
+          "enum": [
+            "light_required",
+            "light_inhibits",
+            "light_neutral"
+          ],
+          "description": "Whether light is required, inhibits, or doesn't affect germination"
+        },
+        "moisture_requirement": {
+          "type": "string",
+          "description": "e.g., 'keep consistently moist', 'allow to dry between waterings'"
+        },
+        "scarification_needed": {
+          "type": "boolean",
+          "description": "Whether seed coat must be abraded or treated"
+        },
+        "scarification_method": {
+          "type": "string",
+          "description": "How to scarify (e.g., 'sandpaper', 'hot water soak')"
+        },
+        "stratification_needed": {
+          "type": "boolean",
+          "description": "Whether cold stratification is required"
+        },
+        "stratification_method": {
+          "type": "string",
+          "description": "e.g., 'refrigerate in moist sand for 4 weeks'"
+        },
+        "dormancy_notes": {
+          "type": "string",
+          "description": "Dormancy type and how to break it"
+        }
+      }
+    },
+    "usda_hardiness_zones": {
+      "type": "object",
+      "properties": {
+        "minimum_zone": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 13,
+          "description": "Coldest USDA zone where plant survives winter"
+        },
+        "maximum_zone": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 13,
+          "description": "Warmest USDA zone for plant growth"
+        }
+      }
+    },
+    "seed_saving_difficulty": {
+      "type": "string",
+      "enum": [
+        "very_easy",
+        "easy",
+        "moderate",
+        "difficult",
+        "very_difficult"
+      ],
+      "description": "Ease of saving seeds from plants grown in home garden"
+    },
+    "seed_saving_notes": {
+      "type": "string",
+      "description": "How to save seeds from this plant, isolation distances, cross-pollination risks, when to harvest"
+    },
+    "yield_seeds_per_plant": {
+      "type": "object",
+      "properties": {
+        "minimum": {
+          "type": "integer"
+        },
+        "typical": {
+          "type": "integer"
+        },
+        "maximum": {
+          "type": "integer"
+        }
+      },
+      "description": "Approximate number of viable seeds produced per plant"
+    },
+    "seeds_per_gram": {
+      "type": "number",
+      "description": "Approximate count of seeds in 1 gram"
+    },
+    "thousand_seed_weight_grams": {
+      "type": "number",
+      "description": "Weight of 1,000 seeds in grams"
+    },
+    "use_categories": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "food_crop",
+          "medicinal",
+          "ornamental",
+          "animal_feed",
+          "soil_improvement",
+          "fiber_crop"
+        ]
+      },
+      "description": "Primary uses for this plant"
+    },
+    "days_to_maturity": {
+      "type": "integer",
+      "description": "Days from planting to harvest/maturity"
+    },
+    "plant_height_inches": {
+      "type": "object",
+      "properties": {
+        "minimum": {
+          "type": "number"
+        },
+        "maximum": {
+          "type": "number"
+        }
+      },
+      "description": "Typical plant height range at maturity"
+    },
+    "source_citation": {
+      "type": "object",
+      "required": [
+        "source_type"
+      ],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "GRIN_database",
+            "internal_seedwarden",
+            "scientific_paper",
+            "extension_service"
+          ]
+        },
+        "source_document": {
+          "type": "string",
+          "description": "Name/reference of source"
+        },
+        "grin_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Direct link to GRIN accession page if applicable"
+        },
+        "date_sourced": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "related_species": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "species_name": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "botanical_relative",
+              "cross_compatible",
+              "similar_care",
+              "companion_plant"
+            ]
+          }
+        }
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

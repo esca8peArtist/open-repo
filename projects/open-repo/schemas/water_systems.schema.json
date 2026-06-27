@@ -1,0 +1,390 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Water Systems and Procedures Schema",
+  "description": "Content schema for water sourcing, treatment, and safety procedures in resource-limited and austere environments",
+  "type": "object",
+  "required": [
+    "procedure_id",
+    "procedure_name",
+    "procedure_category",
+    "equipment_list",
+    "steps",
+    "source_citation"
+  ],
+  "properties": {
+    "procedure_id": {
+      "type": "string",
+      "pattern": "^water_[a-z0-9_]+$",
+      "description": "Unique identifier for the water procedure, prefixed with 'water_'"
+    },
+    "procedure_name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "description": "Name of the water treatment or sourcing procedure"
+    },
+    "procedure_category": {
+      "type": "string",
+      "enum": [
+        "source_identification",
+        "filtration",
+        "chemical_treatment",
+        "thermal_treatment",
+        "combined_treatment",
+        "quality_testing",
+        "storage",
+        "well_construction",
+        "emergency_disinfection"
+      ],
+      "description": "Category of water procedure"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 50,
+      "description": "Overview of what this procedure accomplishes"
+    },
+    "equipment_list": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "item_name",
+          "quantity",
+          "purpose"
+        ],
+        "properties": {
+          "item_name": {
+            "type": "string",
+            "description": "Name of equipment/material needed"
+          },
+          "quantity": {
+            "type": "string",
+            "description": "Amount needed (e.g., '1', '2-3 meters', 'as needed')"
+          },
+          "unit": {
+            "type": "string",
+            "description": "Unit of measurement (pieces, meters, liters, etc.)"
+          },
+          "purpose": {
+            "type": "string",
+            "description": "Why this item is needed"
+          },
+          "substitutes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Alternative items that can be used if primary item unavailable"
+          }
+        }
+      },
+      "description": "Complete list of equipment and materials required"
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "step_number",
+          "description"
+        ],
+        "properties": {
+          "step_number": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Sequential step number"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 10,
+            "description": "Detailed instruction for this step"
+          },
+          "estimated_time": {
+            "type": "string",
+            "description": "How long this step typically takes (e.g., '10 minutes', '2-3 hours')"
+          },
+          "critical_actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Actions that must be done correctly or system fails"
+          },
+          "common_mistakes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Common errors and how to prevent them"
+          }
+        }
+      },
+      "description": "Ordered list of procedure steps"
+    },
+    "sizing_inputs": {
+      "type": "object",
+      "description": "Key parameters for sizing the procedure (flow rate, population, etc.)",
+      "properties": {
+        "design_capacity": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "liters_per_day",
+                "liters_per_hour",
+                "gallons_per_day",
+                "people_served"
+              ]
+            }
+          }
+        },
+        "input_parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "parameter_name": {
+                "type": "string"
+              },
+              "typical_range": {
+                "type": "string"
+              },
+              "impact": {
+                "type": "string",
+                "description": "How this parameter affects system performance"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sizing_outputs": {
+      "type": "object",
+      "description": "Expected outputs after procedure",
+      "properties": {
+        "output_quality": {
+          "type": "object",
+          "properties": {
+            "turbidity_ntu": {
+              "type": "number",
+              "description": "Nephelometric Turbidity Units (lower is clearer)"
+            },
+            "pathogen_reduction_log": {
+              "type": "string",
+              "description": "Log reduction (e.g., '3-log' = 99.9% reduction)"
+            }
+          }
+        },
+        "treatment_time": {
+          "type": "string",
+          "description": "Total time from source to potable water"
+        },
+        "yield_percentage": {
+          "type": "number",
+          "description": "Percentage of input water that becomes potable (0-100)"
+        }
+      }
+    },
+    "safety_thresholds": {
+      "type": "object",
+      "description": "Acceptable ranges for water quality parameters",
+      "properties": {
+        "turbidity": {
+          "type": "object",
+          "properties": {
+            "acceptable_range": {
+              "type": "string",
+              "description": "e.g., '< 0.1 NTU acceptable', '0.1-1 NTU acceptable'"
+            },
+            "testing_method": {
+              "type": "string",
+              "description": "How to measure turbidity"
+            }
+          }
+        },
+        "ph_range": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number"
+            },
+            "max": {
+              "type": "number"
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        },
+        "chlorine_residual": {
+          "type": "object",
+          "properties": {
+            "minimum_ppm": {
+              "type": "number",
+              "description": "Minimum free chlorine for disinfection"
+            },
+            "maximum_ppm": {
+              "type": "number",
+              "description": "Maximum to avoid health effects"
+            }
+          }
+        },
+        "bacterial_content": {
+          "type": "string",
+          "description": "Target: e.g., 'absence of E. coli', 'zero CFU/100mL'"
+        },
+        "danger_signs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Observable signs that water is unsafe (color, odor, taste)"
+        }
+      }
+    },
+    "testing_methods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "test_name": {
+            "type": "string"
+          },
+          "what_it_detects": {
+            "type": "string"
+          },
+          "how_to_perform": {
+            "type": "string",
+            "description": "Simple field testing procedure"
+          },
+          "acceptable_result": {
+            "type": "string"
+          },
+          "equipment_needed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "description": "Simple field testing methods for water quality"
+    },
+    "common_contaminants_addressed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Pathogens and contaminants this procedure removes/kills"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "What this procedure does NOT address (e.g., 'does not remove heavy metals')"
+    },
+    "maintenance": {
+      "type": "object",
+      "description": "Ongoing maintenance requirements",
+      "properties": {
+        "frequency": {
+          "type": "string",
+          "description": "e.g., 'daily', 'weekly', 'monthly'"
+        },
+        "tasks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "replacement_parts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Components that wear out and need replacement"
+          }
+        }
+      }
+    },
+    "troubleshooting": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "problem": {
+            "type": "string"
+          },
+          "likely_cause": {
+            "type": "string"
+          },
+          "solution": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source_citation": {
+      "type": "object",
+      "required": [
+        "source_document",
+        "edition_year"
+      ],
+      "properties": {
+        "source_document": {
+          "type": "string",
+          "description": "e.g., 'WHO Drinking Water Quality Guidelines', 'CDC Emergency Water Disinfection'"
+        },
+        "edition_year": {
+          "type": "integer",
+          "minimum": 2000
+        },
+        "section_reference": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "difficulty_level": {
+      "type": "string",
+      "enum": [
+        "simple",
+        "moderate",
+        "complex"
+      ],
+      "description": "Skill level required to execute procedure"
+    },
+    "cost_estimate": {
+      "type": "object",
+      "properties": {
+        "initial_setup": {
+          "type": "string",
+          "description": "Estimated cost for equipment and materials"
+        },
+        "ongoing_cost_per_year": {
+          "type": "string",
+          "description": "Annual maintenance and replacement costs"
+        }
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

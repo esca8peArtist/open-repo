@@ -1,0 +1,421 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Food Preservation and Safety Data Schema",
+  "description": "Content schema for food canning, preservation methods, and processing time tables from USDA authoritative sources. All processing times must be verbatim from USDA Complete Guide to Home Canning 2015 edition.",
+  "type": "object",
+  "required": [
+    "table_id",
+    "food_type",
+    "preservation_method",
+    "processing_times",
+    "source_citation",
+    "botulism_risk_level"
+  ],
+  "properties": {
+    "table_id": {
+      "type": "string",
+      "pattern": "^food_[a-z0-9_]+$",
+      "description": "Unique identifier for food safety table, prefixed with 'food_'"
+    },
+    "food_type": {
+      "type": "string",
+      "description": "Food being preserved (e.g., 'Tomatoes', 'Green Beans', 'Apple Jelly', 'Ground Beef')"
+    },
+    "food_category": {
+      "type": "string",
+      "enum": [
+        "high_acid_vegetables",
+        "low_acid_vegetables",
+        "fruits",
+        "jams_jellies_preserves",
+        "pickles",
+        "meats_poultry",
+        "seafood",
+        "soups",
+        "sauces"
+      ],
+      "description": "Food category affecting processing method selection"
+    },
+    "preservation_method": {
+      "type": "string",
+      "enum": [
+        "water_bath_canning",
+        "pressure_canning",
+        "freezing",
+        "dehydrating",
+        "pickling",
+        "salting"
+      ],
+      "description": "Primary preservation method for this food"
+    },
+    "jar_size": {
+      "type": "object",
+      "required": [
+        "standard_size"
+      ],
+      "properties": {
+        "standard_size": {
+          "type": "string",
+          "enum": [
+            "pint",
+            "quart",
+            "half_pint",
+            "half_gallon"
+          ],
+          "description": "Standard Mason jar size"
+        },
+        "volume_ml": {
+          "type": "integer",
+          "description": "Volume in milliliters"
+        },
+        "volume_oz": {
+          "type": "integer",
+          "description": "Volume in fluid ounces"
+        },
+        "alternative_sizes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Other jar sizes suitable for this recipe"
+        }
+      }
+    },
+    "processing_times": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "method",
+          "time_minutes",
+          "altitude_range",
+          "source_edition"
+        ],
+        "properties": {
+          "method": {
+            "type": "string",
+            "description": "Processing method identifier (e.g., 'water_bath', 'pressure_canning_10psi', 'pressure_canning_15psi')"
+          },
+          "time_minutes": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Processing time in minutes - MUST BE VERBATIM FROM USDA SOURCE"
+          },
+          "altitude_range": {
+            "type": "object",
+            "required": [
+              "feet_min"
+            ],
+            "properties": {
+              "feet_min": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "feet_max": {
+                "type": "integer"
+              },
+              "meters_min": {
+                "type": "integer"
+              },
+              "meters_max": {
+                "type": "integer"
+              }
+            }
+          },
+          "pressure_psi": {
+            "type": "object",
+            "description": "Pressure setting for pressure canner (altitude-adjusted)",
+            "properties": {
+              "low_altitude_0_1000ft": {
+                "type": "number"
+              },
+              "altitude_1001_2000ft": {
+                "type": "number"
+              },
+              "altitude_2001_4000ft": {
+                "type": "number"
+              },
+              "altitude_4001_6000ft": {
+                "type": "number"
+              },
+              "altitude_6001_8000ft": {
+                "type": "number"
+              },
+              "altitude_above_8000ft": {
+                "type": "number"
+              }
+            }
+          },
+          "source_edition": {
+            "type": "string",
+            "enum": [
+              "USDA_2015",
+              "USDA_2009"
+            ],
+            "description": "USDA edition where this processing time appears - CRITICAL for data integrity"
+          },
+          "usda_page_reference": {
+            "type": "string",
+            "description": "Page number in USDA Complete Guide to Home Canning for cross-verification"
+          }
+        }
+      },
+      "description": "Processing time table - all times must match USDA authoritative source exactly"
+    },
+    "altitude_adjustment_table": {
+      "type": "object",
+      "description": "Required altitude adjustments for pressure canning",
+      "properties": {
+        "altitude_feet": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "range_feet": {
+                "type": "string",
+                "description": "e.g., '0-1,000 feet'"
+              },
+              "range_meters": {
+                "type": "string"
+              },
+              "dial_gauge_psi": {
+                "type": "number",
+                "description": "PSI setting for dial gauge canner"
+              },
+              "weighted_gauge_psi": {
+                "type": "number",
+                "description": "PSI setting for weighted gauge canner"
+              },
+              "time_increase_minutes": {
+                "type": "integer",
+                "description": "Add this many minutes to base time (if any)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "botulism_risk_level": {
+      "type": "string",
+      "enum": [
+        "very_low",
+        "low",
+        "moderate",
+        "high"
+      ],
+      "description": "Risk level of botulism (Clostridium botulinum) if processing is incorrect - CRITICAL SAFETY FIELD"
+    },
+    "botulism_risk_explanation": {
+      "type": "string",
+      "description": "Why this food has this risk level and why correct processing is essential"
+    },
+    "critical_safety_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "Non-negotiable safety requirements for this food (e.g., 'Must use pressure canning - water bath insufficient', 'Acid content must be ≥ 0.2%')"
+    },
+    "headspace_required_inches": {
+      "type": "number",
+      "minimum": 0.125,
+      "maximum": 1.5,
+      "description": "Recommended headspace (empty space) between food and jar top in inches"
+    },
+    "raw_vs_hot_pack": {
+      "type": "object",
+      "properties": {
+        "raw_pack": {
+          "type": "object",
+          "properties": {
+            "allowed": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            },
+            "time_adjustment_minutes": {
+              "type": "integer",
+              "description": "Add this many minutes to standard time (often 0-5 extra)"
+            }
+          }
+        },
+        "hot_pack": {
+          "type": "object",
+          "properties": {
+            "recommended": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            },
+            "preparation": {
+              "type": "string",
+              "description": "How to prepare food hot (e.g., 'simmer 2 minutes')"
+            }
+          }
+        }
+      }
+    },
+    "acid_requirements": {
+      "type": "object",
+      "description": "Acidity requirements for water bath canning safety",
+      "properties": {
+        "minimum_ph": {
+          "type": "number",
+          "maximum": 4.6,
+          "description": "Must be ≤ 4.6 for water bath safety (inhibits botulism)"
+        },
+        "acids_allowed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "e.g., 'vinegar (5% acidity)', 'lemon juice', 'citric acid'"
+        },
+        "acid_amounts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "acid_type": {
+                "type": "string"
+              },
+              "amount_per_pint": {
+                "type": "string",
+                "description": "Amount per pint jar (e.g., '1 tablespoon')"
+              },
+              "amount_per_quart": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pre_processing_preparation": {
+      "type": "string",
+      "description": "How to prepare food before canning (wash, cut, blanch, cook, etc.)"
+    },
+    "filling_instructions": {
+      "type": "string",
+      "description": "How to fill jars with food and liquid, including any de-bubbling procedures"
+    },
+    "post_processing": {
+      "type": "object",
+      "description": "What to do after processing",
+      "properties": {
+        "cooling_time": {
+          "type": "string",
+          "description": "Time to let jars cool before handling"
+        },
+        "seal_verification": {
+          "type": "string",
+          "description": "How to verify lids sealed correctly"
+        },
+        "storage_instructions": {
+          "type": "string",
+          "description": "Temperature and conditions for long-term storage"
+        }
+      }
+    },
+    "shelf_life_years": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Recommended shelf life if stored properly"
+    },
+    "quality_degradation": {
+      "type": "string",
+      "description": "How quality changes over time (e.g., 'color fades after 2 years, still safe')"
+    },
+    "signs_of_spoilage": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "Observable signs that food has spoiled and should not be eaten - CRITICAL FOR SAFETY"
+    },
+    "source_citation": {
+      "type": "object",
+      "required": [
+        "usda_edition",
+        "document_title"
+      ],
+      "properties": {
+        "usda_edition": {
+          "type": "string",
+          "enum": [
+            "USDA_Complete_Guide_Home_Canning_2015"
+          ],
+          "description": "USDA Complete Guide to Home Canning edition - CRITICAL, currently must be 2015"
+        },
+        "document_title": {
+          "type": "string",
+          "description": "Full document title"
+        },
+        "publication_year": {
+          "type": "integer",
+          "enum": [
+            2015,
+            2009
+          ],
+          "description": "Publication year of USDA guide"
+        },
+        "chapter_or_section": {
+          "type": "string",
+          "description": "Chapter or section reference in USDA guide"
+        },
+        "pdf_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Direct link to source document section"
+        },
+        "extraction_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date this data was extracted from source"
+        }
+      }
+    },
+    "testing_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "test_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "tested_by": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "passed",
+              "failed",
+              "inconclusive"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Record of any testing done to verify processing times"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
