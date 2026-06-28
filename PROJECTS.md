@@ -255,6 +255,34 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
     - **Confidence**: 92% (Jekyll/GitHub Pages troubleshooting well-documented; fallback platforms verified current)
     - **Status**: PRODUCTION-READY — user can now push GitHub Pages with full recovery procedures in place
 
+**NEW ITEMS (Session 4480+ — 2026-06-28 21:54 UTC — Exploration Queue Replenishment)**:
+
+27. **stockbot: Comprehensive Backtesting Pipeline & Report Generation** (3-4h) ← **READY FOR IMMEDIATE EXECUTION**
+   - **Trigger condition**: None — immediately executable (user escalated for "comprehensive backtesting report"; Priority #1)
+   - **Scope**: Design and implement unified backtesting infrastructure: (1) Historical data pipeline (Alpaca API, caching, multi-timeframe support), (2) Signal replay engine (backtest same signals live trading would generate), (3) Trade simulation (Alpaca commission/slippage modeling, position tracking), (4) PnL calculation (per-session, portfolio-level), (5) Risk metrics (Sharpe ratio, max drawdown, win rate, recovery factor), (6) Model comparison framework (rank strategies across 10+ dimensions), (7) Sensitivity analysis (parameter sweeps for entry/exit thresholds, position size), (8) Reporting engine (HTML/PDF charts with decision-ready summaries). Deliverables: `BACKTEST_PIPELINE_ARCHITECTURE.md` (design spec), `backtest_engine.py` (core implementation), `benchmark_comparison_report.md` (analysis of current 5 sessions vs 2019-2026 historical baseline, comparison to SPY/QQQ).
+   - **Value**: Fulfills user escalation requirement. Enables rapid model validation during development (vs waiting for live trading results). Provides decision data for Phase 4-5 expansion (covered calls, inverse ETF, additional tickers).
+   - **Owner**: stockbot subagent (orchestrator execution)
+   - **Confidence**: 85% (backtesting well-established pattern; Alpaca data access proven; 3-4h timeline conservative)
+   - **Status**: READY — no prerequisites, no user decisions required. Pick this as top item.
+
+28. **mfg-farm: Etsy & Amazon Handmade Pre-Launch Templates** (2-3h)
+   - **Trigger condition**: None — ready now
+   - **Scope**: Create fillable templates for rapid post-test-print market activation: (1) Etsy product listing template (SEO keywords, bullet points, pricing, shipping, images checklist, tags), (2) Amazon Handmade application template (original design certification, photography specs, brand story, shipping policy), (3) Product comparison matrix (ModRun cable clip: Etsy position vs Amazon position vs Reddit niche communities), (4) Pricing calculator templates (margin targets for each channel: Etsy net $25.79 vs Amazon FBA $21.23/sale). All templates pre-filled with market research from Item 9.
+   - **Value**: Post-test-print activation is critical-path (Amazon Handmade 5-7 week review window starts at application). Pre-made templates eliminate 2-3 day setup delay between test print pass and Etsy/Amazon launches.
+   - **Owner**: general-research subagent
+   - **Confidence**: 88% (Phase 2 research complete Session 4469; templates mechanistic)
+   - **Status**: Ready for execution post-Item-27
+
+29. **seedwarden: Phase 3 Extended Content Calendar & Landing Page Copy** (3-4h)
+   - **Trigger condition**: None — ready now
+   - **Scope**: Create extended content infrastructure for Q3 Phase 3 launch (Jun 29-Aug 3) and beyond: (1) Extended social media calendar (Jul-Sep, 60 posts across LinkedIn/Instagram/YouTube: educational 50%, testimonial 30%, promotional 20%), (2) Landing page copy + visual framework for 6 Q3 bundles (Women's Health, Respiratory, Sleep, Immunity, Practitioner, Digestive), (3) Promotional email sequences for tier transitions (free→paid, bundle→full tier, seasonal campaigns), (4) Testimonial collection framework (how to request + incentivize, review aggregation strategy). Coordinate with existing templates from Items 10 + 25.
+   - **Value**: Extends Phase 3 content reach beyond June 29-Aug 3 window. Enables sustained engagement through fall/winter seasons. Reduces mid-launch content creation friction.
+   - **Owner**: seedwarden subagent
+   - **Confidence**: 88% (Phase 3 marketing infrastructure complete Session 4478; bundle content validated Session 4458)
+   - **Status**: Ready for execution post-Item-27
+
+---
+
 **NEW ITEMS (Session 4466+ — 2026-06-28 19:45 UTC — Queue Replenishment for Pre-Market Readiness)**:
 
 20. **stockbot: Jetson June 29 Pre-Market System Readiness Audit** (1.5-2h)
