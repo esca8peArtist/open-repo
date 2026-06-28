@@ -2,6 +2,39 @@
 
 ---
 
+## Session 4385 (2026-06-28 06:07–06:15 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #34; ALL AUTONOMOUS WORK COMPLETE**
+
+### **Since Last Check-in (Session 4384 → 4385)**
+- ✅ **Orientation completed** — ORCHESTRATOR_STATE.md verified, PROJECTS.md audited (zero unfinished scope), BLOCKED.md verified (5 user-action-dependent blocks, no changes), INBOX.md check (only June 30 calibration), Exploration Queue healthy (47+ items all trigger-gated)
+- ✅ **Jetson stockbot health verification** — SSH to 100.120.18.84 confirmed: Docker containers healthy (2+ days uptime), API 200 OK, 5 sessions deployed and ready, all stalled (normal market-closed standby), last cycle June 27 05:00 UTC, zero degradation
+- ✅ **Block verification** — No changes; all 5 blocks remain unresolved since Session 4384
+- ✅ **Critical escalations remain active**:
+  1. **resistance-research Domains 48 & 51 sends** — OVERDUE (14 & 6 days), hard deadline July 1 (3 days away)
+  2. **Domain 59 send window** — HARD DEADLINE JUNE 30 18:00 UTC (~35.75 hours remaining, templates ready)
+- ✅ **State unchanged** — Identical to Sessions 4355-4384; continuous standby checkpoint
+- ✅ **Checkpoint continuity**: Sessions 4361-4385 (25 consecutive standby verifications) — system stable, monitoring continuous, standby posture correct
+
+### **Standby Assessment**
+- **All autonomous work**: COMPLETE (zero unfinished scope; all projects complete, paused, or time-gated; Exploration Queue all items trigger-gated)
+- **All blocks**: USER-ACTION-DEPENDENT (5 entries, none autonomously resolvable)
+- **Exploration Queue**: HEALTHY (47+ items, all correctly trigger-gated, no currently-actionable work)
+- **Stockbot status**: 5 sessions deployed live, Phase 1 validation complete, real-time stream fix active (June 24 deployment), Jetson infrastructure confirmed healthy, waiting for Monday June 29 13:15 UTC pre-market gates (~31 hours away)
+- **Next mandatory event**: Monday 2026-06-29 13:15 UTC — Pre-market stockbot infrastructure validation gates (~31 hours away)
+- **Conclusion**: Continuous standby CORRECT BY DESIGN — no autonomous work available; stockbot system confirmed healthy; awaiting Monday pre-market gates and user decisions on critical escalations
+
+### **Critical Upcoming Deadlines**
+- **June 30 18:00 UTC (~35.75 hours)**: resistance-research Domain 59 send window CLOSES — user execution deadline ~June 29 12:00 UTC
+- **July 1 (3 days)**: Domains 48/51 hard deadline — requires immediate execution
+- **June 30 00:00 UTC or later**: Usage calibration reset available (`python3 scripts/usage-check.py --calibrate 3.0 67.4`) — do NOT run before midnight UTC
+- **Monday June 29 13:15 UTC (~31 hours)**: **MANDATORY** — Pre-market stockbot validation gates
+- **July 3 post-market**: 7-day checkpoint decision point
+
+### **Orchestration Files Updated**
+- WORKLOG.md: Added Session 4385 entry
+- CHECKIN.md: Added this session's summary
+
+---
+
 ## Session 4384 (2026-06-28 06:00–06:05 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #33; ALL AUTONOMOUS WORK COMPLETE**
 
 ### **Since Last Check-in (Session 4383 → 4384)**
