@@ -4,6 +4,28 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 131 — Phase 3 Contractor Onboarding and Launch Workflow — June 28, 2026
+
+**Session**: June 28, 2026
+**Task**: Design and write Phase 3 contractor onboarding workflow and support materials — activate-on-hire package for photographers (×5 candidates), writers (×3 candidates), and habitat specialists (×3 candidates). Pre-populated from PHASE_3_CONTRACTOR_SELECTION_SCORECARD.md.
+
+**Status**: COMPLETE — 4 deliverables written to projects/seedwarden/
+
+**Deliverables**:
+1. **PHASE_3_CONTRACTOR_ONBOARDING_WORKFLOW.md** — 6-phase workflow: response evaluation checklist, offer/negotiation script, onboarding kit (all 3 tracks), weekly check-in agenda, final handoff checklist, post-launch appreciation sequence
+2. **PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md** — Master contractor register (8 candidates pre-populated with scorecard scores and rates), 6-week weekly progress grid, quality gate checklists per contractor type (photographer / writer / habitat specialist), budget tracking table with milestone-by-milestone payment columns
+3. **PHASE_3_LAUNCH_CALENDAR.md** — Detailed week-by-week calendar (Week 0 hiring through Week 6 launch + post-launch), every action dated, [ACTUAL: ] fields for user to fill, upload sequence summary, hard-date zero-float table
+4. **PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md** — 5 ready-to-send email templates: Offer (Template 1), Weekly Check-In (Template 2), Praise (Template 3A), Course Correction (Template 3B), Final Handoff Checklist (Template 4), Payment + Testimonial (Template 5); quick-reference send-timing table
+
+**Key design decisions**:
+- All 4 files pre-populated with contractor names, rates, and delivery dates from PHASE_3_CONTRACTOR_SELECTION_SCORECARD.md and PHASE_3_CRITICAL_PATH_ANALYSIS_JUNE22_JULY13.md
+- Workflow is identical regardless of contractor type (photographers, writers, specialists all follow same 6-phase sequence)
+- FTC and CITES language in templates is verbatim and labeled do-not-paraphrase
+- Payment schedule standard across all tracks: 25% deposit / 25% first deliverable / 25% second deliverable / 25% final handoff
+- Budget tracking includes true-cost calculation for Upwork 5% platform fee
+
+---
+
 ## Item 130 — Rare Native Plants Premium Bundle Research — June 24, 2026 (Q3 2026 positioning)
 
 **Session**: June 24, 2026  
