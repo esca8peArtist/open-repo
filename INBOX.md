@@ -11,7 +11,15 @@
 
 ## New Items
 
-(None currently pending)
+### [2026-06-30 00:05 UTC] USAGE CALIBRATION RESET — Scheduled for Tuesday reset
+
+**Process on or after June 30 00:00 UTC only.** Usage billing week resets at that time.
+
+Run: `python3 scripts/usage-check.py --calibrate 3.0 67.4`
+
+This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434). The limits were temporarily inflated to 0.1% on June 27 to allow the orchestrator to run freely during the final days of the billing week. After the reset, actual usage is 0, so the June 24 limits will correctly show 0% and normal threshold monitoring resumes.
+
+**Do not process this item before June 30 00:00 UTC.**
 
 ## June 27 AUTONOMOUS WORK QUEUE — Processing History
 
