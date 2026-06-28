@@ -2,6 +2,42 @@
 
 ---
 
+## Session 4461 (2026-06-28 18:22–19:10 UTC) — ORCHESTRATOR + STOCKBOT SUBAGENT — EXPLORATION QUEUE ITEM 15 COMPLETE
+
+### **Since Last Check-in (Session 4460 → 4461)**
+✅ **Exploration Queue Replenishment + Item 15 Execution** — Added 3 new EQ items (14-16) to replace recently completed items (11-13). Spawned stockbot subagent to work on Item 15 (July 3 checkpoint routing framework). All 3 production-ready decision documents committed to stockbot submodule (commit `914e6a9`).
+
+**Item 15 Status**: ✅ **COMPLETE**
+- **Deliverables**:
+  1. `JULY_3_CHECKPOINT_KPI_DASHBOARD.md` (629 lines) — 11 KPIs with SSH/sqlite3 templates, composite score (0-10), fill-in-the-blanks user entry
+  2. `PHASE_4_5_PATH_DECISION_ROUTING.md` (561 lines) — Mechanical routing (PASS≥7→A+C, CAUTION 5.5-6.9→B+C, NO-GO<5.5→monitor), per-path checklists, 5 override rules
+  3. `PHASE_4_5_CAPITAL_ALLOCATION_AND_GUARDRAILS.md` (718 lines) — Path allocation (A:$25K, B:$10.6K, C:$3.18K/event), drawdown-triggered reduction, leverage ceiling, emergency de-risking
+- **Committed**: projects/stockbot commit `914e6a9`
+- **Key feature**: July 3 20:00 UTC post-market execution is mechanical (10 min KPI entry → 5 min routing → sign-off); zero re-planning needed
+- **Confidence**: 85% (mechanization of existing Phase 4 framework)
+
+### **New Exploration Queue Items Added**
+- **Item 14**: career-training Phase 1 Analytics Framework (2-3h, trigger: user Phase 1 deployment)
+- **Item 15**: ✅ stockbot July 3 checkpoint routing (COMPLETE, commit `914e6a9`)
+- **Item 16**: systems-resilience Phase 6 Democracy Tools (4-5h, trigger: Phase 5 release)
+
+### **Current System Status**
+- **Stockbot**: All 5 sessions healthy; real-time stream verified ✅; July 3 checkpoint routing framework ready ✅; June 29 13:15 UTC countdown: ~19 hours
+- **Exploration Queue**: Items 11-15 complete; Items 5-7 + 14,16 pending triggers; **0 active autonomous work remaining**
+- **All Projects**: Blocked on user decisions (platform choice), user actions (GitHub push, test print, berberine fix), or time-gates (Phase 3 Nov 4)
+- **Usage**: Sonnet 0.1%, All-models 0.1% (well within budget)
+
+### **Key Decision Points Still Awaiting User Action** (unchanged from Session 4460)
+1. **URGENT (by June 29 07:00 UTC)**: Resolve seedwarden Red Clover berberine error
+2. **URGENT (by June 30 18:00 UTC)**: Execute resistance-research Domain 59 Tier 2 sends
+3. **High Priority (by July 1)**: Clarify seedwarden Sleep date, confirm contractors, post platform decisions
+4. **Anytime**: Push career-training Phase 1 to GitHub, execute mfg-farm test print
+
+### **Assessment**
+All speculative preparation work complete. EQ items 14-16 staged for upcoming triggers. July 3 checkpoint infrastructure fully pre-staged. All remaining projects blocked on user actions/decisions. Ready for checkpoint validation June 29 + decision routing July 3-11.
+
+---
+
 ## Session 4460 (2026-06-28 18:08–18:45 UTC) — ORCHESTRATOR + 3 PARALLEL AGENTS — DUAL DEPLOYMENT PATHS + CHECKPOINT ROUTING COMPLETE
 
 ### **Since Last Check-in (Session 4459 → 4460)**
