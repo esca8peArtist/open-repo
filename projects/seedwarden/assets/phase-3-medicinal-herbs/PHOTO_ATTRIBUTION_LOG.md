@@ -82,8 +82,8 @@ tags: [seedwarden, phase-3, photo-attribution, licensing, CC-BY-SA, CC-BY]
 
 | Shot | Target Filename | Source URL | Photographer/Uploader | License | Attribution String | Status |
 |---|---|---|---|---|---|---|
-| Habit (plant in bloom) | `red-clover-habit.jpg` | https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG | Böhringer Friedrich | CC BY-SA 2.5 | "Photo: Böhringer Friedrich, Wikimedia Commons, CC BY-SA 2.5. URL: https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG" | [x] Confirmed (agent-researched 2026-06-22; note: flower close-up, not full plant — user may prefer iNaturalist for full-plant shot) |
-| Flower head | `red-clover-flower.jpg` | https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG | Böhringer Friedrich | CC BY-SA 2.5 | "Photo: Böhringer Friedrich, Wikimedia Commons, CC BY-SA 2.5. URL: https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG" | [x] Optional — same image |
+| Habit (plant in bloom) | `red-clover-habit.jpg` | https://commons.wikimedia.org/wiki/File:Trifolium_pratense_subsp_pratense_LC0195.jpg | Leonora Enking | CC BY-SA 2.0 | "Photo: Leonora Enking, Wikimedia Commons, CC BY-SA 2.0. URL: https://commons.wikimedia.org/wiki/File:Trifolium_pratense_subsp_pratense_LC0195.jpg" | [x] Confirmed — full-plant habit with foliage and flowers visible (2026-06-28 fix: replaced flower close-up with full-plant shot) |
+| Flower head | `red-clover-flower.jpg` | https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG | Böhringer Friedrich | CC BY-SA 2.5 | "Photo: Böhringer Friedrich, Wikimedia Commons, CC BY-SA 2.5. URL: https://commons.wikimedia.org/wiki/File:Wiesen-Klee,_Trifolium_pratense_2.JPG" | [x] Optional — detailed flower close-up |
 
 ---
 
@@ -385,7 +385,7 @@ Before sprint Day 1 (June 22), verify:
 |---|---|---|---|
 | Black Cohosh | Women's Health | Bundle 1 | [x] Habit source confirmed (H. Zell CC BY-SA 3.0) |
 | Vitex | Women's Health | Bundle 1 | [x] Habit source confirmed (Sten Porse CC BY-SA 3.0) |
-| Red Clover | Women's Health | Bundle 1 | [x] Flower/habit source confirmed (Böhringer Friedrich CC BY-SA 2.5; note: flower close-up) |
+| Red Clover | Women's Health | Bundle 1 | [x] Full-plant habit source confirmed (Leonora Enking CC BY-SA 2.0); flower close-up also confirmed (Böhringer Friedrich CC BY-SA 2.5) |
 | Calendula | Women's Health + Digestive | Bundle 1 | [x] Habit source confirmed (H. Zell CC BY-SA 3.0) |
 | Lavender | Women's Health + Sleep | Bundle 1 | [x] Sources confirmed (H. Zell CC BY-SA 3.0; verify habit vs. inflorescence composition) |
 | Elderberry | Respiratory + Immunity | Bundle 2 | [x] Habit source confirmed (H. Zell CC BY-SA 3.0; S. nigra) |
