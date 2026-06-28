@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-28T20:15:52Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-28T20:54:24Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (902,514 tokens) | All-models 0.1% | Reset in 28h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (902,514 tokens) | All-models 0.1% | Reset in 27h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -80,14 +80,6 @@ This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434)
 **Do not process this item before June 30 00:00 UTC.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-**Execution (20:00–20:12 UTC)**:
-- ✅ **Item 21** (resistance-research) — Wave 2 probability model COMPLETE (commit `31e61f15`)
-  - WAVE_2_OUTCOME_PROBABILITY_MODEL.md: Wave 1 data analysis (60% Domain 59), uncertainty band 40-70%
-  - WAVE_2_ACTIVATION_DECISION_THRESHOLDS.md: Deterministic triggers with explicit UTC times
-  - AUTOMATED_WAVE_2_CLASSIFICATION.py: Cron-ready script (tested all paths + edge cases)
-  - Value: Eliminates 4-6h analysis delay when Wave 2 data arrives June 25-27
-
-- ✅ **Item 22** (career-training) — Kit.com pre-trial COMPLETE (commit `f74b8f93`)
   - KIT_ACCOUNT_SETUP_CHECKLIST.md: Dashboard map, API key location, feature audit
   - WELCOME_SEQUENCE_DRAFT.md: 3 production-ready emails based on Module 14
   - EMAIL_DELIVERABILITY_TEST_RESULTS.md: Pre-execution research + test protocol + known limitations flagged
@@ -119,3 +111,12 @@ This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434)
 2. **By June 29 07:00 UTC**: Resolve seedwarden Red Clover berberine error (5 min)
 3. **June 29 13:05 UTC**: Execute Item 20 (Jetson pre-market audit) if within 2h pre-checkpoint window
 4. **Post-user-action**: Phase 1 GitHub Pages push triggers Item 14 analytics framework; test print execution routes to Item 23 contingency playbook
+
+
+**Session 4473 (2026-06-28 20:31 UTC)** — Orchestrator orientation + seedwarden Red Clover fix
+- **Orientation**: ORCHESTRATOR_STATE reviewed. All autonomous work complete (Items A-E from June 27 completed). Zero active work items; all projects blocked on user actions or scheduled events.
+- **Seedwarden fix**: Pre-sprint gate deadline (June 29 07:00 UTC). Red Clover photo attribution error resolved (commit 6adce418):
+  - Issue: "Habit" image was flower close-up (Böhringer Friedrich CC BY-SA 2.5), duplicate of "Flower head" row
+  - Fix: Replaced with full-plant habit image (Leonora Enking CC BY-SA 2.0) showing foliage + flower structure
+  - Impact: Phase 3 Medicinal Herbs photo attribution log now complete with proper habit/flower distinction
+- **Next action**: June 29 13:15 UTC — Jetson pre-market checkpoint (Item 20, within 2h window). All other work time-gated or awaiting user decisions.
