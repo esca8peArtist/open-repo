@@ -57,33 +57,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### open-repo — June 12 deployment never executed; infrastructure missing on raspby1
-**Date blocked**: 2026-06-16 (discovered in Session 3671 audit)
-**Original failure date**: 2026-06-12 (deployment date when nothing occurred)
-**Context**: The June 12 deployment was incorrectly marked as "resolved" in Session 2995, which only clarified the start time (09:00 UTC). The actual deployment never executed. **AUDIT VERIFIED (Session 3682, 15:50–16:45 UTC)** — Three production-ready audit documents confirm deployment DID NOT execute:
-- DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines): Verified 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000 (connection refused); confidence 99%
-- POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines): 6 prioritized blockers identified; root cause = platform/runtime decision expired June 15 23:59 UTC with no user response
-- DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines, Session 3770): 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000; confidence 99%
-- POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines, Session 3770): Root cause identified — ISSUE-3: raspby1 host platform/runtime decision (Docker vs systemd) with deadline June 15 23:59 UTC expired, no user response. Blocks both open-repo AND systems-resilience Phase 5.1 simultaneously.
-- **All application code production-ready** (157 tests passing, Phase 5 complete); only blocker is infrastructure/host decision, not code
-- **Shared blocker with systems-resilience** — Both projects blocked on same raspby1 runtime model decision (Docker with Nextcloud+Matrix/Discourse vs systemd approach)
-**What I need**: (1) **User re-authorization** — raspby1 platform/runtime decision (deadline expired June 15 23:59 UTC). Does raspby1 run Docker (recommended: simpler, faster deployment) or systemd/venv (traditional Linux)? This decision gates BOTH open-repo AND systems-resilience. (2) Once runtime decided, orchestrator will execute first-time deployment (3-4h Docker path, or rebuild+execute systemd path 2-3h). (3) Post-deployment 48-72h soak test before Phase 5.2 author onboarding.
-**Verify with**: `docker ps 2>&1 | grep -iE "open-repo|api-.*postgres"` should show running containers, OR `systemctl status open-repo && curl http://localhost:8000/api/health` should return 200 OK
-**Resolution**: [awaiting user decision on raspby1 runtime model — Audit complete June 16 (Session 3770). Audit shows 0 infrastructure deployed; all 6 health checks failed as expected. Ready for first-time deployment upon user authorization.]
-
----
-
-### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
-**Date blocked**: 2026-06-06
-**Date deadline passed**: 2026-06-15 23:59 UTC
-**Date officially marked overdue**: 2026-06-16 00:40 UTC (Session 3636.6 — deadline not met, no decision provided)
-**Context**: Phase 5.1 publication deployment is scheduled for June 9 13:00–15:00 UTC. Pre-flight verification completed (Session 2964, Agent a8509b87e34e2aa5b). All content is production-ready (61,611 words, 336+ citations documented). However, the publication platform is not deployed on raspby1. As of June 6 20:05 UTC: Docker was not installed (resolved in Session 2965), no Nextcloud or Discourse containers exist, no web services on ports 80/443. The deployment runbook assumes the platform will be deployed by June 8 18:00 UTC and will begin using it at 12:30 UTC June 9. Platform choice (Nextcloud+Matrix vs Discourse) was pending user decision from Session 2965 CHECKIN with **DECISION DEADLINE JUNE 15 23:59 UTC**. **✅ DEADLINE HAS NOW PASSED — NO DECISION PROVIDED.** Updated recommendation per Session 3563: Nextcloud+Matrix (8/10 vs Discourse 5/10, due to Pi5 IPv6 loopback bug in Discourse).
-**What I need**: User decision on which platform to deploy (Nextcloud+Matrix or Discourse). **CURRENT RECOMMENDATION (Session 3563)**: **Nextcloud+Matrix strongly recommended** (8/10 vs Discourse 5/10) because: Discourse has open IPv6 loopback bug on 64-bit PiOS (meta.discourse.org #296408) requiring 3 mandatory workarounds; Nextcloud has zero Pi5-specific blockers. Superior feature fit (offline editing, E2E encryption). Deliverable: `PLATFORM_DECISION_MATRIX_WITH_RUNBOOKS.md` (Session 3563) includes full Nextcloud deployment runbook (4-6h). If Discourse chosen, SMTP credentials needed. If Nextcloud+Matrix chosen (recommended), confirm acceptance of 7.9GB allocation (5.5GB peak). **Once decision provided**, orchestrator can begin Phase 5.1 deployment immediately.
-**Verify with**: `docker ps | grep -E "nextcloud|discourse"` should show running container, and `curl http://[platform-ip]:80` or `curl https://[platform-domain]:443` should return 200 OK
-**Resolution**: [leave blank — deadline expired, awaiting user direction to proceed with selected platform]
-
----
-
 ### systems-resilience — Phase 5 GitHub release requires maintainer push permissions
 **Date blocked**: 2026-06-27
 **Context**: Phase 5 Wave 1+2 integrated corpus (45,380 words, 6 files) was prepared for GitHub release publication as v5.0-wave-1-2-production. June 1 auto-fallback prepared all release content (integrated corpus, 5 individual Wave docs, comprehensive release notes) but did not execute the final GitHub publish action. Investigation (Session 4327, orchestrator INBOX Item D) confirmed: all release artifacts are production-ready and staged, but the GitHub account currently in use (esca8peArtist) lacks push permissions to the SuperClaude-Org/SuperClaude_Framework repository. The maintainer account with write access must execute the final GitHub tag + release creation steps. All content verified ready (integrated corpus 45,380 words, 6 release files, comprehensive release notes with Phase 6 roadmap).
@@ -94,6 +67,23 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### open-repo — June 12 deployment never executed; platform decision resolved by user
+**Date blocked**: 2026-06-16 (discovered in Session 3671 audit)
+**Date resolved**: 2026-06-28 (Session 4474 — user decision)
+**Context**: June 12 deployment was never executed. Audit confirmed 0/6 infrastructure checks passed on raspby1 (no Docker, no Nginx, no DB, no SSL). Root cause was the Pi platform/runtime decision (Docker vs systemd) that expired June 15 23:59 UTC without user response. Block was shared with systems-resilience Phase 5.1.
+**Resolution**: RESOLVED 2026-06-28 — User rejected Pi hosting for open-repo (Decision 1). No server will be deployed on raspby1. Content will go to GitHub Pages/GitHub public hosting instead. Pi stays free for orchestration tasks. Autonomous open-repo work (schemas, static content prep, code maintenance) is unblocked and can proceed independently of the deployment decision.
+
+---
+
+### systems-resilience — Phase 5.1 platform deployment blocking June 9 publication
+**Date blocked**: 2026-06-06
+**Date deadline passed**: 2026-06-15 23:59 UTC
+**Date resolved**: 2026-06-28 (Session 4474 — user decision)
+**Context**: Phase 5.1 required choosing a community platform (Nextcloud+Matrix or Discourse) to host on raspby1. All content was production-ready (61,611 words, 336+ citations). Decision deadline expired June 15 23:59 UTC without user response. Orchestrator recommendation was Nextcloud+Matrix (8/10 vs Discourse 5/10 due to Pi5 IPv6 loopback bug in Discourse). Block also gated Phase 6 Domain A platform selection.
+**Resolution**: RESOLVED 2026-06-28 — User rejected Pi hosting, Nextcloud/Matrix, and Discourse (Decisions 1-2). No local server deployment. All content (Phase 5.1 corpus, Phase 6 Domain A) will go to GitHub Pages / public GitHub instead. systems-resilience autonomous work (medical outreach drafts, Phase 5 static content, schema documentation) is now unblocked. Phase 6 Domain A research is already complete (content doc 6,800 words production-ready May 27, author recruitment targets verified June 1, platform analysis June 3). Phase 5 GitHub release remains blocked on maintainer push permissions (see separate active block).
+
+---
 
 <!-- AUTO:CALIBRATION:START -->
 ### Usage limits — weekly calibration reminder

@@ -1,3 +1,42 @@
+## Session 4474 (2026-06-28) — USER DECISIONS 1-3, 5 PROCESSED; OPEN-REPO + SYSTEMS-RESILIENCE UNBLOCKED
+
+**Status**: COMPLETE — All four user decisions processed. BLOCKED.md, PROJECTS.md updated. Two active blocks resolved and archived.
+
+**Decisions processed**:
+
+**Decision 1 + 2 (Platform blocks resolved)**:
+- User rejected Pi hosting for both open-repo and systems-resilience. No Nextcloud/Matrix, no Discourse, no Pi server.
+- open-repo block ("June 12 deployment never executed") moved to Resolved Archive. Resolution: GitHub Pages / GitHub public hosting.
+- systems-resilience Phase 5.1 block ("platform deployment blocking June 9 publication") moved to Resolved Archive. Resolution: GitHub Pages.
+- Both PROJECTS.md sections updated: Status changed from Paused to Active — GitHub Pages approach.
+- Autonomous work in both projects unblocked: schema documentation, static content prep, medical outreach drafts.
+
+**Decision 3 (Domain 59 sends removed)**:
+- No formal BLOCKED.md entry existed for Domain 59 sends; item was in PROJECTS.md resistance-research Current focus as a pending user action.
+- Removed "Domain 59 Tier 2 sends (EPI/Demos/NELP, June 25-30)" from PROJECTS.md resistance-research Current focus user action list.
+- Window closes June 30; user confirmed removal. No orchestrator action outstanding.
+
+**Decision 5 (Phase 6 Domain A research status)**:
+- Read `projects/systems-resilience/` to verify. Phase 6 Domain A research HAS run:
+  - Content doc: `phase-6/01-community-economic-resilience.md` (6,800 words, 38 citations, status: production-ready, dated May 27, 2026)
+  - Author recruitment: 18 targets verified June 1, 2026 (`phase-6-domain-a-recruitment/VERIFICATION_SUMMARY.md`)
+  - Platform analysis: 10-vendor evaluation complete June 3, 2026 (`PHASE_6_DOMAIN_A_COMMUNITY_PLATFORM_ANALYSIS.md`)
+- The only outstanding item was platform selection (Nextcloud+Matrix vs Discourse), now moot given Decision 1 (GitHub Pages).
+- systems-resilience PROJECTS.md updated with Phase 6 Domain A complete status.
+
+**Career training (additional guidance)**:
+- Read career-training section and project files. 36 modules exist (01-28 as named files, 29-33 as module-XX.md, 34-36 written post-gap-analysis).
+- Gap modules 37 (Industrial Commissioning) and 38 (Multi-Family & Light Commercial) remain unwritten per new-module-proposals.md from Session 1049.
+- Added Exploration Queue item 27-a for writing Modules 37-38 — immediately executable, no GitHub Pages required.
+- Career-training current focus updated to surface this autonomous work.
+
+**Active blocks after this session**: 3 (down from 5)
+1. cybersecurity-hardening — VeraCrypt restart (manual user action)
+2. mfg-farm — test print execution (manual user action)
+3. systems-resilience — Phase 5 GitHub release maintainer push (separate from platform decision, still active)
+
+---
+
 ## Session 4482 (2026-06-28 22:22–23:15 UTC) — ORCHESTRATOR VERIFICATION: ITEM 27 COMPLETE, ZERO AUTONOMOUS WORK
 
 **Status**: ✅ VERIFICATION COMPLETE — Item 27 confirmed delivered and committed from prior session.
