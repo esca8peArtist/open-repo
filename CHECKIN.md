@@ -2,6 +2,34 @@
 
 ---
 
+## Session 4357 (2026-06-28 01:25 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT; CONTINUOUS VERIFICATION THROUGH MONDAY PRE-MARKET**
+
+### **Since Last Check-in (Session 4356 → 4357)**
+- ✅ **Full reorientation verified** — ORCHESTRATOR_STATE.md (auto-gen 2026-06-28T01:09:51Z, current), BLOCKED.md (5 blocks all user-dependent, no new Resolutions), INBOX.md (empty), PROJECTS.md (all work complete or time/user-gated)
+- ✅ **State identical to Session 4356** — ~10 min elapsed, zero new items, zero new blocks, zero change in usage (88.9%)
+- ✅ **Standby posture confirmed** — Correct by design; all autonomous work complete; usage at 88.9% (1.1% from hard 90% throttle); next event Monday June 29 13:15 UTC pre-market gates
+
+### **Session Work Completed**
+- ✅ **Full orientation & protocol compliance check** (5 min) — re-read project Goals for unfinished scope (all complete or time-gated), verified Exploration Queue healthy (47+ items, all appropriate status), confirmed standby is correct posture
+- ✅ **Verified Session 4356 assessment accurate** — No changes to project state, block status, or usage since last session (10 min ago)
+
+### **Budget & Usage**
+- Usage: 88.9% All-models (Sonnet 9.1%), OVERRIDE ACTIVE, **1.1% remaining before hard 90% throttle**
+- No autonomous work warranted at this usage level; standby posture correct
+
+### **Standby Schedule (No Autonomous Work)**
+- **Current**: Sunday June 28 01:25 UTC (early morning standby)
+- **Next event**: Monday June 29 13:15 UTC — Item 36 pre-market validation gates (5-min infrastructure check)
+- **Following event**: Monday June 29 21:15 UTC — daily_model_search.py (Optuna TPE search background process)
+
+### **Next Session Actions**
+- Maintain continuous standby through Monday 13:15 UTC (correct by design)
+- If user posts any block Resolution → process immediately
+- If Monday 13:15 UTC arrives → execute Item 36 pre-market gates
+- Usage reset: Tuesday 00:00 UTC (~47h away)
+
+---
+
 ## Session 4356 (2026-06-28 01:15 UTC) — ORCHESTRATOR — ✅ **SATURDAY STANDBY CHECKPOINT; CONTINUOUS VERIFICATION THROUGH MONDAY PRE-MARKET**
 
 ### **Since Last Check-in (Session 4355 → 4356)**
