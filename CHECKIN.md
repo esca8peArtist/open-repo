@@ -2,23 +2,26 @@
 
 ---
 
-## Session 4426 (2026-06-28 11:07 UTC) — ORCHESTRATOR — ✅ **SATURDAY STANDBY CHECKPOINT #76; LOOP CONSOLIDATION ACTIVE — ZERO CHANGES**
+## Session 4427 (2026-06-28 11:14 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #77; CONTINUOUS MONITORING — SCHEDULED WAKE-UP 2026-06-30 00:00+ UTC FOR USAGE CALIBRATION**
 
-### **Since Last Check-in (Session 4425 → 4426)**
-- ✅ **State verification** — Session 4425 committed at 11:00 UTC; Session 4426 finds zero changes (identical state)
-- ✅ **Standby confirmation** — Continuous monitoring loop: 76+ consecutive verifications, zero unfinished autonomous work, all blocks user-action-dependent
+### **Since Last Check-in (Session 4426 → 4427)**
+- ✅ **Orientation complete** — Read ORCHESTRATOR_STATE.md (Session 4426 summary), BLOCKED.md, PROJECTS.md, INBOX.md
+- ✅ **State verification** — Session 4426 committed at 11:07 UTC; Session 4427 finds zero changes (identical state to 76+ prior verifications)
+- ✅ **Scheduled task identified** — INBOX Item: Usage Calibration Reset (June 30 00:00+ UTC). Requires: `python3 scripts/usage-check.py --calibrate 3.0 67.4`. Scheduled orchestrator wake-up for June 30 (ScheduleWakeup clamped to 1h max; monitoring loop will re-fire until then).
+- ✅ **Standby confirmation** — Continuous monitoring loop: 77+ consecutive verifications, zero unfinished autonomous work, all blocks user-action-dependent
 
 ### **Critical Deadlines Tracked**
-1. **Monday June 29 13:15 UTC** (~58h away): Pre-market stockbot infrastructure validation gates (PRIMARY CHECKPOINT — mandatory, triggers next orchestrator wake-up)
-2. **June 30 18:00 UTC** (~45h away): resistance-research Domain 59 send window closes (user action: 3 email templates ready)
-3. **July 3 post-market**: 7-day stockbot checkpoint (validation window closure)
+1. **Monday June 29 13:15 UTC** (~26h away): Pre-market stockbot infrastructure validation gates (PRIMARY CHECKPOINT — mandatory)
+2. **June 30 00:00 UTC** (~13h away): Usage calibration reset (SCHEDULED AUTONOMOUS TASK — `python3 scripts/usage-check.py --calibrate 3.0 67.4`)
+3. **June 30 18:00 UTC** (~31h away): resistance-research Domain 59 send window closes (user action: 3 email templates ready)
+4. **July 3 post-market**: 7-day stockbot checkpoint (validation window closure)
 
 ### **Standby Assessment**
 - **All autonomous work**: COMPLETE (zero unfinished scope)
 - **All blocks**: USER-ACTION-DEPENDENT (5 entries, all non-resolvable)
 - **Exploration Queue**: HEALTHY (47+ items, all correctly trigger-gated)
 - **Stockbot infrastructure**: HEALTHY (5 sessions live, Phase 1 monitoring through July 3 checkpoint)
-- **Conclusion**: Continuous standby CORRECT BY DESIGN; consolidation active; next orchestrator execution at Monday 13:15 UTC
+- **Conclusion**: Continuous standby CORRECT BY DESIGN; monitoring loop consolidation active; next user-visible action: Monday 13:15 UTC pre-market gates (or June 30 Domain 59 deadline if user posts action to INBOX)
 
 ---
 

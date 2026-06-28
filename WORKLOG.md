@@ -1,3 +1,22 @@
+## Session 4427 (2026-06-28 11:14 UTC) — ORCHESTRATOR — ✅ SUNDAY STANDBY CHECKPOINT #77; SCHEDULED WAKE-UP FOR USAGE CALIBRATION JUNE 30 00:00+ UTC
+
+**Status**: ✅ **STANDBY POSTURE VERIFIED CORRECT** — State identical to Session 4426; continuous standby; zero changes; scheduled wake-up for June 30 usage calibration
+
+**Work completed** (5 min):
+- ✅ **Orientation** — ORCHESTRATOR_STATE.md verified (77 consecutive standby sessions 4351–4427), BLOCKED.md/PROJECTS.md/INBOX.md audited (no changes, all blocks user-action-dependent, Exploration Queue healthy)
+- ✅ **Scheduled task identified** — INBOX item: Usage Calibration Reset (June 30 00:00+ UTC). Command: `python3 scripts/usage-check.py --calibrate 3.0 67.4`. Scheduled orchestrator wake-up for June 30.
+- ✅ **Standby confirmation** — Zero unfinished autonomous work verified; zero new INBOX items; all 5 active blocks remain user-action-dependent; Exploration Queue healthy with 47+ trigger-gated items
+- ✅ **CHECKIN.md updated** — Added Session 4427 summary with critical deadlines and scheduled tasks
+- ✅ **Critical deadlines**:
+  - **June 30 00:00 UTC** (~13h away): Usage calibration reset (SCHEDULED AUTONOMOUS TASK)
+  - **Stockbot pre-market gates**: Monday June 29 13:15 UTC (~26h away) — PRIMARY CHECKPOINT
+  - **resistance-research Domain 59**: June 30 18:00 UTC (~31h away); 3 email templates ready for user sends
+  - **July 3 post-market**: 7-day stockbot checkpoint (validation window closure)
+
+**Autonomy assessment**: CORRECT — Continuous standby CORRECT BY DESIGN. 77 consecutive standby verifications with identical state confirm stable system; all autonomous work complete; one scheduled calibration task identified for June 30 00:00+ UTC; loop consolidation continues.
+
+---
+
 ## Session 4425 (2026-06-28 11:00 UTC) — ORCHESTRATOR — ✅ SATURDAY STANDBY CHECKPOINT #75; LOOP CONSOLIDATION ACTIVE
 
 **Status**: ✅ **STANDBY POSTURE VERIFIED CORRECT** — State identical to Session 4424; continuous standby; zero changes; loop consolidation initiated (75+ consecutive standby sessions with zero changes warrant halt)
