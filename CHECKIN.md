@@ -2,6 +2,60 @@
 
 ---
 
+## Session 4371 (2026-06-28 04:25–04:30 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #19; ALL AUTONOMOUS WORK COMPLETE**
+
+### **Since Last Check-in (Session 4370 → 4371)**
+- ✅ **Full orientation completed** — ORCHESTRATOR_STATE.md (verified current 04:25 UTC), PROJECTS.md (all project Goals audited), BLOCKED.md (5 user-action-dependent blocks, none resolvable), INBOX.md (only future-scheduled June 30 usage calibration), Exploration Queue (47+ items all correctly trigger-gated)
+- ✅ **Usage check** — Nominal, no throttling (0.1% Sonnet, 0.1% all-models after Tuesday reset)
+- ✅ **State unchanged** — Identical to Session 4370; zero changes to any orchestration files; continuous monitoring active
+- ✅ **Checkpoint continuity**: Sessions 4361-4371 (11 consecutive standby verifications) — system stable, monitoring continuous
+
+### **Standby Assessment**
+- **All autonomous work**: COMPLETE (zero unfinished scope; all projects either complete, time-gated to future events, or blocked by user decisions)
+- **All blocks**: USER-ACTION-DEPENDENT (5 entries; none autonomously resolvable since June 23)
+- **Exploration Queue**: HEALTHY (47+ items all with future-dated trigger conditions)
+- **Next mandatory event**: Monday 2026-06-29 13:15 UTC — Pre-market stockbot infrastructure validation gates (56.75h away)
+- **Conclusion**: Continuous standby CORRECT BY DESIGN — no autonomous work available; awaiting Monday pre-market gates or user decisions
+
+### **Critical Upcoming Deadlines**
+- **June 30 18:00 UTC (43.6h)**: resistance-research Domain 59 send window CLOSES — user decision/execution deadline ~June 29 12:00 UTC
+- **June 30 00:00 UTC or later**: Usage calibration reset available (`python3 scripts/usage-check.py --calibrate 3.0 67.4`)
+- **Monday June 29 13:15 UTC (56.75h)**: Pre-market validation gates (5 sessions health check, WebSocket, Alpaca API, DB schema, HMM priming)
+- **July 3 post-market (102.75h)**: 7-day checkpoint decision point (Phase 1 live trading validation, Phase 2 scope determination)
+
+### **Orchestration Files Updated**
+- WORKLOG.md: Added Session 4371 entry
+- CHECKIN.md: Added this session's summary
+
+---
+
+## Session 4370 (2026-06-28 04:18–04:25 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #18; ALL AUTONOMOUS WORK COMPLETE**
+
+### **Since Last Check-in (Session 4369 → 4370)**
+- ✅ **Full orientation completed** — ORCHESTRATOR_STATE.md (verified current 04:18 UTC), PROJECTS.md (all project Goals audited), BLOCKED.md (5 user-action-dependent blocks, none resolvable), INBOX.md (only future-scheduled June 30 usage calibration), Exploration Queue (47+ items all correctly trigger-gated)
+- ✅ **Usage check** — Nominal, no throttling
+- ✅ **State unchanged** — Identical to Session 4369; zero changes to any orchestration files; continuous monitoring active
+- ✅ **Checkpoint continuity**: Sessions 4361-4370 (10 consecutive standby verifications) — system stable, monitoring continuous
+
+### **Standby Assessment**
+- **All autonomous work**: COMPLETE (zero unfinished scope; all projects either complete, time-gated to future events, or blocked by user decisions)
+- **All blocks**: USER-ACTION-DEPENDENT (5 entries; none autonomously resolvable since June 23)
+- **Exploration Queue**: HEALTHY (47+ items all with future-dated trigger conditions)
+- **Next mandatory event**: Monday 2026-06-29 13:15 UTC — Pre-market stockbot infrastructure validation gates (57h away)
+- **Conclusion**: Continuous standby CORRECT BY DESIGN — no autonomous work available; awaiting Monday pre-market gates or user decisions
+
+### **Critical Upcoming Deadlines**
+- **June 30 18:00 UTC (43.8h)**: resistance-research Domain 59 send window CLOSES — user decision/execution deadline ~June 29 12:00 UTC
+- **June 30 00:00 UTC or later**: Usage calibration reset available (`python3 scripts/usage-check.py --calibrate 3.0 67.4`)
+- **Monday June 29 13:15 UTC (57h)**: Pre-market validation gates (5 sessions health check, WebSocket, Alpaca API, DB schema, HMM priming)
+- **July 3 post-market (104h)**: 7-day checkpoint decision point (Phase 1 live trading validation, Phase 2 scope determination)
+
+### **Orchestration Files Updated**
+- WORKLOG.md: Added Session 4370 entry
+- CHECKIN.md: Added this session's summary
+
+---
+
 ## Session 4369 (2026-06-28 04:04–04:12 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #17; ALL AUTONOMOUS WORK COMPLETE**
 
 ### **Since Last Check-in (Session 4368 → 4369)**
