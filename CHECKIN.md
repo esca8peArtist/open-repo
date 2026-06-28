@@ -2,6 +2,28 @@
 
 ---
 
+## Session 4364 (2026-06-28 03:31 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #12; ALL AUTONOMOUS WORK COMPLETE**
+
+### **Since Last Check-in (Session 4363 → 4364)**
+- ✅ **Full orientation completed** — ORCHESTRATOR_STATE.md (verified current 03:31 UTC), PROJECTS.md (all project Goals audited for unfinished scope), BLOCKED.md (5 user-action-dependent, none resolved since 4363), INBOX.md (only future-scheduled June 30 usage calibration), Exploration Queue (47+ items all trigger-gated)
+- ✅ **Block verification** — All 5 blocks remain user-action-dependent; no new Resolutions detected
+- ✅ **State unchanged** — Identical to Session 4363; zero changes to orchestration files; all projects stable in their expected states
+
+### **Standby Assessment**
+- **All autonomous work**: COMPLETE (verified: zero unfinished scope in any active project Goal; all work either complete, time-gated to future dates, or blocked by user decisions)
+- **All blocks**: USER-ACTION-DEPENDENT (5 entries, none autonomously resolvable)
+- **Exploration Queue**: HEALTHY (47+ items all correctly trigger-gated)
+- **Next mandatory event**: Monday 2026-06-29 13:15 UTC — Pre-market stockbot infrastructure validation gates (58h away)
+- **Conclusion**: Continuous standby is CORRECT BY DESIGN — zero autonomous work available; all scheduled monitoring on track
+
+### **Critical Upcoming Deadlines**
+- **June 30 18:00 UTC (45h)**: resistance-research Domain 59 send window CLOSES — user decision/execution deadline ~June 29 12:00 UTC
+- **June 30 00:00 UTC or later**: Usage calibration reset available (`python3 scripts/usage-check.py --calibrate 3.0 67.4`)
+- **Monday June 29 13:15 UTC (58h)**: Pre-market validation gates (5 sessions health, WebSocket, Alpaca API, DB schema, HMM priming)
+- **July 3 post-market (105h)**: 7-day checkpoint decision point (validate Phase 1 live trading, determine Phase 2 scope)
+
+---
+
 ## Session 4363 (2026-06-28 03:25 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #11; ALL AUTONOMOUS WORK COMPLETE**
 
 ### **Since Last Check-in (Session 4362 → 4363)**
