@@ -2,6 +2,28 @@
 
 ---
 
+## Session 4366 (2026-06-28 03:44 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #14; ALL AUTONOMOUS WORK COMPLETE**
+
+### **Since Last Check-in (Session 4365 → 4366)**
+- ✅ **Full orientation completed** — ORCHESTRATOR_STATE.md (verified current), PROJECTS.md (all project Goals audited), BLOCKED.md (5 user-action-dependent, none resolved), INBOX.md (only future-scheduled June 30 usage calibration), Exploration Queue (47+ items all trigger-gated)
+- ✅ **State unchanged** — Identical to Session 4365; zero changes to any orchestration files
+- ✅ **Checkpoint continuity**: Sessions 4361-4366 (6 consecutive standby verifications across 33 minutes) — continuous monitoring active
+
+### **Standby Assessment**
+- **All autonomous work**: COMPLETE (zero unfinished scope; all projects either complete, time-gated, or blocked by user decisions)
+- **All blocks**: USER-ACTION-DEPENDENT (5 entries, none autonomously resolvable since June 23)
+- **Exploration Queue**: HEALTHY (47+ items all correctly future-gated)
+- **Next mandatory event**: Monday 2026-06-29 13:15 UTC — Pre-market stockbot infrastructure validation gates (57h away)
+- **Conclusion**: Continuous standby CORRECT BY DESIGN — orchestrator monitoring active; no autonomous work available
+
+### **Critical Upcoming Deadlines**
+- **June 30 18:00 UTC (44h)**: resistance-research Domain 59 send window CLOSES — user decision deadline ~June 29 12:00 UTC
+- **June 30 00:00 UTC or later**: Usage calibration reset available (`python3 scripts/usage-check.py --calibrate 3.0 67.4`)
+- **Monday June 29 13:15 UTC (57h)**: Pre-market validation gates (5 sessions health, WebSocket, Alpaca API, DB schema, HMM priming)
+- **July 3 post-market (104h)**: 7-day checkpoint decision point
+
+---
+
 ## Session 4365 (2026-06-28 03:38 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #13; ALL AUTONOMOUS WORK COMPLETE**
 
 ### **Since Last Check-in (Session 4364 → 4365)**
