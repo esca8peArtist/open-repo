@@ -1,3 +1,21 @@
+## Session (2026-06-28) — RESEARCH AGENT — career-training Phase 2-3 Infrastructure
+
+**Status**: ✅ Complete — 4 deliverables written to `projects/career-training/`
+
+**Work completed**:
+1. ✅ Email Service Comparison Matrix — 5-dimension comparison of Kit (ConvertKit), Mailchimp, Substack; weighted scorecard; recommendation: Kit free plan (10,000 subscriber ceiling; tag-on-subscribe maps to 3-path curriculum model)
+2. ✅ Email-to-Social Funnel Strategy — Ownership stack model (email-first), lead magnet stack, 14-day welcome sequence, platform selection rationale (LinkedIn first; YouTube Month 3+), Case Study Loop growth mechanic, 90-day activation plan
+3. ✅ User Segmentation Framework — 3-dimension tag taxonomy (path/archetype/engagement), 7 operating segments with content mix and cadence, engagement scoring, phase progression detection, Kit free plan compatibility
+4. ✅ Phase 2-3 Execution Roadmap — Critical path (10-17h email infrastructure), parallel tracks (analytics, lead magnets, quiz, re-engagement), 4 decision points, contingency paths, 30/60/90 milestones
+
+**Files**:
+- `projects/career-training/PHASE_2_EMAIL_SERVICE_COMPARISON_MATRIX.md`
+- `projects/career-training/EMAIL_SOCIAL_FUNNEL_STRATEGY.md`
+- `projects/career-training/CAREER_TRAINING_USER_SEGMENTATION_FRAMEWORK.md`
+- `projects/career-training/PHASE_2_3_EXECUTION_ROADMAP.md`
+
+---
+
 ## Session (2026-06-28) — RESEARCH AGENT — mfg-farm Phase 2 Tracks 2–4 Complete
 
 **Status**: ✅ All four deliverables written and committed.
