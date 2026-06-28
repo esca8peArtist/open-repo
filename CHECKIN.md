@@ -2,6 +2,36 @@
 
 ---
 
+## Session 4360 (2026-06-28 02:40 UTC) — ORCHESTRATOR — ✅ **SATURDAY STANDBY CHECKPOINT; USAGE THROTTLE IMMINENT (89.9%)**
+
+### **Since Last Check-in (Session 4359 → 4360)**
+- ✅ **Continuity verified** — State identical to Session 4359 (~45 min ago), zero new items, zero new blocks, zero new Resolutions in BLOCKED.md
+- ✅ **Usage monitoring** — Climbed to 89.9%, 0.1% remaining before hard 90% throttle kicks in
+- ✅ **Standby posture confirmed** — All autonomous work complete, all blocks user-dependent. Monitoring window active (stockbot June 28-July 11, checkpoint July 3). Correct by design.
+
+### **Session Work Completed**
+- ✅ **Rapid state verification** (3 min) — re-read project Goals for unfinished scope (all complete or time-gated), verified BLOCKED.md has 5 active user-dependent items (no new Resolutions), confirmed INBOX.md empty, verified Exploration Queue healthy (47+ items, all complete or correctly trigger-gated)
+- ✅ **Usage status logged** — 89.9% all-models, override active, HARD THROTTLE at 90% is 0.1% away; zero autonomous work warranted
+
+### **Budget & Usage**
+- Usage: 89.9% All-models, OVERRIDE ACTIVE — **0.1% to hard 90% throttle**
+- No autonomous work warranted at this usage level; standby posture correct
+
+### **Standby Schedule (No Autonomous Work)**
+- **Current**: Saturday June 28 02:40 UTC (continuous standby)
+- **Next event**: Monday June 29 13:15 UTC — Item 36 pre-market validation gates (5-min infrastructure check)
+- **Following event**: Monday June 29 21:15 UTC — daily_model_search.py Optuna TPE background search (no human interaction needed)
+- **Usage reset**: Tuesday June 30 00:00 UTC (~45h away)
+- **Hard throttle**: Triggers at 90% (currently 89.9%, need <0.1% to cross threshold)
+
+### **Next Session Actions**
+- If usage reaches 90% → hard idle mode (accept BLOCKED.md Resolutions only, no autonomous work)
+- If user posts any block Resolution → process immediately regardless of usage
+- If Monday 13:15 UTC arrives → execute Item 36 pre-market gates (5-min check)
+- If Tuesday 00:00 UTC arrives and usage < 80% → resume full autonomous work
+
+---
+
 ## Session 4359 (2026-06-28 01:55 UTC) — ORCHESTRATOR — ✅ **SATURDAY STANDBY CHECKPOINT; USAGE MONITORING ACTIVE (89.7%)**
 
 ### **Since Last Check-in (Session 4358 → 4359)**

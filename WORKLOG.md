@@ -1,3 +1,20 @@
+## Session 4360 (2026-06-28 02:40 UTC) — ORCHESTRATOR — ✅ SATURDAY STANDBY CHECKPOINT; USAGE THROTTLE IMMINENT (89.9%)
+
+**Status**: ✅ **REORIENTATION COMPLETE — STANDBY POSTURE MAINTAINED; HARD THROTTLE IMMINENT**
+
+**Work completed** (3 min):
+- ✅ **State verification**: Re-read all project Goals for unfinished scope (all complete or time-gated). Verified BLOCKED.md (5 active blocks, all user-dependent, no new Resolutions). Confirmed INBOX.md empty (149 lines, but all archive/template — zero new items to process). Verified Exploration Queue healthy (47+ items, all complete or correctly trigger-gated).
+- ✅ **Usage status**: 89.9% All-models (climbed from 89.7% in Session 4359), OVERRIDE ACTIVE, hard throttle at 90% is now 0.1% away
+- ✅ **Assessment**: Zero autonomous work available. Stockbot in active monitoring state (no work, only observation through July 11). All other projects blocked on user actions. Standby remains correct by design.
+
+**Budget**: 89.9% All-models, OVERRIDE ACTIVE (0.1% remaining before hard 90% throttle). Zero autonomous work warranted. If next session triggers 90%, move to hard idle mode (accept BLOCKED.md Resolutions only).
+
+**Next Event**: Monday June 29 13:15 UTC pre-market validation gates (Item 36 — 5-min infrastructure check). Usage reset: Tuesday June 30 00:00 UTC (~45h away).
+
+**Standby posture**: Maintained. Continuous monitoring through Monday pre-market gates. If hard throttle triggers (90%): accept BLOCKED.md Resolutions only. If user posts any block Resolution: process immediately regardless of usage state.
+
+---
+
 ## Session 4359 (2026-06-28 01:55 UTC) — ORCHESTRATOR — ✅ SATURDAY STANDBY CHECKPOINT; USAGE MONITORING ACTIVE
 
 **Status**: ✅ **REORIENTATION COMPLETE — STANDBY POSTURE MAINTAINED**
