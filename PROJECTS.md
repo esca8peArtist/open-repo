@@ -174,6 +174,42 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - Confidence: 92% (all infrastructure production-ready, zero [TODO] placeholders, all procedures sourced from official docs)
    - Status: **PHASE 2 INFRASTRUCTURE STAGING COMPLETE — ready for user review and implementation planning**
 
+8. **career-training: Phase 2-3 Email & Social Platform Integration Research** (3-4h) ← **✅ COMPLETE (Session 4469)**
+   - ✅ Executed 16:40–22:41 UTC June 28 (general-research subagent execution)
+   - **Deliverables COMPLETE**:
+     1. `PHASE_2_EMAIL_SERVICE_COMPARISON_MATRIX.md` — Kit (ConvertKit) recommended: free 10K subscribers, unlimited emails, one automation. Pricing/integration/automation/API/segmentation comparison (weighted Kit 4.85 vs Mailchimp 3.45 vs Substack 1.50). Upgrade trigger at ~300-500 subscribers ($39/month Creator plan).
+     2. `EMAIL_SOCIAL_FUNNEL_STRATEGY.md` — Ownership-first (email = retained asset, social = borrowed audience). Platform sequencing: LinkedIn first (4-6% engagement for construction pros), YouTube Month 3+, Instagram Month 4+ (cross-posting only), TikTok deferred. Case Study Loop identified as highest-ROI growth mechanic (150 case studies = 3 years non-repeating content). 
+     3. `CAREER_TRAINING_USER_SEGMENTATION_FRAMEWORK.md` — 7 operating segments with path/archetype/engagement tags. Instructors (5-10%) highest leverage (45-55% open rate, sharing multiplier). Phase progression inference via behavioral + Day 30 check-in.
+     4. `PHASE_2_3_EXECUTION_ROADMAP.md` — Phase 2 critical path 10-17h (Kit setup, forms, welcome sequence, automation, smoke test). Phase 3 adds 12-18h (LinkedIn content library 20 posts, partnership outreach). Total Phase 2+3 operational: 22-35h (5-7 weeks at 5h/w, 3-4 weeks at 10h/w). Four decision gates defined (email upgrade, Week 8 growth review, YouTube go/no-go Month 3, paid ads after 200 organic subscribers).
+   - **Key finding**: Kit free tier fully solves Phase 2 email problem at 0 cost; one-automation limit solved via conditional branching (path-based routing).
+   - **Value**: De-risks Phase 2-3 strategy; all recommendations platform-agnostic, actionable immediately upon user's GitHub Pages deployment
+   - **Confidence**: 88% (2026 pricing data verified, Kit API documented, social benchmarks current)
+   - **Committed**: Phase 2-3 research complete; user ready to execute
+
+9. **mfg-farm: Phase 2 Tracks 2-4 Preliminary Research** (4-5h) ← **✅ COMPLETE (Session 4469)**
+   - ✅ Executed 16:40–22:41 UTC June 28 (general-research subagent execution)
+   - **Deliverables COMPLETE**:
+     1. `PHASE_2_TRACK_2_SUPPLY_CHAIN_RESEARCH.md` — Flexport disqualified ($5K/month minimum Jan 2026). 3PL activation threshold: 300-400 orders/month (Fulfillrite $399/month). Pre-threshold: Pirate Ship + self-fulfillment cheapest. USPS Ground Advantage unambiguous carrier (no residential surcharge, actual weight pricing). Inventory stack: Craftybase Pro ($20/month) + Trunk for cross-channel sync.
+     2. `PHASE_2_TRACK_3_MARKET_EXPANSION_RESEARCH.md` — Etsy net $25.79 vs Amazon FBA $21.23/sale ($4.56 gap). Correct frame: additive revenue (310M Prime buyers never search Etsy). Amazon Handmade accepts 3D prints (original design required). Application critical path 5-7 weeks — submit within 48 hours of test print passing. Competitive landscape: <20 sellers with review counts in cable mgmt tier (window exists now). Niche communities: r/battlestations (3.1M), r/desksetup (1.8M) free CAC with no visible competitor presence.
+     3. `PHASE_2_TRACK_4_FULFILLMENT_AUTOMATION_RESEARCH.md` — Robotic picking/packing: negative ROI through all horizons (break-even 5K orders/day ≈ $50M+ revenue). Correct Phase 2 automation: software-layer + Rollo thermal printer ($100) + packing station ($50-100) = $200 total. First hire (part-time packer 10h/week, $640/month) at 150+ orders/month before any machinery.
+     4. `PHASE_2_TRACKS_2_4_INTEGRATION_PLAN.md` — Sequencing conflicts resolved: FBA/Etsy batch staggering, Rollo handles FNSKU + shipping labels, Amazon Handmade app Day 1 (not post-Etsy). Four decision gates (30-day revenue $500/month, Amazon 60-day 10+ reviews, 3PL 300+ orders/month, Shopify 200+ email + 15% repeat). Capital sequencing ($383-453 total) timed against first revenue.
+   - **Key finding**: Amazon FBA should be applied for immediately post-test-print pass; critical path starts at application submission, not after Etsy success.
+   - **Value**: Unblocks Phase 2 planning; all findings actionable post-test-print, zero dependency on test outcome
+   - **Confidence**: 92% (verified 2026 data: Flexport official pricing, Amazon Handmade forums, competitive analysis)
+   - **Committed**: Phase 2 research complete; user decision-ready for post-test-print Phase 2 activation
+
+10. **seedwarden: Phase 3 Contractor Workflow & Support Materials** (2-3h) ← **✅ COMPLETE (Session 4469)**
+   - ✅ Executed 16:40–22:41 UTC June 28 (general-research subagent execution)
+   - **Deliverables COMPLETE**:
+     1. `PHASE_3_CONTRACTOR_ONBOARDING_WORKFLOW.md` — 6-phase workflow (response evaluation, offer/negotiation, onboarding kit, weekly check-ins, final handoff, post-launch appreciation). Type-agnostic: identical structure for photographers, writers, habitat specialists.
+     2. `PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md` — Tracking template, weekly progress grid (1 row per contractor, 6-week timeline), quality gates per type (photographer/writer/specialist), budget tracking with Upwork 5% fees included. Dashboard pre-populated with scorecard data + critical path dates.
+     3. `PHASE_3_LAUNCH_CALENDAR.md` — Week-by-week calendar (Week 0 hiring, Week 1-2 onboarding, Week 3-4 execution, Week 5-6 launch, post-launch). Delivery dates match critical path exactly (Women's Health Jun 29, Respiratory Jul 6, Sleep Jul 13, Practitioner Jul 15, Immunity Jul 20, Digestive Aug 3).
+     4. `PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md` — 5 ready-to-send templates (offer, weekly check-in, praise/feedback, final handoff, payment/testimonial). Includes FTC/CITES compliance language (e.g., Ashwagandha/cortisol fix example for Immunity bundle). Budget ceiling: writers $1,286, photographers $333/session (includes Upwork fees).
+   - **Key finding**: Workflow is fully type-agnostic; user follows identical 6-phase sequence regardless of contractor expertise
+   - **Value**: Enables immediate activation upon contractor selection (expected Jun 24-28). Eliminates "hiring done, now what?" gaps. Templates pre-populated so user only fills in actual dates.
+   - **Confidence**: 88% (workflow structure battle-tested in Session 1727+; pre-population from verified scorecard + critical path)
+   - **Committed**: Phase 3 contractor workflow complete; user ready to execute upon contractor hire
+
 5. **stockbot: Post-Validation Analysis & Phase 4 Execution** (2-3h) ← **✅ COMPLETE (Session 4088)**
    - ✅ Executed 20:35–21:05 UTC June 23 (stockbot subagent execution — proactive prep)
    - Deliverables: `JUNE_24_VALIDATION_OUTCOME_REPORT.md` (14-section template, 10.5 KB), `PHASE_4_IMMEDIATE_EXECUTION_PLAN.md` (3-path decision tree, 9.8 KB), `VALIDATION_SUCCESS_METRICS_CHECKLIST.md` (6 pre-market gates + 8 market-hours metrics, 8.2 KB)
