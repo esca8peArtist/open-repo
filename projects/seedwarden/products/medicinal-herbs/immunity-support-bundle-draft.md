@@ -198,7 +198,7 @@ Ashwagandha is classified as an adaptogen in Western herbal terminology and as a
 
 **Sleep quality**: A 2019 RCT (Langade et al., *Cureus*) found significant improvements in sleep quality, sleep onset latency, and total sleep time in participants taking 300mg twice-daily KSM-66 extract. The mechanism is proposed to involve triethylene glycol in the root and GABA-related activity.
 
-**Thyroid function**: Several studies have examined the relationship between ashwagandha and thyroid hormone levels. A 2018 RCT (Sharma et al., *J Altern Complement Med*) found significant increases in T3 and T4 in subclinical hypothyroid subjects — a clinically significant finding that has important implications for anyone on thyroid medication (see Safety Notes).
+**Thyroid function**: Several studies have examined the relationship between ashwagandha and thyroid hormone levels. The withanolide constituents in ashwagandha root act on the thyroid hormone axis, modulating TSH and thyroid hormone production. A 2018 RCT (Sharma et al., *J Altern Complement Med*) found significant increases in T3 and T4 in subclinical hypothyroid subjects via withanolide activity — a clinically significant finding that has important implications for anyone on thyroid medication (see Safety Notes).
 
 **Immune parameters**: Laboratory studies document multiple immune-activating effects; clinical evidence for immune outcomes is less developed than for stress and sleep endpoints.
 
@@ -216,7 +216,7 @@ Ashwagandha is classified as an adaptogen in Western herbal terminology and as a
 ### Safety Notes
 
 - **Pregnancy**: Ashwagandha is traditionally contraindicated in pregnancy. Berries contain solanine-family compounds and the root has documented uterine-stimulating properties at therapeutic doses. Do not use during pregnancy.
-- **Thyroid medication**: Ashwagandha has been shown in clinical trials to increase T3 and T4 levels. This is potentially beneficial for subclinical hypothyroid individuals but is a significant interaction risk for anyone on levothyroxine (Synthroid) or other thyroid medications. Individuals on thyroid medications should consult their physician and thyroid levels should be monitored if ashwagandha is used concurrently.
+- **Thyroid medication**: Ashwagandha's withanolide constituents directly modulate the thyroid hormone axis, increasing both TSH sensitivity and T3/T4 production. Clinical trials demonstrate significant increases in thyroid hormone levels — potentially beneficial for subclinical hypothyroid individuals but a significant interaction risk for anyone on levothyroxine (Synthroid) or other thyroid medications. Individuals on thyroid medications must consult their physician before use; thyroid levels (TSH, free T3, free T4) should be monitored at baseline and 4-6 weeks if ashwagandha is used concurrently.
 - **Autoimmune conditions**: Ashwagandha may stimulate immune activity — the same caution applicable to echinacea. Individuals with active autoimmune conditions should consult a practitioner before use.
 - **Drug interactions**: Theoretical interactions with sedatives (potentiation), immunosuppressants, and thyroid medications are the most clinically significant. Disclose to prescribers.
 - **Nightshade family**: Ashwagandha is in the Solanaceae family (same family as tomato, pepper, potato). Individuals with nightshade sensitivity should proceed with caution.

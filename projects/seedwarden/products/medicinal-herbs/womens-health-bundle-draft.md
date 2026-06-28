@@ -208,8 +208,8 @@ Vitex has a long history in European botanical medicine — Greek and Roman phys
 
 - **Pregnancy**: Vitex is contraindicated during pregnancy. The dopaminergic mechanism may affect the hormonal cascade necessary for pregnancy maintenance. Discontinue Vitex as soon as pregnancy is confirmed.
 - **Hormone-sensitive conditions**: Due to its action on the hormonal axis, caution is warranted for women with hormone-sensitive conditions. Consult a healthcare provider before use.
-- **Drug interactions**: Do not combine with dopamine agonists or antagonists (including antipsychotic medications) without medical supervision — mechanism overlap is significant.
-- **Hormonal contraceptives**: Theoretical interaction with hormonal birth control; clinical significance is not established but inform your prescriber.
+- **Drug interactions**: (1) Do not combine with MAOI antidepressants without medical supervision — Vitex's dopaminergic activity may potentiate MAOI effects. (2) Do not combine with dopamine agonists or antagonists (including antipsychotic medications) without medical supervision — mechanism overlap is significant. Consult your healthcare provider before combining Vitex with any psychiatric medications.
+- **Hormonal contraceptives**: Theoretical interaction with hormonal birth control; clinical significance is not established but inform your prescriber before starting Vitex if you use oral contraceptives or hormone therapies.
 
 ---
 
