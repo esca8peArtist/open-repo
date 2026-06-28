@@ -82,6 +82,9 @@
 ## Session 4351 (2026-06-28 01:51 UTC) — ORCHESTRATOR — 🚀 **INTER-MONITORING WORK: CAREER-TRAINING GITHUB PAGES PHASE 1 DEPLOYMENT COMPLETE**
 
 ### **NEEDS YOUR INPUT**
+
+- **[CRITICAL ESCALATION] resistance-research Domains 48 & 51 Wave 1 sends MASSIVELY OVERDUE** — Domain 48 scheduled June 16-18 (overdue since June 22, now 6 days late); Domain 51 scheduled June 9/recovered June 14 (now 14 days late, hard deadline July 1 = 3 days away). Item 37 escalation was due June 25 12:00 UTC but wasn't executed. **User action required**: Execute simplified 3-email Wave 1 send sequence for each domain (5-7 min/domain) immediately to maintain July 1 & July 15 hard deadlines. Gist URLs + simplified email templates ready in `projects/resistance-research/DOMAINS_51_48_WAVE1_SIMPLIFIED_SEND_SEQUENCE.md` (created Session 4355).
+
 - **[URGENT] resistance-research Domain 59 send window CLOSING JUNE 30 18:00 UTC** — Only 45 hours remaining in the June 25-30 Tier 2 send window for Domain 59 (EPI/Demos/NELP emails). If you want any of these sends executed, confirm by June 29 12:00 UTC (24h lead time recommended). Domain 59 Tier 2 templates are production-ready in `projects/resistance-research/`. No autonomous sends will occur — this is a reminder to decide by deadline.
 
 - **Career-training GitHub Pages deployment next steps**:
