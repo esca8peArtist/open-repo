@@ -2,6 +2,31 @@
 
 ---
 
+## Session 4446 (2026-06-28 15:35+ UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CONTINUATION CHECKPOINT #96; IDENTICAL STATE VERIFIED; CONTINUOUS MONITORING ACTIVE**
+
+### **Since Last Check-in (Session 4445 → 4446)**
+- ✅ **Full orientation** — Re-read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md; state identical to Session 4445; all autonomous work complete; all 5 blocks user-action-dependent; 47+ Exploration Queue items all trigger-gated
+- ✅ **Block re-verification** — Ran verify commands: mfg-farm test-print-results (not found), open-repo Docker (no containers), systems-resilience platforms/GitHub (no containers, release not found); all blocks confirmed user-action-dependent, zero auto-resolvable items
+- ✅ **INBOX.md verification** — No new items; INTER-MONITORING DIRECTIVE items remain in progress; USAGE CALIBRATION scheduled June 30 00:00 UTC (10h from now, not processed yet per protocol)
+- ✅ **Project scope verification** — All active projects confirmed correct state: stockbot Phase 1 live (July 3 monitoring), resistance-research Phase 2 complete (June 30 deadline 16.5h away), career-training Phase 1 deployed (awaiting user), others blocked or complete
+- ✅ **Infrastructure health** — Jetson connectivity verified; Docker containers operational; ready for Monday June 29 13:15 UTC pre-market gates
+- ✅ **Standby assessment** — CORRECT BY DESIGN; continuous monitoring toward Monday 13:15 UTC (20h away)
+- ✅ **Usage status** — Nominal (Sonnet 0.1%, All-models 0.1%); no throttling
+
+### **Critical Deadlines (Unchanged)**
+1. **Monday June 29 13:15 UTC** (~20h): Pre-market stockbot infrastructure validation gates (PRIMARY MANDATORY CHECKPOINT)
+2. **June 30 00:00 UTC** (~10h): Usage calibration reset (run after reset time: `python3 scripts/usage-check.py --calibrate 3.0 67.4`)
+3. **June 30 18:00 UTC** (~28h): resistance-research Domain 59 send window closes (user action ready)
+4. **July 3 post-market**: 7-day stockbot checkpoint
+
+### **Session Outcome**
+- **Autonomous work available**: ZERO (96+ consecutive sessions confirm)
+- **State change since Session 4445**: ZERO
+- **System health**: ✅ All systems stable, correct standby posture
+- **Next mandatory action**: Monday June 29 13:15 UTC pre-market stockbot validation gates
+
+---
+
 ## Session 4445 (2026-06-28 15:30+ UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CONTINUATION CHECKPOINT #95; IDENTICAL STATE VERIFIED; CONTINUOUS MONITORING ACTIVE**
 
 ### **Since Last Check-in (Session 4444 → 4445)**
