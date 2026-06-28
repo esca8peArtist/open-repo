@@ -148,6 +148,24 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - ✅ Executed 14:01–14:13 UTC June 24 (cybersecurity-hardening subagent autonomous execution, 788s wall-clock)
    - ✅ Deliverables verified production-ready:
      1. `phase-2-infrastructure-specification.md` (1,374 lines, 47 KB) — LUKS2, restic backups, UFW firewall, VPN/Tor, recovery procedures
+
+5. **seedwarden: Q3 Bundle Post-Approval Canva Design Staging** (3-4h)
+   - **Trigger condition**: User approval signal posted to INBOX.md confirming Q3 bundle authorization (currently awaiting)
+   - **Scope**: Prepare Canva design templates for 12 species cards, coordinate photography imports, staging design QA checklist
+   - **Value**: Enables rapid Canva execution (1-2h asset finalization) upon approval signal arrival
+   - **Owner**: seedwarden team
+
+6. **career-training: Phase 2 Email List Infrastructure Setup** (2-3h)
+   - **Trigger condition**: User GitHub Pages Phase 1 deployment complete + initial analytics data from live site (Phase 1 currently awaiting user GitHub push)
+   - **Scope**: Design email signup form, integration with email service provider (Mailchimp/ConvertKit audit), landing page CTA optimization, list-building strategy for modules
+   - **Value**: Unblocks Phase 2 email distribution + enrollment funnel setup post-GitHub-deployment
+   - **Owner**: career-training team
+
+7. **systems-resilience: Phase 6 Planning & Democracy Tools Architecture** (4-5h)
+   - **Trigger condition**: Phase 5 Wave 1+2 GitHub release complete + user decision on Phase 6 scope (currently Phase 5 release blocked on maintainer permissions)
+   - **Scope**: Research Phase 6 (Democracy Tools: voter registration, ballot guidance, civic action toolkit). Outline research zones, identify 20+ expert contacts, assess 6-week research timeline feasibility
+   - **Value**: Phase 6 research ready for immediate launch post-Phase-5-release without planning overhead
+   - **Owner**: resistance-research team
      2. `phase-2-threat-model-and-mitigations.md` (512 lines, 40 KB) — 8 threat scenarios, risk reduction matrices, incident response
      3. `phase-2-provisioning-runbook.md` (1,873 lines, 58 KB) — 15 step-by-step procedures, time estimates, rollback/troubleshooting
    - Committed: Git commit `fb1b2d97`
