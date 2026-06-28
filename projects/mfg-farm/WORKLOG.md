@@ -1,5 +1,51 @@
 # mfg-farm Project WORKLOG
 
+## Session 4472 (June 28, 2026) — Listing Photos Guide, Topo Maps Research, Expanded Product Ideas
+
+**Objective**: Produce three strategic deliverables to advance parallel business development while test print awaits physical execution.
+
+**Deliverables completed**:
+
+### 1. LISTING_PHOTOS_GUIDE.md
+- Equipment ranked by output quality: mirrorless/DSLR, flagship smartphone, ring light
+- Camera settings for three shot types: hero/lifestyle (f/5.6-8), macro detail (f/8-11), flat-lay overhead
+- Background analysis: white sweep (Amazon required), off-white, contextual/in-use, gradient — pros/cons per use case
+- 10-shot cable clip-specific shot list: hero white-bg, lifestyle hero, angle, in-use mounted, snap-fit macro, scale, color flat-lay, bundle contents, before/after, full desk context; plus 15-second video guide
+- DIY setup options at three price tiers: $0-15 (window + foam board), $5-15 (cardboard lightbox), $25-45 (purchased LED lightbox kit)
+- Etsy platform specs: 10 photos + 1 video per listing; 2000px recommended; first image is search thumbnail
+- Amazon platform specs: main image RGB 255,255,255 white required; 9 images total; listing suppression risk documented
+- Optimal conversion photo ordering for both platforms
+- Free editing tools: Canva, GIMP, Snapseed, Lightroom Mobile, Remove.bg — with use cases per tool
+- Pattern analysis of top-performing 3D printed part listings: white hero + lifestyle 2nd + before/after + feature infographic = Star Seller pattern
+- Staged execution sequence: Stage 1 (launch blocker), Stage 2 (first week), Stage 3 (after 10 sales), Stage 4 (after 25 sales)
+
+### 2. TOPO_MAPS_PRODUCT_RESEARCH.md
+- Four buyer segments: home decor, gift buyers (highest WTP), outdoor enthusiasts, local pride
+- Etsy price range validated: small $25-45, medium $45-75, large $75-140, custom +$20-40 premium; multiple sellers at 4.8+ avg reviews
+- Five elevation data sources compared: TouchTerrain (free, recommended), OpenTopography (LiDAR, advanced), terrain.party (quick preview), USGS NED (raw data), Relief Shaper (paid premium)
+- Full 6-step production workflow: location → TouchTerrain STL → inspect/repair → slice (0% infill, 0.10-0.15mm layer height) → print → finish
+- Optimal TouchTerrain settings documented (tile size, vertical exaggeration by terrain type, base height, resolution)
+- Five customization premium tiers: personal GPS coordinates, national parks, state outlines, lake contours, multi-tile tiled maps ($150-300)
+- Scale guide: desktop 150-200mm, wall-mount 200-300mm; vertical exaggeration recommendations by terrain type
+- Four finishing options: single color, hand-painted elevation gradient, color-change filament, AMS dual-color
+- Etsy SEO keyword strategy: location-specific titles beat generic; gift-angle tags; 13-tag allocation example
+- Margin model: 81-82% gross margin consistently; throughput constraint vs cable clips quantified (large map = 2-3 units/day vs cable clips = 43 units/day); overnight long-run strategy recommended
+- FDM viability: prints excellently (mountain ranges, river valleys, coastal terrain), minor challenges (steep isolated peaks, narrow gorges), avoid (flat terrain, overhanging cliffs, urban areas)
+- 60-day GO/WATCH/NO-GO test protocol with specific numeric thresholds
+
+### 3. PRODUCT_IDEAS_EXPANDED.md
+- 18 products scored using the exact 5-criterion framework (demand signal 30%, margin 25%, design complexity inverted 20%, supplier readiness 15%, UGC 10%)
+- Categories covered: desk organization (flexi animals, drawer dividers, laptop stand), gaming/hobby (controller stand, dice tray, miniature bases), home/garden (geometric planter, bedside charging station, plant markers, bird feeder, shelf bracket, magnetic key hook, house number sign), novelty/gifts (bookmarks, custom keychain, fidget toys, topo map)
+- 6 GO ratings, 7 WATCH ratings, 3 NO-GO ratings
+- Top 5 for immediate design consideration flagged with specific action items:
+  1. P-04 Lithophane Night Light (4.75) — zero CAD, test this week
+  2. P-01 Articulated Flexi Dragon (4.65) — zero CAD, CC0 STL on Printables
+  3. P-05 Gaming Controller Stand (4.65) — zero CAD, AMS multi-color differentiator
+  4. P-13 Magnetic Wall Key Hook (4.20) — 1.5-2 hr CadQuery, 100 N52 magnets for $5
+  5. P-18 Topo Map Catalog SKU (4.10) — zero CAD, overnight runs, $49-73 net/print
+
+---
+
 ## Session 4471 (June 28, 2026) — Test Print Contingency Analysis & Design Modification Pre-Staging (Item 23)
 
 **Objective**: Pre-stage snap-arm tolerance contingency procedures so test print failures route immediately to a fix — no re-planning lag.
