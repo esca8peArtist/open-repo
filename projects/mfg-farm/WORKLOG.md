@@ -1,5 +1,42 @@
 # mfg-farm Project WORKLOG
 
+## Session 4470 (June 28, 2026) — Q3-Q4 Product Pipeline Research & CAD Timeline Planning (Item 11)
+
+**Objective**: Execute Exploration Queue Item 11 — identify 5 new high-margin cable management/desk products beyond the initial 15 SKUs, validate market demand, score against decision matrix, and produce CAD sequencing plan.
+
+**Deliverables completed**:
+
+### 1. Q3_Q4_PRODUCT_CANDIDATES.md ✅
+- 5 new candidates identified and profiled: Standing Desk Cable Chain (A), Desk-Clamp Cable Holder (B), Monitor-Arm Cable Spine Guide (C), Parametric Grommet (D), USB Hub/Power Brick Mount (E)
+- Market validation: Etsy listing count estimates, competitive landscape, Reddit pain-point mapping, Amazon competitor audit
+- Economics: COGS, retail price range, gross margin, print time per candidate
+- Sources: 17 URLs (Etsy listings, XDA Developers, MakerWorld, Printables, workwhilewalking standing desk review)
+- Key finding: Standing desk cable chain (Candidate A) has near-zero US Etsy competitor for physical print; grommet (D) has fastest ROI path
+
+### 2. CAD_TIMELINE_AND_BATCH_PLANNING.md ✅
+- Shared component analysis: 6 common geometry blocks across 20 products (15 existing + 5 new)
+- Batch Group 1 (design together): A + C — share 60% link geometry, saves 1.5–2.5 hrs CAD
+- Batch Group 2 (shared mounting plate): E + existing SKUs 1B/1C
+- Time estimates per candidate: 2–6 hrs CAD, 1–3 test iterations
+- Grand total with batching: 25–32 hrs vs 32–44 hrs sequential (25% savings)
+- Launch sequence: D (July 15), A+C (August 1), B (August 15), E (September 1)
+- CAD file structure template: components/ reuse library
+
+### 3. PRODUCT_SELECTION_DECISION_MATRIX.md ✅
+- Scoring rubric: Demand Signal (30%), Margin Potential (25%), Design Complexity inverted (20%), Supplier Readiness (15%), UGC Opportunity (10%)
+- Top-ranked: D (4.35), A (4.40) — effectively tied; D goes first due to faster design path
+- Bottom-ranked: B (3.70), C/E tied (3.65) — both still strong GO recommendations
+- GO/WATCH/NO-GO thresholds per candidate at day 60
+- Portfolio tiering: 20 products across 4 priority tiers for printer utilization management
+
+**Key findings**:
+- Parametric grommet (D) is fastest path to first revenue from new candidates — 2–3 hrs CAD, 4 SKU variants, highest gross margin (74–80%), zero new suppliers
+- Standing desk cable chain (A) is highest upside — confirmed supply gap on Etsy (single Spain-based seller with no reviews vs. 1,000+ free STL downloads), no Amazon 3D-printed competitor
+- Batch design session (A+C together) reduces design time by 25%; recommended as Week 2 session after grommet listed
+- All 5 actionable NOW — no test print dependency, no new supplier MOQ requirements
+
+---
+
 ## Session 4131 (June 24, 2026) — Phase 2 Tracks 2-4 Vendor Source Pre-Staging (Item 29)
 
 **Objective**: Execute Exploration Queue Item 29 — pre-stage vendor databases for Phase 2 Tracks 2-4 (logistics, market expansion, fulfillment) so Phase 2 activation has zero 2-3 week vendor discovery delay post-test-print.

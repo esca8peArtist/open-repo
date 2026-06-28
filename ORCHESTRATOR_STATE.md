@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-28T14:30:01Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-28T18:50:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (877,558 tokens) | All-models 0.1% | Reset in 34h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (877,558 tokens) | All-models 0.1% | Reset in 29h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -73,14 +73,6 @@
 • resistance-research — SCOTUS Little v. Hecox deadline passed 18:00 UTC; outcome unverified ← 2026-06-23 18:05 UTC (Session 4084+)
 
 ## Inbox (unprocessed)
-### [2026-06-27] INTER-MONITORING WORK DIRECTIVE — stockbot validation window (June 27–July 3) — IN PROGRESS (SESSION 4351)
-Stockbot is in the 7-14 day validation monitoring window (checkpoint July 3, decision July 11). While waiting:
-1. **career-training deployment** — ✅ **PHASE 1 COMPLETE (Session 4351)** — GitHub Pages infrastructure built: /docs directory, Jekyll config, homepage, 6 navigation pages. Ready for user to push to GitHub. Phase 2 (email) & 3 (social media) pending user platform setup.
-2. **systems-resilience Phase 5 release** — BLOCKED (see BLOCKED.md Item 4) — infrastructure staged, awaiting user push permissions. No autonomous action available.
-3. **seedwarden post-approval work** — AWAITING USER APPROVAL — Check for user confirmation of Q3 bundle approval. If present, proceed to Canva design. (Status unknown; no approval detected as of Session 4351)
-4. **resistance-research escalation** — ✅ **FLAGGED TO CHECKIN.md (Session 4351)** — Domain 59 send window closing June 30 18:00 UTC. Added user reminder with 45h deadline. No autonomous sends executed.
-5. **Exploration Queue** — NOT YET STARTED (Session 4351 focused on career-training Phase 1 + resistance-research flag; Exploration Queue deferred to next session if bandwidth available)
-Stockbot monitoring remains priority #1 — pre-market gate check Monday June 29 13:15 UTC is mandatory.
 ### [2026-06-30 00:05 UTC] USAGE CALIBRATION RESET — Scheduled for Tuesday reset
 **Process on or after June 30 00:00 UTC only.** Usage billing week resets at that time.
 Run: `python3 scripts/usage-check.py --calibrate 3.0 67.4`
@@ -88,42 +80,43 @@ This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434)
 **Do not process this item before June 30 00:00 UTC.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+2. **`PHASE_4_5_PATH_DECISION_ROUTING.md`** (561 lines)
+   - Mechanical routing logic: PASS (≥7.0) → Path A+C, CAUTION (5.5-6.9) → Path B+C, NO-GO (<5.5) → monitoring
+   - Path A (Covered Calls): 7-10 day deployment, $25K notional, entry=Sharpe≥1.0
+   - Path B (Inverse ETF): 3-5 day deployment, $10.6K PSQ/SH, entry=regime≥30% bear
+   - Path C (Earnings Drift): 10-14 day deployment, $3.18K/event, entry=signal_quality≥6.0
+   - 5 override rules for mid-deployment (gate failures, unrecovered hard stops, Z-score RED, drawdown>10%, win_rate<40%)
+   - Per-path go/no-go verification commands (curl, grep, sqlite3)
 
-**Standby checklist**:
-- ✓ All autonomous work scope verified complete
-- ✓ All blocks verified user-action-dependent (no auto-resolve candidates)
-- ✓ Exploration Queue verified healthy (47+ items, trigger-gated)
-- ✓ CHECKIN.md updated with Session 4354 summary
-- ✓ WORKLOG.md updated with this session's verification work
-- ✓ Ready for commit
+3. **`PHASE_4_5_CAPITAL_ALLOCATION_AND_GUARDRAILS.md`** (718 lines)
+   - Path A: $25K total notional ($12.5K per AAPL/MSFT), Delta-40 monthly, 1 contract per 100 shares held
+   - Path B: $10,600 PSQ (Nasdaq inverse) at F=1.00, 8% of equity hard cap
+   - Path C: $3,180/PEAD event at F=1.00, 2 concurrent max, $15K cash floor always maintained
+   - Leverage ceiling verification (worst case ~36% of equity vs. 80% limit → safe)
+   - Drawdown reduction table: 7–10% → 50% reduction, >10% → 25% + halt A/C
+   - 5-step emergency de-risking procedure (~30 min total)
 
-**Next scheduled checkpoints**:
-1. Monday June 29 13:15 UTC: Pre-market infrastructure validation gates (58h away)
-2. June 30 18:00 UTC: resistance-research Domain 59 send window CLOSES (45h away; user decision deadline ~12h before)
-3. July 3 post-market: 7-day checkpoint decision point
-4. July 11: Final 14-day checkpoint + Phase 4-5 activation decision
+**Key Design Features**:
+- All SSH/sqlite3 query templates tested against confirmed `trading.db` schema (no invented syntax)
+- All numeric thresholds cross-referenced to Phase 4 framework (Session 28, Items 22-23)
+- July 3 20:00 UTC execution flow: 10 min KPI data entry → 5 min routing decision → 5 min sign-off (mechanical, zero analysis)
+- All 3 files production-ready (zero [TODO], zero placeholders)
+- Confidence: 85% (mechanization of existing Phase 4 logic, no novel design required)
 
-**Autonomy assessment**: CORRECT — Standby is appropriate and necessary. The system is in a stable state optimized for monitoring scheduled events. No additional work is available until user decisions are made or scheduled triggers fire.
+**System State**:
+- Stockbot: All 5 sessions healthy, pre-market checkpoint ~18h away (June 29 13:15 UTC)
+- Exploration Queue: Items 14-16 staged; Items 5-7 still trigger-pending; 0 active autonomous work until user actions or time-gates
+- All projects: Blocked on user decisions (platform choice), user actions (GitHub Pages push, test print), or time-gates (Phase 3 Nov 4, Phase 6 post-release)
+- Usage: Sonnet 0.1%, All-models 0.1% (well within budget)
 
----
+**Commits**:
+- PROJECTS.md: Added Items 14-16 to Exploration Queue, marked Item 15 COMPLETE
+- projects/stockbot: commit `914e6a9` (JULY_3_CHECKPOINT_KPI_DASHBOARD.md + PHASE_4_5_PATH_DECISION_ROUTING.md + PHASE_4_5_CAPITAL_ALLOCATION_AND_GUARDRAILS.md)
 
-## Session 4437 (2026-06-28 12:27 UTC) — ORCHESTRATOR STANDBY CONTINUATION CHECKPOINT #87
+**Recommended Next Actions**:
+1. **Immediate** (June 29 13:15 UTC, ~19h away): Orchestrator standby for stockbot pre-market checkpoint validation (optional health check)
+2. **July 3, 20:00 UTC**: Execute JULY_3_CHECKPOINT_KPI_DASHBOARD.md → fill KPI data → PHASE_4_5_PATH_DECISION_ROUTING.md → mechanical routing → PHASE_4_5_CAPITAL_ALLOCATION_AND_GUARDRAILS.md → execute chosen path
+3. **July 11**: Final activation decision after 7-day monitoring window completes
+4. **Post-user-action**: Trigger Item 14 (career-training analytics) upon Phase 1 GitHub Pages deployment; Item 16 (systems-resilience Phase 6) upon Phase 5 release
 
-**Work completed**:
-1. ✅ Orientation — Re-read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md (verified identical to Session 4436)
-2. ✅ Block verification — Ran mfg-farm test-print-results check (not found), open-repo Docker check (no containers). All 5 blocks confirmed user-action-dependent.
-3. ✅ State audit — Verified 87+ consecutive session verifications show zero state change; autonomy assessment confirms ZERO unfinished autonomous work
-4. ✅ CHECKIN.md update — Session 4437 continuation checkpoint documented
-5. ✅ Orchestration files committed
-
-**System state**:
-- Stockbot: Phase 1 live, continuous monitoring through July 3 checkpoint
-- resistance-research: Phase 2 complete, Phase 3 staged, Domain 59 deadline June 30 18:00 UTC
-- career-training: Phase 1 deployment complete, awaiting user GitHub action
-- All other projects: Complete, paused, or blocked on user decisions
-- Usage: Sonnet 0.1%, All-models 0.1% (nominal)
-- Blocks: 5 active, all user-action-dependent, zero auto-resolvable
-
-**Next scheduled checkpoint**: Monday June 29 13:15 UTC pre-market stockbot infrastructure validation gates (57h away)
-
-**Assessment**: CORRECT BY DESIGN — Continuous standby is the appropriate posture. All autonomous work complete, all blocks user-decision-dependent. System healthy and monitoring active for scheduled events.
+**Assessment**: EQ Item 15 complete and production-ready for July 3 checkpoint routing. All decision infrastructure pre-staged; no re-planning needed. Stockbot validation window countdown: ~18h to June 29 gate check, ~5 days to July 3 checkpoint decision.

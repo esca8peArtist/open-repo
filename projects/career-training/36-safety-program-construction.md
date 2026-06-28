@@ -395,6 +395,23 @@ A **toolbox talk** (also called "tailgate safety meeting") is a brief (10–15 m
 
 **Format:** 10–15 minutes; specific topic; interactive (not a lecture).
 
+### 5.1.1 Participation Levels and Accountability
+
+Weekly toolbox talks are effective only if (a) workers actually attend, and (b) supervisors maintain discipline.
+
+**Attendance accountability:**
+- Toolbox talk attendance is mandatory for all workers on site. No exceptions (except emergency off-site activity).
+- Supervisor signs in all attendees. Missing workers are noted.
+- If a worker misses the toolbox talk, the supervisor conducts a private 5-minute safety brief with that worker before they begin work. This is documented separately.
+- Chronic non-attendance (missing > 2 talks per month) is a performance issue and may result in disciplinary action (warning, suspension, or termination for repeated offenses).
+
+**Supervisor accountability:**
+- The site superintendent is responsible for conducting toolbox talks on time, every week, without exception.
+- The GC safety manager or owner audits toolbox talk attendance weekly (spot-check by reviewing sign-in sheets).
+- If toolbox talks are skipped or attendance is low, this is escalated to the GC owner or PM.
+
+**Why accountability matters:** Toolbox talks without enforcement communicate that safety is optional. Conversely, toolbox talks with clear attendance tracking and discipline demonstrate that safety is non-negotiable.
+
 ### 5.2 Toolbox Talk Topic Rotation
 
 Create an annual rotation of topics. This ensures comprehensive coverage and prevents repetition.
@@ -511,6 +528,22 @@ Maintain a toolbox talk log:
 - **X-ray or exam** = medical treatment; recordable (even if no fracture is found).
 
 **When in doubt, report it as recordable.** It's better to over-report than under-report; Cal/OSHA violations for under-reporting are serious.
+
+### 6.1.1 Recordable Injury Definition — Gray Areas
+
+The distinction between recordable and non-recordable is sometimes unclear. Here are clarifications for gray-area scenarios:
+
+| Scenario | Recordable? | Reasoning |
+|---|---|---|
+| Worker sprains ankle, applies ice, continues working | Not recordable (unless swelling/pain prevents work or requires evaluation) | First aid only (ice) unless medical treatment beyond first aid is required |
+| Worker gets cut, goes to urgent care for 3 stitches | Yes — recordable | Sutures are medical treatment beyond first aid |
+| Worker gets cut, employer applies antibiotic ointment and bandage | Not recordable | First aid (topical ointment and dressing) |
+| Worker reports back pain, sees company doctor for evaluation (no treatment) | Yes — recordable | Medical evaluation, even without treatment, is recordable |
+| Worker reports minor pain, takes over-the-counter ibuprofen | Not recordable | Over-the-counter medication is first aid; prescription medication is medical treatment |
+| Worker gets tetanus shot at urgent care | Yes — recordable | Immunization/injection is medical treatment |
+| Worker has headache, takes aspirin | Not recordable | Over-the-counter medication is first aid |
+
+**When in doubt, report it as recordable.** It's better to over-report than under-report; Cal/OSHA penalties for under-reporting are severe.
 
 ### 6.2 Immediate Injury Response (First 24 Hours)
 
@@ -672,7 +705,48 @@ A contractor with an EMR above the requirement is simply not eligible to bid. Th
 
 Conversely, a contractor with an EMR of 0.85–0.95 (below industry average) can bid virtually all projects and often has competitive advantage due to lower insurance costs and lower perceived risk.
 
-### 7.4 EMR Reduction Strategy: 3-Year Plan
+### 7.4 Reading Your EMR Report — Understanding the Numbers
+
+Your insurance broker provides an annual EMR report. Understanding what it shows is critical to managing EMR strategically.
+
+**Key elements of an EMR report:**
+
+| Element | What It Means |
+|---|---|
+| **Base premium rate** | The industry standard rate for your classification (e.g., 10.5% of payroll for residential construction). |
+| **Experience period** | The 3-year window of claims data used to calculate your EMR (e.g., 2022–2024). |
+| **Expected losses** | What an average company of your size and classification should generate in claims in a 3-year period. |
+| **Actual losses** | What your company actually generated in claims in the 3-year period. |
+| **Experience modifier** | The ratio of actual losses to expected losses. If actual > expected, modifier > 1.0. |
+| **Effective premium rate** | Base rate × EMR = your actual rate (e.g., 10.5% × 1.25 = 13.125%). |
+| **Premium impact** | The difference between the standard premium (at base rate) and your premium (at adjusted rate). |
+
+**Reading the report example:**
+- Base rate: 10.5% of payroll
+- Payroll: $2,000,000
+- Standard premium: $2M × 10.5% = $210,000
+- Your EMR: 1.25
+- Your actual premium: $210,000 × 1.25 = $262,500
+- **Premium penalty: $52,500/year**
+
+**Looking backward — understanding old claims impact:**
+The EMR report shows which claims are in the 3-year experience window. As claims age and fall out of the window, your EMR improves.
+
+Example:
+- Year 1 (2022): $150,000 claim (in window)
+- Year 2 (2023): Zero claims
+- Year 3 (2024): Zero claims
+- EMR based on 2022–2024 window: 1.25 (due to one large claim)
+
+One year later:
+- Year 2 (2023): Zero claims (now in oldest position in window)
+- Year 3 (2024): Zero claims
+- Year 4 (2025): Zero claims
+- EMR based on 2023–2025 window: 1.00 (claim from 2022 has fallen out; three-year clean history)
+
+This illustrates why EMR recovery takes 3 years minimum: you must maintain a clean claims record for 3 years to fully phase out the old claims.
+
+### 7.5 EMR Reduction Strategy: 3-Year Plan
 
 If a company has a high EMR due to past claims, a systematic safety investment can reduce EMR significantly over 3 years:
 

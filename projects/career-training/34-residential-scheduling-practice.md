@@ -352,7 +352,7 @@ This prevents disputes: "We accelerated at your request; the cost is $3,000." vs
 
 ---
 
-## 6. Documentation and Schedule Change Orders
+## 6. Documentation and Schedule Change Orders (EXPANDED)
 
 ### 6.1 Schedule Impact as a Change Order Element
 
@@ -367,6 +367,30 @@ When a constraint or issue extends the project completion date, the cost impact 
 
 This $2,800 is a legitimate cost to recover via change order — documented and submitted when the delay is confirmed.
 
+### 6.1.1 General Conditions Cost and Schedule Extension Calculation
+
+When a project extends beyond the planned completion date, the GC incurs **extended general conditions** — the cost of keeping the superintendent, management, insurance, and site overhead active for the extra time.
+
+**Typical extended general conditions costs (residential project):**
+
+| Item | Typical Monthly Cost |
+|---|---|
+| GC superintendent salary (salary + overhead allocation) | $4,000–$8,000 |
+| GC project manager (portion of time on project) | $1,500–$3,000 |
+| Site equipment (temporary utilities, fence, office trailer) | $500–$1,500 |
+| Insurance (GL, builders risk, umbrella — prorated) | $500–$1,500 |
+| Site cleanup and maintenance | $300–$800 |
+| **Total monthly extended general conditions** | **$6,800–$14,800** |
+
+**Example calculation:**
+- Original contract: $500,000, 120-day schedule, GC general conditions budget: $45,000 (9% of contract).
+- Per-day general conditions cost: $45,000 ÷ 120 = $375/day.
+- Schedule extends 14 days (due to owner-caused delays).
+- Extended general conditions cost: 14 days × $375/day = $5,250.
+- Change order issued to owner for $5,250 (schedule extension).
+
+**Critical documentation:** The GC must document the root cause of the delay (owner decision, permit delay, sub non-performance, force majeure) to support the change order request. Without documentation, the owner may dispute the cost.
+
 ### 6.2 "Delay Impact" vs. "Defective Condition" Disputes
 
 When a trade delays and you must accelerate to compensate, clarify the cost category:
@@ -376,9 +400,33 @@ When a trade delays and you must accelerate to compensate, clarify the cost cate
 
 Document the cause: "Framing delay due to owner-directed structural changes = owner pays $3,000 acceleration cost" vs. "Framing delay due to crew availability (sub issue) = sub absorbs acceleration cost."
 
+### 6.3 Change Order Language for Schedule-Related Impacts
+
+**Sample contract language for schedule-related change orders:**
+
+> **Owner Responsibility for Schedule Delays.** In the event that Owner causes a delay in the Work (including, but not limited to: delays in providing approvals, submittals, or material selections; owner-directed changes in scope or sequencing; delays caused by owner-directed permits or inspections), Contractor shall be entitled to a schedule extension and a change order for the cost of extended general conditions.
+>
+> **Extended General Conditions Cost.** If the Project is delayed due to Owner-caused conditions, Contractor shall be entitled to additional compensation for extended general conditions, calculated as the per-day cost of general conditions ($[amount] per day) multiplied by the number of days of delay. General conditions include, but are not limited to: superintendent and management salary, site overhead, insurance, and temporary utilities.
+>
+> **Cost of Acceleration.** If Contractor elects to accelerate the Work to mitigate a delay, and such acceleration is required due to Owner-caused delay, Contractor shall be entitled to reimbursement of acceleration costs (including labor premium, equipment rental, and overtime), documented with supporting invoices.
+
+This language ensures that if an owner delay extends the schedule, the GC is compensated for the extended general conditions cost, rather than absorbing it.
+
 ---
 
-## 7. Field Reporting Integration
+## 7. Field Reporting Integration (EXPANDED)
+
+### 7.0 Why Daily Reporting Matters for Schedule Management
+
+The lookahead schedule is only as accurate as the information feeding it. If the superintendent is updating the Friday lookahead based on memory or rough notes, errors and misalignments accumulate. A **systematic daily log** is the source of truth that prevents this drift.
+
+**Three critical functions of daily reporting:**
+
+1. **Schedule tracking:** Compares actual progress to planned progress. "Framing scheduled to be 60% complete; actually 55% complete — 5 days behind plan."
+
+2. **Constraint identification:** Captures new barriers that emerged during the day. "Electrical rough box placement has conflict with HVAC duct location; must resolve before electrical installation."
+
+3. **Decision documentation:** Records owner decisions, approval dates, and changes. "Owner approved kitchen cabinet finish at site meeting on 4/15. Cabinet shop drawings can now be submitted."
 
 ### 7.1 The Daily Log as Schedule Feedback
 
@@ -422,6 +470,86 @@ The daily field report must capture actual vs. scheduled progress for every acti
 > - Owner approval needed on kitchen cabinet final finish by 4/16 (cabinet install scheduled 5/10).
 
 This daily log becomes the source data for the Friday lookahead. The superintendent can see exactly where the schedule was kept.
+
+### 7.2 Digital vs. Paper Logs — Best Practices
+
+**Paper logs (traditional):**
+- Advantages: No tech required; can be handwritten quickly on site.
+- Disadvantages: Hard to search, version control is manual, prone to loss.
+
+**Digital logs (phone/tablet app or cloud-based):**
+- Advantages: Searchable, automatically uploaded, shared with team, can include photos.
+- Disadvantages: Requires connectivity on site (may not exist in all locations).
+
+**Best practice — hybrid approach:**
+- GC superintendent writes a brief daily log on paper (15–20 minutes at end of day).
+- Superintendent (or office staff) transcribes or uploads to a digital platform (Google Sheet, Procore daily log, or Excel) same evening or next morning.
+- Digital version is shared with owner, subs, and PM.
+- Cloud-based platform allows team to see daily progress in real-time and flag issues immediately (don't wait for Friday lookahead).
+
+### 7.3 Frequency and Timing of Daily Logs
+
+**Minimum frequency:** One comprehensive log per day, written by the GC superintendent.
+
+**Timing:** End of business day (4:00–5:00 PM), while the day is fresh in memory.
+
+**Content review:** The PM or project owner reviews the daily log same evening (if digital) or first thing next morning (if paper). Any issues or questions are flagged same-day or early next day, not waiting for the Friday lookahead.
+
+**Weekly synthesis:** The Friday lookahead is synthesized from 5 days of daily logs, plus Friday's constraint-clearance meeting. The lookahead is not created in a vacuum; it's built on the daily reporting data.
+
+### 7.4 Critical Daily Log Elements — What to Never Miss
+
+**Weather and external conditions:**
+- Record date, time, and weather conditions (clear, rain, extreme heat).
+- Note any weather-related work stoppages: "Rain from 2:00–4:00 PM; framing crew moved inside to interior framing; exterior work lost 2 hours."
+
+**Crew on site by trade:**
+- "Framing: 6 carpenters + foreman" (names optional but helpful; at minimum, count and hours).
+- "Electrical: 2 electricians, 4-hour shift" (if partial day, note the reason: "Inspections ran late; electrician crew called off at noon").
+
+**Progress by activity:**
+- "Framing: Master and guest room wall framing 95% complete; soffit framing 40% complete (started today; soffit lumber arrived on time day 35)."
+- Track percentage complete, not just "work occurred."
+
+**Changes from planned schedule:**
+- "Rough plumbing: Scheduled for day 20–22, but not yet started due to framing delay. Rescheduled to day 24–26."
+- Document when activities shift and why.
+
+**Deliveries and inspections:**
+- "Soffit lumber: Received day 35 per schedule. Condition: good; all bundles counted."
+- "Framing rough inspection: Not yet called. Inspector availability constrained to 2 slots per week. Estimated inspection day 50."
+
+**Decisions and approvals:**
+- "Owner meeting: Kitchen finish selections finalized (owner approved at site visit). Cabinet shop drawings can now be submitted."
+- "Permit status: Electrical upgrade permit still pending AHJ review. Follow-up call scheduled 4/18."
+
+**Issues and constraints:**
+- "Issue: HVAC duct location conflicts with framing soffit. Meeting scheduled 4/16 with MEP sub and framing foreman to resolve routing."
+- "Constraint: Cabinet delivery still on target for 4/22. Approval of final finishes required by 4/12 to meet this date."
+
+**Safety notes (if safety program is active):**
+- "Toolbox talk: Fall protection (all framing crew present, 10 minutes)."
+- "Incident: Minor cut on framing crew member; first aid applied on site; worker continued work."
+
+**Time tracking (useful for future projects):**
+- "Framing: 6 carpenters × 8 hours = 48 carpenter-hours; 95% of scope complete = 48 hours for remaining 5% scope = total estimated 50 carpenter-hours."
+- This data becomes the basis for estimating labor on future projects.
+
+---
+
+### 7.5 Using Daily Logs for Schedule Recovery and Problem Prevention
+
+**Real-time detection of slippage:**
+A superintendent who reads the daily logs early in the week can identify schedule drift before it becomes a crisis. Example:
+- Day 20 (Monday): Daily log shows framing at 65% instead of planned 70%. Difference: 5 percentage points = about 1 day of slippage.
+- Day 24 (Friday): Projected framing completion is now day 55 instead of planned day 50. Slippage is 5 days, growing.
+- By detecting this early (day 20), the superintendent has a week to analyze the root cause and develop a recovery plan (before the problem is irreversible).
+
+**Constraint escalation:**
+If the daily log on day 15 says "Cabinet approval still pending; owner decision needed by day 18 to meet cabinet delivery date day 35," the PM can call the owner on day 16 and escalate the approval. Waiting until day 20 to escalate means it's too late.
+
+**Documentation for disputes:**
+If an owner later claims that the GC delayed the project, the daily logs provide a factual record of progress, decisions, and constraints. "Here's what happened: Week 3, owner changed the scope; documented in daily log day 17. Week 4, cabinet approvals delayed; documented day 22–24. Week 8, electrical rough inspection delayed due to AHJ availability; documented day 43. These external factors, not GC performance, caused the 2-week schedule slip."
 
 ---
 

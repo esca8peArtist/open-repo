@@ -375,6 +375,22 @@ Water damage claims are the most frequent builder's risk disputes. Most policies
 2. Consider adding separate coverage for water seepage or hydrostatic pressure.
 3. Implement robust site drainage and monitoring during construction.
 
+### 4.4.1 Site Security and Builder's Risk Coordination
+
+Builder's risk policies often include provisions about site security and occupancy. A site that is left unattended or unsecured may have reduced coverage.
+
+**Typical security requirements in builder's risk policies:**
+- Site must be secured when unoccupied (fencing, locked gates, security guard if high-risk).
+- Temporary buildings (office trailers, storage) must be locked when not in use.
+- No open buildings without security if site is unoccupied overnight.
+- Equipment must be stored securely (not left visible from the street).
+
+**GC responsibility:** Coordinate with the owner/insurance broker to understand site security requirements. A project that leaves materials or equipment visible and accessible may face claims denial if a theft or vandalism loss occurs.
+
+**Example:** A project leaves expensive HVAC equipment on the roof, unattended overnight, without security guard. The equipment is stolen. Builder's risk denies coverage: "Site was not adequately secured. Equipment was visible and accessible from public areas." The loss is uninsured.
+
+**Prevention:** Implement site security practices in line with the builder's risk policy. Store equipment in locked areas or under tarps. Use temporary fencing or security guards on higher-value projects.
+
 ### 4.5 Filing a Builder's Risk Claim
 
 When a loss occurs (theft, wind damage, fire, etc.):
@@ -456,6 +472,42 @@ Professional liability claims are typically filed after project completion, some
 - Owner files a professional liability claim against the GC.
 - E&O policy responds and covers defense and settlement, up to the policy limit.
 - Without E&O, the GC is defending at personal cost and paying any judgment.
+
+### 5.5 When Design-Assist Requires E&O
+
+A common misconception: "We're not doing design; we're just assisting the architect." Design-assist can expose the GC to design liability if the GC is providing more than advisory input.
+
+**Design-assist scenarios that DO require E&O:**
+- GC prepares MEP routing layouts and coordinates mechanical and electrical installation per those layouts. If the layout is defective (inadequate HVAC capacity, electrical overload), the GC bears responsibility.
+- GC provides structural layout recommendations (even if a structural engineer reviews). If the GC recommended a layout that is later found to be inadequate, claims may target the GC's role.
+- GC provides code compliance commentary or recommendations. If the design contains code violations and the GC failed to flag them, the GC may be liable.
+
+**Design-assist scenarios that likely DON'T require E&O:**
+- GC reviews architect's design for constructability; suggests alternatives but architect makes final decisions.
+- GC coordinates approved design during construction; does not modify or approve design.
+- GC provides input on budget/schedule implications of design choices but architect retains design authority.
+
+**The rule of thumb:** If the GC's input is advisory and the owner/architect retains final design authority, E&O is often not required (though a broker should review). If the GC is making or approving design decisions, E&O is required.
+
+### 5.6 Obtaining and Maintaining Professional Liability Coverage
+
+**Where to get E&O insurance:**
+- Commercial insurance brokers (same broker who handles GL and other policies).
+- Design-build or specialty construction insurers (some companies specialize in contractors providing design services).
+- Professional associations (AGC, AIA) sometimes offer group E&O programs at preferred rates.
+
+**Application process:**
+- E&O carriers require detailed information about the GC's design services: What is the scope of design? Are you providing architectural design, structural design, MEP design, or coordination? What is your team's qualification and experience?
+- Carriers may require examples of past design work or references from previous owners.
+- Some carriers may limit coverage or apply endorsements based on the GC's experience level.
+
+**Cost and renewal:**
+- E&O is typically annual coverage.
+- Premium is based on annual contract value (not specific project value).
+- Companies with higher design volume pay higher premiums.
+- Good loss history allows premium reductions; claims history increases premiums or may result in non-renewal.
+
+**Notification requirement:** If a claim or dispute arises that might involve design liability, notify the E&O broker and carrier immediately (even if unsure whether a claim will be filed). Late notification can result in coverage denial.
 
 ---
 

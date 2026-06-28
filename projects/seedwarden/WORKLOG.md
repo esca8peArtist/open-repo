@@ -4,6 +4,28 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 132 — Exploration Queue Item 13: Phase 3 Bundle Content Deep Validation & Contractor Scope Audit — June 28, 2026
+
+**Session**: June 28, 2026
+**Task**: Audit all 6 Q3 medicinal product units (5 content bundles + Practitioner tier) against contractor deliverable specifications, compliance requirements, and cross-bundle conflict checks. Produce 3 deliverable files.
+
+**Status**: COMPLETE — 3 files written to projects/seedwarden/
+
+**Deliverables**:
+1. **PHASE_3_BUNDLE_CONTENT_GAP_LIST.md** — Full audit, one section per bundle, 20 GREEN / 9 YELLOW / 0 RED across all 6 units. Scope clarification included: Practitioner tier is a pricing/license construct, not a 6th content bundle. Key finding: Red Clover constituent mislabeling (berberine vs. isoflavones) is a factual error requiring correction before June 29 upload.
+2. **PHASE_3_BUNDLE_REMEDIATION_CHECKLIST.md** — 9 numbered action items with owner, deadline, and verification method. 3 blocking items (Items 1-3) before their respective upload or milestone dates; 6 non-blocking items before Week 5 handoff. Top priority: Red Clover berberine correction, Sleep upload date discrepancy resolution, Ashwagandha thyroid mechanism depth verification.
+3. **PHASE_3_BUNDLE_CONTRACTOR_NOTIFICATION_SUMMARY.md** — Per-track status (Photographer / Writer / Habitat Specialist), scope ambiguities flagged, one-liner action requests, Week 5-6 handoff timeline confirmation. Key ambiguity: Adrian White vs. Rebecca Lexa assignment scope for Immunity bundle needs clarification before Week 2. Conservation Board referral track is currently "Post pending" — backup plan needed by July 5 if no response.
+
+**Key audit findings**:
+- No RED items (no unmitigated compliance blockers or catastrophic content gaps)
+- 9 YELLOW items, all resolvable: 2 in Women's Health (upload June 29), 2 in Immunity (upload July 20), 1 in Sleep (upload TBD — date discrepancy flagged), 1 in Respiratory, 1 in Digestive, 2 in Practitioner tier
+- Factual error found: Q3_MEDICINAL_BUNDLES_COMPLETION_TRACKER.md uses "berberine interaction" for Red Clover — berberine is not a Red Clover constituent; must be corrected in the draft or tracker before June 29 upload
+- Sleep bundle upload date conflict: Launch Calendar says July 13; Tracker says July 27. Affects Practitioner tier (July 15 launch requires 3 live bundles)
+- Writer scope ambiguity: Dashboard does not assign Adrian White (Clinical Writer) to specific bundles or species; needs clarification before kickoff calls (July 1)
+- Confidence level: 89% (high confidence on gap identification; lower on correction verification, which requires reading actual bundle drafts)
+
+---
+
 ## Item 131 — Phase 3 Contractor Onboarding and Launch Workflow — June 28, 2026
 
 **Session**: June 28, 2026
