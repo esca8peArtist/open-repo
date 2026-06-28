@@ -2,6 +2,50 @@
 
 ---
 
+## Session 4459 (2026-06-28 17:58–18:06 UTC) — ORCHESTRATOR PRE-MARKET HEALTH CHECK — ✅ **STOCKBOT READY FOR SUNDAY JUNE 29 CHECKPOINT; ALL SYSTEMS NOMINAL**
+
+### **Since Last Check-in (Session 4458 → 4459)**
+- ✅ **Orientation** — Verified all 5 blocks remain user-action-dependent; 4 active pending exploration queue items (no new items needed; queue > 3 threshold)
+- ✅ **Stockbot Pre-Market Health Verification** (proactive, 1 day ahead of Sunday deadline)
+  - Container status: ✅ HEALTHY (both stockbot + stockbot-web running, up 4 hours)
+  - API endpoint: ✅ RESPONSIVE (curl to :8000/api/health returned exit 0)
+  - Database: ✅ PRESENT (path verified accessible)
+  - Stream logs: ✅ EXPECTED (market closed on Saturday; no ticks = normal behavior)
+  - **Verdict**: System ready; no blocking issues detected; checkpoint infrastructure intact
+
+### **Current System Status**
+- **Stockbot**: Ready for Sunday June 29 13:15 UTC pre-market checkpoint; early health check passed
+- **Resistance-research**: Domain 59 Tier 2 sends ready (contingency framework complete from Session 4470); execution window June 25-30
+- **Seedwarden**: 3 remediation priorities flagged (Session 4458); user action needed by July 1
+- **Usage**: Nominal (no throttling); Tuesday June 30 calibration scheduled
+- **Exploration Queue**: Items 11-13 complete; Item 1 pending (50+ AAPL round trips trigger); Items 5, 6, 7 pending other triggers
+
+### **Key Decision Points Awaiting User Action**
+1. **Seedwarden**: Red Clover berberine error correction (by June 29); Sleep bundle upload date (by July 1); Ashwagandha mechanism verification (July 8)
+2. **Resistance-research**: Domain 59 Tier 2 sends execution window (June 25-30, 49h remaining as of Session 4470)
+3. **Career-training**: GitHub Pages Phase 1 push to GitHub (awaiting user)
+4. **Mfg-farm**: Test print execution (awaiting user physical action)
+5. **Open-repo / Systems-resilience**: Platform/maintainer decisions (expired deadlines, awaiting user re-authorization)
+
+### **Recommended Immediate Actions**
+1. **By June 29 07:00 UTC**: Resolve Red Clover berberine error in seedwarden Women's Health bundle (blocks June 29 upload deadline)
+2. **By June 30 18:00 UTC**: Execute Domain 59 Tier 2 sends (49h window; 3 email templates ready from Session 4088)
+3. **By July 1 18:00 UTC**: (a) Clarify seedwarden Sleep bundle upload date, (b) Clarify Adrian White writer assignments, (c) Confirm contractor quality gates
+4. **Anytime**: Execute career-training Phase 1 GitHub Pages push; stockbot pre-market checkpoint Sunday 13:15 UTC is fully prepared (no pre-work needed)
+
+### **System Readiness Assessment**
+- ✅ Stockbot: READY
+- ✅ Resistance-research: READY (awaiting user sends)
+- ⏳ Seedwarden: READY (awaiting user decisions + corrections)
+- ⏳ Career-training: READY (awaiting user push)
+- ⏳ Mfg-farm: READY (awaiting test print)
+- All other projects: Blocked on user decisions or expired deadlines
+
+### **Next Orchestrator Session Trigger**
+Recommended after 2026-06-29 14:00 UTC (1h post-market-open) to monitor stockbot checkpoint validation and decide Phase 4 execution path. If no market validation available, next session June 30 morning.
+
+---
+
 ## Session 4458 (2026-06-28 17:50–18:15 UTC) — EXPLORATION QUEUE ITEM 13 COMPLETE — ✅ **SEEDWARDEN PHASE 3 BUNDLE AUDIT FINISHED; 3 REMEDIATION PRIORITIES FOR USER ACTION BY JULY 1**
 
 ### **Since Last Check-in (Session 4457 → 4458)**
