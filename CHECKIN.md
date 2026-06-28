@@ -2,6 +2,24 @@
 
 ---
 
+## Session 4467 (2026-06-28 19:45–20:00 UTC) — ORCHESTRATOR EXPLORATION QUEUE REPLENISHMENT (ITEMS 20-23 ADDED)
+
+### **Since Last Check-in (Session 4466 → 4467)**
+✅ **Queue Replenishment Complete** — Per session protocol, added 4 new immediately-executable exploration items (20-23) to maintain queue health. All major projects correctly blocked on user actions/decisions or time-gates. Zero autonomous work available in core projects; new queue items ready for execution if session time permits. System in standby posture pending June 29 checkpoint (18h away) or user action to INBOX.md.
+
+### **New Exploration Queue Items Added (20-23)**
+**Items ready for immediate execution** (no external triggers):
+
+1. **Item 20: stockbot Jetson June 29 Pre-Market System Readiness Audit** (1.5-2h) — Disk space, power headroom, Docker health, SSH accessibility, entropy, process isolation. Produce `JETSON_JUNE29_READINESS_CHECKLIST.md`. Executive immediately 6-12h before checkpoint.
+
+2. **Item 21: resistance-research Wave 2 Outcome Probability Model** (2-3h) — Build predictive model from Wave 1 data (60% reply rate for Domain 59); auto-classify Wave 2 outcomes as HIGH/MODERATE/LOW/ZERO; pre-stage contingency activation thresholds. Eliminate 4-6h analysis delay when Wave 2 data arrives June 25-27.
+
+3. **Item 22: career-training Phase 2 Kit.com Platform Pre-Trial** (2h) — Set up free Kit.com account, draft welcome sequence for one module, test subscriber onboarding. De-risk Phase 2 email platform before user GitHub Pages deployment.
+
+4. **Item 23: mfg-farm Test Print Contingency Analysis & Pre-Staging** (1.5h) — Pre-stage snap-arm design modifications IF test fails (gap binding/looseness). Analyze PLA+ vs PETG/ABS alternatives. Reduce iteration cycle from 5-7 days to 2-3 days if print fails.
+
+---
+
 ## Session 4466 (2026-06-28 19:27–19:45 UTC) — ORCHESTRATOR ORIENTATION & SYSTEM STANDBY
 
 ### **Since Last Check-in (Session 4465 → 4466)**

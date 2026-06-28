@@ -252,3 +252,31 @@
 4. **Post-user-action**: Trigger Item 14 (career-training analytics) upon Phase 1 GitHub Pages deployment; Item 16 (systems-resilience Phase 6) upon Phase 5 release
 
 **Assessment**: EQ Item 15 complete and production-ready for July 3 checkpoint routing. All decision infrastructure pre-staged; no re-planning needed. Stockbot validation window countdown: ~18h to June 29 gate check, ~5 days to July 3 checkpoint decision.
+
+---
+
+## Session 4467 (2026-06-28 19:45–20:00 UTC) — ORCHESTRATOR EXPLORATION QUEUE REPLENISHMENT
+
+**Action**: Per session protocol, checked exploration queue health. Found all immediately-actionable items either recently completed (Items 17-19) or with unmet triggers (Items 1, 5-7, 14-16). Added 4 new immediately-executable items (20-23) to restore queue balance.
+
+**Items 20-23 Added to Exploration Queue**:
+1. **Item 20**: stockbot Jetson June 29 pre-market readiness audit (1.5-2h, available now)
+2. **Item 21**: resistance-research Wave 2 outcome probability model (2-3h, available now)
+3. **Item 22**: career-training Phase 2 Kit.com platform pre-trial (2h, available now)
+4. **Item 23**: mfg-farm test print contingency analysis (1.5h, available now)
+
+**Files Modified**:
+- PROJECTS.md: Added Items 20-23 to Exploration Queue section
+- CHECKIN.md: Updated Session 4466 summary + added Session 4467 header with new items
+
+**System Status**:
+- **Blocks**: All 5 unchanged (user-action-dependent, verified resolvable)
+- **Exploration Queue**: Items 2-4, 8-19 complete (15 items); Items 1, 5-7, 14, 16 trigger-dependent (6 items); Items 20-23 new/available (4 items)
+- **Queue health**: Restored (4 immediately-actionable items added, zero external dependencies)
+- **Autonomous work in core projects**: Zero (all correctly blocked)
+- **Critical checkpoint**: June 29 13:15 UTC (17h 45m away) — all infrastructure ready
+
+**Assessment**: Queue replenishment successful. All new items are immediately executable (no triggers) and high-value for upcoming checkpoints + user action points. System ready for either (a) Item 20-23 execution if session time permits, (b) standby until June 29 checkpoint, or (c) user action in INBOX.md to unlock blocked projects.
+
+**Next Action**: Commit orchestration files. If additional session time available, spawn agents for Items 20-23 in parallel (est. 1.5-3h wall-clock for all 4 items).
+
