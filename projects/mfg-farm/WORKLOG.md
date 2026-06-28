@@ -1,5 +1,42 @@
 # mfg-farm Project WORKLOG
 
+## Session 4471 (June 28, 2026) — Test Print Contingency Analysis & Design Modification Pre-Staging (Item 23)
+
+**Objective**: Pre-stage snap-arm tolerance contingency procedures so test print failures route immediately to a fix — no re-planning lag.
+
+**Deliverables completed**:
+
+### 1. TEST_PRINT_CONTINGENCY_DECISION_TREE.md
+- Measurement protocol (T_mid, T_base, T_tip with calipers)
+- Three-route decision tree: snap-arm too tight (<1.25 mm), too loose (>1.55 mm), material failure
+- Pass criteria table (6 criteria: dimensional, flex, cable pull, nub seat, warp, layer adhesion)
+- 60-second quick reference card for post-print routing
+- Cross-referenced to both modification procedures files
+
+### 2. SNAP_ARM_CAD_MODIFICATION_PROCEDURES.md
+- Section A (too tight): `SNAP_ARM_THICKNESS` line 41, 1.4 → 1.5 mm, 30-second edit
+- Section B (too loose): `SNAP_ARM_THICKNESS` line 41, 1.4 → 1.3 mm; secondary `SNAP_NUB_HEIGHT` 1.2 → 1.4 if grip fails
+- Section C (material failure): routes to temperature correction first, then material substitution
+- Full STL regeneration and re-slice commands
+- Parameter reference table for all snap-arm constants with pre-approved adjustment values
+- Iteration tracking table
+
+### 3. MATERIAL_SUBSTITUTION_PROTOCOL.md
+- PLA+ baseline with thermal, stiffness, cost, warp risk specs
+- PETG primary substitution: 245-250°C, 40 mm/s, heated bed, +$2-5/kg, no enclosure
+- ABS+ emergency backup: 240-250°C, 30-40 mm/s, enclosure required, styrene fumes noted
+- Decision flowchart: when to pivot from PLA+ to PETG to ABS
+- Margin impact analysis: PETG adds $0.04-0.10/clip, within tolerance at 60%+ margin target
+- Thermal adequacy note: PLA+ sufficient for all desk environments below 35°C ambient
+
+**Key findings**:
+- All 3 contingency paths are 30-second CAD edits (single parameter change), not redesigns
+- Material substitution to PETG is the correct pivot if PLA+ fails; ABS is genuine emergency-only
+- Iteration convergence expected within 2 prints for dimensional failures; 1 print for temperature-only failures
+- No price change needed if PETG substitution required
+
+---
+
 ## Session 4470 (June 28, 2026) — Q3-Q4 Product Pipeline Research & CAD Timeline Planning (Item 11)
 
 **Objective**: Execute Exploration Queue Item 11 — identify 5 new high-margin cable management/desk products beyond the initial 15 SKUs, validate market demand, score against decision matrix, and produce CAD sequencing plan.
