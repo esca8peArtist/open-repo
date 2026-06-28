@@ -2,9 +2,12 @@
 
 ---
 
-## Session 4350 (2026-06-28 01:45 UTC) — ORCHESTRATOR — ✅ **SATURDAY EARLY-MORNING STANDBY; CONTINUOUS VERIFICATION THROUGH MONDAY PRE-MARKET**
+## Session 4351 (2026-06-28 01:51 UTC) — ORCHESTRATOR — ⚠️ **INTER-MONITORING WORK WINDOW ACTIVE (JUNE 27–JULY 3); DOMAIN 59 SEND WINDOW CLOSING JUNE 30**
 
-### **Since Last Check-in (Session 4348 → 4350)**
+### **NEEDS YOUR INPUT**
+- **[URGENT] resistance-research Domain 59 send window CLOSING JUNE 30 18:00 UTC** — Only 45 hours remaining in the June 25-30 Tier 2 send window for Domain 59 (EPI/Demos/NELP emails). If you want any of these sends executed, confirm by June 29 12:00 UTC (24h lead time recommended). Domain 59 Tier 2 templates are production-ready in `projects/resistance-research/`. No autonomous sends will occur — this is a reminder to decide by deadline.
+
+### **Since Last Check-in (Session 4348 → 4351)**
 - ✅ **Full orientation completed** (5 min) — Re-read ORCHESTRATOR_STATE.md, PROJECTS.md Goals, verified all work complete/paused/time-gated; confirmed BLOCKED.md has 5 user-action-dependent blocks (no new Resolutions); verified Exploration Queue healthy (47+ items, all correctly staged)
 - ✅ **State verification** — INBOX.md has one future-scheduled item (June 30 usage calibration reset), no new immediate items; git diff shows only PROJECTS.md usage calibration update (June 27 recalibration still in effect, 0.1% Sonnet / 0.1% all-models)
 - ✅ **Autonomous work audit** — Confirmed zero unfinished scope in any project Goal; all active items either complete, awaiting user decision, or awaiting time trigger (Monday pre-market, July 3 checkpoint, Nov 4 Phase 3 launch)

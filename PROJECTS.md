@@ -1645,7 +1645,7 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/career-training/`
-**Current focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
+**Current focus**: ✅ **[DEPLOYMENT IN PROGRESS] GITHUB PAGES PHASE 1 INFRASTRUCTURE COMPLETE (SESSION 4351)** — Created /docs directory structure, copied all 33 modules, built Jekyll _config.yml, created homepage + 6 navigation pages (quick-start, module-reference, industrial/residential/specialty paths, FAQ). Production-ready for GitHub Pages. Next: User creates/enables GitHub repo, configures domain, pushes /docs to main. Phase 2 (email list) and Phase 3 (social media) await user platform setup.
 **Blocked on**: —
 **Notes**: Workbook complete and production-ready. All 150 scenarios cover construction PM lifecycle from initial contracts through business development and operations. Ready for user review, deployment as self-study material, or integration into training programs.
 

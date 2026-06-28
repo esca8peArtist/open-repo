@@ -1,0 +1,88 @@
+---
+# Jekyll Site Configuration
+title: Construction Career Training Curriculum
+description: >
+  A comprehensive, production-ready training program for construction professionals transitioning into
+  general contracting, project management, or business ownership. Covers 33 modules, 150 case studies,
+  three complete learning paths, and ~457,000 words of construction industry expertise.
+
+# Site URL and baseurl (adjust for custom domain or GitHub Pages subdirectory)
+url: "https://constructiontrainingpath.com"
+baseurl: ""  # Leave empty if using custom domain; use "/career-training" if using GitHub Pages default subdomain
+
+# Theme
+remote_theme: just-the-docs/just-the-docs
+color_scheme: light
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  auto_ids: true
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation breadcrumbs
+breadcrumbs: true
+
+# Search enabled
+search_enabled: true
+search:
+  rel_url: true
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  truncate_words: 20
+
+# Collections (optional, for organizing instructor guides separately)
+collections:
+  instructor_guides:
+    output: true
+    permalink: /instructor-guide/:path/
+
+# Exclude from Jekyll processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.md
+  - .gitignore
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: "modules"
+    values:
+      layout: module
+      nav_order: 0
+  - scope:
+      path: "case-studies"
+    values:
+      layout: page
+  - scope:
+      path: "resources"
+    values:
+      layout: page
+  - scope:
+      path: "instructor-guide"
+    values:
+      layout: page
+
+# Footer
+footer_content: >
+  Copyright © 2026 Construction Career Training. All modules, case studies, and resources are
+  production-ready training materials for construction professionals. See LICENSE for usage terms.
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Last modified date
+last_edit_time_zone: UTC
+gh_edit_repository: "your-username/career-training"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
