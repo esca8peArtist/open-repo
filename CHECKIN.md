@@ -2,6 +2,35 @@
 
 ---
 
+## Session 4359 (2026-06-28 01:55 UTC) — ORCHESTRATOR — ✅ **SATURDAY STANDBY CHECKPOINT; USAGE MONITORING ACTIVE (89.7%)**
+
+### **Since Last Check-in (Session 4358 → 4359)**
+- ✅ **Continuity verified** — State identical to Session 4358 (~20 min ago), zero new items, zero new blocks
+- ✅ **Usage monitoring** — Climbed from 88.9% to 89.7%, still within override window; hard throttle triggers at 90%
+- ✅ **Standby posture maintained** — All autonomous work complete, all blocks user-dependent, next event Monday 13:15 UTC
+
+### **Session Work Completed**
+- ✅ **Rapid state check** (2 min) — confirmed zero autonomous work, all blocks legitimate, INBOX empty
+- ✅ **Usage status logged** — 89.7% all-models, override active, approaching hard limit; standby correct posture
+
+### **Budget & Usage**
+- Usage: 89.7% All-models, OVERRIDE ACTIVE — **approaching 90% hard throttle**
+- No autonomous work warranted; standby is correct posture
+
+### **Standby Schedule (No Autonomous Work)**
+- **Current**: Saturday June 28 01:55 UTC (monitoring standby)
+- **Next event**: Monday June 29 13:15 UTC — Item 36 pre-market validation gates (5-min infrastructure check)
+- **Usage reset**: Tuesday 2026-06-30 00:00 UTC (~45h away)
+- **Hard throttle**: Triggers when usage reaches 90% (currently 89.7%, 0.3% remaining in override window)
+
+### **Next Session Actions**
+- If usage reaches 90% → move to hard idle (no autonomous work, accept BLOCKED resolutions only)
+- If user posts block Resolution → process immediately regardless of usage
+- If Monday 13:15 UTC arrives → execute Item 36 pre-market gates (5-min check, idling mode OK)
+- If Tuesday 00:00 UTC arrives → usage resets, all autonomous work resumed
+
+---
+
 ## Session 4358 (2026-06-28 01:35 UTC) — ORCHESTRATOR — ✅ **SATURDAY STANDBY CHECKPOINT; CONTINUOUS VERIFICATION THROUGH MONDAY PRE-MARKET**
 
 ### **Since Last Check-in (Session 4357 → 4358)**
