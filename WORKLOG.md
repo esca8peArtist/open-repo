@@ -1,3 +1,27 @@
+## Session 4480 (2026-06-28) — ITEM 26: career-training Phase 1 Analytics Pre-Configuration
+
+**Status**: ✅ COMPLETE
+
+**Deliverables written** (`projects/career-training/`):
+
+1. **PHASE_1_GOOGLE_ANALYTICS_SETUP.md** — GA4 property creation walkthrough; 5 custom events (module_view, case_study_click, email_signup_conversion, path_selection, navigation_depth); custom dimensions for user_segment/learning_path/module_number; GA4 Audience definitions as behavioral proxies for instructor/learner/contractor cohorts (since Kit tags cannot be passed to GA4 directly); conversion goal configuration; Jekyll head_custom.html snippet with production environment guard; Google Search Console setup.
+
+2. **PHASE_1_AB_TESTING_FRAMEWORK.md** — Three CTA variant hypotheses (control vs. "free library" vs. "get certified" vs. "join community"); two signup placement tests (bottom-of-page vs. above-fold vs. scroll-triggered modal); module CTA text test; no-code implementation via URL-parameter routing and JS variant swap for static GitHub Pages; decision rules (minimum 200 sessions per variant + 14 days; 20%+ lift threshold; loss-prevention stop rules); test sequence (CTA framing first, then placement, then module CTAs); GA4 Explorations query for test analysis.
+
+3. **PHASE_1_KIT_COM_INTEGRATION_SETUP.md** — Complete /docs/signup.md page template with 4 Kit embeds; post-subscribe redirect workflow (Kit → thank-you page → GA4 event fire, no backend); signup-thank-you.md with conversion event JavaScript; Kit automation spec (single automation with path-tag branching for free plan; Sequences workaround if branching blocked); automation smoke test procedure; webhook configuration notes (free plan status uncertain — workaround documented); Kit form CSS overrides for Just the Docs theme compatibility; pre-launch checklist.
+
+4. **PHASE_1_MONITORING_CHECKLIST.md** — Operationally executable day-by-day checklist for Weeks 1-4; specific GA4 report paths for each metric; numeric targets and concern thresholds; module popularity ranking procedure; funnel exploration configuration; mobile vs. desktop conversion analysis; email capture rate formula and benchmarks; Week 4 Go/No-Go decision framework for Phase 2 launch; ongoing daily check template.
+
+**Key decisions made**:
+- user_segment dimension uses GA4 Audiences (behavioral proxy) not Kit tag passthrough — static site cannot pass Kit data to GA4 without a backend
+- email_signup_conversion fires from thank-you page redirect (no backend, no webhook needed for Phase 1)
+- A/B test uses URL-parameter routing (not true random assignment) — acceptable at Phase 1 traffic volumes; documented the confounder
+- Kit API/webhook deferred to Phase 2 — Phase 1 measurement needs are covered by redirect + GA4 events
+
+**Files**: All 4 files in `projects/career-training/`
+
+---
+
 ## Session 4478 (2026-06-28 21:15 UTC) — EXPLORATION QUEUE REPLENISHMENT + ITEM 24-25 EXECUTION
 
 **Status**: ✅ **ACTIVE WORK EXECUTED** — All autonomous work from prior sessions identified as stalled. Added 3 new high-value Exploration Queue items (24-26) focused on pre-event preparation and pipeline acceleration. Executed Items 24-25 in parallel (resistance-research Phase 3 preview + seedwarden marketing system). Zero blockers hit; both items production-ready and committed.
