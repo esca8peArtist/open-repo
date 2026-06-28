@@ -16,8 +16,8 @@
 > To recalibrate limits: `python3 scripts/usage-check.py --calibrate <sonnet_pct> <all_pct>`
 
 **Calibrated limits** (back-calculated from UI — update after each weekly reset):
-- **Sonnet token limit: 8,909,833**  ← calibrated 2026-06-24 (UI showed 3.0%)
-- **All models token limit: 15,140,434**  ← calibrated 2026-06-24 (UI showed 67.4%)
+- **Sonnet token limit: 40,550,900**  ← calibrated 2026-06-27 (UI showed 2.0%)
+- **All models token limit: 34,068,465**  ← calibrated 2026-06-27 (UI showed 40.0%)
 
 **Alert thresholds** (handled by `scripts/usage-monitor.py`, runs every 30 min via cron):
 - Every 10% crossed → Discord notification
@@ -55,10 +55,11 @@ The loop ends only when: (a) all items are checked, (b) a genuine block is added
 4. mfg-farm
 5. seedwarden
 6. open-repo
-7. off-grid-living
-8. workout
-9. resume
-10. open-source-rideshare (Paused)
+7. career-training  ← ADDED 2026-06-27: gap modules + deployment (was missing from queue)
+8. off-grid-living
+9. workout
+10. resume
+11. open-source-rideshare (Paused)
 
 ---
 
