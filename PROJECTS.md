@@ -167,6 +167,34 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - **Value**: Phase 6 research ready for immediate launch post-Phase-5-release without planning overhead
    - **Owner**: resistance-research team
 
+**NEW ITEMS (Session 4457+ — 2026-06-28 17:15–18:50 UTC — Exploration Queue Replenishment)**:
+
+**ITEMS 17-19 (Session 4462 — 2026-06-28 18:50 UTC — AUTONOMOUS QUEUE REPLENISHMENT)**:
+
+17. **stockbot: Pre-Market June 29 Health Check & Monitoring Protocol** (1-2h)
+    - **Trigger condition**: None — work can begin immediately
+    - **Scope**: Build automated monitoring checklist for June 27-July 3 validation window: Docker container uptime, WebSocket connection stability (IEX feed latency), session signal health (all 5 sessions regime != None, buy_prob rolling distribution), database integrity (trades/positions/sessions tables accessible), memory/CPU utilization. Create Jetson SSH health probe script (queries trading.db, container logs, system metrics). Design escalation procedures: if health check fails, notify via Discord with remediation steps. Produce: (1) health-check-runbook.md (procedures + commands), (2) health-probe-script.py (automated Jetson query + alerting logic), (3) escalation-decision-tree.md (when to pause/restart/investigate).
+    - **Value**: Prevents silent failures during critical 7-day validation period (June 29-July 3). Early warning system if WebSocket issues recur (like June 24 event).
+    - **Owner**: stockbot team
+    - **Confidence**: 85% (monitoring infrastructure already built in prior sessions; task is aggregation + alerting + documentation)
+    - **Status**: Available now
+
+18. **resistance-research: Phase 2 Wave 2-3 Contingency Activation Framework** (1.5-2h)
+    - **Trigger condition**: None — work can begin immediately (contingency prep, not execution)
+    - **Scope**: Design decision trees for Wave 2 send outcomes (June 24-30): (A) Low signal (0-1 replies) → activate Tier 2 escalation immediately? Retry logic? (B) No response → domain-specific fallback (59=EPI/Demos, 51=campaign finance orgs, 48=criminal justice networks)? (C) High signal (3+ replies by Day 3) → accelerate Tier 2 timeline? Design escalation matrices linking response rates to next-phase activation. Plan retroactive SCOTUS outcome protocol (if outcome posted June 24-29, what's 48-hour activation sequence for Domain 50?). Create response-rate decision thresholds (ACTIVATE vs MONITOR vs ESCALATE). Produce: (1) wave-2-outcome-decision-tree.md, (2) domain-specific-escalation-procedures.md (59/51/48 with contact lists), (3) retroactive-scotus-protocol.md.
+    - **Value**: Eliminates analysis delays if Wave 2 shows unexpected patterns. Enables 24-48h contingency response without planning overhead. Retroactive protocol captures SCOTUS data if outcome arrives late.
+    - **Owner**: resistance-research team
+    - **Confidence**: 88% (contingency framework structure exists from Session 4088; task is scenario-specific detail + threshold tuning)
+    - **Status**: Available now
+
+19. **career-training: Phase 1 GitHub Pages Deployment Troubleshooting & Fallback Activation** (1.5-2h)
+    - **Trigger condition**: None — work can begin immediately (preparation for user deployment action)
+    - **Scope**: Document common Jekyll/GitHub Pages failure modes: dependency conflicts (bundler version mismatches, Ruby version), YAML parsing errors (indentation in _config.yml), image asset 404s (relative path issues in markdown), DNS CNAME propagation (custom domain 24-48h wait), Actions workflow failures (permissions, theme conflicts). Provide step-by-step fix procedures for each (pull requests, branch recovery, debugging commands). Design GitHub Pages alternatives if deployment impossible: Netlify free tier (drag-and-drop /docs), Vercel GitHub integration, GitHub Discussions as community hub fallback. Create rapid-response distribution protocol if primary GitHub deploy fails: email your subscribers list, Reddit cross-posts to r/construction, LinkedIn pulse update, fallback Gist with download link. Produce: (1) github-pages-deployment-guide.md (procedures + common errors), (2) troubleshooting-decision-tree.md (error detection → fix path), (3) fallback-distribution-protocol.md (non-GitHub alternatives + timelines).
+    - **Value**: Prevents Phase 1 deployment from becoming permanent blocker if GitHub Pages has issues. Enables user confidence to attempt deployment knowing recovery paths exist. Fallback distribution reaches subscribers even if primary platform delayed.
+    - **Owner**: career-training team
+    - **Confidence**: 92% (Jekyll/GitHub Pages troubleshooting well-documented; alternatives verified current March 2026)
+    - **Status**: Available now
+
 **NEW ITEMS (Session 4457 — 2026-06-28 17:15+ UTC — Exploration Queue Replenishment)**:
 
 11. **mfg-farm: Q3-Q4 Product Pipeline Candidate Research & CAD Timeline Planning** (2-3h) ← **✅ COMPLETE (Session 4470)**

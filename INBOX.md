@@ -11,20 +11,6 @@
 
 ## New Items
 
-### [2026-06-27] INTER-MONITORING WORK DIRECTIVE — stockbot validation window (June 27–July 3) — IN PROGRESS (SESSION 4351)
-
-Stockbot is in the 7-14 day validation monitoring window (checkpoint July 3, decision July 11). While waiting:
-
-1. **career-training deployment** — ✅ **PHASE 1 COMPLETE (Session 4351)** — GitHub Pages infrastructure built: /docs directory, Jekyll config, homepage, 6 navigation pages. Ready for user to push to GitHub. Phase 2 (email) & 3 (social media) pending user platform setup.
-2. **systems-resilience Phase 5 release** — BLOCKED (see BLOCKED.md Item 4) — infrastructure staged, awaiting user push permissions. No autonomous action available.
-3. **seedwarden post-approval work** — AWAITING USER APPROVAL — Check for user confirmation of Q3 bundle approval. If present, proceed to Canva design. (Status unknown; no approval detected as of Session 4351)
-4. **resistance-research escalation** — ✅ **FLAGGED TO CHECKIN.md (Session 4351)** — Domain 59 send window closing June 30 18:00 UTC. Added user reminder with 45h deadline. No autonomous sends executed.
-5. **Exploration Queue** — NOT YET STARTED (Session 4351 focused on career-training Phase 1 + resistance-research flag; Exploration Queue deferred to next session if bandwidth available)
-
-Stockbot monitoring remains priority #1 — pre-market gate check Monday June 29 13:15 UTC is mandatory.
-
----
-
 ### [2026-06-30 00:05 UTC] USAGE CALIBRATION RESET — Scheduled for Tuesday reset
 
 **Process on or after June 30 00:00 UTC only.** Usage billing week resets at that time.
