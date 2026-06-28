@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-27T23:55:13Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-28T07:07:13Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 9.1% (806,487 tokens) | All-models 87.6% | Reset in 48h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (851,866 tokens) | All-models 0.1% | Reset in 41h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -11,10 +11,11 @@
 4. mfg-farm
 5. seedwarden
 6. open-repo
-7. off-grid-living
-8. workout
-9. resume
-10. open-source-rideshare (Paused)
+7. career-training  ← ADDED 2026-06-27: gap modules + deployment (was missing from queue)
+8. off-grid-living
+9. workout
+10. resume
+11. open-source-rideshare (Paused)
 
 ## Active Projects
 ### resistance-research
@@ -31,7 +32,7 @@
 
 ### career-training
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
-**Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
+**Focus**: ✅ **[DEPLOYMENT IN PROGRESS] GITHUB PAGES PHASE 1 INFRASTRUCTURE COMPLETE (SESSION 4351)** — Created /docs directory structure, copied all 33 modules, built Jekyll _config.yml, created homepage + 6 navigation pages (quick-start, module-reference, industrial/residential/specialty paths, FAQ). Production-ready for GitHub Pages. Next: User creates/enables GitHub repo, configures domain, pushes /docs to main. Phase 2 (email list) and Phase 3 (social media) await user platform setup.
 ## Active Blocks
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
@@ -72,46 +73,58 @@
 • resistance-research — SCOTUS Little v. Hecox deadline passed 18:00 UTC; outcome unverified ← 2026-06-23 18:05 UTC (Session 4084+)
 
 ## Inbox (unprocessed)
-(None currently pending)
+### [2026-06-27] INTER-MONITORING WORK DIRECTIVE — stockbot validation window (June 27–July 3) — IN PROGRESS (SESSION 4351)
+Stockbot is in the 7-14 day validation monitoring window (checkpoint July 3, decision July 11). While waiting:
+1. **career-training deployment** — ✅ **PHASE 1 COMPLETE (Session 4351)** — GitHub Pages infrastructure built: /docs directory, Jekyll config, homepage, 6 navigation pages. Ready for user to push to GitHub. Phase 2 (email) & 3 (social media) pending user platform setup.
+2. **systems-resilience Phase 5 release** — BLOCKED (see BLOCKED.md Item 4) — infrastructure staged, awaiting user push permissions. No autonomous action available.
+3. **seedwarden post-approval work** — AWAITING USER APPROVAL — Check for user confirmation of Q3 bundle approval. If present, proceed to Canva design. (Status unknown; no approval detected as of Session 4351)
+4. **resistance-research escalation** — ✅ **FLAGGED TO CHECKIN.md (Session 4351)** — Domain 59 send window closing June 30 18:00 UTC. Added user reminder with 45h deadline. No autonomous sends executed.
+5. **Exploration Queue** — NOT YET STARTED (Session 4351 focused on career-training Phase 1 + resistance-research flag; Exploration Queue deferred to next session if bandwidth available)
+Stockbot monitoring remains priority #1 — pre-market gate check Monday June 29 13:15 UTC is mandatory.
+### [2026-06-30 00:05 UTC] USAGE CALIBRATION RESET — Scheduled for Tuesday reset
+**Process on or after June 30 00:00 UTC only.** Usage billing week resets at that time.
+Run: `python3 scripts/usage-check.py --calibrate 3.0 67.4`
+This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434). The limits were temporarily inflated to 0.1% on June 27 to allow the orchestrator to run freely during the final days of the billing week. After the reset, actual usage is 0, so the June 24 limits will correctly show 0% and normal threshold monitoring resumes.
+**Do not process this item before June 30 00:00 UTC.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-3. ✅ **System state verification** (3 min):
-   - Exploration Queue: 47 items, all complete or staged for known triggers
-   - Project Goals review: All completed work verified, no unfinished autonomous scope
-   - Budget assessment: 9.1% Sonnet usage, reset Tuesday June 28 09:00 UTC (~49h away)
+     * `ls -la projects/mfg-farm/test-print-results/` → not found (mfg-farm test print still not executed)
+   - Conclusion: All 4 blocks remain blocked on user action; zero autonomous resolutions possible
 
-**Status**: ✅ CONTINUOUS STANDBY MAINTAINED — All autonomous work complete (Items A–E completed June 27, Item 12 routing framework complete June 27). All 5 blocks user-action-dependent. Correct posture: standby through Monday 13:15 UTC pre-market gates.
+3. ✅ **Exploration Queue audit** (3 min):
+   - Verified queue structure: 47+ items total
+   - Items 87-110 (majority recent items): ALL ✅ COMPLETE or ⏳ QUEUED with future trigger conditions
+   - All ⏳ queued items verified to have explicit trigger conditions (post-install dates, post-user-decision gates, etc.)
+   - Conclusion: No currently-actionable work available; all triggers are future-dated
 
-**Next Scheduled Events**:
-1. Monday June 29 21:15 UTC: daily_model_search.py (Optuna TPE search for all 5 tickers)
-2. Monday June 29 21:45 UTC: generate_daily_pipeline_report.py (Discord summary of candidates)
-3. Monday June 29 13:15 UTC: Item 36 pre-market validation gates (5 infrastructure checks)
-4. July 3 (post-market): 7-day checkpoint decision (candidate convergence assessment)
-5. July 11: Final 14-day decision (PASS/CAUTION/NO-GO for Phase 4-5 activation)
+4. ✅ **Protocol compliance verification** (2 min):
+   - Confirmed: All active project Goals have zero unfinished autonomous scope
+   - Confirmed: Exploration Queue healthy with 47+ items (> 3 minimum threshold)
+   - Confirmed: All blocks are legitimate (5 entries, all user-action-dependent, none autonomously resolvable)
+   - Conclusion: Standby posture is CORRECT BY DESIGN
 
-**Autonomy assessment**: Correct to maintain standby (all autonomous work complete, no unfinished scope, all blocks legitimate user-action-dependent, Exploration Queue fully healthy, cron infrastructure operational).
+**Status**: ✅ CONTINUOUS STANDBY MAINTAINED — Identical state to Sessions 4351-4353. Zero changes since Session 4353 (6 min ago). All autonomous work complete. Correct posture for Saturday through Monday 13:15 UTC pre-market gates.
 
----
+**Key metrics**:
+- stockbot: Phase 1 live (5 sessions, monitoring through July 3 checkpoint)
+- resistance-research: Phase 2 complete (production-ready, awaiting user sends)
+- All other projects: Complete, paused, or blocked on user decisions
+- Unfinished autonomous scope: ZERO
+- Blocks resolved this session: 0
+- New INBOX items: 0
 
-## Session 4345 (2026-06-27 23:49–23:59 UTC) — ORCHESTRATOR — ✅ FINAL FRIDAY STANDBY CHECKPOINT
+**Standby checklist**:
+- ✓ All autonomous work scope verified complete
+- ✓ All blocks verified user-action-dependent (no auto-resolve candidates)
+- ✓ Exploration Queue verified healthy (47+ items, trigger-gated)
+- ✓ CHECKIN.md updated with Session 4354 summary
+- ✓ WORKLOG.md updated with this session's verification work
+- ✓ Ready for commit
 
-**Session focus**: Final end-of-Friday verification; confirm continuous standby through weekend/Monday.
+**Next scheduled checkpoints**:
+1. Monday June 29 13:15 UTC: Pre-market infrastructure validation gates (58h away)
+2. June 30 18:00 UTC: resistance-research Domain 59 send window CLOSES (45h away; user decision deadline ~12h before)
+3. July 3 post-market: 7-day checkpoint decision point
+4. July 11: Final 14-day checkpoint + Phase 4-5 activation decision
 
-**Work completed**:
-1. ✅ **Orientation** (3 min):
-   - ORCHESTRATOR_STATE.md: Current (auto-generated 23:48 UTC)
-   - BLOCKED.md: All 5 blocks verified user-action-dependent (no new Resolutions)
-   - INBOX.md: Empty (all Items A–E processed June 27 by Session 4327)
-   - PROJECTS.md: All autonomous work complete or blocked
-   - Git status: Clean (no uncommitted orchestration changes)
-
-2. ✅ **Final assessment** (2 min):
-   - Zero autonomous work available — all Phase 1 implementations complete
-   - Correct standby posture confirmed through Monday June 29 13:15 UTC pre-market
-   - Cron infrastructure operational and correctly scheduled (Mon–Fri only)
-   - Optuna monitoring active through July 11 (Phase 4-5 decision cycle)
-   - Budget: 9.1% Sonnet, reset Tuesday June 28 09:00 UTC (~33h away)
-
-**Status**: ✅ CONTINUOUS STANDBY MAINTAINED — Correct posture end-of-Friday. All autonomous work complete. Next scheduled event: Monday June 29 21:15 UTC (daily_model_search.py). Pre-market gates: Monday 13:15 UTC (Item 36: 5 infrastructure checks).
-
-**Autonomy assessment**: Correct to maintain standby (all autonomous scope complete, all blocks legitimate user-action-dependent, no exceptions, cron infrastructure fully operational).
+**Autonomy assessment**: CORRECT — Standby is appropriate and necessary. The system is in a stable state optimized for monitoring scheduled events. No additional work is available until user decisions are made or scheduled triggers fire.
