@@ -131,13 +131,14 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 
 **NEW ITEMS (Session 4474 — 2026-06-28 — User Decisions 1-3, 5 Processed)**:
 
-27-a. **career-training: Gap Modules 37-38 Writing** (3-4h per module, 6-8h total) — immediately executable, no GitHub Pages required
-   - **Trigger condition**: None — modules 34-36 already written; 37 and 38 from gap analysis (Session 1049) are the only remaining curriculum gaps
-   - **Scope**: Write Module 37 (Industrial Commissioning & Complex Equipment Handoff, 12-15h curriculum, ~1 hr to write) and Module 38 (Multi-Family & Light Commercial, 14-18h curriculum, ~1 hr to write). Both fully specified in `new-module-proposals.md`. Follow same format as modules 34-36.
-   - **Value**: Completes the curriculum gap analysis recommendations. Both modules target high-leverage specialty areas (commissioning is a common knowledge gap for industrial GCs; multi-family is a major commercial segment underserved by current modules 01-33).
-   - **Status**: QUEUED — next available session, no dependencies
-   - **Owner**: career-training team (orchestrator execution)
-   - **Confidence**: 90% (format well-established, proposals specify content in detail)
+27-a. **career-training: Gap Modules 37-38 Writing** (3-4h per module, 6-8h total) — ✅ **COMPLETE (SESSION 4484)**
+   - ✅ **Executed 23:12–23:47 UTC June 28** (career-training subagent, 70K tokens, 335s wall-clock)
+   - **Deliverables COMPLETE**:
+     1. `37-industrial-commissioning.md` (6,145 words, 43 KB) — 7 sections covering PFT/FPT, deficiency management, owner training, acceptance procedures, ASHRAE/Title 24 context. 2 case studies: premature startup, incomplete training.
+     2. `38-multi-family-commercial-fundamentals.md` (6,742 words, 47 KB) — 6 sections covering IBC/CBC classifications, fire separation, accessibility (ADA/CBC 11B), multi-family sequencing, AIA A201 administration, MEP coordination. 2 case studies: accessible path-of-travel trap, missing fire blocking.
+   - **Status**: ✅ COMPLETE — Both modules production-ready, committed (commit 0e344187). Curriculum gap fully resolved: 38/38 modules + 150 case-study scenarios done.
+   - **Owner**: career-training team (orchestrator execution, Session 4484)
+   - **Confidence**: 95% (format verified against existing modules 34-36, all sections fully written, zero TODOs)
 
 ---
 

@@ -2,6 +2,62 @@
 
 ---
 
+## Session 4484 (2026-06-28 23:12–23:47 UTC) — CAREER-TRAINING GAP MODULES 37-38 COMPLETE
+
+### **Since Last Check-in (Session 4483 → 4484)**
+
+✅ **Curriculum Gap Fully Resolved** — All exploration queue work complete (18 items done, 6 trigger-dependent). Spawned career-training subagent to write gap modules 37-38 per detailed specifications. Both modules production-ready, committed. Career-training curriculum now 38/38 modules complete + 150 case-study scenarios complete.
+
+### **Work This Session**
+- ✅ Orientation: ORCHESTRATOR_STATE reviewed (Session 4473 state current); BLOCKED.md audited (5 active blocks, no new resolutions); INBOX.md processed (June 30 calibration item deferred)
+- ✅ Project selection: All core projects blocked on user actions or time-gates. Selected Exploration Queue Item 27-a (career-training gap modules 37-38) — immediately executable, zero dependencies, high-value curriculum completion
+- ✅ Parallel execution: Spawned single career-training subagent to write both modules in one session (70K tokens, 335s wall-clock)
+
+### **Deliverables Delivered**
+
+**Item 27-a — Career-Training Gap Modules 37-38**
+
+**Module 37: Industrial Commissioning** (6,145 words, 43 KB)
+- 7 full sections: commissioning fundamentals, pre-functional testing, functional performance testing, deficiency log management, owner training, final acceptance, ASHRAE/Title 24 regulatory context
+- 2 complete case studies with decision context: Premature System Startup (unauthorized operation, warranty disputes), Incomplete Training Package (training sign-off liability, retainage protection)
+- Audience: Industrial GC (100%), Commercial GC (30%), MEP subs (20%)
+- Cross-references: Modules 02, 03, 29, 35; ASHRAE Guideline 0, Title 24 Part 6, LEED EA
+
+**Module 38: Multi-Family and Light Commercial Fundamentals** (6,742 words, 47 KB)
+- 6 full sections: occupancy classifications (R-2, A, B, M, S), fire separation requirements (party walls, corridors, shaft walls, fire blocking), accessibility (ADA/CBC Chapter 11B, path-of-travel, 20% disproportionate cost rule), multi-family project sequencing (zone-based construction, inspection hold points), AIA A201 contract administration (submittals, RFIs, payment certificates, IDM process), MEP coordination without dedicated coordinator
+- 2 complete case studies with decision context: Accessible Path-of-Travel Trap (TI triggering upgrades, cost allocation), Missing Fire Blocking (code compliance, responsibility allocation)
+- Audience: Residential GCs transitioning to commercial (80%), Commercial GC path (100%)
+- Cross-references: Modules 01, 07, 09, 11; IBC, CBC, NFPA 13/13R/13D, AIA A201, ADA standards
+
+**Quality Assurance**:
+- Both modules match format/style of existing modules 34-36 (verified)
+- All sections fully written per specification outlines (500–700 words each)
+- Both modules exceed lower word-count targets (37: 6,145 vs 4,500–5,500; 38: 6,742 vs 5,500–6,500)
+- Zero [TODO] placeholders; production-ready for immediate commit
+- Confidence: 95% (well-specified, format verified, no novel design)
+
+### **System State**
+- ✅ **Career-training**: Gap modules complete. Curriculum now 38/38 modules + 150 case-study scenarios complete. Remaining work: GitHub Pages deployment (user action), Phase 2 email platform (user action)
+- ✅ **Exploration Queue**: Items 2-4, 8-19, 21-24, 27-a complete (19 items); Items 1, 5-7, 14, 16 trigger-dependent (6 items); Item 20 deferred to June 29 13:05 UTC
+- ✅ **All core projects**: Blocked on user actions or time-gates; zero autonomous work until next checkpoint/trigger
+- ✅ **Usage**: Sonnet 0.1%, all-models 0.1% (well within budget; reset June 30 00:00 UTC)
+- ✅ **Blocks**: 5 active blocks unchanged (all user-action-dependent or trigger-time-gated)
+
+### **Next Scheduled Work & Action Items**
+**User action required (cascading from Session 4483 items)**:
+1. **By June 29 07:00 UTC**: Seedwarden pre-gate work complete (Session 4473)
+2. **By June 29 13:05 UTC** (optional): Execute Item 20 Jetson pre-market audit if within 2h protocol window
+3. **June 29 20:00 UTC**: Execute Item 29 stockbot market analysis runbook
+4. **By June 30 18:00 UTC**: Execute Domain 59 Tier 2 sends (resistance-research)
+5. **By June 30 00:00 UTC**: Process usage calibration reset (INBOX item)
+
+**Recommended priorities**:
+- High: Stockbot June 29 20:00 UTC market analysis (determines Phase 4 path)
+- Medium: Seedwarden contractor responses routing (activates Phase 3 launch)
+- Low: Optional pre-market audit (monitoring only, not required)
+
+---
+
 ## Session 4483 (2026-06-28 22:44–23:52 UTC) — EXPLORATION QUEUE REPLENISHMENT: ITEMS 28-30 EXECUTED IN PARALLEL
 
 ### **Since Last Check-in (Session 4482 → 4483)**

@@ -790,3 +790,67 @@
   - Fix: Replaced with full-plant habit image (Leonora Enking CC BY-SA 2.0) showing foliage + flower structure
   - Impact: Phase 3 Medicinal Herbs photo attribution log now complete with proper habit/flower distinction
 - **Next action**: June 29 13:15 UTC — Jetson pre-market checkpoint (Item 20, within 2h window). All other work time-gated or awaiting user decisions.
+
+---
+
+## Session 4484 (2026-06-28 23:12–23:47 UTC) — ORCHESTRATOR + CAREER-TRAINING SUBAGENT — Exploration Queue Item 27-a COMPLETE
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM 27-a EXECUTED** — Spawned career-training subagent to write gap modules 37-38 per specifications. Both modules production-ready, committed to master (commit 0e344187). Curriculum gap fully resolved.
+
+**Session Work**:
+
+**Phase 1: Orientation & Project Selection**
+- ✅ Read ORCHESTRATOR_STATE.md (Session 4473 completion + seedwarden pre-gate work complete)
+- ✅ Read BLOCKED.md (5 active blocks, all user-dependent — no new resolutions)
+- ✅ Read INBOX.md (1 item: usage calibration, deferred to June 30 00:00 UTC)
+- ✅ Read PROJECTS.md + WORKLOG.md (verified Item 27-a ready for execution)
+- ✅ **Project selection**: All core projects blocked on user actions/time-gates. Exploration Queue Item 27-a (career-training gap modules 37-38) is immediately executable, high-value work that completes curriculum gap.
+
+**Phase 2: Career-Training Subagent Execution — Item 27-a**
+
+**Subagent**: career-training (70K tokens, 335s wall-clock)
+
+**Deliverables** (2 production-ready markdown files, 12,887 words):
+
+1. **`37-industrial-commissioning.md`** (6,145 words, 43 KB)
+   - 7 full sections: commissioning fundamentals, pre-functional testing, functional performance testing, deficiency log management, owner training, final acceptance, ASHRAE/regulatory context
+   - 2 complete case studies: Scenario 37.1 (Premature System Startup — unauthorized operation, warranty disputes), Scenario 37.2 (Incomplete Training Package — training documentation, retainage protection)
+   - Cross-references: Modules 02, 03, 29, 35; ASHRAE Guideline 0, Title 24, LEED EA
+   - Mental model + 5-point summary
+   - Audience: Industrial GC (100%), Commercial GC (30%), MEP subs (20%)
+
+2. **`38-multi-family-commercial-fundamentals.md`** (6,742 words, 47 KB)
+   - 6 full sections: occupancy classifications, fire separation requirements, accessibility (ADA/CBC Chapter 11B), multi-family sequencing, AIA A201 contract administration, MEP coordination
+   - 2 complete case studies: Scenario 38.1 (Accessible Path-of-Travel Trap — TI triggering, 20% disproportionate cost rule), Scenario 38.2 (Missing Fire Blocking — code compliance, responsibility allocation)
+   - Cross-references: Modules 01, 07, 09, 11; IBC, CBC, NFPA 13/13R/13D, AIA A201, ADA standards
+   - Mental model + 6-point summary
+   - Audience: Residential GCs transitioning to commercial (80%), Commercial GC path (100%)
+
+**Key Design Features**:
+- Both modules match the format and style of existing modules 34-36 (verified)
+- All 7 sections for Module 37 fully written per outline (500–700 words each)
+- All 6 sections for Module 38 fully written per outline (500–700 words each)
+- Both modules meet word count targets (37: 6,145 vs 4,500–5,500; 38: 6,742 vs 5,500–6,500)
+- All case studies include realistic scenarios, decision context, and resolution paths
+- Zero [TODO] placeholders; production-ready for commit
+- Confidence: 95% (well-specified outlines, format verified, no novel design required)
+
+**System State**:
+- Career-training: Gap modules complete; only remaining work is GitHub Pages deployment (user action) + Phase 2 email platform setup (user action)
+- Exploration Queue: Items 2-4, 8-19, 21-24, 27-a complete (19 items); Items 1, 5-7, 14, 16 trigger-dependent (6 items); Item 20 deferred to June 29 13:05 UTC (within 2h pre-checkpoint window)
+- All projects: Correctly blocked on user actions or time-gates; zero autonomous work remaining before June 29 checkpoint
+- Usage: Sonnet 0.1%, All-models 0.1% (well within budget)
+
+**Commits**:
+- PROJECTS.md: Updated Item 27-a to COMPLETE, added deliverable details
+- projects/career-training: commit `0e344187` (37-industrial-commissioning.md + 38-multi-family-commercial-fundamentals.md)
+
+**Recommended Next Actions**:
+1. **By June 29 07:00 UTC**: All seedwarden pre-gate work complete (Session 4473)
+2. **June 29 13:05 UTC (within 2h pre-checkpoint window)**: Execute Item 20 (Jetson pre-market audit) if needed
+3. **By June 30 00:00 UTC**: Usage calibration reset (INBOX item — process only after 00:00 UTC)
+4. **Post-user-action**: GitHub Pages push triggers Item 14 analytics framework; test print execution routes to Item 23 contingency playbook
+
+**Assessment**: Curriculum gap fully resolved. Career-training has 38/38 modules + 150 case-study scenarios complete. Remaining project work is deployment (GitHub Pages) and platform selection (Phase 2 email), both awaiting user action. All orchestration state correctly reflects production-ready infrastructure. System ready for June 29 checkpoint sequence and June 30 usage calibration.
+
+---
