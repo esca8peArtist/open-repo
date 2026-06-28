@@ -4,6 +4,29 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 28 — Seedwarden Contractor Selection & Onboarding Automation — June 28, 2026
+
+**Session**: June 28, 2026
+**Task**: Build 3 production-ready onboarding automation deliverables for Phase 3 medicinal herbs contractor team. Contractor responses due June 28 EOD; automation playbooks needed before June 29 response routing decisions.
+
+**Status**: COMPLETE — 3 files written to projects/seedwarden/
+
+**Deliverables**:
+1. **CONTRACTOR_ONBOARDING_AUTOMATION_LOGIC.md** — Full decision automation for ACCEPT / CONDITIONAL / ESCALATE response routing. Per-track onboarding paths (photographers: shot list, Etsy attribution, session specs; writers: bundle/species clarification, word count reminders, FTC enforcement; habitat specialists: field schedule, permission forms, source citation protocol). Weekly sync cadence (Mondays 14:00–15:00 UTC full team; Thursdays 13:00–15:30 UTC per specialty). Payment automation specs: M1–M4 milestone dates (July 1, 8, 15, 27), per-milestone execution checklist, international payment protocol, dispute/withholding procedure.
+2. **WEEK_1_ONBOARDING_CHECKLIST.md** — Day-by-day onboarding execution from Day 1 (June 29 or 30 upon confirmation) through Day 7 (full team kick-off). Day 1: welcome email, Slack/Google Drive/Dropbox access, onboarding kit delivery per track. Day 2: 15-min check-in calls (track-specific clarification agenda). Days 3–5: first sample submission gate — photographers 2+ images, writers 1,200+ words drafted, specialists 3+ annotated comments. Day 7: full team kick-off call (agenda fixed, 45–60 min). Success criteria: first samples by Day 5 EOD. Escalation triggers: no response by July 1 → activate backup + notify user.
+3. **PHASE_3_LAUNCH_CONTINGENCY_ROUTING.md** — Four-scenario routing: best-case (3–5 ACCEPT → July 13 finish), moderate-case (2–3 ACCEPT + CONDITIONAL resolving June 30 → July 15–17), worst-case (1–2 ACCEPT only + Toptal/Upwork fill → July 20+), no-go (zero ACCEPT → solo fallback → October 2026). Kill-switch criteria: <50% essential roles (1+ photographer + 1+ writer) confirmed by July 5 AND Toptal/Upwork search exhausted AND solo not viable → pause Phase 3 to Q4 restart October 1. Full routing flowchart with copy-ready WORKLOG entry and user notification templates per scenario.
+
+**Key design decisions**:
+- All 3 files aligned to adjusted sprint start (June 29, not June 22 — the slip has already happened)
+- Toptal is the primary ESCALATE Step 1 resource (48–72hr match turnaround means July 1–2 match if intake submitted June 28–29)
+- Solo fallback runs in parallel with contractor search in Scenarios 3 and 4 — no lag day if contractor drops
+- Kill-switch is a user-decision gate, not an automatic trigger — condition check fires July 5, decision is the user's
+- Payment milestone dates (July 1, 8, 15, 27) align to bundle upload schedule so contractor payments and listing launches stay synchronized
+
+**Confidence**: 90% — based on PHASE_3_CONTRACTOR_DECISION_TREE.md (original go/no-go logic), PHASE_3_SOLO_FALLBACK_ARCHITECTURE.md (cascade logic), PHASE_3_CONTRACTOR_ONBOARDING_WORKFLOW.md (6-phase lifecycle), PHASE_3_CONTRACTOR_ONBOARDING_INTEGRATION_CHECKLIST.md (Item 25 integration checklist)
+
+---
+
 ## Item 132 — Exploration Queue Item 13: Phase 3 Bundle Content Deep Validation & Contractor Scope Audit — June 28, 2026
 
 **Session**: June 28, 2026
