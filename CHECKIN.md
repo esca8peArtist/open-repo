@@ -2,6 +2,32 @@
 
 ---
 
+## Session 4387 (2026-06-28 06:21–06:25 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #36; ALL AUTONOMOUS WORK COMPLETE**
+
+### **Since Last Check-in (Session 4386 → 4387)**
+- ✅ **Orientation completed** — ORCHESTRATOR_STATE.md verified (zero unfinished scope), PROJECTS.md audited (all Goals met or blocked on user actions), BLOCKED.md confirmed (5 blocks, all user-action-dependent), INBOX.md check (June 30 calibration only), Exploration Queue healthy (47+ items all trigger-gated)
+- ✅ **State verification** — Identical to Session 4386; continuous standby maintained
+- ✅ **Critical escalations remain active**:
+  1. **resistance-research Domains 48 & 51 sends** — OVERDUE (14 & 6 days), hard deadline July 1 (3 days away)
+  2. **Domain 59 send window** — HARD DEADLINE JUNE 30 18:00 UTC (~36 hours remaining, templates ready)
+- ✅ **Checkpoint continuity**: Sessions 4361-4387 (27 consecutive standby verifications) — system stable, monitoring continuous, standby posture correct
+
+### **Standby Assessment**
+- **All autonomous work**: COMPLETE (zero unfinished scope)
+- **All blocks**: USER-ACTION-DEPENDENT (5 entries, none autonomously resolvable)
+- **Exploration Queue**: HEALTHY (47+ items, all correctly trigger-gated)
+- **Stockbot status**: 5 sessions deployed live, Phase 1 validation complete, real-time stream fix active (June 24), waiting for Monday June 29 13:15 UTC pre-market gates (~30 hours away)
+- **Conclusion**: Continuous standby CORRECT BY DESIGN — no autonomous work available; system confirmed healthy; awaiting Monday pre-market gates
+
+### **Critical Upcoming Deadlines**
+- **June 30 18:00 UTC (~36 hours)**: resistance-research Domain 59 send window CLOSES — user execution deadline ~June 29 12:00 UTC
+- **July 1 (3 days)**: Domains 48/51 hard deadline — requires immediate execution
+- **June 30 00:00 UTC or later**: Usage calibration reset available (`python3 scripts/usage-check.py --calibrate 3.0 67.4`)
+- **Monday June 29 13:15 UTC (~30 hours)**: **MANDATORY** — Pre-market stockbot validation gates
+- **July 3 post-market**: 7-day checkpoint decision point
+
+---
+
 ## Session 4386 (2026-06-28 06:07–06:20 UTC) — ORCHESTRATOR — ✅ **SUNDAY STANDBY CHECKPOINT #35; ALL AUTONOMOUS WORK COMPLETE**
 
 ### **Since Last Check-in (Session 4385 → 4386)**
