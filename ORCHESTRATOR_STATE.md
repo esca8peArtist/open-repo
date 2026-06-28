@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-28T20:54:24Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-28T23:53:25Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (902,514 tokens) | All-models 0.1% | Reset in 27h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (1,059,952 tokens) | All-models 0.1% | Reset in 24h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -20,11 +20,19 @@
 ## Active Projects
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
-**Focus**: ✅ **[RESOLVED] PHASE 2 WAVE 1-2 + PHASE 3 SOURCE STAGING COMPLETE (JUNE 23 18:30 UTC)** — **PHASE 2 STATUS**: SCOTUS execution window hard-closed 18:00 UTC (user never verified outcome); all Phase 2 rapid-response infrastructure remains production-ready for retroactive execution if user posts outcome post-deadline. **Autonomous Phase 2 work**: ZERO. **User action ready**: (1) T+7 inbox monitoring + signal classification (June 23-25), (2) Domain 59 Tier 2 sends (EPI/Demos/NELP, June 25-30), ( … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[RESOLVED] PHASE 2 WAVE 1-2 + PHASE 3 SOURCE STAGING COMPLETE (JUNE 23 18:30 UTC)** — **PHASE 2 DISTRIBUTION: READY FOR EXECUTION** (Session 4485 verified). **CRITICAL URGENCY**: (1) **Domain 51 send 14 days overdue, July 1 deadline (3 days away)** — CLC + Issue One templates complete, Gists live, contact list verified. California Fair Elections Act integration window closing. (2) **Domain 48 send 10 days overdue** — Sentencing Project + PPI templates ready, July 15 deadline gives 17 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[DEPLOYMENT COMPLETE] REAL-TIME STREAM FIX DEPLOYED 2026-06-24** — Root cause: aggressive `asyncio.wait_for(timeout=300)` wrapper forcefully closed WebSocket every 5 minutes. Fix: removed timeout wrapper, stream now reconnects naturally on Alpaca direction without forced closure (commit d4b675ba). All 5 sessions healthy (jpm_ridge_wf, amzn/aapl/msft/nvda lgbm_ho), WebSocket registered, real-time IEX stream active. **✅ [OPENSPECS COMPLETE] SESSION 4325 — BOTH PHASE 1 IMPLEMENTATIONS D … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[DEPLOYMENT COMPLETE] REAL-TIME STREAM FIX DEPLOYED 2026-06-24** — Root cause: aggressive `asyncio.wait_for(timeout=300)` wrapper forcefully closed WebSocket every 5 minutes. Fix: removed timeout wrapper, stream now reconnects naturally on Alpaca direction without forced closure (commit d4b675ba). All 5 sessions healthy (jpm_ridge_wf, amzn/aapl/msft/nvda lgbm_ho), WebSocket registered, real-time IEX stream active. **✅ [OPENSPECS COMPLETE] SESSION 4485 VERIFIED** — **(1) LIVE_MONITORI … *(truncated — prune Current focus in PROJECTS.md)*
+
+### open-repo
+**Status**: Active — GitHub Pages approach; no Pi server deployment
+**Focus**: **[RESOLVED — SCHEMA DOCUMENTATION PRODUCTION-READY (Session 4485)]** — **Code verdict**: ✅ MERGE-READY (all 51 ZIM tests passing, Phase 5 complete). **Platform decision**: User rejected Pi server deployment (2026-06-28, Decision 1). No Nextcloud/Matrix or Discourse on raspby1. Content will go to GitHub Pages / GitHub public hosting. Pi stays free for orchestration. **Schema Documentation Complete** (Session 4485): `SCHEMA_DOCUMENTATION.md` (879 lines, 10 comprehensive sections) production … *(truncated — prune Current focus in PROJECTS.md)*
+
+### systems-resilience
+**Status**: Active — GitHub Pages approach; no Pi server deployment; Phase 6 Domain A research complete
+**Focus**: **[ACTIVE — GITHUB PAGES PATH; PHASE 6 DOMAIN A RESEARCH COMPLETE]** — Platform decision resolved (2026-06-28, Decisions 1-2): User rejected Pi hosting, Nextcloud/Matrix, and Discourse. All content (Phase 5.1 corpus 61,611 words, Phase 6 Domain A) will go to GitHub Pages / public GitHub. **Phase 6 Domain A status**: Research complete and production-ready — content doc 6,800 words/38 citations (May 27), 18 author recruitment targets verified (June 1), 10-vendor platform analysis (June 3). P … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -32,7 +40,7 @@
 
 ### career-training
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
-**Focus**: ✅ **[DEPLOYMENT IN PROGRESS] GITHUB PAGES PHASE 1 INFRASTRUCTURE COMPLETE (SESSION 4351)** — Created /docs directory structure, copied all 33 modules, built Jekyll _config.yml, created homepage + 6 navigation pages (quick-start, module-reference, industrial/residential/specialty paths, FAQ). Production-ready for GitHub Pages. Next: User creates/enables GitHub repo, configures domain, pushes /docs to main. Phase 2 (email list) and Phase 3 (social media) await user platform setup.
+**Focus**: ✅ **[DEPLOYMENT IN PROGRESS + GAP MODULES QUEUED]** — Phase 1 infrastructure complete (SESSION 4351): /docs directory, Jekyll _config.yml, homepage + 6 navigation pages. Production-ready for GitHub Pages. **User action needed**: Create/enable GitHub repo, push /docs to main. Phase 2 (email list) and Phase 3 (social media) await user platform setup. **Autonomous work available**: Modules 37 (Industrial Commissioning & Complex Equipment Handoff) and 38 (Multi-Family & Light Commercial) from th … *(truncated — prune Current focus in PROJECTS.md)*
 ## Active Blocks
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
@@ -56,21 +64,20 @@
 **Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
 **Resolution**: [leave blank]
 ---
-### open-repo — June 12 deployment never executed; infrastructure missing on raspby1
-**Date blocked**: 2026-06-16 (discovered in Session 3671 audit)
-**Original failure date**: 2026-06-12 (deployment date when nothing occurred)
-**Context**: The June 12 deployment was incorrectly marked as "resolved" in Session 2995, which only clarified the start time (09:00 UTC). The actual deployment never executed. **AUDIT VERIFIED (Session 3682, 15:50–16:45 UTC)** — Three production-ready audit documents confirm deployment DID NOT execute:
-- DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines): Verified 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000 (connection refused); confidence 99%
-- POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines): 6 prioritized blockers identified; root cause = platform/runtime decision expired June 15 23:59 UTC with no user response
-- DEPLOYMENT_JUNE_12_OUTCOME_VERIFICATION.md (204 lines, Session 3770): 0/6 infrastructure checks pass; Docker completely empty; no Nginx, PostgreSQL, API runtime, TLS certs; all endpoints return HTTP 000; confidence 99%
-- POST_DEPLOYMENT_ISSUES_ASSESSMENT.md (127 lines, Session 3770): Root cause identified — ISSUE-3: raspby1 host platform/runtime decision (Docker vs systemd) with deadline June 15 23:59 UTC expired, no user response. Blocks both open-repo AND systems-resilience Phase 5.1 simultaneously.
+### systems-resilience — Phase 5 GitHub release requires maintainer push permissions
+**Date blocked**: 2026-06-27
+**Context**: Phase 5 Wave 1+2 integrated corpus (45,380 words, 6 files) was prepared for GitHub release publication as v5.0-wave-1-2-production. June 1 auto-fallback prepared all release content (integrated corpus, 5 individual Wave docs, comprehensive release notes) but did not execute the final GitHub publish action. Investigation (Session 4327, orchestrator INBOX Item D) confirmed: all release artifacts are production-ready and staged, but the GitHub account currently in use (esca8peArtist) lacks push permissions to the SuperClaude-Org/SuperClaude_Framework repository. The maintainer account with write access must execute the final GitHub tag + release creation steps. All content verified ready (integrated corpus 45,380 words, 6 release files, comprehensive release notes with Phase 6 roadmap).
+**What I need**: Maintainer account to execute: (1) `git tag v5.0-wave-1-2-production`, (2) `git push origin v5.0-wave-1-2-production`, (3) `gh release create v5.0-wave-1-2-production` with the prepared release notes and asset files (command template + asset paths available in `/tmp/PHASE_5_RELEASE_EXECUTION_SUMMARY.md`).
+**Verify with**: `gh release view v5.0-wave-1-2-production` — should return release title "Systems Resilience Phase 5 Waves 1+2 — Community Resilience Framework" + 6 asset files (integrated corpus + 5 Wave docs)
+**Resolution**: [awaiting user maintainer action to execute GitHub release push — all content production-ready, no code dependencies]
+---
 
 ## Recently Resolved (last 5)
+• open-repo — June 12 deployment never executed; platform decision resolved by user ← 2026-06-28 (Session 4474 — user decision)
+• systems-resilience — Phase 5.1 platform deployment blocking June 9 publication ← 2026-06-28 (Session 4474 — user decision)
 • Usage limits — weekly calibration reminder ← 2026-06-25 00:46 UTC (Session 4247 — orchestrator autonomous resolution)
 • stockbot — CRITICAL: Phase 1 validation failure (13:30–13:40 UTC) — real-time stream NOT initialized, sessions timing out ← 2026-06-24 14:00 UTC (Session 4186, orchestrator orientation)
 • stockbot — CRITICAL: Container API startup was blocked by missing alembic.ini volume mount ← 2026-06-24 09:48 UTC (Session 4160 — orchestrator autonomous fix + verification)
-• stockbot — HMM regime initialization NameError (undefined close_prices variable) ← 2026-06-23 21:22 UTC (Session 4092 — orchestrator autonomous fix + deploy)
-• resistance-research — SCOTUS Little v. Hecox deadline passed 18:00 UTC; outcome unverified ← 2026-06-23 18:05 UTC (Session 4084+)
 
 ## Inbox (unprocessed)
 ### [2026-06-30 00:05 UTC] USAGE CALIBRATION RESET — Scheduled for Tuesday reset
@@ -80,43 +87,43 @@ This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434)
 **Do not process this item before June 30 00:00 UTC.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  - KIT_ACCOUNT_SETUP_CHECKLIST.md: Dashboard map, API key location, feature audit
-  - WELCOME_SEQUENCE_DRAFT.md: 3 production-ready emails based on Module 14
-  - EMAIL_DELIVERABILITY_TEST_RESULTS.md: Pre-execution research + test protocol + known limitations flagged
-  - **Critical finding**: Conditional branching likely restricted to paid Creator plan; flagged for user awareness
-  - Value: De-risks Phase 2 email platform before user GitHub Pages deployment
+### Agent 3: Open-Repo Schema Documentation
 
-- ✅ **Item 23** (mfg-farm) — Test print contingency COMPLETE (commit `f14f9d01`)
-  - TEST_PRINT_CONTINGENCY_DECISION_TREE.md: Post-print routing (measure gap, classify failure, execute fix)
-  - SNAP_ARM_CAD_MODIFICATION_PROCEDURES.md: Single-parameter edits (30-60s changes, no design work)
-  - MATERIAL_SUBSTITUTION_PROTOCOL.md: Thermal profiles (PLA+/PETG/ABS), cost, diagnostic flowchart
-  - Value: If test print fails, user has instant iteration playbook (2-3 day cycle vs 5-7 day redesign cycle)
+**Subagent**: claude (81K tokens, 256s)
 
-**Parallel Execution Summary**:
-- 3 agents in parallel: 20:00–20:12 UTC (12 minutes wall-clock)
-- 181,920 subagent tokens total (resistance-research 65K, career-training 62K, mfg-farm 54K)
-- 3 commits to master: `31e61f15`, `f74b8f93`, `f14f9d01`
-- 9 new files created (3 per item)
-- All files production-ready; 0 [TODO] placeholders
+**Executed Tasks**:
+1. **Work scope identification** — Reviewed open-repo project structure (PROJECTS.md confirmed GitHub Pages approach, all 51 ZIM tests passing). Identified highest-ROI autonomous work: schema documentation for API consumers, federation partners, content contributors.
+2. **Schema documentation production** — Wrote production-ready `SCHEMA_DOCUMENTATION.md` (879 lines, 10 comprehensive sections):
+   - Database Schema: 10 tables (ContentItem, Endorsement, Contribution, ReviewerQueueItem, FeedbackContribution, FederationPartner, Activity, FederationConflict, NodePublicKey, ZimExport) with full column specs, types, constraints, sample data
+   - API Schema: Request/response Pydantic models for all endpoints (POST/items, GET/items/{cid}, /search, /endorse, health)
+   - Content Types: Detailed specs for 5 types (Procedure, Recipe, Schematic, Plan, Service-Listing) with required/optional field lists
+   - Federation & ActivityPub: Activity publication, signature verification, trust state management
+   - Offline Export (ZIM): ZimExport model, naming conventions, scope/flavour architecture
+   - Validation Rules: Type enumeration, CID computation, license format, multilingual support
+   - Query Patterns & Indexes: Recommended queries for common operations + index strategy
+   - Error Handling: Standard HTTP response codes + error response format
+   - Migration Procedures: Alembic integration patterns
+3. **Verification** — All 10 ORM models verified against schema documentation (100% match). 56+ ZIM export tests pass (Phase 5 functionality validated). Pydantic schemas validated against actual request/response models.
 
-**Final System State**:
-- **Exploration Queue**: Items 2-4, 8-19, 21-23 complete (18 items); Items 1, 5-7, 14, 16 trigger-dependent (6 items); Item 20 deferred to June 29 13:05 UTC (within 2h pre-checkpoint window per protocol)
-- **All major projects**: Correctly blocked on user actions/decisions or time-gates
-- **Zero autonomous work**: All immediately-actionable items completed
-- **Stockbot checkpoint**: June 29 13:15 UTC (17h 30m away) — all infrastructure ready
-- **Usage**: Sonnet 0.2%, All-models 0.1% (well within budget after 3-item execution)
+**Commits**:
+- `011f63aa`: docs(open-repo): Production-ready schema documentation (879 lines, 10 sections, all ORM models verified)
+- `5195957f`: chore(orchestrator): open-repo schema documentation complete
 
-**Recommended Next Actions**:
-1. **Immediate (user action)**: Execute Domain 59 Tier 2 sends (25-30 min) before June 30 18:00 UTC deadline
-2. **By June 29 07:00 UTC**: Resolve seedwarden Red Clover berberine error (5 min)
-3. **June 29 13:05 UTC**: Execute Item 20 (Jetson pre-market audit) if within 2h pre-checkpoint window
-4. **Post-user-action**: Phase 1 GitHub Pages push triggers Item 14 analytics framework; test print execution routes to Item 23 contingency playbook
+**Verdict**: ✅ **SCHEMA DOCUMENTATION: COMPLETE** — Production-ready for GitHub Pages publication. 879 lines of comprehensive API/database/content type documentation ready for external consumers, federation partners, and content contributors.
 
+---
 
-**Session 4473 (2026-06-28 20:31 UTC)** — Orchestrator orientation + seedwarden Red Clover fix
-- **Orientation**: ORCHESTRATOR_STATE reviewed. All autonomous work complete (Items A-E from June 27 completed). Zero active work items; all projects blocked on user actions or scheduled events.
-- **Seedwarden fix**: Pre-sprint gate deadline (June 29 07:00 UTC). Red Clover photo attribution error resolved (commit 6adce418):
-  - Issue: "Habit" image was flower close-up (Böhringer Friedrich CC BY-SA 2.5), duplicate of "Flower head" row
-  - Fix: Replaced with full-plant habit image (Leonora Enking CC BY-SA 2.0) showing foliage + flower structure
-  - Impact: Phase 3 Medicinal Herbs photo attribution log now complete with proper habit/flower distinction
-- **Next action**: June 29 13:15 UTC — Jetson pre-market checkpoint (Item 20, within 2h window). All other work time-gated or awaiting user decisions.
+**System State**:
+- ✅ **Stockbot**: Deployment healthy, both Phase 1 specs complete, Phase 2 work identified and ready (no blockers). Ready for June 29 market open.
+- ✅ **Resistance-research**: Phase 2 distribution ready (user action urgent — Domain 51 3 days to deadline). Phase 3 pre-sprint infrastructure complete.
+- ✅ **Open-repo**: Schema documentation complete, production-ready for GitHub Pages. Autonomous work cycle for open-repo complete.
+- ✅ **Usage**: Well within budget (250K tokens this session, ~0.2% Sonnet usage). Reset June 30 00:00 UTC.
+- ✅ **Commits staged**: WORKLOG.md, CHECKIN.md, PROJECTS.md updated. BLOCKED.md unchanged. INBOX.md unchanged.
+
+**Recommended Next Actions (Post-Session-4485)**:
+1. **USER ACTION — TODAY**: Execute resistance-research Domain 51 Wave 1 send (urgent, 3 days to deadline)
+2. **USER ACTION — TODAY/TOMORROW**: Execute resistance-research Domain 48 Wave 1 send (10 days overdue)
+3. **June 29 13:30 UTC**: Stockbot market open checkpoint (monitoring continues)
+4. **June 30 00:00 UTC**: INBOX calibration reset (process usage-check.py --calibrate 3.0 67.4)
+
+---

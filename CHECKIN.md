@@ -2,6 +2,70 @@
 
 ---
 
+## Session 4487 (2026-06-28 23:55 UTC) — FINAL ORIENTATION + COMMITMENT
+
+### **Since Last Check-in (Session 4486 → 4487)**
+
+✅ **Final Orchestrator Orientation Complete** — Verified all state files (ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md). No new blocks discovered. All active work is user-action-dependent. Stockbot ready for market open tomorrow (June 29 13:30 UTC). Resistance-research distribution urgently awaits user execution (Domain 51 deadline 3 days away).
+
+### **Work This Session**
+
+- ✅ Orientation: Full ORCHESTRATOR_STATE.md + BLOCKED.md + INBOX.md + PROJECTS.md audit completed
+- ✅ Block verification: 3 active blocks remain (all require user physical/external actions — cannot be auto-resolved):
+  - **cybersecurity-hardening**: Windows VeraCrypt pre-boot restart + Encrypt button click
+  - **mfg-farm**: Test print execution (verified directory missing, print not yet executed)
+  - **systems-resilience**: GitHub release maintainer push permissions (external — no workaround)
+- ✅ Project inventory: All 11 projects scanned. Status summary:
+  - stockbot (#1): HEALTHY, ready for market open, no autonomous work available
+  - resistance-research (#2): READY FOR EXECUTION, **user action URGENT** (Domain 51/48 sends overdue)
+  - cybersecurity-hardening (#3): blocked on user Windows action
+  - mfg-farm (#4): blocked on test print
+  - seedwarden (#5): awaiting contractor hiring completion (due today/tomorrow)
+  - open-repo (#6): complete, schema doc production-ready
+  - career-training (#7): Phase 1 awaiting GitHub Pages push, Phase 2-3 research complete
+  - off-grid-living (#8): complete, awaiting user social distribution
+  - systems-resilience: blocked on GitHub maintainer action
+- ✅ INBOX verification: 1 item (usage calibration, scheduled for June 30 00:00 UTC — not yet processable)
+- ✅ WORKLOG.md + CHECKIN.md prepared for commit
+
+### **Deliverables**
+
+- ✅ State verification (no uncommitted state drift discovered)
+- ✅ Block status confirmed (3 active, all user-action-dependent)
+- ✅ Project readiness assessment (all deliverables production-ready, zero code changes needed this session)
+
+### **System State**
+
+- ✅ **Stockbot**: Deployment GO for June 29 13:30 UTC. Phase 1 specs complete (LIVE_MONITORING + MODEL_PIPELINE). Phase 2 ready. All 5 sessions healthy.
+- ✅ **Resistance-research**: Phase 2 distribution production-ready. **CRITICAL**: Domain 51 send 14 days overdue (July 1 deadline = 3 days). Domain 48 send 10 days overdue (July 15 deadline = 17 days). Execution instructions in PHASE_2_WAVE_1_EXECUTION_CHECKLIST.md.
+- ✅ **Career-training**: Gap modules 37-38 complete. Phase 1 infrastructure production-ready for GitHub Pages deployment.
+- ✅ **Seedwarden**: Phase 3 marketing infrastructure complete. Awaiting contractor hiring completion (expected Jun 24-28, status unclear — may already be complete).
+- ✅ **Usage**: Session minimal (orientation only); ~0.01% Sonnet. Weekly usage 0.1%. Reset June 30 00:00 UTC.
+
+### **Needs Your Input (PRIORITIZED)**
+
+**URGENT (Due within 3 days)**:
+1. ⚠️ **Execute resistance-research Domain 51 Wave 1 send TODAY or TOMORROW** — 14 days overdue, July 1 deadline 3 days away. California Fair Elections Act integration window closing. Instructions: PHASE_2_WAVE_1_EXECUTION_CHECKLIST.md (15-30 min execution).
+2. Execute resistance-research Domain 48 Wave 1 send (less urgent: July 15 deadline, 17 days remaining).
+
+**Important (This week)**:
+3. Confirm seedwarden contractor hiring status (due end of today/tomorrow if not done). Affects Phase 3 launch timeline (Jun 29+).
+4. Complete career-training Phase 1 GitHub Pages deployment. Infrastructure production-ready.
+
+**Next Scheduled Autonomous Work**:
+5. **June 29 13:05 UTC** (10 min before market open): Item 20 (Jetson pre-market audit) — health check + escalation protocol. Automated health_probe.py running on Pi.
+6. **June 29 13:30–20:00 UTC**: Stockbot market open (Phase 1 validation checkpoint). Monitoring active.
+7. **June 30 00:00 UTC**: Process INBOX calibration reset: `python3 scripts/usage-check.py --calibrate 3.0 67.4`
+
+### **Estimated Time to Next Milestone**
+
+- **June 29 13:30 UTC** (17.5 hours): Stockbot market open + automated monitoring begins
+- **June 29-30**: Resistance-research Domain 51/48 sends (user execution ~30 min total)
+- **June 30 00:00 UTC** (0.1 hours): Usage calibration reset
+- **July 1 18:00 UTC** (68 hours): Resistance-research Domain 51 deadline (hard cutoff)
+
+---
+
 ## Session 4486 (2026-06-28 23:40–23:47 UTC) — ORIENTATION + STATE UPDATES
 
 ### **Since Last Check-in (Session 4485 → 4486)**
