@@ -49,7 +49,7 @@ cross-references:
   - ✅ Introduction (women's herbal traditions) — 280 words
   - ✅ Black Cohosh species section (conservation focus, UpS At-Risk) — 1,240 words
   - ⚠️ Vitex (Agnus-castus) section — complete but needs secondary literature citations (4 herbals: Romm, Wood, Hoffmann, Commission E)
-  - ⚠️ Red Clover section — complete but berberine-interaction caution needs verification against current toxicology literature
+  - ✅ Red Clover section — complete with correct isoflavone constituents (formononetin, biochanin A, daidzein, genistein) and isoflavone-CYP interaction notes
   - ✅ Calendula section — complete (no conservation concerns, well-documented)
   - ✅ Lavender section — complete (cross-referenced with Respiratory bundle, verified for overlap)
   - ✅ Preparation methods — consolidated from individual sections
@@ -95,7 +95,7 @@ cross-references:
 #### Final QA Checklist
 - ⚠️ **ACTION REQUIRED — User Review Window June 24-26**:
   - Vitex section: Verify all 5 herbals' traditional use citations match botanical databases (cross-check against Hoffmann *Herbal Handbook*, Commission E monographs)
-  - Red Clover: Verify CYP interaction language against 2024-2025 pharmacokinetic literature (berberine interaction with statins, warfarin — current as of June 2026?)
+  - Red Clover: Verify isoflavone-CYP1A2/CYP2C9 interaction language is correctly framed (isoflavones from Red Clover, NOT berberine which is found in Goldenseal/Barberry)
   - Calendula: No concerns; ready for upload
   - Black Cohosh & Lavender: Cross-reference with Respiratory bundle (same species, slight repurposing of content) — verify no content duplication in user-facing product
 
