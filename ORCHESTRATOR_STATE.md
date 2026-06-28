@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-28T18:50:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-28T20:15:52Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (877,558 tokens) | All-models 0.1% | Reset in 29h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (902,514 tokens) | All-models 0.1% | Reset in 28h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -80,43 +80,42 @@ This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434)
 **Do not process this item before June 30 00:00 UTC.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-2. **`PHASE_4_5_PATH_DECISION_ROUTING.md`** (561 lines)
-   - Mechanical routing logic: PASS (≥7.0) → Path A+C, CAUTION (5.5-6.9) → Path B+C, NO-GO (<5.5) → monitoring
-   - Path A (Covered Calls): 7-10 day deployment, $25K notional, entry=Sharpe≥1.0
-   - Path B (Inverse ETF): 3-5 day deployment, $10.6K PSQ/SH, entry=regime≥30% bear
-   - Path C (Earnings Drift): 10-14 day deployment, $3.18K/event, entry=signal_quality≥6.0
-   - 5 override rules for mid-deployment (gate failures, unrecovered hard stops, Z-score RED, drawdown>10%, win_rate<40%)
-   - Per-path go/no-go verification commands (curl, grep, sqlite3)
+**Execution (20:00–20:12 UTC)**:
+- ✅ **Item 21** (resistance-research) — Wave 2 probability model COMPLETE (commit `31e61f15`)
+  - WAVE_2_OUTCOME_PROBABILITY_MODEL.md: Wave 1 data analysis (60% Domain 59), uncertainty band 40-70%
+  - WAVE_2_ACTIVATION_DECISION_THRESHOLDS.md: Deterministic triggers with explicit UTC times
+  - AUTOMATED_WAVE_2_CLASSIFICATION.py: Cron-ready script (tested all paths + edge cases)
+  - Value: Eliminates 4-6h analysis delay when Wave 2 data arrives June 25-27
 
-3. **`PHASE_4_5_CAPITAL_ALLOCATION_AND_GUARDRAILS.md`** (718 lines)
-   - Path A: $25K total notional ($12.5K per AAPL/MSFT), Delta-40 monthly, 1 contract per 100 shares held
-   - Path B: $10,600 PSQ (Nasdaq inverse) at F=1.00, 8% of equity hard cap
-   - Path C: $3,180/PEAD event at F=1.00, 2 concurrent max, $15K cash floor always maintained
-   - Leverage ceiling verification (worst case ~36% of equity vs. 80% limit → safe)
-   - Drawdown reduction table: 7–10% → 50% reduction, >10% → 25% + halt A/C
-   - 5-step emergency de-risking procedure (~30 min total)
+- ✅ **Item 22** (career-training) — Kit.com pre-trial COMPLETE (commit `f74b8f93`)
+  - KIT_ACCOUNT_SETUP_CHECKLIST.md: Dashboard map, API key location, feature audit
+  - WELCOME_SEQUENCE_DRAFT.md: 3 production-ready emails based on Module 14
+  - EMAIL_DELIVERABILITY_TEST_RESULTS.md: Pre-execution research + test protocol + known limitations flagged
+  - **Critical finding**: Conditional branching likely restricted to paid Creator plan; flagged for user awareness
+  - Value: De-risks Phase 2 email platform before user GitHub Pages deployment
 
-**Key Design Features**:
-- All SSH/sqlite3 query templates tested against confirmed `trading.db` schema (no invented syntax)
-- All numeric thresholds cross-referenced to Phase 4 framework (Session 28, Items 22-23)
-- July 3 20:00 UTC execution flow: 10 min KPI data entry → 5 min routing decision → 5 min sign-off (mechanical, zero analysis)
-- All 3 files production-ready (zero [TODO], zero placeholders)
-- Confidence: 85% (mechanization of existing Phase 4 logic, no novel design required)
+- ✅ **Item 23** (mfg-farm) — Test print contingency COMPLETE (commit `f14f9d01`)
+  - TEST_PRINT_CONTINGENCY_DECISION_TREE.md: Post-print routing (measure gap, classify failure, execute fix)
+  - SNAP_ARM_CAD_MODIFICATION_PROCEDURES.md: Single-parameter edits (30-60s changes, no design work)
+  - MATERIAL_SUBSTITUTION_PROTOCOL.md: Thermal profiles (PLA+/PETG/ABS), cost, diagnostic flowchart
+  - Value: If test print fails, user has instant iteration playbook (2-3 day cycle vs 5-7 day redesign cycle)
 
-**System State**:
-- Stockbot: All 5 sessions healthy, pre-market checkpoint ~18h away (June 29 13:15 UTC)
-- Exploration Queue: Items 14-16 staged; Items 5-7 still trigger-pending; 0 active autonomous work until user actions or time-gates
-- All projects: Blocked on user decisions (platform choice), user actions (GitHub Pages push, test print), or time-gates (Phase 3 Nov 4, Phase 6 post-release)
-- Usage: Sonnet 0.1%, All-models 0.1% (well within budget)
+**Parallel Execution Summary**:
+- 3 agents in parallel: 20:00–20:12 UTC (12 minutes wall-clock)
+- 181,920 subagent tokens total (resistance-research 65K, career-training 62K, mfg-farm 54K)
+- 3 commits to master: `31e61f15`, `f74b8f93`, `f14f9d01`
+- 9 new files created (3 per item)
+- All files production-ready; 0 [TODO] placeholders
 
-**Commits**:
-- PROJECTS.md: Added Items 14-16 to Exploration Queue, marked Item 15 COMPLETE
-- projects/stockbot: commit `914e6a9` (JULY_3_CHECKPOINT_KPI_DASHBOARD.md + PHASE_4_5_PATH_DECISION_ROUTING.md + PHASE_4_5_CAPITAL_ALLOCATION_AND_GUARDRAILS.md)
+**Final System State**:
+- **Exploration Queue**: Items 2-4, 8-19, 21-23 complete (18 items); Items 1, 5-7, 14, 16 trigger-dependent (6 items); Item 20 deferred to June 29 13:05 UTC (within 2h pre-checkpoint window per protocol)
+- **All major projects**: Correctly blocked on user actions/decisions or time-gates
+- **Zero autonomous work**: All immediately-actionable items completed
+- **Stockbot checkpoint**: June 29 13:15 UTC (17h 30m away) — all infrastructure ready
+- **Usage**: Sonnet 0.2%, All-models 0.1% (well within budget after 3-item execution)
 
 **Recommended Next Actions**:
-1. **Immediate** (June 29 13:15 UTC, ~19h away): Orchestrator standby for stockbot pre-market checkpoint validation (optional health check)
-2. **July 3, 20:00 UTC**: Execute JULY_3_CHECKPOINT_KPI_DASHBOARD.md → fill KPI data → PHASE_4_5_PATH_DECISION_ROUTING.md → mechanical routing → PHASE_4_5_CAPITAL_ALLOCATION_AND_GUARDRAILS.md → execute chosen path
-3. **July 11**: Final activation decision after 7-day monitoring window completes
-4. **Post-user-action**: Trigger Item 14 (career-training analytics) upon Phase 1 GitHub Pages deployment; Item 16 (systems-resilience Phase 6) upon Phase 5 release
-
-**Assessment**: EQ Item 15 complete and production-ready for July 3 checkpoint routing. All decision infrastructure pre-staged; no re-planning needed. Stockbot validation window countdown: ~18h to June 29 gate check, ~5 days to July 3 checkpoint decision.
+1. **Immediate (user action)**: Execute Domain 59 Tier 2 sends (25-30 min) before June 30 18:00 UTC deadline
+2. **By June 29 07:00 UTC**: Resolve seedwarden Red Clover berberine error (5 min)
+3. **June 29 13:05 UTC**: Execute Item 20 (Jetson pre-market audit) if within 2h pre-checkpoint window
+4. **Post-user-action**: Phase 1 GitHub Pages push triggers Item 14 analytics framework; test print execution routes to Item 23 contingency playbook
