@@ -1387,3 +1387,44 @@
 6. **June 30 00:00 UTC** (INBOX calibration reset, run usage-check.py --calibrate 3.0 67.4)
 
 ---
+
+## Session 4494 (2026-06-29 03:28–TBD UTC) — STOCKBOT PHASE 2 LIVE MONITORING IMPLEMENTATION
+
+**Status**: IN PROGRESS — Autonomous work identified: LIVE_MONITORING Phase 2 (fill mismatch detection, position phantom guards, order rejection promotion). Spawned stockbot subagent to implement per LIVE_MONITORING_ROADMAP.md sections 2a-2c.
+
+**Work completed**:
+
+1. **Orchestrator Orientation** (03:28–03:35 UTC)
+   - Reviewed ORCHESTRATOR_STATE.md (generated 03:26 UTC): all staged work from Session 4492 confirmed committed
+   - Identified that Session 4493 concluded "no autonomous work available" but missed actionable Phase 2 scope
+   - **Key insight**: Stockbot's Phase 2 live monitoring (fill/phantom/rejection detection) is fully documented in LIVE_MONITORING_ROADMAP.md and marked "ready to start immediately with no gate blockers" (ORCHESTRATOR_STATE)
+   - This is legitimate autonomous work advancing project Goal (fully automated trading platform)
+   - Fits SPEC→PLAN→IMPLEMENT cycle: PLAN is the roadmap, IMPLEMENT is the autonomous agent work
+
+2. **Work spawned** (03:35 UTC)
+   - **Agent**: stockbot subagent
+   - **Task**: LIVE_MONITORING Phase 2 implementation (2a + 2b + 2c + 2d)
+   - **Scope**: 
+     * 2a: FILL_MISMATCH detection (SQLite helper + API cross-reference + anomaly emission + diagnosis handler + 3 tests)
+     * 2b: POSITION_PHANTOM detection (2-poll guard + SQLite + API helpers + anomaly emission + tests)
+     * 2c: ORDER_REJECTED promotion (lightweight check + 15-min window + escalation logic + tests)
+     * 2d: Enhanced daily summary (fill reconciliation + per-session P&L)
+   - **Deliverables**: Production-ready code, all tests passing, committed to master
+   - **Est. wall-clock time**: 2-3 sessions worth of work
+
+**Blockers**: None. Phase 2 roadmap is detailed and unblocked.
+
+**System state (Session 4494, 03:35 UTC)**:
+- ✅ **Stockbot** (Priority 1): Phase 2 implementation agent running. Pre-market checkpoint still queued 13:05 UTC (9h 30m).
+- ✅ **Resistance-research** (Priority 2): Awaiting user execution (Domain 51/48 sends, 3 days to July 1 deadline).
+- ✅ **open-repo**: Phase 5.2 Wave 0 strategy awaiting user review/approval.
+- ✅ **systems-resilience**: Phase 6 Democracy Tools pre-research awaiting user review/approval.
+- ✅ **BLOCKS**: 3 active (unresolvable by orchestrator).
+- ✅ **INBOX**: 1 item queued (June 30 00:00 UTC calibration reset, 20+ hours away).
+
+**Next milestones**:
+- Stockbot Phase 2 agent completion (ETA: 1-2 sessions)
+- June 29 13:05 UTC: Pre-market health checkpoint (if Phase 2 agent still running)
+- June 30 00:00 UTC: INBOX calibration reset
+
+---

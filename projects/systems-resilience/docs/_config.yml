@@ -1,0 +1,12 @@
+title: Midwest Resilience Guide
+description: A practical resilience guide for Midwest Zone 5 — individual, household, and community scale
+baseurl: "/midwest-resilience-guide"
+url: "https://esca8peArtist.github.io"
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
