@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-29T21:33:48Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-29T22:13:36Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (1,083,488 tokens) | All-models 0.2% | Reset in 2h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.2% (1,280,351 tokens) | All-models 0.2% | Reset in 2h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -122,3 +122,24 @@
    - **Value**: De-risks Domain 51 June 30 deadline; preserves 60-75% value if Tier 2 activated July 1-8; keeps Domain M acceleration on track for July 1-15 window regardless of outcome
 
 **All work complete**. Both agents delivered autonomous execution-readiness infrastructure (no user code changes, no user decisions required). Ready for master commit.
+
+---
+
+## Session 4562 (2026-06-29 23:00 UTC) — STOCKBOT AMZN DEADLOCK FIX + DEPLOY
+
+**Work performed (user-directed)**:
+1. ✅ **AMZN deadlock root cause analysis** — Alpaca error 40310000 (`held_for_orders`). Stale SELL order `8b519336` reserved all 21 shares; every subsequent SELL rejected because available=0. Deadlock loop ran 19:35–20:00 UTC.
+2. ✅ **Fix implemented** — Pre-SELL open-order guard added to `trading_session.py:_process_ticker`. Cancels all pending SELL orders for same ticker before submitting new SELL. 1-second settle wait included.
+3. ✅ **7 regression tests** — `tests/unit/test_trading/test_sell_order_guard.py`. All 7 pass. Covers: exact incident replay, call ordering, multiple stale orders, no false cancels (BUY, different ticker), guard failure is silent.
+4. ✅ **Performance report** — `projects/stockbot/reports/JUNE_29_LIVE_PERFORMANCE_REPORT.md`. 0 fills, 0 round trips; HMM regime=None all day; AMZN deadlock; Phase 4 Day 1 NO-GO.
+5. ✅ **OneDrive remediated** — `onedrive.service` stopped and disabled via `systemctl --user` on Jetson. Crash-loop (1,005,780 restarts, 12GB syslog) halted. Disk growth stopped.
+6. ✅ **Committed** — Stockbot commit `8b74af2`: trading_session.py fix + test_sell_order_guard.py.
+7. ✅ **DEPLOYED** — `bash scripts/deploy-to-jetson.sh` succeeded. Health check passed. Fix live on Jetson for June 30 market open (13:30 UTC).
+
+**Status for June 30**:
+- 🟡 **Monitor HMM regime=None**: If regime still None at 14:30 UTC June 30, investigate HMM state persistence across container restarts
+- 🟡 **Verify AMZN guard fires**: Watch logs for "cancelling stale SELL order" at market open if AMZN has pending orders
+- ⏳ **Syslog truncation**: 12GB still on disk — requires `sudo truncate -s 0 /var/log/syslog` (user action or NOPASSWD sudo)
+- ⏳ **Jetson cooler SC1148**: Physical install required (user action; GOOGL Phase 4 gate blocked until ≤75°C)
+
+**Domain 51 note**: Already in Recently Resolved (contingency activated). No action needed.
