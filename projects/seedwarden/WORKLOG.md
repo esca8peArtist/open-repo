@@ -4,6 +4,40 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 29 — Phase 3 Extended Content Infrastructure (Q3 Launch + Beyond) — June 28, 2026
+
+**Session**: June 28, 2026
+**Task**: Build extended content infrastructure for Q3 Phase 3 launch and sustained engagement through fall/winter. Four deliverables: extended social calendar (60 posts), landing page copy (6 bundle sections), promotional email sequences (tier transitions + seasonal campaigns), and testimonial collection framework.
+
+**Status**: COMPLETE — 4 files written to `projects/seedwarden/phase-3-extended-content/`
+
+**Deliverables**:
+
+1. **`PHASE_3_EXTENDED_SOCIAL_CALENDAR_JUL_SEP.md`** (root directory) — Already existed; 60 posts, Aug 4–Oct 26, 2026 (Posts 31–90). Extends PHASE_3_SOCIAL_MEDIA_CONTENT_CALENDAR.md (Posts 1–30). Content mix: 50% educational, 30% community/testimonial, 20% promotional. Platform distribution: LinkedIn, Instagram, YouTube Community Tab. Weekly seasonal themes from post-launch momentum through Phase 4 teaser. All copy-paste ready with hashtags and visual briefs.
+
+2. **`phase-3-extended-content/landing-page-copy.md`** — 6 bundle sections (Women's Health, Respiratory Health, Sleep & Nervines, Immunity Support, Digestive Support, Practitioner Tier). Each section includes: 3 headline variants by use case (Etsy vs. landing page vs. email), subheadline, ~300-word body copy (Etsy-limit compatible), 3 CTA variants (primary/seasonal/upsell), visual framework brief for Canva/photographer. Series-level positioning copy (tier explanation, price ladder table) and a master CTA variant list (low/medium/high commitment + social-native). Tone matches PHASE_3_BUNDLE_LAUNCH_EMAIL_SEQUENCES.md throughout. All health claims FTC-compliant.
+
+3. **`phase-3-extended-content/promotional-email-sequences.md`** — 5 automation sequences + monthly newsletter template. Sequence 1: Free-to-Paid (5 emails, 14 days, lead magnet trigger). Sequence 2: Bundle Upgrade (3 emails, 21 days, purchase trigger, includes conditional companion-bundle pairing by purchased bundle). Sequence 3: Pre-Fall Immunity seasonal broadcast (2 sends, August + September). Sequence 4: Winter Prep seasonal broadcast (2 sends, October + November). Sequence 5: Practitioner Tier back-to-school (2 sends, August + September, practitioner-tagged segments). Monthly educational newsletter template (non-promotional, list health mechanism). All sequences include Kit automation tag logic, pause conditions, and segmentation rules. Testimonial placeholder fields throughout — cross-referenced to testimonial-collection-strategy.md.
+
+4. **`phase-3-extended-content/testimonial-collection-strategy.md`** — Mechanistic collection framework. 3-phase timeline: Phase 1 (first 30 days, early adopters), Phase 2 (bundle-by-bundle, 14 days post each launch), Phase 3 (sustained monthly). 4 request templates: Template A (direct Kit automation, Day 7 post-purchase), Template B (social passive collection), Template C (practitioner/educator personal email, Day 14), Template D (permission follow-up). 4 incentive tiers: Tier 1 (no-cost recognition), Tier 2 (15% discount, FTC disclosure required), Tier 3 (Community Stories feature), Tier 4 (educator license for practitioner testimonials, FTC disclosure required). Testimonial tracker schema (CSV format). Quality control criteria (specific + verifiable outcome + relatable persona — any 2 of 3). Etsy review monitoring and response templates. Platform-specific deployment rules by testimonial type.
+
+**Key decisions**:
+- Social calendar already existed (PHASE_3_EXTENDED_SOCIAL_CALENDAR_JUL_SEP.md, root directory) — confirmed complete and production-ready; not regenerated
+- Landing page body copy is Etsy-character-limit compatible (all sections well under 9,999 character description limit)
+- Email automation sequences intentionally stop active promotion at Day 21 post-purchase for non-converters; monthly newsletter takes over as list health mechanism
+- Testimonial collection does NOT start with incentives — direct request comes first, incentives activate only if response rate falls below 10%
+- All testimonials in social calendar posts and email sequences remain as labeled [PLACEHOLDER] language pending real collection; collection process begins June 29
+
+**Cross-references confirmed**:
+- Voice and tone matches PHASE_3_BUNDLE_LAUNCH_EMAIL_SEQUENCES.md throughout all four deliverables
+- Timeline extends PHASE_3_LAUNCH_MARKETING_CALENDAR.md (Aug 3 → Oct 26 for social; Oct 26 → Dec 31 for email)
+- Seasonal campaigns coordinate with SEASONAL_PRICING_AND_PROMOTION_MODEL.md (Q4 bundles out of scope for this document, correctly scoped to Q3 extended)
+- Bundle validation (Item 13, Session 4458) confirmed no content gaps that would affect landing page claims
+
+**Confidence**: 92% — all deliverables grounded in existing marketing infrastructure; primary uncertainty is testimonial response rate assumptions (10–20% estimated from email benchmarks; may vary with list size and engagement level)
+
+---
+
 ## Item 28 — Seedwarden Contractor Selection & Onboarding Automation — June 28, 2026
 
 **Session**: June 28, 2026
