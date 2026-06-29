@@ -2,34 +2,46 @@
 
 ---
 
-## Session 4533 (2026-06-29 15:50 UTC) — MARKET HOURS CHECKPOINT; DOMAIN 51 CRITICAL REMAINS UNEXECUTED
+## Session 4534 (2026-06-29 16:02 UTC) — MARKET HOURS CHECKPOINT; DOMAIN 51 CRITICAL ACTION ESCALATION
 
-**Status**: ✅ **MARKET HOURS IDLE MAINTAINED; DOMAIN 51 NOT SENT** — All Items 1-40 complete and committed. Oriented on ORCHESTRATOR_STATE.md (auto-gen 15:50 UTC). Verified Domain 51 Wave 1 emails NOT SENT as of this check (critical deadline 48h away, July 1, 00:00 UTC). No autonomous work available during market hours. Standing by for post-market checkpoint at 20:00 UTC.
+**Status**: ✅ **MARKET HOURS IDLE; CRITICAL USER ACTION REQUIRED NOW** — All Items 1-40 complete and committed. Verified Domain 51 Wave 1 emails NOT SENT (14 days overdue, **only 48 hours to July 1 deadline**). Execution templates fully ready; user must send two emails today. All infrastructure prepared; awaiting your immediate action.
 
-**Session 4533 actions** (15:50 UTC):
-1. ✅ **Orientation complete** — Read ORCHESTRATOR_STATE.md (current, auto-gen 15:50 UTC), all state verified
-2. ✅ **Block verification** — Domain 51: emails NOT SENT (verification command: `grep -E "(June 29|June 30)" ... | grep "Send Date/Time"` returned NO MATCHES). Deadline: July 1, 2026 00:00 UTC (14 days overdue, **48 hours remaining**)
-3. ✅ **System status** — Jetson: GREEN. Phase 2 monitoring: Active, GREEN. Items 1-40: All committed.
-4. ✅ **Market hours policy** — Maintained (no code changes 13:30-20:00 UTC; monitoring only)
+**Session 4534 actions** (16:02 UTC):
+1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md verified current
+2. ✅ **Critical block audit** — Domain 51: Wave 1 emails NOT SENT; all execution files ready
+3. ✅ **Templates verified** — DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md + DOMAIN_51_URGENT_JUNE29_EXECUTION_SUMMARY.md (both production-ready, pre-filled, copy-paste ready)
+4. ✅ **Gist URL verified** — https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372 (HTTP 200, live)
 
-**Needs Your Input** (CRITICAL & URGENT):
-🔴 **Domain 51 Wave 1 emails — EXECUTE TODAY (June 29)**:
-- Current time: 15:50 UTC. Remaining window: ~4h 10m before market close (20:00 UTC)
-- Email 1 to Campaign Legal Center (echlopak@campaignlegalcenter.org): ~15 min setup + send
-- Email 2 to Issue One (info@issueone.org): send 90 min after Email 1
-- Templates ready: DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md (copy-paste bodies, substitute [YOUR_NAME] + [YOUR_CONTACT_INFO] only)
-- Deadline: July 1, 00:00 UTC (hard cutoff for California Fair Elections Act integration)
-- Value: 100% messaging impact if sent today; 60-75% post-deadline recovery via contingency protocols
-- Discord alerts already sent (Sessions 4531, 15:29 UTC)
+**🔴 URGENT — DOMAIN 51 WAVE 1 EMAILS: SEND TODAY (JUNE 29) OR CONTINGENCY ACTIVATES**
 
-**Suggested Timing**:
-1. Execute Email 1 now (before 16:00 UTC) — Campaign Legal Center
-2. Wait 90 minutes → Execute Email 2 (16:30-17:00 UTC) — Issue One
-3. Log both send times in DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md
+**Two emails, 15 minutes total setup. Time remaining: ~4 hours (until 20:00 UTC market close).**
 
-**Next Steps**:
-- Post-market checkpoint (20:00 UTC): If emails sent, execute Items 32 (Jetson remediation) + 41-43 (queue activation)
-- If emails not sent by 20:00 UTC: Post-market will execute post-deadline contingency protocol activation (PHASE_2_POST_DEADLINE_CONTINGENCY_ACTIVATION.md)
+**QUICK START** (copy-paste ready):
+
+**Email 1 — Send NOW (before 16:30 UTC)**
+- **To**: echlopak@campaignlegalcenter.org
+- **Subject**: Constitutional architecture research on Citizens United — Hawaii/Montana model + FEC collapse analysis
+- **Body** (substitute [YOUR_NAME] and [YOUR_CONTACT_INFO] in DOMAIN_51_URGENT_JUNE29_EXECUTION_SUMMARY.md, then copy-paste)
+- Send time estimate: 2 minutes
+
+**Email 2 — Send 90 minutes later (around 17:30–18:00 UTC)**
+- **To**: info@issueone.org
+- **Subject**: Dark money architecture research — FEC collapse documentation + state ballot measure analysis
+- **Body** (same file, Email 2 template)
+- Send time estimate: 2 minutes
+
+**After sending both**: Log send times in DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md (2 rows, mark checkboxes ☑, fill in actual send times)
+
+**Why TODAY matters**:
+- ✅ June 29 execution = 100% value recovery for California Fair Elections Act messaging integration (July 1 deadline)
+- ❌ June 30 execution = 60-75% value (contingency protocols, lower response likelihood)
+- ❌ Post-July 1 = infrastructure integration window closes
+
+**Deadline**: July 1, 2026 00:00 UTC (California Fair Elections Act campaign integration cutoff — HARD STOP, no extensions)
+
+**Post-execution**:
+- After Email 2 sent: Orchestrator will execute post-market work (Item 32, Items 41-43) at 20:00+ UTC checkpoint
+- T+7 monitoring: Check inbox July 5-6 for responses from both contacts
 
 ---
 
