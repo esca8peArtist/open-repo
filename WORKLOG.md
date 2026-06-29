@@ -1,3 +1,37 @@
+## Session 4506 (2026-06-29) — CAREER TRAINING PHASE 2 GROWTH STRATEGY
+
+**Status**: COMPLETE — Two Phase 2 planning documents produced for career-training project.
+
+**Work completed**:
+
+1. **Phase 2 Growth Strategy and Cohort Analysis** (`projects/career-training/PHASE_2_GROWTH_STRATEGY_AND_COHORT_ANALYSIS.md`, ~2,400 words)
+   - Three persona analysis: Learner (60-70% of list), Instructor (5-10%, 30-40% of revenue), Contractor (10-20%)
+   - Module completion funnel: 35-50% reach Module 1; 12-20% reach Module 5 (commitment threshold); 4-8% reach 15+ modules — grounded in LinkedIn Learning, O'Reilly, and MOOC completion research
+   - Revenue model: Freemium + certification ($97-127 price point) + instructor live sessions ($35-75) + institutional licenses ($150-500/year); monthly subscription deferred
+   - Instructor revenue splits: 75% (instructor-sourced cohort), 40-50% (platform-sourced), 60% (live sessions) — benchmarked against Skillshare 30%, Udemy 37%, Teachable 80-95%, Kajabi 95%
+   - Growth channel ranking: Partnership outreach > LinkedIn organic > Reddit > email referral loop > YouTube > paid ads
+   - SEO timeline: 3-6 months before any ranking for new GitHub Pages domain; organic search not a Phase 2 driver
+   - Google Ads CPC: niche construction training keywords $2-5; broad education keywords $15-40; paid ads deferred until 200+ organic subscribers validate content
+   - Revised 2026 target: 1,000-1,500 subscribers by December (5-6 months from July launch); 2,000 by end of Q1 2027
+   - Failure trigger table: 5 metrics with healthy/warning/escalate thresholds
+
+2. **Phase 2 Enrollment Funnel Architecture** (`projects/career-training/PHASE_2_ENROLLMENT_FUNNEL_ARCHITECTURE.md`, ~2,100 words)
+   - 5-stage funnel: Awareness → Activation → Retention → Revenue → Advocacy
+   - Each stage: target %, measurement method, success definition, failure trigger
+   - Stage 2 sub-stages: 2A (email signup, target 5-10% of visitors) and 2B (first module, target 40-60% of signups)
+   - Retention threshold: 5+ modules = commitment threshold; 15-25% of signups reach it
+   - Revenue stage: 2-5% of active list converts to paid; ARPU target $5-15/month blended
+   - NPS target: 50+ (world-class for education; Duolingo ~65; MOOCs 30-40)
+   - A/B testing integration: 3 Phase 1 tests carried forward + 3 new Phase 2 tests specified
+   - Week-1 measurement checklist: GA4 instrumentation verification, Kit automation smoke test, module engagement baseline
+   - Monthly funnel health dashboard: 11 metrics across 5 stages, targets at Month 1/3/6
+
+**Confidence**: 75% (strategy grounded in SaaS education precedents; growth targets calibrated with reasonable conversion assumptions; single-channel execution produces 600-900 subscribers vs 1,200-1,800 for multi-channel)
+
+**Sources researched**: LinkedIn Learning 2024/2025 Workplace Learning Reports, SaaS freemium conversion benchmarks (First Page Sage, Userpilot), MOOC dropout research (Ruzuku, Matsh.co), Skillshare/Udemy/Teachable/Kajabi revenue share data, Google Ads CPC for construction education keywords, GitHub Pages SEO ranking timeline, vocational certification pricing (BuddyBoss, Teachfloor)
+
+---
+
 ## Session 4505 (2026-06-29 06:00–08:00 UTC) — DEMOCRACY TOOLS PHASE 3 PRE-LAUNCH SYNTHESIS
 
 **Status**: COMPLETE — Two Phase 3 Democracy Tools documents produced for Nov 4 launch.
