@@ -4,6 +4,40 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 46 — Phase 3 Contractor Hiring & Onboarding Infrastructure (Q3 Launch Support) — June 29, 2026
+
+**Session**: June 29, 2026
+**Task**: Pre-stage all contractor hiring infrastructure for Q3 launch wave. Five production-ready deliverables covering 6 roles, full selection rubric, onboarding sequence, payment tracking, and communication templates. Timeline: jobs posted June 29 → hires confirmed July 4 → contracts signed July 5 → onboarding July 6 → first deliverables July 7.
+
+**Status**: COMPLETE — 5 new files written to `projects/seedwarden/`
+
+**New deliverables (this task)**:
+
+1. **`UPWORK_JOB_POSTING_TEMPLATES.md`** — 6 copy-paste-ready Upwork job descriptions for Q3 launch. Role 1: Botanical Flat-Lay Photographer (20 images, 4 bundles, $1,400 posted; model release requirement; CITES goldenseal prop sourcing note). Role 2: Women's Health Writer (lemon balm, red clover, damiana; 3,600–3,800 words; $950 posted; damiana limited-evidence disclaimer mandatory). Role 3: Respiratory & Sleep Writer (elderberry/mullein/echinacea/thyme + valerian/passionflower/lemon balm/lavender; two manuscripts; $1,050 posted; valerian CNS interactions and passionflower MAOI both named mandatory contraindications). Role 4: Herbalist Consultant (4-bundle review including CITES goldenseal compliance audit; $850 posted). Role 5: Logistics Coordinator (check-ins, Etsy uploads, email coordination; $900 posted). Role 6: Social Media Manager (Instagram/Pinterest/Facebook; 4 launch weeks; $800 posted). All postings include specific bundle herb names, species Latin binomials, FTC-compliant language requirements, Upwork fee structure note (20% contractor-side), and CITES/conservation callouts. Zero [TODO] placeholders — copy-paste ready.
+
+2. **`CONTRACTOR_SELECTION_TIMELINE_AND_RUBRIC.md`** — Explicit hiring timeline with dates (June 29 post → July 2–3 review → July 4 offers confirmed → July 5 contracts signed → July 6 kickoff calls → July 7 Week 1 delivery begins). 4-dimension scoring rubric (Portfolio Fit 40%, Availability 30%, Budget Fit 20%, Communication 10%; 0–10 per dimension). Decision matrix: HIRE (≥8.0), INTERVIEW (6.5–7.9), REJECT (<6.5). Rate negotiation rules (±10% acceptable range; no above-10% without scope adjustment). Objective rejection criteria (6 automatic disqualifiers). Portfolio audit checklist per role (5 samples minimum; role-specific pass/fail criteria). Reference check protocol (2 references per Tier 1 candidate; email template included; 24-hour response or skip). Contingency triggers for each role if no qualified hire by July 4.
+
+3. **`CONTRACTOR_ONBOARDING_CHECKLIST.md`** — 6-week operational playbook. Week 1 (July 5–6): universal same-day actions (deposit, welcome email, Drive access, tracker log); role-specific pre-kickoff materials (shot lists, content briefs, FTC one-pager, reference databases, review scope docs); kickoff call scripts per role (20–30 min each; staggered July 6 9am–12pm). Quality Gate 1 table: 6 contractors, 6 deliverables, pass criteria, and pass/fail actions. Weeks 2–3: 48-hour SLA, Monday check-in protocol, quality gate reviews (photo sets, manuscript drafts, herbalist reviews, coordinator status). Weeks 4–6: bi-weekly performance checks, churn rate signal, testimonial collection, Phase 4 re-engagement flags. Escalation rules: 4 triggers (24h late, 72h late, double-gate failure, 2 consecutive missed check-ins) with specific actions per trigger. Pre-staged contingency pool (5 role-specific fallback channels). 6-week master checklist (Week 1–6, explicit date-stamped checkboxes).
+
+4. **`CONTRACTOR_PAYMENT_AND_DELIVERABLE_TRACKER.md`** — Google Sheets reference with CSV import block. 18 rows (one per deliverable milestone across 6 contractors), 13 columns (contractor name, role, deliverable description, due date, actual delivery date, review status, payment milestone, payment due date, amount due gross, payment sent date, payment method, FTC disclosure date, notes). Pre-populated with all Q3 deliverable descriptions including mandatory content flags (damiana disclaimer, goldenseal CITES, echinacea At-Risk, valerian CNS). Payment schedule per role: Photographer 50/50; Writers 50/50 or 33/33/34; Herbalist 33/33/34; Coordinator 50/50; Social Media Manager 50/50. Total Q3 contractor budget: $5,950 gross. FTC disclosure checkpoint section (photographer copyright clearance, writer claim framing, social media #ad compliance, herbalist sign-off). Status dashboard summary template (second sheet). Contingency row format. Google Sheets and Excel import instructions.
+
+5. **`CONTRACTOR_COMMUNICATION_TEMPLATES.md`** — 6 copy-paste templates. Template A: Offer letter (role-specific deliverable and payment schedule options; 48-hour reply deadline; work-for-hire clause). Template B: Week 1 orientation check-in (access confirmation, first deliverable confirmation, open items from kickoff call). Template C: Quality gate passed (specific positive observation; minor revision notes if any; payment release confirmation; next deliverable callout). Template D: Quality gate revision request (issue-specific description with exact fix required; one positive note; 48-hour revision deadline). Template E: Escalation notice — missed deadline (24h overdue; status request; explicit contingency activation threat if no response by stated deadline; post-send action instruction). Template F: Final payment release + testimonial request (role-specific completion checklist; conditional final payment trigger; testimonial ask; Phase 4 first-contact offer). Quick reference table (situation → template → send-within timing). FTC/CITES verbatim language preservation note.
+
+**Q3 launch context captured in all files**:
+- Bundle 1 (Women's Health): lemon balm (*Melissa officinalis*), red clover (*Trifolium pratense*), damiana (*Turnera diffusa*) — live June 29
+- Bundle 2 (Respiratory Health): elderberry, mullein, echinacea, thyme — upload July 6
+- Bundle 3 (Sleep & Nervines): valerian, passionflower, lemon balm, lavender — upload July 13
+- Bundle 4 (Immunity Support): echinacea, ashwagandha, elderberry, goldenseal — upload July 20
+- Goldenseal CITES Appendix II status referenced in photographer, writer, herbalist, and social media templates
+- Echinacea angustifolia UpS At-Risk status referenced in writer and herbalist templates
+
+**Cross-reference architecture**:
+- Job templates → selection rubric (scoring reference) → onboarding checklist (post-hire sequence) → payment tracker (milestone tracking) → communication templates (email execution)
+- Contingency chain: CONTRACTOR_DROPOUT_CONTINGENCY_ACTIVATION.md activated by Template E non-response; fallback content from Q3_MEDICINAL_BUNDLES_COMPLETION_TRACKER.md activated if <5 contractors deliver by bundle upload date
+- Phase 4 re-engagement loop: CONTRACTOR_LONG_TERM_ENGAGEMENT_FRAMEWORK.md receives performance assessments from onboarding checklist Weeks 4–6 for Q4 2026 hiring (October start)
+
+---
+
 ## Item 42 — Week 1-2 Contingency Monitoring + Week 3-4 Prep Infrastructure — June 29, 2026
 
 **Session**: June 29, 2026
