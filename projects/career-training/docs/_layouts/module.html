@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="module-wrapper">
+
+  {% if page.module %}
+  <div class="module-meta" style="margin-bottom: 1.5rem; padding: 0.75rem 1rem; background: #f5f6fa; border-left: 4px solid #2869e6; border-radius: 0 4px 4px 0;">
+    <span class="module-number" style="font-weight: 700; font-size: 0.9rem; color: #444;">Module {{ page.module }}</span>
+    {% if page.discipline %}
+    &nbsp;&middot;&nbsp;
+    <span class="module-disciplines" style="font-size: 0.85rem; color: #666;">{{ page.discipline | join: " &middot; " }}</span>
+    {% endif %}
+    {% if page.audience %}
+    <br /><span class="module-audience" style="font-size: 0.82rem; color: #888; font-style: italic;">Audience: {{ page.audience }}</span>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="module-content">
+    {{ content }}
+  </div>
+
+  <div class="module-footer" style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e1e4e8;">
+    <p style="font-size: 0.9rem; color: #555;">
+      <a href="{{ site.baseurl }}/modules/" style="text-decoration: none;">&larr; All Modules</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="{{ site.baseurl }}/signup/" style="text-decoration: none;">Get this path by email &rarr;</a>
+    </p>
+  </div>
+
+</div>

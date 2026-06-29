@@ -1,0 +1,20 @@
+<!-- Google Analytics 4 — Construction Career Training Phase 1 -->
+<!-- SETUP REQUIRED: Replace G-XXXXXXXXXX in both places below with your GA4 Measurement ID -->
+<!-- Find your Measurement ID: analytics.google.com > Admin > Data Streams > your stream > Measurement ID -->
+<!-- Format: G-XXXXXXXXXX (e.g. G-ABC123DEF4) -->
+{% if jekyll.environment == "production" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    'anonymize_ip': true,
+    'custom_map': {
+      'dimension1': 'user_segment',
+      'dimension2': 'learning_path',
+      'dimension3': 'module_number'
+    }
+  });
+</script>
+{% endif %}
