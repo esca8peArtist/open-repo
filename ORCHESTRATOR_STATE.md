@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-29T07:24:30Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-29T07:47:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (1,083,488 tokens) | All-models 0.1% | Reset in 17h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (1,083,488 tokens) | All-models 0.1% | Reset in 16h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -73,7 +73,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: career-training — focus references Session 4488 (24 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: career-training — focus references Session 4488 (26 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — June 12 deployment never executed; platform decision resolved by user ← 2026-06-28 (Session 4474 — user decision)
 • systems-resilience — Phase 5.1 platform deployment blocking June 9 publication ← 2026-06-28 (Session 4474 — user decision)
