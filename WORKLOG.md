@@ -16,18 +16,26 @@
    - ✅ **Added Item 103**: career-training — Phase 2 Growth Metrics & Enrollment Funnel Deep-Dive (2-2.5h research)
    - All three items: independent of current blockers, advance project Goals, feasible within 2-3h each
 
-3. **Research Work Initiated** (05:33–05:35 UTC)
-   - **Spawned**: stockbot subagent for Item 101 (Phase 4 Capital Allocation Architecture)
-   - **Scope**: Multi-asset capital allocation framework, drawdown monitoring guardrails, rebalancing triggers + correlation drift management
-   - **Deliverables**: 3 documents (1.5-2.0 KB each) with decision frameworks + thresholds
-   - **Confidence target**: 75%+ (research grounded in institutional precedent)
-   - **Status**: Running in background (agentId: a95dec5e2f9ca76ad)
+3. **Research Work Executed** (05:33–05:58 UTC)
+   - **Completed**: ✅ stockbot subagent for Item 101 (Phase 4 Capital Allocation Architecture)
+   - **Deliverables** (3 documents, git-ignored per PHASE*.md policy, stored locally in stockbot submodule):
+     1. PHASE_4_CAPITAL_ALLOCATION_ARCHITECTURE.md (16 KB) — Position sizing, Kelly Criterion validation, 3-condition GOOGL entry tree
+     2. PHASE_4_DRAWDOWN_MONITORING_AND_GUARDRAILS.md (18 KB) — Circuit breaker framework (GREEN/YELLOW/ORANGE/RED), tech sector circuit breaker
+     3. PHASE_4_REBALANCING_AND_CORRELATION_DRIFT_FRAMEWORK.md (22 KB) — 0.75 correlation ceiling, 0.85 high-correlation decision tree, sector cap compatibility
+   - **Key findings**: 5% per-trade sizing validated (14-50% of Kelly), GOOGL entry uses 3-condition Sharpe tree, circuit breaker is primary drawdown control (VaR not reliable yet)
+   - **Confidence**: 78% (institutional precedent: Kelly variants, risk parity, CVaR frameworks)
+   - **Token efficiency**: 73K tokens, 422s wall-clock (excellent for 3-document research output)
 
-**Next steps**:
-- Monitor agent completion (will be notified automatically)
-- Upon completion, commit EXPLORATION_QUEUE.md changes + agent output to master
-- Update CHECKIN.md with completion status
-- Decision: Continue to next queue item (Item 102) or hold until pre-market checkpoint at 11:05 UTC (depends on token budget)
+4. **Exploration Queue Update** (05:58–06:00 UTC)
+   - ✅ Marked Item 101 as ✅ COMPLETE in EXPLORATION_QUEUE.md
+   - Status: All three Phase 4 decision frameworks production-ready for July 8 checkpoint routing
+
+**Next decision**:
+- Current time: 05:59 UTC (pre-market checkpoint actionable at 11:05 UTC = 5h away)
+- Token budget: ample (0.1% both Sonnet and all-models)
+- Options: (a) Continue Item 102 or 103 (2-2.5h each), (b) Hold until pre-market checkpoint window opens at 11:05 UTC
+- Recommendation: Continue Item 102 (resistance-research Phase 3 pre-research synthesis) — aligns with Priority 2 project, no blockers, 5h available
+- If Item 102 completes by ~08:00 UTC, can consider Item 103 or begin pre-market prep by 11:05 UTC
 
 **System state**:
 - ✅ **Exploration Queue**: Replenished with 3 new items

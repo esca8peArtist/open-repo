@@ -6,15 +6,22 @@
 
 ## Active Items (Session 2482+)
 
-### 101. ⏳ stockbot — Phase 4 Multi-Asset Capital Allocation & Risk Architecture (Session 4504)
-**Status**: ⏳ QUEUED — Added 2026-06-29 05:30 UTC
-**Effort**: 2.5–3 hours estimated
-**Scope**: Phase 4 planning (post-GOOGL/NVDA decision-making, capital allocation, drawdown guardrails, portfolio rebalancing). Research + architecture documentation.
-**Triggers**: Awaiting June 20 GOOGL gate pass + July 2-3 GOOGL live window data. Can proceed with preliminary architecture independent of gate outcome.
-**Value**: Enables rapid Phase 4 execution path decision (July 8 checkpoint) without planning delays. Advances project Goal (fully automated multi-asset trading platform).
-**Owner**: Pending assignment
-**Confidence**: Feasible independent of market data
-**Notes**: Research institutional capital allocation frameworks, multi-asset correlation models, portfolio drawdown monitoring architectures
+### 101. ✅ stockbot — Phase 4 Multi-Asset Capital Allocation & Risk Architecture (Session 4504 COMPLETE)
+**Status**: ✅ COMPLETE — Executed 2026-06-29 05:35–05:58 UTC (general-research subagent, 73K tokens, 422s wall-clock)
+**Deliverables COMPLETE**:
+1. `PHASE_4_CAPITAL_ALLOCATION_ARCHITECTURE.md` (16 KB) — Position sizing framework (5% per-trade validated against Kelly Criterion, 10% GOOGL launch cap, 7% NVDA cap), 3-condition GOOGL entry decision tree (Sharpe thresholds: 1.5+, 1.0-1.5, below minimum), Risk Parity logic validation (NVDA 2x GOOGL volatility supports 7% cap)
+2. `PHASE_4_DRAWDOWN_MONITORING_AND_GUARDRAILS.md` (18 KB) — Circuit breaker framework (GREEN/YELLOW/ORANGE/RED tiers), 5% drawdown entry to YELLOW, automatic size reduction at ORANGE/RED, tech sector circuit breaker (independent of portfolio-level), VaR/CVaR as diagnostic metrics
+3. `PHASE_4_REBALANCING_AND_CORRELATION_DRIFT_FRAMEWORK.md` (22 KB) — 0.75 correlation ceiling logic (variance reduction vs concentration cost), 0.85 high-correlation 3-option decision tree (reduce NVDA / signal divergence filter / exit NVDA), 20% tech sector cap compatibility with existing 3-simultaneous-tech rule (both = ~18.5-20% max simultaneous)
+**Key Findings**:
+- Current 5% per-trade sizing is at 14-50% of full Kelly — no Kelly-based case for increasing at Phase 4 launch
+- GOOGL entry uses explicit 3-condition decision tree (Sharpe ≥1.5 = 10% cap, Sharpe 1.0-1.5 = 7.5% step-up, <minimum = NO DEPLOY)
+- 0.75 correlation gate is WHERE variance reduction from NVDA equals concentration cost — not arbitrary
+- VaR/CVaR not reliable yet (insufficient 250+ day history); circuit breaker is primary drawdown control
+- ORANGE tier automatic 50% size reduction; RED tier automatic 75% reduction but restoration requires user confirmation
+- 0.85 correlation scenario has explicit decision tree depending on NVDA P&L and feature importance overlap
+**Owner**: general-research subagent (Session 4504)
+**Confidence**: 78% (research grounded in institutional precedent: Atlas Peak Kelly variants, Bridgewater All Weather risk parity, institutional VaR/CVaR frameworks, Vanguard rebalancing methodology)
+**Notes**: Documents are stored locally in stockbot submodule (git-ignored per PHASE*.md policy); all decision frameworks production-ready for July 8 checkpoint routing
 
 ---
 
