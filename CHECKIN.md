@@ -2,53 +2,80 @@
 
 ---
 
-## Session 4491 (2026-06-29 02:01 UTC) — PRE-MARKET ORIENTATION: STOCKBOT CHECKPOINT IN 11.5 HOURS
+## Session 4491 (2026-06-29 02:11–03:20 UTC) — EXPLORATION QUEUE: MFG-FARM TEMPLATES + SEEDWARDEN CALENDAR
 
 ### **Since Last Check-in (Session 4489 → 4491)**
 
-✅ **Orientation Complete** — All 3 active blocks remain unresolvable (require user/external action). Resistance-research distribution materials ready for user execution. Stockbot all systems GREEN, pre-market audit scheduled 13:05 UTC. Seedwarden focus pruned (was 16 sessions stale). **No autonomous implementation work available** — most projects complete, paused, or blocked. **Status**: Monitoring-only mode until market open at 13:30 UTC.
+✅ **Exploration Queue Execution Complete** — Two parallel agents executed Items 28-29: (1) **mfg-farm** pre-launch Etsy/Amazon templates production-ready for post-test-print activation, (2) **seedwarden** Phase 3 extended content calendar (60 social posts, landing copy, email sequences, testimonial strategy) extending Q3 launch reach into fall. **Timing strategy**: Deferred risky stockbot openspecs implementation until post-market close (20:00+ UTC). Pre-market checkpoint GREEN, market open 13:30 UTC (11.3h away).
 
 ### **Work This Session**
 
-- ✅ **Orchestrator Orientation**: Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md
-  - **Block status**: Cybersecurity-hardening (manual Windows restart), mfg-farm (test print), systems-resilience (maintainer push) — all 3 require user action, cannot auto-resolve
-  - **INBOX**: One item (June 30 calibration reset) — not yet processable (scheduled after 2026-06-30 00:00 UTC)
-  - **Blocks verified**: mfg-farm test-print-results dir doesn't exist, GitHub release not found
-- ✅ **PROJECTS.md Pruning**: Seedwarden focus updated to remove stale Session 4473 reference (16 sessions old). New focus reflects Phase 3 infrastructure complete, contractor hiring overdue, awaiting user action
-- ✅ **Pre-market Checkpoint Prepared**: Stockbot all systems GREEN (per Session 4490 report):
-  - Pre-market audit GREEN: all 5 sessions health-checked, real-time stream active, models initialized
-  - WebSocket: registered and receiving IEX stream data
-  - Jetson Docker: stockbot container healthy, alembic migrations complete
-  - Database: trading.db operational, session config loaded (JPM ridge_wf, AMZN/AAPL/MSFT/NVDA lgbm_ho)
-  - **Next**: 13:05 UTC automated pre-market health gate → 13:30 UTC market open
+- ✅ **Orchestrator Orientation** (02:11–02:25 UTC):
+  - **Blocks**: All 3 active blocks verified unresolvable (Windows restart, test print, maintainer push)
+  - **INBOX**: One item (June 30 calibration reset) not yet processable
+  - **Decision**: Execute low-risk exploration queue items; defer stockbot code changes until post-market
+
+- ✅ **Item 28 — Mfg-farm Etsy/Amazon Templates** (02:25–03:00 UTC):
+  - **Agent**: general-research (parallel execution)
+  - **Deliverables**: 4 templates (Etsy listing, Amazon Handmade application, channel comparison, pricing calculator)
+  - **Execution versions**: Pre-filled for ModRun cable clip (Etsy $25.79 net, Amazon FBA $21.23 net)
+  - **Reusable frameworks**: For future SKU activation
+  - **Value**: Post-test-print activation <2 hours (vs 2-3 day prior baseline)
+  - **Status**: Production-ready, committed with frameworks to `/projects/mfg-farm/`
+  - **Tokens**: 64,330
+
+- ✅ **Item 29 — Seedwarden Phase 3 Extended Calendar** (03:00–03:20 UTC):
+  - **Agent**: seedwarden (parallel execution)
+  - **Commit**: `ebe301af`
+  - **Deliverables**: 4 files (60-post Jul-Sep social calendar, 6-bundle landing copy, 5-sequence email automation, testimonial collection framework)
+  - **Integration**: Extends Item 25 (Jun 29–Aug 3 launch) through Oct 26; integrates with all platform ecosystems
+  - **Value**: Sustained engagement fall/winter; reduces mid-launch contractor onboarding friction
+  - **Status**: Production-ready, full automation logic + trigger conditions documented
+  - **Tokens**: 99,298
+
+- ✅ **Pre-market Stockbot Readiness**:
+  - All systems GREEN per Session 4490 audit
+  - Docker healthy, WebSocket receiving IEX stream, all 5 sessions initialized
+  - Next milestones: 13:05 UTC pre-market health gate → 13:30 UTC market open
 
 ### **Deliverables**
 
-- ✅ PROJECTS.md: Seedwarden focus pruned (removed stale session reference, added current status)
-- ✅ Orchestration files ready for commit (PROJECTS.md only change)
+- ✅ **mfg-farm**: 4 pre-launch templates (Etsy/Amazon execution + reusable frameworks)
+- ✅ **seedwarden**: 4 extended content files (committed ebe301af)
+- ✅ **WORKLOG.md**: Updated with full session details
+- ✅ **CHECKIN.md**: This update
 
 ### **System State**
 
-- ✅ **Stockbot** (Priority 1): All systems GREEN. Market open 13:30 UTC (11.5h away). Pre-market audit at 13:05 UTC.
-- ✅ **Resistance-research** (Priority 2): Distribution materials GO, awaiting user execution (Domain 51/48 sends).
-- ⏸️ **Seedwarden** (Priority 5): Paused. Phase 3 infrastructure production-ready, contractor hiring overdue (~24h).
-- ✅ **Career-training** (Priority 7): Complete. 38 modules + 150 scenarios done, GitHub Pages deployment ready.
-- ✅ **Open-repo** (Priority 6): Schema docs complete, GitHub Pages approach decided, no further autonomous work.
-- ✅ **Systems-resilience** (Priority 8): GitHub release blocked on maintainer, no autonomous work available.
-- ✅ **Blocks**: 3 active (all require user/external action, verified unresolvable)
+- ✅ **Stockbot** (Priority 1): GREEN. Market open 13:30 UTC. Openspecs (LIVE_MONITORING + MODEL_PIPELINE Phase 1) queued for post-market implementation.
+- ✅ **Mfg-farm** (Priority 4): Pre-launch templates complete. Awaiting user test print execution; activation templates ready.
+- ✅ **Seedwarden** (Priority 5): Phase 3 extended calendar complete. All 6 bundles launch-ready (Jun 29–Aug 3), content sustains through Oct 26.
+- ✅ **Resistance-research** (Priority 2): Distribution materials GO. Awaiting user execution of Domain 51/48 sends.
+- ⏸️ **Career-training** (Priority 7): Complete. 38 modules + 150 scenarios, GitHub Pages deployment awaiting user push.
+- ✅ **Open-repo** (Priority 6): Schema docs complete, GitHub Pages decision made, no autonomous work.
+- ✅ **Systems-resilience**: GitHub release blocked on maintainer permissions.
+- ✅ **Blocks**: 3 active (all user/external action, verified unresolvable)
 
 ### **Needs Your Input (CRITICAL)**
 
-1. **URGENT (3 days)**: Execute resistance-research Domain 51 Wave 1 send (14 days overdue, July 1 deadline)
-2. **URGENT (3 days)**: Execute resistance-research Domain 48 Wave 1 send (July 15 deadline, 17 days remaining)
-3. **Optional**: Contractor hiring for seedwarden Phase 3 (now overdue ~24h, was due Jun 24-28)
+1. **URGENT (3 days)**: Execute resistance-research **Domain 51 Wave 1 send** (14 days overdue, July 1 deadline). Templates in `PHASE_2_WAVE_1_EXECUTION_CHECKLIST.md` + `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md`
+2. **URGENT (3 days)**: Execute resistance-research **Domain 48 Wave 1 send** (July 15 deadline, 17 days remaining). Templates in same files.
+3. **Optional (now overdue ~24h)**: Hire 6 contractors for seedwarden Phase 3 (Women's Health writer, Respiratory, Sleep, Immunity, Practitioner, Digestive). All onboarding infrastructure staged.
+
+### **Suggested Priorities for Next Session**
+
+1. **13:05 UTC**: Jetson pre-market health audit (Item 20, auto-executable)
+2. **13:30 UTC**: Monitor stockbot market open checkpoint (all 5 sessions live)
+3. **20:00+ UTC**: Stockbot openspecs implementation (LIVE_MONITORING Phase 1 + MODEL_PIPELINE Phase 1, ~2-3h per spec)
+4. **June 30 00:00 UTC**: Process INBOX calibration reset item (`python3 scripts/usage-check.py --calibrate 3.0 67.4`)
 
 ### **Estimated Time to Next Milestone**
 
-- **13:05 UTC (3h)**: Stockbot automated pre-market health audit
-- **13:30 UTC (11.5h)**: Stockbot market open checkpoint
+- **13:05 UTC (11h)**: Stockbot pre-market health audit
+- **13:30 UTC (11.3h)**: Stockbot market open checkpoint
+- **20:00 UTC (17.7h)**: Post-market → stockbot openspecs implementation begins
+- **June 30 00:00 UTC (22h)**: Usage calibration reset window opens
 - **July 1 18:00 UTC (3 days)**: Resistance-research Domain 51 hard deadline
-- **June 30 00:00 UTC (22h)**: Usage calibration reset (process INBOX item then)
 
 ---
 
