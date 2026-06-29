@@ -29,6 +29,21 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 34 (cont.) — Phase 3 Week 1-2 Execution Master Checklist (this session) — June 29, 2026
+
+**Session**: June 29, 2026
+**Task**: Build the overarching master execution checklist (`PHASE_3_WEEK_1_2_EXECUTION_CHECKLIST.md`) consolidating pre-execution setup, automation readiness, daily execution blocks with copy-paste send instructions, weekly roll-up metric grids, and contingency quick-reference — the document that sits above the day-by-day operational log from the prior session.
+
+**Status**: COMPLETE — 1 file written to `projects/seedwarden/`.
+
+**Deliverable**:
+
+- **`PHASE_3_WEEK_1_2_EXECUTION_CHECKLIST.md`** — Master launch checklist (Jun 29–Jul 13). Sections: (1) Pre-Execution Setup — Kit.com account + all three email templates loaded and verified, social platform login test, contractor payment method verification, Canva asset staging, and go/no-go final gate before 9am ET Jun 29. (2) Daily Execution Blocks — one block per calendar day (Jun 29–Jul 13) with fixed-format morning brief, 9am ET send instructions (copy-paste Kit campaign configuration, social post text with platform-specific word counts and hashtags), mid-day delivery check, and evening metric log entries. (3) Weekly Roll-Ups — Week 1 and Week 2 expected-vs-actual tables with numeric thresholds and narrative summary slots. (4) Contingency Quick-Reference — 4 procedures: email send failed (Kit resend path + support email template), social post failed to schedule (manual post-now instructions for each platform), contractor missed deadline (copy-paste escalation email, 3-minute response, Wikimedia CC fallback, solo writing fallback), and metrics tracking dashboard schema (Google Sheets 4-tab structure). (5) Automation Readiness — Kit scheduled broadcasts setup, Buffer/Later bulk scheduling order with exact platform-differentiated times (YouTube 12pm ET vs. LinkedIn/Instagram 9am ET), cron command templates with simpler calendar-event alternative, and Discord webhook outline.
+
+**Note**: The companion files from the prior session (PHASE_3_WEEK_1_2_DAILY_EXECUTION_CHECKLIST.md, PHASE_3_WEEK_1_2_CONTENT_BLOCKS_READY_TO_SHIP.md, PHASE_3_WEEK_1_2_VERIFICATION_TEMPLATES.md, PHASE_3_WEEK_1_2_ALERT_THRESHOLDS.md, PHASE_3_WEEK_1_2_OPERATIONAL_SCRIPT.md) remain intact. This file is the master layer.
+
+---
+
 ## Item 29 — Phase 3 Extended Content Calendar & Landing Page Copy (Session 4491 follow-on) — June 28, 2026
 
 **Session**: June 28, 2026 (follow-on from earlier Item 29 stub creation)
