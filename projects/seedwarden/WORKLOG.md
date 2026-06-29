@@ -4,6 +4,27 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 46 (Execution Queue) — Contractor Hiring & Onboarding Infrastructure — June 29, 2026 (second pass)
+
+**Session**: June 29, 2026
+**Task**: Create four canonical deliverable files under exact task-specified names. Prior Item 46 session created richer supporting files (UPWORK_JOB_POSTING_TEMPLATES.md, CONTRACTOR_SELECTION_TIMELINE_AND_RUBRIC.md, etc.); this pass creates the four named deliverables that consolidate and formalize the infrastructure.
+
+**Status**: COMPLETE — 4 new canonical files written
+
+**Deliverables created**:
+
+1. **`UPWORK_JOB_DESCRIPTIONS.md`** — 6 copy-paste-ready Upwork job descriptions. All 6 roles: Photographer ($1,400, 4 bundles, 20 images, CITES goldenseal prop note, 50/50 payment), Writer #1 Women's Health ($950, 3 species, damiana verbatim statement mandatory, 50/50), Writer #2 Respiratory+Sleep ($1,050, 2 manuscripts 6,400–7,000 words total, 33/33/34), Herbalist Consultant ($850, 4-bundle review, CITES/UpS compliance), Logistics Coordinator ($900, 7 weeks, Monday+Thursday windows), Social Media Manager ($800, Instagram+Pinterest+Facebook, FTC #ad requirements). All postings include Latin binomials, FTC-compliant language, work-for-hire clauses, CITES callouts, and posting checklist. Total budget $5,950 gross. Zero placeholders.
+
+2. **`CONTRACTOR_HIRING_TIMELINE_AND_RUBRIC.md`** — Complete hiring calendar from Jun 24 (pre-posting prep) through Jul 6 (kickoff calls) with explicit dates and times. 5-point scoring rubric across 4 dimensions: Portfolio Quality (40%), Timeline Fit (30%), Communication Clarity (15%), Price Reasonableness (15%). Decision matrix: HIRE ≥4.0, INTERVIEW 3.0–3.9, REJECT <3.0. Worked scoring examples for both a HIRE and REJECT case. Portfolio audit checklists per role with auto-reject criteria. Reference check protocol with email template. Background verification procedures. Rate negotiation rules. Contingency triggers for each role if no qualified candidate by Jul 4. Success metrics and red flags.
+
+3. **`CONTRACTOR_ONBOARDING_PLAYBOOK.md`** — 6-week operational playbook. Week 1 (July 5–6): universal same-day actions (deposit, welcome email, Drive access, tracker log) + role-specific pre-kickoff materials (shot list, content briefs, FTC one-pager, reference databases, review scope docs) + kickoff call scripts per role (20–30 min each, staggered July 6 9am–12pm). Quality Gate tables for first delivery window (July 7–11). Weeks 2–4: Monday check-in protocol, quality gate pass/fail procedures with specific feedback email templates. Weeks 5–6: final handoff checklists per role, release criteria, post-launch thank-you template. FTC compliance and work-for-hire language (verbatim, do not modify). Escalation triggers (4 levels) with role-specific contingency actions. Post-launch Phase 4 re-engagement procedure.
+
+4. **`CONTRACTOR_PAYMENT_AND_TRACKING_SPREADSHEET_TEMPLATE.md`** — Google Sheets schema with CSV import block. 22 pre-populated rows (one per deliverable milestone across 6 contractors), 13 columns. Pre-populated with all Q3 deliverable descriptions and mandatory content flags (damiana statement, goldenseal CITES, echinacea At-Risk, valerian CNS, passionflower MAOI). Full example dataset with realistic sample names (Sarah Chen/photographer, Marcus Webb/Writer #1, Priya Nair/Writer #2, Dr. Adrian White/Herbalist, Elena Rodriguez/Coordinator, Diego Alvarez/Social Media Manager). Payment budget reconciliation table ($5,950 gross total). FTC review checklist (post-launch, 30-day). Status dashboard summary template (second sheet). Weekly update protocol. Google Sheets and Excel import instructions. Contingency row format for backup contractor activation.
+
+**Cross-reference architecture**: UPWORK_JOB_DESCRIPTIONS → CONTRACTOR_HIRING_TIMELINE_AND_RUBRIC (scoring/offers) → CONTRACTOR_ONBOARDING_PLAYBOOK (post-hire sequence) → CONTRACTOR_PAYMENT_AND_TRACKING_SPREADSHEET_TEMPLATE (milestone tracking). All four files are standalone; no file requires the others to be useful independently.
+
+---
+
 ## Item 46 — Phase 3 Contractor Hiring & Onboarding Infrastructure (Q3 Launch Support) — June 29, 2026
 
 **Session**: June 29, 2026
