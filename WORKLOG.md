@@ -23,7 +23,27 @@
 - July 1 18:00 UTC: HARD DEADLINE; contingency locked in
 - July 1 20:00 UTC: Orchestrator activates Branch A if not sent
 
-**Next**: Post-market checkpoint (20:00 UTC) will commit BLOCKED.md changes and execute Items 32, 41-43 per user authorization.
+**Market-hours hold status**: ✅ Complete — No autonomous work available during market hours (13:30-20:00 UTC blackout enforced for stockbot). Awaiting 20:00 UTC market close for post-market checkpoint transition. Domain 51 contingency framework fully staged and ready. All critical blocks documented and escalations processed. System ready for post-market execution phase.
+
+**Post-market checkpoint plan (20:00 UTC)**:
+1. **Item 32 execution** (Jetson remediation) — User-authorized autonomous execution:
+   - Stop + disable onedrive.service (systemctl --user stop/disable)
+   - Truncate /var/log/syslog safely (reclaim ~12GB disk)
+   - Optional Docker cache cleanup
+   - Execution time: ~5 minutes; impact: 125GB → 137-139GB free disk
+2. **Items 41-43 parallel execution**:
+   - Item 41: open-repo Water Systems Wave 0 planning (2-3h, can start immediately post-Item-32)
+   - Item 42: seedwarden Q3 Launch monitoring + Week 3-4 contingency (2-3h, parallel)
+   - Item 43: stockbot Phase 2 Activation pre-staging (2-3h, non-code prep work)
+3. **Orchestration file finalization**:
+   - Log all post-market actions to WORKLOG.md
+   - Update PROJECTS.md Items 41-43 status
+   - Finalize CHECKIN.md with post-market summary
+   - Commit all files: `git add WORKLOG.md CHECKIN.md PROJECTS.md BLOCKED.md INBOX.md && git commit -m "..."`
+
+**Contingency note**: Domain 51 contingency framework ready for autonomous July 1 20:00 UTC activation if user does not send Wave 1 emails by June 30 23:59 UTC.
+
+**Next**: 20:00 UTC — Market close; begin post-market checkpoint execution.
 
 ---
 
