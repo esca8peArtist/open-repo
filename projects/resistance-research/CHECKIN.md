@@ -34,21 +34,13 @@ Domain 48 (Criminal Justice): Open DOMAIN_48_EMAIL_TEMPLATE_SET.md — Wave 1 co
 
 ---
 
-## ACTION REQUIRED (Before August 8, 2026): Record Domain 57 Gist URL
+## RESOLVED (June 29, 2026 — Session Item 51): Domain 57 Gist URL Recorded
 
-**What is missing**: The Domain 57 Gist was created June 1, 2026 (confirmed in PROJECTS.md and CHECKIN.md June 3 entry). The full 7,200-word research document exists and is distribution-ready. However, the actual Gist URL hash has never been recorded in `DOMAIN_57_GIST_URL.txt` — the file still contains the placeholder `[HASH_TO_BE_FILLED_AFTER_CREATION]`.
+**Status**: The Domain 57 Gist URL was recovered from DISTRIBUTION_GIST_URLS.md and recorded in DOMAIN_57_GIST_URL.txt. No user action required.
 
-**Why this matters**: The August 10 send to Tier 1 contacts (ASIL, Just Security, Lawfare, Carnegie, PIIE) requires a live Gist URL in the email templates. The August 8-9 re-verification checklist includes confirming the URL resolves HTTP 200. Without the actual URL recorded, the August 10 send cannot be executed.
+**Live URL**: https://gist.github.com/esca8peArtist/a94ef436fd4a678f89e867ac8ed3dd61
 
-**How to fix (5 minutes)**:
-1. Log into github.com as esca8peArtist
-2. Go to https://gist.github.com/esca8peArtist — find the Domain 57 gist (description: "Domain 57: Multilateral Withdrawal and Executive Unilateralism — 7,200 words, 47 citations")
-3. Copy the full URL (format: https://gist.github.com/esca8peArtist/[40-char-hash])
-4. Replace the placeholder in `DOMAIN_57_GIST_URL.txt`
-5. Add the URL to `DISTRIBUTION_GIST_URLS.md`
-6. Verify: `curl -sI [URL] | head -1` should return `HTTP/2 200`
-
-**No urgency before July 28** — this can be done at the same time as the July 28 UNGA framing paragraph draft task. But do not let August 8 arrive without completing it.
+**Pre-send verification still required (August 8-9)**: Open URL in incognito browser and confirm HTTP 200 and full document render. This is a 2-minute spot-check, not a blocking action item.
 
 ---
 
