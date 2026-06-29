@@ -6,6 +6,42 @@
 
 ## Active Items (Session 2482+)
 
+### 101. ⏳ stockbot — Phase 4 Multi-Asset Capital Allocation & Risk Architecture (Session 4504)
+**Status**: ⏳ QUEUED — Added 2026-06-29 05:30 UTC
+**Effort**: 2.5–3 hours estimated
+**Scope**: Phase 4 planning (post-GOOGL/NVDA decision-making, capital allocation, drawdown guardrails, portfolio rebalancing). Research + architecture documentation.
+**Triggers**: Awaiting June 20 GOOGL gate pass + July 2-3 GOOGL live window data. Can proceed with preliminary architecture independent of gate outcome.
+**Value**: Enables rapid Phase 4 execution path decision (July 8 checkpoint) without planning delays. Advances project Goal (fully automated multi-asset trading platform).
+**Owner**: Pending assignment
+**Confidence**: Feasible independent of market data
+**Notes**: Research institutional capital allocation frameworks, multi-asset correlation models, portfolio drawdown monitoring architectures
+
+---
+
+### 102. ⏳ resistance-research — Phase 3 Democracy Tools Pre-Research Intelligence Synthesis (Session 4504)
+**Status**: ⏳ QUEUED — Added 2026-06-29 05:30 UTC
+**Effort**: 2–2.5 hours estimated
+**Scope**: Deep-dive prep for Phase 3 Democracy Tools domain (Nov 4 launch). Synthesize post-Callais decision impact, SAVE Act developments, expert contact validation, preliminary source mapping. Can begin immediately independent of Phase 2 completion.
+**Triggers**: None — independent of Phase 2 timeline
+**Value**: Accelerates Nov 4 Phase 3 launch. Ensures expert contact relevance + source freshness. Advances project Goal (integrated governance renewal proposal).
+**Owner**: Pending assignment
+**Confidence**: High (recent domain pre-research already complete, incremental synthesis only)
+**Notes**: Review Callais aftermath (19M registrations purged post-2022), SAVE Act June 2026 status, voter registration barrier research (post-April 2026 updates)
+
+---
+
+### 103. ⏳ career-training — Phase 2 Growth Metrics & Enrollment Funnel Deep-Dive (Session 4504)
+**Status**: ⏳ QUEUED — Added 2026-06-29 05:30 UTC
+**Effort**: 2–2.5 hours estimated
+**Scope**: Phase 2 planning (post-GitHub-Pages launch). Deep-dive into analytics segmentation (instructor vs learner vs contractor), email list strategy, conversion funnel optimization, growth hypothesis testing framework. Can proceed now independent of Phase 1 user push timing.
+**Triggers**: None — independent of user GitHub Pages deployment
+**Value**: Ready Phase 2 launch immediately when user completes Phase 1 push. Prevents post-launch scramble for metrics/growth strategy. Advances project Goal (2,000+ active learners by end 2026).
+**Owner**: Pending assignment
+**Confidence**: High (GitHub Pages analytics well-documented, Kit.com integration already prep'd)
+**Notes**: Research cohort analysis, instructor revenue sharing models, certification pathway design
+
+---
+
 ### 87. ✅ stockbot — Phase 3b Scaling Architecture (Session 2896 COMPLETE)
 **Status**: Completed June 5, 2026 (Session 2896, 16:10 UTC). All three deliverables production-ready.
 **Decision: Phase 3b scaling architecture FINALIZED.** Active cooler mandatory (Raspberry Pi 5 Active Cooler, SC1148, ~$5-15 at Pimoroni). Overnight training window (21:00-12:30 UTC) sufficient for monthly retraining. GOOGL decision June 20, NVDA target August 1.
