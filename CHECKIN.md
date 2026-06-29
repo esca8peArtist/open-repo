@@ -2,6 +2,40 @@
 
 ---
 
+## Session 4549 (2026-06-29 19:08 UTC) — STOCKBOT ORDER REJECTION ROOT CAUSE DIAGNOSED; STANDING BY FOR POST-MARKET
+
+**Status**: 🟡 **CRITICAL FINDING DIAGNOSED — POSITION LOCK DEADLOCK** — Orchestrator Session 4549 processed INBOX directive to investigate stockbot order rejections (2026-06-29 14:02). Root cause identified via Jetson Docker logs analysis. Documented in WORKLOG.md and Discord notification sent to user.
+
+**Since Last Check-in**:
+- ✅ **Stockbot order rejection root cause identified** — Position synchronization deadlock (POSITION_PHANTOM anomaly, Phase 2 Item 2b)
+  - **Error**: AMZN sell orders rejected with "insufficient qty available" (requested 21, available 0)
+  - **Root cause**: Pending order (ID 8b519336-9871-4a36-82df-cb036d434195) holds all 21 shares (held_for_orders=21)
+  - **Mechanism**: When order submission fails, system does not cancel the pending order or check for held-for-orders before next attempt
+  - **Impact**: AMZN session unable to execute exits; errors recurring every 60-90 seconds since 19:06 UTC
+- ✅ **Discord notification sent** — Full root cause analysis and fix requirement communicated
+- ✅ **INBOX task completed** — Investigation complete; no autonomous fix available (requires code change + deployment)
+
+**What's Needed to Fix**:
+1. **Code change**: Phase 2 Item 2b (POSITION_PHANTOM) — implement:
+   - Pre-trade order cancellation (cancel any pending orders before new submission)
+   - 2-poll guard (query Alpaca twice with 10-second gap to confirm position available)
+   - Order reconciliation (actively cancel failed orders instead of leaving them pending)
+2. **Deploy**: Once code is ready, deploy to Jetson via deploy script
+
+**Current Status**:
+- ✅ Domain 51 critical block: still awaiting user action by June 30 23:59 UTC
+- ✅ Items 32-34 committed and ready for post-market execution (20:00 UTC)
+- ✅ Items 41-43 queued for parallel agent execution post-market
+- 🔴 Stockbot AMZN session: position locked; monitoring alert active
+
+**Market-hours status**: ✅ Policy maintained (no code changes; standing by for 20:00 UTC)
+
+**Needs Your Input**:
+1. **CRITICAL — Domain 51 Wave 1 emails** (By June 30 23:59 UTC): See Session 4547 details below
+2. **Stockbot order rejection fix**: Code change required at Phase 2 Item 2b; root cause fully documented in WORKLOG.md Session 4549 and Discord notification
+
+---
+
 ## Session 4547 (2026-06-29 18:54 UTC) — CRITICAL: DOMAIN 51 18:00 UTC CUTOFF PASSED; CONTINGENCY CONFIRMED ACTIVE
 
 **Status**: 🔴 **CRITICAL — CUTOFF DEADLINE PASSED** — Orchestrator Session 4547 full orientation & verification (18:54 UTC). Domain 51 Wave 1 emails NOT SENT (verified via execution log grep at 18:54 UTC). The time-critical 18:00 UTC cutoff has definitively PASSED (+54 minutes). 100% value recovery window (California Fair Elections Act messaging integration) is now CLOSED. Contingency framework activated and BLOCKED.md updated — user can still execute Wave 1 by June 30 23:59 UTC (29 hours remaining) for 60-75% partial value recovery, or orchestrator will autonomously activate Branch A contingency July 1 20:00 UTC. Hard deadline: July 1 18:00 UTC.
