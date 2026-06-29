@@ -476,6 +476,28 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 
 ---
 
+**NEW ITEMS (Session 4529 — 2026-06-29 14:52 UTC — Exploration Queue Replenishment Post-Market Prep)**:
+
+41. **open-repo: Water Systems Wave 0 Planning & Contributor Sourcing** (2-3h) — *Trigger: Phase 5.2 Wave 0 strategy approved (Item 30 ready for user decision)*
+   - **Scope**: Phase 5.2 Wave 0 prioritizes Water Systems domain (WASH practitioner community, gap analysis confirms market demand). Pre-stage: (1) 5-10 candidate species/systems for initial Wave 0 bundle (prioritize NCHFP + USDA public-domain sources), (2) Contributor sourcing checklist (5 practitioners across WASH + conservation fields, LinkedIn search parameters, outreach templates), (3) Content authoring SOP for non-technical contributors (template + style guide + fact-checking rubric), (4) Week 1-6 execution roadmap with numeric contributor/content gates. All templates copy-paste-ready.
+   - **Value**: Enables immediate Wave 0 launch within 48h of user approval. Contributor sourcing (typically 1-2 week bottleneck) pre-staged eliminates launch delay.
+   - **Owner**: open-repo team
+   - **Confidence**: 82% (NCHFP/USDA sources verified public-domain; contributor sourcing via LinkedIn proven effective from prior rounds)
+
+42. **seedwarden: Q3 Launch Execution Monitoring & Week 3-4 Contingency Checklist** (2-3h) — *Trigger: Week 1 June 29-Jul 13 launches*
+   - **Scope**: Week 1-2 checklist (Item 34) deploys today. As Week 1 executes (Jun 29-Jul 6), pre-stage Week 3-4 contingency: (1) Daily email open/click monitoring (threshold: <20% opens or <2% clicks triggers escalation), (2) Contractor deliverable tracking (photo + written + video content due dates), (3) Subscriber churn monitoring (unsubscribe rate >0.5% daily triggers messaging review), (4) Social engagement tracking (LinkedIn algorithm flagged if <8% engagement; alternate posting time evaluation). (5) Week 3 bundle prep (Sleep & Nervines July 13 launch preparation, photo inventory check, copy finalization).
+   - **Value**: Week 1-2 is peak customer acquisition period (highest email engagement + social reach). Real-time monitoring enables rapid pivots if metrics underperform. Prevents Week 3-4 launch delays from Week 1-2 bottlenecks (contractor delays, content gaps).
+   - **Owner**: seedwarden team
+   - **Confidence**: 85% (monitoring thresholds from prior Q2 2026 campaign data; contractor tracking proven effective)
+
+43. **stockbot: Post-July-7 Gate Phase 2 Activation Pre-Staging** (2-3h) — *Trigger: July 7 operational gate criterion met (Model_Pipeline Phase 2 Candidate Initialization ready Item 39)*
+   - **Scope**: July 7 gate detection triggers Phase 2 activation (covered calls + 6-asset expansion). Pre-stage: (1) 7-asset candidate ranking & initialization (MODEL_PIPELINE_PHASE_2_CANDIDATE_INITIALIZATION.md lists META priority 88/100 + 6 alternates), (2) Covered-call position-sizing guardrails per asset (max 30% covered = max 15% cash reserved), (3) Phase 2 deployment checklist (Jetson config updates, model loading, session initialization), (4) July 7-14 execution schedule (model warming, signal validation, staged position entry), (5) Rollback procedures if regime detection fails again (revert to JPM 1-session, alert user for investigation).
+   - **Value**: Gate criterion is deterministic (MODEL_PIPELINE Phase 2 SQL detection query). When criterion met, orchestrator activates pre-staged Phase 2 without 2-3h planning delay. Enables immediate ~July 7-14 execution window.
+   - **Owner**: stockbot team
+   - **Confidence**: 88% (Gate detection logic complete Item 39, Phase 2 architecture staged Item 35, risk guardrails staged Item 28)
+
+---
+
    - **[cybersecurity-hardening: Phase 2 Infrastructure (Item 4 continued)]**
      2. `phase-2-threat-model-and-mitigations.md` (512 lines, 40 KB) — 8 threat scenarios, risk reduction matrices, incident response
      3. `phase-2-provisioning-runbook.md` (1,873 lines, 58 KB) — 15 step-by-step procedures, time estimates, rollback/troubleshooting

@@ -3076,3 +3076,31 @@
 - Duration: 831s wall-clock, 84K tokens
 - Status: Production-ready; can activate same-day if Domain 51 Wave 1 sends slip past July 1
 
+
+---
+
+## Session 4529 (2026-06-29 14:52–15:05 UTC) — MARKET HOURS MONITORING; EXPLORATION QUEUE REPLENISHMENT
+
+**Status**: ✅ **MARKET HOURS IDLE MAINTAINED; QUEUE REPLENISHED** — During market hours (13:30-20:00 UTC), oriented on state from Sessions 4525-4528. All Items 1-40 complete. No autonomous work available during market hours (stockbot policy: no code changes 13:30-20:00 UTC). Per protocol: replenished Exploration Queue with Items 41-43 for post-market execution.
+
+**Session 4529 actions** (14:52 UTC):
+
+1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md (auto-gen 14:50 UTC), verified all Items 38-40 committed, market hours active, no state changes needed
+2. ✅ **Block verification** — Domain 51 emails NOT SENT (critical, 48h to deadline); 3 other blocks require user action (VeraCrypt restart, test print, maintainer permissions)
+3. ✅ **Queue audit** — Items 1-40 all complete or time-gated. Per protocol: <3 active items → replenish queue
+4. ✅ **Exploration Queue replenishment** — Added Items 41-43 to PROJECTS.md:
+   - **Item 41**: open-repo Water Systems Wave 0 planning (2-3h, trigger: user approval)
+   - **Item 42**: seedwarden Q3 Launch monitoring + Week 3-4 contingency (2-3h, trigger: Week 1 launch begins)
+   - **Item 43**: stockbot Phase 2 Activation pre-staging (2-3h, trigger: July 7 gate met)
+5. ✅ **Post-market plan confirmed** — Item 32 Jetson remediation scripts ready for 20:00 UTC execution (awaiting user authorization)
+
+**System status**:
+- ✅ Phase 2 live monitoring: Active, GREEN
+- ✅ Jetson health: GREEN (containers healthy)
+- ✅ Items 38-40: All committed (commits 975e3c8a-6d1c1f00)
+- ✅ Items 41-43: Added to queue, ready for post-market
+- 🔴 Domain 51: Critical, NOT SENT (48h to deadline)
+
+**Market-hours policy**: ✅ Maintained (no stockbot changes, monitoring only)
+
+**Next**: Standing by for 20:00 UTC post-market checkpoint. Domain 51 user action remains critical (user must send emails today for 100% value recovery vs 60-75% post-July-1).
