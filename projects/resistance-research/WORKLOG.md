@@ -2,6 +2,28 @@
 
 ---
 
+## June 29, 2026 (General Research Agent) — Phase 6 Democracy Tools Research Schedule, Onboarding Kit, Quality Assurance Framework — COMPLETE
+
+**Task**: Three operational documents for Phase 6 Domain G (Democracy Tools) researcher execution. November 4 launch date locked; January 3, 2027 Congress-seating distribution deadline.
+
+**Files created** (directory: `projects/systems-resilience/`):
+
+1. **PHASE_6_DEMOCRACY_TOOLS_RESEARCH_SCHEDULE.md** (~2,100 words) — Seven-week calendar (Nov 4–Dec 20) with daily hour targets (30h/week Weeks 1–4; 25h/week Weeks 5–7); four-zone breakdown with specific Week 1–4 daily task lists; three contingency scenarios (expert contact delay: -1 week buffer, proceed with published sources; source access blocked: scope compression option before extension; deadline slip: three compression options C-1/C-2/C-3 with hours saved per option); weekly checkpoint gate criteria (source count, citation count, Zone 5 subsection presence, word count minimums by zone); solo vs. two-person timeline comparison (two-person gains one parallel-track week, costs 8–10 hours coordination overhead, raises confidence 82% → 88–92%); integration with post-December 20 distribution workflow through January 10 Tier 2 wave.
+
+2. **PHASE_6_RESEARCHER_ONBOARDING_KIT.md** (~2,600 words) — Six sections: 15-minute orientation (domain scope, what Domain G adds to Phase 5, four zone definitions, success criteria table); 12 research questions (3 per zone) with evidence standard expectations for each (what counts as sufficient evidence vs. insufficient — addresses the TurboVote attribution question, Estonia security critique, and Canada transferability question explicitly); source access SOP (institutional JSTOR vs. JPASS $199/year; PDF request via ILL or author direct email; PACER account setup; legal permissions check; VPN note for international researchers); writing standards (word budget per section across all 12 sections; citation format; 2-round revision procedure with success criteria; escalation if disagreement); expert contact protocols (email template; Calendly scheduling; 30-minute call structure; 5-business-day follow-up cadence; escalation if unresponsive; per-contact Zone match, initial outreach week, and specific question focus; Sam Wang published-work-only note; Heather McGhee role correction; vTaiwan published-sources-first guidance).
+
+3. **PHASE_6_QUALITY_ASSURANCE_FRAMEWORK.md** (~1,050 words) — Zone gate scorecard (7 criteria per zone including source count, citation count, primary sources, all research questions answered, Zone 5 subsection present, no placeholders, word count minimum); full-document pre-synthesis gate (30,000+ words, 45+ citations, all zones closed, Synthesis A outline complete); final document gate (40+ sources, 60+ citations, 3+ primary sources per zone, all statistical claims source-verified, counterarguments addressed, all 12 sections present, Zone 5 subsections throughout, implementation templates complete, URLs verified); two-person team weekly check-in structure (Monday standup: zone plan and sources list for deconfliction; Wednesday delta: obstacles-only flag; Friday review: word count, sources added, zone gate status); escalation procedures (1-week behind: compress next zone's opening, no scope change; 2+ weeks behind: activate 2-person sprint OR apply C-1/C-2/C-3 scope compression options); final synthesis checklist Dec 12–20 (5 coherence items: terminology, statistics, zone integration, counterarguments, narrative flow; distribution readiness: 500-word landing page, email template, 3 social posts, 3-version pitch document for advocacy/civic tech/civic engagement org audiences).
+
+**Key findings**:
+- Seven-week window is achievable at 82% confidence (solo) or 88–92% (two-person); the additional week vs. the original six-week outline accommodates Zone 4 movement infrastructure (not in original outline) and the December 20 vs. December 12 distribution deadline
+- Zone 1 is the highest-risk zone for timeline: the post-Callais legal landscape expanded significantly between June 28 and June 29 with DOJ voter database litigation (8–10 additional research hours); the Zone 1 gate (November 10) is the most important checkpoint in the schedule
+- Source library is distribution-ready: 25 indexed sources, 7 requiring verification-at-launch (not replacement); the Stanford Law Karlan analysis (June 11), SCOTUSblog blast radius piece (June 2026), and redistrictingonline.org DeSoto County ruling (June 25) are the three most important new sources added since Session 4492
+- Expert contact list is substantially intact after role corrections (McGhee: Trustee Emeritus not Senior Fellow; Wang: published-work-only due to congressional candidacy); three replacement contacts staged and ready
+
+**Confidence**: 85% — calibrated against: Democracy Tools Research Outline (Session 4492, 82% base confidence); Phase 3 Researcher Recruitment Plan (solo/2-person timeline analysis); Wave 2 Quality Gate Integration (checkpoint criteria patterns); Post-Callais Synthesis (DOJ voter database additional hours quantified at 8–10).
+
+---
+
 ## June 29, 2026 (General Research Agent) — Phase 3 Researcher Recruitment and Onboarding Framework — COMPLETE
 
 **Task**: Design the researcher recruitment and onboarding framework for Phase 3 (November 4, 2026 launch). Three production-ready documents covering researcher profile and recruitment plan, onboarding kit, and contract/collaboration framework.

@@ -4,6 +4,29 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 35 — Phase 4 Bundle Wave Strategy (Q4 2026, 2027) — June 29, 2026
+
+**Session**: June 29, 2026
+**Task**: Produce three production-ready planning documents for Phase 4 bundle wave strategy covering Q4 2026 and full-year 2027. No [TODO] placeholders; all recommendations mechanistic and actionable.
+
+**Status**: COMPLETE — 3 files written to `projects/seedwarden/`
+
+**Deliverables**:
+
+1. **`PHASE_4_Q4_2026_BUNDLE_CANDIDATES.md`** — Q4 2026 bundle candidate framework and ranked slate. Scored 8 candidates (including 2 net-new) on a 100-point mechanistic rubric across four dimensions: demand signal, profitability, contractor capacity, and differentiation vs. Phase 3. Final ranked slate: GO — Q4-D Gift-Giver's Collection (94/100), Q4-A Winter Immunity Defender (91/100), Q4-B Holiday Stress Relief (89/100), Q4-C Winter Digestive + Holiday Eating (78/100), DIY Winter Herb Garden (74/100). No-go for Holiday Self-Care Ritual (cannibalization/over-competition) and standalone Elderberry Toolkit (Q4-A overlap). Q4-E Practitioner Collection conditional on July 15 contractor capacity confirmation. Complete contractor resource plan: no net-new hiring needed for Q4; entire slate executable via Phase 3 contractor re-engagement. Launch sequence: Oct 8, Oct 20, Nov 1 (two bundles), Nov 15 (stretch).
+
+2. **`PHASE_4_2027_ROADMAP.md`** — Full 2027 annual roadmap. Five organizing frameworks scored; Framework B "Herbalist's Clinical Year" (90/100) recommended over lunar calendar (78/100) and polyculture (65/100) approaches. Eight new body-system bundles specified (Cardiovascular, Liver, Skin, Mental Health/Nootropics, Musculoskeletal, Kidney/Urinary, Men's Health, Children's Wellness) with species, pricing, and launch quarter. Contractor scaling: 6 Phase 3 contractors → 9–11 contractor 2027 cohort (2 Tier A retainers, 3–4 Tier B project-based, 2 new Q1 hires, 1–2 on-call bench). Platform expansion: Amazon Handmade ruled out for digital products (does not support digital downloads); Gumroad direct checkout recommended Q2 2027 at 1,500 email subscribers; Seedwarden.com SEO foundation Q3 2027 for 2028 store. Three revenue scenarios: Conservative $47,500/year, Base $64,100/year (planning target), Optimistic $90,000–$110,000/year with physical lines. Monthly run rate target: $2,000 entering Q1 2027, $3,400 exiting Q4 2027.
+
+3. **`CONTRACTOR_LONG_TERM_ENGAGEMENT_FRAMEWORK.md`** — Phase 3→4 transition playbook and 2027 cohort management. Four-criterion Phase 3 assessment rubric (Productivity, Iteration Cycles, FTC/CITES Accuracy, Deadline Adherence; 100 pts total) with tier assignment thresholds: 85+ Tier A Retainer, 65–84 Tier B Regular, 40–64 Probationary, below 40 retired. Elevated roles defined: Lead Photographer (quality gate reviewer + Wikimedia CC sourcing manager), Lead Clinical Writer ($50–75/bundle review fee). Retention levers: portfolio attribution (PDF byline credit), annual scope preview, 10% performance-linked rate escalation, 2028 revenue-share signal. Attrition planning: 80% target retention (not 100%). 2027 new hire playbook: referral channel first, AHG/Chestnut secondary, 2-week onboarding with Day 8 trajectory check. Contingency staffing: Tier C on-call bench absorbs mid-sprint dropout in ≤2 weeks; Wikimedia+solo fallback as Layer 2; AHG emergency posting as Layer 3. Quarterly tier review schedule through December 2027.
+
+**Decision gates enabled by these documents**:
+- July 15: Greenlight Q4 bundle slate (Q4-A, Q4-B, Q4-D confirmed; Q4-C and Q4-E conditional)
+- August 1: Phase 3 contractor re-engagement offers sent (Tier A and Tier B confirmed)
+- August 15: 2027 strategy locked (Framework B confirmed, 2027 bundle slate finalized)
+- January 15, 2027: 2027 cohort onboarded (new hires from Tier C and fresh Q1 hires)
+
+---
+
 ## Item 34 — Phase 3 Week 1-2 Execution Master Checklist — June 29, 2026
 
 **Session**: June 29, 2026
