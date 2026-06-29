@@ -11,9 +11,15 @@
 
 ## New Items
 
+*(All current new items are being processed in parallel or are time-gated. See "Processing" section below.)*
+
+---
+
+## Processing (Session 4520 — 2026-06-29 08:40 UTC)
+
 ### [2026-06-29 08:40 UTC] JETSON POST-MARKET MAINTENANCE — onedrive crash-loop remediation
 
-**Process after 20:00 UTC market close (post-market window).**
+**STATUS**: 🟡 **AWAITING USER AUTHORIZATION** (documented in CHECKIN.md "Needs Your Input")
 
 Item 20 audit (pre-market readiness) found onedrive.service has crashed 1,005,780 times since May 9, filling `/var/log/syslog` with 12GB of logs. System is operationally clear for today's market (125GB free), but this must be fixed within 48 hours (by ~July 1 13:30 UTC) to prevent RED status disk contention by July 3-4.
 
@@ -22,21 +28,23 @@ Item 20 audit (pre-market readiness) found onedrive.service has crashed 1,005,78
 2. Truncate syslog to 0 bytes (safe, only affects rotated log file)
 3. Optionally reclaim Docker cache (~2.3GB)
 
-**Timeline**: Execute sometime after 20:00 UTC today (post-market). Remediation takes <5 min. Can be executed autonomously post-market if authorized, or user can execute manually.
+**Timeline**: Execute sometime after 20:00 UTC today (post-market). Remediation takes <5 min.
 
-**Action**: Authorize post-market autonomous execution OR schedule manual execution by June 30 13:30 UTC.
+**Awaiting user decision**: Authorize autonomous post-market execution (after 20:00 UTC) OR schedule manual execution by June 30 13:30 UTC. Decision logged to CHECKIN.md; will execute per user authorization when checkpoint resumes post-market.
 
 ---
 
 ### [2026-06-30 00:05 UTC] USAGE CALIBRATION RESET — Scheduled for Tuesday reset
 
-**Process on or after June 30 00:00 UTC only.** Usage billing week resets at that time.
+**STATUS**: ⏳ **TIME-GATED (do not process before June 30 00:00 UTC)**
+
+Process on or after June 30 00:00 UTC only. Usage billing week resets at that time.
 
 Run: `python3 scripts/usage-check.py --calibrate 3.0 67.4`
 
 This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434). The limits were temporarily inflated to 0.1% on June 27 to allow the orchestrator to run freely during the final days of the billing week. After the reset, actual usage is 0, so the June 24 limits will correctly show 0% and normal threshold monitoring resumes.
 
-**Do not process this item before June 30 00:00 UTC.**
+Will process automatically at scheduled time or next orchestrator session after June 30 00:00 UTC.
 
 ## June 27 AUTONOMOUS WORK QUEUE — Processing History
 
