@@ -2,6 +2,33 @@
 
 ---
 
+## June 29, 2026 (General Research Agent) — Item 33: Phase 2 Post-Deadline (July 1+) Contingency Activation Framework — COMPLETE
+
+**Task**: Exploration Queue Item 33 — Pre-stage contingency activation framework for Domain 51/48 sends if they slip past the July 1 hard deadline. Three outcome branches (A/B/C) with fully pre-authorized execution paths.
+
+**Files created** (directory: `projects/resistance-research/`):
+
+1. **PHASE_2_POST_DEADLINE_CONTINGENCY_ACTIVATION.md** — Three-branch contingency framework. Branch A (sends June 29–30): no activation, normal Tier 2. Branch B (sends July 1–7): condensed Tier 2, Tier 3 start accelerated to send day +2, 72h escalation trigger. Branch C (sends July 8+): full emergency protocol, 6-contact emergency group, August 1 post-recess redirect, CA-specific language retired, Domains 49–50 shifted to August. All dates, contacts, and template modifications pre-populated — no planning required on activation.
+
+2. **PHASE_2_CONTINGENCY_CONTACT_TIER_MATRIX.md** — Pre-populated contact routing by branch. Branch A: full 12-contact normal list. Branch B: 8-contact high-urgency reordering (Domain 51: 8 contacts prioritizing deadline-agnostic national orgs first; Domain 48: 8 contacts prioritizing research orgs + Virginia July 15 gate). Branch C: 6-contact emergency group (all research/litigation orgs, not Hill-adjacent). Copy-paste email groups for each branch. Domains 49–50 reordering by branch (Domain 50 August 1 ballot calendar makes Branch C timing a partial improvement). Cross-domain deconfliction rules for NAACP LDF (appears in D48 and D49), CLC (appears in D51, D48, D49), and Brennan Center (D48 and D51 — different programs).
+
+3. **PHASE_2_POST_DEADLINE_CONTINGENCY_DECISION_TREE.md** — Fully mechanical decision tree. Input: send execution date from INBOX.md post. Output: branch assignment. Thresholds: June 29–30 = Branch A; July 1–7 = Branch B; July 8+ = Branch C. July 1 00:00 UTC auto-triggers Branch B dormant; July 8 00:00 UTC escalates to Branch C. Pre-authorized actions per branch (no user judgment required). Edge cases handled: partial domain confirmation, Gist URL failure, sends crossing branch boundary. Copy-paste INBOX.md post templates and Discord notification templates included.
+
+4. **PHASE_2_CONTINGENCY_EXECUTION_PROCEDURES.md** — Full copy-paste email procedures per branch. Branch B: 8 Domain 51 + 8 Domain 48 emails, all copy-paste ready with [DELIVERY_DATE] and [URGENCY_LEVEL] placeholders filled per branch. Day 3–5 decision point: if 0 replies, activate Tier 3 immediately (do not wait T+7 in Branch B). Branch C: 6 emergency emails (reference Branch B templates with [URGENCY_LEVEL] modification). Saturday–Sunday execution rule (Priority 1–3 immediately, Priority 4–6 Monday 08:00 local). August deferred email framing.
+
+5. **PHASE_2_CONTINGENCY_FINANCIAL_MODEL.md** — Impact analysis per branch. Branch A: $15–18K base case (100%). Branch B: $10–14K base case (60–75%), with primary loss from CA Fair Elections Act window ($4–6K) and secondary loss from Virginia compression. Branch C: $7–9K base case (40–50%), partial offset from August window (Domain 50 ballot calendar alignment actually improves timing). Contingency prep expected value: $825–1,275 probability-weighted (P(B)=30%, P(C)=15%). Zero cost if Branch A; 15–30% upside recovery if B/C.
+
+**Key findings**:
+- CA Fair Elections Act messaging window (July 1) is the primary value-at-risk item — $4–6K of Branch A value is unrecoverable in Branch B/C; national campaign finance contacts retain 60–90% of value regardless of branch
+- Virginia July 15 gate governs ACLU VA contact viability: sends by July 11 = viable; sends July 12+ = skip
+- Branch C emergency 6 are research/litigation orgs specifically because July 12–31 is informal recess; Hill-adjacent contacts deferred to August 1 preserve 80% of their value
+- Domain 50 (LGBTQ+ Civic Participation) August 1 ballot measure deadline means Branch C timing for Domain 50 is partially better than the original July 1 target
+- Maximum contingency execution time: Branch B = 2–3h; Branch C = 4–5h
+
+**Confidence**: 88% — all contacts verified against PHASE_2_COALITION_CONTACT_MATRIX.md (June 17), Gist URLs from PHASE_2_WAVE_1_EXECUTION_CHECKLIST.md (June 28), template language adapted from DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md and DOMAIN_48_EMAIL_TEMPLATE_SET.md. Financial model carries ±25% uncertainty (inherent to advocacy impact estimation).
+
+---
+
 ## June 24, 2026 (General Research Agent) — Item 27: Domains 51/48 Wave 1 Contingency & Escalation Framework — COMPLETE
 
 **Task**: Exploration Queue Item 27 — Build contingency escalation framework to protect Phase 2 timeline if Wave 1 sends slip past June 24.
