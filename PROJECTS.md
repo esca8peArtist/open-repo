@@ -272,6 +272,31 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
     - **Confidence**: 92% (Jekyll/GitHub Pages troubleshooting well-documented; fallback platforms verified current)
     - **Status**: PRODUCTION-READY — user can now push GitHub Pages with full recovery procedures in place
 
+**NEW ITEMS (Session 4562 — 2026-06-29 21:35 UTC — Phase 3 Planning & Execution Infrastructure)**:
+
+45. **resistance-research: Domain 51 + Domain M Phase 2 Execution Runbooks** (2-3h)
+   - **Trigger condition**: None — immediately executable (execution infrastructure already staged)
+   - **Scope**: (1) Domain 51 Phase 2 Wave 1 execution runbook (by June 30 23:59 UTC deadline) — batch send templates, contact list verification, Discord monitoring checklist, rollback triggers. (2) Domain M contingency activation runbook (trigger July 1 if Domain 51 not executed) — pre-authorized escalation sequence, Tier 1-2 contact activation, compressed send schedule (7 days instead of 14), decision tree.
+   - **Value**: Eliminates analysis delays on June 30 deadline and July 1 contingency trigger. User can execute final sends with high confidence and documented rollback procedures.
+   - **Status**: Ready for immediate parallel execution with other queue items
+   - **Owner**: resistance-research team
+
+46. **seedwarden: Phase 3 Contractor Hiring & Onboarding Infrastructure** (3-4h)
+   - **Trigger condition**: User approval signal (Q3 bundle hiring start date) — currently awaiting user confirmation
+   - **Scope**: (1) Upwork job description templates for 6 contractor roles (photographer, 3 writers, herbalist consultant, logistics coordinator). (2) Hiring timeline and selection rubric (background verification, portfolio audit, reference check procedures). (3) Contractor onboarding checklist (Week 1: orientation, tool access, style guide; Week 2: gallery setup, first batch review; Week 3-6: production with escalation triggers). (4) Payment + deliverable tracking spreadsheet with FTC disclosure checkpoints.
+   - **Value**: De-risks Q3 launch (Jun 29–Aug 3) by having hiring infrastructure production-ready BEFORE user posts job postings. Reduces contractor friction from 15-20h to 5-7h operational overhead.
+   - **Status**: Ready for immediate execution (no dependencies on user hiring completion)
+   - **Owner**: seedwarden team
+
+47. **stockbot: Phase 3 Strategy Definition & Next-Phase Architecture** (2-3h)
+   - **Trigger condition**: None — immediately executable (Phase 2 complete, strategic foundation in place)
+   - **Scope**: (1) Phase 3 definition — review current live monitoring + model pipeline Phase 2 status, identify logical Phase 3 scope (likely: covered call integration, additional tickers, or risk management enhancements). (2) Phase 3 architecture decision matrix — 3-5 options with confidence scores, timeline estimates, dependency mapping, user decision input requirements. (3) July-August Phase 3 pre-work (model re-evaluation, covered-call documentation review, options-level testing).
+   - **Value**: Clarifies "what comes after Phase 2" without requiring user decision. Prepares decision matrix for user choice. Unblocks July planning.
+   - **Status**: Ready for immediate execution
+   - **Owner**: stockbot team
+
+---
+
 **NEW ITEMS (Session 4492 — 2026-06-29 03:00–04:07 UTC — Exploration Queue Replenishment Phase 5.2 + Phase 6)**:
 
 30. **open-repo: Phase 5.2 Wave 0 Content Strategy & Contributor Onboarding** (2-3h) ← **✅ COMPLETE (SESSION 4492)**
