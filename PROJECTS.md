@@ -574,6 +574,31 @@ All work identical to Session 4562 (harmless duplicate; files overwritten with s
 
 ---
 
+**NEW ITEMS (Session 4564 — 2026-06-29 22:40 UTC — Queue Replenishment Wave)**:
+
+51. **resistance-research: Domain 57 (Multilateral Withdrawal) Distribution Pre-Staging** (2-3h)
+   - **Trigger condition**: August 10 user decision (execute Domain 57 distribution per Phase 2 contingency timeline)
+   - **Scope**: Pre-stage all Domain 57 Phase 2 distribution infrastructure: (1) Email templates (14-16 copy-paste ready templates for Tier 1 organization contacts: Constitutional Scholars, ACLU Democracy Program, Democracy Forward, etc.). (2) Contact list verification (40+ expert/org contacts verified current, dead contact procedures documented). (3) Distribution schedule (UTC-stamped send sequence, Aug 10-18 timeline, escalation gates). (4) Contingency decision tree (if Wave 2 HIGH signal → accelerate Domain 57; if LOW/ZERO → standard timeline). (5) Gist URL placeholders (15 pre-positioned for domain-specific research findings pre-fill). All templates copy-paste ready. Domain 57 research COMPLETE (Session 2973, lines 99-101); removes 2-3h planning delay at August 10 trigger.
+   - **Confidence**: 88% (Domain 57 research known, Phase 2 distribution patterns proven, contact verification procedures established)
+   - **Owner**: resistance-research team
+   - **Status**: Ready for immediate execution
+
+52. **seedwarden: Q3 Week 3-4 Contingency Monitoring Framework** (2h)
+   - **Trigger condition**: Week 3 July 13-20 (Sleep & Nervines + Practitioner launch)
+   - **Scope**: Extend Item 34's Week 1-2 framework to cover Week 3-4: (1) Daily social engagement tracking (LinkedIn DM surge detection, Instagram algorithm shifts, YouTube engagement cliff). (2) Subscriber churn monitoring (unsubscribe >0.5% daily triggers email review). (3) Contractor content delivery escalation (3-day delays = soft escalation). (4) Email deliverability hotspot detection (opens <18% = ISP investigation). (5) Week 5-6 contingency triggers (revenue underperformance >20% = promotional bundle mix shift). Item 34 covers peak acquisition (Jun 29-Jul 6); Item 52 extends to peak execution (Jul 13-27). 18 days lead time = ample for contingency prep.
+   - **Confidence**: 85% (framework from Item 34 proven, contractor patterns established, benchmarks from Q2 2026)
+   - **Owner**: seedwarden team
+   - **Status**: Ready for immediate execution
+
+53. **career-training: Phase 1 GitHub Pages Deployment Support & Remediation Checklist** (2h)
+   - **Trigger condition**: User GitHub Pages push (currently awaiting)
+   - **Scope**: Item 50 identified 4 CRITICAL build failures (lines 567-572). Create: (1) Remediation runbook for each failure (mkdir dirs, create files, edit config, test build). (2) Decision tree: local build works but GitHub Actions fails → troubleshooting flowchart. (3) Rollback procedures (Netlify fallback if GitHub unrecoverable in 2h). (4) Post-launch verification (200 status on links, responsive signup, analytics firing). (5) Phase 2 handoff document. Value: enables confident Phase 1 push within 48h of user decision (no surprises = higher confidence for Phase 2 investment).
+   - **Confidence**: 88% (Jekyll troubleshooting documented, remediation from Item 19, Phase 2 platform complete Session 4469)
+   - **Owner**: career-training team
+   - **Status**: Ready for immediate execution
+
+---
+
 44. **resistance-research: Domain M Post-June-30 Contingency Activation Framework** (1.5-2h) ← **✅ COMPLETE (Session 4560, 21:25 UTC)**
    - ✅ **Executed** (21:15–21:25 UTC, resistance-research subagent, commit e80edaac)
    - **Deliverables COMPLETE**:
