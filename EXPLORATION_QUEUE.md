@@ -43,15 +43,21 @@
 
 ---
 
-### 103. ⏳ career-training — Phase 2 Growth Metrics & Enrollment Funnel Deep-Dive (Session 4504)
-**Status**: ⏳ QUEUED — Added 2026-06-29 05:30 UTC
-**Effort**: 2–2.5 hours estimated
-**Scope**: Phase 2 planning (post-GitHub-Pages launch). Deep-dive into analytics segmentation (instructor vs learner vs contractor), email list strategy, conversion funnel optimization, growth hypothesis testing framework. Can proceed now independent of Phase 1 user push timing.
-**Triggers**: None — independent of user GitHub Pages deployment
-**Value**: Ready Phase 2 launch immediately when user completes Phase 1 push. Prevents post-launch scramble for metrics/growth strategy. Advances project Goal (2,000+ active learners by end 2026).
-**Owner**: Pending assignment
-**Confidence**: High (GitHub Pages analytics well-documented, Kit.com integration already prep'd)
-**Notes**: Research cohort analysis, instructor revenue sharing models, certification pathway design
+### 103. ✅ career-training — Phase 2 Growth Metrics & Enrollment Funnel Deep-Dive (Session 4504 COMPLETE)
+**Status**: ✅ COMPLETE — Executed 2026-06-29 06:10–06:16 UTC (general-research subagent, 70K tokens, 399s wall-clock)
+**Deliverables COMPLETE**:
+1. `PHASE_2_GROWTH_STRATEGY_AND_COHORT_ANALYSIS.md` (~2,400 words) — Module completion funnel (35-50% reach Module 1, 12-20% Module 5, 4-8% Module 15+, <2% all 38), revenue model (certification $97-127 + live sessions $35-75 + institutional licenses $150-500/yr, defer monthly subscription), instructor revenue splits (40-50% platform-sourced, 75% instructor-sourced), acquisition channels (partnership outreach >> Google Ads), 2026 target revision (1,000-1,500 realistic by Dec 2026, not 2,000)
+2. `PHASE_2_ENROLLMENT_FUNNEL_ARCHITECTURE.md` (~2,100 words) — 5-stage funnel (Awareness/Activation/Retention/Revenue/Advocacy) with metrics per stage (awareness bounce <50%, CTA CTR 3-5%; activation signup 5-10%, first completion 40-60%; retention completion rate 15-25%, weekly active users; revenue instructors 5-10, certifications 50-100, ARPU $5-15/mo; advocacy NPS 50+, referral 20-30%), A/B testing framework, Week 1 measurement checklist
+**Key Findings**:
+- **Partnership outreach is highest-ROI**: Single AGC California newsletter mention = 50-200 subscribers vs $1,000-2,000 via Google Ads for same volume
+- **Module completion funnel validated** (calibrated from LinkedIn Learning 32K courses, O'Reilly data, MOOC research): First-week engagement is strongest 90-day retention predictor
+- **Revenue model**: Certification + live sessions + institutional licenses stack (NOT monthly subscription — conflicts with static-site model)
+- **Instructor splits**: 40-50% platform-sourced, 75% instructor-sourced (between Skillshare 30% and Kajabi 95%)
+- **2026 target realistic**: 1,000-1,500 by Dec 2026 (5-6 month horizon requires major partnership or Month 3 paid ads); 2,000 by Q1 2027
+- **GitHub Pages SEO**: 3-6 months to rank, not a Phase 2 priority (focus partnership + LinkedIn instead)
+**Owner**: general-research subagent (Session 4504)
+**Confidence**: 82% (research grounded in LinkedIn Learning 2024-2026, O'Reilly MOOC data, Ruzuku 32K-course completion study, SaaS platform benchmarks; 2026 targets calibrated to realistic acquisition pace)
+**Notes**: Files stored in projects/career-training/; Phase 2 ready for immediate launch when Phase 1 goes live; partnership outreach should begin Week 3 (not Month 4)
 
 ---
 
