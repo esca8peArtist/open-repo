@@ -4,6 +4,40 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 42 — Week 1-2 Contingency Monitoring + Week 3-4 Prep Infrastructure — June 29, 2026
+
+**Session**: June 29, 2026
+**Task**: Pre-stage Week 3-4 contingency monitoring systems and Week 1-2 real-time tracking infrastructure. Five deliverables: email dashboard, contractor delivery checklist, churn template, social tracking, and Week 3 bundle prep checklist.
+
+**Status**: COMPLETE — 4 new files written + 1 pre-existing file confirmed. Total item 42 infrastructure: 8 files (including 3 from prior session sub-commits, 1 pre-existing, and 4 new from this task).
+
+**New deliverables (this task)**:
+
+1. **`WEEK_1_2_EMAIL_MONITORING_DASHBOARD.md`** — Google Sheets-ready email tracking dashboard for Women's Health launch week (Jun 29–Jul 4). Six-row grid (one row per day), 8 columns: Date, Sends, Opens, Open Rate %, Threshold Status, Clicks, Click Rate %, Alert. Includes: threshold logic (GREEN >22%, YELLOW 20–22%, RED <15%), daily Kit.com pull instructions, non-send day unsubscribe monitoring, Jul 1 final baseline summary gate (informs Email 2 Jul 6 setup), Google Sheets setup instructions (5 tabs, conditional formatting rules), and Email 2 pre-stage checklist.
+
+2. **`WEEK_3_4_CONTRACTOR_DELIVERY_CHECKLIST.md`** — Condensed daily-use dependency tracker for Week 3-4 contractor deliverables (Jul 10–Aug 3). Critical due dates table by track (photographer, writer, habitat specialist, image licensing). Photo quality gate: 8 criteria both sessions. Writer Gate 1: 5 core + Immunity-specific + Digestive-specific criteria. Writer Gate 2: FTC sign-off + self-edit confirmation. Habitat Gate 2: regional coverage verification. Escalation rules: 4 tracks with Level 1/2/3/4 response ladders. Pre-staged backup inventory table (7 contingencies, file locations).
+
+3. **`WEEKLY_CHURN_MONITORING_TEMPLATE.md`** — Six-row churn monitoring grid (Jun 29–Jul 4), 5 columns: Date, Daily Unsubscribes, Current Subscriber Base, Churn %, Status, Action. Threshold: >0.5%/day = RED. Decision tree: 4 steps (confirm count, timing correlation, spam complaints, send time adjustment). Two retention messaging templates (Template A: frequency adjustment; Template B: content relevance). Tab structure for Google Sheets (5 bundle-week tabs + cumulative tab). Cumulative churn tracker across all 5 weeks. Acceptable cumulative churn ceiling: <8% through Aug 3.
+
+4. **`SOCIAL_ENGAGEMENT_DAILY_TRACKING.md`** — Platform-specific KPI tables, decision trees, and Week 2 replication checklist. LinkedIn: engagement rate thresholds by content type (educational >8%, promotional >3%, testimonial >10%), viral coefficient metric, first-comment strategy rules. Instagram: saves+shares as primary value signal, Reel format escalation for RED posts, hashtag-in-first-comment rule. YouTube Community Tab: comment count primary metric, reply rate target 100% within 24hr, poll format contingency. Per-post log template (copy-paste format). Decision tree for each platform with specific actions at each status level. Friday best-performer analysis (Steps 1–4, Week 1 and Week 2 versions). Week 2 replication checklist (8 items). Cross-week comparison table (Week 1 vs. Week 2 by metric). Aggregate daily status log template (5-minute fill format).
+
+**Pre-existing file confirmed (no duplication needed)**:
+
+5. **`WEEK_3_BUNDLE_PREP_CHECKLIST.md`** — Already present from prior session (Jun 29). Covers Sleep & Nervines bundle photo inventory, copy finalization, contractor assignments, Etsy listing, email setup, and contingencies for Jul 13 launch. SLEEP_BUNDLE_PREP_CHECKLIST.md (more detailed version) also exists and confirmed. No new file required.
+
+**Previously staged (uncommitted, from prior sub-session)**:
+- `WEEK_3_4_EMAIL_MONITORING_DASHBOARD.md` — Week 3-4 email thresholds and fatigue detection (Jul 13–Aug 3)
+- `WEEK_3_4_CONTRACTOR_TRACKING_CHECKLIST.md` — Full Week 3-4 operational contractor tracker with payment milestones
+- `WEEK_3_4_SOCIAL_ENGAGEMENT_MONITORING_TEMPLATE.md` — Week 3-4 post calendar and platform thresholds
+- `SLEEP_BUNDLE_PREP_CHECKLIST.md` — Detailed Sleep bundle readiness gate (Jul 12 5pm ET)
+
+**Cross-reference architecture**:
+- Item 42 files feed forward into Item 34 (Week 1-2 master checklist) and Item 35 (Q4 planning) via PHASE_3_EXECUTION_LOG.md as the common recording point.
+- Churn data from WEEKLY_CHURN_MONITORING_TEMPLATE.md informs send cadence decisions in WEEK_3_4_EMAIL_MONITORING_DASHBOARD.md (Section 8 content adjustment rules).
+- Social replication checklist from SOCIAL_ENGAGEMENT_DAILY_TRACKING.md feeds Week 3-4 content calendar (PHASE_3_EXTENDED_SOCIAL_CALENDAR_JUL_SEP.md Posts 10+).
+
+---
+
 ## Item 35 — Phase 4 Bundle Wave Strategy (Q4 2026, 2027) — June 29, 2026
 
 **Session**: June 29, 2026
