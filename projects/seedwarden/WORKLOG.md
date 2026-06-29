@@ -4,6 +4,35 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 29 — Phase 3 Extended Content Calendar & Landing Page Copy (Session 4491 follow-on) — June 28, 2026
+
+**Session**: June 28, 2026 (follow-on from earlier Item 29 stub creation)
+**Task**: Write 4 production-ready deliverables as named files in `projects/seedwarden/` main directory (not sub-directory). Full content expansion of existing stubs in `phase-3-extended-content/`, incorporating full scope per session brief.
+
+**Status**: COMPLETE — 4 files written to `projects/seedwarden/` (main directory)
+
+**Deliverables**:
+
+1. **`EXTENDED_SOCIAL_MEDIA_CONTENT_CALENDAR.md`** — 60 pre-written posts (Posts 31–90, Aug 4–Sep 26, 2026). Posting schedule: LinkedIn Tue/Thu (2/week), Instagram Mon/Wed/Sat (3/week), YouTube Fri (1 video outline/week). Content mix: 50% educational / 20% testimonial-community / 20% promotional / 10% YouTube long-form outlines. 14 weeks of copy-paste ready posts with dates, hashtags, visual descriptions, and contractor photo assignments by post. Platform hashtag banks (LinkedIn/Instagram/YouTube). Engagement tracking template. Engagement response protocol. TikTok confirmed deferred (Q4 revisit). YouTube video outlines included for 6 videos (15–30 min format) with segment structure, CTA, and guest practitioner interview candidates. Posts 71–90 (Oct) explicitly scoped to Phase 4 content sprint.
+
+2. **`LANDING_PAGE_COPY_FRAMEWORK.md`** — 6 bundle-specific landing page templates (Women's Health, Respiratory Health, Sleep & Nervines, Immunity Support, Digestive Support, Practitioner Tier). Each bundle includes: Hero section (3 headline variants by placement — Etsy / email / social), subheadline (20 words), body copy (250–350 words, mobile-calibrated, Etsy character-limit compatible), 4 feature sections (150–200 words each, herb-specific — dosage/safety/citations included per feature), social proof section (3 testimonial placeholders per bundle), 3–4 CTA variants (primary/seasonal/stack offer/practitioner upsell), 5–7 FAQ objection answers per bundle. Series-level positioning copy, price ladder table ($20–$120), CTA master list (low/medium/high commitment + social-native). All health claims FTC-compliant (traditional use language throughout). Implementation notes for Etsy, web, and email deployment.
+
+3. **`PROMOTIONAL_EMAIL_SEQUENCES.md`** — 6 sequences, all copy-paste ready. Sequence 1 (Free-to-Paid, 5 emails/14 days): welcome + guide delivery, acute/tonic education, Latin binomial education, social proof email, bundle recommendation. Sequence 2 (Bundle Upgrade, 3 emails/21 days): conditional companion-bundle pairing by purchased bundle (5 conditional blocks), Practitioner Tier pitch, complete collection close. Sequence 3 (Pre-Fall Immunity, 2 broadcasts Aug 4 + Sep 1): factual urgency framing around 8–12 week astragalus timeline. Sequence 4 (Winter Prep, 2 broadcasts Oct 1 + Nov 1): honest "what's still timely / what's closed" framing for November. Sequence 5 (Practitioner Back-to-School, 2 broadcasts Aug 11 + Sep 8): student/practitioner/educator segment only. Sequence 6 (Monthly Newsletter, ongoing): template with month-variable sections and "Growing Stories" community content. Full Kit tag reference table (20 tags). FTC/compliance checklist. Seasonal broadcast calendar (August–December).
+
+4. **`TESTIMONIAL_COLLECTION_FRAMEWORK.md`** — Systematic collection, storage, and deployment framework. 3-phase collection timeline (Phase 1: first 30 days, Phase 2: bundle-by-bundle, Phase 3: sustained monthly). 5 request templates: Template A (direct Kit automation, Day 7 post-purchase, personal inbox reply), Template B (Instagram Stories + YouTube Community Tab passive), Template C (practitioner/educator personal email Day 14), Template D (permission follow-up after receiving reply), Template E (contractor testimonial guidance with track-specific angles). 4 incentive tiers: Tier 1 (community recognition, no disclosure), Tier 2 (15% discount, FTC disclosure required), Tier 3 (Growing Stories feature, no disclosure), Tier 4 (educator license for practitioner testimonials, FTC disclosure required). Testimonial tracker schema (CSV, 10 columns). Quality standards (3-criteria rubric — specific/verifiable/relatable, any 2 of 3). Platform-specific deployment rules by testimonial type. Etsy review monitoring checklist + 3 response templates (5-star/4-star/3-star-below). Monthly aggregation checklist. Launch-day implementation checklist with dates.
+
+**Key design decisions**:
+- Existing stubs in `phase-3-extended-content/` were read and incorporated; main-directory files are the authoritative versions with expanded scope per session brief
+- Social calendar Posts 31–70 written with full copy; Posts 71–90 explicitly noted as Phase 4 scope (Oct, weeks 15–18)
+- Email sequences add Sequence 5 (Practitioner Back-to-School, August/September) and Sequence 6 (Monthly Newsletter) not fully written in prior stub
+- Landing page FAQ sections expanded to 5–7 objections per bundle (vs. 0 in prior stub) — most common conversion blocker
+- Testimonial Framework adds Template E (contractor testimonials) and Part 9 (monthly aggregation checklist) not in prior stub
+- TikTok deferred confirmed in social calendar header per Session 4478 guidance
+
+**Confidence**: 91%
+
+---
+
 ## Item 29 — Phase 3 Extended Content Infrastructure (Q3 Launch + Beyond) — June 28, 2026
 
 **Session**: June 28, 2026

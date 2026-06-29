@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-29T03:18:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-29T04:37:35Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (1,083,488 tokens) | All-models 0.1% | Reset in 21h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (1,083,488 tokens) | All-models 0.1% | Reset in 19h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[DEPLOYMENT COMPLETE] REAL-TIME STREAM FIX DEPLOYED 2026-06-24** — Root cause: aggressive `asyncio.wait_for(timeout=300)` wrapper forcefully closed WebSocket every 5 minutes. Fix: removed timeout wrapper, stream now reconnects naturally on Alpaca direction without forced closure (commit d4b675ba). All 5 sessions healthy (jpm_ridge_wf, amzn/aapl/msft/nvda lgbm_ho), WebSocket registered, real-time IEX stream active. **✅ [OPENSPECS COMPLETE] SESSION 4485 VERIFIED** — **(1) LIVE_MONITORI … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[LIVE_MONITORING PHASE 2 COMPLETE] SESSION 4494 (2026-06-29 03:35 UTC)** — All three Phase 2 anomaly detections implemented, tested, and passing: (2a) FILL_MISMATCH (SQLite↔API reconciliation, delta>1), (2b) POSITION_PHANTOM (2-poll guard, engine↔Alpaca sync), (2c) ORDER_REJECTED + ORDER_REJECTED_ESCALATION (per-ticker daily tracking, 3+ rejections = degraded). Bonus: FILL_DETAIL_MISMATCH (partial fills, price slippage >0.5%). **Test results**: 70 health_poller tests passing, 206 cri … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### open-repo
 **Status**: Active — GitHub Pages approach; no Pi server deployment
@@ -72,6 +72,8 @@
 **Resolution**: [awaiting user maintainer action to execute GitHub release push — all content production-ready, no code dependencies]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: seedwarden — focus references Session 4478 (20 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — June 12 deployment never executed; platform decision resolved by user ← 2026-06-28 (Session 4474 — user decision)
 • systems-resilience — Phase 5.1 platform deployment blocking June 9 publication ← 2026-06-28 (Session 4474 — user decision)
@@ -87,43 +89,43 @@ This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434)
 **Do not process this item before June 30 00:00 UTC.**
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - **Status**: PRODUCTION-READY — User can review, edit 1-2 sections, approve Wave 0 launch plan within 30 min. Timeline & gates ready for Q3 execution (July 1 start, Aug 8 decision point).
 
-3. **Exploration Queue Item 31 — systems-resilience Phase 6 Democracy Tools Pre-Research** (03:00–04:07 UTC)
-   - **Agent**: general-research (subagent_type)
-   - **Deliverables**: 4 files created
-     1. `PHASE_6_SCOPE_LANDSCAPE_ASSESSMENT.md` (2,227 words) — 6 Phase 6 domain candidates (A-G) scored on 5 criteria. **Democracy Tools (Domain G) wins Priority 1** (21/25 aggregate, avg 4.2) due to: urgency 5/5 (post-Callais April 2026, SAVE Act June 2026 near-passage, 2026 midterm cycle), highest demand signal, achievable 6-week scope. Recommendation: Domain G + Domain F (Implementation Feasibility) as primary November 4 launch pair; Domains B, D, E deferred to Phase 6b (2027).
-     2. `DEMOCRACY_TOOLS_RESEARCH_OUTLINE.md` (3,980 words) — 4 research zones scoped: (1) voter registration barriers post-Callais (VRA Section 2 gutted to require "present-day intentional discrimination" evidence; 19M registrations purged 2020-22, +21% from prior cycle), (2) technology solutions (TurboVote 79% registered-user turnout vs 64% national; Democracy Works 2024 impact), (3) international models (Canada +207% partner orgs for April 2025 election; vTaiwan volunteer-driven AI deliberation; Estonia 20 years e-voting), (4) movement infrastructure (Brennan Center, LWV, NAACP LDF, Protect The Vote 2026). 15 research questions, 25+ preliminary sources with URLs, 5-8 expert contacts, 12-section structure.
-     3. `PHASE_6_EXPERT_CONTACT_VALIDATION.md` (2,757 words) — 8 contacts verified current as of June 28, 2026: Wendy Weiser (Brennan), Michael Waldman (Brennan), Charles Stewart III (MIT MEDSL, March 2025 pub), Lisa Schur (Rutgers, Oct 2024 pub), Heidi Heitkamp (leadership), Lonna Atkeson (FSU Collins, moved from UNM), Heather McGhee (Demos Senior Fellow), vTaiwan community (active Jan 2025). **Flags**: Sam Wang (added congressional candidacy Jan 2026 — cite published work, do not interview); Myrna Perez (now federal judge — direct researchers to Wendy Weiser). **Replacements staged**: Justin Levitt (Loyola Law School), Tammy Patrick (Election Center).
-     4. `PHASE_6_RESEARCH_TIMELINE_AND_CAPACITY.md` (2,929 words) — Week-by-week Nov 4 – Dec 11 schedule. Solo researcher 160-200 hours (published productivity rates 500-750 words/hour → 65-80K first draft editing to target 45-55K). **No scope compression required** (82% confidence). Two-researcher model increases confidence to 88%. Thanksgiving Nov 26 risk identified with specific mitigation (compress Estonia 500-800 words if needed, never cut zones). Distribution Dec 12-20; audience expansion: add Brennan Center, LWV, NAACP LDF, MIT MEDSL to Phase 5 contact list.
-   - **Key empirical anchors**:
-     - Louisiana v. Callais (Apr 29, 2026): SCOTUS 6-3 weakened VRA Section 2; 40% higher purge rates in formerly-VRA jurisdictions
-     - 19M voter registrations purged 2020-22 (+21% from 2014-16 cycle)
-     - SAVE Act impact: Kansas precedent shows 31K eligible citizens (12% of applicants) blocked by proof-of-citizenship requirement
-     - TurboVote: 79% turnout registered users vs 64% national; 72% youth vs 56% national
-     - 26 states + D.C. have some same-day registration; 24 states + D.C. have automatic voter registration as of late 2025
-   - **Confidence**: 85% (timeline mechanistic; Democracy Tools highest-scoring domain verified via 5-criterion matrix; expert contacts verified current; scope assessed against published research productivity rates)
-   - **Status**: PRODUCTION-READY — Phase 6 launch decision-making ready. User can review, validate expert contact list and data anchors, approve Phase 6 timeline within 30 min. November 4 Phase 3 launch infrastructure pre-positioned without planning overhead.
+**Status**: AGENT RUNNING — Autonomous work identified: LIVE_MONITORING Phase 2 (fill mismatch detection, position phantom guards, order rejection promotion). Spawned stockbot subagent to implement per LIVE_MONITORING_ROADMAP.md sections 2a-2c. Agent currently in progress (submodule has uncommitted changes as of 03:47 UTC).
 
-4. **Exploration Queue Assessment**
-   - **Items 30-31 added**: Both high-strategic-value pre-research for unfinished project scope (Phase 5.2 strategy for open-repo, Phase 6 democracy tools for systems-resilience)
-   - **Items 1-29 status**: All either COMPLETE (24-29), time-gated (20, 13:05 UTC), or trigger-dependent (all others)
-   - **Queue replenishment**: Successful. Two projects (open-repo, systems-resilience) now have next-phase infrastructure pre-staged for user decision-making and execution.
+**Work completed**:
 
-**System state (End Session 4492, 04:07 UTC)**:
-- ✅ **Stockbot**: Pre-market checkpoint awaiting 13:05 UTC health gate (Item 20 deferred per protocol — within-2h rule)
-- ✅ **Resistance-research**: Distribution materials GO. Awaiting user execution TODAY/TOMORROW.
-- ✅ **open-repo**: Phase 5.2 Wave 0 strategy staged — user can approve launch plan within 30 min. Ready for Q3 execution.
-- ✅ **systems-resilience**: Phase 6 Democracy Tools pre-research staged — user can approve timeline within 30 min. Ready for Nov 4 launch.
-- ✅ **INBOX**: One item (June 30 calibration reset) deferred to June 30 00:00 UTC.
-- ✅ **Uncommitted files**: 8 new files staged (4 open-repo + 4 systems-resilience). Ready for commit.
+1. **Orchestrator Orientation** (03:28–03:35 UTC)
+   - Reviewed ORCHESTRATOR_STATE.md (generated 03:26 UTC): all staged work from Session 4492 confirmed committed
+   - Identified that Session 4493 concluded "no autonomous work available" but missed actionable Phase 2 scope
+   - **Key insight**: Stockbot's Phase 2 live monitoring (fill/phantom/rejection detection) is fully documented in LIVE_MONITORING_ROADMAP.md and marked "ready to start immediately with no gate blockers" (ORCHESTRATOR_STATE)
+   - This is legitimate autonomous work advancing project Goal (fully automated trading platform)
+   - Fits SPEC→PLAN→IMPLEMENT cycle: PLAN is the roadmap, IMPLEMENT is the autonomous agent work
 
-**Next immediate actions**:
-1. **Commit all staged files** (open-repo + systems-resilience Phase 5.2/6 pre-research)
-2. **Update PROJECTS.md** to reflect new Exploration Queue items 30-31 and current focus lines
-3. **User actions TODAY/TOMORROW** (resistance-research Domain 51/48 sends — 3 days to July 1 deadline)
-4. **June 29 13:05 UTC** (stockbot pre-market health checkpoint, Item 20)
-5. **June 29 13:30 UTC** (stockbot market open, all 5 sessions active)
-6. **June 30 00:00 UTC** (INBOX calibration reset, run usage-check.py --calibrate 3.0 67.4)
+2. **Work spawned** (03:35 UTC)
+   - **Agent**: stockbot subagent
+   - **Task**: LIVE_MONITORING Phase 2 implementation (2a + 2b + 2c + 2d)
+   - **Scope**: 
+     * 2a: FILL_MISMATCH detection (SQLite helper + API cross-reference + anomaly emission + diagnosis handler + 3 tests)
+     * 2b: POSITION_PHANTOM detection (2-poll guard + SQLite + API helpers + anomaly emission + tests)
+     * 2c: ORDER_REJECTED promotion (lightweight check + 15-min window + escalation logic + tests)
+     * 2d: Enhanced daily summary (fill reconciliation + per-session P&L)
+   - **Deliverables**: Production-ready code, all tests passing, committed to master
+   - **Est. wall-clock time**: 2-3 sessions worth of work
+
+**Blockers**: None. Phase 2 roadmap is detailed and unblocked.
+
+**System state (Session 4494, 03:47 UTC — Orchestrator continuation check)**:
+- ✅ **Stockbot** (Priority 1): Phase 2 implementation agent running (submodule dirty: CHECKIN.md, health_poller.py modified, new validation framework staged). **Estimated completion**: 1-2 sessions. No secondary work available while agent runs.
+- ✅ **Resistance-research** (Priority 2): Awaiting user execution (Domain 51 send overdue by 14 days, July 1 deadline = 3 days away). Execution infrastructure production-ready; no autonomous work available.
+- ✅ **open-repo**: Phase 5.2 Wave 0 strategy awaiting user review/approval (staged Session 4492). No autonomous work until user approves.
+- ✅ **systems-resilience**: Phase 6 Democracy Tools pre-research awaiting user review/approval (staged Session 4492). No autonomous work until user approves.
+- ✅ **Exploration Queue**: 31 items (mostly complete or trigger-dependent). No actionable items in next 48h that don't have external triggers.
+- ✅ **BLOCKS**: 3 active (unresolvable by orchestrator: VeraCrypt restart, test print, maintainer push).
+- ✅ **INBOX**: 1 item queued (June 30 00:00 UTC calibration reset).
+
+**Next milestones**:
+- Stockbot Phase 2 agent completion (ETA: 1-2 sessions, target June 29-30)
+- **June 29 13:05 UTC**: Pre-market health checkpoint (within 2-hour pre-event window; will become actionable at 11:05 UTC)
+- June 30 00:00 UTC: INBOX calibration reset (don't process until then)
 
 ---

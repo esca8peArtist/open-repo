@@ -1,5 +1,56 @@
 # mfg-farm Project WORKLOG
 
+## Session 4491 (June 28, 2026) — Item 27: Etsy & Amazon Handmade Pre-Launch Templates
+
+**Objective**: Produce 4 copy-paste-ready templates for immediate market activation post-test-print. Templates eliminate the 2-3 day setup delay between test print pass and live listings.
+
+**Deliverables completed**:
+
+### 1. ETSY_LISTING_TEMPLATE.md (pre-existing, verified production-ready)
+- Full listing structure: title formula (66-char, keyword-first), 13 SEO tags (pre-filled), 5-bullet description, shipping profile, margin math, photo checklist, shop "About" section
+- Pre-filled for C-01 (3-pack) at $12.99 launch price; $14.99 post-review price
+- Tags cover Tier-1 keywords (desk cable organizer, 3D printed cable clips), seasonal swap protocol, ChatGPT discovery paragraph
+- Shipping: USPS First Class, free shipping baked into price, 3-5 day listed / 24-48h actual (triggers "faster than expected" reviews)
+- Net verified: $25.79 at $28.99 list (Session 4469 / PHASE_2_TRACK_3)
+
+### 2. AMAZON_HANDMADE_APPLICATION_TEMPLATE.md (pre-existing, verified production-ready)
+- Section 1: Original design certification language (verbatim-ready, covers CadQuery design, Bambu P1S manufacturing, no third-party files)
+- Section 2: Product category selection — Home > Cord & Cable Management (primary); future SKU routing table
+- Section 3: Photography specs — main image RGB 255/255/255 required; 9-slot supplemental order specified
+- Section 4: Brand story (3-paragraph template, customizable brackets for city/supplier name)
+- Section 5: Shipping policy — 3-5 day listed / 1-2 day actual; USPS First Class for small orders; 30-day return window (Amazon mandatory)
+- Section 6: FBA vs. self-fulfill cost comparison; $21.23 FBA net vs. $24.64 self-fulfill at $28.99; FBA launch capital $155-265
+- Section 7: 5-7 week timeline — submit Day 0, expect approval Week 5-7; exact sequence with weekly actions
+- Critical path note: apply within 48h of test print passing to maximize review window
+
+### 3. PRODUCT_POSITIONING_MATRIX.md (NEW — created this session)
+- Channel 1 Etsy: customization, original parametric design, made-to-order; buyer persona (25-45, hybrid/remote); 5 differentiation levers ranked by conversion impact; copy angle with exact title and first-160-char description; what NOT to say
+- Channel 2 Amazon Handmade: functional-solution framing, Prime + Handmade badge positioning; 5 differentiation levers; copy angle with bullet 1 and title text; what NOT to say
+- Channel 3 Reddit: per-community tactical angles for r/battlestations, r/desksetup, r/homeoffice, r/3Dprinting, r/cableporn — content type, framing, post format, link protocol for each
+- Competitive landscape: 6 named Etsy competitors with price, review count, threat level; Amazon 3-tier analysis; magnetic organizer threat + counter-positioning language
+- Gap analysis: 7 specific gaps competitors do not cover (modular rail system, original CAD, print-to-order freshness, desk-edge tolerances, USA manufacturing at $15-25, dual-channel presence, systematic Reddit presence)
+- Buyer stage matrix: 6 stages from discovery through repeat purchase, best channel for each
+
+### 4. CHANNEL_PRICING_CALCULATOR.md (NEW — created this session)
+- Part 1: COGS inputs — filament ($0.0135/g), machine cost ($0.28/hr), packaging ($0.28-$0.80), shipping ($4.10-$6.25 by weight)
+- Part 2: Etsy net table — 7 price points from $12.99 (3-pack) to $38.99 (system bundle); ex-labor and at-$20/hr-labor figures; verified $25.79 pre-COGS net reconciled
+- Part 3: Amazon FBA net table — 5 price points; $21.23 FBA pre-COGS net reconciled; post-COGS comparison showing FBA nets $1.38 more than Etsy at system SKU (FBA handles shipping)
+- Part 4: Color variant pricing — 3 standard colors (no premium), custom colors (+$2.00 premium); color split estimate (50% black, 30% white, 20% gray); Amazon parent/child ASIN structure
+- Part 5: Breakeven analysis — $500/month target reached on Etsy alone at 20 units/week at any price above $12.99; revenue scenarios for Etsy-only, Etsy+Amazon Month 3, Etsy+Amazon Month 6; printer cost recovered in 1.3-3.2 weeks; full startup capital ($622) recovered in 2.4 weeks
+- Part 6: Price-raise decision rules (milestone-gated, not time-gated) — 7 milestones from 0 reviews through Offsite Ads threshold
+- Part 7: New-product fill-in template (blank form with all formulas)
+
+**Key findings**:
+- All 4 templates are copy-paste ready at test print pass — no [TODO] placeholders in any critical field
+- $500/month Phase 1 target is achievable on Etsy alone at 20 units/week; Amazon adds additive revenue
+- Post-COGS, Amazon FBA nets slightly more than Etsy at the system SKU level because FBA's $3.41 fee is cheaper than the $6.00 shipping Etsy sellers absorb — the $4.56 fee-only gap is not the right decision frame
+- 7 competitive gaps identified — modular rail system + original CAD + print-to-order are the top 3 defensible differentiators no current competitor offers
+- Amazon Handmade application timing is critical: every week of delay costs ~1 week of Amazon availability; apply within 48h of test print pass
+
+**Confidence**: 91% — all pricing from verified Session 4469 research; templates are mechanical application of that data
+
+---
+
 ## Session 4472 (June 28, 2026) — Listing Photos Guide, Topo Maps Research, Expanded Product Ideas
 
 **Objective**: Produce three strategic deliverables to advance parallel business development while test print awaits physical execution.

@@ -1,5 +1,38 @@
 # Open-Repo Project Worklog
 
+## Phase 5.2 Wave 0 Content Strategy — Four-Document Package (2026-06-28)
+
+**Completion Date**: 2026-06-28
+
+**Agent**: Claude Sonnet 4.6 (General Research Agent)
+
+**Objective**: Design Phase 5.2 Wave 0 content strategy for first 8–12 weeks of live public operation. GitHub Pages delivery context (no local server). Phase 5 schema documentation complete and production-ready.
+
+### Files Produced
+
+- **`PHASE_5_2_WAVE_0_CONTENT_STRATEGY.md`** (~2,800 words) — Comprehensive strategy: domain assessment, contributor onboarding, GitHub Pages mechanics, 12-week timeline, 3 pre-authorized risk scenarios
+- **`WAVE_0_DOMAIN_CANDIDATES.md`** (~1,200 words) — 5 domains scored against 4 criteria (gap, community signal, schema complexity, recruitment feasibility). Water Systems Priority 1, Food Preservation Priority 2, Seed Preservation Priority 3, Medical Standby, Botanical Wave 1
+- **`WAVE_0_CONTRIBUTOR_ONBOARDING_TEMPLATE.md`** (~800 words) — Copy-paste GitHub Issue template + Contribution Guide + Maintainer playbook. Target: 5 min to first submission for non-technical contributors
+- **`WAVE_0_TIMELINE_AND_GATES.md`** (~700 words) — Week-by-week roadmap (Jun 28 – Sep 6) with numeric go/no-go gates, dependency map, and non-negotiable rules
+
+### Key Findings
+
+- Water Systems is Priority 1: WHO WASH manuals are not in any ZIM archive; Practical Action CC BY briefs are unstructured; community (r/preppers, r/Bushcraft, WASH practitioners) is reachable and motivated
+- Food Preservation Priority 2: NCHFP content is public domain and directly schematizable; community is large (r/Canning 250K, r/fermentation 600K); schema complexity is lowest of all five domains
+- The critical gate is Week 6 (Aug 8): 10 contributor submissions. Below 5 = Scenario A activates (solo content strategy replaces contributor recruitment)
+- GoatCounter is the analytics tool for GitHub Pages: free, no cookies, no GDPR banner, <3KB script, supports the funnel tracking needed
+- A/B testing on static GitHub Pages requires sequential variant deployment (Weeks 1–3, 3–8, 8–10) with click-through rate as the metric — parallel split testing requires PostHog or JavaScript randomization
+- Medical Reference is gated on reviewer outreach (already drafted); send emails Week 2 regardless of other workload
+
+### Confidence Assessment
+
+- Domain gap analysis: 82% (verifiable by searching Kiwix library and Wikipedia; not fully verified)
+- Contributor conversion estimates (0.5–1% of outreach readers): 75% (based on open-source onboarding research benchmarks, not project-specific data)
+- Timeline dates: 95% (mechanical; assumes no GitHub infrastructure problems)
+- Risk scenario thresholds: 78% (grounded assumptions, not historical measurement)
+
+---
+
 ## Phase 6 Planning Memo — Decision-Ready Scoping (2026-06-03)
 
 **Completion Date**: 2026-06-03
