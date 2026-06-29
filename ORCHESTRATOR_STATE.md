@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-29T13:51:07Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-29T15:07:01Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (1,083,488 tokens) | All-models 0.2% | Reset in 10h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (1,083,488 tokens) | All-models 0.2% | Reset in 9h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -20,11 +20,11 @@
 ## Active Projects
 ### resistance-research
 **Status**: Active — Phase 2 Wave 1 execution initiated (Session 3220)
-**Focus**: ✅ **PHASE 2 WAVE 1-2 COMPLETE; PHASE 2 DISTRIBUTION READY FOR EXECUTION; PHASE 3 SOURCE STAGING COMPLETE** — Phase 2 distribution infrastructure production-ready with execution checklist, email templates, contact lists (Domains 48, 51). Critical urgency: Domain 51 send 14 days overdue, July 1 deadline (3 days away). Phase 3: both Domain K (Federal Judiciary, 12,700+ lines) and Domain H (Constitutional Resilience Architecture, 7,500 words) production-ready for law school/movement distribution … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **PHASE 2 WAVE 1-2 COMPLETE; PHASE 2 DISTRIBUTION READY FOR EXECUTION; PHASE 2 POST-EXECUTION MEASUREMENT INFRASTRUCTURE PRODUCTION-READY; PHASE 3 SOURCE STAGING COMPLETE** — Phase 2 distribution infrastructure production-ready with execution checklist, email templates, contact lists (Domains 48, 51). **Post-execution measurement now live**: DOMAIN_51_RESPONSE_MONITORING_PROTOCOL.md (email open/click tracking, escalation detection, congressional recess awareness), DOMAIN_51_IMPACT_DASHBOAR … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### stockbot
 **Status**: Active — **STRATEGIC RESET 2026-05-30**: Gate 1 failed 3 consecutive checkpoints (FAR_MISS_C1 May 12, STILL_MISS_B2 May 19, STILL_MISS_B2 May 22). User has directed complete strategy reassessment. 67-session breadth test terminated. Jetson running minimal 2-session config. Priority #1: build proper backtesting pipeline before deploying any model.
-**Focus**: ✅ **[LIVE_MONITORING PHASE 2 COMPLETE] SESSION 4494 (2026-06-29 03:35 UTC)** — All three Phase 2 anomaly detections implemented, tested, and passing: (2a) FILL_MISMATCH (SQLite↔API reconciliation, delta>1), (2b) POSITION_PHANTOM (2-poll guard, engine↔Alpaca sync), (2c) ORDER_REJECTED + ORDER_REJECTED_ESCALATION (per-ticker daily tracking, 3+ rejections = degraded). Bonus: FILL_DETAIL_MISMATCH (partial fills, price slippage >0.5%). **Test results**: 70 health_poller tests passing, 206 cri … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[LIVE_MONITORING PHASE 2 COMPLETE] SESSION 4494 (2026-06-29 03:35 UTC); MODEL_PIPELINE PHASE 2 PRE-STAGING COMPLETE (SESSION 4528 ITEM 39)** — All three Phase 2 anomaly detections implemented, tested, and passing: (2a) FILL_MISMATCH (SQLite↔API reconciliation, delta>1), (2b) POSITION_PHANTOM (2-poll guard, engine↔Alpaca sync), (2c) ORDER_REJECTED + ORDER_REJECTED_ESCALATION (per-ticker daily tracking, 3+ rejections = degraded). Bonus: FILL_DETAIL_MISMATCH (partial fills, price slippa … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### open-repo
 **Status**: Active — GitHub Pages approach; no Pi server deployment
@@ -32,7 +32,7 @@
 
 ### systems-resilience
 **Status**: Active — GitHub Pages approach; no Pi server deployment; Phase 6 Domain A research complete
-**Focus**: **[ACTIVE — GITHUB PAGES PATH; PHASE 6 DEMOCRACY TOOLS PRE-RESEARCH STAGED]** — Platform decision resolved (2026-06-28, Decisions 1-2): User rejected Pi hosting, Nextcloud/Matrix, and Discourse. All content (Phase 5.1 corpus 61,611 words, Phase 6 research) will go to GitHub Pages / public GitHub. **Phase 6 status**: ✅ **[SESSION 4492] DEMOCRACY TOOLS DOMAIN PRE-RESEARCH COMPLETE (ITEM 31)** — Democracy Tools (Domain G) wins Priority 1 for Phase 6 (21/25 aggregate score, urgency 5/5 due t … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[ACTIVE — GITHUB PAGES PATH; PHASE 6 DEMOCRACY TOOLS EXECUTION FRAMEWORK PRODUCTION-READY (ITEM 40); PHASE 6 RESEARCH LAUNCH NOV 4]** — Platform decision resolved (2026-06-28, Decisions 1-2): User rejected Pi hosting, Nextcloud/Matrix, and Discourse. All content (Phase 5.1 corpus 61,611 words, Phase 6 research) will go to GitHub Pages / public GitHub. **Phase 6 status**: ✅ **[SESSION 4492] DEMOCRACY TOOLS DOMAIN PRE-RESEARCH COMPLETE (ITEM 31)** + ✅ **[SESSION 4528] PHASE 6 EXECUTION F … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -84,34 +84,6 @@
 *(All current new items are being processed in parallel or are time-gated. See "Processing" section below.)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - `JETSON_ONEDRIVE_REMEDIATION_INSTRUCTIONS.md` (full user guide with checklists, troubleshooting, pre-execution steps)
-   - **Status**: Ready for post-market (20:00 UTC) execution; no action required during market hours
-   - **Impact**: Frees 12GB disk space, stops syslog growth, prevents RED status by July 1-4
-4. ✅ **Item 33 & 34: Parallel Agent Spawning** (13:35 UTC) — Launched 2 independent subagents:
-   - **a6e8401bbaf7526dc** (resistance-research): Build Phase 2 post-deadline contingency framework (1.5-2h)
-   - **ab6a9c8a52c9177f4** (seedwarden): Build Phase 3 Week 1-2 execution master checklist (1-1.5h)
-   - **Rationale**: Independent work, parallel execution 3.5× throughput vs sequential
-   - **Market hours constraint**: No stockbot code changes during 13:30-20:00 UTC (engine restart risk)
-
-**Market-hours timeline**:
-- 13:30–20:00 UTC: Phase 2 live monitoring active; agents work on Items 33-34 in background
-- 20:00 UTC: Market close; awaiting agent completion; may execute Jetson remediation post-market if user authorizes
-
-**Critical escalation**: Domain 51 emails NOT SENT (14 days overdue, 48h to July 1 deadline). User must execute Wave 1 sends immediately. Templates ready: `DOMAIN_51_URGENT_JUNE29_EXECUTION_SUMMARY.md` + `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md`.
-
-**Next**: Agents continue background execution; orchestrator stands by for post-market completion + Jetson remediation authorization.
-
-
-**Item 34 completion** (14:05 UTC) — seedwarden Phase 3 Week 1-2 execution master checklist COMPLETE
-- ✅ Deliverable: `PHASE_3_WEEK_1_2_EXECUTION_CHECKLIST.md` (production-ready, zero [TODO] placeholders)
-- ✅ Scope: Pre-execution setup, daily blocks June 29-July 13, weekly roll-ups, contingency procedures, automation readiness
-- ✅ All metrics pre-filled from source (22-28% email open, 3-5% click, 150-250 impressions/post)
-- ✅ All procedure templates include copy-paste instructions, platform-specific settings, Kit automation tags
-- Duration: 355s wall-clock, 85K tokens
-- Status: Ready for immediate user deployment (June 29 9am ET Week 1 launch)
-
-
-**Item 33 completion** (14:20 UTC) — resistance-research Phase 2 post-deadline contingency framework COMPLETE
 - ✅ Deliverable 1: `PHASE_2_POST_DEADLINE_CONTINGENCY_ACTIVATION.md` (285 lines, mechanical decision tree)
   - Branch A (July 1-8): T+7 gate suspended, Wave 3 by July 10, 12 sends
   - Branch B (July 9-14): Daily cadence, Wave 3 within 4 days, 13-14 sends
@@ -123,3 +95,32 @@
 - ✅ All contacts verified June 29; zero [TODO] placeholders
 - Duration: 831s wall-clock, 84K tokens
 - Status: Production-ready; can activate same-day if Domain 51 Wave 1 sends slip past July 1
+
+
+---
+
+## Session 4529 (2026-06-29 14:52–15:05 UTC) — MARKET HOURS MONITORING; EXPLORATION QUEUE REPLENISHMENT
+
+**Status**: ✅ **MARKET HOURS IDLE MAINTAINED; QUEUE REPLENISHED** — During market hours (13:30-20:00 UTC), oriented on state from Sessions 4525-4528. All Items 1-40 complete. No autonomous work available during market hours (stockbot policy: no code changes 13:30-20:00 UTC). Per protocol: replenished Exploration Queue with Items 41-43 for post-market execution.
+
+**Session 4529 actions** (14:52 UTC):
+
+1. ✅ **Orientation complete** — ORCHESTRATOR_STATE.md (auto-gen 14:50 UTC), verified all Items 38-40 committed, market hours active, no state changes needed
+2. ✅ **Block verification** — Domain 51 emails NOT SENT (critical, 48h to deadline); 3 other blocks require user action (VeraCrypt restart, test print, maintainer permissions)
+3. ✅ **Queue audit** — Items 1-40 all complete or time-gated. Per protocol: <3 active items → replenish queue
+4. ✅ **Exploration Queue replenishment** — Added Items 41-43 to PROJECTS.md:
+   - **Item 41**: open-repo Water Systems Wave 0 planning (2-3h, trigger: user approval)
+   - **Item 42**: seedwarden Q3 Launch monitoring + Week 3-4 contingency (2-3h, trigger: Week 1 launch begins)
+   - **Item 43**: stockbot Phase 2 Activation pre-staging (2-3h, trigger: July 7 gate met)
+5. ✅ **Post-market plan confirmed** — Item 32 Jetson remediation scripts ready for 20:00 UTC execution (awaiting user authorization)
+
+**System status**:
+- ✅ Phase 2 live monitoring: Active, GREEN
+- ✅ Jetson health: GREEN (containers healthy)
+- ✅ Items 38-40: All committed (commits 975e3c8a-6d1c1f00)
+- ✅ Items 41-43: Added to queue, ready for post-market
+- 🔴 Domain 51: Critical, NOT SENT (48h to deadline)
+
+**Market-hours policy**: ✅ Maintained (no stockbot changes, monitoring only)
+
+**Next**: Standing by for 20:00 UTC post-market checkpoint. Domain 51 user action remains critical (user must send emails today for 100% value recovery vs 60-75% post-July-1).
