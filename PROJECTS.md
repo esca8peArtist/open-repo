@@ -272,6 +272,34 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
     - **Confidence**: 92% (Jekyll/GitHub Pages troubleshooting well-documented; fallback platforms verified current)
     - **Status**: PRODUCTION-READY — user can now push GitHub Pages with full recovery procedures in place
 
+**NEW ITEMS (Session 4492 — 2026-06-29 03:00–04:07 UTC — Exploration Queue Replenishment Phase 5.2 + Phase 6)**:
+
+30. **open-repo: Phase 5.2 Wave 0 Content Strategy & Contributor Onboarding** (2-3h) ← **✅ COMPLETE (SESSION 4492)**
+   - ✅ **Executed 03:00–03:48 UTC June 29** (general-research subagent execution)
+   - **Deliverables COMPLETE**:
+     1. `PHASE_5_2_WAVE_0_CONTENT_STRATEGY.md` (2,800 words) — Domain prioritization (Water Systems Priority 1), contributor onboarding workflow, platform mechanics (GoatCounter + sequential A/B testing), week-by-week timeline with numeric gates, pre-authorized rollbacks
+     2. `WAVE_0_DOMAIN_CANDIDATES.md` (1,200 words) — 3-5 candidates scored; Water Systems wins on gap analysis (WASH practitioner community large + NCHFP content public-domain sourcing)
+     3. `WAVE_0_CONTRIBUTOR_ONBOARDING_TEMPLATE.md` (800 words) — Copy-paste-ready GitHub Issue template (4-question plain-language form, 3-5 min), maintainer conversion playbook (removes JSON-LD burden from non-technical contributors)
+     4. `WAVE_0_TIMELINE_AND_GATES.md` (700 words) — Jun 28 – Sep 6 schedule, Week 6 (Aug 8) critical gate (10-contributor threshold), pre-authorized solo-content fallback if <5 submissions
+   - **Key features**: Contributor friction mitigated via plain-text issue form; analytics pre-configured (GoatCounter CTR tracking); timeline mechanical (all dates fixed, gates numeric); rollback thresholds pre-authorized
+   - **Status**: PRODUCTION-READY — user can approve Wave 0 launch plan within 30 min
+   - **Confidence**: 84% (timeline mechanistic; contributor conversion rates from OSS benchmarks, treat as hypothesis for Week 6 calibration)
+   - **Owner**: open-repo team (Session 4492)
+
+31. **systems-resilience: Phase 6 Democracy Tools Architecture & Expert Contact Validation** (3-4h) ← **✅ COMPLETE (SESSION 4492)**
+   - ✅ **Executed 03:00–04:07 UTC June 29** (general-research subagent execution)
+   - **Deliverables COMPLETE**:
+     1. `PHASE_6_SCOPE_LANDSCAPE_ASSESSMENT.md` (2,227 words) — Democracy Tools (Domain G) wins Priority 1 (21/25 aggregate score) vs 6 other domains. Urgency 5/5 (post-Callais April 2026, SAVE Act June 2026, 2026 midterm cycle). Recommendation: Domain G + Domain F as Nov 4 launch pair.
+     2. `DEMOCRACY_TOOLS_RESEARCH_OUTLINE.md` (3,980 words) — 4 research zones (voter registration barriers post-Callais, technology solutions, international models, movement infrastructure), 15 research questions, 25+ sources with URLs, 5-8 expert contacts, 12-section document structure
+     3. `PHASE_6_EXPERT_CONTACT_VALIDATION.md` (2,757 words) — 8 contacts verified current June 28; 2 flagged (Sam Wang: campaign candidacy flag, do not interview; Myrna Perez: now federal judge, redirect to Wendy Weiser); 2 replacements staged (Justin Levitt, Tammy Patrick)
+     4. `PHASE_6_RESEARCH_TIMELINE_AND_CAPACITY.md` (2,929 words) — Week-by-week Nov 4 – Dec 11, solo researcher 160-200 hours (82% confidence), no scope compression required, two-researcher model 88% confidence, Thanksgiving mitigation specific (compress Estonia section, never cut zones)
+   - **Key empirical anchors**: Callais weakened VRA Section 2 (40% higher purge rates in formerly-VRA jurisdictions); 19M registrations purged 2020-22 (+21%); SAVE Act: 12% of applicants blocked (Kansas); TurboVote: 79% registered-user turnout vs 64% national; Canada +207% partner orgs for April 2025 election
+   - **Status**: PRODUCTION-READY — user can approve Phase 6 timeline within 30 min; Nov 4 launch infrastructure ready without planning overhead
+   - **Confidence**: 85% (timeline mechanistic; Democracy Tools highest-scoring domain verified via 5-criterion matrix; expert contacts verified current; scope assessed against published research productivity)
+   - **Owner**: systems-resilience team (Session 4492)
+
+---
+
 **NEW ITEMS (Session 4480+ — 2026-06-28 21:54 UTC — Exploration Queue Replenishment)**:
 
 27. **stockbot: Comprehensive Backtesting Pipeline & Report Generation** (3-4h) ← **✅ COMPLETE (SESSION 4485)**
@@ -1852,7 +1880,7 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **Status**: Active — GitHub Pages approach; no Pi server deployment
 **Visibility**: Public — GitHub repo: `esca8peArtist/open-repo`. Use remote `open-repo` for all pushes. Use `git subtree push --prefix=projects/open-repo open-repo <branch>` — never push to `origin`.
 **Working dir**: `projects/open-repo/`
-**Current focus**: **[RESOLVED — SCHEMA DOCUMENTATION PRODUCTION-READY (Session 4485)]** — **Code verdict**: ✅ MERGE-READY (all 51 ZIM tests passing, Phase 5 complete). **Platform decision**: User rejected Pi server deployment (2026-06-28, Decision 1). No Nextcloud/Matrix or Discourse on raspby1. Content will go to GitHub Pages / GitHub public hosting. Pi stays free for orchestration. **Schema Documentation Complete** (Session 4485): `SCHEMA_DOCUMENTATION.md` (879 lines, 10 comprehensive sections) production-ready for GitHub Pages publication. Sections: Database Schema (10 ORM tables), API endpoints (Pydantic models), Content Types (5 types), Federation/ActivityPub, ZIM export, Validation rules, Query Patterns & Indexes, Error Handling, Migration Procedures. All 10 ORM models verified against schema (100% match). Commits: `011f63aa` + `5195957f`. **Remaining autonomous work**: Static content preparation (Jekyll config + markdown templates), Phase 5 code maintenance tasks. Ready for GitHub Pages push by user.
+**Current focus**: **[RESOLVED — SCHEMA DOCUMENTATION PRODUCTION-READY (Session 4485)]** — **Code verdict**: ✅ MERGE-READY (all 51 ZIM tests passing, Phase 5 complete). **Platform decision**: User rejected Pi server deployment (2026-06-28, Decision 1). No Nextcloud/Matrix or Discourse on raspby1. Content will go to GitHub Pages / GitHub public hosting. Pi stays free for orchestration. **Schema Documentation Complete** (Session 4485): `SCHEMA_DOCUMENTATION.md` (879 lines, 10 comprehensive sections) production-ready for GitHub Pages publication. **✅ [SESSION 4492] PHASE 5.2 WAVE 0 STRATEGY COMPLETE** — Pre-research staged for Q3 execution (Item 30): (1) Water Systems prioritized as Priority 1 domain (gap analysis: WASH practitioner community large, no WASH field procedures in Kiwix archives, NCHFP content public-domain sourcing). (2) Contributor onboarding workflow designed for non-technical contributors (Type A/B separation, plain-language GitHub Issue template 3-5 min, maintainer JSON-LD conversion removes friction). (3) Platform mechanics locked: GoatCounter analytics (GDPR-exempt), sequential A/B testing weeks 1-3/3-8/8-10, GitHub Pages + Netlify fallback. (4) Timeline mechanistic with numeric gates: Week 6 (Aug 8) critical gate (10 contributors), pre-authorized solo-content fallback if <5 submissions. (5) Risk scenarios pre-authorized with rollback thresholds. All 4 deliverables production-ready for user review + 30-min approval. Ready for GitHub Pages push by user + Q3 Wave 0 execution launch July 1.
 
 **Missing pre-reqs (system, not code)**: (1) libzim PyPI wheel — `uv pip install "libzim>=3.2,<4.0"` (2) zim-tools binary — optional, `sudo apt install zim-tools`
 
@@ -1875,7 +1903,7 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
 **Priority**: High
 **Status**: Active — GitHub Pages approach; no Pi server deployment; Phase 6 Domain A research complete
 **Working dir**: `projects/systems-resilience/`
-**Current focus**: **[ACTIVE — GITHUB PAGES PATH; PHASE 6 DOMAIN A RESEARCH COMPLETE]** — Platform decision resolved (2026-06-28, Decisions 1-2): User rejected Pi hosting, Nextcloud/Matrix, and Discourse. All content (Phase 5.1 corpus 61,611 words, Phase 6 Domain A) will go to GitHub Pages / public GitHub. **Phase 6 Domain A status**: Research complete and production-ready — content doc 6,800 words/38 citations (May 27), 18 author recruitment targets verified (June 1), 10-vendor platform analysis (June 3). Platform question moot given GitHub Pages decision. **Phase 5 GitHub release**: Still blocked pending maintainer push permissions (BLOCKED.md active block — unrelated to Pi hosting). **Autonomous work now unblocked**: medical outreach drafts, Phase 5 static site preparation, schema documentation.
+**Current focus**: **[ACTIVE — GITHUB PAGES PATH; PHASE 6 DEMOCRACY TOOLS PRE-RESEARCH STAGED]** — Platform decision resolved (2026-06-28, Decisions 1-2): User rejected Pi hosting, Nextcloud/Matrix, and Discourse. All content (Phase 5.1 corpus 61,611 words, Phase 6 research) will go to GitHub Pages / public GitHub. **Phase 6 status**: ✅ **[SESSION 4492] DEMOCRACY TOOLS DOMAIN PRE-RESEARCH COMPLETE (ITEM 31)** — Democracy Tools (Domain G) wins Priority 1 for Phase 6 (21/25 aggregate score, urgency 5/5 due to post-Callais April 2026 + SAVE Act June 2026 + 2026 midterm cycle). Phase 6 launch ready November 4 with mechanistic timeline: Nov 4 research launch, 6-week solo researcher window (160-200 hours, 82% confidence), Dec 12-20 distribution. All 4 deliverables production-ready (scope landscape 2.2K words, research outline 4K words, expert contacts validated with 2 replacements staged, timeline + capacity model 2.9K words). **Phase 5 GitHub release**: Still blocked pending maintainer push permissions (BLOCKED.md — unrelated to Phase 6). Ready for user approval of Phase 6 timeline within 30 min. November 4 launch infrastructure zero planning overhead.
 
 ✅ **PHASE_7_PILOT_IMPLEMENTATION_ROADMAP.md (Session 2691, June 3)** — Complete pilot deployment strategy:
 - **Pilot domain selection**: Governance is structurally correct entry point (other domains depend on governance being functional). Food systems, information infrastructure, security tempting but create data about protocols, not about whether communities can act collectively. Governance first regardless of platform
