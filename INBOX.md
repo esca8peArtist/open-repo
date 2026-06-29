@@ -15,6 +15,26 @@
 
 ---
 
+## Processing (Session 4549 — 2026-06-29 19:08 UTC)
+
+### [2026-06-29 19:08 UTC] STOCKBOT ORDER REJECTION ROOT CAUSE INVESTIGATION
+
+**STATUS**: ✅ **COMPLETE — ROOT CAUSE IDENTIFIED AND REPORTED**
+
+Item from INBOX: "Investigate why the stockbot orders are being rejected and solve the problem if possible. Send a message in the discord stating what the root cause was"
+
+**Investigation results**:
+- **Root cause**: Position lock deadlock (POSITION_PHANTOM anomaly, Phase 2 Item 2b)
+- **Mechanism**: Alpaca order 8b519336-9871-4a36-82df-cb036d434195 (AMZN sell, 21 shares) is pending; those shares marked "held_for_orders" leaving available=0. System attempts new sell order → rejected (insufficient qty). Order remains pending → deadlock.
+- **Impact**: AMZN session unable to execute exits; error recurring every 60-90 seconds starting ~19:06 UTC
+- **Required fix**: Implement order cancellation check before new trades + 2-poll guard (Phase 2 Item 2b — POSITION_PHANTOM)
+- **Discord notification**: Sent with full root cause details and fix requirement
+- **Documentation**: Full analysis logged to WORKLOG.md Session 4549
+
+**Action completed**: Orchestrator cannot autonomously fix (requires code change + deployment). User alerted via Discord with specific fix location (Phase 2 Item 2b).
+
+---
+
 ## Processing (Session 4520 — 2026-06-29 08:40 UTC)
 
 ### [2026-06-29 08:40 UTC] JETSON POST-MARKET MAINTENANCE — onedrive crash-loop remediation

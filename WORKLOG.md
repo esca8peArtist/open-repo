@@ -1,3 +1,66 @@
+## Session 4549 (2026-06-29 19:08 UTC) — INBOX: STOCKBOT ORDER REJECTION ROOT CAUSE IDENTIFIED
+
+**Status**: 🟡 **CRITICAL ISSUE DIAGNOSED — POSITION LOCK DEADLOCK** — Orchestrator received INBOX directive to investigate stockbot order rejections (2026-06-29 14:02). Analyzed Jetson Docker logs (last 6 hours). Root cause identified and documented.
+
+**STOCKBOT ORDER REJECTION ROOT CAUSE**:
+
+**Error Pattern**: AMZN sell orders repeatedly rejected with:
+```
+Market order (AMZN sell) failed with non-retryable error: 
+{
+  "available":"0",
+  "code":40310000,
+  "existing_qty":"21",
+  "held_for_orders":"21",
+  "message":"insufficient qty available for order (requested: 21, available: 0)",
+  "related_orders":["8b519336-9871-4a36-82df-cb036d434195"]
+}
+```
+
+**Root Cause**: **Position Synchronization Deadlock** (POSITION_PHANTOM anomaly, Phase 2 Item 2b)
+- Alpaca order 8b519336-9871-4a36-82df-cb036d434195 (AMZN sell, 21 shares) is pending/stuck
+- Those 21 shares are marked "held_for_orders" by Alpaca broker
+- Available qty = existing_qty - held_for_orders = 21 - 21 = 0
+- System attempts new sell order for the 21 shares → rejected (none available)
+- Order remains pending → position stays locked → next attempt also fails
+- **Result**: Deadlock — can't sell because position is held, can't clear hold because new order is rejected
+
+**Mechanism**: When order submission fails or is rejected, the reconciliation logic does not:
+1. Cancel the original pending order, OR
+2. Acknowledge that the order failed and release the hold, OR  
+3. Check for held-for-orders before attempting new trades
+
+**Impact**: AMZN session unable to execute exit trades. Errors started ~19:06 UTC and repeated every 60-90 sec.
+
+**Required Fix** (Phase 2 Item 2b — POSITION_PHANTOM):
+- Pre-trade order cancellation: Cancel any pending orders for a position before submitting new ones
+- 2-poll guard: Query Alpaca twice (10-second gap) to confirm position is actually available before trade
+- Order reconciliation: When order submission fails, actively cancel the associated order instead of leaving it pending
+
+**Current Status**: Flagged for implementation. AMZN session impacted but other sessions functioning (JPM, NVDA showing signal collapse but no rejection errors).
+
+**Session 4548 actions** (19:03 UTC, market hours):
+1. ✅ **Full orientation complete** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md, CHECKIN.md
+2. ✅ **Domain 51 status verified** — Still NOT SENT; contingency active; user window June 30 23:59 UTC
+3. ✅ **Items 32-34 confirmed committed** — All production-ready (Jetson remediation, Phase 2 contingency, seedwarden Week 1-2 checklist)
+4. ✅ **Items 41-43 queued and ready** — open-repo Wave 0, seedwarden Q3 monitoring, stockbot Phase 2 pre-staging
+5. ✅ **Market-hours policy enforced** — No code changes; standing by for 20:00 UTC close
+6. ✅ **INBOX: Stockbot order rejection investigation** — Root cause: AMZN position lock deadlock (held_for_orders). Details logged above. Discord notification sent.
+
+**Timeline until post-market checkpoint**:
+- Now (19:08 UTC): Market hours; no autonomous work available
+- 20:00 UTC (52 min): Market close; begin post-market execution
+- Post-market execution plan:
+  - ✅ Item 32: Jetson remediation (autonomous, ~5 min)
+  - ⏳ Items 41-43: Parallel agents (open-repo, seedwarden, stockbot — ~2-3h total)
+  - ✅ Orchestration commit (WORKLOG, CHECKIN, PROJECTS, BLOCKED, INBOX)
+
+**Domain 51 status**: 🔴 CRITICAL — User action required by June 30 23:59 UTC for contingency path
+
+**Market-hours hold**: ✅ Maintained (investigation completed; standing by for 20:00 UTC)
+
+---
+
 ## Session 4546 (2026-06-29 18:44:59 UTC) — DOMAIN 51 18:00 UTC CUTOFF PASSED; CONTINGENCY ACTIVATED
 
 **Status**: 🔴 **CRITICAL — DOMAIN 51 18:00 UTC CUTOFF PASSED** — Orchestrator Session 4546 post-orientation (18:44 UTC). BLOCKED.md verification confirmed Domain 51 Wave 1 emails NOT SENT; 18:00 UTC time-critical cutoff has passed. Contingency framework (PHASE_2_POST_DEADLINE_CONTINGENCY_ACTIVATION.md) now in effect. 48h to hard deadline (July 1 18:00 UTC). Post-market checkpoint scheduled 20:00 UTC for Items 32, 41-43 execution.
