@@ -38,6 +38,34 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 52 — Week 3-4 Peak Execution Monitoring Framework — June 29, 2026
+
+**Session**: June 29, 2026
+**Task**: Create Week 3-4 contingency monitoring framework extending Item 34's Week 1-2 infrastructure. Five production-ready documents covering day-by-day operations, per-platform social monitoring, subscriber churn recovery, contractor escalation, and Week 5-6 contingency triggers for the Sleep (Jul 13), Practitioner (Jul 15), Immunity (Jul 20), and Digestive (Aug 3) bundle launches.
+
+**Status**: COMPLETE — 5 new files written to `projects/seedwarden/`
+
+**New deliverables (this task)**:
+
+1. **`SEEDWARDEN_Q3_WEEK3_4_DAILY_OPS_CHECKLIST.md`** — 465-line day-by-day execution checklist covering Jul 12 pre-launch gate through Jul 27 Week 4 final checkpoint. Sunrise/sunset metric templates for each day. Three explicit launch blocks (Sleep Jul 13, Practitioner Jul 15, Immunity Jul 20) with time-stamped tasks (UTC). Pre-launch gates: contractor photo verification gate (Jul 12 18:00 UTC), Immunity pre-stage gate (Jul 18 18:00 UTC). Revenue tracking: daily log, Week 3 checkpoint (Jul 19), Week 4 final checkpoint (Jul 27). All escalation triggers are date-stamped and reference companion documents. Zero-planning execution — team follows checklist sequentially.
+
+2. **`SEEDWARDEN_Q3_WEEK3_4_SOCIAL_DEEP_DIVE.md`** — 450-line per-platform monitoring framework replacing Week 1-2 aggregate tracking. LinkedIn: per-post log template, DM surge detection (>10/day threshold, profile flag risk procedure), hashtag performance tracking table, engagement cliff detection (30%+ drop formula). Instagram: engagement rate trending vs. Week 1-2 baseline (YELLOW <95%, RED <85%), spam/bot comment detection (3-tier: LOW/MODERATE/HIGH with deletion and filter procedures). YouTube Community Tab: recommended traffic signal monitoring, comment quality assessment, no-traffic-by-Day-3 content adjustment trigger. Escalation rules: single-platform RED 2 consecutive days → content type pivot + frequency increase; two-platform RED → systemic content audit; all-platform RED → SEEDWARDEN_Q3_WEEK5_6_CONTINGENCY_TRIGGERS.md Section 4.
+
+3. **`SEEDWARDEN_Q3_WEEK3_4_CHURN_MONITORING.md`** — 350-line churn monitoring document with 30-day log table (Jul 13 – Aug 3). Three-send window alert: cumulative unsubscribe >1.5% of list in Jul 13-22 activates automatic recovery. Elevated-risk day adjustments (send days: RED threshold rises to >0.6%; standard days: standard thresholds). Six root cause categories (A through F): frequency fatigue, content mismatch, bad subject line, competitor timing, supply/product issue, list health. Four recovery procedures: Procedure 1 (frequency pause + 10% segment test), Procedure 2 (email copy review), Procedure 3 (24hr pause + segment analysis + list cleanup), Procedure 4 (list hygiene cleanup). Three win-back templates: Template A (frequency adjustment), Template B (content relevance), Template C (dormant 90-day cold subscriber win-back sequence with post-campaign activation rules).
+
+4. **`SEEDWARDEN_Q3_WEEK3_4_CONTRACTOR_DELIVERY_ESCALATION.md`** — 300-line contractor escalation document with master deliverable schedule for all 6 active contractors (photographer Sessions 2-3, Rebecca Lexa Immunity + Digestive drafts, Arianna Collins revision, Adrian White clinical revision, Arthur Haines NE notes revision, Kriss MacDonald attribution log). Four escalation levels: Level 0 (on track), Level 1 (soft escalation: 1 day late → reminder DM), Level 2 (hard escalation: 5 days late → payment hold), Level 3 (contingency activation: 50% milestone partial payment + backup sourcing), Level 4 (contract termination: M1 only). Photography contingency: Wikimedia Commons backup sourcing with per-herb search terms, license filter requirements, and attribution format. Writer contingency: Option A (condensed 2,000-2,500 word format), Option B (secondary writer activation at +20% rate), Option C (solo fallback). Habitat specialist contingency: USDA PLANTS direct research procedure. Payment hold and release log template.
+
+5. **`SEEDWARDEN_Q3_WEEK5_6_CONTINGENCY_TRIGGERS.md`** — 200-line contingency framework evaluated at Jul 27 final checkpoint. Section 1: Revenue underperformance >20% below Week 1-2 → 2-bundle discount (15% off, 7-day Etsy coupon), extended early-bird pricing (5 days), build-your-own bundle Etsy listing, revenue target reset. Section 2: Email open rate <15% by mid-Week 4 OR spam complaint >0.1% → spam placement test (5 providers), spam marker audit (subject + HTML + authentication), list quality analysis (cold suppression + giveaway cohort exclusion), send schedule adjustment (14-day gap post-trigger). Section 3: Unsubscribe >0.3% for 5+ days → 48-hour full email pause + 3-email dormant win-back sequence + value-frame subject line library for Week 5-6. Section 4: All platforms in RED/YELLOW for Week 4 → 48-hour organic social pause, $50-100 paid promotion (LinkedIn or Instagram engagement campaign), micro-influencer outreach (1,000-20,000 followers), content strategy reset (top-performing type only). Section 5: composite trigger priority order (Section 2 → 3 → 1 → 4). Section 7: Aug 3-10 final wrap template.
+
+**Cross-reference architecture**:
+- SEEDWARDEN_Q3_WEEK3_4_DAILY_OPS_CHECKLIST.md calls all 4 companion documents at specific triggers
+- SEEDWARDEN_Q3_WEEK3_4_CHURN_MONITORING.md escalates to SEEDWARDEN_Q3_WEEK5_6_CONTINGENCY_TRIGGERS.md Section 3 if recovery fails
+- SEEDWARDEN_Q3_WEEK3_4_SOCIAL_DEEP_DIVE.md escalates to SEEDWARDEN_Q3_WEEK5_6_CONTINGENCY_TRIGGERS.md Section 4 for all-platform RED
+- SEEDWARDEN_Q3_WEEK3_4_CONTRACTOR_DELIVERY_ESCALATION.md cross-references SEEDWARDEN_Q3_CONTRACTOR_DELIVERABLE_TRACKING.md for full quality gate procedures
+- All documents log to PHASE_3_EXECUTION_LOG.md as the shared recording point
+
+---
+
 ## Item 42 — Week 1-2 Contingency Monitoring + Week 3-4 Prep Infrastructure — June 29, 2026
 
 **Session**: June 29, 2026
