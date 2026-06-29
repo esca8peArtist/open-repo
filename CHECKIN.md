@@ -29132,3 +29132,61 @@ Automatic wakeup at 20:30 UTC for deployment execution. Post-deployment:
 
 **Token budget**: 77.7% usage; healthy margin for upcoming events.
 
+
+---
+
+## Session 4525 (2026-06-29 13:30–ongoing UTC) — MARKET OPEN; PARALLEL ITEM EXECUTION 32-34 STAGED; JETSON REMEDIATION READY
+
+**Status**: 🟢 **MARKET OPEN LIVE; PHASE 2 MONITORING ACTIVE** — Market opened exactly at 13:30 UTC. All systems operational. Spawned parallel agents (resistance-research Item 33, seedwarden Item 34) while staging Jetson onedrive remediation scripts for post-market execution. No stockbot code changes during market hours (engine restart risk 13:30-20:00 UTC).
+
+**Session 4525 actions** (13:30-13:40 UTC):
+
+1. ✅ **Market-open verification** — Jetson API operational (`status: operational`), ping time 8.8ms avg, Phase 2 live monitoring active
+2. ✅ **Item 32 complete** — Jetson onedrive remediation scripts + documentation production-ready:
+   - `jetson_onedrive_remediation.sh` (main: stop service, truncate syslog, optional Docker prune)
+   - `jetson_onedrive_remediation_rollback.sh` (restore if needed)
+   - `JETSON_ONEDRIVE_REMEDIATION_INSTRUCTIONS.md` (user guide, checklists, troubleshooting)
+   - **Timeline**: Execute post-market 20:00+ UTC (non-blocking during trading hours)
+   - **Value**: Frees 12GB disk space, stops syslog growth, meets July 1 deadline comfortably
+3. ✅ **Item 33 spawned** — resistance-research subagent (a6e8401bbaf7526dc) — Phase 2 post-deadline contingency framework (1.5-2h)
+4. ✅ **Item 34 spawned** — seedwarden subagent (ab6a9c8a52c9177f4) — Phase 3 Week 1-2 execution master checklist (1-1.5h, launches today June 29)
+5. ✅ **WORKLOG updated** — Session 4525 entry appended with full action log
+
+**Needs Your Input (CRITICAL — UNCHANGED FROM SESSION 4524)**:
+
+1. 🔴 **Domain 51 Wave 1 emails — EXECUTE IMMEDIATELY** (14 days overdue, 48h to July 1 deadline)
+   - Two emails: Campaign Legal Center + Issue One
+   - Templates: `DOMAIN_51_URGENT_JUNE29_EXECUTION_SUMMARY.md` + `DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md`
+   - Time to execute: ~15 minutes
+   - Value: 100% if sent today vs 60-75% post-July 1
+   - **Action needed: TODAY (before July 1 13:30 UTC)**
+
+2. ⏳ **Jetson onedrive remediation — AUTHORIZE POST-MARKET EXECUTION**
+   - Scripts ready: `jetson_onedrive_remediation.sh` (3 min execution, non-disruptive)
+   - When: After 20:00 UTC market close (June 29)
+   - Or: Manual execution by July 1 13:30 UTC
+   - **Action needed: Confirm authorization in next check-in OR manually execute by July 1**
+
+**System status**:
+- ✅ Market open: Phase 2 live monitoring active automatically
+- ✅ Jetson health: GREEN (8.8ms latency, API operational, 125GB free space)
+- ✅ Phase 2 anomaly detection: 5 sessions running, no alerts flagged
+- ✅ Items 33-34: Parallel background execution (est. completion 15:00-15:30 UTC)
+
+**Market-hours policy**:
+- ✅ NO stockbot code changes 13:30-20:00 UTC (prevents engine restart)
+- ✅ NO container restarts during trading hours (same reason)
+- ✅ MONITORING ONLY: Watch for phase 2 anomalies, respond to alerts
+- ✅ Post-market (20:00+): Jetson remediation execution + agents completion + CHECKIN finalization
+
+**Decision: IDLE THROUGH MARKET HOURS; EXECUTE ITEMS 32-34 POST-MARKET**
+- Phase 2 monitoring runs automatically
+- Agents work in background (no manual intervention needed)
+- Jetson remediation ready for 20:00+ UTC post-market execution
+- Next checkpoint: 20:05 UTC (post-market) or session end
+
+**Next action**: 
+- 14:30–15:30 UTC: Monitor market; agents complete Items 33-34
+- 20:00 UTC: Market close; check agent completion status
+- 20:05+ UTC: Execute Item 32 (if authorized) + commit session
+
