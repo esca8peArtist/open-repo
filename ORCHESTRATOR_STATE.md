@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-29T07:47:14Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-29T09:02:53Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (1,083,488 tokens) | All-models 0.1% | Reset in 16h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (1,083,488 tokens) | All-models 0.1% | Reset in 15h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -40,7 +40,7 @@
 
 ### career-training
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
-**Focus**: ✅ **[ALL 38 MODULES + 150-SCENARIO WORKBOOK COMPLETE — GITHUB PAGES DEPLOYMENT READY (SESSION 4488)]** — Phase 1 infrastructure complete (SESSION 4351): /docs directory, Jekyll _config.yml, homepage + 6 navigation pages, production-ready for GitHub Pages. **Gap modules 37-38 now complete** (Session 4488): Module 37 Industrial Commissioning (525 lines, 6,145 words), Module 38 Multi-Family & Light Commercial (624 lines, 6,742 words). Both match format of modules 01-36, include case studies + … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: ✅ **[ALL 38 MODULES + 150 SCENARIOS COMPLETE; GITHUB PAGES DEPLOYMENT READY]** — All content production-ready for GitHub Pages deployment or integration into training programs. /docs directory with Jekyll infrastructure complete. **Awaiting user action**: (1) Create/enable GitHub repo, (2) push /docs directory for GitHub Pages live deployment, (3) configure Phase 2 (email list) and Phase 3 (social media) platforms. Zero autonomous work remaining.
 ## Active Blocks
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
@@ -72,8 +72,6 @@
 **Resolution**: [awaiting user maintainer action to execute GitHub release push — all content production-ready, no code dependencies]
 ---
 
-## State Drift Warnings
-⚠️ STALE FOCUS: career-training — focus references Session 4488 (26 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • open-repo — June 12 deployment never executed; platform decision resolved by user ← 2026-06-28 (Session 4474 — user decision)
 • systems-resilience — Phase 5.1 platform deployment blocking June 9 publication ← 2026-06-28 (Session 4474 — user decision)
@@ -82,11 +80,7 @@
 • stockbot — CRITICAL: Container API startup was blocked by missing alembic.ini volume mount ← 2026-06-24 09:48 UTC (Session 4160 — orchestrator autonomous fix + verification)
 
 ## Inbox (unprocessed)
-### [2026-06-30 00:05 UTC] USAGE CALIBRATION RESET — Scheduled for Tuesday reset
-**Process on or after June 30 00:00 UTC only.** Usage billing week resets at that time.
-Run: `python3 scripts/usage-check.py --calibrate 3.0 67.4`
-This restores the June 24 calibration (Sonnet 8,909,833 / all-models 15,140,434). The limits were temporarily inflated to 0.1% on June 27 to allow the orchestrator to run freely during the final days of the billing week. After the reset, actual usage is 0, so the June 24 limits will correctly show 0% and normal threshold monitoring resumes.
-**Do not process this item before June 30 00:00 UTC.**
+*(All current new items are being processed in parallel or are time-gated. See "Processing" section below.)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 
