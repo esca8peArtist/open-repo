@@ -2,6 +2,28 @@
 
 ---
 
+## June 29, 2026 (General Research Agent) — Phase 3 Researcher Recruitment and Onboarding Framework — COMPLETE
+
+**Task**: Design the researcher recruitment and onboarding framework for Phase 3 (November 4, 2026 launch). Three production-ready documents covering researcher profile and recruitment plan, onboarding kit, and contract/collaboration framework.
+
+**Files created** (directory: `projects/resistance-research/`):
+
+1. **PHASE_3_RESEARCHER_PROFILE_AND_RECRUITMENT_PLAN.md** (~2,300 words) — Target researcher profile (PhD constitutional law/political science, 2+ publications, 10–15 hrs/week for 13 weeks); capacity allocation analysis (solo 85–90% confidence vs. 2-person 88–92% confidence, recommendation: solo first with 2-person fallback); ten prioritized recruitment channels with contact strategies (SSN democracy governance listserv, APSA Constitutional Law division, Brennan Center alumni, ACS Next Generation Leaders, Fix the Court, Ash Center postdoctoral network, CAC Kendall Fellows, UCLA Safeguarding Democracy, Kinder Institute, Democratic Erosion Collaborative); complete recruitment timeline September 15 – November 4; copy-paste researcher opportunity posting; full green/red flag vetting criteria.
+
+2. **PHASE_3_RESEARCHER_ONBOARDING_KIT.md** (~2,500 words) — Six sections: Domain K and H scope overview with visual structure diagram; zone dependency and critical-path analysis (Zone K-1 gates K-2/K-3 which gate K-4; Domain H extensions A/B/C are sequential); complete source access guide (JSTOR JPASS $199/year, Congress.gov, PACER, SCOTUSblog, ProPublica, Fix the Court); expert contact protocols with email template and follow-up cadence, plus priority contact list for Domains K and H; writing standards and deliverable template (hybrid academic-advocacy style, 15,000–20,000 words Domain K, 10,000–12,000 words Domain H); week-by-week 12-week schedule with expected outputs, word counts, and hours; contingency escalation triggers for weeks 1, 2, 5, 8; six measurement checkpoints for production-quality verification.
+
+3. **PHASE_3_CONTRACT_AND_COLLABORATION_FRAMEWORK.md** (~1,300 words) — Compensation structure ($35–55/hour, suggested ranges by career stage); expense reimbursement (JSTOR, PACER); IP ownership (work-for-hire with researcher retaining idea rights); publication rights (6-month embargo, independent academic publication permitted with conditions); communication cadence (weekly async Monday updates, monthly 30-min calls, 24-hour response for time-sensitive flags); exit procedures for three scenarios (before Week 4, between Weeks 4–8, after Week 8) with immediate next actions for each; explicit mutual expectations statement.
+
+**Key findings**:
+- The optimal candidate profile is a postdoctoral researcher or recent PhD (within 4 years) with 2+ publications and advocacy-organization exposure — not a senior academic (overqualified, availability risk) and not a pure practitioner without a publications record (quality risk on complex primary-source synthesis)
+- Solo configuration is recommended first because Domain K and H's tight conceptual integration is better carried by one researcher than coordinated across two; the 2-person fallback is activated if September 25 produces no firm-commitment solo candidate
+- SSN democracy governance listserv and APSA Constitutional Law section (post pre-meeting for the September 3–6 Boston annual meeting) are the highest-yield per-outreach-hour channels
+- JSTOR access ($199/year JPASS) is the only non-free source access cost; all primary legal sources (Congress.gov, CRS, SCOTUSblog, Brennan Center, ProPublica) are free
+
+**Confidence**: 90% — recruitment channels verified current (APSA 2026 Annual Meeting Boston September 3–6 confirmed; SSN 2,000+ member network confirmed; ACS 250+ chapters confirmed; Constitutional Accountability Center 2026–2027 fellowship cycle confirmed). Compensation benchmarks cross-referenced against Brennan Center postdoc salary data and CAC Kendall Fellowship stipend ($70K annual). Timeline assumes no Phase 2 dependency (per task specification).
+
+---
+
 ## June 29, 2026 (General Research Agent) — Item 33: Phase 2 Post-Deadline (July 1+) Contingency Activation Framework — COMPLETE
 
 **Task**: Exploration Queue Item 33 — Pre-stage contingency activation framework for Domain 51/48 sends if they slip past the July 1 hard deadline. Three outcome branches (A/B/C) with fully pre-authorized execution paths.
