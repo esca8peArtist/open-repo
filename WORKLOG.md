@@ -30,12 +30,18 @@
    - ✅ Marked Item 101 as ✅ COMPLETE in EXPLORATION_QUEUE.md
    - Status: All three Phase 4 decision frameworks production-ready for July 8 checkpoint routing
 
-**Next decision**:
-- Current time: 05:59 UTC (pre-market checkpoint actionable at 11:05 UTC = 5h away)
-- Token budget: ample (0.1% both Sonnet and all-models)
-- Options: (a) Continue Item 102 or 103 (2-2.5h each), (b) Hold until pre-market checkpoint window opens at 11:05 UTC
-- Recommendation: Continue Item 102 (resistance-research Phase 3 pre-research synthesis) — aligns with Priority 2 project, no blockers, 5h available
-- If Item 102 completes by ~08:00 UTC, can consider Item 103 or begin pre-market prep by 11:05 UTC
+5. **Parallel Research Execution** (06:00–06:03 UTC)
+   - **Item 102 Spawned**: resistance-research subagent for Phase 3 pre-research synthesis
+   - **Scope**: Callais post-decision impact (April-June 2026), SAVE Act status, expert contact validation, source freshness, Phase 3 research readiness checklist
+   - **Deliverables**: 2 documents (2-2.5 KB each) with Go/No-Go recommendations for Nov 4 Phase 3 launch
+   - **Status**: Running in background (agentId: aaa8f81a58dd811d9)
+   - **ETA**: ~08:00 UTC (2.5h effort)
+
+**Timeline & next steps**:
+- Current: 06:03 UTC | Pre-market checkpoint: 11:05 UTC (4h 58m away) | Token budget: ample
+- Item 102 completion → 08:00 UTC: Decision: (a) spawn Item 103 (career-training, 2-2.5h), (b) move to pre-market prep, or (c) extend research scope
+- If Item 103 spawned at 08:00: completes ~10:30 UTC, leaves 35min buffer for pre-market prep
+- Current parallel execution: Item 101 COMPLETE + Item 102 RUNNING = efficient queue processing
 
 **System state**:
 - ✅ **Exploration Queue**: Replenished with 3 new items
