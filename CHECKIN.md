@@ -2,6 +2,66 @@
 
 ---
 
+## Session 4488 (2026-06-29 00:01 UTC) — CAREER-TRAINING GAP MODULES + PRE-MARKET READINESS CHECKPOINT
+
+### **Since Last Check-in (Session 4487 → 4488)**
+
+✅ **Career-Training Autonomous Work Complete** — Gap modules 37-38 written and committed. Career-training project now fully complete with all 38 modules + 150-scenario workbook. All remaining work is user-action-dependent (GitHub Pages deployment). Stockbot pre-market checkpoint approaching (13:30 UTC, 13.5 hours away).
+
+### **Work This Session**
+
+- ✅ **Orientation**: Verified current state (ORCHESTRATOR_STATE.md). Market open in 13.5 hours. All blocks require user/external action (cannot resolve).
+- ✅ **Career-Training Gap Modules** (Primary autonomous work this session):
+  - **Module 37: Industrial Commissioning & Complex Equipment Handoff** (525 lines, 6,145 words)
+    - Content: Pre-functional testing checklists, functional performance testing, deficiency management, owner training, final acceptance, ASHRAE/Title 24 compliance
+    - Audience: Industrial GCs, mechanical/electrical specialty subs transitioning to prime role
+    - Format: 7 sections + mental model + 2 case studies, matches modules 01-36 style
+  - **Module 38: Multi-Family & Light Commercial Construction Fundamentals** (624 lines, 6,742 words)
+    - Content: Occupancy classifications, fire-separation assemblies, accessibility, AIA A201 contracts, MEP coordination, commercial permitting, lien law changes
+    - Audience: Residential GCs moving to commercial; commercial GC trainees
+    - Format: 6 sections + mental model + 2 case studies, matches established curriculum style
+  - **Commit**: 0e344187 (feat: gap modules 37-38 complete — commissioning + multi-family/commercial)
+- ✅ **PROJECTS.md Updated**: Career-training Current focus updated to reflect all 38 modules complete, workbook complete, zero autonomous work remaining, GitHub Pages deployment ready
+- ✅ **WORKLOG.md Updated**: Session summary logged with gap modules detail + status
+
+### **Deliverables**
+
+- ✅ Module 37: 525 lines, production-ready, committed to master
+- ✅ Module 38: 624 lines, production-ready, committed to master
+- ✅ PROJECTS.md updated to reflect completion
+- ✅ WORKLOG.md session entry logged
+- ✅ All orchestration files ready for commit
+
+### **System State**
+
+- ✅ **Career-training**: NOW COMPLETE (38 modules + 150 scenarios). All content production-ready. Awaiting user GitHub Pages deployment.
+- ✅ **Stockbot**: Pre-market checkpoint approaching (13:30 UTC). Phase 1 specs deployed, Phase 2 items ready post-checkpoint. All 5 sessions healthy.
+- ✅ **Blocks**: All 3 active blocks unchanged (all require user/external action).
+- ✅ **Usage**: Session minimal (orientation + gap module agent ~63K tokens). Weekly 0.1% Sonnet. Reset June 30 00:00 UTC.
+
+### **Needs Your Input (PRIORITIZED)**
+
+**CRITICAL & URGENT (Due within 3 days)**:
+1. ⚠️ **Execute resistance-research Domain 51 Wave 1 send TODAY or TOMORROW** — 14 days overdue, July 1 deadline 3 days away. Instructions: PHASE_2_WAVE_1_EXECUTION_CHECKLIST.md (~15-30 min).
+2. Execute resistance-research Domain 48 Wave 1 send (less urgent: July 15 deadline = 17 days remaining).
+
+**Important (This week)**:
+3. **Complete career-training GitHub Pages deployment** — Phase 1 infrastructure ready, need to push /docs to repo main branch.
+4. Confirm seedwarden contractor hiring status (Phase 3 launch depends on this).
+
+**Next Scheduled Events**:
+5. **June 29 13:05 UTC** (13 hours): Jetson pre-market audit (Item 20 — automated health check)
+6. **June 29 13:30–20:00 UTC**: Stockbot market open + Phase 1 validation checkpoint (automated monitoring)
+7. **June 30 00:00 UTC**: Process INBOX calibration reset: `python3 scripts/usage-check.py --calibrate 3.0 67.4`
+
+### **Estimated Time to Next Milestone**
+
+- **June 29 13:30 UTC** (13.5 hours): Stockbot market open checkpoint
+- **July 1 18:00 UTC** (66.5 hours): Resistance-research Domain 51 hard deadline
+- **July 15 18:00 UTC** (444.5 hours): Resistance-research Domain 48 deadline
+
+---
+
 ## Session 4487 (2026-06-28 23:55 UTC) — FINAL ORIENTATION + COMMITMENT
 
 ### **Since Last Check-in (Session 4486 → 4487)**

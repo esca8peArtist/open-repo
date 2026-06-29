@@ -1,3 +1,40 @@
+## Session 4488 (2026-06-29 00:01 UTC) — Career-Training Gap Modules + Pre-Market Readiness Checkpoint
+
+**Status**: ✅ COMPLETE — Gap modules 37-38 written and committed. Stockbot pre-market checkpoint in ~13 hours.
+
+**Work completed**:
+
+1. **Career-Training Gap Modules** (Autonomous work available):
+   - **Module 37: Industrial Commissioning & Complex Equipment Handoff** (525 lines, 6,145 words)
+     - Content: Pre-functional testing, functional performance testing, deficiency management, owner training, final acceptance, ASHRAE/Title 24 context
+     - Format: 7 sections + mental model + 2 case studies
+     - Audience: Industrial GCs, mechanical/electrical subs transitioning to prime GC role
+   - **Module 38: Multi-Family & Light Commercial Construction Fundamentals** (624 lines, 6,742 words)
+     - Content: Occupancy classifications, fire-separation assemblies, accessibility requirements, multi-family sequencing, AIA A201 contract administration, MEP coordination
+     - Format: 6 sections + mental model + 2 case studies
+     - Audience: Residential GCs moving to commercial/multi-family; commercial GC trainees
+   - Both modules: Match established format (modules 01-36), include metadata, mental models, case studies, resource citations
+   - **Commit**: 0e344187 (feat: gap modules 37-38 complete)
+
+2. **Session Orientation**:
+   - Current time: June 29 00:01 UTC
+   - Market open checkpoint: 13:30 UTC (13.5 hours away)
+   - Jetson pre-market audit: 13:05 UTC
+   - All 3 active blocks require user/external action (cannot resolve)
+   - INBOX: 1 item (usage calibration) scheduled for tomorrow
+   - Decision: Work on career-training (independent from stockbot, no interference with checkpoint)
+
+**Key status**:
+- ✅ **Career-training**: Now has 38/38 modules complete + 150-scenario workbook. All autonomous content work finished. Ready for GitHub Pages deployment (awaiting user repo setup).
+- ✅ **Stockbot**: Healthy for market open, all Phase 1 specs deployed, Phase 2 items ready for post-checkpoint execution
+- ✅ **Resistance-research**: Phase 2 distribution ready, **user action urgent** (Domain 51/48 sends overdue)
+- ✅ **Blocks**: All stable, 3 active blocks all require user/external action
+- ⏳ **Next checkpoint**: June 29 13:30 UTC Stockbot market open (monitoring continues)
+
+**No new blockers. Ready to commit orchestration state.**
+
+---
+
 ## Session 4487 (2026-06-28 23:55–00:00 UTC) — FINAL ORIENTATION + ORCHESTRATION COMMIT
 
 **Status**: ✅ COMPLETE — Full state audit + block verification + project inventory + commitment ready.
