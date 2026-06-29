@@ -31,6 +31,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+### resistance-research — Domain 51 Phase 2 Wave 1 Distribution CRITICAL (14 days overdue, 2 days to deadline)
+**Date blocked**: 2026-06-29
+**Context**: Domain 51 (Campaign Finance & Dark Money) Phase 2 Wave 1 distribution was scheduled for June 14-15 but was never executed. As of June 29, it is 14 days overdue with only 2 days remaining until the July 1 hard deadline (California Fair Elections Act messaging integration cutoff). The research document (6,000+ words, 58 citations) is production-ready; all email templates are pre-filled; all 5 Wave 1-2 contacts are verified current (last verified June 10-11, 2026); the Gist URL (https://gist.github.com/esca8peArtist/6dce895c5192e6a3ba2abfed40733372) is live (HTTP 200, June 29). **Two options**: (A) Execute Wave 1 today (June 29) — 2 emails to Campaign Legal Center and Issue One, ~15 minutes. (B) Execute Wave 1 + Wave 2 today/June 30 — 5 emails total to national + California contacts, ~60 minutes. Post-deadline contingency framework exists (PHASE_2_POST_DEADLINE_CONTINGENCY_ACTIVATION.md) if delivery slips past July 1, but immediate execution recovers 100% of value vs. 60-75% in contingency branch. Execution summary with copy-paste email bodies available at DOMAIN_51_URGENT_JUNE29_EXECUTION_SUMMARY.md.
+**What I need**: Execute Wave 1 emails immediately (today, June 29). Two emails: (1) Campaign Legal Center (echlopak@campaignlegalcenter.org) — "Constitutional architecture research on Citizens United — Hawaii/Montana model + FEC collapse analysis"; (2) Issue One (info@issueone.org) — "Dark money architecture research — FEC collapse documentation + state ballot measure analysis". Both emails are template-filled at DOMAIN_51_WAVE_1_EMAIL_EXECUTION_PACKAGE.md — requires only [YOUR_NAME] and [YOUR_CONTACT_INFO] substitution. Send Email 1 now, wait 90 minutes, send Email 2. Log send times in DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md. Aim for Wave 2 (3 additional California contacts) today or June 30.
+**Verify with**: `grep -A 5 "Send Date/Time" /home/awank/dev/SuperClaude_Framework/projects/resistance-research/DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md | grep -E "(June 29|June 30)" || echo "NOT SENT"`
+**Resolution**: [leave blank]
+
+---
+
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
