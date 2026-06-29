@@ -286,21 +286,28 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - **Status**: PRODUCTION-READY — all deliverables committed (commits d10edfc, d2c04a1), zero uncommitted changes
    - **Owner**: stockbot team (Session 4485)
 
-28. **mfg-farm: Etsy & Amazon Handmade Pre-Launch Templates** (2-3h)
-   - **Trigger condition**: None — ready now
-   - **Scope**: Create fillable templates for rapid post-test-print market activation: (1) Etsy product listing template (SEO keywords, bullet points, pricing, shipping, images checklist, tags), (2) Amazon Handmade application template (original design certification, photography specs, brand story, shipping policy), (3) Product comparison matrix (ModRun cable clip: Etsy position vs Amazon position vs Reddit niche communities), (4) Pricing calculator templates (margin targets for each channel: Etsy net $25.79 vs Amazon FBA $21.23/sale). All templates pre-filled with market research from Item 9.
-   - **Value**: Post-test-print activation is critical-path (Amazon Handmade 5-7 week review window starts at application). Pre-made templates eliminate 2-3 day setup delay between test print pass and Etsy/Amazon launches.
-   - **Owner**: general-research subagent
-   - **Confidence**: 88% (Phase 2 research complete Session 4469; templates mechanistic)
-   - **Status**: Ready for execution post-Item-27
+28. **mfg-farm: Etsy & Amazon Handmade Pre-Launch Templates** (2-3h) ← **✅ COMPLETE (SESSION 4491)**
+   - ✅ **Executed 02:29–02:50 UTC June 29** (general-research subagent execution)
+   - **Deliverables COMPLETE**:
+     1. `ETSY_LISTING_TEMPLATE.md` (15,169 bytes) — Pre-existing production-ready template (SEO keywords, bullet points, pricing, shipping, images checklist, tags). Validated against Session 4469 research.
+     2. `AMAZON_HANDMADE_APPLICATION_TEMPLATE.md` (16,439 bytes) — Pre-existing production-ready template (original design certification, photography specs, brand story, shipping policy). Validated against Amazon Handmade 2026 requirements.
+     3. `PRODUCT_POSITIONING_MATRIX.md` (17,067 bytes) — NEW (created Session 4491): Etsy vs Amazon vs Reddit positioning, competitive gaps, unique value props (modular clip-and-rail system, original CAD design, print-to-order freshness). Per-community Reddit angles documented (r/cableporn, r/3Dprinting, r/battlestations).
+     4. `CHANNEL_PRICING_CALCULATOR.md` (18,693 bytes) — NEW (created Session 4491): Channel-specific margin modeling, SKU mix leverage analysis, breakeven analysis. Key counterintuitive finding: Amazon FBA nets slightly more post-COGS ($17.36 vs $15.98) due to cheaper fulfillment fee than USPS shipping absorbed by Etsy seller.
+   - **Key finding**: $500/month target achievable on Etsy alone at 20 units/week; revenue lever is SKU mix (shift from 3-packs to 8-packs or system bundles to double monthly net).
+   - **Status**: PRODUCTION-READY — user can execute rapid post-test-print market activation (Etsy + Amazon Handmade within 48h of test pass)
+   - **Owner**: general-research agent (Session 4491)
 
-29. **seedwarden: Phase 3 Extended Content Calendar & Landing Page Copy** (3-4h)
-   - **Trigger condition**: None — ready now
-   - **Scope**: Create extended content infrastructure for Q3 Phase 3 launch (Jun 29-Aug 3) and beyond: (1) Extended social media calendar (Jul-Sep, 60 posts across LinkedIn/Instagram/YouTube: educational 50%, testimonial 30%, promotional 20%), (2) Landing page copy + visual framework for 6 Q3 bundles (Women's Health, Respiratory, Sleep, Immunity, Practitioner, Digestive), (3) Promotional email sequences for tier transitions (free→paid, bundle→full tier, seasonal campaigns), (4) Testimonial collection framework (how to request + incentivize, review aggregation strategy). Coordinate with existing templates from Items 10 + 25.
-   - **Value**: Extends Phase 3 content reach beyond June 29-Aug 3 window. Enables sustained engagement through fall/winter seasons. Reduces mid-launch content creation friction.
-   - **Owner**: seedwarden subagent
-   - **Confidence**: 88% (Phase 3 marketing infrastructure complete Session 4478; bundle content validated Session 4458)
-   - **Status**: Ready for execution post-Item-27
+29. **seedwarden: Phase 3 Extended Content Calendar & Landing Page Copy** (3-4h) ← **✅ COMPLETE (SESSION 4491)**
+   - ✅ **Executed 02:30–03:50 UTC June 29** (seedwarden subagent execution)
+   - **Deliverables COMPLETE**:
+     1. `EXTENDED_SOCIAL_MEDIA_CONTENT_CALENDAR.md` (1,246 lines) — 60 pre-written posts (Aug 4–Sep 26), platform-specific formatting. LinkedIn Tue/Thu (professional education), Instagram Mon/Wed/Sat (lifestyle), YouTube Fri (long-form 15-30 min, 6 guest practitioner interviews). Content mix: 50% educational / 20% community / 20% promotional / 10% video outlines. Engagement tracking template + response protocol included.
+     2. `LANDING_PAGE_COPY_FRAMEWORK.md` (802 lines) — 6 bundle-specific landing pages (Women's Health, Respiratory, Sleep, Immunity, Digestive, Practitioner). Each section: 3 headline variants, 250–350 word body copy, 4 feature sections (150–200 words + dosage/safety/citations), 3 testimonial placeholders with FTC disclosure, 3-4 CTAs, 5-7 FAQ sections. Mobile-calibrated, Etsy-compatible character limits.
+     3. `PROMOTIONAL_EMAIL_SEQUENCES.md` (725 lines) — 6 production-ready sequences (Free→Paid over 14 days, Bundle Upgrade with 5 conditional pairings, Pre-Fall Immunity, Winter Prep, Practitioner Back-to-School, Monthly Newsletter template). Full Kit automation tag reference (20 tags), seasonal broadcast calendar Aug–Dec, FTC compliance checklist. 15 email template sections total.
+     4. `TESTIMONIAL_COLLECTION_FRAMEWORK.md` (479 lines) — 3-phase timeline (keyed to bundle launch dates), 5 request templates (Kit automation Day 7, Instagram/YouTube passive, practitioner email Day 14, permission follow-up, contractor guidance). 4 incentive tiers with FTC disclosure. Testimonial tracker schema (CSV), quality rubric, platform-specific deployment rules, Etsy review monitoring with 3 response templates, monthly aggregation checklist.
+   - **Key features**: 32 FAQ items across 6 bundles (5.3 avg per bundle), all testimonial/email copy production-ready (zero [TODO] placeholders). Contractor testimonial sourcing integrated with Week 1-6 onboarding timeline.
+   - **Status**: PRODUCTION-READY — Q3 launch (Jun 29–Aug 3) + extended reach (Jul-Sep content) + fall/winter sustained engagement complete. User can activate immediately.
+   - **Owner**: seedwarden team (Session 4491)
+   - **Confidence**: 88% (Phase 3 launch infrastructure complete; extended calendar is mechanistic expansion of proven templates)
 
 ---
 
