@@ -1,5 +1,35 @@
 # CHECKIN — Needs Your Input
 
+*Updated: June 29, 2026 — Session 4558: Domain 51/48 Wave 1 status confirmed NOT SENT as of June 29 23:59 UTC. Branch A (full value) window closes July 1 00:00 UTC. See urgent flag below.*
+
+---
+
+## URGENT — June 30 IS THE LAST BRANCH A WINDOW (Domain 51 + 48)
+
+**Status as of June 29 23:59 UTC**: Domain 51 Wave 1 has NOT been sent. All 5 send checkboxes blank in DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md. Domain 48 Wave 1 status also unconfirmed sent.
+
+**What this means**:
+- June 30 sends = Branch A (full value, California Fair Elections Act messaging window still open)
+- July 1 00:00 UTC = Branch B auto-triggers (CA window closes, $4-6K advocacy impact lost)
+- July 8 00:00 UTC = Branch C escalation (emergency 6-contact group only)
+
+**Wave 1 execution — estimated 15-20 active minutes:**
+
+Domain 51 (Campaign Finance): Open DOMAIN_51_URGENT_JUNE29_EXECUTION_SUMMARY.md — two copy-paste emails with all fields pre-populated except [YOUR_NAME] and [YOUR_CONTACT_INFO].
+1. Send to echlopak@campaignlegalcenter.org
+2. Send to info@issueone.org (90 min after #1)
+3. Log sends in DOMAIN_51_DISTRIBUTION_EXECUTION_LOG.md
+
+Domain 48 (Criminal Justice): Open DOMAIN_48_EMAIL_TEMPLATE_SET.md — Wave 1 contacts are Sentencing Project (Nicole D. Porter) and Prison Policy Initiative (Peter Wagner). Placeholders: {{YOUR_NAME}}, {{YOUR_CONTACT_INFO}}, {{DECISION_MAKER}}, {{ORG_NAME}}.
+
+**Wave 2 can execute same day (June 30):**
+- Domain 51 Wave 2 (Common Cause CA, LWV CA, Clean Money AF): DOMAIN_51_WAVE_2_EMAIL_EXECUTION_PACKAGE.md
+- Domain 48 Wave 2 (Brennan Center, Worth Rises, CLC/Restore Your Vote, M4BL): DOMAIN_48_EMAIL_TEMPLATE_SET.md Wave 2 section
+
+**If missed (July 1+)**: PHASE_2_POST_DEADLINE_CONTINGENCY_ACTIVATION.md has Branch B templates pre-staged. No planning delay — execute immediately from that file.
+
+---
+
 *Updated: June 22, 2026 — Session 3913: Domain 57 Gist audit complete; DOMAIN_57_GIST_URL.txt action note added; one user action required before August 8-9 (see below). Three SCOTUS decisions imminent (Trump v. Slaughter, Little v. Hecox / BPJ, Trump v. Barbara — all expected within days).*
 
 ---
