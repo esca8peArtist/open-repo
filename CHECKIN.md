@@ -2,6 +2,56 @@
 
 ---
 
+## Session 4491 (2026-06-29 02:01 UTC) — PRE-MARKET ORIENTATION: STOCKBOT CHECKPOINT IN 11.5 HOURS
+
+### **Since Last Check-in (Session 4489 → 4491)**
+
+✅ **Orientation Complete** — All 3 active blocks remain unresolvable (require user/external action). Resistance-research distribution materials ready for user execution. Stockbot all systems GREEN, pre-market audit scheduled 13:05 UTC. Seedwarden focus pruned (was 16 sessions stale). **No autonomous implementation work available** — most projects complete, paused, or blocked. **Status**: Monitoring-only mode until market open at 13:30 UTC.
+
+### **Work This Session**
+
+- ✅ **Orchestrator Orientation**: Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md
+  - **Block status**: Cybersecurity-hardening (manual Windows restart), mfg-farm (test print), systems-resilience (maintainer push) — all 3 require user action, cannot auto-resolve
+  - **INBOX**: One item (June 30 calibration reset) — not yet processable (scheduled after 2026-06-30 00:00 UTC)
+  - **Blocks verified**: mfg-farm test-print-results dir doesn't exist, GitHub release not found
+- ✅ **PROJECTS.md Pruning**: Seedwarden focus updated to remove stale Session 4473 reference (16 sessions old). New focus reflects Phase 3 infrastructure complete, contractor hiring overdue, awaiting user action
+- ✅ **Pre-market Checkpoint Prepared**: Stockbot all systems GREEN (per Session 4490 report):
+  - Pre-market audit GREEN: all 5 sessions health-checked, real-time stream active, models initialized
+  - WebSocket: registered and receiving IEX stream data
+  - Jetson Docker: stockbot container healthy, alembic migrations complete
+  - Database: trading.db operational, session config loaded (JPM ridge_wf, AMZN/AAPL/MSFT/NVDA lgbm_ho)
+  - **Next**: 13:05 UTC automated pre-market health gate → 13:30 UTC market open
+
+### **Deliverables**
+
+- ✅ PROJECTS.md: Seedwarden focus pruned (removed stale session reference, added current status)
+- ✅ Orchestration files ready for commit (PROJECTS.md only change)
+
+### **System State**
+
+- ✅ **Stockbot** (Priority 1): All systems GREEN. Market open 13:30 UTC (11.5h away). Pre-market audit at 13:05 UTC.
+- ✅ **Resistance-research** (Priority 2): Distribution materials GO, awaiting user execution (Domain 51/48 sends).
+- ⏸️ **Seedwarden** (Priority 5): Paused. Phase 3 infrastructure production-ready, contractor hiring overdue (~24h).
+- ✅ **Career-training** (Priority 7): Complete. 38 modules + 150 scenarios done, GitHub Pages deployment ready.
+- ✅ **Open-repo** (Priority 6): Schema docs complete, GitHub Pages approach decided, no further autonomous work.
+- ✅ **Systems-resilience** (Priority 8): GitHub release blocked on maintainer, no autonomous work available.
+- ✅ **Blocks**: 3 active (all require user/external action, verified unresolvable)
+
+### **Needs Your Input (CRITICAL)**
+
+1. **URGENT (3 days)**: Execute resistance-research Domain 51 Wave 1 send (14 days overdue, July 1 deadline)
+2. **URGENT (3 days)**: Execute resistance-research Domain 48 Wave 1 send (July 15 deadline, 17 days remaining)
+3. **Optional**: Contractor hiring for seedwarden Phase 3 (now overdue ~24h, was due Jun 24-28)
+
+### **Estimated Time to Next Milestone**
+
+- **13:05 UTC (3h)**: Stockbot automated pre-market health audit
+- **13:30 UTC (11.5h)**: Stockbot market open checkpoint
+- **July 1 18:00 UTC (3 days)**: Resistance-research Domain 51 hard deadline
+- **June 30 00:00 UTC (22h)**: Usage calibration reset (process INBOX item then)
+
+---
+
 ## Session 4489 (2026-06-29 00:10–01:35 UTC) — PARALLEL PHASE 2 EXECUTION: STOCKBOT EXIT MODEL + RESISTANCE-RESEARCH ELECTION OBSERVER GUIDE
 
 ### **Since Last Check-in (Session 4488 → 4489)**
