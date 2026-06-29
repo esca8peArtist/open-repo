@@ -28,8 +28,23 @@
 - Orientation: <2 min
 - Verification: <3 min
 - CHECKIN.md update: <5 min
-- Total: ~10 min
-- Status: Orchestrator standing by for June 30 user actions and July 3 checkpoint
+- Documentation: <10 min
+- Total: ~20 min wall-clock
+- Status: ✅ Orchestrator ready for June 30 calibration reset at 00:00 UTC
+
+**Queued for Post-Reset Execution**:
+- ✅ Item 38: resistance-research Phase 2 post-execution impact measurement (ready)
+- ✅ Item 39: stockbot July 7 operational gate criteria validation (ready)
+- ✅ Item 40: systems-resilience Phase 6 research execution schedule & onboarding (ready)
+- ⏳ Item 42: Seedwarden Week 1-2 monitoring (daily execution, live)
+- ⏳ Item 43: Stockbot July 7 gate pre-staging (trigger: July 7 KPI detection)
+- ⏳ Item 44: Domain 51 contingency activation (trigger: July 1 00:00 UTC if Domain 51 not executed)
+
+**Critical Handoff to June 30**:
+1. Domain 51 Phase 2 Wave 1 deadline: TODAY 23:59 UTC (user decision required)
+2. June 30 00:00 UTC: Usage calibration reset (automated)
+3. All critical-path Phase 3 infrastructure: ✅ PRODUCTION-READY
+4. Orchestrator: STANDING BY for user actions and July 3 checkpoint
 
 ---
 
