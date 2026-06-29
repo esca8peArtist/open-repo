@@ -130,6 +130,29 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 34 — Phase 3 Week 1-2 Execution Checklist (execution log + alert procedures + milestone tracking) — June 29, 2026
+
+**Session**: June 29, 2026
+**Task**: Pre-stage the remaining 4 deliverables completing the Item 34 scope — the daily execution log template, email engagement decision tree, contractor milestone calendar, and social platform alert rules.
+
+**Status**: COMPLETE — 4 files written to `projects/seedwarden/`
+
+**Deliverables**:
+
+1. **`PHASE_3_EXECUTION_LOG.md`** — Pre-populated daily log template (Jun 29–Jul 13, 15 days). One row per task per day. Columns: Date (UTC), Time (UTC), Task, Status (DONE/SKIPPED/BLOCKED), Metric / Result, Screenshot Filename, Notes / Escalation. Pre-populated with every anticipated task for each of the 15 days: email sends (3 sends), 1hr delivery checks, 24hr and 48hr open rate checks, daily unsubscribe counts, social post live confirmations, Etsy listing checks, contractor onboarding sends, kickoff call confirmations, quality gate checks (photographer and writer), design lock deadline, bundle staging confirmations. Includes Week 1-2 aggregate metrics summary table (3 emails × 6 metrics) and Escalation Log (for YELLOW/RED threshold triggers).
+
+2. **`PHASE_3_EMAIL_ENGAGEMENT_ALERT_PROCEDURES.md`** — Mechanical decision tree for 5 email metrics. Procedure 1: Delivery rate (T+1hr, 14:00 UTC — GREEN >95%, YELLOW 90-95%, RED <90%; Checklist A spam trigger review). Procedure 2: Open rate (T+24hr — GREEN >22%, YELLOW 15-22%, RED <15%; spam placement test on 5 providers; list segmentation steps). Procedure 3: Click rate (T+24hr — GREEN >3%, YELLOW 1-3%, RED <1%; CTA audit and image hosting check). Procedure 4: Unsubscribe rate (daily 22:00 UTC — GREEN <0.3%, YELLOW 0.3-0.5%, RED >0.5%; list health clean procedures). Procedure 5: Second-bundle fatigue check (Email 3 open rate <15% triggers re-engagement sequence + subject line pivot). Quick Reference summary table included.
+
+3. **`PHASE_3_CONTRACTOR_MILESTONE_TRACKING.md`** — Week 1-6 milestone calendar with 3 tracks. Photography: 8 milestones (P-0 through P-7) from contract signing through final 15-image handoff (Jun 30–Jul 22). Writing: 10 milestones (W-0 through W-10) from contract signing through all 3 bundles final (Jun 30–Jul 31). Habitat Specialist: 6 milestones (H-0 through H-5) from contract signing through final notes integrated (Jun 30–Jul 25). Each milestone row: due date (UTC), deliverable description, completion gate, ACTUAL delivery column, Status, Notes. Week-by-week calendar summary (Weeks 0–6) for at-a-glance tracking. Escalation procedures per track: 3-day AT RISK threshold, 5-day ESCALATED threshold, specific message templates (first message, follow-up with payment hold warning, fallback activation). Cross-referenced to PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md (quality gates) and PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md (Templates 2 and 4).
+
+4. **`PHASE_3_SOCIAL_PLATFORM_ALERT_RULES.md`** — Engagement thresholds and alternate strategy triggers for LinkedIn, Instagram, and YouTube. LinkedIn: post schedule (Tue/Thu 14:00 UTC primary), engagement thresholds (GREEN >8%, YELLOW 4-8%, RED <4%), zero-check at T+8hr, 3-consecutive-post strategy adjustment triggers. Instagram: post schedule (Mon/Wed 14:00 UTC + Sat 22:00 UTC), engagement thresholds (GREEN >5%, YELLOW 2-5%, RED <2%), bio link management rule, Story crosspost rule, algorithm decay alert (>30% impressions decline triggers frequency increase + Reels test). YouTube: CTR thresholds (GREEN >3%, YELLOW 1-3%, RED <1% at T+48hr), watch time thresholds (retention at 30sec/2min, average watch time vs. length), guest interview resonance check. Cross-platform weekly health check grid (Sunday 22:00 UTC). Posting time reference table with UTC/ET times and best-day guidance.
+
+**Source files used**: PHASE_3_WEEK_1_2_EXECUTION_CHECKLIST.md, PHASE_3_WEEK_1_2_ALERT_THRESHOLDS.md, PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md, PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md, PHASE_3_SOCIAL_MEDIA_CONTENT_CALENDAR.md, PHASE_3_BUNDLE_LAUNCH_EMAIL_SEQUENCES.md.
+
+**Zero [TODO] placeholders confirmed**: all 4 files contain no placeholder content; all thresholds numeric; all decision branches explicit.
+
+---
+
 ## Item 28 — Seedwarden Contractor Selection & Onboarding Automation — June 28, 2026
 
 **Session**: June 28, 2026
