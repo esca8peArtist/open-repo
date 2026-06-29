@@ -542,6 +542,33 @@ Hard deadline **January 3, 2027** (Congress seating). Research begins November 4
    - **Owner**: stockbot team
    - **Confidence**: 88% (Gate detection logic complete Item 39, Phase 2 architecture staged Item 35, risk guardrails staged Item 28)
 
+**DUPLICATE EXECUTION (Session 4563 ERROR)** — Items 45-47 re-executed by duplicate agents launched June 29 21:47 UTC (Session 4562 already completed these). Awaiting completion.
+
+**NEW ITEMS (Session 4563 — 2026-06-29 21:55 UTC — Critical Execution Window + Readiness Audits)**:
+
+48. **resistance-research: Domain 51/48 Final Execution Approval Checklist** (2h)
+   - **Trigger condition**: None — immediately executable (all infrastructure staged)
+   - **Scope**: Create user-facing final approval checklist for Domain 51 Wave 1 + Domain 48 Phase 2 execution. Contents: (a) contact list verification (LinkedIn/email reachable, no bounces expected), (b) template preview (proofread all 12 Wave 1 sends), (c) execution sequence validation (UTC times confirmed, no timezone ambiguity), (d) monitoring checklist (Discord, reply tracking, escalation triggers), (e) rollback abort criteria (>5% bounces = ABORT). Deliverable: `DOMAIN_51_48_EXECUTION_APPROVAL_CHECKLIST.md` (production-ready for user sign-off)
+   - **Value**: Eliminates "are we really ready?" uncertainty before June 30 23:59 UTC deadline. User can execute with high confidence.
+   - **Owner**: resistance-research team
+   - **Status**: Ready for immediate execution
+
+49. **open-repo: Water Systems Wave 0 Final Launch Preparation** (2-3h)
+   - **Trigger condition**: None — immediately executable (contributor sourcing staged Item 41)
+   - **Scope**: Final pre-launch checklist for Water Systems Wave 0 (June 30 recruitment launch). Contents: (a) 6 recruitment email final review (verify personalization, subject lines tested, send schedule confirmed), (b) GitHub Issue template for contributor sign-up (plain-text form, 6th-grade reading level, acceptance criteria), (c) Week 1-2 response monitoring setup (email alerts, Slack routing, quick-reply templates), (d) Contributor onboarding SOP (10 new step walk-through, reference materials, Q&A), (e) Week 6 critical gate (10 contributors minimum for Wave 0 success; pre-staged solo-content fallback if <5). Deliverable: `WATER_SYSTEMS_LAUNCH_READINESS_CHECKLIST.md` + `CONTRIBUTOR_ONBOARDING_SOP.md` (production-ready)
+   - **Value**: June 30 recruitment launch will execute without delays. Pre-staged contingencies prevent Week 6-8 scope compression.
+   - **Owner**: open-repo team
+   - **Status**: Ready for immediate execution
+
+50. **career-training: Phase 1 GitHub Pages Pre-Push Deployment Audit** (1.5-2h)
+   - **Trigger condition**: None — immediately executable (Phase 1 infrastructure complete Item 26)
+   - **Scope**: Final pre-deployment audit of Phase 1 GitHub Pages. Checklist: (a) Jekyll config validation (baseurl correct, plugins enabled, permalink structure verified), (b) Module assets verification (all 38 modules have frontmatter, images 404-checked, links internal/working), (c) Analytics pre-configuration (Google Analytics 4 script confirmed in _includes/footer.html, event tracking tags wired, conversion funnels active), (d) Email signup form integration (Kit.com form embedded, webhook tested, submission email delivery confirmed), (e) Mobile rendering spot-check (at least 5 modules tested on mobile, no layout breaks). Deliverable: `GITHUB_PAGES_DEPLOYMENT_AUDIT_CHECKLIST.md` with PASS/FAIL verdict for each check, remediation steps if any FAIL
+   - **Value**: User can push GitHub Pages to production confident that critical infrastructure is correct. Prevents common GitHub Pages failures (asset 404s, misconfigured analytics, form submission breaks).
+   - **Owner**: career-training team
+   - **Status**: Ready for immediate execution
+
+---
+
 44. **resistance-research: Domain M Post-June-30 Contingency Activation Framework** (1.5-2h) ← **✅ COMPLETE (Session 4560, 21:25 UTC)**
    - ✅ **Executed** (21:15–21:25 UTC, resistance-research subagent, commit e80edaac)
    - **Deliverables COMPLETE**:
