@@ -11,6 +11,23 @@
 
 ## New Items
 
+### [2026-06-29 08:40 UTC] JETSON POST-MARKET MAINTENANCE — onedrive crash-loop remediation
+
+**Process after 20:00 UTC market close (post-market window).**
+
+Item 20 audit (pre-market readiness) found onedrive.service has crashed 1,005,780 times since May 9, filling `/var/log/syslog` with 12GB of logs. System is operationally clear for today's market (125GB free), but this must be fixed within 48 hours (by ~July 1 13:30 UTC) to prevent RED status disk contention by July 3-4.
+
+**Remediation**: Three steps documented in `JETSON_JUNE29_READINESS_CHECKLIST.md`:
+1. Stop + disable onedrive service (systemctl --user stop/disable)
+2. Truncate syslog to 0 bytes (safe, only affects rotated log file)
+3. Optionally reclaim Docker cache (~2.3GB)
+
+**Timeline**: Execute sometime after 20:00 UTC today (post-market). Remediation takes <5 min. Can be executed autonomously post-market if authorized, or user can execute manually.
+
+**Action**: Authorize post-market autonomous execution OR schedule manual execution by June 30 13:30 UTC.
+
+---
+
 ### [2026-06-30 00:05 UTC] USAGE CALIBRATION RESET — Scheduled for Tuesday reset
 
 **Process on or after June 30 00:00 UTC only.** Usage billing week resets at that time.
