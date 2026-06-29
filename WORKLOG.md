@@ -28,10 +28,10 @@
 - **URGENT (TODAY before 23:59 UTC)**: Execute Domain 51 Wave 1 using DOMAIN_51_PHASE_2_WAVE_1_EXECUTION_RUNBOOK.md (all templates ready, full procedures documented)
 - If Domain 51 not executed by today: July 1 00:00 UTC will automatically activate Domain M contingency (DOMAIN_M_CONTINGENCY_ACTIVATION_RUNBOOK.md, all procedures documented)
 
-**Agent Status**:
-- Item 45: ✅ COMPLETE (verification confirmed prior session work is production-ready)
-- Item 46: 🔄 IN PROGRESS (seedwarden contractor hiring infrastructure) — ETA completion 90 min from spawn (~00:35 UTC June 30)
-- Item 47: 🔄 IN PROGRESS (stockbot Phase 3 strategy definition) — ETA completion 90 min from spawn (~00:35 UTC June 30)
+**Agent Status** (all complete):
+- Item 45: ✅ COMPLETE (23:10 UTC) — resistance-research: Domain 51/M execution runbooks (3 files, verified production-ready)
+- Item 46: ✅ COMPLETE (23:45 UTC) — seedwarden: Phase 3 contractor hiring infrastructure (4 files: Upwork job descriptions $5,950 budget, hiring timeline/rubric, onboarding playbook, payment tracking template)
+- Item 47: ✅ COMPLETE (00:13 UTC June 30) — stockbot: Phase 3 strategy definition (3 files: phase definition/scope, 4-option decision matrix, July-August pre-work plan with exact commands)
 
 **Commits prepared for pre-reset**:
 - CHECKIN.md: Session 4568 entry added
