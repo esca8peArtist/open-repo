@@ -208,6 +208,172 @@ Check by reading the transition paragraph between Zone 1 sections and Zone 2 sec
 
 ---
 
+## Part 5: Researcher Unavailability Protocol
+
+If the primary researcher becomes unavailable (medical leave, family emergency, loss of project access, or other cause reducing availability to under 10 hours/week for 2+ consecutive weeks), the following sequence activates within 24 hours of confirmed unavailability.
+
+### Immediate Response (Day 0)
+
+1. Coordinator assesses the current zone completion status against the gate calendar. Answer three questions: (a) Which zone gate is next and when? (b) What percentage of that zone's content is complete? (c) What is the earliest a replacement researcher could be onboarded?
+
+2. If the unavailable researcher can produce a zone handoff document (written summary of research progress, open questions, sources used, and sources planned), request it within 48 hours. This document becomes the backup researcher's briefing.
+
+3. If a handoff document is not possible, the coordinator reconstructs zone status from: the shared source log (what sources were accessed), the Slack standup archive (what was reported done), and any draft files in the project folder.
+
+### Backup Researcher Activation
+
+Three backup researchers per zone are identified in advance from the original Phase 3 recruitment pool. Activation is in ranked order; contact each within 24 hours of confirmed unavailability. Target: backup researcher confirmed within 5 business days.
+
+**Zone 1 backup researchers** (Constitutional Vulnerabilities, voting rights law):
+- Backup Z1-A: Researcher with Brennan Center or voting rights litigation background from original recruitment pool; proficiency in Voting Rights Act case law and SAVE Act state legislation tracking. Activation lead time: 5–7 days.
+- Backup Z1-B: Academic researcher with election law focus (law school or political science); sufficient from published bibliography to replicate Zone 1 source library. Activation lead time: 7–10 days.
+- Backup Z1-C: If Zone 1 is less than 40% complete at unavailability: coordinator completes Zone 1 research using the DEMOCRACY_TOOLS_RESEARCH_OUTLINE.md and PHASE_3_DEMOCRACY_TOOLS_RESEARCH_READINESS_CHECKLIST.md as sole guides. This is the contingency of last resort and should not be assumed achievable under time pressure.
+
+**Zone 2 backup researchers** (Technology Solutions, civic tech):
+- Backup Z2-A: Researcher with Democracy Works / civic technology background from original recruitment pool. Onboarding: PHASE_6_RESEARCHER_ONBOARDING_KIT.md Section 2 Zone 2 questions (Q4–Q6) plus prior TurboVote and ElectionGuard source library. Activation lead time: 5–7 days.
+- Backup Z2-B: Researcher with academic civic technology background. Activation lead time: 7–10 days.
+- Backup Z2-C: Coordinator completes Zone 2 using published Democracy Works reports and existing Zone 2 source library (all sources identified in onboarding kit). Time estimate: 25–30 hours.
+
+**Zone 3 backup researchers** (International Models, comparative democracy):
+- Backup Z3-A: Researcher with comparative government or international election systems background. Zone 3 relies heavily on English-language published case studies (Participedia, Elections Canada, e-Estonia). No language specialization required beyond English. Activation lead time: 5–7 days.
+- Backup Z3-B: Researcher with digital democracy or civic technology background who can assess the Estonian and Taiwanese models without comparative government specialization. Activation lead time: 7–10 days.
+- Backup Z3-C: Scope reduction to two international models (Estonia + Taiwan; drop Canada to 1,000-word summary). This reduces Zone 3 research hours from 45h to 32h, enabling the coordinator to complete Zone 3 in a stretch scenario.
+
+**Zone 4 backup researchers** (Movement Infrastructure, U.S. democracy organizing):
+- Backup Z4-A: Researcher with democracy movement organizing background (Brennan Center, LWV, NAACP LDF, or state-level equivalent); Zone 4 source library is composed of U.S. organizational reports rather than academic literature. Activation lead time: 3–5 days (lighter onboarding requirement due to organizational familiarity).
+- Backup Z4-B: Researcher with ballot initiative expertise (BISC contact, state legislature policy analyst, or advocacy organization program director with direct knowledge of Zone 5 ballot initiative thresholds). Activation lead time: 5–7 days.
+- Backup Z4-C: Zone 4 scope reduction — drop Section 11 Zone 5 state-by-state toolkit to table format (saves 8h). Coordinator can complete Zone 4's ballot initiative research using state legislative databases and Ballotpedia in a stretch scenario.
+
+### Backup Researcher Onboarding Timeline
+
+A backup researcher starting cold on this project requires:
+- Day 1: Read PHASE_6_RESEARCHER_ONBOARDING_KIT.md (2 hours). Review zone handoff document from previous researcher (1–2 hours).
+- Day 2: Source library review — pull and skim the primary sources for their assigned zone (3–4 hours).
+- Day 3: First research session with coordinator check-in at end of day (4–6 hours research + 30-min coordinator call).
+- Day 4 onward: Normal research pace (5–6 hours/day) with daily Slack standup.
+
+Full replacement researcher at normal productivity within 5–7 days of start date.
+
+---
+
+## Part 6: Source Access Blockage Protocol
+
+If 3 or more paywalled or otherwise inaccessible sources are required and blocked simultaneously, the following pre-identified open-access alternatives activate. This protocol is triggered when the source access log shows 3+ sources marked "blocked, no alternative identified."
+
+### Blocked Source Categories and Open-Access Fallbacks
+
+**Academic journal articles (JSTOR, Wiley, Sage, Oxford Academic)**:
+- Primary fallback: SSRN preprint server (ssrn.com) — most voting rights and election law academic papers have SSRN preprint versions.
+- Secondary fallback: Author direct email (60–70% success rate, 3–5 day response). Template in onboarding kit Section 3.
+- Tertiary fallback: Google Scholar "all versions" link often surfaces an institutional repository or author website PDF. Check before paying.
+- JSTOR JPASS: $199/year annual plan, 24-hour activation. Purchase as project expense if 3+ JSTOR sources blocked simultaneously and SSRN/author email does not resolve within 48 hours.
+
+**Government documents (state legislative databases, Secretary of State websites)**:
+- Primary fallback: Ballotpedia — covers state voting laws, bill tracking, and ballot initiative qualification requirements for all Zone 5 states.
+- Secondary fallback: National Conference of State Legislatures (NCSL) — legislative tracking and state voting law summaries (ncsl.org).
+- Tertiary fallback: Brennan Center State Voting Laws Roundup — synthesizes state-by-state legal changes monthly.
+
+**Court documents (federal district court, circuit court)**:
+- Primary fallback: CourtListener (courtlistener.com) — free access to federal court opinions, filings, and dockets.
+- Secondary fallback: Brennan Center litigation tracker, Campaign Legal Center, Democracy Docket — all publish primary documents for cases they are involved in.
+- Tertiary fallback: PACER ($0.10/page, waived under $30/quarter for low-use accounts). Create account at pacer.uscourts.gov before November 4.
+
+**International sources (Elections Canada, e-Estonia, Taiwan government documents)**:
+- Primary fallback: Participedia.net — peer-reviewed case study database covering vTaiwan, Estonia i-Voting, Canada Inspire Democracy; continuously updated; no access barriers.
+- Secondary fallback: e-estonia.com (no paywall, direct government source); Elections Canada elections.ca reports (free); g0v community documentation (GitHub, free).
+- If a specific Elections Canada report is unavailable: email ElectionsCan-ElectionsCanada@elections.ca referencing the specific report title and requesting a PDF.
+
+### Activation Threshold and Coordinator Notification
+
+If 3+ sources in any single zone are simultaneously blocked and the fallback alternatives above have been checked and do not resolve the access issue within 48 hours: notify coordinator immediately (not at end of week). Coordinator response within 4 hours on weekdays.
+
+Coordinator options: (a) provide institutional access credentials for the specific database; (b) confirm the scope reduction option (drop the affected sources and document the limitation explicitly in the research); (c) authorize the JSTOR JPASS purchase; (d) confirm a scope reduction that removes the research requirement for the blocked sources.
+
+Do not delay zone research by more than 48 hours waiting for access resolution. If 48 hours pass without resolution, document the blockage and continue with available sources. Note the limitation in the zone draft explicitly: "The following sources were inaccessible during the research window; the analysis proceeds from available primary sources and notes where unpublished data would strengthen the claim."
+
+---
+
+## Part 7: Weekly Checkpoint Templates
+
+Use both templates every week throughout the research window. Post to the shared project folder (Nextcloud project directory) and the #phase6-democracy-tools Slack channel.
+
+### Template A: Weekly Standup (Friday, by 3:00 PM Eastern)
+
+```
+PHASE 6 DEMOCRACY TOOLS — WEEKLY STANDUP
+Week [N] of 7 | Dates: [Mon] – [Fri] | Posted: [Date, Time]
+Researcher: [Name]
+
+ZONE STATUS
+Current zone: [Zone 1 / 2 / 3 / 4 / Synthesis A / Synthesis B / Final]
+Gate target: [date]
+Status: [On track / At risk / Behind — 1 sentence explanation if not on track]
+
+OUTPUT THIS WEEK
+Words written: [count]
+Zone draft running total: [count] / [zone target]
+Sources added this week: [count] ([breakdown: e.g., 3 legal, 2 org reports, 1 academic])
+Citations in zone draft (running total): [count] / [zone minimum]
+
+EXPERT CONTACTS
+Outreach this week: [Name, date sent, topic]
+Replies received: [Name, date, incorporated Y/N]
+Non-responsive (follow-up sent): [Name, dates]
+
+ACCESS LOG
+Blocked sources this week: [count, or "none"]
+Resolved via: [fallback used, or "n/a"]
+
+NEXT WEEK CRITICAL PATH
+Priority item: [1 sentence — what must get done first]
+Hours available next week: [estimate]
+
+COORDINATOR ACTION NEEDED
+[1 item requiring coordinator response, or "none"]
+```
+
+### Template B: Zone Gate Metrics Dashboard (at each zone gate date)
+
+```
+ZONE [N] GATE METRICS DASHBOARD
+Gate date: [Date] | Zone: [Zone name] | Submitted: [Date]
+
+GATE SCORECARD
+[ ] Minimum verified source count: [actual] / [minimum]
+[ ] Citation count in zone draft: [actual] / [minimum]
+[ ] Primary sources (legal/gov): [actual] / [minimum]
+[ ] All research questions answered: [actual answered] / [total]
+[ ] Zone 5 subsection present: [Yes / No — if no, 1 sentence on status]
+[ ] No open placeholders: [Yes / No]
+[ ] Minimum word count: [actual] / [minimum]
+
+GATE DECISION (self-assessment)
+[ ] PASS — all 7 criteria met; ready for coordinator spot-check
+[ ] CONDITIONAL — [N] criteria not met; see below for resolution plan
+[ ] HOLD — [describe the gap; request coordinator input]
+
+RESOLUTION PLAN (if conditional or hold)
+Unmet criterion: [which one]
+Gap: [what is missing]
+Plan: [how and by when you will close it]
+Impact on next zone start: [none / delayed by N days]
+
+SPOT-CHECK ITEMS FOR COORDINATOR (3 sources to verify)
+1. Source: [name] — Claim verified: [specific claim from draft]
+2. Source: [name] — Claim verified: [specific claim from draft]
+3. Source: [name] — Claim verified: [specific claim from draft]
+
+HOURS SUMMARY
+Zone hours to date: [count]
+Schedule position: [ahead / on track / N hours behind]
+```
+
+**Frequency**: Template A weekly (every Friday). Template B at each zone gate (November 10, November 17, November 24, December 1, December 8, December 15, December 20).
+
+**Coordinator response time**: Template A acknowledged by Saturday noon with any zone-at-risk response. Template B acknowledged by Sunday noon with spot-check completion and gate pass/hold decision.
+
+---
+
 ## Summary: Gate Calendar
 
 | Gate | Date | Criteria | Decision |

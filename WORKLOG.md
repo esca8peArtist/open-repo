@@ -1,3 +1,18 @@
+## Session 4571 (2026-06-29) — Item 40: Phase 6 Democracy Tools Research Execution Infrastructure
+
+**Item**: 40 — systems-resilience Phase 6 research execution schedule & researcher onboarding kit
+**Status**: COMPLETE
+**Location**: `projects/systems-resilience/`
+
+**Files written/updated**:
+- `PHASE_6_DEMOCRACY_TOOLS_RESEARCH_SCHEDULE.md` (4,636 words) — week-by-week calendar Nov 4–Dec 20 with daily hour targets (6h/day Zone 1, 5h/day synthesis weeks), Thanksgiving contingency buffer, +10% time margin, Slack standup protocol, milestone checkpoint communication procedures
+- `PHASE_6_RESEARCHER_ONBOARDING_KIT.md` (5,530 words) — complete orientation: scope overview (Phase 5 vs. 6 distinction), zone definitions and success criteria, 12 research questions (3/zone), expert contact protocols with email template and backup routing, source access SOPs (JSTOR JPASS, PACER, ILL, author email), writing standards (hybrid academic-advocacy voice), word budget by section, APA7-adjacent citation format, 2-round revision procedure
+- `PHASE_6_QUALITY_ASSURANCE_FRAMEWORK.md` (4,754 words) — zone gate scorecard (7 binary criteria per zone), weekly standup structure (Mon plan / Wed delta / Fri review), 5 escalation procedures (1-week behind, 2+ weeks behind, solo-to-2-person sprint, scope compression C-1/C-2/C-3), researcher unavailability protocol with 3 backup researchers per zone, source access blockage protocol with pre-identified open-access fallbacks, weekly checkpoint Template A (standup) + Template B (zone gate metrics dashboard), cross-zone coherence review checklist, distribution readiness review
+
+**Key findings**: Files existed as stubs; three additions filled gaps in the original drafts: daily hour targets with specific day/week breakdowns, Slack standup protocol, and the Part 5 researcher unavailability + Part 6 source access blockage + Part 7 checkpoint templates (all new sections). Total: 14,920 words across three files. All gate dates are actual calendar dates. No TODOs or placeholders. Confidence: 87%.
+
+---
+
 ## Session 4570 (2026-06-29 23:50 UTC) — SESSION 4569 VERIFICATION & FINALIZATION
 
 **Status**: ✅ **COMPLETE** — Verified Session 4569 Items 54-56 all completed and committed. Updated CHECKIN.md to reflect completion status. All critical-path infrastructure staged for July execution.
@@ -47,6 +62,31 @@
 4. Orchestrator: STANDING BY for user actions and July 3 checkpoint
 
 ---
+
+## Session 4571 (2026-06-30 00:00 UTC) — ITEMS 38-40 PARALLEL EXECUTION
+
+**Status**: 🟡 **IN PROGRESS** — All three agents dispatched, executing in parallel
+
+**What Executed (So Far)**:
+1. ✅ **Orientation** (ORCHESTRATOR_STATE.md) — Session 4570 verified complete; Items 38-40 queued and ready
+2. ✅ **Block resolution check** — No resolved blocks; all 3 active blocks remain user-action-only
+3. ✅ **INBOX processing** — Domain 51 contingency timing confirmed (deadline today 23:59 UTC); onedrive crash-loop maintenance awaiting user authorization
+4. ✅ **Usage calibration reset** (00:00 UTC exactly) — Processed June 30 reset; Sonnet limit recalibrated to 664.1M tokens, all-models to 11.98B tokens. Full budget available.
+5. 🟡 **Item 38-40 dispatch** (00:01-00:02 UTC) — Launched 3 parallel agents:
+   - **Item 38** (resistance-research, agentId a1761bade33238ebf): Phase 2 post-execution impact measurement framework — EXECUTING
+   - **Item 39** (stockbot, agentId a8e96ed0f2be5929f): July 7 operational gate validation & MODEL_PIPELINE Phase 2 pre-staging — EXECUTING
+   - **Item 40** (systems-resilience, agentId aba158cbfe7255333): Phase 6 research execution schedule & onboarding kit — EXECUTING
+
+**Expected Completion**:
+- Each agent: 2-3 hours (~01:30-02:30 UTC wall-clock for all 3 in parallel)
+- Deliverables: 9 production-ready files total (3 per item, ~5,500 words each)
+- Commits: 3 commits expected (one per agent)
+
+**Critical Path Status**:
+- ✅ June 30 00:00 UTC: Usage reset complete ✅
+- ⏳ June 30 23:59 UTC: Domain 51 Phase 2 Wave 1 execution deadline (user action, 23h 59m remaining)
+- ⏳ July 1 00:00 UTC: Domain M contingency auto-trigger if Domain 51 not executed
+- ⏳ July 3 20:00 UTC: Stockbot checkpoint (4 days away)
 
 ## Session 4569 (2026-06-29 18:15–18:47 UTC) — PHASE 3 EXECUTION PLANNING; ITEMS 54-56 COMPLETE
 

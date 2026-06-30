@@ -28,18 +28,59 @@ cross_references:
 
 ## Calendar Overview: November 4 – December 20, 2026
 
-| Week | Dates | Zone | Focus | Hours Target |
-|------|-------|------|-------|-------------|
-| 1 | Nov 4–10 | Zone 1 | Constitutional vulnerabilities: Callais cascade, purge law, SAVE equivalents | 30h |
-| 2 | Nov 11–17 | Zone 1 (close) + Zone 2 (open) | Complete registration barriers; begin technology solutions | 30h |
-| 3 | Nov 18–24 | Zone 2 + Zone 3 (open) | Technology platforms; begin international models | 30h |
-| 4 | Nov 25–Dec 1 | Zone 3 + Zone 4 (open) | Complete international models; begin movement infrastructure | 30h |
-| 5 | Dec 2–8 | Zone 4 + Synthesis A | Complete movement infrastructure; integration pass, Sections 1–6 | 25h |
-| 6 | Dec 9–15 | Synthesis B | Sections 7–12; Zone 5 subsections; implementation templates | 25h |
-| 7 | Dec 16–20 | Final synthesis + distribution prep | Citation audit, cross-zone coherence, landing page, distribution templates | 25h |
+| Week | Dates | Zone | Focus | Hours Target | Daily Rate |
+|------|-------|------|-------|-------------|-----------|
+| 1 | Nov 4–8 | Zone 1 | Constitutional vulnerabilities: Callais cascade, purge law, SAVE equivalents | 30h | 6h/day Mon–Fri |
+| 2 | Nov 11–17 | Zone 1 (close) + Zone 2 (open) | Complete registration barriers; begin technology solutions | 30h | 6h/day Mon–Sun |
+| 3 | Nov 18–24 | Zone 2 + Zone 3 (open) | Technology platforms; begin international models | 30h | 6h/day Mon–Sun |
+| 4 | Nov 25–Dec 1 | Zone 3 + Zone 4 (open) | Complete international models; begin movement infrastructure | 30h | ~4.5h/day (Thanksgiving buffer) |
+| 5 | Dec 2–8 | Zone 4 + Synthesis A | Complete movement infrastructure; integration pass, Sections 1–6 | 25h | 5h/day Mon–Fri |
+| 6 | Dec 9–15 | Synthesis B | Sections 7–12; Zone 5 subsections; implementation templates | 25h | 5h/day Mon–Fri |
+| 7 | Dec 16–20 | Final synthesis + distribution prep | Citation audit, cross-zone coherence, landing page, distribution templates | 25h | 5h/day Mon–Fri |
 
 **Total hours**: 195h (solo researcher at target pace)
 **Two-person total**: 195h split approximately 100h/95h (Researcher A: Zones 1–2; Researcher B: Zones 3–4; shared Synthesis weeks)
+
+### Daily Hour Targets by Zone
+
+**Zone 1 (Nov 4–8, 5 working days)**: 6 hours/day = 30h total by Friday Nov 8. Day breakdown: Nov 4 (source verification, 3h research brief) + Nov 5–8 (Q1–Q4, 6h/day). No weekend required if pace holds.
+
+**Zone 1 close + Zone 2 open (Nov 11–17, 7 days)**: 4–5 hours/day on Zone 1 close (Q5 + 3,000w writing) Nov 11–14; pivot to Zone 2 at 6h/day Nov 15–17. Running total by Nov 17: ~60h accumulated.
+
+**Zone 2 + Zone 3 open (Nov 18–24, 7 days)**: 5h/day Zone 2 completion (Q6–10, writing) Nov 18–21; open Zone 3 at 5h/day Nov 22–24. Running total by Nov 24: ~90h accumulated.
+
+**Zone 3 + Zone 4 open (Nov 25–Dec 1, 7 days)**: Thanksgiving buffer week — target 4h/day or 28h minimum for the week, not 30h. This is the planned +10% contingency buffer week. Zone 3 Parts 2–4 Nov 25–29; Zone 4 open Nov 30–Dec 1. Running total by Dec 1: ~120h accumulated.
+
+**Zone 4 + Synthesis A (Dec 2–8, 5 days)**: 5h/day = 25h. Zone 4 completion Dec 2–5 (Q15–18 + 5,000w); Synthesis A integration Dec 6–8 (10h). Running total by Dec 8: ~145h accumulated.
+
+**Synthesis B (Dec 9–15, 5 days)**: 5h/day = 25h. Sections 7–12 writing. Running total by Dec 15: ~170h accumulated.
+
+**Final synthesis + distribution prep (Dec 16–20, 5 days)**: 5h/day = 25h. Citation audit (10h) + distribution materials (5h) + coordinator review prep (3h) + buffer (7h). Running total: ~195h project complete.
+
+### Contingency Buffers
+
+**Thanksgiving week (Nov 25–Dec 1)**: Planned at 28h instead of 30h — this is the explicit +10% buffer for the research window. If Zone 1 or Zone 2 ran over by 1–2 hours, this week absorbs it without a schedule change.
+
+**Expert contact delay buffer**: Expert reply latency of 5–10 business days is absorbed within the zone schedules above. Expert replies from Week 1 (Weiser, Stewart) are not needed until Week 2 Zone 1-close writing. If no reply by Nov 14, the research proceeds without and the 48-72h reply window is marked expired; replacement contacts activate.
+
+**Source access buffer**: 3h per zone is reserved (within the hours above) for access-workaround tasks — alternate source identification, ILL requests, author email for PDF. If no access blocks occur, these hours become additional writing time.
+
+**+10% overall time margin**: The 195h schedule runs against a 7-week window. A researcher working 28h/week instead of 30h/week completes 196h across 7 weeks — exactly on target. This means a single low-productivity week (20h) must be followed by one high-productivity week (36h) to stay on schedule. The QA framework's Wednesday delta check is the early-warning mechanism for detecting this before it compounds.
+
+### Milestone Checkpoints and Communication Protocol
+
+**Daily Slack standup** (async, #phase6-democracy-tools channel, by 9:00 AM local): Three lines maximum.
+- Done: [what you finished yesterday]
+- Today: [what you are working on today, with hour estimate]
+- Blocked: [any blocker, or "none"]
+
+If blocked, coordinator responds within 2 hours during weekday working hours. No response needed if "none."
+
+**Weekly zone completion gate posts** (Friday by 3:00 PM Eastern): Post a gate checklist self-assessment to the shared project folder. Template in QA Framework Part 4. Coordinator acknowledges or escalates by Saturday noon.
+
+**Expert contact log** (maintained in shared project folder, updated each time an outreach email is sent or a reply is received): Running log of contact date, follow-up date, reply status, and whether the reply was incorporated into the zone draft.
+
+**Source verification log** (maintained from Day 1, Nov 4): Running log of every source checked on launch day plus any broken links discovered during the research window. Shared with coordinator in the Week 1 checkpoint gate submission.
 
 ---
 
