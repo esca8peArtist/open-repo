@@ -1,0 +1,94 @@
+Contractor Name,Role,Status,Weekly Deliverables,Deliverable Due Date,Delivered Date [ACTUAL],Review Status,Quality Score (1-5),Payment Milestone,Payment Status,Amount Due,Payment Sent Date [ACTUAL],Payment Method,FTC Model Release Attached (YES/NO/NA),Content Attribution Verified (YES/NO/NA),Escalation Flag (YES/NO),Notes
+[Name],Photographer,Offered,Contract signature + deposit,2026-07-01,,NOT STARTED,,Milestone 1 (25%),Pending,$350.00,,Venmo/PayPal/Zelle,NA,NA,NO,Deposit sent on signature
+[Name],Photographer,Offered,Respiratory set (4 images),2026-07-05,,NOT STARTED,,Milestone 2 (25%),Pending,$350.00,,Venmo/PayPal/Zelle,NO,NO,NO,
+[Name],Photographer,Offered,Sleep & Nervines set (4 images),2026-07-12,,NOT STARTED,,Milestone 3 (25%),Pending,$350.00,,Venmo/PayPal/Zelle,NO,NO,NO,
+[Name],Photographer,Offered,Immunity Support set (4 images),2026-07-19,,NOT STARTED,,Milestone 4 (25%),Pending,$350.00,,Venmo/PayPal/Zelle,NO,NO,NO,
+[Name],Photographer,Offered,Digestive Support set (4 images),2026-07-26,,NOT STARTED,,Milestone 5 (incl.),Pending,Included in M4,,Venmo/PayPal/Zelle,NO,NO,NO,Digestive + Women's Health social included in final milestone payment
+[Name],Photographer,Offered,Women's Health social use set (4 images),2026-08-03,,NOT STARTED,,Milestone 5 (incl.),Pending,Included in M4,,Venmo/PayPal/Zelle,NO,NO,NO,
+[Name],Writer #1 (WomensHealth+Immunity),Offered,Contract signature + deposit,2026-07-01,,NOT STARTED,,Milestone 1 (33%),Pending,$313.00,,PayPal,NA,NA,NO,
+[Name],Writer #1 (WomensHealth+Immunity),Offered,Women's Health supplement (1200-1500 words),2026-07-08,,NOT STARTED,,Milestone 2 (33%),Pending,$313.00,,PayPal,NA,NO,NO,Damiana verbatim statement + lemon balm thyroid contraindication mandatory
+[Name],Writer #1 (WomensHealth+Immunity),Offered,Immunity Support draft (3600-3800 words),2026-07-22,,NOT STARTED,,Milestone 3 (34%),Pending,$324.00,,PayPal,NA,NO,NO,CITES goldenseal sidebar + echinacea At-Risk + ashwagandha thyroid + elderberry toxicity all mandatory
+[Name],Writer #1 (WomensHealth+Immunity),Offered,All revisions complete - both manuscripts final,2026-08-03,,NOT STARTED,,,Released with M3,NA,,PayPal,NA,NA,NO,Final release with Milestone 3 if all revisions done by Aug 3
+[Name],Writer #2 (Respiratory+Sleep),Offered,Contract signature + deposit,2026-07-01,,NOT STARTED,,Milestone 1 (33%),Pending,$347.00,,PayPal,NA,NA,NO,
+[Name],Writer #2 (Respiratory+Sleep),Offered,Respiratory Health draft (3200-3500 words),2026-07-08,,NOT STARTED,,Milestone 2 (33%),Pending,$347.00,,PayPal,NA,NO,NO,Elderberry toxicity + echinacea At-Risk + echinacea autoimmune + cyclosporine interaction all mandatory
+[Name],Writer #2 (Respiratory+Sleep),Offered,Sleep & Nervines draft (3200-3500 words),2026-07-17,,NOT STARTED,,Milestone 3 (34%),Pending,$356.00,,PayPal,NA,NO,NO,Valerian CNS named contraindications + passionflower MAOI/SSRI + lemon balm thyroid + verbatim sleep-bundle statement all mandatory
+[Name],Writer #2 (Respiratory+Sleep),Offered,All revisions complete - both manuscripts final,2026-08-03,,NOT STARTED,,,Released with M3,NA,,PayPal,NA,NA,NO,
+[Name],Writer #3 (Digestive+Practitioner),Offered,Contract signature + deposit,2026-07-01,,NOT STARTED,,Milestone 1 (33%),Pending,$313.00,,PayPal,NA,NA,NO,
+[Name],Writer #3 (Digestive+Practitioner),Offered,Practitioner Reference draft (2000-2500 words),2026-07-08,,NOT STARTED,,Milestone 2 (33%),Pending,$313.00,,PayPal,NA,NO,NO,All Q3 species covered; evidence quality ratings required; primary database citations only
+[Name],Writer #3 (Digestive+Practitioner),Offered,Digestive Support draft (3400-3600 words),2026-07-22,,NOT STARTED,,Milestone 3 (34%),Pending,$324.00,,PayPal,NA,NO,NO,Turmeric bioavailability + peppermint GERD + chamomile Asteraceae allergy + slippery elm absorption delay + slippery elm Watch List all mandatory
+[Name],Writer #3 (Digestive+Practitioner),Offered,All revisions complete - both manuscripts final,2026-08-03,,NOT STARTED,,,Released with M3,NA,,PayPal,NA,NA,NO,
+[Name],Herbalist Consultant,Offered,Contract signature + deposit,2026-07-01,,NOT STARTED,,Milestone 1 (25%),Pending,$225.00,,PayPal,NA,NA,NO,
+[Name],Herbalist Consultant,Offered,Women's Health review + Respiratory review + Practitioner review,2026-07-12,,NOT STARTED,,Milestone 2 (25%),Pending,$225.00,,PayPal,NA,NA,NO,Inline comments + summary email per bundle; must cite primary databases
+[Name],Herbalist Consultant,Offered,Sleep & Nervines review,2026-07-20,,NOT STARTED,,Milestone 3 (25%),Pending,$225.00,,PayPal,NA,NA,NO,
+[Name],Herbalist Consultant,Offered,Immunity review + Digestive review + all feedback consolidated,2026-07-25,,NOT STARTED,,Milestone 4 (25%),Pending,$225.00,,PayPal,NA,NA,NO,CITES goldenseal verified in Immunity; slippery elm Watch List verified in Digestive; all 6 bundles reviewed
+[Name],Logistics Coordinator,Offered,Contract signature + deposit + orientation call,2026-07-01,,NOT STARTED,,Milestone 1 (50%),Pending,$450.00,,Venmo/PayPal,NA,NA,NO,
+[Name],Logistics Coordinator,Offered,6 weeks of check-ins + Etsy uploads + email sends + dashboard updates complete,2026-08-17,,NOT STARTED,,Milestone 2 (50%),Pending,$450.00,,Venmo/PayPal,NA,NA,NO,Final milestone: all check-in reports delivered; all Etsy bundles uploaded on launch days; all tracking sheet updates complete
+,,,,,,,,,,,,,,,,,
+QUALITY SCORE GUIDE,,,,,,,,,,,,,,,,,
+Score 5 = Exceeds expectations,,,,,,,,,,,,,,,,,
+Score 4 = Meets all requirements,,,,,,,,,,,,,,,,,
+Score 3 = Meets requirements with minor issues (revision requested),,,,,,,,,,,,,,,,,
+Score 2 = Below threshold (revision required before payment),,,,,,,,,,,,,,,,,
+Score 1 = Significant issues (second failure - escalate),,,,,,,,,,,,,,,,,
+Score below 3 = DO NOT RELEASE PAYMENT until revision passes,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+STATUS VALUES,,,,,,,,,,,,,,,,,
+Offered,,,,,,,,,,,,,,,,,
+Accepted,,,,,,,,,,,,,,,,,
+OnboardedWeek1,,,,,,,,,,,,,,,,,
+InProgress,,,,,,,,,,,,,,,,,
+Completed,,,,,,,,,,,,,,,,,
+PaymentHold,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+REVIEW STATUS VALUES,,,,,,,,,,,,,,,,,
+NOT STARTED,,,,,,,,,,,,,,,,,
+PENDING (under review),,,,,,,,,,,,,,,,,
+APPROVED,,,,,,,,,,,,,,,,,
+REVISION REQUESTED,,,,,,,,,,,,,,,,,
+REVISION SUBMITTED,,,,,,,,,,,,,,,,,
+APPROVED (after revision),,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+PAYMENT STATUS VALUES,,,,,,,,,,,,,,,,,
+Pending,,,,,,,,,,,,,,,,,
+Released,,,,,,,,,,,,,,,,,
+PaymentHold,,,,,,,,,,,,,,,,,
+Disputed,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+ESCALATION FLAG = YES triggers,,,,,,,,,,,,,,,,,
+24h late on delivery: YES,,,,,,,,,,,,,,,,,
+Quality Score 1 or 2 on second review: YES,,,,,,,,,,,,,,,,,
+2 consecutive missed check-in replies: YES,,,,,,,,,,,,,,,,,
+Unexpected unavailability 5+ days: YES,,,,,,,,,,,,,,,,,
+Payment Hold active: YES,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+PAYMENT BUDGET SUMMARY,,,,,,,,,,,,,,,,,
+Role,Total Contract,M1 (deposit),M2,M3,M4,Total Paid [ACTUAL],Variance,,,,,,,,,
+Photographer,$1400.00,$350.00,$350.00,$350.00,$350.00,,,$,,,,,,,,
+Writer #1 (WomensHealth+Immunity),$950.00,$313.00,$313.00,$324.00,NA,,,$,,,,,,,,
+Writer #2 (Respiratory+Sleep),$1050.00,$347.00,$347.00,$356.00,NA,,,$,,,,,,,,
+Writer #3 (Digestive+Practitioner),$950.00,$313.00,$313.00,$324.00,NA,,,$,,,,,,,,
+Herbalist Consultant,$900.00,$225.00,$225.00,$225.00,$225.00,,,$,,,,,,,,
+Logistics Coordinator,$900.00,$450.00,$450.00,NA,NA,,,$,,,,,,,,
+TOTAL,$6150.00,$1998.00,$1998.00,$1579.00,$575.00,,,$,,,,,,,,
+,,,,,,,,,,,,,,,,,
+FTC DISCLOSURE TRACKING,,,,,,,,,,,,,,,,,
+Bundle,Go-Live Date,Photographer attribution confirmed (YES/NO),Writer attribution confirmed (YES/NO),FTC language verified pre-launch (YES/NO),Model release on file (YES/NO/NA),CITES compliance verified (YES/NO/NA),,,,,,,,,,
+Respiratory Health,2026-07-06,NO,NO,NO,NO,NA,,,,,,,,,,
+Sleep & Nervines,2026-07-13,NO,NO,NO,NO,NA,,,,,,,,,,
+Practitioner Reference,2026-07-15,NA,NO,NO,NA,NA,,,,,,,,,,
+Immunity Support,2026-07-20,NO,NO,NO,NO,YES,,,,,,,,,,
+Digestive Support,2026-08-03,NO,NO,NO,NO,NA,,,,,,,,,,
+Women's Health (social),2026-08-03,NO,NO,NO,NO,NA,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+WEEKLY ROLLUP - QUALITY FLAGS,,,,,,,,,,,,,,,,,
+Any Quality Score below 3 requires immediate escalation flag = YES,,,,,,,,,,,,,,,,,
+Weekly check: filter column H (Quality Score) for values 1 or 2 — each is an escalation requiring same-day action,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+EXAMPLE ROWS (reference only - delete before using as working tracker),,,,,,,,,,,,,,,,,
+Sarah Chen,Photographer,OnboardedWeek1,Respiratory set (4 images),2026-07-05,2026-07-05,APPROVED,4,Milestone 2 (25%),Released,$350.00,2026-07-05,Venmo,NA,YES,NO,"Warm lighting; consistent WB; herb specimens clear; approved same day"
+Sarah Chen,Photographer,InProgress,Sleep & Nervines set (4 images),2026-07-12,2026-07-13,APPROVED (after revision),3,Milestone 3 (25%),Released,$350.00,2026-07-13,Venmo,NA,YES,NO,"One image had cold WB - resubmitted 24h; approved on revision"
+Marcus Webb,Writer #1 (WomensHealth+Immunity),InProgress,Women's Health supplement,2026-07-08,2026-07-08,APPROVED,5,Milestone 2 (33%),Released,$313.00,2026-07-08,PayPal,NA,YES,NO,"Damiana statement verbatim; lemon balm thyroid named; strong sourcing throughout"
+Marcus Webb,Writer #1 (WomensHealth+Immunity),InProgress,Immunity Support draft,2026-07-22,2026-07-24,REVISION REQUESTED,3,Milestone 3 (34%),Pending,$324.00,,PayPal,NA,NO,NO,"CITES goldenseal sidebar needs expansion per herbalist review; revising"
+Priya Nair,Writer #2 (Respiratory+Sleep),InProgress,Respiratory Health draft,2026-07-08,2026-07-08,APPROVED,4,Milestone 2 (33%),Released,$347.00,2026-07-08,PayPal,NA,YES,NO,"Echinacea species distinction clear; elderberry toxicity prominent; approved"
+Dr. Adrian White,Herbalist Consultant,InProgress,Womens Health + Respiratory + Practitioner reviews,2026-07-12,2026-07-12,APPROVED,5,Milestone 2 (25%),Released,$225.00,2026-07-12,PayPal,NA,NA,NO,"Detailed inline comments; flagged passionflower MAOI in Respiratory; CITES goldenseal cited correctly; strong review"
+Elena Rodriguez,Logistics Coordinator,InProgress,Week 1-3 check-ins + Respiratory + Sleep Etsy uploads,2026-07-13,2026-07-13,APPROVED,4,Milestone 1 (50%),Released,$450.00,2026-07-01,Venmo,NA,NA,NO,"All check-ins sent on time; Respiratory and Sleep uploaded on launch day; no escalations missed"
