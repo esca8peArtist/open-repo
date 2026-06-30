@@ -16,8 +16,8 @@
 > To recalibrate limits: `python3 scripts/usage-check.py --calibrate <sonnet_pct> <all_pct>`
 
 **Calibrated limits** (back-calculated from UI — update after each weekly reset):
-- **Sonnet token limit: 834,940,000**  ← calibrated 2026-06-27 (UI showed 0.1%)
-- **All models token limit: 13,671,043,000**  ← calibrated 2026-06-27 (UI showed 0.1%)
+- **Sonnet token limit: 664,104,500**  ← calibrated 2026-06-29 (UI showed 0.2%)
+- **All models token limit: 11,979,421,500**  ← calibrated 2026-06-29 (UI showed 0.2%)
 
 **Alert thresholds** (handled by `scripts/usage-monitor.py`, runs every 30 min via cron):
 - Every 10% crossed → Discord notification
