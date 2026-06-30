@@ -2,7 +2,7 @@
 title: "Domain 51 Phase 2 Wave 1 — Execution Runbook (Item 45.1)"
 subtitle: "Campaign Finance & Dark Money Architecture — June 30, 23:59 UTC Hard Deadline"
 created: "2026-06-29"
-updated: "2026-06-29"
+updated: "2026-06-29 — added Section 3.1: PASS/MODERATE/LOW/ZERO outcome verdict table"
 deadline: "2026-06-30 23:59 UTC"
 status: "production-ready — copy-paste executable"
 item: "Item 45.1"
@@ -408,6 +408,28 @@ Value outcome: [100% FULL VALUE / PARTIAL — see contingency / CONTINGENCY ACTI
 **T+7d escalation gate**: If zero replies received from all 5 contacts and zero Gist view increase: send a 3-sentence follow-up to echlopak@campaignlegalcenter.org only. Do not follow up with California contacts before T+14d.
 
 **T+14d gate**: If CLC has still not replied: no further Domain 51 action. Log as WEAK signal. Domain 51 outcome does not affect Domain M execution.
+
+---
+
+### Section 3.1: T+7 Outcome Verdict — PASS / MODERATE / LOW / ZERO
+
+Run this assessment at July 7 09:00 UTC. Count substantive replies only (named staff, real content). Auto-replies and out-of-office notifications do not count.
+
+| Reply Count at T+7 | Outcome Verdict | What It Means | Required Action |
+|---|---|---|---|
+| 4-5 replies | PASS — HIGH | Exceptional engagement; research reached decision-makers | Reply within 24 hours to each; log as PASS HIGH; flag for Wave 3 activation |
+| 2-3 replies | PASS — MODERATE | Normal to strong engagement for cold outreach to policy orgs | Reply within 48 hours to each; log as PASS MODERATE; Wave 3 conditional |
+| 1 reply | LOW | Below average but delivery confirmed; one contact engaged | Reply within 48 hours; log as LOW; no Wave 3 activation |
+| 0 replies | ZERO | Expected for cold outreach at T+7; do not interpret as failure | No action until T+14; continue monitoring |
+
+**PASS threshold**: 2 or more substantive replies = PASS (any tier). Execution succeeded.
+
+**ZERO at T+14d**: If still 0 replies by July 14 09:00 UTC from all 5 contacts: log as ZERO outcome. No follow-up to California contacts. CLC single follow-up (3 sentences max) to echlopak@campaignlegalcenter.org is permitted at T+14. Domain 51 execution was still successful — zero reply rate does not indicate non-delivery; it reflects policy org triage cycles.
+
+**Wave 3 activation rule**:
+- PASS HIGH: activate Wave 3 (5 additional national contacts)
+- PASS MODERATE: activate Wave 3 only if CLC or Issue One is one of the repliers
+- LOW or ZERO: hold Wave 3; reassess after July 15
 
 ### Inbox Monitoring Addresses
 

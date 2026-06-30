@@ -2,7 +2,7 @@
 title: "Domain M Contingency Activation Runbook (Item 45.2)"
 subtitle: "Direct Democracy Infrastructure Defense — July 1 Emergency Protocol"
 created: "2026-06-29"
-updated: "2026-06-29"
+updated: "2026-06-29 — added Section 5.1: HIGH/MODERATE/LOW/ZERO outcome tree; Section 5.2: capital allocation"
 trigger_condition: "Domain 51 Wave 1 NOT sent by 2026-06-30 23:59 UTC"
 activation_date: "2026-07-01 00:00 UTC"
 deadline: "2026-07-10 23:59 UTC (Tier 1 complete); 2026-07-15 23:59 UTC (Tier 2 complete)"
@@ -608,6 +608,62 @@ After sending:
 **July 15 — Tier 1 reply gate**: If 0 replies received from all 3 Tier 1 organizations by July 15: no action change. The campaign organizations may be in field execution mode and not triaging research email quickly. Continue Tier 2 sends as scheduled.
 
 **July 22 — All sends complete gate**: If fewer than 7 sends are logged by July 22: log what is missing, identify why, and send any missing emails by July 26 at the latest. The November 3 ballot makes any send through late July still valuable.
+
+---
+
+### Section 5.1: Outcome Verdict Decision Tree — HIGH / MODERATE / LOW / ZERO
+
+Run at July 22 end of day. Count total substantive replies across all 7 sends (named staff, real content — not auto-replies or out-of-office).
+
+```
+Total replies at July 22 EOD:
+|
++-- 4+ replies → HIGH
+|   Action: Reply to all within 24 hours. Activate Wave 3 (domain-specific follow-up
+|   with brief excerpts). Flag BISC and Democracy Docket for coalition distribution
+|   request. Log as HIGH in execution log. Value: 85%.
+|
++-- 2-3 replies → MODERATE
+|   Action: Reply to each replier within 48 hours. Ask if brief is useful for their
+|   coalition distribution. Do not activate Wave 3 without at least 1 BISC or DD reply.
+|   Log as MODERATE. Value: 75%.
+|
++-- 1 reply → LOW
+|   Action: Reply within 48 hours. No Wave 3 activation. Log as LOW. Assess August 1
+|   whether brief achieved passive circulation (Gist views). Value: 60%.
+|
++-- 0 replies → ZERO
+    Action: No follow-up sends. No Wave 3. Log as ZERO. Check Gist view count on
+    August 1 — views without replies are normal and indicate passive circulation.
+    Domain M execution is complete regardless. Value: 50%.
+```
+
+**Note**: Reply count is the signal, not the outcome criterion. All 7 sends logged = mission success regardless of reply count. The decision tree determines follow-up intensity only.
+
+---
+
+### Section 5.2: Capital Allocation if Domain M Contingency Triggers
+
+If Domain 51 fails to execute by June 30 23:59 UTC and Domain M activates July 1, the following capital allocation applies for the July 1-22 window.
+
+**Domain 39 (Voting Rights / Election Administration)**: Do NOT accelerate. Domain 39 is in active litigation monitoring mode — the Wisconsin Maps redistricting case (Majority v. Deininger) and the Missouri Congressional map case are at stages where outreach to legal orgs is premature until court rulings issue. Accelerating Domain 39 now would front-run the court calendar by 4-6 weeks and waste contact credit. Hold.
+
+**Domain 59 (Child Tax Credit / Economic Precarity)**: Do NOT accelerate. Domain 59 Wave 1 already executed June 9-11 with MODERATE-STRONG signal (2 replies, 3 Gist views). Senate Finance markup closed June 25-30. The next Domain 59 activation window is the September 2026 continuing resolution debate. Accelerating now has no external event to anchor to. Hold.
+
+**Correct allocation during Domain M execution window (July 1-22)**:
+
+| Resource | Allocation |
+|---|---|
+| Active user time | Domain M: 10-15 min/day, 7 sends across July 1-22 |
+| Research production | Domain M brief only (3,000-4,000 words, July 1-5) |
+| Domain 39 | HOLD — resume after court rulings issue (estimated August-September) |
+| Domain 59 | HOLD — resume September CR window |
+| Domain 48 (Criminal Justice) | Low-intensity monitoring only — no new sends until Domain M complete |
+| Domain 49/50 (Env./LGBTQ+) | HOLD — no deadline pressure; activate post-Domain M if PASS or HIGH outcome |
+
+**If Domain M reaches HIGH outcome (4+ replies) by July 22**: Activate Domain 39 monitoring upgrade (30-min session) to check for ruling signals. Do not send to Domain 39 contacts until a ruling issues.
+
+**If Domain M reaches ZERO outcome by July 22**: Consider a 30-minute messaging audit before activating any held domains. ZERO across both Domain 51 and Domain M in the same execution cycle warrants messaging review before further sends.
 
 ---
 

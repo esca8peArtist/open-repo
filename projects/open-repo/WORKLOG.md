@@ -1,5 +1,77 @@
 # Open-Repo Project Worklog
 
+## Career Training Phase 2 Launch Infrastructure (2026-06-29)
+
+**Completion Date**: 2026-06-29
+
+**Agent**: Claude Sonnet 4.6 (General Research Agent)
+
+**Objective**: Create 4 production-ready Phase 2 email and social launch documents for career-training project, covering the 8-week window after Phase 1 GitHub Pages push.
+
+### Files Produced
+
+- **`projects/career-training/PHASE_2_LAUNCH_TIMELINE_WEEK_0_8.md`** — Fixed-date 8-week execution calendar (Day 0-56 offsets from Phase 1 launch). Week 0: Kit setup critical path with smoke test gate. Weeks 1-2: welcome sequence monitoring with metrics template. Weeks 3-4: LinkedIn 6-post schedule with CTA testing framework and partnership outreach tracker. Weeks 5-8: email nurture, module behavior recommendations, YouTube go/no-go decision gate at D+56. Full KPI summary table with targets at D+7, D+21, D+35, D+56.
+
+- **`projects/career-training/KIT_ACCOUNT_SETUP_EXECUTION_CHECKLIST.md`** — 10-step Kit setup checklist from account creation through full 7-day smoke test. Steps include: API key documentation test (resolves the free-plan API access contradiction identified in Session 4467), all 7 subscriber tags, 4 form creation with embed code collection, GitHub Pages integration (forms + thank-you page + GA4 event), sender settings (CAN-SPAM compliance), dual-path automation build (Approach A: branching if available; Approach B: Sequences workaround if branching is paywalled), integration testing with 4-form results table, and smoke test delivery log. Zero [TODO] placeholders.
+
+- **`projects/career-training/WEEK_1_2_EMAIL_OPERATIONS_RUNBOOK.md`** — Daily (10-15 min) and weekly (30-45 min) operating procedures for Days 8-21. Includes daily Kit check routine, GA4 check routine, reply response templates (3 variants for most common subscriber questions), daily log template (pre-formatted for copy-paste), weekly review procedures with PASS/FAIL metric tables, 5 troubleshooting sections (no-tag subscriber, undelivered email, spam placement, low open rate, high unsubscribe rate), baseline metrics tracker, and escalation protocol for 5 critical failure modes.
+
+- **`projects/career-training/LINKEDIN_CONTENT_POSTING_SCHEDULE.md`** — 20 copy-paste-ready LinkedIn posts across 8 content types (8 case study questions, 6 module excerpts, 4 career stories, 2 regulatory updates). Posts are filed against Days 23-56 with specific posting times (9 AM ET Tue/Thu, 11 AM ET Sat). Includes pre-launch profile checklist, Buffer vs. manual scheduling comparison, external link strategy (link-in-comment to avoid LinkedIn algorithm suppression), CTA performance tracking table (3 CTA variants), PASS/FAIL engagement thresholds at 6-post mark, and Month 2 content pipeline preview.
+
+### Key Structural Decisions
+
+- All dates expressed as Day-offsets (D+N) so the calendar is usable regardless of when the user pushes to GitHub Pages
+- KIT_ACCOUNT_SETUP_EXECUTION_CHECKLIST.md includes both Approach A (branching) and Approach B (Sequences workaround) because EMAIL_DELIVERABILITY_TEST_RESULTS.md established the branching-on-free-plan question is unresolved — the user executes whichever approach the live platform supports
+- LinkedIn posts use the Case Study Loop format from EMAIL_SOCIAL_FUNNEL_STRATEGY.md — questions with no answer in the post body, driving comments (algorithm signal) and site clicks for the worked answer
+- YouTube pre-staging tasks are assigned in Week 7-8 regardless of the D+56 go/no-go decision — pre-staging costs 2-3 hours and removes friction if the go decision is made
+- Partnership outreach template is specified word-for-word in PHASE_2_LAUNCH_TIMELINE_WEEK_0_8.md because PHASE_2_GROWTH_STRATEGY_AND_COHORT_ANALYSIS.md identified partnership mentions as the highest-ROI subscriber acquisition channel (50-200 subscribers per mention vs. 3-12 from $300 paid ads)
+
+### Source Documents Read
+
+- `PHASE_2_3_EXECUTION_ROADMAP.md` — phase timeline, parallel tracks, decision points, contingency paths
+- `EMAIL_SOCIAL_FUNNEL_STRATEGY.md` — Case Study Loop, LinkedIn strategy, welcome sequence design, cohort benchmarks
+- `PHASE_2_GROWTH_STRATEGY_AND_COHORT_ANALYSIS.md` — channel ROI projections, persona definitions, failure triggers
+- `PHASE_2_ENROLLMENT_FUNNEL_ARCHITECTURE.md` — funnel stage metrics, A/B testing framework, Stage 2A/2B targets
+- `KIT_ACCOUNT_SETUP_CHECKLIST.md` — Kit platform research, free plan feature audit (Session 4467)
+- `PHASE_1_KIT_COM_INTEGRATION_SETUP.md` — form embedding procedures, automation trigger specification, webhook details
+- `WELCOME_SEQUENCE_DRAFT.md` — complete email copy for Days 0, 3, 7 across all 4 path variants
+- `EMAIL_DELIVERABILITY_TEST_RESULTS.md` — deliverability benchmarks, automation branching constraint findings
+- `PHASE_2_EMAIL_SERVICE_COMPARISON_MATRIX.md` — Kit vs. Mailchimp vs. Substack scoring (Session 4469)
+- `PHASE_2_HANDOFF_DOCUMENT.md` — Phase 1 launch record template and Week 1 monitoring framework
+
+---
+
+## Item 49: Water Systems Wave 0 Final Launch Preparation (2026-06-29)
+
+**Completion Date**: 2026-06-29
+
+**Agent**: Claude Sonnet 4.6 (General Research Agent)
+
+**Objective**: Create two production-ready pre-launch documents for June 30 recruitment launch. Final pre-launch audit checklist and real-time monitoring dashboard for Week 1-2 (June 30 – July 14).
+
+### Files Produced
+
+- **`WATER_SYSTEMS_RECRUITMENT_LAUNCH_CHECKLIST.md`** — Final pre-launch audit (15 checks, 5 sections). Covers pre-send verification (7), GitHub contributor experience (3), Week 1-2 response handling (3), contingency procedures (2), and user sign-off (1). Estimated completion time 10–15 minutes. Linked to all 5 Item 41 source documents. Includes launch summary log for audit trail.
+
+- **`WEEK_1_2_CONTRIBUTOR_MONITORING_DASHBOARD.md`** — Real-time tracking template for June 30 – July 14, 2026. 15 daily standup sections (pre-populated dates), 2 weekly syntheses (July 6, July 13), confidence metric tracker, critical gates table (pre-filled from Item 41 timeline), response log spreadsheet, and contingency decision tree. Designed for 2–3 minutes/day to update. Early-warning threshold at July 7 (response rate <6% triggers immediate fallback, not waiting for Week 4 or Week 6 gate).
+
+### Key Structural Decisions
+
+- Early-warning check at July 7 (not July 14 or August 8) — prevents silent drift where low response rates go undetected until it's too late to activate fallback content without disrupting the August 8 Week 6 gate
+- Quality gate (6 criteria from Item 41 Maintainer Playbook) documented inside the checklist so user doesn't need to navigate multiple files at sign-off time
+- Contingency decision tree in the monitoring dashboard is deterministic (no judgment calls): <6% response rate = activate fallback; >50% quality fail rate = activate solo content; these thresholds are from Item 41 OSS benchmarks, not subjective
+- Three response templates (R1/R2/R3) pre-staged in checklist to keep 24h acknowledgment SLA achievable without re-reading Item 41 during launch week
+
+### Source Documents Read (Item 41, 2026-06-28 to 2026-06-29)
+
+- `WATER_SYSTEMS_WEEK_1_RECRUITMENT_EMAIL_TEMPLATES.md` — 3 templates + deployment checklist
+- `WATER_SYSTEMS_CONTRIBUTOR_SOURCING_CHECKLIST.md` — LinkedIn profiles, verification rubric, tracking spreadsheet, Week 1 gate
+- `WAVE_0_CONTRIBUTOR_ONBOARDING_TEMPLATE.md` — GitHub Issue template, Contribution Guide, Maintainer Playbook
+- `WATER_SYSTEMS_WAVE_0_WEEK_BY_WEEK_EXECUTION_ROADMAP.md` — Week-by-week gates (all 6 weeks), contingency scenarios A/B/C
+- `WATER_SYSTEMS_CONTINGENCY_STAFF_FALLBACK_CONTENT_LIBRARY.md` — 8 pre-staged procedures + activation checklist
+
+---
+
 ## Phase 5.2 Wave 0 Content Strategy — Four-Document Package (2026-06-28)
 
 **Completion Date**: 2026-06-28
