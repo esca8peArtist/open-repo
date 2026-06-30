@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-30T00:17:10Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-06-30T00:24:24Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.1% (4,664 tokens) | All-models 0.4% | Reset in 168h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.1% (4,664 tokens) | All-models 0.5% | Reset in 168h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -72,6 +72,8 @@
 **Resolution**: [awaiting user maintainer action to execute GitHub release push — all content production-ready, no code dependencies]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: resistance-research — focus references Session 4558 (15 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • resistance-research — Domain 51 Phase 2 Wave 1 Distribution CRITICAL (18:00 UTC cutoff PASSED; contingency activated) ← 2026-06-29 20:12 UTC (Session 4554 — contingency activated)
 • open-repo — June 12 deployment never executed; platform decision resolved by user ← 2026-06-28 (Session 4474 — user decision)
