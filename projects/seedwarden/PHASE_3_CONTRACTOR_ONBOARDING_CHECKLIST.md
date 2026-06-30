@@ -1,494 +1,439 @@
 ---
-title: "Phase 3 Contractor Onboarding Checklist — 6-Week Operational Playbook"
+title: "Phase 3 Contractor Onboarding Checklist — Week 1 through Week 6"
 date: 2026-06-29
-version: 1.0
+version: 2.0
 status: production-ready
-sprint-window: June 29 – August 10, 2026
-instructions: Customize onboarding kit per role (photographer, writer, herbalist, coordinator). Send all sections **immediately after contract signature**. No manual steps — all access is pre-configured before contractor starts.
+sprint-window: July 1 – August 10, 2026
+trigger: Activate on each contractor's contract signature date
 cross-references:
-  - PHASE_3_UPWORK_JOB_DESCRIPTIONS.md (role-specific deliverables)
-  - PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md (weekly check-ins)
-  - PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md (tracking)
+  - PHASE_3_CONTRACTOR_JOB_DESCRIPTIONS.md (role deliverable specs)
+  - PHASE_3_CONTRACTOR_HIRING_TIMELINE.md (hire dates and sequence)
+  - PHASE_3_CONTRACTOR_PAYMENT_TRACKING.md (payment milestones)
+  - PHASE_3_CONTRACTOR_SELECTION_RUBRIC.md (quality gate standards)
+  - PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md (tracking grid)
+  - PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md (email templates)
 ---
 
 # Phase 3 Contractor Onboarding Checklist
 
-**Objective**: Onboard 6 contractors within 24 hours of contract signature (target July 1). Provide all tools, access, and orientation materials on Day 1 so first deliverables are due as scheduled: July 5–8.
+**Purpose**: Bring all 6 contractors from signed contract to production-ready within 24 hours. Ensure every contractor has tool access, style guide, deliverable specs, and payment schedule before their first delivery deadline.
 
-**Onboarding kit contents** (send as email attachment + shared drive link):
-1. Welcome letter & project overview
-2. Role-specific style guide & deliverable specs
-3. Tool access & login credentials
-4. Key dates & milestones
-5. Payment schedule & escalation contacts
-6. FTC disclosure and confidentiality language
+**Activation**: Run this checklist immediately upon each contractor's contract signature. Do not wait until all 6 are signed — onboard each contractor the same day they sign.
 
----
-
-## WEEK 1 (July 1) — Immediate Post-Signature Actions
-
-### Universal (all contractors)
-
-**Same-day actions** (within 4 hours of signature):
-
-1. [ ] Send welcome email with subject: "Welcome to Seedwarden Phase 3 — Onboarding Kit Attached"
-
-**Email template**:
+**Onboarding kit contents** (deliver as email with attachments and shared drive link):
+1. Welcome letter with project overview and contractor's specific role context
+2. Role-specific deliverable specs and style guide (one PDF per role)
+3. Tool access and login credentials (shared drive, Kit, Etsy — role-dependent)
+4. Key dates and milestones (their specific delivery calendar)
+5. Payment schedule with exact amounts and trigger events
+6. FTC disclosure requirements and confidentiality agreement summary
 
 ---
+
+## WEEK 1 (July 1–5) — Immediate Post-Signature Actions
+
+### Universal Actions (All 6 Contractors — Complete Within 4 Hours of Signature)
+
+- [ ] Send welcome email with onboarding kit attached (template below)
+- [ ] Send 25% deposit payment; log payment method and confirmation number
+- [ ] Grant shared drive access (role-specific folder — Editor access)
+- [ ] Add contractor to Monday check-in email list
+- [ ] Log in PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md: hire date, contracted rate, deposit sent date and method
+- [ ] Schedule kickoff call (within 24 hours of signature — see call scripts below)
+
+**Welcome email template (all roles)**:
+
+Subject: Welcome to Seedwarden Phase 3 — Onboarding Kit Attached
 
 Hi [CONTRACTOR NAME],
 
-Thank you for signing the Phase 3 contract! We're excited to work with you.
+Thank you for signing your Phase 3 contract. Your 25% deposit of $[AMOUNT] has been sent via [METHOD] today.
 
-This email includes your onboarding kit (attached as PDF + shared drive links). Please review within 24 hours and confirm you've:
+Attached to this email:
+- Your role brief and deliverable specs (PDF)
+- Key dates and milestones
+- FTC compliance guide
+- Payment schedule
 
-✓ Created accounts with all required tools (Canva, Google Drive, etc.)  
-✓ Reviewed deliverable specs and style guide  
-✓ Confirmed first delivery date (due [DATE])  
-✓ Noted payment schedule (25% increments, due [DATES])  
+Please review within 24 hours and confirm in reply that you have:
+- Accepted access to the shared drive folder (link in drive invite email)
+- Reviewed your first deliverable deadline ([DATE])
+- Noted your kickoff call scheduled for [DATE/TIME]
 
-Your first kickoff call is scheduled for [DATE & TIME]. Please add to your calendar.
+Any questions before the kickoff call? Reply here.
 
-Any questions before we begin? Reply anytime or jump on the call.
-
-Looking forward to this project.
-
-[YOUR NAME]  
+[YOUR NAME]
 Seedwarden Phase 3
 
 ---
 
-2. [ ] Send 25% deposit payment (confirm via payment method receipt within 4 hours)
+### Photographer-Specific Actions (Week 1, July 1–5)
 
-3. [ ] Add contractor to shared drive folder (grant "Editor" access to role-specific folder)
+**Within 24 hours of signature**:
 
-4. [ ] Add to weekly check-in email list (Template 2 from PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md)
-
-5. [ ] Log in PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md: Hire date, contract rate, deposit sent date
-
-### Photographer-Specific (July 1)
-
-**Pre-work checklist** (send 24h before kickoff call):
-
-- [ ] Create shared Canva folder (name: `Phase 3 — Respiratory/Immunity/Digestive` OR per session)
-- [ ] Upload 3 style reference images to folder (warmth, lighting, composition aesthetic examples)
-- [ ] Prepare shot list (PDF) with deliverable specs:
-  - 5 images per bundle: flat-lay with guide, lifestyle prop arrangement, close-up herb detail, mirror shot (optional), styled flat-lay variation
+- [ ] Create photographer's folder in shared drive: name as "Phase3-Photo-[FirstName]"
+  - Subfolders: Session-1-Respiratory, Session-2-Immunity, Session-3-Digestive
+- [ ] Upload style reference images (3–5 examples of target aesthetic — warm, natural, diffuse light, herbs and props)
+- [ ] Prepare and share shot list PDF with all specifications:
+  - 5 images per bundle: top-down flat-lay, 45-degree flat-lay with props, lifestyle close-up of herbs, styled preparation context (tea, tincture, mortar), guide cover detail shot
   - Resolution: 2000×2000px minimum
-  - File naming convention: `[bundle]-[type]-[sequence].jpg` (e.g., `respiratory-flatlay-01.jpg`)
-  - Color space: sRGB (confirm in camera settings)
-  - White balance consistency: Test on first 2 images, adjust if needed
-- [ ] Confirm prop shipping or pickup (if you're providing herbs/props):
-  - [ ] Pack dried herbs, guide mockups, sample props (mortar, bottles, tea infuser)
-  - [ ] Ship to photographer with delivery confirmation by Jun 30
-  - OR photographer sources props locally (send Pinterest/reference board link)
-- [ ] Create shared folder for Session 1, 2, 3 deliverables (photography organized by session date)
+  - Color space: sRGB (confirm in camera settings before first shoot)
+  - White balance: Daylight or custom white balance; test consistency before full shoot
+  - File naming: [bundle-slug]-[type]-[sequence].jpg (respiratory-flatlay-01.jpg, immunity-lifestyle-02.jpg)
+- [ ] Confirm herb specimen logistics: are you shipping herbs and guide mockup, or is photographer sourcing locally?
+  - If shipping: Pack and send by June 30 with tracking; confirm receipt before kickoff call
+  - If local sourcing: Send herb list per bundle + Pinterest/reference board link for aesthetic alignment
+- [ ] Prepare guide mockup PDF (cover design preview) to use as prop in flat-lay compositions
 
-**Kickoff call script** (20 minutes):
+**Kickoff call script (20 minutes)**:
 
-1. **Intro** (2 min): "Thanks for joining. Here's our goal: 15 edited, print-ready images across 3 bundles, launching on Etsy in July."
-2. **Deliverables walk-through** (5 min): Walk through shot list; show reference images from Canva folder
-3. **Supplies clarification** (3 min): "Do you have herbs and props, or should I ship them?" (confirm logistics)
-4. **Schedule confirmation** (3 min): "Session 1 due July 5, images in shared folder by 5pm ET. Session 2 July 12. Session 3 July 24."
-5. **Q&A** (7 min): Answer technical questions (lighting, editing software, file format, color correction)
+1. Intro (2 min): "We're producing 15 images across 3 bundles launching on Etsy in July and August. Our goal is warm, natural botanical product photography."
+2. Deliverables walkthrough (5 min): Walk through shot list PDF; show 3 reference images from shared folder; confirm aesthetic understanding
+3. Logistics (3 min): Confirm herb and prop logistics; confirm shared drive access is working
+4. Schedule confirmation (3 min): "Session 1 due July 5 by 5pm ET in shared folder. Session 2 due July 12. Session 3 due July 24."
+5. Q&A (7 min): Lighting, editing software, color space confirmation, file delivery format
 
-**Handoff**: Share Canva folder link + shoot list PDF + photographer's shared drive access in calendar invite
-
----
-
-### Writer-Specific (July 1)
-
-**Pre-work checklist** (send 24h before kickoff call):
-
-- [ ] Create shared Google folder (name: `Phase 3 — Manuscripts`)
-- [ ] Prepare content briefs (1 per bundle):
-  - Respiratory bundle: 7–8 species, 3,600 words, key topics (expectorants vs. demulcents, cough types, immune support overlap)
-  - Immunity bundle: 8–9 species, 3,800 words, **mandatory CITES sidebar for Goldenseal** (provide verbatim CITES text)
-  - Digestive bundle: 7–8 species, 3,600 words, key topics (bitter herbs, fermentation, long-term microbiome support)
-- [ ] Attach FTC compliance guide: 1-page overview of claims-framing requirements (no "cures," "prevents," or "treats" without evidence tier context)
-- [ ] Attach reference guide: List of preferred sources (NatMed Pro, Gaia Herbs contraindication database, UpS At-Risk list for endangered species)
-- [ ] Create shared folder for manuscript versions (draft → revision round 1 → revision round 2 → final)
-
-**Kickoff call script** (30 minutes):
-
-1. **Intro** (2 min): "You're writing three educational bundles on medicinal herbs, launching on Etsy mid-July to early August."
-2. **Content overview** (5 min): Share briefs per bundle; explain tone (accessible herbalism, evidence-based, consumer-facing)
-3. **Species & research focus** (5 min): "Each species entry is 350–450 words covering history, active compounds, uses, and contraindications. Use Latin binomials on first mention."
-4. **FTC & safety language** (8 min): Walk through FTC guide; show 2–3 claim examples ("Traditionally used for..." vs. "Prevents..."). Emphasize: no unqualified health claims.
-5. **Delivery schedule** (5 min): "Week 2: Respiratory (Jul 8). Week 3: Immunity (Jul 15). Week 4: Digestive + all revisions (Aug 3). Each manuscript returns with revision notes; expect 2–3 feedback rounds."
-6. **Q&A** (5 min): Answer sourcing questions, contraindication depth, CITES language (mandatory, do not alter)
-
-**Handoff**: Share Google folder + briefs + FTC guide + reference links in calendar invite
+**Post-kickoff checklist**:
+- [ ] Photographer verbally confirms July 5 first delivery date
+- [ ] Photographer verbally confirms resolution and color space specs understood
+- [ ] Any logistics questions answered and documented
 
 ---
 
-### Writer #2 Recipe/Prep Guide (July 1)
+### Writer 1 — Educational Content (Week 1, July 1–5)
 
-**Pre-work checklist** (send 24h before kickoff call):
+**Within 24 hours of signature**:
 
-- [ ] Create shared Google folder (name: `Phase 3 — Recipes & Prep Guides`)
-- [ ] Prepare recipe briefs (1 per bundle):
-  - Respiratory: 8–10 recipes (teas, steam inhalations, syrups, throat lozenges, salves) with dosage & storage guidelines
-  - Immunity: 8–10 recipes (tinctures, elder syrup, tonics, gummies, capsule guides) with age-appropriate dosing
-  - Digestive: 8–10 recipes (digestive bitters, teas, infused oils, fermented tonics, live culture intro)
-- [ ] Attach recipe template (Google Doc format): Fields for ingredients (metric + US standard), method (numbered steps), prep time, yield, difficulty, dosage, storage, safety notes
-- [ ] Attach style guide: Tone examples (approachable, first-person optional, encourage experimentation)
-- [ ] Provide 3 reference recipes (published or past projects) showing your preferred format
+- [ ] Create writer folder in shared drive: "Phase3-Writer1-[FirstName]"
+  - Subfolders: Respiratory, Immunity, Digestive, Revisions
+- [ ] Prepare and share content briefs (one per bundle, 1–2 pages each):
+  - Respiratory (3,600 words): Species list (Echinacea, Ginger, Licorice, Marshmallow, Thyme, Elecampane, Mullein, Coltsfoot); key sections (expectorants vs. demulcents, cough support, immune overlap)
+  - Immunity (3,800 words): Species list (Elderberry, Astragalus, Goldenseal, Shiitake, Reishi, Andrographis, Ginseng, Ashwagandha); mandatory CITES sidebar for Goldenseal (verbatim CITES language attached as separate document)
+  - Digestive (3,600 words): Species list (Ginger, Turmeric, Fennel, Peppermint, Chamomile, Slippery Elm, Bitter Herbs overview, Probiotic context)
+- [ ] Attach FTC compliance guide (1-page: what to write vs. not write, with 5 example rewrites)
+- [ ] Attach preferred source list: NatMed Pro, MSK Integrative Medicine, UpS At-Risk list, USDA PLANTS, peer-reviewed journals
+- [ ] Attach CITES Goldenseal verbatim text (mandatory sidebar, Immunity bundle only)
 
-**Kickoff call script** (30 minutes):
+**Kickoff call script (30 minutes)**:
 
-1. **Intro** (2 min): "You're creating practical recipes and preparation guides for three medicinal herb bundles."
-2. **Deliverable overview** (5 min): Share briefs; show recipe template format
-3. **Ingredient & dosage specs** (5 min): "All recipes use both metric and US measurements. Include dosage for adults, children 6+, and pregnancy considerations where safe."
-4. **Tone & accessibility** (5 min): "These are for first-time herbalists. Define terms like 'infusion' and 'maceration.' Be encouraging."
-5. **Photography notes** (5 min): "Briefly describe what the finished product looks like (color, texture, consistency). This helps the photographer style shots."
-6. **Delivery schedule** (5 min): "Week 2: Respiratory recipes (Jul 8). Week 3: Immunity (Jul 15). Week 4: Digestive + revisions (Aug 3)."
-7. **Q&A** (3 min): Answer questions on ingredient sourcing, fermentation safety, dosage confidence
+1. Intro (2 min): "You're writing three educational guides for home herbalists launching on Etsy mid-July through August."
+2. Content overview (5 min): Walk through briefs; explain tone (accessible herbalism, evidence-based, consumer-facing — not academic, not marketing)
+3. Species and structure (5 min): "Each species entry is 350–450 words: history, active compounds, uses, contraindications with source citations, sourcing notes. Latin binomials on first mention."
+4. FTC and safety language (8 min): Walk through FTC guide; show 3 example rewrites. Emphasize: no "prevents," "cures," or "treats" without evidence-tier qualifier.
+5. Delivery schedule (5 min): "Respiratory due July 8. Immunity due July 15. Digestive plus all revisions due August 3. Each returns with revision notes from me and from the herbalist reviewer — expect 2–3 rounds per manuscript."
+6. Q&A (5 min): Sourcing questions, contraindication depth, CITES language guidance
 
-**Handoff**: Share Google folder + briefs + template + reference recipes in calendar invite
+**Post-kickoff checklist**:
+- [ ] Writer 1 verbally confirms July 8 first delivery date
+- [ ] Writer 1 confirms FTC compliance process understood
+- [ ] CITES mandatory sidebar language confirmed received
 
 ---
 
-### Herbalist Consultant (July 1)
+### Writer 2 — Recipes and Preparation Guides (Week 1, July 1–5)
 
-**Pre-work checklist** (send 24h before kickoff call):
+**Within 24 hours of signature**:
 
+- [ ] Create writer folder in shared drive: "Phase3-Writer2-[FirstName]"
+  - Subfolders: Respiratory-Recipes, Immunity-Recipes, Digestive-Recipes, Revisions
+- [ ] Prepare and share recipe briefs (one per bundle):
+  - Respiratory (8–10 recipes): Teas, steam inhalations, honey syrups, throat lozenges, salves, poultices
+  - Immunity (8–10 recipes): Tinctures, elder syrup, immune tonics, mushroom gummies, capsule guides
+  - Digestive (8–10 recipes): Digestive bitters, teas, infused oils, fermented tonics, probiotic preparation guides
+- [ ] Attach recipe template (Google Doc): Fields for ingredients (metric + US standard), method (numbered steps), prep time, total time, yield, difficulty, dosage, storage, safety note, photography description
+- [ ] Attach tone guide with 3 example recipes showing preferred format (approachable, defines jargon, encourages first-time herbalists)
+
+**Kickoff call script (30 minutes)**:
+
+1. Intro (2 min): "You're creating 8–10 practical preparation recipes per bundle for readers who may be trying herbs for the first time."
+2. Deliverable overview (5 min): Walk through briefs; show recipe template format; show 1–2 example recipes
+3. Ingredient and dosage specs (5 min): "All recipes use both metric and US measurements. Include dosage for adults, children 6+, and pregnancy considerations where safe."
+4. Tone and accessibility (5 min): "Define terms like 'infusion,' 'maceration,' and 'decoction' on first use. Be encouraging. Not clinical, not scary."
+5. Photography notes (5 min): "Add a brief visual description at the end of each recipe ('finished tea is amber-colored, served in a clear mug') to help the photographer style the shot."
+6. Schedule (5 min): "Respiratory recipes due July 8. Immunity due July 15. Digestive plus all revisions due August 3."
+7. Q&A (3 min): Fermentation safety, dosage confidence, equipment alternatives
+
+**Post-kickoff checklist**:
+- [ ] Writer 2 verbally confirms July 8 first delivery date
+- [ ] Writer 2 confirms metric + US measurement format understood
+- [ ] Recipe template confirmed in shared folder
+
+---
+
+### Writer 3 / Clinical Herbalist Writer (Week 1, July 1–5)
+
+**Within 24 hours of signature**:
+
+- [ ] Create writer folder in shared drive: "Phase3-Writer3-Clinical-[FirstName]"
+  - Subfolders: Respiratory-Clinical, Immunity-Clinical, Digestive-Clinical, Revisions
+- [ ] Prepare and share clinical section briefs (one per bundle):
+  - Scope: Drug interaction panels per species, dosage tables with evidence tiers, clinical contraindication narratives, evidence grading notes
+  - Mandatory: MAOI interaction note for applicable herbs (Immunity); thyroid warning for Ashwagandha (Immunity); Valerian sedative interaction (if Sleep bundle in scope); pregnancy and breastfeeding safety column for all species
+- [ ] Attach primary source list: NatMed Pro, Micromedex, MSK Integrative Medicine, PubMed/Cochrane, UpS, CITES Appendix
+- [ ] Attach evidence grading key (Grade A: RCT; Grade B: clinical observation; Grade C: traditional use)
+- [ ] Confirm how clinical sections integrate with Writer 1 manuscripts (Google Doc with merge comment protocol)
+
+**Kickoff call script (30 minutes)**:
+
+1. Intro (2 min): "You're authoring the clinical and safety sections that integrate with the educational manuscripts from Writer 1."
+2. Scope walkthrough (5 min): Walk through clinical brief; explain integration point with Writer 1's manuscript
+3. Evidence grading (5 min): Show evidence grading key; confirm how to format each claim tier
+4. Drug interaction standards (8 min): Walk through mandatory interaction flags (MAOI, thyroid, sedative); confirm source database access
+5. FTC compliance (5 min): All efficacy claims need evidence-tier framing even in clinical sections
+6. Schedule (5 min): "Respiratory clinical section due July 8. Immunity due July 15. Digestive plus revisions due August 3."
+
+**Post-kickoff checklist**:
+- [ ] Writer 3 confirms access to at least one primary drug interaction database
+- [ ] Integration protocol with Writer 1 confirmed (comment protocol in shared Google Doc)
+- [ ] Mandatory warning flags confirmed understood
+
+---
+
+### Herbalist Consultant (Week 1, July 1–5)
+
+**Within 24 hours of signature**:
+
+- [ ] Create consultant folder in shared drive: "Phase3-Herbalist-[FirstName]"
+  - Subfolders: Review-Notes, Bundle-Access (read-only manuscripts)
 - [ ] Prepare review scope document (1 page):
-  - Manuscripts will arrive in Google Docs (editable)
-  - Review focus: accuracy, contraindications, drug interactions, dosage safety, CITES compliance
-  - Deliverable: Detailed review notes (1,500–2,500 words per bundle) with inline comments + summary email
-  - Timeline: Respiratory + Immunity reviews due Jul 15; Digestive due Aug 3
-- [ ] Prepare reference checklist: Key databases & sources (NatMed Pro, MSK Integrative Medicine, Micromedex, UpS At-Risk list, CITES Appendix)
-- [ ] Share link to PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md (herbalist section) for tracking status
+  - Scope: Accuracy audit, contraindication completeness, dosage safety, CITES compliance, formulation quality, FTC flag
+  - Format: Inline Google Doc comments + summary email (500–800 words per bundle)
+  - Timeline: Respiratory and Immunity reviews by July 15; Digestive review by August 3
+- [ ] Grant read-only manuscript access (manuscripts will arrive from Writer 1 by July 8–15)
+- [ ] Attach reference checklist: NatMed Pro, MSK, Micromedex, UpS At-Risk list, CITES Appendix II
 
-**Kickoff call script** (20 minutes):
+**Kickoff call script (20 minutes)**:
 
-1. **Intro** (2 min): "You're conducting safety and accuracy reviews of three medicinal herb guide manuscripts."
-2. **Review scope** (5 min): Share review scope document; explain what you'll audit (contraindications, drug interactions, endangered species, dosage safety)
-3. **Sourcing & standards** (5 min): "Focus on evidence-based standards. Flag unqualified claims. Cite primary sources. Check CITES for Goldenseal, endangered species for Black Cohosh/Echinacea angustifolia."
-4. **Delivery format** (5 min): "Inline Google Doc comments + summary email per bundle. Detailed feedback — not just checkmarks. Writer needs actionable notes for revision."
-5. **Schedule** (2 min): "Respiratory + Immunity reviews due Jul 15. Digestive due Aug 3."
-6. **Q&A** (1 min): Quick questions only; most content review happens in manuscript comments
+1. Intro (2 min): "You're conducting safety and accuracy review of three manuscript bundles before Etsy launch."
+2. Review scope (5 min): Walk through review scope doc; confirm what to audit
+3. Source standards (5 min): "Flag anything that deviates from NatMed Pro, MSK, UpS, or CITES standards. Cite your source when flagging."
+4. Format (5 min): "Inline comments on the Google Doc are the primary review format. Summary email with top 3–5 findings per bundle."
+5. Schedule (3 min): "Respiratory and Immunity reviews due July 15. Digestive review due August 3."
 
-**Handoff**: Share review scope + reference checklist link + manuscript access (read-only until submission) in calendar invite
-
----
-
-### Contractor Coordinator (July 1)
-
-**Pre-work checklist** (send 24h before kickoff call):
-
-- [ ] Create shared coordinator folder with:
-  - Weekly check-in template (copy of Template 2 from PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md)
-  - PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md (coordinator maintains weekly updates)
-  - PHASE_3_LAUNCH_MARKETING_CALENDAR.md (dates for email/Etsy coordination)
-  - Sample Etsy product listing (show format for title, description, tags)
-  - Sample email template (show how to adapt PHASE_3_BUNDLE_LAUNCH_EMAIL_SEQUENCES.md for Kit platform)
-- [ ] Add coordinator to: Kit email account (Editor access), Etsy store (Admin access)
-- [ ] Prepare week-by-week calendar with key dates:
-  - Contractor check-ins (Mondays, 9am ET)
-  - Bundle upload windows (Fridays, typical)
-  - Email send dates (9am ET, per marketing calendar)
-  - Social media posting schedule (daily, morning)
-
-**Kickoff call script** (30 minutes):
-
-1. **Intro** (2 min): "You're managing contractor communications, Etsy uploads, and email campaigns during Phase 3 launch (6 weeks)."
-2. **Weekly check-ins** (5 min): "Send Monday check-in emails to 5–6 active contractors. Template provided. Track delivery status, flag delays, compile weekly report."
-3. **Etsy operations** (5 min): "When bundles are ready (usually Fridays), you upload to Etsy: title, description, images, pricing. Coordinate with photographer & writer on asset delivery."
-4. **Email campaigns** (5 min): "Weekly launch emails go out per marketing calendar (Women's Health, Respiratory, Immunity, Digestive, Sleep). Copy templates into Kit, update [ETSY_LINK], hit send at 9am ET."
-5. **Dashboard updates** (5 min): "Update PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md weekly: status per contractor, payment milestones, quality gate results, any delays."
-6. **Escalation protocol** (5 min): "If contractor misses delivery by 24h or quality fails gate review, alert [YOUR NAME] within 2 hours. I'll decide on revision or contingency."
-7. **Schedule** (3 min): "Weekly check-ins start Monday, July 6. First bundle upload (Women's Health) June 29. Subsequent bundles every 1–2 weeks."
-
-**Handoff**: Share coordinator folder + Kit/Etsy access + weekly calendar in calendar invite
+**Post-kickoff checklist**:
+- [ ] Consultant confirms access to at least one primary herbalism database
+- [ ] Manuscript access (read-only) confirmed in shared drive
+- [ ] Summary email format confirmed (500–800 words per bundle)
 
 ---
 
-## WEEK 2 (July 6–12) — First Batch Delivery & Feedback
+### Logistics Coordinator (Week 1, July 1–5)
 
-### All Contractors
+**Within 24 hours of signature**:
 
-**Monday check-in protocol** (every Monday, 9am ET):
+- [ ] Create coordinator folder in shared drive: "Phase3-Coordinator-[FirstName]"
+  - Contents: Weekly check-in template, PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md, PHASE_3_LAUNCH_MARKETING_CALENDAR.md, sample Etsy listing, sample email template
+- [ ] Add coordinator to Kit email account (Editor access — allow send, not admin)
+- [ ] Add coordinator to Etsy store (Admin access for listing uploads)
+- [ ] Prepare week-by-week calendar with all key dates:
+  - Monday contractor check-ins (9am ET, every week July 6 – August 10)
+  - Bundle upload windows (typically Fridays when manuscripts approved)
+  - Email send dates (per PHASE_3_LAUNCH_MARKETING_CALENDAR.md)
+  - Payment milestone trigger dates per contractor
 
-- [ ] Coordinator sends check-in email to each contractor (Template 2: "Last week — what we expected / what we delivered")
-- [ ] Contractors reply by EOD Tuesday (24-hour turnaround)
-- [ ] Coordinator compiles weekly status (1-2 sentence per contractor: on-time / late / quality issues)
-- [ ] Coordinator updates PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md with status
+**Kickoff call script (30 minutes)**:
 
-**Quality gate reviews** (first delivery window: July 5–8):
+1. Intro (2 min): "You're coordinating communications, Etsy uploads, and email campaign execution across 5 active contractors for 6 weeks."
+2. Weekly check-ins (5 min): Walk through Monday check-in template; show expected reply format
+3. Etsy operations (5 min): Show sample listing format; walk through upload sequence (title, description, images, pricing, tags)
+4. Email campaigns (5 min): Show Kit platform; walk through one example email send from template to scheduled send
+5. Dashboard updates (5 min): Walk through PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md; show what columns to update each Monday
+6. Escalation protocol (5 min): "If any contractor is more than 24 hours late on a delivery or fails a quality gate, alert me within 2 hours — don't wait for Monday."
+7. Schedule (3 min): "Check-ins start Monday July 6. First Etsy upload coordination begins when Respiratory bundle assets are approved (target week of July 8)."
 
-| Contractor | Deliverable Due | Quality Gate | Review Window | Pass/Fail Criteria |
-|---|---|---|---|---|
-| Photographer 1 | Jul 5 | Session 1 (5 images) | Jul 5–6 | [ ] 5 images, 2000px min, sRGB, white balance consistent, no harsh shadows (see PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md Gate 1) |
-| Writer 1 | Jul 8 | Respiratory draft (3,600w) | Jul 8–9 | [ ] Word count ±10%, all species with Latin names, FTC language compliant, no [TBD] placeholders, contraindications present (see dashboard Gate 1) |
-| Writer 2 | Jul 8 | Respiratory recipes (8–10) | Jul 8–9 | [ ] All recipes include ingredients (metric + US), method, dosage, storage, accessibility-friendly language |
-| Herbalist | N/A (observing) | N/A (manuscript review starts Week 3) | N/A | N/A |
-| Coordinator | N/A (support role) | N/A | N/A | N/A |
-
-### Photographer Quality Gate 1 (July 5–6)
-
-**Upon delivery** (within 24 hours):
-
-- [ ] Download all 5 images from shared folder
-- [ ] Check file naming (correct format: `respiratory-[type]-[sequence].jpg`)
-- [ ] Verify resolution (2000×2000px minimum in image metadata)
-- [ ] Check color space (must be sRGB; open in Lightroom or Mac Preview to confirm)
-- [ ] Assess visual quality:
-  - [ ] Herb specimens clearly identifiable (not wilted, damaged, or obscured)
-  - [ ] White balance consistent across all 5 (no color drift; guide text readable)
-  - [ ] Lighting is warm and diffuse (no harsh shadows on guide cover or herb details)
-  - [ ] Composition matches aesthetic (props enhance without overwhelming; natural surfaces clean but textured)
-
-**If PASS**: 
-- [ ] Reply same day: "Session 1 approved! Release second 25% payment ($[AMOUNT]). Session 2 due July 12."
-- [ ] Send payment immediately
-- [ ] Log approval date in dashboard
-
-**If FAIL**:
-- [ ] Provide specific feedback email (same day):
-  - "Session 1 review: [NUMBER] images need revision. Issues: [specific problems, e.g., 'Images 2–4 have warm color cast; reprocess white balance. Image 5 has harsh shadow on herb detail — consider diffusion or angle adjustment.']"
-  - "Please resubmit revised images by [DEADLINE — typically 24 hours]. I'll review and approve for payment."
-- [ ] Schedule optional 15-min feedback call if complex issues
-- [ ] Do not release payment until revision passes
-- [ ] If revision fails second review: Escalate to contingency (backup photographer or shoot extension)
+**Post-kickoff checklist**:
+- [ ] Coordinator confirms Kit and Etsy access is working
+- [ ] Shared drive folder structure confirmed
+- [ ] Monday 9am ET check-in schedule confirmed
 
 ---
 
-### Writer 1 Quality Gate 1 (July 8–9)
+## WEEK 2 (July 6–12) — First Batch Delivery and Feedback
 
-**Upon delivery** (within 24 hours):
+### Monday Check-In Protocol (Every Monday, 9am ET)
 
-- [ ] Open manuscript in Google Docs
-- [ ] Run automated word count check (Respiratory target: 3,600 ±360 words)
-- [ ] Scan for:
-  - [ ] All species entries present (7–8 species as per brief)
-  - [ ] Latin binomials on first mention of each species
-  - [ ] Contraindication panels present and detailed (cite sources)
-  - [ ] No unqualified health claims (check tone: "Traditionally used..." / "Research suggests..." not "Prevents" or "Cures")
-  - [ ] FTC language review: Any therapeutic claim is framed with evidence tier context
-  - [ ] No [TBD] or [INSERT] placeholders
+**Coordinator sends** (Template 2, PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md):
+- Last week: What was expected vs. what was delivered
+- This week: Next priority deliverable and due date
+- Blockers: Any issues the contractor needs help resolving
 
-**If PASS**:
-- [ ] Reply same day: "Respiratory draft approved! Release 25% payment. Revision notes sent in separate email (minor edits only if any)."
-- [ ] Send specific praise (one sentence): "Strong herb knowledge; contraindications well-sourced; accessible tone."
-- [ ] If minor edits needed: Provide in bullet list (max 5–6 edits)
-- [ ] Release second payment immediately
-- [ ] Schedule Week 3 deliverable (Immunity draft, due Jul 15)
+**Contractors reply by EOD Tuesday** (24-hour turnaround).
 
-**If FAIL**:
-- [ ] Provide feedback email same day with specific issues (numbered):
-  - "Respiratory manuscript review: 3 issues to address. (1) Word count is 3,200 words; expand to 3,600 (need ~400 more words on species interactions or sourcing). (2) Ashwagandha section lacks thyroid warning — add 2–3 sentences with citation. (3) Black Cohosh section: add UpS At-Risk flag. Please revise by [DEADLINE — Jul 10 for quick turnaround]."
-- [ ] Do not release payment until revision passes
-- [ ] Provide revised deadline (typically 48 hours for focused revisions)
-- [ ] If revision not submitted by deadline: Escalate (consider interim backup writer or scope reduction)
+**Coordinator compiles and sends status update** to project lead by Wednesday 9am:
+- One paragraph per contractor: on-track / late / quality issue / payment pending
+
+### Quality Gates — First Delivery (July 5–8)
+
+#### Photographer — Session 1 Quality Gate (Review Within 24 Hours of July 5 Delivery)
+
+- [ ] 5 images delivered in shared drive Session-1-Respiratory folder
+- [ ] File names follow convention (respiratory-flatlay-01.jpg format)
+- [ ] Resolution: 2000×2000px minimum (verify in image info/metadata)
+- [ ] Color space: sRGB (check in Mac Preview or Lightroom metadata)
+- [ ] Visual check:
+  - [ ] Herb specimens clearly identifiable (not wilted, not blurry)
+  - [ ] White balance consistent across all 5 images (no color drift)
+  - [ ] Lighting is warm and diffuse (no harsh shadows on herbs or guide text)
+  - [ ] Guide cover text legible in at least 2 images
+  - [ ] Props enhance without overwhelming; natural surfaces clean
+
+**Pass**: Reply same day — "Session 1 approved. Payment milestone 2 sent ($[AMOUNT]). Session 2 due July 12."
+**Fail**: Reply same day with numbered issues and 24-hour revision deadline. Do not release payment until revision approved.
+
+#### Writer 1 — Respiratory Manuscript Quality Gate (Review Within 24 Hours of July 8 Delivery)
+
+- [ ] Word count within 10% of 3,600 target (3,240–3,960 words)
+- [ ] All 7–8 species present with Latin binomials on first mention
+- [ ] Contraindication panels present and cite primary sources (not generalizations)
+- [ ] No unqualified health claims ("prevents," "cures," "treats" without qualifier)
+- [ ] Mandatory sidebars present (sourcing and sustainability)
+- [ ] No placeholder text ([TBD], [INSERT], etc.)
+- [ ] FTC self-review confirmed by writer in submission message
+
+**Pass**: Reply same day — "Respiratory approved. Payment milestone 2 sent. Revision notes (if any) in separate email. Immunity due July 15."
+**Fail**: Reply same day with numbered list of specific issues and 48-hour revision deadline.
+
+#### Writer 2 — Respiratory Recipes Quality Gate (Review Within 24 Hours of July 8 Delivery)
+
+- [ ] 8–10 recipes delivered
+- [ ] Random spot-check on 3 recipes:
+  - [ ] Ingredients list with metric and US standard measurements
+  - [ ] Numbered method steps
+  - [ ] Dosage: adults, children 6+, pregnancy note
+  - [ ] Storage and shelf-life guidance
+  - [ ] Safety disclaimer (FTC-compliant)
+  - [ ] Photography visual description present
+- [ ] Formatting consistent across all recipes (all use template structure)
+
+**Pass**: Reply same day — "Respiratory recipes approved. Payment milestone 2 sent. Immunity recipes due July 15."
+**Fail**: Reply same day with numbered issues and 48-hour revision deadline.
+
+#### Writer 3 / Clinical — Respiratory Clinical Section Quality Gate (Review Within 24 Hours of July 8 Delivery)
+
+- [ ] Drug interaction panels present for all species in Respiratory bundle
+- [ ] Dosage table includes evidence tier (Grade A/B/C) for each species
+- [ ] Pregnancy and breastfeeding column present for all species
+- [ ] Evidence citations present (not "studies show" without source)
+- [ ] All claims evidence-tier framed (no unqualified efficacy claims)
+- [ ] No placeholder text
+
+**Pass**: Reply same day — "Respiratory clinical section approved. Payment milestone 2 sent. Immunity section due July 15."
+**Fail**: Reply same day with numbered issues and 48-hour revision deadline.
 
 ---
 
-### Writer 2 Quality Gate 1 (July 8–9)
+## WEEKS 3–6 (July 13 – August 10) — Production Sprint and Final Delivery
 
-**Upon delivery** (within 24 hours):
-
-- [ ] Open recipes in Google Docs
-- [ ] Count recipes (target: 8–10 per bundle)
-- [ ] Spot-check 3 random recipes for:
-  - [ ] Ingredients list (metric + US standard measurements)
-  - [ ] Method is numbered steps (clear enough for first-time herbalists)
-  - [ ] Dosage section (adults, children 6+, pregnancy considerations where applicable)
-  - [ ] Storage & shelf-life guidance (realistic timelines)
-  - [ ] Safety note or disclaimer (FTC-compliant: "intended to support wellness")
-  - [ ] Tone is encouraging and accessible (no jargon or defines jargon)
-- [ ] Assess formatting consistency (all recipes follow same template structure)
-
-**If PASS**:
-- [ ] Reply same day: "Respiratory recipes approved! Release 25% payment. Minor notes [if any] sent separately."
-- [ ] Release second payment immediately
-- [ ] Schedule Week 3 deliverable (Immunity recipes, due Jul 15)
-
-**If FAIL**:
-- [ ] Provide feedback email same day with specific issues:
-  - "Respiratory recipes review: 2 main issues. (1) 4 recipes lack dosage guidance for children — add age-appropriate recommendations. (2) 2 recipes use undefined terms (e.g., 'maceration') — define on first use. Revise by [DEADLINE — Jul 10]."
-- [ ] Do not release payment until revision passes
-- [ ] If revision not submitted or fails second review: Escalate to contingency (reduce recipe count to 5–6 per bundle or defer to Week 4)
-
----
-
-## WEEKS 3–6 (July 13 – August 10) — Production Ramping & Final Delivery
-
-### Weekly Check-In & Escalation Protocol
-
-**Every Monday** (9am ET):
-
-- [ ] Coordinator sends check-in email (Template 2, completed):
-  - Last week expected vs. delivered
-  - This week's priority
-  - Any blockers or questions
-- [ ] Contractors reply by EOD Tuesday
-- [ ] Coordinator flags any delays or quality issues in same email to you (within 2 hours of Tuesday EOD)
-
-**Escalation triggers** (alert within 2 hours of discovery):
+### Escalation Triggers (Alert Project Lead Within 2 Hours)
 
 | Trigger | Action | Deadline |
 |---|---|---|
-| **Contractor 24h late on delivery** | Coordinator sends reminder email (same day). If still late after 24h: you follow up directly with 48-hour final deadline. | 24h reminder + 48h final |
-| **Quality fails gate review (2nd time)** | You contact contractor directly; discuss revision or contingency. Consider scope reduction if persistent. | Same day |
-| **Contractor unavailable unexpectedly** | You activate backup/contingency immediately (backup photographer, freelance writer, etc.). Notify contractor of timeline impact. | Same day |
-| **Payment not received by due date** | Coordinator logs in dashboard; you send payment reminder same day. | 24h from due date |
+| Contractor is 24 hours late on any delivery | Coordinator sends reminder email (same day); contractor has 24 hours to submit or provide new date | 24-hour reminder, 48-hour hard deadline |
+| Quality gate fails for the second time on same deliverable | Project lead contacts contractor directly; discuss revision or contingency activation | Same day |
+| Contractor is unreachable for more than 24 hours | Activate backup contractor or contingency; notify coordinator | Same day |
+| Payment not released by payment due date | Coordinator logs in dashboard; project lead sends payment same day | 24 hours from due date |
+| Contractor requests scope expansion | Hold; do not agree; log in WORKLOG.md; confirm budget headroom before responding | 48 hours to respond |
 
-**Contractor communication** (if escalation needed):
+### Weekly Quality Gate Schedule (Weeks 3–5)
 
-- **Delay email template**: "Hi [NAME], noticed [DELIVERABLE] is running 24h behind schedule (due [DATE], not yet received as of [TIME]). Can you confirm delivery time today? I want to keep us on track for the [NEXT MILESTONE]. Thanks."
-- **Quality issue email template**: "Hi [NAME], reviewed [DELIVERABLE]. Found [SPECIFIC ISSUES]. I've noted revision suggestions in [LOCATION]. Please resubmit by [DATE] so we can keep the schedule. Let me know if you have questions."
-- **Contingency notification**: "Hi [NAME], we're activating a backup [ROLE] to ensure project timeline. You'll focus on [REVISED SCOPE] moving forward. This doesn't change your contract value. Updated timeline: [DATES]. Appreciate your flexibility."
+| Week | Deliverable | Contractor | Due Date | Review Window |
+|---|---|---|---|---|
+| Week 3 | Immunity bundle manuscript | Writer 1 | July 15 | July 15–16 |
+| Week 3 | Immunity recipes | Writer 2 | July 15 | July 15–16 |
+| Week 3 | Immunity clinical section | Writer 3 | July 15 | July 15–16 |
+| Week 3 | Respiratory + Immunity review | Herbalist Consultant | July 15 | July 15–17 |
+| Week 3 | Photographer Session 2 | Photographer | July 12 | July 12–13 |
+| Week 4 | Photographer Session 3 | Photographer | July 24 | July 24–25 |
+| Week 5 | Digestive manuscript | Writer 1 | August 3 | August 3–4 |
+| Week 5 | Digestive recipes | Writer 2 | August 3 | August 3–4 |
+| Week 5 | Digestive clinical section | Writer 3 | August 3 | August 3–4 |
+| Week 5 | Digestive review | Herbalist Consultant | August 3 | August 3–5 |
+| Week 6 | All deliverables final handoff | All | August 10 | August 10 |
 
----
+### Herbalist Consultant Review Integration
 
-### Quality Gates — Weeks 3–4 (Revision Round)
+When herbalist review notes arrive (July 15 and August 3):
+- [ ] Download review notes and scan for completeness (cites primary sources, specific actionable feedback per species)
+- [ ] Forward to Writer 1 and Writer 3 with subject: "Herbalist review notes — [BUNDLE] — action required"
+- [ ] Writers incorporate feedback into revision round (target: 48 hours to revise)
+- [ ] Release herbalist payment milestone on receipt of detailed review notes (before writer revisions, because the review is the deliverable)
 
-**Photographer Session 2** (due Jul 12):
-- [ ] Review within 24 hours (same checklist as Session 1)
-- [ ] If pass: "Session 2 approved. Release 25% payment ($[AMOUNT]). Session 3 due July 24."
-- [ ] If fail: Revision deadline Jul 13 (24h turnaround); release payment on approval
+### Contractor Communication Templates for Escalation
 
-**Photographer Session 3** (due Jul 24):
-- [ ] Review within 24 hours
-- [ ] If pass: "All sessions approved. Release final 25% payment ($[AMOUNT]). Let's schedule final handoff call [DATE] to confirm image delivery to Canva and archive."
-- [ ] If fail: Revision deadline Jul 25 (24h); escalate if not met
+**Delay reminder email**:
+> Hi [NAME], noticed [DELIVERABLE] has not been received as of [TIME/DATE]. Your delivery was due [DATE]. Can you confirm delivery time today? This directly affects the [NEXT BUNDLE] launch timeline. Thanks.
 
-**Writer 1 — Immunity & Digestive drafts** (due Jul 15, Aug 3):
-- [ ] Word count check ±10% of target
-- [ ] Presence check (all species present, Latin names, contraindications, FTC language, no placeholders)
-- [ ] Same approval/revision protocol as Week 2
+**Quality issue email**:
+> Hi [NAME], reviewed [DELIVERABLE]. Found [NUMBER] issues that need revision. Specific issues listed below. Please resubmit by [DATE — 48 hours]. Let me know if you have questions.
 
-**Writer 2 — Immunity & Digestive recipes** (due Jul 15, Aug 3):
-- [ ] Recipe count check (8–10 per bundle)
-- [ ] Spot-check 3 recipes (ingredients, method, dosage, storage, tone)
-- [ ] Same approval/revision protocol as Week 2
-
-**Herbalist reviews** (due Jul 15 for Respiratory+Immunity, Aug 3 for Digestive):
-- [ ] Upon delivery: Download review notes + scan for specificity
-  - [ ] Review notes cite primary sources (NatMed Pro, MSK, CITES, UpS)
-  - [ ] Contraindication feedback is actionable (specific edits, not just "strengthen this")
-  - [ ] Drug interaction flags are clear (e.g., "Ashwagandha + benzodiazepines: note sedative interaction in revision")
-  - [ ] Endangered species flagged with conservation context
-- [ ] Forward review notes to Writer 1 with subject: "Herbalist review for [BUNDLE] — Revision notes enclosed"
-- [ ] Writer 1 incorporates herbalist feedback into revision round
-- [ ] Release 33% payment on receipt of detailed review notes
+**Contingency notification email**:
+> Hi [NAME], we are activating a backup resource for [SCOPE ELEMENT] to protect the launch timeline. Your primary deliverables remain unchanged. Updated timeline for you: [DATES]. This does not affect your contract value. Appreciate your flexibility — let me know if this creates any questions.
 
 ---
 
-### Quality Gate Final — Week 4–5 (Handoff)
+## Final Handoff — Week 6 (August 10)
 
-**All deliverables final review** (due Aug 3):
+### All Contractors — Final Handoff Checklist
 
 **Photographer**:
-- [ ] All 15 images delivered and approved (3 sessions complete)
-- [ ] Images in named Canva folders (organized by bundle)
-- [ ] Attribution log updated (any CC prop images credited)
-- [ ] Confirm final 25% payment released
+- [ ] All 15 images delivered and approved across 3 sessions
+- [ ] Images organized in Canva folders (one per bundle)
+- [ ] Attribution log complete (any CC-licensed prop images credited)
+- [ ] Final payment milestone 4 released
 
 **Writer 1**:
-- [ ] All 3 manuscripts (Respiratory, Immunity, Digestive) approved after final revision
-- [ ] No [TBD] or [INSERT] placeholders remaining
-- [ ] All herbalist feedback incorporated
-- [ ] Final 25% payment released
+- [ ] All 3 manuscripts (Respiratory, Immunity, Digestive) approved after all revision rounds
+- [ ] Zero placeholder text ([TBD], [INSERT]) remaining
+- [ ] All herbalist reviewer feedback incorporated
+- [ ] Final payment milestone 4 released
 
 **Writer 2**:
-- [ ] All 3 recipe sections (Respiratory, Immunity, Digestive) approved after final revision
-- [ ] All 8–10 recipes per bundle complete and formatted
-- [ ] Final 25% payment released
+- [ ] All 3 recipe sections approved after revision rounds
+- [ ] All 8–10 recipes per bundle complete and consistently formatted
+- [ ] Final payment milestone 4 released
 
-**Herbalist**:
-- [ ] All three review reports delivered and logged
-- [ ] Review notes incorporated into writer revisions
-- [ ] Final 34% payment released
+**Writer 3 / Clinical**:
+- [ ] All 3 clinical sections approved and integrated into Writer 1 manuscripts
+- [ ] All mandatory warnings present (MAOI, thyroid, sedative, pregnancy columns)
+- [ ] Final payment milestone 4 released
 
-**Coordinator**:
-- [ ] Weekly check-ins completed (6 total, Mondays)
-- [ ] Dashboard updated weekly with status, payments, escalations
-- [ ] Etsy uploads coordinated with photo/writer delivery schedule
-- [ ] Email campaigns coordinated with marketing calendar
-- [ ] Final payment released per agreed schedule (weekly or milestone)
+**Herbalist Consultant**:
+- [ ] All 3 bundle review reports delivered and logged
+- [ ] Review feedback incorporated into writer revisions (confirmed by Writer 1)
+- [ ] Final payment milestone 3 (34%) released
 
----
+**Logistics Coordinator**:
+- [ ] All 6 Monday check-ins completed (July 6, 13, 20, 27, August 3, 10)
+- [ ] Dashboard updated through all 6 weeks
+- [ ] Etsy uploads coordinated with production schedule (no orphaned listings)
+- [ ] Email campaigns executed on schedule per PHASE_3_LAUNCH_MARKETING_CALENDAR.md
+- [ ] Final payment released
 
-## Critical FTC & Confidentiality Language (All Contractors)
+### Post-Completion Actions
 
-**Include in all onboarding kits** (do not modify):
-
----
-
-### FTC Compliance & Disclosure Requirements
-
-All content you create (text, recipes, photography) may be used in promotional contexts (Etsy, email, social media). FTC regulations require clear disclosure:
-
-- **Your disclosures**: If you mention specific brands, products, or recommendations, disclose any affiliate relationship ("This product is recommended because...")
-- **Sponsored content language**: If your work is used in sponsored posts or paid ads, Seedwarden will add FTC-required hashtags (#ad, #sponsored)
-- **Educational vs. medical claims**: Avoid definitive medical claims ("cures," "treats," "prevents"). Use evidence-tier framing: "Traditionally used to support...", "Research suggests...", "May support..."
-
-**Review by you**: Herbalist consultant ensures all therapeutic language is FTC-compliant before launch. Writers: self-review against FTC guide provided in onboarding kit.
+- [ ] Send "Contract Complete" email to all contractors with final payment confirmation
+- [ ] Archive all deliverables (manuscripts, images, review notes) in project folder with date stamps
+- [ ] Log any Phase 4 interest from contractors in WORKLOG.md (each contractor's response to Phase 4 inquiry)
+- [ ] Document process improvements for Phase 4 onboarding
 
 ---
 
-### Confidentiality & Work-for-Hire
+## FTC Compliance and Confidentiality — All Contractors
 
-- **Ownership**: All deliverables (photos, text, recipes) are owned by Seedwarden after delivery and payment.
-- **Commercial rights**: Seedwarden may use content commercially (Etsy, marketing, social media, derivatives) without additional permission.
-- **Confidentiality**: Do not discuss project details, deliverables, rates, timelines, or launch dates publicly until Seedwarden announces launch on Etsy (target: mid-July to August).
-- **No republishing**: You may not republish your work elsewhere (portfolio, website, publications) without written permission.
-- **Attribution**: Attribution is not guaranteed. Seedwarden may use content with or without byline. Any byline credit is at Seedwarden's discretion.
+Include the following text verbatim in all onboarding kits. Do not modify.
 
----
+**FTC Disclosure Requirements**
 
-## Contingency & Replacement Procedures
+All content you create for Seedwarden (text, recipes, photography) may be used in commercial contexts (Etsy listings, email marketing, social media). FTC regulations require:
+- Evidence-tier framing for all therapeutic language: "Traditionally used to support...," "Research suggests...," "May support..." — never "prevents," "cures," or "treats" without a qualifying evidence-tier statement
+- If content includes product recommendations, any affiliate or commercial relationships must be disclosed (this is unlikely in your scope, but flag if applicable)
+- You agree to confirm FTC compliance in your submission message for each deliverable
 
-**If contractor misses deliverable deadline** (>24h late):
+**Confidentiality Requirements**
 
-1. **Day 1 (24h late)**: Coordinator sends reminder; contractor has 24h to submit revised deadline
-2. **Day 2 (48h late)**: You send direct follow-up; contractor has 48h final to deliver or activate backup
-3. **Day 4 (72h late / deadline missed)**: Activate contingency:
-   - **Photographer**: Contact backup photographer (Kriss MacDonald or Thumbtack photographer #2); assign Session replacement
-   - **Writer**: Contact second-tier writer candidate (Emily Han or Adrian White); offer emergency scope (1 bundle vs. 3 if needed)
-   - **Herbalist**: Internal review or defer to Week 4–5 (less critical path risk)
-   - **Coordinator**: Absorb tasks internally or hire last-minute admin support (Upwork 1–2 hour posts)
+- All project content (manuscripts, images, recipes, review notes, timelines, rates) is confidential
+- Do not discuss project details, contractor rates, bundle scope, or launch dates publicly before Seedwarden announces on Etsy (target: mid-July to August 2026)
+- You may not republish your work elsewhere (portfolio, publications, website, social media) without Seedwarden's written consent
+- All deliverables are owned by Seedwarden upon delivery and final payment under the work-for-hire terms in your signed contract
 
-**If contractor quality fails gate review twice** (revision fails second time):
-
-1. **First fail**: Provide detailed feedback; contractor revises within 24–48h
-2. **Second fail**: Schedule call to discuss issues. Options:
-   - Reduce scope (e.g., fewer recipes per bundle, fewer images per session)
-   - Extend timeline (push delivery 3–5 days; may cascade to next bundle)
-   - Transition to backup contractor (transfer work in progress or start fresh)
-3. **Decision**: Made jointly with contractor within 24h; implement within 48h
-
-**If contractor becomes unavailable unexpectedly** (illness, emergency):
-
-- Request estimated return date; adjust timeline accordingly
-- If >5 days unavailable: Activate backup contractor immediately
-- Transition work-in-progress or start fresh per scope
-- Adjust final payment if scope reduced
-
----
-
-## Success Metrics (Week 6 — August 10)
-
-By end of production, all contractors should have:
-
-- [ ] All deliverables submitted on time or approved for revision
-- [ ] All quality gates passed (primary or revision)
-- [ ] All 4 milestone payments received (or received per agreed schedule)
-- [ ] All confidentiality agreements honored (no public discussion before launch)
-- [ ] Final sign-off email sent: "Phase 3 contract complete. Deliverables approved for Etsy launch. Payment received in full. Thank you!"
-
----
-
-## Post-Launch (Week 7 onwards)
-
-**After bundles launch on Etsy (mid-July – August)**:
-
-- [ ] Send post-launch thank-you email to all contractors
-- [ ] Share bundle sales metrics if available (optional; good for relationships)
-- [ ] Collect feedback on process (what went well, what could improve)
-- [ ] Archive all deliverables, contracts, and payment records
-- [ ] Release any post-launch bonus or testimonial requests (outside original contract scope)
+*Prepared: June 29, 2026. Activate on each contractor's contract signature. All onboarding materials reference this checklist. Communication templates in PHASE_3_CONTRACTOR_COMMUNICATION_TEMPLATES.md. Tracking in PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md.*

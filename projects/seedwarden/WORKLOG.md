@@ -4,6 +4,31 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 46 (Exploration Queue) — Contractor Hiring & Onboarding Infrastructure — June 29, 2026 (fourth pass — PHASE_3_ canonical deliverables)
+
+**Session**: June 29, 2026
+**Task**: Build 5 new canonical PHASE_3_CONTRACTOR_* files as specified in Item 46 mission brief. These are the definitive delivery artifacts for the Q3 hiring start infrastructure, distinct from prior SEEDWARDEN_CONTRACTOR_* files and prior PHASE_3_ supporting files.
+
+**Status**: COMPLETE — 5 new canonical files written
+
+**Deliverables created**:
+
+1. **`PHASE_3_CONTRACTOR_JOB_DESCRIPTIONS.md`** — 6 copy-paste-ready Upwork job descriptions covering: Photographer (15 images / 3 sessions / flat-lay + lifestyle / sRGB / file naming convention / work-for-hire), Writer 1 educational (3 bundles / 10,800 words / Latin binomials / FTC-compliant / CITES Goldenseal sidebar / UpS At-Risk flags), Writer 2 recipes (3 sections / 8–10 recipes each / metric + US standard / dosage + storage + safety note), Writer 3 Clinical (drug interaction panels / evidence grading / pregnancy column / mandatory MAOI + thyroid + sedative warnings), Herbalist Consultant (review-only / 3 bundles / inline comments + summary email / CITES + UpS), Logistics Coordinator (check-ins + Etsy uploads + email campaigns / Kit + Etsy access / escalation-only role). Rate guidance table appended. Trial task suggestions per role. Zero placeholders. All work-for-hire and confidentiality language embedded.
+
+2. **`PHASE_3_CONTRACTOR_HIRING_TIMELINE.md`** — Week-by-week hiring schedule from June 29 posting through July 8 kickoff calls. Day-by-day action table with exact dates and times (ET). First-pass screening checklist per role. Portfolio audit 5-point deep review per role. Reference check email template. Offer email contents. Contract signature sequence. Payment trigger checklist. Tier-2/Tier-3 contingency protocol per role. Kickoff call schedule (staggered by role, 20–30 min each). Hard deadline table with target and hard-deadline columns. Success criteria checklist and red-flag list.
+
+3. **`PHASE_3_CONTRACTOR_ONBOARDING_CHECKLIST.md`** (v2.0, supersedes v1.0 from prior session) — Week 1 through Week 6 operations. Universal same-day actions (4h of signature). Role-specific pre-kickoff checklists (shared drive, briefs, FTC guide, reference lists, recipe template, clinical section brief, review scope doc, coordinator access). Kickoff call scripts per role (Photographer 20 min, Writers 30 min, Herbalist 20 min, Coordinator 30 min). Quality gates for first delivery (July 5–8): pass criteria, fail criteria, payment release logic, revision deadline, second-fail escalation. Weeks 3–6 escalation triggers table (5 triggers with action and deadline). Weekly quality gate schedule table (all roles, all weeks). Herbalist review integration protocol. Contractor escalation email templates. Final handoff checklist per role. FTC and confidentiality language verbatim.
+
+4. **`PHASE_3_CONTRACTOR_PAYMENT_TRACKING.md`** — Google Sheets import template (CSV). 13-column structure per deliverable row: Contractor Name, Role, Deliverable, Due Date, Delivered Date [ACTUAL], Review Status, Payment Milestone, Payment Due Date, Amount Due, Payment Sent Date [ACTUAL], Payment Method, FTC Disclosure Date, Notes. Pre-filled template rows for all 6 contractors and their milestone structure. Pre-filled example rows with sample names (Jordan Kim, Marcus Webb, Jade Moreno, Dr. Adrian White, Rebecca Lexa, Elena Rodriguez). Summary Sheet 2 template. Pre-launch FTC checkpoint per content role (Photographer, Writer 1, Writer 2, Writer 3). Post-launch 30-day FTC review table per bundle. Weekly update protocol. Payment reconciliation checklist. Budget alert triggers table. Google Sheets and Excel import instructions.
+
+5. **`PHASE_3_CONTRACTOR_SELECTION_RUBRIC.md`** — Quantified 100-point scoring matrix. 5 dimensions: Portfolio Quality (0–30), Communication Responsiveness (0–20), Domain Knowledge (0–20), Timeline Feasibility (0–20), Rate Fit (0–10). Role-specific criteria for Portfolio Quality and Domain Knowledge for all 6 roles (photographer, writer 1, writer 2, writer 3 clinical, herbalist consultant, coordinator). Tier assignments: Tier 1 (60+), Tier 2 (45–59), Tier 3 (<45). Automatic disqualifier list per dimension. Scoring worksheet (copy-per-candidate format). Three worked examples (Tier 1 photographer 93/100, Tier 2 writer 59/100, Tier 3 coordinator 28/100). Reference check scoring (0–10 scale with tier-reduction rule for <6). Final hire decision matrix. Role budget ranges for rate scoring.
+
+**Cross-reference architecture**: PHASE_3_CONTRACTOR_JOB_DESCRIPTIONS.md → PHASE_3_CONTRACTOR_HIRING_TIMELINE.md (post/screen/offer) → PHASE_3_CONTRACTOR_SELECTION_RUBRIC.md (score candidates) → PHASE_3_CONTRACTOR_ONBOARDING_CHECKLIST.md (post-hire) → PHASE_3_CONTRACTOR_PAYMENT_TRACKING.md (ongoing tracking). All five files are standalone and cross-linked.
+
+**Role count**: 6 roles confirmed — Photographer (1), Writers (3: educational, recipes, clinical), Herbalist Consultant (1), Logistics Coordinator (1). Budget: $400–$800 herbalist, $600–$1,000 writer 2, $900–$1,350 writers 1 + 3, $1,200–$1,800 photographer, $1,600–$2,400 coordinator. Total range: $4,700–$7,250.
+
+---
+
 ## Item 46 (Exploration Queue) — Contractor Hiring & Onboarding Infrastructure — June 29, 2026 (third pass — canonical deliverables)
 
 **Session**: June 29, 2026
