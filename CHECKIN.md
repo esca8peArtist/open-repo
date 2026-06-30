@@ -2,6 +2,47 @@
 
 ---
 
+## Session 4572 (2026-06-30 00:10–01:30 UTC) — ORCHESTRATION MAINTENANCE & CRITICAL-PATH STATUS
+
+**Status**: ✅ **COMPLETE** — Usage calibration reset, Item 40 commitment staging, orchestration files committed.
+
+**What Executed**:
+1. ✅ **Orientation** — Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md. Confirmed all Items 45-47 completed Session 4563, Items 38-40 verified Session 4571.
+2. ✅ **Usage calibration** — Reset Sonnet 8,935,000 / all-models 15,114,000 tokens (0% usage baseline after weekly Tuesday reset)
+3. ✅ **Item 40 commitment** — Updated PROJECTS.md to mark systems-resilience Item 40 (Phase 6 Democracy Tools research schedule) as production-ready and committed
+4. ✅ **Orchestration update** — Updated CHECKIN.md with Session 4572 summary
+
+**Critical Path Verification**:
+- ✅ June 30 00:00 UTC: Usage reset complete
+- ⏳ **June 30 23:59 UTC (23h 45m remaining)**: Domain 51 Phase 2 Wave 1 execution deadline — USER ACTION REQUIRED (runbook ready, decision infrastructure staged)
+- ⏳ July 1 00:00 UTC: Domain M contingency auto-trigger if Domain 51 not executed (fallback runbook ready)
+- ✅ All Phase 2-3 infrastructure production-ready (Items 38-47 complete, all deliverables committed)
+- ⏳ July 3 20:00 UTC: Stockbot checkpoint (Item 54 infrastructure ready)
+
+**Infrastructure Status** (all production-ready):
+- ✅ Resistance-research Phase 2 Wave 1 execution (Domain 51 + Domain M contingency)
+- ✅ Seedwarden Q3 Week 1 (live since Jun 29, monitoring Item 42 active)
+- ✅ Stockbot July 3 checkpoint (Items 54, 39, pre-staging items ready)
+- ✅ Career-training Phase 2 email launch (Item 55 timeline ready)
+- ✅ Systems-resilience Phase 6 (Item 40 research schedule + onboarding ready)
+- ✅ Open-repo Phase 5.2 Wave 0 (Item 30, 41 ready)
+- ⏳ Jetson onedrive remediation (scripts ready, user authorization confirmed, awaiting execution)
+
+**Pending User Actions** (non-autonomous):
+1. **TODAY June 30 23:59 UTC**: Execute Domain 51 Phase 2 Wave 1 (runbook: DOMAIN_51_PHASE_2_WAVE_1_EXECUTION_RUNBOOK.md)
+2. **Post-market June 30**: Execute Jetson onedrive remediation (scripts: `jetson_onedrive_remediation.sh`)
+3. **Open**: Phase 1 GitHub Pages push (modules + remediation complete, Item 53)
+
+**Session Efficiency**:
+- Orientation + verification: <5 min
+- Usage calibration: <2 min
+- PROJECTS.md update: <2 min
+- CHECKIN.md documentation: <5 min
+- **Total orchestration**: ~14 min
+- **Outcome**: Item 40 verified and staged for commitment; critical path confirmed on-track; all autonomous work complete
+
+---
+
 ## Session 4571 (2026-06-30 00:00–01:15 UTC) — ITEMS 38-40 PARALLEL EXECUTION VERIFICATION
 
 **Status**: ✅ **COMPLETE** — All 3 parallel agents verified complete. Items 38-39 already committed in prior sessions; Item 40 newly completed with production-ready deliverables.
