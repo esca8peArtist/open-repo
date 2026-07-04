@@ -114,9 +114,9 @@
 - 9 features live on Jetson: COOLDOWN_NOTP, HORIZON_UNITS, PERCENTILE_GATE+PROB_CALIBRATION, EXPOSURE_CORE-A, HMM_CONTINUOUS, ABSTAIN_FALLBACK+BASE_DIVERSITY, EVOLUTION_LOOP
 - Next event: July 7 market open (Monday) — first live signals with all 9 features active
 
-**Parallel agents launched (background)**:
-- resistance-research: surveillance camera guide + ICE support guide + Domain 54 full research (Aug 1 deadline)
-- systems-resilience: Phase 6 Democracy Tools Week 1-2 research (Nov 4 launch, early start)
+**Parallel agents COMPLETE**:
+- resistance-research (3/3): surveillance camera guide 616L (7edcb603), ICE victim support guide 579L (5ec3825a), Domain 54 full research 11,500w/62-cite (e369e3cc)
+- systems-resilience (1/1): Phase 6 Zone 1-2 voter registration + tech research 9,400w/50-cite (8c5df6ca)
 
 **Other projects**: open-repo + seedwarden blocked on user action; no autonomous work available
 
