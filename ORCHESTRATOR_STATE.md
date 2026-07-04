@@ -1,9 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-06-30T03:23:16Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
-> **Session 4580 update (2026-06-30 03:30-04:00 UTC)**: Exploration Queue Items 45-47 verified complete. Domain 51 deadline (23:59 UTC today) runbook production-ready. All critical-path infrastructure staging complete. Standing by for user Domain 51 execution and Item 44 auto-trigger.
+> Auto-generated at 2026-06-30T03:40:54Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 3.0% (8,316 tokens) | All-models 84.2% | Reset in 165h | check: claude.ai → Settings → Usage & billing
+🔴 Usage: Sonnet 3.0% (8,316 tokens) | All-models 99.3% | Reset in 164h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -106,6 +105,49 @@
 - Item 43 trigger (July 7) → stockbot gate pre-staging
 - User action: Domain 51 execution TODAY
 
+
+## Session 4582 (2026-07-04 22:00–22:40 UTC) — 9-FEATURE DEPLOYMENT COMPLETE + PARALLEL AGENTS LAUNCHED
+
+**Stockbot**:
+- All 7 worktree branches already merged into master (session 4581 or agents executed merges autonomously)
+- `deploy-to-jetson.sh` run: all smoke gates passed, rsync complete, containers restarted and healthy
+- 9 features live on Jetson: COOLDOWN_NOTP, HORIZON_UNITS, PERCENTILE_GATE+PROB_CALIBRATION, EXPOSURE_CORE-A, HMM_CONTINUOUS, ABSTAIN_FALLBACK+BASE_DIVERSITY, EVOLUTION_LOOP
+- Next event: July 7 market open (Monday) — first live signals with all 9 features active
+
+**Parallel agents launched (background)**:
+- resistance-research: surveillance camera guide + ICE support guide + Domain 54 full research (Aug 1 deadline)
+- systems-resilience: Phase 6 Democracy Tools Week 1-2 research (Nov 4 launch, early start)
+
+**Other projects**: open-repo + seedwarden blocked on user action; no autonomous work available
+
+---
+
+## Session 4581 (2026-07-04) — 9-FEATURE PARALLEL IMPLEMENTATION LAUNCHED
+
+**Context**: User approved all 9 Fable performance analysis recommendations for immediate implementation. 7 parallel git worktree agents launched simultaneously.
+
+**Usage reset**: Tuesday July 1 reset completed. Usage now ~0% for new billing week.
+
+**Orchestrator recurring trigger**: Created — fires daily 09:00 UTC Mon-Fri via CCR. Orchestrator should check for completed worktree branches and merge passing ones.
+
+**Stockbot — implementation in progress**:
+- COOLDOWN_NOTP: no cooldown after TP exits (trading_session.py)
+- HORIZON_UNITS: fix h10 calendar/trading day unit mismatch (trading_session.py + params.py)
+- PERCENTILE_GATE + PROB_CALIBRATION: rolling percentile threshold + isotonic calibration (ensemble_stacker.py)
+- EXPOSURE_CORE Stage A: raise caps 5%→15% (risk_thresholds.py + config)
+- HMM_CONTINUOUS: p_bull continuous scalar, remove binary suppression (hmm_signal_masker.py)
+- ABSTAIN_FALLBACK + BASE_DIVERSITY: HOLD on degraded inputs + 3 rule signals (trading_session.py)
+- EVOLUTION_LOOP: close metrics→Optuna→notify feedback loop (scripts/)
+
+**When this orchestrator session fires, execute in order**:
+1. `cd /home/awank/dev/SuperClaude_Framework/projects/stockbot && git worktree list` — find completed branches
+2. For each branch: read its test results (`uv run pytest <branch-test-file> -v`), merge if passing
+3. After merges: `bash scripts/deploy-to-jetson.sh`
+4. Update ORCHESTRATOR_STATE.md with merge results
+
+**Deployment gate**: July 7 is next market open (July 4 US holiday + weekend). All 9 features should be merged and deployed before 13:00 UTC July 7.
+
+---
 
 ## Session 4578 (2026-06-30 03:45–03:50 UTC) — FINAL ORIENTATION + STANDING BY
 

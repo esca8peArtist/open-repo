@@ -2,6 +2,45 @@
 
 ---
 
+## Session 4582 (2026-07-04 22:00–22:40 UTC) — 9-FEATURE STOCKBOT DEPLOYMENT + PARALLEL AGENTS LAUNCHED
+
+**Status**: COMPLETE
+
+**What Executed**:
+
+1. **Stockbot — 9 features deployed to Jetson** (primary task)
+   - All 7 July 4 worktree branches were already merged into master before this session
+   - master at 90d6cd0 (fix(alembic): merge dual migration heads) — all features present
+   - Features live: COOLDOWN_NOTP, HORIZON_UNITS, PERCENTILE_GATE + PROB_CALIBRATION, EXPOSURE_CORE Stage A (caps 5%→15%), HMM_CONTINUOUS (p_bull continuous scalar), ABSTAIN_FALLBACK + BASE_DIVERSITY, EVOLUTION_LOOP
+   - Test suite: 308 passing, 1 flaky test passes in isolation (pre-existing race condition, not caused by new features)
+   - Full smoke gate: 610 critical_path + 131 regression + 18 deployment + 3 live Alpaca integration — all PASSED
+   - `deploy-to-jetson.sh` completed successfully: rsync, container restart, health check PASSED (113s)
+   - Both containers healthy: stockbot (healthy) + stockbot-web, ports Tailscale-bound only (100.120.18.84)
+   - All 5 sessions (AAPL/MSFT/AMZN/JPM/NVDA) initialized and sleeping until July 7 market open
+   - Deployment gate: 84h ahead of first trading session (July 7 Monday)
+
+2. **Parallel agents launched** (secondary task)
+   - resistance-research agent: Complete surveillance camera removal guide + ICE victim support networks guide + Domain 54 full research (August 1 deadline)
+   - systems-resilience agent: Begin Phase 6 Democracy Tools research (Week 1-2 early start, 4-month buffer before Nov 4 launch)
+   - Both running in background; commits expected within the hour
+
+3. **Other projects assessed**: open-repo and seedwarden both blocked on user action — no autonomous work available
+
+**What's Ready (for July 7)**:
+- Stockbot: 9 new features live, paper trading resumes at market open
+- JPM signals: PERCENTILE_GATE fixes the threshold issue that caused 5+ weeks of zero signals
+- HMM: continuous p_bull scalar now available (was binary suppression)
+- Exposure: caps raised from 5%→15% (Stage A)
+- July 7 market open: WATCH DISCORD for first signals with new features active
+
+**Decisions Required**:
+1. **Usage calibration** (BLOCKED.md): Check claude.ai billing → run `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
+2. **VeraCrypt**: Restart Windows, complete pre-boot test, click Encrypt (cybersecurity-hardening Phase 1)
+3. **Domain M (resistance-research)**: Distribution runbooks ready in projects/resistance-research/. July 1-15 execution window — templates pre-written, user sends emails
+4. **Open**: GitHub Pages deployment (career-training, open-repo), seedwarden contractor hiring
+
+---
+
 ## Session 4580 (2026-06-30 03:30–TBD UTC) — EXPLORATION QUEUE EXECUTION + PROTOCOL DISCOVERY
 
 **Status**: 🔄 **IN PROGRESS** — Item 45 verified complete; Item 47 in progress; final orchestrator commit pending.

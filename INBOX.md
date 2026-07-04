@@ -10,8 +10,46 @@
 ---
 
 ## New Items
+- [2026-07-04 17:19] To the resistance research project, add a task to research flock cameras - what laws are in place, what can be done to remove them, what specifically can be done about the ones in Houston, etc
+*(No unprocessed items)*
 
-*(All current new items are being processed in parallel or are time-gated. See "Processing" section below.)*
+---
+
+## Processing (Session 4581 — 2026-07-04 UTC)
+
+### [2026-06-30 12:37] STOCKBOT ORDER REJECTIONS — RESOLVED (Session 4581)
+
+**STATUS**: ✅ **RESOLVED — ROOT CAUSE WAS JPM RIDGE THRESHOLD (not order rejections)**
+
+Investigation from July 1 session confirmed: The "order rejections" were JPM Ridge stacker generating ZERO signals for 5+ weeks because Ridge alpha=1.0 compresses predictions to 0.08% std while threshold required 2.0%. No signal = no orders = no trades. Not a broker-side rejection.
+
+**Fix applied July 1**: Patched JPM pickle with `prediction_rolling_std=0.000831`; new threshold ~0.12%. JPM sessions should generate signals from July 7 (next market open after holiday).
+
+**Fix made structural (July 4 — this session)**: PERCENTILE_GATE feature implementation replaces the brittle absolute threshold system for all stackers. Currently being implemented in worktree branch.
+
+### [2026-07-04] 9-FEATURE PARALLEL IMPLEMENTATION — COMPLETE
+
+**STATUS**: ✅ **MERGED AND DEPLOYED (Session 4582, 2026-07-04 22:30 UTC)**
+
+User approved all 9 Fable recommendations for implementation on July 4. 7 agents running simultaneously in git worktrees:
+
+| Branch | Feature | Files Changed |
+|--------|---------|--------------|
+| worktree-A | COOLDOWN_NOTP | trading_session.py (exit detection) |
+| worktree-B | HORIZON_UNITS | trading_session.py + params.py |
+| worktree-C | PERCENTILE_GATE + PROB_CALIBRATION | ensemble_stacker.py + kelly_sizer.py |
+| worktree-D | EXPOSURE_CORE Stage A | risk_thresholds.py + config + trading_session.py |
+| worktree-E | HMM_CONTINUOUS | trading_session.py + hmm_signal_masker.py + session config |
+| worktree-F | ABSTAIN_FALLBACK + BASE_DIVERSITY | trading_session.py + discord.py + rule_signals.py |
+| worktree-G | EVOLUTION_LOOP | scripts/ + DB migration |
+
+**Orchestrator action required when branches complete**:
+1. Run `git worktree list` to find all active worktrees
+2. For each branch with passing tests: `git merge --no-ff <branch>` (sequential, resolve conflicts)
+3. After all merges: `bash scripts/deploy-to-jetson.sh`
+4. Monitor Discord for post-deploy signal generation
+
+**Specs**: All 9 in `projects/stockbot/docs/specs/SPEC_*_20260704.md`
 
 ---
 

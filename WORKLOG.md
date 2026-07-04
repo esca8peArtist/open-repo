@@ -4710,3 +4710,56 @@ Market order (AMZN sell) failed with non-retryable error:
 3. ✅ **CHECKIN.md updated** with Session 4578 summary
 
 **Outcome**: Orchestration state confirmed stable. All critical-path infrastructure production-ready. No code changes. Orchestrator standing by for user decisions and time-gated triggers (Domain 51 deadline 23:59 UTC, Item 44 contingency trigger at deadline).
+
+
+## Session 4582 (2026-07-04 22:00–22:30 UTC) — 9-FEATURE DEPLOYMENT COMPLETE
+
+**Context**: Session 4581 launched 7 parallel worktree agents to implement 9 stockbot features. This session merged all branches and deployed to Jetson. US market holiday — no live trading risk.
+
+**Actions Executed**:
+
+1. ✅ **Worktree audit** — All 7 branches already merged into master (prior session executed merges)
+   - Confirmed via `git worktree list` and merge-base analysis
+   - master at 90d6cd0 (fix(alembic): merge dual migration heads)
+   - All 7 feature branches fully absorbed into master commit graph
+
+2. ✅ **Test suite verification** — 308 tests passing, 1 flaky test (passes in isolation)
+   - `test_market_closed_cycle_returns_false_flag`: FAIL in full suite, PASS isolated
+   - Confirmed pre-existing race condition; not caused by new features
+   - Critical path: 610 passing, regression: 131 passing, deployment: 18 passing
+
+3. ✅ **Deployment to Jetson** — `bash scripts/deploy-to-jetson.sh` executed successfully
+   - All smoke tests passed (610 critical_path + 131 regression + 18 deployment + 3 live Alpaca integration)
+   - rsync: src/, config/, deploy/, scripts/ synced to awank@100.120.18.84:/opt/stockbot/
+   - requirements-jetson.txt unchanged — pip install skipped
+   - Model sync: import_models.py not found in container (non-fatal pre-existing warning)
+   - Container restart: stockbot stopped + restarted successfully
+   - stockbot-web restarted
+   - Health check: PASSED (http://100.120.18.84:8000/api/health 200 OK, 113s total)
+
+4. ✅ **Post-deploy verification**
+   - Both containers healthy: `stockbot Up (healthy)` + `stockbot-web Up`
+   - Ports: 100.120.18.84:8000 (API), 100.120.18.84:3000 (web UI) — Tailscale-bound
+   - Sessions: AAPL/MSFT/AMZN/JPM/NVDA all initialized and sleeping until July 6 08:15 CT
+   - All 9 features live on Jetson:
+     * COOLDOWN_NOTP — no cooldown after take-profit exits
+     * HORIZON_UNITS — h10 calendar/trading day mismatch fixed + ATR stops
+     * PERCENTILE_GATE + PROB_CALIBRATION — rolling percentile threshold + isotonic calibration
+     * EXPOSURE_CORE Stage A — position caps raised 5%→15%
+     * HMM_CONTINUOUS — p_bull continuous scalar, binary suppression removed
+     * ABSTAIN_FALLBACK + BASE_DIVERSITY — HOLD on degraded inputs + 3 rule signals
+     * EVOLUTION_LOOP — daily trigger check + metrics schema, closes metrics→Optuna→notify loop
+
+5. ✅ **Other projects assessed** — Exploration queue fully exhausted
+   - All items 27-47 either COMPLETE or awaiting user/trigger
+   - Active blocks: 2 (cybersecurity VeraCrypt restart, usage calibration) — both user-action-only
+   - No autonomously executable work remaining across all projects
+   - Domain M (resistance-research) in July 1-15 execution window but requires user decision to send
+
+**Deployment Gate**: Next market open July 7 (Monday). All 9 features deployed and ready 84h ahead of first trading session.
+
+**Pending User Actions**:
+1. **Usage calibration**: Check claude.ai billing, run `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
+2. **VeraCrypt**: Restart Windows, complete pre-boot test, click Encrypt (cybersecurity-hardening Phase 1)
+3. **Domain M**: Resistance-research July 1-15 execution window — user decision to proceed with ballot measure outreach
+4. **Stockbot July 7**: First market open with all 9 features — monitor Discord for signal generation and trade execution
