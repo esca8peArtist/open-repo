@@ -2,6 +2,45 @@
 
 ---
 
+## Session July 5 02:00 UTC — WATER SYSTEMS WAVE 0 WEEK 1-2 CONTINGENCY MONITORING EXECUTED
+
+**Status**: COMPLETE — Execution log created; deployment status confirmed; path decisions documented
+
+**Actions Taken**:
+- Verified GitHub Pages 404 (confirmed NOT a false positive — genuine gate failure)
+- Created `WATER_SYSTEMS_WAVE_0_WEEK_1_2_EXECUTION_LOG.md` with full assessment
+- Updated `WEEK_1_2_CONTRIBUTOR_MONITORING_DASHBOARD.md` Day 6 entry and Critical Gates table
+- Documented two recovery paths (A: GitHub Pages fix, B: Netlify fallback) with exact procedures
+
+**Findings**:
+- GitHub Pages: HTTP/2 404 as of July 5 02:00 UTC — CONFIRMED FAIL
+- Recruitment status: PROVISIONAL RED — site was 404 during June 30–July 4 outreach window; response rate effectively 0% until site is live
+- Inbox check: NOT POSSIBLE autonomously — user must check email and GitHub issues manually
+
+**Needs Your Input**:
+
+**OPEN-REPO — Week 1-2 Contingency (Priority: HIGH — July 7 hard deadline)**
+
+1. **Inbox check (TODAY)**: Check your email for responses to any June 30 outreach emails AND check https://github.com/esca8peArtist/open-repo/issues for submissions. Log the count in the execution log.
+
+2. **Site deployment (by July 6 23:59 UTC — before July 7 early-warning gate)**:
+   - **Path A (preferred)**: Fix GitHub Pages — check repo settings at https://github.com/esca8peArtist/open-repo/settings/pages; likely cause is that docs/ is not at repo root. Once confirmed, push to trigger redeploy. Verify with `curl -I https://esca8peArtist.github.io/open-repo/` returning 200.
+   - **Path B (fallback — 30 min, pre-authorized)**: Create Netlify account → import esca8peArtist/open-repo → set publish directory → deploy. Full checklist in execution log Section 2.
+
+3. **If inbox check shows 0 responses (RED confirmed)**: Activate fallback content by July 7 — publish 8 pre-staged procedures from `WATER_SYSTEMS_CONTINGENCY_STAFF_FALLBACK_CONTENT_LIBRARY.md` Part 1. This keeps Wave 0 on track as a content-led model.
+
+**Recommended sequence**:
+1. Check inbox (5 min) → log count
+2. Execute Path A or B (5–30 min) → get site live
+3. If 0 responses confirmed: activate fallback content library by July 7 (publish 8 procedures)
+4. July 7 early-warning check: if site is live and outreach resent, assess new response count
+
+**Reference files**:
+- `projects/open-repo/WATER_SYSTEMS_WAVE_0_WEEK_1_2_EXECUTION_LOG.md` — full assessment + path procedures
+- `projects/open-repo/WEEK_1_2_CONTRIBUTOR_MONITORING_DASHBOARD.md` — daily tracking (update Day 6 with inbox results)
+
+---
+
 ## Session 4590 (2026-07-05 02:30–03:22 UTC) — FLOCK CAMERAS RESEARCH EXECUTION COMPLETE
 
 **Status**: ✅ **COMPLETE** — Flock Safety cameras research report production-ready

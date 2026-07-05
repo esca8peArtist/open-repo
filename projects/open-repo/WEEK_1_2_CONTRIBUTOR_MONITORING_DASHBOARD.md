@@ -34,10 +34,10 @@ linked_items:
 
 | Gate Date | Gate Name | Target | Status |
 |-----------|-----------|--------|--------|
-| June 30 | Launch day | Emails sent; site live; issue template accessible | [ ] PASS / [ ] FAIL |
-| July 4 12:00 UTC | Week 1 deadline | ≥4 responses to outreach; ≥2 issue submissions | [ ] GO / [ ] CAUTION / [ ] NO-GO |
+| June 30 | Launch day | Emails sent; site live; issue template accessible | UNKNOWN — site was 404; inbox check required |
+| July 4 12:00 UTC | Week 1 deadline | ≥4 responses to outreach; ≥2 issue submissions | [x] NO-GO — GitHub Pages 404 confirmed |
 | July 7 | Early-warning no-response check | ≥2 total responses; response rate ≥6% | [ ] CLEAR / [ ] ESCALATE NOW |
-| July 11 | Week 2 end | ≥50 landing page views; ≥4 responses total | [ ] GO / [ ] CAUTION / [ ] NO-GO |
+| July 11 | Week 2 end (NEW Week 1 gate per contingency) | ≥50 landing page views; ≥4 responses total | [ ] GO / [ ] CAUTION / [ ] NO-GO |
 | July 14 | Week 2 quality confirmation | 6–8 responses expected; ≥80% pass quality gate | [ ] GREEN / [ ] YELLOW / [ ] RED |
 | July 28 | Week 4 final contributor confirmation | All selected contributors confirmed committed | [ ] PASS / [ ] ESCALATE |
 | August 8 | Week 6 critical gate | Unique contributors: ≥10 PASS / 5–9 CONDITIONAL / <5 NO-GO | [ ] TBD |
@@ -240,21 +240,30 @@ Responses summary:
 
 **Date**: July 5, 2026
 
-**Responses received today**: [count]
+**GitHub Pages status check** (02:00 UTC): `curl -I https://esca8peArtist.github.io/open-repo/` → HTTP/2 **404** (CONFIRMED FAIL — Scenario C active)
+
+**Responses received today**: UNKNOWN — autonomous check not possible; user inbox check required
 
 Responses summary:
-- [Name or handle] — [category] — [proposal summary] — Status: [PENDING / HIRE / INTERVIEW / REJECT]
+- (Pending user inbox check — see WATER_SYSTEMS_WAVE_0_WEEK_1_2_EXECUTION_LOG.md Section 9)
 
-**Open issues on GitHub**: [count]
+**Open issues on GitHub**: UNKNOWN — user check required at https://github.com/esca8peArtist/open-repo/issues
+
+**Status assessment**: PROVISIONAL RED — GitHub Pages was 404 during entire outreach window; effective response rate is 0% pending inbox confirmation
+
+**Deployment recovery**: Path A (GitHub Pages fix) preferred; Path B (Netlify fallback) pre-authorized if Path A not complete by July 7 00:00 UTC
 
 **Next-day action items**:
-- [ ]
+- [ ] User: check email inbox for responses to June 30 outreach; log count below
+- [ ] User: check GitHub issues for any submissions; log count below
+- [ ] User: execute Path A (GitHub Pages fix) OR authorize Path B (Netlify) by July 6 23:59 UTC
+- [ ] Orchestrator: update July 7 early-warning check once inbox results are known
 
 **Running totals**:
-- Total emails sent: [count]
-- Total responses: [count]
-- Total submissions: [count]
-- Current response rate: [%]
+- Total emails sent: UNKNOWN (inbox check required)
+- Total responses: UNKNOWN (inbox check required)
+- Total submissions: UNKNOWN (GitHub check required)
+- Current response rate: CANNOT CALCULATE (site was 404 during outreach window)
 
 ---
 
