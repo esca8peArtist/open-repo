@@ -31,16 +31,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-<!-- AUTO:CALIBRATION:START -->
-### Usage limits — weekly calibration reminder
-**Date blocked**: 2026-06-30 (auto-added each Tuesday by reset-usage-budget.sh)
-**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
-**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
-**Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**: ✅ **RESOLVED** (Session 4585, 2026-07-05 00:25 UTC) — Verification passed: `bash scripts/verify-calibration.sh` returned "OK: limits calibrated 1 days ago (2026-07-04) — within 7-day window." No recalibration needed. Usage budget is current.
-<!-- AUTO:CALIBRATION:END -->
-
-
 ### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
 **Date blocked**: 2026-05-16
 **Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
@@ -77,6 +67,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### Usage limits — weekly calibration reminder
+**Date blocked**: 2026-06-30 (auto-added each Tuesday by reset-usage-budget.sh)
+**Date resolved**: 2026-07-05 00:25 UTC (Session 4585)
+**Context**: Plan limits reset June 30. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
+**Resolution**: ✅ **RESOLVED** (Session 4585, 2026-07-05 00:25 UTC) — Verification passed: `bash scripts/verify-calibration.sh` returned "OK: limits calibrated 1 days ago (2026-07-04) — within 7-day window." No recalibration needed. Usage budget is current.
+
+---
 
 ### resistance-research — Domain 51 Phase 2 Wave 1 Distribution CRITICAL (18:00 UTC cutoff PASSED; contingency activated)
 **Date blocked**: 2026-06-29
