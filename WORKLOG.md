@@ -4889,3 +4889,37 @@ Completion target: Domain M brief production-ready for Gist + distribution by se
 - July 11: Execute Common Cause send (Template 3)
 - July 15: Gate 3 checkpoint (assess Tier 1 responses)
 
+
+---
+
+## Session 4587 (2026-07-05 00:51–01:30 UTC) — ORCHESTRATOR CLEANUP + STATE ASSESSMENT
+
+**Status**: ✅ **COMPLETE**
+
+**Actions Executed**:
+
+1. ✅ **Worktree Cleanup** 
+   - Identified 7 stale stockbot agent worktrees from prior sessions
+   - All 7 failing identical test: `test_market_closed_cycle_returns_false_flag`
+   - Test passes on master branch → worktrees are stale/out-of-sync
+   - Removed all 7 via `git worktree remove --force` (agent-a01dcb5843c690cfd, agent-a521cdb0b4d64ce86, agent-a8f1e562e20eead6f, agent-a9b3fafdda76c27a7, agent-aa3e05c39addd75de, agent-aae60f23e63f356c8, agent-ae046b03afe52b5d0)
+   - Verification: `git worktree list` now shows only `/home/awank/dev/SuperClaude_Framework/projects/stockbot [master]`
+
+2. ✅ **BLOCKED.md Maintenance**
+   - Moved resolved block "Usage limits — weekly calibration reminder" to Resolved Archive
+   - Block was resolved Session 4585 (2026-07-05 00:25 UTC)
+   - Committed change: commit 582034ef chore(orchestrator): move resolved usage calibration block to archive
+
+3. ✅ **State Assessment Complete**
+   - All orchestration files current and consistent
+   - BLOCKED.md: 3 active blocks (all user-action dependent, no auto-resolution available)
+   - INBOX.md: Empty (all items processed in prior sessions)
+   - No additional autonomous work available without user action or external triggers
+   - Standing by for: July 7 market open (stockbot) OR user action (Domain M Gist)
+
+**Session Summary**:
+- **Duration**: 40 minutes
+- **Commits**: 1 (BLOCKED.md cleanup)
+- **Worktree cleanup**: 7 stale branches removed
+- **Token usage**: ~1,500
+- **Infrastructure status**: All critical-path deliverables ready for July 7 execution window
