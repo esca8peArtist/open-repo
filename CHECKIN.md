@@ -2,6 +2,33 @@
 
 ---
 
+## Session 4591 (2026-07-05 01:50 UTC) — CRITICAL: WATER SYSTEMS WAVE 0 WEEK 1 GATE FAILURE
+
+**Status**: ⚠️ **CRITICAL FINDING** — Pre-deadline gate failure detected; pre-authorized contingency available
+
+**Discovery**: Water Systems Wave 0 Week 1 go/no-go gate deadline (July 4 12:00 UTC) has PASSED with GitHub Pages NOT DEPLOYED.
+- Verification: `curl -I https://esca8peArtist.github.io/open-repo/` returns 404
+- Gate status: **FAILED** (requirement #1: GitHub Pages live)
+- Pre-authorized fallback: Netlify free tier deployment (30 minutes, no content changes)
+- New timeline: Week 1 gate rescheduled to July 11 12:00 UTC per roadmap contingency
+
+**Action Taken**:
+- ✅ Added open-repo block to BLOCKED.md with Netlify fallback procedure
+- ✅ Updated WORKLOG.md with session 4591 documentation
+- ✅ Updated PROJECTS.md open-repo current focus to reflect gate failure
+- ✅ All changes committed to master (commits da5bda4a, e5ec2d51)
+
+**User Decision Required**:
+1. **Authorize Netlify fallback**: Connect esca8peArtist/open-repo to Netlify → orchestrator deploys within 30 min
+2. **Manual GitHub Pages fix**: Push /docs directory to GitHub Pages branch
+3. **Context clarification**: Why GitHub Pages deployment didn't happen by July 4
+
+**Impact**: Wave 0 recruitment launch delayed 1 week. All downstream milestones (Week 6 critical gate) shift from Aug 8 → Aug 15.
+
+**Next Checkpoint**: Awaiting user decision on BLOCKED.md open-repo item OR resolution by July 11 12:00 UTC (new gate deadline).
+
+---
+
 ## Session 4590 (2026-07-05 01:40–02:15 UTC) — ORIENTATION VERIFICATION & STANDBY CONFIRMATION
 
 **Status**: ✅ **VERIFIED** — Session 4589 assessment confirmed correct. All systems remain in standby.
