@@ -1,0 +1,34 @@
+# GitHub Pages Jekyll Configuration
+title: Open-Repo Community Knowledge Base
+description: Open-source community knowledge, restoration guides, and preservation techniques
+baseurl: "/open-repo"
+url: "https://esca8peArtist.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Site navigation
+header_pages:
+  - index.md
+
+# Analytics (placeholder)
+google_analytics: false
+
+# Collections
+collections_dir: .
