@@ -4928,3 +4928,34 @@ Completion target: Domain M brief production-ready for Gist + distribution by se
 - **Worktree cleanup**: 7 stale branches removed
 - **Token usage**: ~1,500
 - **Infrastructure status**: All critical-path deliverables ready for July 7 execution window
+
+---
+
+## Session 4588 — Item 41 Water Systems Wave 0 Recruitment Finalization
+
+**Status**: COMPLETE
+
+**Agent**: General Research Agent (parallel execution wave)
+
+**Actions Executed**:
+
+1. Verified all 6 Item 41 core files committed (commit 303f83b5, Session 4554):
+   - `WATER_SYSTEMS_WAVE_0_SPECIES_AND_TOPICS_SELECTION.md`
+   - `WATER_SYSTEMS_CONTRIBUTOR_SOURCING_CHECKLIST.md`
+   - `WATER_SYSTEMS_CONTRIBUTOR_CONTENT_AUTHORING_SOP.md`
+   - `WATER_SYSTEMS_WAVE_0_WEEK_BY_WEEK_EXECUTION_ROADMAP.md`
+   - `WATER_SYSTEMS_WEEK_1_RECRUITMENT_EMAIL_TEMPLATES.md`
+   - `WATER_SYSTEMS_CONTINGENCY_STAFF_FALLBACK_CONTENT_LIBRARY.md`
+2. Verified `WATER_SYSTEMS_RECRUITMENT_LAUNCH_CHECKLIST.md` committed (commit ba1ac9be, Item 49, Session 4563)
+3. Cross-checked Item 41 deliverables against Item 30 strategy (Session 4492) — fully aligned, no gaps
+4. Created `WATER_SYSTEMS_RECRUITMENT_LAUNCH_READINESS_CHECKLIST.md`:
+   - Part 1: Pre-send verification (8 binary gates, Item 30 strategy cross-check table)
+   - Part 2: Week 1 Day-by-Day ops (Day 1–8, July 4 + July 7 hard decision gates)
+   - Part 3: Contingency integration (Triggers A/B/C, auto-fallback procedure, <5 contributor Aug 8 gate)
+   - Part 4: Infrastructure commit verification (all 8 files, sizes, commits confirmed)
+5. Committed all new work to master
+
+**Files**:
+- `projects/open-repo/WATER_SYSTEMS_RECRUITMENT_LAUNCH_READINESS_CHECKLIST.md` — new (Item 41 finalization)
+
+**Item 41 status**: FULLY COMPLETE — all 7 infrastructure files committed, finalization checklist added, contingency auto-activating at deterministic thresholds.
