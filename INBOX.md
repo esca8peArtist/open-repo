@@ -10,8 +10,29 @@
 ---
 
 ## New Items
-- [2026-07-04 17:19] To the resistance research project, add a task to research flock cameras - what laws are in place, what can be done to remove them, what specifically can be done about the ones in Houston, etc
 *(No unprocessed items)*
+
+---
+
+## Processing (Session 4583 — 2026-07-05 UTC)
+
+### [2026-07-04 17:19] Flock Cameras Research — PROCESSED
+
+**ITEM**: To the resistance research project, add a task to research flock cameras - what laws are in place, what can be done to remove them, what specifically can be done about the ones in Houston, etc
+
+**STATUS**: ✅ **PROCESSED (Session 4583, Orchestrator orientation)**
+
+**ACTION TAKEN**: Added to resistance-research Current focus as sub-item of Phase 2 Wave 1 new actionable focus areas (after surveillance camera removal guide and ICE victim support networks guide).
+
+**RESEARCH SCOPE**: 
+- Laws regarding Flock Safety surveillance camera networks (state-by-state legal status, government partnerships, federal privacy implications)
+- Technical/legal options for removal, demands to local governments
+- Houston-specific analysis (local ordinances, city council jurisdiction, community organizing options)
+- Integration with existing resistance-research surveillance and privacy domains
+
+**RATIONALE**: Flock Safety cameras represent a new infrastructure escalation post-Callais (April 2026) in voting/civic engagement surveillance. Complements existing illegal surveillance camera removal guide (state law, demand letters, reporting channels). Houston-specific execution aligns with community-level resistance infrastructure.
+
+**Next**: Available for agent execution as part of resistance-research Phase 2 exploration queue work.
 
 ---
 
