@@ -2,7 +2,7 @@
 title: "Domain M — July 1-15 Activation Sequence"
 created: "2026-06-29"
 item: "Item 44 — Domain M Post-June-30 Contingency Activation Framework"
-status: "production-ready"
+status: "Phase 1 complete — brief produced July 4-5, 2026; pending Gist creation (Phase 2)"
 activation_condition: "Path B — Domain 51 June 30 deadline definitively missed; OR Path B runs in parallel with Path A July 1-8"
 distribution_window: "July 1-15, 2026 (Tier 1); July 15 - August 1 (Tier 2)"
 domain: "Domain M — Direct Democracy Infrastructure Defense"
@@ -24,6 +24,8 @@ decision_date: "November 3, 2026 (four state ballot measures)"
 ---
 
 ## Phase 1 — Research Sprint (July 1-5)
+
+**STATUS: COMPLETE** — Brief produced July 4-5, 2026. File: `domain-m-direct-democracy-supermajority-attack-2026.md`. Word count: ~3,800 words. Citation count: 35. Key factual correction from source document: North Dakota expanded Medicaid via the legislature (2013), not citizen initiative. South Dakota DID expand Medicaid via citizen initiative in 2022 at 56% — that is the accurate empirical example used in the brief.
 
 **Objective**: Produce the Domain M research brief (3,000-4,000 words, 25-35 citations).
 
@@ -59,16 +61,20 @@ decision_date: "November 3, 2026 (four state ballot measures)"
 
 ## Phase 2 — Gist Creation (July 5-7)
 
+**STATUS: PENDING USER ACTION** — Brief is ready. User must create the Gist manually (agent cannot authenticate to GitHub).
+
 After brief is complete:
 
 1. Go to https://gist.github.com/new (log in as esca8peArtist)
 2. Filename: `domain-m-direct-democracy-supermajority-attack-2026.md`
-3. Description: "Domain M: Direct Democracy Under Supermajority Attack — 3,500 words, 30+ citations, CC Attribution 4.0"
-4. Paste full brief text
+3. Description: "Domain M: Direct Democracy Under Supermajority Attack — 3,800 words, 35 citations, CC Attribution 4.0"
+4. Paste full brief text from `projects/resistance-research/domain-m-direct-democracy-supermajority-attack-2026.md`
 5. Create as PUBLIC gist — copy the URL (format: https://gist.github.com/esca8peArtist/[40-char-hash])
 6. Verify: load URL in incognito browser — confirm HTTP 200 and content visible
 7. Add URL to DISTRIBUTION_GIST_URLS.md
-8. Fill [DOMAIN_M_GIST_URL] in all email templates below
+8. Fill [DOMAIN_M_GIST_URL] in DOMAIN_M_TIER_1_SEND_TEMPLATES.md (all three templates) and in DOMAIN_M_JULY_1_15_ACTIVATION_SEQUENCE.md
+
+**Gist URL (fill when created)**: [DOMAIN_M_GIST_URL — fill after user creates Gist]
 
 ---
 
