@@ -66,6 +66,23 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### open-repo — Water Systems Wave 0 Week 1 gate FAILED (GitHub Pages not deployed by July 4 deadline)
+**Date blocked**: 2026-07-05 01:49 UTC (gate deadline was July 4 12:00 UTC)
+**Context**: Water Systems Wave 0 launch had a hard Week 1 go/no-go gate due July 4 12:00 UTC. Gate criteria: (1) GitHub Pages live and resolving, (2) GoatCounter recording >5 page views, (3) Landing page live, (4) ≥8 recruitment emails sent, (5) Tracking spreadsheet created. Gate status: **FAILED** — GitHub Pages not deployed. Verification: `curl -I https://esca8peArtist.github.io/open-repo/` returns 404. This is root cause of gate failure; other criteria (GoatCounter, outreach emails, tracking sheet) are unknown without full assessment.
+
+Per PHASE_5_2_WAVE_0_CONTENT_STRATEGY.md "Scenario C — GitHub Pages Limitations" and WATER_SYSTEMS_WAVE_0_WEEK_BY_WEEK_EXECUTION_ROADMAP.md Section 5:
+- Gate FAIL decision: "Delay Wave 0 by 1 week; debug GitHub Pages issues; escalate to Netlify fallback"
+- Pre-authorized fallback: Netlify free tier deployment (30 minutes, no content changes required)
+- Migration procedure: (1) Connect esca8peArtist/open-repo to Netlify, (2) Netlify auto-detects Jekyll + deploys, (3) Update _config.yml baseurl/url fields, (4) Ready within 5 minutes
+
+**What I need**: (1) Confirmation that orchestrator should execute pre-authorized Netlify fallback deployment now, OR (2) Debugging info if GitHub Pages is actually live and this is a false positive. If proceeding with Netlify: user must authorize Netlify connection to GitHub repo (free account required at netlify.com). Deployment can execute within 30 min of authorization. Alternative: user can manually execute GitHub Pages deployment and this block is moot.
+
+**Verify with**: (1) `curl -I https://esca8peArtist.github.io/open-repo/` should return 200 (if GitHub Pages fixed), OR (2) `curl -I https://esca8peArtist.netlify.app` should return 200 after Netlify deployment, OR (3) Check WATER_SYSTEMS_RECRUITMENT_LAUNCH_READINESS_CHECKLIST.md for Week 1 verification completion status
+
+**Resolution**: [leave blank — awaiting user decision on Netlify fallback authorization or GitHub Pages fix]
+
+---
+
 ## Resolved Archive
 
 ### Usage limits — weekly calibration reminder
