@@ -4,6 +4,42 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 46 — Final Assembly: Phase 3 Contractor Hiring Infrastructure — July 4, 2026 (fifth pass — final assembly and gap-fill)
+
+**Session**: July 4, 2026
+**Task**: Final assembly of Phase 3 contractor hiring and onboarding infrastructure. Audit all prior session deliverables, identify gaps, write missing files, verify integration with marketing calendar.
+
+**Status**: COMPLETE — 3 new files written; 2 pre-existing files verified production-ready
+
+**Audit findings**:
+- `PHASE_3_UPWORK_JOB_DESCRIPTIONS.md` (21KB, 422 lines, 6 templates): EXISTS, production-ready, copy-paste ready
+- `PHASE_3_HIRING_TIMELINE_AND_SELECTION_RUBRIC.md` (19KB, 284 lines): EXISTS, production-ready — covers hiring timeline and rubric in full
+- `PHASE_3_CONTRACTOR_ONBOARDING_CHECKLIST.md` (28KB, 440 lines, v2.0): EXISTS, production-ready — full Week 1–6 playbook with all role-specific kickoff scripts
+- `PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md` (8.7KB): EXISTS — tracking grid, quality gates, budget lines
+- `PHASE_3_CONTRACTOR_OPERATIONAL_HANDBOOK.md`: MISSING — written this session
+- `PHASE_3_HIRING_SELECTION_FRAMEWORK.md`: MISSING by exact task name — written this session as user-facing consolidation with full contractor agreement template
+- `PHASE_3_CONTRACTOR_ONBOARDING_FINAL.md`: MISSING by exact task name — written this session as final-assembly distillation of onboarding sequence
+
+**Deliverables created**:
+
+1. **`PHASE_3_HIRING_SELECTION_FRAMEWORK.md`** (22KB) — User-facing hiring framework covering: explicit hiring timeline (July 5 posting through July 12 contract deadline); rate ranges by all 6 roles; first-pass screening criteria per role; weighted scoring rubric (Portfolio Quality 40%, Relevant Experience 30%, Communication 20%, Availability 10%) with automatic disqualifiers; portfolio scoring guide per role (0–10 with tier descriptors); worked scoring example (Tier 1 photographer, 8.5/10); reference check procedure with verbatim 3-question template; background verification checklist (all roles + role-specific additions for Herbalist and Writers 1+3); full contractor agreement template (scope, payment milestones, work-for-hire IP clause, FTC compliance clause, confidentiality, revisions policy, cancellation terms, signatures); integration verification table against marketing calendar.
+
+2. **`PHASE_3_CONTRACTOR_ONBOARDING_FINAL.md`** (20KB) — Final-assembly onboarding checklist covering: universal same-day actions (4 hours of signature) for all 6 contractors; role-specific setup checklists for all 6 roles (shared drive, briefs, reference docs, kickoff call confirmation); Week 2 quality gate checklists for all 4 content tracks with pass/fail protocol and payment release logic; Weeks 3–6 weekly deliverable schedule table; escalation triggers table (5 triggers, action, deadline); herbalist review integration protocol; payment tracking summary table by role; final handoff checklist per role; post-completion actions; FTC disclosure requirements verbatim; FTC channel-specific disclosure table (Etsy, email, Instagram, reviews, website).
+
+3. **`PHASE_3_CONTRACTOR_OPERATIONAL_HANDBOOK.md`** (21KB) — Daily operations reference covering: fixed weekly sync schedule (Monday–Friday events, owner, format); weekly check-in content specification; async video protocol (when to use Loom vs. written feedback); communication channels by purpose; new-deliverable receipt and review protocol; revision submission protocol; blocker response protocol (4-hour SLA); photo attribution log maintenance procedure (who updates, what columns, format strings for each license type); table of 7 pre-staged image items still requiring user verification before download; content approval workflow (who reviews what by content type); feedback template structure (required format for all approval and correction emails); revision cycle limits by role (with billable overage terms); FTC pre-approval pre-Etsy-upload gate checklist; bundle upload sequence (coordinator to project lead approval loop); escalation tiers (Tier 1–4 with triggers); Tier 3 and Tier 4 escalation email scripts verbatim; contingency coverage by role (primary and secondary); conflict resolution for content disputes; dashboard update protocol; end-of-sprint closeout protocol with record retention guidance.
+
+**Date alignment note**: Prior session deliverables (PHASE_3_UPWORK_JOB_DESCRIPTIONS.md, PHASE_3_HIRING_TIMELINE_AND_SELECTION_RUBRIC.md, PHASE_3_CONTRACTOR_ONBOARDING_CHECKLIST.md) were written for the original June 29 launch window with July 1 contract start. New files in this session align to the July 5–12 hiring window (posting July 5, contracts by July 12, first deliverables July 19) per the current task brief. The marketing calendar (PHASE_3_LAUNCH_MARKETING_CALENDAR.md) was built for the June 29 window; user should review and adjust email send dates forward by approximately 3 weeks if Etsy launch has slipped from the original schedule.
+
+**Integration verification**:
+- Photographer Session 1 (July 19 in new files) aligns with Respiratory bundle upload target — confirmed adequate lead time
+- Writer Respiratory manuscript (July 19) precedes herbalist review trigger (July 26) — confirmed
+- FTC pre-approval gate documented in operational handbook before any Etsy upload — confirmed
+- Attribution log maintenance procedure references PHOTO_ATTRIBUTION_LOG.md (pre-staged, 14 species, 16 image sources confirmed CC-licensed)
+- Contractor agreement template includes work-for-hire clause consistent with IP ownership language in job descriptions
+- Rate ranges in PHASE_3_HIRING_SELECTION_FRAMEWORK.md match PHASE_3_CONTRACTOR_SUCCESS_DASHBOARD.md budget lines
+
+---
+
 ## Item 46 (Exploration Queue) — Contractor Hiring & Onboarding Infrastructure — June 29, 2026 (fourth pass — PHASE_3_ canonical deliverables)
 
 **Session**: June 29, 2026
